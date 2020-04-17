@@ -1,11 +1,5 @@
 Now we'll take a closer look at `if` statements.
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
->
-
 ## If-statements
 
 `If` statements in Python are similar to those in other programming languages like Java, and they form the backbone of the logical flow of most programs.
@@ -70,9 +64,35 @@ Try changing the value of `y` in the snippet above. Do you get the output that y
 
 <details>
 
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  y = 3
+  if y % 2 == 0:
+    print('Even')
+  elif y == 1:
+    print('One')
+  else:
+    print('Odd')
+  ```
+
+  ```Output
+  Odd
+  ```
+
+  ```Python
+  y = 4
+  if y % 2 == 0:
+    print('Even')
+  elif y == 1:
+    print('One')
+  else:
+    print('Odd')
+  ```
+
+  ```Output
+  Even
+  ```
 
 </details>
 
@@ -164,13 +184,37 @@ Note that, in the example above, the `else` statement belongs to the `for` loop,
 
 ### Try it yourself
 
-Try changing the code snippet above after you remove the `break` statement. What output does it now produce?
+Try changing the code snippet above by removing the `break` statement. What output does it now produce?
 
 <details>
 
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'equals', x, '*', n//x)
+    else:
+        print(n, 'is a prime number')
+  ```
+
+  ```Output
+  2 is a prime number
+  3 is a prime number
+  4 equals 2 * 2
+  4 is a prime number
+  5 is a prime number
+  6 equals 2 * 3
+  6 equals 3 * 2
+  6 is a prime number
+  7 is a prime number
+  8 equals 2 * 4
+  8 equals 4 * 2
+  8 is a prime number
+  9 equals 3 * 3
+  9 is a prime number
+  ```
 
 </details>
 
@@ -204,9 +248,18 @@ What happens when you replace the `continue` statement above with a `break`?
 
 <details>
 
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  for num in range(2, 10):
+    if num % 2 == 0:
+        print("Found an even number:", num)
+        break
+    print("Found an odd number:", num)
+  ```
+  ```Output
+  Found an even number: 2
+  ```
   
 </details>
 

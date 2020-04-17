@@ -131,31 +131,24 @@ dtype: int64
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hints or solutions for the three exercises in this "try it"?
-
-Now, set an element of `int_series` equal to **None**.
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Add hint or solution... TBD.
-</details>
-
-How does that element show up in the Series?
+Now, set an element of `int_series` equal to **None**. 
+- How does that element show up in the Series?
+- What is the `dtype` of the series?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
-</details>
+  ```Python
+  int_series[1] = None
+  int_series
+  ```
 
-What is the `dtype` of the series?
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Add hint... TBD.
+  ```Output
+  0    1.0
+  1    NaN
+  2    3.0
+  dtype: float64
+  ```
 </details>
 
 
@@ -197,15 +190,19 @@ Now, let's turn this around and use these methods in a manner more like you will
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
-
 Try running `example3[example3.notnull()]`. But before you do, what do you expect to see?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Add hint... TBD.
+  ```Python
+  example3[example3.notnull()]
+  ```
+
+  ```Output
+  0    0
+  2     
+  dtype: object
+  ```
 </details>
 
 > [!div class="alert is-tip"]
@@ -308,12 +305,22 @@ This output is returned:
 
 ### Try it yourself
 
-How might you go about dropping just column 3?
+How might you go about dropping just column 3? Remember that you will need to supply both the axis parameter and the <code>how</code> parameter.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Remember that you will need to supply both the axis parameter and the <code>how</code> parameter.
+  ```Python
+  example4.dropna(how = "all", axis="columns", inplace=True)
+  ```
+
+  ```Output
+  |   | 0   | 1   | 2 |
+  ---------------------
+  | 0 | 1.0 | NaN | 7 |
+  | 1 | 2.0 | 5.0 | 8 |
+  | 2 | NaN | 6.0 | 9 |
+  ```
+
 </details>
 
 The `thresh` parameter gives you more fine-grained control: you set the number of non-null values that a row or column needs to have in order to be kept:
@@ -375,15 +382,23 @@ dtype: float64
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
-
 What happens if you try to fill null values with a string, like `''`?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
+  ```Python
+  example5.fillna('')
+  ```
+
+  ```Output
+  a    1
+  b     
+  c    2
+  d     
+  e    3
+  dtype: object
+```
 </details>
 
 
@@ -457,23 +472,40 @@ Notice that when a preceding value is not available for forward-filling, the nul
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hints or solutions for the three exercises in this "try it"?
-
 What output does `example4.fillna(method='bfill', axis=1)` produce?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
+  ```output
+  |   | 0   | 1   | 2   | 3   |
+  -----------------------------
+  | 0 | 1.0 | 1.0 | 7.0 | NaN |
+  | 1 | 2.0 | 5.0 | 8.0 | NaN |
+  | 2 | 6.0 | 6.0 | 9.0 | NaN |
+  ```
 </details>
 
-What about `example4.fillna(method='ffill')` or `example4.fillna(method='bfill')`?
+What about `example4.fillna(method='ffill')` and `example4.fillna(method='bfill')`?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
+  ```output
+  |   | 0   | 1   | 2 | 3   |
+  ---------------------------
+  | 0 | 1.0 | NaN | 7 | NaN |
+  | 1 | 2.0 | 5.0 | 8 | NaN |
+  | 2 | 2.0 | 6.0 | 9 | NaN |
+  ```
+  and
+    ```output
+  |   | 0   | 1   | 2 | 3   |
+  ---------------------------
+  | 0 | 1.0 | 5.0 | 7 | NaN |
+  | 1 | 2.0 | 5.0 | 8 | NaN |
+  | 2 | NaN | 6.0 | 9 | NaN |
+  ```
 </details>
 
 Can you think of a longer code snippet to write that can fill all the null values in example4?
@@ -481,7 +513,17 @@ Can you think of a longer code snippet to write that can fill all the null value
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
+  ```Python
+  example4.fillna(method='ffill', axis="columns").fillna(method='ffill')
+  ```
+
+  ```Output
+  |   | 0   | 1   | 2   | 3   |
+  -----------------------------
+  | 0 | 1.0 | 5.0 | 7.0 | 7.0 |
+  | 1 | 2.0 | 5.0 | 8.0 | 8.0 |
+  | 2 | 2.0 | 6.0 | 9.0 | 9.0 |
+  ```
 </details>
 
 

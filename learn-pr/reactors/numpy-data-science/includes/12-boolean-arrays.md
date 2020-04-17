@@ -64,11 +64,16 @@ False
 
 Now check to see if all values less than 10?
 
-> <details>
->  <summary>Hint (expand to reveal)</summary>
->  
-> Use `np.all()`.
-> </details>
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```python
+  np.all(two_dim_array < 10)
+  ```
+  
+  ```output
+  True
+  ```
+</details>
 
 `np.all` and `np.any` can be used along particular axes as well. For example:
 

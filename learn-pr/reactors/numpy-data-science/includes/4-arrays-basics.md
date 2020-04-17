@@ -21,27 +21,50 @@ a3 = np.random.randint(10, size=(3, 4, 5))  # Three-dimensional array
 
 Each array has attributes `ndim` (the number of dimensions of an array), `shape` (the size of each dimension of an array), and `size` (the total number of elements in an array).
 
-#### Try it yourself
-
-Change the values in this code snippet to look at the attributes for a1, a2, and a3:
-
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
 
 ```python
-print("a3 ndim: ", a3.ndim)
-print("a3 shape:", a3.shape)
-print("a3 size: ", a3.size)
+print("a1 ndim: ", a1.ndim)
+print("a1 shape:", a1.shape)
+print("a1 size: ", a1.size)
 ```
 
 ```output
-a3 ndim:  3
-a3 shape: (3, 4, 5)
-a3 size:  60
+a1 ndim:  1
+a1 shape: (6,)
+a1 size:  6
 ```
+
+#### Try it yourself
+
+Change the values in this code snippet to look at the attributes for a2 and a3:
+
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```python
+  print("a2 ndim: ", a2.ndim)
+  print("a2 shape:", a2.shape)
+  print("a2 size: ", a2.size)
+  ```
+  
+  ```output
+  a2 ndim:  2
+  a2 shape: (3, 4)
+  a2 size:  12
+  ```
+
+  ```python
+  print("a3 ndim: ", a3.ndim)
+  print("a3 shape:", a3.shape)
+  print("a3 size: ", a3.size)
+  ```
+  
+  ```output
+  a3 ndim:  3
+  a3 shape: (3, 4, 5)
+  a3 size:  60
+  ```
+</details>
+
 
 Another useful array attribute is the `dtype`, which we already encountered earlier in this section as a means of determining the type of data in an array:
 
@@ -125,11 +148,24 @@ Do multidimensional NumPy arrays work like Python lists of lists?
 
 Try a few combinations like `a2[1][1]` or `a3[0][2][1]` and see what comes back.
 
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```python
+  a2[1][1]
+  ```
+  
+  ```output
+  6
+  ```
+
+  ```python
+  a3[0][2][1]
+  ```
+  
+  ```output
+  0
+  ```
+</details>
 
 You might have noticed that we can treat multidimensional arrays like lists of lists. But a more common means of accessing items in multidimensional arrays is to use a comma-separated tuple of indices.
 
@@ -195,13 +231,34 @@ array([3, 0, 3, 3, 7, 9])
 
 #### Try it yourself
 
-What happens if you try to insert a string into a1?
+What happens if you try to insert a string into a1? Try both a string like '3' and one like 'three'.
 
-> <details>
->  <summary>Hint (expand to reveal)</summary>
->  
-> Try both a string like '3' and one like 'three'.
-> </details>
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```python
+  a1[1] = '3'
+  a1
+  ```
+  
+  ```output
+  array([3, 3, 3, 3, 7, 9])
+  ```
+
+  ```python
+  a1[1] = 'three'
+  a1
+  ```
+  
+  ```output
+  ---------------------------------------------------------------------------
+  ValueError                                Traceback (most recent call last)
+   in 
+  ----> 1 a1[1] = 'three'
+        2 a1
+  
+  ValueError: invalid literal for int() with base 10: 'three'
+  ```
+</details>
 
 ## Slicing arrays
 
@@ -266,16 +323,26 @@ array([1, 3, 5, 7, 9])
 
 #### Try it yourself
 
-How would you access the *last* five elements of array a?
+How would you access the *last* five elements of array a? How about every other element of the last five elements of a? Think back to list indexing in Python.
 
-How about every other element of the last five elements of a?
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```python
+  a[-5:]
+  ```
+  
+  ```output
+  array([5, 6, 7, 8, 9])
+  ```
 
-> <details>
->  <summary>Hint (expand to reveal)</summary>
->  
-> Think back to list indexing in Python.
->
-> </details>
+  ```python
+  a[-5::2]
+  ```
+  
+  ```output
+  array([5, 7, 9])
+  ```
+</details>
 
 Be careful when using negative values for `step`. When `step` has a negative value, the defaults for `start` and `stop` are swapped and you can use this functionality to reverse an array:
 
@@ -297,13 +364,17 @@ array([5, 3, 1])
 
 ##### Try it yourself
 
-How can you create a slice that contains every third element of `a`,  descending from the second-to-last element to the second element of `a`?
-
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+How can you create a slice that contains every third element of `a`,  descending from the second-to-last element 
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```python
+  a[-2::-3]
+  ```
+  
+  ```output
+  array([8, 5, 2])
+  ```
+</details>
 
 ### Multidimensional slices
 
@@ -350,16 +421,6 @@ array([[ 7,  7,  6,  1],
        [ 4,  2,  5, 12]])
 ```
 
-#### Try it yourself
-
-Now try to show 2 rows and 4 columns with every other element?
-
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
-
 ### Accessing array rows and columns
 
 One thing you will often need to do in manipulating data is accessing a single row or column in an array. You can do this through a combination of indexing and slicing; specifically by using an empty slice marked by a single colon (`:`). Again, some examples will help illustrate this.
@@ -396,8 +457,25 @@ How would you access the third column of a3?
 
 How about the third row of a3?
 
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```python
+  a3[:,:,2]
+  ```
+  
+  ```output
+  array([[5, 3, 2, 3],
+       [9, 3, 0, 8],
+       [8, 9, 0, 4]])
+  ```
+  ```python
+  a3[2,:,:]
+  ```
+  
+  ```output
+  array([[4, 9, 8, 1, 1],
+       [7, 9, 9, 3, 6],
+       [7, 2, 0, 3, 5],
+       [9, 4, 4, 6, 4]])
+  ```
+</details>

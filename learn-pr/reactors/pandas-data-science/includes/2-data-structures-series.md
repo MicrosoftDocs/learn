@@ -2,12 +2,6 @@
 
 Both `Series` and `DataFrames` are a lot like the `ndarrays` you encountered in the NumPy module. They provide clean, efficient data storage and handling at the scales necessary for data science. What both of them provide that `ndarrays` lack, however, are essential data-science features like flexibility when dealing with missing data and the ability to label data. These capabilities (along with others) help make `Series` and `DataFrames` essential to the "data munging" that make up so much of data science.
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
->
-
 ## Series objects in pandas
 
 A pandas `Series` is a lot like an `ndarray` in NumPy, a one-dimensional array of indexed data. You can create a simple `Series` from an array of data like this:
@@ -117,9 +111,18 @@ You're experienced in Jupyter Notebooks and experimenting with Python now, so us
 - Test: Try it out in VS Code. Was the output what you expected?
 
 <details>
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  series_example2['b':]
+  ```
+
+  ```Output
+  b    0.75
+  c    1.00
+  d   -2.00
+  dtype: float64
+  ```
 </details>
 
 Do explicit `Series` indices work _exactly_ the way you might expect? Try slicing `Series_example2` using its explicit index and find out.
@@ -168,9 +171,18 @@ But you can also do powerful array-like operations with `Series` like slicing.
 - Test: Try it out in VS Code. Create an unordered `Series` and try slicing it. Did it do what you expected?
 
 <details>
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  population['Germany':]
+  ```
+
+  ```Output
+  Germany     82408706
+  Japan      126922333
+  Russia     143910127
+  dtype: int64
+  ```
 </details>
 
 ### Try it yourself
@@ -178,14 +190,25 @@ But you can also do powerful array-like operations with `Series` like slicing.
 You can also add elements to a `Series` the way that you would to an `ndarray`.
 - Try adding elements to a `Series` in the code cell below.
 - Try running `population['Albania'] = 2937590` (or another country of your choice).
+- Predict what order do the keys appear in when you run `population`. Is it what you expected?
 
 <details>
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  population['Albania'] = 2937590
+  population
+  ```
+
+  ```Output
+  France      65429495
+  Germany     82408706
+  Japan      126922333
+  Russia     143910127
+  Albania      2937590
+  dtype: int64
+  ```
 </details>
-
-What order do the keys appear in when you run `population`? Is it what you expected?
 
 Another useful `Series` feature (and definitely a difference from dictionaries) is that `Series` automatically aligns differently indexed data in arithmetic operations:
 

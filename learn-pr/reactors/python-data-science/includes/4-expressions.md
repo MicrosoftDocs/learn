@@ -1,11 +1,5 @@
 As with other programming languages, expressions are critical for decision making controlling the logical flow of Python programs. The most fundamental way of doing this in Python is with a comparison operator, such as less than (<):
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
->
-
 ```Python
 2 < 5
 ```
@@ -119,8 +113,9 @@ i = 7
 
 <details>
 
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
-
-  Hint goes here.
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```Output
+  True
+  ```
   
 </details>

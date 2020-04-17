@@ -1,11 +1,5 @@
 For our first example, suppose we are combining two different data sources and find only the top five countries by area and the top five countries by `population`:
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
->
-
 ```Python
 area = pd.Series({'Russia': 17075400, 'Canada':  9984670,
                   'USA': 9826675, 'China': 9598094, 
@@ -21,9 +15,22 @@ Now divide these to compute the population density
 
 <details>
 
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  population / area
+  ```
+
+  ```Output
+  Brazil        24.387066
+  Canada              NaN
+  China        146.853885
+  India               NaN
+  Indonesia           NaN
+  Russia              NaN
+  USA           33.018235
+  dtype: float64
+  ```
   
 </details>
 

@@ -101,15 +101,18 @@ The output shows that 77.5% is the median of `AGE`:
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
-
 Now, find the maximum value in `df['AGE']`.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
+  ```Python
+    df['AGE'].max()
+  ```
+
+  ```Output
+  100.0
+  ```
 </details>
 
 Other information that you often will want to see is the relationship between different columns. To do this, use the `DataFrame.groupby` method. For example, you could examine the average `MEDV` (median value of owner-occupied homes) for each value of `AGE` (proportion of owner-occupied units built prior to 1940):
@@ -188,15 +191,80 @@ Name: MEDV, Length: 356, dtype: float64
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
-
 Now try to find the median value for `AGE` for each value of `MEDV`.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
+  ```Python
+  df.groupby(['MEDV'])['AGE'].median()
+  ```
+
+  ```Output
+  MEDV
+  5.0     100.00
+  5.6     100.00
+  6.3      77.80
+  7.0      99.15
+  7.2     100.00
+  7.4      89.50
+  7.5      90.80
+  8.1      98.00
+  8.3      95.70
+  8.4      82.20
+  8.5      92.15
+  8.7     100.00
+  8.8      95.60
+  9.5      95.60
+  9.6      93.30
+  9.7      97.00
+  10.2    100.00
+  10.4     90.50
+  10.5     96.20
+  10.8     96.60
+  10.9     88.90
+  11.0     78.10
+  11.3    100.00
+  11.5     98.90
+  11.7     82.80
+  11.8     96.30
+  11.9     90.40
+  12.0     97.30
+  12.1    100.00
+  12.3    100.00
+           ...  
+  35.2     51.80
+  35.4     29.55
+  36.0    100.00
+  36.1     41.10
+  36.2     58.20
+  36.4     26.30
+  36.5     91.60
+  37.0     21.50
+  37.2     58.40
+  37.3     27.70
+  37.6     86.50
+  37.9     92.20
+  38.7     76.00
+  39.8     83.30
+  41.3     97.40
+  41.7     73.30
+  42.3     15.70
+  42.8      8.40
+  43.1     89.40
+  43.5     52.60
+  43.8     36.90
+  44.0     34.20
+  44.8     78.30
+  45.4     64.50
+  46.0     49.70
+  46.7     17.00
+  48.3     70.40
+  48.5     33.20
+  48.8     91.50
+  50.0     90.20
+  Name: AGE, Length: 229, dtype: float64
+  ```
 </details>
 
 You can also apply a lambda function to each element of a DataFrame column by using the `apply` method. For example, say you wanted to create a new column that flagged a row if more than 50 percent of owner-occupied homes were build before 1940:
@@ -292,19 +360,6 @@ groupby_twovar.unstack()
 Here's the output:
 
 ![A screenshot that shows the output of running groupby_twovar](../media/groupby-twovar.png)
-
-### Try it yourself
-
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
-
-How could you use `groupby` to get a sense of the proportion of residential land zoned for lots larger than 25,000 sq.ft., the proportion of non-retail business acres per town, and the distance of towns from employment centers in Boston?
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Add hint... TBD.
-</details>
 
 It's often valuable to know how many unique values a column has in it by using the `nunique` method:
 

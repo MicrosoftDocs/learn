@@ -1,11 +1,5 @@
 Python includes a number of handy functions that are available to all lists.
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
->
-
 For example, [append()](https://docs.python.org/3.6/tutorial/datastructures.html) and [extend()](https://docs.python.org/3.6/tutorial/datastructures.html) enable you to add to the end of a list, much like the += operator:
 
 ```Python
@@ -141,9 +135,16 @@ The output is:
 - How about `groupMembers.append(groupMembers)`?
 
 <details>
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  beatles.append(beatles)
+  beatles
+  ```
+
+  ```Output
+  ['John', 'Paul', 'George', [...]]
+  ```
 </details>
 
 Note that you can supply your own _lambda function _to `sort()` for use in comparing items in a list. We will cover lambda functions in a later topic.

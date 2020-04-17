@@ -220,12 +220,22 @@ This output is returned:
 
 ### Try it yourself
 
-Using the documentation, can you figure out how to use `.drop()` to get rid of the **name** column?
+Using the documentation, can you figure out how to use `.drop()` to get rid of the **name** column? You will need to supply two parameters to `.drop()`.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
-You will need to supply two parameters to <code>.drop()</code>.
+  ```Python
+  pd.merge(df1, df6, left_on="employee", right_on="name").drop("name", axis=1)
+  ```
+
+  ```Output
+  |   | employee | group      | salary |
+  ---------------------------------------------
+  | 0 | Gary     | Accounting | 7000   |
+  | 1 | Stu      | Marketing  | 8000   |
+  | 2 | Mary     | Marketing  | 120000 |
+  | 3 | Sue      | HR         | 9000   |
+  ```
 </details>
 
 ## left_index and right_index keywords
@@ -288,15 +298,45 @@ Here's the output:
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
-
 What happens if you specify only **left_index** or **right_index**?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
+  ```Python
+  pd.merge(df1a, df2a, left_index=True)
+  ```
+
+  ```Output
+  ---------------------------------------------------------------------------
+  MergeError                                Traceback (most recent call last)
+  <ipython-input-40-41267a9d884c> in <module>()
+        1 # What happens if you specify only left_index or right_index?
+  ----> 2 pd.merge(df1a, df2a, left_index=True)
+  
+~/anaconda3_420/lib/python3.5/site-packages/pandas/tools/merge.py in merge(left, right, how, on, left_on,   right_on, left_index, right_index, sort, suffixes, copy, indicator)
+       59                          right_on=right_on, left_index=left_index,
+       60                          right_index=right_index, sort=sort, suffixes=suffixes,
+  ---> 61                          copy=copy, indicator=indicator)
+       62     return op.get_result()
+       63 if __debug__:
+  
+~/anaconda3_420/lib/python3.5/site-packages/pandas/tools/merge.py in __init__(self, left, right, how, on,   left_on, right_on, axis, left_index, right_index, sort, suffixes, copy, indicator)
+      536             warnings.warn(msg, UserWarning)
+      537 
+  --> 538         self._validate_specification()
+      539 
+      540         # note this function has side effects
+  
+  ~/anaconda3_420/lib/python3.5/site-packages/pandas/tools/merge.py in _validate_specification(self)
+      872             elif self.left_index:
+      873                 if self.right_on is None:
+  --> 874                     raise MergeError('Must pass right_on or right_index=True')
+      875             elif self.right_index:
+      876                 if self.left_on is None:
+  
+  MergeError: Must pass right_on or right_index=True
+  ```
 </details>
 
 
@@ -391,24 +431,25 @@ The complement of the inner join is the outer join, which returns the union of t
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hints or solutions for the two exercises in this "try it"?
-
-The keyword for perfoming an outer join is `how`='outer'. How would you perform it?
+The keyword for perfoming an outer join is `how`='outer'. How would you perform it? What do you expect the output of an outer join of df1 and df5 to be?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
-</details>
+  ```Python
+  pd.merge(df1, df5, on='group', how='outer')
+  ```
 
-
-What do you expect the output of an outer join of df1 and df5 to be?
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Add hint... TBD.
+  ```Output
+  |   | employee | group       | core_skills   |
+  ----------------------------------------------
+  | 0 | Gary     | Accounting  | NaN           |
+  | 1 | Stu      | Marketing   | writing       |
+  | 2 | Mary     | Marketing   | writing       |
+  | 3 | Sue      | HR          | NaN           |
+  | 4 | NaN      | Engineering | math          |
+  | 5 | NaN      | Sales       | communication |
+  ```
 </details>
 
 
@@ -433,23 +474,23 @@ Here's the output:
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hints or solutions for the two exercises in this "try it"?
-
-Now run the right merge between df1 and df5.
+Now run the right merge between df1 and df5. What do you expect to see?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
-</details>
+  ```Python
+  pd.merge(df1, df5, how='right')
+  ```
 
-What do you expect to see?
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Add hint... TBD.
+  ```Output
+  |   | employee | group       | core_skills   |
+  ----------------------------------------------
+  | 0 | Stu      | Marketing   | writing       |
+  | 1 | Mary     | Marketing   | writing       |
+  | 2 | NaN      | Engineering | math          | 
+  | 3 | NaN      | Sales       | communication | 
+  ```
 </details>
 
 ## suffixes keyword: dealing with conflicting column names

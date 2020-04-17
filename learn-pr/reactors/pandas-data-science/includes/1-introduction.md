@@ -72,8 +72,7 @@ In this module, you will:
 
 ## Prerequisites
 
-- [Set up your environment](https://github.com/MicrosoftDocs/learn-pr/blob/new-data-science-1/learn-pr/reactors/python-data-science/includes/1-introduction.md#set-up-your-environment)
-- [Introduction to Python for data science](https://github.com/MicrosoftDocs/learn-pr/blob/new-data-science-1/learn-pr/reactors/python-data-science/index.yml)
-- [Introduction to NumPy for data science](https://github.com/MicrosoftDocs/learn-pr/blob/new-data-science-1/learn-pr/reactors/numpy-data-science/index.yml)
+- [Introduction to Python for data science](../../python-data-science/index.yml)
+- [Introduction to NumPy for data science](../../numpy-data-science/index.yml)
 
 Now, on to pandas!
