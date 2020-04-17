@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-secure-data.2-security-capabilities
+metadata:
+  title: Security capabilities and tasks
+  description: Security capabilities and tasks
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Security capabilities and tasks
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-security-capabilities.md)]

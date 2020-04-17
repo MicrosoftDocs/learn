@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-secure-data.8-exercise-advanced-data-security
+metadata:
+  title: Exercise - Security management and advanced data security
+  description: Exercise - Security management and advanced data security
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Security management and advanced data security
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/8-exercise-advanced-data-security.md)]
