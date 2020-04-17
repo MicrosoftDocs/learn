@@ -9,7 +9,7 @@ When talking about cloud computing, there are three major categories. It's impor
 
 :::row:::
   :::column:::
-    :::image type="icon" source="../media/5-iaas.png":::
+    :::image type="icon" border="false" source="../media/5-iaas.png":::
   :::column-end:::
   :::column span="3":::
 
@@ -32,7 +32,7 @@ IaaS is commonly used in the following scenarios:
 
 :::row:::
   :::column:::
-    :::image type="icon" source="../media/5-paas.png":::
+    :::image type="icon" border="false" source="../media/5-paas.png":::
   :::column-end:::
   :::column span="3":::
 
@@ -52,8 +52,7 @@ PaaS is commonly used in the following scenarios:
 
 :::row:::
   :::column:::
-    :::image type="icon" source="../media/5-saas.png":::
-    ![Testing someone <b>embedding</b> _formatting_ ~~into~~ **alt** text descriptions.](../media/5-saas.png)
+    :::image type="icon" border="false" source="../media/5-saas.png":::
   :::column-end:::
   :::column span="3":::
 
