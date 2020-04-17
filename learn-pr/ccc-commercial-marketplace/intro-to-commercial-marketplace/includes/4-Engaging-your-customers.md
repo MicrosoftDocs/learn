@@ -46,7 +46,8 @@ When customers click the “Get It Now” button on your product’s landing pag
 
 ![Get it now call to action button from marketplace](..\media\13_GetitNowExample.png)
 
->[!NOTE] BYOL listings are only made available to customers in Azure Marketplace
+> [!NOTE] 
+> BYOL listings are only made available to customers in Azure Marketplace.
 
 ### Transact
 
@@ -58,4 +59,4 @@ When customers click the “Get It Now ” button on your product’s landing pa
 
 Transact offers are billed against an existing Microsoft account or a credit card transaction. For offers that require the use of Azure infrastructure in a customer’s Azure account, the associated infrastructure/software costs appear on the customer’s consolidated Microsoft invoice. This simplified acquisition process is a significant benefit for customers, as they don’t need to manage a separate invoice from your company.
 
-For more information on offer types, please read our [documentation on determining your listing type](https://docs.microsoft.com/en-us/azure/marketplace/determine-your-listing-type).
+For more information on offer types, please read our [documentation on determining your listing type](https://docs.microsoft.com/azure/marketplace/determine-your-listing-type).
