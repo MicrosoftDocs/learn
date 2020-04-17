@@ -1,5 +1,4 @@
-(This is a placeholder. Summarize what you can now do and the new skills you have.) 
+In this modules, you learned about the types of problems Azure Quantum service can help you solve and learned about QIO and the hardware providers available on Azure Quantum.
 
-## Learn more
-
-(This is an opportunity to point to other resources, such as Docs, the Quantum Katas, and so on.)
+# Getting Started
+When you're ready to get started, please see our guide for [Creating an Azure Quantum Workspace](/docs/Creating-an-Azure-Quantum-Workspace).
