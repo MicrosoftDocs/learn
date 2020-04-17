@@ -94,7 +94,7 @@ Update the **Orders** collection to index none of the properties.
     dotnet run -- -c Orders -o QueryCollection -q "SELECT TOP 1 * FROM c WHERE c.Customer.State = 'WA'"
     ```
 
-    You see that the consumption of this query without an index is about 10 to 11 RUs. The consumption depends on which property is in the query and how long it takes to find it in the collection. For example, if we run a query for a customer `id` instead of `State`, the search consumes more RUs.
+    You see that the consumption of this query without an index is about 10 to 11 RUs. The consumption depends on which property is in the query and how long it takes to find it in the collection. For example, if we run a query for a customer `State` instead of `OrderStatus`, the search consumes more RUs.
 
 ## Measure RUs for lazy indexing
 
