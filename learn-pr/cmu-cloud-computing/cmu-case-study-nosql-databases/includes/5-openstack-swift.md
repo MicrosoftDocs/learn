@@ -1,45 +1,4 @@
-Amazon Simple Storage Service (S3) is one of the first cloud-based storage services to have been offered to the public in 2006. Being a proprietary service, S3's architecture has not been made public but is known to be implemented on top of Amazon's <!-- Dynamo architecture -->([Dynamo architecture](http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html))<!-- (<link href="http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html" >link</link>) -->.
-
-### Amazon S3 data model
-
-As discussed previously, S3 structures data into **buckets** and **objects**. A bucket is a container for an object in S3, and every object must be contained in a bucket. Buckets are identified by a unique string, called a **bucket name**. Bucket names must be globally unique and must conform to certain specifications set by Amazon so that they can be accessed through an HTTP URL. 
-
-An S3 **object** is the fundamental entity stored in S3 and consists of an object's data and metadata. The data stored in an object is opaque to S3 and can be binary information from 1 byte to 5 terabytes in size.
-
-Objects are referenced by a key, which is the sole identifier for an S3 object. Although S3 allows users to create folders in a bucket, they are, in fact, part of the object's key string. 
-
-For example, assume<!-- ing --> an S3 object<!-- that --> is referenced by either of the following URLs:
-
-- http://s3.amazonaws.com/somebucket/somefile.txt
-- http://somebucket.s3.amazonaws.com/somefile.txt
-
-In this example, the bucket name is **somebucket**, and the key name is **somefile.txt**. The object is the binary information that is associated with the course/test.txt key (in a file system context, it can be considered to be the contents of the file).
-
-### Operations on data in Amazon S3
-
-At the lowest level, S3 allows operations on buckets and objects using a REST- or SOAP-based interface. REST commands are implemented using the standard HTTP commands of **GET**, **PUT**, **POST**, **HEAD**, **OPTIONS**, and **DELETE**. The operations of these commands are context sensitive. For example, a GET operation on a bucket, by default, lists all of the objects stored in the bucket (similar to a file system list operation), and a GET operation on an object retrieves the object data. A complete list of S3 operations is available in the API reference ([S3API](http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html)).
-
-Amazon <!-- has -->also introduced **versioning** support for objects in S3 in 2010. Versioning can be enabled on a per-bucket basis, and all objects in the bucket will be versioned. Existing objects will be preserved during PUT, POST, COPY, or DELETE operations, and GET operations can get any version of a bucket or an object if a version number is specified in the request header. 
-
-### Consistency model in Amazon S3
-
-Amazon guarantees that any updates to a single key are atomic, which means that after a particular data item is stored on S3, subsequent reads may return some version of that data but never a corrupted or partially updated version of that data.
-
-Data stored in S3 are automatically replicated to multiple availability zones for redundancy. However, this also means that the replicas have to be made consistent over time. Amazon S3 is mainly an eventually consistent data store (exceptions are described below), meaning that updates to data stored in S3 will eventually become consistent if given a long enough time period during which no other operations on that data take place. By sacrificing strong consistency, S3 can be classified as an available, partition-tolerant (AP) distributed data store, according to the CAP theorem. According to S3 documentation ([S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html)), the US-Standard Region provides eventual consistency for all requests. All other regions provide read-after-write consistency for PUTs of new objects and eventual consistency for overwrite PUTs and DELETEs.
-
-Amazon's documentation states that the following scenarios may take place due to S3's eventual consistency model:
-
-- A process writes a new object to Amazon S3 and immediately attempts to read it. Until the change is fully propagated, Amazon S3 might report "key does not exist."
-- A process writes a new object to Amazon S3 and immediately lists keys that are in its bucket. Until the change is fully propagated, the object might not appear in the list.
-- A process replaces an existing object and immediately attempts to read it. Until the change is fully propagated, Amazon S3 might return the prior data.
-- A process deletes an existing object and immediately attempts to read it. Until the deletion is fully propagated, Amazon S3 might return the deleted data.
-- A process deletes an existing object and immediately lists keys that are in its bucket. Until the deletion is fully propagated, Amazon S3 might list the deleted object.
-
-Amazon documentation also states that simultaneous writes to an object in S3 are settled by honoring the write with the latest timestamp. Thus, application developers using S3 must consider<!-- take into account --> these scenarios and design their applications accordingly.
-
-## OpenStack Swift
-
-OpenStack Swift is an object storage service that is part of the OpenStack cloud platform. Swift offers clients a REST-based HTTP interface to interact with binary objects, much like S3. However, unlike S3, Swift is free and open source, and is available for anyone to install and configure on any machine, effectively providing object storage on both public and private clouds.
+OpenStack Swift is an object storage service that is part of the OpenStack cloud platform. Swift offers clients a REST-based HTTP interface to interact with binary objects, much like Azure Blob Storage. Swift is free and open source, and is available for anyone to install and configure on any machine, effectively providing object storage on both public and private clouds.
 
 ### Swift data model and APIs
 
@@ -93,4 +52,4 @@ Swift also employs special processes called **auditors**, which scan through the
 
 ## Ceph Object Gateway
 
-To end our discussion on cloud object stores, we should talk about the Ceph Object Gateway, also known as RADOSGW. RADOSGW is an additional layer over the Ceph Storage Cluster (RADOS) that provides a RESTful HTTP interface to interact with objects stored on RADOS. The Ceph object gateway is unique in its ability to support both the S3 and SWIFT APIs to allow applications to be migrated to that platform. RADOSGW replicates the data models used in S3 and Swift and provides similar functionality as both of those services.
+To end our discussion on cloud object stores, we should talk about the Ceph Object Gateway, also known as RADOSGW. RADOSGW is an additional layer over the Ceph Storage Cluster (RADOS) that provides a RESTful HTTP interface to interact with objects stored on RADOS. The Ceph object gateway is unique in its ability to support both the Amazon S3 and SWIFT APIs to allow applications to be migrated to that platform. RADOSGW replicates the data models used in Amazon S3 and Swift and provides similar functionality as both of those services.
