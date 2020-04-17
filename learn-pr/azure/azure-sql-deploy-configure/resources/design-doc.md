@@ -47,7 +47,9 @@ The goal of this module is to train experienced SQL Server professionals.
 
 ## Outline the units
 
-1. **Pre-deployment planning**
+1. **Introduction**
+
+1. **Plan, deploy, and verify**
     - Understand the decision points and choices available when deploying Azure
     - SQL Database and Managed Instance
     - Prepare for deployment by understanding Azure constructs, governance, and space management
@@ -55,7 +57,7 @@ The goal of this module is to train experienced SQL Server professionals.
     - Get an overview and further references related to how to migrate
     - https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/02-DeployAndConfigure.md#2.1 
 
-1. **Deploy and verify**
+   **Deploy and verify**
     - Understand the deployment process and architectures for Azure SQL Database and Managed Instance  
     - https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/02-DeployAndConfigure.md#2.2
 
