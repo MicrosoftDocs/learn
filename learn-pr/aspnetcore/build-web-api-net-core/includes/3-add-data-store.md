@@ -3,10 +3,10 @@ A type of class called a *Model* is needed to represent a dog toy in inventory. 
 An in-memory database is used in this unit for simplicity. Choose a different data store for production environments, such as SQL Server or Azure SQL Database.
 
 > [!IMPORTANT]
-> If the Cloud Shell session ever times out or disconnects, reconnect and run the following command after reconnecting to set the working directory to *:::no-loc text="~/contoso-pets/src/ContosoPets.Api":::* and launch the editor:
+> If the Cloud Shell session ever times out or disconnects, reconnect and run the following command after reconnecting to set the working directory to *:::no-loc text="~/aspnet-learn/src/ContosoPets.Api":::* and launch the editor:
 >
 > ```bash
-> cd ~/contoso-pets/src/ContosoPets.Api && code .
+> cd ~/aspnet-learn/src/ContosoPets.Api && code .
 > ```
 
 1. Run the following command:
