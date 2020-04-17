@@ -48,7 +48,7 @@ The Node.js Express API runs on port **7070**. The Angular application runs on a
 We'll allow the Angular application to proxy requests to the Node.js Express application using Angular's _proxy.conf.json_ file.
 
 1. Open _proxy.conf.json_
-1. Change the port to **7070**
+1. Notice the port is set to **7070**
 
    ```json
    {
