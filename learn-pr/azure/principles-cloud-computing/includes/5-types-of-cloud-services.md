@@ -9,13 +9,13 @@ When talking about cloud computing, there are three major categories. It's impor
 
 :::row:::
   :::column:::
-    ![IaaS icon](../media/5-iaas.png)
+    :::image type="icon" border="false" source="../media/5-iaas.png":::
   :::column-end:::
   :::column span="3":::
 
 ### Infrastructure as a service (IaaS)
 
-Infrastructure as a Service is the most flexible category of cloud services. It aims to give you complete control over the hardware that runs your application (IT infrastructure servers and virtual machines (VMs), storage, and operating systems). Instead of buying hardware, with IaaS, you rent it. It's an instant computing infrastructure, provisioned and managed over the internet.
+Infrastructure as a Service is the most flexible category of cloud services. It aims to give you the most control over the provided hardware that runs your application (IT infrastructure servers and virtual machines (VMs), storage, and operating systems). Instead of buying hardware, with IaaS, you rent it. It's an instant computing infrastructure, provisioned and managed over the internet.
   :::column-end:::
 :::row-end:::
 
@@ -32,7 +32,7 @@ IaaS is commonly used in the following scenarios:
 
 :::row:::
   :::column:::
-    ![PaaS icon](../media/5-paas.png)
+    :::image type="icon" border="false" source="../media/5-paas.png":::
   :::column-end:::
   :::column span="3":::
 
@@ -52,7 +52,7 @@ PaaS is commonly used in the following scenarios:
 
 :::row:::
   :::column:::
-    ![SaaS icon](../media/5-saas.png)
+    :::image type="icon" border="false" source="../media/5-saas.png":::
   :::column-end:::
   :::column span="3":::
 
@@ -75,7 +75,9 @@ SaaS is software that is centrally hosted and managed for the end customer. It i
 
 One thing to understand is that these categories are layers on top of each other. For example, PaaS adds a layer on top of IaaS by providing a level of abstraction. The abstraction has the benefit of hiding the details that you may not care about, so that you can get to coding quicker. However, one aspect of the abstraction is that you have less control over the underlying hardware. The following illustration shows a list of resources that you manage and that your service provider manages in each cloud service category.
 
-![An illustration showing the level of abstraction in each category of cloud service.](../media/5-layer-diagram.png)
+:::image type="complex" source="../media/5-layer-diagram.png" alt-text="Illustration showing the level of abstraction in each category of cloud service.":::
+    First column, on-premises, shows all elements managed by you. Second, infrastructure as a service, moves virtualization, servers, storage, and networking to the cloud provider. Third, platform as a service, moves runtime, middleware, and OS to the cloud provider. And fourth, software as a service, moves all elements to the cloud provider, with applications and data being the last elements moving.
+:::image-end:::
 
 - IaaS requires the most user management of all the cloud services. The user is responsible for managing the operating systems, data, and applications.
 - PaaS requires less user management. The cloud provider manages the operating systems, and the user is responsible for the applications and data they run and store.
