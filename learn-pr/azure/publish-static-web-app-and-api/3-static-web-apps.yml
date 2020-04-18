@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-static-web-app-and-api.5-design-api
+uid: learn.azure.publish-static-web-app-and-api.static-web-apps
 metadata:
   title: Analyze the benefits of Static Web Apps
   description: Analyze the benefits of Static Web Apps
@@ -12,4 +12,4 @@ metadata:
 title: Analyze the benefits of Static Web Apps
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-design-api.md)]
+  [!include[](includes/static-web-apps.md)]
