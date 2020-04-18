@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.develop-azure-functions-app-with-maven-plugin.8-add-logging-to-azure-function
+title: Add logging and monitor an Azure Function in the portal
+metadata:
+  title: Add logging and monitor an Azure Function in the portal
+  description: Add logging and monitor an Azure Function in the portal
+  ms.date: 02/01/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-add-logging-to-azure-function.md)]

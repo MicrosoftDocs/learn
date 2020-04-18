@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.develop-azure-functions-app-with-maven-plugin.2-create-azure-function-maven-archetype
+title: Create an Azure function using the Maven archetype
+metadata:
+  title: Create an Azure function using the Maven archetype
+  description: A Maven archetype represents a specific type of functionality that you want the developers to get up to speed on fast.
+  ms.date: 02/01/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-create-azure-fnc-maven-archetype.md)]
