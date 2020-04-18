@@ -60,7 +60,7 @@ Once you have opened a port for testing, your next task would be to build and ex
 
     ![Image showing the Azure Function Core tools logo](../media/4-mvn-azure-function-startup.png)
 
-1. Once you have completed your testing, you would use <kbd>CTRL+C<kbd> command from the Azure Cloud Shell to stop the server.
+1. Once you have completed your testing, you would use <kbd>CTRL+C</kbd> command from the Azure Cloud Shell to stop the server.
 
 ## Testing your function using HTTP requests
 
