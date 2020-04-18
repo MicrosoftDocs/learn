@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.develop-azure-functions-app-with-maven-plugin.2-create-azure-function-maven-archetype
+uid: learn.develop-azure-functions-app-with-maven-plugin.2-create-azure-function-maven-archetype
 title: Create an Azure function using the Maven archetype
 metadata:
   title: Create an Azure function using the Maven archetype

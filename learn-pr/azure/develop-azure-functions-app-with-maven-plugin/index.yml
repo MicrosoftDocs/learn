@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.develop-azure-functions-app-with-maven-plugin
+uid: learn.develop-azure-functions-app-with-maven-plugin
 metadata:
   title: Develop your Azure Functions App by using Maven Plugin for Azure Functions
   description: Use the Maven Plugin for Azure Functions to create a cloud-based function that is triggered when certain values are passed in the HTTP request, and outputs a log entry to track the activity.
@@ -28,15 +28,15 @@ roles:
 products:
 - azure-functions
 units:
-- learn.azure.develop-azure-functions-app-with-maven-plugin.1-introduction
-- learn.azure.develop-azure-functions-app-with-maven-plugin.2-create-azure-function-maven-archetype
-- learn.azure.develop-azure-functions-app-with-maven-plugin.3-exercise-create-azure-function-maven-archetype
-- learn.azure.develop-azure-functions-app-with-maven-plugin.4-run-local-azure-function
-- learn.azure.develop-azure-functions-app-with-maven-plugin.5-exercise-run-local-azure-function
-- learn.azure.develop-azure-functions-app-with-maven-plugin.6-deploy-function-azure
-- learn.azure.develop-azure-functions-app-with-maven-plugin.7-exercise-deploy-function-azure
-- learn.azure.develop-azure-functions-app-with-maven-plugin.8-add-logging-to-azure-function
-- learn.azure.develop-azure-functions-app-with-maven-plugin.9-exercise-add-logging-to-azure-function
-- learn.azure.develop-azure-functions-app-with-maven-plugin.10-summary
+- learn.develop-azure-functions-app-with-maven-plugin.1-introduction
+- learn.develop-azure-functions-app-with-maven-plugin.2-create-azure-function-maven-archetype
+- learn.develop-azure-functions-app-with-maven-plugin.3-exercise-create-azure-function-maven-archetype
+- learn.develop-azure-functions-app-with-maven-plugin.4-run-local-azure-function
+- learn.develop-azure-functions-app-with-maven-plugin.5-exercise-run-local-azure-function
+- learn.develop-azure-functions-app-with-maven-plugin.6-deploy-function-azure
+- learn.develop-azure-functions-app-with-maven-plugin.7-exercise-deploy-function-azure
+- learn.develop-azure-functions-app-with-maven-plugin.8-add-logging-to-azure-function
+- learn.develop-azure-functions-app-with-maven-plugin.9-exercise-add-logging-to-azure-function
+- learn.develop-azure-functions-app-with-maven-plugin.10-summary
 badge:
-  uid: learn.azure.develop-azure-functions-app-with-maven-plugin.badge
+  uid: learn.develop-azure-functions-app-with-maven-plugin.badge
