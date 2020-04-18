@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api.6-exercise-func-app
+metadata:
+  title: Exercise - Create an Azure Functions app
+  description: Exercise - Create an Azure Functions app
+  ms.date: 05/01/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+title: Exercise - Create an Azure Functions app
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-exercise-func-app.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api.4-exercise-connect
+metadata:
+  title: Exercise - Create an App Service Static App
+  description: Exercise - Create an App Service Static App
+  ms.date: 05/01/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+title: Exercise - Create an App Service Static App
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-exercise-connect.md)]

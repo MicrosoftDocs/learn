@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-static-web-app-and-api.12-summary
+uid: learn.azure.publish-static-web-app-and-api.10-summary
 metadata:
   title: Summary
   description: Summary of the app
-  ms.date: 04/10/2020
+  ms.date: 05/01/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 1
 content: |
-  [!include[](includes/12-summary.md)]
+  [!include[](includes/10-summary.md)]

@@ -2,6 +2,13 @@
 
 Generalized content for all JavaScript frameworks. Always shown.
 
+- Generate your repo
+- Johnpapa/the-template-repo/generate -> this is how they create the starting repo for them
+- Git clone it
+- Npm install
+- Npm start
+- See your app , sans api
+
 ::: zone pivot="angular"
 
 ## Angular section

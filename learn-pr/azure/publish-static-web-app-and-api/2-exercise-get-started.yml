@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api.2-exercise-get-started
+metadata:
+  title: Get started
+  description: Get started
+  ms.date: 05/01/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-javascript-framework
+title: Get started
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-exercise-get-started.md)]
