@@ -66,7 +66,7 @@ Once you have opened a port for testing, your next task would be to build and ex
 
 In this module, you will be using a single instance of the Cloud Shell. As a result, you will need to test your application by opening a new tab in your web browser. In the browser's address bar, you would enter a URL that resembles the following example:
 
-```txt
+```
 https://gateway.westus.console.azure.com/n/cc-12345678/cc-12345678/proxy/7071/api/HttpExample?name=Bob
 ```
 

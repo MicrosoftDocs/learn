@@ -115,7 +115,7 @@ After you have opened your port for testing, you're able to build and run your f
 
 1. Copy the URL section following the HTTP port; for example:
 
-    ```txt
+    ```
     /api/HttpExample
     ```
     
@@ -129,19 +129,19 @@ Earlier in this exercise, you opened an HTTP port for testing; this port will en
 
     1. Retrieve the URL that you copied earlier in the **Opening an HTTP port for testing** section of this exercise; for example:
 
-        ```txt
+        ```
         https://gateway.westus.console.azure.com/n/cc-12345678/cc-12345678/proxy/7071/
         ```
 
     1. Append the excerpt from your function's API URL that you copied earlier in the **Building and running your function in the Cloud Shell** section of this exercise; for example:
 
-        ```txt
+        ```
         https://gateway.westus.console.azure.com/n/cc-12345678/cc-12345678/proxy/7071/api/HttpExample
         ```
 
     1. Append a query string that passes a name to the API URL; for example:
 
-        ```txt
+        ```
         https://gateway.westus.console.azure.com/n/cc-12345678/cc-12345678/proxy/7071/api/HttpExample?name=Bob
         ```
 

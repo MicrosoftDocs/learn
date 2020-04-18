@@ -120,7 +120,7 @@ You will recall from the exercise that you completed in a previous unit, you wer
 
 1. Select your function from the list of resources; for this exercise, your function's name begins with *event-reporting*. For example:
 
-    ```txt
+    ```
     event-reporting-20200102030405006
     ```
 
@@ -130,7 +130,7 @@ You will recall from the exercise that you completed in a previous unit, you wer
 
 1. At the top of the function page, select **</> Get function URL**. This will allow you to copy the fully-constructed URL of your function. For example:
 
-    ```txt
+    ```
     https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample
     ```
 
@@ -144,13 +144,13 @@ Now that you have deployed your function to Azure, all that is necessary to test
 
     1. Retrieve the URL that you copied in the preceding **Retrieving your Azure Function URL using the portal** section of this exercise; for example:
 
-        ```txt
+        ```
         https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample
         ```
 
     1. Append a query string that passes a name to the API URL; for example:
 
-        ```txt
+        ```
         https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample?name=Bob
         ```
 
