@@ -1,6 +1,6 @@
-In the previous unit, you learned how you can use Maven archetypes to create a Java projects, and how you can set up your development projects using the `azure-functions-archetype` to create Azure Function projects.
+In the previous unit, you learned how you can use Maven archetypes to create Java projects, and how you can set up your development projects using the `azure-functions-archetype` to create Azure Function projects.
 
-In order to begin the process of simplifying your company's event reporting, you want to create a simple Java application to help you understand the steps you'll need to take to move your event reporting logic into Azure Functions.
+In order to begin the process of simplifying your company's event reporting, you want to create a Java application to help you understand the steps you'll need to take to move your event reporting logic into Azure Functions.
 
 In this exercise, you'll create an Azure Function using the Maven archetype using the Azure Cloud Shell, and you'll verify that all of the project files are correctly configured.
 
@@ -60,7 +60,7 @@ You're now going to create an Azure Function using Maven. This exercise will use
     [INFO] ------------------------------------------------------------------------
     ```
 
-Congratualtions! You've just created your Azure Function.
+Congratulations! You've created your Azure Function.
 
 <!-- NOTE: These values were required for the 1.24 version of the archetype.
     | `appName` | *Accept the default* |

@@ -46,8 +46,8 @@ Where:
 | Parameter | Description |
 |---|---|
 | `archetype:generate` | Instructs Maven to generate a project from an archetype. |
-| `-DarchetypeGroupId` | Specifies the group ID of the archetype; this is usually the creator of the archetype. |
-| `-DarchetypeArtifactId` | Specifies the ID of the archetype; which is the Azure Functions archetype in this example. |
+| `-DarchetypeGroupId` | Specifies the group ID of the archetype, which is usually the creator of the archetype. |
+| `-DarchetypeArtifactId` | Specifies the ID of the archetype, which is the Azure Functions archetype in this example. |
 
 #### Using archetypes in batch mode
 
@@ -76,7 +76,7 @@ Where:
 
 Using Maven in batch mode is great for automating your build processes, because Maven will build your applications without human interaction.
 
-#### Sepcifying archetypes versions
+#### Specifying archetypes versions
 
 While you should usually try to use the latest version of an archetype, if you need to specify a different version, you can add the version number to the command line. For example:
 
@@ -92,7 +92,7 @@ Where:
 | Parameter | Description |
 |---|---|
 | `archetype:generate` | Instructs Maven to generate a project from an archetype. |
-| `-DarchetypeGroupId` | Specifies the group ID of the archetypee. |
+| `-DarchetypeGroupId` | Specifies the group ID of the archetype. |
 | `-DarchetypeArtifactId` | Specifies the ID of the archetype. |
 | `-DarchetypeVersion` | Specifies the version of the archetype. |
 

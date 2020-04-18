@@ -10,7 +10,7 @@ At this time, there are three versions of the Azure Functions Core Tools. Howeve
 
 > [!NOTE]
 >
->  If you were using your personal Azure account instead of the Cloud Shell in the Learn sandbox, you would need to consult [Work with Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) for descriptions, requirements, and installation instructions for the different versions of the Azure Functions Core Tools.
+>  If you used your personal Azure account instead of the Cloud Shell in the Learn sandbox, you would need to consult [Work with Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) for descriptions, requirements, and installation instructions for the different versions of the Azure Functions Core Tools.
 >
 
 ## Configuring the Cloud Shell environment for testing
@@ -30,7 +30,7 @@ When you are testing a web-based application that runs in the Cloud Shell, you h
         curl -X POST http://localhost:8888/closePort/7071
         ```
 
-1. You can open mutiple instances of the Cloud Shell to test the application locally:
+1. You can open multiple instances of the Cloud Shell to test the application locally:
 
     - You would run the application in the first instance.
 
@@ -64,9 +64,9 @@ Once you have opened a port for testing, your next task would be to build and ex
 
 ## Testing your function using HTTP requests
 
-In this module, you will be using a single instance of the Cloud Shell. As a result, you will need to test your application by opening a new tab in your web browser. In the browser's address bar, you would enter a URL that resembles the following:
+In this module, you will be using a single instance of the Cloud Shell. As a result, you will need to test your application by opening a new tab in your web browser. In the browser's address bar, you would enter a URL that resembles the following example:
 
-```bash
+```txt
 https://gateway.westus.console.azure.com/n/cc-12345678/cc-12345678/proxy/7071/api/HttpExample?name=Bob
 ```
 

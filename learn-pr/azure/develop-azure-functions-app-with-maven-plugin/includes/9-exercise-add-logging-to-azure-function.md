@@ -26,7 +26,7 @@ Azure will configure Application Insights for your function. You may see a warni
 
 ## Adding instrumentation to your Java project
 
-Now that you have enabled Application Insights for your application, your next task to enable it in your application. To enable application logging and Application Insighst, you'll need to modify the configuration files to include the requisite libraries and other dependencies.
+Now that you have enabled Application Insights for your application, your next task to enable it in your application. To enable application logging and Application Insights, you'll need to modify the configuration files to include the requisite libraries and other dependencies.
 
 There are two configuration files that you'll need to update: *pom.xml* and *host.json*.
 

@@ -145,9 +145,9 @@ Earlier in this exercise, you opened an HTTP port for testing; this port will en
         https://gateway.westus.console.azure.com/n/cc-12345678/cc-12345678/proxy/7071/api/HttpExample?name=Bob
         ```
 
-    1. Copy this fully-constructed URL for use in the following steps.
+    1. Copy this fully constructed URL for use in the following steps.
 
-1. Open a new tab in your web browser, and paste the fully-constructed URL from the previous steps into the address field.
+1. Open a new tab in your web browser, and paste the fully constructed URL from the previous steps into the address field.
 
 1. When you instruct your web browser to request the URL, you will see a plaintext message returned to your web browser that is personalized for the name you passed in the query string. For example:
 
@@ -183,6 +183,6 @@ Earlier in this exercise, you opened an HTTP port for testing; this port will en
     [1/1/20 7:08:13 AM] }
     ```
 
-If you do not see any errors, then you have sucessfully tested your function locally!
+If you do not see any errors, then you have successfully tested your function locally!
 
 In the next unit, you'll learn how to deploy your function to Azure Functions.

@@ -14,7 +14,7 @@ Application Insights will provide essential information on failed requests, serv
 
 To enable Application Insights, you will need to locate your function in the Azure portal. To do so, you would sign into the Azure portal as you have done in previous exercises, then locate your function in the list of resources that you have created.
 
-When you expand the list of functions, you would select the **Montitor** link for the function where you want to enable Application Insights, then click **Configure** to begin setting up your monitoring.
+When you expand the list of functions, you would select the **Monitor** link for the function where you want to enable Application Insights, then click **Configure** to begin setting up your monitoring.
 
 ![Image showing where to enable Application Insights](../media/8-enable-application-insights.png)
 
@@ -28,7 +28,7 @@ To get the best from Application Insights, you'll need to update your function p
 
     - Update your project's *host.json* file to add parameters that define how the logging and Application Insights will work for your application.
 
-- The second set of changes are to modify your application's code, which provides you with opportunities to fine-tune your application's reporting:
+- The second set of changes are modifications to your application's code, which provides you with opportunities to fine-tune your application's reporting:
 
     - To implement the event tracking in Application Insight, you'll need to add a *tracker* to your code.
     
