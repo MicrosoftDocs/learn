@@ -3,14 +3,13 @@ uid: learn.azure.develop-azure-functions-app-with-maven-plugin.5-exercise-run-lo
 title: Exercise - run and test an Azure function locally
 metadata:
   title: Exercise - run and test an Azure function locally
-  description: Exercise - run and test an Azure function locally
-  ms.date: 02/01/2020
+  description: You have created an Azure function using the Azure Maven archetype. Now you'll build, run and test that it works.
+  ms.date: 04/01/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 6
 interactive: bash
 azureSandbox: true
 content: |

@@ -3,15 +3,14 @@ uid: learn.azure.develop-azure-functions-app-with-maven-plugin.7-exercise-deploy
 title: Exercise - deploy a function to Azure
 metadata:
   title: Exercise - deploy a function to Azure
-  description: Exercise - deploy a function to Azure
-  ms.date: 02/01/2020
+  description: Prepare your function application for deployment, then deploy it to Azure using Maven. After you have deployed your application, you'll test in in a web browser.
+  ms.date: 04/01/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/7-exercise-deploy-fnc-azure.md)]
+  [!include[](includes/7-exercise-deploy-function-azure.md)]

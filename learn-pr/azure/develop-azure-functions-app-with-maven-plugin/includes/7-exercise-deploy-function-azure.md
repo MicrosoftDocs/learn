@@ -1,95 +1,167 @@
-You have successfully run the Azure Functions app locally through the Azure CLI and tested it. 
+Now that you've learned how to create and deploy functions to Azure, it's time to put the theory into practice.
 
-Now you'll need to deploy this application to Azure and create an Azure Function.
+In this exercise, you'll learn how to configure your function for deployment to Azure Functions. Then you'll use Maven to deploy your function, and then you'll test your function in the cloud.
 
-In this unit, you'll learn how to use Maven to deploy your application and turn it into an Azure Function.
+## Configure your function project for deployment
+
+There are a few changes that need to be made to your function application before it can be deployed to Azure, and the following steps will walk you updating your project for deployment.
+
+1. Determine the region for your sandbox resource group:
+
+    1. Use the name of the resource group that was automatically created for you when you activated the the sandbox to retrieve the region where the resource group is located:
+
+        ```bash
+        az group show --name "<rgn>[sandbox resource group name]</rgn>" | jq -r '.location'
+        ```
+
+    1. Copy the name of the region that is displayed; you will use that region in the following steps.
+    
+1. Edit your *pom.xml* file to update the settings:
+
+    1. In the Azure Cloud Shell, change to the root folder for your application. For example:
+
+        ```bash
+        cd ~/event-reporting
+        ```
+
+    1. Open your *pom.xml* in the Cloud Shell code editor.
+
+        ```bash
+        code pom.xml
+        ```
+    
+    1. Locate the following artifact ID:
+
+        ```xml
+        <artifactId>azure-functions-maven-plugin</artifactId>
+        ```
+
+    1. In the following `<configuration>` section, locate the `<resourceGroup>` element, and update it with the name of your resource group. For example:
+
+        ```xml
+        <resourceGroup><rgn>[sandbox resource group name]</rgn></resourceGroup>
+        ```
+
+    1. Locate the `<region>` element, and update it with the name of the region where your resource group is located. For example:
+
+        ```xml
+        <region>westus</region>
+        ```
+
+    1. Press <kbd>Ctrl+S</kbd> to save your *pom.xml* file, and then press <kbd>Ctrl+Q</kbd> to close the code editor.
 
 ## Deploy your Azure Function
 
-Up until now, you've created, built, run, and tested your application locally through the Azure CLI.  Next, you'll learn how to deploy the application to Azure and turn it into an Azure Function.
+Now that you have configured your function for deployment, your next step is to deploy it to Azure Functions.
 
-1. Return to your Azure CLI session.  This is the one that you used to run and test the Azure Function the last time.
-1. Now use the Maven command to deploy your application.  
+1. In the Azure Cloud Shell, change to the root folder for your application. For example:
 
-    ```BASH
-    cd ~/contoso-functions
+    ```bash
+    cd ~/event-reporting
+    ```
+
+1. Before deploying your function, use the following Maven command to clean your project directory and rebuild your function:
+
+    ```bash
+    mvn clean package
+    ```
+
+1. When Maven has built your function successfully, use the following command to deploy it to Azure Functions:
+
+    ```bash
     mvn azure-functions:deploy
     ```
 
-    The deploy command takes your application and deploys it to the Azure Functions area.  It uses many of the parameters you supplied during the creation of the Function. 
+    Maven will display a running status of the deployment. For example:
 
-    When the deployment is successful, you should see something similar to this:
-
-    ```console
+    ```output
     [INFO] Scanning for projects...
     [INFO]
     [INFO] ------------------------------------------------------------------------
     [INFO] Building Azure Java Functions 1.0-SNAPSHOT
     [INFO] ------------------------------------------------------------------------
     [INFO]
-    [INFO] --- azure-functions-maven-plugin:1.3.4:deploy (default-cli) @ contoso-functions ---
-    [INFO] In the Azure Cloud Shell, use MSI to authenticate.
+    [INFO] --- azure-functions-maven-plugin:1.4.1:deploy (default-cli) @ event-reporting ---
+    [INFO] Auth Type : AZURE_CLI
+    [INFO] Subscription : Concierge Subscription(12345678-1234-1234-1234-123456789abc)
     [INFO] The specified function app does not exist. Creating a new function app...
-    [INFO] Set function worker runtime to java
-    [INFO] Successfully created the function app: contoso-functions-201910153436223
+    [INFO] Set function worker runtime to java.
+    [INFO] Successfully created the function app: event-reporting-20200102030405006.
     [INFO] Trying to deploy the function app...
-    [INFO] Trying to deploy artifact to contoso-functions-201910153436223...
-    [INFO] Successfully deployed the artifact to https://contoso-functions-201910153436223.azurewebsites.net
-    [INFO] Successfully deployed the function app at https://contoso-functions-201910153436223.azurewebsites.net
+    [INFO] Trying to deploy artifact to event-reporting-20200102030405006...
+    [INFO] Successfully deployed the artifact to https://event-reporting-20200102030405006.azurewebsites.net
+    [INFO] Successfully deployed the function app at https://event-reporting-20200102030405006.azurewebsites.net.
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 29.389 s
-    [INFO] Finished at: 2019-10-15T14:03:32+00:00
-    [INFO] Final Memory: 37M/332M
+    [INFO] Total time: 01:42 min
+    [INFO] Finished at: 2020-01-01T09:26:45+00:00
+    [INFO] Final Memory: 64M/320M
     [INFO] ------------------------------------------------------------------------
-
     ```
-    
-1. Make a note of the URL for the deployed Function. You'll need it next.
+
+## Retrieving your Azure Function URL using the portal
+
+You will recall from the exercise that you completed in a previous unit, you were required to create the URL to test your function in a web browser. However, there is a much easier method to retrieve the URL for your Azure Function by using the Azure portal. To do so, use the following steps.
+
+<!--
+1. In the Azure Cloud Shell, run the following commands, which will enable you to view your functions in the Azure portal:
+
+    ```bash
+    export RESOURCEGROUP=$(az group list | jq -r '.[0].name')
+    export FUNCTIONAPP=$(az functionapp list | jq -r '.[0].repositorySiteName')
+    az functionapp config appsettings set --name $FUNCTIONAPP --resource-group $RESOURCEGROUP --settings "WEBSITE_RUN_FROM_PACKAGE=0"
+    ```
+-->
+
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
+
+1. Select **All resources** from the menu on the left.
+
+1. Select your function from the list of resources; for this exercise, your function's name begins with *event-reporting*. For example:
+
+    ```txt
+    event-reporting-20200102030405006
+    ```
+
+   Note that this is the same `function app` name that was reported in the deployment response earlier in this exercise.
+
+1. Expand the **Functions** list, the select your **HttpExample** function. This will show you the *function.json* file for you function.
+
+1. At the top of the function page, select **</> Get function URL**. This will allow you to copy the fully-constructed URL of your function. For example:
+
+    ```txt
+    https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample
+    ```
+
+    You'll use this URL in the next section of this exercise.
 
 ## Test your Azure Function in the portal
 
-From the results view, you might think you can click one of the https links and see the application function running in your browser.  The link will work, but the address line is incomplete.  
+Now that you have deployed your function to Azure, all that is necessary to test your function in a web browser is to append a query string to the end of the URL as you have done in previous exercises.
 
-In a similar fashion to when you tested the Function through the Azure CLI, there are a few more steps required.  First of all, we need to build the URL.
+1. Construct the URL for your function's API:
 
-1. Open the Azure portal associated with your sandbox instance.
-1. Select All resources from the left pane.
-1. Select your Function app from the list, its name being with `contoso-function-`.
-1. When the function overview is displayed, select the HttpTrigger-Java function from the list.  This will show you the function.json code page.  
-1. While you're accessing the function, it is a good idea to run a quick test.  From the function view, scroll down to the bottom of the page and select the **Logs** option.
+    1. Retrieve the URL that you copied in the preceding **Retrieving your Azure Function URL using the portal** section of this exercise; for example:
 
-    ![Image showing the logs option to select](../media/7-azure-function-quick-test-logs.png)
+        ```txt
+        https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample
+        ```
 
-1. From the right-hand side of the page, select the **Test** option.
+    1. Append a query string that passes a name to the API URL; for example:
 
-1. Select **POST** as from the HTTP method.
+        ```txt
+        https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample?name=Bob
+        ```
 
-    ![Screenshot showing the function.json code page testing the function](../media/7-azure-function-page-expanded.png)
+    1. Copy this fully-constructed URL for use in the following steps.
 
-1. Select **Run**.
+1. Open a new tab in your web browser, and paste the fully-constructed URL from the previous steps into the address field.
 
-1. You'll see a log entry appear in the window, which confirms the function is behaving as expected.
+1. When you instruct your web browser to request the URL, you will see a plaintext message returned to your web browser that is personalized for the name you passed in the query string. For example:
 
-    ![Image showing the result of the test run of the function](../media/7-azure-function-quick-test-result.png)
-
-## Test your Azure Function in your browser
-
-1. At the top of the function page, select **</> get function URL**.
-1. A small panel will appear with the title: Get function URL. Press the **Copy** button to make a copy of the URL and then close the dialogue box.
-1. You now have the URL for your Function.
-1. Open a new tab in your browser and paste the function URL and run. You'll receive a message asking you to supply a name parameter.
-1. You need to add the parameter to the end of the URL.  Append this text to the URL line.
-
-    ```TXT
-    &name=CloudTest
+    ```output
+    Hello, Bob
     ```
 
-1. The completed URL will look like this:
-
-    ```TXT
-    https://contoso-functions-20191010093741216.azurewebsites.net/api/HttpTrigger-Java?code=45ToKzriO7ITlXfm9VxV/jWyQz6qC4XKVIkbhp/a7p7JZFZk2JgFxg==&name=CloudTest
-    ```
-
-1. Copy this into your URL and refresh your web page. You'll see the message, `Hello, CloudTest`.
+You have now successfully deployed and tested your function in Azure!

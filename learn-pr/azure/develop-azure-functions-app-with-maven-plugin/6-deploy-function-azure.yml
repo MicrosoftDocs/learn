@@ -3,13 +3,12 @@ uid: learn.azure.develop-azure-functions-app-with-maven-plugin.6-deploy-function
 title: Deploy a function to Azure
 metadata:
   title: Deploy a function to Azure
-  description: Deploy a function to Azure
-  ms.date: 02/01/2020
+  description: Learn about the different methods that are available for deploying applications to Azure.
+  ms.date: 04/01/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-deploy-fnc-azure.md)]
+  [!include[](includes/6-deploy-function-azure.md)]

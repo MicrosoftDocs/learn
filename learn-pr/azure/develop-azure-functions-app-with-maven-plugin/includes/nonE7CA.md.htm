@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+body,html{font-family:Segoe UI,SegoeUI,Segoe WP,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;font-weight:400;text-rendering:optimizeLegibility}
+table,th,td{border:1px solid #000;border-collapse:collapse;padding:5px;}
+blockquote{background-color:#eef;padding:5px;}
+</style>
+</head>
+<body>
+<p>Now that you've successfully deployed your first serverless web function using the Azure Functions Maven Archetype, your company would like you to research how to analyze your application's usage with Azure Application Insights.</p>
+<p>In this unit, you'll learn about the integration between Azure Functions and Application Insights, and how to set up Application Insights for your Azure Function.</p>
+<h2 id="what-is-application-insights">What is Application Insights?</h2>
+<p>Azure Application Insights is an Application Performance Management (APM) service that included with Azure Monitor, and is integrated with Azure Functions. Application Insights helps developers view and analyze live data about their applications as they are being used by customers. Application Insights provides a comprehensive set of tools that can help you analyze and respond to issues that might be affecting your application.</p>
+<p>Application Insights supports applications that are developed in Node.js, Java, or .NET, which allows your development team greater flexibility and choice in how they structure and build your company's applications.</p>
+<p>Application Insights will provide essential information on failed requests, server response time, server requests, and availability. It can also use telemetry data sent from the application. However, this will require you to include telemetry tracking points in your code.</p>
+<h2 id="enabling-application-insights-for-your-function">Enabling Application Insights for your function</h2>
+<p>To enable Application Insights, you will need to locate your function in the Azure portal. To do so, you would sign into the Azure portal as you have done in previous exercises, then locate your function in the list of resources that you have created.</p>
+<p>When you expand the list of functions, you would select the <strong>Montitor</strong> link for the function where you want to enable Application Insights, then click <strong>Configure</strong> to begin setting up your monitoring.</p>
+<p><img src="../media/8-enable-application-insights.png" alt="Image showing where to enable Application Insights" /></p>
+<h2 id="adding-instrumentation-to-your-java-project">Adding instrumentation to your Java Project</h2>
+<p>To get the best from Application Insights, you'll need to update your function project. There are two types of changes that you'll need to make:</p>
+<ul>
+<li><p>The first set of changes are updates to your configuration in order to add Application Insights and logging support:</p>
+<ul>
+<li><p>Update your project's <em>pom.xml</em> file to add a dependency for the Application Insights library.</p>
+</li>
+<li><p>Update your project's <em>host.json</em> file to add parameters that define how the logging and Application Insights will work for your application.</p>
+</li>
+</ul>
+</li>
+<li><p>The second set of changes are to modify your application's code, which provides you with opportunities to fine-tune your application's reporting:</p>
+<ul>
+<li><p>To implement the event tracking in Application Insight, you'll need to add a <em>tracker</em> to your code.</p>
+</li>
+<li><p>Trackers are added at critical points in your code's execution; for example: when a new page is selected, or when specific data is saved to your application.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="understanding-log-tracking">Understanding log tracking</h2>
+<p>The recommended method for using Application Insights in your function applications is to fine-tune your application's monitoring and reporting.</p>
+<p>However, you can also retrieve data about the operation of your applications from the built-in logs that Azure provides you. For example, <strong>Log streaming</strong> is available from the <strong>Platform features</strong> tab from the top-level page of your functions App Service.</p>
+<p><img src="../media/8-log-streaming.png" alt="Image showing where to find Log Streaming" /></p>
+
+</body>
+</html>

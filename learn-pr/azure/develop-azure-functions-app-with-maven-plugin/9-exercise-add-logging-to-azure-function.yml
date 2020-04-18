@@ -3,14 +3,13 @@ uid: learn.azure.develop-azure-functions-app-with-maven-plugin.9-exercise-add-lo
 title: Exercise - add logging and monitor an Azure Function in the portal
 metadata:
   title: Exercise - add logging and monitor an Azure Function in the portal
-  description: Exercise - add logging and monitor an Azure Function in the portal
-  ms.date: 02/01/2020
+  description: Update your application with custom logging and monitoring features, redeploy your application to Azure, then review your application's using Azure's reporting tools.
+  ms.date: 04/01/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |

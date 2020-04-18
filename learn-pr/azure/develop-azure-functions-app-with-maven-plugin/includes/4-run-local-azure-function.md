@@ -1,45 +1,79 @@
-You have now created an Azure Function's project using the Azure Maven archetype. Now you'll need to build it, run it, and test that it works.
+In the previous exercise, you created an Azure Function project using an Azure Maven archetype. Your next task is to build your function, and run it locally to verify that it works.
 
-In this unit, you'll learn why the Azure Functions core tools let you run and test functions locally, how to open a port to enable testing, and finally, how to run and test the function.
+In this unit, you'll learn about the Azure Functions Core Tools, which help you run and test your functions locally. You'll also learn how to open an HTTP port for testing, how to run your function in the Cloud Shell, and how to test your function in a web browser.
 
-## What are the Azure Functions Core Tools
+## What are the Azure Functions Core Tools?
 
-The Azure Function Core is a suite of tools for building and test Azure functions locally using a terminal emulator or command prompt.  Any developed functions can access live Azure services.  When you're ready, you can then deploy the application function to your Azure subscription.
+Azure Functions Core Tools are a suite of utilities for building and testing Azure Functions locally using a terminal emulator or command prompt. Even though the Azure Functions you create are running locally, they can access live Azure services during your testing. When you've completed your testing and your function is ready to publish, you can deploy your function application to your Azure subscription.
 
-There are two versions of the Azure Functions Core Tools.  It's recommended to use the latest version when developing functions for deployment to Azure.  The latest version requires .NET Core 2.x and above.  You can negate the need to have .NET Core installed on a target machine by using the extension bundles plugin in your project build files.
+At this time, there are three versions of the Azure Functions Core Tools. However, as a general rule, unless you have a specific need to use an earlier version, you should always use the latest version when you are developing functions for deployment to Azure. For this module, you'll use the Azure Cloud Shell in the Learn sandbox, which has the latest version of the Azure Functions Core Tools.
 
-## Opening port 7071 using the Azure CLI
+> [!NOTE]
+>
+>  If you were using your personal Azure account instead of the Cloud Shell in the Learn sandbox, you would need to consult [Work with Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) for descriptions, requirements, and installation instructions for the different versions of the Azure Functions Core Tools.
+>
 
-So far, you've used the Maven azure functions plugin to build an Azure Functions archetype in your Azure Cloud Shell. Before you can run the application, you'll need to open port 7071 using the curl command:
+## Configuring the Cloud Shell environment for testing
 
-```BASH
-curl -X POST http://localhost:8888/openPort/7071
+When you are testing a web-based application that runs in the Cloud Shell, you have two different ways of testing the application:
+
+1. You can use the Cloud Shell to open an external port for testing, which will route HTTP requests to the localhost port of your Cloud Shell instance:
+
+    - To open port 7071 from the Cloud Shell, you would use the following cURL command:
+
+        ```bash
+        curl -X POST http://localhost:8888/openPort/7071
+        ```
+    - When you have completed your testing, you would use the following cURL command to close the port:
+
+        ```bash
+        curl -X POST http://localhost:8888/closePort/7071
+        ```
+
+1. You can open mutiple instances of the Cloud Shell to test the application locally:
+
+    - You would run the application in the first instance.
+
+    - You would use cURL to test the application from the second instance.
+
+In the next exercise, you'll use the first method to open a port.
+
+## Running your function in the Cloud Shell
+
+Once you have opened a port for testing, your next task would be to build and execute your function. To do so, use the following steps:
+
+1. In the Cloud Shell, you would change directory to the root folder of your project.
+
+1. To build your application, you would use the following Maven command:
+
+    ```bash
+    mvn clean package
+   ```
+
+1. To run the application, you would use the following Maven command:
+
+    ```bash
+    mvn azure-functions:run
+    ```
+
+    While Maven is preparing the runtime environment for your function, you'll see the Azure Functions Core Tools logo displayed:
+
+    ![Image showing the Azure Function Core tools logo](../media/4-mvn-azure-function-startup.png)
+
+1. Once you have completed your testing, you would use <kbd>CTRL+C<kbd> command from the Azure Cloud Shell to stop the server.
+
+## Testing your function using HTTP requests
+
+In this module, you will be using a single instance of the Cloud Shell. As a result, you will need to test your application by opening a new tab in your web browser. In the browser's address bar, you would enter a URL that resembles the following:
+
+```bash
+https://gateway.westus.console.azure.com/n/cc-12345678/cc-12345678/proxy/7071/api/HttpExample?name=Bob
 ```
 
-When you've completed your testing, you can close the port using this curl command:
+However, if you were using multiple instances of the Cloud Shell, you could use the following cURL command to test your application from a separate instance of the shell:
 
-```BASH
-curl -X POST http://localhost:8888/closePort/7071
+```bash
+curl http://localhost:7071/api/HttpExample?name=Bob
 ```
 
-## Executing the function
-
-Now that the port is open, it's time to run the application.  
-
-To run the application, you'll use another Maven command.  From the root of the project folder, use this command:
-
-```BASH
-mvn azure-functions:run
-```
-
-To stop the server, use a CTRL+C command from the Azure Cloud command line.
-
-## Testing the function
-
-To test if the web function is running correctly, you'll need to open a new tab in your web browser.  Because the function provides a cloud-based service, Curl can't be used to test this function.  Into the URL address line, you should enter the URL shown from the running function.
-
-```URL
-https://gateway12.northeurope.console.azure.com/n/cc-b1b1d78b/cc-b1b1d78b/proxy/7071/api/HttpTrigger-Java?name=Bill
-```
-
-The function will accept the name parameter 'Bill' and will return a message saying 'Hello, Bill'.
+In the next exercise, you'll use what you have learned in this unit to open a testing port, run your function in the Cloud Shell, and determine the URL that you'll need to use in order to test your function from a web browser.

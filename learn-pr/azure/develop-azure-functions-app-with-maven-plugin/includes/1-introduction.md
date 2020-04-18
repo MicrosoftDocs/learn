@@ -1,22 +1,18 @@
-Use the Maven Plugin for Azure Functions to create an Azure Function, and deploy the function to Azure.
+Your company uses Java as its primary development language, and Apache Maven to build its applications. Your company would like to simplify its event reporting, and you've been asked to research creating a cloud-based solution. You've decided to investigate using Microsoft Azure to create a serverless function, which triggers when specific values are passed in HTTP requests, and creates log entries to track the HTTP activity.
 
-Your company uses Java as its primary development language. Your company is researching how to create serverless functions in Azure to simplify event reporting. You've been asked to create a cloud-based function that triggers when specific values are passed in the HTTP request and outputs a log entry to track the activity.
-
-In this module, you'll use an archetype to create a function project. You'll develop and test the function locally before deploying it to Azure. Once deployed, you'll test it and then make changes to the function.
-
-By the end of this module, you'll use Maven to compile and deploy a serverless azure function. Also, you'll know how to use Azure monitoring tools to track its usage.
+In this module, you'll use a Maven archetype to create a function project. You'll develop and test the function locally, and then you'll deploy using the Maven Plugin for Azure Functions. After you've tested your function in the cloud, you'll update your function, and then redploy it to Azure.
 
 ## Learning objectives
 
 In this module, you will:
 
-- Use the Azure Functions Maven Plugin
-- Create a function project using an archetype
-- Run the function locally
-- Deploy the function to Azure
-- Make changes and redeploy
+- Create a function project using a Maven archetype
+- Run and test the function locally
+- Deploy the function using the Maven Plugin for Azure Functions
+- Update the function and redeploy to Azure
+- Monitor your function's health with Azure Application Insights
 
 ## Prerequisites
 
-- Experience of Java development
-- Experience of using Apache Maven to build projects
+- Experience developing Java applications
+- Experience using Apache Maven to build projects

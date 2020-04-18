@@ -1,45 +1,43 @@
-You've now successfully deployed your first serverless web function, built from the Azure Functions Maven Archetype.
+Now that you've successfully deployed your first serverless web function using the Azure Functions Maven Archetype, your company would like you to research how to analyze your application's usage with Azure Application Insights.
 
-Now you need to monitor its usage using Azure Application Insights.
+In this unit, you'll learn about the integration between Azure Functions and Application Insights, and how to set up Application Insights for your Azure Function.
 
-In this unit, you'll learn about Azure Functions integration with Application Insights, how to set up Application Insights for your Azure Function.
+## What is Application Insights?
 
-## Understand Application Insights
+Azure Application Insights is an Application Performance Management (APM) service that included with Azure Monitor, and is integrated with Azure Functions. Application Insights helps developers view and analyze live data about their applications as they are being used by customers. Application Insights provides a comprehensive set of tools that can help you analyze and respond to issues that might be affecting your application.
 
-Azure's Application Insights helps you to view and analyze live data on an application as it's being used by customers. It provides a comprehensive set of tools that analyze and respond to issues affecting your app.
+Application Insights supports applications that are developed in Node.js, Java, or .NET, which allows your development team greater flexibility and choice in how they structure and build your company's applications.
 
-Application Insights supports applications developed in Node.js, Java EE, or .NET. Allowing your development team greater flexibility and choice in how they structure and build applications.
+Application Insights will provide essential information on failed requests, server response time, server requests, and availability. It can also use telemetry data sent from the application. However, this will require you to include telemetry tracking points in your code.
 
-Application Insights is an Application Performance Management (APM) service included with Azure Monitor and is integrated with Azure Functions.
+## Enabling Application Insights for your function
 
-## Enabling Application Insights for your Function application in Azure
+To enable Application Insights, you will need to locate your function in the Azure portal. To do so, you would sign into the Azure portal as you have done in previous exercises, then locate your function in the list of resources that you have created.
 
-If you'd built and deployed your application using the Azure portal, then Application Insights are automatically enabled. Since you've used Maven to create the app from an archetype, you'll need to enable Application Insights for your application.
+When you expand the list of functions, you would select the **Montitor** link for the function where you want to enable Application Insights, then click **Configure** to begin setting up your monitoring.
 
-Enabling Application Insight is done through the Azure portal. You'll need to find your function application in the Function Apps area. The first time you select your function, you'll see a pale yellow banner across the top, notifying you that Application Insights aren't configured.
+![Image showing where to enable Application Insights](../media/8-enable-application-insights.png)
 
-![Image showing the banner reporting Application Insights isn't configured](../media/8-application-insights-func-banner.png)
+## Adding instrumentation to your Java project
 
-The banner is a link that will take you to the Application Insights configuration page for your function.
+To get the best from Application Insights, you'll need to update your function project. There are two types of changes that you'll need to make:
 
-![Image showing the banner reporting Application Insights isn't connected](../media/8-application-insights.png)
+- The first set of changes are updates to your configuration in order to add Application Insights and logging support:
 
-Application Insights will provide essential information on failed requests, server response time, server requests, and availability.  It can also use telemetry data sent from the application.  However, this will require you to include telemetry tracking points in your code.
+    - Update your project's *pom.xml* file to add a dependency for the Application Insights library.
 
-## Adding instrumentation to your Java Project
+    - Update your project's *host.json* file to add parameters that define how the logging and Application Insights will work for your application.
 
-To get the best from Application Insights, you'll need to update your Functions project.  There are two types of changes to be made.  The first are configuration changes. These add Application Insights and logging support.  The other type is code injection-based, which allows for fine-grained usage of the application, for instance, the page a user visits, or options they select.
+- The second set of changes are to modify your application's code, which provides you with opportunities to fine-tune your application's reporting:
 
-### Updating the project configuration files
+    - To implement the event tracking in Application Insight, you'll need to add a *tracker* to your code.
+    
+    - Trackers are added at critical points in your code's execution; for example: when a new page is selected, or when specific data is saved to your application.
 
-The first thing you'll need to do is update the project pom file and add a dependency for the Application Insights library.
+## Understanding logging and monitoring options
 
-Then in the host.json file, you'll add in parameters to define how the logging and Application Insights will work for your application.
+The recommended method for using Application Insights in your function applications is to fine-tune your application's monitoring and reporting. However, you can also retrieve data about the operation of your applications from the built-in logs that Azure provides you.
 
-### Updating the project code
+For example, **Log streaming** is available from the **Platform features** tab from the top-level page of your functions App Service.
 
-To implement the event tracking in Application Insight, you'll need to add a tracker to your code.  These are added at critical points in the execution of your code, for example, when a new page is selected, or specific data load or saves occur.
-
-## Understanding log tracking
-
-While the recommendation is to use Application Insights in your Function apps to provide fine details monitoring of your application usage. You can also get insights into the operation of your applications from the logs.  The logs can be found by accessing your application function and then selecting platform features and Log streaming.
+![Image showing where to find Log Streaming](../media/8-log-streaming.png)

@@ -2,25 +2,25 @@
 uid: learn.azure.develop-azure-functions-app-with-maven-plugin
 metadata:
   title: Develop your Azure Functions App by using Maven Plugin for Azure Functions
-  description: Create a cloud-based function that is triggered when certain values are passed in the HTTP request, and outputs a log entry to track the activity.
-  ms.date: 02/01/2020
+  description: Use the Maven Plugin for Azure Functions to create a cloud-based function that is triggered when certain values are passed in the HTTP request, and outputs a log entry to track the activity.
+  ms.date: 04/01/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Develop your Azure Functions App by using Maven Plugin for Azure Functions
-summary: Create a cloud-based function that is triggered when certain values are passed in the HTTP request, and outputs a log entry to track the activity.
+title: Develop and Azure Functions Application using the Maven Plugin for Azure Functions
+summary: Learn how to use the Maven Plugin for Azure Functions to create a cloud-based function that is triggered when values are passed in the HTTP request, and outputs a log entry to track the activity.
 abstract: | 
   In this module, you will:
-  - Use the Azure Functions Maven Plugin
-  - Create a function project using an archetype
-  - Run the function locally
-  - Deploy the function to Azure
-  - Make changes and redeploy
+  - Create a function project using a Maven archetype
+  - Run and test the function locally
+  - Deploy the function using the Maven Plugin for Azure Functions
+  - Update the function and redeploy to Azure
+  - Monitor your function's health with Azure Application Insights
 prerequisites: | 
-  - Experience of Java development
-  - Experience of using Apache Maven to build projects
-iconUrl: /learn/achievements/generic-badge.svg
+  - Experience with Java development
+  - Experience using Apache Maven to build projects
+iconUrl: /learn/achievements/develop-azure-functions-app-with-maven-plugin.svg
 levels:
 - beginner
 roles:

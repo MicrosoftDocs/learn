@@ -1,242 +1,240 @@
-The function application has been deployed into Azure and has been tested.  Any updates to the code base are made outside of Azure, and can be deployed to Azure using Maven commands.
+In the previous unit, you learned about a few of the benefits for incorporating Application Insights into your function application, and you also learned about some of the other logging features that are available to your team of developers.
 
-Now you need to enable tracking and logging to the application.  As you now know, you can use both log tracking and Application Insights.
+At this stage in your project research, your function application has been deployed to Azure using Maven, and you have tested your function application in production. Your next task is to add tracking and logging functionality to your application.
 
-In this unit, you'll learn how to update your function project configuration files to support both tracking and Application Insights.  You'll also learn how to add tracking and Application Insight event triggers to your code base.
+In this exercise, you'll update your function project configuration files to support both log streaming and Application Insights. You'll also learn how to add custom tracking and Application Insight event triggers to your project code.
 
 ## Enabling Application Insights
 
-While all the exercises so far have used the Azure CLI and Maven to build, package and deploy your function app to Azure. To make use of Application Insights, you'll need to use the portal.
+Application Insights are enabled through the Azure portal. To enable Application Insights, use the following steps.
 
-1. Open the Azure portal
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
+
 1. Select All resources from the left pane.
-1. The function you deployed earlier will be shown in the list. Select it. The application details will take a moment to load.
-1. Above the overview pane, you'll see a pale yellow banner with the message: Application Insights isn't configured. Configure Application Insights to capture function logs. 
 
-    ![Image showing the Application Insight configuration banner](../media/8-application-insights-func-banner.png)
+1. Select **All resources** from the menu on the left.
 
-1. The words in the banner are a link. Click on them to enable the Application Insights.
+1. Select your function from the list of resources; for this exercise, your function's name begins with *event-reporting*.
 
-    ![Image showing the Application Insights configuration pane](../media/8-application-insights.png)
+1. Expand the **Functions** list, then expand the tree for your **HttpExample** function. Click **Monitor**, and then click **Configure**.
 
-1. Accept the defaults and click on OK, which will configure Application Insights for your function. When it's completed, you may see a warning about the Application Insights SDK missing.  Don't worry.
+    ![Image showing where to enable Application Insights](../media/8-enable-application-insights.png)
 
-Now that you have enabled Application Insights for your application, the next thing to do is to enable it in your application.
+1. Accept the defaults and click **OK**.
 
-## Adding instrumentation to your Java Project
+Azure will configure Application Insights for your function. You may see a warning about the Application Insights SDK, which you can safely ignore.
 
-To fully enable application logging and Application Insight, you'll need to modify the configuration files to include libraries and other dependencies.
+## Adding instrumentation to your Java project
 
-There are two configuration files that need to be updated. The first is the Pom.xml file.
+Now that you have enabled Application Insights for your application, your next task to enable it in your application. To enable application logging and Application Insighst, you'll need to modify the configuration files to include the requisite libraries and other dependencies.
 
-1. Return to the Azure CLI
-1. Navigate to the root of your project.
-1. Use this command to edit the pom.xml file
+There are two configuration files that you'll need to update: *pom.xml* and *host.json*.
 
-    ```BASH
-    cd ~/contoso-functions
+### Modifying your *pom.xml* file
+
+1. Using the Azure Cloud Shell, change directory to the root of your project:
+
+    ```bash
+    cd ~/event-reporting
+    ```
+
+1. Open your *pom.xml* file using the Cloud Shell's code editor:
+
+    ```bash
     code pom.xml
     ```
 
-1. Within the dependencies section, add the following code, to enabled Application Insights for your application.
+1. Add the following elements to the `<dependencies>` section, which will enable Application Insights for your application:
 
-    ```XML
-        <dependency>
-            <groupId>com.microsoft.azure</groupId>
-            <artifactId>applicationinsights-web-auto</artifactId>
-            <!-- or applicationinsights-web for manual web filter registration -->
-            <!-- or applicationinsights-core for bare API -->
-            <version>2.5.0</version>
-        </dependency>
+    ```xml
+    <dependency>
+        <groupId>com.microsoft.azure</groupId>
+        <artifactId>applicationinsights-web-auto</artifactId>
+        <version>2.6.0</version>
+    </dependency>
     ```
 
-    When you have put the code in the right place, use <kbd>Ctrl</kbd>+<kbd>S</kbd> to save and then <kbd>Ctrl</kbd>+<kbd>Q</kbd> to quit code.
+    > [!NOTE]
+    >
+    > Make sure that you add the `<dependency>` for Application Instights to the standalone `<dependencies>` collection, not the `<dependencies>` collection that is contained within the `<dependencyManagement>` element.
 
-Next you'll update the host.json file.
+1. Press <kbd>Ctrl+S</kbd> to save your *pom.xml* file, and then press <kbd>Ctrl+Q</kbd> to close the code editor.
 
-1. Load into Code the host.json file using this command:
+### Modifying your *host.json* file
 
-    ```BASH
+1. Open your *host.json* file using the Cloud Shell's code editor:
+
+    ```bash
     code host.json
     ```
 
-1. Replace the configuration settings in the JSON file with the content below.  The first part is a copy of what was already there.  The next item in the JSON is logging, which enables the logging level for your function.  The last JSON item defines how many instances of the Application Insights telemetry data are sent.
+1. Remove the existing JSON code, and replace it with the following settings:
 
-    ```JSON
-        {
-          "version": "2.0",
-          "extensionBundle": {
+    ```json
+    {
+        "version": "2.0",
+        "extensionBundle": {
             "id": "Microsoft.Azure.Functions.ExtensionBundle",
             "version": "[1.*, 2.0.0)"
-          },
-          "logging": {
+        },
+        "logging": {
             "fileLoggingMode": "always",
             "logLevel": {
-              "Function.MyFunction": "Information",
-              "default": "None"
+                "default": "Information"
             }
-          },
-          "applicationInsights": {
-                "samplingSettings": {
-                  "isEnabled": true,
-                  "maxTelemetryItemsPerSecond" : 5
-                }
+        },
+        "applicationInsights": {
+            "samplingSettings": {
+                "isEnabled": true,
+                "maxTelemetryItemsPerSecond" : 5
             }
         }
+    }
     ```
 
-    When you have put the code in the right place, use <kbd>Ctrl</kbd>+<kbd>S</kbd> to save and then <kbd>Ctrl</kbd>+<kbd>Q</kbd> to quit code.
+    The settings for `extensionBundle` were already defined, but the `logging` and `applicationInsights` define various settings for those features.
 
-## Adding logging and Application Insight tracking to your Project Code
+1. Press <kbd>Ctrl+S</kbd> to save your *host.json* file, and then press <kbd>Ctrl+Q</kbd> to close the code editor.
 
-To improve the meaningfulness of the data collected by Application Insights and also for reporting in your log files, you'll need to add data logging commands into your function code.
+## Adding logging and Application Insights tracking to your project code
 
-### Adding logging
+To improve the usefulness of the data collected by Application Insights, and also for the data that will show up in your log files, you'll need to add a few data logging commands to your application code.
 
-To add general logging to your function, you need to add this command at key points.
+### Adding logging to your *Function.java* file
 
-```JAVA
+To add general logging to your function, you can add code like the following example at key points in your application code, where you'll replace the `[LOG MESSAGE]` string with a message you want to see in your application's log files.
+
+```java
 context.getLogger().info("[LOG MESSAGE]");
 ```
 
-You'll replace the [LOG MESSAGE] with the message you want to see in the log files.
+To add logging to your application, use the following steps.
 
-1. From the root of the project folder. Use this command to navigate to and open the Function.java file.
+1. Open your application's *Function.java* file in the Cloud Shell editor:
 
-    ```BASH
-    code src/main/java/com/contoso/functions/Functions.java
+    ```bash
+    code ~/event-reporting/src/main/java/com/contoso/functions/Function.java
     ```
 
-    If you examine the code, you'll see there's already one context.getLogger command. It's the first instruction after the definition of the run function.
+    If you examine the existing code, you'll notice that there is an existing `context.getLogger()` command; it's the first instruction after the definition of the `run()` function.
 
-1. You'll add two more logging commands to the code. The first will report when the function is called with the wrong parameters. Add this line of code:
+1. Locate the following section of code, which tests for an empty GET query string or empty POST request:
 
-    ```JAVA
-        context.getLogger().info("Execution failure - Incorrect or missing parameter used.");
-    ```
-
-    into here.
-
-    ```JAVA
+    ```java
     if (name == null) {
-            /* Insert the logging command here */
-            return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("Please pass a name on the query string or in the request body").build();
-    }
-    ```
-
-1. The second reporting point will be on a success. Add this line of code:
-
-    ```JAVA
-        context.getLogger().info("Execution success - name parameter = " + name);
-    ```
-    
-    into here.
-    
-    ```JAVA
+        return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("Please pass a name on the query string or in the request body").build();
     } else {
-        /* Insert the logging command here */
-        return request.createResponseBuilder(HttpStatus.OK).body("Hi, " + name).build();
+        return request.createResponseBuilder(HttpStatus.OK).body("Hello, " + name).build();
     }
     ```
 
-1. The completed code change looks like this:
+1. Modify this section of code so that it contains two `context.getLogger()` command that output the status of your function to the logging system:
 
-    ```JAVA
+    ```java
     if (name == null) {
         context.getLogger().info("Execution failure - Incorrect or missing parameter used.");
         return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("Please pass a name on the query string or in the request body").build();
     } else {
         context.getLogger().info("Execution success - name parameter = " + name);
-        return request.createResponseBuilder(HttpStatus.OK).body("Hi, " + name).build();
+        return request.createResponseBuilder(HttpStatus.OK).body("Hello, " + name).build();
     }
     ```
 
-When you have put the code in the right place, use <kbd>Ctrl</kbd>+<kbd>S</kbd> to save.
+1. Press <kbd>Ctrl+S</kbd> to save your *Function.java* file, but do not close the editor; you will continue to add code to your application in the next section of this exercise.
 
-### Add Application Insight Tracking
+### Adding Application Insights tracking to your *Function.java* file
 
-1. Add an import command to the code, which imports the Application Insights telemetry library.  Add this line to your imports.
+1. Add the following `import` statement to the existing set of imports; this statement imports the Application Insights telemetry library:
 
-    ```JAVA
+    ```java
     import com.microsoft.applicationinsights.TelemetryClient;
     ```
 
-1. Instantiate the TelemetryClient. Within your function, add this line.
+1. Add the following definition to your application's `Function()` class; this statement instantiates a `TelemetryClient` object:
 
-    ```JAVA
+    ```java
     private TelemetryClient telemetry = new TelemetryClient();
     ```
 
-1. Much the same as the logging command, you'll need to add in a telemetry.trackEvent command wherever you need tracking data captured.  Add this line, amending the string message, to be in the same place as the previous logging commands.
+1. Copy each of the `context.getLogger()` statements and modify the code so that each of the duplicate entries calls `telemetry.trackEvent()` instead of `context.getLogger()`:
 
-    ```JAVA
+    ```java
+    . . .
+    context.getLogger().info("Java HTTP trigger processed a request.");
     telemetry.trackEvent("Java HTTP trigger processed a request.");
+    
+    // Parse query parameter
+    String query = request.getQueryParameters().get("name");
+    String name = request.getBody().orElse(query);
+    
+    if (name == null) {
+        context.getLogger().info("Execution failure - Incorrect or missing parameter used.");
+        telemetry.trackEvent("Execution failure - Incorrect or missing parameter used.");
+        return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("Please pass a name on the query string or in the request body").build();
+    } else {
+        context.getLogger().info("Execution success - name parameter = " + name);
+        telemetry.trackEvent("Execution success - name parameter = " + name);
+        return request.createResponseBuilder(HttpStatus.OK).body("Hi, " + name).build();
+    }
+    . . .
     ```
 
-    In total, there will be three of these commands in your final code.  
+1. Press <kbd>Ctrl+S</kbd> to save your *Function.java* file, and then press <kbd>Ctrl+Q</kbd> to close the code editor.
 
-1. When you have made all the changes, see that the code matches this code fragment:
+1. The last thing to do is to build, package, and redeploy your function application.
 
-    ```JAVA
-        ...
-        context.getLogger().info("Java HTTP trigger processed a request.");
-        telemetry.trackEvent("Java HTTP trigger processed a request.");
+    ```bash
+    cd ~/event-reporting
+    mvn clean package azure-functions:deploy
+    ```
+<!--
+1. Each time you redeploy your application using Maven, you'll need to run the following commands in the Azure Cloud Shell in order to view your functions in the Azure portal:
 
-        // Parse query parameter
-        String query = request.getQueryParameters().get("name");
-        String name = request.getBody().orElse(query);
+    ```bash
+    export RESOURCEGROUP=$(az group list | jq -r '.[0].name')
+    export FUNCTIONAPP=$(az functionapp list | jq -r '.[0].repositorySiteName')
+    az functionapp config appsettings set --name $FUNCTIONAPP --resource-group $RESOURCEGROUP --settings "WEBSITE_RUN_FROM_PACKAGE=0"
+    ```
+-->
 
-        if (name == null) {
-            context.getLogger().info("Execution failure - Incorrect or missing parameter used.");
-            telemetry.trackEvent("Execution failure - Incorrect or missing parameter used.");
-            return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("Please pass a name on the query string or in the request body").build();
-        } else {
-            context.getLogger().info("Execution success - name parameter = " + name);
-            telemetry.trackEvent("Execution success - name parameter = " + name);
-            return request.createResponseBuilder(HttpStatus.OK).body("Hi, " + name).build();
-        }
-        ...
+You've now successfully added logging and Application Insights data collection to your function.
+
+## Using Application Insights to monitor your Azure Function
+
+Your application is now updated to support fine grained logging with both the system logger and Application Insights. 
+
+1. To generate some sample HTTP traffic, copy the URL that you used to test your application in a web browser in the previous exercise, and use that URL with cURL to create a loop in the Azure Cloud Shell; for example:
+
+    ```bash
+    while :; do curl https://event-reporting-20200102030405006.azurewebsites.net/api/HttpExample?name=Bob; sleep 1; done
     ```
 
-    If your code matches the example, press <kbd>Ctrl</kbd>+<kbd>S</kbd> to save and then <kbd>Ctrl</kbd>+<kbd>Q</kbd> to quite code.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
-1. The last thing to do is to build, package, and deploy your function application to Azure using these commands.  From the root of the project folder.
+1. View your **Log Streaming** activity:
 
-    ```BASH
-    mvn package azure-functions:deploy
-    ```
+    1. Select **All resources** from the menu on the left.
 
-You've now successfully added logging and Application Insight data collection to your function.
+    1. Select your function from the list of resources; for this exercise, your function's name begins with *event-reporting*. For example: *event-reporting-20200102030405006*.
 
-## Using Application Insights to monitor your Azure Function app
+    1. On the **Overview page**, select **Platform features**.
 
-Your application is now updated to support fine grained logging with both the system logger and Application Insights.  
+    1. In the **Monitoring** section, click **Log streaming**.
+    
+        ![Image showing where to find Log Streaming](../media/8-log-streaming.png)
 
-1. Return to Azure portal.
-1. Open the Function App area.
-1. Select you function application from the list.
-1. To enable log streaming, from the overview page, select **Platform features**.
+    1. You'll see a series of log entries that are being generated by your sample traffic.
 
-    ![Image showing the overview bar, with platform features highlighted](../media/9-function-overview.png)
+        ![Image showing Platform Features and Log Streaming](../media/9-log-streaming.png)
 
-1. From the list of available features, from the Monitoring group, select **Log Streaming**, as shown below. 
+1. View your **Live Metrics** activity:
 
-    ![Image showing platform features and Log streaming highlights](../media/9-platform-features.png)
+    1. Select **All resources** from the menu on the left.
 
-    Log streaming will appear as a tab at the top of the page.  If you switch to the browser tab you used for testing earlier, and run a few tests, you'll see the getLogger messages appearing.
+    1. Select your Application Insights resource from the list; for this exercise, your Application Insights resource will match the name of your Azure Function. For example: *event-reporting-20200102030405006*.
 
-1. Select the **Overview** tab.
+    1. Click **Live Metrics**. You'll see the results that are being generated by your sample traffic.
 
-1. From the Configured Features area, select **Application Insights**.
+        ![Image showing Application Insights and Live Metrics highlights](../media/9-live-metrics.png)
 
-    ![Image showing the application insights option](../media/8-application-insights-config-features.png)
-
-1. This page will display a default overview page for your application, which includes failed requests, server response time, server requests, and availability.
-
-    ![Image showing application insights overview](../media/9-application-insights-overview.png)
-
-1. From the top navigation bar, select **Application dashboard**.
-
-1. The dashboard shows usage, reliability, responsiveness and browser columns, and you can adapt the dashboard to meet you requirements.
-
-    ![Image showing Application Insights dashboard](../media/9-app-insights-dashboard.png)
+You have successfully configured your Azure Function for detailed logging.

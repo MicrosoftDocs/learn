@@ -1,96 +1,31 @@
-So far, you've created an Azure Functions application from the Maven Azure-functions-archetype, and have run and tested it locally through the Azure CLI.
+You've been able to build and test an Azure Function using Maven, which resolves part of the scenario that you are researching for your company. You next task is to investigate how to deploy your function to Azure Functions.
 
-Now you need to deploy the application to Azure, turning it into an Azure function.  
+In this unit, you'll learn how you can use Maven to deploy your Java functions to Azure from within the Cloud Shell. In addition, you'll learn about several of the other deployment options that are available for deploying applications to Azure.
 
-In this unit, you'll learn about the different deployment options, and when you would use them.  Also, you'll see how you can use Maven through the cloud shell to deploy your Java application functions into Azure.
+## Deploying an application to Azure with Maven
 
-## Trigger Syncing
+One of the benefits of using the Maven Plugin for Azure Functions is that it helps to streamline your deployment. This is especially advantageous when you are using Maven in conjunction with the Azure Cloud Shell or Azure Command Line Interface (CLI). When you are using either of those two technologies, you're already logged into the Azure portal, so you aren't required to authenticate when you're deploying your application. In addition, because the Azure Cloud Shell is kept up to date for you, there's no need to check your environment, because all of the required libraries and tools are automatically provided.
 
-When deploying your applications, you must consider what the trigger condition will be; for example, this may be an HTTP request or a webhook.  If your Functions application changes the trigger type, the Azure Functions engine might not be aware of it.  Depending on the deployment technology you use, synchronization of the triggers happens automatically.  However, you'll need to manually force a sync of your triggers if you use any of these deployment options: external package URL, cloud sync, local Git, or FTP. 
+Once your application has been properly configured for deployment to Azure, the process of deploying your application is as easy as the following Maven command:
 
-## Remote build
-
-This is a new feature with Azure Functions that work in conjunction with the zip deployment option.  Azure Functions will automatically build the project code as part of the deployment process.  There are two distinct flavors, one for use with Windows systems and the other for Linux.
-
-## Deployment options
-
-When it comes to deploying your Azure Functions project to Azure, there are many different options available.  Each deployment option suits a specific type or flavor of the Azure Functions project.  The recommended deploy option for Azure Functions projects is zip deployment.
-
-### External package URL
-
-The external package URL deployment option allows you to supply a URL to the server that holds your function application package. When this option is run, it downloads the file from the URL location and runs it in **run from package** mode.
-
-The run from package feature requires you to add the WEBSITE_RUN_FROM_PACKAGE flag to your application settings.  The value will be the URL address where the package is.  This type of deployment is best suited to Linux environments.
-
-The external package URL is compatible with the following operating system and host types: Windows, Windows premium, Windows dedicated, Linux, Linux premium.
-
-### Zip deploy
-
-The zip deployment option allows you to supply a zip file containing your Azure Functions application.  This deployment option also allows you to **run from package** or do a remote build.
-
-The run from package option requires the WEBSITE_RUN_FROM_PACKAGE flag to be set to 1.  Since you're supplying the package to the Azure Functions engine.
-
-To trigger a remote build during the zip deployment, you'll need to use an Azure Functions Core Tools command.
-
-```BASH
-func azure functionapp publish <app name> --build remote
-```
-
-The zip deploy method is recommended for Azure Functions.
-
-This deployment option is compatible with: Windows, Windows premium, windows dedicated, Linux, Linux premium.
-
-### Docker container
-
-The Docker container option lets you use a Linux container to deploy your Azure Function application into a Linux environment.
-
-To use this option, you'll need a supporting Azure App Service plan. This option is recommended for Linux Function apps, and is compatible with: Linux premium.
-
-### Web Deploy
-
-The Web Deploy option lets you package and deploy your Function application to a Windows server running IIS and including Windows virtual machines running in Azure. 
-
-This deployment option should be invoked using the Visual Studio for Azure functions.  In addition you can use the Web Deploy 3.6 tool, which will allow you to deploy to Azure directly.
-
-Compatible with: Windows, Windows premium, windows dedicated.
-
-### Source control
-
-The source control option is designed to link to your organization's Git repository. Any updates to the Git repo will automatically trigger a deployment.
-
-To use this option, you'll need to configure publishing from source control in the Deployment Center of Functions.
-
-This deployment option is best suited to teams working on the same Azure function, and is among the best practices for the best deployment strategies.
-
-Compatible with: Windows, Windows premium, windows dedicated, Linux premium.
-
-### Local Git
-
-The local Git deployment option lets you use your own Git repo hosted on an on-premises server or local development machine to deploy filers into Azure.
-
-While this deployment option can be used, the recommendation would be to use one of the other deployment options.
-
-This option requires that you do manual sync after deployment of the application.
-
-Compatible with: Windows, Windows premium, windows dedicated, Linux premium.
-
-### Cloud sync
-
-The cloud sync option lets you use a cloud storage service like Dropbox or OneDrive as the source for deploying files into Azure.
-
-While this deployment option can be used, the recommendation would be to use one of the other deployment options.
-
-This option requires that you do manual sync after deployment of the application.
-
-Compatible with: Windows, Windows premium, windows dedicated, Linux premium.
-
-## Deploying a Maven app into Azure
-
-When using the Azure CLI, you're already logged into the Azure portal, so you aren't required to authenticate when doing a deployment. 
-
-Also, because you're using the Azure CLI, there's no need to check the environment as all the required libraries are automatically included.
-
-Through the Azure CLI, it's possible to deploy the application that was previously created.  To deploy the application, use the Maven command below:
-```BASH
+```bash
 mvn azure-functions:deploy
 ```
+
+## Additional deployment technologies
+
+Apart from using Maven, there are several different options that are available for you to deploy your Azure Functions projects to Azure, and some deployment options will work better depending on the project that you are creating. However, in general, *Zip Deploy* is the recommended deployment technology for Azure Functions.
+
+The following table describe a few of the options that are available to you for deploying your functions to Azure. For an exhaustive list, see [Deployment technologies in Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-deployment-technologies).
+
+| Technology | Description |
+|---|---|
+| **Zip Deploy** | *Zip Deploy* is the recommended deployment option for Azure Functions, where you specify a zip file that contains your Azure Functions application.<br><br>Zip deploy also allows you to **run from package**, or perform a **remote build**.<br><br>The **run from package** option requires you add `WEBSITE_RUN_FROM_PACKAGE` to your application settings, and set its value to `1`.<br><br>To trigger a **remote build** during the zip deployment, you'll need to use an Azure Functions Core Tools command: `func azure functionapp publish <app name> --build remote`. |
+| **External Package URL** | *External Package URL* deployment allows you to supply a URL to a server that hosts your function application package.<br><br>When you use this deployment option, it downloads the application package from the URL location and deploys the application in **run from package** mode.<br><br>This option requires you add `WEBSITE_RUN_FROM_PACKAGE` to your application settings, and set its value to the URL where your application package is located. |
+| **Docker Container** | The *Docker Container* option lets you use a Linux container to deploy your Azure Function application into a Linux environment.<br><br>To use this option, you'll need a supporting Azure App Service plan, and this option is useful for developers who want more control over the Linux environment where their function is running. |
+| **Web Deploy** | The *Web Deploy* option lets you package and deploy your function application to any Windows server that is running IIS, which includes Windows virtual machines that are running in Azure.<br><br>This deployment option should only be used from within Visual Studio.<br><br>You can also use the Web Deploy 3.6 command line tool, *MSDeploy.exe*, which will allow you to deploy to Azure directly. |
+| **Source Control** | *Source Control* deployment connects to your organization's Git repository, so any updates to your Git repo will automatically trigger a deployment.<br><br>To use this option, you'll need to configure publishing from source control in the **Deployment Center* of Azure Functions.<br><br>Source Control deployment is best suited to teams that are working on the same Azure function, and it is a best practice for deployment strategies. |
+| **Local Git** | *Local Git* deployment connects to a Git repo that your organization is hosting on an on-premises server or local development machine.<br><br>While Local Git is a supported deployment option, a better recommendation would be to use one of the other deployment options. |
+| **Cloud Sync** | *Cloud Sync* deployment allows developers to use a cloud storage service like Dropbox or OneDrive as the source for deploying files into Azure.<br><br>While Cloud Sync is a supported deployment option, a better recommendation would be to use one of the other deployment options. |
+
+In the next exercise, you'll use Maven to deploy your function to Azure.
