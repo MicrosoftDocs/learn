@@ -2,7 +2,7 @@
 uid: learn.reactors.simple-cloud-based-machine-learning 
 metadata:
   title: Simple cloud-based machine learning 
-  description: Learn how to use machine learning models for data science operations.
+  description: Learn about simple cloud-based machine learning for data science operations.
   ms.date: 05/19/2020
   author: sguthals
   ms.author: sguthals
@@ -12,13 +12,18 @@ title: Simple cloud-based machine learning
 summary: Learn about simple cloud-based machine learning for data science operations.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Create and connect to an Azure ML Studio workspace
+  - Explore forest fire data
+  - Transfer data to  Azure ML Studio
+  - Create a machine learning model
+  - Deploy a machine learning model as a web service
+  - Learn how to consume a web service
+  - Complete the Capstone project exercise
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - Set up your environment
+  - Review the steps to manipulate and clean data
+  - Understand machine learning models for data science
 # placeholder icon
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

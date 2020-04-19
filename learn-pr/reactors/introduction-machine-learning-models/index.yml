@@ -18,7 +18,7 @@ abstract: |
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - Set up your environment
+  - Review the steps to manipulate and clean data
 # placeholder icon
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
