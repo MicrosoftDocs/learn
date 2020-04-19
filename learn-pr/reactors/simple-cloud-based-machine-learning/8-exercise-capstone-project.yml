@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.simple-cloud-based-machine-learning.8-exercise-capstone-project
+title: 'Exercise: Capstone project'
+metadata:
+  title: 'Exercise: Capstone project'
+  description: Exercises for the Capstone project.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-exercise-capstone-project.md)] 

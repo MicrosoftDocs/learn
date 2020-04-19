@@ -16,13 +16,20 @@ TEXT
 > We might format these instances as plain text or another style.
 >
 
-## Learning objectives
+### Try it yourself
 
-In this module, you will:
+TEXT
 
-- TBD
-- TBD
+<details> 
 
-## Prerequisites
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-- TBD
+  ```Python
+  tbd
+  ```
+
+  ```Output
+  tbd
+  ```
+  
+</details>

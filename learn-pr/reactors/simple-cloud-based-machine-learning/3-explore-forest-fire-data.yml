@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.simple-cloud-based-machine-learning.3-explore-forest-fire-data
+title: Explore forest fire data
+metadata:
+  title: Explore forest fire data
+  description: Explore forest fire data for data science operations.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-explore-forest-fire-data.md)] 

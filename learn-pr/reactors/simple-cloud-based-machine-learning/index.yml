@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.reactors.simple-cloud-based-machine-learning 
+metadata:
+  title: Simple cloud-based machine learning 
+  description: Learn how to use machine learning models for data science operations.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Simple cloud-based machine learning  
+summary: Learn about simple cloud-based machine learning for data science operations.
+abstract: |
+  In this module, you will:
+  - TBD
+  - TBD
+  - TBD
+
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - Set up your environment
+# placeholder icon
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.simple-cloud-based-machine-learning.1-introduction
+- learn.reactors.simple-cloud-based-machine-learning.2-connect-azure-ml-studio-workspace
+- learn.reactors.simple-cloud-based-machine-learning.3-explore-forest-fire-data
+- learn.reactors.simple-cloud-based-machine-learning.4-transfer-data-azure-ml-studio
+- learn.reactors.simple-cloud-based-machine-learning.5-create-model
+- learn.reactors.simple-cloud-based-machine-learning.6-deploy-model-web-service
+- learn.reactors.simple-cloud-based-machine-learning.7-consume-web-service
+- learn.reactors.simple-cloud-based-machine-learning.8-exercise-capstone-project
+badge:
+  uid: learn.reactors.simple-cloud-based-machine-learning.badge 
