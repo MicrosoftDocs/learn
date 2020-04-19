@@ -70,17 +70,17 @@ By "real" device, we mean IoT Central understands that there's a remote app runn
 
 1. Click **Devices** in the left-hand menu.
 
-1. Click **RefrigeratedTruck** in the **Devices** menu, to ensure the device we create uses this device template. The device template you select will be shown in bold text.
+1. Click **RefrigeratedTruck** in the **Devices** menu, to ensure the device we create uses this device template.
 
-1. Click **+ New**. Verify in the dialog that the device name includes the **RefrigeratedTruck** text. If it doesn't, you've not selected the right device template.
+1. Click **+ New**. Verify in the **Create a new device** dialog that the device template is **RefrigeratedTruck**.
 
-    [![Screenshot showing the dialog to create a device](../media/refrigerated-trucks-create-device.png)](../media/refrigerated-trucks-create-device.png#lightbox)
-
-1. Change the **Device ID** to a friendlier name, say "RefrigeratedTruck1".
+    [![Screenshot showing the dialog to create a device](../media/refrigerated-trucks-create-new-device.png)](../media/refrigerated-trucks-create-ndw-device.png#lightbox)
 
 1. Change the **Device name** to a friendlier name, say "RefrigeratedTruck - 1".
 
-1. Leave the **Simulated** setting at **Off**. We're going to be building a real truck here. Well, a simulated _real_ truck! Setting this value to **On** instructs IoT Central to pump out random values for our telemetry. These random values can be useful in validating a device template.
+1. Change the **Device ID** to a friendlier name, say "RefrigeratedTruck1".
+
+1. Leave the **Simulate this device?** setting at **No**. We're going to be building a real truck here. Well, a simulated _real_ truck! Setting this value to **Yes** instructs IoT Central to pump out random values for our telemetry. These random values can be useful in validating a device template.
 
 1. Click **Create**. Wait a few seconds, then your device list should be populated with a single entry.
     > [!NOTE]
