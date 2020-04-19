@@ -118,7 +118,7 @@ Here you create a new CI/CD pipeline based on a starter template. This will be s
 
 1. Navigate to the Pipelines hub.
 
-    ![Azure Pipeline showing the variable group](../media/4-library-variable-group.png)
+    ![Azure Pipeline showing the variable group](../media/4-pipelines.png)
 
 1. Select **Create Pipeline**.
 1. Select **GitHub**.
