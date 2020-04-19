@@ -74,7 +74,7 @@ By "real" device, we mean IoT Central understands that there's a remote app runn
 
 1. Click **+ New**. Verify in the **Create a new device** dialog that the device template is **RefrigeratedTruck**.
 
-    [![Screenshot showing the dialog to create a device](../media/refrigerated-trucks-create-new-device.png)](../media/refrigerated-trucks-create-ndw-device.png#lightbox)
+    [![Screenshot showing the dialog to create a device](../media/refrigerated-trucks-create-new-device.png)](../media/refrigerated-trucks-create-new-device.png#lightbox)
 
 1. Change the **Device name** to a friendlier name, say "RefrigeratedTruck - 1".
 
