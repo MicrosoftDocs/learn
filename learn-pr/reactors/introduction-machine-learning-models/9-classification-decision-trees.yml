@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.introduction-machine-learning-models.9-classification-decision-trees
+title: 'Classification: Decision trees'
+metadata:
+  title: 'Classification: Decision trees'
+  description: Learn how to perform classification with decision trees in machine learning models for data science.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-classification-decision-trees.md)] 
