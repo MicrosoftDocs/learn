@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-cd.2-tbd-knowledge
+title: TBD knowledge unit
+metadata:
+  title: TBD knowledge unit
+  description: TBD.
+  ms.date: 01/01/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-tbd-knowledge.md)]

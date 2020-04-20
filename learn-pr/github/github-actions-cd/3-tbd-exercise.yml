@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-cd.3-tbd-exercise
+title: TBD exercise unit
+metadata:
+  title: TBD exercise unit
+  description: TBD.
+  ms.date: 01/01/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-tbd-exercise.md)]
