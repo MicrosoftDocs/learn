@@ -2,7 +2,8 @@
 > [!Note]
 > **Sarah: Conversion feedback**
 > 
-> Suggest moving the **Learning goal** to the list of Learning objectives in the Introduction unit or to the abstract summary in the module index.yml.
+> - I changed all instances of "Sex" or "sex" to "Gender" or "gender." The former term is considered "racy" and should be avoided.
+> - Suggest moving the **Learning goal** to the list of Learning objectives in the Introduction unit or to the abstract summary in the module index.yml.
 >
 
 > [!Note]
@@ -30,7 +31,7 @@ The dataset has 12 variables:
 - **PassengerId**
 - **Survived**: 0 = No, 1 = Yes
 - **Pclass**: Ticket class 1 = 1st, 2 = 2nd, 3 = 3rd
-- **Sex**
+- **Gender**
 - **Age**
 - **Sibsp**: Number of siblings or spouses aboard the _Titanic_
 - **Parch**: Number of parents or children aboard the _Titanic_
@@ -48,7 +49,7 @@ The output table looks like this:
 
 ```output
 ---------------------------------------------------------------------------------------------------------------------------------------
-|   | PassengerId | Survived | Pclass | Name                 | Sex    | Age  | SibSp | Parch | Ticket    | Fare    | Cabin | Embarked | 
+|   | PassengerId | Survived | Pclass | Name                 | Gender | Age  | SibSp | Parch | Ticket    | Fare    | Cabin | Embarked | 
 ---------------------------------------------------------------------------------------------------------------------------------------
 | 0	|      1      |    0     |    3   | Braund, Mr. Owen     | male   | 22.0 |   1   |   0   | A/5 21171 | 7.2500  |  NaN  |     S    |
 | 	|             |          |        | Harris               |        |      |       |       |           |         |       |          |
@@ -85,7 +86,7 @@ PassengerId    891 non-null int64
 Survived       891 non-null int64
 Pclass         891 non-null int64
 Name           891 non-null object
-Sex            891 non-null object
+Gender         891 non-null object
 Age            714 non-null float64
 SibSp          891 non-null int64
 Parch          891 non-null int64
@@ -130,6 +131,7 @@ The pair plot output for data in the columns **Survived** and **Fare**:
 ```output
 <seaborn.axisgrid.PairGrid at 0x7f58facc2f28>
 ```
+
 :::image type="content" alt-text="A graph showing the pair plot output for data in the Survived column and the Fare column." source="../media/output-pair-plot-2.png" loc-scope="azure":::
 
 ### Try it yourself
@@ -257,7 +259,7 @@ Here's the output:
 
 ```output
 ----------------------------------------------------------------------------------------------------
-|   | PassengerId | Survived | Pclass | Sex    | Age  | SibSp | Parch | Fare    | Cabin | Embarked | 
+|   | PassengerId | Survived | Pclass | Gender | Age  | SibSp | Parch | Fare    | Cabin | Embarked | 
 ----------------------------------------------------------------------------------------------------
 | 0	|      1      |    0     |    3   | male   | 22.0 |   1   |   0   | 7.2500  |  NaN  |     S    |
 ----------------------------------------------------------------------------------------------------
@@ -271,7 +273,7 @@ Here's the output:
 ----------------------------------------------------------------------------------------------------
 ```
 
-Value counts can also help us get a sense of the data before us, such as numbers for siblings and spouses on the _Titanic_, in addition to the sex split of passengers:
+Value counts can also help us get a sense of the data before us, such as numbers for siblings and spouses on the _Titanic_, in addition to the gender split of passengers:
 
 ```python
 df['SibSp'].value_counts()
@@ -294,10 +296,10 @@ TBD
 ```
 
 ```python
-df['Sex'].value_counts()
+df['Gender'].value_counts()
 ```
 
-The value counts output for the **Sex** gender column data is:
+The value counts output for the **Gender** column data is:
 
 ```output
 TBD
