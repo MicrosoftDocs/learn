@@ -186,7 +186,7 @@ Now we need to split the training and test data, which you'll do as an exercise.
 from sklearn.model_selection import train_test_split
 ```
 
-Review how we used `train_test_split` in the [Linear regression: Fitting the model](../4-linear-regression-fit-model.yml) unit.
+Review how we used `train_test_split` in the [Linear regression: Fitting the model](../4-linear-regression-fit-model.yml?azure-portal=true) unit.
 
 Set `test_size = 0.3` and `random_state = 67` to get the same results as below when you run through the rest of the code example.
 
