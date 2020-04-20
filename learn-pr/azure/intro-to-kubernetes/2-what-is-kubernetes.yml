@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-kubernetes.what-is-kubernetes
+title: What is Kubernetes?
+
+metadata:
+  title: What is Kubernetes?
+  description: What is Kubernetes?
+  ms.date: 4/01/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-kubernetes.md)]
