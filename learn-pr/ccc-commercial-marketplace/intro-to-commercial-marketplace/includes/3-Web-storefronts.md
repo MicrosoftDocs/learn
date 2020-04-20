@@ -21,6 +21,8 @@ Because Azure Marketplace is a part of Azure, they can also access these solutio
 
 ![Screenshot of the Azure portal new resource page Azure Marketplace](..\media\5_AzureMarketplaceAzurePortal1.png)
 
+|  |
+|---|
 |![Screenshot of Azure Marketplace in Azure portal with emphasis on application categories and filters](..\media\6_AzureMarketplaceAzurePortal2.png)|
 |*Screenshots from the in-product version of Azure Marketplace in the Azure portal*|
 
@@ -36,6 +38,8 @@ Your customers can access Microsoft AppSource online through the web storefront 
 
 ![Screenshot of Microsoft AppSource homepage with emphasis on "apps" and "consulting services" buttons](..\media\7_MicrosoftAppSourceHomepage.png)
 
+|  |
+|---|
 |![Screenshot of Microsoft AppSource apps landing page with emphasis on application categories and filters](..\media\8_MicrosoftAppSourceApps.png)|
 |*Screenshots of the Microsoft AppSource web storefront*|
 
