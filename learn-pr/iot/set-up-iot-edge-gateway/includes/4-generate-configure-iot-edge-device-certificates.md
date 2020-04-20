@@ -32,9 +32,27 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
 
 1. Follow the instructions to create the necessary storage accounts for use in the **Cloud Shell**.
 
+    If you are using a sandbox account, you may receive the following error message when creating the Cloud Shell instance:
+
+    >[!div class="mx-imgBorder"]
+    >[![Azure Cloud Shell Storage Creation Failed](../media/storage-creation-failed.png)](../media/storage-creation-failed.png#lightbox)
+
+    If you receive this message, scroll down and select **Advanced Settings**:
+
+    >[!div class="mx-imgBorder"]
+    >[![Azure Cloud Shell Storage Creation Advanced Settings](../media/storage-creation-advanced-settings.png)](../media/storage-creation-advanced-settings.png#lightbox)
+
+    Then supply appropriate names to create a new **Storage Account** and **File Share** then select **Create Storage**:
+
+   >[!div class="mx-imgBorder"]
+    >[![Azure Cloud Shell Storage Creation Advanced Settings Named](../media/storage-creation-advanced-settings-named.png)](../media/storage-creation-advanced-settings-named.png#lightbox)
+
+    >[!NOTE]
+    > The **Storage Account** and **File Share** must be given globally unique names.  If you receive an error that a given name is already in use, try to name the resource again with a unique value.
+
 1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
-1. When prompted with "Are you sure, you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed.
+1. When prompted with "**Are you sure, you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed.
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 
