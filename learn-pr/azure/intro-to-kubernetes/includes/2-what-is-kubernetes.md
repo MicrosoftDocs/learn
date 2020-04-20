@@ -12,11 +12,11 @@ For example, each of the applications in the drone tracking solution
 
 The container concept gives you three major benefits:
 
-1. **A container is immutable**: The unchanging nature of a container allows it to be deployed and run reliably with the same behavior from one compute environment to another. A container image tested in a QA environment is the same container image deployed to production.
+- **A container is immutable**: The unchanging nature of a container allows it to be deployed and run reliably with the same behavior from one compute environment to another. A container image tested in a QA environment is the same container image deployed to production.
 
-1. **A container is lightweight**: You can think of a container as a VM image, but smaller. A VM image is normally installed on a physical host. The image contains both the OS and the application you want to run. In contrast, a container doesn't need an OS, only the application. The container always relies on the host installed OS for kernel-specific services. Containers are less resource-intensive, and multiple containers can be installed on the same computing environment.
+- **A container is lightweight**: You can think of a container as a VM image, but smaller. A VM image is normally installed on a physical host. The image contains both the OS and the application you want to run. In contrast, a container doesn't need an OS, only the application. The container always relies on the host installed OS for kernel-specific services. Containers are less resource-intensive, and multiple containers can be installed on the same computing environment.
 
-1. **Container startup is fast**: Containers can start up in few seconds instead of minutes, like a VM.
+- **Container startup is fast**: Containers can start up in few seconds instead of minutes, like a VM.
 
 The above benefits make containers a popular choice for developers and IT operations alike.
 
