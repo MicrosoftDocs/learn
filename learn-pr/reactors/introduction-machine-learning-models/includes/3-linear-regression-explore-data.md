@@ -8,7 +8,7 @@
 > [!Note]
 > **Sarah: Action items**
 > 
-> - Try it yourself block needs Input and Output code. Search on TBD.
+> - Try it yourself block needs Input and Output code, and Hint text. Search on TBD.
 >
 
 We'll begin by importing our usual libraries and using our `%matplotlib` inline magic command:
@@ -40,11 +40,11 @@ The output table looks like this:
 |    |  Avg. area     |  Avg. area  |  Avg. area  |  Avg. area #  |  Area          |                |                                                    |
 |    |  income        |  house age  |  # of rooms |  of bedrooms  |  population    |  Price         |  Address                                           |
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-| 0	 |  79545.458574	|  5.682861   |  7.009188   |  4.09	        |  23086.800503	 |  1.059034e+06  |  208 Michael Ferry Apt. 674\nLaurabury, NE 3701... |
-| 1	 |  79248.642455	|  6.002900   |  6.730821   |  3.09	        |  40173.072174  |  1.505891e+06  |  188 Johnson Views Suite 079\nLake Kathleen, CA... |
-| 2	 |  61287.067179  |  5.865890   |  8.512727   |  5.13	        |  36882.159400  |  1.058988e+06  |  9127 Elizabeth Stravenue\nDanieltown, WI 06482... |
-| 3	 |  63345.240046	|  7.188236   |  5.586729   |  3.26	        |  34310.242831  |  1.260617e+06  |  USS Barnett\nFPO AP 44820                         |
-| 4	 |  59982.197226	|  5.040555   |  7.839388   |  4.23	        |  26354.109472	 |  6.309435e+05  |  USNS Raymond\nFPO AE 09386                        |
+| 0	 |  79545.458574  |  5.682861   |  7.009188   |  4.09	        |  23086.800503	 |  1.059034e+06  |  208 Michael Ferry Apt. 674\nLaurabury, NE 3701... |
+| 1	 |  79248.642455  |  6.002900   |  6.730821   |  3.09	        |  40173.072174  |  1.505891e+06  |  188 Johnson Views Suite 079\nLake Kathleen, CA... |
+| 2  |  61287.067179  |  5.865890   |  8.512727   |  5.13         |  36882.159400  |  1.058988e+06  |  9127 Elizabeth Stravenue\nDanieltown, WI 06482... |
+| 3	 |  63345.240046  |  7.188236   |  5.586729   |  3.26	        |  34310.242831  |  1.260617e+06  |  USS Barnett\nFPO AP 44820                         |
+| 4	 |  59982.197226  |  5.040555   |  7.839388   |  4.23	        |  26354.109472	 |  6.309435e+05  |  USNS Raymond\nFPO AE 09386                        |
 ```
 
 ### Try it yourself
@@ -53,7 +53,11 @@ Do you remember the `DataFrames` method for looking at overall information about
 
 <details> 
 
-  <summary>Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i>
+  
+  Add Hint text here - TBD
+  
+  </summary>
 
   ```python
   TBD
@@ -77,13 +81,13 @@ Here's a version of the output table where the rows and columns are transposed:
 |             |  count	  |  mean	         |  std	          |  min	         |  25%           |  50%           |  75%           |  max           |
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Avg. area   |	      	  |             	 |                |                |                |                |                |                |
-| income      |	 5000.0	  |  6.858311e+04	 |  10657.991214  |  17796.631190  |  61480.562388  |  6.880429e+04  |  7.578334e+04  |  1.077017e+05  |
+| income      |  5000.0   |  6.858311e+04	 |  10657.991214  |  17796.631190  |  61480.562388  |  6.880429e+04  |  7.578334e+04  |  1.077017e+05  |
 | Avg. area   |	      	  |             	 |                |                |                |                |                |                |
-| house age  	|  5000.0   |  5.977222e+00  |  0.991456      |  2.644304      |  5.322283      |  5.970429e+00  |  6.650808e+00  |  9.519088e+00  |
+| house age   |  5000.0   |  5.977222e+00  |  0.991456      |  2.644304      |  5.322283      |  5.970429e+00  |  6.650808e+00  |  9.519088e+00  |
 | Avg. area   |	      	  |             	 |                |                |                |                |                |                |
 | # of rooms  |  5000.0   |  6.987792e+00  |  1.005833      |  3.236194      |  6.299250      |  7.002902e+00  |  7.665871e+00  |  1.075959e+01  |
 | Avg. area # |	      	  |             	 |                |                |                |                |                |                |
-| of bedrooms	|  5000.0   |  3.981330e+00  |  1.234137      |  2.000000      |  3.140000      |  4.050000e+00  |  4.490000e+00  |  6.500000e+00  |
+| of bedrooms |  5000.0   |  3.981330e+00  |  1.234137      |  2.000000      |  3.140000      |  4.050000e+00  |  4.490000e+00  |  6.500000e+00  |
 | Area        |	      	  |             	 |                |                |                |                |                |                |
 | population  |  5000.0   |  3.616352e+04  |  9925.650114   |  172.610686    |  29403.928702  |  3.619941e+04  |  4.286129e+04  |  6.962171e+04  |
 |             |	      	  |             	 |                |                |                |                |                |                |
@@ -150,6 +154,5 @@ Some observations:
 
 - Not all of the combinations of columns provide strong linear relationships; some just look like blobs. That's nothing to worry about for our analysis.
 - See the visualizations that look like lanes rather than organic groups? That is the result of the average number of bedrooms in houses being measured in discrete values rather than continuous ones (as no one has 0.3 bedrooms in their house). The number of bathrooms is also the one column whose data is not really normally distributed, though some of this might be distortion caused by the default bin size of the pairplot histogram functionality.
-
 
 Now it's time to make a prediction.
