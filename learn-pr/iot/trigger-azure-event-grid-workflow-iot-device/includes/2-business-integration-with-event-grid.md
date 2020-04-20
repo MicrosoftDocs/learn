@@ -10,7 +10,7 @@ Azure Event Grid is deployed to maximize availability. It natively spreads acros
 
 This image shows how Event Grid connects sources and handlers, and isn't a comprehensive list of supported integrations.
 
-## How will we use Event Grid in our scenario
+## Using Event Grid in our scenario
 
 When a new thermostat is installed at a customer's to monitor their cheese cave, we want to notify the Operations Manager that they should expect new data and events in the application.
 Event Grid supports many different services as event sources, including Azure IoT Hub. From IoT Hub, we will post events on Event Grid about a new device being added to the solution.

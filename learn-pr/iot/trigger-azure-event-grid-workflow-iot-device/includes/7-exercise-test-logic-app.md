@@ -1,5 +1,3 @@
-# Create new devices
-
 Test your logic app by creating a new device to trigger an event notification email.
 
 1. From your IoT hub, select **IoT Devices**.
@@ -10,7 +8,9 @@ Test your logic app by creating a new device to trigger an event notification em
 
 4. Select **Save**.
 
-   Creating this device will trigger the Logic App and send and email that contains the event details.
+   Creating this device will trigger the Logic App and send and email that contains the event details. Here is how the email looks like:
+
+    [![Email received](../media/email-received.png)](../media/email-received.png#lightbox)    
 
 5. To test the event subscription filters, you can add multiple devices with different device IDs. For example - try these examples:
 

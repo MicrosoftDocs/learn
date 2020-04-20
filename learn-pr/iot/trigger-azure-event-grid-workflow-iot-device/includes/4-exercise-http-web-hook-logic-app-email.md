@@ -1,6 +1,8 @@
 In this unit, you will create a new logic app that will be triggered via an HTTP Web Hook, then send an email using an Outlook.com email address.
 
-## Create HTTP Web Hook logic app that sends an email
+## Create an HTTP Web Hook logic app that sends emails
+
+### Create the logic app
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) (which you may still have open), click **+Create a resource** to open the Azure marketplace.
 1. On the **New** page, in the **Search the Marketplace** box, type in and search for **Logic App**.
@@ -27,6 +29,10 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
     > [!NOTE]
     > It will take a minute or two for the Logic App deployment to complete.
 
+### Configure the logic app HTTP Request trigger
+
+The logic app is triggered with an HTTP Request. In the body of the request, we have information about the event that triggered it. We want to be able to extract and use this information in the following steps. Let's see how it is done when configuring the logic app trigger.
+
 1. Navigate to the **Logic App** resource that was deployed.
 
 1. When navigating to the **Logic App** for the first time, the **Logic Apps Designer** pane will be displayed.
@@ -47,7 +53,7 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
     ```json
      [{
       "id": "56afc886-767b-d359-d59e-0da7877166b2",
-      "topic": "/SUBSCRIPTIONS/<subscription ID>/RESOURCEGROUPS/<resource group name>/PROVIDERS/MICROSOFT.DEVICES/IOTHUBS/<hub name>",
+      "topic": "/SUBSCRIPTIONS/asubscriptionid/RESOURCEGROUPS/aresourcegroupname/PROVIDERS/MICROSOFT.DEVICES/IOTHUBS/ahubname",
       "subject": "devices/LogicAppTestDevice",
       "eventType": "Microsoft.Devices.DeviceCreated",
       "eventTime": "2018-01-02T19:17:44.4383997Z",
@@ -92,7 +98,14 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
 
     This sample JSON is an example of the JSON that Event Grid will POST to the Web Hook endpoint for the Logic App once it's created.
 
-1. Notice the **Request Body JSON Schema** box is now populated with a JSON Schema that was automatically generated based on the Sample JSON that was pasted in.
+    > [!NOTE]
+    > If you see the message "Remember to include....Content-Type header set to application/json in your request.", you can ignore it.
+
+1. Notice the **Request Body JSON Schema** box is now populated with a JSON Schema that was automatically generated based on the Sample JSON that was pasted in. It will allow the extraction of the information shared in the body of the trigger by the IoT Hub.
+
+### Add the Send Email step to the logic app using the event's information
+
+Now we want to configure the next step of the logic app: sending an email. And we want to populate the email fields with the event's information received in the trigger.
 
 1. Click the **+New step** button below the **When an HTTP request is received** trigger.
 
@@ -117,13 +130,13 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
 
    * **Body**: Write the text for your email. Select JSON properties from the selector tool to include dynamic content based on event data. For this lab, add the following text and dynamic content: `This is an automated email to inform you that: {eventType} occurred at {eventTime} IoT Hub: {hubName} Device ID: {deviceID} Connection state: {connectionState}`.  If you can't see the Dynamic content, select the **Add dynamic content** hyperlink under the **Body** text box. If it doesn't show you the fields you want, click *more* in the Dynamic content screen to include the fields from the previous action.
 
-    [![Fill out email information](../media/email_content.png)](../media/email_content.png#lightbox)
+    [![Fill out email information](../media/email-content.png)](../media/email-content.png#lightbox)
 
 1. Click **Save** to save all changes to the Logic App Workflow.
 
 1. Expand the **When an HTTP request is received** trigger, copy the value for the **HTTP POST URL** that is displayed, and save it for future reference. You now have the Web Hook endpoint URL for the Logic App that will be used by Event Grid to trigger the execution of the Logic App workflow.
 
-    [![HTTP request info](../media/http_post.png)](../media/http_post.png#lightbox)
+    [![HTTP request info](../media/http-post.png)](../media/http-post.png#lightbox)
 
     The **HTTP POST URL** will be similar to this sample:
 

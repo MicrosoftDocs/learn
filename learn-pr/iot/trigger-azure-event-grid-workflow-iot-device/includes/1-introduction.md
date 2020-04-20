@@ -1,10 +1,12 @@
 In this module, you'll learn how to integrate Azure IoT Hub with Azure Event Grid to trigger a workflow in a business scenario when a new IoT device is added to a solution.
 
-Azure IoT Hub is a cloud service that can handle large volumes of telemetry sent from remote devices. The remote devices typically contain a number of sensors (temperature, humidity, location, velocity, to name a few). These sensors send out telemetry on a regular basis. An IoT Hub allows ingesting data in the cloud to process it in a number of ways, including storing it, or running a back-end app on the data. The IoT Hub also communicates new settings back to the devices. Azure IoT Hub can scale to handle millions of devices.
+Azure IoT Hub is a cloud service that can handle large volumes of devices telemetry sent from remote devices. The remote devices typically contain a number of sensors (temperature, humidity, location, velocity, to name a few). These sensors send out telemetry on a regular basis. An IoT Hub allows ingesting data in the cloud to process it in a number of ways, including storing it, or running a back-end app on the data. The IoT Hub also communicates new settings back to the devices. Azure IoT Hub can scale to handle millions of devices.
 
 Azure Event Grid allows you to easily build applications with event-based architectures. Event Grid has built-in support for events coming from Azure services, like Azure Storage Blobs and Event Hub. Event Grid also has support for your own events, using custom topics.
 
 With Azure IoT Hub and Azure Event Grid integration, you can send event notifications to other services and trigger downstream processes and workflows. Configure your business applications to listen for IoT Hub events and react to critical events in a reliable, scalable, and secure manner. For example, build an application that updates a database, creates a work ticket, and delivers an email notification every time a new IoT device is registered to your IoT hub.
+
+[![IoT Hub Integration with Event Grid and Logic Apps](../media/iothub-eventgrid-logicapps.png)](../media/iothub-eventgrid-logicapps.png#lightbox)
 
 ## Learning Objectives
 

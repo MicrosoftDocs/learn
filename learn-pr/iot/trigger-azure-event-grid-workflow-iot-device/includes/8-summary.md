@@ -1,4 +1,4 @@
-# Summary
+Congratulations, you have configured your application to automatically notify the Operations Manager of the addition of a new device in your IoT solution.
 
 In this module, you learned how to:
 
@@ -18,5 +18,3 @@ Take your interest further with:
 And look out for additional Learn modules on IoT Hub.
 
 To finish this module, and earn your rewards, complete a final knowledge check.
-
-## Check your knowledge

@@ -3,7 +3,7 @@ In this unit, we create an IoT Hub.
 ## Create a custom IoT Hub
 
 1. Make sure you've activated the sandbox, using the button above. The sandbox creates a free temporary resource.
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Using this link will ensure you're using the sandbox.
+1. Right Click on [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and select **Open in a new window**. Using this link will ensure you're using the sandbox.
 1. Select **+ Create a resource**, from the top of the left-hand menu. In the **Search the Marketplace** search box, enter "IoT Hub".
 1. Select **IoT Hub** from the search results, and click **Create**.
 1. You'll be required to enter a **Subscription** from the selection offered to you. A sandbox subscription will be **Concierge Subscription**, so choose that. For **Resource Group**, select <rgn>[sandbox resource group name]</rgn>.
