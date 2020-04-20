@@ -171,7 +171,7 @@ process.send({
 });
 ```
 
-Next, let's give the file `child.js` the following content:
+Next, give the file `child.js` the following content:
 
 ```javascript
 // child.js
