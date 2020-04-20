@@ -19,8 +19,7 @@ prerequisites: |
   - Basic understanding of microservices
   - Basic understanding of how Docker containers work
   - Basic knowledge of installing software using a command-line interface
-# iconUrl: /learn/achievements/intro-to-kubernetes.svg
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/intro-to-kubernetes.svg
 badge:
   uid: learn.intro-to-kubernetes.badge
 levels: 
