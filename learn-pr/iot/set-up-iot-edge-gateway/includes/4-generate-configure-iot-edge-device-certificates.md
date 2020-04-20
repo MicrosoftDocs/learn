@@ -32,15 +32,10 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
 
 1. Follow the instructions to create the necessary storage accounts for use in the **Cloud Shell**.
 
-    If you are using a sandbox account, you may receive the following error message when creating the Cloud Shell instance:
+    If you are using a sandbox account, you may receive the following error message when creating the Cloud Shell instance. If you receive this message, scroll down and select **Show advanced settings**:
 
     >[!div class="mx-imgBorder"]
     >[![Azure Cloud Shell Storage Creation Failed](../media/storage-creation-failed.png)](../media/storage-creation-failed.png#lightbox)
-
-    If you receive this message, scroll down and select **Advanced Settings**:
-
-    >[!div class="mx-imgBorder"]
-    >[![Azure Cloud Shell Storage Creation Advanced Settings](../media/storage-creation-advanced-settings.png)](../media/storage-creation-advanced-settings.png#lightbox)
 
     Then supply appropriate names to create a new **Storage Account** and **File Share** then select **Create Storage**:
 
@@ -48,7 +43,7 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
     >[![Azure Cloud Shell Storage Creation Advanced Settings Named](../media/storage-creation-advanced-settings-named.png)](../media/storage-creation-advanced-settings-named.png#lightbox)
 
     >[!NOTE]
-    > The **Storage Account** and **File Share** must be given globally unique names.  If you receive an error that a given name is already in use, try to name the resource again with a unique value.
+    > The **Storage Account** and **File Share** resources must be given globally unique names.  If you receive an error that a given name is already in use, try to name the resource again with a unique value.
 
 1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
