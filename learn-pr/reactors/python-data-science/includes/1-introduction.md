@@ -1,9 +1,9 @@
 Since its release in 1991, Python has risen to become not just a popular general-purpose programming language, but a preeminent computer language for data science. This learning path will use Python and the Python extension for Visual Studio Code as the primary means of illustrating data science tools and resources.
 
 Several examples in this learning path draw from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html) and examples given in the [Python 3 documentation](https://docs.python.org/3/) (with edits and amendments). This introduction to Python is written for Python 3.6.7 but is generally applicable to other Python 3.x versions.
- 
+
 Original material from python.org is Copyright (c) 2001-2019 Python Software Foundation.
- 
+
 This learning path makes extensive use of Jupyter Notebooks that run in Visual Studio Code. Visual Studio Code runs on macOS, Linux, and Windows. Throughout this learning path, you will be encouraged to test out Python code in Visual Studio Code (VS Code) by using the Python extension and integrated Jupyter Notebooks.
 
 ## Set up your environment
@@ -17,7 +17,7 @@ Complete these steps to set up your environment:
 3. Activate the [Anaconda environment in VS Code](https://code.visualstudio.com/docs/python/jupyter-support) to be able to run Jupyter notebooks.
 4. Set up a [Data Science environment in VS Code](https://code.visualstudio.com/docs/python/data-science-tutorial) to be able to use NumPy and Pandas.
 
-Test your environment
+## Test your environment
 
 If you have successfully set up your environment with VS Code, Python, Anaconda, and the NumPy and Pandas libraries, you should be able to run a Jupyter notebook inside of VS Code.
 
