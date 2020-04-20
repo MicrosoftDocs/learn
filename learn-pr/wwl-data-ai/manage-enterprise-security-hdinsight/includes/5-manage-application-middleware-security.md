@@ -55,7 +55,7 @@ Guidance on setting up authentication mechanisms for both scenarios is explained
 Authorization in HDInsight deals with determination and enforcement of user privileges on the underlying datasets.  Fine grained authorization on specific actions and/or operations is available on the HDInsight services of Hive, HBase, and Kafka and is managed through Apache Ranger. Ranger provides role-based access control, attribute-based access control and centralizes auditing of user access and administrative actions. 
 You typically authenticate into Apache Ranger with the cluster administrator’s domain credentials and then set up policies for restricted groups or users on Ranger. 
 In the below example we show ways in which you can create a ranger policy to set permissions on a sample Hive Table in Ranger.  
-1. Launch Apache Ranger using the URL: https://CLUSTERNAME.azurehdinsight.net/Ranger/ . Replace "CLUSTERNAME" with the name of your cluster. Use the cluster domain administrator and corresponding password to login. 
+1. Launch Apache Ranger using the URL: `https://CLUSTERNAME.azurehdinsight.net/Ranger/`. Replace "CLUSTERNAME" with the name of your cluster. Use the cluster domain administrator and corresponding password to login. 
 
 	![Setting permissions with Apache Ranger](../media/13-Adding-permission-with-apache-ranger.png)
 
