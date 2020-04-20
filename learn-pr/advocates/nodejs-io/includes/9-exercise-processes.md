@@ -141,7 +141,7 @@ Using the `fork()` method spawns a new Node.js process and invokes a specified m
 - Create a file `parent.js`
 - Create a file `child.js`
 
-Now let's give `parent.js` the following content:
+Now give `parent.js` the following content:
 
 ```javascript
 // parent.js
