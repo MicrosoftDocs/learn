@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.github.github-actions-ci
+metadata:
+  title: "GitHub Actions: Continuous Integration - Learn"
+  description: Learn how to create workflows that enable you to use Continuous Integration (CI) for your projects.
+  ms.date: 01/01/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "GitHub Actions: Continuous Integration"
+summary: Learn how to create workflows that enable you to use Continuous Integration (CI) for your projects.
+abstract: |
+  In this module, you will:
+  - TBD
+  - TBD
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.github.github-actions-ci.1-introduction
+- learn.github.github-actions-ci.2-tbd-knowledge
+- learn.github.github-actions-ci.3-tbd-exercise
+- learn.github.github-actions-ci.4-tbd-knowledge-check
+- learn.github.github-actions-ci.5-summary
+badge:
+  uid: learn.github.github-actions-ci.badge
