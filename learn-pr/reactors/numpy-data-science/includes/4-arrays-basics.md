@@ -85,7 +85,7 @@ What `dtypes` do you predict them to have?
 
 <details>
 
-  <summary>Hint (expand to reveal)</summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
 ```python
 print("dtype:", a3.dtype)

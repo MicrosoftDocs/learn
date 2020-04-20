@@ -40,4 +40,3 @@ The output is:
 > ### Takeaway
 >
 > You will constantly be using functions of all kind to perform data science in Python, so understanding how functions accept, work on, and return data is critical to further progress.
-> 

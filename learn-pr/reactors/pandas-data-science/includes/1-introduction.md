@@ -65,10 +65,10 @@ Here are just a few of the things that pandas does well:
 
 In this module, you will:
 
-  - Import the pandas library into Jupyter Notebooks in VS Code
-  - Understand how to use `Series` and `DataFrames` to store remote data
-  - Learn how to clean and manipulate large, remote datasets
-  - Apply operations to `Series` and `DataFrames` for data science analysis
+- Import the pandas library into Jupyter Notebooks in VS Code
+- Understand how to use `Series` and `DataFrames` to store remote data
+- Learn how to clean and manipulate large, remote datasets
+- Apply operations to `Series` and `DataFrames` for data science analysis
 
 ## Prerequisites
 

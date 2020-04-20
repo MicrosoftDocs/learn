@@ -163,6 +163,7 @@ Think back to the broadcast rules.
 </details>
 
 >[!div class="alert is-tip"]
+>
 >### The big takeaway
 >
 > It is always important to remember that fancy indexing returns values reflected by the *broadcasted shape of the indices*, and not the shape of the array being indexed.

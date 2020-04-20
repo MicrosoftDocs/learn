@@ -145,6 +145,7 @@ The output is:
   ```Output
   ['John', 'Paul', 'George', [...]]
   ```
+  
 </details>
 
 Note that you can supply your own _lambda function _to `sort()` for use in comparing items in a list. We will cover lambda functions in a later topic.

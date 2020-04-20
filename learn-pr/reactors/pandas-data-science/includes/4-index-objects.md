@@ -107,6 +107,7 @@ Try the following:
   ```Output
   Int64Index([1, 2, 9, 11], dtype='int64')
   ```
+  
 </details>
 
 These operations may also be accessed via object methods, for example `ind_odd.intersection(ind_prime)`. Below is a table listing some useful `Index` methods and properties.

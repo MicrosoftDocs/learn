@@ -149,6 +149,7 @@ Now, set an element of `int_series` equal to **None**.
   2    3.0
   dtype: float64
   ```
+
 </details>
 
 
@@ -194,6 +195,7 @@ Try running `example3[example3.notnull()]`. But before you do, what do you expec
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
+
   ```Python
   example3[example3.notnull()]
   ```
@@ -203,6 +205,7 @@ Try running `example3[example3.notnull()]`. But before you do, what do you expec
   2     
   dtype: object
   ```
+
 </details>
 
 > [!div class="alert is-tip"]
@@ -309,6 +312,7 @@ How might you go about dropping just column 3? Remember that you will need to su
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
+
   ```Python
   example4.dropna(how = "all", axis="columns", inplace=True)
   ```
@@ -399,6 +403,7 @@ What happens if you try to fill null values with a string, like `''`?
   e    3
   dtype: object
 ```
+
 </details>
 
 
@@ -484,6 +489,7 @@ What output does `example4.fillna(method='bfill', axis=1)` produce?
   | 1 | 2.0 | 5.0 | 8.0 | NaN |
   | 2 | 6.0 | 6.0 | 9.0 | NaN |
   ```
+
 </details>
 
 What about `example4.fillna(method='ffill')` and `example4.fillna(method='bfill')`?
@@ -498,14 +504,17 @@ What about `example4.fillna(method='ffill')` and `example4.fillna(method='bfill'
   | 1 | 2.0 | 5.0 | 8 | NaN |
   | 2 | 2.0 | 6.0 | 9 | NaN |
   ```
+
   and
-    ```output
+
+  ```output
   |   | 0   | 1   | 2 | 3   |
   ---------------------------
   | 0 | 1.0 | 5.0 | 7 | NaN |
   | 1 | 2.0 | 5.0 | 8 | NaN |
   | 2 | NaN | 6.0 | 9 | NaN |
   ```
+
 </details>
 
 Can you think of a longer code snippet to write that can fill all the null values in example4?
@@ -524,9 +533,8 @@ Can you think of a longer code snippet to write that can fill all the null value
   | 1 | 2.0 | 5.0 | 8.0 | 8.0 |
   | 2 | 2.0 | 6.0 | 9.0 | 9.0 |
   ```
+
 </details>
-
-
 
 You can be creative about how you use `fillna`. For example, let's look at `example4` again, but this time, we'll fill the missing values with the average of all the values in the DataFrame.
 

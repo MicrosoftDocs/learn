@@ -224,6 +224,7 @@ Using the documentation, can you figure out how to use `.drop()` to get rid of t
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
+
   ```Python
   pd.merge(df1, df6, left_on="employee", right_on="name").drop("name", axis=1)
   ```
@@ -236,6 +237,7 @@ Using the documentation, can you figure out how to use `.drop()` to get rid of t
   | 2 | Mary     | Marketing  | 120000 |
   | 3 | Sue      | HR         | 9000   |
   ```
+
 </details>
 
 ## left_index and right_index keywords
@@ -337,6 +339,7 @@ What happens if you specify only **left_index** or **right_index**?
   
   MergeError: Must pass right_on or right_index=True
   ```
+
 </details>
 
 
@@ -450,8 +453,8 @@ The keyword for perfoming an outer join is `how`='outer'. How would you perform 
   | 4 | NaN      | Engineering | math          |
   | 5 | NaN      | Sales       | communication |
   ```
-</details>
 
+</details>
 
 Notice in your resulting DataFrame that not every row in df1 and df5 had a value that corresponds to the union of the key values (the **group** column). Pandas fills in these missing values with NaNs.
 
@@ -491,6 +494,7 @@ Now run the right merge between df1 and df5. What do you expect to see?
   | 2 | NaN      | Engineering | math          | 
   | 3 | NaN      | Sales       | communication | 
   ```
+
 </details>
 
 ## suffixes keyword: dealing with conflicting column names
@@ -576,7 +580,7 @@ These suffixes work if there are multiple conflicting columns.
 Concatenation in pandas is built by using the concatenation functionality for NumPy arrays. Here is what NumPy concatenation looks like:
 
 * For one-dimensional arrays:
-   
+
    ```python
    x = [1, 2, 3]
    y = [4, 5, 6]
@@ -586,9 +590,10 @@ Concatenation in pandas is built by using the concatenation functionality for Nu
 
    Here's the output:
 
-  ```output
-  array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-  ```
+   ```output
+   array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+   ```
+
 * For two-dimensional arrays:
 
    ```python
@@ -598,7 +603,7 @@ Concatenation in pandas is built by using the concatenation functionality for Nu
    ```
 
    Here's the output:
-   
+
    ```output
    array([[1, 2, 1, 2],
        [3, 4, 3, 4]])
@@ -657,9 +662,9 @@ Here's the output:
 |   | A | B |
 -------------
 | 0 | a | b |
-| 1 | c | d | 
+| 1 | c | d |
 | 0 | a | b |
-| 1 | c | d | 
+| 1 | c | d |
 ```
 
 Notice that `pd.concat` has preserved the indexing, even though that means that it has been duplicated. You can have the results reindexed (and avoid potential confusion down the road), like this:
@@ -762,7 +767,7 @@ Here's the output:
 ```output
 |   |  B | C |
 --------------
-| 0 | b  | c | 
+| 0 | b  | c |
 | 1 | e  | f |
 | 0 | u  | v |
 | 1 | x  | y |
@@ -808,4 +813,5 @@ Here's the output:
 > [!IMPORTANT]
 > Unlike the `append()` and `extend()` methods of Python lists, the `append()` method in pandas does not modify the original object. Instead, it creates a new object with the combined data.
 
+> [!div class="alert is-tip"]
 > **Takeaway**: A large part of the value you can provide as a data scientist comes from connecting multiple, often disparate datasets to find new insights. Learning how to join and merge data is thus an essential part of your skill set.

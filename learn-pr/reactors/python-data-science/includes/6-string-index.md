@@ -157,7 +157,6 @@ For non-negative indices, the length of a slice is the difference of the indices
 
 Attempting to use an index that is too large results in an error:
 
-
 ```Python
 word[42]  # The word only has 6 characters.
 ```

@@ -44,7 +44,7 @@ series2 = pd.Series([3, 5, 7], index=[1, 2, 3])
 series1 + series2
 ```
 
-The output is: 
+The output is:
 
 ```Output
 0     NaN

@@ -114,6 +114,7 @@ i = 7
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
+  
   ```Output
   True
   ```

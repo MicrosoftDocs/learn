@@ -157,6 +157,7 @@ Be sure to put the the masking and fancy indexing inside the square brackets: `c
   | Germany | 82408706   | 230.587393         | 
   | Japan   | 126922333  | 335.798242         |
   ```
+  
 </details>
 
 ## Indexing conventions
