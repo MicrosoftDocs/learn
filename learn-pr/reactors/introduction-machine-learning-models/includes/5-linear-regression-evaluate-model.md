@@ -13,7 +13,7 @@
 > [!Note]
 > **Sarah: Action items**
 > 
-> - Try it yourself block needs Input and Output code, and Hint text. Search on TBD.
+> - Try it yourself block needs Input and Output code. Search on TBD.
 >
 
 Now, a moment of truth: let's see how our model does making predictions based on the test data:
@@ -33,7 +33,7 @@ array([ 614607.96220733, 1849444.80372637, 1118945.0888425 , ...,
 
 These are the house prices predicted by our model. One for every row in our test dataset.
 
-Remember how we mentioned that linear models have the mathematical form of $Y = B_0 + B_1*X + E$? Let’s look at the actual equation:
+Remember how we mentioned that linear models have the mathematical form of $Y = B_0 + B_1 \times X + E$? Let’s look at the actual equation:
 
 ```python
 print(reg.intercept_,reg.coef_)
@@ -113,11 +113,7 @@ The linear nature of our predicted prices is clear enough, but there are so many
 
 <details> 
 
-  <summary>Hint <i>(expand to reveal)</i>
-
-  Remember to try the `plt.scatter` parameter `alpha=`. It takes values between 0 and 1.
-
-  </summary>
+  <summary>Remember to try the `plt.scatter` parameter `alpha=`. It takes values between 0 and 1. <i>(expand to reveal)</i></summary>
 
   ```python
   TBD
