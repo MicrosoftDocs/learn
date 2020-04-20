@@ -10,6 +10,8 @@ Your customers can access Azure Marketplace online through the web storefront at
 
 ![Screenshot of the Azure Marketplace homepage with emphasis on "apps" and "consulting services" buttons](..\media\2_AzureMarketplaceHomepage.png)
 
+|  |
+|---|
 |![Screenshot of the Azure Marketplace apps landing page with emphasis on application categories and filters](..\media\3_AzureMarketplaceApps.png)|
 |*Screenshots of the Azure Marketplace web storefront*|
 
