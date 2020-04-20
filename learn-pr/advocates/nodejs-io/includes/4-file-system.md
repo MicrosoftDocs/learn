@@ -56,4 +56,4 @@ fs.open('/path/to/file/file.txt', 'r', (err, fileContent) => {
 });
 ```
 
-Above we see how we provide a function as our third argument. The function in itself takes an error `err` as the first argument. The second argument is usually data as a result of the operation, in this case the file content.
+Above we see how you provide a function as our third argument. The function in itself takes an error `err` as the first argument. The second argument is usually data as a result of the operation, in this case the file content.

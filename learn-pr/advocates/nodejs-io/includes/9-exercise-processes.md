@@ -4,9 +4,9 @@
 
 ## Spawn a process
 
-In this exercise, we will learn how to spawn up a process and also invoke a command with arguments.
+In this exercise, you'll learn how to spawn up a process and also invoke a command with arguments.
 
-First, let's create an application file to work in, the suggestion is calling it `app.js`.
+First, create an application file to work in, the suggestion is calling it `app.js`.
 
 Now, add the following code:
 
@@ -14,15 +14,15 @@ Now, add the following code:
 const { spawn } = require('child_process');
 ```
 
-This will import the module `child_process`. From there, we will use the method `spawn()` that will create a shell. We need to provide it with a command so that's up next:
+This will import the module `child_process`. From there, you'll use the method `spawn()` that will create a shell. You need to provide it with a command so that's up next:
 
 ```javascript
 const ls = spawn('ls', ['-lh']);
 ```
 
-Above we are invoking `ls` with the argument `-lh`. All arguments sent to a command should be placed in the second parameter that is an array.
+Above you're invoking `ls` with the argument `-lh`. All arguments sent to a command should be placed in the second parameter that is an array.
 
-Next, we need to have a way to listen to the results. For that we will work with the stream `stdout` on our resulting object `ls`, like so:
+Next, you need to listen to the results. For that you'll work with the stream `stdout` on your resulting object `ls`, like so:
 
 ```javascript
 ls.stdout.on('data', (data) => {
@@ -30,7 +30,7 @@ ls.stdout.on('data', (data) => {
 });
 ```
 
-Additionally we want to listen to any errors our command might cause so let's add that code:
+Additionally you want to listen to any errors your command might cause so let's add that code:
 
 ```javascript
 ls.stderr.on('data', (data) => {
@@ -38,9 +38,9 @@ ls.stderr.on('data', (data) => {
 });
 ```
 
-Note, how we subscribe to the event `data` on the `stderr` stream.
+Note, how you subscribe to the event `data` on the `stderr` stream.
 
-Finally let's listen to the event `close` that reports when the command has finished:
+Finally listen to the event `close` that reports when the command has finished:
 
 ```javascript
 ls.on('close', (code) => {
@@ -62,11 +62,11 @@ rw-r--r--  1 <user>  <group>   311B 17 Mar 21:23 <name of your app file>.js
 
 ## Running executable files
 
-We have dedicated methods on our `child_process` module that allows us to run commands. Generally the `exec()` method is preferred, over `execFile()` as it doesn't create a shell and thereby is less resource intensive. However that's only possible on Linux. On Windows, `.cmd` and `.bat` files are only allowed to run in a shell so therefore `execFile()` is the only choice.
+You've dedicated methods on the `child_process` module that runs commands. Generally the `exec()` method is preferred, over `execFile()` as it doesn't create a shell and thereby is less resource intensive. However that's only possible on Linux. On Windows, `.cmd` and `.bat` files are only allowed to run in a shell so therefore `execFile()` is the only choice.
 
 ### Prerequisites for Linux
 
-Let's create a file `command.sh`, give it for example a content like this:
+Create a file `command.sh`, give it for example a content like this:
 
 ```bash
 # lists files and some other info
@@ -89,7 +89,7 @@ This should output all the files in your directory with some added info on permi
 
 ### Prerequisites for Windows
 
-Let's create a file `mycommand.bat`, give it for example a content like this:
+Create a file `mycommand.bat`, give it for example a content like this:
 
 ```bash
 # lists files and some other info
@@ -136,7 +136,7 @@ rw-r--r--  1 <user>  <group>   311B 17 Mar 21:23 <name of your app file>.js
 
 ### Parent/child communication with `fork()`
 
-Using the `fork()` method spawns a new Node.js process and invokes a specified module with an IPC communication channel established. This allows sending messages between parent and child. Let's demonstrate this communication by doing the following:
+Using the `fork()` method spawns a new Node.js process and invokes a specified module with an IPC communication channel established. This allows sending messages between parent and child. Demonstrate this communication by doing the following:
 
 - Create a file `parent.js`
 - Create a file `child.js`
@@ -154,7 +154,7 @@ const process = cp.fork(childPath);
 
 ```
 
-Above we can see how we create a child process using the method `fork()` given the file `child.js`. We have now additionally established a communication with said process and next step is to listen to messages from it. Add the following to listen to the `message` event:
+Above you can see how we create a child process using the method `fork()` given the file `child.js`. You've now additionally established a communication with said process and next step is to listen to messages from it. Add the following to listen to the `message` event:
 
 ```javascript
 process.on('message', (message) => {
@@ -162,7 +162,7 @@ process.on('message', (message) => {
 });
 ```
 
-This is a two-way communication so we can set up to listen to message from the child process as well with this code:
+This is a two-way communication so you can set up to listen to message from the child process as well with this code:
 
 ```javascript
 // Causes the child to print: CHILD got message: { hello: 'world' }

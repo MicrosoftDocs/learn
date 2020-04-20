@@ -2,14 +2,14 @@ Streams are a fundamental concept in Node.js. They are a representation of data 
 
 ## Why streams
 
-Ok, we have a construct that expresses that data flows from one point to the next, but why do we need it?
+You have a construct that expresses that data flows from one point to the next, but why do you need it?
 
-Imagine that you are trying to read a really large file from your disk. What happens if you don't use streams is that entire file is being read into memory before you are shown its content. That's not a great user experience and it also puts a lot of strain on the OS, using up a lot of resources. For network communications using Streams is a must as we need to be able to send data, little by little and report successfully transmitted data as it progresses.
+Imagine that you are trying to read a really large file from your disk. What happens if you don't use streams is that entire file is being read into memory before you're shown its content. That's not a great user experience and it also puts a lot of strain on the OS, using up a lot of resources. For network communications using Streams is a must as you need to send data, little by little and report successfully transmitted data as it progresses.
 
-We have therefore identified two major advantages to using streams
+You've therefore identified two major advantages to using streams
 
-- Memory, there's no need to put large amounts of data into memory
-- Time, you are able to process the data right away, as it arrives, instead of waiting for the whole operation to finish.
+- Memory - there's no need to put large amounts of data into memory
+- Time - you are able to process the data right away, as it arrives, instead of waiting for the whole operation to finish.
 
 ## Streams are everywhere
 
@@ -32,19 +32,19 @@ There are four types of streams.
 
 ## Stream example
 
-Let's try to see how we can use a stream. We need to use the built-in module `stream`, like so:
+Now, to use a stream you need to use the built-in module `stream`, like so:
 
 ```javascript
 const Stream = require('stream')
 ```
 
-Next, let's create a Readable stream, like so:
+Next, create a Readable stream, like so:
 
 ```javascript
 const readableStream = new Stream.Readable()
 ```
 
-Now, to be able to read from it, we need to either implement `_read`, like so:
+Now, to be able to read from it, you need to either implement `_read`, like so:
 
 ```javascript
 readableStream._read = () => {}
@@ -58,13 +58,13 @@ pass in an object, like so:
 const readableStream = new Stream.Readable({ read() {} })
 ```
 
-At this point we can start pushing data into the stream, like so:
+At this point you can start pushing data into the stream, like so:
 
 ```javascript
 readableStream.push('some data');
 ```
 
-We now have two ways to read that data:
+You now have two ways to read that data:
 
 1. Listen to the `readable` event
 2. Connect it to a writeable stream
@@ -87,7 +87,7 @@ Content: some data
 
 ### Connect/pipe to a writeable stream
 
-For this we will:
+To connect to a writeable stream, go ahead and:
 
 1. Create a Writeable Stream
 2. Define the `_write` property

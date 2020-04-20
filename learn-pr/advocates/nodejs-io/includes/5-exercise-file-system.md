@@ -1,8 +1,8 @@
-In this exercise we will learn how to work with the module `fs` to do things such as
+In this exercise you'll learn how to work with the module `fs` to do things such as
 
-- Read/Write files, we will learn how to do so in asynchronous and synchronous way
-- List stats, we will learn how to list stat information on a file
-- Open directory, here we will learn how to open up a directory and list it's file content
+- Read/Write files, you'll learn how to do so in asynchronous and synchronous way
+- List stats, you'll learn how to list stat information on a file
+- Open directory, here you'll learn how to open up a directory and list it's file content
 
 Pre-steps
 
@@ -13,7 +13,7 @@ Pre-steps
 5. In the same directory create a folder `sub` and within create the files `a.txt`, `b.txt` and `c.txt`
 Now your directory structure should look like this:
 
-```bash
+```files
 app.js
 info.txt
 sub -|
@@ -31,7 +31,7 @@ const fs = require('fs');
 const path = require('path');
 ```
 
-Now we will work primarily with the module `fs`, but we will need the module `path` for helping us construct a path later in the exercise.
+Now you'll work primarily with the module `fs`, but you'll need the module `path` for constructing a path later in the exercise.
 
 Now, add the following content to `app.js`:
 
@@ -48,7 +48,7 @@ try {
 console.log('After sync call');
 ```
 
-Above we are using the *synchronous* version of opening a file. We can see that through the use of a method ending in *sync*.
+Above you're using the *synchronous* version of opening a file. You can see that through the use of a method ending in *sync*.
 
 Follow this up by adding the asynchronous version, like so:
 
@@ -79,11 +79,11 @@ After async call
 Async Content: info
 ```
 
-Note above how the text `After sync call` is printed right after it lists the file content from our synchronous call. Additionally note how text `After async call` is printed *before* `Async Content: info`. This means anything asynchronous happens last. This is an important realization about asynchronous operations, they may be non-blocking but they don't complete right away. So if order is important you should be looking at constructs such Promises and Async/await.
+Note above how the text `After sync call` is printed right after it lists the file content from your synchronous call. Additionally note how text `After async call` is printed *before* `Async Content: info`. This means anything asynchronous happens last. This is an important realization about asynchronous operations, they may be non-blocking but they don't complete right away. So if order is important you should be looking at constructs such Promises and Async/await.
 
 ## List stats
 
-For various reasons you may want to list detailed information on a specific file/directory. For that we have `stat()` method. This also comes in a asynchronous/synchronous version.
+For various reasons you may want to list detailed information on a specific file/directory. The `stat()` method helps with this and also comes in an asynchronous/synchronous version.
 
 To use it, add the following code:
 
@@ -126,7 +126,7 @@ Results above may vary depending on what content you have in your file `info.txt
 
 ## Open directory
 
-Lastly, we will open up a directory using the method `readdir()`. This will produce an array of files/directories contained within the specified directory:
+Lastly, open up a directory using the method `readdir()`. This will produce an array of files/directories contained within the specified directory:
 
 ```javascript
 fs.readdir(path.join(__dirname, 'sub'), (err, files) => {
@@ -140,13 +140,13 @@ fs.readdir(path.join(__dirname, 'sub'), (err, files) => {
 })
 ```
 
-Above we are constructing a directory path using the method `join()` from the `path` module, like so:
+Above you're constructing a directory path using the method `join()` from the `path` module.
 
 ```javascript
 path.join(__dirname, 'sub')
 ```
 
-`__dirname` is a built-in variable and simply means the executing directory. The method call means we will look into a directory `sub` relative to where we are executing the code.
+`__dirname` is a built-in variable and simply means the executing directory. The method call means you'll look into a directory `sub` relative to where you're executing the code.
 
 Now run this code with the following command:
 

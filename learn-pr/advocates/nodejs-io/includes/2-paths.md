@@ -10,17 +10,17 @@ The path looks different depending on whether we are dealing with Linux-based or
 C:\path\to\file.txt
 ```
 
-We need to take this into account when developing our application.
+You need to take this into account when developing your application.
 
-For this we have a built-in module `path` that we can use like so:
+For this you have a built-in module `path` that you can use like so:
 
 ```javascript
 const path = require("path");
 ```
 
-The module `path` can help us with the following operations:
+The module `path` can help you with the following operations:
 
-- Information, it can extract information from our path on things such as parent directory, filename, and file extension
-- Join, we can get help joining two paths so we don't have to worry about which OS our code is run on
-- Absolute path, we can get help calculating an absolute path
-- Normalization, we can get help calculating the relative distance between two paths.
+- Information - it can extract information from our path on things such as parent directory, filename, and file extension
+- Join - you can get help joining two paths so you don't have to worry about which OS your code is run on
+- Absolute path - you can get help calculating an absolute path
+- Normalization - you can get help calculating the relative distance between two paths.

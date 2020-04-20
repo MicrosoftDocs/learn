@@ -1,6 +1,6 @@
-The file system is an important part of many applications. Working with the file system means working with files, directories but also dealing with different access levels and things like streams and processes.
+The file system is an important part of many applications. Working with the file system means working with files and directories but also dealing with different access levels and things like streams and processes.
 
-Working with files is in Node.js a synchronous or an asynchronous process. Node.js is single threaded, that means if we need to carry out things in parallel we need an approach that supports it. That approach is the callback pattern.
+Working with files is in Node.js is either a synchronous or an asynchronous process. Node.js is single threaded, which means if we need to carry out things in parallel we need an approach that supports it. This approach is the callback pattern.
 
 Streams is a topic that is not unique to Node.js but is core concept that is almost everywhere. With Streams, we are able to work with data that flows from one point to another. That could be opening up a file or transferring data from one network point to another. Learning to leverage streams can make your app more responsive. Additionally it will ensure that consumption of resources like CPU and memory stays at a minimum.
 

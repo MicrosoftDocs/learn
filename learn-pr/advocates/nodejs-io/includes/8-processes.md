@@ -1,6 +1,6 @@
-To work with processes we will need to use the module `child_process`. This module allows us to spawn processes. To ensure we don't block the Node.js event-loop, we want to spawn up new processes using the method `spawn()`. There is a synchronous version of this ending in `Sync`, but usually we want to avoid blocking in Node.js as much as we can.
+To work with processes you'll use the module `child_process`, which spawns processes. To ensure you don't block the Node.js event-loop, you want to spawn up new processes using the method `spawn()`. There is a synchronous version of this ending in `Sync`, but usually you want to avoid blocking in Node.js as much as you can.
 
-By default, pipes for `stdin`, `stdout`, and `stderr` are created between the parent Node.js process and the spawned child. This means we have access to the mentioned streams. We can therefore listen to events being produced by any of these streams.
+By default, pipes for `stdin`, `stdout`, and `stderr` are created between the parent Node.js process and the spawned child. This means you have access to the mentioned streams. You can therefore listen to events being produced by any of these streams.
 
 ## Process creation
 
@@ -15,22 +15,22 @@ All of the above methods come with synchronous version that will block the event
 
 ## Working with our child process
 
-So what can we do with a process we spawn up?
+So what can you do with a process we spawn up?
 
-Well, we can create a process that runs a Bash command and capture the result. Then we can listen to the emitted result and incorporate that as part of our Node.js program. Consider the below code:
+Well, you can create a process that runs a Bash command and capture the result. Then you can listen to the emitted result and incorporate that as part of your Node.js program. Consider the below code:
 
 ```javascript
 const { spawn } = require('child_process');
 const ls = spawn('ls', ['-lh']);
 ```
 
-Here we are using the method `spawn()` from the `child_process` module and we are able to the following command to our terminal.
+Here you're using the method `spawn()` from the `child_process` module and you're able to the following command to the terminal.
 
 ```bash
 ls -lh
 ```
 
-The above doesn't capture the output though. For that we need to listen to an event `data`. However let's first have a closer look at `ls` variable. It exposes two streams for us, `stdout` and `stderr`. It is on each of these streams that we will listen to the `data` event to capture the output from our command, depending on whether it succeeded or failed. Let's also listen to the `close` event so we know when the command has finished executing.
+The above doesn't capture the output though. For that we need to listen to an event `data`. However let's first have a closer look at `ls` variable. It exposes two streams, `stdout` and `stderr`. It is on each of these streams that you'll listen to the `data` event to capture the output from your command, depending on whether it succeeded or failed. Also, listen to the `close` event so you know when the command has finished executing.
 
 Add the following code:
 
