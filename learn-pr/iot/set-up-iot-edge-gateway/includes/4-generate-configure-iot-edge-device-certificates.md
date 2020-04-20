@@ -37,7 +37,7 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
     >[!div class="mx-imgBorder"]
     >[![Azure Cloud Shell Storage Creation Failed](../media/storage-creation-failed.png)](../media/storage-creation-failed.png#lightbox)
 
-    Then supply appropriate names to create a new **Storage Account** and **File Share** then select **Create Storage**:
+    Next, supply appropriate names to create a new **Storage account** and **File share** then select **Create storage**:
 
    >[!div class="mx-imgBorder"]
     >[![Azure Cloud Shell Storage Creation Advanced Settings Named](../media/storage-creation-advanced-settings-named.png)](../media/storage-creation-advanced-settings-named.png#lightbox)
