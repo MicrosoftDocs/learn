@@ -12,21 +12,7 @@ In this unit, you'll generate test certificates using tooling on Linux. The cert
 
 ## Generate and configure IoT Edge device CA certificates
 
-You'll complete these steps on the Azure IoT Edge Gateway that was deployed in the previous unit.
-
-1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure portal.  It should be named according to the following format:
- `vm-0000000000000`
-
-1. On the **Overview** pane of the **Virtual machine** blade, click the **Connect** button at the top.
-
-1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section "**Run the example command below to connect to your VM.**".
-
-    This section should contain an entry that looks similar to the text below:
-    
-    `ssh -i <private key path> usernam@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com
-    `
-
-    This entry is a sample SSH command that will be used to connect to the virtual machine.  It contains the hostname for the VM and the Administrator username. Modify this command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
+You'll complete these steps on the Azure IoT Edge Gateway that was deployed in the previous unit using the Azure Cloud Shell.
 
 1. At the top of the Azure portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
@@ -44,6 +30,20 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
 
     >[!NOTE]
     > The **Storage Account** and **File Share** resources must be given globally unique names.  If you receive an error that a given name is already in use, try to name the resource again with a unique value.
+
+1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure portal.  It should be named according to the following format:
+ `vm-0000000000000`
+
+1. On the **Overview** pane of the **Virtual machine** blade, click the **Connect** button at the top.
+
+1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section "**Run the example command below to connect to your VM.**".
+
+    This section should contain an entry that looks similar to the text below:
+    
+    `ssh -i <private key path> usernam@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com
+    `
+
+    This entry is a sample SSH command that will be used to connect to the virtual machine.  It contains the hostname for the VM and the Administrator username. Modify this command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
 
 1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
