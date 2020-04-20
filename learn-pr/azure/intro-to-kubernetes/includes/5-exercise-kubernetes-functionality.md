@@ -185,7 +185,7 @@ microk8s provides a version of `kubectl` you can use to interact with your new K
     sudo snap alias microk8s.kubectl kubectl
     ```
 
-    You see the following output when the command completes successfully.
+    You'll see the following output when the command completes successfully.
 
     ```output
     ubuntu@microk8s-vm:~$ sudo snap alias microk8s.kubectl kubectl
