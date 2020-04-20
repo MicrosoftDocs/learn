@@ -6,38 +6,38 @@ NumPy has fast built-in aggregation functions for working on arrays that are the
 
 You can use the built-in Python `sum` function to sum up the values in an array.
 
-```python
+```Python
 import numpy as np
 ```
 
-```python
+```Python
 myList = np.random.random(100)
 sum(myList)
 ```
 
-```output
+```Output
 50.461758453195614
 ```
 
 If you guessed that there is also a built-in NumPy function for this, you guessed correctly:
 
-```python
+```Python
 np.sum(myList)
 ```
 
-```output
+```Output
 50.46175845319564
 ```
 
 And if you guessed that the NumPy version is faster, you are doubly correct:
 
-```python
+```Python
 large_array = np.random.rand(1000000)
 %timeit sum(large_array)
 %timeit np.sum(large_array)
 ```
 
-```output
+```Output
 124 ms ± 5.38 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 814 µs ± 74.4 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 ```
@@ -48,21 +48,21 @@ For all their similarity, bear in mind that `sum` and `np.sum` are not ident
 
 Just as Python has built-in `min` and `max` functions, NumPy has similar, vectorized versions:
 
-```python
+```Python
 np.min(large_array), np.max(large_array)
 ```
 
-```output
+```Output
 (7.071203171893359e-07, 0.9999997207656334)
 ```
 
 You can also use `min`, `max`, and `sum` (and several other NumPy aggregates) as methods of the array object itself:
 
-```python
+```Python
 print(large_array.min(), large_array.max(), large_array.sum())
 ```
 
-```output
+```Output
 7.071203171893359e-07 0.9999997207656334 500216.8034810001
 ```
 
@@ -70,12 +70,12 @@ print(large_array.min(), large_array.max(), large_array.sum())
 
 Because you will often treat the rows and columns of two-dimensional arrays differently (treating columns as variables and rows as observations of those variables, for example), it can often be desirable to aggregate array data along a row or column. Let's consider a two-dimensional array:
 
-```python
+```Python
 md = np.random.random((3, 4))
 print(md)
 ```
 
-```output
+```Output
 [[0.79832448 0.44923861 0.95274259 0.03193135]
  [0.18441813 0.71417358 0.76371195 0.11957117]
  [0.37578601 0.11936151 0.37497044 0.22944653]]
@@ -83,25 +83,25 @@ print(md)
 
 Unless you specify otherwise, each NumPy aggregation function will compute the aggregate for the entire array. Hence:
 
-```python
+```Python
 md.sum()
 ```
 
-```output
+```Output
 5.1136763453287335
 ```
 
 Aggregation functions take an additional argument specifying the *axis* along which to compute the aggregation. For example, we can find the minimum value within each column by specifying `axis=0`:
 
-```python
+```Python
 md.min(axis=0)
 ```
 
-```output
+```Output
 array([0.18441813, 0.11936151, 0.37497044, 0.03193135])
 ```
 
-#### Try it yourself
+### Try it yourself
 
 What do you get when you try `md.max(axis=1)`?
 
@@ -109,11 +109,11 @@ What do you get when you try `md.max(axis=1)`?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```python
+  ```Python
   md.max(axis=1)
   ```
   
-  ```output
+  ```Output
   array([0.95274259, 0.76371195, 0.37578601])
   ```
   

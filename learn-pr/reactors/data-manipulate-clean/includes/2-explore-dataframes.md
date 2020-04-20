@@ -4,10 +4,10 @@ To explore DataFrames in pandas, we will import the Python scikit-learn library 
 
 First, import pandas and import the Python scikit-learn dataset:
 
-```python
+```Python
 import pandas as pd
 from sklearn.datasets import load_iris
- 
+
 iris = load_iris()
 iris_df = pd.DataFrame(data=iris['data'], columns=iris['feature_names'])
 ```
@@ -16,13 +16,13 @@ iris_df = pd.DataFrame(data=iris['data'], columns=iris['feature_names'])
 
 To take a look at this dataset to see what we have, run:
 
-```python
+```Python
 iris_df.info()
 ```
 
 The output looks like this:
 
-```output
+```Output
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 150 entries, 0 to 149
 Data columns (total 4 columns):
@@ -40,13 +40,13 @@ From the output, we know that the Iris dataset has 150 entries in four columns. 
 
 Next, let's see what the first few rows of our DataFrame look like. To return the first five rows of data, run:
 
-```python
+```Python
 iris_df.head()
 ```
 
 This is what is in the first five rows of the Iris dataset:
 
-```output
+```Output
 |    | sepal length (cm) | sepal width (cm) | petal length (cm) | petal width (cm) |
 ------------------------------------------------------------------------------------
 | 0  | 5.1               | 3.5              | 1.4               | 0.2              |
@@ -63,8 +63,8 @@ By default, `DataFrame.head` returns the first five rows in a DataFrame. In a ne
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Run `iris_df.head` to consult the documentation.
+
+  Run `iris_df.head` to consult the documentation.
 
 </details>
 
@@ -72,13 +72,13 @@ Run `iris_df.head` to consult the documentation.
 
 The flip side of `DataFrame.head` is `DataFrame.tail`, which returns the *last* five rows of a DataFrame:
 
-```python
+```Python
 iris_df.tail()
 ```
 
 This is what you'll find in the last five rows of the Iris dataset:
 
-```output
+```Output
 |     | sepal length (cm) | sepal width (cm) | petal length (cm) | petal width (cm) |
 ------------------------------------------------------------------------------------
 | 145 | 6.7               | 3.0              | 5.2               | 2.3              |

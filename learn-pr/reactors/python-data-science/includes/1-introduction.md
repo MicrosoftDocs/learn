@@ -56,7 +56,6 @@ The output is:
 ## Try it yourself
 
 Open the Python.ipynb file in VS Code. Copy and paste the code snippet from above into a Python code cell. Run the code and you should get the same output as above.
-<br /><br />
 
 Python is an interpreted language, which means that you can interactively use the interpreter to get immediate results. You can see this by using the Python interpreter as a simple calculator: type an expression, and you can see the output immediately.
 
@@ -70,7 +69,7 @@ print("Hello, world.")
 
 Run the cell and your output should be:
 
-```output
+```Output
 Hello, world.
 ```
 

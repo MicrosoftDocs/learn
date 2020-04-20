@@ -10,7 +10,7 @@ Because **None** comes from Python, it can't be used in NumPy and pandas arrays 
 
 To see this in action, consider the following example array (note the `dtype` for it):
 
-```python
+```Python
 import numpy as np
 
 example1 = np.array([2, None, 6, 8])
@@ -19,7 +19,7 @@ example1
 
 This output is returned:
 
-```output
+```Output
 array([2, None, 6, 8], dtype=object)
 ```
 
@@ -29,13 +29,13 @@ The second side effect stems from the first. Because **None** essentially drags 
 
 Try it:
 
-```python
+```Python
 example1.sum()
 ```
 
 This output is returned:
 
-```output
+```Output
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 <ipython-input-108-ce9901ad18bd> in <module>
@@ -62,25 +62,25 @@ In contrast to **None**, NumPy (and therefore pandas) supports **NaN** for its f
 
 For example:
 
-```python
+```Python
 np.nan + 1
 ```
 
 This output is returned:
 
-```output
+```Output
 nan
 ```
 
 Run this code in a cell:
 
-```python
+```Python
 np.nan * 0
 ```
 
 This output is returned:
 
-```output
+```Output
 nan
 ```
 
@@ -88,14 +88,14 @@ The good news: aggregations that are run on arrays that have **NaN** in them don
 
 Run this code in a cell:
 
-```python
+```Python
 example2 = np.array([2, np.nan, 6, 8]) 
 example2.sum(), example2.min(), example2.max()
 ```
 
 Here's the output:
 
-```output
+```Output
 (nan, nan, nan)
 ```
 
@@ -105,8 +105,9 @@ What happens if you add `np.nan` and **None** together?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Remember: <b>NaN</b> is just for missing floating-point values; there is no <b>NaN</b> equivalent for integers, strings, or Booleans.
+
+  Remember: <b>NaN</b> is just for missing floating-point values; there is no <b>NaN</b> equivalent for integers, strings, or Booleans.
+
 </details>
 
 ## NaN and None: Null values in pandas
@@ -115,14 +116,14 @@ Even though **NaN** and **None** can behave somewhat differently, pandas is neve
 
 To see what we mean, consider a Series of integers:
 
-```python
+```Python
 int_series = pd.Series([1, 2, 3], dtype=int)
 int_series
 ```
 
 This output is returned:
 
-```output
+```Output
 0    1
 1    2
 2    3
@@ -137,7 +138,7 @@ Now, set an element of `int_series` equal to **None**.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
+
   ```Python
   int_series[1] = None
   int_series
@@ -152,14 +153,12 @@ Now, set an element of `int_series` equal to **None**.
 
 </details>
 
-
-
 In the process of upcasting data types to establish data homogeneity in Series and DataFrames, pandas will willingly switch missing values between **None** and **NaN**. Because of this design feature, it can be helpful to think of **None** and **NaN** as two different flavors of null in pandas. Indeed, some of the core methods you will use to deal with missing values in pandas reflect this idea in their names:
 
-* `isnull()`: Generates a Boolean mask that indicates missing values
-* `notnull()`: Opposite of `isnull()`
-* `dropna()`: Returns a filtered version of the data
-* `fillna()`: Returns a copy of the data with missing values filled or imputed
+- `isnull()`: Generates a Boolean mask that indicates missing values
+- `notnull()`: Opposite of `isnull()`
+- `dropna()`: Returns a filtered version of the data
+- `fillna()`: Returns a copy of the data with missing values filled or imputed
 
 These are important methods to master and get comfortable with, so let's go over them each in some depth.
 
@@ -167,17 +166,17 @@ These are important methods to master and get comfortable with, so let's go over
 
 Both `isnull()` and `notnull()` are your primary methods for detecting null data. Both return Boolean masks over your data.
 
-```python
+```Python
 example3 = pd.Series([0, np.nan, '', None])
 ```
 
-```python
+```Python
 example3.isnull()
 ```
 
 This output is returned:
 
-```output
+```Output
 0    False
 1     True
 2    False
@@ -217,14 +216,14 @@ Try running `example3[example3.notnull()]`. But before you do, what do you expec
 
 Beyond identifying missing values, pandas provides a convenient means to remove null values from `Series` and `DataFrames`. (Particularly on large datasets, it is often more advisable to simply remove missing [NA] values from your analysis than deal with them in other ways.) To see this in action, let's return to `example3`:
 
-```python
+```Python
 example3 = example3.dropna()
 example3
 ```
 
 Here's the output:
 
-```output
+```Output
 0    0
 2     
 dtype: object
@@ -236,7 +235,7 @@ Because DataFrames have two dimensions, they afford more options for dropping da
 
 Run this code in a cell:
 
-```python
+```Python
 example4 = pd.DataFrame([[1,      np.nan, 7], 
                          [2,      5,      8], 
                          [np.nan, 6,      9]])
@@ -245,7 +244,7 @@ example4
 
 Here's the output:
 
-```output
+```Output
 |   | 0   | 1   | 2 | 
 ---------------------
 | 0 | 1.0 | NaN | 7 |
@@ -257,13 +256,13 @@ Did you notice that pandas upcast two of the columns to floats to accommodate **
 
 You can't drop a single value from a DataFrame—you have to drop full rows or columns. Depending on what you are doing, you might want to do one or the other, so pandas gives you options for both. In data science, columns generally represent variables and rows represent observations, so you are more likely to drop rows of data; the default setting for `dropna()` is to drop all rows that contain any null values:
 
-```python
+```Python
 example4.dropna()
 ```
 
 This output is returned:
 
-```output
+```Output
 |   | 0   | 1   | 2 | 
 ---------------------
 | 1 | 2.0 | 5.0 | 8 |
@@ -271,13 +270,13 @@ This output is returned:
 
 If necessary, you can drop NA values from columns. Use axis=1 to do so:
 
-```python
+```Python
 example4.dropna(axis='columns')
 ```
 
 The output looks like this:
 
-```output
+```Output
 |   |  2 | 
 ----------
 | 0 |  7 |
@@ -291,14 +290,14 @@ By default, `how`=*any*. (If you would like to check for yourself or see what ot
 
 Run this code in a cell:
 
-```python
+```Python
 example4[3] = np.nan
 example4
 ```
 
 This output is returned:
 
-```output
+```Output
 |   | 0   | 1   | 2 | 3   |
 ---------------------------
 | 0 | 1.0 | NaN | 7 | NaN |
@@ -331,13 +330,13 @@ The `thresh` parameter gives you more fine-grained control: you set the number o
 
 Run this code in a cell:
 
-```python
+```Python
 example4.dropna(axis='rows', thresh=3)
 ```
 
 This output is returned:
 
-```output
+```Output
 |   | 0   | 1   | 2 | 3   |
 ---------------------------
 | 1 | 2.0 | 5.0 | 8 | NaN |
@@ -351,14 +350,14 @@ Depending on your dataset, sometimes it makes more sense to fill null values wit
 
 Run this code in a cell:
 
-```python
+```Python
 example5 = pd.Series([1, np.nan, 2, None, 3], index=list('abcde'))
 example5
 ```
 
 The output looks like this:
 
-```output
+```Output
 a    1.0
 b    NaN
 c    2.0
@@ -369,13 +368,13 @@ dtype: float64
 
 You can fill all the null entries with a single value, such as 0:
 
-```python
+```Python
 example5.fillna(0)
 ```
 
 You get this:
 
-```output
+```Output
 a    1.0
 b    0.0
 c    2.0
@@ -390,7 +389,7 @@ What happens if you try to fill null values with a string, like `''`?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
+
   ```Python
   example5.fillna('')
   ```
@@ -409,13 +408,13 @@ What happens if you try to fill null values with a string, like `''`?
 
 You can forward-fill null values, which is to use the last valid value to fill a null:
 
-```python
+```Python
 example5.fillna(method='ffill')
 ```
 
 The output looks like this:
 
-```output
+```Output
 a    1.0
 b    1.0
 c    2.0
@@ -426,13 +425,13 @@ dtype: float64
 
 You can also back-fill to propagate the next valid value backward to fill a null:
 
-```python
+```Python
 example5.fillna(method='bfill')
 ```
 
 This output is returned:
 
-```output
+```Output
 a    1.0
 b    2.0
 c    2.0
@@ -443,13 +442,13 @@ dtype: float64
 
 As you might guess, this works the same with DataFrames, but you can also specify an axis along which to fill null values:
 
-```python
+```Python
 example4
 ```
 
 The output looks like this:
 
-```output
+```Output
 |   | 0   | 1   | 2 | 3   |
 ---------------------------
 | 0 | 1.0 | NaN | 7 | NaN |
@@ -459,13 +458,13 @@ The output looks like this:
 
 To forward-fill null values in a DataFrame, run this code in a cell:
 
-```python
+```Python
 example4.fillna(method='ffill', axis=1)
 ```
 
 The output looks like this:
 
-```output
+```Output
 |   | 0   | 1   | 2   | 3   |
 -----------------------------
 | 0 | 1.0 | 1.0 | 7.0 | 7.0 |
@@ -481,8 +480,8 @@ What output does `example4.fillna(method='bfill', axis=1)` produce?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
-  ```output
+
+  ```Output
   |   | 0   | 1   | 2   | 3   |
   -----------------------------
   | 0 | 1.0 | 1.0 | 7.0 | NaN |
@@ -496,8 +495,8 @@ What about `example4.fillna(method='ffill')` and `example4.fillna(method='bfill'
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
-  ```output
+
+  ```Output
   |   | 0   | 1   | 2 | 3   |
   ---------------------------
   | 0 | 1.0 | NaN | 7 | NaN |
@@ -507,7 +506,7 @@ What about `example4.fillna(method='ffill')` and `example4.fillna(method='bfill'
 
   and
 
-  ```output
+  ```Output
   |   | 0   | 1   | 2 | 3   |
   ---------------------------
   | 0 | 1.0 | 5.0 | 7 | NaN |
@@ -521,7 +520,7 @@ Can you think of a longer code snippet to write that can fill all the null value
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
+
   ```Python
   example4.fillna(method='ffill', axis="columns").fillna(method='ffill')
   ```
@@ -540,13 +539,13 @@ You can be creative about how you use `fillna`. For example, let's look at `exam
 
 Run this code in a cell:
 
-```python
+```Python
 example4.fillna(example4.mean())
 ```
 
 The output looks like this:
 
-```output
+```Output
 |   | 0   | 1   | 2 | 3   |
 ---------------------------
 | 0 | 1.0 | 5.5 | 7 | NaN |
@@ -560,4 +559,3 @@ Notice that column 3 is still valueless: the default direction is to fill values
 > ### Takeaway
 >
 > There are multiple ways to deal with missing values in your datasets. The specific strategy you use—removing them, replacing them, or even how you replace them—should be dictated by the particulars of that data. You will develop a better sense of how to deal with missing values the more you handle and interact with datasets.
-

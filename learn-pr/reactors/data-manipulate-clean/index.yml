@@ -20,7 +20,6 @@ abstract:  |
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - Set up your environment
   - Introduction to Python for data science
   - Introduction to NumPy for data science
   - Introduction to Pandas for data science

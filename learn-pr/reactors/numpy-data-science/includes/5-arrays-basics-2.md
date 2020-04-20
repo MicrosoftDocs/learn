@@ -4,11 +4,11 @@ We continue with the basics of array manipulation in NumPy. Learn more about arr
 
 It's important to know that slicing produces *views* of array data, not *copies*. This is a **huge** difference between NumPy array slicing and Python list slicing. With Python lists, slices are only shallow copies of lists; if you modify a copy, it doesn't affect the parent list. When you modify a NumPy subarray, you modify the original list. Be careful: this can have ramifications when you are trying to just work with a small part of a large dataset and you don't want to change the whole thing. Let's look more closely.
 
-```python
+```Python
 print(a2)
 ```
 
-```output
+```Output
 [[12  5  2  4]
  [ 7  6  8  8]
  [ 1  6  7  7]]
@@ -16,35 +16,35 @@ print(a2)
 
 Extract a 2 x 2 subarray from `a2`:
 
-```python
+```Python
 a2_sub = a2[:2, :2]
 print(a2_sub)
 ```
 
-```output
+```Output
 [[12  5]
  [ 7  6]]
 ```
 
 Now modify this subarray:
 
-```python
+```Python
 a2_sub[0, 0] = 99
 print(a2_sub)
 ```
 
-```output
+```Output
 [[99  5]
  [ 7  6]]
 ```
 
 `a2` is now modified as well:
 
-```python
+```Python
 print(a2)
 ```
 
-```output
+```Output
 [[99  5  2  4]
  [ 7  6  8  8]
  [ 1  6  7  7]]
@@ -56,7 +56,7 @@ The fact that slicing produces views rather than copies is useful for data-scien
 
 Instead of just creating views, sometimes it is necessary to copy the data in one array to another. When you need to do this, use the `copy()` method:
 
-```python
+```Python
 a2_sub_copy = a2[:2, :2].copy()
 print(a2_sub_copy)
 ```
@@ -68,21 +68,21 @@ print(a2_sub_copy)
 
 If we now modify this subarray, the original array is not touched:
 
-```python
+```Python
 a2_sub_copy[0, 0] = 42
 print(a2_sub_copy)
 ```
 
-```output
+```Output
 [[42  5]
  [ 7  6]]
 ```
 
-```python
+```Python
 print(a2)
 ```
 
-```output
+```Output
 [[99  5  2  4]
  [ 7  6  8  8]
  [ 1  6  7  7]]
@@ -94,12 +94,12 @@ Another way in which you will need to manipulate arrays is by reshaping them. Th
 
 The most flexible way of doing this kind of manipulation is with the `reshape` method. For example, if you want to put the numbers 1 through 9 in a 3 x 3 grid, you can do the following:
 
-```python
+```Python
 grid = np.arange(1, 10).reshape((3, 3))
 print(grid)
 ```
 
-```output
+```Output
 [[1 2 3]
  [4 5 6]
  [7 8 9]]
@@ -109,32 +109,32 @@ Another common manipulation you will do in data science is converting one-dimens
 
 Row vector via reshape:
 
-```python
+```Python
 a = np.array([1, 2, 3])
 a.reshape((1, 3))
 ```
 
-```output
+```Output
 array([[1, 2, 3]])
 ```
 
 Row vector via newaxis:
 
-```python
+```Python
 a[np.newaxis, :]
 ```
 
-```output
+```Output
 array([[1, 2, 3]])
 ```
 
 Column vector via reshape:
 
-```python
+```Python
 a.reshape((3, 1))
 ```
 
-```output
+```Output
 array([[1],
        [2],
        [3]])
@@ -142,11 +142,11 @@ array([[1],
 
 Column vector via newaxis:
 
-```python
+```Python
 a[:, np.newaxis]
 ```
 
-```output
+```Output
 array([[1],
        [2],
        [3]])
@@ -166,48 +166,48 @@ To join arrays in NumPy, you will most often use `np.concatenate`, which is the
 
 `np.concatenate` takes a tuple or list of arrays as its first argument:
 
-```python
+```Python
 a = np.array([1, 2, 3])
 b = np.array([3, 2, 1])
 np.concatenate([a, b])
 ```
 
-```output
+```Output
 array([1, 2, 3, 3, 2, 1])
 ```
 
 You can also concatenate more than two arrays at once:
 
-```python
+```Python
 c = [99, 99, 99]
 print(np.concatenate([a, b, c]))
 ```
 
-```output
+```Output
 [ 1  2  3  3  2  1 99 99 99]
 ```
 
 `np.concatenate` can also be used for two-dimensional arrays:
 
-```python
+```Python
 grid = np.array([[1, 2, 3],
                  [4, 5, 6]])
 ```
 
 Concatenate along the first axis, which is the default:
 
-```python
+```Python
 np.concatenate([grid, grid])
 ```
 
-```output
+```Output
 array([[1, 2, 3],
        [4, 5, 6],
        [1, 2, 3],
        [4, 5, 6]])
 ```
 
-#### Try it yourself
+### Try it yourself
 
 Recall that axes are zero-indexed in NumPy.
 
@@ -217,11 +217,11 @@ What do you predict np.concatenate([grid, grid], axis=1) will produce?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```python
+  ```Python
   np.concatenate([grid, grid], axis=1)
   ```
   
-  ```output
+  ```Output
   array([[1, 2, 3, 1, 2, 3],
        [4, 5, 6, 4, 5, 6]])
   ```
@@ -236,26 +236,26 @@ In order to split arrays into multiple smaller arrays, you can use the functions
 
 Let's first examine the case of a one-dimensional array:
 
-```python
+```Python
 a = [1, 2, 3, 99, 99, 3, 2, 1]
 a1, a2, a3 = np.split(a, [3, 5])
 print(a1, a2, a3)
 ```
 
-```output
+```Output
 [1 2 3] [99 99] [3 2 1]
 ```
 
 Notice that *N* split-points produces to *N + 1* subarrays. In this case it has formed the subarray `a2` with `a[3]` and `a[4]` (the element just before position 5 [remember how Python indexing goes], the second input in the tuple) as elements. `a1` and `a3` pick up the leftover portions from the original array `a`.
 
-#### Try it yourself
+### Try it yourself
 
-```python
+```Python
 grid = np.arange(16).reshape((4, 4))
 grid
 ```
 
-```output
+```Output
 array([[ 0,  1,  2,  3],
        [ 4,  5,  6,  7],
        [ 8,  9, 10, 11],
@@ -270,22 +270,22 @@ What about `np.split(grid, [1, 2], axis=1)`?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```python
+  ```Python
   np.split(grid, [1, 2])
   ```
   
-  ```output
+  ```Output
   [array([[0, 1, 2, 3]]),
    array([[4, 5, 6, 7]]),
    array([[ 8,  9, 10, 11],
         [12, 13, 14, 15]])]
   ```
 
-  ```python
+  ```Python
   np.split(grid, [1, 2], axis=1)
   ```
   
-  ```output
+  ```Output
   [array([[ 0],
         [ 4],
         [ 8],
