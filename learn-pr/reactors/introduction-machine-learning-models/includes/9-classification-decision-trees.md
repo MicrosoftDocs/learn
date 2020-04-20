@@ -6,7 +6,7 @@
 > - Suggest moving the **Takeaway** at the end of the unit, to the list of Learning objectives
 >    in the Introduction unit or to the abstract summary in the module index.yml.
 > - Line 51: I added a plain text reference to another unit in this module.
->    It seems the <details><summary> properties won't support a link.
+>    It seems the \<details>\<summary> properties won't support a link.
 
 > [!Note]
 > **Sarah: Action items**
@@ -26,17 +26,17 @@ If logistic regression uses observations about variables to swing a metaphorical
 
 Let's look at this in practice with the same _Titanic_ dataset we used with logistic regression.
 
-```python
+```Python
 from sklearn import tree
 ```
 
-```python
+```Python
 tr = tree.DecisionTreeClassifier()
 ```
 
 The output is:
 
-```output
+```Output
 TBD
 ```
 
@@ -48,41 +48,43 @@ Using the same split data as with the logistic regression, can you fit the decis
 
   <summary>Hint: Refer to the code snippet for fitting the logistic regression in the unit "Logistic regression: Handle missing values".<i>(expand to reveal)</i></summary>
 
-  ```python
+  ```Python
   tr.fit(X_train, y_train)
   ```
 
-  ```output
-  tbd
+  ```Output
+  TBD
   ```
   
 </details>
 
+***
+
 After it's fitted, we get our predicitions just like we did in the logistic regression example above:
 
-```python
+```Python
 tr_predictions = tr.predict(X_test)
 ```
 
-```python
+```Python
 pd.DataFrame(confusion_matrix(y_test, tr_predictions), 
              columns=['True Survived', 'True Not Survived'], 
              index=['Predicted Survived', 'Predicted Not Survived'])
 ```
 
-```python
+```Python
 print(accuracy_score(y_test,tr_predictions))
 ```
 
 The output is:
 
-```output
+```Output
 TBD
 ```
 
 One of the great attractions of decision trees is that the models are readable by humans. Let's visualize to see it in action. (Note that the generated graphic can be quite large, so scroll to the right if the generated graphic just looks blank at first.)
 
-```python
+```Python
 import graphviz 
 
 dot_file = tree.export_graphviz(tr, out_file=None, 
@@ -95,7 +97,7 @@ graph
 
 The output is:
 
-```output
+```Output
 TBD
 ```
 

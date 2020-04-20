@@ -18,7 +18,7 @@
 
 Now, a moment of truth: let's see how our model does making predictions based on the test data:
 
-```python
+```Python
 predictions = reg.predict(X_test)
 
 predictions
@@ -26,7 +26,7 @@ predictions
 
 Our predictions are just an array of numbers:
 
-```output
+```Output
 array([ 614607.96220733, 1849444.80372637, 1118945.0888425 , ...,
         834789.0342857 , 1787928.10906922, 1455422.23696486])
 ```
@@ -35,13 +35,13 @@ These are the house prices predicted by our model. One for every row in our test
 
 Remember how we mentioned that linear models have the mathematical form of $Y = B_0 + B_1 \times X + E$? Let’s look at the actual equation:
 
-```python
+```Python
 print(reg.intercept_,reg.coef_)
 ```
 
 The output is:
 
-```output
+```Output
 -2646401.726324682 [2.15873958e+01 1.65828187e+05 1.21323502e+05 2.79025671e+03
  1.51667244e+01]
 ```
@@ -61,7 +61,7 @@ Where:
 
 So, just how good is our model? There are many ways to measure the accuracy of ML models. Linear models have a good one: the $R^2$ score (also knows as the coefficient of determination). A high $R^2$, close to 1, indicates better prediction with less error.
 
-```python
+```Python
 #Explained variation. A high R2 close to 1 indicates better prediction with less error.
 from sklearn.metrics import r2_score
 
@@ -70,7 +70,7 @@ r2_score(y_test,predictions)
 
 The output is:
 
-```output
+```Output
 0.921660486570713
 ```
 
@@ -78,21 +78,21 @@ The $R^2$ score also indicates how much explanatory power a linear model has. In
 
 We can also plot our errors to get a visual sense of how wrong our predictions were:
 
-```python
+```Python
 #plot errors
 sns.distplot([y_test-predictions])
 ```
 
 If the `disttplot` command produces a deprecation warning, you can disregard the message:
 
-```output
+```Output
 /home/nbuser/anaconda3_420/lib/python3.5/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
   return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
 ```
 
 Here is the plot graph output:
 
-```output
+```Output
 <matplotlib.axes._subplots.AxesSubplot at 0x7f58fadeaf60>
 ```
 
@@ -102,7 +102,7 @@ Do you notice the numbers on the left axis? Whereas a histogram shows the number
 
 Maybe more gratifying, we can plot the predictions from our model:
 
-```python
+```Python
 # Plot outputs
 plt.scatter(y_test,predictions, color='blue')
 ```
@@ -115,15 +115,17 @@ The linear nature of our predicted prices is clear enough, but there are so many
 
   <summary>Remember to try the <i>plt.scatter</i> parameter <i>alpha=</i>. It takes values between 0 and 1. <i>(expand to reveal)</i></summary>
 
-  ```python
+  ```Python
   TBD
   ```
 
-  ```output
+  ```Output
   TBD
   ```
   
 </details>
+
+***
 
 > [!div class="alert is-tip"]
 > ### Takeaway

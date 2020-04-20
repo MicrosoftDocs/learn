@@ -19,13 +19,13 @@ In contrast to linear regression, logistic regression does not produce an $R^2$ 
 
 The classification reports the proportions of both survivors and non-survivors.
 
-```python
+```Python
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
@@ -38,13 +38,13 @@ The classification reports the proportions with four scores:
 
 Why so many ways of measuring accuracy for a model? Well, success means different things in different contexts. Imagine that we had a model to diagnose infectious disease. In such a case we might want to tune our model to maximize recall (and thus minimize our false-negative rate): even high precision might miss a lot of infected people. On the other hand, a weather-forecasting model might be interested in maximizing precision because the cost of false negatives is so low. For other uses, striking a balance between precision and recall by maximizing the F1 score might be the best choice. Run the classification report:
 
-```python
+```Python
 print(classification_report(y_test,predictions))
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
@@ -52,25 +52,25 @@ TBD
 
 The confusion matrix is another way to present this same information, this time with raw scores. The columns show the true condition, positive on the left, negative on the right. The rows show predicted conditions, positive on the top, negative on the bottom. So, the matrix below shows that our model correctly predicted 146 survivors (true positives) and incorrectly predicted another 16 (false positives). On the other hand, our model correctly predicted 30 non-survivors (true negatives) and incorrectly predicted 76 more (false negatives).
 
-```python
+```Python
 print(confusion_matrix(y_test,predictions))
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
 Let's dress up the confusion matrix a bit to make it a little easier to read:
 
-```python
+```Python
 pd.DataFrame(confusion_matrix(y_test, predictions), columns=['True Survived', 'True Not Survived'], index=['Predicted Survived', 'Predicted Not Survived'])
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
@@ -78,13 +78,13 @@ TBD
 
 Finally, our accuracy score tells us the fraction of correctly classified samples; in this case $(146 + 76) / (146 + 76 + 30 + 16)$.
 
-```python
+```Python
 print(accuracy_score(y_test,predictions))
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 

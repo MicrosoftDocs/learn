@@ -1,4 +1,5 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
+
 > [!Note]
 > **Sarah: Conversion feedback**
 > 
@@ -40,14 +41,14 @@ The dataset has 12 variables:
 - **Cabin**: Cabin number
 - **Embarked**: Port of embarkation; C = Cherbourg, Q = Queenstown, S = Southampton
 
-```python
+```Python
 df = pd.read_csv('./Data/train_data_titanic.csv')
 df.head()
 ```
 
 The output table looks like this:
 
-```output
+```Output
 ---------------------------------------------------------------------------------------------------------------------------------------
 |   | PassengerId | Survived | Pclass | Name                 | Gender | Age  | SibSp | Parch | Ticket    | Fare    | Cabin | Embarked | 
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -72,13 +73,13 @@ The output table looks like this:
 
 Let's look at the `DataFrame` information for that dataset:
 
-```python
+```Python
 df.info()
 ```
 
 Here's what the output looks like:
 
-```output
+```Output
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 891 entries, 0 to 890
 Data columns (total 12 columns):
@@ -110,7 +111,7 @@ We will touch on each of these steps in turn.
 
 The name of individual passengers and their ticket numbers will clearly do nothing to help our model, so we can drop those columns to simplify matters.
 
-```python
+```Python
 df.drop(['Name','Ticket'],axis=1,inplace=True)
 ```
 
@@ -122,13 +123,13 @@ If one or more of our predictors can themselves be predicted from other predicto
 
 To help combat this problem, we can start to look for some initial patterns. For example, do any correlations between **Survived** and **Fare** jump out?
 
-```python
+```Python
 sns.pairplot(df[['Survived','Fare']], dropna=True)
 ```
 
 The pair plot output for data in the columns **Survived** and **Fare**:
 
-```output
+```Output
 <seaborn.axisgrid.PairGrid at 0x7f58facc2f28>
 ```
 
@@ -142,25 +143,27 @@ Try running `sns.pairplot` twice more on some other combinations of columns and 
 
   <summary>Hint - TBD<i>(expand to reveal)</i></summary>
 
-  ```python
+  ```Python
   TBD
   ```
 
-  ```output
+  ```Output
   TBD
   ```
   
 </details>
 
+***
+
 We can also use `groupby` to look for patterns. Consider the mean values for the various variables when we group by **Survived**:
 
-```python
+```Python
 df.groupby('Survived').mean()
 ```
 
 Here's the `groupby` output for the **Survived** data:
 
-```output
+```Output
 -----------------------------------------------------------------------------------
 |          | PassengerId | Pclass   | Age       | SibSp    | Parch    | Fare      |
 -----------------------------------------------------------------------------------
@@ -172,13 +175,13 @@ Here's the `groupby` output for the **Survived** data:
 -----------------------------------------------------------------------------------
 ```
 
-```python
+```Python
 df.groupby('Age').mean()
 ```
 
 Here's the `groupby` output for the **Age** data:
 
-```output
+```Output
 --------------------------------------------------------------------------------
 |       | PassengerId | Survived |  Pclass  | SibSp    | Parch    | Fare       |
 --------------------------------------------------------------------------------
@@ -251,13 +254,13 @@ Here's the `groupby` output for the **Age** data:
 
 Survivors appear to be slightly younger on average with higher-cost fare.
 
-```python
+```Python
 df.head()
 ```
 
 Here's the output:
 
-```output
+```Output
 ----------------------------------------------------------------------------------------------------
 |   | PassengerId | Survived | Pclass | Gender | Age  | SibSp | Parch | Fare    | Cabin | Embarked | 
 ----------------------------------------------------------------------------------------------------
@@ -275,32 +278,32 @@ Here's the output:
 
 Value counts can also help us get a sense of the data before us, such as numbers for siblings and spouses on the _Titanic_, in addition to the gender split of passengers:
 
-```python
+```Python
 df['SibSp'].value_counts()
 ```
 
 The value counts output for the **SibSp** column data (passenger had a sibling or spouse on board) is:
 
-```output
+```Output
 TBD
 ```
 
-```python
+```Python
 df['Parch'].value_counts()
 ```
 
 The value counts output for the **Parch** column data (passenger had a parent or child on board) is:
 
-```output
+```Output
 TBD
 ```
 
-```python
+```Python
 df['Gender'].value_counts()
 ```
 
 The value counts output for the **Gender** column data is:
 
-```output
+```Output
 TBD
 ```

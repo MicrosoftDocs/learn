@@ -13,7 +13,7 @@
 
 We'll begin by importing our usual libraries and using our `%matplotlib` inline magic command:
 
-```python
+```Python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -23,20 +23,20 @@ import seaborn as sns
 
 The `%matplotlib` command produces an message while building the font cache:
 
-```output
+```Output
 /home/nbuser/anaconda3_420/lib/python3.5/site-packages/matplotlib/font_manager.py:281: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment. 'Matplotlib is building the font cache using fc-list.'
 ```
 
 And now for our data. In this case, we’ll use a newer housing dataset than the Boston Housing Dataset we used in the last section (with this one storing data on individual houses across the United States).
 
-```python
+```Python
 df = pd.read_csv('./Data/Housing_Dataset_Sample.csv')
 df.head()
 ```
 
 The output table looks like this:
 
-```output
+```Output
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 |    |  Avg. area     |  Avg. area  |  Avg. area  |  Avg. area #  |  Area          |                |                                                    |
 |    |  income        |  house age  |  # of rooms |  of bedrooms  |  population    |  Price         |  Address                                           |
@@ -61,25 +61,27 @@ Do you remember the `DataFrames` method for looking at overall information about
 
   <summary>Hint - TBD <i>(expand to reveal)</i></summary>
 
-  ```python
+  ```Python
   TBD
   ```
 
-  ```output
+  ```Output
   TBD
   ```
   
 </details>
 
+***
+
 Let's also use the `describe` method to look at some of the vital statistics about the columns. Note that in cases like this, in which some of the column names are long, it can be helpful to view the transposition of the summary, like so:
 
-```python
+```Python
 df.describe().T
 ```
 
 Here's a version of the output table where the rows and columns are transposed:
 
-```output
+```Output
 --------------------------------------------------------------------------------------------------------------------------------------------------
 |             |  count    |  mean          |  std           |  min           |  25%           |  50%           |  75%           |  max           |
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -105,20 +107,20 @@ Here's a version of the output table where the rows and columns are transposed:
 
 Let's look at the data in the **Price** column:
 
-```python
+```Python
 sns.distplot(df['Price'])
 ```
 
 If the `distplot` command produces a deprecation warning, you can disregard the message:
 
-```output
+```Output
 /home/nbuser/anaconda3_420/lib/python3.5/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
   return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
 ```
 
 As we would hope with this much data, our prices form a nice bell-shaped, normally distributed curve:
 
-```output
+```Output
 <matplotlib.axes._subplots.AxesSubplot at 0x7f58fd3f7dd8>
 ```
 
@@ -126,20 +128,20 @@ As we would hope with this much data, our prices form a nice bell-shaped, normal
 
 Now, let's look at a simple relationship like that between house prices and the average income in a geographic area:
 
-```python
+```Python
 sns.jointplot(df['Avg. Area Income'],df['Price'])
 ```
 
 If the `jointplot` command produces a deprecation warning, you can disregard the message:
 
-```output
+```Output
 /home/nbuser/anaconda3_420/lib/python3.5/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
   return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
 ```
 
 As we would expect, there is an intuitive, linear relationship between them:
 
-```output
+```Output
 <seaborn.axisgrid.JointGrid at 0x7f58fcf839e8>
 ```
 
@@ -149,11 +151,11 @@ Also good: the pairplot shows that the data in both columns is normally distribu
 
 Let's take a quick look at all of the columns:
 
-```python
+```Python
 sns.pairplot(df)
 ```
 
-```output
+```Output
 <seaborn.axisgrid.PairGrid at 0x7f5902189c88>
 ```
 

@@ -14,14 +14,14 @@
 
 Now we need to address missing values. First, let’s look to see which columns have more than half of their values missing:
 
-```python
+```Python
 # Missing values
 df.isnull().sum()>(len(df)/2)
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
@@ -29,13 +29,13 @@ Let's break down the code in the call above just a bit. `df.isnull().sum()` tell
 
 We could try to do something about those missing values. However, if any pattern does emerge in the data that involves **Cabin**, it will be highly cross-correlated with both **Pclass** and **Fare** (as higher-fare, better-class accommodations were grouped together on the _Titanic_). Given that too much cross-correlation can be detrimental to a model, it is probably just better for us to drop **Cabin** from our `DataFrame`:
 
-```python
+```Python
 df.drop('Cabin',axis=1,inplace=True)
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
@@ -45,49 +45,49 @@ One note on the data: given that 1,503 died in the _Titanic_ tragedy (and that w
 
 Back to missing values. **Age** is missing several values, as is **Embarked**. Let's see how many values are missing from **Age**:
 
-```python
+```Python
 df['Age'].isnull().value_counts()
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
 As we saw above, **Age** isn't really correlated with **Fare**, so it is a variable that we want to eventually use in our model. That means that we need to do something with those missing values. But we before we decide on a strategy, we should check to see if our median age is the same for both genders.
 
-```python
+```Python
 df.groupby('Gender')['Age'].median().plot(kind='bar')
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
 The median ages are different for men and women sailing on the _Titanic_, which means that we should handle the missing values accordingly. A sound strategy is to replace the missing ages for passengers with the median age _for the genders for each passenger_.
 
-```python
+```Python
 df['Age'] = df.groupby('Gender')['Age'].apply(lambda x: x.fillna(x.median()))
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
 Any other missing values?
 
-```python
+```Python
 df.isnull().sum()
 ```
 
 The output is: 
 
-```output
+```Output
 PassengerId      0
 Survived         0
 Pclass           0
@@ -103,13 +103,13 @@ dtype: int64
 
 We are missing two values for **Embarked**. Check to see how that variable breaks down:
 
-```python
+```Python
 df['Embarked'].value_counts()
 ```
 
 The output is: 
 
-```output
+```Output
 S    644
 C    168
 Q     77
@@ -118,63 +118,63 @@ Name: Embarked, dtype: int64
 
 The vast majority of passengers embarked on the _Titanic_ from Southampton, so we will just fill in those two missing values with the most statistically likely value (the median result): Southampton.
 
-```python
+```Python
 df['Embarked'].fillna(df['Embarked'].value_counts().idxmax(), inplace=True)
 df['Embarked'].value_counts()
 ```
 
 The output is: 
 
-```output
+```Output
 S    646
 C    168
 Q     77
 Name: Embarked, dtype: int64
 ```
 
-```python
+```Python
 df = pd.get_dummies(data=df, columns=['Gender', 'Embarked'],drop_first=True)
 df.head()
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
 Let's do a final look at the correlation matrix to see if there is anything else we should remove.
 
-```python
+```Python
 df.corr()
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
 **Pclass** and **Fare** have some amount of correlation, we can probably get rid of one of them. In addition, we need to remove **Survived** from our **X** `DataFrame` because it will be our response `DataFrame`, **Y**:
 
-```python
+```Python
 X = df.drop(['Survived','Pclass'],axis=1)
 y = df['Survived']
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
-```python
+```Python
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3,random_state=67)
 ```
 
 The output is: 
 
-```output
+```Output
 TBD
 ```
 
@@ -182,7 +182,7 @@ TBD
 
 Now we need to split the training and test data, which you'll do as an exercise.
 
-```python
+```Python
 from sklearn.model_selection import train_test_split
 ```
 
@@ -196,41 +196,47 @@ Now you will import and fit the logistic regression model.
 
   <summary>Hint - TBD <i>(expand to reveal)</i></summary>
 
-  ```python
+  ```Python
   from sklearn.linear_model import LogisticRegression
 
   lr = LogisticRegression()
   ```
 
-  ```output
+  ```Output
   TBD
   ```
 
 </details>
 
+***
+
 <details> 
 
   <summary>Hint - TBD <i>(expand to reveal)</i></summary>
 
-  ```python
+  ```Python
   lr.fit(X_train,y_train)
   ```
 
-  ```output
+  ```Output
   TBD
   ```
 
 </details>
 
+***
+
 <details> 
   <summary>Hint - TBD <i>(expand to reveal)</i></summary>
 
-  ```python
+  ```Python
   predictions = lr.predict(X_test)
   ```
 
-  ```output
-  tbd
+  ```Output
+  TBD
   ```
   
 </details>
+
+***
