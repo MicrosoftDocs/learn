@@ -113,7 +113,7 @@ The linear nature of our predicted prices is clear enough, but there are so many
 
 <details> 
 
-  <summary>Remember to try the `plt.scatter` parameter `alpha=`. It takes values between 0 and 1. <i>(expand to reveal)</i></summary>
+  <summary>Remember to try the <i>plt.scatter</i> parameter <i>alpha=</i>. It takes values between 0 and 1. <i>(expand to reveal)</i></summary>
 
   ```python
   TBD
