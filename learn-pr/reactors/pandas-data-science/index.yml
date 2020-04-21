@@ -23,7 +23,7 @@ prerequisites: |
   - Introduction to Python for data science
   - Introduction to NumPy for data science
 # placeholder icon
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/reactors/pandas-data-science.svg
 levels:
 - beginner
 roles:

@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Set up your environment
 # placeholder icon
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/reactors/python-data-science.svg
 levels:
 - beginner
 roles:
