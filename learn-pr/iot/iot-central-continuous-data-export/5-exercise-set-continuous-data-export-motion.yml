@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.continuous-data-export-from-iot-central.exercise-set-continuous-data-export-in-motion
 metadata:
-  description: Create a blob storage resource. Then add the data export feature to your IoT Central app.
-  ms.date: 5/1/2020
+  description: Create blob storage. Then add the data export feature to your IoT Central app.
+  ms.date: 6/1/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial

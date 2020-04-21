@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.continuous-data-export-from-iot-central.set-continuous-data-export-in-motion
 metadata:
-  description: Describes the requirements and features of the data export feature of IoT Central.
-  ms.date: 5/1/2020
+  description: Describes the requirements and features of data export from IoT Central.
+  ms.date: 6/1/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial

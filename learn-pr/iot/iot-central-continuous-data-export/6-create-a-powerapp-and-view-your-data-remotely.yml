@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.continuous-data-export-from-iot-central.create-a-powerapp-and-view-your-data-remotely
+metadata:
+  description: Learn how to use a portal to create a PowerApp, and how to direct your telemetry data to the app, for a remote view of the data.
+  ms.date: 6/1/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: vs-vscode-language
+title:  Exercise - set continuous data export in motion
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-create-a-powerapp-and-view-your-data-remotely.md)]

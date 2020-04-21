@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.continuous-data-export-from-iot-central.create-device-app-project
 metadata:
-  description: Create the programming project to simulate the real device. Use Visual Studio, or Visual Studio Code as the development environment. Use C# or Node.js as the programming language. Finally, set the device app running, and watch the telemetry and dashboard.
-  ms.date: 5/1/2020
+  description: Create the programming project to simulate an IoT device in a refrigerated truck. Use Visual Studio, or Visual Studio Code as the development environment. Use C# or Node.js as the programming language. Finally, set the device app running, and watch the telemetry and dashboard.
+  ms.date: 6/1/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial

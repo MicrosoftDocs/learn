@@ -2,7 +2,7 @@
 uid: learn.iot.continuous-data-export-from-iot-central.summary
 metadata:
   description: Summary
-  ms.date: 5/1/2020
+  ms.date: 6/1/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
@@ -10,7 +10,7 @@ metadata:
 title: Summary
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/8-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
