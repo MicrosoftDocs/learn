@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.node-intro
+metadata:
+  title: Introduction to 
+  description: Learn how to 
+  ms.date: 06/04/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to 
+summary: Learn how to 
+abstract: |
+  In this module you will:
+  - Learn about X
+iconUrl: /learn/achievements/node-intro.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- vs
+prerequisites: None
+units:
+- learn.node-intro.1-introduction
+- learn.node-intro.2-install-node
+- learn.node-intro.3-exercise-install-node
+- learn.node-intro.4-repl
+- learn.node-intro.5-exercise-repl
+- learn.node-intro.6-dependencies
+- learn.node-intro.7-exercise-dependencies
+- learn.node-intro.8-local-global
+- learn.node-intro.9-install-uninstall
+- learn.node-intro.10-updating
+- learn.node-intro.11-package-json
+- learn.node-intro.12-exercise-package-json
+- learn.node-intro.13-knowledge-check
+- learn.node-intro.14-summary
+
+badge:
+  uid: learn.node-intro.badge

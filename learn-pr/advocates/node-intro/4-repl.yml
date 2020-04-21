@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.node-intro.4-repl
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-repl.md)]
