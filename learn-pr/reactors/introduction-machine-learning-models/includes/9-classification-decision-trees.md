@@ -1,35 +1,109 @@
-TEXT
-
 > [!Note]
 > **Sarah: Conversion feedback**
 > 
-> The environment set up content is the first module in this learning path and it's extremely short--one unit topic.
-> Suggest moving the setup content into this unit topic, or making it the next unit topic in this module.
-> Then, duplicate the set up content in the same topic location in all modules in the learning path.
->
-
+> - Suggest moving the **Learning goal** to the list of Learning objectives
+>    in the Introduction unit or to the abstract summary in the module index.yml.
+> - Suggest moving the **Takeaway** at the end of the unit, to the list of Learning objectives
+>    in the Introduction unit or to the abstract summary in the module index.yml.
+> - Line 51: I added a plain text reference to another unit in this module.
+>    It seems the \<details>\<summary> properties won't support a link.
 
 > [!Note]
 > **Sarah: Action items**
 > 
-> - Use the code style for comment that appear on a separate line and not with other syntax?
-> We might format these instances as plain text or another style.
+> - Try it yourself block needs Input and Output code, and Hint text. Search on TBD.
+> - Missing some output cell content. Search on TBD.
 >
+
+> [!div class="alert is-tip"]
+> ### Learning goal
+>
+> By the end of this subsection, you should be comfortable fitting decision-tree models and have some understanding of what they output.
+
+If logistic regression uses observations about variables to swing a metaphorical needle between 0 and 1, classification based on decision trees programmatically builds a Yes/No decision to classify items.
+
+:::image type="content" alt-text="A decision tree graph." source="../media/decision-tree.png" loc-scope="azure":::
+
+Let's look at this in practice with the same _Titanic_ dataset we used with logistic regression.
+
+```Python
+from sklearn import tree
+```
+
+```Python
+tr = tree.DecisionTreeClassifier()
+```
+
+The output is:
+
+```Output
+TBD
+```
 
 ### Try it yourself
 
-TEXT
+Using the same split data as with the logistic regression, can you fit the decision tree model?
 
 <details> 
 
-  <summary>Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint: Refer to the code snippet for fitting the logistic regression in the unit "Logistic regression: Handle missing values".<i>(expand to reveal)</i></summary>
 
   ```Python
-  tbd
+  tr.fit(X_train, y_train)
   ```
 
   ```Output
-  tbd
+  TBD
   ```
   
 </details>
+
+***
+
+After it's fitted, we get our predicitions just like we did in the logistic regression example above:
+
+```Python
+tr_predictions = tr.predict(X_test)
+```
+
+```Python
+pd.DataFrame(confusion_matrix(y_test, tr_predictions), 
+             columns=['True Survived', 'True Not Survived'], 
+             index=['Predicted Survived', 'Predicted Not Survived'])
+```
+
+```Python
+print(accuracy_score(y_test,tr_predictions))
+```
+
+The output is:
+
+```Output
+TBD
+```
+
+One of the great attractions of decision trees is that the models are readable by humans. Let's visualize to see it in action. (Note that the generated graphic can be quite large, so scroll to the right if the generated graphic just looks blank at first.)
+
+```Python
+import graphviz 
+
+dot_file = tree.export_graphviz(tr, out_file=None, 
+                                feature_names=X.columns, 
+                                class_names='Survived',  
+                                filled=True,rounded=True)  
+graph = graphviz.Source(dot_file)  
+graph
+```
+
+The output is:
+
+```Output
+TBD
+```
+
+There are, of course, myriad other ML models that we could explore. However, you now know some of the most commonly encountered ones, which is great preparation to understand what automated, cloud-based ML and AI services are doing and how to intelligently apply them to data-science problems, the subject of the next section.
+
+> [!div class="alert is-tip"]
+> ### Takeaway
+>
+> In this unit, you performed classification on previously cleaned data by fitting and evaluating a decision tree.
