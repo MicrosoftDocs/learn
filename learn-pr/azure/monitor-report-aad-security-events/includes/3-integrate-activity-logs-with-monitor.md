@@ -136,7 +136,7 @@ Other common filter commands include:
 | Where *field* (expression) *value* | This is the principal filtering command.  You nominate the field, expression, and comparator value.  You can stack multiple where commands, each separated by a pipe. | AuditLogs \| where CreatedDataTime >= ago(2d)                |
 | project *fields*                   | If you want to restrict the result set to display only nominated fields or columns, you can use the project command with a comma-separated list of the fields. | AuditLogs \| project timeGenerated, OperationName, ResourceGroup, Result |
 
-You can use many other commands to build your queries. Check the Microsoft Docs pages for more information about the query commands you can use to filter your data.
+You can use many other commands to build your queries. You can find out more information about the query commands you can use to filter your data at the links provided at the end of this module.
 
 #### An example sign-in query
 

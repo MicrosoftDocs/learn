@@ -59,8 +59,6 @@ The default table columns are:
 
 As with all reporting in Azure, you can modify the structure by adding and removing columns, as necessary. To change the columns, select **Columns**.
 
-![Screenshot of the Columns button.](../media/2-sign-in-change-columns.png)
-
 In the **Columns** pane, you can add or remove the columns you need. In addition to the default columns, you have the following options:
 
 - Request ID
@@ -113,7 +111,7 @@ When you select any sign-in record in the results list, you'll see a snapshot of
 
 ![Screenshot of a sign-in failure details panel with the error code and failure reason highlighted.](../media/2-sign-in-failure-codes.png)
 
-You'll find a complete list of error codes on the Microsoft Docs website.  A few example error codes and their official descriptions are listed in the following table:
+You'll find a complete list of error codes at the URL provided in the summary unit of this module. A few example error codes and their official descriptions are listed in the following table:
 
 | Error | Description                                                  |
 | :---- | :----------------------------------------------------------- |
