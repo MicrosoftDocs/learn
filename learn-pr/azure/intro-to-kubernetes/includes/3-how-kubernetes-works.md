@@ -24,7 +24,13 @@ The Kubernetes master node, also known as the control plane in a Kubernetes clus
 
 The fact that a master node runs specific software to maintain the state of the cluster doesn't exclude the master node from running other compute workloads. However, you usually want to make sure to exclude the master from running noncritical and user application workloads.
 
-### Services that run in a control plane
+### The Kubernetes node
+
+A node in a Kubernetes cluster is where your compute workloads run. Each node communicates with the control plane via the API server to inform it about state changes on the node.
+
+## Services that run in a control plane
+
+:::image type="content" source="../media/3-cluster-arch-master.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
 
 The following services make up the control plane in a Kubernetes cluster.
 
@@ -34,7 +40,7 @@ The following services make up the control plane in a Kubernetes cluster.
 - The controller manager
 - The cloud controller manager
 
-#### What is the API server?
+### What is the API server?
 
 We can think of the API server as the front end to the control plane in your Kubernetes cluster. All the communication done between the components in Kubernetes is through this API. For example, as a user, you use a command-line application called `kubectl` that allows you to execute commands against your Kubernetes cluster's API server. The component that provides this API is called the `kube-apiserver`, and you can deploy several instances of this component to support scaling in your cluster.
 
@@ -42,7 +48,7 @@ This API exposes a RESTful API that allows you to post commands or YAML-based co
 
 For example, assume you want to increase the number of instances of your application in the cluster. You'll define the new state using a YAML-based file and submit this file to the API server. The API server will validate the configuration, save the configuration to the cluster, and finally action the configured increase in application deployments.
 
-#### What is the backing store?
+### What is the backing store?
 
 The backing store is a persistence store your Kubernetes cluster uses to store the complete configuration of a Kubernetes cluster. Kubernetes uses a high-availability distributed reliable key-value store called, `etcd`. This key-value store stores the current state as well as the desired state of all objects within your cluster.
 
@@ -50,11 +56,11 @@ Keep in mind that `etcd` isn't responsible for data backup, and it's your respon
 
 In a production Kubernetes cluster, the official Kubernetes guidance is to have three to five replicated instances of the `etcd` database for high-availability.
 
-#### What is the Scheduler?
+### What is the Scheduler?
 
 The Scheduler is the component that is responsible for the assignment of workloads across all nodes. The Scheduler monitors the cluster for newly created containers and assigns them to nodes.
 
-#### What is the controller manager?
+### What is the controller manager?
 
 The controller manager is responsible for launching and monitoring the controllers configured for a cluster through the API server.
 
@@ -68,33 +74,32 @@ Let's assume one of three containers running in your cluster stops responding an
 
 The cloud controller manager's function is to integrate with the underlying cloud technologies in your cluster when the cluster is running in a cloud environment such as Azure or one of the other cloud providers. These services can be load-balancers, queues, storage, and so on.
 
-### The Kubernetes node
 
-A node in a Kubernetes cluster is where your compute workloads run. Each node communicates with the control plane via the API server to inform it about state changes on the node.
+## Services that run in a node
 
-### Services that run in a node
+:::image type="content" source="../media/3-cluster-arch-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
 
 The following services make up a node in a Kubernetes cluster.
 
 - kubelet
-- Container Runtime
 - kube-proxy
+- Container Runtime
 
-#### What is kubelet?
+### What is kubelet?
 
 kubelet is the agent that runs on each node in the cluster and monitors work requests from the API server and makes sure that the requested unit of work is running and healthy.
 
 kubelet is responsible for monitoring the nodes and making sure that the containers scheduled on each node run as expected. kubelete only manages containers created by Kubernetes and isn't responsible for rescheduling work to run on other nodes if the current node can't run the work.
 
-#### What is the Container runtime?
+### What is kube-proxy?
+
+Kube-proxy is responsible for local cluster networking and runs on each node. It's kube-proxy's responsibility to make sure that each node has a unique IP address. Kube-proxy also implements rules to handle routing and load-balancing of traffic using IPTABLES and IPVS. Kube-proxy doesn't provide DNS services by itself. A DNS cluster add-on based on coreDNS is recommended and installed by default.
+
+### What is the Container runtime?
 
 The Container Runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, rkt, CRI-O, containerd, and frakti. The support for many container runtime types is based on the Container Runtime Interface (CRI). The CRI is a plugin design that provides a container runtime interface and allows Kubelet to communicate with the available container runtime.
 
 The default container runtime in Azure Kubernetes Service (AKS) is Docker. However, you may also use kata-containers and containerd. Keep in mind that the Windows support for containerd is experimental.
-
-#### What is kube-proxy?
-
-Kube-proxy is responsible for local cluster networking and runs on each node. It's kube-proxy's responsibility to make sure that each node has a unique IP address. Kube-proxy also implements rules to handle routing and load-balancing of traffic using IPTABLES and IPVS. Kube-proxy doesn't provide DNS services by itself. A DNS cluster add-on based on coreDNS is recommended and installed by default.
 
 ## How to interact with a Kubernetes cluster
 
