@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-configure-azure-iot-hub-event-subscription
+uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-configure-iot-hub-event-subscription
 title: Exercise - Configure Azure IoT Hub Event Subscription
 metadata:
   title: Exercise - Configure Azure IoT Hub Event Subscription
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: True
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-configure-azure-iot-hub-event-subscription.md)]
+  [!include[](includes/6-exercise-configure-iot-hub-event-subscription.md)]
