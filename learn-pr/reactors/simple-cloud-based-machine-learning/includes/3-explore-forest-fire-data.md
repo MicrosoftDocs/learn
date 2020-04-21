@@ -49,8 +49,8 @@ Intuitively, the hotter the weather, the more hectares burned in forest fires.
 ***
 ### References
 
-1. _Cortez, P., and Morais, A. (2007). [A Data Mining Approach to Predict Forest Fires using Meteorological Data - PDF](https://www.researchgate.net/publication/238767143_A_Data_Mining_Approach_to_Predict_Forest_Fires_using_Meteorological_Data). In J. Neves, M. F. Santos and J. Machado Eds., New Trends in Artificial Intelligence, Proceedings of the 13th EPIA 2007 - Portuguese Conference on Artificial Intelligence, December, Guimaraes, Portugal, pp. 512-523, 2007. APPIA, ISBN-13 978-989-95618-0-9._
+1. _Cortez, P., and Morais, A. (2007). [A Data Mining Approach to Predict Forest Fires using Meteorological Data - PDF](https://www.researchgate.net/publication/238767143_A_Data_Mining_Approach_to_Predict_Forest_Fires_using_Meteorological_Data?azure-portal=true). In J. Neves, M. F. Santos and J. Machado Eds., New Trends in Artificial Intelligence, Proceedings of the 13th EPIA 2007 - Portuguese Conference on Artificial Intelligence, December, Guimaraes, Portugal, pp. 512-523, 2007. APPIA, ISBN-13 978-989-95618-0-9._
 
 ***
 
-[^1]: <https://www.researchgate.net/publication/238767143_A_Data_Mining_Approach_to_Predict_Forest_Fires_using_Meteorological_Data> "Cortez, P., and Morais, A. (2007). *A Data Mining Approach to Predict Forest Fires using Meteorological Data - PDF*. In J. Neves, M. F. Santos and J. Machado Eds., New Trends in Artificial Intelligence, Proceedings of the 13th EPIA 2007 - Portuguese Conference on Artificial Intelligence, December, Guimaraes, Portugal, pp. 512-523, 2007. APPIA, ISBN-13 978-989-95618-0-9."
+[^1]: <https://www.researchgate.net/publication/238767143_A_Data_Mining_Approach_to_Predict_Forest_Fires_using_Meteorological_Data?azure-portal=true> "Cortez, P., and Morais, A. (2007). *A Data Mining Approach to Predict Forest Fires using Meteorological Data - PDF*. In J. Neves, M. F. Santos and J. Machado Eds., New Trends in Artificial Intelligence, Proceedings of the 13th EPIA 2007 - Portuguese Conference on Artificial Intelligence, December, Guimaraes, Portugal, pp. 512-523, 2007. APPIA, ISBN-13 978-989-95618-0-9."

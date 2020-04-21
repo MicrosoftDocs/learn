@@ -4,7 +4,7 @@
 > - Need output cell content. Search on TBD.
 >
 
-This is the important part. After your model is deployed as a web service, itcan be accessed from anywhere. This means that rather than refit a model every time you need a new prediction for a business or humanitarian use case, you can send the data to the pre-fitted model and get back a prediction.
+This is the important part. After your model is deployed as a web service, it can be accessed from anywhere. This means that rather than refit a model every time you need a new prediction for a business or humanitarian use case, you can send the data to the pre-fitted model and get back a prediction.
 
 First, deploy the model as a predictive web service. To do so, create a wrapper function that takes input data as an argument and calls `predict()` with your trained model and this input data, returning the results.
 
