@@ -48,12 +48,25 @@ The goal of this module is to train experienced SQL Server professionals.
 
 ## Outline the units
 
-1. **Exercise: Mapping scenarios to solutions**  
+1. **Introduction**
+
+1. **Scenario 1 overview**  
     - Apply what you've learned to real world scenarios  
     https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/06-PuttingItTogether.md  
 
-1. **Potential solutions and references**
+    Detail the scenario and have a few questions about the business problems they will need to solve for? Help the learner identify the key points they will need to make decisions on.
 
+1. **Scenario 1 architecture** 
+
+    Detail the architecture chosen and have a few questions about the technical choices that were made and why.
+
+1. **Scenario 2 overview**
+    Detail the scenario and have a few questions about the business problems they will need to solve for? Help the learner identify the key points they will need to make decisions on.
+    
+1. **Scenario 2 architecture**
+
+    Detail the architecture chosen and have a few questions about the technical choices that were made and why.
+    
 1. **Summary of the Azure SQL learning path and next steps**  
     - Summary of the learning path
     - References for further learning
