@@ -28,10 +28,10 @@ roles:
 products:
 - azure
 units:
-- learn.cela-disability-intro.00-intro
-- learn.cela-disability-intro.01-define-cloud-computing
-- learn.cela-disability-intro.02-before-the-cloud
-- learn.cela-disability-intro.03-evolution
-- learn.cela-disability-intro.04-building-blocks
+- learn.cela-disability-intro.00-what-is-accessibility
+- learn.cela-disability-intro.01-language-and-etiquette
+- learn.cela-disability-intro.02-what-is-inclusion
+- learn.cela-disability-intro.03-summary-and-resources
+- learn.cela-disability-intro.04-knowledge-check
 badge:
   uid: learn.cela-disability-intro.badge
