@@ -21,9 +21,9 @@ As a Java developer, you're already familiar with using Maven to create and comp
 
 Maven is a framework for the execution of a series of plugins, and each Maven plugin has specific behaviors that are driven by the parameters that developers provide. For example, plugins govern whether to create a Web Application Archive (WAR) or Java Archive (JAR) file, how your code compiles, and running unit tests. Almost any action can be implemented through a Maven plugin.
 
-A Maven Project Object Model (POM) file is an XML-based configuration file that is part of your application's project files. POM files are named *pom.xml*, and they contain the definitions for each of the plugins that your application needs, including the required parameters and goals for each plugin.
+Plugins define tasks as *goals*, and a plugin may have several goals. For example, the Maven Clean Plugin has one goal, which is to remove the target directory for your project.
 
-For example, the Maven Clean Plugin has one goal, which is to remove the target directory for your project.
+A Maven Project Object Model (POM) file is an XML-based configuration file that is part of your application's project files. POM files are named *pom.xml*, and they contain the definitions for each of the plugins that your application needs, including the required parameters for each plugin.
 
 When building or deploying an Azure function using Maven, you'll need to make sure to include the `azure-functions-maven-plugin` into your *pom.xml* file. The details for adding that plugin to your *pom.xml* file are in the **Updating your *pom.xml* file** section of this unit.
 
@@ -130,7 +130,7 @@ The following steps illustrate the basic process for creating an Azure Function 
 
 1. From the Cloud Shell, run `mvn archetype:generate` command, where you'll specify the `azure-functions-archetype`.
 
-1. Maven prompts you to enter the `groupId` for your application, which you'll enter in reverse domain format; for example: `com.microsoft.example`.
+1. Maven prompts you to enter the `groupId` for your application, which you'll enter in reverse domain name format; for example: `com.microsoft.example`.
 
 1. Maven prompts you to enter the name of the `artifactId` for your application, which should be a unique reference to your project; for example: `myapp`.
 

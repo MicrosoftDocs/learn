@@ -6,7 +6,7 @@ In this exercise, you'll create an Azure Function using the Maven archetype usin
 
 ## Create an Azure Function with Maven
 
-You're now going to create an Azure Function using Maven. This exercise will use the Azure Cloud Shell available from your sandbox.
+You're now going to create an Azure Function using Maven. This exercise will use the Azure Cloud Shell that is available from your sandbox.
 
 1. Activate the sandbox, and wait for the Azure Cloud Shell terminal to open.
 
@@ -61,10 +61,3 @@ You're now going to create an Azure Function using Maven. This exercise will use
     ```
 
 Congratulations! You've created your Azure Function.
-
-<!-- NOTE: These values were required for the 1.24 version of the archetype.
-    | `appName` | *Accept the default* |
-    | `appRegion` | *Accept the default* |
-    | `resourceGroup` | *<rgn>[sandbox resource group name]</rgn>* |
-    | `docker` | *Accept the default* |
--->

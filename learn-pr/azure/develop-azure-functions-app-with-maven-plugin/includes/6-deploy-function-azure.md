@@ -12,11 +12,13 @@ Once your application has been properly configured for deployment to Azure, the 
 mvn azure-functions:deploy
 ```
 
-## Additional deployment technologies
+The deployment type is specified in your project's *pom.xml* file, which you will confugure in the exercise that is in the next unit of this module. The following section of this unit describes a few of the different deployment options that are available. However, this is only a partial list; for a more exhaustive list of deployment options, see [Deployment technologies in Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-deployment-technologies).
 
-Apart from using Maven, there are several different options that are available for you to deploy your Azure Functions projects to Azure, and some deployment options will work better depending on the project that you are creating. However, in general, *Zip Deploy* is the recommended deployment technology for Azure Functions.
+## Deployment technologies
 
-The following table describe a few of the options that are available to you for deploying your functions to Azure. For an exhaustive list, see [Deployment technologies in Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-deployment-technologies).
+There are several different options that are available for you to deploy your Azure Functions projects to Azure, and some deployment options will work better depending on the project that you are creating. However, in general, *Zip Deploy* is the recommended deployment technology for Azure Functions.
+
+The following table describe a few of the options that are available to you for deploying your functions to Azure.
 
 | Technology | Description |
 |---|---|

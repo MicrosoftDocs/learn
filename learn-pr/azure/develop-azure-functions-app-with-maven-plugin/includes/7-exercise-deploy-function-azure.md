@@ -48,6 +48,12 @@ There are a few changes that need to be made to your function application before
         <region>westus</region>
         ```
 
+    1. After the `<region>` element, and an element to define the deployment type as *ZIP* deployment. For example:
+
+        ```xml
+        <deploymentType>ZIP</deploymentType>
+        ```
+
     1. Press <kbd>Ctrl+S</kbd> to save your *pom.xml* file, and then press <kbd>Ctrl+Q</kbd> to close the code editor.
 
 ## Deploy your Azure Function
@@ -103,16 +109,6 @@ Now that you have configured your function for deployment, your next step is to 
 ## Retrieving your Azure Function URL using the portal
 
 You will recall from the exercise that you completed in a previous unit, you were required to create the URL to test your function in a web browser. However, there is a much easier method to retrieve the URL for your Azure Function by using the Azure portal. To do so, use the following steps.
-
-<!--
-1. In the Azure Cloud Shell, run the following commands, which will enable you to view your functions in the Azure portal:
-
-    ```bash
-    export RESOURCEGROUP=$(az group list | jq -r '.[0].name')
-    export FUNCTIONAPP=$(az functionapp list | jq -r '.[0].repositorySiteName')
-    az functionapp config appsettings set --name $FUNCTIONAPP --resource-group $RESOURCEGROUP --settings "WEBSITE_RUN_FROM_PACKAGE=0"
-    ```
--->
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 

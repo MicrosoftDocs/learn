@@ -185,4 +185,6 @@ Earlier in this exercise, you opened an HTTP port for testing; this port will en
 
 If you do not see any errors, then you have successfully tested your function locally!
 
+Before continuing, switch back to the Cloud Shell and press <kbd>Ctrl+C</kbd> to close the test server.
+
 In the next unit, you'll learn how to deploy your function to Azure Functions.

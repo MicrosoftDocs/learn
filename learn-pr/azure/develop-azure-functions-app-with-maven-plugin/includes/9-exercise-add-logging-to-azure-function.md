@@ -44,7 +44,7 @@ There are two configuration files that you'll need to update: *pom.xml* and *hos
     code pom.xml
     ```
 
-1. Add the following elements to the `<dependencies>` section, which will enable Application Insights for your application:
+1. Add the following elements to the standalone `<dependencies>` section, which will enable Application Insights for your application:
 
     ```xml
     <dependency>
@@ -238,3 +238,5 @@ Your application is now updated to support fine grained logging with both the sy
         ![Image showing Application Insights and Live Metrics highlights](../media/9-live-metrics.png)
 
 You have successfully configured your Azure Function for detailed logging.
+
+Before continuing, switch back to the Cloud Shell and press <kbd>Ctrl+C</kbd> to close the command loop.
