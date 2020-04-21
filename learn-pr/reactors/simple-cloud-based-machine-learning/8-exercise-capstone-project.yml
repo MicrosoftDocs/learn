@@ -9,6 +9,6 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
-durationInMinutes: 5
+durationInMinutes: 20
 content: |
   [!include[](includes/8-exercise-capstone-project.md)] 
