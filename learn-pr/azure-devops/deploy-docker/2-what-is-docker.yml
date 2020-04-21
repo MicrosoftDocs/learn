@@ -4,9 +4,9 @@ title: What is Docker?
 metadata:
   title: What is Docker?
   description: Understand the benefits of Docker containers and when to use them.
-  ms.date: 03/11/2020
-  author: edkaim
-  ms.author: v-edkaim
+  ms.date: 04/22/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
