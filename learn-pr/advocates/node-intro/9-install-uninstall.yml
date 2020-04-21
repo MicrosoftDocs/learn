@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.1-install-uninstall
+uid: learn.node-intro.9-install-uninstall
 title: Introduction
 metadata:
   title: Introduction
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-install-uninstall.md)]
+  [!include[](includes/9-install-uninstall.md)]
