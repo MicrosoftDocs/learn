@@ -47,6 +47,7 @@ The goal of this module is to train experienced SQL Server professionals.
 
 ## Outline the units
 
+1. **Introduction**
 
 1. **Performance Capabilities and Tasks**  
     - Understand the capabilities and tasks relating to configuring, monitoring and troubleshooting performance for Azure SQL Database and Managed Instance  
