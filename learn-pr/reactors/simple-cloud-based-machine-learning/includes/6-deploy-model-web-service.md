@@ -1,35 +1,36 @@
-TEXT
-
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> The environment set up content is the first module in this learning path and it's extremely short--one unit topic.
-> Suggest moving the setup content into this unit topic, or making it the next unit topic in this module.
-> Then, duplicate the set up content in the same topic location in all modules in the learning path.
->
-
-
 > [!Note]
 > **Sarah: Action items**
 > 
-> - Use the code style for comment that appear on a separate line and not with other syntax?
-> We might format these instances as plain text or another style.
+> - Need output cell content. Search on TBD.
 >
 
-### Try it yourself
+This is the important part. After your model is deployed as a web service, itcan be accessed from anywhere. This means that rather than refit a model every time you need a new prediction for a business or humanitarian use case, you can send the data to the pre-fitted model and get back a prediction.
 
-TEXT
+First, deploy the model as a predictive web service. To do so, create a wrapper function that takes input data as an argument and calls `predict()` with your trained model and this input data, returning the results.
 
-<details> 
+```Python
+from azureml import services
 
-  <summary>Hint <i>(expand to reveal)</i></summary>
+@services.publish(workspace_id, authorization_token)
+@services.types(wind=float, rain=float, month=int, RH=float)
+@services.returns(float)
 
-  ```Python
-  tbd
-  ```
+# The name of your web service is set to this function's name
+def forest_fire_predictor(wind, rain, month, RH):
+    return regressor.predict([wind, rain, month, RH])
 
-  ```Output
-  tbd
-  ```
-  
-</details>
+# Hold onto information about your web service so 
+# you can call it within the notebook later
+service_url = forest_fire_predictor.service.url 
+api_key = forest_fire_predictor.service.api_key
+help_url = forest_fire_predictor.service.help_url
+service_id = forest_fire_predictor.service.service_id
+```
+
+Here's the output:
+
+```Output
+TBD
+```
+
+You can also go to the **Web Services** section of your Azure ML Studio workspace to see the predictive web service running there.
