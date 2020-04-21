@@ -1,20 +1,22 @@
-# What is QIO?
+# Introduction to Quantum Inspired Optimization (QIO)
+
+## What is QIO?
 
 There are many models of quantum computing. If you have viewed the *Get Started SDK* module, you'll have gained familiarity with the Gate Model, in which you define quantum programs by writing operations that make use of quantum gates. 
-Quantum Inspired Optimization (QIO) is based on a different model, namely adiabatic quantum computation. This approach uses a concept from quantum physics known as the adiabtic theorem. 
-Here you begin by preparing a system and initializing it to its lowest energy state. For a simple system, one which you understand everything about, this is easy to construct.
-Next, you slowly transform that system into a more complex one, one which describes the problem you are trying to solve.
+
+Quantum Inspired Optimization (QIO) is based on a different model, namely adiabatic quantum computation. This approach uses a concept from quantum physics known as the adiabtic theorem which works as follows:
+- Begin by preparing a system and initializing it to its lowest energy state. For a simple system, one which you understand everything about, this is easy to construct.
+- Next, slowly transform that system into a more complex one, one which describes the problem you are trying to solve.
 The adiabatic theorem states that, as long as this transformation moves slowly enough, the system will stay in that lowest configuration. So at the end, you've solved the problem.
 
 A simple analogy to think of it is this, imagine you have a glass of water that is neither half full nor half empty, it is filled to the brim.
-If you move this glass quickly, the system has too much energy, causing the contents to spill. It's no longer in the lowest energy state.
+If you move this glass quickly, the contents will spill. That's because the system had too much energy, and didn't remain in the lowest energy state.
 Instead, move the glass slowly, and the system has time to adapt, so the water does not spill. Now our system is in a different configuration, but remains in the lowest energy state.
 
-Adiabatic quantum computation has been well-studied, and as a result a number of techniques have been developed to simulate this type of physics.
-These are very good classical algorithms which we can run on computers today that will simulate adiabatic evolution.
-At Microsoft, we term these techniques Quantum Inspired approaches. 
+Adiabatic quantum computation has been well-studied, and as a result, a number of techniques have been developed to simulate this type of physics.
+These classical algorithms, which we can run on computers today to simulate adiabatic evolution, are also known as quantum inspired approaches.
 
-# Why is QIO useful?
+## Why is QIO useful?
 
 In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
 
