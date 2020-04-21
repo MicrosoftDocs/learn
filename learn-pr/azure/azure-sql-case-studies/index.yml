@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.azure-sql-case-studies
+metadata:
+  title: Azure SQL - Case studies
+  description: Azure SQL - Case studies
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure SQL - Case studies
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure-sql-case-studies.1-introduction
+- learn.azure-sql-case-studies.2-scenario-1-overview
+- learn.azure-sql-case-studies.3-scenario-1-architecture
+- learn.azure-sql-case-studies.4-scenario-2-overview
+- learn.azure-sql-case-studies.5-scenario-2-architecture
+- learn.azure-sql-case-studies.6-summary
+badge:
+  uid: learn.azure-sql-case-studies.badge

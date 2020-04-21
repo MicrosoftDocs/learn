@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-case-studies.3-scenario-1-architecture
+metadata:
+  title: Scenario 1 architecture
+  description: Scenario 1 architecture
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Scenario 1 architecture
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-scenario-1-architecture.md)]
