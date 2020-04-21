@@ -45,6 +45,6 @@ quiz:
     - content: Configure a social identity provider and set it to collect a job title attribute.
       isCorrect: false
       explanation: You use social identity providers to let users access the app by using their preferred social accounts. Use a user flow to collect the job title. 
-    - content: Configure a custom page-layout template and put a text-box in it to collect job titles.
+    - content: Configure a custom page-layout template and put a text box in it to collect job titles.
       isCorrect: false
       explanation: You use page-layout templates to customize your UI. Use policies like user flows to collect attributes such as job title.
