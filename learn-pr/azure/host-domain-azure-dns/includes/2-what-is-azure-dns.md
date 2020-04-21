@@ -4,7 +4,7 @@ In this unit, you'll learn what DNS is and how it works. Then learn about Azure 
 
 ## What is DNS?
 
-DNS, or the Domain Name System, is a protocol within the TCP/IP standard. DNS serves an essential role of translating the human-readable domain names, for example, www.wideworldimports.com into a known Internet Protocol (IP) address. IP addresses enable computers and network devices to identify and route requests between themselves.
+DNS, or the Domain Name System, is a protocol within the TCP/IP standard. DNS serves an essential role of translating the human-readable domain names, for example, `www.wideworldimports.com` into a known Internet Protocol (IP) address. IP addresses enable computers and network devices to identify and route requests between themselves.
 
 DNS uses a global directory hosted on servers around the world. Microsoft is part of that network that provides a DNS service through Azure DNS.
 

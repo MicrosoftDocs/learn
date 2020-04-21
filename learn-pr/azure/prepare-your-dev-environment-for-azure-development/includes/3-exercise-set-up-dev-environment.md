@@ -106,7 +106,7 @@ To install Visual Studio, use the appropriate steps for your operating system.
 
    The following screenshot shows the Visual Studio Installer workload selected to allow Azure development within Visual Studio.
 
-   ![Screenshot of the Visual Studio Installer with the Azure development workload highlighted.](../media/5-select-azure-workload.png)
+   :::image type="content" source="../media/5-select-azure-workload.png" alt-text="Screenshot of the Visual Studio Installer with the Azure development workload highlighted." loc-scope="vs":::
 
 1. (Optional) Install the ASP.NET and web development workload to be ready to create web applications for Azure.
 
@@ -118,7 +118,7 @@ To install Visual Studio, use the appropriate steps for your operating system.
 
    The following screenshot shows the Cloud Explorer menu option that will be present if you have the Azure development workload installed.
 
-   ![Screenshot of the Visual Studio View menu with the Cloud Explorer menu option highlighted.](../media/5-verify-cloud-explorer.png)
+   :::image type="content" source="../media/5-verify-cloud-explorer.png" alt-text="Screenshot of the Visual Studio View menu with the Cloud Explorer menu option highlighted." loc-scope="vs":::
 
 ### macOS
 
@@ -132,7 +132,7 @@ To install Visual Studio, use the appropriate steps for your operating system.
 
    The following screenshot shows the .NET Core platform required to add Azure development capabilities to Visual Studio for Mac.
 
-   ![Screenshot of the Visual Studio for Mac installer with the selected .NET Core platform option highlighted.](../media/5-vsmac-install-net-core.png)
+   :::image type="content" source="../media/5-vsmac-install-net-core.png" alt-text="Screenshot of the Visual Studio for Mac installer with the selected .NET Core platform option highlighted." loc-scope="vs":::
 
 1. Click **Install and Update** once you are happy with the selections, and wait for the installer to complete.
 

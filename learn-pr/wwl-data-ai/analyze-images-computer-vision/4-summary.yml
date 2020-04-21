@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-images-computer-vision.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review what you've learned."
+  ms.date: 04/24/2020
+  author: benjiang
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-summary.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "You want to use the Computer Vision service to analyze images. You also want to use the Text Analytics service to analyze text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
+    choices:
+    - content: "Computer Vision"
+      isCorrect: false
+      explanation: "Incorrect. This resource type only supports image analysis. A separate resource (with its own key and endpoint) would be required for text analytics."
+    - content: "Cognitive Services"
+      isCorrect: true
+      explanation: "Correct. A Cognitive Services resource support both Computer Vision and Text Analytics."
+    - content: "Custom Vision"
+      isCorrect: false
+      explanation: "Incorrect. The Custom Vision service is for image classification and object detection, and does not support image analysis or text analysis."
+  - content: "You want to use the Computer Vision service to identify the location of individual items in an image. Which of the following features should you retrieve?"
+    choices:
+    - content: "Objects"
+      isCorrect: true
+      explanation: "Correct. Computer Vision returns objects with a bounding box to indicate their location in the image."
+    - content: "Tags"
+      isCorrect: false
+      explanation: "Incorrect. Tags indicate the items in an image, but not their location."
+    - content: "Categories"
+      isCorrect: false
+      explanation: "Incorrect. Categories provide suggested categorizations for the image as a whole, not individual items in it."
+  - content: "You want to use the Computer Vision service to determine whether an image is back-and-white or color? What should you do?"
+    choices:
+    - content: "Generate a thumbnail"
+      isCorrect: false
+      explanation: "Incorrect. This would create a small version of the image."
+    - content: "Retrieve the Image Type feature"
+      isCorrect: false
+      explanation: "Incorrect. This feature would indicate if the image was likely to be clip art."
+    - content: "Retrieve the Color feature"
+      isCorrect: true
+      explanation: "Correct. The Color feature response includes a value that indicates whether or not the image is black-and-white."

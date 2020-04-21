@@ -57,7 +57,7 @@ Near the start of the template, you see a section named `parameters`. This secti
 * `windowsOSVersion`
 * `location`
 
-![The source code for the template's parameters section, highlighting each parameter name](../../media/4-armviz-params-windows.png)
+:::image type="content" source="../../media/4-armviz-params-windows.png" alt-text="The source code for the template's parameters section, highlighting each parameter name." loc-scope="other"::: <!-- Azure Resource Manager Visualizer, no-loc -->
 
 Two of these parameters &ndash; `windowsOSVersion` and `location` &ndash; have default values. The default value for `windowsOSVersion` is "2016-Datacenter" and the default value for `location` is the parent resource group's location.
 
@@ -100,10 +100,10 @@ With your parameters in place, you have everything you need to launch the templa
 
 As a final verification step, you'll begin by validating that the template is syntactically correct.
 
-1. From Cloud Shell, run `az group deployment validate` to validate the template.
+1. From Cloud Shell, run `az deployment group validate` to validate the template.
 
     ```azurecli
-    az group deployment validate \
+    az deployment group validate \
       --resource-group $RESOURCEGROUP \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json" \
       --parameters adminUsername=$USERNAME \
@@ -119,10 +119,10 @@ As a final verification step, you'll begin by validating that the template is sy
 
     If validation failed, you would see a detailed description of the failure in the output.
 
-1. Run `az group deployment create` to deploy the template.
+1. Run `az deployment group create` to deploy the template.
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
       --name MyDeployment \
       --resource-group $RESOURCEGROUP \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json" \
@@ -141,10 +141,10 @@ As a final verification step, you'll begin by validating that the template is sy
 
 The deployment succeeded. But let's run a few commands just to verify.
 
-1. Run `az group deployment show` to verify the deployment.
+1. Run `az deployment group show` to verify the deployment.
 
     ```azurecli
-    az group deployment show \
+    az deployment group show \
       --name MyDeployment \
       --resource-group $RESOURCEGROUP
     ```

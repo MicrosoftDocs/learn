@@ -2,85 +2,86 @@ The easiest way to learn programming is to write dozens (if not hundreds) of tin
 
 ## What you'll build
 
-We'll start off building a program that prints a message to screen using a single line of code.  This will require you to navigate Visual Studio Code and work in the code editor.
+In this unit, you start building a program that prints a message to screen by using a single line of code.  This activity requires you to navigate Visual Studio Code and work in the code editor.
 
 ### Step 1 - Create a new folder for your first Python project
 
-First, you'll want to create a folder structure on your computer where you'll store your work.  
+First, on your computer, create a folder structure where you'll store your work.  
 
-We recommend that you create one folder that will contain all of the exercises for each module.  You can call the new parent folder anything you like, such as `python` or `learn`.  Use the tools and techniques you're comfortable with and make sure to create it in a place on your hard drive that is easy to find.  
+We recommend that you create a single folder to contain all of the exercises for each module.  You can call this new parent folder anything you like, such as *python* or *learn*.  Use the tools and techniques you're comfortable with, and create the folder in a place on your hard drive that's easy to find.  
 
-Second, inside of your top-level folder, you'll want to create a subfolder for the exercise files you'll work with in this module.  You can call the new child folder anything you like, such as `hello`.
+Second, in this top-level folder, create a subfolder for the exercise files you'll work with in this module.  You can call the new child folder anything you like, such as *hello*.
 
-In upcoming Python modules, when instructed to create a new folder, make sure you create new subfolders as children to the parent folder you created in this step.
+In upcoming Python modules, when you're instructed to create a new folder, be sure to create new subfolders as children to the parent folder you're creating in this step.
 
-### Step 2 - Launch Visual Studio Code
+### Step 2 - Open Visual Studio Code
 
-Use the technique you're comfortable with to launch Visual Studio Code from your OS.
+Use the technique you're comfortable with to open Visual Studio Code from your operating system.
 
 ### Step 3 - Open the folder you just created
 
-Choose the File menu's Open Folder option.  
+In Visual Studio Code, select **File** > **Open Folder**.  
 
-Use the dialog to navigate to the folder you created previously in Step 1.
+In the **Open Folder** window, look for and select the folder that you created in Step 1.
 
-The name of the folder will appear in the Explorer view on the left side.
+The name of the folder is listed in the left pane of Explorer view.
 
 ### Step 4 - Create and save a new file
 
-Choose the File menu's New File option.  This will add a new tab in the main editor window with the title "Untitled-1".
+Select **File** > **New File**.  This adds a new tab titled "Untitled-1" in the editor pane.
 
-From the File menu, choose Save As...  You'll be asked to provide a name for the file.  Name the file `hello.py`.
+Select **File** > **Save As**, and then name the file *hello.py*.
 
 ### Step 5 - Add code to the file
 
-The new `hello.py` file is empty.  Type the following code into the code editor.
+The new *hello.py* file is empty. In the editor pane, type the following code:
 
 ```python
 print("Hello World!")
 ```
 
 > [!Important]
-> It's extremely important that you type the code precisely, making sure you use the exact characters like parentheses and double-quotes, in the correct order, using lower-case letters for the word `print`.  If you type even one letter incorrectly, it could cause your program to have an error and not work.
+> Enter the code exactly as you see it here, typing the parentheses and quotation marks in the correct order and using lowercase letters for the word *print*.  If you type even one character incorrectly, it could cause your program to have an error and not work.
 
 ### Step 6 - Save the file and execute your program
 
-After typing the code, select the File menu's Save option.
+After typing the code, select **File** > **Save**.
 
 > [!Note]
-> You can see if your file needs to be saved if there's a white dot to the right of the file name in the tab.
+> You can see that your file needs to be saved if there's a white dot to the right of the file name on the tab.
 
-To execute your program, click the green arrow to the right of the tabs.  If you hover over the arrow, you'll see the tooltip "Run Python File in Terminal".  That lets you know you're in the right place.
+To execute your program, select the green arrow to the right of the tabs.  If you hover over the arrow, you'll see the tooltip "Run Python File in Terminal."  That lets you know you're in the right place.
 
-![alt text](../media/2-exercise-hello-world-03.png "Screenshot of Visual Studio Code with a callout around the green triangle button used to run your Python code")
+![Screenshot of Visual Studio Code with a callout around the green arrow "Play" button you select to run the Python code.](../media/2-exercise-hello-world-03.png)
 
-When it executes, you'll see two lines appear.
+When the code is run, two lines appear in the **Terminal** window:
 
-The first line in the Terminal window is the command to compile and execute the code file.  
+* The first line is the command to compile and execute the code file.  
 
-```output
-C:\python\hello>C:/Users/<user>/AppData/Local/Programs/Python/Python38-32/python.exe c:/python/hello/hello.py
-```
-> [!NOTE] 
-> The output will be different depending on your operating system.  Also, from Windows, your path will be different.  Substitute `<user>` for your user name.
+  ```output
+  C:\python\hello>C:/Users/<user>/AppData/Local/Programs/Python/Python38-32/python.exe c:/python/hello/hello.py
+  ```
 
-The following line printed to the Terminal window that appears below the code window:
+  > [!NOTE] 
+  > The output varies depending on your operating system.  Also, from Windows, your path will be different.  For *\<user>*, substitute your user name.
 
-```output
-Hello World!
-```
+* The other line printed to the Terminal window appears below the code window:
+
+  ```output
+  Hello World!
+  ```
 Success!
 
 ### Wait, I got an error
 
-It's possible that you experienced an error when you attempted to run it.  This can happen for many different reasons.
+It's possible to experience an error when you attempt to run the code.  This can happen for many different reasons.
 
-For example, if you used an upper-case `P` in `print`, like so:
+For example, you might have used an uppercase *P* instead of a lowercase *p* in *print*, as shown:
 
 ```python
 Print("Hello World!")
 ```
-Then you would see the following error message in your output:
+An uppercase *P* would produce the following error message in your output:
 
 ```output
 Traceback (most recent call last):
@@ -88,16 +89,17 @@ Traceback (most recent call last):
     Print("Hello World!")
 NameError: name 'Print' is not defined
 ```
-As we said earlier, you must be precise when writing code.  Python is case-sensitive meaning that `print` and `Print` are two different things, and there's no such function called `Print` with an upper-case `P`.
 
-Fortunately, Visual Studio Code can help you spot mistakes like this.  You should see a red squiggly line under `Print`.  If you hover your mouse cursor over the word `Print`, you will see a popup that includes the phrase "Undefined variable 'Print'".  The specific message will require more explanation, but for now you can at least spot potential problems in your code.
+As discussed earlier, precision is critical when you're writing code.  Python is case-sensitive, which means that *print* and *Print* are two different things. There's no function called `Print` with an uppercase *P*.
 
-![alt text](../media/2-exercise-hello-world-01.png "Screenshot of Visual Studio Code with a red squiggly line under the word print with an upper-case letter p")
+Fortunately, Visual Studio Code can help you spot mistakes like this before you run the code.  You should see a red squiggly line under *Print*.  If you hover over the word, a tooltip displays the phrase "Undefined variable 'Print'".  The specific message requires more explanation, but for now you can at least spot potential problems in your code.
+
+![Screenshot of Visual Studio Code with a red squiggly line under the word "Print" with an incorrect uppercase P.](../media/2-exercise-hello-world-01.png)
 
 > [!Important]
-> You must save the changes to your file to see the red squiggly line appear.
+> You must save the changes to your file to display the red squiggly line.
 
-You can use this same technique to locate other types of issues in your code.  For example, what if you transposed the order of certain characters like the closing parenthesis and the double-quote character like so:
+You can use this same technique to locate other types of issues in your code.  For example, let's say you transposed the order of certain characters, such as the closing parenthesis and closing quotation mark, as shown here:
 
 ```python
 print("Hello World!)"
@@ -110,22 +112,22 @@ If you were to run the code, you would see the following error message:
                          ^
 SyntaxError: unexpected EOF while parsing
 ```
-Here again, the error message may not be meaningful yet, however once you save the file, Visual Studio Code will add a red squiggly line under the last double-quote, which should at least provide a useful clue in self-diagnosing the error.
+Here again, the error message might not be meaningful yet. After you save the file, Visual Studio Code adds a red squiggly line under the closing quotation mark, which should at least provide a useful clue as you self-diagnose the error.
 
-The reason this doesn't work is because it doesn't follow the syntax rules of Python.  Syntax is similar to grammar in a human-language.  We'll explain the reason this violates Python's syntax rules in just a moment.
+This doesn't work because it doesn't follow the syntax rules of Python.  Syntax in code is similar to grammar in human language.  We'll explain why this violates Python syntax rules in just a moment.
 
-Some errors are easy to spot and easy to fix.  Others require a bit more effort.  Suppose you used a set of square brackets instead of a set of parenthesis like so:
+Some errors are easy to spot and easy to fix.  Others require a bit more effort.  Let's suppose you used square brackets instead of parentheses, as shown here:
 
 ```python
 print["Hello World!"]
 ```
-Once you save the file, you will see a red squiggly line under `print`.  This time when you hover your mouse cursor over the red squiggly line, you see a large dialog with additional information.  
+After you save the file, a red squiggly line appears under *print*.  This time, when you hover over the red squiggly line, you see a paragraph with additional information.  
 
-![alt text](../media/2-exercise-hello-world-02.png "Screenshot of Visual Studio Code as the mouse hovers over a red squiggly line to reveal a large message box filled with reference information about the print command and an error message")
+![Screenshot of Visual Studio Code with a message box that displays reference information about the print command and an error message.](../media/2-exercise-hello-world-02.png)
 
-We'll talk about what all this information means in another module, but let's just skip over it for now since it's a bit advanced at this point.  The main takeaway is that there's a problem with the code.
+We'll discuss what this information means in another module, but we can skip over it for now because it's a bit advanced at this point.  The main takeaway is that there's a problem with the code.
 
-When you run the program, you see the following error message in the output.
+When you run the program, the following error message appears in the output:
 
 ```output
 Traceback (most recent call last):
@@ -133,33 +135,35 @@ Traceback (most recent call last):
     print["Hello World!"]
 TypeError: 'builtin_function_or_function' object is not subscriptable
 ```
-Unfortunately, this error message isn't helpful because it doesn't just come out and tell you the exact problem: that you need to replace the square brackets for a set of parenthesis.
+Unfortunately, this error message isn't helpful, because it doesn't describe the problem: to invoke a function, you need to replace the square brackets with parentheses.
 
-In these situations, you will need to lean on your knowledge of Python and your keen eye to spot the problem -- that you cannot use square brackets when invoking a function.  You must use a set of parenthesis.
+In future situations like this, you'll need to lean on your knowledge of Python and a keen eye to spot the problem.
 
-You gain both the knowledge and the keen eye through experience.  It may seem daunting at first, but with practice you will master this and much more.
+You gain both knowledge and a keen eye through experience.  It may seem daunting at first but, with practice, you will master this information and much more.
 
 ## How did your program work?
 
-You invoked a **function** named `print`.  A function contains code that works together to complete a single task in a software system.  The function is given a name so that you can call it by its name to invoke its functionality.  The `print` function's only job is to send information to output, and that output may be displayed via a command line or terminal window.
+You invoked a *function* named `print`.  A function contains code that works together to complete a single task in a software system.  The function is given a name so that you can call it by that name to invoke its functionality.  The `print` function's only job is to send information to output, and that output can be displayed via a command line or terminal window.
 
-To invoke a function, we must use a set of parentheses called the function invocation operators.  This is our instruction to the Python interpreter that we want it to actually execute that function for us.
+To invoke a function, you use a set of parentheses called function invocation operators.  The set of parentheses is your instruction to the Python interpreter that you want it to execute that function for us.
 
-Later, you'll learn how to create your own functions.  At first, you'll use functions that the creators of Python have created to help you write applications more quickly.  Also, you'll learn how to leverage third-party libraries that dramatically expand the functionality available to your Python programs to perform a vast array of tasks.
+Later, you'll learn how to create your own functions.  At first, you'll use functions that the creators of Python have created to help you write applications more quickly.  Also, you'll learn how to utilize third-party libraries that dramatically expand the functionality that's available to your Python programs to perform a vast array of tasks.
 
-Some functions allow you to pass an argument, which the function can use to complete its task.  In this case, we sent the `print` function a **literal string** containing our message `Hello World!`.  We pass arguments inside of the function invocation operators.
+Some functions allow you to pass an argument, which the function can use to complete its task.  In this case, you sent the `print` function a *literal string* containing your message, `Hello World!`.  You pass arguments inside of the function invocation operators.
 
-A literal string is a hard-coded value containing alphanumeric characters.  In other words, we literally want this string of characters -- `H`, `e`, `l`, `l`, `o`, an empty space, `W`, and so on -- printed to output.  You define a literal string using a pair of double-quotation or a pair of single-quotation marks.
+A literal string is a hard-coded value containing alphanumeric characters.  In other words, you want to print to output exactly this string of characters: `H`, `e`, `l`, `l`, `o`, an empty space, `W`, and so on.  You define a literal string by using a pair of quotation marks or a pair of single quotation marks.
 
-When the Python compiler evaluates our code, it checks for syntax errors, then converts the code into a compact syntax called bytecode consisting of only zeros and ones.  The Python interpreter understands how to read this syntax, and processes each instruction therein, line by line.  In this case, there's only one line of code.  If there were more, it would work from the top to the bottom, then once it has executed the last line, it would exit the program and return control to the operating system.
+When the Python compiler evaluates code, it checks for syntax errors and then converts the code into a compact syntax called *bytecode*, which consists of only zeros and ones.  The Python interpreter understands how to read this syntax, and it processes each instruction therein, line by line.  
+
+In our scenario, there's only one line of code.  If there were more, it would work from the top to the bottom. Then, after it has executed the last line, it would exit the program and return control to the operating system.
 
 ## Recap
 
 Let's take a moment to recap the most important lessons from this first unit:
 
-- Writing Python code is an exercise in precision.  Use the correct spelling, capitalization, and symbols when typing code.
+- Writing Python code is an exercise in precision.  Use the correct spelling, capitalization, and symbols when you type code.
 - Use the `print` function to display textual information to output via a command line or terminal interface.
-- A literal string is literally a string of individual characters that you want to use in your program.  You define a literal string using double-quotation marks or a pair of single-quotation marks.
-- Visual Studio Code makes it easy to create a code file, save your work and run your code using the green arrow icon.
-- If your code includes invalid syntax, the Python compiler will stop and display an error.  Using the clues provided by the compiler, you'll have to fix the error and try again.
-- When you save your code file, Visual Studio Code will analyze your code and add a visual cue that will help you spot potential errors before your attempt to execute your program.
+- A literal string is a string of individual characters that you want to use exactly as written in your program.  You define a literal string by using a pair of quotation marks or single quotation marks.
+- Visual Studio Code makes it easy to create a code file, save your work, and then run your code by selecting the green arrow icon.
+- If your code includes invalid syntax, the Python compiler stops the execution and displays an error.  By using the clues provided by the compiler, you can fix the error and try again.
+- When you save your code file, Visual Studio Code analyzes the code and adds a visual clue that helps you spot potential errors before you attempt to run the program.

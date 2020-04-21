@@ -37,7 +37,7 @@ To address this problem, you can create security policies based on these analyti
 
 Attackers often use email to access your network. An email that looks genuine might ask users to select a link and provide details that the attacker uses to access resources and devices on your network. Email applications like Microsoft Outlook help us identify suspicious messages and senders.
 
-:::image type="content" source="../media/4-email-outlook.png" alt-text="Image showing a suspicious email message in Outlook. The email has a header that reads This message authenticates but sent by a different responsible sender.":::
+:::image type="content" source="../media/4-email-outlook.png" alt-text="Image showing a suspicious email message in Outlook. The email has a header that reads This message authenticates but sent by a different responsible sender."  loc-scope="office-outlook":::
 
 ### Intrusion detection and prevention
 

@@ -37,7 +37,7 @@ print(fourth_value, fifth_value, sixth_value, sep='#', end='!')
 print(f'\n\t{fourth_value}\n\t{fifth_value}\n\t{sixth_value}')
 ```
 
-This code is merely "*one possible solution*".  If your code produces the following output, then you were successful.
+If your code produces the following output, then you were successful.
 
 ```output
        First Challenge        
@@ -49,9 +49,7 @@ fourth#fifth#sixth!
         sixth
 ```
 
-This is one possible solution.  As long as you got the desired output, you were successful.
-
-If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
+Whether or not you used the solution shown here, as long as you got the desired output, you were successful. Now you can continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, maybe you should review the previous units before you continue on.  All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, maybe you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
