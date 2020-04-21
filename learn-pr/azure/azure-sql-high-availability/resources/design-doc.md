@@ -48,6 +48,8 @@ The goal of this module is to train experienced SQL Server professionals.
 
 ## Outline the units 
 
+1. **Introduction**
+
 1. **Availability Capabilities and tasks**  
     - Be able to explain the capabilities and tasks related to Azure SQL Database and Managed Instance  
     https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/05-Availability.md  
