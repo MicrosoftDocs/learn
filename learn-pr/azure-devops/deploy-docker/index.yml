@@ -32,7 +32,7 @@ products:
 - azure-devops
 units:
 - learn.azdo.deploy-docker.1-introduction
-- learn.azdo.deploy-docker.2-what-is-docker
+- learn.azdo.deploy-docker.2-why-containers
 - learn.azdo.deploy-docker.3-set-up-environment
 - learn.azdo.deploy-docker.4-deploy-docker
 - learn.azdo.deploy-docker.5-clean-up-environment

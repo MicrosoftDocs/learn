@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.deploy-docker.2-what-is-docker
-title: What is Docker?
+uid: learn.azdo.deploy-docker.2-why-containers
+title: Why are containers important?
 metadata:
-  title: What is Docker?
+  title: Why are containers important?
   description: Understand the benefits of Docker containers and when to use them.
   ms.date: 04/22/2020
   author: tpetchel
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-what-is-docker.md)]
+  [!include[](includes/2-why-containers.md)]
 quiz:
   title: Check your knowledge
   questions:
