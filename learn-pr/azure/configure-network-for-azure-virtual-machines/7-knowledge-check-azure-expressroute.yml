@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'You need to connect Azure resources like Azure Virtual Machines across geographical regions. Which Azure networking option should you use?'
+  - content: 'You need to connect Azure resources like Azure virtual machines across geographical regions. Which Azure networking option should you use?'
     choices:
     - content: "Subnet"
       isCorrect: false
@@ -36,11 +36,11 @@ quiz:
     - content: "Microsoft peering"
       isCorrect: false
       explanation: "Microsoft peering supports connections to cloud-based SaaS offerings, such as Office 365 and Dynamics 365."
-  - content: 'Which of the following protocols provides dynamic routing for Azure ExpressRoute?'
+  - content: 'Which protocols provides dynamic routing for Azure ExpressRoute?'
     choices:
     - content: "IPVPN"
       isCorrect: false
-      explanation: "Any-to-any (IPVPN) networks is a connectivity model that ExpressRoute supports."
+      explanation: "An Any-to-any (IPVPN) network is a connectivity model that ExpressRoute supports."
     - content: "Border Gateway Protocol (BGP)"
       isCorrect: true
       explanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
