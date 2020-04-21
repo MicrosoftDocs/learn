@@ -6,10 +6,9 @@ metadata:
   description: Use the concepts you just learned about to solve a real world challenge in code.
   ms.date: 09/26/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 1
 azureSandbox: false
 interactive: csharp

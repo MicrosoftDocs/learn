@@ -6,10 +6,9 @@ metadata:
   description: Learn how to declare and name a variable.
   ms.date: 09/03/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 azureSandbox: false
 interactive: csharp

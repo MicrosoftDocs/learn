@@ -13,12 +13,12 @@ title: 'Case studies: NoSQL databases and cloud object storage'
 summary:  Learn about two more types of storage - NoSQL databases and object storage - with case studies from industry.
 abstract: | 
   In this module, you will:
-  - Explain the Apache HBase, Apache Cassandra, MongoDB, and Amazon DynamoDB NoSQL database data models
-  - List the common operations in HBase, Cassandra, MongoDB, and DynamoDB
-  - Summarize the architectures of HBase, Cassandra, MongoDB, and DynamoDB
-  - List the use cases of HBase, Cassandra, MongoDB, and DynamoDB
-  - Explain the Amazon S3 and OpenStack Swift cloud object storage data models
-  - Discuss the consistency guarantees provided by S3 and Swift
+  - Explain the Apache HBase, Apache Cassandra and MongoDB NoSQL database data models.
+  - List the common operations in HBase, Cassandra, and MongoDB.
+  - Summarize the architectures of HBase, Cassandra, and MongoDB.
+  - List the use cases of HBase, Cassandra, and MongoDB.
+  - Explain the OpenStack Swift cloud object storage data models.
+  - Discuss the consistency guarantees provided by Swift.
 
   In partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: |
@@ -48,8 +48,8 @@ units:
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.1-apache-hbase
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.2-mongodb
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.3-apache-cassandra
-- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.4-amazon-dynamodb
-- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.5-amazon-s3
+#- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.4-amazon-dynamodb
+- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.5-openstack-swift
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.6-summary
 badge:
   uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.badge

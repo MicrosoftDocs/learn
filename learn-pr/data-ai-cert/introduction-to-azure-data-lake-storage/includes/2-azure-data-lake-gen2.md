@@ -10,7 +10,7 @@ Data Lake Storage Gen2 is designed to deal with this variety and volume of data 
 
 ### Hadoop compatible access
 
-A benefit of Data Lake Storage Gen2 is that you can treat the data as if it's stored in a Hadoop Distributed File System. With this feature, you can store the data in one place and access it through compute technologies including Azure Databricks, Azure HDInsight, and Azure SQL Data Warehouse without moving the data between environments.
+A benefit of Data Lake Storage Gen2 is that you can treat the data as if it's stored in a Hadoop Distributed File System. With this feature, you can store the data in one place and access it through compute technologies including Azure Databricks, Azure HDInsight, and Azure Synapse Analytics without moving the data between environments.
 
 ### Security 
 
