@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.10-monitoring-troubleshooting-availability
+metadata:
+  title: Monitoring and troubleshooting availability
+  description: Monitoring and troubleshooting availability
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitoring and troubleshooting availability
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-monitoring-troubleshooting-availability.md)]

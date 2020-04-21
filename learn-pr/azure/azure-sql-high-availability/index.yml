@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure-sql-high-availability
+metadata:
+  title: Azure SQL - Deploy highly available solutions
+  description: TODO
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure SQL - Deploy highly available solutions
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure-sql-high-availability.1-introduction
+- learn.azure-sql-high-availability.2-content-unit
+- learn.azure-sql-high-availability.3-exercise-unit
+- learn.azure-sql-high-availability.4-exercise-restore-point-in-time
+- learn.azure-sql-high-availability.5-high-availability
+- learn.azure-sql-high-availability.6-exercise-general-purpose-high-availability
+- learn.azure-sql-high-availability.7-exercise-business-critical-high-availability
+- learn.azure-sql-high-availability.8-configuring-availability
+- learn.azure-sql-high-availability.9-exercise-geo-distributed-auto-failover
+- learn.azure-sql-high-availability.10-monitoring-troubleshooting-availability
+- learn.azure-sql-high-availability.11-summary
+badge:
+  uid: learn.azure-sql-high-availability.badge

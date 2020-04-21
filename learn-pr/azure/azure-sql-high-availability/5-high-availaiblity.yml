@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.5-high-availability
+metadata:
+  title: High availability by service tier
+  description: High availability by service tier
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: High availability by service tier
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-high-availability.md)]

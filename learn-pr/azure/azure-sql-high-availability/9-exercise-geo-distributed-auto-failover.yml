@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.9-exercise-geo-distributed-auto-failover
+metadata:
+  title: Exercise - Geo-distributed auto-failover groups with read-scale
+  description: Exercise - Geo-distributed auto-failover groups with read-scale
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Geo-distributed auto-failover groups with read-scale
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/9-exercise-geo-distributed-auto-failover.md)]

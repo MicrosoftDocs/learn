@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.8-configure-availability
+metadata:
+  title: Configure availability
+  description: Configure availability
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure availability
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-configure-availability.md)]

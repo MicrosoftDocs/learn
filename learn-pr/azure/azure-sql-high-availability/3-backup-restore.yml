@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.3-backup-restore
+metadata:
+  title: Backup and restore
+  description: Backup and restore
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Backup and restore
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-backup-restore.md)]
