@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.continuous-data-export-from-iot-central.summary
 metadata:
-  title: Summary
   description: Summary
   ms.date: 5/1/2020
   author: PeterTurcan

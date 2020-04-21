@@ -192,4 +192,3 @@ You do not need an Azure Maps account to _render_ a map, as the rendering is don
 
 The next step is to create the device app.
 
-Let's take a break and test your knowledge so far.

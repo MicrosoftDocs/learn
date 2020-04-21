@@ -35,6 +35,8 @@ units:
 - learn.iot.continuous-data-export-from-iot-central.introduction
 - learn.iot.continuous-data-export-from-iot-central.create-iot-central-apps-device-template
 - learn.iot.continuous-data-export-from-iot-central.create-device-app-project
+- learn.iot.continuous-data-export-from-iot-central.set-continuous-data-export-in-motion
+- learn.iot.continuous-data-export-from-iot-central.exercise-set-continuous-data-export-in-motion
 - learn.iot.continuous-data-export-from-iot-central.summary
 badge:
   uid: learn.iot.continuous-data-export-from-iot-central.badge

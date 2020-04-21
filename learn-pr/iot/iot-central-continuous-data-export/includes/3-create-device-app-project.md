@@ -165,4 +165,4 @@ If all goes well, go straight into the second test.
 
 If all is well, this is great progress. The truck is at its base, and in the correct state.
 
-The next step is to understand the role of rules and actions.
+The next step is to understand the data export options.

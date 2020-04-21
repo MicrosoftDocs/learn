@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.continuous-data-export-from-iot-central.set-continuous-data-export-in-motion
+metadata:
+  description: Describes the data export feature of IoT Central.
+  ms.date: 5/1/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: vs-vscode-language
+title: Create the device app project
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-set-continuous-data-export-motion.md)]
