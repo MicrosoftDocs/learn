@@ -23,7 +23,7 @@ quiz:
     - content: Because a B2C tenant is a logical representation of your customers and the applications they use.
       isCorrect: true
       explanation: That's right. Your B2C tenant helps you manage your customers and the applications they use. The tenant makes it possible for you to manage or make changes to any of your customer users or applications.
-    - content: Because a tenant is a physical representation of your users and the applications, they use.
+    - content: Because a tenant is a physical representation of your users and the applications they use.
       isCorrect: false
       explanation: A tenant isn't a physical representation, but a logical one.
   - content: Patients must be able to access the health application by using their LinkedIn, Twitter, and Facebook accounts. How can you support that in your app?
