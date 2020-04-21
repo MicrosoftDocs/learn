@@ -107,6 +107,7 @@ The output is:
 ### Try it yourself
 
 You're experienced in Jupyter Notebooks and experimenting with Python now, so use those new super-powers to predict and test.
+
 - Predict: What would happen if you sliced `series_example2` using its explicit index?
 - Test: Try it out in VS Code. Was the output what you expected?
 
@@ -123,6 +124,7 @@ You're experienced in Jupyter Notebooks and experimenting with Python now, so us
   d   -2.00
   dtype: float64
   ```
+
 </details>
 
 Do explicit `Series` indices work _exactly_ the way you might expect? Try slicing `Series_example2` using its explicit index and find out.
@@ -166,7 +168,8 @@ The output is:
 
 ### Try it yourself
 
-But you can also do powerful array-like operations with `Series` like slicing. 
+But you can also do powerful array-like operations with `Series` like slicing.
+
 - Predict: Would slicing be possible if `Series` keys were not ordered?
 - Test: Try it out in VS Code. Create an unordered `Series` and try slicing it. Did it do what you expected?
 
@@ -183,11 +186,13 @@ But you can also do powerful array-like operations with `Series` like slicing.
   Russia     143910127
   dtype: int64
   ```
+
 </details>
 
 ### Try it yourself
 
 You can also add elements to a `Series` the way that you would to an `ndarray`.
+
 - Try adding elements to a `Series` in the code cell below.
 - Try running `population['Albania'] = 2937590` (or another country of your choice).
 - Predict what order do the keys appear in when you run `population`. Is it what you expected?
@@ -208,6 +213,7 @@ You can also add elements to a `Series` the way that you would to an `ndarray`.
   Albania      2937590
   dtype: int64
   ```
+  
 </details>
 
 Another useful `Series` feature (and definitely a difference from dictionaries) is that `Series` automatically aligns differently indexed data in arithmetic operations:

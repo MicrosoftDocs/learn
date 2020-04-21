@@ -16,7 +16,7 @@ Consider combining two DataFrames that contain different information about the s
 
 We can group an example of four employees by the department they work in:
 
-```python
+```Python
 df1 = pd.DataFrame({'employee': ['Gary', 'Stu', 'Mary', 'Sue'],
                     'group': ['Accounting', 'Marketing', 'Marketing', 'HR']})
 df1
@@ -24,7 +24,7 @@ df1
 
 Here's the output:
 
-```output
+```Output
 |   | employee | group      |
 -----------------------------
 | 0 | Gary     | Accounting |
@@ -35,7 +35,7 @@ Here's the output:
 
 Next, let's look at the years that the same four employees were hired:
 
-```python
+```Python
 df2 = pd.DataFrame({'employee': ['Mary', 'Stu', 'Gary', 'Sue'],
                     'hire_date': [2008, 2012, 2017, 2018]})
 df2
@@ -43,7 +43,7 @@ df2
 
 This output is returned:
 
-```output
+```Output
 |   | employee | hire_date |
 ----------------------------
 | 0 | Mary     | 2008      |
@@ -54,14 +54,14 @@ This output is returned:
 
 Combine this information in a single DataFrame by using the `merge` function:
 
-```python
+```Python
 df3 = pd.merge(df1, df2)
 df3
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | employee | group      | hire_date |
 -----------------------------------------
 | 0 | Mary     | Accounting | 2008      |
@@ -78,7 +78,7 @@ A many-to-one join is like a one-to-one join except that one of the two key colu
 
 You can join two DataFrames:
 
-```python
+```Python
 df4 = pd.DataFrame({'group': ['Accounting', 'Marketing', 'HR'],
                     'supervisor': ['Carlos', 'Giada', 'Stephanie']})
 df4
@@ -86,7 +86,7 @@ df4
 
 Here's the output:
 
-```output
+```Output
 |   | group      | supervisor |
 -------------------------------
 | 0 | Accounting | Carlos     |
@@ -96,13 +96,13 @@ Here's the output:
 
 You also can join two data sources:
 
-```python
+```Python
 pd.merge(df3, df4)
 ```
 
 This output is returned:
 
-```output
+```Output
 |   | employee | group      | hire_date | supervisor |
 ------------------------------------------------------
 | 0 | Gary     | Accounting | 2017      | Carlos     |
@@ -117,13 +117,13 @@ Notice that we didn’t specify which column to join on. When you don't specify 
 
 Here's an example
 
-```python
+```Python
 pd.merge(df3, df4, on='group')
 ```
 
 This output is returned:
 
-```output
+```Output
 |   | employee | group      | hire_date | supervisor |
 ------------------------------------------------------
 | 0 | Gary     | Accounting | 2017      | Carlos     |
@@ -136,7 +136,7 @@ This output is returned:
 
 What happens if the key columns in both of the DataFrames you're joining contain duplicates? That gives you a many-to-many join:
 
-```python
+```Python
 df5 = pd.DataFrame({'group': ['Accounting', 'Accounting',
                               'Marketing', 'Marketing', 'HR', 'HR'],
                     'core_skills': ['math', 'spreadsheets', 'writing', 'communication',
@@ -146,7 +146,7 @@ df5
 
 Here's the output:
 
-```output
+```Output
 |   | group      | core_skills   |
 ----------------------------------
 | 0 | Accounting | math          |
@@ -159,13 +159,13 @@ Here's the output:
 
 Then, run this code in a cell:
 
-```python
+```Python
 pd.merge(df1, df5, on='group')
 ```
 
 This output is returned:
 
-```output
+```Output
 |   | employee | group      | core_skills   |
 --------------------------------------------
 | 0 | Gary     | Accounting | math          |
@@ -184,7 +184,7 @@ Again, to avoid ambiguity about which column to join on, it's a good idea to exp
 
 What if you need to merge two datasets with no shared column names? For example, what if you are using a dataset in which the employee name is labeled **name** rather than **employee**? In such cases, you will need to use the **left_on** and **right_on** keywords in order to specify the column names on which to join:
 
-```python
+```Python
 df6 = pd.DataFrame({'name': ['Gary', 'Stu', 'Mary', 'Sue'],
                     'salary': [70000, 80000, 120000, 90000]})
 df6
@@ -192,7 +192,7 @@ df6
 
 Here's the output:
 
-```output
+```Output
 |   | name | salary |
 ---------------------
 | 0 | Gary | 7000   |
@@ -203,13 +203,13 @@ Here's the output:
 
 Next, run this code in a cell:
 
-```python
+```Python
 pd.merge(df1, df6, left_on="employee", right_on="name")
 ```
 
 This output is returned:
 
-```output
+```Output
 |   | employee | group      | name | salary |
 ---------------------------------------------
 | 0 | Gary     | Accounting | Gary | 7000   |
@@ -224,6 +224,7 @@ Using the documentation, can you figure out how to use `.drop()` to get rid of t
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
+
   ```Python
   pd.merge(df1, df6, left_on="employee", right_on="name").drop("name", axis=1)
   ```
@@ -236,20 +237,21 @@ Using the documentation, can you figure out how to use `.drop()` to get rid of t
   | 2 | Mary     | Marketing  | 120000 |
   | 3 | Sue      | HR         | 9000   |
   ```
+
 </details>
 
 ## left_index and right_index keywords
 
 Sometimes it can be more advantageous to merge on an index rather than on a column. The **left_index** and **right_index** keywords make it possible to join by index. Let's revisit some of our earlier example DataFrames to see what this looks like in action.
 
-```python
+```Python
 df1a = df1.set_index('employee')
 df1a
 ```
 
 Here's the output:
 
-```output
+```Output
 |          | group      | 
 -------------------------
 | employee |            |
@@ -261,14 +263,14 @@ Here's the output:
 
 Next, run this code in a cell:
 
-```python
+```Python
 df2a = df2.set_index('employee')
 df2a
 ```
 
 This output is returned:
 
-```output
+```Output
 |          | hire_date | 
 ------------------------
 | employee |           |
@@ -280,13 +282,13 @@ This output is returned:
 
 To merge on the index, specify the **left_index** and **right_index** parameters in merge:
 
-```python
+```Python
 pd.merge(df1a, df2a, left_index=True, right_index=True)
 ```
 
 Here's the output:
 
-```output
+```Output
 |          | group      | hire_date |
 -------------------------------------
 | employee |            |           |
@@ -302,7 +304,7 @@ What happens if you specify only **left_index** or **right_index**?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
+
   ```Python
   pd.merge(df1a, df2a, left_index=True)
   ```
@@ -337,18 +339,19 @@ What happens if you specify only **left_index** or **right_index**?
   
   MergeError: Must pass right_on or right_index=True
   ```
+
 </details>
 
 
 You can also use the `join` method for DataFrames, which produces the same effect but merges on indices by default:
 
-```python
+```Python
 df1a.join(df2a)
 ```
 
 This output is returned:
 
-```output
+```Output
 |          | group      | hire_date |
 -------------------------------------
 | employee |            |           |
@@ -360,13 +363,13 @@ This output is returned:
 
 You can also mix and match **left_index**/**right_index** with **right_on**/**left_on**:
 
-```python
+```Python
 pd.merge(df1a, df6, left_index=True, right_on='name')
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | group      | name | salary |
 ----------------------------------
 | 0 | Accounting | Gary | 7000   |
@@ -379,7 +382,7 @@ Here's the output:
 
 Let's return to many-to-many joins for a moment. A consideration that is unique to them is the arithmetic of the join, specifically the set arithmetic we use for the join. To illustrate what we mean by this, let's restructure an old example DataFrame:
 
-```python
+```Python
 df5 = pd.DataFrame({'group': ['Engineering', 'Marketing', 'Sales'],
                     'core_skills': ['math', 'writing', 'communication']})
 df5
@@ -387,7 +390,7 @@ df5
 
 Here's the output:
 
-```output
+```Output
 |   | group       | core_skills   |
 -----------------------------------
 | 0 | Engineering | math          |
@@ -397,13 +400,13 @@ Here's the output:
 
 Run this code in a cell:
 
-```python
+```Python
 pd.merge(df1, df5, on='group')
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | employee | group     | core_skills |
 ------------------------------------------
 | 0 | Stu      | Marketing | writing     |
@@ -414,13 +417,13 @@ Notice that after we have restructured df5 and then rerun the merge with df1, we
 
 In effect, what we have gotten is the intersection of both DataFrames. This is know as the inner join in the database world and it is the default setting for merge although we can certainly specify it:
 
-```python
+```Python
 pd.merge(df1, df5, on='group', how='inner')
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | employee | group     | core_skills |
 ------------------------------------------
 | 0 | Stu      | Marketing | writing     |
@@ -435,7 +438,7 @@ The keyword for perfoming an outer join is `how`='outer'. How would you perform 
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
+
   ```Python
   pd.merge(df1, df5, on='group', how='outer')
   ```
@@ -450,20 +453,20 @@ The keyword for perfoming an outer join is `how`='outer'. How would you perform 
   | 4 | NaN      | Engineering | math          |
   | 5 | NaN      | Sales       | communication |
   ```
-</details>
 
+</details>
 
 Notice in your resulting DataFrame that not every row in df1 and df5 had a value that corresponds to the union of the key values (the **group** column). Pandas fills in these missing values with NaNs.
 
 Inner and outer joins are not your only options. A left join returns all of the rows in the first (left-side) DataFrame supplied to merge along with rows from the other DataFrame that match up with the left-side key values (and NaNs rows with respective values):
 
-```python
+```Python
 pd.merge(df1, df5, how='left')
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | employee | group      | core_skills |
 -------------------------------------------
 | 0 | Gary     | Accounting | NaN         |
@@ -478,7 +481,7 @@ Now run the right merge between df1 and df5. What do you expect to see?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
+
   ```Python
   pd.merge(df1, df5, how='right')
   ```
@@ -491,13 +494,14 @@ Now run the right merge between df1 and df5. What do you expect to see?
   | 2 | NaN      | Engineering | math          | 
   | 3 | NaN      | Sales       | communication | 
   ```
+
 </details>
 
 ## suffixes keyword: dealing with conflicting column names
 
 Because you can join datasets, you will eventually join two with conflicting column names. Let's look at another example to see what we mean:
 
-```python
+```Python
 df7 = pd.DataFrame({'name': ['Gary', 'Stu', 'Mary', 'Sue'],
                     'rank': [1, 2, 3, 4]})
 df7
@@ -505,7 +509,7 @@ df7
 
 Here's the output:
 
-```output
+```Output
 |   | name | rank |
 -------------------
 | 0 | Gary | 1    |
@@ -516,7 +520,7 @@ Here's the output:
 
 Next, run this code in a cell:
 
-```python
+```Python
 df8 = pd.DataFrame({'name': ['Gary', 'Stu', 'Mary', 'Sue'],
                     'rank': [3, 1, 4, 2]})
 df8
@@ -525,7 +529,7 @@ pd.merge(df7, df8, on='name')
 
 Here's the output:
 
-```output
+```Output
 |   | name | rank |
 -------------------
 | 0 | Gary | 3    |
@@ -536,13 +540,13 @@ Here's the output:
 
 Run this code in a cell:
 
-```python
+```Python
 pd.merge(df7, df8, on='name')
 ```
 
 Output:
 
-```output
+```Output
 |   | name | rank_x | rank_y |
 ------------------------------
 | 0 | Gary | 1      | 3      |
@@ -553,14 +557,14 @@ Output:
 
 Each column name in a DataFrame must be unique, so in cases where two joined DataFrames share column names (aside from the column serving as the key), the `merge` function automatically appends the suffix **_x** or **_y** to the conflicting column names in order to make them unique. In cases where it is best to control your column names, you can specify a custom suffix for merge to append through the suffixes keyword:
 
-```python
+```Python
 pd.merge(df7, df8, on='name')
 pd.merge(df7, df8, on='name', suffixes=['_left', '_right'])
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | name | rank_left | rank_right |
 -------------------------------------
 | 0 | Gary | 1         | 3          |
@@ -576,8 +580,8 @@ These suffixes work if there are multiple conflicting columns.
 Concatenation in pandas is built by using the concatenation functionality for NumPy arrays. Here is what NumPy concatenation looks like:
 
 * For one-dimensional arrays:
-   
-   ```python
+
+   ```Python
    x = [1, 2, 3]
    y = [4, 5, 6]
    z = [7, 8, 9]
@@ -586,20 +590,21 @@ Concatenation in pandas is built by using the concatenation functionality for Nu
 
    Here's the output:
 
-  ```output
-  array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-  ```
+   ```Output
+   array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+   ```
+
 * For two-dimensional arrays:
 
-   ```python
+   ```Python
    x = [[1, 2],
    [3, 4]]
    np.concatenate([x, x], axis=1)
    ```
 
    Here's the output:
-   
-   ```output
+
+   ```Output
    array([[1, 2, 1, 2],
        [3, 4, 3, 4]])
    ```
@@ -610,7 +615,7 @@ Notice that the `axis=1` parameter makes the concatenation occur along columns r
 
 pandas has a function, `pd.concat()` that can be used for a simple concatenation of Series or DataFrame objects similar to `np.concatenate()` with `ndarrays`.
 
-```python
+```Python
 ser1 = pd.Series(['a', 'b', 'c'], index=[1, 2, 3])
 ser2 = pd.Series(['d', 'e', 'f'], index=[4, 5, 6])
 pd.concat([ser1, ser2])
@@ -618,7 +623,7 @@ pd.concat([ser1, ser2])
 
 Here's the output:
 
-```output
+```Output
 1    a
 2    b
 3    c
@@ -630,7 +635,7 @@ dtype: object
 
 It also concatenates higher-dimensional objects, such as DataFrames:
 
-```python
+```Python
 df9 = pd.DataFrame({'A': ['a', 'c'],
                     'B': ['b', 'd']})
 df9
@@ -638,7 +643,7 @@ df9
 
 Here's the output:
 
-```output
+```Output
 |   | A | B |
 -------------
 | 0 | a | b |
@@ -647,30 +652,30 @@ Here's the output:
 
 Run this code in a cell:
 
-```python
+```Python
 pd.concat([df9, df9])
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | A | B |
 -------------
 | 0 | a | b |
-| 1 | c | d | 
+| 1 | c | d |
 | 0 | a | b |
-| 1 | c | d | 
+| 1 | c | d |
 ```
 
 Notice that `pd.concat` has preserved the indexing, even though that means that it has been duplicated. You can have the results reindexed (and avoid potential confusion down the road), like this:
 
-```python
+```Python
 pd.concat([df9, df9], ignore_index=True)
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | A | B |
 -------------
 | 0 | a | b |
@@ -681,13 +686,13 @@ Here's the output:
 
 By default, `pd.concat` concatenates row-wise within the DataFrame (that is, axis=0 by default). You can specify the axis along which to concatenate:
 
-```python
+```Python
 pd.concat([df9, df9], axis=1)
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | A | B | A | B |
 ---------------------
 | 0 | a | b | a | b |
@@ -700,7 +705,7 @@ Although pandas display the output without error, you will get an error message 
 
 Just as you did with merge above, you can use inner and outer joins when concatenating DataFrames with different sets of column names.
 
-```python
+```Python
 df10 = pd.DataFrame({'A': ['a', 'd'],
                      'B': ['b', 'e'],
                      'C': ['c', 'f']})
@@ -709,7 +714,7 @@ df10
 
 Here's the output:
 
-```output
+```Output
 |   | A | B | C |
 -----------------
 | 0 | a | b | c |
@@ -718,7 +723,7 @@ Here's the output:
 
 Run this code in a cell:
 
-```python
+```Python
 df11 = pd.DataFrame({'B': ['u', 'x'],
                      'C': ['v', 'y'],
                      'D': ['w', 'z']})
@@ -727,7 +732,7 @@ df11
 
 Here's the output:
 
-```output
+```Output
 |   | B | C | D |
 -----------------
 | 0 | u | v | w |
@@ -736,13 +741,13 @@ Here's the output:
 
 Run this code in a cell:
 
-```python
+```Python
 pd.concat([df10, df11])
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | A   | B | C | D   |
 -------------------------
 | 0 | a   | b | c | NaN |
@@ -753,16 +758,16 @@ Here's the output:
 
 As we saw earlier, the default join for this is an outer join and entries for which no data is available are filled with **NaN** values. You can also do an inner join:
 
-```python
+```Python
 pd.concat([df10, df11], join='inner')
 ```
 
 Here's the output:
 
-```output
+```Output
 |   |  B | C |
 --------------
-| 0 | b  | c | 
+| 0 | b  | c |
 | 1 | e  | f |
 | 0 | u  | v |
 | 1 | x  | y |
@@ -770,14 +775,14 @@ Here's the output:
 
 Another option is to directly specify the index of the remaining columns using the `join_axes` argument, which takes a list of index objects. Here, we will specify that the returned columns should be the same as those of the first input `(df10)`:
 
-```python
+```Python
 pd.concat([df10, df11], join_axes=[df10.columns])
 append()
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | A   | B | C |
 -------------------
 | 0 | a   | b | c |
@@ -790,13 +795,13 @@ Here's the output:
 
 Because direct array concatenation is so common, Series and DataFrame objects have an `append` method that can accomplish the same thing in fewer keystrokes. For example, rather than calling `pd.concat([df9, df9])`, you can call `df9.append(df9)`:
 
-```python
+```Python
 df9.append(df9)
 ```
 
 Here's the output:
 
-```output
+```Output
 |   | A | B |
 -------------
 | 0 | a | b |
@@ -808,4 +813,5 @@ Here's the output:
 > [!IMPORTANT]
 > Unlike the `append()` and `extend()` methods of Python lists, the `append()` method in pandas does not modify the original object. Instead, it creates a new object with the combined data.
 
+> [!div class="alert is-tip"]
 > **Takeaway**: A large part of the value you can provide as a data scientist comes from connecting multiple, often disparate datasets to find new insights. Learning how to join and merge data is thus an essential part of your skill set.

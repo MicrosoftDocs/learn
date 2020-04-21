@@ -23,7 +23,7 @@ The output is:
 1
 ```
 
-Another example: 
+Another example:
 
 ```Python
 squares[-1]
@@ -207,15 +207,19 @@ The output is:
 ### Try it yourself
 
 Nested lists come up a lot in programming, so it pays to practice.
+
 - Which indices would you include after `x` to get the output `c`?
 - How about to get the output `3`?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
+
   ```Python
   x[0][2]
   ```
+
   ```Python
   x[1][2]
   ```
+  
 </details>

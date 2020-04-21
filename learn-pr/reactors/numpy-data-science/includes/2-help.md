@@ -2,18 +2,18 @@ There's a lot to learn about NumPy, and it can be tough to remember it all the f
 
 First off, IPython gives you the ability to quickly explore the contents of a package like NumPy by using the tab-completion feature. So, if you want to see all of the functions available with NumPy, type this:
 
-```python
+```Python
 ipython
 np.<TAB>
 ```
 
 When you do so, a drop-down menu will appear next to the `np.`
 
-#### Try it yourself
+### Try it yourself
 
 Start typing `np.` and see the list of available functions come up.
 
-```python
+```Python
 np.
 ```
 

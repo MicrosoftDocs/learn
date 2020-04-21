@@ -8,18 +8,18 @@ Depending on the data, yes, you could (and you will use lists as a part of worki
 
 Python lists can hold just one kind of object. Let's use one to create a list of just integers:
 
-```python
+```Python
 myList = list(range(10))
 myList
 ```
 
-```output
+```Output
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 Remember list comprehension? We can use it to probe the data types of items in a list:
 
-```python
+```Python
 [type(item) for item in myList]
 ```
 
@@ -29,12 +29,12 @@ Remember list comprehension? We can use it to probe the data types of items in a
 
 Of course, a really handy feature of Python lists is that they can hold heterogeneous types of data in a single list object:
 
-```python
+```Python
 myList2 = [True, "2", 3.0, 4]
 [type(item) for item in myList2]
 ```
 
-```output
+```Output
 [bool, str, float, int]
 ```
 
@@ -55,30 +55,32 @@ There are multiple ways to create arrays in NumPy. Let's start by using our good
 
 Create an integer array:
 
-```python
+```Python
 np.array([1, 4, 2, 5, 3])
 ```
 
-```output
+```Output
 array([1, 4, 2, 5, 3])
 ```
 
 Remember that, unlike Python lists, NumPy constrains arrays to contain a single type. So, if data types fed into a NumPy array do not match, NumPy will attempt to *upcast* them if possible. To see what we mean, here NumPy upcasts integers to floats:
 
-```python
+```Python
 np.array([3.14, 4, 2, 3])
 ```
 
-```output
+```Output
 array([3.14, 4.  , 2.  , 3.  ])
 ```
 
-#### Try it yourself
+### Try it yourself
 
 What happens if you construct an array using a list that contains a combination of integers, floats, and strings?
 
 <details>
+
   <summary>Hint <i>(expand to reveal)</i></summary>
+
   ```Python
   np.array([3.14, 'pi', 3])
   ```
@@ -86,24 +88,27 @@ What happens if you construct an array using a list that contains a combination 
   ```Output
   array(['3.14', 'pi', '3'], dtype='<U32')
   ```
+
 </details>
 
 If you want to explicitly set the data type of your array when you create it, you can use the `dtype` keyword:
 
-```python
+```Python
 np.array([1, 2, 3, 4], dtype='float32')
 ```
 
-```output
+```Output
 array([1., 2., 3., 4.], dtype=float32)
 ```
 
-#### Try it yourself
+### Try it yourself
 
 Try this using a different `dtype`.
 
 <details>
+
   <summary>Hint <i>(expand to reveal)</i></summary>
+
   ```Python
   np.array([1.0, 2.5, 3, 4], dtype='int32')
   ```
@@ -111,6 +116,7 @@ Try this using a different `dtype`.
   ```Output
   array([1, 2, 3, 4])
   ```
+  
 </details>
 
 Remember that you can always refer to the documentation with the command `np.array`.
@@ -119,11 +125,11 @@ Most usefully for a lot of applications in data science, NumPy arrays can explic
 
 Nested lists result in multi-dimensional arrays:
 
-```python
+```Python
 np.array([range(i, i + 3) for i in [2, 4, 6]])
 ```
 
-```output
+```Output
 array([[2, 3, 4],
        [4, 5, 6],
        [6, 7, 8]])
@@ -137,21 +143,21 @@ In practice, it is often more efficient to create arrays from scratch using func
 
 Create an integer array of length 10 filled with zeros:
 
-```python
+```Python
 np.zeros(10, dtype=int)
 ```
 
-```output
+```Output
 array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 ```
 
 Create a 3 x 5 floating-point array filled with ones:
 
-```python
+```Python
 np.ones((3, 5), dtype=float)
 ```
 
-```output
+```Output
 array([[1., 1., 1., 1., 1.],
        [1., 1., 1., 1., 1.],
        [1., 1., 1., 1., 1.]])
@@ -161,11 +167,11 @@ Create a 3 x 5 array filled with 3.14.
 The first number in the tuple gives the number of rows.
 The second number in the tuple sets the number of columns.
 
-```python
+```Python
 np.full((3, 5), 3.14)
 ```
 
-```output
+```Output
 array([[3.14, 3.14, 3.14, 3.14, 3.14],
        [3.14, 3.14, 3.14, 3.14, 3.14],
        [3.14, 3.14, 3.14, 3.14, 3.14]])
@@ -174,31 +180,31 @@ array([[3.14, 3.14, 3.14, 3.14, 3.14],
 Create an array filled with a linear sequence.
 Starting at 0, ending at 20, stepping by 2 (this is similar to the built-in Python range() function):
 
-```python
+```Python
 np.arange(0, 20, 2).
 ```
 
-```output
+```Output
 array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
 ```
 
 Create an array of five values evenly spaced between 0 and 1:
 
-```python
+```Python
 np.linspace(0, 1, 5)
 ```
 
-```output
+```Output
 array([0.  , 0.25, 0.5 , 0.75, 1.  ])
 ```
 
 Create a 3 x 3 array of uniformly distributed random values between 0 and 1:
 
-```python
+```Python
 np.random.random((3, 3))
 ```
 
-```output
+```Output
 array([[0.1293533 , 0.00963681, 0.76015197],
        [0.97076867, 0.16947551, 0.51899825],
        [0.28123745, 0.37741323, 0.01221669]])
@@ -207,11 +213,11 @@ array([[0.1293533 , 0.00963681, 0.76015197],
 Create a 3 x 3 array of normally distributed random values
 with mean 0 and standard deviation 1:
 
-```python
+```Python
 np.random.normal(0, 1, (3, 3))
 ```
 
-```output
+```Output
 array([[ 0.41781774,  1.10706673, -1.84875856],
        [ 0.9436157 ,  0.36446661,  0.1319522 ],
        [-1.18743752,  0.48199796,  0.37693047]])
@@ -219,22 +225,23 @@ array([[ 0.41781774,  1.10706673, -1.84875856],
 
 Create a 3 x 3 array of random integers in the interval [0, 10):
 
-```python
+```Python
 np.random.randint(0, 10, (3, 3))
 ```
 
-```output
+```Output
 array([[0, 3, 7],
        [8, 1, 8],
        [0, 5, 7]])
 ```
 
 Create a 3 x 3 identity matrix:
-```python
+
+```Python
 np.eye(3)
 ```
 
-```output
+```Output
 array([[1., 0., 0.],
        [0., 1., 0.],
        [0., 0., 1.]])
@@ -242,11 +249,12 @@ array([[1., 0., 0.],
 
 Create an uninitialized array of three integers:
 The values will be whatever happens to already exist at that memory location.
-```python
+
+```Python
 np.empty(3)
 ```
 
-```output
+```Output
 array([1., 1., 1.])
 ```
 

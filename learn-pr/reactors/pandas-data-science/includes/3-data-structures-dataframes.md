@@ -245,6 +245,7 @@ Again, note that `DataFrame` columns are `Series` and thus the data types must c
 > If there had been strings in this `DataFrame`, everything would have been upcast to the `string` type. Use caution when transposing `DataFrames`.
 
 ## From a two-dimensional NumPy array
+
 Given a two-dimensional array of data, we can create a `DataFrame` with any specified column and index names. If omitted, an integer index will be used for each:
 
 ```Python

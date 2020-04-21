@@ -2,59 +2,59 @@ Another means of vectorizing operations is to use NumPy's *broadcasting* functio
 
 Before, when we performed binary operations on arrays of the same size, those operations were performed on an element-by-element basis.
 
-```python
+```Python
 first_array = np.array([3, 6, 8, 1])
 second_array = np.array([4, 5, 7, 2])
 first_array + second_array
 ```
 
-```output
+```Output
 array([ 7, 11, 15,  3])
 ```
 
 Broadcasting enables you to perform these types of binary operations on arrays of different sizes. Thus, you could just as easily add a scalar (which is really just a zero-dimensional array) to an array:
 
-```python
+```Python
 first_array + 5
 ```
 
-```output
+```Output
 array([ 8, 11, 13,  6])
 ```
 
 Similarly, you can add a one-dimensional array to a two-dimensional array:
 
-```python
+```Python
 one_dim_array = np.ones((1))
 one_dim_array
 ```
 
-```output
+```Output
 array([1.])
 ```
 
-```python
+```Python
 two_dim_array = np.ones((2, 2))
 two_dim_array
 ```
 
-```output
+```Output
 array([[1., 1.],
        [1., 1.]])
 ```
 
-```python
+```Python
 one_dim_array + two_dim_array
 ```
 
-```output
+```Output
 array([[2., 2.],
        [2., 2.]])
 ```
 
 So far, so easy. But you can use broadcasting on arrays in more complicated ways. Consider this example:
 
-```python
+```Python
 horizontal_array = np.arange(3)
 vertical_array = np.arange(3)[:, np.newaxis]
 
@@ -62,18 +62,18 @@ print(horizontal_array)
 print(vertical_array)
 ```
 
-```output
+```Output
 [0 1 2]
 [[0]
  [1]
  [2]]
 ```
 
-```python
+```Python
 horizontal_array + vertical_array
 ```
 
-```output
+```Output
 array([[0, 1, 2],
        [1, 2, 3],
        [2, 3, 4]])
@@ -93,7 +93,7 @@ Let's see these rules in action to better understand them.
 
 Let's look at adding a two-dimensional array to a one-dimensional array:
 
-```python
+```Python
 two_dim_array = np.ones((2, 3))
 one_dim_array = np.arange(3)
 ```
@@ -115,16 +115,16 @@ By rule 2, we now see that the first dimension disagrees, so we stretch this dim
 
 The shapes match, and we see that the final shape will be `(2, 3)`:
 
-```python
+```Python
 two_dim_array + one_dim_array
 ```
 
-```output
+```Output
 array([[1., 2., 3.],
        [1., 2., 3.]])
 ```
 
-#### Try it yourself
+### Try it yourself
 
 Flip this around. Try adding these with `two_dim_array = np.ones((3, 2))`
 and `one_dim_array = np.arange(3)[:, np.newaxis]`. 
@@ -132,35 +132,38 @@ and `one_dim_array = np.arange(3)[:, np.newaxis]`.
 What do you get?
 
 <details>
+
   <summary>Hint <i>(expand to reveal)</i></summary>
-  ```python
+
+  ```Python
   two_dim_array = np.ones((3, 2))
   two_dim_array
   ```
   
-  ```output
+  ```Output
   array([[1., 1.],
        [1., 1.],
        [1., 1.]])
   ```
 
-  ```python
+  ```Python
   one_dim_array = np.arange(3)[:, np.newaxis]
   one_dim_array
   ```
   
-  ```output
+  ```Output
   array([[0],
        [1],
        [2]])
   ```
+  
 </details>
 
 ### Broadcasting example 2
 
 Let's examine what happens when both arrays need to be broadcast:
 
-```python
+```Python
 vertical_array = np.arange(3).reshape((3, 1))
 horizontal_array = np.arange(3)
 ```
@@ -182,11 +185,11 @@ And rule 2 tells us that we upgrade each of these ones to match the correspondin
 
 Because the result matches, these shapes are compatible. We can see this here:
 
-```python
+```Python
 vertical_array + horizontal_array
 ```
 
-```output
+```Output
 array([[0, 1, 2],
        [1, 2, 3],
        [2, 3, 4]])
@@ -196,7 +199,7 @@ array([[0, 1, 2],
 
 Here's what happens with incompatible arrays:
 
-```python
+```Python
 M = np.ones((3, 2))
 i = np.arange(3)
 ```
@@ -218,11 +221,11 @@ By rule 2, the first dimension of `i` is stretched to match that of `M`:
 
 Now we hit Rule 3: the final shapes do not match and the two arrays are incompatible:
 
-```python
+```Python
 M + i
 ```
 
-```output
+```Output
 ---------------------------------------------------------------------------
 ValueError                                Traceback (most recent call last)
 <ipython-input-140-90923315444d> in <module>
@@ -239,12 +242,12 @@ A common data practice is to *center* an array of data. For example, if we hav
 
 We'll store this in a 10 x 3 array:
 
-```python
+```Python
 T = np.random.random((10, 3))
 T
 ```
 
-```output
+```Output
 array([[0.90137772, 0.75292208, 0.26398243],
        [0.46383154, 0.38378661, 0.93354504],
        [0.17893062, 0.2792731 , 0.24203594],
@@ -259,23 +262,23 @@ array([[0.90137772, 0.75292208, 0.26398243],
 
 Now compute the mean of each feature using the `mean` aggregate across the first dimension:
 
-```python
+```Python
 Tmean = T.mean(0)
 Tmean
 ```
 
-```output
+```Output
 array([0.43302262, 0.30781767, 0.50607784])
 ```
 
 Finally, center `T` by subtracting the mean. (This is a broadcasting operation.)
 
-```python
+```Python
 T_centered = T - Tmean
 T_centered
 ```
 
-```output
+```Output
 array([[ 0.4683551 ,  0.4451044 , -0.24209541],
        [ 0.03080892,  0.07596894,  0.4274672 ],
        [-0.254092  , -0.02854458, -0.2640419 ],

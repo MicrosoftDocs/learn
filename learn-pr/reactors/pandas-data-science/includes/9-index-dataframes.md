@@ -15,7 +15,7 @@ The output is:
 | 1  | 5  | 1  |
 ```
 
-Another example: 
+Another example:
 
 ```Python
 df2 = pd.DataFrame(rng.randint(0, 10, (3, 3)),
@@ -51,6 +51,7 @@ Add df1 and df2. Is the output what you expected?
   | 1  | 13.0 | 6.0  | NaN |
   | 2  | NaN  | NaN  | NaN |
   ```
+  
 </details>
 
 Even though we passed the columns in a different order in `df2` than in `df1`, the indices were aligned correctly sorted in the resulting union of columns.

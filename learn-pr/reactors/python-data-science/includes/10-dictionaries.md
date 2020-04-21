@@ -31,12 +31,13 @@ Now try adding another country (or something else) to the capitals dictionary.
   capitals['United States'] = ('DC', 100000000000)
   capitals
   ```
+
   ```Output
   {'France': ('Paris', 2140526),
  'Nigeria': ('Lagos', 6048430),
  'United States': ('DC', 100000000000)}
   ```
-  
+
 </details>
 
 You reference entries much like you do as through an index number for a string, list, or tuple, but instead of an index, use a key:
@@ -104,4 +105,3 @@ The output is:
 > ### Takeaway
 >
 > Regardless of how complex and voluminous the data you will work with, these basic data structures will repeatedly be your means for handling and manipulating it. Comfort with these basic data structures is essential to being able to understand and use Python code written by others.
-> 

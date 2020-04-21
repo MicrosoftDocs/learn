@@ -4,19 +4,19 @@
 
 Let's see masking in practice by examining the monthly rainfall statistics for Seattle. The data is in a CSV file from data.gov. To load the data, we will use pandas, which we will formally introduce in Section 4.
 
-```python
+```Python
 import numpy as np
 import pandas as pd
 ```
 
 Use pandas to extract rainfall as a NumPy array. You need to make sure you have cloned the [Reactor repository](https://github.com/microsoft/Reactors) and opened the [Learn/Intro-Python-Data-Science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md) in VS Code as described in the [environment setup unit](../../python-data-science/1-introduction.yml). In this folder you will find a data folder with the required `csv` files.
 
-```python
+```Python
 rainfall_2003 = pd.read_csv('Data/Observed_Monthly_Rain_Gauge_Accumulations_-_Oct_2002_to_May_2017.csv')['RG01'][ 2:14].values
 rainfall_2003
 ```
 
-```output
+```Output
 array([6.55, 1.61, 5.01, 2.27, 0.91, 0.49, 0.12, 0.33, 0.97, 6.32, 2.54,
        3.19])
 ```
@@ -27,18 +27,19 @@ You now have an array containing 12 values, each of which records the monthly ra
 
 Commonly in data science, you will want to take a quick first exploratory look at the data. In this case, a bar chart is a good way to do this. To generate this bar chart, we will use Matplotlib, another important data-science tool that we will introduce formally later in the course. (This also brings up another widely used Python convention you should adopt: `import matplotlib.pyplot as plt`.)
 
-```python
+```Python
 %matplotlib inline
 import matplotlib.pyplot as plt
 ```
 
-```python
+```Python
 plt.bar(np.arange(1, len(rainfall_2003) + 1), rainfall_2003)
 ```
 
 > output
 >
-> <BarContainer object of 12 artists>
+> \<BarContainer object of 12 artists\>
+>
 > ![BarContainer object of 12 artist](..\media\bar-container-object-12-artists.svg)
 
 To briefly interpret the code snippet above, we passed two parameters to the bar function in pyplot: the first defining the index for the x-axis and the second defining the data to use for the bars (the y-axis). To create the index, we use the NumPy function `arange` to create a sequence of numbers (this is the same `arange` we encountered earlier in this section). We know that the length of our array is 12, but it can be a good habit to get into to programmatically pass the length of an array in case it changes or you don't know it with specificity. We also added 1 to both the start and the end of the `arange` to accommodate for Python zero-indexing (because there is no "month-zero" in the calendar).
@@ -49,41 +50,41 @@ Looking at the chart above (and as residents can attest), Seattle can have lovel
 
 In addition to the computational operators as ufuncs that we have already encountered, NumPy also implements comparison operators such as `<` (less than) and `>` (greater than) as element-wise ufuncs. All of the standard Python comparison operations are available:
 
-```python
+```Python
 simple_array = np.array([1, 2, 3, 4, 5])
 ```
 
-```python
+```Python
 simple_array < 2  # less than
 ```
 
-```output
+```Output
 array([ True, False, False, False, False])
 ```
 
-```python
+```Python
 simple_array >= 4  # greater than or equal
 ```
 
-```output
+```Output
 array([False, False, False,  True,  True])
 ```
 
-```python
+```Python
 simple_array == 2  # equal
 ```
 
-```output
+```Output
 array([False,  True, False, False, False])
 ```
 
 It is also possible to do an element-wise comparison of two arrays, and to include compound expressions:
 
-```python
+```Python
 (2 * simple_array) == (simple_array ** 2)
 ```
 
-```output
+```Output
 array([False,  True, False, False, False])
 ```
 
@@ -97,23 +98,23 @@ As with the arithmetic operators, these comparison operators are wrappers for th
 
 Just like the arithmetic ufuncs, the comparison ufuncs work on arrays of any size and shape.
 
-```python
+```Python
 rand = np.random.RandomState(0)
 two_dim_array = rand.randint(10, size=(3, 4))
 two_dim_array
 ```
 
-```output
+```Output
 array([[5, 0, 3, 3],
        [7, 9, 3, 5],
        [2, 4, 7, 6]])
 ```
 
-```python
+```Python
 two_dim_array < 6
 ```
 
-```output
+```Output
 array([[ True,  True,  True,  True],
        [False, False,  True,  True],
        [ True,  True, False, False]])

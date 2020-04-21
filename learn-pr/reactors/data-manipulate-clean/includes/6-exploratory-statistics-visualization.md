@@ -4,7 +4,7 @@ Often when probing a new dataset, it's invaluable to get high-level information 
 
 To see what we mean in terms of gaining exploratory insight—both visually and numerically—let's dig into one of the datasets that come with the scikit-learn library, the Boston Housing Dataset. First, load the dataset from a CSV file:
 
-```python
+```Python
 df = pd.read_csv('Data/housing_dataset.csv')
 df.head()
 ```
@@ -33,13 +33,13 @@ One of the first methods we can use to better understand this dataset is `DataFr
 
 To find out how many rows and columns the dataset contains, run this command:
 
-```python
+```Python
 df.shape
 ```
 
 Here's the output:
 
-```output
+```Output
 (506, 13)
 ```
 
@@ -47,7 +47,7 @@ The dataset has 506 rows and 13 columns.
 
 To get a better idea of the contents of each column, we can use `DataFrame.describe`. `DataFrame.describe` returns the maximum value, minimum value, mean, and standard deviation of numeric values in each column, and the quartiles for each column:
 
-```python
+```Python
 df.describe()
 ```
 
@@ -61,13 +61,13 @@ Note that you can also examine specific descriptive statistics for columns witho
 
 To get the mean of the median value of owner-occupied homes in the dataset (in $1,000s), run this command:
 
-```python
+```Python
 df['MEDV'].mean()
 ```
 
 Here's the output:
 
-```output
+```Output
 22.532806324110698
 ```
 
@@ -75,13 +75,13 @@ The mean of the median value of a home is approximately $22,500.
 
 To get the maximum of the median value of owner-occupied homes in the dataset (in $1,000s), run this command:
 
-```python
+```Python
 df['MEDV'].max()
 ```
 
 Here's the output:
 
-```output
+```Output
 50.0
 ```
 
@@ -89,13 +89,13 @@ The maximum of the median value is around $50,000.
 
 Next, to get the median of `AGE`, the proportion of owner-occupied units built before 1940, run this command:
 
-```python
+```Python
 df['AGE'].median()
 ```
 
 The output shows that 77.5% is the median of `AGE`:
 
-```output
+```Output
 77.5
 ```
 
@@ -105,7 +105,7 @@ Now, find the maximum value in `df['AGE']`.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
+
   ```Python
     df['AGE'].max()
   ```
@@ -113,17 +113,18 @@ Now, find the maximum value in `df['AGE']`.
   ```Output
   100.0
   ```
+
 </details>
 
 Other information that you often will want to see is the relationship between different columns. To do this, use the `DataFrame.groupby` method. For example, you could examine the average `MEDV` (median value of owner-occupied homes) for each value of `AGE` (proportion of owner-occupied units built prior to 1940):
 
-```python
+```Python
 df.groupby(['AGE'])['MEDV'].mean()
 ```
 
 Here's the output:
 
-```output
+```Output
 AGE
 2.9      26.600000
 6.0      24.100000
@@ -195,7 +196,7 @@ Now try to find the median value for `AGE` for each value of `MEDV`.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
+
   ```Python
   df.groupby(['MEDV'])['AGE'].median()
   ```
@@ -265,23 +266,24 @@ Now try to find the median value for `AGE` for each value of `MEDV`.
   50.0     90.20
   Name: AGE, Length: 229, dtype: float64
   ```
+  
 </details>
 
 You can also apply a lambda function to each element of a DataFrame column by using the `apply` method. For example, say you wanted to create a new column that flagged a row if more than 50 percent of owner-occupied homes were build before 1940:
 
-```python
+```Python
 df['AGE_50'] = df['AGE'].apply(lambda x: x>50)
 ```
 
 Once applied, you also can see how many values returned `true` and how many `false` by using the `value_counts` method:
 
-```python
+```Python
 df['AGE_50'].value_counts()
 ```
 
 Here's the output:
 
-```output
+```Output
 True     359
 False    147
 Name: AGE_50, dtype: int64
@@ -289,13 +291,13 @@ Name: AGE_50, dtype: int64
 
 You can also examine figures from the `groupby` statement you created earlier:
 
-```python
+```Python
 df.groupby(['AGE_50'])['MEDV'].mean()
 ```
 
 Here's the output:
 
-```output
+```Output
 AGE_50
 False    26.693197
 True     20.829248
@@ -304,19 +306,19 @@ Name: MEDV, dtype: float64
 
 You can also group by more than one variable, such as `AGE_50` (the one you just created), `CHAS` (whether a town is on the Charles River), and `RAD` (an index that measures access to the Boston-area radial highways), and then evaluate each group for the average median home price in that group:
 
-```python
+```Python
 groupby_twovar=df.groupby(['AGE_50','RAD','CHAS'])['MEDV'].mean()
 ```
 
 You can then see what values are in this stacked group of variables:
 
-```python
+```Python
 groupby_twovar
 ```
 
 Here's the output:
 
-```output
+```Output
 AGE_50  RAD   CHAS
 False   1.0   0.0     24.666667
               1.0     50.000000
@@ -353,7 +355,7 @@ One insight that pops out from continuing down this is that, all else being equa
 
 Although groupings like this can be a great way to begin to interrogate your data, you might not care for the tall format it comes in. In that case, you can unstack the data into a wide format:
 
-```python
+```Python
 groupby_twovar.unstack()
 ```
 
@@ -363,37 +365,37 @@ Here's the output:
 
 It's often valuable to know how many unique values a column has in it by using the `nunique` method:
 
-```python
+```Python
 df['CHAS'].nunique()
 ```
 
 Here's the output:
 
-```output
+```Output
 2
 ```
 
 Complementary to that, you also likely will want to know what those unique values are, which is where the `unique` method helps:
 
-```python
+```Python
 df['CHAS'].unique()
 ```
 
 Here's the output:
 
-```output
+```Output
 array([0., 1.])
 ```
 
 You can use the `value_counts` method to see how many of each unique value there are in a column:
 
-```python
+```Python
 df['CHAS'].value_counts()
 ```
 
 Here's the output:
 
-```output
+```Output
 0.0    471
 1.0     35
 Name: CHAS, dtype: int64
@@ -401,7 +403,7 @@ Name: CHAS, dtype: int64
 
 Or you can easily plot a bar graph to visually see the breakdown:
 
-```python
+```Python
 df['CHAS'
 %matplotlib inline
 df['CHAS'].value_counts().plot(kind='bar')
@@ -409,7 +411,7 @@ df['CHAS'].value_counts().plot(kind='bar')
 
 Here's the output:
 
-```output
+```Output
 <matplotlib.axes._subplots.AxesSubplot at 0x12cddbed0>
 ```
 
@@ -420,7 +422,7 @@ Here's the output:
 
 Let's pull back from the dataset as a whole for a moment. Two major things that you will look for in almost any dataset are trends and relationships. A typical relationship between variables to explore is the Pearson correlation, or the extent to which two variables are linearly related. The `corr` method will show this in table format for all of the columns in a DataFrame:
 
-```python
+```Python
 df.corr(method='pearson')
 ```
 
@@ -430,7 +432,7 @@ Here's the output:
 
 Suppose you want to look only at the correlations between all the columns and one variable? Let's examine only the correlation between all other variables and the percentage of owner-occupied houses build before 1940 (`AGE`). We will do this by accessing the column by index number:
 
-```python
+```Python
 corr = df.corr(method='pearson')
 corr_with_homevalue = corr.iloc[-1]
 corr_with_homevalue[corr_with_homevalue.argsort()[::-1]]
@@ -438,7 +440,7 @@ corr_with_homevalue[corr_with_homevalue.argsort()[::-1]]
 
 Here's the output:
 
-```output
+```Output
 AGE_50     1.000000
 AGE        0.870348
 NOX        0.597644
@@ -460,14 +462,14 @@ With the correlations arranged in descending order, it's easy to start to see so
 
 Graphically, we can see the correlations by using a heatmap from the Seaborn library:
 
-```python
+```Python
 import seaborn as sns
 sns.heatmap(df.corr(),cmap=sns.cubehelix_palette(20, light=0.95, dark=0.15))
 ```
 
 Here's the output:
 
-```output
+```Output
 <matplotlib.axes._subplots.AxesSubplot at 0x12e168ad0>
 ```
 
@@ -475,14 +477,14 @@ Here's the output:
 
 Histograms are another valuable tool for investigating your data. For example, what is the overall distribution of prices of owner-occupied houses in the Boston area?
 
-```python
+```Python
 import matplotlib.pyplot as plt
 plt.hist(df['MEDV'])
 ```
 
 Here's the output:
 
-```output
+```Output
 (array([ 21.,  55.,  82., 154.,  84.,  41.,  30.,   8.,  10.,  21.]),
  array([ 5. ,  9.5, 14. , 18.5, 23. , 27.5, 32. , 36.5, 41. , 45.5, 50. ]),
  <a list of 10 Patch objects>)
@@ -492,13 +494,13 @@ Here's the output:
 
 The default bin size for the matplotlib histogram (essentially big of buckets of percentages that you include in each histogram bar in this case) is pretty large and might mask smaller details. To get a finer-grained view of the AGE column, you can manually increase the number of bins in the histogram:
 
-```python
+```Python
 plt.hist(df['MEDV'],bins=50)
 ```
 
 Here's the output:
 
-```output
+```Output
 (array([ 3.,  1.,  7.,  7.,  3.,  6.,  8., 10.,  8., 23., 15., 19., 14.,
         16., 18., 28., 36., 29., 33., 28., 37., 21., 15.,  4.,  7., 11.,
          9.,  9.,  5.,  7.,  7.,  8.,  2.,  8.,  5.,  4.,  2.,  1.,  1.,
@@ -515,13 +517,13 @@ Here's the output:
 
 Seaborn has a somewhat more attractive version of the standard matplotlib histogram: the distribution plot. This is a combination histogram and kernel density estimate (KDE) plot (essentially a smoothed histogram):
 
-```python
+```Python
 sns.distplot(df['MEDV'])
 ```
 
 Here's the output:
 
-```output
+```Output
 <matplotlib.axes._subplots.AxesSubplot at 0x12dde6bd0>
 ```
 
@@ -529,13 +531,13 @@ Here's the output:
 
 Another commonly used plot is the Seaborn `jointplot`, which combines histograms for two columns along with a scatterplot:
 
-```python
+```Python
 sns.jointplot(df['RM'], df['MEDV'], kind='scatter')
 ```
 
 Here's the output:
 
-```output
+```Output
 <seaborn.axisgrid.JointGrid at 0x12e0f35d0>
 ```
 
@@ -543,13 +545,13 @@ Here's the output:
 
 Unfortunately, many of the dots print over each other. You can help address this by adding some alpha blending, a figure that sets the transparency for the dots so that concentrations of them drawing over one another will be apparent:
 
-```python
+```Python
 sns.jointplot(df['RM'], df['MEDV'], kind='scatter', alpha=0.3)
 ```
 
 Here's the output:
 
-```output
+```Output
 <seaborn.axisgrid.JointGrid at 0x12e760510>
 ```
 
@@ -557,13 +559,13 @@ Here's the output:
 
 Another way to see patterns in your data is with a two-dimensional KDE plot. Darker colors represent a higher concentration of data points:
 
-```python
+```Python
 sns.kdeplot(df['RM'], df['MEDV'], shade=True)
 ```
 
 Here's the output:
 
-```output
+```Output
 <matplotlib.axes._subplots.AxesSubplot at 0x11c455650>
 ```
 
@@ -573,13 +575,13 @@ Note that although the KDE plot is very good at showing concentrations of data p
 
 Finally, `pairplot` in Seaborn allows you to see scatterplots and histograms for several columns in one table. Here, we have played with some of the keywords to produce a more sophisticated and easier-to-read `pairplot` that incorporates both alpha blending and linear regression lines for the scatterplots:
 
-```python
+```Python
 sns.pairplot(df[['RM', 'AGE', 'LSTAT', 'DIS', 'MEDV']], kind="reg", plot_kws={'line_kws':{'color':'red'}, 'scatter_kws': {'alpha': 0.1}})
 ```
 
 Here's the output:
 
-```output
+```Output
 <seaborn.axisgrid.PairGrid at 0x12eb4dd10>
 ```
 
