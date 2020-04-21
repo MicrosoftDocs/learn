@@ -1,6 +1,6 @@
 Suppose you work for a large book publisher that's deploying Windows 10 to employees' laptops. Your organization uses Azure Active Directory (Azure AD) and Azure Multi-Factor Authentication. With these services, you can manage user identities and help protect the organization's resources. 
 
-You want to add another layer of security for devices. Specifically, you need to restrict access to the organization's resources to only devices that are managed by your organization and considered compliant by your mobile device management (MDM) system. You also want to improve your organization's experience when switching between devices.
+You want to add another layer of security for devices. Specifically, you need to restrict access to the organization's resources to only devices that your organization manages and that your mobile device management (MDM) system considers compliant. You also want to improve your organization's experience when switching between devices.
 
 ## Learning objectives
 

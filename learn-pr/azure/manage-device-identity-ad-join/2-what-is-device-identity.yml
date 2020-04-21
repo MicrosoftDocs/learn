@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.manage-device-identity-ad-join.what-is-device-identity
-title: What is the device identity in Azure?
+title: What is device identity in Azure?
 metadata:
   title:  What is device identity in Azure?
   description: Learn about device identity in Azure.
@@ -19,22 +19,22 @@ quiz:
     choices:
     - content: "Windows 10, iOS, Android, and macOS"
       isCorrect: true
-      explanation: "Azure AD register supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
+      explanation: "The option of Azure AD registered supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
     - content: "Windows 7, Windows 8.1, and Windows 10 only"
       isCorrect: false
-      explanation: "Azure AD register supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
+      explanation: "The option of Azure AD registered supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
     - content: "Windows 10 and macOS"
       isCorrect: false
-      explanation: "Azure AD register supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
+      explanation: "The option of Azure AD registered supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
   - content: "What device security sign-in options does Azure AD join support?"
     choices:
     - content: "An Azure AD work account with password, PIN, pattern, or Windows Hello"
       isCorrect: false
       explanation: "No, Azure AD join doesn't support PIN or pattern."
-    - content: "An Azure AD work account with password or Windows Hello, and multi-factor authentication"
+    - content: "An Azure AD work account with password or Windows Hello, and multifactor authentication"
       isCorrect: true
       explanation: "Azure AD join supports Windows 10 or Windows Server 2019 devices where users sign in by using their work account with a password or Windows Hello. Azure Multi-Factor Authentication is also supported."
-    - content: "A Microsoft account with password, Windows Hello, and multi-factor authentication"
+    - content: "A Microsoft account with password, Windows Hello, and multifactor authentication"
       isCorrect: false
       explanation: "No, Azure AD join requires users to access your Azure AD organization through their Azure AD work account."
   - content: "When is conditional access applied?"

@@ -39,13 +39,15 @@ To enable Enterprise State Roaming, go to **Azure Active Directory** > **Devices
 
 For **Users may sync settings and app data across devices**, select **All** or **Selected**. 
 
-With **Selected**. you add the users or groups that will have Enterprise State Roaming available.
+With **Selected**, you add the users or groups that will have Enterprise State Roaming available.
 
 ![Screenshot that shows how you'd add members allowed to sync settings and app data.](../media/4-enterprise-state-roaming-selected.png)
 
 ## Data storage
 
-Enterprise State Roaming stores the user data in a geographical region that's nearest to your Azure AD instance. There are three geographic regions: North America (USA); Europe, the Middle East, and Africa (EMEA); and Asia-Pacific (APAC). Although tenant data will be hosted in the nearest region, user data can be hosted in one or more of these regions. The country or region for your tenant is defined when Azure AD is set up and can't be changed.
+Enterprise State Roaming stores the user data in a geographical region that's nearest to your Azure AD instance. There are three geographic regions: North America (USA); Europe, the Middle East, and Africa (EMEA); and Asia-Pacific (APAC). Although tenant data will be hosted in the nearest region, user data can be hosted in one or more of these regions. 
+
+The country or region for your tenant is defined when Azure AD is set up. It can't be changed.
 
 ## Data retention
 

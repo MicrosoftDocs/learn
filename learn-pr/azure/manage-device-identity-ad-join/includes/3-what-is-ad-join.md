@@ -2,7 +2,7 @@ You now have a better understanding of device identity and conditional access. Y
 
 In this unit, you'll learn about Azure AD join, and how to use it for infrastructure and device management.
 
-## What is Azure AD join?
+## Basics of Azure AD join
 
 With Azure AD join, you can join devices to your Azure Active Directory organization without needing to sync with an on-premises Active Directory instance. Azure AD join is best suited to organizations that are principally cloud based, although it can operate in a hybrid cloud and on-premises environment.
 
@@ -29,7 +29,7 @@ To manage your Azure AD joined devices, there are two approaches:
 
 - **MDM only**: All joined devices are managed exclusively through an MDM provider, like Intune. If your organization uses group policies, you'll need to review your MDM policy for support.
 
-- **Co-management**: All joined devices use a combination of a locally installed System Center Configuration Manager agent and your MDM provider. Microsoft Intune provides co-management capabilities through Configuration Manager. You use Configuration Manager to manage the device while MDM delivers user management policies.
+- **Co-management**: All joined devices use a combination of a locally installed System Center Configuration Manager agent and your MDM provider. Microsoft Intune provides co-management capabilities through Configuration Manager. You use Configuration Manager to manage the device while MDM delivers user-management policies.
 
 We recommend that you use the MDM-only approach to manage all Azure AD joined devices.
 
@@ -78,7 +78,7 @@ In the Azure portal, you control how new devices are joined to your organization
 |Users may join devices to Azure AD   |  **All** allows for any user to join their device. **Selected** allows you to add specific users that can join devices. **None** prevents all users from joining their devices.     |
 |Additional local administrators on Azure AD joined devices     | Lets you specify other users to be included as local administrators on all joined devices. By default, this option is enabled. Azure AD adds the global administrator and device administrator roles as local administrators on devices. |
 |Users may register their devices with Azure AD|Allows users to register their devices with Azure AD join. If you're using Microsoft Intune or mobile device management for Office 365, device registration is required. If either of these services is configured in your Azure AD organization, **All** is selected and this option is disabled.|
-|Require Multi-Factor Authentication to join device |  Lets you enforce Azure Multi-Factor Authentication when the device joins Azure AD. For the users who join devices to Azure AD by using Multi-Factor Authentication, the device itself becomes a second factor.   |
+|Require Multi-Factor Authentication to join devices |  Lets you enforce Azure Multi-Factor Authentication when the device joins Azure AD. For users who join devices to Azure AD by using Multi-Factor Authentication, the device itself becomes a second factor.   |
 |Maximum number of devices per user| Lets you specify the maximum number of devices a user can have in Azure AD. If a user reaches this maximum, they need to remove a device to add a new one. |
 
 For our scenario, we can add a pilot group of users to try AD join. In that case, choose **Users may join devices to Azure AD** > **Selected**, and then add members of your pilot group. When you're ready to deploy Azure AD join to your entire Azure AD organization, select **All**.

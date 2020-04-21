@@ -20,7 +20,7 @@ quiz:
     - content: "Self-service by using the Windows out-of-box experience (OOBE), Windows Autopilot, or bulk enrollment"
       isCorrect: true
       explanation: "All three options allow devices to be joined to Azure AD."
-    - content: "Self-service using MDM, Windows Autopilot, or bulk enrollment"
+    - content: "Self-service by using MDM, Windows Autopilot, or bulk enrollment"
       isCorrect: false
       explanation: "There's no self-service capability that uses MDM."
     - content: "Windows Autopilot or bulk enrollment"
