@@ -121,7 +121,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
     :::image type="content" source="../media/3-complete-webapp.png" alt-text="Browse the completed webapp." loc-scope="other":::
 
-1. Close the web browser. In the Code integrated terminal, press <kbd>CTRL-C</kbd> to stop the webapp. If the prompt displays `Terminate batch job (Y/N)?`, type <kbd>Y</kbd> and press <kbd>Enter</kbd>.
+1. Close the web browser. In the Code integrated terminal, press <kbd>Ctrl+C</kbd> to stop the webapp. If the prompt displays `Terminate batch job (Y/N)?`, type <kbd>Y</kbd> and press <kbd>Enter</kbd>.
 
 ::: zone-end
 
@@ -149,23 +149,29 @@ You can use VS Code to run all the commands and edit all the code for your webap
     cd countdownFlaskApp
     ```
 
-1. On the **File** menu, select **Open folder** and then browse to the **countdownFlaskApp** folder.
+1. On the **File** menu, select **Open File ...** (or **Open ...** on iOS) and then browse to the **countdownFlaskApp** folder and select the **Open** button.  Visual Studio Code should load the new folder in the Explorer view.
 
 ## Create and activate a virtual environment for Flask development
 
 Using a virtual environment avoids installing Flask into a global Python environment and gives you exact control over the libraries used in an application.  
 
 1. If the integrated terminal is not visible, on the **View** menu, click **Terminal**.
-1. To create a virtual environment named `env`, type the following command into the terminal:
+1. To create a virtual environment named `env`, in Windows type the following command into the terminal:
 
     ```console
     py -m venv env
     ```
+    Or, in iOS, type the following command into the terminal:
+
+    ```console
+    python3 -m venv env
+    ```
+
     You will not see a success message or any other feedback.
 
-1. Open the Command Palette (Ctrl+Shift+P) and execute the **Python: Select Interpreter** command.
+1. Open the Command Palette using <kbd>Ctrl+Shift+P</kbd> on Windows and Linux (or <kbd>Command+Shift+P<kbd> on iOS) and execute the **Python: Select Interpreter** command.
 
-    Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd>.
+    Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on iOS).
 
     ![Screenshot of completed project in web browser.](../media/3-python-select-interpreter.png)
 
@@ -338,10 +344,16 @@ Now, we'll build the template to display the countdown:
 
 Now the app is complete, let's run it on your local computer and see if it shows the countdown:
 
-1. In the VS Code Terminal, 
+1. In the VS Code Terminal on Windows, run the following command: 
 
     ```command
     py -m flask run
+    ```
+
+    In iOS and Linux, run the following command:
+
+    ```command
+    python3 -m -flask run
     ```
 
     In the Terminal, you should see some feedback confirming that the development server is running your app correctly:
@@ -358,7 +370,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 ![Screenshot of completed project in web browser.](../media/3-flask-complete.png)
 
-1. Close the web browser. In the VS Code Terminal, enter <kbd>CTRL-C</kbd> to quit the development server.
+1. Close the web browser. In the VS Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On iOS, select <kbd>Control+C</kbd> to quit the development server.
 
 
 ::: zone-end
