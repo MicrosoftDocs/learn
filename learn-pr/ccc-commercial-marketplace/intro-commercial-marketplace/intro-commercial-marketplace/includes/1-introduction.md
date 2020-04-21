@@ -10,6 +10,6 @@ In this module, you will:
 
 - Develop a basic understanding of the Microsoft commercial marketplace
 - Discover in-product and web experiences in the commercial marketplace
-- Differentiate between two storefronts, Microsoft AppSource and Azure Marketplace
+- Differentiate between the two storefronts, Microsoft AppSource and Azure Marketplace
 - Learn what kinds of solutions are sold in Microsoft AppSource and Azure Marketplace
 - Learn how you can go-to-market with Microsoft by selling through the commercial marketplace

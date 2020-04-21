@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-commercial-marketplace.1-Introduction-to-commercial-marketplace
+uid: learn.intro-commercial-marketplace.1-introduction
 title: Introduction to the Microsoft commercial marketplace
 metadata:
   title: Introduction to the Microsoft commercial marketplace
   description: Introduction to the Microsoft commercial marketplace
-  ms.date: 4/17/2020
+  ms.date: 4/21/2020
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-Introduction-to-commercial-marketplace.md)]
+  [!include[](includes/1-introduction.md)]

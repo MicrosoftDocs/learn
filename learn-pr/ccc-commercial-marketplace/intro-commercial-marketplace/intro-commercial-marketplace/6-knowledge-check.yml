@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-commercial-marketplace.6-quiz
-title: Check your Knowledge
+uid: learn.intro-commercial-marketplace.6-quiz
+title: Check your knowledge
 metadata:
   title: Microsoft commercial marketplace knowledge check
   description: Review concepts from introduction to the Microsoft commercial marketplace and check your knowledge
-  ms.date: 4/17/2020
+  ms.date: 4/21/2020
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 quiz:
   title: 'Knowledge check'

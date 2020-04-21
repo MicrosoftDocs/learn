@@ -16,7 +16,7 @@ The Microsoft commercial marketplace consists of two storefronts, **Microsoft Ap
 
 Between the two storefronts and the in-product experiences, Microsoft’s commercial marketplace draws millions of active users per month, with each unique user representing a potential customer for your company. Because Microsoft’s products and services are used widely by organizations around the world, these monthly users represent companies of all sizes in every industry.
 
-![Comparison of two storefronts commercial marketplace storefronts by audience](../media/1_commercial-market.png)
+![Comparison of two storefronts commercial marketplace storefronts by audience](../media/1-commercial-market.png)
 
 ## Summary
 

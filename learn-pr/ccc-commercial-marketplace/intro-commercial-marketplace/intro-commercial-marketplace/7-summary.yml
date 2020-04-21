@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-commercial-marketplace.7-Summary
+uid: learn.intro-commercial-marketplace.7-summary
 title: Summary
 metadata:
   title: Summary of learnings about Microsoft commercial marketplace
   description: Summary
-  ms.date: 4/17/2020
+  ms.date: 4/21/2020
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-Summary.md)]
+  [!include[](includes/7-summary.md)]

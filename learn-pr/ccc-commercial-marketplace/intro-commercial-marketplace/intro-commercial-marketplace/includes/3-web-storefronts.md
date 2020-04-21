@@ -8,22 +8,22 @@ Azure Marketplace has thousands of applications and services that are made to ex
 
 Your customers can access Azure Marketplace online through the web storefront at <https://azuremarketplace.microsoft.com>.
 
-![Screenshot of the Azure Marketplace homepage with emphasis on "apps" and "consulting services" buttons](..\media\2_AzureMarketplaceHomepage.png)
+![Screenshot of the Azure Marketplace homepage with emphasis on "apps" and "consulting services" buttons](..\media\2-azure-marketplace-homepage.png)
 
 |  |
 |---|
-|![Screenshot of the Azure Marketplace apps landing page with emphasis on application categories and filters](..\media\3_AzureMarketplaceApps.png)|
+|![Screenshot of the Azure Marketplace apps landing page with emphasis on application categories and filters](..\media\3-azure-marketplace-apps.png)|
 |*Screenshots of the Azure Marketplace web storefront*|
 
 Because Azure Marketplace is a part of Azure, they can also access these solutions through the Azure portal at <https://portal.azure.com>. Any time Azure users click “Create a resource” on the Azure portal homepage, they’re accessing solutions from Azure Marketplace.
 
-![Screenshot of the Azure portal homepage with emphasis on "create resource" button](..\media\4_AzurePortalHomepageCreateResource.png)
+![Screenshot of the Azure portal homepage with emphasis on "create resource" button](..\media\4-azure-portal-homepage-create-resource.png)
 
-![Screenshot of the Azure portal new resource page Azure Marketplace](..\media\5_AzureMarketplaceAzurePortal1.png)
+![Screenshot of the Azure portal new resource page Azure Marketplace](..\media\5-azure-marketplace-azure-portal-1.png)
 
 |  |
 |---|
-|![Screenshot of Azure Marketplace in Azure portal with emphasis on application categories and filters](..\media\6_AzureMarketplaceAzurePortal2.png)|
+|![Screenshot of Azure Marketplace in Azure portal with emphasis on application categories and filters](..\media\6-azure-marketplace-azure-portal-2.png)|
 |*Screenshots from the in-product version of Azure Marketplace in the Azure portal*|
 
 Both the web storefront and the Azure portal experience enable customers to quickly find, try, buy, and deploy solutions to Azure online in minutes.
@@ -36,17 +36,19 @@ The Microsoft AppSource storefront is geared toward business users and business 
 
 Your customers can access Microsoft AppSource online through the web storefront at <https://appsource.microsoft.com>.
 
-![Screenshot of Microsoft AppSource homepage with emphasis on "apps" and "consulting services" buttons](..\media\7_MicrosoftAppSourceHomepage.png)
+![Screenshot of Microsoft AppSource homepage with emphasis on "apps" and "consulting services" buttons](..\media\7-microsoft-appsource-homepage.png)
 
 |  |
 |---|
-|![Screenshot of Microsoft AppSource apps landing page with emphasis on application categories and filters](..\media\8_MicrosoftAppSourceApps.png)|
+|![Screenshot of Microsoft AppSource apps landing page with emphasis on application categories and filters](..\media\8-microsoft-appsource-apps.png)|
 |*Screenshots of the Microsoft AppSource web storefront*|
 
 AppSource apps are also available within Microsoft products by clicking “Get more apps” from the homepage in Dynamics 365, “Get apps” in Power BI, “Apps” in Teams, and “Insert\>Get Add-ins” in Office 365 products (excluding Teams).
 
-|![Screenshot of Microsoft AppSource products from in-product "get apps" page in PowerBI](..\media\9_AppSourceAppsforPowerBI.png)|
-|*Example of the Microsoft AppSource in-product experience from PowerBI*|
+|  |
+|---|
+|![Screenshot of Microsoft AppSource products from in-product "get apps" page in Power BI](..\media\9-appsource-apps-powerbi.png)|
+|*Example of the Microsoft AppSource in-product experience from Power BI*|
 
 In addition to the cloud products that are available through the web storefront and in-product experiences, the [Microsoft AppSource web storefront](https://appsource.microsoft.com/) also lists consulting services provided by Microsoft partners. AppSource consulting services are organized by industry, service type, location, and Microsoft product type.
 

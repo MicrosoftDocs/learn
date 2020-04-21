@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-commercial-marketplace.3-Web-storefronts
+uid: learn.intro-commercial-marketplace.3-web-storefronts
 title: Commercial marketplace web storefronts
 metadata:
   title: Microsoft commercial marketplace web storefronts
   description: In this unit, we'll learn about and compare Microsoft AppSource and Azure Marketplace
-  ms.date: 4/17/2020
+  ms.date: 4/21/2020
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-Web-storefronts.md)]
+  [!include[](includes/3-web-storefronts.md)]

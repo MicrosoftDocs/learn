@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-commercial-marketplace.4-Engaging-your-customers
-title: Engaging your customers
+uid: learn.intro-commercial-marketplace.4-engage-customers
+title: Engage your customers
 metadata:
-  title: Engaging your Microsoft commercial marketplace customers
+  title: Engage your Microsoft commercial marketplace customers
   description: In this unit, you'll learn how you can engage your Microsoft commercial marketplace customers with different offer types
-  ms.date: 4/17/2020
+  ms.date: 4/21/2020
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 9
 content: |
-  [!include[](includes/4-Engaging-your-customers.md)]
+  [!include[](includes/4-engage-customers.md)]
