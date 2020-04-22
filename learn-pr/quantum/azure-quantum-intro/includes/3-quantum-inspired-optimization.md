@@ -14,13 +14,27 @@ These classical algorithms, which we can run on computers today, are also known 
 
 ## Why is QIO useful?
 
-Optimization problems are commonplace in industry, from manufacturing, to finance, to transportation and much more. These problems involve searching over all the feasible solutions to find the best, often lowest cost, solution. Adiabatic quantum algorithms are naturally suited to solving optimization problems of this kind.
+Optimization problems are commonplace in industry, from manufacturing, to finance, to transportation and much more. 
+These problems involve searching over all the feasible solutions to find the best, often lowest cost, solution. 
+Adiabatic quantum algorithms are naturally suited to solving optimization problems of this kind.
 
-In the long term, adiabatic quantum algorithms can be run on quantum computers, once we have devices of a large enough scale and quality. You can learn more about building a scalable quantum computer in [this blog post](https://cloudblogs.microsoft.com/quantum/2018/05/16/achieving-scalability-in-quantum-computing/). 
+In the long term, adiabatic quantum algorithms can be run on quantum computers, once we have devices of a large enough scale and quality. 
+You can learn more about building a scalable quantum computer in [this blog post](https://cloudblogs.microsoft.com/quantum/2018/05/16/achieving-scalability-in-quantum-computing/). 
 
-In the meantime, we can emulate these algorithms using quantum inspired techniques today, and often see improvements in performance over other state-of-the-art classical optimization techniques. Theory suggests we'll see further speedups once quantum hardware is available.
+In the meantime, we can emulate these algorithms using quantum inspired techniques today, and often see improvements in performance over other state-of-the-art classical optimization techniques. 
+Theory suggests we'll see further speedups once quantum hardware is available.
 
-Applying QIO to real-world problems might offer businesses new insights, or help lower costs by making their processes more efficient. In the following sections we'll learn how QIO works and where these techniques perform well.
+Applying QIO to real-world problems might offer businesses new insights, or help lower costs by making their processes more efficient. 
+In the following sections we'll learn how QIO works and where these techniques perform well.
+
+## Understanding optimization problems
+
+With optimization problems involving continuous variables, we can often think of the problem as an optimization landscape. An optimization landscape consists of:
+- *Search space*: This is the space of all the feasible solutions to the problem. Each point in this search space is a valid solution to the problem, however typically we are looking for the lowest point, or lowest cost solution.
+- *Objective function*: This is a mathematical description, which, when evaluated, tells you the cost of that solution. 
+
+Let's consider a simple optimization landscape involving two continuous variables.
+
 
 # Explain general ideas of optimization
 In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
