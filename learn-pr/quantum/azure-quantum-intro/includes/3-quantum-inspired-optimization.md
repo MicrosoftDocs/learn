@@ -4,7 +4,7 @@
 
 There are many models of quantum computing. If you have viewed the *Get Started SDK* module, you'll have gained familiarity with the Gate Model, in which we define quantum programs by writing operations that make use of quantum gates. 
 
-Quantum Inspired Optimization (QIO) is based on a different computational model, namely adiabatic quantum computation. This approach uses a concept from quantum physics known as the adiabatic theorem which works as follows:
+Quantum Inspired Optimization (QIO) is based on a different computational model, namely adiabatic quantum computing. This approach uses a concept from quantum physics known as the adiabatic theorem which works as follows:
 - Begin by preparing a system and initializing it to its lowest energy state. For a simple system, one which we understand everything about, this is easy to construct.
 - Next, slowly transform that system into a more complex one, one which describes the problem we are trying to solve.
 The adiabatic theorem states that, as long as this transformation moves slowly enough, the system will stay in that lowest energy configuration. So at the end, we've solved our problem.
@@ -16,11 +16,11 @@ These classical algorithms, which we can run on computers today, are also known 
 
 Optimization problems are commonplace in industry, from manufacturing, to finance, to transportation and much more. These problems involve searching over all the feasible solutions to find the best, often lowest cost, solution. Adiabatic quantum algorithms are naturally suited to solving optimization problems of this kind.
 
-In the long term, adiabatic quantum algorithms can be run on quantum computers, once they are of a large enough scale and quality. You can learn more about building a scalable quantum computer in [this blog post](https://cloudblogs.microsoft.com/quantum/2018/05/16/achieving-scalability-in-quantum-computing/). 
+In the long term, adiabatic quantum algorithms can be run on quantum computers, once we have devices of a large enough scale and quality. You can learn more about building a scalable quantum computer in [this blog post](https://cloudblogs.microsoft.com/quantum/2018/05/16/achieving-scalability-in-quantum-computing/). 
 
-In the meantime, we can emulate these algorithms using quantum inspired techniques today, and often see improvements in performance over other state of the art classical optimization techniques. Theory suggests we'll see further speedups once quantum hardware is available.
+In the meantime, we can emulate these algorithms using quantum inspired techniques today, and often see improvements in performance over other state-of-the-art classical optimization techniques. Theory suggests we'll see further speedups once quantum hardware is available.
 
-Applying QIO to real-world problems might offer business new insights, or help lower costs by making their processes more efficient. 
+Applying QIO to real-world problems might offer businesses new insights, or help lower costs by making their processes more efficient. In the following sections we'll learn how QIO works and where these techniques perform well.
 
 # Explain general ideas of optimization
 In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
