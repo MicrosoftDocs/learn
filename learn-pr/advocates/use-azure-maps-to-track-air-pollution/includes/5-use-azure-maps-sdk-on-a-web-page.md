@@ -6,7 +6,7 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
 1. Create a folder on your computer to store the code.
 
-1. Open Visual Studio Code, and open the folder you have just created
+1. Open Visual Studio Code, and open the folder you have created
 
 1. In this folder, create a new file called `app.py`. By creating this Python file, Visual Studio Code will activate the Python extension ready to build this python app. You can see the progress of the extension activation in the bottom status bar.
 
@@ -14,13 +14,15 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
 ### Install the necessary Pip packages
 
-1. Open the Visual Studio Code terminal if it isn't already open by selecting **Terminal > New terminal**, and create a python virtual environment using the following command:
+1. Open the Visual Studio Code terminal if it isn't already open by selecting **Terminal > New terminal**.
+
+1. Create a python virtual environment using the following command:
 
     ```sh
     python -m venv .venv
     ```
 
-    This will create a virtual environment inside the current folder. Visual Studio Code will detect this, and ask if you want to select the virtual environment for this folder, so select **Yes**.
+    This will create a virtual environment inside the current folder. Visual Studio Code will detect this change, and ask if you want to select the virtual environment for this folder, so select **Yes**.
 
     ![The activate virtual env dialog](../media/activate_venv_dialog.png)
 
@@ -87,7 +89,7 @@ The flask app will need to use your Azure Maps key to load the map control onto 
         return render_template("home.html", data = data)
     ```
 
-    This code will handle requests to '/', so the root of the web site. When this page is loaded, the app will use the key from the `.env` file to create some data which is used to render the `home.html` file as a parameter called `data`.
+    This code will handle requests to '/', so the root of the web site. When this page is loaded, the app will use the key from the `.env` file to create some data, which is used to render the `home.html` file as a parameter called `data`.
 
 1. Save the file
 
@@ -159,14 +161,14 @@ The flask app will need to use your Azure Maps key to load the map control onto 
     </html>
     ```
 
-    This web page will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users location is retrieved. This will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise the location of the Microsoft campus in Redmond, Washington, USA will be used.
+    This web page will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users' location is retrieved. This request will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise the location of the Microsoft campus in Redmond, Washington, USA will be used.
 
     [!INFO]
     > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK), going east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°,
 
-    The map control is then loaded into the div. The maps key is set to `{{ data.map_key }}`, and this is the Flask notation to render data into the HTML file. What this means is that when this page is returned to the users web browser, the value `{{ data.map_key }}` is replaced by the value of the `map_key` set on the `data` object. This object was passed to the `render_template` call in the `app.py` file, and the `map_key` is set to the Azure Maps primary key loaded from the `.env` file.
+    The map control is then loaded into the div. The maps key is set to `{{ data.map_key }}`, and this notation is the Flask notation to render data into the HTML file. What this means is that when this page is returned to the users web browser, the value `{{ data.map_key }}` is replaced by the value of the `map_key` set on the `data` object. This object was passed to the `render_template` call in the `app.py` file, and the `map_key` is set to the Azure Maps primary key loaded from the `.env` file.
 
-    Once the control is ready, a camera is set up over the users location. The camera is used to define what to show on screen, so having the camera over the users location will center the map view over that location. The zoom value shows how far above the Earth the camera should be, and determines how many meters of the map are shown per pixel on screen. You can read more on the different zoom values in the [Zoom levels and tile grids documentation](https://docs.microsoft.com/azure/azure-maps/zoom-levels-and-tile-grid).
+    Once the control is ready, a camera is set up over the users' location. The camera is used to define what to show on screen, so having the camera over the users location will center the map view over that location. The zoom value shows how far above the Earth the camera should be, and determines how many meters of the map are shown per pixel on screen. You can read more on the different zoom values in the [Zoom levels and tile grids documentation](https://docs.microsoft.com/azure/azure-maps/zoom-levels-and-tile-grid).
 
 1. Save the file
 
@@ -203,7 +205,7 @@ The app will start, and in the output you'll see the local URL it is running on.
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Open the URL hsown in your web browser, and you'll see the map. If you give the site permission to get your location it will be centered on you, otherwise it will be centered on the Microsoft Campus in Redmond, Washington, USA.
+Open the URL in your web browser, and you'll see the map. If you give the site permission to get your location it will be centered on you, otherwise it will be centered on the Microsoft Campus in Redmond, Washington, USA.
 
 ![The map running in the Edge web browser](../media/map_in_edge.png)
 
