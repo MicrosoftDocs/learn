@@ -6,7 +6,7 @@ In this module, you'll learn how to use the Azure Maps web SDK to visualize air 
 
 ## Learning objectives
 
-In this module you will:
+In this module you'll:
 
 - Create an Azure Maps account
 - Access air quality data, and convert it to GeoJSON format
@@ -31,6 +31,6 @@ Air pollution is measured using the Air Quality Index, a scale from 0-500 where 
 
 > You can read more about the Air Quality index on the [AirNow AQI Basics page](https://www.airnow.gov/aqi/aqi-basics/).
 
-In this module, you will get air pollution data using a freely available API, and plot this data on an interactive map on a web page using Azure Maps. The end result will look like this:
+In this module, you'll get air pollution data using a freely available API, and plot this data on an interactive map on a web page using Azure Maps. The end result will look like this:
 
 [![A map of the world showing pollution data as colored circles](../media/final-output.png)](../media/final-output.png#lightbox)

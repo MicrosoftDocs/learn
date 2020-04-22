@@ -1,4 +1,4 @@
-In this unit you will create a Python app using Flask to show the Azure Maps web SDK on a web page
+In this unit, you'll create a Python app using Flask to show the Azure Maps web SDK on a web page
 
 ## Build the app
 
@@ -14,7 +14,7 @@ In this unit you will create a Python app using Flask to show the Azure Maps web
 
 ### Install the necessary Pip packages
 
-1. Open the Visual Studio Code terminal if it is not open by selecting **Terminal > New terminal**, and create a python virtual environment using the following command:
+1. Open the Visual Studio Code terminal if it isn't open by selecting **Terminal > New terminal**, and create a python virtual environment using the following command:
 
     ```sh
     python -m venv .venv
@@ -46,7 +46,7 @@ In this unit you will create a Python app using Flask to show the Azure Maps web
 
 ### Create an environment file
 
-The flask app will need to use your Azure Maps key to load the map control onto a page. It is best practice to store data such as this in environment variables so that it is not checked in to source code control, and can be configured to different values when developing or publishing your app. Flask will use the python-dotenv package to look for a file called `.env` in the root of your app, and load environment variables from this file.
+The flask app will need to use your Azure Maps key to load the map control onto a page. It is best practice to store data such as this in environment variables so that it isn't checked in to source code control, and can be configured to different values when developing or publishing your app. Flask will use the python-dotenv package to look for a file called `.env` in the root of your app, and load environment variables from this file.
 
 1. Create a file in the root of the folder called `.env`
 
@@ -190,7 +190,7 @@ To run your app, select the green run triangle from the **Run** activity pane.
 
 ![The run button](../media/run_flask_app.png)
 
-The app will start, and in the output you will see the local URL it is running on.
+The app will start, and in the output you'll see the local URL it is running on.
 
 ```output
  * Serving Flask app "app.py"
@@ -199,7 +199,7 @@ The app will start, and in the output you will see the local URL it is running o
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Open the URL in your web browser, and you will see the map, centered on your location if you give the site permission to get your location, otherwise it will be centered on the Microsoft Campus in Redmond, Washington, USA.
+Open the URL in your web browser, and you'll see the map, centered on your location if you give the site permission to get your location, otherwise it will be centered on the Microsoft Campus in Redmond, Washington, USA.
 
 ![The map running in the Edge web browser](../media/map_in_edge.png)
 

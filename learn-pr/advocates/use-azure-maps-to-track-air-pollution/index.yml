@@ -11,7 +11,7 @@ metadata:
 title: Use Azure Maps to track air pollution
 summary: This module is an introduction to using the Azure Maps Web SDK to visualize pollution data from a third-party air quality API.
 abstract: |
-  In this module you will:
+  In this module you'll:
   - Learn about Azure Maps and the Maps Web SDK
   - Create a web page to show a map
   - Learn about GeoJSON

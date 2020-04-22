@@ -40,7 +40,7 @@ Navigation can also be done in code, such as setting the camera location to a sp
 
 ## Layers
 
-Maps can be augmented with layers, visualizing data on top of the map. In a later unit in this module, you will use a layer on a map to visualize pollution data.
+Maps can be augmented with layers, visualizing data on top of the map. In a later unit in this module, you'll use a layer on a map to visualize pollution data.
 
 There are a number of different layer types available, and these layers all render data sources that contain either GeoJSON data or [MapBox vector tiles](https://github.com/mapbox/vector-tile-spec). GeoJSON will be covered in a later unit in this module
 

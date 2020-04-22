@@ -12,7 +12,7 @@ In this unit, you'll create an Azure Maps resource using the Azure CLI, then rec
 
 ## Retrieve the primary key
 
-Azure Maps accounts are secured by either Azure Active Directory or via a key. Later in this module, you will use the key to give the web SDK access to the Maps account. The key can be retrieved using the Azure CLI.
+Azure Maps accounts are secured by either Azure Active Directory or via a key. Later in this module, you'll use the key to give the web SDK access to the Maps account. The key can be retrieved using the Azure CLI.
 
 1. Run this command to view the keys
 

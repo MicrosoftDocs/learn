@@ -1,4 +1,4 @@
-GeoJSON is an internet standard geospatial data format based on JavaScript Object Notation, or JSON. To add layers to an Azure Maps control, you need to define a data source containing GeoJSON to indicate the locations to use to show different overlays, for example to define the location of bubbles in a bubble layer.
+GeoJSON is an Internet standard geospatial data format based on JavaScript Object Notation, or JSON. To add layers to an Azure Maps control, you need to define a data source containing GeoJSON to indicate the locations to use to show different overlays, for example to define the location of bubbles in a bubble layer.
 
 > [!INFO]
 > GeoJSON was defined in the Internet Engineering Task Force RfC7946 - [https://tools.ietf.org/html/rfc7946](https://tools.ietf.org/html/rfc7946). This way it is a known standard for use across the internet.
