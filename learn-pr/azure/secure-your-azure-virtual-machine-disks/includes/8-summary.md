@@ -5,8 +5,7 @@ Azure provides Storage Service Encryption (SSE) and Azure Disk Encryption (ADE) 
 
 ## Additional resources
 
-- [Troubleshooting Azure VM Disk encryption](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-tsg)
-- [How to encrypt a Linux virtual machine in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/disk-encryption-linux)
-- [Azure Disk Encryption Overview](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview)
-- [What Linux distributions does Azure Disk Encryption support?](https://docs.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss#linux-virtual-machines).
+- [Azure Disk Encryption scenarios on Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/disk-encryption-linux)
+- [Azure Disk Encryption for virtual machines and virtual machine scale sets](https://docs.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss)
 - [Resource Manager templates on GitHub](https://github.com/Azure/azure-quickstart-templates)
+- [Azure data security and encryption best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)
