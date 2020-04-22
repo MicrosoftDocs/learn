@@ -2,7 +2,7 @@ There's a lot to learn about NumPy, and it can be tough to remember it all the f
 
 First off, IPython gives you the ability to quickly explore the contents of a package like NumPy by using the tab-completion feature. So, if you want to see all of the functions available with NumPy, type this:
 
-```Python
+```python
 ipython
 np.<TAB>
 ```
@@ -13,7 +13,7 @@ When you do so, a drop-down menu will appear next to the `np.`
 
 Start typing `np.` and see the list of available functions come up.
 
-```Python
+```python
 np.
 ```
 
@@ -25,6 +25,6 @@ From the drop-down menu, you can select any function to run. Better still, you c
 
 Try this with a few different functions. Remember, these functions are just like ones you wrote in the introduction to python module; the documentation will help explain what parameters you can (or should) provide the function, in addition to what output you can expect.
 
-For more detailed documentation (along with additional tutorials and other resources), visit [www.numpy.org](http://www.numpy.org/).
+For more detailed documentation (along with additional tutorials and other resources), visit [www.numpy.org](http://www.numpy.org/?azure-portal=true).
 
 Now that you know how to quickly get help while you are working on your own, let's return to storing data in arrays.

@@ -1,6 +1,6 @@
 Now that we've explored NumPy, it's time to get to know the other workhorse of data science in Python: pandas. The pandas library in Python really does a lot to make working with data, like importing, cleaning, and organizing it, so much easier, that it's hard to imagine doing data science in Python without it.
 
-But it was not always this way. Wes McKinney developed the library out of necessity in 2008 while at AQR Capital Management in order to have a better tool for dealing with data analysis. The library has since taken off as an open-source software project that has become a mature and integral part of the data science ecosystem. (In fact, some examples in this module will be drawn from McKinney's book, _[Python for Data Analysis](https://wesmckinney.com/pages/book.html)_.)
+But it was not always this way. Wes McKinney developed the library out of necessity in 2008 while at AQR Capital Management in order to have a better tool for dealing with data analysis. The library has since taken off as an open-source software project that has become a mature and integral part of the data science ecosystem. (In fact, some examples in this module will be drawn from McKinney's book, _[Python for Data Analysis](https://wesmckinney.com/pages/book.html?azure-portal=true)_.)
 
 The name _pandas_ actually has nothing to do with Chinese bears, but rather comes from the term _panel data_, a form of multi-dimensional data involving measurements over time that comes out the econometrics and statistics community. Ironically, while panel data is a usable data structure in pandas, it's not generally used today and we won't examine it in this course. Instead, we'll focus on the two most widely used data structures in pandas: `Series` and `DataFrames`.
 
@@ -8,7 +8,7 @@ The name _pandas_ actually has nothing to do with Chinese bears, but rather come
 
 Just as you imported NumPy with the alias `np`, we will import pandas under the alias `pd`. Make sure you've installed Pandas first (run `pip install pandas` in the terminal below).
 
-```Python
+```python
 import pandas as pd
 ```
 
@@ -16,14 +16,14 @@ As with the NumPy convention, `pd` is an important and widely used convention in
 
 As we progress through this module, don't forget that IPython provides the tab-completion feature and function documentation with the `?` character. If you don't understand anything about a function you see in this module, take a moment and read the documentation. The docs can help a great deal. As a reminder, to display the built-in pandas documentation, use this code:
 
-```Python
+```python
 ipython
 pd?
 ```
 
 Because it can be useful to lean about `Series` and `DataFrames` in pandas, which is an extension of `ndarrays` in NumPy, go ahead and also import NumPy. You will want it for some of the examples later on:
 
-```Python
+```python
 import numpy as np
 ```
 

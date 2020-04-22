@@ -2,7 +2,7 @@ As a refresher, a `Series` object acts in many ways like both a one-dimensional 
 
 Like a dictionary, the `Series` object provides a mapping from a collection of arbitrary keys to a collection of arbitrary values. Back to an old example:
 
-```Python
+```python
 series_example2 = pd.Series([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
 series_example2
 ```
@@ -17,7 +17,7 @@ d   -2.00
 dtype: f
 ```
 
-```Python
+```python
 series_example2['b']
 ```
 
@@ -29,7 +29,7 @@ The output is:
 
 You can also examine the keys/indices and values using dictionary-like Python tools:
 
-```Python
+```python
 'a' in series_example2
 ```
 
@@ -41,7 +41,7 @@ True
 
 Another example:
 
-```Python
+```python
 series_example2.keys()
 ```
 
@@ -53,7 +53,7 @@ Index(['a', 'b', 'c', 'd'], dtype='object')
 
 Another example:
 
-```Python
+```python
 list(series_example2.items())
 ```
 
@@ -65,7 +65,7 @@ The output is:
 
 As with dictionaries, you can extend a dictionary by assigning to a new key, you can extend a `Series` by assigning to a new index value:
 
-```Python
+```python
 series_example2['e'] = 1.25
 series_example2
 ```
@@ -87,7 +87,7 @@ Because `Series` also provide array-style functionality, you can use the NumPy t
 
 ### Slicing using the explicit index
 
-```Python
+```python
 series_example2['a':'c']
 ```
 
@@ -102,7 +102,7 @@ dtype: float64
 
 ### Slicing using the implicit integer index
 
-```Python
+```python
 series_example2[0:2]
 ```
 
@@ -116,7 +116,7 @@ dtype: float64
 
 ### Masking
 
-```Python
+```python
 series_example2[(series_example2 > -1) & (series_example2 < 0.8)]
 ```
 
@@ -130,7 +130,7 @@ dtype: float64
 
 ### Fancy indexing
 
-```Python
+```python
 series_example2[['a', 'e']]
 ```
 
@@ -153,7 +153,7 @@ A great thing about pandas is that you can use a lot different things for your e
 
 The `loc` attribute allows indexing and slicing that always references the explicit index:
 
-```Python
+```python
 series_example2.loc['a']
 ```
 
@@ -165,7 +165,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 series_example2.loc['a':'c']
 ```
 
@@ -180,7 +180,7 @@ dtype: float64
 
 The `iloc` attribute enables indexing and slicing using the implicit, Python-style index:
 
-```Python
+```python
 series_example2.iloc[0]
 ```
 
@@ -192,7 +192,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 series_example2.iloc[0:2]
 ```
 

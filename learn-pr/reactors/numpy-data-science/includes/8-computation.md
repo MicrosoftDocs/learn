@@ -2,7 +2,7 @@ Some of the properties that make Python great to work with for data science (its
 
 When we first examined loops in the Introduction to Pything, you probably didn't notice any delay: the loops were short enough that Python's relatively slow looping wasn't an issue. Consider this function, which calculates the reciprocal for an array of numbers:
 
-```Python
+```python
 import numpy as np
 np.random.seed(0)
 
@@ -16,6 +16,8 @@ values = np.random.randint(1, 10, size=5)
 compute_reciprocals(values)
 ```
 
+The output is:
+
 ```Output
 array([0.16666667, 1.        , 0.25      , 0.25      , 0.125     ])
 ```
@@ -24,10 +26,12 @@ Running this loop, it was probably difficult to even discern that execution wasn
 
 But let's try it on a much larger array. To empirically do this, we'll time this with IPython's `%timeit` magic command.
 
-```Python
+```python
 big_array = np.random.randint(1, 100, size=1000000)
 %timeit compute_reciprocals(big_array)
 ```
+
+The output is:
 
 ```Output
 2.96 s ± 130 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
@@ -43,9 +47,11 @@ Universal functions in NumPy (often shortened to *ufuncs*) provide a statically
 
 Let's examine what this means in practice. Let's find the reciprocals of `big_array` again, this time using a built-in NumPy division ufunc on the array:
 
-```Python
+```python
 %timeit (1.0 / big_array)
 ```
+
+The output is:
 
 ```Output
 2.97 ms ± 201 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
@@ -63,7 +69,7 @@ Ufuncs come in two flavors: *unary ufuncs*, which use a single input, and *bin
 
 Many NumPy ufuncs use Python's native arithmetic operators, so you can use the standard addition, subtraction, multiplication, and division operators that we covered in Section 1:
 
-```Python
+```python
 a = np.arange(4)
 print("a     =", a)
 print("a + 5 =", a + 5)
@@ -72,6 +78,8 @@ print("a * 2 =", a * 2)
 print("a / 2 =", a / 2)
 print("a // 2 =", a // 2)  # floor division
 ```
+
+The output is:
 
 ```Output
 a     = [0 1 2 3]
@@ -84,11 +92,13 @@ a // 2 = [0 0 1 1]
 
 There are also ufuncs for negation, exponentiation, and the modulo operation:
 
-```Python
+```python
 print("-a     = ", -a)
 print("a ** 2 = ", a ** 2)
 print("a % 2  = ", a % 2)
 ```
+
+The output is:
 
 ```Output
 -a     =  [ 0 -1 -2 -3]
@@ -98,9 +108,11 @@ a % 2  =  [0 1 0 1]
 
 You can also combine these ufuncs using the standard order of operations:
 
-```Python
+```python
 -(0.5*a + 1) ** 2
 ```
+
+The output is:
 
 ```Output
 array([-1.  , -2.25, -4.  , -6.25])
@@ -108,9 +120,11 @@ array([-1.  , -2.25, -4.  , -6.25])
 
 The Python operators are not actually the ufuncs, but are rather wrappers around functions built into NumPy. So the `+` operator is actually a wrapper for the `add` function:
 
-```Python
+```python
 np.add(a, 2)
 ```
+
+The output is:
 
 ```Output
 array([2, 3, 4, 5])
@@ -135,10 +149,12 @@ Python Boolean operators also work; we will explore those later in this section.
 
 NumPy also understands Python's built-in absolute value function:
 
-```Python
+```python
 a = np.array([-2, -1, 0, 1, 2])
 abs(a)
 ```
+
+The output is:
 
 ```Output
 array([2, 1, 0, 1, 2])
@@ -146,17 +162,23 @@ array([2, 1, 0, 1, 2])
 
 This corresponds to the NumPy ufunc `np.absolute` (which is also available under the alias `np.abs`):
 
-```Python
+```python
 np.absolute(a)
 ```
+
+The output is:
 
 ```Output
 array([2, 1, 0, 1, 2])
 ```
 
-```Python
+Or:
+
+```python
 np.abs(a)
 ```
+
+The output is the same:
 
 ```Output
 array([2, 1, 0, 1, 2])
@@ -166,13 +188,15 @@ array([2, 1, 0, 1, 2])
 
 You will need to use exponents and logarithms a lot in data science; these are some of the most common data transformations for machine learning and statistical work.
 
-```Python
+```python
 a = [1, 2, 3]
 print("a     =", a)
 print("e^a   =", np.exp(a))
 print("2^a   =", np.exp2(a))
 print("3^a   =", np.power(3, a))
 ```
+
+The output is:
 
 ```Output
 a     = [1, 2, 3]
@@ -183,13 +207,15 @@ e^a   = [ 2.71828183  7.3890561  20.08553692]
 
 The basic `np.log` gives the natural logarithm; if you need to compute base-2 or base-10 logarithms, NumPy also provides those:
 
-```Python
+```python
 a = [1, 2, 4, 10]
 print("a        =", a)
 print("ln(a)    =", np.log(a))
 print("log2(a)  =", np.log2(a))
 print("log10(a) =", np.log10(a))
 ```
+
+The output is:
 
 ```Output
 a        = [1, 2, 4, 10]
@@ -200,11 +226,13 @@ log10(a) = [0.         0.30103    0.60205999 1.        ]
 
 There are also some specialized versions of these ufuncs to help maintain precision when dealing with very small inputs:
 
-```Python
+```python
 a = [0, 0.001, 0.01, 0.1]
 print("exp(a) - 1 =", np.expm1(a))
 print("log(1 + a) =", np.log1p(a))
 ```
+
+The output is:
 
 ```Output
 exp(a) - 1 = [0.         0.0010005  0.01005017 0.10517092]
@@ -217,18 +245,20 @@ These functions give more precise values than if you were to use the raw `np.lo
 
 NumPy has many other ufuncs. Another source for specialized and obscure ufuncs is the submodule `scipy.special`. If you need to compute some specialized mathematical or statistical function on your data, chances are it is implemented in `scipy.special`.
 
-```Python
+```python
 from scipy import special
 ```
 
 Gamma functions (generalized factorials) and related functions:
 
-```Python
+```python
 a = [1, 5, 10]
 print("gamma(a)     =", special.gamma(a))
 print("ln|gamma(a)| =", special.gammaln(a))
 print("beta(a, 2)   =", special.beta(a, 2))
 ```
+
+The output is:
 
 ```Output
 gamma(a)     = [1.0000e+00 2.4000e+01 3.6288e+05]

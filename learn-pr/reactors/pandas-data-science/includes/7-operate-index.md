@@ -11,7 +11,7 @@ pandas is explicitly designed to work with NumPy. As a results, all NumPy ufuncs
 
 We can see this more clearly if we create a simple `Series` and `DataFrame` of random numbers on which to operate.
 
-```Python
+```python
 rng = np.random.RandomState(42)
 ser_example = pd.Series(rng.randint(0, 10, 4))
 ser_example
@@ -29,7 +29,7 @@ dtype: int64
 
 Did you notice the NumPy function we used with the variable `rng`? By specifying a seed for the random-number generator, you get the same result each time. This can be useful trick when you need to produce psuedo-random output that also needs to be replicatable by others. (Go ahead and re-run the code cell above a couple of times to convince yourself that it produces the same output each time.)
 
-```Python
+```python
 df_example = pd.DataFrame(rng.randint(0, 10, (3, 4)),
                   columns=['A', 'B', 'C', 'D'])
 df_example
@@ -47,7 +47,7 @@ The output is:
 
 Let's apply a ufunc to our example `Series`:
 
-```Python
+```python
 np.exp(ser_example)
 ```
 
@@ -63,7 +63,7 @@ dtype: float64
 
 The same thing happens with a slightly more complex operation on our example `DataFrame`:
 
-```Python
+```python
 np.cos(df_example * np.pi / 4)
 ```
 

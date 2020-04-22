@@ -2,7 +2,7 @@
 
 Expression syntax is straightforward. The operators plus (+), minus (-), multiply (*), and divide or slash (/) work just like in most other programming languages (such as Java or C). For example, type the following in a Python code cell in VS Code:
 
-```Python
+```python
 2 + 3
 ```
 
@@ -14,7 +14,7 @@ And you should get:
 
 The order of operations also works as in other programming languages (and in math class):
 
-```Python
+```python
 30 - 4 * 5
 ```
 
@@ -26,7 +26,7 @@ The output looks like this:
 
 Note what happens when you use division:
 
-```Python
+```python
 7 / 5
 ```
 
@@ -36,11 +36,11 @@ The output is:
 1.4
 ```
 
-Division (/) always returns a floating-point number, which brings up a good point. Python (like other programming languages) has different numeric types. Integer numbers (such as 1, 3, and 20) have type [int](https://docs.python.org/3.6/library/functions.html#int). Numbers with a fractional component (such as 3.0 or 1.6) have type [float](https://docs.python.org/3.5/library/functions.html#float).
+Division (/) always returns a floating-point number, which brings up a good point. Python (like other programming languages) has different numeric types. Integer numbers (such as 1, 3, and 20) have type [int](https://docs.python.org/3.6/library/functions.html#int?azure-portal=true). Numbers with a fractional component (such as 3.0 or 1.6) have type [float](https://docs.python.org/3.5/library/functions.html#float?azure-portal=true).
 
 You can mix numeric types in calculations:
 
-```Python
+```python
 3 * 3.5
 ```
 
@@ -52,7 +52,7 @@ The output is:
 
 Another example of mixed types:
 
-```Python
+```python
 7.0 / 5
 ```
 
@@ -62,9 +62,9 @@ The output is:
 1.4
 ```
 
-You can perform a type of division that returns an integer: [floor division](https://docs.python.org/3.6/glossary.html#term-floor-division). Floor division uses the double slash (//) operator, discards any remainders, and just returns an `int`.
+You can perform a type of division that returns an integer: [floor division](https://docs.python.org/3.6/glossary.html#term-floor-division?azure-portal=true). Floor division uses the double slash (//) operator, discards any remainders, and just returns an `int`.
 
-```Python
+```python
 7 // 5
 ```
 
@@ -76,7 +76,7 @@ The output is:
 
 To calculate the remainder, you can use the modulo operator (%):
 
-```Python
+```python
 7 % 5
 ```
 
@@ -88,7 +88,7 @@ The output is:
 
 For exponents, use the power (**) operator. For example, you can write $5^2$ as:
 
-```Python
+```python
 5 ** 2
 ```
 
@@ -100,7 +100,7 @@ The output is:
 
 Conversely, $2^5$ would be:
 
-```Python
+```python
 2 ** 5
 ```
 
@@ -112,7 +112,7 @@ The output is:
 
 Note that power (**) has higher precedence in the order of operations than the negative sign (-). This means that $-5^2$ is actually the same thing as $-\left(5^2\right)$:
 
-```Python
+```python
 -5 ** 2
 ```
 
@@ -124,7 +124,7 @@ The output is:
 
 In order to assert the order of precedence that you want, use parentheses ():
 
-```Python
+```python
 (-5) ** 2
 ```
 
@@ -136,7 +136,7 @@ The output is:
 
 Parentheses () can supersede the order of operations in any calculation you need to run:
 
-```Python
+```python
 (30 - 4) * 5
 ```
 

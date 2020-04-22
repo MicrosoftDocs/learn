@@ -19,7 +19,7 @@ abstract: |
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - Set up your environment
+  - None
 # placeholder icon
 iconUrl: /learn/achievements/reactors/python-data-science.svg
 levels:

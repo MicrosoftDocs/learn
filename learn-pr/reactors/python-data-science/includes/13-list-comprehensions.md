@@ -1,6 +1,6 @@
 Sometimes, it makes more sense to generate a list algorithmically. Consider the last example. We really wanted just a list of numbers from 1 to 10. Rather than type those out, we can use a _list comprehension_ to generate it:
 
-```Python
+```python
 numbers = [x for x in range(1,11)] # Remember to create a range 1 more than the number you actually want.
 numbers
 ```
@@ -13,7 +13,7 @@ The output is:
 
 We can also perform computation on the items generated for the list:
 
-```Python
+```python
 squares = [x*x for x in range(1,11)]
 squares
 ```
@@ -26,7 +26,7 @@ The output is:
 
 We can even perform logical tests on list items in the comprehension:
 
-```Python
+```python
 odd_squares = [x*x for x in range(1,11) if x % 2 != 0]
 odd_squares
 ```
@@ -41,10 +41,12 @@ The output is:
 
 Use a list comprehension to generate a list of odd cubes from 1 to 2,197.
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   odd_cubes = [x*x*x for x in range(1, 2197) if x % 2 != 0]
   odd_cubes
   ```
@@ -63,6 +65,10 @@ Use a list comprehension to generate a list of odd cubes from 1 to 2,197.
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 > [!div class="alert is-tip"]
 > ### Takeaway

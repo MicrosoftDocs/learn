@@ -1,8 +1,8 @@
-Python has a way to put definitions in a file and use them in a script or in an interactive instance of the interpreter. Such a file is called a [Python module](https://docs.python.org/3/tutorial/modules.html). Definitions from a Python module can be imported into other programs or Python modules.
+Python has a way to put definitions in a file and use them in a script or in an interactive instance of the interpreter. Such a file is called a [Python module](https://docs.python.org/3/tutorial/modules.html?azure-portal=true). Definitions from a Python module can be imported into other programs or Python modules.
 
-For example, the `factorial()` function is not one of the standard functions built into Python. It is part of the Python math module. So, when we run `factorial()` before importing the [math module](https://docs.python.org/3/library/math.html), we get an error:
+For example, the `factorial()` function is not one of the standard functions built into Python. It is part of the Python math module. So, when we run `factorial()` before importing the [math module](https://docs.python.org/3/library/math.html?azure-portal=true), we get an error:
 
-```Python
+```python
 factorial(5)
 ```
 
@@ -18,7 +18,7 @@ NameError: name 'factorial' is not defined
 
 However, the situation changes after we import the Python `math` module:
 
-```Python
+```python
 import math
 math.factorial(5)
 ```
@@ -31,7 +31,7 @@ The output is:
 
 Notice that we still have to prepend `math` to the front of the `factorial()` function. We can use a different method to import that specific function from the Python `math` module and use it as if it were defined in our program:
 
-```Python
+```python
 from math import factorial
 factorial(5)
 ```

@@ -1,6 +1,6 @@
 The same kind of alignment takes place in both dimension (columns and indices) when you perform operations on `DataFrames`.
 
-```Python
+```python
 df1 = pd.DataFrame(rng.randint(0, 20, (2, 2)),
                    columns=list('AB'))
 df1
@@ -17,7 +17,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 df2 = pd.DataFrame(rng.randint(0, 10, (3, 3)),
                    columns=list('BAC'))
 df2
@@ -37,10 +37,12 @@ The output is:
 
 Add df1 and df2. Is the output what you expected?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   df1 + df2
   ```
 
@@ -54,11 +56,15 @@ Add df1 and df2. Is the output what you expected?
   
 </details>
 
+<br /><br />
+
+***
+
 Even though we passed the columns in a different order in `df2` than in `df1`, the indices were aligned correctly sorted in the resulting union of columns.
 
 You can also use fill values for missing values with `DataFrames`. In this example, let's fill the missing values with the mean of all values in `df1` (computed by first stacking the rows of `df1`):
 
-```Python
+```python
 fill = df1.stack().mean()
 df1.add(df2, fill_value=fill)
 ```

@@ -4,7 +4,7 @@
 
 Let's return to our earlier example of countries' areas and populations in order to examine `DataFrames` as a dictionary of `Series`.
 
-```Python
+```python
 area = pd.Series({'Albania': 28748,
                   'France': 643801,
                   'Germany': 357386,
@@ -33,7 +33,7 @@ The output is:
 
 You can access the individual `Series` that make up the columns of a `DataFrame` via dictionary-style indexing of the column name:
 
-```Python
+```python
 countries['Area']
 ```
 
@@ -50,7 +50,7 @@ Name: Area, dtype: int64
 
 And you can use dictionary-style syntax can also be used to modify `DataFrames`, such as by adding a new column:
 
-```Python
+```python
 countries['Population Density'] = countries['Population'] / countries['Area']
 countries
 ```
@@ -71,7 +71,7 @@ The output is:
 
 You can also think of `DataFrames` as two-dimensional arrays. You can examine the raw data in the `DataFrame` or data array using the `values` attribute:
 
-```Python
+```python
 countries.values
 ```
 
@@ -87,7 +87,7 @@ array([[2.87480000e+04, 2.93759000e+06, 1.02184152e+02],
 
 Viewed this way, it makes sense that we can transpose the rows and columns of a `DataFrame` the same way we would an array:
 
-```Python
+```python
 countries.T
 ```
 
@@ -103,7 +103,7 @@ The output is:
 
 `DataFrames` also uses the `loc` and `iloc` indexers. With `iloc`, you can index the underlying array as if it were an `ndarray` but with the `DataFrame` index and column labels maintained in the result:
 
-```Python
+```python
 countries.iloc[:3, :2]
 ```
 
@@ -119,7 +119,7 @@ The output is:
 
 `loc` also permits array-like slicing but using the explicit index and column names:
 
-```Python
+```python
 countries.loc[:'Germany', :'Population']
 ```
 
@@ -144,10 +144,12 @@ Can you think of how to combine masking and fancy indexing in one line?
 
 Be sure to put the the masking and fancy indexing inside the square brackets: `countries.loc[]`.
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   countries.loc[countries['Population Density'] > 200, ('Population', 'Population Density')]
   ```
 
@@ -160,11 +162,15 @@ Be sure to put the the masking and fancy indexing inside the square brackets: `c
   
 </details>
 
+<br /><br />
+
+***
+
 ## Indexing conventions
 
 In practice in the world of data science (and pandas more generally), _indexing_ refers to columns while _slicing_ refers to rows.
 
-```Python
+```python
 countries['France':'Japan']
 ```
 
@@ -180,7 +186,7 @@ The output is:
 
 Such slices can also refer to rows by number rather than by index:
 
-```Python
+```python
 countries[1:3]
 ```
 
@@ -195,7 +201,7 @@ The output is:
 
 Similarly, direct masking operations are also interpreted row-wise rather than column-wise:
 
-```Python
+```python
 countries[countries['Population Density'] > 200]
 ```
 

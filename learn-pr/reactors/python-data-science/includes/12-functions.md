@@ -2,7 +2,7 @@ As in other programming languages, it is often essential in Python to break down
 
 For example, we could rewrite the `while` loop code snippet above as a formal function:
 
-```Python
+```python
 def fib(n):
     """Print a Fibonacci series up to n."""
     a, b = 0, 1
@@ -13,7 +13,7 @@ def fib(n):
 
 Now we can call this function and compute the Fibonacci series up to some arbitrary point:
 
-```Python
+```python
 fib(2000)
 ```
 
@@ -25,7 +25,7 @@ The output is:
 
 Python can also define new functions on the fly. These anonymous functions are called _lambda functions_ because you define them with the lambda keyword. Lambda functions can contain any number of arguments but only one expression.
 
-```Python
+```python
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 list(filter(lambda x: x % 2 != 0, nums))
 ```
