@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.text-classification-naive-bayes.4-data-explore
+title: Explore data
+metadata:
+  title: Explore data
+  description: Explore data TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-data-explore.md)]

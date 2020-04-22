@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.text-classification-naive-bayes.7-explore-more
+title: Explore more
+metadata:
+  title: Explore more
+  description: Explore more TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-explore-more.md)]
