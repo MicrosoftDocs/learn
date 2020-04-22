@@ -9,7 +9,7 @@ We are going to look at the top 10 most endangered bird species for this project
 - Go to [portal.azure.com](https://portal.azure.com/)
 - Select "Create Resource"
 - Select "AI + Machine Learning"
-- Select "Bing Search v7"
+- Select "Bing Search"
 - Complete the required fields
 - Select "Create"
 - When the deployment succeeds you will get a notification in the top right corner.
@@ -53,6 +53,10 @@ node index.js
 
 ## Add Logic to App
 
+Lets add our logic to the `index.js` file.
+
+- Add initial variables to connect to the service. Be sure to update with the subscription key we noted above when the service was created.
+
 ```javascript
 "use strict";
 
@@ -60,16 +64,15 @@ var https = require("https");
 var fs = require("fs");
 var download = require("image-downloader");
 // Replace the subscriptionKey string value with your valid subscription key.
-const subscriptionKey = "addyourkeyhere";
-// Verify the endpoint URI.  At this writing, only one endpoint is used for Bing
-// search APIs.  In the future, regional endpoints may be available.  If you
-// encounter unexpected authorization errors, double-check this host against
-// the endpoint for your Bing Search instance in your Azure dashboard.
+const subscriptionKey = "<YourSubKeyHere>";
+
 const host = "api.cognitive.microsoft.com";
 const path = "/bing/v7.0/images/search";
+//filter by license
+const filter = "&qft=+filterui:license-L2_L3_L4&FORM=IRFLTR";
 ```
 
-TODO: add license query string to req
+- Now lets add a helper method that will search for each image string provided and add it to the specified directory. In the logic below it will create a directory called `birds` and then a subdirectory of `test` and `train`. It will save every 3rd image to the test folder with this line of code`let destDir = count % 3 == 0 ? testDir : trainDir;`. We do this because we want to have 70% of the data to train the model and 30% to test with unseen data.
 
 ```javascript
 var searchAndSaveImages = (search) => {
@@ -79,7 +82,7 @@ var searchAndSaveImages = (search) => {
   let request_params = {
     method: "GET",
     hostname: host,
-    path: path + "?q=" + encodeURIComponent(`yoga ${search} pose`),
+    path: path + "?q=" + encodeURIComponent(`${search}`) + filter,
     headers: {
       "Ocp-Apim-Subscription-Key": subscriptionKey,
     },
@@ -95,7 +98,7 @@ var searchAndSaveImages = (search) => {
       console.log(`Image result count: ${imageResults.value.length}`);
       if (imageResults.value.length > 0) {
         //create directory folder for current search term
-        let rootDir = `./poses`;
+        let rootDir = `./birds`;
         let searchDir = `${rootDir}/${search}`;
         let testDir = `${searchDir}/test`;
         let trainDir = `${searchDir}/train`;
@@ -146,7 +149,7 @@ Create main method
 ```javascript
 let main = () => {
   //bird species search term list
-  var searchTermList = ["childs", "tree"];
+  var searchTermList = ["cardinal", "bluejay"];
   //loop search terms
   searchTermList.forEach((term) => {
     searchAndSaveImages(term);
