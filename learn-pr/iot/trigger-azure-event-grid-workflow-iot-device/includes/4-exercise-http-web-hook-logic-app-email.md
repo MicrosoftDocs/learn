@@ -4,7 +4,7 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
 
 ### Create the logic app
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) (which you may still have open), click **+Create a resource** to open the Azure marketplace.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) (which you may still have open), click **+Create a resource** to open the Azure Marketplace.
 1. On the **New** page, in the **Search the Marketplace** box, type in and search for **Logic App**.
 1. In the search results, select the **Logic App** item.
 1. On the **Logic App** item, click **Create**.
@@ -140,7 +140,7 @@ Now we want to configure the next step of the logic app: sending an email. And w
 
     The **HTTP POST URL** will be similar to this sample:
 
-    ```text
+    ```md
     https://prod-87.eastus.logic.azure.com:443/workflows/b16b5556cbc54c97b063479ed55b2669/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ZGqYl-R5JKTugLG3GR5Ir1FuM0zIpCrMw4Q2WycJRiM
     ```
 
@@ -149,6 +149,6 @@ Now we want to configure the next step of the logic app: sending an email. And w
     > [!TIP]
     > Make a note of the Web Hook endpoint URL - you will need it as part of the scenario to integrate IoT Hub and the Event Grid.
 
-## Next Steps
+## Next steps
 
 The next unit reviews the key features of Event Grid that allow easy integration with business applications using an event-grid architecture.

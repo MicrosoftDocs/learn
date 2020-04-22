@@ -8,7 +8,7 @@ With Azure IoT Hub and Azure Event Grid integration, you can send event notifica
 
 [![IoT Hub Integration with Event Grid and Logic Apps](../media/iot-hub-event-grid-logic-apps.png)](../media/iot-hub-event-grid-logic-apps.png#lightbox)
 
-## Learning Objectives
+## Learning objectives
 
 In this module you will:
 
@@ -23,7 +23,7 @@ In this module you will:
 * Ability to navigate Azure IoT portal
 * An outlook.com email address (you can create one for this module)
 
-## The Scenario
+## The scenario
 
 Suppose you manage a company that offers a solution to maintain and monitor cheese caves' temperature and humidity at optimal levels. You have been working with gourmet cheese making companies for a long time and established long-term trust with these customers who value the quality of your product.
 
