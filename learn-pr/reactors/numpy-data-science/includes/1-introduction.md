@@ -6,11 +6,11 @@ For example, the words in documents can be represented as the numbers that encod
 
 NumPy is short for *Numerical Python*, and it provides an efficient means of storing and operating on dense data buffers in Python. Array-oriented computing in Python goes back to 1995 with the Numeric library. Scientific programming in Python took off over the next 10 years, but the collections of libraries splintered. The NumPy project began in 2005 as a means of bringing the Numeric and NumArray projects together around a single array-based framework.
 
-Some examples in this section are drawn from the *Python Data Science Handbook* by Jake VanderPlas (content available [on GitHub](https://github.com/jakevdp/PythonDataScienceHandbook)) and *Python for Data Analysis* by Wes McKinney. Text from the *Python Data Science Handbook* is released under the [CC-BY-NC-ND license](https://creativecommons.org/licenses/by-nc-nd/3.0/us/legalcode); code is released under the [MIT license](https://opensource.org/licenses/MIT).
+Some examples in this section are drawn from the *Python Data Science Handbook* by Jake VanderPlas (content available [on GitHub](https://github.com/jakevdp/PythonDataScienceHandbook?azure-portal=true)) and *Python for Data Analysis* by Wes McKinney. Text from the *Python Data Science Handbook* is released under the [CC-BY-NC-ND license](https://creativecommons.org/licenses/by-nc-nd/3.0/us/legalcode?azure-portal=true); code is released under the [MIT license](https://opensource.org/licenses/MIT?azure-portal=true).
 
 Let's get started exploring NumPy!
 
-To get started, you will need to install matplotlib. Instructions can be found on the [VSCode Python Tutorial on Installing and Using Packages.](https://code.visualstudio.com/docs/python/python-tutorial#_install-and-use-packages)
+To get started, you will need to install matplotlib. Instructions can be found on the [VSCode Python Tutorial on Installing and Using Packages.](https://code.visualstudio.com/docs/python/python-tutorial#_install-and-use-packages?azure-portal=true)
 
 Our first step will be to import NumPy using `np` as an alias:
 

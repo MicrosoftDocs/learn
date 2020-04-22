@@ -34,7 +34,7 @@ The output is:
 "doesn't"
 ```
 
-In Python's interactive interpreter and Jupyter Notebooks in VS Code, the output string is enclosed in quotes and special characters are escaped with backslashes. Although this output sometimes looks different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes; otherwise, it’s enclosed in single quotes. The [print()](https://docs.python.org/3.6/library/functions.html#print) function produces a more readable output by omitting the enclosing quotes and by printing escaped and special characters:
+In Python's interactive interpreter and Jupyter Notebooks in VS Code, the output string is enclosed in quotes and special characters are escaped with backslashes. Although this output sometimes looks different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes; otherwise, it’s enclosed in single quotes. The [print()](https://docs.python.org/3.6/library/functions.html#print?azure-portal=true) function produces a more readable output by omitting the enclosing quotes and by printing escaped and special characters:
 
 ```Python
 '"Isn\'t," she said.'

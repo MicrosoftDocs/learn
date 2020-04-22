@@ -103,12 +103,18 @@ Here's the output:
 
 What happens if you add `np.nan` and **None** together?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   Remember: <b>NaN</b> is just for missing floating-point values; there is no <b>NaN</b> equivalent for integers, strings, or Booleans.
 
 </details>
+
+<br /><br />
+
+***
 
 ## NaN and None: Null values in pandas
 
@@ -136,6 +142,8 @@ Now, set an element of `int_series` equal to **None**.
 - How does that element show up in the Series?
 - What is the `dtype` of the series?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -152,6 +160,10 @@ Now, set an element of `int_series` equal to **None**.
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 In the process of upcasting data types to establish data homogeneity in Series and DataFrames, pandas will willingly switch missing values between **None** and **NaN**. Because of this design feature, it can be helpful to think of **None** and **NaN** as two different flavors of null in pandas. Indeed, some of the core methods you will use to deal with missing values in pandas reflect this idea in their names:
 
@@ -192,6 +204,8 @@ Now, let's turn this around and use these methods in a manner more like you will
 
 Try running `example3[example3.notnull()]`. But before you do, what do you expect to see?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -206,6 +220,10 @@ Try running `example3[example3.notnull()]`. But before you do, what do you expec
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 > [!div class="alert is-tip"]
 > ### Key takeaway
@@ -309,6 +327,8 @@ This output is returned:
 
 How might you go about dropping just column 3? Remember that you will need to supply both the axis parameter and the <code>how</code> parameter.
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -325,6 +345,10 @@ How might you go about dropping just column 3? Remember that you will need to su
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 The `thresh` parameter gives you more fine-grained control: you set the number of non-null values that a row or column needs to have in order to be kept:
 
@@ -387,6 +411,8 @@ dtype: float64
 
 What happens if you try to fill null values with a string, like `''`?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -404,6 +430,10 @@ What happens if you try to fill null values with a string, like `''`?
 ```
 
 </details>
+
+<br /><br />
+
+***
 
 
 You can forward-fill null values, which is to use the last valid value to fill a null:
@@ -478,6 +508,8 @@ Notice that when a preceding value is not available for forward-filling, the nul
 
 What output does `example4.fillna(method='bfill', axis=1)` produce?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -491,7 +523,13 @@ What output does `example4.fillna(method='bfill', axis=1)` produce?
 
 </details>
 
+<br /><br />
+
+***
+
 What about `example4.fillna(method='ffill')` and `example4.fillna(method='bfill')`?
+
+<br />
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -516,7 +554,13 @@ What about `example4.fillna(method='ffill')` and `example4.fillna(method='bfill'
 
 </details>
 
+<br /><br />
+
+***
+
 Can you think of a longer code snippet to write that can fill all the null values in example4?
+
+<br />
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -534,6 +578,10 @@ Can you think of a longer code snippet to write that can fill all the null value
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 You can be creative about how you use `fillna`. For example, let's look at `example4` again, but this time, we'll fill the missing values with the average of all the values in the DataFrame.
 

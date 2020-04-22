@@ -222,6 +222,8 @@ This output is returned:
 
 Using the documentation, can you figure out how to use `.drop()` to get rid of the **name** column? You will need to supply two parameters to `.drop()`.
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -239,6 +241,10 @@ Using the documentation, can you figure out how to use `.drop()` to get rid of t
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 ## left_index and right_index keywords
 
@@ -302,6 +308,8 @@ Here's the output:
 
 What happens if you specify only **left_index** or **right_index**?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -341,6 +349,10 @@ What happens if you specify only **left_index** or **right_index**?
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 
 You can also use the `join` method for DataFrames, which produces the same effect but merges on indices by default:
@@ -436,6 +448,8 @@ The complement of the inner join is the outer join, which returns the union of t
 
 The keyword for perfoming an outer join is `how`='outer'. How would you perform it? What do you expect the output of an outer join of df1 and df5 to be?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -455,6 +469,10 @@ The keyword for perfoming an outer join is `how`='outer'. How would you perform 
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 Notice in your resulting DataFrame that not every row in df1 and df5 had a value that corresponds to the union of the key values (the **group** column). Pandas fills in these missing values with NaNs.
 
@@ -479,6 +497,8 @@ Here's the output:
 
 Now run the right merge between df1 and df5. What do you expect to see?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -496,6 +516,10 @@ Now run the right merge between df1 and df5. What do you expect to see?
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 ## suffixes keyword: dealing with conflicting column names
 

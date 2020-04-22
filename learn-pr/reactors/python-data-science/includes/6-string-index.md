@@ -195,7 +195,7 @@ The output is:
 ''
 ```
 
-Python strings are [immutable](https://docs.python.org/3.6/glossary.html#term-immutable), which means they cannot be changed. Therefore, assigning a value to an indexed position in a string results in an error:
+Python strings are [immutable](https://docs.python.org/3.6/glossary.html#term-immutable?azure-portal=true), which means they cannot be changed. Therefore, assigning a value to an indexed position in a string results in an error:
 
 ```Python
 word[0] = 'J'
@@ -266,7 +266,7 @@ The output is:
 SyntaxError: invalid syntax
 ```
 
-Oftentimes, while working with strings, it can be useful to evaluate the length of a string. The built-in function [len()](https://docs.python.org/3.5/library/functions.html#len) returns the length of a string:
+Oftentimes, while working with strings, it can be useful to evaluate the length of a string. The built-in function [len()](https://docs.python.org/3.5/library/functions.html#len?azure-portal=true) returns the length of a string:
 
 ```Python
 s = 'supercalifragilisticexpialidocious'
@@ -279,7 +279,7 @@ The output is:
 34
 ```
 
-Another useful built-in function for working with strings is [str()](https://docs.python.org/3.6/library/stdtypes.html#str). This function takes any object and returns a printable string version of that object. For example:
+Another useful built-in function for working with strings is [str()](https://docs.python.org/3.6/library/stdtypes.html#str?azure-portal=true). This function takes any object and returns a printable string version of that object. For example:
 
 ```Python
 str(2)

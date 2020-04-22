@@ -41,6 +41,8 @@ The output is:
 
 Use a list comprehension to generate a list of odd cubes from 1 to 2,197.
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -63,6 +65,10 @@ Use a list comprehension to generate a list of odd cubes from 1 to 2,197.
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 > [!div class="alert is-tip"]
 > ### Takeaway

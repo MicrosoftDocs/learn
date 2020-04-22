@@ -13,6 +13,8 @@ population = pd.Series({'China': 1409517397, 'India': 1339180127,
 
 Now divide these to compute the population density
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -33,6 +35,10 @@ Now divide these to compute the population density
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 Your resulting array contains the **union** of indices of the two input arrays: seven countries in total. All of the countries in the array without an entry (because they lacked either area data or population data) are marked with the now familiar NaN, or "Not a Number," designation.
 

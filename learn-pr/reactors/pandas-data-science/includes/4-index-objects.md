@@ -81,6 +81,8 @@ Try the following:
 - The union (`ind_odd | ind_prime`)
 - The symmetric difference (`ind_odd ^ ind_prime`) of `ind_odd` and `ind_prime`
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -109,6 +111,10 @@ Try the following:
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 These operations may also be accessed via object methods, for example `ind_odd.intersection(ind_prime)`. Below is a table listing some useful `Index` methods and properties.
 

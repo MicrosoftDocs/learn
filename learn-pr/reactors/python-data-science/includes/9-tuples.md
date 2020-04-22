@@ -111,6 +111,8 @@ False
 - What happens if you run `lis` in `lis`? Is that the behavior you expected?
 - If not, think back to the nested lists we’ve already encountered.
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -123,3 +125,7 @@ False
   ```
   
 </details>
+
+<br /><br />
+
+***

@@ -1,6 +1,6 @@
 Since its release in 1991, Python has risen to become not just a popular general-purpose programming language, but a preeminent computer language for data science. This learning path will use Python and the Python extension for Visual Studio Code as the primary means of illustrating data science tools and resources.
 
-Several examples in this learning path draw from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html) and examples given in the [Python 3 documentation](https://docs.python.org/3/) (with edits and amendments). This introduction to Python is written for Python 3.6.7 but is generally applicable to other Python 3.x versions.
+Several examples in this learning path draw from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html?azure-portal=true) and examples given in the [Python 3 documentation](https://docs.python.org/3/?azure-portal=true) (with edits and amendments). This introduction to Python is written for Python 3.6.7 but is generally applicable to other Python 3.x versions.
 
 Original material from python.org is Copyright (c) 2001-2019 Python Software Foundation.
 
@@ -12,17 +12,17 @@ To learn most effectively throughout this learning path, we recommend that you s
 
 Complete these steps to set up your environment:
 
-1. Download and install [VS Code](https://code.visualstudio.com). This is free and works on Windows, Mac, and Linux. Select the stable build for your platform. 
-2. Download and install the [Python extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-python.python). This will include first installing a supported version of Python.
-3. Activate the [Anaconda environment in VS Code](https://code.visualstudio.com/docs/python/jupyter-support) to be able to run Jupyter notebooks.
-4. Set up a [Data Science environment in VS Code](https://code.visualstudio.com/docs/python/data-science-tutorial) to be able to use NumPy and Pandas.
+1. Download and install [VS Code](https://code.visualstudio.com?azure-portal=true). This is free and works on Windows, Mac, and Linux. Select the stable build for your platform. 
+2. Download and install the [Python extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-python.python?azure-portal=true). This will include first installing a supported version of Python.
+3. Activate the [Anaconda environment in VS Code](https://code.visualstudio.com/docs/python/jupyter-support?azure-portal=true) to be able to run Jupyter notebooks.
+4. Set up a [Data Science environment in VS Code](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true) to be able to use NumPy and Pandas.
 
 ## Test your environment
 
 If you have successfully set up your environment with VS Code, Python, Anaconda, and the NumPy and Pandas libraries, you should be able to run a Jupyter notebook inside of VS Code.
 
-1. Clone the [Reactor repository](https://github.com/microsoft/Reactors) and open the [Learn/Intro-Python-Data-Science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md) in VS Code.
-2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/Test-Setup-Config.ipynb) file to ensure you're ready to continue through the Learning Path.
+1. Clone the [Reactor repository](https://github.com/microsoft/Reactors?azure-portal=true) and open the [Learn/Intro-Python-Data-Science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md?azure-portal=true) in VS Code.
+2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/Test-Setup-Config.ipynb?azure-portal=true) file to ensure you're ready to continue through the Learning Path.
 
 <!--*Embedded Video Goes Here*-->
 

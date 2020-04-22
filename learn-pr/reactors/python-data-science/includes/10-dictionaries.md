@@ -23,6 +23,8 @@ The output is:
 
 Now try adding another country (or something else) to the capitals dictionary.
 
+<br />
+
 <details> 
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -39,6 +41,10 @@ Now try adding another country (or something else) to the capitals dictionary.
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 You reference entries much like you do as through an index number for a string, list, or tuple, but instead of an index, use a key:
 
@@ -77,7 +83,7 @@ The output is:
 2
 ```
 
-Similar to the `pop()` method for lists, the [popitem()](https://docs.python.org/3.6/library/stdtypes.html?highlight=popitem#dict.popitem) method randomly removes a key from the dictionary, along with its associated value:
+Similar to the `pop()` method for lists, the [popitem()](https://docs.python.org/3.6/library/stdtypes.html?highlight=popitem#dict.popitem?azure-portal=true) method randomly removes a key from the dictionary, along with its associated value:
 
 ```Python
 capitals.popitem()

@@ -37,6 +37,8 @@ The output is:
 
 Add df1 and df2. Is the output what you expected?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -53,6 +55,10 @@ Add df1 and df2. Is the output what you expected?
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 Even though we passed the columns in a different order in `df2` than in `df1`, the indices were aligned correctly sorted in the resulting union of columns.
 

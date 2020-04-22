@@ -11,7 +11,7 @@ The output is:
 [1, 4, 9, 16, 25]
 ```
 
-Like strings (and all other built-in [sequence types](https://docs.python.org/3.5/glossary.html#term-sequence)), lists can be indexed and sliced:
+Like strings (and all other built-in [sequence types](https://docs.python.org/3.5/glossary.html#term-sequence?azure-portal=true)), lists can be indexed and sliced:
 
 ```Python
 squares[0]  # Indexing returns the item.
@@ -211,6 +211,8 @@ Nested lists come up a lot in programming, so it pays to practice.
 - Which indices would you include after `x` to get the output `c`?
 - How about to get the output `3`?
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -223,3 +225,7 @@ Nested lists come up a lot in programming, so it pays to practice.
   ```
   
 </details>
+
+<br /><br />
+
+***

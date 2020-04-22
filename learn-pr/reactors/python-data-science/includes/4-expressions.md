@@ -111,6 +111,8 @@ i = 7
 (i == 2) or not (i % 2 != 0 and 1 < i < 5)
 ```
 
+<br />
+
 <details>
 
  <summary>Hint <i>(expand to reveal)</i></summary>
@@ -120,3 +122,7 @@ i = 7
  ```
 
 </details>
+
+<br /><br />
+
+***

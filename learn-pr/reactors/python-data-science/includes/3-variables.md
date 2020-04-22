@@ -139,4 +139,4 @@ The output is:
 
 Note that augmented assignment doesn’t have to be by 1 or even just addition. Beyond +=, augmented assignment statements in Python include -=, *=, /=, %=, and **=. Try playing around with different augmentation assignments until this concept makes sense.
 
-Python supports other types of numbers beyond `int` and `float`, such as [Decimal](https://docs.python.org/3.6/library/decimal.html#decimal.Decimal) and [Fraction](https://docs.python.org/3.6/library/fractions.html#fractions.Fraction). Python also has built-in support for [complex numbers](https://docs.python.org/3.6/library/stdtypes.html#typesnumeric), which are beyond the scope of this learning path.
+Python supports other types of numbers beyond `int` and `float`, such as [Decimal](https://docs.python.org/3.6/library/decimal.html#decimal.Decimal?azure-portal=true) and [Fraction](https://docs.python.org/3.6/library/fractions.html#fractions.Fraction?azure-portal=true). Python also has built-in support for [complex numbers](https://docs.python.org/3.6/library/stdtypes.html#typesnumeric?azure-portal=true), which are beyond the scope of this learning path.

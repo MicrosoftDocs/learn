@@ -60,6 +60,8 @@ This is what is in the first five rows of the Iris dataset:
 
 By default, `DataFrame.head` returns the first five rows in a DataFrame. In a new code cell, can you figure out how to get it to show more?
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -67,6 +69,10 @@ By default, `DataFrame.head` returns the first five rows in a DataFrame. In a ne
   Run `iris_df.head` to consult the documentation.
 
 </details>
+
+<br /><br />
+
+***
 
 ## `DataFrame.tail`
 

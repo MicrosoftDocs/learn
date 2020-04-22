@@ -36,7 +36,7 @@ The output is:
 1.4
 ```
 
-Division (/) always returns a floating-point number, which brings up a good point. Python (like other programming languages) has different numeric types. Integer numbers (such as 1, 3, and 20) have type [int](https://docs.python.org/3.6/library/functions.html#int). Numbers with a fractional component (such as 3.0 or 1.6) have type [float](https://docs.python.org/3.5/library/functions.html#float).
+Division (/) always returns a floating-point number, which brings up a good point. Python (like other programming languages) has different numeric types. Integer numbers (such as 1, 3, and 20) have type [int](https://docs.python.org/3.6/library/functions.html#int?azure-portal=true). Numbers with a fractional component (such as 3.0 or 1.6) have type [float](https://docs.python.org/3.5/library/functions.html#float?azure-portal=true).
 
 You can mix numeric types in calculations:
 
@@ -62,7 +62,7 @@ The output is:
 1.4
 ```
 
-You can perform a type of division that returns an integer: [floor division](https://docs.python.org/3.6/glossary.html#term-floor-division). Floor division uses the double slash (//) operator, discards any remainders, and just returns an `int`.
+You can perform a type of division that returns an integer: [floor division](https://docs.python.org/3.6/glossary.html#term-floor-division?azure-portal=true). Floor division uses the double slash (//) operator, discards any remainders, and just returns an `int`.
 
 ```Python
 7 // 5

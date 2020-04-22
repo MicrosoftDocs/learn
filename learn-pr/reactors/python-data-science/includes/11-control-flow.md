@@ -62,6 +62,8 @@ Notice that, in the previous example, the `if` statement exited after finding th
 
 Try changing the value of `y` in the snippet above. Do you get the output that you expect?
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -95,6 +97,10 @@ Try changing the value of `y` in the snippet above. Do you get the output that y
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 ## For loop: Basics
 
@@ -130,7 +136,7 @@ yellow purple
 blue orange
 ```
 
-We've met `len()` before, but [range()](https://docs.python.org/3/library/functions.html#func-range) is new to us. That function produces a sequence of integers from 0 to 1 less than the number passed into it. Hence:
+We've met `len()` before, but [range()](https://docs.python.org/3/library/functions.html#func-range?azure-portal=true) is new to us. That function produces a sequence of integers from 0 to 1 less than the number passed into it. Hence:
 
 ```Python
 for j in range(5):
@@ -186,6 +192,8 @@ Note that, in the example above, the `else` statement belongs to the `for` loop,
 
 Try changing the code snippet above by removing the `break` statement. What output does it now produce?
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -218,6 +226,10 @@ Try changing the code snippet above by removing the `break` statement. What outp
 
 </details>
 
+<br /><br />
+
+***
+
 ## For loop: Continue
 As part of the control flow of your program, you might want to continue to the next iteration of your `for` loop. The `continue` statement (also borrowed from C) can help with that:
 
@@ -246,6 +258,8 @@ Found an odd number: 9
 
 What happens when you replace the `continue` statement above with a `break`?
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -263,6 +277,10 @@ What happens when you replace the `continue` statement above with a `break`?
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 ## While-loops
 

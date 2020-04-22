@@ -144,6 +144,8 @@ Can you think of how to combine masking and fancy indexing in one line?
 
 Be sure to put the the masking and fancy indexing inside the square brackets: `countries.loc[]`.
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -159,6 +161,10 @@ Be sure to put the the masking and fancy indexing inside the square brackets: `c
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 ## Indexing conventions
 

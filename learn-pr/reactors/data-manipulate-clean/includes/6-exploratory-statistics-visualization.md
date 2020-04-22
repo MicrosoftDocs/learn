@@ -103,6 +103,8 @@ The output shows that 77.5% is the median of `AGE`:
 
 Now, find the maximum value in `df['AGE']`.
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -115,6 +117,10 @@ Now, find the maximum value in `df['AGE']`.
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 Other information that you often will want to see is the relationship between different columns. To do this, use the `DataFrame.groupby` method. For example, you could examine the average `MEDV` (median value of owner-occupied homes) for each value of `AGE` (proportion of owner-occupied units built prior to 1940):
 
@@ -194,6 +200,8 @@ Name: MEDV, Length: 356, dtype: float64
 
 Now try to find the median value for `AGE` for each value of `MEDV`.
 
+<br />
+
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
@@ -268,6 +276,10 @@ Now try to find the median value for `AGE` for each value of `MEDV`.
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 You can also apply a lambda function to each element of a DataFrame column by using the `apply` method. For example, say you wanted to create a new column that flagged a row if more than 50 percent of owner-occupied homes were build before 1940:
 
