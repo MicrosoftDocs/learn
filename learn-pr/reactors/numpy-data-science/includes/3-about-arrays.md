@@ -87,7 +87,7 @@ array([3.14, 4.  , 2.  , 3.  ])
 
 What happens if you construct an array using a list that contains a combination of integers, floats, and strings?
 
-***
+<br />
 
 <details>
 
@@ -103,11 +103,13 @@ What happens if you construct an array using a list that contains a combination 
   array(['3.14', 'pi', '3'], dtype='<U32')
   ```
 
-***
-
 </details>
 
+<br /><br />
+
 ***
+
+
 
 If you want to explicitly set the data type of your array when you create it, you can use the `dtype` keyword:
 

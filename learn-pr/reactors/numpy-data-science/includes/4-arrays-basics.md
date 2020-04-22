@@ -27,6 +27,8 @@ print("a1 shape:", a1.shape)
 print("a1 size: ", a1.size)
 ```
 
+The output is:
+
 ```Output
 a1 ndim:  1
 a1 shape: (6,)
@@ -40,17 +42,23 @@ Change the values in this code snippet to look at the attributes for a2 and a3:
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
+  For a2:
+  
   ```Python
   print("a2 ndim: ", a2.ndim)
   print("a2 shape:", a2.shape)
   print("a2 size: ", a2.size)
   ```
   
+  The output is:
+
   ```Output
   a2 ndim:  2
   a2 shape: (3, 4)
   a2 size:  12
   ```
+  
+  For a3:
 
   ```Python
   print("a3 ndim: ", a3.ndim)
@@ -58,6 +66,8 @@ Change the values in this code snippet to look at the attributes for a2 and a3:
   print("a3 size: ", a3.size)
   ```
   
+  The output is:
+
   ```Output
   a3 ndim:  3
   a3 shape: (3, 4, 5)
@@ -66,12 +76,13 @@ Change the values in this code snippet to look at the attributes for a2 and a3:
 
 </details>
 
-
 Another useful array attribute is the `dtype`, which we already encountered earlier in this section as a means of determining the type of data in an array:
 
 ```Python
 print("dtype:", a3.dtype)
 ```
+
+The output is:
 
 ```Output
 dtype: int64
@@ -87,13 +98,15 @@ What `dtypes` do you predict them to have?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-```Python
-print("dtype:", a3.dtype)
-```
+  ```Python
+  print("dtype:", a3.dtype)
+  ```
 
-```Output
-dtype: int64
-```
+  The output is:
+
+  ```Output
+  dtype: int64
+  ```
 
 </details>
 
@@ -101,25 +114,37 @@ dtype: int64
 
 Indexing in NumPy is pretty similar to indexing lists in standard Python. In fact, indices in one-dimensional arrays work exactly as they do with Python lists:
 
+Try:
+
 ```Python
 a1
 ```
+
+The output is:
 
 ```Output
 array([5, 0, 3, 3, 7, 9])
 ```
 
+Then try:
+
 ```Python
 a1[0]
 ```
+
+The output is:
 
 ```Output
 5
 ```
 
+And next:
+
 ```Python
 a1[4]
 ```
+
+The output is:
 
 ```Output
 7
@@ -127,17 +152,25 @@ a1[4]
 
 As with regular Python lists, in order to index from the end of the array, you can use negative indices:
 
+For example:
+
 ```Python
 a1[-1]
 ```
+
+The output is:
 
 ```Output
 9
 ```
 
+And:
+
 ```Python
 a1[-2]
 ```
+
+The output is:
 
 ```Output
 7
@@ -157,6 +190,8 @@ Try a few combinations like `a2[1][1]` or `a3[0][2][1]` and see what comes back.
   a2[1][1]
   ```
   
+  The output is:
+
   ```Output
   6
   ```
@@ -165,6 +200,8 @@ Try a few combinations like `a2[1][1]` or `a3[0][2][1]` and see what comes back.
   a3[0][2][1]
   ```
   
+  The output is:
+
   ```Output
   0
   ```
@@ -175,9 +212,13 @@ You might have noticed that we can treat multidimensional arrays like lists of l
 
 (Yes, we realize that these comma-separated tuples use square brackets rather than the parentheses the name might suggest, but they are nevertheless referred to as tuples.)
 
+Try:
+
 ```Python
 a2
 ```
+
+The output is:
 
 ```Output
 array([[3, 5, 2, 4],
@@ -185,25 +226,37 @@ array([[3, 5, 2, 4],
        [1, 6, 7, 7]])
 ```
 
+And with:
+
 ```Python
 a2[0, 0]
 ```
+
+The output is:
 
 ```Output
 3
 ```
 
+Next look at:
+
 ```Python
 a2[2, 0]
 ```
+
+The output is:
 
 ```Output
 1
 ```
 
+Try:
+
 ```Python
 a2[2, -1]
 ```
+
+The output is:
 
 ```Output
 7
@@ -215,6 +268,8 @@ You can also modify values by use of this same comma-separated index notation:
 a2[0, 0] = 12
 a2
 ```
+
+The output is:
 
 ```Output
 array([[12,  5,  2,  4],
@@ -228,6 +283,8 @@ Remember, once defined, NumPy arrays have a fixed data type. So, if you attempt 
 a1[0] = 3.14159
 a1
 ```
+
+The output is:
 
 ```Output
 array([3, 0, 3, 3, 7, 9])
@@ -246,15 +303,21 @@ What happens if you try to insert a string into a1? Try both a string like '3' a
   a1
   ```
   
+  The output is:
+
   ```Output
   array([3, 3, 3, 3, 7, 9])
   ```
+
+  But when you try:
 
   ```Python
   a1[1] = 'three'
   a1
   ```
   
+  The output is:
+
   ```Output
   ---------------------------------------------------------------------------
   ValueError                                Traceback (most recent call last)
@@ -279,50 +342,74 @@ If any of these are unspecified, they default to the values `start=0`, `stop=`
 
 ### One-dimensional slices
 
+Using this code:
+
 ```Python
 a = np.arange(10)
 a
 ```
 
+The output is:
+
 ```Output
 array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 ```
 
+You can get the first five elements:
+
 ```Python
-a[:5]  # first five elements
+a[:5]
 ```
+
+The output is:
 
 ```Output
 array([0, 1, 2, 3, 4])
 ```
 
+You can return the elements after index 5:
+
 ```Python
-a[5:]  # elements after index 5
+a[5:]
 ```
+
+The output is:
 
 ```Output
 array([5, 6, 7, 8, 9])
 ```
 
+Or the middle sub-array:
+
 ```Python
-a[4:7]  # middle sub-array
+a[4:7]
 ```
+
+The output is:
 
 ```Output
 array([4, 5, 6])
 ```
 
+Here's how to get every other element:
+
 ```Python
-a[::2]  # every other element
+a[::2]
 ```
+
+The output is:
 
 ```Output
 array([0, 2, 4, 6, 8])
 ```
 
+Just every other element, starting at index 1:
+
 ```Python
-a[1::2]  # every other element, starting at index 1
+a[1::2]
 ```
+
+The output is:
 
 ```Output
 array([1, 3, 5, 7, 9])
@@ -336,18 +423,26 @@ How would you access the *last* five elements of array a? How about every other 
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
+  Try:
+
   ```Python
   a[-5:]
   ```
   
+  The output is:
+
   ```Output
   array([5, 6, 7, 8, 9])
   ```
+
+  And:
 
   ```Python
   a[-5::2]
   ```
   
+  The output is:
+
   ```Output
   array([5, 7, 9])
   ```
@@ -356,17 +451,25 @@ How would you access the *last* five elements of array a? How about every other 
 
 Be careful when using negative values for `step`. When `step` has a negative value, the defaults for `start` and `stop` are swapped and you can use this functionality to reverse an array:
 
+This gives you all elements, reversed:
+
 ```Python
-a[::-1]  # all elements, reversed
+a[::-1]
 ```
+
+The output is:
 
 ```Output
 array([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
 ```
 
+And this is reversed every other from index 5:
+
 ```Python
-a[5::-2]  # reversed every other from index 5
+a[5::-2]
 ```
+
+The output is:
 
 ```Output
 array([5, 3, 1])
@@ -380,10 +483,14 @@ How can you create a slice that contains every third element of `a`,  descending
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
+  Try:
+
   ```Python
   a[-2::-3]
   ```
   
+  The output is:
+
   ```Output
   array([8, 5, 2])
   ```
@@ -398,24 +505,34 @@ Multidimensional slices use the same slice notation of one-dimensional subarrays
 a2
 ```
 
+The output is:
+
 ```Output
 array([[12,  5,  2,  4],
        [ 7,  6,  8,  8],
        [ 1,  6,  7,  7]])
 ```
 
+Two rows, three columns:
+
 ```Python
-a2[:2, :3]  # two rows, three columns
+a2[:2, :3]
 ```
+
+The output is:
 
 ```Output
 array([[12,  5,  2],
        [ 7,  6,  8]])
 ```
 
+All rows, every other column:
+
 ```Python
-a2[:3, ::2]  # all rows, every other column
+a2[:3, ::2]
 ```
+
+The output is:
 
 ```Output
 array([[12,  2],
@@ -429,6 +546,8 @@ Finally, subarray dimensions can even be reversed together:
 a2[::-1, ::-1]
 ```
 
+The output is:
+
 ```Output
 array([[ 7,  7,  6,  1],
        [ 8,  8,  6,  7],
@@ -439,17 +558,25 @@ array([[ 7,  7,  6,  1],
 
 One thing you will often need to do in manipulating data is accessing a single row or column in an array. You can do this through a combination of indexing and slicing; specifically by using an empty slice marked by a single colon (`:`). Again, some examples will help illustrate this.
 
+To get the first column of x2:
+
 ```Python
-print(a2[:, 0])  # first column of x2
+print(a2[:, 0])
 ```
+
+The output is:
 
 ```Output
 [12  7  1]
 ```
 
+To get the first row of x2:
+
 ```Python
-print(a2[0, :])  # first row of x2
+print(a2[0, :])
 ```
+
+The output is:
 
 ```Output
 [12  5  2  4]
@@ -460,6 +587,8 @@ In the case of row access, the empty slice can be omitted for a more compact syn
 ```Python
 print(a2[0])  # equivalent to a2[0, :]
 ```
+
+The output is:
 
 ```Output
 [12  5  2  4]
@@ -479,16 +608,22 @@ How about the third row of a3?
   a3[:,:,2]
   ```
   
+  The output is:
+
   ```Output
   array([[5, 3, 2, 3],
        [9, 3, 0, 8],
        [8, 9, 0, 4]])
   ```
 
+  And for:
+
   ```Python
   a3[2,:,:]
   ```
   
+  The output is:
+
   ```Output
   array([[4, 9, 8, 1, 1],
        [7, 9, 9, 3, 6],
