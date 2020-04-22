@@ -6,7 +6,7 @@ Now our model is performing "good enough" lets deploy it!
 
 ### Get the Prediction Url
 
-- Select "Performace" from the top navigation in the Custom Vision portal
+- Select "Performance" from the top navigation in the Custom Vision portal
 - Select "Prediction Url"
 - Copy the Url to either use an image url or image file
 - Additionally by selecting the settings icon in the right corner will bring you to the keys and urls to call the endpoint.

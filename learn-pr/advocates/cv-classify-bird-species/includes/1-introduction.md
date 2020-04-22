@@ -15,7 +15,10 @@ Here are some additional data options when thinking about building models for bi
 In this module, you will:
 
 - Get an introduction to Computer Vision
-- Learn how to use the Custom Vision Cognitive Service
+- Get an introduction to Machine Learning (ML)
+- Learn how to use prebuilt ML models in Azure called Cognitive Services
+- Lear how to use the Custom Vision Cognitive Service
 - Learn how to get a Dataset with Bing Search Service
+- Create a Node App with VS Code to interact with the Cognivive service SDK's in JavaScript
 - Build a custom machine learning model
 - Operationalize the model created with Custom Vision

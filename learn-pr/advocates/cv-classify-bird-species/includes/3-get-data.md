@@ -55,7 +55,7 @@ node index.js
 
 Lets add our logic to the `index.js` file.
 
-- Add initial variables to connect to the service. Be sure to update with the subscription key we noted above when the service was created.
+Add initial variables to connect to the service. Be sure to update with the subscription key we noted above when the service was created.
 
 ```javascript
 "use strict";
@@ -72,12 +72,11 @@ const path = "/bing/v7.0/images/search";
 const filter = "&qft=+filterui:license-L2_L3_L4&FORM=IRFLTR";
 ```
 
-- Now lets add a helper method that will search for each image string provided and add it to the specified directory. In the logic below it will create a directory called `birds` and then a subdirectory of `test` and `train`. It will save every 3rd image to the test folder with this line of code`let destDir = count % 3 == 0 ? testDir : trainDir;`. We do this because we want to have 70% of the data to train the model and 30% to test with unseen data.
+Now lets add a helper method that will search for each image string provided and add it to the specified directory. In the logic below it will create a directory called `birds` and then a subdirectory of `test` and `train`. It will save every 3rd image to the test folder with this line of code `let destDir = count % 3 == 0 ? testDir : trainDir;`. We do this because we want to have ~70% of the data to train the model and ~30% to test with unseen data.
 
 ```javascript
 var searchAndSaveImages = (search) => {
   console.log("Searching images for: " + search);
-  //set global to current search term
 
   let request_params = {
     method: "GET",
@@ -144,7 +143,7 @@ var searchAndSaveImages = (search) => {
 };
 ```
 
-Create main method
+Lastly create the `main` method. This method will loop through `searchTermList` and call our helper method to get the images and save them to the directory.
 
 ```javascript
 let main = () => {
@@ -165,4 +164,12 @@ if (subscriptionKey.length === 32) {
 }
 ```
 
-## Get Data
+## Run the App to Get the Data
+
+We are now ready to run the app and scrape our dataset together using the Bing Search API.
+
+- To run the app open the VS Code terminal and use the following command
+
+```bash
+node index.js
+```
