@@ -48,7 +48,7 @@ CountVect = CountVectorizer(analyzer=txt_preprocess).fit(X)
 
 TBD output
 
-> ![NOTE]
+> [!NOTE]
 > The convention of using an uppercase `X` to represent the independent variables (the predictors) and a lowercase `y` to represent the dependent variable (the response) comes from statistics and is commonly used by data scientists.
 
 In order to see how the vectorizer transformed the words, let's check it against a common English word like "go."

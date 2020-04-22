@@ -9,6 +9,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+  show_latex: true
 durationInMinutes: 20
 content: |
   [!include[](includes/6-models-train.md)]

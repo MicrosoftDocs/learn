@@ -1,3 +1,5 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
+
 Naive Bayes is a convenient algorithm for spam detection because it doesn't require encoding complex rules. All it needs is training examples, of which there are plenty when it comes to email spam. Naive Bayes does all this through the use of [conditional probability](https://wikipedia.org/wiki/Conditional_probability?azure-portal=true).
 
 ## Conditional probability
@@ -34,7 +36,7 @@ Plugging this in to Bayes' law, we get the following probability that an email m
 
 $P({\rm S} \mid {\rm debt})=\cfrac{P({\rm debt} \mid {\rm S})P({\rm S})}{P({\rm debt})}=\cfrac{(0.309)(0.5)}{0.157}=\cfrac{0.1545}{0.157}=0.984$
 
-Thus if an email contains the word "debt," we calculate that it is 98.4 percent likely to be spam.
+Thus, if an email contains the word "debt," we calculate that it is 98.4 percent likely to be spam.
 
 ## What makes it naive
 
@@ -42,7 +44,7 @@ Our above calculation is great for looking at individual words, but emails conta
 
 $P({\rm S} \mid {\rm debt, bills}) \propto P({\rm debt, bills} \mid {\rm S})P({\rm S})$
 
-> ![NOTE]
+> [!NOTE]
 > The symbol ∝ represents proportionality rather than equality.
 
 Now, if we assume that the occurrence of the words "debt" and "bills" are independent events, we can extend this proportionality:
