@@ -37,9 +37,18 @@ Let's begin with some common terminology:
 
 Together, these are often referred to as an optimization landscape. 
 In the case of a problem involving two continuous variables, the analogy to a landscape is quite direct. 
-For example, here is a plot of an objective function that looks like a single smooth valley.
+For example, here is a plot of an objective function that looks like a single smooth valley:
 
 ![A plot of an optimization landscape that looks like a single smooth valley](../media/plot_simple.png)
+
+This kind of problem can be easily solved with techniques such as gradient descent, where you begin from an initial starting point and greedily move to any solution with a lower cost. After a few moves this will converge to the global minimum.
+
+- **Global minimum**: The lowest point in the optimization landscape.
+- **Local minimum**: A rugged landscape may consist of multiple valleys. Each of these valleys will have a lowest point, which are called the local minima. One of these points will be the lowest overall, and is the global minimum.
+
+Advanced methods such as QIO offer no advantage on these easy problems. Instead, they should be applied to problems where the landscape is rugged, for example:
+
+![A plot of an optimization landscape that shows many peaks and valleys](../media/plot_rugged.png)
 
 # Explain general ideas of optimization
 In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
