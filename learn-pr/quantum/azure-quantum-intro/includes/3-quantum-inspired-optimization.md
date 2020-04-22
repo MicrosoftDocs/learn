@@ -50,6 +50,13 @@ Advanced methods such as QIO offer no advantage on these easy problems. Instead,
 
 ![A plot of an optimization landscape that shows many peaks and valleys](../media/plot_rugged.png)
 
+In these scenarios, one of the greatest challenges is avoiding getting "stuck" in the sub-optimal local minima. 
+It is these cases where QIO can outperform other techniques, due to the behaviour of the algorithms which we will detail in the following section.
+
+So far we have discussed smooth and rugged objective functions, but what if there is no structure at all? In these cases, where the solutions are completely random, then no algorithm can improve upon brute force search.
+
+![A plot of an optimization landscape that shows points scattered randomly](../media/plot_random.png)
+
 # Explain general ideas of optimization
 In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
 objective function, cost function, gradient descent
