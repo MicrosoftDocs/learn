@@ -20,6 +20,7 @@ prerequisites: |
   - Beginner-level experience developing JavaScript applications with Node.js
   - Familiarity with one of Angular, React, Svelte, or Vue
   - Beginner-level experience with Azure Functions
+  - A GitHub account
   - [Visual Studio Code](https://code.visualstudio.com/) installed
   - The [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
