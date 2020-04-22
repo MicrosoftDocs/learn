@@ -71,7 +71,7 @@ The output is:
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
 
-Unlike strings, which are [immutable](https://docs.python.org/3.5/glossary.html#term-immutable), lists are a [mutable](https://docs.python.org/3.5/glossary.html#term-mutable) type, which means you can change any value in the list:
+Unlike strings, which are [immutable](https://docs.python.org/3.5/glossary.html#term-immutable?azure-portal=true), lists are a [mutable](https://docs.python.org/3.5/glossary.html#term-mutable?azure-portal=true) type, which means you can change any value in the list:
 
 ```Python
 cubes = [1, 8, 27, 65, 125]  # Something's wrong here ...
@@ -152,7 +152,7 @@ The output is:
 []
 ```
 
-The built-in [len()](https://docs.python.org/3.6/library/functions.html#len) function also applies to lists for getting their lengths:
+The built-in [len()](https://docs.python.org/3.6/library/functions.html#len?azure-portal=true) function also applies to lists for getting their lengths:
 
 ```Python
 letters = ['a', 'b', 'c', 'd']

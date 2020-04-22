@@ -212,6 +212,8 @@ Try a few combinations like `a2[1][1]` or `a3[0][2][1]` and see what comes back.
   6
   ```
 
+  When you use:
+
   ```Python
   a3[0][2][1]
   ```

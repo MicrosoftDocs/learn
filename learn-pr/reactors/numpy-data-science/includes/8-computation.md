@@ -2,7 +2,7 @@ Some of the properties that make Python great to work with for data science (its
 
 When we first examined loops in the Introduction to Pything, you probably didn't notice any delay: the loops were short enough that Python's relatively slow looping wasn't an issue. Consider this function, which calculates the reciprocal for an array of numbers:
 
-```Python
+```python
 import numpy as np
 np.random.seed(0)
 
@@ -26,7 +26,7 @@ Running this loop, it was probably difficult to even discern that execution wasn
 
 But let's try it on a much larger array. To empirically do this, we'll time this with IPython's `%timeit` magic command.
 
-```Python
+```python
 big_array = np.random.randint(1, 100, size=1000000)
 %timeit compute_reciprocals(big_array)
 ```
@@ -47,7 +47,7 @@ Universal functions in NumPy (often shortened to *ufuncs*) provide a statically
 
 Let's examine what this means in practice. Let's find the reciprocals of `big_array` again, this time using a built-in NumPy division ufunc on the array:
 
-```Python
+```python
 %timeit (1.0 / big_array)
 ```
 
@@ -69,7 +69,7 @@ Ufuncs come in two flavors: *unary ufuncs*, which use a single input, and *bin
 
 Many NumPy ufuncs use Python's native arithmetic operators, so you can use the standard addition, subtraction, multiplication, and division operators that we covered in Section 1:
 
-```Python
+```python
 a = np.arange(4)
 print("a     =", a)
 print("a + 5 =", a + 5)
@@ -92,7 +92,7 @@ a // 2 = [0 0 1 1]
 
 There are also ufuncs for negation, exponentiation, and the modulo operation:
 
-```Python
+```python
 print("-a     = ", -a)
 print("a ** 2 = ", a ** 2)
 print("a % 2  = ", a % 2)
@@ -108,7 +108,7 @@ a % 2  =  [0 1 0 1]
 
 You can also combine these ufuncs using the standard order of operations:
 
-```Python
+```python
 -(0.5*a + 1) ** 2
 ```
 
@@ -120,7 +120,7 @@ array([-1.  , -2.25, -4.  , -6.25])
 
 The Python operators are not actually the ufuncs, but are rather wrappers around functions built into NumPy. So the `+` operator is actually a wrapper for the `add` function:
 
-```Python
+```python
 np.add(a, 2)
 ```
 
@@ -149,7 +149,7 @@ Python Boolean operators also work; we will explore those later in this section.
 
 NumPy also understands Python's built-in absolute value function:
 
-```Python
+```python
 a = np.array([-2, -1, 0, 1, 2])
 abs(a)
 ```
@@ -162,7 +162,7 @@ array([2, 1, 0, 1, 2])
 
 This corresponds to the NumPy ufunc `np.absolute` (which is also available under the alias `np.abs`):
 
-```Python
+```python
 np.absolute(a)
 ```
 
@@ -174,7 +174,7 @@ array([2, 1, 0, 1, 2])
 
 Or:
 
-```Python
+```python
 np.abs(a)
 ```
 
@@ -188,7 +188,7 @@ array([2, 1, 0, 1, 2])
 
 You will need to use exponents and logarithms a lot in data science; these are some of the most common data transformations for machine learning and statistical work.
 
-```Python
+```python
 a = [1, 2, 3]
 print("a     =", a)
 print("e^a   =", np.exp(a))
@@ -207,7 +207,7 @@ e^a   = [ 2.71828183  7.3890561  20.08553692]
 
 The basic `np.log` gives the natural logarithm; if you need to compute base-2 or base-10 logarithms, NumPy also provides those:
 
-```Python
+```python
 a = [1, 2, 4, 10]
 print("a        =", a)
 print("ln(a)    =", np.log(a))
@@ -226,7 +226,7 @@ log10(a) = [0.         0.30103    0.60205999 1.        ]
 
 There are also some specialized versions of these ufuncs to help maintain precision when dealing with very small inputs:
 
-```Python
+```python
 a = [0, 0.001, 0.01, 0.1]
 print("exp(a) - 1 =", np.expm1(a))
 print("log(1 + a) =", np.log1p(a))
@@ -245,13 +245,13 @@ These functions give more precise values than if you were to use the raw `np.lo
 
 NumPy has many other ufuncs. Another source for specialized and obscure ufuncs is the submodule `scipy.special`. If you need to compute some specialized mathematical or statistical function on your data, chances are it is implemented in `scipy.special`.
 
-```Python
+```python
 from scipy import special
 ```
 
 Gamma functions (generalized factorials) and related functions:
 
-```Python
+```python
 a = [1, 5, 10]
 print("gamma(a)     =", special.gamma(a))
 print("ln|gamma(a)| =", special.gammaln(a))
