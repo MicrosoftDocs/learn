@@ -9,6 +9,8 @@ a = np.array([2, 1, 4, 3, 5])
 np.sort(a)
 ```
 
+The output is:
+
 ```Output
 array([1, 2, 3, 4, 5])
 ```
@@ -19,6 +21,8 @@ In order to sort the array in-place, use the `sort` method directly on arrays:
 a.sort()
 print(a)
 ```
+
+The output is:
 
 ```Output
 [1 2 3 4 5]
@@ -32,6 +36,8 @@ b = np.argsort(a)
 print(b)
 ```
 
+The output is:
+
 ```Output
 [1 0 3 2 4]
 ```
@@ -41,6 +47,8 @@ The first element of this result gives the index of the smallest element, the se
 ```Python
 a[b]
 ```
+
+The output is:
 
 ```Output
 array([1, 2, 3, 4, 5])
@@ -56,6 +64,8 @@ table = rand.randint(0, 10, (4, 6))
 print(table)
 ```
 
+The output is:
+
 ```Output
 [[6 3 7 4 6 9]
  [2 6 7 4 3 7]
@@ -69,6 +79,8 @@ Sort each column of the table:
 np.sort(table, axis=0)
 ```
 
+The output is:
+
 ```Output
 array([[2, 1, 4, 0, 1, 5],
        [5, 2, 5, 4, 3, 7],
@@ -81,6 +93,8 @@ Sort each row of the table:
 ```Python
 np.sort(table, axis=1)
 ```
+
+The output is:
 
 ```Output
 array([[3, 4, 6, 6, 7, 9],
@@ -100,6 +114,8 @@ arr = np.array([7, 2, 3, 1, 6, 5, 4])
 np.partition(arr, 3)
 ```
 
+The output is:
+
 ```Output
 array([2, 1, 3, 4, 6, 5, 7])
 ```
@@ -111,6 +127,8 @@ Similarly to sorting, we can partition along an arbitrary axis of a multidimensi
 ```Python
 np.partition(table, 2, axis=1)
 ```
+
+The output is:
 
 ```Output
 array([[3, 4, 6, 7, 6, 9],

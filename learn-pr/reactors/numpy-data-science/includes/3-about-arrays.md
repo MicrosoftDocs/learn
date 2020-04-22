@@ -109,8 +109,6 @@ What happens if you construct an array using a list that contains a combination 
 
 ***
 
-
-
 If you want to explicitly set the data type of your array when you create it, you can use the `dtype` keyword:
 
 ```Python
@@ -127,6 +125,8 @@ array([1., 2., 3., 4.], dtype=float32)
 
 Try this using a different `dtype`.
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -140,8 +140,12 @@ Try this using a different `dtype`.
   ```Output
   array([1, 2, 3, 4])
   ```
-  
+
 </details>
+
+<br /><br />
+
+***
 
 Remember that you can always refer to the documentation with the command `np.array`.
 

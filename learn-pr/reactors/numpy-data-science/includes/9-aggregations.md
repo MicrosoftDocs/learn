@@ -15,6 +15,8 @@ myList = np.random.random(100)
 sum(myList)
 ```
 
+The output is:
+
 ```Output
 50.461758453195614
 ```
@@ -24,6 +26,8 @@ If you guessed that there is also a built-in NumPy function for this, you guesse
 ```Python
 np.sum(myList)
 ```
+
+The output is:
 
 ```Output
 50.46175845319564
@@ -36,6 +40,8 @@ large_array = np.random.rand(1000000)
 %timeit sum(large_array)
 %timeit np.sum(large_array)
 ```
+
+The output is:
 
 ```Output
 124 ms ± 5.38 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
@@ -52,6 +58,8 @@ Just as Python has built-in `min` and `max` functions, NumPy has similar, ve
 np.min(large_array), np.max(large_array)
 ```
 
+The output is:
+
 ```Output
 (7.071203171893359e-07, 0.9999997207656334)
 ```
@@ -61,6 +69,8 @@ You can also use `min`, `max`, and `sum` (and several other NumPy aggregates
 ```Python
 print(large_array.min(), large_array.max(), large_array.sum())
 ```
+
+The output is:
 
 ```Output
 7.071203171893359e-07 0.9999997207656334 500216.8034810001
@@ -75,6 +85,8 @@ md = np.random.random((3, 4))
 print(md)
 ```
 
+The output is:
+
 ```Output
 [[0.79832448 0.44923861 0.95274259 0.03193135]
  [0.18441813 0.71417358 0.76371195 0.11957117]
@@ -87,6 +99,8 @@ Unless you specify otherwise, each NumPy aggregation function will compute the a
 md.sum()
 ```
 
+The output is:
+
 ```Output
 5.1136763453287335
 ```
@@ -97,6 +111,8 @@ Aggregation functions take an additional argument specifying the *axis* along 
 md.min(axis=0)
 ```
 
+The output is:
+
 ```Output
 array([0.18441813, 0.11936151, 0.37497044, 0.03193135])
 ```
@@ -104,6 +120,8 @@ array([0.18441813, 0.11936151, 0.37497044, 0.03193135])
 ### Try it yourself
 
 What do you get when you try `md.max(axis=1)`?
+
+<br />
 
 <details>
 
@@ -113,11 +131,17 @@ What do you get when you try `md.max(axis=1)`?
   md.max(axis=1)
   ```
   
+  The output is:
+
   ```Output
   array([0.95274259, 0.76371195, 0.37578601])
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 Remember that the `axis` keyword specifies the *dimension of the array that is to be collapsed*, not the dimension that will be returned. Thus specifying `axis=0` means that the first axis will be the one collapsed: for two-dimensional arrays, this means that values within each column will be aggregated.
 

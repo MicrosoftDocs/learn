@@ -16,6 +16,8 @@ values = np.random.randint(1, 10, size=5)
 compute_reciprocals(values)
 ```
 
+The output is:
+
 ```Output
 array([0.16666667, 1.        , 0.25      , 0.25      , 0.125     ])
 ```
@@ -28,6 +30,8 @@ But let's try it on a much larger array. To empirically do this, we'll time this
 big_array = np.random.randint(1, 100, size=1000000)
 %timeit compute_reciprocals(big_array)
 ```
+
+The output is:
 
 ```Output
 2.96 s ± 130 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
@@ -46,6 +50,8 @@ Let's examine what this means in practice. Let's find the reciprocals of `big_a
 ```Python
 %timeit (1.0 / big_array)
 ```
+
+The output is:
 
 ```Output
 2.97 ms ± 201 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
@@ -73,6 +79,8 @@ print("a / 2 =", a / 2)
 print("a // 2 =", a // 2)  # floor division
 ```
 
+The output is:
+
 ```Output
 a     = [0 1 2 3]
 a + 5 = [5 6 7 8]
@@ -90,6 +98,8 @@ print("a ** 2 = ", a ** 2)
 print("a % 2  = ", a % 2)
 ```
 
+The output is:
+
 ```Output
 -a     =  [ 0 -1 -2 -3]
 a ** 2 =  [0 1 4 9]
@@ -102,6 +112,8 @@ You can also combine these ufuncs using the standard order of operations:
 -(0.5*a + 1) ** 2
 ```
 
+The output is:
+
 ```Output
 array([-1.  , -2.25, -4.  , -6.25])
 ```
@@ -111,6 +123,8 @@ The Python operators are not actually the ufuncs, but are rather wrappers around
 ```Python
 np.add(a, 2)
 ```
+
+The output is:
 
 ```Output
 array([2, 3, 4, 5])
@@ -140,6 +154,8 @@ a = np.array([-2, -1, 0, 1, 2])
 abs(a)
 ```
 
+The output is:
+
 ```Output
 array([2, 1, 0, 1, 2])
 ```
@@ -150,13 +166,19 @@ This corresponds to the NumPy ufunc `np.absolute` (which is also available und
 np.absolute(a)
 ```
 
+The output is:
+
 ```Output
 array([2, 1, 0, 1, 2])
 ```
 
+Or:
+
 ```Python
 np.abs(a)
 ```
+
+The output is the same:
 
 ```Output
 array([2, 1, 0, 1, 2])
@@ -173,6 +195,8 @@ print("e^a   =", np.exp(a))
 print("2^a   =", np.exp2(a))
 print("3^a   =", np.power(3, a))
 ```
+
+The output is:
 
 ```Output
 a     = [1, 2, 3]
@@ -191,6 +215,8 @@ print("log2(a)  =", np.log2(a))
 print("log10(a) =", np.log10(a))
 ```
 
+The output is:
+
 ```Output
 a        = [1, 2, 4, 10]
 ln(a)    = [0.         0.69314718 1.38629436 2.30258509]
@@ -205,6 +231,8 @@ a = [0, 0.001, 0.01, 0.1]
 print("exp(a) - 1 =", np.expm1(a))
 print("log(1 + a) =", np.log1p(a))
 ```
+
+The output is:
 
 ```Output
 exp(a) - 1 = [0.         0.0010005  0.01005017 0.10517092]
@@ -229,6 +257,8 @@ print("gamma(a)     =", special.gamma(a))
 print("ln|gamma(a)| =", special.gammaln(a))
 print("beta(a, 2)   =", special.beta(a, 2))
 ```
+
+The output is:
 
 ```Output
 gamma(a)     = [1.0000e+00 2.4000e+01 3.6288e+05]

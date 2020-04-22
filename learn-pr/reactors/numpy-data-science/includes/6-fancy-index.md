@@ -9,6 +9,8 @@ arr = rand.randint(100, size=10)
 print(arr)
 ```
 
+The output is:
+
 ```Output
 [51 92 14 71 60 20 82 86 74 74]
 ```
@@ -18,6 +20,8 @@ Suppose you need to access three different elements. Using the tools you current
 ```Python
 [arr[3], arr[7], arr[2]]
 ```
+
+The output is:
 
 ```Output
 [71, 86, 14]
@@ -29,6 +33,8 @@ With fancy indexing, you can pass a single list or array of indices to do the sa
 ind = [3, 7, 4]
 arr[ind]
 ```
+
+The output is:
 
 ```Output
 array([71, 86, 60])
@@ -42,6 +48,8 @@ ind = np.array([[3, 7],
 arr[ind]
 ```
 
+The output is:
+
 ```Output
 array([[71, 86],
        [60, 20]])
@@ -53,6 +61,8 @@ array([[71, 86],
 
 What happens when your index array is bigger than the target array?
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -62,6 +72,8 @@ What happens when your index array is bigger than the target array?
   arr(ind)
   ```
   
+  The output is:
+
   ```Output
   ---------------------------------------------------------------------------
   TypeError                                 Traceback (most recent call last)
@@ -75,12 +87,18 @@ What happens when your index array is bigger than the target array?
   
 </details>
 
+<br /><br />
+
+***
+
 Fancy indexing also works in multiple dimensions:
 
 ```Python
 arr2 = np.arange(12).reshape((3, 4))
 arr2
 ```
+
+The output is:
 
 ```Output
 array([[ 0,  1,  2,  3],
@@ -96,6 +114,8 @@ col = np.array([2, 1, 3])
 arr2[row, col]
 ```
 
+The output is:
+
 ```Output
 array([ 2,  5, 11])
 ```
@@ -107,6 +127,8 @@ The pairing of indices in fancy indexing follows all the same broadcasting rules
 ```Python
 arr2[row[:, np.newaxis], col]
 ```
+
+The output is:
 
 ```Output
 array([[ 2,  1,  3],
@@ -126,34 +148,48 @@ Now try broadcasting this on your own.
 
 Think back to the broadcast rules.
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
+
+  Try:
 
   ```Python
   row[:, np.newaxis] * col
   ```
   
+  The output is:
+
   ```Output
   array([[0, 0, 0],
        [2, 1, 3],
        [4, 2, 6]])
   ```
 
+  For:
+
   ```Python
   row[:, np.newaxis] * row
   ```
   
+  The output is:
+
   ```Output
   array([[0, 0, 0],
        [0, 1, 2],
        [0, 2, 4]])
   ```
 
+  And:
+
   ```Python
   col[:, np.newaxis] * row
   ```
   
+  The output is:
+
   ```Output
   array([[0, 2, 4],
        [0, 1, 2],
@@ -161,6 +197,10 @@ Think back to the broadcast rules.
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 >[!div class="alert is-tip"]
 >
@@ -176,6 +216,8 @@ You can also combine fancy indexing with the other indexing schemes you have lea
 print(arr2)
 ```
 
+The output is:
+
 ```Output
 [[ 0  1  2  3]
  [ 4  5  6  7]
@@ -188,6 +230,8 @@ Now combine fancy and simple indices:
 arr2[2, [2, 0, 1]]
 ```
 
+The output is:
+
 ```Output
 array([10,  8,  9])
 ```
@@ -199,6 +243,8 @@ You can also combine fancy indexing with slicing:
 ```Python
 arr2[1:, [2, 0, 1]]
 ```
+
+The output is:
 
 ```Output
 array([[ 6,  4,  5],
@@ -213,6 +259,8 @@ Of course, you can also combine fancy indexing with masking:
 mask = np.array([1, 0, 1, 0], dtype=bool)
 arr2[row[:, np.newaxis], mask]
 ```
+
+The output is:
 
 ```Output
 array([[ 0,  2],
@@ -231,6 +279,8 @@ ind[arr] = 99
 print(ind)
 ```
 
+The output is:
+
 ```Output
 [ 0 99 99  3 99  5  6  7 99  9]
 ```
@@ -241,6 +291,8 @@ You can also use a ufunc here and subtract 10 from each element of the array:
 ind[arr] -= 10
 print(ind)
 ```
+
+The output is:
 
 ```Output
 [ 0 89 89  3 89  5  6  7 89  9]
@@ -253,6 +305,8 @@ ind = np.zeros(10)
 ind[[0, 0]] = [4, 6]
 print(ind)
 ```
+
+The output is:
 
 ```Output
 [6. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
@@ -267,6 +321,8 @@ arr = [2, 3, 3, 4, 4, 4]
 ind[arr] += 1
 ind
 ```
+
+The output is:
 
 ```Output
 array([6., 0., 1., 1., 1., 0., 0., 0., 0., 0.])
@@ -284,6 +340,8 @@ np.add.at(ind, arr, 1)
 print(ind)
 ```
 
+The output is:
+
 ```Output
 [0. 0. 1. 2. 3. 0. 0. 0. 0. 0.]
 ```
@@ -291,6 +349,8 @@ print(ind)
 #### Try it yourself
 
 What does np.subtract.at(ind, arr, 1) give you?
+
+<br />
 
 <details>
 
@@ -301,11 +361,17 @@ What does np.subtract.at(ind, arr, 1) give you?
   print(ind)
   ```
   
+  The output is:
+
   ```Output
   [ 0.  0. -2. -4. -6.  0.  0.  0.  0.  0.]
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 Play around with some of the other ufuncs we have seen.
 

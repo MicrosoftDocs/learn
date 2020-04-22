@@ -4,6 +4,8 @@ In the prior section, we looked at aggregates computed directly on Boolean array
 two_dim_array
 ```
 
+The output is:
+
 ```Output
 array([[5, 0, 3, 3],
        [7, 9, 3, 5],
@@ -16,6 +18,8 @@ You can obtain a Boolean array for this condition easily:
 two_dim_array < 5
 ```
 
+The output is:
+
 ```Output
 array([[False,  True,  True,  True],
        [False, False,  True, False],
@@ -27,6 +31,8 @@ Now, to *select* these values from the array, you can simply index on this Boo
 ```Python
 two_dim_array[two_dim_array < 5]
 ```
+
+The output is:
 
 ```Output
 array([0, 3, 3, 3, 2, 4])
@@ -53,6 +59,8 @@ print("Maximum precip in summer months in 2003 (inches): ",
 print("Median precip in non-summer rainy months (inches):",
       np.median(rainfall_2003[rainy & ~summer]))
 ```
+
+The output is:
 
 ```Output
 Median precip in rainy months in 2003 (inches):    1.94

@@ -8,6 +8,8 @@ It's important to know that slicing produces *views* of array data, not *copi
 print(a2)
 ```
 
+The output is:
+
 ```Output
 [[12  5  2  4]
  [ 7  6  8  8]
@@ -21,6 +23,8 @@ a2_sub = a2[:2, :2]
 print(a2_sub)
 ```
 
+The output is:
+
 ```Output
 [[12  5]
  [ 7  6]]
@@ -33,6 +37,8 @@ a2_sub[0, 0] = 99
 print(a2_sub)
 ```
 
+The output is:
+
 ```Output
 [[99  5]
  [ 7  6]]
@@ -43,6 +49,8 @@ print(a2_sub)
 ```Python
 print(a2)
 ```
+
+The output is:
 
 ```Output
 [[99  5  2  4]
@@ -61,7 +69,9 @@ a2_sub_copy = a2[:2, :2].copy()
 print(a2_sub_copy)
 ```
 
-```ouput
+The output is:
+
+```Output
 [[99  5]
  [ 7  6]]
 ```
@@ -73,14 +83,20 @@ a2_sub_copy[0, 0] = 42
 print(a2_sub_copy)
 ```
 
+The output is:
+
 ```Output
 [[42  5]
  [ 7  6]]
 ```
 
+For:
+
 ```Python
 print(a2)
 ```
+
+The output is:
 
 ```Output
 [[99  5  2  4]
@@ -99,6 +115,8 @@ grid = np.arange(1, 10).reshape((3, 3))
 print(grid)
 ```
 
+The output is:
+
 ```Output
 [[1 2 3]
  [4 5 6]
@@ -114,6 +132,8 @@ a = np.array([1, 2, 3])
 a.reshape((1, 3))
 ```
 
+The output is:
+
 ```Output
 array([[1, 2, 3]])
 ```
@@ -124,6 +144,8 @@ Row vector via newaxis:
 a[np.newaxis, :]
 ```
 
+The output is:
+
 ```Output
 array([[1, 2, 3]])
 ```
@@ -133,6 +155,8 @@ Column vector via reshape:
 ```Python
 a.reshape((3, 1))
 ```
+
+The output is:
 
 ```Output
 array([[1],
@@ -145,6 +169,8 @@ Column vector via newaxis:
 ```Python
 a[:, np.newaxis]
 ```
+
+The output is:
 
 ```Output
 array([[1],
@@ -172,6 +198,8 @@ b = np.array([3, 2, 1])
 np.concatenate([a, b])
 ```
 
+The output is:
+
 ```Output
 array([1, 2, 3, 3, 2, 1])
 ```
@@ -182,6 +210,8 @@ You can also concatenate more than two arrays at once:
 c = [99, 99, 99]
 print(np.concatenate([a, b, c]))
 ```
+
+The output is:
 
 ```Output
 [ 1  2  3  3  2  1 99 99 99]
@@ -200,6 +230,8 @@ Concatenate along the first axis, which is the default:
 np.concatenate([grid, grid])
 ```
 
+The output is:
+
 ```Output
 array([[1, 2, 3],
        [4, 5, 6],
@@ -213,6 +245,8 @@ Recall that axes are zero-indexed in NumPy.
 
 What do you predict np.concatenate([grid, grid], axis=1) will produce?
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -221,12 +255,18 @@ What do you predict np.concatenate([grid, grid], axis=1) will produce?
   np.concatenate([grid, grid], axis=1)
   ```
   
+  The output is:
+
   ```Output
   array([[1, 2, 3, 1, 2, 3],
        [4, 5, 6, 4, 5, 6]])
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 ### Splitting arrays
 
@@ -242,6 +282,8 @@ a1, a2, a3 = np.split(a, [3, 5])
 print(a1, a2, a3)
 ```
 
+The output is:
+
 ```Output
 [1 2 3] [99 99] [3 2 1]
 ```
@@ -255,6 +297,8 @@ grid = np.arange(16).reshape((4, 4))
 grid
 ```
 
+The output is:
+
 ```Output
 array([[ 0,  1,  2,  3],
        [ 4,  5,  6,  7],
@@ -262,18 +306,24 @@ array([[ 0,  1,  2,  3],
        [12, 13, 14, 15]])
 ```
 
-What does `np.split(grid, [1, 2])` produce?
+- What does `np.split(grid, [1, 2])` produce?
 
-What about `np.split(grid, [1, 2], axis=1)`?
+- What about `np.split(grid, [1, 2], axis=1)`?
+
+<br />
 
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
+  Use:
+
   ```Python
   np.split(grid, [1, 2])
   ```
   
+  The output is:
+
   ```Output
   [array([[0, 1, 2, 3]]),
    array([[4, 5, 6, 7]]),
@@ -281,10 +331,14 @@ What about `np.split(grid, [1, 2], axis=1)`?
         [12, 13, 14, 15]])]
   ```
 
+  And with `axis=1`:
+
   ```Python
   np.split(grid, [1, 2], axis=1)
   ```
   
+  The output is:
+
   ```Output
   [array([[ 0],
         [ 4],
@@ -301,6 +355,10 @@ What about `np.split(grid, [1, 2], axis=1)`?
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 >[!div class="alert is-tip"]
 >### Takeaway

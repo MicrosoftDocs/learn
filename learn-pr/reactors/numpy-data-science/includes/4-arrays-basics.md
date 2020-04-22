@@ -39,7 +39,10 @@ a1 size:  6
 
 Change the values in this code snippet to look at the attributes for a2 and a3:
 
+<br />
+
 <details>
+
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   For a2:
@@ -76,6 +79,11 @@ Change the values in this code snippet to look at the attributes for a2 and a3:
 
 </details>
 
+<br /><br />
+
+***
+
+
 Another useful array attribute is the `dtype`, which we already encountered earlier in this section as a means of determining the type of data in an array:
 
 ```Python
@@ -94,6 +102,8 @@ Explore the `dtype` for the other arrays.
 
 What `dtypes` do you predict them to have?
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -109,6 +119,10 @@ What `dtypes` do you predict them to have?
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 ## Indexing arrays
 
@@ -182,6 +196,8 @@ Do multidimensional NumPy arrays work like Python lists of lists?
 
 Try a few combinations like `a2[1][1]` or `a3[0][2][1]` and see what comes back.
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -207,6 +223,10 @@ Try a few combinations like `a2[1][1]` or `a3[0][2][1]` and see what comes back.
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 You might have noticed that we can treat multidimensional arrays like lists of lists. But a more common means of accessing items in multidimensional arrays is to use a comma-separated tuple of indices.
 
@@ -294,6 +314,8 @@ array([3, 0, 3, 3, 7, 9])
 
 What happens if you try to insert a string into a1? Try both a string like '3' and one like 'three'.
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -329,6 +351,11 @@ What happens if you try to insert a string into a1? Try both a string like '3' a
   ```
 
 </details>
+
+<br /><br />
+
+***
+
 
 ## Slicing arrays
 
@@ -419,6 +446,8 @@ array([1, 3, 5, 7, 9])
 
 How would you access the *last* five elements of array a? How about every other element of the last five elements of a? Think back to list indexing in Python.
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -448,6 +477,11 @@ How would you access the *last* five elements of array a? How about every other 
   ```
 
 </details>
+
+<br /><br />
+
+***
+
 
 Be careful when using negative values for `step`. When `step` has a negative value, the defaults for `start` and `stop` are swapped and you can use this functionality to reverse an array:
 
@@ -479,6 +513,8 @@ array([5, 3, 1])
 
 How can you create a slice that contains every third element of `a`,  descending from the second-to-last element?
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -496,6 +532,10 @@ How can you create a slice that contains every third element of `a`,  descending
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 ### Multidimensional slices
 
@@ -600,6 +640,8 @@ How would you access the third column of a3?
 
 How about the third row of a3?
 
+<br />
+
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -632,3 +674,7 @@ How about the third row of a3?
   ```
 
 </details>
+
+<br /><br />
+
+***

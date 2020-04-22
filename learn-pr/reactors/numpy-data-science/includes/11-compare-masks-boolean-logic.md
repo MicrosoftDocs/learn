@@ -16,6 +16,8 @@ rainfall_2003 = pd.read_csv('Data/Observed_Monthly_Rain_Gauge_Accumulations_-_Oc
 rainfall_2003
 ```
 
+The output is:
+
 ```Output
 array([6.55, 1.61, 5.01, 2.27, 0.91, 0.49, 0.12, 0.33, 0.97, 6.32, 2.54,
        3.19])
@@ -36,7 +38,9 @@ import matplotlib.pyplot as plt
 plt.bar(np.arange(1, len(rainfall_2003) + 1), rainfall_2003)
 ```
 
-> output
+The output is:
+
+> Output
 >
 > \<BarContainer object of 12 artists\>
 >
@@ -54,25 +58,37 @@ In addition to the computational operators as ufuncs that we have already encoun
 simple_array = np.array([1, 2, 3, 4, 5])
 ```
 
+Less than:
+
 ```Python
-simple_array < 2  # less than
+simple_array < 2 
 ```
+
+The output is:
 
 ```Output
 array([ True, False, False, False, False])
 ```
 
+Greater than or equal:
+
 ```Python
-simple_array >= 4  # greater than or equal
+simple_array >= 4
 ```
+
+The output is:
 
 ```Output
 array([False, False, False,  True,  True])
 ```
 
+Equal:
+
 ```Python
-simple_array == 2  # equal
+simple_array == 2
 ```
+
+The output is:
 
 ```Output
 array([False,  True, False, False, False])
@@ -83,6 +99,8 @@ It is also possible to do an element-wise comparison of two arrays, and to inclu
 ```Python
 (2 * simple_array) == (simple_array ** 2)
 ```
+
+The output is:
 
 ```Output
 array([False,  True, False, False, False])
@@ -104,15 +122,21 @@ two_dim_array = rand.randint(10, size=(3, 4))
 two_dim_array
 ```
 
+The output is:
+
 ```Output
 array([[5, 0, 3, 3],
        [7, 9, 3, 5],
        [2, 4, 7, 6]])
 ```
 
+So for:
+
 ```Python
 two_dim_array < 6
 ```
+
+The output is:
 
 ```Output
 array([[ True,  True,  True,  True],

@@ -8,6 +8,8 @@ second_array = np.array([4, 5, 7, 2])
 first_array + second_array
 ```
 
+The output is:
+
 ```Output
 array([ 7, 11, 15,  3])
 ```
@@ -17,6 +19,8 @@ Broadcasting enables you to perform these types of binary operations on arrays o
 ```Python
 first_array + 5
 ```
+
+The output is:
 
 ```Output
 array([ 8, 11, 13,  6])
@@ -29,23 +33,33 @@ one_dim_array = np.ones((1))
 one_dim_array
 ```
 
+The output is:
+
 ```Output
 array([1.])
 ```
+
+For this:
 
 ```Python
 two_dim_array = np.ones((2, 2))
 two_dim_array
 ```
 
+The output is:
+
 ```Output
 array([[1., 1.],
        [1., 1.]])
 ```
 
+Next try:
+
 ```Python
 one_dim_array + two_dim_array
 ```
+
+The output is:
 
 ```Output
 array([[2., 2.],
@@ -62,6 +76,8 @@ print(horizontal_array)
 print(vertical_array)
 ```
 
+The output is:
+
 ```Output
 [0 1 2]
 [[0]
@@ -69,9 +85,13 @@ print(vertical_array)
  [2]]
 ```
 
+Now run:
+
 ```Python
 horizontal_array + vertical_array
 ```
+
+The output is:
 
 ```Output
 array([[0, 1, 2],
@@ -119,6 +139,8 @@ The shapes match, and we see that the final shape will be `(2, 3)`:
 two_dim_array + one_dim_array
 ```
 
+The output is:
+
 ```Output
 array([[1., 2., 3.],
        [1., 2., 3.]])
@@ -127,9 +149,11 @@ array([[1., 2., 3.],
 ### Try it yourself
 
 Flip this around. Try adding these with `two_dim_array = np.ones((3, 2))`
-and `one_dim_array = np.arange(3)[:, np.newaxis]`. 
+and `one_dim_array = np.arange(3)[:, np.newaxis]`.
 
 What do you get?
+
+<br />
 
 <details>
 
@@ -140,17 +164,23 @@ What do you get?
   two_dim_array
   ```
   
+  The output is:
+
   ```Output
   array([[1., 1.],
        [1., 1.],
        [1., 1.]])
   ```
 
+  And with:
+
   ```Python
   one_dim_array = np.arange(3)[:, np.newaxis]
   one_dim_array
   ```
   
+  The output is:
+
   ```Output
   array([[0],
        [1],
@@ -158,6 +188,10 @@ What do you get?
   ```
   
 </details>
+
+<br /><br />
+
+***
 
 ### Broadcasting example 2
 
@@ -188,6 +222,8 @@ Because the result matches, these shapes are compatible. We can see this here:
 ```Python
 vertical_array + horizontal_array
 ```
+
+The output is:
 
 ```Output
 array([[0, 1, 2],
@@ -225,6 +261,8 @@ Now we hit Rule 3: the final shapes do not match and the two arrays are incompat
 M + i
 ```
 
+The output is:
+
 ```Output
 ---------------------------------------------------------------------------
 ValueError                                Traceback (most recent call last)
@@ -247,6 +285,8 @@ T = np.random.random((10, 3))
 T
 ```
 
+The output is:
+
 ```Output
 array([[0.90137772, 0.75292208, 0.26398243],
        [0.46383154, 0.38378661, 0.93354504],
@@ -267,6 +307,8 @@ Tmean = T.mean(0)
 Tmean
 ```
 
+The output is:
+
 ```Output
 array([0.43302262, 0.30781767, 0.50607784])
 ```
@@ -277,6 +319,8 @@ Finally, center `T` by subtracting the mean. (This is a broadcasting operation
 T_centered = T - Tmean
 T_centered
 ```
+
+The output is:
 
 ```Output
 array([[ 0.4683551 ,  0.4451044 , -0.24209541],

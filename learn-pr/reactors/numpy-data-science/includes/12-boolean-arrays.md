@@ -4,6 +4,8 @@ Given a Boolean array, there are a host of useful operations you can do. We'll w
 print(two_dim_array)
 ```
 
+The output is:
+
 ```Output
 [[5 0 3 3]
  [7 9 3 5]
@@ -20,6 +22,8 @@ How many values less than 6?
 np.count_nonzero(two_dim_array < 6)
 ```
 
+The output is:
+
 ```Output
 8
 ```
@@ -29,6 +33,8 @@ We see that there are eight array entries that are less than 6. Another way to g
 ```Python
 np.sum(two_dim_array < 5)
 ```
+
+The output is:
 
 ```Output
 6
@@ -41,6 +47,8 @@ How many values less than 5 in each row?
 ```Python
 np.sum(two_dim_array < 5, axis=1)
 ```
+
+The output is:
 
 ```Output
 array([3, 1, 2])
@@ -56,6 +64,8 @@ Are there any values less than zero?
 np.any(two_dim_array < 0)
 ```
 
+The output is:
+
 ```Output
 False
 ```
@@ -63,6 +73,8 @@ False
 ### Try it yourself
 
 Now check to see if all values less than 10?
+
+<br />
 
 <details>
 
@@ -72,11 +84,17 @@ Now check to see if all values less than 10?
   np.all(two_dim_array < 10)
   ```
   
+  The output is:
+
   ```Output
   True
   ```
 
 </details>
+
+<br /><br />
+
+***
 
 `np.all` and `np.any` can be used along particular axes as well. For example:
 
@@ -85,6 +103,8 @@ Are all values in each row less than 7?
 ```Python
 np.all(two_dim_array < 7, axis=1)
 ```
+
+The output is:
 
 ```Output
 array([ True, False, False])
@@ -107,6 +127,8 @@ For example, we can address this sort of compound question as follows:
 np.sum((rainfall_2003 > 0.5) & (rainfall_2003 < 1))
 ```
 
+The output is:
+
 ```Output
 2
 ```
@@ -116,6 +138,8 @@ So we see that there are two months with rainfall between 0.5 and 1.0 inches. No
 ```Python
 rainfall_2003 > (0.5 & rainfall_2003) < 1
 ```
+
+The output is:
 
 ```Output
 ---------------------------------------------------------------------------
@@ -131,6 +155,8 @@ Using the equivalence of *A AND B and NOT (NOT A OR NOT B)* (which you might r
 ```Python
 np.sum(~((rainfall_2003 <= 0.5) | (rainfall_2003 >= 1)))
 ```
+
+The output is:
 
 ```Output
 2
@@ -156,6 +182,8 @@ print("Months with more than 1 inch: ", np.sum(rainfall_2003 > 1))
 print("Rainy months with < 1 inch:   ", np.sum((rainfall_2003 > 0) &
                                               (rainfall_2003 < 1)))
 ```
+
+The output is:
 
 ```Output
 Number of months without rain: 0
