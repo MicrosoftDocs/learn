@@ -39,7 +39,7 @@ Jupyter Notebooks are divided into cells. Each cell contains either text written
 
 Many of the examples in this notebook include comments. Comments in Python start with the hash character (#) and extend to the end of the physical line. A comment may appear at the start of a line or following white space or code, but not within a string literal. A hash character within a string literal is just a hash character. Because comments are there to clarify code and are not interpreted by Python, they may be omitted when typing in examples. For example:
 
-```Python
+```python
 # this is the first comment
 spam = 1  # and this is the second comment
           # ... and now a third!
@@ -63,7 +63,7 @@ How can you see the results? The Python interpreter runs inside this notebook. T
 
 In the Python.ipynb file in VS Code and type this into a Python cell. (Don't worry, we'll cover what the syntax of the Python code means later on in this module.)
 
-```Python
+```python
 print("Hello, world.")
 ```
 

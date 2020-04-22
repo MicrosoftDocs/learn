@@ -1,6 +1,6 @@
 Strings can be _indexed_ (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:
 
-```Python
+```python
 word = 'Python'
 word[0]  # Character in position 0.
 ```
@@ -13,7 +13,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 word[5]  # Character in position 5.
 ```
 
@@ -25,7 +25,7 @@ The output is:
 
 Indices may also be negative numbers, which means to start counting from the end of the string. Note that because -0 is the same as 0, negative indices start from -1:
 
-```Python
+```python
 word[-1]  # Last character.
 ```
 
@@ -37,7 +37,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 word[-2]  # Second-last character.
 ```
 
@@ -49,7 +49,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 word[-6]
 ```
 
@@ -63,7 +63,7 @@ The output is:
 
 In addition to indexing, which extracts individual characters, Python also supports _slicing_, which extracts a substring. To slice, you indicate a _range_ in the format `start:end`, where the start position is included but the end position is excluded:
 
-```Python
+```python
 word[0:2]  # Characters from position 0 (included) to 2 (excluded).
 ```
 
@@ -75,7 +75,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 word[2:5]  # Characters from position 2 (included) to 5 (excluded).
 ```
 
@@ -87,7 +87,7 @@ The output is:
 
 If you omit either position, the default start position is 0 and the default end is the length of the string:
 
-```Python
+```python
 word[:2]   # Character from the beginning to position 2 (excluded).
 ```
 
@@ -99,7 +99,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 word[4:]  # Characters from position 4 (included) to the end.
 ```
 
@@ -111,7 +111,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 word[-2:] # Characters from the second-last (included) to the end.
 ```
 
@@ -123,7 +123,7 @@ The output is:
 
 This characteristic means that `s[:i] + s[i:]` is always equal to `s`:
 
-```Python
+```python
 word[:2] + word[2:]
 ```
 
@@ -135,7 +135,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 word[:4] + word[4:]
 ```
 
@@ -157,7 +157,7 @@ For non-negative indices, the length of a slice is the difference of the indices
 
 Attempting to use an index that is too large results in an error:
 
-```Python
+```python
 word[42]  # The word only has 6 characters.
 ```
 
@@ -173,7 +173,7 @@ IndexError: string index out of range
 
 However, when used in a range, an index that's too large defaults to the size of the string and does not give an error. This characteristic is useful when you always want to slice at a particular index regardless of the length of a string:
 
-```Python
+```python
 word[4:42]
 ```
 
@@ -185,7 +185,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 word[42:]
 ```
 
@@ -197,7 +197,7 @@ The output is:
 
 Python strings are [immutable](https://docs.python.org/3.6/glossary.html#term-immutable?azure-portal=true), which means they cannot be changed. Therefore, assigning a value to an indexed position in a string results in an error:
 
-```Python
+```python
 word[0] = 'J'
 ```
 
@@ -213,7 +213,7 @@ TypeError: 'str' object does not support item assignment
 
 The following cell also produces an error:
 
-```Python
+```python
 word[2:] = 'py'
 ```
 
@@ -229,7 +229,7 @@ TypeError: 'str' object does not support item assignment
 
 A slice is itself a value that you can concatenate with other values using +:
 
-```Python
+```python
 'J' + word[1:]
 ```
 
@@ -241,7 +241,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 word[:2] + 'Py'
 ```
 
@@ -253,7 +253,7 @@ The output is:
 
 A slice, however, is not a string literal, and it cannot be used with automatic concatenation. The following code produces an error:
 
-```Python
+```python
 word[:2] 'Py'    # Slice is not a literal; produces an error
 ```
 
@@ -268,7 +268,7 @@ SyntaxError: invalid syntax
 
 Oftentimes, while working with strings, it can be useful to evaluate the length of a string. The built-in function [len()](https://docs.python.org/3.5/library/functions.html#len?azure-portal=true) returns the length of a string:
 
-```Python
+```python
 s = 'supercalifragilisticexpialidocious'
 len(s)
 ```
@@ -281,7 +281,7 @@ The output is:
 
 Another useful built-in function for working with strings is [str()](https://docs.python.org/3.6/library/stdtypes.html#str?azure-portal=true). This function takes any object and returns a printable string version of that object. For example:
 
-```Python
+```python
 str(2)
 ```
 
@@ -293,7 +293,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 str(2.5)
 ```
 

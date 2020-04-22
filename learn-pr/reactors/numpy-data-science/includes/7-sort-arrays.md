@@ -4,7 +4,7 @@ Although you could use Python's built-in `sort` and `sorted` functions, they
 
 `np.sort` returns a sorted version of an array without modifying the input:
 
-```Python
+```python
 a = np.array([2, 1, 4, 3, 5])
 np.sort(a)
 ```
@@ -17,7 +17,7 @@ array([1, 2, 3, 4, 5])
 
 In order to sort the array in-place, use the `sort` method directly on arrays:
 
-```Python
+```python
 a.sort()
 print(a)
 ```
@@ -30,7 +30,7 @@ The output is:
 
 A related function is `argsort`, which returns the *indices* of the sorted elements rather than the elements themselves:
 
-```Python
+```python
 a = np.array([2, 1, 4, 3, 5])
 b = np.argsort(a)
 print(b)
@@ -44,7 +44,7 @@ The output is:
 
 The first element of this result gives the index of the smallest element, the second value gives the index of the second smallest, and so on. These indices can then be used (via fancy indexing) to reconstruct the sorted array:
 
-```Python
+```python
 a[b]
 ```
 
@@ -58,7 +58,7 @@ array([1, 2, 3, 4, 5])
 
 A useful feature of NumPy's sorting algorithms is the ability to sort along specific rows or columns of a multidimensional array using the `axis` argument. For example:
 
-```Python
+```python
 rand = np.random.RandomState(42)
 table = rand.randint(0, 10, (4, 6))
 print(table)
@@ -75,7 +75,7 @@ The output is:
 
 Sort each column of the table:
 
-```Python
+```python
 np.sort(table, axis=0)
 ```
 
@@ -90,7 +90,7 @@ array([[2, 1, 4, 0, 1, 5],
 
 Sort each row of the table:
 
-```Python
+```python
 np.sort(table, axis=1)
 ```
 
@@ -109,7 +109,7 @@ Bear in mind that this treats each row or column as an independent array; any re
 
 Sometimes you don't need to sort an entire array, you just need to find the *k* smallest values in the array (often when looking at the distance of data points from one another). NumPy supplies this functionality through the `np.partition` function. `np.partition` takes an array and a number *k*; the result is a new array with the smallest *k* values to the left of the partition, and the remaining values to the right (in arbitrary order):
 
-```Python
+```python
 arr = np.array([7, 2, 3, 1, 6, 5, 4])
 np.partition(arr, 3)
 ```
@@ -124,7 +124,7 @@ Note that the first three values in the resulting array are the three smallest i
 
 Similarly to sorting, we can partition along an arbitrary axis of a multidimensional array:
 
-```Python
+```python
 np.partition(table, 2, axis=1)
 ```
 

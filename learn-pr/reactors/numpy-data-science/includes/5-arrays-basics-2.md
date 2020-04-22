@@ -4,7 +4,7 @@ We continue with the basics of array manipulation in NumPy. Learn more about arr
 
 It's important to know that slicing produces *views* of array data, not *copies*. This is a **huge** difference between NumPy array slicing and Python list slicing. With Python lists, slices are only shallow copies of lists; if you modify a copy, it doesn't affect the parent list. When you modify a NumPy subarray, you modify the original list. Be careful: this can have ramifications when you are trying to just work with a small part of a large dataset and you don't want to change the whole thing. Let's look more closely.
 
-```Python
+```python
 print(a2)
 ```
 
@@ -18,7 +18,7 @@ The output is:
 
 Extract a 2 x 2 subarray from `a2`:
 
-```Python
+```python
 a2_sub = a2[:2, :2]
 print(a2_sub)
 ```
@@ -32,7 +32,7 @@ The output is:
 
 Now modify this subarray:
 
-```Python
+```python
 a2_sub[0, 0] = 99
 print(a2_sub)
 ```
@@ -46,7 +46,7 @@ The output is:
 
 `a2` is now modified as well:
 
-```Python
+```python
 print(a2)
 ```
 
@@ -64,7 +64,7 @@ The fact that slicing produces views rather than copies is useful for data-scien
 
 Instead of just creating views, sometimes it is necessary to copy the data in one array to another. When you need to do this, use the `copy()` method:
 
-```Python
+```python
 a2_sub_copy = a2[:2, :2].copy()
 print(a2_sub_copy)
 ```
@@ -78,7 +78,7 @@ The output is:
 
 If we now modify this subarray, the original array is not touched:
 
-```Python
+```python
 a2_sub_copy[0, 0] = 42
 print(a2_sub_copy)
 ```
@@ -92,7 +92,7 @@ The output is:
 
 For:
 
-```Python
+```python
 print(a2)
 ```
 
@@ -110,7 +110,7 @@ Another way in which you will need to manipulate arrays is by reshaping them. Th
 
 The most flexible way of doing this kind of manipulation is with the `reshape` method. For example, if you want to put the numbers 1 through 9 in a 3 x 3 grid, you can do the following:
 
-```Python
+```python
 grid = np.arange(1, 10).reshape((3, 3))
 print(grid)
 ```
@@ -127,7 +127,7 @@ Another common manipulation you will do in data science is converting one-dimens
 
 Row vector via reshape:
 
-```Python
+```python
 a = np.array([1, 2, 3])
 a.reshape((1, 3))
 ```
@@ -140,7 +140,7 @@ array([[1, 2, 3]])
 
 Row vector via newaxis:
 
-```Python
+```python
 a[np.newaxis, :]
 ```
 
@@ -152,7 +152,7 @@ array([[1, 2, 3]])
 
 Column vector via reshape:
 
-```Python
+```python
 a.reshape((3, 1))
 ```
 
@@ -166,7 +166,7 @@ array([[1],
 
 Column vector via newaxis:
 
-```Python
+```python
 a[:, np.newaxis]
 ```
 
@@ -192,7 +192,7 @@ To join arrays in NumPy, you will most often use `np.concatenate`, which is the
 
 `np.concatenate` takes a tuple or list of arrays as its first argument:
 
-```Python
+```python
 a = np.array([1, 2, 3])
 b = np.array([3, 2, 1])
 np.concatenate([a, b])
@@ -206,7 +206,7 @@ array([1, 2, 3, 3, 2, 1])
 
 You can also concatenate more than two arrays at once:
 
-```Python
+```python
 c = [99, 99, 99]
 print(np.concatenate([a, b, c]))
 ```
@@ -219,14 +219,14 @@ The output is:
 
 `np.concatenate` can also be used for two-dimensional arrays:
 
-```Python
+```python
 grid = np.array([[1, 2, 3],
                  [4, 5, 6]])
 ```
 
 Concatenate along the first axis, which is the default:
 
-```Python
+```python
 np.concatenate([grid, grid])
 ```
 
@@ -251,7 +251,7 @@ What do you predict np.concatenate([grid, grid], axis=1) will produce?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   np.concatenate([grid, grid], axis=1)
   ```
   
@@ -276,7 +276,7 @@ In order to split arrays into multiple smaller arrays, you can use the functions
 
 Let's first examine the case of a one-dimensional array:
 
-```Python
+```python
 a = [1, 2, 3, 99, 99, 3, 2, 1]
 a1, a2, a3 = np.split(a, [3, 5])
 print(a1, a2, a3)
@@ -292,7 +292,7 @@ Notice that *N* split-points produces to *N + 1* subarrays. In this case it 
 
 ### Try it yourself
 
-```Python
+```python
 grid = np.arange(16).reshape((4, 4))
 grid
 ```
@@ -318,7 +318,7 @@ array([[ 0,  1,  2,  3],
 
   Use:
 
-  ```Python
+  ```python
   np.split(grid, [1, 2])
   ```
   
@@ -333,7 +333,7 @@ array([[ 0,  1,  2,  3],
 
   And with `axis=1`:
 
-  ```Python
+  ```python
   np.split(grid, [1, 2], axis=1)
   ```
   

@@ -4,7 +4,7 @@ Now we'll take a closer look at `if` statements.
 
 `If` statements in Python are similar to those in other programming languages like Java, and they form the backbone of the logical flow of most programs.
 
-```Python
+```python
 y = 6
 if y % 2 == 0:
     print('Even')
@@ -24,7 +24,7 @@ Did you notice the indentation for print under the if statement? That indentatio
 
 To cover more contingencies without having to construct a follow-on `if` statement, you can add an else statement:
 
-```Python
+```python
 y = 7
 if y % 2 == 0:
     print('Even')
@@ -40,7 +40,7 @@ Odd
 
 `elif` enables you to insert an additional logical test to an `if` statement:
 
-```Python
+```python
 y = 1
 if y % 2 == 0:
     print('Even')
@@ -68,7 +68,7 @@ Try changing the value of `y` in the snippet above. Do you get the output that y
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   y = 3
   if y % 2 == 0:
     print('Even')
@@ -82,7 +82,7 @@ Try changing the value of `y` in the snippet above. Do you get the output that y
   Odd
   ```
 
-  ```Python
+  ```python
   y = 4
   if y % 2 == 0:
     print('Even')
@@ -106,7 +106,7 @@ Try changing the value of `y` in the snippet above. Do you get the output that y
 
 It is often necessary in programs to iterate over some set of items. This is where `for` loops prove useful. For example, they can provide a useful way to iterate over the items of a list:
 
-```Python
+```python
 colors = ['red', 'yellow', 'blue']
 for color in colors:
     print(color)
@@ -122,7 +122,7 @@ blue
 
 Sometimes, you will want to iterate over a list using the list index rather than items from that list (say, when you want to access items from another list at the same time). In this case, you can combine list-object methods and `for` loops:
 
-```Python
+```python
 comp_colors = ['green', 'purple', 'orange']
 for i in range(len(comp_colors)):
     print(colors[i], comp_colors[i])
@@ -138,7 +138,7 @@ blue orange
 
 We've met `len()` before, but [range()](https://docs.python.org/3/library/functions.html#func-range?azure-portal=true) is new to us. That function produces a sequence of integers from 0 to 1 less than the number passed into it. Hence:
 
-```Python
+```python
 for j in range(5):
     print(j)
 ```
@@ -163,7 +163,7 @@ How about counting by threes from 17 to 41?
 
 It can also be important to break out of a`for`  loop. Python uses the `break` statement borrowed from C to do this. To see this in action, consider two nested `for` loops:
 
-```Python
+```python
 for n in range(2, 10):
     for x in range(2, n):
         if n % x == 0:
@@ -198,7 +198,7 @@ Try changing the code snippet above by removing the `break` statement. What outp
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   for n in range(2, 10):
     for x in range(2, n):
         if n % x == 0:
@@ -233,7 +233,7 @@ Try changing the code snippet above by removing the `break` statement. What outp
 ## For loop: Continue
 As part of the control flow of your program, you might want to continue to the next iteration of your `for` loop. The `continue` statement (also borrowed from C) can help with that:
 
-```Python
+```python
 for num in range(2, 10):
     if num % 2 == 0:
         print("Found an even number:", num)
@@ -264,7 +264,7 @@ What happens when you replace the `continue` statement above with a `break`?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   for num in range(2, 10):
     if num % 2 == 0:
         print("Found an even number:", num)
@@ -288,7 +288,7 @@ If we cross the functionality of the `if` statement with that of the `for` loop,
 
 In the Fibonacci series, the sum of two elements defines the next.
 
-```Python
+```python
 a, b = 0, 1
 
 while b < 100:    

@@ -2,7 +2,7 @@ So far, we have explored how to access and modify portions of arrays using simpl
 
 Let's try it out:
 
-```Python
+```python
 rand = np.random.RandomState(42)
 
 arr = rand.randint(100, size=10)
@@ -17,7 +17,7 @@ The output is:
 
 Suppose you need to access three different elements. Using the tools you currently have, your code might look something like this:
 
-```Python
+```python
 [arr[3], arr[7], arr[2]]
 ```
 
@@ -29,7 +29,7 @@ The output is:
 
 With fancy indexing, you can pass a single list or array of indices to do the same thing:
 
-```Python
+```python
 ind = [3, 7, 4]
 arr[ind]
 ```
@@ -42,7 +42,7 @@ array([71, 86, 60])
 
 Another useful aspect of fancy indexing is that the shape of the output array reflects the shape of the *index arrays* you supply, rather than the shape of the array you are accessing. This is handy because there will be many times in a data scientist's life when they want to grab data from an array in a particular manner, such as to pass it to a machine learning API. Let's examine this property with an example:
 
-```Python
+```python
 ind = np.array([[3, 7],
                 [4, 5]])
 arr[ind]
@@ -67,7 +67,7 @@ What happens when your index array is bigger than the target array?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   ind = np.arange(0, 12).reshape((6, 2))
   arr(ind)
   ```
@@ -93,7 +93,7 @@ What happens when your index array is bigger than the target array?
 
 Fancy indexing also works in multiple dimensions:
 
-```Python
+```python
 arr2 = np.arange(12).reshape((3, 4))
 arr2
 ```
@@ -108,7 +108,7 @@ array([[ 0,  1,  2,  3],
 
 As with standard indexing, the first index refers to the row and the second to the column:
 
-```Python
+```python
 row = np.array([0, 1, 2])
 col = np.array([2, 1, 3])
 arr2[row, col]
@@ -124,7 +124,7 @@ What did you actually get as your final result here? The first value in the resu
 
 The pairing of indices in fancy indexing follows all the same broadcasting rules we covered earlier. Thus, if you combine a column vector and a row vector within the indices, you get a two-dimensional result:
 
-```Python
+```python
 arr2[row[:, np.newaxis], col]
 ```
 
@@ -156,7 +156,7 @@ Think back to the broadcast rules.
 
   Try:
 
-  ```Python
+  ```python
   row[:, np.newaxis] * col
   ```
   
@@ -170,7 +170,7 @@ Think back to the broadcast rules.
 
   For:
 
-  ```Python
+  ```python
   row[:, np.newaxis] * row
   ```
   
@@ -184,7 +184,7 @@ Think back to the broadcast rules.
 
   And:
 
-  ```Python
+  ```python
   col[:, np.newaxis] * row
   ```
   
@@ -212,7 +212,7 @@ Think back to the broadcast rules.
 
 You can also combine fancy indexing with the other indexing schemes you have learned. Consider `arr2` again:
 
-```Python
+```python
 print(arr2)
 ```
 
@@ -226,7 +226,7 @@ The output is:
 
 Now combine fancy and simple indices:
 
-```Python
+```python
 arr2[2, [2, 0, 1]]
 ```
 
@@ -240,7 +240,7 @@ What did you get back? The elements at positions 2, 0, and 1 of row 2 (the third
 
 You can also combine fancy indexing with slicing:
 
-```Python
+```python
 arr2[1:, [2, 0, 1]]
 ```
 
@@ -255,7 +255,7 @@ Again, consider what you got back as output: the elements at positions 2, 0, and
 
 Of course, you can also combine fancy indexing with masking:
 
-```Python
+```python
 mask = np.array([1, 0, 1, 0], dtype=bool)
 arr2[row[:, np.newaxis], mask]
 ```
@@ -272,7 +272,7 @@ array([[ 0,  2],
 
 Fancy indexing is, of course, not just for accessing parts of an array, but also for modifying parts of an array:
 
-```Python
+```python
 ind = np.arange(10)
 arr = np.array([2, 1, 8, 4])
 ind[arr] = 99
@@ -287,7 +287,7 @@ The output is:
 
 You can also use a ufunc here and subtract 10 from each element of the array:
 
-```Python
+```python
 ind[arr] -= 10
 print(ind)
 ```
@@ -300,7 +300,7 @@ The output is:
 
 Be cautious when using repeated indices with operations like these. They might not always produce the results you expect. For example:
 
-```Python
+```python
 ind = np.zeros(10)
 ind[[0, 0]] = [4, 6]
 print(ind)
@@ -316,7 +316,7 @@ Where did the 4 go? The result of this operation is to first assign `ind[0] = 4
 
 But not every operation repeats the way you might think it should:
 
-```Python
+```python
 arr = [2, 3, 3, 4, 4, 4]
 ind[arr] += 1
 ind
@@ -334,7 +334,7 @@ This happened because `ind[arr] += 1` is really shorthand for `ind[arr] = ind
 
 But what if you want an operation to repeat? To do this, use the `at()` method of ufuncs:
 
-```Python
+```python
 ind = np.zeros(10)
 np.add.at(ind, arr, 1)
 print(ind)
@@ -356,7 +356,7 @@ What does np.subtract.at(ind, arr, 1) give you?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   np.subtract.at(ind, arr, 1)
   print(ind)
   ```

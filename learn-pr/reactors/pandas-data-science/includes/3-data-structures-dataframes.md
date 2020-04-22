@@ -4,7 +4,7 @@ Just as a `Series` is like a one-dimensional array with flexible indices, a `Dat
 
 Let's take a look at how this works in practice. We will start by creating a `Series` called `area`:
 
-```Python
+```python
 area_dict = {'Albania': 28748,
              'France': 643801,
              'Germany': 357386,
@@ -27,7 +27,7 @@ dtype: int64
 
 Now you can combine this with the `population` `Series` you created earlier by using a dictionary to construct a single two-dimensional table containing data from both `Series`:
 
-```Python
+```python
 countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
@@ -48,7 +48,7 @@ As with `Series`, the `DataFrames` also automatically order indices (in this cas
 
 So far we have combined dictionaries together to compose a `DataFrame` (which has given our `DataFrame` a row-centric feel), but you can also create `DataFrames` in a column-wise fashion. Consider adding a 'Capital' column using our reliable old array-analog, a list:
 
-```Python
+```python
 countries['Capital'] = ['Tirana', 'Paris', 'Berlin', 'Tokyo', 'Moscow']
 countries
 ```
@@ -67,7 +67,7 @@ The output is:
 
 As with `Series`, even though initial indices are ordered in `DataFrames`, subsequent additions to a `DataFrame` stay in the ordered added. However, you can explicitly change the order of `DataFrame` column indices this way:
 
-```Python
+```python
 countries = countries[['Capital', 'Area', 'Population']]
 countries
 ```
@@ -86,7 +86,7 @@ The output is:
 
 Commonly in a data science context, it is necessary to generate new columns of data from existing data sets. Because `DataFrame` columns behave like `Series`, you can do this is by performing operations on them as you would with `Series`:
 
-```Python
+```python
 countries['Population Density'] = countries['Population'] / countries['Area']
 countries
 ```
@@ -108,7 +108,7 @@ The output is:
 
 We have stated before that `DataFrames` are like dictionaries, and it's true. You can retrieve the contents of a column just as you would the value for a specific key in an ordinary dictionary:
 
-```Python
+```python
 countries['Area']
 ```
 
@@ -129,7 +129,7 @@ Now try accessing row data with a command like `countries['Japan']`
 
 This returns an error. `DataFrames` are dictionaries of `Series`, which are the columns. `DataFrame` rows often have heterogeneous data types, so different methods are necessary to access row data. For that, we use the `.loc` method:
 
-```Python
+```python
 countries.loc['Japan']
 ```
 
@@ -145,7 +145,7 @@ Name: Japan, dtype: object
 
 Note that what the `.loc` method returns is an indexed object in its own right and you can access elements within it using familiar index syntax:
 
-```Python
+```python
 countries.loc['Japan']['Area']
 ```
 
@@ -164,7 +164,7 @@ Can you slice along these indices as well?
 
 Sometimes it's helpful in data science projects to add a column to a `DataFrame` without assigning values to it:
 
-```Python
+```python
 countries['Debt-to-GDP Ratio'] = np.nan
 countries
 ```
@@ -185,7 +185,7 @@ Again, you can disregard the warning (if it triggers) about adding the column th
 
 You can also add columns to a `DataFrame` that do not have the same number of rows as the `DataFrame`:
 
-```Python
+```python
 debt = pd.Series([0.19, 2.36], index=['Russia', 'Japan'])
 countries['Debt-to-GDP Ratio'] = debt
 countries
@@ -205,7 +205,7 @@ The output is:
 
 You can use the`del` command to delete a column from a `DataFrame`:
 
-```Python
+```python
 del countries['Capital']
 countries
 ```
@@ -224,7 +224,7 @@ The output is:
 
 In addition to their dictionary-like behavior, `DataFrames` also behave like two-dimensional arrays. For example, it can be useful at times when working with a `DataFrame` to transpose it:
 
-```Python
+```python
 countries.T
 ```
 
@@ -248,7 +248,7 @@ Again, note that `DataFrame` columns are `Series` and thus the data types must c
 
 Given a two-dimensional array of data, we can create a `DataFrame` with any specified column and index names. If omitted, an integer index will be used for each:
 
-```Python
+```python
 pd.DataFrame(np.random.rand(3, 2),
              columns=['foo', 'bar'],
              index=['a', 'b', 'c'])

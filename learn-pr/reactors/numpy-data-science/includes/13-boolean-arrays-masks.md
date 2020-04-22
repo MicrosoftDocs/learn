@@ -1,6 +1,6 @@
 In the prior section, we looked at aggregates computed directly on Boolean arrays. A more powerful pattern is to use Boolean arrays as masks, to select particular subsets of the data themselves. Returning to our `two_dim_array` array from before, suppose we want an array of all values in the array that are less than 5:
 
-```Python
+```python
 two_dim_array
 ```
 
@@ -14,7 +14,7 @@ array([[5, 0, 3, 3],
 
 You can obtain a Boolean array for this condition easily:
 
-```Python
+```python
 two_dim_array < 5
 ```
 
@@ -28,7 +28,7 @@ array([[False,  True,  True,  True],
 
 Now, to *select* these values from the array, you can simply index on this Boolean array. This is the *masking* operation:
 
-```Python
+```python
 two_dim_array[two_dim_array < 5]
 ```
 
@@ -42,7 +42,7 @@ What is returned is a one-dimensional array filled with all the values that meet
 
 You can use masking as a way to compute some relevant statistics on the Seattle rain data:
 
-```Python
+```python
 # Construct a mask of all rainy months
 rainy = (rainfall_2003 > 0)
 

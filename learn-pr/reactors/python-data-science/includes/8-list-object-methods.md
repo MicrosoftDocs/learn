@@ -2,7 +2,7 @@ Python includes a number of handy functions that are available to all lists.
 
 For example, [append()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) and [extend()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) enable you to add to the end of a list, much like the += operator:
 
-```Python
+```python
 groupMembers = ['Jordan', 'Parker']
 groupMembers.append('Quinn')
 groupMembers
@@ -16,7 +16,7 @@ The output is:
 
 Notice that you did not actually pass a list to `append()`; passing a list to `append()` results in this behavior:
 
-```Python
+```python
 groupMembers2 = ['Jordan', 'Parker', 'Quinn']
 groupMembers2.append(['Stuart', 'Pete'])
 groupMembers2
@@ -30,7 +30,7 @@ The output is:
 
 To tack a list on the end of an existing list, use [extend()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) instead:
 
-```Python
+```python
 groupMembers.extend(['Stuart', 'Pete'])
 groupMembers
 ```
@@ -43,7 +43,7 @@ The output is:
 
 [index()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) returns the index of the first matching item in a list (if present):
 
-```Python
+```python
 groupMembers.index('Quinn')
 ```
 
@@ -55,7 +55,7 @@ The output is:
 
 The [count()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method returns the number of items in a list that match objects you pass in:
 
-```Python
+```python
 groupMembers.count('Jordan')
 ```
 
@@ -67,7 +67,7 @@ The output is:
 
 There are two methods for removing items from a list. The first is [remove()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true), which locates the first occurrence of an item in the list and removes it (if present):
 
-```Python
+```python
 groupMembers.remove('Stuart')
 groupMembers
 ```
@@ -80,7 +80,7 @@ The output is:
 
 The other method for removing items from lists is the [pop()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method. If you supply `pop()` with an index number, it will remove the item from that location in the list and return it; otherwise, `pop()` removes the last item in a list and returns that:
 
-```Python
+```python
 groupMembers.pop()
 ```
 
@@ -92,7 +92,7 @@ The output is:
 
 The [insert()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method enables you to add an item to a specific location in a list:
 
-```Python
+```python
 groupMembers.insert(1, 'Riley')
 groupMembers
 ```
@@ -105,7 +105,7 @@ The output is:
 
 Unsurprisingly, the [reverse()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method reverses the order of items in a list:
 
-```Python
+```python
 groupMembers.reverse()
 groupMembers
 ```
@@ -118,7 +118,7 @@ The output is:
 
 Finally, the [sort()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method orders the items in a list:
 
-```Python
+```python
 groupMembers.sort()
 groupMembers
 ```
@@ -139,7 +139,7 @@ The output is:
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   beatles.append(beatles)
   beatles
   ```

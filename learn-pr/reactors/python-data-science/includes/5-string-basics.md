@@ -1,6 +1,6 @@
 Besides numbers, Python can also manipulate strings. Strings can be enclosed in single quotes ('...') or double quotes ("...") with the same result. Use backslash (\) to escape quotes; that is, use \ in order to use quotation marks within the string itself:
 
-```Python
+```python
 'spam eggs'  # Single quotes.
 ```
 
@@ -12,7 +12,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 'doesn\'t'  # Use \' to escape the single quote...
 ```
 
@@ -24,7 +24,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 "doesn't"  # ...or use double quotes instead.
 ```
 
@@ -36,7 +36,7 @@ The output is:
 
 In Python's interactive interpreter and Jupyter Notebooks in VS Code, the output string is enclosed in quotes and special characters are escaped with backslashes. Although this output sometimes looks different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes; otherwise, it’s enclosed in single quotes. The [print()](https://docs.python.org/3.6/library/functions.html#print?azure-portal=true) function produces a more readable output by omitting the enclosing quotes and by printing escaped and special characters:
 
-```Python
+```python
 '"Isn\'t," she said.'
 ```
 
@@ -48,7 +48,7 @@ The output is:
 
 Another example:
 
-```Python
+```python
 print('"Isn\'t," she said.')
 ```
 
@@ -60,7 +60,7 @@ The output is:
 
 If you don't want escaped characters (prefaced by \) to be interpreted as special characters, use _raw strings_ by adding an `r` before the first quote:
 
-```Python
+```python
 print('C:\some\name')  # Here \n means newline!
 # Im adding some more comments - woo!
 ```
@@ -74,7 +74,7 @@ ame
 
 Another example:
 
-```Python
+```python
 print(r'C:\some\name')  # Note the r before the quote.
 ```
 
@@ -90,7 +90,7 @@ String literals can span multiple lines and are delineated by triple-quotes: """
 
 Because Python doesn't provide a means for creating multi-line comments, developers often just use triple quotes for this purpose. In a Jupyter notebook, however, such quotes define a string literal that appears as the output of a code cell:
 
-```Python
+```python
 """
 Everything between the first three quotes, including new lines,
 is part of the multi-line comment. Technically, the Python interpreter
@@ -109,7 +109,7 @@ For this reason, it's best in notebooks to use the # comment character at the be
 
 Strings can be _concatenated_ (glued together) with the plus (+) operator, and repeated with multiply (*):
 
-```Python
+```python
 # 3 times 'un', followed by 'ium'
 3 * 'un' + 'ium'
 ```
@@ -126,7 +126,7 @@ The order of operations applies to operators when they are used with strings as 
 
 Two or more _string literals_ placed next to each other are automatically concatenated:
 
-```Python
+```python
 'Py' 'thon'
 ```
 
@@ -138,7 +138,7 @@ The output is:
 
 However, to concatenate variables or a variable and a literal, use +:
 
-```Python
+```python
 prefix = 'Py'
 prefix + 'thon'
 ```

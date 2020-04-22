@@ -14,7 +14,7 @@ To get started, you will need to install matplotlib. Instructions can be found o
 
 Our first step will be to import NumPy using `np` as an alias:
 
-```Python
+```python
 import numpy as np
 ```
 

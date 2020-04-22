@@ -6,11 +6,11 @@ NumPy has fast built-in aggregation functions for working on arrays that are the
 
 You can use the built-in Python `sum` function to sum up the values in an array.
 
-```Python
+```python
 import numpy as np
 ```
 
-```Python
+```python
 myList = np.random.random(100)
 sum(myList)
 ```
@@ -23,7 +23,7 @@ The output is:
 
 If you guessed that there is also a built-in NumPy function for this, you guessed correctly:
 
-```Python
+```python
 np.sum(myList)
 ```
 
@@ -35,7 +35,7 @@ The output is:
 
 And if you guessed that the NumPy version is faster, you are doubly correct:
 
-```Python
+```python
 large_array = np.random.rand(1000000)
 %timeit sum(large_array)
 %timeit np.sum(large_array)
@@ -54,7 +54,7 @@ For all their similarity, bear in mind that `sum` and `np.sum` are not ident
 
 Just as Python has built-in `min` and `max` functions, NumPy has similar, vectorized versions:
 
-```Python
+```python
 np.min(large_array), np.max(large_array)
 ```
 
@@ -66,7 +66,7 @@ The output is:
 
 You can also use `min`, `max`, and `sum` (and several other NumPy aggregates) as methods of the array object itself:
 
-```Python
+```python
 print(large_array.min(), large_array.max(), large_array.sum())
 ```
 
@@ -80,7 +80,7 @@ The output is:
 
 Because you will often treat the rows and columns of two-dimensional arrays differently (treating columns as variables and rows as observations of those variables, for example), it can often be desirable to aggregate array data along a row or column. Let's consider a two-dimensional array:
 
-```Python
+```python
 md = np.random.random((3, 4))
 print(md)
 ```
@@ -95,7 +95,7 @@ The output is:
 
 Unless you specify otherwise, each NumPy aggregation function will compute the aggregate for the entire array. Hence:
 
-```Python
+```python
 md.sum()
 ```
 
@@ -107,7 +107,7 @@ The output is:
 
 Aggregation functions take an additional argument specifying the *axis* along which to compute the aggregation. For example, we can find the minimum value within each column by specifying `axis=0`:
 
-```Python
+```python
 md.min(axis=0)
 ```
 
@@ -127,7 +127,7 @@ What do you get when you try `md.max(axis=1)`?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   md.max(axis=1)
   ```
   

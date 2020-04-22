@@ -4,7 +4,7 @@ In addition to missing data, in real-world datasets, you frequently encounter du
 
 You can easily spot duplicate values by using the `duplicated` method in pandas. `duplicated` returns a Boolean mask that indicates whether an entry in a DataFrame is a duplicate of an earlier one. Let's create another example DataFrame to see this in action:
 
-```Python
+```python
 example6 = pd.DataFrame({'letters': ['A','B'] * 2 + ['B'],
                          'numbers': [1, 2, 1, 3, 3]})
 example6
@@ -24,7 +24,7 @@ Here's the output:
 
 Then run this code in a cell:
 
-```Python
+```python
 example6.duplicated()
 ```
 
@@ -45,7 +45,7 @@ dtype: bool
 
 Run this code in a cell:
 
-```Python
+```python
 example6.drop_duplicates()
 ```
 
@@ -63,7 +63,7 @@ Both `duplicated` and `drop_duplicates` default to consider all columns, but you
 
 Run this code in a cell:
 
-```Python
+```python
 example6.drop_duplicates(['letters'])
 ```
 

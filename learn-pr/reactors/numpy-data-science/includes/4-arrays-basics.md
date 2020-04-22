@@ -10,7 +10,7 @@ Now that you know how to create arrays in NumPy, you need to get comfortable man
 
 First, let's look at some array attributes. We'll start by defining three arrays filled with random numbers: one one-dimensional, another two-dimensional, and the last three-dimensional. Because we will be using NumPy's random number generator, we will set a *seed* value in order to ensure that you get the same random arrays each time you run this code:
 
-```Python
+```python
 import numpy as np
 np.random.seed(0)  # seed for reproducibility
 
@@ -21,7 +21,7 @@ a3 = np.random.randint(10, size=(3, 4, 5))  # Three-dimensional array
 
 Each array has attributes `ndim` (the number of dimensions of an array), `shape` (the size of each dimension of an array), and `size` (the total number of elements in an array).
 
-```Python
+```python
 print("a1 ndim: ", a1.ndim)
 print("a1 shape:", a1.shape)
 print("a1 size: ", a1.size)
@@ -47,7 +47,7 @@ Change the values in this code snippet to look at the attributes for a2 and a3:
 
   For a2:
   
-  ```Python
+  ```python
   print("a2 ndim: ", a2.ndim)
   print("a2 shape:", a2.shape)
   print("a2 size: ", a2.size)
@@ -63,7 +63,7 @@ Change the values in this code snippet to look at the attributes for a2 and a3:
   
   For a3:
 
-  ```Python
+  ```python
   print("a3 ndim: ", a3.ndim)
   print("a3 shape:", a3.shape)
   print("a3 size: ", a3.size)
@@ -86,7 +86,7 @@ Change the values in this code snippet to look at the attributes for a2 and a3:
 
 Another useful array attribute is the `dtype`, which we already encountered earlier in this section as a means of determining the type of data in an array:
 
-```Python
+```python
 print("dtype:", a3.dtype)
 ```
 
@@ -108,7 +108,7 @@ What `dtypes` do you predict them to have?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   print("dtype:", a3.dtype)
   ```
 
@@ -130,7 +130,7 @@ Indexing in NumPy is pretty similar to indexing lists in standard Python. In fac
 
 Try:
 
-```Python
+```python
 a1
 ```
 
@@ -142,7 +142,7 @@ array([5, 0, 3, 3, 7, 9])
 
 Then try:
 
-```Python
+```python
 a1[0]
 ```
 
@@ -154,7 +154,7 @@ The output is:
 
 And next:
 
-```Python
+```python
 a1[4]
 ```
 
@@ -168,7 +168,7 @@ As with regular Python lists, in order to index from the end of the array, you c
 
 For example:
 
-```Python
+```python
 a1[-1]
 ```
 
@@ -180,7 +180,7 @@ The output is:
 
 And:
 
-```Python
+```python
 a1[-2]
 ```
 
@@ -202,7 +202,7 @@ Try a few combinations like `a2[1][1]` or `a3[0][2][1]` and see what comes back.
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   a2[1][1]
   ```
   
@@ -214,7 +214,7 @@ Try a few combinations like `a2[1][1]` or `a3[0][2][1]` and see what comes back.
 
   When you use:
 
-  ```Python
+  ```python
   a3[0][2][1]
   ```
   
@@ -236,7 +236,7 @@ You might have noticed that we can treat multidimensional arrays like lists of l
 
 Try:
 
-```Python
+```python
 a2
 ```
 
@@ -250,7 +250,7 @@ array([[3, 5, 2, 4],
 
 And with:
 
-```Python
+```python
 a2[0, 0]
 ```
 
@@ -262,7 +262,7 @@ The output is:
 
 Next look at:
 
-```Python
+```python
 a2[2, 0]
 ```
 
@@ -274,7 +274,7 @@ The output is:
 
 Try:
 
-```Python
+```python
 a2[2, -1]
 ```
 
@@ -286,7 +286,7 @@ The output is:
 
 You can also modify values by use of this same comma-separated index notation:
 
-```Python
+```python
 a2[0, 0] = 12
 a2
 ```
@@ -301,7 +301,7 @@ array([[12,  5,  2,  4],
 
 Remember, once defined, NumPy arrays have a fixed data type. So, if you attempt to insert a float into an integer array, the value will be silently truncated.
 
-```Python
+```python
 a1[0] = 3.14159
 a1
 ```
@@ -322,7 +322,7 @@ What happens if you try to insert a string into a1? Try both a string like '3' a
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   a1[1] = '3'
   a1
   ```
@@ -335,7 +335,7 @@ What happens if you try to insert a string into a1? Try both a string like '3' a
 
   But when you try:
 
-  ```Python
+  ```python
   a1[1] = 'three'
   a1
   ```
@@ -363,7 +363,7 @@ What happens if you try to insert a string into a1? Try both a string like '3' a
 
 Similar to how you can use square brackets to access individual array elements, you can also use them to access subarrays. You do this with the *slice* notation, marked by the colon (`:`) character. NumPy slicing syntax follows that of the standard Python list; so, to access a slice of an array `a`, use this notation:
 
-```Python
+```python
 a[start:stop:step]
 ```
 
@@ -373,7 +373,7 @@ If any of these are unspecified, they default to the values `start=0`, `stop=`
 
 Using this code:
 
-```Python
+```python
 a = np.arange(10)
 a
 ```
@@ -386,7 +386,7 @@ array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 You can get the first five elements:
 
-```Python
+```python
 a[:5]
 ```
 
@@ -398,7 +398,7 @@ array([0, 1, 2, 3, 4])
 
 You can return the elements after index 5:
 
-```Python
+```python
 a[5:]
 ```
 
@@ -410,7 +410,7 @@ array([5, 6, 7, 8, 9])
 
 Or the middle sub-array:
 
-```Python
+```python
 a[4:7]
 ```
 
@@ -422,7 +422,7 @@ array([4, 5, 6])
 
 Here's how to get every other element:
 
-```Python
+```python
 a[::2]
 ```
 
@@ -434,7 +434,7 @@ array([0, 2, 4, 6, 8])
 
 Just every other element, starting at index 1:
 
-```Python
+```python
 a[1::2]
 ```
 
@@ -456,7 +456,7 @@ How would you access the *last* five elements of array a? How about every other 
 
   Try:
 
-  ```Python
+  ```python
   a[-5:]
   ```
   
@@ -468,7 +468,7 @@ How would you access the *last* five elements of array a? How about every other 
 
   And:
 
-  ```Python
+  ```python
   a[-5::2]
   ```
   
@@ -489,7 +489,7 @@ Be careful when using negative values for `step`. When `step` has a negative 
 
 This gives you all elements, reversed:
 
-```Python
+```python
 a[::-1]
 ```
 
@@ -501,7 +501,7 @@ array([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
 
 And this is reversed every other from index 5:
 
-```Python
+```python
 a[5::-2]
 ```
 
@@ -523,7 +523,7 @@ How can you create a slice that contains every third element of `a`,  descending
 
   Try:
 
-  ```Python
+  ```python
   a[-2::-3]
   ```
   
@@ -543,7 +543,7 @@ How can you create a slice that contains every third element of `a`,  descending
 
 Multidimensional slices use the same slice notation of one-dimensional subarrays mixed with the comma-separated notation of multidimensional arrays. Some examples will help illustrate this.
 
-```Python
+```python
 a2
 ```
 
@@ -557,7 +557,7 @@ array([[12,  5,  2,  4],
 
 Two rows, three columns:
 
-```Python
+```python
 a2[:2, :3]
 ```
 
@@ -570,7 +570,7 @@ array([[12,  5,  2],
 
 All rows, every other column:
 
-```Python
+```python
 a2[:3, ::2]
 ```
 
@@ -584,7 +584,7 @@ array([[12,  2],
 
 Finally, subarray dimensions can even be reversed together:
 
-```Python
+```python
 a2[::-1, ::-1]
 ```
 
@@ -602,7 +602,7 @@ One thing you will often need to do in manipulating data is accessing a single r
 
 To get the first column of x2:
 
-```Python
+```python
 print(a2[:, 0])
 ```
 
@@ -614,7 +614,7 @@ The output is:
 
 To get the first row of x2:
 
-```Python
+```python
 print(a2[0, :])
 ```
 
@@ -626,7 +626,7 @@ The output is:
 
 In the case of row access, the empty slice can be omitted for a more compact syntax:
 
-```Python
+```python
 print(a2[0])  # equivalent to a2[0, :]
 ```
 
@@ -648,7 +648,7 @@ How about the third row of a3?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   a3[:,:,2]
   ```
   
@@ -662,7 +662,7 @@ How about the third row of a3?
 
   And for:
 
-  ```Python
+  ```python
   a3[2,:,:]
   ```
   

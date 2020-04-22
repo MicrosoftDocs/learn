@@ -4,7 +4,7 @@ To explore DataFrames in pandas, we will import the Python scikit-learn library 
 
 First, import pandas and import the Python scikit-learn dataset:
 
-```Python
+```python
 import pandas as pd
 from sklearn.datasets import load_iris
 
@@ -16,7 +16,7 @@ iris_df = pd.DataFrame(data=iris['data'], columns=iris['feature_names'])
 
 To take a look at this dataset to see what we have, run:
 
-```Python
+```python
 iris_df.info()
 ```
 
@@ -40,7 +40,7 @@ From the output, we know that the Iris dataset has 150 entries in four columns. 
 
 Next, let's see what the first few rows of our DataFrame look like. To return the first five rows of data, run:
 
-```Python
+```python
 iris_df.head()
 ```
 
@@ -78,7 +78,7 @@ By default, `DataFrame.head` returns the first five rows in a DataFrame. In a ne
 
 The flip side of `DataFrame.head` is `DataFrame.tail`, which returns the *last* five rows of a DataFrame:
 
-```Python
+```python
 iris_df.tail()
 ```
 

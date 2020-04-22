@@ -8,7 +8,7 @@ The name _pandas_ actually has nothing to do with Chinese bears, but rather come
 
 Just as you imported NumPy with the alias `np`, we will import pandas under the alias `pd`. Make sure you've installed Pandas first (run `pip install pandas` in the terminal below).
 
-```Python
+```python
 import pandas as pd
 ```
 
@@ -16,14 +16,14 @@ As with the NumPy convention, `pd` is an important and widely used convention in
 
 As we progress through this module, don't forget that IPython provides the tab-completion feature and function documentation with the `?` character. If you don't understand anything about a function you see in this module, take a moment and read the documentation. The docs can help a great deal. As a reminder, to display the built-in pandas documentation, use this code:
 
-```Python
+```python
 ipython
 pd?
 ```
 
 Because it can be useful to lean about `Series` and `DataFrames` in pandas, which is an extension of `ndarrays` in NumPy, go ahead and also import NumPy. You will want it for some of the examples later on:
 
-```Python
+```python
 import numpy as np
 ```
 

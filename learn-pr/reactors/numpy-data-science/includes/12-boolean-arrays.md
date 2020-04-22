@@ -1,6 +1,6 @@
 Given a Boolean array, there are a host of useful operations you can do. We'll work with `two_dim_array`, the two-dimensional array we created earlier.
 
-```Python
+```python
 print(two_dim_array)
 ```
 
@@ -18,7 +18,7 @@ To count the number of `True` entries in a Boolean array, `np.count_nonzero`�
 
 How many values less than 6?
 
-```Python
+```python
 np.count_nonzero(two_dim_array < 6)
 ```
 
@@ -30,7 +30,7 @@ The output is:
 
 We see that there are eight array entries that are less than 6. Another way to get at this information is to use `np.sum`; in this case, `False` is interpreted as `0`, and `True` is interpreted as `1`:
 
-```Python
+```python
 np.sum(two_dim_array < 5)
 ```
 
@@ -44,7 +44,7 @@ The benefit of `sum()` is that, like with other NumPy aggregation functions, t
 
 How many values less than 5 in each row?
 
-```Python
+```python
 np.sum(two_dim_array < 5, axis=1)
 ```
 
@@ -60,7 +60,7 @@ If we're interested in quickly checking whether any or all the values are true, 
 
 Are there any values less than zero?
 
-```Python
+```python
 np.any(two_dim_array < 0)
 ```
 
@@ -80,7 +80,7 @@ Now check to see if all values less than 10?
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  ```Python
+  ```python
   np.all(two_dim_array < 10)
   ```
   
@@ -100,7 +100,7 @@ Now check to see if all values less than 10?
 
 Are all values in each row less than 7?
 
-```Python
+```python
 np.all(two_dim_array < 7, axis=1)
 ```
 
@@ -123,7 +123,7 @@ We've already seen how we might count, say, all months with rain less than four 
 
 For example, we can address this sort of compound question as follows:
 
-```Python
+```python
 np.sum((rainfall_2003 > 0.5) & (rainfall_2003 < 1))
 ```
 
@@ -135,7 +135,7 @@ The output is:
 
 So we see that there are two months with rainfall between 0.5 and 1.0 inches. Note that the parentheses here are important - because of operator-precedence rules, with parentheses removed, this expression would be evaluated as follows, which results in an error:
 
-```Python
+```python
 rainfall_2003 > (0.5 & rainfall_2003) < 1
 ```
 
@@ -152,7 +152,7 @@ TypeError: ufunc 'bitwise_and' not supported for the input types, and the inputs
 
 Using the equivalence of *A AND B and NOT (NOT A OR NOT B)* (which you might remember if you've taken an introductory logic course), we can compute the same result in a different manner:
 
-```Python
+```python
 np.sum(~((rainfall_2003 <= 0.5) | (rainfall_2003 >= 1)))
 ```
 
@@ -175,7 +175,7 @@ The following table summarizes the bitwise Boolean operators and their equivalen
 
 Using these tools, you can start to answer the types of questions we listed above about the Seattle rainfall data. Here are some examples of results we can compute when combining masking with aggregations:
 
-```Python
+```python
 print("Number of months without rain:", np.sum(rainfall_2003 == 0))
 print("Number of months with rain:   ", np.sum(rainfall_2003 != 0))
 print("Months with more than 1 inch: ", np.sum(rainfall_2003 > 1))
