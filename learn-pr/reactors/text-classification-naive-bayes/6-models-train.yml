@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.machine-learning-popular-algorithms.6-models-train
+title: Exploratory statistics and visualization
+metadata:
+  title: Exploratory statistics and visualization
+  description: Exploratory statistics and visualization by using a pandas DataFrame.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-models-train.md)]
