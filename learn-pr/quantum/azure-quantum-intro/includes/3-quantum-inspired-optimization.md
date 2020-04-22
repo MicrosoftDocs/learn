@@ -24,19 +24,21 @@ You can learn more about building a scalable quantum computer in [this blog post
 In the meantime, we can emulate these algorithms using quantum inspired techniques today, and often see improvements in performance over other state-of-the-art classical optimization techniques. 
 Theory suggests we'll see further speedups once quantum hardware is available.
 
-Applying QIO to real-world problems might offer businesses new insights, or help lower costs by making their processes more efficient. This can be done in a variety of ways:
+Applying QIO to real-world problems might offer businesses new insights, or help lower costs by making their processes more efficient. This can be done by:
 1. For a fixed use case and fixed quality of solution, finding the solution faster.
 2. For a fixed problem and fixed amount of time, finding a higher quality solution.
 3. By extending the problem to consider more variables, finding a solution to a more realistic model.
 
 ## Understanding optimization problems
 
-With optimization problems involving continuous variables, we can often think of the problem as an optimization landscape. An optimization landscape consists of:
-- *Search space*: This is the space of all the feasible solutions to the problem. Each point in this search space is a valid solution to the problem, however typically we are looking for the lowest point, or lowest cost solution.
-- *Objective function*: This is a mathematical description, which, when evaluated, tells you the cost of that solution. 
+Let's begin with some common terminology:
+- **Search space**: This is the space of all the feasible solutions to the optimization problem. Each point in this search space is a valid solution to the problem, however typically we are looking for the lowest point, or lowest cost solution.
+- **Objective function**: This is a mathematical description, which, when evaluated, tells you the cost of that solution. 
 
-Let's consider a simple optimization landscape involving two continuous variables.
-
+Together, these are often referred to as an optimization landscape. 
+In the case of a problem involving two continuous variables, the analogy to a landscape is quite direct. 
+For example, here is a plot of an objective function that looks like a single smooth valley.
+![A plot of an optimization landscape that looks like a single smooth valley](../media/plot-simple.png)
 
 # Explain general ideas of optimization
 In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
