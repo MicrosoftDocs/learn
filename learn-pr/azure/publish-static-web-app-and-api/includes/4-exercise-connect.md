@@ -7,7 +7,7 @@
 
 - Setup the concierge sandbox
 - Go to Portal
-- create new App Service Static Apps app
+- create a new Azure Static Web App
 - Add the boring stuff (name, sku, region)
 - Add the github repo info and credentials
 - Add the locations (app, api, build assets)

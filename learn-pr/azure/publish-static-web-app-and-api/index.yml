@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.azure.publish-static-web-app-and-api
 metadata:
-  title: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Apps
-  description: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Apps
-  ms.date: 05/01/2020
+  title: Publish your first static web app with Angular, React, Svelte or Vue and Azure Functions
+  description: Publish your first static web app with Angular, React, Svelte or Vue and Azure Functions
+  ms.date: 05/08/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: publish-static-web-app-and-api
-summary: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Apps
+title: Publish your first static web app with Angular, React, Svelte or Vue and Azure Functions
+summary: Publish your first static web app with Angular, React, Svelte or Vue and Azure Functions
 abstract: |
   In this module, you will:
     - Choose an existing web app project with either Angular, React, Svelte or Vue.
     - Create and publish an API with Azure Functions.
     - Run the application locally.
-    - Publish a web app to a new Azure Static App.
+    - Publish a web app to a new Azure Static Web App.
 prerequisites: |
   - Must have some knowledge of JavaScript
   - Must have some familiarity with one of Angular, React, Svelte, or Vue
