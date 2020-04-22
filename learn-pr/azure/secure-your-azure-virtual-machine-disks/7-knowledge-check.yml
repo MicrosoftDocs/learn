@@ -1,37 +1,41 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-your-azure-virtual-machine-disks.7-summary
-title: Summary
+uid: learn.secure-your-azure-virtual-machine-disks.knowledge-check
+title: Knowledge check
 metadata:
-  title: Summary
+  title: Knowledge check
   description: Summary
-  ms.date: 09/24/2018
+  ms.date: 04/22/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 3
-content: |
-  [!include[](includes/7-summary.md)]
+durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-  - content: "True or false: If you enable Azure Disk Encryption (ADE) on a Windows VM, it will use DM-Crypt to encrypt the data on your Virtual Hard Disks."
+  - content: "When you enable Azure Disk Encryption (ADE) on a Windows VM, what does it use to encrypt the data on your virtual hard disks?"
     choices:
-    - content: "True"
+    - content: "DM-Crypt"
       isCorrect: false
-      explanation: "DM-Crypt is used on Linux virtual machines. Windows will instead use BitLocker."
-    - content: "False"
+      explanation: "DM-Crypt is used on Linux virtual machines."
+    - content: "BitLocker"
       isCorrect: true
-      explanation: "Windows VMs are encrypted using BitLocker. Linux VMs will use DM-Crypt."
-  - content: "True or false: When using Azure Key Vault to secure keys used for Azure Disk Encryption (ADE), you must ensure the Azure Key Vault access policies are configured to permit at least one security principal."
+      explanation: "Windows VMs are encrypted using BitLocker."
+    - content: "Azure Key Vault"
+      isCorrect: false
+      explanation: "Azure Key Vault is integrated with ADE to manage the disk-encryption keys and secrets."
+  - content: "To use Azure Key Vault with ADE what policy do you need to set?"
     choices:
-    - content: "True"
+    - content: "Configure an access policy to permit at least one security principal."
       isCorrect: false
-      explanation: "You do not need to configure a security principal for ADE, just enabling the key vault for disk encryption is enough."
-    - content: "False"
+      explanation: "You don't need to configure a security principal for ADE."
+    - content: "Create an access policy to allow template deployment."
       isCorrect: true
-      explanation: "You do not need to configure a security principal for ADE, just enabling the key vault for disk encryption is enough."
+      explanation: "The template deployment access policy allows Azure Resource Manager to get secrets from the key vault when the key vault is referenced in a template deployment."
+    - content: "Set the key vault access policy to support disk encryption."
+      isCorrect: true
+      explanation: "You must set the access policy on the Azure Key Vault to allow disk encryption with ADE."
   - content: "Suppose you create a new VM with a single OS disk and a single data disk. You use all the default options when creating the VM and you have no Azure Key Vault anywhere in your subscription. Which option most accurately describes the encryption state of those disks?"
     choices:
     - content: "Both disks are unencrypted."
