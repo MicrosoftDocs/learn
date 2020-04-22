@@ -28,12 +28,12 @@ quiz:
     - content: 'Feature Collection'
       isCorrect: true
       explanation: Correct. Azure Maps uses data sources containing GeoJSON feature collections to render layers on the map.
-    
+
   - content: 'How can you get the coordinates of the part of the map visible in the users browser?'
     choices:
     - content: 'Get the bounds property from the maps camera'
       isCorrect: true
-      explanation: Correct, the viewable area of the map is controlled by a camera, and this has a bounds property that defines the north-west and south-east corners of the visible map.
-    - content: 'Get the top, bottom, left and right coordinates from the map control'
+      explanation: Correct, the viewable area of the map is controlled by a camera. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
+    - content: 'Get the top, bottom, left, and right coordinates from the map control'
       isCorrect: false
-      explanation: The viewable area of the map is controlled by a camera, and this has a bounds property that defines the north-west and south-east corners of the visible map.
+      explanation: The viewable area of the map is controlled by a camera. The camera has a bounds property that defines the north-west and south-east corners of the visible map.
