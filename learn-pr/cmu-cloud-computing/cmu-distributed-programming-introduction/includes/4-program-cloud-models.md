@@ -52,7 +52,7 @@ _Figure 7: A distributed program that corresponds to the sequential program in F
 
 1. _A. S. Tanenbaum (September 4, 1994). [Distributed Operating Systems](https://cds.cern.ch/record/400319/files/p101.pdf) Prentice Hall, First Edition_
 2. _K. Li (1986). [Shared Virtual Memory on Loosely Coupled Multiprocessors](https://dl.acm.org/doi/book/10.5555/913626) Yale University, New Haven, CT (USA)_
-3. _[OpenMP](http://openmp.org/wp/)_
+3. _[OpenMP](http://openmp.org/)_
 4. _[Message Passing Interface](http://www.mcs.anl.gov/research/projects/mpi/)_
 5. _[MPICH](http://www.mpich.org/)_
 
@@ -60,6 +60,6 @@ _Figure 7: A distributed program that corresponds to the sequential program in F
 
 [^1]: <https://cds.cern.ch/record/400319/files/p101.pdf> "A. S. Tanenbaum (September 4, 1994). *Distributed Operating Systems* Prentice Hall, First Edition"
 [^2]: <https://dl.acm.org/doi/book/10.5555/913626> "K. Li (1986). *Shared Virtual Memory on Loosely Coupled Multiprocessors* Yale University, New Haven, CT (USA)"
-[^3]: <http://openmp.org/wp/> "OpenMP"
+[^3]: <http://openmp.org/> "OpenMP"
 [^4]: <http://www.mcs.anl.gov/research/projects/mpi/> "Message Passing Interface"
 [^5]: <http://www.mpich.org/> "MPICH"
