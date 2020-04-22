@@ -25,6 +25,17 @@ quiz:
     - content: "Virtual network peering"
       isCorrect: true
       explanation: "Use virtual network peering to connect virtual networks to each other so resources in either virtual network to communicate with each other. The virtual networks you connect can be in different Azure regions."
+  - content: 'What are the key parameters that you must specify when you create an Azure VPN gateway with Azure PowerShell?'
+    choices:
+    - content: "-GatewayType Vpn and -VpnType RouteBased"
+      isCorrect: false
+      explanation: "Those are key parameters but you also need to specify a -GatewaySku. The default is VpnGw1. If that SKU does not meet your organization's needs, you'd have to recreate the VPN gateway with the SKU that meets your organization's network requirements."
+    - content: "-GatewayType Vpn, -VpnType RouteBased, and a -GatewaySku"
+      isCorrect: true
+      explanation: "Use the PowerShell cmdlet New-AzVirtualNetworkGateway where you use parameters -GatewayType Vpn and -VpnType RouteBased. Also set the -GatewaySku to the SKU that meets your organization's network requirements."
+    - content: "-Subnet GatewaySubnet -GatewayType Vpn"
+      isCorrect: false
+      explanation: "You must create a gateway subnet with the name GatewaySubnet in order for the VPN gateway to function properly. But when you create the VPN gateway with the cmdlet New-AzVirtualNetworkGateway, you specify the -IpConfigurations for that subnet."
   - content: 'Which peering configuration would you use for your Express route circuit where you need to allow private connections to an Azure SQL database on a public IP address?'
     choices:
     - content: "Azure public peering"
@@ -36,7 +47,7 @@ quiz:
     - content: "Microsoft peering"
       isCorrect: false
       explanation: "Microsoft peering supports connections to cloud-based SaaS offerings, such as Office 365 and Dynamics 365."
-  - content: 'Which protocols provides dynamic routing for Azure ExpressRoute?'
+  - content: 'Which protocol provides dynamic routing for Azure ExpressRoute?'
     choices:
     - content: "IPVPN"
       isCorrect: false
