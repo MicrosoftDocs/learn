@@ -14,7 +14,7 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
 ### Install the necessary Pip packages
 
-1. Open the Visual Studio Code terminal if it isn't open by selecting **Terminal > New terminal**, and create a python virtual environment using the following command:
+1. Open the Visual Studio Code terminal if it isn't already open by selecting **Terminal > New terminal**, and create a python virtual environment using the following command:
 
     ```sh
     python -m venv .venv
@@ -47,6 +47,9 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 ### Create an environment file
 
 The flask app will need to use your Azure Maps key to load the map control onto a page. It is best practice to store data such as this in environment variables so that it isn't checked in to source code control, and can be configured to different values when developing or publishing your app. Flask will use the python-dotenv package to look for a file called `.env` in the root of your app, and load environment variables from this file.
+
+> [!TIP]
+> If you deploy this app to Azure using Azure App Services, the values in the `.env` file will need to be set as Application Settings so that they are automatically set as environment variables that the app can use.
 
 1. Create a file in the root of the folder called `.env`
 
@@ -88,7 +91,7 @@ The flask app will need to use your Azure Maps key to load the map control onto 
 
 1. Save the file
 
-  > [!NOTE]
+  > [!TIP]
   > If you don't want to have to remember to save files after every change, you can turn on Auto Save by selecting **File > Auto Save**
 
 ### Create the home.html file
@@ -158,9 +161,10 @@ The flask app will need to use your Azure Maps key to load the map control onto 
 
     This web page will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users location is retrieved. This will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise the location of the Microsoft campus in Redmond, Washington, USA will be used.
 
-    > Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian, a line from the North to South Poles running through the UK, going east to 180° on the opposite side of the globe roughly between Alaska and Russia and west to -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°,
+    [!INFO]
+    > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK), going east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°,
 
-    The map control is then into the div. The maps key is set to `{{ data.map_key }}`, and this is the Flask notation to render data into the HTML file. What this means is that when this page is returned to the users web browser, the value `{{ data.map_key }}` is replaced by the value of the `map_key` set on the `data` object. This object was passed to the `render_template` call in the `app.py` file, and the `map_key` is set to the Azure Maps primary key loaded from the `.env` file.
+    The map control is then loaded into the div. The maps key is set to `{{ data.map_key }}`, and this is the Flask notation to render data into the HTML file. What this means is that when this page is returned to the users web browser, the value `{{ data.map_key }}` is replaced by the value of the `map_key` set on the `data` object. This object was passed to the `render_template` call in the `app.py` file, and the `map_key` is set to the Azure Maps primary key loaded from the `.env` file.
 
     Once the control is ready, a camera is set up over the users location. The camera is used to define what to show on screen, so having the camera over the users location will center the map view over that location. The zoom value shows how far above the Earth the camera should be, and determines how many meters of the map are shown per pixel on screen. You can read more on the different zoom values in the [Zoom levels and tile grids documentation](https://docs.microsoft.com/azure/azure-maps/zoom-levels-and-tile-grid).
 
@@ -199,7 +203,7 @@ The app will start, and in the output you'll see the local URL it is running on.
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Open the URL in your web browser, and you'll see the map, centered on your location if you give the site permission to get your location, otherwise it will be centered on the Microsoft Campus in Redmond, Washington, USA.
+Open the URL hsown in your web browser, and you'll see the map. If you give the site permission to get your location it will be centered on you, otherwise it will be centered on the Microsoft Campus in Redmond, Washington, USA.
 
 ![The map running in the Edge web browser](../media/map_in_edge.png)
 

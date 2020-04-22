@@ -1,6 +1,6 @@
 GeoJSON is an Internet standard geospatial data format based on JavaScript Object Notation, or JSON. To add layers to an Azure Maps control, you need to define a data source containing GeoJSON to indicate the locations to use to show different overlays, for example to define the location of bubbles in a bubble layer.
 
-> [!INFO]
+> [!NOTE]
 > GeoJSON was defined in the Internet Engineering Task Force RfC7946 - [https://tools.ietf.org/html/rfc7946](https://tools.ietf.org/html/rfc7946). This way it is a known standard for use across the internet.
 
 ## GeoJSON objects
@@ -50,7 +50,7 @@ An example polygon for a square around Paris is:
 
 ### Feature
 
-A feature a spatially bounded entity, so a geometry with a set of properties that describe what is in that location, such as a place name or data such as temperature.
+A **Feature** a spatially bounded entity, so a geometry with a set of properties that describe what is in that location, such as a place name, or data such as temperature.
 
 This JSON object has three properties:
 
@@ -84,7 +84,7 @@ An example feature for Paris would be:
 
 ### Feature collection
 
-A feature collection, as its name suggests, is a collection of features.
+A **Feature collection**, as its name suggests, is a collection of features.
 
 This JSON object has two properties:
 

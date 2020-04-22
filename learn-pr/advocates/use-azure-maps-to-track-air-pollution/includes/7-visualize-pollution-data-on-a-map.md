@@ -36,10 +36,10 @@ The `data` property contains an array of measurements for all the measuring stat
 
 The following steps will convert the data to a feature collection, and these steps will be implemented in code later in this unit.
 
-* Create a blank feature collection
-* For each item in the `data` array, create a new feature:
-  * The `geometry` of the feature is a `Point`, with the `coordinates` set to the `lon` and `lat`
-  * Rather than plot the AQI measurement directly, it is easier to visualize with a colored bubble, so convert the AQI measurement to a color value as an RGB hex string, and add this to the features property array
+1. Create a blank feature collection
+1. For each item in the `data` array, create a new feature:
+    1. The `geometry` of the feature is a `Point`, with the `coordinates` set to the `lon` and `lat`
+    1. Rather than plot the AQI measurement directly, it is easier to visualize with a colored bubble, so convert the AQI measurement to a color value as an RGB hex string, and add this to the features property array
 
 For example, for the data above, the GeoJSON would be:
 
@@ -62,7 +62,7 @@ For example, for the data above, the GeoJSON would be:
 
 ### Get an API token
 
-Before you can use their API, you'll need to register for an API key from the [WAQI Data Platform page](https://aqicn.org/data-platform/token/#/). You'll need to provide and verify an email address to get the token.
+To use the WAQI API you'll need to register for an API key from the [WAQI Data Platform page](https://aqicn.org/data-platform/token/#/). You'll need to provide and verify an email address to get the token.
 
 Once you have the API token, it needs to be added to the environment variables ready for the app to use
 
@@ -149,11 +149,22 @@ The feature collection created from the AQI data is ready to be shown on a map. 
 
 1. Open the `home.html` file in the `templates` directory
 
-1. Find the code that handles the `ready` event for the map. It will be from line 47 to line 52 and will start with the code ` map.events.add('ready', function () {`, and end with `})`
+1. Find the code that handles the `ready` event for the map. It will be from line 47 to line 52:
+
+    ```js
+    // when the map is ready, center the map on the users location
+    map.events.add('ready', function () {
+        map.setCamera({
+            center: map_center,
+            zoom: 5
+        })
+    })
+    ```
 
 1. Replace this code with the following:
 
     ```js
+    // when the map is ready, center the map on the users location
     map.events.add('ready', function () {
         // Declare a data source for the AQI data
         var datasource = new atlas.source.DataSource();
@@ -198,7 +209,7 @@ The feature collection created from the AQI data is ready to be shown on a map. 
 
     This code will add a data source to the map that can be used to render the AQI data. This data source is used to create a bubble layer that shows circles on the map. This layer will show one bubble for each feature in the feature collection, using the coordinates on the geometry. The bubbles have a fixed size and opacity, but the color isn't fixed, instead the `['get', 'color']` code tells the map to load the color from a property on the feature called `color`.
 
-    The `updateAQIData` function is added to three map events that are fired when the map is zoomed, moved or the pitch is changed, so every time the user moves the map, the function is called. This function gets the current bounds from the maps camera, so the north-west and south-east coordinates of the map piece that is visible on screen, then passes these bounds to a call to the `api` route, calling into the Python code to load the AQI data. Finally this feature collection is added to the data source.
+    The `updateAQIData` function is added to three map events that are fired when the map is zoomed, moved or the pitch is changed, so every time the user moves the map, the function is called. This function gets the current bounds from the maps camera, so the north-west and south-east coordinates of the map piece that is visible on screen. The function then passes these bounds to a call to the `api` route, calling into the Python code to load the AQI data. Finally this feature collection is added to the data source.
 
 1. Run the Flask app and open it in a browser. You'll see colored circles showing the AQI data.
 
