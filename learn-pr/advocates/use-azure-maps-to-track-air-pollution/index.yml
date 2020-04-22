@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.advocates.use-azure-maps-to-track-air-pollution
+metadata:
+  title: Use Azure Maps to track air pollution
+  description: This module is an introduction to using the Azure Maps Web SDK to visualize pollution data from a third-party air quality API.
+  ms.date: 04/20/2020
+  author: jimbobbennett
+  ms.author: jabenn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use Azure Maps to track air pollution
+summary: This module is an introduction to using the Azure Maps Web SDK to visualize pollution data from a third-party air quality API.
+abstract: |
+  In this module you will:
+  - Learn about Azure Maps and the Maps Web SDK
+  - Create a web page to show a map
+  - Learn about GeoJSON
+  - Get air quality measurements from an API and convert it to GeoJSON
+  - Plot these measurements on the map
+iconUrl: /learn/achievements/advocates/use-azure-maps-to-track-air-pollution.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-maps
+prerequisites: | 
+  - Ability to use Python at a beginner level
+  - Experience using Visual Studio Code, at the beginner level
+  - Python 3.5 or higher installed, and available on your path
+  - Visual Studio Code installed
+  - Python tools for Visual Studio Code installed
+units:
+- learn.advocates.use-azure-maps-to-track-air-pollution.1-introduction
+- learn.advocates.use-azure-maps-to-track-air-pollution.2-create-an-azure-maps-account-using-azure-cli
+- learn.advocates.use-azure-maps-to-track-air-pollution.3-visualize-mapping-data-with-the-azure-maps-web-sdk
+- learn.advocates.use-azure-maps-to-track-air-pollution.4-knowledge-check-azure-maps
+- learn.advocates.use-azure-maps-to-track-air-pollution.5-use-azure-maps-sdk-on-a-web-page
+- learn.advocates.use-azure-maps-to-track-air-pollution.6-describe-spatial-data-with-geojson
+- learn.advocates.use-azure-maps-to-track-air-pollution.7-visualize-pollution-data-on-a-map
+- learn.advocates.use-azure-maps-to-track-air-pollution.8-summary
+
+badge:
+  uid: learn.use-azure-maps-to-track-air-pollution.badge

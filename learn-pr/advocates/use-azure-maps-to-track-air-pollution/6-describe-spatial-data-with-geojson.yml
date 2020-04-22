@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.use-azure-maps-to-track-air-pollution.6-describe-spatial-data-with-geojson
+title: Describe spatial data with GeoJSON
+metadata:
+  title: Describe spatial data with GeoJSON
+  description: In this unit you will learn about the GeoJSON format and how it can be used to describe spatial data for use on a map.
+  author: jimbobbennett
+  ms.author: jabenn
+  ms.date: 04/20/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-describe-spatial-data-with-geojson.md)]

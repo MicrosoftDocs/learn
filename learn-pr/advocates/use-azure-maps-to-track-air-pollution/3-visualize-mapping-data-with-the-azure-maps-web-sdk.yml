@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.use-azure-maps-to-track-air-pollution.3-visualize-mapping-data-with-the-azure-maps-web-sdk
+title: Visualize mapping data with the Azure Maps SDK
+metadata:
+  title: Visualize mapping data with the Azure Maps SDK
+  description: In this unit you will learn about the visualization capabilities of the Azure Maps web SDK
+  author: jimbobbennett
+  ms.author: jabenn
+  ms.date: 04/20/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-visualize-mapping-data-with-the-azure-maps-web-sdk.md)]
