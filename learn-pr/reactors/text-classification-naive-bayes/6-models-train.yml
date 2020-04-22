@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.machine-learning-popular-algorithms.6-models-train
-title: Exploratory statistics and visualization
+uid: learn.reactors.text-classification-naive-bayes.6-models-train
+title: Train models
 metadata:
-  title: Exploratory statistics and visualization
-  description: Exploratory statistics and visualization by using a pandas DataFrame.
+  title: Train models
+  description: Train models TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

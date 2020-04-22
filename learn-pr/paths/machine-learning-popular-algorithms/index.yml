@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.rpaths.machine-learning-popular-algorithms
+uid: learn.paths.machine-learning-popular-algorithms
 metadata:
   title: 'Popular machine learning algorithms: PCA, SVM, and deep learning'
   description: Learn how to use and learn from popular machine learning algorithms, like PCA, SVM, and deep learning.
@@ -11,15 +11,13 @@ metadata:
   show_latex: true
 title: 'Popular machine learning algorithms: PCA, SVM, and deep learning'
 summary: |
-  Welcome to the Popular Machine Learning Algorithms: PCA, SVM, and Deep Learning Learning Path! The content in this learning path pairs with in person workshops that run in Microsoft Reactors and are standalone learning resources (you don't have to come to a workshop to benefit from these modules).
-  Throughout this Learning Path you will be encouraged to test out Python code in Visual Studio Code (VS Code) using the Python extension and Jupyter Notebooks.
+  Welcome to the Learning Path for Popular Machine Learning Algorithms: PCA, SVM, and Deep Learning! The content in this learning path pairs with in-person workshops that run in Microsoft Reactor and are standalone learning resources (you don't have to come to a workshop to benefit from these modules).
+  Throughout this Learning Path, you will be encouraged to test out Python code in Visual Studio Code (VS Code) using the Python extension and Jupyter Notebooks.
 
   In this learning path, you'll:
     - Learn the strengths and limitations of conditional probability and naive Bayes machine learning. 
-    - 
-    -
-
-  Complementary content for Microsoft Reactor Workshops.
+   
+     Complementary content for Microsoft Reactor Workshops.
   
 prerequisites: |
   None.
@@ -34,9 +32,6 @@ products:
 - azure
 - vs-code
 modules:
-- learn.reactors.deep-learning-facial-recognition
-- learn.reactors.principal-component-analysis-food-composition
-- learn.reactors.support-vector-machines-facial-recognition
-- learn.reactors.text-classification-naïve-bayes
+- learn.reactors.text-classification-naive-bayes
 trophy:
-  uid: learn.paths.advanced-machine-learning-models.trophy
+  uid: learn.paths.machine-learning-popular-algorithms.trophy

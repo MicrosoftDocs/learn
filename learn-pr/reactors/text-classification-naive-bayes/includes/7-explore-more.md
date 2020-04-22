@@ -1,4 +1,4 @@
-Beyond detecting spam, we can use ML to explore the SMS data more deeply. To do so, we can use sophisticated, cloud-based cognitive tools such as Microsoft Azure Cognitive Services.
+Beyond detecting spam, we can use ML to explore the SMS data more deeply. To do so, we can use sophisticated, cloud-based cognitive tools such as Azure Cognitive Services.
 
 ## Azure Cognitive Services
 
@@ -55,7 +55,7 @@ for chunk in chunks:
 928
 ```
 
-Two of the things that cognitives services like those provided by Azure offer are language identification and sentiment analysis. Both are relevant for our dataset, so we will prepare our data for both by submitting them as JavaScript Object Notation (JSON) documents. We'll prepare the data for language identification first.
+Two of the things that cognitive services like those provided by Azure offer are language identification and sentiment analysis. Both are relevant for our dataset, so we will prepare our data for both by submitting them as JavaScript Object Notation (JSON) documents. We'll prepare the data for language identification first.
 
 ```Python
 # Prepare the header for the JSON document including your subscription key
@@ -130,7 +130,7 @@ for i in range(len(chunks)):
     chunks[i]['Sentiment'] = np.array(sent_list)
 ```
 
-We now need to reassembled our chunked DataFrame.
+We now need to reassemble our chunked DataFrame.
 
 ```Python
 azure_df = pd.DataFrame(columns=['Index', 'Class', 'Message', 'Language', 'Sentiment'])
@@ -273,7 +273,7 @@ spam    AxesSubplot(0.125,0.125;0.775x0.755)
 Name: Sentiment, dtype: object
 ```
 
-:::image type="content" alt-text="A screenshot of the histogram chart that is created when you run the azure_df.groupby example code." source="../media/azure-df-groupby.png" loc-scope="azure":::
+:::image type="content" alt-text="A screenshot of the histogram chart that is created when you run the azure_df.groupby example code." source="../media/azure-df-groupby.png" loc-scope="Azure":::
 
 
 It is perhaps not too surprising that the sentiments represented in the dataset should be bifurcated: SMS is a medium that captures extremes better than nuanced middle ground. That said, the number of dead-center messages is interesting. The proportion of spam messages right in the middle is also interesting. Let's break the two classes (ham and spam) into separate histograms to get a better look.
@@ -298,7 +298,7 @@ array([<matplotlib.axes._subplots.AxesSubplot object at 0x00000194F6985848>,
 ```
 
 
-:::image type="content" alt-text="A screenshot of the two histogram charts that are created when you run the azure_df.hist example code." source="../media/azure-df-hist.png" loc-scope="azure":::
+:::image type="content" alt-text="A screenshot of the two histogram charts that are created when you run the azure_df.hist example code." source="../media/azure-df-hist.png" loc-scope="Azure":::
 
 ---
 

@@ -16,7 +16,7 @@ abstract:  |
   - Learn the strengths and limitations of conditional probability and naive Bayes machine learning.
   - Use pandas to evaluate a dataset of email messages for spam or ham.
   - Use Matplotlib to generate a word cloud, and then use Natural Language Toolkit and scikit-learn for deeper analysis.
-  - Use the naive Bayes classifier to classified the data in a spam dataset.
+  - Use the naive Bayes classifier to classify the data in a spam dataset.
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
@@ -41,4 +41,4 @@ units:
 - learn.reactors.text-classification-naive-bayes.6-models-train
 - learn.reactors.text-classification-naive-bayes.7-explore-more
 badge:
-  uid: learn.reactors.data-manipulate-clean.badge 
+  uid: learn.reactors.text-classification-naive-bayes.badge 

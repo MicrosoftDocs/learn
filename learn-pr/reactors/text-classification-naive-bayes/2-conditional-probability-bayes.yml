@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.machine-learning-popular-algorithms.2-conditional-probability-bayes
-title: Explore DataFrame information
+uid: learn.reactors.text-classification-naive-bayes.2-conditional-probability-bayes
+title: Conditional probability and Bayes law
 metadata:
-  title: Explore DataFrame information
-  description: Explore DataFrame information.
+  title: Conditional probability and Bayes law
+  description: Conditional probability and Bayes law TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

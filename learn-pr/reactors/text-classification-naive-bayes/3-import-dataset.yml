@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.machine-learning-popular-algorithms.3-import-dataset
-title: Combine datasets
+uid: learn.reactors.text-classification-naive-bayes.3-import-dataset
+title: Import datasets
 metadata:
-  title: Combine datasets
-  description: Combine datasets by using pandas DataFrames.
+  title: Import datasets
+  description: Import datasets TBd.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

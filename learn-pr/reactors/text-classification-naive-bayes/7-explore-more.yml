@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.machine-learning-popular-algorithms.7-explore-more
-title: Exploratory statistics and visualization
+uid: learn.reactors.text-classification-naive-bayes.7-explore-more
+title: Explore more
 metadata:
-  title: Exploratory statistics and visualization
-  description: Exploratory statistics and visualization by using a pandas DataFrame.
+  title: Explore more
+  description: Explore more TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-durationInMinutes: 20
+durationInMinutes: 8
 content: |
   [!include[](includes/7-explore-more.md)]

@@ -20,7 +20,7 @@ $P(A \mid B)=\cfrac{P(B \mid A)P(A)}{P(B)}$
 
 In words, Bayes' Law says that if I know the prior probabilities $P(A)$ and $P(B)$, in addition to the likelihood (even just an assumed likelihood) $P(B \mid A)$, I can compute the posterior probability $P(A \mid B)$. Let's apply this to spam.
 
-:::image type="content" alt-text="A screenshot of an example spam email that has the title Reduce Debt by up to 60 Percent" source="../media/spam.png" loc-scope="azure":::
+:::image type="content" source="../media/spam.png" alt-text="A screenshot of an example spam email that has the title Reduce Debt by up to 60 Percent" loc-scope="Azure":::
 
 In order to use Bayesian probability on spam email messages like this one, consider it (and all other emails, spam or ham) to be bags of words. We don't care about word order or even word meaning. We just want to count the frequency of certain words in spam messages versus the frequency of those same words in valid email messages.
 
@@ -49,7 +49,7 @@ Now, if we assume that the occurrence of the words "debt" and "bills" are indepe
 
 $P({\rm S} \mid {\rm debt, bills}) \propto P({\rm debt} \mid {\rm S})P({\rm bills} \mid {\rm S})P({\rm S})$
 
-We should state here that this assumption of independence is generally not true. Just look at the example spam message above. The probability that "bills" will appears in a spam message containing "debt" is probably quite high. However, assuming that the probabilities of words occurring in our email messages are independent is useful and works surprising well. This assumption of independence is the naive part of the Baysian probabilities that we will use in this section; expressed mathematically, the working assumption that will underpin the ML in this section is that for any collection of $n$ words:
+We should state here that this assumption of independence is generally not true. Just look at the example spam message above. The probability that "bills" will appear in a spam message containing "debt" is probably quite high. However, assuming that the probabilities of words occurring in our email messages are independent is useful and works surprising well. This assumption of independence is the naive part of the Bayesian probabilities that we will use in this section; expressed mathematically, the working assumption that will underpin the ML in this section is that for any collection of $n$ words:
 
 $P({\rm S}\mid {\rm word_1}, {\rm word_2},\ldots, {\rm word}_n)=P({\rm S})P({\rm word_1}\mid {\rm S})P({\rm word_2}\mid {\rm S})\cdots P({\rm word}_n\mid {\rm S})$
 

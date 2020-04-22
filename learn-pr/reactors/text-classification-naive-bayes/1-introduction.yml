@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.data-manipulate-clean.1-introduction
+uid: learn.reactors.text-classification-naive-bayes.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to manipulating and cleaning data for data science.
+  description: Introduction to conditional probability and Bayes law.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
