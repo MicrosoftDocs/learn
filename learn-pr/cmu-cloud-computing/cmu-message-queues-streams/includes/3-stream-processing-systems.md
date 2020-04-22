@@ -42,7 +42,7 @@ The outcome of any stream processing system must be deterministic and repeatable
 
 ### Rule 5: Integrate stored state
 
-Stream processing applications must often combine the present with the past. For example, when recommending an ad to a user, Google must combine the current information about the search term and the current state of the ad market, with past information about the user's click habits. Integrating stored state and streaming data also allows seamless switching, whereby an algorithm can be tested on historical data, and then switched over to the live stream when it works satisfactorily. The data should be stored in the same system address space as the application, perhaps using an embedded database, to allow the use of a uniform language that deals with stored and streaming data.
+Stream processing applications must often combine the present with the past. For example, when recommending an ad to a user, a search engine must combine the current information about the search term and the current state of the ad market, with past information about the user's click habits. Integrating stored state and streaming data also allows seamless switching, whereby an algorithm can be tested on historical data, and then switched over to the live stream when it works satisfactorily. The data should be stored in the same system address space as the application, perhaps using an embedded database, to allow the use of a uniform language that deals with stored and streaming data.
 
 ### Rule 6: Guarantee high availability
 
