@@ -69,6 +69,8 @@ const host = "api.cognitive.microsoft.com";
 const path = "/bing/v7.0/images/search";
 ```
 
+TODO: add license query string to req
+
 ```javascript
 var searchAndSaveImages = (search) => {
   console.log("Searching images for: " + search);
@@ -139,9 +141,11 @@ var searchAndSaveImages = (search) => {
 };
 ```
 
+Create main method
+
 ```javascript
 let main = () => {
-  //yoga pose search term list
+  //bird species search term list
   var searchTermList = ["childs", "tree"];
   //loop search terms
   searchTermList.forEach((term) => {
