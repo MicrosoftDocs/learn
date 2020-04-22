@@ -37,7 +37,7 @@ The Microsoft comprehensive cloud scale analytics solution covers all stages of 
 
 ### How is cloud scale analytics used?
 
-Anheuser-Busch InBev (AB InBev) isn’t just a beverage company. They’re a technology company, pushing the innovation envelope. AB InBev is increasing agility by shifting its legacy data warehouses to an Azure PaaS environment, using Azure SQL Data Warehouse. As a result, AB InBev can drive greater insights through data and is well on track to meet its consolidation goal.
+Anheuser-Busch InBev (AB InBev) isn’t just a beverage company. They’re a technology company, pushing the innovation envelope. AB InBev is increasing agility by shifting its legacy data warehouses to an Azure PaaS environment, using Azure Synapse Analytics. As a result, AB InBev can drive greater insights through data and is well on track to meet its consolidation goal.
 
 
 |  |  |
@@ -46,4 +46,4 @@ Anheuser-Busch InBev (AB InBev) isn’t just a beverage company. They’re a tec
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NPWx]
 
-AB InBev continues to drive growth and innovation across all dimensions of its global brewing business with Azure products and services including Azure SQL Data Warehouse and Azure Data Lake Storage.
+AB InBev continues to drive growth and innovation across all dimensions of its global brewing business with Azure products and services including Azure Synapse Analytics and Azure Data Lake Storage.
