@@ -85,6 +85,19 @@
                 "dest": "modules"
             },
             {
+                "src": "ccc-commercial-marketplace",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "cmu-cloud-admin",
                 "files": [
                     "**/*.yml",
