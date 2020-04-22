@@ -40,6 +40,6 @@ Applications that handle IoT Hub events should follow these suggested practices:
 
 * Messages can arrive out of order or after a delay. Use the etag field to understand if your information about objects is up to date for device created or device deleted events.
 
-## Next Steps
+## Next steps
 
 Now we have a better understanding of what Event Grid is and how IoT Hub and Event Grid can be integrated, the next unit will walk through connecting the dots between the IoT Hub, Event Grid, and the email-sending Logic App.
