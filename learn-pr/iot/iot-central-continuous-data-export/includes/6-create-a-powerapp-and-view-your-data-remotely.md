@@ -1,1 +1,1 @@
-TBD
+Let's go over some of the concepts behind Microsoft PowerApps.

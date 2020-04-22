@@ -1,1 +1,1 @@
-TBD
+In this unit, we build a Microsoft PowerApp, importing data from our Azure Blob storage.
