@@ -31,7 +31,7 @@ quiz:
       isCorrect: false
       explanation: "You don't need to configure a security principal for ADE."
     - content: "Create an access policy to allow template deployment."
-      isCorrect: true
+      isCorrect: false
       explanation: "The template deployment access policy allows Azure Resource Manager to get secrets from the key vault when the key vault is referenced in a template deployment."
     - content: "Set the key vault access policy to support disk encryption."
       isCorrect: true
