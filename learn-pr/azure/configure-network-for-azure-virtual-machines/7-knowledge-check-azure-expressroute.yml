@@ -33,7 +33,7 @@ quiz:
     - content: "-GatewayType Vpn, -VpnType RouteBased, and a -GatewaySku"
       isCorrect: true
       explanation: "Use the PowerShell cmdlet New-AzVirtualNetworkGateway where you use parameters -GatewayType Vpn and -VpnType RouteBased. Also set the -GatewaySku to the SKU that meets your organization's network requirements."
-    - content: "-Subnet GatewaySubnet -GatewayType Vpn"
+    - content: "-Subnet GatewaySubnet and -GatewayType Vpn"
       isCorrect: false
       explanation: "You must create a gateway subnet with the name GatewaySubnet in order for the VPN gateway to function properly. But when you create the VPN gateway with the cmdlet New-AzVirtualNetworkGateway, you specify the -IpConfigurations for that subnet."
   - content: 'Which peering configuration would you use for your Express route circuit where you need to allow private connections to an Azure SQL database on a public IP address?'
