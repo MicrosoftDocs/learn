@@ -4,10 +4,10 @@
 
 There are many models of quantum computing. If you have viewed the *Get Started SDK* module, you'll have gained familiarity with the Gate Model, in which we define quantum programs by writing operations that make use of quantum gates. 
 
-Quantum Inspired Optimization (QIO) is based on a different computational model, namely adiabatic quantum computation. This approach uses a concept from quantum physics known as the adiabtic theorem which works as follows:
+Quantum Inspired Optimization (QIO) is based on a different computational model, namely adiabatic quantum computation. This approach uses a concept from quantum physics known as the adiabatic theorem which works as follows:
 - Begin by preparing a system and initializing it to its lowest energy state. For a simple system, one which we understand everything about, this is easy to construct.
 - Next, slowly transform that system into a more complex one, one which describes the problem we are trying to solve.
-The adiabatic theorem states that, as long as this transformation moves slowly enough, the system will stay in that lowest configuration. So at the end, we've solved our problem.
+The adiabatic theorem states that, as long as this transformation moves slowly enough, the system will stay in that lowest energy configuration. So at the end, we've solved our problem.
 
 Adiabatic quantum computation has been well-studied, and as a result, a number of techniques have been developed to simulate this type of physics.
 These classical algorithms, which we can run on computers today, are also known as quantum inspired approaches.
