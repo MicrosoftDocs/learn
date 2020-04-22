@@ -1,8 +1,13 @@
-In this unit you will retrieve air quality data frrom an API and convert it to GeoJSON ready to show on the map as a bubble layer.
+In this unit, you'll retrieve air quality data from an API and convert it to GeoJSON ready to show on the map as a bubble layer.
 
 ## Get pollution data
 
-The [World Air Quality Index](https://waqi.info) aggregates air quality data from around the world, and makes this available as a free API you can use in your app. The data is available as the current AQI (Air Quality Index) reading for multiple recording stations around the world. When you request data, you can do it for a single location to get the nearest reading for a city or location, or you can request for all the stations within a rectangle defined using the north-east and south-west coordinates of the rectangle. To plot as much data as possible on the map, the visible map boundary can be used to request data.
+The [World Air Quality Index](https://waqi.info) aggregates air quality data from around the world, and makes this data available as a free API you can use in your app. The data is available as the current AQI (Air Quality Index) reading for multiple recording stations around the world. When you request data, you can do it for either:
+
+* A single location to get the nearest reading for a city or location
+* All the stations within a rectangle defined using the north-east and south-west coordinates of the rectangle.
+
+To plot as much data as possible on the map, the visible map bounds can be used to request data for all the stations within a rectangle defined by those bounds.
 
 ### AQI data format
 
@@ -27,14 +32,14 @@ The AQI data is in the following JSON format:
 }
 ```
 
-The `data` property contains an array of measurements for all the measuring stations requested. The measurements have a location as longitude and latitude, as well as the AQI measurement. This data as is cannot be plotted on the map, it needs to be first converted to a GeoJSON feature collection.
+The `data` property contains an array of measurements for all the measuring stations requested. The measurements have a location as longitude and latitude, as well as the AQI measurement. This data can't be plotted on the map as is, it first needs to be converted to a GeoJSON feature collection.
 
 The following steps will convert the data to a feature collection, and these steps will be implemented in code later in this unit.
 
 * Create a blank feature collection
 * For each item in the `data` array, create a new feature:
   * The `geometry` of the feature is a `Point`, with the `coordinates` set to the `lon` and `lat`
-  * Rather than plot the AQI measurement directly, it is easier to visualize with a colored bubble, so convert the AQI measurement to a color value as an RGB hex string and add this as a property of the feature
+  * Rather than plot the AQI measurement directly, it is easier to visualize with a colored bubble, so convert the AQI measurement to a color value as an RGB hex string, and add this to the features property array
 
 For example, for the data above, the GeoJSON would be:
 
@@ -57,7 +62,7 @@ For example, for the data above, the GeoJSON would be:
 
 ### Get an API token
 
-Before you can use their API, you will need to register for an API key, and you can do this from their [Data Platform page](https://aqicn.org/data-platform/token/#/). You will need to provide an email address, and verify the address to get the token.
+Before you can use their API, you'll need to register for an API key from the [WAQI Data Platform page](https://aqicn.org/data-platform/token/#/). You'll need to provide and verify an email address to get the token.
 
 Once you have the API token, it needs to be added to the environment variables ready for the app to use
 
@@ -136,11 +141,11 @@ The Flask app will need to call the API to load the data for the visible portion
         return json.dumps(load_aqi_data(bounds[0], bounds[1], bounds[2], bounds[3]))
     ```
 
-This code implements an API call inside the Flask app that will load the AQI data from the API for a set of coordinates passed in, convert it to a feature collection and return it as a JSON string. This can then be called from the web page.
+This code implements an API call inside the Flask app that will load the AQI data from the API for a set of coordinates passed in. The AQI data will then be converted to a feature collection and returned as a JSON string. This API can then be called from the web page.
 
 ### Show the air quality data on the map
 
-The feature collection created from the AQI data is ready to be shown on a map. Azure Maps has data sources that is uses to plot layers, and these can be created from GeoJSON feature collections.
+The feature collection created from the AQI data is ready to be shown on a map. Azure Maps has data sources that are used to plot layers, and these data sources can be created from GeoJSON feature collections.
 
 1. Open the `home.html` file in the `templates` directory
 
@@ -191,12 +196,12 @@ The feature collection created from the AQI data is ready to be shown on a map. 
     })
     ```
 
-    This code will add a data source to the map that can be used to render the AQI data. This data source is used to create a bubble layer that shows circles on the map. This layer will show one bubble for each feature in the feature collection, using the coordinates on the geometry. The bubbles have a fixed size and opacity, but the color is not fixed, instead the `['get', 'color']` code tells the map to load the color from a property on the feature called `color`.
+    This code will add a data source to the map that can be used to render the AQI data. This data source is used to create a bubble layer that shows circles on the map. This layer will show one bubble for each feature in the feature collection, using the coordinates on the geometry. The bubbles have a fixed size and opacity, but the color isn't fixed, instead the `['get', 'color']` code tells the map to load the color from a property on the feature called `color`.
 
-    The `updateAQIData` function is added to three map events that are fired when the map is zoomed, moved or the pitch is changed, so every time the user moves the map, the function is called. This function gets the current bounds from the maps camera, so the north-west and south-east coordinates of the map piece that is visible on screen, then passes this to a call to the `api` route, calling into the Python code to load the AQI data. Finally this feature collection is added to the data source.
+    The `updateAQIData` function is added to three map events that are fired when the map is zoomed, moved or the pitch is changed, so every time the user moves the map, the function is called. This function gets the current bounds from the maps camera, so the north-west and south-east coordinates of the map piece that is visible on screen, then passes these bounds to a call to the `api` route, calling into the Python code to load the AQI data. Finally this feature collection is added to the data source.
 
-1. Run the Flask app and open it in a browser. You will see colored circles showing the AQI data.
+1. Run the Flask app and open it in a browser. You'll see colored circles showing the AQI data.
 
     ![A map showing air quality as colored circles](../media/final-output.png)
 
-    Navigate around the map and you will see the bubbles update to match the area you are viewing.
+    Navigate around the map and you'll see the bubbles update to match the area you are viewing.

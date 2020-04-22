@@ -21,13 +21,13 @@ quiz:
     choices:  
     - content: 'Makes it round'
       isCorrect: false
-      explanation: The Spherical Mercator projection coordinate system stretches the map at both the North and South poles to make a square map that can be rendered on a flat screen
+      explanation: The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This makes a square map that can be rendered on a flat screen
     - content: 'Colors it in green and blue'
       isCorrect: false
-      explanation: The Spherical Mercator projection coordinate system stretches the map at both the North and South poles to make a square map that can be rendered on a flat screen
+      explanation: The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This makes a square map that can be rendered on a flat screen
     - content: 'Stretches the map at the poles'
       isCorrect: true
-      explanation: Correct. The Spherical Mercator projection coordinate system stretches the map at both the North and South poles to make a square map that can be rendered on a flat screen
+      explanation: Correct. The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This makes a square map that can be rendered on a flat screen
     
   - content: 'Heat map layers show...'
     choices:
@@ -37,6 +37,6 @@ quiz:
     - content: 'The current temperature of the planet'
       isCorrect: false
       explanation: Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map.
-    - content: 'The hight above sea level'
+    - content: 'The height above sea level'
       isCorrect: false
       explanation: Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map.
