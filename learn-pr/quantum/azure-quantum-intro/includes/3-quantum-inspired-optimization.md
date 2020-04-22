@@ -46,11 +46,11 @@ This kind of problem can be easily solved with techniques such as gradient desce
 - **Global minimum**: The lowest point in the optimization landscape.
 - **Local minimum**: A rugged landscape may consist of multiple valleys. Each of these valleys will have a lowest point, which are called the local minima. One of these points will be the lowest overall, and is the global minimum.
 
-Advanced methods such as QIO offer no advantage on these easy problems. Instead, they should be applied to problems where the landscape is rugged, for example:
+Advanced methods such as QIO offer no advantage on these easy problems. Instead, they should be applied to problems where the landscape is rugged, featuring many hills and valleys for example:
 
 ![A plot of an optimization landscape that shows many peaks and valleys](../media/plot_rugged.png)
 
-In these scenarios, one of the greatest challenges is avoiding getting "stuck" in the sub-optimal local minima. 
+In these scenarios, one of the greatest challenges is avoiding getting "stuck" at any of the sub-optimal local minima. 
 It is these cases where QIO can outperform other techniques, due to the behaviour of the algorithms which we will detail in the following section.
 
 So far we have discussed smooth and rugged objective functions, but what if there is no structure at all? In these cases, where the solutions are completely random, then no algorithm can improve upon brute force search.
@@ -58,7 +58,7 @@ So far we have discussed smooth and rugged objective functions, but what if ther
 ![A plot of an optimization landscape that shows points scattered randomly](../media/plot_random.png)
 
 To summarize the general conditions where QIO performs well:
-- Optimization landscapes should be ruggeed but structured. Such landscapes arise frequently in practice, for example in traffic optimization or solving satisfiability problems.
+- Optimization landscapes should be rugged but structured. Such landscapes arise frequently in practice, for example in traffic optimization or solving satisfiability problems.
 - If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with over 100 variables, QIO has achieved orders of magnitude improvement over previously used methods.
 
 # Explain general ideas of optimization
