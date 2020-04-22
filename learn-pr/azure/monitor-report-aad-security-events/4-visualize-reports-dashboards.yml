@@ -2,7 +2,7 @@
 uid: learn.monitor-report-aad-security-events.4-visualize-reports-dashboards
 metadata:
   title: Set up reports and dashboards to visualize the information
-  description: Set up reports and dashboards to visualize the information
+  description: Set up reports and dashboards to visualize the information.
   ms.date: 03/27/2020
   author: jboeshart
   ms.author: jaboes
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of these is a valid pre-built view you can download and install in to your Log Analytics workspace?'
+  - content: 'Which one of the following is a valid prebuilt view that you can download and install in your Log Analytics workspace?'
     choices:
     - content: Audit Events
       isCorrect: false
-      explanation: There are only two downloadable pre-built views, Audit events isn't one of them.
+      explanation: There are only two downloadable prebuilt views. Audit Events isn't one of them.
     - content: Azure AD Account Auditing Events
       isCorrect: false
-      explanation: There are only two downloadable pre-built views, Azure AD Account Auditing events isn't one of them.
-    - content: Sign-in Events
+      explanation: There are only two downloadable prebuilt views. Azure AD Account Auditing Events isn't one of them.
+    - content: Sign-ins Events
       isCorrect: true
-      explanation: Sign-in and Azure AD Account Provisioning Events are the two pre-built views you can download and install in to you Log Analytics workspace.
-  - content: 'When exporting reports, which one of the following is not a supported export type?'
+      explanation: Sign-ins Events and Azure AD Account Provisioning Events are the two prebuilt views you can download and install in your Log Analytics workspace.
+  - content: 'When you export reports, which one of the following is not a supported export type?'
     choices:
     - content: Excel
       isCorrect: false
-      explanation: You can export you report data as a CSV file that can be imported into Excel.`
+      explanation: You can export your report data as a CSV file to Excel.
     - content: PowerPoint
       isCorrect: true
-      explanation: You can export reports either as Excel or Power BI
+      explanation: You can export your report data to either Excel or Power BI.
     - content: Power BI
       isCorrect: false
-      explanation: You can export your report into Power BI.
+      explanation: You can export your report data to Power BI.
