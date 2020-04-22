@@ -52,7 +52,7 @@ The different layer types include:
 
 - Bubble layer
 
-    Bubble layers put circular bubbles at locations on the map. Thw bubbles can be configured to show the data they are representing, such as setting the bubble size or color. For example, during a pandemic different bubble sizes could show the number of people who have contracted an illness, with the color reflecting the mortality rate.
+    Bubble layers put circular bubbles at locations on the map. The bubbles can be configured to show the data they are representing, such as setting the bubble size or color. For example, during a pandemic different bubble sizes could show the number of people who have contracted an illness, with the color reflecting the mortality rate.
 
 - Heat map
 
