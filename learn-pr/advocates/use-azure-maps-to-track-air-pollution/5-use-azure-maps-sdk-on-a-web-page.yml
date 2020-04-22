@@ -9,6 +9,6 @@ metadata:
   ms.date: 04/20/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/5-use-azure-maps-sdk-on-a-web-page.md)]
