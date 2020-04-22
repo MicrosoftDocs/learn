@@ -14,9 +14,9 @@ These classical algorithms, which we can run on computers today, are also known 
 
 ## Why is QIO useful?
 
-Optimization problems are commonplace in industry, from manufacturing, to finance, to transportation and more. These problems involve searching over all the feasible solutions to find the best, often lowest cost, solution. Adiabatic quantum algorithms are naturally suited to solving optimization problems of this kind.
+Optimization problems are commonplace in industry, from manufacturing, to finance, to transportation and much more. These problems involve searching over all the feasible solutions to find the best, often lowest cost, solution. Adiabatic quantum algorithms are naturally suited to solving optimization problems of this kind.
 
-In the long term, these adiabatic quantum algorithms can be run on quantum computers, once they are of a large enough scale and quality. You can learn more about building a scalable quantum computer in this blog post. 
+In the long term, these adiabatic quantum algorithms can be run on quantum computers, once they are of a large enough scale and quality. You can learn more about building a scalable quantum computer in [this blog post](https://cloudblogs.microsoft.com/quantum/2018/05/16/achieving-scalability-in-quantum-computing/). 
 
 Whilst this quantum hardware is being developed, we can instead emulate these algorithms using quantum inspired techniques today, and often see improvements in performance over other state of the art classical optimization techniques.  
 
