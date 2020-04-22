@@ -86,7 +86,7 @@ Overall, our model is good for spam detection, but our recall score (the proport
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Use the scikit-learn `confusion_matrix()` function to better understand the specific performance of the model. Get help [interpreting the confusion matrix](https://wikipedia.org/wiki/Confusion_matrix)].
+Use the scikit-learn `confusion_matrix()` function to better understand the specific performance of the model. Get help [interpreting the confusion matrix](https://wikipedia.org/wiki/Confusion_matrix).
 
 Possible exercise solution:
 
