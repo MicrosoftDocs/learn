@@ -38,6 +38,7 @@ Let's begin with some common terminology:
 Together, these are often referred to as an optimization landscape. 
 In the case of a problem involving two continuous variables, the analogy to a landscape is quite direct. 
 For example, here is a plot of an objective function that looks like a single smooth valley.
+
 ![A plot of an optimization landscape that looks like a single smooth valley](../media/plot_simple.png)
 
 # Explain general ideas of optimization
