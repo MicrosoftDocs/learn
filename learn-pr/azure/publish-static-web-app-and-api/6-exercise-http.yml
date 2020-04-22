@@ -8,7 +8,6 @@ metadata:
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
 title: Exercise - Create the HTTP POST, PUT, and DELETE functions
 durationInMinutes: 1
 content: |

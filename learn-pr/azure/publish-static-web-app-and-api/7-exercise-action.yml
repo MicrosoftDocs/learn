@@ -8,7 +8,6 @@ metadata:
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
 title: Exercise - Publish the API with GitHub Actions
 durationInMinutes: 1
 content: |
