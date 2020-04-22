@@ -14,15 +14,16 @@ These classical algorithms, which we can run on computers today, are also known 
 
 ## Why is QIO useful?
 
-In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
+Optimization problems are commonplace in industry, from manufacturing, to finance, to transportation and more. These problems involve searching over all the feasible solutions to find the best, often lowest cost, solution. Adiabatic quantum algorithms are naturally suited to solving optimization problems of this kind.
 
+In the long term, these adiabatic quantum algorithms can be run on quantum computers, once they are of a large enough scale and quality. You can learn more about building a scalable quantum computer in this blog post. 
 
-Optimization problems are ubiquitous in industry. Examples include traffic routing, flight scheduling, toolpath optimization, portfolio optimization, risk management, power grid management, computer aided design, verification and validation, satisfiability (constraint satisfaction) problems and many others. Furthermore, optimization algorithms are at the core of many machine learning methods. A number of sophisticated optimization algorithms have been developed that can solve certain special classes of optimization problems very efficiently. However, many real-world optimization problems remain intractable despite the remarkable advancement in both algorithms and computing power over the past decades. Quantum inspired optimization refers to a class of algorithms originally designed to study quantum physics problems, applied to hard optimization problems across industry. They have been demonstrated to be disruptive, but their potential remains vastly untapped. 
+Whilst this quantum hardware is being developed, we can instead emulate these algorithms using quantum inspired techniques today, and often see improvements in performance over other state of the art classical optimization techniques.  
 
-Quantum algorithms have been proposed for classes of optimization problems whose solution has resisted conventional approaches. In particular, adiabatic quantum algorithms are a class of methods which are naturally suited to solving optimization problems and which can be run either on universal quantum computers (once they are built) or on special purpose quantum annealers(which are now commercially available). One intuition behind adiabatic quantum algorithms is that they can use a phenomenon called quantum tunneling to escape local optima that trap more conventional optimization techniques. Recently, it has been discovered that classical algorithms can be devised which mimic the effects of quantum tunneling and in some cases dramatically outperform both quantum annealers and state of the art classical optimization software. The new field of study that has been sparked by this discovery is known as Quantum-Inspired Optimization (QIO).
+Applying QIO to real-world problems might offer business new insights, or help lower costs by making their processes more efficient. 
 
 # Explain general ideas of optimization
-
+In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
 objective function, cost function, gradient descent
 finding global minimum 
 
