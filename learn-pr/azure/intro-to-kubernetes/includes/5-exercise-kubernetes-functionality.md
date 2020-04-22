@@ -83,7 +83,7 @@ We're now ready to install add-ons on the cluster.
 
 You use Multipass to run mikro8s on macOS. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
 
-1. You have two options to install Multipass on macOS. Either download and install the latest release of Multipass for macOS from [GitHub] (https://github.com/canonical/multipass/releases), or use Homebrew to install Multipass with the `brew cask install multipass` command.
+1. You have two options to install Multipass on macOS. Either download and install the latest release of Multipass for macOS from [GitHub](https://github.com/canonical/multipass/releases), or use Homebrew to install Multipass with the `brew cask install multipass` command.
 
     ```bash
     brew cask install multipass
