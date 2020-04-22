@@ -1,13 +1,14 @@
-## Start here
+## 2- Exercise - Get started
 
 Generalized content for all JavaScript frameworks. Always shown.
 
-- Generate your repo
-- Johnpapa/the-template-repo/generate -> this is how they create the starting repo for them
-- Git clone it
-- Npm install
-- Npm start
-- See your app , sans api
+- Generalized content for all JavaScript frameworks. Always shown.
+- Generate your repo https://github.com/MicrosoftDocs/mslearn-staticwebapp/generate
+- Name it
+- Clone it
+- npm install
+- npm start
+- See your app locally
 
 ::: zone pivot="angular"
 

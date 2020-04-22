@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.azure.publish-static-web-app-and-api
 metadata:
-  title: Publish your first static web app with Angular, React, Svelte or Vue and Azure Functions
-  description: Publish your first static web app with Angular, React, Svelte or Vue and Azure Functions
+  title: Publish your first Azure Static Web App with Angular, React, Svelte or Vue and Azure Functions
+  description: Publish your first Azure Static Web App with Angular, React, Svelte or Vue and Azure Functions
   ms.date: 05/08/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Publish your first static web app with Angular, React, Svelte or Vue and Azure Functions
-summary: Publish your first static web app with Angular, React, Svelte or Vue and Azure Functions
+title: Publish your first Azure Static Web App with Angular, React, Svelte or Vue and Azure Functions
+summary: Publish your first Azure Static Web App with Angular, React, Svelte or Vue and Azure Functions
 abstract: |
   In this module, you will:
     - Choose an existing web app project with either Angular, React, Svelte or Vue.
@@ -17,11 +17,11 @@ abstract: |
     - Run the application locally.
     - Publish a web app to a new Azure Static Web App.
 prerequisites: |
-  - Must have some knowledge of JavaScript
-  - Must have some familiarity with one of Angular, React, Svelte, or Vue
-  - Must have some familiarity with Azure Functions
-  - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
-  - Must have the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
+  - Beginner-level experience developing JavaScript applications with Node.js
+  - Familiarity with one of Angular, React, Svelte, or Vue
+  - Beginner-level experience with Azure Functions
+  - [Visual Studio Code](https://code.visualstudio.com/) installed
+  - The [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
   - beginner
@@ -35,13 +35,12 @@ products:
 units:
   - learn.azure.publish-static-web-app-and-api.1-introduction
   - learn.azure.publish-static-web-app-and-api.2-exercise-get-started
-  - learn.azure.publish-static-web-app-and-api.3-static-web-apps
-  - learn.azure.publish-static-web-app-and-api.4-exercise-connect
-  - learn.azure.publish-static-web-app-and-api.5-design-api
-  - learn.azure.publish-static-web-app-and-api.6-exercise-func-app
-  - learn.azure.publish-static-web-app-and-api.7-exercise-http
-  - learn.azure.publish-static-web-app-and-api.8-exercise-action
-  - learn.azure.publish-static-web-app-and-api.9-knowledge-check
-  - learn.azure.publish-static-web-app-and-api.10-summary
+  - learn.azure.publish-static-web-app-and-api.3-exercise-static-web-apps
+  - learn.azure.publish-static-web-app-and-api.4-build-api
+  - learn.azure.publish-static-web-app-and-api.5-exercise-func-app
+  - learn.azure.publish-static-web-app-and-api.6-exercise-http
+  - learn.azure.publish-static-web-app-and-api.7-exercise-action
+  - learn.azure.publish-static-web-app-and-api.8-knowledge-check
+  - learn.azure.publish-static-web-app-and-api.9-summary
 badge:
   uid: learn.azure.publish-static-web-app-and-api.badge

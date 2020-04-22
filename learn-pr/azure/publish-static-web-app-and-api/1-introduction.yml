@@ -2,7 +2,7 @@
 uid: learn.azure.publish-static-web-app-and-api.1-introduction
 metadata:
   title: Introduction
-  description: Publish a static web app
+  description: Publish an Azure Static Web App
   ms.date: 05/08/2020
   author: johnpapa
   ms.author: jopapa

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-static-web-app-and-api.4-exercise-connect
+uid: learn.azure.publish-static-web-app-and-api.3-exercise-static-web-apps
 metadata:
   title: Exercise - Create an Azure Static Web App
   description: Exercise - Create an Azure Static Web App
@@ -12,4 +12,4 @@ azureSandbox: true
 title: Exercise - Create an Azure Static Web App
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-exercise-connect.md)]
+  [!include[](includes/3-exercise-static-web-apps.md)]
