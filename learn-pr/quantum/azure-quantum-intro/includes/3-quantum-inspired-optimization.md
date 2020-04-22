@@ -57,6 +57,10 @@ So far we have discussed smooth and rugged objective functions, but what if ther
 
 ![A plot of an optimization landscape that shows points scattered randomly](../media/plot_random.png)
 
+To summarize the general conditions where QIO performs well:
+- Optimization landscapes should be ruggeed but structured. Such landscapes arise frequently in practice, for example in traffic optimization or solving satisfiability problems.
+- If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with over 100 variables, QIO has achieved orders of magnitude improvement over previously used methods.
+
 # Explain general ideas of optimization
 In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
 objective function, cost function, gradient descent
