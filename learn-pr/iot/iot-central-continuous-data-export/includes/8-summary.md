@@ -20,6 +20,8 @@ Take your interest further with:
 
 - [Azure IoT Central Documentation](https://docs.microsoft.com/azure/iot-central/)
 - [Build workflows with the IoT Central connector in Microsoft Flow](https://docs.microsoft.com/azure/iot-central/howto-add-microsoft-flow)
+- [Azure Service Bus](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)
+- [Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about)
 
 And look out for additional Learn modules covering IoT Central.
 

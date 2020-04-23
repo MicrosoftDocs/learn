@@ -71,3 +71,18 @@ quiz:
     - content: 'Blob storage, Service Bus, and Event Hubs, all receive data in the JSON format.'
       isCorrect: false
       explanation: This statement is true, the JSON format is extensively used within Azure IoT.
+
+  - content: 'Which of the following statements is false?'
+    choices: 
+    - content: 'Data sent to Azure Blob storage can be routed to Azure Machine Learning, to train the learning models.'
+      isCorrect: false
+      explanation: This statement is true.
+    - content: 'Azure Service Bus is a good service for enterprise-level message routing.'
+      isCorrect: false
+      explanation: This statement is true.
+    - content: 'When an IoT Central data export service is created, data is automatically routed to it. '
+      isCorrect: true
+      explanation: This is not the case, the data export has to be set running manually.
+    - content: 'Event Hubs are a good gateway for an event pipeline.'
+      isCorrect: false
+      explanation: This statement is true.  

@@ -4,11 +4,11 @@ Data export from IoT Central can be sent to three services. Let's take a quick l
 
 ## Azure Blob storage
 
-Blob storage is the go-to storage for Azure services. It is not as sophisticated, or costly, as the Cosmos DB service. Blob storage is ideal for logging, archiving, and general purpose storage.
+Blob storage is the go-to storage for Azure services. It is not as sophisticated, or costly, as the Cosmos database service. Blob storage is ideal for logging, archiving, and general purpose storage.
 
-One of the key differences between continuous data to Blob storage, and the other two services, is that the data is sent once every minute. Continuous data to Azure Service Bus, or Azure Event Hubs, is near real-time. This makes blob storage a less suitable route for warm path data analysis, if responding well within a minute is important.
+One of the key differences between sending continuous data to Blob storage, and the other two services, is that the data is sent once every minute. Continuous data to Azure Service Bus, or Azure Event Hubs, is near real-time. This makes blob storage a less suitable route for warm path data analysis, if responding within a minute is important.
 
-Data sent to blob storage can become the input to Azure Machine Learning, training the models. Alternatively, the data could be sent to Microsoft Power Bi, or PowerApps, perhaps for longer-term trend analysis, or to be visualized in charts or graphs.
+Data sent to blob storage can become the input to Azure Machine Learning, training the learning models. Alternatively, the data could be sent to Microsoft Power Bi, or PowerApps, perhaps for longer-term trend analysis, or to be visualized in charts or graphs.
 
 As blob storage is the cheaper, simpler, option, we will implement it in this module.
 
@@ -24,13 +24,15 @@ Common applications of the Service Bus include standard business communications,
 
 We will not be implementing a Service Bus in this module. The key takeaway is that Service Bus is an enterprise-level message routing service.
 
+![Artwork as a metaphor for a network of communications](../media/continuous-data-network.png)
+
 ## Azure Event Hubs
 
 Event Hubs are a big-data streaming platform. The range of applications that it is designed for is similar to that of an Azure IoT Hub, except that, for IoT devices, the recommended solution is the IoT Hub. An Azure Event Hub however, may well be part of a larger solution, and you may want your IoT data exported to it.
 
 Event Hubs can handle millions of events per second. Back-end processes may well handle real-time analytics, storage, anomaly detection, analytics pipelines, live dashboarding, transaction processing, and many other processes.
 
-Event Hubs represents the "front door" for an event pipeline, often called an event ingestor in solution architectures.
+Event Hubs are a gateway for an event pipeline, often called an event ingestor in solution architectures.
 
 We will not be implementing an Event Hub in this module. However, if you want to know more, follow the links on the Summary page.
 
@@ -38,7 +40,6 @@ We will not be implementing an Event Hub in this module. However, if you want to
 
 When creating the data export service from IoT Central, you can define one of the three services described above. You will be given the option of selecting any from within your subscription. However, you can send data to any of these services outside of your subscription, using a connection string.
 
-Another tip is that you must set the continuous data service running. If your IoT devices are sending telemetry data, and your data export is _not_ running, the telemetry data is lost. Only when the data export service is started, will data be exported. The advice is, set it running early! Capture that data.
+Another tip is that you must manually set the continuous data service running. If your IoT devices are sending telemetry data, and your data export is _not_ running, the telemetry data is lost. Only when the data export service is started, will data be exported. The advice is, set it running early! Capture that data.
 
 Let's now put some of this theory to practice, and set data export in motion.
-
