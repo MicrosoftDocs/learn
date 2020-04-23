@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.learn.authoring-ARM-Templates.13-Summary
-title: Introduction
+title: Authoring Azure Resource Manager Templates - Summary
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Authoring Azure Resource Manager Templates - Summary
+  description: Summary
   ms.date: 09/24/2018
   author: pierreroman
   ms.author: pierrer
