@@ -12,15 +12,13 @@ Designing for reliability also focuses on recovery from data loss and from large
 
 Including high availability and recoverability in the design of your architecture protects your business from financial losses resulting from downtime and lost data. They ensure your reputation isn't negatively impacted by a loss of trust from your customers.
 
-## Principles of reliability
-
 Architecting for reliability ensures that your application can meet the commitments you make to your customers. This includes ensuring your systems are *available* to end users and can *recover* from any failures.
 
-### Availability
+### Build a highly available architecture
 
 For availability, identify the service-level agreement (SLA) you're committing to. Examine the potential high-availability capabilities of your application relative to your SLA, and identify where you have proper coverage and where you'll need to make improvements. The goal is to add redundancy to components of the architecture so that you are less likely to experience an outage. Examples of high-availability design components include clustering and load balancing. Clustering replaces a single VM with a set of coordinated VMs. When one VM fails or becomes unreachable, services can fail over to another one that can service the requests. Load balancing spreads requests across many instances of a service, detecting failed instances and preventing requests from being routed to them.
 
-### Recoverability
+### Build an architecture that can recover from failure
 
 For recoverability, perform an analysis that examines possible data loss and major downtime scenarios. The analysis should include an exploration of recovery strategies and the cost-benefit tradeoff for each. This exercise will give you important insight into your organization's priorities and help clarify the role of your application. The results should include the application's recovery point objective (RPO) and recovery time objective (RTO).
 

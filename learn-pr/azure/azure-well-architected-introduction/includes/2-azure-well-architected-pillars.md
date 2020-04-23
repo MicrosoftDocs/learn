@@ -44,6 +44,15 @@ You must think about security throughout the entire lifecycle of your applicatio
 
 ![An illustration showing the types of security threats and attacks that might affect your data in the cloud.](../media/security.png)
 
+## General design principles
+
+In addition to each of these pillars, there are some consistent design principles to carry through your architecture.
+
+- **Enable architectural evolution**: No architecture is static. Allow for evolution of your architecture by taking advantage of new services, tools, and technologies when available.
+- **Use data to make decisions**: Collect data, analyze it, and use it to make decisions surrounding your architecture. From cost data, to performance, to user load, using data will guide you to make the right choices in your environment.
+- **Educate and enable**: Cloud technology evolves quickly. Educate your development, operations, and business teams to help enable them to make the right decisions and build solutions to solve business problems. Document and share configuration, decisions, and best practices in your organization.
+- **Automate**: Automation of manual activities can reduce operational costs, minimize error introduced by manual steps, and provides consistency between environments.
+
 ## Shared responsibility
 
 Moving to the cloud introduces a model of shared responsibility. In this model, your cloud provider will manage certain aspects of your application, leaving you with the remaining responsibility. In an on-premises environment you are responsible for everything. As you move to infrastructure as a service (IaaS), then to platform as a service (PaaS) and software as a service (SaaS), your cloud provider will take on more of this responsibility. This shared responsibility will play a role in your architectural decisions, as they can have implications on cost, operational capabilities, security, and the technical capabilities of your application. By shifting these responsibilities to your provider you can focus on bringing value to your business and move away from activities that aren't a core business function.
