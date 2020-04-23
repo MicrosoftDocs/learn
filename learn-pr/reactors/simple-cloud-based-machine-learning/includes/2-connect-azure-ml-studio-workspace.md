@@ -23,7 +23,7 @@ The `azureml` package is installed by default with Azure Notebooks, so we don't 
 
 1. Run the following code cell. If it runs without error, you're ready to continue.
 
-   ```Python
+   ```python
    from azureml import Workspace
 
    # Replace the values with those from your own Azure ML Studio instance. See the Prerequisites.

@@ -65,10 +65,14 @@ What other entities can be retrieved with the API? Create a document setup and u
 
   <summary>Hint - TBD <i>(expand to reveal)</i></summary>
 
+  Here's the input:
+  
   ```python
   tbd
   ```
 
+  The output is:
+  
   ```Output
   tbd
   ```

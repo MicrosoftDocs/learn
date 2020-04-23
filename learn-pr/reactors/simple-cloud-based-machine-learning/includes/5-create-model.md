@@ -8,7 +8,7 @@
 
 We're now back into familiar territory: prepping data for the model and fitting the model. To keep it interesting, we'll use the scikit-learn `train_test_split()` function with a slight change of parameters to select 75 percent of the data points for training and 25 percent for validation (testing).
 
-```Python
+```python
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(
@@ -29,7 +29,7 @@ Did you see what we did there? Rather than select all of the variables for the m
 
 Fit scikit-learn's `DecisionTreeRegressor` model using the training data. This algorithm is a combination of the linear regression and decision tree classification that you worked with in Section 6.
 
-```Python
+```python
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import r2_score
 regressor = DecisionTreeRegressor(random_state=42)
@@ -51,18 +51,26 @@ Play around with this algorithm.
 - Can you get better results by changing the variables that you select for the training and test data?
 - What if you look at different variables for the response?
 
+<br />
+
 <details> 
 
   <summary>Hint - TBD<i>(expand to reveal)</i></summary>
+  
+  Here's the input:
 
-  ```Python
+  ```python
   TBD
   ```
 
+  The output is:
+  
   ```Output
   TBD
   ```
   
 </details>
+
+<br /><br />
 
 ***

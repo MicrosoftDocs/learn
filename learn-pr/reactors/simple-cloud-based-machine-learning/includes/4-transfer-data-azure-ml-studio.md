@@ -11,7 +11,7 @@ The first code cell of this notebook is what establishes the connection with _yo
 
 Now that you have your notebook talking to Azure ML Studio, you can export your data to it:
 
-```Python
+```python
 from azureml import DataTypeIds
 
 dataset = ws.datasets.add_from_dataframe(
@@ -34,7 +34,7 @@ After you run the code, you can see the dataset listed in the **Datasets** secti
 
 It's also straightforward to list the datasets available in the workspace and transfer datasets from the workspace to the notebook:
 
-```Python
+```python
 print('\n'.join([i.name for i in ws.datasets if not i.is_example])) # only list user-created datasets
 ```
 
@@ -46,7 +46,7 @@ TBD
 
 You can also interact with and examine the dataset in Azure ML Studio directly from your notebook:
 
-```Python
+```python
 # Read some more of the metadata
 ds = ws.datasets['Forest Fire Data']
 print(ds.name)
@@ -63,7 +63,7 @@ Here's the output:
 TBD
 ```
 
-```Python
+```python
 # Read the contents
 df2 = ds.to_dataframe()
 df2.head()

@@ -13,7 +13,7 @@
 
 Next, consume the web service. To see if this works, try it here from the notebook session in which the web service was created. Just call the predictor directly:
 
-```Python
+```python
 forest_fire_predictor.service(5.4, 0.2, 9, 22.1)
 ```
 
@@ -25,7 +25,7 @@ TBD
 
 At any later time, you can use the stored API key and service URL to call the service. In the example below, data can be packaged in JavaScript Object Notation (JSON) format and sent to the web service.
 
-```Python
+```python
 import urllib2
 import json
 
@@ -64,19 +64,27 @@ TBD
 
 Try this same process of training and hosting a model through Azure ML Studio with the _Pima Indians Diabetes_ dataset (in CSV format in your data folder). The dataset has nine columns. Use any of the eight features you choose to try and predict the ninth column, `Outcome (1 = diabetes, 0 = no diabetes)`.
 
+<br />
+
 <details> 
 
   <summary>Hint - TBD<i>(expand to reveal)</i></summary>
 
-  ```Python
+  Here's the input:
+
+  ```python
   TBD
   ```
 
+  The output is:
+  
   ```Output
   TBD
   ```
   
 </details>
+
+<br /><br />
 
 ***
 

@@ -30,7 +30,7 @@ The dataset contains the following features:
 
 Let's load the dataset and visualize the area that was burned in relation to the temperature in that region.
 
-```Python
+```python
 import pandas as pd
 df = pd.DataFrame(pd.read_csv('../Data/forestfires.csv'))
 %matplotlib inline

@@ -45,7 +45,14 @@ print(classification_report(y_test,predictions))
 The output is: 
 
 ```Output
-TBD
+precision    recall  f1-score   support
+
+           0       0.83      0.90      0.86       162
+           1       0.82      0.72      0.76       106
+
+    accuracy                           0.82       268
+   macro avg       0.82      0.81      0.81       268
+weighted avg       0.82      0.82      0.82       268
 ```
 
 ## Confusion matrix
@@ -59,7 +66,8 @@ print(confusion_matrix(y_test,predictions))
 The output is: 
 
 ```Output
-TBD
+[[145  17]
+ [ 30  76]]
 ```
 
 Let's dress up the confusion matrix a bit to make it a little easier to read:
@@ -71,7 +79,13 @@ pd.DataFrame(confusion_matrix(y_test, predictions), columns=['True Survived', 'T
 The output is: 
 
 ```Output
-TBD
+--------------------------------------------------------------
+|                        | True Survived | True Not Survived |
+--------------------------------------------------------------
+| Predicted Survived     |      145      |         17        |
+--------------------------------------------------------------
+| Predicted Not Survived |       30      |         76        |   
+--------------------------------------------------------------
 ```
 
 ## Accuracy score
@@ -85,7 +99,7 @@ print(accuracy_score(y_test,predictions))
 The output is: 
 
 ```Output
-TBD
+0.8246268656716418
 ```
 
 Not bad for an off-the-shelf model with no tuning!

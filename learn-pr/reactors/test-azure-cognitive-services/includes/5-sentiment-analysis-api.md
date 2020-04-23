@@ -61,10 +61,14 @@ Create another document set with varying degree of sentiment and use the Sentime
 
   <summary>Hint - TBD <i>(expand to reveal)</i></summary>
 
+  Here's the input:
+  
   ```python
   tbd
   ```
 
+  The output is:
+  
   ```Output
   tbd
   ```

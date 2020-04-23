@@ -8,7 +8,7 @@ This is the important part. After your model is deployed as a web service, it ca
 
 First, deploy the model as a predictive web service. To do so, create a wrapper function that takes input data as an argument and calls `predict()` with your trained model and this input data, returning the results.
 
-```Python
+```python
 from azureml import services
 
 @services.publish(workspace_id, authorization_token)

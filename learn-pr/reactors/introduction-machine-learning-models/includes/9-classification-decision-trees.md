@@ -59,7 +59,12 @@ Using the same split data as with the logistic regression, can you fit the decis
   The output is:
   
   ```Output
-  TBD
+  DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=None, splitter='best')
   ```
   
 </details>
@@ -80,6 +85,18 @@ pd.DataFrame(confusion_matrix(y_test, tr_predictions),
              index=['Predicted Survived', 'Predicted Not Survived'])
 ```
 
+The output is:
+
+```Output
+--------------------------------------------------------------
+|                        | True Survived | True Not Survived |
+--------------------------------------------------------------
+| Predicted Survived     |      130      |         32        |
+--------------------------------------------------------------
+| Predicted Not Survived |       37      |         69        |   
+--------------------------------------------------------------
+```
+
 ```python
 print(accuracy_score(y_test,tr_predictions))
 ```
@@ -87,7 +104,7 @@ print(accuracy_score(y_test,tr_predictions))
 The output is:
 
 ```Output
-TBD
+0.7425373134328358
 ```
 
 One of the great attractions of decision trees is that the models are readable by humans. Let's visualize to see it in action. (Note that the generated graphic can be quite large, so scroll to the right if the generated graphic just looks blank at first.)
