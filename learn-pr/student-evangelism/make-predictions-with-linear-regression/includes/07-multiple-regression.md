@@ -409,7 +409,7 @@ Yr Sold
 </p>
 A histogram of sale prices shows a large amount of variability and a
 distribution that is clearly not normal. A long tail to the right
-contains a few houses that had very high prices. The short left tail
+contains a few houses that had high prices. The short left tail
 does not contain any houses that sold for less than \$35,000.
 
 ``` {.python}
@@ -494,9 +494,10 @@ print(train.num_rows, 'training and', test.num_rows, 'test instances.')
 
 1001 training and 1001 test instances.
 
-The slopes in multiple regression is an array that has one slope value
-for each attribute in an example. Predicting the sale price involves
-multiplying each attribute by the slope and summing the result.
+The slopes in multiple regression are represeented by an
+array that has one slope value for each attribute in an example. 
+Predicting the sale price involves multiplying each attribute 
+by the slope and summing the result.
 
 ``` {.python}
 def predict(slopes, row):
@@ -1020,7 +1021,7 @@ print('Test set RMSE for nearest neighbor regression:', rmse_nn)
 Test set RMSE for multiple linear regression: 29898.407434368237 Test
 set RMSE for nearest neighbor regression: 33424.833033298106
 
-For these data, the errors of the two techniques are quite similar! For
+For these data, the errors of the two techniques are similar! For
 different data sets, one technique might outperform another. By
 computing the RMSE of both techniques on the same data, we can compare
 methods fairly. One note of caution: the difference in performance might
@@ -1030,7 +1031,7 @@ variation due to sampling the training and test sets in the first place.
 Finally, we can draw a residual plot for these predictions. We still
 underestimate the prices of the most expensive houses, but the bias does
 not appear to be as systematic. However, fewer residuals are very close
-to zero, indicating that fewer prices were predicted with very high
+to zero, indicating that fewer prices were predicted with high
 accuracy.
 
 ``` {.python}

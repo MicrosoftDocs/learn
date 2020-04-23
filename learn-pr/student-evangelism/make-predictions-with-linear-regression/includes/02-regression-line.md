@@ -397,7 +397,7 @@ $$
 \frac{\mbox{the given}~x ~-~\mbox{average of}~x}{\mbox{SD of}~x}
 $$
 
-![regline](../../../images/regline.png)
+![regline](../media/regline.png)
 
 The slope and intercept of the regression line in original units can be
 derived from the diagram above.

@@ -19,7 +19,7 @@ medical history be used to judge how well he or she will respond to a
 treatment?
 
 To answer such questions, data scientists have developed methods for
-making *predictions*. In this chapter we will study one of the most
+making *predictions*. In this chapter, we will study one of the most
 commonly used ways of predicting the value of one variable based on the
 value of another.
 
@@ -225,7 +225,7 @@ def r_scatter(r):
 
 ### Correlation
 
-In this section we will develop a measure of how tightly clustered a
+In this section, we will develop a measure of how tightly clustered a
 scatter diagram is about a straight line. Formally, this is called
 measuring *linear association*.
 
@@ -238,7 +238,7 @@ of the University of Florida. The columns:
 -   `year`: year of manufacture
 -   `msrp`: manufacturer's suggested retail price in 2013 dollars
 -   `acceleration`: acceleration rate in km per hour per second
--   `mpg`: fuel econonmy in miles per gallon
+-   `mpg`: fuel economy in miles per gallon
 -   `class`: the model's class.
 
 ``` {.python}
@@ -479,7 +479,7 @@ Compact
 ... (143 rows omitted)
 </p>
 The graph below is a scatter plot of `msrp` *versus* `acceleration`.
-That means `msrp` is plotted on the vertical axis and `accelaration` on
+That means `msrp` is plotted on the vertical axis and `acceleration` on
 the horizontal.
 
 ``` {.python}
@@ -495,7 +495,7 @@ greater acceleration on average.
 
 The scatter diagram of MSRP versus mileage shows a negative association.
 Hybrid cars with higher mileage tended to cost less, on average. This
-seems surprising till you consider that cars that accelerate fast tend
+seems surprising until you consider that cars that accelerate fast tend
 to be less fuel efficient and have lower mileage. As the previous
 scatter plot showed, those were also the cars that tended to cost more.
 
@@ -507,8 +507,7 @@ hybrid.scatter('mpg', 'msrp')
 
 Along with the negative association, the scatter diagram of price versus
 efficiency shows a non-linear relation between the two variables. The
-points appear to be clustered around a curve, not around a straight
-line.
+points appear to be clustered around a curve, not around a straight-line.
 
 If we restrict the data just to the SUV class, however, the association
 between price and efficiency is still negative but the relation appears
@@ -582,7 +581,7 @@ kinds of association that we have seen.
 
 The *correlation coefficient* measures the strength of the linear
 relationship between two variables. Graphically, it measures how
-clustered the scatter diagram is around a straight line.
+clustered the scatter diagram is around a straight-line.
 
 The term *correlation coefficient* isn't easy to say, so it is usually
 shortened to *correlation* and denoted by $r$.
@@ -592,8 +591,8 @@ simulation.
 
 -   The correlation coefficient $r$ is a number between $-1$ and 1.
 -   $r$ measures the extent to which the scatter plot clusters around a
-    straight line.
--   $r = 1$ if the scatter diagram is a perfect straight line sloping
+    straight-line.
+-   $r = 1$ if the scatter diagram is a perfect straight-line sloping
     upwards, and $r = -1$ if the scatter diagram is a perfect straight
     line sloping downwards.
 
@@ -1450,10 +1449,10 @@ take a look.
 ``` {.python}
 
 from IPython.display import Image
-Image("../../../images/chocoNobel.png")
+Image("../media/choco-nobel.png")
 ```
 
-![png](76_Correlation_files/76_Correlation_65_0.png)
+![png](../media/76_correlation_65_0.png)
 
 ``` {.python}
 ```

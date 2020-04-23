@@ -47,14 +47,13 @@ one is off the true value by an *error*. A reasonable criterion for a
 line to be the "best" is for it to have the smallest possible overall
 error among all straight lines.
 
-In this section we will make this criterion precise and see if we can
+In this section, we will make this criterion precise and see if we can
 identify the best straight line under the criterion.
 
 Our first example is a dataset that has one row for every chapter of the
 novel "Little Women." The goal is to estimate the number of characters
 (that is, letters, spaces punctuation marks, and so on) based on the
-number of periods. Recall that we attempted to do this in the very first
-lecture of this course.
+number of periods.
 
 ``` {.python}
 little_women = Table.read_table(path_data + 'little_women.csv')
@@ -315,7 +314,7 @@ Error
 We can use `slope` and `intercept` to calculate the slope and intercept
 of the fitted line. The graph below shows the line (in light blue). The
 errors corresponding to four of the points are shown in red. There is
-nothing special about those four points. They were just chosen for
+nothing special about those four points. They were chosen for
 clarity of the display. The function `lw_errors` takes a slope and an
 intercept (in that order) as its arguments and draws the figure.
 
@@ -347,7 +346,7 @@ Regression Line: 4745.0 characters
 ![png](../media/78-method-of-least-squares-17-1.png)
 
 Had we used a different line to create our estimates, the errors would
-have been different. The graph below shows how big the errors would be
+have been different. The graph below shows how large the errors would be
 if we were to use another line for estimation. The second graph shows
 large errors obtained by using a line that is downright silly.
 
@@ -366,7 +365,7 @@ lw_errors(-100, 50000)
 ### Root Mean Squared Error
 
 What we need now is one overall measure of the rough size of the errors.
-You will recognize the approach to creating this -- it's exactly the way
+You will recognize the approach to creating this--it's exactly the way
 we developed the SD.
 
 If you use any arbitrary line to calculate your estimates, then some of
@@ -375,7 +374,7 @@ cancellation when measuring the rough size of the errors, we will take
 the mean of the squared errors rather than the mean of the errors
 themselves.
 
-The mean squared error of estimation is a measure of roughly how big the
+The mean squared error of estimation is a measure of roughly how large the
 squared errors are, but as we have noted earlier, its units are hard to
 interpret. Taking the square root yields the root mean square error
 (rmse), which is in the same units as the variable being predicted and
@@ -423,7 +422,7 @@ Root mean squared error: 16710.11983735375
 
 ![png](../media/78-method-of-least-squares-25-1.png)
 
-Bad lines have big values of rmse, as expected. But the rmse is much
+Bad lines have large values of rmse, as expected. But the rmse is much
 smaller if we choose a slope and intercept close to those of the
 regression line.
 
@@ -451,8 +450,8 @@ Root mean squared error: 2701.690785311856
 ![png](../media/78-method-of-least-squares-29-1.png)
 
 The proof of this statement requires abstract mathematics that is beyond
-the scope of this course. On the other hand, we do have a powerful tool
--- Python -- that performs large numerical computations with ease. So we
+the scope of this course. On the other hand, we do have a powerful tool, 
+Python, that performs large numerical computations with ease. So we
 can use Python to confirm that the regression line minimizes the mean
 squared error.
 
@@ -500,7 +499,7 @@ Root mean squared error: 2701.690785311856
 ![png](../media/78-method-of-least-squares-36-1.png)
 
 You can confirm that `lw_mse` returns the correct value for other slopes
-and intercepts too. For example, here is the rmse of the extremely bad
+and intercepts too. For example, here is the rmse of the bad
 line that we tried earlier.
 
 ``` {.python}

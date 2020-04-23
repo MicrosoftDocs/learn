@@ -48,7 +48,7 @@ study](http://digitalcommons.wku.edu/ijes/vol6/iss2/10/) in the
 International Journal of Exercise Science studied collegiate shot put
 athletes and examined the relation between strength and shot put
 distance. The population consists of 28 female collegiate athletes.
-Strength was measured by the the biggest amount (in kilograms) that the
+Strength was measured by the biggest amount (in kilograms) that the
 athlete lifted in the "1RM power clean" in the pre-season. The distance
 (in meters) was the athlete's personal best.
 
@@ -187,7 +187,7 @@ Does it still make sense to use these formulas even though the scatter
 plot isn't football shaped? We can answer this by finding the slope and
 intercept of the line that minimizes the mse.
 
-We will define the function `shotput_linear_mse` to take an arbirtary
+We will define the function `shotput_linear_mse` to take an arbitrary
 slope and intercept as arguments and return the corresponding mse. Then
 `minimize` applied to `shotput_linear_mse` will return the best slope
 and intercept.
