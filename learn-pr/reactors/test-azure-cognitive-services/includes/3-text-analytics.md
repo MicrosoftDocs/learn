@@ -1,35 +1,39 @@
-TEXT
-
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> The environment set up content is the first module in this learning path and it's extremely short--one unit topic.
-> Suggest moving the setup content into this unit topic, or making it the next unit topic in this module.
-> Then, duplicate the set up content in the same topic location in all modules in the learning path.
->
-
-
 > [!Note]
 > **Sarah: Action items**
 > 
-> - Use the code style for comment that appear on a separate line and not with other syntax?
-> We might format these instances as plain text or another style.
+> - Need output cell content. Search on TBD.
 >
 
-### Try it yourself
+Another area where cloud-based AI shines is text analytics. Like computer vision, identifying and pulling meaning from natural human languages is really the intersection of a lot of specialized disciplines, so using cloud services for it provides an economical means of tapping a lot of cognitive horsepower.
 
-TEXT
+To prepare to use the Cognitive Services Text Analytics API, the requests library must be imported, along with the ability to print out JSON formats.
 
-<details> 
+```python
+import requests
+# pprint is pretty print (formats the JSON)
+from pprint import pprint
+from IPython.display import HTML
+```
 
-  <summary>Hint <i>(expand to reveal)</i></summary>
+The output is:
 
-  ```Python
-  tbd
-  ```
+```Output
+TBD
+```
 
-  ```Output
-  tbd
-  ```
-  
-</details>
+Replace `ACCOUNT_KEY` with the API key that was created during the creation of the seven-day free trial account.
+
+```python
+subscription_key = 'ACCOUNT_KEY'
+assert subscription_key
+
+# If you're using a Free Trial account, this URL does not need to be updated.
+# If you're using a paid account, verify that it matches the region where the Text Analytics Service was set up.
+text_analytics_base_url = "https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/"
+```
+
+Here's the output:
+
+```Output
+TBD
+```
