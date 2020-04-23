@@ -137,3 +137,5 @@ An example for two european cities is:
     ]
 }
 ```
+
+In this unit, you learned about the GeoJSON format for storing spatial data, along with it's three object types. Next, you'll use an API to get air quality data, convert it to GeoJSON and show it on a map.

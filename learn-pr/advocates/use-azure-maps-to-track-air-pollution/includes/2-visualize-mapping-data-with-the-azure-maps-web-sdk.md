@@ -1,4 +1,4 @@
-Azure Maps web SDK has a whole host of different tools to visualize spatial data on an interactive Map on a web page. Before getting started adding the map to a web page, lets look at some of the capabilities.
+The Azure Maps web SDK has a whole host of different tools to visualize spatial data on an interactive Map on a web page. Before getting started adding the map to a web page, lets look at some of the capabilities.
 
 ## Render a map
 
@@ -59,3 +59,5 @@ The different layer types include:
     Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map. For example, a heat map could be used to show the relative risk of earthquakes based of the number and strength of historically detected earthquakes.
 
 The data source defines the location of the features in the layer, and can also provide data that controls how the layer is configured, for example what image to display or how large to make a bubble.
+
+In this unit, you learned about the Azure Maps web SDK. including styles, navigation and layers. Next, you'll create an Azure Maps account so you can use the web SDK in a web app.

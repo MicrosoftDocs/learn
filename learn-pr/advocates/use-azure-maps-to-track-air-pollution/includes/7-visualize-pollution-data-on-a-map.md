@@ -216,3 +216,5 @@ The feature collection created from the AQI data is ready to be shown on a map. 
     ![A map showing air quality as colored circles](../media/final-output.png)
 
     Navigate around the map and you'll see the bubbles update to match the area you are viewing.
+
+1. Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some are obvious, such as countries with large numbers of fossil fuel based power plants or factories, but some are not so obvious. Find ones near to you can think about the cause of the pollution.

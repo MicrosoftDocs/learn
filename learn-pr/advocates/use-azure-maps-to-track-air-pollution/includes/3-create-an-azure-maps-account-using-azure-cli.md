@@ -1,4 +1,4 @@
-In this unit, you'll create an Azure Maps account using the Azure CLI. Once created, you'll get the primary key needed to give the web SDK access to the Maps account. This key will be used in the coding units later in this module.
+Before you can use Azure Maps on a web page, you will need an Azure Maps account. In this unit, you'll create an Azure Maps account using the Azure CLI. Once created, you'll get the primary key needed to give the web SDK access to the Maps account. This key will be used in the coding units later in this module.
 
 ## Create an Azure Maps account
 
@@ -21,3 +21,5 @@ Azure Maps accounts are secured by either Azure Active Directory or via a key. L
     ```
 
 1. Note down the value of the `"primaryKey"`. You need the value inside the quotes.
+
+In this unit, you created an Azure Maps account and got the primary key. Next lets do a quick knowledge check on what you have learned so far.

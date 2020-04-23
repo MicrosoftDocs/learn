@@ -16,15 +16,26 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
 1. Open the Visual Studio Code terminal if it isn't already open by selecting **Terminal > New terminal**.
 
-1. Create a python virtual environment using the following command:
+1. Create a python virtual environment:
+
+    On Windows, use the following command
 
     ```sh
     python -m venv .venv
     ```
 
+    On Linux and macOS, use the following command
+
+    ```sh
+    python3 -m venv .venv
+    ```
+
     This will create a virtual environment inside the current folder. Visual Studio Code will detect this change, and ask if you want to select the virtual environment for this folder, so select **Yes**.
 
     ![The activate virtual env dialog](../media/activate_venv_dialog.png)
+
+    > [!NOTE]
+    > If the dialog does not pop up asking to select the virtual environment, you can do it manually by selecting the Python interpreter version from the Visual Studio Code status bar, and selecting the Python version that is in the `./.venv/bin/python` folder. Once selected, kill and recreate the terminal to ensure that your terminal is using the virtual environment.
 
 1. Add a file called `requirements.txt` to this folder, and add the following to this file:
 
@@ -227,3 +238,5 @@ Check the following:
 ### No data on the map
 
 If you don't see any data on the map, but you do see the Microsoft logo, then you are not using a valid key for the map control. Check the value in the `.env` file to ensure it is correct. This value should not be in quotes.
+
+In this unit, you created a Flask app that showed a map using the Azure Maps web SDK. Next, let's learn about the GeoJSON format for spatial data.
