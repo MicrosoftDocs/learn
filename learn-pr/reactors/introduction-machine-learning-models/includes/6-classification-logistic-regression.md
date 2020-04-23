@@ -345,5 +345,5 @@ The value counts output for the **Gender** column data is:
 ```Output
 male      577
 female    314
-Name: Sex, dtype: int64
+Name: Gender, dtype: int64
 ```

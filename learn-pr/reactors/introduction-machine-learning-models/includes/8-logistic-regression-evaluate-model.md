@@ -45,7 +45,7 @@ print(classification_report(y_test,predictions))
 The output is: 
 
 ```Output
-precision    recall  f1-score   support
+precision     recall  f1-score   support
 
            0       0.83      0.90      0.86       162
            1       0.82      0.72      0.76       106
