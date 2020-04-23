@@ -14,7 +14,7 @@ In this module, you will:
 
 ## Prerequisites
 
-- [Visual Studio Code environment set up to run Python and Jupyter Notebooks](../../python-data-science/1-introduction#set-up-your-environment)
+- [Visual Studio Code environment set up to run Python and Jupyter notebooks](../../python-data-science/1-introduction)
 - [Introduction to Python for data science](../../python-data-science/index.yml)
 - [Introduction to NumPy for data science](../../numpy-data-science/index.yml)
 - [Introduction to pandas for data science](../../pandas-data-science/index.yml)
