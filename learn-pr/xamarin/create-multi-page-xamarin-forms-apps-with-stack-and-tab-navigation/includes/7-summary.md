@@ -14,3 +14,8 @@ To test out these strategies, we implemented the **Astronomy** app by using both
 * The user would probably switch between the pages frequently.
 
 Tabs make this type of navigation simple. It only takes one tap for the user to switch to any of the pages. Stack navigation would require a longer navigation sequence. The user would need to return to the root page before they could go to a different part of the app.
+
+## Learn more with a Channel 9 video series
+
+- [Xamarin Tutorial 101](https://channel9.msdn.com/Series/Xamarin-101/?WT.mc_id=Educationalmobile-c9-niner&azure-portal=true)
+- [Intro to Visual Studio for Mac](https://channel9.msdn.com/Series/Intro-to-Visual-Studio-for-Mac?azure-portal=true)

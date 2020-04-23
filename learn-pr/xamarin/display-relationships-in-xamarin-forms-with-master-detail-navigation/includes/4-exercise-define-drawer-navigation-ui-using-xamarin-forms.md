@@ -1,6 +1,6 @@
 You'll be developing the navigation for a planetarium's **Astronomy** app. There's some starter code to get you going. Your job is to add drawer navigation by using `MasterDetailPage` to let the user switch between several pages quickly while limiting the UI space consumed for navigation.
 
-![Screenshot that shows the resulting master-detail drawer navigation of the Astronomy app running on an iOS simulator](../media/4-ios-drawer-popover.png)
+![Screenshot showing the resulting master-detail drawer navigation of the Astronomy app running on an iOS simulator.](../media/4-ios-drawer-popover.png)
 
 ## Open the starter solution
 

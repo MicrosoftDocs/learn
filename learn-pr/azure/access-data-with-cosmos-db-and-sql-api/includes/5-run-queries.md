@@ -2,19 +2,19 @@ Now that you've learned about the kinds of queries you can create, let's use the
 
 Switch back to the Data Explorer window. Notice that by default, the query on the **Items** tab is set to `SELECT * FROM c` as shown in the following image. This default query retrieves and displays all documents in the container.
 
-![Screenshot showing the default query in Data Explorer is SELECT * FROM c](../media/5-azure-cosmosdb-data-explorer-query.png)
+![Screenshot showing the default query in Data Explorer with the "SELECT * FROM c" query filter highlighted.](../media/5-azure-cosmosdb-data-explorer-query.png)
 
 ## Create a new query
 
 1. In Data Explorer, select **New SQL Query** from the toolbar as shown below.
 
-    ![Screenshot showing the New SQL Query option in the Data Explorer](../media/5-create-new-sql-query.png)
+    ![Screenshot of the Data Explorer with the New SQL Query button highlighted.](../media/5-create-new-sql-query.png)
 
     The default query on the new  **Query 1** tab is again `SELECT * from c`, which will return all documents in the container.
 
 1. Select **Execute Query** to run the SQL statement. This query returns all results in the database.
 
-    ![Screenshot showing how to execute the query using the Data Explorer](../media/5-azure-cosmosdb-data-explorer-edit-query.png)
+    ![Screenshot showing the new query tab with the Execute Query button highlighted.](../media/5-azure-cosmosdb-data-explorer-edit-query.png)
 
 ### Run custom queries
 

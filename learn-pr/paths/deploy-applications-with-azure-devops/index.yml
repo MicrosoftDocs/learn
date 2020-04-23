@@ -19,7 +19,11 @@ summary: |
   - Build a more complete pipeline that deploys to multiple development and testing stages.
   - Run functional and non-functional tests that verify your application's behavior and performance.
   - Choose and implement an appropriate deployment pattern to smoothly roll out new features to your users.
+<<<<<<< HEAD
   - Automate multi-container Kubernetes deployments with Azure Pipelines.
+=======
+  - Extend pipelines to add support for different deployment targets, such as Azure Functions.
+>>>>>>> master
 
   Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
 cardDescription: Learn how to configure release pipelines that continuously build, test, and deploy your applications.
@@ -44,6 +48,10 @@ modules:
 - learn.azdo.run-functional-tests-azure-pipelines
 - learn.azdo.run-non-functional-tests-azure-pipelines
 - learn.azdo.manage-release-cadence
+<<<<<<< HEAD
 - learn.azdo.deploy-kubernetes
+=======
+- learn.azdo.deploy-azure-functions
+>>>>>>> master
 trophy:
   uid: learn.azdo.deploy-applications-with-azure-devops.trophy

@@ -5,7 +5,7 @@ If you already have an Azure account, you can use it to create and manage a Mach
 
     ![Create a resource](../media/4-create-ml-workspace-with-existing-azure-account-create-resource.png)
 
-1. In the search bar, enter *Machine Learning Studio Workspace*.
+1. In the search bar, enter *Machine Learning Studio (classic) Workspace*.
 
     > [!IMPORTANT]
     > Make sure you choose the Machine Learning Studio Workspace and not the Learning Service Workspace.

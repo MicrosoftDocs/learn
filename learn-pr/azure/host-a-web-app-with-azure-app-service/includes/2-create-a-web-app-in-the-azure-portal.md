@@ -63,7 +63,7 @@ Selecting **Windows** activates the Monitoring tab, where you have the option to
 
 An **App Service** plan is a set of virtual server resources that run App Service apps. A plan's **size** (sometimes referred to as its **sku** or **pricing tier**) determines the performance characteristics of the virtual servers that run the apps assigned to the plan and the App Service features that those apps have access to. Every App Service web app you create must be assigned to a single App Service plan that runs it.
 
-A single App Service plan can host an unlimited number of App Service web apps. In practice, the number of apps you can run on a single plan will be limited by the performance characteristics of the apps and the resource limitations of the plan.
+A single App Service plan can host multiple App Service web apps. In most cases, the number of apps you can run on a single plan will be limited by the performance characteristics of the apps and the resource limitations of the plan.
 
 App Service plans are the unit of billing for App Service. The size of each App Service plan in your subscription, in addition to the bandwidth resources used by the apps deployed to those plans, determines the price that you pay. The number of web apps deployed to your App Service plans has no effect on your bill.
 

@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.characterize-devops-continous-collaboration-improvement.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "“Continuous Collaboration enables teams to innovate outside of the boundaries of planned meetings.” Which of the following value considerations conflict with the quoted statement?"
+    choices:
+    - content: "Following a plan over responding to change"
+      isCorrect: true
+      explanation: "That’s correct. This value consideration conflicts with the quoted statement."
+    - content: "Working software over comprehensive documentation"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This value consideration doesn’t conflict with the quoted statement."
+    - content: "Customer collaboration over contract negotiation"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This value consideration doesn’t conflict with the quoted statement."
+  - content: "Aligning KPIs with habits is important because it helps achieve positive business outcomes. Which of the following habits is important for reinforcing KPIs and setting teams up for success?"
+    choices:
+    - content: "Valuing test results over variations in efficiency"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Valuing test results over variations in efficiency isn’t an important habit for reinforcing KPIs and setting teams up for success."
+    - content: "Having a production-first mindset"
+      isCorrect: true
+      explanation: "That’s correct. Having a production-first mindset is an important habit for reinforcing KPIs and setting teams up for success."
+    - content: "Valuing team capacity over non-actionable metrics"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Valuing team capacity over non-actionable metrics isn’t an important habit for reinforcing KPIs and setting teams up for success."
+  - content: "What is value stream mapping?"
+    choices:
+    - content: "A concept that organizes objects of value in an idealized workflow stream"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn’t a description of value stream mapping."
+    - content: "An activity that maps value to different programming activities as a way to identify work components that have the highest value"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn’t a description of value stream mapping."
+    - content: "A methodology that helps visualize complex work systems and address the disconnects, redundancies, and gaps in how work gets done"
+      isCorrect: true
+      explanation: "That’s correct. This is a good description of value stream mapping."
+  - content: "In addition to what's stated in its definition, what does value stream mapping help identify and quantify?"
+    choices:
+    - content: "Customer value declarations"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Value stream mapping doesn’t help identify and quantify customer value declarations."
+    - content: "Waste"
+      isCorrect: true
+      explanation: "That’s correct. Value stream mapping helps identify and quantify waste."
+    - content: "Development milestones"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Value stream mapping doesn’t help identify and quantify development milestones."
+  - content: "Which of the following is important for DevOps leadership to measure?"
+    choices:
+    - content: "Team velocity"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Measuring team velocity isn't important for DevOps leadership."
+    - content: "Number of bugs"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Measuring the number of bugs found isn't important for DevOps leadership."
+    - content: "Impact"
+      isCorrect: true
+      explanation: "That’s correct. DevOps leadership should measure impact."

@@ -51,10 +51,10 @@ quiz:
       - content: "Infrastructure-as-a-service (IaaS)"
         isCorrect: true
         explanation: "Correct! A virtual machine is a canonical example of virtualized computing infrastructure."
-      - content: "Platform-as-a-service (IaaS)"
+      - content: "Platform-as-a-service (PaaS)"
         isCorrect: false
         explanation: "Incorrect. Virtual machines are frequently used in PaaS solutions but are not themselves considered PaaS."
-      - content: "Software-as-a-service (IaaS)"
+      - content: "Software-as-a-service (SaaS)"
         isCorrect: false
         explanation: "Incorrect. Virtual machines are frequently used in PaaS solutions but are not themselves considered SaaS."
       - content: "None of the above"
@@ -96,10 +96,10 @@ quiz:
       - content: "Infrastructure-as-a-service (IaaS)"
         isCorrect: false
         explanation: "Incorrect. Function runtimes utilize virtual machines under the hood, but they are not IaaS."
-      - content: "Platform-as-a-service (IaaS)"
+      - content: "Platform-as-a-service (PaaS)"
         isCorrect: true
         explanation: "Correct! Function runtimes are generally considered to be PaaS services."
-      - content: "Software-as-a-service (IaaS)"
+      - content: "Software-as-a-service (SaaS)"
         isCorrect: false
         explanation: "Incorrect. Function runtimes are considered platforms, not software-as-a-service."
       - content: "None of the above"

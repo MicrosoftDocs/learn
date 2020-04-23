@@ -32,11 +32,11 @@ Here you will create a new virtual machine to serve as a web server for the loca
 Here you'll enable Update Manager on the virtual machine you created.
 
 1. In the left pane, select **Virtual machines**.
-2. In the **Virtual machines** pane, select the virtual machine from the list. In this example, select **MediaWebServer**.
-3. In the MediaWebServer pane, scroll down the list to **Operations**, and then select **Update management**.
-4. In the **Update Management** pane, ensure that the **Enable for this VM** radio button is selected. Note that a default **Log Analytics workspace** and **Automation account** will be created. Accept the remaining defaults, and then select **Enable**.
-5. In the upper left corner, select the Notification bell and wait for deployment to finish.
-6. When Update Management deployment has completed, the Update Management menu will appear as shown below.
+2. Select **MediaWebServer**.
+3. Scroll down the list to **Operations**, and then select **Update management**.
+4. In the **Update Management** pane, accept the defaults, and select **Enable**.
+5. In the upper right corner, select the Notification bell and wait for deployment to finish.
+6. When Update Management deployment has completed, the Update Management menu will appear as shown below. You may need to refresh the page.
 
 ![Update Management Deployment Complete](../media/3-update-management-deployment-complete-edited.png "Update Management Deployment Complete")
 
@@ -45,7 +45,7 @@ Here you'll enable Update Manager on the virtual machine you created.
 
 ![Update Management Configuration Complete](../media/3-update-management-vm-configured-edited.png "Update Management Configuration Complete")
 
-9. **Compliance** is now complete, that the **Failed update deployments** counter is now configured, and that in this example, Update Management has identified that there is a Cumulative Update for Windows Server available. To the right of the notification of the Cumulative Update, under **INFORMATION LINK** that there is a link to the knowledge base article for this Cumulative Update. 
+9. **Compliance** is now complete. The **Failed update deployments** counter is now configured. Also, in this example, Update Management has identified that there is a Cumulative Update for Windows Server available. Under **INFORMATION LINK**, there's a link to the knowledge base article for the Cumulative Update. 
 
 ## Examine Hybrid Worker Groups
 
