@@ -61,6 +61,7 @@ achievements:
   summary: Secure your Azure resources with Conditional Access
   iconUrl: /learn/achievements/secure-azure-resources-with-conditional-access.svg
 - uid: learn.create-neural-network-with-dsvm.badge
+  type: badge
   title: Create a neural network with DSVM
   summary: Create a neural network with DSVM
   iconUrl: /learn/achievements/create-neural-network-with-dsvm.svg
