@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.support-vector-machines-facial-recognition.2-load-dataset
-title: Explore DataFrame information
+title: Load the dataset
 metadata:
-  title: Explore DataFrame information
-  description: Explore DataFrame information.
+  title: Load the dataset
+  description: Load the dataset TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

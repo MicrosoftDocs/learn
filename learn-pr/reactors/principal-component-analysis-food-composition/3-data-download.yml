@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.principal-component-analysis-food-composition.3-data-download
-title: Work with missing data
+title: Download the data
 metadata:
-  title: Work with missing data
-  description: Work with missing data in a pandas DataFrame.
+  title: Download the data
+  description: Download the data TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

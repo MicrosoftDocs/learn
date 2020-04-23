@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.support-vector-machines-facial-recognition.5-tune-hyperparameters
-title: Combine datasets
+title: Tune hyperparameters
 metadata:
-  title: Combine datasets
-  description: Combine datasets by using pandas DataFrames.
+  title: Tune hyperparameters
+  description: Tune hyperparameters TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

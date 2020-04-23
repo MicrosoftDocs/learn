@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.deep-learning-facial-recognition.1-introduction
-title: Introduction to Python
+title: Introduction
 metadata:
-  title: Introduction to Python for data science
-  description: Introduction to working with data by using Python for data science.
+  title: Introduction
+  description: Introduction to to deep learning with facial recognition.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

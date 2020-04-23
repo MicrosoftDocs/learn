@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.support-vector-machines-facial-recognition.3-train-svm-model
-title: Work with missing data
+title: Train the SVM model
 metadata:
-  title: Work with missing data
-  description: Work with missing data in a pandas DataFrame.
+  title: Train the SVM model
+  description: Train the SVM model TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

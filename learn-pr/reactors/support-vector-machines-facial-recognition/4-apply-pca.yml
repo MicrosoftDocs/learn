@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.support-vector-machines-facial-recognition.4-apply-pca
-title: Remove duplicate data
+title: Apply PCA
 metadata:
-  title: Remove duplicate data
-  description: Remove duplicate data in a pandas DataFrame.
+  title: Apply PCA
+  description: Apply PCA TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

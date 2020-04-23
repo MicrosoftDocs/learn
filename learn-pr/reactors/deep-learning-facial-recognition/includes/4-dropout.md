@@ -1,9 +1,8 @@
-Use dropout to increase generalization
 The fact that training accuracy approaches 100% (1.0) tells us that the network is deep enough and wide enough to learn from the facial data we train it with. But the validation accuracy peaks out much lower. This means that the model isn't generalizing well — that is, it isn't responding as well as we would like to facial images it hasn't seen. One way to mitigate that is to introduce dropout during training.
 
 Dropout is a commonly used technique to help neural networks generalize better. In keras, you can introduce dropout by following a Dense layer with a Dropout layer, specifying the fraction of connections that should be randomly dropped between layers in each training epoch. Let's introduce dropout to the network and see if it has an effect on the network's validation accuracy. Because dropout causes the model to train more slowly, we'll increase the number of epochs to 200.
 
-In [15]:
+```python
 from keras.layers import Dropout
 
 model = Sequential()
@@ -12,6 +11,8 @@ model.add(Dropout(0.1))
 model.add(Dense(class_count, activation='softmax'))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 hist = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=200, batch_size=25)
+```
+
 Train on 912 samples, validate on 228 samples
 Epoch 1/200
 912/912 [==============================] - 1s 988us/step - loss: 1.6210 - accuracy: 0.4112 - val_loss: 1.3309 - val_accuracy: 0.5482
@@ -413,10 +414,12 @@ Epoch 199/200
 912/912 [==============================] - 0s 251us/step - loss: 0.0980 - accuracy: 0.9660 - val_loss: 0.4890 - val_accuracy: 0.8947
 Epoch 200/200
 912/912 [==============================] - 0s 278us/step - loss: 0.1405 - accuracy: 0.9430 - val_loss: 0.4912 - val_accuracy: 0.8640
+
 Now let's plot the training history. Does the model seem to generalize better?
 
-In [16]:
+```python
 show_history(hist)
+```
 
 While the gap between training accuracy and validation accuracy probably narrowed, validation accuracy probably didn't improve much. That might be an indication that more training data is needed to make the network "smarter." In the confusion matrix above, George W. Bush probably scored the highest for accuracy, and if so, it's no coincidence that the dataset contains almost as many samples of George W. Bush as it does of the other candidates combined.
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.principal-component-analysis-food-composition.7-interpret-results
-title: Exploratory statistics and visualization
+title: Interpret the results
 metadata:
-  title: Exploratory statistics and visualization
-  description: Exploratory statistics and visualization by using a pandas DataFrame.
+  title: Interpret the results
+  description: Interpret the results TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

@@ -1,9 +1,7 @@
-Build and train a convolutional neural network (CNN)
 State-of-the-art image classification typically isn't done with traditional neural networks, but with deep convolutional neural networks (CNNs) that use convolution kernels to extract features from images and pooling layers to subsample images so features can be detected at various resolutions. Let's use keras to build a CNN and train it with the Labeled Faces in the Wild dataset and see how its performance compares to the other networks. Note that training will take longer, and generally speaking, a CNN performs best when trained with tens (or hundreds) of thousands of images rather than just a few hundred.
 
 
-
-In [17]:
+```python
 from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
 from keras.layers import Flatten
@@ -22,6 +20,8 @@ model.add(Dense(class_count, activation='softmax'))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.summary()
 Model: "sequential_6"
+```
+
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -49,15 +49,18 @@ Total params: 578,885
 Trainable params: 578,885
 Non-trainable params: 0
 _________________________________________________________________
+
 Now let's reshape the data to the format that the input layer expects, split it for training and testing, and call fit to train the model.
 
-In [18]:
+```python
 face_images = faces.images.reshape(image_count, image_width, image_height, 1).astype('float32') / 255
 x_train, x_test, y_train, y_test = train_test_split(face_images, face_labels, train_size=0.8, random_state=42)
 
 hist = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=50, batch_size=25)
 /home/nbuser/anaconda3_501/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2179: FutureWarning: From version 0.21, test_size will always complement train_size unless both are specified.
   FutureWarning)
+```
+
 Train on 912 samples, validate on 228 samples
 Epoch 1/50
 912/912 [==============================] - 8s 9ms/step - loss: 1.4465 - accuracy: 0.4068 - val_loss: 1.4124 - val_accuracy: 0.4649
@@ -159,14 +162,16 @@ Epoch 49/50
 912/912 [==============================] - 10s 11ms/step - loss: 0.0151 - accuracy: 0.9978 - val_loss: 0.6580 - val_accuracy: 0.8640
 Epoch 50/50
 912/912 [==============================] - 8s 8ms/step - loss: 0.0087 - accuracy: 0.9989 - val_loss: 0.6222 - val_accuracy: 0.8816
+
 With training complete, let's plot the training and validation accuracy to see how well the network performed.
 
-In [19]:
+```python
 show_history(hist)
+```
 
 As before, we'll run some test data through the network and use a confusion matrix to see how it fared.
 
-In [20]:
+```python
 y_predicted = model.predict(x_test)
 mat = confusion_matrix(y_test.argmax(axis=1), y_predicted.argmax(axis=1))
 
@@ -178,5 +183,6 @@ plt.xlabel('Actual label')
 plt.ylabel('Predicted label')
 Out[20]:
 Text(89.18, 0.5, 'Predicted label')
+```
 
 In all likelihood, the CNN exhibited about the same accuracy as a traditional neural network. This isn't surprising given that the dataset we trained it with is relatively small. State-of-the-art CNNs can sometimes execeed a human's ability to classify images. They also require vast amounts of compute power to train and are sometimes 100 or more layers deep.

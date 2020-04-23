@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.deep-learning-facial-recognition.5-convolutional-neural-network
-title: String basics
+title: Convolutional neural networks
 metadata:
-  title: String basics
-  description: Learn the basics of working with string in Python for data science.
+  title: Convolutional neural networks
+  description: Convolutional neural networks TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

@@ -10,7 +10,6 @@ We have a collection of foods and their nutrients. We'd like to group them toget
 
 As we begin our analysis, our initial challenge is trying to determine what makes a food item a food item? What components are most important? It's a real struggle to try to determine what components we should focus on.
 
-
 ## Learning objectives
 
 In this module, you will:

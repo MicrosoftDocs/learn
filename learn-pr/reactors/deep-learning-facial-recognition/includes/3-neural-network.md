@@ -1,7 +1,6 @@
-Build and train a neural network
 We'll start by using keras to build and train a neural network containing one working layer with 128 neurons. We'll use categorical_crossentropy as the loss function and a softmax output layer, both of which are appropriate for muticlass classification problems. We will also use adam as the optimization algorithm. Rather than use a fixed learning rate, adam varies the learning rate as training proceeds so the network learns faster in the early stages of training and (hopefully) converges more accurately toward a solution in later stages.
 
-In [5]:
+```python
 from keras.layers import Dense
 from keras.models import Sequential
 
@@ -11,6 +10,7 @@ model.add(Dense(class_count, activation='softmax'))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.summary()
 Model: "sequential_1"
+```
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -24,8 +24,10 @@ Non-trainable params: 0
 _________________________________________________________________
 Now let's train the neural network. We'll let it run for 100 epochs and then check the result to see if it required more (or less) training.
 
-In [6]:
+```python
 hist = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=100, batch_size=25)
+```
+
 Train on 912 samples, validate on 228 samples
 Epoch 1/100
 912/912 [==============================] - 1s 630us/step - loss: 1.5704 - accuracy: 0.4463 - val_loss: 1.3317 - val_accuracy: 0.6272
@@ -227,9 +229,10 @@ Epoch 99/100
 912/912 [==============================] - 1s 641us/step - loss: 0.0959 - accuracy: 0.9803 - val_loss: 0.3762 - val_accuracy: 0.8991
 Epoch 100/100
 912/912 [==============================] - 0s 426us/step - loss: 0.1022 - accuracy: 0.9704 - val_loss: 0.4051 - val_accuracy: 0.8816
+
 keras's fit function returns a history object containing information about the training and validation accuracies measured following each epoch of the training. Let's use that information to plot the training and validation accuracy over time.
 
-In [7]:
+```python
 def show_history(hist):
     acc = hist.history['accuracy']
     val_acc = hist.history['val_accuracy']
@@ -244,15 +247,18 @@ def show_history(hist):
     plt.plot()
     
 show_history(hist)
+```
 
 In all likelihood, the training accuracy approached 100% (1.0) in later epochs, while the validation accuracy peaked out between 80% and 90%. Let's try widening the working layer to 512 neurons and comparing the results.
 
-In [8]:
+```python
 model = Sequential()
 model.add(Dense(512, activation='relu', input_shape=(image_width * image_height,)))
 model.add(Dense(class_count, activation='softmax'))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 hist = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=100, batch_size=25)
+```
+
 Train on 912 samples, validate on 228 samples
 Epoch 1/100
 912/912 [==============================] - 2s 2ms/step - loss: 2.6869 - accuracy: 0.3147 - val_loss: 1.3441 - val_accuracy: 0.4649
@@ -888,12 +894,13 @@ Epoch 100/100
 912/912 [==============================] - 0s 317us/step - loss: 0.1846 - accuracy: 0.9298 - val_loss: 0.5241 - val_accuracy: 0.8596
 Time to check the results.
 
-In [13]:
+```python
 show_history(hist)
+```
 
 At this point, it might be helpful to run some test data through the network and generate a confusion matrix showing how it performed. We can use scikit-learn's confusion_matrix function to generate the confusion matrix and seaborn to plot it.
 
-In [14]:
+```python
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 
@@ -908,6 +915,7 @@ plt.xlabel('Actual label')
 plt.ylabel('Predicted label')
 Out[14]:
 Text(89.18, 0.5, 'Predicted label')
+```
 
 How many times did the model correctly identify George W. Bush, who had the most samples in the training set? How many times did it identify him as someone else?
 

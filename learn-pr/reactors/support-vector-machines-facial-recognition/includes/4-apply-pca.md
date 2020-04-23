@@ -1,4 +1,3 @@
-Apply Principal Component Analysis (PCA)
 PCA reduces the number of dimensions in a dataset from m to n, often without incurring a commensurate loss of information. For example, it might reduce the number of dimensions by 50% but retain 90% of the information in the original dataset. Think of a world globe projected onto a sheet of paper to create a world map. The 2D map contains almost all of the information that the 3D globe does, but it has 1/3rd fewer dimensions.
 
 It is possible that using PCA to reduce the number of columns ("features") in the dataset will increase the accuracy of the model by reducing the amount of information in each facial image, effectively filtering out the "noise" of too much detail. A pleasant side effect is that the model should train faster, too. Let's build a pipeline that performs a PCA transform on the input data, reducing 2,914 columns to 150, and uses an SVM classifier to fit a model to the training data.

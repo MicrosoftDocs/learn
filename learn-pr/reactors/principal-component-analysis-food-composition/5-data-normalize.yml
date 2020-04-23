@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.principal-component-analysis-food-composition.5-data-normalize
-title: Combine datasets
+title: Normalize the data
 metadata:
-  title: Combine datasets
-  description: Combine datasets by using pandas DataFrames.
+  title: Normalize the data
+  description: Normalize the data TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

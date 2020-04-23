@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.principal-component-analysis-food-composition.4-data-clean
-title: Remove duplicate data
+title: Clean the data
 metadata:
-  title: Remove duplicate data
-  description: Remove duplicate data in a pandas DataFrame.
+  title: Clean the data
+  description: Clean the data TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

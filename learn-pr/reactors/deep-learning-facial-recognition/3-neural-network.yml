@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.deep-learning-facial-recognition.3-neural-network
-title: Variables
+title: Neural networks
 metadata:
-  title: Variables
-  description: Learn how to use variables in Python for data science.
+  title: Neural networks
+  description: Neural networks.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

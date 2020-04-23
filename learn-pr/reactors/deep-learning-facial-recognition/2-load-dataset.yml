@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.deep-learning-facial-recognition.2-load-dataset
-title: Arithmetic and numeric types in Python
+title: Load the dataset
 metadata:
-  title: Arithmetic and numeric types in Python
-  description: Learn about arithmetic and numeric types in Python.
+  title: Load the dataset
+  description: Load the dataset.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

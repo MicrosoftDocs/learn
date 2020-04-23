@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.support-vector-machines-facial-recognition.6-cross-validate
-title: Exploratory statistics and visualization
+title: Cross-validation
 metadata:
-  title: Exploratory statistics and visualization
-  description: Exploratory statistics and visualization by using a pandas DataFrame.
+  title: Cross-validation
+  description: Cross-validation TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
