@@ -17,8 +17,7 @@ def read_url(url):
     return re.sub('\\s+', ' ', urlopen(url).read().decode())
 ```
 
-Plotting the classics
----------------------
+## Plotting the classics
 
 In this example, we will explore statistics for two classic novels: *The
 Adventures of Huckleberry Finn* by Mark Twain, and *Little Women* by
@@ -155,8 +154,7 @@ with open(little_women_path, 'r') as ff:
 little_women_chapters = little_women_text.split('CHAPTER ')[1:]
 ```
 
-Literary Characters
--------------------
+## Literary Characters
 
 *The Adventures of Huckleberry Finn* describes a journey that Huck and
 Jim take along the Mississippi River. Tom Sawyer joins them towards the
@@ -181,7 +179,7 @@ cum_counts.plot(column_for_xticks=3)
 plots.title('Cumulative Number of Times Each Name Appears', y=1.08);
 ```
 
-![png](../media/5_Literary_Characters_3_0.png)
+![png](../media/5-literary-characters-3-0.png)
 
 In the plot above, the horizontal axis shows chapter numbers and the
 vertical axis shows how many times each character has been mentioned up
@@ -332,7 +330,7 @@ cum_counts.plot(column_for_xticks=5)
 plots.title('Cumulative Number of Times Each Name Appears', y=1.08);
 ```
 
-![png](../media/5_Literary_Characters_8_0.png)
+![png](../media/5-literary-characters-8-0.png)
 
 Laurie is a young man who marries one of the girls in the end. See if
 you can use the plots to guess which one.
@@ -368,8 +366,7 @@ little_women_text = read_url(little_women_url)
 little_women_chapters = little_women_text.split('CHAPTER ')[1:]
 ```
 
-Another Kind of Character
--------------------------
+## Another Kind of Character
 
 In some situations, the relationships between quantities allow us to
 make predictions. This text will explore how to make accurate
@@ -635,7 +632,7 @@ plots.xlabel('Number of periods in chapter')
 plots.ylabel('Number of characters in chapter');
 ```
 
-![png](../media/6_Another_Kind_Of_Character_9_0.png)
+![png](../media/6-another-kind-of-character-9-0.png)
 
 The plot shows us that many but not all of the chapters of *Little
 Women* are longer than those of *Huckleberry Finn*, as we had observed
@@ -653,4 +650,8 @@ Indeed, it appears from looking at the plot that on average both books
 tend to have somewhere between 100 and 150 characters between periods,
 as a very rough estimate. Perhaps these two great 19th century novels
 were signaling something so very familiar to us now: the 140-character
+limit of Twitter.
+o very familiar to us now: the 140-character
+limit of Twitter.
+ry familiar to us now: the 140-character
 limit of Twitter.

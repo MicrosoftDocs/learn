@@ -1,5 +1,4 @@
-Causality and Experiments
--------------------------
+## Causality and Experiments
 
 *"These problems are, and will probably ever remain, among the
 inscrutable secrets of nature. They belong to a class of questions
@@ -40,3 +39,4 @@ not just whether there there is a relation between chocolate and health.
 The establishment of causality often takes place in two stages. First,
 an association is observed. Next, a more careful analysis leads to a
 decision about causality.
+ision about causality.

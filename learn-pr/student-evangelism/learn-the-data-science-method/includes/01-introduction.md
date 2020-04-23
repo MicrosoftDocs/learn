@@ -1,5 +1,4 @@
-What is Data Science?
----------------------
+## What is Data Science?
 
 Data Science is about drawing useful conclusions from large and diverse
 data sets through exploration, prediction, and inference. Exploration
@@ -23,8 +22,7 @@ understanding a particular domain, data scientists learn to ask
 appropriate questions about their data and correctly interpret the
 answers provided by our inferential and computational tools.
 
-Chapter 1: Introduction
------------------------
+## Chapter 1: Introduction
 
 Data are descriptions of the world around us, collected through
 observation and stored on computers. Computers enable us to infer
@@ -68,8 +66,7 @@ techniques are described to readers in the same language in which they
 are described to the computers that execute them---a programming
 language.
 
-Statistical Techniques
-----------------------
+## Statistical Techniques
 
 The discipline of statistics has long addressed the same fundamental
 challenge as data science: how to draw robust conclusions about the
@@ -98,8 +95,7 @@ or conditions. Although these techniques have often been reserved for
 advanced courses in statistics, their flexibility and simplicity are a
 natural fit for data science applications.
 
-Why Data Science?
------------------
+## Why Data Science?
 
 Most important decisions are made with only partial information and
 uncertain outcomes. However, the degree of uncertainty for many
@@ -128,4 +124,6 @@ The world has too many unanswered questions and difficult challenges to
 leave this critical reasoning to only a few specialists. All educated
 members of society can build the capacity to reason about data. The
 tools, techniques, and data sets are all readily available; this text
+aims to make them accessible to everyone.
+all readily available; this text
 aims to make them accessible to everyone.

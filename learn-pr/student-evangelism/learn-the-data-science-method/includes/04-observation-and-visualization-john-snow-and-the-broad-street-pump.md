@@ -1,5 +1,4 @@
-Establishing Causality
-----------------------
+## Establishing Causality
 
 In the language developed earlier in the section, you can think of the
 people in the S&V houses as the treatment group, and those in the
@@ -61,8 +60,7 @@ cause the disease.
 Confounding factors are common in observational studies. Good studies
 take great care to reduce confounding and to account for its effects.
 
-Observation and Visualization: John Snow and the Broad Street Pump
-------------------------------------------------------------------
+## Observation and Visualization: John Snow and the Broad Street Pump
 
 One of the most powerful examples of astute observation eventually
 leading to the establishment of causality dates back more than 150
@@ -104,8 +102,8 @@ Here is Snow's original map. Each black bar represents one death. When
 there are multiple deaths at the same address, the bars corresponding to
 those deaths are stacked on top of each other. The black discs mark the
 locations of water pumps. The map displays a striking revelation---the
-deaths are roughly clustered around the Broad Street pump. ![Snow's
-Cholera Map](../media/snow_map.jpg)
+deaths are roughly clustered around the Broad Street pump. ![snow's
+cholera map](../media/snow-map.jpg)
 
 Snow studied his map carefully and investigated the apparent anomalies.
 All of them implicated the Broad Street pump. For example: - There were
@@ -165,8 +163,7 @@ with the average murder rate in states that don't.
 If the results are different, that is evidence for an association. To
 determine causation, however, even more care is needed.
 
-Snow's "Grand Experiment"
--------------------------
+## Snow's "Grand Experiment"
 
 Encouraged by what he had learned in Soho, Snow completed a more
 thorough analysis. For some time, he had been gathering data on cholera
@@ -177,8 +174,8 @@ the Southwark and Vauxhall (S&V) company drew its water below the sewage
 discharge, and thus its supply was contaminated.
 
 The map below shows the areas served by the two companies. Snow honed in
-on the region where the two service areas overlap. ![Snow's Other
-Map](../media/snow_map2.jpg)
+on the region where the two service areas overlap. ![snow's other
+map](../media/snow-map2.jpg)
 
 Snow noticed that there was no systematic difference between the people
 who were supplied by S&V and those supplied by Lambeth. "Each company
@@ -205,4 +202,11 @@ summarized his data in the table below.
 
 The numbers pointed accusingly at S&V. The death rate from cholera in
 the S&V houses was almost ten times the rate in the houses supplied by
+Lambeth.
+d by
+Lambeth.
+m cholera in
+the S&V houses was almost ten times the rate in the houses supplied by
+Lambeth.
+d by
 Lambeth.
