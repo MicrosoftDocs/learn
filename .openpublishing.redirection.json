@@ -1024,6 +1024,11 @@
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/5-amazon-s3.md",
       "redirect_url": "https://docs.microsoft.com/learn/cmu-cloud-computing/cmu-case-study-nosql-databases/5-openstack-swift/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/7-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/secure-your-azure-virtual-machine-disks/8-summary/",
+      "redirect_document_id": true
     }
   ]
 }
