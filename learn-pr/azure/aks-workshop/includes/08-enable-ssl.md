@@ -86,7 +86,7 @@ Let's Encrypt is a nonprofit Certificate Authority that provides TLS certificate
     code cluster-issuer.yaml
     ```
 
-1. Replace the existing content in the file with the following text. Note the change of the service `type` to `ClusterIP`.
+1. Replace the existing content in the file with the following text.
 
     ```yaml
     apiVersion: cert-manager.io/v1alpha2
