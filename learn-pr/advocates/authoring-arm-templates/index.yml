@@ -25,8 +25,7 @@ roles:
 - administrator
 - solution-architect
 products:
-- azure shell
-- azure-cli
+- azure-clis
 - azure-resource-manager
 units:
 - learn.authoring-arm-templates.1-introduction
