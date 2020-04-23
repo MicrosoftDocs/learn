@@ -149,7 +149,7 @@ You can use VS Code to run all the commands and edit all the code for your webap
     cd countdownFlaskApp
     ```
 
-1. On the **File** menu, select **Open File ...** (or **Open ...** on iOS) and then browse to the **countdownFlaskApp** folder and select the **Open** button.  Visual Studio Code should load the new folder in the Explorer view.
+1. On the **File** menu, select **Open File ...** (or **Open ...** on macOS) and then browse to the **countdownFlaskApp** folder and select the **Open** button.  Visual Studio Code should load the new folder in the Explorer view.
 
 ## Create and activate a virtual environment for Flask development
 
@@ -161,7 +161,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
     ```console
     py -m venv env
     ```
-    Or, in iOS, type the following command into the terminal:
+    Or, in macOS, type the following command into the terminal:
 
     ```console
     python3 -m venv env
@@ -169,15 +169,15 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     You will not see a success message or any other feedback.
 
-1. Open the Command Palette using <kbd>Ctrl+Shift+P</kbd> on Windows and Linux (or <kbd>Command+Shift+P<kbd> on iOS) and execute the **Python: Select Interpreter** command.
+1. Open the Command Palette using <kbd>Ctrl+Shift+P</kbd> on Windows and Linux (or <kbd>Command+Shift+P</kbd> on macOS) and execute the **Python: Select Interpreter** command.
 
-    Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on iOS).
+    Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on macOS).
 
     ![Screenshot of completed project in web browser.](../media/3-python-select-interpreter.png)
 
 1. Close the integrated terminal.
 
-1. Run **Terminal: Create New Integrated Terminal (Ctrl+Shift+`)** from the Command Palette, which creates a terminal and automatically activates the virtual environment by running its activation script *activate.bat*.
+1. Run **Terminal: Create New Integrated Terminal (Ctrl+Shift+`)** from the Command Palette, which creates a terminal and automatically activates the virtual environment by running its activation script.
 
     You should now see the command line prompt prefixed with `(env)`.
 
@@ -187,7 +187,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
     > If you do not see the prefix `(env)` on your command prompt you are not working in the virtual environment.
 
     > [!IMPORTANT]
-    > On Windows, if your default terminal type is PowerShell, you may see an error that it cannot run activate.ps1 because running scripts is disabled on the system. The error provides a link for information on how to allow scripts. Otherwise, use erminal: Select Default Shell to set "Command Prompt" or "Git Bash" as your default instead.
+    > On Windows, if your default terminal type is PowerShell, you may see an error that it cannot run activate.ps1 because running scripts is disabled on the system. The error provides a link for information on how to allow scripts. Otherwise, use **Terminal: Select Default Shell** to set "Command Prompt" or "Git Bash" as your default instead.
 
     Once you have created and activated the virtual environment, you're ready to install Flask inside of your virtual environment.
 
@@ -219,9 +219,10 @@ Using a virtual environment avoids installing Flask into a global Python environ
 Now that we have the file structure in place, we can focus on the application logic.
 
 Our aim here is to:
-    - Add `import` statements to pull in the various packages we'll need to support our web app.
-    - Create an instance of the Flask object that essentially starts the web app.
-    - Define a function that will handle the default route.  Since this is a simple app, we'll do all our business logic (i.e., our date time math) and send the number of milliseconds to our Jinja template.
+
+- Add `import` statements to pull in the various packages we'll need to support our web app.
+- Create an instance of the Flask object that essentially starts the web app.
+- Define a function that will handle the default route.  Since this is a simple app, we'll do all our business logic (i.e., our date time math) and send the number of milliseconds to our Jinja template.
 
 1. In the VS Code Explorer window, select **app.py** and add the following code:
 
@@ -350,7 +351,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
     py -m flask run
     ```
 
-    In iOS and Linux, run the following command:
+    In macOS and Linux, run the following command:
 
     ```command
     python3 -m -flask run
@@ -370,7 +371,6 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 ![Screenshot of completed project in web browser.](../media/3-flask-complete.png)
 
-1. Close the web browser. In the VS Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On iOS, select <kbd>Control+C</kbd> to quit the development server.
-
+1. Close the web browser. In the VS Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
 
 ::: zone-end

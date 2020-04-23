@@ -71,7 +71,7 @@ Here, you'll learn about Flask and how to use it on development computers, serve
 
 ## What is Flask?
 
-Flask is a "micro" framework that allows Python developers to quickly build web applications, including dynamic web sites and web apis.  A "micro" framework includes very little built-in functionality and intead allows you to choose from extensions that provide the features you want.  For example, in this module we'll use a web page template to render most of the web page.  While Flask provides the Jinja templating engine Flask extension by default, it does not force you to use it.  You could instead opt to install a separate Python package to use a different Flask extension to use as a templating engine.
+Flask is a "micro" framework that allows Python developers to quickly build web applications, including dynamic web sites and web apis.  A "micro" framework includes very little built-in functionality and instead allows you to choose from extensions that provide the features you want.  For example, in this module we'll use a web page template to render most of the web page.  While Flask provides the Jinja templating engine Flask extension by default, it does not force you to use it.  You could instead opt to install a separate Python package to use a different Flask extension to use as a templating engine.
 
 ## What is Visual Studio Code?
 

@@ -84,7 +84,7 @@ In this unit, you'll modify the code and redeploy the website.
 Let's start by modifying the code, so that it calculates a whole number of days:
 
 1. Start VS Code if it is not already running. 
-1. If the **countdownExpressApp** folder is not already open, then in Windows on the **File** menu, select **Open Folder...** and then browse to the folder and select **Select Folder**.  Or in iOS, on the **File** menu, select **Open...** and browse to the folder, then select **Open**.
+1. If the **countdownExpressApp** folder is not already open, then in Windows on the **File** menu, select **Open Folder...** and then browse to the folder and select **Select Folder**.  Or in macOS, on the **File** menu, select **Open...** and browse to the folder, then select **Open**.
 1. In the VS Code Explorer window, select **app.py**. 
 1. Locate this line of code:
 
@@ -143,14 +143,14 @@ You must also alter the view slightly:
 py -m flask run
 ```
 
-In iOS, type the following at the command prompt:
+In macOS, type the following at the command prompt:
 
 ```command
 python3 -m flask run
 ```
 
 1. Open a web browser to http://127.0.0.1:5000 and confirm that the changes function correctly.
-1. In the VS Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On iOS, select <kbd>Control+C</kbd> to quit the development server.
+1. In the VS Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
 
 ## Publish the new version
 

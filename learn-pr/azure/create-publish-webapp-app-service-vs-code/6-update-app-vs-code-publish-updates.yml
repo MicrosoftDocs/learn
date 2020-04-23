@@ -4,7 +4,7 @@ title: Update the app in Visual Studio Code and publish the updates
 metadata:
   title: Update the app in Visual Studio Code and publish the updates
   description: In this unit, you'll learn how to publish and manage updates to Azure App Service webapps by using Visual Studio Code.
-  ms.date: 03/20/2020
+  ms.date: 04/23/20
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
