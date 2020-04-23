@@ -61,6 +61,38 @@ To summarize the general conditions where QIO performs well:
 - Optimization landscapes should be rugged but structured. Such landscapes arise frequently in practice, for example in traffic optimization or solving satisfiability problems.
 - If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with over 100 variables, QIO has achieved orders of magnitude improvement over previously used methods.
 
+## Simulated and quantum annealing
+For optimization problems in search spaces that are too large to solve by exhaustive search and objective functions that are rugged but structured, one of the most successful and commonly used heuristics is simulated annealing.
+
+- **Heuristic**: A technique for finding an approximate solution, when finding the exact solution may take too long.
+- **Walker**: We can imagine a person or a particle in our solution space, and each step taken creates a path, or walk, through the optimization landscape.
+
+Simulated annealing is like gradient descent in that the algorithm simulates a walker that preferentially moves downhill. 
+But unlike in gradient descent, the walker can take uphill moves with some non-zero probability. 
+This creates the possibility for the walker to escape from local minima and then descend into deeper neighboring minima, as illustrated below.
+
+![A plot which shows a walker taking an uphill move in order to find a lower point](../media/plot_sa2.png)
+
+You'll notice this uphill move is described as a "thermal jump" in the illustration. 
+That's because simulated annealing is a physics-inspired algorithm that mimics the behaviour of materials as they are slowly cooled.
+The atoms in a metal, for instance, are driven by thermal motion to reconfigure themselves. 
+These changes are random, however moves to lower-energy configurations are more likely than moves to higher-energy configurations.
+Hence, we say it follows a biased random walk.
+
+But what is the probability that one of these moves will occur? 
+Since the moves are driven by thermal motion, it depends on the temperature.
+It also depends on the energy of the current and proposed configurations, and finally, a constant called the Boltzmann factor.
+
+Mathematically, the probability can be written as follows:
+
+![A mathematical formula](../media/sa.png)
+
+Simulated annealing algorithms mimic this process not only conceptually but in quantitative detail. 
+Over the course of the algorithm the temperature is gradually lowered. 
+This ensures that at the beginning, the optimization algorithm explores the search space widely, whereas at the end of the algorithm reconfiguration is tuned toward small changes that finetune the solution.
+
+## QIO Methods
+Quantum inspired
 # Explain general ideas of optimization
 In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
 objective function, cost function, gradient descent
