@@ -8,7 +8,7 @@ The earlier module explains how to monitor and command the movements of a refrig
 
 In this module, we build the IoT Central app from a pre-prepared JSON file defining all the device capabilities. The device app code is loaded and run. A more detailed explanation of the sections of code is available in the earlier module.
 
-You may notice that the next two units are identical to those in the [Set up rules and take action on telemetry data in Azure IoT Central](https://docs.microsoft.com/en-us/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/) module, which also builds on the refrigerated trucks scenario, in this case to add rules and actions. If your free trial period is not over, you may even be able to reuse the app you built for this other module, and go straight to Unit 4.
+You may notice that the next two units are identical to those in the [Set up rules and take action on telemetry data in Azure IoT Central](https://docs.microsoft.com/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/) module, which also builds on the refrigerated trucks scenario, in this case to add rules and actions. If your free trial period is not over, you may even be able to reuse the app you built for this other module, and go straight to Unit 4.
 
 ## Learning objectives
 
