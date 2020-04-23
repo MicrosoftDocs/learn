@@ -7,7 +7,7 @@ The [World Air Quality Index](https://waqi.info) aggregates air quality data fro
 * A single location to get the nearest reading for a city or location
 * All the stations within a rectangle defined using the north-east and south-west coordinates of the rectangle.
 
-To plot as much data as possible on the map, the visible map bounds can be used to request data for all the stations within a rectangle defined by those bounds.
+The map should plot as much data as possible based on the visible area of the map. AQI data can be requested for just those stations within the visible area. This makes the API call faster, as only the data needed is requested.
 
 ### AQI data format
 
@@ -32,14 +32,14 @@ The AQI data is in the following JSON format:
 }
 ```
 
-The `data` property contains an array of measurements for all the measuring stations requested. The measurements have a location as longitude and latitude, as well as the AQI measurement. This data can't be plotted on the map as is, it first needs to be converted to a GeoJSON feature collection.
+The `data` property contains an array of measurements for all the measuring stations requested. The measurements have a location as longitude and latitude, and the AQI measurement. This data can't be plotted on the map as is, it first needs to be converted to a GeoJSON feature collection.
 
 The following steps will convert the data to a feature collection, and these steps will be implemented in code later in this unit.
 
 1. Create a blank feature collection
 1. For each item in the `data` array, create a new feature:
     1. The `geometry` of the feature is a `Point`, with the `coordinates` set to the `lon` and `lat`
-    1. Rather than plot the AQI measurement directly, it is easier to visualize with a colored bubble, so convert the AQI measurement to a color value as an RGB hex string, and add this to the features property array
+    1. Rather than plot the AQI measurement directly, it's easier to visualize with a colored bubble. Convert the AQI measurement to a color value as an RGB hex string, and add to the features property array
 
 For example, for the data above, the GeoJSON would be:
 
@@ -62,7 +62,7 @@ For example, for the data above, the GeoJSON would be:
 
 ### Get an API token
 
-To use the WAQI API you'll need to register for an API key from the [WAQI Data Platform page](https://aqicn.org/data-platform/token/#/). You'll need to provide and verify an email address to get the token.
+To use the WAQI API, you'll need to register for an API key from the [WAQI Data Platform page](https://aqicn.org/data-platform/token/#/). You'll need to provide and verify an email address to get the token.
 
 Once you have the API token, it needs to be added to the environment variables ready for the app to use
 
@@ -141,11 +141,11 @@ The Flask app will need to call the API to load the data for the visible portion
         return json.dumps(load_aqi_data(bounds[0], bounds[1], bounds[2], bounds[3]))
     ```
 
-This code implements an API call inside the Flask app that will load the AQI data from the API for a set of coordinates passed in. The AQI data will then be converted to a feature collection and returned as a JSON string. This API can then be called from the web page.
+This code implements an API call inside the Flask app that will load the AQI data from the API for a given set of coordinates. The AQI data will then be converted to a feature collection and returned as a JSON string. This API can then be called from the web page.
 
 ### Show the air quality data on the map
 
-The feature collection created from the AQI data is ready to be shown on a map. Azure Maps has data sources that are used to plot layers, and these data sources can be created from GeoJSON feature collections.
+The feature collection created from the AQI data is ready to be shown on a map. Azure Maps uses data sources to plot layers, and these data sources can source their data from GeoJSON feature collections.
 
 1. Open the `home.html` file in the `templates` directory
 
@@ -217,4 +217,4 @@ The feature collection created from the AQI data is ready to be shown on a map. 
 
     Navigate around the map and you'll see the bubbles update to match the area you are viewing.
 
-1. Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some are obvious, such as countries with large numbers of fossil fuel based power plants or factories, but some are not so obvious. Find ones near to you can think about the cause of the pollution.
+1. Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some are obvious, such as areas with large numbers of fossil fuel burning power stations or factories, others are not so obvious. Find ones near to you can think about the cause of the pollution.
