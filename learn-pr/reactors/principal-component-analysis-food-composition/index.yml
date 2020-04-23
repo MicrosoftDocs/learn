@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.reactors.principal-component-analysis-food-composition
+metadata:
+  title: Principal compoment analysis with food composition
+  description: Learn how to TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+title: Principal compoment analysis with food composition
+summary: How to TBD.
+abstract:  | 
+  In this module, you will:
+  - TBD
+  - TBD
+  - TBD
+  
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - TBD
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.principal-component-analysis-food-composition.1-introduction
+- learn.reactors.principal-component-analysis-food-composition.2-pca-theory-action
+- learn.reactors.principal-component-analysis-food-composition.3-data-download
+- learn.reactors.principal-component-analysis-food-composition.4-data-clean
+- learn.reactors.principal-component-analysis-food-composition.5-data-normalize
+- learn.reactors.principal-component-analysis-food-composition.6-pca-practice
+- learn.reactors.principal-component-analysis-food-composition.7-interpret-results
+- learn.reactors.principal-component-analysis-food-composition.8-categorization
+badge:
+  uid: learn.reactors.principal-component-analysis-food-composition.badge 

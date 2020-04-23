@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.deep-learning-facial-recognition.2-load-dataset
+title: Load the dataset
+metadata:
+  title: Load the dataset
+  description: Load the dataset.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-load-dataset.md)] 

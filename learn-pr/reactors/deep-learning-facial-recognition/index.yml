@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.reactors.deep-learning-facial-recognition
+metadata:
+  title: Deep learning with facial recognition
+  description: Learn how to TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Deep learning with facial recognition
+summary: Learn how to TBD.
+abstract: |
+  In this module, you will:
+  - TBD
+  - TBD
+  - TBD
+
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - TBD
+# placeholder icon
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.deep-learning-facial-recognition.1-introduction
+- learn.reactors.deep-learning-facial-recognition.2-load-dataset
+- learn.reactors.deep-learning-facial-recognition.3-neural-network
+- learn.reactors.deep-learning-facial-recognition.4-dropout
+- learn.reactors.deep-learning-facial-recognition.5-convolutional-neural-network
+badge:
+  uid: learn.reactors.deep-learning-facial-recognition.badge 

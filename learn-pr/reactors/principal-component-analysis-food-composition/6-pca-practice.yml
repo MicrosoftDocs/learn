@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.principal-component-analysis-food-composition.6-pca-practice
+title: Practice PCA
+metadata:
+  title: Practice PCA
+  description: Practice PCA TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-pca-practice.md)]

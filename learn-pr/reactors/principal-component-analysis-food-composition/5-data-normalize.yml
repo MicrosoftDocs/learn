@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.principal-component-analysis-food-composition.5-data-normalize
+title: Normalize the data
+metadata:
+  title: Normalize the data
+  description: Normalize the data TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-data-normalize.md)]

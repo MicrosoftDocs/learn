@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.principal-component-analysis-food-composition.7-interpret-results
+title: Interpret the results
+metadata:
+  title: Interpret the results
+  description: Interpret the results TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-interpret-results.md)]
