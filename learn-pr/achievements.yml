@@ -65,6 +65,11 @@ achievements:
   title: Tour Azure services and features
   summary: Tour Azure services and features
   iconUrl: /learn/achievements/tour-azure-portal-features.svg
+- uid: learn.create-neural-network-with-dsvm.badge
+  type: badge
+  title: Create a neural network with DSVM
+  summary: Create a neural network with DSVM
+  iconUrl: /learn/achievements/create-neural-network-with-dsvm.svg
 # HACK: Adding achievement from UID that was never meant to be published, but was earned by 280+ folks anyway.
 - uid: learn.cert.administer-infrastructure-resources-in-azure.trophy
   type: trophy
