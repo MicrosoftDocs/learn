@@ -22,7 +22,7 @@ You will want to design your cloud environment so that it's cost-effective to op
 
 ### Operational excellence
 
-You need to have a good monitoring architecture in place so that you can detect failures and problems before they happen or, at a minimum, before your customers notice. You also need to have some visibility in to how your application is using its available resources, through a robust monitoring framework.
+By taking advantage of modern development practices, such as DevOps, you can enable faster development and deployment cycles. You need to have a good monitoring architecture in place so that you can detect failures and problems before they happen or, at a minimum, before your customers notice. Automation is a key aspect of this pillar to remove variance and error while increasing operational agility.
 
 ### Performance efficiency
 
