@@ -4,6 +4,7 @@ It is possible that using PCA to reduce the number of columns ("features") in th
 
 Pipelines are a handy mechanism in scikit-learn for building complex models that transform input data before using it to train or predict.
 
+```python
 from sklearn.decomposition import PCA
 from sklearn.pipeline import make_pipeline
 
@@ -11,22 +12,30 @@ pca = PCA(n_components=150, whiten=True, svd_solver='randomized', random_state=4
 svc = SVC(class_weight='balanced', gamma='auto')
 model = make_pipeline(pca, svc)
 model.fit(x_train, y_train)
-Out[7]:
+```
+
+```output
 Pipeline(memory=None,
      steps=[('pca', PCA(copy=True, iterated_power='auto', n_components=150, random_state=42,
   svd_solver='randomized', tol=0.0, whiten=True)), ('svc', SVC(C=1.0, cache_size=200, class_weight='balanced', coef0=0.0,
   decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
   max_iter=-1, probability=False, random_state=None, shrinking=True,
   tol=0.001, verbose=False))])
+```
+
 Now let's score the model again.
 
-In [8]:
+```python
 model.score(x_test, y_test)
-Out[8]:
+```
+
+```output
 0.9122807017543859
+```
+
 That's much better! Is it intuitive why using PCA to eliminate almost 95% of the data in each facial image increased the accuracy of the model? If not, try running the code below to visualize what the faces look like after they're PCAed. Then compare the resulting facial images to the ones above. Do you see the difference? Now is it obvious why PCA had such a dramatic effect on the model?
 
-In [9]:
+```python
 transformed = pca.transform(faces.data)
 restored = pca.inverse_transform(transformed).reshape(1140, 62, 47)
 
@@ -34,6 +43,6 @@ fig, ax = plt.subplots(3, 8, figsize=(18, 10))
 for i, axi in enumerate(ax.flat):
     axi.imshow(restored[i], cmap='gist_gray')
     axi.set(xticks=[], yticks=[], xlabel=faces.target_names[faces.target[i]])
-
+```
 
 Here's something else to consider. How is it possible that eliminating almost 95% of the data in a facial dataset retains enough information that you can still recognize the faces? And what does that tell you about PCA?

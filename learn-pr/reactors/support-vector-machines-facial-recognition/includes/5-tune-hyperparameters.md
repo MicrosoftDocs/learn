@@ -2,7 +2,7 @@ One way to find the optimum combination of parameters provided to a learning alg
 
 We'll use GridSearchCV to find the C and gamma that work best together. Note that training will take longer now because since we're testing five different C values and seven different gamma values, the model will be trained 35 times. (Good thing we reduced the number of dimensions with PCA!)
 
-In [10]:
+```python
 from sklearn.model_selection import GridSearchCV
 
 params = {'svc__C': [0.01, 0.1, 1, 10, 100],
@@ -14,7 +14,9 @@ grid.fit(x_train, y_train)
   warnings.warn(CV_WARNING, FutureWarning)
 /home/nbuser/anaconda3_501/lib/python3.6/site-packages/sklearn/model_selection/_search.py:841: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
   DeprecationWarning)
-Out[10]:
+```
+
+```output
 GridSearchCV(cv='warn', error_score='raise-deprecating',
        estimator=Pipeline(memory=None,
      steps=[('pca', PCA(copy=True, iterated_power='auto', n_components=150, random_state=42,
@@ -26,21 +28,30 @@ GridSearchCV(cv='warn', error_score='raise-deprecating',
        param_grid={'svc__C': [0.01, 0.1, 1, 10, 100], 'svc__gamma': [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1]},
        pre_dispatch='2*n_jobs', refit=True, return_train_score='warn',
        scoring=None, verbose=0)
+```
+
 Now let's find out what the optimum values for C and gamma are, and replace model with the optimized model.
 
-In [11]:
+```python
 print(grid.best_params_)
 model = grid.best_estimator_
 {'svc__C': 1, 'svc__gamma': 0.005}
+```
+
 Finally, let's see if the optimized ("hypertuned") model does a better job of recognizing faces than our original model.
 
-In [12]:
+```python
 model.score(x_test, y_test)
-Out[12]:
+```
+
+```output
 0.9385964912280702
+```
+
+
 It appears that we improved the model's accuracy by about 2.5%. Let's print a classification report to get a more detailed assessment of the model's accuracy.
 
-In [13]:
+```python
 from sklearn.metrics import classification_report
 
 y_predicted = model.predict(x_test)
@@ -56,10 +67,11 @@ Gerhard Schroeder       0.87      0.91      0.89        22
         micro avg       0.94      0.94      0.94       228
         macro avg       0.92      0.93      0.92       228
      weighted avg       0.94      0.94      0.94       228
+```
 
 For clarity, let's generate a confusion matrix to see how the model really performed during testing.
 
-In [14]:
+```python
 from sklearn.metrics import confusion_matrix
 
 mat = confusion_matrix(y_test, y_predicted)
@@ -68,8 +80,11 @@ sns.heatmap(mat.T, square=True, annot=True, fmt='d', cbar=False, cmap='Blues',
             yticklabels=faces.target_names)
 plt.xlabel('Actual label')
 plt.ylabel('Predicted label')
-Out[14]:
+```
+
+```output```
 Text(89.18, 0.5, 'Predicted label')
+```
 
 The model correctly identified Colin Powell 49 times out of 50, Donald Rumsfeld 23 times out of 25, and so on. That's not bad. And it's a great example of Support Vector Machines at work. It would be challenging, perhaps impossible, to do this well using more conventional learning algorithms such as logistic regression.
 
