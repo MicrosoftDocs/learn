@@ -8,7 +8,7 @@ This learning path makes extensive use of Jupyter Notebooks that run in Visual S
 
 ## Set up your environment
 
-To learn most effectively throughout this learning path, we recommend that you set up your environment so you can follow along. 
+To learn most effectively throughout this learning path, we recommend that you set up your environment so you can follow along.
 
 Complete these steps to set up your environment:
 
@@ -86,4 +86,4 @@ In this module, you will:
 
 ## Prerequisites
 
-None
+- None
