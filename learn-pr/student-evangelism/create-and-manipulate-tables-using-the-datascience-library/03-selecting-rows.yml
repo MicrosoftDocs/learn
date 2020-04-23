@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.selecting-rows
+title: Selecting Rows
+metadata:
+  title: Selecting Rows
+  description: Introduction to variable names in Python.
+  ms.date: 03/12/2020
+  author: sauravmittal
+  ms.author: n/a
+  ms.topic: interactive-tutorial
+  ms.prod: n/a
+durationInMinutes: 5
+content: |
+  [!include[](includes/03-selecting-rows.md)]
+content: 'Select one of the following table commands with a description of its effect. Assume that t is a table that has already been loaded.'
+
+quiz:
+  questions:
+    - content: 'Displays the first few rows of t'
+      choices:
+        - content: t.select(...)
+          isCorrect: false
+          explanation: Incorrect. t.select will subset the data to a table omly containing the selected columns
+        - content: t.take(...)
+          isCorrect: false
+          explanation: Incorrect. We want to display the first few rows, not subset the data to the first few rows.
+        - content: t.show(...)
+          isCorrect: true
+          explanation: Correct.
+    - content: 'Reads a table from a file or webpage'
+      choices:
+        - content: Table.read_table(...)
+          explanation: Correct.
+          isCorrect: true
+        - content: t.select(...)
+          isCorrect: false
+          explanation: Incorrect. t.barh(...) will draw a bar graph from the table.
+        - content: t.show(...)
+          isCorrect: false
+          explanation: Incorrect. t.show(...) displays the selected rows of the table.
+    - content: 'Returns a table with some of the columns of t.'
+      choices:
+        - content: t.select(...)
+          isCorrect: true
+          explanation: Correct. t.select returns a table consisting of the selected columns
+        - content: t.column(...)
+          isCorrect: false
+          explanation: Inorrect. t.coulmn(...) will return the selected column as an array.
+        - content: t.column(...).item(...)
+          isCorrect: false
+          explanation: Incorrect. t.column(...).item(...) will get the selected item out of the array returned by t.column(...).
+    - content: 'Returns a table with the same contents as t, but with the rows ordered by the values in a certain column.'
+      choices:
+        - content: Table.read_table(...)
+          explanation: Incorrect. Table.read_table(...) reads a table from a file or webpage
+          isCorrect: false
+        - content: t.sort(...)
+          isCorrect: true
+          explanation: Correct. notice that t.sort(...) will just return the sorted table, but does not make change to t, meaning that t will remain unsorted.
+        - content: t.show(...)
+          isCorrect: false
+          explanation: Incorrect. t.show displays the selected rows of the table.
+    - content: Returns a single value from a cell in t.
+      choices:
+        - content: t.column(...).item(...)
+          isCorrect: true
+          explanation: Correct. t.column(...).item(...) will get the selected item out of the array returned by t.column(...).
+        - content: t.column(...)
+          isCorrect: false
+          explanation: Inorrect. t.coulmn(...) will return the selected column as an array.
+        - content: t.show(...)
+          isCorrect: false
+          explanation: Incorrect. t.show displays the selected rows of the table.
