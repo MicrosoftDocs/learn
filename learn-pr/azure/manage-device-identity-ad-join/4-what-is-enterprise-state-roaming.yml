@@ -17,23 +17,23 @@ quiz:
   questions:
   - content: "What is classified as stale data?"
     choices:
-    - content: "Any data that hasn't been accessed for more than 90 days."
+    - content: "Any data that hasn't been accessed for more than 90 days"
       isCorrect: false
       explanation: "All data is kept for up to a year before it's considered stale. It can be recovered within 90 days of being deleted."
-    - content: "Any data that hasn't been accessed for more than 180 days."
+    - content: "Any data that hasn't been accessed for more than 180 days"
       isCorrect: false
       explanation: "All data is kept for up to a year before it's considered stale. It can be recovered within 90 days of being deleted."
-    - content: "Any data that hasn't been accessed for more than 360 days."
+    - content: "Any data that hasn't been accessed for more than 360 days"
       isCorrect: true
       explanation: "Any data that hasn't been accessed for one year or more is considered stale and is automatically deleted."
-  - content: "Name one of the benefits of using Enterprise State Roaming?"
+  - content: "Can you name one of the benefits of using Enterprise State Roaming?"
     choices:
     - content: "Enhanced security"
       isCorrect: true
-      explanation: "All applicable device data is encrypted using Azure Rights Management before synchronizing with the cloud. All stored data remains encrypted."
+      explanation: "All applicable device data is encrypted through Azure Rights Management before synchronizing with the cloud. All stored data remains encrypted."
     - content: "Separation of cloud and device data"
       isCorrect: false
-      explanation: "The three benefits of Enterprise State Roaming are: Separation of corporate and consumer data, enhanced security, and better management."
+      explanation: "The three benefits of Enterprise State Roaming are: separation of corporate and consumer data, enhanced security, and better management."
     - content: "Improved consumer data management"
       isCorrect: false
-      explanation: "The three benefits of Enterprise State Roaming are: Separation of corporate and consumer data, enhanced security, and better management."
+      explanation: "The three benefits of Enterprise State Roaming are: separation of corporate and consumer data, enhanced security, and better management."
