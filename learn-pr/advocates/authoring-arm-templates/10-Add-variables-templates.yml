@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.Authoring-Azure-Resource-Manager-Templates.5-Add-resources-to-templates-Exercise
+uid: learn.Authoring-Azure-Resource-Manager-Templates.10-Add-variables-templates
 title: Introduction
 metadata:
   title: Introduction
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-Add-resources-to-templates-Exercise.md)]
+  [!include[](includes/10-Add-variables-templates.md)]
