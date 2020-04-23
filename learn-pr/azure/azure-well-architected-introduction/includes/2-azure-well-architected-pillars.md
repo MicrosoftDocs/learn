@@ -1,10 +1,10 @@
 The cloud has changed the way organizations solve their business challenges, and how applications and systems are designed. The role of a solution architect is not only to deliver business value through the functional requirements of the application, but to ensure the solution is designed in ways that are scalable, resilient, efficient and secure. Solution architecture is concerned with the planning, design, implementation, and ongoing improvement of a technology system. The architecture of a system must balance and align the business requirements with the technical capabilities needed to execute those requirements. It includes an evaluation of risk, cost, and capability throughout the system and its components.
 
-## Azure Well Architected framework
+## Azure Well-Architected framework
 
-The Azure Well Architected framework is a set of guiding tenants to build high quality solutions on Azure. While there is no one-size-fits-all approach to designing an architecture, there are some universal concepts that will apply regardless of the architecture, technology, or cloud provider. While these are not all-inclusive, focusing on these concepts will help you build a reliable, secure, and flexible foundation for your application.
+The Azure Well-Architected framework is a set of guiding tenants to build high quality solutions on Azure. While there is no one-size-fits-all approach to designing an architecture, there are some universal concepts that will apply regardless of the architecture, technology, or cloud provider. While these are not all-inclusive, focusing on these concepts will help you build a reliable, secure, and flexible foundation for your application.
 
-The Azure Well Architected framework consists of five pillars:
+The Azure Well-Architected framework consists of five pillars:
 
 - Cost optimization
 - Operational excellence
@@ -12,7 +12,7 @@ The Azure Well Architected framework consists of five pillars:
 - Reliability
 - Security
 
-![An illustration showing the pillars of the Azure Well Architected framework](../media/pillars.png)
+![An illustration showing the pillars of the Azure Well-Architected framework](../media/pillars.png)
 
 ### Cost optimization
 

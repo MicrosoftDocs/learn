@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-introduction.2-azure-well-architected-pillars
-title: Azure Well Architected pillars
+title: Azure Well-Architected pillars
 metadata:
-  title: Azure Well Architected pillars
-  description: Azure Well Architected pillars
+  title: Azure Well-Architected pillars
+  description: Azure Well-Architected pillars
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes

@@ -1,6 +1,6 @@
-Your organization has moved a majority of their systems to the cloud, but are now seeing cost increases in areas they didn't expect. After some observation, you realize you're inefficient across your environment, and are still doing manual operational work.
+Just moving resources to the cloud is only taking advantage of a small portion of what the cloud can bring to your organization. Along with the technical capabilities the cloud brings, you can improve your operational capabilities as well.
 
-Here, we'll take a look at operational excellence.
+Here, we'll take a look at the operational excellence pillar.
 
 ## What is operational excellence?
 

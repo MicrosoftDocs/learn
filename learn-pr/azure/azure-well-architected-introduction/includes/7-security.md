@@ -1,6 +1,6 @@
-Healthcare organizations store personal and potentially sensitive client data. Financial institutions store account numbers, balances, and transaction history. Retailers store purchase history, account information, and demographic details of customers. A security incident could expose this sensitive data, which could cause personal embarrassment or financial harm. How do you ensure the integrity of their data and ensure your systems are secure? 
+Healthcare organizations store personal and potentially sensitive client data. Financial institutions store account numbers, balances, and transaction history. Retailers store purchase history, account information, and demographic details of customers. A security incident could expose this sensitive data, which could cause personal embarrassment or financial harm. How do you ensure the integrity of their data and ensure your systems are secure?
 
-Here, we'll talk about how to approach the security of an architecture.
+Here, we'll talk about important elements of the security pillar.
 
 ## What is security?
 

@@ -1,6 +1,6 @@
 Imagine a news story has just been published covering your organization's recent product announcement. This additional publicity will undoubtedly bring a large influx of traffic to your website. Will the website handle this traffic increase, or will the load cause the site to be slow or unresponsive?
 
-Here, we'll look at some of the basic principles of ensuring outstanding application performance using scaling and optimization principles.
+Here, we'll look at some of the basic principles of ensuring outstanding application performance using scaling and optimization principles that make up the performance efficiency pillar.
 
 ## What is performance efficiency?
 
