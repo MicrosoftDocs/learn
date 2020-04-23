@@ -12,7 +12,7 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
 1. Inside this folder, create a new folder called `templates`. This folder will hold HTML templates used by the Flask app.
 
-### Install the necessary Pip packages
+### Configure the Python environment
 
 1. Open the Visual Studio Code terminal if it isn't already open by selecting **Terminal > New terminal**.
 
@@ -35,9 +35,17 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
     ![The activate virtual env dialog](../media/activate_venv_dialog.png)
 
     > [!NOTE]
-    > If the dialog does not pop up asking to select the virtual environment, you can do it manually by selecting the Python interpreter version from the Visual Studio Code status bar, and selecting the Python version that is in the `./.venv/bin/python` folder. Once selected, kill and recreate the terminal to ensure that your terminal is using the virtual environment.
+    > If the dialog does not pop up asking to select the virtual environment, you can do it manually by selecting the Python interpreter version from the Visual Studio Code status bar, and selecting the Python version that is in the `./.venv/bin/python` folder.
 
-1. Add a file called `requirements.txt` to this folder, and add the following to this file:
+1. Kill the current terminal by selecting the trash can button.
+
+    ![The kill terminal button](../media/kill_terminal.png)
+
+1. Re-launch the terminal by selecting **Terminal > New terminal**, to ensure that your terminal is using the virtual environment.
+
+### Install the necessary Pip packages
+
+1. Add a file called `requirements.txt` to the root folder, and add the following to this file:
 
     ```sh
     flask
@@ -51,6 +59,11 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
     * `python-dotenv` - this package allows environment variables such as the maps key to be loaded from environment files
     * `requests` - this package makes it easy to make web requests, and will be used later to query pollution data
 
+1. Save the file
+
+  > [!TIP]
+  > If you don't want to have to remember to save files after every change, you can turn on Auto Save by selecting **File > Auto Save**
+
 1. Install the Pip packages from the terminal using the following command:
 
     ```sh
@@ -59,10 +72,10 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
 ### Create an environment file
 
-The flask app will need to use your Azure Maps key to load the map control onto a page. It is best practice to store data such as this in environment variables so that it isn't checked in to source code control, and can be configured to different values when developing or publishing your app. Flask will use the python-dotenv package to look for a file called `.env` in the root of your app, and load environment variables from this file.
+The Flask app will need to use your Azure Maps key to load the map control onto a page. It is best practice to store data such as this in environment variables so that it isn't checked in to source code control, and can be configured to different values when developing or publishing your app. Flask will use the python-dotenv package to look for a file called `.env` in the root of your app, and load environment variables from this file.
 
 > [!TIP]
-> If you deploy this app to Azure using Azure App Services, the values in the `.env` file will need to be set as Application Settings so that they are automatically set as environment variables that the app can use.
+> If you deploy this app to Azure using Azure App Services, the values in the `.env` file will need to be added to the Application Settings so that they are automatically set as environment variables that the app can use.
 
 1. Create a file in the root of the folder called `.env`
 
@@ -73,6 +86,8 @@ The flask app will need to use your Azure Maps key to load the map control onto 
     ```
 
     Replace `<your map key>` with the value of the primary key you retrieved after creating the Azure Maps account in an earlier unit. This value should not be in quotes.
+
+1. Save the file
 
 ### Create the application Python file
 
@@ -103,9 +118,6 @@ The flask app will need to use your Azure Maps key to load the map control onto 
     This code will handle requests to '/', so the root of the web site. When this page is loaded, the app will use the key from the `.env` file to create some data, which is used to render the `home.html` file as a parameter called `data`.
 
 1. Save the file
-
-  > [!TIP]
-  > If you don't want to have to remember to save files after every change, you can turn on Auto Save by selecting **File > Auto Save**
 
 ### Create the home.html file
 
@@ -174,8 +186,8 @@ The flask app will need to use your Azure Maps key to load the map control onto 
 
     This web page will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users' location is retrieved. This request will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise the location of the Microsoft campus in Redmond, Washington, USA will be used.
 
-    [!INFO]
-    > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK), going east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°,
+    [!NOTE]
+    > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK). It goes east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°,
 
     The map control is then loaded into the div. The maps key is set to `{{ data.map_key }}`, and this notation is the Flask notation to render data into the HTML file. What this means is that when this page is returned to the users web browser, the value `{{ data.map_key }}` is replaced by the value of the `map_key` set on the `data` object. This object was passed to the `render_template` call in the `app.py` file, and the `map_key` is set to the Azure Maps primary key loaded from the `.env` file.
 
@@ -222,6 +234,10 @@ Open the URL in your web browser, and you'll see the map. If you give the site p
 
 Try navigating around the map by dragging, using the mouse wheel, or pinching to zoom in and out.
 
+When you are finished, stop the app using the stop button on the debug toolbar.
+
+![The stop button](../media/stop_button.png)
+
 ## Troubleshooting
 
 ### Exception has occurred: KeyError
@@ -238,5 +254,15 @@ Check the following:
 ### No data on the map
 
 If you don't see any data on the map, but you do see the Microsoft logo, then you are not using a valid key for the map control. Check the value in the `.env` file to ensure it is correct. This value should not be in quotes.
+
+## 500 Internal server error
+
+If the web page gives a **500 Internal Server Error**, check the logs in the Visual Studio Code terminal. If you see the following:
+
+```output
+jinja2.exceptions.TemplateNotFound: home.html
+```
+
+Then the `home.html` file is not in the right location. It should be in the `templates` folder. Move the file and re-launch the Flask app.
 
 In this unit, you created a Flask app that showed a map using the Azure Maps web SDK. Next, let's learn about the GeoJSON format for spatial data.

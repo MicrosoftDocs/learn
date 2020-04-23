@@ -1,8 +1,8 @@
 In this unit, you'll retrieve air quality data from an API and convert it to GeoJSON ready to show on the map as a bubble layer.
 
-## Get pollution data
+## Get air quality data
 
-The [World Air Quality Index](https://waqi.info) aggregates air quality data from around the world, and makes this data available as a free API you can use in your app. The data is available as the current AQI (Air Quality Index) reading for multiple recording stations around the world. When you request data, you can do it for either:
+The [World Air Quality Index](https://waqi.info) aggregates air quality data from around the world, and makes this data available through a free API you can use in your app. The data is available as the current AQI (Air Quality Index) reading for multiple recording stations around the world. When you request data, you can do it for either:
 
 * A single location to get the nearest reading for a city or location
 * All the stations within a rectangle defined using the north-east and south-west coordinates of the rectangle.
@@ -32,7 +32,7 @@ The AQI data is in the following JSON format:
 }
 ```
 
-The `data` property contains an array of measurements for all the measuring stations requested. The measurements have a location as longitude and latitude, and the AQI measurement. This data can't be plotted on the map as is, it first needs to be converted to a GeoJSON feature collection.
+The `data` property contains an array of JSON objects for all the measuring stations requested. These object have a location as longitude and latitude, and the AQI measurement. This data can't be plotted on the map as is, it first needs to be converted to a GeoJSON feature collection.
 
 The following steps will convert the data to a feature collection, and these steps will be implemented in code later in this unit.
 
@@ -76,6 +76,8 @@ Once you have the API token, it needs to be added to the environment variables r
 
     Replace `<your waqi key>` with the value of your API key from the World Air Quality Index.
 
+1. Save the file
+
 1. Open the `app.py` file
 
 1. Load this API key, and define a constant for the API URL by adding the following code after the `MAP_KEY` is loaded:
@@ -86,6 +88,8 @@ Once you have the API token, it needs to be added to the environment variables r
     ```
 
     The API URL defines the call to get all the air quality readings for a rectangle.
+
+1. Save the file
 
 ### Load the air quality data
 
@@ -140,6 +144,8 @@ The Flask app will need to call the API to load the data for the visible portion
         # Load the AQI data and create the GeoJSON for the given bounds
         return json.dumps(load_aqi_data(bounds[0], bounds[1], bounds[2], bounds[3]))
     ```
+
+1. Save the file
 
 This code implements an API call inside the Flask app that will load the AQI data from the API for a given set of coordinates. The AQI data will then be converted to a feature collection and returned as a JSON string. This API can then be called from the web page.
 
@@ -211,10 +217,12 @@ The feature collection created from the AQI data is ready to be shown on a map. 
 
     The `updateAQIData` function is added to three map events that are fired when the map is zoomed, moved or the pitch is changed, so every time the user moves the map, the function is called. This function gets the current bounds from the maps camera, so the north-west and south-east coordinates of the map piece that is visible on screen. The function then passes these bounds to a call to the `api` route, calling into the Python code to load the AQI data. Finally this feature collection is added to the data source.
 
+1. Save the file
+
 1. Run the Flask app and open it in a browser. You'll see colored circles showing the AQI data.
 
     ![A map showing air quality as colored circles](../media/final-output.png)
 
     Navigate around the map and you'll see the bubbles update to match the area you are viewing.
 
-1. Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some are obvious, such as areas with large numbers of fossil fuel burning power stations or factories, others are not so obvious. Find ones near to you can think about the cause of the pollution.
+1. Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some are obvious, such as areas with large numbers of fossil fuel burning power stations or factories, others are not so obvious. Find ones near to you, and think about the cause of the pollution.
