@@ -82,10 +82,14 @@ Create another document set of text and use the Text Analytics API to detect the
 
   <summary>Hint - TBD <i>(expand to reveal)</i></summary>
 
-  ```Python
+  Here's the input:
+  
+  ```python
   tbd
   ```
 
+  The output is:
+  
   ```Output
   tbd
   ```

@@ -80,10 +80,14 @@ What other key phrases can you come up with for analysis?
 
   <summary>Hint - TBD <i>(expand to reveal)</i></summary>
 
+  Here's the input:
+
   ```python
   tbd
   ```
 
+  The output is:
+  
   ```Output
   tbd
   ```

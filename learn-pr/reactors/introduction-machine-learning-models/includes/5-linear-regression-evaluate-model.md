@@ -18,7 +18,7 @@
 
 Now, a moment of truth: let's see how our model does making predictions based on the test data:
 
-```Python
+```python
 predictions = reg.predict(X_test)
 
 predictions
@@ -35,7 +35,7 @@ These are the house prices predicted by our model. One for every row in our test
 
 Remember how we mentioned that linear models have the mathematical form of $Y = B_0 + B_1 \times X + E$? Let’s look at the actual equation:
 
-```Python
+```python
 print(reg.intercept_,reg.coef_)
 ```
 
@@ -61,7 +61,7 @@ Where:
 
 So, just how good is our model? There are many ways to measure the accuracy of ML models. Linear models have a good one: the $R^2$ score (also knows as the coefficient of determination). A high $R^2$, close to 1, indicates better prediction with less error.
 
-```Python
+```python
 #Explained variation. A high R2 close to 1 indicates better prediction with less error.
 from sklearn.metrics import r2_score
 
@@ -78,7 +78,7 @@ The $R^2$ score also indicates how much explanatory power a linear model has. In
 
 We can also plot our errors to get a visual sense of how wrong our predictions were:
 
-```Python
+```python
 #plot errors
 sns.distplot([y_test-predictions])
 ```
@@ -93,7 +93,7 @@ If the `disttplot` command produces a deprecation warning, you can disregard the
 Here is the plot graph output:
 
 ```Output
-<matplotlib.axes._subplots.AxesSubplot at 0x7f58fadeaf60>
+<matplotlib.axes._subplots.AxesSubplot at 0x1aeb567edc8>
 ```
 
 :::image type="content" alt-text="A bell-shaped curve graph showing the dist plot output for the prediction." source="../media/output-dist-plot-2.png" loc-scope="azure":::
@@ -102,28 +102,42 @@ Do you notice the numbers on the left axis? Whereas a histogram shows the number
 
 Maybe more gratifying, we can plot the predictions from our model:
 
-```Python
+```python
 # Plot outputs
 plt.scatter(y_test,predictions, color='blue')
 ```
+
+```Output
+<matplotlib.collections.PathCollection at 0x1aeb56e32c8>
+```
+
+:::image type="content" alt-text="A scatter graph showing the dist plot output for the prediction." source="../media/output-scatter-plot-1.png" loc-scope="azure":::
 
 The linear nature of our predicted prices is clear enough, but there are so many of them that it is hard to tell where dots are concentrated. Can you think of a way to refine this visualization to make it clearer, particularly if you were explaining the results to someone?
 
 ### Try it yourself
 
+<br />
+
 <details> 
 
   <summary>Remember to try the <i>plt.scatter</i> parameter <i>alpha=</i>. It takes values between 0 and 1. <i>(expand to reveal)</i></summary>
 
-  ```Python
+  Here's the input:
+
+  ```python
   TBD
   ```
+
+  The output is:
 
   ```Output
   TBD
   ```
   
 </details>
+
+<br /><br />
 
 ***
 

@@ -26,11 +26,11 @@ If logistic regression uses observations about variables to swing a metaphorical
 
 Let's look at this in practice with the same _Titanic_ dataset we used with logistic regression.
 
-```Python
+```python
 from sklearn import tree
 ```
 
-```Python
+```python
 tr = tree.DecisionTreeClassifier()
 ```
 
@@ -44,47 +44,72 @@ TBD
 
 Using the same split data as with the logistic regression, can you fit the decision tree model?
 
+<br />
+
 <details> 
 
   <summary>Hint: Refer to the code snippet for fitting the logistic regression in the unit "Logistic regression: Handle missing values".<i>(expand to reveal)</i></summary>
 
-  ```Python
+  Here's the input:
+
+  ```python
   tr.fit(X_train, y_train)
   ```
-
+  
+  The output is:
+  
   ```Output
-  TBD
+  DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort='deprecated',
+                       random_state=None, splitter='best')
   ```
   
 </details>
+
+<br /><br />
 
 ***
 
 After it's fitted, we get our predicitions just like we did in the logistic regression example above:
 
-```Python
+```python
 tr_predictions = tr.predict(X_test)
 ```
 
-```Python
+```python
 pd.DataFrame(confusion_matrix(y_test, tr_predictions), 
              columns=['True Survived', 'True Not Survived'], 
              index=['Predicted Survived', 'Predicted Not Survived'])
 ```
 
-```Python
+The output is:
+
+```Output
+--------------------------------------------------------------
+|                        | True Survived | True Not Survived |
+--------------------------------------------------------------
+| Predicted Survived     |      130      |         32        |
+--------------------------------------------------------------
+| Predicted Not Survived |       37      |         69        |   
+--------------------------------------------------------------
+```
+
+```python
 print(accuracy_score(y_test,tr_predictions))
 ```
 
 The output is:
 
 ```Output
-TBD
+0.7425373134328358
 ```
 
 One of the great attractions of decision trees is that the models are readable by humans. Let's visualize to see it in action. (Note that the generated graphic can be quite large, so scroll to the right if the generated graphic just looks blank at first.)
 
-```Python
+```python
 import graphviz 
 
 dot_file = tree.export_graphviz(tr, out_file=None, 
