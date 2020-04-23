@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.support-vector-machines-facial-recognition.5-combine-datasets
+uid: learn.reactors.support-vector-machines-facial-recognition.5-tune-hyperparameters
 title: Combine datasets
 metadata:
   title: Combine datasets
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 30
 content: |
-  [!include[](includes/5-combine-datasets.md)]
+  [!include[](includes/5-tune-hyperparameters.md)]
