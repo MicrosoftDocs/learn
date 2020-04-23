@@ -92,6 +92,23 @@ Simulated annealing algorithms mimic this process not only conceptually but in q
 Over the course of the algorithm the temperature is gradually lowered, which means that moves to higher-energy configurations become less and less likely.
 This ensures that the search space is explored widely at the beginning, and at the end only small changes are made that finetune the solution.
 
+### Quantum annealing
+Quantum annealing is a quantum algorithm which is similar in spirit to simulated annealing but different in its quantitative details. 
+In quantum annealing, instead of giving assignments to variables, we give assignments to qubits.
+The energy of a given assignment to the qubits is the value of the objective function.
+Initially we begin with the quantum state in a broad superposition over many possible assignments to the qubits.
+We then vary the parameters of the system (as we did in simulated annealing) according to an "annealing schedule".
+By the end of the anneal, the system has settled into one particular configuration of low energy which can then be measured, thus yielding a (not necessarily optimal) solution to the desired optimization problem.
+The most mathematically clean formulation of quantum annealing is called adiabatic quantum optimization, and is what quantum inspired methods attempt to emulate.
+
+### From Quantum to Quantum Inspired Optimization
+One essential feature determining the difficulty of optimization problems is the shape of the barriers that separate local minima from deeper neighboring minima. 
+It can be shown in some examples that the runtime of adiabatic quantum optimization algorithms depends sensitively on the width of these barriers but is relatively insensitive to their height. 
+Example problems can be constructed containing tall narrow barriers that are solved efficiently by adiabatic quantum optimization but which require exponential time to solve by simulated annealing due to the exponentially small Boltzmann factors.
+The capacity to cross tall narrow barriers (a process called quantum tunneling) is the mostly commonly cited argument in favor of quantum annealing.
+
+![A graph showing a small thin barrier, and a wide barrier](../media/qa.png)
+
 ## QIO Methods
 Quantum inspired
 # Explain general ideas of optimization
