@@ -13,7 +13,7 @@
 
 We'll begin by importing our usual libraries and using our `%matplotlib` inline magic command:
 
-```Python
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -29,7 +29,7 @@ The `%matplotlib` command produces an message while building the font cache:
 
 And now for our data. In this case, we’ll use a newer housing dataset than the Boston Housing Dataset we used in the last section (with this one storing data on individual houses across the United States).
 
-```Python
+```python
 df = pd.read_csv('./Data/Housing_Dataset_Sample.csv')
 df.head()
 ```
@@ -57,13 +57,19 @@ The output table looks like this:
 
 Do you remember the `DataFrames` method for looking at overall information about a `DataFrame`, such as number of columns and rows? Try it here.
 
+<br />
+
 <details> 
 
   <summary>Hint - TBD <i>(expand to reveal)</i></summary>
 
-  ```Python
+  Here's the input:
+
+  ```python
   TBD
   ```
+
+  The output is:
 
   ```Output
   TBD
@@ -71,11 +77,13 @@ Do you remember the `DataFrames` method for looking at overall information about
   
 </details>
 
+<br /><br />
+
 ***
 
 Let's also use the `describe` method to look at some of the vital statistics about the columns. Note that in cases like this, in which some of the column names are long, it can be helpful to view the transposition of the summary, like so:
 
-```Python
+```python
 df.describe().T
 ```
 
@@ -107,7 +115,7 @@ Here's a version of the output table where the rows and columns are transposed:
 
 Let's look at the data in the **Price** column:
 
-```Python
+```python
 sns.distplot(df['Price'])
 ```
 
@@ -128,7 +136,7 @@ As we would hope with this much data, our prices form a nice bell-shaped, normal
 
 Now, let's look at a simple relationship like that between house prices and the average income in a geographic area:
 
-```Python
+```python
 sns.jointplot(df['Avg. Area Income'],df['Price'])
 ```
 
@@ -151,7 +159,7 @@ Also good: the pairplot shows that the data in both columns is normally distribu
 
 Let's take a quick look at all of the columns:
 
-```Python
+```python
 sns.pairplot(df)
 ```
 
