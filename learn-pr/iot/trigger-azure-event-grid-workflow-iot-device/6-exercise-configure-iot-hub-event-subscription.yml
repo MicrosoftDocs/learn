@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-configure-iot-hub-event-subscription
+title: Exercise - Configure Azure IoT Hub Event Subscription
+metadata:
+  title: Exercise - Configure Azure IoT Hub Event Subscription
+  description: Exercise - Configure Azure IoT Hub Event Subscription
+  ms.date: 3/20/20
+  author: olivierbloch
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: True
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-configure-iot-hub-event-subscription.md)]
