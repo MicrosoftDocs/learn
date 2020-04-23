@@ -1,25 +1,24 @@
 ### YamlMime:Module
 uid: learn.reactors.deep-learning-facial-recognition
 metadata:
-  title: Deep learning 
+  title: Deep learning with facial recognition
   description: Learn how to use Deep learning.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
-title: Introduction to Python
+title: Deep learning with facial recognition
 summary: Learn how to Deep learning.
 abstract: |
   In this module, you will:
-  - Explore the basic syntax and features of Python
-  - Use Jupyter Notebooks to execute Python code within VS Code
-  - Learn how to store and manipulate simple data in Python
-  - Know how to import external modules into your Python environment
+  - TBD
+  - TBD
+  - TBD
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - Set up your environment
+  - TBD
 # placeholder icon
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

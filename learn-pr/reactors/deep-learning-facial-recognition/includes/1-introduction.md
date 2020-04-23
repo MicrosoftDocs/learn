@@ -11,7 +11,11 @@ In this exercise, you will use keras to build a series of neural networks that r
 
 In this module, you will:
 
-- 
+- TBD
+- TBD
+- TBD
 
 ## Prerequisites
+
+- TBD
 

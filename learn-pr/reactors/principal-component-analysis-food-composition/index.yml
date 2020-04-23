@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.reactors.principal-component-analysis-food-composition
 metadata:
-  title: Manipulate and clean data in Python
+  title: Principal compoment analysis with food composition
   description: Learn how to manipulate and clean data and datasets in Python, pandas, and NumPy.
   ms.date: 05/15/2020
   author: sguthals
@@ -15,14 +15,11 @@ abstract:  |
   - TBD
   - TBD
   - TBD
-  - TBD
-  - TBD
+  
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
   - TBD
-  - TBD
-  - TBD
-  - TBD
+  
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

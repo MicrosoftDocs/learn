@@ -1,29 +1,24 @@
 ### YamlMime:Module
 uid: learn.reactors.support-vector-machines-facial-recognition
 metadata:
-  title: SVM
+  title: Support vector machines and facial recognition
   description: Learn how to SVM.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-title: SVM
+title: Support vector machines and facial recognition
 summary: How to use Python and popular libraries like NumPy and pandas to manipulate and clean data to prepare it for analysis.
 abstract:  | 
   In this module, you will:
-  - Learn how to find general information about the data that's stored in a pandas DataFrame.
-  - Get a general knowledge of the ways you can combine DataFrames.
-  - Learn how to identify and remove duplicate values from a DataFrame.
-  - Learn how to replace or remove null values in a DataFrame.
-  - Learn ways to visually explore the data that's stored in a pandas DataFrame.
+  - TBD
+  - TBD
+  - TBD
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - Set up your environment
-  - Introduction to Python for data science
-  - Introduction to NumPy for data science
-  - Introduction to Pandas for data science
+  - TBD
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
