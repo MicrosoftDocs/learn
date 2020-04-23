@@ -60,6 +60,11 @@ achievements:
   title: Secure your Azure resources with Conditional Access
   summary: Secure your Azure resources with Conditional Access
   iconUrl: /learn/achievements/secure-azure-resources-with-conditional-access.svg
+- uid: learn.azure-services-features.badge
+  type: badge
+  title: Tour Azure services and features
+  summary: Tour Azure services and features
+  iconUrl: /learn/achievements/tour-azure-portal-features.svg
 - uid: learn.create-neural-network-with-dsvm.badge
   type: badge
   title: Create a neural network with DSVM
