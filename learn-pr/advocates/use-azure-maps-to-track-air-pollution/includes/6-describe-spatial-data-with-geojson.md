@@ -13,12 +13,17 @@ The GeoJSON format defines three different objects:
 
 ### Geometry
 
-A **Geometry** is a region in space, and can either be a single point defined by a longitude and latitude, multiple points in a line, or multiple points that describe the outline of a polygon. It can also contain multiple geometries.
+A **Geometry** is a region in space, and can be:
+
+* A single point defined by a longitude and latitude
+* Multiple points that describe a line
+* Multiple points that describe the outline of a polygon
+* A collection of multiple geometries
 
 The JSON object has two properties:
 
 * `type` - this property specifies the type of geometry, such as a `Point` or a `Polygon`
-* `coordinates` - this property contains the coordinates as longitude and latitude values in a two item array, with the first item the longitude, and the second the latitude. Points have a single value for a point, lines and polygons have multiple values in an array.
+* `coordinates` - this property contains the coordinates as longitude and latitude values in a two item array, with the first item the longitude, and the second the latitude. Points have a single value, lines and polygons have multiple values in an array.
 
     For polygons, the shape must be closed, so the last coordinate must be the same as the first.
 
@@ -48,7 +53,7 @@ An example polygon for a square around Paris is:
 }
 ```
 
-This square has 5 coordinates, the 4 corners and the last coordinate the same as the first to close the square.
+This square has five coordinates, the four corners and the last coordinate the same as the first to close the square.
 
 ### Feature
 
