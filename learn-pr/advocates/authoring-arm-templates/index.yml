@@ -28,19 +28,19 @@ products:
 - azure-clis
 - azure-resource-manager
 units:
-- learn.authoring-Azure-Resource-Manager-templates.1-introduction
-- learn.authoring-Azure-Resource-Manager-templates.10-Add-variables-templates
-- learn.authoring-Azure-Resource-Manager-templates.11-Add-variables-templates-Exercise
-- learn.authoring-Azure-Resource-Manager-templates.12-Use-parameter-file-Exercise
-- learn.authoring-Azure-Resource-Manager-templates.12-Use-parameter-file
-- learn.authoring-Azure-Resource-Manager-templates.13-Summary
-- learn.authoring-Azure-Resource-Manager-templates.2-Create-first-template
-- learn.authoring-Azure-Resource-Manager-templates.3-Create-first-template-Exercise
-- learn.authoring-Azure-Resource-Manager-templates.4-Add-resources-templates
-- learn.authoring-Azure-Resource-Manager-templates.5-Add-resources-templates-Exercise
-- learn.authoring-Azure-Resource-Manager-templates.6-Add-parameters-templates
-- learn.authoring-Azure-Resource-Manager-templates.7-Add-parameters-templates-Exercise
-- learn.authoring-Azure-Resource-Manager-templates.8-Template-functions
-- learn.authoring-Azure-Resource-Manager-templates.9-Template-functions-Exercise
+- learn.learn.authoring-ARM-templates.1-introduction
+- learn.learn.authoring-ARM-templates.10-Add-variables-templates
+- learn.learn.authoring-ARM-templates.11-Add-variables-templates-Exercise
+- learn.learn.authoring-ARM-templates.12-Use-parameter-file-Exercise
+- learn.learn.authoring-ARM-templates.12-Use-parameter-file
+- learn.learn.authoring-ARM-templates.13-Summary
+- learn.learn.authoring-ARM-templates.2-Create-first-template
+- learn.learn.authoring-ARM-templates.3-Create-first-template-Exercise
+- learn.learn.authoring-ARM-templates.4-Add-resources-templates
+- learn.learn.authoring-ARM-templates.5-Add-resources-templates-Exercise
+- learn.learn.authoring-ARM-templates.6-Add-parameters-templates
+- learn.learn.authoring-ARM-templates.7-Add-parameters-templates-Exercise
+- learn.learn.authoring-ARM-templates.8-Template-functions
+- learn.learn.authoring-ARM-templates.9-Template-functions-Exercise
 badge:
-  uid: learn.Authoring-Azure-Resource-Manager-Templates
+  uid: learn.learn.authoring-ARM-Templates
