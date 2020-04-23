@@ -29,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: Correct. Azure Maps uses data sources containing GeoJSON feature collections to render layers on the map.
 
-  - content: 'How can you get the coordinates of the part of the map visible in the users browser?'
+  - content: 'How can you get the coordinates of the part of the map visible in the browser?'
     choices:
     - content: 'Get the bounds property from the maps camera'
       isCorrect: true

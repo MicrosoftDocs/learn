@@ -2,7 +2,7 @@ The Azure Maps web SDK has a whole host of different tools to visualize spatial 
 
 ## Render a map
 
-The Azure Maps web SDK has a JavaScript control that can be added to on a web page, and draws maps on the page. Maps are rendered using the **Spherical Mercator projection coordinate system**, the de facto standard for web-based mapping applications. This system stretches the map at both the North and South poles to create a square map that can be rendered on a flat screen. This stretching does mean that the further away from the equator you get, the more stretched the maps is. This makes countries like Greenland appear substantially larger than they are in reality.
+The Azure Maps web SDK has an interactive map JavaScript control that can be added to a web page. Maps are rendered using the **Spherical Mercator projection coordinate system**, the de facto standard for web-based mapping applications. This system stretches the map at both the North and South poles to create a square map that can be drawn on screen. This stretching does mean that the further away from the equator you get, the more stretched the map is. The end result is countries like Greenland appear substantially larger than they are in reality.
 
 Maps can be rendered in a number of different styles. These styles include:
 
@@ -56,8 +56,8 @@ The different layer types include:
 
 - Heat map
 
-    Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map. For example, a heat map could be used to show the relative risk of earthquakes based of the number and strength of historically detected earthquakes.
+    Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map. For example, a heat map could be used to show the relative risk of earthquakes based off the number and strength of previous earthquakes.
 
-The data source defines the location of the features in the layer, and can also provide data that controls how the layer is configured, for example what image to display or how large to make a bubble.
+The location of the features in the layer is defined by a data source. THe data source can also provide data that configures controls on the layer, for example what image to display or how large to make a bubble.
 
 In this unit, you learned about the Azure Maps web SDK. including styles, navigation and layers. Next, you'll create an Azure Maps account so you can use the web SDK in a web app.
