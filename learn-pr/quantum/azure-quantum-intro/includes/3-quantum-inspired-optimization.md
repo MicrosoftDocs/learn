@@ -62,6 +62,7 @@ To summarize the general conditions where QIO performs well:
 - If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with over 100 variables, QIO has achieved orders of magnitude improvement over previously used methods.
 
 ## Simulated and quantum annealing
+### Simulated annealing
 For optimization problems in search spaces that are too large to solve by exhaustive search and objective functions that are rugged but structured, one of the most successful and commonly used heuristics is simulated annealing.
 
 - **Heuristic**: A technique for finding an approximate solution, when finding the exact solution may take too long.
@@ -88,8 +89,8 @@ Mathematically, the probability can be written as follows:
 ![A mathematical formula](../media/sa.png)
 
 Simulated annealing algorithms mimic this process not only conceptually but in quantitative detail. 
-Over the course of the algorithm the temperature is gradually lowered. 
-This ensures that at the beginning, the optimization algorithm explores the search space widely, whereas at the end of the algorithm reconfiguration is tuned toward small changes that finetune the solution.
+Over the course of the algorithm the temperature is gradually lowered, which means that moves to higher-energy configurations become less and less likely.
+This ensures that the search space is explored widely at the beginning, and at the end only small changes are made that finetune the solution.
 
 ## QIO Methods
 Quantum inspired
