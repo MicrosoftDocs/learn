@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.deep-learning-facial-recognition.3-neural-network
+title: Variables
+metadata:
+  title: Variables
+  description: Learn how to use variables in Python for data science.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-neural-network.md)] 

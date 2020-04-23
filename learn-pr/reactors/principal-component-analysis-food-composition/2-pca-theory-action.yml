@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.principal-component-analysis-food-composition.2-pca-theory-action
+title: Explore DataFrame information
+metadata:
+  title: Explore DataFrame information
+  description: Explore DataFrame information.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-pca-theory-action.md)]
