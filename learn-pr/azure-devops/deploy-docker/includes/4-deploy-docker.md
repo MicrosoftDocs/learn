@@ -14,7 +14,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 1. From Azure DevOps, navigate to **Pipelines**.
 1. Select the pipeline.
-1. Select **Edit**. This will bring up the azure-pipelines.yml file that defines the existing CI/CD pipeline.
+1. Select **Edit**. This will bring up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
 
     **Andy:** This was our previous build stage. I haven't made any changes yet, so we'll need to completely update it to build and push the container. We added some variables to the shared library that will make it easier to update the pipeline if we change our deployment settings. However, we have some other strings that will be reused across tasks, so we should set them as pipeline variables within the file itself.
 
@@ -39,7 +39,7 @@ The `Docker@2` task is designed to build and deploy Docker containers. It's idea
 * `containerRegistry` specifies the name of the container registry connection to use.
 * `tags` indicates which tags to apply to the container image.
 
-You can learn more about the flexibility of this task in the official docs for the [Docker task](/azure/devops/pipelines/tasks/build/docker?azure-portal=true)
+You can learn more about the flexibility of this task in the [Docker task](/azure/devops/pipelines/tasks/build/docker?azure-portal=true) documentation.
 
 Replace the entire **Build** stage with the code below.
 
@@ -47,19 +47,19 @@ Replace the entire **Build** stage with the code below.
 
 ## Replace the deploy stage task
 
-**Andy:** Well that seems pretty straightforward. Now all we need to find is a task that will instruct the App Service Web App to use the newly pushed version of the container image.
+**Andy:** Well that seems pretty straightforward. Now all we need to find is a task that will instruct App Service to use the newly pushed version of the container image.
 
 **Mara:** I'm already on it. It's a bit different from deploying a build local to the pipeline, but still direct enough that we can get the job done in one task. Let's add it now.
 
 ### Azure Web App for Container task
 
-The `AzureWebAppContainer@1` task is designed to deploy Docker containers to Azure App Service Web Apps. Deployment can be accomplished with a single task:
+The `AzureWebAppContainer@1` task is designed to deploy Docker containers to App Service. Deployment can be accomplished with a single task:
 
 * `appName` specifies the name of the App Service instance.
 * `azureSubscription` specifies the name of the Azure connection.
 * `imageName` specifies the full name of the Docker container image.
 
-You can learn more about the flexibility of this task in the official docs for the [Azure Web App for Container task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-containers?azure-portal=true)
+You can learn more about the flexibility of this task in the [Azure Web App for Container task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-containers?azure-portal=true) documentation.
 
 Replace the entire **Deploy** stage with the code below.
 
@@ -69,11 +69,11 @@ Replace the entire **Deploy** stage with the code below.
 
 1. Select **Save** from the top right corner of the page. Confirm the **Save** to trigger a run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. After the build has succeeded, select the web app container's deploy task and click the URL to view the deployed site.
+1. After the build has succeeded, select the web app container's deploy task and select the URL to view the deployed site.
 
     ![Locating the web site URL](../media/4-deploy-url.png)
 
-1. You see the site in production.
+1. You see the site running on App Service.
 
     ![Reviewing Space Game](../media/4-space-game.png)
 

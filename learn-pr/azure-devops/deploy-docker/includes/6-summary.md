@@ -1,4 +1,4 @@
-Great work! In this module, we updated a release pipeline to build, publish, and deploy the team's web site project to Azure as a Docker container.
+Great work! In this module, you created a release pipeline to build, publish, and deploy the team's web site project to Azure as a Docker container.
 
 While this module specifically focused on a Docker container app, the fundamentals covered apply across a wide range of build and deployment targets. You can also see how Azure Pipelines can scale to support even the most sophisticated scenarios.
 

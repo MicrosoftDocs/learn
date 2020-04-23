@@ -130,32 +130,33 @@ To make commands easier to run, start by selecting a default region. After you s
     az configure --defaults location=westus2
     ```
 
-### Create some Bash variables
+### Create Bash variables
 
-Here, create some Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
+Create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
 
 1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
 
-    ```azurecli
+    ```bash
     resourceSuffix=$RANDOM
     ```
 
 1. Create globally unique names for your App Service Web App and Azure Container Registry. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
-    ```azurecli
-	webName="tailspin-space-game-web-${resourceSuffix}"
-	registryName="tailspinspacegame${resourceSuffix}"
-	```
+
+    ```bash
+    webName="tailspin-space-game-web-${resourceSuffix}"
+    registryName="tailspinspacegame${resourceSuffix}"
+    ```
 
 1. Create two more Bash variables to store the names of your resource group and service plan. 
 
-    ```azurecli
-	rgName='tailspin-space-game-rg'
-	planName='tailspin-space-game-asp'
-	```
+    ```bash
+    rgName='tailspin-space-game-rg'
+    planName='tailspin-space-game-asp'
+    ```
 
-### Create the Azure resources required
+### Create the Azure resources
 
-This solution requires several Azure resources for deployment, which will be created now.
+This solution requires several Azure resources for deployment, which you create now.
 
    > [!NOTE]
    > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
@@ -163,13 +164,13 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Run the following `az group create` command to create a resource group using the name defined earlier.
 
     ```azurecli
-	az group create --name $rgName
+    az group create --name $rgName
     ```
 
 1. Run the following `az acr create` command to create an Azure Container Registry using the name defined earlier.
 
     ```azurecli
-	az acr create --name $registryName \
+    az acr create --name $registryName \
       --resource-group $rgName \
       --sku Standard \
       --admin-enabled true
@@ -178,10 +179,10 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Run the following `az appservice plan create` command to create an App Service plan using the name defined earlier.
 
     ```azurecli
-	az appservice plan create \
-	  --name $planName \
-	  --resource-group $rgName \
-	  --sku B1 \
+    az appservice plan create \
+      --name $planName \
+      --resource-group $rgName \
+      --sku B1 \
       --is-linux
     ```
 
@@ -194,9 +195,9 @@ This solution requires several Azure resources for deployment, which will be cre
 
     ```azurecli
     az webapp create \
-	  --name $webName \
-	  --resource-group $rgName \
-	  --plan $planName \
+      --name $webName \
+      --resource-group $rgName \
+      --plan $planName \
       --deployment-container-image-name $registryName.azurecr.io/web:latest
     ```
 
@@ -204,9 +205,9 @@ This solution requires several Azure resources for deployment, which will be cre
 
     ```azurecli
     az webapp list \
-	  --resource-group $rgName \
-	  --query "[].{hostName: defaultHostName, state: state}" \
-	  --output table
+      --resource-group $rgName \
+      --query "[].{hostName: defaultHostName, state: state}" \
+      --output table
     ```
 
     Note the host name for the running service. You'll need it later when you verify your work. Here's an example:
@@ -221,17 +222,17 @@ This solution requires several Azure resources for deployment, which will be cre
 
     ```azurecli
     az acr list \
-	  --resource-group $rgName \
-	  --query "[].{loginServer: loginServer}" \
-	  --output table
+      --resource-group $rgName \
+      --query "[].{loginServer: loginServer}" \
+      --output table
     ```
 
     Note the login server. You'll need it later when you configure the pipeline. Here's an example:
 
     ```output
-	LoginServer
-	---------------------------------
-	tailspinspacegame4692.azurecr.io    
+    LoginServer
+    ---------------------------------
+    tailspinspacegame4692.azurecr.io    
     ```
 
 > [!IMPORTANT]
