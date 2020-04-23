@@ -32,7 +32,7 @@ products:
 - azure-devops
 units:
 - learn.azdo.deploy-kubernetes.1-introduction
-- learn.azdo.deploy-kubernetes.2-what-is-kubernetes
+- learn.azdo.deploy-kubernetes.2-why-container-orchestration
 - learn.azdo.deploy-kubernetes.3-set-up-environment
 - learn.azdo.deploy-kubernetes.4-deploy-kubernetes
 - learn.azdo.deploy-kubernetes.5-clean-up-environment

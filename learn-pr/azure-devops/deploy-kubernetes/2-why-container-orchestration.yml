@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.deploy-kubernetes.2-what-is-kubernetes
-title: What is Kubernetes?
+uid: learn.azdo.deploy-kubernetes.2-why-container-orchestration
+title: Why is container orchestration important?
 metadata:
-  title: What is Kubernetes?
+  title: Why is container orchestration important?
   description: Understand the benefits of Kubernetes and when to use it.
   ms.date: 04/24/2020
   author: tpetchel
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-what-is-kubernetes.md)]
+  [!include[](includes/2-why-container-orchestration.md)]
 quiz:
   title: Check your knowledge
   questions:
