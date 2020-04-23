@@ -6,7 +6,7 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
 1. Create a folder on your computer to store the code.
 
-1. Open Visual Studio Code, and open the folder you have created
+1. Open Visual Studio Code, and open the folder you've created
 
 1. In this folder, create a new file called `app.py`. By creating this Python file, Visual Studio Code will activate the Python extension ready to build this python app. You can see the progress of the extension activation in the bottom status bar.
 
@@ -30,7 +30,7 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
     python3 -m venv .venv
     ```
 
-    This will create a virtual environment inside the current folder. Visual Studio Code will detect this change, and ask if you want to select the virtual environment for this folder, so select **Yes**.
+    This command will create a virtual environment inside the current folder. Visual Studio Code will detect this change, and ask if you want to select the virtual environment for this folder. Select **Yes**.
 
     ![The activate virtual env dialog](../media/activate_venv_dialog.png)
 
@@ -41,7 +41,7 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
     ![The kill terminal button](../media/kill_terminal.png)
 
-1. Re-launch the terminal by selecting **Terminal > New terminal**, to ensure that your terminal is using the virtual environment.
+1. Relaunch the terminal by selecting **Terminal > New terminal**, to ensure that your terminal is using the virtual environment.
 
 ### Install the necessary Pip packages
 
@@ -72,7 +72,7 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
 ### Create an environment file
 
-The Flask app will need to use your Azure Maps key to load the map control onto a page. It is best practice to store data such as this in environment variables so that it isn't checked in to source code control, and can be configured to different values when developing or publishing your app. Flask will use the python-dotenv package to look for a file called `.env` in the root of your app, and load environment variables from this file.
+The Flask app will need to use your Azure Maps key to load the map control onto a page. It is best practice to store data such as this in environment variables so that it isn't checked in to source code control. Environment variables can be configured to different values when developing or publishing your app. Flask will use the python-dotenv package to look for a file called `.env` in the root of your app, and load environment variables from this file.
 
 > [!TIP]
 > If you deploy this app to Azure using Azure App Services, the values in the `.env` file will need to be added to the Application Settings so that they are automatically set as environment variables that the app can use.
@@ -85,7 +85,7 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
     MAP_KEY=<your map key>
     ```
 
-    Replace `<your map key>` with the value of the primary key you retrieved after creating the Azure Maps account in an earlier unit. This value should not be in quotes.
+    Replace `<your map key>` with the value of the primary key you retrieved after creating the Azure Maps account in an earlier unit. This value shouldn't be in quotes.
 
 1. Save the file
 
@@ -184,7 +184,7 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
     </html>
     ```
 
-    This web page will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users' location is retrieved. This request will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise the location of the Microsoft campus in Redmond, Washington, USA will be used.
+    This web page will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users' location is retrieved. This request will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise it will use the location of the Microsoft campus in Redmond, Washington, USA.
 
     [!NOTE]
     > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK). It goes east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°,
@@ -219,7 +219,7 @@ To run your app, select the green run triangle from the **Run** activity pane.
 
 ![The run button](../media/run_flask_app.png)
 
-The app will start, and in the output you'll see the local URL it is running on.
+The app will start, and in the output you'll see the local URL it's running on.
 
 ```output
  * Serving Flask app "app.py"
@@ -228,13 +228,13 @@ The app will start, and in the output you'll see the local URL it is running on.
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Open the URL in your web browser, and you'll see the map. If you give the site permission to get your location it will be centered on you, otherwise it will be centered on the Microsoft Campus in Redmond, Washington, USA.
+Open the URL in your web browser, and you'll see the map. If you give the site permission to get your location it will center on you, otherwise it will center on the Microsoft Campus in Redmond, Washington, USA.
 
 ![The map running in the Edge web browser](../media/map_in_edge.png)
 
 Try navigating around the map by dragging, using the mouse wheel, or pinching to zoom in and out.
 
-When you are finished, stop the app using the stop button on the debug toolbar.
+When you're finished, stop the app using the stop button on the debug toolbar.
 
 ![The stop button](../media/stop_button.png)
 
@@ -253,7 +253,7 @@ Check the following:
 
 ### No data on the map
 
-If you don't see any data on the map, but you do see the Microsoft logo, then you are not using a valid key for the map control. Check the value in the `.env` file to ensure it is correct. This value should not be in quotes.
+If you don't see any data on the map, but you do see the Microsoft logo, then you aren't using a valid key for the map control. Check the value in the `.env` file to ensure it is correct. This value shouldn't be in quotes.
 
 ## 500 Internal server error
 
