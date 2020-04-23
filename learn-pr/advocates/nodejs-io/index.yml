@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.nodejs-io
 metadata:
-  title: Introduction to Node.js I/O
+  title: Read and write data in a Node.js application with files, streams and processes
   description: Learn about I/O in Node.js, working with files, Streams and Processes 
   ms.date: 04/20/2020
   author: softchris
@@ -9,14 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: luken
-title: Introduction to Node.js I/O
-summary: Understanding how to work with I/O in Node.js is a vital part to understanding Node.js itself. This is an area you should have good grasp on if working full time on Node.js
+Read and write data in a Node.js application with files, streams and processes
+Write a JavaScript application that uses the Node.js I/O APIs. Your app will interact with the file system, streams, and processes.
 abstract: |
   In this module you will:
   - Gain a basic understanding of the different I/O concepts that exist in Node.js
-  - Learn how work with the file system
+  - Read and write files, directories and file system attributes
   - Leverage Streams to make your apps more performant
-  - Understand how you can create and control processes
+  - Create and control processes
 iconUrl: /learn/achievements/nodejs-io.svg
 levels:
 - beginner
