@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.static-apps-gatsby.5-exercise-sample-app
+title: Exercise - Sample app
+metadata:
+  title: Exercise - Sample app
+  description: This exercise takes you through building a static app using JSON as static data. This includes using a plugin to transform the data and the usage of GraphQL to query said data
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise-sample-app.md)]
