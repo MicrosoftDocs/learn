@@ -16,32 +16,32 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following types of data may need to have security protections?'
+  - content: 'Which of the following is an example of waste, resulting in an increased resource cost?'
     choices:
-    - content: 'Customer data that contains personal information'
+    - content: 'Archiving infrequently accessed data to an archive storage tier.'
       isCorrect: false
-      explanation: 'It is important to provide proper security protections for this data, but this is not the only correct choice.'
-    - content: 'Financial data supporting business operations'
+      explanation: 'Archiving infrequently accessed data is a great way to lower costs.'
+    - content: 'Utilizing a service that automatically adjusts resources provisioned to match user load.'
       isCorrect: false
-      explanation: 'It is important to provide proper security protections for this data, but this is not the only correct choice.'
-    - content: 'Intellectual property'
+      explanation: 'Automatically matching capacity to demand will help you lower your costs.'
+    - content: 'Pooling databases to share provisioned capacity.'
       isCorrect: false
-      explanation: 'It is important to provide proper security protections for this data, but this is not the only correct choice.'
-    - content: 'All of the above may need security protections'
+      explanation: 'By sharing resources across multiple databases you can reduce your overall costs.'
+    - content: 'Running a development environment overnight that is only used during business hours.'
       isCorrect: true
-      explanation: 'All of the above may merit additional security protections.'
+      explanation: 'A non-production environment that is unused outside of business hours could be shut down to reduce costs.'
 
-  - content: 'Which of the following is an example of an attack you might see at the policies & access layer?'
+  - content: 'Which of the following is a good practice to reduce costs?'
     choices:
-    - content: 'Exposed credentials posted online'
+    - content: 'Conducting regular reviews of cloud bills to identify abnormal increases in spend.'
       isCorrect: true
-      explanation: 'Exposed credentials are a huge risk to an organization and apply at the policies & access layer.'
-    - content: 'A SYN flood attack'
+      explanation: 'You should regularly review your bills to identify any abnormalities in your spend, as well as identifying areas where you could reduce costs.'
+    - content: 'Letting all IT teams have access to provision virtual any virtual machine sizes.'
       isCorrect: false
-      explanation: 'SYN flood attacks are a type of denial-of-service attack that are commonly seen on the network perimeter.'
-    - content: 'Following an employee into a datacenter without presenting credentials'
+      explanation: 'You should restrict access to allow provisioning of only the VM sizes that are appropriate and necessary for the workload.'
+    - content: 'Provisioning the same capacity in development environments as for production, even though resource requirements are substantially lower in development environments.'
       isCorrect: false
-      explanation: 'Following an employee into a datacenter is a physical layer attack.'
-    - content: 'Ransomware that encrypts the disks of a virtual machine'
+      explanation: 'Overprovisioning in devleopment environments is an example of waste. By reducing the provisioned capacity, you could reduce costs.'
+    - content: 'Provisioning virtual machines that include licensing costs rather than using a bring-your-own-license image.'
       isCorrect: false
-      explanation: 'Ransomware attacks are a VM/compute layer attack.'
+      explanation: 'Take advantage of licenses that you already own to save costs.'
