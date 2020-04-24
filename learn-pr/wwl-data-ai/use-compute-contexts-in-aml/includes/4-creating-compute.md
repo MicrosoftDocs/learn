@@ -28,8 +28,7 @@ aml_cluster.wait_for_completion(show_output=True)
 
 In this example, a cluster with up to four nodes that is based on the STANDARD_DS12_v2 virtual machine image will be created. The priority for the virtual machines (VMs) is set to dedicated, meaning they are reserved for use in this cluster (the alternative is to specify *lowpriority*, which has a lower cost but means that the VMs can be preempted if a higher-priority workload requires the compute).
 
-> [!Note]
-> For a full list of **AmlCompute** configuration options, see the [AmlCompute class](https://aka.ms/AA70zfq) SDK documentation.
+> **Note**: For a full list of **AmlCompute** configuration options, see the [AmlCompute class](https://aka.ms/AA70zfq) SDK documentation.
 
 ## Attaching an unmanaged compute target with the SDK
 

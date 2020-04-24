@@ -3,12 +3,13 @@ uid: learn.azure.publish-express-node-app-service-vscode.5-exercise-publish-app-
 title: Exercise - Publish your application to Azure App Service with Visual Studio Code
 metadata:
   title: Exercise - Publish your application to Azure App Service with Visual Studio Code
-  description: In this unit, you'll deploy a webapp built with Node.js and Express.js to Azure App Service.
-  ms.date: 10/30/2019
+  description: In this unit, you'll deploy a webapp to Azure App Service with Visual Studio Code.
+  ms.date: 04/23/20
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-nodeexpress-pythonflask
 azureSandbox: true
 durationInMinutes: 5
 content: |
