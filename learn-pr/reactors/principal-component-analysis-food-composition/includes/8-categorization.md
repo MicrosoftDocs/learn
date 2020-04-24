@@ -1,8 +1,8 @@
 One of the most common uses of PCA is to prepare data for categorization. PCA provides meaningful dimensions which are non-correlated, so our cluster will typically provide better results. This is why we started with PCA to before we attempted to cluster our foods together.
 
-To perform the categorization, we're going to use k-means clustering. In a nutshell, k-means will look to identify groups (or clusters) in our data.
+To perform the categorization, we're going to use [k-means clustering](https://wikipedia.org/wiki/K-means_clustering?azure-portal=true). In a nutshell, *k*-means will look to identify groups (or clusters) in our data.
 
-We're going to start by loading the library, creating our model, and then fitting our PCA results into the model. We are arbitrarily using 3 clusters; in Machine Learning 2 there is a deeper conversation of k-means and how to determine the best number of clusters. We're using just the first 5 components as we determined it will provide the best return on investment.
+We're going to start by loading the library, creating our model, and then fitting our PCA results into the model. We are arbitrarily using 3 clusters; in TBD--link to k-means unit in LP 3--TBD there is a deeper conversation of *k*-means and how to determine the best number of clusters. We're using just the first 5 components as we determined it will provide the best return on investment.
 
 ```python
 from sklearn.cluster import KMeans
@@ -33,7 +33,9 @@ Let's see the products which wound up in the first cluster.
 pca_df.loc[pca_df['Cluster'] == 0]['Shrt_Desc'][:500]
 ```
 
-Exercise Display the first 500 rows for the remaining two clusters
+Exercise 
+
+Display the first 500 rows for the remaining two clusters
 
 ```python
 Display cluster two (remember indexing starts at 0)

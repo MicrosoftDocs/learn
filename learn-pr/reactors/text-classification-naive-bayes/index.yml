@@ -36,9 +36,9 @@ units:
 - learn.reactors.text-classification-naive-bayes.1-introduction
 - learn.reactors.text-classification-naive-bayes.2-conditional-probability-bayes
 - learn.reactors.text-classification-naive-bayes.3-import-dataset
-- learn.reactors.text-classification-naive-bayes.4-data-explore
-- learn.reactors.text-classification-naive-bayes.5-data-prepare
-- learn.reactors.text-classification-naive-bayes.6-models-train
+- learn.reactors.text-classification-naive-bayes.4-explore-data
+- learn.reactors.text-classification-naive-bayes.5-prepare-data
+- learn.reactors.text-classification-naive-bayes.6-train-model
 - learn.reactors.text-classification-naive-bayes.7-explore-more
 badge:
   uid: learn.reactors.text-classification-naive-bayes.badge 

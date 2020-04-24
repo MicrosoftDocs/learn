@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.text-classification-naive-bayes.6-models-train
-title: Train models
+uid: learn.reactors.text-classification-naive-bayes.6-train-model
+title: Train model
 metadata:
-  title: Train models
-  description: Train models TBD.
+  title: Train model
+  description: Train model TBD.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 20
 content: |
-  [!include[](includes/6-models-train.md)]
+  [!include[](includes/6-train-model.md)]

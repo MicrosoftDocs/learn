@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.principal-component-analysis-food-composition.6-pca-practice
+uid: learn.reactors.principal-component-analysis-food-composition.6-practice-pca
 title: Practice PCA
 metadata:
   title: Practice PCA
@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-pca-practice.md)]
+  [!include[](includes/6-practice-pca.md)]

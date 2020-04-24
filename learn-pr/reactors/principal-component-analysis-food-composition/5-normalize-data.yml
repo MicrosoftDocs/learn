@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.principal-component-analysis-food-composition.5-data-normalize
+uid: learn.reactors.principal-component-analysis-food-composition.5-normalize-data
 title: Normalize the data
 metadata:
   title: Normalize the data
@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-data-normalize.md)]
+  [!include[](includes/5-normalize-data.md)]
