@@ -53,7 +53,7 @@ An example polygon for a square around Paris is:
 }
 ```
 
-This square has five coordinates, the four corners and the last coordinate the same as the first to close the square.
+This square has five coordinates, the four corners, and the last coordinate the same as the first to close the square.
 
 ### Feature
 

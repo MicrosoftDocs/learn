@@ -1,4 +1,4 @@
-You've successfully created a web page to show air pollution data using Azure Maps.
+You've successfully created a web page to show air quality data using Azure Maps.
 
 In this module you learned:
 

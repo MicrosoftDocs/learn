@@ -12,7 +12,7 @@ Before you can use Azure Maps on a web page, you'll need an Azure Maps account. 
 
 ## Retrieve the primary key
 
-Azure Maps accounts are secured by either Azure Active Directory or via a key. Later in this module, you'll use the key to give the web SDK access to the Maps account. The key can be retrieved using the Azure CLI.
+Azure Maps accounts are secured by either Azure Active Directory or via a key. Later in this module, you'll use a key to give the web SDK access to the Maps account. The key can be retrieved using the Azure CLI.
 
 1. Run this command to view the keys
 

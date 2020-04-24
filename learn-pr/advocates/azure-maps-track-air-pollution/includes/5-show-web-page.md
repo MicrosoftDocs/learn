@@ -57,7 +57,7 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
     * `flask` - this package is a web framework for Python
     * `python-dotenv` - this package allows environment variables such as the maps key to be loaded from environment files
-    * `requests` - this package makes it easy to make web requests, and will be used later to query pollution data
+    * `requests` - this package makes it easy to make web requests, and will be used later to query air quality data
 
 1. Save the file
 
@@ -191,15 +191,17 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
 
     The map control is then loaded into the div. The maps key is set to `{{ data.map_key }}`, and this notation is the Flask notation to render data into the HTML file. What this means is that when this page is returned to the users web browser, the value `{{ data.map_key }}` is replaced by the value of the `map_key` set on the `data` object. This object was passed to the `render_template` call in the `app.py` file, and the `map_key` is set to the Azure Maps primary key loaded from the `.env` file.
 
-    Once the control is ready, a camera is set up over the users' location. The camera is used to define what to show on screen, so having the camera over the users location will center the map view over that location. The zoom value shows how far above the Earth the camera should be, and determines how many meters of the map are shown per pixel on screen. You can read more on the different zoom values in the [Zoom levels and tile grids documentation](https://docs.microsoft.com/azure/azure-maps/zoom-levels-and-tile-grid).
+    Once the control is ready, a **camera** is set up over the users' location. The camera is used to define what to show on screen, so having the camera over the users location will center the map view over that location. The zoom value shows how far above the Earth the camera should be, and determines how many meters of the map are shown per pixel on screen. You can read more on the different zoom values in the [Zoom levels and tile grids documentation](https://docs.microsoft.com/azure/azure-maps/zoom-levels-and-tile-grid).
 
 1. Save the file
 
 ## Run the app
 
-Visual Studio Code can be configured run and debug Flask apps, and you can use your browser to see the app in action. To configure debugging for your app:
+Visual Studio Code can be configured run and debug Flask apps, and you can use your browser to see the app in action.
 
-1. Ensure the `app.py` file is open in the editor. The debug options you can configure vary depend on what the active file is.
+To configure debugging for your app:
+
+1. Ensure the `app.py` file is open in the editor. The debug options you can configure vary depending on what the active file is.
 
 1. Select the **Run** tab from the activity bar, or select **View > Run**
 
@@ -234,7 +236,7 @@ Open the URL in your web browser, and you'll see the map. If you give the site p
 
 Try navigating around the map by dragging, using the mouse wheel, or pinching to zoom in and out.
 
-When you're finished, stop the app using the stop button on the debug toolbar.
+When you're finished, stop the app using the stop button on the debug toolbar in Visual Studio Code.
 
 ![The stop button](../media/stop-button.png)
 
@@ -242,7 +244,7 @@ When you're finished, stop the app using the stop button on the debug toolbar.
 
 ### Exception has occurred: KeyError
 
-If your app stops as soon as it's run and shows an exception with the message `Exception has occurred: KeyError`, then your maps key hasn't been added to the `.env` file.
+If your app stops as soon as it's run and shows an exception with the message `Exception has occurred: KeyError`, then your Azure Maps key hasn't been added to the `.env` file.
 
 ![Exception has occurred: KeyError](../media/key-error.png)
 
