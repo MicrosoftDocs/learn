@@ -7,21 +7,21 @@ TBD
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-The input is:
+  The input is:
 
   ```python
   ```
 
   The output is:
 
-```Output
-```
+  ```Output
+  ```
 
 </details>
 
 <br /><br />
 
----
+***
 
 
 > [!div class="alert is-tip"]
