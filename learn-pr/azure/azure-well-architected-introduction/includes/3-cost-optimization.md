@@ -10,7 +10,7 @@ When an organization decides to own infrastructure, it buys equipment that goes 
 
 When an organization adopts a cloud platform, it must shift away from CapEx-oriented budgeting towards OpEx, reflecting the shift from owning infrastructure to leasing solutions. Some organizations can derive value just from this new accounting model. A startup, for example, can attract investors by demonstrating a profitable idea at large scale, without needing a large investment up front to purchase infrastructure.
 
-To optimize costs in your organizations architecture, there are are several principles that can be used to guide your efforts.
+To optimize costs in your organizations architecture, there are several principles that can be used to guide your efforts.
 
 ### Develop a cloud operating model
 
@@ -39,4 +39,4 @@ Waste can show up in several ways. Let's look at a few examples:
 
 In each of these cases, more money is being spent than it should, and each presents an opportunity for cost reduction.
 
-As you evaluate your cost, take the opportunity to optimize environments. Capacity demands can and will change over time, and many cloud services have the ability to manually or dynamically adjust the provisioned resources to meet the demands. These adjustments can drive the balance between a well-running application at the most cost-effective size. Optimize your systems at every level. At the network level, ensure that data transfer is efficient and meets the expectations of your customers. Use services to cache data to increase application performance and reduce the transaction load on your data storage services. Identify and decommission unused resources, and take advantage of lower cost data storage tiers to archive infrequently accessed data.
+As you evaluate your cost, take the opportunity to optimize environments. Capacity demands can and will change over time, and many cloud services have the ability to manually or dynamically adjust the provisioned resources to meet the demands. These adjustments can drive the balance between a well-running application at the most cost-effective size. Optimize your systems at every level. At the network level, ensure that data transfer is efficient and meets the expectations of your customers. Use services to cache data to increase application performance and reduce the transaction load on your data storage services. Identify and decommission unused resources, and take advantage of lower-cost data storage tiers to archive infrequently accessed data.

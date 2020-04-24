@@ -1,4 +1,4 @@
-Imagine you run a clinical system for a healthcare organization. Clinicians and caregivers have little tolerance for downtime. They need to have access to clinical IT systems around the clock to ensure they're providing the highest quality care at all times. To meet the around-the-clock demands of clinicians, applications must be able to handle failures with minimal impact to their users. How do they ensure their applications remain operational, both for localized incidents and large-scale disasters?
+Imagine you run a clinical system for a healthcare organization. Clinicians and caregivers have little tolerance for downtime. They need to have access to clinical IT systems around the clock to ensure they're providing the highest-quality care at all times. To meet the around-the-clock demands of clinicians, applications must be able to handle failures with minimal impact to their users. How do they ensure their applications remain operational, both for localized incidents and large-scale disasters?
 
 Here, we'll talk through how to include elements from the reliability pillar in your architecture design.
 

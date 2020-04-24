@@ -4,7 +4,7 @@ Here, we'll look at some of the basic principles of ensuring outstanding applica
 
 ## What is performance efficiency?
 
-Performance efficiency is matching the resources available to an application with the demand it is receiving. Performance efficicney includes scaling resources, identifying and optimizing potential bottlenecks, and optimizing your application code for peak performance.
+Performance efficiency is matching the resources available to an application with the demand it is receiving. Performance efficiency includes scaling resources, identifying and optimizing potential bottlenecks, and optimizing your application code for peak performance.
 
 Let's take a look at some patterns and practices that can be leveraged to enhance the scalability and performance of your application.
 
