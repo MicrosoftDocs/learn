@@ -36,6 +36,6 @@ products:
 modules:
 - learn.reactors.join-clean-data-deep-dive
 - learn.reactors.supervised-learning-regression
-- learn.reactors.unsupervised-learning-clusterin
+- learn.reactors.unsupervised-learning-clustering
 trophy:
   uid: learn.reactors.machine-learning-three-basic-pillars.trophy
