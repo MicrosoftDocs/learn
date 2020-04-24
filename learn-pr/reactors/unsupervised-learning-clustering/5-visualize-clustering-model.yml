@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.unsupervised-learning-clustering.5-visualize-clustering-model
+title: Visualize the clustering model
+metadata:
+  title: Visualize the clustering model
+  description: Visualize the clustering model TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-visualize-clustering-model.md)]

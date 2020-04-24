@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.reactors.unsupervised-learning-clustering
+metadata:
+  title: 'Unsupervised learning: Clustering'
+  description: Learn how to TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+title: 'Unsupervised learning: Clustering'
+summary: Learn how to TBD.
+abstract:  | 
+  In this module, you will:
+  - TBD
+
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - TBD
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.unsupervised-learning-clustering.1-introduction
+- learn.reactors.unsupervised-learning-clustering.2-load-prepare-data
+- learn.reactors.unsupervised-learning-clustering.3-fit-clustering-model
+- learn.reactors.unsupervised-learning-clustering.4-interpret-clustering-model
+- learn.reactors.unsupervised-learning-clustering.5-visualize-clustering-model
+- learn.reactors.unsupervised-learning-clustering.6-determine-cluster-numbers
+- learn.reactors.unsupervised-learning-clustering.7-run-outside-jupyter-notebooks
+- learn.reactors.unsupervised-learning-clustering.8-k-means-pca
+badge:
+  uid: learn.reactors.unsupervised-learning-clustering.badge 

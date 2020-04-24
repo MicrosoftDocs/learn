@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.join-clean-data-deep-dive.6-join-dataframes
+title: Join DataFrames
+metadata:
+  title: Join DataFrames
+  description: Join DataFrames TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-join-dataframes.md)]

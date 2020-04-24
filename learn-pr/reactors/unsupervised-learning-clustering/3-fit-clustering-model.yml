@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.unsupervised-learning-clustering.3-fit-clustering-model
+title: Fit the clustering model
+metadata:
+  title: Fit the clustering model
+  description: Fit the clustering model TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-fit-clustering-model.md)]
