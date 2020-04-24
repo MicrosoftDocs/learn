@@ -10,7 +10,7 @@ A cluster uses centralized software that's responsible for scheduling and contro
 
 ## Kubernetes architecture
 
-Recall from earlier, an orchestrator is a system that deploys and manages applications. You also learned a cluster is a set of computers that work together and are viewed as a single system. You use Kubernetes as the orchestration and cluster software to deploy your apps and respond to changes in compute resource needs.
+Recall from earlier that an orchestrator is a system that deploys and manages applications. You also learned a cluster is a set of computers that work together and are viewed as a single system. You use Kubernetes as the orchestration and cluster software to deploy your apps and respond to changes in compute resource needs.
 
 :::image type="content" source="../media/3-cluster-arch-components.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane and the worker nodes." border="false":::
 
@@ -22,7 +22,9 @@ Let's look at both the master and worker nodes, and the software that runs on ea
 
 ### The Kubernetes master
 
-The Kubernetes master node, also known as the control plane in a Kubernetes cluster, runs a collection of services that manages the orchestration functionality in Kubernetes. All of the Kubernetes services can run in a single master node configuration. From a learning perspective, it makes sense to use a single master in your test environment as you explore Kubernetes functionality. However, in production and cloud deployments such as Azure Kubernetes Service (AKS), you'll find that the preferred configuration is a multi-master high-availability deployment with three to five replicated masters.
+The Kubernetes master node, also known as the control plane in a Kubernetes cluster, runs a collection of services that manages the orchestration functionality in Kubernetes. All of the Kubernetes services can run in a single master node configuration. 
+
+From a learning perspective, it makes sense to use a single master in your test environment as you explore Kubernetes functionality. However, in production and cloud deployments such as Azure Kubernetes Service (AKS), you'll find that the preferred configuration is a multi-master high-availability deployment with three to five replicated masters.
 
 The fact that a master node runs specific software to maintain the state of the cluster doesn't exclude the master node from running other compute workloads. However, you usually want to make sure to exclude the master from running noncritical and user application workloads.
 
@@ -44,7 +46,9 @@ The following services make up the control plane in a Kubernetes cluster:
 
 ### What is the API server?
 
-You can think of the API server as the front end to the control plane in your Kubernetes cluster. All the communication between the components in Kubernetes is done through this API. For example, as a user, you use a command-line application called `kubectl` that allows you to run commands against your Kubernetes cluster's API server. The component that provides this API is called `kube-apiserver`, and you can deploy several instances of this component to support scaling in your cluster.
+You can think of the API server as the front end to the control plane in your Kubernetes cluster. All the communication between the components in Kubernetes is done through this API. 
+
+For example, as a user, you use a command-line application called `kubectl` that allows you to run commands against your Kubernetes cluster's API server. The component that provides this API is called `kube-apiserver`, and you can deploy several instances of this component to support scaling in your cluster.
 
 This API exposes a RESTful API that allows you to post commands or YAML-based configuration files. YAML is a human-readable data serialization standard for programming languages. You use YAML files to define the intended state of all the objects within a Kubernetes cluster.
 
