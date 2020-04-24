@@ -23,7 +23,7 @@ gatsby new hello-gatsby
 
 `hello-gatsby` is the name of the project and can be anything you want it to be.
 
-### Run Gatsby
+### Run the Gatsby development server
 
 To start developing with Gatsby, ensure you are in the correct directory. If you named your project `hello-gatsby` then ensure you did a `cd hello-gatsby` before continuing.
 
@@ -47,7 +47,7 @@ If you see the above, you successfully created your first Gatsby app. Congrats!
 
 ## Exercise - add a page component
 
-For this exercise we will learn to create a component that we can navigate to, a so called *page component*. We will continue to use the app we created in the last exercise. 
+Next, we'll create a *page component*: a component that renders as a page in the browser when a user navigates to it.
 
 Find the `pages/` directory and create a file and name it `about.js`. Give the file the following content:
 
