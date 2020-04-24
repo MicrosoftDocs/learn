@@ -18,4 +18,4 @@ Here are some links to more information on the topics we discussed in this modul
 - [Metadata syntax for GitHub Actions](https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions?azure-portal=true)
 - [Workflow syntax for GitHub Actions](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions?azure-portal=true)
 -[GitHub Actions usage limits](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#usage-limits?azure-portal=true)
-- [Introduction to Docker Containers](https://docs.microsoft.com/en-us/learn/modules/intro-to-docker-containers/?azure-portal=true)
+- [Introduction to Docker Containers](https://docs.microsoft.com/learn/modules/intro-to-docker-containers/?azure-portal=true)

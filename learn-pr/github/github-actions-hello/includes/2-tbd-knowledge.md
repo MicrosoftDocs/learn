@@ -8,42 +8,42 @@ There are two types of GitHub Actions, *container actions* and *JavaScript actio
 
 You can find GitHub actions in [GitHub Marketplace](https://github.com/marketplace?type=actions&azure-portal=true), in open source projects on GitHub, and in the GitHub [actions](https://github.com/actions?azure-portal=true) organization.
 
-Here is an example of an action that checks out code in the repository. This action, [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true), is part of a step in a workflow. This step also builds the node.js code that was checked out. We will talk about workflows, jobs, and steps in the next section.
+Here is an example of an action that checks out the repository. This action, [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true), is part of a step in a workflow. This step also builds the node.js code that was checked out. We will talk about workflows, jobs, and steps in the next section.
 
-    ```yml
-    steps:
-      - uses: actions/checkout@v1
-      - name: npm install and build webpack
-        run: |
-          npm install
-          npm run build
-    ```
+```yml
+steps:
+    - uses: actions/checkout@v1
+    - name: npm install and build webpack
+    run: |
+        npm install
+        npm run build
+```
 
 Soon, you'll be using a container action to run containerized code. Your action will look like this:
 
-    ```yml
-    name: "Hello Actions"
-    description: "Greet someone"
-    author: "octocat@github.com"
-    
-    inputs:
-      MY_NAME:
-        description: "Who to greet"
-        required: true
-        default: "World"
-    
-    runs:
-      using: "docker"
-      image: "Dockerfile"
-    
-    branding:
-      icon: "mic"
-      color: "purple"
-    ```
+```yml
+name: "Hello Actions"
+description: "Greet someone"
+author: "octocat@github.com"
+
+inputs:
+    MY_NAME:
+    description: "Who to greet"
+    required: true
+    default: "World"
+
+runs:
+    using: "docker"
+    image: "Dockerfile"
+
+branding:
+    icon: "mic"
+    color: "purple"
+```
 
 Notice the ```inputs``` section. Here you are getting the value of a variable called MY_NAME. This variable will be set in the workflow that runs this action.
 
-In the ```runs``` section, notice you specify *docker* in the using attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. The Dockerfile will then We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](https://docs.microsoft.com/en-us/learn/modules/intro-to-docker-containers/?azure-portal=true) module.
+In the ```runs``` section, notice you specify *docker* in the using attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](https://docs.microsoft.com/learn/modules/intro-to-docker-containers/?azure-portal=true) module.
 
 The last section, *branding* is to personalize your action in the GitHub Marketplace if you were to publish it there.
 
@@ -55,21 +55,21 @@ A *GitHub Workflow* is a an automated process that you set up in your repository
 
 To create a workflow, you add actions to a .yml file in the ```.github/workflows``` directory in your GitHub repository.
 
-In the exercise, your workflow file, *main.yml*, will look like this:
+In the exercise, your workflow file, *main.yml*, will look like this.
 
-    ```yml
-    name: A workflow for my Hello World file
-    on: push
-    jobs:
-      build:
-        name: Hello world action
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v1
-          - uses: ./action-a
-            with:
-              MY_NAME: "Mona"
-    ```
+```yml
+name: A workflow for my Hello World file
+on: push
+jobs:
+    build:
+    name: Hello world action
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v1
+        - uses: ./action-a
+        with:
+            MY_NAME: "Mona"
+```
 
 Notice the ```on:``` attribute. This is a *trigger* to specify when this workflow will run. Here, it triggers a run when there is a push event to your repository. You can specify single events, an array of events, or an event configuration map.
 
