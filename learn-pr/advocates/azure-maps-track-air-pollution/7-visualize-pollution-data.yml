@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.use-azure-maps-to-track-air-pollution.7-visualize-pollution-data-on-a-map
+uid: learn.advocates.use-azure-maps-to-track-air-pollution.7-visualize-pollution-data
 title: Exercise - Visualize air quality data on a map
 metadata:
   title: Exercise - Visualize air quality data on a map
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-visualize-pollution-data-on-a-map.md)]
+  [!include[](includes/7-visualize-pollution-data.md)]

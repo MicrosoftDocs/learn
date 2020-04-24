@@ -32,14 +32,14 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
     This command will create a virtual environment inside the current folder. Visual Studio Code will detect this change, and ask if you want to select the virtual environment for this folder. Select **Yes**.
 
-    ![The activate virtual env dialog](../media/activate_venv_dialog.png)
+    ![The activate virtual env dialog](../media/activate-venv-dialog.png)
 
     > [!NOTE]
     > If the dialog does not pop up asking to select the virtual environment, you can do it manually by selecting the Python interpreter version from the Visual Studio Code status bar, and selecting the Python version that is in the `./.venv/bin/python` folder.
 
 1. Kill the current terminal by selecting the trash can button.
 
-    ![The kill terminal button](../media/kill_terminal.png)
+    ![The kill terminal button](../media/kill-terminal.png)
 
 1. Relaunch the terminal by selecting **Terminal > New terminal**, to ensure that your terminal is using the virtual environment.
 
@@ -61,8 +61,8 @@ In this unit, you'll create a Python app using Flask to show the Azure Maps web 
 
 1. Save the file
 
-  > [!TIP]
-  > If you don't want to have to remember to save files after every change, you can turn on Auto Save by selecting **File > Auto Save**
+    > [!TIP]
+    > If you don't want to have to remember to save files after every change, you can turn on Auto Save by selecting **File > Auto Save**
 
 1. Install the Pip packages from the terminal using the following command:
 
@@ -186,7 +186,7 @@ The Flask app will need to use your Azure Maps key to load the map control onto 
 
     This web page will render a full screen `div` element with the id of `myMap`. After the page is fully loaded, the users' location is retrieved. This request will cause the browser to ask for permission, and will only get the location if permission is granted, otherwise it will use the location of the Microsoft campus in Redmond, Washington, USA.
 
-    [!NOTE]
+    > [!NOTE]
     > Azure Maps uses longitude and latitude for the coordinates. Longitude measures around the Earth from east to west, with 0° at the Prime Meridian (a line from the North to South Poles running through the UK). It goes east to 180° on the opposite side of the globe roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0° and the South Pole at -90°,
 
     The map control is then loaded into the div. The maps key is set to `{{ data.map_key }}`, and this notation is the Flask notation to render data into the HTML file. What this means is that when this page is returned to the users web browser, the value `{{ data.map_key }}` is replaced by the value of the `map_key` set on the `data` object. This object was passed to the `render_template` call in the `app.py` file, and the `map_key` is set to the Azure Maps primary key loaded from the `.env` file.
@@ -203,21 +203,21 @@ Visual Studio Code can be configured run and debug Flask apps, and you can use y
 
 1. Select the **Run** tab from the activity bar, or select **View > Run**
 
-   ![The Run activity button](../media/run_activity.png)
+   ![The Run activity button](../media/run-activity.png)
 
 1. Select the **create a launch.json file** link
 
-   ![The Run and Debug button](../media/create_launch_json.png)
+   ![The Run and Debug button](../media/create-launch-json.png)
 
 1. A dropdown will appear to select the debug configuration. Select ***Flask** Launch and debug a Flask web application*.
 
-    ![The debug configuration dropdown](../media/select_debug_configuration.png)
+    ![The debug configuration dropdown](../media/select-debug-configuration.png)
 
 A new file will be created called `launch.json` inside a folder called `.vscode`. This folder contains configuration settings for Visual Studio Code to use for your app. This file will be opened in the editor, but you can just close it.
 
 To run your app, select the green run triangle from the **Run** activity pane.
 
-![The run button](../media/run_flask_app.png)
+![The run button](../media/run-flask-app.png)
 
 The app will start, and in the output you'll see the local URL it's running on.
 
@@ -230,13 +230,13 @@ The app will start, and in the output you'll see the local URL it's running on.
 
 Open the URL in your web browser, and you'll see the map. If you give the site permission to get your location it will center on you, otherwise it will center on the Microsoft Campus in Redmond, Washington, USA.
 
-![The map running in the Edge web browser](../media/map_in_edge.png)
+![The map running in the Edge web browser](../media/map-in-edge.png)
 
 Try navigating around the map by dragging, using the mouse wheel, or pinching to zoom in and out.
 
 When you're finished, stop the app using the stop button on the debug toolbar.
 
-![The stop button](../media/stop_button.png)
+![The stop button](../media/stop-button.png)
 
 ## Troubleshooting
 
@@ -244,7 +244,7 @@ When you're finished, stop the app using the stop button on the debug toolbar.
 
 If your app stops as soon as it's run and shows an exception with the message `Exception has occurred: KeyError`, then your maps key hasn't been added to the `.env` file.
 
-![Exception has occurred: KeyError](../media/key_error.png)
+![Exception has occurred: KeyError](../media/key-error.png)
 
 Check the following:
 

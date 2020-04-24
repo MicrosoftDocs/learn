@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.use-azure-maps-to-track-air-pollution.3-create-an-azure-maps-account-using-azure-cli
+uid: learn.advocates.use-azure-maps-to-track-air-pollution.3-create-account-azure-cli
 title: Exercise - Create an Azure Maps account using the Azure CLI
 metadata:
   title: Exercise - Create an Azure Maps account using the Azure CLI
@@ -13,4 +13,4 @@ azureSandbox: True
 interactive: bash-editor
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-create-an-azure-maps-account-using-azure-cli.md)]
+  [!include[](includes/3-create-account-azure-cli.md)]

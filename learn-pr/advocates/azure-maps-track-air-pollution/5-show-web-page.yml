@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.use-azure-maps-to-track-air-pollution.5-use-azure-maps-sdk-on-a-web-page
+uid: learn.advocates.use-azure-maps-to-track-air-pollution.5-show-web-page
 title: Exercise - Use the Azure Maps SDK on a web page
 metadata:
   title: Exercise - Use the Azure Maps SDK on a web page
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-use-azure-maps-sdk-on-a-web-page.md)]
+  [!include[](includes/5-show-web-page.md)]

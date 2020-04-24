@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.use-azure-maps-to-track-air-pollution.6-describe-spatial-data-with-geojson
+uid: learn.advocates.use-azure-maps-to-track-air-pollution.6-describe-spatial-data-geojson
 title: Describe spatial data with GeoJSON
 metadata:
   title: Describe spatial data with GeoJSON
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-describe-spatial-data-with-geojson.md)]
+  [!include[](includes/6-describe-spatial-data-geojson.md)]
