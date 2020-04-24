@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-cost-optimization.4-use-automation-to-reduce-effort-and-error
-title: Use automation to reduce effort and error
+uid: learn.azure-well-architected-cost-optimization.2-develop-cloud-operating-model
+title: Develop a cloud operating model
 metadata:
-  title: Use automation to reduce effort and error
-  description: In this unit, we'll discuss how to use automation to reduce effort and error
+  title: Develop a cloud operating model
+  description: Develop a cloud operating model
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |
-  [!include[](includes/4-use-automation-to-reduce-effort-and-error.md)]
+  [!include[](includes/2-develop-cloud-operating-model.md)]
 quiz:
   title: Check your knowledge
   questions:

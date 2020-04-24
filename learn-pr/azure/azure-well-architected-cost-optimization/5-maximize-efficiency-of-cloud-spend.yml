@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-cost-optimization.2-maximize-efficiency-of-cloud-spend
+uid: learn.azure-well-architected-cost-optimization.5-maximize-efficiency-of-cloud-spend
 title: Maximize efficiency of cloud spend
 metadata:
   title: Maximize efficiency of cloud spend
-  description: In this unit, we'll discuss how to maximize the efficiency of your cloud expenditures
+  description: Maximize efficiency of cloud spend
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/2-maximize-efficiency-of-cloud-spend.md)]
+  [!include[](includes/5-maximize-efficiency-of-cloud-spend.md)]
 quiz:
   title: Check your knowledge
   questions:
