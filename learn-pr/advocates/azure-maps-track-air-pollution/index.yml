@@ -17,7 +17,7 @@ abstract: |
   - Learn about GeoJSON
   - Get air quality measurements from an API and convert it to GeoJSON
   - Plot these measurements on the map
-iconUrl: /learn/achievements/advocates/use-azure-maps-to-track-air-pollution.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
