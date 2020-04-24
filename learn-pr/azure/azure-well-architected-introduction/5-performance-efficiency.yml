@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: 'Updating your application to use a queuing service'
       isCorrect: false
-      explanation: 'Including a queuing service in your application can be a smart architecual decision, but is not an example of scaling up.'
+      explanation: 'Including a queuing service in your application can be a smart architectural decision, but is not an example of scaling up.'
     - content: 'Adding more web servers into a web farm'
       isCorrect: false
       explanation: 'Adding more web servers into a web farm is an example of scaling out.'

@@ -25,7 +25,7 @@ quiz:
       explanation: "This can increase security, not availability."
     - content: "Eliminate single point of failure"
       isCorrect: true
-      explanation: "Designing for availability focuses on maintaining service despite temporary conditions and localized failures. Adding redundancy to eliminate single points of failure is a core strategy for improving availability."
+      explanation: "Reliability focuses on maintaining service despite temporary conditions and localized failures. Adding redundancy to eliminate single points of failure is a core strategy for improving availability."
   - content: 'Which of the following would be impacted by your defined Recovery Point Objective (RPO)?'
     choices:
     - content: 'The frequency of database backups'
