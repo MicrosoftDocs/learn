@@ -2,6 +2,8 @@
 
 Azure Static Web Apps publishes websites to a production environment by building apps from a GitHub repository. In this exercise, you build a web application using your preferred front-end framework from a GitHub repository.
 
+What's in the [sample project on GitHub](https://github.com/MicrosoftDocs/mslearn-staticwebapp) that you'll learn about in this module? That's a great question!
+
 ## Create a repository
 
 This article uses a GitHub template repository to make it easy for you to create a new repository. The templates features starter apps built with different front-end frameworks.
