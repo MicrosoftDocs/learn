@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.reactors.join-clean-data-deep-dive
+metadata:
+  title: 'Join and clean datasets: Deep dive'
+  description: Learn how to TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+title: 'Join and clean datasets: Deep dive'
+summary: Learn how to TBD.
+abstract:  | 
+  In this module, you will:
+  - TBD
+
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - TBD
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.join-clean-data-deep-dive.1-introduction
+- learn.reactors.join-clean-data-deep-dive.2-set-up
+- learn.reactors.join-clean-data-deep-dive.3-load-data
+- learn.reactors.join-clean-data-deep-dive.4-explore-clean-data
+- learn.reactors.join-clean-data-deep-dive.5-split-dataframe
+- learn.reactors.join-clean-data-deep-dive.6-join-dataframes
+- learn.reactors.join-clean-data-deep-dive.7-prepare-more-data
+badge:
+  uid: learn.reactors.join-clean-data-deep-dive.badge 

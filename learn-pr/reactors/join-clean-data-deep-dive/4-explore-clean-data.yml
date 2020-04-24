@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.join-clean-data-deep-dive.4-explore-clean-data
+title: Explore and clean data
+metadata:
+  title: Explore and clean data
+  description: Explore and clean data TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-explore-clean-data.md)]
