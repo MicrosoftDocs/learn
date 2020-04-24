@@ -31,9 +31,9 @@ quiz:
     - content: "They are both effective at packaging applications into self-sufficient containers."
       isCorrect: false
       explanation: "Docker is a container packaging technology. Kubernetes is designed to orchestrate containers."
-    - content: "They both use declarative manfiests to define how their constituent components are exposed."
+    - content: "They both use declarative manifests to define how their constituent components are exposed."
       isCorrect: true
-      explanation: "Docker manifests define how the applications they host are exposed while Kubernetes manfiests define how the containers they manage are exposed."
+      explanation: "Docker manifests define how the applications they host are exposed while Kubernetes manifests define how the containers they manage are exposed."
     - content: "They are both designed for orchestrating deployed containers."
       isCorrect: false
       explanation: "Kubernetes is designed to orchestrate containers. Docker is a container packaging technology."
