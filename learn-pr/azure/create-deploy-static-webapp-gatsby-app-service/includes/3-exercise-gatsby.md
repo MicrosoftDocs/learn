@@ -10,7 +10,7 @@ In this exercise you will learn the following:
 Install the following software:
 
 - Git, [Install Git, instructions per OS](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- Node.js [Install Node.js](https://nodejs.org/en/download/) 
+- Node.js [Install Node.js](https://nodejs.org/en/download/)
 - Gatsby CLI, Once you've installed Node.js you can install the Gatsby CLI with this line `npm install -g gatsby-cli`
 
 ### Create a Gatsby app
