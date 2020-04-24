@@ -74,6 +74,8 @@ desc_df.set_index('NDB_No', inplace=True)
 desc_df.head()
 ```
 
+Here's the output:
+
 ```Output
 	FoodGroup	Shrt_Desc	GmWt_Desc1	GmWt_2	GmWt_Desc2	Refuse_Pct
 NDB_No						
@@ -91,7 +93,7 @@ Why was it necessary to structure the `iloc` method call the way we did in the c
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Use one of the attributes of the DataFrame.
+Use one of the attributes of the <code>DataFrame</code>.
 
 TBD output
 
@@ -122,8 +124,6 @@ NDB_No	FoodGroup	Shrt_Desc	Water_(g)	Energ_Kcal	Protein_(g)	Lipid_Tot_(g)	Ash_(g
 5 rows × 49 columns
 ```
 
-
-
 ### Try it yourself
 
 What did the `iloc` syntax do in the preceding code cell?
@@ -131,10 +131,9 @@ What did the `iloc` syntax do in the preceding code cell?
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Use one of the attributes of the DataFrame.
+  Use one of the attributes of the DataFrame.
 
-TBD output
-
+  TBD output
 
 </details>
 
@@ -148,32 +147,27 @@ Next, run this in a cell:
 nutr_df = nutr_df.drop(['FoodGroup', 'Shrt_Desc'], axis=1)
 ```
 
+This is the output:
+
+```Output
+TBD
+```
 
 ### Try it yourself
 
-Can you think of a more concise way to check the number of rows and columns in a DataFrame?
+Now set the index of `nutr_df` to use `NDB_No`.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Use one of the attributes of the DataFrame.
-
-TBD output
-
----
+  The correct code for students to use here is `nutr_df.set_index('NDB_No', inplace=True)`.
 
 </details>
 
+<br /><br />
 
-Exercise
+***
 
-Now set the index of nutr_df to use NDB_No.
-
-In [ ]:
-
-Exercise solution
-
-The correct code for students to use here is `nutr_df.set_index('NDB_No', inplace=True)`.
 
 Now let’s take a look at `nutr_df`.
 
