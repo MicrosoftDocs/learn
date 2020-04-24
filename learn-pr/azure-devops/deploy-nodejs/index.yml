@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Node.js deployments with Azure Pipelines
-summary: Learn to implement a CI/CD pipeline for Node.js.
+summary: Implement CI/CD pipeline for Node.js applications.
 abstract: |
   In this module, you will:
   - Learn how Azure and Azure DevOps support Node.js applications.
@@ -32,7 +32,7 @@ products:
 - azure-devops
 units:
 - learn.azdo.deploy-nodejs.1-introduction
-- learn.azdo.deploy-nodejs.2-what-is-nodejs
+- learn.azdo.deploy-nodejs.2-azure-support-nodejs
 - learn.azdo.deploy-nodejs.3-set-up-environment
 - learn.azdo.deploy-nodejs.4-deploy-nodejs
 - learn.azdo.deploy-nodejs.5-clean-up-environment

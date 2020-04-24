@@ -1,10 +1,10 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environment that you'll deploy to.
+In this part, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environment that you'll deploy to.
 
 To accomplish these goals, you:
 
 > [!div class="checklist"]
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
-> * Clone a GitHub repo for this module.
+> * Fork and clone a GitHub repo that contains a basic Node.js app.
 > * Create the Azure App Service using the Azure CLI in Azure Cloud Shell.
 
 ## Add a user to Azure DevOps
@@ -17,19 +17,19 @@ If you use different Microsoft accounts to sign in to Azure and Azure DevOps, ad
 
 Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
-## Clone the GitHub repo
+## Fork the GitHub repo
 
-Here you clone the GitHub repo required for this project. It's a simple Hello World app built using Node.js.
+Here you fork the GitHub repo required for this project. It's a basic "Hello World" app built using Node.js.
 
 1. Navigate your browser to the [Node.js Hello World repo](https://github.com/Azure-Samples/nodejs-docs-hello-world?azure-portal=true).
-1. Select **Fork** and select an account to fork into.
-
-> [!IMPORTANT]
-> In this module, the [Clean up your Azure DevOps environment](/learn/modules/deploy-nodejs/5-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.
+1. Select **Fork** and then select your account.
 
 ## Create the Azure App Service environment
 
 Here you create the App Service required to deploy the Node.js app.
+
+> [!IMPORTANT]
+> In this module, the [Clean up your Azure DevOps environment](/learn/modules/deploy-nodejs/5-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.
 
 In this module, you use the Azure CLI to spin up the Azure App Service that will host the Node.js app. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
@@ -76,7 +76,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 ### Create the Azure resources required
 
-This solution requires several Azure resources for deployment, which will be created now.
+This solution requires several Azure resources for deployment, which you create now.
 
    > [!NOTE]
    > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
@@ -84,16 +84,16 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Run the following `az group create` command to create a resource group.
 
     ```azurecli
-	az group create --name nodejs-cicd-rg
+    az group create --name nodejs-cicd-rg
     ```
 
 1. Run the following `az appservice plan create` command to create an App Service plan.
 
     ```azurecli
-	az appservice plan create \
-	  --name nodejs-cicd-asp \
-	  --resource-group nodejs-cicd-rg \
-	  --sku B1 \
+    az appservice plan create \
+      --name nodejs-cicd-asp \
+      --resource-group nodejs-cicd-rg \
+      --sku B1 \
       --is-linux
     ```
 
@@ -102,23 +102,25 @@ This solution requires several Azure resources for deployment, which will be cre
     > [!IMPORTANT]
     > If the B1 SKU isn't available in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).
 
-1. Run the following `az webapp create` command to create the App Service instance. The name must be globally unique, so a random number will be added to the end. If this step fails due to a naming conflict, try running it again.
+1. Run the following `az webapp create` command to create the App Service instance.
 
     ```azurecli
     az webapp create \
-	  --name nodejs-cicd-$RANDOM \
-	  --resource-group nodejs-cicd-rg \
-	  --plan nodejs-cicd-asp \
+      --name nodejs-cicd-$RANDOM \
+      --resource-group nodejs-cicd-rg \
+      --plan nodejs-cicd-asp \
       --runtime "node|10.10"
     ```
+
+    The name must be globally unique, so here we use `$RANDOM` to append a random number to the name. In practice, you would choose a name that reflects your application. If this step fails due to a naming conflict, try running it again.
 
 1. Run the following `az webapp list` command to list the host name and state of the App Service instance.
 
     ```azurecli
     az webapp list \
-	  --resource-group nodejs-cicd-rg \
-	  --query "[].{hostName: defaultHostName, state: state}" \
-	  --output table
+      --resource-group nodejs-cicd-rg \
+      --query "[].{hostName: defaultHostName, state: state}" \
+      --output table
     ```
 
     Note the host name for your running service. You'll need the web host name later when you verify your work. Here's an example:
@@ -133,7 +135,7 @@ This solution requires several Azure resources for deployment, which will be cre
 
     Here's what you see:
 
-    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
+    ![The default home page on Azure App Service](../media/3-app-service-default.png)
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/deploy-nodejs/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.

@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.deploy-nodejs.2-what-is-nodejs
-title: What is Node.js?
+uid: learn.azdo.deploy-nodejs.2-azure-support-nodejs
+title: How do Azure and Azure DevOps support Node.js applications?
 metadata:
-  title: What is Node.js?
+  title: How do Azure and Azure DevOps support Node.js applications?
   description: Understand what Node.js is and how it can be deployed to Azure.
   ms.date: 04/24/2020
   author: tpetchel
   ms.author: tpetchel
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 5
 content: |
-  [!include[](includes/2-what-is-nodejs.md)]
+  [!include[](includes/2-azure-support-nodejs.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -32,11 +32,11 @@ To clean up your resource group:
 
     You see that the resource group `nodejs-cicd-rg` no longer exists.
 
-## Disable the pipeline or delete your project
+## Optional - Disable the pipeline or delete your project
 
-This project was configured to automatically run a pipeline each time there was a change to the repo. The pipeline runs use up free build minutes on our hosted agents. To avoid losing those free build minutes, disable or delete your pipeline before you move to the next module.
+This project is configured to automatically run the pipeline each time you push a change to your GitHub repository. The pipeline will now fail during the deployment stage because you deleted your Azure resources.
 
-Choose one of the following options.
+You can leave the project as it is for future reference. If you prefer, choose one of the following options to disable or delete the pipeline now.
 
 ### Option 1 - Disable the pipeline
 
@@ -66,7 +66,7 @@ To delete the project:
 
     The icon might not appear until you move your mouse over the area.
 
-    ![Azure DevOps, showing the gear icon](../../shared/media/azure-devops-project-gear.png)
+    ![Azure DevOps, showing the gear icon](../media/5-azure-devops-project-gear.png)
 1. In the **Project details** area, go to the bottom and select **Delete**.
 
     ![Azure DevOps, showing the Delete button to delete your project](../../shared/media/azure-devops-delete-project.png)
