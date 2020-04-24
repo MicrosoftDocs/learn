@@ -6,7 +6,7 @@ To accomplish these goals, you:
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
 > * Set up an Azure DevOps project for this module.
 > * On Azure Boards, move the work item for this module to the **Doing** column.
-> * Create an Azure Container Registry and Azure Kubernetes Service cluster using the Azure CLI in Azure Cloud Shell.
+> * Create an Azure Container Registry (ACR) and Azure Kubernetes Service (AKS) cluster using the Azure CLI in Azure Cloud Shell.
 > * Create pipeline variables that define the names of your Azure resources.
 > * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
 > * Update the source project on GitHub to use your new ACR instance.
@@ -131,32 +131,34 @@ To make commands easier to run, start by selecting a default region. After you s
     az configure --defaults location=westus2
     ```
 
-### Create some Bash variables
+### Create Bash variables
 
-Here, create some Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
+Create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
 
 1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
 
-    ```azurecli
+    ```bash
     resourceSuffix=$RANDOM
     ```
 
 1. Create globally unique names for your Azure Container Registry and Azure Kubernetes Service instance. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
-    ```azurecli
-	registryName="tailspinspacegame${resourceSuffix}"
-	aksName="tailspinspacegame-${resourceSuffix}"
-	```
 
-1. Create another Bash variable to store the name of your resource group. 
+    ```bash
+    registryName="tailspinspacegame${resourceSuffix}"
+    aksName="tailspinspacegame-${resourceSuffix}"
+    ```
 
-    ```azurecli
-	rgName='tailspin-space-game-rg'
-	```
+1. Create another Bash variable to store the name of your resource group.
+
+    ```bash
+    rgName='tailspin-space-game-rg'
+    ```
 
 1. Create a variable to hold the latest AKS version available in your default region.
 
     ```azurecli
-	aksVersion=$(az aks get-versions --query 'orchestrators[-1].orchestratorVersion' \
+    aksVersion=$(az aks get-versions \
+      --query 'orchestrators[-1].orchestratorVersion' \
       --output tsv)
     ```
 
@@ -170,13 +172,14 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Run the following `az group create` command to create a resource group using the name defined earlier.
 
     ```azurecli
-	az group create --name $rgName
+    az group create --name $rgName
     ```
 
 1. Run the following `az acr create` command to create an Azure Container Registry using the name defined earlier.
 
     ```azurecli
-	az acr create --name $registryName \
+    az acr create \
+      --name $registryName \
       --resource-group $rgName \
       --sku Standard
     ```
@@ -184,7 +187,8 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Run the following `az aks create` command to create an AKS instance using the name defined earlier.
 
     ```azurecli
-    az aks create --name $aksName \
+    az aks create \
+      --name $aksName \
       --resource-group $rgName \
       --enable-addons monitoring \
       --kubernetes-version $aksVersion \
@@ -197,7 +201,8 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Create a variable to store the ID of the service principal configured for the AKS instance.
 
     ```azurecli
-    clientId=$(az aks show --name $aksName \
+    clientId=$(az aks show \
+      --name $aksName \
       --resource-group $rgName \
       --query "servicePrincipalProfile.clientId" \
       --output tsv)
@@ -206,7 +211,8 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Create a variable to store the ID of the Azure Container Registry.
 
     ```azurecli
-    acrId=$(az acr show --name $registryName \
+    acrId=$(az acr show \
+      --name $registryName \
       --resource-group $rgName \
       --query "id" \
       --output tsv)
@@ -232,7 +238,8 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Run the following `az role assignment create` command to create a role assignment to authorize the AKS cluster to connect to the Azure Container Registry.
 
     ```azurecli
-    az role assignment create --assignee $clientId \
+    az role assignment create \
+      --assignee $clientId \
       --role acrpull \
       --scope $acrId
     ```
@@ -256,7 +263,7 @@ To add the variables:
 
 1. Select **+ Variable group**.
 
-1. Under **Properties**, enter **Release** for the variable group name.
+1. Under **Properties**, enter *Release* for the variable group name.
 
 1. Under **Variables**, select **+ Add**.
 
@@ -305,32 +312,32 @@ Here you create service connections that enable Azure Pipelines to access your A
 1. Ensure that **Grant access permission to all pipelines** is selected.
 1. Select **OK**.
 
+### Create the environment
+
 1. Under **Pipelines**, select **Environments**.
 
     ![Azure Pipelines showing the Environments menu option](../media/3-pipelines-environments.png)
 
-1. Select the **spike** environment. This environment was automatically inferred from the release pipeline.
-1. Select **Add resource**.
-1. Select **Kubernetes** and then **Next**.
-1. Fill in these fields:
-
-    | Field               | Value                                        |
-    |---------------------|----------------------------------------------|
-    | Provider    | **Azure Kubernetes Service**                         |
-    | Azure Subscription  | Your Azure subscription |
-    | Cluster  | **Select the one you created earlier** |
-    | Namespace | **Existing** / **default**          |
-
+1. Select **Create environment**.
+1. Under **Name**, enter *spike*.
+1. Under **Resource**, select **Kubernetes**.
+1. Select **Next**.
+1. Under **Provider**, select **Azure Kubernetes Service**.
+1. Under **Azure subscription**, select your subscription.
+1. Under **Cluster**, select the AKS cluster you created earlier.
+1. Under **Namespace**, **Existing** and **default**.
 1. Select **Validate and create**.
 
 ## Update the Kubernetes deployment manifest in your GitHub source project
 
 Here you update the Kubernetes *deployment.yml* manifest to point to the container registry you created earlier.
 
-1. Navigate to the GitHub project created for this module.
-1. Open the file at **/manifests/deployment.yml** in edit mode.
-1. Change the container image references to use your ACR login server. The code below uses *tailspinspacegame2439.azurecr.io* as an example. 
+1. Navigate to the GitHub project created for this module. The project is named *mslearn-tailspin-spacegame-web-kubernetes* in your GitHub account.
+1. Open the file at *manifests/deployment.yml* in edit mode.
+
+    ![The edit mode icon on GitHub](../media/3-github-edit-mode.png)
+1. Change the container image references to use your ACR login server. The code below uses *tailspinspacegame2439.azurecr.io* as an example.
 
     [!code-yml[](code/3-1-deployment.yml?highlight=17,37)]
 
-1. Commit the changes to the master branch.
+1. Commit the changes to the `master` branch.

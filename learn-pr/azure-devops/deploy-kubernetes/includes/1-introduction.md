@@ -8,10 +8,14 @@ In this module, you join the Tailspin Toys web team as they explore one way to u
 
 While this module focuses on the core tasks that are required to build and deploy your container app, it's important to understand that all of the other features of Azure Pipelines are still available for container deployments to Kubernetes. You can integrate testing, define multiple stages, and perform other tasks just like you would for your existing applications. We omit these tasks here to keep things focused.
 
+> [!NOTE]
+> In this module, we briefly cover the benefits of Kubernetes and when to use it. But we won't go into complete details around how Kubernetes works or how to decomose your application into microservices. You'll find additional resources at this end of this module.
+
 ## Learning objectives
 
 In this module, you will:
 
+- Understand the benefits of Kubernetes and when to use it.
 - Create Azure resources to support a Kubernetes cluster.
 - Update a basic release pipeline to build, publish, and deploy multiple Docker containers to the Kubernetes cluster.
 - Monitor the build, release, and deployment of the project.

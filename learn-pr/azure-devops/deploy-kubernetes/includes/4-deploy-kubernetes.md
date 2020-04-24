@@ -1,4 +1,4 @@
-Your project came with a release pipeline that builds the web project in the solution as a Docker container and deploys it to an Azure App Service. This will all need to be updated to support the multi-container deployment to Kubernetes.
+Your project came with a release pipeline that builds the web project in the solution as a Docker container and deploys it to Azure App Service. This will all need to be updated to support the multi-container deployment to Kubernetes.
 
 In this part, you'll:
 
@@ -13,13 +13,13 @@ In this part, you'll:
 
 ## Update the pipeline to support CI/CD
 
-Here you add a new pipeline variable to the existing CI/CD pipeline defined in *azure-pipelines.yml*. 
+Here you add a new pipeline variable to the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
 1. From Azure DevOps, navigate to **Pipelines**.
 1. Select the pipeline.
-1. Select **Edit**. This will bring up the azure-pipelines.yml file that defines the existing CI/CD pipeline.
+1. Select **Edit**. This brings up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
 
-    **Andy:** This was the build stage we had in place for the previous single-container solution. I knew it wasn't going to run properly, so I disabled it. We can start off by re-enabling CI/CD for commits to the master branch.
+    **Andy:** This was the build stage we had in place for the previous single-container solution. I knew it wasn't going to run properly, so I disabled it. We can start off by re-enabling CI/CD for commits to the `master` branch.
 
 1. Replace the existing `trigger` line at the top of the file with the code below. This will automate runs when there is a commit to the master branch.
 
@@ -27,7 +27,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 ## Define variables to be shared within the pipeline
 
-**Andy:** We're going to need to add two variables for the pipeline. The first will specify the name of the name of the leaderboard repository, which is `leaderboard`. The other will be the name we want to use for the image pull secret shared by our AKS and ACR instances when deploying.
+**Andy:** We're going to need to add two variables for the pipeline. The first will specify the name of the leaderboard repository, which is `leaderboard`. The other will be the name we want to use for the image pull secret shared by our AKS and ACR instances when deploying.
 
 1. Add the highlighted code below to the `variables` section.
 
@@ -37,9 +37,12 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 **Andy:** We already have a task for building the web app as a Docker container, which we publish to our container registry. We can just use a second task to do the same for our leaderboard.
 
-1. Add a second `Docker@2` task that builds and pushes the leaderboard container using the highlighted code below. It should go after the web container task.
+1. Add a second `Docker@2` task that builds and pushes the leaderboard container using the highlighted code below. Add this task after the web container task.
 
     [!code-yml[](code/4-3-azure-pipelines.yml?highlight=12-21)]
+
+    > [!TIP]
+    > In a YAML file, whitespace is important. Ensure that the task you add here uses the same indentation as the previous task.
 
 ## Add a task to publish the Kubernetes manifests for use in the Deploy stage
 
@@ -81,19 +84,19 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
     **Mara:** I was just looking that up, and we are in luck. The `KubernetesManifest@0` task supports an action to create the secret needed.
 
- ### Kubernetes manifest task
+### Kubernetes manifest task
 
-	The `KubernetesManifest@0` task is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined below.
-	
-	* `action` indicates the feature to run. In this case, `createSecret` creates the shared secret.
-	* `secretName` specifies the name of the secret to create.
-	* `dockerRegistryEndpoint` specifies the name of the Azure Container Services connection.
-	* `kubernetesServiceConnection` specifies the name of the Azure Kubernetes Services connection.
-	* `namespace` specifies the Kubernetes namespace this action applies to.
-	
-	You can learn more about the flexibility of this task in the official docs for the [Kubernetes manifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?azure-portal=true)
+The `KubernetesManifest@0` task is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined below.
 
-1. Add the code below to the end of the pipeline. Be sure to indent it to match the `publish` step before it.
+* `action` indicates the feature to run. In this case, `createSecret` creates the shared secret.
+* `secretName` specifies the name of the secret to create.
+* `dockerRegistryEndpoint` specifies the name of the Azure Container Services connection.
+* `kubernetesServiceConnection` specifies the name of the Azure Kubernetes Services connection.
+* `namespace` specifies the Kubernetes namespace this action applies to.
+
+You can learn more about the flexibility of this task in the [Kubernetes manifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?azure-portal=true) documentation.
+
+1. Add the code below to the end of the pipeline. Be sure to indent it to match the `download` step before it.
 
     [!code-yml[](code/4-7-azure-pipelines.yml)]
 
@@ -113,8 +116,8 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 1. Select **Save** from the top right corner of the page. Confirm the **Save** to trigger a run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. After the build has succeeded, return to the Environments tab in Azure DevOps.
-1. Select **spike**, the Azure DevOps environment created earlier.
+1. After the build has succeeded, return to the **Environments** tab in Azure DevOps.
+1. Select **spike**, the Azure DevOps environment that you created earlier.
 1. Select **default**, the Kubernetes namespace used by the deployment. Here you see the list of deployments currently in the Kubernetes cluster.
 1. Select **Services**. Here you see the different services running in Kubernetes, along with their cluster and external IP addresses.
 1. Select **web**. Here you see the service details and associated pods for the **web** service.
@@ -123,20 +126,22 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
     ![Locating the web site IP address](../media/4-deploy-ip.png)
 
 1. Navigate to the copied IP address in a new browser tab.
-1. You see the site in production.
+1. You see the site on AKS.
 
-    ![Reviewing Space Game](../media/4-space-game.png)
+    ![The Space Game website](../media/4-space-game.png)
 
 1. Return to the Azure DevOps browser tab.
 1. Use the browser **Back** button to return to the **default** namespace page.
 1. Select **leaderboard**. Here you see the service details and associated pods for the **leaderboard** service.
 1. Like before, select the **Copy External IP to  clipboard** button. This IP address is where the leaderboard API is publicly hosted.
 1. The full URL to the public leaderboard API is at that IP address using path `/api/Leaderboard`. You can also add a `pageSize=10` query parameter to make it easier to view the JSON response in your browser. Use a URL like the one below in a new browser tab.
- 
+
     `http://[IP]/api/Leaderboard?pageSize=10`
 
 1. You see the raw JSON response from the leaderboard API hosted in the Kubernetes cluster.
 
-![Reviewing the leaderboard JSON response](../media/4-leaderboard-api.png)
+    ![The leaderboard service response in JSON format](../media/4-leaderboard-api.png)
+
+    You now have a REST API that you can call from other applications.
 
 **Andy:** This turned out great! I think using Kubernetes would be a great way for us to adopt a broader microservices strategy.

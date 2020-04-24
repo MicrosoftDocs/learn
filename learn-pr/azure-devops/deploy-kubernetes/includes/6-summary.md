@@ -1,4 +1,4 @@
-Great work! In this module, we updated a release pipeline to build, publish, and deploy the team's multi-container solution to Azure Kubernetes Service. The team is now well on their way to implementing a broader microservices strategy that will offer increased agility in their development and operations.
+Great work! In this module, you updated a release pipeline to build, publish, and deploy the team's multi-container solution to Azure Kubernetes Service. The team is now well on their way to implementing a broader microservices strategy that will offer increased agility in their development and operations.
 
 While this module specifically focused on orchestrating a collection of Docker containers using Kubernetes, the fundamentals covered apply across a wide range of build and deployment targets. You can also see how Azure Pipelines can scale to support even the most sophisticated scenarios.
 
