@@ -1,9 +1,5 @@
 You are a solution architect. Your organization, Lamna Healthcare has moved its workloads to the cloud. Recently, the bill for these resources and workflows has increased more than Lamna had anticipated. You have been asked to determine whether the increase is natural, efficient growth, or whether the cost can be reduced by being more efficient with the organization's cloud resources.
 
-#### Maximize efficiency of cloud spend
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWjTgy]
-
 ## How the cloud changes your expenses
 
 One of the differences between the public cloud and on-premises infrastructure is how you pay for the services you use. In an on-premises datacenter, hardware procurement time is long, hardware is sized for maximum capacity, and some of the costs, such as power and space, can be hidden from the business unit consuming the resources. Purchasing physical infrastructure ties up investments in long-term assets, hindering your ability to be agile with your resources.
@@ -28,19 +24,7 @@ Azure Advisor also has a cost component. It recommends VM resizing, buying reser
 
 The important part is to take time to review your spend and evaluate where your money is going. Identify areas of inefficiency to ensure you're operating as efficiently as possible.
 
-## Organize to optimize
 
-Putting some organization to your resources can help track where some of your costs are going. There are ways to group resources together, establishing a relationship so you know where your costs are related. From a billing perspective, resources can be easily grouped by:
-
-- Assigning resources to different subscriptions.
-- Assigning resources to different resource groups.
-- Applying tags to resources.
-
-Using subscriptions and resource groups to organize resources is an easy way to logically group resources and can be leveraged when going through billing data. Tags come into play when resource relationships span the boundaries of subscriptions and resource groups. Tags are key/value pairs that can be added to any resource, and are exposed in billing data, allowing you to associate a department or cost center with your resource. Tags improve your ability to report on cost, as well as giving each department in your organization accountability for their own costs. The following illustration shows how you can apply the same tag to resources in different resource groups and even in different subscriptions.
-
-![An illustration showing resources organized using tags, resource groups, and subscriptions.](../media/tagging.png)
-
-Adding some organization to your resources can go a long way and can really aid in your ability to understand where your costs are going. Now let's take a look at some ways to optimize costs.
 
 ## Optimizing IaaS costs
 
@@ -128,7 +112,3 @@ Moving to services that use a consumption pricing model can bring a new approach
 Lamna Healthcare is making strides on reducing their costs. They have organized a monthly review of their costs, and each department has access to Azure Cost Management, where they can review their costs throughout the month. They've identified a number of places where reserved instances can be used and have purchased several to take advantage of this discount. They have implemented automated processes to stop development environments in off-hours, saving them additional costs during times when these resources were not being used. 
 
 Along with the optimization of blob storage for their imaging storage, they've managed to drop their bill notably over the past couple of months.
-
-## Summary
-
-Optimizing the cost of your cloud infrastructure involves tracking your spend and ensuring that your resource utilization matches the demands of your workloads. Using the right quality and performance tier for your resources can further optimize your cloud spend.
