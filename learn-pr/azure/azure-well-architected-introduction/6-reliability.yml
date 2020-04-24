@@ -14,31 +14,29 @@ content: |
   [!include[](includes/6-reliability.md)]
 quiz:
   title: Check your knowledge
-  questions:
-
-  - content: "Suppose you have recently moved your application to the cloud and your monthly bill seems higher than expected. The utilization level of your VM is high enough that you are hesitant to downsize. What might be a reasonable next step you could take to help you find inefficiencies?"
+  questions: 
+  - content: "Suppose you would like to increase the availability of your system to provide a better service-level agreement (SLA) to your customers. Which of the following is a guiding principle you can use?"
     choices:
-    - content: "Wait a month and recheck your bill"
+    - content: "Reduce your target for maximum duration of acceptable data loss."
       isCorrect: false
-      explanation: "This will tell you where you are spending money but will not help you determine the efficiency level of the components of your system."
-    - content: "Increase the amount of application testing you do before each release"
+      explanation: "This can increase recoverability, not availability."
+    - content: "Encrypt all data at rest"
       isCorrect: false
-      explanation: "This can improve the quality of your application, but generally would not help you identify infrastructure inefficiencies."
-    - content: "Add monitoring and instrumentation"
+      explanation: "This can increase security, not availability."
+    - content: "Eliminate single point of failure"
       isCorrect: true
-      explanation: "Continuous monitoring will give you the data you need to find cost savings. For example, you might find that demand is extremely variable and multiple small VMs with autoscale could cost less than the single large VM you currently use."
-
-  - content: "Which of the following is an example of improving operational efficiency?"
+      explanation: "Designing for availability focuses on maintaining service despite temporary conditions and localized failures. Adding redundancy to eliminate single points of failure is a core strategy for improving availability."
+  - content: 'Which of the following would be impacted by your defined Recovery Point Objective (RPO)?'
     choices:
-    - content: "Automating the deployment of infrastructure"
+    - content: 'The frequency of database backups'
       isCorrect: true
-      explanation: "Automating the deployment of infrastructure is a great example of improving your operational efficiency."
-    - content: "Moving services from PaaS to IaaS"
+      explanation: 'Since the recovery point objective is concerned with the amount of data loss that is tolerable, the frequency of backups needs to be within this time window and is directly impacted by your defined RPO.'
+    - content: 'The number of regions that data is replicated to'
       isCorrect: false
-      explanation: "Moving services from PaaS to IaaS is a step backwards in operational efficiency, as PaaS services typically come with reduced operational costs."
-    - content: "Documenting manual steps for the deployment of infrastructure"
+      explanation: 'The number of regions that data is replicated to is an important consideration, but is not impacted by your defined RPO.'
+    - content: 'The number of instances in a database cluster'
       isCorrect: false
-      explanation: "Documentation is important with any architecture, but operational improvement comes with automating the manual activities as opposed to simply documenting them."
-    - content: "Maintaining multiple logging systems"
+      explanation: 'The number of instances in a database cluster can be an important decision, but is not impacted by your defined RPO.'
+    - content: 'The type of load-balancing technology used in your application'
       isCorrect: false
-      explanation: "Maintaining multiple logging systems comes with increased operational overhead and a reduced ability to correlate events and metrics across the logging systems. Centralizing on a single login system can improve operational efficiency."
+      explanation: 'The type of load-balancing technology used in your application can be an important decision, but is not impacted by your defined RPO.'

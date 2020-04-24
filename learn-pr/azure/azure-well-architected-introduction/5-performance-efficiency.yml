@@ -15,29 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose you would like to increase the availability of your system to provide a better service-level agreement (SLA) to your customers. Which of the following is a guiding principle you can use?"
+  - content: 'Which of the following is an example of scaling up?'
     choices:
-      - content: "Reduce your target for maximum duration of acceptable data loss."
-        isCorrect: false
-        explanation: "This can increase recoverability, not availability."
-      - content: "Encrypt all data at rest"
-        isCorrect: false
-        explanation: "This can increase security, not availability."
-      - content: "Eliminate single point of failure"
-        isCorrect: true
-        explanation: "Designing for availability focuses on maintaining service despite temporary conditions and localized failures. Adding redundancy to eliminate single points of failure is a core strategy for improving availability."
-
-  - content: 'Which of the following would be impacted by your defined Recovery Point Objective (RPO)?'
-    choices:
-    - content: 'The frequency of database backups'
+    - content: 'Updating your application to use a queuing service'
+      isCorrect: false
+      explanation: 'Including a queuing service in your application can be a smart architecual decision, but is not an example of scaling up.'
+    - content: 'Adding more web servers into a web farm'
+      isCorrect: false
+      explanation: 'Adding more web servers into a web farm is an example of scaling out.'
+    - content: 'Adding another virtual machine into a database cluster'
+      isCorrect: false
+      explanation: 'Adding another virtual machine into a database cluster is not an example of scaling up.'
+    - content: 'Updating a virtual machine to a larger size'
       isCorrect: true
-      explanation: 'Since the recovery point objective is concerned with the amount of data loss that is tolerable, the frequency of backups needs to be within this time window and is directly impacted by your defined RPO.'
-    - content: 'The number of regions that data is replicated to'
+      explanation: 'Changing a virtual machine to a larger size increases the resources available to the instance, and is an example of scaling up.'
+  - content: 'Which of the following is an example of scaling out?'
+    choices:
+    - content: 'Updating a virtual machine to a larger size'
       isCorrect: false
-      explanation: 'The number of regions that data is replicated to is an important consideration, but is not impacted by your defined RPO.'
-    - content: 'The number of instances in a database cluster'
+      explanation: 'Changing a virtual machine to a larger size increases the resources available to the instance, and is an example of scaling up.'
+    - content: 'Adding more storage to a virtual machine'
       isCorrect: false
-      explanation: 'The number of instances in a database cluster can be an important decision, but is not impacted by your defined RPO.'
-    - content: 'The type of load-balancing technology used in your application'
+      explanation: 'Adding more storage to a virtual machine is not an example of scaling out.'
+    - content: 'Adding more web servers into a web farm'
+      isCorrect: true
+      explanation: 'Adding more web servers into a web farm is an example of scaling out.'
+    - content: 'Replicating backups to another region'
       isCorrect: false
-      explanation: 'The type of load-balancing technology used in your application can be an important decision, but is not impacted by your defined RPO.'
+      explanation: 'Replicating backups to another region is not applicable to scaling of resources.'
