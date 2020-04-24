@@ -1072,7 +1072,7 @@
     },
     {
       "source_path": "learn-pr/languages/python-create-first/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-first/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-first/index/",
       "redirect_document_id": true
     },
     {
@@ -1127,7 +1127,7 @@
     },
     {
       "source_path": "learn-pr/languages/python-datatypes-numeric-operations/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-datatypes-numeric-operations/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-datatypes-numeric-operations/index/",
       "redirect_document_id": true
     },
     {
@@ -1172,7 +1172,7 @@
     },
     {
       "source_path": "learn-pr/languages/python-format-strings/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-format-strings/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-format-strings/index/",
       "redirect_document_id": true
     },
     {
@@ -1217,7 +1217,7 @@
     },
     {
       "source_path": "learn-pr/languages/python-functions/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-functions/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-functions/index/",
       "redirect_document_id": true
     },
     {
@@ -1257,7 +1257,7 @@
     },
     {
       "source_path": "learn-pr/languages/python-if-elif-else/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-if-elif-else/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-if-elif-else/index/",
       "redirect_document_id": true
     },
     {
@@ -1302,7 +1302,7 @@
     },
     {
       "source_path": "learn-pr/languages/python-install-vscode/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-install-vscode/index/",
       "redirect_document_id": true
     },
     {
@@ -1337,7 +1337,7 @@
     },
     {
       "source_path": "learn-pr/languages/python-introduction/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-introduction/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-introduction/index/",
       "redirect_document_id": true
     },
     {
@@ -1377,7 +1377,7 @@
     },
     {
       "source_path": "learn-pr/languages/python-lists/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-lists/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-lists/index/",
       "redirect_document_id": true
     },
     {
@@ -1412,7 +1412,7 @@
     },
     {
       "source_path": "learn-pr/languages/python-standard-library/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-standard-library/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-standard-library/index/",
       "redirect_document_id": true
     },
     {
@@ -1462,7 +1462,7 @@
     },
     {
       "source_path": "learn-pr/languages/python-while/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/python-while/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-while/index/",
       "redirect_document_id": true
     }
   ]
