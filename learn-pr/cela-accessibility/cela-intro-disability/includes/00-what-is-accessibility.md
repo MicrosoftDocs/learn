@@ -3,7 +3,7 @@
 Accessibility is defined as a "word used to describe whether a product can be used by people of all abilities." People have a wide range of skills and abilities, so how people interact with technology varies greatly. For example, if you have low vision, it can be challenging to navigate a website that isn't accessible. Similarly, following along in a meeting can be challenging if you have a hearing disability, or if you do not speak the same language as the person presenting. It is important
 for all products and devices to be designed with accessibility in mind so that people of all abilities can have an enjoyable and engaging experience.
 
-![Person with low vision viewing computer screen using Magnifier](cela-accessibility/cela-intro-disability/media/image5.png)
+![Person with low vision viewing computer screen using Magnifier](../media/image5.png)
 
 ## Assistive Technology
 Some people with disabilities may use assistive technology (AT) to access technology or perform tasks. AT is any item, piece of equipment, software program, or product that is used to increase, maintain, or improve the functional capabilities of people with disabilities (ATIA). There is a wide variety of AT products and applications that enable people improve their ability to access technology.
