@@ -90,7 +90,8 @@ You can retrieve a registered environment by using the **get** method of the **E
 For example, the following code sample retrieves the *training_environment* registered environment, and assigns it to an estimator:
 
 ```python
-from azureml.core import Environment, Estimator
+from azureml.core import Environment
+from azureml.train.estimator import Estimator
 
 training_env = Environment.get(workspace=ws, name='training_environment')
 estimator = Estimator(source_directory='experiment_folder'
