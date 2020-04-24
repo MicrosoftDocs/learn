@@ -3,7 +3,7 @@
 Accessibility is defined as a "word used to describe whether a product can be used by people of all abilities." People have a wide range of skills and abilities, so how people interact with technology varies greatly. For example, if you have low vision, it can be challenging to navigate a website that isn't accessible. Similarly, following along in a meeting can be challenging if you have a hearing disability, or if you do not speak the same language as the person presenting. It is important
 for all products and devices to be designed with accessibility in mind so that people of all abilities can have an enjoyable and engaging experience.
 
-![Person with low vision viewing computer screen using Magnifier](..media/image5.png){width="5.03757217847769in" height="3.35838145231846in"}
+![Person with low vision viewing computer screen using Magnifier](cela-accessibility/cela-intro-disability/media/image5.png)
 
 ## Assistive Technology
 Some people with disabilities may use assistive technology (AT) to access technology or perform tasks. AT is any item, piece of equipment, software program, or product that is used to increase, maintain, or improve the functional capabilities of people with disabilities (ATIA). There is a wide variety of AT products and applications that enable people improve their ability to access technology.
@@ -12,10 +12,10 @@ For example, someone with low vision may use Magnifier in Windows 10 to navigate
 
 \*[Assistive Technology Industry Association](https://www.atia.org/at-resources/what-is-at/#what-is-assistive-technology) (ATIA)
 
-![Screenshot showing Magnifier app in Windows 10.](..media/image6.png){width="4.90625in" height="3.199511154855643in"}
+![Screenshot showing Magnifier app in Windows 10.](..media/image6.png)
 Figure 1. Magnifier in Windows 10
 
-![Screenshot of how to configure speech recognition for Windows 10.](..media/image7.png){width="4.916666666666667in" height="2.7931616360454945in"}
+![Screenshot of how to configure speech recognition for Windows 10.](..media/image7.png)
 Figure 2. Speech recognition in Windows 10
 
 ## What is Disability?
@@ -23,7 +23,7 @@ Disability is defined as "a mismatch in interaction between the features of a pe
 
 There are many different types of disabilities, including vision, hearing, speech, mobility, learning, and neurodiversity. How a person uses technology is dependent on a variety of factors including the person, their environment, and their goals. For example, while one person with low vision may use Magnifier to access technology, another person may use Narrator. Other people may prefer tools like Quiet Hours and Focus Assist to better concentrate on a specific task. It all depends on the individual person and their needs and preferences.
 
-![People gathered around a table. Man in the center of the image has dark glasses on.](..media/image8.png){width="5.108860454943132in" height="3.40625in"}
+![People gathered around a table. Man in the center of the image has dark glasses on.](..media/image8.png)
 
 ## Why Accessibility is Important for People of all Abilities
 According to the World Health Organization\* more than one billion people worldwide live with a disability. That's more than 15 percent of our global population! In fact, as of 2020, 22 percent of the world's population is over 60 years old---this is noteworthy because, as people age, they may experience changes in their abilities. Additionally, each of us may encounter temporary disabilities at some point throughout our everyday lives. For example, if you fracture a finger, you may be limited in how much or how fast you can type. In this instance, Speech Recognition could help you to continue to use your computer and stay productive. People also frequently experience situational exclusion, which means a given circumstance or activity affects their ability to perform a task. For example, if a person is attempting to feed a baby or hold a child on their lap, that will affect their ability to do other activities or use technology in that particular moment. Accessibility is important for people of all abilities and affects how everyone uses technology.

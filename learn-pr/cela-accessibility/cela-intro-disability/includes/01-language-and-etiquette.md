@@ -13,7 +13,7 @@ How you act tells people who you are and what you think of them. Regardless of w
 ### Speak to the Person
 If you are in a meeting and one of the attendees is blind and asks a question, look directly at the person who is blind when answering the question, not just the sighted people around them.
 
-![Two people sitting down and talking directly to each other](..media/image9.png){width="5.0in" height="3.3333333333333335in"}
+![Two people sitting down and talking directly to each other](..media/image9.png)
 
 ### Disability Etiquette
 Treating people with disabilities with respect is about more than the language you use. Here are some important tips for interacting with people with disabilities in an appropriate and respectful way.
@@ -28,7 +28,7 @@ They can be briefly summarized as:
 
 A person who is deaf may have a sign language interpreter. Ensure that you speak directly to the person when you are talking, not the interpreter.
 
-![Person with a hearing disability speaking with another person](..media/image10.png){width="4.9995898950131235in" height="3.333059930008749in"}
+![Person with a hearing disability speaking with another person]
 
 [Don't touch]{.underline}
 
