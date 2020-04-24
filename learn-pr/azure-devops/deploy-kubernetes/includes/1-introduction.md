@@ -8,9 +8,6 @@ In this module, you join the Tailspin Toys web team as they explore one way to u
 
 While this module focuses on the core tasks that are required to build and deploy your container app, it's important to understand that all of the other features of Azure Pipelines are still available for container deployments to Kubernetes. You can integrate testing, define multiple stages, and perform other tasks just like you would for your existing applications. We omit these tasks here to keep things focused.
 
-> [!NOTE]
-> In this module, we briefly cover the benefits of Kubernetes and when to use it. But we won't go into complete details around how Kubernetes works or how to decomose your application into microservices. You'll find additional resources at this end of this module.
-
 ## Learning objectives
 
 In this module, you will:
@@ -31,7 +28,7 @@ We also recommend you start at the beginning of this learning path: [Deploy appl
 
 [!include[](../../shared/includes/project-details-note.md)]
 
-This module also assumes you have basic familiarity with Kubernetes, although that knowledge is not required to complete it. If you are new to the topic, it is recommended that you complete the [Administer containers in Azure learning path](/learn/paths/administer-containers-in-azure/?azure-portal=true) learning path first.
+This module also assumes you have basic familiarity with Kubernetes, although that knowledge is not required to complete it. If you are new to the topic, we recommend that you complete the [Administer containers in Azure learning path](/learn/paths/administer-containers-in-azure/?azure-portal=true) learning path first. You'll also find additional resources at this end of this module.
 
 ## Meet the team
 
