@@ -74,11 +74,11 @@ Application Insights works with Azure Pipelines. Use them together to improve yo
 
 When you create a new release pipeline in Azure Pipelines, you need to use the **Azure App Service deployment with continuous monitoring** template and apply it to your pipeline.
 
-![Pipeline](../media/5-pipeline-template.png)
+:::image type="content" source="../media/5-pipeline-template.png" alt-text="Pipeline." loc-scope="azure-devops":::
 
 The template automatically creates a pipeline stage. View the tasks in your stage to configure the connection between your pipeline and Application Insights.
 
-![Stage](../media/5-pipeline-stage.png)
+:::image type="content" source="../media/5-pipeline-stage.png" alt-text="Stage." loc-scope="azure-devops":::
 
 You need to provide details about your application and the Application Insights resource, and then save your configuration.
 

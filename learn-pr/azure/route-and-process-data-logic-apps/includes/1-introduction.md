@@ -1,8 +1,6 @@
-Azure Logic Apps let you automate your business processes and run them in the cloud.
+The following video shows what you'll be building in this module.
 
-Suppose you work at an athletic shoe company as the IT resource for the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes.
-
-The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications.
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Learn/Intro-to-Logic-Apps/player?format=ny]
 
 In this module, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets. Your workflow will trigger when a new tweet is available. It will use cloud services to determine if the content is positive or negative and take different steps based on the results. After processing, it will save the data in a cloud-hosted database. By the end of this module, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors.
 

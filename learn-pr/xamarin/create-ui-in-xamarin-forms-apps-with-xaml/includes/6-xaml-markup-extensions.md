@@ -94,7 +94,7 @@ The assigned value is identified by a namespace declaration. By using this names
 
 ### Simplify the extension declaration in XAML
 
-If the extension class uses the convention where that has **Extension** as the suffix on the class name, as a convenience you can leave off the word extension. The XAML parser still figures out the class to use. The parser knows that it's looking for a markup extension, because of the open curly brace. The system looks behind the scenes for a class named `Static` or a class named `StaticExtension`. It finds the appropriate class.
+When using an extension class in your XAML, you can omit any **Extension** suffix on the class name. The XAML parser still determines the class to use. The parser knows that it's looking for a markup extension, because of the open curly brace. The system looks behind the scenes for a class named `Static` or a class named `StaticExtension`. It finds the appropriate class.
 
 If the markup extension defines a `Content` property, you can leave the member identified off from the XAML declaration. Your final XAML declaration looks like the following code:
 

@@ -49,4 +49,4 @@ Let's fix the problem. You'll modify your XAML so updated resource values are lo
 
 Run the app on a platform of your choice. Select the **Dark** and **Light** buttons. The UI now changes correctly. The following animation shows the expected behavior.
 
-![An animation that shows the TipCalculator app running. The user taps the "Dark" and "Light" buttons, and the colors of the UI change in response](../media/5-tips.gif)
+![Animation showing the TipCalculator app running. The user taps the "Dark" and "Light" buttons, and the colors of the UI change in response.](../media/5-tips.gif)

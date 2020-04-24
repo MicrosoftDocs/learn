@@ -11,6 +11,7 @@ metadata:
   zone_pivot_groups: dev-lang-csharp-node
 title: Exercise - Create an Azure IoT Hub, and a device ID, using the Microsoft Azure portal
 azureSandbox: true
+interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-iot-hub-device-id.md)]

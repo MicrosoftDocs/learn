@@ -3,7 +3,7 @@ uid: learn.azure.network-fundamentals-2.firewalls-network-security
 title: Understand firewalls and network security
 metadata:
   title:  Understand firewalls and network security
-  description: Understanding what firewalls are and how to use them, and network security.
+  description: Understanding what firewalls are and how to use them, and understanding network security.
   ms.date: 01/09/2020
   author: cryophobia
   ms.author: chrvaw
@@ -17,24 +17,24 @@ quiz:
   questions:
   - content: Which of the following best practices should you implement for your network security on Azure?
     choices:
-    - content: Disable load-balancing of traffic
+    - content: Disable load balancing of traffic.
       isCorrect: false
-      explanation: You shouldn't disable load-balancing, it helps you improve performance and availability. You should disable SSH/RDP protocols.
-    - content: Disable SSH/RDP protocols
+      explanation: You shouldn't disable load balancing. It helps you improve performance and availability. You should disable SSH/RDP protocols.
+    - content: Disable SSH/RDP protocols.
       isCorrect: true
       explanation: You can enable it again once you've established a VPN tunnel for your connections.
-    - content: Disable network service endpoints
+    - content: Disable network service endpoints.
       isCorrect: false
-      explanation: You shouldn't disable network service endpoints, they help you isolate your Azure services from the public internet. You should disable SSH/RDP protocols.
+      explanation: You shouldn't disable network service endpoints. They help you isolate your Azure services from the public internet. You should disable SSH/RDP protocols.
       
-  - content: You need to prevent users' devices from directly requesting webpages from the internet themselves. Which tool would you use to do this?
+  - content: You need to prevent users' devices from directly requesting web pages from the internet. Which tool would you use to do this?
     choices:
-    - content: Packet filtering firewall
+    - content: Packet filtering firewall.
       isCorrect: false
       explanation: This type of firewall checks your packets. Use a proxy server to hide details about your clients from the internet.
-    - content: Circuit-level  firewall
+    - content: Circuit-level  firewall.
       isCorrect: false
       explanation: This type of firewall helps you check whether TCP and DUP connections are valid. Use a proxy server to hide details about your clients from the internet.
-    - content: Proxy server firewall
+    - content: Proxy server firewall.
       isCorrect: true
       explanation: A proxy server helps you hide details about the requesting client.

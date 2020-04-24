@@ -25,7 +25,7 @@ There are many useful charts and diagrams in an Application Insights resource an
 - Specify an aggregation method. This option specifies whether the chart will show the average, minimum, maximum, sum, or count for the chosen metric at each plotted point.
 - Specify a filter. Data that doesn't satisfy the filter won't be displayed. Use filters when you need to focus on a specific data set.
 
-   ![Creating a custom chart in Application Insights](../media/4-custom-chart-creation.png)
+   ![Screenshot of the Application Insights Metrics pane with a callout highlighting the details required to add a new metric.](../media/4-custom-chart-creation.png)
 
 After you create the chart you need, you can pin it to an Application Insights dashboard to save it and then publish the dashboard to share it with other users and stakeholders.
 
@@ -37,4 +37,4 @@ When you enable runtime instrumentation in a web app, a link appears in the Azur
 
 Another way to view the Application Insights dashboard is to select **Dashboard** from the Azure portal menu. If more than one dashboard is stored for your user account, you might need to switch to the Application Insights dashboard you want by selecting it in the drop-down list in the upper-left corner:
 
-![Selecting a dashboard](../media/4-selecting-a-dashboard.png)
+![Screenshot of the dashboard toolbar for Application Insights.](../media/4-selecting-a-dashboard.png)

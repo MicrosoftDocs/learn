@@ -41,7 +41,7 @@ az vm create \
 
 Your VM will take a few minutes to come up.
 
-[Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-general?azure-portal=true#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more compute power or additional capabilities, such as graphics processing.
+[Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/dv2-dsv2-series#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more compute power or additional capabilities, such as graphics processing.
 
 The `--resource-group` argument specifies the _resource group_ that holds all the things that we need to create. A resource group enables you to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit. Normally, you would create your own resource group before you create Azure resources. Because you're in the free Azure sandbox environment, you can skip this step. Instead, you use the pre-created resource group <rgn>[Resource Group Name]</rgn>.
 

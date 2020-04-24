@@ -44,7 +44,7 @@ Since we are in the free Azure sandbox environment, you don't need to do this st
 
 ### Validate and deploy the template
 
-To deploy our logic app we'll use the `az group deployment create` command, since we are deploying to a resource group.  When deploying using this command, you can choose to deploy a remote template by specifying its location with the `--template-uri` parameter. In our case, we want to deploy the template we have locally, so we'll set the `--template-file` parameter. 
+To deploy our logic app we'll use the `az deployment group create` command, since we are deploying to a resource group.  When deploying using this command, you can choose to deploy a remote template by specifying its location with the `--template-uri` parameter. In our case, we want to deploy the template we have locally, so we'll set the `--template-file` parameter. 
 
 1. From the Cloud Shell run `az group deployment validate` to validate the template.
 
@@ -62,10 +62,10 @@ To deploy our logic app we'll use the `az group deployment create` command, sinc
     
     If validation failed, you would see a detailed description of the failure in the output.
 
-1. Run the following `az group deployment create` command in the Cloud Shell to deploy the logic app defined by our basic template to our sandbox resource group. 
+1. Run the following `az deployment group create` command in the Cloud Shell to deploy the logic app defined by our basic template to our sandbox resource group. 
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
     --name MyDeployment \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --template-file basic-template.json

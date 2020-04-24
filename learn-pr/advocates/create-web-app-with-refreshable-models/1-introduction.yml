@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.create-web-app-with-refreshable-models.1-introduction
+metadata:
+  title: Introduction
+  description: Create a web app consuming a custom vision machine learning model and build it with GitHub Actions.
+  ms.date: 02/10/2020
+  author: jlooper
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

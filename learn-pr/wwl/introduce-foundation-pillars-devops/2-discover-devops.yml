@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduce-foundation-pillars-devops.discover-devops
+title: Discover DevOps
+metadata:
+  title: Discover DevOps
+  description: "Discover DevOps"
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-discover-devops.md)]

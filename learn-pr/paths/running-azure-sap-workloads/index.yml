@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.wwl.run-azure-sap-workloads
+metadata:
+  title: Run Azure for SAP workloads
+  description: Run Azure for SAP workloads
+  ms.date: 02/28/2020
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Run Azure for SAP workloads
+prerequisites: |
+  Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) or Azure Solutions Architect (AZ-300) exam, as well as SAP HANA or NetWeaver training.
+summary: |
+  This learning path augments existing knowledge around the deployment methodologies for SAP workloads in Azure, focusing on Azure Marketplace and custom images using the Azure portal, Azure Resource Manager (ARM) templates, and Azure PowerShell cmdlets.
+iconUrl: /learn/achievements/run-azure-sap-workloads.svg
+levels:
+- advanced
+roles:
+- administrator
+products:
+- azure
+modules:
+- learn.wwl.implement-azure-vm-based-sap-solutions
+- learn.wwl.migrate-sap-workloads-azure
+- learn.wwl.maintain-azure-sap-workloads
+trophy:
+  uid: learn.wwl.run-azure-sap-workloads.trophy

@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-foundation-pillars.knowledge-check
+title: Knowledge check
+metadata:
+  title: knowledge check
+  description: "knowledge check"
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What's the most important skill to have for 21st century success as a software architect?"
+    choices:
+    - content: "In-depth understanding of the Azure Service Fabric"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Understanding the Azure Service Fabric is helpful, but it isn't the most important skill to have for 21st century success as a software architect."
+    - content: "The ability to provision and encrypt data at rest in an Azure SQL database"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Knowledge of Azure SQL databases is helpful, but it isn't the most important skill to have for 21st century success as a software architect."
+    - content: "The ability to learn"
+      isCorrect: true
+      explanation: "That’s correct. The ability to learn is the most important skill to have for 21st century success as a software architect."
+  - content: "What does Conway’s Law state about the relationship between architecture and organization?"
+    choices:
+    - content: "The borders between architecture and organization are speed bumps on the information superhighway."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't what Conway’s Law states about the relationship between architecture and organization."
+    - content: "System design is affected by the communications structures of the organizations that design the systems."
+      isCorrect: true
+      explanation: "That’s correct. This is what Conway’s Law states about the relationship between architecture and organization."
+    - content: "The number of available technology tools in an organization is inversely proportional to its architectural hierarchy."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't what Conway’s Law states about the relationship between architecture and organization."
+  - content: "What two characteristics in system/app architecture have the greatest impact on software delivery performance?"
+    choices:
+    - content: "Deployability and recoverability"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Recoverability is important, but there are other characteristics with greater impact on software delivery performance."
+    - content: "Sustainability and testability"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Sustainability is important,  but there are other characteristics with greater impact on software delivery performance."
+    - content: "Testability and deployability"
+      isCorrect: true
+      explanation: "That’s correct. Testability and deployability have the greatest impact on software delivery."
+  - content: "Which of the following examples are modern Azure DevOps Services?"
+    choices:
+    - content: "Azure Boards and Azure Pipelines"
+      isCorrect: true
+      explanation: "That’s correct. Azure Board and Azure Pipelines are two modern Azure DevOps Services."
+    - content: "Azure Test Plans and Azure Key Vault"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Azure Test Plans and Azure Key Vault aren't modern Azure DevOps Services."
+    - content: "Azure Artifacts and App Insights"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Azure Artifacts and App Insights aren't modern Azure DevOps Services."

@@ -19,6 +19,10 @@ Take your interest further with:
 - [Azure Cosmos DB documentation](https://docs.microsoft.com/azure/cosmos-db/)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 
-And look out for additional Learn modules on IoT.
+And look out for additional Learn modules on IoT
+
+## Learn more with a Channel 9 video series
+
+- [IoT 101](https://channel9.msdn.com/Series/IoT-101/?&WT.mc_id=EducationalIoT-c9-niner&azure-portal=true)
 
 To finish this module, complete a final knowledge check.

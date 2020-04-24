@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.explain-devops-continous-delivery-quality
+metadata:
+  title: Explain DevOps Continuous Delivery and Continuous Quality
+  description: "Explore two capabilities in the DevOps taxonomy, Continuous Delivery and Continuous Quality."
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explain DevOps Continuous Delivery and Continuous Quality
+summary: Explore two capabilities in the DevOps taxonomy, Continuous Delivery and Continuous Quality.
+abstract: |
+  - Explain Continuous Delivery
+  - Compare Continuous Delivery and Continuous Integration
+  - List the benefits, challenges and risks of Continuous Quality
+  - Describe the Continuous Quality mindset
+  - Compare Continuous Quality and Traditional Quality assurance
+prerequisites: |
+  None
+iconUrl: /learn/achievements/explain-devops-continuous-delivery-quality.svg
+levels:
+- beginner
+roles:
+- administrator
+- ai-edge-engineer
+- ai-engineer
+- business-analyst
+- business-owner
+- business-user
+- data-analyst
+- data-engineer
+- data-scientist
+- developer
+- devops-engineer
+- functional-consultant
+- maker
+- security-engineer
+- solution-architect
+- technology-manager
+products:
+- azure
+units:
+- learn.wwl.explain-devops-continous-delivery-quality.introduction
+- learn.wwl.explain-devops-continous-delivery-quality.use-continuous-delivery-release-faster
+- learn.wwl.explain-devops-continous-delivery-quality.explore-continuous-quality
+- learn.wwl.explain-devops-continous-delivery-quality.knowledge-check
+- learn.wwl.explain-devops-continous-delivery-quality.summary
+badge:
+  uid: learn.wwl.explain-devops-continous-delivery-quality.badge
