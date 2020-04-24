@@ -104,6 +104,14 @@ groups:
       title: C#
     - id: python
       title: Python
+- id: dev-lang-nodeexpress-pythonflask
+  title: Development platform
+  prompt: Choose your platform
+  pivots:
+    - id: nodeexpress
+      title: Express and Node.js (JavaScript)
+    - id: pythonflask
+      title: Flask (Python)
 - id: dev-lang-csharp-node
   title: Development language
   prompt: Choose your development language
