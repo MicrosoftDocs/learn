@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.unsupervised-learning-clustering.2-load-prepare-data
+title: Load the data
+metadata:
+  title: Load the data
+  description: Load the data TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-load-prepare-data.md)]

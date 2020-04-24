@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.reactors.supervised-learning-regression
+metadata:
+  title: 'Supervised learning: Regression'
+  description: Learn how to TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+title: 'Supervised learning: Regression'
+summary: Learn how to TBD.
+abstract:  | 
+  In this module, you will:
+  - TBD
+
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - TBD
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.supervised-learning-regression.1-introduction
+- learn.reactors.supervised-learning-regression.2-load-data
+- learn.reactors.supervised-learning-regression.3-simple-linear-regression
+- learn.reactors.supervised-learning-regression.4-polynomial-regression
+- learn.reactors.supervised-learning-regression.5-multiple-regression
+- learn.reactors.supervised-learning-regression.6-categorical-data
+badge:
+  uid: learn.reactors.supervised-learning-regression.badge 

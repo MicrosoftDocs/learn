@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.unsupervised-learning-clustering.8-k-means-pca
+title: k-Means and PCA
+metadata:
+  title: k-Means and PCA
+  description: k-Means and PCA TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-k-means-pca.md)]

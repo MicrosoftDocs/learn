@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.supervised-learning-regression.5-multiple-regression
+title: Multiple regression
+metadata:
+  title: Multiple regression
+  description: Multiple regression TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-multiple-regression.md)]
