@@ -93,7 +93,7 @@ Over the course of the algorithm the temperature is gradually lowered, which mea
 This ensures that the search space is explored widely at the beginning, and at the end only small changes are made that finetune the solution.
 
 ### Quantum annealing
-Quantum annealing is a quantum algorithm which is similar in spirit to simulated annealing but different in its quantitative details. 
+Quantum annealing is a quantum algorithm which is similar in spirit to simulated annealing but differs in its quantitative details. 
 In quantum annealing, instead of giving assignments to variables, we give assignments to qubits.
 The energy of a given assignment to the qubits is the value of the objective function.
 Initially we begin with the quantum state in a broad superposition over many possible assignments to the qubits.
