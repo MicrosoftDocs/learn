@@ -34,6 +34,7 @@ levels:
 roles:
 - developer
 products:
+- azure-iot
 - azure-iot-edge
 units:
 - learn.iot.set-up-iot-edge-gateway.introduction

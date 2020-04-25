@@ -95,7 +95,7 @@ Modify the registration page to allow administrators to register using the follo
 
     1. Apply the highlighted changes to the `OnPostAsync` method:
 
-        [!code-csharp[](../code/areas/identity/pages/account/6-register.cshtml.cs?name=snippet_onpostasync&highlight=1-3,20-22)]
+        [!code-csharp[](../code/areas/identity/pages/account/6-register.cshtml.cs?name=snippet_onpostasync&highlight=1-3,21-23)]
 
         In the preceding code:
 
@@ -134,7 +134,7 @@ Modify the registration page to allow administrators to register using the follo
 1. Obtain an administrator self-enrollment token using the following command:
 
     ```bash
-    echo $(wget -q -O - $webAppUrl/api/admintoken)
+    echo $(wget -q -O - $webAppUrl/admintoken)
     ```
 
     > [!WARNING]

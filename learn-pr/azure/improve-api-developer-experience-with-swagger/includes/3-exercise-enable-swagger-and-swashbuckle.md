@@ -46,7 +46,7 @@ In this section, we'll run a script to host our code as a Web App API in Azure. 
 
 2. Take note of the values for **DEPLOYMENT-PASSWORD**, **API-ROOT-URL**, and **EXAMPLE-URL** that are displayed in the Cloud Shell. You'll need these values for the module exercises.
 
-1. Copy the **EXAMPLE-URL** value displayed in the Cloud Shell when the script completes and paste the address into your favorite browser. The URl will look similar to *https://PrintFramerAPIabc.azurewebsites.net/api/priceframe/6/17* and when you navigate to the address in the browser it should respond with the message `The cost of a 6x17 frame is $20.00`.
+1. Copy the **EXAMPLE-URL** value displayed in the Cloud Shell when the script completes and paste the address into your favorite browser. The URL will look similar to `https://PrintFramerAPIabc.azurewebsites.net/api/priceframe/6/17` and when you navigate to the address in the browser it should respond with the message `The cost of a 6x17 frame is $20.00`.
 
 Since we created the API, we knew its shape, but an external developer who wants to consume this API would not be so fortunate. Let's help those developers by exposing some documentation about our API with the help of Swagger.
 

@@ -1,13 +1,13 @@
-Google's MapReduce programming model allows computational jobs to be structured in terms of two functions: map and reduce. Input is fed into MapReduce as key-value pairs, where it is then processed through a map function and fed into a reduce function. The reduce operation then produces a result, which is also in the form of key-value pairs. MapReduce is designed to execute many instances of map and reduce operations in parallel over a large computational cluster. The MapReduce programming model is covered in detail in a later module.
+The MapReduce programming model allows computational jobs to be structured in terms of two functions: map and reduce. Input is fed into MapReduce as key-value pairs, where it is then processed through a map function and fed into a reduce function. The reduce operation then produces a result, which is also in the form of key-value pairs. MapReduce is designed to execute many instances of map and reduce operations in parallel over a large computational cluster. The MapReduce programming model is covered in detail in a later module.
 
-The MapReduce programming model assumes the availability of a distributed storage system that is available across all the nodes of the cluster, with a single namespace, which is where Google File System (GFS) comes in.<sup>[1][^1]</sup> GFS is a distributed file system (DFS) that is collocated with the nodes of the MapReduce cluster. GFS is designed to work in tandem with MapReduce and maintains a single namespace for the entire MapReduce cluster.
+The MapReduce programming model assumes the availability of a distributed storage system that is available across all the nodes of the cluster, with a single namespace, which is where a distributed file system (DFS) comes in. A DFS is collocated with the nodes of the MapReduce cluster. The DFS is designed to work in tandem with MapReduce and maintains a single namespace for the entire MapReduce cluster.
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0qE]
 
-Both Google's MapReduce and GFS implementations remain proprietary. However, an open-source clone of MapReduce, called Apache Hadoop<sup>[2][^2]</sup>, has emerged and gained <!-- a lot of -->popularity in big-data circles. HDFS is an open-source clone of GFS. HDFS is designed to be a distributed, scalable, fault-tolerant file system that primarily caters to the needs of the MapReduce programming model. Video 4.12 introduces HDFS.
+An open-source version of MapReduce, called Apache Hadoop<sup>[2][^2]</sup>, is very popular in big-data circles. HDFS is an open-source DFS. HDFS is designed to be a distributed, scalable, fault-tolerant file system that primarily caters to the needs of the MapReduce programming model. Video 4.12 introduces HDFS.
 
-It is important to note that HDFS is not POSIX-compliant and is not a mountable file system on its own. HDFS is typically accessed via HDFS clients or by using application programming interface (API) calls from the Hadoop libraries. However, the development of a File system in User SpacE (FUSE) driver for ([HDFS](http://wiki.apache.org/hadoop/MountableHDFS)) allows it to be mounted as a virtual device in UNIX-like operating systems. 
+It is important to note that HDFS is not POSIX-compliant and is not a mountable file system on its own. HDFS is typically accessed via HDFS clients or by using application programming interface (API) calls from the Hadoop libraries. However, the development of a File system in User SpacE (FUSE) driver for ([HDFS](http://wiki.apache.org/hadoop/MountableHDFS)) allows it to be mounted as a virtual device in UNIX-like operating systems.
 
 ## HDFS architecture
 
@@ -25,13 +25,13 @@ An HDFS cluster is illustrated in the following figure:
 
 _Figure 1: HDFS architecture_
 
-HDFS follows a master-slave design. The master node is called the **NameNode**. The NameNode handles the metadata management for the entire cluster and maintains a single namespace for all the files stored on HDFS. The slave nodes are known as **DataNodes**. The DataNodes store the actual data blocks on the local file system within each node.
+HDFS follows a master-subordinate design. The master node is called the **NameNode**. The NameNode handles the metadata management for the entire cluster and maintains a single namespace for all the files stored on HDFS. The subordinate nodes are known as **DataNodes**. The DataNodes store the actual data blocks on the local file system within each node.
 
-Files in HDFS are split into **blocks** (also called **chunks**), with a default size of 128MB each. <!-- This is i -->In contrast, <!-- to -->local file systems <!-- which have -->typically have block sizes of about 4KB. HDFS uses large block sizes because it is designed to store extremely large files in a manner that is efficient to process with MapReduce jobs.
+Files in HDFS are split into **blocks** (also called **chunks**), with a default size of 128MB each. In contrast, local file systems typically have block sizes of about 4KB. HDFS uses large block sizes because it is designed to store extremely large files in a manner that is efficient to process with MapReduce jobs.
 
-A single map task in MapReduce is configured by default to work on a single HDFS block independently, and hence multiple map tasks can process multiple HDFS blocks in parallel. If the block size is too small, <!-- there will be -->a large number of map tasks <!-- that -->will need to be distributed across the nodes of the cluster, and the overhead of doing so might negatively impact performance. On the other hand, if the block is too large, the number of map tasks that can process the file in parallel is reduced, thereby affecting parallelism. HDFS allows block sizes to be specified on a per-file basis, so users can tune the block size to achieve the level of parallelism they desire. MapReduce's interaction with HDFS is discussed in detail in a later module.
+A single map task in MapReduce is configured by default to work on a single HDFS block independently, and hence multiple map tasks can process multiple HDFS blocks in parallel. If the block size is too small, a large number of map tasks will need to be distributed across the nodes of the cluster, and the overhead of doing so might negatively impact performance. On the other hand, if the block is too large, the number of map tasks that can process the file in parallel is reduced, thereby affecting parallelism. HDFS allows block sizes to be specified on a per-file basis, so users can tune the block size to achieve the level of parallelism they desire. MapReduce's interaction with HDFS is discussed in detail in a later module.
 
-In addition, because HDFS is designed to tolerate failures of individual nodes, data blocks are **replicated** across nodes to provide data redundancy. This process is<!-- will be --> elaborated in the following sections. 
+In addition, because HDFS is designed to tolerate failures of individual nodes, data blocks are **replicated** across nodes to provide data redundancy. This process is elaborated in the following sections.
 
 ## Cluster topology in HDFS
 
