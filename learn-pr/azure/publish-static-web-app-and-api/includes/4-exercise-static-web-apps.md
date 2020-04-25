@@ -19,11 +19,8 @@ Now that your GitHub repository is created, you can create a Static Web App from
 Next, configure your new app and link it to your GitHub repository.
 
 1. Select your sandbox _Azure subscription_
-1. Select or create a new _Resource Group_
-1. Name the app **my-first-static-web-app**.
-
-   - Valid characters are `a-z` (case insensitive), `0-9`, and `_`.
-
+1. Select the _Resource Group_ <rgn>[Sandbox resource group name]</rgn>
+1. Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `_`.
 1. Select _Region_ closest to you
 1. Select the **Free** _SKU_
 1. Click the **Sign-in with GitHub** button and authenticate with GitHub
@@ -67,7 +64,7 @@ Next, add configuration details specific to your preferred front-end framework.
 
 - Enter **/** in the _App location_ box
 - Clear the default value from the _Api location_ box
-- Clear the default value from _App artifact location_ box
+- Enter **public** in the _App artifact location_ box
 - Click the **Review + create** button
 
 ::: zone-end
@@ -83,21 +80,27 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone-end
 
+:::image type="content" source="../media/static-web-apps-build.png" alt-text="Azure Static Web Apps build page":::
+
 ### Review + create
 
 After the build validates, you can continue to create the application.
 
-- Click the **Create** button
-- Once the deployment is complete, click the **Go to resource** button
-
-## View website
+1. Click the **Create** button
+1. Once the deployment is complete, click the **Go to resource** button
 
 There are two automated aspects to deploying a static web app. The first aspect provisions the underlying Azure resources that make up your app. The second aspect is a GitHub Actions workflow that builds and publishes your application.
 
 > [!NOTE]
 > You can ensure that the GitHub Actions workflow is complete by checking the status of your commits available at `https://github.com/<YOUR_GITHUB_USERNAME>/my-first-static-web-app/actions`.
 
-Once the provisioning and deployment is complete, you can click on the _URL_ link in the Azure portal to launch your app in the browser.
+### View website
+
+1. Click on the _URL_ link in the Azure portal to visit your app in the browser.
+
+:::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
+
+If you see a web page that says the app hasn't been built and deployed yet, that's ok. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web App is created, so if you see the splash page, the app is still being deployed.
 
 ## Next steps
 
