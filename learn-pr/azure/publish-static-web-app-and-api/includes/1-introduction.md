@@ -24,7 +24,7 @@ Back-end API functionality is powered by Azure Functions, which provides automat
 - **Scalable API** with support provided by Azure Functions.
 - **First-party GitHub integration** where repository changes trigger builds and deployments.
 - **Free SSL certificates**, which are automatically renewed.
-- **Staging URLs**, for branches and pull requests
+- **Unique URLs**, for branches and pull requests
 
 ## Learning objectives
 
