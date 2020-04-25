@@ -16,7 +16,7 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 1. Start by cloning the GitHub repository to our computer.
 
    ```bash
-   git clone https://github.com/<YOUR-GITHUB-ACCOUNT>/my-first-static-web-app
+   git clone https://github.com/<YOUR_GITHUB_USERNAME_>/my-first-static-web-app
    ```
 
 1. Next, go to the folder of your preferred front-end framework, as shown below:

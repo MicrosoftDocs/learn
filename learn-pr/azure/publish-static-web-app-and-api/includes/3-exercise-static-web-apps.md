@@ -1,37 +1,47 @@
-## 3 - Exercise - Create an Azure Static Web App
+You want to publish your app to Azure. Let's go!
 
 ## Activate the Azure sandbox
+
+First, you'll connect to an Azure sandbox. you'll be able to create the Azure Static Web Apps resources from here.
 
 1. Start by **activating the Azure sandbox above**.
 1. Once it's activated, [sign into the Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
 
-## Flow
+## Create a static app
 
-- Motivation - You want to publish your app to Azure. Let's go!
-- Setup the concierge sandbox
-- Navigate to https://aka.ms/tryjamstack [TODO: this will change]
-- Set the subscription
-- Create a resource group
-- Set the Azure static web app name
-- Select the region
-- Click sign-in with GitHub
-- Authorize Azure-Static-Web-Apps access to your GitHub account
-- When you are prompted for password enter it
-- Select your GitHub organization, repository, and branch
-- Click the next: Build button
-- Enter the app location
-- Enter the api location
-- Enter the artifact location
-- Click the Review:Create button
-- Browse to it? Takes about a minute
+Now that your GitHub repository is created, you can create a Static Web App from the Azure portal.
 
-## Build
+1. In the top bar, search for **Static Web Apps**
+1. Click **Static Web Apps**
+
+### Basics
+
+Next, configure your new app and link it to your GitHub repository.
+
+1. Select your sandbox _Azure subscription_
+1. Select or create a new _Resource Group_
+1. Name the app **my-first-static-web-app**.
+
+   - Valid characters are `a-z` (case insensitive), `0-9`, and `_`.
+
+1. Select _Region_ closest to you
+1. Select the **Free** _SKU_
+1. Click the **Sign-in with GitHub** button and authenticate with GitHub
+1. Select your preferred _Organization_
+
+   - This should be the same organization where you created your new repository
+
+1. Select **my-first-static-web-app** from the _Repository_ drop-down
+1. Select **master** from the _Branch_ drop-down
+1. Click the **Next: Build >** button to edit the build configuration
+
+### Build
 
 Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone pivot="angular"
 
-### [Angular](#tab/angular)
+# [Angular](#tab/angular)
 
 - Enter **src** in the _App location_ box
 - Clear the default value from the _Api location_ box
@@ -42,7 +52,7 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone pivot="react"
 
-### [React](#tab/react)
+# [React](#tab/react)
 
 - Enter **/** in the _App location_ box
 - Clear the default value from the _Api location_ box
@@ -53,7 +63,7 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone pivot="svelte"
 
-### [Svelte](#tab/svelte)
+# [Svelte](#tab/svelte)
 
 - Enter **/** in the _App location_ box
 - Clear the default value from the _Api location_ box
@@ -64,7 +74,7 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone pivot="vue"
 
-### [Vue](#tab/vue)
+# [Vue](#tab/vue)
 
 - Enter **/** in the _App location_ box
 - Clear the default value from the _Api location_ box
@@ -72,30 +82,6 @@ Next, add configuration details specific to your preferred front-end framework.
 - Click the **Review + create** button
 
 ::: zone-end
-
-## Create the app
-
-Now that the repo is created, you can create a static app from the Azure portal.
-
-- Navigate to the [Azure portal](https://portal.azure.com)
-- In the top bar, search for **Static Web Apps**
-- Click **Static Web Apps**
-
-### Basics
-
-Begin by configuring your new app and linking it to a GitHub repository.
-
-- Select your _Azure subscription_
-- Select or create a new _Resource Group_
-- Name the app **my-first-static-app**.
-  - Valid characters are `a-z` (case insensitive), `0-9`, and `_`.
-- Select _Region_ closest to you
-- Select the **Free** _SKU_
-- Click the **Sign-in with GitHub** button and authenticate with GitHub
-- Select your preferred _Organization_
-- Select **my-first-static-app** from the _Repository_ drop-down
-- Select **master** from the _Branch_ drop-down
-- Click the **Next: Build >** button to edit the build configuration
 
 ### Review + create
 
@@ -106,19 +92,13 @@ After the build validates, you can continue to create the application.
 
 ## View website
 
-There are two automated aspects to deploying a static app. The first provisions the underlying Azure resources that make up your app. The second is a GitHub Actions workflow that builds and publishes your application.
+There are two automated aspects to deploying a static web app. The first aspect provisions the underlying Azure resources that make up your app. The second aspect is a GitHub Actions workflow that builds and publishes your application.
 
 > [!NOTE]
-> You can ensure that the GitHub Actions workflow is complete by checking the status of your commits available at `https://github.com/<YOUR_GITHUB_USERNAME>/my-first-static-app/actions`.
+> You can ensure that the GitHub Actions workflow is complete by checking the status of your commits available at `https://github.com/<YOUR_GITHUB_USERNAME>/my-first-static-web-app/actions`.
 
 Once the provisioning and deployment is complete, you can click on the _URL_ link in the Azure portal to launch your app in the browser.
 
-## Clean up resources
+## Next steps
 
-If you're not going to continue to use this application, you can delete the static app through the following steps:
-
-1. Open the [Azure portal](https://portal.azure.com)
-1. Search for **my-first-static-app** from the top search bar
-1. Click on the app name
-1. Click on the **Delete** button
-1. Click **Yes** to confirm the delete action
+todo
