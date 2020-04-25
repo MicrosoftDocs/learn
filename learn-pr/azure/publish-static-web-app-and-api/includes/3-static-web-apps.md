@@ -1,6 +1,6 @@
-You want your app to be hosted in Azure. Azure Static Web Apps will provision the Azure resources that make up your app.
+You want your app to be hosted in Azure. Azure Static Web Apps will provision the Azure resources that to host your app.
 
-However, before your app can be hosted, your app must be pulled from GitHub and built. So you'll need something that will build your app when you make changes via commits and pull requests to your repository. Azure Static Web Apps sets up a GitHub Action that'll build and publish your application.
+However, before your app can be hosted, you'll need something that will build your app when you make changes via commits and pull requests to your repository. Azure Static Web Apps sets up a GitHub Action that'll build and publish your application.
 
 ## Key components
 
@@ -10,10 +10,13 @@ The key ingredients to create an Azure Static Web App are:
 
 1. Create an Azure Static Web App resource
 1. Connect to your GitHub repository and branch
-1. Identify the folder locations for your:
-   - source code for your web app
-   - build artifacts
-   - source code for your API
+1. Identify the folder locations
+
+| Location example | Description                  |
+| ---------------- | ---------------------------- |
+| /                | Source code for your web app |
+| api              | Source code for your API     |
+| public           | Build artifacts              |
 
 ## Next steps
 
