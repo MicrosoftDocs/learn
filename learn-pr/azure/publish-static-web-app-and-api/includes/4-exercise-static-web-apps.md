@@ -1,7 +1,3 @@
-You want your app to be hosted in Azure. Azure Static Web Apps will provision the Azure resources that make up your app.
-
-However, before your app can be hosted, your app must to be pulled from GitHub and built. So you'll need something that will build your app when you make changes via commits and pull requests to your repository. Azure Static Web Apps sets up a GitHub Action that'll build and publish your application.
-
 In this exercise you'll create the Azure Static Web App including a GitHub Action that will automatically build and publish your application.
 
 ## Activate the Azure sandbox

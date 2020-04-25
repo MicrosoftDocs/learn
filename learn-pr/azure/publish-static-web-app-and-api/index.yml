@@ -8,8 +8,8 @@ metadata:
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title:   Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps
-summary: Automatically deploy and update a static web application and its API from a GitHub repository. 
+title: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps
+summary: Automatically deploy and update a static web application and its API from a GitHub repository.
 abstract: |
   In this module, you will:
     - Choose an existing web app project with either Angular, React, Svelte or Vue.
@@ -36,12 +36,14 @@ products:
 units:
   - learn.azure.publish-static-web-app-and-api.1-introduction
   - learn.azure.publish-static-web-app-and-api.2-exercise-get-started
-  - learn.azure.publish-static-web-app-and-api.3-exercise-static-web-apps
-  - learn.azure.publish-static-web-app-and-api.4-build-api
-  - learn.azure.publish-static-web-app-and-api.5-exercise-func-app
-  - learn.azure.publish-static-web-app-and-api.6-exercise-http
-  - learn.azure.publish-static-web-app-and-api.7-exercise-action
-  - learn.azure.publish-static-web-app-and-api.8-knowledge-check
-  - learn.azure.publish-static-web-app-and-api.9-summary
+  - learn.azure.publish-static-web-app-and-api.3-static-web-apps
+  - learn.azure.publish-static-web-app-and-api.4-exercise-static-web-apps
+  - learn.azure.publish-static-web-app-and-api.5-build-api
+  - learn.azure.publish-static-web-app-and-api.6-exercise-func-app
+  - learn.azure.publish-static-web-app-and-api.7-exercise-http
+  - learn.azure.publish-static-web-app-and-api.8-action
+  - learn.azure.publish-static-web-app-and-api.9-exercise-action
+  - learn.azure.publish-static-web-app-and-api.10-knowledge-check
+  - learn.azure.publish-static-web-app-and-api.11-summary
 badge:
   uid: learn.azure.publish-static-web-app-and-api.badge

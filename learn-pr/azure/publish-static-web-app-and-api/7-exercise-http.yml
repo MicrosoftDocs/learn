@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-static-web-app-and-api.6-exercise-http
+uid: learn.azure.publish-static-web-app-and-api.7-exercise-http
 metadata:
   title: Exercise - Create the HTTP POST, PUT, and DELETE functions
   description: Exercise - Create the HTTP POST, PUT, and DELETE functions
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create the HTTP POST, PUT, and DELETE functions
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-exercise-http.md)]
+  [!include[](includes/7-exercise-http.md)]

@@ -38,6 +38,8 @@ You prefer to develop with your JavaScript framework or library of choice. You'l
 - Svelte
 - Vue
 
+### What you'll do
+
 Once you choose your client application, you'll:
 
 1. Build and run your front-end application

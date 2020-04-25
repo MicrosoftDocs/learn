@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-static-web-app-and-api.5-exercise-func-app
+uid: learn.azure.publish-static-web-app-and-api.6-exercise-func-app
 metadata:
   title: Exercise - Create an Azure Functions project
   description: Exercise - Create an Azure Functions project
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create an Azure Functions project
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise-func-app.md)]
+  [!include[](includes/6-exercise-func-app.md)]

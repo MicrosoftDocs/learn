@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-static-web-app-and-api.7-exercise-action
+uid: learn.azure.publish-static-web-app-and-api.8-action
 metadata:
   title: Exercise - Publish the API with GitHub Actions
   description: Exercise - Publish the API with GitHub Actions
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Publish the API with GitHub Actions
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-exercise-action.md)]
+  [!include[](includes/8-action.md)]
