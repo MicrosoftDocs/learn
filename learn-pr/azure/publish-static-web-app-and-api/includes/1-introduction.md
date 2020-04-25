@@ -1,18 +1,18 @@
 Your company is launching a shopping list website that helps customers add, edit, view, and remove items from their personal shopping list. Your app and an API must be hosted securely, globally available, and publish automatically with continuous deployment.
 
-Your web app serves HTML, CSS, and JavaScript along with other static assets. Static web apps are commonly built using Angular, React, Svelte, or Vue. You can serve the static assets fast without the need for a full back-end web server. You can host your API endpoints in serverless architecture, again avoiding a full back-end server. This is the model for Azure Static Web Apps. You get exactly what you need, no more, no less. THere is no complicated server configuration to pay for or maintain. Azure Static Web Apps reduces configuration and adds value by automatically deploying from GitHub, global availability, and API hosting via Azure Functions.
-
 Azure Static Web Apps deals with the hard problems all the way from your source code to global availability. You can focus on building a better app to differentiate your business.​
 
 ## What is Azure Static Web Apps (Preview)?
 
 Azure Static Web Apps is a service that automatically builds and hosts static web apps from a GitHub repository.
 
+Your web app serves HTML, CSS, and JavaScript along with other static assets. Static web apps are commonly built using Angular, React, Svelte, or Vue. You can serve the static assets fast without the need for a full back-end web server. You can host your API endpoints in serverless architecture, again avoiding a full back-end server. This is the model for Azure Static Web Apps. You get exactly what you need, no more, no less. There's no complicated server configuration to pay for or maintain. Azure Static Web Apps reduces configuration and adds value by automatically deploying from GitHub, global availability, and API hosting via Azure Functions.
+
 > [!NOTE] Azure Static Web Apps is currently in preview.
 
 :::image type="content" source="../media/static-web-apps-overview.png" alt-text="Static Apps overview":::
 
-When you set up a Static Web App, Azure creates a GitHub Actions workflow in the repository containing your app's code. This workflow builds your application and deploys it to Azure every time a pull request is accepted or new code is pushed to a branch.
+When you set up a Static Web App, Azure creates a GitHub Actions workflow in the repository containing your app's code. This workflow builds your app and deploys it to Azure every time you accept a pull request or push new code to a branch.
 
 Back-end API functionality is powered by Azure Functions, which provides automatic scaling (up and down) based on demand to the API.
 
