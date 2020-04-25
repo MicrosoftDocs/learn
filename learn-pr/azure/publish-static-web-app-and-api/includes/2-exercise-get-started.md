@@ -23,7 +23,7 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="angular"
 
-   ### [Angular](#tab/angular)
+   # [Angular](#tab/angular)
 
    ```bash
    cd angular-app
@@ -33,7 +33,7 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="react"
 
-   ### [React](#tab/react)
+   # [React](#tab/react)
 
    ```bash
    cd react-app
@@ -43,7 +43,7 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="svelte"
 
-   ### [Svelte](#tab/svelte)
+   # [Svelte](#tab/svelte)
 
    ```bash
    cd svelte-app
@@ -53,7 +53,7 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="vue"
 
-   ### [Vue](#tab/vue)
+   # [Vue](#tab/vue)
 
    ```bash
    cd vue-app
@@ -71,7 +71,7 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="angular"
 
-   ### [Angular](#tab/angular)
+   # [Angular](#tab/angular)
 
    ```bash
    npm start
@@ -81,7 +81,7 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="react"
 
-   ### [React](#tab/react)
+   # [React](#tab/react)
 
    ```bash
    npm start
@@ -91,7 +91,7 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="svelte"
 
-   ### [Svelte](#tab/svelte)
+   # [Svelte](#tab/svelte)
 
    ```bash
    npm run dev
@@ -101,7 +101,7 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="vue"
 
-   ### [Vue](#tab/vue)
+   # [Vue](#tab/vue)
 
    ```bash
    npm run serve
@@ -117,7 +117,7 @@ Select your preferred front-end application and click the link to browse to the 
 
 ::: zone pivot="angular"
 
-### [Angular](#tab/angular)
+# [Angular](#tab/angular)
 
 Browse to <http://localhost:4200>
 
@@ -125,7 +125,7 @@ Browse to <http://localhost:4200>
 
 ::: zone pivot="react"
 
-### [React](#tab/react)
+# [React](#tab/react)
 
 Browse to <http://localhost:3000>
 
@@ -133,7 +133,7 @@ Browse to <http://localhost:3000>
 
 ::: zone pivot="svelte"
 
-### [Svelte](#tab/svelte)
+# [Svelte](#tab/svelte)
 
 Browse to <http://localhost:5000>
 
@@ -141,7 +141,7 @@ Browse to <http://localhost:5000>
 
 ::: zone pivot="vue"
 
-### [Vue](#tab/vue)
+# [Vue](#tab/vue)
 
 Browse to <http://localhost:8080>
 
