@@ -29,7 +29,10 @@ Back-end API functionality is powered by Azure Functions, which provides automat
 
 ## Learning objectives
 
-In this tutorial, you'll create and deploy an app to Azure Static Web Apps.
+In this tutorial, you'll create and deploy a web app to Azure Static Web Apps. The static web app has no API at the start. You'll:
+
+- create an API using an Azure Functions project
+- modify the static web app to make HTTP requests to the API
 
 You prefer to develop with your JavaScript framework or library of choice. That's why there are four variations of the client application for you to choose from to build your static web app. The power in Azure Static Web Apps is that all of these flavors "just work".
 
@@ -50,5 +53,3 @@ Once you choose your client application, you'll:
 ## Next steps
 
 Right about now you might be thinking you need to create the Azure resources first. But a more natural workflow for you would be to start with an app. Azure Static Web Apps has your use case in mind. You'll start with an app locally and in GitHub, before creating resources in Azure.
-
-Next, you'll create the app and the GitHub repository.
