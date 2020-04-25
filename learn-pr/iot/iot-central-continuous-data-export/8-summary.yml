@@ -86,3 +86,33 @@ quiz:
     - content: 'Event Hubs are a good gateway for an event pipeline.'
       isCorrect: false
       explanation: This statement is true.  
+
+  - content: 'What are the different types of Microsoft PowerApps?'
+    choices: 
+    - content: 'Canvas apps, and Model-driven apps'
+      isCorrect: false
+      explanation: There are three types of PowerApp.
+    - content: 'Canvas apps, Model-driven apps, and Mobile apps.'
+      isCorrect: false
+      explanation: Mobile app is not the name of a supported type.
+    - content: 'Canvas apps, Model-driven apps, and Portal apps. '
+      isCorrect: true
+      explanation: We started with the Model-driven app in this module.
+    - content: 'Phone apps, Tablet apps, and Web portal apps.'
+      isCorrect: false
+      explanation: There is a Portal app type, but not the other two.
+
+  - content: 'Which of the following data sources can be used for a Model-driven app?'
+    choices: 
+    - content: 'Azure Blob storage, '
+      isCorrect: false
+      explanation: xxx
+    - content: 'xxx.'
+      isCorrect: false
+      explanation: xxx
+    - content: 'xxx'
+      isCorrect: true
+      explanation: xxx.
+    - content: 'xxx'
+      isCorrect: false
+      explanation: xxx

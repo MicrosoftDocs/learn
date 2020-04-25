@@ -18,7 +18,7 @@ The name should give the idea away. You drag and drop components onto a _cavnas_
 
 You are given the option of specifying **Tablet** or **Phone** for your canvas app. Then you get a powerful, but slightly intimidating, user-interface. Lots of options:
 
-insert pic here
+![Screenshot showing the user interface when creating a canvas PowerApp](../media/continuous-data-power-apps-canvas.png)
 
 The key to canvas apps is clearly that they are user-interface driven. Canvas apps start with your user experience, selecting a target of phone, tablet, or web. Data, from over 200 different sources, can then be selected and connected.
 
@@ -32,7 +32,11 @@ pic here
 
 Model-driven apps are fascinating. You _start_ by selecting your data model, and source. Model-driven apps automatically create a user-interface that matches the format of your data. Forms, views, dashboards, charts, and other components are built without your having to specify anything!
 
-pics in here
+![Screenshot showing the user interface when creating a model-driven PowerApp](../media/continuous-data-power-apps-model.png)
+
+When PowerApps are developed, the jigsaw icon is used for model driven apps, and the tiled triangle for canvas apps.
+
+![Screenshot showing the PowerApp icons used on a mobile phone](../media/continuous-data-power-apps-phone.png)
 
 ## Next steps
 
