@@ -10,7 +10,8 @@ Azure Static Web Apps is a service that automatically builds and hosts static we
 
 Static web apps are commonly built using Angular, React, Svelte, or Vue. You serve the static assets fast without a full back-end web server. You can host your API endpoints in serverless architecture, again avoiding a full back-end server. This is the model for Azure Static Web Apps: you get exactly what you need, no more, no less.
 
-> [!NOTE] Azure Static Web Apps is currently in preview.
+> [!NOTE]
+> Azure Static Web Apps is currently in preview.
 
 :::image type="content" source="../media/static-web-apps-overview.png" alt-text="Static Apps overview":::
 
