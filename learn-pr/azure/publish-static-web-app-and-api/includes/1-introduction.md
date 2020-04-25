@@ -1,12 +1,14 @@
 Your company is launching a shopping list website that helps customers add, edit, view, and remove items from their personal shopping list. Your app and an API must be hosted securely, globally available, and publish automatically with continuous deployment.
 
+The app is static. You don't need a web server that runs code, you just need something that can serve your HTML, CSS, JavaScript and other static assets. A hosting solution that could achieve this easily, without a lot of setup or configuration, would be ideal.
+
 Azure Static Web Apps deals with the hard problems all the way from your source code to global availability. You can focus on building a better app to differentiate your business.​
 
 ## What is Azure Static Web Apps (Preview)?
 
 Azure Static Web Apps is a service that automatically builds and hosts static web apps from a GitHub repository.
 
-Your web app serves HTML, CSS, and JavaScript along with other static assets. Static web apps are commonly built using Angular, React, Svelte, or Vue. You can serve the static assets fast without the need for a full back-end web server. You can host your API endpoints in serverless architecture, again avoiding a full back-end server. This is the model for Azure Static Web Apps. You get exactly what you need, no more, no less. There's no complicated server configuration to pay for or maintain. Azure Static Web Apps reduces configuration and adds value by automatically deploying from GitHub, global availability, and API hosting via Azure Functions.
+Static web apps are commonly built using Angular, React, Svelte, or Vue. You can serve the static assets fast without the need for a full back-end web server. You can host your API endpoints in serverless architecture, again avoiding a full back-end server. This is the model for Azure Static Web Apps. You get exactly what you need, no more, no less. There's no complicated server configuration to pay for or maintain. Azure Static Web Apps reduces configuration and adds value by automatically deploying from GitHub, global availability, and API hosting via Azure Functions.
 
 > [!NOTE] Azure Static Web Apps is currently in preview.
 
