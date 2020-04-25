@@ -37,7 +37,7 @@ In this module, you'll build the app displayed in the above image.
 
 ## Create a custom IoT Central app
 
-1. Navigate to [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true). It's a good idea to bookmark this URL, as it's the home for all your IoT Central apps.
+1. Right click on [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true), and select **Open in new window**. It's a good idea to bookmark this URL, as it's the home for all your IoT Central apps.
 
 1. Click on **Build** on the left-hand menu, then **Custom apps**.
 
@@ -54,7 +54,10 @@ In this module, you'll build the app displayed in the above image.
 
 1. Fill out your contact info, and click **Create**. Wait a few seconds whilst the app resource is built.
 
-1. You should now see a **Dashboard** with a few default links.
+    > [!NOTE]
+    > If you get the error "Subdomain already in use", then change your **URL**, as currently it is no unique.
+
+1. You should now see a **Dashboard** with a few default tiles.
 
 The next time you visit your Azure central home page, select **My apps** in the left-hand menu, and an icon for your  **Refrigerated Trucks** app should appear.
 

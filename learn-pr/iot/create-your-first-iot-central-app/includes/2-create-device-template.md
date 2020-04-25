@@ -1,7 +1,7 @@
 
 The data communicated between a remote device, and IoT Central, is specified in a _device template_. The device template encapsulates all the details of the data, so that both the device and IoT Central have all they need to make sense of the communication.
 
-In this unit, you'll create a device template for a refrigerated truck. 
+In this unit, you'll create a device template for a refrigerated truck.
 
 ## Create a device template
 
@@ -9,14 +9,14 @@ In this unit, you'll create a device template for a refrigerated truck.
 
 1. Click **+ New** to create a new template.
 
-1. You'll next see a range  of template options, select **IoT device**. We are going to build the template from scratch.
+1. You'll next see a range of template options, select **IoT device**. We are going to build the template from scratch.
 
     > [!TIP]
     > Take note of the other options. You may want to use those prebuilt template options in a future project!
 
 1. Click **Next: Customize**, then **Next: Review**. Do not select the **Gateway device** box. Then click **Create**.
 
-1. Enter the name for your device template: "RefrigeratedTruck", and click Enter.
+1. Enter the name for your device template: "RefrigeratedTruck", and hit Enter.
 
 1. For **Create a capability model**, click **Custom**. You should now see a screen similar to the following image.
 
