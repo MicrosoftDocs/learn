@@ -80,8 +80,6 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone-end
 
-:::image type="content" source="../media/static-web-apps-build.png" alt-text="Azure Static Web Apps build page":::
-
 ### Review + create
 
 After the build validates, you can continue to create the application.
