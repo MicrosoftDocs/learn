@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   zone_pivot_groups: dev-javascript-framework
 title: Exercise - Get started
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/2-exercise-get-started.md)]
