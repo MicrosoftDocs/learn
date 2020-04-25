@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-aspnet-core.6-consumer-microservice
+metadata:
+  title: Consume a microservice
+  description: TODO - This unit might actually be more of "test changes" thing
+  ms.date: 04/20/2019
+  author: camsoper
+  ms.author: casoper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  ROBOTS: NOINDEX
+title: Consume a microservice
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-consumer-microservice.md)]

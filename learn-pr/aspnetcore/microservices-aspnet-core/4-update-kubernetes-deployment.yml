@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-aspnet-core.4-update-kubernetes-deployment
+metadata:
+  title: Update a Kubenetes deployment
+  description: Deploy the new microservice to the running app in AKS.
+  ms.date: 04/20/2019
+  author: camsoper
+  ms.author: casoper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  ROBOTS: NOINDEX
+title: Update a Kubenetes deployment
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-update-kubernetes-deployment.md)]

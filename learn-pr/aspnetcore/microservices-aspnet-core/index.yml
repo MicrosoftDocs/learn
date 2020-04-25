@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.microservices-aspnet-core
+metadata:
+  title: Create and deploy a cloud-native ASP.NET Core microservice
+  description: This module guides you through creating an ASP.NET Core microservice and deploying it to Azure Kubernetes Service.
+  ms.date: 04/24/2020
+  author: camsoper
+  ms.author: casoper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Create and deploy a cloud-native ASP.NET Core microservice
+summary: Create and deploy an ASP.NET Core microservice to AKS. 
+abstract: | 
+  In this module, you will:
+  - Examine an existing ASP.NET microservices application running in Azure Kubernetes Service (AKS).
+  - Create an ASP.NET microservice.
+  - Deploy the microservice to the existing application in AKS.
+prerequisites: |
+  - Experience writing C# at the beginner level
+  - Conceptual knowledge of containers
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet
+- aspnet-core
+- dotnet-core
+- dotnet-standard
+- azure
+- azure-kubernetes-service
+
+units:
+- learn.microservices-aspnet-core.1-introduction
+- learn.microservices-aspnet-core.2-deploy-application
+- learn.microservices-aspnet-core.3-create-microservice
+- learn.microservices-aspnet-core.4-update-kubernetes-deployment
+- learn.microservices-aspnet-core.5-route-traffic
+- learn.microservices-aspnet-core.6-consume-microservice
+- learn.microservices-aspnet-core.7-knowledge-check
+- learn.microservices-aspnet-core.8-summary
+iconUrl: /learn/achievements/aspnetcore/microservices-aspnet-core.svg
+badge:
+  uid: learn.microservices-aspnet-core.badge

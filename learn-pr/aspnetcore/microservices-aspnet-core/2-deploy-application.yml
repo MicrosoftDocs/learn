@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-aspnet-core.2-deploy-application
+metadata:
+  title: Set up the environment
+  description: Provision Azure resources, download the ASP.NET Core starter project, and tour the starter project.
+  ms.date: 04/20/2019
+  author: camsoper
+  ms.author: casoper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  ROBOTS: NOINDEX
+title: Set up the environment
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-deploy-application.md)]
