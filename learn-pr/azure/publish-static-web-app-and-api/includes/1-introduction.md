@@ -20,8 +20,6 @@ Once you choose your client application, you'll:
 1. Automatically build and deploy your web app to Azure from a GitHub repository with GitHub Actions
 1. Finally, you'll explore and launch your application, as shown below
 
-[TODO] - Replace image with a four panel image of angular, react svelte, and vue
-
 :::image type="content" source="../media/my-shopping-list-app.png" alt-text="My Shopping List sample application":::
 
 ## What is Azure Static Web Apps (Preview)?
