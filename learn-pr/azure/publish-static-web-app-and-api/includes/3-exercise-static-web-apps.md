@@ -1,4 +1,8 @@
-You want to publish your app to Azure. Let's go!
+You want your app to be hosted in Azure. Azure Static Web Apps will provision the Azure resources that make up your app.
+
+However, before your app can be hosted, your app must to be pulled from GitHub and built. So you'll need something that will build your app when you make changes via commits and pull requests to your repository. Azure Static Web Apps sets up a GitHub Action that'll build and publish your application.
+
+In this exercise you'll create the Azure Static Web App including a GitHub Action that will automatically build and publish your application.
 
 ## Activate the Azure sandbox
 
@@ -7,7 +11,7 @@ First, you'll connect to an Azure sandbox. you'll be able to create the Azure St
 1. Start by **activating the Azure sandbox above**.
 1. Once it's activated, [sign into the Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
 
-## Create a static app
+## Create a Static Web App
 
 Now that your GitHub repository is created, you can create a Static Web App from the Azure portal.
 
@@ -101,4 +105,4 @@ Once the provisioning and deployment is complete, you can click on the _URL_ lin
 
 ## Next steps
 
-todo
+Your app is using mock data for its shopping list. Next, you'll explore the benefits and your motivation before creating an API.
