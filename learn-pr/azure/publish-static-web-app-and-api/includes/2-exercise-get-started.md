@@ -1,8 +1,4 @@
-## 2- Exercise - Get started
-
 Azure Static Web Apps publishes websites to a production environment by building apps from a GitHub repository. In this exercise, you build a web application using your preferred front-end framework from a GitHub repository.
-
-What's in the [sample project on GitHub](https://github.com/MicrosoftDocs/mslearn-staticwebapp) that you'll learn about in this module? That's a great question!
 
 ## Create a repository
 
@@ -15,57 +11,113 @@ This article uses a GitHub template repository to make it easy for you to create
 
 ## Run your app
 
-```bash
-git clone https://github.com/<YOUR-GITHUB-ORG>/my-first-static-web-app
-```
+You just created a GitHub repository named **my-first-static-web-app** in your GitHub account. Next you will clone the code locally to your computer and run it.
 
-::: zone pivot="angular"
+1. Start by cloning the GitHub repository to our computer.
 
-### [Angular](#tab/angular)
+   ```bash
+   git clone https://github.com/<YOUR-GITHUB-ACCOUNT>/my-first-static-web-app
+   ```
 
-```bash
-npm install
-npm start
-```
+1. Next, go to the folder of your preferred front-end framework, as shown below:
 
-::: zone-end
+   ::: zone pivot="angular"
 
-::: zone pivot="react"
+   ### [Angular](#tab/angular)
 
-### [React](#tab/react)
+   ```bash
+   cd angular-app
+   ```
 
-```bash
-npm install
-npm start
-```
+   ::: zone-end
 
-::: zone-end
+   ::: zone pivot="react"
 
-::: zone pivot="svelte"
+   ### [React](#tab/react)
 
-### [Svelte](#tab/svelte)
+   ```bash
+   cd react-app
+   ```
 
-```bash
-npm install
-npm run dev
-```
+   ::: zone-end
 
-::: zone-end
+   ::: zone pivot="svelte"
 
-::: zone pivot="vue"
+   ### [Svelte](#tab/svelte)
 
-### [Vue](#tab/vue)
+   ```bash
+   cd svelte-app
+   ```
 
-```bash
-npm install
-npm run serve
-```
+   ::: zone-end
 
-::: zone-end
+   ::: zone pivot="vue"
 
-## See your app locally
+   ### [Vue](#tab/vue)
 
-Browse to the app
+   ```bash
+   cd vue-app
+   ```
+
+   ::: zone-end
+
+1) Now install the application dependencies.
+
+   ```bash
+   npm install
+   ```
+
+1) Finally, run the front-end client application.
+
+   ::: zone pivot="angular"
+
+   ### [Angular](#tab/angular)
+
+   ```bash
+   npm install
+   npm start
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="react"
+
+   ### [React](#tab/react)
+
+   ```bash
+   npm install
+   npm start
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="svelte"
+
+   ### [Svelte](#tab/svelte)
+
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="vue"
+
+   ### [Vue](#tab/vue)
+
+   ```bash
+   npm install
+   npm run serve
+   ```
+
+   ::: zone-end
+
+## Run your app
+
+It's time to see your application running locally. Each front-end application runs on a different port.
+
+Select your preferred front-end application and click the link to browse to the application.
 
 ::: zone pivot="angular"
 
@@ -98,3 +150,9 @@ Browse to <http://localhost:5000>
 Browse to <http://localhost:8080>
 
 ::: zone-end
+
+### Next steps
+
+You built your application and now it is running locally in your browser.
+
+Next, you'll publish your application to Azure Static Web Apps.
