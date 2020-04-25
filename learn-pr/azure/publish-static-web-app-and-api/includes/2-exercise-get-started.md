@@ -61,20 +61,19 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone-end
 
-1) Now install the application dependencies.
+1. Now install the application dependencies.
 
    ```bash
    npm install
    ```
 
-1) Finally, run the front-end client application.
+1. Finally, run the front-end client application.
 
    ::: zone pivot="angular"
 
    ### [Angular](#tab/angular)
 
    ```bash
-   npm install
    npm start
    ```
 
@@ -85,7 +84,6 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
    ### [React](#tab/react)
 
    ```bash
-   npm install
    npm start
    ```
 
@@ -96,7 +94,6 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
    ### [Svelte](#tab/svelte)
 
    ```bash
-   npm install
    npm run dev
    ```
 
@@ -107,13 +104,12 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
    ### [Vue](#tab/vue)
 
    ```bash
-   npm install
    npm run serve
    ```
 
    ::: zone-end
 
-## Run your app
+## Browse to your app
 
 It's time to see your application running locally. Each front-end application runs on a different port.
 
