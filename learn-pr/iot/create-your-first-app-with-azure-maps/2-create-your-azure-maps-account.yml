@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.create-your-first-app-with-azure-maps.create-your-azure-maps-account
+metadata:
+  description: Navigate the Azure portal, and create a free Azure Maps account. Extract the Primary Key needed for upcoming coding module.
+  ms.date: 6/1/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create your Azure Maps account
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-create-your-azure-maps-account.md)]

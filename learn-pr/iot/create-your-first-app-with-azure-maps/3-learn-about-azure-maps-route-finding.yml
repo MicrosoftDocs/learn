@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.create-your-first-app-with-azure-maps.learn-about-azure-maps-route-finding
+metadata:
+  description: Create the programming project to simulate an IoT device in a refrigerated truck. Use Visual Studio, or Visual Studio Code as the development environment. Use C# or Node.js as the programming language. Finally, set the device app running, and watch the telemetry and dashboard.
+  ms.date: 6/1/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about Azure Map route finding
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-learn-about-azure-maps-route-finding.md)]
