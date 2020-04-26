@@ -4,7 +4,7 @@ You don't need a web server that runs code. You do need a hosting solution that 
 
 ## What is Azure Static Web Apps?
 
-Azure Static Web Apps solves the hard problems all the way from your source code to global availability. You focus on developing your app, and Azure Static Web Apps automatically builds and hosts static web apps from a GitHub repository.
+Azure Static Web Apps solves the hard problems all the way from your source code to global availability. You focus on developing your app, and Azure Static Web Apps automatically builds and hosts full-stack web apps from a GitHub repository.
 
 Static web apps are commonly built using Angular, React, Svelte, or Vue. You serve the static assets fast without a full back-end web server. You can host your API endpoints in a serverless architecture, again avoiding a full back-end server. The model for Azure Static Web Apps is that you get exactly what you need, no more, no less.
 
