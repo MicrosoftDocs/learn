@@ -147,11 +147,11 @@ Now its time to see if your web app and Azure Functions project work together. S
    npm start
    ```
 
-### Run the web app
+## Run the web app
 
 Now that your API is running, you need to configure your front-end app to make its HTTP request to your API. The front-end app runs on one port and the API runs on a different port (7071). Each front-end framework can be configured to proxy HTTP requests to another port safely.
 
-#### Configure your proxy port
+### Configure your proxy port
 
 Configure the proxy for your front-end app with the following steps:
 
@@ -195,7 +195,7 @@ Configure the proxy for your front-end app with the following steps:
 
 ::: zone-end
 
-#### Run your front-end web app
+### Run your front-end web app
 
 Your API is already running on port 7071. Now when you run your web app it will make its HTTP requests to your API. Run your web app by following these steps:
 
@@ -284,11 +284,9 @@ Your API is already running on port 7071. Now when you run your web app it will 
 
    ::: zone-end
 
-## Browse to your app
+### Browse to your app
 
-It's time to see your application running locally against the Azure Functions API.
-
-Select your preferred front-end application and click the link to browse to the application.
+It's time to see your application running locally against the Azure Functions API. Select your preferred front-end application and click the link to browse to the application.
 
 ::: zone pivot="angular"
 
@@ -326,4 +324,4 @@ You built your application and now it's running locally making HTTP GET requests
 
 ## Next steps
 
-Hmmmmmmmm
+Your app can get products, but it cannot edit them. You're missing your HTTP PUT, POST, and DELETE endpoints. You'll add those next.
