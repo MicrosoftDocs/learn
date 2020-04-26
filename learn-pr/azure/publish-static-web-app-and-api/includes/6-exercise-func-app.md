@@ -190,13 +190,7 @@ Run your web app.
 
    ::: zone-end
 
-1. Now install the application dependencies.
-
-   ```bash
-   npm install
-   ```
-
-1. Finally, run the front-end client application.
+1. Run the front-end client application.
 
    ::: zone pivot="angular"
 
