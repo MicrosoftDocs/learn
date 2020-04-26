@@ -25,4 +25,4 @@ Here are the four endpoints that you'll create:
 
 ## Next steps
 
-Next, you'll run the application and test our HTTP endpoints.
+Thinking ahead, you'll need to create an Azure Functions project for your API. This will enable you to set up your HTTP endpoints for your shopping list app.
