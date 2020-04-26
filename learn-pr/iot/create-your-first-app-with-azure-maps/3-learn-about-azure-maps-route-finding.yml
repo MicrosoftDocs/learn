@@ -8,6 +8,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about Azure Map route finding
-durationInMinutes: 10
+durationInMinutes: 4
 content: |
   [!include[](includes/3-learn-about-azure-maps-route-finding.md)]

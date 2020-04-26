@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-app-with-azure-maps.exercise-test-your-route-finding-app
 metadata:
-  description: Using HTML and Javascript, build an app to find the best cross-country routes across the USA. 
+  description: Using HTML and JavaScript, build an app to find the best cross-country routes across the USA. 
   ms.date: 6/1/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title:  Exercise - test your route finding app
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-test-your-route-finding-app.md)]

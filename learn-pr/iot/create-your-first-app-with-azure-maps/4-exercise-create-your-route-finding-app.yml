@@ -7,7 +7,7 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create your route finding app
-durationInMinutes: 5
+title: Exercise - create your route finding app
+durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise-create-your-route-finding-app.md)]
