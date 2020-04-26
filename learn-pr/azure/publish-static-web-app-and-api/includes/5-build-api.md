@@ -1,5 +1,7 @@
 Your web app doesn't have an API at this point. Instead, your app is using mock data. Mock data is a great strategy that lets you develop a web app before an API exists. But now the time has come for you to create an API for your shopping list.
 
+One of the great benefits of Azure Static Web Apps is that it can host your web app and an API built with Azure Functions, together!
+
 ## Azure Functions
 
 Your shopping list app needs to make HTTP requests to an API. So far your web app isn't using traditional servers. Rather it's serving the static file assets for HTML, CSS, and JavaScript. Now you must consider if your API will use traditional servers or a Serverless architecture with Azure Functions.

@@ -1,8 +1,8 @@
-You can create an Azure Functions project to develop your shopping list API. In this exercise, you'll create the Azure Functions project using the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).
+You can create an API for your shopping list app. In this exercise, you'll create your API with an Azure Functions project using the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).
 
 ## Create the Function app and your HTTP GET function
 
-Once the extension is installed, follow these steps to create the Azure Functions on your computer.
+Once the extension is installed, follow these steps to create the Azure Functions project on your computer.
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create New Project**
@@ -15,16 +15,18 @@ Once the extension is installed, follow these steps to create the Azure Function
 
 Congratulations, you just created an Azure Function app and your first function!
 
-You may recall that your app needs four endpoints. In this exercise, you'll create the function for the first of these endpoints. You'll create the other endpoints in a future exercise.
-
 > [!NOTE]
 > You created the function app in the _api_ folder, which separates it from the web apps. All of the web apps using the front-end frameworks can hit the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
 
 ### Set the HTTP Method and route endpoint name
 
-Notice that there's now a folder api/products-get\_ that contains a few files.
+You may recall that your app needs four endpoints. Next, you'll configure and code the function for the first of these endpoints. You'll create the other endpoints in a future exercise.
 
-The _function.json_ contains the configuration for the function.
+Notice that there's now a folder _api/products-get_ that contains a few files. Once of these files is _function.json_, which contains the configuration for the function.
+
+By convention, the route endpoint has the same name as the folder that contains the function. Since the function is created in the _products-get_ folder, the route endpoint is generated as **products-get**. You want the endpoint to be **products**.
+
+Configure your function by following these steps:
 
 1. Open the file _api/products-get/function.json_
 1. Notice the methods allow both `GET` and `POST`
@@ -32,9 +34,7 @@ The _function.json_ contains the configuration for the function.
 1. Go to the `bindings` section's `req` properties
 1. Add a `route: "products"` entry
 
-By convention, the route endpoint has the same name as the folder that contains the function. Since the function is created in the _products-get_ folder, the route endpoint is generated as **products-get**. Now the function is executed when an HTTP `GET` on **/products** is requested.
-
-Your _function.json_ should look like the following code.
+Now your function will be triggered on an HTTP `GET` request to **products**. Your _function.json_ should look like the following:
 
 ```json
 {
@@ -60,12 +60,12 @@ Your _function.json_ should look like the following code.
 
 ### Refactor the route logic
 
-The other important file here in the _api/products-get_ folder is _index.ts_. This file is your function. Your function contains the logic that runs when the route endpoint is requested.
+The other important file here in the _api/products-get_ folder is _index.js_. This file contains the logic that runs when the route endpoint is requested.
 
-You'll need to refactor the logic to call another module to get your products. You'll create the other module that gets the products shortly.
+You'll need to refactor the logic to get your products. Assume for now that the data access is in a JavaScript module in _/services/product-data.js_ and that it exposes a function `getProducts` to get the products for the shopping list. You'll create the `product-data` module shortly.
 
-1. Open the file _api/products-get/index.ts_
-1. Replaced its contents with the following code
+1. Open the file _api/products-get/index.js_
+1. Replace its contents with the following code
 
    ```javascript
    const data = require('../services/product-data');
@@ -124,7 +124,7 @@ The shopping list array will go in a JavaScript module. You'll also need functio
    module.exports = { getProducts };
    ```
 
-This code exports a function named `getProducts`, which gets the products from the array. This function is then imported by the function in the file _api/products-get/index.ts_ (that you previously created).
+This code exports a function named `getProducts`, which gets the products from the array. This function is then imported by the function in the file _api/products-get/index.js_ (that you previously created).
 
 ### Run the API
 

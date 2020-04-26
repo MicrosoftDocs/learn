@@ -98,8 +98,11 @@ There are two automated aspects to deploying a static web app. The first aspect 
 
 :::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
 
-Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web App is created. So if you see the splash page, the app is still being deployed.
+Congratulations! You've just deployed your first app to Azure Static Web Apps!
+
+> [!NOTE]
+> Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web App is created. So if you see the splash page, the app is still being deployed.
 
 ## Next steps
 
-Your app is using mock data for its shopping list. Next, you'll explore the benefits and your motivation before creating an API.
+Your app is missing an API for its shopping list. Next, you'll explore the how to add an API to your app.
