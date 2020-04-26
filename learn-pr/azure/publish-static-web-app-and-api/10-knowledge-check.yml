@@ -9,7 +9,7 @@ metadata:
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
