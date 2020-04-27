@@ -8,8 +8,7 @@ By the end of this module, you'll understand how Cloud for Everyone is Microsoft
 ## Learning objectives
 
 - Understand the importance of Diversity & Inclusion (D&I) for business.
-- Understand the elements that comprise the foundation for the Cloud for Everyone mindset.
-- Outline how businesses can work more effectively to create inclusive products and marketing assets.
+- Outline how businesses can work more effectively to drive improved outcomes and revenue potential with the creation of inclusive products and marketing assets.
 
 ## Prerequisites
 
