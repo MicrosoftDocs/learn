@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Deploy a VM using an Azure Quickstart template
   description: Deploy an Azure Quickstart template that brings up a basic virtual machine configuration
   ms.date: 01/16/2020
-  author: pierreroman
-  ms.author: pierrer
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

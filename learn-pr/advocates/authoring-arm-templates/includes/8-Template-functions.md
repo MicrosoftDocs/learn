@@ -16,7 +16,7 @@ The parameter default value calls the resourceGroup function. This function retu
 1. String functions
 
 
-[ARM template functions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions)
+[ARM template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions)
 
 
 

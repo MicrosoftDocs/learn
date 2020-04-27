@@ -15,7 +15,7 @@ code azuredeploy.json
 
 Now, you can copy the code and change the highlighted sections into the resource section of your existing empty template.
 
-:::code language="azurecli" source="../samples/Exercise2-resource.json" highlight: "4-5":::
+:::code language="azurecli" source="../samples/Exercise2-resource.json" highlight="4-5":::
 
 At this point your ARM template should now look like the following:
 
@@ -27,13 +27,13 @@ At this point your ARM template should now look like the following:
 In this exercise, you're adding a storage account to the empty template we created in unit 3. So, Let's look at the additions you entered:
 
 1. **"type": "Microsoft.Storage/storageAccounts",** - To identify we are deploying a storage account.
-1. **"apiVersion": "2019-06-01",** - The API version for storageAccounts is [2019-06-01](https://docs.microsoft.com/en-us/azure/templates/microsoft.storage/2019-04-01/storageaccounts)
+1. **"apiVersion": "2019-06-01",** - The API version for storageAccounts is [2019-06-01](https://docs.microsoft.com/azure/templates/microsoft.storage/2019-04-01/storageaccounts)
 1. **"name": "{provide-unique-name}",** - The unique name you want to give to this resource.
 1. **"location": "eastus",** - The location of the resource.
-1. **"sku": {"name": "Standard_LRS"},** - the '[sku](https://docs.microsoft.com/en-us/rest/api/storagerp/srp_sku_types)' is the type of storage the account will be setup for. Standard or premium, and LRS (Locally Redundant storage), GRS(Geo Redundant storage), RA-GRS(Read-Access Geo Redundant storage), ZRS, GZRS (Geo and Zone Redundant Storage), RA-GZRS (Read Access Geo and Zone Redundant Storage)
+1. **"sku": {"name": "Standard_LRS"},** - the '[sku](https://docs.microsoft.com/rest/api/storagerp/srp_sku_types)' is the type of storage the account will be setup for. Standard or premium, and LRS (Locally Redundant storage), GRS(Geo Redundant storage), RA-GRS(Read-Access Geo Redundant storage), ZRS, GZRS (Geo and Zone Redundant Storage), RA-GZRS (Read Access Geo and Zone Redundant Storage)
 
 
-Please notice that you didn't add all of the properties available to the Microsoft.Storage/storageAccounts resource to your template. Many of the properties mentioned [here](https://docs.microsoft.com/en-us/azure/templates/microsoft.storage/2019-06-01/storageaccounts) are optional, so you only define what is needed.
+Please notice that you didn't add all of the properties available to the Microsoft.Storage/storageAccounts resource to your template. Many of the properties mentioned [here](https://docs.microsoft.com/azure/templates/microsoft.storage/2019-06-01/storageaccounts) are optional, so you only define what is needed.
 
 #### Deploy The modified template
 

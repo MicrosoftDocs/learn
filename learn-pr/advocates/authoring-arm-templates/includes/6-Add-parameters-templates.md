@@ -115,15 +115,15 @@ when creating your template there are some recommendations you should follow. Th
 
 1. Provide a description of **every** parameter in the metadata:
 
-:::code language="json" source="../samples/parameter-description-example.json" highlight: "5":::
+:::code language="json" source="../samples/parameter-description-example.json" highlight="5":::
 
 6. Define default values for parameters whenever possible.  This will make it easier to deploy the template, and users of your template see an example of an appropriate value.
 
-:::code language="json" source="../samples/parameter-defaultValue-example.json" highlight: "4":::
+:::code language="json" source="../samples/parameter-defaultValue-example.json" highlight="4":::
 
 7. To specify an optional parameter, instead of making up strings or other types,  you can use a literal value with a language expression to **construct** a value using template functions.
 
-:::code language="json" source="../samples/parameter-construct-example.json" highlight: "3,10":::
+:::code language="json" source="../samples/parameter-construct-example.json" highlight="3,10":::
 
 8. **Don't*** use a parameter for the API version for a resource type
 

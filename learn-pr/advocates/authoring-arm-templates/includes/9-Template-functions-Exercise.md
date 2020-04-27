@@ -19,7 +19,7 @@ code azuredeploy.json
 
 3. Copy the whole file and replace your template with its contents, or just adjust with the highlighted section.
 
-:::code language="JSON" source="../samples/exercise4-function-1.json" highlight: "24-27,34":::
+:::code language="JSON" source="../samples/exercise4-function-1.json" highlight="24-27,34":::
 
 >[!NOTE]
 >As it was the case in the previous exercises, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.4"** because again, you are making changes to your template.
@@ -50,7 +50,7 @@ To run this deployment, you will use Azure CLI that is built in the Azure shell 
 
 Copy and execute this code block in the shell provided.
 
-:::code language="azurecli" source="../samples/exercise4-function-add.sh" highlight: "9":::
+:::code language="azurecli" source="../samples/exercise4-function-add.sh" highlight="9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 

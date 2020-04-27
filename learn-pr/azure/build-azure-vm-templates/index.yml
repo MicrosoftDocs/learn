@@ -4,8 +4,8 @@ metadata:
   title: Build Azure Resource Manager templates
   description: Learn how Resource Manager templates express your deployments as code, enabling you to deploy faster and more reliably. 
   ms.date: 09/24/2018
-  author: pierreroman
-  ms.author: pierrer
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build Azure Resource Manager templates

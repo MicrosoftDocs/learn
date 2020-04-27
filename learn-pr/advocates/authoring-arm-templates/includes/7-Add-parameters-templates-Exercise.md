@@ -46,7 +46,7 @@ code azuredeploy.json
               
 2. Copy and paste the following code in the resource section of your ARM template.
 
-:::code language="JSON" source="../samples/exercise3-parameter-azuredeploy.json" highlight: "5-10,17":::
+:::code language="JSON" source="../samples/exercise3-parameter-azuredeploy.json" highlight="5-10,17":::
 
 You'll notice that the code has changed from the last one.  In this exercise, we are adding parameters.  Therefore we have to define the parameter in the **parameters** section (line 5-10) and then insert the referral to the parameter in the **resources** section (line 17)
 
@@ -75,7 +75,7 @@ To run this deployment you will use Azure CLI that is built-in the Azure shell t
 
 2. Copy and execute this code block in the shell provided.
 
-:::code language="azurecli" source="../samples/exercise3-storagenameparamdeploy.sh" highlight: "9":::
+:::code language="azurecli" source="../samples/exercise3-storagenameparamdeploy.sh" highlight="9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 
@@ -122,14 +122,14 @@ code azuredeploy.json
 
 2. Copy the whole file and paste over your template. As you may notice the new code includes a storageSKU parameter with a default value. This value is used when a value isn't specified during the deployment. It also has a list of allowed values. These values match the values that are needed to create a storage account. You don't want users of your template to pass in SKUs that don't work.
 
-:::code language="JSON" source="../samples/exercise3-parameter-sku.json" highlight: "10-23,31-33":::
+:::code language="JSON" source="../samples/exercise3-parameter-sku.json" highlight="10-23,31-33":::
 
 #### Redeploy template
 You're ready to deploy again. Because the default SKU is set to Standard_LRS, you don't need to provide a value for that parameter.
 
 Copy and execute this code block in the shell provided.  Remember to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
 
-:::code language="azurecli" source="../samples/exercise3-skuparamdeploy.sh" highlight: "9":::
+:::code language="azurecli" source="../samples/exercise3-skuparamdeploy.sh" highlight="9":::
 
 
 >[!NOTE]If the deployment failed, use the **--debug** switch with the deployment command to show the debug logs. You can also use the **--verbose** switch to show the full debug logs.
@@ -138,7 +138,7 @@ To see the flexibility of your template, let's deploy again. This time set the S
 
 Again. Copy and execute this code block in the shell provided.  Remember to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
 
-:::code language="azurecli" source="../samples/exercise3-skuparamdeploy-badsku.sh" highlight: "9":::
+:::code language="azurecli" source="../samples/exercise3-skuparamdeploy-badsku.sh" highlight="9":::
 
 Finally, let's run one more test and see what happens when you pass in a SKU that isn't one of the allowed values. In this case, we test the scenario where a user of your template thinks **basic** is one of the SKUs.
 
