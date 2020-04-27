@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create the HTTP POST, PUT, and DELETE functions
-durationInMinutes: 7
+durationInMinutes: 6
 content: |
   [!include[](includes/7-exercise-http.md)]
