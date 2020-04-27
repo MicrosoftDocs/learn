@@ -23,17 +23,21 @@ roles:
 products:
 - vs
 prerequisites: 
- - React.js
- - Git
+- React.js, beginner familiarity.
+- Git, Installation and basic operating familiarity.
+- VS Code, Installation and basic operating familiarity.
+- Command line familiarity.
+- Web Dev knowledge, beginner.
+- Beginner React familiarity.
+- GitHub, basic familiarity in setting up an account.
 units:
 - learn.static-apps-gatsby.1-introduction
 - learn.static-apps-gatsby.2-gatsby
 - learn.static-apps-gatsby.3-exercise-gatsby
-- learn.static-apps-gatsby.4-sample-app
-- learn.static-apps-gatsby.5-exercise-sample-app
-- learn.static-apps-gatsby.6-deploy-static-app
-- learn.static-apps-gatsby.7-exercise-deploy-static-app
-- learn.static-apps-gatsby.8-summary
+- learn.static-apps-gatsby.4-deploy-static-app
+- learn.static-apps-gatsby.5-exercise-deploy-static-app
+- learn.static-apps-gatsby.6-knowledge-check
+- learn.static-apps-gatsby.7-summary
 
 badge:
   uid: learn.static-apps-gatsby.badge

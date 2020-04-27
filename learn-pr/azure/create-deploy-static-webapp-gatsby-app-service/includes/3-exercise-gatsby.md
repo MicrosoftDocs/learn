@@ -1,39 +1,34 @@
-In this exercise you will learn the following:
+Now you will learn to create a Gatsby application.
 
-- Scaffold a new Gatsby app
-- Add a page component
-- Construct a data query
-- Build a Gatsby site that is ready to be deployed to a host
+Ensure you have installed the following before proceeding:
 
-## Exercise - create and run a Gatsby site
+- Git, [Install Git, instructions per OS](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+- Node.js [Install Node.js](https://nodejs.org/en/download/).
+- Gatsby CLI, Once you've installed Node.js you can install the Gatsby CLI with this line `npm install -g gatsby-cli`.
 
-Install the following software:
+## Create and run a Gatsby site
 
-- Git, [Install Git, instructions per OS](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- Node.js [Install Node.js](https://nodejs.org/en/download/)
-- Gatsby CLI, Once you've installed Node.js you can install the Gatsby CLI with this line `npm install -g gatsby-cli`
+All Gatsby projects are created by the Gatsby CLI. The CLI is able to help you with scaffolding a new Gatsby project, host it and also build the final product which is a static set of files that you can deploy into any static host you wish.
 
 ### Create a Gatsby app
 
-Let' create a Gatsby app by typing the following in the terminal
+Let' create a Gatsby app by typing the following in the terminal:
 
 ```bash
-gatsby new hello-gatsby
+gatsby new <your app name>
 ```
 
-`hello-gatsby` is the name of the project and can be anything you want it to be.
+This will create a Gatsby project, a set of directories and files that you can extend and configure.
 
 ### Run Gatsby
 
-To start developing with Gatsby, ensure you are in the correct directory. If you named your project `hello-gatsby` then ensure you did a `cd hello-gatsby` before continuing.
+To start developing with Gatsby, ensure you are in the correct directory. If you named your project `hello-gatsby` then ensure you changed directory to `hello-gatsby` before continuing.
 
 Now run the following command:
 
 ```bash
 gatsby develop
 ```
-
-This command will start up a development server with so called *hot-reloading*. This concept means that any changes done to the code, even addition of files will be picked up by Gatsby and lead to a recompilation.
 
 You should see the following output in the terminal:
 
@@ -45,9 +40,9 @@ Now open up a browser and go to url `http://localhost:8000`.
 
 If you see the above, you successfully created your first Gatsby app. Congrats!
 
-## Exercise - add a page component
+## Add a page component
 
-For this exercise we will learn to create a component that we can navigate to, a so called *page component*. We will continue to use the app we created in the last exercise. 
+For this exercise we will learn to create a component that we can navigate to, a so called *page component*. We will continue to use the app we created in the last exercise.
 
 Find the `pages/` directory and create a file and name it `about.js`. Give the file the following content:
 
@@ -63,17 +58,23 @@ export default () => (
 )
 ```
 
-When you save the file `about.js` the development server will recompile. If you know visit ,http://localhost:8000/about` you should see the following content rendered:
+The code above creates a so-called *presentational* component that is only able to show data. Components in React are created either by a class inheriting from `React.Component` or by simple functions, like the above. A component can be as simple as a function returning a piece of JSX, which the above does.
+
+The `React.Fragment` element is used as there needs to be root element in every component. You can add any valid HTML element as a root element. To avoid polluting your DOM with extra elements you are encouraged to use the `React.Fragment` component.
+
+There's a `Link` component used above. That's a component from the underlying React Router library that will ultimately render as an anchor tag `a`. We can use that component to navigate from this page back the root of our app, note how we set the `to` attribute yo `/`.
+
+Once you pasted in the code above and saved it in the file `about.js` the development server will recompile. If you now visit ,http://localhost:8000/about` you should see the following content rendered:
 
 ![Page component](../media/gatsby-page-component.png)
 
 Congrats, you managed to add a page component, written in React, to your app. Additionally you've learned that any component placed under `/pages` directory can be navigated to.
 
-## Exercise - add data to our component
+## Add data to your component
 
-Now that we've managed to create our component `about.js` let's make it more exciting by adding data to it. The way you work with data in Gatsby is powerful. Gatsby can query for data from almost anywhere, from your files, from static data and even data from API endpoints and databases. To query for data, we'll use GraphQL. The reason we can query for data from so many diverse data sources is because Gatsby has a big data Graph where all the data is placed. Gatsby scans the app for data in many places with the help of plugins. The process of finding data and placing it in a Graph is called *sourcing*. Data can also be transformed from one format to another before being placed in the Graph.
+Now that we've managed to create our component `about.js` let's make it more exciting by adding data to it. The way you work with data in Gatsby is powerful. Gatsby can query for data from almost anywhere, from your files, from static data and even data from API endpoints and databases. To query for data, we'll use GraphQL.
 
-In this exercise, we will query for data from the `gatsby-config.js` file. Technically we will be querying the data Graph but the data originated from `gatsby-config.js`. There is a section in `gatsby-config.js` called `siteMetadata` looking like this:
+We will query for data from the `gatsby-config.js` file. Technically we will be querying the data Graph but the data originated from `gatsby-config.js`. There is a section in `gatsby-config.js` called `siteMetadata` looking like this:
 
 ```javascript
 siteMetadata: {
@@ -83,13 +84,13 @@ siteMetadata: {
 }
 ```
 
-We can construct a query given the above, read out the data and, have our `about.js` component render it. 
+We can construct a query given the above, read out the data and, have our `about.js` component render it.
 
 The first thing we want to do is to go to `http://localhost:8000/___graphql` so we can get help creating our query.
 
 ![Query](../media/gatsby-query.png)
 
-In the `Explorer` to the left, we are able to expand our Graph until we find the data we need. In the  middle section, we can see how our query is written for us as we do selection on the left. On the right, we see the result of running our query. We run our query by clicking the *play* button in the middle section.
+In the above image we have the `Explorer` section to the left, we are able to drill down into our Graph until we find the data we need. In the  middle section, we can see how our query is written for us as we do selections on the left. On the right, we see the result of running our query. We run our query by clicking the *play* button in the middle section.
 
 We make a note of our constructed query:
 
@@ -165,7 +166,7 @@ If you go to the URL `http://localhost:8000/about`, you should see the following
 
 Congrats, you've managed to add data to your component and you've learned some basic GraphQL querying in the process, using our GraphQL visual tool called *GraphiQL*.
 
-## Exercise - build our site
+## Build our site
 
 The last step we want to take in this series of exercises is to learn how to build a static site that we can deploy to a host. Gatsby does the heavy lifting for us. All you need to do is to call the following command:
 
@@ -185,7 +186,7 @@ To run it first ensure, you are standing in the `/build` directory. Then type:
 type:
 
 ```bash
-http-server -p 5000
+npx http-server -p 5000
 ```
 
 Go to the browser on `http://localhost:5000`.

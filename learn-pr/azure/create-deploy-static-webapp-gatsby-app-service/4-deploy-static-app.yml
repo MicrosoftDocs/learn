@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.static-apps-gatsby.6-deploy-static-app
+uid: learn.static-apps-gatsby.4-deploy-static-app
 title: Deploy static app
 metadata:
   title: Deploy static app
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-deploy-static-app.md)]
+  [!include[](includes/4-deploy-static-app.md)]

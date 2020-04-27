@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.static-apps-gatsby.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 04/27/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "How would you create a page in Gatsby?"
+      choices:
+        - content: Create a React component in the `pages` directory"
+          isCorrect: true
+          explanation: "Correct. By convention, any React component placed under the `pages` directory will become a page you can navigate to"
+        - content: "Create a component anywhere in your project, Gatsby will scan the directory for React components"
+          isCorrect: false
+    - content: "How would you set up a route for a page component?"
+      choices:
+        - content: "You wouldn't. Gatsby does this for you."
+          isCorrect: true
+          explanation: "Correct. As long as the React component is placed in `pages` directory the route will be set up automatically"
+        - content: "Set up the route by implementing the Gatsby API in the file `gatsby-node.js`"
+          isCorrect: false
+          explanation: "Incorrect. This is the correct place to set up additional routes but Gatsby does set up page component routes for you so there's no need to do this"
+    - content: "How would you use data from the in-memory data graph in Gatsby?"
+      choices:
+        - content: "Construct a page component and define a variable `query` that contains a GraphQL query. Then render the query response in the component"
+          isCorrect: true
+          explanation: "Correct. Page components can query for data by defining a GraphQL query in the the same file as the component definition."
+        - content: "Do a fetch request and render the response in the component"
+          isCorrect: false
+    - content: "What pre-steps would you need to take to deploy a Gatsby app using the Azure Static Web Apps Service?"
+      choices:
+        - content: "Initialize a Git repo, build the project, push it to GitHub"
+          isCorrect: false
+          explanation: "Incorrect.  These steps are mostly correct except for the `build` part. There's no need to build the project first. Azure Static Web Apps service will look for a `build` task in the `scripts` section of your package.json file and invoke that"
+        - content: "Initialize a Git repo, build the project, push it to GitHub"
+          isCorrect: true
+          explanation: "Correct. That is all you need to do to make it ready for deploy"

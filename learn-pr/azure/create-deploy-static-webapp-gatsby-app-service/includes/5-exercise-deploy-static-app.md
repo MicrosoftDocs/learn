@@ -1,18 +1,19 @@
-In this exercise you will learn how to:
+Now it's time for you to deploy your static app to the Cloud. 
 
-- Learn how to make your Gatsby app ready for deployment
-- Deploy the app to the Static apps service and see the app working in the Cloud
+Start by opening up a terminal and locate your application in the file system.
 
-## Exercise - prepare your app for deployment
+## Push your app to a Git repository
 
-Your app `wishlist` currently live on your machine. To prepare it for deploy, we will need to take the following steps:
+GitHub is a service that enables many people to work together on a codebase using Git.
+
+The Azure Static Web App service is able to help us deploy our app to the Cloud. However, the service expects our app to exist as a GitHub repository, currently your app live on your machine.
+
+To prepare the app for deploy, we will need to take the following steps:
 
 1. Create a Git repository
 2. Create a GitHub repository and push to the local Git repository to it
 
 ### Create a Git repository
-
-Before we can deploy our app, we first need to make it into a Git repository and push it to GitHub. We can accomplish these two tasks through the following steps.
 
 First make sure you are in the root of your project then type the following command:
 
@@ -55,7 +56,7 @@ git push -u origin master
 
 Congratulations, you are now ready to deploy!
 
-## Exercise - deploy your app
+## Deploy your app
 
 To deploy your app, first go to Static apps service in the portal. You should see something like this:
 
@@ -94,4 +95,4 @@ Click the link displayed in the `URL` field and you should see your working app:
 
 ![Published app](../media/gatsby-published.png)
 
-You did it! You've managed to deploy a static app to the Cloud
+You did it! You've managed to deploy a static app to the Cloud.
