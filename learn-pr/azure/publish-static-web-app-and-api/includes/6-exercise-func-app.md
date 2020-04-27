@@ -162,7 +162,7 @@ Configure the proxy for your front-end app with the following steps:
 
 1. Open the file _proxy.conf.json_
 1. Locate the `target: 'http://localhost:7010'` setting
-1. Change the target's port to point to port 7071 `target: 'http://localhost:7071',`
+1. Change the target's port to point to 7071 `target: 'http://localhost:7071',`
 
 ::: zone-end
 

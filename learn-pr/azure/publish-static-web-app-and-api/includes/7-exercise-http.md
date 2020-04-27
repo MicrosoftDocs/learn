@@ -1,4 +1,4 @@
-You can read the products but you can't write them yet. That's because your API has GET endpoint for products, but has no endpoints for POST, PUT, and DELETE.
+You can read the products but you can't write them yet. That's because your API has an HTTP GET endpoint for products, but lacks any endpoints for POST, PUT, and DELETE.
 
 ## Create the POST, PUT, and DELETE functions
 
@@ -12,7 +12,7 @@ You need all four endpoints and you just created the first one. Now, follow thes
 
 ### Create the HTTP Post Function
 
-Follow the following steps to create a function that handles adding a products.
+Follow the following steps to create a function that handles adding a product.
 
 1. Open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create Function**
