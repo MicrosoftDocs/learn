@@ -1,4 +1,4 @@
-## 7 - Publish the API with GitHub Actions
+## Publish the API with GitHub Actions
 
 - Motivation - your API is ready locally and now you want to publish it with your app to run in Azure together
 - Set the API in the workflow file
