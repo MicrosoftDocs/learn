@@ -1,35 +1,47 @@
-Your shopping list web app needs an API.
+Your shopping list web app needs an API. In this exercise, you'll build and run your API using an Azure Functions project. You'll get and explore an API using an Azure Functions project. You'll also extend the API with a new function for your HTTP GET endpoint using the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).
 
-In this exercise, you'll explore the API that you get with an Azure Functions project. You'll also extend the API with a new function for your HTTP GET endpoint using the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).
+You'll follow this breakdown, in this exercise:
 
-1. Switch (checkout) your **api** branch
 1. Explore the Azure Function project
 1. Create the HTTP GET function
-1. Configure the route's endpoint
 1. Refactor the function logic to get products
-1. Run the API
 1. Configure the web app to proxy HTTP requests to the API
-1. Run the web app
+1. Run the API and the web app
 
-## Create the Function app and your HTTP GET function
+## Get the Function app
 
-Once the extension is installed, follow these steps to create the Azure Functions project on your computer.
+When you created your git repository from the template, you selected to include all branches. So far you've been using the **master** branch. Now you'll use the **api** branch, which has the same web app but also includes an Azure Functions project.
+
+Start by checking out the **api** branch, by following these steps:
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
-1. Type and select **Azure Functions: Create New Project**
-1. Choose **Browse** to find the folder to create the functions
-1. Create a new folder in your project called _api_
-1. Select **JavaScript**
+1. Type and select **Git: Discard All Changes** since you have no changes to save
+1. Open the command palette by pressing **F1**
+1. Type and select **Git: Checkout to...**
+1. Select the **api** branch
+
+You will now see an **api** folder in the Visual Studio Code explorer. The **api** folder contains your Azure Functions project, along with three functions.
+
+| Folder                | Method | Route          |
+| --------------------- | ------ | -------------- |
+| _api/products-post_   | POST   | `products`     |
+| _api/products-put_    | PUT    | `products:id`  |
+| _api/products-delete_ | DELETE | `products/:id` |
+
+Your API has routes for manipulating the products for the shopping list, but it lacks a route for getting the products. You'll add that next.
+
+## Create the HTTP GET function
+
+1. In Visual Studio Code, open the command palette by pressing **F1**
+1. Type and select **Azure Functions: Create Function**
 1. When prompted to create a function, select **HTTP Trigger**
 1. Enter **products-get** as the name of the function
 1. Select **Anonymous** as the authentication level
 
-Congratulations, you just created an Azure Function app and your first function!
+You just extended your Azure Function app with a function to get your products!
 
 > [!NOTE]
-> You created the function app in the _api_ folder, which separates it from the web apps. All of the web apps using the front-end frameworks can hit the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
-
-You may recall that your app needs four endpoints. Next, you'll configure and code the function for the first of these endpoints.
+> The function app is in the _api_ folder, which separates it from the web apps. All of the web apps using the front-end frameworks can hit the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
 
 ### Configure the HTTP Method and route endpoint
 
@@ -73,7 +85,7 @@ Now your function is triggered on an HTTP `GET` request to **products**. Your _f
 
 The file _index.js_ in the folder _api/products-get_ contains logic that runs when your make an HTTP request to the route.
 
-You'll need to refactor the logic to get your products. Assume for now that the data access logic will be in a JavaScript module in _/services/product-data.js_ and that it exposes a function `getProducts` to get the products for the shopping list. You'll create the `product-data` module shortly.
+You'll need to refactor the logic to get your products. There is data access logic in the JavaScript module _/services/product-data.js_. The `product-data` module exposes a function `getProducts` to get the products for the shopping list.
 
 Now, refactor the function endpoint to return the products:
 
@@ -94,52 +106,6 @@ Now, refactor the function endpoint to return the products:
    ```
 
 Your function will get the products and return them with a status code of 200, when successful.
-
-### Create the product data
-
-Your app needs to store its data. You could create a database, but for now you'll store the shopping list in an array.
-
-You'll create the data access logic and the shopping list array in the JavaScript module _services/product.data.js_. You'll also need functions to read and modify the array.
-
-1. Create a file _services/product.data.js_
-1. Add the following code to the file for a starter set of products:
-
-   ```javascript
-   const data = {
-     products: [
-       {
-         id: 10,
-         name: 'Strawberries',
-         description: '16oz package of fresh organic strawberries',
-         quantity: '1',
-       },
-       {
-         id: 20,
-         name: 'Sliced bread',
-         description: 'Loaf of fresh sliced wheat bread',
-         quantity: 1,
-       },
-       {
-         id: 30,
-         name: 'Apples',
-         description: 'Bag of 7 fresh McIntosh apples',
-         quantity: 1,
-       },
-     ],
-   };
-   ```
-
-1. Add the following code to read the shopping list of products:
-
-   ```javascript
-   const getProducts = () => {
-     return data.products;
-   };
-
-   module.exports = { getProducts };
-   ```
-
-This code exports a function named `getProducts`, which gets the products from the array. This function is imported by the function in the file _api/products-get/index.js_ (that you previously created).
 
 ### Run the API
 
@@ -305,4 +271,4 @@ You built your application and now it's running locally making HTTP GET requests
 
 ## Next steps
 
-Your app can get products, but it can't edit them. You're missing your HTTP PUT, POST, and DELETE endpoints. You'll add those three endpoints next.
+Your app works locally and your next step is to publish the app with the API together.
