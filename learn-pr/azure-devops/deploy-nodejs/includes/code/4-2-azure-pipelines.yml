@@ -1,7 +1,7 @@
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '457991d3-d669-4e6f-980d-510798914090'
+  azureSubscription: '00001111-0000-1111-2222-000011112222'
   
   # Web app name
   webAppName: 'nodejs-cicd-16353'
