@@ -12,8 +12,8 @@ metadata:
   showCreativeCommonsFooter: true
 title: Introduction to Disability and Accessibility
 summary: Learn about the cloud, including the history, building blocks, and types on your way to becoming a Cloud Administrator.
-abstract: Learn about the core ideas and definitions needed to understand accessibility concepts.
-  In this module you will
+abstract: |
+  In this module you will:
   - Learn what the concepts of accessibility, disability, and inclusion mean.
   - Explore appropriate disability language and etiquette when communicating with and about people with disabilities.
 prerequisites: None
