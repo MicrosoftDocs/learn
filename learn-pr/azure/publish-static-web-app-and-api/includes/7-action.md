@@ -1,6 +1,7 @@
+You added your API to your web app and they are both running locally. Now its time to publish your API and your app to Azure Static Web Apps.
+
 ## Publish the API with GitHub Actions
 
-- Motivation - your API is ready locally and now you want to publish it with your app to run in Azure together
 - Set the API in the workflow file
 - Commit
 - Push

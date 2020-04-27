@@ -107,6 +107,66 @@ Now, refactor the function endpoint to return the products:
 
 Your function will get the products and return them with a status code of 200, when successful.
 
+### Configure CORS locally
+
+When you run your API locally it runs on port 7071. Your web app runs on a different port locally. When your web app tries to make a HTTP request from its port to your API's port 7071, this is known as a Cross-Origin Resource Sharing (CORS). Your browser will prevent the HTTP request from completing unless the API server allows the request to proceed.
+
+Now, tell Azure Functions to allow your web app to make HTTP requests to the API.
+
+1. Create a file named _api/local.settings.json_
+1. Add the following contents to the file
+
+   ::: zone pivot="angular"
+
+   ```json
+   {
+     "Host": {
+       "CORS": "http://localhost:4200"
+     }
+   }
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="react"
+
+   ```json
+   {
+     "Host": {
+       "CORS": "http://localhost:3000"
+     }
+   }
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="svelte"
+
+   ```json
+   {
+     "Host": {
+       "CORS": "http://localhost:5000"
+     }
+   }
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="vue"
+
+   ```json
+   {
+     "Host": {
+       "CORS": "http://localhost:8080"
+     }
+   }
+   ```
+
+   ::: zone-end
+
+> [!NOTE]
+> The _local.settings.json_ file is listed in the _.gitignore_ file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. This is why when you created your repository from the template it lacked this file and you had to create it.
+
 ### Run the API
 
 Now it's time to watch your web app and Azure Functions project work together. Start by running your Azure Functions project locally by following these steps:
