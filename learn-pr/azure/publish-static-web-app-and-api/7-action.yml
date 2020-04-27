@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Publish the API with GitHub Actions
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/7-action.md)]
