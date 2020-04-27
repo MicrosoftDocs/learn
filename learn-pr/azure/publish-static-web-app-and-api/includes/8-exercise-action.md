@@ -1,11 +1,14 @@
-## Publish the API with GitHub Actions
+Your web app and API are both running locally. Now it's time to publish your web app and API to Azure Static Web Apps.
 
-- Motivation - your API is ready locally and now you want to publish it with your app to run in Azure together
-- Set the API in the workflow file
-- Commit
-- Push
-- Create a PR
-- Watch the action go!
-- Browse to the PR url!
-- Inspect the network tab for the API traffic
-- Merge the PR
+## Commit and push your changes to GitHub
+
+1. In Visual Studio Code, open the command palette by pressing **F1**
+1. Type and select **Git: Commit All**
+1. Enter a commit message such as **api changes**
+1. 
+
+## Create a Pull Request
+
+## Watch the GitHub Action build and publish
+
+## Browse to the preview URL

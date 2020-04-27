@@ -6,7 +6,7 @@ You may remember when you created the Azure Static Web App resource that you pro
 
 Now, everything changes.
 
-## How GitHub Actions knows where your code is
+## How the GitHub Action knows where your code is
 
 The folder _.github/workflows_ contains tour GitHub Action file. The file contains the settings for the locations of your web app, API, and build artifacts. The locations you chose when you created your Azure Static Web Apps resource are now located in this file, as shown below:
 
