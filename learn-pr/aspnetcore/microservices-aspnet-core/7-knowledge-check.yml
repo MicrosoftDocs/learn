@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-aspnet-core.8-knowledge-check
+uid: learn.microservices-aspnet-core.7-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge Check - Persist Data with EF Core

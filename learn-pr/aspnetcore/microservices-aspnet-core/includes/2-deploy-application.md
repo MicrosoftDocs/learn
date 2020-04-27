@@ -5,7 +5,7 @@ In this unit, you'll deploy the eShop app to Azure Kubernetes Service. You'll al
 Run the following command in the command shell. Be patient, as setup can take a few minutes to complete.
 
 ```bash
-. <(wget -q -O - https://aka.ms/microservices-aspnet-core)
+. <(wget -q -O - https://aka.ms/microservices-aspnet-core-setup)
 ```
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]

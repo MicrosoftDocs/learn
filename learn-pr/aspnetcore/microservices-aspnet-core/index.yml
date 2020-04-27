@@ -26,10 +26,8 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
-- dotnet-standard
 - azure
 - azure-kubernetes-service
-
 units:
 - learn.microservices-aspnet-core.1-introduction
 - learn.microservices-aspnet-core.2-deploy-application
