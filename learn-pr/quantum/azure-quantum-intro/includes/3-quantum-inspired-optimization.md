@@ -153,11 +153,13 @@ Over the course of the algorithm the temperature is gradually lowered, which mea
 This ensures that the search space is explored widely at the beginning, and at the end only small changes are made that fine-tune the solution.
 
 ### Quantum annealing
-Quantum annealing is a quantum algorithm which is similar in spirit to simulated annealing but different in its quantitative details. 
-In quantum annealing, instead of giving assignments to variables (this term was not used in the simulated annealing case. Can we define previously what the variables are?), we give assignments to qubits.
-The energy of a given assignment to the qubits is the value of the objective function.
-Initially we begin with the quantum state in a broad superposition over many possible assignments to the qubits.
-We then vary the parameters of the system (as we did in simulated annealing) according to an "annealing schedule".(Which parameters did we vary in the simulated annealing was not very clear.)
+[Quantum annealing](https://en.wikipedia.org/wiki/Quantum_annealing) is a quantum algorithm which is similar in spirit to simulated annealing but differs in a few details. 
+For instance, in simulated annealing we explored the solution space by making thermal jumps, from one solution to the next.
+In quantum annealing, we instead make use of a quantum effect called "quantum tunnelling", which allows us to travel through these energy barriers. 
+We frame our problem by giving assigments to qubits, which are our variables, and the energy of a given assignment to the qubits is the value of the objective function.
+Initially we begin with the quantum state in a broad [superposition](https://en.wikipedia.org/wiki/Quantum_superposition) over many possible assignments to the qubits.
+Instead of varying the temperature, as we did in simulated annealing, we vary a parameter called the "quantum field strength".
+What this parameter defines is the radius of neighboring states that we could move to, as time goes on, this radius becomes smaller and smaller, as we hone in on a solution.
 By the end of the anneal, the system has settled into one particular configuration of low energy which can then be measured, thus yielding a (not necessarily optimal) solution to the desired optimization problem.
 The most mathematically clean formulation of quantum annealing is called adiabatic quantum optimization, and is what quantum inspired methods attempt to emulate.
 
