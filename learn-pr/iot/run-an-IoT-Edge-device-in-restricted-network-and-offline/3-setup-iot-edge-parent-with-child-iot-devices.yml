@@ -3,9 +3,9 @@ uid: learn.iot.run-iot-Edge-device-restricted-network-offline.setup-iot-edge-par
 metadata:
   title: Set up IoT Edge Parent with multiple Child IoT Devices
   description: Set up IoT Edge Parent with multiple Child IoT Devices
-  ms.date: 02/12/20120
-  author: ABartolo
-  ms.author: Olivier.Bloch
+  ms.date: 04/2020
+  author: abartolo
+  ms.author: abartolo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up IoT Edge Parent with multiple Child IoT Devices
