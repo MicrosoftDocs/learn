@@ -47,8 +47,9 @@ Here you create a CI/CD pipeline in Azure Pipelines by using one of the built-in
 
     If prompted, enter your GitHub credentials.
 1. On the **Select** tab, select your **nodejs-docs-hello-world** repository.
+1. On the **Configure** tab, select **Node.js Express Web App to Linux on Azure**.
 
-    If prompted:
+    When prompted:
 
     1. Select the Azure subscription from which you created resources earlier.
     1. Select **Continue**.
