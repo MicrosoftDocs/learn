@@ -1,12 +1,18 @@
 You've deployed your application on infrastructure and services that are as cost-effective as possible, but what do you do when your business, customer demand, or application changes? How do you ensure that your costs aren't growing out of control relative to the resources required to run them? How do you detect areas to improve efficiency in your environment? Architectures aren't static, applications and demand will shift over time, and cloud services will evolve to introduce new features and cost savings. 
 
-## Collect data from various sources
+## Track your cloud spend
 
-In order to identify areas to become more cost efficient, you need to look at data. This data comes not only in billing data, but also in metrics from provisioned resources. By combining the two, you can get a better picture of the costs associated with your resources, and the appropriate actions you may need to take. 
+In order to make intelligent decisions, you need data. By looking at where your money is going, you can start comparing that to utilization to uncover where you may have waste within your environment.
 
-Azure Cost Management can provide insight into where your costs are allocated for your resources. Use it to forecast your costs, and identify areas where you may be inefficiently using resources.
+An export of your billing data is available at any time. Using your billing data, you can track where your costs are going and how they're allocated across your resources. The challenge is that the billing data shows cost but not utilization. You'll have data that indicates you're paying for that large VM, but how much are you actually using it?
+
+Azure Cost Management gives you insights where your spend is going, as well as underutilized resources. Azure Cost Management tracks your total spend, cost by service, and cost over time. You can drill down into resource types and instances. You can also break down your costs by organization or cost center by tagging resources with those categories.
 
 :::image type="content" source="../media/4-grouped-daily-accum-view.png" alt-text="Screenshot of Azure Cost Management":::
+
+Azure Advisor also has a cost component. It recommends VM resizing, buying reserved instances when more cost effective than pay-as-you-go instances. It identifies unused ExpressRoute circuits and idle virtual network gateways. Advisor makes additional recommendations in the areas of performance, high availability, and security.
+
+The important part is to take time to review your spend and evaluate where your money is going. Identify areas of inefficiency to ensure you're operating as efficiently as possible.
 
 ## Conduct cost reviews
 
