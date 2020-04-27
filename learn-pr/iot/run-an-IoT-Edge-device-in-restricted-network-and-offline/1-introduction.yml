@@ -3,9 +3,9 @@ uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.introduc
 metadata:
   title: Introduction
   description: Run an IoT Edge device in restricted network and offline.
-  ms.date: 02/12/20120
-  author: ABartolo
-  ms.author: Olivier.Bloch
+  ms.date: 04/2020
+  author: abartolo
+  ms.author: abartolo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
