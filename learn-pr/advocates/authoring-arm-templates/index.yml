@@ -29,10 +29,6 @@ products:
 - azure-resource-manager
 units:
 - learn.advocates.authoring-arm-templates.1-introduction
-- learn.advocates.authoring-arm-templates.10-add-variables-templates
-- learn.advocates.authoring-arm-templates.11-add-variables-templates-exercise
-- learn.advocates.authoring-arm-templates.12-use-parameter-file-exercise
-- learn.advocates.authoring-arm-templates.13-summary
 - learn.advocates.authoring-arm-templates.2-create-first-template
 - learn.advocates.authoring-arm-templates.3-create-first-template-exercise
 - learn.advocates.authoring-arm-templates.4-add-resources-templates
@@ -41,5 +37,9 @@ units:
 - learn.advocates.authoring-arm-templates.7-add-parameters-templates-exercise
 - learn.advocates.authoring-arm-templates.8-template-functions
 - learn.advocates.authoring-arm-templates.9-template-functions-exercise
+- learn.advocates.authoring-arm-templates.10-add-variables-templates
+- learn.advocates.authoring-arm-templates.11-add-variables-templates-exercise
+- learn.advocates.authoring-arm-templates.12-use-parameter-file-exercise
+- learn.advocates.authoring-arm-templates.13-summary
 badge:
   uid: learn.advocates.authoring-arm-templates.badge
