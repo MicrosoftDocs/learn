@@ -38,13 +38,13 @@ products:
 - azure-iot-edge
 units:
 - learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.introduction
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.deploy-Azure-IoT-Edge-enabled-Linux-VM
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.setup-IoT-Edge-parent-with-child-IoT-devices
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.configure-IoT-Edge-device-as-gateway
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.open-IoT-Edge-gateway-device-inbound-ports-using-Azure-CLI
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.configure-IoT-Edge-device-time-to-live-and-message-storage
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.connect-child-IoT-Device-to-IoT-Edge-gateway
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.test-device-connectivity-and-offline-support
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.Summary
+- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.deploy-azure-iot-edge-enabled-linux-vm
+- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.setup-iot-edge-parent-with-child-iot-devices
+- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.configure-iot-edge-device-gateway
+- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.open-iot-edge-gateway-device-inbound-ports-using-azure-cli
+- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.configure-iot-edge-device-time-live-message-storage
+- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.connect-child-iot-device-iot-edge-gateway
+- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.test-device-connectivity-offline-support
+- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.summary
 badge:
   uid: learn.iot.run-iot-edge-device-in-restricted-network-and-offline
