@@ -20,7 +20,7 @@ Start by checking out the **api** branch, by following these steps:
 1. Type and select **Git: Checkout to...**
 1. Select the **api** branch
 
-You will now see an **api** folder in the Visual Studio Code explorer. The **api** folder contains your Azure Functions project, along with three functions.
+You'll now see an **api** folder in the Visual Studio Code explorer. The **api** folder contains your Azure Functions project, along with three functions.
 
 | Folder                | Method | Route          |
 | --------------------- | ------ | -------------- |
@@ -127,7 +127,7 @@ Now it's time to watch your web app and Azure Functions project work together. S
 
 ## Run the web app
 
-Your API is running and now you need to configure your front-end app to make its HTTP request to your API. The front-end app runs on one port and the API runs on a different port (7071). Each front-end framework can be configured to proxy HTTP requests to another port safely.
+Your API is running. Now you need to configure your front-end app to make its HTTP request to your API. The front-end app runs on one port and the API runs on a different port (7071). Each front-end framework can be configured to proxy HTTP requests to another port safely.
 
 ### Configure your proxy port
 
