@@ -1,4 +1,4 @@
-Our goal was to help you evaluate whether Kubernetes would be a good choice as a container orchestration platform for your business. We looked at several features that enhance the Azure Kubernetes Service (AKS) offering. We saw how these features can help you decide if Kubernetes is a good fit for new projects, or convince you to move to Kubernetes to orchestrate current container deployments.
+Our goal was to help you evaluate whether Kubernetes would be a good choice as a container orchestration platform for your business. We looked at several features that enhance the Azure Kubernetes Service (AKS) offering. We saw how these features can help you decide if Kubernetes is a good fit for new projects, or if you should move to Kubernetes to orchestrate current container deployments.
 
 You saw how Kubernetes provides for:
 

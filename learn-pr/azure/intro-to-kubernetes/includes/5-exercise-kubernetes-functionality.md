@@ -1,25 +1,25 @@
 There are several options available when you're running Kubernetes locally. Recall that you can install Kubernetes on physical machines or VMs, or use a cloud-based solution such as Azure Kubernetes Service (AKS). 
 
-Your goal in this exercise is to explore a Kubernetes installation and explore a single-node Kubernetes cluster. You're going to configure a Microk8s environment that's easy to set up and tear down. Then you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
+Your goal in this exercise is to explore a Kubernetes installation and explore a single-node Kubernetes cluster. You're going to configure a MicroK8s environment that's easy to set up and tear down. Then you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
 
 > [!NOTE]
 > This exercise is optional and includes steps that show how to delete and uninstall the software and resources you'll use in the exercise.
 
 Keep in mind that there are other options, such as MiniKube and Kubernetes support in Docker, to do the same.
 
-## What is Microk8s?
+## What is MicroK8s?
 
-Microk8s allows you to deploy a single-node Kubernetes cluster as a single package to target workstations and Internet of Things (IoT) devices. Canonical, the creator of Ubuntu Linux, originally developed and maintains Microk8s.
+MicroK8s allows you to deploy a single-node Kubernetes cluster as a single package to target workstations and Internet of Things (IoT) devices. Canonical, the creator of Ubuntu Linux, originally developed and maintains MicroK8s.
 
-You can install Microk8s on Linux, Windows, and macOS. However, installation instructions are slightly different for each operating system. Choose the option that best fits your environment.
+You can install MicroK8s on Linux, Windows, and macOS. However, installation instructions are slightly different for each operating system. Choose the option that best fits your environment.
 
 ::: zone pivot="linux"
 
-### Install Microk8s on Linux
+### Install MicroK8s on Linux
 
-The Linux installation of Microk8s is the installation option that has the lowest number of steps. Switch to a terminal window and run the commands in the following instructions:
+The Linux installation of MicroK8s is the installation option that has the lowest number of steps. Switch to a terminal window and run the commands in the following instructions:
 
-1. Install the Microk8s snap application. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
+1. Install the MicroK8s snap application. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
     ```bash
     sudo snap install microk8s --classic
@@ -39,9 +39,9 @@ You're now ready to install add-ons on the cluster.
 
 ::: zone pivot="windows"
 
-### Install Microk8s on Windows
+### Install MicroK8s on Windows
 
-You use Multipass to run Microk8s on Windows. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
+You use Multipass to run MicroK8s on Windows. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
 
 1. Download and install the latest release of Multipass for Windows from [GitHub](https://github.com/canonical/multipass/releases?azure-portal=true).
 
@@ -57,9 +57,9 @@ You use Multipass to run Microk8s on Windows. Multipass is a lightweight VM mana
     multipass shell microk8s-vm
     ```
 
-    At this point, you can access the Ubuntu VM that will host your cluster and install Microk8s.
+    At this point, you can access the Ubuntu VM that will host your cluster and install MicroK8s.
 
-1. Install the Microk8s snap application. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
+1. Install the MicroK8s snap application. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
     ```bash
     sudo snap install microk8s --classic
@@ -79,9 +79,9 @@ You're now ready to install add-ons on the cluster.
 
 ::: zone pivot="macos"
 
-### Install Microk8s on macOS
+### Install MicroK8s on macOS
 
-You use Multipass to run Microk8s on macOS. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
+You use Multipass to run MicroK8s on macOS. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
 
 1. You have two options to install Multipass on macOS. Either download and install the latest release of Multipass for macOS from [GitHub](https://github.com/canonical/multipass/releases), or use Homebrew to install Multipass with the `brew cask install multipass` command.
 
@@ -101,9 +101,9 @@ You use Multipass to run Microk8s on macOS. Multipass is a lightweight VM manage
     multipass shell microk8s-vm
     ```
 
-    At this point, you can access the Ubuntu VM that will host your cluster. You still have to install Microk8s. Let's do that now.
+    At this point, you can access the Ubuntu VM that will host your cluster. You still have to install MicroK8s. Let's do that now.
 
-1. Install the Microk8s snap application. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
+1. Install the MicroK8s snap application. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
     ```bash
     sudo snap install microk8s --classic
@@ -123,7 +123,7 @@ You're now ready to install add-ons on the cluster.
 
 ## Prepare the cluster
 
-You can use the status command in Microk8s to view the status of the installed add-ons on your cluster. These add-ons provide several services, some of which you covered previously. One example is DNS functionality.
+You can use the status command in MicroK8s to view the status of the installed add-ons on your cluster. These add-ons provide several services, some of which you covered previously. One example is DNS functionality.
 
 1. To check the status of the installation, run the `microk8s.status --wait-ready` command.
 
@@ -177,7 +177,7 @@ You're now ready to access your cluster by using `kubectl`.
 
 ## Explore the Kubernetes cluster
 
-Microk8s provides a version of `kubectl` that you can use to interact with your new Kubernetes cluster. This copy of `kubectl` allows you to have a parallel installation of another system-wide `kubectl` instance without affecting its functionality. You can alias the command by running the `snap alias` command to simplify usage.
+MicroK8s provides a version of `kubectl` that you can use to interact with your new Kubernetes cluster. This copy of `kubectl` allows you to have a parallel installation of another system-wide `kubectl` instance without affecting its functionality. You can alias the command by running the `snap alias` command to simplify usage.
 
 1. Run the `snap alias` command to alias `microk8s.kubectl` to `kubectl`.
 
@@ -199,7 +199,7 @@ Recall from earlier that a Kubernetes cluster exists out of master and worker no
 
 1. Check the nodes that are running in your cluster. 
 
-    You know that Microk8s is a single-node cluster installation, so you expect to see only one node. Keep in mind, though, that this node is both the control plane and a worker node in the cluster. Confirm this configuration by running the `kubectl get nodes` command. You can use the `kubectl get` command to retrieve information about all the resources in your cluster.
+    You know that MicroK8s is a single-node cluster installation, so you expect to see only one node. Keep in mind, though, that this node is both the control plane and a worker node in the cluster. Confirm this configuration by running the `kubectl get nodes` command. You can use the `kubectl get` command to retrieve information about all the resources in your cluster.
 
     ```bash
     sudo kubectl get nodes
@@ -241,7 +241,7 @@ Recall from earlier that a Kubernetes cluster exists out of master and worker no
     kubernetes   ClusterIP   10.152.183.1   <none>        443/TCP   37m   <none>
     ```
 
-    The reason for the single service listing is that Kubernetes makes use of a concept called namespaces. Namespaces allow you to logically divide a cluster into multiple virtual clusters. 
+    The reason for the single service listing is that Kubernetes uses a concept called namespaces. You can use namespaces to logically divide a cluster into multiple virtual clusters. 
     
     Use the `--all-namespaces` parameter to fetch all services in all namespaces.
 
@@ -395,7 +395,7 @@ You can use the `kubectl scale` command to scale the number of replicas in your 
 
 You would need to apply several additional configurations to the cluster to effectively expose your website as a public-facing website. Examples include installing a load balancer and mapping node IP addresses. This type of configuration forms part of advanced aspects that you'll explore in the future.
 
-## Uninstall Microk8s
+## Uninstall MicroK8s
 
 You can remove everything you've deployed so far, and even the VM, to recover space on your development machine. Keep in mind that this procedure is optional.
 
@@ -405,7 +405,7 @@ You can remove everything you've deployed so far, and even the VM, to recover sp
     sudo microk8s.disable dashboard dns registry
     ```
 
-1. Remove Microk8s from the VM by running the `snap remove` command.
+1. Remove MicroK8s from the VM by running the `snap remove` command.
 
     ```bash
     sudo snap remove microk8s
