@@ -14,7 +14,7 @@ As a Node.js developer, you'll find a welcoming environment in Azure DevOps. Alt
 
 When you connect your code to Azure Pipelines, Azure Pipelines can automatically detect the language that you're using and provide starter code for your CI/CD pipeline.
 
-Here's an example that shows starter code templates for Node.js application:
+Here's an example that shows starter code templates for a Node.js application:
 
 ![Azure Pipelines showing a list of starter projects for  Node.js](../media/2-configure-pipeline-nodejs.png)
 
