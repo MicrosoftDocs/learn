@@ -14,18 +14,18 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which one of the following statements accurately describes actions that embody Microsoft’s approach to driving inclusivity in our marketing, products and services?
+  - content: Which of the following statements accurately describes actions that embody Microsoft’s approach to driving inclusivity in our marketing, products and services?
     choices:
-    - content: Empowering leadership to drive the messaging, and enabling workers to take a single and impactful action for themselves, with peers driving change.
+    - content: Providing education to others on D&I, understanding barriers to help avoid them, caring about the workplace environment, and telling people how to engage successfully.
       isCorrect: False
       explanation: This isn't the right approach.
     - content: Good ideas, beliefs and technologies create the core of implementing a diverse and inclusive environment.
       isCorrect: False
-      explanation: Good ideas are not enough.
+      explanation: There is more involved.
     - content: Listening more versus having the answers, diving deeper to understand barriers, caring about every person as an individual, and focusing on empowering others to be great.
       isCorrect: True
-      explanation: We need to listen, care, and empower others.
-  - content: Which one of the following statements describes Cloud for Everyone? 
+      explanation: We should listen more and empower others.
+  - content: Which of the following statements describes Cloud for Everyone?  
     choices:
     - content: Making it easy for customers to find, and sign up for, cloud technologies online.
       isCorrect: False
