@@ -6,8 +6,7 @@ Currently, Advanced Threat Protection for Azure Storage is available for the Blo
 
 In the Azure portal, you can turn on threat protection on the configuration page of the Azure Storage account.
 
-1. On the **Settings** page, select **Advanced Threat Protection**.
-1. Turn **ON** Advanced Threat Protection.
-1. Select **Save** to save the Advanced Threat Protection policy.
+1. On the **Settings** page, select **Advanced security**.
+1. Select **Enable Advanced Threat Protection** to enable this layer of protection.
 
 :::image type="content" source="../media/6-enable-advanced-threat-protection.png" alt-text="Screenshot of Azure portal showing the Advanced Threat Protection for Azure Storage panel of Advanced Security with the enable button highlighted.":::
