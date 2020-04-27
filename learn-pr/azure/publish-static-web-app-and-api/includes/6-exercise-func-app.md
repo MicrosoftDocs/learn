@@ -1,4 +1,15 @@
-You can create an API for your shopping list app. In this exercise, you'll create your API with an Azure Functions project using the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).
+Your shopping list web app needs an API.
+
+In this exercise, you'll explore the API that you get with an Azure Functions project. You'll also extend the API with a new function for your HTTP GET endpoint using the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).
+
+1. Switch (checkout) your **api** branch
+1. Explore the Azure Function project
+1. Create the HTTP GET function
+1. Configure the route's endpoint
+1. Refactor the function logic to get products
+1. Run the API
+1. Configure the web app to proxy HTTP requests to the API
+1. Run the web app
 
 ## Create the Function app and your HTTP GET function
 

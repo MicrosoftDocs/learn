@@ -25,16 +25,7 @@ Here are the four endpoints that you'll create:
 
 You'll need an Azure Functions project for your API, with your HTTP endpoints for your shopping list app. Your repository has an **api** branch that contains an Azure Functions project and HTTP endpoints for PUT, POST, and DELETE of your products.
 
-You'll follow these steps to connect your front-end web app with a serverless back-end API:
-
-1. Switch (checkout) your **api** branch
-1. Explore the Azure Function project
-1. Create the HTTP GET function
-1. Configure the route's endpoint
-1. Refactor the function logic to get products
-1. Run the API
-1. Configure the web app to proxy HTTP requests to the API
-1. Run the web app
+You'll get and then extend the Azure Functions project, before connecting your API to your front-end web app.
 
 ## Next steps
 
