@@ -2,11 +2,15 @@
 
 In this activity, you'll deploy Azure SQL Database deployment using the Azure portal. Throughout this exercise, you'll also get to explore the various options that are available to you.
 
+> **Important Note!** In order to simplify the network configuration of these exercises, it is recommended to **disable** VPN connectivity while you complete the exercises.  
+
+**Step 0 - Activate sandbox**
+
+TODO
+
 **Step 1 - Deployment options**  
 
-> Note: If you are not already connected to your Azure VM, do that now. For instructions on how to do that, see [here](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/connect-logon). All of the exercises for the remainder of the workshop should be completed in your VM. If you want to make viewing the instructions easier, you might consider opening these instructions in a browser in you VM.
-
-Navigate to https://portal.azure.com/ and log in with your account, if you are not already. In the top search bar, type **Azure SQL** and review what appears:
+Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) using the same account you activated the sandbox with. In the top search bar, type **Azure SQL** and review what appears:  
 
 ![Search for Azure SQL](../media/search2.png)  
 
@@ -27,17 +31,18 @@ Next, select **Single database** and click **Create**.
 
 **Step 2 - Database name**  
 
-Select the subscription and resource group you created in the prerequisites (or were provided), then enter a database name **AdventureWorksID** where ID is the unique identifier you used in the prerequisites for your resource group, or the unique ID at the end of the Azure login you were provided (e.g. for `odl_user_160186@....com` the ID you will use for the entirety of the workshop is `160186`, and for this step your database name would be **AdventureWorks160186**).  
+Select the subscription and resource group the sandbox provisioned (there should only be one), then enter a database name **AdventureWorksID** where ID is a unique identifier that you will use for all of your resources in this module (e.g. if you pick a unique identifier or ID `04062020`, your database name would be **AdventureWorks0406**).  
 
 **Step 3 - Server**  
 
 When you create an Azure SQL Managed Instance, supplying the server name is the same as in SQL Server. However, for databases and elastic pools, an Azure SQL Database server is required. This is a *logical* server that acts as a central administrative point for single or pooled database and includes logins, firewall rules, auditing rules, threat detection policies, and failover groups (more on these topics later). This logical server does not expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure. You can read more on SQL Database servers [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-servers).  
 
 Select **Create new** next to **Server** and provide the following information:  
-* *Server name*: **aw-serverID** where ID is the same identifier you used for the database and resource group.  
+* *Server name*: **aw-serverID** where ID is the same identifier you used for the database (e.g. **0406**).  
 * *Server admin login*: **cloudadmin**. This is the equivalent to a member of the sysadmin role in SQL Server. This account connects using SQL authentication (username and password) and only one of these accounts can exist. You can read more about Administrator accounts for Azure SQL Database [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-manage-logins#unrestricted-administrative-accounts).
-* *Password*: A complex password that meets [strong password requirements](https://docs.microsoft.com/en-us/sql/relational-databases/security/strong-passwords). **TIP**: As you type in your password you are given hints as to the requirements. You are also asked to confirm your password.
-* *Location*: Use the same location as your resource group.  
+* *Password*: A complex password that meets [strong password requirements](https://docs.microsoft.com/en-us/sql/relational-databases/security/strong-passwords).  
+> **TIP**: As you type in your password you are given hints as to the requirements. You are also asked to confirm your password. Make a note or be sure to remember this password.  
+* *Location*: Use the same location as your resource group or the region that is close to where you are located.  
 
 ![Creating a new logical server](../media/newserver.png)  
 
@@ -50,7 +55,7 @@ Then, select **OK**.
 In Azure SQL DB, you then decide if you want this database to be a part of an Elastic Pool (new or existing). In Azure SQL Managed Instance, [creating an instance pool (public preview) currently requires a different flow](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-instance-pools-how-to#create-an-instance-pool) than the Azure SQL create experience in the Azure portal. For this activity, select **No**.  
 
 **Step 5 - Purchasing model**  
->For more details on purchasing models and comparisons, refer to [Module 1](../azuresqlworkshop/01-IntroToAzureSQL.md).  
+>For more details on purchasing models and comparisons, refer to [the first module in the Azure SQL Fundamentals learning path](add link TODO).  
 
 Next to **Compute + storage** select **Configure Database**.  The top bar, by default shows the different service tiers available in the vCore purchasing model.
 
@@ -58,12 +63,12 @@ For the purposes of this workshop, we'll focus on the vCore purchasing model (re
 ).  
 
 **Step 6 - Service tier**  
->For more details on service tiers and comparisons, refer to [Module 1](../azuresqlworkshop/01-IntroToAzureSQL.md).  
+>For more details on service tiers and comparisons, refer to [the first module in the Azure SQL Fundamentals learning path](add link TODO).  
 
 The next decision is choosing the service tier for performance and availability. Generally, we recommend you start with the General Purpose and adjust as needed. For the purposes of this workshop, be sure to select **General Purpose** here (should be the default).  
 
 **Step 7 - Hardware**
->For more details on available hardware and comparisons, refer to [Module 1](../azuresqlworkshop/01-IntroToAzureSQL.md).  
+>For more details on available hardware and comparisons, refer to [the first module in the Azure SQL Fundamentals learning path](add link TODO).  
 
 For the workshop, you can leave the default hardware selection of **Gen5**, but you can select **Change configuration** to view the other options available (may vary by region).  
 
@@ -91,12 +96,12 @@ Choices for networking for Azure SQL Database and Azure SQL Managed Instance are
 
 You can then choose to select Public endpoint or Private endpoint (preview). In this workshop we'll use the public endpoint and set the **Allow Azure services and resources to access this server** option to yes, meaning that other Azure services (e.g. Azure Data Factory or an Azure Virtual Machine) can access the database if you configure it. You can also select **Add current client IP address** if you want to be able to connect from the IP address from the client computer you used to deploy Azure SQL Database, which you do. Make sure your settings match below:
 
-![](../graphics/networkconnect2.png)
+![](../media/networkconnect2.png)
 
 
 With Azure SQL Managed Instance, you deploy it inside an Azure virtual network and a subnet that is dedicated to managed instances. This enables you to have a completely secure, private IP address. Azure SQL Managed Instance provides the ability to connect an on-prem network to a managed instance, connect a managed instance to a linked server or other on-prem data store, and connect a managed instance to other resources. You can additionally enable a public endpoint so you can connect to managed instance from the Internet without a Virtual Private Network (VPN). This access is disabled by default.  
 
-The principle of private endpoints through virtual network isolation is available for Azure SQL Database through a  **private link** (currently in public preview), and you can learn more [here](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview).
+The principle of private endpoints through virtual network isolation is available for Azure SQL Database through a  **private link**, and you can learn more [here](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview).
 
 More information on connectivity for Azure SQL Database can be found [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connectivity-architecture) and for Azure SQL Managed Instance [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-connectivity-architecture). There will also be more on this topic in upcoming sections/modules.  
 
@@ -152,7 +157,7 @@ Finally, select **Create** to deploy the service.
 
 Soon after selecting Create, you will be redirected to a page that looks like this (below), and where you can monitor the status of your deployment. This deployment option and configuration typically takes less than five minutes to deploy. Some images of what you might see are below.  
 
-> Note: While you're waiting, you can open SSMS. It takes a while to open for the first time, and you'll use it in the next activity.    
+> Note: While you're waiting, you can open SSMS. It takes a while to open for the first time, and you'll use it in the next exercise.    
 
 ![Your deployment is underway notice](../media/deploymentunderway.png)
 
@@ -170,25 +175,22 @@ If, for whatever reason, you get lost from this page and the deployment has not 
 
 Once your resource has deployment, review the **Overview** pane for the SQL database in the Azure portal and confirm that the Status is **Online**.  
 
+### Connecting to Azure SQL Database
+
 In this activity you will learn the basics of connecting to your deployed Azure SQL Database and compare that experience to connecting to SQL Server.
 
-TODO is there an extra step to add access from local?
+**What would connecting in SQL Server 2019 look like?**  
 
-**Step 1 - What would connecting in SQL Server 2019 look like**
-
-TODO because they don't have SQL Server 2019 
-
-Now that everything looks to be up and running in the Azure portal, let's switch to a familiar tool, SQL Server Management Studio (SSMS). Open SSMS and connect, using Windows Authentication, to the local instance of SQL Server 2019 that's running on your Azure VM (if you don't have this, please revisit the prerequisites).  
+Now that everything looks to be up and running in the Azure portal, let's review what connecting to an instance of SQL Server 2019 may look like.Typically, you'd open SSMS and connect, using Windows Authentication, to the local instance of SQL Server 2019, similar to the image below.  
 
 ![How to connect to SQL Server 2019 in SSMS](../media/localconnect.png)  
 
-If you completed the prerequisites, expanding the databases and system databases folders should result in a view similar to the following.  
-
+You would then see a view that looks similar to the following.  
 ![What a SQL Server 2019 deployment looks like in SSMS](../media/localserver.png)   
 
-**Step 2 - Connect to Azure SQL Database**  
+**Step 1 - Connect to Azure SQL Database**  
 
-Next, let's connect to your Azure SQL Database logical server and compare. First, select **Connect > Database Engine**.  
+Next, let's connect to your Azure SQL Database logical server and compare. Open SSMS (if it is not open already), and create a new connection. One way to do this is to select **Connect > Database Engine**.  
 
 ![How to connect to Azure SQL Database in SSMS](../media/dbengine.png)  
 
@@ -196,25 +198,29 @@ For server name, input the name of your Azure SQL Database logical server. You m
 
 > **Tip: locating resources in the Azure portal**  
 > If you're new to the portal, there are a few ways you can locate resources, and depending on who you talk to, they may use a different method. Here are a few options to get you started:  
-> 1. In the search bar type the **resource name** and select it under "Resources". For example, in the below image I search for a SQL Database "adventureworks", and I can then select the one I'm using for the workshop.  
+> 1. In the search bar type the **resource name** and select it under "Resources". For example, in the below image a search for a SQL Database "adventureworks" was made, and the desired resource can be selected.  
 > ![Search for resources in portal](../media/awdb.png)  
-> 2. If you select **Microsoft Azure** in the top left corner of the Azure portal, it will take you to "Home". From here, you can select **Resource groups** and then select your resource group.  
-> ![How to go home in Azure portal](../media/azureservices.png)  
+> 2. Additionally, if you select the **Microsoft Azure** text in the top left corner of the Azure portal, it will take you to "Home". From here, you can select **Resource groups** and then select your resource group.  
 > This will bring you to a view of all the resources that you deploy in the resource group.  
 > ![Viewing resources in a resource group](../media/rg.png)
 > You could alternatively select SQL Databases or Virtual machines, depending what you are looking for.   
 > 3. Other options / more information can be found in the [Azure portal overview](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-overview) documentation page.  
 
-Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in Activity 1)
+Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
 
-Check the **Remember password** box and select **Connect**.
+Check the **Remember password** box and select **Connect**.  
+
+> **Note**: Depending on your local configuration (e.g. VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
 
 ![Connect to SQL Database in SSMS](../media/connectazsql.png)   
+
 
 Expanding the databases and system databases should result in a view similar to the following.  
 
 ![View of SQL Database folders in SSMS](../media/azureserver.png)   
 
-Spend a few minutes clicking around and exploring the differences, at first glance, between the Azure SQL Database logical server and SQL Server. You won't deploy an Azure SQL Managed Instance as part of this workshop, but the image below shows how Azure SQL Managed Instance would appear in SSMS.
+Spend a few minutes clicking around and exploring the differences, at first glance, between the Azure SQL Database logical server and SQL Server. You won't deploy an Azure SQL Managed Instance as part of this workshop, but the image below shows how Azure SQL Managed Instance would appear in SSMS.   
 
 ![View of Managed Instance in SSMS](../media/miserver.png)   
+
+In this exercise, you saw how to deploy and connect to Azure SQL Database, and how it compares (at first glance) to SQL Server and Azure SQL Managed Instance. In the next exercise, you will continue this comparsion, going deeper and exploring various methods to verify your deployment/installation.  
