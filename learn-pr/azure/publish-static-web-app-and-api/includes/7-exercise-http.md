@@ -2,7 +2,9 @@ You can read the products but you can't write them yet. That's because your API 
 
 ## Create the POST, PUT, and DELETE functions
 
-You need all four endpoints and you just created the first one. Now, follow these steps to create an Azure Function for the rest of the route endpoints. Here are the endpoints you'll create.
+You need all four endpoints and you just created the first one. Now, follow these steps to create an Azure Function for each of the remaining three route endpoints.
+
+Here are the endpoints you'll create.
 
 | Methods | Route endpoints   |
 | ------- | ----------------- |
