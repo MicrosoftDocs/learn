@@ -16,12 +16,12 @@ When you connect your code to Azure Pipelines, Azure Pipelines can automatically
 
 Here's an example that shows starter code templates for a Node.js application:
 
-![Azure Pipelines showing a list of starter projects for  Node.js](../media/2-configure-pipeline-nodejs.png)
+![Azure Pipelines showing a list of starter projects for Node.js](../media/2-configure-pipeline-nodejs.png)
 
 Azure Pipelines provides built-in tasks that support the build, test, and deployment jobs you need to deploy source code from GitHub or anywhere else.
 
 In Azure Pipelines, pipeline code is expressed through YAML configuration files. This example shows the built-in `NodeTool@0` task, which installs the version of Node.js that you need to build your application.
 
-![Azure Pipelines showing a list of starter projects for  Node.js](../media/2-starter-code-nodejs.png)
+![Azure Pipelines showing starter code for the Node.js project](../media/2-starter-code-nodejs.png)
 
 If Azure Pipelines doesn't provide a specific task that you need, you can provide scripts that fill in the gaps. The `script` task in the previous example uses `npm` to install dependencies, build the application, and run any associated tests.
