@@ -69,7 +69,7 @@ To summarize the general conditions where QIO performs well:
 
 ## Simulated and quantum annealing 
 
-We will explain the general idea of simulated and quantum annealings. Their contrast helps us understand the QIO method. 
+We will explain the general idea of simulated annealing and quantum annealing, as the solvers in Azure Quantum use variations of these techniques. 
 
 ### Simulated annealing
 For optimization problems in search spaces that are too large to solve by exhaustive search and objective functions that are rugged but structured, one of the most successful and commonly used heuristics is simulated annealing.
@@ -84,22 +84,73 @@ This creates the possibility for the walker to escape from local minima and then
 ![A plot which shows a walker taking an uphill move in order to find a lower point](../media/plot_sa2.png)
 
 You'll notice this uphill move is described as a "thermal jump" in the illustration. 
-That's because simulated annealing is a physics-inspired algorithm that mimics the behaviour of materials as they are slowly cooled.
+That's because simulated annealing is an algorithm from physics that mimics the behaviour of materials as they are slowly cooled.
 The walker is like an atom in a metal, for instance, that are driven by thermal motion to reconfigure themselves. 
 These changes are random, however moves to lower-energy configurations are more likely than moves to higher-energy configurations.
 Hence, we say it follows a biased random walk. 
 
-But what is the probability that one of these moves will occur? 
+Let's take a look at how we define the cost function of our simulated annealing problem. 
+Firstly, we have a number of variables. We can name these variables $x$, and if we have $i$ variables, then we can index them individually using $x_i$.
+
+![Variable definition](../media/variable.png)
+
+These variables can take specific values, and in the case of a binary optimization problem they can only take two. 
+In particular, if your problem is considering these variables as spins, as in the Ising model, then the values of the variables can be either +1 or -1. 
+In other cases, these can simply be 1 or 0, as in the QUBO or PUBO model which we will explain shortly.
+
+Let us consider some variables. Each of these variables has an associated weight, which determines their influence on the overall cost function.
+We can write these weights as $w$, and again, if we have $i$ variables, then the associated weight for those individual variables can be indexed using $w_i$.
+
+![Term definition](../media/term.png)
+
+And so, we can write our cost function as the sum of these weights and variables.
+
+![Cost function definition](../media/cost.png)
+
+Currently our cost function only considers individual variables. 
+You can think of these as independent contributions to the cost function. 
+But often, in real-life scenarios, variables may depend on one another.
+So how do we describe this?
+Mathematically, we write this as the product of two variables.
+Their contribution can be written as their weight, multiplied by each of the variables $x_i$ and $x_j$.
+
+![Cost function definition](../media/qubo_term.png)
+
+We can combine this with the previous cost function to describe a problem where variables can contribute individually, and based on another variable:
+
+![Cost function definition](../media/qubo_cost.png)
+
+However, we don't have to stop there. We can extend this to considering how three variables might depend on one another, with variables $w_k$ having weights $w_k$.
+
+![Cost function definition](../media/pubo_term.png)
+
+Combining this again, we have a problem of the form:
+
+![Cost function definition](../media/pubo_cost.png)
+
+- **k-local**: In mathematics, the expressions we have just defined are called "polynomials". 
+In the first case, with independent variables, we would say that this polynomial had degree 1.
+For a polynomial with degree $k$, we would describe this as a $k$-local problem.
+- **QUBO**: In the second case, we introduced the idea of having two variables depend on one another. 
+Mathematically, this amounts to introducing quadratic terms. 
+Alternatively, we might say it was a 2-local problem.
+In Azure Quantum, you might see these problems described as "quadratic unconstrained binary optimization problems", or QUBOs.
+- **PUBO**: In the final case, we described a polynomial with maximum degree 3. 
+However, we could continue to extend this cost function so that it considered problems of a greater degree. 
+In Azure Quantum, we use the term "polynomial unconstrained binary optimization", or PUBO, to describe problems with a maximum degree $k$. 
+
+Now that we have defined the structure of our problems, let's look into more detail at how we describe the acceptance of moves.
+This translates to considering, "with what probability should I accept a new assignment to these variables"?
 Since the moves are driven by thermal motion, it depends on the temperature.
-It also depends on the energy of the current and proposed configurations, and finally, a constant called the Boltzmann constant.
+It also depends on the cost (or energy) of the current and proposed configurations, and finally, a constant called the Boltzmann constant.
 
 Mathematically, the probability can be written as follows:
 
 ![A mathematical formula](../media/sa.png)
 
-This formula is the Bolsmann factor known in thermodynamics. Simulated annealing algorithms mimic this thermal process not only conceptually but in quantitative detail. 
+Simulated annealing algorithms mimic this thermal process not only conceptually but in quantitative detail. 
 Over the course of the algorithm the temperature is gradually lowered, which means that moves to higher-energy configurations become less and less likely.
-This ensures that the search space is explored widely at the beginning, and at the end only small changes are made that finetune the solution.
+This ensures that the search space is explored widely at the beginning, and at the end only small changes are made that fine-tune the solution.
 
 ### Quantum annealing
 Quantum annealing is a quantum algorithm which is similar in spirit to simulated annealing but different in its quantitative details. 
