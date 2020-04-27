@@ -65,3 +65,11 @@ Identify areas of additional investment
 Act to reduce your spending. Make the most of it based on the findings gathered through planning and increasing cost visibility. You might consider purchase and licensing optimizations or infrastructure deployment changes based on your findings in the Cost Analysis tool.
 
 Everyone in your organization must engage in the cost management lifecycle. They need to stay involved on an ongoing basis to optimize costs. Be rigorous about this iterative process and make it a key tenet of responsible cloud governance in your organization. -->
+
+## Lamna's cloud operating model
+
+They utilized the cloud adoption framework to put together a solid operating model and defined their business goals around moving to the cloud. In their case their business leaders wanted to gain the flexibility of the cloud and increase their ability to adjust to new workloads. They wanted to modernize their applications by leveraging managed services.
+
+They formed a cloud strategy team with their business leaders, and 
+
+They met as a business group and defined the outcomes. Their IT team identified each piece of their digital estate and identified whether it was a candidate for migration or innovation. 
