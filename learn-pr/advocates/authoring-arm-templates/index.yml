@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.advocate.authoring-ARM-templates
+uid: learn.advocates.authoring-arm-templates
 metadata:
   title: Authoring Azure Resource Manager templates from Scratch
   description: This Module will teach you how to create a template and deploy it to Azure from scratch.
@@ -28,19 +28,18 @@ products:
 - azure-clis
 - azure-resource-manager
 units:
-- learn.advocate.authoring-ARM-templates.1-introduction
-- learn.advocate.authoring-ARM-templates.10-Add-variables-templates
-- learn.advocate.authoring-ARM-templates.11-Add-variables-templates-Exercise
-- learn.advocate.authoring-ARM-templates.12-Use-parameter-file-Exercise
-- learn.advocate.authoring-ARM-templates.12-Use-parameter-file
-- learn.advocate.authoring-ARM-templates.13-Summary
-- learn.advocate.authoring-ARM-templates.2-Create-first-template
-- learn.advocate.authoring-ARM-templates.3-Create-first-template-Exercise
-- learn.advocate.authoring-ARM-templates.4-Add-resources-templates
-- learn.advocate.authoring-ARM-templates.5-Add-resources-templates-Exercise
-- learn.advocate.authoring-ARM-templates.6-Add-parameters-templates
-- learn.advocate.authoring-ARM-templates.7-Add-parameters-templates-Exercise
-- learn.advocate.authoring-ARM-templates.8-Template-functions
-- learn.advocate.authoring-ARM-templates.9-Template-functions-Exercise
+- learn.advocates.authoring-arm-templates.1-introduction
+- learn.advocates.authoring-arm-templates.10-add-variables-templates
+- learn.advocates.authoring-arm-templates.11-add-variables-templates-exercise
+- learn.advocates.authoring-arm-templates.12-use-parameter-file-exercise
+- learn.advocates.authoring-arm-templates.13-summary
+- learn.advocates.authoring-arm-templates.2-create-first-template
+- learn.advocates.authoring-arm-templates.3-create-first-template-exercise
+- learn.advocates.authoring-arm-templates.4-add-resources-templates
+- learn.advocates.authoring-arm-templates.5-add-resources-templates-exercise
+- learn.advocates.authoring-arm-templates.6-add-parameters-templates
+- learn.advocates.authoring-arm-templates.7-add-parameters-templates-exercise
+- learn.advocates.authoring-arm-templates.8-template-functions
+- learn.advocates.authoring-arm-templates.9-template-functions-exercise
 badge:
-  uid: learn.advocate.authoring-ARM-Templates
+  uid: learn.advocates.authoring-arm-templates.badge
