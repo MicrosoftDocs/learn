@@ -40,7 +40,7 @@ Next, add configuration details specific to your preferred front-end framework.
 
 - Enter **src** in the _App location_ box
 - Clear the default value from the _Api location_ box
-- Enter **dist** in the _App artifact location_ box
+- Enter **dist/angular-app** in the _App artifact location_ box
 - Click the **Review + create** button
 
 ::: zone-end
