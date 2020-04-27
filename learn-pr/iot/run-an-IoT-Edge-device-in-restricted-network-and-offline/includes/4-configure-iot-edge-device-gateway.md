@@ -54,7 +54,8 @@ In this exercise, you will configure the Azure IoT Edge on Ubuntu virtual machin
    -- setup-remote-iot-edge-gateway.sh
    -- A notification will appear when the file upload has completed.
 
-   **Note:** These two scripts are helper scripts that will assist in setting up the Azure IoT Edge on Ubuntu VM to be a Transparent Gateway device. These scripts are meant to be used for development purposes in this lab, and are not meant for production use.
+    >[!NOTE]
+    >These two scripts are helper scripts that will assist in setting up the Azure IoT Edge on Ubuntu VM to be a Transparent Gateway device. These scripts are meant to be used for development purposes in this lab, and are not meant for production use.
 
 1. You can verify that the files have been uploaded by listing the content of the current directory by entering the ls command.
 
