@@ -16,11 +16,11 @@ Recall from earlier that an orchestrator is a system that deploys and manages ap
 
 A Kubernetes cluster contains at least one master and one or more nodes. Both the master and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads. 
 
-It's also possible to run Microsoft workloads by using Windows Server 2019 or later on cluster nodes. For example, assume that the data processing service in the drone tracking application is written as a .NET 4.5 application that makes use of specific Windows OS API calls. This service can run only on nodes that run a Windows Server OS.
+It's also possible to run Microsoft workloads by using Windows Server 2019 or later on cluster nodes. For example, assume that the data processing service in the drone tracking application is written as a .NET 4.5 application that uses specific Windows OS API calls. This service can run only on nodes that run a Windows Server OS.
 
 Let's look at both the master and worker nodes, and the software that runs on each, in more detail. Understanding the role of each component and where each component runs in the cluster helps you when it comes to installing Kubernetes.
 
-### The Kubernetes master
+### Kubernetes master
 
 The Kubernetes master node, also known as the control plane in a Kubernetes cluster, runs a collection of services that manages the orchestration functionality in Kubernetes. All of the Kubernetes services can run in a single master node configuration. 
 
@@ -28,7 +28,7 @@ From a learning perspective, it makes sense to use a single master in your test 
 
 The fact that a master node runs specific software to maintain the state of the cluster doesn't exclude the master node from running other compute workloads. However, you usually want to make sure to exclude the master from running noncritical and user application workloads.
 
-### The Kubernetes node
+### Kubernetes node
 
 A node in a Kubernetes cluster is where your compute workloads run. Each node communicates with the control plane via the API server to inform it about state changes on the node.
 
@@ -50,13 +50,13 @@ You can think of the API server as the front end to the control plane in your Ku
 
 For example, as a user, you use a command-line application called `kubectl` that allows you to run commands against your Kubernetes cluster's API server. The component that provides this API is called `kube-apiserver`, and you can deploy several instances of this component to support scaling in your cluster.
 
-This API exposes a RESTful API that allows you to post commands or YAML-based configuration files. YAML is a human-readable data serialization standard for programming languages. You use YAML files to define the intended state of all the objects within a Kubernetes cluster.
+This API exposes a RESTful API that you can use to post commands or YAML-based configuration files. YAML is a human-readable data serialization standard for programming languages. You use YAML files to define the intended state of all the objects within a Kubernetes cluster.
 
 For example, assume that you want to increase the number of instances of your application in the cluster. You'll define the new state by using a YAML-based file and submit this file to the API server. The API server will validate the configuration, save the configuration to the cluster, and finally enact the configured increase in application deployments.
 
 ### What is the backing store?
 
-The backing store is a persistence store that your Kubernetes cluster uses to store the complete configuration of a Kubernetes cluster. Kubernetes uses a high-availability distributed reliable key-value store called `etcd`. This key-value store stores the current state as well as the desired state of all objects within your cluster.
+The backing store is a persistence store that your Kubernetes cluster uses to store the complete configuration of a Kubernetes cluster. Kubernetes uses a high-availability, distributed, and reliable key-value store called `etcd`. This key-value store stores the current state as well as the desired state of all objects within your cluster.
 
 Keep in mind that `etcd` isn't responsible for data backup. It's your responsibility to ensure that an effective backup plan is in place to back up the `etcd` data.
 
@@ -70,11 +70,11 @@ The scheduler is the component that's responsible for the assignment of workload
 
 The controller manager is responsible for launching and monitoring the controllers configured for a cluster through the API server.
 
-Kubernetes makes use of controllers to track the state of objects in the cluster. Each controller runs in a non-terminating loop while watching and responding to events in the cluster. For example, there are controllers to monitor nodes, containers, and endpoints.
+Kubernetes uses controllers to track the state of objects in the cluster. Each controller runs in a non-terminating loop while watching and responding to events in the cluster. For example, there are controllers to monitor nodes, containers, and endpoints.
 
 The controller communicates with the API server to determine the state of the object. If the current state is different from the wanted state of the object, then the controller will take action to ensure the wanted state.
 
-Let's assume that one of three containers running in your cluster stops responding and has died. In this case, a controller decides whether it's required to launch new containers to ensure that your applications are always available. If the wanted state is to run three containers at any time, then a new container is scheduled to run.
+Let's assume that one of three containers running in your cluster stops responding and has died. In this case, a controller decides whether you need to launch new containers to ensure that your applications are always available. If the wanted state is to run three containers at any time, then a new container is scheduled to run.
 
 #### What is the cloud controller manager?
 
@@ -91,21 +91,21 @@ The following services make up a node in a Kubernetes cluster:
 - Kube-proxy
 - Container runtime
 
-### What is kubelet?
+### What is the kubelet?
 
-Kubelet is the agent that runs on each node in the cluster and monitors work requests from the API server. It makes sure that the requested unit of work is running and healthy.
+The kubelet is the agent that runs on each node in the cluster and monitors work requests from the API server. It makes sure that the requested unit of work is running and healthy.
 
-Kubelet monitors the nodes and makes sure that the containers scheduled on each node run as expected. Kubelet manages only containers created by Kubernetes. It isn't responsible for rescheduling work to run on other nodes if the current node can't run the work.
+The kubelet monitors the nodes and makes sure that the containers scheduled on each node run as expected. The kubelet manages only containers created by Kubernetes. It isn't responsible for rescheduling work to run on other nodes if the current node can't run the work.
 
 ### What is kube-proxy?
 
-Kube-proxy is responsible for local cluster networking and runs on each node. It makes sure that each node has a unique IP address. Kube-proxy also implements rules to handle routing and load balancing of traffic by using iptables and IPVS. 
+The kube-proxy component is responsible for local cluster networking and runs on each node. It makes sure that each node has a unique IP address. It also implements rules to handle routing and load balancing of traffic by using iptables and IPVS. 
 
-Kube-proxy doesn't provide DNS services by itself. A DNS cluster add-on based on CoreDNS is recommended and installed by default.
+This proxy doesn't provide DNS services by itself. A DNS cluster add-on based on CoreDNS is recommended and installed by default.
 
 ### What is the container runtime?
 
-The container runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, rkt, CRI-O, containerd, and frakti. The support for many container runtime types is based on the Container Runtime Interface (CRI). The CRI is a plug-in design that  allows kubelet to communicate with the available container runtime.
+The container runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, rkt, CRI-O, containerd, and frakti. The support for many container runtime types is based on the Container Runtime Interface (CRI). The CRI is a plug-in design that allows the kubelet to communicate with the available container runtime.
 
 The default container runtime in Azure Kubernetes Service is Docker. However, you can also use Kata Containers and containerd. Keep in mind that the Windows support for containerd is experimental.
 
@@ -141,7 +141,7 @@ Assume that your site uses a database. The website is packaged in the main conta
 
 Because you can potentially create many pods that are running on many nodes, it can be hard to identify them. You recognize and group pods by using string labels that you specify when you define a pod.
 
-### The life cycle of a Kubernetes pod
+### Life cycle of a Kubernetes pod
 
 Kubernetes pods have a distinct life cycle that affects the way you deploy, run, and update pods.
 
@@ -165,10 +165,10 @@ The cluster doesn't save the pod's state or dynamically assigned configuration. 
 
 ### Container states
 
-Keep in mind that the phases are a summary of where the pod is in its life cycle. When you inspect pods, there are three states that the cluster uses to track your containers inside the pod.
+Keep in mind that the phases are a summary of where the pod is in its life cycle. When you inspect a pod, the cluster uses three states to track your containers inside the pod.
 
 |||
 |---|---|
-| Waiting | The default state of a container and the state that the container is in when it's not running or terminated.|
+| Waiting | This is the default state of a container and the state that the container is in when it's not running or terminated.|
 | Running | The container is running as expected without any problems. |
 | Terminated | The container is no longer running. The reason is that either all tasks finished or the container failed for some reason. A reason and exit code are available for debugging both cases. |

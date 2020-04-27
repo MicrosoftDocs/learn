@@ -3,17 +3,11 @@ Our goal was to help you evaluate whether Kubernetes would be a good choice as a
 You saw how Kubernetes provides for:
 
 - Deployment of containers.
-
 - Self-healing of containers.
-
 - Dynamically scaling container count up or down.
-
 - Automated rolling updates and rollbacks of containers.
-
 - Management of storage.
-
 - Management of network traffic.
-
 - Storage and management of sensitive information such as usernames and passwords.
 
 You were looking for a container orchestration platform to deploy and manage your drone tracking solution into new customer regions. You now understand how Kubernetes can help you develop, deploy, and manage applications in your container environment.

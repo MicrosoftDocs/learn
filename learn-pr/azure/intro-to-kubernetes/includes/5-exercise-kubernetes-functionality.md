@@ -1,4 +1,4 @@
-There are several options available when you're running Kubernetes locally. Recall that you can install Kubernetes on physical machines or VMs, or use a cloud-based solution such as Azure Kubernetes Service (AKS). 
+Several options are available when you're running Kubernetes locally. Recall that you can install Kubernetes on physical machines or VMs, or use a cloud-based solution such as Azure Kubernetes Service (AKS). 
 
 Your goal in this exercise is to explore a Kubernetes installation and explore a single-node Kubernetes cluster. You're going to configure a MicroK8s environment that's easy to set up and tear down. Then you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
 
@@ -9,7 +9,7 @@ Keep in mind that there are other options, such as MiniKube and Kubernetes suppo
 
 ## What is MicroK8s?
 
-MicroK8s allows you to deploy a single-node Kubernetes cluster as a single package to target workstations and Internet of Things (IoT) devices. Canonical, the creator of Ubuntu Linux, originally developed and maintains MicroK8s.
+MicroK8s is an option for deploying a single-node Kubernetes cluster as a single package to target workstations and Internet of Things (IoT) devices. Canonical, the creator of Ubuntu Linux, originally developed and maintains MicroK8s.
 
 You can install MicroK8s on Linux, Windows, and macOS. However, installation instructions are slightly different for each operating system. Choose the option that best fits your environment.
 
@@ -131,7 +131,7 @@ You can use the status command in MicroK8s to view the status of the installed a
     sudo microk8s.status --wait-ready
     ```
 
-    Notice that you can enable several add-ons on your cluster. Don't worry about the add-ons you don't recognize. You'll enable only three of these add-ons in your cluster.
+    Notice that you can enable several add-ons on your cluster. Don't worry about the add-ons that you don't recognize. You'll enable only three of these add-ons in your cluster.
 
     ```output
     ubuntu@microk8s-vm:~$ sudo microk8s.status --wait-ready
@@ -177,9 +177,9 @@ You're now ready to access your cluster by using `kubectl`.
 
 ## Explore the Kubernetes cluster
 
-MicroK8s provides a version of `kubectl` that you can use to interact with your new Kubernetes cluster. This copy of `kubectl` allows you to have a parallel installation of another system-wide `kubectl` instance without affecting its functionality. You can alias the command by running the `snap alias` command to simplify usage.
+MicroK8s provides a version of `kubectl` that you can use to interact with your new Kubernetes cluster. This copy of `kubectl` allows you to have a parallel installation of another system-wide `kubectl` instance without affecting its functionality.
 
-1. Run the `snap alias` command to alias `microk8s.kubectl` to `kubectl`.
+1. Run the `snap alias` command to alias `microk8s.kubectl` to `kubectl`. This step simplifies usage.
 
     ```bash
     sudo snap alias microk8s.kubectl kubectl
@@ -318,7 +318,7 @@ Even though the use of `kubectl` is handy, using manifest files is a best practi
 
 ### Test the website installation
 
-Test the NGINX installation by connecting to the web server by using the pod's IP address.
+Test the NGINX installation by connecting to the web server through the pod's IP address.
 
 1.  Use the  `-o wide` parameter to find the address of the pod.
 

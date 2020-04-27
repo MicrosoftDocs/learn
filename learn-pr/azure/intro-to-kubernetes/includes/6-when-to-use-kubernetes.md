@@ -16,7 +16,7 @@ The solution is built as microservices that are designed as loosely coupled, col
 
 - A NoSQL database that stores processed tracking data and user information captured from the website and the data processing service
 
-Separate teams in your company develop and own these services. Each team uses containers to build and deploy its service. This new strategy for application development allows the development teams to keep up with the requirements of modern software development for automation, testing, and overall stability and quality of software.
+Separate teams in your company develop and own these services. Each team uses containers to build and deploy its service. This new strategy allows the development teams to keep up with the requirements of modern software development for automation, testing, and overall stability and quality.
 
 The change in developer thinking has resulted in several process and business benefits for the company. Examples include better use of hosted compute resources, new features that have improved time to market, and improved customer reach.
 
@@ -44,4 +44,4 @@ Kubernetes can introduce many business benefits for software development, deploy
 
 Your development teams will have to embrace modern design concepts when developing and designing applications. These concepts include the use of microservices and the containerization of these services. Teams also have to experiment with container and orchestration environments to make the best use of all the available options.
 
-If your company isn't ready to adopt this change, then Kubernetes may not be a good fit for your company.
+If your company isn't ready to adopt this change, then Kubernetes might not be a good fit for your company.

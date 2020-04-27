@@ -89,7 +89,7 @@ In the drone tracking application, network communication is as follows:
 
 - The website and RESTful API are accessible to users outside the cluster.
 
-- The in-memory cache and message queue services are accessible to the front-end and RESTful API, respectively, but not to external users.
+- The in-memory cache and message queue services are accessible to the front end and the RESTful API, respectively, but not to external users.
 
 - The message queue needs access to the data processing service, but not to external users.
 
@@ -99,7 +99,7 @@ To support these scenarios, you can configure three types of services to expose 
 
 |||
 |---|---|
-| **ClusterIP** | The address assigned to a service that makes the service available to a set of services inside the cluster. For example, communication between the front and back-end components of your application. |
+| **ClusterIP** | The address assigned to a service that makes the service available to a set of services inside the cluster. For example, communication between the front-end and back-end components of your application. |
 | **NodePort** | The node port, between 30000 and 32767, that the Kubernetes control plane assigns to the service. An example is 192.169.1.11 on clusters01. You then configure the service with a target port on the pod that you want to expose. For example, configure port 80 on the pod running one of the front ends. You can now access the front end through a node IP and port address.  |
 | **LoadBalancer** | The load balancer that allows for the distribution of load between nodes running your application and exposing the pod to public network access. You typically configure load balancers when you use cloud providers. In this case, traffic from the external load balancer is directed to the pods running your application. |
 
@@ -117,9 +117,9 @@ For example, assume that you have many running pods. Only a few of these pods ar
 
 ### Kubernetes storage
 
-Kubernetes makes use of the same storage volume concept that you find when using Docker. Docker volumes are less managed than the Kubernetes volumes because Docker volume lifetimes aren't managed. The Kubernetes volume's lifetime is an explicit lifetime that matches the pod's lifetime. This lifetime match means a volume outlives the containers that run in the pod. However, if the pod is removed, so is the volume.
+Kubernetes uses the same storage volume concept that you find when using Docker. Docker volumes are less managed than the Kubernetes volumes because Docker volume lifetimes aren't managed. The Kubernetes volume's lifetime is an explicit lifetime that matches the pod's lifetime. This lifetime match means a volume outlives the containers that run in the pod. However, if the pod is removed, so is the volume.
 
-Kubernetes provides options to provision persistent storage with the use of *PersistentVolumes*. You're also allowed to request specific storage for pods by using *PersistentVolumeClaims*.
+Kubernetes provides options to provision persistent storage with the use of *PersistentVolumes*. You can also request specific storage for pods by using *PersistentVolumeClaims*.
 
 Keep both of these options in mind when you're deploying application components that require persisted storage like message queues and databases.
 

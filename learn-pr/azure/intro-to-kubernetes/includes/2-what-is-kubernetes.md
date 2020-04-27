@@ -1,6 +1,4 @@
-Let's start with a few definitions that we'll use before our tour into Kubernetes. This overview should help you decide whether Kubernetes might be a good fit for your containerization management strategy.
-
-Before we look at what Kubernetes is, let's summarize a few concepts that are key to the applications that you develop and deploy to Kubernetes.
+Before we look at what Kubernetes is, let's summarize a few concepts that are key to the applications that you develop and deploy to Kubernetes. This overview should help you decide whether Kubernetes might be a good fit for your containerization management strategy.
 
 ### What is a container?
 
@@ -40,13 +38,13 @@ Container orchestration is a concept that describes all the tasks that you or a 
 
 ### What is a cloud-native application?
 
-A cloud-native application is an application that's designed and built to take advantage of services such as autoscaling, rolling updates, self-healing, and the other tasks listed earlier. These applications run in, and are managed in, an orchestration platform such as Kubernetes. 
+A cloud-native application is designed and built to take advantage of services such as autoscaling, rolling updates, self-healing, and the other tasks listed earlier. These applications run in, and are managed in, an orchestration platform such as Kubernetes. 
 
 A cloud-native application isn't limited to running in public or private cloud environments. It can also run in a hybrid cloud and in on-premises datacenters.
 
 ### What is a microservices application?
 
-A microservices application is an application that's designed and structured as loosely coupled collaborative services. These services are deployed separately from each other to simplify the design and maintenance of large applications. The services typically communicate over RESTful APIs, or over services that are Advanced Message Queuing Protocol (AMQP) enabled. A microservice-designed application forms an important part of cloud-native applications.
+A microservices application is designed and structured as loosely coupled collaborative services. These services are deployed separately from each other to simplify the design and maintenance of large applications. The services typically communicate over RESTful APIs, or over services that are Advanced Message Queuing Protocol (AMQP) enabled. A microservice-designed application forms an important part of cloud-native applications.
 
 In the drone tracking example, each of the components is easily identifiable as a microservice. Each service can be deployed, updated, and scaled independently from the other.
 
@@ -90,7 +88,7 @@ With Kubernetes, you can view your datacenter as one large computer. You don't w
 
 You're responsible for maintaining your Kubernetes environment. For example, you need to manage OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
 
-Cloud services such Azure Kubernetes Service (AKS) greatly reduce these challenges by providing a hosted Kubernetes environment. These services also simplify the deployment and management of containerized applications in Azure. With AKS, we get the benefits of open-source Kubernetes without the complexity or operational overhead compared to running our own custom Kubernetes cluster.
+Cloud services such Azure Kubernetes Service (AKS) reduce these challenges by providing a hosted Kubernetes environment. These services also simplify the deployment and management of containerized applications in Azure. With AKS, you get the benefits of open-source Kubernetes without the complexity or operational overhead of running your own custom Kubernetes cluster.
 
 > [!NOTE]
 > Kubernetes is sometimes abbreviated to *K8s*. The 8 represents the eight characters between the K and the s of the word K[*ubernete*]s.
