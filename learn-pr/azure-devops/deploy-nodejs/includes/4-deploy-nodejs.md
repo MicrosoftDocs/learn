@@ -11,7 +11,7 @@ In this part, you:
 
 ## Install the Azure Pipelines extension
 
-Here you install the Azure Pipelines extension for your GitHub repository. This extension enables Azure Pipelines to access your GitHub account.
+Here you install the Azure Pipelines extension for your GitHub repository. This extension enables Azure Pipelines to access your GitHub account so that it can pull the latest source code from your repository.
 
 1. Go to the [GitHub Marketplace](https://github.com/marketplace?azure-portal=true).
 1. Search for **Azure Pipelines** and select the **Azure Pipelines** result.
@@ -38,7 +38,7 @@ The previous task links your GitHub repository to your Azure DevOps account. To 
 
 ## Create the pipeline
 
-Here you create a CI/CD pipeline by using one of the built-in templates. The process generates a pipelines configuration file named *azure-pipelines.yml*, which lives in the root directory of your Git repository.
+Here you create a CI/CD pipeline in Azure Pipelines by using one of the built-in templates. The process generates a pipelines configuration file named *azure-pipelines.yml*, which lives in the root directory of your Git repository.
 
 1. In Azure DevOps, go to your **nodejs-hello-world** project.
 1. Select **Pipelines**, either from the project page or from the left pane.
@@ -68,11 +68,15 @@ The pipeline is configured to run whenever a change is committed to the `master`
 
 ### Pipeline variables
 
-To aid in pipeline maintenance, the default template uses variables for commonly-used parameters, such as the name of the service connection string used to connect to Azure. You can also import variables from pipeline libraries that are managed outside of the pipeline itself. Here's an example. The values you see will be specific to your Azure subscription.
+To aid in pipeline maintenance, the default template uses variables for commonly-used parameters, such as the name of the service connection string used to connect to Azure. A service connection provides secure access to your Azure subscription from Azure Pipelines.
+
+You can also import variables from pipeline libraries that are managed outside of the pipeline itself. Here's an example. The values you see will be specific to your Azure subscription.
 
 [!code-yml[](code/4-2-azure-pipelines.yml)]
 
 ### The Build stage
+
+A _stage_ is a part of the pipeline that can run independently and be triggered by different mechanisms. For example, you might have one stage that builds the application, a second stage that deploys to a pre-production environment, and a final stage that deploys to production.
 
 This pipeline is divided into two stages: *Build* and *Deploy*. The *Build* stage configures and performs the build tasks, which includes publishing the build artifact (a *.zip* file) to artifact storage.
 
@@ -96,9 +100,11 @@ After the build completes, the `ArchiveFiles@2` task packages the build output a
 
 [!code-yml[](code/4-6-azure-pipelines.yml)]
 
+You don't need to provide your own storage for build artifacts. Azure Pipelines holds the results of your builds based on the configured retention policy. To learn more, see [Build and release retention policies](https://docs.microsoft.com/azure/devops/pipelines/policies/retention?view=azure-devops&tabs=yaml&azure-portal=true).
+
 ### Deploying the build
 
-The second stage of the pipeline deploys the application to Azure. It depends on the *Build* stage completing successfully, after which it uses the pipeline's Azure service connection to deploy the app to the configured target.
+The second stage of the pipeline deploys the application to Azure. It depends on the *Build* stage completing successfully, after which it uses the pipeline's Azure service connection to deploy the app to the configured target. This projects deploys the app to Azure App Service.
 
 [!code-yml[](code/4-7-azure-pipelines.yml)]
 
@@ -113,7 +119,7 @@ The `AzureWebApp@1` task deploys web apps to Azure App Service. It's a very flex
 * `package` specifies the path to the package to be deployed.
 * `startUpCommand` specifies the startup command to run after the app has been deployed, which is required for Linux deployments.
 
-You can learn more about the flexibility of this task in the official docs for the [Azure Web App task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?azure-portal=true)
+You can learn more about the flexibility of this task in the [Azure Web App task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?azure-portal=true) documentation.
 
 ## Save the pipeline to trigger a build and release
 

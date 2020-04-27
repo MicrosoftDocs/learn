@@ -5,7 +5,7 @@ To accomplish these goals, you:
 > [!div class="checklist"]
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
 > * Fork and clone a GitHub repo that contains a basic Node.js app.
-> * Create the Azure App Service using the Azure CLI in Azure Cloud Shell.
+> * Create the Azure App Service by using the Azure CLI in Azure Cloud Shell.
 
 ## Add a user to Azure DevOps
 
