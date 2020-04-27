@@ -1,14 +1,10 @@
-Your web app doesn't have an API yet. But that changes now as the time has come for you to create an API for your shopping list app.
-
-But before you can publish your API with your web app to Azure Static Web Apps, you need to create your API.
+Now as the time has come for you to create an API for your shopping list app. But before you can publish your API with your web app to Azure Static Web Apps, you need to create your API.
 
 ## Azure Functions
 
-One of the greatest benefits of Azure Static Web Apps is that it can host your web app and an API built with Azure Functions, together!
+One of the greatest benefits of Azure Static Web Apps is that it can host your web app and an API built with Azure Functions, together! your web app is globally distributed and your back-end won't require a full server to configure and maintain. This is the sweet spot for Azure Static Web Apps: you get the ease of publishing your app and API with minimal configuration and maintenance!
 
-Azure Functions provides automatic scaling out and scaling in based on demand. This makes Azure Functions a great API partner for a web app that serves static assets.
-
-Your shopping list app will pair with an Azure Functions project to host the shopping list API.
+Azure Functions provides automatic scaling out and scaling in based on demand. This makes Azure Functions a great API partner for your shopping list web app that serves static assets.
 
 ### Your shopping list API
 
@@ -27,11 +23,12 @@ Here are the four endpoints that you'll create:
 
 ### Create an API for the web app
 
-You'll need to create an Azure Functions project for your API. Then you'll set up your HTTP endpoints for your shopping list app.
+You'll need an Azure Functions project for your API, with your HTTP endpoints for your shopping list app. Your repository has an **api** branch that contains an Azure Functions project and HTTP endpoints for PUT, POST, and DELETE of your products.
 
 You'll follow these steps to connect your front-end web app with a serverless back-end API:
 
-1. Create the Azure Function project
+1. Switch (checkout) your **api** branch
+1. Explore the Azure Function project
 1. Create the HTTP GET function
 1. Configure the route's endpoint
 1. Refactor the function logic to get products
