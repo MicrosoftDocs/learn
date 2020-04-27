@@ -34,9 +34,11 @@ You will note that the "desired" properties are empty for this new device.
 
 1. On the **Runtime Settings** pane, locate the **Store and forward configuration - time to live (seconds)** field for the **Edge Hub** module, then change the value to 1209600, which specifies a message time to live of two weeks on the IoT Edge Device.
 
-    **Note:** There are several considerations to make when configuring the Message Time-to-Live (TTL) for the Edge Hub ($edgeHub) module. When the IoT Edge Device is disconnected, the messages are stored on the local device. You need to calculate how much data will be stored during the TTL period, and make sure there is enough storage on the device for that much data. The amount of storage and TTL configured will need to meet the solutions requirements so that important data is not lost; if possible.
+    >[!NOTE]
+    >There are several considerations to make when configuring the Message Time-to-Live (TTL) for the Edge Hub ($edgeHub) module. When the IoT Edge Device is disconnected, the messages are stored on the local device. You need to calculate how much data will be stored during the TTL period, and make sure there is enough storage on the device for that much data. The amount of storage and TTL configured will need to meet the solutions requirements so that important data is not lost; if possible.
 
-    **Note:** If the device does not have enough storage, then you need to configure a shorter TTL. Once the age of a message reaches the TTL time limit, it will be deleted if it has not yet been sent to Azure IoT Hub.
+    >[!NOTE]
+    >If the device does not have enough storage, then you need to configure a shorter TTL. Once the age of a message reaches the TTL time limit, it will be deleted if it has not yet been sent to Azure IoT Hub.
 
 1. The IoT Edge Device will automatically be able to store messages when in a disconnected / offline state. However, this location can be overridden by configuring a HostConfig.Binds setting.
 
@@ -111,7 +113,8 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
 
 1. When prompted with "Are you sure you want to continue connecting?", type yes and press Enter. 
 
-    **Note:** This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections, and is only prompted on the first connection.
+    >[!NOTE]
+    >This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections, and is only prompted on the first connection.
 
 1. Enter the Administrator password, when prompted to enter the password, that was entered when the VM was provisioned.
 
