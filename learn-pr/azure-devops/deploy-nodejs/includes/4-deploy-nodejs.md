@@ -22,7 +22,7 @@ Here you install the Azure Pipelines extension for your GitHub repository. This 
 
 ## Set up an Azure DevOps project
 
-The previous task links your GitHub repository to your Azure DevOps account. To complete the process, you now create an Azure DevOps project.
+The previous task links your GitHub repository to your Azure DevOps organization. To complete the process, you now create an Azure DevOps project.
 
 1. Sign into your account at [dev.azure.com](https://dev.azure.com).
 1. Select **+ New project**.
@@ -127,7 +127,7 @@ You can learn more about the flexibility of this task in the [Azure Web App task
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, select the web site's deploy task and click the URL to view the deployed site.
 
-    ![Locating the web site URL in Azure Piplines](../media/4-deploy-url.png)
+    ![Locating the web site URL in Azure Pipelines](../media/4-deploy-url.png)
 
 1. You see the site running on App Service.
 
