@@ -4,10 +4,7 @@ You want to build a ML model that will identify the birds to help with gathering
 
 In this module, you will use Azure Cognitive Services Custom Vision to create a model to identify species of birds, in all their variety. Learning more about birds is a great way to educate yourself and others about natural phenomena in your local area.
 
-Data provided by the Cornell Lab of Ornithology, with thanks to photographers and
-contributors of crowd sourced data at AllAboutBirds.org/Labs. This material is based upon work
-supported by the National Science Foundation under Grant No. 1010818.”
-[Link to Full NA Birds Dataset From Cornell](https://dl.allaboutbirds.org/nabirds). We will provide a zip of a subset of this data in the get data step of this module.
+Data provided by the Cornell Lab of Ornithology, with a special thanks to photographers, contributors, and visitors to the [All About Birds website](https://www.allaboutbirds.org/news/). This material is based upon work supported by the National Science Foundation under Grant No. 1010818. This module includes a subset of the full dataset. To access the full dataset, please visit [this site](https://dl.allaboutbirds.org/nabirds), and please refer to [this paper](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Horn_Building_a_Bird_2015_CVPR_paper.pdf) for specific dataset details.
 
 ## Learning objectives
 
