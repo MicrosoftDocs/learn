@@ -24,6 +24,7 @@ roles:
 - developer
 - solution-architect
 - security-engineer
+- administrator
 products:
 - azure
 - azure-virtual-machines
@@ -36,6 +37,7 @@ units:
 - learn.secure-your-azure-virtual-machine-disks.4-exercise-encrypt-existing-vm-disks
 - learn.secure-your-azure-virtual-machine-disks.5-automate-secure-vm-deployments-using-arm-templates
 - learn.secure-your-azure-virtual-machine-disks.6-exercise-use-arm-template-to-decrypt-vm
+- learn.secure-your-azure-virtual-machine-disks.knowledge-check
 - learn.secure-your-azure-virtual-machine-disks.7-summary
 badge:
   uid: learn.secure-your-azure-virtual-machine-disks.badge

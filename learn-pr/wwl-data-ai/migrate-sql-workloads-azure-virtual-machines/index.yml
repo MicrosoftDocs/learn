@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines
+metadata:
+  title: Migrate SQL workloads to Azure virtual machines
+  description: "Migrate SQL workloads to Azure virtual machines"
+  ms.date: 03/31/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate SQL workloads to Azure virtual machines
+summary: Learners will be able to demonstrate the benefits and processes for moving a SQL Server database to an Azure virtual machine.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Choose the right options when you run your SQL workloads on Azure Virtual Machines
+  - Explore migration options when moving SQL Server workload to an Azure Virtual Machine
+  - Configure and optimize your applications
+prerequisites: |
+  - Understand SQL Server Database file administration
+  - Successfully login to the Azure portal
+  - Understand the Azure storage options
+  - Understand the Azure compute options
+iconUrl: /learn/achievements/migrate-sql-workloads-to-azure-virtual-machines.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure
+- azure-virtual-machines
+- sql-server
+units:
+- learn-wwl.migrate-sql-workloads-azure-virtual-machines.introduction
+- learn-wwl.migrate-sql-workloads-azure-virtual-machines.considerations-sql-server-azure-virtual-machine-migrations
+- learn-wwl.migrate-sql-workloads-azure-virtual-machines.sql-workloads-azure-virtual-machine-migration-options
+- learn-wwl.migrate-sql-workloads-azure-virtual-machines.application-configuration-optimization
+- learn-wwl.migrate-sql-workloads-azure-virtual-machines.summary
+badge:
+  uid: learn-wwl.migrate-sql-workloads-to-azure-virtual-machines.badge

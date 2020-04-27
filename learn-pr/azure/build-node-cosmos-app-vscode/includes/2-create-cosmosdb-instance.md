@@ -61,4 +61,4 @@ You install the extension from the Extensions Marketplace for VS Code.
 
 The Cosmos DB extension provides a graphical user interface that is integrated with VS Code. Using the extension, you can create, delete, and manage Cosmos DB accounts, databases, containers, and documents.
 
-![The Cosmos DB extension in VS Code](../media/2-cosmosdb-extension.png)
+:::image type="content" source="../media/2-cosmosdb-extension.png" alt-text="Screenshot of the Cosmos DB extension in VS Code as user right-clicks on the Documents node for a contextual menu to create a new document." loc-scope="vs-code":::

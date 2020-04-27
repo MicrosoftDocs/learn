@@ -2,9 +2,9 @@
 uid: learn.cmu-cloud-admin.cmu-cloud-admin-basics
 metadata:
   title: Cloud administration basics
-  description: The first learning path in a course on Cloud Administration from Carnegie Mellon University. Learn about the basics of the cloud, including the history, building blocks, and types of services, in preparation for real-world cloud practice on Azure.
+  description: The first learning path in a course on Cloud Administration from Carnegie Mellon University. Learn about the basics of the cloud, including the history, building blocks, and types of services, in preparation for real-world cloud practice on Azure. 
   brand: azure
-  ms.date: 12/01/2019
+  ms.date: 02/20/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -22,9 +22,9 @@ summary: |
     - Know the economic benefits of the cloud
     - Understand digital identity, and how digital identities can be shared and secured
 
-  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
-prerequisites: none
-#placeholder
+
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: None.
 iconUrl: /learn/achievements/cmu-cloud-admin/cmu-cloud-admin-basics.svg
 levels:
 - beginner
@@ -37,5 +37,6 @@ modules:
 - learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview
 - learn.cmu-cloud-admin.cloud-admin-provision-manage
 - learn.cmu-cloud-admin.secure-cloud-resources
+
 trophy:
   uid: learn.cmu-cloud-admin.cmu-cloud-admin-basics.trophy

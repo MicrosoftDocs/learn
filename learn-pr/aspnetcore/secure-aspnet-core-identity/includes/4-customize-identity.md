@@ -27,7 +27,7 @@ UI changes are also required to collect the additional user profile information.
     > Run the following command from the project root to view valid values for the `--files` option:
     >
     > ```dotnetcli
-    > dotnet aspnet-codegenerator identity --listFiles --force
+    > dotnet aspnet-codegenerator identity --listFiles
     > ```
 
     The following files are added to the *:::no-loc text="Areas/Identity":::* directory:
@@ -264,15 +264,15 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
 
         [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_firstandlastnameinputmodel&highlight=3-6,8-11)]
 
-    1. Incorporate the highlighted changes in the `OnGetAsync` method:
+    1. Incorporate the highlighted changes in the `LoadAsync` method:
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_ongetasync&highlight=18-20)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_loadasync&highlight=10-12)]
 
         The preceding code supports retrieving the first and last names for display in the corresponding text boxes of the profile management form.
 
     1. Incorporate the highlighted changes in the `OnPostAsync` method. Save your changes.
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_onpostasync&highlight=14-16)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_onpostasync&highlight=15-17)]
 
         The preceding code supports updating the first and last names in the database's `AspNetUsers` table.
 

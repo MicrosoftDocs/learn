@@ -36,7 +36,7 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
 
     Make sure you installed all three packages successfully before proceeding with this exercise.
 
-1. Open the editor with the following command.
+1. Open the Cloud Shell editor with the following command.
 
     ```azurecli
     code .

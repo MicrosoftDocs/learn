@@ -10,3 +10,8 @@ We can build on many of the things we did in this module to make our `ListView` 
 - Customize rows and change the height of rows at runtime.
 - Add context menus to rows.
 - Enable pull-to-refresh.
+
+## Learn more with a Channel 9 video series
+
+- [Xamarin Tutorial 101](https://channel9.msdn.com/Series/Xamarin-101/?WT.mc_id=Educationalmobile-c9-niner&azure-portal=true)
+- [Intro to Visual Studio for Mac](https://channel9.msdn.com/Series/Intro-to-Visual-Studio-for-Mac?azure-portal=true)

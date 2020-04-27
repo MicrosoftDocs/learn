@@ -18,7 +18,7 @@ Which ever way you choose to search your content, you need to know the following
 
 A query request is a list or words (search terms) and query operators (simple or full) of what you would like to see returned in a result set. If you're using the REST API, you'll need the following information.
 
-- **The service endpoint and index collection:** Usually the URL such as <https://(your-service-name).search.windows.net/indexes/(your-index-name)/docs>.
+- **The service endpoint and index collection:** Usually the URL such as `https://(your-service-name).search.windows.net/indexes/(your-index-name)/docs`.
 - **The API version:** Enables you to choose which version to send the request to.
 - **An API Key:** Used to authenticate the request.
 - **A query type:** - One of two choices either simple or full, simple syntax is the default option.
@@ -135,7 +135,7 @@ Your marketing team have asked to add more descriptive text for each video. They
 
 Your web developers would like to provide a sidebar on the search page to allow your customers to filter the results based on their tags. They need to have a list of the tags on videos, and the total number of videos with that tag, to add drill down capabilities.
 
-![An example of faceted browsing of results](../media/facet-results.png)
+:::image type="content" source="../media/facet-results.png" alt-text="An example of faceted browsing of results." loc-scope="other"::: <!-- no-loc -->
 
 `&facet=fieldname`: Returns a facet structure in the JSON results for the specified field. For example `&facet=Tags` includes an array in the results. This array could be used by the website, allowing users to select the length of videos.
 

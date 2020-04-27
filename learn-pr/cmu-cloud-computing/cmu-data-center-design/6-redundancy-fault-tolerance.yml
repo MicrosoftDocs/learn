@@ -1,0 +1,35 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design.6-redundancy-fault-tolerance
+title: Redundancy
+metadata:
+  title: Redundancy and fault tolerance
+  description: Redundancy and fault tolerance
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-redundancy-fault-tolerance.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Converted text field into multiple choice answers
+  - content: "Last year, because of a combined power outage and generator failure, your datacenter was down for 4 hours. What was your availability for 2014 (assume 365 days in a year, answer correct to four decimal places)?"
+    choices:
+    - content: "97.9982%"
+      isCorrect: false
+      explanation: "Incorrect. The answer can be calculated as: 1 - (4 / total hours in year). The answer is 99.9543%."
+    - content: "98.6835%"
+      isCorrect: false
+      explanation: "Incorrect. The answer can be calculated as: 1 - (4 / total hours in year). The answer is 99.9543%."
+    - content: "99.9543%"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "99.5002%"
+      isCorrect: false
+      explanation: "Incorrect. The answer can be calculated as: 1 - (4 / total hours in year). The answer is 99.9543%."
+      

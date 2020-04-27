@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements
+metadata:
+  title: Create a threat model using data-flow diagram elements
+  description: Data-flow diagrams are graphical representations of your system and should specify each element, their interactions and context.
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+title: Create a threat model using data-flow diagram elements
+summary: Data-flow diagrams are graphical representations of your system and should specify each element, their interactions and helpful context.
+abstract: |
+    In this module, you will be able to:
+    - Distinguish between the shape and function of each element
+    - Include the right context for an element when creating a data-flow diagram
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- solution-architect
+products:
+- azure-iot-security-center
+- azure-security-center
+- m365-security-center
+- m365-ems-cloud-app-security
+units:
+- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.1-introduction
+- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.1b-elements
+- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.2-process-the-task-element
+- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.3-data-store-the-storage-element
+- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.4-external-entity-the-no-control-element
+- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.5-data-flow-the-data-in-transit-element
+- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.6-trust-boundary-the-trust-zone-change-element
+- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.7-summary
+badge:
+  uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.badge

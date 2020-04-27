@@ -20,15 +20,13 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
     | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Name** | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
-    | **Runtime stack** | .NET Core 2.2 | The platform on which your application runs. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
-    | **Operating System** | Windows | The operating system used on the virtual servers that run your app. |
+    | **Runtime stack** | .NET Core 3.1 (LTS) | The platform on which your application runs. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
+    | **Operating System** | Linux | The operating system used on the virtual servers that run your app. |
     | **Region** | Central US | The geographical region from which your app will be hosted. |
-    | **Windows Service Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
+    | **Linux Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
     | **Sku and size** | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
 
     ![Screenshot showing web app creation details.](../media/3-create-web-app-dotnet.png)
-
-1. Navigate to the **Monitoring** tab at the top of the page and toggle **Enable Application Insights** to **No**.
 
 ::: zone-end
 
@@ -131,24 +129,26 @@ The portal will display the deployment page, where you can view the status of yo
 
 ::: zone pivot="csharp"
 
-![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-generic.png)
+:::image type="content" source="../media/3-web-app-online-generic.png" alt-text="Screenshot showing the newly created App Service in a browser." loc-scope="other":::
+
+Leave the browser tab with the new app's placeholder page open. You'll come back to it after you've deployed your app.
 
 ::: zone-end
 
 ::: zone pivot="java"
 
-![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-java.png)
+:::image type="content" source="../media/3-web-app-online-java.png" alt-text="Screenshot showing the newly created App Service in a browser." loc-scope="other":::
 
 ::: zone-end
 
 ::: zone pivot="node"
 
-![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-node.png)
+:::image type="content" source="../media/3-web-app-online-node.png" alt-text="Screenshot showing the newly created App Service in a browser." loc-scope="other":::
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-python.png)
+:::image type="content" source="../media/3-web-app-online-python.png" alt-text="Screenshot showing the newly created App Service in a browser." loc-scope="other":::
 
 ::: zone-end

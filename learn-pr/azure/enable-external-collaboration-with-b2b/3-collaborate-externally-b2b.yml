@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-external-collaboration-with-b2b.3-collaborate-externally-b2b
+metadata:
+  title: Collaborate with external users through Azure AD B2B
+  description: Collaborate with external users through Azure AD B2B
+  ms.date: 03/12/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Collaborate with external users through Azure AD B2B
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-collaborate-externally-b2b.md)]

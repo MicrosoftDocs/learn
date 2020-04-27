@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-lighthouse.3-prepare-for-azure-lighthouse
+metadata:
+  title: Preparing for Azure Lighthouse
+  description: You'll cover the broader concepts around setting up an Azure Lighthouse, and the roles of users and tenants
+  ms.date: 01/08/20120
+  author: iankensey
+  ms.author: v-geo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Setting up Azure Lighthouse
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-prepare-for-azure-lighthouse.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'When creating and assigning roles what is the best practice?'
+    choices:
+    - content: Avoid restricting your users control over your onboarded customers.
+      isCorrect: false
+      explanation: That's incorrect. Roles should be allocated based on the type of service offer you're making.
+    - content: Avoid using the Contributor roles.
+      isCorrect: false
+      explanation: That's incorrect. Roles should be allocated based on the type of service offer you're making.
+    - content: Avoid assigning individual users to a role.
+      isCorrect: true
+      explanation: That's correct. It is good practice to assign user groups to roles rather than individuals.
+  - content: 'When considering customer onboarding, which of these security considerations should you implement?'
+    choices:
+    - content: Rotate the schedule of service manager users to prevent over familiarity with the customers Azure estate.
+      isCorrect: false
+      explanation: That's incorrect. Using multi-factor authentication will limit the chance of an unauthorized user accessing an onboarded customers Azure instance.
+    - content: Carry out detailed background checks of all your staff who will manage your onboarded customers.
+      isCorrect: false
+      explanation: That's incorrect. Use MFA to validate 
+    - content: Implement multi-factor authentication for all users who will manage your onboarded customers.
+      isCorrect: true
+      explanation: That's correct. MFA ensures that only dedicated user can access your customers Azure estate. It's also a good practice to ask the customer to implement MFA on their Azure tenant.
