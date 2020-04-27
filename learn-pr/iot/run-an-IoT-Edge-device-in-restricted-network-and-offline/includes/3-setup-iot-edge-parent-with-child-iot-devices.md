@@ -67,8 +67,8 @@ If you have more than one Azure account, be sure that you are logged in with the
    ```bash
      az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id IoTEdgeGateway -o tsv
    ```
-
-    ***Note:*** Be sure to replace the AZ-220-HUB-_{YOUR-ID}_ IoT Hub name with the name of your Azure IoT Hub.
+    >[!NOTE]
+    >Be sure to replace the AZ-220-HUB-_{YOUR-ID}_ IoT Hub name with the name of your Azure IoT Hub.
 
     Notice the az iot hub device-identity show-connection-string command is called by passing in several parameters:
 
@@ -88,7 +88,8 @@ If you have more than one Azure account, be sure that you are logged in with the
       az iot hub device-identity create -n AZ-220-HUB-_{YOUR-ID}_ --device-id ChildDevice1 --pd IoTEdgeGateway
     ```
 
-    ***Note:*** Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub.
+    >[!NOTE]
+    >Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub.
 
     This command is passed the following parameters:
 
