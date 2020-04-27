@@ -29,12 +29,9 @@ Here you fork the GitHub repo required for this project. It's a basic "Hello Wor
 Here you create the App Service required to deploy the Node.js app.
 
 > [!IMPORTANT]
-> In this module, the [Clean up your Azure DevOps environment](/learn/modules/deploy-nodejs/5-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.
+> You need your own Azure subscription to complete the exercises in this module.
 
 In this module, you use the Azure CLI to spin up the Azure App Service that will host the Node.js app. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
-
-> [!IMPORTANT]
-> You need your own Azure subscription to complete the exercises in this module.
 
 ### Bring up Cloud Shell through the Azure portal
 
