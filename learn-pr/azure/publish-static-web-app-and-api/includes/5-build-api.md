@@ -1,10 +1,10 @@
-Your web app doesn't have an API at this point. Instead, your app is using mock data. Mock data is a great strategy that lets you develop a web app before an API exists. But now the time has come for you to create an API for your shopping list.
+Your web app doesn't have an API yet. But that changes now as the time has come for you to create an API for your shopping list app.
 
-One of the great benefits of Azure Static Web Apps is that it can host your web app and an API built with Azure Functions, together!
+But before you can publish your API with your web app to Azure Static Web Apps, you need to create your API.
 
 ## Azure Functions
 
-Your shopping list app needs to make HTTP requests to an API. So far your web app isn't using traditional servers. Rather it's serving the static file assets for HTML, CSS, and JavaScript. Now you must consider if your API will use traditional servers or a Serverless architecture with Azure Functions.
+One of the greatest benefits of Azure Static Web Apps is that it can host your web app and an API built with Azure Functions, together!
 
 Azure Functions provides automatic scaling out and scaling in based on demand. This makes Azure Functions a great API partner for a web app that serves static assets.
 
@@ -27,7 +27,9 @@ Here are the four endpoints that you'll create:
 
 ### Create an API for the web app
 
-You'll need to create an Azure Functions project for your API. Then you'll set up your HTTP endpoints for your shopping list app. You'll perform the following steps to connect your front-end web app with a serverless back-end API.
+You'll need to create an Azure Functions project for your API. Then you'll set up your HTTP endpoints for your shopping list app.
+
+You'll follow these steps to connect your front-end web app with a serverless back-end API:
 
 1. Create the Azure Function project
 1. Create the HTTP GET function
