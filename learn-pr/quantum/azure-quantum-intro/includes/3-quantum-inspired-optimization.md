@@ -171,8 +171,31 @@ The capacity to cross tall narrow barriers (a process called quantum tunneling) 
 
 ![A graph showing a small thin barrier, and a wide barrier](../media/qa.png)
 
-## QIO Methods
-Quantum inspired
+[Monte Carlo methods](https://en.wikipedia.org/wiki/Monte_Carlo_method) are a broach class of algorithms which use random sampling to estimate a result, and are used in a wide variety of areas, including the simulation of quantum systems. 
+Any Monte Carlo method applied to solve a quantum annealing problem can be considered "simulated quantum annealing", and it is these methods that we refer to as quantum-inspired optimization. 
+There are a variety of techniques that we have developed, and over time the suite of solvers available through Azure Quantum will grow. 
+As with all heuristic algorithms, knowing which solvers perform well is often a combination of intuition about when tunneling-like phenomena can be expected to help with solving optimization problems.
+However it is also through experimentation; testing these algorithms on different varieties of optimization instances and observing their performance.
+
+#### Path integral Monte Carlo (PIMC)
+Path Integral Monte Carlo is a method that uses an idea of a "replica", which is simply a copy of the system which is being simulated.
+Instead of considering a single solution at a time, we compute a "string" of solutions.
+Solutions on the string that have the best values of the objective function drag other parts of the system toward them.
+Computational effort is thus dynamically redeployed to the most promising regions.
+
+![Path integral Monte Carlo](../media/pimc.png)
+
+It is in this way that Path Integral Monte Carlo mimics quantum tunnelling. 
+Paths spend most of their time in the low "energy" regions, where the objective function is small.
+There are occasional hops between wells, which are called *instantons* and can be treated like particles and analysed using the methods of quantum field theory.
+Results show that time requiired for Path Integral Monte Carlo to escape from a local minimum to a neighbouring llower minimum scales identically to quantum annealing.
+
+#### Diffusion Monte Carlo 
+
+- **Replica**: A copy of the system which is being simulated.
+- **Parallel tempering**: A method used to improve the dynamic properties of Monte Carlo simulations
+
+
 # Explain general ideas of optimization
 In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
 objective function, cost function, gradient descent
