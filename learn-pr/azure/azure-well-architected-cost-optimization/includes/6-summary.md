@@ -18,3 +18,9 @@ We wrapped up by discussing that there are various ways to automate tasks to imp
 - **After the VM is deployed, we can look at how to customize it.** Either by using custom images and thus remove the need for customization in the first place. Or by running a script post deployment.
 - **Automation of Azure tasks:** Azure Automation can help with installing updates or shutting down virtual machines on a schedule.
 - **Automation lab environments:** Azure DevTest Labs takes automation one step further by providing an easy-to-use interface that allows you to use various automation capabilities like images or shutting down VMs without having to worry about the actual implementation of those tasks.
+
+
+## Learn more
+
+- Azure Well-Architected Framework
+- Cloud Adoption Framework

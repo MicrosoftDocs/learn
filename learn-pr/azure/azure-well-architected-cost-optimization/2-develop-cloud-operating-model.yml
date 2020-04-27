@@ -16,26 +16,32 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following cannot be used to automate infrastructure deployment?'
+  - content: ''
     choices:
-    - content: 'Azure PowerShell'
+    - content: ''
       isCorrect: false
-      explanation: 'With Azure PowerShell you can create scripts to automate the deployment of infrastructure.'
-    - content: 'The Azure CLI'
+      explanation: ''
+    - content: ''
       isCorrect: false
-      explanation: 'With the Azure CLI you can create scripts to automate the deployment of infrastructure.'
-    - content: 'Azure Resource Manager templates'
+      explanation: ''
+    - content: ''
       isCorrect: false
-      explanation: 'With Azure Resource Manager templates you can fully automate the deployment of infrastructure.'
-    - content: 'Application Insights'
+      explanation: ''
+    - content: ''
       isCorrect: true
-      explanation: 'Application Insights helps you monitor and analyze your application, it does not offer automation.'
+      explanation: ''
 
-  - content: 'True of false: Azure Automation could be used to automate the start/stop of virtual machines in off-hours.'
+  - content: ''
     choices:
-    - content: 'True'
-      isCorrect: true
-      explanation: 'Azure Automation is a great way to automate the start/stop of virtual machines in off-hours.'
-    - content: 'False'
+    - content: ''
       isCorrect: false
-      explanation: 'Azure Automation can automate the start/stop of virtual machines on a schedule.'
+      explanation: ''
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: true
+      explanation: ''

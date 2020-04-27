@@ -1,6 +1,6 @@
 When provisioning resources, you'd ideally make them as efficient as possible from the start. Workloads, demand, and technical requirements can change over time, but starting from an intially optimized workload will set you up for success down the line. Let's look at some ways to provision your resources with cost optimization in mind.
 
-## Select appropriate SKUs
+## Select appropriate service tiers and sizes
 
 When provisioning resources on the cloud, selecting the right SKU or tier will have a direct impact on the capabilities, capacity, and performance of the service, tied directly to cost. Carefully evaluate the workload requirements for your application, and select the SKU or tier that matches the resource requirements. 
 
