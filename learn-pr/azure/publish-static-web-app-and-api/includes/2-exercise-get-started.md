@@ -22,8 +22,6 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="angular"
 
-   # [Angular](#tab/angular)
-
    ```bash
    cd angular-app
    ```
@@ -31,8 +29,6 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
    ::: zone-end
 
    ::: zone pivot="react"
-
-   # [React](#tab/react)
 
    ```bash
    cd react-app
@@ -42,8 +38,6 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="svelte"
 
-   # [Svelte](#tab/svelte)
-
    ```bash
    cd svelte-app
    ```
@@ -51,8 +45,6 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
    ::: zone-end
 
    ::: zone pivot="vue"
-
-   # [Vue](#tab/vue)
 
    ```bash
    cd vue-app
@@ -70,8 +62,6 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="angular"
 
-   # [Angular](#tab/angular)
-
    ```bash
    npm start
    ```
@@ -79,8 +69,6 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
    ::: zone-end
 
    ::: zone pivot="react"
-
-   # [React](#tab/react)
 
    ```bash
    npm start
@@ -90,8 +78,6 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
    ::: zone pivot="svelte"
 
-   # [Svelte](#tab/svelte)
-
    ```bash
    npm run dev
    ```
@@ -99,8 +85,6 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
    ::: zone-end
 
    ::: zone pivot="vue"
-
-   # [Vue](#tab/vue)
 
    ```bash
    npm run serve
@@ -116,8 +100,6 @@ Select your preferred front-end application and click the link to browse to the 
 
 ::: zone pivot="angular"
 
-# [Angular](#tab/angular)
-
 Browse to <http://localhost:4200>
 
 :::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Browsing to your Angular app":::
@@ -125,8 +107,6 @@ Browse to <http://localhost:4200>
 ::: zone-end
 
 ::: zone pivot="react"
-
-# [React](#tab/react)
 
 Browse to <http://localhost:3000>
 
@@ -136,8 +116,6 @@ Browse to <http://localhost:3000>
 
 ::: zone pivot="svelte"
 
-# [Svelte](#tab/svelte)
-
 Browse to <http://localhost:5000>
 
 :::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Browsing to your Svelte app":::
@@ -145,8 +123,6 @@ Browse to <http://localhost:5000>
 ::: zone-end
 
 ::: zone pivot="vue"
-
-# [Vue](#tab/vue)
 
 Browse to <http://localhost:8080>
 

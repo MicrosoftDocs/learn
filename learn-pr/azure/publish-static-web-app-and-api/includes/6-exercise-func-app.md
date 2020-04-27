@@ -158,8 +158,6 @@ Configure the proxy for your front-end app with the following steps:
 
 ::: zone pivot="angular"
 
-# [Angular](#tab/angular)
-
 1. Open the file _proxy.conf.json_
 1. Locate the `target: 'http://localhost:7010'` setting
 1. Change the target's port to point to 7071 `target: 'http://localhost:7071',`
@@ -167,8 +165,6 @@ Configure the proxy for your front-end app with the following steps:
 ::: zone-end
 
 ::: zone pivot="react"
-
-# [React](#tab/react)
 
 1. Open the file _package.json_
 1. Locate the `"proxy": "http://localhost:7020/",'` setting
@@ -178,8 +174,6 @@ Configure the proxy for your front-end app with the following steps:
 
 ::: zone pivot="svelte"
 
-# [Svelte](#tab/svelte)
-
 1. Open the file _rollup.config.js_
 1. Locate the line of code `const api = 'http://localhost:7030/api';`
 1. Change the api's port to point to port 7071 `const api = 'http://localhost:7071/api';`
@@ -187,8 +181,6 @@ Configure the proxy for your front-end app with the following steps:
 ::: zone-end
 
 ::: zone pivot="vue"
-
-# [Vue](#tab/vue)
 
 1. Open the file _vue.config.js_
 1. Locate the `target: 'http://localhost:7040',` setting
@@ -206,8 +198,6 @@ Your API is already running on port 7071. Now when you run your web app it will 
 
    ::: zone pivot="angular"
 
-   # [Angular](#tab/angular)
-
    ```bash
    cd angular-app
    ```
@@ -215,8 +205,6 @@ Your API is already running on port 7071. Now when you run your web app it will 
    ::: zone-end
 
    ::: zone pivot="react"
-
-   # [React](#tab/react)
 
    ```bash
    cd react-app
@@ -226,8 +214,6 @@ Your API is already running on port 7071. Now when you run your web app it will 
 
    ::: zone pivot="svelte"
 
-   # [Svelte](#tab/svelte)
-
    ```bash
    cd svelte-app
    ```
@@ -235,8 +221,6 @@ Your API is already running on port 7071. Now when you run your web app it will 
    ::: zone-end
 
    ::: zone pivot="vue"
-
-   # [Vue](#tab/vue)
 
    ```bash
    cd vue-app
@@ -248,8 +232,6 @@ Your API is already running on port 7071. Now when you run your web app it will 
 
    ::: zone pivot="angular"
 
-   # [Angular](#tab/angular)
-
    ```bash
    npm start
    ```
@@ -257,8 +239,6 @@ Your API is already running on port 7071. Now when you run your web app it will 
    ::: zone-end
 
    ::: zone pivot="react"
-
-   # [React](#tab/react)
 
    ```bash
    npm start
@@ -268,8 +248,6 @@ Your API is already running on port 7071. Now when you run your web app it will 
 
    ::: zone pivot="svelte"
 
-   # [Svelte](#tab/svelte)
-
    ```bash
    npm run dev
    ```
@@ -277,8 +255,6 @@ Your API is already running on port 7071. Now when you run your web app it will 
    ::: zone-end
 
    ::: zone pivot="vue"
-
-   # [Vue](#tab/vue)
 
    ```bash
    npm run serve
@@ -292,15 +268,11 @@ It's time to see your application running locally against the Azure Functions AP
 
 ::: zone pivot="angular"
 
-# [Angular](#tab/angular)
-
 Browse to <http://localhost:4200>
 
 ::: zone-end
 
 ::: zone pivot="react"
-
-# [React](#tab/react)
 
 Browse to <http://localhost:3000>
 
@@ -308,15 +280,11 @@ Browse to <http://localhost:3000>
 
 ::: zone pivot="svelte"
 
-# [Svelte](#tab/svelte)
-
 Browse to <http://localhost:5000>
 
 ::: zone-end
 
 ::: zone pivot="vue"
-
-# [Vue](#tab/vue)
 
 Browse to <http://localhost:8080>
 

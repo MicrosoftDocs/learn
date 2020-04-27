@@ -38,8 +38,6 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone pivot="angular"
 
-# [Angular](#tab/angular)
-
 - Enter **src** in the _App location_ box
 - Clear the default value from the _Api location_ box
 - Enter **dist** in the _App artifact location_ box
@@ -48,8 +46,6 @@ Next, add configuration details specific to your preferred front-end framework.
 ::: zone-end
 
 ::: zone pivot="react"
-
-# [React](#tab/react)
 
 - Enter **/** in the _App location_ box
 - Clear the default value from the _Api location_ box
@@ -60,8 +56,6 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone pivot="svelte"
 
-# [Svelte](#tab/svelte)
-
 - Enter **/** in the _App location_ box
 - Clear the default value from the _Api location_ box
 - Enter **public** in the _App artifact location_ box
@@ -70,8 +64,6 @@ Next, add configuration details specific to your preferred front-end framework.
 ::: zone-end
 
 ::: zone pivot="vue"
-
-# [Vue](#tab/vue)
 
 - Enter **/** in the _App location_ box
 - Clear the default value from the _Api location_ box
