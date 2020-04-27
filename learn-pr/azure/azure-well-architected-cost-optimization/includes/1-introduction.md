@@ -1,6 +1,4 @@
-How efficient is your cloud environment? Are you maximizing your resources and minimizing your cloud spend? Are you able to assess the health of your infrastructure? Are adverse events visible and actionable? Are you provisioning resources manually, or have you automated them to reduce risk and increase efficiency? Here, you will learn how to answer these questions and improve the efficiency of your Azure cloud deployments.
-
-As we learn about the *Cost Optimization* pillar of the Azure Well-Architected framework, we'll see how one fictional Azure customer puts these principles to work. Lamna Healthcare is a national healthcare provider with several thousand physicians and clinicians across multiple facilities throughout the country. Their IT organization has recently undertaken an effort to reduce their datacenter footprint and move the majority of their IT systems to Azure. They have a mixture of in-house developed applications, open source, and off-the-shelf applications, with varying architectures and technology platforms. They want to make their journey to the cloud successful and would like to learn what they need to focus on to help make it possible.
+How efficient is your cloud environment? Are you maximizing your resources and minimizing your cloud spend? Do you have visibility into your spending, both historial and projected in the future? How do you maximize licenses and resources you may already have purchases on Azure? Here, you will learn about the *Cost Optimization* pillar of the Azure Well-Architected framework.
 
 The concepts discussed in this module are not all-inclusive, but represent some of the important considerations when building a solution on the cloud. For more details on the Azure Well-Architected framework visit the [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true) as you start planning and designing your architecture.
 
@@ -8,7 +6,7 @@ The concepts discussed in this module are not all-inclusive, but represent some 
 
 In this module, you will:
 
+- Identify the benefits of a cloud operating model
 - Maximize the efficiency of your cloud environment
 - Use monitoring and analytics to gain cost insights
-- Identify the benefits of a cloud operating model
-- Idenfity ways to provision resources that are optimized for cost
+- Identify ways to provision resources that are optimized for cost
