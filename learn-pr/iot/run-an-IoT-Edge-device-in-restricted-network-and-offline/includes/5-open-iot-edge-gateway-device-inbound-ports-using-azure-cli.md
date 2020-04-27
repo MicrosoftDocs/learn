@@ -45,6 +45,7 @@ These TCP/IP port numbers are for the supported protocols:
      {nsg-name}	Enter the name of the **Network Security Group**.
      {resource-group}	Enter the name of the **Resource group** for the virtual machine.
 
-     **Note:** In production, it’s best practice to only open inbound communication to the communication protocol(s) in use by your IoT devices. If your devices only use MQTT, then only open inbound communication for that port. This command helps limit the surface attack area of open ports that could be exploited.
+    >[!NOTE]
+    >In production, it’s best practice to only open inbound communication to the communication protocol(s) in use by your IoT devices. If your devices only use MQTT, then only open inbound communication for that port. This command helps limit the surface attack area of open ports that could be exploited.
 
 1. With the **Inbound rules** added to the **Network Security Group (NSG)**, the Child IoT Device will be allowed to communicate with the IoT Edge Gateway virtual machine.
