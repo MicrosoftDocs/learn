@@ -90,7 +90,7 @@ These changes are random, however moves to lower-energy configurations are more 
 Hence, we say it follows a biased random walk. 
 
 Let's take a look at how we define the cost function of our simulated annealing problem. 
-Firstly, we have a number of variables. We can name these variables $x$, and if we have $i$ variables, then we can index them individually using $x_i$.
+Firstly, we have a number of variables. We can name these variables **x**, and if we have **i** variables, then we can index them individually as follows:
 
 ![Variable definition](../media/variable.png)
 
@@ -99,7 +99,7 @@ In particular, if your problem is considering these variables as spins, as in th
 In other cases, these can simply be 1 or 0, as in the QUBO or PUBO model which we will explain shortly.
 
 Let us consider some variables. Each of these variables has an associated weight, which determines their influence on the overall cost function.
-We can write these weights as $w$, and again, if we have $i$ variables, then the associated weight for those individual variables can be indexed using $w_i$.
+We can write these weights as **w**, and again, if we have **i** variables, then the associated weight for those individual variables can be indexed like so:
 
 ![Term definition](../media/term.png)
 
@@ -112,7 +112,7 @@ You can think of these as independent contributions to the cost function.
 But often, in real-life scenarios, variables may depend on one another.
 So how do we describe this?
 Mathematically, we write this as the product of two variables.
-Their contribution can be written as their weight, multiplied by each of the variables $x_i$ and $x_j$.
+Their contribution can be written as their weight, multiplied by each of the variables with indices **i** and **j**:
 
 ![Cost function definition](../media/qubo_term.png)
 
@@ -120,7 +120,7 @@ We can combine this with the previous cost function to describe a problem where 
 
 ![Cost function definition](../media/qubo_cost.png)
 
-However, we don't have to stop there. We can extend this to considering how three variables might depend on one another, with variables $w_k$ having weights $w_k$.
+However, we don't have to stop there. We can extend this to considering how three variables might depend on one another, using a third index **k**:
 
 ![Cost function definition](../media/pubo_term.png)
 
