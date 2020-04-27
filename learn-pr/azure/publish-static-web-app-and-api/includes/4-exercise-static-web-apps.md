@@ -74,7 +74,7 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ### Review + create
 
-After the build validates, you can continue to create the application.
+Continue to create the application.
 
 1. Click the **Create** button
 1. Once the deployment is complete, click the **Go to resource** button
@@ -84,7 +84,17 @@ There are two automated aspects to deploying a static web app. The first aspect 
 > [!NOTE]
 > You can ensure that the GitHub Actions workflow is complete by checking the status of your commits available at `https://github.com/<YOUR_GITHUB_USERNAME>/my-first-static-web-app/actions`.
 
+### Review the GitHub Action
+
+The first time your Azure Static Web Apps resource is created, it creates a GitHub Action. The GitHub Action is added to your repository in the _.github/worksflows_ folder. You can review or modify this file as needed. The settings you entered when cerating the resource are stored in the GitHub Action's file.
+
+While your app is being built you can watch the progress of the GitHub Action by clicking the link shown below:
+
+:::image type="content" source="../media/goto-action.png" alt-text="Browser to see the progress of the GitHub Action":::
+
 ### View website
+
+Once your GitHub Action finishes building and publishing your web app, you can browse to see your running app.
 
 1. Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
