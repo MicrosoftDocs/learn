@@ -22,7 +22,7 @@ Start by checking out the **api** branch, by following these steps:
 
 You'll now see an **api** folder in the Visual Studio Code explorer. The **api** folder contains your Azure Functions project, along with three functions.
 
-| Folder                | Method | Route          |
+| Folder and file       | Method | Route          |
 | --------------------- | ------ | -------------- |
 | _api/products-post_   | POST   | `products`     |
 | _api/products-put_    | PUT    | `products:id`  |
