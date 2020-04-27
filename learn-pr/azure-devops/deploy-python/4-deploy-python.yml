@@ -4,7 +4,7 @@ title: Exercise - Deploy a Python app to Azure
 metadata:
   title: Exercise - Deploy a Python app to Azure
   description: Create a CI/CD pipeline to build, test, and deploy a Python app.
-  ms.date: 04/14/2020
+  ms.date: 04/27/2020
   author: tpetchel
   ms.author: tpetchel
   ms.topic: interactive-tutorial

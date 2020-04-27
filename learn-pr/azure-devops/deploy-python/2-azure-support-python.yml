@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.deploy-python.2-what-is-python
-title: What is Python?
+uid: learn.azdo.deploy-python.2-azure-support-python
+title: How do Azure and Azure DevOps support Python applications?
 metadata:
-  title: What is Python?
+  title: How do Azure and Azure DevOps support Python applications?
   description: Understand what Python is and how it can be deployed to Azure.
-  ms.date: 04/14/2020
+  ms.date: 04/27/2020
   author: tpetchel
   ms.author: tpetchel
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-what-is-python.md)]
+  [!include[](includes/2-azure-support-python.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -1,11 +1,11 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you'll deploy to.
+In this part, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environment that you'll deploy to.
 
 To accomplish these goals, you:
 
 > [!div class="checklist"]
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
-> * Clone a GitHub repo for this module.
-> * Create the Azure App Service using the Azure CLI in Azure Cloud Shell.
+> * Fork and clone a GitHub repo that contains a basic Python app.
+> * Create the Azure App Service by using the Azure CLI in Azure Cloud Shell.
 
 ## Add a user to Azure DevOps
 
@@ -17,24 +17,21 @@ If you use different Microsoft accounts to sign in to Azure and Azure DevOps, ad
 
 Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
-## Clone the GitHub repo
+## Fork the GitHub repo
 
-Here you clone the GitHub repo required for this project. It's a simple Python web app built using the Django framework.
+Here you fork the GitHub repo required for this project. It's a basic Python web app built by using the Django framework.
 
-1. Navigate your browser to the [Python with Django repo](https://github.com/MicrosoftDocs/mslearn-python-django?azure-portal=true).
-1. Select **Fork** and select an account to fork into.
-
-> [!IMPORTANT]
-> In this module, the [Clean up your Azure DevOps environment](/learn/modules/deploy-python/5-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.
+1. Go to the [Python with Django repo](https://github.com/MicrosoftDocs/mslearn-python-django?azure-portal=true).
+1. Select **Fork** and then select your account.
 
 ## Create the Azure App Service environment
 
 Here you create the App Service required to deploy the Python app.
 
-In this module, you use the Azure CLI to spin up the Azure App Service that will host the Python app. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
-
 > [!IMPORTANT]
 > You need your own Azure subscription to complete the exercises in this module.
+
+In this module, you use the Azure CLI to spin up the Azure App Service that will host the Python app. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
 ### Bring up Cloud Shell through the Azure portal
 
@@ -74,9 +71,9 @@ To make commands easier to run, start by selecting a default region. After you s
     az configure --defaults location=westus2
     ```
 
-### Create the Azure resources required
+### Create the Azure resources
 
-This solution requires several Azure resources for deployment, which will be created now.
+This solution requires several Azure resources for deployment, which you create now.
 
    > [!NOTE]
    > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
@@ -84,16 +81,16 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Run the following `az group create` command to create a resource group.
 
     ```azurecli
-	az group create --name python-cicd-rg
+    az group create --name python-cicd-rg
     ```
 
-1. Run the following `az appservice plan create` command to create an App Service plan using the name defined earlier.
+1. Run the following `az appservice plan create` command to create an App Service plan.
 
     ```azurecli
-	az appservice plan create \
-	  --name python-cicd-asp \
-	  --resource-group python-cicd-rg \
-	  --sku B1 \
+    az appservice plan create \
+      --name python-cicd-asp \
+      --resource-group python-cicd-rg \
+      --sku B1 \
       --is-linux
     ```
 
@@ -102,23 +99,25 @@ This solution requires several Azure resources for deployment, which will be cre
     > [!IMPORTANT]
     > If the B1 SKU isn't available in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).
 
-1. Run the following `az webapp create` command to create the App Service instance. Note that it must be globally unique, so a random number is appended. If this fails to create due to a naming conflict, just try again.
+1. Run the following `az webapp create` command to create the App Service instance.
 
     ```azurecli
     az webapp create \
-	  --name python-cicd-$RANDOM \
-	  --resource-group python-cicd-rg \
-	  --plan python-cicd-asp \
+      --name python-cicd-$RANDOM \
+      --resource-group python-cicd-rg \
+      --plan python-cicd-asp \
       --runtime "python|3.7"
     ```
+
+    The name must be globally unique, so here we use `$RANDOM` to append a random number to the name. In practice, you would choose a name that reflects your application. If this step fails due to a naming conflict, try running it again.
 
 1. Run the following `az webapp list` command to list the host name and state of the App Service instance.
 
     ```azurecli
     az webapp list \
-	  --resource-group python-cicd-rg \
-	  --query "[].{hostName: defaultHostName, state: state}" \
-	  --output table
+      --resource-group python-cicd-rg \
+      --query "[].{hostName: defaultHostName, state: state}" \
+      --output table
     ```
 
     Note the host name for your running service. You'll need the web host name later when you verify your work. Here's an example:
@@ -129,7 +128,7 @@ This solution requires several Azure resources for deployment, which will be cre
     python-cicd-16353.azurewebsites.net  Running
     ```
 
-1. As an optional step, go to one the host name. Verify that it's running and that the default home page appears.
+1. As an optional step, navigate your browser to the host name. Verify that it's running and that the default home page appears.
 
     Here's what you see:
 
