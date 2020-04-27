@@ -139,7 +139,7 @@ If you have more than one Azure account, be sure that you are logged in with the
     ```bash
       az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id ChildDevice1 -o tsv
     ```
-
-    ***Note:*** Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub.
+    >[!NOTE]
+    >Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub. 
 
 1. Now you have an IoT Edge Device and a Child IoT Device registered within Azure IoT Hub. The IoT Device is configured with the IoT Edge Device as its parent. This configuration will enable the Child IoT Device to connect to and communicate with the Parent IoT Edge Device; instead of connecting directly with Azure IoT Hub. Configuring the IoT device topology this way enables Offline capable scenarios where the IoT Device and IoT Edge Device can keep working even when connectivity to Azure IoT Hub is not connected.
