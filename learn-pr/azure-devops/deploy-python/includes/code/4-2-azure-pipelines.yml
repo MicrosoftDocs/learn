@@ -1,7 +1,7 @@
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '53cc8e4a-13f6-4721-8d57-2d0c4017cd06'
+  azureServiceConnectionId: '00001111-0000-1111-2222-000011112222'
   
   # Web app name
   webAppName: 'python-cicd-16353'
