@@ -27,7 +27,7 @@ Here you install the Azure Pipelines extension for your GitHub repository. This 
 
 The previous task links your GitHub repository to your Azure DevOps organization. To complete the process, you now create an Azure DevOps project.
 
-1. Sign into your account at [dev.azure.com](https://dev.azure.com).
+1. Sign into your account at [dev.azure.com](https://dev.azure.com?azure-portal=true).
 1. Select **+ New project**.
 
     The **Create new project** dialog box opens.
@@ -96,6 +96,8 @@ The `UsePythonVersion@0` task sets up the build environment for Python projects.
 
 [!code-yml[](code/4-4-azure-pipelines.yml)]
 
+Like before, `pythonVersion` is defined as a variable in the previous section. It defines the version of Python to activate.
+
 ### Running the build
 
 The build itself is run using `python` and `pip` commands in an inline script. These commands are run from the project's root directory. The file *requirements.txt* specifies which components to pull in. Here, this file specifies Django.
@@ -104,7 +106,7 @@ The build itself is run using `python` and `pip` commands in an inline script. T
 
 ### Publishing the build
 
-After the build completes, the `ArchiveFiles@2` task packages the output. The resulting *.zip* file is then uploaded to artifact storage using the alias *drop* for future usage and review.
+After the build completes, the `ArchiveFiles@2` task packages the output. The resulting *.zip* file is then uploaded to artifact storage by using the alias *drop* for future usage and review.
 
 [!code-yml[](code/4-6-azure-pipelines.yml)]
 

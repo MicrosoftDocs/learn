@@ -132,7 +132,7 @@ This solution requires several Azure resources for deployment, which you create 
 
     Here's what you see:
 
-    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
+    ![The default home page on Azure App Service](../media/3-app-service-default.png)
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/deploy-python/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.

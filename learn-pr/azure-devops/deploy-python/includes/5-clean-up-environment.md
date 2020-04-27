@@ -66,7 +66,8 @@ To delete the project:
 
     The icon might not appear until you move your mouse over the area.
 
-    ![Azure DevOps, showing the gear icon](../../shared/media/azure-devops-project-gear.png)
+    ![Azure DevOps, showing the gear icon](../media/5-azure-devops-project-gear.png)
+
 1. In the **Project details** area, go to the bottom and select **Delete**.
 
     ![Azure DevOps, showing the Delete button to delete your project](../../shared/media/azure-devops-delete-project.png)
