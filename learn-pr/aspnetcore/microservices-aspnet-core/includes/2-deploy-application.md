@@ -1,4 +1,4 @@
-In this unit, you'll deploy the eShop app to Azure Kubernetes Service. You'll also gain an understanding of the microservices architecture used.
+In this unit, you'll deploy the eShop app to AKS. You'll also gain an understanding of the microservices architecture used.
 
 ## Set up development environment
 
@@ -14,7 +14,7 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 
 * Clones the eShop project from a GitHub repository.
 * Builds the ASP.NET Core starter code.
-* Provisions an Azure Kubernetes Service and Azure Container Registry resource.
+* Provisions an AKS and Azure Container Registry (ACR) resource.
 * Sets environment variables that are required for this module.
 * Displays connection information for the Azure resources.
 * Launches the Cloud Shell Editor to view the code.

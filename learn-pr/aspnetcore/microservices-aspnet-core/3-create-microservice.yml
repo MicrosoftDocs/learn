@@ -2,7 +2,7 @@
 uid: learn.microservices-aspnet-core.3-create-microservice
 metadata:
   title: Create an ASP.NET Core microservice
-  description: Develop a microservice and configure the container,
+  description: Develop a microservice and configure the container.
   ms.date: 04/20/2019
   author: camsoper
   ms.author: casoper
