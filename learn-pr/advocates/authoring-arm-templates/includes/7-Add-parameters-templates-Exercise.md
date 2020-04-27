@@ -132,7 +132,8 @@ Copy and execute this code block in the shell provided.  Remember to change **{y
 :::code language="azurecli" source="../samples/exercise3-skuparamdeploy.sh" highlight="9":::
 
 
->[!NOTE]If the deployment failed, use the **--debug** switch with the deployment command to show the debug logs. You can also use the **--verbose** switch to show the full debug logs.
+>[!NOTE]
+>If the deployment failed, use the **--debug** switch with the deployment command to show the debug logs. You can also use the **--verbose** switch to show the full debug logs.
 
 To see the flexibility of your template, let's deploy again. This time set the SKU parameter to Standard_GRS. You can either pass in a new name to create a different storage account, or use the same name to update your existing storage account. Both options work.
 
