@@ -19,7 +19,7 @@ quiz:
     - content: "Azure ExpressRoute"
       isCorrect: false
       explanation: "ExpressRoute allows you to extend your on-premises networks into the Microsoft Cloud over a private connection implemented by a connectivity provider."
-    - content: "VPM Gateway"
+    - content: "VPN Gateway"
       isCorrect: false
       explanation: "An Azure virtual network gateway provides an endpoint for incoming connections from on-premises locations to Azure over the Internet."
     - content: "Virtual network peering"
@@ -41,6 +41,7 @@ quiz:
     - content: "Azure Virtual Network peering"
       isCorrect: false
       explanation: "Virtual network peering allows you to connect networks in Azure Virtual Network."
+    - content: "Azure private peering"
       isCorrect: true
       explanation: "Azure private peering lets you directly connect to virtual machines and cloud services on their private IP addresses."
     - content: "Microsoft peering"
