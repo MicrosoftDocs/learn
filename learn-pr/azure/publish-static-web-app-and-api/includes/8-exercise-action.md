@@ -1,14 +1,53 @@
 Your web app and API are both running locally. Now it's time to publish your web app and API to Azure Static Web Apps.
 
-## Commit and push your changes to GitHub
+## Push your changes to GitHub
+
+You've made changes to your API in the previous exercise. Commit those changes and push them to GitHub by following these steps:
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
 1. Type and select **Git: Commit All**
 1. Enter a commit message such as **api changes**
-1. 
+1. Open the command palette by pressing **F1**
+1. Type and select **Git: Push**
 
 ## Create a Pull Request
 
+You pushed your changes to the branch **api** to GitHub. You want the GitHub Action to publish your web app and api in a preview URL. So your next step is to create a pull request against the **master** branch.
+
+1. Open a browser
+1. Navigate to your repository
+
+   <https://github.com/YOUR_GITHUB_USERNAME/my-first-static-web-app>
+
+1. Click on the **Pull requests** menu
+1. Click the **New pull request** button
+1. Select the **master** branch fro the **base** dropdown
+1. Select the **api** branch from the **compare** dropdown
+1. Click the **Create pull request** button
+
+Your GitHub Action has now been triggered.
+
 ## Watch the GitHub Action build and publish
 
+You can stay in your browser on your repository and watch the GitHub Action's progress. Follow these steps to view the progress:
+
+1. Click on the **Actions** menu
+1. Under the Workflows menu, click on the **Azure Pages CI/CD** workflow item
+1. Select the latest (top) link in the action runs to the right
+
+You can see the progress of your GitHub Action as it builds and publishes your web app and API.
+
 ## Browse to the preview URL
+
+Once the GitHub Action has completed successfully, you can view your running app in the browser.
+
+1. Expand the **Build and Deploy** step in the action's run
+1. Scroll to the bottom of the output
+1. Locate the message **Visit your site at:**
+1. Copy and paste the URL into your browser, and press **ENTER**
+
+Notice that the preview URL contains a hyphen followed by a number. The number matches the pull request number for the pull request you created. For every pull request you create, you'll get a unique and repeatable preview URL.
+
+## Next steps
+
+Congratulations, you've created your first Azure Static Web App with a web app and API!
