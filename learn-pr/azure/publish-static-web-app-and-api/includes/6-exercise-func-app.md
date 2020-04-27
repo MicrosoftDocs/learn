@@ -18,15 +18,15 @@ Congratulations, you just created an Azure Function app and your first function!
 > [!NOTE]
 > You created the function app in the _api_ folder, which separates it from the web apps. All of the web apps using the front-end frameworks can hit the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
 
-### Set the HTTP Method and route endpoint name
+You may recall that your app needs four endpoints. Next, you'll configure and code the function for the first of these endpoints.
 
-You may recall that your app needs four endpoints. Next, you'll configure and code the function for the first of these endpoints. You'll create the other endpoints in a future exercise.
+### Configure the HTTP Method and route endpoint
 
-Notice that there's now a folder _api/products-get_ that contains a few files. Once of these files is _function.json_, which contains the configuration for the function.
+Notice the folder _api/products-get_ contains the file _function.json_. This file contains the configuration for your function.
 
-By convention, the route endpoint has the same name as the folder that contains the function. Since the function is created in the _products-get_ folder, the route endpoint is generated as **products-get**. You want the endpoint to be **products**.
+The route endpoint has the same name as the folder that contains the function, by convention. Since the function is created in the _products-get_ folder, the route endpoint is generated as **products-get**, by default. However, you want the endpoint to be **products**.
 
-Configure your function by following these steps:
+Configure your function:
 
 1. Open the file _api/products-get/function.json_
 1. Notice the methods allow both `GET` and `POST`
@@ -34,7 +34,7 @@ Configure your function by following these steps:
 1. Go to the `bindings` section's `req` properties
 1. Add a `route: "products"` entry
 
-Now your function will be triggered on an HTTP `GET` request to **products**. Your _function.json_ should look like the following:
+Now your function is triggered on an HTTP `GET` request to **products**. Your _function.json_ should look like the following code:
 
 ```json
 {
@@ -60,7 +60,7 @@ Now your function will be triggered on an HTTP `GET` request to **products**. Yo
 
 ### Refactor the route logic
 
-The other important file here in the _api/products-get_ folder is _index.js_. This file contains the logic that runs when the route endpoint is requested.
+The file _index.js_ in the folder _api/products-get_ contains logic that runs when your make an HTTP request to the route.
 
 You'll need to refactor the logic to get your products. Assume for now that the data access logic will be in a JavaScript module in _/services/product-data.js_ and that it exposes a function `getProducts` to get the products for the shopping list. You'll create the `product-data` module shortly.
 
@@ -82,7 +82,7 @@ Now, refactor the function endpoint to return the products:
    };
    ```
 
-Your function will get the products and return them with a status code of 200, if successful.
+Your function will get the products and return them with a status code of 200, when successful.
 
 ### Create the product data
 
@@ -128,13 +128,14 @@ You'll create the data access logic and the shopping list array in the JavaScrip
    module.exports = { getProducts };
    ```
 
-This code exports a function named `getProducts`, which gets the products from the array. This function is then imported by the function in the file _api/products-get/index.js_ (that you previously created).
+This code exports a function named `getProducts`, which gets the products from the array. This function is imported by the function in the file _api/products-get/index.js_ (that you previously created).
 
 ### Run the API
 
-Now its time to see if your web app and Azure Functions project work together. Start by running your Azure Functions project locally by following these steps:
+Now it's time to watch your web app and Azure Functions project work together. Start by running your Azure Functions project locally by following these steps:
 
-1. Open a terminal
+1. In Visual Studio Code, open the command palette by pressing **F1**
+1. Type and select **Terminal: Create New Integrated Terminal**
 1. Go to the _api_ folder
 
    ```bash
@@ -149,7 +150,7 @@ Now its time to see if your web app and Azure Functions project work together. S
 
 ## Run the web app
 
-Now that your API is running, you need to configure your front-end app to make its HTTP request to your API. The front-end app runs on one port and the API runs on a different port (7071). Each front-end framework can be configured to proxy HTTP requests to another port safely.
+Your API is running and now you need to configure your front-end app to make its HTTP request to your API. The front-end app runs on one port and the API runs on a different port (7071). Each front-end framework can be configured to proxy HTTP requests to another port safely.
 
 ### Configure your proxy port
 
@@ -199,7 +200,8 @@ Configure the proxy for your front-end app with the following steps:
 
 Your API is already running on port 7071. Now when you run your web app it will make its HTTP requests to your API. Run your web app by following these steps:
 
-1. Open a new terminal
+1. In Visual Studio Code, open the command palette by pressing **F1**
+1. Type and select **Terminal: Create New Integrated Terminal**
 1. Next, go to the folder of your preferred front-end framework, as shown below:
 
    ::: zone pivot="angular"
@@ -324,4 +326,4 @@ You built your application and now it's running locally making HTTP GET requests
 
 ## Next steps
 
-Your app can get products, but it cannot edit them. You're missing your HTTP PUT, POST, and DELETE endpoints. You'll add those next.
+Your app can get products, but it can't edit them. You're missing your HTTP PUT, POST, and DELETE endpoints. You'll add those three endpoints next.

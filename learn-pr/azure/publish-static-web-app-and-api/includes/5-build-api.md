@@ -25,6 +25,18 @@ Here are the four endpoints that you'll create:
 | PUT     | `products:id`   |
 | DELETE  | `products/:id`  |
 
+### Create an API for the web app
+
+You'll need to create an Azure Functions project for your API. Then you'll set up your HTTP endpoints for your shopping list app. You'll perform the following steps to connect your front-end web app with a serverless back-end API.
+
+1. Create the Azure Function project
+1. Create the HTTP GET function
+1. Configure the route's endpoint
+1. Refactor the function logic to get products
+1. Run the API
+1. Configure the web app to proxy HTTP requests to the API
+1. Run the web app
+
 ## Next steps
 
-Thinking ahead, you'll need to create an Azure Functions project for your API. This will enable you to set up your HTTP endpoints for your shopping list app.
+Now you're ready to create your API and configure your HTTP endpoints for your shopping list app.
