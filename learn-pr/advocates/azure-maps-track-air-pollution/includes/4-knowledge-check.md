@@ -1,0 +1,1 @@
+Before we start using the Azure Maps web SDK, lets check what you have learned so far.

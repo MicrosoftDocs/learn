@@ -11,6 +11,12 @@ kmeansmodel.fit(pca[:, :5])
 kmeansmodel.labels_
 ```
 
+Here's the output:
+
+```Output
+TBD
+```
+
 Let's recreate our DataFrame with the PCA values, a new column named Cluster which will hold the label_ or cluster number for each food item, and add back in the text descriptions.
 
 ```python
@@ -33,16 +39,47 @@ Let's see the products which wound up in the first cluster.
 pca_df.loc[pca_df['Cluster'] == 0]['Shrt_Desc'][:500]
 ```
 
-Exercise 
+Here's the output:
 
-Display the first 500 rows for the remaining two clusters
-
-```python
-Display cluster two (remember indexing starts at 0)
+```Output
+TBD
 ```
 
-```python
-Display cluster three (remember indexing starts at 0)
+### Try it yourself
+
+Display the first 500 rows for the remaining two clusters.
+
+<br />
+
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```python
+    Display cluster two (remember indexing starts at 0)
 ```
+
+  The output is:
+
+  ```Output
+ TBD
+  ```
+
+    ```python
+    Display cluster three (remember indexing starts at 0)
+    ```
+
+  The output is:
+
+  ```Output
+ TBD
+  ```
+
+</details>
+
+<br /><br />
+
+***
+
 
 Reducing dimensions to allow us to focus on what's important can be a bit of a a challenge. And, frankly, PCA can be a bit confusing at first. PCA's main goal is to provide us with a better signal to noise ratio. It helps us weed out the dimensions which aren't as important, and provide more meaningful insights into the relationships between our data. It's commonly used before categorization algorithms, such as k-means.

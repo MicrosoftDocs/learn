@@ -1,11 +1,8 @@
+We know from experience that we probably will need to do some cleanup of our data before we can run the machine learning algorithms we want to run.
+
 ## Handle `null` values
 
-Because this is a real-world dataset, it is a safe bet that it contains `null` values. We could first check to see whether this is true. However, later on in this module, we will have to transform our data using a function that cannot use NaN values, so we might as well drop rows that contain those values.
-
-
-
-
-
+Because this is a real-world dataset, it is a safe bet that it contains `null` values. Later in this module, we will have to transform our data by using a function that cannot use NaN values. Let's drop rows that contain those values now.
 
 ### Try it yourself
 
@@ -21,8 +18,6 @@ df.dropna()
 ```
 
 The output is:
-
-
 
 NDB_No	FoodGroup	Shrt_Desc	Water_(g)	Energ_Kcal	Protein_(g)	Lipid_Tot_(g)	Ash_(g)	Carbohydrt_(g)	Fiber_TD_(g)	...	Vit_K_(Âµg)	FA_Sat_(g)	FA_Mono_(g)	FA_Poly_(g)	Cholestrl_(mg)	GmWt_1	GmWt_Desc1	GmWt_2	GmWt_Desc2	Refuse_Pct
 0	1001	Dairy and Egg Products	BUTTER,WITH SALT	15.87	717.0	0.85	81.11	2.11	0.06	0.0	...	7.0	51.368	21.021	3.043	215.0	5.00	1 pat, (1" sq, 1/3" high)	14.2	1 tbsp	0.0
@@ -147,7 +142,7 @@ Next, run this in a cell:
 nutr_df = nutr_df.drop(['FoodGroup', 'Shrt_Desc'], axis=1)
 ```
 
-This is the output:
+This is the output - TBD, I get an error
 
 ```Output
 TBD
@@ -162,6 +157,18 @@ Now set the index of `nutr_df` to use `NDB_No`.
 
   The correct code for students to use here is `nutr_df.set_index('NDB_No', inplace=True)`.
 
+  ```python
+  TBD
+  ```
+
+This is the output - TBD, I get an error
+
+```Output
+TBD
+```
+  ```Output
+  TBD - error
+  ```
 </details>
 
 <br /><br />

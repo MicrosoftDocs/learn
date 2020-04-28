@@ -100,30 +100,30 @@ Can you think of a more concise way to check the number of rows and columns in a
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Use one of the [attributes](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html?azure-portal=true) of the <code>DataFrame</code>.
+  Use one of the [attributes](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html?azure-portal=true) of the <code>DataFrame</code>.
 
-Here's a possible solution:
+  Here's a possible solution:
 
-```python
-df.count(axis='columns')
-```
-  
-The output is:
+  ```python
+  df.count(axis='columns')
+  ```
+    
+  The output is:
 
-```Output
-0       54
-1       54
-2       54
-3       54
-4       54
-        ..
-8984    49
-8985    50
-8986    53
-8987    48
-8988    49
-Length: 8989, dtype: int64
-```
+  ```Output
+  0       54
+  1       54
+  2       54
+  3       54
+  4       54
+          ..
+  8984    49
+  8985    50
+  8986    53
+  8987    48
+  8988    49
+  Length: 8989, dtype: int64
+  ```
 
 </details>
 

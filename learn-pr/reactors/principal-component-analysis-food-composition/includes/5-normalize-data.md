@@ -6,6 +6,8 @@ To help see why we need to normalize the data, let's look at a histogram of all 
 ax = nutr_df.hist(bins=50, xlabelsize=-1, ylabelsize=-1, figsize=(11,11))
 ```
 
+TBD - I get no output
+
 Our first transformation - Box-Cox
 
 Not a bell curve in sight. Worse, a lot of the data is clumped at or around 0. There are a number of ways we can massage the data into a a more useable state.
@@ -47,6 +49,8 @@ You can satisfy your self that the data is now centered by using the mean() meth
 ```python
 print("mean: ", np.round(nutr_df_TF.mean(), 2))
 ```
+
+mean:  -0.0
 
 Exercise
 
