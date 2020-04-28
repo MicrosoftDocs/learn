@@ -59,6 +59,8 @@ Keep in mind that you aren't limited to the Azure CLI to list your image replica
 
 [![Screenhost that shows the container replication map as seen in the Azure portal.](../media/replication-map.png)](../media/replication-map-expanded.png#lightbox)
 
+:::image type="content" source="../media/replication-map.png" alt-text="Screenshot showing the container replication world map as seen in the Azure portal with many circles across several countries." lightbox="../media/replication-map-expanded.png":::
+
 ## Summary
 
 In this module, you learned about the Azure Container Registry. You deployed your own registry, added a custom container, and created a container image. Finally, you saw how easy it's to replicate the registry across Azure regions.
