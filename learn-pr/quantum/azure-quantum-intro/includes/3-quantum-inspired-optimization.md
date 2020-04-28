@@ -217,7 +217,7 @@ Substochastic Monte Carlo is a population method that originally aimed to approx
 
 The paths of walkers in the SSMC method are governed by a time-dependent transition rate matrix H(t) through the diffusion equation:
 
-TODO: equation
+![Substochastic Monte Carlo](../media/ssmc.png)
 
 In plain English, this means that a population of walkers are diffused in the solution space, and the objective function governs the rate at which a walker "dies".
 These walkers are then repopulated elsewhere, at the site of a randomly chosen surviving walker.
@@ -228,7 +228,7 @@ Parallel tempering is a method that can be used to accelerate both classical and
 It does this by simulating several independent copies of the target system at different temperatures.
 After a fixed number of Monte Carlo sweeps (where a step is made, and the move is either rejected or accepted), two copies of the system at neighbouring temperatures are selected and exchanged according to a certain probability:
 
-TODO formula
+![Parallel tempering](../media/pt.png)
 
 In this way, a walker is able to perform a random walk at high temperatures where moves happen more rapidly, and return to low temperatures where there is less variation. 
 With multiple walkers, the system can efficiently explore the complex energy landscape.
