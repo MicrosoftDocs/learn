@@ -77,7 +77,7 @@ The following commands show you how to move a resource by using Azure PowerShell
 1. Return all the resources in your resource group to verify your resource moved.
 
    ```powerShell
-   Get-AzureRmResource -ResourceGroupName <destination resource group name> | ft
+   Get-AzResource -ResourceGroupName <destination resource group name> | ft
    ```
 
 1. Update the resource IDs in any tools and scripts that reference your resources.
