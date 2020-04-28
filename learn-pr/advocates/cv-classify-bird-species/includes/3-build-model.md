@@ -127,12 +127,12 @@ def uploadImageList(image_list):
         exit(-1)
 ```
 
-- This is our main method that we call the functions we created for each tag. We will look through each `tag` (folder name) in the `tags` collection we created from the folders in the `bird_folder` directory.
-- In the loop
+- This is our main method that will call the functions we created for each tag. We will loop through each `tag` (folder name) in the `tags` collection we created from the folders in the `bird_folder` directory.
+- Steps in the loop:
 
-1. Calling the `createTag` first to create the class tag in custom vision
-2. Calling `createImageList` fucntion and sending in the current `tag` name and `tag_id` that was returned from custom vision. This returns our list of images to upload
-3. Then we are uploading the images from the `image_list` in batches of 25 since it will timeout if try to upload the entire dataset at once.
+  1. Calling the `createTag` first to create the class tag in custom vision
+  2. Calling `createImageList` fucntion and sending in the current `tag` name and `tag_id` that was returned from custom vision. This returns our list of images to upload
+  3. Then we are uploading the images from the `image_list` in batches of 25 since it will timeout if try to upload the entire dataset at once.
 
 ```python
 for tag in tags:
@@ -155,7 +155,5 @@ We have created our dataset in Custom Vision and now we can train our model. Thi
 
 - Navigate to CustomVision.ai and click the `Bird Classification` project that was created.
 - Select "Train"
-- Test your model
-  - Select "Quick Test" from the upper right corner
-  - Browse to local files and select a image from the test folder
-  - The predication will appear on the right side of the window
+
+When the training is complete you will get information about how the model is performing for the iteration. This is displayed with stats called Precision, Recall, and AP for the model as a whole and for each class. In the next step we will learn a bit more about what each of these mean.
