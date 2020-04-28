@@ -4,7 +4,7 @@ Before we can create an inclusive culture, we need to understand the concept of 
 
 ### What is unconscious bias?
 
-Unconscious bias is activated when we encounter what's familiar and different to us.<!--CE: I thought this needed more explaining, as it's a pretty important point. I suggest replacing the opening sentence with the following: 'Unconscious bias is activated when we have to make quick decisions and judgments. This situation can happen automatically without you being aware of it.--> Examples of where unconscious bias occurs in the workplace include areas like disability, ethnicity, sexuality, body size, and gender. Take this example: you're in the doctor's office when a male and female walk into the room dressed in medical scrubs. You begin to address the male about your health query, only to learn that the female is actually the doctor.
+Unconscious bias is activated when we have to make immediate decisions and judgments that are either familiar or new to us. This situation can happen automatically without you being aware of it. Examples of where unconscious bias occurs in the workplace include areas like disability, ethnicity, sexuality, body size, and gender. Take this example: you're in the doctor's office when a male and female walk into the room dressed in medical scrubs. You begin to address the male about your health query, only to learn that the female is actually the doctor.
 
 ### Challenges with unconscious bias
 

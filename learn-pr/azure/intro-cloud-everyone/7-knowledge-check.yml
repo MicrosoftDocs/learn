@@ -30,10 +30,10 @@ quiz:
     - content: Consider what you market, who you market to, and how you market.
       isCorrect: True
       explanation: Inclusive Marketing is an operating model consisting of three concepts that focus on the basics of what, who and how.
-    - content: Consider how to include other departments in your marketing
+    - content: Consider how to include other departments in your marketing.
       isCorrect: False
       explanation: Inclusive Marketing is an operating model consisting of three concepts that focus on the basics of what you market, who you market to, and how you market.
-    - content: Consider what to include in your marketing materials
+    - content: Consider what to include in your marketing materials.
       isCorrect: False
       explanation: Inclusive Marketing is an operating model consisting of three concepts that focus on the basics of what you market, who you market to, and how you market.
   - content: Which of the following statements outlines examples of behaviors like inclusive culture, inclusive design, or Inclusive Marketing? 
