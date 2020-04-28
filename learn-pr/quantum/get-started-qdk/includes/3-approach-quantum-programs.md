@@ -22,4 +22,3 @@ In real life, cats can't be put in a quantum superposition (and of course we
 don't want to possibly kill many cats to generate a random number). However, the
 basic elements of quantum computers, the qubits, can be driven to a quantum
 superposition and measured like when we open the cat's box.
-
