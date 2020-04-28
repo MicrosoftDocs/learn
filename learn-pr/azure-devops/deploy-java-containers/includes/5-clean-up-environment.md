@@ -18,7 +18,7 @@ To clean up your resource group:
 
 1. Run the following `az group delete` command to delete the resource group that you used, `java-containers-cicd-rg`.
 
-    ```bash
+    ```azurecli
     az group delete --name java-containers-cicd-rg
     ```
 
@@ -26,7 +26,7 @@ To clean up your resource group:
 
 1. As an optional step, after the previous command finishes, run the following `az group list` command.
 
-    ```bash
+    ```azurecli
     az group list --output table
     ```
 
