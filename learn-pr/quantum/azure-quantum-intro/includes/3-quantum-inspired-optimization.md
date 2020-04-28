@@ -177,11 +177,31 @@ There are a variety of techniques that we have developed, and over time the suit
 As with all heuristic algorithms, knowing which solvers perform well is often a combination of intuition about when tunneling-like phenomena can be expected to help with solving optimization problems.
 However it is also through experimentation; testing these algorithms on different varieties of optimization instances and observing their performance.
 
+#### Diffusion Monte Carlo 
+
+Diffusion Monte Carlo is a type of population method, and on a technical level these are derived by writing an imaginary-time analogue of Schrödinger’s equation, which governs the dynamics of the quantum wavefunction:
+
+![Imaginary time Schrodinger equation](../media/diffusion.png)
+
+and this yields a continuous-time random walk. What does that mean? In terms of our walkers on our solution space, it means that the number of walkers is not preserved. 
+For example, the walkers at locations where the objective function is high can die off, and walkers where the objective function is low can reproduce. 
+Through a combination of hopping to neighboring sites, death, and reproduction, the walkers explore the search space, preferentially accumulating in the regions where the objective function is lowest. 
+As in quantum annealing, the parameters are varied with time so that the hopping is favored at the beginning of the anneal, thereby causing the walkers to explore the search space widely, and birth/death processes are favored at the end of the anneal, thereby strongly driving the walkers into the areas of lowest objective function. 
+Depending on the precise details of the algorithm, the population methods are variously called Diffusion Monte Carlo, Green’s Function Monte Carlo, or Population Annealing.
+
+![Greens function](../media/greens.png)
+
+Green’s function Monte Carlo can mimic tunneling effects. 
+On the left, an objective function V is shown which depends only on the Hamming weight |x| of the given bit string x. 
+On the right the distribution of walkers (with color indicating concentration of walkers) is plotted as a function of Hamming weight (vertical axis) and anneal time (horizonal axis). 
+Walkers at Hamming weight above the barrier eventually die off as walkers below the barrier reproduce, thereby mimicking quantum tunneling.
+
 #### Path integral Monte Carlo (PIMC)
+Path-integral methods work by applying a random walk not to a population of independent walkers but rather to a path through a sequence of possible locations in the search space. 
+As in population methods, the precise random walk taken by these paths is derived by adherence to an imaginary-time version of Schrödinger’s equation. 
+Intuitively, one can regard such a path as a collection of walkers which each preferentially hop into areas of lower objective function, but which are loosely tied to each other by a chain of elastic bands. 
+When a walker stumbles into an area of lower objective function than was previously found, they tug on neighboring walkers can pull more of them into the new basin.
 Path Integral Monte Carlo is a method that uses an idea of a "replica", which is simply a copy of the system which is being simulated.
-Instead of considering a single solution at a time, we compute a "string" of solutions.
-Solutions on the string that have the best values of the objective function drag other parts of the system toward them.
-Computational effort is thus dynamically redeployed to the most promising regions.
 
 ![Path integral Monte Carlo](../media/pimc.png)
 
@@ -189,9 +209,6 @@ It is in this way that Path Integral Monte Carlo mimics quantum tunnelling.
 Paths spend most of their time in the low "energy" regions, where the objective function is small.
 There are occasional hops between wells, which are called *instantons* and can be treated like particles and analysed using the methods of quantum field theory.
 Results show that time requiired for Path Integral Monte Carlo to escape from a local minimum to a neighbouring llower minimum scales identically to quantum annealing.
-
-#### Diffusion Monte Carlo 
-
 - **Replica**: A copy of the system which is being simulated.
 - **Parallel tempering**: A method used to improve the dynamic properties of Monte Carlo simulations
 
