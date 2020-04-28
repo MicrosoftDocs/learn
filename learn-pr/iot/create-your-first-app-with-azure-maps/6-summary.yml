@@ -15,16 +15,28 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Why do we need an Azure Maps account for this module?'
+  - content: 'If a truck is classified with USHazmatClass1, what is it carrying?'
     choices: 
-    - content: 'To enter the location of the truck on a map.'
+    - content: 'Gases'
       isCorrect: false
-      explanation: The location of the truck is handled by the IoT Central dashboard.
-    - content: 'To calculate the best route from one location to another'
+      explanation: This cargo is USHazmatClass2.
+    - content: 'Flammable or combustible liquid'
+      isCorrect: false
+      explanation: This cargo is USHazmatClass3.
+    - content: 'Explosives'
       isCorrect: true
-      explanation: Azure Maps enables many route finding options.
-    - content: 'To display a map background'
+      explanation: Yes, this classification tops the list of hazardous cargoes.
+
+  - content: 'What is the default order of layers in Azure Maps, from the lowest up?'
+    choices: 
+    - content: 'base, transit, labels, flow'
+      isCorrect: true
+      explanation: You can leave off the flow, for a less stressful map!
+    - content: 'base, labels, transit, flow'
       isCorrect: false
-      explanation: We don't render any particular background in this module.
+      explanation: Labels take priority over transit.
+    - content: 'base, transit, flow, labels'
+      isCorrect: false
+      explanation: Flow takes priority over labels.
 
   
