@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.configure-iot-edge-device-time-live-message-storage
+uid: learn.iot.run-iot-edge-device-restricted-network-offline.configure-iot-edge-device-time-live-message-storage
 metadata:
   title: Configure IoT Edge Device Time-to-Live and Message Storage
   description: Configure IoT Edge Device Time-to-Live and Message Storage
