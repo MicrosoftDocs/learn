@@ -41,10 +41,9 @@ You can see the progress of your GitHub Action as it builds and publishes your w
 
 Once the GitHub Action has completed successfully, you can view your running app in the browser.
 
-1. Expand the **Build and Deploy** step in the action's run
-1. Scroll to the bottom of the output
-1. Locate the message **Visit your site at:**
-1. Copy and paste the URL into your browser, and press **ENTER**
+1. Click on the **Pull requests** menu
+1. Select your pull request
+1. Click on the link following the message **Azure Pages: Your stage site is ready! Visit it here**
 
 Notice that the preview URL contains a hyphen followed by a number. The number matches the pull request number for the pull request you created. For every pull request you create, you'll get a unique and repeatable preview URL.
 
