@@ -212,6 +212,22 @@ Results show that time requiired for Path Integral Monte Carlo to escape from a 
 - **Replica**: A copy of the system which is being simulated.
 - **Parallel tempering**: A method used to improve the dynamic properties of Monte Carlo simulations
 
+#### Parallel tempering
+Parallel tempering is a method that can be used to accelerate both classical and simulated quantum annealing approaches, as well as many other heuristics. 
+It does this by simulating several independent copies of the target system at different temperatures.
+After a fixed number of Monte Carlo sweeps (where a step is made, and the move is either rejected or accepted), two copies of the system at neighbouring temperatures are selected and exchanged according to a certain probability:
+
+TODO formula
+
+In this way, a walker is able to perform a random walk at high temperatures where moves happen more rapidly, and return to low temperatures where there is less variation. 
+With multiple walkers, the system can efficiently explore the complex energy landscape.
+
+A related question may be - how do you select the temperatures, and how many copies of the system should you use?
+It has been found that with less than 100 temperatures, speedups of 5-6 orders of magnitude have been observed.
+There are a few things to consider when selecting temperatures:
+- When the temperatures are too far apart, many moves will be rejected as there will not be enough overlap between the energy distributions at each temperature.
+- If the temperatures are too close, then this is wasteful of CPU time as the difference between the two systems is minimal.
+- Therefore a good measure for the selection of the temperatures is the acceptance probabilities of the moves. In general, to ensure that they are independent of temperature, the acceptance rate should be between 20-80%.
 
 # Explain general ideas of optimization
 In this unit, you will learn about the quantum-inspired solutions enabled by Azure Quantum.
