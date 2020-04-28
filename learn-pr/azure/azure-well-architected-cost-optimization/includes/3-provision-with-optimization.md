@@ -1,10 +1,10 @@
-When provisioning resources, you'd ideally make them as efficient as possible from the start. Workloads, demand, and technical requirements can change over time, but starting from an intially optimized workload will set you up for success down the line. Let's look at some ways to provision your resources with cost optimization in mind.
+When provisioning resources, you'd ideally make them as efficient as possible from the start. Workloads, demand, and technical requirements can change over time, but starting from an initially optimized workload will set you up for success down the line. Let's look at some ways to provision your resources with cost optimization in mind.
 
 ## Select appropriate service tiers and sizes
 
 When provisioning resources on the cloud, selecting the right SKU or tier will have a direct impact on the capabilities, capacity, and performance of the service, tied directly to cost. Carefully evaluate the workload requirements for your application, and select the SKU or tier that matches the resource requirements. 
 
-There is a wide variety of virtual machine types to choose from when provisioning for VM based workloads. Assess the resource requirments for your workload, and selet the proper VM SKU that most closely matches. Each VM SKU comes with an assigned amount of CPU, memory, and storage. Choose the size that most closely matches your requirements. Provisioning VM sizes can often be challenging, since you may be deploying for your maximum workload, even though your application may only need that capacity for a portion of it's running time. Choosing a VM size is not a permanent decision. You can modify your VM size at any time, but in most cases it will require a restart of your VM.
+There is a wide variety of virtual machine types to choose from when provisioning for VM based workloads. Assess the resource requirements for your workload, and select the proper VM SKU that most closely matches. Each VM SKU comes with an assigned amount of CPU, memory, and storage. Choose the size that most closely matches your requirements. Provisioning VM sizes can often be challenging, since you may be deploying for your maximum workload, even though your application may only need that capacity for a portion of it's running time. Choosing a VM size is not a permanent decision. You can modify your VM size at any time, but in most cases it will require a restart of your VM.
 
 ## Pay only for consumption
 

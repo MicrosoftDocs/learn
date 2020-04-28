@@ -29,7 +29,7 @@ products:
 - azure-monitor
 units:
 - learn.azure-well-architected-cost-optimization.1-introduction
-- learn.azure-well-architected-cost-optimization.2-develop-cloud-operating-model
+- learn.azure-well-architected-cost-optimization.2-plan-estimate-costs
 - learn.azure-well-architected-cost-optimization.3-provision-with-optimization
 - learn.azure-well-architected-cost-optimization.4-use-monitoring-and-analytics-to-gain-cost-insights
 - learn.azure-well-architected-cost-optimization.5-maximize-efficiency-of-cloud-spend

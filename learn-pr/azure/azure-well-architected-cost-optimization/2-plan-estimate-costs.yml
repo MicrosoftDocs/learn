@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-cost-optimization.2-develop-cloud-operating-model
-title: Develop a cloud operating model
+uid: learn.azure-well-architected-cost-optimization.2-plan-estimate-costs
+title: Plan and estimate your Azure costs
 metadata:
-  title: Develop a cloud operating model
-  description: Develop a cloud operating model
+  title: Plan and estimate your Azure costs
+  description: Plan and estimate your Azure costs
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |
-  [!include[](includes/2-develop-cloud-operating-model.md)]
+  [!include[](includes/2-plan-estimate-costs.md)]
 quiz:
   title: Check your knowledge
   questions:
