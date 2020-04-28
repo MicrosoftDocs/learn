@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline
+uid: learn.iot.run-iot-edge-device-restricted-network-offline
 metadata:
   title: Run an IoT Edge device in a restricted network and offline
   description: This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
@@ -37,14 +37,14 @@ roles:
 products:
 - azure-iot-edge
 units:
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.introduction
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.deploy-azure-iot-edge-enabled-linux-vm
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.setup-iot-edge-parent-with-child-iot-devices
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.configure-iot-edge-device-gateway
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.open-iot-edge-gateway-device-inbound-ports-using-azure-cli
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.configure-iot-edge-device-time-live-message-storage
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.connect-child-iot-device-iot-edge-gateway
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.test-device-connectivity-offline-support
-- learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.summary
+- learn.iot.run-iot-edge-device-restricted-network-offline.introduction
+- learn.iot.run-iot-edge-device-restricted-network-offline.deploy-azure-iot-edge-enabled-linux-vm
+- learn.iot.run-iot-edge-device-restricted-network-offline.setup-iot-edge-parent-with-child-iot-devices
+- learn.iot.run-iot-edge-device-restricted-network-offline.configure-iot-edge-device-gateway
+- learn.iot.run-iot-edge-device-restricted-network-offline.open-iot-edge-gateway-device-inbound-ports-using-azure-cli
+- learn.iot.run-iot-edge-device-restricted-network-offline.configure-iot-edge-device-time-live-message-storage
+- learn.iot.run-iot-edge-device-restricted-network-offline.connect-child-iot-device-iot-edge-gateway
+- learn.iot.run-iot-edge-device-restricted-network-offline.test-device-connectivity-offline-support
+- learn.iot.run-iot-edge-device-restricted-network-offline.summary
 badge:
-  uid: learn.iot.run-iot-edge-device-in-restricted-network-and-offline
+  uid: learn.iot.run-iot-edge-device-restricted-network-offline
