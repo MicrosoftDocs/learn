@@ -70,4 +70,4 @@ On the **Notebooks** page, create a new file with the following settings:
 4. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
 5. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
 6. Save the notebook, Then select **&#9655; Run All** to run the code (depending on the width of your screen, you may need to open the **...** menu to see this).
-7. Verify that predicted rentals for the five day period are returned.
+7. Verify that predicted number of rentals for each day in the five day period are returned.

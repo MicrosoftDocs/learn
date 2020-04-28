@@ -24,7 +24,7 @@ Here you install the Azure Pipelines extension for your GitHub repository. This 
 
 The previous task links your GitHub repository to your Azure DevOps organization. To complete the process, you now create an Azure DevOps project.
 
-1. Sign into your account at [dev.azure.com](https://dev.azure.com).
+1. Sign into your account at [dev.azure.com](https://dev.azure.com?azure-portal=true).
 1. Select **+ New project**.
 
     The **Create new project** dialog box opens.
