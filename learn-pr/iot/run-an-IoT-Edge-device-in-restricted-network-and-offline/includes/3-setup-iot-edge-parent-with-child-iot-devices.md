@@ -18,7 +18,9 @@ If you have more than one Azure account, be sure that you are logged in with the
     ```bash
       az iot hub device-identity create --edge-enabled --hub-name AZ-220-HUB-_{YOUR-ID}_ --auth-method shared_private_key --device-id  IoTEdgeGateway
     ```
-    ***Note:*** Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub.
+
+    >[!NOTE]
+    >Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub.
 
     Notice the az iot hub device-identity create command is called by passing in several parameters:
 
