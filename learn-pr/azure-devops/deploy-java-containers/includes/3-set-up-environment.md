@@ -4,7 +4,7 @@ To accomplish these goals, you:
 
 > [!div class="checklist"]
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
-> * Clone a GitHub repo for this module.
+> * Fork the GitHub repo for this module.
 > * Create the Azure App Service using the Azure CLI in Azure Cloud Shell.
 
 ## Add a user to Azure DevOps
@@ -17,15 +17,12 @@ If you use different Microsoft accounts to sign in to Azure and Azure DevOps, ad
 
 Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
-## Clone the GitHub repo
+## Fork the GitHub repo
 
-Here you clone the GitHub repo required for this project. It's a simple Java web app designed to be built and deployed as a Docker container.
+Here you fork the GitHub repo required for this project. It's a basic Java web app designed to be built and deployed as a Docker container.
 
-1. Navigate your browser to the [Java Containers repo](https://github.com/MicrosoftDocs/mslearn-java-containers?azure-portal=true).
+1. Go to the [Java Containers repo](https://github.com/MicrosoftDocs/mslearn-java-containers?azure-portal=true).
 1. Select **Fork** and select an account to fork into.
-
-> [!IMPORTANT]
-> In this module, the [Clean up your Azure DevOps environment](/learn/modules/deploy-java-containers/5-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.
 
 ## Create the Azure App Service environment
 
@@ -74,9 +71,9 @@ To make commands easier to run, start by selecting a default region. After you s
     az configure --defaults location=westus2
     ```
 
-### Create some Bash variables
+### Create Bash variables
 
-Here, create some Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
+Here, create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
 
 1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
 
@@ -85,23 +82,23 @@ Here, create some Bash variables to make the setup process more convenient and l
     ```
 
 1. Create globally unique names for your App Service Web App, Azure Container Registry, and Azure Database for MySQL server. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
- 
-    ```azurecli
-	webName="java-container-cicd-${resourceSuffix}"
-	registryName="javacontainercicd${resourceSuffix}"
-	dbServerName="java-container-cicd-${resourceSuffix}"
-	```
-
-1. Create two more Bash variables to store the names of your resource group and service plan. 
 
     ```azurecli
-	rgName='java-container-cicd-rg'
-	planName='java-container-cicd-asp'
-	```
+    webName="java-container-cicd-${resourceSuffix}"
+    registryName="javacontainercicd${resourceSuffix}"
+    dbServerName="java-container-cicd-${resourceSuffix}"
+    ```
 
-### Create the Azure resources required
+1. Create two more Bash variables to store the names of your resource group and service plan.
 
-This solution requires several Azure resources for deployment, which will be created now.
+    ```azurecli
+    rgName='java-container-cicd-rg'
+    planName='java-container-cicd-asp'
+    ```
+
+### Create the Azure resources
+
+This solution requires several Azure resources for deployment, which you create now.
 
    > [!NOTE]
    > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
@@ -109,13 +106,13 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Run the following `az group create` command to create a resource group using the name defined earlier.
 
     ```azurecli
-	az group create --name $rgName
+    az group create --name $rgName
     ```
 
-1. Run the following `az mysql server create` command to create an Azure Database for MySQL server using the name defined earlier. You may opt to change the admin username and password supplied here, but just remember them for later reference. Note that this step may take several minutes to complete.
+1. Run the following `az mysql server create` command to create an Azure Database for MySQL server using the name defined earlier. You can change the administrator username and password shown here; just remember them for later reference.
 
     ```azurecli
-	az mysql server create \
+    az mysql server create \
       --name $dbServerName \
       --resource-group $rgName \
       --admin-user sysadmin \
@@ -124,10 +121,12 @@ This solution requires several Azure resources for deployment, which will be cre
       --version 5.7
     ```
 
-1. By default, all incoming connections to the MySQL server are blocked, so it is necessary to add at least one rule for it to be accessible. Run the following `az mysql server firewall-rule create` command to create a firewall rule to allow services hosted in Azure (like the one you are deploying) to access the server. 
+    The deployment can take several minutes to complete.
+
+1. By default, all incoming connections to the MySQL server are blocked, so it is necessary to add at least one rule for it to be accessible. Run the following `az mysql server firewall-rule create` command to create a firewall rule to allow services hosted in Azure (like the one you are deploying) to access the server.
 
     ```azurecli
-	az mysql server firewall-rule create \
+    az mysql server firewall-rule create \
       --name AllowAzureServices \
       --resource-group $rgName \
       --server $dbServerName \
@@ -135,10 +134,11 @@ This solution requires several Azure resources for deployment, which will be cre
       --end-ip-address 0.0.0.0
     ```
 
-1. Run the following `az acr create` command to create an Azure Container Registry using the name defined earlier.
+1. Run the following `az acr create` command to create an Azure Container Registry by using the name defined earlier.
 
     ```azurecli
-	az acr create --name $registryName \
+    az acr create \
+      --name $registryName \
       --resource-group $rgName \
       --sku Standard \
       --admin-enabled true
@@ -147,10 +147,10 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Run the following `az appservice plan create` command to create an App Service plan using the name defined earlier.
 
     ```azurecli
-	az appservice plan create \
-	  --name $planName \
-	  --resource-group $rgName \
-	  --sku B1 \
+    az appservice plan create \
+      --name $planName \
+      --resource-group $rgName \
+      --sku B1 \
       --is-linux
     ```
 
@@ -163,19 +163,19 @@ This solution requires several Azure resources for deployment, which will be cre
 
     ```azurecli
     az webapp create \
-	  --name $webName \
-	  --resource-group $rgName \
-	  --plan $planName \
+      --name $webName \
+      --resource-group $rgName \
+      --plan $planName \
       --deployment-container-image-name $registryName.azurecr.io/web:latest
     ```
 
-1. Run the following `az webapp list` command to list the host name and state of the App Service instance.
+1. Run the followi    ng `az webapp list` command to show the host name and state of the App Service instance.
 
     ```azurecli
     az webapp list \
-	  --resource-group $rgName \
-	  --query "[].{hostName: defaultHostName, state: state}" \
-	  --output table
+      --resource-group $rgName \
+      --query "[].{hostName: defaultHostName, state: state}" \
+      --output table
     ```
 
     Note the host name for the running service. You'll need it later when you verify your work. Here's an example:
@@ -190,17 +190,17 @@ This solution requires several Azure resources for deployment, which will be cre
 
     ```azurecli
     az acr list \
-	  --resource-group $rgName \
-	  --query "[].{loginServer: loginServer}" \
-	  --output table
+      --resource-group $rgName \
+      --query "[].{loginServer: loginServer}" \
+      --output table
     ```
 
     Note the login server. You'll need it later when you configure the pipeline. Here's an example:
 
     ```output
-	LoginServer
-	---------------------------------
-	javacontainercicd18116.azurecr.io    
+    LoginServer
+    ---------------------------------
+    javacontainercicd18116.azurecr.io    
     ```
 
 > [!IMPORTANT]

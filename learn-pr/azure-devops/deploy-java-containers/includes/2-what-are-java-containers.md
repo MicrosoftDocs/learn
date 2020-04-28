@@ -1,17 +1,17 @@
-## What is Java?
+In this part, you learn some of the ways Azure and Azure DevOps support Java applications.
 
-**Java** is a general purpose programming language designed to be flexible in its deployment targets. Java includes strong native support for object-oriented programming, which enables developers to develop applications that scale in size and complexity, which makes it an ideal candidate for modern applications. You can learn more about the details on the [official Java site](https://www.java.org/?azure-portal=true).
+**Java** is a general purpose programming language that's designed to be flexible in its deployment targets. Java includes strong native support for object-oriented programming, which enables you to develop applications that scale in size and complexity, which makes it an ideal candidate for modern applications. Learn more at [java.org](https://www.java.org/?azure-portal=true).
 
 ## What is Docker?
 
-**Docker** is a technology for automating the packaging and deployment of portable, self-sufficient containers. Docker containers can be run anywhere a Docker host is found, whether on a development machine, a departmental server, an enterprise datacenter, or in the cloud. Azure provides multiple ways to run container-based applications, including in app services or as part of clusters managed with orchestration technologies like Kubernetes. You can learn more about the details on the [official Docker site](https://www.docker.com/?azure-portal=true).
+**Docker** automates the packaging and deployment of portable, self-sufficient containers. Docker containers can be run anywhere a Docker host is found, whether on a development machine, a departmental server, an enterprise datacenter, or in the cloud. Azure provides multiple ways to run container-based applications, including in app services or as part of clusters managed with orchestration technologies like Kubernetes. Learn more at [docker.com](https://www.docker.com/?azure-portal=true).
 
 > [!NOTE]
 > This module is based on a Java project that is deployed as a Docker container, although its contents should generally apply to non-Docker Java apps and non-Java Docker apps.
 
 ## What is Azure Database for MySQL?
 
-**Azure Database for MySQL** is a fully managed MySQL database-as-a-service offering from Microsoft. Whether you're building new applications targeting MySQL, or migrating legacy applications via lift-and-shift, Azure Database for MySQL provides the enterprise-ready solution needed for modern applications. You can learn more about the details on the [official Azure Database for MySQL site](https://azure.microsoft.com/services/mysql/?azure-portal=true).
+**Azure Database for MySQL** is a fully managed MySQL database-as-a-service offering from Microsoft. Whether you're building new applications targeting MySQL, or migrating legacy applications, Azure Database for MySQL provides the enterprise-ready solution needed for modern applications. To learn more, see [Azure Database for MySQL](https://azure.microsoft.com/services/mysql/?azure-portal=true).
 
 ## Java and Azure
 

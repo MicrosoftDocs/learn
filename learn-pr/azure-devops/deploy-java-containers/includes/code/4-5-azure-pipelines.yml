@@ -1,8 +1,8 @@
     - task: CopyFiles@2
       displayName: Copy WAR file to staging directory
       inputs:
-        SourceFolder: '$(build.sourcesdirectory)'
-        Contents: |
+        sourceFolder: '$(build.sourcesdirectory)'
+        contents: |
           target/myshuttledev*.war
           *.sql
-        TargetFolder: '$(build.artifactstagingdirectory)'
+        targetFolder: '$(build.artifactstagingdirectory)'

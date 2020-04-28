@@ -2,25 +2,24 @@
 uid: learn.azdo.deploy-java-containers
 metadata:
   title: Automate Java container deployments with Azure Pipelines - Learn
-  description: Learn to implement a CI/CD pipeline for Java containers.
+  description: Implement a CI/CD pipeline for Java containers.
   ms.date: 04/28/2020
   author: tpetchel
   ms.author: tpetchel
   ms.topic: interactive-tutorial
-  #ms.learn-contact: tpetchel
   ms.prod: learning-azure
 title: Automate Java container deployments with Azure Pipelines
-summary: Learn to implement a CI/CD pipeline for Java containers.
+summary: Implement a CI/CD pipeline for Java containers.
 abstract: |
   In this module, you will:
-  - Create Azure resources to support a Java container solution.
-  - Create an Azure DevOps pipeline to build and release the solution to Azure.
-  - Monitor the build, release, and deployment of the project.
+  - Learn how Azure and Azure DevOps support Java applications.
+  - Create a project in Azure Pipelines that builds and deploys a basic Java application to Azure.
+  - Trigger the pipeline and see your application be built and deployed to Azure.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/create-multi-stage-pipeline.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
