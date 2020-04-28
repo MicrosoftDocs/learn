@@ -163,7 +163,7 @@ What this parameter defines is the radius of neighboring states that we could mo
 By the end of the anneal, the system has settled into one particular configuration of low energy which can then be measured, thus yielding a (not necessarily optimal) solution to the desired optimization problem.
 The most mathematically clean formulation of quantum annealing is called adiabatic quantum optimization, and is what quantum inspired methods attempt to emulate.
 
-### From Quantum to Quantum Inspired Optimization
+## From Quantum to Quantum Inspired Optimization
 One essential feature determining the difficulty of optimization problems is the shape of the barriers that separate local minima from deeper neighboring minima. 
 It can be shown in some examples that the runtime of adiabatic quantum optimization algorithms depends sensitively on the width of these barriers but is relatively insensitive to their height. 
 Example problems can be constructed containing tall narrow barriers that are solved efficiently by adiabatic quantum optimization but which require exponential time to solve by simulated annealing due to the exponentially small Boltzmann factors.
@@ -177,7 +177,7 @@ There are a variety of techniques that we have developed, and over time the suit
 As with all heuristic algorithms, knowing which solvers perform well is often a combination of intuition about when tunneling-like phenomena can be expected to help with solving optimization problems.
 However it is also through experimentation; testing these algorithms on different varieties of optimization instances and observing their performance.
 
-#### Diffusion Monte Carlo 
+### Diffusion Monte Carlo 
 
 Diffusion Monte Carlo is a type of population method, and on a technical level these are derived by writing an imaginary-time analogue of Schrödinger’s equation, which governs the dynamics of the quantum wavefunction:
 
@@ -196,7 +196,7 @@ On the left, an objective function V is shown which depends only on the Hamming 
 On the right the distribution of walkers (with color indicating concentration of walkers) is plotted as a function of Hamming weight (vertical axis) and anneal time (horizonal axis). 
 Walkers at Hamming weight above the barrier eventually die off as walkers below the barrier reproduce, thereby mimicking quantum tunneling.
 
-#### Path integral Monte Carlo (PIMC)
+### Path integral Monte Carlo (PIMC)
 Path-integral methods work by applying a random walk not to a population of independent walkers but rather to a path through a sequence of possible locations in the search space. 
 As in population methods, the precise random walk taken by these paths is derived by adherence to an imaginary-time version of Schrödinger’s equation. 
 Intuitively, one can regard such a path as a collection of walkers which each preferentially hop into areas of lower objective function, but which are loosely tied to each other by a chain of elastic bands. 
@@ -212,7 +212,7 @@ Results show that time requiired for Path Integral Monte Carlo to escape from a 
 - **Replica**: A copy of the system which is being simulated.
 - **Parallel tempering**: A method used to improve the dynamic properties of Monte Carlo simulations
 
-#### Substochastic Monte Carlo (SSMC)
+### Substochastic Monte Carlo (SSMC)
 Substochastic Monte Carlo is a population method that originally aimed to approximate adiabatic evolution in order to solve optimization problems, however it ended up that (given the same annealing schedule) it can exponentially outperform the quantum algorithm that inspired it.
 
 The paths of walkers in the SSMC method are governed by a time-dependent transition rate matrix H(t) through the diffusion equation:
@@ -223,7 +223,7 @@ In plain English, this means that a population of walkers are diffused in the so
 These walkers are then repopulated elsewhere, at the site of a randomly chosen surviving walker.
 If you are familiar with the "go with the winners" algorithm, SSMC is considered a more general (and in some cases, exponentially faster) version of GWW.
 
-#### Parallel tempering
+### Parallel tempering
 Parallel tempering is a method that can be used to accelerate both classical and simulated quantum annealing approaches, as well as many other heuristics. 
 It does this by simulating several independent copies of the target system at different temperatures.
 After a fixed number of Monte Carlo sweeps (where a step is made, and the move is either rejected or accepted), two copies of the system at neighbouring temperatures are selected and exchanged according to a certain probability:
