@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.test-device-connectivity-offline-support
+uid: learn.iot.run-iot-edge-device-restricted-network-offline.test-device-connectivity-offline-support
 metadata:
   title: Test Device Connectivity and Offline Support
   description: Test Device Connectivity and Offline Support
