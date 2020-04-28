@@ -1,6 +1,34 @@
-A cloud operating model enables your organization to have a structured set of tools and processes to deliver successful and cost effective solutions on Azure. It helps you 
+Whether your organization is planning to build a new application on Azure or you're looking to move an entire data center to the cloud, estimating costs is a key piece of ensuring a successful project. How do you know which services to select, or which size to choose? Do you provision virtual machines for your workload, or do you take advantage of higher-level servcies that can reduce operational costs? Proper planning is incredibly important to any cloud project, let's take a look at what to consider.
 
-## Plan
+## Capture requirements
+
+Capture requirements
+Define workloads
+Identify resources
+Identify stakeholders
+
+Before beginning any cloud project, it's important to take time to properly plan, and that's especially important when considering costs. The cloud introduces a shift from purchasing static equipment like servers and switches, to a dynamic model where you purchase the usage of services, proper planning and 
+
+## Estimate costs
+
+Research subscription models
+Understand Azure billing
+Estimate the initial cost
+Identify areas of additional investment
+
+## Create organization for cost-awareness
+
+Create control policies
+Create groups and roles to check cost
+Enforce tagging
+
+## Budget for education
+
+
+
+
+
+<!-- ## Plan
 
 Establishing clear business outcomes, a clearly defined digital estate plan, and well-understood adoption backlogs.
 
@@ -50,7 +78,7 @@ Adding some organization to your resources can go a long way and can really aid 
 
 ### Manage
 
-### Support
+### Support -->
 
 <!-- ## Measure
 
