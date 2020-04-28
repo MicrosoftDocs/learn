@@ -4,7 +4,7 @@ However, before your app can be hosted, you'll need something that will build yo
 
 ## Key components
 
-When you publish your app to the web with Azure Static Web Apps, you're getting fast hosting of your static assets and scalable APIs. You're also getting a unified workflow provided by GitHub Actions.
+When you publish your app to the web with Azure Static Web Apps, you're getting fast hosting of your static assets and scalable APIs. You're also getting a unified build and deployment workflow provided by GitHub Actions.
 
 The key ingredients to create an Azure Static Web App are:
 
