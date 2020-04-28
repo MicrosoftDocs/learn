@@ -1,4 +1,4 @@
-In this unit, first you create an Azure Maps account. Then, navigate the Azure portal to extract a string called the _Primary Key_. This string is needed to veryify you have an account, when writing the code section of this module.
+In this unit, first you create an Azure Maps account. Then, navigate the Azure portal to extract a string called the _Primary Key_. This string is needed to verify you have an account, when writing the code section of this module.
 
 ## Create an Azure Maps account
 

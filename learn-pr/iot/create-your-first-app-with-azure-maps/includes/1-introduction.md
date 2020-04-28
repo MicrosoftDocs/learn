@@ -1,6 +1,6 @@
 Finding your way on a map is fun, right up to the point where you realize you are lost!
 
-Getting lost is not usually a desirable position to be in. In this module, we will build an aop that will find a route many thousands of miles long, yet is accurate to such a level of detail that a driver will know which turn to take to bypass road construction in the middle of a bustling city.
+Getting lost is not usually a desirable position to be in. In this module, we will build an app that will find a route many thousands of miles long, yet is accurate to such a level of detail that a driver will know which turn to take to bypass road construction in the middle of a bustling city.
 
 Route finding is just one of many features of Azure Maps. Other features have nothing to do with roads and routes. For example, it can be used to display any spatial data: population changes, or any census data, weather systems, industrial or agricultural output, construction cranes per square mile, or just about anything you can think of.
 
@@ -20,16 +20,16 @@ In this module, you will:
 
 - An introductory knowledge of the purpose of Azure Maps
 - Ability to navigate Azure portal 
-- Ability to use HTML and JavaScript, at the beginner level 
-- Experience using Visual Studio Code, at the beginner level 
+- Ability to use HTML and JavaScript, at the beginner level
+- Experience using Visual Studio Code, at the beginner level
 
 ## The scenario
 
-We are going to use Azure Maps route finding, to select a best route from a west coast city, to an east coast city. We have arbitrarily chosen Seattle, Portland, and San Francisco as the west coast cities, and New York, Charleston and Miami as the east coast cities. You will be able to change these to any favorites you may have.
+We are going to use Azure Maps route finding, to select a best route from a west coast city, to an east coast city. We have arbitrarily chosen Seattle, Portland, and San Francisco as the west coast cities, and New York, Charleston, and Miami as the east coast cities. You will be able to change these locations to any favorites you may have.
 
 Also, we want to find the route for a variety of vehicles. We will find the routes for a truck, a car, and a bicycle. OK, so cycling from Seattle to Miami may sound like madness to many. However, there is method to our madness. By including bicycles in our selection of vehicles, we will be able to see the cross country routes, the passenger only ferries, or the bike paths, that are included in the underlying Azure Maps data. 
 
-On a more professional note, we can also vary the contents of our truck. There are quite a few classifications of hazardous materials, and our test app will allow us to specify any one of them. We do this so again, we can see if the Azure Maps route finding algorithms can navigate through areas with road-use restrictions - "No explosive materials in the I-90 tunnel", for example.
+On a more professional note, we can also vary the contents of our truck. There are quite a few classifications of hazardous materials, and our test app will allow us to specify any one of them. We add this feature so, again, we can see if the Azure Maps route finding algorithms can navigate through areas with road-use restrictions - "No explosive materials in the I-90 tunnel", for example.
 
 Finally, we need to know that a "route" may well consist of more that a start and ending location. There can be many intermediary points on any desired route. For our test app, we will add the option of saying "hi" to Chicago on the way across country.
 
