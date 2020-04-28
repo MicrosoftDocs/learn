@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-virtual-machine-software-installation-configuration.automate-installation-virtual-machine
+title: Automate the installation of a virtual machine
+metadata:
+  title: Automate the installation of a virtual machine
+  description: Learn how to automate the installation of a virtual machine.
+  ms.date: 04/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: platform-cloud
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-automate-installation-virtual-machine.md)]

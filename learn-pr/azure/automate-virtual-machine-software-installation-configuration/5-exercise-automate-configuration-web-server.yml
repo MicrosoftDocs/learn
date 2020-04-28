@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-virtual-machine-software-installation-configuration.exercise-automate-configuration-web-server
+title: Exercise - Automate the configuration of a web server
+metadata:
+  title: Exercise - Automate the configuration of a web server
+  description: In this exercise you'll automate the configuration of a web server.
+  ms.date: 04/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: platform-cloud
+interactive: bash
+azureSandbox: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-automate-configuration-web-server.md)]

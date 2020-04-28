@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-virtual-machine-software-installation-configuration.exercise-automate-installation-virtual-machine
+title: Exercise - Automate the installation of a virtual machine
+metadata:
+  title: Exercise - Automate the installation of a virtual machine
+  description: In this exercise you'll automate the installation of a virtual machine.
+  ms.date: 04/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: platform-cloud
+interactive: bash
+azureSandbox: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-automate-installation-virtual-machine.md)]

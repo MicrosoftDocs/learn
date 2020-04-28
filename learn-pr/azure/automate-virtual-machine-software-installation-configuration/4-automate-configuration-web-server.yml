@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-virtual-machine-software-installation-configuration.automate-configuration-web-server
+title: Automate the configuration of a web server
+metadata:
+  title: Automate the configuration of a web server
+  description: Learn how to automate the configuration of a web server.
+  ms.date: 04/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: platform-cloud
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-automate-configuration-web-server.md)]
