@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.deploy-java-containers.2-what-are-java-containers
-title: What are Java containers?
+uid: learn.azdo.deploy-java-containers.2-azure-support-java
+title: How do Azure and Azure DevOps support Java applications?
 metadata:
-  title: What are Java containers?
+  title: How do Azure and Azure DevOps support Java applications?
   description: Understand what Java containers are and how they can be deployed to Azure.
   ms.date: 04/28/2020
   author: tpetchel
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-what-are-java-containers.md)]
+  [!include[](includes/2-azure-support-java.md)]
 quiz:
   title: Check your knowledge
   questions:
