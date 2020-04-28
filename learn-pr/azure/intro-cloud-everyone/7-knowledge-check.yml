@@ -25,18 +25,18 @@ quiz:
     - content: Listening more versus having the answers, diving deeper to understand barriers, caring about every person as an individual, and focusing on empowering others to be great.
       isCorrect: True
       explanation: We should listen more and empower others.
-  - content: Which of the following statements describes Cloud for Everyone?  
+  - content: What does the Inclusive Marketing operating model encourage you to consider?
     choices:
-    - content: Making it easy for customers to find, and sign up for, cloud technologies online.
-      isCorrect: False
-      explanation: Cloud for Everyone is larger in scope.
-    - content: Focuses on embracing D&I, and applying those principles to our cloud business.
+    - content: Consider what you market, who you market to, and how you market.
       isCorrect: True
-      explanation: It helps us implement D&I to our cloud business.
-    - content: The process that Microsoft uses to implement D&I within the company.
+      explanation: Inclusive Marketing is an operating model consisting of three concepts that focus on the basics of what, who and how.
+    - content: Consider how to include other departments in your marketing
       isCorrect: False
-      explanation: This isn't true.
-  - content: Which of the following statements outlines examples of inclusive behaviors like inclusive culture, inclusive design, or Inclusive Marketing? 
+      explanation: Inclusive Marketing is an operating model consisting of three concepts that focus on the basics of what you market, who you market to, and how you market.
+    - content: Consider what to include in your marketing materials
+      isCorrect: False
+      explanation: Inclusive Marketing is an operating model consisting of three concepts that focus on the basics of what you market, who you market to, and how you market.
+  - content: Which of the following statements outlines examples of behaviors like inclusive culture, inclusive design, or Inclusive Marketing? 
     choices:
     - content: Acting from individual knowledge, making assumptions, strategizing within a team to create an execution plan, and designing from knowledge and experience.
       isCorrect: False
