@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.configure-iot-edge-device-gateway
+uid: learn.iot.run-iot-edge-device-restricted-network-offline.configure-iot-edge-device-gateway
 metadata:
   title: Configure IoT Edge Device as Gateway
   description: Configure IoT Edge Device as Gateway
