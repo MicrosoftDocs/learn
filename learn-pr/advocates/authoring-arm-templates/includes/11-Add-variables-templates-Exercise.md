@@ -7,23 +7,23 @@ At the end of the previous exercise, your template looked like the following:
 The parameter for the storage account name is hard-to-use because you have to provide a unique name. In unit 8, we addressed a way to use functions to generate a unique name instead of having you guess a unique name.  Now we can use that function to solve this problem by adding a variable that will use that function and constructs a unique name for the storage account still using the passed parameter as the prefix string.
 
 ### Use variable
-The following example highlights the changes you can make to add a variable to your template that creates a unique storage account name. Copy the whole file and replace your template with its contents.
+The following example highlights the changes you can make to add a variable to your template that creates a unique storage account name. Copy the whole file and use it in the following exercise.
 
 :::code language="JSON" source="../samples/exercise4-function-2.json" highlight="4-9,29-31,36":::
 
 Notice that there are some edits from the previous code:
 
-1. The parameter "storageName" was changed to "storagePrefix" and its "maxLength" value was changed to "11".  This is to ensure the prefix + the generated unique string would not exceed the maximum storage account name length limit of 24
-1. It now includes a variable named uniqueStorageName. This variable uses five functions to construct a string value.
+1. The parameter **"storageName"** was changed to **"storagePrefix"** and its **"maxLength"** value was changed to **11** from **24**.  This is to ensure the prefix + the generated unique string would not exceed the maximum storage account name length limit of 24
+1. The code now includes a variable named **uniqueStorageName**. This variable uses five functions to construct a string value.
     - toLower
     - concat
     - parameters
     - uniqueString
     - resourceGroup
-1. the resource name was changed from **"name": "[parameters('storageName')]",** to **"name": "[variables(uniqueStorageName)]",**  leverage the newly created variable.
+1. The resource name was changed from **"name": "[parameters('storageName')]",** to **"name": "[variables(uniqueStorageName)]",** to leverage the newly created variable.
 
-> [!NOTTE]
-> As previously mentioned, the result of "uniqueString(resourceGroup().id)" is a 13 character hash based on the "resourgroup().id" and therefore, it will **ALWAYS** be the same as long as you're deploying in the same resource group.  
+> [!NOTE]
+> As previously mentioned, the result of "uniqueString(resourceGroup().id)" is a 13 character hash based on result of **"resourgroup().id"** and therefore, it will **ALWAYS** be the same as long as you're deploying in the same resource group.  
 
 ### Deploy the template
 
