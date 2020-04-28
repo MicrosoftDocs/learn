@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.authoring-arm-templates.3-create-first-template-exercise
-title: Introduction
+title: Create your first template - Exercise
 interactive: bash
 azureSandbox: true
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Create your first template - Exercise
+  description: In this unit, you will, step by step, create a blank template from scratch, and deploy it to our sandbox environment.
   ms.date: 09/24/2018
   author: pierreroman
   ms.author: pierrer

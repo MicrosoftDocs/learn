@@ -1,4 +1,6 @@
-When writing ARM templates to deploy resources in your subscriptions, you'll need to find and use information about the resource providers and types of resources. For example, in the next unit you'll be adding a storage account to your template. In that case, you'll need to work with the **Microsoft.Storage** resource provider. This resource provider offers many resources types to name a few:
+When writing ARM templates to deploy resources in your subscriptions, you'll need to find and use information about the resource providers and types of resources.
+
+For example, in the next exercise, you'll be adding a storage account to your template. In that case, you'll need to work with the **Microsoft.Storage** resource provider. This resource provider offers many resources types to name a few:
 
 1. storageAccounts
 1. storageAccounts/blobServices
@@ -6,9 +8,9 @@ When writing ARM templates to deploy resources in your subscriptions, you'll nee
 1. storageAccounts/queueServices
 1. storageAccounts/fileServices
 
-The name of a resource type is in the format: **{resource-provider}/{resource-type}**. Therefore, the resource type for a storage account is **Microsoft.Storage/storageAccounts**. You can use the following listing of the [Resource providers for azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers) to identify which providers you require to deploy a specific service. Once you know which provider and resource type you wish to deploy you need to find the right properties to use for each resource type.
+The name of a resource type is normally displayed in the format: **{resource-provider}/{resource-type}**. Therefore, the resource type for a storage account is **Microsoft.Storage/storageAccounts**. You can use the following listing of the [Resource providers for azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers) to identify which providers you require to deploy a specific service. Once you know which provider and resource type you wish to deploy you need to find the right properties to use for each resource type.
 
-For that you go to the **[Define resources in Azure Resource Manager templates](https://docs.microsoft.com/azure/templates/)** page and in the left side menu find the resource you are trying to deploy. Right now you should be scrolling down to **Storage**.
+For that you go to the [Define resources in Azure Resource Manager templates](https://docs.microsoft.com/azure/templates/) page and in the left side menu find the resource you are trying to deploy. Right now you should be scrolling down to **Storage**.
 
 ![Microsoft.Storage resource types](../media/Storage-API-reference.png)
 

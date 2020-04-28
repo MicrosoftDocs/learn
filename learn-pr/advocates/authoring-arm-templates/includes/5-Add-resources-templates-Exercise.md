@@ -1,6 +1,6 @@
 ### Adding resources to your ARM template
 
-In tris exercise, you will add a storage account definition to your existing template.  To do so, you will edit the empty template you created in the last exercise.
+In this exercise, you will add a storage account definition to your existing template.  To do so, you will edit the empty template you created in the last exercise.
 
 1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
        

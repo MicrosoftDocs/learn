@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.authoring-arm-templates.2-create-first-template
-title: Introduction
+title: Create your first template
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Create your first template
+  description: This session will outline the benefits of using Azure Resource Manager (ARM) templates versus other forms of deployment for your Azure resources and itemize the structure of ARM templates.
   ms.date: 09/24/2018
   author: pierreroman
   ms.author: pierrer

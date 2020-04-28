@@ -39,7 +39,8 @@ units:
 - learn.advocates.authoring-arm-templates.9-template-functions-exercise
 - learn.advocates.authoring-arm-templates.10-add-variables-templates
 - learn.advocates.authoring-arm-templates.11-add-variables-templates-exercise
-- learn.advocates.authoring-arm-templates.12-use-parameter-file-exercise
-- learn.advocates.authoring-arm-templates.13-summary
+- learn.advocates.authoring-arm-templates.12-use-parameter-file
+- learn.advocates.authoring-arm-templates.13-use-parameter-file-exercise
+- learn.advocates.authoring-arm-templates.14-summary
 badge:
   uid: learn.advocates.authoring-arm-templates.badge
