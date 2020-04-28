@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azdo.deploy-nodejs
+metadata:
+  title: Automate Node.js deployments with Azure Pipelines - Learn
+  description: Implement CI/CD pipeline for Node.js applications.
+  ms.date: 04/24/2020
+  author: tpetchel
+  ms.author: tpetchel
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Automate Node.js deployments with Azure Pipelines
+summary: Implement CI/CD pipeline for Node.js applications.
+abstract: |
+  In this module, you will:
+  - Learn how Azure and Azure DevOps support Node.js applications.
+  - Create a project in Azure Pipelines that builds and deploys a basic Node.js application to Azure App Service.
+  - Trigger the pipeline and see your application be built and deployed to Azure.
+prerequisites: |
+  - An Azure subscription
+  - An Azure DevOps organization
+  - A GitHub account
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+units:
+- learn.azdo.deploy-nodejs.1-introduction
+- learn.azdo.deploy-nodejs.2-azure-support-nodejs
+- learn.azdo.deploy-nodejs.3-set-up-environment
+- learn.azdo.deploy-nodejs.4-deploy-nodejs
+- learn.azdo.deploy-nodejs.5-clean-up-environment
+- learn.azdo.deploy-nodejs.6-summary
+badge:
+  uid: learn.azdo.deploy-nodejs.badge
