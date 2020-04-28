@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.authoring-arm-templates.12-use-parameter-file-exercise
+uid: learn.advocates.authoring-arm-templates.12-use-parameter-file
 title: Use a parameter file to deploy your resources - Exercise.
 metadata:
   title: Use a parameter file to deploy your resources - Exercise.
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/12-Use-parameter-file-Exercise.md)]
+  [!include[](includes/12-use-parameter-file.md)]
