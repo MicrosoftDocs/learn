@@ -45,7 +45,7 @@ The following code creates a free F1 hub in the resource group IoTEdgeResources.
 
 
 ```azurecli
-az iot hub create --resource-group IoTEdgeResources --name {hub_name} --sku S1
+az iot hub create --resource-group IoTEdgeResources --name {hub_name} --sku F1 --partition-count 2
 ```
 
 ## Registering an IoT Edge device
