@@ -1,1 +1,1 @@
-#### Place Holder
+#### Add variables to your template.

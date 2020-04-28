@@ -1,4 +1,4 @@
-#### Add template functions to your template.
+#### Add functions to your template.
 
 At the end of the previous tutorial, your template had the following JSON code in it:
 
