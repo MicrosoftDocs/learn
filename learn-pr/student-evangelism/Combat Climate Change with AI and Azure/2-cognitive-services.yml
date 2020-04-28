@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.combat-climate-change-with-azure.2-cognitive-services
+title: Train a machine-learning model to recognize polar bears
+metadata:
+  title: Train a machine-learning model to recognize polar bears
+  description: Use Azure's Custom Vision Service to train a machine-learning model to recognize polar bears
+  ms.date: 04/28/2020
+  author: v-jepros
+  ms.author: shana.matthews
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-cognitive-services.md)]

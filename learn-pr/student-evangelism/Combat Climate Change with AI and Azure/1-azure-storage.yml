@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.combat-climate-change-with-azure.1-azure-storage
+title: Create a storage account and deploy virtual cameras
+metadata:
+  title: Create a storage account and deploy virtual cameras
+  description: Create a storage account to store wildlife photos and deploy virtual cameras to upload photos
+  ms.date: 04/28/2020
+  author: v-jepros
+  ms.author: shana.matthews
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-azure-storage.md)]

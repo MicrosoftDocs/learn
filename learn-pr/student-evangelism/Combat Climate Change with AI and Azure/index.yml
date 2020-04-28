@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.combat-climate-change-with-azure
+metadata:
+  title: Combat Climate Change with AI and Azure - Learn
+  description: Build an end-to-end solution in Azure that uses AI to detect polar bears in photographs and Power BI to show where polar bears are being spotted
+  ms.date: 04/28/2020
+  author: v-jepros
+  ms.author: shana.matthews
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Combat Climate Change with AI and Azure
+summary: Build an end-to-end solution in Azure that uses AI to detect polar bears in photographs and Power BI to show where polar bears are being spotted
+abstract:  | 
+  In this module, you will:
+  - Create an Azure Storage account
+  - Deploy virtual cameras that upload wildlife photos to the storage account
+  - Train a machine-learning model to detect polar bears in photographs
+  - Write an Azure Function that invokes the machine-learning model
+  - Deploy an Azure SQL Database to capture output from the Azure Function
+  - Connect Power BI to the Azure SQL Database
+  - Create a Power BI report that shows where polar bears are being spotted on a map
+  prerequisites: None
+#iconUrl:
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- powerbi
+units:
+- learn.combat-climate-change-with-azure.0-introduction
+- learn.combat-climate-change-with-azure.1-azure-storage
+- learn.combat-climate-change-with-azure.2-cognitive-services
+- learn.combat-climate-change-with-azure.3-azure-functions
+- learn.combat-climate-change-with-azure.4-azure-sql-database
+- learn.combat-climate-change-with-azure.5-power-bi
+- learn.combat-climate-change-with-azure.6-summary
+achievement: learn.placeholder.badge

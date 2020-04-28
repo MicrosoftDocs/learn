@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.combat-climate-change-with-azure.5-power-bi
+title: Create a Power BI report
+metadata:
+  title: Create a Power BI report
+  description: Create a Power BI report to show where polar bears are being spotted
+  ms.date: 04/28/2020
+  author: v-jepros
+  ms.author: shana.matthews
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-power-bi.md)]
