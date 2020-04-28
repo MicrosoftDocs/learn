@@ -57,9 +57,7 @@ In this exercise, you'll use the `az acr replication create` Azure CLI command t
 
 Keep in mind that you aren't limited to the Azure CLI to list your image replicas. From within the Azure portal, selecting `Replications` for an Azure Container Registry displays a map that details current replications. Container images can be replicated to additional regions by selecting the regions on the map.
 
-[![Screenhost that shows the container replication map as seen in the Azure portal.](../media/replication-map.png)](../media/replication-map-expanded.png#lightbox)
-
-:::image type="content" source="../media/replication-map.png" alt-text="Screenshot showing the container replication world map as seen in the Azure portal with many circles across several countries." lightbox="../media/replication-map-expanded.png":::
+[![Screenshot of Azure portal showing the container replication world map with many circles marked across several countries.](../media/replication-map.png)](../media/replication-map-expanded.png#lightbox)
 
 ## Summary
 
