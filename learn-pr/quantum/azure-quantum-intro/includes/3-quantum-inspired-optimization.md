@@ -212,6 +212,17 @@ Results show that time requiired for Path Integral Monte Carlo to escape from a 
 - **Replica**: A copy of the system which is being simulated.
 - **Parallel tempering**: A method used to improve the dynamic properties of Monte Carlo simulations
 
+#### Substochastic Monte Carlo (SSMC)
+Substochastic Monte Carlo is a population method that originally aimed to approximate adiabatic evolution in order to solve optimization problems, however it ended up that (given the same annealing schedule) it can exponentially outperform the quantum algorithm that inspired it.
+
+The paths of walkers in the SSMC method are governed by a time-dependent transition rate matrix H(t) through the diffusion equation:
+
+TODO: equation
+
+In plain English, this means that a population of walkers are diffused in the solution space, and the objective function governs the rate at which a walker "dies".
+These walkers are then repopulated elsewhere, at the site of a randomly chosen surviving walker.
+If you are familiar with the "go with the winners" algorithm, SSMC is considered a more general (and in some cases, exponentially faster) version of GWW.
+
 #### Parallel tempering
 Parallel tempering is a method that can be used to accelerate both classical and simulated quantum annealing approaches, as well as many other heuristics. 
 It does this by simulating several independent copies of the target system at different temperatures.
