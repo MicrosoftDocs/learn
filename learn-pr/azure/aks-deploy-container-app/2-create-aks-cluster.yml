@@ -3,9 +3,9 @@ uid: learn.aks-deploy-container-app.2-create-aks-cluster
 metadata:
   title: Create an Azure Kubernetes Service cluster
   description: Create an Azure Kubernetes Service cluster
-  ms.date: 05/30/2020
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 04/24/2020
+  author: khaosdoctor
+  ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an Azure Kubernetes Service cluster

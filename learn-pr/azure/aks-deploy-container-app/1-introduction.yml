@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-uid.1-introduction
+uid: learn.aks-deploy-container-app.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 05/30/2020
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 04/24/2020
+  author: khaosdoctor
+  ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
