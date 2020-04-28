@@ -73,7 +73,7 @@ Alternatively, we might say it was a 2-local problem.
 In Azure Quantum, you might see these problems described as "quadratic unconstrained binary optimization problems", or QUBOs.
 - **PUBO**: In the final case, we described a polynomial with maximum degree 3. 
 However, we could continue to extend this cost function so that it considered problems of a greater degree. 
-In Azure Quantum, we use the term "polynomial unconstrained binary optimization", or PUBO, to describe problems with a maximum degree $k$. 
+In Azure Quantum, we use the term "polynomial unconstrained binary optimization", or PUBO, to describe problems with a maximum degree *k*. 
 
 ### Accepting a move
 
