@@ -1,3 +1,5 @@
+### Create your Azure Resource Manager templates (ARM) - Exercise
+
 1. Open Visual Studio Code from the Azure shell provides here in the sandbox by using the following command.
        
 ```shell

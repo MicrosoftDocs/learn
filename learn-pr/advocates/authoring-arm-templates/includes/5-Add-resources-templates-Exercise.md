@@ -1,4 +1,4 @@
-### Adding resources to your ARM template
+### Adding resources to your ARM template - Exercise
 
 In this exercise, you will add a storage account definition to your existing template.  To do so, you will edit the empty template you created in the last exercise.
 

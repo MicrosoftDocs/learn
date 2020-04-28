@@ -1,4 +1,4 @@
-### What are Azure Resource Manager templates (ARM)
+### Create your Azure Resource Manager templates (ARM)
 
 Azure Resource Manager (ARM) templates are a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your deployment. The template uses a declarative syntax. Declarative syntax is a way of building the structure and elements that outline what resources will look like without describing its control flow.  Unlike imperative syntax that uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
 

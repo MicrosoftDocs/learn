@@ -1,4 +1,5 @@
-#### Review your template
+### Adding parameters to an ARM templates - Exercise
+
 At the end of the previous exercise, your template had the following JSON code in it:
 
 ```json
