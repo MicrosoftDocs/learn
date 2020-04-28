@@ -1,6 +1,5 @@
-In this unit, you will learn about quantum-inspired optimization methods, that will be available on Azure Quantum. Quantum-inspired optimization is a subset of quantum annealing methods. We will give an introduction to these methods and the types of optimization problems they can be used for.
-
 # Introduction to Quantum Inspired Optimization (QIO)
+In this unit, you will learn about quantum-inspired optimization methods, that will be available on Azure Quantum. Quantum-inspired optimization is a subset of quantum annealing methods. We will give an introduction to these methods and the types of optimization problems they can be used for.
 
 ## What is QIO?
 
