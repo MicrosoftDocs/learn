@@ -1,11 +1,12 @@
-Congratulations, you have completed all the development and testing work for this module. Let's summarize what we've learned, and finish with a short knowledge check.
+Congratulations, you've completed all the development and testing work for this module. Let's summarize what we've learned, and finish with a short knowledge check.
 
 In this module, you learned how to:
 
 - Create an Azure IoT Central custom app, using the IoT Central portal
-- Import a device template for a custom device, using the IoT Central portal
-- Monitor and command a simulated refrigerated truck, from an IoT Central dashboard
-- Create a range of rules, with associated actions, responding to the movements and state of the refrigerated truck
+- Import a capability model for a custom device, using the IoT Central portal
+- Create a programming project to simulate a refrigerated truck, using Visual Studio Code, or Visual Studio
+- Monitor and command the simulated truck, from an IoT Central dashboard
+- Create a range of rules and actions, responding to truck telemetry, using the IoT Central portal
 
 ## Clean up
 
@@ -21,5 +22,9 @@ Take your interest further with:
 - [Build workflows with the IoT Central connector in Microsoft Flow](https://docs.microsoft.com/azure/iot-central/howto-add-microsoft-flow)
 
 And look out for additional Learn modules covering IoT Central.
+
+## Learn more with a Channel 9 video series
+
+- [IoT 101](https://channel9.msdn.com/Series/IoT-101/?&WT.mc_id=EducationalIoT-c9-niner&azure-portal=true)
 
 To finish this module, and earn your rewards, complete a final knowledge check.

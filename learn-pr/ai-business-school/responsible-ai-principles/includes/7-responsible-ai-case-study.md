@@ -4,24 +4,24 @@ Data and statistical models have always been the lifeblood of the insurance indu
 
 We are already seeing AI integrated across many business functions in the insurance industry. Machine learning models are being used to better match consumer price to risk, streamline the claims process, and better detect fraud. Investments in AI technology are growing too. Sixty-three percent of insurers believe intelligent technologies will completely transform the industry. <sup>1</sup>
 
-However, as insurance companies invest further in AI, it’s imperative that their innovation is guided by a responsible AI strategy. As the leading auto and home insurer in the US, millions of people come to their “Good Neighbor” State Farm for insurance and financial services. Maintaining and amplifying that remarkable service is what guides State Farm decisions about applying AI solutions to enhance decision-making, increase productivity, lower costs, and create even better employee and customer experiences.
+However, as insurance companies invest further in AI, it's imperative that their innovation is guided by a responsible AI strategy. As the leading auto and home insurer in the US, millions of people come to their "Good Neighbor" State Farm for insurance and financial services. Maintaining and amplifying that remarkable service is what guides State Farm decisions about applying AI solutions to enhance decision-making, increase productivity, lower costs, and create even better employee and customer experiences.
 
 To do this responsibly, State Farm has established a governance system that assigns accountability for AI and oversees the development and management of AI solutions that benefit customers.
 
 ## Responsible AI governance at State Farm
 
-State Farm is careful to develop and evolve controls for AI systems in parallel with their AI solutions. In their governance approach, controls and oversight are applied throughout the solution’s lifecycle from the early development stages to running in production. To oversee responsible design and deployment of AI solutions, State Farm has established processes and assigned accountability to certain positions and groups.
+State Farm is careful to develop and evolve controls for AI systems in parallel with their AI solutions. In their governance approach, controls and oversight are applied throughout the solution's lifecycle from the early development stages to running in production. To oversee responsible design and deployment of AI solutions, State Farm has established processes and assigned accountability to certain positions and groups.
 
 :::row:::
 :::column span="2":::
 The __Chief Data and Analytics Officer__ has primary executive accountability for responsible AI across the organization. This position is responsible for leading, but not unilaterally dictating, the collaboration and evolution of responsible AI principles across the enterprise. While this role leads the Responsible AI governance effort, it requires the support of other governance entities.
 
-A central __validation team__ reports to the Chief Data and Analytics Officer’s department and oversees model validation and AI in software reviews. The team uses a systematic process to assess different aspects of AI models, including evaluating training data sets, mathematical approaches, and intended business uses.
+A central __validation team__ reports to the Chief Data and Analytics Officer's department and oversees model validation and AI in software reviews. The team uses a systematic process to assess different aspects of AI models, including evaluating training data sets, mathematical approaches, and intended business uses.
 
 A model risk __governance committee__ includes members from a variety of business areas including corporate law, enterprise risk management, office of privacy, IT, procurement, and executive partners in the lines of business, with corporate law providing legal advice to the committee. The committee provides strategic direction to the validation team by reviewing and approving model risk management procedures and guidelines. Among other responsibilities, the committee also serves as a forum for executive collaboration, education and discussion concerning model risk topics.
 :::column-end:::
 :::column span="2":::
-![Three building blocks of responsible AI governance at State Farm: Chief Data and Analytics Officer, Governance Committee, and Validation team.](../media/statefarm1.png)
+![Three building blocks of responsible AI governance at State Farm, represented by icons: Chief Data and Analytics Officer (person in formal attire analyzing a graph with a magnifying glass), Governance Committee (institutional building), and Validation team (three people in formal attire).](../media/statefarm1.png)
 :::column-end:::
 :::row-end:::
 
@@ -31,7 +31,7 @@ Through this governance approach, State Farm looks to continue evolving AI contr
 
 One example of how State Farm has put their governance approach into practice involved a key customer-facing process.
 
-In car accidents where damage to a vehicle is beyond repair or the repair cost exceeds the value of the car, a claim handler may determine that the claim is a “total loss.”  To reduce the time to settle an automobile damage claim, State Farm developed an AI model, called the Dynamic Vehicle Assessment Model (DVAM), to help predict a total loss even earlier in the claim process.
+In car accidents where damage to a vehicle is beyond repair or the repair cost exceeds the value of the car, a claim handler may determine that the claim is a "total loss."  To reduce the time to settle an automobile damage claim, State Farm developed an AI model, called the Dynamic Vehicle Assessment Model (DVAM), to help predict a total loss even earlier in the claim process.
 
 The DVAM leverages data collected when a customer files a claim to provide the customer with expanded vehicle inspection and settlement options. Using machine learning, the model predicts with a level of confidence if a vehicle is a total loss or repairable. In some cases, the model allows State Farm to bypass the physical inspection process and yet ensure a thorough investigation of the claim.
 
@@ -44,7 +44,7 @@ While the model itself is impressive, designing and deploying an AI solution at 
 As for AI governance, the business team and validation team collaborated to evaluate the model. The DVAM solution was launched in phases, which allowed State Farm to thoroughly assess the model before it was fully rolled out. The governance processes were transparent to all participants throughout the process, so there were no surprises.s
 :::column-end:::
 :::column span="2":::
-![Governance in action at State Farm. It took 15 days before DVAM. After DVAM, it takes 30 minutes.](../media/statefarm2.png)
+![Governance in action at State Farm. It took 15 days before DVAM. After DVAM, it takes 30 minutes. This difference is represented in a bar chart.](../media/statefarm2.png)
 :::column-end:::
 :::row-end:::
 
@@ -55,7 +55,7 @@ As for AI governance, the business team and validation team collaborated to eval
 
 ## Evaluation of the State Farm strategy
 
-Let’s examine how the State Farm AI strategy is creating value using the [value creation framework developed by Peter Zemsky](https://docs.microsoft.com/learn/modules/ai-strategy-to-create-business-value/2-holistic-ai-business-strategy-insead), INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation:
+Let's examine how the State Farm AI strategy is creating value using the [value creation framework developed by Peter Zemsky](https://docs.microsoft.com/learn/modules/ai-strategy-to-create-business-value/2-holistic-ai-business-strategy-insead), INSEAD's Eli Lilly Chaired Professor of Strategy and Innovation:
 
 1. From the __industry environment perspective__, insurance companies are looking to streamline their business processes and lower costs without jeopardizing the customer experience. The key to success will be balancing advancements in AI capabilities with responsible usage.
 2. From the __value creation perspective__, leveraging responsible AI principles to establish a governance system helps State Farm make faster and more informed decisions, generating value by improving customer and employee satisfaction.
@@ -65,4 +65,4 @@ Let’s examine how the State Farm AI strategy is creating value using the [valu
 
 State Farm sees their AI governance as essential to their innovation with AI. Their responsible AI frameworks allow them to make faster and more informed decisions, maintain customer trust and create even better customer and employee experiences. Through this approach, State Farm stays true to their deep sense of purpose to help people—a mission that contributes to their success in the long run.
 
-Next, let’s wrap up everything you’ve learned about responsible AI with a knowledge check.
+Next, let's wrap up everything you've learned about responsible AI with a knowledge check.

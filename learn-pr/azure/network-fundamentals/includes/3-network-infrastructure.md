@@ -55,7 +55,7 @@ Nearly all of these devices depend on a media access control or an Internet Prot
 
 The media access control (MAC) address is a unique identifier assigned to every network-enabled device at the time of manufacture. It's sometimes referred to as the burned-in address, the Ethernet hardware address, or a physical address.
 
-![A screenshot showing a network device's address information](../media/3-mac-address.png)
+:::image type="content" source="../media/3-mac-address.png" alt-text="A screenshot showing a network device's address information as returned when running the ipconfig /all command." loc-scope="other"::: <!--no-loc -->
 
 The MAC address has a standard composition of six hexadecimal numbers separated by a colon or dash, for example, AA-6A-BA-2B-68-C1. The first three numbers of the MAC address define the manufacturer's organizationally unique identifier (OUI). The remaining three numbers uniquely identify the device.
 

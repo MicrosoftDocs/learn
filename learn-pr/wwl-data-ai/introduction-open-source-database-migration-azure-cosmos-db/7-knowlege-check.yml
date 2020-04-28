@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/31/2020
+  ms.date: 02/17/2020
   author: wwlpublish
   ms.author: v-gea
   ms.topic: interactive-tutorial
@@ -49,13 +49,13 @@ quiz:
   - content: "Latency is important to your organization. What is the guarantee for Cosmos DB read and write latency globally?"
     choices:
     - content: "< 0.1-ms"
-      isCorrect: true
+      isCorrect: false
       explanation: "Cosmos DB guarantees less than 10-ms latency for indexed reads and for writes globally."
     - content: "< 1-ms"
       isCorrect: false
       explanation: "Cosmos DB guarantees less than 10-ms latency for indexed reads and for writes globally."
     - content: "< 10-ms"
-      isCorrect: false
+      isCorrect: true
       explanation: "Cosmos DB guarantees less than 10-ms latency for indexed reads and for writes globally."
   - content: "What is the size limit of a logical partition?"
     choices:

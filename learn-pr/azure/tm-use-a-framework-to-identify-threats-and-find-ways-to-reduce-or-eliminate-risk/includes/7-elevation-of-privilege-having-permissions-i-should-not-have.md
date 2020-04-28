@@ -1,0 +1,42 @@
+## What is It?
+
+**Elevation of privilege** occurs when individuals access resources without permission. Examples include:
+
+- Extracting data by exploiting weaknesses in input handling logic or memory
+- Finding and using privileged accounts to corrupt the service (used in combination with spoofing and tampering threats)
+
+## What's at Risk?
+
+### Elements
+
+|Name|Shape|Definition|
+|----|-----|----------|
+|Process|![Process](../media/process50.png)|Activity that modifies or redirects input to an output|
+
+### Interactions
+
+|Name|Interaction|Definition|
+|----|-----------|----------|
+|Process <-> Process|![Process to Process Interaction](../media/process-process.png)|A task sends data to another task|
+|Process <- External Entity|![Process to External Entity Unilateral Interaction](../media/process-externalentity-unilateral.png)|A task receives data from a user|
+|Process <- Data Store|![Process to Data Store Unilateral Interaction](../media/process-datastore-unilateral.png)|A task receives data from a data store|
+
+## How Can I Prevent It?
+
+**Authorization** ensures users have proper permissions. Examples include:
+
+- Implementing authorization mechanisms to verify permissions to data and resources
+- Applying security controls to run the service using the least possible amount of access
+- Monitoring access to detect anomalies and unauthorized access attempts. 
+
+### Common Security Controls to Reduce or Eliminate Risk
+
+- Access Control Lists (ACL)
+- Role-Based Access Controls (RBAC)
+- Group-Based Access
+- Permissions
+- Input Validation
+
+> [!TIP]
+> **Good Question to Ask**
+> How do I know the user is allowed to do this?

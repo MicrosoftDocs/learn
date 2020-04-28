@@ -42,7 +42,7 @@ Now use DEA to create a baseline capture of database events.
 
 The next step is to restore your database backup as "Target 1", and with SQL Server 2008 compatibility level.
 
-1. In **SQL Server Management Studio**, in **Object Explorer**, right-click **Databases**, and select **Restore Database...***.
+1. In **SQL Server Management Studio**, in **Object Explorer**, right-click **Databases**, and select **Restore Database...**.
 1. When the **Restore Database** window appears, click **Device**, and then click the browse **...** button.
 1. In the **Select backup devices** window, click **Add**.
 1. In the **Locate Backup File** window, navigate to **C:\\Program Files\\Microsoft SQL Server\\MSSQL14.MSSQLSERVER\\MSSQL\\Backup\\**, and select **AdventureWorks.bak**. Click **OK**.

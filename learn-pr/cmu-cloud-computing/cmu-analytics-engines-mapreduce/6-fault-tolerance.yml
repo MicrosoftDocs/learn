@@ -1,0 +1,145 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.6-fault-tolerance
+title: Fault tolerance
+metadata:
+  title: Fault tolerance
+  description: Learn about fault tolerance in MapReduce.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 14
+content: |
+  [!include[](includes/6-fault-tolerance.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block 1 question 1
+  - content: "How is data redundancy handled in Hadoop MapReduce?"
+    choices:
+    - content: "Data is made redundant through the underlying file system, HDFS, by using replication."
+      isCorrect: true
+      explanation: "Correct! Data redundancy is achieved through HDFS and is not a function of Hadoop MapReduce."
+    - content: "MapReduce always runs three instances of map tasks and reduce tasks, thereby producing multiple outputs, which are then compared to ensure correctness and achieve fault tolerance."
+      isCorrect: false
+      explanation: "Incorrect. Data redundancy is achieved through HDFS and is hot a function of Fladoop MapReduce. What's the primary redundancy mechanism in Hadoop, data or tasks?"
+
+# Did I Get This block 1 question 2      
+  - content: "How are tasks replicated in Hadoop MapReduce?"
+    choices:
+    - content: "A. Stragglers are speculated on nodes in parallel."
+      isCorrect: false
+      explanation: "That's not quite right. Stragglers are speculated on nodes in parallel, but are these the only type of tasks that are replicated in Hadoop MapReduce? Does Hadoop always need to replicate running tasks?"
+    - content: "B. Dead tasks are launched again on other nodes."
+      isCorrect: false
+      explanation: "That 's not quite right. Dead tasks are launched again on other nodes, but are these the only type of tasks that are replicated in Hadoop MapReduce? Does Hadoop always need to replicate running tasks?"
+    - content: "C. Each task is always replicated three times."
+      isCorrect: false
+      explanation: "Incorrect. Tasks are only replicated under certain conditions in Hadoop MapReduce. Does Hadoop always need to replicate running tasks?"
+    - content: "A. and B."
+      isCorrect: true
+      explanation: "Correct! Tasks are replicated for both straggler tasks and dead tasks."
+    - content: "All of the above"
+      isCorrect: false
+      explanation: "Incorrect. Tasks are only replicated under certain conditions in Hadoop MapReduce and not for all of the ones specified above. Does Hadoop always need to replicate running tasks?"
+
+# Did I Get This block 1 question 3
+# Missing image for question. Use image placeholder.
+# Original course uses interactive GUI not available in YAML. Added sample choices.
+# Original course has text field for progress difference value. For YAML, added possible values as choices.
+#  - content: "Consider the following map tasks with their individual progress scores:<br> 
+#             <img src=./media/quiz-placeholder.png></img> <br>
+#             What is the 20% progress difference threshold for this set of map tasks?"
+#    choices:
+#    - content: "Incorrect TBD"
+#      isCorrect: false
+#      explanation: "Incorrect. It can be calculated as the average of all the progress scores minus 20% (0.20)."
+#    - content: "Correct TBD"
+#      isCorrect: true
+#      explanation: "Correct."
+#    - content: "Incorrect TBD"
+#      isCorrect: false
+#      explanation: "Incorrect. It can be calculated as the average of all the progress scores minus 20% (0.20)"
+#
+# Did I Get This block 1 question 4
+#  - content: "Given the same scenario described for the previous question, Which tasks will be identified as stragglers?"
+#    choices:
+#    - content: "M6"
+#      isCorrect: false
+#      explanation: "That's not quite right. Is M6 the only straggler here?"
+#    - content: "M5 and M6"
+#      isCorrect: false
+#      explanation: "That's not quite right. Are M5 and M6 the only stragglers here?"
+#    - content: "M4, M5, and M6"
+#      isCorrect: false
+#      explanation: "That's not quite right. Does the progress score of M4 fall under the 20% progress score threshold?"            
+#    - content: "M3, M5, and M6"
+#      isCorrect: true
+#     explanation: "Correct."
+
+# Did I Get This block 2 question 1
+  - content: "The following is a list of some assumptions that Hadoop implicitly makes in speculative execution: <ul>
+             <li>A. There's no cost of scheduling a speculative task at a TT that exposes an idle slot.</li>
+             <li>B. TTs execute tasks at roughly the same rate.</li>
+             <li>C. Tasks in a job progress at a constant rate over time.</li>
+             <li>D. In a reduce task, the shuffle, the merge and sort, and the reduce stages take equal time (i.e., each takes one-third of the total reduce task time).</li>
+             <li>E. A task with a low progress score is probably a straggler because tasks tend to finish at comparable times.</li></ul>
+             Which of the above assumptions are most likely to break down in heterogeneous clouds but not in homogeneous ones?"
+    choices:    
+    - content: "A."
+      isCorrect: false
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution?"
+    - content: "A. and B."
+      isCorrect: false
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution?"
+    - content: "B. and C."
+      isCorrect: false
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution?"
+    - content: "B., C., and D."
+      isCorrect: false
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution?"
+    - content: "C."
+      isCorrect: false
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution?"
+    - content: "C., D., and E."
+      isCorrect: false
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution?"
+    - content: "B., C., and E."
+      isCorrect: true
+      explanation: "Correct! In a heterogeneous cloud, different TaskTrackers may have different hardware and hence may execute tasks at a different rate. In addition, tasks may progress at a different rate. Hence, tasks with low progress scores are not necessarily stragglers."
+
+# Did I Get This block 2 question 2
+  - content: "Here are three assumptions that Hadoop implicitly makes in speculative execution: <ul>
+             <li>A. TaskTrackers execute tasks at roughly the same rate.</li>
+             <li>B. In a reduce task, the shuffle, the merge and sort, and the reduce stages take equal times (i.e., each takes one-third of the total reduce task time).</li>
+             <li>C. The task with a low progress score is probably a straggler because tasks tend to finish at comparable times.</li></ul>
+             Assume a Hadoop cluster **C** with very limited network bandwidth, and a Hadoop job **J** with a very high shuffle rate. Which of the above assumptions are most likely to break down when running **J** over **C**?"
+    choices:
+    - content: "A."
+      isCorrect: false
+      explanation: "Incorrect. In this job, which stage is likely to be the slowest?"   
+    - content: "A. and B."
+      isCorrect: false
+      explanation: "Incorrect. In this job, which stage is likely to be the slowest?"    
+    - content: "B."
+      isCorrect: true
+      explanation: "Correct! The limited bandwidth may affect the shuffle and reduce stages, thereby affecting the task execution rate of a TaskTracker."    
+    - content: "B. and C."
+      isCorrect: false
+      explanation: "Incorrect. In this job, which stage is likely to be the slowest?"
+    - content: "C."
+      isCorrect: false
+      explanation: "Incorrect. In this job, which stage is likely to be the slowest?"
+
+# Did I Get This block 2 question 3
+# Did I Get This block has only intro statement and no visible graphic      
+# content: "Order the following tasks based on priority (assuming the default Hadoop task scheduler):"

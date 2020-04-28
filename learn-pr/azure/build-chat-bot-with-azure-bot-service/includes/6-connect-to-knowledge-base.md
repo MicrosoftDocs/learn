@@ -29,7 +29,7 @@ In this unit, you will connect your bot to the QnA Maker knowledge base you buil
 
 1. Select **Save** at the top of the window to persist your changes.
 
-    ![Screenshot of the Azure portal showing the bot pane and Application Settings details with the Application Settings menu item and appropriate setting keys highlighting.](../media/6-enter-app-settings.png)
+    ![Screenshot of the bot pane and Application Settings details with the Application Settings menu item and appropriate setting keys highlighting.](../media/6-enter-app-settings.png)
 
 ## Setup the Bot service code
 

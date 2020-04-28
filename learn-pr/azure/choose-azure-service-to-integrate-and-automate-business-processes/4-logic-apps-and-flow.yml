@@ -3,7 +3,7 @@ uid: learn.choose-azure-service-to-integrate-and-automate-business-processes.4-l
 title: Choose the best design-first technology to automate your business process
 metadata:
   title: Choose the best design-first technology to automate your business process
-  description: Use Azure Logic Apps or Microsoft Flow to orchestrate a business workflow
+  description: Use Azure Logic Apps or Microsoft Power Automate to orchestrate a business workflow
   ms.date: 04/10/2019
   author: rmcmurray
   ms.author: robmcm
