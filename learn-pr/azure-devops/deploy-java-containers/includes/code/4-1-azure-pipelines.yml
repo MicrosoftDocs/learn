@@ -1,0 +1,5 @@
+trigger:
+- master
+
+resources:
+- repo: self
