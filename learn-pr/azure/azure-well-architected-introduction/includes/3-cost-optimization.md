@@ -12,9 +12,11 @@ When an organization adopts a cloud platform, it must shift away from CapEx-orie
 
 To optimize costs in your organizations architecture, there are several principles that can be used to guide your efforts.
 
-### Develop a cloud operating model
+### Plan and estimate costs
 
-When adopting the cloud, it's important to establish an operating model that provides governance, reporting and measurement, and a framework for your organization to use to build cost-effective services. By establishing this operating model up front, you can minimize waste from the outset, and evolve your environment over time to take advantage of changes and advancements in cloud capabilities to ultimately reduce costs.
+For any cloud project, whether it's the development of a new application or a migration of an entire datacenter, it's important to get an estimate of your costs. This involves identifying any current resources to move or redevelop, understanding business objectives that may impact sizing, and selecting the appropriate services for the project. 
+
+With the requirements identified, you can use cost estimation tools to provide a more concise estimate of the resources that would be required. Transparency is important here, so that all stakeholders can review for accuracy and have visibility into the costs that are associated with the project.
 
 ### Provision with optimization
 
