@@ -4,7 +4,7 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: TBD
-  ms.date: 04/20/2020
+  ms.date: 04/28/2020
   author: erzelman
   ms.author: erzelman
   ms.topic: TBD
@@ -23,10 +23,10 @@ quiz:
     - content: "Word used to describe whether a product can be used by people of all abilities."
       isCorrect: true
       explanation: "Correct."
-      content: "Word used to rate the ease with which a person can use a product."
+    - content: "Word used to rate the ease with which a person can use a product."
       isCorrect: false
       explanation: "Incorrect."
-      content: "Word used to describe the security of products."
+    - content: "Word used to describe the security of products."
       isCorrect: false
       explanation: "Incorrect."
   - content: "If you are communicating with a person who is deaf who has a sign language interpreter, who should you speak to?"
@@ -37,10 +37,10 @@ quiz:
     - content: "Speak directly to the interpreter when you are talking, not the person."
       isCorrect: false
       explanation: "Incorrect."
-      content: "Speak to both the person and the interpreter when you are talking."
+    - content: "Speak to both the person and the interpreter when you are talking."
       isCorrect: false
       explanation: "Incorrect."
-      content: "Write down what you need to say instead of speaking to the person."
+    - content: "Write down what you need to say instead of speaking to the person."
       isCorrect: false
       explanation: "Incorrect."
   - content: "Which of the following is an example of the appropriate use of person-first language?"
@@ -51,9 +51,9 @@ quiz:
     - content: "A person with low vision"
       isCorrect: true
       explanation: "Correct."
-      content: "A blind person"
+    - content: "A blind person"
       isCorrect: false
       explanation: "Incorrect."
-      content: "A vision-impaired person"
+    - content: "A vision-impaired person"
       isCorrect: false
       explanation: "Incorrect."
