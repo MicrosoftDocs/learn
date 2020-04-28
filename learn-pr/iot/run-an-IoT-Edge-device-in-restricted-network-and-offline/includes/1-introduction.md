@@ -32,7 +32,8 @@ This lab assumes the following resources are available:
 
 Execute the **lab-setup.azcli** script before starting the lab if the resources are unavailable. 
 
-Note: You will need the SimulatedDevice connection string. You can obtain that by running the following command in the Azure Cloud Shell
+    >[!NOTE]
+    >You will need the SimulatedDevice connection string. You can obtain that by running the following command in the Azure Cloud Shell
  
   ```bash
   az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id SimulatedThermostat -o tsv
@@ -84,7 +85,8 @@ In this module, you will learn the different scenarios where IoT Edge device is 
 
 10. In the editor, update the values of the {YOUR-ID} and Location variables. Set {YOUR-ID} to the Unique ID you created at the start of this course - i.e. **CP123019**, and set Location to the location that makes sense for your resources.
 
-    **Note:** The Location variable should be set to the short name for the location. You can see a list of the available locations and their short-names (the Name column) by entering this command:
+    >[!NOTE]
+    >The Location variable should be set to the short name for the location. You can see a list of the available locations and their short-names (the Name column) by entering this command:
 
     ```CLI
     az account list-locations -o Table
@@ -104,7 +106,8 @@ In this module, you will learn the different scenarios where IoT Edge device is 
 
     Click Save and the editor will close if prompted to save. 
 
-    **Note:** You can use CTRL+S to save at any time and CTRL+Q to close the editor.
+    >[!NOTE]
+    >You can use CTRL+S to save at any time and CTRL+Q to close the editor.
 
 12. To create a resource group named AZ-220-RG, create an IoT Hub named AZ-220-HUB-{YourID}, add a device with a Device ID of SimulatedThermostat, and display the device connection string, enter the following command:
 
