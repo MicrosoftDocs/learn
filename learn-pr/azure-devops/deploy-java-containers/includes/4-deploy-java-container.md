@@ -61,7 +61,7 @@ To add the variables:
 1. Repeat the process to add another variable named *RegistryName* with the value of your Azure Container Registry login server, such as *javacontainercicd18116.azurecr.io*.
 1. Repeat the process to add another variable named *MySqlServer* with the value of your MySQL server host name, such as *java-container-cicd-18116*. You should not use the fully qualified domain, just the host. If you followed the instructions as-is, then this is the same as your web app name.
 1. Repeat the process to add another variable named *MySqlUserName* with the value of the MySQL user name used to create the server, such as *sysadmin*.
-1. Repeat the process to add another variable named *MySqlPassword* with the value of the MySQL password used to create the server, such as *P@ssw0rd*. Select the padlock icon that appears when you hover over the variable to *Change variable type to secret* so that it will not be shown as plaintext once saved.
+1. Repeat the process to add another variable named *MySqlPassword* with the value of the MySQL password used to create the server, such as *P\@ssw0rd*. Select the padlock icon that appears when you hover over the variable to *Change variable type to secret* so that it will not be shown as plaintext once saved.
 
     > [!IMPORTANT]
     > In a real world scenario, you may opt to use an alternative storage mechanism for credentials, such as Azure Key Vault. To learn more about Azure Key Valult, see [Configure and manage secrets in Azure Key Vault](/learn/modules/configure-and-manage-azure-key-vault/?azure-portal=true).

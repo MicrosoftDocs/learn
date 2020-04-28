@@ -77,13 +77,13 @@ Here, create Bash variables to make the setup process more convenient and less e
 
 1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
 
-    ```azurecli
+    ```bash
     resourceSuffix=$RANDOM
     ```
 
 1. Create globally unique names for your App Service Web App, Azure Container Registry, and Azure Database for MySQL server. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
 
-    ```azurecli
+    ```bash
     webName="java-container-cicd-${resourceSuffix}"
     registryName="javacontainercicd${resourceSuffix}"
     dbServerName="java-container-cicd-${resourceSuffix}"
@@ -91,7 +91,7 @@ Here, create Bash variables to make the setup process more convenient and less e
 
 1. Create two more Bash variables to store the names of your resource group and service plan.
 
-    ```azurecli
+    ```bash
     rgName='java-containers-cicd-rg'
     planName='java-container-cicd-asp'
     ```
@@ -183,7 +183,7 @@ This solution requires several Azure resources for deployment, which you create 
     ```output
     HostName                                        State
     ----------------------------------------------  -------
-    java-container-cicd-18116.azurewebsites.net  Running
+    java-container-cicd-18116.azurewebsites.net     Running
     ```
 
 1. Run the following `az acr list` command to list the login server of the Azure Container Registry instance. You will need this server name when creating pipeline variables later.
