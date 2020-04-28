@@ -1,0 +1,5 @@
+variables:
+  dockerfilePath: '$(Build.SourcesDirectory)/src/Dockerfile'
+  webRepository: 'web'
+  tag: '$(Build.BuildId)'
+  vmImageName: 'ubuntu-latest'
