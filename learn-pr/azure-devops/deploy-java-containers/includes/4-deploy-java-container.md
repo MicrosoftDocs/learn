@@ -90,7 +90,7 @@ Here you create a service connection that enables Azure Pipelines to access your
     |-----------------|----------------------------------------------|
     | Scope level     | **Subscription**                             |
     | Subscription    | Your Azure subscription                      |
-    | Resource Group  | **java-container-cicd-rg**                   |
+    | Resource Group  | **java-containers-cicd-rg**                   |
     | Service connection name | *Azure Connection*                           |
 
     During the process, you might be prompted to sign in to your Microsoft account.

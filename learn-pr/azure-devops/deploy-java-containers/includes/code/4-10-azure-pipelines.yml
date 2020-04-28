@@ -3,7 +3,7 @@
             inputs:
               azureSubscription: 'Azure Connection'
               appName: $(WebAppName)
-              resourceGroupName: 'java-container-cicd-rg'
+              resourceGroupName: 'java-containers-cicd-rg'
               connectionStrings: |
                 [
                   {

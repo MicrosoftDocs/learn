@@ -92,7 +92,7 @@ Here, create Bash variables to make the setup process more convenient and less e
 1. Create two more Bash variables to store the names of your resource group and service plan.
 
     ```azurecli
-    rgName='java-container-cicd-rg'
+    rgName='java-containers-cicd-rg'
     planName='java-container-cicd-asp'
     ```
 
