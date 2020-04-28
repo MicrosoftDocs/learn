@@ -107,4 +107,4 @@ Congratulations! You've just deployed your first app to Azure Static Web Apps!
 
 ## Next steps
 
-Your app is missing an API for its shopping list. Next, you'll explore the how to add an API to your app.
+Your app is missing an API for its shopping list. Next, you'll explore how to add an Azure Functions API to your app that will be published to Azure alongside the static assets.
