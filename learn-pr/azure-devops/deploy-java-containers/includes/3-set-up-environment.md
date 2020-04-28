@@ -169,7 +169,7 @@ This solution requires several Azure resources for deployment, which you create 
       --deployment-container-image-name $registryName.azurecr.io/web:latest
     ```
 
-1. Run the followi    ng `az webapp list` command to show the host name and state of the App Service instance.
+1. Run the following `az webapp list` command to show the host name and state of the App Service instance.
 
     ```azurecli
     az webapp list \
