@@ -3,9 +3,9 @@ uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline
 metadata:
   title: Run an IoT Edge device in a restricted network and offline
   description: This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
-  ms.date: 02/12/2020
+  ms.date: 04/2020
   author: abartolo
-  ms.author: Olivier.Bloch
+  ms.author: abartolo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Run an IoT Edge device in a restricted network and offline
