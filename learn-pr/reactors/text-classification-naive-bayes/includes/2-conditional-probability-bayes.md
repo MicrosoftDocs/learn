@@ -14,13 +14,13 @@ $P(A \mid B)=\cfrac{P(A \cap B)}{P(B)}$
 
 This equation is nice, but it assumes that we know the joint probability $P(A\cap B)$, which we often don't. Instead, we often need to know something about $A$ but all we can directly observe is $B$. For instance, when we want to infer whether an email is spam only by knowing the words it contains. For this, we need Bayes' law.
 
-## Bayes' Law
+## Bayes' law
 
 Bayes' law takes its name from the eighteenth-century English statistician and philosopher Thomas Bayes, who described the probability of an event based solely on prior knowledge of conditions that might be related to that event thus:
 
 $P(A \mid B)=\cfrac{P(B \mid A)P(A)}{P(B)}$
 
-In words, Bayes' Law says that if I know the prior probabilities $P(A)$ and $P(B)$, in addition to the likelihood (even just an assumed likelihood) $P(B \mid A)$, I can compute the posterior probability $P(A \mid B)$. Let's apply this to spam.
+In words, Bayes' law says that if I know the prior probabilities $P(A)$ and $P(B)$, in addition to the likelihood (even just an assumed likelihood) $P(B \mid A)$, I can compute the posterior probability $P(A \mid B)$. Let's apply this to spam.
 
 :::image type="content" source="../media/spam.png" alt-text="A screenshot of an example spam email that has the title Reduce Debt by up to 60 Percent" loc-scope="Azure":::
 

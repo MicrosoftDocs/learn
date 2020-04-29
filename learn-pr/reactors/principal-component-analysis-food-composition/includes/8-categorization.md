@@ -56,8 +56,8 @@ Display the first 500 rows for the remaining two clusters.
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   ```python
-    Display cluster two (remember indexing starts at 0)
-```
+  Display cluster two (remember indexing starts at 0)
+  ```
 
   The output is:
 
@@ -65,9 +65,9 @@ Display the first 500 rows for the remaining two clusters.
  TBD
   ```
 
-    ```python
-    Display cluster three (remember indexing starts at 0)
-    ```
+  ```python
+  Display cluster three (remember indexing starts at 0)
+  ```
 
   The output is:
 

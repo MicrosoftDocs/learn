@@ -21,11 +21,14 @@ What do the `sep` and `names` parameters do in the preceding code?
   
 If you are unsure, you can refer to the built-in Help documentation using <code>pd.read_csv?</code> in a new code cell.
 
-TBD - Provide an output?
-
-----
+TBD - Provide a solution and output
 
 </details>
+
+<br /><br />
+
+***
+
 
 Let's take an initial look at what's in the dataset:
 
@@ -33,9 +36,32 @@ Let's take an initial look at what's in the dataset:
 df.head()
 ```
 
+```Output
+--------------------------------------------------------------------
+|    | Class | Message                                             |
+--------------------------------------------------------------------
+| 0 | ham    | Go until jurong point, crazy.. Available only ...   |
+--------------------------------------------------------------------
+| 1 | ham    |                     Ok lar... Joking wif u oni...   |
+--------------------------------------------------------------------
+| 2 | spam   | Free entry in 2 a wkly comp to win FA Cup fina...   |
+--------------------------------------------------------------------
+| 3 | ham    |   U dun say so early hor... U c already then say... |
+--------------------------------------------------------------------
+| 4 | ham    |   Nah I don't think he goes to usf, he lives aro... |
+--------------------------------------------------------------------
+```
+
+|   | employee | group      |
+-----------------------------
+| 0 | Gary     | Accounting |
+| 1 | Stu      | Marketing  |
+| 2 | Mary     | Marketing  |
+| 3 | Sue      | HR         |
+
 Note that several entries in the `Message` column are truncated. We can use the `set_option()` function to set pandas to display the maximum width of each entry.
 
-```Python
+```python
 pd.set_option('display.max_colwidth', -1)
 df.head()
 ```
@@ -49,12 +75,15 @@ What do you think the purpose of the `-1` parameter passed to `pd.set_option()` 
   
 TBD - Provide an output
 
-----
-
 </details>
+
+<br /><br />
+
+***
+
 
 Alternatively, we can dig into individual messages.
 
-```Python
+```python
 df['Message'][13]
 ```
