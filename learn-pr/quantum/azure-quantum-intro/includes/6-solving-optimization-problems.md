@@ -41,6 +41,8 @@ The most mathematically clean formulation of quantum annealing is called adiabat
 ## Example: Contoso Logistics freight optimization
 Let's return to Contoso Logisitic's problem of how to distribute containers between two ships, in order to illustrate how optimization techniques, such as QIO, can be used.
 
+![Contoso Logistics](../media/contoso.png)
+
 ### Understanding the Problem 
 
 In the number partitioning problem, we have a set of container weights, *w*, which we would like to partition into two sets.
