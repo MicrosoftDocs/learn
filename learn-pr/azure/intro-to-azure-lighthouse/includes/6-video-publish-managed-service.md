@@ -35,4 +35,7 @@ This content will look at:
 
 ### Video
 
+> [!NOTE]
+> We're in the process of moving Managed Service offer publication from Cloud Partner Portal to Partner Center. The basic process and steps are very similar, but the experience looks different. We'll update this video to reflect the Partner Center experience soon.
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qTqr]

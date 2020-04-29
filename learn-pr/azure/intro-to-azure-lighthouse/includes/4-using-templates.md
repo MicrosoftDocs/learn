@@ -60,7 +60,6 @@ All template files are based on JSON. So, when editing templates, you'll need a 
 If you haven't done so already, you'll need to download the **delegated-resource-management** template from the GitHub repository. To get to this template, you'll need to:
 
 1. Open the GitHub repository.
-1. Select the Azure **Delegated-Resource-Management** folder.
 1. Select the **Templates**  folder.
 1. Select the **delegated-resource-management** folder.
 1. You'll see the folder contains two files:
