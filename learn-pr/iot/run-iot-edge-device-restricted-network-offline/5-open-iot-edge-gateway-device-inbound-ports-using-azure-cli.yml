@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.open-iot-edge-gateway-device-inbound-ports-using-azure-cli
+uid: learn.iot.run-iot-edge-device-restricted-network-offline.open-iot-edge-gateway-device-inbound-ports-using-azure-cli
 metadata:
   title: Open IoT Edge Gateway Device Inbound Ports using Azure CLI
   description: Open IoT Edge Gateway Device Inbound Ports using Azure CLI
@@ -12,4 +12,4 @@ title: Open IoT Edge Gateway Device Inbound Ports using Azure CLI
 # azureSandbox: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-open-iot-edge-gateway-device-inbound-ports-using-Azure-cli.md)]
+  [!include[](includes/5-open-iot-edge-gateway-device-inbound-ports-using-azure-cli.md)]
