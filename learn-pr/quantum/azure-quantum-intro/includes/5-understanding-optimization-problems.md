@@ -1,6 +1,6 @@
 ## Understanding optimization problems
 
-Before we dive into QIO, we should overview what optimization problems are in general. 
+Before we dive into QIO, we should recap what optimization problems are in general. 
 
 Let's begin with some common terminology:
 - **Search space**: This is the space of all the feasible solutions to the optimization problem. Each point in this search space is a valid solution to the problem, however typically we are looking for the lowest point, or lowest cost solution.
