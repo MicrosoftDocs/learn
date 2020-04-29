@@ -82,15 +82,11 @@ Select your preferred front-end application and click the link to browse to the 
 
 Browse to <http://localhost:4200>
 
-:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Browsing to your Angular app":::
-
 ::: zone-end
 
 ::: zone pivot="react"
 
 Browse to <http://localhost:3000>
-
-:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Browsing to your React app":::
 
 ::: zone-end
 
@@ -98,17 +94,17 @@ Browse to <http://localhost:3000>
 
 Browse to <http://localhost:5000>
 
-:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Browsing to your Svelte app":::
-
 ::: zone-end
 
 ::: zone pivot="vue"
 
 Browse to <http://localhost:8080>
 
-:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Browsing to your Vue app":::
-
 ::: zone-end
+
+:::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app":::
+
+Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app in the next section.
 
 Now stop your running app.
 
