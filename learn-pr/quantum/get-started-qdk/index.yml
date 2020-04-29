@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.quantum.get-started-qdk
 metadata:
-  title: Get started with quantum computing with the Quantum Development Kit
-  description: Learn how to install and use the Quantum Development Kit to combine quantum and classical programs to create a quantum random number generator.
+  title: Write your first quantum program by using the Quantum Development Kit
+  description: Use the Quantum Development Kit and combine quantum and classical programs to create a quantum random number generator.
   ms.date: 04/14/2020
   author: geduardo
   ms.author: v-edsanc
   ms.topic: tutorial
   ms.prod: learning-quantum
-title: Get started with quantum computing with the Quantum Development Kit
-summary: Learn how to install and use the Quantum Development Kit to combine quantum and classical programs to create a quantum random number generator.
+title: Write your first quantum program by using the Quantum Development Kit
+summary: Use the Quantum Development Kit and combine quantum and classical programs to create a quantum random number generator.
 abstract: |
   In this module you will:
   - Learn to install the Quantum Development Kit.
@@ -32,7 +32,7 @@ products:
 #- Quantum Development Kit
 units:
 - learn.quantum.get-started-qdk.1-introduction
-- learn.quantum.get-started-qdk.2-prepare-development-environment
+- learn.quantum.get-started-qdk.2-install-qdk
 - learn.quantum.get-started-qdk.3-approach-quantum-programs
 - learn.quantum.get-started-qdk.4-create-quantum-random-number-generator
 - learn.quantum.get-started-qdk.5-summary
