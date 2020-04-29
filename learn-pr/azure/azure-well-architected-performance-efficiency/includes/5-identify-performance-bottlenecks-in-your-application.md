@@ -87,13 +87,3 @@ Application Insights stores its data in a common repository, and metrics are sha
 A common pattern used in determining the availability of a web application is the health endpoint monitoring pattern. This pattern is used to monitor web applications and associated back-end services, to ensure that they're available and performing correctly. The pattern is implemented by querying a particular uri. The endpoint checks on the status of many components, including the back-end services that the app depends on, rather than just the availability of the front end itself. This acts as a service-level health check that returns an indication of the overall health of the service.
 
 Use an APM solution such as Application Insights to gain a deep understanding of your application and correlate activity across your application. This can help you understand how a specific action works in the client browser, on the server, and through to downstream services. It will also provide insight into trends, provide notifications when there is a problem, and help identify where the problem is and how to fix it, before your users are aware.
-
-## Performance monitoring at Lamna Healthcare
-
-Lamna Healthcare has implemented a web-based patient booking system using virtual machines and an Azure SQL database across two Azure regions. They've decided to use the VM Agent and Log Analytics to monitor the performance of the underlying front-end virtual machines.
-
-They use Azure Monitor to understand the performance of their Azure SQL databases and capture key performance metrics including CPU % and deadlocks.
-
-Application Insights has been configured to capture availability and telemetry information. The team has changed their new booking functionality to send custom event telemetry to Application Insights. The team now has an approach to understanding the volume of business-related events taking place, and they can get much better insight into what's going on within their application.
-
-We've looked at some processes, tools, and best practices to help you track down performance issues and ensure that your application is performing at its best.

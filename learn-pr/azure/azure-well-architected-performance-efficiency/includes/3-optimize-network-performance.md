@@ -1,4 +1,4 @@
-Network performance can have a dramatic impact on a user's experience. In complex architectures with many different services, minimizing the latency at each hop can have a huge impact on the overall performance. In this unit, we'll talk about the importance of network latency and how to reduce it within your architecture. We'll also discuss how Lamna Healthcare adopted strategies to minimize network latency between their Azure resources as well as between their users and Azure.
+Network performance can have a dramatic impact on a user's experience. In complex architectures with many different services, minimizing the latency at each hop can have a huge impact on the overall performance. In this unit, we'll talk about the importance of network latency and how to reduce it within your architecture. We'll also discuss strategies to minimize network latency between their Azure resources as well as between their users and Azure.
 
 ## The importance of network latency
 
@@ -16,11 +16,11 @@ Now let's take a look at how to improve performance between Azure resources and 
 
 ## Latency between Azure resources
 
-Imagine that Lamna Healthcare is piloting a new patient booking system running on several web servers and a database in the West Europe Azure region. This architecture minimizes the data time on the wire as resources are co-located inside an Azure region.
+Imagine that you work for a healthcare organization that is piloting a new patient booking system. This system is running on several web servers and a database in the West Europe Azure region. This architecture minimizes the data time on the wire as resources are co-located inside an Azure region.
 
 Suppose that the pilot of the system went well and has been expanded to users in Australia. Users in Australia will incur the round-trip time to the resources in West Europe to view the website, and their end-user experience will be poor due to the network latency.
 
-The Lamna Healthcare team decide to host another front-end instance in the Australia East region to reduce user latency. While this design helps reduce the time for the web server to return content to end users, their experience is still poor since there's significant latency communicating between the front-end web servers in Australia East and the database in West Europe.
+The IT team decides to host another front-end instance in the Australia East region to reduce user latency. While this design helps reduce the time for the web server to return content to end users, their experience is still poor since there's significant latency communicating between the front-end web servers in Australia East and the database in West Europe.
 
 There are a few ways we could reduce the remaining latency:
 
@@ -37,7 +37,7 @@ We've looked at the latency between our Azure resources, but we should also cons
 
 ### Use a DNS load balancer for endpoint path optimization
 
-In the Lamna Healthcare example, we saw that the team created an additional web front-end node in Australia East. However, end users have to explicitly specify which front-end endpoint they want to use. As the designer of a solution, Lamna Healthcare wants to make the experience as smooth as possible for their users.
+In our example, we saw that the team created an additional web front-end node in Australia East. However, end users have to explicitly specify which front-end endpoint they want to use. As the designer of a solution, you want to make the experience as smooth as possible for users.
 
 Azure Traffic Manager could help. Traffic Manager is a DNS-based load balancer that enables you to distribute traffic within and across Azure regions. Rather than having the user browse to a specific instance of our web front end, Traffic Manager can route users based upon a set of characteristics:
 
@@ -48,9 +48,9 @@ Azure Traffic Manager could help. Traffic Manager is a DNS-based load balancer t
 
 Traffic Manager profiles can also be nested. You could first route your users across different geographies (for example, Europe and Australia) using geographic routing and then route them to local front-end deployments using the performance routing method.
 
-Consider that Lamna Healthcare has deployed a web front end in West Europe and Australia. Assume they have deployed Azure SQL Database with their primary deployment in West Europe, and a read replica in Australia East. Let's also assume the application can connect to the local SQL instance for read queries.
+Recall that the organization in our example has deployed a web front end in West Europe and Australia. Assume they have deployed Azure SQL Database with their primary deployment in West Europe, and a read replica in Australia East. Let's also assume the application can connect to the local SQL instance for read queries.
 
-The team deploy a Traffic Manager instance in performance mode and add the two front-end instances as Traffic Manager profiles. As an end user, you navigate to a custom domain name (for example, lamnahealthcare.com) which routes to Traffic Manager. Traffic Manager then returns the DNS name of the West Europe or Australia East front end based on the best network latency performance.
+The team deploy a Traffic Manager instance in performance mode and add the two front-end instances as Traffic Manager profiles. As an end user, you navigate to a custom domain name (for example, consoto.com) which routes to Traffic Manager. Traffic Manager then returns the DNS name of the West Europe or Australia East front end based on the best network latency performance.
 
 It's important to note that this load balancing is only handled via DNS, there's no inline load balancing or caching that's happening here, Traffic Manager is simply returning the DNS name of the closest front end to the user.
 
@@ -58,7 +58,7 @@ It's important to note that this load balancing is only handled via DNS, there's
 
 The website will likely be using some form of static content (either whole pages or assets such as images and videos). This content could be delivered to users faster by using a content delivery network (CDN) such as Azure CDN. 
 
-When Lamna deploys content to Azure CDN, those items are copied to multiple servers around the globe. Let's say one of those items is a video served from blob storage: `HowToCompleteYourBillingForms.MP4`. The team then configure the website so that each user's link to the video will actually reference the CDN edge server nearest them, rather than referencing blob storage. This approach puts content closer to the destination, reducing latency and improving user experience. The following illustration shows how using Azure CDN puts content closer to the destination which reduces latency and improves the user experience.
+With content deployed to Azure CDN, those items are copied to multiple servers around the globe. Let's say one of those items is a video served from blob storage: `HowToCompleteYourBillingForms.MP4`. The team then configure the website so that each user's link to the video will actually reference the CDN edge server nearest them, rather than referencing blob storage. This approach puts content closer to the destination, reducing latency and improving user experience. The following illustration shows how using Azure CDN puts content closer to the destination which reduces latency and improves the user experience.
 
 ![An illustration showing usage of Azure content delivery network to reduce latency.](../media/3-cdnSketch.png)
 
@@ -78,6 +78,6 @@ Azure ExpressRoute can help. ExpressRoute is a private, dedicated connection bet
 
 ![An architectural diagram showing an ExpressRoute Circuit connecting the customer network with Azure resources.](../media/3-expressroute-connection-overview.png)
 
-Once again looking at Lamna's scenario, they decide to further improve end-user experience for users who are in their facilities by provisioning an ExpressRoute circuit in both Australia East and West Europe. This gives their end users a direct connection to their booking system and ensures the lowest latency possible for their application.
+Once again looking at our example scenario, they decide to further improve end-user experience for users who are in their facilities by provisioning an ExpressRoute circuit in both Australia East and West Europe. This gives their end users a direct connection to their booking system and ensures the lowest latency possible for their application.
 
 Considering the impact of network latency on your architecture is important to ensure the best possible performance for your end users. We've taken a look at some options to lower network latency between end users and Azure and between Azure resources.

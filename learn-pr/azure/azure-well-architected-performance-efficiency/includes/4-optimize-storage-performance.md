@@ -1,4 +1,4 @@
-It's important to include storage performance considerations in your architecture. Just like network latency, poor performance at the storage layer can impact your end-users' experience. How would you optimize your data storage? What things do you need to consider to ensure that you're not introducing storage bottlenecks into your architecture? Here, we'll take a look at how to optimize your storage performance in your architecture.
+It's important to include storage performance considerations in your architecture. Just like network latency, poor performance at the storage layer can impact your end-user experience. How would you optimize your data storage? What things do you need to consider to ensure that you're not introducing storage bottlenecks into your architecture? Here, we'll take a look at how to optimize your storage performance in your architecture.
 
 ## Optimize virtual machine storage performance
 
@@ -47,11 +47,3 @@ This is important, as different data stores are designed for certain use cases o
 Maintaining data consistency across distributed data stores can be a significant challenge. The issue is that strategies such as serialization and locking only work well if all application instances share the same data store, and the application is designed to ensure that the locks are very short-lived. However, if data is partitioned or replicated across different data stores, locking and serializing data access to maintain consistency can become an expensive overhead that impacts the throughput, response time, and scalability of a system. Therefore, most modern distributed applications do not lock the data that they modify, and they take a rather more relaxed approach to consistency, known as eventual consistency.
 
 Eventual consistency means that replica data stores will eventually converge if there are no further writes. If a write is made to one of the data stores, reads from another may provide slightly out-of-date data. Eventual consistency enables higher scale because there is a low latency for reads and writes, rather than waiting to check if information is consistent across all stores.
-
-## Lamna Healthcare example
-
-Lamna Healthcare's patient booking system is hosted across two Azure regions, West Europe and Australia East. They're using virtual machines as the front-end nodes to deploy their website, and have Azure SQL DB deployed in West Europe as primary and Australia East as a readable secondary. Their front-end nodes don't require high levels of disk throughput, but do require consistent latency performance and production reliability and have used Premium SSD backed storage.
-
-They are hosting an Azure Cache for Redis locally in each Azure region to store the common user requests and availability of doctors. Caching has been implemented to optimize the performance of the most common data read activities observed on the application.
-
-We've covered a few examples of how you can improve storage performance in your infrastructure layer by choosing the right disk architecture and at the application level through the use of caching and selecting the right data platform for your data. A properly architected solution will ensure that access to data performs as well as possible.

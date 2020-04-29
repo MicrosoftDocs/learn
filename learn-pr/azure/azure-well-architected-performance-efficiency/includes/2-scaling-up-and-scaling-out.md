@@ -12,8 +12,6 @@ Scaling is difficult in an on-premises scenario, where you purchase and manage y
 
 Easy scaling is a key benefit of Azure. Most Azure resources let you easily add or remove resources as demand changes, and many services have automated options so they monitor demand and adjust for you. This automatic scaling capability, commonly known as autoscaling, lets you set thresholds for the minimum and maximum level of instances that should be available, and will add or remove instances based upon a performance metric (for example, CPU utilization).
 
-#### Scaling up and out
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yBWi]
 
 ## What is scaling up or down?
@@ -85,8 +83,6 @@ You configure your serverless apps to respond to events. This could be a REST en
 
 Infrastructure isn't your responsibility. Scaling and performance are handled automatically, and you are billed only for the exact resources you use. There's no need to even reserve capacity. Azure Functions, Azure Container Instances, and Logic Apps are examples of serverless computing available on Azure.
 
-Let's revisit the Lamna Healthcare example. There could be some potential for cost saving and ease of management. Consider an API endpoint. Instead of hosting the API in Azure App Service, where they must pay for reserved capacity, they could use an Azure Function App triggered by an HTTP request. Azure functions would enable the team to pay only for the resources required to process each transaction. The cost and scale would be directly in line with the number of transactions in the system.
-
 ## Containers
 
 A container is a method of running applications in a virtualized environment. A virtual machine is virtualized at the hardware level, where a hypervisor makes it possible to run multiple virtualized operating systems on a single physical server. Containers take the virtualization up a level. The virtualization is done at the OS level, making it possible to run multiple identical application instances within the same OS.
@@ -110,21 +106,3 @@ While you can run containers on virtual machines, there are a couple of Azure se
   Azure Container Instances is a serverless approach that lets you create and execute containers on demand. You're charged only for the execution time per second.
 
   You can use Virtual Kubelet to connect Azure Container Instances into your Kubernetes environment, including AKS. With Virtual Kubelet, when your Kubernetes cluster demands additional container instances, those demands can be met from ACI. Since ACI is serverless, there is no need to have reserved capacity. You can therefore take advantage of the control and flexibility of Kubernetes scaling with the per-second-billing of serverless. At time of writing, the Virtual Kubelet is described as experimental software and should not be used in production scenarios.
-
-## Scaling at Lamna Healthcare
-
-Lamna Healthcare operates a patient management and booking system. The management system handles appointment bookings and patient records across dozens of hospitals and medical facilities. The local health service is running at full capacity, and no growth is expected at the moment. The system is running on a PHP website hosted in Azure App Service.
-
-The load pattern of the application is predictable, as they primarily operate Monday to Friday between the hours of 9 to 5.  From Tuesday through to Friday, the system averages 1,200 transactions per hour across the entire system. During the weekend, it handles 500 transactions per hour. After the quiet of the weekend, Mondays are busy with an average of 2,000 transactions per hour.
-
-The application is hosted on an S1 App Service plan, but the operations team have noticed a high level of CPU utilization (over 95%) across all instances. The high usage is having an impact on the processing and loading times of the application. In a cloud environment, having highly utilized resources is not necessarily a bad thing. It means that they are getting value for their money, as the resources deployed are being well used. 
-
-The team decide to _scale up_ the App Service plan level for the deployed instances from S1 (1 vCPU and 1.75 GB of RAM) to S2 (2 vCPUs and 3 GB of RAM). They easily achieve this using the Azure portal, but could have achieved the same thing using a single command in the Azure CLI, Azure PowerShell, or using Resource Manager templates.
-
-The team decide that they want to automate the number of instances deployed based upon a schedule, as their load profile is predictable. They configure the App Service plan's autoscale schedule. Let's assume two instances sufficiently handle 500 transactions per hour. The team could then scale to six instances for Tuesday - Friday and eight instances for a Monday to meet the requirements (based upon insight and monitoring from load tests).
-
-Autoscale also gives them an added benefit, preparing for those unforeseen scenarios. The site may suddenly take higher than expected load on the weekend (more appointments in the winter season because of colds and flu). The team can set up autoscale to increase by one instance when CPU percentage is above 70% and reduce by one instance when usage is below 15%.
-
-The team have used the throttling pattern inside of the patient booking API they have exposed behind an Azure API Management instance. This helps prevent the system from performing poorly by only allowing a certain volume of throughput through the system.
-
-We've talked about scaling up and down and scaling in and out, and how you can leverage these options in your architecture. We've also looked at how serverless technologies and containers can help evolve your scaling capabilities.
