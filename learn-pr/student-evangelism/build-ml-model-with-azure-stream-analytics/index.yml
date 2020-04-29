@@ -1,55 +1,39 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics
-hidden: true
+uid: learn.combat-climate-change-with-azure
 metadata:
-  title: Analyze images in real time with machine learning, Azure IoT Hub, and Azure Stream Analytics
-  description: Find out how to use Azure Storage, Azure IoT Hub, and Azure Stream Analytics to analyze streaming data with a machine learning model and visualize the output. 
+  title: Combat Climate Change with AI and Azure - Learn
+  description: Build an end-to-end solution in Azure that uses AI to detect polar bears in photographs and Power BI to show where polar bears are being spotted
+  ms.date: 04/28/2020
+  author: v-jepros
+  ms.author: shana.matthews
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 5/1/2019
-  author: ShanaMatthews
-  ms.author: shanama
-title: Analyze images in real time with machine learning, Azure IoT Hub, and Azure Stream Analytics
-summary: Analyze streaming data with a machine learning model and visualize the output.
+title: Combat Climate Change with AI and Azure
+summary: Build an end-to-end solution in Azure that uses AI to detect polar bears in photographs and Power BI to show where polar bears are being spotted
 abstract:  | 
   In this module, you will:
-  - Create an Azure Storage account, an IoT hub, and use a Node.js app to connect them to a simulated camera
-  - Use Azure Stream Analytics to run queries on live streams to analyze input and an Azure Function to return output
-  - Use Azure Cognitive Services to train an image classification model and call the model from an app or service
-  - Connect Power BI to an Azure SQL database and visualize data from the database
-prerequisites: |
-  - An Azure subscription
-  - Basic knowledge of Azure services, the Azure portal, and the Azure CLI tools
-  - Familiarity with Node.js
-  - Power BI Desktop
-iconUrl: /learn/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
+  - Create an Azure Storage account
+  - Deploy virtual cameras that upload wildlife photos to the storage account
+  - Train a machine-learning model to detect polar bears in photographs
+  - Write an Azure Function that invokes the machine-learning model
+  - Deploy an Azure SQL Database to capture output from the Azure Function
+  - Connect Power BI to the Azure SQL Database
+  - Create a Power BI report that shows where polar bears are being spotted on a map
+  prerequisites: None
+#iconUrl:
 levels:
-- beginner
+- intermediate
 roles:
 - developer
-- data-scientist
-- student
 products:
 - azure
-- power-bi
-- azure-iot-hub
-- azure-functions
-- azure-sql-database
-- azure-stream-analytics
-- azure-cognitive-services
+- powerbi
 units:
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.introduction
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.design-a-solution
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.create-azure-resources
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.create-iot-hub
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.upload-sample-photo
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.analyze-streaming-data
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.add-azure-function
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.generate-events
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.train-and-test-image-classifier
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.create-sql-db
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.connect-db-and-function
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.visualize-output-with-powerbi
-- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.summary
-badge:
-  uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge 
+- learn.combat-climate-change-with-azure.0-introduction
+- learn.combat-climate-change-with-azure.1-azure-storage
+- learn.combat-climate-change-with-azure.2-cognitive-services
+- learn.combat-climate-change-with-azure.3-azure-functions
+- learn.combat-climate-change-with-azure.4-azure-sql-database
+- learn.combat-climate-change-with-azure.5-power-bi
+- learn.combat-climate-change-with-azure.6-summary
+achievement: learn.placeholder.badge
