@@ -337,6 +337,8 @@ Browse to <http://localhost:8080>
 
 You built your application and now it's running locally making HTTP GET requests to your API.
 
+Shut down your running API and web app, in the terminals.
+
 ## Next steps
 
 Your app works locally and your next step is to publish the app with the API together.
