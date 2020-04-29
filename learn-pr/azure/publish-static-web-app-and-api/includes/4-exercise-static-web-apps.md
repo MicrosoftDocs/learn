@@ -18,7 +18,7 @@ Now that your GitHub repository is created, you can create a Static Web App from
 
 Next, configure your new app and link it to your GitHub repository.
 
-1. Select your sandbox _Azure subscription_
+1. Select your sandbox _Concierge subscription_
 1. Select the _Resource Group_ <rgn>[Sandbox resource group name]</rgn>
 1. Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `_`.
 1. Select _Region_ closest to you

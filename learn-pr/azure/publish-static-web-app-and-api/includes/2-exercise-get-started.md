@@ -61,37 +61,9 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
 1. Finally, run the front-end client application.
 
-   ::: zone pivot="angular"
-
    ```bash
-   npm start
+   npm run quick
    ```
-
-   ::: zone-end
-
-   ::: zone pivot="react"
-
-   ```bash
-   npm start
-   ```
-
-   ::: zone-end
-
-   ::: zone pivot="svelte"
-
-   ```bash
-   npm run dev
-   ```
-
-   ::: zone-end
-
-   ::: zone pivot="vue"
-
-   ```bash
-   npm run serve
-   ```
-
-   ::: zone-end
 
 ## Browse to your app
 
@@ -131,7 +103,9 @@ Browse to <http://localhost:8080>
 
 ::: zone-end
 
-### Next steps
+Now stop your running app.
+
+## Next steps
 
 You built your application and now it's running locally in your browser.
 
