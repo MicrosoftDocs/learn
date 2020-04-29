@@ -10,7 +10,7 @@ You've most likely heard about AI, Machine Learning, or Deep Learning before. Ho
 
 **Deep learning (DL)** is a subset of machine learning that's based on artificial neural networks. The learning process is deep because the structure of artificial neural networks consists of multiple input, output, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a certain predictive task. The neural network structure allows a machine to learn through it's own data processing.
 
-## What is a Neural Netowork
+## What is a Neural Network
 
 ## What is Transfer Learning
 
