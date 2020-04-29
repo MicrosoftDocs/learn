@@ -12,7 +12,8 @@ First, you'll connect to an Azure sandbox. You can create the Azure Static Web A
 Now that your GitHub repository is created, you can create a Static Web App from the Azure portal.
 
 1. In the top bar, search for **Static Web Apps**
-1. Click **Static Web Apps**
+1. Select **Static Web Apps**
+1. Select **New**
 
 ### Basics
 
