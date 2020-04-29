@@ -25,7 +25,7 @@ You'll now see an **api** folder in the Visual Studio Code explorer. The **api**
 | Folder and file       | Method | Route          |
 | --------------------- | ------ | -------------- |
 | _api/products-post_   | POST   | `products`     |
-| _api/products-put_    | PUT    | `products:id`  |
+| _api/products-put_    | PUT    | `products/:id`  |
 | _api/products-delete_ | DELETE | `products/:id` |
 
 Your API has routes for manipulating the products for the shopping list, but it lacks a route for getting the products. You'll add that next.

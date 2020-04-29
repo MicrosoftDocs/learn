@@ -20,7 +20,7 @@ Here are the four endpoints that you'll create:
 | ------- | --------------- |
 | GET     | `products`      |
 | POST    | `products`      |
-| PUT     | `products:id`   |
+| PUT     | `products/:id`   |
 | DELETE  | `products/:id`  |
 
 ### Create an API for the web app
