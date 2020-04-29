@@ -4,11 +4,10 @@ Before we dive into QIO, we should overview what optimization problems are in ge
 
 Let's begin with some common terminology:
 - **Search space**: This is the space of all the feasible solutions to the optimization problem. Each point in this search space is a valid solution to the problem, however typically we are looking for the lowest point, or lowest cost solution.
-- **Objective function**: This is a mathematical description, which, when evaluated, tells you the cost of that solution. (Can we also define "cost" or "cost function"?)
+- **Objective function**: This is a mathematical description, which, when evaluated, tells you the cost of that solution.
+- **Cost function**: This is an objective function that we specifically wish to minimize.
 
-(And the relationship between opbjective function and cost function - "In most optimization problems the dominant computational cost is the cost of the evaluations of the objective function. The cost is usually negligible for the processing that is used to determine what assignment of the variables to try next. Thus the total CPU-time typically used by an optimization algorithm is approximately the number of evaluations of the objective function that it makes multiplied by the processing time for one evaluation." Still a little abstract. Is the CPU-time the cost?) 
-
-Together, these are often referred to as an optimization landscape. 
+Together, the search space and the objective function are often referred to as an optimization landscape. 
 In the case of a problem involving two continuous variables, the analogy to a landscape is quite direct. 
 For example, here is a plot of an objective function that looks like a single smooth valley:
 

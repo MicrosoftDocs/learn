@@ -43,25 +43,30 @@ Let's return to Contoso Logisitic's problem of how to distribute containers betw
 
 ### Understanding the Problem 
 
-In the number partitioning problem, we have a set of container weights, *W*, which we would like to partition into two sets of containers on ship *a* and containers on ship *b*.
+In the number partitioning problem, we have a set of container weights, *w*, which we would like to partition into two sets.
+Those two sets correspond to whether the container is loaded onto ship *a* or ship *b*.
 In this section, our goal will be to develop a representation of the problem that we can provide to a QIO solver.
 
 ### Breaking down the Problem
-Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship. 
-We can express this using the equation below, 
+Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship.  
 This is expressed in the below equation, where *w<sub>i</sub>* is the weight of container *i*:
 
 ![Term](../media/example_1.png)
 
-Ideally, we'd like a solution where the weight difference between the ships is as small as possible. This is expressed by the following expression:
+Ideally, we'd like a solution where the weight difference between the ships is as small as possible, which we can express like so:
 
-$$ H = \Large\sum{a} w{i} - \Large\sum{b} w{i} $$
+![Term](../media/example_2.png)
 
-If the value of ${H}$ is zero, we know the ships are equally loaded.
+- **H**: The letter *H* is typically used to represent a cost function and is also referred to as a Hamiltonian in a nod towards the quantum mechanical roots of quantum-inspired optimization techniques.
 
-Next, we'll introduce a variable, ${x_i}$, to represent whether an individual container ${i}$ is assigned to ship ${a}$ or ship ${b}$. Because we can assign the container ${i}$ to either ship, the variable ${x_i}$ can be take on two different values - which makes it a binary variable. For convenience, we'll say the two values it can take on are ${1}$ and ${-1}$. ${1}$ will represent that the container is placed on ship ${a}$, and ${-1}$ will represent that the container is placed on ship ${b}$.
+If the value of *H* is zero, we know the ships are equally loaded.
 
-Because of our choice to make ${i}$ be either ${1}$ or ${-1}$ this type of problem is called an Ising problem.
+Next, we'll introduce a variable, *x<sub>i</sub>*, to represent whether an individual container *i* is assigned to ship *a* or ship *b*. 
+Because we can assign the container *i* to either ship, the variable *x<sub>i</sub>* can be take on two different values - which makes it a binary variable. 
+For convenience, we'll say the two values it can take on are *1* and *-1*. 
+*1* will represent that the container is placed on ship *a*, and *-1* will represent that the container is placed on ship *b*.
+
+- **Ising problem**: Because of our choice to make *i* be either *1* or *-1* this type of problem is called an Ising problem.
 
 By introducing this variable ${x_i}$ to the previous equation, it can be simplified to:
 
