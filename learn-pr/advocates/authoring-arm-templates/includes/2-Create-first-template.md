@@ -1,6 +1,6 @@
 ### Create your Azure Resource Manager templates (ARM)
 
-Azure Resource Manager (ARM) templates are a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your deployment. The template uses a declarative syntax. Declarative syntax is a way of building the structure and elements that outline what resources will look like without describing its control flow.  Unlike imperative syntax that uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
+Azure Resource Manager (ARM) templates are a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your deployment. The template uses a declarative syntax. The declarative syntax is a way of building the structure and elements that outline what resources will look like without describing its control flow.  Unlike imperative syntax that uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
 
 ARM templates allow you declare what you intend to deploy without having to write the sequence of programming commands to create it.  In the template, you specify the resources to deploy and the properties for those resources, then the [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) uses that information to deploys the resources in an organized and consistent manner.
 
@@ -10,7 +10,7 @@ Using ARM templates allows you to automate deployments and use the practice of i
 
 Any one on your team can leverage the templates you build in order to deploy similar environments (dev, test, UAT, prod...) in exactly the same way, ensuring consistency.
 
-Other benefits to name a few are:
+Other benefits, to name a few, are:
 
 - **Idempotent**: Templates are idempotent, which means you can deploy the same template many times and get the same resource types in the same state
 

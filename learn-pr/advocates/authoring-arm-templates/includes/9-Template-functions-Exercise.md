@@ -6,7 +6,7 @@ At the end of the previous tutorial, your template had the following JSON code i
 
 In this exercise, you'll update your template to remove the hard-coded **Location** to something more flexible so you can enjoy the flexibility to deploy the resources in another region.
 
-This is where **functions** become helpful. You already used functions when you completed the previous exercises. When you added **"[parameters('storageName')]"**, you used the parameters function.  In this exercise, you'll use a functions to replace the hard-coded values with proper function.
+This situation is one where **functions** become helpful. You already used functions when you completed the previous exercises. When you added **"[parameters('storageName')]"**, you used the parameters function.  In this exercise, you'll use a function to replace the hard-coded values with proper function.
 
 #### Use function
 
@@ -15,7 +15,8 @@ This is where **functions** become helpful. You already used functions when you 
 ```azurecli
 code azuredeploy.json
 ```
-2. You'll notice that in the example below, we are making use of two functions.  The first usage is taking advantage of the **"resource"** functions ("[resourceGroup().location]") where we can extract value of the resource group properties such as depicted in the following JSON file. The second time you used a function is when you added "[parameters('storageName')]" to your template.
+
+2. You'll notice that in the example below, we are making use of two functions.  The first usage is taking advantage of the **"resource"** functions ("[resourceGroup().location]") where we can extract the value of the resource group properties such as depicted in the following JSON file. The second time you used a function is when you added "[parameters('storageName')]" to your template.
 
 3. Copy the whole file and replace your template with its contents, or just adjust with the highlighted section.
 
@@ -37,13 +38,14 @@ Just as it was in the first few exercises, you need to specify a resource group 
 ```bash
 echo $RG
 ```
-in no result is displayed, Type the code below in the sandbox to store the value of the Resource Group name in the "RG" variable for Azure CLI to use to deploy the template.
+
+if no result is displayed, Type the code below in the sandbox to store the value of the Resource Group name in the "RG" variable for Azure CLI to use to deploy the template.
 
 ```azurecli
 RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
 ```
 
-To run this deployment, you will use Azure CLI that is built in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name) and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
+To run this deployment, you will use Azure CLI that is built in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name), and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
 
 > [!IMPORTANT]
 > Don't forget to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
