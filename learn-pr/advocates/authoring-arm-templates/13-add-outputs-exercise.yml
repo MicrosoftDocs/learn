@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.authoring-arm-templates.13-add-outputs-exercise
+title: Add outputs to you templates - Exercise.
+metadata:
+  title: Add outputs to you templates - Exercise.
+  description: This unit will walk you through adding some meaningful outputs to your template that can be used as a status update or to pass the information to other processes and/or templates.
+  ms.date: 09/24/2018
+  author: pierreroman
+  ms.author: pierrer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/13-add-outputs-exercise.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.authoring-arm-templates.12-add-outputs
+title: Add outputs to you templates.
+metadata:
+  title: Add outputs to you templates.
+  description: This unit will the value of outputs in your template.  Those outputs that can be used as a status update or to pass the information to other processes and/or templates.
+  ms.date: 09/24/2018
+  author: pierreroman
+  ms.author: pierrer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/12-add-outputs.md)]
