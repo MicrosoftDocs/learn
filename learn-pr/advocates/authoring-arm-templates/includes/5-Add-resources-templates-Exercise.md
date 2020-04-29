@@ -1,6 +1,6 @@
 ### Adding resources to your ARM template - Exercise
 
-In this exercise, you will add a storage account definition to your existing template.  To do so, you will edit the empty template you created in the last exercise.
+In this exercise, you will add a storage account definition to your existing template.  To do so, you will edit the template you created in the last unit.
 
 1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
        
@@ -8,7 +8,7 @@ In this exercise, you will add a storage account definition to your existing tem
 code azuredeploy.json
 ```
               
-2. In this step you will modify the existing template to add the new resource.  You can copy and paste the code found below the note in the resource section of your ARM template.
+2. In this step, you will modify the existing template to add the new resource.  You can copy and paste the code found below the note in the resource section of your ARM template.
 
 > [!IMPORTANT]
 > When copying the code. Please ensure to replace the **{provide-unique-name}** (including the curly brackets) with a unique storage account name all lower caps and with no spaces, dashes or special characters.<br><br>You also need to set the **{location}** in the template, to the **same** location a resource group provided for you in the **sandbox**.  In order to get the resource group name and location use the following command.<br><br>**az group list --query "[?contains(name, 'learn')]" -o table**
@@ -17,7 +17,7 @@ Now, you can copy the code and change the highlighted sections into the resource
 
 :::code language="azurecli" source="../samples/Exercise2-resource.json" highlight="4-5":::
 
-At this point your ARM template should now look like the following:
+At this point your ARM template should now look like the following code snippet:
 
 :::code language="azurecli" source="../samples/exercise2-add-resource.json":::
 
@@ -30,10 +30,10 @@ In this exercise, you're adding a storage account to the empty template we creat
 1. **"apiVersion": "2019-06-01",** - The API version for storageAccounts is [2019-06-01](https://docs.microsoft.com/azure/templates/microsoft.storage/2019-04-01/storageaccounts)
 1. **"name": "{provide-unique-name}",** - The unique name you want to give to this resource.
 1. **"location": "eastus",** - The location of the resource.
-1. **"sku": {"name": "Standard_LRS"},** - the '[sku](https://docs.microsoft.com/rest/api/storagerp/srp_sku_types)' is the type of storage the account will be setup for. Standard or premium, and LRS (Locally Redundant storage), GRS(Geo Redundant storage), RA-GRS(Read-Access Geo Redundant storage), ZRS, GZRS (Geo and Zone Redundant Storage), RA-GZRS (Read Access Geo and Zone Redundant Storage)
+1. **"sku": {"name": "Standard_LRS"},** - the '[sku](https://docs.microsoft.com/rest/api/storagerp/srp_sku_types)' is the type of storage the account will be set up for. the available types are Standard or premium, and the redundancy levels are LRS (Locally Redundant storage), GRS(Geo Redundant storage), RA-GRS(Read-Access Geo Redundant storage), ZRS (Zone Redundant Storage), GZRS (Geo and Zone Redundant Storage), and RA-GZRS (Read Access Geo and Zone Redundant Storage).
 
 
-Please notice that you didn't add all of the properties available to the Microsoft.Storage/storageAccounts resource to your template. Many of the properties mentioned [here](https://docs.microsoft.com/azure/templates/microsoft.storage/2019-06-01/storageaccounts) are optional, so you only define what is needed.
+Notice that you didn't add all of the properties available to the Microsoft.Storage/storageAccounts resource to your template. Many of the properties mentioned [here](https://docs.microsoft.com/azure/templates/microsoft.storage/2019-06-01/storageaccounts) are optional, so you only define what is needed.
 
 #### Deploy The modified template
 
@@ -55,7 +55,7 @@ RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
 
 #### Azure CLI
 
-To run this deployment you will use Azure CLI that is built-in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name) and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
+To run this deployment, you will use Azure CLI that is built in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name), and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
 
 ```azurecli
 templateFile="azuredeploy.json"
@@ -78,7 +78,7 @@ Two possible deployment failures that you might encounter:
 
 - Error: Code=StorageAccountAlreadyTaken; Message=The storage account named store1abc09092019 is already taken.<br>In the template, try a different storage account name.
 
-### Verify deployment
+### Verify your deployment
 
 You can verify the deployment by exploring the resource group from the Azure portal.
 
@@ -91,7 +91,7 @@ You can verify the deployment by exploring the resource group from the Azure por
 
 1. Select the resource group you used to deploy your new template in the last command. The resource group will have a name similar to **learn-0ab1c234-d567-8e90-fabcd-12e34d56789f**. You will **now** see a storage account deployed within that resource group based on the resource defined in your template.
 
-1. Notice in the upper right of the overview, You now have **2 Succeeded** deployment listed in the upper-right portion of the portal. And your storage account is showing as a resource in your resource group.
+1. Notice in the upper right of the overview, You now have **two Succeeded** deployment listed in the upper-right portion of the portal. And your storage account is showing as a resource in your resource group.
 
    ![View deployment status](../media/portal-verify-deployment-2.png)
 
