@@ -1,4 +1,4 @@
-Lamna Healthcare recently experienced a significant outage to a customer-facing web application. An engineer was granted full access to a resource group containing the production web application. This person accidentally deleted the resource group and all child resources, including the database hosting live customer data. 
+Imagine your organization recently experienced a significant outage to a customer-facing web application. An engineer was granted full access to a resource group containing the production web application. This engineer accidentally deleted the resource group and all child resources, including the database hosting live customer data.
 
 Fortunately, the application source code and resources were available in source control and regular database backups were running automatically on a schedule. Therefore, the service was reinstated relatively easily. Here, we will explore how this outage could have been avoided by utilizing capabilities on Azure to protect the access to infrastructure.
 
@@ -15,9 +15,6 @@ Role-based access control (RBAC) offers a slightly different approach. Roles are
 On Azure, users, groups, and roles are all stored in Azure Active Directory (Azure AD). The Azure Resource Manager API uses role-based access control to secure all resource access management within Azure.
 
 ![An illustration showing the implementation of a role-based access control.](../media/ACL_Based_Access.png)
-
-<!-- ![Role-based access control](../media/Role_Based_Access.png)
- -->
 
 ### Roles and management groups
 
@@ -71,20 +68,10 @@ A **principal** is an identity acting with certain roles or claims. Consider the
 
 So, a **Service Principal** is literally named. It is an identity that is used by a service or application. Like other identities, it can be assigned roles.
 
-For example, Lamna Healthcare can assign its deployment scripts to run authenticated as a service principal. If that is the only identity that has permission to perform destructive actions, Lamna will have gone a long way toward making sure they don't have a repeat of the accidental resource deletion.
+For example, your organization can assign its deployment scripts to run authenticated as a service principal. If that is the only identity that has permission to perform destructive actions, your organization will have gone a long way toward making sure they don't have a repeat of the accidental resource deletion.
 
 ### Managed identities for Azure resources
 
 The creation of service principals can be a tedious process, and there are a lot of touch points that can make maintaining them difficult. Managed identities for Azure resources are much easier and will do most of the work for you.
 
 A managed identity can be instantly created for any Azure service that supports it (the list is constantly growing). When you create a managed identity for a service, you are creating an account on the Azure AD tenant. Azure infrastructure will automatically take care of authenticating the service and managing the account. You can then use that account like any other AD account including securely letting the authenticated service access other Azure resources.
-
-Lamna Healthcare takes their identity management a step further and uses managed identities for all supported services that need the ability to perform infrastructure management and deployments.
-
-## Infrastructure protection at Lamna Healthcare
-
-We've seen how Lamna Healthcare has addressed issues from their incident where infrastructure was inadvertently deleted. They've used role-based access control to better manage the security of their infrastructure, and are using managed identities to keep their credentials out of code and ease administration of the identities needed for their services.
-
-## Summary
-
-To ensure the availability and integrity of infrastructure, it's important to properly secure your infrastructure. Properly using features such as RBAC and managed  identities will help protect your Azure environment from unauthorized or unintended access, and will enhance the identity security capabilities in your architecture.

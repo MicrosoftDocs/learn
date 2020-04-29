@@ -20,7 +20,7 @@ Encryption is often the last layer of defense against access to your data. By us
 
 Finally, we talked through securing your network. We looked at ways to secure traffic flow between applications and the Internet. We described some ways to secure traffic flow amongst applications. And we wrapped up by looking at how to secure traffic flow between users and an application.
 
-## Further reading
+## Learn more
 
 To learn more about some of the topics discussed in this module, refer to the following resources.
 

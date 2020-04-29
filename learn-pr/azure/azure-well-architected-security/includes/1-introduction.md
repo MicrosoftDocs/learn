@@ -2,7 +2,7 @@ Security is one of the most important aspects of any architecture. Ensuring that
 
 Gone are the days when security focused solely on a strong perimeter defense to keep malicious hackers out. Anything outside the perimeter was treated as hostile, whereas inside the wall, an organization’s systems were trusted. Today's security posture is to assume breach and use the _Zero Trust model_. Security professionals no longer focus on perimeter defense. Modern organizations have to support access to data and services evenly from both inside and outside the corporate firewall. 
 
-As we learn about the *Security* pillar of the Azure Well-Architected framework, we'll see how one fictional Azure customer puts these principles to work. Lamna Healthcare is a national healthcare provider. Their IT organization has recently started to move the majority of their IT systems to Azure. They have a mixture of custom apps, open-source apps, and off-the-shelf applications, with varying architectures and technology platforms. We'll learn what they need to do to migrate to the cloud while keeping their systems and data secure.
+In this module you will learn about the *Security* pillar of the Azure Well-Architected framework.
 
 The concepts discussed in this module are not all-inclusive, but represent some of the important considerations when building a solution on the cloud. For more details on the Azure Well-Architected framework visit the [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true) as you start planning and designing your architecture.
 

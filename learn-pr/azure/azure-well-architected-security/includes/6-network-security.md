@@ -1,4 +1,4 @@
-Securing your network from attacks and unauthorized access is an important part of any architecture. As part of the planning for its cloud migration, Lamna Healthcare took the time to plan out its network infrastructure to ensure it had the proper network security controls in place to protect its network infrastructure from attack. Here, we'll take a look at what network security looks like, how to integrate a layered approach into your architecture, and how Azure can help you provide network security for your environment.
+Securing your network from attacks and unauthorized access is an important part of any architecture. As part of the planning for its cloud migration, your copmany took the time to plan out its network infrastructure to ensure it had the proper network security controls in place to protect its network infrastructure from attack. Here, we'll take a look at what network security looks like, how to integrate a layered approach into your architecture, and how Azure can help you provide network security for your environment.
 
 ## What is network security
 
@@ -55,21 +55,3 @@ To provide a dedicated, private connection between your network and Azure, you c
 ![An architectural diagram showing an ExpressRoute Circuit connecting the customer network with Azure resources.](../media/expressroute-connection-overview.png)
 
 To easily integrate multiple VNets in Azure, VNet peering establishes a direct connection between designated VNets. Once established, you can use NSGs to provide isolation between resources in the same way you secure resources within a VNet. This integration gives you the ability to provide the same fundamental layer of security across any peered VNets. Communication is only allowed between directly connected VNets.
-
-## Network security at Lamna Healthcare
-
-Lamna Healthcare has taken advantage of many of these services to build out a secure network infrastructure. Communication between resources is denied by default, and allowed only when required. Inbound connectivity from the internet is enabled only for services that require it; RDP and SSH are not permitted from internet endpoints, only from trusted internal resources.
-
-To secure their internet-facing web services, they place them behind Application Gateways with WAF enabled. This is true both for services running on virtual machines as well as on App Service. By using Application Gateways, they have protection from many of the common vulnerabilities.
-
-They have DDoS standard enabled, to provide protection for their internet-facing endpoints from denial-of-service attacks.
-
-Through the use of NSGs, they are able to fully isolate communication between application services and between environments. They only allow the necessary communication between services within an environment, and no access is allowed between production and non-production environments.
-
-To provide dedicated connectivity between their end users and applications in Azure, they have provisioned an ExpressRoute circuit with connectivity to their on-premises network. This keeps their traffic to Azure off the internet and a private connection for their services in Azure to communicate with systems remaining on-premises.
-
-With this approach, Lamna Healthcare has leveraged Azure services to provide security at multiple layers of their network infrastructure.
-
-## Summary
-
-A layered approach to network security helps reduce your risk of exposure through network-based attacks. Azure provides several services and capabilities to secure your internet-facing resource, internal resources, and communication between on-premises networks. These features make it possible to create secure solutions on Azure.
