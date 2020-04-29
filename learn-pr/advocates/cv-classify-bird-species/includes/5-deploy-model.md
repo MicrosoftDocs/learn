@@ -1,6 +1,6 @@
 ## How to Deploy the Model
 
-Now our model is performing "good enough" lets deploy it! There are different ways to deploy the model based on what you need. There is a one click deploy to an endpoint or you can export the model to different formats to deploy to different platforms. We will discuss two different ways to use this model: Deploy to endpoint and consume with an App and Export for IoT Deployment.
+Now our model is performing "good enough" lets deploy it! There are different ways to deploy the model based on what you need. There is a one click deploy to an endpoint or you can export the model to different formats to deploy to different platforms. We will discuss two different ways to use this model: Deploy to endpoint and consume with an App and Export for IoT deployment.
 
 ## Option 1: One Click Deploy to an Endpoint
 
@@ -36,7 +36,7 @@ Once the model is trained and at a satisfactory accuracy its ready to be used in
 
 ## Option 2: Deploy to IoT Board
 
-In order to deploy our model to an IoT device we will need to export the model created. If you plan to do this deployment option when you created the project you should have followed the instructions to create a compact model instead of the default.
+In order to deploy our model to an IoT device we will need to export the model created. In the settings from the upper right corner change the model domain to compact.
 
 ### Export the Model
 

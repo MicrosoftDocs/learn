@@ -1,4 +1,4 @@
-Lets build our model. Here we will download the dataset, create our Azure service, upload the data, and train the model.
+Lets build our model!! Here we will download the dataset, create our Azure service, upload the data, and train the model.
 
 ## TODO Add sandbox here
 
@@ -36,7 +36,7 @@ We are ready to upload the data for training. We can do this one of two ways. We
 - Create project
 
 > [!NOTE]
-> If you want to export the model to deploy on a mobile device, tensorflowjs, or IoT select the `compact` model option
+> If you want to export the model to deploy on a mobile device, tensorflowjs, or IoT select the `compact` model option. This can also be changed after the project is created in the settings.
 
 2. Add and tag images
 
@@ -81,13 +81,6 @@ print ("Creating project...")
 project = trainer.create_project("Bird Classification")
 
 print("Project created!")
-```
-
-> [!NOTE]
-> If you want to export the model instead of the one click deploy, update the create project line of code with the below to create a compact model.
-
-```python
-project = trainer.create_project(name="Bird Classification Compact", domain_id="General (compact)", classification_type="Multiclass", target_export_platforms="Basic platforms")
 ```
 
 3. Go to [customvision.ai](customvision.ai) if you would like to validate the project was created in the UI.
