@@ -20,15 +20,6 @@ $$](https://render.githubusercontent.com/render/math?math=y%20%3D%20%CE%B2_0%20%
 The linearity of our models depend on the linearity of ![$β_n$](https://render.githubusercontent.com/render/math?math=%CE%B2_n&mode=inline), not ![$x_n$](https://render.githubusercontent.com/render/math?math=x_n&mode=inline). We will use this fact to use linear regression to model data that does not follow a straight line. Let's apply this to our model of `log_ppgdp` and `lifeExpF`.
 
 ```python
-
-```
-
-The output is:
-
-```Output
-TBD
-```
-
 from sklearn.preprocessing import PolynomialFeatures
 
 poly = PolynomialFeatures(degree=2)
@@ -49,6 +40,13 @@ y_fit = poly_model.predict(x_fit)
 
 plt.scatter(df['log_ppgdp'], df['lifeExpF'], alpha=0.3)
 plt.plot(x_fit[:,1], y_fit, c='orange');
+```
+
+The output is:
+
+```Output
+TBD
+```
 
 Adding the polynomial term provides us with a much more intuitive fit of the data! The `degree=2` parameter that we supply to the `PolynomialFeatures` function dictates that our model takes the form of
 
@@ -59,15 +57,6 @@ $$](https://render.githubusercontent.com/render/math?math=y%20%3D%20%CE%B2_0%20%
 Let's see what the coefficients for our model are.
 
 ```python
-
-```
-
-The output is:
-
-```Output
-TBD
-```
-
 poly = PolynomialFeatures(degree=2)
 
 X = df['log_ppgdp'][:, np.newaxis]
@@ -83,8 +72,16 @@ poly_model.fit(X_, y)
 
 print("Model slope:    ", poly_model.coef_)
 print("Model intercept:", poly_model.intercept_)
+```
 
-> **Technical note:** The code cell above is intentionally redundant. The last two lines of code in it would suffice to print the fitted model's slope and intercept coefficients. However, inline graphing in Jupyter notebooks can be finicky; the entire code snippet necessary to fit the model is given so that a student unable to run the visualization will nonetheless be able to continue on with follow-on portions of the section dealing with the same model.
+The output is:
+
+```Output
+TBD
+```
+
+> [!NOTE]
+> The code cell above is intentionally redundant. The last two lines of code in it would suffice to print the fitted model's slope and intercept coefficients. However, inline graphing in Jupyter notebooks can be finicky; the entire code snippet necessary to fit the model is given so that a student unable to run the visualization will nonetheless be able to continue on with follow-on portions of the section dealing with the same model.
 
 We can state our polynomial model as
 
@@ -94,18 +91,10 @@ $$](https://render.githubusercontent.com/render/math?math=%7B%5Crm%20lifeExpF%7D
 
 Using the polynomial model improves predictive power, but it comes at the cost of interpretability. What is the intuitive relationship between `lifeExpF` and `log_ppgdp` now?
 
-> **Technical note:** Fitting the polynomial-regression model above has a lot of steps in it, and performing these transformations (transforming the features for polynomial regression and fitting the regression model) manually can quickly become tedious and error prone. To streamline this type of processing, scikit-learn provides the `Pipeline` object, which you can use to encapsulate several transformations into one step. Let's run this model again using scikit-learn `make_pipeline()`.
+> [!NOTE]
+> Fitting the polynomial-regression model above has a lot of steps in it, and performing these transformations (transforming the features for polynomial regression and fitting the regression model) manually can quickly become tedious and error prone. To streamline this type of processing, scikit-learn provides the `Pipeline` object, which you can use to encapsulate several transformations into one step. Let's run this model again using scikit-learn `make_pipeline()`.
 
 ```python
-
-```
-
-The output is:
-
-```Output
-TBD
-```
-
 from sklearn.pipeline import make_pipeline
 
 poly_model = make_pipeline(PolynomialFeatures(2),
@@ -121,11 +110,6 @@ y_plot = poly_model.predict(x_plot[:, np.newaxis])
 
 plt.scatter(df['log_ppgdp'], df['lifeExpF'], alpha=0.3)
 plt.plot(x_plot, y_plot, c='orange');
-
-That was much simpler to code! But how much did going through the work doing the polynomial regression help our model?
-
-```python
-
 ```
 
 The output is:
@@ -133,6 +117,10 @@ The output is:
 ```Output
 TBD
 ```
+
+That was much simpler to code! But how much did going through the work doing the polynomial regression help our model?
+
+```python
 
 poly_model = make_pipeline(PolynomialFeatures(2),
                            LinearRegression())
@@ -140,18 +128,6 @@ poly_model.fit(df['log_ppgdp'][:, np.newaxis], df['lifeExpF'])
 
 predictions = poly_model.predict(df['log_ppgdp'][:, np.newaxis])
 r2_score(df['lifeExpF'], predictions)
-
-Our improved, polynomial model now accounts for 61.4 percent of the variance in `lifeExpF`. Clearly an improvement, but a modest one.
-
-### Try it yourself
-
->
-> Go to the code cell in which we fitted the polynomial model using `make_pipeline()` and try different values (>2) in `PolynomialFeatures` to see what using higher-degree polynomials does for our model.
->
-> **Exercise solution** Here is a comparison of the outputs for models using three-degree, four-degree, and five-degree polynomials.
-
-```python
-
 ```
 
 The output is:
@@ -160,6 +136,21 @@ The output is:
 TBD
 ```
 
+Our improved, polynomial model now accounts for 61.4 percent of the variance in `lifeExpF`. Clearly an improvement, but a modest one.
+
+### Try it yourself
+
+Go to the code cell in which we fitted the polynomial model using `make_pipeline()` and try different values (>2) in `PolynomialFeatures` to see what using higher-degree polynomials does for our model.
+
+<br />
+
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  Here is a comparison of the outputs for models using three-degree, four-degree, and five-degree polynomials.
+
+```python
 colors = ['teal', 'yellowgreen', 'gold']
 
 x_min = df['log_ppgdp'].min()
@@ -181,11 +172,6 @@ for count, degree in enumerate([3, 4, 5]):
 plt.legend(loc='lower right')
 
 plt.show();
-
-Let's see what the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) scores for the different-degree polynomial models are.
-
-```python
-
 ```
 
 The output is:
@@ -194,6 +180,15 @@ The output is:
 TBD
 ```
 
+</details>
+
+<br /><br />
+
+***
+
+Let's see what the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) scores for the different-degree polynomial models are.
+
+```python
 for count, degree in enumerate([3, 4, 5]):
     model = make_pipeline(PolynomialFeatures(degree),
                          LinearRegression())
@@ -203,42 +198,14 @@ for count, degree in enumerate([3, 4, 5]):
     predictions = model.predict(X)
     print("Degree %d" % degree, "r-squared score:",
           r2_score(df['lifeExpF'], predictions))
+```
+
+The output is:
+
+```Output
+TBD
+```
 
 Each additional polynomial degree improves the fit of our model (as demonstrated by the incremental improvements to the r-squared scores). However, adding more degrees to the polynomial regressions opens us to the risk of [overfitting](https://en.wikipedia.org/wiki/Overfitting), a process by which our models come to fit the training data too closely and are thus less useful in predicting more generalized data.
 
 Higher-degree polynomials also bring back the [curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality). Simple linear models need only ![$N + 1$](https://render.githubusercontent.com/render/math?math=N%20%2B%201&mode=inline) sample points to fit, where ![$N$](https://render.githubusercontent.com/render/math?math=N&mode=inline) is the number of dimensions (2 points in 1 dimension, 3 in 2 dimensions, 4 in three dimensions, and so on). However, each additional polynomial degree increases the number of sample points required for a given dimensionality much faster. Particularly if certain data points are difficult or expensive to come by, you might run out of data in order to fit a high-degree polynomial model.
-
-TBD
-
-### Try it yourself
-
-TBD
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-
-  The input is:
-
-  ```python
-  ```
-
-  The output is:
-
-  The output is:
-
-```Output
-  ```
-
-</details>
-
-<br /><br />
-
-***
-
-
-> [!div class="alert is-tip"]
-> ### Takeaway
->
->The performance of our naive Bayes model helps underscore the algorithm's popularity, particularly for spam detection. Even untuned, we got good performance, performance that would only continue to improve in production as users submitted more examples of spam messages.
->
-

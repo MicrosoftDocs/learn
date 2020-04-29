@@ -7,24 +7,13 @@ The *k*-means algorithm randomly assigns ![$k$](https://render.githubuserconte
 
 (Image courtesy of [Wikimedia Commons](https://en.wikipedia.org/wiki/File:K-means_convergence.gif) and is distributed under the terms of the [GNU Free Documentation License](https://en.wikipedia.org/wiki/GNU_Free_Documentation_License).)
 
-> **Learning objective:** By the end of this section, you should have a basic understanding of the kinds of results the *k*-means algorithm can produce and have some idea about how you can interpret those results.
-
-TBD
-
-> [!div class="alert is-tip"]
-> ### Learning objective
->
->
-
 ## Learning objectives
 
 In this module, you will:
 
-- TBD.
+- Learn about the kinds of results obtained with the *k*-means algorithm
+- Get basic knowledge about how to interpret those results
 
 ## Prerequisites
 
 - TBD
-
-
-

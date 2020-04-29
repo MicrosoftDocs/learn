@@ -4,15 +4,6 @@ Our dataset has two categorical features (also known as *factors* in the stati
 To begin moving in that analytical direction, let's start by color coding our 3D scatterplot points by `group`.
 
 ```python
-
-```
-
-The output is:
-
-```Output
-TBD
-```
-
 groups = df.groupby('group')
 
 fig = plt.figure(figsize=(6,6))
@@ -30,13 +21,6 @@ ax.set_zlabel('Life expectancy (years)')
 ax.legend()
 
 plt.show();
-
-Unsurprisingly, OECD-member countries cluster at the high end of the income scale and, sadly, African countries lag at the poorer end. Countries from the `other` group include countries ranging from poor ones in Southeast Asia to oil-rich Middle Eastern countries, and thus countries from that group are scattered across the income spectrum.
-
-Now that we have the data points detailed in color, let's fit three separate, simple linear models for each group of countries.
-
-```python
-
 ```
 
 The output is:
@@ -45,6 +29,11 @@ The output is:
 TBD
 ```
 
+Unsurprisingly, OECD-member countries cluster at the high end of the income scale and, sadly, African countries lag at the poorer end. Countries from the `other` group include countries ranging from poor ones in Southeast Asia to oil-rich Middle Eastern countries, and thus countries from that group are scattered across the income spectrum.
+
+Now that we have the data points detailed in color, let's fit three separate, simple linear models for each group of countries.
+
+```python
 model = LinearRegression(fit_intercept=True)
 
 fig = plt.figure(figsize=(6,6))
@@ -75,69 +64,77 @@ ax.set_ylabel('Percent urbanized')
 ax.set_zlabel('Life expectancy (years)')
 
 plt.show();
+```
 
-> **Technical note:** The blue plane models the `africa` group, the orange one `oecd`, and `other` is green.
+The output is:
+
+```Output
+TBD
+```
+
+> [!NOTE]
+> The blue plane models the `africa` group, the orange one `oecd`, and `other` is green.
 
 The opacity of the various planes can make it hard to pick out the details, but if you rotate the graph, you should be able to see that while the `other` and `oecd` models behave similarly, the `africa` sub-model exhibits different behavior and responds more dramatically to increases in per-capita GDP and urbanization for increasing women's lifespans.
 
 ### Try it yourself
 
->
-> Changing color map for 3D plots like these can sometime help make different details clearer. Locate the `cmap` parameter in the `plot_surface()` function and change it to `cmap='viridis'`.
->
-> **Exercise solution**
+Changing color map for 3D plots like these can sometime help make different details clearer. Locate the `cmap` parameter in the `plot_surface()` function and change it to `cmap='viridis'`.
 
-```python
+<br />
 
-```
+<details>
 
-The output is:
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-```Output
-TBD
-```
+  Exercise solution:
 
-model = LinearRegression(fit_intercept=True)
+  ```python
+  model = LinearRegression(fit_intercept=True)
+  
+  fig = plt.figure(figsize=(6,6))
+  ax = fig.add_subplot(111, projection='3d')
+  
+  groups = df.groupby('group')
+  cmaps = ['Blues', 'Oranges', 'Greens']
+  
+  for name, group in groups:
+  
+      X = group[['log_ppgdp', 'pctUrban']]
+      y = group['lifeExpF']
+  
+      model.fit(X, y)
+  
+      x1_plot = np.linspace(group['log_ppgdp'].min(), group['log_ppgdp'].max(), 1000)
+      x2_plot = np.linspace(group['pctUrban'].min(), group['pctUrban'].max(), 1000)
+      X1_plot, X2_plot = np.meshgrid(x1_plot, x2_plot)
+      y_plot = model.predict(np.c_[X1_plot.ravel(), X2_plot.ravel()])
+  
+      ax.scatter(group['log_ppgdp'], group['pctUrban'], group['lifeExpF'], label=name)
+      ax.plot_surface(X1_plot, X2_plot, y_plot.reshape(X1_plot.shape), cmap='viridis');
+  
+  ax.set_xlabel('GDP per capita (log)')
+  ax.set_ylabel('Percent urbanized')
+  ax.set_zlabel('Life expectancy (years)')
+  
+  plt.show();
+  ```
 
-fig = plt.figure(figsize=(6,6))
-ax = fig.add_subplot(111, projection='3d')
+  The output is:
 
-groups = df.groupby('group')
-cmaps = ['Blues', 'Oranges', 'Greens']
+  ```Output
+  TBD
+  ```
 
-for name, group in groups:
+</details>
 
-    X = group[['log_ppgdp', 'pctUrban']]
-    y = group['lifeExpF']
+<br /><br />
 
-    model.fit(X, y)
-
-    x1_plot = np.linspace(group['log_ppgdp'].min(), group['log_ppgdp'].max(), 1000)
-    x2_plot = np.linspace(group['pctUrban'].min(), group['pctUrban'].max(), 1000)
-    X1_plot, X2_plot = np.meshgrid(x1_plot, x2_plot)
-    y_plot = model.predict(np.c_[X1_plot.ravel(), X2_plot.ravel()])
-
-    ax.scatter(group['log_ppgdp'], group['pctUrban'], group['lifeExpF'], label=name)
-    ax.plot_surface(X1_plot, X2_plot, y_plot.reshape(X1_plot.shape), cmap='viridis');
-
-ax.set_xlabel('GDP per capita (log)')
-ax.set_ylabel('Percent urbanized')
-ax.set_zlabel('Life expectancy (years)')
-
-plt.show();
+***
 
 How good are these models?
 
 ```python
-
-```
-
-The output is:
-
-```Output
-TBD
-```
-
 groups = df.groupby('group')
 
 for name, group in groups:
@@ -151,11 +148,6 @@ for name, group in groups:
     print(name, "r-squared score:",
           r2_score(group['lifeExpF'],
                    predictions))
-
-These models are not great. But we will see if they are improved by using polynomial regression later on.
-
-```python
-
 ```
 
 The output is:
@@ -164,6 +156,9 @@ The output is:
 TBD
 ```
 
+These models are not great. But we will see if they are improved by using polynomial regression later on.
+
+```python
 model = LinearRegression(fit_intercept=True)
 
 groups = df.groupby('group')
@@ -177,6 +172,13 @@ for name, group in groups:
 
     print(name, "slopes:  ", model.coef_)
     print(name, "intercept:", model.intercept_)
+```
+
+The output is:
+
+```Output
+TBD
+```
 
 What do these plots based on group tell us? The slopes for `log_ppgdp` are similar between the `africa` and `oecd` groups, but the slope is different for the `other` group. This suggests that there might be some interaction between `group` and `log_ppgdp` in explaining `lifeExpF`. The `pctUrban` slope for the `oecd` group has a different sign than for `africa` or `other`, which might indicate another interaction, but we are on shaky statistical ground here because we have done no testing to see if these differences in slope are statistically significant (for `pctUrban`, the differences---and the numbers---are small).
 
@@ -200,8 +202,9 @@ $$](https://render.githubusercontent.com/render/math?math=y%3D%CE%B2_0%2B%CE%B2_
 
 Think of this as another aspect of the curse of dimensionality: as we add features (especially categorical ones), the number of potential interactions between features that we have to account for increases even faster.
 
-> **Technical note:** Statisticians often use the variable u for categorical features, a convention that we have used here. Also note that we only included ![$u_2$](https://render.githubusercontent.com/render/math?math=u_2&mode=inline) and ![$u_3$](https://render.githubusercontent.com/render/math?math=u_3&mode=inline) in the generalized equation for the model, even though we have three groups in the categorical feature group. This is not a mistake; it is because one group from the categorical feature gets included in the intercept.
->
+> [!NOTE]
+> Statisticians often use the variable u for categorical features, a convention that we have used here. Also note that we only included ![$u_2$](https://render.githubusercontent.com/render/math?math=u_2&mode=inline) and ![$u_3$](https://render.githubusercontent.com/render/math?math=u_3&mode=inline) in the generalized equation for the model, even though we have three groups in the categorical feature group. This is not a mistake; it is because one group from the categorical feature gets included in the intercept.
+
 > [!div class="alert is-tip"]
 >
 > ### Question
@@ -211,15 +214,6 @@ Think of this as another aspect of the curse of dimensionality: as we add featur
 Let's now see what happens when we plot polynomial models for each of these groups.
 
 ```python
-
-```
-
-The output is:
-
-```Output
-TBD
-```
-
 poly_model = make_pipeline(PolynomialFeatures(2),
                            LinearRegression())
 
@@ -251,11 +245,6 @@ ax.set_ylabel('Percent urbanized')
 ax.set_zlabel('Life expectancy (years)')
 
 plt.show();
-
-The differences in shapes for these surfaces suggest interaction between `log_ppgdp`, `pctUrban`, and `group`. However, insightful as these plots can be, the nature of 3D visualization can make them hard to see. Another way to present the data is by breaking each model into its own subplot.
-
-```python
-
 ```
 
 The output is:
@@ -264,6 +253,9 @@ The output is:
 TBD
 ```
 
+The differences in shapes for these surfaces suggest interaction between `log_ppgdp`, `pctUrban`, and `group`. However, insightful as these plots can be, the nature of 3D visualization can make them hard to see. Another way to present the data is by breaking each model into its own subplot.
+
+```python
 poly_model = make_pipeline(PolynomialFeatures(2),
                            LinearRegression())
 
@@ -299,11 +291,6 @@ for name, group in groups:
     ax.set_zlabel('Life expectancy (years)')
 
 plt.show();
-
-How useful are these models for prediction? Let's look at the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) scores.
-
-```python
-
 ```
 
 The output is:
@@ -312,6 +299,9 @@ The output is:
 TBD
 ```
 
+How useful are these models for prediction? Let's look at the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) scores.
+
+```python
 poly_model = make_pipeline(PolynomialFeatures(2),
                            LinearRegression())
 groups = df.groupby('group')
@@ -327,126 +317,109 @@ for name, group in groups:
     print(name, "r-squared score:",
           r2_score(group['lifeExpF'],
                    predictions))
+```
+
+The output is:
+
+```Output
+TBD
+```
 
 Not uniformly good. Adding polynomial regression improved the model for the `oecd` group, but worsened it for `africa` and `other`. Let's see if increasing the degrees of the polynomials helps.
 
 ### Try it yourself
 
->
-> Try re-running the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) scoring code cell above using different polynomial degrees in the `PolynomialFeatures()` function until you get better-fitting models.
->
-> **Possible exercise solution**
+Try re-running the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) scoring code cell above using different polynomial degrees in the `PolynomialFeatures()` function until you get better-fitting models.
 
-```python
-
-```
-
-The output is:
-
-```Output
-TBD
-```
-
-poly_model = make_pipeline(PolynomialFeatures(5),
-                           LinearRegression())
-groups = df.groupby('group')
-
-for name, group in groups:
-
-    X = group[['log_ppgdp', 'pctUrban']]
-    y = group['lifeExpF']
-
-    poly_model.fit(X, y)
-    predictions = poly_model.predict(X)
-
-    print(name, "r-squared score:",
-          r2_score(group['lifeExpF'],
-                   predictions))
-
-### Try it yourself
-
->
-> Now that you have a better polynomial degree to use in the models, re-run the code to plot them to see what they look like.
->
-> **Exercise solution**
-
-```python
-
-```
-
-The output is:
-
-```Output
-TBD
-```
-
-poly_model = make_pipeline(PolynomialFeatures(5),
-                           LinearRegression())
-
-fig = plt.figure(figsize=(18, 6))
-
-groups = df.groupby('group')
-cmaps = ['Blues_r', 'Oranges_r', 'Greens_r']
-colors = ['blue', 'orange', 'green']
-
-for name, group in groups:
-
-    X = group[['log_ppgdp', 'pctUrban']]
-    y = group['lifeExpF']
-
-    poly_model.fit(X, y)
-
-    x1_plot = np.linspace(group['log_ppgdp'].min(), group['log_ppgdp'].max(), 1000)
-    x2_plot = np.linspace(group['pctUrban'].min(), group['pctUrban'].max(), 1000)
-    X1_plot, X2_plot = np.meshgrid(x1_plot, x2_plot)
-    y_plot = poly_model.predict(np.c_[X1_plot.ravel(), X2_plot.ravel()])
-
-    index = sorted(df['group'].unique().tolist()).index(name)
-    ax = fig.add_subplot(1, 3, index + 1, projection='3d')
-    color = colors[index]
-    ax.scatter(group['log_ppgdp'], group['pctUrban'], group['lifeExpF'],
-               label=name, c=color)
-    cmap = cmaps[index]
-    ax.plot_surface(X1_plot, X2_plot, y_plot.reshape(X1_plot.shape), cmap=cmap);
-
-    ax.set_title(name)
-    ax.set_xlabel('GDP per capita (log)')
-    ax.set_ylabel('Percent urbanized')
-    ax.set_zlabel('Life expectancy (years)')
-
-plt.show();
-
-The differences in the shapes of these surfaces suggest interactions between `log_ppgdp`, `pctUrban`, and `group`, but we would have to do additional tests to establish what the specifics of those interactions are.
-
-> [!div class="alert is-tip"]
->
-> ### Question
->
-> What do these plots tell you about the dangers of extrapolating too much from a model? Is overfitting a possible concern with these tightly fit models?
->
-> **Takeaway**
->
-> Linear regression can be a flexible tool for modeling the relationships between features in our data, particularly with polynomial regression. However, this flexibility comes with dangers, particularly the hazard of overfitting our models to our data. With multiple regression, we can produce richer models that include more relationships, but interpretation becomes murkier with each additional feature, particularly when categorical features are included.
-
-TBD
-
-### Try it yourself
-
-TBD
+<br />
 
 <details>
+
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  The input is:
+  Possible solution:
 
   ```python
+  poly_model = make_pipeline(PolynomialFeatures(5),
+                             LinearRegression())
+  groups = df.groupby('group')
+  
+  for name, group in groups:
+  
+      X = group[['log_ppgdp', 'pctUrban']]
+      y = group['lifeExpF']
+  
+      poly_model.fit(X, y)
+      predictions = poly_model.predict(X)
+  
+      print(name, "r-squared score:",
+            r2_score(group['lifeExpF'],
+                     predictions))
   ```
 
   The output is:
 
+  ```Output
+  TBD
+  ```
+</details>
+
+<br /><br />
+
+***
+
+### Try it yourself
+
+Now that you have a better polynomial degree to use in the models, re-run the code to plot them to see what they look like.
+
+<br />
+
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```python
+  poly_model = make_pipeline(PolynomialFeatures(5),
+                             LinearRegression())
+
+  fig = plt.figure(figsize=(18, 6))
+  
+  groups = df.groupby('group')
+  cmaps = ['Blues_r', 'Oranges_r', 'Greens_r']
+  colors = ['blue', 'orange', 'green']
+  
+  for name, group in groups:
+  
+      X = group[['log_ppgdp', 'pctUrban']]
+      y = group['lifeExpF']
+  
+      poly_model.fit(X, y)
+  
+      x1_plot = np.linspace(group['log_ppgdp'].min(), group['log_ppgdp'].max(), 1000)
+      x2_plot = np.linspace(group['pctUrban'].min(), group['pctUrban'].max(), 1000)
+      X1_plot, X2_plot = np.meshgrid(x1_plot, x2_plot)
+      y_plot = poly_model.predict(np.c_[X1_plot.ravel(), X2_plot.ravel()])
+  
+      index = sorted(df['group'].unique().tolist()).index(name)
+      ax = fig.add_subplot(1, 3, index + 1, projection='3d')
+      color = colors[index]
+      ax.scatter(group['log_ppgdp'], group['pctUrban'], group['lifeExpF'],
+                 label=name, c=color)
+      cmap = cmaps[index]
+      ax.plot_surface(X1_plot, X2_plot, y_plot.reshape(X1_plot.shape), cmap=cmap);
+  
+      ax.set_title(name)
+      ax.set_xlabel('GDP per capita (log)')
+      ax.set_ylabel('Percent urbanized')
+      ax.set_zlabel('Life expectancy (years)')
+  
+  plt.show();
+  ```
+
   The output is:
 
-```Output
+  ```Output
+  TBD
   ```
 
 </details>
@@ -455,10 +428,16 @@ TBD
 
 ***
 
+The differences in the shapes of these surfaces suggest interactions between `log_ppgdp`, `pctUrban`, and `group`, but we would have to do additional tests to establish what the specifics of those interactions are.
 
 > [!div class="alert is-tip"]
+>
+> ### Question
+>
+> What do these plots tell you about the dangers of extrapolating too much from a model? Is overfitting a possible concern with these tightly fit models?
+
+> [!div class="alert is-tip"]
+>
 > ### Takeaway
 >
->The performance of our naive Bayes model helps underscore the algorithm's popularity, particularly for spam detection. Even untuned, we got good performance, performance that would only continue to improve in production as users submitted more examples of spam messages.
->
-
+> Linear regression can be a flexible tool for modeling the relationships between features in our data, particularly with polynomial regression. However, this flexibility comes with dangers, particularly the hazard of overfitting our models to our data. With multiple regression, we can produce richer models that include more relationships, but interpretation becomes murkier with each additional feature, particularly when categorical features are included.

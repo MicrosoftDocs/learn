@@ -183,6 +183,8 @@ How would you export df2 to a CSV file?
 
 <br /><br />
 
+***
+
 > [!div class="alert is-tip"]
 >
 > ### Takeaway

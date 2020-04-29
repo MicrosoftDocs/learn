@@ -5,41 +5,4 @@ The essence of linear regression is arguably the simplest form of ML: drawing a 
 
 Formally, linear regression is used to predict a quantitative *response* (the values on a Y axis) that is dependent on one or more *predictors* (values on one or more axes that are orthogonal to ![$Y$](https://render.githubusercontent.com/render/math?math=Y&mode=inline), commonly just thought of collectively as ![$X$](https://render.githubusercontent.com/render/math?math=X&mode=inline)). The working assumption is that the relationship between the predictors and the response is more or less linear. The goal of linear regression is to fit a straight line in the best possible way to minimize the deviation between our observed responses in the dataset and the responses predicted by our line, the linear approximation.
 
-How do we tell that we have the best fit possible for our line? The most common means of assessing the error between the fit of our line -- our model -- and the data is called the [***least squares method***](https://en.wikipedia.org/wiki/Least_squares). This method consists of minimizing the number you get when you square the differences between your predicted values (the line) and the actual values (the data) and add up all of those squared differences for your entire dataset.
-
-> **Learning goal:** By the end of this section, you should be comfortable fitting linear-regression models, and you should have some familiarity with interpreting their output.
-
-TBD
-
-### Try it yourself
-
-TBD
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-
-  The input is:
-
-  ```python
-  ```
-
-  The output is:
-
-  The output is:
-
-```Output
-  ```
-
-</details>
-
-<br /><br />
-
-***
-
-
-> [!div class="alert is-tip"]
-> ### Takeaway
->
->The performance of our naive Bayes model helps underscore the algorithm's popularity, particularly for spam detection. Even untuned, we got good performance, performance that would only continue to improve in production as users submitted more examples of spam messages.
->
-
+How do we tell that we have the best fit possible for our line? The most common means of assessing the error between the fit of our line -- our model -- and the data is called the [least squares method](https://en.wikipedia.org/wiki/Least_squares). This method consists of minimizing the number you get when you square the differences between your predicted values (the line) and the actual values (the data) and add up all of those squared differences for your entire dataset.

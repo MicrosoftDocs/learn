@@ -57,7 +57,10 @@ The output is:
 TBD
 ```
 
+<br />
+
 <details>
+
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   ```python
