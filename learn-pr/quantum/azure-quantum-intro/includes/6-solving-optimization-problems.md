@@ -62,19 +62,15 @@ Ideally, we'd like a solution where the weight difference between the ships is a
 If the value of *H* is zero, we know the ships are equally loaded.
 
 Next, we'll introduce a variable, *x<sub>i</sub>*, to represent whether an individual container *i* is assigned to ship *a* or ship *b*. 
-Because we can assign the container *i* to either ship, the variable *x<sub>i</sub>* can be take on two different values - which makes it a binary variable. 
+Because we can assign the container *i* to either ship, the variable *x<sub>i</sub>* can be take on two different values, which makes it a binary variable. 
 For convenience, we'll say the two values it can take on are *1* and *-1*. 
 *1* will represent that the container is placed on ship *a*, and *-1* will represent that the container is placed on ship *b*.
 
 - **Ising problem**: Because of our choice to make *i* be either *1* or *-1* this type of problem is called an Ising problem.
 
-By introducing this variable ${x_i}$ to the previous equation, it can be simplified to:
+By introducing this variable *x<sub>i</sub>* to the previous equation, it can be simplified to:
 
-$$ H = \Large\sum{i} w{i} x_{i} $$
-
-The function ${H}$ will be called our cost function as it describes the cost of a given solution.
-
-The letter ${H}$ is traditionally used to represent a cost function and is also referred to as a Hamiltonian in a nod towards the quantum mechanical roots of Quantum-Inspired Optimization techniques.
+![Term](../media/example_3.png)
 
 ### The final model
 There's one last change we need to make before we can solve our problem. If we look at our cost function ${H}$ there's a flaw: the solution with the least cost is to simply assign all containers to ship ${b}$ by setting all ${x_i}={-1}$ - that's not right! To fix this we'll take a simple step - we'll square the right hand side of the equation so that it cannot be negative:
