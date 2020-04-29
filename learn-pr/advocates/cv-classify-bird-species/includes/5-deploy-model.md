@@ -1,13 +1,14 @@
-Now our model is performing "good enough" lets deploy it!
+## How to Deploy the Model
 
-## Ways to deploy with custom vision
+Now our model is performing "good enough" lets deploy it! There are different ways to deploy the model based on what you need. There is a one click deploy to an endpoint or you can export the model to different formats to deploy to different platforms. We will discuss two different ways to use this model: Deploy to endpoint and consume with an App and Export for IoT Deployment.
 
-## Export to diff format
+## Option 1: One Click Deploy to an Endpoint
 
 ### Get the Prediction Url
 
-- Select "Performance" from the top navigation in the Custom Vision portal
-- Select "Prediction Url"
+- Select `Performance` from the top navigation in the Custom Vision portal
+- Click `Publish`
+- Select `Prediction Url`
 - Copy the Url to either use an image url or image file
 - Additionally by selecting the settings icon in the right corner will bring you to the keys and urls to call the endpoint.
 
@@ -33,4 +34,4 @@ Once the model is trained and at a satisfactory accuracy its ready to be used in
   `{ "Url": "UrlForImageGoesHere" }`
 - Send Request
 
-## Deploy to IoT Board
+## Option 2: Deploy to IoT Board

@@ -22,18 +22,20 @@ You may notice there is a warning about unbalanced data that says: "Unbalanced d
 
 If you don't have enough data or not diverse enough data your model can become overfitted. Meaning it knows the dataset provided really well and over fitted to the patterns in that data. It will perform well on the training data but poorly on new unseen data. This is why we always test our models with new data!
 
-### 3. Testing with the same data you trained with
+### 3. Testing with Training Data
 
 As mentioned in the overfitting example, if you test with the same data you trained with, its going to look like it is performign really well but when you deploy it to production it will most likely do poorly and you will be a sad dev.
 
 ### 4. Bad Data
 
-Another common mistake is training with bad data. There are many ways that your data can actually hurt your model and accuracy. Data that is noisy can cause issues because there is too much information that is not useful and is causing model confusion. More data is only better if the data is actually good data. Throwing out bad data will greatly improve your accuracy.
+Another common mistake is training with bad data. There are many ways that your data can actually hurt your model and accuracy. Data that is noisy can cause issues because there is too much information that is not useful and is causing model confusion. More data is only better if the data is actually good data. This mean could mean throwing out bad data or features to improve your model accuracy.
 
 ## Test the model
 
-Now that we have went over how to understand our restuls and common rookie mistakes. Lets test our model and see how it performs on unseen data.
+Our model is performing good enough according to the metrics provided. Lets test our model and see how it performs on unseen data.
 
 - Select "Quick Test" from the upper right corner
 - Search for an image of a bird that matches one of the species you trained it to recognize. Grab the URL for the image and paste it into the `Image URL` box to test accuracy.
-- The predication will appear on the right side of the window
+- The predication will appear on the right side of the window.
+
+This should have performed good enough. We can do more testing once we deploy the model to an endpoint in the deployment step.
