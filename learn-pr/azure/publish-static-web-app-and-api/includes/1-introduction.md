@@ -17,7 +17,7 @@ Static web apps are commonly built using Angular, React, Svelte, or Vue. You ser
 
 When you create an Azure Static Web App, Azure creates a GitHub Actions workflow in the repository containing your app's code. The workflow starts by building your app. Then the workflow deploys your app to Azure every time you accept a pull request or push new code to a branch.
 
-Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand to the API.
+Azure host and serves your static web app while Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand to the API.
 
 ### Key features
 
