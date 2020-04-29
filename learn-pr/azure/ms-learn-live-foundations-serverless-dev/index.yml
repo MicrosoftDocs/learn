@@ -52,3 +52,4 @@ products:
 units:
 - learn.azure.ms-learn-live-foundations-serverless-dev.1-introduction
 - learn.azure.ms-learn-live-foundations-serverless-dev.2-session-1
+- learn.azure.ms-learn-live-foundations-serverless-dev.3-setup-cosmosdb
