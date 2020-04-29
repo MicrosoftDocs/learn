@@ -8,7 +8,8 @@ metadata:
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
-  ms.prod: learning-python
+  ms.prod: learning-reactors
+  show_latex: true
 durationInMinutes: 7
 content: |
   [!include[](includes/5-multiple-regression.md)]
