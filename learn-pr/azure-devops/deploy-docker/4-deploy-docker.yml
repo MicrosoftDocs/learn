@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.deploy-docker.4-deploy-docker
+title: Exercise - Deploy a Docker container to Azure
+metadata:
+  title: Exercise - Deploy a Docker container to Azure
+  description: Extend the CI/CD pipeline to build and deploy a Docker container.
+  ms.date: 04/22/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-deploy-docker.md)]
