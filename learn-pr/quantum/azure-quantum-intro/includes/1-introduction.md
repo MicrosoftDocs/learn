@@ -33,4 +33,4 @@ In the following units you will go through these steps:
 
 - Watch a short video introduction to the Azure Quantum service and the solutions it provides
 - Learn about how to use Azure Quantum to run quantum algorithms on hardware 
-- Learn about quantum-inspired optimization (QIO) solver enabled by Azure Quantum
+- Learn about quantum-inspired optimization (QIO) solvers enabled by Azure Quantum
