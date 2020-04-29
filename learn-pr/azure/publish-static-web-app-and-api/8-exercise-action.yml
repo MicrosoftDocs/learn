@@ -8,6 +8,7 @@ metadata:
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: dev-javascript-framework
 title: Exercise - Publish the API with GitHub Actions
 durationInMinutes: 5
 content: |
