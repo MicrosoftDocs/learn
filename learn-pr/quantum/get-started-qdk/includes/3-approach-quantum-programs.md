@@ -1,6 +1,6 @@
 In this unit you are going to learn how to build a quantum random number
 generator theoretically, which happens to be a perfect example to introduce the Quantum
-Development Kit to combine quantum and classical programs. We will used the concept of Bloch sphere, H gate and superposition to introduce explain the example. If these terms are not familiar to you yet, you can read more about them in the QDK documentation page [here](https://docs.microsoft.com/en-us/quantum/concepts/glossary).  
+Development Kit to combine quantum and classical programs. We will used the concept of Bloch sphere, H gate and superposition to introduce explain the example. If these terms are not familiar to you yet, you can read more about them in the QDK documentation page [here](https://docs.microsoft.com/quantum/concepts/glossary).  
 
 One of the most direct applications of quantum devices is the generation of
 verified random numbers. We can perform measurements on quantum systems to
