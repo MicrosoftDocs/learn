@@ -1,5 +1,3 @@
-# Install the Microsoft Quantum Development Kit (QDK)
-
 In this unit, you will prepare your development environment to begin writing quantum programs with Microsoft's Quantum Development Kit.
 The QDK consists of:
 
