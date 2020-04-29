@@ -105,7 +105,7 @@ Continue to create the application.
 
 ### Review the GitHub Action
 
-While your app is being built you can watch the progress of the GitHub Action by clicking the link shown below:
+While your app is being built, you can watch the progress of the GitHub Action by clicking the link shown below:
 
 :::image type="content" source="../media/goto-action.png" alt-text="Browser to see the progress of the GitHub Action":::
 
@@ -117,7 +117,7 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
 :::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
 
-Congratulations! You've just deployed your first app to Azure Static Web Apps!
+Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web App is created. So if you see the splash page, the app is still being deployed.

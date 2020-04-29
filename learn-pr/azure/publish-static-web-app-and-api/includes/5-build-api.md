@@ -6,7 +6,7 @@ One of the greatest benefits of Azure Static Web Apps is that it can host your w
 
 Azure Functions provides automatic scaling out and scaling in based on demand. This makes Azure Functions a great API partner for your shopping list web app that serves static assets.
 
-When your API is published it is given a unique URL. You can find the URL in the overview tab for Azure Static Web Apps in the portal.
+When your API is published, it is given a unique URL. You can find the URL in the overview tab for Azure Static Web Apps in the portal.
 
 ### Your shopping list API
 

@@ -30,7 +30,7 @@ The first time your Azure Static Web Apps resource is created, it creates a GitH
 
 ### Integrated API with Azure Functions
 
-You can optionally have an API implemented as an Azure Functions project. You don't need to create an Azure Function app in Azure, instead it's built into your Azure Static Web App. Typically the API is stored in a folder named _api_ or _functions_, but you can name it whatever you prefer.
+You can optionally have an API implemented as an Azure Functions project. You don't need to create an Azure Function app in Azure, instead it's built into your Azure Static Web App. Typically you put the API in a folder named _api_ or _functions_, but you can name it whatever you prefer.
 
 What if you don't have an API? Don't worry. If Azure Static Web Apps can't find an API in the folder you indicate, it won't publish an API.
 
