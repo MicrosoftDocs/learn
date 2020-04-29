@@ -33,7 +33,7 @@ In this tutorial, you'll create, modify, and deploy a web app and API to Azure S
 
 ### Choose your own path
 
-This tutorial provides four variations of the sample application for you to choose from: Vue, Angular, React, and Svelte. The power of Azure Static Web Apps is that all of these flavors "just work".
+This tutorial provides four variations of the sample application for you to choose from: Angular, React, Svelte, and Vue. The power of Azure Static Web Apps is that all of these flavors "just work".
 
 ### What you'll do
 
