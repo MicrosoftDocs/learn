@@ -1,4 +1,4 @@
-You are a solution architect. Your organization, Lamna Healthcare has moved its workloads to the cloud. Recently, the bill for these resources and workflows has increased more than Lamna had anticipated. You have been asked to determine whether the increase is natural, efficient growth, or whether the cost can be reduced by being more efficient with the organization's cloud resources.
+You are a solution architect with a healthcare organization that has moved its workloads to the cloud. Recently, the bill for these resources and workflows has increased more than anticipated. You have been asked to determine whether the increase is natural, efficient growth, or whether the cost can be reduced by being more efficient with the organization's cloud resources.
 
 #### Maximize efficiency of cloud spend
 
@@ -113,8 +113,6 @@ Azure Storage offers three storage tiers for blob object storage. The Azure hot 
 - **Cool access tier** - Lower storage costs and higher access costs compared to hot storage. This tier is intended for data that will stay in the cool tier for at least 30 days.
 - **Archive access tier** - Lowest storage cost and highest data retrieval costs compared to hot and cool storage. This tier is intended for data that can tolerate several hours of retrieval latency and will stay in the archive tier for at least 180 days.
 
-For Lamna Healthcare, keeping new images on the hot access tier for a month makes sense, so that viewing the most recent images performs as fast as possible. You could then move images over one year old to the archive tier since it is likely that these images will not be retrieved. This would reduce their costs associated with storing these images.
-
 ### Leverage consumption pricing models
 
 Moving to PaaS services can also take the pay-as-you-go model even further into a true consumption pricing model. Services such as Azure Functions have the ability to use _Consumption plans_. When you're using a Consumption plan, instances of the Azure Functions host are dynamically added and removed based on the number of incoming events. This serverless plan scales automatically, and you're charged for compute resources only when your functions are running. On a Consumption plan, a function execution times out after a configurable period of time.
@@ -122,13 +120,3 @@ Moving to PaaS services can also take the pay-as-you-go model even further into 
 Billing is based on number of executions, execution time, and memory used. Billing is aggregated across all functions within a function app.
 
 Moving to services that use a consumption pricing model can bring a new approach to cost savings into your architecture.
-
-## Cost optimization at Lamna Healthcare
-
-Lamna Healthcare is making strides on reducing their costs. They have organized a monthly review of their costs, and each department has access to Azure Cost Management, where they can review their costs throughout the month. They've identified a number of places where reserved instances can be used and have purchased several to take advantage of this discount. They have implemented automated processes to stop development environments in off-hours, saving them additional costs during times when these resources were not being used. 
-
-Along with the optimization of blob storage for their imaging storage, they've managed to drop their bill notably over the past couple of months.
-
-## Summary
-
-Optimizing the cost of your cloud infrastructure involves tracking your spend and ensuring that your resource utilization matches the demands of your workloads. Using the right quality and performance tier for your resources can further optimize your cloud spend.
