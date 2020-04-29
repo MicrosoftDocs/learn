@@ -16,11 +16,11 @@ The key ingredients to create an Azure Static Web App are:
 1. Connect to your GitHub repository and branch
 1. Identify the folder locations
 
-| Location          | Location example | Description                         |
-| ----------------- | ---------------- | ----------------------------------- |
-| App location      | /                | Source code for your web app        |
-| Artifact location | dist             | Build artifacts                     |
-| API location      | api              | Source code for your API (optional) |
+| Location              | Location example | Description                         |
+| --------------------- | ---------------- | ----------------------------------- |
+| App location          | /                | Source code for your web app        |
+| App artifact location | dist             | Build artifacts                     |
+| API location          | api              | Source code for your API (optional) |
 
 ### From source code to static assets with GitHub Actions
 
