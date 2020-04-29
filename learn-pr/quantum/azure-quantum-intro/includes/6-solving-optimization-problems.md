@@ -39,7 +39,7 @@ By the end of the anneal, the system has settled into one particular configurati
 The most mathematically clean formulation of quantum annealing is called adiabatic quantum optimization, and is what quantum inspired methods attempt to emulate.
 
 ## Example: Contoso Logistics freight optimization
-Let's return to Contoso Logisitic's problem of how to distribute containers between two ships, in order to illustrate how optimization techniques, such as QIO, can be used.
+Let's return to Contoso Logistic's problem of how to distribute containers between two ships, in order to illustrate how optimization techniques, such as QIO, can be used.
 
 ![Contoso Logistics](../media/contoso.png)
 
