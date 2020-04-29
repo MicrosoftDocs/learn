@@ -1,4 +1,4 @@
-You have nearly completed the module. 
+You have nearly completed the module.
 
 In this module, you learned how to:
 
