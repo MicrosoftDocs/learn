@@ -4,6 +4,8 @@ However, before your app can be hosted, you'll need something that will build yo
 
 ## Azure Static Web Apps
 
+There are two automated aspects to deploying a static web app. The first aspect provisions the underlying Azure resources that make up your app. The second aspect is a GitHub Actions workflow that builds and publishes your application.
+
 When you publish your app to the web with Azure Static Web Apps, you're getting fast hosting of your static web app and scalable APIs. You're also getting a unified build and deployment workflow provided by GitHub Actions.
 
 ### Key ingredients
@@ -23,6 +25,8 @@ The key ingredients to create an Azure Static Web App are:
 ### From source code to static assets with GitHub Actions
 
 You push your source code to your GitHub repo. Your GitHub repo contains source code, not static assets, and so it needs to be built before it can be published. The GitHub Action performs the build and turns your source code into static assets that can be served by Azure.
+
+The first time your Azure Static Web Apps resource is created, it creates a GitHub Action. The GitHub Action is added to your repository in the _.github/workflows_ folder. You can review or modify this file as needed. The settings you enter when you create the resource are stored in the GitHub Action's file.
 
 ### Integrated API with Azure Functions
 

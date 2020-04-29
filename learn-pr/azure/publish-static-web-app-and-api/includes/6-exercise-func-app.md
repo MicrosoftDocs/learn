@@ -197,7 +197,7 @@ Configure the proxy for your front-end app with the following steps:
 
 ::: zone pivot="angular"
 
-1. Open the file _proxy.conf.json_
+1. Open the file _angular-app/proxy.conf.json_
 1. Locate the `target: 'http://localhost:7010'` setting
 1. Change the target's port to point to 7071 `target: 'http://localhost:7071',`
 
@@ -205,7 +205,7 @@ Configure the proxy for your front-end app with the following steps:
 
 ::: zone pivot="react"
 
-1. Open the file _package.json_
+1. Open the file _react-app/package.json_
 1. Locate the `"proxy": "http://localhost:7020/",'` setting
 1. Change the proxy's port to point to port 7071 `proxy: 'http://localhost:7071',`
 
@@ -213,7 +213,7 @@ Configure the proxy for your front-end app with the following steps:
 
 ::: zone pivot="svelte"
 
-1. Open the file _rollup.config.js_
+1. Open the file _svelte-app/rollup.config.js_
 1. Locate the line of code `const api = 'http://localhost:7030/api';`
 1. Change the api's port to point to port 7071 `const api = 'http://localhost:7071/api';`
 
@@ -221,7 +221,7 @@ Configure the proxy for your front-end app with the following steps:
 
 ::: zone pivot="vue"
 
-1. Open the file _vue.config.js_
+1. Open the file _vue-app/vue.config.js_
 1. Locate the `target: 'http://localhost:7040',` setting
 1. Change the target's port to point to port 7071 `target: 'http://localhost:7071',`
 

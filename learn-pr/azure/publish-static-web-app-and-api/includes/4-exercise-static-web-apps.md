@@ -18,18 +18,30 @@ Now that your GitHub repository is created, you can create a Static Web App from
 
 Next, configure your new app and link it to your GitHub repository.
 
-1. Select your sandbox _Concierge subscription_
-1. Select the _Resource Group_ <rgn>[Sandbox resource group name]</rgn>
-1. Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `_`.
-1. Select _Region_ closest to you
-1. Select the **Free** _SKU_
+1. Enter the **Project Details**
+
+   | Setting          | Value                                    |
+   | ---------------- | ---------------------------------------- |
+   | _Subscription_   | **Concierge subscription**               |
+   | _Resource Group_ | <rgn>[Sandbox resource group name]</rgn> |
+
+1. Enter the **Static Web App details**
+
+   | Setting  | Value                                                                         |
+   | -------- | ----------------------------------------------------------------------------- |
+   | _Name_   | Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `_`. |
+   | _Region_ | Select Region closest to you                                                  |
+   | _SKU_    | **Free**                                                                      |
+
 1. Click the **Sign-in with GitHub** button and authenticate with GitHub
-1. Select your preferred _Organization_
+1. Enter the **Source Control Details**
 
-   - Use the same organization where you created your new repository
+   | Setting        | Value                                                    |
+   | -------------- | -------------------------------------------------------- |
+   | _Organization_ | Select the Organization where you created the repository |
+   | _Repository_   | **my-first-static-web-app**                              |
+   | _Branch_       | **master**                                               |
 
-1. Select **my-first-static-web-app** from the _Repository_ drop-down
-1. Select **master** from the _Branch_ drop-down
 1. Click the **Next: Build >** button to edit the build configuration
 
 ### Build
@@ -38,39 +50,45 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone pivot="angular"
 
-- Enter **angular-app/src** in the _App location_ box
-- Clear the default value from the _Api location_ box
-- Enter **angular-app/dist/angular-app** in the _App artifact location_ box
-- Click the **Review + create** button
+| Setting                 | Value                            |
+| ----------------------- | -------------------------------- |
+| _App location_          | **angular-app**                  |
+| _Api location_          | **angular-app/api**              |
+| _App artifact location_ | **angular-app/dist/angular-app** |
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-- Enter **react-app/src** in the _App location_ box
-- Clear the default value from the _Api location_ box
-- Enter **react-app/build** in the _App artifact location_ box
-- Click the **Review + create** button
+| Setting                 | Value               |
+| ----------------------- | ------------------- |
+| _App location_          | **react-app**       |
+| _Api location_          | **react-app/api**   |
+| _App artifact location_ | **react-app/build** |
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-- Enter **svelte-app/src** in the _App location_ box
-- Clear the default value from the _Api location_ box
-- Enter **svelte-app/public** in the _App artifact location_ box
-- Click the **Review + create** button
+| Setting                 | Value                 |
+| ----------------------- | --------------------- |
+| _App location_          | **svelte-app**        |
+| _Api location_          | **svelte-app/api**    |
+| _App artifact location_ | **svelte-app/public** |
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-- Enter **vue-app/src** in the _App location_ box
-- Clear the default value from the _Api location_ box
-- Enter **svelte-app/dist** in the _App artifact location_ box
-- Click the **Review + create** button
+| Setting                 | Value            |
+| ----------------------- | ---------------- |
+| _App location_          | **vue-app**      |
+| _Api location_          | **vue-app/api**  |
+| _App artifact location_ | **vue-app/dist** |
 
 ::: zone-end
+
+Click the **Review + create** button
 
 > [!NOTE]
 > Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This is not common. Normally you'll have one app in the root of your repository and _/_ for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - to be accommodating to multiple repository shapes/needs.
@@ -82,14 +100,10 @@ Continue to create the application.
 1. Click the **Create** button
 1. Once the deployment is complete, click the **Go to resource** button
 
-There are two automated aspects to deploying a static web app. The first aspect provisions the underlying Azure resources that make up your app. The second aspect is a GitHub Actions workflow that builds and publishes your application.
-
 > [!NOTE]
 > You can ensure that the GitHub Actions workflow is complete by checking the status of your commits available at `https://github.com/<YOUR_GITHUB_USERNAME>/my-first-static-web-app/actions`.
 
 ### Review the GitHub Action
-
-The first time your Azure Static Web Apps resource is created, it creates a GitHub Action. The GitHub Action is added to your repository in the _.github/worksflows_ folder. You can review or modify this file as needed. The settings you entered when cerating the resource are stored in the GitHub Action's file.
 
 While your app is being built you can watch the progress of the GitHub Action by clicking the link shown below:
 
