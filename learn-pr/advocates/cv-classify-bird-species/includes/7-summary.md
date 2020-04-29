@@ -1,6 +1,8 @@
-summarize concepts covered
-provide resources
-link to python?
+Congratulations! You have created a Computer Vision Machine Learning model that will help you identify and document the amazing birds. We covered an introduction to machine learning and computer vision and went through the full model building process. Don't let the learning stop here! There are many more MS Learn machine learning modules to help you start learning more about building models.
+
+Additionally here are some helpful doc links that go into more detail on some of the concepts we covered in this module.
+
+Happy bird watching!
 
 ## Helpful Doc Links
 
