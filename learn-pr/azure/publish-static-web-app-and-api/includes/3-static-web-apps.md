@@ -22,6 +22,8 @@ The key ingredients to create an Azure Static Web App are:
 | App artifact location | dist             | Location of your app's build artifacts, relative to your app location |
 | API location          | api              | Source code for your API (optional)                                   |
 
+The `API location` is a relative path to the build output directory of your application. For example, consider we have an app at `/` that outputs its built assets to a `dist` folder. Then we would want to specify `dist` here.
+
 ### From source code to static assets with GitHub Actions
 
 You push your source code to your GitHub repo. Your GitHub repo contains source code, not static assets, and so it needs to be built before it can be published. The GitHub Action performs the build and turns your source code into static assets that can be served by Azure.
