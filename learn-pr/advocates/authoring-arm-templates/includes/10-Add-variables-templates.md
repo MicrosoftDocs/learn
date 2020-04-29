@@ -1,20 +1,28 @@
 #### Add variables to your template.
 
-Variables in ARM templates are used to simplify things. Rather than repeating complicated expressions throughout the template, you define a variable that contains the expression. Then, you reference that variable as needed throughout your template. Resource Manager resolves variables before starting the deployment operations. Wherever the variable is used in the template, Resource Manager replaces it with the resolved value.
+Variables in ARM templates are used to simplify things. Rather than repeating complicated expressions throughout the template, you define a variable that contains the expression. Then, you reference that variable as needed throughout your template. Resource Manager resolves variables before starting the deployment operations. Wherever a variable is used in the template, the resource Manager replaces it with the resolved value.
 
-Variable can be used for:
-1. Standard variable definitions where you constructs a variable values and it will returns that values.
+There are three types of variables you can leverage:
+
+1. Strings
+1. Objects
+1. Arrays
+
+They can be used for:
+
+1. Standard variable definitions where you constructs a variable value and it will returns that values.
+1. To store objects that will be referred to, such as [configuration variables](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-variables#configuration-variables), that hold related values for configuring an environment. You define the variable as an object with the values. The following example shows an object that holds values for two environments - test and prod.
 1. To construct arrays where you constructs an array of values stored in your variable values and it will returns each of those values based on the index you request when calling the variable.
-1. To store objects that will be referred to, such as a [configuration variables](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-variables#configuration-variables), that hold related values for configuring an environment. You define the variable as an object with the values. The following example shows an object that holds values for two environments - test and prod.
 
 
-you can fin the [documentation](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-variables) and [examples](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-variables#example-templates) of their usage in the documentation.
+You can find the [documentation](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-variables) and [examples](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-variables#example-templates) of their usage in the documentation.
 
-for example, in the following template.  numerous types of variables are defined
+The following sample will show you numerous types of variables defined and their output.
 
 :::code language="JSON" source="../samples/variable-samples.json" highlight="5-66":::
 
-the output would be as follows:
+The output would be as follows:
 
-![Variable Output Sample](../media/variable-sample-output.png)
+:::code language="JSON" source="../samples/variable-sample-output.json":::
 
+In the next exercise you will be replacing some of the items in your template with variables to simplify the template and its deployment.
