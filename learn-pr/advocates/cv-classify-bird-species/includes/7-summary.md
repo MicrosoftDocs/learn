@@ -15,3 +15,5 @@ link to python?
 [Create a Node.js app in Azure App Service on Linux](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-nodejs?WT.mc_id=learn-docs-cassieb)
 
 [Custom Vision Node Tutorial Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/node-tutorial)
+
+[Python SDK Docs](https://docs.microsoft.com/en-us/python/api/azure-cognitiveservices-vision-customvision/azure.cognitiveservices.vision.customvision.training.custom_vision_training_client.customvisiontrainingclient?view=azure-python)

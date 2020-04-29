@@ -35,6 +35,9 @@ We are ready to upload the data for training. We can do this one of two ways. We
   - Domains: General
 - Create project
 
+> [!NOTE]
+> If you want to export the model to deploy on a mobile device, tensorflowjs, or IoT select the `compact` model option
+
 2. Add and tag images
 
 - Select "Add Images" and navigate to the train folder for the scraped images
@@ -76,7 +79,15 @@ trainer = CustomVisionTrainingClient(training_key, endpoint=ENDPOINT)
 # Create a new project
 print ("Creating project...")
 project = trainer.create_project("Bird Classification")
+
 print("Project created!")
+```
+
+> [!NOTE]
+> If you want to export the model instead of the one click deploy, update the create project line of code with the below to create a compact model.
+
+```python
+project = trainer.create_project(name="Bird Classification Compact", domain_id="General (compact)", classification_type="Multiclass", target_export_platforms="Basic platforms")
 ```
 
 3. Go to [customvision.ai](customvision.ai) if you would like to validate the project was created in the UI.

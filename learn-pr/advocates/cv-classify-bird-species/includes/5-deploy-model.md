@@ -35,3 +35,5 @@ Once the model is trained and at a satisfactory accuracy its ready to be used in
 - Send Request
 
 ## Option 2: Deploy to IoT Board
+
+In order to deploy our model to an IoT device we will need to export the model created. If you plan to do this deployment option when you created the project you should have followed the instructions to create a compact model instead of the default.
