@@ -150,7 +150,7 @@
                 "dest": "modules"
             },
             {
-                "src": "languages",
+                "src": "language",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
