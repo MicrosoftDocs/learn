@@ -68,9 +68,37 @@ You just created a GitHub repository named **my-first-static-web-app** in your G
 
 1. Finally, run the front-end client application.
 
+   ::: zone pivot="angular"
+
    ```bash
-   npm run quick
+   npm start
    ```
+
+   ::: zone-end
+
+   ::: zone pivot="react"
+
+   ```bash
+   npm start
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="svelte"
+
+   ```bash
+   npm run dev
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="vue"
+
+   ```bash
+   npm run serve
+   ```
+
+   ::: zone-end
 
 ## Browse to your app
 
