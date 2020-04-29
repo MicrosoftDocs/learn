@@ -1,8 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.authoring-arm-templates.9-template-functions-exercise
-title: Add functions to your template - Exercise.
+title: Add functions to your template - Exercise
+azureSandbox: true
 metadata:
-  title: Add functions to your template - Exercise.
+  title: Add functions to your template - Exercise
   description: Introduction
   ms.date: 09/24/2018
   author: pierreroman

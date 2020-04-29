@@ -1,8 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.authoring-arm-templates.7-add-parameters-templates-exercise
-title: Add parameters to your templates - Exercise.
+title: Add parameters to your templates - Exercise
+azureSandbox: true
 metadata:
-  title: Add parameters to your templates - Exercise.
+  title: Add parameters to your templates - Exercise
   description: Introduction
   ms.date: 09/24/2018
   author: pierreroman

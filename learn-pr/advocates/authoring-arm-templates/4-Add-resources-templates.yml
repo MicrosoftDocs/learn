@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.authoring-arm-templates.4-add-resources-templates
-title: Add a resources to your template.
+title: Add a resources to your template
 metadata:
-  title: Add a resources to your template.
+  title: Add a resources to your template
   description: When writing ARM templates, you'll need to know about resource providers and types of resources. This unit will define each and show you where you can find the relevant references to be able to deploy any resources.
   ms.date: 09/24/2018
   author: pierreroman

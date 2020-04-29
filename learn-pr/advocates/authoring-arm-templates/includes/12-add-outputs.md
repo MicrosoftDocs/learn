@@ -1,1 +1,2 @@
-#### Place Holder
+#### Add outputs to your template
+
