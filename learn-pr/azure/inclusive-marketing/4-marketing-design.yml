@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.inclusive-marketing.4-marketing-design
+title: Design a marketing strategy
+metadata:
+  title: Design a marketing strategy
+  description: Describe the five principles to guide designing your marketing plan
+  ms.date: 04/16/2020
+  author: asajohnson
+  ms.author: asajohnson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-marketing-design.md)]

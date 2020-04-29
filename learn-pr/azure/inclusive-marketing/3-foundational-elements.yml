@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.inclusive-marketing.3-foundational-elements
+title: Explain the foundational elements of inclusive marketing
+metadata:
+  title: Explain the foundational elements of inclusive marketing
+  description: Explain the foundational elements to consider when creating inclusive marketing.
+  ms.date: 04/16/2020
+  author: asajohnson
+  ms.author: asajohnson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-foundational-elements.md)]
