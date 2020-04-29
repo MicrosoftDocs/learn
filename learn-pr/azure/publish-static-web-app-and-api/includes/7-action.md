@@ -14,8 +14,8 @@ The folder _.github/workflows_ contains tour GitHub Action file. The file contai
 
 ```yml
 app_location: 'angular-app' # App source code path
-api_location: 'angular-app/api' # Api source code path - optional
-app_artifact_location: 'angular-app/dist/angular-app' # Built app content directory - optional
+api_location: 'api' # Api source code path - optional
+app_artifact_location: 'dist/angular-app' # Built app content directory - optional
 ```
 
 ::: zone-end
@@ -24,8 +24,8 @@ app_artifact_location: 'angular-app/dist/angular-app' # Built app content direct
 
 ```yml
 app_location: 'react-app' # App source code path
-api_location: 'react-app/api' # Api source code path - optional
-app_artifact_location: 'react-app/build' # Built app content directory - optional
+api_location: 'api' # Api source code path - optional
+app_artifact_location: 'build' # Built app content directory - optional
 ```
 
 ::: zone-end
@@ -34,8 +34,8 @@ app_artifact_location: 'react-app/build' # Built app content directory - optiona
 
 ```yml
 app_location: 'svelte-app' # App source code path
-api_location: 'svelte-app/api' # Api source code path - optional
-app_artifact_location: 'svelte-app/public' # Built app content directory - optional
+api_location: 'api' # Api source code path - optional
+app_artifact_location: 'public' # Built app content directory - optional
 ```
 
 ::: zone-end
@@ -44,8 +44,8 @@ app_artifact_location: 'svelte-app/public' # Built app content directory - optio
 
 ```yml
 app_location: 'vue-app' # App source code path
-api_location: 'vue-app/api' # Api source code path - optional
-app_artifact_location: 'vue-app/dist' # Built app content directory - optional
+api_location: 'api' # Api source code path - optional
+app_artifact_location: 'dist' # Built app content directory - optional
 ```
 
 ::: zone-end
