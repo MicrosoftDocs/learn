@@ -38,39 +38,42 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone pivot="angular"
 
-- Enter **src** in the _App location_ box
+- Enter **angular-app/src** in the _App location_ box
 - Clear the default value from the _Api location_ box
-- Enter **dist/angular-app** in the _App artifact location_ box
+- Enter **angular-app/dist/angular-app** in the _App artifact location_ box
 - Click the **Review + create** button
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-- Enter **/** in the _App location_ box
+- Enter **react-app/src** in the _App location_ box
 - Clear the default value from the _Api location_ box
-- Enter **build** in the _App artifact location_ box
+- Enter **react-app/build** in the _App artifact location_ box
 - Click the **Review + create** button
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-- Enter **/** in the _App location_ box
+- Enter **svelte-app/src** in the _App location_ box
 - Clear the default value from the _Api location_ box
-- Enter **public** in the _App artifact location_ box
+- Enter **svelte-app/public** in the _App artifact location_ box
 - Click the **Review + create** button
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-- Enter **/** in the _App location_ box
+- Enter **vue-app/src** in the _App location_ box
 - Clear the default value from the _Api location_ box
-- Enter **dist** in the _App artifact location_ box
+- Enter **svelte-app/dist** in the _App artifact location_ box
 - Click the **Review + create** button
 
 ::: zone-end
+
+> [!NOTE]
+> Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This is not common. Normally you'll have one app in the root of your repository and _/_ for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - to be accommodating to multiple repository shapes/needs.
 
 ### Review + create
 
