@@ -73,12 +73,17 @@ By introducing this variable *x<sub>i</sub>* to the previous equation, it can be
 ![Term](../media/example_3.png)
 
 ### The final model
-There's one last change we need to make before we can solve our problem. If we look at our cost function ${H}$ there's a flaw: the solution with the least cost is to simply assign all containers to ship ${b}$ by setting all ${x_i}={-1}$ - that's not right! To fix this we'll take a simple step - we'll square the right hand side of the equation so that it cannot be negative:
+There's one last change we need to make before we can solve our problem. 
+If we look at our cost function *H* there's a flaw: the solution with the least cost is to simply assign all containers to ship *b* by setting all of the *x<sub>i</sub>* variables equal to *-1*... that's not right! 
+To fix this we'll take a simple step - we'll square the right hand side of the equation so that it cannot be negative:
 
-$$ H = \Large(\sum{i} w{i} x_{i})^{2} $$
+![Term](../media/example_4.png)
 
 This is somewhat arbitrary, but it yields a cost function with the right properties:
 
-If all the containers are on one ship, the function is at its highest value - reflecting that this is the least optimal solution
-If the containers are perfectly balanced, the value of the summation inside the square is ${0}$ - the function is at its lowest value
-In this case, we don't care about the actual value of ${H}$, just that it's as small as possible.
+- If all the containers are on one ship, the function is at its highest value - reflecting that this is the least optimal solution
+- If the containers are perfectly balanced, the value of the summation inside the square is *0* - the function is at its lowest value
+- In this case, we don't care about the actual value of *H*, just that it's as small as possible.
+
+Now let's take a look at a video which makes use of the Azure Quantum Simulated Annealing solver to assign the containers to the ships.
+You'll see the algorithm exploring a number of different configurations, as it attempts to minimize the cost function that we defined above.
