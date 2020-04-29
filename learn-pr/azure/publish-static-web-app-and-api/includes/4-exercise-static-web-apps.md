@@ -51,41 +51,41 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone pivot="angular"
 
-| Setting                 | Value                            |
-| ----------------------- | -------------------------------- |
-| _App location_          | **angular-app**                  |
-| _Api location_          | **angular-app/api**              |
-| _App artifact location_ | **angular-app/dist/angular-app** |
+| Setting                 | Value                |
+| ----------------------- | -------------------- |
+| _App location_          | **angular-app**      |
+| _Api location_          | **api**              |
+| _App artifact location_ | **dist/angular-app** |
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-| Setting                 | Value               |
-| ----------------------- | ------------------- |
-| _App location_          | **react-app**       |
-| _Api location_          | **react-app/api**   |
-| _App artifact location_ | **react-app/build** |
+| Setting                 | Value         |
+| ----------------------- | ------------- |
+| _App location_          | **react-app** |
+| _Api location_          | **api**       |
+| _App artifact location_ | **build**     |
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-| Setting                 | Value                 |
-| ----------------------- | --------------------- |
-| _App location_          | **svelte-app**        |
-| _Api location_          | **svelte-app/api**    |
-| _App artifact location_ | **svelte-app/public** |
+| Setting                 | Value          |
+| ----------------------- | -------------- |
+| _App location_          | **svelte-app** |
+| _Api location_          | **api**        |
+| _App artifact location_ | **public**     |
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-| Setting                 | Value            |
-| ----------------------- | ---------------- |
-| _App location_          | **vue-app**      |
-| _Api location_          | **vue-app/api**  |
-| _App artifact location_ | **vue-app/dist** |
+| Setting                 | Value       |
+| ----------------------- | ----------- |
+| _App location_          | **vue-app** |
+| _Api location_          | **api**     |
+| _App artifact location_ | **dist**    |
 
 ::: zone-end
 
