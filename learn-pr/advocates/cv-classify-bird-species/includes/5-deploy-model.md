@@ -36,9 +36,21 @@ Once the model is trained and at a satisfactory accuracy its ready to be used in
 
 ## Option 2: Deploy to IoT Board
 
-In order to deploy our model to an IoT device we will need to export the model created. In the settings from the upper right corner change the model domain to compact.
+In order to deploy our model to an IoT device we will need to export the model created.
+
+- To change the model to `compact` click the settings icon in the upper right corner
+- Change the `Domains` to `General (compact)`
+- Go back to the `Performance` tab and click `Train` to train the compact model
 
 ### Export the Model
 
 - Click `Export` at the top of the `Prediction` tab
-  `
+- A dialog will show the different formats you can export the model in. We are going to choose the `Dockerfile` since we are going to deploy to an IoT device.
+- Choose the platform for which you plan to deploy to (Linux, Windows, or ARM)
+- The next steps will assume ARM (Raspberry Pi) deployment
+
+### Raspberry Pi Arm Deployment
+
+When you choose the ARM platform a zip file should have been downloaded.
+
+-
