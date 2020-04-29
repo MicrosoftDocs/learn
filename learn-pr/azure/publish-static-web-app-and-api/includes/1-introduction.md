@@ -1,21 +1,27 @@
-Your company is launching a shopping list web app. Customers can add, edit, view, and remove items from their personal shopping list in the app. Your app and API must be hosted securely, be globally available, and publish automatically.
+Your company is launching a shopping list web app. Through the site, customers can add, edit, view, and remove items from their list.
 
-You don't need a web server that runs code. You do need a hosting solution that serves your assets and API easily, without much setup or configuration.
+As you build the app, your first concerns are that your app and API are hosted securely, globally available, and publish automatically. Rather than build up a web server to handle all these concerns, you decide to use a hosting solution that serves your assets and API easily, without much setup or configuration.
 
 ## What is Azure Static Web Apps?
 
 Azure Static Web Apps solves the hard problems all the way from your source code to global availability.
 
-You focus on developing your app, and Azure Static Web Apps automatically builds and hosts full-stack web apps from a GitHub repository.
+While you stay focused on developing your app, Azure Static Web Apps automatically builds and hosts full-stack web apps from a GitHub repository.
 
-Static web apps are commonly built using Angular, React, Svelte, or Vue. You serve the static assets fast without a full back-end web server. You can host your API endpoints in a serverless architecture, again avoiding a full back-end server. The model for Azure Static Web Apps is that you get exactly what you need, no more, no less.
+Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, or Vue. These apps include HTML, CSS, JavaScript, and image assets that make up the application. Under a traditional web server architecture, these files are served from a single server along side any required API endpoints.
+
+In a Static Web Apps site, static assets are separated from a traditional web server and are instead served from points geographically distributed around the world. This distribution makes serving files much faster as files are physically closer to end users. API endpoints are hosted using a serverless architecture, which avoids the need for a full back-end server all together.
+
+The model for Azure Static Web Apps is that you get exactly what you need, no more, no less.
 
 :::image type="content" source="../media/static-web-apps-overview.png" alt-text="Static Apps overview":::
 
 > [!NOTE]
 > Azure Static Web Apps is currently in preview.
 
-When you create an Azure Static Web App, Azure creates a GitHub Actions workflow in the repository containing your app's code. The workflow starts by building your app. Then the workflow deploys your app to Azure every time you accept a pull request or push new code to a branch.
+When you create a new app, the Static Web Apps service is set to watch a branch in the repo for changes. The service also creates a GitHub Actions workflow file in the app repository, which contains configuration settings for the build action.
+
+Every time you push commits or accept pull requests into the watched branch, the GitHub Action starts up and your site is automatically built and deployed.
 
 Azure host and serves your static web app while Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand to the API.
 
@@ -25,7 +31,7 @@ Azure host and serves your static web app while Azure Functions powers back-end 
 - **Integrated API** support provided by Azure Functions.
 - **First-party GitHub integration** where repository changes trigger builds and deployments.
 - **Free SSL certificates**, which are automatically renewed.
-- **Unique URLs**, for branches and pull requests
+- **Unique preview URLs**, for pull requests
 
 ## Learning objectives
 
@@ -49,4 +55,4 @@ Once you choose your client application, you'll:
 
 ## Next steps
 
-Right about now you might be thinking you need to create the Azure resources first. But a more natural workflow for you is to start with an app. Azure Static Web Apps has your use case in mind. You'll start with an app locally and in GitHub, before creating resources in Azure.
+Right about now you might be thinking you need to create the Azure resources first, but Azure Static Web Apps has your daily workflow in mind. A more natural approach is to start with the code in GitHub first, before creating resources in Azure.
