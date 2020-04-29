@@ -1,4 +1,4 @@
-# Simulated and quantum annealing 
+# Solving optimization problems
 
 We will explain the general idea of simulated annealing and quantum annealing, as the solvers in Azure Quantum use variations of these techniques. 
 
@@ -21,75 +21,6 @@ The walker is like an atom in a metal, for instance, that are driven by thermal 
 These changes are random, however moves to lower-energy configurations are more likely than moves to higher-energy configurations.
 Hence, we say it follows a biased random walk. 
 
-### Defining a cost function: Part One
-Let's take a look at how we define the cost function of our simulated annealing problem. 
-Firstly, we have a number of variables. We can name these variables *x*, and if we have *i* variables, then we can index them individually as follows:
-
-![Variable definition](../media/variable.png)
-
-These variables can take specific values, and in the case of a binary optimization problem they can only take two. 
-In particular, if your problem is considering these variables as spins, as in the Ising model, then the values of the variables can be either +1 or -1. 
-In other cases, these can simply be 1 or 0, as in the QUBO or PUBO model which we will explain shortly.
-
-Let us consider some variables. Each of these variables has an associated weight, which determines their influence on the overall cost function.
-We can write these weights as *w*, and again, if we have *i* variables, then the associated weight for those individual variables can be indexed like so:
-
-![Term definition](../media/term.png)
-
-And so, we can write our cost function as the sum of these weights and variables.
-
-![Cost function definition](../media/cost.png)
-
-### Defining a cost function: Part Two
-Currently our cost function only considers individual variables. 
-You can think of these as independent contributions to the cost function. 
-But often, in real-life scenarios, variables may depend on one another.
-So how do we describe this?
-Mathematically, we write this as the product of two variables.
-Their contribution can be written as their weight, multiplied by each of the variables with indices *i* and *j*:
-
-![Cost function definition](../media/qubo_term.png)
-
-We can combine this with the previous cost function to describe a problem where variables can contribute individually, and based on another variable:
-
-![Cost function definition](../media/qubo_cost.png)
-
-### Defining a cost function: Part Three
-
-However, we don't have to stop there. We can extend this to considering how three variables might depend on one another, using a third index *k*:
-
-![Cost function definition](../media/pubo_term.png)
-
-Combining this again, we have a problem of the form:
-
-![Cost function definition](../media/pubo_cost.png)
-
-- **k-local**: In mathematics, the expressions we have just defined are called "polynomials". 
-In the first case, with independent variables, we would say that this polynomial had degree 1.
-For a polynomial with degree *k*, we would describe this as a *k*-local problem.
-- **QUBO**: In the second case, we introduced the idea of having two variables depend on one another. 
-Mathematically, this amounts to introducing quadratic terms. 
-Alternatively, we might say it was a 2-local problem.
-In Azure Quantum, you might see these problems described as "quadratic unconstrained binary optimization problems", or QUBOs.
-- **PUBO**: In the final case, we described a polynomial with maximum degree 3. 
-However, we could continue to extend this cost function so that it considered problems of a greater degree. 
-In Azure Quantum, we use the term "polynomial unconstrained binary optimization", or PUBO, to describe problems with a maximum degree *k*. 
-
-### Accepting a move
-
-Now that we have defined the structure of our problems, let's look into more detail at how we describe the acceptance of moves.
-This translates to considering, "with what probability should I accept a new assignment to these variables"?
-Since the moves are driven by thermal motion, it depends on the temperature.
-It also depends on the cost (or energy) of the current and proposed configurations, and finally, a constant called the Boltzmann constant.
-
-Mathematically, the probability can be written as follows:
-
-![A mathematical formula](../media/sa.png)
-
-Simulated annealing algorithms mimic this thermal process not only conceptually but in quantitative detail. 
-Over the course of the algorithm the temperature is gradually lowered, which means that moves to higher-energy configurations become less and less likely.
-This ensures that the search space is explored widely at the beginning, and at the end only small changes are made that fine-tune the solution.
-
 ## Quantum annealing
 [Quantum annealing](https://en.wikipedia.org/wiki/Quantum_annealing) is a quantum algorithm which is similar in spirit to simulated annealing but differs in a few details. 
 For instance, in simulated annealing we explored the solution space by making thermal jumps, from one solution to the next.
@@ -104,3 +35,42 @@ Instead of varying the temperature, as we did in simulated annealing, we vary a 
 What this parameter defines is the radius of neighboring states that we could move to, as time goes on, this radius becomes smaller and smaller, as we hone in on a solution.
 By the end of the anneal, the system has settled into one particular configuration of low energy which can then be measured, thus yielding a (not necessarily optimal) solution to the desired optimization problem.
 The most mathematically clean formulation of quantum annealing is called adiabatic quantum optimization, and is what quantum inspired methods attempt to emulate.
+
+## Example: Contoso Logistics freight optimization
+Let's return to Contoso Logisitic's problem of how to distribute containers between two ships, in order to illustrate how optimization techniques, such as QIO, can be used.
+In the number partitioning problem, we have a set ${W}$ of container weights which we would like to partition into two sets: ${W_a}$ and ${W_b}$ (containers on the ships, ${a}$ and ${b}$). 
+In this section, our goal will be to develop a representation of the problem that we can provide to the QIO solver.
+
+### Breaking down the Problem
+Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship. This is expressed in the below equation, where ${w_i}$ is the weight of container ${i}$:
+
+$$ \Large\sum{i} w{i} $$
+
+Ideally, we'd like a solution where the weight difference between the ships is as small as possible. This is expressed by the following expression:
+
+$$ H = \Large\sum{a} w{i} - \Large\sum{b} w{i} $$
+
+If the value of ${H}$ is zero, we know the ships are equally loaded.
+
+Next, we'll introduce a variable, ${x_i}$, to represent whether an individual container ${i}$ is assigned to ship ${a}$ or ship ${b}$. Because we can assign the container ${i}$ to either ship, the variable ${x_i}$ can be take on two different values - which makes it a binary variable. For convenience, we'll say the two values it can take on are ${1}$ and ${-1}$. ${1}$ will represent that the container is placed on ship ${a}$, and ${-1}$ will represent that the container is placed on ship ${b}$.
+
+Because of our choice to make ${i}$ be either ${1}$ or ${-1}$ this type of problem is called an Ising problem.
+
+By introducing this variable ${x_i}$ to the previous equation, it can be simplified to:
+
+$$ H = \Large\sum{i} w{i} x_{i} $$
+
+The function ${H}$ will be called our cost function as it describes the cost of a given solution.
+
+The letter ${H}$ is traditionally used to represent a cost function and is also referred to as a Hamiltonian in a nod towards the quantum mechanical roots of Quantum-Inspired Optimization techniques.
+
+### The final model
+There's one last change we need to make before we can solve our problem. If we look at our cost function ${H}$ there's a flaw: the solution with the least cost is to simply assign all containers to ship ${b}$ by setting all ${x_i}={-1}$ - that's not right! To fix this we'll take a simple step - we'll square the right hand side of the equation so that it cannot be negative:
+
+$$ H = \Large(\sum{i} w{i} x_{i})^{2} $$
+
+This is somewhat arbitrary, but it yields a cost function with the right properties:
+
+If all the containers are on one ship, the function is at its highest value - reflecting that this is the least optimal solution
+If the containers are perfectly balanced, the value of the summation inside the square is ${0}$ - the function is at its lowest value
+In this case, we don't care about the actual value of ${H}$, just that it's as small as possible.
