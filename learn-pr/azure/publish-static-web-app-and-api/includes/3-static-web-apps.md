@@ -2,9 +2,11 @@ You want your app to be hosted in Azure. Azure Static Web Apps will provision th
 
 However, before your app can be hosted, you'll need something that will build your app when you make changes. Those changes could be via commits or pull requests to your repository. Azure Static Web Apps sets up a GitHub Action that will build and publish your application.
 
-## Key components
+## Azure Static Web Apps
 
-When you publish your app to the web with Azure Static Web Apps, you're getting fast hosting of your static assets and scalable APIs. You're also getting a unified build and deployment workflow provided by GitHub Actions.
+When you publish your app to the web with Azure Static Web Apps, you're getting fast hosting of your static web app and scalable APIs. You're also getting a unified build and deployment workflow provided by GitHub Actions.
+
+### Key ingredients
 
 The key ingredients to create an Azure Static Web App are:
 
@@ -12,11 +14,21 @@ The key ingredients to create an Azure Static Web App are:
 1. Connect to your GitHub repository and branch
 1. Identify the folder locations
 
-| Location example | Description                  |
-| ---------------- | ---------------------------- |
-| /                | Source code for your web app |
-| api              | Source code for your API     |
-| public           | Build artifacts              |
+| Location          | Location example | Description                         |
+| ----------------- | ---------------- | ----------------------------------- |
+| App location      | /                | Source code for your web app        |
+| Artifact location | dist             | Build artifacts                     |
+| API location      | api              | Source code for your API (optional) |
+
+### From source code to static assets with GitHub Actions
+
+You push your source code to your GitHub repo. Your GitHub repo contains source code, not static assets, and so it needs to be built before it can be published. The GitHub Action performs the build and turns your source code into static assets that can be served by Azure.
+
+### Integrated API with Azure Functions
+
+You can optionally have an API implemented as an Azure Functions project. You don't need to create an Azure Function app in Azure, instead it's built into your Azure Static Web App. Typically the API is stored in a folder named _api_ or _functions_, but you can name it whatever you prefer.
+
+What if you don't have an API? Don't worry. If Azure Static Web Apps can't find an API in the folder you indicate, it won't publish an API.
 
 ## Next steps
 
