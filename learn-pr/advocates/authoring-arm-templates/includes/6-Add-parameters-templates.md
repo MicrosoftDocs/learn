@@ -1,6 +1,6 @@
 ### Adding parameters to an ARM templates
 
-By leveraging parameters, you can reuse templates for different environments by passing different values either through command line or a parameter file to the template. Azure Resource Manager resolves parameter values before starting the deployment operations. Wherever the parameter is used in the template, Resource Manager replaces it with the resolved value, making it re-usable, and repeatable.
+By leveraging parameters, you can reuse templates for different environments by passing different values either through the command line or a parameter file to the template. Azure Resource Manager resolves parameter values before starting the deployment operations. Wherever the parameter is used in the template, Resource Manager replaces it with the resolved value, making it reusable, and repeatable.
 
 Now, let's get back to parameters.
 
@@ -8,11 +8,11 @@ Now, let's get back to parameters.
 
 Parameters enable you to customize the deployment by providing values that are tailored for a particular environment. For example, you can pass different values based on whether you're deploying to an environment for development, test, and production or others.
 
-In the last Unit, you deployed the template with a Standard_LRS storage account. You might want the flexibility to deploy different SKUs depending on the environment. by using parameters you can achieve that.
+In the last Unit, you deployed the template with a Standard_LRS storage account. You might want the flexibility to deploy different SKUs depending on the environment. by using parameters, you can achieve that.
 
 #### Understand resource updates
 
-In the previous section, you deployed a storage account with the same name that you had created earlier. You may be wondering how existing resource already deployed will be affected by the a template redeployment. As mentioned in Unit 1, Templates are idempotent, which means you can deploy the same template many times and get the same resource types in the same state When using an ARM template, if the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created.
+In the previous section, you deployed a storage account with the same name that you had created earlier. You may be wondering how existing resource already deployed will be affected by a template redeployment. As mentioned in Unit 1, Templates are idempotent, which means you can deploy the same template many times and get the same resource types, in the same state. When using an ARM template, if the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created.
 
 This way of handling updates means your template can include all of the resources you need for an Azure solution. You can safely redeploy the template and know that resources are changed or created only when needed. For example, if you have added files to your storage account, you can redeploy the storage account without losing those files.
 
@@ -87,7 +87,7 @@ The following JSON file shows the usage and formats of different parameter types
 }
 ```
 
-Below is a table of each elements that make up the definition of a parameters and whether they are a **required** in the template.
+Below is a table of each element that make up the definition of a parameter and whether they are a **required** in the template.
 | Element name | Required | Description |
 |:--- |:--- |:--- |
 | parameter-name |Yes |Name of the parameter. Must be a valid JavaScript identifier. |
@@ -103,11 +103,11 @@ Below is a table of each elements that make up the definition of a parameters an
 
 #### General recommendations for parameters
 
-when creating your template there are some recommendations you should follow. These of course are recommendations not rules and therefore can be altered for your own environment.  However, experience has taught us that the following points will benefit you when building your own templates from scratch. 
+when creating your template there are some recommendations you should follow. These recommendations are not rules, and therefore can be altered for your own environment.  However, experience has taught us that the following points will benefit you when building your own templates from scratch. 
 
-1. Minimize your use of parameters. Instead, use variables or literal/constructed values for properties that don't need to be specified during each deployment or do not required a easily readable notation.
+1. Minimize your use of parameters. Instead, use variables or literal/constructed values for properties that don't need to be specified during each deployment or do not required an easily readable notation.
 
-1. Use camel case for parameter names.  Camel case is a typographical way of compounding words together where the initial capital is used for the first letter of each word after and including the second word of the compound.<br>e.g. exampleArray, contentVersion, storageAccountType...
+1. Use camel case for parameter names.  Camel case is a typographical way of compounding words together where the initial capital is used for the first letter of each word after and including the second word of the compound.<br>for example, exampleArray, contentVersion, storageAccountType...
 
 1. Use parameters for settings that vary according to the environment, like SKU, size, or capacity.
 
@@ -117,7 +117,7 @@ when creating your template there are some recommendations you should follow. Th
 
 :::code language="json" source="../samples/parameter-description-example.json" highlight="5":::
 
-6. Define default values for parameters whenever possible.  This will make it easier to deploy the template, and users of your template see an example of an appropriate value.
+6. Define default values for parameters whenever possible.  A defined value will make it easier to deploy the template, and users of your template see an example of an appropriate value.
 
 :::code language="json" source="../samples/parameter-defaultValue-example.json" highlight="4":::
 
