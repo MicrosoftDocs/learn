@@ -47,6 +47,30 @@ Once the GitHub Action has completed successfully, you can view your running app
 
 Notice that the preview URL contains a hyphen followed by a number. The number matches the pull request number for the pull request you created. For every pull request you create, you'll get a unique and repeatable preview URL.
 
+::: zone pivot="angular"
+
+:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Your angular web app":::
+
+::: zone-end
+
+::: zone pivot="react"
+
+:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Your react web app":::
+
+::: zone-end
+
+::: zone pivot="svelte"
+
+:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Your svelte web app":::
+
+::: zone-end
+
+::: zone pivot="vue"
+
+:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Your vue web app":::
+
+::: zone-end
+
 ## Next steps
 
 Congratulations, you've created your first Azure Static Web App with a web app and API!
