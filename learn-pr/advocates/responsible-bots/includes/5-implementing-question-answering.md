@@ -59,7 +59,120 @@ Let's add questions about definition of terms *country* and *capital*. You can a
 Once the data has been added, click **Save and train**. After that, you can click **Test** to see your model in action. You will see a chat dialog, and can enjoy the conversation right from the browser:
 ![QnA Maker Test](../media/QnAMakerTest.png)
 
-If you click on **Inspect** link (highlighted in the picture above) you will see the detailed QnA Maker response to your query, including the probability of the selected answer, and you can also provide feedback.
+If you click on **Inspect** link (highlighted in the picture above) you will see the detailed QnA Maker response to your query, including the probability of the selected answer, and you can also provide feedback, to further improve model accuracy.
+
+Once you are done putting the data and training the more, you can click **Publish** to have the model published in the cloud:
+![QnA Maker Publish](../media/QnAMakerPublish.png)
+
+After publishing, you will get the final page with details on how to call the service, and a button to automatically **Create a Bot** that is tied up to the service.
+
+![QnA Maker Published Screen](../media/QnAMakerPublished.png)
+
+In fact, using QnA Maker is probably the easiest way to get a bot up and running in the cloud. Even a bot without sophisticated functionality can implement Responsible UI!
+
+# Adding QnA Maker Model to our Bot
+
+In our case, we already have a working bot, and just want to add QnA Maker functionality to handle the chit-chat and question answering. This process would be quite similar to adding LUIS recognizer.
+
+After publishing the QnA model, you saw the details of the deployed service, which looked like that:
+```
+POST /knowledgebases/b36405a5-3858-43d2-b41f-7fb4fd4db81d/generateAnswer
+Host: https://myquestionservice.azurewebsites.net/qnamaker
+Authorization: EndpointKey a10aa460-2bf4-4be9-804c-82a7f8b3f4c8
+Content-Type: application/json
+{"question":"<Your question>"}
+``` 
+
+From this text, you need the following 3 parameters:
+* The **knowledge base id**, which is the sequence of numbers that follow `POST /knowledgebases/`
+* **Endpoint Key** is the sequence of numbers after `Authorization: EndpointKey`
+* **Hostname** is the address that follows `Host:` 
+
+You need to put this information into `appSettings.json`. Somewhere in that file, insert those three lines:
+
+```json
+"QnAKbId": "<your knowledge base id>",
+"QnAEndpointKey": "<your qna maker subscription key>",
+"QnAHostname": "<your qna maker url>"
+```
+
+Now you need to make some changes to the application code:
+
+1. Go to Visual Studio with our Bot project and use Nuget to add `Microsoft.Bot.Builder.AI.QnA` to the project.
+2. Open `Startup.cs`, locate the function `ConfigureServices`, and insert the code below after the code that adds LUIS recognizer:
+```csharp
+services.AddSingleton(sp =>
+    {
+        return new QnAMaker(
+            new QnAMakerEndpoint
+            {
+                EndpointKey = Configuration["QnAEndpointKey"],
+                Host = Configuration["QnAHostname"],
+                KnowledgeBaseId = Configuration["QnAKbId"],
+            },
+            new QnAMakerOptions
+            {
+                ScoreThreshold = 0.9f,
+                Top = 1,
+            });
+    });
+```
+Once again, to make the code compile you need to add `using Microsoft.Bot.Builder.AI.QnA;` to the top of the file. The easiest way to do so is to navigate to parts of code that show errors (`QnAMaker` or `QnAMakerEndpoint`) and click on the light bulb that appears next to it.
+3. Open `Bots\EchoBot.cs` and add the following line to the class to define local variable for QnA Maker instance:
+```csharp
+QnAMaker QnA;
+```
+4. Add `QnAMaker QnA` parameter to the `EchoBot` constructor, and the following line inside the constructor:
+```csharp
+this.QnA = QnA;
+```
+5. Finally, let's change our message processing code to use QnA Maker model if the LUIS recognizer probability is not high enough:
+```csharp
+protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+{
+    var res = await rec.RecognizeAsync(turnContext, cancellationToken);
+    var (intent, luis_score) = res.GetTopScoringIntent();
+    var ans = await QnA.GetAnswersAsync(turnContext);
+    var qna_score = ans == null || ans.Count() == 0 ? 0.0 : ans[0].Score;
+    if (luis_score>0.3 && luis_score>qna_score)
+    {
+        await ProcessLuisResult(turnContext, intent, res.Entities);
+    }
+    else
+    {
+        if (ans == null || ans.Count() == 0)
+        {
+            await turnContext.SendActivityAsync("I am not sure I understand you fully");
+        }
+        else
+        {
+            await turnContext.SendActivityAsync(ans[0].Answer);
+        }
+    }
+}
+```
+The logic here is quite clever, because we need to understand subtle differences between phrases. For example, a phrase *What is a capital?* should be answered via QnA Maker, while *What is a capital or France?* - via LUIS and our bot code.
+
+In our code, we call both LUIS and QnA Maker, and select which service gives us the higher score. We then display corresponding result.
+
+>[!TIP]
+>If you have problems putting the code in the right place - you can check out the complete project code at this state [in this repository][CodeQnA]
+
+At this point, you can run the project and test it in Bot Emulator.
+
+# Conclusion
+
+The bot we have create so far already seems quite intelligence. Here is a sample conversation I had with a bot:
+
+ - What is a capital?
+ - *A capital is the city or town that functions as the seat of government and administrative centre of a country or region.* 
+ - What is a capital of Russia?
+ - *The capital of Russia is Moscow*
+ - How are you?
+ - *Awesome! Thanks for asking.*
+
+ In the next unit, we will specifically focus on some final touches that implement Responsible Conversational UI principles.
 
 [QAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/
 [ProjectPersonalityChat]: https://www.microsoft.com/en-us/research/project/personality-chat/
+[CodeQnA]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t3-qna
