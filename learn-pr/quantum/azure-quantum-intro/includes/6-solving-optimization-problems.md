@@ -28,6 +28,8 @@ In quantum annealing, we instead make use of a quantum effect called "quantum tu
 
 ![Tunneling](../media/tunneling.png)
 
+### How does it work?
+
 We frame our problem by giving assigments to qubits, which are our variables, and the energy of a given assignment to the qubits is the value of the objective function.
 Initially we begin with the quantum state in a broad [superposition](https://en.wikipedia.org/wiki/Quantum_superposition) over many possible assignments to the qubits.
 Instead of varying the temperature, as we did in simulated annealing, we vary a parameter called the "quantum field strength".
@@ -38,13 +40,18 @@ The most mathematically clean formulation of quantum annealing is called adiabat
 
 ## Example: Contoso Logistics freight optimization
 Let's return to Contoso Logisitic's problem of how to distribute containers between two ships, in order to illustrate how optimization techniques, such as QIO, can be used.
-In the number partitioning problem, we have a set ${W}$ of container weights which we would like to partition into two sets: ${W_a}$ and ${W_b}$ (containers on the ships, ${a}$ and ${b}$). 
-In this section, our goal will be to develop a representation of the problem that we can provide to the QIO solver.
+
+### Understanding the Problem 
+
+In the number partitioning problem, we have a set of container weights, *W*, which we would like to partition into two sets of containers on ship *a* and containers on ship *b*.
+In this section, our goal will be to develop a representation of the problem that we can provide to a QIO solver.
 
 ### Breaking down the Problem
-Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship. This is expressed in the below equation, where ${w_i}$ is the weight of container ${i}$:
+Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship. 
+We can express this using the equation below, 
+This is expressed in the below equation, where *w<sub>i</sub>* is the weight of container *i*:
 
-$$ \Large\sum{i} w{i} $$
+![Term](../media/example_1.png)
 
 Ideally, we'd like a solution where the weight difference between the ships is as small as possible. This is expressed by the following expression:
 
