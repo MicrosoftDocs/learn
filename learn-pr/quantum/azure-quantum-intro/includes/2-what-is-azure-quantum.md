@@ -1,10 +1,11 @@
-In this unit, you will first watch a video introduction about Azure Quantum service and the types of problems Azure Quantum can help with. You will learn about the third party hardware you can access through Azure Quantum. 
-
-In this unit, you will get an overview on Azure Quantum service and the types of problems Azure Quantum can help with. 
+In this unit, you will first watch a video introduction about Azure Quantum service and the types of problems Azure Quantum can help with. 
+You will learn about the third party hardware you can access through Azure Quantum. 
 
 > [!VIDEO https://www.microsoft.com/...]
 
-Azure Quantum allows you to run Quantum Programs and solve Quantum-Inspired Optimization (QIO) problems in the cloud. Azure Quantum takes these jobs and schedules them with the desired provider for execution. Using our SDKs and tools you can easily run a job against multiple providers and targets to find the one that will work best for your scenario.
+Azure Quantum allows you to run Quantum Programs and solve Quantum-Inspired Optimization (QIO) problems in the cloud. 
+Azure Quantum takes these jobs and schedules them with the desired provider for execution. 
+Using our SDKs and tools you can easily run a job against multiple providers and targets to find the one that will work best for your scenario.
 
 ![Azure Quantum Overview](./media/Azure-Quantum-Flow-Diagram.png)
 
