@@ -1,32 +1,34 @@
-### YamlMime:Module
-uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics
-metadata:
-  title: Test Hypothesis By Simulating Statistics
-  description: Learn
+uuid: learn.student-evangelism.test-hypothesis-by-simulating--statistics
+meta_data:
+  title: Test Hypothesis By Simulating  Statistics
+  description: Learn how to test hypothesis by simulating statistics
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
-title: Test Hypothesis By Simulating Statistics
+title: Test Hypothesis By Simulating  Statistics
 summary: '** TODO: FILL IN **'
-abstract: |
-  In this module, you will:
-  - PLACEHOLDER
+abstract: 'In this module, you will:
+
+  - '
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
-levels: 
-- beginner
-roles: 
-- data-scientist
-- student
-products: 
-- azure
-units: 
-- learn.student-evangelism.test-hypothesis-by-simulating-statistics.introduction
-- learn.student-evangelism.test-hypothesis-by-simulating-statistics.multiple-categories
-- learn.student-evangelism.test-hypothesis-by-simulating-statistics.decisions-and-uncertainty
-- learn.student-evangelism.test-hypothesis-by-simulating-statistics.error-probabilities
-- learn.student-evangelism.test-hypothesis-by-simulating-statistics.summary
+iconUrl: '** TODO: FILL IN **'
+levels: beginner
+roles: '
+
+  - data-scientist
+
+  - student'
+products: '- azure'
+units: '
+
+  - learn.student-evangelism.test-hypothesis-by-simulating--statistics.assessing-models
+
+  - learn.student-evangelism.test-hypothesis-by-simulating--statistics.multiple-categories
+
+  - learn.student-evangelism.test-hypothesis-by-simulating--statistics.decisions-and-uncertainty
+
+  - learn.student-evangelism.test-hypothesis-by-simulating--statistics.error-probabilities'
 badge:
-  uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.badge
+  uuid: learn.student-evangelism.test-hypothesis-by-simulating--statistics

@@ -78,7 +78,7 @@ results.hist(bins = np.arange(0, 101, 5))
 plots.plot([45, 45], [0, 0.035], color='gold', lw=2);
 ```
 
-![png](../media/44_Error_Probabilities_4_0.png)
+![png](../media/59-error-probabilities-4-0.png)
 
 The area to the right of 45 (where the gold line is) is about 5%. Large
 values of the test statistic favor the alternative. So if the test
@@ -163,6 +163,3 @@ treatment does nothing when in fact it does something. Discussions of
 that error are outside the scope of this course. Just be aware that life
 isn't easy: if you set up your test to reduce one of the two errors, you
 almost always increase the other one.
-
-``` {.python}
-```

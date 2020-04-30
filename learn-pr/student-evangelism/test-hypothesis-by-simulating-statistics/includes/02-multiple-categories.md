@@ -165,7 +165,7 @@ differences.
 jury.barh('Ethnicity')
 ```
 
-![png](../media/42_Multiple_Categories_8_0.png)
+![png](../media/57-multiple-categories-8-0.png)
 
 ### Comparison with Panels Selected at Random
 
@@ -297,7 +297,7 @@ As always, it helps to visualize.
 panels_and_sample.barh('Ethnicity')
 ```
 
-![png](../media/42_Multiple_Categories_12_0.png)
+![png](../media/57-multiple-categories-12-0.png)
 
 The bar chart shows that the distribution of the random sample resembles
 the eligible population but the distribution of the panels does not.
@@ -321,9 +321,9 @@ below.
 jury.barh('Ethnicity')
 ```
 
-![png](../media/42_Multiple_Categories_16_0.png)
+![png](../media/57-multiple-categories-16-0.png)
 
-For this, we will compute a quantity called the *total variation
+For this we will compute a quantity called the *total variation
 distance* between two distributions. The calculation is as an extension
 of the calculation of the distance between two numbers.
 
@@ -431,7 +431,7 @@ Other
 </table>
 Take a look at the column `Difference` and notice that the sum of its
 entries is 0: the positive entries add up to 0.14, exactly canceling the
-total of the negative entries, which is -0.14.
+total of the negative entries which is -0.14.
 
 This is numerical evidence of the fact that in the bar chart, the gold
 bars exceed the blue bars by exactly as much as the blue bars exceed the
@@ -672,7 +672,7 @@ distribution by more than about 0.05.
 Table().with_column('TVD', tvds).hist(bins=np.arange(0, 0.2, 0.005))
 ```
 
-![png](../media/42_Multiple_Categories_34_0.png)
+![png](../media/57-multiple-categories-34-0.png)
 
 ### Assessing the Model of Random Selection
 
@@ -767,4 +767,6 @@ correspondence between the two distributions being compared.
 Thus, while we have a clear conclusion about the data in our table --
 the panels do not look like a random sample from the distribution
 provided for eligible jurors -- questions about the nature of the data
+prevent us from concluding anything broader.
+tions about the nature of the data
 prevent us from concluding anything broader.
