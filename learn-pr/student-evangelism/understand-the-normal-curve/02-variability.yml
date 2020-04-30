@@ -15,7 +15,7 @@ content: |
 
 quiz:
   questions:
-    - content: 'For a distribution that's skewed towards the right, would the mean be to the left, to the right of the median, or will the mean and the median probably overlap?'
+    - content: "For a distribution that's skewed towards the right, would the mean be to the left, to the right of the median, or will the mean and the median probably overlap?"
       choices:
         - content: 'Mean to the right of the median'
           isCorrect: true
@@ -26,7 +26,7 @@ quiz:
         - content: 'bin [4, 12)'
           isCorrect: false
           explanation: Incorrect.
-    - content: 'For a distribution that's skewed towards the left, would the mean be to the left, to the right of the median, or will the mean and the median probably overlap?'
+    - content: "For a distribution that's skewed towards the left, would the mean be to the left, to the right of the median, or will the mean and the median probably overlap?"
       choices:
         - content: 'Mean to the right of the median'
           isCorrect: false
