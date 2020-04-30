@@ -24,16 +24,16 @@ quiz:
   questions:
     - content: 'Which line of code returns a new table which displays the total number of candies and the total cost for each unique color?'
       choices:
-        - content: 'marbles.group('Color', max)'
+        - content: "marbles.group('Color', max)"
           isCorrect: false
           explanation: Incorrect.
-        - content: 'marbles.group('Color')'
+        - content: "marbles.group('Color')"
           isCorrect: false
           explanation: Incorrect.
-        - content: 'marbles.group('Color', sum)'
+        - content: "marbles.group('Color', sum)"
           isCorrect: true
           explanation: We want one row in the new table for each unique candy color, which points to grouping by color, and the aggregation function in group should return the total for each group, which will be done by the function sum.
-        - content: 'marbles.group('Price', sum)'
+        - content: "marbles.group('Price', sum)" 
           explanation: Incorrect.
           isCorrect: false
     - content: 'What will be the new column names of the table generated above?'
