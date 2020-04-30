@@ -12,7 +12,10 @@ title: Understand The Normal Curve
 summary: Learn about the normal curve
 abstract: |
   In this module, you will:
-  - PLACEHOLDER
+  - Understand various properties of the mean and its importance as a statistic.
+  - Measure the spread of values in a distribution and converted distributions to Standard Units.
+  - Learn the properties of the normal distribution and different bounds.
+  - Examine the Central Limit Theorem through simulations and studied some use cases.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:

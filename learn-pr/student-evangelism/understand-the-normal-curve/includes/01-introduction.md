@@ -336,6 +336,10 @@ to the right, the larger the mean becomes. But the median is not
 affected by values at the extremes of the distribution. That is why
 economists often summarize income distributions by the median instead of
 the mean.
-f the distribution. That is why
-economists often summarize income distributions by the median instead of
-the mean.
+
+## Learning Objectives
+
+- Understand various properties of the mean and its importance as a statistic.
+- Measure the spread of values in a distribution and converted distributions to Standard Units.
+- Learn the properties of the normal distribution and different bounds.
+- Examine the Central Limit Theorem through simulations and studied some use cases.
