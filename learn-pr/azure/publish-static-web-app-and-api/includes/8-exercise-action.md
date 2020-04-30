@@ -9,6 +9,7 @@ You've made changes to your API in the previous exercise. Commit those changes t
 1. Enter a commit message such as **api changes**
 1. Open the command palette by pressing **F1**
 1. Type and select **Git: Push**
+1. If you are prompted with the message **The branch 'api' has no upstream branch. Would you like to publish this branch?** press the \*_OK_ button
 
 ## Create a Pull Request
 
@@ -32,7 +33,7 @@ Your GitHub Action has now been triggered.
 You can stay in your browser on your repository and watch the GitHub Action's progress. Follow these steps to view the progress:
 
 1. Click on the **Actions** menu
-1. Under the Workflows menu, click on the **Azure Pages CI/CD** workflow item
+1. Under the Workflows menu, click on the **Azure Static Web Apps CI/CD** workflow item
 1. Select the latest (top) link in the action runs to the right
 
 You can see the progress of your GitHub Action as it builds and publishes your web app and API.
