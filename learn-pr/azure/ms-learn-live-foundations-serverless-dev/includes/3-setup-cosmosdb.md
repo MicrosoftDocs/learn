@@ -9,6 +9,28 @@
 
 ## Create a CosmosDB instance
 
+The scripts and instructions below will create a CosmosDB instance with the following parameters:
+
+- Name: `dbbacktoschool`
+- Database name: `maindb`
+- Container name: `data`
+- Partition key: `/itemType`
+
+The test data is using this format:
+
+```json
+{
+    "id": "p001",
+    "itemType": "product",
+    "name": "Pre-sharpened Wood Cased Pencils",
+    "description": "Rounded hexagonal shape with satin-smooth finish for a secure, comfortable grip",
+    "price": 499,
+    "category": "Pencils",
+    "stockUnits": 500,
+    "thumbnailImage": "p001.png"
+  }
+```
+
 ### If you're using your own Azure subscription
 
 - Open [Azure portal](https://portal.azure.com) in your browser and select your subscription
@@ -74,7 +96,7 @@ Configuration data for locally running projects is stored in a file called `loca
     "FUNCTIONS_WORKER_RUNTIME": "node",
     "CONNECTION_STRING": "[PASTE CONNECTION STRING HERE]",
     "COSMOS_DB_NAME": "maindb",
-    "COSMOS_DB_CONTAINER": "products"
+    "COSMOS_DB_CONTAINER": "data"
   }
 }
 ```
