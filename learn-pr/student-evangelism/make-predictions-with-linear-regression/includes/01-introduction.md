@@ -1452,7 +1452,7 @@ from IPython.display import Image
 Image("../media/choco-nobel.png")
 ```
 
-![png](../media/76-correlation-65-0.png)
+![png](../media/76_correlation_65_0.png)
 
 ``` {.python}
 ```

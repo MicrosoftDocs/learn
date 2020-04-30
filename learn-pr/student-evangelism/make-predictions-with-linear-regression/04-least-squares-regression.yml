@@ -12,3 +12,27 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/04-least-squares-regression.md)]
+quiz:
+  questions:
+    - content: 'which of the following is incorrect?'
+      choices:
+        - content: 'We can calculate a "best fit" regression line by minimizing the mean error.'
+          isCorrect: true
+          explanation: Correct. We should be minimizing the root mean squared error instead.
+        - content: 'The least squares method is a way to generate a regression line.'
+          explanation: Incorrect.
+          isCorrect: false
+        - content: 'No matter what the shape of the scatter plot, there is a unique line that minimizes the mean squared error of estimation.'
+          isCorrect: false
+          explanation: Incorrect.
+    - content: 'which of the following is correct?'
+      choices:
+        - content: 'Linear correlation implies causation.'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Causation implies linear correlation.'
+          explanation: Incorrect.
+          isCorrect: false
+        - content: 'The regression line is the only line that minimizes mean squared error.'
+          isCorrect: true
+          explanation: Correct.
