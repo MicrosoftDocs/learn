@@ -70,6 +70,7 @@ Face
 </tr>
 </tbody>
 </table>
+
 ### A Probability Distribution
 
 The histogram below helps us visualize the fact that every face appears
@@ -83,7 +84,7 @@ die_bins = np.arange(0.5, 6.6, 1)
 die.hist(bins = die_bins)
 ```
 
-![png](../media/36_Empirical_Distributions_4_0.png)
+![png](../media/51-empirical-distributions-4-0.png)
 
 Variables whose successive values are separated by the same fixed
 amount, such as the values on rolls of a die (successive values
@@ -214,7 +215,7 @@ how it varies.
 empirical_hist_die(10)
 ```
 
-![png](../media/36_Empirical_Distributions_11_0.png)
+![png](../media/51-empirical-distributions-11-0.png)
 
 When the sample size increases, the empirical histogram begins to look
 more like the histogram of theoretical probabilities.
@@ -223,13 +224,13 @@ more like the histogram of theoretical probabilities.
 empirical_hist_die(100)
 ```
 
-![png](../media/36_Empirical_Distributions_13_0.png)
+![png](../media/51-empirical-distributions-13-0.png)
 
 ``` {.python}
 empirical_hist_die(1000)
 ```
 
-![png](../media/36_Empirical_Distributions_14_0.png)
+![png](../media/51-empirical-distributions-14-0.png)
 
 As we increase the number of rolls in the simulation, the area of each
 bar gets closer to 16.67%, which is the area of each bar in the
@@ -248,5 +249,7 @@ For example, in the long run, the proportion of times the face with four
 spots appears gets closer and closer to 1/6.
 
 Here "independently and under identical conditions" means that every
+repetition is performed in the same way regardless of the results of all
+the other repetitions.
 repetition is performed in the same way regardless of the results of all
 the other repetitions.

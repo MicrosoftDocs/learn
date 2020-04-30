@@ -19,7 +19,7 @@ In this chapter we will take a more careful look at sampling, with
 special attention to the properties of large random samples.
 
 Let's start by drawing some samples. Our examples are based on the
-top_movies.csv data set.
+<code><a href="imdb.csv">top\_movies.csv</a></code> data set.
 
 ``` {.python}
 top1 = Table.read_table(path_data + 'top_movies.csv')
@@ -540,8 +540,7 @@ Warner Bros.
 While these are samples, they are not random samples. They don't involve
 chance.
 
-Probability Samples
--------------------
+## Probability Samples
 
 For describing random samples, some terminology will be helpful.
 
@@ -863,3 +862,4 @@ because you didn't choose who walked by. But it's not a random sample --
 it's a *sample of convenience*. You didn't know ahead of time the
 probability of each person entering the sample; perhaps you hadn't even
 specified exactly who was in the population.
+ the population.

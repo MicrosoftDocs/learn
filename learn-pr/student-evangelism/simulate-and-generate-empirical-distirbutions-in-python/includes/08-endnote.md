@@ -1,5 +1,4 @@
-Endnote
--------
+## Endnote
 
 In the terminology that we have developed, John Snow conducted an
 observational study, not a randomized experiment. But he called his
@@ -87,3 +86,4 @@ contents of the book are stomach-churning.
 Abhijit Banerjee and Esther Duflo of MIT, is an accessible and lively
 account of ways to fight global poverty. It includes numerous examples
 of RCTs, including the PROGRESA example in this section.
+ion.

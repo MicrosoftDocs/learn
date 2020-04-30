@@ -3,7 +3,7 @@ uid: learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-p
 title: Monty Hall Problem
 metadata:
   title: Monty Hall Problem
-  description: '** TODO: FILL IN **'
+  description: Simulate the Monty Hall problem.
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott

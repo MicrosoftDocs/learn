@@ -3,12 +3,12 @@ uid: learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-p
 title: Sampling From A Population
 metadata:
   title: Sampling From A Population
-  description: '** TODO: FILL IN **'
+  description: Understand convergence of emperical distributions
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/05-sampling-from-a-population.md)]

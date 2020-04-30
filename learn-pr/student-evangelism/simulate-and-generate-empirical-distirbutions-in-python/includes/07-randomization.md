@@ -1,5 +1,4 @@
-Randomization
--------------
+## Randomization
 
 An excellent way to avoid confounding is to assign individuals to the
 treatment and control groups *at random*, and then administer the
@@ -52,3 +51,4 @@ women to your "alcohol" group. You should not expect cooperation from
 them if you present them with a drink. In such situations you will
 almost invariably be conducting an observational study, not an
 experiment. Be alert for confounding factors.
+g factors.

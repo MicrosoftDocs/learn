@@ -288,7 +288,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/33_Simulation_17_1.png)
+![png](../media/48-simulation-17-1.png)
 
 Each bins has width 1 and is centered at each value of the number of
 heads.
@@ -384,7 +384,8 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/33_Simulation_27_1.png)
+![png](../media/48-simulation-27-1.png)
 
 Seven is the most common value, with the frequencies falling off
 symmetrically on either side.
+cally on either side.

@@ -35,7 +35,7 @@ is, and has to attempt to find it under the following rules.
     its glory in
     [Wikipedia](https://en.wikipedia.org/wiki/Monty_Hall_problem):
 
-![Monty Hall goat](../media/monty_hall_goat.png)
+![Monty Hall goat](../../../images/monty_hall_goat.png)
 
 -   There are two doors left, one of which was the contestant's original
     choice. One of the doors has the car behind it, and the other one
@@ -376,11 +376,13 @@ second goat
 combined.barh(0)
 ```
 
-![png](../media/34_Monty_Hall_Problem_27_0.png)
+![png](../media/49-monty-hall-problem-27-0.png)
 
 Notice how the three blue bars are almost equal -- the original choice
 is equally likely to be any of the three available items. But the gold
 bar corresponding to `Car` is twice as long as the blue.
 
 The simulation confirms that the contestant is twice as likely to win if
+she switches.
+n if
 she switches.
