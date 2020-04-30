@@ -952,9 +952,9 @@ The empirical P-value is around 1% and therefore the result is
 statistically significant. The test supports the hypothesis that the
 smokers were younger on average.
 
-``` {.python}
-```
-were younger on average.
+## Learning Objectives
 
-``` {.python}
-```
+- Study A/B Tests and how to run an A/B Test.
+- Prove causality with Randomized Controlled Trial (RCTs).
+- Understand The Bootstrap: The idea behind it, what it is, and why it works.
+- Learn about Confidence Intervals: Understanding confidence levels, generating confidence intervals, and how to use them to estimate unknown parameters.
