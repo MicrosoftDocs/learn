@@ -7,7 +7,7 @@ In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics
 
 Let’s now import pandas and load the dataset. The path name is case-sensitive.
 
-```Python
+```python
 import pandas as pd 
 df = pd.read_csv('Data/SMSSpamCollection', sep='\t', names=['Class', 'Message'])
 ```
@@ -32,7 +32,7 @@ TBD - Provide a solution and output
 
 Let's take an initial look at what's in the dataset:
 
-```Python
+```python
 df.head()
 ```
 
@@ -52,19 +52,14 @@ df.head()
 --------------------------------------------------------------------
 ```
 
-|   | employee | group      |
------------------------------
-| 0 | Gary     | Accounting |
-| 1 | Stu      | Marketing  |
-| 2 | Mary     | Marketing  |
-| 3 | Sue      | HR         |
-
 Note that several entries in the `Message` column are truncated. We can use the `set_option()` function to set pandas to display the maximum width of each entry.
 
 ```python
 pd.set_option('display.max_colwidth', -1)
 df.head()
 ```
+
+TBD output
 
 ### Try it yourself
 
@@ -73,7 +68,7 @@ What do you think the purpose of the `-1` parameter passed to `pd.set_option()` 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-TBD - Provide an output
+TBD - Provide a possible solution and output
 
 </details>
 
@@ -81,9 +76,10 @@ TBD - Provide an output
 
 ***
 
-
 Alternatively, we can dig into individual messages.
 
 ```python
 df['Message'][13]
 ```
+
+TBD output

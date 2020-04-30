@@ -89,7 +89,6 @@ dtypes: float64(49), int64(1), object(4)
 memory usage: 3.7+ MB
 ```
 
-
 ### Try it yourself
 
 Can you think of a more concise way to check the number of rows and columns in a `DataFrame`?

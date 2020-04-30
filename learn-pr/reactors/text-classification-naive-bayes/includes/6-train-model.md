@@ -2,18 +2,22 @@
 
 Now, it's time to train our naive Bayes model. For our model, we will use the multinomial naive Bayes classifier. "Multinomial" in this case derives from our assumption that, for our bag of $n$ words: $P({\rm S}\mid {\rm word_1}, {\rm word_2},\ldots, {\rm word}_n)=P({\rm S})P({\rm word_1}\mid {\rm S})P({\rm word_2}\mid {\rm S})\cdots P({\rm word}_n\mid {\rm S})$. We don't assume that our word likelihoods follow a normal distribution.
 
-```Python
+```python
 from sklearn.naive_bayes import MultinomialNB
 ```
 
-```Python
+Then, run this command:
+
+```python
 naivebayes_model = MultinomialNB()
 naivebayes_model.fit(X_train_data,y_train)
 ```
 
+TBD output
+
 Our model is now fitted. However, before we run our predictions on all of our test data, let's see what our model says about some artificial data in order to get a better sense of what our model will do with all of the messages in our test dat. From the word clouds we constructed earlier, we can see that "call" and "free" are both prominent words among our spam messages, so let's create our own spam message and see how our model classifies it.
 
-```Python
+```python
 pred = naivebayes_model.predict(CountVect.transform(['Call for a free offer!']))
 pred
 ```
@@ -38,11 +42,13 @@ pred2
 
 TBD output
 
----
-
 </details>
 
-Now let's run our test data through the model. First, we need to transform it to a document-term matrix.
+<br /><br />
+
+***
+
+Now, let's run our test data through the model. First, we need to transform it to a document-term matrix.
 
 ```Python
 X_test_data = CountVect.transform(X_test)
@@ -58,7 +64,7 @@ Run the predictions for the test data.
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Exercise solution
+This is a possible solution:
 
 ```Python
 predictions = naivebayes_model.predict(X_test_data)
@@ -67,17 +73,21 @@ predictions
 
 TBD output
 
----
-
 </details>
+
+<br /><br />
+
+***
 
 Now it's time to evaluate our model's performance.
 
-```Python
+```python
 from sklearn.metrics import classification_report, confusion_matrix
 
 print(classification_report(predictions, y_test))
 ```
+
+TBD output
 
 ### Try it yourself
 
@@ -88,17 +98,19 @@ Overall, our model is good for spam detection, but our recall score (the proport
 
 Use the scikit-learn `confusion_matrix()` function to better understand the specific performance of the model. Get help [interpreting the confusion matrix](https://wikipedia.org/wiki/Confusion_matrix).
 
-Possible exercise solution:
+This is a possible exercise solution:
 
-```Python
+```python
 print(confusion_matrix(y_test, predictions))
 ```
 
 TBD output
 
----
-
 </details>
+
+<br /><br />
+
+***
 
 
 > [!div class="alert is-tip"]
