@@ -27,7 +27,7 @@ Next, select **Azure SQL** under **Marketplace**. This will bring you to the Azu
 
 Next, select **Single database** and click **Create**.
 
->**NOTE**: There are various methods to deploy a single Azure SQL Database. Our [Quickstart](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-get-started) shows options for the portal, Powershell, and Azure CLI.
+>**NOTE**: There are various methods to deploy a single Azure SQL Database. Our [Quickstart](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-get-started) shows options for the portal, Powershell, and Azure CLI.
 
 **Step 2 - Database name**  
 
@@ -35,12 +35,12 @@ Select the subscription and resource group the sandbox provisioned (there should
 
 **Step 3 - Server**  
 
-When you create an Azure SQL Managed Instance, supplying the server name is the same as in SQL Server. However, for databases and elastic pools, an Azure SQL Database server is required. This is a *logical* server that acts as a central administrative point for single or pooled database and includes logins, firewall rules, auditing rules, threat detection policies, and failover groups (more on these topics later). This logical server does not expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure. You can read more on SQL Database servers [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-servers).  
+When you create an Azure SQL Managed Instance, supplying the server name is the same as in SQL Server. However, for databases and elastic pools, an Azure SQL Database server is required. This is a *logical* server that acts as a central administrative point for single or pooled database and includes logins, firewall rules, auditing rules, threat detection policies, and failover groups (more on these topics later). This logical server does not expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure. You can read more on SQL Database servers [here](https://docs.microsoft.com/azure/sql-database/sql-database-servers).  
 
 Select **Create new** next to **Server** and provide the following information:  
 * *Server name*: **aw-serverID** where ID is the same identifier you used for the database (e.g. **0406**).  
-* *Server admin login*: **cloudadmin**. This is the equivalent to a member of the sysadmin role in SQL Server. This account connects using SQL authentication (username and password) and only one of these accounts can exist. You can read more about Administrator accounts for Azure SQL Database [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-manage-logins#unrestricted-administrative-accounts).
-* *Password*: A complex password that meets [strong password requirements](https://docs.microsoft.com/en-us/sql/relational-databases/security/strong-passwords).  
+* *Server admin login*: **cloudadmin**. This is the equivalent to a member of the sysadmin role in SQL Server. This account connects using SQL authentication (username and password) and only one of these accounts can exist. You can read more about Administrator accounts for Azure SQL Database [here](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins#unrestricted-administrative-accounts).
+* *Password*: A complex password that meets [strong password requirements](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords).  
 > **TIP**: As you type in your password you are given hints as to the requirements. You are also asked to confirm your password. Make a note or be sure to remember this password.  
 * *Location*: Use the same location as your resource group or the region that is close to where you are located.  
 
@@ -52,14 +52,14 @@ Then, select **OK**.
 
 **Step 4 - Opt-in for elastic pools**
 
-In Azure SQL DB, you then decide if you want this database to be a part of an Elastic Pool (new or existing). In Azure SQL Managed Instance, [creating an instance pool (public preview) currently requires a different flow](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-instance-pools-how-to#create-an-instance-pool) than the Azure SQL create experience in the Azure portal. For this activity, select **No**.  
+In Azure SQL DB, you then decide if you want this database to be a part of an Elastic Pool (new or existing). In Azure SQL Managed Instance, [creating an instance pool (public preview) currently requires a different flow](https://docs.microsoft.com/azure/sql-database/sql-database-instance-pools-how-to#create-an-instance-pool) than the Azure SQL create experience in the Azure portal. For this activity, select **No**.  
 
 **Step 5 - Purchasing model**  
 >For more details on purchasing models and comparisons, refer to [the first module in the Azure SQL Fundamentals learning path](add link TODO).  
 
 Next to **Compute + storage** select **Configure Database**.  The top bar, by default shows the different service tiers available in the vCore purchasing model.
 
-For the purposes of this workshop, we'll focus on the vCore purchasing model (recommended), so there is no action in this step. You can optionally review the DTU model by selecting **Looking for basic, standard, premium?** and by [comparing vCores and DTUs in-depth here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-purchase-models
+For the purposes of this workshop, we'll focus on the vCore purchasing model (recommended), so there is no action in this step. You can optionally review the DTU model by selecting **Looking for basic, standard, premium?** and by [comparing vCores and DTUs in-depth here](https://docs.microsoft.com/azure/sql-database/sql-database-purchase-models
 ).  
 
 **Step 6 - Service tier**  
@@ -76,9 +76,9 @@ For the workshop, you can leave the default hardware selection of **Gen5**, but 
 
 One of the final steps is to determine how many vCores and the Data max size. For the workshop, select **2 vCores** and **32 GB Data max size**.  
 
-Generally, if you're migrating, you should use a similar size as to what you use on-premises. You can also leverage tools, like the [Data Migration Assistant SKU Recommender](https://docs.microsoft.com/en-us/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15) to estimate the vCore and Data max size based on your current workload.  
+Generally, if you're migrating, you should use a similar size as to what you use on-premises. You can also leverage tools, like the [Data Migration Assistant SKU Recommender](https://docs.microsoft.com/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15) to estimate the vCore and Data max size based on your current workload.  
 
-The Data max size is not necessarily the database size of your data today. It is the maximum amount of data space that can be allocated for your database. For more information about the difference between data space used, data space allocated, and data max size, refer to this [explanation in the documentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-file-space-management#understanding-types-of-storage-space-for-a-database). This will also help you understand the log space allocated, which scales with your data max size.  
+The Data max size is not necessarily the database size of your data today. It is the maximum amount of data space that can be allocated for your database. For more information about the difference between data space used, data space allocated, and data max size, refer to this [explanation in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-file-space-management#understanding-types-of-storage-space-for-a-database). This will also help you understand the log space allocated, which scales with your data max size.  
 
 Before you select **Apply**, confirm your selections look similar to those below (your resource group, Database name, and Server will be specific to your choices):  
 
@@ -101,9 +101,9 @@ You can then choose to select Public endpoint or Private endpoint (preview). In 
 
 With Azure SQL Managed Instance, you deploy it inside an Azure virtual network and a subnet that is dedicated to managed instances. This enables you to have a completely secure, private IP address. Azure SQL Managed Instance provides the ability to connect an on-prem network to a managed instance, connect a managed instance to a linked server or other on-prem data store, and connect a managed instance to other resources. You can additionally enable a public endpoint so you can connect to managed instance from the Internet without a Virtual Private Network (VPN). This access is disabled by default.  
 
-The principle of private endpoints through virtual network isolation is available for Azure SQL Database through a  **private link**, and you can learn more [here](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview).
+The principle of private endpoints through virtual network isolation is available for Azure SQL Database through a  **private link**, and you can learn more [here](https://docs.microsoft.com/azure/private-link/private-link-overview).
 
-More information on connectivity for Azure SQL Database can be found [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connectivity-architecture) and for Azure SQL Managed Instance [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-connectivity-architecture). There will also be more on this topic in upcoming sections/modules.  
+More information on connectivity for Azure SQL Database can be found [here](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture) and for Azure SQL Managed Instance [here](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-connectivity-architecture). There will also be more on this topic in upcoming sections/modules.  
 
 For now, select **Next : Additional settings**.
 
@@ -111,7 +111,7 @@ For now, select **Next : Additional settings**.
 
 In Azure SQL Database, upon deployment you have the option to select the AdventureWorksLT database as the sample in the Azure portal. In Azure SQL Managed Instance, however, you deploy the instance first, and then databases inside of it, so there is not an option to have the sample database upon deployment (similar to SQL Server). You can learn more about the AdventureWorks sample databases on [GitHub](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).
 
-You can also deploy a blank database or create a database based the restore of a backup from a geo-replicated backup. You can learn more on this option from the [documentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-recovery-using-backups#geo-restore).
+You can also deploy a blank database or create a database based the restore of a backup from a geo-replicated backup. You can learn more on this option from the [documentation](https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups#geo-restore).
 
 For this workshop, select **Sample**.  
 
@@ -126,12 +126,12 @@ Collations in SQL Server and Azure SQL tell the Database Engine how to treat cer
 * `CI` means it will be case insensitive, where `CS` is case-sensitive
 * `AS` means it will be accent sensitive, where `AI` is accent-insensitive
 
-There are other options available related to character widths, UTF-8, etc., and more details about what you can and can't do with Azure SQL [here](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver15).
+There are other options available related to character widths, UTF-8, etc., and more details about what you can and can't do with Azure SQL [here](https://docs.microsoft.com/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver15).
 
 
 **Step 12 - Opt-in for Advanced Data Security**
 
-When you deploy Azure SQL Database in the portal, you are prompted if you'd like to enable [Advanced Data Security (ADS)](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-advanced-data-security) on a free trial. Select **Start free trial**. After the free trial, it is billed according to the [Azure Security Center Standard Tier pricing](https://azure.microsoft.com/en-us/pricing/details/security-center/). If you choose to enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection. You'll learn more about these capabilities in the next module (<a href="https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/03-Security.md" target="_blank">03 - Security</a>). In Azure SQL Managed Instance, you can enable it on the instance after deployment.  
+When you deploy Azure SQL Database in the portal, you are prompted if you'd like to enable [Advanced Data Security (ADS)](https://docs.microsoft.com/azure/sql-database/sql-database-advanced-data-security) on a free trial. Select **Start free trial**. After the free trial, it is billed according to the [Azure Security Center Standard Tier pricing](https://azure.microsoft.com/pricing/details/security-center/). If you choose to enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection. You'll learn more about these capabilities in the next module (<a href="https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/03-Security.md" target="_blank">03 - Security</a>). In Azure SQL Managed Instance, you can enable it on the instance after deployment.  
 
 Your **Additional settings** pane should now look similar to the image below.
 
@@ -141,7 +141,7 @@ Your **Additional settings** pane should now look similar to the image below.
 
 Select **Next : Tags**. 
 
-Tags can be used to logically organize Azure resources across a subscription. For example, you can apply the name "Environment" and the value "Development" to this SQL database and Database server, but you might use the value "Production" for production resources. This can be helpful for organizing resources for billing or management. You can read more [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources).
+Tags can be used to logically organize Azure resources across a subscription. For example, you can apply the name "Environment" and the value "Development" to this SQL database and Database server, but you might use the value "Production" for production resources. This can be helpful for organizing resources for billing or management. You can read more [here](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 ![Adding tags](../media/tags.png)  
 
@@ -149,7 +149,7 @@ Tags can be used to logically organize Azure resources across a subscription. Fo
 
 Finally, select **Next : Review + create**. Here you can review your deployment selections and the [Azure Marketplace terms](https://go.microsoft.com/fwlink/?linkid=2045624).  
 
-> You also have the option to **Download a template for automation**. This workshop will not cover that method, but if you're interested, you can [learn more](https://docs.microsoft.com/en-us/azure/azure-resource-manager/).
+> You also have the option to **Download a template for automation**. This workshop will not cover that method, but if you're interested, you can [learn more](https://docs.microsoft.com/azure/azure-resource-manager/).
 
 Take time here to ensure all of your selections match the workshop instructions.
 
@@ -204,7 +204,7 @@ For server name, input the name of your Azure SQL Database logical server. You m
 > This will bring you to a view of all the resources that you deploy in the resource group.  
 > ![Viewing resources in a resource group](../media/rg.png)
 > You could alternatively select SQL Databases or Virtual machines, depending what you are looking for.   
-> 3. Other options / more information can be found in the [Azure portal overview](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-overview) documentation page.  
+> 3. Other options / more information can be found in the [Azure portal overview](https://docs.microsoft.com/azure/azure-portal/azure-portal-overview) documentation page.  
 
 Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
 
