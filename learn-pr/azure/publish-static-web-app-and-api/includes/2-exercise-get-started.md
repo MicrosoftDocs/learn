@@ -7,7 +7,6 @@ This article uses a GitHub template repository. Template repositories make it ea
 1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp/generate) for the template repository. If you get a 404 Page Not Found error, sign in to GitHub and try again.
 1. If prompted for **Owner**, choose one of your GitHub accounts
 1. Name your repository **my-first-static-web-app**
-1. Check the box **Include all branches**
 1. Click the **Create repository from template** button
 
 ## Run your app
