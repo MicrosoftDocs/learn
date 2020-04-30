@@ -7,7 +7,7 @@ Lets build our model! Here we will download the dataset, create our Azure servic
 
 ## 1. Download Data
 
-The first thing we need to create our model is to get data! We are going to use a subset of the NA Bird dataset from Cornell to train our model. Download the zip file with our dataset from [here]().
+The first thing we need to create our model is to get data! We are going to use a subset of the NA Bird dataset from Cornell to train our model. Download the zip file with our dataset from [here](https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species/raw/master/bird_photos.zip).
 
 ## 2. Create Custom Vision API Resource
 
@@ -53,6 +53,12 @@ Now it is time to upload the data for training. There are a couple ways to do th
 ### Option 2: SDK Upload
 
 The custom vision SDK is available in the following languages: Python, .NET, Node, Go, and Java. We are going to use Python and Jupyter Notebooks. If you don't have these installed already, I recommend getting them with Anaconda. You can download that [here](https://www.anaconda.com/)
+
+Below is step by step how to create the notebook and copy in the code. If you prefer to download the notebook and code clone the repo with the following command:
+
+```bash
+git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
+```
 
 1. Open a new Jupyter notebook instance or the IDE of your choice. Then run the following command to import the package.
 
