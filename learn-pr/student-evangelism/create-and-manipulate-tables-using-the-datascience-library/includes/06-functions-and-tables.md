@@ -208,7 +208,7 @@ print("The biggest difference is", big_diff)
 
 Here is what happens when we run that cell:
 
-<img src="../media/function-execution.jpg"/>
+![](../media/function-execution.jpg)
 
 ## Multiple Arguments
 

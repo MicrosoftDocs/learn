@@ -12,7 +12,10 @@ title: Create and Manipulate Tables Using the datascience Library
 summary: Learn the basics of table manipulation in the datascience library
 abstract: |
   In this module, you will:
-  - PLACEHOLDER
+  - Tables as a fundamental object type used for representing data sets.
+  - Make Tables in Python using the datascience Library.
+  - Explore different datasets using the datascience Library.
+  - Manipulate Tables & Wrangle data using various datascience Library functions.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:
@@ -38,7 +41,5 @@ units:
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.conditional-statements
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.iteration
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.summary
-
-
 badge:
   uid: learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.badge

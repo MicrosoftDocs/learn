@@ -1913,4 +1913,11 @@ Retreat
 </tbody>
 </table>
 All of the methods that we have used above can be applied to any table.
-le.
+
+# Learning Objectives
+
+- Tables as a fundamental object type used for representing data sets.
+- Make Tables in Python using the datascience Library.
+- Explore different datasets using the datascience Library.
+- Manipulate Tables & Wrangle data using various datascience Library functions.
+
