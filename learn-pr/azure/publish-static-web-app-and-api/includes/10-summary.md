@@ -8,9 +8,11 @@ Here are several resources where you can learn more about the Azure Static Web A
 
 ### Azure Static Web Apps
 
-- TODO
-- TODO
-- TODO
+- [API support in Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/apis)
+- [Add an API to Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/add-api)
+- [Authentication and authorization](https://docs.microsoft.com/azure/static-web-apps/authentication-authorization)
+- [Routes](https://docs.microsoft.com/azure/static-web-apps/routes)
+- [Review pre-production environments](https://docs.microsoft.com/azure/static-web-apps/review-publish-pull-requests)
 
 ### Visual Studio Code
 
