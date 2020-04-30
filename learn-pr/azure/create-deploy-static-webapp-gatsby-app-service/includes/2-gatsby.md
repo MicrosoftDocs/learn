@@ -1,12 +1,16 @@
-Static sites have been around since the web's inception, documents with hyperlinks to other documents. At the core of things, what you end up serving the user is just that, HTML, JavaScript, and CSS. Static site generation or SSG is the process in which we create those static assets. We can either create the assets manually, one by one, or use a tool or framework to do so. Much like HTML, JavaScript and CSS have been there since the beginning, so have tools able to generate static assets. So why are we talking about this concept again like it was a new one? There are three major reasons:
+Static sites have been around since the web's inception, documents with hyperlinks to other documents. At the core of things, what you end up serving the user is just that, HTML, JavaScript, and CSS. Static site generation or SSG is the process in which we create those static assets. We can either create the assets manually, one by one, or use a tool or framework to do so. Much like HTML, JavaScript and CSS have been there since the beginning, so have tools able to generate static assets. So why are we talking about this concept again like it was a new one? There are some major reasons:
 
 - Fast loading websites, our users will come to our site using different Internet speeds. A slow loading website means that our user might leave your site if it takes too long. That's lost business and revenue.
 - SEO, search engine optimization. SEO is about getting the search engines to find your site. Web application frameworks use different techniques to *pre render* content and serve said content so that search engine robots can index your site.
 - Markdown is popular, most people don't want to author documents in HTML but use some high-level format. A very popular format is for the moment Markdown. We need tools that can support converting from Markdown format to HTML.
+- Security, when you are making a page static it means we don't have a backend that can be tampered with.
+- Things have evolved, we can now carry out a lot of things on the client-side that previously was done on the backend.
 
 Modern sites can be massive applications. Our approach to make such sites fast to load is by starting to identify what parts of our app can be static. The parts that can be made static can thereby be served fast. To accomplish this, we have a pre-compilation step.
 
 ## Gatsby
+
+Gatsby is a command line tool. It helps you generate static sites using technologies such as React and GraphQL and different types of data to do so. The input to the command line tool is your Gatsby project consisting of React components that you author and any assets that you want to add. The output is HTML, CSS and JavaScript and any static assets you might have included like for example image files. Gatsby is built on top of React and React Router and does allow you to mix both dynamic and static parts. So even though it's a tool for primarily producing static sites, it's fully capable of compiling a React project. Thereby Gatsby can replace your normal set up for producing apps with React, providing you have part of your React app that you want to make static.
 
 Gatsby has has a clever system of plugins that can help import data from different types of data sources. The data sources can be as varied as databases to JSON to your local file system. All this imported data can then be paired up with static assets like HTML and CSS to produce the static pages you want to serve to a user. Thanks to the plugin system, more and more different types of data sources can be supported and is being supported as soon as the Gatsby team or the community writes a new plugin.
 
@@ -20,6 +24,12 @@ Gatsby has two core technologies that you need to know to a certain extent. Thos
 - `GraphQL`, GraphQL is a query language used to query for your websites data but also for external data. It's possible to build a Gatsby site without it but it becomes so much easier if you do use it. GraphQL is a query language used for querying APIs. It's able to *negotiate* with the API exactly for what resources and columns it wants from the API. This solves a lot of problems that exist currently with APIs like over-fetching or many round trips extra to the server.
 
 ### Commands
+
+Before you are able to work with Gatsby command line tool there are some prerequisites you need to fulfill. You need to install the below software:
+
+- Git, [Install Git, instructions per OS](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+- Node.js [Install Node.js](https://nodejs.org/en/download/).
+- Gatsby CLI, Once you've installed Node.js you can install the Gatsby CLI with this line `npm install -g gatsby-cli`.
 
 These three commands will get you started working with a new Gatsby app:
 
@@ -65,7 +75,7 @@ When you create a page component that wants to use data from the above mentioned
 
 ### A plugin example: loading images from files
 
-Data can be almost anything. Gatsby helps you pull in data and place it in its data graph using a plugins. The plugin `gatsby-source-filesystem` looks at your file system and populates it's data graph based on that. What it does is that it looks through the file system, on a place we specify and make the results available in the Graph. Let's have look at how this plugin is configured in `gatsby-config.js`:
+Data can be almost anything. Gatsby helps you pull in data and place it in its data graph using plugins. The plugin `gatsby-source-filesystem` looks at your file system and populates it's data graph based on that. What it does is that it looks through the file system, on a place we specify and make the results available in the Graph. Let's have look at how this plugin is configured in `gatsby-config.js`:
 
 ```javascript
 {
@@ -78,6 +88,8 @@ Data can be almost anything. Gatsby helps you pull in data and place it in its d
 ```
 
 The `path` property tells us where this plugin should look for files. In our case, it looks for `__dirname`, which is the current working directory and specifically the sub directory `/images`. At pre-compilation time Gatsby will now look through the `image/` directory and collect information on the files. It will also add that information to Gatsby's in-memory data graph.
+
+So how do we use information on images that we just configured via the `gatsby-source-filesystem` plugin? As the plugin *scans* the `images/` directory it collects information such as path, type, size, dimensions and a lot of other interesting information. We can then query for this information from the in-memory data graph and use it to render the image via its path that is stored in the graph. Additionally we can perform various image manipulations on the image before displaying it, like *scaling* for example. The image manipulation functionality is something built into Gatsby and not provided by the plugin. However, the built-in functionality and this plugin really works in tandem to make it a great experience to work with image assets.
 
 Any additional plugins you add to Gatsby follow this pattern:
 

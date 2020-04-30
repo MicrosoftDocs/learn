@@ -1,11 +1,5 @@
 Now you will learn to create a Gatsby application.
 
-Ensure you have installed the following before proceeding:
-
-- Git, [Install Git, instructions per OS](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-- Node.js [Install Node.js](https://nodejs.org/en/download/).
-- Gatsby CLI, Once you've installed Node.js you can install the Gatsby CLI with this line `npm install -g gatsby-cli`.
-
 ## Create and run a Gatsby site
 
 All Gatsby projects are created by the Gatsby CLI. The CLI is able to help you with scaffolding a new Gatsby project, host it and also build the final product which is a static set of files that you can deploy into any static host you wish.
