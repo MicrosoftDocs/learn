@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.static-apps-gatsby.2-gatsby
-title: Gatsby
+title: Build a static app with Gatsby
 metadata:
-  title: Gatsby
+  title: Build a static app with Gatsby
   description: This unit will explain what Gatsby is and how you can use its CLI to scaffold, host and build static apps
   author: softchris
   ms.author: chnoring

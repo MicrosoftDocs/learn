@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.static-apps-gatsby.5-exercise-gatsby-data
+title: Exercise - Gatsby data
+metadata:
+  title: Exercise - Gatsby data
+  description: This will test your skills on how to add data to a Gatsby app
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/30/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise-gatsby-data.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.static-apps-gatsby.4-gatsby-data
+title: Add data to your Gatsby app
+metadata:
+  title: Add data to your Gatsby app
+  description: How to add data to your Gatsby app
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/30/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-gatsby-data.md)]

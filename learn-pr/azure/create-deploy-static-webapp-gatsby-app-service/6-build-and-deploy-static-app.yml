@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.static-apps-gatsby.6-build-and-deploy-static-apps
+title: Build and deploy a static app
+metadata:
+  title: Build and deploy a static app
+  description: This will teach you how to build a Gatsby app. You will also learn how you can deploy the app.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-build-and-deploy-static-app.md)]

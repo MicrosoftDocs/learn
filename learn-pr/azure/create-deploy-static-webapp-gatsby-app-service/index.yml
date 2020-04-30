@@ -34,10 +34,12 @@ units:
 - learn.static-apps-gatsby.1-introduction
 - learn.static-apps-gatsby.2-gatsby
 - learn.static-apps-gatsby.3-exercise-gatsby
-- learn.static-apps-gatsby.4-deploy-static-app
-- learn.static-apps-gatsby.5-exercise-deploy-static-app
-- learn.static-apps-gatsby.6-knowledge-check
-- learn.static-apps-gatsby.7-summary
+- learn.static-apps-gatsby.4-gatsby-data
+- learn.static-apps-gatsby.5-exercise-gatsby-data
+- learn.static-apps-gatsby.6-build-and-deploy-static-apps
+- learn.static-apps-gatsby.7-exercise-build-and-deploy-static-apps
+- learn.static-apps-gatsby.8-knowledge-check
+- learn.static-apps-gatsby.8-summary
 
 badge:
   uid: learn.static-apps-gatsby.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.static-apps-gatsby.6-knowledge-check
+uid: learn.static-apps-gatsby.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -42,6 +42,6 @@ quiz:
         - content: "Initialize a Git repo, build the project, push it to GitHub"
           isCorrect: false
           explanation: "Incorrect.  These steps are mostly correct except for the `build` part. There's no need to build the project first. Azure Static Web Apps service will look for a `build` task in the `scripts` section of your package.json file and invoke that"
-        - content: "Initialize a Git repo, build the project, push it to GitHub"
+        - content: "Initialize a Git repo, push it to GitHub"
           isCorrect: true
           explanation: "Correct. That is all you need to do to make it ready for deploy"
