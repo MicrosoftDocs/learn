@@ -405,3 +405,10 @@ we generated under the assumptions of Mendel's model. This is evidence
 in favor of the model.
 umptions of Mendel's model. This is evidence
 in favor of the model.
+
+## Learning Objectives
+
+- Motivate the need and use of Hypothesis Testing. 
+- Understand how to set up & run hypothesis tests from scratch through multiple in-depth case studies.
+- Learn how to make decisions with uncertain results through P-values & P-value cutoffs.
+
