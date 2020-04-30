@@ -1,5 +1,5 @@
 In this unit, you will first watch a video introduction about Azure Quantum service and the types of problems Azure Quantum can help with. 
-You will learn about the third party hardware you can access through Azure Quantum. 
+You will learn about the third party hardware providers you can access through Azure Quantum. 
 
 > [!VIDEO https://www.microsoft.com/...]
 

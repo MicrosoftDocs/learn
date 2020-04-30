@@ -27,7 +27,7 @@ To make things harder, the weights of individual containers can vary greatly so 
 
 This problem is known as a number partitioning problem and is NP-complete. 
 It is however relatively straightforward to apply Quantum Inspired Optimization (QIO) to it to generate a good solution.
-In this module, we'll explore how.
+QIO is supported via the Azure Quantum cloud service. In this module, we'll explore how to apply QIO.
 
 ## What you will do in this module
 
