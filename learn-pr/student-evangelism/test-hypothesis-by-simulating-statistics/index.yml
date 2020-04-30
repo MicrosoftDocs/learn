@@ -1,6 +1,7 @@
-uuid: learn.student-evangelism.test-hypothesis-by-simulating--statistics
-meta_data:
-  title: Test Hypothesis By Simulating  Statistics
+### YamlMime:Module
+uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics
+metadata:
+  title: Test Hypothesis By Simulating Statistics
   description: Learn how to test hypothesis by simulating statistics
   ms.date: 19/03/2020
   author: sauravmittal
@@ -8,27 +9,26 @@ meta_data:
   ms.topic: interactive-tutorial
   ms.prod: azure
 title: Test Hypothesis By Simulating  Statistics
-summary: '** TODO: FILL IN **'
-abstract: 'In this module, you will:
-
-  - '
+summary: Learn how to test hypothesis through simulation of statistics
+abstract: |
+  In this module, you will:
+  - Motivate the need and use of Hypothesis Testing. 
+  - Understand how to set up & run hypothesis tests from scratch through multiple in-depth case studies.
+  - Learn how to make decisions with uncertain results through P-values & P-value cutoffs.
 prerequisites: None
-iconUrl: '** TODO: FILL IN **'
-levels: beginner
-roles: '
-
-  - data-scientist
-
-  - student'
-products: '- azure'
-units: '
-
-  - learn.student-evangelism.test-hypothesis-by-simulating--statistics.assessing-models
-
-  - learn.student-evangelism.test-hypothesis-by-simulating--statistics.multiple-categories
-
-  - learn.student-evangelism.test-hypothesis-by-simulating--statistics.decisions-and-uncertainty
-
-  - learn.student-evangelism.test-hypothesis-by-simulating--statistics.error-probabilities'
+iconUrl: http://via.placeholder.com/120x120
+levels: 
+- beginner
+roles:
+- data-scientist
+- student
+products:
+- azure
+units: 
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.introduction
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.multiple-categories
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.decisions-and-uncertainty
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.error-probabilities
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.summary
 badge:
-  uuid: learn.student-evangelism.test-hypothesis-by-simulating--statistics
+  uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.badge

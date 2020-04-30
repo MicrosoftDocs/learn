@@ -1,6 +1,7 @@
-uuid: learn.student-evangelism.test-hypothesis-by-simulating--statistics.decisions-and-uncertainty
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.test-hypothesis-by-simulating--statistics.decisions-and-uncertainty
 title: Decisions And Uncertainty
-meta_data:
+metadata:
   title: Decisions And Uncertainty
   description: Learn how to make a decision in hypothesis testing
   ms.date: 19/03/2020
@@ -9,12 +10,13 @@ meta_data:
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 10
-content: '!include[](includes/03-decisions-and-uncertainty.md)]'
-content: 'Let's try to develop a general framework for decision making, into which all our examples will fit.
+content: |
+  [!include[](includes/03-decisions-and-uncertainty.md)]
+content: "Let's try to develop a general framework for decision making, into which all our examples will fit.
 
 Fill in the following blanks by selecting the appropriate word. Options may not be used at all.
 
-The basic structure of testing a hypothesis is the following:'
+The basic structure of testing a hypothesis is the following:"
 quiz:
   questions:
     - content: '______A______: For a fully specified chance model under which you can simulate the data, it hypothesizes that the data were generated as if by random selection, according to the particulars of the chance model.'
