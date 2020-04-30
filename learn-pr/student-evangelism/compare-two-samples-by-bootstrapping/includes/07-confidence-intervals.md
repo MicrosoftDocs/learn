@@ -455,7 +455,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/51_Confidence_Intervals_9_1.png)
+![png](../media/66-confidence-intervals-9-1.png)
 
 At first glance the histogram looks quite symmetric, with the density at
 its maximum over the interval 4 ounces per day to 4.5 ounces per day.
@@ -578,7 +578,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/51_Confidence_Intervals_19_1.png)
+![png](../media/66-confidence-intervals-19-1.png)
 
 This histogram and interval resembles those we drew in the previous
 section, with one big difference -- there is no red dot showing where
@@ -610,7 +610,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/51_Confidence_Intervals_23_1.png)
+![png](../media/66-confidence-intervals-23-1.png)
 
 ``` {.python}
 np.mean(baby.column('Maternal Age'))
@@ -684,7 +684,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/51_Confidence_Intervals_29_1.png)
+![png](../media/66-confidence-intervals-29-1.png)
 
 Once again, the average of the original sample (27.23 years) is close to
 the center of the interval. That's not very surprising, because each
@@ -705,7 +705,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/51_Confidence_Intervals_32_1.png)
+![png](../media/66-confidence-intervals-32-1.png)
 
 This is a consequence of the Central Limit Theorem of probability and
 statistics. In later sections, we will see what the theorem says.
@@ -737,7 +737,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/51_Confidence_Intervals_36_1.png)
+![png](../media/66-confidence-intervals-36-1.png)
 
 This 80% confidence interval is much shorter than the 95% confidence
 interval. It only goes from about 27.0 years to about 27.4 years. While
@@ -839,7 +839,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/51_Confidence_Intervals_47_1.png)
+![png](../media/66-confidence-intervals-47-1.png)
 
 ### Care in Using the Bootstrap
 
@@ -868,5 +868,8 @@ important to keep some points in mind.
         population, or a very low or very high percentile, or parameters
         that are greatly influenced by rare elements of the population.
     -   The probability distribution of the statistic is not roughly
+        bell shaped.
+    -   The original sample is very small, say less than 10 or 15.
+e probability distribution of the statistic is not roughly
         bell shaped.
     -   The original sample is very small, say less than 10 or 15.

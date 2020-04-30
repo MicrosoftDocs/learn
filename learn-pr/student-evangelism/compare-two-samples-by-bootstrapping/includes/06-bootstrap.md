@@ -1758,7 +1758,7 @@ sf_bins = np.arange(0, 700000, 25000)
 sf2015.select('Total Compensation').hist(bins=sf_bins)
 ```
 
-![png](../media/50_Bootstrap_14_0.png)
+![png](../media/65-bootstrap-14-0.png)
 
 While most of the values are below \$300,000, a few are quite a bit
 higher. For example, the total compensation of the Chief Investment
@@ -2015,7 +2015,7 @@ our_sample = sf2015.sample(500, with_replacement=False)
 our_sample.select('Total Compensation').hist(bins=sf_bins)
 ```
 
-![png](../media/50_Bootstrap_21_0.png)
+![png](../media/65-bootstrap-21-0.png)
 
 ``` {.python}
 est_median = percentile(50, our_sample.column('Total Compensation'))
@@ -2083,7 +2083,7 @@ from IPython.display import Image
 Image("../../../images/bootstrap_pic.png")
 ```
 
-![png](../media/50_Bootstrap_25_0.png)
+![png](../media/65-bootstrap-25-0.png)
 
 ### A Resampled Median
 
@@ -2101,7 +2101,7 @@ resample_1 = our_sample.sample()
 resample_1.select('Total Compensation').hist(bins=sf_bins)
 ```
 
-![png](../media/50_Bootstrap_28_0.png)
+![png](../media/65-bootstrap-28-0.png)
 
 ``` {.python}
 resampled_median_1 = percentile(50, resample_1.column('Total Compensation'))
@@ -2173,7 +2173,7 @@ resampled_medians.hist()
 plots.scatter(pop_median, 0, color='red', s=30);
 ```
 
-![png](../media/50_Bootstrap_37_0.png)
+![png](../media/65-bootstrap-37-0.png)
 
 It is important to remember that the red dot is fixed: it is
 \$110,305.79, the population median. The empirical histogram is the
@@ -2221,7 +2221,7 @@ plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=3, zord
 plots.scatter(pop_median, 0, color='red', s=30, zorder=2);
 ```
 
-![png](../media/50_Bootstrap_43_0.png)
+![png](../media/65-bootstrap-43-0.png)
 
 The "middle 95%" interval of estimates captured the parameter in our
 example. But was that a fluke?
@@ -2424,7 +2424,7 @@ plots.ylabel('Replication')
 plots.title('Population Median and Intervals of Estimates');
 ```
 
-![png](../media/50_Bootstrap_53_0.png)
+![png](../media/65-bootstrap-53-0.png)
 
 To summarize what the simulation shows, suppose you are estimating the
 population median by the following process:
@@ -2447,4 +2447,6 @@ You can replace 95% by a different value, as long as it's not 100.
 Suppose you replace 95% by 80% and keep the sample size fixed at 500.
 Then your intervals of estimates will be shorter than those we simulated
 here, because the "middle 80%" is a smaller range than the "middle 95%".
+Only about 80% of your intervals will contain the parameter.
+le 95%".
 Only about 80% of your intervals will contain the parameter.

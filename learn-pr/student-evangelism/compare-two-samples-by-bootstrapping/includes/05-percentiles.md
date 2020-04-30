@@ -212,7 +212,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/49_Percentiles_12_1.png)
+![png](../media/64-percentiles-12-1.png)
 
 What was the 85th percentile of the scores? To use the `percentile`
 function, create an array `scores` containing the midterm scores, and
@@ -290,3 +290,4 @@ percentile(75, scores)
 
 Distributions of scores are sometimes summarized by the "middle 50%"
 interval, between the first and third quartiles.
+ quartiles.

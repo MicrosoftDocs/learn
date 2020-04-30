@@ -11,7 +11,7 @@ import numpy as np
 
 Our methods for comparing two samples have a powerful use in the
 analysis of randomized controlled experiments. Since the treatment and
-control groups are assigned randomly in such experiments, differences
+control groups are assigned randomly in such experiements, differences
 in their outcomes can be compared to what would happen just due to
 chance if the treatment had no effect at all. If the observed
 differences are more marked than what we would predict as purely due to
@@ -42,7 +42,7 @@ cause disease in humans, but it is also used in medicine to treat
 various diseases involving the muscles. The RCT analyzed by Foster,
 Clapp, and Jabbari in 2001 examined it as a treatment for low back pain.
 
-Thirty-one patients with low-back pain were randomized into treatment
+Thirty one patients with low-back pain were randomized into treatment
 and control groups, with 15 in the treatment group and 16 in control.
 The control group was given normal saline, and the trials were run
 double-blind so that neither doctors nor patients knew which group they
@@ -401,12 +401,12 @@ remaining* 15 patients.
 Here is a good way to visualize the setting. Each patient has a
 two-sided ticket:
 
-![Two-sided ticket](../media/causality1.png)
+![Two-sided ticket](../../../images/causality1.png)
 
 After the randomization, we get to see the right half of a randomly
 selected set of tickets, and the left half of the remaining group.
 
-![Half-tickets](../media/causality2.png)
+![Half-tickets](../../../images/causality2.png)
 
 The table `observed_outcomes` collects the information about every
 patient's potential outcomes, leaving the unobserved half of each
@@ -1348,7 +1348,7 @@ print('Empirical P-value:', round(empirical_P, 4) *100, '%')
 
 Observed Distance 0.475 Empirical P-value: 0.8500000000000001 %
 
-![png](../media/47_Causality_30_1.png)
+![png](../media/62-causality-30-1.png)
 
 The study reports a P-value of 0.009, or 0.9%, which is not far from our
 empirical value.
@@ -1399,7 +1399,7 @@ non-specific LBP (N = 31)."
 
 Putting it all together, the meta-analysis concluded, "There is low
 quality evidence that BoNT injections improved pain, function, or both
-better than saline injections and very low-quality evidence that they
+better than saline injections and very low quality evidence that they
 were better than acupuncture or steroid injections. ... Further research
 is very likely to have an important impact on the estimate of effect and
 our confidence in it. Future trials should standardize patient
@@ -1414,4 +1414,6 @@ are well positioned to help medical and other professions establish
 cause-and-effect relations.
 
 ``` {.python}
+```
+thon}
 ```

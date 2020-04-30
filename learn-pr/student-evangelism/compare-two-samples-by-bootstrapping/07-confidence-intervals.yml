@@ -3,12 +3,12 @@ uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.confidence-in
 title: Confidence Intervals
 metadata:
   title: Confidence Intervals
-  description: '** TODO: FILL IN **'
+  description: Learn how to create confidence intervals
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/07-confidence-intervals.md)]

@@ -3,12 +3,12 @@ uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.deflategate
 title: Deflategate
 metadata:
   title: Deflategate
-  description: '** TODO: FILL IN **'
+  description: Using the deflategate example for A/B testing
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/02-deflategate.md)]

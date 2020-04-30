@@ -97,7 +97,7 @@ baby.select('Maternal Age').hist()
     /home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
       warnings.warn("The 'normed' kwarg is deprecated, and has been "
 
-![png](../media/52_Using_Confidence_Intervals_6_1.png)
+![png](../media/67-using-confidence-intervals-6-1.png)
 
 A small percent of the sampled ages are in the (26.9, 27.6) interval,
 and you would expect a similar small percent in the population. The
@@ -627,7 +627,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/52_Using_Confidence_Intervals_17_1.png)
+![png](../media/67-using-confidence-intervals-17-1.png)
 
 ``` {.python}
 np.mean(hodgkins.column('drop'))
@@ -674,7 +674,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/52_Using_Confidence_Intervals_21_1.png)
+![png](../media/67-using-confidence-intervals-21-1.png)
 
 The 99% confidence interval for the average drop in the population goes
 from about 17 to about 40. The interval doesn't contain 0. So we reject
@@ -702,6 +702,10 @@ who first proposed the bootstrap technique, used a term that has
 [American origins](https://en.wikipedia.org/wiki/Bootstrapping). Not to
 be outdone, Chinese statisticians have [proposed their own
 method](http://econpapers.repec.org/article/eeestapro/v_3a37_3ay_3a1998_3ai_3a4_3ap_3a321-329.htm).
+
+``` {.python}
+```
+ticle/eeestapro/v_3a37_3ay_3a1998_3ai_3a4_3ap_3a321-329.htm).
 
 ``` {.python}
 ```

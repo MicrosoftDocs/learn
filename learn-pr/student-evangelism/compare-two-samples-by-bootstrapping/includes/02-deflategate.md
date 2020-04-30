@@ -985,7 +985,7 @@ print('Empirical P-value:', empirical_P)
 
 Observed Difference: 0.733522727272728 Empirical P-value: 0.0043
 
-![png](../media/46_Deflategate_31_1.png)
+![png](../media/61-deflategate-31-1.png)
 
 As in previous examples of this test, the bulk of the distribution is
 centered around 0. Under the null hypothesis, the Patriots' drops are a
@@ -1025,3 +1025,4 @@ causation: the question was whether the excess drop of pressure in the
 Patriots' footballs was deliberate. If you are curious about the answer
 given by the investigators, here is the [full
 report](https://nfllabor.files.wordpress.com/2015/05/investigative-and-expert-reports-re-footballs-used-during-afc-championsh.pdf).
+ionsh.pdf).

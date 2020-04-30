@@ -2,27 +2,27 @@
 uid: learn.student-evangelism.compare-two-samples-by-bootstrapping
 metadata:
   title: Compare Two Samples By Bootstrapping
-  description: Learn
+  description: Learn how to test hypothesis about samples using bootstrapping
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
 title: Compare Two Samples By Bootstrapping
-summary: '** TODO: FILL IN **'
+summary: Learn how to test hypothesis about samples using bootstrapping
 abstract: |
   In this module, you will:
   - PLACEHOLDER
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
-levels: 
+levels:
 - beginner
-roles: 
+roles:
 - data-scientist
 - student
-products: 
+products:
 - azure
-units: 
+units:
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.introduction
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.deflategate
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.causality

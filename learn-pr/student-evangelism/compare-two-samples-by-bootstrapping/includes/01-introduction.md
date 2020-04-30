@@ -323,7 +323,7 @@ one.
 smoking_and_birthweight.hist('Birth Weight', group = 'Maternal Smoker')
 ```
 
-![png](../media/45_AB_Testing_8_0.png)
+![png](../media/60-ab-testing-8-0.png)
 
 The distribution of the weights of the babies born to mothers who smoked
 appears to be based slightly to the left of the distribution
@@ -847,7 +847,7 @@ plots.title('Prediction Under the Null Hypothesis');
 
 Observed Difference: -9.266142572024918
 
-![png](../media/45_AB_Testing_36_1.png)
+![png](../media/60-ab-testing-36-1.png)
 
 Notice how the distribution is centered around 0. This makes sense,
 because under the null hypothesis the two groups should have roughly the
@@ -890,7 +890,7 @@ smoking_and_age = births.select('Maternal Smoker', 'Maternal Age')
 smoking_and_age.hist('Maternal Age', group = 'Maternal Smoker')
 ```
 
-![png](../media/45_AB_Testing_41_0.png)
+![png](../media/60-ab-testing-41-0.png)
 
 The observed difference between the average ages is about $-0.8$ years.
 
@@ -934,7 +934,7 @@ print('Observed Difference:', observed_age_difference)
 
 Observed Difference: -0.8076725017901509
 
-![png](../media/45_AB_Testing_47_1.png)
+![png](../media/60-ab-testing-47-1.png)
 
 The empirical P-value of the test is the proportion of simulated
 differences that were equal to or less than the observed difference.
@@ -951,6 +951,10 @@ empirical_P
 The empirical P-value is around 1% and therefore the result is
 statistically significant. The test supports the hypothesis that the
 smokers were younger on average.
+
+``` {.python}
+```
+were younger on average.
 
 ``` {.python}
 ```
