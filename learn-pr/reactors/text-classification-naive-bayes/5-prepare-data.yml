@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.text-classification-naive-bayes.5-data-prepare
+uid: learn.reactors.text-classification-naive-bayes.5-prepare-data
 title: Prepare data
 metadata:
   title: Prepare data
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-data-prepare.md)]
+  [!include[](includes/5-prepare-data.md)]

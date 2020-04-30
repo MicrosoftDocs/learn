@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.principal-component-analysis-food-composition.3-data-download
+uid: learn.reactors.principal-component-analysis-food-composition.3-download-data
 title: Download the data
 metadata:
   title: Download the data
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-data-download.md)]
+  [!include[](includes/3-download-data.md)]
