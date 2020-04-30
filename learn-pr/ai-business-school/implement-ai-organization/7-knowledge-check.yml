@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-ai-organizations.knowledge-check
+uid: learn-wwl.implement-ai-organization.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: A knowledge check for the AI strategy in retail module.
-  ms.date: 05/28/2020
+  description: A knowledge check for the Implement AI in your organization module.
+  ms.date: 06/02/2020
   author: RWortmanMorris
   ms.author: rawortma
   ms.topic: interactive-tutorial

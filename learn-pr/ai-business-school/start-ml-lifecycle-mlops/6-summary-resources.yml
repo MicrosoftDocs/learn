@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-mlops.summary-resources
+uid: learn-wwl.start-ml-lifecycle-mlops.summary-resources
 title: Summary and resources
 metadata:
   title: Summary and resources
   description: An overview of the content covered in the module, and resources for further learning.
-  ms.date: 05/28/2020
+  ms.date: 06/02/2020
   author: RWortmanMorris
   ms.author: rawortma
   ms.topic: interactive-tutorial

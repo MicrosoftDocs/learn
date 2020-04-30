@@ -15,7 +15,7 @@ Everyone has a role to play in AI transformation, not just IT. It's important to
 * Collecting and evaluating feedback from AI users (whether they are customers or employees).
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/manage-ai-organizations-4.png" alt-text="Venn diagram showing that AI requires multidisciplinary skills.":::
+:::image type="complex" source="../media/implement-ai-organization-4.png" alt-text="Venn diagram showing that AI requires multidisciplinary skills.":::
 The diagram is composed of three circles. The top circle in the diagram is labeled "Domain Understanding." The bottom left circle is labeled "IT Skills." The bottom right circle is labeled "AI Skills." The three circles are dark blue, and the overlapping sections are light blue. The very middle of the diagram, where all three circles overlap is a slightly darker circle. 
 :::image-end:::
 :::column-end:::
@@ -35,7 +35,7 @@ This person is a business executive responsible for operations of a particular f
 * **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>5</sup> Ultimately, this increased customer loyalty and satisfaction.
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/manage-ai-organizations-5.png" alt-text="Diagram showing AI-related roles.":::
+:::image type="complex" source="../media/implement-ai-organization-5.png" alt-text="Diagram showing AI-related roles.":::
 This graphic shows the business roles that are involved with AI initiatives. There are four blue circles with labels underneath them, arranged in a square formation. The first blue circle in the top left is labeled “Business Leader.” In the circle, there is a simple icon of three people standing shoulder to shoulder. In the top right, the blue circle is labeled “Chief Digital Officer.” In the blue circle there is an icon of a person in a suit. In the bottom left circle, labeled “HR,” There is an icon of three people surrounding a single person, to represent support. In the bottom right blue circle, there is an icon of a person next to a computer with a bar graph on it, indicating an upward trend. This blue circle is labeled “IT.”
 :::image-end:::
 :::column-end:::

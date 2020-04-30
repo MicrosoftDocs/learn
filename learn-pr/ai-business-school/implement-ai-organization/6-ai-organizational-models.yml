@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-ai-organizations.ai-organizational-models
+uid: learn-wwl.implement-ai-organization.ai-organizational-models
 title: Establish AI-related roles and responsibilities
 metadata:
   title: Establish AI-related roles and responsibilities
   description: Discover the functions of the different roles involved in enabling AI in business.
-  ms.date: 05/28/2020
+  ms.date: 06/02/2020
   author: RWortmanMorris
   ms.author: rawortma
   ms.topic: interactive-tutorial

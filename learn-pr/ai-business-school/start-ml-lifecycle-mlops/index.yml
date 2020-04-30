@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn-wwl.manage-mlops
+uid: learn-wwl.start-ml-lifecycle-mlops
 metadata:
   title: Start the machine learning lifecycle with MLOps
   description: Learn enterprise AI management with our free open online course, including machine learning.
-  ms.date: 05/28/2020
+  ms.date: 06/02/2020
   author: RWortmanMorris
   ms.author: rawortma
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Describe how to create and manage machine learning models using MLOps processes.
   - Articulate processes to monitor models and respond to incidents. 
 prerequisites: None
-iconUrl: /learn/achievements/manage-mlops.svg
+iconUrl: /learn/achievements/start-ml-lifecycle-mlops.svg
 levels: 
 - intermediate
 roles: 
@@ -28,11 +28,11 @@ products:
 - dynamics
 - m365
 units: 
-- learn-wwl.manage-mlops.introduction
-- learn-wwl.manage-mlops.mlops-introduction
-- learn-wwl.manage-mlops.mlops-business-value
-- learn-wwl.manage-mlops.mlops-manage-ml
-- learn-wwl.manage-mlops.knowledge-check
-- learn-wwl.manage-mlops.summary-resources
+- learn-wwl.start-ml-lifecycle-mlops.introduction
+- learn-wwl.start-ml-lifecycle-mlops.mlops-introduction
+- learn-wwl.start-ml-lifecycle-mlops.mlops-business-value
+- learn-wwl.start-ml-lifecycle-mlops.mlops-manage-ml
+- learn-wwl.start-ml-lifecycle-mlops.knowledge-check
+- learn-wwl.start-ml-lifecycle-mlops.summary-resources
 badge: 
-  uid: learn-wwl.manage-mlops.badge
+  uid: learn-wwl.start-ml-lifecycle-mlops.badge

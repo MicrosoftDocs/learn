@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-ai-organizations.ai-economics
+uid: learn-wwl.implement-ai-organization.ai-economics
 title: Evaluate and prioritize AI investments
 metadata:
   title: Evaluate and prioritize AI investments
   description: Use a horizon-based framework for evaluating, mapping, and prioritizing initiatives.
-  ms.date: 05/28/2020
+  ms.date: 06/02/2020
   author: RWortmanMorris
   ms.author: rawortma
   ms.topic: interactive-tutorial
