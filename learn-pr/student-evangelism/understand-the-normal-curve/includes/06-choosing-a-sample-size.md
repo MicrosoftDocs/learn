@@ -104,7 +104,7 @@ plots.ylim(-0.05, 1);
     /home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
       warnings.warn("The 'normed' kwarg is deprecated, and has been "
 
-![png](../media/59_Choosing_a_Sample_Size_4_1.png)
+![png](../media/74-choosing-a-sample-size-4-1.png)
 
 Remember that the possible values in the population are only 0 and 1.
 
@@ -238,7 +238,7 @@ decrease symmetrically.
 zero_one_sds.scatter("Population Proportion of 1's")
 ```
 
-![png](../media/59_Choosing_a_Sample_Size_8_0.png)
+![png](../media/74-choosing-a-sample-size-8-0.png)
 
 **Summary:** The SD of a population of 1's and 0's is at most 0.5.
 That's the value of the SD when 50% of the population is coded 1 and the
@@ -258,6 +258,10 @@ $$
 So the sample size should be at least $200^2 = 40,000$. That's an
 enormous sample! But that's what you need if you want to guarantee great
 accuracy with high confidence no matter what the population looks like.
+
+``` {.python}
+```
+the population looks like.
 
 ``` {.python}
 ```

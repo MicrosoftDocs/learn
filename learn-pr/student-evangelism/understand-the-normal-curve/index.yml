@@ -2,27 +2,27 @@
 uid: learn.student-evangelism.understand-the-normal-curve
 metadata:
   title: Understand The Normal Curve
-  description: Learn
+  description: Learn about the normal curve
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
 title: Understand The Normal Curve
-summary: '** TODO: FILL IN **'
+summary: Learn about the normal curve
 abstract: |
   In this module, you will:
   - PLACEHOLDER
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
-levels: 
+levels:
 - beginner
-roles: 
+roles:
 - data-scientist
 - student
-products: 
+products:
 - azure
-units: 
+units:
 - learn.student-evangelism.understand-the-normal-curve.setup
 - learn.student-evangelism.understand-the-normal-curve.introduction
 - learn.student-evangelism.understand-the-normal-curve.variability

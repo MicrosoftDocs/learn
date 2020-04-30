@@ -482,7 +482,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/55_Variability_22_1.png)
+![png](../media/70-variability-22-1.png)
 
 It is no surprise that NBA players are tall! Their average height is
 just over 79 inches (6'7\"), about 10 inches taller than the average
@@ -729,7 +729,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/55_Variability_39_1.png)
+![png](../media/70-variability-39-1.png)
 
 ``` {.python}
 ages = nba13.column('Age in 2013')
@@ -1444,4 +1444,5 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/55_Variability_59_1.png)
+![png](../media/70-variability-59-1.png)
+lity_files/70_Variability_59_1.png)

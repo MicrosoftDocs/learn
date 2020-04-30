@@ -3,12 +3,12 @@ uid: learn.student-evangelism.understand-the-normal-curve.variability-of-the-sam
 title: Variability Of The Sample Mean
 metadata:
   title: Variability Of The Sample Mean
-  description: '** TODO: FILL IN **'
+  description: Learn about the distribution of the sample mean
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/05-variability-of-the-sample-mean.md)]
