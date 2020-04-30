@@ -19,8 +19,8 @@ In this module you will:
 ## Learn the scenario
 
 Contoso Logistics Inc is a world class freight company operating a fleet of large container ships. 
-When these ships are docked at port Contoso Logistics needs to distribute containers between the two ships as evenly as possible. 
-If they make one ship significantly heavier than the other then it will move slower and consume more fuel - delaying shipments and costing a significant amount of money! 
+When these ships are docked at port, Contoso Logistics needs to distribute containers between the two ships as evenly as possible. 
+If they make one ship significantly heavier than the other then it will move slower and consume more fuel - delaying shipments and costing a significant amount of money! If you were managing the distribution containers for Contoso, how would you optimize the weights?
 To make things harder, the weights of individual containers can vary greatly so it's not easy to divide them.
 
 This problem is known as a number partitioning problem and is NP-complete. 
