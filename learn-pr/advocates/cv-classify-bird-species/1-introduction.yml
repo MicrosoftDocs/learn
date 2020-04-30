@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-computer-vision-service.1-intro
+uid: learn.cv-classify-bird-species.1-introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 09/24/2018
-  author: jasallen
-  ms.author: jasdeb
+  ms.date: 04/30/2020
+  author: cassieview
+  ms.author: cassieview
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

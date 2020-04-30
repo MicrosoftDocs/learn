@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cv-classify-bird-species.4-understand-results-test
+title: Understand and Test the Model
+metadata:
+  title: Understand and Test the Model
+  description: Understand and Test the Model
+  ms.date: 04/30/2020
+  author: cassieview
+  ms.author: cassieview
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-understand-results-test.md)]

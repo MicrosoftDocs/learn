@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cv-classify-bird-species.3-build-model
+title: Build Model
+metadata:
+  title: Build Model
+  description: Build Model
+  ms.date: 04/30/2020
+  author: cassieview
+  ms.author: cassieview
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-build-model.md)]
