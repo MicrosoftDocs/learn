@@ -1,6 +1,6 @@
 ## How to Deploy the Model
 
-Now our model is performing "good enough" lets deploy it! There are different ways to deploy the model based on what you need. There is a one click deploy to an endpoint or you can export the model to different formats to deploy to different platforms. We will discuss two different ways to use this model: Deploy to endpoint and consume with an App and Export for IoT deployment.
+Now our model is performing "good enough" lets deploy it! There are different ways to deploy the model based on what you need. There is a one click deploy to an endpoint or you can export the model to different formats to deploy to different platforms. We will go over how to deploy to the endpoint and consume with an App.
 
 ## Option 1: One Click Deploy to an Endpoint
 
@@ -33,24 +33,3 @@ Once the model is trained and at a satisfactory accuracy its ready to be used in
 - Paste in the following Json
   `{ "Url": "UrlForImageGoesHere" }`
 - Send Request
-
-## Option 2: Deploy to IoT Board
-
-In order to deploy our model to an IoT device we will need to export the model created.
-
-- To change the model to `compact` click the settings icon in the upper right corner
-- Change the `Domains` to `General (compact)`
-- Go back to the `Performance` tab and click `Train` to train the compact model
-
-### Export the Model
-
-- Click `Export` at the top of the `Prediction` tab
-- A dialog will show the different formats you can export the model in. We are going to choose the `Dockerfile` since we are going to deploy to an IoT device.
-- Choose the platform for which you plan to deploy to (Linux, Windows, or ARM)
-- The next steps will assume ARM (Raspberry Pi) deployment
-
-### Raspberry Pi Arm Deployment
-
-When you choose the ARM platform a zip file should have been downloaded.
-
--
