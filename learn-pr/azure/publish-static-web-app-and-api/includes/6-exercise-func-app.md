@@ -81,7 +81,6 @@ Now your function is triggered on an HTTP `GET` request to **products**. Your _f
 
 ```json
 {
-  "disabled": false,
   "bindings": [
     {
       "authLevel": "anonymous",
@@ -96,8 +95,7 @@ Now your function is triggered on an HTTP `GET` request to **products**. Your _f
       "direction": "out",
       "name": "res"
     }
-  ],
-  "scriptFile": "../dist/products-get/index.js"
+  ]
 }
 ```
 
