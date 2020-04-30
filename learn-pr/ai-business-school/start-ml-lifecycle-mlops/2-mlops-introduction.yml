@@ -3,7 +3,7 @@ uid: learn-wwl.start-ml-lifecycle-mlops.mlops-introduction
 title: Introduction to MLOps and ML lifecycles
 metadata:
   title: Introduction to MLOps and ML lifecycles
-  description: Introduction to MLOps and the typical ML lifecycle. 
+  description: Explanation of ML challenges and the typical ML lifecycle, and how MLOps solves those challenges. 
   ms.date: 05/28/2020
   author: RWortmanMorris
   ms.author: rawortma

@@ -3,7 +3,7 @@ uid: learn-wwl.start-ml-lifecycle-mlops.mlops-business-value
 title: Discover the business value of MLOps
 metadata:
   title: Discover the business value of MLOps
-  description: TBD
+  description: MLOps implies the collaboration of many teams. In this unit, it's explained how this is done in every step of the ML lifecycle.
   ms.date: 05/28/2020
   author: RWortmanMorris
   ms.author: rawortma
