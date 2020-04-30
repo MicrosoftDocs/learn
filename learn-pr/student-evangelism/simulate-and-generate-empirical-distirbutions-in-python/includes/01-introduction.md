@@ -388,4 +388,10 @@ and has been"
 
 Seven is the most common value, with the frequencies falling off
 symmetrically on either side.
-cally on either side.
+
+## Learning Objectives 
+
+- Study the idea of randomness, analyzed its importance, learned relevant terminology and studied the Law of Averages.
+- Examine different types of samples and different sampling techniques.
+- Learn about Empirical & Probability Distributions and their differences.
+- Explore various components of a simulation and simulate a statistic.

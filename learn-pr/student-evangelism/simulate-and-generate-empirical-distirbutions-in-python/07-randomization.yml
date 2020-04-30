@@ -33,7 +33,7 @@ quiz:
         - content: '34/1384'
           isCorrect: false
           explanation: Incorrect.
-    - content: 'Suppose Gilbert's shifts were like random draws from all 1641 shifts. How many draws would there be?'
+    - content: "Suppose Gilbert's shifts were like random draws from all 1641 shifts. How many draws would there be?"
       choices:
         - content: '1384'
           isCorrect: false
@@ -44,22 +44,22 @@ quiz:
         - content: '1641'
           isCorrect: false
           explanation: Incorrect.
-    - content: 'If Gilbert's shifts were like random draws, in how many shifts do you expect her to have seen at least one death?'
+    - content: "If Gilbert's shifts were like random draws, in how many shifts do you expect her to have seen at least one death?"
       choices:
         - content: '40'
           isCorrect: false
           explanation: 'Incorrect'
         - content: '(74/1641) * 257'
           isCorrect: true
-          explanation: 'Correct, we know from the first problem that the chance there’s at least one death on a randomly chosen shift is 74/1641, and from problem two we know that gilberts has 257 shifts, so the number of shifts with at least one deaths from 257 randomly chosen shifts is (74/1642)*257.'
+          explanation: "Correct, we know from the first problem that the chance there’s at least one death on a randomly chosen shift is 74/1641, and from problem two we know that gilberts has 257 shifts, so the number of shifts with at least one deaths from 257 randomly chosen shifts is (74/1642)*257."
         - content: '(74/1641)'
           isCorrect: false
           explanation: Incorrect.
     - content: 'If we simulate draws of 257 randomly chosen shifts 10,000 times and none of the simulations saw more than 25 shifts with at least one death, Which do you conclude?'
       choices:
-        - content: 'Gilbert's shifts were like random draws.'
+        - content: "Gilbert's shifts were like random draws."
           isCorrect: false
           explanation: Incorrect
-        - content: 'Gilbert had too many shifts with at least one death. Her shifts don't look like random draws.'
+        - content: "Gilbert had too many shifts with at least one death. Her shifts don't look like random draws."
           isCorrect: true
           explanation: "Gilbert had 40 shifts out of 257 where she saw at least one death. Knowing that no more than 25 shift should see at least one death in 257 random shifts, we know that the probability of Gilbert's shifts being random and seeing more than 25 shifts with at least one death is less than 1/10000. So it's very likely that Gilbert's shifts are not like random draws.  "
