@@ -19,7 +19,7 @@ In this chapter we will take a more careful look at sampling, with
 special attention to the properties of large random samples.
 
 Let's start by drawing some samples. Our examples are based on the
-<code><a href="imdb.csv">top\_movies.csv</a></code> data set.
+imdb data set.
 
 ``` {.python}
 top1 = Table.read_table(path_data + 'top_movies.csv')

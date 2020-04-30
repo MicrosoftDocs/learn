@@ -35,7 +35,7 @@ is, and has to attempt to find it under the following rules.
     its glory in
     [Wikipedia](https://en.wikipedia.org/wiki/Monty_Hall_problem):
 
-![Monty Hall goat](../../../images/monty_hall_goat.png)
+![Monty Hall goat](../media/monty-hall-goat.png)
 
 -   There are two doors left, one of which was the contestant's original
     choice. One of the doors has the car behind it, and the other one
