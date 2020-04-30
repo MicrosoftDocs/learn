@@ -23,7 +23,7 @@ Here are the four endpoints that you'll create:
 | PUT     | `products/:id`  | `api/products/:id` |
 | DELETE  | `products/:id`  | `api/products/:id` |
 
-Notice that you will make HTTP GET requests to `api/products`. The prefix `api` is the first part of the route. The `api` prefix helps differentiate all routes under `api` as routes for your API. All other routes could be used for your static web app.
+Notice that you will make HTTP GET requests to `api/products`. The prefix `api` is the first part of the route. The `api` prefix helps differentiate all routes under `api` as routes for your API. All other routes could be used for your web app.
 
 ### Create an API for the web app
 
