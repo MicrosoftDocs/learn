@@ -1,3 +1,13 @@
-# Hello, it's me
+Different sources, but also different ways to install it.
 
-I've been wondered after all these years...
+
+
+## Local installation
+
+##  Installation folder
+
+### npmrc
+
+## Global installations vs NPX
+
+### Installation folder

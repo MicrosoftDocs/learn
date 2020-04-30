@@ -19,9 +19,6 @@ This module covers how to get started with Node.js. We will therefore cover the 
 Let's begin.
 
 
-
-I've been wondered after all these years...
-
 Intro  
 
 Concept: Ways to install Node  

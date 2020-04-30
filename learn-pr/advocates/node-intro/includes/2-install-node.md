@@ -18,13 +18,13 @@ As you can see above there are various installers available to cater to differen
 
 To quote Rod Vagg of the LTS working group:
 
-> The point of establishing an LTS plan for Node is to build on top of an existing stable release cycle by delivering new new versions on a predictable schedule that have a clearly defined extended support lifecycle. While this may seem at odds with the open source tradition of “release early, release often” it is an essential requirement for enterprise application development and operations teams. It also affects companies ... that provide professional support for Node.js.
+> The point of establishing an LTS plan for Node is to build on top of an existing stable release cycle by delivering new new versions on a predictable schedule that have a clearly defined extended support life cycle. While this may seem at odds with the open source tradition of “release early, release often” it is an essential requirement for enterprise application development and operations teams. It also affects companies ... that provide professional support for Node.js.
 
 - Current, this means it's under active development. Feature additions as well as breaking changes might happen. It should adhere to semantic versioning though [Semantic versioning](https://semver.org/)
 
-So which one to go with? Well you know your company best. Can you update often and is there a desired feature in the Current version you need - then Current version might be for you. 
+So which one to go with? Well you know your company best. Can you update often and is there a desired feature in the Current version you need - then Current version might be for you.
 
-To learn more about the different release types have a read here [Release types](https://github.com/nodejs/node#release-types). 
+To learn more about the different release types have a read here [Release types](https://github.com/nodejs/node#release-types).
 
 ## Install via package manager Brew
 
@@ -46,24 +46,16 @@ This will download all the needed binaries and also install Node.js on your syst
 
 NVM stands for Node Version Manager and is great tool you can install to help you with the following:
 
-- Install a specific version.
-- Use a specific version to run your Node.js application.
-- Update to a specific version
-- Uninstall a specific version
+- Install a specific version, this is great if we have different projects using different versions of node.
+- Use a specific version, this works in tandem with being able to install different versions of the Node.js runtime. Being able to install different versions of Node.js and then *select* which versions to go with when running your Node.js application is a great feature.
+- Update to a specific version, it's important to be able to update to a specific version as new features and/or patches are released.
+- Uninstall a specific version, being able to *manage* what versions are installed on your machine is a great way to ensure that you only run the software you need.
 
 As you can see it's so much more than just an installation tool.
 
 Why would we need a tool that can do all that, isn't installation alone enough? If you work in a complex environment you might have a lot of projects you are maintaining. Not all of those projects might use the same version of Node.js for various reasons. Therefore you need to be able to have different versions of Node.js installed and you need to be able to choose which version of Node.js to run for which project.
 
 If you have such a situation NVM is for you.
-
-### Install a specific version
-
-### Use a specific version
-
-### Update your version
-
-### Uninstall a specific version
 
 ## Verify installation
 
@@ -80,30 +72,3 @@ v[major version].[minor version].[patch version]
 ```
 
 The brackets `[]` above are to indicate that results may vary depending on what version you have installed on your system.
-
-Another test you can carry out is by typing `node` in the terminal. This will activate the so called REPL, read-eval-print-loop. A REPL is a language shell, with limited functionality that takes inputs and/or script files and evaluates those on the fly. We will cover the Node.js REPL more in detail in section 4 of this module.
-
-Once the REPL is up and running it should print out something like this, to show it's ready to receive input:
-
-```bash
-Welcome to Node.js v12.16.2.
-Type ".help" for more information.
-> 
-```
-
-Proceed to give it a simple command like so:
-
-```bash
-console.log('hi')
-```
-
-You should get a print out looking like so:
-
-```bash
-> console.log('hi')
-hi
-undefined
->
-```
-
-If this is what you see, then all is well and you are ready to do some real application development.
