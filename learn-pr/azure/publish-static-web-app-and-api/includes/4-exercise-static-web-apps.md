@@ -2,10 +2,11 @@ In this exercise, you'll create an Azure Static Web Apps instance including a Gi
 
 ## Activate the Azure sandbox
 
-First, you'll connect to an Azure sandbox. You can create the Azure Static Web Apps resources from here.
+The first step is to connect to an Azure sandbox. You can create the Azure Static Web Apps resources from here.
 
 1. Start by **activating the Azure sandbox above**.
-1. Once it's activated, [sign into the Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+1. Once the sandbox is activated, [sign into the Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+    - Make sure you use the same account to sign in as you did to activate the sandbox.
 
 ## Create a Static Web App
 
@@ -92,7 +93,7 @@ Next, add configuration details specific to your preferred front-end framework.
 Click the **Review + create** button
 
 > [!NOTE]
-> Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This is not common. Typically, you'd have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - to accommodate multiple repository shapes/needs.
+> Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This is not common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
 
 ### Review + create
 
@@ -104,7 +105,7 @@ Continue to create the application.
 
 ### Review the GitHub Action
 
-At this stage, your Static Web Apps instance has been created in Azure, but your app has not yet been deployed to it. The GitHub Action that Azure creates in your repository will run automatically to perform the first build and deployment of your app, but it will take a couple minutes to finish.
+At this stage, your Static Web Apps instance is created in Azure, but your app not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to perform the first build and deployment of your app, but it takes a couple minutes to finish.
 
 You can check check the status of your build and deploy action by clicking the link shown below:
 
