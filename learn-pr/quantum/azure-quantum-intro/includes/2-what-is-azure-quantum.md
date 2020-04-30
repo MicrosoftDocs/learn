@@ -1,17 +1,26 @@
-In this unit, you will first watch a video introduction about Azure Quantum service and the types of problems Azure Quantum can help with. 
-You will learn about the third party hardware providers you can access through Azure Quantum. 
+In this unit, you'll get an introduction to the Azure Quantum service and the types of problems Azure Quantum can help you solve. 
+You'll also learn about the hardware and software offerings from our third party providers which you can access through Azure Quantum. 
 
 > [!VIDEO https://www.microsoft.com/...]
+
+
+![Azure Quantum Overview](./media/Azure-Quantum-Flow-Diagram.png)
+
+# Azure Quantum
+Azure Quantum is a service provided by Azure. 
+Like other Azure services, you need to deploy an Azure Quantum resource into your Azure subscription in order to use the service. 
+This resource is called an **Azure Quantum Workspace** - or **Workspace** for short. 
+
+With a quantum workspace in your subscription, you'll be able to:
+- Explore quantum solutions: 
+- Use quantum software tools:
+- Access quantum hardware: 
+
+![Azure quantum offering](./media/azure-quantum.png)
 
 Azure Quantum allows you to run Quantum Programs and solve Quantum-Inspired Optimization (QIO) problems in the cloud. 
 Azure Quantum takes these jobs and schedules them with the desired provider for execution. 
 Using our SDKs and tools you can easily run a job against multiple providers and targets to find the one that will work best for your scenario.
-
-![Azure Quantum Overview](./media/Azure-Quantum-Flow-Diagram.png)
-
-# Quantum Workspace
-Azure Quantum is a service provided by Azure. Like other Azure services, you need to deploy an Azure Quantum resource into your Azure subscription in order to use the service. This resource is called an **Azure Quantum Workspace** - or **Workspace** for short. Please see [Creating an Azure Quantum Workspace](/Guides/Creating-an-Azure-Quantum-Workspace) for detailed instructions.
-
 Once you create a Workspace, you'll be able to select which third party providers you would like to be able to use in that Workspace. Every Workspace also comes with the Microsoft provider always enabled. For more information about providers, see [Providers and Targets](#Providers-and-Targets) below. If you haven't enabled a particular provider for execution in your Workspace, you will not be able to run jobs against that provider later. You may change the enabled providers in your Workspace after creating it.
 > In the current private preview, only the first party Microsoft provider is available.
 
