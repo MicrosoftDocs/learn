@@ -3,7 +3,7 @@ In this unit, you will learn about quantum-inspired optimization methods, that w
 
 ## What is QIO?
 
-There are many models of quantum computing. If you have viewed the *Get Started SDK* module (is this referring to the QDK module?), you'll have gained familiarity with the Gate Model, in which we define quantum programs by writing operations that make use of quantum gates. 
+There are many models of quantum computing. If you have viewed the [*Write your first quantum program with the Quantum Development Kit* module](), you'll have gained familiarity with the Gate Model, in which we define quantum programs by writing operations that make use of quantum gates. 
 
 Quantum Inspired Optimization (QIO) is based on a different computational model, namely adiabatic quantum computing. This approach uses a concept from quantum physics known as the adiabatic theorem which works as follows:
 - Begin by preparing a system and initializing it to its lowest energy state. For a simple system, one which we understand everything about, this is easy to construct.
