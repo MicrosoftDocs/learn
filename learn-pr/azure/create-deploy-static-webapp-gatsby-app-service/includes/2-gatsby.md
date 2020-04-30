@@ -19,7 +19,7 @@ Gatsby has two core technologies that you need to know to a certain extent. Thos
 - `React.js`, You will use React to create components. You will be creating components to either support the building of pages or to build the pages themselves. Additionally you will also use components to build layouts
 - `GraphQL`, GraphQL is a query language used to query for your websites data but also for external data. It's possible to build a Gatsby site without it but it becomes so much easier if you do use it. GraphQL is a query language used for querying APIs. It's able to *negotiate* with the API exactly for what resources and columns it wants from the API. This solves a lot of problems that exist currently with APIs like over-fetching or many round trips extra to the server.
 
-### Commands
+## Creating and working with a new Gatsby app
 
 These three commands will get you started working with a new Gatsby app:
 
