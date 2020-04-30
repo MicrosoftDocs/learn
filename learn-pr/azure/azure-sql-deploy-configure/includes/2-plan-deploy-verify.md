@@ -8,7 +8,7 @@ Before you start deploying things in Azure, it's important to understand what yo
 * Service tier (SLO): General purpose, business critical, or hyperscale?
 * Hardware: Gen4, Gen5, or something new?
 * Sizing: number of vCores and data max size?  
-> The Data Migration Assistant tool (DMA) has a [SKU Recommender](https://docs.microsoft.com/en-us/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15) that can help you determine the number of vCores and size if you are migrating.  
+> The Data Migration Assistant tool (DMA) has a [SKU Recommender](https://docs.microsoft.com/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15) that can help you determine the number of vCores and size if you are migrating.  
 
 TODO -- add a bit more explanation here, leverage the slides.
 

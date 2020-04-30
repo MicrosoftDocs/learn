@@ -29,7 +29,7 @@ Finally, to run queries in ADS, it's very similar to SSMS. Right-click on a data
 
 **Step 2 - Set up easy file access with ADS**  
 
-Now that you're connected, you might want an easy way to access scripts and Jupyter notebooks. A Jupyter notebook (often referred to just as "Notebooks") is a way of integrating runnable code with text. If you aren't familiar with Jupyter notebooks, you will be soon, and you can check out more details later in the [documentation](https://docs.microsoft.com/en-us/sql/big-data-cluster/notebooks-guidance?view=sql-server-ver15).  
+Now that you're connected, you might want an easy way to access scripts and Jupyter notebooks. A Jupyter notebook (often referred to just as "Notebooks") is a way of integrating runnable code with text. If you aren't familiar with Jupyter notebooks, you will be soon, and you can check out more details later in the [documentation](https://docs.microsoft.com/sql/big-data-cluster/notebooks-guidance?view=sql-server-ver15).  
 
 First, in ADS, select **File > Open Folder**.  
 

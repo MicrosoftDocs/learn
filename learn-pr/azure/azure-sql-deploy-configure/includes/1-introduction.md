@@ -15,8 +15,8 @@ In this module, the following topics will be discussed:
 If you intend to complete the exercises (recommended), a sandbox environment is provided for Azure resources. However, you do need to do a few things on your local machine in order to complete the exercises:  
 
 * Use a Windows machine or VM (SSMS is only available on Windows)  
-* Download and install [the latest version of SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
-* Download and install [the latest version on Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
+* Download and install [the latest version of SSMS](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
+* Download and install [the latest version on Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
 * Download the zip file which includes some of the lab files and the **ostress** tool. Extract the contents of the zip file to something similar to `C:\users\[YourUsername]\` so you can access it easily in the exercises.  
 * TODO TBD MAY NEED TO ADD OSTRESS TO PATH   
 

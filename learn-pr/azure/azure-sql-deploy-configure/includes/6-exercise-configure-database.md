@@ -1,14 +1,14 @@
 ### Configure with Azure CLI</b>
 
-So you've seen the Azure portal, SSMS, and SQL Notebooks in ADS, but there are other tools available to you to use to manage Azure SQL. Two of the most popular are the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) and [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure). They are similar in their functionality, but for this activity we will focus on the Azure CLI.  
+So you've seen the Azure portal, SSMS, and SQL Notebooks in ADS, but there are other tools available to you to use to manage Azure SQL. Two of the most popular are the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) and [Azure PowerShell](https://docs.microsoft.com/powershell/azure). They are similar in their functionality, but for this activity we will focus on the Azure CLI.  
 
-To complete this activity, you could use a PowerShell notebook, which is the same concept as a SQL notebook, but the coding language is PowerShell. You can use PowerShell notebooks to leverage Azure CLI or Azure PowerShell, but we will focus on Azure CLI. For more information on the Azure PowerShell module, [see the documentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-powershell-samples?tabs=single-database). For both of these tools, you can also use the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview), which is an interactive shell environment that you can use through your browser in the Azure portal. In this exercise, you'll use the Azure Cloud Shell, because that will work in your sandbox environment on the right-hand side of this browser, meaning you don't have to install the Azure SQL or Azure PowerShell modules!  
+To complete this activity, you could use a PowerShell notebook, which is the same concept as a SQL notebook, but the coding language is PowerShell. You can use PowerShell notebooks to leverage Azure CLI or Azure PowerShell, but we will focus on Azure CLI. For more information on the Azure PowerShell module, [see the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-powershell-samples?tabs=single-database). For both of these tools, you can also use the [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview), which is an interactive shell environment that you can use through your browser in the Azure portal. In this exercise, you'll use the Azure Cloud Shell, because that will work in your sandbox environment on the right-hand side of this browser, meaning you don't have to install the Azure SQL or Azure PowerShell modules!  
 
 ### Intro to Azure Cloud Shell and Azure CLI
 
 In the example that follows, you'll explore the latency effects of using different connection policies in Azure SQL.  
 
-> Note: in PowerShell in the Azure Cloud Shell, you can use the PowerShell Az module or the Azure CLI. In this activity, you'll explore the Azure CLI, but you should know there are similar commands available for the [PowerShell Az module](https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-3.5.0).  
+> Note: in PowerShell in the Azure Cloud Shell, you can use the PowerShell Az module or the Azure CLI. In this activity, you'll explore the Azure CLI, but you should know there are similar commands available for the [PowerShell Az module](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-3.5.0).  
 
 **Set up**   
 
@@ -52,7 +52,7 @@ You've now seen a few examples for how the `az sql db` commands work. There are 
 
 >There are also similar commands for `az sql mi` and `az sql midb` (commands for databases within a Managed Instance, sometimes referred to as "Managed Databases").  
 
-For detailed explanations of all the commands available, refer to the [Azure CLI documentation](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest).  
+For detailed explanations of all the commands available, refer to the [Azure CLI documentation](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest).  
 
 ### Example: Managing connection policies  
 
@@ -62,7 +62,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
 
 During deployment, in Azure SQL MI you're able to choose the connection type or policy. In Azure SQL DB, you can choose the connection type, but only via PowerShell or Azure CLI after deployment. You can keep the default (Proxy for connections from outside and Redirect for connections within Azure) or something else. At the highest level, in Proxy mode, all connections are proxied through the Azure SQL Database gateways, but in Redirect mode, after the connection is established leveraging the gateway, the connection is directly to the database or managed instance. The direct connection (redirect) allows for reduced latency and improved throughput, but also requires opening up additional ports (allowing inbound and outbound communication in the range of 11000 - 11999).    
 
-> More information on connectivity for Azure SQL DB can be found [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connectivity-architecture) and for Azure SQL MI [here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-connectivity-architecture).  
+> More information on connectivity for Azure SQL DB can be found [here](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture) and for Azure SQL MI [here](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-connectivity-architecture).  
 
 Let's see what the current policy is using the Azure CLI.  
 
@@ -93,7 +93,7 @@ What if we want to make everything `Redirect` so we can attempt to achieve reduc
 
 First, for anything that is **outside Azure**, you need to allow inbound and outbound communication on ports in the range of 11000 - 11999. This is required for the Redirect connection policy.  
 
-> Note: This is likely already configured on your local device, but if you hit errors in the next steps, you may need to enable the ports above, [more guidance available here](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12).  
+> Note: This is likely already configured on your local device, but if you hit errors in the next steps, you may need to enable the ports above, [more guidance available here](https://docs.microsoft.com/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12).  
 
 Update the connection policy and confirm that update with the following two commands.  
 ```powershell
