@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.run-iot-edge-device-restricted-network-offline.configure-iot-edge-device-time-live-message-storage
+metadata:
+  title: Configure IoT Edge Device Time-to-Live and Message Storage
+  description: Configure IoT Edge Device Time-to-Live and Message Storage
+  ms.date: 04/2020
+  author: abartolo
+  ms.author: abartolo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure IoT Edge Device Time-to-Live and Message Storage
+# azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-configure-iot-edge-device-time-live-message-storage.md)]

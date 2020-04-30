@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.run-iot-edge-device-restricted-network-offline.introduction
+metadata:
+  title: Introduction
+  description: Run an IoT Edge device in restricted network and offline.
+  ms.date: 04/2020
+  author: abartolo
+  ms.author: abartolo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+# azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-introduction.md)]

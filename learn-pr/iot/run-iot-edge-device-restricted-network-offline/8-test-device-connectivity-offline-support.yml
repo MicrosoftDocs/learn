@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.run-iot-edge-device-restricted-network-offline.test-device-connectivity-offline-support
+metadata:
+  title: Test Device Connectivity and Offline Support
+  description: Test Device Connectivity and Offline Support
+  ms.date: 04/2020
+  author: abartolo
+  ms.author: abartolo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Test Device Connectivity and Offline Support
+# azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-test-device-connectivity-offline-support.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.run-iot-edge-device-restricted-network-offline.setup-iot-edge-parent-with-child-iot-devices
+metadata:
+  title: Set up IoT Edge Parent with multiple Child IoT Devices
+  description: Set up IoT Edge Parent with multiple Child IoT Devices
+  ms.date: 04/2020
+  author: abartolo
+  ms.author: abartolo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Set up IoT Edge Parent with multiple Child IoT Devices
+# azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-setup-iot-edge-parent-with-child-iot-devices.md)]

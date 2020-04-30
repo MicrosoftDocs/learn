@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.iot.run-iot-edge-device-restricted-network-offline
+metadata:
+  title: Run an IoT Edge device in a restricted network and offline
+  description: This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
+  ms.date: 04/2020
+  author: abartolo
+  ms.author: abartolo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Run an IoT Edge device in a restricted network and offline
+summary: >
+  This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
+abstract: | 
+  In this module, you will:
+  - Deploy Azure IoT Edge enabled Linux VM
+  - Set up IoT Edge Parent with multiple Child IoT Devices
+  - Configure IoT Edge Device as Gateway
+  - Open IoT Edge Gateway Device Inbound Ports using Azure CLI
+  - Configure IoT Edge Device Time-to-Live and Message Storage
+  - Connect Child IoT Device to IoT Edge Gateway
+  - Test Device Connectivity and Offline Support
+prerequisites: | 
+  - An introductory knowledge of the purpose of Azure IoT
+  -	Ability to navigate Azure IoT portal 
+  -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
+### iconUrl: /learn/achievements/generic-badge.svg
+### iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
+iconUrl: /learn/achievements/run-iot-edge-device-restricted-network-offline.svg
+### hidden: true
+ratingEnabled: true
+levels:
+- advanced
+roles:
+- developer
+- administrator
+products:
+- azure-iot-edge
+units:
+- learn.iot.run-iot-edge-device-restricted-network-offline.introduction
+- learn.iot.run-iot-edge-device-restricted-network-offline.deploy-azure-iot-edge-enabled-linux-vm
+- learn.iot.run-iot-edge-device-restricted-network-offline.setup-iot-edge-parent-with-child-iot-devices
+- learn.iot.run-iot-edge-device-restricted-network-offline.configure-iot-edge-device-gateway
+- learn.iot.run-iot-edge-device-restricted-network-offline.open-iot-edge-gateway-device-inbound-ports-using-azure-cli
+- learn.iot.run-iot-edge-device-restricted-network-offline.configure-iot-edge-device-time-live-message-storage
+- learn.iot.run-iot-edge-device-restricted-network-offline.connect-child-iot-device-iot-edge-gateway
+- learn.iot.run-iot-edge-device-restricted-network-offline.test-device-connectivity-offline-support
+- learn.iot.run-iot-edge-device-restricted-network-offline.summary
+badge:
+  uid: learn.iot.run-iot-edge-device-restricted-network-offline.badge
