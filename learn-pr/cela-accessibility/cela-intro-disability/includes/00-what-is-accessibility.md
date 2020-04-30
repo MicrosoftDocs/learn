@@ -10,10 +10,10 @@ For example, someone with low vision may use Magnifier in Windows 10 to navigate
 
 \*[Assistive Technology Industry Association](https://www.atia.org/at-resources/what-is-at/#what-is-assistive-technology) (ATIA)
 
-![Screenshot showing Magnifier app in Windows 10.](..media/image6.png)
+:::image type="content" source="../media/image6.png" alt-text="Screenshot showing Magnifier app in Windows 10":::
 Figure 1. Magnifier in Windows 10
 
-![Screenshot of how to configure speech recognition for Windows 10.](..media/image7.png)
+:::image type="content" source="../media/image7.png" alt-text="Screenshot of how to configure speech recognition for Windows 10":::
 Figure 2. Speech recognition in Windows 10
 
 ## What is Disability?
@@ -21,7 +21,7 @@ Disability is defined as "a mismatch in interaction between the features of a pe
 
 There are many different types of disabilities, including vision, hearing, speech, mobility, learning, and neurodiversity. How a person uses technology is dependent on a variety of factors including the person, their environment, and their goals. For example, while one person with low vision may use Magnifier to access technology, another person may use Narrator. Other people may prefer tools like Quiet Hours and Focus Assist to better concentrate on a specific task. It all depends on the individual person and their needs and preferences.
 
-![People gathered around a table. Man in the center of the image has dark glasses on.](..media/image8.png)
+:::image type="content" source="../media/image8.png" alt-text="People gathered around a table. Man in the center of the image has dark glasses on.":::
 
 ## Why Accessibility is Important for People of all Abilities
 According to the World Health Organization\* more than one billion people worldwide live with a disability. That's more than 15 percent of our global population! In fact, as of 2020, 22 percent of the world's population is over 60 years old---this is noteworthy because, as people age, they may experience changes in their abilities. Additionally, each of us may encounter temporary disabilities at some point throughout our everyday lives. For example, if you fracture a finger, you may be limited in how much or how fast you can type. In this instance, Speech Recognition could help you to continue to use your computer and stay productive. People also frequently experience situational exclusion, which means a given circumstance or activity affects their ability to perform a task. For example, if a person is attempting to feed a baby or hold a child on their lap, that will affect their ability to do other activities or use technology in that particular moment. Accessibility is important for people of all abilities and affects how everyone uses technology.
