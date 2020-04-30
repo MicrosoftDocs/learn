@@ -1,6 +1,6 @@
 As a ornithologist you study the behavior, physiology, and conservation of birds and bird habitats. This work often involves surveying, recording and reporting on bird activity.
 
-You want to build a ML model that will identify the birds to help with gathering data. We will be using the NA Bird dataset from Cornell to train a model that will recognize bird species and help you document the different trends and patterns of the bird habits.
+You want to build a ML model that will identify the birds to help with gathering data. Additionally you want to better document endangered birds species to help the populations increase. We will be using the NA Bird dataset from Cornell to train a model that will recognize bird species and help you document the different trends and patterns of the bird habits.
 
 In this module, you will use Azure Cognitive Services Custom Vision to create a model to identify species of birds, in all their variety. Learning more about birds is a great way to educate yourself and others about natural phenomena in your local area.
 
@@ -15,4 +15,4 @@ In this module, you will:
 - Learn how to use prebuilt ML models in Azure called Cognitive Services
 - Learn how to use the Custom Vision Cognitive Service
 - Build a custom machine learning model
-- Operationalize the model created with Custom Vision
+- Deploy the model created with Custom Vision

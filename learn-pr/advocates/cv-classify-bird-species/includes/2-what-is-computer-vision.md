@@ -1,6 +1,6 @@
 We are going to be using an Azure service that creates a Computer Vision model. Lets learn a little bit more about how Computer Vision works and how the service uses Transfer Learning to increase accuracy with less data. Then you will see the step by step process for building a model from idea to model!
 
-## What is Machine Learning?
+## What is machine learning?
 
 You've most likely heard about AI, Machine Learning, or Deep Learning before. However, you may not be clear about what they mean and the differences between them. Let's break it down!
 
@@ -12,7 +12,7 @@ You've most likely heard about AI, Machine Learning, or Deep Learning before. Ho
 
 In summary, when we build a model we're trying to mimic human intelligence. We use data as "experience" to train a model to learn a specific task or function.
 
-## What is Transfer Learning?
+## What is transfer learning?
 
 The ability to use prior knowledge to better solve the current problem. We do this all the times as humans and we are discovering new ways to do this with computers too. The way it works for computer vision is we add a layer in the neural network that is a trained model. This trained model gives us a head start with training. It starts with a general knowledge domain and then new layers are added to the neural network to solve the specific problem we are trying to solve. In this case, identifying birds.
 
@@ -42,6 +42,6 @@ Here is a step by step overview of the model building process and how we will co
 
 6. Deploy model
 
-   - Custom vision gives us lots of options here. We can use the deploy button which gives us an endpoint to integrate or download the model in a format of our choice to operationlize the way that works best for the project. In this module we will go over two options: use the one click deploy or download the model and run it on a IoT device with a camera.
+   - Custom vision gives us lots of options here. We can use the deploy button which gives us an endpoint to integrate or download the model in a format of our choice to operationlize the way that works best for the project. In this module we will go over how to use the quick deploy option.
 
 Lets get started on building our model!!

@@ -12,6 +12,8 @@ The three indicators provided for the entire model and for each class are:
 | Recall                 | This number will tell you: out of the tags which should be predicted correctly, what percentage did your model correctly find? |
 | AP (Average precision) | A measure of the model performance, summaries the precision and recall at different threshold.                                 |
 
+Now that we understand some of the different indicators we can use to understand how the model is performing. Lets talk a little bit about some of the "rookie mistakes" that can happen when starting to build machine learning models.
+
 ## Common Rookie Mistakes
 
 ### 1. Unbalanced Data
@@ -24,7 +26,7 @@ If you don't have enough data or not diverse enough data your model can become o
 
 ### 3. Testing with Training Data
 
-As mentioned in the overfitting example, if you test with the same data you trained with, its going to look like it is performign really well but when you deploy it to production it will most likely do poorly and you will be a sad dev.
+As mentioned in the overfitting example, if you test with the same data you trained with, its going to look like it is performing really well but when you deploy it to production it will most likely do poorly and you will be a sad dev.
 
 ### 4. Bad Data
 
@@ -33,6 +35,8 @@ Another common mistake is training with bad data. There are many ways that your 
 ## Test the model
 
 Our model is performing good enough according to the metrics provided. Lets test our model and see how it performs on unseen data.
+
+### Test in the Portal UI
 
 - Select "Quick Test" from the upper right corner
 - Search for an image of a bird that matches one of the species you trained it to recognize. Grab the URL for the image and paste it into the `Image URL` box to test accuracy.
