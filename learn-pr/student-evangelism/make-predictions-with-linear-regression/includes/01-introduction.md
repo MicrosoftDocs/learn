@@ -1452,7 +1452,14 @@ from IPython.display import Image
 Image("../media/choco-nobel.png")
 ```
 
-![png](../media/76_correlation_65_0.png)
+![png](../media/76-correlation-65-0.png)
 
 ``` {.python}
 ```
+
+## Learning Objectives
+
+- Learn about Correlation as a measure of linear association and the correlation coefficient.
+- Understand the Regression line, Regression Effect, and the equation of the regression line.
+- Motivate The Method of Least Squares, Least Square Regression, & Nonlinear Regression 
+- Understand Residuals and residual diagnostics through residual plots.
