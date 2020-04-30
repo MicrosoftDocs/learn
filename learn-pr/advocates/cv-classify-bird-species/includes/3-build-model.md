@@ -1,6 +1,6 @@
 Lets build our model! Here we will download the dataset, create our Azure service, upload the data, and train the model.
 
-## First sin up for a free Azure Account
+## First sign up for a free Azure Account
 
 - Sign up for [Azure for students](https://azure.microsoft.com/free/students/?WT.mc_id=birds-learn-cassieb) and get \$100 in Azure for 12 months with free tier of services - no credit card required with academic verification!
 - Or sign up for a [free Azure account here](https://azure.microsoft.com/free/?WT.mc_id=birds-learn-cassieb)!
