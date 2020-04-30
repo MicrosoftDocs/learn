@@ -1,6 +1,6 @@
 templateFile="azuredeploy.json"
 today=$(date +"%d-%b-%Y")
-DeploymentName="addVariable-"$today
+DeploymentName="addoutputs-"$today
 
 az deployment group create \
   --name $DeploymentName \
