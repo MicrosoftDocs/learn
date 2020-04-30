@@ -1,4 +1,4 @@
-We are going to be using an Azure service that creates a Computer Vision model. Lets learn a little bit more about how Computer Vision works and how the service uses Transfer Learning to increase accuracy with less data. Then you will see the step by step process for building a model from idea to model!
+We are going to be using an Azure service that creates a Computer Vision model. Lets learn more about how Computer Vision works! Then you will see the step by step process for building a model from idea to model!
 
 ## What is machine learning?
 
@@ -8,17 +8,17 @@ You've most likely heard about AI, Machine Learning, or Deep Learning before. Ho
 
 **Machine learning (ML)** is a subset of artificial intelligence that uses techniques that enable machines to use experience. Think of experience as a dataset used to improve at tasks. It includes what is called Deep learning.
 
-**Deep learning (DL)** is a subset of machine learning that's based on artificial neural networks. The learning process is deep because the structure of artificial neural networks consists of multiple input, output, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a certain predictive task. The neural network structure allows a machine to learn through it's own data processing.
+**Deep learning (DL)** is a subset of machine learning that's based on artificial neural networks. The learning process is deep because the structure of artificial neural networks consists of multiple input, output, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a certain predictive task. The neural network structure allows a machine to learn through its own data processing.
 
 In summary, when we build a model we're trying to mimic human intelligence. We use data as "experience" to train a model to learn a specific task or function.
 
 ## What is transfer learning?
 
-The ability to use prior knowledge to better solve the current problem. We do this all the times as humans and we are discovering new ways to do this with computers too. The way it works for computer vision is we add a layer in the neural network that is a trained model. This trained model gives us a head start with training. It starts with a general knowledge domain and then new layers are added to the neural network to solve the specific problem we are trying to solve. In this case, identifying birds.
+The ability to use prior knowledge to better solve the current problem. We do this all the times as humans and we are discovering new ways to do this with computers too. The way it works for computer vision is we add a layer in the neural network that is a trained model. This trained model gives us a head start with training. It starts with a general knowledge domain and then new layers are added to the neural network to solve our specific problem. In this case, identifying birds.
 
 ## The Model Building Process
 
-Here is a step by step overview of the model building process and how we will complete it to create this model.
+Here is a step-by-step overview of the model building process and how we will complete it to create this model.
 
 1. Ask a pointed question
 
@@ -26,7 +26,7 @@ Here is a step by step overview of the model building process and how we will co
 
 2. Prepare data
 
-   - We will have a cleaned and prepared dataset of bird images from Cornell so this step was taken care of for us. If you were to build a different model you would need to find and prepare data for training. You would want to find data that would help you answer the pointed question from step 1.
+   - We have a cleaned and prepared dataset of bird images from Cornell so this step was taken care of for us. If you were to build a different model you would need to find and prepare data for training. You would want to find data that would help you answer the pointed question from step 1.
 
 3. Select algorithm
 
@@ -38,10 +38,10 @@ Here is a step by step overview of the model building process and how we will co
 
 5. Test model with unseen data
 
-   - It's important to test our model with unseen data. We will do a google search and find some test images to see how it preforms with data it was not trained with. We will discuss later in the module why this is important.
+   - It's important to test our model with unseen data. We will do a google search and find some test images to see how it performs with data it was not trained with. We will discuss later in the module why this is important.
 
 6. Deploy model
 
-   - Custom vision gives us lots of options here. We can use the deploy button which gives us an endpoint to integrate or download the model in a format of our choice to operationlize the way that works best for the project. In this module we will go over how to use the quick deploy option.
+   - Custom vision gives us lots of options here. We can use the deploy button that gives us an endpoint to integrate or download the model. If you download the model, it gives you multiple formats to choose from that lets you deploy the way that works best for the project. In this module, we will go over how to use the quick deploy option.
 
-Lets get started on building our model!!
+Lets get started on building our model!

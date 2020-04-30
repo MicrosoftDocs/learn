@@ -1,9 +1,9 @@
-Lets build our model!! Here we will download the dataset, create our Azure service, upload the data, and train the model.
+Lets build our model! Here we will download the dataset, create our Azure service, upload the data, and train the model.
 
-## First you will need to create a free Azure Account!
+## First sin up for a free Azure Account
 
-- If you are a _student_ sign up for [Azure for students](https://azure.microsoft.com/free/students/?WT.mc_id=birds-learn-cassieb) and get \$100 in Azure for 12 months with free tier of services - no credit card required with academic verification!
-- Else sign up for a [free Azure account here](https://azure.microsoft.com/free/?WT.mc_id=birds-learn-cassieb)!
+- Sign up for [Azure for students](https://azure.microsoft.com/free/students/?WT.mc_id=birds-learn-cassieb) and get \$100 in Azure for 12 months with free tier of services - no credit card required with academic verification!
+- Or sign up for a [free Azure account here](https://azure.microsoft.com/free/?WT.mc_id=birds-learn-cassieb)!
 
 ## 1. Download Data
 
@@ -12,26 +12,26 @@ The first thing we need to create our model is to get data! We are going to use 
 ## 2. Create Custom Vision API Resource
 
 - Go to [portal.azure.com](https://portal.azure.com/)
-- Select "Create Resource"
-- Search "Custom Vision"
-- Select "Create"
+- Select `Create Resource`
+- Search `Custom Vision`
+- Select `Create`
 - Complete the required fields
-- Select "Create"
-- When the deployment succeeds you will get a notification in the top right corner.
-- Select "Go to resource"
+- Select `Create`
+- When the deployment succeeds, you will get a notification in the top-right corner.
+- Select `Go to resource`
 
 ## 3. Upload Data
 
-We are ready to upload the data for training. We can do this one of two ways. We can use the UI to browse upload and tag OR we can use the SDK. Follow the instructions for the way that works best for you. Note that with lots of data and images classes/tags it will be faster to use the SDK.
+Now it is time to upload the data for training. There are a couple ways to do this. Either use the UI to browse upload and tag OR we can use the SDK. Follow the instructions for the way that works best for you. With lots of data and images classes/tags it will be faster to use the SDK.
 
 ### Option 1: Steps for the UI upload
 
 1. Create Project
 
-- Select "Quick Start"
-- Select "Custom Vision Portal" or go to https://www.customvision.ai/projects and login
-- Select 'Sign in"
-- Select "New Project"
+- Select `Quick Start`
+- Select `Custom Vision Portal` or go to https://www.customvision.ai/projects and login
+- Select `Sign in`
+- Select `New Project`
   - Enter a Name and Resource Group and
   - Project Types: Classification
   - Classification Types: MultiClass General
@@ -43,18 +43,18 @@ We are ready to upload the data for training. We can do this one of two ways. We
 
 2. Add and tag images
 
-- Select "Add Images" and navigate to the train folder for the scraped images
+- Select `Add Images` and navigate to the train folder for the scraped images
 - Ctrl + A to select all the images in the folder
-- Select "Open"
+- Select `Open`
 - Add tag for photos to indicate the bird species
-- Select "Upload photos"
+- Select `Upload photos`
 - Repeat these steps for each bird species (class)
 
 ### Option 2: SDK Upload
 
-The Custom vision SDK is available in the following languages: Python, .Net, Node, Go and Java. We are going to use Python and Jupyter Notebooks. If you don't have these installed already I recommend getting them with Anaconda. You can download that [here](https://www.anaconda.com/)
+The custom vision SDK is available in the following languages: Python, .NET, Node, Go, and Java. We are going to use Python and Jupyter Notebooks. If you don't have these installed already, I recommend getting them with Anaconda. You can download that [here](https://www.anaconda.com/)
 
-1. Open a new jupyter notebook instance or the IDE of your choice. Then run the following command to import the package.
+1. Open a new Jupyter notebook instance or the IDE of your choice. Then run the following command to import the package.
 
 ```python
 !pip install azure-cognitiveservices-vision-customvision
@@ -87,7 +87,7 @@ print("Project created!")
 ```
 
 3. Go to [customvision.ai](customvision.ai) if you would like to validate the project was created in the UI.
-4. Unzip the `bird_photos.zip` and save it to the same directory as the jupyter notebook. Then add the following code to get the list of bird type tags to be created based on the folder names in the `bird_photos` directory.
+4. Unzip the `bird_photos.zip` and save it to the same directory as the Jupyter notebook. Then add the following code to get the list of bird type tags to be created based on the folder names in the `bird_photos` directory.
 
 ```python
 #Create Tag List from folders in bird directory
@@ -161,6 +161,6 @@ for tag in tags:
 We have created our dataset in Custom Vision and now we can train our model. This can be done with the SDK but the steps below will use the CustomVision.ai UI.
 
 - Navigate to CustomVision.ai and click the `Bird Classification` project that was created.
-- Select "Train"
+- Select `Train`
 
 When the training is complete you will get information about how the model is performing for the iteration. This is displayed with stats called Precision, Recall, and AP for the model as a whole and for each class. In the next step we will learn a bit more about what each of these mean.
