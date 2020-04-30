@@ -16,7 +16,7 @@ Reasons for inaccurate predictions might include:
 * **The world changes**. For example: a financial trading model based on 2001 data probably isn't effective in 2020.
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/manage-mlops-5.png" alt-text="Illustration of the MLOps practices.":::
+:::image type="complex" source="../media/start-ml-lifecycle-mlops-5.png" alt-text="Illustration of the MLOps practices.":::
 There are two large blue circles in the center of the diagram, with an icon and text in each. The left circle is labeled, “Data scientist” and has a nucleus icon in it. The other blue circle reads, “IT” and has an icon of a person next to a computer. There is an infinity symbol that loops around both circles, indicating they work in harmony. Underneath both circles, the four MLOps practices are listed, two on top and two on bottom. They are separated by lines forming a cross between the four. These say, “Model reproducibility,” “Model validation,” “Model deployment,” and “Model retraining.”
 :::image-end:::
 :::column-end:::
@@ -51,7 +51,7 @@ Let's say your monitoring efforts catch a performance issue. We recommend a thre
 3. If the level-two team fails to solve the problem, only then do they escalate the problem to the team that built the model. It's important to only pull in the development team when necessary. That way, they can remain focused on developing new models and driving innovation rather than being round-the-clock incident response.
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/manage-mlops-6.png" alt-text="Illustration of an MLOps incident response.":::
+:::image type="complex" source="../media/start-ml-lifecycle-mlops-6.png" alt-text="Illustration of an MLOps incident response.":::
 The diagram consists of four blue rectangles and grey arrows going between each one, representing the workflow. In the top left of each blue rectangle, there is a shield icon next to the text. The diagram starts with a blue rectangle in the top left corner labeled “Detection of an issue.” A grey arrow goes from the first blue rectangle down to the second blue rectangle, titled, “L1 incident resolution.” An arrow goes from the right side of the second rectangle up to the third rectangle in the top right of the diagram. The blue rectangle is labeled “L2 incident resolution.” A grey arrow points down from the third rectangle to the fourth blue rectangle in the bottom right of the diagram, titled “L3 incident resolution.” Above the L1 and L2 rectangles, there is a label that reads “MLOps team.” Above the L3 rectangle there is a label that reads, “Development team.”
 :::image-end:::
 :::column-end:::

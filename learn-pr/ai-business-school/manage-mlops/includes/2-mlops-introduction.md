@@ -31,7 +31,7 @@ These challenges are similar to what application development teams face when cre
 5. **Monitor and retrain:** Even if a model works well at first, it needs to be continually monitored and retrained to stay relevant and accurate.
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/manage-mlops-1.png" alt-text="Illustration of the ML lifecycle.":::
+:::image type="complex" source="../media/start-ml-lifecycle-mlops-1.png" alt-text="Illustration of the ML lifecycle.":::
 There are six blue circles in a circular formation, each containing an icon. Grey arrows go from one blue circle to the next, indicating they flow into one another. A label sits above each circle. The first step at the top of the circle is labeled “Train model.” The icon shows 1’s and 0’s in a square formation. The second circle’s label says, “Package model.” The icon shows a box. The third circle is labeled “Validate model.” The icon shows an ML model icon with a check mark next to it. The ML model icon looks like several random dots connected by lines in a loose pentagon shape. The fourth circle is labeled “Deploy model.” The icon shows an arrow pointing towards three blocks. Two are white boxes and one just has a white outline and blue center. The fifth circle is labeled “Monitor model.” The icon shows a line graph. The sixth and final circle is labeled “Retrain Model.” The icon shows two arrows leading into one another in a square shape. 
 :::image-end:::
 :::column-end:::

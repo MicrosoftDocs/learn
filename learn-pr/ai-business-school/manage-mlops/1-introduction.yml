@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-mlops.introduction
+uid: learn-wwl.start-ml-lifecycle-mlops.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to AI strategy in government.
+  description: Introduction to Start the machine learning lifecycle with MLOps.
   ms.date: 05/28/2020
   author: RWortmanMorris
   ms.author: rawortma
