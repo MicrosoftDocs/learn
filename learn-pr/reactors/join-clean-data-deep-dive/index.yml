@@ -8,7 +8,8 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
-  show_latex: truetitle: 'Join and clean datasets: Deep dive'
+  show_latex: true
+title: 'Join and clean datasets: Deep dive'
 summary: Learn how to TBD.
 abstract:  | 
   In this module, you will:

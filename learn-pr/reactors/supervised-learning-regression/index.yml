@@ -8,7 +8,8 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
-  show_latex: truetitle: 'Supervised learning: Regression'
+  show_latex: true
+title: 'Supervised learning: Regression'
 summary: Learn how to TBD.
 abstract:  | 
   In this module, you will:

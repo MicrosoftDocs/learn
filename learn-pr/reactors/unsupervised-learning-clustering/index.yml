@@ -8,7 +8,8 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
-  show_latex: truetitle: 'Unsupervised learning: Clustering'
+  show_latex: true
+title: 'Unsupervised learning: Clustering'
 summary: Learn how to TBD.
 abstract:  | 
   In this module, you will:
