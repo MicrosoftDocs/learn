@@ -1,3 +1,6 @@
+### **Note: You can find an interactive version of this unit named 'variability-of-the-sample-mean.ipynb' in your virtual environment**
+
+
 ``` {.python}
 from datascience import *
 import numpy as np

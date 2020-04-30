@@ -1,3 +1,5 @@
+### **Note: You can find an interactive version of this unit named 'central-limit-theorem.ipynb' in your virtual environment**
+
 ``` {.python}
 from datascience import *
 %matplotlib inline
