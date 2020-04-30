@@ -1,6 +1,3 @@
-## Unit 4: What is Inclusion?
-2 minutes
-
 To be inclusive means to embrace disability from the very beginning: from the earliest planning stages of a product, to its launch, to its latest updates. Accessibility should always be built in rather than bolted on. If accessibility is an afterthought, changes may be rushed or viewed as a low priority, which could result in people with disabilities having an inferior experience and feeling excluded.
 
 In this way, being inclusive can change what is possible for people with disabilities. It also helps public companies and organizations ensure they are doing their work with truly everyone in mind. At Microsoft, we believe there is no limit to what people can achieve when technology reflects the diversity of all who use it.
