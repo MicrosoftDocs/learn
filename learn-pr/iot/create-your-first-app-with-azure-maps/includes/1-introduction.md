@@ -2,7 +2,7 @@ Finding your way on a map is fun, right up to the point where you realize you're
 
 Getting lost isn't usually a desirable position to be in. In this module, we'll build an app that will find a route many thousands of miles long, yet is accurate to such a level of detail that a driver will know which turn to take to bypass road construction in the middle of a bustling city.
 
-Route finding is just one of many features of Azure Maps. Other features haven'thing to do with roads and routes. For example, it can be used to display any spatial data: population changes, or any census data, weather systems, industrial or agricultural output, construction cranes per square mile, or just about anything you can think of.
+Route finding is just one of many features of Azure Maps. Other features haven't anything to do with roads and routes. For example, it can be used to display any spatial data: population changes, or any census data, weather systems, industrial or agricultural output, construction cranes per square mile, or just about anything you can think of.
 
 However, route finding is fun to watch. It's one of the applications of mapping services that helps us visualize just how detailed the maps are. It's a dynamic application that we can play with. Who isn't curious as to whether road and traffic data is good enough to help with our daily travels?
 
@@ -52,3 +52,5 @@ To finish.
 4. sandbox - update image
 5. test with sandbox
 6. quiz
+7. read and edit
+

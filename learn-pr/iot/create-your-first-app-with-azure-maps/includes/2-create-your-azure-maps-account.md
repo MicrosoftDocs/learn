@@ -4,11 +4,15 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
 
 1. Right click on [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and select **Open in new window**.
 
-1. Search for the "Azure Maps" resource ??
+1. Click **+ Create a resource**. Type "Maps" into the search bar, and select **Azure Maps**.
+
+1. Click **Create**.
+
+    [![Screenshot showing the opening screen of Azure Maps](../media/azure-maps-create-account-1.png)](../media/azure-maps-create-account-1.png#lightbox)
 
 1. Click the **Start free** button.
 
-    [![Screenshot showing the opening screen of Azure Maps](../media/azure-maps-create-account-1.png)](../media/azure-maps-create-account-1.png#lightbox)
+
 
 1. Click **GET IT NOW**, and in the **Create this app in Azure**, select **Continue**.
 
@@ -22,13 +26,13 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
 
 1. It might take a few seconds for the resource to be deployed. When you get the deployment message, click **Go to resource**.
 
-1. On the home page of the resource, notice the left hand menu. You should be on the **Overview** page.
+1. On the home page of the resource, notice the left menu. You should be on the **Overview** page.
 
-1. Look down the left hand menu, find **Settings**, then the **Authentication** entry.
+1. Look down the left menu, find **Settings**, then the **Authentication** entry.
 
 ### Extract the Primary Key
 
-1. Click on **Authentication**, in the left hand menu.
+1. Click on **Authentication**, in the left menu.
 
 1. Youwon'tice some strings, including the **Primary Key**, are displayed. Use the icon to the far right of the string to copy the key to the clipboard.
 
