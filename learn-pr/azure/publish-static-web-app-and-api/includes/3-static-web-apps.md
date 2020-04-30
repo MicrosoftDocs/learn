@@ -15,10 +15,10 @@ Azure Static Web Apps is specifically designed to host applications whose source
 | Location              | Location example | Description                                                           |
 | --------------------- | ---------------- | --------------------------------------------------------------------- |
 | App location          | /                | Source code for your web app                                          |
-| App artifact location | dist             | Location of your app's build artifacts, relative to your app location |
+| App artifact location | dist             | Location of your app's build artifacts, relative to your app location (optional) |
 | API location          | api              | Source code for your API (optional)                                   |
 
-The `API location` is a relative path to the build output directory of your application. For example, consider we have an app at `/` that outputs its built assets to a `dist` folder. Then we would want to specify `dist` here.
+The `App artifact location` is a relative path to the build output directory of your application. For example, consider we have an app at `/` that outputs its built assets to a `dist` folder. Then we would want to specify `dist` here.
 
 ### From source code to static assets with GitHub Actions
 

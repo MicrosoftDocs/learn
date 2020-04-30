@@ -1,6 +1,6 @@
 Your company is launching a shopping list web app. Through the site, customers can add, edit, view, and remove items from their list.
 
-As you build the app, your first concerns are that your app and API are hosted securely, globally available, and publish automatically. Rather than build up a web server to handle all these concerns, you decide to use a hosting solution that serves your assets and API easily, without much setup or configuration.
+As you build the app, your first concerns are that your app and API are hosted securely, globally available, and published automatically. Rather than build up a web server to handle all these concerns, you decide to use a hosting solution that serves your assets and API easily, without much setup or configuration.
 
 ## What is Azure Static Web Apps?
 
@@ -10,7 +10,7 @@ While you stay focused on developing your app, Azure Static Web Apps automatical
 
 Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, or Vue. These apps include HTML, CSS, JavaScript, and image assets that make up the application. Under a traditional web server architecture, these files are served from a single server along side any required API endpoints.
 
-With Static Web Apps, static assets are separated from a traditional web server and are instead served from points geographically distributed around the world. This distribution makes serving files much faster as files are physically closer to end users. API endpoints are hosted using a serverless architecture, which avoids the need for a full back-end server all together.
+With Azure Static Web Apps, static assets are separated from a traditional web server and are instead served from points geographically distributed around the world. This distribution makes serving files much faster as files are physically closer to end users. API endpoints are hosted using a serverless architecture, which avoids the need for a full back-end server all together.
 
 The model for Azure Static Web Apps is that you get exactly what you need, no more, no less.
 
