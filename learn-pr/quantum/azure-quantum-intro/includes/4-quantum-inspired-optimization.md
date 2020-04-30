@@ -25,7 +25,7 @@ You can learn more about building a scalable quantum computer in [this blog post
 In the meantime, we can emulate these algorithms using quantum inspired techniques today on classical hardware, and often see improvements in performance over other state-of-the-art classical optimization techniques. 
 [Theory suggests](https://arxiv.org/pdf/1910.01659.pdf) we'll see further speedups once quantum hardware is available.
 
-Applying QIO to real-world problems might offer businesses' new insights, or help lower costs by making their processes more efficient. QIO is a advantageous method in these scenarios:
+Applying QIO to real-world problems might offer businesses' new insights, or help lower costs by making their processes more efficient. QIO is an advantageous method in these scenarios:
 1. For a fixed use case and fixed quality of solution, finding the solution faster.
 2. For a fixed problem and fixed amount of time, finding a higher quality solution.
 3. By extending the problem to consider more variables, finding a solution to a more realistic model.
