@@ -23,7 +23,7 @@ In the long term, adiabatic quantum algorithms can be run on quantum computers, 
 You can learn more about building a scalable quantum computer in [this blog post](https://cloudblogs.microsoft.com/quantum/2018/05/16/achieving-scalability-in-quantum-computing/). 
 
 In the meantime, we can emulate these algorithms using quantum inspired techniques today on classical hardware, and often see improvements in performance over other state-of-the-art classical optimization techniques. 
-Theory suggests we'll see further speedups once quantum hardware is available.
+[Theory suggests](https://arxiv.org/pdf/1910.01659.pdf) we'll see further speedups once quantum hardware is available.
 
 Applying QIO to real-world problems might offer businesses' new insights, or help lower costs by making their processes more efficient. QIO is a advantageous method in these scenarios:
 1. For a fixed use case and fixed quality of solution, finding the solution faster.
