@@ -26,7 +26,7 @@ You just created the **api** git branch.
 
 ### Complete the Azure Functions API
 
-To complete the API, you'll start by moving the starter API code to a folder named _api_. 
+To complete the API, you'll start by moving the starter API code to a folder named _api_.
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
 1. Type and select **Terminal: Create New Integrated Terminal**
@@ -215,7 +215,7 @@ Now it's time to watch your web app and Azure Functions project work together. S
 
 ## Run the web app
 
-Your API is running. Now you need to configure your front-end app to make its HTTP request to your API. The front-end app runs on one port and the API runs on a different port (7071). Each front-end framework can be configured to proxy HTTP requests to another port safely.
+Your API is running. Now you need to configure your front-end app to make its HTTP request to your API. The front-end app runs on one port and the API runs on a different port (7071). Each front-end framework can be configured to proxy HTTP requests to a port safely.
 
 ### Configure your proxy port
 
@@ -224,32 +224,32 @@ Configure the proxy for your front-end app with the following steps:
 ::: zone pivot="angular"
 
 1. Open the file _angular-app/proxy.conf.json_
-1. Locate the `target: 'http://localhost:7010'` setting
-1. Verify the target's port points to 7071 `target: 'http://localhost:7071',`
+1. Locate the `target: 'http://localhost:7071'` setting
+1. Notice that the target's port points to 7071
 
 ::: zone-end
 
 ::: zone pivot="react"
 
 1. Open the file _react-app/package.json_
-1. Locate the `"proxy": "http://localhost:7020/",'` setting
-1. Verify the proxy's port points to 7071 `proxy: 'http://localhost:7071',`
+1. Locate the `"proxy": "http://localhost:7071/",'` setting
+1. Notice that the proxy's port points to 7071
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
 1. Open the file _svelte-app/rollup.config.js_
-1. Locate the line of code `const api = 'http://localhost:7030/api';`
-1. Verify the api's port points to 7071 `const api = 'http://localhost:7071/api';`
+1. Locate the line of code `const api = 'http://localhost:707/api';`
+1. Notice that the api's port points to 7071
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
 1. Open the file _vue-app/vue.config.js_
-1. Locate the `target: 'http://localhost:7040',` setting
-1. Verify the target's port points to 7071 `target: 'http://localhost:7071',`
+1. Locate the `target: 'http://localhost:7071',` setting
+1. Notice that the target's port points to 7071
 
 ::: zone-end
 
