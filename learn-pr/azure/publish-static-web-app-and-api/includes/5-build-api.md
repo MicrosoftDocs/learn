@@ -31,6 +31,14 @@ You'll need an Azure Functions project for your API, with your HTTP endpoints fo
 
 You'll get and then extend the Azure Functions project, before connecting your API to your front-end web app.
 
+### Previewing changes to your web app
+
+When you created your git repository from the template, you selected to include all branches. So far you've been using a front-end framework. Soon you'll add an API and connect it to your front-end app. The _api-starter_ folder includes an incomplete Azure Functions project missing the HTTP GET function. You'll complete the Azure Functions project's API and add the missing function.
+
+Before making changes to an app, it's good practice to create a new branch for the changes. You'll be making several changes when you complete the API for your app, so you'll create a branch for these changes.
+
+After you make the changes you'll want to see them running before deciding to merge the changes. Once you create a Pull Request from your new branch to your **master** branch, the GitHub Action will build your app and API and deploy them both to a preview URL. This allows you to leave your web app running with Azure Static Web Apps but also see a second preview URL with the results from your Pull Request.
+
 ## Next steps
 
 Now you're ready to create your API and configure your HTTP endpoints for your shopping list app.

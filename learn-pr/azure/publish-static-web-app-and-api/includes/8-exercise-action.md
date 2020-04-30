@@ -2,7 +2,7 @@ Your web app and API are both running locally. Now it's time to publish your web
 
 ## Push your changes to GitHub
 
-You've made changes to your API in the previous exercise. Commit those changes and push them to GitHub by following these steps:
+You've made changes to your API in the previous exercise. Commit those changes to the **api** branch and push them to GitHub by following these steps:
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
 1. Type and select **Git: Commit All**
@@ -12,7 +12,7 @@ You've made changes to your API in the previous exercise. Commit those changes a
 
 ## Create a Pull Request
 
-You pushed your changes to the branch **api** to GitHub. You want the GitHub Action to publish your web app and api in a preview URL. So your next step is to create a pull request against the **master** branch.
+You pushed your **api** branch to GitHub. Now you want the GitHub Action to publish your web app and API in a preview URL. So your next step is to create a pull request against the **master** branch.
 
 1. Open a browser
 1. Navigate to your repository

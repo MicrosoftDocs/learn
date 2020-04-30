@@ -2,7 +2,7 @@ You added your API to your web app and they're both running locally. Now it's ti
 
 When you created the Azure Static Web App resource, it generated a GitHub Action for you. The GitHub Action listens for commits and pull requests to your repository's **master** branch. Then when the GitHub Action detects these changes, it builds and publishes your app.
 
-You may remember when you created the Azure Static Web App resource that you provided the folder location for your API. You provided the default value of _api_. However, since you didn't have an API in the _api_ folder, Azure Static Web Apps didn't attempt to publish an API.
+You may remember when you created the Azure Static Web Apps resource that you provided the folder location for your API. You provided the default value of _api_. However, since you didn't have an API in the _api_ folder at that time, Azure Static Web Apps didn't attempt to publish an API.
 
 Now, everything changes.
 
@@ -67,6 +67,6 @@ The following table shows how Azure Static Web Apps will publish your app to dif
 | **master** branch | Live web site URL | https://purple-rain-062d03304.staticsitescanary.net/   |
 | Pull Request #5   | Preview URL       | https://purple-rain-062d03304-5.staticsitescanary.net/ |
 
-You're currently working in the **api** branch/ The **api** branch is connected to the Azure Static Web Apps resource. A common procedure is to make a pull request from your **api** branch to the branch the **master** branch. When you create the pull request against the **master** branch, the GitHub Action publishes the app to a preview URL.
+You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **master** branch. When you create the pull request against the **master** branch, the GitHub Action publishes the app to a preview URL.
 
 Next, you'll create a pull request and visit the preview URL that your GitHub Action will create.

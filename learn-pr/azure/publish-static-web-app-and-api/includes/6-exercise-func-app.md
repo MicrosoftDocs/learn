@@ -2,6 +2,7 @@ Your shopping list web app needs an API. In this exercise, you'll build and run 
 
 You'll follow this breakdown, in this exercise:
 
+1. Create a branch as you prepare to make changes to your web app
 1. Explore the Azure Function project
 1. Create the HTTP GET function
 1. Refactor the function logic to get products
@@ -10,15 +11,34 @@ You'll follow this breakdown, in this exercise:
 
 ## Get the Function app
 
-When you created your git repository from the template, you selected to include all branches. So far you've been using the **master** branch. Now you'll use the **api** branch, which has the same web app but also includes an Azure Functions project.
+Now, you'll add an API and connect it to your front-end app. The _api-starter_ folder includes an incomplete Azure Functions project. You'll complete that now.
 
-Start by checking out the **api** branch, by following these steps:
+### Create an api branch
+
+Before making changes to an app, it's good practice to create a new branch for the changes. You're about to complete the API for your app, so now is a good time to create a branch.
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
-1. Type and select **Git: Discard All Changes** since you have no changes to save
-1. Open the command palette by pressing **F1**
 1. Type and select **Git: Checkout to...**
-1. Select the **api** branch
+1. Select **Create new branch**
+1. Type **api** for the new branch name and press **ENTER**
+
+You just created the **api** git branch.
+
+### Complete the Azure Functions API
+
+To complete the API, you'll start by moving the starter API code to a folder named _api_. 
+
+1. In Visual Studio Code, open the command palette by pressing **F1**
+1. Type and select **Terminal: Create New Integrated Terminal**
+1. Use git commands to rename the _api-starter_ folder to _api_
+
+   ```bash
+   git mv api-starter api
+   ```
+
+1. Open the command palette by pressing **F1**
+1. Type and select **Git: Commit All**
+1. Type the commit message **api** and press **ENTER**
 
 You'll now see an **api** folder in the Visual Studio Code explorer. The **api** folder contains your Azure Functions project, along with three functions.
 
