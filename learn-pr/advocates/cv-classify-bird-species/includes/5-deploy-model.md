@@ -14,13 +14,13 @@ Now our model is performing "good enough" lets deploy it! There are different wa
 
 ### Consume the API in a Python App
 
-Once the model is trained and at a satisfactory accuracy its ready to be used in your App
+Once the model is trained and at a satisfactory accuracy it's ready to be used in your App
 
 - Go to the Resource Group that contains the Custom Vision Resource
 - There should be a resource named "YourCustomVisionResourceName_Prediction - Quick start"
 - The Select "Api Reference" from the list of helpful links
 - This will open a page with docs on how to call the api to get predictions from the model
-- If you scroll all the way to the bottom there are code samples in multiple languages to get you started
+- If you scroll all the way to the bottom, there are code samples in multiple languages to get you started
 - Here is the example code for calling the prediction API in python:
 
 ```python
@@ -47,4 +47,4 @@ with open(base_image_url + "images/Test/test_image.jpg", "rb") as image_contents
               ": {0:.2f}%".format(prediction.probability * 100))
 ```
 
-Now you know how to use the model you created and you can start better documenting the birds habits to help conserve their habitat and increase endangered bird populations all with the help of computer vision!!
+Now you know how to use the model you created and you can start better documenting the birds habits to help conserve their habitat and increase endangered bird populations all with the help of computer vision!
