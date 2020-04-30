@@ -4,7 +4,6 @@ Start by opening up a terminal and locate your application in the file system.
 
 ## Push your app to a Git repository
 
-GitHub is a service that enables many people to work together on a codebase using Git.
 
 The Azure Static Web App service is able to help us deploy our app to the Cloud. However, the service expects our app to exist as a GitHub repository, currently your app live on your machine.
 
@@ -15,13 +14,12 @@ To prepare the app for deploy, we will need to take the following steps:
 
 ### Create a Git repository
 
-First make sure you are in the root of your project then type the following command:
+In the console, navigate to root of your project, then run the following commands to initialize a Git repository and commit all of your files to it:"
 
 ```bash
 git init
 ```
 
-This command will initialize a GitHub repo.
 
 ### Create a GitHub repo and push the code
 
@@ -42,7 +40,7 @@ git remote add origin https://github.com/<user>/gatsby-app.git
 git push -u origin master
 ```
 
-In the root of our project, where we typed `git init` we should now type:
+Now we can configure the GitHub remote in our repo and push our code there:
 
 ```bash
 git remote add origin https://github.com/<user>/gatsby-app.git
@@ -58,7 +56,7 @@ Congratulations, you are now ready to deploy!
 
 ## Deploy your app
 
-To deploy your app, first go to Static apps service in the portal. You should see something like this:
+Next, you'll create an Azure Static Web App to host the app.
 
 ![Deploy entry portal](../media/gatsby-deploy.png)
 

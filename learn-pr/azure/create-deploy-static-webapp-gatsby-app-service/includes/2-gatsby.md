@@ -21,6 +21,8 @@ Gatsby has two core technologies that you need to know to a certain extent. Thos
 
 ### Commands
 
+These three commands will get you started working with a new Gatsby app:
+
 - `gatsby new <project name> <optional GitHub URL>`, You use this command to generate a new project. It takes a name as a mandatory argument and optionally a GitHub URL as the second argument. Using the latter argument will create a Gatsby project based on an existing Gatsby project on GitHub.
 - `gatsby develop`, this will start up a development server where your project can be accessed. A development server is a HTTP Server able to host your files so you can access them from your browser. You will find your Gatsby app running on address `http://localhost:8000`. It will also start up a GraphQL endpoint, which you can use to author queries that you can later use in your project. You can find the GraphQL endpoint at `http://localhost:8000/___graphql`.
 - `gatsby build`, this will create a static representation of your app. All the resulting HTML, JavaScript and, CSS will end up in the sub directory `public`.
@@ -38,7 +40,7 @@ nodes to
 
 ### Pages
 
-The resulting scaffolded Gatsby project will contain a few files. One of the most important things to be created is the sub directory `/pages`. Any React component placed in here will be rendered as an actual static page and will be accessible. If you are creating a file `/pages/hello.js` with the following content:
+One of the most important things to be created in a new Gatsby project is the sub directory `/pages`. Any React component placed in here will be rendered as an actual static page and will be accessible. If you are creating a file `/pages/hello.js` with the following content:
 
 ```jsx
 import React from 'react';
@@ -54,14 +56,14 @@ Back to our component above we can see that it will render the string `Hello` be
 
 ### Add data to your page
 
-In the last section we introduced a simple page that we built using a React component. We used the static data `Hello` and rendered that. Gatsby can do a lot more than that. Gatsby has a system of plugins that *scans* various data sources and places the resulting data in an in-memory object, the data graph. It does all this at build time. So once you start crafting a new page you can assume the data from that graph is available.
+Gatsby has a system of plugins that *scans* various data sources and places the resulting data in an in-memory object, the data graph. It does all this at build time. So once you start crafting a new page you can assume the data from that graph is available.
 
 When you create a page component that wants to use data from the above mentioned graph there are two things you will do:
 
 1. Define a query, you will write a query in the GraphQL query language that asks for a resource and some columns on that resource. It's a static string you are writing that you are passing to an internal Gatsby function called `graphql()`. Gatsby ensures at build time that the asked for data is fetched and passed to your component as a property called `data`.
 2. Create a component, here you are authoring a React component but you can assume the `data` property is populated with the answer from your query. The shape of the result looks exactly like the query you authored. This is a really compelling feature of GraphQL itself. Inside of the rendering section of your component you can now read from the `data` property and layout it's data in the template in a way you find appropriate.
 
-### Data from plugins - image files
+### A plugin example: loading images from files
 
 Data can be almost anything. Gatsby helps you pull in data and place it in its data graph using a plugins. The plugin `gatsby-source-filesystem` looks at your file system and populates it's data graph based on that. What it does is that it looks through the file system, on a place we specify and make the results available in the Graph. Let's have look at how this plugin is configured in `gatsby-config.js`:
 
