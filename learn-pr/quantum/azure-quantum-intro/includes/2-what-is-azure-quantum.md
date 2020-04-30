@@ -3,9 +3,6 @@ You'll also learn about the hardware and software offerings from our third party
 
 > [!VIDEO https://www.microsoft.com/...]
 
-
-![Azure Quantum Overview](./media/Azure-Quantum-Flow-Diagram.png)
-
 # Azure Quantum
 Azure Quantum is a service provided by Azure. 
 Like other Azure services, you need to deploy an Azure Quantum resource into your Azure subscription in order to use the service. 
@@ -16,7 +13,7 @@ With a quantum workspace in your subscription, you'll be able to:
 - Use quantum software tools:
 - Access quantum hardware: 
 
-![Azure quantum offering](./media/azure-quantum.png)
+![Azure quantum offering](../media/azure-quantum.png)
 
 Azure Quantum allows you to run Quantum Programs and solve Quantum-Inspired Optimization (QIO) problems in the cloud. 
 Azure Quantum takes these jobs and schedules them with the desired provider for execution. 
