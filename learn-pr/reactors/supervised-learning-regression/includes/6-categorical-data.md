@@ -184,26 +184,26 @@ What do these plots based on group tell us? The slopes for `log_ppgdp` are sim
 
 What do we mean by interactions between groups? Recall that we generalized a linear model with two features as:
 
-![$$
+$$
 y=β_0+β_1 x_1+β_2 x_2
-$$](https://render.githubusercontent.com/render/math?math=y%3D%CE%B2_0%2B%CE%B2_1%20x_1%2B%CE%B2_2%20x_2&mode=display)
+$$
 
-However, if ![$x_1$](https://render.githubusercontent.com/render/math?math=x_1&mode=inline) and ![$x_2$](https://render.githubusercontent.com/render/math?math=x_2&mode=inline) interact---if different values of ![$x_1$](https://render.githubusercontent.com/render/math?math=x_1&mode=inline), for example, change the influence of ![$x_2$](https://render.githubusercontent.com/render/math?math=x_2&mode=inline) on ![$y$](https://render.githubusercontent.com/render/math?math=y&mode=inline) --- we need to include that in the model like so:
+However, if $x_1$ and $x_2$ interact---if different values of $x_1$, for example, change the influence of $x_2$ on $y$ --- we need to include that in the model like so:
 
-![$$
+$$
 y=β_0+β_1 x_1+β_2 x_2+β_3x_1x_2
-$$](https://render.githubusercontent.com/render/math?math=y%3D%CE%B2_0%2B%CE%B2_1%20x_1%2B%CE%B2_2%20x_2%2B%CE%B2_3x_1x_2&mode=display)
+$$
 
 Our model involves three predictors (`log_ppgdp`, `pctUrban`, and `group`) and has this form:
 
-![$$
+$$
 y=β_0+β_1 x_1+β_2 x_2+β_3 u_2+β_4 u_3+β_5x_1x_2+β_6 x_1 u_2+β_7 x_1 u_3+β_8 x_2 u_2+β_9 x_2 u_3+β_{10} x_1x_2u_2+β_{11}x_1x_2 u_3
-$$](https://render.githubusercontent.com/render/math?math=y%3D%CE%B2_0%2B%CE%B2_1%20x_1%2B%CE%B2_2%20x_2%2B%CE%B2_3%20u_2%2B%CE%B2_4%20u_3%2B%CE%B2_5x_1x_2%2B%CE%B2_6%20x_1%20u_2%2B%CE%B2_7%20x_1%20u_3%2B%CE%B2_8%20x_2%20u_2%2B%CE%B2_9%20x_2%20u_3%2B%CE%B2_%7B10%7D%20x_1x_2u_2%2B%CE%B2_%7B11%7Dx_1x_2%20u_3&mode=display)
+$$
 
 Think of this as another aspect of the curse of dimensionality: as we add features (especially categorical ones), the number of potential interactions between features that we have to account for increases even faster.
 
 > [!NOTE]
-> Statisticians often use the variable u for categorical features, a convention that we have used here. Also note that we only included ![$u_2$](https://render.githubusercontent.com/render/math?math=u_2&mode=inline) and ![$u_3$](https://render.githubusercontent.com/render/math?math=u_3&mode=inline) in the generalized equation for the model, even though we have three groups in the categorical feature group. This is not a mistake; it is because one group from the categorical feature gets included in the intercept.
+> Statisticians often use the variable u for categorical features, a convention that we have used here. Also note that we only included $u_2$ and $u_3$ in the generalized equation for the model, even though we have three groups in the categorical feature group. This is not a mistake; it is because one group from the categorical feature gets included in the intercept.
 
 > [!div class="alert is-tip"]
 >
@@ -299,7 +299,7 @@ The output is:
 TBD
 ```
 
-How useful are these models for prediction? Let's look at the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) scores.
+How useful are these models for prediction? Let's look at the $R^2$ scores.
 
 ```python
 poly_model = make_pipeline(PolynomialFeatures(2),
@@ -329,7 +329,7 @@ Not uniformly good. Adding polynomial regression improved the model for the `oe
 
 ### Try it yourself
 
-Try re-running the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) scoring code cell above using different polynomial degrees in the `PolynomialFeatures()` function until you get better-fitting models.
+Try re-running the $R^2$ scoring code cell above using different polynomial degrees in the `PolynomialFeatures()` function until you get better-fitting models.
 
 <br />
 

@@ -1,23 +1,23 @@
 
 We can generalize the line equation above in the form favored by statisticians:
 
-![$$
+$$
 y = β_0 + β_1x + \epsilon
-$$](https://render.githubusercontent.com/render/math?math=y%20%3D%20%CE%B2_0%20%2B%20%CE%B2_1x%20%2B%20%5Cepsilon&mode=display)
+$$
 
-where ![$\epsilon$](https://render.githubusercontent.com/render/math?math=%5Cepsilon&mode=inline) is an unobserved random error that we generally fold into ![$β_0$](https://render.githubusercontent.com/render/math?math=%CE%B2_0&mode=inline). Nothing says that we can have only one ![$x$](https://render.githubusercontent.com/render/math?math=x&mode=inline) term, however. We can define a linear model for our data of the form
+where $\epsilon$ is an unobserved random error that we generally fold into $β_0$. Nothing says that we can have only one $x$ term, however. We can define a linear model for our data of the form
 
-![$$
+$$
 y = β_0 + β_1x + β_2x^2 + \epsilon
-$$](https://render.githubusercontent.com/render/math?math=y%20%3D%20%CE%B2_0%20%2B%20%CE%B2_1x%20%2B%20%CE%B2_2x%5E2%20%2B%20%5Cepsilon&mode=display)
+$$
 
-This is still a linear relationship because none of our ![$\beta$](https://render.githubusercontent.com/render/math?math=%5Cbeta&mode=inline)s ever multiply or divide each other. In fact, we can generalize linear models to the form
+This is still a linear relationship because none of our $\beta$s ever multiply or divide each other. In fact, we can generalize linear models to the form
 
-![$$
+$$
 y = β_0 + β_1x + β_2x^2 + β_3x^3 + \cdots + β_nx^n + \epsilon
-$$](https://render.githubusercontent.com/render/math?math=y%20%3D%20%CE%B2_0%20%2B%20%CE%B2_1x%20%2B%20%CE%B2_2x%5E2%20%2B%20%CE%B2_3x%5E3%20%2B%20%5Ccdots%20%2B%20%CE%B2_nx%5En%20%2B%20%5Cepsilon&mode=display)
+$$
 
-The linearity of our models depend on the linearity of ![$β_n$](https://render.githubusercontent.com/render/math?math=%CE%B2_n&mode=inline), not ![$x_n$](https://render.githubusercontent.com/render/math?math=x_n&mode=inline). We will use this fact to use linear regression to model data that does not follow a straight line. Let's apply this to our model of `log_ppgdp` and `lifeExpF`.
+The linearity of our models depend on the linearity of $β_n$, not $x_n$. We will use this fact to use linear regression to model data that does not follow a straight line. Let's apply this to our model of `log_ppgdp` and `lifeExpF`.
 
 ```python
 from sklearn.preprocessing import PolynomialFeatures
@@ -50,9 +50,9 @@ TBD
 
 Adding the polynomial term provides us with a much more intuitive fit of the data! The `degree=2` parameter that we supply to the `PolynomialFeatures` function dictates that our model takes the form of
 
-![$$
+$$
 y = β_0 + β_1x + β_2x^2
-$$](https://render.githubusercontent.com/render/math?math=y%20%3D%20%CE%B2_0%20%2B%20%CE%B2_1x%20%2B%20%CE%B2_2x%5E2&mode=display)
+$$
 
 Let's see what the coefficients for our model are.
 
@@ -85,9 +85,9 @@ TBD
 
 We can state our polynomial model as
 
-![$$
+$$
 {\rm lifeExpF} = -6.5 + 32.1 \times {\rm log\_ppgdp} - 2.8 \times {\rm log\_ppgdp}^2
-$$](https://render.githubusercontent.com/render/math?math=%7B%5Crm%20lifeExpF%7D%20%3D%20-6.5%20%2B%2032.1%20%5Ctimes%20%7B%5Crm%20log%5C_ppgdp%7D%20-%202.8%20%5Ctimes%20%7B%5Crm%20log%5C_ppgdp%7D%5E2&mode=display)
+$$
 
 Using the polynomial model improves predictive power, but it comes at the cost of interpretability. What is the intuitive relationship between `lifeExpF` and `log_ppgdp` now?
 
@@ -186,7 +186,7 @@ TBD
 
 ***
 
-Let's see what the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) scores for the different-degree polynomial models are.
+Let's see what the $R^2$ scores for the different-degree polynomial models are.
 
 ```python
 for count, degree in enumerate([3, 4, 5]):
@@ -208,4 +208,4 @@ TBD
 
 Each additional polynomial degree improves the fit of our model (as demonstrated by the incremental improvements to the r-squared scores). However, adding more degrees to the polynomial regressions opens us to the risk of [overfitting](https://en.wikipedia.org/wiki/Overfitting), a process by which our models come to fit the training data too closely and are thus less useful in predicting more generalized data.
 
-Higher-degree polynomials also bring back the [curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality). Simple linear models need only ![$N + 1$](https://render.githubusercontent.com/render/math?math=N%20%2B%201&mode=inline) sample points to fit, where ![$N$](https://render.githubusercontent.com/render/math?math=N&mode=inline) is the number of dimensions (2 points in 1 dimension, 3 in 2 dimensions, 4 in three dimensions, and so on). However, each additional polynomial degree increases the number of sample points required for a given dimensionality much faster. Particularly if certain data points are difficult or expensive to come by, you might run out of data in order to fit a high-degree polynomial model.
+Higher-degree polynomials also bring back the [curse of dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality). Simple linear models need only $N + 1$ sample points to fit, where $N$ is the number of dimensions (2 points in 1 dimension, 3 in 2 dimensions, 4 in three dimensions, and so on). However, each additional polynomial degree increases the number of sample points required for a given dimensionality much faster. Particularly if certain data points are difficult or expensive to come by, you might run out of data in order to fit a high-degree polynomial model.

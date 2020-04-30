@@ -40,7 +40,7 @@ TBD
 > [!NOTE]
 > Notice in the code cell above that we did not fit the model using `model.fit(df['ppgdp'], df['lifeExpF'])`. Instead, we had to use `df['ppgdp'][:, np.newaxis]` for our predictors rather than just `df['ppgdp']`. The addition of `[:, np.newaxis]` changes `df['ppgdp']` from a pandas `Series` to an array in matrix format. (If you're unsure what that looks like, create a new code cell below this cell using **Insert > Insert Cell Below** and then run `df['ppgdp']` and then `df['ppgdp'][:, np.newaxis]` in order to see the difference.
 
-Just how poor is this initial model? Let's calculate the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) score for it to see. The ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) score (also called the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination)) represents the proportion of the variance in our response that is predictable from the predictors -- so 0 is the worst (a model explains none of the variance) and 1 is the best (a model explains all of it).
+Just how poor is this initial model? Let's calculate the $R^2$ score for it to see. The $R^2$ score (also called the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination)) represents the proportion of the variance in our response that is predictable from the predictors -- so 0 is the worst (a model explains none of the variance) and 1 is the best (a model explains all of it).
 
 ```python
 from sklearn.metrics import r2_score
@@ -101,7 +101,7 @@ The output is:
 TBD
 ```
 
-This is much better, but it is still far from perfect. The shape of the data seems to have a curve to it and we will examine how to deal with that shortly. However, let's first interpret the model have right here to see what it tells us. How much better is it than the first model? Let's look at the ![$R^2$](https://render.githubusercontent.com/render/math?math=R%5E2&mode=inline) score.
+This is much better, but it is still far from perfect. The shape of the data seems to have a curve to it and we will examine how to deal with that shortly. However, let's first interpret the model have right here to see what it tells us. How much better is it than the first model? Let's look at the $R^2$ score.
 
 ```python
 model.fit(df['log_ppgdp'][:, np.newaxis], df['lifeExpF'])
@@ -131,14 +131,13 @@ TBD
 
 Remember that in high school algebra lines were generally defined by an equation of the form
 
-![$$
-y = ax + b
-$$](https://render.githubusercontent.com/render/math?math=y%20%3D%20ax%20%2B%20b&mode=display)
+$$y = ax + b
+$$
 
-where ![$a$](https://render.githubusercontent.com/render/math?math=a&mode=inline) is the *slope* and ![$b$](https://render.githubusercontent.com/render/math?math=b&mode=inline) is the *intercept*. That samer terminology applies in linear regression. The slope refers to our model's predicted change in units of female life expectancy (years) for each unit of the base-10 logarithm of per-capita GDP. In other words, our model predicts that, on average, women's life expectancies increase by 11.6 years every time per-capita GDP increases 10 fold.
+where $a$ is the *slope* and $b$ is the *intercept*. That samer terminology applies in linear regression. The slope refers to our model's predicted change in units of female life expectancy (years) for each unit of the base-10 logarithm of per-capita GDP. In other words, our model predicts that, on average, women's life expectancies increase by 11.6 years every time per-capita GDP increases 10 fold.
 
-The intercept is a little more abstract because it is not directly tied to any data point. It shows the value of the ![$y$](https://render.githubusercontent.com/render/math?math=y&mode=inline)-axis at the point where our line crossed that axis (where ![$x=0$](https://render.githubusercontent.com/render/math?math=x%3D0&mode=inline)). If we were still modeling `ppgdp` versus `lifeExpF`, we might interpret the intercept as representing women's baseline life expectancy in a hypothetical country with a per-capita GDP of USD 0: 29.8 years. However, we are modeling `log_ppgdp` versus `lifeExpF`, and the logarithm of 0 is undefined. Therefore, it can be easiest to accept the intercept in our model as a mathematical abstraction necessary to making other parts of our model work. Our model can be stated as:
+The intercept is a little more abstract because it is not directly tied to any data point. It shows the value of the $y$ - axis at the point where our line crossed that axis (where $x=0$). If we were still modeling `ppgdp` versus `lifeExpF`, we might interpret the intercept as representing women's baseline life expectancy in a hypothetical country with a per-capita GDP of USD 0: 29.8 years. However, we are modeling `log_ppgdp` versus `lifeExpF`, and the logarithm of 0 is undefined. Therefore, it can be easiest to accept the intercept in our model as a mathematical abstraction necessary to making other parts of our model work. Our model can be stated as:
 
-![$$
+$$
 {\rm lifeExpF} = 11.6 \times {\rm log\_ppgdp} + 29.8
-$$](https://render.githubusercontent.com/render/math?math=%7B%5Crm%20lifeExpF%7D%20%3D%2011.6%20%5Ctimes%20%7B%5Crm%20log%5C_ppgdp%7D%20%2B%2029.8&mode=display)
+$$

@@ -1,5 +1,5 @@
 
-What if we went with ![$k=5$](https://render.githubusercontent.com/render/math?math=k%3D5&mode=inline) instead of ![$k=3$](https://render.githubusercontent.com/render/math?math=k%3D3&mode=inline)? Would the contents of our clusters align with the components we identified in Section 1.2 (PCA)? We did, after all, divide the National Nutrient Database into five components in that section using PCA.
+What if we went with $k=5$ instead of $k=3$? Would the contents of our clusters align with the components we identified in Section 1.2 (PCA)? We did, after all, divide the National Nutrient Database into five components in that section using PCA.
 
 It's a seductive idea, but an incorrect one. Let's examine *why* it's incorrect; we'll start by re-fitting our *k*-means model on five clusters. (Remember that we defined earlier in this section `X = StandardScaler().fit_transform(nutr_df)`.)
 
@@ -32,7 +32,7 @@ The output is:
 TBD
 ```
 
-We have now defined `merged_df` for ![$k=5$](https://render.githubusercontent.com/render/math?math=k%3D5&mode=inline). Let's now extract the two features we will want to combine with our PCA results: `Cluster` and `FoodGroup`.
+We have now defined `merged_df` for $k=5$. Let's now extract the two features we will want to combine with our PCA results: `Cluster` and `FoodGroup`.
 
 ```python
 cluster_df = merged_df[['Cluster', 'FoodGroup']]
@@ -65,7 +65,7 @@ The output is:
 TBD
 ```
 
-Now that we have the PCA results in a `DataFrame`, let's sort them by ![$c_1$](https://render.githubusercontent.com/render/math?math=c_1&mode=inline) and see how the cluster labels break down among the top 500 results.
+Now that we have the PCA results in a `DataFrame`, let's sort them by $c_1$ and see how the cluster labels break down among the top 500 results.
 
 ```python
 pca_df.sort_values(by='c1')['Cluster'][:500].value_counts()
@@ -77,7 +77,7 @@ The output is:
 TBD
 ```
 
-![$c_1$](https://render.githubusercontent.com/render/math?math=c_1&mode=inline) proved to have pretty close overlap with cluster 2. What about ![$c_2$](https://render.githubusercontent.com/render/math?math=c_2&mode=inline)?
+$c_1$ proved to have pretty close overlap with cluster 2. What about $c_2$?
 
 ```python
 pca_df.sort_values(by='c2')['Cluster'][:500].value_counts()
@@ -93,7 +93,7 @@ Here, the results are decidedly more mixed. But you can get a sense of how *k*-
 
 ### Try it yourself
 
-Evaluate the extent to which *k*-means clusters overlap with PCA components for ![$c_3$](https://render.githubusercontent.com/render/math?math=c_3&mode=inline), ![$c_4$](https://render.githubusercontent.com/render/math?math=c_4&mode=inline), and ![$c_5$](https://render.githubusercontent.com/render/math?math=c_5&mode=inline). You might also want to adjust the size of slices that you take (more or less than 500) in order to see what effect that has on your results.
+Evaluate the extent to which *k*-means clusters overlap with PCA components for $c_3$, $c_4$, and $c_5$. You might also want to adjust the size of slices that you take (more or less than 500) in order to see what effect that has on your results.
 
 <br />
 
