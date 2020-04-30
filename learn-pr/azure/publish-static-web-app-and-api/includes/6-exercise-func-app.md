@@ -331,25 +331,25 @@ It's time to see your application running locally against the Azure Functions AP
 
 ::: zone pivot="angular"
 
-Browse to <http://localhost:4200>
+Browse to [http://localhost:4200](http://localhost:4200?azure-portal=true)
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-Browse to <http://localhost:3000>
+Browse to [http://localhost:3000](http://localhost:3000?azure-portal=true)
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-Browse to <http://localhost:5000>
+Browse to [http://localhost:5000](http://localhost:5000?azure-portal=true)
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-Browse to <http://localhost:8080>
+Browse to [http://localhost:8080](http://localhost:8080?azure-portal=true)
 
 ::: zone-end
 
