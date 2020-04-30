@@ -41,6 +41,16 @@ In this tutorial, you'll create, modify, and deploy a web app and API to Azure S
 
 This tutorial provides four variations of the sample application for you to choose from: Angular, React, Svelte, and Vue. The power of Azure Static Web Apps is that all of these flavors "just work".
 
+The starter code includes the four apps and an starting point for an API that you'll use.
+
+```files
+|- angular-app 👈 The Angular client app
+|- api-starter 👈 The API starter app. You'll use this later
+|- react-app   👈 The React client app
+|- svelte-app  👈 The Svelte client app
+|- vue-app     👈 The Vue client app
+```
+
 ### What you'll do
 
 Once you choose your client application, you'll:
