@@ -13,9 +13,9 @@ summary: Automatically deploy and update a static web application and its API fr
 abstract: |
   In this module, you will:
     - Choose an existing web app project with either Angular, React, Svelte or Vue.
-    - Create and publish an API with Azure Functions.
+    - Create an API for the app with Azure Functions.
     - Run the application locally.
-    - Publish a web app to a new Azure Static Web App.
+    - Publish the app and its API to an Azure Static Web App.
 prerequisites: |
   - Familiarity with one of Angular, React, Svelte, or Vue
   - Beginner-level experience with Azure Functions

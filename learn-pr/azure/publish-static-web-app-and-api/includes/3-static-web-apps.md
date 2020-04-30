@@ -1,4 +1,4 @@
-You want your app to be hosted in Azure. Azure Static Web Apps will provision the Azure resources that to host your app.
+You want your app to be hosted in Azure. Creating an Azure Static Web Apps instance will provision the Azure resources to do it.
 
 However, before your app can be hosted, you'll need something that will build your app when you make changes. Those changes could be via commits or pull requests to your repository. Azure Static Web Apps sets up a GitHub Action that will build and publish your application.
 
@@ -8,7 +8,7 @@ There are two automated aspects to deploying a static web app. The first aspect 
 
 When you publish your app to the web with Azure Static Web Apps, you're getting fast hosting of your static web app and scalable APIs. You're also getting a unified build and deployment workflow provided by GitHub Actions.
 
-### Key ingredients
+### Connecting your Static Web Apps instance to GitHub
 
 The key ingredients to create an Azure Static Web App are:
 
@@ -26,13 +26,13 @@ The `API location` is a relative path to the build output directory of your appl
 
 ### From source code to static assets with GitHub Actions
 
-You push your source code to your GitHub repo. Your GitHub repo contains source code, not static assets, and so it needs to be built before it can be published. The GitHub Action performs the build and turns your source code into static assets that can be served by Azure.
+Your GitHub repo contains source code, not static assets, and so it needs to be built before it can be published.
 
-The first time your Azure Static Web Apps resource is created, it creates a GitHub Action. The GitHub Action is added to your repository in the _.github/workflows_ folder. You can review or modify this file as needed. The settings you enter when you create the resource are stored in the GitHub Action's file.
+When you create a Static Web Apps instance, Azure creates a GitHub Action in your repository. This action performs the build, turning your source code into static assets that can be served by Azure, and then deploys the assets. The GitHub Action is added to your repository in the _.github/workflows_ folder. You can review or modify this file as needed. The settings you enter when you create the resource are stored in the GitHub Action's file.
 
 ### Integrated API with Azure Functions
 
-You can optionally have an API implemented as an Azure Functions project. You don't need to create an Azure Function app in Azure, instead it's built into your Azure Static Web App. Typically you put the API in a folder named _api_ or _functions_, but you can name it whatever you prefer.
+If your app requires an API, you can implement it as an Azure Functions project in your repository and it will automatically be deployed and hosted by your Static Web App instance. The GitHub Action that performs the build and deployment locates the API within your repo by the name of the folder you store it in. Typically you put the API in a folder named _api_ or _functions_, but you can name it whatever you prefer.
 
 What if you don't have an API? Don't worry. If Azure Static Web Apps can't find an API in the folder you indicate, it won't publish an API.
 

@@ -10,7 +10,7 @@ While you stay focused on developing your app, Azure Static Web Apps automatical
 
 Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, or Vue. These apps include HTML, CSS, JavaScript, and image assets that make up the application. Under a traditional web server architecture, these files are served from a single server along side any required API endpoints.
 
-In a Static Web Apps site, static assets are separated from a traditional web server and are instead served from points geographically distributed around the world. This distribution makes serving files much faster as files are physically closer to end users. API endpoints are hosted using a serverless architecture, which avoids the need for a full back-end server all together.
+With Static Web Apps, static assets are separated from a traditional web server and are instead served from points geographically distributed around the world. This distribution makes serving files much faster as files are physically closer to end users. API endpoints are hosted using a serverless architecture, which avoids the need for a full back-end server all together.
 
 The model for Azure Static Web Apps is that you get exactly what you need, no more, no less.
 
@@ -19,19 +19,18 @@ The model for Azure Static Web Apps is that you get exactly what you need, no mo
 > [!NOTE]
 > Azure Static Web Apps is currently in preview.
 
-When you create a new app, the Static Web Apps service is set to watch a branch in the repo for changes. The service also creates a GitHub Actions workflow file in the app repository, which contains configuration settings for the build action.
+When you create an Azure Static Web Apps resource, Azure sets up a GitHub Actions workflow in the app's source code repository that monitors a branch of your choice. Every time you push commits or accept pull requests into the watched branch, the GitHub Action automatically builds and deploys your app and its API to Azure.
 
-Every time you push commits or accept pull requests into the watched branch, the GitHub Action starts up and your site is automatically built and deployed.
 
-Azure host and serves your static web app while Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand to the API.
+Azure hosts and serves your static web app while Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand to the API.
 
 ### Key features
 
-- **Globally distributed web hosting** putting static content like HTML, CSS, JavaScript, and images closer to your users.
-- **Integrated API** support provided by Azure Functions.
-- **First-party GitHub integration** where repository changes trigger builds and deployments.
-- **Free SSL certificates**, which are automatically renewed.
-- **Unique preview URLs**, for pull requests
+- **Globally distributed web hosting** puts static content like HTML, CSS, JavaScript, and images closer to your users.
+- **Integrated API** support provided by Azure Functions
+- **First-party GitHub integration** where repository changes trigger builds and deployments
+- **Free SSL certificates**, which are automatically renewed
+- **Unique preview URLs** for previewing pull requests
 
 ## Learning objectives
 
@@ -41,7 +40,7 @@ In this tutorial, you'll create, modify, and deploy a web app and API to Azure S
 
 This tutorial provides four variations of the sample application for you to choose from: Angular, React, Svelte, and Vue. The power of Azure Static Web Apps is that all of these flavors "just work".
 
-The starter code includes the four apps and an starting point for an API that you'll use.
+The starter code includes the four apps and the starting point for an API that you'll use.
 
 ```files
 |- angular-app 👈 The Angular client app
@@ -61,7 +60,7 @@ Once you choose your client application, you'll:
 1. Automatically build and deploy your web app to Azure from a GitHub repository with GitHub Actions
 1. Finally, you'll explore and launch your application, as shown below
 
-:::image type="content" source="../media/my-shopping-list-app.png" alt-text="My Shopping List sample application":::
+:::image type="content" source="../media/my-shopping-list-app.png" alt-text="A set of four screenshots illustrating the four sample applications":::
 
 ## Next steps
 
