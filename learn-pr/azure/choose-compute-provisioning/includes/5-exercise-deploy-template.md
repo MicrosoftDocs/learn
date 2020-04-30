@@ -123,7 +123,7 @@ Now that you have a completed template and zipped configuration file, you can us
 1. In Cloud Shell, run the following command to validate your deployment. When prompted for a password, enter a complex password of your choice.
 
     ```azurecli
-    az group deployment validate \
+    az deployment group validate \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --template-file template.json \
         --parameters vmName=hostVM1 adminUsername=serveradmin
@@ -142,7 +142,7 @@ Now that we know the template is valid, we can perform the deployment.
 1. To deploy the template, run the following command. When prompted for a password, enter a complex password of your choice.
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --template-file template.json \
         --parameters vmName=hostVM1 adminUsername=serveradmin

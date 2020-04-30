@@ -12,7 +12,24 @@ In this unit, you'll generate test certificates using tooling on Linux. The cert
 
 ## Generate and configure IoT Edge device CA certificates
 
-You'll complete these steps on the Azure IoT Edge Gateway that was deployed in the previous unit.
+You'll complete these steps on the Azure IoT Edge Gateway that was deployed in the previous unit using the Azure Cloud Shell.
+
+1. At the top of the Azure portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
+
+1. Follow the instructions to create the necessary storage accounts for use in the **Cloud Shell**.
+
+    If you are using a sandbox account, you may receive the following error message when creating the Cloud Shell instance. If you receive this message, scroll down and select **Show advanced settings**:
+
+    >[!div class="mx-imgBorder"]
+    >[![Azure Cloud Shell Storage Creation Failed](../media/storage-creation-failed.png)](../media/storage-creation-failed.png#lightbox)
+
+    Next, supply appropriate names to create a new **Storage account** and **File share** then select **Create storage**:
+
+   >[!div class="mx-imgBorder"]
+    >[![Azure Cloud Shell Storage Creation Advanced Settings Named](../media/storage-creation-advanced-settings-named.png)](../media/storage-creation-advanced-settings-named.png#lightbox)
+
+    >[!NOTE]
+    > The **Storage Account** and **File Share** resources must be given globally unique names.  If you receive an error that a given name is already in use, try to name the resource again with a unique value.
 
 1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure portal.  It should be named according to the following format:
  `vm-0000000000000`
@@ -28,13 +45,9 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
 
     This entry is a sample SSH command that will be used to connect to the virtual machine.  It contains the hostname for the VM and the Administrator username. Modify this command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
 
-1. At the top of the Azure portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
-
-1. Follow the instructions to create the necessary storage accounts for use in the **Cloud Shell**.
-
 1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
-1. When prompted with "Are you sure, you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed.
+1. When prompted with "**Are you sure, you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed.
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 

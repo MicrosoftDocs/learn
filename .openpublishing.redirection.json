@@ -974,6 +974,106 @@
       "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-express-node-app-service-vscode/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-publish-webapp-app-service-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-express-node-app-service-vscode/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-publish-webapp-app-service-vs-code/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-express-node-app-service-vscode/2-create-express-web-application-vs-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-publish-webapp-app-service-vs-code/2-create-web-application-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-express-node-app-service-vscode/3-exercise-create-express-web-application-vs-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-publish-webapp-app-service-vs-code/3-exercise-create-web-application-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-express-node-app-service-vscode/4-publish-app-azure-app-service-vs-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-publish-webapp-app-service-vs-code/4-publish-app-azure-app-service-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-express-node-app-service-vscode/5-exercise-publish-app-azure-app-service-vs-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-publish-webapp-app-service-vs-code/5-exercise-publish-app-azure-app-service-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-express-node-app-service-vscode/6-update-app-vs-code-publish-updates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-publish-webapp-app-service-vs-code/6-update-app-vs-code-publish-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-express-node-app-service-vscode/7-exercise-update-app-vs-code-publish-updates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-publish-webapp-app-service-vs-code/7-exercise-update-app-vs-code-publish-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-express-node-app-service-vscode/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-publish-webapp-app-service-vs-code/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/index.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/3-exercise-create-qna-knowledge-base.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/4-exercise-publish-your-knowledge-base.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/5-integrate-qna-with-a-bot.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/2-overview-of-qna-maker.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/4-amazon-dynamodb.md",
+      "redirect_url": "https://docs.microsoft.com/learn/cmu-cloud-computing/cmu-case-study-nosql-databases/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/5-amazon-s3.md",
+      "redirect_url": "https://docs.microsoft.com/learn/cmu-cloud-computing/cmu-case-study-nosql-databases/5-openstack-swift/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/7-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/secure-your-azure-virtual-machine-disks/8-summary/",
+      "redirect_document_id": true
     }
   ]
 }

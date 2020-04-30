@@ -110,7 +110,6 @@ az vm encryption enable \
     --name <vm-name> \
     --disk-encryption-keyvault <keyvault-name> \
     --volume-type [all | os | data] \
-    --skipvmbackup
 ```
 
 ## Viewing the status of the disk

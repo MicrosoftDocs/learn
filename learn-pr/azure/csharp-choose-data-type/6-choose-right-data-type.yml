@@ -6,10 +6,9 @@ metadata:
   description: Learn the criteria you should use when evaluating which data types to choose for your code.
   ms.date: 09/05/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 content: |
   [!include[](includes/6-choose-right-data-type.md)]
