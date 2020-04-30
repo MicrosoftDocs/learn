@@ -18,6 +18,8 @@ In this module you will:
 
 ## Learn the scenario
 
+![Contoso Logistics](../media/contoso.png)
+
 Contoso Logistics Inc is a world class freight company operating a fleet of large container ships. 
 When these ships are docked at port, Contoso Logistics needs to distribute containers between the two ships as evenly as possible. 
 If they make one ship significantly heavier than the other then it will move slower and consume more fuel - delaying shipments and costing a significant amount of money! If you were managing the distribution containers for Contoso, how would you optimize the weights?
