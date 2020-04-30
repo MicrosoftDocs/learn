@@ -14,7 +14,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) 
 
 ![Search for Azure SQL](../media/search2.png)  
 
-There are a lot of different items and categories here, but basically this is giving you filters for what you can search on. Let's break them down:
+There are a lot of different items and categories here, but basically this menu gives you filters for what you can search on. Let's break them down:
 * **Services**: if you select Services, then you're able to see the existing resources (i.e. already deployed) that you have all together. For example, if you clicked Azure SQL, you would see all of your SQL VMs, Databases, Logical servers, Managed Instances, and pools.
 * **Resources**: this searches based on existing resource names. For example, if you searched for "adventureworks" any resources with "adventureworks" in the name would return here.
 * **Marketplace**: this allows you to deploy new resources from the marketplace. 
@@ -123,8 +123,8 @@ Collations in SQL Server and Azure SQL tell the Database Engine how to treat cer
 * `SQL` means it is a SQL Server collation (as opposed to a Windows or Binary collation)  
 * `Latin1_General` specifies the alphabet/language to use when sorting
 * `CP1` references the code page used by the collation
-* `CI` means it will be case insensitive, where `CS` is case sensitive
-* `AS` means it will be accent sensitive, where `AI` is accent insensitive
+* `CI` means it will be case insensitive, where `CS` is case-sensitive
+* `AS` means it will be accent sensitive, where `AI` is accent-insensitive
 
 There are other options available related to character widths, UTF-8, etc., and more details about what you can and can't do with Azure SQL [here](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver15).
 
@@ -141,13 +141,13 @@ Your **Additional settings** pane should now look similar to the image below.
 
 Select **Next : Tags**. 
 
-Tags can be used to logically organize Azure resources across a subscription. For example, you can apply the name "Environment" and the value "Development" to this SQL database and Database server, but you might use the value "Production" for production resources. This can helpful for organizing resources for billing or management. You can read more [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources).
+Tags can be used to logically organize Azure resources across a subscription. For example, you can apply the name "Environment" and the value "Development" to this SQL database and Database server, but you might use the value "Production" for production resources. This can be helpful for organizing resources for billing or management. You can read more [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources).
 
 ![Adding tags](../media/tags.png)  
 
 **Step 14 - Review and create**
 
-Finally, select **Next : Review + create**. Here you can review your deployment selections and the [Azure marketplace terms](https://go.microsoft.com/fwlink/?linkid=2045624).  
+Finally, select **Next : Review + create**. Here you can review your deployment selections and the [Azure Marketplace terms](https://go.microsoft.com/fwlink/?linkid=2045624).  
 
 > You also have the option to **Download a template for automation**. This workshop will not cover that method, but if you're interested, you can [learn more](https://docs.microsoft.com/en-us/azure/azure-resource-manager/).
 
@@ -169,7 +169,7 @@ And finally...
 
 ![Deployment is complete view](../media/deploymentunderway3.png)
 
-If, for whatever reason, you get lost from this page and the deployment has not completed, you can navigate to your resource group, and select **Deployments**. This will give you the various deployments, their status, and more information.  
+If for whatever reason, you get lost from this page and the deployment has not completed, you can navigate to your resource group, and select **Deployments**. This will give you the various deployments, their status, and more information.  
 
 ![Locating deployments](../media/deploymentstatus.png)
 
@@ -179,9 +179,9 @@ Once your resource has deployment, review the **Overview** pane for the SQL data
 
 In this activity you will learn the basics of connecting to your deployed Azure SQL Database and compare that experience to connecting to SQL Server.
 
-**What would connecting in SQL Server 2019 look like?**  
+**What would connecting to SQL Server 2019 look like?**  
 
-Now that everything looks to be up and running in the Azure portal, let's review what connecting to an instance of SQL Server 2019 may look like.Typically, you'd open SSMS and connect, using Windows Authentication, to the local instance of SQL Server 2019, similar to the image below.  
+Now that everything looks to be up and running in the Azure portal, let's review what connecting to an instance of SQL Server 2019 may look like. Typically, you'd open SSMS and connect, using Windows Authentication, to the local instance of SQL Server 2019, similar to the image below.  
 
 ![How to connect to SQL Server 2019 in SSMS](../media/localconnect.png)  
 
@@ -223,4 +223,4 @@ Spend a few minutes clicking around and exploring the differences, at first glan
 
 ![View of Managed Instance in SSMS](../media/miserver.png)   
 
-In this exercise, you saw how to deploy and connect to Azure SQL Database, and how it compares (at first glance) to SQL Server and Azure SQL Managed Instance. In the next exercise, you will continue this comparsion, going deeper and exploring various methods to verify your deployment/installation.  
+In this exercise, you saw how to deploy and connect to Azure SQL Database, and how it compares (at first glance) to SQL Server and Azure SQL Managed Instance. In the next exercise, you will continue this comparison, going deeper and exploring various methods to verify your deployment/installation.  
