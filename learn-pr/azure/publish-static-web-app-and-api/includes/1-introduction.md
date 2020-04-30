@@ -6,7 +6,7 @@ As you build the app, your first concerns are that your app and API are hosted s
 
 Azure Static Web Apps solves the hard problems all the way from your source code to global availability.
 
-While you stay focused on developing your app, Azure Static Web Apps automatically builds and hosts full-stack web apps from a GitHub repository.
+While you stay focused on developing your app, Azure Static Web Apps automatically builds and hosts it from a GitHub repository.
 
 Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, or Vue. These apps include HTML, CSS, JavaScript, and image assets that make up the application. Under a traditional web server architecture, these files are served from a single server along side any required API endpoints.
 
