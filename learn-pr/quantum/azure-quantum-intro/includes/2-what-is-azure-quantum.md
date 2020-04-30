@@ -1,21 +1,40 @@
+# Azure Quantum
 In this unit, you'll get an introduction to the Azure Quantum service and the types of problems Azure Quantum can help you solve. 
 You'll also learn about the hardware and software offerings from our third party providers which you can access through Azure Quantum. 
 
 > [!VIDEO https://www.microsoft.com/...]
-
-# Azure Quantum
+## Workspaces
 Azure Quantum is a service provided by Azure. 
-Like other Azure services, you need to deploy an Azure Quantum resource into your Azure subscription in order to use the service. 
+Like other Azure services, you'll need to deploy an Azure Quantum resource into your Azure subscription in order to use the service. 
 This resource is called an **Azure Quantum Workspace** - or **Workspace** for short. 
 
-With a quantum workspace in your subscription, you'll be able to:
+With an Azure Quantum workspace in your subscription, you'll be able to:
 - Explore quantum solutions: 
 - Use quantum software tools:
 - Access quantum hardware: 
 
 ![Azure quantum offering](../media/azure-quantum.png)
 
-Azure Quantum allows you to run Quantum Programs and solve Quantum-Inspired Optimization (QIO) problems in the cloud. 
+## Targets
+The kind of program you wish to run will determine your target:
+
+- If you want the ability to solve large, complex optimization problems at scale, then you can explore quantum-inspired solvers from Microsoft and partners such as 1QBit.
+In this module you'll get an understanding of what optimization problems are, and what techniques you can use through Azure Quantum to solve them.
+- If you are interested in developing quantum software, then Azure Quantum offers a suite of tools for helping you express your algorithms using the Quantum Development Kit and Q#.
+There are tools for simulating your programs, so that you can test the behaviour and performance of your code. 
+In addition, there are tools such as resource estimation, which will help you understand the resources that your code would require.
+In terms of a quantum program, this tells you the types of quantum gates you use, and how many.
+Using these tools together helps you understand the features of a quantum computer that you'd need in order to run your program, such as the number of qubits. 
+From a software engineering perspective, it also helps you iterate and improve your code, so that you can reduce the requirements necessary to run it. 
+For more detail on how this is done in practice, check out Dave Wecker's talk on [Achieving Practical Quantum Computing](https://cloudblogs.microsoft.com/quantum/2018/06/01/achieving-practical-quantum-computing/).
+- If you have developed quantum software that you would like to run on quantum hardware, then through Azure Quantum you can access a range of different hardware types. 
+For example, there's IonQ's quantum computer built from trapped ions. There's also superconducting devices from Honeywell and QCI.
+Currently, Microsoft is also developing its own quantum hardware based on topological qubits.
+
+![Azure quantum offering](../media/azure-quantum-2.png)
+
+
+
 Azure Quantum takes these jobs and schedules them with the desired provider for execution. 
 Using our SDKs and tools you can easily run a job against multiple providers and targets to find the one that will work best for your scenario.
 Once you create a Workspace, you'll be able to select which third party providers you would like to be able to use in that Workspace. Every Workspace also comes with the Microsoft provider always enabled. For more information about providers, see [Providers and Targets](#Providers-and-Targets) below. If you haven't enabled a particular provider for execution in your Workspace, you will not be able to run jobs against that provider later. You may change the enabled providers in your Workspace after creating it.
