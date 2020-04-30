@@ -74,4 +74,4 @@ Notice that the preview URL contains a hyphen followed by a number. The number m
 
 ## Next steps
 
-Congratulations, you've created your first Azure Static Web App with a web app and API!
+Congratulations, you've created your first Azure Static Web Apps instance with a web app and API!

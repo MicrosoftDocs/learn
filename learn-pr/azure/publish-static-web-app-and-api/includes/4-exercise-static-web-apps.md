@@ -1,4 +1,4 @@
-In this exercise, you'll create an Azure Static Web App instance including a GitHub Action that will automatically build and publish your application.
+In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that will automatically build and publish your application.
 
 ## Activate the Azure sandbox
 
@@ -9,7 +9,7 @@ First, you'll connect to an Azure sandbox. You can create the Azure Static Web A
 
 ## Create a Static Web App
 
-Now that you've created your GitHub repository, you can create a Static Web App instance from the Azure portal.
+Now that you've created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
 
 1. In the top bar, search for **Static Web Apps**
 1. Select **Static Web Apps**
@@ -26,7 +26,7 @@ Next, configure your new app and link it to your GitHub repository.
    | _Subscription_   | **Concierge subscription**               |
    | _Resource Group_ | <rgn>[Sandbox resource group name]</rgn> |
 
-1. Enter the **Static Web App details**
+1. Enter the **Static Web Apps details**
 
    | Setting  | Value                                                                         |
    | -------- | ----------------------------------------------------------------------------- |
@@ -104,7 +104,7 @@ Continue to create the application.
 
 ### Review the GitHub Action
 
-At this stage, your Static Web App instance has been created in Azure, but your app has not yet been deployed to it. The GitHub Action that Azure creates in your repository will run automatically to perform the first build and deployment of your app, but it will take a couple minutes to finish.
+At this stage, your Static Web Apps instance has been created in Azure, but your app has not yet been deployed to it. The GitHub Action that Azure creates in your repository will run automatically to perform the first build and deployment of your app, but it will take a couple minutes to finish.
 
 You can check check the status of your build and deploy action by clicking the link shown below:
 
@@ -123,7 +123,7 @@ Your app's now globally available, but it's still stuck at **Loading data ...** 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 > [!NOTE]
-> Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web App is created. So if you see the splash page, the app is still being deployed.
+> Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
 
 ## Next steps
 

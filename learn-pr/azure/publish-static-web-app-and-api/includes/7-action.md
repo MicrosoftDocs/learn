@@ -1,6 +1,6 @@
 You added your API to your web app and they're both running locally. Now it's time to publish your API and your app to Azure Static Web Apps.
 
-When you created the Azure Static Web App resource, it generated a GitHub Action for you. The GitHub Action listens for commits and pull requests to your repository's **master** branch. Then when the GitHub Action detects these changes, it builds and publishes your app.
+When you created the Azure Static Web Apps instance, it generated a GitHub Action for you. The GitHub Action listens for commits and pull requests to your repository's **master** branch. Then when the GitHub Action detects these changes, it builds and publishes your app.
 
 You may remember when you created the Azure Static Web Apps resource that you provided the folder location for your API. You provided the default value of _api_. However, since you didn't have an API in the _api_ folder at that time, Azure Static Web Apps didn't attempt to publish an API.
 
