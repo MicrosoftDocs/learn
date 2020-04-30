@@ -17,28 +17,28 @@ In this exercise, you will:
 
 Helm is an application package manager for Kubernetes. It offers a way to easily deploy applications and services using charts. 
 
-The Helm client is already installed in the Azure Cloud Shell and can be run with the `helm` command. Helm provides a standard repository of charts for many different software packages. Helm has a chart for MongoDB that is part of the official Helm *stable* charts repository.
+The Helm client is already installed in the Azure Cloud Shell and can be run with the `helm` command. Helm provides a standard repository of charts for many different software packages. Helm has a chart for MongoDB that is part of the official Helm *bitnami* charts repository.
 
 1. Configure the Helm client to use the stable repository by running the `helm repo add` command below.
 
     ```bash
-    helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+    helm repo add bitnami https://charts.bitnami.com/bitnami
     ```
 
 1. You can now list the charts to install by running the `helm search repo` command. Notice how you can list all charts from the stable channel in the command below.
 
     ```bash
-    helm search repo stable
+    helm search repo bitnami
     ```
 
     You'll see a list of the available charts, like this example.
 
     ```output
     NAME                           CHART VERSION   APP VERSION   DESCRIPTION
-    stable/acs-engine-autoscaler   2.2.2           2.1.1         DEPRECATED Scales worker nodes within agent pools
-    stable/aerospike               0.2.8           v4.5.0.5      A Helm chart for Aerospike in Kubernetes
-    stable/airflow                 4.1.0           1.10.4        Airflow is a platform to programmatically autho...
-    stable/ambassador              4.1.0           0.81.0        A Helm chart for Datawire Ambassador
+    bitnami/bitnami-common                  0.0.8           0.0.8                   Chart with custom templates used in Bitnami cha...
+    bitnami/airflow                         6.1.8           1.10.10                 Apache Airflow is a platform to programmaticall...
+    bitnami/apache                          7.3.15          2.4.43                  Chart for Apache HTTP Server
+    bitnami/cassandra                       5.3.3           3.11.6                  Apache Cassandra is a free and open-source dist...
     ...
     ```
 
@@ -55,7 +55,7 @@ You're now ready to install the MonogoDB instance. Recall from earlier, that you
     Keep in mind that the MongoDB connection string is a URI. You have to escape special characters using a standard URI escape mechanism when choosing special characters in the username or password.
 
     ```bash
-    helm install ratings stable/mongodb \
+    helm install ratings bitnami/mongodb \
         --namespace ratingsapp \
         --set mongodbUsername=<username>,mongodbPassword=<password>,mongodbDatabase=ratingsdb
     ```
@@ -66,7 +66,7 @@ You're now ready to install the MonogoDB instance. Recall from earlier, that you
 
     ```output
     NAME: ratings
-    LAST DEPLOYED: Mon Dec 30 23:00:47 2019
+    LAST DEPLOYED: Thu Apr 30 14:15:58 2020
     NAMESPACE: ratingsapp
     STATUS: deployed
     REVISION: 1
@@ -75,8 +75,24 @@ You're now ready to install the MonogoDB instance. Recall from earlier, that you
     ** Please be patient while the chart is being deployed **
 
     MongoDB can be accessed via port 27017 on the following DNS name from within your cluster:
+    ratings-mongodb.ratingsapp
 
-        ratings-mongodb.ratingsapp.svc.cluster.local
+    To get the root password run:
+
+    export MONGODB_ROOT_PASSWORD=$(kubectl get secret --namespace ratingsapp ratings-mongodb -o jsonpath="{.data.mongodb-root-password}" |  base64 --decode)
+
+    To get the password for "chris" run:
+
+    export MONGODB_PASSWORD=$(kubectl get secret --namespace ratingsapp ratings-mongodb -o jsonpath="{.data.mongodb-password}" | base64 --decode)
+
+    To connect to your database run the following command:
+
+    kubectl run --namespace ratingsapp ratings-mongodb-client --rm --tty -i --restart='Never' --image docker.io/bitnami/mongodb:4.2.6-debian-10-r13 --command -- mongo admin --host ratings-mongodb --authenticationDatabase admin -u root -p $MONGODB_ROOT_PASSWORD
+
+    To connect to your database from outside the cluster execute the following commands:
+
+    kubectl port-forward --namespace ratingsapp svc/ratings-mongodb 27017:27017 &
+    mongo --host 127.0.0.1 --authenticationDatabase admin -p $MONGODB_ROOT_PASSWORD
     ```
 
     Keep in mind that you can easily remove a Helm release by running the `helm uninstall` command. The full command is `helm uninstall ratings --namespace ratingsapp`. In this exercise, uninstalling a chart should only be necessary if you made a mistake specifying a non-escaped username or password.
@@ -87,14 +103,14 @@ In the previous step, you installed MongoDB using Helm, with a specified usernam
 
 Kubernetes has a concept of secrets. Secrets let you store and manage sensitive information, such as passwords. Putting this information in a secret is safer and more flexible than hard coding it in a pod definition or a container image.
 
- The ratings API expects to find the connection details to the MongoDB database in the form of `mongodb://<username>:<password>@<endpoint>:27017/ratingsdb`. Replace `<username>`, `<password>`, and `<endpoint>` with the ones you used when you created the database, for example, `mongodb://ratingsuser:ratingspassword@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb`.
+ The ratings API expects to find the connection details to the MongoDB database in the form of `mongodb://<username>:<password>@<endpoint>:27017/ratingsdb`. Replace `<username>`, `<password>`, and `<endpoint>` with the ones you used when you created the database, for example, `mongodb://ratingsuser:ratingspassword@ratings-mongodb.ratingsapp:27017/ratingsdb`.
 
  1. Use the `kubectl create secret generic` command to create a secret called `mongosecret` in the `ratingsapp` namespace. A Kubernetes secret can hold several items and is indexed by a key. In this case, the secret contains only one key, called `MONGOCONNECTION`. The value is the constructed connection string from the previous step. Replace `<username>` and `<password>` with the ones you used when you created the database.
 
     ```bash
     kubectl create secret generic mongosecret \
         --namespace ratingsapp \
-        --from-literal=MONGOCONNECTION="mongodb://<username>:<password>@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb"
+        --from-literal=MONGOCONNECTION="mongodb://<username>:<password>@ratings-mongodb.ratingsapp:27017/ratingsdb"
     ```
 
 1. Run the `kubectl describe secret` command to validate that the secret.

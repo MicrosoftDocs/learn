@@ -108,7 +108,7 @@ You can change the URL, or "route", that Azure Functions listens on for a specif
 }
 ```
 
-Specifying a route changes everything after the "api" section of the URL. In the above configuration file, the route to the "GetProducts" function is now "http://localhost:7071/api/products".
+Specifying a route changes everything after the "api" section of the URL. In the above configuration file, the route to the "GetProducts" function is now `http://localhost:7071/api/products`.
 
 You can pass parameters along with a route. Parameters take the form of "{parameterName}". This means that to pass a parameter called "id" to the "product" endpoint, you would specify the following route...
 

@@ -6,8 +6,7 @@ A Modern Data Warehouse is a centralized data store that provides analytics and 
 
 SQL Analytics stores data in relational tables with columnar storage. This format significantly reduces the data storage costs, and improves query performance. Once data is stored, you can run analytics at massive scale. Compared to traditional database systems, analysis queries finish in seconds instead of minutes, or hours instead of days.
 
-> **TIP**
->
+> [!TIP]
 > A data warehouse is useful to reduce stress on production systems and to reorganize, index, or filter multiple data sources into a single storage area. To accomplish this goal, deliberate thought and design needs to be put into how you organize and structure the data. It's not a dumping ground for tables from various sources without any design put into it.
 
 ## Advanced Analytical Workloads
