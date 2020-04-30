@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.numpy-data-science.1-introduction
+title: Introduction to NumPy for data science
+metadata:
+  title: Introduction to NumPy for data science
+  description: Introduction to working with data by using the NumPy library for data science.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]
