@@ -1,6 +1,6 @@
 In this unit, we code our app. In stages, to make it a little more understandable.
 
-1. Using a tool like Visual Studio Code, create a new HTML file, and paste in the following code. This is a pretty standard base for an Azure Maps HTML page.
+1. Using a tool like Visual Studio Code, create a new HTML file, and paste in the following code. The layout is a standard base for an Azure Maps HTML page.
 
     ```javascript
         <!DOCTYPE html>
@@ -19,7 +19,7 @@ In this unit, we code our app. In stages, to make it a little more understandabl
                 <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas-service.min.js"></script>
             
     
-                    ADD JAVASCRIPT CODE IN HERE
+                    ADD JavaScript CODE IN HERE
     
     
                     ADD HTML STYLE CODE IN HERE
@@ -33,9 +33,9 @@ In this unit, we code our app. In stages, to make it a little more understandabl
         </html>
     ```
 
-1. Let's start with the ADD HTML STYLE CODE HERE. We are adding styles to be able to construct the app banner:
+1. Let's start with the ADD HTML STYLE CODE HERE. We're adding styles to construct the app banner:
 
-![Screenshot showing the html banner for our Azure Maps app](../media/azure-maps-banner.png)
+[![Screenshot showing the html banner for our Azure Maps app](../media/azure-maps-banner.png)](../media/azure-maps-banner.png#lightbox)
 
 1. Copy the next section, and replace the ADD HTML STYLE CODE with it.
 
@@ -196,7 +196,7 @@ In this unit, we code our app. In stages, to make it a little more understandabl
         </body>
     ```
 
-1. Finally, the section that does the heavy lifting. Replace ADD JAVASCRIPT CODE IN HERE with the following code:
+1. Finally, the section that does the heavy lifting. Replace ADD JavaScript CODE IN HERE with the following code:
 
     ```javascript
             <script>

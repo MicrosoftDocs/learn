@@ -8,6 +8,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create your Azure Maps account
+azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-your-azure-maps-account.md)]

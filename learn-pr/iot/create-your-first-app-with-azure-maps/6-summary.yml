@@ -25,7 +25,7 @@ quiz:
       explanation: This cargo is USHazmatClass3.
     - content: 'Explosives'
       isCorrect: true
-      explanation: Yes, this classification tops the list of hazardous cargoes.
+      explanation: Yes, this classification tops the list of hazardous cargo.
 
   - content: 'What is the default order of layers in Azure Maps, from the lowest up?'
     choices: 
@@ -38,5 +38,29 @@ quiz:
     - content: 'base, transit, flow, labels'
       isCorrect: false
       explanation: Flow takes priority over labels.
+      
+  - content: 'In Azure IoT, a sister product to Azure Maps, what are temperature, velocity, lat/lon values transmitted from devices known as?'
+    choices: 
+    - content: 'telemetry'
+      isCorrect: true
+      explanation: The most common telemetry values are - xxxx
+    - content: 'streaming data'
+      isCorrect: false
+      explanation: Close, but there is a more specific term.
+    - content: 'layers'
+      isCorrect: false
+      explanation: No, layers apply only to map construction.
+
+  - content: 'The Primary Key, that you extract from your Azure Maps account, is required for what purpose?'
+    choices: 
+    - content: 'The Primary Key is used to verify that you have access to Azure resources.'
+      isCorrect: false
+      explanation: No, separate keys are required for each rYou cannot, for example, use an Azure Maps key to access an Azure IoT resource.
+    - content: 'The Primary Key is used by Azure Map, to verify that the app making the requests of the resource is from a legit subscription.'
+      isCorrect: true
+      explanation: Either the Primary Key, or the Secondary Key, works for this purpose.    
+    - content: 'The Primary Key is used to verify that your subscription has been paid up to date.'
+      isCorrect: false
+      explanation: No, Azure resources are free in this module.
 
   
