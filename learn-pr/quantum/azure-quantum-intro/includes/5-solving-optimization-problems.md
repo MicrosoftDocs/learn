@@ -36,7 +36,7 @@ Initially we begin with the quantum state in a broad [superposition](https://en.
 Instead of varying the temperature, as we did in simulated annealing, we vary a parameter called the "quantum field strength".
 
 What this parameter defines is the radius of neighboring states that we could move to, as time goes on, this radius becomes smaller and smaller, as we hone in on a solution.
-By the end of the anneal, the system has settled into one particular configuration of low energy which can then be measured, thus yielding a (not necessarily optimal) solution to the desired optimization problem.
+By the end of the anneal, the system has settled into one particular configuration of low energy which can then be measured, thus yielding a solution to the desired optimization problem.
 The most mathematically clean formulation of quantum annealing is called adiabatic quantum optimization, and is what quantum inspired methods attempt to emulate.
 
 ## Example: Contoso Logistics freight optimization
