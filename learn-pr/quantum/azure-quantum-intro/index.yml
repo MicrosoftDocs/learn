@@ -28,7 +28,8 @@ units:
 - learn.quantum.azure-quantum-intro.1-introduction
 - learn.quantum.azure-quantum-intro.2-what-is-azure-quantum
 - learn.quantum.azure-quantum-intro.3-quantum-inspired-optimization
-- learn.quantum.azure-quantum-intro.4-quantum-execution
-- learn.quantum.azure-quantum-intro.5-summary
+- learn.quantum.azure-quantum-intro.4-understanding-optimization-problems
+- learn.quantum.azure-quantum-intro.5-solving-optimization-problems
+- learn.quantum.azure-quantum-intro.6-summary
 badge:
   uid: learn.quantum.azure-quantum-intro.badge

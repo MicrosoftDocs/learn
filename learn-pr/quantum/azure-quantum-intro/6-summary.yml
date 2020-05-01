@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.azure-quantum-intro.4-quantum-execution
-title: TBD - Quantum execution
+uid: learn.quantum.azure-quantum-intro.5-summary
+title: Summary
 metadata:
-  title: TBD - Quantum execution
+  title: Summary
   description: TBD.
   ms.date: 05/19/2020
   author: KittyYeungQ
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-quantum-execution.md)]
+  [!include[](includes/5-summary.md)]

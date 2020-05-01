@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.azure-quantum-intro.4-quantum-execution
+title: TBD - Quantum execution
+metadata:
+  title: TBD - Quantum execution
+  description: TBD.
+  ms.date: 05/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-understanding-optimization-problems.md)]
