@@ -57,7 +57,6 @@ quiz:
         - content: "Configure a wildcard route in the GitHub Actions workflow file to serve **/index.html**."
           isCorrect: false
           explanation: "Incorrect. Routing rules must be defined in the _routes.json_ file."
-  questions:
     - content: "How do tell Azure Static Web Apps that you changed where your API is located?"
       choices:
         - content: "In the package.json file."
@@ -72,5 +71,3 @@ quiz:
         - content: "In the GitHub Actions workflow file in your _.github/workflows_ folder."
           isCorrect: true
           explanation: "Correct. You can configure the locations for your app code, app artifact, and API in the GitHub Actions workflow file. This file is located in your _.github/workflows_ folder."
-
-
