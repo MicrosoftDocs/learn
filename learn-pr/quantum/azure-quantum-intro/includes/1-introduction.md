@@ -1,14 +1,13 @@
-Azure Quantum is a cloud service that allows you to run Quantum Programs and solve Quantum-Inspired Optimization (QIO) problems in the cloud. Azure Quantum takes these jobs and schedules them with the desired provider for execution. Using our SDKs and tools you can easily run a job against multiple providers and targets to find the one that will work best for your scenario.
-
-In this module, you'll learn what Azure Quantum is and how it can be used to solve your quantum computing or quantum-inspired projects at scale.
+Azure Quantum is a cloud service that extends the scalability, security and reliability of Azure into the quantum computing world, providing access to a diverse set of quantum services, ranging from pre-built solutions to software and quantum hardware. 
+Built on the Microsoft Azure cloud platform, Azure Quantum enables you to begin exploring and building applications today.
 
 ## Learning objectives
 
 In this module you will:
-
-- Understand the types of problems Azure Quantum service can help you solve
-- Learn about the software and hardware systems you can use through Azure Quantum
-- Learn about quantum-inspired optimization
+- Learn about the services and tools available through Azure Quantum
+- Discover the process of creating a workspace in the Azure Quantum portal
+- Learn how quantum programs can be executed in the cloud
+- Learn about optimization and evaluate situations where quantum-inspired solutions can have impact
 
 ## Prerequisites
 
@@ -24,9 +23,8 @@ When these ships are docked at port, Contoso Logistics needs to distribute conta
 If they make one ship significantly heavier than the other then it will move slower and consume more fuel - delaying shipments and costing a significant amount of money! If you were managing the distribution containers for Contoso, how would you optimize the weights?
 To make things harder, the weights of individual containers can vary greatly so it's not easy to divide them.
 
-This problem is known as a number partitioning problem and is [NP-complete](https://en.wikipedia.org/wiki/NP-completeness) using brute force search algorithms. 
-It is however relatively straightforward to apply Quantum Inspired Optimization (QIO) to it to generate a good solution.
-QIO is supported via the Azure Quantum cloud service. In this module, we'll explore how to apply QIO.
+This problem is known as a number partitioning problem and we can use quantum inspired optimization (QIO) to generate a good solution.
+In this module, we'll explore how to apply QIO via the Azure Quantum cloud service.
 
 ## What you will do in this module
 

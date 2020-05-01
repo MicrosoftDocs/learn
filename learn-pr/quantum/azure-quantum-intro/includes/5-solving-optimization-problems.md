@@ -1,6 +1,6 @@
 # Solving optimization problems
-
-In this unit, we will explain the general idea of simulated annealing and quantum annealing, as the solvers in Azure Quantum use variations of these techniques. Quantum-inspired optimization is a subset of quantum annealing methods. Then we will apply the techniques to the ship loading problem. 
+In this unit, we will explain the general idea of simulated annealing and quantum annealing, as the solvers in Azure Quantum use variations of these techniques. 
+Then we will see how to apply these techinques in order to solve an optimization problem.
 
 ## Simulated annealing
 For optimization problems in search spaces that are too large to solve by exhaustive search and objective functions that are rugged but structured, one of the most successful and commonly used heuristics is simulated annealing.
@@ -31,6 +31,7 @@ In quantum annealing, we instead make use of a quantum effect called "quantum tu
 ### How does quantum annealing work?
 
 We frame our problem by giving assigments to qubits, which are our variables. The energy of a given assignment to the qubits is the value of the objective function.
+
 Initially we begin with the quantum state in a broad [superposition](https://en.wikipedia.org/wiki/Quantum_superposition) over many possible assignments to the qubits.
 Instead of varying the temperature, as we did in simulated annealing, we vary a parameter called the "quantum field strength".
 
@@ -64,11 +65,12 @@ Ideally, we'd like a solution where the weight difference between the ships is a
 If the value of *H* is zero, we know the ships are equally loaded.
 
 Next, we'll introduce a variable, *x<sub>i</sub>*, to represent whether an individual container *i* is assigned to ship *a* or ship *b*. 
+
 Because we can assign the container *i* to either ship, the variable *x<sub>i</sub>* can take on two different values, which makes it a binary variable. 
 For convenience, we'll say the two values it can take on are *1* and *-1*. 
 *1* will represent that the container is placed on ship *a*, and *-1* will represent that the container is placed on ship *b*.
 
-- **Ising problem**: Because of our choice to make *i* be either *1* or *-1* this type of problem is called an , inspired by the [Ising model](https://en.wikipedia.org/wiki/Ising_model) in physics.
+- **Ising problem**: Because of our choice to make *i* be either *1* or *-1* this type of problem is called an Ising problem, inspired by the [Ising model](https://en.wikipedia.org/wiki/Ising_model) in physics.
 
 By introducing this variable *x<sub>i</sub>* to the previous equation, it can be simplified to:
 
@@ -88,6 +90,7 @@ This is somewhat arbitrary, but it yields a cost function with the right propert
 - In this case, we don't care about the actual value of *H*, just that it's as small as possible.
 
 Now let's take a look at a video which makes use of the Azure Quantum Simulated Annealing solver to assign the containers to the ships.
+
 You'll see the algorithm exploring a number of different configurations, as it attempts to minimize the cost function that we defined above.
 
 > [!VIDEO https://www.microsoft.com/...] 

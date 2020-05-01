@@ -30,6 +30,4 @@ Applying QIO to real-world problems might offer businesses' new insights, or hel
 2. For a fixed problem and fixed amount of time, finding a higher quality solution.
 3. By extending the problem to consider more variables, finding a solution to a more realistic model.
 
-The ship loading problem at Contoso Logistics will be a good candidate for QIO. Becasue ...
-
 In the next unit, you will have an overview of optimization problems and the methodology for solving them, that will help with understanding QIO. 

@@ -4,7 +4,6 @@ Congratulations! You have completed the overview of Azure Quantum. In this modul
 - the software and hardware systems you can use through Azure Quantum
 - quantum-inspired optimization supported by Azure Quantum via its solvers
 
-
 # Learn more
 
 Azure Quantum is currently under private preview. You can request early access to Azure Quantum by filling out a form on the [Microsoft Azure website](https://azure.microsoft.com/en-us/services/quantum/#contact). Stay tuned for information about the public release.

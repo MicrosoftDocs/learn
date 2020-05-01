@@ -1,12 +1,10 @@
 ## Understanding optimization problems
-
-In this unit, we should recap what optimization problems are in general, before we dive into QIO. 
+Before we dive into QIO, let's recap what optimization problems are in general. 
 
 Let's begin with some common terminology:
-- **Search space**: This is the space of all the feasible solutions to the optimization problem. Each point in this search space is a valid solution to the problem. However, typically we are looking for the lowest point, or lowest cost solution.
+- **Search space**: This is the space of all the feasible solutions to the optimization problem. Each point in this search space is a valid solution to the problem, however typically we are looking for the lowest point, or lowest cost solution.
 - **Objective function**: This is a mathematical description, which, when evaluated, tells you the cost of that solution.
 - **Cost function**: This is an objective function that we specifically wish to minimize.
-
 For Contoso Logistics, the cost function would be the weight difference between the two ships, which we try to minimize.
 
 Together, the search space and the objective function are often referred to as an optimization landscape. 
