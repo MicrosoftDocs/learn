@@ -3,10 +3,10 @@ Built on the Microsoft Azure cloud platform, Azure Quantum enables you to begin 
 
 ## Learning objectives
 
-In this module you will learn:
+In this module you will:
 
-- Understand the services and tools available through Azure Quantum
-- Understand the process of creating a workspace in the Azure Quantum portal
+- Learn about the services and tools available through Azure Quantum
+- Discover the process of creating a workspace in the Azure Quantum portal
 - Learn about optimization and evaluate situations where quantum-inspired solutions can have impact
 
 ## Prerequisites
