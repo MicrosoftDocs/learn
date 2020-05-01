@@ -34,7 +34,7 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
 
 1. Click on **Authentication**, in the left menu.
 
-1. Youwon'tice some strings, including the **Primary Key**, are displayed. Use the icon to the far right of the string to copy the key to the clipboard.
+1. You will notice some strings, including the **Primary Key**, are displayed. Use the icon to the far right of the string to copy the key to the clipboard.
 
     [![Screenshot showing the authentication keys](../media/azure-maps-create-account-3.png)](../media/azure-maps-create-account-3.png#lightbox)
 

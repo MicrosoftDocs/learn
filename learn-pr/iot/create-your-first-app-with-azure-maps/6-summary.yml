@@ -39,6 +39,24 @@ quiz:
       isCorrect: false
       explanation: Flow takes priority over labels.
       
+  - content: 'The sample app adds layers to the top of the layer stack. Which layers?'
+    choices: 
+    - content: 'The statement is false, no layers are added.'
+      isCorrect: false
+      explanation: Layers are added.
+    - content: 'One layer, containing the routes, and city point data.'
+      isCorrect: false
+      explanation: More than one layer is added.     
+    - content: 'Two layers. One for route lines, the other to display point data.'
+      isCorrect: true
+      explanation: The routes for the car, truck, and bicycle are on one layer, the city names and icons on the other layer.
+    - content: 'Three layers. One layer for each of the car, truck, and bicycle.'
+      isCorrect: false
+      explanation: Less than three layers are added.
+    - content: 'Four layers are added. One for each of the car, truck, and bicycle. And one layer for city point data.'
+      isCorrect: false
+      explanation: Less than four layers are added.
+
   - content: 'In Azure IoT, a sister product to Azure Maps, what are temperature, velocity, lat/lon values transmitted from devices known as?'
     choices: 
     - content: 'telemetry'
@@ -62,5 +80,17 @@ quiz:
     - content: 'The Primary Key is used to verify that your subscription has been paid up to date.'
       isCorrect: false
       explanation: No, Azure resources are free in this module.
+
+  - content: 'Which component is used to adjust the view of the map, so that the start and end points are clearly visible?'
+    choices: 
+    - content: 'camera'
+      isCorrect: true
+      explanation: A bounding box is calculated based on the start and end points.
+    - content: 'coordinates'
+      isCorrect: false
+      explanation: Coordinates are used to send the start, end, and all intermediary points to the route finding service.
+    - content: 'layers'
+      isCorrect: false
+      explanation: No, layers apply only to map construction.
 
   

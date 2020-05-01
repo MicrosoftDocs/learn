@@ -51,6 +51,6 @@ To finish.
 3. badge
 4. sandbox - update image
 5. test with sandbox
-6. quiz
+6. quiz - done
 7. read and edit
 
