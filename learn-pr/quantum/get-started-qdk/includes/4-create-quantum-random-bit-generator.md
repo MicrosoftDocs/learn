@@ -198,5 +198,5 @@ dotnet run --no-build
 Pressing enter you should obtain the result of your measurement, either `Zero`
 or `One` and therefore your quantum bit. 
 
-In the next unit we are going to explore how we can create a complete random
+In the next unit you are going to explore how to create a complete random
 number generator using the classical logic of Q#.
