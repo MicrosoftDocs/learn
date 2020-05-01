@@ -133,7 +133,60 @@ Here is how our conversation with attachment look like in the emulator:
 >[!NOTE]
 >The code for the application at this point is available [in this github repository][GitFlag]
 
+# Supporting Language Diversity
 
+We have learned in the first unit that the ideal responsible bot should support **diversity**. Diversity can come in many flavors:
+
+ * **Different styles of conversation** are suitable for different people, and for different moods
+   - We can switch between styles using different sets of output messages
+   - We can try to detect the appropriate style from the emotional sentiment of user's utterances. [Text analytics][TextAnalytics] cognitive service can be used for detecting sentiment.
+   - If we implement chit-chat functionality, we can use [Project Personality Chat][PersonalityChat]
+ * Using **different languages** for a conversation is also a possibility, however, implementing it requires more efforts. Switching output language may be as simple as selecting different sets of output messages, but implementing language understanding properly would require separate LUIS models.
+
+However, it is also possible to provide support for many languages by utilizing **automatic translation** via [Translator API][TranslatorAPI]. This API would offer both automatic [language detection][LangDetection] of user's input message, as well as [translation][Translation] of output messages to the desired language.
+
+To incorporate translation into our bot, we can use the concept of [Bot Framework Middleware][Middleware]. Middleware is a component that can be added to pre- and post-process all messages to and from the user during message processing pipeline. Thus middleware can do the following:
+
+ - detect the language of the incoming message
+ - translate it into English
+ - perform all standard processing steps (including LUIS/QnA Maker trained on English phrases
+ - translate the result back into user's language
+
+In more complex scenarios we can include some language switching logic, which will confirm user's language, and then use it for the duration of the session.
+
+>[!NOTE]
+> An example of using translation middleware can be found [here][BotTranslateSample].
+
+# Adding Dialog Interactions
+
+So far, all interactions with our bot have been based on request-response pattern, and the bot did not have to track the context of the conversation. However, there are scenarios when interaction with the user involves several consecutive steps, for example:
+
+ - Filling a form with several fields
+ - Confirming some action
+ - Chosing exact items in the menu
+
+For example, in our bot we have defined a phrase to play a quiz game to test student's knowledge of capitals. This game should probably switch the bot into a different mode, when it randomly selects a country, and expects user to type back it's capital (or vice versa). When the user gets tired, he/she can type "end", and receive his/her score.
+
+To implement this functionality, Bot Framework provides the concept of [Dialogs][BotDialogs]. A dialog defines a separate branch of conversation, such as our "capital quiz". Once the user enters the dialog, conversation would be handled by a different programming logic, until dialog ends (or until another dialog is initiated). Using this concept, a user can decompose complex conversation logic into simpler modular parts, and then combine them together into a complex conversation flow.
+
+>[!NOTE]
+>Implementing dialogs is out of scope of this module. You can see dialog implementation in [this sample][BotDialogsSample], and read [more documentation on the subject][BotDialogs].
+
+Another feature that could be implemented using dialogs is collecting feedback. One of the principles of responsible conversational UI is to give an opportunity to the user to provide feedback on bot's work. We can detect "end-of-conversation" phrases using LUIS, and as a response initiate a separate "good bye" dialog, which will collect multi-step feedback from the user and store it into the database for further processing.
+
+>[!IMPORTANT]
+>A good responsible bot should give user an opportunity to provide feedback!
+
+# Supporting Speech
+
+As we know, bots should welcome diversity, and thus ideally they should support users who are not able to communicate via text, be that visually impaired users, or those who cannot type because their hands are busy. Luckily, support for speech interface can be added to the bot through [Speech API][SpeechAPI]. Bot Framework supports embedding speech data into messages in the form of **Simple Speech Markup Language** (SSML), so we just need to tweak our bot code to include this data as described [here][AddSpeech]. We also need a speech support from conversation client, and Web Chat control can integrate with Microsoft Speech API to support both text-to-speech and speech-to-text.
+
+>[!NOTE]
+>To support more communication channels, you can also receive speech as an attachment, and then convert it to text on the server side through [Speech API][SpeechAPI].
+
+# Conclusion
+
+We have discussed many ways in which our bot could be improved. And even though we did not discuss implementing all that functionality in detail, I hope that you are now confident that Bot Framework provides all necessary means to build responsible bot UI.
 
 
 [QnAPortal]: https://qnamaker.ai
@@ -143,3 +196,14 @@ Here is how our conversation with attachment look like in the emulator:
 [WikiFlags]: https://en.wikipedia.org/wiki/National_flag
 [CountryFlagsFile]: http://github.com/#TODO
 [GitFlag]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t4.0-flags
+[TextAnalytics]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/
+[PersonalityChat]: https://aischool.microsoft.com/conversational/learning-paths/advanced-conversational-ai/ttmb-implementing-project-personality-chat
+[TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/
+[LangDetection]: https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-detect?pivots=programming-language-csharp
+[Translation]: https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translate?pivots=programming-language-csharp
+[MiddleWare]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0
+[BotTranslateSample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/17.multilingual-bot
+[BotDialogs]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0
+[BotDialogsSample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/19.custom-dialogs
+[SpeechAPI]: https://docs.microsoft.com/azure/cognitive-services/speech-service/
+[AddSpeech]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-text-to-speech?view=azure-bot-service-4.0

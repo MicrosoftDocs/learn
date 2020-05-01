@@ -17,7 +17,7 @@ The goal of our **GeoFriend** bot would be to help student study geography, and 
 * Being able to give capital cities given a country name
 * Giving country name given a capital city
 * Give a population of a city / country
-* Play a capital game that will test how well you know the capitals
+* Displaying some help on bot's usage
 
 For simplicity, we will limit ourselves to those cases, but ideally the bot should include more intents, and support more learning cases.
 
@@ -38,7 +38,7 @@ To train the LUIS Model, we should give it a number of sample phrases for each i
 To set up LUIS service, let's go to the [LUIS Portal](http://luis.ai). 
 
 >[!NOTE]
-> We are using preview version of LUIS portal located at http://preview.luis.ai. 
+> In this course, we are using preview version of LUIS portal located at http://preview.luis.ai. 
 
 At first sign in, you will be asked to specify your country and accept terms of use:
 
@@ -69,6 +69,9 @@ Make sure your **subscription** and **Authoring resource** are selected. If you 
 In case your LUIS training resource is not visible, you can go to Azure portal to make sure it has been created. You can also create it manually from the Azure Portal.
 
 Select **New app for conversation**, and specify an application name and description. I will use `GeoFriend` as an application name.
+
+>[!NOTE]
+>If you do not want to train the model "by hand" by providing sample phrases, you can train it from the saved data file. In this case, you should chose to create the model from file, and use [this file][LUISCodeFile] from the GitHub repository.
 
 After skipping through some information screens, you will end up at the main application dashboard:
 
@@ -111,6 +114,9 @@ To use the LUIS model from our bot, first we need to publish the model. Click on
 > Right now the model is deployed on some starter resources, and to deploy it in production you should **Add prediction resource**. Once you do that, you will have another set of prediction keys / endpoint URL that you can freely control through your subscription.
 
 Now we need to add LUIS model to our bot code. Open our Visual Studio project we have been working on in last unit.
+
+>[!TIP]
+>The code that I describe below is available [here on GitHub][CodeLUIS]. If you decide the take code from there, you would still need to make changes to the `appsetting.json` file to provide your keys for the LUIS service.
 
 First thing you need to do is to add `Microsoft.Bot.Builder.AI.Luis` nuget package:
 - Right-click on the project **EchoBot**
@@ -191,7 +197,7 @@ All intent processing happens inside `ProcessLuisResults` function (parts of the
 ```csharp
 protected async Task ProcessLuisResult(ITurnContext<IMessageActivity> turnContext, string intent, JObject entities)
 {
-    if (intent=="play_game")
+    if (intent=="hel")
     {
         await turnContext.SendActivityAsync("This feature is not yet implemented");
         return;
@@ -240,3 +246,4 @@ Now the bot seems to be much more intelligent, but it ignores some of the respon
 [LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/
 [LUISPortal]: http://preview.luis.ai
 [CodeLuis]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t2-luisrec
+[LUISCodeFile]: https://github.com/MicrosoftDocs/learn-responsible-bots/blob/master/models/GeoFriend.json

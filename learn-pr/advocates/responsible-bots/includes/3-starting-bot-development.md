@@ -5,15 +5,15 @@ In the last unit, we have created an echo bot from template, which echos back an
 Open the bot page on Azure Portal:
 ![Azure Portal Bot Page](../media/AzPortalBotPage.png)
 
-The bot creation timeline on the right shows, that we are at the **Build** stage. It suggest that you should go to **Build Blade** to download the source code for the bot. Go ahead and click on **Build blade** link:
+The bot creation timeline on the right shows, that we are at the **Build** stage. It suggests that you should go to **Build Blade** to download the source code for the bot. Go ahead and click on **Build blade** link:
 ![Bot Build Blade](../media/AzPortalBotCodeBlade.png)
 
 From here, you have two main options:
 
 * Use full-fledged **Visual Studio 2019** to do your code development. In this case, you need to **Download the source code** of the bot to local directory, and then use it to develop the bot on a local computer. This is the preferred option, because you will have the power of Visual Studio, including **autocomplete**, and the whole development would be much easier. However, you need to have Visual Studio installed on your machine.
-* Use **Visual Studio Online** right from the browser - in this case you need to click small **Open online code editor** link. This is especially useful if you want to make some small changes to your bot.
+* Use **Online Editor** right from the browser - in this case you need to click small **Open online code editor** link. This is especially useful if you want to make some small changes to your bot.
 
-# Exploring Bot's Code
+# Exploring Bot's Code in Online Editor
 
 Let's first explore the online editor option. Click on the **open online code editor** link to bring up the web app code editor:
 ![Web App Code Editor](../media/VSOnline.png)
@@ -59,7 +59,18 @@ You should see that the bot greets you in response to your name.
 
 # Using Visual Studio
 
-To make more serious changes to the bot, it would be easier to use Visual Studio IDE. To do that:
+To make more serious changes to the bot, it would be easier to use Visual Studio IDE. While this requires you to have Visual Studio installed on your machine, it offers several advantages:
+
+* You have very flexible editor with autocomplete, and a lot of useful features
+* You can easily start and debug the code locally on your machine, which is faster than doing rebuild process in the cloud. Once you are happy with the bot - you do the final deployment.
+
+>[!TIP]
+> If you are going to do any serious development - you should definitely [install Visual Studio][InstallVS]!
+
+>[!NOTE]
+>You can still follow the course without Visual Studio Installation, by using Online Editor described above. In this case you would have to adjust the instructions a little bit, and use **web chat** to test the bot instead of the emulator. You would also have to execute **build** script after changes to the code. 
+
+To start working with the bot code in Visual Studio, do the following:
 
 * From the **Build** blade on the bot's portal page, select **Download Bot's Source Code**.
 * Answer **Yes** to the following question, indicating that you want to include `appSetting.json` file into the project. This file contains some sensitive keys that are used to communicate with Bot application, so you should not distribute this file to third parties when creating production bots.
@@ -71,6 +82,9 @@ To make more serious changes to the bot, it would be easier to use Visual Studio
 # Creating Capital Dictionary
 
 Let's try to make our bot do something useful. Consider the problem of learning country's capital cities. Our first exercise would be to turn our bot into "capital dictionary", which will return the capital of any given country.
+
+>[!TIP]
+>During this course, I will describe a series of steps that add some functionality to the bot, and provides pieces of code. The best way to learn would be to try and develop the bot yourself alongside those instructions. However, the code for the bot at different stages is available [in this GitHub Repository][GithubSample], and you can always grab the complete code from there. The only thing you would need to do is copy `appsettings.json` file from your project into the root directory.
 
 If we look at the [list of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals) on Wikipedia, we will immediately realize that we are facing an important **fairness** and **data complexity** problem. Some countries (like Switzerland) might not have a *de juro* capital at all, while for other countries (like Israel) the capital is not officially recognized.
 
@@ -162,7 +176,7 @@ Now, to implement the bot logic, we need to go to `Bots\EchoBot.cs` file and cha
 ```
 
 >[!TIP]
-> If you are not sure that you have made all changes correctly, you can find the complete version of the bot code [on GitHub][GitHubSample]. To make it work with the bot you have recently created, you need to place `appsettings.json` file from your bot into the root of the GitHub project.
+> If you are not sure that you have made all changes correctly, you can find the complete version of the bot code [on GitHub][GitHubSampleStage1]. To make it work with the bot you have recently created, you need to place `appsettings.json` file from your bot into the root of the GitHub project.
 
 # Testing the Bot locally
 
@@ -197,7 +211,9 @@ After the deployment, you can switch to your bot page on the Azure Portal, and t
 
 # Conclusion
 
-In this unit, we have developed our bot into a useful tool. However, it does not follow any responsible conversational UI principles, and in fact it is completely unusable without specific instructions. In the next unit, we will make this bot understand human language, and apply some responsible AI principles.
+In this unit, we have developed our bot into a useful tool. However, it does not follow any responsible conversational UI principles, and in fact it is completely unusable without specific instructions. In the next units, we will make this bot understand human language, and apply some responsible AI principles.
 
 [BotEmulator]: https://aka.ms/abs/build/emulatordownload
-[GitHubSample]: http://github.com/
+[GitHubSample]: https://github.com/MicrosoftDocs/learn-responsible-bots
+[GitHubSampleStage1]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t1-capdict
+[InstallVS]: https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2019

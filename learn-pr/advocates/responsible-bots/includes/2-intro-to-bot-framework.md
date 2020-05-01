@@ -1,5 +1,7 @@
 # Microsoft Bot Framework and Microsoft Bot Service
 
+Before we start building out **GeoFriend** bot, let's learn the main principles of bot operation.
+
 Any conversational experience involves a user sending some messages to a bot, and the bot responding to the the user. Those conversations can happen in different **channels**: in a chat bot on a web site, or in some messenger application such as Facebook Messenger or Telegram. Those **messaging platforms** have their own principles and APIs for creating chat bots, thus developing a bot for Facebook would require different skills than creating a web chat.
 
 Microsoft unifies this process using **[Bot Framework][BotFW]**, a set of core libraries that standardize bot development. Using this framework, we develop a bot as **Web API**, which is essentially a function that we call over the internet. We give it the user input, and it figures out the desired output of the bot.
@@ -14,7 +16,7 @@ Another important role of Bot Framework is to provide some useful developer abst
 
 To make bots intelligent, we often want to use some AI techniques. For example, figuring out what user wants without the need to specify the exact phrase requires some **natural language understanding**. Those intelligent tasks can be handled using so-called **[Cognitive Services][CoServ]** - a set of pre-trained neural network models that are available in the cloud.
 
-In our module, we will be using **[Language Understanding Intelligent Service][LUIS]** (LUIS for short) that you can train on a set of phrases, specifying sample input phrase and it's meaning (so-called **intent**). The service will then try to automatically figure out the best intent for each user's input phrase.
+In our module, we will be using **[Language Understanding Intelligent Service][LUIS]** (LUIS for short) that you can train on a set of phrases, specifying sample input phrase and it's meaning (so-called **intent**). The service will then try to automatically figure out the best intent for each user's input phrase. We will also use [**QnA Maker Service**][QnAMaker] to add question answering functionality and general chat support.
 
 Cognitive Services are very often used with bots, that's why they occupy the large part of the figure above.
 
@@ -33,7 +35,7 @@ After that, on a new page, click **Create** button.
       - Type bot name in **Bot Handle** field. I will use **GeoFriend**, but you can invent something else.
       - In the resource group name, select **Create New**, and come up with some name for resource group.
       - In **Location**, select the data center location closest to you.
-      - Change **Pricing Tier** to **F0**, which means "free up to a certain amount of premium messages"
+      - Change **Pricing Tier** to **F0**, which is the free tier.
       - Leave **App Name** to its default value      
 ![Bot Parameters](../media/AzPortalBotForm.png)
 
@@ -49,11 +51,12 @@ Here you can select desired programming language (**C#** or **Node.js**, we will
 
 1. Now create **App Service Plan**. Click on "App Service Plan/Location", then **Create New**, and type in a suitable name for App Service Plan. This plan determines how much of compute resources would be allocated to your bot.
 ![App Service Plan](../media/AzPortalAppServicePlan.png)
-By default, the **S1** plan is used. If you want your bot to be hosted on another service plan (for example, on free Azure Web Site), you would need to adjust the service plan afterwards separately, as described [here][AdjustServicePlan].
+>[!TIP]
+>By default, the **S1** plan is used, which is not free. If you want your bot to be hosted on another service plan (for example, on free Azure Web Site), you would need to adjust the service plan afterwards separately, as described [here][AdjustServicePlan].
 
-1. Finally, fine tune **Application Insights** settings. It is useful for monitoring the behavior of your bot. For the sake of this course you can turn application insights off, or specify the Azure datacenter location closest to you.
+6. Finally, fine tune **Application Insights** settings. It is useful for monitoring the behavior of your bot. For the sake of this course you can turn application insights off, or specify the Azure datacenter location closest to you.
 
-1. Once all fields are filled in - click **Create**.
+7. Once all fields are filled in - click **Create**.
 
 It will take some time for all bot resources to be created. Once you see the notification that deployment is complete - go to bot' resource group to check out what has been created. 
 
@@ -89,3 +92,4 @@ Let's move on to the next unit to see how we can alter the bot's behavior.
 [AzPortal]: https://portal.azure.com
 [AdjustServicePlan]: https://docs.microsoft.com/azure/app-service/app-service-plan-manage
 [LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/
+[QnAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/

@@ -6,13 +6,18 @@ Things now may change with the emergence of new type of user experience - **Conv
 
 With this paradigm shift, we need to take extra care to make sure that users **are comfortable** when dealing with a computer through conversations. This is important, because people can subconsciously expect a bot to act like a human, for example, attribute some emotions to it, and in general feel more personal involvement. Thus, we need to make sure that we build conversational UI **responsibly**. 
 
-# Out Bot: Educational Assistant for Geography
+# Our Goal: Develop Educational Assistant for Geography
 
-In this course, we will develop a simple bot which will act as an assistant for school student in the field of Geography. We will call it **GeoFriend**. We will not be able to put the complete functionality into the bot, but we will show you the basic building blocks, which you can use to develop more detailed experience yourself.
+If you come to this course, you probably know some basics of software development. Being able to program, you have a great power to make great things! Suppose, you want to help schools transition to online learning and make it more effective and engaging. Bots can come to the rescue! 
+
+In this course, we will start developing a simple bot which can help  school students learn Geography. We will call it **GeoFriend**. While I will not walk you through developing the complete functionality, I will teach you how to put basic building blocks together. You can later expand on that knowledge to complete this project, or develop similar bots for different subject areas and even for different tasks.
+
+>[!NOTE]
+Bot interface is typically more engaging for the user, because he/she often attributes human-like personality to the bot. This can also lead to some frustrations. To avoid that, we need to build **responsible bots**. 
 
 # Responsible Conversational UI
 
-To help developer create responsible bots, Microsoft has outlined [10 guidelines for developers of Conversational UI][Guidelines10]. We will not cover all principles here, but outline the major ones that we will need in this course. You can learn more about responsible conversational UI by viewing [an interactive demo][InteractiveDemo].
+To help developer create responsible bots, Microsoft has outlined [10 guidelines for developers of Conversational UI][Guidelines10]. We will not cover all principles here, but outline the major ones that we will need in this course. You can learn more about responsible conversational UI by viewing [this great interactive demo][InteractiveDemo].
 
 > It is important for developers to be aware of responsible conversational UI principles, because, as one of the principles say, **developers are accountable for the bots they deploy**.
 
