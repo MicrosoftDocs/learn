@@ -1,6 +1,10 @@
 In this unit you are going to learn how to simulate a quantum random number
 generator, which happens to be a perfect example to introduce the Quantum
-Development Kit to combine quantum and classical programs. We will used the concept of Bloch sphere, H gate and superposition to introduce explain the example. If these terms are not familiar to you yet, you can read more about them in the QDK documentation page [here](https://docs.microsoft.com/quantum/concepts/glossary).  
+Development Kit to combine quantum and classical programs. We will used the
+concept of Bloch sphere, H gate and superposition to introduce explain the
+example. If these terms are not familiar to you yet, you can read more about
+them in the QDK documentation page
+[here](https://docs.microsoft.com/quantum/concepts/glossary).  
 
 One of the most direct applications of quantum devices is the generation of
 verified random numbers. We can perform measurements on quantum systems to
@@ -25,6 +29,9 @@ superposition and measured like when we open the cat's box.
 
 ## Understand the Q# operation with the Bloch sphere
 
+Let's illustrate how to obtain a random bit with a qubit in a quantum computer
+using the Bloch sphere.
+
 In the Bloch sphere, the north pole represents the classical value **0** and the
 south pole represents the classical value **1**. Any superposition can be
 represented by a point on the sphere (represented by an arrow). The closer the
@@ -36,7 +43,8 @@ value **0** if we measure it.
 :::img src="../media/qrng-Bloch.png" width="175" alt="A qubit state with a high
 probability of measuring zero":::
 
-We can use this representation to visualize the operations:
+The steps to follow in a quantum program to obtain a random bit are the
+following:
 
 * First we start with a qubit initialized in the state **0** and apply `H` to
   create a superposition in which the probabilities for **0** and **1** are the
