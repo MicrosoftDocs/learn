@@ -23,7 +23,7 @@ It uses the reference function to get the runtime state of the storage account. 
 
 2. Copy and paste the highlighted code sections, or the whole file and replace the content of your existing template.
 
-:::code language="JSON" source="../samples/exercise6-add-output" highlight="47-52:::
+:::code language="JSON" source="../samples/exercise6-add-output" highlight="47-52":::
 
 3. Save you changes and close the editor.
 
@@ -51,7 +51,7 @@ Copy and execute this code block in the shell provided.
 > [!IMPORTANT]
 > Don't forget to change **{your-Prefix-name}** in the code below with the same prefix you used in the last exercise.
 
-:::code language="azurecli" source="../samples/exercise6-add-output.sh" highlight="9":::
+:::code language="azurecli" source="../samples/exercise6-add-outputs.sh" highlight="9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 
