@@ -43,7 +43,6 @@ quiz:
           explanation: "Incorrect. Pushing your commits will not show your progress, but it will trigger a GitHub Actions workflow."
         - content: "Go to the repository on `github.com` in the Actions menu."
           isCorrect: true
-          explanation: "Correct. You can view the progress of the GitHub Actions worfklow in your browser on your repository.
-"
+          explanation: "Correct. You can view the progress of the GitHub Actions worfklow in your browser on your repository."
 
 
