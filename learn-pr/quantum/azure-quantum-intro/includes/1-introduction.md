@@ -1,15 +1,15 @@
-Azure Quantum is a cloud service that allows you to run Quantum Programs and solve Quantum-Inspired Optimization (QIO) problems in the cloud. Azure Quantum takes these jobs and schedules them with the desired provider for execution. Using our SDKs and tools you can easily run a job against multiple providers and targets to find the one that will work best for your scenario.
+Azure Quantum is a cloud service that extends the scalability, security and reliability of Azure into the quantum computing world, providing access to a diverse set of quantum services, ranging from pre-built solutions to software and quantum hardware. 
+Built on the Microsoft Azure cloud platform, Azure Quantum enables you to begin exploring and building applications today.
 
 In this module, you'll learn what Azure Quantum is and how it can be used to solve your quantum computing or quantum-inspired projects at scale.
 
 ## Learning objectives
 
-In this module you will:
+In this module you will learn:
 
-- Understand the types of problems Azure Quantum service can help you solve
-- Understand the process of creating a project on Azure Quantum portal
-- Learn about quantum-inspired optimization 
-- Learn about the hardware systems you can use through Azure Quantum
+- Understand the services and tools available through Azure Quantum
+- Understand the process of creating a workspace in the Azure Quantum portal
+- Learn about optimization and evaluate situations where quantum-inspired solutions can have impact
 
 ## Prerequisites
 
