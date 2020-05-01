@@ -109,7 +109,7 @@ At this stage, your Static Web Apps instance is created in Azure, but your app n
 
 You can check the status of your build and deploy action by clicking the link shown below:
 
-:::image type="content" source="../media/goto-action.png" alt-text="Browser to see the progress of the GitHub Action":::
+:::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
 
 ### View website
 
