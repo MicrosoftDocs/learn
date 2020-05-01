@@ -6,7 +6,34 @@ The first step is to connect to an Azure sandbox. You can create the Azure Stati
 
 1. Start by **activating the Azure sandbox above**.
 1. Once the sandbox is activated, [sign into the Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-    - Make sure you use the same account to sign in as you did to activate the sandbox.
+   - Make sure you use the same account to sign in as you did to activate the sandbox.
+
+## Create a routing rule
+
+Before publishing your app, create routing rules that include a fallback route.
+
+1. In Visual Studio Code, right-click the folder _public_
+1. Select **New File**
+1. Type _routes.json_ and press **ENTER**
+1. Update the _routes.json_ file to include the following fallback route:
+
+   ```json
+   {
+     "routes": [
+       {
+         "route": "/*",
+         "serve": "/index.html",
+         "statusCode": 200
+       }
+     ]
+   }
+   ```
+
+1. Open the command palette by pressing **F1**
+1. Type and select **Git: Commit All**. If Visual Studio Code prompts you to automatically stage all of your changes and commit them directly, select **Yes**.
+1. Enter a commit message such as **added routing rules for a fallback route**
+1. Open the command palette by pressing **F1**
+1. Type and select **Git: Push**
 
 ## Create a Static Web App
 
@@ -102,10 +129,9 @@ Continue to create the application.
 1. Click the **Create** button
 1. Once the deployment is complete, click the **Go to resource** button
 
-
 ### Review the GitHub Action
 
-At this stage, your Static Web Apps instance is created in Azure, but your app not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to perform the first build and deployment of your app, but it takes a couple minutes to finish.
+At this stage, your Static Web Apps instance is created in Azure, but your app not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
 
 You can check the status of your build and deploy action by clicking the link shown below:
 
@@ -125,6 +151,12 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
+
+### Try the fallback route
+
+Your app is displaying the **Products** page in the browser. Notice the URL is **/products**. Now refresh the browser and test your fallback route.
+
+In your browser, press **F5** to refresh the page. Your app should reload successfully thanks to your fallback route in your routing rules!
 
 ## Next steps
 
