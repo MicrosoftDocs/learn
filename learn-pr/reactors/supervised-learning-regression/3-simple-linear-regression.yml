@@ -8,7 +8,8 @@ metadata:
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
-  ms.prod: learning-python
+  ms.prod: learning-reactors
+  show_latex: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-simple-linear-regression.md)]
