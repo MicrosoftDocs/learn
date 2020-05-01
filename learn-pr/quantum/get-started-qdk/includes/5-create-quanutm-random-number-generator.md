@@ -164,9 +164,9 @@ Sampling a random number between 0 and 50:
 60 > 50, trying again.
 42
 ```
-Your random number is 42! You can see how the program tried to generate the
-random number twice. The first time it got 60, which was greater than the
-`max` set to 50, so it tried again.
+In this case the random number generated was 42. You can see how the program
+tried to generate the random number twice. The first time it got 60, which was
+greater than the `max` set to 50, so it tried again.
 
 Congratulations! Now you know how to use classical logic with Q# to create a
 quantum random number generator.
