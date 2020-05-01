@@ -2,9 +2,7 @@ Whether your organization is planning to build a new application on Azure or you
 
 ## Capture requirements
 
-Before beginning any cloud project, it's important to take time to properly plan, and that's especially important when considering costs. The cloud introduces a shift from purchasing static equipment like servers and switches, to a dynamic model where you purchase the usage of services. 
-
-Identify the stakeholders for the project. This should include the business teams that are driving the organizational outcomes. It should also include the technical teams involved in the project. Bring everyone to the same table and foster a culture of transparency. All teams involved in the project should have visibility into the decisions that are made that impact cost.
+Before beginning any cloud project, it's important to take time to properly plan, and that's especially important when considering costs. Start by identifying the stakeholders for the project. This should include the business teams that are driving the organizational outcomes. It should also include the technical teams involved in the project. Bring everyone to the same table and foster a culture of transparency. All teams involved in the project should have visibility into the decisions that are made that impact cost.
 
 Capture the requirements of the application. Include both the business requirements and the technical requirements of the application, as both can directly impact cost. Business requirements may be an API interface to enable partner communications or a reporting interface for the accounting department to view financial transactions. Technical requirements could be the ability to store relational data or the ability for users to use a personal identity to access applications. All of these requirements would have impact on the overall cost of the application, and will influence the selection of services that are used to meet these requirements.
 
@@ -37,6 +35,6 @@ Organize resources in a resource group or subscription as a boundary for project
 
 ## Budget for education
 
-Educating your engineers, developers, and users is an important piece of a successful cloud project. The cloud is a transformational shift for an organization, and is an ever-changing set of services and technologies. Your organization will need to ensure that your staff is properly trained to build and maintain resources on Azure. Microsoft provides full product documentation on Microsoft Docs, self-paced learing on Microsoft Learn, and has a large network of partners to deliver in-person and custom training for your staff.
+Educating your engineers, developers, and users is an important piece of a successful cloud project. The cloud is a transformational shift for an organization, and is an ever-changing set of services and technologies. Your organization will need to ensure that your staff is properly trained to build and maintain resources on Azure. Microsoft provides full product documentation on Microsoft Docs, self-paced learning on Microsoft Learn, and has a large network of partners to deliver in-person and custom training for your staff.
 
 Identify both the initial and ongoing training needs for your organization, and include this as part of the cost of your project.
