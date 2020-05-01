@@ -64,8 +64,8 @@ pd.
 The output is:
 
 ```Output
-TBD
 ```
+***JAK - add screenshot here***
 
 ## A brief reminder about Jupyter notebooks
 

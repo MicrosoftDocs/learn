@@ -115,6 +115,8 @@ A right join is simply the mirror image of a left join in which those entries fr
 
 Perform a right join of `df1` and `df2` in the code cell below. But before you do that, ask yourself what shape you expect the resulting `DataFrame` to have? Do you expect it to have any `NaN` values?
 
+**SARAH TBD** - Hint is incomplete.
+
 <br/>
 
 <details>
@@ -128,9 +130,7 @@ Perform a right join of `df1` and `df2` in the code cell below. But before y
 
   The output is:
 
-  The output is:
-
-```Output
+  ```Output
   TBD
   ```
 
@@ -198,4 +198,29 @@ The resulting `DataFrame` is essentially the first 2000 rows of the original 
 
 ### Try it yourself
 
-An outer join is the union of two `DataFrame`s; anything that is in either `DataFrame` with be in the resultant one. Perform an outer join of `df1` and `df2`. What shape do you expect the resulting `DataFrame` to have? How does it differ from the right join of `df1` and `df2`? What differences would there have to be in the shape or content of either `DataFrame` for the outer join of the two to be different from their right join?
+An outer join is the union of two `DataFrame`s; anything that is in either `DataFrame` with be in the resultant one. Perform an outer join of `df1` and `df2`.
+
+- What shape do you expect the resulting `DataFrame` to have?
+- How does it differ from the right join of `df1` and `df2`?
+- What differences would there have to be in the shape or content of either `DataFrame` for the outer join of the two to be different from their right join?
+
+**SARAH TBD** - Add Hint here?
+
+<br />
+
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```python
+  TBD
+  ```
+
+  The output is:
+
+  ```Output
+  TBD
+  ```
+
+</details>
+
+<br /><br />

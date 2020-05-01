@@ -18,27 +18,51 @@ TBD
 
 ### Try it yourself
 
-Why did we use syntax `df1 = df.iloc[:,:35]` to capture the first 35 columns of `df`? What does the first `:` (colon) in the square brackets do? Experiment with `df3 = df.iloc[:35]` in the code cell below and compare `df3.info()` with `df1.info()` to satisfy yourself as to why we need to use this syntax.
+- Why did we use syntax `df1 = df.iloc[:,:35]` to capture the first 35 columns of `df`?
+- What does the first `:` (colon) in the square brackets do?
 
-```python
-TBD
-```
+Experiment with `df3 = df.iloc[:35]` in a code cell and compare `df3.info()` with `df1.info()` to satisfy yourself as to why we need to use this syntax.
 
-The output is:
+<br />
 
-```Output
-TBD
-```
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-```python
-df1.info()
-```
+  Try:
 
-The output is:
+  ```python
+  df3 = df.iloc[:35]
+  ```
 
-```Output
-TBD
-```
+  Then check:
+
+  ```python
+  df3.info()
+  ```
+
+  The output is:
+
+  ```Output
+  TBD
+  ```
+
+  Now look at:
+
+  ```python
+  df1.info()
+  ```
+
+  The output is:
+
+  ```Output
+  TBD
+  ```
+
+</details>
+
+<br /><br />
+
+***
 
 ## Let's create df2
 
@@ -163,6 +187,8 @@ TBD
 ### Try it yourself
 
 How would you export df2 to a CSV file?
+
+**SARAH - TBD** - ADD HINT.
 
 <br />
 

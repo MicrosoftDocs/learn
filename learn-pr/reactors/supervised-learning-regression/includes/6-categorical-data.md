@@ -362,6 +362,7 @@ Try re-running the $R^2$ scoring code cell above using different polynomial de
   ```Output
   TBD
   ```
+
 </details>
 
 <br /><br />

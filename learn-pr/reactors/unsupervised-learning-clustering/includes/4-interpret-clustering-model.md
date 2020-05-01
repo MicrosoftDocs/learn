@@ -97,8 +97,7 @@ The output indicates that Gjetost cheese falls under cluster 1.
 
 Now go back up and alter the values for Gjetost cheese in the `newcase` array above to see what it takes to get that array classified into cluster 0 or cluster 2.
 
->[!NOTE]
-> SARAH TBD - add hint?
+**SARAH TBD** - add hint content?
 
 <br />
 
@@ -187,7 +186,7 @@ Now find the `FoodGroup` value counts for clusters 1 and 2.
   TBD
   ```
 
-And:
+  And:
 
   ```python
   merged_df.loc[nutr_df['Cluster'] == 2]['FoodGroup'].value_counts()
@@ -263,7 +262,7 @@ Now find the sorted `FoodGroup` value counts for clusters 1 and 2.
   merged_df.loc[nutr_df['Cluster'] == 1].sort_values(by='Distance')['FoodGroup'][:30].value_counts()
   ```
 
-The output is:
+  The output is:
 
   ```Output
   TBD

@@ -25,16 +25,29 @@ It's time to use the pd.read_csv documentation to look for ideas on what to try 
 
 Use the built-in IPython documentation to on `pd.read_csv.`
 
-```python
-# Hint: Refer to the discussion at the start of this section if
-# you forgot the syntax.
-```
+<br />
 
-The output is:
+<details>
 
-```Output
-TBD
-```
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  Refer to the discussion at the start of this section if you forgot the syntax.
+  
+  ```python
+  pd.read_csv.
+  ```
+
+  The output is:
+
+  ```Output
+  ```
+  ***Jak: Add screenshot***
+
+</details>
+
+<br /><br />
+
+***
 
 There are quite a few of parameters for this function. The intuitively named `encoding` parameter accepts `str` input from the list of Python [standard encodings](https://docs.python.org/3.6/library/codecs.html#standard-encodings). We will go with `'latin_1'` here.
 

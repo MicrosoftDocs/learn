@@ -42,20 +42,18 @@ TBD
 
 We need to combine `df` and `fg_df` using the pandas `merge()` function. As you prepare to do so, keep the following considerations front of mind:
 
-1. Which type of join should you use to capture all of the information in both datasets? (**Hint:** Look at the `head` and `tail` of the resulting `DataFrame` for clues.)
-1. In order to put the `FoodGroup` column immediately after the `NDB_No` column, in what order should you enter the two `DataFrame`s into the `merge()` function? (You might need to experiment a couple of times to get the desired order.)
+- Which type of join should you use to capture all of the information in both datasets?
 
-Perform the command to join the `df` and `fg_df` in the code cell below.
+  <details>
+    <summary>Hint <i>(expand to reveal)</i></summary>
 
-```python
+  Look at the `head` and `tail` of the resulting `DataFrame` for clues.
 
-```
+  </details>
 
-The output is:
+- In order to put the `FoodGroup` column immediately after the `NDB_No` column, in what order should you enter the two `DataFrame`s into the `merge()` function? (You might need to experiment a couple of times to get the desired order.)
 
-```Output
-TBD
-```
+Perform the command to join the `df` and `fg_df` in a code cell.
 
 <br />
 
@@ -69,7 +67,7 @@ TBD
 
   The output is:
 
-```Output
+  ```Output
   TBD
   ```
 
@@ -81,7 +79,7 @@ TBD
 
   The output is:
 
-```Output
+  ```Output
   TBD
   ```
 
