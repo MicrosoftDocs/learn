@@ -15,5 +15,3 @@ In the units that follow, you will deploy several Azure services and integrate t
 - How to create an Azure SQL Database and write records to it
 - How to connect Power BI to an Azure SQL Database
 - How to create a report with informative visuals in Power BI
-
-Sound like fun? Then let's get started.

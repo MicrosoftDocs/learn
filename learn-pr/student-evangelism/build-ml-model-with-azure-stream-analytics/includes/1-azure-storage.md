@@ -4,7 +4,7 @@ In this unit, you will create an Azure Storage account and implement a simulated
 
 Let's begin by using the [Azure Cloud Shell](https://azure.microsoft.com/features/cloud-shell/) to create an Azure Storage account. The Cloud Shell provides a browser-based command line for executing Azure commands and is an alternative to the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest), which lets you execute the same commands on your local workstation. Whether to use the CLI or the Cloud Shell is often a matter of personal preference. One of the advantages of the Cloud Shell is that it doesn't require you to install any software on your PC. Another is that you don't have to update it periodically as you do the CLI.
 
-1. Open the [Azure Portal](https://portal.azure.com) in your browser. If asked to log in, do so using your Microsoft account.
+1. Open the [Azure portal](https://portal.azure.com) in your browser. If asked to log in, do so using your Microsoft account.
 
 1. Click the **Cloud Shell** button in the toolbar at the top of the portal to open the Cloud Shell.
 
@@ -267,7 +267,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. Let **run.js** run until three or more blobs have been uploaded. Then return to the Command Prompt or terminal window in which **run.js** is running and press **Ctrl+C** to stop it.
 
-1. Return to the [Azure Portal](https://portal.azure.com) in your browser. Open the storage account that you created in the previous exercise, and then open the "photos" container. Confirm that it contains several **.jpg** images as shown below.
+1. Return to the [Azure portal](https://portal.azure.com) in your browser. Open the storage account that you created in the previous exercise, and then open the "photos" container. Confirm that it contains several **.jpg** images as shown below.
 
     ![Images uploaded to the "photos" container](../media/uploaded-images.png)
 
