@@ -16,12 +16,12 @@ You can learn more about developing quantum algorithms from the [Microsoft Quant
 
 You will find information on: 
 
-- options for using Q# with C#, Python or Jupyter notebooks
 - other step-by-step quickstarts for learning Q#
 - more [code samples](https://docs.microsoft.com/samples/browse/?languages=qsharp) such as building a teleportation algorithm, doing a Grover search, running a CHSH game, etc.
 - [quantum katas](https://docs.microsoft.com/quantum/intro-to-katas) for practicing quantum programming 
 - information on the standard libraries, and libraries for chemistry, machine learning and numerics applications
 - API references
+- options for using Q# with C#, Python or Jupyter notebooks
 
 You will also find reading materials for quantum computing concepts on the documentation page. 
 
