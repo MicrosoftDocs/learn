@@ -19,8 +19,8 @@ abstract:  |
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - [Text classifications with Naive Bayes](../../text-classification-naive-bayes/index.yml)
-  - [Principal component analysis (PCA)](../../principal-component-analysis-food-composition/index.yml)
+  - Text classifications with Naive Bayes
+  - Principal component analysis (PCA)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -35,7 +35,7 @@ units:
 - learn.reactors.support-vector-machines-facial-recognition.1-introduction
 - learn.reactors.support-vector-machines-facial-recognition.2-load-dataset-train-model
 - learn.reactors.support-vector-machines-facial-recognition.3-apply-pca
-- learn.reactors.support-vector-machines-facial-recognition.4-tune-hyperparameters-cross-validate
+- learn.reactors.support-vector-machines-facial-recognition.4-tune-parameters-cross-validate
 - learn.reactors.support-vector-machines-facial-recognition.5-summary
 badge:
   uid: learn.reactors.support-vector-machines-facial-recognition.badge 
