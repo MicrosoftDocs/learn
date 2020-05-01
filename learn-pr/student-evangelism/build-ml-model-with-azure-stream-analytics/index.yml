@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.build-ml-model-with-azure-stream-analytics
 metadata:
-  title: Combat Climate Change with AI and Azure - Learn
+  title: Track endangered polar bears with machine learning
   description: Build an end-to-end solution in Azure that uses AI to detect polar bears in photographs and Power BI to show where polar bears are being spotted
-  ms.date: 04/28/2020
-  author: v-jepros
-  ms.author: shana.matthews
+  ms.date: 05/08/2020
+  author: shanamatthews
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Combat Climate Change with AI and Azure
+title: Track endangered polar bears with machine learning
 summary: Build an end-to-end solution in Azure that uses AI to detect polar bears in photographs and Power BI to show where polar bears are being spotted
-abstract:  | 
+abstract:  |
   In this module, you will:
   - Create an Azure Storage account
   - Deploy virtual cameras that upload wildlife photos to the storage account
