@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.combat-climate-change-with-azure.3-azure-functions
+uid: learn.build-ml-model-with-azure-stream-analytics.3-azure-functions
 title: Write an Azure Function to analyze photographs
 metadata:
   title: Write an Azure Function to analyze photographs
   description: Write an Azure Function to analyze photographs by passing them to the Custom Vision Service
-  ms.date: 04/28/2020
-  author: v-jepros
-  ms.author: shana.matthews
+  ms.date: 05/08/2020
+  author: shanamatthews
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

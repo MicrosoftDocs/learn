@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.combat-climate-change-with-azure
+uid: learn.build-ml-model-with-azure-stream-analytics
 metadata:
   title: Combat Climate Change with AI and Azure - Learn
   description: Build an end-to-end solution in Azure that uses AI to detect polar bears in photographs and Power BI to show where polar bears are being spotted
@@ -19,21 +19,29 @@ abstract:  |
   - Deploy an Azure SQL Database to capture output from the Azure Function
   - Connect Power BI to the Azure SQL Database
   - Create a Power BI report that shows where polar bears are being spotted on a map
-  prerequisites: None
-#iconUrl:
+
+prerequisites: |
+  - An Azure subscription
+  - Basic knowledge of Azure services, the Azure portal, and the Azure CLI tools
+  - Familiarity with Node.js
+  - Power BI Desktop
+iconUrl: /learn/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
 levels:
-- intermediate
+- beginner
 roles:
 - developer
+- data-scientist
+- student
 products:
 - azure
-- powerbi
+- power-bi
 units:
-- learn.combat-climate-change-with-azure.0-introduction
-- learn.combat-climate-change-with-azure.1-azure-storage
-- learn.combat-climate-change-with-azure.2-cognitive-services
-- learn.combat-climate-change-with-azure.3-azure-functions
-- learn.combat-climate-change-with-azure.4-azure-sql-database
-- learn.combat-climate-change-with-azure.5-power-bi
-- learn.combat-climate-change-with-azure.6-summary
-achievement: learn.placeholder.badge
+- learn.build-ml-model-with-azure-stream-analytics.0-introduction
+- learn.build-ml-model-with-azure-stream-analytics.1-azure-storage
+- learn.build-ml-model-with-azure-stream-analytics.2-cognitive-services
+- learn.build-ml-model-with-azure-stream-analytics.3-azure-functions
+- learn.build-ml-model-with-azure-stream-analytics.4-azure-sql-database
+- learn.build-ml-model-with-azure-stream-analytics.5-power-bi
+- learn.build-ml-model-with-azure-stream-analytics.6-summary
+badge:
+  uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge 

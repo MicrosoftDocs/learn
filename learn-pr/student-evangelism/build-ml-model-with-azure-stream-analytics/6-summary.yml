@@ -1,11 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.combat-climate-change-with-azure.6-summary
+uid: learn.build-ml-model-with-azure-stream-analytics.6-summary
+title: Summary
 metadata:
   title: Summary
   description: Summary of lessons learned
-  ms.date: 04/28/2020
-  author: v-jepros
-  ms.author: shana.matthews
+  ms.date: 05/08/2020
+  author: shanamatthews
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
