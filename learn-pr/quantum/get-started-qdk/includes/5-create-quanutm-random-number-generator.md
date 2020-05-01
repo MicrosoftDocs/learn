@@ -44,7 +44,7 @@ at the beginning of the namespace like you did in the last unit.
 ### Add a new operation
 
 We want to use the operation `GenerateRandomBit` that you created in the last
-unit, so instead of overwrite it we are going to add a new operation named
+unit, so instead of overwriting it, we are going to add a new operation named
 `GenerateRandomNumber`. We also move the `@EntryPoint()` to just above our new
 operation, since this will be the operation we want the compiler to execute.
 You should have something like this:
