@@ -4,7 +4,7 @@ generator using the quantum random bit generator you created in the last unit.
 ## Use Q# to write classical logic
 
 In general, we don't want to use the quantum computer for everything, since for
-most things classical computers work just fine. We want to call the quantum
+many things classical computers work just fine. We want to call the quantum
 computer only when we need to, for example to make some specific typo of
 calculations, or in this case, to extract pure randomness. This is why Q# also
 can implement classical code just like a normal programming language.
@@ -44,7 +44,7 @@ at the beginning of the namespace like you did in the last unit.
 ### Add a new operation
 
 We want to use the operation `GenerateRandomBit` that you created in the last
-unit, so instead of overwrite it we are going to add a new operation named
+unit, so instead of overwriting it, we are going to add a new operation named
 `GenerateRandomNumber`. We also move the `@EntryPoint()` to just above our new
 operation, since this will be the operation we want the compiler to execute.
 You should have something like this:
@@ -115,7 +115,7 @@ namespace Qrng {
 }
 ```
 Don't worry if you don't understand all the parts of the code above. We have
-introduced many new things! Let's take a look to the most important ones:
+introduced many new things! Let's take a look at the most important ones:
 
 - In the  `GenerateRandomNumber` operation we have implemented a type of loop
   specific from Q# that is called *Repeat Until Success (RUS)*. This kind of
