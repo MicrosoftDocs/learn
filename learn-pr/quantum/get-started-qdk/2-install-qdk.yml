@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.get-started-qdk.2-prepare-development-environment
+uid: learn.quantum.get-started-qdk.2-install-qdk
 title: Install the Quantum Development Kit
 metadata:
   title: Install the Quantum Development Kit
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-prepare-development-environment.md)]
+  [!include[](includes/2-install-qdk.md)]
