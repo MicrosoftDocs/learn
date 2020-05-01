@@ -28,11 +28,19 @@ Using Spot VMs allows you to take advantage of unused capacity on Azure at a sig
 
 Azure Reservations help you save money by committing to one-year or three-year plans for multiple products. Committing allows you to get a discount on the resources you use. Reservations can significantly reduce your resource costs up to 72% on pay-as-you-go prices. Reservations provide a billing discount and don't affect the runtime state of your resources. After you purchase a reservation, the discount automatically applies to matching resources.
 
+Reservations are available for services such as:
+
+- Windows and Linux virtual machines
+- Azure SQL Database
+- Cosmos DB
+- Azure Synapse Analytics
+- Azure Storage
+
 If you have consistent resource usage that supports reservations, buying a reservation gives you the option to reduce your costs. For example, when you continuously run instances of a service without a reservation, you're charged at pay-as-you-go rates. When you buy a reservation, you immediately get the reservation discount. The resources are no longer charged at the pay-as-you-go rates.
 
 ## Use managed services when possible
 
-Whenever possible, take advantage of combining lower resource costs and lower operational costs by utilizing managed services. These services come with lower operational costs since you don't need to patch and manage the underlying infrastructure and services. Deploying applications on VMs comes with the administration and maintenance of the operating system, as well as any layered software. 
+Whenever possible, take advantage of combining lower resource costs and lower operational costs by utilizing managed services. These services come with lower operational costs since you don't need to patch and manage the underlying infrastructure and services. Deploying applications on VMs comes with the administration and maintenance of the operating system, as well as any layered software.
 
 Azure SQL Database is a great example of a managed service. You can deploy a single or pooled database, or a managed instance. All of these are fully managed, you don't need to patch the underlying database software, and operational items like backup are built-in and provided for you.
 

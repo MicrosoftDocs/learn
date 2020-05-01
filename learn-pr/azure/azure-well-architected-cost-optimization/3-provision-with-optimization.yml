@@ -16,32 +16,32 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: ''
+  - content: 'Which of the following scenarios would benefit from the use of reserved instances?'
     choices:
-    - content: ''
+    - content: 'You have a workload that needs a VPN connection between Azure and an on-premises datacenter.'
       isCorrect: false
       explanation: ''
-    - content: ''
+    - content: 'You have a web site that needs the flexibility to scale from hundreds to millions of users at any point in time.'
       isCorrect: false
       explanation: ''
-    - content: ''
-      isCorrect: false
-      explanation: ''
-    - content: ''
+    - content: 'You have an ERP system with consistent resource utilization.'
       isCorrect: true
       explanation: ''
+    - content: 'You need a platform to run multiple container based applications on that provides full orchestration.'
+      isCorrect: false
+      explanation: ''
 
-  - content: ''
+  - content: 'Which of the following scenarios would be well-suited for spot instances?'
     choices:
-    - content: ''
+    - content: 'A database for a business-critical financial application.'
       isCorrect: false
       explanation: ''
-    - content: ''
+    - content: 'Virtual desktops for employees.'
       isCorrect: false
       explanation: ''
-    - content: ''
+    - content: 'A system that enables patients to access health records.'
       isCorrect: false
       explanation: ''
-    - content: ''
+    - content: 'A system that processes batches of data sent in from partners.'
       isCorrect: true
       explanation: ''
