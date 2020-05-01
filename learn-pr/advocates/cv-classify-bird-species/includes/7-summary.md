@@ -18,4 +18,4 @@ Happy bird watching!
 
 [Custom Vision Node Tutorial Docs](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/node-tutorial)
 
-[Python SDK Docs](https://docs.microsoft.com/en-us/python/api/azure-cognitiveservices-vision-customvision/azure.cognitiveservices.vision.customvision.training.custom_vision_training_client.customvisiontrainingclient?view=azure-python)
+[Python SDK Docs](https://docs.microsoft.com/python/api/azure-cognitiveservices-vision-customvision/azure.cognitiveservices.vision.customvision.training.custom_vision_training_client.customvisiontrainingclient?view=azure-python)

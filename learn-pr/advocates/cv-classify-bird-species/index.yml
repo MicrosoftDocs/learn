@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.cv-classify-bird-species
 metadata:
-  title: Process images with the Computer Vision service
-  description: Use the Computer Vision API to analyze images for insights, extract text from images, and generate high-quality thumbnails.
+  title: Classify Bird Species with Custom Vision
+  description: todo
   ms.date: 09/24/2018
   author: cassieview
   ms.author: cassieview
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Process images with the Computer Vision service
-summary: Use the Computer Vision API to analyze images for insights, extract text from images, and generate high-quality thumbnails.
+title:  Classify Bird Species with Custom Vision
+summary: todo
 abstract: |
   In this module, you will:
   - Get an introduction to Machine Learning (ML)
@@ -17,6 +17,7 @@ abstract: |
   - Learn how to use the Custom Vision Cognitive Service
   - Build a custom machine learning model
   - Deploy the model created with Custom Vision
+prerequisites: None
 iconUrl: /learn/achievements/cv-classify-bird-species.svg
 levels:
   - beginner
