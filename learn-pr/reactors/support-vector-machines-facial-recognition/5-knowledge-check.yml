@@ -1,0 +1,100 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.support-vector-machines-facial-recognition.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "What is SVM an abbreviation for?"
+    choices:
+    - content: "Simple Vectorized Model"
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, SVM doesn't refer to Simple Vectorized Model."
+    - content: "Simultaneous Vector Manipulation"
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, SVM doesn't refer to Simultaneous Vector Manipulation."
+    - content: "Simulated Volumetric Model"
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, SVM doesn't refer to	Simulated Volumetric Model."
+    - content: "Support Vector Machine"
+      isCorrect: true
+      explanation: "Correct. In machine learning, SVM is an abbreviation for Support Vector Machine."
+  - content: "What is the purpose of cross-validation in machine learning?"
+    choices:
+    - content: "Get a more accurate estimate of a model’s accuracy."
+      isCorrect: true
+      explanation: "Correct. Cross-validation helps you determine how accurate your model is."
+    - content: "Prevent a model from overfitting the training data"
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, cross-validation doesn't refer to fitting or overfitting training data."
+    - content: "Prevent a model from underfitting the training data."
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, cross-validation doesn't refer to fitting or underfitting training data."
+    - content: "Reduce the time required to test a model."
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, cross-validation isn't used to help reduce time spent testing a model."
+  - content: "What is the purpose of hyperparameter tuning?"
+    choices:
+    - content: "Find the learning algorithm that produces the most accurate model."
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, tuning hyperparameters doesn't focus on finding an algorithm that would produce the most accurate model."
+    - content: "Eliminate collinearity in a dataset."
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, tuning hyperparameters doesn't address collinearity in a dataset."
+    - content: "Find the combination of parameters that produces the most accurate model."
+      isCorrect: true
+      explanation: "Correct. In machine learning, tuning hyperparameters helps you find the combination of parameters that produces the most accurate model."
+    - content: "Reduce training time."
+      isCorrect: false
+      explanation: "Incorrect. Tuning hyperparameters doesn't address how long it takes to train a dataset."
+  - content: "For which of the following tasks might you use Principal Component Analysis (PCA)?"
+    choices:
+    - content: "Normalize the values in a column or a set of columns."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Reduce the number of columns in a dataset from 100 to 10."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Find a linear classification boundary by adding dimensions to the data."
+      isCorrect: false
+      explanation: "Incorrect.."
+    - content: "Find a linear classification boundary by removing dimensions from the data."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "In an SVM model, what do the ‘c’ and ‘gamma’ parameters control?"
+    choices:
+    - content: "The tightness of fit to the training data."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "The number of dimensions added to the data."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "The tolerance for nulls in the training data."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "The veracity of the training data."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "What is the scikit-learn function called to train an SVM model?"
+    choices:
+    - content: "fit"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "train"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "score"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "transform"
+      isCorrect: false
+      explanation: "Incorrect."

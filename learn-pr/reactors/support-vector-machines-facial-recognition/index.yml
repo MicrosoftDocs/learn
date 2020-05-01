@@ -36,6 +36,6 @@ units:
 - learn.reactors.support-vector-machines-facial-recognition.2-load-dataset-train-model
 - learn.reactors.support-vector-machines-facial-recognition.3-apply-pca
 - learn.reactors.support-vector-machines-facial-recognition.4-tune-parameters-cross-validate
-- learn.reactors.support-vector-machines-facial-recognition.5-summary
+- learn.reactors.support-vector-machines-facial-recognition.5-knowledge-check
 badge:
   uid: learn.reactors.support-vector-machines-facial-recognition.badge 

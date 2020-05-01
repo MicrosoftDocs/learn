@@ -8,7 +8,7 @@ That's a simple way to visualize how SVMs work. Let's learn about SVMs by using 
 
 In this module, you will:
 
-- Train an support vector model (SVM) model to do image classification by using items in a dataset. 
+- Train a support vector machine (SVM) model to do image classification by using items in a dataset. 
 - Use principal component analysis (PCA) to reduce the number of dimensions in a dataset to help increase the accuracy of a model.
 - Use `GridSearchCV` with scikit-learn to tune hyperparameters and increase the accuracy of your model.
 - Learn how to cross-validate a model, and quantify its accuracy.
