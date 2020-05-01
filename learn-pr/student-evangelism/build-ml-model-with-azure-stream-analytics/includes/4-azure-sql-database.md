@@ -6,7 +6,7 @@ In the previous unit, you wrote an Azure Function that passes each photo uploade
 
 Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This database will collect output from the Azure Function you deployed previously. Later, you will connect the database to Power BI to show where polar bears are being spotted.
 
-1. Return to the Azure Portal. Click the **Cloud Shell** button in the toolbar at the top of the page to open the Azure Cloud Shell. If you would prefer to run the Cloud Shell in its own browser window, open a separate browser instance and navigate to https://shell.azure.com.
+1. Return to the Azure portal. Click the **Cloud Shell** button in the toolbar at the top of the page to open the Azure Cloud Shell. If you would prefer to run the Cloud Shell in its own browser window, open a separate browser instance and navigate to https://shell.azure.com.
 
     ![Opening the Azure Cloud Shell](../media/cloud-shell.png)
 
@@ -26,13 +26,13 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 	az sql db create --resource-group polar-bear-rg --server SERVER_NAME --name DATABASE_NAME --service-objective S0
 	```
 
-1. Go to the database server in the [Azure Portal](https://portal.azure.com) and click **Firewalls and virtual networks** in the menu on the left. Turn on **Allow Azure services and resources to access this server** to allow Azure Functions and other Azure services to connect to the server, and click **+ Add client IP** so you can connect to the database from Power BI Desktop later. Then click **Save** at the top of the blade to save these changes.
+1. Go to the database server in the [Azure portal](https://portal.azure.com) and click **Firewalls and virtual networks** in the menu on the left. Turn on **Allow Azure services and resources to access this server** to allow Azure Functions and other Azure services to connect to the server, and click **+ Add client IP** so you can connect to the database from Power BI Desktop later. Then click **Save** at the top of the blade to save these changes.
 
 	![Configuring the database server](../media/configure-database-server.png)
 
 	_Configuring the database server_
 
-1. Open the database in the Azure Portal. Click **Query editor** in the menu on the left and enter the user name and password you specified in Step 2. Then click **OK** to log in to the database.
+1. Open the database in the Azure portal. Click **Query editor** in the menu on the left and enter the user name and password you specified in Step 2. Then click **OK** to log in to the database.
 
 1. Paste the following statements into the query window and click **Run** to run them and create a database table:
 
@@ -74,7 +74,7 @@ Note the column named "IsPolarBear," which will be set to 1 or 0 to indicate tha
 
 The next step is to modify the Azure Function that you created to write output to the Azure SQL Database.
 
-1. Open the Azure Function App that you created in the previous unit in the Azure Portal. Click **Platform features** to open the "Platform features" tab, and then click **Console** to open a function console. Execute the following command in the function console to install the NPM [tedious](https://www.npmjs.com/package/tedious) package, and ignore any warning messages that are displayed. `tedious` provides an API allowing Node.js apps to talk to SQL Server and Azure SQL Database.
+1. Open the Azure Function App that you created in the previous unit in the Azure portal. Click **Platform features** to open the "Platform features" tab, and then click **Console** to open a function console. Execute the following command in the function console to install the NPM [tedious](https://www.npmjs.com/package/tedious) package, and ignore any warning messages that are displayed. `tedious` provides an API allowing Node.js apps to talk to SQL Server and Azure SQL Database.
 
 	```bash
 	npm install tedious
@@ -169,7 +169,7 @@ The next step is to modify the Azure Function that you created to write output t
 	node run.js
 	```
 
-1. Let **run.js** run for a couple of minutes. Then return to the database in the Azure Portal and use the query editor to execute the following query:
+1. Let **run.js** run for a couple of minutes. Then return to the database in the Azure portal and use the query editor to execute the following query:
 
 	```sql
 	SELECT * FROM dbo.PolarBears

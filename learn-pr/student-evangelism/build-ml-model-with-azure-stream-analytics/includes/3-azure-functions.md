@@ -4,9 +4,9 @@ In this unit, you will write an Azure Function that is triggered each time an im
 
 ## Create an Azure Function ##
 
-Azure Functions can be written in the Azure Portal or written externally using tools such as Visual Studio. You will write an Azure Function in the portal. The function will be written in JavaScript and executed using Azure Functions' Node.js run-time. It will be triggered each time an image is uploaded to the "photos" container that you created in blob storage, and it will pass each blob that is uploaded to the Custom Vision Service to be analyzed for polar bears.
+Azure Functions can be written in the Azure portal or written externally using tools such as Visual Studio. You will write an Azure Function in the portal. The function will be written in JavaScript and executed using Azure Functions' Node.js run-time. It will be triggered each time an image is uploaded to the "photos" container that you created in blob storage, and it will pass each blob that is uploaded to the Custom Vision Service to be analyzed for polar bears.
 
-1. In the Azure Portal, click **+ Create a resource**, followed by **Compute** and **Function App**.
+1. In the Azure portal, click **+ Create a resource**, followed by **Compute** and **Function App**.
 
 1. Enter an app name that is unique to Azure. Place the Function App in the "polar-bear-rg" resource group and select the **South Central US** region. Choose **Node.js** as the runtime stack, and then click the **Next: Hosting** button.
 
@@ -20,7 +20,7 @@ Azure Functions can be written in the Azure Portal or written externally using t
 
     _Specifying hosting options_
 
-1. Wait for the Function App to be deployed. Then open it in the Azure Portal and click the **+** sign to the right of **Functions**. Click **In-portal**, and then click **Continue**.
+1. Wait for the Function App to be deployed. Then open it in the Azure portal and click the **+** sign to the right of **Functions**. Click **In-portal**, and then click **Continue**.
 
     ![Adding a function](../media/add-function-1.png)
 
@@ -92,7 +92,7 @@ Azure Functions can be written in the Azure Portal or written externally using t
 	            request(options, (err, result, body) => {
 	                if (!err) {
 	                    var probability =  body.predictions.find(p => p.tagName.toLowerCase() === 'polar bear').probability;          
-	                    var isPolarBear = probability > 0.8; // 80% threshhold
+	                    var isPolarBear = probability > 0.8; // 80% threshold
 	
 	                    if (isPolarBear) {
 	                        context.log('POLAR BEAR detected by ' + id + ' at ' + latitude + ', ' + longitude);
@@ -117,10 +117,10 @@ Azure Functions can be written in the Azure Portal or written externally using t
 	};
 	```
 
-	The modified function uses NPM's [request](https://www.npmjs.com/package/request) module to call the Custom Vision Service, passing the URL of the image to be analyzed. It parses the JSON results and retrieves the value indicating the probability that the image contains a polar bear. Then it writes the results to the output log. The threshhold for determining whether an image contains a polar bear is 80%:
+	The modified function uses NPM's [request](https://www.npmjs.com/package/request) module to call the Custom Vision Service, passing the URL of the image to be analyzed. It parses the JSON results and retrieves the value indicating the probability that the image contains a polar bear. Then it writes the results to the output log. The threshold for determining whether an image contains a polar bear is 80%:
 
 	```javascript
-	var isPolarBear = probability > 0.8; // 80% threshhold
+	var isPolarBear = probability > 0.8; // 80% threshold
 	```
 
 	Another notable aspect of this code is its use of a [shared-access signature](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1), or SAS. The "photos" container that you created is private. To access the blobs stored there, you must have access to the storage account or have the storage account's access key. Shared-access signatures (SAS) allow other users and services to access individual blobs, but only for a specified length of time and optionally with read-only access.
@@ -157,7 +157,7 @@ Azure Functions can be written in the Azure Portal or written externally using t
 
 	_Opening the function's output log_
 
-1. Start a separate browser instance and navigate to the Azure Portal. Open the storage account and upload **image_12.jpg** from the "Camera Images" folder in the resources that accompany this module to the "photos" container. Here's what **image_12.jpg** looks like:
+1. Start a separate browser instance and navigate to the Azure portal. Open the storage account and upload **image_12.jpg** from the "Camera Images" folder in the resources that accompany this module to the "photos" container. Here's what **image_12.jpg** looks like:
 
 	![Image uploaded to blob storage](../media/image_12.jpg)
 
