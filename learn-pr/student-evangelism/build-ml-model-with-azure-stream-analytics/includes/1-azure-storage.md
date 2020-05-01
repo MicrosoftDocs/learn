@@ -1,6 +1,4 @@
-# Create a storage account and deploy virtual cameras #
-
-In this unit, you will create an Azure Storage account and implement a simulated camera array in [Node.js](https://nodejs.org/) that uploads wildlife photos to the account. The storage account will store photographs taken by the cameras that you deploy. These represent the first steps toward building an end-to-end solution that demonstrates how Azure services are combined to create sophisticated systems that incorporate cloud services and AI.
+In this unit, you will create an Azure Storage account and implement a simulated camera array in Node.js that uploads wildlife photos to the account. The storage account will store photographs taken by the cameras that you deploy. These represent the first steps toward building an end-to-end solution that demonstrates how Azure services are combined to create sophisticated systems that incorporate cloud services and AI.
 
 ## Create a storage account ##
 
@@ -12,7 +10,7 @@ Let's begin by using the [Azure Cloud Shell](https://azure.microsoft.com/feature
 
 	> If you would prefer, you can open a Cloud Shell in a separate browser window by pointing your browser to https://shell.azure.com. Clicking the Cloud Shell button in the portal opens a Cloud Shell inside the portal.
 
-    ![Opening the Azure Cloud Shell](media/cloud-shell.png)
+    ![Opening the Azure Cloud Shell](../media/cloud-shell.png)
 
     _Opening the Azure Cloud Shell_
 
@@ -77,7 +75,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. Wait for the install to finish. Then create a subdirectory named "photos" in the project directory. Copy all 30 **.jpg** files from the "Camera Images" folder in the resources that accompany this module to the "photos" subdirectory. These are the images that the simulated cameras will upload to blob storage, samples of which are shown below. Wildlife depicted in the images include Arctic foxes, polar bears, and walruses.
 
-	![Sample wildlife images](media/wildlife-images.png)
+	![Sample wildlife images](../media/wildlife-images.png)
 
 
 1. Create a file named **cameras.json** in the project directory and paste in the following JSON:
@@ -271,13 +269,13 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. Return to the [Azure Portal](https://portal.azure.com) in your browser. Open the storage account that you created in the previous exercise, and then open the "photos" container. Confirm that it contains several **.jpg** images as shown below.
 
-    ![Images uploaded to the "photos" container](media/uploaded-images.png)
+    ![Images uploaded to the "photos" container](../media/uploaded-images.png)
 
     _Images uploaded to the "photos" container_
 
 1. Click one of the blobs to show a blob detail and examine the blob's metadata. Confirm that the blob metadata contains properties named `latitude`, `longitude`, and `id` as pictured below:
 
-    ![Viewing blob metadata](media/blob-metadata.png)
+    ![Viewing blob metadata](../media/blob-metadata.png)
 
     _Viewing blob metadata_
 

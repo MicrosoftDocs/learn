@@ -2,7 +2,7 @@
 
 [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) is a suite of more than 20 services and APIs backed by machine learning that enables developers to incorporate intelligent features such as facial recognition and sentiment analysis into their applications. The [Custom Vision Service](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) is one member of the Cognitive Services family. Its purpose is to create image-classification models that "learn" from labeled images you provide. Want to know if a photo contains a picture of a flower? Train the Custom Vision Service with a collection of flower images, and it can tell you whether the next image includes a flower — or even what type of flower it is.
 
-![Custom Vision Service](media/custom-vision.jpg)
+![Custom Vision Service](../media/custom-vision.jpg)
 
 The Custom Vision Service exposes two APIs: the [Custom Vision Training API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/d9a10a4a5f8549599f1ecafc435119fa/operations/58d5835bc8cb231380095be3) and the [Custom Vision Prediction API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/eb68250e4e954d9bae0c2650db79c653/operations/58acd3c1ef062f0344a42814). You can build, train, and test image-classification models using the [Custom Vision Service portal](https://www.customvision.ai/), or you can build, train, and test them using the Custom Vision Training API. Once a model is trained, you can use the Custom Vision Prediction API to build apps that utilize it. Both are REST APIs that can be called from a variety of programming languages.
 
@@ -14,13 +14,13 @@ You will begin by creating a new Custom Vision Service project. Then you will up
 
 1. Open the [Custom Vision Service portal](https://www.customvision.ai/) in your browser. Then click **Sign In** and sign in with your Microsoft account. 
  
-    ![Signing in to the Custom Vision Service portal](media/portal-sign-in.png)
+    ![Signing in to the Custom Vision Service portal](../media/portal-sign-in.png)
 
     _Signing in to the Custom Vision Service portal_
 
 1. Click **+ NEW PROJECT** to display the "Create new project" dialog. Enter a project name and click **create new** to create a new Cognitive Services resource. Name the resource "polar-bear-vision" and place it in the "polar-bear-rg" resource group. Make sure the location is set to **South Central US**, and then click **Create resource**.
 
-    ![Creating a Cognitive Services resource](media/new-resource.png)
+    ![Creating a Cognitive Services resource](../media/new-resource.png)
 
     _Creating a Cognitive Services resource_
 
@@ -28,25 +28,25 @@ You will begin by creating a new Custom Vision Service project. Then you will up
 
 	> A domain optimizes a model for specific types of images. For example, if your goal is to classify food images by the types of food they contain or the ethnicity of the dishes, then it is helpful to select the Food domain. For scenarios that don't match any of the offered domains, or if you are unsure of which domain to choose, select the General domain.
 
-	![Creating a Custom Vision Service project](media/new-project.png)
+	![Creating a Custom Vision Service project](../media/new-project.png)
 
     _Creating a Custom Vision Service project_
 
 1. Click **Add images** to add images to the project.
 
-	![Adding images to the project](media/add-images.png)
+	![Adding images to the project](../media/add-images.png)
 
     _Adding images to the project_ 
  
 1. Browse to the folder containing the resources that accompany this module and select all of the files in the "Training Images/Arctic Fox" directory. Then OK the selection, enter "Arctic fox" as the tag for the images, and click the **Upload 130 files** button. Wait for the upload to complete, and then click **Done**.
 
-	![Uploading Arctic-fox images](media/upload-files-1.png)
+	![Uploading Arctic-fox images](../media/upload-files-1.png)
 
     _Uploading Arctic-fox images_ 
  
 1. Click **Add images** at the top of the page and repeat the previous step to upload all of the images in the "Training Images/Polar Bear" directory to the Custom Vision Service and tag them with the term "Polar bear." Wait for the upload to complete, and then click **Done**.
 
-	![Uploading polar-bear images](media/upload-files-2.png)
+	![Uploading polar-bear images](../media/upload-files-2.png)
 
     _Uploading polar-bear images_ 
 
@@ -60,7 +60,7 @@ Now it's time to train the model using the images that you tagged and uploaded. 
 
 1. Click the **Train** button at the top of the page to train the model. When prompted to choose a training type, select **Quick Training**.
 
-	![Training the model](media/train-model.png)
+	![Training the model](../media/train-model.png)
 
 	_Training the model_
 
@@ -68,7 +68,7 @@ Now it's time to train the model using the images that you tagged and uploaded. 
 
 	>  Each time you train the model, a new version ("iteration") is created. The Custom Vision Service maintains all of your iterations so you can choose which version of the model to use.
 
-	![Results of training the model](media/training-results.png)
+	![Results of training the model](../media/training-results.png)
 
     _Results of training the model_ 
 
@@ -88,13 +88,13 @@ Now it's time to train the model using the images that you tagged and uploaded. 
 
 1. Return to the project and click **Publish** at the top of the page. Make sure **polar-bear-vision** is selected as the prediction resource. Then click the **Publish** button.
 
-	![Publishing the model](media/publish-model.png)
+	![Publishing the model](../media/publish-model.png)
 
     _Publishing the model_ 
 
 1. Click **Prediction URL** at the top of the page. The ensuing dialog lists two URLs: one for uploading images via URL, and another for uploading images as byte streams. Copy the former to the clipboard, and then paste it into your favorite text editor so you can retrieve it later. Do the same for the `Prediction-Key` value underneath the URL. This value must be passed in each call to the prediction URL. Finish up by clicking **Got it!** to dismiss the dialog.
 
-	![Copying the Prediction API URL](media/copy-prediction-url.png)
+	![Copying the Prediction API URL](../media/copy-prediction-url.png)
 
     _Copying the Prediction API URL_ 
 

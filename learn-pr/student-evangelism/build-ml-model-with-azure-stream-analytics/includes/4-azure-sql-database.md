@@ -8,7 +8,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
 1. Return to the Azure Portal. Click the **Cloud Shell** button in the toolbar at the top of the page to open the Azure Cloud Shell. If you would prefer to run the Cloud Shell in its own browser window, open a separate browser instance and navigate to https://shell.azure.com.
 
-    ![Opening the Azure Cloud Shell](media/cloud-shell.png)
+    ![Opening the Azure Cloud Shell](../media/cloud-shell.png)
 
     _Opening the Azure Cloud Shell_
 
@@ -28,7 +28,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
 1. Go to the database server in the [Azure Portal](https://portal.azure.com) and click **Firewalls and virtual networks** in the menu on the left. Turn on **Allow Azure services and resources to access this server** to allow Azure Functions and other Azure services to connect to the server, and click **+ Add client IP** so you can connect to the database from Power BI Desktop later. Then click **Save** at the top of the blade to save these changes.
 
-	![Configuring the database server](media/configure-database-server.png)
+	![Configuring the database server](../media/configure-database-server.png)
 
 	_Configuring the database server_
 
@@ -64,7 +64,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
 1. Expand the list of tables in the treeview on the left and confirm that the "dbo.PolarBears" table was created, and that it has the following schema:
 
-	![The dbo.PolarBears table](media/polar-bears-table.png)
+	![The dbo.PolarBears table](../media/polar-bears-table.png)
 
 	_The dbo.PolarBears table_
 
@@ -177,7 +177,7 @@ The next step is to modify the Azure Function that you created to write output t
 
 1. Confirm that the table contains a few rows representing images that were submitted to the Custom Vision Service for analysis. Look at the "IsPolarBear" column in each row. How many of the images that were analyzed contain a polar bear?
 
-	![Rows written to the database by the Azure Function](media/query-results.png)
+	![Rows written to the database by the Azure Function](../media/query-results.png)
 
 	_Rows written to the database by the Azure Function_
 

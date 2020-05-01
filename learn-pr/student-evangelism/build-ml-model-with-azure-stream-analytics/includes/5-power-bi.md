@@ -14,7 +14,7 @@ You used the [Custom Vision Service](https://azure.microsoft.com/services/cognit
 
 1. Click **Get Data** in the ribbon at the top of the window. Then select **Azure SQL database** from the list of data sources and click the **Connect** button.
 
-    ![Adding a data source](media/connect-to-database-1.png)
+    ![Adding a data source](../media/connect-to-database-1.png)
 
     _Adding a data source_
 
@@ -23,13 +23,13 @@ You used the [Custom Vision Service](https://azure.microsoft.com/services/cognit
 	```sql
 	SELECT TOP 20 Id, CameraId, Latitude, Longitude, Url, Timestamp, FORMAT(Timestamp,'MM/dd/yyyy h:mm:ss tt') AS TimestampLabel, IsPolarBear FROM dbo.PolarBears ORDER BY Timestamp DESC
 	```
-    ![Connecting to the database](media/connect-to-database-2.png)
+    ![Connecting to the database](../media/connect-to-database-2.png)
 
     _Connecting to the database_
 
 1. In the ensuing dialog, click **Database** in the menu on the left. Enter the user name and password you specified when you created the database server, and select the database server from the drop-down list. Click **Connect**, and then click the **Load** button in the next dialog.
 
-    ![Entering admin credentials](media/connect-to-database-3.png)
+    ![Entering admin credentials](../media/connect-to-database-3.png)
 
     _Entering admin credentials_
 
@@ -41,55 +41,55 @@ Visualizations (or simply "visuals") are the primary element that make up Power 
 
 1. Click the **Map** icon in the "Visualizations" panel to add a map visual to the report.
 	
-	![Adding a map visual](media/add-map-visual.png)
+	![Adding a map visual](../media/add-map-visual.png)
 
 	_Adding a map visual_
 
 1. Check the **IsPolarBear**, **Latitude**, and **Longitude** boxes in the "Fields" panel to include these fields in the map visual.
 	
-	![Adding fields to the map visual](media/check-lat-lon.png)
+	![Adding fields to the map visual](../media/check-lat-lon.png)
 
 	_Adding fields to the map visual_
 
 1. In the "Visualizations" panel, click the down arrow next to **Average of Latitude** and select **Don't summarize** from the menu. Then do the same for **Average of Longitude**.
 
-	![Removing summary calculations](media/dont-summarize.png)
+	![Removing summary calculations](../media/dont-summarize.png)
 
 	_Removing summary calculations_
 
 1. Click in the empty area outside the map to deselect it. Then check the **CameraId**, **IsPolarBear**, and **TimestampLabel** boxes in the "Fields" panel to add a table visual containing those columns to the report.
 
-	![Adding a table visual](media/add-table-visual.png)
+	![Adding a table visual](../media/add-table-visual.png)
 
 	_Adding a table visual_
 
 1. Click in an empty area to deselect the table visual. Then check **IsPolarBear** and **Latitude** in the "Fields" panel to add another table visual, and click the **Pie Chart** icon in the "Visualizations" panel to convert the table into a pie chart. 
 
-	![Adding a pie-chart visual](media/add-pie-chart-visual.png)
+	![Adding a pie-chart visual](../media/add-pie-chart-visual.png)
 
 	_Adding a pie-chart visual_
 
 1. Click the down arrow next to **Average of Latitude** and select **Count** from the menu to configure the pie chart to show a count of sightings and the proportion of sightings in which polar bears were detected. 
 
-	![Refining the pie-chart visual](media/refine-pie-chart-visual.png)
+	![Refining the pie-chart visual](../media/refine-pie-chart-visual.png)
 
 	_Refining the pie-chart visual_
 
 1. Deselect the pie-chart visual and click the **Slicer** icon to add a slicer to the report. Slicers provide a convenient means for filtering information in a Power BI report by narrowing the data shown in other visuals. Then select the **IsPolarBear** field in the "Fields" panel so the slicer shows checkboxes labeled "True" and "False."
 
-	![Adding a slicer](media/add-slicer.png)
+	![Adding a slicer](../media/add-slicer.png)
 
 	_Adding a slicer_
 
 1. Now resize and reposition the visuals to achieve a layout similar to this:
 
-	![Adjusting the layout](media/adjust-layout.png)
+	![Adjusting the layout](../media/adjust-layout.png)
 
 	_Adjusting the layout_
 
 1. With the report structure in place, the next task is to use some of Power BI's rich formatting options to embellish the visuals. Start by selecting the map visual in the report designer. Then click the **Format** icon in the "Visualizations" panel.
 
-	![Formatting the map visual](media/format-map.png)
+	![Formatting the map visual](../media/format-map.png)
 
 	_Formatting the map visual_
 
@@ -103,7 +103,7 @@ Visualizations (or simply "visuals") are the primary element that make up Power 
 
 	Confirm that the resulting map looks something like this:
 
-	![Formatted map visual](media/formatted-map-visual.png)
+	![Formatted map visual](../media/formatted-map-visual.png)
 
 	_Formatted map visual_
 
@@ -146,7 +146,7 @@ Now that the report is prepared in Power BI, your final task is to run the end-t
 
 1. Confirm that red and green bubbles appear at various locations around the island. Green bubbles indicate the presence of polar bears, while red bubbles represent locations where photos were taken but no polar bears were detected. Locations that have a mixture of sightings will show red *and* green, as pictured below.
 
-	![There be polar bears!](media/live-map.png)
+	![There be polar bears!](../media/live-map.png)
 
 	_There be polar bears!_
 

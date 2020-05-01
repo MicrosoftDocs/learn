@@ -10,25 +10,25 @@ Azure Functions can be written in the Azure Portal or written externally using t
 
 1. Enter an app name that is unique to Azure. Place the Function App in the "polar-bear-rg" resource group and select the **South Central US** region. Choose **Node.js** as the runtime stack, and then click the **Next: Hosting** button.
 
-    ![Creating an Azure Function App](media/create-function-app-1.png)
+    ![Creating an Azure Function App](../media/create-function-app-1.png)
 
     _Creating an Azure Function App_
 
 1. Select the storage account that you created to receive wildlife photos. Change **Plan type** to **App service plan** so the function will execute immediately when a blob is uploaded to the "photos" container. Accept the defaults everywhere else, and click **Review + create**. Wait for validation to complete, and then click **Create**.
 
-    ![Specifying hosting options](media/create-function-app-2.png)
+    ![Specifying hosting options](../media/create-function-app-2.png)
 
     _Specifying hosting options_
 
 1. Wait for the Function App to be deployed. Then open it in the Azure Portal and click the **+** sign to the right of **Functions**. Click **In-portal**, and then click **Continue**.
 
-    ![Adding a function](media/add-function-1.png)
+    ![Adding a function](../media/add-function-1.png)
 
     _Adding a function_
 
 1. Click **More templates**. Then click **Finish and view templates**.
 
-    ![Viewing additional function templates](media/add-function-2.png)
+    ![Viewing additional function templates](../media/add-function-2.png)
 
     _Viewing additional function templates_
 
@@ -36,7 +36,7 @@ Azure Functions can be written in the Azure Portal or written externally using t
 
 1. Change the function name to `BlobTrigger` and the path to "photos/{name}" so the function will be triggered when blobs are uploaded to the "photos" container. Click **new** next to "Storage account connection" and select the storage account that you created earlier. Then click **Create** to add the function to the Function App. 
 
-    ![Creating a blob-triggered function](media/add-function-3.png)
+    ![Creating a blob-triggered function](../media/add-function-3.png)
 
     _Creating a blob-triggered function_
 
@@ -131,7 +131,7 @@ Azure Functions can be written in the Azure Portal or written externally using t
 
 1. Click the Function App in the menu on the left. Click **Platform features**, and then click **Console** to open a function console.
 
-	![Opening a function console](media/open-function-console.png)
+	![Opening a function console](../media/open-function-console.png)
 
 	_Opening a function console_
 
@@ -153,19 +153,19 @@ Azure Functions can be written in the Azure Portal or written externally using t
 
 1. Return to the `BlobTrigger` function in the portal and click **Logs** at the bottom of the page to open the function's output log. 
 
-	![Opening the function's output log](media/open-output-log.png)
+	![Opening the function's output log](../media/open-output-log.png)
 
 	_Opening the function's output log_
 
 1. Start a separate browser instance and navigate to the Azure Portal. Open the storage account and upload **image_12.jpg** from the "Camera Images" folder in the resources that accompany this module to the "photos" container. Here's what **image_12.jpg** looks like:
 
-	![Image uploaded to blob storage](media/image_12.jpg)
+	![Image uploaded to blob storage](../media/image_12.jpg)
 
 	_Image uploaded to blob storage_
 
 1. Return to the function log in the other browser instance and confirm that the function executed, and that **image_12.jpg** was determined by the Custom Vision Service to contain a polar bear.
 
-	![Viewing the output log](media/function-output-1.png)
+	![Viewing the output log](../media/function-output-1.png)
 
 	_Viewing the output log_
 
@@ -183,7 +183,7 @@ Next, you will run the simulated camera array that you created earlier. Then you
 
 1. Return to the `BlobTrigger` function in the Azure portal and watch the output log for a minute or two. Confirm that the function is being triggered and that it's calling the Custom Vision Service to determine whether each photo uploaded to the "photos" container contains a polar bear.
 
-	![There be polar bears!](media/function-output-2.png)
+	![There be polar bears!](../media/function-output-2.png)
 
 	_There be polar bears!_
 
