@@ -115,7 +115,7 @@ namespace Qrng {
 }
 ```
 Don't worry if you don't understand all the parts of the code above. We have
-introduced many new things! Let's take a look to the most important ones:
+introduced many new things! Let's take a look at the most important ones:
 
 - In the  `GenerateRandomNumber` operation we have implemented a type of loop
   specific from Q# that is called *Repeat Until Success (RUS)*. This kind of
