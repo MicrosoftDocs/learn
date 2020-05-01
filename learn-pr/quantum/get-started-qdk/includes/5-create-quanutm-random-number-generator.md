@@ -13,7 +13,7 @@ Let's see how can we use Q# features to build a random number generator.
 
 ## Logic of a random number generator
 
-First let's outline what the logic of an random number generator should
+First let's outline what the logic of a random number generator should
 be, provided we have a random bit generator:
 
         - We set a maximum number that can be generated: `max`
