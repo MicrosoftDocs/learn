@@ -253,7 +253,7 @@ Configure the proxy for your front-end app with the following steps:
 
 ### Run your front-end web app
 
-Your API is already running on port 7071. Now when you run your web app it will make its HTTP requests to your API. Run your web app by following these steps:
+Your API is already running on port 7071. Now when you run your web app it'll make its HTTP requests to your API. Run your web app by following these steps:
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
 1. Type and select **Terminal: Create New Integrated Terminal**

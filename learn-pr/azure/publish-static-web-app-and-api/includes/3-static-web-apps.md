@@ -10,7 +10,7 @@ When you publish your app to the web with Azure Static Web Apps, you're getting 
 
 ### Connecting your Static Web Apps instance to GitHub
 
-Azure Static Web Apps is specifically designed to host applications where the source code lives on GitHub. When you create a Static Web Apps instance, you'll sign in to GitHub and specify the repository containing your app's code. 
+Azure Static Web Apps is specifically designed to host applications where the source code lives on GitHub. When you create a Static Web Apps instance, you'll sign in to GitHub and specify the repository containing your app's code.
 
 You also need to specify three folder paths within your repository so your app can be automatically built and deployed:
 
@@ -32,7 +32,7 @@ The GitHub Action is added to your repository in the _.github/workflows_ folder.
 
 ### Integrated API with Azure Functions
 
-If your app requires an API, you can implement it as an Azure Functions project in your repository and it will be automatically deployed and hosted by your Static Web Apps instance. The GitHub Action that performs the build and deployment locates the API within your repo by the name of the folder you designate.
+If your app requires an API, you can implement it as an Azure Functions project in your repository and it'll be automatically deployed and hosted by your Static Web Apps instance. The GitHub Action that performs the build and deployment locates the API within your repo by the name of the folder you designate.
 
 Typically you put the API app in a folder named _api_ or _functions_, but you can name it whatever you prefer.
 
