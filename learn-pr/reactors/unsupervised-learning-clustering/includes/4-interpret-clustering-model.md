@@ -163,7 +163,7 @@ TBD
 >
 > ### Question
 >
-> Look back over the Python in the code cell above. Does the syntax make sense? If not, review the documentation for [`pandas.DataFrame.loc`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html) and [`pandas.Series.value_counts`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html).
+> Look back over the Python in the code cell above. Does the syntax make sense? If not, review the documentation for [`pandas.DataFrame.loc`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?azure-portal=true) and [`pandas.Series.value_counts`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html?azure-portal=true).
 
 ### Try it yourself
 
@@ -242,7 +242,7 @@ TBD
 >
 > ### Question
 >
-> Look back over the Python in the code cell above. Does the syntax make sense? If not, review the documentation for [`pandas.DataFrame.sort_values`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html) and [slicing ranges in pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#slicing-ranges).
+> Look back over the Python in the code cell above. Does the syntax make sense? If not, review the documentation for [`pandas.DataFrame.sort_values`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html?azure-portal=true) and [slicing ranges in pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#slicing-ranges?azure-portal=true).
 
 ### Try it yourself
 

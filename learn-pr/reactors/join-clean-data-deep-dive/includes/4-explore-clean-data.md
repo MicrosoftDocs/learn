@@ -73,7 +73,7 @@ The output is:
 TBD
 ```
 
-The `append()` method has basically stacked the `DataFrame` by appending a copy of `df` to the end of the `DataFrame`. (In SQL terms, we performed a [UNION](https://www.w3schools.com/sql/sql_union.asp)). The `ignore_index=True` parameter means that the internal index numbering for the newly doubled `DataFrame` continues seamlessly.
+The `append()` method has basically stacked the `DataFrame` by appending a copy of `df` to the end of the `DataFrame`. (In SQL terms, we performed a [UNION](https://www.w3schools.com/sql/sql_union.asp?azure-portal=true)). The `ignore_index=True` parameter means that the internal index numbering for the newly doubled `DataFrame` continues seamlessly.
 
 Now let's look directly at how many times individual values in a column (such as `NDB_No`, which is a key) are duplicated. We'll use the `groupby` function to create a "group" for each instance of `NDB_No`, and then we'll count each instance.
 

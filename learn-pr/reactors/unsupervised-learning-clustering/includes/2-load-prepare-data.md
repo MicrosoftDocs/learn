@@ -1,5 +1,5 @@
 
-To illustrate *k*-means clustering in action, we'll use the familiar [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/) dataset that you used in Sections 1.1 through 1.3. (Note that the path name is case sensitive.)
+To illustrate *k*-means clustering in action, we'll use the familiar [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/?azure-portal=true) dataset that you used in Sections 1.1 through 1.3. (Note that the path name is case sensitive.)
 
 ```python
 import pandas as pd
@@ -125,7 +125,7 @@ TBD
 > [!NOTE]
 > Again, if the read_csv() function did not read in the µ (mu) symbol correctly and the drop() method call above fails, try this code instead: `nutr_df.drop(['Folate\_DFE\_(Âµg)', 'Vit\_A\_RAE', 'Vit\_D\_IU'], inplace=True, axis=1)`
 
-Because the *k*-means algorithm will be calculating the Euclidean distances between data points and centroids, we need to ensure that all of the numeric features in our dataset use compatible units; we don't want to try and calculate distances between units of mass like grams and units of energy like kilocalories. Just as we did with principal component analysis (PCA) in Section 1.2, we will use scikit-learn's [`StandardScaler()` function](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) to center the data around each feature's mean and transform each feature to have a standard deviation of 1.
+Because the *k*-means algorithm will be calculating the Euclidean distances between data points and centroids, we need to ensure that all of the numeric features in our dataset use compatible units; we don't want to try and calculate distances between units of mass like grams and units of energy like kilocalories. Just as we did with principal component analysis (PCA) in Section 1.2, we will use scikit-learn's [`StandardScaler()` function](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html?azure-portal=true) to center the data around each feature's mean and transform each feature to have a standard deviation of 1.
 
 ```python
 from sklearn.preprocessing import StandardScaler

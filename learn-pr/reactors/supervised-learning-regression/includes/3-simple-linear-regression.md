@@ -40,7 +40,7 @@ TBD
 > [!NOTE]
 > Notice in the code cell above that we did not fit the model using `model.fit(df['ppgdp'], df['lifeExpF'])`. Instead, we had to use `df['ppgdp'][:, np.newaxis]` for our predictors rather than just `df['ppgdp']`. The addition of `[:, np.newaxis]` changes `df['ppgdp']` from a pandas `Series` to an array in matrix format. (If you're unsure what that looks like, create a new code cell below this cell using **Insert > Insert Cell Below** and then run `df['ppgdp']` and then `df['ppgdp'][:, np.newaxis]` in order to see the difference.
 
-Just how poor is this initial model? Let's calculate the $R^2$ score for it to see. The $R^2$ score (also called the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination)) represents the proportion of the variance in our response that is predictable from the predictors -- so 0 is the worst (a model explains none of the variance) and 1 is the best (a model explains all of it).
+Just how poor is this initial model? Let's calculate the $R^2$ score for it to see. The $R^2$ score (also called the [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination?azure-portal=true)) represents the proportion of the variance in our response that is predictable from the predictors -- so 0 is the worst (a model explains none of the variance) and 1 is the best (a model explains all of it).
 
 ```python
 from sklearn.metrics import r2_score
