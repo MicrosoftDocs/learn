@@ -1,4 +1,3 @@
-
 By the end of this subsection, you should be comfortable loading data from files into panda `DataFrame`s and troubleshooting any difficulties that might arise.
 
 Because pandas `DataFrame`s are two-dimensional data structures, they are inherently similar to flat-file formats such as comma-separated value (CSV) files, the most common import and export format for spreadsheets and databases. Adding to this ease of translation from CSV files to `DataFrame`s, pandas provides a convenient function to load the contents of CSV files into `DataFrame`s (more convenient, in fact, then the native Python [CSV library](https://docs.python.org/3.6/library/csv.html?azure-portal=true)). Let's get comfortable with [pandas.read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html?azure-portal=true) because we will be using often.
@@ -41,6 +40,7 @@ Use the built-in IPython documentation to on `pd.read_csv.`
 
   ```Output
   ```
+  
   ***Jak: Add screenshot***
 
 </details>
