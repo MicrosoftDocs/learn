@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.get-started-qdk.4-create-quantum-random-number-generator
+uid: learn.quantum.get-started-qdk.5-create-quantum-random-number-generator
 title: Exercise - Create a quantum random number generator
 metadata:
   title: Exercise - Create a quantum random number generator
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-create-quantum-random-number-generator.md)]
+  [!include[](includes/5-create-quantum-random-number-generator.md)]
