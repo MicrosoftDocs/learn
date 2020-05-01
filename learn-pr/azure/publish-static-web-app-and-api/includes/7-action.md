@@ -8,7 +8,7 @@ Now, everything changes.
 
 ## How the GitHub Action knows where your code is
 
-The folder _.github/workflows_ contains tour GitHub Action file. The file contains the settings for the locations of your web app, API, and build artifacts. The locations you chose when you created your Azure Static Web Apps resource are now located in this file, as shown below:
+The folder _.github/workflows_ contains your GitHub Action file. The file contains the settings for the locations of your web app, API, and build artifacts. The locations you chose when you created your Azure Static Web Apps resource are now located in this file, as shown below:
 
 ::: zone pivot="angular"
 
@@ -64,8 +64,8 @@ The following table shows how Azure Static Web Apps will publish your app to dif
 
 | Source            | Description       | URL                                                    |
 | ----------------- | ----------------- | ------------------------------------------------------ |
-| **master** branch | Live web site URL | https://purple-rain-062d03304.staticsitescanary.net/   |
-| Pull Request #5   | Preview URL       | https://purple-rain-062d03304-5.staticsitescanary.net/ |
+| **master** branch | Live web site URL | `https://purple-rain-062d03304.staticsitescanary.net/`   |
+| Pull Request #5   | Preview URL       | `https://purple-rain-062d03304-5.staticsitescanary.net/` |
 
 You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **master** branch. When you create the pull request against the **master** branch, the GitHub Action publishes the app to a preview URL.
 

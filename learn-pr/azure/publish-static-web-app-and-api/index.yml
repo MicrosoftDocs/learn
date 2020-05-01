@@ -12,10 +12,10 @@ title: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azu
 summary: Automatically deploy and update a static web application and its API from a GitHub repository.
 abstract: |
   In this module, you will:
-    - Choose an existing web app project with either Angular, React, Svelte or Vue.
-    - Create an API for the app with Azure Functions.
-    - Run the application locally.
-    - Publish the app and its API to an Azure Static Web App.
+    - Choose an existing web app project with either Angular, React, Svelte or Vue
+    - Create an API for the app with Azure Functions
+    - Run the application locally
+    - Publish the app and its API to Azure Static Web Apps
 prerequisites: |
   - Familiarity with one of Angular, React, Svelte, or Vue
   - Beginner-level experience with Azure Functions

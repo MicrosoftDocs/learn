@@ -5,7 +5,7 @@ Your web app and API are both running locally. Now it's time to publish your web
 You've made changes to your API in the previous exercise. Commit those changes to the **api** branch and push them to GitHub by following these steps:
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
-1. Type and select **Git: Commit All**
+1. Type and select **Git: Commit All**. If Visual Studio Code prompts you to automatically stage all of your changes and commit them directly, select **Yes**.
 1. Enter a commit message such as **api changes**
 1. Open the command palette by pressing **F1**
 1. Type and select **Git: Push**
@@ -44,7 +44,7 @@ Once the GitHub Action has completed successfully, you can view your running app
 
 1. Click on the **Pull requests** menu
 1. Select your pull request
-1. Click on the link following the message **Azure Pages: Your stage site is ready! Visit it here**
+1. Click on the link following the message **Azure Static Web Apps: Your stage site is ready! Visit it here**
 
 Notice that the preview URL contains a hyphen followed by a number. The number matches the pull request number for the pull request you created. For every pull request you create, you'll get a unique and repeatable preview URL.
 

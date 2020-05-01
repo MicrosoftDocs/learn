@@ -1,6 +1,6 @@
 Your ultimate goal is to host your app in Azure. Azure Static Web Apps takes care of provisioning all the necessary Azure resources for you.
 
-However, before you app can be hosted, you need something to build your app as you make changes. Those changes could be via commits or pull requests to your repository. A key feature of Azure Static Web Apps is that is sets up a GitHub Action to build and publish your application.
+However, before you app can be hosted, you need something to build your app as you make changes. Those changes could be via commits or pull requests to your repository. A key feature of Azure Static Web Apps is that it sets up a GitHub Action to build and publish your application.
 
 ## Azure Static Web Apps
 
@@ -32,7 +32,7 @@ The GitHub Action is added to your repository in the _.github/workflows_ folder.
 
 ### Integrated API with Azure Functions
 
-If your app requires an API, you can implement it as an Azure Functions project in your repository, which is automatically deployed and hosted by your Static Web Apps instance. The GitHub Action that performs the build and deployment locates the API within your repo by the name of the folder you designate.
+If your app requires an API, you can implement it as an Azure Functions project in your repository and it will be automatically deployed and hosted by your Static Web Apps instance. The GitHub Action that performs the build and deployment locates the API within your repo by the name of the folder you designate.
 
 Typically you put the API app in a folder named _api_ or _functions_, but you can name it whatever you prefer.
 

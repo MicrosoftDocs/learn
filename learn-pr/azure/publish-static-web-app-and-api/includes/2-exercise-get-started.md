@@ -14,7 +14,7 @@ This tutorial uses a GitHub template repository. Template repositories make it e
 
 You just created a GitHub repository named **my-first-static-web-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
 
-1. Start by cloning the GitHub repository to our computer.
+1. Start by cloning the GitHub repository to your computer.
 
    ```bash
    git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-first-static-web-app

@@ -1,11 +1,11 @@
-Your shopping list web app needs an API. In this exercise, you'll build and run your API using an Azure Functions project. You'll get and explore an API using an Azure Functions project. You'll also extend the API with a new function for your HTTP GET endpoint using the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).
+Your shopping list web app needs an API. In this exercise, you'll build and run your API using an Azure Functions project. You'll get and explore an API using an Azure Functions project. You'll also extend the API with a new function for your HTTP GET endpoint using the Azure Functions extension for Visual Studio Code.
 
 You'll follow this breakdown, in this exercise:
 
 1. Create a branch as you prepare to make changes to your web app
 1. Explore the Azure Function project
 1. Create the HTTP GET function
-1. Refactor the function logic to get products
+1. Replace the function starter code with logic to get products
 1. Configure the web app to proxy HTTP requests to the API
 1. Run the API and the web app
 
@@ -26,7 +26,7 @@ You just created the **api** git branch.
 
 ### Complete the Azure Functions API
 
-To complete the API, you'll start by moving the starter API code to a folder named _api_.
+To complete the API, you'll start by moving the starter API code to a folder named _api_. This is the folder name you entered when you created the Static Web Apps instance.
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
 1. Type and select **Terminal: Create New Integrated Terminal**
@@ -238,7 +238,7 @@ Configure the proxy for your front-end app with the following steps:
 ::: zone pivot="svelte"
 
 1. Open the file _svelte-app/rollup.config.js_
-1. Locate the line of code `const api = 'http://localhost:707/api';`
+1. Locate the line of code `const api = 'http://localhost:7071/api';`
 1. Notice that the api's port points to 7071
 
 ::: zone-end
