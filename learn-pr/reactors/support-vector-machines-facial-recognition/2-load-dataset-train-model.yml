@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.support-vector-machines-facial-recognition.2-load-dataset-train-model
+title: Load the dataset and train the SVM model
+metadata:
+  title: Load the dataset and train the SVM model
+  description: Load the dataset and train the SVM model to increase classification accuracy.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-load-dataset-train-model.md)]
