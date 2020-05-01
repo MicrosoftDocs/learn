@@ -1,4 +1,4 @@
-Now that you know how to create arrays in NumPy, you need to get comfortable manipulating them for two reasons. First, you will work with NumPy arrays as part of your exploration of data science. Second, our other important Python data-science tool, pandas, is actually built around NumPy. Getting good at working with NumPy arrays will pay dividends in the next section (Section 4) and beyond: NumPy arrays are the building blocks for the `Series` and `DataFrame` data structures in the Python pandas library and you will use them *a lot* in data science. To get comfortable with array manipulation, we will cover five specifics:
+Now that you know how to create arrays in NumPy, you need to get comfortable with manipulating them, for two reasons. First, you'll work with NumPy arrays as part of your exploration of data science. Second, our other important Python data-science tool, pandas, is actually built around NumPy. Getting good at working with NumPy arrays will pay dividends in the next section (Section 4) and beyond. NumPy arrays are the building blocks for the `Series` and `DataFrame` data structures in the Python pandas library. You'll use them *a lot* in data science. To help you get comfortable with array manipulation, we'll cover five specific topics:
 
 - **Arrays attributes**: Assessing the size, shape, and data types of arrays
 - **Indexing arrays**: Getting and setting the value of individual array elements
@@ -8,18 +8,18 @@ Now that you know how to create arrays in NumPy, you need to get comfortable man
 
 ## Array attributes
 
-First, let's look at some array attributes. We'll start by defining three arrays filled with random numbers: one one-dimensional, another two-dimensional, and the last three-dimensional. Because we will be using NumPy's random number generator, we will set a *seed* value in order to ensure that you get the same random arrays each time you run this code:
+First, let's look at some array attributes. We'll start by defining three arrays filled with random numbers: one one-dimensional, another two-dimensional, and the last three-dimensional. Because we'll be using NumPy's random number generator, we'll set a *seed* value to ensure that you get the same random arrays each time you run this code:
 
 ```python
 import numpy as np
-np.random.seed(0)  # seed for reproducibility
+np.random.seed(0)  # Seed for reproducibility
 
 a1 = np.random.randint(10, size=6)  # One-dimensional array
 a2 = np.random.randint(10, size=(3, 4))  # Two-dimensional array
 a3 = np.random.randint(10, size=(3, 4, 5))  # Three-dimensional array
 ```
 
-Each array has attributes `ndim` (the number of dimensions of an array), `shape` (the size of each dimension of an array), and `size` (the total number of elements in an array).
+Each array has attributes `ndim` (the number of dimensions of an array), `shape` (the size of each dimension of an array), and `size` (the total number of elements in an array):
 
 ```python
 print("a1 ndim: ", a1.ndim)
@@ -37,7 +37,7 @@ a1 size:  6
 
 ### Try it yourself
 
-Change the values in this code snippet to look at the attributes for a2 and a3:
+Change the values in this code snippet to look at the attributes for `a2` and `a3`:
 
 <br />
 
@@ -45,7 +45,7 @@ Change the values in this code snippet to look at the attributes for a2 and a3:
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  For a2:
+  For `a2`:
   
   ```python
   print("a2 ndim: ", a2.ndim)
@@ -61,7 +61,7 @@ Change the values in this code snippet to look at the attributes for a2 and a3:
   a2 size:  12
   ```
   
-  For a3:
+  For `a3`:
 
   ```python
   print("a3 ndim: ", a3.ndim)
@@ -84,7 +84,7 @@ Change the values in this code snippet to look at the attributes for a2 and a3:
 ***
 
 
-Another useful array attribute is the `dtype`, which we already encountered earlier in this section as a means of determining the type of data in an array:
+Another useful array attribute is `dtype`, which we already encountered earlier in this section as a way to determine the type of data in an array:
 
 ```python
 print("dtype:", a3.dtype)
@@ -98,9 +98,9 @@ dtype: int64
 
 ### Try it yourself
 
-Explore the `dtype` for the other arrays.
+Explore the `dtype` values for the other arrays.
 
-What `dtypes` do you predict them to have?
+What `dtype` values do you predict them to have?
 
 <br />
 
@@ -126,7 +126,7 @@ What `dtypes` do you predict them to have?
 
 ## Indexing arrays
 
-Indexing in NumPy is pretty similar to indexing lists in standard Python. In fact, indices in one-dimensional arrays work exactly as they do with Python lists:
+Indexing in NumPy is pretty similar to indexing lists in standard Python. In fact, indices in one-dimensional arrays work exactly as they do with Python lists.
 
 Try:
 
@@ -164,7 +164,7 @@ The output is:
 7
 ```
 
-As with regular Python lists, in order to index from the end of the array, you can use negative indices:
+As with regular Python lists, to index from the end of the array, you can use a negative index.
 
 For example:
 
@@ -194,7 +194,7 @@ The output is:
 
 Do multidimensional NumPy arrays work like Python lists of lists?
 
-Try a few combinations like `a2[1][1]` or `a3[0][2][1]` and see what comes back.
+Try a few combinations, like `a2[1][1]` or `a3[0][2][1]`, and see what comes back.
 
 <br />
 
@@ -230,9 +230,9 @@ Try a few combinations like `a2[1][1]` or `a3[0][2][1]` and see what comes back.
 
 ***
 
-You might have noticed that we can treat multidimensional arrays like lists of lists. But a more common means of accessing items in multidimensional arrays is to use a comma-separated tuple of indices.
+You might have noticed that we can treat multidimensional arrays like lists of lists. But a more common way to access items in multidimensional arrays is to use a comma-separated tuple of indices.
 
-(Yes, we realize that these comma-separated tuples use square brackets rather than the parentheses the name might suggest, but they are nevertheless referred to as tuples.)
+(Yes, we realize that these comma-separated tuples use square brackets rather than the parentheses the name might suggest, but they're nevertheless referred to as tuples.)
 
 Try:
 
@@ -284,7 +284,7 @@ The output is:
 7
 ```
 
-You can also modify values by use of this same comma-separated index notation:
+You can also modify values by using this same comma-separated index notation:
 
 ```python
 a2[0, 0] = 12
@@ -299,7 +299,7 @@ array([[12,  5,  2,  4],
        [ 1,  6,  7,  7]])
 ```
 
-Remember, once defined, NumPy arrays have a fixed data type. So, if you attempt to insert a float into an integer array, the value will be silently truncated.
+Remember, after they're defined, NumPy arrays have a fixed data type. So, if you try to insert a float into an integer array, the value will be silently truncated.
 
 ```python
 a1[0] = 3.14159
@@ -314,7 +314,7 @@ array([3, 0, 3, 3, 7, 9])
 
 ### Try it yourself
 
-What happens if you try to insert a string into a1? Try both a string like '3' and one like 'three'.
+What happens if you try to insert a string into `a1`? Try both a string like `'3'` and one like `'three'`.
 
 <br />
 
@@ -361,17 +361,17 @@ What happens if you try to insert a string into a1? Try both a string like '3' a
 
 ## Slicing arrays
 
-Similar to how you can use square brackets to access individual array elements, you can also use them to access subarrays. You do this with the *slice* notation, marked by the colon (`:`) character. NumPy slicing syntax follows that of the standard Python list; so, to access a slice of an array `a`, use this notation:
+Similar to how you can use square brackets to access individual array elements, you can also use them to access subarrays. You do this with the *slice* notation, marked by the colon (`:`) character. NumPy slicing syntax follows that of the standard Python list. So, to access a slice of an array `a`, use this notation:
 
 ```python
 a[start:stop:step]
 ```
 
-If any of these are unspecified, they default to the values `start=0`, `stop=`*`size of dimension`*, `step=1`. Let's take a look at accessing sub-arrays in one dimension and in multiple dimensions.
+If any of these elements are unspecified, they default to the values `start=0`, `stop=`*`size of dimension`*, `step=1`. Let's take a look at accessing subarrays in one dimension and in multiple dimensions.
 
 ### One-dimensional slices
 
-Using this code:
+If you use this code:
 
 ```python
 a = np.arange(10)
@@ -408,7 +408,7 @@ The output is:
 array([5, 6, 7, 8, 9])
 ```
 
-Or the middle sub-array:
+Or the middle subarray:
 
 ```python
 a[4:7]
@@ -432,7 +432,7 @@ The output is:
 array([0, 2, 4, 6, 8])
 ```
 
-Just every other element, starting at index 1:
+To get every other element, starting at index 1:
 
 ```python
 a[1::2]
@@ -446,7 +446,7 @@ array([1, 3, 5, 7, 9])
 
 ### Try it yourself
 
-How would you access the *last* five elements of array a? How about every other element of the last five elements of a? Think back to list indexing in Python.
+How would you access the *last* five elements of array `a`? How about every other element of the last five elements of a? Think back to list indexing in Python.
 
 <br />
 
@@ -485,7 +485,7 @@ How would you access the *last* five elements of array a? How about every other 
 ***
 
 
-Be careful when using negative values for `step`. When `step` has a negative value, the defaults for `start` and `stop` are swapped and you can use this functionality to reverse an array:
+Be careful when you use negative values for `step`. When `step` has a negative value, the defaults for `start` and `stop` are swapped. You can use this functionality to reverse an array.
 
 This gives you all elements, reversed:
 
@@ -499,7 +499,7 @@ The output is:
 array([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
 ```
 
-And this is reversed every other from index 5:
+And this gives you every other element, from index 5, reversed:
 
 ```python
 a[5::-2]
@@ -541,7 +541,7 @@ How can you create a slice that contains every third element of `a`,  descending
 
 ### Multidimensional slices
 
-Multidimensional slices use the same slice notation of one-dimensional subarrays mixed with the comma-separated notation of multidimensional arrays. Some examples will help illustrate this.
+Multidimensional slices use the same slice notation as one-dimensional subarrays, mixed with the comma-separated notation of multidimensional arrays. Some examples will help illustrate this concept:
 
 ```python
 a2
@@ -598,9 +598,9 @@ array([[ 7,  7,  6,  1],
 
 ### Accessing array rows and columns
 
-One thing you will often need to do in manipulating data is accessing a single row or column in an array. You can do this through a combination of indexing and slicing; specifically by using an empty slice marked by a single colon (`:`). Again, some examples will help illustrate this.
+When you manipulate data, you'll often need to access a single row or column in an array. You can do so by using a combination of indexing and slicing. Specifically, you'll use an empty slice marked by a single colon (`:`). Again, some examples will help illustrate this.
 
-To get the first column of x2:
+To get the first column of `x2`:
 
 ```python
 print(a2[:, 0])
@@ -612,7 +612,7 @@ The output is:
 [12  7  1]
 ```
 
-To get the first row of x2:
+To get the first row of `x2`:
 
 ```python
 print(a2[0, :])
@@ -624,10 +624,10 @@ The output is:
 [12  5  2  4]
 ```
 
-In the case of row access, the empty slice can be omitted for a more compact syntax:
+In the case of row access, you can omit the empty slice to get a more compact syntax:
 
 ```python
-print(a2[0])  # equivalent to a2[0, :]
+print(a2[0])  # Equivalent to a2[0, :]
 ```
 
 The output is:
@@ -638,9 +638,9 @@ The output is:
 
 ### Try it yourself
 
-How would you access the third column of a3?
+How would you access the third column of `a3`?
 
-How about the third row of a3?
+How about the third row of `a3`?
 
 <br />
 

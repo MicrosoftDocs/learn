@@ -2,22 +2,22 @@
 uid: learn.reactors.numpy-data-science
 metadata:
   title: Introduction to NumPy for data science
-  description: Learn about NumPy for data science. Create, index, and sort arrays.
+  description: Learn about how to use NumPy for data science. Create, index, and sort arrays.
   ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
 title: Introduction to NumPy for data science
-summary: Learn about NumPy for data science. Create, index, and sort arrays.
+summary: Learn about how to use NumPy for data science. Create, index, and sort arrays.
 abstract: |
   In this module, you will:
   - Import the NumPy Python library into your VS Code Jupyter Notebook
-  - Understand how NumPy arrays compare to Python lists
-  - Learn how to use NumPy arrays for large, in-memory data sets
+  - Learn how NumPy arrays compare to Python lists
+  - Learn how to use NumPy arrays for large in-memory datasets
   - Explore NumPy functions for arrays and simple data manipulation
 
-  Complementary content for Microsoft Reactor Workshops.
+  This module is complimentary content for Microsoft Reactor Workshops.
   
 prerequisites: |
   - Introduction to Python for data science
