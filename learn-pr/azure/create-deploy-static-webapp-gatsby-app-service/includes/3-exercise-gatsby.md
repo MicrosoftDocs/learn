@@ -35,7 +35,7 @@ View GraphiQL, an in-browser IDE, to explore your site's data and schema
 
 Now open up a browser and go to url `http://localhost:8000`.
 
-![](../media/gatsby-browser.png)
+:::image type="content" source="../media/gatsby-browser.png" alt-text="Gatsby app":::
 
 If you see the above, you successfully created your first Gatsby app. Congrats!
 
@@ -63,8 +63,8 @@ The `React.Fragment` element is used as there needs to be root element in every 
 
 There's a `Link` component used above. That's a component from the underlying React Router library that will ultimately render as an anchor tag `a`. We can use that component to navigate from this page back the root of our app, note how we set the `to` attribute yo `/`.
 
-Once you pasted in the code above and saved it in the file `about.js` the development server will recompile. If you now visit, http://localhost:8000/about` you should see the following content rendered:
+Once you pasted in the code above and saved it in the file `about.js` the development server will recompile. If you now visit, `http://localhost:8000/about` you should see the following content rendered:
 
-![Page component](../media/gatsby-page-component.png)
+:::image type="content" source="../media/gatsby-page-component.png" alt-text="Page component":::
 
 Congrats, you managed to add a page component, written in React, to your app. Additionally you've learned that any component placed under `/pages` directory can be navigated to.

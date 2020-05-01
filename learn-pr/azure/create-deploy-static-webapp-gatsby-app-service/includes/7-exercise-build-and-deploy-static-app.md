@@ -23,7 +23,7 @@ Go to the browser on `http://localhost:5000`.
 
 You should now see the following content rendered:
 
-![Our built app](../media/gatsby-built-site.png)
+:::image type="content" source="../media/gatsby-built-site.png" alt-text="Our built app":::
 
 Congrats, you managed to build your site and you took it from being a Gatsby app to an app containing nothing but HTML, CSS, and JavaScript!
 
@@ -80,10 +80,10 @@ Above we are giving our commit a commit message with the `-m` flag. Adjust the m
 1. Go to GitHub and log on. You should now be on a URL like so `https://github.com/<your username>?tab=repositories`
 
 2. Now click the `new` button as indicated below:
-![Create new GitHub repo](../media/gatsby-create-gh-repo.png)
+:::image type="content" source="../media/gatsby-create-gh-repo.png" alt-text="Create new GitHub repo":::
 
 3. Now give your repository a suitable name and click `Create repository` as indicated below:
-![GitHub naming](../media/gatsby-gh-naming.png)
+:::image type="content" source="../media/gatsby-gh-naming.png" alt-text="GitHub naming":::
 
 4. Next you, you need to create a connection between your local Git repo and your GitHub repo. You also need to push your Git repo code to GitHub. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
 
@@ -94,43 +94,95 @@ git push -u origin master
 
 Congratulations, you are now ready to deploy!
 
-## Deploy your app
+In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that will automatically build and publish your application.
 
-Next, you'll create an Azure Static Web App to host the app.
+## Activate the Azure sandbox
 
-![Deploy entry portal](../media/gatsby-deploy.png)
+The first step is to connect to an Azure sandbox. You can create the Azure Static Web Apps resources from here.
 
-We need to fill in the following information:
+1. Start by **activating the Azure sandbox above**.
+1. Once the sandbox is activated, [sign into the Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+    - Make sure you use the same account to sign in as you did to activate the sandbox.
 
-- **Subscription**, select the appropriate subscription
-- **Resource group**, all things provisioned need to belong to a logical bucket, a resource group. Either create one or select an existing
-- **Name**, this field is the name your app will get
-- **Region**, this field is what Azure region you want to deploy the app on
-- **SKU**, SKU stands for Stock Keeping Unit. It's a pricing tier that indicates how much you will be charged
-- **GitHub**, we need to authorize Static apps service as a third-party application to read this information from GitHub. Once authorized, we are able to select the specific GitHub repository we want to use as the template.
+## Create a Static Web App
 
-Now that we filled in all the needed fields. Click `Sign in with GitHub`. Clicking this button  will show an area below where we you are asked to select values for the following fields:
+Now that you've created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
 
-- **Organization**, select the organization you belong to
-- **Repository**, select the specific repository that you want to deploy
-- **Branch**, select the branch you want to deploy from
+1. In the top bar, search for **Static Web Apps**
+1. Select **Static Web Apps**
+1. Select **New**
 
-![Select GitHUb info](../media/gatsby-github.png)
+### Basics
 
-Once you filled in your GiHub data click `Next: Build`. It should take you to a screen looking like this:
+Next, configure your new app and link it to your GitHub repository.
 
-![Deploy - build view](../media/gatsby-deploy-build.png)
+1. Enter the **Project Details**
 
-The important field to fill in is `App artifact location`. This field needs the location of the folder containing our static assets. In Gatsby's case, a built Gatsby project ends up in the folder `/build`. We don't need to do anything more in this screen as The Static apps service will call the `build` command in our `package.json` that carries out `gatsby build`. Next we click `Review + create` and we should see the following image:
+   | Setting          | Value                                    |
+   | ---------------- | ---------------------------------------- |
+   | _Subscription_   | **Concierge subscription**               |
+   | _Resource Group_ | <rgn>[Sandbox resource group name]</rgn> |
 
-![Deploy - review](../media/gatsby-review.png)
+1. Enter the **Static Web Apps details**
 
-The above image is an overview of all the choices made. If you are happy with all the selections made, then click `Create`. Clicking `Create` will start to provision your Static app. Once done you will come to a portal screen looking like so:
+   | Setting  | Value                                                                         |
+   | -------- | ----------------------------------------------------------------------------- |
+   | _Name_   | Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `_`. |
+   | _Region_ | Select Region closest to you                                                  |
+   | _SKU_    | **Free**                                                                      |
 
-![Portal - resource overview](../media/gatsby-resource.png)
+1. Click the **Sign-in with GitHub** button and authenticate with GitHub
+1. Enter the **Source Control Details**
 
-Click the link displayed in the `URL` field and you should see your working app:
+   | Setting        | Value                                                    |
+   | -------------- | -------------------------------------------------------- |
+   | _Organization_ | Select the Organization where you created the repository |
+   | _Repository_   | **my-first-static-web-app**                              |
+   | _Branch_       | **master**                                               |
 
-![Published app](../media/gatsby-published.png)
+1. Click the **Next: Build >** button to edit the build configuration
+
+### Build
+
+Next, add configuration details specific to your preferred front-end framework.
+
+| Setting                 | Value                |
+| ----------------------- | -------------------- |
+| _App location_          |                      |
+| _Api location_          |                      |
+| _App artifact location_ | **build**            |
+
+Click the **Review + create** button
+
+### Review + create
+
+Continue to create the application.
+
+1. Click the **Create** button
+1. Once the deployment is complete, click the **Go to resource** button
+
+
+### Review the GitHub Action
+
+At this stage, your Static Web Apps instance is created in Azure, but your app not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to perform the first build and deployment of your app, but it takes a couple minutes to finish.
+
+You can check the status of your build and deploy action by clicking the link shown below:
+
+:::image type="content" source="../media/goto-action.png" alt-text="Browser to see the progress of the GitHub Action":::
+
+### View website
+
+Once your GitHub Action finishes building and publishing your web app, you can browse to see your running app.
+
+Click on the _URL_ link in the Azure portal to visit your app in the browser.
+
+:::image type="content" source="../media/gatsby-published.png" alt-text="Azure Static Web Apps overview page":::
+
+Your app's now globally available, but it's still stuck at **Loading data ...** because there is no data or API yet. You'll add the API for your web app in the next section.
+
+Congratulations! You've deployed your first app to Azure Static Web Apps!
+
+> [!NOTE]
+> Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
 
 You did it! You've managed to deploy a static app to the Cloud.
