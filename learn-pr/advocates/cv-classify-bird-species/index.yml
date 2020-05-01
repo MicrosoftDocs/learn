@@ -3,9 +3,9 @@ uid: learn.cv-classify-bird-species
 metadata:
   title: Classify Bird Species with Custom Vision
   description: todo
-  ms.date: 09/24/2018
+  ms.date: 04/30/2020
   author: cassieview
-  ms.author: cassieview
+  ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title:  Classify Bird Species with Custom Vision

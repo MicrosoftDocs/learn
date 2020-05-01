@@ -1,0 +1,40 @@
+## YamlMime:ModuleUnit
+uid: learn.cv-classify-bird-species.6-knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 04/30/2020
+  author: cassieview
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Answer the questions below to check your understanding.
+  questions:
+    - content: "What is the purpose of Artificial Intelligence?"
+      choices:
+        - content: "To build Skynet."
+          isCorrect: false
+          explanation: "Incorrect! This is from a movie and not real."
+        - content: "To mimic human intelligence with a computer."
+          isCorrect: true
+          explanation: "Correct!"
+    - content: " Which of the following are _not_ indicators that custom vision provides to understand how the model is performing?"
+      choices:
+        - content: "Confusion Matrix"
+          isCorrect: true
+          explanation: "Correct! This is a valid metric but is not provided by custom vision."
+        - content: "Recall"
+          isCorrect: false
+          explanation: "Incorrect. This metric is provided."
+        - content: "AP"
+          isCorrect: false
+          explanation: "Incorrect. This metric is provided."
+        - content: "Precision"
+          isCorrect: false
+          explanation: "Incorrect. This metric is provided."
