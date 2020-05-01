@@ -4,7 +4,7 @@ generator using the quantum random bit generator you created in the last unit.
 ## Use Q# to write classical logic
 
 In general, we don't want to use the quantum computer for everything, since for
-most things classical computers work just fine. We want to call the quantum
+many things classical computers work just fine. We want to call the quantum
 computer only when we need to, for example to make some specific typo of
 calculations, or in this case, to extract pure randomness. This is why Q# also
 can implement classical code just like a normal programming language.
