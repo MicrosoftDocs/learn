@@ -1,4 +1,3 @@
-# Azure Quantum
 Watch this video to see the process of creating a set of quantum resources and using these to run a program.
 
 > [!VIDEO https://www.microsoft.com/...]

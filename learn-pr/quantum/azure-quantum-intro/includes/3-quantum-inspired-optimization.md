@@ -1,4 +1,3 @@
-# Introduction to Quantum Inspired Optimization (QIO)
 In this unit, you will learn about quantum-inspired optimization methods, that will be enabled on Azure Quantum. We will give an introduction to these methods and the types of optimization problems they can be used for.
 
 ## What is QIO?

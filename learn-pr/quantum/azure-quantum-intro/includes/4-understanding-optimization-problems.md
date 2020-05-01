@@ -1,4 +1,3 @@
-## Understanding optimization problems
 Before we dive into QIO, let's recap what optimization problems are in general. 
 
 Let's begin with some common terminology:

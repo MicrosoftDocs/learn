@@ -1,4 +1,3 @@
-# Solving optimization problems
 In this unit, we will explain the general idea of simulated annealing and quantum annealing, as the solvers in Azure Quantum use variations of these techniques. 
 Then we will see how to apply these techinques in order to solve an optimization problem.
 
