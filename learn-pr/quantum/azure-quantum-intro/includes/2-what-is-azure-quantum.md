@@ -14,7 +14,7 @@ These providers will have on offer different **Targets** - software or hardware 
 The Azure Quantum service manages the scheduling and jobs from start to finish.
 So whether you're running a quantum-inspired solver, or executing a quantum program, you can easily submit jobs and see the results. 
 
-![Azure quantum offering](../media/azure-quantum-diagram.png)
+![Quantum Execution](../media/quantum-execution-info.PNG)
 
 ## Quantum Solutions
 If you want the ability to solve large, complex optimization problems at scale, then you can explore quantum-inspired solvers from Microsoft and partners such as 1QBit.
@@ -25,8 +25,6 @@ If you are interested in developing quantum software, then Azure Quantum offers 
 There are tools for simulating your programs, so that you can test the behaviour and performance of your code. 
 In addition, there are tools such as resource estimation, which will help you understand the resources that your code would require.
 In terms of a quantum program, this tells you the types of quantum gates you use, and how many.
-
-![Quantum Execution](../media/quantum-execution-info.PNG)
 
 Using these tools together helps you understand the features of a quantum computer that you'd need in order to run your program, such as the number of qubits. 
 From a software engineering perspective, it also helps you iterate and improve your code, so that you can reduce the requirements necessary to run it. 
