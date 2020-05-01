@@ -4,7 +4,7 @@ You are the leader of a group of climate scientists who are concerned about the 
 
 In this module, you will build such a system using [Microsoft Azure](https://azure.microsoft.com/) and [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/). Specifically, you will use [Azure Blob Storage](https://azure.microsoft.com/services/storage/blobs/) to store photographs, Azure's [Custom Vision Service](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) to analyze photographs for polar bears, [Azure Functions](https://azure.microsoft.com/services/functions/) to pass each photograph uploaded to blob storage to the Custom Vision Service, [Microsoft Power BI](https://powerbi.microsoft.com/) to build a dashboard for visualizing results, and [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) as a data source for Power BI. The dashboard will show where polar bears are being spotted in green, and other wildlife activity in red.
 
-![](media/live-map.png)
+![](../media/live-map.png)
 
 ## Learning objectives
 
