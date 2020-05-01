@@ -127,9 +127,7 @@ Your function will get the products and return them with a status code of 200, w
 
 ### Configure CORS locally
 
-When you run your API locally, it runs on port 7071. Your web app runs on a different local port. When your web app tries to make an HTTP request from its port to your API's port 7071, this is known as a Cross-Origin Resource Sharing (CORS). Your browser will prevent the HTTP request from completing unless the API server allows the request to proceed.
-
-You won't have to worry about CORS when you publish to Azure Static Web Apps. That's because Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure. So you only have to set up CORS when you run locally.
+You won't have to worry about CORS when you publish to Azure Static Web Apps. Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. But when running locally, you need to configure CORS to to allow your web app and API to communicate.
 
 Now, tell Azure Functions to allow your web app to make HTTP requests to the API, on your computer.
 

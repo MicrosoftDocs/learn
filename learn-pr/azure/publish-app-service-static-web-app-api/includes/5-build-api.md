@@ -2,7 +2,7 @@ Now the time has come for you to create an API for your shopping list app, but f
 
 ## Azure Functions
 
-One of the greatest benefits of Azure Static Web Apps is that it hosts your web app and an API built with Azure Functions together! Azure Static Web Apps geographically distributes your web app's static assets and hosts your API in Azure Functions. With this setup, you gain the availability and speed that comes with global distribution of your web app assets. 
+One of the greatest benefits of Azure Static Web Apps is that it hosts your web app and an API built with Azure Functions together! Azure Static Web Apps globally distributes your web app's static assets and hosts your API in Azure Functions. With this setup, you gain the availability and speed that comes with global distribution of your web app assets.
 
 What you don't get is also important.
 
@@ -13,7 +13,6 @@ Azure Functions serves your route endpoints, doesn't require a full back-end ser
 Azure Static Web Apps generates a unique URL for your site, which you can find on the _Overview_ tab in the portal. The API is available through this same URL by appending _/api_ to the URL.
 
 ### Your shopping list API
-
 
 Your shopping list app lets people get, add, update, and delete items from their list. So it makes sense that your API will have endpoints matching these needs.
 
@@ -38,6 +37,12 @@ The API is missing the HTTP GET function. You'll complete the Azure Functions pr
 Before making changes to an app, it's good practice to create a new branch for the changes. You'll be making several changes when you complete the API for your app, so you'll create a branch for these changes.
 
 After you make the changes you'll want to see them running before deciding to merge the changes. Once you create a pull request from your new branch to the **master** branch, the GitHub Action will build your app and API and deploy them both to a preview URL. This allows you to leave your web app running with Azure Static Web Apps, but also see a second preview URL with the results from your pull request.
+
+### Configuration communication between your web app and API
+
+When you run your API locally, it runs on port 7071 by default. Your web app runs on a different local port. When your web app tries to make an HTTP request from its port to your API's port 7071, this is known as a Cross-Origin Resource Sharing (CORS). Your browser will prevent the HTTP request from completing unless the API server allows the request to proceed.
+
+You won't have to worry about CORS when you publish to Azure Static Web Apps. That's because Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. A a reverse proxy is what allows your web app and API to appear to come from the same web domain. So you only have to set up CORS when you run locally.
 
 ## Next steps
 
