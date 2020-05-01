@@ -196,7 +196,7 @@ groups:
       title: People Strategy
     - id: technology-strategy
       title: Technology Strategy
-- id: migration-strategy
+- id: migration-strategy 
   title: Migration-Strategy
   prompt: Click on each of the buttons to learn more about each migration strategy.
   pivots:
