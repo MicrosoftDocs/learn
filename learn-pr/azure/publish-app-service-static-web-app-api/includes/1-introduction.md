@@ -10,7 +10,7 @@ While you stay focused on developing your app, Azure Static Web Apps automatical
 
 Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, or Vue. These apps include HTML, CSS, JavaScript, and image assets that make up the application. Under a traditional web server architecture, these files are served from a single server along side any required API endpoints.
 
-With Azure Static Web Apps, static assets are separated from a traditional web server and are instead served from points geographically distributed around the world. This distribution makes serving files much faster as files are physically closer to end users. API endpoints are hosted using a serverless architecture, which avoids the need for a full back-end server all together.
+With Azure Static Web Apps, static assets are separated from a traditional web server and are instead served from points globally distributed around the world. This distribution makes serving files much faster as files are physically closer to end users. API endpoints are hosted using a serverless architecture, which avoids the need for a full back-end server all together.
 
 The model for Azure Static Web Apps is that you get exactly what you need, no more, no less.
 
@@ -20,7 +20,6 @@ The model for Azure Static Web Apps is that you get exactly what you need, no mo
 > Azure Static Web Apps is currently in preview.
 
 When you create an Azure Static Web Apps resource, Azure sets up a GitHub Actions workflow in the app's source code repository that monitors a branch of your choice. Every time you push commits or create pull requests into the watched branch, the GitHub Action automatically builds and deploys your app and its API to Azure.
-
 
 Azure hosts and serves your web app while Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand to the API.
 
