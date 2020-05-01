@@ -419,7 +419,7 @@ In this unit, we code our app. In stages, to make it a little more understandabl
             </script>
     ```
 
-1. Take a few minutes and read through the comments in the JavaScript section. Note how much of the theory we were talking about in previous units has made its way into the code.
+1. Take a few minutes, and read through the comments in the JavaScript section. Note how much of the theory we were talking about in previous units has made its way into the code.
 
 1. Save off the HTML file to your **Documents** folder, giving it a suitable name - "Cross country app", or something similar.
 

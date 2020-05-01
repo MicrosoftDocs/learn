@@ -14,7 +14,7 @@ abstract: |
   In this module, you will:
   - Create a free Azure Maps account
   - Create an HTML and JavaScript app, for cross-country route finding, using Visual Studio Code
-  - Learn about route finding, hazardous materials, and integrating maps into your apps
+  - Learn about route finding, map layers, hazardous materials, and integrating maps into your apps
 prerequisites: |
   - An introductory knowledge of the purpose of Azure Maps
   - Ability to navigate Azure portal 

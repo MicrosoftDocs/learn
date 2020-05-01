@@ -93,4 +93,24 @@ quiz:
       isCorrect: false
       explanation: No, layers apply only to map construction.
 
+  - content: 'Which of the following data sets might work with a heat map?'
+    choices: 
+    - content: 'A: earthquakes in the last 30 days'
+      isCorrect: false
+      explanation: Other data sets might work too.
+    - content: 'B: route finding'
+      isCorrect: false
+      explanation: Route finding is not suitable for displaying as a heat map.
+    - content: 'C: disease outbreaks in the last week'
+      isCorrect: false
+      explanation: Other data sets might work too.
+    - content: 'D: population growth'
+      isCorrect: false
+      explanation: Other data sets might work too.
+    - content: 'All of the above'
+      isCorrect: false
+      explanation: Not all the above data sets would work with a heat map.
+    - content: 'A, C, and D'
+      isCorrect: true
+      explanation: Events, with varying strengths, tied to a geographical location, do make good data for rendering in heat maps.
   
