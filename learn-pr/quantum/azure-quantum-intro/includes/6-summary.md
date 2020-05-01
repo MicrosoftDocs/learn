@@ -16,6 +16,6 @@ The ship loading problem is a simple problem to demostrate QIO. There are many p
 - [Microsoft Quantum collaborates with Willis Towers Watson to transform risk-management solutions](https://cloudblogs.microsoft.com/quantum/2019/05/22/microsoft-quantum-collaborates-with-willis-towers-watson-to-transform-risk-management-solutions/)
 - [Azure Quantum and Ford partner to improve traffic congestion](https://www.youtube.com/watch?v=PkQo3YrcMl8&feature=youtu.be)
 
-If you are interested in quantum software development, visit the other MS Learn module, [Write your first quantum program with the Quantum Development Kit](https://docs.microsoft.com/learn/modules/get-started-qdk).
+If you are interested in quantum software development, visit our MS Learn module on [writing your first quantum program with the Quantum Development Kit](https://docs.microsoft.com/learn/modules/get-started-qdk).
 
 We look forward to seeing the types of solutions Azure Quantum can help you achieve!

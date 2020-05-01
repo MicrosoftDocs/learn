@@ -20,16 +20,9 @@ In this module you will:
 
 Contoso Logistics Inc is a world class freight company operating a fleet of large container ships. 
 When these ships are docked at port, Contoso Logistics needs to distribute containers between the two ships as evenly as possible. 
-If they make one ship significantly heavier than the other then it will move slower and consume more fuel - delaying shipments and costing a significant amount of money! If you were managing the distribution containers for Contoso, how would you optimize the weights?
+If they make one ship significantly heavier than the other, then it will move slower and consume more fuel, delaying shipments and costing a significant amount of money! 
 To make things harder, the weights of individual containers can vary greatly so it's not easy to divide them.
+If you were managing the distribution containers for Contoso, how would you optimize the weights?
 
 This problem is known as a number partitioning problem and we can use quantum inspired optimization (QIO) to generate a good solution.
 In this module, we'll explore how to apply QIO via the Azure Quantum cloud service.
-
-## What you will do in this module
-
-In the following units you will go through these steps:
-
-- Watch a short video introduction to the Azure Quantum service and the solutions it provides
-- Learn about how to use Azure Quantum to run quantum algorithms on hardware 
-- Learn about quantum-inspired optimization (QIO) solvers enabled by Azure Quantum

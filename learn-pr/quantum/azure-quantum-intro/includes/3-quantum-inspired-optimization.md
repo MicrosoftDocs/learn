@@ -1,5 +1,5 @@
 # Introduction to Quantum Inspired Optimization (QIO)
-In this unit, you will learn about quantum-inspired optimization methods, that will be enabled on Azure Quantum. Quantum-inspired optimization is a subset of quantum annealing methods. We will give an introduction to these methods and the types of optimization problems they can be used for.
+In this unit, you will learn about quantum-inspired optimization methods, that will be enabled on Azure Quantum. We will give an introduction to these methods and the types of optimization problems they can be used for.
 
 ## What is QIO?
 
@@ -19,7 +19,7 @@ Optimization problems are commonplace in industry, from manufacturing, to financ
 These problems involve searching over all the feasible solutions to find the best, often lowest cost, solution. 
 Adiabatic quantum algorithms are naturally suited to solving optimization problems of this kind.
 
-In the long term, adiabatic quantum algorithms can be run on quantum computers, once we have devices of a large enough scale and quality. (Can we give an estimate of scale, e.g. 200 fault-free qubits? Because this statement probably will provoke people to ask "how many qubits?") 
+In the long term, adiabatic quantum algorithms can be run on quantum computers, once we have devices of a large enough scale and quality. 
 You can learn more about building a scalable quantum computer in [this blog post](https://cloudblogs.microsoft.com/quantum/2018/05/16/achieving-scalability-in-quantum-computing/). 
 
 In the meantime, we can emulate these algorithms using quantum inspired techniques today on classical hardware, and often see improvements in performance over other state-of-the-art classical optimization techniques. 

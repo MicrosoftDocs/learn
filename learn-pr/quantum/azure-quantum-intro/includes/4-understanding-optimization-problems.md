@@ -6,6 +6,7 @@ Let's begin with some common terminology:
 - **Objective function**: This is a mathematical description, which, when evaluated, tells you the cost of that solution.
 - **Cost function**: This is an objective function that we specifically wish to minimize.
 For Contoso Logistics, the cost function would be the weight difference between the two ships, which we try to minimize.
+In other scenarios, it might be the length of a journey, or a monetary cost. 
 
 Together, the search space and the objective function are often referred to as an optimization landscape. 
 In the case of a problem involving two continuous variables, the analogy to a landscape is quite direct. 
@@ -31,6 +32,6 @@ So far we have discussed smooth and rugged objective functions, but what if ther
 
 To summarize the general conditions where QIO performs well:
 - Optimization landscapes should be rugged but structured. Such landscapes arise frequently in practice, for example in traffic optimization or solving satisfiability problems.
-- If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with over 100 variables, QIO has achieved orders of magnitude improvement over previously used methods. (Examples of previously used methods? Some research papers to link to?)
+- If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with over 100 variables, QIO has achieved orders of magnitude improvement over [previously used methods](https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/).
 
 In the next unit, you will learn how to apply the theory behind QIO, and apply the knowledge to the shipping loading optimization problem for Contoso Logistics.  

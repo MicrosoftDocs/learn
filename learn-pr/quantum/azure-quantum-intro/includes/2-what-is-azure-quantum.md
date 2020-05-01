@@ -13,8 +13,9 @@ In this module you'll get an understanding of what optimization problems are, an
 There are tools for simulating your programs, so that you can test the behaviour and performance of your code. 
 In addition, there are tools such as resource estimation, which will help you understand the resources that your code would require.
 In terms of a quantum program, this tells you the types of quantum gates you use, and how many.
+
 Using these tools together helps you understand the features of a quantum computer that you'd need in order to run your program, such as the number of qubits. 
-From a software engineering perspective, it also helps you iterate and improve your code, so that you can reduce the requirements necessary to run it. 
+From a software engineering perspective, it also helps you iterate and improve your code, so that you can reduce the resource requirements necessary to run it. 
 For more detail on how this is done in practice, check out Dave Wecker's talk on [Achieving Practical Quantum Computing](https://cloudblogs.microsoft.com/quantum/2018/06/01/achieving-practical-quantum-computing/).
 
 **Quantum hardware**: If you have developed quantum software that you would like to run on quantum hardware, then through Azure Quantum you can access a range of different hardware types. 
@@ -44,4 +45,4 @@ Once created, you'll also find various metadata available about the state of you
 Each provider may have different billing plans and methods available.
 While you may only select a single billing plan for a specific provider in a single workspace, you may deploy multiple workspaces in your Azure subscription.
 
-![Azure quantum offering](../media/azure-quantum-diagram.png)
+![Quantum Execution](../media/quantum-execution-info.PNG)
