@@ -419,7 +419,7 @@ In this unit, we code our app. In stages, to make it a little more understandabl
             </script>
     ```
 
-1. Replace the `<YOUR AZURE MAPS PRIMARY KEY>` string, with the Primary Key you saved off in an earlier unit. This is the only code change you need to make.
+1. Replace the `<YOUR AZURE MAPS PRIMARY KEY>` string, with the Primary Key you saved off in an earlier unit. You don't need to make any other code changes.
 
 1. Take a few minutes, and read through the comments in the JavaScript section. Note how much of the theory we were talking about in previous units has made its way into the code.
 

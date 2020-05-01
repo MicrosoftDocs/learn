@@ -47,7 +47,7 @@ In our sample app, we specify three vehicles, a bicycle, a car, and a truck. We 
 
 ### Hazardous materials
 
-One of the fun features of the app we're going to build, is the ability to set a hazardous material classification for our truck.
+A fun feature of the app we're going to build, is the ability to set a hazardous material classification for our truck.
 
 There are nine classifications in the USA. Summarized in the following table.
 

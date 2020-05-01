@@ -49,13 +49,13 @@ quiz:
       explanation: More than one layer is added.     
     - content: 'Two layers. One for route lines, the other to display point data.'
       isCorrect: true
-      explanation: The routes for the car, truck, and bicycle are on one layer, the city names and icons on the other layer.
+      explanation: The routes for the car, truck, and bicycle are on one layer, the city names, and icons on the other layer.
     - content: 'Three layers. One layer for each of the car, truck, and bicycle.'
       isCorrect: false
-      explanation: Less than three layers are added.
+      explanation: Fewer than three layers are added.
     - content: 'Four layers are added. One for each of the car, truck, and bicycle. And one layer for city point data.'
       isCorrect: false
-      explanation: Less than four layers are added.
+      explanation: Fewer than four layers are added.
 
   - content: 'In Azure IoT, a sister product to Azure Maps, what are temperature, velocity, lat/lon values transmitted from devices known as?'
     choices: 
@@ -100,7 +100,7 @@ quiz:
       explanation: Other data sets might work too.
     - content: 'B: route finding'
       isCorrect: false
-      explanation: Route finding is not suitable for displaying as a heat map.
+      explanation: Route finding isn't suitable for displaying as a heat map.
     - content: 'C: disease outbreaks in the last week'
       isCorrect: false
       explanation: Other data sets might work too.

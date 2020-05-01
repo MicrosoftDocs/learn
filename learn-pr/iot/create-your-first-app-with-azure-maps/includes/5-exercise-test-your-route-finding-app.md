@@ -28,7 +28,7 @@ Running a new app for the first time is always an exiting moment!
 
     [![Screenshot of the bicycle route taking the ferry](../media/azure-maps-bicycle-ferry.png)](../media/azure-maps-bicycle-ferry.png#lightbox)
 
-1. Change the hazardous class for the truck to **USHazmatClass9**, and click **Go** again. You won't notice any difference in the truck route. However, now change the class to **USHazmatClass1** - explosives - and click **Go**. You should notice a small increase in travel kilometers. Go back to Chicago, and look closely at the area around Hammond, and run the two hazardous routes again. You should notice that the **USHazmatClass1** truck has to take a slightly longer route.
+1. Change the hazardous class for the truck to **USHazmatClass9**, and click **Go** again. You won't notice any difference in the truck route. However, now change the class to **USHazmatClass1** - explosives - and click **Go**. Notice the small increase in travel kilometers. Go back to Chicago, and look closely at the area around Hammond, and run the two hazardous routes again. Notice that the **USHazmatClass1** truck has to take a slightly longer route.
 
 1. Try going from San Francisco to Miami. Notice that there's a significant divergence in route between **USHazmatClass1**, and **USHazmatClass9**. The less hazardous truck can save a few kilometers by going a different route for most of the trip.
 
