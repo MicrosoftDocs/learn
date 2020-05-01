@@ -6,7 +6,7 @@ Congratulations! You have completed the overview of Azure Quantum. In this modul
 
 # Learn more
 
-Azure Quantum is currently under private preview. You can request early access to Azure Quantum by filling out a form on the [Microsoft Azure website](https://azure.microsoft.com/en-us/services/quantum/#contact). Stay tuned for information about the public release.
+Azure Quantum is currently under private preview. You can request early access to Azure Quantum by filling out a form on the [Microsoft Azure website](https://azure.microsoft.com/services/quantum/#contact). Stay tuned for information about the public release.
 
 The ship loading problem is a simple problem to demostrate QIO. There are many problems that can be expressed in quantum-inspired techniques. To learn more about use cases where Microsoft's customers leveraged Azure Quantum and QIO for their industry solutions, check out the following blogs:
 
