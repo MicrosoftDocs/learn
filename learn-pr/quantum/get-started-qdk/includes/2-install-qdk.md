@@ -46,7 +46,7 @@ Click the install button.
 If this isn't the first time you've installed the QDK, please make sure to update it to the latest version but running this is the command line:
 
 ```bash
-dotnet new -i Microsoft.Quantum.ProjectTemplates 0.11.2004.2825
+dotnet new -i Microsoft.Quantum.ProjectTemplates::0.11.2004.2825
 ```
 
 ## Verify the installation with your first quantum program!
