@@ -25,7 +25,7 @@ When these ships are docked at port, Contoso Logistics needs to distribute conta
 If they make one ship significantly heavier than the other then it will move slower and consume more fuel - delaying shipments and costing a significant amount of money! If you were managing the distribution containers for Contoso, how would you optimize the weights?
 To make things harder, the weights of individual containers can vary greatly so it's not easy to divide them.
 
-This problem is known as a number partitioning problem and is NP-complete. 
+This problem is known as a number partitioning problem and is [NP-complete](https://en.wikipedia.org/wiki/NP-completeness) using brute force search algorithms. 
 It is however relatively straightforward to apply Quantum Inspired Optimization (QIO) to it to generate a good solution.
 QIO is supported via the Azure Quantum cloud service. In this module, we'll explore how to apply QIO.
 
