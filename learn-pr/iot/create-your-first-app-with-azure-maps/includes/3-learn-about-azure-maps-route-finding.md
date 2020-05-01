@@ -67,7 +67,7 @@ With the given classification, certain roads cannot be used. The first three hav
 
 ## Azure Maps and Azure IoT
 
-Azure IoT, the "Internet of Things", provides cloud resources to read telemetry data from thousands of remote devices, and store, and process the data with cloud back-end services. The telemetry data might be temperature, velocity, humidity, and so on. But telemetry also includes location data: latitude, longitude, and, optionally, altitude. Because of the value of knowing the location of moving devices, one popular use of Azure IoT is fleet management. Location telemetry is where Azure IoT, and Azure Maps, meet up.
+Azure IoT, the "Internet of Things", provides cloud resources to read telemetry data from thousands of remote devices, and store, and process the data with cloud back-end services. The telemetry data might be temperature, velocity, humidity, acceleration, pressure, and so on. But telemetry also includes location data: latitude, longitude, and, optionally, altitude. Because of the value of knowing the location of moving devices, one popular use of Azure IoT is fleet management. Location telemetry is where Azure IoT, and Azure Maps, meet up.
 
 In addition to fleet management, other popular location-based scenarios include asset tracking, and smart city applications. You can imagine that if you managed a group of smart buildings, all with temperature, humidity, and security sensors, that seeing the exact map location of each device might be valuable, and reassuring. Perhaps the map with the device locations would be part of an IoT dashboard. The other elements of the dashboard might show incoming telemetry, and provide some commands to send to the devices.
 

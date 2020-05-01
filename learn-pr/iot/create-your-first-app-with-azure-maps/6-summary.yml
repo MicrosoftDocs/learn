@@ -61,7 +61,7 @@ quiz:
     choices: 
     - content: 'telemetry'
       isCorrect: true
-      explanation: The most common telemetry values are - xxxx
+      explanation: The most common telemetry values are temperature, humidity, velocity, acceleration, pressure, and location.
     - content: 'streaming data'
       isCorrect: false
       explanation: Close, but there is a more specific term.
@@ -81,7 +81,7 @@ quiz:
       isCorrect: false
       explanation: No, Azure resources are free in this module.
 
-  - content: 'Which component is used to adjust the view of the map, so that the start and end points are clearly visible?'
+  - content: 'Which API component is used to adjust the view of the map, so that the start and end points are clearly visible?'
     choices: 
     - content: 'camera'
       isCorrect: true
