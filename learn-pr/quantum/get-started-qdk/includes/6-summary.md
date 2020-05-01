@@ -4,7 +4,7 @@ using the QDK. In this module you learned how to:
 - prepare your development environment for writing quantum programs.
 - use Q# to express quantum algorithms.
 - create a simple quantum random bit generator.
-- use the *Repeat Until Sucess* loop structure of Q# create a quantum random
+- use the *Repeat Until Sucess* loop structure of Q# to create a quantum random
   number generator. 
 
 
