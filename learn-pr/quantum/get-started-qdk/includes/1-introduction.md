@@ -5,7 +5,7 @@ The Microsoft's Quantum Development Kit (QDK) comprises a wide range of tools wh
 Alongside the Q# language, the QDK includes:
 
 - the Q# libraries, which allow developers to hit the ground running and create real-world quantum applications today
-- various target machines on which Q# programs can be run. These include resource estimators and simulators for larger quantum programs, as well as a full-state quantum simulator, which behaves as a noise-free quantum computer. The latter is very useful for tinkering with ideas, debugging programs, and learning about quantum physics, but only efficient for programs with relatively few qubits. The QDK is used for running Q# programs on quantum hardware via the Azure Quantum cloud service. (Learn more about Azure Quantum in a separate learning module: [Azure Quantum overview]()) 
+- various target machines on which Q# programs can be run. These include resource estimators and simulators for larger quantum programs, as well as a full-state quantum simulator, which behaves as a noise-free quantum computer. The latter is very useful for tinkering with ideas, debugging programs, and learning about quantum physics, but only efficient for programs with relatively few qubits. The QDK is used for running Q# programs on quantum hardware via the Azure Quantum cloud service. (Learn more about Azure Quantum in a separate learning module: [Azure Quantum overview](https://docs.microsoft.com/learn/modules/azure-quantum-intro)) 
 - tools for making work with Q# as seamless as possible, such as extensions for Visual Studio and VS Code, and packages for use with Python and Jupyter Notebooks.
 - API documentation for pairing Q# with classical host languages such as Python and C#
 

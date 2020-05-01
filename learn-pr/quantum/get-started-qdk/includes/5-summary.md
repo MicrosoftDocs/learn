@@ -22,8 +22,10 @@ You will find information on:
 
 You will also find reading materials for quantum computing concepts on the documentation page. 
 
+For an example of use case of QDK by Microsoft's customers, check out this blog post on Microsoft Quantum's collaboration with Pacific Northwest Laboratory, [Simulating nature with the new Microsoft Quantum Development Kit chemistry library](https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/).
+
 Don't forget, all of the quantum development documentations and samples are open-source. As a learner and quantum developer, you are encouraged to [contribute to the open-source quantum community](https://docs.microsoft.com/quantum/libraries/numerics/).
 
-If you are interested in learning how to run quantum programs on quantum hardware, check out the [Azure Quantum]() introduction learning module.  
+If you are interested in learning how to run quantum programs on quantum hardware, check out the [Azure Quantum](https://docs.microsoft.com/learn/modules/azure-quantum-intro) introduction learning module.  
 
 Welcome to the quantum world!
