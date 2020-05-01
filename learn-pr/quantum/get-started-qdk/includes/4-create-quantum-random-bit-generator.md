@@ -122,7 +122,7 @@ values: `One` and `Zero`.
 
 ```qsharp
 namespace Qrng {
-    open Microsoft.Quantum.Intrinsic
+    open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Measurement;
 
@@ -138,7 +138,7 @@ can write its content:
 
 ```qsharp
 namespace Qrng {
-    open Microsoft.Quantum.Intrinsic
+    open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Measurement;
 
