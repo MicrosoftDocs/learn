@@ -1,6 +1,9 @@
+## Tune the hyperparameters
+
 One way to find the optimum combination of parameters provided to a learning algorithm in scikit-learn is to use GridSearchCV, which trains the model multiple times with all the different combinations of parameters that you specify. Let's use GridSearchCV to find the optimum values for the SVM's C and gamma parameters, which have an important effect on SVM models that use an RBF kernel. C determines how tolerant the model is of misclassified data points during training. The higher the value of C, the more aggressive the model is at finding a classification boundary that minimizes the number of misclassified points. gamma controls the tightness of the fit to the training data. Generally speaking, lower values for C and gamma are preferred because higher values can lead to overfitting. Lower values typically produce a model that generalizes better.
 
 We'll use GridSearchCV to find the C and gamma that work best together. Note that training will take longer now because since we're testing five different C values and seven different gamma values, the model will be trained 35 times. (Good thing we reduced the number of dimensions with PCA!)
+
 
 ```python
 from sklearn.model_selection import GridSearchCV
@@ -10,13 +13,11 @@ params = {'svc__C': [0.01, 0.1, 1, 10, 100],
 
 grid = GridSearchCV(model, params, cv=5)
 grid.fit(x_train, y_train)
-/home/nbuser/anaconda3_501/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
-  warnings.warn(CV_WARNING, FutureWarning)
-/home/nbuser/anaconda3_501/lib/python3.6/site-packages/sklearn/model_selection/_search.py:841: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
-  DeprecationWarning)
 ```
 
-```output
+Here's the output:
+
+```Output
 GridSearchCV(cv='warn', error_score='raise-deprecating',
        estimator=Pipeline(memory=None,
      steps=[('pca', PCA(copy=True, iterated_power='auto', n_components=150, random_state=42,
@@ -38,16 +39,19 @@ model = grid.best_estimator_
 {'svc__C': 1, 'svc__gamma': 0.005}
 ```
 
+Here's the output:
+
+```Output
+{'svc__C': 1, 'svc__gamma': 0.005}
+```
+
 Finally, let's see if the optimized ("hypertuned") model does a better job of recognizing faces than our original model.
 
 ```python
 model.score(x_test, y_test)
 ```
 
-```output
-0.9385964912280702
-```
-
+The output is `0.9385964912280702`.
 
 It appears that we improved the model's accuracy by about 2.5%. Let's print a classification report to get a more detailed assessment of the model's accuracy.
 
@@ -56,6 +60,12 @@ from sklearn.metrics import classification_report
 
 y_predicted = model.predict(x_test)
 print(classification_report(y_test, y_predicted, target_names=faces.target_names))
+```
+
+The output is:
+
+```Output
+
                    precision    recall  f1-score   support
 
      Colin Powell       0.89      0.98      0.93        50
@@ -82,9 +92,25 @@ plt.xlabel('Actual label')
 plt.ylabel('Predicted label')
 ```
 
-```output```
+Here's the output:
+
+```Output
 Text(89.18, 0.5, 'Predicted label')
 ```
 
 The model correctly identified Colin Powell 49 times out of 50, Donald Rumsfeld 23 times out of 25, and so on. That's not bad. And it's a great example of Support Vector Machines at work. It would be challenging, perhaps impossible, to do this well using more conventional learning algorithms such as logistic regression.
 
+## Cross-validate
+
+Currently, we are using a randomly selected 20% of the faces in the dataset to test the model and quantify its accuracy. Unfortunately, you can (and almost always will) get different results depending on which 20% of the dataset you select. For a more reliable measure of accuracy, you can cross-validate the model by training it several times, each time using different subsets of the original dataset for training and testing, and averaging the scores from each run. (This is precisely what GridSearchCV does when evaluating the effect of different parameter combinations.) scikit's cross_validate function makes this easy. Let's finish up by using it to measure the accuracy of our model. We'll divide the original dataset into five folds and train the model five times, each time using a different fold for testing and the remaining folds for training.
+
+```python
+from sklearn.model_selection import cross_validate
+
+scores = cross_validate(model, faces.data, faces.target, cv=5)
+print(scores['test_score'].mean())
+```
+
+The output is `0.8850918369413338`.
+
+Is the cross-validated score higher or lower than the score returned by the model's score method? Regardless, the CV score is probably a more accurate indicator of how well the model will respond to faces it hasn't seen before. And to a data scientist, accuracy is everything.
