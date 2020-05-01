@@ -30,11 +30,12 @@ The output is:
 
 ```Output
 ```
-***JAK - add screenshot here***
+
+:::image type="content" source="../media/pd-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.'":::
 
 Now select an item using tab-completion and then add a period and use tab-completion to explore *that*.
 
-For example, you could try placing pressing <TAB> after `pd.DataFrame`.
+For example, you could try pressing <TAB> after `pd.DataFrame`.
 
 ```python
 pd.DataFrame.
@@ -44,7 +45,8 @@ The output is:
 
 ```Output
 ```
-***JAK - add screenshot here***
+
+:::image type="content" source="../media/pd-dataframe-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.DataFrame.'":::
 
 As we progress through Section 1.1, don't forget that IPython also provides a tab-completion feature and function documentation with the `?` (question mark) character. If you don't understand something about a function you see in this section, taking a moment to csonult the documentation can help a great deal. You will find this documentation to be a very valuable reference source for your own data science work, both now and in the future. As a reminder, use this code to display the built-in pandas documentation:
 
@@ -65,7 +67,8 @@ The output is:
 
 ```Output
 ```
-***JAK - add screenshot here***
+
+:::image type="content" source="../media/pd-help-vscode-flyout-dataframe-selected.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.' and hovering over 'DataFrame'":::
 
 ## A brief reminder about Jupyter notebooks
 

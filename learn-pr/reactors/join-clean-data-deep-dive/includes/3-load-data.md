@@ -41,7 +41,7 @@ Use the built-in IPython documentation to on `pd.read_csv.`
   ```Output
   ```
   
-  ***Jak: Add screenshot***
+  :::image type="content" source="../media/pd-read-csv-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.read_csv.'":::
 
 </details>
 
