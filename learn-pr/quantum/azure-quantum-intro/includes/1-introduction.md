@@ -7,9 +7,8 @@ In this module, you'll learn what Azure Quantum is and how it can be used to sol
 In this module you will:
 
 - Understand the types of problems Azure Quantum service can help you solve
-- Understand the process of creating a project on Azure Quantum portal
-- Learn about quantum-inspired optimization 
-- Learn about the hardware systems you can use through Azure Quantum
+- Learn about the software and hardware systems you can use through Azure Quantum
+- Learn about quantum-inspired optimization
 
 ## Prerequisites
 
