@@ -6,7 +6,7 @@ You may remember when you created the Azure Static Web Apps resource that you pr
 
 Now, everything changes.
 
-## How the GitHub Action knows where your code is
+## GitHub Action configuration
 
 The folder _.github/workflows_ contains your GitHub Action file. The file contains the settings for the locations of your web app, API, and build artifacts. The locations you chose when you created your Azure Static Web Apps resource are now located in this file, as shown below:
 
@@ -58,7 +58,7 @@ The GitHub Action is ready to build and publish your web app and API once it det
 
 ## Preview URLs
 
-Sometimes you want to see your changes in the browser before publishing to the live web site. Azure Static Web Apps lets you see preview your changes through preview URLs. You can create a preview URL by creating a pull request against the branch that your GitHub Action is watching. Your live web site won't be affected. Instead, a new URL will be created for previewing your web app from your pull request.
+Sometimes you want to see your changes in the browser before publishing to the live web site. Azure Static Web Apps lets you see preview your changes through preview URLs. You can create a preview URL by creating a pull request against the branch that your GitHub Action is watching. Your live web site won't be affected. Instead, a new staging version of your app is created. If you go back and check your pull request on GitHub you'll notice that a link to the staging version posted in the Conversation tab.
 
 The following table shows how Azure Static Web Apps will publish your app to different URLs. Your app publishes to one URL while a pull request to the same branch publishes to another URL.
 
@@ -69,4 +69,4 @@ The following table shows how Azure Static Web Apps will publish your app to dif
 
 You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **master** branch. When you create the pull request against the **master** branch, the GitHub Action publishes the app to a preview URL.
 
-Next, you'll create a pull request and visit the preview URL that your GitHub Action will create.
+Next, you'll create a pull request and visit the staged version of your app.

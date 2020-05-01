@@ -1,6 +1,6 @@
-Your shopping list web app needs an API. In this exercise, you'll build and run your API using an Azure Functions project. You'll get and explore an API using an Azure Functions project. You'll also extend the API with a new function for your HTTP GET endpoint using the Azure Functions extension for Visual Studio Code.
+Your shopping list web app needs an API. In this exercise, you'll build and run your API using an Azure Functions project. From there, you'll extend the API with a new function using the Azure Functions extension for Visual Studio Code.
 
-You'll follow this breakdown, in this exercise:
+In this exercise, you'll complete the following steps:
 
 1. Create a branch as you prepare to make changes to your web app
 1. Explore the Azure Function project
@@ -61,7 +61,7 @@ Your API has routes for manipulating the products for the shopping list, but it 
 You just extended your Azure Function app with a function to get your products!
 
 > [!NOTE]
-> The function app is in the _api_ folder, which separates it from the web apps. All of the web apps using the front-end frameworks can hit the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
+> The function app is in the _api_ folder, which separates it from the individual web app projects. All of the web apps using the front-end frameworks make calls the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
 
 ### Configure the HTTP Method and route endpoint
 
@@ -99,13 +99,13 @@ Now your function is triggered on an HTTP `GET` request to **products**. Your _f
 }
 ```
 
-### Refactor the route logic
+### Update the route logic
 
 The file _index.js_ in the folder _api/products-get_ contains logic that runs when your make an HTTP request to the route.
 
-You'll need to refactor the logic to get your products. There is data access logic in the JavaScript module _/shared/product-data.js_. The `product-data` module exposes a function `getProducts` to get the products for the shopping list.
+You'll need to update the logic to get your products. There is data access logic in the JavaScript module _/shared/product-data.js_. The `product-data` module exposes a function `getProducts` to get the products for the shopping list.
 
-Now, refactor the function endpoint to return the products:
+Now, change the function endpoint to return the products:
 
 1. Open the file _api/products-get/index.js_
 1. Replace its contents with the following code:
@@ -127,9 +127,9 @@ Your function will get the products and return them with a status code of 200, w
 
 ### Configure CORS locally
 
-When you run your API locally, it runs on port 7071. Your web app runs on a different port locally. When your web app tries to make an HTTP request from its port to your API's port 7071, this is known as a Cross-Origin Resource Sharing (CORS). Your browser will prevent the HTTP request from completing unless the API server allows the request to proceed.
+When you run your API locally, it runs on port 7071. Your web app runs on a different local port. When your web app tries to make an HTTP request from its port to your API's port 7071, this is known as a Cross-Origin Resource Sharing (CORS). Your browser will prevent the HTTP request from completing unless the API server allows the request to proceed.
 
-You won't have to worry about CORS when you publish to Azure Static Web Apps. That's because Azure Static Web Apps automatically configures a reverse proxy so your web app can communicate with your API on Azure. So you only have to set up CORS when you run locally
+You won't have to worry about CORS when you publish to Azure Static Web Apps. That's because Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure. So you only have to set up CORS when you run locally.
 
 Now, tell Azure Functions to allow your web app to make HTTP requests to the API, on your computer.
 
@@ -185,7 +185,7 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
    ::: zone-end
 
 > [!NOTE]
-> The _local.settings.json_ file is listed in the _.gitignore_ file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. This is why when you created your repository from the template it lacked this file and you had to create it.
+> The _local.settings.json_ file is listed in the _.gitignore_ file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. This is why you had to create the file when you created your repo from the template.
 
 ### Run the API
 
