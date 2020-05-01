@@ -15,10 +15,10 @@ Azure Static Web Apps is specifically designed to host applications where the so
 You also need to specify three folder paths within your repository so your app can be automatically built and deployed:
 
 | Location              | Location example | Description                                                           | Required |
-| --------------------- | ---------------- | --------------------------------------------------------------------- | ------ |
-| App location          | /                | Source code for your web app                                          | Yes |
-| App artifact location | dist             | Location of your app's build artifacts, relative to your app location | No |
-| API location          | api              | Source code for your API                                    | No |
+| --------------------- | ---------------- | --------------------------------------------------------------------- | -------- |
+| App location          | /                | Source code for your web app                                          | Yes      |
+| App artifact location | dist             | Location of your app's build artifacts, relative to your app location | No       |
+| API location          | api              | Source code for your API                                              | No       |
 
 The **App artifact location** is a relative path to the build output directory of your application. For example, consider we have an app at `/` that outputs its built assets to a `dist` folder. In this case, you specify `dist` for this location.
 
