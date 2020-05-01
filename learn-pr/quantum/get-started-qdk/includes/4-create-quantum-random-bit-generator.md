@@ -186,7 +186,7 @@ The executable will run the operation or function marked with the
 `@EntryPoint()` attribute on a simulator, resource estimator, depending on the
 project configuration and command-line options.
 
-In VS Code terminal, build the `my-ranodm-bit.qs` the first time by typing the
+In VS Code terminal, build the `my-random-bit.qs` the first time by typing the
 below in the terminal: 
 ```
 dotnet build
@@ -198,6 +198,5 @@ dotnet run --no-build
 Pressing enter you should obtain the result of your measurement, either `Zero`
 or `One` and therefore your quantum bit. 
 
-Congratulations, now you learnt how to create and execute a quantum program. In
-the next unit we are going to explore how we can create a complete random number
-generator using the classical logic of Q#.
+In the next unit we are going to explore how we can create a complete random
+number generator using the classical logic of Q#.
