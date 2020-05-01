@@ -9,7 +9,7 @@ You've made changes to your API in the previous exercise. Commit those changes t
 1. Enter a commit message such as **api changes**
 1. Open the command palette by pressing **F1**
 1. Type and select **Git: Push**
-1. If you are prompted with the message **The branch 'api' has no upstream branch. Would you like to publish this branch?** press the \*_OK_ button
+1. If you are prompted with the message **The branch 'api' has no upstream branch. Would you like to publish this branch?** press the **OK** button
 
 ## Create a Pull Request
 
