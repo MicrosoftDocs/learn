@@ -1,5 +1,5 @@
-In this unit you are going to learn how to build a quantum random number
-generator theoretically, which happens to be a perfect example to introduce the Quantum
+In this unit you are going to learn how to simulate a quantum random number
+generator, which happens to be a perfect example to introduce the Quantum
 Development Kit to combine quantum and classical programs. We will used the concept of Bloch sphere, H gate and superposition to introduce explain the example. If these terms are not familiar to you yet, you can read more about them in the QDK documentation page [here](https://docs.microsoft.com/quantum/concepts/glossary).  
 
 One of the most direct applications of quantum devices is the generation of
@@ -33,9 +33,8 @@ the classical value assigned to that pole when measured. For example, the qubit
 state represented by the red arrow below has a higher probability of giving the
 value **0** if we measure it.
 
-![A qubit state with a high probability of measuring zero](../media/qrng-Bloch.png)
-<!--img src="../media/qrng-Bloch.png" width="175" alt="A qubit state with a high
-probability of measuring zero"-->
+:::img src="../media/qrng-Bloch.png" width="175" alt="A qubit state with a high
+probability of measuring zero":::
 
 We can use this representation to visualize the operations:
 
@@ -43,15 +42,13 @@ We can use this representation to visualize the operations:
   create a superposition in which the probabilities for **0** and **1** are the
   same.
 
-![Preparing a qubit in superposition](../media/qrng-H.png)
-<!--img src="../media/qrng-H.png" width="450" alt="Preparing a qubit in
-superposition"-->
+:::img src="../media/qrng-H.png" width="450" alt="Preparing a qubit in
+superposition":::
 
 * Then we measure the qubit and save the output:
 
-![Measuring a qubit and saving the output](../media/qrng-meas.png)
-<!--img src="../media/qrng-meas.png" width="450" alt="Measuring a qubit and saving
-the output"-->
+:::img src="../media/qrng-meas.png" width="450" alt="Measuring a qubit and saving
+the output":::
 
 Since the outcome of the measurement is completely random, we have obtained a
 random bit. We can call this operation several times to create integers. For
