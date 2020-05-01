@@ -7,6 +7,7 @@ In this module you will:
 
 - Learn about the services and tools available through Azure Quantum
 - Discover the process of creating a workspace in the Azure Quantum portal
+- Learn how quantum programs can be executed in the cloud
 - Learn about optimization and evaluate situations where quantum-inspired solutions can have impact
 
 ## Prerequisites
