@@ -8,10 +8,12 @@ That's a simple way to visualize how SVMs work. Let's learn about SVMs by using 
 
 In this module, you will:
 
-- TBD
-- TBD
-- TBD
+- Train an support vector model (SVM) model to do image classification by using items in a dataset. 
+- Use principal component analysis (PCA) to reduce the number of dimensions in a dataset to help increase the accuracy of a model.
+- Use `GridSearchCV` with scikit-learn to tune hyperparameters and increase the accuracy of your model.
+- Learn how to cross-validate a model, and quantify its accuracy.
 
 ## Prerequisites
 
-- TBD
+- [Text classifications with Naive Bayes](../../text-classification-naive-bayes/index.yml)
+- [Principal component analysis (PCA)](../../principal-component-analysis-food-composition/index.yml)

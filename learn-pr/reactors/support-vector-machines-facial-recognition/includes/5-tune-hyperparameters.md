@@ -98,6 +98,8 @@ Here's the output:
 Text(89.18, 0.5, 'Predicted label')
 ```
 
+:::image type="content" alt-text="A table that shows a predicted label axis and an actual label axis" source="../media/predicted-label.png" loc-scope="Azure":::
+
 The model correctly identified Colin Powell 49 times out of 50, Donald Rumsfeld 23 times out of 25, and so on. That's not bad. And it's a great example of Support Vector Machines at work. It would be challenging, perhaps impossible, to do this well using more conventional learning algorithms such as logistic regression.
 
 ## Cross-validate
@@ -114,3 +116,12 @@ print(scores['test_score'].mean())
 The output is `0.8850918369413338`.
 
 Is the cross-validated score higher or lower than the score returned by the model's score method? Regardless, the CV score is probably a more accurate indicator of how well the model will respond to faces it hasn't seen before. And to a data scientist, accuracy is everything.
+
+Data scientists typically use either 5 or 10 folds for cross-validation, depending on the size of the dataset. Use the cell below to cross-validate the model using 10 folds rather than 5 and print the mean of all the scores. Does the resulting score differ dramatically from the one above?
+
+```python
+# TODO: Cross-validate using 10 folds
+
+# Hint: Copy and paste the final two lines in the previous code cell and change cv to 10
+```
+

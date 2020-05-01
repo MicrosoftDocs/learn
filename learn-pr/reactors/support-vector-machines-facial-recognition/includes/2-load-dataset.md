@@ -98,6 +98,6 @@ The output is `0.4649122807017544`.
 
 That's not very encouraging, but we're far from done.
 
-SVM can use several types of kernels to fit a mathematical model to a dataset. The default kernel type is one called the [radial-basis function](https://wikipedia.org/wiki/Radial_basis_function?azure-portal=true), which scikit-learn abbreviates _rbf_. You can specify the kernel type with the SVC function's `kernel` parameter. Other common values include _linear_, _poly_, and _sigmoid_. It could be that another kernel type would fit the data better. But there's something else that might help, too. That "something else" is [principal component analysis (PCA)](https://wikipedia.org/wiki/Principal_component_analysis?azure-portal=true).
+SVM can use several types of kernels to fit a mathematical model to a dataset. The default kernel type is one called the [radial-basis function (RBF)](https://wikipedia.org/wiki/Radial_basis_function?azure-portal=true), which scikit-learn abbreviates _rbf_. You can specify the kernel type with the SVC function's `kernel` parameter. Other common values include _linear_, _poly_, and _sigmoid_. It could be that another kernel type would fit the data better. But there's something else that might help, too. That "something else" is [principal component analysis (PCA)](https://wikipedia.org/wiki/Principal_component_analysis?azure-portal=true).
 
 
