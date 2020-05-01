@@ -1,8 +1,6 @@
 Azure Quantum is a cloud service that extends the scalability, security and reliability of Azure into the quantum computing world, providing access to a diverse set of quantum services, ranging from pre-built solutions to software and quantum hardware. 
 Built on the Microsoft Azure cloud platform, Azure Quantum enables you to begin exploring and building applications today.
 
-In this module, you'll learn what Azure Quantum is and how it can be used to solve your quantum computing or quantum-inspired projects at scale.
-
 ## Learning objectives
 
 In this module you will learn:
