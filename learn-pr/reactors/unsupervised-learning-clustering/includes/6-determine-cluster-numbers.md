@@ -1,3 +1,4 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
 You might have noticed that we manually determined the number $k$, the number of clusters, earlier in this section. We assigned `n_clusters_ = 3` in the model. But is 3 the right number of clusters for this dataset?
 

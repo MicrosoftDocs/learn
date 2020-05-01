@@ -1,3 +1,4 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
 What if we went with $k=5$ instead of $k=3$? Would the contents of our clusters align with the components we identified in Section 1.2 (PCA)? We did, after all, divide the National Nutrient Database into five components in that section using PCA.
 

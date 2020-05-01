@@ -1,3 +1,4 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
 Up until now, we have only examined *supervised* machine learning (ML), in which we provide labeled training data for the algorithm. *k*-means clustering is the first *unsupervised* ML algorithm that we have dealt with: we provide the algorithm with a set of $n$ data points and tell the algorithm that we want that data partitioned into $k$ clusters that provide the best separation between clusters.
 

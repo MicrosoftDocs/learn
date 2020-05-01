@@ -1,3 +1,4 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
 Ultimately, no matter how complex the model we construct between `log_ppgdp` and `lifeExpF`, we will only be able to explain so much of variability because factors other than per-capita GDP affect female life expectancy. Using more than one predictor in our regression model helps us capture more of this richness of detail.
 

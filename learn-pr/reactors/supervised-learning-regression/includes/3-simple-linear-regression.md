@@ -1,3 +1,4 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
 Let's plot out the data to see the relationship between per-capita GDP and female life expectancy.
 

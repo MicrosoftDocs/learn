@@ -1,3 +1,4 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
 Thus far in this track we have largely investigated just machine-learning (ML) classification techniques. With linear regression, we will look at one of the most important predictive algorithms in ML.
 

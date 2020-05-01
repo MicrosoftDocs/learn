@@ -1,3 +1,4 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
 Our dataset has two categorical features (also known as *factors* in the statistical world): `region` and `group`. There are multiple ways of handling data like this in linear regression; here, we will handle it by building sub-models for it.
 
