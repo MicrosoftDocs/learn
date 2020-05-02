@@ -8,6 +8,8 @@ LUIS does two important natural language understanding tasks:
 
 For example, the phrase *What is the capital of France?* can be classified as `get_capital` intent, and *France* would be extracted as geographical entity. The same intent can be verbalized differently, eg. *What is France capital city?*, but the extracted entity and intent would be the same, leading ot the same result.
 
+LUIS using a machine learning model to match input phrase to the best possible intent, and not the exact matching. This allows it to classify phrases that are not exact, and find the best possible match. It also returns the **confidence** - a number from 0 to 1, which indicates how certain the model is in the given classification. Thus, if the model returns low confidence, it means that the phrase was not understood well.
+
 # Designing Intents
 
 Now we should come back to one of the principles of responsible conversational AI: the bot should have a clear goal. This goal defines the set of intents that our bot would be able to handle.
@@ -225,7 +227,8 @@ protected async Task ProcessLuisResult(ITurnContext<IMessageActivity> turnContex
 }
 ```
 
-The logic of this function is the following: 
+The logic of this function is the following:
+
 * We first check if the intent is `play_game`, which does not require a location. We handle this request - at the moment just displaying a message that the game is not implemented.
 * All other intents require exactly one location, so if not locations or more than one location is specified - we display an error message.
 * When exactly one location is found - we use `switch` to handle each intent separately according to the logic.
