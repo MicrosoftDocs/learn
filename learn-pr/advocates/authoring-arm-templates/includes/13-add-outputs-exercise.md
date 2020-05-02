@@ -59,16 +59,7 @@ The deployment command returns results in a JSON format. Look for `ProvisioningS
 
 You'll also see in the output of the **AZ** command, an object similar to the following example only if the output is in JSON format:
 
-```json
-{
-    "dfs": "https://storeluktbfkpjjrkm.dfs.core.windows.net/",
-    "web": "https://storeluktbfkpjjrkm.z19.web.core.windows.net/",
-    "blob": "https://storeluktbfkpjjrkm.blob.core.windows.net/",
-    "queue": "https://storeluktbfkpjjrkm.queue.core.windows.net/",
-    "table": "https://storeluktbfkpjjrkm.table.core.windows.net/",
-    "file": "https://storeluktbfkpjjrkm.file.core.windows.net/"
-}
-```
+![Template Processing](../media/Add-output-result.png)
 
 ### Review your work
 
@@ -78,24 +69,16 @@ You've done a lot in the last six exercises. You created a template with paramet
 
 1. Sign in to the Azure [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-2. From the left menu, select Resource groups.
+2. From the left menu, select Resource groups, and select the resource group you deployed to.
 
-3. Select the resource group you deployed to.
+![Template Processing](../media/13-open-rg-portal.gif)
 
-Depending on the steps you did, you should have at least one and perhaps several storage accounts in the resource group. You should also have several successful deployments listed in the history. Select that link.
+Depending on the steps you took, you should have at least one and perhaps several storage accounts in the resource group (several if you did not use the same storage account name in all exercises). You should also have several successful deployments listed in the history field. Select the deployments link.
 
-4. Select deployments. You see all of your deployments in the history. Select the deployment with the "addoutputs" prefix.
+![Template Processing](../media/13-output-result-portal1.png)
 
+4. You see all of your deployments in the history. Select the deployment with the "addoutputs" prefix. Show deployment history and review the inputs and outputs. You can also review the template.
 
+![Template Processing](../media/13-output-result-portal2.png)
 
-5. Show deployment history and review the inputs.
-
-
-
-6. Review the outputs.
-
-
-
-You can review the template.
-
-Show template
+Congratulations, you've completed all the exercises in this learn module to build a template and deploy it to Azure.

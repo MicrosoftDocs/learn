@@ -53,7 +53,7 @@ To run this deployment, you will use Azure CLI that is built in the Azure shell 
 
 Copy and execute this code block in the shell provided.
 > [!IMPORTANT]
-> Don't forget to change **{your-Prefix-name}** in the code below with any prefix you now wish to use.
+> Don't forget to change **{your-Prefix-name}** in the code below with any prefix you now wish to use, as long as it's minimum 3 characters and maximum 11 like you specified in the parameter section.
 
 :::code language="azurecli" source="../samples/exercise5-variable-add.sh" highlight="9":::
 

@@ -27,13 +27,13 @@
     }
   },
   "variables": {
-    "uniqueStorageName": "[toLower(concat(parameters('storagePrefix'), uniqueString(resourceGroup().id)))]"
+    "uniqueStorageName": "[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"
   },
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
       "apiVersion": "2019-04-01",
-      "name": "[variables(uniqueStorageName)]",
+      "name": "[variables('uniqueStorageName')]",
       "location": "[parameters('location')]",
       "sku": {
         "name": "[parameters('storageSKU')]"
