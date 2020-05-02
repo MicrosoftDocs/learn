@@ -27,7 +27,7 @@ dependencies:
     - azureml-defaults
 ```
 
-The you could use the following code creates an Azure Machine Learning environment from the saved specification file:
+You could then use the following code to create an Azure Machine Learning environment from the saved specification file:
 
 ```python
 from azureml.core import Environment
