@@ -1,4 +1,4 @@
-As in other programming languages, it is often essential in Python to break down your program into reusable chunks. A primary means of doing that is through functions.
+As in other programming languages, it's often essential in Python to break down your program into reusable chunks. A primary means of doing that is through functions.
 
 For example, we could rewrite the `while` loop code snippet above as a formal function:
 
@@ -39,4 +39,4 @@ The output is:
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> You will constantly be using functions of all kind to perform data science in Python, so understanding how functions accept, work on, and return data is critical to further progress.
+> You'll constantly be using functions of all kind to perform data science in Python, so understanding how functions accept, work on, and return data is critical to further progress.

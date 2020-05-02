@@ -2,20 +2,20 @@
 uid: learn.reactors.python-data-science
 metadata:
   title: Introduction to Python
-  description: Learn how to use Python for data science operations.
+  description: Learn how to use Python for data-science operations.
   ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
 title: Introduction to Python
-summary: Learn how to use Python for data science operations.
+summary: Learn how to use Python for data-science operations.
 abstract: |
   In this module, you will:
   - Explore the basic syntax and features of Python
-  - Use Jupyter Notebooks to execute Python code within VS Code
+  - Use Jupyter Notebook to execute Python code in Visual Studio Code
   - Learn how to store and manipulate simple data in Python
-  - Know how to import external modules into your Python environment
+  - Import external modules into your Python environment
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |

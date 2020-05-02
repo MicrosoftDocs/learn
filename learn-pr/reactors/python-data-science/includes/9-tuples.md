@@ -11,7 +11,7 @@ The output is:
 (1, 2, 3)
 ```
 
-Because tuples are immutable, you cannot change elements within them:
+Because tuples are immutable, you can't change elements within them:
 
 ```python
 t[1] = 2.0
@@ -80,7 +80,7 @@ The output is:
 
 ## Membership testing
 
-As your Python programming grows more complex, you will want to test lists and tuples for the membership of specific data. The in operator enables you to do that.
+As your Python programming grows more complex, you'll want to test lists and tuples for the membership of specific data. The in operator enables you to do that.
 
 ```python
 tup = ('a', 'b', 'c')

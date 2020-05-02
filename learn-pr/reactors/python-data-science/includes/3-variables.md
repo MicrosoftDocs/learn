@@ -1,4 +1,4 @@
-As in other programming languages, it is often essential to save values for later using variables in Python. Python assigns values to variables using the equals sign (=):
+As in other programming languages, it's often essential in Python to save values for later by using variables. Python assigns values to variables by using the equals sign ("="):
 
 ```python
 length = 15
@@ -12,7 +12,7 @@ The output is:
 225
 ```
 
-If you come from a programming background in another programming language (such as Java), you might have noticed that we never specified the variable type when we declared our variables `length` and `width`. Python does not require this, and you can change variable types as you wish:
+If you have a programming background in another language, such as Java, you might have noticed that we didn't specify the variable type when we declared our `length` and `width` variables. Python doesn't require you to specify type, and you can change variable types freely. For example:
 
 ```python
 length = 15
@@ -25,7 +25,7 @@ The output is:
 15
 ```
 
-Another example:
+You can change `length` to floating point:
 
 ```python
 length = 15.0
@@ -38,7 +38,7 @@ The output is:
 15.0
 ```
 
-Another example:
+Or, you can change `length` to a string:
 
 ```python
 length = 'fifteen'
@@ -51,7 +51,7 @@ The output is:
 'fifteen'
 ```
 
-Note that, for all the flexibility of variables in Python, you do have to define them. If you try to use an undefined variable, it will produce an error:
+Note that, for all the flexibility of variables in Python, you do still have to define them. If you try to use an undefined variable, you'll produce an error:
 
 ```python
 n
@@ -67,7 +67,7 @@ NameError                                 Traceback (most recent call last)
 NameError: name 'n' is not defined
 ```
 
-In Python's interactive mode and in Jupyter Notebooks, you can use the built-in variable _ (underscore), which automatically takes the value of the last printed expression. For example:
+In Python's interactive mode and in Jupyter Notebook, you can use the built-in variable `_` (underscore). This variable automatically takes the value of the last printed expression. For example, start with this expression:
 
 ```python
 tax = 11.3 / 100
@@ -81,7 +81,7 @@ The output is:
 2.25435
 ```
 
-Another example:
+Then, use `_` to reference the result of the most recent calculation in the next expression:
 
 ```python
 price + _
@@ -93,9 +93,9 @@ The output is:
 22.204349999999998
 ```
 
-Note that you should always treat the _ variable as read-only. Explicitly assigning a value to it will create an independent local variable with the same name and will mask the built-in variable (and its behavior).
+Always treat the `_` variable as read-only. Explicitly assigning a value to it will create an independent local variable with the same name and will mask the built-in variable and its behavior.
 
-Our previous output was kind of a mess, however; we generally use only two or fewer decimal points when working with prices. In order to clean this up, we can use a built-in function, `round()`.
+Our last output was kind of a mess, however. We typically use only two decimal points or fewer when working with prices. To clean this up, we can use a built-in function called `round()`.
 
 ```python
 round(_, 2)
@@ -107,9 +107,9 @@ The output is:
 22.2
 ```
 
-We will cover some of the other functions built into Python later in this module and cover user-defined functions in a later module.
+We'll cover some of the other functions that are built into Python later in this module. And, we'll cover user-defined functions in a later module.
 
-You do not have to define variables one at a time. You can define multiple variables on a single line, like so:
+You don't have to define variables one at a time. You can define multiple variables on a single line:
 
 ```python
 a, b, c, = 3.2, 1, 6
@@ -122,7 +122,7 @@ The output is:
 (3.2, 1, 6)
 ```
 
-You can also augment variable assignments. This will be particularly useful when we tackle loops in a later module.
+You can also augment variable assignments. This ability will be useful when we tackle loops in a later module.
 
 ```python
 x = 5
@@ -137,6 +137,6 @@ The output is:
 7
 ```
 
-Note that augmented assignment doesn’t have to be by 1 or even just addition. Beyond +=, augmented assignment statements in Python include -=, *=, /=, %=, and **=. Try playing around with different augmentation assignments until this concept makes sense.
+Augmented assignment isn't limited to increments of 1 or to addition operations. Beyond `+=`, augmented assignment statements in Python include `-=`, `*=`, `/=`, `%=`, and `**=`. Try playing around with different augmentation assignments until this concept makes sense.
 
 Python supports other types of numbers beyond `int` and `float`, such as [Decimal](https://docs.python.org/3.6/library/decimal.html#decimal.Decimal?azure-portal=true) and [Fraction](https://docs.python.org/3.6/library/fractions.html#fractions.Fraction?azure-portal=true). Python also has built-in support for [complex numbers](https://docs.python.org/3.6/library/stdtypes.html#typesnumeric?azure-portal=true), which are beyond the scope of this learning path.

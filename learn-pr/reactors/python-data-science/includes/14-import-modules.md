@@ -1,6 +1,6 @@
 Python has a way to put definitions in a file and use them in a script or in an interactive instance of the interpreter. Such a file is called a [Python module](https://docs.python.org/3/tutorial/modules.html?azure-portal=true). Definitions from a Python module can be imported into other programs or Python modules.
 
-For example, the `factorial()` function is not one of the standard functions built into Python. It is part of the Python math module. So, when we run `factorial()` before importing the [math module](https://docs.python.org/3/library/math.html?azure-portal=true), we get an error:
+For example, the `factorial()` function is not one of the standard functions built into Python. It's part of the Python math module. So, when we run `factorial()` before importing the [math module](https://docs.python.org/3/library/math.html?azure-portal=true), we get an error:
 
 ```python
 factorial(5)
@@ -47,5 +47,5 @@ You can add more cells to your notebook by clicking the **insert cell below** (+
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> There are several Python modules that you will regularly use in conducting data science in Python, so understanding how to import them will be essential (especially in this training).
+> There are several Python modules that you'll use regularly in conducting data science in Python, so understanding how to import them will be essential (especially in this training).
 > 

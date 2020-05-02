@@ -1,7 +1,7 @@
-Besides numbers, Python can also manipulate strings. Strings can be enclosed in single quotes ('...') or double quotes ("...") with the same result. Use backslash (\) to escape quotes; that is, use \ in order to use quotation marks within the string itself:
+Besides numbers, Python can also manipulate strings. You can enclose strings in single (') or double (") quotation marks with the same result. Use a backslash (\\) to escape quotation marks that you want to use within the string itself. Here's an example that uses single quotation marks.
 
 ```python
-'spam eggs'  # Single quotes.
+'spam eggs'  # Use single quotation marks.
 ```
 
 The output is:
@@ -10,10 +10,10 @@ The output is:
 'spam eggs'
 ```
 
-Another example:
+This example uses the backslash:
 
 ```python
-'doesn\'t'  # Use \' to escape the single quote...
+'doesn\'t'  # Use \' to escape the single quotation mark or apostrophe.
 ```
 
 The output is:
@@ -22,10 +22,10 @@ The output is:
 "doesn't"
 ```
 
-Another example:
+This example encloses the apostrophe between double quotation marks:
 
 ```python
-"doesn't"  # ...or use double quotes instead.
+"doesn't"  # Or, use double quotation marks instead.
 ```
 
 The output is:
@@ -34,7 +34,9 @@ The output is:
 "doesn't"
 ```
 
-In Python's interactive interpreter and Jupyter Notebooks in VS Code, the output string is enclosed in quotes and special characters are escaped with backslashes. Although this output sometimes looks different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes; otherwise, it’s enclosed in single quotes. The [print()](https://docs.python.org/3.6/library/functions.html#print?azure-portal=true) function produces a more readable output by omitting the enclosing quotes and by printing escaped and special characters:
+In Python's interactive interpreter and Jupyter Notebook in Visual Studio Code, the output string is enclosed in quotation marks, and special characters are escaped by using backslashes. Although this output sometimes looks different from the input (the enclosing quotation marks could change), the two strings are equivalent. The string is enclosed in double quotation marks if the string contains a single quotation mark and no double quotation marks. Otherwise, it’s enclosed in single quotation marks.
+
+The [print()](https://docs.python.org/3.6/library/functions.html#print?azure-portal=true) function produces more readable output by omitting the enclosing quotes and by printing escaped and special characters. Here's an example without `print()`:
 
 ```python
 '"Isn\'t," she said.'
@@ -46,7 +48,7 @@ The output is:
 '"Isn\'t," she said.'
 ```
 
-Another example:
+Here's another example that uses `print()`:
 
 ```python
 print('"Isn\'t," she said.')
@@ -58,11 +60,10 @@ The output is:
 "Isn\'t," she said.
 ```
 
-If you don't want escaped characters (prefaced by \) to be interpreted as special characters, use _raw strings_ by adding an `r` before the first quote:
+If you don't want escaped characters (prefaced by a backslash) to be interpreted as special characters, use _raw strings_ by adding an "r" before the first quotation mark. First, here's an example without the "r":
 
 ```python
 print('C:\some\name')  # Here \n means newline!
-# Im adding some more comments - woo!
 ```
 
 The output is:
@@ -72,10 +73,10 @@ C:\some
 ame
 ```
 
-Another example:
+Here's an example that uses the "r":
 
 ```python
-print(r'C:\some\name')  # Note the r before the quote.
+print(r'C:\some\name')  # Note the r before the quotation mark.
 ```
 
 The output is:
@@ -86,28 +87,28 @@ C:\some\name
 
 ## String literals
 
-String literals can span multiple lines and are delineated by triple-quotes: """...""" or '''...'''.
+String literals can span multiple lines and are delimited by three quotation marks (""") or (''').
 
-Because Python doesn't provide a means for creating multi-line comments, developers often just use triple quotes for this purpose. In a Jupyter notebook, however, such quotes define a string literal that appears as the output of a code cell:
+Because Python doesn't provide a way to create multiline comments, developers often just use three quotation marks for this purpose. In a Jupyter notebook, however, such quotation marks define a string literal that appears as the output of a code cell:
 
 ```python
 """
-Everything between the first three quotes, including new lines,
-is part of the multi-line comment. Technically, the Python interpreter
-simply sees the comment as a string, and because it's not otherwise
-used in code, the string is ignored. Convenient, eh?
+Everything between the sets of three quotation marks, including new lines,
+is part of the multiline comment. Technically, the Python interpreter
+sees the comment as simply a string. And, because the string is not otherwise
+used in code, it's ignored.
 """
 ```
 
 The output is:
 
 ```Output
-"\nEverything between the first three quotes, including new lines,\nis part of the multi-line comment. Technically, the Python interpreter\nsimply sees the comment as a string, and because it's not otherwise\nused in code, the string is ignored. Convenient, eh?\n"
+"\nEverything between the sets of three quotation marks, including new lines,\nis part of the multiline comment. Technically, the Python interpreter\nsees the comment as simply a string. And, because the string is not otherwise\nused in code, it's ignored.\n"
 ```
 
-For this reason, it's best in notebooks to use the # comment character at the beginning of each line, or better still, just use a Markdown cell outside of a code cell in a Jupyter notebook!
+For this reason, it's best in notebooks to use the hash ("#") comment character at the beginning of each line. Better still, just use a Markdown cell outside of a code cell in a Jupyter notebook!
 
-Strings can be _concatenated_ (glued together) with the plus (+) operator, and repeated with multiply (*):
+Strings can be _concatenated_ (glued together) by using the plus ("+") operator, and repeated by using the multiply ("*") operator:
 
 ```python
 # 3 times 'un', followed by 'ium'
@@ -120,7 +121,7 @@ The output is:
 'unununium'
 ```
 
-The order of operations applies to operators when they are used with strings as well as numeric types. Try experimenting with different combinations and orders of operators and strings to see what happens.
+The order of operations applies to operators in the same way when they're used with strings as when they're used with numeric types. Experiment with different combinations and orders of operators and strings to see what happens.
 
 ## Concatenate strings
 
@@ -136,7 +137,7 @@ The output is:
 'Python'
 ```
 
-However, to concatenate variables or a variable and a literal, use +:
+However, to concatenate variables or a variable and a literal, use the plus ("+") operator:
 
 ```python
 prefix = 'Py'

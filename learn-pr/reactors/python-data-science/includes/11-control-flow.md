@@ -104,7 +104,7 @@ Try changing the value of `y` in the snippet above. Do you get the output that y
 
 ## For loop: Basics
 
-It is often necessary in programs to iterate over some set of items. This is where `for` loops prove useful. For example, they can provide a useful way to iterate over the items of a list:
+It's often necessary in programs to iterate over some set of items. This is where `for` loops prove useful. For example, they can provide a useful way to iterate over the items of a list:
 
 ```python
 colors = ['red', 'yellow', 'blue']
@@ -120,7 +120,7 @@ yellow
 blue
 ```
 
-Sometimes, you will want to iterate over a list using the list index rather than items from that list (say, when you want to access items from another list at the same time). In this case, you can combine list-object methods and `for` loops:
+Sometimes, you'll want to iterate over a list using the list index rather than items from that list (say, when you want to access items from another list at the same time). In this case, you can combine list-object methods and `for` loops:
 
 ```python
 comp_colors = ['green', 'purple', 'orange']

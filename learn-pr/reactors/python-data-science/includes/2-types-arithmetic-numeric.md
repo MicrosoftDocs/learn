@@ -1,18 +1,18 @@
 <!--- Reviewer note: This unit uses LaTex math formatting. The dollar sign $ starts and ends each LaTeX statement. -->
 
-Expression syntax is straightforward. The operators plus (+), minus (-), multiply (*), and divide or slash (/) work just like in most other programming languages (such as Java or C). For example, type the following in a Python code cell in VS Code:
+Expression syntax in Python is straightforward. The operators plus ("+"), minus ("-"), multiply ("*"), and divide or slash ("/") work like they do in other programming languages such as Java or C. For example, enter the following expression in a Python code cell in Visual Studio Code:
 
 ```python
 2 + 3
 ```
 
-And you should get:
+You'll get:
 
 ```Output
 5
 ```
 
-The order of operations also works as in other programming languages (and in math class):
+The order of operations also works as it does in other programming languages (and in math class). Enter this expression:
 
 ```python
 30 - 4 * 5
@@ -36,7 +36,7 @@ The output is:
 1.4
 ```
 
-Division (/) always returns a floating-point number, which brings up a good point. Python (like other programming languages) has different numeric types. Integer numbers (such as 1, 3, and 20) have type [int](https://docs.python.org/3.6/library/functions.html#int?azure-portal=true). Numbers with a fractional component (such as 3.0 or 1.6) have type [float](https://docs.python.org/3.5/library/functions.html#float?azure-portal=true).
+Division ("/") always returns a floating-point number, which brings up an important point. Python, like other programming languages, has different numeric types. Integer numbers, such as 1, 3, and 20, have type [int](https://docs.python.org/3.6/library/functions.html#int?azure-portal=true). Numbers like 3.0 or 1.6, which have a fractional component, have type [float](https://docs.python.org/3.5/library/functions.html#float?azure-portal=true).
 
 You can mix numeric types in calculations:
 
@@ -50,7 +50,7 @@ The output is:
 10.5
 ```
 
-Another example of mixed types:
+Here's another example of mixed numeric types:
 
 ```python
 7.0 / 5
@@ -62,7 +62,7 @@ The output is:
 1.4
 ```
 
-You can perform a type of division that returns an integer: [floor division](https://docs.python.org/3.6/glossary.html#term-floor-division?azure-portal=true). Floor division uses the double slash (//) operator, discards any remainders, and just returns an `int`.
+You can do a type of division that returns an integer. [Floor division](https://docs.python.org/3.6/glossary.html#term-floor-division?azure-portal=true) uses the double-slash ("//") operator, discards any remainders, and returns only an `int`.
 
 ```python
 7 // 5
@@ -74,7 +74,7 @@ The output is:
 1
 ```
 
-To calculate the remainder, you can use the modulo operator (%):
+To calculate only the remainder, use the modulo operator ("%"):
 
 ```python
 7 % 5
@@ -86,7 +86,7 @@ The output is:
 2
 ```
 
-For exponents, use the power (**) operator. For example, you can write $5^2$ as:
+Use the power ("**") operator for exponents. For example, you can write $5^2$ as:
 
 ```python
 5 ** 2
@@ -110,7 +110,7 @@ The output is:
 32
 ```
 
-Note that power (**) has higher precedence in the order of operations than the negative sign (-). This means that $-5^2$ is actually the same thing as $-\left(5^2\right)$:
+Note that the power operator ("**") precedes the negative sign ("-") in the order of operations. So, $-5^2$ is the same as $-\left(5^2\right)$:
 
 ```python
 -5 ** 2
@@ -122,7 +122,7 @@ The output is:
 -25
 ```
 
-In order to assert the order of precedence that you want, use parentheses ():
+To assert the order of precedence that you want, use parentheses ("()"):
 
 ```python
 (-5) ** 2
@@ -134,7 +134,7 @@ The output is:
 25
 ```
 
-Parentheses () can supersede the order of operations in any calculation you need to run:
+Parentheses can supersede the order of operations in any calculation:
 
 ```python
 (30 - 4) * 5

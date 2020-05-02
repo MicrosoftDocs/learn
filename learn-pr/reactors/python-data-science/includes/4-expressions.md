@@ -1,4 +1,4 @@
-As with other programming languages, expressions are critical for decision making controlling the logical flow of Python programs. The most fundamental way of doing this in Python is with a comparison operator, such as less than (<):
+As in other programming languages, expressions are critical for decision-making and controlling the logical flow of Python programs. The most fundamental expressions use a comparison operator, such as less than ("<"):
 
 ```python
 2 < 5
@@ -10,21 +10,21 @@ The output is:
 True
 ```
 
-Python supplies serveral comparison operators:
+Python supports several comparison operators:
 
 | Operator | Description | Sample input | Sample output |
 |:--:|---|---|---|
-| < | Less than | 2 < 5 | True |
-| > | Greater than | 2 > 5 | False |
-| <= | Less than or equal | 2 <= 5 | True |
-|     |   | 2 <= 2 | True |
-| >= | Greater than or equal | 2 >= 5 | False |
-| == | Equality | 2 == 2 | True |
-|    |    | 2 == 5 | False |
-| != | Inequality | 2 != 5 | True |
-|    |    | 2 != 2 | False |
+| < | Less than | `2 < 5` | `True` |
+| > | Greater than | `2 > 5` | `False` |
+| <= | Less than or equal | `2 <= 5` | `True` |
+|     |   | `2 <= 2` | `True` |
+| >= | Greater than or equal | `2 >= 5` | `False` |
+| == | Equality | `2 == 2` | `True` |
+|    |    | `2 == 5` | `False` |
+| != | Inequality | `2 != 5` | `True` |
+|    |    | `2 != 2` | `False` |
 
-Python does not restrict you to comparing just two operands at a time. For example:
+Python doesn't restrict you to comparing only two operands at a time:
 
 ```python
 a, b, c = 1, 2, 3
@@ -37,7 +37,7 @@ The output is:
 True
 ```
 
-This entire expression is True because `1 < 2` is true and `2 < 3` is true.
+This entire expression is `True` because `1 < 2` is true and `2 < 3` is true.
 
 You can also use built-in functions in Python for comparing data. For example:
 
@@ -51,7 +51,7 @@ The output is:
 2.4
 ```
 
-Another example:
+Here's another example:
 
 ```python
 max(3, 2.4, 5)
@@ -63,7 +63,7 @@ The output is:
 5
 ```
 
-You can also combine comparison operators into compound expressions. For example:
+You can also combine comparison operators into compound expressions:
 
 ```python
 1 < 2 and 2 < 3
@@ -75,9 +75,9 @@ The output is:
 True
 ```
 
-This compound expression returned True because **both** `1 < 2` is true and `2 < 3` is true. (Note that this is equivalent to `1 < 2 < 3`.)
+This compound expression uses the **and** Boolean operator. It returns `True` because both `1 < 2` and `2 < 3` are true. (This expression is equivalent to `1 < 2 < 3`.)
 
-Python also provides the `or` Boolean operator, which requires that only one simple expression in a compound expression be true in order to return True. For example:
+Python also supports the **or** Boolean operator, which requires that only one simple expression in a compound expression be true for the whole expression to return `True`:
 
 ```python
 1 < 2 or 1 > 2
@@ -89,7 +89,7 @@ The output is:
 True
 ```
 
-Finally, not inverts the truth evaluation of an expression, such as in:
+Finally, the **not** operator inverts the truth evaluation of an expression:
 
 ```python
 not (2 < 3)
@@ -103,8 +103,7 @@ False
 
 ### Try it yourself
 
-Copy the following code snippet and change different parts of the expression.
-Predict what the result will be first and then run the code cell to see if you got it right!
+Copy the following code example into a Python cell in Visual Studio Code. Change different parts of the expression and predict what the result will be. Then, run the code cell to see if you got it right!
 
 ```python
 i = 7
