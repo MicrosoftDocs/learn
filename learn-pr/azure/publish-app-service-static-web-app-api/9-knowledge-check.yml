@@ -45,16 +45,16 @@ quiz:
           explanation: "Correct. You can view the progress of the GitHub Actions worfklow in your browser on your repository."
     - content: "How do you configure your app so that when you navigate to _/about_ in the browser, it serves the root _index.html_ file?"
       choices:
-        - content: "Add an entry in _routes.json_ for a wildcard route `/*` to serve `/index.html`."
+        - content: "Add an entry in _routes.json_ for a wildcard route `/*` to serve **/index.html**."
           isCorrect: true
-          explanation: "Correct. You can customize routing rules in the _routes.json_ file in your app's artifact folder. When you define a routing rule for route = `/*` to serve `/index.html`, all unmatched routes will serve `/index.html`."
-        - content: "Add an entry in package.json_ for a wildcard route `/*` to serve `/index.html`."
+          explanation: "Correct. You can customize routing rules in the _routes.json_ file in your app's artifact folder. When you define a routing rule for route = `/*` to serve **/index.html**, all unmatched routes will serve **/index.html**."
+        - content: "Add an entry in package.json_ for a wildcard route `/*` to serve **/index.html**."
           isCorrect: false
           explanation: "Incorrect. The routing rules must be defined in the _routes.json_ file."
-        - content: "Add an entry in _routes.json_ for a wildcard route `/index` to serve `/index.html`."
+        - content: "Add an entry in _routes.json_ for a wildcard route `/index` to serve **/index.html**."
           isCorrect: false
           explanation: "Incorrect. The route `/index` is not a wildcard route."
-        - content: "Configure a wildcard route in the GitHub Actions workflow file to serve `/index.html`."
+        - content: "Configure a wildcard route in the GitHub Actions workflow file to serve **/index.html**."
           isCorrect: false
           explanation: "Incorrect. Routing rules must be defined in the _routes.json_ file."
     - content: "How do you tell Azure Static Web Apps that you changed where your API is located?"
