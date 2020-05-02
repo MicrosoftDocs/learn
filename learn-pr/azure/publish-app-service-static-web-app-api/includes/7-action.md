@@ -62,10 +62,10 @@ Sometimes you want to see your changes in the browser before publishing to the l
 
 The following table shows how Azure Static Web Apps will publish your app to different URLs. Your app publishes to one URL while a pull request to the same branch publishes to another URL.
 
-| Source            | Description       | URL                                                      |
-| ----------------- | ----------------- | -------------------------------------------------------- |
-| **master** branch | Live web site URL | `https://purple-rain-062d03304.staticsitescanary.net/`   |
-| Pull Request #5   | Preview URL       | `https://purple-rain-062d03304-5.staticsitescanary.net/` |
+| Source            | Description       | URL                                                    |
+| ----------------- | ----------------- | ------------------------------------------------------ |
+| **master** branch | Live web site URL | `https://purple-rain-062d03304.azurestaticapps.net/`   |
+| Pull Request #5   | Preview URL       | `https://purple-rain-062d03304-5.azurestaticapps.net/` |
 
 You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **master** branch. When you create the pull request against the **master** branch, the GitHub Action publishes the app to a preview URL.
 
