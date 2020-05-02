@@ -44,13 +44,3 @@ Notice, far right, that the travel distance, and estimated time, are provided. T
 ## First steps
 
 To begin our journey into the wonderful world of route finding, we need to start at square one, and create an Azure Maps account. The next unit creates the basics.
-
-To finish.
-1. acrolinx - done1
-2. lightbox - done
-3. badge
-4. sandbox - update image
-5. test with sandbox
-6. quiz - done
-7. read and edit - read1
-

@@ -358,7 +358,7 @@ In this unit, we code our app. In stages, to make it a little more understandabl
                         padding: 100
                     });
         
-                    // Points input to the routeURL. Minimum of two (start and end points).           
+                    // Points input to the routeURL. Minimum of two (start and end points).
                     var coordinates = [[startPoint.geometry.coordinates[0], startPoint.geometry.coordinates[1]]];
                     if (viaMidpoint)
                     {

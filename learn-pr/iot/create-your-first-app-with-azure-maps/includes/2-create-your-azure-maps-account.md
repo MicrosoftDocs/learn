@@ -10,19 +10,15 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
 
     [![Screenshot showing the opening screen of Azure Maps](../media/azure-maps-create-account-1.png)](../media/azure-maps-create-account-1.png#lightbox)
 
-1. Click the **Start free** button.
-
-
-
-1. Click **GET IT NOW**, and in the **Create this app in Azure**, select **Continue**.
-
-    [![Screenshot showing the dialog to create an app in Azure](../media/azure-maps-create-account-2.png)](../media/azure-maps-create-account-2.png#lightbox)
-
-1. In the **Create Azure Maps Account** screen, select the sandbox subscription and resource group.
+1. In the **Create Azure Maps Account** screen, select the **Concierge Subscription** and the resource group for the sandbox, which begins with **learn-**.
 
 1. For the **Name**, enter something appropriate, "MyAzureMaps", or similar.
 
-1. Leave **Pricing tier** at its default value. It's free anyway! Click **Create**.
+    [![Screenshot showing the dialog to create an app in Azure](../media/azure-maps-create-account-2.png)](../media/azure-maps-create-account-2.png#lightbox)
+
+1. Leave **Pricing tier** at its default value. It's free anyway! Read, and select the checkbox covering the Licence and Privacy Statement.
+
+1. Click **Create**.
 
 1. It might take a few seconds for the resource to be deployed. When you get the deployment message, click **Go to resource**.
 
@@ -39,5 +35,7 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
     [![Screenshot showing the authentication keys](../media/azure-maps-create-account-3.png)](../media/azure-maps-create-account-3.png#lightbox)
 
 1. Paste the string into a text file. This key is the only authentication you need to connect an app to your resource.
+
+1. It is now OK to close the Azure portal.
 
 Before we build the app to use this key, let's go over some of the features Azure Maps has for route finding.

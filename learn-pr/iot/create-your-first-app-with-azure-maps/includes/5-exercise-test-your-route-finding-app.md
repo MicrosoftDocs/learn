@@ -14,7 +14,7 @@ Running a new app for the first time is always an exiting moment!
 
 1. If you get the image above, good work! It's all plain sailing from now on.
 
-1. You will notice that the car route in purple, and the truck route in blue, are nearly identical, but diverge by 55.3 km. So where are the extra kilometers?
+1. You will notice that the car route in purple, and the truck route in blue, are nearly identical, but diverge by around 50 kilometers. So where are the extra kilometers?
 
 1. Start at Seattle, and you will notice straightaway a divergence in routes, our hazardous materials are not allowed to cross the I-90 bridge. Follow the route along, zooming out a bit on the long cross-country sections, and try to locate the three areas where the routes diverge.
 
@@ -36,16 +36,20 @@ Running a new app for the first time is always an exiting moment!
 
 1. Try some Portland to Charleston routes, with and without visiting Chicago on the way.
 
-1. Optionally, add your favorite location to the app. You'll need to find the latitude and longitude of your location. Replace one of the existing lat/lon locations in the code, with your new values. Then, find and replace all instances of the name you've replaced, with your new name. Then run the code.
+## Optionally, customize the app
 
-```javascript
-    if (document.getElementById("west1").checked == true) {
-                            westTitle = "Your location";
-                            westLat = your latitude;
-                            westLon = your longitude;
-                        } else
-```
+1. Consider adding your favorite location to the app. You'll need to find the latitude and longitude of your location. Replace one of the existing lat/lon locations in the code, with your new values. Then, find and replace all instances of the name you've replaced, with your new name. Then run the code.
 
-1. Optionally, try replacing a city in the USA, with locations elsewhere in North America. Or add several locations on another continent.
+    Find `west1` in the script code, and replace the `westTitle`, `westLat`, and `westLon` values.
+
+    ```javascript
+        if (document.getElementById("west1").checked == true) {
+                                westTitle = "Your location";
+                                westLat = your latitude;
+                                westLon = your longitude;
+                            } else
+    ```
+
+1. Try replacing a city in the USA, with locations elsewhere in North America. Or, add several locations on another continent.
 
 Hopefully, you've thoroughly tested your route finding app. Now to return to the more formal side of this module, and summarize what we have done, and finish with a knowledge check.
