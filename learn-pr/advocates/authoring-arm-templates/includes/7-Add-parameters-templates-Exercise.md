@@ -45,9 +45,12 @@ In order to carry on with your exercises, you will add a storage account definit
 code azuredeploy.json
 ```
               
-2. Copy and paste the following code in the resource section of your ARM template.
+2. Copy and paste the highlighted code below, in the corresponding section of your ARM template in the sandbox.  Or replace the whole content with tthe content below.
 
 :::code language="JSON" source="../samples/exercise3-parameter-azuredeploy.json" highlight="5-10,17":::
+
+> [!IMPORTANT]
+> When copying the code. You still need to set the **{location}** in the template, to the **same** location a resource group provided for you in the **sandbox**.  In order to get the resource group name and location use the following command.<br><br>**az group list --query "[?contains(name, 'learn')]" -o table**
 
 You'll notice that the code has changed from the last one.  In this exercise, we are adding parameters.  Therefore we have to define the parameter in the **parameters** section (line 5-10) and then insert the referral to the parameter in the **resources** section (line 17)
 
@@ -121,7 +124,10 @@ You will use the code below to update the template you have been working with.
 code azuredeploy.json
 ```
 
-2. Copy the whole file and paste over your template. As you may notice the new code includes a storageSKU parameter with a default value. This value is used when a value isn't specified during the deployment. It also has a list of allowed values. These values match the values that are needed to create a storage account. You don't want users of your template to pass in SKUs that don't work.
+2. Copy and paste the highlighted code below in your template. As you may notice the new highlighted code includes a storageSKU parameter with a default value. This value is used when a value isn't specified during the deployment. It also has a list of allowed values. These values match the values that are needed to create a storage account. You don't want users of your template to pass in SKUs that don't work.
+
+> [!IMPORTANT]
+> When copying the code. You still need to set the **{location}** in the template, to the **same** location a resource group provided for you in the **sandbox** just as you did in the fiirst part of this exercise.  In order to get the resource group name and location use the following command.<br><br>**az group list --query "[?contains(name, 'learn')]" -o table**
 
 :::code language="JSON" source="../samples/exercise3-parameter-sku.json" highlight="10-23,31-33":::
 

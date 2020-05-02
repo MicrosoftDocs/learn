@@ -6,4 +6,4 @@ az deployment group create \
   --name $DeploymentName \
   --resource-group $RG \
   --template-file $templateFile \
-  --parameters storageName={your-Prefix-name}
+  --parameters storagePrefix={your-Prefix-name}

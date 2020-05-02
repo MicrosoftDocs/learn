@@ -7,7 +7,15 @@ At the end of the previous exercise, your template looked like the following:
 The parameter for the storage account name is hard-to-use because you have to provide a unique name. In unit 8, we addressed a way to use functions to generate a unique name instead of having you guess a unique name.  Now we can use that function to solve this problem by adding a variable that will use that function and constructs a unique name for the storage account still using the passed parameter as the prefix string.
 
 ### Use variable
-The following example highlights the changes you can make to add a variable to your template that creates a unique storage account name. Copy the whole file and use it in the following exercise.
+The following example highlights the changes you can make to add a variable to your template that creates a unique storage account name.
+
+1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
+       
+```azurecli
+code azuredeploy.json
+```
+
+2. Copy and paste the highlighted code below, or copy the whole file in your template and use it in the following exercise.
 
 :::code language="JSON" source="../samples/exercise4-function-2.json" highlight="4-9,29-31,36":::
 
