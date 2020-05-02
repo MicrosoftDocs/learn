@@ -51,9 +51,9 @@ quiz:
         - content: "Add an entry in package.json_ for a wildcard route **/*** to serve **/index.html**."
           isCorrect: false
           explanation: "Incorrect. The routing rules must be defined in the _routes.json_ file."
-        - content: "Add an entry in _routes.json_ for a wildcard route `/index` to serve **/index.html**."
+        - content: "Add an entry in _routes.json_ for a wildcard route **/index** to serve **/index.html**."
           isCorrect: false
-          explanation: "Incorrect. The route `/index` is not a wildcard route."
+          explanation: "Incorrect. The route **/index** is not a wildcard route."
         - content: "Configure a wildcard route in the GitHub Actions workflow file to serve **/index.html**."
           isCorrect: false
           explanation: "Incorrect. Routing rules must be defined in the _routes.json_ file."
