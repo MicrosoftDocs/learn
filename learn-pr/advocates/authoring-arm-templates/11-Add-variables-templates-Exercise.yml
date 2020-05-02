@@ -2,6 +2,7 @@
 uid: learn.advocates.authoring-arm-templates.11-add-variables-templates-exercise
 title: Add variables to your templates - Exercise
 azureSandbox: true
+interactive: bash
 metadata:
   title: Add variables to your templates - Exercise
   description: Introduction

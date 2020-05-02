@@ -2,6 +2,7 @@
 uid: learn.advocates.authoring-arm-templates.9-template-functions-exercise
 title: Add functions to your template - Exercise
 azureSandbox: true
+interactive: bash
 metadata:
   title: Add functions to your template - Exercise
   description: Introduction

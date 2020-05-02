@@ -3,7 +3,7 @@
 1. Open Visual Studio Code from the Azure shell provides here in the sandbox by using the following command.
        
 ```shell
-    code
+    code azuredeploy.json
 ```
               
 Copy and paste the following JSON into the editor:

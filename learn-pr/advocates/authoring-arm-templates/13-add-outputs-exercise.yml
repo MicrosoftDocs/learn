@@ -2,6 +2,7 @@
 uid: learn.advocates.authoring-arm-templates.13-add-outputs-exercise
 title: Add outputs to you templates - Exercise
 azureSandbox: true
+interactive: bash
 metadata:
   title: Add outputs to you templates - Exercise
   description: This unit will walk you through adding some meaningful outputs to your template that can be used as a status update or to pass the information to other processes and/or templates.

@@ -2,6 +2,7 @@
 uid: learn.advocates.authoring-arm-templates.7-add-parameters-templates-exercise
 title: Add parameters to your templates - Exercise
 azureSandbox: true
+interactive: bash
 metadata:
   title: Add parameters to your templates - Exercise
   description: Introduction
