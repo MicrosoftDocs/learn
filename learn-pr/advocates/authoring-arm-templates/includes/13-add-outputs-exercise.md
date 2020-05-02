@@ -51,7 +51,7 @@ Copy and execute this code block in the shell provided.
 > [!IMPORTANT]
 > Don't forget to change **{your-Prefix-name}** in the code below with the same prefix you used in the last exercise.
 
-:::code language="azurecli" source="exercise6-add-output.sh" highlight="9":::
+:::code language="azurecli" source="../samples/exercise6-add-output.sh" highlight="9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 
