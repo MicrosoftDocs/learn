@@ -9,9 +9,9 @@ It deploys your storage account, but it doesn't return any information about the
 
 ### Add outputs
 
-You can use outputs in your templates to return properties from the resources you just deployed. For example, it might be helpful to get the endpoints for your new storage account.
+You can use outputs in your templates to return properties from the resources you deployed. For example, it might be helpful to get the endpoints for your new storage account.
 
-In this exercise you will change to your template to add output values. in the code below, you will  notice, the new **outputs** section.  It uses functions **[reference(variables('uniqueStorageName')).primaryEndpoints]** to extract the endpoint of the storage account you are deploying using your constructed **uniqueStorageName** name. The type of returned value is set to object, which means it will returns a JSON object.
+In this exercise, you will change to your template to add output values. in the code below, you will  notice, the new **outputs** section.  It uses functions **[reference(variables('uniqueStorageName')).primaryEndpoints]** to extract the endpoint of the storage account you are deploying using your constructed **uniqueStorageName** name. The type of returned value is set to object, which means it will return a JSON object.
 
 It uses the reference function to get the runtime state of the storage account. To get the runtime state of a resource, you pass in the name or ID of a resource. In this case, you use the same variable you used to create the name of the storage account.
 
