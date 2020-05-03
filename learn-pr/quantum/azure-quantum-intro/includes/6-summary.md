@@ -4,7 +4,19 @@ Congratulations! You have completed the overview of Azure Quantum. In this modul
 - the software and hardware systems you can use through Azure Quantum
 - quantum-inspired optimization supported by Azure Quantum via its solvers
 
-# Learn more
+## Learn more about QIO
+- Learn more about adiabatic quantum computation at [Adiabatic quantum computation](https://en.wikipedia.org/wiki/Adiabatic_quantum_computation)
+- You can learn more about building a scalable quantum computer in [this blog post](https://cloudblogs.microsoft.com/quantum/2018/05/16/achieving-scalability-in-quantum-computing/)
+- [Theory suggests](https://arxiv.org/pdf/1910.01659.pdf) we'll see further speedups once quantum hardware is available
+- [gradient descent](https://en.wikipedia.org/wiki/Gradient_descent)
+- Here's an example of a good use of QIO: [previously used methods](https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/)
+Learn more about simulated annealing at: [Simulated annealing](https://en.wikipedia.org/wiki/Simulated_annealing)
+- Learn more about quantum annealing at: [Quantum annealing](https://en.wikipedia.org/wiki/Quantum_annealing)
+- Learn more about superposition here: [superposition](https://en.wikipedia.org/wiki/Quantum_superposition) 
+-Learn more about Isling problems at: [Ising model](https://en.wikipedia.org/wiki/Ising_model).
+
+**TODO-move the following section to the Azure Quantum module**
+## Learn more about Azure Quantum
 
 Azure Quantum is currently under private preview. You can request early access to Azure Quantum by filling out a form on the [Microsoft Azure website](https://azure.microsoft.com/services/quantum/#contact). Stay tuned for information about the public release.
 
