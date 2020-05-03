@@ -59,7 +59,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 1. The connection string you'll use in the Node.js app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text document, so you've one line containing a string that looks similar to the following:
 
     ```js
-    HostName=iotc-<your Scope ID>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>
+    HostName=iotc-<guid>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>
     ```
 
 1. Save off your text file.
@@ -79,7 +79,7 @@ You now have the all important connection string. The **Scope ID** identifies th
 
 If you do not already have an Azure Maps account, you'll need to create one.
 
-1. Navigate to [Azure Maps](https://azure.microsoft.com/services/azure-maps/?azure-portal=true).
+1. Right click on [Azure Maps](https://azure.microsoft.com/services/azure-maps/?azure-portal=true), and select **Open in new window**.
 
 1. Follow the prompts to create a free account. When your account is set up, you'll need the **Primary Key** for the account. You will find this key by selecting **Authentication** in the left-hand menu for your Azure Maps resource. Copy and paste this key into your text document, with a note that it applies to Azure Maps.
 
