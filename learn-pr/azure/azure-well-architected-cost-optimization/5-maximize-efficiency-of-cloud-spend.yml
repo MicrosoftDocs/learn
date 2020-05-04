@@ -36,5 +36,5 @@ quiz:
       isCorrect: false
       explanation: 'These databases are used during the same time, and are not good candidates for elastic pools.'
     - content: 'Customer databases that are spread across time zones and have periods of intermittent usage.'
-      isCorrect: false
+      isCorrect: true
       explanation: 'Since these databases are used intermittently, their resources could be shared, making them good candidates for elastic pools.'
