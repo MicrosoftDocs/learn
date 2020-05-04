@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.cv-classify-bird-species
+uid: learn.advocates.cv-classify-bird-species
 metadata:
   title: Classify Bird Species with Custom Vision
   description: As a ornithologist you study the behavior, physiology, and conservation of birds and bird habitats. This work often involves surveying, recording and reporting on bird activity. You want to build a machine learning model that will identify the birds to help with gathering data. In this module, you will use Azure Cognitive Services Custom Vision to create a model to identify species of birds!
@@ -29,12 +29,12 @@ products:
   - azure
   - azure-cognitive-services
 units:
-  - learn.cv-classify-bird-species.1-introduction
-  - learn.cv-classify-bird-species.2-ml-process
-  - learn.cv-classify-bird-species.3-build-model
-  - learn.cv-classify-bird-species.4-understand-results-test
-  - learn.cv-classify-bird-species.5-deploy-model
-  - learn.cv-classify-bird-species.6-knowledge-check
-  - learn.cv-classify-bird-species.7-summary
+  - learn.advocates.cv-classify-bird-species.1-introduction
+  - learn.advocates.cv-classify-bird-species.2-ml-process
+  - learn.advocates.cv-classify-bird-species.3-build-model
+  - learn.advocates.cv-classify-bird-species.4-understand-results-test
+  - learn.advocates.cv-classify-bird-species.5-deploy-model
+  - learn.advocates.cv-classify-bird-species.6-knowledge-check
+  - learn.advocates.cv-classify-bird-species.7-summary
 badge:
   uid: learn.cv-classify-bird-species.badge
