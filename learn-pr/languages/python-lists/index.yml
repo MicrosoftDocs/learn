@@ -22,7 +22,7 @@ prerequisites: |
   - Understanding of how to work with variables, data types like `str` and `int`, and so on.
   - Familiarity with importing the `random` module and with how to call functions like `randint()` from the module.
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-lists.svg
 levels:
 - beginner
 roles:
