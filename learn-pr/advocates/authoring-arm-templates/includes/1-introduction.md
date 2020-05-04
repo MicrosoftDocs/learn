@@ -1,4 +1,6 @@
-With more enterprises adopting the cloud, many of them are adopting agile development methods. These enterprises need to repeatedly deploy their solutions to the cloud (in different environments dev, test, prod...). Infrastructure is now an integral part of that iterative process. However you still need to design and manage that infrastructure in a controlled manner.
+With more enterprises adopting the cloud, many of them are implementing agile development methods. These enterprises need to repeatedly deploy their solutions to the cloud and in different environments such as dev, test, and production.
+
+Infrastructure is now an integral part of that iterative process. However you still need to design and manage that infrastructure in a controlled manner.
 
 To meet these challenges, you can use the practice of infrastructure as code (IaC). IaC defines the infrastructure that needs to be deployed. And just like application code, you store the infrastructure code (the templates) in a source repository and version it. Any one on your team can run the code and deploy similar environments. That way, you retain control of what gets deployed but are unburdened of the daily deployments in dev, test, or production environments.
 

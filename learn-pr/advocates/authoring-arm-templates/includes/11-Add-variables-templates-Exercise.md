@@ -19,14 +19,17 @@ code azuredeploy.json
 
 Notice that there are some edits from the previous code:
 
-1. The parameter **"storageName"** was changed to **"storagePrefix"** and its **"maxLength"** value was changed to **11** from **24**.  This is to ensure the prefix + the generated unique string would not exceed the maximum storage account name length limit of 24
-1. The code now includes a variable named **uniqueStorageName**. This variable uses five functions to construct a string value.
-    - toLower
-    - concat
-    - parameters
-    - uniqueString
-    - resourceGroup
-1. The resource name was changed from **"name": "[parameters('storageName')]",** to **"name": "[variables(uniqueStorageName)]",** to leverage the newly created variable.
+- The parameter **"storageName"** was changed to **"storagePrefix"** and its **"maxLength"** value was changed to **11** from **24**.  This is to ensure the prefix + the generated unique string would not exceed the maximum storage account name length limit of 24
+
+- The code now includes a variable named **uniqueStorageName**. This variable uses five functions to construct a string value.
+
+    - toLower()
+    - concat()
+    - parameters()
+    - uniqueString()
+    - resourceGroup()
+
+- The resource name was changed from **"name": "[parameters('storageName')]",** to **"name": "[variables(uniqueStorageName)]",** to leverage the newly created variable.
 
 > [!NOTE]
 > As previously mentioned, the result of "uniqueString(resourceGroup().id)" is a 13 character hash based on result of **"resourgroup().id"** and therefore, it will **ALWAYS** be the same as long as you're deploying in the same resource group.  
@@ -42,11 +45,13 @@ Again, like in the first few exercises, you need to specify a resource group tha
 ```bash
 echo $RG
 ```
+
 in no result is displayed, Type the code below in the sandbox to store the value of the Resource Group name in the "RG" variable for Azure CLI to use to deploy the template.
 
 ```azurecli
 RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
 ```
+
 To run this deployment, you will use Azure CLI that is built in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name) and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
 
 Copy and execute this code block in the shell provided.

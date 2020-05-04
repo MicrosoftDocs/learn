@@ -24,12 +24,11 @@ At this point your ARM template should now look like the following code snippet:
 
 In this exercise, you're adding a storage account to the empty template we created in unit 3. So, Let's look at the additions you entered:
 
-1. **"type": "Microsoft.Storage/storageAccounts",** - To identify we are deploying a storage account.
-1. **"apiVersion": "2019-06-01",** - The API version for storageAccounts is [2019-06-01](https://docs.microsoft.com/azure/templates/microsoft.storage/2019-04-01/storageaccounts)
-1. **"name": "{provide-unique-name}",** - The unique name you want to give to this resource.
-1. **"location": "eastus",** - The location of the resource.
-1. **"sku": {"name": "Standard_LRS"},** - the '[sku](https://docs.microsoft.com/rest/api/storagerp/srp_sku_types)' is the type of storage the account will be set up for. the available types are Standard or premium, and the redundancy levels are LRS (Locally Redundant storage), GRS(Geo Redundant storage), RA-GRS(Read-Access Geo Redundant storage), ZRS (Zone Redundant Storage), GZRS (Geo and Zone Redundant Storage), and RA-GZRS (Read Access Geo and Zone Redundant Storage).
-
+   - **"type": "Microsoft.Storage/storageAccounts",** - To identify we are deploying a storage account.
+   - **"apiVersion": "2019-06-01",** - The API version for storageAccounts is [2019-06-01](https://docs.microsoft.com/azure/templates/microsoft.storage/2019-04-01/storageaccounts)
+   - **"name": "{provide-unique-name}",** - The unique name you want to give to this resource.
+   - **"location": "eastus",** - The location of the resource.
+   - **"sku": {"name": "Standard_LRS"},** - the '[sku](https://docs.microsoft.com/rest/api/storagerp/srp_sku_types)' is the type of storage the account will be set up for. the available types are Standard or premium, and the redundancy levels are LRS (Locally Redundant storage), GRS(Geo Redundant storage), RA-GRS(Read-Access Geo Redundant storage), ZRS (Zone Redundant Storage), GZRS (Geo and Zone Redundant Storage), and RA-GZRS (Read Access Geo and Zone Redundant Storage).
 
 Notice that you didn't add all of the properties available to the Microsoft.Storage/storageAccounts resource to your template. Many of the properties mentioned [here](https://docs.microsoft.com/azure/templates/microsoft.storage/2019-06-01/storageaccounts) are optional, so you only define what is needed.
 
@@ -45,7 +44,7 @@ Just as it was in the first exercise, you need to specify a resource group that 
 az group list --query "[?contains(name, 'learn')]" -o table
 ```
 
-1. In order to use the resource group name in the deployment, we will store it in a variable in the shell by using the command:
+2. In order to use the resource group name in the deployment, we will store it in a variable in the shell by using the command:
 
 ```shell
 RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
@@ -63,7 +62,6 @@ az deployment group create \
   --resource-group $RG \
   --template-file $templateFile
 ```
-
 
 > [!NOTE]
 >If the deployment failed, use the debug switch with the deployment command to show the debug logs. You can also use the verbose switch to show the full debug logs.
@@ -83,19 +81,19 @@ You can verify the deployment by exploring the resource group from the Azure por
 >[!NOTE]
 > When accessing the portal, please authenticate using the same account you used to access Microsoft Learn
 
-1. From the left menu, select **Resource groups**.
+2. From the left menu, select **Resource groups**.
 
-1. Select the resource group you used to deploy your new template in the last command. The resource group will have a name similar to **learn-0ab1c234-d567-8e90-fabcd-12e34d56789f**. You will **now** see a storage account deployed within that resource group based on the resource defined in your template.
+3. Select the resource group you used to deploy your new template in the last command. The resource group will have a name similar to **learn-0ab1c234-d567-8e90-fabcd-12e34d56789f**. You will **now** see a storage account deployed within that resource group based on the resource defined in your template.
 
-1. Notice in the upper right of the overview, You now have **2 Succeeded** deployment listed in the upper-right portion of the portal. And your storage account is showing as a resource in your resource group.
+4. Notice in the upper right of the overview, You now have **2 Succeeded** deployment listed in the upper-right portion of the portal. And your storage account is showing as a resource in your resource group.
 
    ![View deployment status](../media/portal-verify-deployment-2.png)
 
-1. In the contextual menu on the left, click on **Deployments** and select the latest deployment to see the deployment details.
+5. In the contextual menu on the left, click on **Deployments** and select the latest deployment to see the deployment details.
 
    ![Select deployment](../media/portal-verify-storagetemplate.png)
 
-1. You see a summary of the deployment. You now see the storage account resources deployed.
+6. You see a summary of the deployment. You now see the storage account resources deployed.
 
    ![View deployment summary](../media/Storage-account-deploy-details.png)
 ---
