@@ -3,25 +3,30 @@ uid: learn.github.github-actions-hello
 metadata:
   title: "GitHub Actions: Hello World - Learn"
   description: Create a basic GitHub Action and use that action in a workflow.
-  ms.date: 01/01/2020
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 05/19/2020
+  author: jamcneil
+  ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "GitHub Actions: Hello World"
 summary: Create a basic GitHub Action and use that action in a workflow.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
-prerequisites: None
+  - Describe GitHub Actions, the types of actions, and where to find them
+  - Plan an automation of your software development life cycle with GitHub Workflows
+  - Create a container action and have it run in a workflow triggered by a push event to your GitHub repository
+prerequisites: |
+  - A [GitHub](https://github.com?azure-portaql=true) account
+  - The ability to navigate and edit files in GitHub
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
 - beginner
 roles:
+- devops-engineer
+- administrator
 - developer
+- solution-architect
 products:
 - azure
 units:
