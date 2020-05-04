@@ -1,5 +1,3 @@
-# Adding parameters to an ARM templates - Exercise
-
 At the end of the previous exercise, your template had the following JSON code in it:
 
 ```json
@@ -45,12 +43,12 @@ In order to carry on with your exercises, you will add a storage account definit
 code azuredeploy.json
 ```
               
-2. Copy and paste the highlighted code below, in the corresponding section of your ARM template in the sandbox.  Or replace the whole content with tthe content below.
-
-:::code language="JSON" source="../samples/exercise3-parameter-azuredeploy.json" highlight="5-10,18":::
+2. Copy and paste the highlighted code below, in the corresponding section of your ARM template in the sandbox.  Or replace the whole content with the content below.
 
 > [!IMPORTANT]
 > When copying the code. You still need to set the **{location}** in the template, to the **same** location a resource group provided for you in the **sandbox**.  In order to get the resource group name and location use the following command.<br><br>**az group list --query "[?contains(name, 'learn')]" -o table**
+
+:::code language="JSON" source="../samples/exercise3-parameter-azuredeploy.json" highlight="5-10,18":::
 
 You'll notice that the code has changed from the last one.  In this exercise, we are adding parameters.  Therefore we have to define the parameter in the **parameters** section (line 5-10) and then insert the referral to the parameter in the **resources** section (line 17)
 

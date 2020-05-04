@@ -1,5 +1,3 @@
-# Create your Azure Resource Manager (ARM) templates - Exercise
-
 In this exercise, you will create your own template using the built-in Azure Shell Code editor.  for your own template creation i suggest [VS Code](https://code.visualstudio.com/) and the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools).  Together, they provide language support, resource snippets, and resource autocompletion when writing your templates. In essence, they simplifies the process of writing the ARM template.  I highly suggest that you checkout the [quickstart](https://docs.microsoft.com/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI) exercise after this Learn module.
 
 1. Open Visual Studio Code from the Azure shell provides here in the sandbox by using the following command.
@@ -38,7 +36,7 @@ Copy and paste the following JSON into the editor:
 
 3. Now that you saved the template. Close the editor by either clicking on the ellipsis (upper right corner **...**) and select **Close Editor**, or use the keyboard shortcut **CTRL-Q**.
 ---
-### Create resource group
+## Create resource group
 
 When you deploy a template, you need to specify a resource group that will contain the resources. Before running the deployment command, you must create the resource group. However, in the sandbox provided here, you already have a resource group to target your deployments.
 

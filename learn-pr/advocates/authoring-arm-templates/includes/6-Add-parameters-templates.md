@@ -1,5 +1,3 @@
-# Adding parameters to an ARM templates
-
 By leveraging parameters, you can reuse templates for different environments by passing different values either through the command line or a parameter file to the template. Azure Resource Manager resolves parameter values before starting the deployment operations. Wherever the parameter is used in the template, Resource Manager replaces it with the resolved value, making it reusable, and repeatable.
 
 Now, let's get back to parameters.

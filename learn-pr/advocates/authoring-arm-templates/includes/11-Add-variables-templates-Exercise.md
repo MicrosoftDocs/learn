@@ -1,12 +1,10 @@
-#### Add variables to your template - Exerecise.
-
 At the end of the previous exercise, your template looked like the following:
 
 :::code language="JSON" source="../samples/exercise4-function-1.json":::
 
 The parameter for the storage account name is hard-to-use because you have to provide a unique name. In unit 8, we addressed a way to use functions to generate a unique name instead of having you guess a unique name.  Now we can use that function to solve this problem by adding a variable that will use that function and constructs a unique name for the storage account still using the passed parameter as the prefix string.
 
-### Use variable
+## Use variable
 The following example highlights the changes you can make to add a variable to your template that creates a unique storage account name.
 
 1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
@@ -33,7 +31,7 @@ Notice that there are some edits from the previous code:
 > [!NOTE]
 > As previously mentioned, the result of "uniqueString(resourceGroup().id)" is a 13 character hash based on result of **"resourgroup().id"** and therefore, it will **ALWAYS** be the same as long as you're deploying in the same resource group.  
 
-### Deploy the template
+## Deploy the template
 
 Let's deploy this new template. Deploying this template is easier than the previous templates because you provide just the prefix for the storage name and you don't have to guess what could be a unique name. As in the previous exercises the following example deploys the template with Azure CLI.
 
@@ -61,7 +59,7 @@ The deployment command returns results in a JSON format. Look for `ProvisioningS
 
 ![Azure CLI deployment provisioning state](../media/deploy-succeed.png)
 
-#### Verify deployment
+## Verify deployment
 
 You can verify the deployment by exploring the resource group from the Azure portal.
 

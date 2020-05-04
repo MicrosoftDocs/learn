@@ -1,5 +1,3 @@
-# Summary
-
 In this module, you learned to identify and understand all the main parts of an Azure Resource Manager (ARM) template. Furthermore you have written from scratch your own ARM template added parameters, variables, resources, functions and outputs to your template.
 
 Resource Manager templates are composable. As you build out your deployments, you can write smaller templates that each define a piece of the system and then combine them to create a complete system.  this will be covered in an upcoming learn module.

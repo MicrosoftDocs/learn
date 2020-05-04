@@ -1,6 +1,4 @@
-#### Add functions to your template.
-
-At the end of the previous tutorial, your template had the following JSON code in it:
+At the end of the previous exercise, your template had the following JSON code in it:
 
 :::code language="JSON" source="../samples/exercise3-parameter-sku.json":::
 
@@ -8,7 +6,7 @@ In this exercise, you'll update your template to remove the hard-coded **Locatio
 
 This situation is one where **functions** become helpful. You already used functions when you completed the previous exercises. When you added **"[parameters('storageName')]"**, you used the parameters function.  In this exercise, you'll use a function to replace the hard-coded values with proper function.
 
-#### Use function
+## Use function
 
 1. Open Visual Studio Code and the template you created in the last exercise.  From the Azure shell provided here, type the following command.
 
@@ -27,7 +25,7 @@ code azuredeploy.json
 
 4. Save the updated template, prepare to deploy it.
 
-#### Deploy The modified template
+## Deploy The modified template
 
 Now that you have modified the template, again, Let's deploy it. The following example deploys the template with Azure CLI.
 
@@ -58,7 +56,7 @@ The deployment command returns results in a JSON format. Look for `ProvisioningS
 
 ![Azure CLI deployment provisioning state](../media/deploy-succeed.png)
 
-#### Verify deployment
+## Verify deployment
 
 You can verify the deployment by exploring the resource group from the Azure portal.
 

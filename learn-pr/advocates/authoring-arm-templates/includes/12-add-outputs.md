@@ -1,5 +1,3 @@
-#### Add outputs to your template
-
 In the Outputs section of your template, you can specify values that will be returned after a successful deployment.
 
 there are certain elements that make up the outputs section.

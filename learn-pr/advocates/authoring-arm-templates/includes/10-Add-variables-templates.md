@@ -1,5 +1,3 @@
-#### Add variables to your template.
-
 Variables in ARM templates are used to simplify things. Rather than repeating complicated expressions throughout the template, you define a variable that contains the expression. Then, you reference that variable as needed throughout your template. Resource Manager resolves variables before starting the deployment operations. Wherever a variable is used in the template, the Resource Manager replaces it with the resolved value.
 
 There are three types of variables you can utilize:

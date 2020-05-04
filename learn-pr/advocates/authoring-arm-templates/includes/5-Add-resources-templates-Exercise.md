@@ -1,5 +1,3 @@
-# Adding resources to your ARM template - Exercise
-
 In this exercise, you will add a storage account definition to your existing template.  To do so, you will edit the template you created in the last unit.
 
 1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
@@ -76,7 +74,7 @@ Two possible deployment failures that you might encounter:
 
 - Error: Code=StorageAccountAlreadyTaken; Message=The storage account named store1abc09092019 is already taken.<br>In the template, try a different storage account name.
 
-### Verify your deployment
+## Verify your deployment
 
 You can verify the deployment by exploring the resource group from the Azure portal.
 

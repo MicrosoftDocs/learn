@@ -1,5 +1,3 @@
-# Adding resources to your ARM template
-
 When writing ARM templates to deploy resources in your subscriptions, you'll need to find and use information about the resource providers and types of resources.
 
 In the next exercise, you'll be adding a storage account to your template. In that case, you'll need to work with the **Microsoft.Storage** resource provider. This resource provider offers many resources types:

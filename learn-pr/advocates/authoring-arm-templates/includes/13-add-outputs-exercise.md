@@ -1,6 +1,3 @@
-# Add outputs to your template - Exercise
-
-## Review template
 At the end of the previous exercise, your template had the following template:
 
 :::code language="JSON" source="../samples/exercise4-function-2.json":::
