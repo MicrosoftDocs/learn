@@ -42,4 +42,4 @@ Our model is performing good enough according to the metrics provided. Lets test
 - Search for an image of a bird that matches one of the species you trained it to recognize. Grab the URL for the image and paste it into the `Image URL` box to test accuracy.
 - The prediction will appear on the right side of the window.
 
-We can do more testing once we deploy the model to an endpoint in the next step where we will deploy the model.
+In the next step where we will deploy the model. After the model is deployed we can do more testing with the endpoint we create.

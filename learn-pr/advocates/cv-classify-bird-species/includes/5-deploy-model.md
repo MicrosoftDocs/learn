@@ -9,8 +9,7 @@ Now our model is performing "good enough" lets deploy it! There are different wa
 - Select `Performance` from the top navigation in the Custom Vision portal
 - Click `Publish`
 - Select `Prediction Url`
-- Copy the Url to either use an image url or image file
-- Additionally by selecting the settings icon in the right corner will bring you to the keys and urls to call the endpoint.
+- This is the Url you will use to post images to get predictions.
 
 ### Consume the API in a Python App
 
