@@ -1,4 +1,8 @@
-Another immutable data type in Python are tuples. It can be useful at times to create a data structure that won't be altered later in a program, such as to protect constant data from being overwritten on accident or to improve performance for iterating over data. This is where tuples come in. You create tuples much as you do lists, only using parentheses instead of brackets.
+Another immutable data type in Python is the _tuple_. 
+
+At times, it's useful create a data structure that won't be altered later in a program. That structure might protect constant data from being overwritten by accident or improve performance for iterating over data. These situations are where tuples come in.
+
+You create tuples in much the same way as you create lists, except that you use parentheses instead of brackets:
 
 ```python
 t = (1, 2, 3)
@@ -27,7 +31,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'tuple' object does not support item assignment
 ```
 
-However, you can refer to elements within them:
+However, you can refer to elements within a tuple:
 
 ```python
 t[1]
@@ -39,7 +43,7 @@ The output is:
 2
 ```
 
-You can also slice tuples:
+You can also slice a tuple:
 
 ```python
 t[:2]
@@ -51,7 +55,7 @@ The output is:
 (1, 2)
 ```
 
-You can also create tuples from lists:
+You can create a tuple from a list:
 
 ```python
 l = ['baked', 'beans', 'spam']
@@ -65,7 +69,7 @@ The output is:
 ('baked', 'beans', 'spam')
 ```
 
-Or you can create lists from tuples:
+Or, you can create a list from a tuple:
 
 ```python
 l = list(l)
@@ -80,7 +84,7 @@ The output is:
 
 ## Membership testing
 
-As your Python programming grows more complex, you'll want to test lists and tuples for the membership of specific data. The in operator enables you to do that.
+As your Python programming becomes more complex, you'll want to test lists and tuples for the membership of specific data. You use the `in` operator to do that.
 
 ```python
 tup = ('a', 'b', 'c')
@@ -93,7 +97,7 @@ The output is:
 True
 ```
 
-You can also test to see if something is not in a list or tuple using `not in`:
+You can also test whether something is not in a list or tuple by using `not in`:
 
 ```python
 lis = ['a', 'b', 'c']
@@ -108,8 +112,8 @@ False
 
 ### Try it yourself
 
-- What happens if you run `lis` in `lis`? Is that the behavior you expected?
-- If not, think back to the nested lists we’ve already encountered.
+- What happens if you run `lis in lis`? Is that the behavior you expected?
+- If not, think about the nested lists we discussed in an earlier unit.
 
 <br />
 

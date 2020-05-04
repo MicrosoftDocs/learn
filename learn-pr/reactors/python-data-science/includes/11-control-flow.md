@@ -1,8 +1,8 @@
-Now we'll take a closer look at `if` statements.
+Now, let's take a look at `if` statements.
 
-## If-statements
+## The if statement
 
-`If` statements in Python are similar to those in other programming languages like Java, and they form the backbone of the logical flow of most programs.
+The `if` statement in Python is similar to that found in other programming languages such as Java. It forms the backbone of the logical flow of most programs. Here's an example:
 
 ```python
 y = 6
@@ -16,13 +16,13 @@ The output is:
 Even
 ```
 
-### Explore if-statement control logic
+### Explore the control logic of the if statement
 
-What behavior do you experience if you change `y` to be odd?
+What do you see if you change `y` to an odd number?
 
-Did you notice the indentation for print under the if statement? That indentation is important because that is how Python demarks the scope of a control flow--what is contingently run or looped over--as opposed to the braces ({}) used in other languages.
+Did you notice the indentation for the `print` function under the `if` statement? That indentation is important because it's how Python delimits the _scope_ of a control flow, to indicate what is to be contingently run or looped over. Python uses indentation instead of the braces ("{}") used in other languages.
 
-To cover more contingencies without having to construct a follow-on `if` statement, you can add an else statement:
+To cover more contingencies without having to construct a follow-on `if` statement, you can add an `else` statement:
 
 ```python
 y = 7
@@ -38,7 +38,7 @@ The output is:
 Odd
 ```
 
-`elif` enables you to insert an additional logical test to an `if` statement:
+Use `elif` to insert another logical test into an `if` statement:
 
 ```python
 y = 1
@@ -56,11 +56,11 @@ The output is:
 One
 ```
 
-Notice that, in the previous example, the `if` statement exited after finding the first logical test that was true. If `y = 1`, and while 1 is indeed odd, the if statement executed and exited after finding that `y == 1`, rather than continuing to the end of the statement.
+Notice that, in the previous example, the `if` statement exited after finding the first logical test that was true. The `y` variable was set to  1, which is is indeed an odd number. But, the `if` statement executed and exited after finding that `y == 1` instead of continuing to the `else` clause at the end of the statement.
 
 ### Try it yourself
 
-Try changing the value of `y` in the snippet above. Do you get the output that you expect?
+Try changing the value of `y` in the preceding example. Do you get the output that you expect?
 
 <br />
 
@@ -102,9 +102,9 @@ Try changing the value of `y` in the snippet above. Do you get the output that y
 
 ***
 
-## For loop: Basics
+## The for loop: Basics
 
-It's often necessary in programs to iterate over some set of items. This is where `for` loops prove useful. For example, they can provide a useful way to iterate over the items of a list:
+It's often necessary in programs to iterate over some set of items. A `for` loop is useful such a task. For example, it provides a way to iterate over the items of a list:
 
 ```python
 colors = ['red', 'yellow', 'blue']
@@ -120,7 +120,7 @@ yellow
 blue
 ```
 
-Sometimes, you'll want to iterate over a list using the list index rather than items from that list (say, when you want to access items from another list at the same time). In this case, you can combine list-object methods and `for` loops:
+Sometimes, you'll want to iterate over a list by using the list index rather than items from that list. For example, you might want to access items from another list at the same time. In this case, you can combine list-object methods and `for` loops:
 
 ```python
 comp_colors = ['green', 'purple', 'orange']
@@ -136,7 +136,7 @@ yellow purple
 blue orange
 ```
 
-We've met `len()` before, but [range()](https://docs.python.org/3/library/functions.html#func-range?azure-portal=true) is new to us. That function produces a sequence of integers from 0 to 1 less than the number passed into it. Hence:
+We've seen `len()` before, but [range()](https://docs.python.org/3/library/functions.html#func-range?azure-portal=true) is new to us. That function produces a sequence of integers from 0 up to a number that's 1 less than the "stop" number that was passed into it. Here's an example:
 
 ```python
 for j in range(5):
@@ -153,15 +153,15 @@ The output is:
 4
 ```
 
-In addition to `range(`_`stop`_`)`, the `range` function can take up to three parameters: `range(`_`start`_`,` _`stop`_`[,` _`step`_`])`. This odd-looking notation just means that if you pass a single argument to `range()`, it will take that argument to be the _`stop`_ value. Two arguments will be the _`start`_ and _`stop`_ values. Three values are _`star`_, _`stop`_, and _`step`_.
+In addition to `range(`_`stop`_`)`, the `range` function can take up to three parameters: `range(`_`start`_`,` _`stop`_`[,` _`step`_`])`. This odd-looking notation simply means that if you pass in a single argument `range()` will take that argument to be the _`stop`_ value. It will interpret two arguments as the _`start`_ and _`stop`_ values, and three arguments as _`star`_, _`stop`_, and _`step`_.
 
-### Explore for loop control flow
+### Explore the control flow of a for loop
 
 How would you use `range` and a `for` loop to print the sequence of numbers from 10 to 20?
 
 How about counting by threes from 17 to 41?
 
-It can also be important to break out of a`for`  loop. Python uses the `break` statement borrowed from C to do this. To see this in action, consider two nested `for` loops:
+It can also be important to break out of a`for` loop. Python borrows the `break` statement from the C language to do this. To see `break` in action, consider two nested `for` loops:
 
 ```python
 for n in range(2, 10):
@@ -186,11 +186,11 @@ The output is:
 9 equals 3 * 3
 ```
 
-Note that, in the example above, the `else` statement belongs to the `for` loop, not to the if statement.
+in the preceding example, note that the `else` statement belongs to the `for` loop, not to the `if` statement.
 
 ### Try it yourself
 
-Try changing the code snippet above by removing the `break` statement. What output does it now produce?
+Try changing the preceding code example by removing the `break` statement. What output does it now produce?
 
 <br />
 
@@ -230,7 +230,7 @@ Try changing the code snippet above by removing the `break` statement. What outp
 
 ***
 
-## For loop: Continue
+## The for loop: continue statement
 As part of the control flow of your program, you might want to continue to the next iteration of your `for` loop. The `continue` statement (also borrowed from C) can help with that:
 
 ```python
@@ -256,7 +256,7 @@ Found an odd number: 9
 
 ### Try it yourself
 
-What happens when you replace the `continue` statement above with a `break`?
+What happens when you replace the `continue` statement in the preceding example with a `break` statement?
 
 <br />
 
@@ -282,16 +282,14 @@ What happens when you replace the `continue` statement above with a `break`?
 
 ***
 
-## While-loops
+## The while loop
 
-If we cross the functionality of the `if` statement with that of the `for` loop, we would get the `while` loop, a loop that iterates while some logical condition remains true. Consider this snippet of code to compute the initial sub-sequence of the Fibonacci sequence:
-
-In the Fibonacci series, the sum of two elements defines the next.
+If we combined the functionality of the `if` statement with that of the `for` loop, we'd get the `while` loop. A `while` loop iterates for as long as some logical condition remains true. Consider the following code example, which computes the initial sub-sequence of the Fibonacci sequence. (In the Fibonacci series, the sum of two elements defines the next.)
 
 ```python
 a, b = 0, 1
 
-while b < 100:    
+while b < 100:
     print(b, end=', ')
     a, b = b, a+b
 ```
@@ -302,10 +300,10 @@ The output is:
 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,
 ```
 
-Go ahead and play with the number of iterations for the `while` loop. Notice that this snippet also uses multiple assignment for variables.
+Go ahead and play with the number of iterations for the `while` loop. Notice that this example also uses multiple assignment for variables.
 
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Control flows are what make programs programs, as opposed to a single sequence of operations. Mastering the logical flow of information in Python will enable you to automate tasks that would be impossibly complex or time-consuming to do manually.
+> Control flows are what make a program a _program_ as opposed to a single sequence of operations. Mastering the logical flow of information in Python will enable you to automate tasks that would be impossibly complex or time consuming to do manually.
 >

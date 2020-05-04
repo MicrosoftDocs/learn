@@ -1,6 +1,6 @@
-Python includes a number of handy functions that are available to all lists.
+Python includes a number of handy methods that are available to all lists.
 
-For example, [append()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) and [extend()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) enable you to add to the end of a list, much like the += operator:
+For example, use [append()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) and [extend()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) to add to the end of a list, much like what an augmentation ("+=") operator does for variables:
 
 ```python
 groupMembers = ['Jordan', 'Parker']
@@ -14,7 +14,7 @@ The output is:
 ['Jordan', 'Parker', 'Quinn']
 ```
 
-Notice that you did not actually pass a list to `append()`; passing a list to `append()` results in this behavior:
+Notice that you passed an item, not a list, to `append()`. Passing a list to `append()` gives you this result:
 
 ```python
 groupMembers2 = ['Jordan', 'Parker', 'Quinn']
@@ -28,7 +28,7 @@ The output is:
 ['Jordan', 'Parker', 'Quinn', ['Stuart', 'Pete']]
 ```
 
-To tack a list on the end of an existing list, use [extend()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) instead:
+To tack items from a new list onto the end of an existing list, use [extend()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) instead:
 
 ```python
 groupMembers.extend(['Stuart', 'Pete'])
@@ -41,7 +41,7 @@ The output is:
 ['Jordan', 'Parker', 'Quinn', 'Stuart', 'Pete']
 ```
 
-[index()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) returns the index of the first matching item in a list (if present):
+The [index()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method returns the index of the first matching item in a list (if the item is present):
 
 ```python
 groupMembers.index('Quinn')
@@ -53,7 +53,7 @@ The output is:
 2
 ```
 
-The [count()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method returns the number of items in a list that match objects you pass in:
+The [count()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method returns the number of items in a list that match objects that you pass in:
 
 ```python
 groupMembers.count('Jordan')
@@ -65,7 +65,7 @@ The output is:
 1
 ```
 
-There are two methods for removing items from a list. The first is [remove()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true), which locates the first occurrence of an item in the list and removes it (if present):
+There are two methods for removing items from a list. The first is [remove()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true), which locates the first occurrence of an item in the list and removes it (if the item is present):
 
 ```python
 groupMembers.remove('Stuart')
@@ -78,7 +78,7 @@ The output is:
 ['Jordan', 'Parker', 'Quinn', 'Pete']
 ```
 
-The other method for removing items from lists is the [pop()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method. If you supply `pop()` with an index number, it will remove the item from that location in the list and return it; otherwise, `pop()` removes the last item in a list and returns that:
+The other method for removing items from a list is the [pop()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method. If you supply `pop()` with an index number, it removes the item from that location in the list and returns it. If you specify no index, `pop()` removes the last item from the list and returns that:
 
 ```python
 groupMembers.pop()
@@ -90,7 +90,7 @@ The output is:
 'Pete'
 ```
 
-The [insert()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method enables you to add an item to a specific location in a list:
+The [insert()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method adds an item to a specific location in a list:
 
 ```python
 groupMembers.insert(1, 'Riley')
@@ -103,7 +103,7 @@ The output is:
 ['Jordan', 'Riley', 'Parker', 'Quinn']
 ```
 
-Unsurprisingly, the [reverse()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method reverses the order of items in a list:
+Unsurprisingly, the [reverse()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) method reverses the order of the items in a list:
 
 ```python
 groupMembers.reverse()
@@ -154,4 +154,5 @@ The output is:
 
 ***
 
-Note that you can supply your own _lambda function _to `sort()` for use in comparing items in a list. We'll cover lambda functions in a later topic.
+> [!NOTE]
+> You can supply your own _lambda function_ for the `sort()` method, for use in comparing items in a list. We'll cover lambda functions in a later unit.

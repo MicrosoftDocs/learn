@@ -1,12 +1,12 @@
-Dictionaries in Python provide a means of mapping information between unique keys and values. You create dictionaries by listing zero or more key-value pairs inside of braces, like this:
+Dictionaries in Python provide a means of mapping information between unique keys and values. You create dictionaries by listing zero or more key-value pairs inside braces, like this:
 
 ```python
 capitals = {'France': ('Paris', 2140526)}
 ```
 
-Keys for dictionaries can be three things: strings, numbers, or tuples (that contain only strings, numbers, or other tuples). The important thing is that dictionary keys be immutable, so lists can't be used for keys in dictionaries, for example.
+A key for a dictionary can be one of three types: a string, a number, or a tuple. If a key is a tuple, it can contain only strings, numbers, or other tuples. The important thing is that dictionary keys be of immutable types. For example, a list can't be a key in a dictionary because lists are mutable.
 
-You add to dictionaries like this:
+Here's how you add to a dictionary:
 
 ```python
 capitals['Nigeria'] = ('Lagos', 6048430)
@@ -21,7 +21,7 @@ The output is:
 
 ### Try it yourself
 
-Now try adding another country (or something else) to the capitals dictionary.
+Try adding another country (or something else) to the capitals dictionary.
 
 <br />
 
@@ -46,7 +46,7 @@ Now try adding another country (or something else) to the capitals dictionary.
 
 ***
 
-You reference entries much like you do as through an index number for a string, list, or tuple, but instead of an index, use a key:
+You reference dictionary entries much like you reference parts of a string, list, or tuple. But, instead of an index, you use a key:
 
 ```python
 capitals['France']
@@ -83,7 +83,7 @@ The output is:
 2
 ```
 
-Similar to the `pop()` method for lists, the [popitem()](https://docs.python.org/3.6/library/stdtypes.html?highlight=popitem#dict.popitem?azure-portal=true) method randomly removes a key from the dictionary, along with its associated value:
+The [popitem()](https://docs.python.org/3.6/library/stdtypes.html?highlight=popitem#dict.popitem?azure-portal=true) method is similar to the `pop()` method for lists. It randomly removes a key and its associated value from the dictionary:
 
 ```python
 capitals.popitem()
@@ -110,4 +110,4 @@ The output is:
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Regardless of how complex and voluminous the data you work with, these basic data structures will repeatedly be your means for handling and manipulating it. Comfort with these basic data structures is essential to being able to understand and use Python code written by others.
+> Regardless of the complexity and volume of the data you work with, these basic data structures will often be your means for handling and manipulating it. Comfort with these structures is essential to understanding and using Python code written by others.

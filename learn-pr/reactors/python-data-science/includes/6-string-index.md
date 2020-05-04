@@ -310,5 +310,5 @@ The output is:
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Operations on string data are fundamental to other tasks you'll do in data science in Python. Becoming comfortable with strings now will pay large dividends later as you work with increasingly complex data.
+> Operations on string data are fundamental to other tasks that you'll do in data science in Python. Becoming comfortable with strings now will pay large dividends later as you work with increasingly complex data.
 >

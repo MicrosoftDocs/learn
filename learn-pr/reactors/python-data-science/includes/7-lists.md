@@ -1,4 +1,4 @@
-Python knows a number of compound data types, which are used to group together other values. The most versatile is the [list](https://docs.python.org/3.5/library/stdtypes.html#typesseq-list?azure-portal=true), which can be written as a sequence of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.
+Python supports a number of _compound data types_, which group other values together. The most versatile is the [list](https://docs.python.org/3.5/library/stdtypes.html#typesseq-list?azure-portal=true), which can be written as a sequence of comma-separated values, or _items_ between square brackets. A list might contain items of different types, but usually the items all have the same type:
 
 ```python
 squares = [1, 4, 9, 16, 25]
@@ -11,7 +11,7 @@ The output is:
 [1, 4, 9, 16, 25]
 ```
 
-Like strings (and all other built-in [sequence types](https://docs.python.org/3.5/glossary.html#term-sequence?azure-portal=true)), lists can be indexed and sliced:
+Like strings and all other built-in [sequence types](https://docs.python.org/3.5/glossary.html#term-sequence?azure-portal=true)), lists can be indexed and sliced:
 
 ```python
 squares[0]  # Indexing returns the item.
@@ -23,7 +23,7 @@ The output is:
 1
 ```
 
-Another example:
+This example shows a negative index:
 
 ```python
 squares[-1]
@@ -35,7 +35,7 @@ The output is:
 25
 ```
 
-Another example shows how slicing returns a new list:
+This example shows how slicing returns a new list:
 
 ```python
 squares[-3:]  # Slicing returns a new list.
@@ -47,7 +47,7 @@ The output is:
 [9, 16, 25]
 ```
 
-All slice operations return a new list containing the requested elements. This means that the following slice returns a new (shallow) copy of the list:
+All slice operations return a new list that contains the requested elements. So, the following slice returns a new, _shallow_ copy of the list:
 
 ```python
 squares[:]
@@ -59,7 +59,7 @@ The output is:
 [1, 4, 9, 16, 25]
 ```
 
-Lists also support concatenation with the + operator:
+Lists also support concatenation by using the plus ("+") operator:
 
 ```python
 squares + [36, 49, 64, 81, 100]
@@ -71,11 +71,11 @@ The output is:
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
 
-Unlike strings, which are [immutable](https://docs.python.org/3.5/glossary.html#term-immutable?azure-portal=true), lists are a [mutable](https://docs.python.org/3.5/glossary.html#term-mutable?azure-portal=true) type, which means you can change any value in the list:
+Unlike strings, which are [immutable](https://docs.python.org/3.5/glossary.html#term-immutable?azure-portal=true), lists are a [mutable](https://docs.python.org/3.5/glossary.html#term-mutable?azure-portal=true) type. That is, you can change any value in the list. Suppose you define a list that contains an incorrect item:
 
 ```python
-cubes = [1, 8, 27, 65, 125]  # Something's wrong here ...
-4 ** 3  # the cube of 4 is 64, not 65!
+cubes = [1, 8, 27, 65, 125]  # Something's wrong here...
+4 ** 3  # The cube of 4 is 64, not 65!
 ```
 
 The output is:
@@ -84,7 +84,7 @@ The output is:
 64
 ```
 
-Another example shows how to replace an incorrect value:
+Here's how to correct the item and display the result:
 
 ```python
 cubes[3] = 64  # Replace the wrong value.
@@ -97,7 +97,7 @@ The output is:
 [1, 8, 27, 64, 125]
 ```
 
-You can assign to slices, which can change the size of the list or clear it entirely:
+You can assign to slices, which can change the size of the list or clear it entirely. First, create a new list:
 
 ```python
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
@@ -110,7 +110,7 @@ The output is:
 ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 ```
 
-Another example shows how to replace values:
+Then, you can replace some values by using a slice:
 
 ```python
 # Replace some values.
@@ -124,7 +124,7 @@ The output is:
 ['a', 'b', 'C', 'D', 'E', 'f', 'g']
 ```
 
-Another example shows how to remove values: 
+Here's how to remove values from the list:
 
 ```python
 # Now remove them.
@@ -138,7 +138,7 @@ The output is:
 ['a', 'b', 'f', 'g']
 ```
 
-Another example shows how to clear the list:
+This example shows how to clear the list:
 
 ```python
 # Clear the list by replacing all the elements with an empty list.
@@ -152,7 +152,7 @@ The output is:
 []
 ```
 
-The built-in [len()](https://docs.python.org/3.6/library/functions.html#len?azure-portal=true) function also applies to lists for getting their lengths:
+The built-in [len()](https://docs.python.org/3.6/library/functions.html#len?azure-portal=true) function also applies to lists. Use it to get the length of a list:
 
 ```python
 letters = ['a', 'b', 'c', 'd']
@@ -165,7 +165,7 @@ The output is:
 4
 ```
 
-You can nest lists, which means to create lists that contain other lists. For example:
+You can _nest_ lists. That is, you can create a list that contains other lists. For example:
 
 ```python
 a = ['a', 'b', 'c']
@@ -180,7 +180,7 @@ The output is:
 [['a', 'b', 'c'], [1, 2, 3]]
 ```
 
-`x` is a list of lists, and you can access its constituent lists through the same indexing you use with simpler lists:
+`x` is a list of lists. You can access its constituent lists by using the same indexing that you use with simpler lists:
 
 ```python
 x[0]
@@ -192,7 +192,7 @@ The output is:
 ['a', 'b', 'c']
 ```
 
-And by using additional index numbers, you can directly access elements within those sub-lists:
+And, by specifying additional index numbers, you can directly access elements within those constituent lists:
 
 ```python
 x[0][0]
