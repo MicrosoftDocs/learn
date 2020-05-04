@@ -13,8 +13,10 @@ Pandas is a big package and there can be a lot to keep track of. Fortunately, IP
 
 ```python
 ipython
-pd.<TAB> #SARAH - in VSCode, the completion feature doesn't require <TAB> and using <TAB> inserts an actual tab into the code.
+pd.<TAB>
 ```
+
+> **SARAH TBD** - in VSCode, the completion feature doesn't require <TAB> and using <TAB> inserts an actual tab into the code.
 
 When you do so, a drop-down menu will appear next to the `pd`.
 
@@ -23,7 +25,7 @@ When you do so, a drop-down menu will appear next to the `pd`.
 Place your cursor after the period and press <TAB>:
 
 ```python
-pd.
+pd.compat?
 ```
 
 The output is:
@@ -31,7 +33,7 @@ The output is:
 ```Output
 ```
 
-:::image type="content" source="../media/pd-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.'":::
+:::image type="content" source="../media/pd-compat-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.'":::
 
 Now select an item using tab-completion and then add a period and use tab-completion to explore *that*.
 
