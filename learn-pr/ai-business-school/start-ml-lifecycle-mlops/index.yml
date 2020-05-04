@@ -30,6 +30,7 @@ products:
 units: 
 - learn-wwl.start-ml-lifecycle-mlops.introduction
 - learn-wwl.start-ml-lifecycle-mlops.mlops-introduction
+- learn-wwl.start-ml-lifecycle-mlops.mlops-executive-overview
 - learn-wwl.start-ml-lifecycle-mlops.mlops-business-value
 - learn-wwl.start-ml-lifecycle-mlops.mlops-manage-ml
 - learn-wwl.start-ml-lifecycle-mlops.knowledge-check

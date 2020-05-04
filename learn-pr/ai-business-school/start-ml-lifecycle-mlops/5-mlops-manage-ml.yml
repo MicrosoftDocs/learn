@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 9 
 content: |
-  [!include[](includes/4-mlops-manage-ml.md)] 
+  [!include[](includes/5-mlops-manage-ml.md)] 
