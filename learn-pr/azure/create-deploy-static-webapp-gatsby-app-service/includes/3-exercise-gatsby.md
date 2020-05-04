@@ -1,4 +1,6 @@
-Now you will learn to create a Gatsby application.
+`gatsby new` creates a new Gatsby application, to which you can start adding content pages.
+
+In this unit, you'll create a new Gatsby application and add a single page to it.
 
 ## Create and run a Gatsby site
 
@@ -6,23 +8,20 @@ All Gatsby projects are created by the Gatsby CLI. The CLI is able to help you w
 
 ### Create a Gatsby app
 
-Let' create a Gatsby app by typing the following command in the terminal:
+Now, create a new Gatsby app by typing the following command in the terminal:
 
 ```bash
-gatsby new <your app name>
-```
-
-This will create a Gatsby project, a set of directories and files that you can extend and configure.
+gatsby new myApp
 
 ### Run Gatsby
 
-To start developing with Gatsby, ensure you are in the correct directory. If you named your project , hello-gatsby` then ensure you changed directory to `hello-gatsby` before continuing.
+To start developing with Gatsby, you need to navigate to the project directory before starting the development server.
 
-Now run the following command:
+Run the following commands to move to your project folder and start the server:
 
 ```bash
+cd myApp
 gatsby develop
-```
 
 You should see the following output in the terminal:
 
@@ -33,7 +32,7 @@ View GraphiQL, an in-browser IDE, to explore your site's data and schema
   http://localhost:8000/___graphql
 ```
 
-Now open up a browser and go to url `http://localhost:8000`.
+Now open up a browser and navigate to `http://localhost:8000`.
 
 :::image type="content" source="../media/gatsby-browser.png" alt-text="Gatsby app":::
 
@@ -41,7 +40,7 @@ If you see the above, you successfully created your first Gatsby app. Congrats!
 
 ## Add a page component
 
-For this exercise we will learn to create a component that we can navigate to, a so called *page component*. We will continue to use the app we created in the last exercise.
+Now you'll create a component that you can navigate to in the browser: a *page component*.
 
 Find the `pages/` directory and create a file and name it `about.js`. Give the file the following content:
 
@@ -57,14 +56,10 @@ export default () => (
 )
 ```
 
-The code above creates a so-called *presentation* component that is only able to show data. Components in React are created either by a class inheriting from `React.Component` or by simple functions, like the above. A component can be as simple as a function returning a piece of JSX, which the above does.
+The code above creates a *presentation component* that is only able to show data. This component simply renders the text "About page" and a link that point to the root of the application.
 
-The `React.Fragment` element is used as there needs to be root element in every component. You can add any valid HTML element as a root element. To avoid polluting your DOM with extra elements, you are encouraged to use the `React.Fragment` component.
-
-There's a `Link` component used above. That's a component from the underlying React Router library that will ultimately render as an anchor tag `a`. We can use that component to navigate from this page back the root of our app, note how we set the `to` attribute yo `/`.
-
-Once you pasted in the code above and saved it in the file `about.js` the development server will recompile. If you now visit, `http://localhost:8000/about` you should see the following content rendered:
+Once you've pasted in the code above and saved it in the file `about.js`, the development server will recompile the application automatically. If you now visit `http://localhost:8000/about` you should see the following content rendered:
 
 :::image type="content" source="../media/gatsby-page-component.png" alt-text="Page component":::
 
-Congrats, you managed to add a page component, written in React, to your app. Additionally you've learned that any component placed under `/pages` directory can be navigated to.
+You've got your first page! Now you can see how any component placed in the `/pages` directory can be navigated to.

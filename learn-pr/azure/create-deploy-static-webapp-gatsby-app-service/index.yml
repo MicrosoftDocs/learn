@@ -11,10 +11,10 @@ metadata:
 title: Introduction to Gatsby and Static apps
 summary: Learn how to use Gatsby to develop static apps but also deploy it on Static apps service
 abstract: |
-  In this module you will:
-  - Learn about Gatsby and how it can be used to develop static apps
-  - Gain understanding about static site rendering and when to use it
-  - Deploy your static to the Cloud using the Static apps service
+  In this module, you will:
+  - Use Gatsby to create a static web app
+  - Add data to a page in the app with a GraphQL query
+  - Deploy your app to the web with Azure Static Web Apps
 iconUrl: /learn/achievements/static-apps-gatsby.svg
 levels:
 - beginner
