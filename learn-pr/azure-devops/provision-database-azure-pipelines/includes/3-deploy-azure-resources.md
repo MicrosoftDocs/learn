@@ -287,7 +287,7 @@ SQL_PASSWORD=$(openssl rand -base64 32)
 1. Run the following command to deploy the template.
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
       --name deploytemplate \
       --resource-group tailspin-spacegame-web-rg \
       --template-file template.json \
@@ -303,7 +303,7 @@ SQL_PASSWORD=$(openssl rand -base64 32)
 1. Run the template a second time.
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
       --name deploytemplate \
       --resource-group tailspin-spacegame-web-rg \
       --template-file template.json \

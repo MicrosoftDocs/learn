@@ -3,7 +3,7 @@ uid: learn.languages.python-install-vscode.knowledge-check
 title: Knowledge check
 metadata:
   title: Check your knowledge
-  description: Review what you've learned
+  description: Review what you've learned.
   ms.date: 3/2/2020
   author: bobtabor-msft
   ms.author: rotabor
@@ -13,17 +13,17 @@ durationInMinutes: 1
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the purpose of Interactive Mode?"
+  - content: "What's the purpose of interactive mode?"
     choices:
     - content: "To build an entire application."
       isCorrect: false
-      explanation: "Incorrect. You would not build an entire application using Interactive Mode."
+      explanation: "Incorrect. You wouldn't build an entire application in interactive mode."
     - content: "To debug your code."
       isCorrect: false
-      explanation: "Incorrect.  While Interactive Mode could help you understand what a Python command can do, it is not intended to help you debug your application."
+      explanation: "Incorrect. Although interactive mode could help you understand what a Python command can do, it's not intended to help you debug your application."
     - content: "To test your application."
       isCorrect: false
-      explanation: "Incorrect.  While Interactive Mode could help you understand what a Python command can do, it is not intended to help you test your application."
-    - content: "To execute a single line of code at a time."
+      explanation: "Incorrect. Although interactive mode could help you understand what a Python command can do, it's not intended to help you test your application."
+    - content: "To run one line of code at a time."
       isCorrect: true
       explanation: "Correct!"

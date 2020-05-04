@@ -15,7 +15,7 @@ To generate some data to view in Application Insights, we'll simulate some user 
 1. Examine the data displayed on the **Overview** page. You might need to refresh the page to see data that relates to your page requests.
 1. To see the default dashboard for the Application Insights resource, in the upper-left corner of the **Overview** page, select **Application Dashboard**. Examine the data that appears in the default dashboard.
 
-    ![Default Application Insights dashboard](../media/5-default-app-insights-dashboard.png)
+    ![Screenshot of a sample Default Application Insights dashboard displaying lots of different metrics.](../media/5-default-app-insights-dashboard.png)
 
 ## Customize a chart in the Azure portal
 
@@ -23,7 +23,7 @@ Now you'll examine page load times for the previous thirty minutes in a scatter 
 
 1. In the Application Insights dashboard, select **Application Insights**.
 
-    ![Application Insights resource link](../media/5-return-to-app-insights-resource.png)
+    ![Screenshot of a sample Default Application Insights dashboard with a callout highlighting a resource link.](../media/5-return-to-app-insights-resource.png)
 1. On the **Application Insights** pane, under **Monitoring**, select **Metrics**.
 1. At the top of the **Metrics** page, select **Last 24 hours (Automatic)**.
 1. Select **Last 30 minutes** and then select **Apply**.
@@ -41,4 +41,4 @@ Let's simulate more user activity and view the results in the custom chart:
 1. To refresh the page, select F5.
 1. To see the custom chart, scroll to the right of the dashboard. You should see a data point in the chart that relates to your recent requests.
 
-    ![Custom page load time chart](../media/5-custom-page-load-chart.png)
+    ![Screenshot of a chart featuring the Average browser page load time metric.](../media/5-custom-page-load-chart.png)

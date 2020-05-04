@@ -191,7 +191,7 @@ Now let's run the modified site, upload a few photos, and try out the Computer V
 
     When the site is running locally, calls to `os.environ` load these variables from the environment. Later, when you deploy the site to Azure, the same variables will come from application settings in Azure—no code changes required.
 
-1. Go to <http://localhost:5000/> in your browser. Select the **Upload Photo** button and upload a picture that contains text. Confirm that after a brief pause, the text extracted from the photo appears in a modal dialog box. Then dismiss the dialog box.
+1. Go to `http://localhost:5000/` in your browser. Select the **Upload Photo** button and upload a picture that contains text. Confirm that after a brief pause, the text extracted from the photo appears in a modal dialog box. Then dismiss the dialog box.
 
     ![Extracting text from a photo](../media/extracted-text.png)
 

@@ -6,7 +6,7 @@ metadata:
   description: Discover the steps to writing code, from concept to implementation.
   ms.date: 12/04/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

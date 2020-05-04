@@ -1,4 +1,4 @@
-The following code is one possible solution for the challenge from the previous unit.
+The following code is one possible solution for the challenge in the previous unit.
 
 ```python
 import random
@@ -27,9 +27,9 @@ print('Player has the following cards in their hand:')
 print(hand)
 ```
 
-This code is merely *one possible solution*.  As long as you matched the output, and each time you execute the program you get a different set of cards dealt to the player, then you were successful.
+This code is just *one* possible solution.  As long as your result matched the output, and each time you executed the program a different set of cards was dealt to the player, then you were successful.
 
-If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
+If you succeeded, congratulations!  Continue to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, maybe you should review the previous units before you continue on.  All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, maybe you should review the previous units before you continue. To understand the ideas that we discuss in later modules, you need to understand the ideas in this module.

@@ -6,10 +6,10 @@ metadata:
   description: Work with different floating point types to learn the nuanced differences between each data type.
   ms.date: 09/05/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+  show_latex: true
 durationInMinutes: 5
 azureSandbox: false
 interactive: csharp

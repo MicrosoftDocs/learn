@@ -65,13 +65,13 @@ quiz:
     choices:
     - content: "SaaS is a software model in which updates and patches are not required to be installed manually by every end user."
       isCorrect: false
-      explanation: "That's not quite right. SaaS is a software model in which updates and patches are not required to be installed manually by every end user, but is this the only valid response? Picture yourself using Gmail or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Gmail versus buying and installing an application on your own computer?"
+      explanation: "That's not quite right. SaaS is a software model in which updates and patches are not required to be installed manually by every end user, but is this the only valid response? Picture yourself using Out or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Office online versus buying and installing an application on your own computer?"
     - content: "SaaS is a software model in which a cloud vendor hosts services. Those services are made available to end users over a network, typically the internet."
       isCorrect: false
-      explanation: "That's not quite right. Cloud vendors do host services with SaaS, but is this the only valid response? Picture yourself using Gmail or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Gmail versus buying and installing an application on your own computer?"
+      explanation: "That's not quite right. Cloud vendors do host services with SaaS, but is this the only valid response? Picture yourself using Office online or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Office online versus buying and installing an application on your own computer?"
     - content: "SaaS is software that is made available to the end user over a browser or mobile application."
       isCorrect: false
-      explanation: "That's not quite right. Software is made available to the end user over a browser or mobile application with SaaS, but is this the only valid response? Picture yourself using Gmail or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Gmail versus buying and installing an application on your own computer?"
+      explanation: "That's not quite right. Software is made available to the end user over a browser or mobile application with SaaS, but is this the only valid response? Picture yourself using Office online or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Office online versus buying and installing an application on your own computer?"
     - content: "All of the above"
       isCorrect: true
       explanation: "Correct! All of the statements above are true about SaaS."
@@ -87,27 +87,27 @@ quiz:
       explanation: "Correct! The company should consider PaaS or IaaS instead because it needs to develop new software and not just use existing software."
 
 # Did I get this block 3
-  - content: "As mentioned above, Google App Engine (GAE) is an example of PaaS. Given that you read the PaaS section, which of the following statements about GAE is *incorrect*?"
+  - content: "Azure's App Service is an example of PaaS. Given that you read the PaaS section, which of the following statements about App Service is *incorrect*?"
     choices:
-    - content: "The applications deployed on GAE have the same security, privacy, and data protection policies that Google's applications have. Hence, end users can take advantage of the reliability, performance, and security of Google's infrastructure."
+    - content: "The applications deployed on App Service have the same security, privacy, and data protection policies that Microsoft's applications have. Hence, end users can take advantage of the reliability, performance, and security of Azure's infrastructure."
       isCorrect: false
-      explanation: "Incorrect. We're looking for an incorrect statement about GAE. This statement is correct because PaaS has built-in scaling mechanisms of deployed software that are automatically handled by the cloud provider with load-balancing and failover mechanisms. Think about the difference between GAE and an IaaS service, like Amazon EC2."
+      explanation: "Incorrect. We're looking for an incorrect statement about App Service. This statement is correct because PaaS has built-in scaling mechanisms of deployed software that are automatically handled by the cloud provider with load-balancing and failover mechanisms. Think about the difference between App Service and an IaaS service, like VMs."
     - content: "Customers have the flexibility to decide the number and configuration of physical servers required for hosting an application."
       isCorrect: true
       explanation: "Correct! The user does not have the flexibility to decide the number of physical servers required for hosting an application; the cloud provider makes this decision."
-    - content: "GAE provides customers with web-based user-interface creation tools to help create and modify the application's APIs."
+    - content: "App Service provides customers with web-based user-interface creation tools to help create and modify the application's APIs."
       isCorrect: false
-      explanation: "Incorrect! We're looking for an incorrect statement about GAE. This statement is correct because PaaS providers have web-based user-interface (UI) creation tools to help create, modify, and test various UI scenarios. Think about the difference between GAE and an IaaS service, like Amazon EC2."
+      explanation: "Incorrect! We're looking for an incorrect statement about App Service. This statement is correct because PaaS providers have web-based user-interface (UI) creation tools to help create, modify, and test various UI scenarios. Think about the difference between App Service and an IaaS service, like VMs."
 
 # Did I get this block 4
   - content: "Which of the following is considered to be a characteristic of IaaS?"
     choices:
     - content: "IaaS providers do not allow clients to scale resources on demand."
       isCorrect: false
-      explanation: "Incorrect. IaaS providers allow clients to scale resource on demand. Consider the service functionality of an IaaS provider such as Amazon EC2. What are the features? What are the limitations?"
+      explanation: "Incorrect. IaaS providers allow clients to scale resource on demand. Consider the service functionality of an IaaS provider like Azure Virtual Machines. What are the features? What are the limitations?"
     - content: "IaaS providers provide computing resources to clients in the form of instances or virtual machines."
       isCorrect: true
       explanation: "Correct!"
     - content: "Users are aware of whom they share physical resources with."
       isCorrect: false
-      explanation: "Incorrect. IaaS cloud providers do not indicate how the resources are shared among multiple users. Consider the service functionality of an IaaS provider such as Amazon EC2. What are the features? What are the limitations?"
+      explanation: "Incorrect. IaaS cloud providers do not indicate how the resources are shared among multiple users. Consider the service functionality of an IaaS provider such as Azure Virtual Machines. What are the features? What are the limitations?"

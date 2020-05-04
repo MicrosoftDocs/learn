@@ -8,7 +8,7 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: markjulmar
+  #ms.learn-contact: adrianstevens
 title: Use unsupervised learning to analyze unlabeled data
 summary: Use unsupervised learning methods to predict groupings in data. Use variations of k-means clustering and spectral clustering to analyze and visualize difficult data sets.
 abstract: | 

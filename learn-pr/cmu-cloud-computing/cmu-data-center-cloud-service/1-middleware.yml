@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "Which of the following is **not** an example of cloud middleware functionality?"
     choices:
-    - content: "An API that allows users to use both AWS and Azure public IaaS clouds"
+    - content: "An API that allows users to use both public IaaS services from two different cloud providers"
       isCorrect: false
       explanation: "Incorrect. The selected option is an example of a cloud middleware service. One of the options is a canonical example of middleware that existed even before the cloud."
     - content: "An authentication management system that tracks users' roles and grants access to launching different types of instances"

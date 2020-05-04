@@ -3,7 +3,7 @@ uid: learn.languages.python-if-elif-else.exercise-boolean-expressions
 title: Exercise - Boolean expressions
 metadata:
   title: Exercise - Boolean expressions
-  description: Create Boolean expressions, convert values to Booleans, use comparison and logical operators.
+  description: Create Boolean expressions, convert values to Booleans, and use comparison and logical operators.
   ms.date: 02/18/2020
   author: bobtabor-msft
   ms.author: rotabor
