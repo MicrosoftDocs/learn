@@ -353,7 +353,7 @@ Browse to [http://localhost:8080](http://localhost:8080?azure-portal=true)
 
 You built your application and now it's running locally making HTTP GET requests to your API.
 
-Shut down your running API and web app, in the terminals.
+Now stop your running app and API by pressing **Ctrl-C** in the terminals.
 
 ## Next steps
 

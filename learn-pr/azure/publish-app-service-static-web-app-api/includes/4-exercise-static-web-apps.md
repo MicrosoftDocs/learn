@@ -68,7 +68,7 @@ Next, configure your new app and link it to your GitHub repository.
    | Setting        | Value                                                    |
    | -------------- | -------------------------------------------------------- |
    | _Organization_ | Select the Organization where you created the repository |
-   | _Repository_   | **my-first-static-web-app**                              |
+   | _Repository_   | **my-static-web-app**                                    |
    | _Branch_       | **master**                                               |
 
 1. Click the **Next: Build >** button to edit the build configuration
@@ -117,7 +117,7 @@ Next, add configuration details specific to your preferred front-end framework.
 
 ::: zone-end
 
-Click the **Review + create** button
+Click the **Review + create** button. This will bring you to the page where you can review the resource before you create it.
 
 > [!NOTE]
 > Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This is not common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
@@ -136,6 +136,12 @@ At this stage, your Static Web Apps instance is created in Azure, but your app n
 You can check the status of your build and deploy action by clicking the link shown below:
 
 :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+
+1. Click **Azure Static Web Apps CI/CD**
+1. Click the commit titled **Azure Static Web Apps added workflow for file for CI/CD**
+1. Click the **Build and Deploy Job** link
+
+From here, you can observe the progress of your app as it builds.
 
 ### View website
 

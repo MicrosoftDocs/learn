@@ -7,23 +7,23 @@ This tutorial uses a GitHub template repository. Template repositories make it e
 1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
 1. If prompted for **Owner**, choose one of your GitHub accounts
-1. Name your repository **my-first-static-web-app**
+1. Name your repository **my-static-web-app**
 1. Click the **Create repository from template** button
 
 ## Run your app
 
-You just created a GitHub repository named **my-first-static-web-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
+You just created a GitHub repository named **my-static-web-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
 
 1. Start by cloning the GitHub repository to your computer.
 
    ```bash
-   git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-first-static-web-app
+   git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app
    ```
 
 1. Go to the folder for your source code.
 
    ```bash
-   cd my-first-static-web-app
+   cd my-static-web-app
    ```
 
 1. Next, go to the folder of your preferred front-end framework, as shown below:
@@ -136,7 +136,7 @@ Browse to [http://localhost:8080](http://localhost:8080?azure-portal=true)
 
 Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
 
-Now stop your running app.
+Now stop your running app by pressing **Ctrl-C** in the terminal.
 
 ## Next steps
 
