@@ -61,13 +61,13 @@ Before publishing your app, create routing rules that include a fallback route.
 1. In Visual Studio Code, open the file _angular-app/angular.json_
 1. Go to the property at:
 
-   ```bash
+   ```json-schema
     projects
-     | - angular-app
-       | - architect
-        | - build
-          | - options
-            | - assets
+     └── angular-app
+       └── architect
+         └── build
+           └── options
+              └──  assets
    ```
 
 1. Extend the `assets` array to include the _src/routes.json_ file:
