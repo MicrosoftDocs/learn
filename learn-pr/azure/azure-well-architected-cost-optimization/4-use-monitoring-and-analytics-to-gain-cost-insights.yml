@@ -16,32 +16,32 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: ''
+  - content: 'Which of the following would be an example of a cost anomaly that you should investigate further?'
     choices:
-    - content: ''
+    - content: 'A 1% increase in compute costs from the previous month.'
       isCorrect: false
-      explanation: ''
-    - content: ''
+      explanation: 'This is a small change and would not normally be considered suspicious.'
+    - content: 'A decrease in compute costs following the decommission of a web site.'
       isCorrect: false
-      explanation: ''
-    - content: ''
+      explanation: 'A compute cost reduction could be expected when decommissioning a web site.'
+    - content: 'A 5% increase in storage costs following the migration of a large database.'
       isCorrect: false
-      explanation: ''
-    - content: ''
+      explanation: 'Data storage and transaction activity would be expected to increase following a migration.'
+    - content: 'A 25% increase in ExpressRoute circuit utilization from the previous month.'
       isCorrect: true
-      explanation: ''
+      explanation: 'This is a large spike in utilization and would merit further investigation.'
 
-  - content: ''
+  - content: 'Which of the following is not used to monitor your costs?'
     choices:
-    - content: ''
+    - content: 'Azure Cost Management'
       isCorrect: false
-      explanation: ''
-    - content: ''
-      isCorrect: false
-      explanation: ''
-    - content: ''
-      isCorrect: false
-      explanation: ''
-    - content: ''
+      explanation: 'Azure Cost Management is used to track and visualize your Azure costs.'
+    - content: 'Azure Functions'
       isCorrect: true
-      explanation: ''
+      explanation: 'Azure Functions is a serverless compute service and is not used to track costs.'
+    - content: 'Azure Advisor'
+      isCorrect: false
+      explanation: 'Azure Advisor can provide recommendations on cost.'
+    - content: 'Azure billing reports'
+      isCorrect: false
+      explanation: 'Azure billing reports can be used to analyze and track your costs.'
