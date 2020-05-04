@@ -1,4 +1,4 @@
-Whether your organization is planning to build a new application on Azure or you're looking to move an entire data center to the cloud, estimating costs is a key piece of ensuring a successful project. How do you know which services to select, or which size to choose? Do you provision virtual machines for your workload, or do you take advantage of higher-level servcies that can reduce operational costs? Proper planning is incredibly important to any cloud project, let's take a look at what to consider.
+Whether your organization is planning to build a new application on Azure or you're looking to move an entire data center to the cloud, estimating costs is a key piece of ensuring a successful project. How do you know which services to select, or which size to choose? Do you provision virtual machines for your workload, or do you take advantage of higher-level services that can reduce operational costs? Proper planning is incredibly important to any cloud project, let's take a look at what to consider.
 
 ## Capture requirements
 
