@@ -1,19 +1,22 @@
-Now it's time for you to learn how to build your app so it's ready to be deployed anywhere. You will also deploy your app to a Cloud service.
+Azure Static Web Apps hosts static applications, like those made with Gatsby, by building the applications static assets and then deploying them to the cloud.
+
+Here, you'll build your app's static assets to see what they look like and host them locally to try them out. Then, you'll push your code to GitHub and create an Azure Static Web Apps instance to host your app on the web.
 
 ## Build your site
 
-When it comes to building your site and making it ready for deployment Gatsby does the heavy lifting for us. All you need to do is to call the following command:
+When it comes to building your site and making it ready for deployment Gatsby does the heavy lifting for us.
+
+Run the following command from your project directory:
 
 ```bash
 gatsby build
 ```
 
-This command will create a so called *production build*. All your files will end up in a sub directory `build/`.
+This command will create a *production build*. All your files will end up in a sub directory `build/`.
 
-Once the process finish building, you can now go to your `build/` directory and open up the files in browser. You can see how the *production-build* renders by, for example,  using a great tool like
-`http-server`. `http-server` is a command-line tool that serves up your files on a specific port so you can see them in a Browser.  
+Once the process finishes building, you can go to your `build/` directory and open up the files in a browser. You can explore your build as it would be hosted in the web with `http-server`, a command-line tool that serves up local files over HTTP so you can see them in a browser.  
 
-You can run the tool by placing yourself in `build/` directory and type the following command:
+Now you'll serve up the whole application from a local web server. `cd` your terminal to the `build/` directory and type the following command:
 
 ```bash
 npx http-server -p 5000
@@ -33,45 +36,35 @@ Going into your `build/` directory now locate your rendered `about` component at
 // excerpt from about/index.html
 
 <h2>Gatsby Default Starter</h2><div>Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.</div>
-```
+## Push your code to GitHub
 
-## Push your app to a Git repository
+To prepare the app for deployment, we need to take the following steps:
 
-To prepare the app for deploy, we will need to take the following steps:
-
-1. Create a Git repository
+1. Initialize a Git repository
 2. Create a GitHub repository and push to the local Git repository to it
 
 ### Create a Git repository
 
-In the console, navigate to root of your project, then run the following commands to initialize a Git repository and commit all of your files to it:"
+In the console, navigate to root of your project, then run the following command to initialize a Git repository and commit all of your files to it:
 
 ```bash
 git init
 ```
 
-Create a file .gitignore and give it the following content:
+Next, create a file called `.gitignore` in the root of your project and give it the following content:
 
 ```bash
 node_modules
 build
 ```
 
-The above content will ensure that once we commit all our files it will exclude the `build/` and `node_modules` directories. The `build/` directory is something that changes every time we build and the `node_modules/` directory is something that's only need at build time and can be large from all the libraries it contains.
+The above configuration will prevent the `build/` and `node_modules` directories from being added to our repository. The `build/` directory changes every time we build, and the `node_modules/` directory is only needed at build time and can be large from all the libraries it contains.
 
-Next step is to add our code under Gits revision control. We do that with first with the following command:
+Finally, add the code to the repository index and commit it.
 
 ```bash
 git add .
-```
-
-This will add our files to Gits staging area.
-
-Next, we need to commit so the files go from the staging area to becoming a commit we can push to GitHub. You accomplish that with:
-
-```bash
 git commit -m "adding Gatsby project"
-```
 
 Above we are giving our commit a commit message with the `-m` flag. Adjust the message to fit your scenario.
 
@@ -82,19 +75,17 @@ Above we are giving our commit a commit message with the `-m` flag. Adjust the m
 2. Now click the `new` button as indicated below:
 :::image type="content" source="../media/gatsby-create-gh-repo.png" alt-text="Create new GitHub repo":::
 
-3. Now give your repository a suitable name and click `Create repository` as indicated below:
+3. Name your repository `gatsby-app` and click `Create repository` as indicated below:
 :::image type="content" source="../media/gatsby-gh-naming.png" alt-text="GitHub naming":::
 
-4. Next you, you need to create a connection between your local Git repo and your GitHub repo. You also need to push your Git repo code to GitHub. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
+4. Finally, add your GitHub repository as a remote and push. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
 
 ```bash
 git remote add origin https://github.com/<user>/gatsby-app.git
 git push -u origin master
 ```
 
-Congratulations, you are now ready to deploy!
-
-In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that will automatically build and publish your application.
+You are now ready to deploy to Azure Static Web Apps!
 
 ## Activate the Azure sandbox
 
@@ -137,7 +128,7 @@ Next, configure your new app and link it to your GitHub repository.
    | Setting        | Value                                                    |
    | -------------- | -------------------------------------------------------- |
    | _Organization_ | Select the Organization where you created the repository |
-   | _Repository_   | **my-first-static-web-app**                              |
+   | _Repository_   | **gatsby-app**                              |
    | _Branch_       | **master**                                               |
 
 1. Click the **Next: Build >** button to edit the build configuration
@@ -185,4 +176,4 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
 
-You did it! You've managed to deploy a static app to the Cloud.
+You did it! You've deployed your Gatsby app to the cloud.
