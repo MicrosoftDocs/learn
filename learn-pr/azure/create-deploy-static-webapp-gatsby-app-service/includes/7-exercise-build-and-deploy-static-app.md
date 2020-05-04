@@ -156,13 +156,16 @@ At this stage, your Static Web Apps instance is created in Azure, but your app n
 
 You can check the status of your build and deploy action by clicking the link shown below:
 
-:::image type="content" source="../media/goto-action.png" alt-text="Browser to see the progress of the GitHub Action":::
+:::image type="content" source="../media/static-app-portal.png" alt-text="Browser to see the progress of the GitHub Action":::
 
 ### View website
 
 Once your GitHub Action finishes building and publishing your web app, you can browse to see your running app.
 
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
+
+:::image type="content" source="../media/static-app-portal-finsihed.png" alt-text="Azure Static Web Apps overview page":::
+
 
 :::image type="content" source="../media/gatsby-published.png" alt-text="Azure Static Web Apps overview page":::
 
