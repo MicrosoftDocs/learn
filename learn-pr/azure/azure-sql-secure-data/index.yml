@@ -33,7 +33,7 @@ units:
 - learn.azure-sql-secure-data.6-data-protection
 - learn.azure-sql-secure-data.7-security-management
 - learn.azure-sql-secure-data.8-exercise-advanced-data-security
-- learn.azure-sql-secure-data.9-exercise-data-classification-masking-auditing
+- learn.azure-sql-secure-data.9-exercise-data-classification-masking-audit
 - learn.azure-sql-secure-data.10-summary
 badge:
   uid: learn.azure-sql-secure-data.badge
