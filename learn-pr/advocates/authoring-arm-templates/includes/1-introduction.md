@@ -10,9 +10,9 @@ To implement infrastructure as code for your Azure solutions, use Azure Resource
 
 In this module, you will learn:
 
-- To identify what an Azure Resource Manager template is, and what it comprises.
-- To write an Azure Resource Manager template from scratch.
-- You'll learn to add parameters, variables, resources, and functions to your template.
+- What an Azure Resource Manager template is, and what its components are.
+- How to write your own ARM template from scratch.
+- You'll learn to add parameters, variables, resources, functions, and outputs to your template.
 
 #### Prerequisites
 

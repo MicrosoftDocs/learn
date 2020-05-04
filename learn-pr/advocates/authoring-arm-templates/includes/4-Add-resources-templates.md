@@ -1,14 +1,14 @@
-### Adding resources to your ARM template
+# Adding resources to your ARM template
 
 When writing ARM templates to deploy resources in your subscriptions, you'll need to find and use information about the resource providers and types of resources.
 
-For example, in the next exercise, you'll be adding a storage account to your template. In that case, you'll need to work with the **Microsoft.Storage** resource provider. This resource provider offers many resources types:
+In the next exercise, you'll be adding a storage account to your template. In that case, you'll need to work with the **Microsoft.Storage** resource provider. This resource provider offers many resources types:
 
-1. storageAccounts
-1. storageAccounts/blobServices
-1. storageAccounts/tableServices
-1. storageAccounts/queueServices
-1. storageAccounts/fileServices
+- storageAccounts
+- storageAccounts/blobServices
+- storageAccounts/tableServices
+- storageAccounts/queueServices
+- storageAccounts/fileServices
 
 The name of a resource type is normally displayed in the format: **{resource-provider}/{resource-type}**. Therefore, the resource type for a storage account is **Microsoft.Storage/storageAccounts**. You can use the following listing of the [Resource providers for Azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers) to identify which providers you require to deploy a specific service. Once you know which provider and resource type you wish to deploy, you need to find the right properties to use for each resource type.
 
@@ -113,5 +113,3 @@ Every resource you deploy has at **least** the following three properties:
 - **name**: The name you want to give the resource.  In some cases, it will need to be a unique name.
 
 The majority of resources also require a **location** property, which sets the region where it is deployed. The other properties will vary depending on the resource type and API version.
-
-In the case of the next exercise, considering that you will be adding a storage account to the empty template.

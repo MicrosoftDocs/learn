@@ -1,4 +1,4 @@
-### Adding parameters to an ARM templates - Exercise
+# Adding parameters to an ARM templates - Exercise
 
 At the end of the previous exercise, your template had the following JSON code in it:
 
@@ -31,7 +31,7 @@ At the end of the previous exercise, your template had the following JSON code i
 
 You may have noticed that there's a problem with this template... The storage account name is **hard-coded**. You can only use this template to deploy the same storage account every time. To deploy a storage account with a different name, you would have to create a new template or modify the current one for every deployments, which obviously isn't a practical way to automate your deployments.
 
-#### Make template reusable
+## Make template reusable
 
 To make your template reusable, you will switch from a hard-coded method to a deployment parameter method.  Where you'll provide a value for the storage account name every time you deploy it. In this exercise you will add a parameter for the storage account name.  That way you can pass in a new value for the storage account name every time you deploy using this template.
 
@@ -47,7 +47,7 @@ code azuredeploy.json
               
 2. Copy and paste the highlighted code below, in the corresponding section of your ARM template in the sandbox.  Or replace the whole content with tthe content below.
 
-:::code language="JSON" source="../samples/exercise3-parameter-azuredeploy.json" highlight="5-10,17":::
+:::code language="JSON" source="../samples/exercise3-parameter-azuredeploy.json" highlight="5-10,18":::
 
 > [!IMPORTANT]
 > When copying the code. You still need to set the **{location}** in the template, to the **same** location a resource group provided for you in the **sandbox**.  In order to get the resource group name and location use the following command.<br><br>**az group list --query "[?contains(name, 'learn')]" -o table**
@@ -57,7 +57,7 @@ You'll notice that the code has changed from the last one.  In this exercise, we
 >[!NOTE]
 >As it was the case in the second exercise, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.2"** because again, you are making changes to your template.
 
-#### Deploy The modified template
+## Deploy The modified template
 
 This way of handling updates means your template can include all of the resources you need for an Azure solution. You can safely redeploy the template and know that resources are changed or created only when needed. For example, if you have added files to your storage account, you can redeploy the storage account without losing those files.
 
@@ -85,7 +85,7 @@ The deployment command returns results in a JSON format. Look for `ProvisioningS
 
 ![Azure CLI deployment provisioning state](../media/deploy-succeed.png)
 
-### Verify deployment
+## Verify deployment
 
 You can verify the deployment by exploring the resource group from the Azure portal.
 
@@ -112,7 +112,7 @@ You can verify the deployment by exploring the resource group from the Azure por
 
    ---
 
-#### Customize by environment
+## Customize by environment
 
 The previous version of the template you used in exercise 2 always deployed a Standard_LRS storage account. You might want the flexibility to deploy different SKUs depending on the environment. In the following task you will changes the template to add a parameter for SKU. 
 
@@ -131,7 +131,7 @@ code azuredeploy.json
 
 :::code language="JSON" source="../samples/exercise3-parameter-sku.json" highlight="10-23,31-33":::
 
-#### Redeploy template
+## Redeploy template
 You're ready to deploy again. Because the default SKU is set to Standard_LRS, you don't need to provide a value for that parameter.
 
 Copy and execute this code block in the shell provided.  Remember to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
