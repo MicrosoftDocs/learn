@@ -30,7 +30,7 @@ Use the built-in IPython documentation to on `pd.read_csv.`
 
   > [!div class="alert is-tip"]
   > Output
-  >
+
   > :::image type="content" source="../media/pd-read-csv-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.read_csv.'":::
 
 </details>

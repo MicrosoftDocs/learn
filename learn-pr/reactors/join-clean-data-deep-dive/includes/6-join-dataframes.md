@@ -244,4 +244,5 @@ An outer join is the union of two `DataFrame`s; anything that is in either `Da
 - How does it differ from the right join of `df1` and `df2`?
 - What differences would there have to be in the shape or content of either `DataFrame` for the outer join of the two to be different from their right join?
 
-**SARAH TBD** - Add Hint here?
+> [!div class="alert is-tip"]
+> **SARAH TBD** - Add Hint here?
