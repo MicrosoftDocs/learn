@@ -79,10 +79,9 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
     The [azure-storage](https://www.npmjs.com/package/azure-storage) package provides a programmatic interface to Azure Storage, including blob storage, for Node.js apps.
 
-1. Wait for the install to finish. Then create a subdirectory named "photos" in the project directory. Copy all 30 **.jpg** files from the "Camera Images" folder in the resources that accompany this module to the "photos" subdirectory. These are the images that the simulated cameras will upload to blob storage, samples of which are shown below. Wildlife depicted in the images include Arctic foxes, polar bears, and walruses.
+1. Wait for the install to finish. Then create a subdirectory named "photos" in the project directory. Download [this zip file of camera images](https://github.com/MicrosoftDocs/mslearn-build-ml-model-with-azure-stream-analytics/raw/master/camera-images.zip) And copy the 30 **.jpg** files contained in the zip file to the "photos" subdirectory you created. These are the images that the simulated cameras will upload to blob storage, samples of which are shown below. Wildlife depicted in the images include Arctic foxes, polar bears, and walruses.
 
     ![Sample wildlife images](../media/wildlife-images.png)
-
 
 1. Create a file named **cameras.json** in the project directory and paste in the following JSON:
 
@@ -143,24 +142,24 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
     This file defines ten virtual cameras that will upload photos to blob storage. Each "camera" contains a device ID as well as a latitude and a longitude specifying the camera's location.
 
-    > The latitudes and longitudes correspond to points on the coast of Northern Canada's [Cornwallis Island](https://en.wikipedia.org/wiki/Cornwallis_Island_(Nunavut)), which is one of the best sites in all of Canada to spot polar bears. It is also adjacent to [Bathurst Island](https://en.wikipedia.org/wiki/Bathurst_Island_(Nunavut)), which is home to the [Polar Bear Pass National Wildlife Area](https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/locations/polar-bear-pass.html).
+    The latitudes and longitudes correspond to points on the coast of Northern Canada's [Cornwallis Island](https://en.wikipedia.org/wiki/Cornwallis_Island_(Nunavut)), which is one of the best sites in all of Canada to spot polar bears. It is also adjacent to [Bathurst Island](https://en.wikipedia.org/wiki/Bathurst_Island_(Nunavut)), which is home to the Polar Bear Pass National Wildlife Area.
 
 1. Create a file named **run.js** in the project directory. Paste the following code into the file:
 
     ```javascript
     'use strict';
-    
+
     // Connect to the storage account
     var storage = require('azure-storage');
-    
+
     var blobService = storage.createBlobService(
         process.env.ACCOUNT_NAME,
         process.env.ACCOUNT_KEY
     );
-    
+
     // Load image file names and create an array of cameras
     var fs = require('fs');
-    
+
     fs.readdir('photos', (err, files) => {
         var cameras = JSON.parse(fs.readFileSync('cameras.json', 'utf8')).map(
             camera => new Camera(
@@ -171,13 +170,13 @@ The next task is to create a Node.js app that simulates an array of motion-activ
                 files
             )
         );
-    
+
         // Start the cameras
         cameras.forEach(camera => {
             camera.start();
         });
     });
-    
+
     class Camera {
         constructor(id, latitude, longitude, blobService, files) {
             this._id = id;
@@ -187,25 +186,25 @@ The next task is to create a Node.js app that simulates an array of motion-activ
             this._files = files.slice(0);
             this._interval = 300000;
         }
-    
+
         start() {
             // Register first callback
             setTimeout(this.timer, Math.random() * this._interval, this);
             console.log('Started ' + this._id);
         }
-    
+
         timer(self) {
             // Randomly select a photo
             var index = Math.floor(Math.random() * self._files.length);
             var filename = self._files[index]
-    
+
             // Define the metadata to be written to the blob
             var metadata = {
                 'latitude': self._latitude,
                 'longitude': self._longitude,
                 'id': self._id
             };
-    
+
             // Upload the blob
             self._blobService.createBlockBlobFromLocalFile('photos', filename, 'photos/' + filename, { 'metadata': metadata }, (err, result) => {
                 if (!err) {
@@ -215,7 +214,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
                     console.log(self._id + ': Error uploading ' + filename);
                 }
             });
-    
+
             // Register the next callback
             setTimeout(self.timer, Math.random() * self._interval, self);
         }
@@ -226,14 +225,14 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. If you are running Windows, execute the following commands to create a pair of environment variables, replacing STORAGE_ACCOUNT_NAME with the name of the storage account that you created earlier, and STORAGE_ACCOUNT_KEY with the storage account's access key:
 
-    ```
+    ```terminal
     set ACCOUNT_NAME=STORAGE_ACCOUNT_NAME
     set ACCOUNT_KEY=STORAGE_ACCOUNT_KEY
     ```
 
     If you are running Linux or macOS, use these commands instead:
 
-    ```
+    ```bash
     export ACCOUNT_NAME=STORAGE_ACCOUNT_NAME
     export ACCOUNT_KEY=STORAGE_ACCOUNT_KEY
     ```
@@ -248,7 +247,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. Confirm that you see output similar to the following, indicating that all 10 "cameras" are running:
 
-    ```
+    ```output
     Started polar_cam_0001
     Started polar_cam_0002
     Started polar_cam_0003
@@ -263,7 +262,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. Over the course of the next minute or two, confirm that you see output similar to the following. Each line corresponds to a photo uploaded to blob storage by one of the virtual cameras:
 
-    ```
+    ```output
     polar_cam_0001: Uploaded image_19.jpg
     polar_cam_0005: Uploaded image_26.jpg
     polar_cam_0003: Uploaded image_11.jpg
