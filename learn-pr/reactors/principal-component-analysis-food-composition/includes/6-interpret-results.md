@@ -2,15 +2,15 @@
 
 What do our vectors mean? Put another way, what kinds of foods populate the different clusters we have discovered among the data?
 
-To see these results, we will create pandas Series for each of the components, index them by feature, and then sort them in decreasing order (so that a higher number represents a feature that is positively correlated with that vector and negative numbers represent low correlation).
+To see these results, we will create a pandas Series for each component, index them by feature, and then sort them in decreasing order (so that a higher number represents a feature that is positively correlated with that vector and negative numbers represent low correlation).
 
-First, run this code in a cell:
+First, run this code:
 
 ```python
 vects = fit.components_[:5]
 ```
 
-Next, run this code in a cell:
+Next, run this code:
 
 ```python
 c1 = pd.Series(vects[0], index=nutr_df.columns)
@@ -71,9 +71,9 @@ Our first cluster is defined by foods that are high in protein and minerals like
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Particularly when it comes to interpretation, subject-matter expertise can prove essential to producing high-quality analysis. For this reason, you should also try to include SMEs in your data -cience projects.
+> Particularly when it comes to interpretation, subject matter expertise can prove essential to producing high-quality analysis. For this reason, you should also try to include SMEs in your data science projects.
 
-Then, run this code in a cell:
+Then, run this code:
 
 ```python
 c2 = pd.Series(vects[1], index=nutr_df.columns)
@@ -131,16 +131,9 @@ dtype: float64
 
 Our second group is foods that are high in fiber and folic acid and low in cholesterol.
 
-> EXERCISE
-
-
-
-Hint: Remember that Python uses zero-indexing.
-
-
 ### Try it yourself
 
-Can you think of a more concise way to check the number of rows and columns in a `DataFrame`?
+Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
 <br />
 
@@ -171,7 +164,7 @@ Can you think of a more concise way to check the number of rows and columns in a
 
 ***
 
-Even without subject-matter expertise, it is possible to get a more accurate sense of the kinds of foods are defined by each component? Yes! This is the reason we merged the FoodGroup column back into pca_df. We will sort that DataFrame by the components and count the values from FoodGroup for the top items.
+Even without subject matter expertise, it is possible to get a more accurate sense of the kinds of foods are defined by each component? Yes! This is the reason we merged the `FoodGroup` column back into `pca_df`. We will sort that DataFrame by the components and count the values from `FoodGroup` for the top items:
 
 ```python
 pca_df.sort_values(by='c1')['FoodGroup'][:500].value_counts()
@@ -214,8 +207,33 @@ Soups, Sauces, and Gravies      1
 Poultry Products                1
 Name: FoodGroup, dtype: int64
 ```
+### Try it yourself
 
-Exercise: Repeat this process for $c_{3}$, $c_{4}$, and $c_{5}$.
+Repeat this process for $c_{3}$, $c_{4}$, and $c_{5}$.
+
+<br />
+
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  Here are the solutions:
+
+  ```python
+  TBD
+  ```
+    
+  The output is:
+
+  ```Output
+  TBD
+  ```
+
+</details>
+
+<br /><br />
+
+***
 
 
 **A parting note**: Baby Foods and some other categories might seem to dominate several of the categories. This is a product of all of the rows we had to drop that had NaN values. If we look at all of the value counts for FoodGroup, we will see that they are not evenly distributed, with some categories far more represented than others.
@@ -253,10 +271,3 @@ Restaurant Foods                      10
 Cereal Grains and Pasta                7
 Name: FoodGroup, dtype: int64
 ```
-
-
-
-
-
-
-

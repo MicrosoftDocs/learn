@@ -4,7 +4,7 @@ Intro
 
 ## PCA in theory
 
-Although one way we.... TBD, another way to reduce the number of dimensions that we have to work with is by projecting our feature space into a lower dimensional space. The reason why we can do this is that in most real-world problems, data points are not spread uniformly across all dimensions. Some features might be near constant, while others are highly correlated, which means that those data points lie close to a lower-dimensional subspace.
+Although one way we reduce the number of dimensions we have to work with is by reducing the number of features considered in an analysis, another way to reduce the number of dimensions that we have to work with is by projecting our feature space into a lower-dimensional space. The reason why we can do this is that in most real-world problems, data points are not spread uniformly across all dimensions. Some features might be near constant, while others are highly correlated, which means that those data points lie close to a lower-dimensional subspace.
 
 In the following image, the data points are not spread across the entire plane, but are nicely clumped, roughly in an oval. Because the cluster (or, indeed, any cluster) is roughly elliptical, it can be mathematically described by two values: its major (long) axis and its minor (short) axis. These axes form the *principal components* of the cluster.
 
@@ -14,7 +14,7 @@ In fact, we can construct a whole new feature space around this cluster, defined
 
 ## Import modules and dataset
 
-You will need to clean and prepare the data in order to conduct PCA on it, so pandas will be essential. You will also need NumPy, a bit of Scikit Learn, and pyplot.
+You will need to clean and prepare the data in order to conduct PCA on it, so pandas will be essential. You will also need NumPy, a bit of scikit-learn, and pyplot.
 
 To add these libraries, run this code:
 
@@ -27,20 +27,20 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 ```
 
-The dataset we’ll use here is the same one drawn from the [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/?azure-portal=true) that you prepared in Section 1.1. 
+The dataset we’ll use here is the same one that's drawn from the [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/?azure-portal=true) that you prepared in the preceding module. 
 
-Remember to set the encoding to latin_1 (for those darn µg):
+Remember to set the encoding to `latin_1` (for those darn µg):
 
 ```python
 df = pd.read_csv('Data/USDA-nndb-combined.csv', encoding='latin_1')
 ```
 
-We can check the number of columns and rows using the `info()` method for the `DataFrame`.
+We can check the number of columns and rows by using the `info()` method for the `DataFrame`:
 
 ```python
 df.info()
 ```
-Here's the output:
+The output is:
 
 ```Output
 <class 'pandas.core.frame.DataFrame'>
