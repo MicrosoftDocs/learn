@@ -4,7 +4,7 @@ To train a regression model, you need a dataset that includes historical *featur
 
 To use the Azure Machine Learning designer, you create a *pipeline* that you will use to train a machine learning model. This pipeline starts with the dataset from which you want to train the model.
 
-1. in [Azure Machine Learning studio](https://ml.azure.com), view the **Designer** page (under **Author**), and select **+** to create a new pipeline.
+1. in [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Designer** page (under **Author**), and select **+** to create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Auto Price Training** (if the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top).
 3. Observe that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, use **Select compute target** to select the **aml-cluster** compute target you created in the previous lab.
 
