@@ -2,14 +2,14 @@
 uid: learn.cv-classify-bird-species
 metadata:
   title: Classify Bird Species with Custom Vision
-  description: todo
+  description: As a ornithologist you study the behavior, physiology, and conservation of birds and bird habitats. This work often involves surveying, recording and reporting on bird activity. You want to build a machine learning model that will identify the birds to help with gathering data. In this module, you will use Azure Cognitive Services Custom Vision to create a model to identify species of birds!
   ms.date: 04/30/2020
   author: cassieview
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title:  Classify Bird Species with Custom Vision
-summary: todo
+summary: As a ornithologist you study the behavior, physiology, and conservation of birds and bird habitats. This work often involves surveying, recording and reporting on bird activity. You want to build a machine learning model that will identify the birds to help with gathering data. In this module, you will use Azure Cognitive Services Custom Vision to create a model to identify species of birds!
 abstract: |
   In this module, you will:
   - Get an introduction to Machine Learning (ML)
