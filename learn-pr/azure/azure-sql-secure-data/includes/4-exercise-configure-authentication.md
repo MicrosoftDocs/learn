@@ -1,13 +1,13 @@
 ### 3.2 Access management and Authorization
 
-### Activity 4: Getting started with Azure AD authentication
+## Getting started with Azure AD authentication
 
 In this activity, you'll learn how to configure an Azure AD administrator on a server level for Azure SQL Database. Next, you'll change your connection in SSMS from SQL authentication to Azure AD authentication, and you'll see how to grant other Azure AD users access to the database like normal users in SQL Server. 
 
 To learn more about authentication, here are a few resources from the documentation:  
 
 * [Azure SQL Security Playbook: Authentication](https://docs.microsoft.com/azure/sql-database/sql-database-security-best-practice#authentication)
-* [Configure Azure AD](https://docs.microsoft.com/azure/security/fundamentals/database-best-practices#enable-database-authentication)    
+* [Configure Azure AD](https://docs.microsoft.com/azure/security/fundamentals/database-best-practices#enable-database-authentication)  
 * [Azure RBAC roles](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 * [Security best practices related to RBAC](https://docs.microsoft.com/azure/security/fundamentals/database-best-practices#protect-your-data-by-using-encryption-and-row-level-security)
   
@@ -42,7 +42,7 @@ Notice that under *Authentication*, there are several different Azure Active Dir
 * [*Azure Active Directory - Password*](https://docs.microsoft.com/azure/sql-database/sql-database-aad-authentication-configure?tabs=azure-powershell#active-directory-password-authentication): A non-interactive method that allows you to connect with an Azure AD principal name using the Azure AD managed domain. From the documentation: *This can apply to native or federated Azure AD users. A native user is one explicitly created in Azure AD and being authenticated using user name and password, while a federated user is a Windows user whose domain is federated with Azure AD. The latter method (using user & password) can be used when a user wants to use their windows credential, but their local machine is not joined with the domain (for example, using a remote access). In this case, a Windows user can indicate their domain account and password and can authenticate to SQL DB/DW using federated credentials.*  
 * [*Azure Active Directory - Universal with MFA*](https://docs.microsoft.com/azure/sql-database/sql-database-ssms-mfa-authentication): An interactive method that will safeguard access to data while meeting demand for a single sign-in process with Multi-factor Authentication (MFA).
 
-For this workshop, select **Azure Active Directory - Password**.  
+For this exercise, select **Azure Active Directory - Password**.  
 
 ![Connect using Azure Active Directory - Password](../media/connecttoserver.png)  
 
@@ -96,44 +96,18 @@ CREATE User BobLovesTN WITH PASSWORD = 'Tanehill1!'
 
 Now, select **Connect** > **Database Engine** and configure the main page so you are connecting to your Azure SQL Database logical server with Login `BobLovesTN` and Password `Tanehill1!`.  
 
-**You must also set the database name**. You can do this by going to **Options** > **Connection Properties** and selecting **Reset All**. Then, in **Additional Connection Parameters**, enter `Initial Catalog=AdventureWorks0406` replacing `0406` with the ID you're using for the workshop. You have to do this manually, because BobLovesTN doesn't have access to scan the server to select a database.  
+**You must also set the database name**. You can do this by going to **Options** > **Connection Properties** and selecting **Reset All**. Then, in **Additional Connection Parameters**, enter `Initial Catalog=AdventureWorks0406` replacing `0406` with the unique ID you're using for the module. You have to do this manually, because BobLovesTN doesn't have access to scan the server to select a database.  
 
 Select **Connect** and confirm you're able to access the database.  
 
 As a clean-up step, right-click on the connection from BobLovesTN and select **Disconnect**.  
 
-**Step 5 - Grant other users access (Azure AD) - *Demo/Whiteboard only***  
+### Grant other users access (Azure AD)  
 
 Azure AD authentication is a little different. From the documentation, "*Azure Active Directory authentication requires that database users are created as contained. A contained database user maps to an identity in the Azure AD directory associated with the database and has no login in the master database. The Azure AD identity can either be for an individual user or a group*."  
 
 Additionally, the Azure portal can only be used to create administrators, and Azure RBAC roles don't propagate to Azure SQL Database logical servers, Azure SQL Databases, or Azure SQL Managed Instances. Additional server/database permissions must be granted using T-SQL.  
 
-If you are attending in-person, your instructor will demo/whiteboard how to add Azure AD users and give them access. If you are attending this self-paced, you can review the scripts below. This scenario involves giving *Person B* access to *Person A*'s Azure SQL Database logical server from an Azure VM.  
-
-```sql
--- Create the Azure AD user with access to the server
-CREATE USER "Person B Azure AD account" FROM EXTERNAL PROVIDER;
-
--- Until you run the following two lines, the user has no access to read or write data
-ALTER ROLE db_datareader ADD MEMBER "Person B Azure AD account";
-
--- Create firewall to allow Person B's Azure VM
-EXECUTE sp_set_firewall_rule @name = N'AllowPersonB',
-    @start_ip_address = 'Person B VM Public IP',
-    @end_ip_address = 'Person B VM Public IP';
-```
-
-*Person B* should now be able to connect to the server from their Azure VM. Read commands should work, but write commands should fail.  
-
-```sql
--- Example of a read command
-SELECT *
-  FROM [SalesLT].[ProductCategory];
-
--- Example of a write command
-UPDATE [SalesLT].[ProductCategory]
-    SET ModifiedDate = GETDATE()
-    WHERE ProductCategoryID = 1;
-```  
-
 In the real-world, scenarios can get complex quickly, because not only do users need the correct access to the server and/or databases, but they also need access to the network. For more information, please refer to the [documentation](https://docs.microsoft.com/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview) and the [Azure SQL Security best practices](https://docs.microsoft.com/azure/sql-database/sql-database-security-best-practice#network-security).
+
+TODO Review the following video to see a discussion.  
