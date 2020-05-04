@@ -23,9 +23,9 @@ dtype: float64
 
 Similar to an `ndarray`, a `Series` upcasts entries to be of the same type of data (that -2 integer in the original array became a -2.00 float in the `Series`).
 
-What is different from an `ndarray` is that the `Series` automatically wraps both a sequence of values and a sequence of indices. These are two separate objects within the `Series` object that can access with the `values` and `index` attributes.
+What is different from an `ndarray` is that the `Series` automatically wraps both a sequence of values and a sequence of indices. These are two separate objects within the `Series` object that you can access with the `values` and `index` attributes.
 
-Try accessing the `values` first; they are just a familiar NumPy array:
+Try accessing the `values` first. They're just a familiar NumPy array:
 
 ```python
 Series_example.values
@@ -75,7 +75,7 @@ The output is:
 dtype: float64
 ```
 
-Despite a lot of similarities, pandas `Series` have an important distinction from NumPy `ndarrays`: whereas `ndarrays` have _implicitly defined_ integer indices (as do Python lists), pandas `Series` have explicitly defined indices. The best part is that you can set the index:
+Despite a lot of similarities, pandas `Series` have an important distinction from NumPy `ndarrays`. Whereas `ndarrays` have _implicitly defined_ integer indices (as do Python lists), pandas `Series` have explicitly defined indices. The best part is that you can set the index:
 
 ```python
 Series_example2 = pd.`Series`([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
@@ -108,8 +108,8 @@ The output is:
 
 You're experienced in Jupyter Notebooks and experimenting with Python now, so use those new super-powers to predict and test.
 
-- Predict: What would happen if you sliced `series_example2` using its explicit index?
-- Test: Try it out in VS Code. Was the output what you expected?
+- Predict: What would happen if you sliced `series_example2` by using its explicit index?
+- Test: Try it out in Visual Studio Code. Was the output what you expected?
 
 <br />
 
@@ -133,9 +133,9 @@ You're experienced in Jupyter Notebooks and experimenting with Python now, so us
 
 ***
 
-Do explicit `Series` indices work _exactly_ the way you might expect? Try slicing `Series_example2` using its explicit index and find out.
+Do explicit `Series` indices work exactly the way you might expect? Try slicing `Series_example2` by using its explicit index, and find out.
 
-With explicit indices in the mix, a `Series` is basically a fixed-length, ordered dictionary in that it maps arbitrary typed index values to arbitrary typed data values. But like `ndarrays` these data are all of the same type, which is important. Just as the type-specific compiled code behind `ndarray` makes them more efficient than a Python lists for certain operations, the type information of pandas `Series` makes them much more efficient than Python dictionaries for certain operations.
+With explicit indices in the mix, a `Series` is basically a fixed-length, ordered dictionary in that it maps arbitrary typed index values to arbitrary typed data values. But like `ndarrays`, these data are all of the same type, which is important. Just as the type-specific compiled code behind `ndarray` makes them more efficient than a Python lists for certain operations, the type information of pandas `Series` makes them much more efficient than Python dictionaries for certain operations.
 
 But the connection between `Series` and dictionaries is nevertheless very real. You can construct a `Series` object directly from a Python dictionary:
 
@@ -158,7 +158,7 @@ Japan      126922333
 dtype: int64
 ```
 
-Did you see what happened there? The order of the keys 'Russia' and 'Japan' switched places between the order in which they were entered in `population_dict` and how they ended up in the `population` `Series` object. While Python dictionary keys have no order, `Series` keys are ordered.
+Did you see what happened there? The order of the keys *Russia* and *Japan* switched places, between the order in which they were entered in `population_dict`, and how they ended up in the `population` `Series` object. While Python dictionary keys have no order, `Series` keys are ordered.
 
 So, at one level, you can interact with `Series` as you would with dictionaries:
 
@@ -174,10 +174,10 @@ The output is:
 
 ### Try it yourself
 
-But you can also do powerful array-like operations with `Series` like slicing.
+But you can also do powerful, array-like operations with `Series`, like slicing.
 
-- Predict: Would slicing be possible if `Series` keys were not ordered?
-- Test: Try it out in VS Code. Create an unordered `Series` and try slicing it. Did it do what you expected?
+- Predict: Would slicing be possible if `Series` keys weren't ordered?
+- Test: Try it out in Visual Studio Code. Create an unordered `Series`, and try slicing it. Did it do what you expected?
 
 <br />
 
@@ -205,9 +205,9 @@ But you can also do powerful array-like operations with `Series` like slicing.
 
 You can also add elements to a `Series` the way that you would to an `ndarray`.
 
-- Try adding elements to a `Series` in the code cell below.
+- Try adding elements to a `Series` in the following code cell.
 - Try running `population['Albania'] = 2937590` (or another country of your choice).
-- Predict what order do the keys appear in when you run `population`. Is it what you expected?
+- Predict what order the keys appear in when you run `population`. Is it what you expected?
 
 <br />
 
@@ -253,4 +253,4 @@ Spain             NaN
 dtype: float64
 ```
 
-Notice that in the case of 'Germany', 'Japan', 'Russia', and 'Spain' (and 'Albania', depending on what you did in the previous exercise), the addition operation produced NaN (not a number) values. Pandas does not treat missing values as 0, but as NaN. (It can be helpful to think of arithmetic operations involving NaN as essentially $NaN + x= NaN$).
+Notice that in the case of *Germany*, *Japan*, *Russia*, and *Spain* (and *Albania*, depending on what you did in the previous exercise), the addition operation produced NaN (not a number) values. Pandas doesn't treat missing values as 0, but as NaN. (It can be helpful to think of arithmetic operations involving NaN as essentially $NaN + x = NaN$).
