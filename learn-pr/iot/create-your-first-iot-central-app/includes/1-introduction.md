@@ -55,9 +55,9 @@ In this module, you'll build the app displayed in the above image.
 1. Fill out your contact info, and click **Create**. Wait a few seconds whilst the app resource is built.
 
     > [!NOTE]
-    > If you get the error "Subdomain already in use", then change your **URL**, as currently it is no unique.
+    > If you get the error "Subdomain already in use", then change your **URL**, as currently it is not unique.
 
-1. You should now see a **Dashboard** with a few default tiles.
+1. You should now see a **Dashboard**, with a few default tiles.
 
 The next time you visit your Azure central home page, select **My apps** in the left-hand menu, and an icon for your  **Refrigerated Trucks** app should appear.
 

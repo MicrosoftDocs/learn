@@ -16,7 +16,7 @@ In this unit, you'll create a device template for a refrigerated truck.
 
 1. Click **Next: Customize**, then **Next: Review**. Do not select the **Gateway device** box. Then click **Create**.
 
-1. Enter the name for your device template: "RefrigeratedTruck", and hit Enter.
+1. Enter the name for your device template, "RefrigeratedTruck", and hit Enter.
 
 1. For **Create a capability model**, click **Custom**. You should now see a screen similar to the following image.
 
