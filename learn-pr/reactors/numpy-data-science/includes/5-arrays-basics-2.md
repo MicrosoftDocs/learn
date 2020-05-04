@@ -178,19 +178,19 @@ array([[1],
        [3]])
 ```
 
-You'll see this type of transformation a lot in the remainder of this course.
+You'll see this type of transformation a lot in the rest of this course.
 
 ## Joining and splitting arrays
 
-Another common data-manipulation need in data science is combining multiple datasets; learning first how to do this with NumPy arrays will help you in the next section (Section 4) when we do this with more complex data structures. You will many times also need to split a single array into multiple arrays.
+Another common data-manipulation need in data science is combining multiple datasets. Learning how to do this task with NumPy arrays will help you in the next section (Section 4) when we do the same thing with more complex data structures. You'll also frequently need to split a single array into multiple arrays.
 
 ### Joining arrays
 
-To join arrays in NumPy, you will most often use `np.concatenate`, which is the method we will cover here. If you find yourself in the future needing to specifically join arrays in mixed dimensions (a rarer case), read the documentation on `np.vstack`, `np.hstack`, and `np.dstack`.
+To join arrays in NumPy, you'll most often use `np.concatenate`, which is the method we'll cover here. If you find yourself needing to specifically join arrays in mixed dimensions (a rarer case), read the documentation on `np.vstack`, `np.hstack`, and `np.dstack`.
 
 #### `np.concatenate()`
 
-`np.concatenate` takes a tuple or list of arrays as its first argument:
+`np.concatenate` takes a tuple or a list of arrays as its first argument:
 
 ```python
 a = np.array([1, 2, 3])
@@ -217,7 +217,7 @@ The output is:
 [ 1  2  3  3  2  1 99 99 99]
 ```
 
-`np.concatenate` can also be used for two-dimensional arrays:
+You can also use `np.concatenate` for two-dimensional arrays:
 
 ```python
 grid = np.array([[1, 2, 3],
@@ -243,7 +243,7 @@ array([[1, 2, 3],
 
 Recall that axes are zero-indexed in NumPy.
 
-What do you predict np.concatenate([grid, grid], axis=1) will produce?
+What do you predict `np.concatenate([grid, grid], axis=1)` will produce?
 
 <br />
 
@@ -270,7 +270,7 @@ What do you predict np.concatenate([grid, grid], axis=1) will produce?
 
 ### Splitting arrays
 
-In order to split arrays into multiple smaller arrays, you can use the functions `np.split`, `np.hsplit`, `np.vsplit`, and `np.dsplit`. As above, we will only cover the most commonly used function (`np.split`) in this course.
+To split arrays into multiple smaller arrays, you can use the functions `np.split`, `np.hsplit`, `np.vsplit`, and `np.dsplit`. We'll cover only the most commonly used function (`np.split`) in this course.
 
 #### `np.split()`
 
@@ -288,7 +288,7 @@ The output is:
 [1 2 3] [99 99] [3 2 1]
 ```
 
-Notice that *N* split-points produces to *N + 1* subarrays. In this case it has formed the subarray `a2` with `a[3]` and `a[4]` (the element just before position 5 [remember how Python indexing goes], the second input in the tuple) as elements. `a1` and `a3` pick up the leftover portions from the original array `a`.
+Notice that *N* split-points produces to *N + 1* subarrays. In this case, the function has formed the subarray `a2` with `a[3]` and `a[4]` as elements. `a[4]` is the element just before position 5 (remember how Python indexing goes), the second input in the tuple. `a1` and `a3` pick up the leftover portions from the original array `a`.
 
 ### Try it yourself
 
@@ -316,7 +316,7 @@ array([[ 0,  1,  2,  3],
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Use:
+  For:
 
   ```python
   np.split(grid, [1, 2])
@@ -363,4 +363,4 @@ array([[ 0,  1,  2,  3],
 >[!div class="alert is-tip"]
 >### Takeaway
 >
-> Manipulating datasets is a fundamental part of preparing data for analysis. The skills you learned and practiced here will form building blocks for the most sophisticated data-manipulation you will learn in later sections in this course.
+> Manipulating datasets is a fundamental part of preparing data for analysis. The skills you learned and practiced here will form building blocks for the most sophisticated data-manipulation that you'll learn in later sections in this course.

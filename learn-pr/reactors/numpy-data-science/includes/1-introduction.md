@@ -18,7 +18,7 @@ Our first step will be to import NumPy by using `np` as an alias:
 import numpy as np
 ```
 
-Get used to this convention. It's a common convention in Python, and it's the way we'll use and refer to NumPy throughout the rest of this module.
+Get used to this convention. It's a common convention in Python, and it's the way we'll use and refer to NumPy throughout the rest of this course.
 
 ## Learning objectives
 

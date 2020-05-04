@@ -1,4 +1,4 @@
-So far, we have explored how to access and modify portions of arrays using simple indices like `arr[0]`) and slices like `arr[:5]`. Now it is time for fancy indexing, in which we pass an array of indices to an array in order to access or modify multiple array elements at the same time.
+So far, we've explored how to access and modify portions of arrays by using simple indices like `arr[0]` and slices like `arr[:5]`. Now it's time for fancy indexing, in which we pass an array of indices to an array in order to access or modify multiple array elements at the same time.
 
 Let's try it out:
 
@@ -15,7 +15,7 @@ The output is:
 [51 92 14 71 60 20 82 86 74 74]
 ```
 
-Suppose you need to access three different elements. Using the tools you currently have, your code might look something like this:
+Suppose you need to access three different elements. Using the tools you currently have, your code might look something like this code:
 
 ```python
 [arr[3], arr[7], arr[2]]
@@ -40,7 +40,7 @@ The output is:
 array([71, 86, 60])
 ```
 
-Another useful aspect of fancy indexing is that the shape of the output array reflects the shape of the *index arrays* you supply, rather than the shape of the array you are accessing. This is handy because there will be many times in a data scientist's life when they want to grab data from an array in a particular manner, such as to pass it to a machine learning API. Let's examine this property with an example:
+Another useful aspect of fancy indexing is that the shape of the output array reflects the shape of the *index arrays* you supply, rather than the shape of the array you're accessing. This is handy because, as a data scientist, you'll frequently want to grab data from an array in a particular way, such as to pass it to a machine learning API. Let's examine this property with an example:
 
 ```python
 ind = np.array([[3, 7],
@@ -55,7 +55,7 @@ array([[71, 86],
        [60, 20]])
 ```
 
-`arr` is a one-dimensional array, but `ind`, your index array, is a 2 x 2 array, and that is the shape the results comes back in.
+`arr` is a one-dimensional array, but `ind`, your index array, is a 2 x 2 array, so the results come back in that shape.
 
 #### Try it yourself
 
