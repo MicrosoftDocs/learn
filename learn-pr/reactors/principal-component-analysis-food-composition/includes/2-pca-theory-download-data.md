@@ -1,3 +1,5 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
+
 Intro
 
 ## PCA in theory

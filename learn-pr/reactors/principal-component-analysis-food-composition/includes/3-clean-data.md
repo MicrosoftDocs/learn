@@ -1,3 +1,5 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
+
 We know from experience that we probably will need to do some cleanup of our data before we can run the machine learning algorithms we want to run.
 
 ## Handle `null` values

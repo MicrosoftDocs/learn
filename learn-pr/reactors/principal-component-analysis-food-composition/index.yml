@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+  show_latex: true
 title: Principal compoment analysis with food composition
 summary: How to TBD.
 abstract:  | 

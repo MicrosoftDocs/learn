@@ -1,6 +1,8 @@
-What do our vectors mean? Put another way, what kinds of foods populate the differnt clusters we have discovered among the data?
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-To see these results, we will create pandas Series for each of the components, index them by feature, and then sort them in descreasing order (so that a higher number represents a feature that is positively correlated with that vector and negative numbers represent low correlation).
+What do our vectors mean? Put another way, what kinds of foods populate the different clusters we have discovered among the data?
+
+To see these results, we will create pandas Series for each of the components, index them by feature, and then sort them in decreasing order (so that a higher number represents a feature that is positively correlated with that vector and negative numbers represent low correlation).
 
 First, run this code in a cell:
 

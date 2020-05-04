@@ -9,6 +9,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+ show_latex: true
 durationInMinutes: 8
 content: |
   [!include[](includes/3-clean-data.md)]

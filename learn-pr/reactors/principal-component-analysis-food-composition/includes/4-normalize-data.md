@@ -1,3 +1,5 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
+
 Our numeric data comes in a variety of mass units (grams, milligrams, and micrograms) and one energy unit (kilocalories). In order to make an apples-to-apples comparison (pun intended) of the nutritional data, we need to first normalize the data and make it more normally distributed (that is, make the distribution of the data look more like a familiar bell curve).
 
 To help see why we need to normalize the data, let's look at a histogram of all of the columns.
@@ -8,7 +10,7 @@ ax = nutr_df.hist(bins=50, xlabelsize=-1, ylabelsize=-1, figsize=(11,11))
 
 The output is:
 
-:::image type="content" alt-text="A screenshot that shows a histogram of all the columns." source="../media/normalize-1.png" loc-scope="azure":::
+:::image type="content" alt-text="A screenshot that shows a histogram of all the columns." source="../media/normalize-1.png" loc-scope="Azure":::
 
 Not a bell curve in sight. Worse, a lot of the data is clumped at or around 0. We will use the Box-Cox Transformation on the data, but it requires strictly positive input, so we will add 1 to every value in each column.
 
@@ -34,7 +36,7 @@ ax = nutr_df_TF.hist(bins=50, xlabelsize=-1, ylabelsize=-1, figsize=(11,11))
 
 The output is:
 
-:::image type="content" alt-text="A screenshot that shows revised histogram of all the columns." source="../media/normalize-1.png" loc-scope="azure":::
+:::image type="content" alt-text="A screenshot that shows revised histogram of all the columns." source="../media/normalize-1.png" loc-scope="Azure":::
 
 Few of these columns looks properly normal, but it is enough to now center the data.
 

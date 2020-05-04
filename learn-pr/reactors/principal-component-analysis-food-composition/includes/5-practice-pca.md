@@ -1,3 +1,5 @@
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
+
 It's finally time to perform the PCA on our data. (As stated before, even with pretty clean data, a lot of effort has to go into preparing the data for analysis.)
 
 First, run this code in a cell:
@@ -7,7 +9,7 @@ fit = PCA()
 pca = fit.fit_transform(nutr_df_TF)
 ```
 
-So, now that we have peformed the PCA on our data, what do we actually have? Remember that PCA is foremost about finding the eigenvectors for our data. We then want to select some subset of those vectors to form the lower-dimensional subspace in which to analyze our data.
+So, now that we have performed the PCA on our data, what do we actually have? Remember that PCA is foremost about finding the eigenvectors for our data. We then want to select some subset of those vectors to form the lower-dimensional subspace in which to analyze our data.
 
 Not all of the eigenvectors are created equal. Just a few of them will account for the majority of the variance in the data. (Put another way, a subspace composed of just a few of the eigenvectors will retain the majority of the information from our data.) We want to focus on those vectors.
 
@@ -23,7 +25,7 @@ The output is:
 [<matplotlib.lines.Line2D at 0x7f28e0c9f588>]
 ```
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/plt-plot.png" loc-scope="azure":::
+:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/plt-plot.png" loc-scope="Azure":::
 
 This is where data science can become an art. As a rule of thumb, we want to look for "elbow" in the graph, which is the point at which the few components have captured the majority of the variance in the data (after that point, we are only adding complexity to the analysis for increasingly diminishing returns). In this particular case, that appears to be at about five components.
 
@@ -69,7 +71,7 @@ Text(0.5,1,'Cumulative Explained Variance Graph')
 ```
 
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/variance-graph.png" loc-scope="azure":::
+:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/variance-graph.png" loc-scope="Azure":::
 
 Ultimately, it is a matter of judgment as to how many components to use, but five vectors (and 70 percent of the variance) will suffice for our purposes in this section.
 
@@ -83,7 +85,7 @@ pca_df.head()
 Here's the output:
 
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/variance-2.png" loc-scope="azure":::
+:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/variance-2.png" loc-scope="Azure":::
 
 Each column represents one of the eigenvectors, and each row is one of the coordinates that defines that vector in five-dimensional space.
 
@@ -101,7 +103,7 @@ pca_df.head()
 Here's the output:
 
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/variance-3.png" loc-scope="azure":::
+:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/variance-3.png" loc-scope="Azure":::
 
 Don't worry that the FoodGroup column has all NaN values: it is not a vector, so it has no vector coordinates.
 
@@ -115,5 +117,5 @@ np.round(pca_df.corr(), 5)
 Here's the output:
 
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/correlation-3.png" loc-scope="azure":::
+:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/correlation-3.png" loc-scope="Azure":::
 
