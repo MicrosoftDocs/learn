@@ -2,14 +2,13 @@ Here, you are introduced to GitHub Actions and Workflows. You learn the types of
 
 ## What is GitHub Actions?
 
-A *Github Action* is a packaged script to automate one task in a software development workflow in GitHub.
+*Github Actions* are packaged scripts to automate tasks in a software development workflow in GitHub.
 
-TODO: get better examples from Aaron
 For example, suppose you want to automate scanning your repository for secrets. You could use a GitHub Action written by a member of the community called *Secret Scan*. Or maybe you want to trigger a Jenkins job, there is an Action for that. You can also write your own actions and if you desire, publish them to the [GitHub Marketplace](https://github.com/marketplace?type=actions&azure-portal=true).
 
 You can find GitHub actions in [GitHub Marketplace](https://github.com/marketplace?type=actions&azure-portal=true), in open source projects on GitHub, and in the GitHub [actions](https://github.com/actions?azure-portal=true) organization.
 
-There are two types of GitHub Actions, *container actions* and *JavaScript actions*. With container actions, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. JavaScript actions don't include the environment in the code. This means you'll have to specify the environment to execute this action. You can use a VM in the cloud, or on-premises. GitHub Actions support any language, and Linux, MacOS, and Windows environments.
+There are two types of GitHub Actions, *container actions* and *JavaScript actions*. With container actions, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. JavaScript actions don't include the environment in the code. This means you'll have to specify the environment to execute this action. You can use a VM in the cloud, or on-premises. GitHub Actions support any language, and Linux, macOS, and Windows environments.
 
 Here is an example of an action that checks out the repository. This action, [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true), is part of a step in a workflow. This step also builds the Node.js code that was checked out. We will talk about workflows, jobs, and steps in the next section.
 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.github-actions-hello.4-tbd-knowledge-check
+uid: learn.github.github-actions-hello.4-knowledge-check
 title: Check your knowledge
 metadata:
   title: Check your knowledge
@@ -23,6 +23,9 @@ quiz:
     - content: "To facilitate continuous integration and continuous delivery (CI/CD)"
       isCorrect: false
       explanation: "GitHub Actions are used to facilitate CI/CD, but they also automate software development tasks and integrate IaC."
+    - content: "Integrate infrastructure as code within your project's context"
+      isCorrect: false
+      explanation: "GitHub Actions can integrate infrastructure as code within your project's context, but they can also facilitate CI/CD and integrate IaC."
     - content: "All of the above"
       isCorrect: true
       explanation: "GitHub Actions can integrate infrastructure as code within your project's context, facilitate CI/CD and integrate IaC."
