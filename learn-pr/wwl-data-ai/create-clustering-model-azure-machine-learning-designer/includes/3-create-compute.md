@@ -4,21 +4,24 @@ To train and deploy models using Azure Machine Learning designer, you need compu
 
 Compute targets are cloud-based resources on which you can run model training and data exploration processes.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com), view the **Compute** page (under **Manage**). This is where you manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Compute** page (under **Manage**). This is where you manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
     - **Compute Instances**: Development workstations that data scientists can use to work with data and models.
     - **Compute Clusters**: Scalable clusters of virtual machines for on-demand processing of experiment code.
     - **Inference Clusters**: Deployment targets for predictive services that use your trained models.
     - **Attached Compute**: Links to existing Azure compute resources, such as Virtual Machines or Azure Databricks clusters.
-2. On the **Compute Instances** tab, add a new compute instance, giving it a unique name and using the **STANDARD_DS3_V2** VM type template. You'll use this as a workstation from which to test your model.
-
+2. On the **Compute Instances** tab, add a new compute instance with the following settings. You'll use this as a workstation from which to test your model:
+    - **Compute name**: *enter a unique name*
+    - **Virtual Machine type**: CPU
+    - **Virtual Machine size**: Standard_DS3_v2
 3. While the compute instance is being created, switch to the **Compute Clusters** tab, and add a new compute cluster with the following settings. You'll use this to train a machine learning model:
     - **Compute name**: aml-cluster
-    - **Virtual Machine size**: Standard_DS2_v2
+    - **Virtual Machine type**: CPU
     - **Virtual Machine priority**: Dedicated
+    - **Virtual Machine size**: Standard_DS2_v2
     - **Minimum number of nodes**: 2
     - **Maximum number of nodes**: 2
     - **Idle seconds before scale down**: 120
-4. While the compute cluster is being created, on the **Inference Clusters** tab, add a new cluster with the following settings:
+4. While the compute cluster is being created, on the **Inference Clusters** tab, add a new cluster with the following settings. You'll use this to deploy your model as a service.
     * **Compute name**: aks-cluster
     * **Kubernetes Service**: Create new
     * **Region**: *Select a different region than the one used for your workspace*

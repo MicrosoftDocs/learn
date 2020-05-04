@@ -20,7 +20,7 @@ prerequisites: |
   - You should understand basic data types like strings and `int`, how to create, set and get values from a variable, and so on.
   - Experience calling methods using the member access operator `.` and passing arguments to functions.
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-standard-library.svg
 levels:
 - beginner
 roles:
