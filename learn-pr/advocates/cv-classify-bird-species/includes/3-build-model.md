@@ -49,7 +49,7 @@ Now it is time to upload the data for training. There are a couple ways to do th
 > [!NOTE]
 > If you want to export the model to deploy on a mobile device, tensorflowjs, or IoT select the `compact` model option. This can also be changed after the project is created in the settings.
 
-2. Add and tag images
+2. Add and tag image
 
 - Select `Add Images`
 - Navigate to the `bird_photos` folder

@@ -24,7 +24,7 @@ quiz:
         - content: "To mimic human intelligence with a computer."
           isCorrect: true
           explanation: "Correct!"
-    - content: " Which of the following are _not_ indicators that custom vision provides to understand how the model is performing?"
+    - content: " Which of the following is _not_ an indicator that custom vision provides to understand how the model is performing?"
       choices:
         - content: "Confusion Matrix"
           isCorrect: true
