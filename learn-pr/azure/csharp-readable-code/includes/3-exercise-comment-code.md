@@ -184,7 +184,7 @@ foreach (var orderID in orderIDs)
 }
 ```
 
-A comment's usefulness is subjective.  In all matter related to code readability, you should use your best judgment.  Do what you think is best to improve the clarity of your code.
+A comment's usefulness is subjective.  In all matters related to code readability, you should use your best judgment.  Do what you think is best to improve the clarity of your code.
 
 ## Recap
 
