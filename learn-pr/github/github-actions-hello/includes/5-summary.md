@@ -1,11 +1,10 @@
-In this module, you learned about GitHub Actions and how to use them in a workflow.
+In this module, you learned about GitHub Actions and how to use them in a workflow. 
 
-- You learned about the different types of GitHub Actions and where to find them.
-- You learned about workflows, what makes up a workflow, and how to automate them with triggers and actions
-- You used GitHub Actions in a workflow
-- You created a container action
-- You ran your workflow in a GitHub-hosted linux environment
-- You triggered the workflow run with a push to your GitHub repository
+You can now:
+
+- Describe GitHub Actions, the types of actions, and where to find them
+- Plan an automation of your software development life cycle with GitHub Workflows
+- Create a container action and have it run in a workflow triggered by a push event to your GitHub repository
 
 ## Next steps
 
