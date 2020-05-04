@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.static-apps-gatsby.7-exercise-build-and-deploy-static-apps
-title: Exercise - deploy static app
+title: Exercise - Build and deploy to Azure Static Web Apps
 metadata:
-  title: Exercise - deploy static app
+  title: Exercise - Build and deploy to Azure Static Web Apps
   description: This exercise takes us through initializing a Git repo to pushing it to GitHub to finally deploy the repo to the Cloud.
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
-  ms.prod: vs
+  ms.prod: learning-azure
+azureSandbox: true
 durationInMinutes: 3
 content: |
   [!include[](includes/7-exercise-build-and-deploy-static-app.md)]

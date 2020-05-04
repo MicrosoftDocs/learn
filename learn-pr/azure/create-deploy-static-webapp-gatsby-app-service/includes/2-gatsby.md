@@ -33,24 +33,23 @@ Before you are able to work with Gatsby command line tool, there are some prereq
 
 These three commands will get you started working with a new Gatsby app:
 
-- `gatsby new <project name> <optional GitHub URL>`, You use this command to generate a new project. It takes a name as a mandatory argument and optionally a GitHub URL as the second argument. Using the latter argument will create a Gatsby project based on an existing Gatsby project on GitHub.
-- `gatsby develop`, this will start up a development server where your project can be accessed. A development server is an HTTP Server able to host your files so you can access them from your browser. You will find your Gatsby app running on address `http://localhost:8000`. It will also start up a GraphQL endpoint, which you can use to author queries that you can later use in your project. You can find the GraphQL endpoint at `http://localhost:8000/___graphql`.
-- `gatsby build`, this will create a static representation of your app. All the resulting HTML, JavaScript and, CSS will end up in the sub directory `public`.
+- `gatsby new <project name> <optional GitHub URL>`: Use this command to generate a new project. It takes a name as a mandatory argument and optionally a GitHub URL as the second argument. Using the latter argument will create a Gatsby project based on an existing Gatsby project on GitHub.
+- `gatsby develop`: Start a development server where your project can be accessed. A development server is an HTTP server able to host your files so you can access them from your browser. You will find your Gatsby app running on address `http://localhost:8000`. It will also start an instance of GraphiQL, which is a graphical development tool you can use to explore the data available to your app and build queries. You can use GraphiQL by browsing to `http://localhost:8000/___graphql`.
+- `gatsby build`: Create a deployable static representation of your app. All the resulting HTML, JavaScript and, CSS will end up in the sub directory `public`.
 
 ## Project anatomy
 
 A scaffolded Gatsby project consists of some parts that you need to understand to work with Gatsby effectively and efficiently.
 
-- `/pages`, any React component placed in this directory will become a route and a page. Pages are described in more detail below.
-- `gatsby-config.js`, is a configuration file. Part of the configuration will be used to set up and configure plugins and part of it is global data that you can render on your pages
-- `gatsby-node.js`, a file used to implement life-cycle methods of the Gatsby API. In here you can do things such as sourcing files, add/update nodes to the Gatsby graph and even bring in data from the outside that should be part of the website.
-nodes to
-- Styles, Gatsby let's you apply styles in many ways, everything from imported CSS, SASS, LESS to CSS Modules
-- `/components` here you should place React components meant as helper components like header, layout and more.
+- `/pages`: React components placed in this directory will become routes and a pages. Pages are described in more detail below.
+- `gatsby-config.js`: A configuration file. Part of the configuration will be used to set up and configure plugins and part of it is global data that you can render on your pages.
+- `gatsby-node.js`: A file used to implement life-cycle methods of the Gatsby API. In here you can do things such as sourcing files, add/update nodes to the Gatsby graph and even bring in data from the outside that should be part of the website.
+- /styles: Gatsby lets you apply styles in many ways, everything from imported CSS, SASS, and LESS to CSS Modules.
+- `/components`: For React components meant as helper components like header, layout and more.
 
 ### Pages
 
-One of the most important things to be created in a new Gatsby project is the sub directory `/pages`. Any React component placed in here will be rendered as an actual static page and will be accessible. If you are creating a file `/pages/hello.js` with the following content:
+One of the most important things to be created in a new Gatsby project is the sub directory `/pages`. Any React component placed in here will be rendered as an actual static page and will be accessible via a browser. Take the following example:
 
 ```jsx
 import React from 'react';
@@ -60,9 +59,6 @@ const HelloPage = () => (<div>Hello</div>)
 export default HelloPage;
 ```
 
-This component creation will lead to a route being created at `/hello`. A route is the trailing part of a URL that defines specifically where to go. Looking at an example URL `http://localhost:8000/products`, the trailing part and route is `/products`.
-
-Back to our component above we can see that it will render the string `Hello` between two `div` tags.
-
+Putting this into a file named `/pages/hello.js` will lead to a route being created at `/hello`. Browsing there will result in a page that displays the string `Hello` between two `div` tags.
 
 
