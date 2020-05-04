@@ -12,6 +12,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/11-Add-variables-templates-Exercise.md)]
