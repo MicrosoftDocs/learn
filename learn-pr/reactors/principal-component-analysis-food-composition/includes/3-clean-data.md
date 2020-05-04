@@ -153,6 +153,4 @@ nutr_df.head()
 This is the output:
 
 [ ![A screenshot that shows the results of running nutr_df.head, in table format](../media/correlation-2.png) ](../media/correlation-2.png#lightbox]
-
-:::image type="content" alt-text="A screenshot that shows the results of running nutr_df.head, in table format." source="" loc-scope="Azure":::
 5 rows × 43 columns
