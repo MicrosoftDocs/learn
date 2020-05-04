@@ -9,7 +9,6 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
-  show_latex: true
 durationInMinutes: 10
 content: |
   [!include[](includes/7-run-outside-jupyter-notebooks.md)]

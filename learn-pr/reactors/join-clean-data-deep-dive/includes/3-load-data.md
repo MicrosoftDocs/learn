@@ -1,16 +1,6 @@
-By the end of this subsection, you should be comfortable loading data from files into panda `DataFrame`s and troubleshooting any difficulties that might arise.
+By the end of this unit, you should be comfortable loading data from files into panda `DataFrame`s and troubleshooting any difficulties that might arise.
 
 Because pandas `DataFrame`s are two-dimensional data structures, they are inherently similar to flat-file formats such as comma-separated value (CSV) files, the most common import and export format for spreadsheets and databases. Adding to this ease of translation from CSV files to `DataFrame`s, pandas provides a convenient function to load the contents of CSV files into `DataFrame`s (more convenient, in fact, then the native Python [CSV library](https://docs.python.org/3.6/library/csv.html?azure-portal=true)). Let's get comfortable with [pandas.read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html?azure-portal=true) because we will be using often.
-
-```python
-df = pd.read_csv('Data/USDA-nndb.csv')
-```
-
-The output is:
-
-```Output
-TBD
-```
 
 After talking up the convenience of pd.read_csv, it might seem strange that we immediately encounter an error. The clue as to what went wrong is in the last line of the error message:
 
@@ -33,15 +23,15 @@ Use the built-in IPython documentation to on `pd.read_csv.`
   Refer to the discussion at the start of this section if you forgot the syntax.
   
   ```python
-  pd.read_csv.
+  df = pd.read_csv('Data/USDA-nndb.csv')
   ```
 
   The output is:
 
-  ```Output
-  ```
-  
-  ***Jak: Add screenshot***
+  > [!div class="alert is-tip"]
+  > Output
+  >
+  > :::image type="content" source="../media/pd-read-csv-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.read_csv.'":::
 
 </details>
 
@@ -56,12 +46,6 @@ There are quite a few of parameters for this function. The intuitively named `e
 
 ```python
 df = pd.read_csv('Data/USDA-nndb.csv', encoding='latin_1')
-```
-
-The output is:
-
-```Output
-TBD
 ```
 
 There was no error message this time, so `'latin_1'` did the trick and we successfully read in the CSV file to the `df` `DataFrame`.

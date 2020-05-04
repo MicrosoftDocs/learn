@@ -9,8 +9,10 @@ In order to provide an experience more like real-world data science, we will use
 
 In this module, you will:
 
-- TBD.
+- Learn ways to prepare data for analysis
+- Dive deeper into cleaning and joining datasets
 
 ## Prerequisites
 
-- TBD
+- Introduction to Python **(LINK TBA)**
+- Beginners Data Science for Python Developers **(LINK TBA)**
