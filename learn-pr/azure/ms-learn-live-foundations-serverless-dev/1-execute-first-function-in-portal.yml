@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.ms-learn-live-foundations-serverless-dev.3-setup-cosmosdb
+uid: learn.azure.ms-learn-live-foundations-serverless-dev.1-execute-first-function-in-portal
 
 # Use the format "Prepare for session x - [Title of the session]" (do not use a colon in the title, it will make VScode show YAML errors).
-title: Setup a CosmosDB instance used by the API
+title: Create your first Function
 
 metadata:
   # Use the same as the "title".
-  title: Setup a CosmosDB instance used by the API
+  title: Create your first Function
   # Same as "title".
-  description: Setup a CosmosDB instance used by the API
+  description: Create your first Function
   
   # Update this after changing the file.
-  ms.date: 4/29/2020
+  ms.date: 5/4/2020
   
   # Your Github alias
   author: krumelur
@@ -21,13 +21,11 @@ metadata:
 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-
 azureSandbox: true
-interactive: bash
 
 # Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
 # It's best to follow the instructions and take the time.
 durationInMinutes: 10
 
 content: |
-  [!include[](includes/3-setup-cosmosdb.md)]
+  [!include[](includes/1-execute-first-function-in-portal.md)]

@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.ms-learn-live-foundations-serverless-dev.2-session-1
+uid: learn.azure.ms-learn-live-foundations-serverless-dev.3-create-function-endpoint
 
 # Use the format "Prepare for session x - [Title of the session]" (do not use a colon in the title, it will make VScode show YAML errors).
-title: TODO
+title: Create a function endpoint that reacts to a HTTP Request using a HTTP trigger
 
 metadata:
   # Use the same as the "title".
-  title: TODO
+  title: Create a function endpoint that reacts to a HTTP Request using a HTTP trigger
   # Same as "title".
-  description: TODO
+  description: Create a function endpoint that reacts to a HTTP Request using a HTTP trigger
   
   # Update this after changing the file.
-  ms.date: 3/13/2020
+  ms.date: 4/29/2020
   
   # Your Github alias
   author: krumelur
@@ -21,11 +21,12 @@ metadata:
 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
+
+azureSandbox: false
 
 # Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
 # It's best to follow the instructions and take the time.
 durationInMinutes: 10
 
 content: |
-  [!include[](includes/2-session-1.md)]
+  [!include[](includes/3-create-function-endpoint.md)]
