@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.intro-iot-funtions-iot-edge.what-azure-functions-iot-edge
-title: What is Azure Functions for IoT Edge?
+uid: learn.oxford.intro-iot-funtions-iot.what-azure-functions-iot
+title: What are Azure Functions for IoT?
 metadata:
-  title: What is Azure Functions for IoT Edge?
+  title: What are Azure Functions for IoT?
   description: In this section, we provide a definition of the product and discuss the value proposition of the product.
   ms.date: 03/23/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.prod: learning-azure-iot-hub
 durationInMinutes: 2 # dummy number at present
 content: |
-  [!include[](includes/2-what-azure-functions-iot-edge.md)]
+  [!include[](includes/2-what-azure-functions-iot.md)]
