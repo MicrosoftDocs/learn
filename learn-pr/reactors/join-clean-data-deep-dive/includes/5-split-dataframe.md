@@ -116,8 +116,9 @@ df2.head()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
-> 
+>
 > |  | NDB_No | Alpha_Carot_(ï¿½g) | Beta_Carot_(ï¿½g) | Beta_Crypt_(ï¿½g) | Lycopene_(ï¿½g) | Lut+Zea_ (ï¿½g) | Vit_E_(mg) | Vit_D_ï¿½g | Vit_D_IU | Vit_K_(ï¿½g) | FA_Sat_(g) | FA_Mono_(g) | FA_Poly_(g) | Cholestrl_(mg) | GmWt_1 | GmWt_Desc1 | GmWt_2 | GmWt_Desc2 | Refuse_Pct |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 > | 8790 | 1001 | 0.0 | 158.0 | 0.0 | 0.0 | 0.0 | 2.32 | 0.0 | 0.0 | 7.0 | 51.368 | 21.021 | 3.043 | 215.0 | 5.00 | 1 pat, (1" sq, 1/3" high) | 14.2 | 1 tbsp | 0.0 |
@@ -169,6 +170,7 @@ df1.head()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | Sugar_Tot_(g) | ... | Vit_B6_(mg) | Folate_Tot_(ï¿½g) | Folic_Acid_(ï¿½g) | Food_Folate_(ï¿½g) | Folate_DFE_(ï¿½g) | Choline_Tot_ (mg) | Vit_B12_(ï¿½g) | Vit_A_IU | Vit_A_RAE | Retinol_(ï¿½g) |
@@ -190,6 +192,7 @@ df1.head()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | index | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | ... | Vit_B6_(mg) | Folate_Tot_(ï¿½g) | Folic_Acid_(ï¿½g) | Food_Folate_(ï¿½g) | Folate_DFE_(ï¿½g) | Choline_Tot_ (mg) | Vit_B12_(ï¿½g) | Vit_A_IU | Vit_A_RAE | Retinol_(ï¿½g) |
@@ -212,6 +215,7 @@ df1.head()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | Sugar_Tot_(g) | ... | Vit_B6_(mg) | Folate_Tot_(ï¿½g) | Folic_Acid_(ï¿½g) | Food_Folate_(ï¿½g) | Folate_DFE_(ï¿½g) | Choline_Tot_ (mg) | Vit_B12_(ï¿½g) | Vit_A_IU | Vit_A_RAE | Retinol_(ï¿½g) |
@@ -233,6 +237,7 @@ df2.head()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | NDB_No | Alpha_Carot_(ï¿½g) | Beta_Carot_(ï¿½g) | Beta_Crypt_(ï¿½g) | Lycopene_(ï¿½g) | Lut+Zea_ (ï¿½g) | Vit_E_(mg) | Vit_D_ï¿½g | Vit_D_IU | Vit_K_(ï¿½g) | FA_Sat_(g) | FA_Mono_(g) | FA_Poly_(g) | Cholestrl_(mg) | GmWt_1 | GmWt_Desc1 | GmWt_2 | GmWt_Desc2 | Refuse_Pct |
@@ -253,28 +258,8 @@ df1.to_csv('Data/NNDB1.csv', sep=',', encoding='utf-8',index=False)
 
 How would you export df2 to a CSV file?
 
-**SARAH - TBD** - ADD HINT?
-
-<br />
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-
-  ```python
-  TBD
-  ```
-
-  The output is:
-
-```Output
-  TBD
-  ```
-
-</details>
-
-<br /><br />
-
-***
+> [!div class="alert is-tip"]
+> **SARAH - TBD** - ADD HINT?
 
 > [!div class="alert is-tip"]
 >

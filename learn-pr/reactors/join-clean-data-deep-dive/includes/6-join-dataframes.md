@@ -67,6 +67,7 @@ df.head()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | Sugar_Tot_(g) | ... | Vit_K_(ï¿½g) | FA_Sat_(g) | FA_Mono_(g) | FA_Poly_(g) | Cholestrl_(mg) | GmWt_1 | GmWt_Desc1 | GmWt_2 | GmWt_Desc2 | Refuse_Pct |
@@ -87,6 +88,7 @@ left_df.head()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | Sugar_Tot_(g) | ... | Vit_K_(ï¿½g) | FA_Sat_(g) | FA_Mono_(g) | FA_Poly_(g) | Cholestrl_(mg) | GmWt_1 | GmWt_Desc1 | GmWt_2 | GmWt_Desc2 | Refuse_Pct |
@@ -107,7 +109,9 @@ df.tail()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
+>
 > |  | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | Sugar_Tot_(g) | ... | Vit_K_(ï¿½g) | FA_Sat_(g) | FA_Mono_(g) | FA_Poly_(g) | Cholestrl_(mg) | GmWt_1 | GmWt_Desc1 | GmWt_2 | GmWt_Desc2 | Refuse_Pct |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 > | 17575 | 83110 | MACKEREL,SALTED | 43.00 | 305 | 18.50 | 25.10 | 13.40 | 0.00 | 0.0 | 0.0 | ... | 7.8 | 7.148 | 8.320 | 6.210 | 95.0 | 80.0 | 1 piece, (5-1/2" x 1-1/2" x 1/2") | 17.0 | 1 cubic inch, boneless | 0.0 |
@@ -126,6 +130,7 @@ left_df.tail()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | Sugar_Tot_(g) | ... | Vit_K_(ï¿½g) | FA_Sat_(g) | FA_Mono_(g) | FA_Poly_(g) | Cholestrl_(mg) | GmWt_1 | GmWt_Desc1 | GmWt_2 | GmWt_Desc2 | Refuse_Pct |
@@ -146,7 +151,7 @@ A right join is simply the mirror image of a left join in which those entries fr
 
 Perform a right join of `df1` and `df2` in the code cell below. But before you do that, ask yourself what shape you expect the resulting `DataFrame` to have? Do you expect it to have any `NaN` values?
 
-**SARAH TBD** - Hint looks incomplete. Do you want to add code and output?
+> **SARAH TBD** - Hint looks incomplete. Do you want to add code and output?
 
 <br/>
 
@@ -154,16 +159,6 @@ Perform a right join of `df1` and `df2` in the code cell below. But before y
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   The parameter for the right join is `how='right'`
-  
-  ```python
-  TBD
-  ```
-
-  The output is:
-
-  ```Output
-  TBD
-  ```
 
 </details>
 
@@ -205,6 +200,7 @@ inner_df.head()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | Sugar_Tot_(g) | ... | Vit_K_(ï¿½g) | FA_Sat_(g) | FA_Mono_(g) | FA_Poly_(g) | Cholestrl_(mg) | GmWt_1 | GmWt_Desc1 | GmWt_2 | GmWt_Desc2 | Refuse_Pct |
@@ -225,6 +221,7 @@ inner_df.tail()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | Sugar_Tot_(g) | ... | Vit_K_(ï¿½g) | FA_Sat_(g) | FA_Mono_(g) | FA_Poly_(g) | Cholestrl_(mg) | GmWt_1 | GmWt_Desc1 | GmWt_2 | GmWt_Desc2 | Refuse_Pct |
@@ -248,22 +245,3 @@ An outer join is the union of two `DataFrame`s; anything that is in either `Da
 - What differences would there have to be in the shape or content of either `DataFrame` for the outer join of the two to be different from their right join?
 
 **SARAH TBD** - Add Hint here?
-
-<br />
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-
-  ```python
-  TBD
-  ```
-
-  The output is:
-
-  ```Output
-  TBD
-  ```
-
-</details>
-
-<br /><br />

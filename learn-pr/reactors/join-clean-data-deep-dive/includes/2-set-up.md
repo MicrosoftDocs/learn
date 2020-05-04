@@ -16,6 +16,7 @@ ipython
 pd.<TAB>
 ```
 
+> [!div class="alert is-tip"]
 > **SARAH TBD** - in VSCode, the completion feature doesn't require <TAB> and using <TAB> inserts an actual tab into the code.
 
 When you do so, a drop-down menu will appear next to the `pd`.
@@ -30,10 +31,10 @@ pd.compat?
 
 The output is:
 
-```Output
-```
-
-:::image type="content" source="../media/pd-compat-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.'":::
+> [!div class="alert is-tip"]
+> Output
+>
+> :::image type="content" source="../media/pd-compat-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.'":::
 
 Now select an item using tab-completion and then add a period and use tab-completion to explore *that*.
 
@@ -45,10 +46,10 @@ pd.DataFrame.
 
 The output is:
 
-```Output
-```
-
-:::image type="content" source="../media/pd-dataframe-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.DataFrame.'":::
+> [!div class="alert is-tip"]
+> Output
+> 
+> :::image type="content" source="../media/pd-dataframe-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.DataFrame.'":::
 
 As we progress through Section 1.1, don't forget that IPython also provides a tab-completion feature and function documentation with the `?` (question mark) character. If you don't understand something about a function you see in this section, taking a moment to csonult the documentation can help a great deal. You will find this documentation to be a very valuable reference source for your own data science work, both now and in the future. As a reminder, use this code to display the built-in pandas documentation:
 
@@ -67,10 +68,10 @@ pd.
 
 The output is:
 
-```Output
-```
-
-:::image type="content" source="../media/pd-help-vscode-flyout-dataframe-selected.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.' and hovering over 'DataFrame'":::
+> [!div class="alert is-tip"]
+> Output
+>
+> :::image type="content" source="../media/pd-help-vscode-flyout-dataframe-selected.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.' and hovering over 'DataFrame'":::
 
 ## A brief reminder about Jupyter notebooks
 

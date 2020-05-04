@@ -15,6 +15,7 @@ fg_df.head()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | NDB_No | FoodGroup |
@@ -66,6 +67,7 @@ combined_df.head()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | Alpha_Carot_(ï¿½g) | Ash_(g) | Beta_Carot_(ï¿½g) | Beta_Crypt_(ï¿½g) | Calcium_(mg) | Carbohydrt_(g) | Cholestrl_(mg) | Choline_Tot_ (mg) | Copper_mg) | Energ_Kcal | ... | Vit_A_RAE | Vit_B12_(ï¿½g) | Vit_B6_(mg) | Vit_C_(mg) | Vit_D_IU | Vit_D_ï¿½g | Vit_E_(mg) | Vit_K_(ï¿½g) | Water_(g) | Zinc_(mg) |
@@ -86,6 +88,7 @@ combined_df.tail()
 
 The output is:
 
+> [!div class="alert is-tip"]
 > Output
 >
 > |  | Alpha_Carot_(ï¿½g) | Ash_(g) | Beta_Carot_(ï¿½g) | Beta_Crypt_(ï¿½g) | Calcium_(mg) | Carbohydrt_(g) | Cholestrl_(mg) | Choline_Tot_ (mg) | Copper_mg) | Energ_Kcal | ... | Vit_A_RAE | Vit_B12_(ï¿½g) | Vit_B6_(mg) | Vit_C_(mg) | Vit_D_IU | Vit_D_ï¿½g | Vit_E_(mg) | Vit_K_(ï¿½g) | Water_(g) | Zinc_(mg) |
