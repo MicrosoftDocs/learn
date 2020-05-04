@@ -20,8 +20,8 @@ How does Gatsby do this? In the pre-compilation phase, each plugin *scans* a sou
 
 Gatsby has two core technologies that you need to know to a certain extent. Those technologies are:
 
-- `React.js`, You will use React to create components. You will be creating components to either support the building of pages or to build the pages themselves. Additionally you will also use components to build layouts
-- `GraphQL`, GraphQL is a query language used to query for your websites data but also for external data. It's possible to build a Gatsby site without it but it becomes so much easier if you do use it. GraphQL is a query language used for querying APIs. It's able to *negotiate* with the API exactly for what resources and columns it wants from the API. This solves many problems that exist currently with APIs like over-fetching or many round-trips extra to the server.
+- `React.js`, React.js is the chosen SPA framework that Gatsby uses. It's not possible to use Gatsby with another SPA framework. You need to have a rudimentary understanding of developing in React before using Gatsby. You should know how to create components in React.js and work with input properties. You will be using React.js in Gatsby to create components to either support the building of pages or to build the pages themselves. Additionally you will also use components to build layouts.
+- `GraphQL`, GraphQL is a query language used to query for your websites data but also for external data. GraphQL is a query language used for querying APIs. It's able to *negotiate* with the API exactly for what resources and columns it wants from the API. This solves many problems that exist currently with APIs like over-fetching or many round-trips extra to the server. In the context of Gatsby, GraphQL is used to fetch JSON data from an in-memory data graph to help you assemble pages from fetched JSON data and markup. It's possible to build a Gatsby site without it GraphQL but it becomes so much easier if you do use it.
 
 ## Creating and working with a new Gatsby app
 

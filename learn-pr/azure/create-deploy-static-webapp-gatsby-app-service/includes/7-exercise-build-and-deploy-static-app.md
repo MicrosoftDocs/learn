@@ -2,6 +2,14 @@ Azure Static Web Apps hosts static applications, like those made with Gatsby, by
 
 Here, you'll build your app's static assets to see what they look like and host them locally to try them out. Then, you'll push your code to GitHub and create an Azure Static Web Apps instance to host your app on the web.
 
+## Activate the Azure sandbox
+
+The first step is to connect to an Azure sandbox. You can create the Azure Static Web Apps resources from here.
+
+1. Start by **activating the Azure sandbox above**.
+1. Once the sandbox is activated, [sign into the Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+   - Make sure you use the same account to sign in as you did to activate the sandbox.
+
 ## Build your site
 
 When it comes to building your site and making it ready for deployment Gatsby does the heavy lifting for us.
@@ -87,14 +95,6 @@ git push -u origin master
 
 You are now ready to deploy to Azure Static Web Apps!
 
-## Activate the Azure sandbox
-
-The first step is to connect to an Azure sandbox. You can create the Azure Static Web Apps resources from here.
-
-1. Start by **activating the Azure sandbox above**.
-1. Once the sandbox is activated, [sign into the Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-    - Make sure you use the same account to sign in as you did to activate the sandbox.
-
 ## Create a Static Web App
 
 Now that you've created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
@@ -167,8 +167,6 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
 :::image type="content" source="../media/gatsby-published.png" alt-text="Azure Static Web Apps overview page":::
-
-Your app's now globally available, but it's still stuck at **Loading data ...** because there is no data or API yet. You'll add the API for your web app in the next section.
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 

@@ -18,8 +18,8 @@ In this module, you will:
 
 ## Prerequisites
 
-  - [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/) and [Visual Studio Code](https://code.visualstudio.com/) installed on your computer
-  - Familiarity with editing text and code files in any text editor
-  - Beginner-level experience building simple web applications with React
-  - Experience using the command line, including Git operations
-  - A GitHub account
+- [Git](https://git-scm.com/), [Node.js](https://nodejs.org/en/) and [Visual Studio Code](https://code.visualstudio.com/) installed on your computer
+- Familiarity with editing text and code files in any text editor
+- Beginner-level experience building simple web applications with React
+- Experience using the command line, including Git operations
+- A GitHub account

@@ -1,6 +1,12 @@
-`gatsby new` creates a new Gatsby application, to which you can start adding content pages.
-
 In this unit, you'll create a new Gatsby application and add a single page to it.
+
+## Install gatsby
+
+Install the below software:
+
+- Git, [Install Git, instructions per OS](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+- Node.js [Install Node.js](https://nodejs.org/en/download/).
+- Gatsby CLI, Once Node.js is installed, install Gatsby CLI via the terminal this line `npm install -g gatsby-cli`.
 
 ## Create and run a Gatsby site
 
@@ -12,6 +18,9 @@ Now, create a new Gatsby app by typing the following command in the terminal:
 
 ```bash
 gatsby new myApp
+```
+
+`gatsby new` creates a new Gatsby application, to which you can start adding content pages.
 
 ### Run Gatsby
 
@@ -22,6 +31,7 @@ Run the following commands to move to your project folder and start the server:
 ```bash
 cd myApp
 gatsby develop
+```
 
 You should see the following output in the terminal:
 

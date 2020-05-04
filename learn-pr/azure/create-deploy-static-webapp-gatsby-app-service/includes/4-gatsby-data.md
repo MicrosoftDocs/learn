@@ -5,7 +5,6 @@ Gatsby has a system of plugins that *scans* various data sources and places the 
 The data graph is something you can interact with. Once you start up the development server, the data graph will be available on `http://localhost:8000/___graphql`. This will render the data graph in a tool called GraphiQL.
 
 TODO - add screenshot
-![]()
 
 GraphiQL allows you to do the following:
 
