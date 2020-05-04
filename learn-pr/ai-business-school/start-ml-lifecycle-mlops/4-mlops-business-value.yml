@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6 
 content: |
-  [!include[](includes/3-mlops-business-value.md)] 
+  [!include[](includes/4-mlops-business-value.md)] 
