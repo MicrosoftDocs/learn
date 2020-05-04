@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.principal-component-analysis-food-composition.4-clean-data
-title: Clean the data
+uid: learn.reactors.principal-component-analysis-food-composition.3-clean-data
+title: Clean the data and check for correlations
 metadata:
   title: Clean the data
   description: Clean the data TBD.
@@ -9,6 +9,6 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-durationInMinutes: 4
+durationInMinutes: 8
 content: |
-  [!include[](includes/4-clean-data.md)]
+  [!include[](includes/3-clean-data.md)]

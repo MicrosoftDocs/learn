@@ -1,3 +1,5 @@
+To get started, we'll load the dataset, which includes importing the NumPy and pandas Python libraries. Then, we'll train the SVM model for image classification by using the faces in the dataset.
+
 ## Load the dataset
 
 The first step is to import facial images from the dataset. LFW contains more than 13,000 facial images collected from the web. Of the more than 5,000 people represented in the dataset, 1,680 have two or more facial images, while only five have 100 or more. We'll set the minimum number of faces per person to 100, which means that five sets of faces corresponding to five famous people will be imported. Each facial image is labeled with the name of the person that the face belongs to.
@@ -63,7 +65,7 @@ Here's the output:
 
 ## Train an SVM model
 
-The next task is to train an SVM model to do image classification using the faces in the dataset. Let's start by splitting the dataset so that 80% can be used for training and 20% can be used for testing.
+The next task is to train an SVM model to do image classification by using the faces in the dataset. Let's start by splitting the dataset so that 80% can be used for training and 20% can be used for testing.
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -94,10 +96,8 @@ model.score(x_test, y_test)
 ```
 
 The output is `0.4649122807017544`.
-```
 
 That's not very encouraging, but we're far from done.
 
 SVM can use several types of kernels to fit a mathematical model to a dataset. The default kernel type is one called the [radial-basis function (RBF)](https://wikipedia.org/wiki/Radial_basis_function?azure-portal=true), which scikit-learn abbreviates _rbf_. You can specify the kernel type with the SVC function's `kernel` parameter. Other common values include _linear_, _poly_, and _sigmoid_. It could be that another kernel type would fit the data better. But there's something else that might help, too. That "something else" is [principal component analysis (PCA)](https://wikipedia.org/wiki/Principal_component_analysis?azure-portal=true).
-
 

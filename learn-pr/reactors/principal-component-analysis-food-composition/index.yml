@@ -32,12 +32,11 @@ products:
 - vs-code
 units:
 - learn.reactors.principal-component-analysis-food-composition.1-introduction
-- learn.reactors.principal-component-analysis-food-composition.2-pca-theory-action
-- learn.reactors.principal-component-analysis-food-composition.3-download-data
-- learn.reactors.principal-component-analysis-food-composition.4-clean-data
+- learn.reactors.principal-component-analysis-food-composition.2-pca-theory-download-data
+- learn.reactors.principal-component-analysis-food-composition.3-clean-data
+- learn.reactors.principal-component-analysis-food-composition.4-normalize-data
 - learn.reactors.principal-component-analysis-food-composition.5-normalize-data
-- learn.reactors.principal-component-analysis-food-composition.6-practice-pca
-- learn.reactors.principal-component-analysis-food-composition.7-interpret-results
-- learn.reactors.principal-component-analysis-food-composition.8-categorization
+- learn.reactors.principal-component-analysis-food-composition.5-practice-pca
+- learn.reactors.principal-component-analysis-food-composition.6-interpret-results
 badge:
   uid: learn.reactors.principal-component-analysis-food-composition.badge 

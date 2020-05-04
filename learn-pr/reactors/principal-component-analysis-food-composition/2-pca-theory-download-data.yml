@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.principal-component-analysis-food-composition.2-pca-theory-action
+uid: learn.reactors.principal-component-analysis-food-composition.2-pca-theory-download-data
 title: PCA theory and PCA action
 metadata:
   title: PCA theory and PCA action
@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-pca-theory-action.md)]
+  [!include[](includes/2-pca-theory-download-data.md)]
