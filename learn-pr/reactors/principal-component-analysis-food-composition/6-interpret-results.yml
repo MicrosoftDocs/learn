@@ -3,7 +3,7 @@ uid: learn.reactors.principal-component-analysis-food-composition.6-interpret-re
 title: Interpret the results
 metadata:
   title: Interpret the results
-  description: Interpret the results TBD.
+  description: Interpret the results of applying PCA to a food composition dataset.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

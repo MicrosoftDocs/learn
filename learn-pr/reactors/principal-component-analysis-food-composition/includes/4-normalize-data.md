@@ -61,13 +61,16 @@ mean:  -0.0
 ```
 ### Try it yourself
 
+Find the standard deviation for the <code>nutr_df_TF</code>. (If you need a hint as to which method to use, see the [pandas documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.std.html?azure-portal=true).)
+
+> [!NOTE]
+> SARAH: Do we need to provide a solution for this exercise? Thanks.
+
 <br />
 
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
-
-  Find the standard deviation for the <code>nutr_df_TF</code>. (If you need a hint as to which method to use, see the [pandas documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.std.html?azure-portal=true).)
 
   TBD solution
 

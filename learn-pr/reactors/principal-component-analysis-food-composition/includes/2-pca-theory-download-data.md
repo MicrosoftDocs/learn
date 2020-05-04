@@ -1,10 +1,9 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
-
-Intro
+Principal component analysis (PCA) is an algorithm that helps us get a dataset into a working condition by removing dimensions that must be calculated in an analysis of the dataset. 
 
 ## PCA in theory
 
-Although one way we reduce the number of dimensions we have to work with is by reducing the number of features considered in an analysis, another way to reduce the number of dimensions that we have to work with is by projecting our feature space into a lower-dimensional space. The reason why we can do this is that in most real-world problems, data points are not spread uniformly across all dimensions. Some features might be near constant, while others are highly correlated, which means that those data points lie close to a lower-dimensional subspace.
+One way we reduce the number of dimensions we have to work with is by reducing the number of features considered in an analysis. PCA provides another way: reducing the number of dimensions that we have to work with by projecting our feature space into a lower-dimensional space. The reason why we can do this is that in most real-world problems, data points are not spread uniformly across all dimensions. Some features might be near constant, while others are highly correlated, which means that those data points lie close to a lower-dimensional subspace.
 
 In the following image, the data points are not spread across the entire plane, but are nicely clumped, roughly in an oval. Because the cluster (or, indeed, any cluster) is roughly elliptical, it can be mathematically described by two values: its major (long) axis and its minor (short) axis. These axes form the *principal components* of the cluster.
 

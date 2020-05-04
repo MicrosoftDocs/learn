@@ -4,6 +4,9 @@ One way to accomplish this is by reducing the number of features considered in a
 
 ## Learning objectives
 
+> [!NOTE]
+> SARAH: Would you check the learning objectives I derived from the module content? Thanks.
+
 In this module, you will:
 
 - Learn the meaning of *principal component analysis (PCA)* and *eigenvector*, and their function in machine learning.

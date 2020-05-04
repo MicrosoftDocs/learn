@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.principal-component-analysis-food-composition.4-normalize-data
-title: Normalize the data
+title: Normalize and center the data
 metadata:
-  title: Normalize the data
-  description: Normalize the data TBD.
+  title: Normalize and center the data
+  description: Normalize and center the data to prepare it for PCA.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

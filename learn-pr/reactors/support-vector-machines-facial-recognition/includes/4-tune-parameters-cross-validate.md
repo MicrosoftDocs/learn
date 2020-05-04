@@ -122,6 +122,9 @@ Is the cross-validated score higher or lower than the score returned by the mode
 
 Data scientists typically use either 5 or 10 folds for cross-validation, depending on the size of the dataset. Use the next cell to cross-validate the model using 10 folds rather than 5, and then print the mean of all the scores. Does the resulting score differ dramatically from the preceding output?
 
+> [!NOTE]
+> SARAH: Should we add a solution and output for this exercise? Thanks.
+
 <br />
 
 <details>

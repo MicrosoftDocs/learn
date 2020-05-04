@@ -20,8 +20,10 @@ Drop rows from the DataFrame that contain `NaN` values.
   ```python
   df.dropna()
   ```
+  
+  The output is:
 
-  :::image type="content" alt-text="A screenshot that shows the table output of running df.dropna()" source="../media/df-drop-na.png" loc-scope="Azure":::
+  [ ![A screenshot that shows the table output of running df.dropna()](../media/df-drop-na.png) ](../media/df-drop-na.png#lightbox)
 
 </details>
 
@@ -79,7 +81,8 @@ Why was it necessary to structure the `iloc` method call the way we did in the p
 
   Here's the output:
 
-  :::image type="content" alt-text="A screenshot that shows a table that holds the results of running nutr_df.head." source="../media/nutr-df-head-49.png" loc-scope="Azure":::
+  
+  [ ![A screenshot that shows a table that holds the results of running nutr_df.head](../media/nutr-df-head-49.png) ](../media/nutr-df-head-49.png#lightbox)
   5 rows × 49 columns
 
 </details>
@@ -91,6 +94,12 @@ Why was it necessary to structure the `iloc` method call the way we did in the p
 ### Try it yourself
 
 Now set the index of `nutr_df` to use `NDB_No`.
+
+> [!NOTE]
+> SARAH: Do we need to provide output for this exercise? Thanks.
+
+
+<br />
 
 <details>
 
@@ -121,7 +130,8 @@ nutr_df.head()
 
 Here's the output:
 
-:::image type="content" alt-text="A screenshot that shows the results of running nutr_df.head, in table format." source="../media/nutr-df-head-46.png" loc-scope="Azure":::
+[ ![A screenshot that shows the results of running nutr_df.head, in table format](../media/nutr-df-head-46.png) ](../media/nutr-df-head-46.png#lightbox)
+
 5 rows × 46 columns
 
 ## Check for correlation among features
@@ -142,5 +152,7 @@ nutr_df.head()
 
 This is the output:
 
-:::image type="content" alt-text="A screenshot that shows the results of running nutr_df.head, in table format." source="../media/correlation-2.png" loc-scope="Azure":::
+[ ![A screenshot that shows the results of running nutr_df.head, in table format](../media/correlation-2.png) ](../media/correlation-2.png#lightbox]
+
+:::image type="content" alt-text="A screenshot that shows the results of running nutr_df.head, in table format." source="" loc-scope="Azure":::
 5 rows × 43 columns

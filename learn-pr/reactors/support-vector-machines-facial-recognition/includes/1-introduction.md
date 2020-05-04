@@ -6,6 +6,9 @@ That's a simple way to visualize how SVMs work. Let's learn about SVMs by using 
 
 ## Learning objectives
 
+> [!NOTE]
+> SARAH: Would you check the learning objectives I derived from the module content? Thanks.
+
 In this module, you will:
 
 - Train a support vector machine (SVM) model to do image classification by using items in a dataset. 

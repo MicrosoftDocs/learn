@@ -9,13 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   show_latex: true
-title: Principal compoment analysis with food composition
+title: Principal component analysis with food composition
 summary: Learn how to use principal component analysis to learn about the contents of a food nutrition dataset.
 abstract:  | 
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Learn the meaning of *principal component analysis (PCA)* and *eigenvector*, and their function in machine learning.
+  - Learn about PCA theory, and then apply PCA to a food composition dataset.
+  - Check for correlation, and then normalize and center the data.
   
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
@@ -33,7 +33,7 @@ products:
 - vs-code
 units:
 - learn.reactors.principal-component-analysis-food-composition.1-introduction
-- learn.reactors.principal-component-analysis-food-composition.2-pca-theory-download-data
+- learn.reactors.principal-component-analysis-food-composition.2-understand-pca-download-data
 - learn.reactors.principal-component-analysis-food-composition.3-clean-data
 - learn.reactors.principal-component-analysis-food-composition.4-normalize-data
 - learn.reactors.principal-component-analysis-food-composition.5-practice-pca

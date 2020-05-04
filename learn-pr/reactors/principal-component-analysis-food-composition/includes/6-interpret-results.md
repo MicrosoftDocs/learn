@@ -135,16 +135,16 @@ Our second group is foods that are high in fiber and folic acid and low in chole
 
 Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
+> [!NOTE]
+> SARAH: Do we need to provide a possible solution and output for this exercise? Thanks.
+
 <br />
 
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
-
-  Hint: Remember that Python uses zero-indexing.
- 
+  <italic>Hint</italic>: To find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$, remember that Python uses zero-indexing.
  
   Here's a possible solution:
 
@@ -210,6 +210,9 @@ Name: FoodGroup, dtype: int64
 ### Try it yourself
 
 Repeat this process for $c_{3}$, $c_{4}$, and $c_{5}$.
+
+> [!NOTE]
+> SARAH: Do we need to provide a possible solution and output for this exercise? Thanks.
 
 <br />
 
