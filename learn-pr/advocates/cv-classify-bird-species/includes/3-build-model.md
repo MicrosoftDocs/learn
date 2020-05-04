@@ -20,6 +20,8 @@ The first thing we need to create our model is to get data! We are going to use 
 - When the deployment succeeds, you will get a notification in the top-right corner.
 - Select `Go to resource`
 
+![createservicegif](/media/CreateCustomVisionService.gif)
+
 ## 3. Upload Data
 
 Now it is time to upload the data for training. There are a couple ways to do this. Either use the UI to browse upload and tag OR we can use the SDK. Follow the instructions for the way that works best for you. With lots of data and images classes/tags it will be faster to use the SDK.
@@ -31,11 +33,17 @@ Now it is time to upload the data for training. There are a couple ways to do th
 - Select `Quick Start`
 - Select `Custom Vision Portal` or go to https://www.customvision.ai/projects and login
 - Select `Sign in`
-- Select `New Project`
-  - Enter a Name and Resource Group and
-  - Project Types: Classification
-  - Classification Types: MultiClass General
-  - Domains: General
+- Select `New Project` and fill in the required fields:
+
+  | Field                  | Value                             |
+  | ---------------------- | --------------------------------- |
+  | Enter a Name           | Name of your choice               |
+  | Description            | A Short description of the model  |
+  | Enter a Resource Group | Select the resource you created   |
+  | Project Types          | Classification                    |
+  | Classification Types   | Multiclass (Single tag per image) |
+  | Domains                | General                           |
+
 - Create project
 
 > [!NOTE]
@@ -43,12 +51,15 @@ Now it is time to upload the data for training. There are a couple ways to do th
 
 2. Add and tag images
 
-- Select `Add Images` and navigate to the train folder for the scraped images
-- Ctrl + A to select all the images in the folder
+- Select `Add Images`
+- Navigate to the `bird_photos` folder
+- Ctrl + A to select all the images for each bird species folder
 - Select `Open`
-- Add tag for photos to indicate the bird species
+- Add a tag for photos to indicate the bird species
 - Select `Upload photos`
 - Repeat these steps for each bird species (class)
+
+![uploadphotos](/media/uploadcvphotos.gif)
 
 ### Option 2: SDK Upload
 

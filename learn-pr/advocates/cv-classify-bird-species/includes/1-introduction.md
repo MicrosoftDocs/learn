@@ -6,6 +6,8 @@ In this module, you will use Azure Cognitive Services Custom Vision to create a 
 
 The data was provided by the Cornell Lab of Ornithology, with a special thanks to photographers, contributors, and visitors to the [All About Birds website](https://www.allaboutbirds.org/news/). This material is based upon work supported by the National Science Foundation under Grant No. 1010818. This module includes a subset of the full dataset. To access the full dataset, visit [this site](https://dl.allaboutbirds.org/nabirds), and refer to [this paper](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Horn_Building_a_Bird_2015_CVPR_paper.pdf) for specific dataset details.
 
+![birds](/media/birds.png)
+
 ## Learning objectives
 
 In this module, you will:

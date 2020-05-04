@@ -14,11 +14,11 @@ In summary, when we build a model we're trying to mimic human intelligence. We u
 
 ## What is transfer learning?
 
-The ability to use prior knowledge to better solve the current problem. We do this all the times as humans and we are discovering new ways to do this with computers too. The way it works for computer vision is we add a layer in the neural network that is a trained model. This trained model gives us a head start with training. It starts with a general knowledge domain and then new layers are added to the neural network to solve our specific problem. In this case, identifying birds.
+Azure Custom Vision uses something called Transfer Learning. This is the ability to use prior knowledge to better solve the current problem. We do this all the times as humans and we are discovering new ways to do this with computers too. The way it works for computer vision is we add a layer in the neural network that is a trained model. This trained model gives us a head start with training. It starts with a general knowledge domain and then new layers are added to the neural network to solve our specific problem. In this case, identifying birds. This enables us to get better results with less data.
 
 ## The Model Building Process
 
-Here is a step-by-step overview of the model building process and how we will complete it to create this model.
+To better understand the model building process, here is a step-by-step overview of the process and how we will complete it to create this model.
 
 1. Ask a pointed question
 
@@ -26,7 +26,7 @@ Here is a step-by-step overview of the model building process and how we will co
 
 2. Prepare data
 
-   - We have a cleaned and prepared dataset of bird images from Cornell so this step was taken care of for us. If you were to build a different model you would need to find and prepare data for training. You would want to find data that would help you answer the pointed question from step 1.
+   - We have a cleaned and prepared dataset of bird images from Cornell so this step was taken care of for us. If you were to build a different model you would need to find and prepare data for training. You would want to find data that would help you answer the pointed question from step one.
 
 3. Select algorithm
 
