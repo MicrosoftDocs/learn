@@ -1,6 +1,8 @@
 Your ultimate goal is to host your app in Azure. Azure Static Web Apps takes care of provisioning all the necessary Azure resources for you.
 
-However, before your app can be hosted, you need something to build your app as you make changes. Those changes could be via commits or pull requests to your repository. A key feature of Azure Static Web Apps is that it sets up a GitHub Action to build and publish your application.
+However, before your app can be hosted, you need something to build your app as you make changes. Those changes could be via commits or pull requests to your repository. A key feature of Azure Static Web Apps is that it sets up a GitHub Actions workflow to build and publish your application.
+
+When you create the Azure Static Web Apps resource, it creates the GitHub Actions workflow. The workflow is triggered immediately and takes care of building and publishing your app. The workflow is also triggered every time you make a change to the watched branch in your repository.
 
 ## Azure Static Web Apps
 

@@ -25,6 +25,7 @@ You pushed your **api** branch to GitHub. Now you want the GitHub Action to publ
 1. Select the **master** branch fro the **base** dropdown
 1. Select the **api** branch from the **compare** dropdown
 1. Click the **Create pull request** button
+1. Again, on the next screen, click the second **Create pull request** button
 
 Your GitHub Action has now been triggered.
 
