@@ -8,7 +8,7 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. The C
 
 1. Click the **Cloud Shell** button in the toolbar at the top of the portal to open the Cloud Shell.
 
-    If you would prefer, you can open a Cloud Shell in a separate browser window by pointing your browser to https://shell.azure.com. Clicking the Cloud Shell button in the portal opens a Cloud Shell inside the portal.
+    If you would prefer, you can open a Cloud Shell in a separate browser window by pointing your browser to [https://shell.azure.com](https://shell.azure.com?azure-portal=true). Clicking the Cloud Shell button in the portal opens a Cloud Shell inside the portal.
 
     ![Opening the Azure Cloud Shell](../media/cloud-shell.png)
 
@@ -60,7 +60,7 @@ You now have a storage account for storing photos and a container to store them 
 
 The next task is to create a Node.js app that simulates an array of motion-activated cameras that upload photographs taken in the wild to the storage account's "photos" container.
 
-1. If Node.js isn't installed on your computer, go to https://nodejs.org/ and install it it now. You can determine whether Node is installed — and what version is installed — by opening a Command Prompt or terminal window and typing the following command:
+1. If Node.js isn't installed on your computer, go to [https://nodejs.org/](https://nodejs.org/?azure-portal=true) and install it it now. You can determine whether Node is installed — and what version is installed — by opening a Command Prompt or terminal window and typing the following command:
 
     ```bash
     node -v

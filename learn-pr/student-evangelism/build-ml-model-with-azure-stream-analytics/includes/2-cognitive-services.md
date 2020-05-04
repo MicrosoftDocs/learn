@@ -1,6 +1,4 @@
-# Train a machine-learning model to recognize polar bears #
-
-[Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) is a suite of more than 20 services and APIs backed by machine learning that enables developers to incorporate intelligent features such as facial recognition and sentiment analysis into their applications. The [Custom Vision Service](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) is one member of the Cognitive Services family. Its purpose is to create image-classification models that "learn" from labeled images you provide. Want to know if a photo contains a picture of a flower? Train the Custom Vision Service with a collection of flower images, and it can tell you whether the next image includes a flower — or even what type of flower it is.
+Azure Cognitive Services is a suite of more than 20 services and APIs backed by machine learning that enables developers to incorporate intelligent features such as facial recognition and sentiment analysis into their applications. Custom Vision Serviceis one member of the Cognitive Services family. Its purpose is to create image-classification models that "learn" from labeled images you provide. Want to know if a photo contains a picture of a flower? Train the Custom Vision Service with a collection of flower images, and it can tell you whether the next image includes a flower — or even what type of flower it is.
 
 ![Custom Vision Service](../media/custom-vision.jpg)
 
@@ -13,7 +11,7 @@ In this unit, you will create a Custom Vision Service model and train it to diff
 You will begin by creating a new Custom Vision Service project. Then you will upload images of polar bears, Arctic foxes, and walruses and tag the images so the Custom Vision Service can learn to differentiate between them.
 
 1. Open the [Custom Vision Service portal](https://www.customvision.ai/) in your browser. Then click **Sign In** and sign in with your Microsoft account. 
- 
+
     ![Signing in to the Custom Vision Service portal](../media/portal-sign-in.png)
 
     _Signing in to the Custom Vision Service portal_
