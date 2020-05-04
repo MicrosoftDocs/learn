@@ -109,7 +109,7 @@ Let's start by creating a deployment for the ratings front end.
     ratings-web   1/1     1            1           2m
     ```
 
-## Create a Kubernetes service for the ratings API service
+## Create a Kubernetes service for the ratings web front end
 
 Your next step is to simplify the network configuration for your application workloads. Use a Kubernetes service to group your pods and provide network connectivity.
 
