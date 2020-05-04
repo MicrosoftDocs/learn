@@ -128,7 +128,7 @@ Console.WriteLine($"Measurement: {measurement:N} units");
 If you are viewing this from the `en-US` culture, you will see the following output.
 
 ```output
-Measurement: 123,456.79
+Measurement: 123,456.79 units
 ```
 
 By default, the `N` numeric format specifier displays only two digits after the decimal point.  
