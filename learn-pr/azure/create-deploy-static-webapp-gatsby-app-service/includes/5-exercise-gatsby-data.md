@@ -18,16 +18,6 @@ siteMetadata: {
 
 We can construct a query given the above, read out the data and, have a component render it. Before get as far let's start by creating a Gatsby app.
 
-### Create a Gatsby app
-
-Create a Gatsby app by typing the following command in the terminal:
-
-```bash
-gatsby new <your app name>
-```
-
-This will create a Gatsby project, a set of directories and files that you can extend and configure.
-
 ### Start development server
 
 Start the development server by typing the following command at the root of your project:
@@ -39,7 +29,7 @@ gatsby develop
 You should now have two routes up and running:
 
 - `http://localhost:8000/`, this is where your app is rendered
-- `http://localhost:8000/___graphql`, this is where the built-in data graph is displayed through a visual tool called GraphiQL
+- `http://localhost:8000/___graphql`, this is where the built-in data graph is displayed through a visual tool called GraphiQL.
 
 ### Construct a query
 
@@ -49,7 +39,7 @@ Go to `http://localhost:8000/___graphql` in your browser so you can get help cre
 
 In the above image, you have the `Explorer` section to the left, you are able to drill down into our Graph until you find the data we need. In the  middle section, you can see how the query is written for you as you do selections on the left. On the right, you see the result of running the query. You can run the query by clicking the *play* button in the middle section.
 
-Make a note of the constructed query:
+Select the following constructed query from the middle section:
 
 ```bash
 site {
@@ -61,7 +51,9 @@ site {
 }
 ```
 
-Let's now return back to our editor and add the file `about.js` in the `pages/` directory. Change its content to the following code:
+Copy it to the clip board.
+
+Return back to the editor and locate the file `about.js` in the `pages/` directory. Change its content to the following code:
 
 ```jsx
 import React from 'react';

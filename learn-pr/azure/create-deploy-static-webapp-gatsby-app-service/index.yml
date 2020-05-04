@@ -25,7 +25,7 @@ products:
 prerequisites: |
   - React.js, beginner familiarity.
   - Git, Installation and basic operating familiarity.
-  - VS Code, Installation and basic operating familiarity.
+  - Basic familiarity with text editor of user's choice
   - Command line familiarity.
   - Web Dev knowledge, beginner.
   - Beginner React familiarity.

@@ -5,6 +5,11 @@ Up to this point we have focused on authoring our Gatsby app using React, GraphQ
 
 Gatsby's command-line tool provides a command to *build* your project to create something that you can deploy anywhere you like. The *production build* consists of HTML, JavaScript, CSS, and any additional assets you've included. This *production build* is the result of your Gatsby project being compiled and optimized and having JavaScript and CSS put into optimized bundles by Gatsby and the underlying React compiler.
 
+```
+Be a little more explicit about what "compiled" means - all the queries are run (and what else) to build a set of static files.
+You call out production build a few times - is there another kind of build? What's the difference?
+```
+
 ## Deploy it
 
 There are many ways you could be deploying your built app. After all it's just HTML, CSS and JavaScript and can be hosted by most web services out there.

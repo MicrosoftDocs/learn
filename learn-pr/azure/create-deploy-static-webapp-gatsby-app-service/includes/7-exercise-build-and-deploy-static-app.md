@@ -25,7 +25,7 @@ You should now see the following content rendered:
 
 :::image type="content" source="../media/gatsby-built-site.png" alt-text="Our built app":::
 
-Congrats, you managed to build your site and you took it from being a Gatsby app to an app containing nothing but HTML, CSS, and JavaScript!
+You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 
 Going into your `build/` directory now locate your rendered `about` component at `build/about/index.html`. Because of an optimization process, all whitespace have been removed and the page is represented as one long line. However you should be able to locate the rendered title and description and it should look like this:
 
@@ -148,8 +148,8 @@ Next, add configuration details specific to your preferred front-end framework.
 
 | Setting                 | Value                |
 | ----------------------- | -------------------- |
-| _App location_          |                      |
-| _Api location_          |                      |
+| _App location_          |  *Leave blank*       |
+| _Api location_          |  *Leave blank*       |
 | _App artifact location_ | **build**            |
 
 Click the **Review + create** button
@@ -160,7 +160,6 @@ Continue to create the application.
 
 1. Click the **Create** button
 1. Once the deployment is complete, click the **Go to resource** button
-
 
 ### Review the GitHub Action
 
