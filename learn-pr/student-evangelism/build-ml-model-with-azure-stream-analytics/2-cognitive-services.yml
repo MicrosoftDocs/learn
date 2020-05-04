@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-ml-model-with-azure-stream-analytics.2-cognitive-services
-title: Exercise - Train a machine-learning model to recognize polar bears
+title: Exercise - Train a machine learning model to recognize polar bears
 metadata:
-  title: Exercise - Train a machine-learning model to recognize polar bears
-  description: Use Azure's Custom Vision Service to train a machine-learning model to recognize polar bears
+  title: Exercise - Train a machine learning model to recognize polar bears
+  description: Use Azure's Custom Vision Service to train a machine learning model to recognize polar bears
   ms.date: 05/08/2020
   author: shanamatthews
   ms.author: shanama
