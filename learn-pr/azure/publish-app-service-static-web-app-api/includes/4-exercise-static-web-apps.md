@@ -56,14 +56,24 @@ Before publishing your app, create routing rules that include a fallback route.
 
 ::: zone pivot="angular"
 
-### Configure Angular to copy routes.json to the artifact location
+### Configure Angular
 
 1. In Visual Studio Code, open the file _angular-app/angular.json_
-1. Go to the property at **projects** > **angular-app** > **architect** > **build** > **options** > **assets**
-1. Change the `assets` array to include the _src/routes.json_ file, as shown below:
+1. Go to the property at:
+
+   ```bash
+    projects
+     | - angular-app
+       | - architect
+        | - build
+          | - options
+            | - assets
+   ```
+
+1. Extend the `assets` array to include the _src/routes.json_ file:
 
    ```json
-   "assets": ["src/favicon.ico", "src/assets", "src/routes.json"],
+   "assets": ["src/routes.json", "src/favicon.ico", "src/assets"],
    ```
 
 Now Angular will copy the _routes.json_ file to your artifact location when your app builds.
