@@ -17,7 +17,7 @@ The output is:
 
 > [!div class="alert is-tip"]
 > Output
->
+
 > |  | NDB_No | FoodGroup |
 > | --- | --- | --- |
 > | 0 | 1001 | Dairy and Egg Products |
@@ -69,7 +69,7 @@ The output is:
 
 > [!div class="alert is-tip"]
 > Output
->
+
 > |  | Alpha_Carot_(ï¿½g) | Ash_(g) | Beta_Carot_(ï¿½g) | Beta_Crypt_(ï¿½g) | Calcium_(mg) | Carbohydrt_(g) | Cholestrl_(mg) | Choline_Tot_ (mg) | Copper_mg) | Energ_Kcal | ... | Vit_A_RAE | Vit_B12_(ï¿½g) | Vit_B6_(mg) | Vit_C_(mg) | Vit_D_IU | Vit_D_ï¿½g | Vit_E_(mg) | Vit_K_(ï¿½g) | Water_(g) | Zinc_(mg) |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 > | 0 | 0.0 | 2.11 | 158.0 | 0.0 | 24.0 | 0.06 | 215.0 | 18.8 | 0.000 | 717.0 | ... | 684.0 | 0.17 | 0.003 | 0.0 | 0.0 | 0.0 | 2.32 | 7.0 | 15.87 | 0.09 |
@@ -90,7 +90,7 @@ The output is:
 
 > [!div class="alert is-tip"]
 > Output
->
+
 > |  | Alpha_Carot_(ï¿½g) | Ash_(g) | Beta_Carot_(ï¿½g) | Beta_Crypt_(ï¿½g) | Calcium_(mg) | Carbohydrt_(g) | Cholestrl_(mg) | Choline_Tot_ (mg) | Copper_mg) | Energ_Kcal | ... | Vit_A_RAE | Vit_B12_(ï¿½g) | Vit_B6_(mg) | Vit_C_(mg) | Vit_D_IU | Vit_D_ï¿½g | Vit_E_(mg) | Vit_K_(ï¿½g) | Water_(g) | Zinc_(mg) |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 > | 8984 | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |

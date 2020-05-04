@@ -118,7 +118,7 @@ The output is:
 
 > [!div class="alert is-tip"]
 > Output
->
+
 > |  | NDB_No | Alpha_Carot_(ï¿½g) | Beta_Carot_(ï¿½g) | Beta_Crypt_(ï¿½g) | Lycopene_(ï¿½g) | Lut+Zea_ (ï¿½g) | Vit_E_(mg) | Vit_D_ï¿½g | Vit_D_IU | Vit_K_(ï¿½g) | FA_Sat_(g) | FA_Mono_(g) | FA_Poly_(g) | Cholestrl_(mg) | GmWt_1 | GmWt_Desc1 | GmWt_2 | GmWt_Desc2 | Refuse_Pct |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 > | 8790 | 1001 | 0.0 | 158.0 | 0.0 | 0.0 | 0.0 | 2.32 | 0.0 | 0.0 | 7.0 | 51.368 | 21.021 | 3.043 | 215.0 | 5.00 | 1 pat, (1" sq, 1/3" high) | 14.2 | 1 tbsp | 0.0 |
@@ -172,7 +172,7 @@ The output is:
 
 > [!div class="alert is-tip"]
 > Output
->
+
 > |  | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | Sugar_Tot_(g) | ... | Vit_B6_(mg) | Folate_Tot_(ï¿½g) | Folic_Acid_(ï¿½g) | Food_Folate_(ï¿½g) | Folate_DFE_(ï¿½g) | Choline_Tot_ (mg) | Vit_B12_(ï¿½g) | Vit_A_IU | Vit_A_RAE | Retinol_(ï¿½g) |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 > | 8790 | 1001 | BUTTER,WITH SALT | 15.87 | 717 | 0.85 | 81.11 | 2.11 | 0.06 | 0.0 | 0.06 | ... | 0.003 | 3.0 | 0.0 | 3.0 | 3.0 | 18.8 | 0.17 | 2499.0 | 684.0 | 671.0 |
@@ -194,7 +194,7 @@ The output is:
 
 > [!div class="alert is-tip"]
 > Output
->
+
 > |  | index | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | ... | Vit_B6_(mg) | Folate_Tot_(ï¿½g) | Folic_Acid_(ï¿½g) | Food_Folate_(ï¿½g) | Folate_DFE_(ï¿½g) | Choline_Tot_ (mg) | Vit_B12_(ï¿½g) | Vit_A_IU | Vit_A_RAE | Retinol_(ï¿½g) |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 > | 0 | 8790 | 1001 | BUTTER,WITH SALT | 15.87 | 717 | 0.85 | 81.11 | 2.11 | 0.06 | 0.0 | ... | 0.003 | 3.0 | 0.0 | 3.0 | 3.0 | 18.8 | 0.17 | 2499.0 | 684.0 | 671.0 |
@@ -217,7 +217,7 @@ The output is:
 
 > [!div class="alert is-tip"]
 > Output
->
+
 > |  | NDB_No | Shrt_Desc | Water_(g) | Energ_Kcal | Protein_(g) | Lipid_Tot_(g) | Ash_(g) | Carbohydrt_(g) | Fiber_TD_(g) | Sugar_Tot_(g) | ... | Vit_B6_(mg) | Folate_Tot_(ï¿½g) | Folic_Acid_(ï¿½g) | Food_Folate_(ï¿½g) | Folate_DFE_(ï¿½g) | Choline_Tot_ (mg) | Vit_B12_(ï¿½g) | Vit_A_IU | Vit_A_RAE | Retinol_(ï¿½g) |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 > | 0 | 1001 | BUTTER,WITH SALT | 15.87 | 717 | 0.85 | 81.11 | 2.11 | 0.06 | 0.0 | 0.06 | ... | 0.003 | 3.0 | 0.0 | 3.0 | 3.0 | 18.8 | 0.17 | 2499.0 | 684.0 | 671.0 |
@@ -239,7 +239,7 @@ The output is:
 
 > [!div class="alert is-tip"]
 > Output
->
+
 > |  | NDB_No | Alpha_Carot_(ï¿½g) | Beta_Carot_(ï¿½g) | Beta_Crypt_(ï¿½g) | Lycopene_(ï¿½g) | Lut+Zea_ (ï¿½g) | Vit_E_(mg) | Vit_D_ï¿½g | Vit_D_IU | Vit_K_(ï¿½g) | FA_Sat_(g) | FA_Mono_(g) | FA_Poly_(g) | Cholestrl_(mg) | GmWt_1 | GmWt_Desc1 | GmWt_2 | GmWt_Desc2 | Refuse_Pct |
 > | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 > | 0 | 1001 | 0.0 | 158.0 | 0.0 | 0.0 | 0.0 | 2.32 | 0.0 | 0.0 | 7.0 | 51.368 | 21.021 | 3.043 | 215.0 | 5.00 | 1 pat, (1" sq, 1/3" high) | 14.2 | 1 tbsp | 0.0 |
