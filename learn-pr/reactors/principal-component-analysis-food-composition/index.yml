@@ -36,7 +36,6 @@ units:
 - learn.reactors.principal-component-analysis-food-composition.2-pca-theory-download-data
 - learn.reactors.principal-component-analysis-food-composition.3-clean-data
 - learn.reactors.principal-component-analysis-food-composition.4-normalize-data
-- learn.reactors.principal-component-analysis-food-composition.5-normalize-data
 - learn.reactors.principal-component-analysis-food-composition.5-practice-pca
 - learn.reactors.principal-component-analysis-food-composition.6-interpret-results
 badge:
