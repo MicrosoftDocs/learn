@@ -1,4 +1,4 @@
-Azure Cognitive Services is a suite of more than 20 services and APIs backed by machine learning that enables developers to incorporate intelligent features such as facial recognition and sentiment analysis into their applications. Custom Vision Serviceis one member of the Cognitive Services family. Its purpose is to create image-classification models that "learn" from labeled images you provide. Want to know if a photo contains a picture of a flower? Train the Custom Vision Service with a collection of flower images, and it can tell you whether the next image includes a flower — or even what type of flower it is.
+Azure Cognitive Services is a suite of more than 20 services and APIs backed by machine learning that enables developers to incorporate intelligent features such as facial recognition and sentiment analysis into their applications. Custom Vision Service is one member of the Cognitive Services family. Its purpose is to create image-classification models that "learn" from labeled images you provide. Want to know if a photo contains a picture of a flower? Train the Custom Vision Service with a collection of flower images, and it can tell you whether the next image includes a flower — or even what type of flower it is.
 
 ![Custom Vision Service](../media/custom-vision.jpg)
 
@@ -10,7 +10,7 @@ In this unit, you will create a Custom Vision Service model and train it to diff
 
 You will begin by creating a new Custom Vision Service project. Then you will upload images of polar bears, Arctic foxes, and walruses and tag the images so the Custom Vision Service can learn to differentiate between them.
 
-1. Open the [Custom Vision Service portal](https://www.customvision.ai/) in your browser. Then click **Sign In** and sign in with your Microsoft account. Accept any terms of service if needed.
+1. Open the [Custom Vision Service portal](https://www.customvision.ai/?azure-portal=true) in your browser. Then click **Sign In** and sign in with your Microsoft account. Accept any terms of service if needed.
 
 1. Click **+ NEW PROJECT** to display the "Create new project" dialog. Enter a project name and click **create new** to create a new Cognitive Services resource. Name the resource "polar-bear-vision" and place it in the "polar-bear-rg" resource group. Make sure the location is set to **South Central US**, and then click **Create resource**.
 
@@ -58,7 +58,7 @@ Now it's time to train the model using the images that you tagged and uploaded. 
 
     _Results of training the model_
 
-    **Precision** and **recall** are separate but related  measures of the model's accuracy. Suppose the model was presented with three polar-bear images and three walrus images, and that it correctly identified two of the polar-bear images as polar-bear images, but incorrectly identified two of the walrus images as polar-bear images. In this case, the precision would be 50% (two of the four images it classified as polar-bear images actually are polar-bear images), while its recall would be 67% (it correctly identified two of the three polar-bear images as polar-bear images). You can learn more about precision and recall from https://en.wikipedia.org/wiki/Precision_and_recall.
+    **Precision** and **recall** are separate but related  measures of the model's accuracy. Suppose the model was presented with three polar-bear images and three walrus images, and that it correctly identified two of the polar-bear images as polar-bear images, but incorrectly identified two of the walrus images as polar-bear images. In this case, the precision would be 50% (two of the four images it classified as polar-bear images actually are polar-bear images), while its recall would be 67% (it correctly identified two of the three polar-bear images as polar-bear images). You can learn more about precision and recall from <https://en.wikipedia.org/wiki/Precision_and_recall>.
 
     **AP**, short for *Average Precision*, is a third measurement of the model's accuracy. Whereas precision measures the false-positive rate and recall measures the false-negative rate, AP is a mean of false-positive rates computed across a range of thresholds. For more information, see [Understanding the mAP Evaluation Metric for Object Detection](https://medium.com/@timothycarlen/understanding-the-map-evaluation-metric-for-object-detection-a07fe6962cf3).
 

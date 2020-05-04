@@ -272,7 +272,7 @@ The next task is to create a Node.js app that simulates an array of motion-activ
 
 1. Let **run.js** run until three or more blobs have been uploaded. Then return to the Command Prompt or terminal window in which **run.js** is running and press **Ctrl+C** to stop it.
 
-1. Return to the [Azure portal](https://portal.azure.com) in your browser. Open the storage account that you created in the previous exercise, and then open the "photos" container. Confirm that it contains several **.jpg** images as shown below.
+1. Return to the Azure portal in your browser. Open the storage account that you created in the previous exercise, and then open the "photos" container. Confirm that it contains several **.jpg** images as shown below.
 
     ![Images uploaded to the "photos" container](../media/uploaded-images.png)
 
