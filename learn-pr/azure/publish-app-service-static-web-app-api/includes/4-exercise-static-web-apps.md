@@ -12,7 +12,30 @@ The first step is to connect to an Azure sandbox. You can create the Azure Stati
 
 Before publishing your app, create routing rules that include a fallback route.
 
+::: zone pivot="angular"
+
+1. In Visual Studio Code, right-click the folder _dist/angular-app_
+
+::: zone-end
+
+::: zone pivot="react"
+
+1. In Visual Studio Code, right-click the folder _build_
+
+::: zone-end
+
+::: zone pivot="svelte"
+
 1. In Visual Studio Code, right-click the folder _public_
+
+::: zone-end
+
+::: zone pivot="vue"
+
+1. In Visual Studio Code, right-click the folder _dist_
+
+::: zone-end
+
 1. Select **New File**
 1. Type _routes.json_ and press **ENTER**
 1. Update the _routes.json_ file to include the following fallback route:
