@@ -1,6 +1,6 @@
-One of the first things you will find yourself doing with most datasets is computing the summary statistics for the data in order to get a general overview of your data before exploring it further. These summary statistics include the mean and standard deviation, in addition to other aggregates, such as the sum, product, median, minimum and maximum, or quantiles of the data.
+One of the first things you'll find yourself doing with most datasets is computing the summary statistics for the data to get a general overview of your data before exploring it further. These summary statistics include the mean and standard deviation, in addition to other aggregates, like the sum, product, median, minimum and maximum, and quantiles of the data.
 
-NumPy has fast built-in aggregation functions for working on arrays that are the subject of this sub-section.
+NumPy has fast built-in aggregation functions for working on arrays that are the subject of this subsection.
 
 ## Summing the values of an array
 
@@ -21,7 +21,7 @@ The output is:
 50.461758453195614
 ```
 
-If you guessed that there is also a built-in NumPy function for this, you guessed correctly:
+If you guessed that there's also a built-in NumPy function for this, you guessed correctly:
 
 ```python
 np.sum(myList)
@@ -48,7 +48,7 @@ The output is:
 814 µs ± 74.4 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 ```
 
-For all their similarity, bear in mind that `sum` and `np.sum` are not identical; their optional arguments have different meanings, and `np.sum` is aware of multiple array dimensions.
+For all their similarity, keep in mind that `sum` and `np.sum` aren't identical. Their optional arguments have different meanings, and `np.sum` is aware of multiple array dimensions.
 
 ## Minimum and maximum
 
@@ -78,7 +78,7 @@ The output is:
 
 ## Multidimensional aggregates
 
-Because you will often treat the rows and columns of two-dimensional arrays differently (treating columns as variables and rows as observations of those variables, for example), it can often be desirable to aggregate array data along a row or column. Let's consider a two-dimensional array:
+You'll often treat the rows and columns of two-dimensional arrays differently (treating columns as variables and rows as observations of those variables, for example). So it can often be desirable to aggregate array data along a row or column. Consider a two-dimensional array:
 
 ```python
 md = np.random.random((3, 4))
@@ -93,7 +93,7 @@ The output is:
  [0.37578601 0.11936151 0.37497044 0.22944653]]
 ```
 
-Unless you specify otherwise, each NumPy aggregation function will compute the aggregate for the entire array. Hence:
+Unless you specify otherwise, each NumPy aggregation function will compute the aggregate for the entire array. So, for:
 
 ```python
 md.sum()
@@ -105,7 +105,7 @@ The output is:
 5.1136763453287335
 ```
 
-Aggregation functions take an additional argument specifying the *axis* along which to compute the aggregation. For example, we can find the minimum value within each column by specifying `axis=0`:
+Aggregation functions take an additional argument that specifies the *axis* along which to compute the aggregation. For example, we can find the minimum value within each column by specifying `axis=0`:
 
 ```python
 md.min(axis=0)
@@ -143,13 +143,13 @@ What do you get when you try `md.max(axis=1)`?
 
 ***
 
-Remember that the `axis` keyword specifies the *dimension of the array that is to be collapsed*, not the dimension that will be returned. Thus specifying `axis=0` means that the first axis will be the one collapsed: for two-dimensional arrays, this means that values within each column will be aggregated.
+Remember that the `axis` keyword specifies the *dimension of the array that's to be collapsed*, not the dimension that will be returned. So if you specify `axis=0`, the first axis will be collapsed. For two-dimensional arrays, this means that values within each column will be aggregated.
 
 ## Other aggregation functions
 
-The table below lists other aggregation functions in NumPy. Most NumPy aggregates have a '`NaN`-safe' version, which computes the result while ignoring missing values marked by the `NaN` value.
+This table lists other aggregation functions in NumPy. Most NumPy aggregates have a "`NaN`-safe" version, which computes the result while it ignores missing values marked by the `NaN` value.
 
-| Function Name | NaN-safe Version | Description |
+| Function name | NaN-safe version | Description |
 | --- | --- | --- |
 | `np.sum` | `np.nansum` | Compute sum of elements |
 | `np.prod` | `np.nanprod` | Compute product of elements |
@@ -162,12 +162,12 @@ The table below lists other aggregation functions in NumPy. Most NumPy aggregate
 | `np.argmax` | `np.nanargmax` | Find index of maximum value |
 | `np.median` | `np.nanmedian` | Compute median of elements |
 | `np.percentile` | `np.nanpercentile` | Compute rank-based statistics of elements |
-| `np.any` | N/A | Evaluate whether any elements are true |
-| `np.all` | N/A | Evaluate whether all elements are true |
+| `np.any` | Not applicable | Evaluate whether any elements are true |
+| `np.all` | Not applicable | Evaluate whether all elements are true |
 
-We will see these aggregates often throughout the rest of the course.
+We'll see these aggregates often in the rest of this course.
 
 >[!div class="alert is-tip"]
 >### Takeaway
 >
->Aggregation is the primary means you will use to explore you data, not just when using NumPy, but particularly in conjunction with pandas, the Python library you will learn about in the next section, which builds off of NumPy and thus off of everything you have learned thus far.
+>Aggregation is the main method you'll use to explore you data, not just when you use NumPy, but particularly in conjunction with pandas, the Python library you'll learn about in the next section. That section builds off of NumPy and therefore off of everything you've learned so far.

@@ -1,6 +1,6 @@
-So far we have just worried about accessing and modifying NumPy arrays. Another huge thing you will need to do as a data scientist is sort array data. Sorting is often an important means of teasing out the structure in data (such as outlying data points).
+So far, we've just accessed and modified NumPy arrays. As a data scientist, you'll also need to know how to sort array data. Sorting is often an important means of teasing out the structure in data (like outlying data points).
 
-Although you could use Python's built-in `sort` and `sorted` functions, they will not work nearly as efficiently as NumPy's `np.sort` function.
+You could use Python's built-in `sort` and `sorted` functions, but they won't work nearly as efficiently as NumPy's `np.sort` function.
 
 `np.sort` returns a sorted version of an array without modifying the input:
 
@@ -15,7 +15,7 @@ The output is:
 array([1, 2, 3, 4, 5])
 ```
 
-In order to sort the array in-place, use the `sort` method directly on arrays:
+To sort the array in-place, use the `sort` method directly on arrays:
 
 ```python
 a.sort()
@@ -56,7 +56,7 @@ array([1, 2, 3, 4, 5])
 
 ## Sorting along rows or columns
 
-A useful feature of NumPy's sorting algorithms is the ability to sort along specific rows or columns of a multidimensional array using the `axis` argument. For example:
+A useful feature of NumPy's sorting algorithms is the ability to sort along specific rows or columns of a multidimensional array by using the `axis` argument. For example:
 
 ```python
 rand = np.random.RandomState(42)
@@ -103,11 +103,11 @@ array([[3, 4, 6, 6, 7, 9],
        [0, 1, 4, 5, 5, 9]])
 ```
 
-Bear in mind that this treats each row or column as an independent array; any relationships between the row or column values will be lost doing this kind of sorting.
+Keep in mind that this method treats each row or column as an independent array. Any relationships between the row or column values will be lost when you do this kind of sorting.
 
-## Partial sorting: partitioning
+## Partial sorting: Partitioning
 
-Sometimes you don't need to sort an entire array, you just need to find the *k* smallest values in the array (often when looking at the distance of data points from one another). NumPy supplies this functionality through the `np.partition` function. `np.partition` takes an array and a number *k*; the result is a new array with the smallest *k* values to the left of the partition, and the remaining values to the right (in arbitrary order):
+Sometimes you don't need to sort an entire array. Sometimes you just need to find the *k* smallest values in the array (often when you're looking at the distance of data points from one another). NumPy supplies this functionality through the `np.partition` function. `np.partition` takes an array and a number *k*. The result is a new array with the smallest *k* values to the left of the partition and the remaining values to the right (in arbitrary order):
 
 ```python
 arr = np.array([7, 2, 3, 1, 6, 5, 4])
@@ -120,7 +120,7 @@ The output is:
 array([2, 1, 3, 4, 6, 5, 7])
 ```
 
-Note that the first three values in the resulting array are the three smallest in the array, and the remaining array positions contain the remaining values. Within the two partitions, the elements have arbitrary order.
+Note that the first three values in the resulting array are the three smallest in the array, and the remaining array positions contain the remaining values. Within the two partitions, the elements have an arbitrary order.
 
 Similarly to sorting, we can partition along an arbitrary axis of a multidimensional array:
 
@@ -137,11 +137,11 @@ array([[3, 4, 6, 7, 6, 9],
        [0, 1, 4, 5, 9, 5]])
 ```
 
-The result is an array where the first two slots in each row contain the smallest values from that row, with the remaining values filling the remaining slots.
+The result is an array where the first two slots in each row contain the smallest values from that row. The remaining values fill the remaining slots.
 
-Finally, just as there is an `np.argsort` that computes indices of the sort, there is an `np.argpartition` that computes indices of the partition. We'll see this in action in the following section when we discuss pandas.
+Finally, just as there's an `np.argsort` that computes indices of the sort, there's an `np.argpartition` that computes indices of the partition. We'll see this in action in the following section when we discuss pandas.
 
 >[!div class="alert is-tip"]
 >### Takeaway
 >
->Sorting your data is a fundamental means of exploring it and answering questions about it. The sorting algorithms in NumPy provide you with a fast, computationally efficient way of doing this on large amounts of data and with fine-grain control.
+>Sorting your data is a fundamental way to explore it and answer questions about it. The sorting algorithms in NumPy provide a fast, computationally efficient way of sorting large amounts of data with fine-grained control.

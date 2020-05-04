@@ -1,6 +1,6 @@
-Another means of vectorizing operations is to use NumPy's *broadcasting* functionality: creating rules for applying binary ufuncs like addition, subtraction, or multiplication on arrays of different sizes.
+Another way to vectorize operations is to use NumPy's *broadcasting* functionality: creating rules for applying binary ufuncs like addition, subtraction, or multiplication on arrays of different sizes.
 
-Before, when we performed binary operations on arrays of the same size, those operations were performed on an element-by-element basis.
+Earlier, when we performed binary operations on arrays of the same size, those operations were performed on an element-by-element basis.
 
 ```python
 first_array = np.array([3, 6, 8, 1])
@@ -14,7 +14,7 @@ The output is:
 array([ 7, 11, 15,  3])
 ```
 
-Broadcasting enables you to perform these types of binary operations on arrays of different sizes. Thus, you could just as easily add a scalar (which is really just a zero-dimensional array) to an array:
+Broadcasting enables you to perform these types of binary operations on arrays of different sizes. So you could just as easily add a scalar (which is really just a zero-dimensional array) to an array:
 
 ```python
 first_array + 5
@@ -53,7 +53,7 @@ array([[1., 1.],
        [1., 1.]])
 ```
 
-Next try:
+Next, try:
 
 ```python
 one_dim_array + two_dim_array
@@ -101,13 +101,13 @@ array([[0, 1, 2],
 
 ## Rules of broadcasting
 
-Broadcasting follows a set of rules to determine the interaction between the two arrays:
+Broadcasting follows a set of rules to determine the interaction between two arrays:
 
 - **Rule 1**: If the two arrays differ in their number of dimensions, the shape of the one with fewer dimensions is *padded* with ones on its leading (left) side.
-- **Rule 2**: If the shape of the two arrays does not match in any dimension, the array with shape equal to 1 in that dimension is stretched to match the other shape.
+- **Rule 2**: If the shape of the two arrays doesn't match in any dimension, the array with shape equal to 1 in that dimension is stretched to match the other shape.
 - **Rule 3**: If, in any dimension, the sizes disagree and neither is equal to 1, NumPy raises an error.
 
-Let's see these rules in action to better understand them.
+Let's see these rules in action to help you better understand them.
 
 ### Broadcasting example 1
 
@@ -118,17 +118,17 @@ two_dim_array = np.ones((2, 3))
 one_dim_array = np.arange(3)
 ```
 
-Let's consider an operation on these two arrays. The shape of the arrays are:
+Consider an operation on these two arrays. The shape of the arrays are:
 
 - `two_dim_array.shape = (2, 3)`
 - `one_dim_array.shape = (3,)`
 
-We see by rule 1 that the array `one_dim_array` has fewer dimensions, so we pad it on the left with ones:
+The array `one_dim_array` has fewer dimensions. Based on rule 1, we pad it on the left with ones:
 
 - `two_dim_array.shape -> (2, 3)`
 - `one_dim_array.shape -> (1, 3)`
 
-By rule 2, we now see that the first dimension disagrees, so we stretch this dimension to match:
+We now see that the first dimension disagrees. Based on rule 2, we stretch this dimension to match:
 
 - `two_dim_array.shape -> (2, 3)`
 - `one_dim_array.shape -> (2, 3)`
@@ -195,7 +195,7 @@ What do you get?
 
 ### Broadcasting example 2
 
-Let's examine what happens when both arrays need to be broadcast:
+Let's look at what happens when both arrays need to be broadcast:
 
 ```python
 vertical_array = np.arange(3).reshape((3, 1))
@@ -207,12 +207,12 @@ Again, we'll start by writing out the shape of the arrays:
 - `vertical_array.shape = (3, 1)`
 - `horizontal_array.shape = (3,)`
 
-Rule 1 says we must pad the shape of `horizontal_array` with ones:
+Based on rule 1, we need to pad the shape of `horizontal_array` with ones:
 
 - `vertical_array.shape -> (3, 1)`
 - `horizontal_array.shape -> (1, 3)`
 
-And rule 2 tells us that we upgrade each of these ones to match the corresponding size of the other array:
+Based on rule 2, we upgrade each of these ones to match the corresponding size of the other array:
 
 - `vertical_array.shape -> (3, 3)`
 - `horizontal_array.shape -> (3, 3)`
@@ -240,7 +240,7 @@ M = np.ones((3, 2))
 i = np.arange(3)
 ```
 
-This is just a slightly different situation than in the first example: the matrix `M` is transposed. How does this affect the calculation? The shape of the arrays are:
+This situation is just slightly different from the situation in the first example: the matrix `M` is transposed. How does this affect the calculation? The shapes of the arrays are:
 
 - `M.shape = (3, 2)`
 - `i.shape = (3,)`
