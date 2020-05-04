@@ -17,7 +17,7 @@ abstract: |
   - The process of programming and the software tools you must install.
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-introduction.svg
 levels:
 - beginner
 roles:

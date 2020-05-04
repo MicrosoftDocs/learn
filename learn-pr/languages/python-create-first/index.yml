@@ -24,7 +24,7 @@ prerequisites: |
   - Visual Studio Code installed
   - Python tools for Visual Studio Code installed, as well as all recommended tools, such as Pylint
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-create-first.svg
 levels:
 - beginner
 roles:
