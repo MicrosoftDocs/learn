@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-introduction.2-azure-well-architected-pillars
 title: Azure Well-Architected pillars
 metadata:
   title: Azure Well-Architected pillars
-  description: Azure Well-Architected pillars
+  description: Learn about the five pillars in the Azure Well-Architected Framework.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -23,7 +23,7 @@ content: |
 #     - content: 'Enabling multi-factor authentication for all administrative accounts'
 #       isCorrect: true
 #       explanation: 'Enabling multi-factor authentication is a great example of something you might address as part of the security pillar.'
-#     - content: 'Evaluating your cloud spend to identify areas of cost savings'
+#     - content: 'Evaluating your cloud spending to identify areas of cost savings'
 #       isCorrect: false
 #       explanation: 'It is important to identify areas where you can reduce cost, but this does not fall within the security pillar.'
 #     - content: 'Moving to an autoscaling service to dynamically handle fluctuations in load'
