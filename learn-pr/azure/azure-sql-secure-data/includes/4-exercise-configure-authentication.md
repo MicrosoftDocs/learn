@@ -32,13 +32,13 @@ You might think that's it, but you still have to select **Save** to confirm your
 
 Now that you've configured access for yourself to your Azure SQL Database logical server, let's update the connection in SSMS and ADS.  
 
-First, in SSMS, right click on you Azure SQL Database logical server and select **Connect**.  
+First, in SSMS, right-click on your Azure SQL Database logical server and select **Connect**.  
 
 ![Connect to the database in SSMS](../media/dbconnect.png)  
 
 Notice that under *Authentication*, there are several different Azure Active Directory authentication methods, which will depend on how your organization is set up. There are three methods available. An overview of each is provided below, but the links in the titles will point you to additional details.  
 
-* [*Azure Active Directory - Integrated*](https://docs.microsoft.com/azure/sql-database/sql-database-aad-authentication-configure?tabs=azure-powershell#active-directory-integrated-authentication): A non-interactive method which you can use if you are logged in to Windows using your Azure AD credentials from a federated domain.  
+* [*Azure Active Directory - Integrated*](https://docs.microsoft.com/azure/sql-database/sql-database-aad-authentication-configure?tabs=azure-powershell#active-directory-integrated-authentication): A non-interactive method, which you can use if you are logged in to Windows using your Azure AD credentials from a federated domain.  
 * [*Azure Active Directory - Password*](https://docs.microsoft.com/azure/sql-database/sql-database-aad-authentication-configure?tabs=azure-powershell#active-directory-password-authentication): A non-interactive method that allows you to connect with an Azure AD principal name using the Azure AD managed domain. From the documentation: *This can apply to native or federated Azure AD users. A native user is one explicitly created in Azure AD and being authenticated using user name and password, while a federated user is a Windows user whose domain is federated with Azure AD. The latter method (using user & password) can be used when a user wants to use their windows credential, but their local machine is not joined with the domain (for example, using a remote access). In this case, a Windows user can indicate their domain account and password and can authenticate to SQL DB/DW using federated credentials.*  
 * [*Azure Active Directory - Universal with MFA*](https://docs.microsoft.com/azure/sql-database/sql-database-ssms-mfa-authentication): An interactive method that will safeguard access to data while meeting demand for a single sign-in process with Multi-factor Authentication (MFA).
 
@@ -84,7 +84,7 @@ The best practice is to create non-admin accounts at the database level, unless 
 
 #### Step 4 - Contained database users  
 
-In SQL Server, you may be familiar with the concept of a contained database user. This means that a user has access to only specific database(s), but does not have a login to the server. In Azure SQL Database, you can create contained database users with SQL authentication or Azure AD authentication. You must be in the context of the user database you want to create user access in (as opposed to being in master). In Azure SQL Managed Intance, the T-SQL and behavior is the same as in SQL Server, and you can use the `USE DatabaseName` to switch contexts (which is not supported in Azure SQL Database). For detailed information on contained database users (in SQL Server and Azure), refer to the [documentation](https://docs.microsoft.com/sql/relational-databases/security/contained-database-users-making-your-database-portable?view=sql-server-ver15).  
+In SQL Server, you may be familiar with the concept of a contained database user. This means that a user has access to only specific database(s), but does not have a login to the server. In Azure SQL Database, you can create contained database users with SQL authentication or Azure AD authentication. You must be in the context of the user database you want to create user access in (as opposed to being in master). In Azure SQL Managed Instance, the T-SQL and behavior are the same as in SQL Server, and you can use the `USE DatabaseName` to switch contexts (which is not supported in Azure SQL Database). For detailed information on contained database users (in SQL Server and Azure), refer to the [documentation](https://docs.microsoft.com/sql/relational-databases/security/contained-database-users-making-your-database-portable?view=sql-server-ver15).  
 
 In this step, you'll create a contained database user using SQL authentication, and then attempt to authenticate to that database as the user.  
 
@@ -100,7 +100,7 @@ Now, select **Connect** > **Database Engine** and configure the main page so you
 
 Select **Connect** and confirm you're able to access the database.  
 
-As a clean up step, right-click on the connection from BobLovesTN and select **Disconnect**.  
+As a clean-up step, right-click on the connection from BobLovesTN and select **Disconnect**.  
 
 **Step 5 - Grant other users access (Azure AD) - *Demo/Whiteboard only***  
 

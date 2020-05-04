@@ -34,7 +34,7 @@ Switch **Allow Azure services and resources to access this serve**r to **No**. D
 
 ![Add your Client IP address](../media/clientip2.png)  
 
-Finally, select **Save**. You can select **Overview** in the left hand menu to navigate back to the overview of your database.  
+Finally, select **Save**. You can select **Overview** in the left-hand menu to navigate back to the overview of your database.  
 
 To confirm you still have access from your Azure VM, navigate to SSMS and refresh your connection to the Azure SQL Database logical server. If no errors occur, you have successfully configured access to your Azure SQL Database logical server for your IP address only.  
 
@@ -115,7 +115,7 @@ Next, remove your Client IP address by selecting the **...** next to the End IP 
 
 ![Delete your Client IP address](../media/deletecip.png)  
 
-Finally, select **Save** to apply your changes. You can select **Overview** in the left hand menu to navigate back to the overview of your database.  
+Finally, select **Save** to apply your changes. You can select **Overview** in the left-hand menu to navigate back to the overview of your database.  
 
 ![Select save button](../media/save.png)  
 
@@ -186,7 +186,7 @@ The important things to look at are under the Non-authoritative answer:
 
 * **Name**: The endpoint starting with `cr2` is part of the public DNS hierarchy. Without getting too much into the hierarchy, `cr2` is the Control Ring 2 and then there are multiple data "slices" below it.  
 * **Address**: The IP address returned here should match the public IP address of your Azure VM. So even though SSMS' final hop might be through your VM's private IP address, the public IP address of your VM is still being used to connect in some capacity.  
-* **Aliases**: These are just various point within the DNS hierarchy, in this case the specific data "slice" and the endpoint you connect to.  
+* **Aliases**: These are just various points within the DNS hierarchy, in this case the specific data "slice" and the endpoint you connect to.  
 
 > Fun fact: the **Address 168.63.129.16** is a virtual public IP address used to facilitate a communication channel to Azure platform resources. It's the case for all regions and all national clouds, and it will not change. You can read more about it in the [documentation](https://docs.microsoft.com/azure/virtual-network/what-is-ip-address-168-63-129-16).
 
@@ -220,7 +220,7 @@ In this section, you're asked to connect to the resource you want to set up the 
 
 > Note: If you were provided an environment for this workshop, be sure to select your assigned Azure SQL Database logical server.  
 
-![Private endpoint resource pane](../media/peresource.png)   
+![Private endpoint resource pane](../media/peresource.png)  
 
 Next, select **Next : Configuration**.  
 
@@ -256,17 +256,17 @@ In this step, you'll try to connect to the private endpoint. Using SSMS, right-c
 SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
 ```
 
-When you deployed Azure SQL Database in Module 2, you set up access for your Azure VM through it's public endpoint, and the public IP address of your Azure VM. This means you will connect to the database with the public IP address of your VM.  
+When you deployed Azure SQL Database in Module 2, you set up access for your Azure VM through its public endpoint, and the public IP address of your Azure VM. This means you will connect to the database with the public IP address of your VM.  
 
 By adding access from your specific VNet instead of the public IP address of your VM, connections to Azure SQL Database from your VM will appear to come through the private IP address of your VM. You will see the same result now that you've configured Private Link. So where are the differences?  
 
-Return to the command prompt window that you used in Step 0. If you have since closed this window, open a new command prompt. Run the following command, replacing the `<ID>` with your ID for the workshop. 
+Return to the command prompt window that you used in Step 0. If you have since closed this window, open a new command prompt. Run the following command, replacing the `<ID>` with your ID for the workshop.  
 
 ```cmd
 nslookup aw-server<ID>.database.windows.net  
 ```
 
-As you saw in Step 0, this command allows you to understand details related to the DNS infrastructure. However, your results will be slightly different now.Your results with Private Link should be similar to below: 
+As you saw in Step 0, this command allows you to understand details related to the DNS infrastructure. However, your results will be slightly different now. Your results with Private Link should be similar to below:  
 
 ```cmd
 Server: Unknown
