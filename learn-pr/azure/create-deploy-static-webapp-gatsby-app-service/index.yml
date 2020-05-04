@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.static-apps-gatsby
 metadata:
-  title: Introduction to Gatsby and deploying it on Static apps
-  description: Learn how to use Gatsby to develop a static web app but also how to deploy it on Static apps
+  title: Create and publish a static web app with Gatsby and Azure Static Web Apps
+  description: Use Gatsby to develop and compile a static web app, then deploy it to the web with Azure Static Web Apps.
   ms.date: 06/04/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Gatsby and Static apps
-summary: Learn how to use Gatsby to develop static apps but also deploy it on Static apps service
+title: Create and publish a static web app with Gatsby and Azure Static Web Apps
+summary: Use Gatsby to develop and compile a static web app, then deploy it to the web with Azure Static Web Apps.
 abstract: |
   In this module, you will:
   - Use Gatsby to create a static web app
@@ -21,7 +21,8 @@ levels:
 roles:
 - developer
 products:
-- vs
+- azure
+- azure-app-service
 prerequisites: |
   - React.js, beginner familiarity.
   - Git, Installation and basic operating familiarity.

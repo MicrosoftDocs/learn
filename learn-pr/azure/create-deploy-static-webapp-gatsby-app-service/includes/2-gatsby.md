@@ -18,18 +18,14 @@ How does Gatsby do this? In the pre-compilation phase, each plugin *scans* a sou
 
 ### Technologies used
 
-Gatsby has two core technologies that you need to know to a certain extent. Those technologies are:
+Gatsby relies on two core technologies:
 
-- `React.js`, You will use React to create components. You will be creating components to either support the building of pages or to build the pages themselves. Additionally you will also use components to build layouts
-- `GraphQL`, GraphQL is a query language used to query for your websites data but also for external data. It's possible to build a Gatsby site without it but it becomes so much easier if you do use it. GraphQL is a query language used for querying APIs. It's able to *negotiate* with the API exactly for what resources and columns it wants from the API. This solves many problems that exist currently with APIs like over-fetching or many round-trips extra to the server.
+- **React.js**: You will use React to create components. You will be creating components to either support the building of pages or to build the pages themselves. Additionally you will also use components to build layouts
+- **GraphQL**: GraphQL is a query language used to query for your websites data but also for external data. It's possible to build a Gatsby site without it but it becomes so much easier if you do use it. GraphQL is a query language used for querying APIs. It's able to *negotiate* with the API exactly for what resources and columns it wants from the API. This solves many problems that exist currently with APIs like over-fetching or many round-trips extra to the server.
 
-## Creating and working with a new Gatsby app
+## Installing and using Gatsby
 
-Before you are able to work with Gatsby command line tool, there are some prerequisites you need to fulfill. You need to install the below software:
-
-- Git, [Install Git, instructions per OS](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-- Node.js [Install Node.js](https://nodejs.org/en/download/).
-- Gatsby CLI, Once you've installed Node.js you can install the Gatsby CLI with this line `npm install -g gatsby-cli`.
+Gatsby is available via the `gatsby-cli` JavaScript package. It's best used by installing it once, globally, to your system with `npm install -g gatsby-cli`.
 
 These three commands will get you started working with a new Gatsby app:
 
@@ -60,5 +56,4 @@ export default HelloPage;
 ```
 
 Putting this into a file named `/pages/hello.js` will lead to a route being created at `/hello`. Browsing there will result in a page that displays the string `Hello` between two `div` tags.
-
 

@@ -66,8 +66,6 @@ Finally, add the code to the repository index and commit it.
 git add .
 git commit -m "adding Gatsby project"
 
-Above we are giving our commit a commit message with the `-m` flag. Adjust the message to fit your scenario.
-
 ### Create a GitHub repo and push the code
 
 1. Go to GitHub and log on. You should now be on a URL like so `https://github.com/<your username>?tab=repositories`
