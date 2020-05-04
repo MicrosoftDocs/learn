@@ -42,11 +42,11 @@ This tutorial provides four variations of the sample application for you to choo
 The starter code includes the four apps and the starting point for an API that you'll use.
 
 ```files
-|- angular-app 👈 The Angular client app
-|- api-starter 👈 The API starter app. You'll use this later
-|- react-app   👈 The React client app
-|- svelte-app  👈 The Svelte client app
-|- vue-app     👈 The Vue client app
+├ angular-app  👈 The Angular client app
+├ api-starter  👈 The API starter app. You'll use this later
+├ react-app    👈 The React client app
+├ svelte-app   👈 The Svelte client app
+└ vue-app      👈 The Vue client app
 ```
 
 ### What you'll do
