@@ -164,7 +164,7 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
-:::image type="content" source="../media/static-app-portal-finsihed.png" alt-text="Azure Static Web Apps overview page":::
+:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Azure Static Web Apps overview page":::
 
 
 :::image type="content" source="../media/gatsby-published.png" alt-text="Azure Static Web Apps overview page":::
