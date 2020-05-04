@@ -14,13 +14,13 @@ When a security breach occurs, there can be substantial impacts to the finances 
 
 A multilayered approach to securing your environment will increase the security posture of your environment. Commonly known as _defense in depth_, we can break down the layers as follows:
 
-* Data
-* Applications
-* VM/compute
-* Networking
-* Perimeter
-* Policies & access
-* Physical security
+- Data
+- Applications
+- VM/compute
+- Networking
+- Perimeter
+- Policies & access
+- Physical security
 
 Each layer focuses on a different area where attacks can happen and creates a depth of protection, should one layer fail or be bypassed by an attacker. If we were to focus on just one layer, an attacker would have unfettered access to your environment should they get through this layer. Addressing security in layers increases the work an attacker must do to gain access to your systems and data. Each layer will have different security controls, technologies, and capabilities that will apply. When identifying the protections to put in place, cost will often be of concern, and will need to be balanced with business requirements and overall risk to the business.
 

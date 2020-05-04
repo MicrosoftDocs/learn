@@ -2,8 +2,6 @@ Your organization has moved a majority of their systems to the cloud, but you're
 
 In this unit, you'll learn about cost optimization, and you'll look at some ways to reduce unnecessary expenses and improve operational efficiencies.
 
-<!-- TODO: FYI - "eliminate waste" sounded like, well... a lavatory. -->
-
 ## What is cost optimization?
 
 Cost optimization is ensuring that the money your organization spends is being used to maximum effect. Cloud services provide computing as a utility. Technologies in the cloud are provided under a service model, to be consumed on demand. This on-demand service offering drives a fundamental change that directly impacts planning, bookkeeping, and organization.
@@ -32,9 +30,7 @@ If you're not monitoring your spending, you don't know what you can save. Take a
 
 ### Maximize efficiency of cloud spend
 
-Efficiency is focused on identifying and eliminating unnecessary expenses within your environment. The cloud is a pay-as-you-go service, and avoidable expenses are typically the result of provisioning more capacity than your demand requires. There are operational costs that go along with this as well. These operational costs show up as wasted time and increased error. Focusing on these as you design your architecture will help you identify and eliminate waste across your environment.
-
-<!-- TODO: What does "this" indicate in "go along with this as well?" What does "these" refer to in "Focusing on these?" I assume "operational costs," but it's unclear; I think "principles" sounds good, too. -->
+Efficiency is focused on identifying and eliminating unnecessary expenses within your environment. The cloud is a pay-as-you-go service, and avoidable expenses are typically the result of provisioning more capacity than your demand requires. Operational costs can also contribute to unnecessary or inefficient costs. These inefficient operational costs show up as wasted time and increased error. As you design your architecture, identify and eliminate waste across your environment.
 
 Waste can show up in several ways. Let's look at a few examples:
 

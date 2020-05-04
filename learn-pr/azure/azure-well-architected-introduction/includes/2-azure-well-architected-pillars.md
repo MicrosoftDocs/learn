@@ -1,6 +1,4 @@
-The cloud has changed the way organizations solve their business challenges, and how applications and systems are designed. The role of a solution architect is not only to deliver business value through the functional requirements of the application, but also to ensure the solution is designed in ways that are scalable, resilient, efficient, and secure. Solution architecture is concerned with the planning, design, implementation, and ongoing improvement of a technology system. The architecture of a system must balance and align the business requirements with the technical capabilities that are needed to execute those requirements. It includes an evaluation of risk, cost, and capability throughout the system and its components.
-
-<!-- TODO: What does "it" refer to at the beginning of that last sentence? The architecture? The system? The requirements? -->
+The cloud has changed the way organizations solve their business challenges, and how applications and systems are designed. The role of a solution architect is not only to deliver business value through the functional requirements of the application, but also to ensure the solution is designed in ways that are scalable, resilient, efficient, and secure. Solution architecture is concerned with the planning, design, implementation, and ongoing improvement of a technology system. The architecture of a system must balance and align the business requirements with the technical capabilities that are needed to execute those requirements. The end architecture is a balance of risk, cost, and capability throughout the system and its components.
 
 ## Azure Well-Architected framework
 
@@ -15,8 +13,6 @@ The Azure Well-Architected framework consists of five pillars:
 - Security
 
 ![An illustration showing the pillars of the Azure Well-Architected framework](../media/pillars.png)
-
-<!-- TODO: Note - nice use of graphics. -->
 
 ### Cost optimization
 
@@ -59,8 +55,6 @@ In addition to each of these pillars, there are some consistent design principle
 - **Educate and enable**: Cloud technology evolves quickly. Educate your development, operations, and business teams to help them make the right decisions and build solutions to solve business problems. Document and share configuration, decisions, and best practices within your organization.
 
 - **Automate**: Automation of manual activities reduces operational costs, minimizes error introduced by manual steps, and provides consistency between environments.
-
-<!-- TODO: Just a thought - doublespacing lists with wrap around text makes them easier to read. -->
 
 ## Shared responsibility
 

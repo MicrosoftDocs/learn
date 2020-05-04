@@ -20,8 +20,6 @@ Compute resources can be scaled in two different directions:
 
     ![An illustration showing scaling out by adding instances to increase performance.](../media/scale-out.png)
 
-<!-- TODO: I removed this image in favor of the separates images. ![An illustration showing scaling up and scaling out of a virtual machine to increase the performance capabilities.](../media/scale-up-scale-out.png) -->
-
 Scaling up is concerned with adding more resources, such as CPU or memory, to a single instance. This instance could be a virtual machine or a PaaS service. The act of adding more capacity to the instance increases the resources that are available to your application, but it does come with a limit. Virtual machines are limited to the capacity of the host they run on, and hosts themselves have physical limitations. Eventually, when you scale up an instance, you can run into these limits, which restrict your ability to add further resources to the instance.
 
 Scaling out is concerned with adding additional instances to a service. These can be virtual machines or PaaS services, but instead of adding more capacity by making a single instance more powerful, we add capacity by increasing the overall total number of instances. The advantage of scaling out is that you can conceivably scale out forever if you have more machines to add to the architecture. Scaling out requires some type of load distribution. This could be in the form of a load balancer distributing requests across available servers, or a service discovery mechanism for identifying active servers to send requests to.
@@ -34,9 +32,7 @@ Autoscaling is the process of dynamically allocating resources to match performa
 
 When you're optimizing for performance, you'll look at network and storage performance to ensure that their levels are within acceptable limits, because their performance levels can impact the response time of your application. Selecting the right networking and storage technologies for your architecture will help you ensure that you're providing the best experience for your consumers.
 
-Adding a messaging layer in between services can have a benefit to performance and scalability. Adding a messaging layer creates a buffer for requests between the services so that requests can continue to flow in without error if the application can't keep up. As the application works through the requests, they will be answered in the order in which they were received.
-
-<!-- TODO: Which services are meant by "between services?" You might need a "for example" section to illustrate what you mean. -->
+Adding a messaging layer in between services can have a benefit to performance and scalability. Adding a messaging layer creates a buffer for requests between services so that requests can continue to flow in without error if the receiving application can't keep up. As the application works through the requests, they will be answered in the order in which they were received.
 
 ### Optimize storage performance
 
