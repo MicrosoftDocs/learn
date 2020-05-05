@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.deploy-device-code
-title: How to deploy device code to the Edge device
+title: How to deploy device code to the IoT device
 metadata:
-  title: How to deploy device code to the Edge device
+  title: How to deploy device code to the IoT device
   description: In this section, we help the learner to configure the IoT device to the cloud
   ms.date: 04/07/2020
   author: leestott
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-edge
 durationInMinutes: 5 # dummy number at present
 content: |
-  [!include[](includes/8-how-deploy-device-code-edge.md)]
+  [!include[](includes/8-how-deploy-device-code-iot-device.md)]

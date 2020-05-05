@@ -26,4 +26,4 @@ Steps we follow are:
 2. Upload the code to the IoT Devkit
 3. Test the project
 
-At the end of the unit, your device code will be compiled and uploaded to the IoT device. You will now have a working translation app on your IoT device hosted in Azure. The device records your voice. Whenever the IoT Hub receives a message from the device, it uses Cognitive Service APIs. An HTTP trigger invokes an Azure function when it receives an HTTP request to its function URL. HTTP triggers allow you to obtain data and return data to the caller.
+At the end of the unit, your device code will be compiled and uploaded to the IoT device. You will now have a working translation app with your IoT device and it's hosted in Azure. The device records your voice. Whenever the IoT Hub receives a message from the device, it uses Cognitive Service APIs. An HTTP trigger invokes an Azure function when it receives an HTTP request to its function URL. HTTP triggers allow you to obtain data and return data to the caller.
