@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.responsiblebots.4-adding-language-understanding
+title: Adding Language Understanding
+metadata:
+  title: Adding Language Understanding
+  description: In this unit, we will add language understanding capability to our bot
+  author: 
+  ms.author: 
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-adding-language-understanding.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.responsiblebots.5-implementing-question-answering
+title: Implementing Question Answering and Personality
+metadata:
+  title: Implementing Question Answering and Personality
+  description: Introduction
+  author: 
+  ms.author: 
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-implementing-question-answering.md)]
