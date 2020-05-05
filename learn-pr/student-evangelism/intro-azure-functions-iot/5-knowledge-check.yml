@@ -17,8 +17,8 @@ quiz:
     choices:
     - content: "Azure Functions for IoT can manage demand that spikes up or down."
       isCorrect: true
-      explanation: "Azure Functions for IoT enable developers to create scalable IoT applications that can be rapidly deployed without provisioning a fixed infrastructure capacity in advance. This helps with large-scale IoT solutions where demand from IoT devices can spike up or down rapidly."
-    - content: "Azure Functions for IoT are secure."
+      explanation: "Azure Functions for IoT enables developers to create scalable IoT applications that can be rapidly deployed without provisioning a fixed infrastructure capacity in advance. This helps with large-scale IoT solutions where demand from IoT devices can spike up or down rapidly."
+    - content: "Azure Functions for IoT is secure."
       isCorrect: false
       explanation: "Security doesn't directly help in scaling solutions"
     - content: "Azure Functions for IoT can manage large volumes of data."
@@ -31,13 +31,13 @@ quiz:
       explanation: "Scalable solutions are a feature of Azure solutions but aren't uniquely related to Triggers and Bindings."
     - content: "Triggers and bindings help you to avoid hardcoding access to other services."
       isCorrect: true
-      explanation: "The trigger invokes the function and provide data needed by the function. Bindings connect resources to the function. Data from bindings is provided to the function as parameters. Thus, Triggers and bindings help you to avoid hardcoding access to other services."
+      explanation: "The trigger invokes the function and provides data needed by the function. Bindings connect resources to the function. Data from bindings is provided to the function as parameters. Thus, Triggers and bindings help you to avoid hardcoding access to other services."
     - content: "Triggers and Bindings provide a rapid response to events."
       isCorrect: false
       explanation: "Triggers and Bindings aren't uniquely responsible for providing a rapid response to events."
-  - content: "Identify the feature of Azure Functions for IoT which ensure that you're charged only for the resources you use?"
+  - content: "Identify the feature of Azure Functions for IoT that ensure that you're charged only for the resources you use?"
     choices:
-    - content: "Azure Functions for IoT are faster hence they use less resources."
+    - content: "Azure Functions for IoT is faster hence they use less resources."
       isCorrect: false
       explanation: "The speed of execution doesn't directly impact overall resources."
     - content: "Azure Functions can be managed through a dashboard."
