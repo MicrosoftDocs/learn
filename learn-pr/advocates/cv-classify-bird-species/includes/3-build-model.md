@@ -20,7 +20,7 @@ The first thing we need to create our model is to get data! We are going to use 
 - When the deployment succeeds, you will get a notification in the top-right corner.
 - Select `Go to resource`
 
-![createservicegif](/media/CreateCustomVisionService.gif)
+![createservicegif](../media/CreateCustomVisionService.gif)
 
 ## 3. Upload Data
 
@@ -59,7 +59,7 @@ Now it is time to upload the data for training. There are a couple ways to do th
 - Select `Upload photos`
 - Repeat these steps for each bird species (class)
 
-![uploadphotos](/media/uploadcvphotos.gif)
+![uploadphotos](../media/uploadcvphotos.gif)
 
 ### Option 2: SDK Upload
 

@@ -25,6 +25,8 @@ roles:
   - developer
   - ai-engineer
   - student
+  - data-analyst
+  - data-scientist
 products:
   - azure
   - azure-cognitive-services
