@@ -1,4 +1,4 @@
-Development and operational practices have evolved over the years to become more seamless and integrated. Modern practices involve organizational shifts as well as tooling adoption to improve the operational agility of an oranization. 
+Development and operational practices have evolved over the years to become more seamless and integrated. Modern practices involve organizational shifts as well as tooling adoption to improve the operational agility of an oranization. Let's take a look at some of the key concepts to improving your organizations ability to build and deploy applications.
 
 ## DevOps
 
