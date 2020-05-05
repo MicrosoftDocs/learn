@@ -1,4 +1,4 @@
-<!-- Add intoduction statement - Checkout the published module to use consistent text. -->
+<!-- Add introduction statement - Checkout the published module to use consistent text. -->
 
 ## Conversational UI
 
@@ -6,7 +6,7 @@ Over the years, the **user interface** (or UI for short) between human beings an
 
 Things now may change with the emergence of new type of user experience - **Conversational UI** and **bots**. Instead of knowing which buttons to press, we may just ask a computer what we need, hoping that it will understand us correctly and do the job. In this experience we regard a computer as an **assistant** rather than a tool, and we want to be able to speak to it naturally using **natural language**.
 
-With this paradigm shift, we need to take extra care to make sure that users **are comfortable** when dealing with a computer through conversations. This is important, because people can subconsciously expect a bot to act like a human, for example, attribute some emotions to it, and in general feel more personal involvement. Thus, we need to make sure that we build conversational UI **responsibly**. 
+With this paradigm shift, we need to take extra care to make sure that users **are comfortable** when dealing with a computer through conversations. This is important, because people can subconsciously expect a bot to act like a human, for example, attribute some emotions to it, and in general feel more personal involvement. Thus, we need to make sure that we build conversational UI **responsibly**.
 
 ## Our Goal: Develop Educational Assistant for Geography
 
@@ -58,8 +58,8 @@ Building **accessibility practices** into a bot may broaden the potential audien
 ## Learning objectives
 <!-- Add more obectives to this list -->
 
-  - Learn basic principles to develop responsible conversational experiences for users
-  - Develop a simple educational assistant with Azure Bot Service and Azure Cognitive Services
+- Learn basic principles to develop responsible conversational experiences for users
+- Develop a simple educational assistant with Azure Bot Service and Azure Cognitive Services
 
 ## Prerequisites
 

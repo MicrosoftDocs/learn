@@ -177,7 +177,7 @@ Another feature that could be implemented using dialogs is collecting feedback. 
 >[!IMPORTANT]
 >A good responsible bot should give user an opportunity to provide feedback!
 
-# Supporting Speech
+## Supporting Speech
 
 As we know, bots should welcome diversity, and thus ideally they should support users who are not able to communicate via text, be that visually impaired users, or those who cannot type because their hands are busy. Luckily, support for speech interface can be added to the bot through [Speech API][SpeechAPI]. Bot Framework supports embedding speech data into messages in the form of **Simple Speech Markup Language** (SSML), so we just need to tweak our bot code to include this data as described [here][AddSpeech]. We also need a speech support from conversation client, and Web Chat control can integrate with Microsoft Speech API to support both text-to-speech and speech-to-text.
 

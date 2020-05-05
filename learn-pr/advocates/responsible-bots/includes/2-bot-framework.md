@@ -25,23 +25,30 @@ Cognitive Services are very often used with bots, that's why they occupy the lar
 Let's start creating our **GeoFriend** Assistant chat bot. The easiest way to start is to create a new Azure Bot Service:
 
 1. Go to [Azure Portal][AzPortal] and log in with your Azure Account.
-![Azure Portal](../media/AzPortal.png)
+
+   ![Azure Portal](../media/AzPortal.png)
 
 1. Click on "Create a Resource" button (large +), type "Bot" in the search box, and select **Web App Bot**.
-![Create Bot](../media/AzPortalCreate.png)
-After that, on a new page, click **Create** button.
+
+   ![Create Bot](../media/AzPortalCreate.png)
+
+   After that, on a new page, click **Create** button.
 
 1. Fill in parameters for the bot:
-      - Type bot name in **Bot Handle** field. I will use **GeoFriend**, but you can invent something else.
-      - In the resource group name, select **Create New**, and come up with some name for resource group.
-      - In **Location**, select the data center location closest to you.
-      - Change **Pricing Tier** to **F0**, which is the free tier.
-      - Leave **App Name** to its default value      
-![Bot Parameters](../media/AzPortalBotForm.png)
+
+   - Type bot name in **Bot Handle** field. I will use **GeoFriend**, but you can invent something else.
+   - In the resource group name, select **Create New**, and come up with some name for resource group.
+   - In **Location**, select the data center location closest to you.
+   - Change **Pricing Tier** to **F0**, which is the free tier.
+   - Leave **App Name** at its default value.
+
+   ![Bot Parameters](../media/AzPortalBotForm.png)
 
 1. Click on the **Bot Template** field. You will be taken to a pane with several template options:
-![Select Template](../media/AzPortalSelectTemplate.png)
-Here you can select desired programming language (**C#** or **Node.js**, we will go with C#) and one of the templates that provides some pre-defined functionality:
+
+   ![Select Template](../media/AzPortalSelectTemplate.png)
+
+   Here you can select desired programming language (**C#** or **Node.js**, we will go with C#) and one of the templates that provides some pre-defined functionality:
 
      - **Echo Bot** - the one we will use - is the simplest bot that echoes back any message typed by a user. We will start with this one, since it is the easiest to understand.
      - **Basic Bot** is a traditional template that includes language understanding service and bot analytics
@@ -50,15 +57,17 @@ Here you can select desired programming language (**C#** or **Node.js**, we will
      - **Q&A Maker Bot** allows you to create bots that answer simple questions based on questions and answers table  
 
 1. Now create **App Service Plan**. Click on "App Service Plan/Location", then **Create New**, and type in a suitable name for App Service Plan. This plan determines how much of compute resources would be allocated to your bot.
-![App Service Plan](../media/AzPortalAppServicePlan.png)
->[!TIP]
->By default, the **S1** plan is used, which is not free. If you want your bot to be hosted on another service plan (for example, on free Azure Web Site), you would need to adjust the service plan afterwards separately, as described [here][AdjustServicePlan].
 
-6. Finally, fine tune **Application Insights** settings. It is useful for monitoring the behavior of your bot. For the sake of this course you can turn application insights off, or specify the Azure datacenter location closest to you.
+   ![App Service Plan](../media/AzPortalAppServicePlan.png)
 
-7. Once all fields are filled in - click **Create**.
+   >[!TIP]
+   >By default, the **S1** plan is used, which is not free. If you want your bot to be hosted on another service plan (for example, on free Azure Web Site), you would need to adjust the service plan afterwards separately, as described [here][AdjustServicePlan].
 
-It will take some time for all bot resources to be created. Once you see the notification that deployment is complete - go to bot' resource group to check out what has been created. 
+1. Finally, fine tune **Application Insights** settings. It is useful for monitoring the behavior of your bot. For the sake of this course you can turn application insights off, or specify the Azure datacenter location closest to you.
+
+1. Once all fields are filled in - click **Create**.
+
+It will take some time for all bot resources to be created. Once you see the notification that deployment is complete - go to bot' resource group to check out what has been created.
 
 ## Bot Page on the Azure Portal
 
@@ -67,12 +76,13 @@ From the Azure Portal start page, click **Resource Groups**, and select the grou
 
 There are two important components here:
 
-* The first **GeoFriend** resource you see if the web bot application that establishes connection between your bot code and different communication channels. This resource also provides access to bot code, and ability to test the bot in web chat.
-* The second **geofriend** resource is a web application that contains the code for your bot. Later on, when we will deploy the bot code from Visual Studio, we will select this application.
+- The first **GeoFriend** resource you see if the web bot application that establishes connection between your bot code and different communication channels. This resource also provides access to bot code, and ability to test the bot in web chat.
+- The second **geofriend** resource is a web application that contains the code for your bot. Later on, when we will deploy the bot code from Visual Studio, we will select this application.
 
 Two other resources are the bot app service plan (we should adjust it if we want to scale the bot to handle more requests, or move it to free plan), and application insights instance.
 
 Let's click on the first **GeoFriend** link. We are taken to the Bot page on the portal:
+
 ![Azure Portal Bot Page](../media/AzPortalBotPage.png)
 
 This page is the main starting point for configuring the bot. On the first **overview** tab you can see the typical sequence of steps that we need to do in order to complete the bot project. It all starts with the idea or a **Plan**, followed by the **Build** stage, at which we are now. We will discuss how to build the bot in the next unit. 
@@ -80,6 +90,7 @@ This page is the main starting point for configuring the bot. On the first **ove
 ## Running the Bot
 
 Right from this page, we can try our newly created bot in action. Click on **Test in Web Chat** tab on the left pane, and you will see a chat box that you can use to converse with the bot.
+
 ![Web Chat](../media/AzPortalWebChat.png)
 
 Try typing in some text, and see how the bot responds.
