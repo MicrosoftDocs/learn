@@ -1,8 +1,8 @@
-The other crucial data structure in pandas to get to know for data science is the `DataFrame`. Like the `Series` object, `DataFrames` can be thought of either as generalizations of `ndarrays` (or as specializations of Python dictionaries).
+The other crucial data structure in pandas to get to know for data science is the `DataFrame`. Like the `Series` object, `DataFrames` can be thought of either as generalizations of `ndarrays`, or as specializations of Python dictionaries.
 
-Just as a `Series` is like a one-dimensional array with flexible indices, a `DataFrame` is like a two-dimensional array with both flexible row indices and flexible column names. Essentially, a `DataFrame` represents a rectangular table of data and contains an ordered collection of labeled columns, each of which can be a different value type (`string`, `int`, `float`, and so on). The `DataFrame` has both a row and column index; in this way you can think of it as a dictionary of `Series`, all of which share the same index.
+Just as a `Series` is like a one-dimensional array with flexible indices, a `DataFrame` is like a two-dimensional array with both flexible row indices and flexible column names. A `DataFrame` represents a rectangular table of data and contains an ordered collection of labeled columns, each of which can be a different value type (for example, `string`, `int`, or `float`). The `DataFrame` has both a row and column index. You can think of it as a dictionary of `Series`, all of which share the same index.
 
-Let's take a look at how this works in practice. We will start by creating a `Series` called `area`:
+Let's take a look at how this works in practice. Start by creating a `Series` called `area`:
 
 ```python
 area_dict = {'Albania': 28748,
@@ -25,7 +25,7 @@ Russia     17125200
 dtype: int64
 ```
 
-Now you can combine this with the `population` `Series` you created earlier by using a dictionary to construct a single two-dimensional table containing data from both `Series`:
+Now you can combine this with the `population` `Series` that you created earlier. Use a dictionary to construct a single, two-dimensional table that contains data from both `Series`:
 
 ```python
 countries = pd.DataFrame({'Population': population, 'Area': area})
@@ -44,9 +44,9 @@ The output is:
 | Russia   | 143910127.0  | 17125200  |
 ```
 
-As with `Series`, the `DataFrames` also automatically order indices (in this case, the column indices 'Area' and 'Population').
+As with `Series`, `DataFrames` also automatically order indices (in this case, the column indices *Area* and *Population*).
 
-So far we have combined dictionaries together to compose a `DataFrame` (which has given our `DataFrame` a row-centric feel), but you can also create `DataFrames` in a column-wise fashion. Consider adding a 'Capital' column using our reliable old array-analog, a list:
+So far, you've combined dictionaries together to compose a `DataFrame` (which has given our `DataFrame` a row-centric feel), but you can also create `DataFrames` in a column-wise fashion. Consider adding a *Capital* column by using our reliable old array-analog, a list:
 
 ```python
 countries['Capital'] = ['Tirana', 'Paris', 'Berlin', 'Tokyo', 'Moscow']
@@ -65,7 +65,7 @@ The output is:
 | Russia   | 143910127.0  | 17125200  | Moscow   |
 ```
 
-As with `Series`, even though initial indices are ordered in `DataFrames`, subsequent additions to a `DataFrame` stay in the ordered added. However, you can explicitly change the order of `DataFrame` column indices this way:
+As with `Series`, even though initial indices are ordered in `DataFrames`, subsequent additions to a `DataFrame` stay in the order added. However, you can explicitly change the order of `DataFrame` column indices this way:
 
 ```python
 countries = countries[['Capital', 'Area', 'Population']]
@@ -84,7 +84,7 @@ The output is:
 | Russia   |  Moscow   | 17125200  | 143910127.0  | 
 ```
 
-Commonly in a data science context, it is necessary to generate new columns of data from existing data sets. Because `DataFrame` columns behave like `Series`, you can do this is by performing operations on them as you would with `Series`:
+Commonly in a data science context, you need to generate new columns of data from existing datasets. Because `DataFrame` columns behave like `Series`, you can do this is by performing operations on them as you would with `Series`:
 
 ```python
 countries['Population Density'] = countries['Population'] / countries['Area']
@@ -104,9 +104,9 @@ The output is:
 ```
 
 > [!Note]
-> Don't worry if IPython gives you a warning over this. The warning is IPython trying to be a little too helpful. The new column you created is an actual part of the `DataFrame` and not a copy of a slice.
+> Don't worry if IPython gives you a warning over this. The warning is IPython trying to be a little too helpful. The new column you created is an actual part of the `DataFrame`, and not a copy of a slice.
 
-We have stated before that `DataFrames` are like dictionaries, and it's true. You can retrieve the contents of a column just as you would the value for a specific key in an ordinary dictionary:
+We have stated before that `DataFrames` are like dictionaries. You can retrieve the contents of a column just as you would the value for a specific key in an ordinary dictionary:
 
 ```python
 countries['Area']
@@ -123,9 +123,9 @@ Russia     17125200
 Name: Area, dtype: int64
 ```
 
-What about using the row indices?
+### What about using the row indices?
 
-Now try accessing row data with a command like `countries['Japan']`
+Now try accessing row data with a command like `countries['Japan']`.
 
 This returns an error. `DataFrames` are dictionaries of `Series`, which are the columns. `DataFrame` rows often have heterogeneous data types, so different methods are necessary to access row data. For that, we use the `.loc` method:
 
@@ -143,7 +143,7 @@ Population Density        335.798
 Name: Japan, dtype: object
 ```
 
-Note that what the `.loc` method returns is an indexed object in its own right and you can access elements within it using familiar index syntax:
+Note that what the `.loc` method returns is an indexed object in its own right, and you can access elements within it by using familiar index syntax:
 
 ```python
 countries.loc['Japan']['Area']
@@ -160,9 +160,9 @@ Can you think of a way to return the area of Japan without using the `.iloc` met
 > [!Tip]
 > Try putting the column index first.
 
-Can you slice along these indices as well?
+### Can you slice along these indices as well?
 
-Sometimes it's helpful in data science projects to add a column to a `DataFrame` without assigning values to it:
+Sometimes it's helpful in data science projects to add a column to a `DataFrame`, without assigning values to it:
 
 ```python
 countries['Debt-to-GDP Ratio'] = np.nan
@@ -181,9 +181,9 @@ The output is:
 | Russia   |  Moscow   | 17125200  | 143910127.0  | 8.403413           | NaN               |
 ```
 
-Again, you can disregard the warning (if it triggers) about adding the column this way.
+Again, you can disregard any warning you see about adding the column this way.
 
-You can also add columns to a `DataFrame` that do not have the same number of rows as the `DataFrame`:
+You can also add columns to a `DataFrame` that don't have the same number of rows as the `DataFrame`:
 
 ```python
 debt = pd.Series([0.19, 2.36], index=['Russia', 'Japan'])
@@ -222,7 +222,7 @@ The output is:
 | Russia   | 17125200  | 143910127.0  | 8.403413           | 0.19              |
 ```
 
-In addition to their dictionary-like behavior, `DataFrames` also behave like two-dimensional arrays. For example, it can be useful at times when working with a `DataFrame` to transpose it:
+In addition to their dictionary-like behavior, `DataFrames` also behave like two-dimensional arrays. For example, when you're working with a `DataFrame`, you might want to transpose it:
 
 ```python
 countries.T
@@ -239,25 +239,25 @@ The output is:
 | Debt-to-GDP ratio   | NaN      | NaN           | NaN           | 2.360000e+00  | 1.900000e-01  |
 ```
 
-Again, note that `DataFrame` columns are `Series` and thus the data types must consistent, hence the upcasting to floating-point numbers.
+Again, note that `DataFrame` columns are `Series`, and thus the data types must consistent. This is the reason that you see the upcasting to floating-point numbers.
 
 > [!Important]
 > If there had been strings in this `DataFrame`, everything would have been upcast to the `string` type. Use caution when transposing `DataFrames`.
 
 ## From a two-dimensional NumPy array
 
-Given a two-dimensional array of data, we can create a `DataFrame` with any specified column and index names. If omitted, an integer index will be used for each:
+Given a two-dimensional array of data, you can create a `DataFrame` with any specified column and index names. If this is omitted, an integer index will be used for each:
 
 ```python
 pd.DataFrame(np.random.rand(3, 2),
-             columns=['foo', 'bar'],
+             columns=['random', 'example'],
              index=['a', 'b', 'c'])
 ```
 
 The output is:
 
 ```Output
-|    | foo       | bar       |
+|    | random       | example       |
 ------------------------------
 | a  | 0.733086  | 0.708453  |
 | b  | 0.722008  | 0.048097  |

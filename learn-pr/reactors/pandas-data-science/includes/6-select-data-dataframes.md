@@ -1,8 +1,8 @@
-`DataFrames` also exhibit dual behavior, acting both like a two-dimensional `ndarray` and like a dictionary of `Series` sharing the same index.
+`DataFrames` also exhibit dual behavior, acting like both a two-dimensional `ndarray` and a dictionary of `Series` sharing the same index.
 
-## DataFrame as dictionary of Series
+## DataFrame as a dictionary of Series
 
-Let's return to our earlier example of countries' areas and populations in order to examine `DataFrames` as a dictionary of `Series`.
+Let's return to our earlier example of countries' areas and populations, in order to examine `DataFrames` as a dictionary of `Series`.
 
 ```python
 area = pd.Series({'Albania': 28748,
@@ -31,7 +31,7 @@ The output is:
 | Russia   | 17125200 | 143910127  | 
 ```
 
-You can access the individual `Series` that make up the columns of a `DataFrame` via dictionary-style indexing of the column name:
+You can access the individual `Series` that make up the columns of a `DataFrame`, via dictionary-style indexing of the column name:
 
 ```python
 countries['Area']
@@ -48,7 +48,7 @@ Russia     17125200
 Name: Area, dtype: int64
 ```
 
-And you can use dictionary-style syntax can also be used to modify `DataFrames`, such as by adding a new column:
+And you can use dictionary-style syntax to modify `DataFrames`, such as by adding a new column:
 
 ```python
 countries['Population Density'] = countries['Population'] / countries['Area']
@@ -67,9 +67,9 @@ The output is:
 | Russia   | 17125200  | 143910127.0  | 8.403413           |
 ```
 
-## DataFrame as two-dimensional array
+## DataFrame as a two-dimensional array
 
-You can also think of `DataFrames` as two-dimensional arrays. You can examine the raw data in the `DataFrame` or data array using the `values` attribute:
+You can also think of `DataFrames` as two-dimensional arrays. You can examine the raw data in the `DataFrame` or data array by using the `values` attribute:
 
 ```python
 countries.values
@@ -85,7 +85,7 @@ array([[2.87480000e+04, 2.93759000e+06, 1.02184152e+02],
        [1.71252000e+07, 1.43910127e+08, 8.40341292e+00]])
 ```
 
-Viewed this way, it makes sense that we can transpose the rows and columns of a `DataFrame` the same way we would an array:
+Viewed this way, it makes sense that you can transpose the rows and columns of a `DataFrame`, the same way you would with an array:
 
 ```python
 countries.T
@@ -101,7 +101,7 @@ The output is:
 | Population density  | 1.021842e+02  | 1.016300e+02  | 2.305874e+02  | 3.357982e+02  | 8.403413e+00  |
 ```
 
-`DataFrames` also uses the `loc` and `iloc` indexers. With `iloc`, you can index the underlying array as if it were an `ndarray` but with the `DataFrame` index and column labels maintained in the result:
+`DataFrames` also uses the `loc` and `iloc` indexers. With `iloc`, you can index the underlying array as if it were an `ndarray`, but with the `DataFrame` index and column labels maintained in the result:
 
 ```python
 countries.iloc[:3, :2]
@@ -117,7 +117,7 @@ The output is:
 | Germany  | 357386   | 82408706   | 
 ```
 
-`loc` also permits array-like slicing but using the explicit index and column names:
+`loc` also permits array-like slicing, but it uses the explicit index and column names:
 
 ```python
 countries.loc[:'Germany', :'Population']
@@ -133,14 +133,14 @@ The output is:
 | Germany  | 357386   | 82408706   | 
 ```
 
-You can also use array-like techniques such as masking and fancy indexing with loc.
+You can also use array-like techniques, such as masking and fancy indexing, with loc.
 
-### Try it yrouself
+### Try it yourself
 
 Can you think of how to combine masking and fancy indexing in one line?
 
-- Your masking could be something like `countries['Population Density'] > 200`.
-- Your fancy indexing could be something like `['Population', 'Population Density']`.
+- Your masking could be something like `countries['Population density'] > 200`.
+- Your fancy indexing could be something like `['Population', 'Population density']`.
 
 Be sure to put the the masking and fancy indexing inside the square brackets: `countries.loc[]`.
 
@@ -150,11 +150,11 @@ Be sure to put the the masking and fancy indexing inside the square brackets: `c
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   ```python
-  countries.loc[countries['Population Density'] > 200, ('Population', 'Population Density')]
+  countries.loc[countries['Population density'] > 200, ('Population', 'Population density')]
   ```
 
   ```Output
-  |         | Population | Population Density | 
+  |         | Population | Population density | 
   --------------------------------------------- 
   | Germany | 82408706   | 230.587393         | 
   | Japan   | 126922333  | 335.798242         |
@@ -168,7 +168,7 @@ Be sure to put the the masking and fancy indexing inside the square brackets: `c
 
 ## Indexing conventions
 
-In practice in the world of data science (and pandas more generally), _indexing_ refers to columns while _slicing_ refers to rows.
+In data science (and pandas more generally), _indexing_ refers to columns while _slicing_ refers to rows.
 
 ```python
 countries['France':'Japan']
@@ -184,7 +184,7 @@ The output is:
 | Japan    | 377972    | 126922333.0  | 335.798242         |
 ```
 
-Such slices can also refer to rows by number rather than by index:
+Such slices can also refer to rows by number, rather than by index:
 
 ```python
 countries[1:3]
@@ -202,7 +202,7 @@ The output is:
 Similarly, direct masking operations are also interpreted row-wise rather than column-wise:
 
 ```python
-countries[countries['Population Density'] > 200]
+countries[countries['Population density'] > 200]
 ```
 
 The output is:
@@ -214,4 +214,4 @@ The output is:
 | Japan    | 377972    | 126922333.0  | 335.798242         |
 ```
 
-These two conventions are syntactically similar to those on a NumPy array, and while these may not precisely fit the mold of the Pandas conventions, they are nevertheless quite useful in practice.
+These two conventions are syntactically similar to those on a NumPy array. Although these may not precisely fit the mold of the Pandas conventions, they are nevertheless quite useful in practice.
