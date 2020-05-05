@@ -88,7 +88,7 @@ For example, as you type the word `dice` slowly, Intellisense will show you all 
 To experiment with Intellisense, type the letters `d`, `i` then `c`.  When Intellisense pops up, the identifier `dice` should appear.  Select the `tab` key on your keyboard and the entire word will be completed for you.  Or, use the up and down arrow keys to change the selection.
 
 > [!Note]
-> If the Intellisense window disappears, you can select the `backspace` key on your keyboard, then re-type the the last symbol to re-open Intellisense.
+> If the Intellisense window disappears, you can select the `backspace` key on your keyboard, then re-type the last symbol to re-open Intellisense.
 
 Next, type the member access operator.  The Intellisense popup reappears and shows you all of the methods (and other members of the class) that are available.  If you type the letter `N`, the list will be filtered and the word `Next` should be the top selection.  Again, select the `tab` key on the keyboard to autocomplete the entire word.
 

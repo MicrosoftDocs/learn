@@ -82,6 +82,9 @@ However, understanding *how* `Random.Next()` works isn't necessary to using it. 
 
 One way to learn how to call the method is to consult the documentation.  You'll find examples that show whether the method must be called from the object instance or directly from the class.
 
+> [!NOTE]
+> One of the most useful parts of the documentation are the code examples that demonstrate how to use the method you're researching.  Sometimes you'll need to scroll down on the web page to find the code examples.
+
 Alternatively, you can attempt to access the method directly from the class itself.  The worst that can happen is that you'll get a compilation error.
 
 If you type the following line of code into the .NET Editor:

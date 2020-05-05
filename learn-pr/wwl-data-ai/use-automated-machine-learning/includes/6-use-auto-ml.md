@@ -4,7 +4,7 @@ Azure Machine Learning includes an *automated machine learning* capability that 
 
 In Azure Machine Learning, operations that you run are called *experiments*. Follow the steps below to run an experiment that uses automated machine learning to train a regression model that predicts bicycle rentals.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com), view the **Automated ML** page (under **Author**).
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Automated ML** page (under **Author**).
 2. Create a new Automated ML run with the following settings:
     - **Select dataset**:
         - **Dataset**: bike-rentals
