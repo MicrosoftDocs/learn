@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.responsible-bots.4-add-language-understanding
+title: Add language understanding from Azure Cognitive Services
+metadata:
+  title: Add language understanding from Azure Cognitive Services
+  description: In this unit, we'll add language understanding capability to our bot.
+  ms.date: 05/19/2020
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-advocates
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-add-language-understanding.md)]

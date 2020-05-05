@@ -1,19 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.responsiblebots.7-knowledge-check
-title: Knowledge Check
+uid: learn.advocates.responsible-bots.7-knowledge-check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: Let's check what we have learnt in the course
-  author: 
-  ms.author: 
-  ms.date: 04/14/2020
+  title: Knowledge check
+  description: Let's check what we've learned in the course.
+  ms.date: 05/19/2020
+  author: shwars
+  ms.author: dmitryso
   ms.topic: interactive-tutorial
-  ms.prod: vs
+  ms.prod: learning-advocates
 durationInMinutes: 1
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: Final Knowledge Check
   questions: 
   - content: "Why developer needs to know responsible conversational UI principles?"
     choices:

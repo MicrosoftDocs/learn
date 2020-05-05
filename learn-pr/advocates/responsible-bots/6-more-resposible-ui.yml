@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.responsible-bots.6-more-responsible-ui
+title: Implement a more responsible UI
+metadata:
+  title: Implement a more responsible UI
+  description: Learn how to implement a more responsible UI.
+  ms.date: 05/19/2020
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-advocates
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-more-responsible-ui.md)]

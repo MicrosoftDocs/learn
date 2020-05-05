@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.responsible-bots.5-add-question-answering
+title: Implement question answering and personality
+metadata:
+  title: Implement question answering and personality
+  description: Learn how to implement question answering and personality.
+  ms.date: 05/19/2020
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-advocates
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-add-question-answering.md)]

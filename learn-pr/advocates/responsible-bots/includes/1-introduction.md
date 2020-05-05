@@ -1,3 +1,5 @@
+<!-- Add intoduction statement - Checkout the published module to use consistent text. -->
+
 ## Conversational UI
 
 Over the years, the **user interface** (or UI for short) between human beings and computers has evolved. Starting from punch cards, to command-line interface and windowed applications, to phone applications and web sites - it made using computers easier and more accessible to broad audience. However, regardless of the UI, computer was still regarded as a **tool**, which we need to *learn how to use* to become productive.
@@ -53,10 +55,27 @@ In addition to national diversity, there are also important **cultural norms** t
 
 Building **accessibility practices** into a bot may broaden the potential audience. For example, adding **speech support** would make the bot usable by those with vision impairments. It would also make it attractive to the people who would like to avoid typing, for example drivers.
 
+## Learning objectives
+<!-- Add more obectives to this list -->
+
+  - Learn basic principles to develop responsible conversational experiences for users
+  - Develop a simple educational assistant with Azure Bot Service and Azure Cognitive Services
+
+## Prerequisites
+
+In this course, we'll be using the [Azure Bot Service][BotService] and [C# Programming Language][CSharp] to build a bot.
+
+Here's what you'll need to complete this course:
+
+- Basic knowledge of C#. You may want to [take this course][CSCourse] if you're not familiar with the language.
+- An Azure account. [This module][AzAccount] describes how to get an account.
+- We suggest using [Visual Studio 2019][VS] as source code editor. Please, download and install Visual Studio on your computer, selecting "Azure Development". If your computer is not powerful enough, or you do not want to perform the installation - you should be able to use **Visual Studio Online**, though it is not recommended.
+
 ## Next steps
 
-Now that we know main principles of building responsible bots, let's try to apply them to building simple Geography Assistant Bot. 
+Now that we know main principles of building responsible bots, let's try to apply them to building a simple Geography Assistant Bot. 
 
+<!-- Links below this line -->
 
 [Guidelines10]: https://www.microsoft.com/research/publication/responsible-bots/
 [InteractiveDemo]: https://aidemos.microsoft.com/responsible-conversational-ai/building-a-trustworthy-bot
@@ -64,3 +83,9 @@ Now that we know main principles of building responsible bots, let's try to appl
 [PersonalityChat]: https://www.microsoft.com/research/project/personality-chat/
 [TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/
 [LandDetect]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection
+
+[BotService]: https://azure.microsoft.com/services/bot-service/
+[CSharp]: https://dotnet.microsoft.com/learn/csharp
+[CSCourse]: https://docs.microsoft.com/dotnet/csharp/tutorials/
+[AzAccount]: https://docs.microsoft.com/learn/modules/create-an-azure-account/
+[VS]: https://www.visualstudio.com/downloads/

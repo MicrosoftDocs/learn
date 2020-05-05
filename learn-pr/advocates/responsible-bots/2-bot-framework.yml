@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.responsible-bots.2-bot-framework
+title: Introduction to the Azure Bot Framework and Azure Bot Service
+metadata:
+  title: Introduction to the Azure Bot Framework and Azure Bot Service
+  description: In this unit, we'll start developing our responsible bot by creating an Azure bot service.
+  ms.date: 05/19/2020
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-advocates
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-bot-framework.md)]

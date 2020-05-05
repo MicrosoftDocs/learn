@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.responsible-bots.1-introduction
+title: Introduction to responsible conversational UI
+metadata:
+  title: Introduction to responsible conversational UI
+  description: In this unit, we'll learn what it means for a chat bot to be responsible, and what problems developers should consider before they build a bot.
+  ms.date: 05/19/2020
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-advocates
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

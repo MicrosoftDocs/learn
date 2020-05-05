@@ -1,33 +1,39 @@
 ### YamlMime:Module
-uid: learn.responsiblebots
+uid: learn.advocates.responsible-bots
 metadata:
-  title: Building Responsible Conversational UI
-  description: Learn how to 
+  title: Build responsible conversational UI
+  description: Learn how to build eesponsible conversational UI by using bots.
   ms.date: 05/19/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: shwars
+  ms.author: dmitryso
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Building Responsible Conversational UI
-summary: Learn the basic principles of responsible conversational UI and how to develop your own bot using Azure Bot Service, Cognitive Services and C#.
+  ms.prod: learning-advocates
+title: Build responsible conversational UI
+summary: In this course, we'll learn about **responsible conversational AI**, and how to make bots that a user can trust and enjoy speaking to. We'll cover the main principles and then apply those principles to building simple a **Educational Assistant for Geography** bot, which we call **GeoFriend**. Our bot will help school children to learn more about geography and answer some questions, and also learn some study techniques!
 abstract: |
-  In this module we will learn the basic principles for developing responsible conversational experiences for users. We will also apply those principles to developing simple Educational Assistant using Azure Bot Service and Cognitive Services. You will need some basic knowledge of C# to effectively learn the material.
-iconUrl: /learn/achievements/.svg
+  In this module, you will:
+  - Learn basic principles to develop responsible conversational experiences for users
+  - Develop a simple educational assistant with Azure Bot Service and Azure Cognitive Services
+# placeholder icon
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
+- advocate
 - developer
 products:
-- vs
-prerequisites: None
+- azure
+- vs-code
+prerequisites: |
+- Basic knowledge of C#
 units:
-- learn.responsiblebots.1-intro-to-responsible-bots
-- learn.responsiblebots.2-intro-to-bot-framework
-- learn.responsiblebots.3-starting-bot-development
-- learn.responsiblebots.4-adding-language-understanding
-- learn.responsiblebots.5-implementing-question-answering
-- learn.responsiblebots.6-implementing-more-responsible-ui
-- learn.responsiblebots.7-knowledge-check
-- learn.responsiblebots.8-conclusion-and-next-steps
+- learn.advocates.responsible-bots.1-introduction
+- learn.advocates.responsible-bots.2-bot-framework
+- learn.advocates.responsible-bots.3-bot-development
+- learn.advocates.responsible-bots.4-add-language-understanding
+- learn.advocates.responsible-bots.5-add-question-answering
+- learn.advocates.responsible-bots.6-more-responsible-ui
+- learn.advocates.responsible-bots.7-knowledge-check
+- learn.advocates.responsible-bots.8-summary
 badge:
-  uid: learn.responsiblebots.badge
+  uid: learn.advocates.responsible-bots.badge
