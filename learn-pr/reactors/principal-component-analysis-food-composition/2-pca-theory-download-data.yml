@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.principal-component-analysis-food-composition.2-understand-pca-download-data
+title: Understand PCA and import the dataset
+metadata:
+  title: Understand PCA and import the dataset
+  description: Learn how to understand and use principal component analysis (PCA) in machine learning.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-pca-download-data.md)]

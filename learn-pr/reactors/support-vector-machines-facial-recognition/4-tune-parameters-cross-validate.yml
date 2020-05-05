@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.support-vector-machines-facial-recognition.4-tune-parameters-cross-validate
+title: Tune hyperparameters and cross-validate the model
+metadata:
+  title: Tune hyperparameters and cross-validate the model
+  description: Tune hyperparameters and increase the accuracy of your model and cross-validate a model to quantify its accuracy.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-tune-parameters-cross-validate.md)]

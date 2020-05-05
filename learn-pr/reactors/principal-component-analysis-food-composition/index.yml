@@ -1,24 +1,25 @@
 ### YamlMime:Module
 uid: learn.reactors.principal-component-analysis-food-composition
 metadata:
-  title: Principal compoment analysis with food composition
-  description: Learn how to TBD.
+  title: Principal component analysis with food composition
+  description: Learn how to use principal component analysis to learn about the contents of a food nutrition dataset.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-title: Principal compoment analysis with food composition
-summary: How to TBD.
+  show_latex: true
+title: Principal component analysis with food composition
+summary: Learn how to use principal component analysis to learn about the contents of a food nutrition dataset.
 abstract:  | 
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Learn the meaning of *principal component analysis (PCA)* and *eigenvector*, and their function in machine learning.
+  - Learn about PCA theory, and then apply PCA to a food composition dataset.
+  - Check for correlation, and then normalize and center the data.
   
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - TBD
+  - Text classification with Naive Bayes
   
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -32,12 +33,10 @@ products:
 - vs-code
 units:
 - learn.reactors.principal-component-analysis-food-composition.1-introduction
-- learn.reactors.principal-component-analysis-food-composition.2-pca-theory-action
-- learn.reactors.principal-component-analysis-food-composition.3-download-data
-- learn.reactors.principal-component-analysis-food-composition.4-clean-data
-- learn.reactors.principal-component-analysis-food-composition.5-normalize-data
-- learn.reactors.principal-component-analysis-food-composition.6-practice-pca
-- learn.reactors.principal-component-analysis-food-composition.7-interpret-results
-- learn.reactors.principal-component-analysis-food-composition.8-categorization
+- learn.reactors.principal-component-analysis-food-composition.2-understand-pca-download-data
+- learn.reactors.principal-component-analysis-food-composition.3-clean-data
+- learn.reactors.principal-component-analysis-food-composition.4-normalize-data
+- learn.reactors.principal-component-analysis-food-composition.5-practice-pca
+- learn.reactors.principal-component-analysis-food-composition.6-interpret-results
 badge:
   uid: learn.reactors.principal-component-analysis-food-composition.badge 

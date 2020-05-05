@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.support-vector-machines-facial-recognition.3-apply-pca
+title: Apply principal component analysis
+metadata:
+  title: Apply principal component analysis
+  description: Learn how to use principal component analysis (PCA) to reduce the number of dimensions in a dataset to help increase the accuracy of a model.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 16
+content: |
+  [!include[](includes/3-apply-pca.md)]

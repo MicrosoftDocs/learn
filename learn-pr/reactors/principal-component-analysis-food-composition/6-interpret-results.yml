@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.principal-component-analysis-food-composition.7-interpret-results
+uid: learn.reactors.principal-component-analysis-food-composition.6-interpret-results
 title: Interpret the results
 metadata:
   title: Interpret the results
-  description: Interpret the results TBD.
+  description: Interpret the results of applying PCA to a food composition dataset.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+  show_latex: true
 durationInMinutes: 20
 content: |
-  [!include[](includes/7-interpret-results.md)]
+  [!include[](includes/6-interpret-results.md)]

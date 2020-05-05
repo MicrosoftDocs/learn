@@ -2,23 +2,25 @@
 uid: learn.reactors.support-vector-machines-facial-recognition
 metadata:
   title: Support vector machines and facial recognition
-  description: Learn how to TBD.
+  description: Learn how to use SVM models to better support complex data and questions in a facial recognition example.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 title: Support vector machines and facial recognition
-summary: How to TBD.
+summary: Learn how to use SVM models to better support complex data and questions. Use scikit-learn and PCA to optimize analysis in a facial recognition example.
 abstract:  | 
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Train an support vector model (SVM) model to do image classification by using items in a dataset. 
+  - Use principal component analysis (PCA) to reduce the number of dimensions in a dataset to help increase the accuracy of a model.
+  - Use <code>GridSearchCV</code> with scikit-learn to tune hyperparameters and increase the accuracy of your model.
+  - Learn how to cross-validate a model, and quantify its accuracy.
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - TBD
+  - Text classifications with Naive Bayes
+  - Principal component analysis (PCA)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -31,10 +33,9 @@ products:
 - vs-code
 units:
 - learn.reactors.support-vector-machines-facial-recognition.1-introduction
-- learn.reactors.support-vector-machines-facial-recognition.2-load-dataset
-- learn.reactors.support-vector-machines-facial-recognition.3-train-svm-model
-- learn.reactors.support-vector-machines-facial-recognition.4-apply-pca
-- learn.reactors.support-vector-machines-facial-recognition.5-tune-hyperparameters
-- learn.reactors.support-vector-machines-facial-recognition.6-cross-validate
+- learn.reactors.support-vector-machines-facial-recognition.2-load-dataset-train-model
+- learn.reactors.support-vector-machines-facial-recognition.3-apply-pca
+- learn.reactors.support-vector-machines-facial-recognition.4-tune-parameters-cross-validate
+- learn.reactors.support-vector-machines-facial-recognition.5-knowledge-check
 badge:
   uid: learn.reactors.support-vector-machines-facial-recognition.badge 

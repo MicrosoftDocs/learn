@@ -1,0 +1,100 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.support-vector-machines-facial-recognition.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "What is SVM an abbreviation for?"
+    choices:
+    - content: "Simple Vectorized Model"
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, SVM does not refer to Simple Vectorized Model."
+    - content: "Simultaneous Vector Manipulation"
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, SVM does not refer to Simultaneous Vector Manipulation."
+    - content: "Simulated Volumetric Model"
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, SVM does not refer to	Simulated Volumetric Model."
+    - content: "Support Vector Machine"
+      isCorrect: true
+      explanation: "Correct. In machine learning, SVM is an abbreviation for Support Vector Machine."
+  - content: "What is the purpose of cross-validation in machine learning?"
+    choices:
+    - content: "Get a more accurate estimate of a model’s accuracy."
+      isCorrect: true
+      explanation: "Correct. Cross-validation helps you determine how accurate your model is."
+    - content: "Prevent a model from overfitting the training data"
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, cross-validation does not refer to fitting or overfitting training data."
+    - content: "Prevent a model from underfitting the training data."
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, cross-validation does not refer to fitting or underfitting training data."
+    - content: "Reduce the time required to test a model."
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, cross-validation is not used to help reduce time spent testing a model."
+  - content: "What is the purpose of hyperparameter tuning?"
+    choices:
+    - content: "Find the learning algorithm that produces the most accurate model."
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, tuning hyperparameters does not focus on finding an algorithm that would produce the most accurate model."
+    - content: "Eliminate collinearity in a dataset."
+      isCorrect: false
+      explanation: "Incorrect. In machine learning, tuning hyperparameters does not address collinearity in a dataset."
+    - content: "Find the combination of parameters that produces the most accurate model."
+      isCorrect: true
+      explanation: "Correct. In machine learning, tuning hyperparameters helps you find the combination of parameters that produces the most accurate model."
+    - content: "Reduce training time."
+      isCorrect: false
+      explanation: "Incorrect. Tuning hyperparameters is not related to how long it takes to train a dataset. Tuning hyperparameters and cross-validation might take more time, but you might end up with more accurate data."
+  - content: "For which of the following tasks might you use Principal Component Analysis (PCA)?"
+    choices:
+    - content: "Normalize the values in a column or a set of columns."
+      isCorrect: false
+      explanation: "Incorrect. PCA is not used to normalize the values in a column or set of columns."
+    - content: "Reduce the number of columns in a dataset from 100 to 10."
+      isCorrect: true
+      explanation: "Correct. You would use PCA in a task that reduces the number of columns in a dataset from 100 to 10."
+    - content: "Find a linear classification boundary by adding dimensions to the data."
+      isCorrect: false
+      explanation: "Incorrect. PCA is not used to fFind a linear classification boundary by adding dimensions to the data."
+    - content: "Find a linear classification boundary by removing dimensions from the data."
+      isCorrect: false
+      explanation: "Incorrect. PCA is not used to find a linear classification boundary by removing dimensions from the data."
+  - content: "In an SVM model, what do the <code>C</code> and <code>gamma</code> parameters control?"
+    choices:
+    - content: "The tightness of fit to the training data."
+      isCorrect: true
+      explanation: "Correct. In an SVM model, the <code>C</code> and <code>gamma</code> parameters control how tight the fit of the training data is."
+    - content: "The number of dimensions added to the data."
+      isCorrect: false
+      explanation: "Incorrect. The <code>C</code> and <code>gamma</code> parameters do not control the number of dimensions added to the data."
+    - content: "The tolerance for nulls in the training data."
+      isCorrect: false
+      explanation: "Incorrect. The <code>C</code> and <code>gamma</code> parameters do not control the tolerance for nulls in the training data."
+    - content: "The veracity of the training data."
+      isCorrect: false
+      explanation: "Incorrect. The <code>C</code> and <code>gamma</code> parameters are not used to verify the veracity of the training data."
+  - content: "What is the scikit-learn function you would call to train an SVM model?"
+    choices:
+    - content: "fit"
+      isCorrect: true
+      explanation: "Correct. You can use the scikit-learn <code>fit</code> function to train an SVM model."
+    - content: "train"
+      isCorrect: false
+      explanation: "Incorrect. <code>train</code> is not the function you use in scikit-learn to train an SVM model."
+    - content: "score"
+      isCorrect: false
+      explanation: "Incorrect. <code>score</code> is not the function you use in scikit-learn to train an SVM model."
+    - content: "transform"
+      isCorrect: false
+      explanation: "Incorrect. <code>transform</code> is not the function you use in scikit-learn to train an SVM model."

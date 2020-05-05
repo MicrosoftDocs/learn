@@ -1,23 +1,18 @@
-One of the iron laws of data science is know as the "[curse of dimensionality](https://wikipedia.org/wiki/Curse_of_dimensionality)": as the number of considered features (dimensions) of a space increases, the number of data configurations grows exponentially. Thus the number of observations (data points) needed to account for these configurations must also increase. This fact of life has huge ramifications for the time, computational effort, and memory required. As a result, it is often desirable to reduce the number of dimensions we work with.
+One of the iron laws of data science is know as the "curse of dimensionality": as the number of considered features (dimensions) of a feature space increases, the number of data configurations can grow exponentially. The number observations (data points) needed to account for these configurations must also increase. Because this fact of life has huge ramifications for the time, computational effort, and memory required, it is often desirable to reduce the number of dimensions we have to work with.
 
-The challenge is determining which features we can remove from our analysis.
-
-Not all features are created equal. Certain features may impede our analysis, or simply not be overly important. We need to identify the features to exclude, but obviously we can only take this so far. At a certain point reducing dimensions will also reduce the accuracy of a classifier and our analysis.
-
-## Our scenario
-
-We have a collection of foods and their nutrients. We'd like to group them together so we can see similar items. Our traditional categorization of dairy or vegetables aren't descriptive enouth, and can be a little misleading. For example, not all fruits are created equal - an avocado is rather different from a apple. We'd like to group our foods together based on their composition.
-
-As we begin our analysis, our initial challenge is trying to determine what makes a food item a food item? What components are most important? It's a real struggle to try to determine what components we should focus on.
+One way to accomplish this is by reducing the number of features considered in an analysis. After all, not all features are created equal, and some yield more insight for a given analysis than others. Although this type of feature engineering is necessary in any data science project, we can takt it only so far; up to a point, considering more features can often increase the accuracy of a classifier. (For example, consider how many features could increase the accuracy of classifying images as cats or dogs.)
 
 ## Learning objectives
 
+> [!NOTE]
+> SARAH: Would you check the learning objectives I derived from the module content? Thanks.
+
 In this module, you will:
 
-- TBD
-- TBD
-- TBD
+- Learn the meaning of *principal component analysis (PCA)* and *eigenvector*, and their function in machine learning.
+- Learn about PCA theory, and then apply PCA to a food composition dataset.
+- Check for correlation, and then normalize and center the data.
 
 ## Prerequisites
 
-- TBD
+- [Text classifications with Naive Bayes](../../text-classification-naive-bayes/index.yml)
