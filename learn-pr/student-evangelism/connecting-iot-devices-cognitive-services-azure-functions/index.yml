@@ -1,28 +1,44 @@
 ### YamlMime:Module
 uid: learn.oxford.deploy-cognitive-service-iot-edge-azure-func
 metadata:
-  title: "Deploying Cognitive Services on Edge devices using Azure Functions"
+  title: "Connecting IoT devices to Cognitive Services using Azure Functions"
   description: "University of Oxford"
   ms.date: 03/31/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-title: "Deploying Cognitive Services on Edge devices using Azure Functions "
-summary: ""
+  ms.prod: learning-azure-iot-hub
+title: "Connecting IoT devices to Cognitive Services using Azure Functions"
+summary: "Create and deploy an Azure function to make a language translation IoT device. The function will use Cognitive Speech Service. Your device will record a voice in a foreign language and convert the speech to a target language."
 abstract: |
+    In this module, you will:
+    - Configure an IoT device to an IoT Hub
+    - Integrate Cognitive Speech Service into an Azure function
+    - Deploy an Azure function app
+    - Test your Azure function app with the IoT device 
+
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
 prerequisites: |
     - Familiarity with Azure
-    - Basic understanding of IoT Edge
+    - Basic understanding of IoT
+    - Basic knowledge of Azure Functions
+    - Basic knowledge of Cognitive Services
+    - A MXChip IoT DevKit board with a Micro-USB cable
+    - A computer running Windows 10, macOS 10.10+ or Ubuntu 18.04+
+    - An active Azure subscription
+    - Visual Studio Code installed on your computer
+    - Arduino IDE installed on your computer
+    - .NET Core SDK installed on your computer
+
 iconUrl: connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
 badge:
-  uid: learn.oxford.deploy-cog-ser-iot-edge-azure-func.badge
+  uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.badge
 levels:
 - intermediate
 roles:
 - ai-edge-engineer
 products:
-- azure-iot-edge
+- azure-iot-hub
 units:
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.introduction
 - learn.oxford.connect-iot-devices-cognitive-services-azure-func.design-cognitive-service
