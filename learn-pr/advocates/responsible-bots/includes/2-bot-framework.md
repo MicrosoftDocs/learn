@@ -1,4 +1,4 @@
-## Microsoft Bot Framework and Microsoft Bot Service
+<!--## Microsoft Bot Framework and Microsoft Bot Service-->
 
 Before we start building out **GeoFriend** bot, let's learn the main principles of bot operation.
 
