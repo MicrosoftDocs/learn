@@ -123,5 +123,5 @@ quiz:
       isCorrect: true
       explanation: "This is correct, most bot platforms support sending files or pictures as attachments."
     - content: "The user would have to upload picture to some cloud storage and send the url to the bot"
-      isCorrect: true
+      isCorrect: false
       explanation: "It is possible to accept URL as input, but the overall experience for the user would be frustrating."
