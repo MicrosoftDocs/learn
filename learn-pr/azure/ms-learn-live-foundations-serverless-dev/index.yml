@@ -29,13 +29,39 @@ metadata:
 title: Foundations of serverless computing for developers
 
 summary: | 
-  TODO
+  It's time to go back to school and you're working on a solution for a school supplies retailer.
+  In the past, they had users complain about slow website response times during the back-to-school time. 
+  This year, the shop wants to be prepared. 
+  Customers should enjoy a highly responsive shopping experience when millions of kids head back to school and buy pencils, glue, rulers, markers, and many other supplies.
+  The development team decides to overhaul the website and re-implement inventory management using Azure technology.
+  Instead of the monolithic solution that tightly couples the customer-facing user interface and the inventory system,
+  they now plan a decoupled system, where the shopping website communicates with the inventory system over 
+  an HTTP API.
+  They have already finished work on the new website. 
+  Also, a cloud-based Cosmos DB storage solution with some test data is set up and configured.
+  The part still missing is the new inventory system, which must be able to handle the spikes in seasonal
+  demand without performance degradation. 
+  Demand is lower during the remainder of the year, so the retailer doesn't want to pay for unused 
+  infrastructure and is looking for a cost-efficient solution that can scale dynamically 
+  while keeping maintenance requirements to a minimum.
+  You want to identify the Azure services relevant for the project and get hands-on experience with them, 
+  so you can successfully implement the optimal HTTP API.
 
 abstract: | 
-  TODO
+  In this Learn Live series, you will:
+  - Design and implement a cost-efficient, and auto-scalable HTTP API using Azure Functions
+  - Connect to other Azure resources using bindings
+  - Configure your API to meet restful standards
+  - Prevent unauthorized access during development
+  - Document your API for mass consumption
 
 prerequisites: |
-  TODO
+  - Experienced as a junior web developer using JavaScript
+  - Familiarity with how HTTP verbs and routes are used in restful services
+  - Knows how to navigate Azure portal
+  - Familiar with Visual Studio Code and its extensions concepts
+  - Basic knowledge of the pros and cons of monolithic architectures versus decoupled architectures
+
 iconUrl: /learn/achievements/generic-badge.svg
 badge:
   uid: learn.azure.ms-learn-live-live-foundations-serverless-dev.badge
