@@ -1,2 +1,1 @@
-### Summary 
 In this module, you learned about Azure SQL, including the deployment options, purchasing models, service tiers, and hardware choices. Hopefully, you also have a better understanding of what to choose when. In the next module in the learning path, you'll learn more about deploying and configuring Azure SQL.  TODO ADD LINK

@@ -26,8 +26,10 @@ products:
 - azure
 units:
 - learn.azure-sql-intro.1-introduction
-- learn.azure-sql-intro.2-content-unit
-- learn.azure-sql-intro.3-exercise-unit
+- learn.azure-sql-intro.2-azure-sql-history
+- learn.azure-sql-intro.3-deployment-options
+- learn.azure-sql-intro.4-purchasing-models-service-tiers
+- learn.azure-sql-intro.5-management-interfaces
 - learn.azure-sql-intro.6-summary
 badge:
   uid: learn.azure-sql-intro.badge
