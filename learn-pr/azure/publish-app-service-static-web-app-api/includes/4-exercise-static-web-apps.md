@@ -58,6 +58,8 @@ Before publishing your app, create routing rules that include a fallback route.
 
 ### Configure Angular
 
+Angular apps do not copy files in the _src_ folder to the artifact folder by default. Use the following steps to ensure the _routes.json_ is copied to the appropriate location.
+
 1. In Visual Studio Code, open the file _angular-app/angular.json_
 1. Go to the property at:
 
@@ -76,7 +78,7 @@ Before publishing your app, create routing rules that include a fallback route.
    "assets": ["src/routes.json", "src/favicon.ico", "src/assets"],
    ```
 
-Now Angular will copy the _routes.json_ file to your artifact location when your app builds.
+Now Angular is configured to copy the _routes.json_ file to your artifact location when your app builds.
 
 ::: zone-end
 
