@@ -15,7 +15,7 @@ If you come to this course, you probably know some basics of software developmen
 In this course, we will start developing a simple bot which can help  school students learn Geography. We will call it **GeoFriend**. While I will not walk you through developing the complete functionality, I will teach you how to put basic building blocks together. You can later expand on that knowledge to complete this project, or develop similar bots for different subject areas and even for different tasks.
 
 >[!NOTE]
-Bot interface is typically more engaging for the user, because he/she often attributes human-like personality to the bot. This can also lead to some frustrations. To avoid that, we need to build **responsible bots**. 
+>Bot interface is typically more engaging for the user, because he/she often attributes human-like personality to the bot. This can also lead to some frustrations. To avoid that, we need to build **responsible bots**. 
 
 ## Responsible Conversational UI
 
@@ -73,7 +73,7 @@ Here's what you'll need to complete this course:
 
 ## Next steps
 
-Now that we know main principles of building responsible bots, let's try to apply them to building a simple Geography Assistant Bot. 
+Now that we know main principles of building responsible bots, let's try to apply them to building a simple Geography Assistant Bot.
 
 <!-- Links below this line -->
 
