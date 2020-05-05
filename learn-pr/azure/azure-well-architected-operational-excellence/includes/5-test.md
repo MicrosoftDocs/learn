@@ -59,3 +59,9 @@ It is equally important verifying that after the stress test is concluded, the i
 The same concept can be applied to the infrastructure. If the application should be resilient to infrastructure failures, introducing faults in the underlying infrastructure and observing how the application behaves is fundamental for increasing the trust in your redundancy mechanisms. Shutting down ungracefully infrastructure components, degrading the performance of certain elements such as network equipment or introducing faults purposely in the environment are ways of verifying that the application is going to react as expected when these situations occur in real life.
 
 Most companies use a controlled way of injecting faults in the system, although if confident with the application resiliency, automated frameworks could be used. Chaos engineering is a practice adopted by some organizations to identify areas where faults may occur by purposefully making key pieces of infrastructure unavailable.
+
+### Security tests
+
+Don't overlook testing your application for security vulnerabilities. Ensure you regularly perform security tests against your application to identify any application vulnerabilities introduce through code defects or through software dependencies. These tests can include automated security scans to test against common vulnerabilities such as cross-site scripting or SQL injection. They can also include red team exercises where security teams attempt to compromise an application.
+
+Use the results from these tests to feed back through the development process and resolve any security issues found in your code or software dependencies.
