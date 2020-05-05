@@ -12,7 +12,7 @@ Azure Functions can be written in the Azure portal or written externally using t
 
     _Creating an Azure Function App_
 
-1. Select the storage account that you created to receive wildlife photos. Change **Plan type** to **App service plan** so the function will execute immediately when a blob is uploaded to the "photos" container. Accept the defaults everywhere else, and click **Review + create**. Wait for validation to complete, and then click **Create**.
+1. Select the storage account that you created to receive wildlife photos. Accept the defaults everywhere else, and click **Review + create**. Wait for validation to complete, and then click **Create**.
 
     ![Specifying hosting options](../media/create-function-app-2.png)
 
@@ -141,6 +141,9 @@ Azure Functions can be written in the Azure portal or written externally using t
     npm install request
     npm install azure-storage
     ```
+
+    > [!NOTE]
+    > Ignore any warning messages that are displayed. We are using an older version of a javascript library for simplicity.
 
 1. Wait for the installs to finish. Then return to the "Platform features" tab and click **Function app settings**. Click **Manage application settings** and add two application settings to the Function App:
 
