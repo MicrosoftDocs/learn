@@ -183,7 +183,12 @@ Click the **Review + create** button. This will bring you to the page where you 
 Continue to create the application.
 
 1. Click the **Create** button
+
+   :::image type="content" source="../media/create-button.png" alt-text="Create button":::
+
 1. Once the deployment is complete, click the **Go to resource** button
+
+   :::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource button":::
 
 ### Review the GitHub Action
 
