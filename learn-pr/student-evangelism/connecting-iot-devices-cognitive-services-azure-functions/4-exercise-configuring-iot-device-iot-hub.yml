@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-edge
 durationInMinutes: 10 # dummy number at present
 content: |
-  [!include[](includes/4-exercise-configuring-edge-device-iot-hub.md)]
+  [!include[](includes/4-exercise-configuring-iot-device-iot-hub.md)]
