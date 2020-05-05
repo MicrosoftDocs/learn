@@ -17,10 +17,10 @@ Now, you'll add an API and connect it to your front-end app. The _api-starter_ f
 
 Before making changes to an app, it's good practice to create a new branch for the changes. You're about to complete the API for your app, so now is a good time to create a branch.
 
-1. In Visual Studio Code, open the command palette by pressing **F1**
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Git: Checkout to...**
 1. Select **Create new branch**
-1. Type **api** for the new branch name and press **ENTER**
+1. Type **api** for the new branch name and press <kbd>Enter</kbd>
 
 You just created the **api** git branch.
 
@@ -28,7 +28,7 @@ You just created the **api** git branch.
 
 To complete the API, you'll start by moving the starter API code to a folder named _api_. This is the folder name you entered when you created the Static Web Apps instance.
 
-1. In Visual Studio Code, open the command palette by pressing **F1**
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Terminal: Create New Integrated Terminal**
 1. Make sure you are in the root folder of the project
 1. Use git commands to rename the _api-starter_ folder to _api_
@@ -37,7 +37,7 @@ To complete the API, you'll start by moving the starter API code to a folder nam
    git mv api-starter api
    ```
 
-1. Open the command palette by pressing **F1**
+1. Open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Git: Commit All**
 1. Type the commit message **api** and press <kbd>Enter</kbd>
 
@@ -53,7 +53,7 @@ Your API has routes for manipulating the products for the shopping list, but it 
 
 ## Create the HTTP GET function
 
-1. In Visual Studio Code, open the command palette by pressing **F1**
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Azure Functions: Create Function**
 1. When prompted to create a function, select **HTTP Trigger**
 1. Enter **products-get** as the name of the function
@@ -190,7 +190,7 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
 
 Now it's time to watch your web app and Azure Functions project work together. Start by running your Azure Functions project locally by following these steps:
 
-1. In Visual Studio Code, open the command palette by pressing **F1**
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Terminal: Create New Integrated Terminal**
 1. Go to the _api_ folder
 
@@ -254,7 +254,7 @@ Configure the proxy for your front-end app with the following steps:
 
 Your API is already running on port 7071. Now when you run your web app it'll make its HTTP requests to your API. Run your web app by following these steps:
 
-1. In Visual Studio Code, open the command palette by pressing **F1**
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Terminal: Create New Integrated Terminal**
 1. Next, go to the folder of your preferred front-end framework, as shown below:
 

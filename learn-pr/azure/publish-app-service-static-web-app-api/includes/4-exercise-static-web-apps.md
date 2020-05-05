@@ -31,7 +31,7 @@ Before publishing your app, create routing rules that include a fallback route.
 ::: zone-end
 
 2. Select **New File**
-3. Type _routes.json_ and press **ENTER**
+3. Type _routes.json_ and press <kbd>Enter</kbd>
 4. Update the _routes.json_ file to include the following fallback route:
 
    ```json
@@ -78,10 +78,10 @@ Now Angular is configured to copy the _routes.json_ file to your artifact locati
 
 Now save, commit, and push your changes to Git by following these steps:
 
-1. Open the command palette by pressing **F1**.
+1. Open the command palette by pressing <kbd>F1</kbd>.
 1. Type and select **Git: Commit All**. If Visual Studio Code prompts you to automatically stage all of your changes and commit them directly, select **Yes**.
 1. Enter a commit message such as **added routing rules for a fallback route**.
-1. Open the command palette by pressing **F1**.
+1. Open the command palette by pressing <kbd>F1</kbd>.
 1. Type and select **Git: Push**.
 
 ## Create a Static Web App
@@ -214,7 +214,7 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 Your app is displaying the **Products** page in the browser. Notice the URL is **/products**. Now refresh the browser and test your fallback route.
 
-In your browser, press **F5** to refresh the page. Your app should reload successfully thanks to your fallback route in your routing rules!
+In your browser, press <kbd>F5</kbd> to refresh the page. Your app should reload successfully thanks to your fallback route in your routing rules!
 
 ## Next steps
 

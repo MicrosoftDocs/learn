@@ -4,10 +4,10 @@ Your web app and API are both running locally. Now it's time to publish your web
 
 You've made changes to your API in the previous exercise. Commit those changes to the **api** branch and push them to GitHub by following these steps:
 
-1. In Visual Studio Code, open the command palette by pressing **F1**
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Git: Commit All**. If Visual Studio Code prompts you to automatically stage all of your changes and commit them directly, select **Yes**.
 1. Enter a commit message such as **api changes**
-1. Open the command palette by pressing **F1**
+1. Open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Git: Push**
 1. If you are prompted with the message **The branch 'api' has no upstream branch. Would you like to publish this branch?** press the **OK** button
 
