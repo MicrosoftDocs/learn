@@ -1,4 +1,4 @@
-Now the time has come for you to create an API for your shopping list app, but first you need to create API app.
+Now the time has come for you to create an API for your shopping list app.
 
 ## Azure Functions
 
@@ -25,7 +25,7 @@ Here are the four endpoints that you'll create:
 | PUT     | `products/:id`  | `api/products/:id` |
 | DELETE  | `products/:id`  | `api/products/:id` |
 
-Notice that you HTTP GET requests will route to _api/products_. The _api_ prefix is reserved for your API endpoints in the app. You can define any other routes to fit the needs of your site, but _api_ always points to the Azure Functions app.
+Notice that your HTTP GET requests will route to _api/products_. The _api_ prefix is reserved for your API endpoints in the app. You can define any other routes to fit the needs of your site, but _api_ always points to the Azure Functions app.
 
 ### Create an API for the web app
 

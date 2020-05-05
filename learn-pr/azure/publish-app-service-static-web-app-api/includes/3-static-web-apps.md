@@ -44,11 +44,11 @@ What if you don't have an API? Don't worry. If Azure Static Web Apps can't find 
 
 There's a client-side route **/products** in your front-end application that displays a list of products for your shopping list. When you navigate to **/products** in your app by clicking the **Products** link, your browser's address bar will confirm that you are at **/products**. When you refresh the browser while on this page, you want the app to refresh and display the products once again. However, without a fallback route, you will see a 404 error stating the page cannot be found.
 
-You see a 404 error when you refresh the page because the browser sends a request to the hosting platform to serve **/products**. There's no page on the server named \*products\*\* to serve.
+You see a 404 error when you refresh the page because the browser sends a request to the hosting platform to serve **/products**. There's no page on the server named **products** to serve.
 
-Fortunately, it's easy to resolve this by creating a fallback route. A fallback route is commonly known as a route that matches all unmatched page requests to the server.
+Fortunately, it's easy to resolve this by creating a fallback route. A fallback route is a route that matches all unmatched page requests to the server.
 
-You can configure routing rules for your app with Azure Static Web Apps. Routing rules are defined in an optional _routes.json_ file located in the app's app artifact folder. You can define a route in the **routes** array. A common fallback route configuration is shown below:
+Azure Static Web Apps supports custom routing rules defined in an optional _routes.json_ file located in the app's artifact folder. You can define a route in the **routes** array. A common fallback route configuration is shown below:
 
 ```json
 {

@@ -1,13 +1,5 @@
 In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that will automatically build and publish your application.
 
-## Activate the Azure sandbox
-
-The first step is to connect to an Azure sandbox. You can create the Azure Static Web Apps resources from here.
-
-1. Start by **activating the Azure sandbox above**.
-1. Once the sandbox is activated, [sign into the Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-   - Make sure you use the same account to sign in as you did to activate the sandbox.
-
 ## Create a routing rule
 
 Before publishing your app, create routing rules that include a fallback route.
@@ -86,19 +78,22 @@ Now Angular is configured to copy the _routes.json_ file to your artifact locati
 
 Now save, commit, and push your changes to Git by following these steps:
 
-1. Open the command palette by pressing **F1**
+1. Open the command palette by pressing **F1**.
 1. Type and select **Git: Commit All**. If Visual Studio Code prompts you to automatically stage all of your changes and commit them directly, select **Yes**.
-1. Enter a commit message such as **added routing rules for a fallback route**
-1. Open the command palette by pressing **F1**
-1. Type and select **Git: Push**
+1. Enter a commit message such as **added routing rules for a fallback route**.
+1. Open the command palette by pressing **F1**.
+1. Type and select **Git: Push**.
 
 ## Create a Static Web App
 
 Now that you've created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
 
-1. In the top bar, search for **Static Web Apps**
-1. Select **Static Web Apps**
-1. Select **New**
+This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
+
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), making sure you use the same account to sign in as you did to activate the sandbox.
+1. In the top bar, search for **Static Web Apps**.
+1. Select **Static Web Apps**.
+1. Select **New**.
 
 ### Basics
 
@@ -116,7 +111,7 @@ Next, configure your new app and link it to your GitHub repository.
    | Setting  | Value                                                                         |
    | -------- | ----------------------------------------------------------------------------- |
    | _Name_   | Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `_`. |
-   | _Region_ | Select Region closest to you                                                  |
+   | _Region_ | Select the region closest to you                                                  |
    | _SKU_    | **Free**                                                                      |
 
 1. Click the **Sign-in with GitHub** button and authenticate with GitHub
@@ -188,9 +183,9 @@ Continue to create the application.
 
 ### Review the GitHub Action
 
-At this stage, your Static Web Apps instance is created in Azure, but your app not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
+At this stage, your Static Web Apps instance is created in Azure, but your app is not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
 
-You can check the status of your build and deploy action by clicking the link shown below:
+You can check the status of your build and deploy action by clicking the link shown below to navigate to the Actions page of your GitHub repository:
 
 :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
 
