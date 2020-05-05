@@ -1,4 +1,4 @@
-Now that you know how to create arrays in NumPy, you need to get comfortable with manipulating them, for two reasons. First, you'll work with NumPy arrays as part of your exploration of data science. Second, our other important Python data-science tool, pandas, is actually built around NumPy. Getting good at working with NumPy arrays will pay dividends in the next section (Section 4) and beyond. NumPy arrays are the building blocks for the `Series` and `DataFrame` data structures in the Python pandas library. You'll use them *a lot* in data science. To help you get comfortable with array manipulation, we'll cover five specific topics:
+Now that you know how to create arrays in NumPy, you need to get comfortable with manipulating them, for two reasons. First, you'll work with NumPy arrays as part of your exploration of data science. Second, our other important Python data-science tool, pandas, is built around NumPy. Getting good at working with NumPy arrays will pay dividends in the next section (Section 4) and beyond. NumPy arrays are the building blocks for the `Series` and `DataFrame` data structures in the Python pandas library. You'll use them *a lot* in data science. To help you get comfortable with array manipulation, we'll cover five specific topics:
 
 - **Arrays attributes**: Assessing the size, shape, and data types of arrays
 - **Indexing arrays**: Getting and setting the value of individual array elements
@@ -8,7 +8,7 @@ Now that you know how to create arrays in NumPy, you need to get comfortable wit
 
 ## Array attributes
 
-First, let's look at some array attributes. We'll start by defining three arrays filled with random numbers: one one-dimensional, another two-dimensional, and the last three-dimensional. Because we'll be using NumPy's random number generator, we'll set a *seed* value to ensure that you get the same random arrays each time you run this code:
+First, let's look at some array attributes. We'll start by defining three arrays filled with random numbers: one one-dimensional, another two-dimensional, and the last three-dimensional. Because we'll use NumPy's random number generator, we'll set a *seed* value to ensure that you get the same random arrays each time you run this code:
 
 ```python
 import numpy as np
@@ -84,7 +84,7 @@ Change the values in this code snippet to look at the attributes for `a2` and `a
 ***
 
 
-Another useful array attribute is `dtype`, which we already encountered earlier in this section as a way to determine the type of data in an array:
+Another useful array attribute is `dtype`, which we already looked at earlier in this section as a way to determine the type of data in an array:
 
 ```python
 print("dtype:", a3.dtype)
@@ -126,7 +126,7 @@ What `dtype` values do you predict them to have?
 
 ## Indexing arrays
 
-Indexing in NumPy is pretty similar to indexing lists in standard Python. In fact, indices in one-dimensional arrays work exactly as they do with Python lists.
+Indexing in NumPy is similar to indexing lists in standard Python. In fact, indices in one-dimensional arrays work exactly as they do with Python lists.
 
 Try:
 
@@ -232,7 +232,7 @@ Try a few combinations, like `a2[1][1]` or `a3[0][2][1]`, and see what comes bac
 
 You might have noticed that we can treat multidimensional arrays like lists of lists. But a more common way to access items in multidimensional arrays is to use a comma-separated tuple of indices.
 
-(Yes, we realize that these comma-separated tuples use square brackets rather than the parentheses the name might suggest, but they're nevertheless referred to as tuples.)
+(Yes, we realize that these comma-separated tuples use square brackets rather than the parentheses the name might suggest. They're still referred to as tuples.)
 
 Try:
 
@@ -487,7 +487,7 @@ How would you access the *last* five elements of array `a`? How about every othe
 
 Be careful when you use negative values for `step`. When `step` has a negative value, the defaults for `start` and `stop` are swapped. You can use this functionality to reverse an array.
 
-This gives you all elements, reversed:
+This code gives you all elements, reversed:
 
 ```python
 a[::-1]
@@ -499,7 +499,7 @@ The output is:
 array([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
 ```
 
-And this gives you every other element, from index 5, reversed:
+And this code gives you every other element, from index 5, reversed:
 
 ```python
 a[5::-2]
@@ -598,7 +598,7 @@ array([[ 7,  7,  6,  1],
 
 ### Accessing array rows and columns
 
-When you manipulate data, you'll often need to access a single row or column in an array. You can do so by using a combination of indexing and slicing. Specifically, you'll use an empty slice marked by a single colon (`:`). Again, some examples will help illustrate this.
+When you manipulate data, you'll often need to access a single row or column in an array. You can do so by using a combination of indexing and slicing. Specifically, you'll use an empty slice marked by a single colon (`:`). Again, some examples will help illustrate this concept.
 
 To get the first column of `x2`:
 

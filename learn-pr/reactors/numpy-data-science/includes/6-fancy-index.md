@@ -253,7 +253,7 @@ array([[ 6,  4,  5],
 
 Again, consider what you got back as output: the elements at positions 2, 0, and 1 of each row after the first one (so the second and third rows).
 
-Of course, you can also combine fancy indexing with masking:
+You can also combine fancy indexing with masking:
 
 ```python
 mask = np.array([1, 0, 1, 0], dtype=bool)

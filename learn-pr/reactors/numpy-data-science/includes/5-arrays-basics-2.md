@@ -108,7 +108,7 @@ The output is:
 
 You'll also need to manipulate arrays by reshaping them. Reshaping involves changing the number and size of dimensions of an array. This kind of manipulation can be important to get your data to meet the expectations of machine learning programs or APIs.
 
-The most flexible way to do this kind of manipulation is the `reshape` method. For example, if you want to put the numbers 1 through 9 in a 3 x 3 grid, you can do this:
+The most flexible way to do this kind of manipulation is the `reshape` method. For example, if you want to put the numbers 1 through 9 in a 3 x 3 grid, you can use this code:
 
 ```python
 grid = np.arange(1, 10).reshape((3, 3))
@@ -123,7 +123,7 @@ The output is:
  [7 8 9]]
 ```
 
-Another common manipulation you'll do in data science is convert one-dimensional arrays into two-dimensional row or column matrices. This manipulation is a common necessity when you do linear algebra for machine learning. While you can do this by means of the `reshape` method, an easier way is to use the `newaxis` keyword in a slice operation.
+Another common manipulation you'll do in data science is convert one-dimensional arrays into two-dimensional row or column matrices. This manipulation is a common necessity when you do linear algebra for machine learning. While you can do this by using the `reshape` method, an easier way is to use the `newaxis` keyword in a slice operation.
 
 Row vector via `reshape`:
 

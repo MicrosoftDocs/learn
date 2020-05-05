@@ -139,7 +139,7 @@ array([[3, 4, 6, 7, 6, 9],
 
 The result is an array where the first two slots in each row contain the smallest values from that row. The remaining values fill the remaining slots.
 
-Finally, just as there's an `np.argsort` that computes indices of the sort, there's an `np.argpartition` that computes indices of the partition. We'll see this in action in the following section when we discuss pandas.
+Finally, just as there's an `np.argsort` that computes indices of the sort, there's an `np.argpartition` that computes indices of the partition. We'll see this function in action in the following section when we discuss pandas.
 
 >[!div class="alert is-tip"]
 >### Takeaway

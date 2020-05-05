@@ -1,4 +1,4 @@
-Some of the properties that make Python great to work with for data science (its dynamic, interpreted nature, for example) can also make it slow. This performance issue is particularly true with looping. These small performance hits can add up to minutes (or longer) when you're dealing with huge datasets.
+Some of the properties that make Python great to work with for data science (its dynamic, interpreted nature, for example) can also make it slow. This is particularly true with looping. These small performance hits can add up to minutes (or longer) when you're dealing with huge datasets.
 
 When we first examined loops in the introduction to Python, you probably didn't notice any delay. The loops were short enough that Python's relatively slow looping wasn't an issue. Consider this function, which calculates the reciprocal for an array of numbers:
 
@@ -143,7 +143,7 @@ Here's a cheat sheet for the equivalencies between Python operators and NumPy uf
 | `**` | `np.power` | Exponentiation (for example, `2 ** 3 = 8`) |
 | `%` | `np.mod` | Modulus/remainder (for example, `9 % 4 = 1`) |
 
-Python Boolean operators also work. We'll explore those later in this section.
+Python Boolean operators also work. We'll explore those operators later in this section.
 
 ## Absolute value
 

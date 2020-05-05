@@ -31,7 +31,7 @@ The output is:
 [int, int, int, int, int, int, int, int, int, int]
 ```
 
-Of course, a really handy feature of Python lists is that they can hold heterogeneous types of data in a single list object:
+Of course, a handy feature of Python lists is that they can hold heterogeneous types of data in a single list object:
 
 ```python
 myList2 = [True, "2", 3.0, 4]
@@ -44,9 +44,9 @@ The output is:
 [bool, str, float, int]
 ```
 
-But this flexibility comes at a price. Each item in a list is really a separate Python object. (The list is an object itself, true, but mostly it's an object that serves as a container for the memory pointers to the constituent objects.) That means that each item in a list must contain its own type info, reference count, and other information. 
+But this flexibility comes at a price. Each item in a list is really a separate Python object. (The list is an object itself. But mostly it's an object that serves as a container for the memory pointers to the constituent objects.) That means that each item in a list must contain its own type info, reference count, and other information. 
 
-All this information can become expensive in terms of memory and performance if we're dealing with hundreds of thousands or millions of items in a list. And, for many uses in data science, our arrays just store a single type of data (such as integers or floats), so all the object-related information for items in such an array is redundant. It can be much more efficient to store data in a fixed-type array.
+All this information can become expensive in terms of memory and performance if we're dealing with hundreds of thousands or millions of items in a list. And, for many uses in data science, our arrays just store a single type of data (such as integers or floats). So all the object-related information for items in such an array is redundant. It can be much more efficient to store data in a fixed-type array.
 
 Enter the fixed-type, NumPy-style array.
 
@@ -151,7 +151,7 @@ Try this with a different `dtype`.
 
 Remember that you can always refer to the documentation by using the command `np.array`.
 
-Most usefully for a lot of applications in data science, NumPy arrays can explicitly be multidimensional (like matrices or tensors). Here's one way to create a multidimensional array by using a list of lists.
+Most usefully for many applications in data science, NumPy arrays can explicitly be multidimensional (like matrices or tensors). Here's one way to create a multidimensional array by using a list of lists.
 
 Nested lists result in multidimensional arrays:
 
