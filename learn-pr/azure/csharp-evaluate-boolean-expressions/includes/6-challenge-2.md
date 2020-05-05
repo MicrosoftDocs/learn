@@ -20,7 +20,7 @@ int level = 53;
 You may need to use additional data to sufficiently test all of the scenarios described in Step 3, below.
 
 > [!IMPORTANT]
-> Use the `Contains()` helper method of a string to determine whether the `permission` varaible's value contains one of the permission values you'll be checking for in the "business rules".  Example: `permission.Contains("Admin")` would return `true`. 
+> Use the `Contains()` helper method of a string to determine whether the `permission` variable's value contains one of the permission values you'll be checking for in the "business rules".  Example: `permission.Contains("Admin")` would return `true`. 
 
 ### Step 3 - Implement business rules
 
