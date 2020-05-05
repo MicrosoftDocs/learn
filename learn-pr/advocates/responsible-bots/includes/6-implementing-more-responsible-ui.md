@@ -1,8 +1,8 @@
-# Implementing More Responsible UI Principles
+## Implementing More Responsible UI Principles
 
 By now, we have added most of the functionality to our bot, but some small pieces are missing. In this unit, we will make small improvements to the bot to implement more  **Responsible Conversational UI** principles.
 
-# Providing Help
+## Providing Help
 
 When a user starts using a bot for the first time, he or she does not always know what to say. Even though we all know how speak a human language, bots natural language understanding capabilities are not always up to the standards. That's why it is very helpful to provide user with some examples of possible commands that bot will definitely understand.
 
@@ -42,7 +42,7 @@ At this point you can start your bot code in Visual Studio and see how it works 
 >[!TIP]
 >You can design complex multi-turn help system with QnA Maker using [follow-up prompts and multi-turn conversations][QnAFollowUp].
 
-# Meaningful Welcome Message
+## Meaningful Welcome Message
 
 Original Echo Bot code contained the functionality to send  user a welcome message. Function `OnMembersAddedAsync` in `Bots\EchoBot.cs` is responsible for monitoring new users in a chat, and when new user enters - it sends him/her a welcome message.
 
@@ -69,7 +69,7 @@ Here is how the initial conversation with our bot might look like:
 
 ![Welcome Message and Help](../media/HelpConversation.png)
 
-# More Visual Interaction
+## More Visual Interaction
 
 Interacting with a bot using plain text solves most of the problems, but sometimes it is useful to be able to communicate through more visual means. Bot Framework supports that by using the following mechanisms:
 
@@ -133,7 +133,7 @@ Here is how our conversation with attachment look like in the emulator:
 >[!NOTE]
 >The code for the application at this point is available [in this github repository][GitFlag]
 
-# Supporting Language Diversity
+## Supporting Language Diversity
 
 We have learned in the first unit that the ideal responsible bot should support **diversity**. Diversity can come in many flavors:
 
@@ -157,7 +157,7 @@ In more complex scenarios we can include some language switching logic, which wi
 >[!NOTE]
 > An example of using translation middleware can be found [here][BotTranslateSample].
 
-# Adding Dialog Interactions
+## Adding Dialog Interactions
 
 So far, all interactions with our bot have been based on request-response pattern, and the bot did not have to track the context of the conversation. However, there are scenarios when interaction with the user involves several consecutive steps, for example:
 
@@ -184,14 +184,14 @@ As we know, bots should welcome diversity, and thus ideally they should support 
 >[!NOTE]
 >To support more communication channels, you can also receive speech as an attachment, and then convert it to text on the server side through [Speech API][SpeechAPI].
 
-# Conclusion
+## Conclusion
 
 We have discussed many ways in which our bot could be improved. And even though we did not discuss implementing all that functionality in detail, I hope that you are now confident that Bot Framework provides all necessary means to build responsible bot UI.
 
 
 [QnAPortal]: https://qnamaker.ai
-[QnAFollowUp]: https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/multiturn-conversation
-[BotAttachments]: https://docs.microsoft.com/ru-ru/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp
+[QnAFollowUp]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/multiturn-conversation
+[BotAttachments]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp
 [AdaptiveCards]: https://docs.microsoft.com/adaptive-cards/getting-started/bots
 [WikiFlags]: https://en.wikipedia.org/wiki/National_flag
 [CountryFlagsFile]: http://github.com/#TODO
