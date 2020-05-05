@@ -1,4 +1,4 @@
-# Microsoft Bot Framework and Microsoft Bot Service
+## Microsoft Bot Framework and Microsoft Bot Service
 
 Before we start building out **GeoFriend** bot, let's learn the main principles of bot operation.
 
@@ -12,7 +12,7 @@ Another important role of Bot Framework is to provide some useful developer abst
 
 ![Bot Framework Diagram](../media/BotFrameworkDiagram.png)
 
-# Cognitive Services
+## Cognitive Services
 
 To make bots intelligent, we often want to use some AI techniques. For example, figuring out what user wants without the need to specify the exact phrase requires some **natural language understanding**. Those intelligent tasks can be handled using so-called **[Cognitive Services][CoServ]** - a set of pre-trained neural network models that are available in the cloud.
 
@@ -20,7 +20,7 @@ In our module, we will be using **[Language Understanding Intelligent Service][L
 
 Cognitive Services are very often used with bots, that's why they occupy the large part of the figure above.
 
-# Creating a Bot
+## Creating a Bot
 
 Let's start creating our **GeoFriend** Assistant chat bot. The easiest way to start is to create a new Azure Bot Service:
 
@@ -60,7 +60,7 @@ Here you can select desired programming language (**C#** or **Node.js**, we will
 
 It will take some time for all bot resources to be created. Once you see the notification that deployment is complete - go to bot' resource group to check out what has been created. 
 
-# Bot Page on the Azure Portal
+## Bot Page on the Azure Portal
 
 From the Azure Portal start page, click **Resource Groups**, and select the group you have specified on step 3.
 ![Bot Resource Group](../media/AzPortalBotResourceGroup.png)
@@ -77,7 +77,7 @@ Let's click on the first **GeoFriend** link. We are taken to the Bot page on the
 
 This page is the main starting point for configuring the bot. On the first **overview** tab you can see the typical sequence of steps that we need to do in order to complete the bot project. It all starts with the idea or a **Plan**, followed by the **Build** stage, at which we are now. We will discuss how to build the bot in the next unit. 
 
-# Running the Bot
+## Running the Bot
 
 Right from this page, we can try our newly created bot in action. Click on **Test in Web Chat** tab on the left pane, and you will see a chat box that you can use to converse with the bot.
 ![Web Chat](../media/AzPortalWebChat.png)
@@ -88,7 +88,7 @@ Let's move on to the next unit to see how we can alter the bot's behavior.
 
 [BotFW]: https://dev.botframework.com/
 [BotService]: https://azure.microsoft.com/services/bot-service/
-[CoServ]: http://microsoft.com/cognitive
+[CoServ]: https://microsoft.com/cognitive
 [AzPortal]: https://portal.azure.com
 [AdjustServicePlan]: https://docs.microsoft.com/azure/app-service/app-service-plan-manage
 [LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/
