@@ -2,14 +2,14 @@
 uid: learn.azure-well-architected-operational-excellence
 metadata:
   title: Azure Well-Architected - Operational excellence
-  description: Learn how to design an Azure architecture that is operationally-efficient and gives you full visibility into what's happening in your environment.
+  description: Learn how to design an Azure architecture that uses modern practices and gives you full visibility into what's happening in your environment.
   ms.date: 05/19/2020
   author: jboeshart 
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure Well-Architected - Operational excellence
-summary: Learn how to design an Azure architecture that is operationally-efficient and gives you full visibility into what's happening in your environment.
+summary: Learn how to design an Azure architecture that uses modern practices and gives you full visibility into what's happening in your environment.
 abstract:  | 
   In this module, you will:
     - Identify modern practices to design, build, and orchestrate resources on Azure
