@@ -5,7 +5,7 @@ metadata:
   description: Implement a CI/CD pipeline for Python.
   ms.date: 04/27/2020
   author: tpetchel
-  ms.author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Python deployments with Azure Pipelines
