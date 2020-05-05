@@ -30,7 +30,7 @@ prerequisites: |
     - Arduino IDE installed on your computer
     - .NET Core SDK installed on your computer
 
-iconUrl: connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
+iconUrl: /learn/achievements/student-evangelism/connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
 badge:
   uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.badge
 levels:
