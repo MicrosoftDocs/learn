@@ -22,7 +22,7 @@ prerequisites: |
   - You should understand how to include a module from the Python Standard Library.
   - Experience using if statements and the string's `isnumeric()` helper method to evaluate user input.
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-while.svg
 levels:
 - beginner
 roles:

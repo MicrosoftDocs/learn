@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="107px" viewBox="0 0 107 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>NA/modify-the-content-of-strings-using-built-in-string-data-type-methods-in-c#</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <path d="M6.1875,2.0625 L10.3125,2.0625 L10.3125,30.9375 L6.1875,30.9375 L6.1875,2.0625 L6.1875,2.0625 Z M10.3125,0 L16.5,0 L16.5,4.125 L10.3125,4.125 L10.3125,0 L10.3125,0 Z M10.3125,28.875 L16.5,28.875 L16.5,33 L10.3125,33 L10.3125,28.875 L10.3125,28.875 Z M0,0 L6.1875,0 L6.1875,4.125 L0,4.125 L0,0 L0,0 Z M0,28.875 L6.1875,28.875 L6.1875,33 L0,33 L0,28.875 L0,28.875 Z" id="path-3"></path>
+        <filter x="-36.4%" y="-15.2%" width="172.7%" height="136.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="78.4210223%" y1="-7.24023438%" x2="15.5786468%" y2="110.793945%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-6" x="-3" y="-3" width="106" height="106" rx="53"></rect>
+        <filter x="-0.5%" y="-0.5%" width="101.9%" height="101.9%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-65" transform="translate(-47.000000, -257.000000)">
+            <g id="NA/modify-the-content-of-strings-using-built-in-string-data-type-methods-in-c#" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <g id="Circle-" transform="translate(-2.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="BG"></g>
+                        <g id="Color/Blue" mask="url(#mask-2)" fill="#55A2FF" fill-rule="evenodd">
+                            <rect id="Rectangle" x="0" y="0" width="100" height="100"></rect>
+                        </g>
+                    </g>
+                    <g id="Group-26" transform="translate(-46.000000, 27.000000)">
+                        <rect id="Rectangle" fill="#F7CB64" x="62" y="9" width="49" height="28" rx="2"></rect>
+                        <g id="Group" transform="translate(50.000000, 13.000000)" fill="#000000">
+                            <rect id="Rectangle" x="0" y="0" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="4.80916031" y="4.80916031" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="0" y="9.61832061" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="4.80916031" y="9.61832061" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="4.80916031" y="14.4274809" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="13.1682842" y="0" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="13.1682842" y="4.80916031" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="17.9774445" y="4.80916031" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="26.3365684" y="4.80916031" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="26.3365684" y="0" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="31.1457287" y="9.61832061" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="26.3365684" y="14.4274809" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="21.5274081" y="14.4274809" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="38.0003217" y="0" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="38.0003217" y="4.80916031" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="38.0003217" y="9.61832061" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="38.0003217" y="14.4274809" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="42.809482" y="9.61832061" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="47.6186423" y="4.80916031" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="54.7185695" y="0" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="59.5277298" y="0" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="59.5277298" y="4.80916031" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="54.7185695" y="9.61832061" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="54.7185695" y="14.4274809" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="66.943026" y="14.4274809" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="71.7521863" y="9.61832061" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="71.7521863" y="4.80916031" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="71.7521863" y="0" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="66.943026" y="0" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="80.1113102" y="9.61832061" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="80.1113102" y="4.80916031" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="84.9204705" y="9.61832061" width="4.80916031" height="4.80916031"></rect>
+                            <rect id="Rectangle" x="84.9204705" y="14.4274809" width="4.80916031" height="4.80916031"></rect>
+                        </g>
+                        <g id="System-/-Cursor-/-Text" transform="translate(99.000000, 6.000000)">
+                            <g id="Path">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <path stroke-opacity="0.8" stroke="#FFFFFF" stroke-width="1" d="M5.6875,1.5625 L10.8125,1.5625 L10.8125,31.4375 L5.6875,31.4375 L5.6875,1.5625 Z M9.8125,-0.5 L17,-0.5 L17,4.625 L9.8125,4.625 L9.8125,-0.5 Z M9.8125,28.375 L17,28.375 L17,33.5 L9.8125,33.5 L9.8125,28.375 Z M-0.5,-0.5 L6.6875,-0.5 L6.6875,4.625 L-0.5,4.625 L-0.5,-0.5 Z M-0.5,28.375 L6.6875,28.375 L6.6875,33.5 L-0.5,33.5 L-0.5,28.375 Z" fill="#363B3E" fill-rule="evenodd"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border">
+                    <path d="M50,0 C74.5263677,-4.50542066e-15 94.9281966,17.6592499 99.1842495,40.9565123 L94.2027317,73.3905473 C85.8096395,89.2186645 69.1638777,100 50,100 C30.9551233,100 14.3971863,89.3521454 5.95457608,73.6848234 L0.0261464987,48.3675131 C0.887696267,21.508872 22.932015,4.97230817e-15 50,0 Z" id="Combined-Shape" fill="url(#linearGradient-5)" fill-rule="evenodd" opacity="0.400000006" style="mix-blend-mode: overlay;"></path>
+                    <g>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                        <rect stroke="#F2F1F0" stroke-width="4" stroke-linejoin="square" x="-1" y="-1" width="102" height="102" rx="51"></rect>
+                    </g>
+                    <rect stroke="#0078D4" stroke-width="4" x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
