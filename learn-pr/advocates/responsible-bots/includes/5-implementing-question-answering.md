@@ -1,8 +1,8 @@
-# Implementing Question Answering and Personality
+## Implementing Question Answering and Personality
 
 Now out bot can handle a few specific requests, but it would also be nice to give it the ability to answer general questions on geography terminology, eg. act like a simple encyclopedia. We definitely could create this functionality using LUIS by creating separate intents, but there is an easier way. There is a special cognitive service to handle this type of scenarios called **[QnA Maker][QAMaker]**.
 
-# Training Q&A Maker Model
+## Training Q&A Maker Model
 
 Similar to LUIS, when adding QnA Maker to our bot, the first thing we need to do is to train QnA Maker on our specific data. To start, go to http://qnamaker.ai and sign in with your Microsoft Account:
 ![QnA Maker](../media/QnAMakerCreate.png)
@@ -70,7 +70,7 @@ After publishing, you will get the final page with details on how to call the se
 
 In fact, using QnA Maker is probably the easiest way to get a bot up and running in the cloud. Even a bot without sophisticated functionality can implement Responsible UI!
 
-# Adding QnA Maker Model to our Bot
+## Adding QnA Maker Model to our Bot
 
 In our case, we already have a working bot, and just want to add QnA Maker functionality to handle the chit-chat and question answering. This process would be quite similar to adding LUIS recognizer.
 
@@ -160,7 +160,7 @@ In our code, we call both LUIS and QnA Maker, and select which service gives us 
 
 At this point, you can run the project and test it in Bot Emulator.
 
-# Conclusion
+## Conclusion
 
 The bot we have create so far already seems quite intelligence. Here is a sample conversation I had with a bot:
 
@@ -174,5 +174,5 @@ The bot we have create so far already seems quite intelligence. Here is a sample
  In the next unit, we will specifically focus on some final touches that implement Responsible Conversational UI principles.
 
 [QAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/
-[ProjectPersonalityChat]: https://www.microsoft.com/en-us/research/project/personality-chat/
+[ProjectPersonalityChat]: https://www.microsoft.com/research/project/personality-chat/
 [CodeQnA]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t3-qna
