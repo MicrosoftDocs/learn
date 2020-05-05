@@ -32,9 +32,9 @@ Azure Functions can be written in the Azure portal or written externally using t
 
 1. Click **Azure Blob Storage trigger**. If you are prompted to install the `Microsoft.Azure.WebJobs.Extensions.Storage` extension, click the **Install** button. Wait for the extension to be installed, and then click **Continue**. (If you are not prompted to install the extension, you may have to wait a minute or two before proceeding to the next step.)
 
-1. Change the function name to `BlobTrigger` and the path to "photos/{name}" so the function will be triggered when blobs are uploaded to the "photos" container. 
+1. Change the function name to `BlobTrigger` and the path to "photos/{name}" so the function will be triggered when blobs are uploaded to the "photos" container.
 
-1. Click **new** next to "Storage account connection" and select the storage account that you created earlier. Note the string that is shown in this field. Then click **Create** to add the function to the Function App.
+1. Click **new** next to "Storage account connection" and select the storage account that you created earlier. Note down the string that is shown in this field, as you will use it in a later step. Then click **Create** to add the function to the Function App.
 
     ![Creating a blob-triggered function](../media/add-function-3.png)
 
@@ -46,7 +46,7 @@ Azure Functions can be written in the Azure portal or written externally using t
     module.exports = function (context, myBlob) {
         var predictionUrl = process.env.PREDICTION_URL;
         var predictionKey = process.env.PREDICTION_KEY;
-        var storageConnectionString = process.env.CONNECTION_STRING_NAME;
+        var storageConnectionString = process.env.<CONNECTION_STRING_NAME>;
 
         var storage = require('azure-storage');
         var blobService = storage.createBlobService(storageConnectionString);
@@ -127,7 +127,7 @@ Azure Functions can be written in the Azure portal or written externally using t
 
     The code that you just added uses the Azure Storage SDK for Node.js ([azure-storage](https://www.npmjs.com/package/azure-storage)) to generate a read-only SAS for the blob whose URL is passed to the Custom Vision Service, and appends it to the blob URL as a query string. The SAS is valid for 3 minutes and allows read access only. This allows your code to submit private blobs to the Custom Vision Service for analysis without putting the blobs in a public container where anyone could download them.
 
-1. Replace CONNECTION_STRING_NAME on line 4 with the **Storage account connection** string you noted earlier (for example, "polarbearstorage_STORAGE"). This connection string was added to application settings when you added the `BlobTrigger` function to the Function App, and its name derives from the storage-account name. Then click the **Save** button to save the changes.
+1. Replace <CONNECTION_STRING_NAME> on line 4 with the **Storage account connection** string you noted earlier (for example, "polarbearstorage_STORAGE"). This connection string was added to application settings when you added the `BlobTrigger` function to the Function App, and its name derives from the storage-account name. If needed, you can look it up in the Application settings of the Function App. Then click the **Save** button to save the changes.
 
 1. Click the Function App in the menu on the left. Click **Platform features**, and then click **Console** to open a function console.
 
@@ -157,7 +157,7 @@ Azure Functions can be written in the Azure portal or written externally using t
 
     _Opening the function's output log_
 
-1. Start a separate browser instance and navigate to the Azure portal. Open the storage account and upload **image_12.jpg** from the "Camera Images" folder in the resources that accompany this module to the "photos" container. Here's what **image_12.jpg** looks like:
+1. Start a separate browser instance and navigate to the [Azure portal](https://portal.azure.com?azure-portal=true). Open the storage account and upload **image_12.jpg** from the "photos" folder you created in an earlier unit this module to the "photos" container. Here's what **image_12.jpg** looks like:
 
     ![Image uploaded to blob storage](../media/image_12.jpg)
 
@@ -173,7 +173,7 @@ The reason for the text "undefined at undefined, undefined" in the log output is
 
 ## Run the camera array ##
 
-Next, you will run the simulated camera array that you created earlier. Then you will check the log output from the Azure Function to verify that images are being uploaded to blob storage and analyzed for polar bears. 
+Next, you will run the simulated camera array that you created earlier. Then you will check the log output from the Azure Function to verify that images are being uploaded to blob storage and analyzed for polar bears.
 
 1. Return to the project directory in a Command Prompt or terminal window. Then use the following command to run **run.js**:
 
