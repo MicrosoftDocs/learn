@@ -28,6 +28,7 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. The C
 
     ```bash
     ACCOUNT_NAME="<account name>"
+    ```
 
     > [!NOTE]
     > Storage-account names must be from 3 to 24 characters in length and can contain only numbers and lowercase letters. In addition, the account name must be unique within Azure, so if later commands fails because the storage-account name is already in use, change the name and try again.
