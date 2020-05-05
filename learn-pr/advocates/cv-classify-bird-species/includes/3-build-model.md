@@ -103,7 +103,7 @@ project = trainer.create_project("Bird Classification")
 print("Project created!")
 ```
 
-3. Go to [customvision.ai](customvision.ai) if you would like to validate the project was created in the UI.
+3. Go to [customvision.ai](https://www.customvision.ai/) if you would like to validate the project was created in the UI.
 4. Unzip the `bird_photos.zip` and save it to the same directory as the Jupyter notebook. Then add the following code to get the list of bird type tags to be created based on the folder names in the `bird_photos` directory.
 
 ```python
