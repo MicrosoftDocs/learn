@@ -17,4 +17,9 @@ In this module, you will:
 
 ## Prerequisites
 
-- TBD
+- Introduction to Python **(LINK TBA)**
+- Beginners Data Science for Python Developers **(LINK TBA)**
+- Join and clean datasets: Deep dive **LINK TBA**
+- Supervised learning: Regression
+- Predict numeric values with regression
+- Predict categories with machine learning classification
