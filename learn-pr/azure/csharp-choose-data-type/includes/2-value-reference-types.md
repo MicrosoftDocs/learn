@@ -8,7 +8,7 @@ Answering the question "what is data" depends on who you ask, and in what contex
 
 In software development, data is essentially a value that is stored in the computer's memory as a series of bits.  A **bit** is a simple binary switch represented as a `0` or `1`, or rather, "off" and "on", respectively.  A single bit doesn't seem useful, however when you combine 8 bits together in a sequence, they form a **byte**.  When used in a byte, each bit takes on a meaning in the sequence.  In fact, you can represent 255 different combinations with just 8 bits if you use a binary (or rather, base-2) numeral system.
 
-For example, in a binary numeral system, you can represent the number `195` as `110000011`.  The following table will help you visualize how this works.  The first row has 8 columns that correspond to a position in a byte.  Each position represents a different numeric value.  The second row can store the value of an individual bit, either `0` or `1`.
+For example, in a binary numeral system, you can represent the number `195` as `11000011`.  The following table will help you visualize how this works.  The first row has 8 columns that correspond to a position in a byte.  Each position represents a different numeric value.  The second row can store the value of an individual bit, either `0` or `1`.
 
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 |-----|-----|-----|-----|-----|-----|-----|-----|
