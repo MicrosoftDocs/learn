@@ -16,32 +16,29 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: ''
+  - content: 'Which of the following would be an example of a stress test?'
     choices:
-    - content: ''
+    - content: 'Scanning for SQL injection vulnerabilities.'
       isCorrect: false
-      explanation: ''
-    - content: ''
+      explanation: 'This would be an example of a security test.'
+    - content: 'Submitting an API call for each of the published APIs that your service exposes to validate an appropriate response.'
       isCorrect: false
-      explanation: ''
-    - content: ''
+      explanation: 'This would be an example of an integration test.'
+    - content: 'Testing every public method in your code for accuracy.'
       isCorrect: false
-      explanation: ''
-    - content: ''
+      explanation: 'This would be an example of a unit test.'
+    - content: 'Running an increasing number of API calls against your service.'
       isCorrect: true
-      explanation: ''
+      explanation: 'This would test the load of the system and is an example of a stress test.'
 
-  - content: ''
+  - content: 'If you had a new feature that you wanted to gain insight into whether or not it improves the user experience, which acceptance testing strategy would be the most appropriate? '
     choices:
-    - content: ''
+    - content: 'Blue/Green deployment'
       isCorrect: false
-      explanation: ''
-    - content: ''
+      explanation: 'Blue/green deployments are effective at rolling back changes that may introduce issues, but are not the best strategy for this scenario.'
+    - content: 'Canary release'
       isCorrect: false
-      explanation: ''
-    - content: ''
+      explanation: 'Canary tests are intended to determine if a particular feature is rolled out to users, but is not the best strategy for this scenario.'
+    - content: 'A/B test'
       isCorrect: false
-      explanation: ''
-    - content: ''
-      isCorrect: true
-      explanation: ''
+      explanation: 'This would allow you to test one experience with some users, and different experience with others. You could then analyze the results to determine the impact of the new user experience.'
