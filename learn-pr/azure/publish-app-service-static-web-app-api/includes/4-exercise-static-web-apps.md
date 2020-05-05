@@ -50,7 +50,7 @@ Before publishing your app, create routing rules that include a fallback route.
 
 ### Configure Angular
 
-Angular apps do not copy files in the _src_ folder to the artifact folder by default. Use the following steps to ensure the _routes.json_ is copied to the appropriate location.
+Angular apps don't copy files in the _src_ folder to the artifact folder by default. Use the following steps to ensure the _routes.json_ is copied to the appropriate location.
 
 1. In Visual Studio Code, open the file _angular-app/angular.json_
 1. Go to the property at:
@@ -111,7 +111,7 @@ Next, configure your new app and link it to your GitHub repository.
    | Setting  | Value                                                                         |
    | -------- | ----------------------------------------------------------------------------- |
    | _Name_   | Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `_`. |
-   | _Region_ | Select the region closest to you                                                  |
+   | _Region_ | Select the region closest to you                                              |
    | _SKU_    | **Free**                                                                      |
 
 1. Click the **Sign-in with GitHub** button and authenticate with GitHub
@@ -172,7 +172,7 @@ Next, add configuration details specific to your preferred front-end framework.
 Click the **Review + create** button. This will bring you to the page where you can review the resource before you create it.
 
 > [!NOTE]
-> Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This is not common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
+> Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
 
 ### Review + create
 
@@ -183,7 +183,7 @@ Continue to create the application.
 
 ### Review the GitHub Action
 
-At this stage, your Static Web Apps instance is created in Azure, but your app is not yet deployed. The GitHub Action that Azure creates in your repository will run automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
+At this stage, your Static Web Apps instance is created in Azure, but your app isn't yet deployed. The GitHub Action that Azure creates in your repository will run automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
 
 You can check the status of your build and deploy action by clicking the link shown below to navigate to the Actions page of your GitHub repository:
 
