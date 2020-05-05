@@ -13,36 +13,36 @@ durationInMinutes: 5 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which of the following is a characteristic of Azure functions and serverless?"
     choices:
-    - content: ""
+    - content: "You can bring your own containers."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "You deploy and manage containerised applications easily with Serverless Kubernetes."
+    - content: "You can automate your business process."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "You use a serverless engine to build automated workflows to integrate apps and data between cloud services and on-premises systems with Logic apps."
+    - content: "You can integrate services using triggers and bindings"
       isCorrect: true
-      explanation: ""
-  - content: ""
+      explanation: "You can integrate Azure services into the function and use trigger to execute your code."
+  - content: "Suppose you're responsible for managing the realiability of speech data coming from different kinds of IoT devices which are connected to IoT Hub. What is the reason of IoT Hub is an appropriate solution for this scenario?"
     choices:
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
+    - content: "IoT Hub provides per device identity to each device."
       isCorrect: true
-      explanation: ""
-  - content: ""
+      explanation: "IoT Hub securely connects device to the IoT Hub by per-device authentication."
+    - content: "IoT Hub tracks events like device creation, device failures and device connections."
+      isCorrect: false
+      explanation: "IoT Hub maintain the health of your solution by tracking events."
+    - content: "IoT Hub is hosted in the cloud."
+      isCorrect: false
+      explanation: "It doesn’t refer to secure connection."
+  - content: "Suppose that you’re responsible for implementing AI solution with IoT device as an event-based function. You want to explore the ability to interact with Cognitive Service. Which would be a better a solution to implement this scenario?"
     choices:
-    - content: ""
+    - content: "You can provide a binding that can be invoked by the trigger that will execute the functionality of Cognitive Service in the function."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "The trigger invokes the function and provides the binding."
+    - content: "You can write a function that can be deployed locally, run the function by calling Cognitive service API."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "You can only deploy your function and access the Cognitive service in the cloud."
+    - content: "You can write your code as an Azure function which is invoked by a trigger and call the Cognitive Service into the function."
       isCorrect: true
-      explanation: ""
+      explanation: "This gives the flexibility for you to interact with you Cognitive Service API."
