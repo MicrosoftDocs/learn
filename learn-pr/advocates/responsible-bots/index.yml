@@ -2,14 +2,14 @@
 uid: learn.advocates.responsible-bots
 metadata:
   title: Build responsible conversational UI
-  description: Learn how to build eesponsible conversational UI by using bots.
+  description: Learn how to build responsible conversational UI by using bots.
   ms.date: 05/19/2020
   author: shwars
   ms.author: dmitryso
   ms.topic: interactive-tutorial
   ms.prod: learning-advocates
 title: Build responsible conversational UI
-summary: In this course, we'll learn about **responsible conversational AI**, and how to make bots that a user can trust and enjoy speaking to. We'll cover the main principles and then apply those principles to building simple a **Educational Assistant for Geography** bot, which we call **GeoFriend**. Our bot will help school children to learn more about geography and answer some questions, and also learn some study techniques!
+summary: In this course, we'll learn about responsible conversational AI, and how to make bots that a user can trust and enjoy speaking to. We'll cover the main principles and then apply those principles to building simple a **Educational Assistant for Geography** bot, which we call **GeoFriend**. Our bot will help school children to learn more about geography and answer some questions, and also learn some study techniques!
 abstract: |
   In this module, you will:
   - Learn basic principles to develop responsible conversational experiences for users
@@ -19,11 +19,11 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
-- advocate
 - developer
+- student
 products:
 - azure
-- vs-code
+- vs
 prerequisites: |
   - Basic knowledge of C\#
 units:
