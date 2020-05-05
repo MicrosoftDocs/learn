@@ -85,6 +85,19 @@
                 "dest": "modules"
             },
             {
+                "src": "cela-accessibility",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },                    
+            {
                 "src": "cmu-cloud-admin",
                 "files": [
                     "**/*.yml",
