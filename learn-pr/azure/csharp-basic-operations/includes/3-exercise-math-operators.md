@@ -49,7 +49,7 @@ Console.WriteLine("Decimal quotient: " + decimalQuotient);
 If you run the code, you will see the following output:
 
 ```output
-decimal quotient: 1.4
+Decimal quotient: 1.4
 ```
 
 In order for this to work, the quotient (left of the assignment operator) must be of type `decimal` **and** either the dividend *or* divisor must be of type `decimal` (*or* both).
