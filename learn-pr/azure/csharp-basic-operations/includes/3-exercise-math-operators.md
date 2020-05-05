@@ -61,7 +61,7 @@ decimal decimalQuotient = 7 / 5.0m;
 decimal decimalQuotient = 7.0m / 5.0m;
 ```
 
-However, the following lines of code won't work:
+However, the following lines of code won't work (or give inaccurate results):
 
 ```csharp
 int decimalQuotient = 7 / 5.0m;
