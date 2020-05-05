@@ -5,7 +5,7 @@ Code challenges throughout these modules will reinforce what you've learned and 
 In this challenge, you'll flip a coin to display either `heads` or `tails`.  This is a perfect scenario for the conditional operator.
 
 > [!NOTE]
-> If you've not followed along with these C# learning paths sequentially, take a moment to familiarize yourself with the `Random` class and its `Next()` method by reviewing the unit [Calling different kinds of methods in the .NET Class Library](https://docs.microsoft.com/en-gb/learn/modules/csharp-call-methods/3-call-methods?azure-portal=true).
+> If you've not followed along with these C# learning paths sequentially, take a moment to familiarize yourself with the `Random` class and its `Next()` method by reviewing the unit [Calling different kinds of methods in the .NET Class Library](https://docs.microsoft.com/learn/modules/csharp-call-methods/3-call-methods?azure-portal=true).
 
 ### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise
 
