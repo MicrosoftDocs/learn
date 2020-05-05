@@ -15,19 +15,19 @@ If you come to this course, you probably know some basics of software developmen
 In this course, we will start developing a simple bot which can help  school students learn Geography. We will call it **GeoFriend**. While I will not walk you through developing the complete functionality, I will teach you how to put basic building blocks together. You can later expand on that knowledge to complete this project, or develop similar bots for different subject areas and even for different tasks.
 
 >[!NOTE]
->Bot interface is typically more engaging for the user, because he/she often attributes human-like personality to the bot. This can also lead to some frustrations. To avoid that, we need to build **responsible bots**. 
+>Bot interface is typically more engaging for the user, because he/she often attributes human-like personality to the bot. This can also lead to some frustrations. To avoid that, we need to build **responsible bots**.
 
 ## Responsible Conversational UI
 
 To help developer create responsible bots, Microsoft has outlined [10 guidelines for developers of Conversational UI][Guidelines10]. We will not cover all principles here, but outline the major ones that we will need in this course. You can learn more about responsible conversational UI by viewing [this great interactive demo][InteractiveDemo].
 
-> It is important for developers to be aware of responsible conversational UI principles, because, as one of the principles say, **developers are accountable for the bots they deploy**.
+It is important for developers to be aware of responsible conversational UI principles, because, as one of the principles say, **developers are accountable for the bots they deploy**.
 
 ### Ensure bot has a clear goal
 
 When developing a bot, you should clearly understand its purpose, and you should also articulate this purpose to the users. When using a bot, users should be aware of its limitations, so that they do not have higher expectations, which leads to disappointment and/or misuse of the bot.
 
-It is especially important when you are dealing with so-called **consequential outcomes**, when a conversation with a bot can have a significant impact on user's life. Examples include bots in such problem domains as healthcare or education. 
+It is especially important when you are dealing with so-called **consequential outcomes**, when a conversation with a bot can have a significant impact on user's life. Examples include bots in such problem domains as healthcare or education.
 
 For example, in the case of our **GeoFriend** bot, it is important to articulate that the bot does not replace a teacher, and may only act as an assistant, which may help to learn better. We do not want to end up in the situation when a user trusted the bot to teach him Geography, and later or discovered that his knowledge is not up to standards.
 
