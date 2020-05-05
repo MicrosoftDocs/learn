@@ -17,9 +17,9 @@ Fill out the form to create the Speech Service.
 **Resource group:** Select your resource group
 
 
-Go to the Speech service you just created, click Keys section to copy and note down the Key1. You will use it for IoT DevKit to access.
+Go to the Speech service you just created, click Keys section to copy and note down the Key1. You'll use it for IoT DevKit to access.
 
-![An illustration is showing speech api keys.](../media/speech-api-key.png)
+![An illustration is showing speech API-keys.](../media/speech-api-key.png)
 
 
 ##  Installing extensions for VS Code
@@ -77,7 +77,7 @@ Click F1 to open the command palette, type, and select Arduino: Board Manager. S
 
 In VS Code, click F1, type, and select Azure IoT Device Workbench: Provision Azure Services....
 
-![An illustration is showing how to provision azure services.](../media/provision-azure-services.png)
+![An illustration is showing how to provision Azure services.](../media/provision-azure-services.png)
 
 Follow the steps to finish the provisioning of Azure IoT Hub and Azure Functions.
 
@@ -87,7 +87,7 @@ Take a note of the Azure IoT Hub device name you created.
 
 Now you have Azure IoT Hub provisioned and device created in it. Also, the device connection string will be saved in VS Code for configuring the IoT DevKit later.
 
-![An illustration is showing the confirmation of provisioning azure services.](../media/provision-azure-services-3.png)
+![An illustration is showing the confirmation of provisioning Azure services.](../media/provision-azure-services-3.png)
 
 
 
@@ -109,19 +109,19 @@ const string deviceName = "";
 
 Click F1, type, and select Azure IoT Device Workbench: Deploy to Azure.... If VS Code asks for confirmation for redeployment, click Yes.
 
-![An illustration is showing how to deploy azure function to the cloud.](../media/deploy-azure-function.png)
+![An illustration is showing how to deploy Azure function to the cloud.](../media/deploy-azure-function.png)
 
 Make sure the deployment is successful. 
 
-![An illustration is showing the confirmation of azure function deployment.](../media/successful-function-development.png)
+![An illustration is showing the confirmation of Azure function deployment.](../media/successful-function-development.png)
 
-In the Azure portal, go to the Functions Apps section, find the Azure Function app just created. Click **devkit_translator**, then click **Get Function URL** to copy the URL.
+In the Azure portal, go to the Functions Apps section, find the Azure Function app created. Click **devkit_translator**, then click **Get Function URL** to copy the URL.
 
 ![An illustration is showing how to get function url from the cloud.](../media/function-url.png)
 
 Paste the URL into **azure_config.h** file.  
 
-![An illustration is showing how to configure azure function url in the sample project.](../media/configure-function-url.png)
+![An illustration is showing how to configure Azure function url in the sample project.](../media/configure-function-url.png)
 
 
 ##  Configuring Device Settings
@@ -132,7 +132,7 @@ Click F1, type, and select Azure IoT Device Workbench: Configure Device Settings
 
 On DevKit, hold down button A, push and release the reset button, and then release button A. Your DevKit enters configuration mode and saves the connection string.
 
-You will see the notification once it's done successfully.  
+You'll see the notification once it's done successfully.  
 
 ![An illustration is showing the confirmation of configuration the connection string.](../media/successful-configuration.png)
 

@@ -3,7 +3,7 @@
 To start Azure Cloud Shell,  
 Go to [**https://shell.azure.com**](https://shell.azure.com).
 
-![An illustration is showing how to open azure cloud shell.](../media/cloud-shell.png)
+![An illustration is showing how to open Azure Cloud Shell.](../media/cloud-shell.png)
 
 
 You need to install the Azure IoT extension for Azure CLI using the following command. This extension manages Azure resources such as IoT Hub.
@@ -62,9 +62,9 @@ On the IoT DevKit,
 - Push and release the reset button
 - Release button B
 
-IoT DevKit enters AP mode for configuring the Wi-Fi connection. You will see the service set identifier (SSID) of the IoT DevKit and the configuration portal IP address on the screen of the device.  
+IoT DevKit enters AP mode for configuring the Wi-Fi connection. You'll see the service set identifier (SSID) of the IoT DevKit and the configuration portal IP address on the screen of the device.  
 
-![An illustration is showing how to configuring the device.](../media/connect-devkit-wifi.jpg)
+![An illustration is showing how to configure the device.](../media/connect-devkit-wifi.jpg)
 
 Use a Web browser on a different Wi-Fi enabled device (computer or mobile phone) to connect to the IoT DevKit SSID displayed in the previous step.
 
