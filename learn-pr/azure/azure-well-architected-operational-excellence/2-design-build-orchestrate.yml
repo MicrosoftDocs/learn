@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-operational-excellence.2-design-build-orchestrate
+title: Design, build, and orchestrate with modern practices
+metadata:
+  title: Design, build, and orchestrate with modern practices
+  description: Design, build, and orchestrate with modern practices
+  ms.date: 05/19/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-design-build-orchestrate.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: ''
+    choices:
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: true
+      explanation: ''
+
+  - content: ''
+    choices:
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: true
+      explanation: ''

@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-operational-excellence.5-test
+title: Use automation to reduce effort and error
+metadata:
+  title: Use automation to reduce effort and error
+  description: In this unit, we'll discuss how to use automation to reduce effort and error
+  ms.date: 05/19/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-test.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: ''
+    choices:
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: true
+      explanation: ''
+
+  - content: ''
+    choices:
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: false
+      explanation: ''
+    - content: ''
+      isCorrect: true
+      explanation: ''

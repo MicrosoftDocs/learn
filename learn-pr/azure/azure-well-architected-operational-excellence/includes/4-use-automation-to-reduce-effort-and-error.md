@@ -101,7 +101,7 @@ Templates can be used to create and manipulate most services on Azure. They can 
 
 Automating your infrastructure deployment is a great first step, but when deploying virtual machines, there's still more work to do. Let's take a look at a couple of approaches to automating configuration post deployment.
 
-## VM customization: images vs. post-deployment configuration
+## VM images vs. post-deployment configuration
 
 For many virtual machine deployments, the job isn't done when the machine is running. It's likely there's additional configuration that's needed before the VM can actually serve its intended purpose. Additional disks might need formatting, the VM might need to be joined to a domain, maybe an agent for a management software needs to be installed, and most likely the actual workload requires installation and configuration as well.
 
