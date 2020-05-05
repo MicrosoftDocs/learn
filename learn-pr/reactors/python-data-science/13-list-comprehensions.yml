@@ -3,7 +3,7 @@ uid: learn.reactors.python-data-science.13-list-comprehensions
 title: List comprehensions
 metadata:
   title: List comprehensions in Python for data science
-  description: Understand how to economically and computationally create lists in Python for data science.
+  description: Understand how to economically and programmatically create lists in Python for data science.
   ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals

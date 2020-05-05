@@ -1,6 +1,6 @@
 Python includes a number of handy methods that are available to all lists.
 
-For example, use [append()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) and [extend()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) to add to the end of a list, much like what an augmentation ("+=") operator does for variables:
+For example, use [append()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) and [extend()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) to add to the end of a list. These methods work on lists much like an augmentation ("+=") operator works on other variables.
 
 ```python
 groupMembers = ['Jordan', 'Parker']

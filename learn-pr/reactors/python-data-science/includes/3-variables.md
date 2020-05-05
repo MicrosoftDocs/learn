@@ -51,7 +51,7 @@ The output is:
 'fifteen'
 ```
 
-Note that, for all the flexibility of variables in Python, you do still have to define them. If you try to use an undefined variable, you'll produce an error:
+For all the flexibility of variables in Python, you do still have to define them. If you try to use an undefined variable, you'll produce an error:
 
 ```python
 n
@@ -95,7 +95,7 @@ The output is:
 
 Always treat the `_` variable as read-only. Explicitly assigning a value to it will create an independent local variable with the same name and will mask the built-in variable and its behavior.
 
-Our last output was kind of a mess, however. We typically use only two decimal points or fewer when working with prices. To clean this up, we can use a built-in function called `round()`.
+Our last output was kind of a mess, however. We typically use only two decimal points or fewer when working with prices. To clean up the output, we can use a built-in function called `round()`.
 
 ```python
 round(_, 2)

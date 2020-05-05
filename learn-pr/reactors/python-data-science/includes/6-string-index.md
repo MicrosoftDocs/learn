@@ -255,7 +255,7 @@ The output is:
 'PyPy'
 ```
 
-A slice is not a string literal, however. It can't be used with automatic concatenation. The following code produces an error:
+A slice isn't a string literal, however. It can't be used with automatic concatenation. The following code produces an error:
 
 ```python
 word[:2] 'Py'    # Slice is not a literal; produces an error.

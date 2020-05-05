@@ -19,7 +19,7 @@ To set up your environment:
 
 ## Test your environment
 
-You've successfully set up your environment with Visual Studio Code, Python, Anaconda, and the NumPy and Pandas libraries. You're now ready to run a Jupyter notebook inside of Visual Studio Code.
+You've successfully set up your environment with Visual Studio Code, Python, Anaconda, and the NumPy and Pandas libraries. You're now ready to run a Jupyter notebook inside Visual Studio Code.
 
 1. Clone the [Reactor repository](https://github.com/microsoft/Reactors?azure-portal=true) and open the [Learn/Intro-Python-Data-Science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md?azure-portal=true) in Visual Studio Code.
 2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/Test-Setup-Config.ipynb?azure-portal=true) file to ensure that you're ready to continue through the learning path.
@@ -30,14 +30,14 @@ You've successfully set up your environment with Visual Studio Code, Python, Ana
 
 As you work through this learning path, you're encouraged to try out code. Use the files you cloned for this purpose.
 
-Jupyter notebooks are divided into cells. Each cell contains either text written in the Markdown markup language or a space in which to write and execute computer code. Because all the code resides inside code cells, you can run each code cell inline instead of using a separate Python interactive window.
+Jupyter notebooks are divided into cells. Each cell contains either text that's written in the Markdown markup language or a space in which to write and execute computer code. Because all the code is inside code cells, you can run each code cell inline instead of using a separate Python interactive window.
 
 > [!Note]
 > This learning path has you run code cells one by one. As you complete these modules, we encourage you to copy the code snippets into your Jupyter notebook in Visual Studio Code and run the cells one at a time.
 
 ## Comments
 
-Many of the examples in this notebook include comments. In Python, comments start with the hash character (#) and extend to the end of the physical line. A comment might appear at the start of a line or following white space or code, but not within a string literal. A hash character within a string literal is just a hash character. Because comments are there to clarify code and are not interpreted by Python, you can omit them when you type in examples. For example:
+Many of the examples in this notebook include comments. In Python, comments start with the hash character (#) and extend to the end of the physical line. A comment might appear at the start of a line or after white space or code, but not within a string literal. A hash character within a string literal is just a hash character. Because comments are there to clarify code and are not interpreted by Python, you can omit them when you type in examples. For example:
 
 ```python
 # This is the first comment
@@ -61,7 +61,7 @@ Python is an interpreted language, which means that you can use the interpreter 
 
 How do you see the results? The Python interpreter runs inside this notebook. To run the code inside a cell, either select **Run Cell** at the top of the window or press Ctrl+Enter.
 
-In the Python.ipynb file in Visual Studio Code, enter the following into a Python cell. (We'll cover what the syntax of the Python code means later on in this module.)
+In the Python.ipynb file in Visual Studio Code, enter the aft into a Python cell. (We'll cover what the syntax of the Python code means later on in this module.)
 
 ```python
 print("Hello, world.")

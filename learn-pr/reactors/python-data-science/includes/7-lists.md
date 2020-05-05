@@ -47,7 +47,7 @@ The output is:
 [9, 16, 25]
 ```
 
-All slice operations return a new list that contains the requested elements. So, the following slice returns a new, _shallow_ copy of the list:
+All slice operations return a new list that contains the requested elements. So, the following slice returns a new, shallow copy of the list:
 
 ```python
 squares[:]
