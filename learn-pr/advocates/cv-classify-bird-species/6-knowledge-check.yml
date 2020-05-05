@@ -38,3 +38,22 @@ quiz:
         - content: "Precision"
           isCorrect: false
           explanation: "Incorrect. This metric is provided."
+    - content: "Which of the following is a common rookie mistake?"
+      choices:
+        - content: "Bad data"
+          isCorrect: true
+          explanation: "Correct! Good data is key to making a good machine learning model."
+        - content: "Too much data"
+          isCorrect: false
+          explanation: "Incorrect. More data is better if the data is good data."
+        - content: "Using unseen (new) data to test"
+          isCorrect: false
+          explanation: "Incorrect. You always want to test with unseen (new) data."
+    - content: "The model should not be deployed until it has perfect results and is 100% accuracy on all classes"
+      choices:
+        - content: "False"
+          isCorrect: true
+          explanation: "Correct! You will have to make the decision of when the model is performing 'good enough' for the problem you are trying to solve."
+        - content: "True"
+          isCorrect: false
+          explanation: "Incorrect. There is always some error in models, they will never be perfect."
