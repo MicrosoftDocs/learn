@@ -207,12 +207,12 @@ Again, we'll start by writing out the shape of the arrays:
 - `vertical_array.shape = (3, 1)`
 - `horizontal_array.shape = (3,)`
 
-Based on rule 1, we need to pad the shape of `horizontal_array` with ones:
+Rule 1 says we need to pad the shape of `horizontal_array` with ones:
 
 - `vertical_array.shape -> (3, 1)`
 - `horizontal_array.shape -> (1, 3)`
 
-Based on rule 2, we upgrade each of these ones to match the corresponding size of the other array:
+And rule 2 tells us that we need to upgrade each of these ones to match the corresponding size of the other array:
 
 - `vertical_array.shape -> (3, 3)`
 - `horizontal_array.shape -> (3, 3)`
@@ -245,17 +245,17 @@ This situation is just slightly different from the situation in the first exampl
 - `M.shape = (3, 2)`
 - `i.shape = (3,)`
 
-Again, rule 1 tells us that we must pad the shape of `i` with ones:
+Again, rule 1 tells us that we need to pad the shape of `i` with ones:
 
 - `M.shape -> (3, 2)`
 - `i.shape -> (1, 3)`
 
-By rule 2, the first dimension of `i` is stretched to match that of `M`:
+Based on rule 2, the first dimension of `i` is stretched to match that of `M`:
 
 - `M.shape -> (3, 2)`
 - `i.shape -> (3, 3)`
 
-Now we hit Rule 3: the final shapes do not match and the two arrays are incompatible:
+Now we hit Rule 3: the final shapes don't match and the two arrays are incompatible:
 
 ```python
 M + i
@@ -274,9 +274,9 @@ ValueError: operands could not be broadcast together with shapes (3,2) (3,)
 
 ## Broadcasting in practice
 
-Ufuncs enable you to avoid using slow Python loops; broadcasting builds on that.
+Ufuncs enable you to avoid using slow Python loops. Broadcasting builds on that.
 
-A common data practice is to *center* an array of data. For example, if we have an array of 10 observations, each of which consists of three values (called features in this context), we might want to center that data so that we have the differences from the mean rather than the raw data itself. Doing this can help us better compare the different values.
+A common data practice is to *center* an array of data. For example, say we have an array of 10 observations, each of which consists of three values (called features in this context). We might want to center that data so that we have the differences from the mean rather than the raw data itself. Doing so can help us better compare the different values.
 
 We'll store this in a 10 x 3 array:
 
@@ -300,7 +300,7 @@ array([[0.90137772, 0.75292208, 0.26398243],
        [0.03382156, 0.3552458 , 0.3588655 ]])
 ```
 
-Now compute the mean of each feature using the `mean` aggregate across the first dimension:
+Now compute the mean of each feature by using the `mean` aggregate across the first dimension:
 
 ```python
 Tmean = T.mean(0)
@@ -313,7 +313,7 @@ The output is:
 array([0.43302262, 0.30781767, 0.50607784])
 ```
 
-Finally, center `T` by subtracting the mean. (This is a broadcasting operation.)
+Finally, center `T` by subtracting the mean. (This operation is a broadcasting operation.)
 
 ```python
 T_centered = T - Tmean
@@ -335,9 +335,9 @@ array([[ 0.4683551 ,  0.4451044 , -0.24209541],
        [-0.39920105,  0.04742813, -0.14721234]])
 ```
 
-This is not just faster, but easier than writing a loop to do this.
+This method isn't just faster. It's also easier than writing a loop to do this.
 
 >[!div class="alert is-tip"]
 >### Takeaway
 >
->The data you will work with in data science invariably comes in different shapes and sizes (at least in terms of the arrays in which you work with that data). The broadcasting functionality in NumPy enables you to use binary functions on irregularly fitting data in a predictable way.
+>The data you'll work with in data science invariably comes in different shapes and sizes (at least in terms of the arrays in which you work with that data). The broadcasting functionality in NumPy enables you to use binary functions on irregularly fitting data in a predictable way.

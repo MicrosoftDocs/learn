@@ -1,4 +1,4 @@
-In the prior section, we looked at aggregates computed directly on Boolean arrays. A more powerful pattern is to use Boolean arrays as masks, to select particular subsets of the data themselves. Returning to our `two_dim_array` array from before, suppose we want an array of all values in the array that are less than 5:
+In the previous section, we looked at aggregates computed directly on Boolean arrays. A more powerful pattern is to use Boolean arrays as masks to select particular subsets of the data themselves. Returning to our `two_dim_array` array from earlier, suppose we want an array of all values in the array that are less than 5:
 
 ```python
 two_dim_array
@@ -72,4 +72,4 @@ Median precip in non-summer rainy months (inches): 2.865
 >[!div class="alert is-tip"]
 >### Takeaway
 >
->By combining Boolean operations, masking operations, and aggregates, you can quickly answer questions similar to those we posed about the Seattle rainfall data about any dataset. Operations like these will form the basis for the data exploration and preparation for analysis that will by our primary concerns in Sections 4 and 5.
+>By combining Boolean operations, masking operations, and aggregates, you can quickly answer questions similar to those we posed about the Seattle rainfall data about any dataset. Operations like these will form the basis for the data exploration and preparation for analysis that will be our primary concerns in Sections 4 and 5.
