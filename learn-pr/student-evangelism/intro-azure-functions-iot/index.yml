@@ -33,7 +33,7 @@ products:
 units:
 - learn.oxford.intro-iot-funtions-iot.introduction
 - learn.oxford.intro-iot-funtions-iot.what-azure-functions-iot
-- learn.oxford.intro-iot-funtions-iot.azure-functions-works
-- learn.oxford.intro-iot-funtions-iot.when-use-azure-functions
+- learn.oxford.intro-iot-funtions-iot.how-azure-functions-works
+- learn.oxford.intro-iot-funtions-iot.when-use-azure-functions-iot
 - learn.oxford.intro-iot-funtions-iot.knowledge-check
 - learn.oxford.intro-iot-funtions-iot.summary
