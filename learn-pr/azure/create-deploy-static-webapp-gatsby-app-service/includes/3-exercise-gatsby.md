@@ -47,7 +47,7 @@ Now open up a browser and navigate to `http://localhost:8000`.
 
 If you see the above, you successfully created your first Gatsby app. Congrats!
 
-## Add a page component
+## Add a page component
 
 Now you'll create a component that you can navigate to in the browser: a *page component*.
 

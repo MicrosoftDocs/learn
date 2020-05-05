@@ -16,8 +16,15 @@ GraphiQL allows you to do the following:
 
 When you create a page component that wants to use data from the above mentioned graph, there are two things you will do:
 
-1. Define a query, you will write a query in the GraphQL query language that asks for a resource and some columns on that resource. It's a static string you are writing that you are passing to an internal Gatsby function called `graphql()`. Ensure you create a variable `query`. Store the result of calling the `graphql()` function into the mentioned `query` variable. This is by convention, Gatsby will know to process the `query` variable content, fetch the data and insert it into the React component in the same file.
-2. Create a component, here you are authoring a React component but you can assume the `data` property is populated with the answer from your query. The shape of the result looks exactly like the query you authored. This is a compelling feature of GraphQL itself. Inside of the rendering section of your component you can now read from the `data` property and layout it's data in the template in a way you find appropriate.
+1. **Define a query**. Craft a query in the GraphQL query language that asks for a resource and some columns on that resource.
+1. **Write the code to Execute the query**. In your page's `.js` file, call the `graphql()` function with your query as an input and store the result in a variable named `query`. Here's an example:
+
+    ```javascript
+    export const query = graphql ("query {} ");
+    ```
+
+    Naming the variable `query` is an important convention: Gatsby will automatically process the `query` variable, fetch the data and insert it into the React component in the same file.
+1. **Create a parameterized component that uses the data**. Create a React component with a `data` parameter. When you build the application, `data` will be populated with the answer from your query. The shape of the result looks exactly like the query you authored. Inside of the rendering section of your component you can now read from the `data` property and layout its data in the template in a way you find appropriate.
 
 ## A plugin example: loading images from files
 

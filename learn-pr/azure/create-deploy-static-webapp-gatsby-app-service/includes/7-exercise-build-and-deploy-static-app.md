@@ -44,6 +44,8 @@ Going into your `build/` directory now locate your rendered `about` component at
 // excerpt from about/index.html
 
 <h2>Gatsby Default Starter</h2><div>Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.</div>
+```
+
 ## Push your code to GitHub
 
 To prepare the app for deployment, we need to take the following steps:
@@ -73,6 +75,7 @@ Finally, add the code to the repository index and commit it.
 ```bash
 git add .
 git commit -m "adding Gatsby project"
+```
 
 ### Create a GitHub repo and push the code
 
@@ -165,7 +168,6 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
 :::image type="content" source="../media/static-app-portal-finished.png" alt-text="Azure Static Web Apps overview page":::
-
 
 :::image type="content" source="../media/gatsby-published.png" alt-text="Azure Static Web Apps overview page":::
 
