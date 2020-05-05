@@ -22,9 +22,9 @@ To work with larger values beyond `255`, the computer would need to store more b
 
 If a computer only understands `0`s and `1`s, then how does it allow us to work with text?  Using a system like ASCII, you can use a single byte to represent upper and lowercase letters, numbers, tab, backspace, newline and many mathematical symbols, blocks, lines, and so on.   
 
-For example, if I wanted to store a capitalized letter `A` as a value in my application, the computer would only understand the binary form of that value.  If I wanted to better understand how it's handled by the computer, I would first need to locate an ASCII table that provides a lookup of ASCII values and their decimal equivalents.  You can search for the terms "ASCII lookup decimal" to locate such a resource online.
+For example, if I wanted to store a lower-case letter `a` as a value in my application, the computer would only understand the binary form of that value.  If I wanted to better understand how it's handled by the computer, I would first need to locate an ASCII table that provides a lookup of ASCII values and their decimal equivalents.  You can search for the terms "ASCII lookup decimal" to locate such a resource online.
 
-In this case, the capitalized letter `A` is equivalent to the decimal value `97`.  Then, I would use the same binary numeral system in reverse to find how an ASCII letter `A` is stored by the computer.
+In this case, the lower-case letter `a` is equivalent to the decimal value `97`.  Then, I would use the same binary numeral system in reverse to find how an ASCII letter `a` is stored by the computer.
 
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 |-----|-----|-----|-----|-----|-----|-----|-----|
