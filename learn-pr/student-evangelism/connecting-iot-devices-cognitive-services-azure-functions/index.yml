@@ -15,7 +15,7 @@ abstract: |
     - Configure an IoT device to an IoT Hub
     - Integrate Cognitive Speech Service into an Azure function
     - Deploy an Azure function app
-    - Test your Azure function app with the IoT device 
+    - Test your Azure function app with an IoT device 
 
     "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
 prerequisites: |
