@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.azure-quantum-intro.1-introduction
-title: Introduction
+uid: learn.quantum.azure-quantum-intro.2-what-is-qio
+title: What is Quantum Inspired Optimization (QIO)?
 metadata:
-  title: Introduction
+  title: What is Quantum Inspired Optimization (QIO)?
   description: TODO
   ms.date: 05/19/2020
   author: KittyYeungQ
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/2-what-is-qio.md)]

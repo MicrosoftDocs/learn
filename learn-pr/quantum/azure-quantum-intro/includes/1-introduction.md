@@ -1,28 +1,23 @@
-Azure Quantum is a cloud service that extends the scalability, security and reliability of Azure into the quantum computing world, providing access to a diverse set of quantum services, ranging from pre-built solutions to software and quantum hardware. 
-Built on the Microsoft Azure cloud platform, Azure Quantum enables you to begin exploring and building applications today.
+In this module, you’ll learn about quantum-inspired optimization (QIO). You'll apply what you've learned to solve this  actual optimization problem.
+
+**TODO:** We need to decide whether its "quantum-inspired optimization", "quantum inspired optimization", or "Quantum Inspired Optimization". The choice largely depends on how marketing brands it.
+
+Contoso Logistics Inc. is a freight company that operates two container ships.
+
+![Two container ships that need to distribute load as evenly as possible](../media/contoso.png)
+
+Contoso Logistics needs to distribute containers between the two ships as evenly as possible. If one ship is significantly heavier than the other it will be slower and consume more fuel. The results are delayed shipments and significant cost increases. To make the problem harder, the weights of individual containers vary greatly so you can’t simply divide them between the two ships. How can you optimize the weight distribution of the containers?
 
 ## Learning objectives
 
-In this module you will:
-- Learn about the services and tools available through Azure Quantum
-- Discover the process of creating a workspace in the Azure Quantum portal
-- Learn how quantum programs can be executed in the cloud
-- Learn about optimization and evaluate situations where quantum-inspired solutions can have impact
+In this module you'll:
+
+- Learn how QIO emulates quantum algorithms on classical hardware.
+- See which kinds of problems are best suited to QIO.
+- Understand how QIO applies quantum techniques to solve optimization problems.
+- Apply QIO to a real-world optimization problem.
 
 ## Prerequisites
 
-- An introductory knowledge of Quantum Computing
-- An introductory knowledge of Microsoft Azure 
-
-## Learn the scenario
-
-![Contoso Logistics](../media/contoso.png)
-
-Contoso Logistics Inc is a world class freight company operating a fleet of large container ships. 
-When these ships are docked at port, Contoso Logistics needs to distribute containers between the two ships as evenly as possible. 
-If they make one ship significantly heavier than the other, then it will move slower and consume more fuel, delaying shipments and costing a significant amount of money! 
-To make things harder, the weights of individual containers can vary greatly so it's not easy to divide them.
-If you were managing the distribution containers for Contoso, how would you optimize the weights?
-
-This problem is known as a number partitioning problem and we can use quantum inspired optimization (QIO) to generate a good solution.
-In this module, we'll explore how to apply QIO via the Azure Quantum cloud service.
+- Basic knowledge of quantum computing
+- [Write your first program by using the Quantum Development Kit](/learn/modules/get-started-qdk?azure-portal=true)
