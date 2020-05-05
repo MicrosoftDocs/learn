@@ -1,3 +1,5 @@
+Suppose you work for an online retailer. The retailer uses a microservices-based architecture developed using .NET Core for its online storefront. You are asked to implement a coupon feature. This module walks through the addition of a single microservice to the existing app, followed by deploying the updated app.
+
 You'll use your Azure subscription to deploy the resources in this module. To estimate the expected costs for these resources, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-aspnet-core-estimate?azure-portal=true) of the resources that you'll deploy.
 
 ## Learning objectives
