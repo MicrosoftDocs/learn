@@ -16,7 +16,7 @@ In summary, when we build a model we're trying to mimic human intelligence. We u
 
 Azure Custom Vision uses something called **transfer learning**. This is the ability to use prior knowledge to better solve the current problem. We do this all the time as humans and we are discovering new ways to do this with computers too. The way it works for computer vision is to add a layer in the neural network that is a pre-trained model. This trained model gives us a head start with training on new data. It starts with a general knowledge domain and then new layers are added to the neural network to solve our specific problem. In this case, identifying birds. This enables us to get better results with less data.
 
-## The Model Building Process
+## The Model building process
 
 To better understand the model building process, here is a step-by-step overview of the process and how we will go through it to create the model in this module:
 

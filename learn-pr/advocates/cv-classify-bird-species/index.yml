@@ -17,7 +17,9 @@ abstract: |
   - Learn how to use the Custom Vision Cognitive Service
   - Build a custom machine learning model
   - Deploy the model created with Custom Vision
-prerequisites: None
+prerequisites: |
+  - An Azure account
+  - A basic understanding of how to create resources on Azure
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
