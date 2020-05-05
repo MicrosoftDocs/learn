@@ -3,9 +3,9 @@ uid: learn.responsiblebots
 metadata:
   title: Building Responsible Conversational UI
   description: Learn how to 
-  ms.date: 06/04/2020
-  author: 
-  ms.author: 
+  ms.date: 05/19/2020
+  author: shanamatthews
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Building Responsible Conversational UI
@@ -24,6 +24,10 @@ units:
 - learn.responsiblebots.1-intro-to-responsible-bots
 - learn.responsiblebots.2-intro-to-bot-framework
 - learn.responsiblebots.3-starting-bot-development
-
+- learn.responsiblebots.4-adding-language-understanding
+- learn.responsiblebots.5-implementing-question-answering
+- learn.responsiblebots.6-implementing-more-responsible-ui
+- learn.responsiblebots.7-knowledge-check
+- learn.responsiblebots.8-conclusion-and-next-steps
 badge:
   uid: learn.responsiblebots.badge
