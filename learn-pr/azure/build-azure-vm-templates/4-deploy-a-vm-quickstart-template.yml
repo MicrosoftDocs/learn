@@ -26,4 +26,4 @@ content: |
 #    resource:
 #      type: "Microsoft.Network/virtualNetworks"
 #      name: MyVNET
-#  hint: "Run the `az group deployment create` command as shown to create your VM deployment."
+#  hint: "Run the `az deployment group create` command as shown to create your VM deployment."

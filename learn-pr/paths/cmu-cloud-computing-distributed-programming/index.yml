@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  showCreativeCommonsFooter: true
 title: Distributed programming on the cloud
 summary: |
   Learn about how complex computer programs must be architected for the cloud by using distributed programming.
@@ -42,6 +41,7 @@ prerequisites: |
   - Know about the different types of data and how they're stored
   - Be familiar with distributed file systems and how they work
   - Be familiar with NoSQL databases and object storage, and how they work
+showCreativeCommonsFooter: true
 iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-cloud-computing.svg
 levels:
 - beginner

@@ -66,13 +66,13 @@ Each A record requires the following details:
 
 #### CNAME record
 
-The CNAME is the canonical name, or the alias for an A record. Use CNAME when you have different domain names that all access the same website. For example, you might need a CNAME in the *wideworldimports* zone, if you want both www.wideworldimports.com and wideworldimports.com to resolve to the same IP address.
+The CNAME is the canonical name, or the alias for an A record. Use CNAME when you have different domain names that all access the same website. For example, you might need a CNAME in the *wideworldimports* zone, if you want both www\.wideworldimports.com and wideworldimports.com to resolve to the same IP address.
 
-You would create the CNAME record in the *wideworldimports* zone with the following information:
+You would create the CNAME record in the *wideworldimports* zone with the following information:
 
-- NAME: www
-- TTL: 600 seconds
-- Record type: CNAME
+- NAME: www
+- TTL: 600 seconds
+- Record type: CNAME
 
 If you exposed a web function, you would create a CNAME record that resolves to the Azure function.
 
