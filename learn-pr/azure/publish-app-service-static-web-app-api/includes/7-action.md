@@ -69,6 +69,6 @@ The following table shows how Azure Static Web Apps will publish your app to dif
 
 You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **master** branch. When you create the pull request against the **master** branch, the GitHub Action publishes the app to a preview URL.
 
-Once the workflow has completed building and deploying your app, the GitHub bot adds a comment to your pull request which contains the URL of the pre-production environment. You can click on this link to see your staged changes.
+Once the workflow has completed building and deploying your app, the GitHub bot adds a comment to your pull request, which contains the URL of the pre-production environment. You can click on this link to see your staged changes.
 
 Next, you'll create a pull request and visit the staged version of your app.

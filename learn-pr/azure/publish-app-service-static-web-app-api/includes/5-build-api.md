@@ -36,13 +36,13 @@ The API is missing the HTTP GET function. You'll complete the Azure Functions pr
 
 Before making changes to an app, it's good practice to create a new branch for the changes. You'll be making several changes when you complete the API for your app, so you'll create a branch for these changes.
 
-After you make the changes you'll want to see them running before deciding to merge the changes. Once you create a pull request from your new branch to the **master** branch, the GitHub Action will build your app and API and deploy them both to a preview URL. This allows you to leave your web app running with Azure Static Web Apps, but also see a second preview URL with the results from your pull request.
+After you make the changes, you'll want to see them running before deciding to merge the changes. Once you create a pull request from your new branch to the **master** branch, the GitHub Action will build your app and API and deploy them both to a preview URL. This allows you to leave your web app running with Azure Static Web Apps, but also see a second preview URL with the results from your pull request.
 
 ### Configuration communication between your web app and API
 
 When you run your API locally, it runs on port 7071 by default. Your web app runs on a different local port. When your web app tries to make an HTTP request from its port to your API's port 7071, this is known as a Cross-Origin Resource Sharing (CORS). Your browser will prevent the HTTP request from completing unless the API server allows the request to proceed.
 
-You won't have to worry about CORS when you publish to Azure Static Web Apps. That's because Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. A a reverse proxy is what allows your web app and API to appear to come from the same web domain. So you only have to set up CORS when you run locally.
+You won't have to worry about CORS when you publish to Azure Static Web Apps. That's because Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. A reverse proxy is what allows your web app and API to appear to come from the same web domain. So you only have to set up CORS when you run locally.
 
 ## Next steps
 

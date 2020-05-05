@@ -11,4 +11,4 @@ Here are several resources where you can learn more about the Azure Static Web A
 - [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
 - Learn how to [Refactor Node.js and Express APIs to Serverless APIs with Azure Functions](https://docs.microsoft.com/learn/modules/shift-nodejs-express-apis-serverless/)
 - Learn how to [Deploy to Azure Using Azure Functions](https://code.visualstudio.com/tutorials/functions-extension/getting-started)
-- Use [Angular.js](https://code.visualstudio.com/docs/nodejs/angular-tutorial), [React.js](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial) and [Vue.js](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial) in Visual Studio Code
+- Use [Angular.js](https://code.visualstudio.com/docs/nodejs/angular-tutorial), [React.js](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial), and [Vue.js](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial) in Visual Studio Code

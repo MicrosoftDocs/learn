@@ -128,7 +128,7 @@ Your function will get the products and return them with a status code of 200, w
 
 ### Configure CORS locally
 
-You won't have to worry about CORS when you publish to Azure Static Web Apps. Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. But when running locally, you need to configure CORS to to allow your web app and API to communicate.
+You won't have to worry about CORS when you publish to Azure Static Web Apps. Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. But when running locally, you need to configure CORS to allow your web app and API to communicate.
 
 Now, tell Azure Functions to allow your web app to make HTTP requests to the API, on your computer.
 
@@ -252,7 +252,7 @@ Configure the proxy for your front-end app with the following steps:
 
 ### Run your front-end web app
 
-Your API is already running on port 7071. Now when you run your web app it'll make its HTTP requests to your API. Run your web app by following these steps:
+Your API is already running on port 7071. Now when you run your web app it will make its HTTP requests to your API. Run your web app by following these steps:
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Terminal: Create New Integrated Terminal**
