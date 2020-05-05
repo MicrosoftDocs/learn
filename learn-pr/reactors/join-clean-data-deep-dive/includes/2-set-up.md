@@ -1,5 +1,6 @@
+Here are some reminders about importing, built-in help, and documentation.
 
-## Reminders about importing, built-in Help, and documentation
+## Importing
 
 The standard convention in Python-centric data science is to import pandas under the alias `pd`, which is what we will use here:
 
@@ -8,6 +9,8 @@ import pandas as pd
 ```
 
 Because this is such a common convention, it is the way we will use and refer to pandas throughout the rest of this section and this course. You should also adopt this usage in your own code to make it easily readable for other data scientists.
+
+## Built-in help
 
 Pandas is a big package and there can be a lot to keep track of. Fortunately, IPython (the underlying program that powers this notebook and other like it) gives you the ability to quickly explore the contents of a package like pandas by using its tab-completion feature. If you want to see all of the functions available with pandas, type this:
 
@@ -29,12 +32,9 @@ Place your cursor after the period and press <TAB>:
 pd.compat?
 ```
 
-The output is:
+The flyout looks like:
 
-> [!div class="alert is-tip"]
-> Output
-
-> :::image type="content" source="../media/pd-compat-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.'":::
+:::image type="content" source="../media/pd-compat-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.'":::
 
 Now select an item using tab-completion and then add a period and use tab-completion to explore *that*.
 
@@ -44,12 +44,11 @@ For example, you could try pressing <TAB> after `pd.DataFrame`.
 pd.DataFrame.
 ```
 
-The output is:
+You should see:
 
-> [!div class="alert is-tip"]
-> Output
+:::image type="content" source="../media/pd-dataframe-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.DataFrame.'":::
 
-> :::image type="content" source="../media/pd-dataframe-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.DataFrame.'":::
+## Documentation
 
 As we progress through Section 1.1, don't forget that IPython also provides a tab-completion feature and function documentation with the `?` (question mark) character. If you don't understand something about a function you see in this section, taking a moment to csonult the documentation can help a great deal. You will find this documentation to be a very valuable reference source for your own data science work, both now and in the future. As a reminder, use this code to display the built-in pandas documentation:
 
@@ -66,12 +65,9 @@ Run this code cell and review the documentation for the pandas DataFrame object.
 pd.
 ```
 
-The output is:
+Here's the flyout:
 
-> [!div class="alert is-tip"]
-> Output
-
-> :::image type="content" source="../media/pd-help-vscode-flyout-dataframe-selected.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.' and hovering over 'DataFrame'":::
+:::image type="content" source="../media/pd-help-vscode-flyout-dataframe-selected.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.' and hovering over 'DataFrame'":::
 
 ## A brief reminder about Jupyter notebooks
 

@@ -1,10 +1,8 @@
-
 To illustrate *k*-means clustering in action, we'll use the familiar [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/?azure-portal=true) dataset that you used in Sections 1.1 through 1.3. (Note that the path name is case sensitive.)
 
 ```python
 import pandas as pd
 df = pd.read_csv('Data/USDA-nndb-combined.csv', encoding='latin_1')
-
 ```
 
 ```python

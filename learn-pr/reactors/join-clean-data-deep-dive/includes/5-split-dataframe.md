@@ -180,8 +180,9 @@ The output is:
 > | 8792 | 1003 | BUTTER OIL,ANHYDROUS | 0.24 | 876 | 0.28 | 99.48 | 0.00 | 0.00 | 0.0 | 0.00 | ... | 0.001 | 0.0 | 0.0 | 0.0 | 0.0 | 22.3 | 0.01 | 3069.0 | 840.0 | 824.0 |
 > | 8793 | 1004 | CHEESE,BLUE | 42.41 | 353 | 21.40 | 28.74 | 5.11 | 2.34 | 0.0 | 0.50 | ... | 0.166 | 36.0 | 0.0 | 36.0 | 36.0 | 15.4 | 1.22 | 721.0 | 198.0 | 192.0 |
 > | 8794 | 1005 | CHEESE,BRICK | 41.11 | 371 | 23.24 | 29.68 | 3.18 | 2.79 | 0.0 | 0.51 | ... | 0.065 | 20.0 | 0.0 | 20.0 | 20.0 | 15.4 | 1.26 | 1080.0 | 292.0 | 286.0 |
->
-> 5 rows × 35 columns
+
+5 rows × 35 columns
+***
 
 You'll notice on that both `DataFrame`s have their old indices indexes that they inherited from `df`. We can fix that by using the `reset_index()` method, but then we run into a problem.
 
@@ -202,8 +203,9 @@ The output is:
 > | 2 | 8792 | 1003 | BUTTER OIL,ANHYDROUS | 0.24 | 876 | 0.28 | 99.48 | 0.00 | 0.00 | 0.0 | ... | 0.001 | 0.0 | 0.0 | 0.0 | 0.0 | 22.3 | 0.01 | 3069.0 | 840.0 | 824.0 |
 > | 3 | 8793 | 1004 | CHEESE,BLUE | 42.41 | 353 | 21.40 | 28.74 | 5.11 | 2.34 | 0.0 | ... | 0.166 | 36.0 | 0.0 | 36.0 | 36.0 | 15.4 | 1.22 | 721.0 | 198.0 | 192.0 |
 > | 4 | 8794 | 1005 | CHEESE,BRICK | 41.11 | 371 | 23.24 | 29.68 | 3.18 | 2.79 | 0.0 | ... | 0.065 | 20.0 | 0.0 | 20.0 | 20.0 | 15.4 | 1.26 | 1080.0 | 292.0 | 286.0 |
->
-> 5 rows × 36 columns
+
+5 rows × 36 columns
+***
 
 Our old indexes are still there for `df1`, but now they're in a new column titled `index`. pandas doesn't want to delete data we might need. We can instruct pandas to remove the column, which we know is unnecessary, by using the `drop=True` parameter for the method. (We also need to drop the `index` column we just created in the prior step.)
 
@@ -225,8 +227,9 @@ The output is:
 > | 2 | 1003 | BUTTER OIL,ANHYDROUS | 0.24 | 876 | 0.28 | 99.48 | 0.00 | 0.00 | 0.0 | 0.00 | ... | 0.001 | 0.0 | 0.0 | 0.0 | 0.0 | 22.3 | 0.01 | 3069.0 | 840.0 | 824.0 |
 > | 3 | 1004 | CHEESE,BLUE | 42.41 | 353 | 21.40 | 28.74 | 5.11 | 2.34 | 0.0 | 0.50 | ... | 0.166 | 36.0 | 0.0 | 36.0 | 36.0 | 15.4 | 1.22 | 721.0 | 198.0 | 192.0 |
 > | 4 | 1005 | CHEESE,BRICK | 41.11 | 371 | 23.24 | 29.68 | 3.18 | 2.79 | 0.0 | 0.51 | ... | 0.065 | 20.0 | 0.0 | 20.0 | 20.0 | 15.4 | 1.26 | 1080.0 | 292.0 | 286.0 |
->
-> 5 rows × 35 columns
+
+5 rows × 35 columns
+***
 
 Now let's do the same thing to `df2`.
 
