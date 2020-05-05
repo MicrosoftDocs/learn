@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.deploy-cognitive-service-iot-edge-azure-func.exercise-deploy-azure-functions
+uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.exercise-deploy-azure-functions
 title: Exercise - Deploying Cognitive Services as Azure Functions to an IoT device
 metadata:
   title: Exercise - Deploying Cognitive Services as Azure Functions to an IoT device

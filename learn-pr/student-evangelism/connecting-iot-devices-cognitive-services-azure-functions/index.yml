@@ -14,7 +14,7 @@ abstract: |
 prerequisites: |
     - Familiarity with Azure
     - Basic understanding of IoT Edge
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
 badge:
   uid: learn.oxford.deploy-cog-ser-iot-edge-azure-func.badge
 levels:
@@ -24,12 +24,12 @@ roles:
 products:
 - azure-iot-edge
 units:
-- learn.oxford.deploy-cognitive-service-iot-edge-azure-func.introduction
-- learn.oxford.deploy-cognitive-service-iot-edge-azure-func.design-cognitive-service
-- learn.oxford.deploy-cognitive-service-iot-edge-azure-func.config-edge-device
-- learn.oxford.deploy-cognitive-service-iot-edge-azure-func.exercise-configuring-edge-device-iot-hub
-- learn.oxford.deploy-cognitive-service-iot-edge-azure-func.knowledge-check
-- learn.oxford.deploy-cognitive-service-iot-edge-azure-func.create-cognitive-service
-- learn.oxford.deploy-cognitive-service-iot-edge-azure-func.deploy-azure-functions
-- learn.oxford.deploy-cognitive-service-iot-edge-azure-func.deploy-device-code
-- learn.oxford.deploy-cognitive-service-iot-edge-azure-func.exercise-deploy-azure-functions
+- learn.oxford.connect-iot-devices-cognitive-services-azure-func.introduction
+- learn.oxford.connect-iot-devices-cognitive-services-azure-func.design-cognitive-service
+- learn.oxford.connect-iot-devices-cognitive-services-azure-func.config-edge-device
+- learn.oxford.connect-iot-devices-cognitive-services-azure-func.exercise-configuring-edge-device-iot-hub
+- learn.oxford.connect-iot-devices-cognitive-services-azure-func.knowledge-check
+- learn.oxford.connect-iot-devices-cognitive-services-azure-func.create-cognitive-service
+- learn.oxford.connect-iot-devices-cognitive-services-azure-func.deploy-azure-functions
+- learn.oxford.connect-iot-devices-cognitive-services-azure-func.deploy-device-code
+- learn.oxford.connect-iot-devices-cognitive-services-azure-func.exercise-deploy-azure-functions
