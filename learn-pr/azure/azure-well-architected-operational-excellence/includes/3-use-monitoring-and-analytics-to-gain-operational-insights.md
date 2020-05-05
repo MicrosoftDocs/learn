@@ -2,7 +2,7 @@ Monitoring is the act of collecting and analyzing data to determine the performa
 
 When it comes to monitoring and analytics on Azure, we can bundle services into three specific areas of focus: deep application monitoring, deep infrastructure monitoring, and core monitoring. In this unit, we'll take a look through each of these bundles and how Azure services enable these capabilities for your architecture. Even though we've grouped these services together, there are several integration points between them, allowing for sharing of important monitoring data points between them. The following illustration shows the available monitoring services assembled into logical groups.
 
-![An illustration listing the Azure monitoring and analytics services.](../media/monitoring-products-overview.png)
+![An illustration listing the Azure monitoring and analytics services.](../media/3-monitoring-products-overview.png)
 
 ## Core monitoring
 
@@ -41,7 +41,7 @@ While the monitoring components we've covered thus far are great at offering ins
 
 When designing a monitoring strategy, it's important to include every component in the application chain, so you can correlate events across services and resources. For services that support Azure Monitor, they can be easily configured to send their data to a Log Analytics workspace. Virtual machines (both in the cloud and on-premises) can have an agent installed to send data to Log Analytics. You can submit custom data to Log Analytics through the Log Analytics API. The following illustration shows how Log Analytics acts as a central hub for monitoring data. Log Analytics receives monitoring data from your Azure resources and makes it available to consumers for analysis or visualization.
 
-![An illustration showing the role of Log Analytics in resource monitoring.](../media/collecting-data.png)
+![An illustration showing the role of Log Analytics in resource monitoring.](../media/3-collecting-data.png)
 
 With this data in Log Analytics, you can query the raw data for troubleshooting, root cause identification, and auditing purposes. For several known services (SQL Server, Windows Server Active Directory), there are management solutions readily available that visualize monitoring data and uncover compliance with best practices.
 
@@ -55,6 +55,6 @@ Azure Application Insights allows you to do exactly that. Application Insights p
 
 For instance, the response time of the application might be complex to troubleshoot. Is it the web server being overloaded? Is it a specific SQL query that's not optimized? Is the API that you're calling performing slower than usual? Application performance monitoring solutions can help uncover the actual issues that basic metric monitoring can't expose. The following screenshot shows a graphical display of an application’s performance details provided by Azure Application Insights.
 
-![A screenshot of the user interface of Azure Application Insights.](../media/perfmetrics.png)
+![A screenshot of the user interface of Azure Application Insights.](../media/3-perfmetrics.png)
 
 An application performance monitoring solution will help you monitor usage, performance, and availability, allowing you to respond to failure much faster, and should be included in any monitoring strategy.

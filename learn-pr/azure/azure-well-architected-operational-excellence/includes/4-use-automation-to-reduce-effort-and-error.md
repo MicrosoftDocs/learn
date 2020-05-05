@@ -131,7 +131,7 @@ Examples of this automation might include:
 
 As a concrete example, suppose you want to run a virtual machine only during business hours. You can write a script to start the VM in the morning and shut it down in the evening. You can configure Azure Automation to run the script at set times. The following illustration shows the role of Azure Automation in this process.
 
-![An illustration showing the role of Azure Automation in managing a repetitive business process.](../media/automation-vm-power-state.png)
+![An illustration showing the role of Azure Automation in managing a repetitive business process.](../media/4-automation-vm-power-state.png)
 
 ## Automating development environments
 
