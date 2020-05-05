@@ -1,4 +1,4 @@
-QIO uses two techniques to solve optimization problems. One of them is *simulated annealing* and the other is *quantum annealing*.
+QIO uses two techniques to solve optimization problems. One of them is *simulated annealing* and the other is *quantum annealing*. **Kitty:** This does not seem right?
 
 ## Simulated annealing
 

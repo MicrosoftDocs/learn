@@ -51,4 +51,4 @@ This video uses the Azure Quantum Simulated Annealing solver to assign the conta
 
 That's it! You've learned the basics of QIO. You're ready to apply it to your own optimization problems.
 
-**TODO:** As a programmer, I'm not convinced I'm quite ready to apply this to my own problems. But maybe I'm not the target audience. Perhaps consider how we can soften (or remove) this statement.
+**TODO:** As a programmer, I'm not convinced I'm quite ready to apply this to my own problems. But maybe I'm not the target audience. Perhaps consider how we can soften (or remove) this statement. **Kitty:** maybe something like "stay tuned for more learning on how to apply it to more optimization problems"?

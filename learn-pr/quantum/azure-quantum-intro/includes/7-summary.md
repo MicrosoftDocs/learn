@@ -18,4 +18,4 @@ Here are resources where you can learn more:
 * [Quantum superposition](https://wikipedia.org/wiki/Quantum_superposition)
 * [Ising model](https://wikipedia.org/wiki/Ising_model)
 
-[How the quest for a scalable quantum computer is helping fight cancer](https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/) shows how QIO is helping to fight cancer.
+[How the quest for a scalable quantum computer is helping fight cancer](https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/) shows how QIO is helping fight cancer.

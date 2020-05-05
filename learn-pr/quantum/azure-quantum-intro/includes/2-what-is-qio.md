@@ -1,4 +1,4 @@
-There are many models of quantum computing. In [Write your first program by using the Quantum Development Kit](/learn/modules/get-started-qdk?azure-portal=true), you learned about the Gate Model. With that model, you perform operations that use of quantum gates to create quantum programs.
+There are many models of quantum computing. In [Write your first program by using the Quantum Development Kit](/learn/modules/get-started-qdk?azure-portal=true), you learned about the Gate Model. With that model, you perform operations that use quantum gates to create quantum programs.
 
 **TODO:** The QDK module doesn't cover the Gate Model. I'm adding a TODO on that end as well to add it.
 
@@ -7,6 +7,6 @@ Quantum Inspired Optimization (QIO) is based on a different computational model 
 - First prepare a system and initialize it to its lowest energy state. For a simple system, one which we completely understand, this is easy to do.
 - Next, slowly transform that system into a more complex one that describes the problem we are trying to solve. The adiabatic theorem states that, as long as this transformation happens slowly enough, the system will stay in that lowest energy configuration. When we're done with our transformations, we've solved our problem.
 
-**TODO:** It's not required, but are there common analogies from the real world we can use to help describe adiabatic quantum computing?
+**TODO:** It's not required, but are there common analogies from the real world we can use to help describe adiabatic quantum computing? **Kitty:** I think the quantum annealing and thermal modeling examples are the real world examples of adiabatic quantum computing. I'm not sure about analogies as QIO is an analogy of nature. 
 
 Adiabatic quantum computation is well understood and, as a result, a number of techniques have been developed to simulate this type of physics. These classical algorithms, which we can run on classical computers today, are also known as quantum inspired approaches.
