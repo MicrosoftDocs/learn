@@ -28,7 +28,7 @@ units:
 - learn.github.github-actions-ci.1-introduction
 - learn.github.github-actions-ci.2-tbd-knowledge
 - learn.github.github-actions-ci.3-tbd-exercise
-- learn.github.github-actions-ci.4-tbd-knowledge-check
+- learn.github.github-actions-ci.4-knowledge-check
 - learn.github.github-actions-ci.5-summary
 badge:
   uid: learn.github.github-actions-ci.badge

@@ -1,12 +1,19 @@
-In this module, you implemented a coutinuous integration solution using GitHub Actions and Workflows. 
+In this module, you implemented a coutinuous integration solution using GitHub Actions workflows. 
 
-- You built a GitHub Workflow from a template to build and test a Node.js project
-- You investigated a failed test using the GitHub Actions Log
-- You customized your workflow to:
-  - create a build artifact and save it in GitHub Artifacts
+You can now:
+
+- Build and test a Node.js project by using GitHub Actions and a templated workflow
+- Debug a failed test using the GitHub Actions Log
+- Customize your workflow with GitHub Actions to:
+  - create a build artifact and save
   - get access to your build artifacts
   - test against multiple targets
-  - add labels your pull requests using a GitHub action
+  - add labels your pull requests
+
+## Next steps
+
+To continue your journey with GitHub Actions, check out the next module on this learning path called .... where you expand on what you have learned here and use GitHub Actions in continuous delivery, and implementing infrastructure as code.
+TODO: put the module name and links here
 
 ## Learn more
 
