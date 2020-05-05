@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ms-learn-live-foundations-serverless-dev.5-configure-url-route
+
+# Use the format "Prepare for session x - [Title of the session]" (do not use a colon in the title, it will make VScode show YAML errors).
+title: Change URL Route of a function
+
+metadata:
+  # Use the same as the "title".
+  title: Change URL Route of a function
+  # Same as "title".
+  description: Change URL Route of a function
+  
+  # Update this after changing the file.
+  ms.date: 4/29/2020
+  
+  # Your Github alias
+  author: krumelur
+
+  # Your Microsoft alias
+  ms.author: renrup
+
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+azureSandbox: false
+
+# Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
+# It's best to follow the instructions and take the time.
+durationInMinutes: 5
+
+content: |
+  [!include[](includes/5-configure-url-route.md)]

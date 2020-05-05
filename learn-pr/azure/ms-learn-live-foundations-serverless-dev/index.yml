@@ -80,3 +80,5 @@ units:
 - learn.azure.ms-learn-live-foundations-serverless-dev.2-setup-local-development
 - learn.azure.ms-learn-live-foundations-serverless-dev.3-create-function-endpoint
 - learn.azure.ms-learn-live-foundations-serverless-dev.4-setup-cosmosdb
+- learn.azure.ms-learn-live-foundations-serverless-dev.4-configure-http-action
+- learn.azure.ms-learn-live-foundations-serverless-dev.5-configure-url-route
