@@ -6,6 +6,7 @@ Run the following command in a terminal to install Gatsby globally to your syste
 
 ```console
 npm install -g gatsby-cli
+```
 
 ## Create and run a Gatsby site
 
