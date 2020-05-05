@@ -77,8 +77,9 @@ The output is:
 > | 8792 | 1003 | BUTTER OIL,ANHYDROUS | 0.24 | 876 | 0.28 | 99.48 | 0.00 | 0.00 | 0.0 | 0.00 | ... | 8.6 | 61.924 | 28.732 | 3.694 | 256.0 | 12.80 | 1 tbsp | 205.0 | 1 cup | 0.0 |
 > | 8793 | 1004 | CHEESE,BLUE | 42.41 | 353 | 21.40 | 28.74 | 5.11 | 2.34 | 0.0 | 0.50 | ... | 2.4 | 18.669 | 7.778 | 0.800 | 75.0 | 28.35 | 1 oz | 17.0 | 1 cubic inch | 0.0 |
 > | 8794 | 1005 | CHEESE,BRICK | 41.11 | 371 | 23.24 | 29.68 | 3.18 | 2.79 | 0.0 | 0.51 | ... | 2.5 | 18.764 | 8.598 | 0.784 | 94.0 | 132.00 | 1 cup, diced | 113.0 | 1 cup, shredded | 0.0 |
->
-> 5 rows × 53 columns
+
+5 rows × 53 columns
+***
 
 For `left_df`:
 
@@ -98,8 +99,9 @@ The output is:
 > | 2 | 1003 | BUTTER OIL,ANHYDROUS | 0.24 | 876 | 0.28 | 99.48 | 0.00 | 0.00 | 0.0 | 0.00 | ... | 8.6 | 61.924 | 28.732 | 3.694 | 256.0 | 12.80 | 1 tbsp | 205.0 | 1 cup | 0.0 |
 > | 3 | 1004 | CHEESE,BLUE | 42.41 | 353 | 21.40 | 28.74 | 5.11 | 2.34 | 0.0 | 0.50 | ... | 2.4 | 18.669 | 7.778 | 0.800 | 75.0 | 28.35 | 1 oz | 17.0 | 1 cubic inch | 0.0 |
 > | 4 | 1005 | CHEESE,BRICK | 41.11 | 371 | 23.24 | 29.68 | 3.18 | 2.79 | 0.0 | 0.51 | ... | 2.5 | 18.764 | 8.598 | 0.784 | 94.0 | 132.00 | 1 cup, diced | 113.0 | 1 cup, shredded | 0.0 |
->
-> 5 rows × 53 columns
+
+5 rows × 53 columns
+***
 
 The indexes notwithstanding, the first five rows of both `DataFrame`s are the same. Let's check the last five rows.
 
@@ -119,8 +121,9 @@ The output is:
 > | 17577 | 90480 | SYRUP,CANE | 26.00 | 269 | 0.00 | 0.00 | 0.86 | 73.14 | 0.0 | 73.2 | ... | 0.0 | 0.000 | 0.000 | 0.000 | 0.0 | 21.0 | 1 serving | NaN | NaN | 0.0 |
 > | 17578 | 90560 | SNAIL,RAW | 79.20 | 90 | 16.10 | 1.40 | 1.30 | 2.00 | 0.0 | 0.0 | ... | 0.1 | 0.361 | 0.259 | 0.252 | 50.0 | 85.0 | 3 oz | NaN | NaN | 0.0 |
 > | 17579 | 93600 | TURTLE,GREEN,RAW | 78.50 | 89 | 19.80 | 0.50 | 1.20 | 0.00 | 0.0 | 0.0 | ... | 0.1 | 0.127 | 0.088 | 0.170 | 50.0 | 85.0 | 3 oz | NaN | NaN | 0.0 |
->
-> 5 rows × 53 columns
+
+5 rows × 53 columns
+***
 
 For `left_df`:
 
@@ -140,8 +143,9 @@ The output is:
 > | 8787 | 90480 | SYRUP,CANE | 26.00 | 269 | 0.00 | 0.00 | 0.86 | 73.14 | 0.0 | 73.2 | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
 > | 8788 | 90560 | SNAIL,RAW | 79.20 | 90 | 16.10 | 1.40 | 1.30 | 2.00 | 0.0 | 0.0 | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
 > | 8789 | 93600 | TURTLE,GREEN,RAW | 78.50 | 89 | 19.80 | 0.50 | 1.20 | 0.00 | 0.0 | 0.0 | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
->
-> 5 rows × 53 columns
+
+5 rows × 53 columns
+***
 
 There are differences here in the last five rows. Notice that the right-most columns of `left_df` contain have Not a Number (`NaN`) values. This is because the left `DataFrame` was larger than the right `DataFrame`. If you recall, we only took the first 2,000 rows from `df2`.
 
@@ -210,8 +214,9 @@ The output is:
 > | 2 | 1003 | BUTTER OIL,ANHYDROUS | 0.24 | 876 | 0.28 | 99.48 | 0.00 | 0.00 | 0.0 | 0.00 | ... | 8.6 | 61.924 | 28.732 | 3.694 | 256.0 | 12.80 | 1 tbsp | 205.0 | 1 cup | 0.0 |
 > | 3 | 1004 | CHEESE,BLUE | 42.41 | 353 | 21.40 | 28.74 | 5.11 | 2.34 | 0.0 | 0.50 | ... | 2.4 | 18.669 | 7.778 | 0.800 | 75.0 | 28.35 | 1 oz | 17.0 | 1 cubic inch | 0.0 |
 > | 4 | 1005 | CHEESE,BRICK | 41.11 | 371 | 23.24 | 29.68 | 3.18 | 2.79 | 0.0 | 0.51 | ... | 2.5 | 18.764 | 8.598 | 0.784 | 94.0 | 132.00 | 1 cup, diced | 113.0 | 1 cup, shredded | 0.0 |
->
-> 5 rows × 53 columns
+
+5 rows × 53 columns
+***
 
 Then `tail()`:
 
@@ -231,8 +236,9 @@ The output is:
 > | 1997 | 8542 | CEREALS RTE,KELLOGG'S,FRSTD MINI-WHEATS BITE S... | 5.1 | 352 | 8.70 | 1.60 | 0.5 | 84.6 | 10.2 | 22.7 | ... | NaN | 0.4 | 0.2 | 0.8 | 0.0 | 55.0 | 25 biscuits, (1 NLEA serving) | NaN | NaN | 0.0 |
 > | 1998 | 8543 | CEREALS RTE,KELLOGG'S,SPL K VANILLA ALMOND | 3.0 | 366 | 7.80 | 4.00 | 2.2 | 83.0 | 9.6 | 29.2 | ... | 0.7 | 0.4 | 2.0 | 1.1 | 0.0 | 30.0 | .75 cup, (1 NLEA serving) | NaN | NaN | 0.0 |
 > | 1999 | 8544 | CEREALS RTE,POST GREAT GRAINS CRANBERRY ALMOND... | 6.2 | 384 | 8.90 | 5.90 | 2.4 | 76.6 | 11.1 | 25.5 | ... | 2.0 | 0.8 | 3.0 | 1.7 | 0.0 | 48.0 | .75 cup, (1 NLEA serving) | NaN | NaN | 0.0 |
->
-> 5 rows × 53 columns
+
+5 rows × 53 columns
+***
 
 The resulting `DataFrame` is essentially the first 2000 rows of the original `df` `DataFrame`.
 

@@ -77,8 +77,9 @@ The output is:
 > | 2 | 0.0 | 0.00 | 193.0 | 0.0 | 4.0 | 0.00 | 256.0 | 22.3 | 0.001 | 876.0 | ... | 840.0 | 0.01 | 0.001 | 0.0 | 0.0 | 0.0 | 2.80 | 8.6 | 0.24 | 0.01 |
 > | 3 | 0.0 | 5.11 | 74.0 | 0.0 | 528.0 | 2.34 | 75.0 | 15.4 | 0.040 | 353.0 | ... | 198.0 | 1.22 | 0.166 | 0.0 | 21.0 | 0.5 | 0.25 | 2.4 | 42.41 | 2.66 |
 > | 4 | 0.0 | 3.18 | 76.0 | 0.0 | 674.0 | 2.79 | 94.0 | 15.4 | 0.024 | 371.0 | ... | 292.0 | 1.26 | 0.065 | 0.0 | 22.0 | 0.5 | 0.26 | 2.5 | 41.11 | 2.60 |
->
-> 5 rows × 54 columns
+
+5 rows × 54 columns
+***
 
 And:
 
@@ -98,8 +99,9 @@ The output is:
 > | 8986 | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
 > | 8987 | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
 > | 8988 | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | ... | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN | NaN |
->
-> 5 rows × 54 columns
+
+5 rows × 54 columns
+***
 
 Now save the merged `DataFrame` using the `to_csv()` method.
 
