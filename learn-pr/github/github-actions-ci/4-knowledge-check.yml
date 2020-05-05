@@ -9,7 +9,7 @@ metadata:
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
@@ -50,7 +50,7 @@ quiz:
       explanation: "The ```actions/checkout``` accesses a repository's code from the virtual machine provided by GitHub Actions"
     - content: "```npm install```"
       isCorrect: false
-      explanation: "The ```npm install``` command installs the dependencies needed."
+      explanation: "The ```npm install``` command installs package and the dependencies."
     - content: "```actions/setup-node```"
       isCorrect: false
       explanation: "The ```actions/setup-node``` sets up the correct version of Node."     

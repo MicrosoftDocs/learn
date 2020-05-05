@@ -1,6 +1,9 @@
-Here, you learn about GitHub Actions and workflows for continuous integration. You'll learn to:
+Here, you learn about GitHub Actions and workflows for continuous integration. 
+
+You'll learn to:
 
 - Create a workflow from a template in the GitHub portal
+- Decipher the GitHub Actions logs
 - Test against multiple targets
 - Separate build and test jobs
 - Save and access build artifacts

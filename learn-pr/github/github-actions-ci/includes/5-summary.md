@@ -5,7 +5,7 @@ You can now:
 - Build and test a Node.js project by using GitHub Actions and a templated workflow
 - Debug a failed test using the GitHub Actions Log
 - Customize your workflow with GitHub Actions to:
-  - create a build artifact and save
+  - create a build artifact and save it
   - get access to your build artifacts
   - test against multiple targets
   - add labels your pull requests
