@@ -50,6 +50,7 @@ products:
 - azure-functions
 
 units:
-- learn.azure.ms-learn-live-foundations-serverless-dev.1-introduction
-- learn.azure.ms-learn-live-foundations-serverless-dev.2-session-1
-- learn.azure.ms-learn-live-foundations-serverless-dev.3-setup-cosmosdb
+- learn.azure.ms-learn-live-foundations-serverless-dev.1-execute-first-function-in-portal
+- learn.azure.ms-learn-live-foundations-serverless-dev.2-setup-local-development
+- learn.azure.ms-learn-live-foundations-serverless-dev.3-create-function-endpoint
+- learn.azure.ms-learn-live-foundations-serverless-dev.4-setup-cosmosdb
