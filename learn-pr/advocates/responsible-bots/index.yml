@@ -25,7 +25,7 @@ products:
 - azure
 - vs-code
 prerequisites: |
-- Basic knowledge of C#
+  - Basic knowledge of C\#
 units:
 - learn.advocates.responsible-bots.1-introduction
 - learn.advocates.responsible-bots.2-bot-framework
