@@ -20,8 +20,8 @@ How does Gatsby do this? In the pre-compilation phase, each plugin *scans* a sou
 
 Gatsby relies on two core technologies:
 
-- `React.js`, React.js is the chosen SPA framework that Gatsby uses. It's not possible to use Gatsby with another SPA framework. You need to have a rudimentary understanding of developing in React before using Gatsby. You should know how to create components in React.js and work with input properties. You will be using React.js in Gatsby to create components to either support the building of pages or to build the pages themselves. Additionally you will also use components to build layouts.
-- `GraphQL`, GraphQL is a query language used to query for your websites data but also for external data. GraphQL is a query language used for querying APIs. It's able to *negotiate* with the API exactly for what resources and columns it wants from the API. This solves many problems that exist currently with APIs like over-fetching or many round-trips extra to the server. In the context of Gatsby, GraphQL is used to fetch JSON data from an in-memory data graph to help you assemble pages from fetched JSON data and markup. It's possible to build a Gatsby site without it GraphQL but it becomes so much easier if you do use it.
+- **React.js** is the chosen SPA framework that Gatsby uses. It's not possible to use Gatsby with another SPA framework. You need to have a rudimentary understanding of developing in React before using Gatsby. You should know how to create components in React.js and work with input properties. You will be using React.js in Gatsby to create components to either support the building of pages or to build the pages themselves. Additionally you will also use components to build layouts.
+- **GraphQL** is a query language used to query for your websites data but also for external data. GraphQL is a query language used for querying APIs. It's able to *negotiate* with the API exactly for what resources and columns it wants from the API. This solves many problems that exist currently with APIs like over-fetching or many round-trips extra to the server. In the context of Gatsby, GraphQL is used to fetch JSON data from an in-memory data graph to help you assemble pages from fetched JSON data and markup. It's possible to build a Gatsby site without it GraphQL but it becomes so much easier if you do use it.
 
 ## Installing and using Gatsby
 
@@ -40,7 +40,7 @@ A scaffolded Gatsby project consists of some parts that you need to understand t
 - `/pages`: React components placed in this directory will become routes and a pages. Pages are described in more detail below.
 - `gatsby-config.js`: A configuration file. Part of the configuration will be used to set up and configure plugins and part of it is global data that you can render on your pages.
 - `gatsby-node.js`: A file used to implement life-cycle methods of the Gatsby API. In here you can do things such as sourcing files, add/update nodes to the Gatsby graph and even bring in data from the outside that should be part of the website.
-- /styles: Gatsby lets you apply styles in many ways, everything from imported CSS, SASS, and LESS to CSS Modules.
+- `/styles`: Gatsby lets you apply styles in many ways, everything from imported CSS, SASS, and LESS to CSS Modules.
 - `/components`: For React components meant as helper components like header, layout and more.
 
 ### Pages
@@ -56,4 +56,3 @@ export default HelloPage;
 ```
 
 Putting this into a file named `/pages/hello.js` will lead to a route being created at `/hello`. Browsing there will result in a page that displays the string `Hello` between two `div` tags.
-

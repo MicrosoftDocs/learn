@@ -1,12 +1,11 @@
 In this unit, you'll create a new Gatsby application and add a single page to it.
 
-## Install gatsby
+## Install Gatsby
 
-Install the below software:
+Run the following command in a terminal to install Gatsby globally to your system:
 
-- Git, [Install Git, instructions per OS](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-- Node.js [Install Node.js](https://nodejs.org/en/download/).
-- Gatsby CLI, Once Node.js is installed, install Gatsby CLI via the terminal this line `npm install -g gatsby-cli`.
+```console
+npm install -g gatsby-cli
 
 ## Create and run a Gatsby site
 

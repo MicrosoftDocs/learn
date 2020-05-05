@@ -7,11 +7,11 @@ Gatsby's command-line tool provides a command to *build* your project to create 
 
 ### Creating the build
 
-Gatsby runs the React compiler underneath so when it produces the build - it does many things. It compiles the React code by translating the JSX to JavaScript and HTML. It also extracts all the JavaScript code and places it in a set of bundles. Each bundle is then *optimized* meaning it has whitespace removed, variables are renamed and expressions are generally optimized for speed. The styles goes through a similar process. If you have chosen a library like LESS, SCSS or Stylus for your CSS, there will be a pre-step in which your CSS is being compiled from a high-level language to CSS. There are no further actions needed to deploy the files at this point. It's just a set of static files that can run in any browser.
+Gatsby runs the React compiler underneath so when it produces the build - it does many things. It compiles the React code by translating the JSX to JavaScript and HTML. It also extracts all the JavaScript code and places it in a set of bundles. Each bundle is then *optimized* meaning it has whitespace removed, variables are renamed and expressions are generally optimized for speed. The styles goes through a similar process. If you have chosen a library like LESS, SCSS or Stylus for your CSS, there will be a pre-step in which your CSS is being compiled from a high-level language to CSS. There are no further actions needed to deploy the files at this point. It's just a set of static files that can be hosted from any webserver that can serve files.
 
 ## Deploy it
 
-There are many technologies and services capable of hosting built app. After all it's just HTML, CSS and JavaScript and can be hosted by most web services out there. For this tutorial, we'll deploy to Static Web Apps, an Azure service that specializes in hosting static apps like those built with Gatsby.
+There are many technologies and services capable of hosting static apps. After all it's just HTML, CSS and JavaScript and can be hosted by most web services out there. For this tutorial, we'll deploy to Static Web Apps, an Azure service that specializes in hosting static apps like those built with Gatsby.
 
 ### Azure Static Web Apps
 

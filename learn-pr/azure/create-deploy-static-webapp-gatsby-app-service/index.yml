@@ -24,13 +24,11 @@ products:
 - azure
 - azure-app-service
 prerequisites: |
-  - React.js, beginner familiarity.
-  - Git, Installation and basic operating familiarity.
-  - Basic familiarity with text editor of user's choice
-  - Command line familiarity.
-  - Web Dev knowledge, beginner.
-  - Beginner React familiarity.
-  - GitHub, basic familiarity in setting up an account.
+  - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
+  - Familiarity with editing text and code files in any text editor
+  - Beginner-level experience building simple web applications with React
+  - Experience using the command line, including Git operations
+  - A GitHub account
 units:
 - learn.static-apps-gatsby.1-introduction
 - learn.static-apps-gatsby.2-gatsby
