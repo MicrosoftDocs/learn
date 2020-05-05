@@ -8,7 +8,7 @@ A Spark notebook is included in the sample you cloned, so you need to upload tha
 
 2.    In the Cluster dashboards pane, click Jupyter notebook.
 
-    ![Opening a Jupyter notebook](../media/8-img01.png)
+       ![Opening a Jupyter notebook](../media/8-img01.png)
 
 3.    When prompted for credentials, enter a username of admin, and enter the password you created when you created the clusters.
 
@@ -17,9 +17,6 @@ A Spark notebook is included in the sample you cloned, so you need to upload tha
 4.    Click PySpark, and then in the PySpark page, click Upload.
 
 5.    Navigate to the location where you downloaded the sample from GitHub, select the RealTimeStocks.ipynb file, then click Open, then click Upload, and then click Refresh in the internet browser.
-
-> [!NOTE]
-> If you receive the error Error loading notebook An unknown error occurred while loading this notebook. This version can load notebook formats v4 or earlier, see [Known Issues](https://docs.microsoft.com/azure/hdinsight/hdinsight-release-notes-archive#known-issues) to correct the issue.
 
 6.    Once the notebook uploads to the PySpark folder, click RealTimeStocks.ipynb to open the notebook in the browser.
 

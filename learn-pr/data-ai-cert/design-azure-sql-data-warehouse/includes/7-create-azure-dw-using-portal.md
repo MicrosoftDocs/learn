@@ -13,7 +13,7 @@ Complete these steps to create a data warehouse that contains the *AdventureWork
    
    ![Screenshots of creating an Azure data warehouse](../media/6-create-azure-data-warehouse.png)
    
-1. From the **SQL Data Warehouse** blade, create an Azure Synapse Analytics  with the following settings:
+1. From the **Azure Synapse Analytics** blade, create an Azure Synapse Analytics  with the following settings:
 
     - Subscription: the name of the subscription you are using in this lab
 
@@ -21,7 +21,7 @@ Complete these steps to create a data warehouse that contains the *AdventureWork
 
     - Resource group name: **mslearn-demodw**.
 
-    - Database warehouse name: **sampleDataWH**.
+    - SQL pool name: **sampleDataWH**.
 
     - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
         - Server name: **sampledatawhxx**, where **xx** are your initials
@@ -36,13 +36,13 @@ Complete these steps to create a data warehouse that contains the *AdventureWork
 
     - Performance Level: Click **Select performance level** and select **Gen2 DW100C**
 
-1. In the **SQL Data Warehouse*** blade, click **Review + create**.
+1. In the **Azure Synapse Analytics*** blade, click **Review + create**.
 
     ![Screenshot of the new database server pane](../media/6-create-sql-db.png)
 
-1. In the **SQL Data Warehouse*** blade, click **Create**.
+1. In the **Azure Synapse Analytics*** blade, click **Create**.
 
 
 1. Select **Create** to provision the database. Provisioning takes a few minutes.
 
-You can monitor the deployment process through the notification ("bell") icon in the top bar - it will animate while the deployment is occurring. When the data warehouse is deployed, you have successfully created a data warehouse in Azure SQL Data Warehouse!
+You can monitor the deployment process through the notification ("bell") icon in the top bar - it will animate while the deployment is occurring. When the data warehouse is deployed, you have successfully created a SQL pool in Azure Synapse Analytics.
