@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.intro-iot-funtions-iot-edge.introduction
+uid: learn.oxford.intro-iot-funtions-iot.introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -8,7 +8,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.prod: learning-azure-iot-hub
 durationInMinutes: 3 # dummy number at present
 content: |
   [!include[](includes/1-introduction.md)]

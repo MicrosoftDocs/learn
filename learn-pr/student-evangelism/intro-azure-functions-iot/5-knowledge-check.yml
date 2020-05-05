@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.intro-iot-funtions-iot-edge.knowledge-check
+uid: learn.oxford.intro-iot-funtions-iot.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -13,15 +13,15 @@ durationInMinutes: 5 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "Which characteristic of Azure Functions for IoT Edge helps to deploy large-scale IoT applications?"
+  - content: "Which characteristic of Azure Functions for IoT helps to deploy large-scale IoT applications?"
     choices:
-    - content: "Azure Functions for IoT Edge can manage demand that spikes up or down."
+    - content: "Azure Functions for IoT can manage demand that spikes up or down."
       isCorrect: true
-      explanation: "Azure functions for IoT Edge enable developers to create scalable IoT applications that can be rapidly deployed without provisioning a fixed infrastructure capacity in advance. This helps with large-scale IoT solutions where demand from IoT devices can spike up or down rapidly."
-    - content: "Azure Functions for IoT Edge is secure."
+      explanation: "Azure Functions for IoT enable developers to create scalable IoT applications that can be rapidly deployed without provisioning a fixed infrastructure capacity in advance. This helps with large-scale IoT solutions where demand from IoT devices can spike up or down rapidly."
+    - content: "Azure Functions for IoT are secure."
       isCorrect: false
       explanation: "Security doesn't directly help in scaling solutions"
-    - content: "Azure Functions for IoT Edge can manage large volumes of data."
+    - content: "Azure Functions for IoT can manage large volumes of data."
       isCorrect: false
       explanation: "In themselves, IoT functions aren't related to managing large data volumes"
   - content: "An Azure Function has two parts - Triggers and Bindings.  Collectively, what do Triggers and Bindings achieve?"
@@ -31,16 +31,16 @@ quiz:
       explanation: "Scalable solutions are a feature of Azure solutions but aren't uniquely related to Triggers and Bindings."
     - content: "Triggers and bindings help you to avoid hardcoding access to other services."
       isCorrect: true
-      explanation: "The trigger invokes the function and provide data needed by the function. Bindings connect resources to the function. Data from bindings is provided to the function as parameters. Thus, Triggers and bindings help you to avoid hardcoding access to other services."
+      explanation: "The trigger invokes the function and provides data needed by the function. Bindings connect resources to the function. Data from bindings is provided to the function as parameters. Thus, Triggers and bindings help you to avoid hardcoding access to other services."
     - content: "Triggers and Bindings provide a rapid response to events."
       isCorrect: false
       explanation: "Triggers and Bindings aren't uniquely responsible for providing a rapid response to events."
-  - content: "Identify the feature of Azure Functions for IoT Edge. Which ensure that you're charged only for the resources you use?"
+  - content: "Identify the feature of Azure Functions for IoT that ensure that you're charged only for the resources you use?"
     choices:
-    - content: "Azure functions for IoT Edge are faster hence they use less resources."
+    - content: "Azure Functions for IoT are faster hence they use less resources."
       isCorrect: false
       explanation: "The speed of execution doesn't directly impact overall resources."
-    - content: "Azure functions can be managed through a dashboard."
+    - content: "Azure Functions can be managed through a dashboard."
       isCorrect: false
       explanation: "The existence of a dashboard doesn't impact the cost."
     - content: "You don't have to pre-allocate the resources in advance."
