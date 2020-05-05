@@ -39,7 +39,7 @@ To complete the API, you'll start by moving the starter API code to a folder nam
 
 1. Open the command palette by pressing **F1**
 1. Type and select **Git: Commit All**
-1. Type the commit message **api** and press **ENTER**
+1. Type the commit message **api** and press <kbd>Enter</kbd>
 
 You'll now see an **api** folder in the Visual Studio Code explorer. The **api** folder contains your Azure Functions project, along with three functions.
 
