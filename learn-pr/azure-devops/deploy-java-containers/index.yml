@@ -5,7 +5,7 @@ metadata:
   description: Implement a CI/CD pipeline for Java containers.
   ms.date: 04/28/2020
   author: tpetchel
-  ms.author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Java container deployments with Azure Pipelines
