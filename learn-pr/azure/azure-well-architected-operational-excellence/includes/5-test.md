@@ -1,8 +1,8 @@
 Testing is one of the fundamental components and DevOps and agile development in general. If automation gives DevOps the required speed and agility to deploy software quickly, only through extensive testing those deployments will achieve the required reliability that customers demand.
 
-A main tenet of a DevOps practice to achieve system reliability is the "Shift Left" principle. If developing and deploying an application is a process depicted as a series of steps going from left to right, testing should not only be performed at the very end of the process (at the right). It should be shifted as much to the beginning (to the left) as possible, errors are cheaper to repair when caught early and can be expensive or impossible to fix later in the application life cycle.
+A main tenet of a DevOps practice to achieve system reliability is the *shift left* principle. If developing and deploying an application is a process depicted as a series of steps going from left to right, testing should not only be performed at the very end of the process (at the right). It should be shifted as much to the beginning (to the left) as possible. Errors are cheaper to repair when caught early and can be expensive or impossible to fix later in the application life cycle.
 
-Another aspect to consider is that testing should occur on both application code as well as infrastructure code and they should be subject to the same quality controls. As described in Infrastructure as Code, the environment where applications are running should be version-controlled and deployed through the same mechanisms as application code, and hence can be tested and validated using DevOps testing paradigms too.
+Testing should occur on both application code as well as infrastructure code and they should be subject to the same quality controls. The environment where applications are running should be version-controlled and deployed through the same mechanisms as application code, and hence can be tested and validated using DevOps testing paradigms.
 
 You can use your favorite testing tool to run your tests, including Azure Pipelines for automated testing and Azure Testing Plans for manual testing.
 
@@ -36,9 +36,12 @@ Manual testing is much more expensive than automated testing, and as a consequen
 
 There are many different ways of confirming that the application is doing what it should.
 
-Blue/Green deployments: when deploying a new application version, you can deploy it in parallel to the existing one. This way you can start redirecting clients to the new version, and if everything goes well you will decommission the old version. If there is any problem with the new deployment, you can always redirect the users back to the old one.
-Canary releases: you can expose new functionality of your application (ideally using feature flags) to a select group of users. If users are satisfied with the new functionality, you can extend it to the rest of the user community. In this case we are talking about releasing functionality, and not necessarily about deploying a new version of the application.
-A/B testing: A/B testing is similar to canary release-testing, but while canary releases focus on mitigate risk, A/B testing focus on evaluating the effectiveness of two similar ways of achieving different goals. For example, if you have two versions of the layout of a certain area of your application, you could send half of your users to one, the other half to the other, and use some metrics to see which layout works better for the application goals.
+- **Blue/Green deployments**: when deploying a new application version, you can deploy it in parallel to the existing one. This way you can start redirecting clients to the new version, and if everything goes well you will decommission the old version. If there is any problem with the new deployment, you can always redirect the users back to the old one.
+
+- **Canary releases**: you can expose new functionality of your application (ideally using feature flags) to a select group of users. If users are satisfied with the new functionality, you can extend it to the rest of the user community. In this case we are talking about releasing functionality, and not necessarily about deploying a new version of the application.
+
+- **A/B testing**: A/B testing is similar to canary release-testing, but while canary releases focus on mitigate risk, A/B testing focus on evaluating the effectiveness of two similar ways of achieving different goals. For example, if you have two versions of the layout of a certain area of your application, you could send half of your users to one, the other half to the other, and use some metrics to see which layout works better for the application goals.
+
 An important aspect to consider is how to measure the effectiveness of new features in the application. A way to do that is through Application Insights User Behavior Analytic, with which you can determine how people are using your application. This way you can decide whether a new feature has improved your applications without bringing effects such as decreasing usability.
 
 Certain services in Azure offer functionality that can help with this kind of tests, such as the slot functionality in the Azure App Service, that allows having two different versions of the same application running at the same time, and redirect part of the users to one or the other.
@@ -51,17 +54,8 @@ During these stress tests, it is critical monitoring all the components of the s
 
 It is equally important verifying that after the stress test is concluded, the infrastructure scales back down to its normal condition in order to keep costs under control.
 
-Business Continuity Drills
-Certain infrastructure test scenarios can be considered under the category of acceptance testing, such as Business Continuity drills. In particular Disaster Recovery scenarios are difficult to test on-premises, but the public cloud makes this kind of tests easier. Tools such as Azure Site Recovery make it possible starting an isolated copy of the primary location in a secondary environment, so that it can be verified that the applications have come up as they should.
-
-In case there is any problem, the Disaster Recovery procedure can be optimized, and the infrastructure in the secondary environment can be deleted.
-
-### Exploratory Testing
-
-Experts explore the application in its entirety trying to find faults or suboptimal implementations of functionality. These experts could be developers, UX specialists, product owners, actual users, and other profiles. Test plans are typically not used, since testing is left to the ability of the individual tester.
-
 ### Fault injection
 
 The same concept can be applied to the infrastructure. If the application should be resilient to infrastructure failures, introducing faults in the underlying infrastructure and observing how the application behaves is fundamental for increasing the trust in your redundancy mechanisms. Shutting down ungracefully infrastructure components, degrading the performance of certain elements such as network equipment or introducing faults purposely in the environment are ways of verifying that the application is going to react as expected when these situations occur in real life.
 
-Most companies use a controlled way of injecting faults in the system, although if confident with the application resiliency, automated frameworks could be used. A new science has been developed around fault injection, called Chaos Engineering.
+Most companies use a controlled way of injecting faults in the system, although if confident with the application resiliency, automated frameworks could be used. Chaos engineering is a practice adopted by some organizations to identify areas where faults may occur by purposefully making key pieces of infrastructure unavailable.

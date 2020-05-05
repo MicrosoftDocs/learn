@@ -21,4 +21,8 @@ We wrapped up by discussing that there are various ways to automate tasks to imp
 
 ## Learn more
 
-To learn more
+To learn more about incorporating operational excellence through your organization and tools you can use along the way, visit the following documents:
+
+- [Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true)
+- [What is Azure DevOps?](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops&azure-portal=true)
+- [Azure DevOps documentation](https://docs.microsoft.com/azure/devops/?view=azure-devops&azure-portal=true)

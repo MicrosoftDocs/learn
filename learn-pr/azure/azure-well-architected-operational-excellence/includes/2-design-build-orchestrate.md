@@ -1,4 +1,4 @@
-Development and operational practices have evolved over the years to become more seamless and integrated. Modern practices involve organizational shifts as well as tooling adoption to improve the operational agility of an oranization. Let's take a look at some of the key concepts to improving your organizations ability to build and deploy applications.
+Development and operational practices have evolved over the years to become more seamless and integrated. Modern practices involve organizational shifts as well as tooling adoption to improve the operational agility of an organization. Let's take a look at some of the key concepts to improving your organizations ability to build and deploy applications.
 
 ## DevOps
 
@@ -36,7 +36,7 @@ GitHub Actions can also be used to build CI/CD capabilities in your GitHub repos
 
 A microservices architecture consists of services that are small, independent, and loosely coupled. Each service can be deployed and scaled independently. Microservice architectures are often adopted for new applications that are adopting DevOps practices.
 
-![Logical diagram of a microservices architecture](../media/2-microservices-logical.svg)
+:::image type="content" source="../media/2-microservices-logical.svg" alt-text="Logical diagram of a microservices architecture":::
 
 A microservice is small enough that a single small team of developers can write and maintain it. Because services can be deployed independently, a team can update an existing service without rebuilding and redeploying the entire application.
 
