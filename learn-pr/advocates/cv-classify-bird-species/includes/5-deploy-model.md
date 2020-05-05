@@ -46,4 +46,25 @@ with open(base_image_url + "images/Test/test_image.jpg", "rb") as image_contents
               ": {0:.2f}%".format(prediction.probability * 100))
 ```
 
+When you post to the published endpoint you will get a result that looks like the below text. It shows the probability of each tag the computer vision model was trained on sorted by the highest score. It only knows the type of birds it was trained to recognize. If you were to post an image of a new bird that it was not trained on it would predict one of the birds it was trained on for the new bird.
+
+```bash
+	American Crow: 99.18%
+	Common Grackle: 25.34%
+	Red-tailed Hawk (Dark morph): 4.09%
+	Mourning Dove: 1.74%
+	American Robin (Adult): 0.92%
+	House Sparrow (Female): 0.40%
+	American Robin (Juvenile): 0.31%
+	Northern Cardinal (Adult Male): 0.24%
+	Tufted Titmouse: 0.04%
+	Blue Jay: 0.04%
+	House Sparrow (Male): 0.04%
+	Northern Cardinal (Female): 0.04%
+	Red-tailed Hawk (Light morph immature): 0.02%
+	American Goldfinch (Male): 0.02%
+	House Wren: 0.01%
+	American Goldfinch (Female): 0.01%
+```
+
 Now you know how to use the model you created and you can start better documenting the birds habits to help conserve their habitat and increase endangered bird populations all with the help of computer vision!
