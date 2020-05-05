@@ -106,7 +106,7 @@ Press the green Run button again.  This time, you should see the following outpu
 Congratulations! You wrote your first lines of code!
 ```
 
-You create a code comment by prefixing a line of code with a two forward slashes '//'. This instructs the compiler to ignore all the instructions on that line.  Code comments are helpful when you're not ready to delete the code yet, but you want to ignore it for now.  You can also use code comments to add messages to yourself that reminds you what the code is doing.  We'll talk about code comments in an upcoming module.
+You create a code comment by prefixing a line of code with a two forward slashes `//`. This instructs the compiler to ignore all the instructions on that line.  Code comments are helpful when you're not ready to delete the code yet, but you want to ignore it for now.  You can also use code comments to add messages to yourself that reminds you what the code is doing.  We'll talk about code comments in an upcoming module.
 
 The three new lines of code you added demonstrated the difference between the `Console.WriteLine()` and `Console.Write()` methods.  Admittedly, the new lines of code you added could easily be shortened to a single line of code like you wrote in Step 1.  However, we wanted you to learn a second technique to print a message to the output console.
 
