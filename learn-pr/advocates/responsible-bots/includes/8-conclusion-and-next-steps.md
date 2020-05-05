@@ -1,4 +1,4 @@
-# Publishing the bot
+## Publishing the bot
 
 Now that we have implemented much of the bot's logic, we need to publish it back to the cloud. This can be easily done from within Visual Studio in the same manner, as we did in **unit 3**. It would be even simpler, because publishing profile is already defined for our project, and the whole process would just take one click of a button.
 
@@ -21,7 +21,7 @@ Once you do that, you should be able to enjoy the chat with the bot through the 
 
 ![Final Web Chat](../media/FinalWebChat.png)
 
-# Connecting the Bot to Communication Channels 
+## Connecting the Bot to Communication Channels 
 
 Once you have finished the bot, you probably want to share it with your friends through some common communication channels, such as Skype or Telegram. This can be easily configures through Bot page on Azure Portal, by selecting **Channels** from the left menu:
 
@@ -37,7 +37,7 @@ For example, to add the Bot to Telegram, you can do the following:
 
  After that the bot would be functional in Telegram, and you can share the link with your friends and potential students.
 
-# Conclusion
+## Conclusion
 
 During this course, we have started to build a bot that helps school students with their Geography lessons. Implementing a complete bot is out of scope of this module. 
 
