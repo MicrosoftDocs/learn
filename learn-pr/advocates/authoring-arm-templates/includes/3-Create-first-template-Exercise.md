@@ -35,7 +35,7 @@ Copy and paste the following JSON into the editor:
 - **resources**: Contains the resources you want to deploy or update. Currently, it's empty, but you'll add resources later.
 
 3. Now that you saved the template. Close the editor by either clicking on the ellipsis (upper right corner **...**) and select **Close Editor**, or use the keyboard shortcut **CTRL-Q**.
----
+
 ## Create resource group
 
 When you deploy a template, you need to specify a resource group that will contain the resources. Before running the deployment command, you must create the resource group. However, in the sandbox provided here, you already have a resource group to target your deployments.
@@ -54,13 +54,13 @@ When you deploy a template, you need to specify a resource group that will conta
 
 To verify that the command successfully, you can use the **echo** command in the shell to print out on screen the content of the $RG variable.
 
-    ```shell
-    echo $RG
-    ```
+```shell
+echo $RG
+```
+
 If **echo $RG** does not return a valid resource group name, use the **az group list** command to get the listing of all resource groups in your sandbox and look for the name.
 
-    ![visual studio code in shell save first template](../media/az-list.png)
-
+![visual studio code in shell save first template](../media/az-list.png)
 
 ## Deploy the template
 
@@ -68,9 +68,9 @@ To deploy the template using Azure CLI using the resource group created for you 
 
 The code below, sets the variables for:
 
-1. The template filename and location (in the same folder for us)
-1. Today's date
-1. A deployment name variable based on a string and today's date.
+- The template filename and location (in the same folder for us)
+- Today's date
+- A deployment name variable based on a string and today's date.
 
 ```azurecli
 templateFile="azuredeploy.json"
@@ -85,10 +85,7 @@ az deployment group create \
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 
-
 ![Azure CLI deployment provisioning state](../media/deploy-succeed.png)
-
----
 
 ## Verify deployment
 
@@ -104,11 +101,11 @@ You can verify the deployment by exploring the resource group from the Azure por
 
 1. Notice in the upper right of the overview, the status of the deployment is displayed. Select **1 Succeeded**.
 
-   ![View deployment status](../media/portal-verify-deployment.png)
+![View deployment status](../media/portal-verify-deployment.png)
 
 1. You see a history of the deployments for the resource group. Select the deployment that is contains  **blanktemplate** and the deployment date as part of the name.
 
-   ![Select deployment](../media/portal-verify-blanktemplate.png)
+![Select deployment](../media/portal-verify-blanktemplate.png)
 
 1. You see a summary of the deployment. In this case, there's not a lot to see because no resources were deployed. Later in this series you might find it helpful to review the summary in the deployment history. Notice on the left you can view inputs, outputs, and the template used during deployment.
 
