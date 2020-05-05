@@ -11,7 +11,7 @@ You have two options for the purchasing model, [virtual core (vCore)-based](http
 > * The type and amount of data and log storage.
 > * Backup storage ([read-access, geo-redundant storage (RA-GRS)](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs)).  
 
-For the purposes of this workshop, we'll focus on the vCore purchasing model (recommended). You can optionally review the DTU model by [comparing vCores and DTUs in-depth here](https://docs.microsoft.com/azure/sql-database/sql-database-purchase-models
+For the purposes of this module, we'll focus on the vCore purchasing model (recommended). You can optionally review the DTU model by [comparing vCores and DTUs in-depth here](https://docs.microsoft.com/azure/sql-database/sql-database-purchase-models
 ).  
 
 ## Service tier  
