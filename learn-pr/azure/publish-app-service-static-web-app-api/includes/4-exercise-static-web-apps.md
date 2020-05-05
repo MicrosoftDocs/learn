@@ -125,6 +125,8 @@ Next, configure your new app and link it to your GitHub repository.
 
 1. Click the **Next: Build >** button to edit the build configuration
 
+:::image type="content" source="../media/next-build-button.png" alt-text="Next: Build button":::
+
 ### Build
 
 Next, add configuration details specific to your preferred front-end framework.
@@ -170,6 +172,8 @@ Next, add configuration details specific to your preferred front-end framework.
 ::: zone-end
 
 Click the **Review + create** button. This will bring you to the page where you can review the resource before you create it.
+
+:::image type="content" source="../media/review-create-button.png" alt-text="Review + create button":::
 
 > [!NOTE]
 > Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
