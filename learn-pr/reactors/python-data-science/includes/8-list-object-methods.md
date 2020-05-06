@@ -139,13 +139,30 @@ The output is:
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
+  Here's the input:
+  
   ```python
-  beatles.append(beatles)
-  beatles
+  groupMembers.extend(groupMembers)
+  groupMembers
   ```
-
+  
+  The output is:
+  
   ```Output
-  ['John', 'Paul', 'George', [...]]
+  ['Quinn', 'Jordan', 'Parker', 'Riley', [...]]
+  ```
+  
+  The next input is:
+  
+  ```python
+  groupMembers.append(groupMembers)
+  groupMembers
+  ```
+  
+  Here's the output:
+  
+  ```Output
+  ['Quinn', 'Jordan', 'Parker', 'Riley', 'Quinn', 'Jordan', 'Parker', 'Riley']
   ```
   
 </details>
