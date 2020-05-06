@@ -368,4 +368,6 @@ image.save('thumbnail.jpg')
 ```
 
 The output is:
+
 :::image type="content" alt-text="A generated thumbnail." source="../media/thumbnail.jpg" loc-scope="azure":::
+
