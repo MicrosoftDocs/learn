@@ -8,7 +8,7 @@ You can now:
 
 ## Next steps
 
-To continue your journey with GitHub Actions, check out the next two modules on this learning path. There, you expand on what you have learned here and use GitHub Actions in continuous integration, continuous delivery, and implementing infrastructure as code.
+To continue your journey with GitHub Actions, check out the next two modules on this learning path. There, you expand on what you've learned here and use GitHub Actions in continuous integration, continuous delivery, and implementing infrastructure as code.
 
 ## Learn more
 

@@ -2,11 +2,11 @@ Here, you are introduced to GitHub Actions and Workflows. You learn the types of
 
 ## What is GitHub Actions?
 
-*Github Actions* are packaged scripts to automate tasks in a software development workflow in GitHub.
+*GitHub Actions* are packaged scripts to automate tasks in a software development workflow in GitHub.
 
 For example, suppose you want to automate scanning your repository for secrets. You could use a GitHub Action written by a member of the community called *Secret Scan*. Or maybe you want to trigger a Jenkins job, there is an Action for that. You can also write your own actions and if you desire, publish them to the [GitHub Marketplace](https://github.com/marketplace?type=actions&azure-portal=true).
 
-You can find GitHub actions in [GitHub Marketplace](https://github.com/marketplace?type=actions&azure-portal=true), in open source projects on GitHub, and in the GitHub [actions](https://github.com/actions?azure-portal=true) organization.
+You can find GitHub actions in [GitHub Marketplace](https://github.com/marketplace?type=actions&azure-portal=true), in open-source projects on GitHub, and in the GitHub [actions](https://github.com/actions?azure-portal=true) organization.
 
 There are two types of GitHub Actions, *container actions* and *JavaScript actions*. With container actions, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. JavaScript actions don't include the environment in the code. This means you'll have to specify the environment to execute this action. You can use a VM in the cloud, or on-premises. GitHub Actions support any language, and Linux, macOS, and Windows environments.
 
@@ -53,7 +53,7 @@ A complete list of action metadata can be found at [Metadata syntax for GitHub A
 
 ## What is a GitHub Workflow?
 
-A *GitHub Workflow* is a an automated process that you set up in your repository to automate software development life-cycle tasks including GitHub Actions. With it, you can build, test, package, release, or deploy any project on GitHub.
+A *GitHub Workflow* is an automated process that you set up in your repository to automate software development life-cycle tasks including GitHub Actions. With it, you can build, test, package, release, or deploy any project on GitHub.
 
 To create a workflow, you add actions to a .yml file in the ```.github/workflows``` directory in your GitHub repository.
 
@@ -96,7 +96,7 @@ An event can have several activity types that cause it to trigger. It will trigg
 
 A workflow must have at least one *job*. A job is a section of the workflow that will be associated with a *runner*. A runner can be GitHub-hosted or self-hosted and the job can run on a machine or in a container. You specify the runner with the ```runs-on:``` attribute. Here, you are telling the workflow to run this job on ```ubuntu-latest```.
 
-Each job will have steps to complete. In this step you use the action *actions/checkout@v1* that we mentioned earlier to checkout the repository, but the interesting part here is the ```using: ./action-a``` value. This is the path to the container action that you build in an *action.yml* file. We went over the contents of this file in the **What is GitHub Actions?** section above.
+Each job will have steps to complete. In this step, you use the action *actions/checkout@v1* that we mentioned earlier to check out the repository, but the interesting part here is the ```using: ./action-a``` value. This is the path to the container action that you build in an *action.yml* file. We went over the contents of this file in the **What is GitHub Actions?** section above.
 
 The last part of this workflow file sets the MY_NAME variable value for this workflow. Recall the container action took an input called MY_NAME.
 
