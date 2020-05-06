@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.responsible-bots.2-responsible-coverstaional-ui
-title: Principles of responsible converstaional UI
+uid: learn.advocates.responsible-bots.2-responsible-coversational-ui
+title: Principles of responsible conversational UI
 metadata:
-  title: Principles of responsible converstaional UI
+  title: Principles of responsible conversational UI
   description: In this unit, we'll learn what it means for a chat bot to be responsible, and what problems developers should consider before they build a bot.
   ms.date: 05/19/2020
   author: shwars

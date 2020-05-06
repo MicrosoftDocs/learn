@@ -57,7 +57,7 @@ Here you can see chit-chat knowledgebase being pre-populated as `qna_chitchat_En
 
 Let's add some geography terminology to this knowledge base. To do this, click on **+** button located in the task bar (see it highlighted in the picture below):
 
-![QnA Maker Add Term](../media/QnAMakerAddKBH.png)
+![QnA Maker Add Term](../media/qna-maker-add-knowledge-base-host.png)
 
 You will see the placeholder for a new question being added, and you can provide a question (or a set of possible questions) and a corresponding answer.
 
