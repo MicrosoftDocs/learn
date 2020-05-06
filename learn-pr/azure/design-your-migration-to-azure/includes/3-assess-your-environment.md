@@ -1,4 +1,4 @@
-Azure Migrate helps you assess your current on-premises workloads. After the assessment, Azure Migrate makes recommendations for the size of VM you'll need to provision.
+You can perform an agentless environment discovery, or use agents to perform a dependency analysis. The Azure portal helps you assess your current on-premises workloads. After the assessment, Azure Migrate makes recommendations for the size of VM you'll need to provision.
 
 In your role, you've been asked to plan the migration of the business's on-premises environment to Azure. Because the server workloads are based primarily on VMware, you want to begin with those machines. You want to assess readiness for the move to Azure. You also want to identify estimated costs for the resources that those machines will consume, so the management team can set the budgets.
 
