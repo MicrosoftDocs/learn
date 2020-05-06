@@ -145,7 +145,7 @@ The output is:
 'Python'
 ```
 
-<!-- Sarah, Here are my changes to address Mike's feedback about the "i" and "j" indecies and the oddly formatted code block.
+<!-- Sarah, Here are my changes to address Mike's feedback about the "i" and "j" indicies and the oddly formatted code block.
 -- 
 --    Added for index "i"      "We can slice from this location with the index `i`."
 --    Changed for index "j"    "We can slice from this location with the index `j`."
@@ -173,7 +173,7 @@ In our example:
 - The first row contains the string that we want to slice, "Python".
 - The second row shows the position of the indices 0 to 6 in the string.
 - The third row shows the corresponding negative indices. Notice there is no 0 in this row.
-- The fourth row shows the starting locations for our slicing indecies, `i` and `j`.
+- The fourth row shows the starting locations for our slicing indicies, `i` and `j`.
 
 The slice from `i` to `j` includes all characters between the edges labeled `i` and `j`, respectively.
 
