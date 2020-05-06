@@ -5,7 +5,10 @@ In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics
 | ham |	What you doing?how are you? |
 | ham |	Ok lar... Joking wif u oni... |
 
-Let’s now import pandas and load the dataset. The path name is case-sensitive.
+> [!TIP]
+> Review steps TBD link for setting up the learn environment.
+
+Let’s import pandas and load the dataset. The path name is case-sensitive.
 
 ```python
 import pandas as pd 

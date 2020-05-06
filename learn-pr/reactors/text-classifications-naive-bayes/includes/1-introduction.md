@@ -21,6 +21,6 @@ In this module, you will:
 
 ## Prerequisites
 
-- TBD
+- Introduction to Python for data science
 
 

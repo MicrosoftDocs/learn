@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.text-classification-naive-bayes.6-train-model
+uid: learn.reactors.text-classifications-naive-bayes.6-train-model
 title: Train model
 metadata:
   title: Train model
-  description: Train model TBD.
+  description: Learn how to train a machine learning model to increase accuracy.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

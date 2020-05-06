@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.text-classification-naive-bayes.3-import-dataset
+uid: learn.reactors.text-classifications-naive-bayes.3-import-dataset
 title: Import datasets
 metadata:
   title: Import datasets
-  description: Import datasets TBd.
+  description: Import datasets and Python libraries to work with.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

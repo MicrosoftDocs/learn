@@ -18,7 +18,9 @@ abstract: |
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - TBD
+  - Text classifications with Naive Bayes
+  - Principal component analysis (PCA)
+  - Support vector machines with facial recognition
 # placeholder icon
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

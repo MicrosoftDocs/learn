@@ -15,14 +15,14 @@ summary: |
   Throughout this Learning Path you will be encouraged to test out Python code in Visual Studio Code (VS Code) using the Python extension and Jupyter Notebooks.
 
   In this learning path, you'll:
-    - Learn the strengths and limitations of conditional probability and naive Bayes machine learning. 
+    - Learn the strengths and limitations of conditional probability and Naive Bayes machine learning. 
     - 
     -
 
   Complementary content for Microsoft Reactor Workshops.
   
 prerequisites: |
-  None.
+ - Introduction to Python for data science
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
@@ -34,7 +34,7 @@ products:
 - azure
 - vs-code
 modules:
-- learn.reactors.text-classification-naive-bayes
+- learn.reactors.text-classifications-naive-bayes
 - learn.reactors.principal-component-analysis-food-composition
 - learn.reactors.support-vector-machines-facial-recognition
 - learn.reactors.deep-learning-facial-recognition

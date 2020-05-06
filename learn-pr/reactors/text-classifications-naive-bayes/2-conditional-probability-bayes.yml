@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.text-classification-naive-bayes.2-conditional-probability-bayes
+uid: learn.reactors.text-classifications-naive-bayes.2-conditional-probability-bayes
 title: Conditional probability and Bayes law
 metadata:
   title: Conditional probability and Bayes law
-  description: Conditional probability and Bayes law TBD.
+  description: Learn about conditional probability and Bayes law and how they apply to machine learning.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
