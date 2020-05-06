@@ -43,7 +43,7 @@ In this case, we don't care about the actual value of *H*. It only has to be as 
 
 ## See the solution
 
-This video uses the Azure Quantum Simulated Annealing solver to assign the containers to the ships. You'll see the algorithm exploring a number of different configurations, as it attempts to minimize the cost function that we defined above.
+This video uses the Azure Quantum Parallel Tempering solver to assign the containers to the ships. You'll see the algorithm exploring a number of different configurations, as it attempts to minimize the cost function that we defined above.
 
 **TODO:** Add the video here.
 
