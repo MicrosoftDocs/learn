@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources
+metadata:
+  title: Share cloud resources
+  description: Carnegie Mellon University's Cloud Developer course. Get an introduction to virtualization, one of the many technologies that power the cloud. Learn what virtualization is, its benefits, and how cloud resources are shared.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Share cloud resources
+summary: Get an introduction to virtualization, one of the many technologies that power the cloud. Learn what virtualization is, its benefits, and how cloud resources are shared.
+abstract: | 
+  In this module, you will:
+  - Identify major reasons that virtualization is becoming essential, especially on the cloud
+  - Identify some of the main limitations of traditional operating systems to enable the cloud computing paradigm
+  - Indicate how system complexity can be managed in terms of levels of abstractions and well-defined interfaces, and specify their applicability to virtualization and the cloud
+  - Define resource sharing, explain why it is needed, discuss its two main implementations, and indicate its applicability to virtualization
+  - Outline the main differences between sharing of uniprocessor and multiprocessor systems and the pros and cons of sharing multiprocessor systems in time and space
+    
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+iconUrl: /learn/achievements/cmu-cloud-developer/share-cloud-resources.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.0-introduction
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.1-overview
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.2-benefits
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.3-virtualization-versus-os
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.4-abstractions
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.5-interfaces
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.6-resource-sharing-basics
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.7-resource-sharing-multiprocessor
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.8-summary
+badge:
+  uid: learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.badge

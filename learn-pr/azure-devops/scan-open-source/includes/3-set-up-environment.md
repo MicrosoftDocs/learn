@@ -30,7 +30,7 @@ From the Azure DevOps Demo Generator site, take these steps to run the template.
     > You need to select this option for the template to connect to your GitHub repository. Select this option even if you've already forked the _Space Game_ web site project. The template uses your existing fork.
 1. Select **Create Project**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
+    ![Screenshot of the Azure DevOps Demo Generator Create New Project screen with the Create Project button highlighted.](../media/3-create-new-project.png)
 
     It takes a few moments for the template to run.
 1. Select **Navigate to project** to go to your project in Azure DevOps.
@@ -48,7 +48,7 @@ Assigning work in this way gives you a checklist to work from. It gives others o
 
 Recall that the team settled on these seven top issues.
 
-![Backlog of tasks](../../shared/media/build-all-tasks.png)
+![Screenshot of Azure DevOps showing the To Do backlog of tasks.](../../shared/media/build-all-tasks.png)
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -57,20 +57,20 @@ Here you move the fifth item, **Check open source code for vulnerabilities and l
 
 Recall that **Check open source code for vulnerabilities and licensing terms** relates to scanning open-source components that are used in your application for known vulnerabilities and license ratings.
 
-![Work item details](../media/3-work-item-details.png)
+![Screenshot of Azure DevOps work item details for scanning for vulnerabilities and licensing terms.](../media/3-work-item-details.png)
 
 To set up the work item:
 
 1. From Azure DevOps, go to **Boards** and then select **Boards** from the menu.
 
-    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    ![Screenshot of Azure DevOps navigation with the Boards menu and Boards menu item highlighted.](../../shared/media/azure-devops-boards-menu.png)
 
 1. From the **Check open source code for vulnerabilities and licensing terms** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    ![Screenshot of Azure DevOps State field with the down chevron button highlighted.](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi5-doing.png)
+    ![Screenshot of Azure DevOps Boards showing the vulnerabilities check card now in the Doing column.](../media/3-azure-boards-wi5-doing.png)
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.
 

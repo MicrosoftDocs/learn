@@ -1,20 +1,14 @@
-When you run an application on the cloud, different aspects of security must be controlled by different entities. For instance, the following figure (from AWS) shows the breakdown of security responsibilities between the provider and the customer. 
+When you run an application on the cloud, different aspects of security must be controlled by different entities. For instance, the following figure (from Azure) shows the breakdown of security responsibilities between the provider and the customer. 
 
-![Security responsibilities in AWS between provider and customer](../media/security-3.jpg)
+![Security responsibilities in Azure between provider and customer](../media/security-3.png)
 
-_Figure 13: Security responsibilities in AWS_ ([Source](http://media.amazonwebservices.com/aws-auditing-security-checklist.pdf))
+_Figure 13: Security responsibilities in Azure_ ([Source](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility))
 
-Many classes of applications require different infrastructure, process, and security certifications. Most cloud service providers will comply with a majority of the popular certifications and audit requirements followed in the US and Europe. The following table from Putcher et al.<sup>[2][^2]</sup> compares the most popular providers: 
-
-![Comparison of the most popular service providers](../media/security-4.jpg)
-
-_Figure 14: Comparison of popular service providers_ ([Source](http://www.cs.ucsb.edu/~koc/ns/projects/12Reports/pucherdimopoulos.pdf))
-
-Understanding the details of these certifications is not a goal for this course, but Mather<sup>[1][^1]</sup> provides a good reference for those interested in digging deeper into these aspects. 
+Many classes of applications require different infrastructure, process, and security certifications. Most cloud service providers will comply with a majority of the popular certifications and audit requirements followed in the US and Europe.
 
 To develop an application that passes these compliance checks, both the cloud service providers and the application developers must apply a minimal set of security controls, which we will explore below. As with the rest of this course, we look at controls from a predominantly IaaS perspective. Obviously, as we move up the stack, the cloud service provider has to ensure the security of the resources it is responsible for. 
 
-For an IaaS cloud, the following table gives an overview of the security controls to be implemented by both parties: 
+For an IaaS cloud, the following table gives an overview of some of the the security controls to be implemented by both parties: 
 
 |Domain|Cloud service provider responsibility|Customer responsibility|
 |--|--|--|
@@ -26,11 +20,10 @@ For an IaaS cloud, the following table gives an overview of the security control
 |**Cryptographic object security**|<ul><li>Support data encryption in all provided storage/file systems and DBs. (For example, Windows environments could allow BitLocker implementations.)</li><li>Securely manage customer account and access credentials.</li></ul>|<ul><li>Create and distribute access keys (for cloud service provider APIs) as well as remote connectivity (like SSH, VNC, RDP).</li><li>Do not store keys on the cloud where possible, so that a key will not be in the same place as the data.</li></ul>|
 
 
-Providers will often build in services that simplify the process for customers to implement security controls. For example, AWS provides security groups, which are simply external network firewalls. 
+Providers will often build in services that simplify the process for customers to implement security controls. For example, Azure provides Azure Network Security Groups, which can act as external network firewalls.
 
-The process of verifying the presence of these controls is known as a security audit. These audits can be done internally (by hiring a technical consultant) or externally (by a certifying agency). To host sensitive information on the cloud, both the provider and the customer must pass these audits. However, the lack of demarcation of responsibilities in case of a breach has meant that in most cases, applications using sensitive information like bank records or medical data cannot be hosted on the cloud.
-<br>
-***
+The process of verifying the presence of these controls is known as a security audit. These audits can be done internally (by hiring a technical consultant) or externally (by a certifying agency). To host sensitive information on the cloud, both the provider and the customer must pass these audits.
+
 ### References
 
 <!-- Reference #2 in original course not cited in unit. Remove from visibility. Update citation numbering.

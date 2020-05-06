@@ -6,11 +6,11 @@ A pipeline can be executed as a process by running the pipeline as an experiment
 
 You can publish a pipeline as a REST endpoint, enabling client applications to initiate a pipeline run. You can also define a schedule for a pipeline, and have it run automatically at periodic intervals.
 
-## Pipeline Steps
+## Pipeline steps
 
 An Azure Machine Learning pipeline consists of one or more *steps* that perform tasks. There are many kinds of step supported by Azure Machine Learning pipelines, each with its own specialized purpose and configuration options.
 
-### Types of Step
+### Types of step
 
 Common kinds of step in an Azure Machine Learning pipeline include:
 
@@ -22,7 +22,7 @@ Common kinds of step in an Azure Machine Learning pipeline include:
 
 > **Note**: For a full list of supported step types, see [azure.pipeline.steps package documentation](https://aka.ms/AA70rrh).
 
-### Defining Steps in a Pipeline
+### Defining steps in a pipeline
 
 To create a pipeline, you must first define each step and then create a pipeline that includes the steps. The specific configuration of each step depends on the step type. For example the following code defines a **PythonScriptStep** step that runs a script, and an **EstimatorStep** step that runs an estimator.
 

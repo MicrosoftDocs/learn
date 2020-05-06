@@ -56,11 +56,11 @@ Affected services: IaaS
 
 This is one of the fundamental "new" threats due to the cloud paradigm. The cloud works by providing multiple tenants (for example, you and your classmates) with virtualized access to shared infrastructure. Isolation between co-tenants is provided by a sandbox known as a "hypervisor," which mediates access between virtual machines and the underlying infrastructure.
 
-Although co-tenants should be unable to access their neighbors' details, several exploits over the years have allowed tenants to break out of their sandboxes and steal data from another tenant's memory, network, etc. An example of this could be that as you write code on AWS to solve class projects, a classmate manages to log in to a VM on the same physical machine as you, and then uses some properties of the shared physical machine to steal your code. Isolating all users completely is a very hard problem, even with the hypervisors of today.
+Although co-tenants should be unable to access their neighbors' details, several exploits over the years have allowed tenants to break out of their sandboxes and steal data from another tenant's memory, network, etc. An example of this could be that as you write code on a cloud-hosted VM to solve class projects, a classmate manages to log in to a VM on the same physical machine as you, and then uses some properties of the shared physical machine to steal your code. Isolating all users completely is a very hard problem, even with the hypervisors of today.
 
 To mitigate this, cloud service providers add strong monitoring capabilities, using SLAs to ensure timely vulnerability and patch management, and conducting regular audits. Apart from that, hypervisors must be periodically hardened against any potential new attacks.
 
-For example, [the Xen security advisory page](http://xenbits.xen.org/xsa/) shows security advisories against the Xen hypervisor. Each time an attack becomes known, AWS must patch all its servers so that an attacker cannot use these exploits.
+For example, [the Xen security advisory page](http://xenbits.xen.org/xsa/) shows security advisories against the Xen hypervisor. Each time an attack becomes known, the cloud provider must patch all its servers so that an attacker cannot use these exploits.
 
 ### Threat 5: Data loss or leakage
 

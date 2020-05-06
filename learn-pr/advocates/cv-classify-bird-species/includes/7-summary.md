@@ -4,7 +4,7 @@ Additionally here are some helpful doc links that go into more detail on some of
 
 Happy bird watching!
 
-## Helpful Doc Links
+## Helpful doc links
 
 [Quickstart: Search for images with the Bing Image Search SDK for Node.js](https://docs.microsoft.com/azure/cognitive-services/bing-image-search/image-search-sdk-node-quickstart?WT.mc_id=birds-learn-cassieb)
 

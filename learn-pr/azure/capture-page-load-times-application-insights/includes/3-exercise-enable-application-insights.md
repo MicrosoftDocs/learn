@@ -43,7 +43,7 @@ To enable Application Insights on an app, follow these steps:
 1. If the web app's pane isn't already visible, in the Azure portal, search for and select the web app you created earlier in this unit.
 1. Under **Settings** on the left, select **Application Insights**.
 
-    ![Web app navigation pane](../media/3-web-app-nav-pane.png)
+    ![Screenshot of web app navigation pane with callout highlighting the Application Insights option.](../media/3-web-app-nav-pane.png)
 
 1. On the **Application Insights** page, make sure **Enable** is selected.
 1. Under **Create a new resource**, in the **New resource name** box, enter **videoappinsights**.
@@ -59,7 +59,7 @@ Because you can inject the Application Insights JavaScript SDK into the video we
 1. Under **Settings** on the left, select **Configuration**. You will be on the **Application Settings** tab.
 1. On the **Application Settings** page select **+ New application setting**.
 
-    ![Add new application setting](../media/3-enable-client-side-monitoring.png)
+    ![Screenshot of the application settings tab with a callout highlighting the link to add a new application setting.](../media/3-enable-client-side-monitoring.png)
 
 1. In the **Enter a name** box, enter **APPINSIGHTS_JAVASCRIPT_ENABLED**.
 1. In the **Enter a value** box, enter **true**.

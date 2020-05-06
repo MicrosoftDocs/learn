@@ -30,19 +30,13 @@ In 2007, the Lawrence Berkeley National Labs (LBNL) ran an energy study for 25 d
 
 ![PUE of 25 datacenters studied by Lawrence Berkeley National Labs, 2007](../media/pue-25-data-centers.png)
 
-_Figure 20: PUE of 25 datacenters studied by LBNL_ ([Lawrence Berkeley National Labs, 2007](http://hightech.lbl.gov/documents/data_centers/gsagovenergycard_03_09.pdf))
+_Figure 20: PUE of 25 datacenters studied by LBNL_ (Lawrence Berkeley National Labs, 2007)
 
-The PUE allows companies to identify areas for improvement, address these areas, and monitor the progress in PUE over time. Google publishes quarterly PUEs for their actual datacenters, as shown in Figure 21. Because Google's datacenters are mostly in the northern hemisphere, the average PUE typically rises in the summer because the datacenters require increased use of the cooling equipment.
-
-![PUE data for all large-scale Google datacenters](../media/pue-data-large-scale.png)
-
-_Figure 21: PUE data for all large-scale Google datacenters_<sup>[1][^1]</sup>
-
-Google improves the efficiency of its datacenters using five methods.<sup>[1][^1]</sup> First, it accurately measures and records the PUE as often as possible. Second, it designs good air containment to limit the mixing of hot and cold air. Third, it increases the cold air temperatures because equipment manufacturers allow their equipment to run within aisles at higher temperatures. Fourth, it utilizes free cooling whenever possible. This possibility is determined by the geographical location of the company's datacenters and the number of hours per year that allow the use of cool ambient air, evaporating power, and large thermal reservoirs. Fifth, it minimizes power distribution losses by eliminating several power conversion steps. The lowest recorded PUE to date at a Google datacenter is 1.08, which is around 92% efficiency.
+The PUE allows companies to identify areas for improvement, address these areas, and monitor the progress in PUE over time.
 
 PUE simply measures the efficient use of power. Understanding the energy contributors to PUE is important to improve datacenter design practices. However, PUE is not sufficient as the only measure because it does not account for the load on the IT equipment. If PUE is low, but the IT equipment is not doing useful work, then the datacenter is losing money. Some recent practices include utilizing a TCO metric that accounts for the cost of the server, which is the total cost of energy that it will consume while running a specific workload over its lifespan. Using this approach, datacenters will utilize application-specific optimizations, which will lead to more effective use of the datacenter equipment.
 
-## PDU branches (optional reading)
+## PDU branches
 
 In an earlier module, you were introduced to a PDU, or power distribution unit. You also learned about inefficiencies related to multiple conversions. This section shows you the advantages of using three-phase power and some common pitfalls to avoid when choosing the size and number of PDUs. This section is optional reading as it goes into specific details concerning electrical engineering.
 

@@ -1,17 +1,15 @@
-## How to Deploy the Model
+Now our model is performing "good enough" - let's deploy it! There are different ways to deploy the model based on what you need. There is an option to deploy to an endpoint or you can export the model to different formats to deploy to different platforms. We will go over how to deploy to the endpoint and consume with an app.
 
-Now our model is performing "good enough" lets deploy it! There are different ways to deploy the model based on what you need. There is a deploy to an endpoint or you can export the model to different formats to deploy to different platforms. We will go over how to deploy to the endpoint and consume with an App.
+## Deploy to an endpoint
 
-## Deploy to an Endpoint
-
-### Get the Prediction Url
+### Get the prediction URL
 
 - Select `Performance` from the top navigation in the Custom Vision portal
 - Click `Publish`
 - Select `Prediction Url`
 - This is the Url you will use to post images to get predictions.
 
-### Consume the API in a Python App
+### Consume the API in a Python app
 
 Once the model is trained and at a satisfactory accuracy it's ready to be used in your App
 

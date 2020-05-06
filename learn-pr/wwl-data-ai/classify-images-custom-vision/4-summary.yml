@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.classify-images-custom-vision.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review what you've learned"
+  ms.date: 04/24/2020
+  author: benjiang
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-summary.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "You plan to use the Custom Vision service to train an image classification model. You want to create a resource that can only be used for model training, and not for prediction. Which kind of resource should you create in your Azure subscription?"
+    choices:
+    - content: "Custom Vision"
+      isCorrect: true
+      explanation: "Correct: When you create a Custom Vision resource, you can specify whether it is to be used for training, prediction, or both."
+    - content: "Cognitive Services"
+      isCorrect: false
+      explanation: "Incorrect: A Cognitive Services resource can be used by the Custom Vision service for both training and prediction."
+    - content: "Computer Vision"
+      isCorrect: false
+      explanation: "Incorrect: The Computer Vision service does not support the training of a custom image classification model."
+  - content: "You train an image classification model that achieves less than satisfactory evaluation metrics? How might you improve it?"
+    choices:
+    - content: "Reduce the size of the images used to train the model."
+      isCorrect: false
+      explanation: "Incorrect: Changing the size of the images is unlikely to improve performance significantly, and reducing them may even lose some resolution and make the model worse."
+    - content: "Add a new label for \"unknown\" classes."
+      isCorrect: false
+      explanation: "Incorrect: Adding an \"unknown\" label will not improve the accuracy of predictions for the classes you want to identify."
+    - content: "Add more images to the training set."
+      isCorrect: true
+      explanation: "Correct: Generally, adding more images to the project an retraining the model is likely to improve performance."
+  - content: "You have published an image classification model. What information must you provide to developers who want to use it?"
+    choices:
+    - content: "Only the project ID."
+      isCorrect: false
+      explanation: "Incorrect: The project ID on its own is not enough information to use the published model"
+    - content: "The project ID, the model name, and the key and endpoint for the prediction resource"
+      isCorrect: true
+      explanation: "Correct: To use a published model, you need the project ID, the model name, and the key and endpoint for the prediction resource."
+    - content: "The project ID, iteration number, and the key and endpoint for the training resource."
+      isCorrect: false
+      explanation: "Incorrect: You need the model name rather than the iteration number; and the key and endpoint must be for the prediction resource, not the training resource."

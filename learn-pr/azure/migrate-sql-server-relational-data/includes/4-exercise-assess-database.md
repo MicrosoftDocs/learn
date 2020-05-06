@@ -44,7 +44,7 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 1. Leave the remaining fields at their default values and select **Create**.
 
-    ![Project type](../media/4-02-project-type.png)
+    :::image type="content" source="../media/4-02-project-type.png" alt-text="Project type." loc-scope="azure-database-migration":::
 
 ## Configure the project
 
@@ -60,7 +60,7 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
     | **Trust server certificate** | Selected        |
     | | |
 
-    ![Connect to a server](../media/4-04-connect-to-server.png)
+    :::image type="content" source="../media/4-04-connect-to-server.png" alt-text="Connect to a server." loc-scope="azure-database-migration":::
 
 1. Select **Connect**.
 
@@ -68,13 +68,13 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 1. The assessment now shows the database you've selected. Select **Start Assessment** to begin the assessment.
 
-    ![Select sources](../media/4-06-select-sources.png)
+    :::image type="content" source="../media/4-06-select-sources.png" alt-text="Select sources." loc-scope="azure-database-migration":::
 
 ## Review the assessment results and address issues
 
 Allow the analysis to run. When it finishes, it produces results and breaks them into SQL Server *feature parity* issues or *compatibility issues*. Start by looking at the SQL Server feature parity results, which are the default.
 
-  ![Review results](../media/4-07-review-results.png)
+    :::image type="content" source="../media/4-07-review-results.png" alt-text="Review results." loc-scope="azure-database-migration":::
 
 In the middle of the page, look for the section **Unsupported features**. The second and third items show **N/A** under the affected objects, meaning that nothing was found in the source system for these two items.
 
@@ -82,7 +82,7 @@ Look more closely at the first row, though, and you'll see the issue **Service B
 
 Select **Compatibility issues**. It shows that there were no compatibility issues with the database. If there had been issues, it would have listed them and you would need to resolve them before you could continue the migration.
 
-![Compatibility issues](../media/4-08-compatibility-issues.png)
+:::image type="content" source="../media/4-08-compatibility-issues.png" alt-text="Compatibility issues." loc-scope="azure-database-migration":::
 
 1. Open SQL Server Management Studio and connect to the **admsdemovm** server with Windows authentication. Then connect to the **social** database.
 
@@ -102,6 +102,6 @@ Select **Compatibility issues**. It shows that there were no compatibility issue
 
 1. Select **SQL Server feature parity**. It should now show that the issue has been resolved.
 
-    ![Fixed issues](../media/4-09-fixed-issues.png)
+    :::image type="content" source="../media/4-09-fixed-issues.png" alt-text="Fixed issues." loc-scope="azure-database-migration":::
 
 At this point, you've completed the assessment. Select the arrow on the upper-left side of the screen to return to the list of completed assessments.
