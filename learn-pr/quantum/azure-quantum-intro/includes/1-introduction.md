@@ -1,6 +1,4 @@
-In this module, you’ll learn about quantum-inspired optimization (QIO). You'll apply what you've learned to solve this real-world optimization problem.
-
-Contoso Logistics Inc. is a freight company that operates two container ships.
+In this module, you’ll learn about quantum-inspired algorithms. In particular, you'll see how they can be applied to solve optimization problems, which is an area called quantum-inspired optimization (QIO). In this module, we'll look at Contoso Logistics Inc, a freight company that operates two container ships.
 
 ![Two container ships that need to distribute load as evenly as possible](../media/contoso.png)
 
