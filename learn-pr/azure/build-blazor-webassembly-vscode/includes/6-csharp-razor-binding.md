@@ -4,9 +4,6 @@ Now that we have
 
 Code-behind is a common term for the technique of using a separate code file to that represents all of the logic for a corresponding page, view, or component. Creating a code-behind in Blazor requires a few steps, but thankfully it's supported by the framework so setup is quite simple. To complete our code-behind we'll need to create a class and then link the code-behind to our markup. Once we have the structure in place, we can move over our existing logic.
 
-Creating and Linking a Code-Behind
-First we'll need a class file that will represent our code-behind. This is a standard .NET class, however naming is very important. When we create our code-behind file we need to consider both the file name and class name as they can greatly effect our developer experience.
-
 ## Add C# to components using @code
 
 You can add C# code directly into a razor file using the **@code** razor markup. The @code markup is followed by a pair of code braces.

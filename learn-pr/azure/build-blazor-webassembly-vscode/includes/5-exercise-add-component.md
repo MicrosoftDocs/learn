@@ -53,24 +53,22 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 ## Add HTML UI 
     ```cshtml
     <table class="table">
-        <thead>
-            <tr>
-                <th>Initial Principal</th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Years</th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Annual Interest Rate (%)</th>
-                <th></th>
-            </tr>
-            <tr>
-                <th>Total:</th>
-                <th></th>
-            </tr>
-        </thead>
+        <tr>
+            <th>Initial Principal</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Years</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Annual Interest Rate (%)</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Total:</th>
+            <th></th>
+        </tr>
     </table>
     ```
 

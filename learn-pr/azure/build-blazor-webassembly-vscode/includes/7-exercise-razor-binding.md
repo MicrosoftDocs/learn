@@ -63,6 +63,7 @@ We're now ready to bind the variables we defined in the **@code** markup to our 
     ```
 
 Finally, we bind the Calculate button using the @onclick event handler.
+
     ```csharp
     <button class="btn btn-primary" @onclick="Calculate">Calculate</button>
     ```
