@@ -3,12 +3,12 @@ uid: learn.cela-disability-intro.04-knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge Check
-  description: TBD
-  ms.date: 04/28/2020
+  description: This unit is a quiz to find out how much you learned from this module. 
+  ms.date: 05/06/2020
   author: erzelman
   ms.author: erzelman
-  ms.topic: TBD
-  ms.prod: TBD
+  ms.topic: interactive-tutorial
+  ms.prod: learning-cela-accessibility
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
