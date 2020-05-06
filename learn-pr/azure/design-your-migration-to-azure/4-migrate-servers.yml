@@ -16,25 +16,19 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following are features provided by Azure Site Recovery?"
-    choices:
-    - content: "Customized recovery plans, flexible failovers, storage replication"
-      isCorrect: false
-      explanation: "Storage replication is not a feature of Azure Site Recovery."
-    - content: "On-premises VM replication, flexible failovers, customized recovery plans"
-      isCorrect: true
-      explanation: "These are all features provided by Azure Site Recovery."
-    - content: "Network integration, flexible failovers, physical Unix server recovery"
-      isCorrect: false
-      explanation: "A physical Unix server is not a supported operating system that can be used with Azure Site Recovery."
-  - content: "Which of these source server configurations are supported by Azure Site Recovery?"
+  - content: "Which of these source server configurations are supported by Azure Migrate: Server Migration?"
     choices:
     - content: "VMware VMs, physical Unix, physical Windows"
       isCorrect: false
-      explanation: "Physical Unix servers are not supported by Azure Site Recovery."
-    - content: "Azure VMs, physical Unix, physical Sun Solaris"
+      explanation: "Azure VMs, physical Unix, physical Sun Solaris"
       isCorrect: false
-      explanation: "Neither physical Unix nor physical Sun operating systems is supported."
-    - content: "Azure VMs, VMware VMs, physical Windows"
+    - content: "Azure VMs, VMware VMs, Hyper-V VMs, Physical Windows"
       isCorrect: true
-      explanation: "All three configurations are supported."
+  - content: "True or False: You can replicate up to 1000 virtual machines per batch using Azure Migrate."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. You can only replicate up to 100 at a time. To do more, it is recommended that you perform replication in multiple batches."
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct. To do more, it is recommended that you perform replication in multiple batches."
