@@ -2,7 +2,7 @@ Now, let's take a look at `if` statements.
 
 ## The if statement
 
-The `if` statement in Python is similar to that found in other programming languages such as Java. It forms the backbone of the logical flow of most programs. Here's an example:
+The `if` statement in Python is similar to that found in other programming languages such as Java. It's the backbone of the logical flow of most programs. Here's an example:
 
 ```python
 y = 6
