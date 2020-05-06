@@ -25,7 +25,7 @@ az group create --name <resource-group-name> --location eastus2
 Create a F1 Tier IoT Hub using the following command. Give a name to your IoT Hub and replace with your resource group.
 
 ```azurecli
-az iot hub create --resource-group <resource-group-name> --name <iot-hub-name> --sku F1 
+az iot hub create --resource-group <resource-group-name> --name <iot-hub-name> --sku F1 --partition-count 2
 ```
 
 ## Creating a device identity in your IoT Hub
