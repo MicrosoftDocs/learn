@@ -1,4 +1,4 @@
-Index and column alignment gets maintained in operations between a `DataFrame` and a `Series` as well. To see this, consider a common operation in data science, wherein we find the difference of a `DataFrame` and one of its rows. Because pandas inherits ufuncs from NumPy, pandas will compute the difference row-wise by default:
+Index and column alignment is maintained in operations between a `DataFrame` and a `Series` as well. To see this, consider a common operation in data science, wherein we find the difference of a `DataFrame` and one of its rows. Because pandas inherits `ufuncs` from NumPy, pandas will compute the difference row-wise by default:
 
 ```python
 df3 = pd.DataFrame(rng.randint(10, size=(3, 4)), columns=list('WXYZ'))
@@ -31,7 +31,7 @@ The output is:
 | 2  | 3   | -7  | 1  | 4  |
 ```
 
-But what if you need to operate column-wise? You can do this by using object methods and specifying the `axis` keyword.
+But what if you need to operate column-wise? You can do this by using object methods, and specifying the `axis` keyword.
 
 ```python
 df3.subtract(df3['X'], axis=0)
@@ -78,4 +78,4 @@ The output is:
 | 2  | 3.0  | NaN  | 1.0  | NaN  |
 ```
 
-Remember, pandas preserves and aligns indices and columns so preserve data context. This will be of huge help to you in our next module when we look at data cleaning and preparation.
+Remember, pandas preserves and aligns indices and columns, and so preserves data context. This will be of huge help to you in your next module, when you look at data cleaning and preparation.

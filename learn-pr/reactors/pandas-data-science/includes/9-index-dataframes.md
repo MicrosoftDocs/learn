@@ -1,4 +1,4 @@
-The same kind of alignment takes place in both dimension (columns and indices) when you perform operations on `DataFrames`.
+The same kind of alignment takes place in both dimensions (columns and indices) when you perform operations on `DataFrames`.
 
 ```python
 df1 = pd.DataFrame(rng.randint(0, 20, (2, 2)),
@@ -60,7 +60,7 @@ Add df1 and df2. Is the output what you expected?
 
 ***
 
-Even though we passed the columns in a different order in `df2` than in `df1`, the indices were aligned correctly sorted in the resulting union of columns.
+Even though you passed the columns in a different order in `df2` than in `df1`, the indices were aligned correctly sorted in the resulting union of columns.
 
 You can also use fill values for missing values with `DataFrames`. In this example, let's fill the missing values with the mean of all values in `df1` (computed by first stacking the rows of `df1`):
 
@@ -81,7 +81,7 @@ The output is:
 
 This table lists Python operators and their equivalent pandas object methods:
 
-| Python operator | Pandas method(s) |
+| Python operator | pandas method(s) |
 |:------------:|----------|
 | +  | add() |
 | -  | sub(), subtract() |
