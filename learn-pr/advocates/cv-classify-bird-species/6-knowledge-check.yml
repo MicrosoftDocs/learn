@@ -30,13 +30,13 @@ quiz:
           explanation: "Correct! A confusion matrix is a valid metric, but it is not provided by custom vision."
         - content: "Recall"
           isCorrect: false
-          explanation: "Incorrect. A recall metric is provided."
+          explanation: "Incorrect. A Recall metric is provided."
         - content: "AP"
           isCorrect: false
           explanation: "Incorrect. An AP metric is provided."
         - content: "Precision"
           isCorrect: false
-          explanation: "Incorrect. A precision metric is provided."
+          explanation: "Incorrect. A Precision metric is provided."
     - content: "What is a common rookie mistake?"
       choices:
         - content: "Bad data"

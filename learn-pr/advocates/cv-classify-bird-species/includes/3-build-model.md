@@ -58,15 +58,17 @@ Now it is time to upload the data for training. There are a couple ways to do th
 
 ### Option 2: SDK upload
 
-The Custom Vision SDK is available in the following languages: Python, .NET, Node, Go, and Java. We are going to use Python and Jupyter Notebooks. If you don't have these installed already, I recommend getting them with Anaconda. You can download that [here](https://www.anaconda.com/)
+The Custom Vision SDK is available in the following languages: Python, .NET, Node, Go, and Java. We are going to use Python and Jupyter Notebooks. If you don't have these installed already, I recommend getting them with Anaconda. You can [download it](https://www.anaconda.com/).
 
-Below is how to create the notebook and copy in the code. If you prefer to download the notebook and code, you can clone the repo with the following command:
+The following steps show you how to create the notebook and copy in the code. 
+
+If you prefer to instead download the notebook and code, you can clone the repo by using the following command:
 
 ```bash
 git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
 ```
 
-1. Open a new Jupyter notebook instance or the IDE of your choice. Then run the following command to import the package:
+1. Open a new Jupyter notebook instance or the IDE of your choice. Then, run the following command to import the package:
 
    ```python
    !pip install azure-cognitiveservices-vision-customvision
@@ -80,7 +82,7 @@ git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
    import numpy as np
    ```
 
-1. Create the Custom Vision project. Update the endpoint and key with the values from the resource you created in Azure.
+1. Create the Custom Vision project. Update the endpoint and key with the values from the resource you created in Azure:
 
    ```python
    ENDPOINT = "<endpoint>"
@@ -100,7 +102,7 @@ git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
 
 1. Go to [customvision.ai](https://www.customvision.ai/) if you would like to validate the project was created in the UI.
 
-1. Unzip `bird_photos.zip` and save it to the same directory as the Jupyter notebook. Then add the following code to get the list of bird type tags to be created based on the folder names in the `bird_photos` directory:
+1. Unzip `bird_photos.zip` and save it to directory where your Jupyter notebook is saved. Then, add the following code to get the list of bird type tags to be created based on the folder names in the `bird_photos` directory:
 
    ```python
    # Create Tag List from folders in bird directory
@@ -110,7 +112,7 @@ git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
    print(tags)
    ```
 
-1. Next we will create three different functions that we will call in the for loop to create each class and upload each image dataset.
+1. Next, we will create three different functions that we will call in the `for loop` to create each class and upload each image dataset.
 
    1. Create an image name tag in Custom Vision project.
 
@@ -121,7 +123,7 @@ git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
          return result.id
      ```
 
-   1. In the function, we pass in the tag name from the list of folder names and the tag ID from the tag we created in our project. It takes the `base_image_url` and sets the directory to the folder containing the images for the tag we created from the folder names. Then we append each image to the list which we will use to upload in batches to the tag created.
+   1. In the function, we pass in the tag name from the list of folder names and the tag ID from the tag we created in our project. It takes the `base_image_url` value and sets the directory to the folder that contains the images for the tag we created from the folder names. Then we append each image to the list, which we will use to upload in batches to the tag created.
 
      ```python
      def createImageList(tag, tag_id):
@@ -135,7 +137,7 @@ git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
          return image_list
      ```
 
-   1. In the `uploadImageList` function we will pass in the `image_list` we created from the folder and then upload that list to the tag.
+   1. In the `uploadImageList` function, we pass in the `image_list` we created from the folder and then upload that list to the tag.
 
      ```python
      def uploadImageList(image_list):
@@ -147,13 +149,13 @@ git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
              exit(-1)
      ```
 
-   1. This is our main method that will call the functions we created for each tag. We will loop through each `tag` (folder name) in the `tags` collection we created from the folders in the `bird_folder` directory. 
+   1. This is our main method that calls the functions we created for each tag. We will loop through each `tag` (folder name) in the `tags` collection we created from the folders in the `bird_folder` directory. 
    
       Steps in the loop:
 
-      1. Call the `createTag` first to create the class tag in custom vision.
-      1. Call `createImageList` function and sending in the current `tag` name and `tag_id` that was returned from custom vision. This returns our list of images to upload.
-      1. Then we are uploading the images from the `image_list` in batches of 25 since it will timeout if try to upload the entire dataset at once.
+      1. Call the `createTag` to create the class tag in custom vision.
+      1. Call `createImageList` function and sending in the current `tag` name and `tag_id` that was returned from Custom Vision. This returns our list of images to upload.
+      1. Then, we upload the images from the `image_list` in batches of 25. Computer Vision will time out if try to upload the entire dataset at once.
 
      ```python
      for tag in tags:
@@ -172,9 +174,9 @@ git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
 
 ## Train the model
 
-We have created our dataset in Custom Vision and now we can train our model. This can be done with the SDK but the steps below will use the CustomVision.ai UI.
+We have created our dataset in Custom Vision, and now we can train our model. This can be done with the SDK, but the following steps will use the CustomVision.ai UI.
 
-1. Go to CustomVision.ai and select the **Bird Classification** project.
+1. Go to CustomVision.ai, and then select the **Bird Classification** project.
 1. Select **Train**.
 
-When the training is complete, you will get information about how the model is performing for the iteration. This is displayed with stats called Precision, Recall, and AP for the model as a whole and for each class. In the next step, we will learn a bit more about what each of these mean.
+When the training is complete, you will get information about how the model is performing for the iteration. This is displayed with metrics called Precision, Recall, and AP for the model as a whole and for each class. In the next step, we will learn a bit more about what each of these terms mean.

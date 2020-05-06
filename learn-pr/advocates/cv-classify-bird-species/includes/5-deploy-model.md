@@ -4,22 +4,21 @@ Now our model is performing "good enough" - let's deploy it! There are different
 
 ### Get the prediction URL
 
-- Select `Performance` from the top navigation in the Custom Vision portal
-- Click `Publish`
-- Select `Prediction Url`
-- This is the Url you will use to post images to get predictions.
+1. Select **Performance** from the top navigation in the Custom Vision portal.
+1. Click **Publish**.
+1. Select **Prediction Url**. This is the URL you will use to post images to get predictions.
 
 ### Consume the API in a Python app
 
-Once the model is trained and at a satisfactory accuracy it's ready to be used in your App
+Once the model is trained and at a satisfactory accuracy, it's ready to be used in your app.
 
-- Go to the Resource Group that contains the Custom Vision Resource
-- There should be a resource named `YourCustomVisionResourceName_Prediction`
-- Select `Quick Start`
-- Select `API Reference` from the list of helpful links
-- This will open a page with docs on how to call the API to get predictions from the model
-- If you scroll all the way to the bottom, there are code samples in multiple languages to get you started
-- Here is the example code for calling the prediction API in Python:
+1. Go to the resource group that contains the Custom Vision Resource. There should be a resource named `YourCustomVisionResourceName_Prediction`.
+1. Select **Quick Start**.
+1. Select **API Reference** from the list of helpful links. 
+
+A page that has documents about how to call the API to get predictions from the model opens. If you scroll all the way to the bottom, there are code samples in multiple languages to get you started. 
+
+Here's the example code for calling the prediction API in Python:
 
 ```python
 from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient

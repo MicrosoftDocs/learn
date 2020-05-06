@@ -1,4 +1,4 @@
-Now that our model has been created lets take a look at how it's performing and test the model.
+Now that our model has been created, let's take a look at how it's performing and test the model.
 
 ## Understanding the model performance
 
@@ -12,7 +12,7 @@ The three indicators provided for the entire model and for each class are:
 | Recall                 | This number will tell you: out of the tags that should be predicted correctly, what percentage did your model correctly find? |
 | AP (Average precision) | A measure of the model performance, summaries the precision and recall at different threshold.                                |
 
-Now that we understand some of the different indicators we can use to understand how the model is performing. Lets talk about some of the "rookie mistakes" that can happen when starting to build machine learning models.
+Now that we understand some of the different indicators, we can use to understand how the model is performing. Lets talk about some of the "rookie mistakes" that can happen when starting to build machine learning models.
 
 ## Common rookie mistakes
 
@@ -38,8 +38,7 @@ Our model is performing well enough according to the metrics provided. Lets test
 
 ### Test in the Portal UI
 
-- Select "Quick Test" from the upper right corner
-- Search for an image of a bird that matches one of the species you trained it to recognize. Grab the URL for the image and paste it into the `Image URL` box to test accuracy.
-- The prediction will appear on the right side of the window.
+1. Select **Quick Test** in the upper-right corner.
+1. Search for an image of a bird that matches one of the species you trained it to recognize. Grab the URL for the image and paste it into the **Image URL** box to test accuracy. The prediction will appear on the right side of the window.
 
-In the next step where we will deploy the model. After the model is deployed we can do more testing with the endpoint we create.
+In the next step, we will deploy the model. After the model is deployed, we can do more testing with the endpoint we create.
