@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.deploy-cognitive-service-iot-edge-azure-func.create-cognitive-service
+uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.create-cognitive-service
 title: How to create Azure Cognitive Services
 metadata:
   title: How to create Azure Cognitive Services
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-edge
 durationInMinutes: 4 # dummy number at present
 content: |
-  [!include[](includes/6-how-create-azure-cognitive-services.md)]
+  [!include[](includes/6-create.md)]

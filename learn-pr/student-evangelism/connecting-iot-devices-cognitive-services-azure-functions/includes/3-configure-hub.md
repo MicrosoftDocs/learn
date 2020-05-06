@@ -1,4 +1,4 @@
- Firstly, you create an IoT Hub and register the device with the IoT Hub. Then you'll configure the IoT device (Mxchip AZ3166) to connect to the WiFi.  
+ Firstly, you create an IoT Hub and register the device with the IoT Hub. Then you'll configure the IoT device (Mxchip AZ3166 IoT Devkit) to connect to the WiFi.  
 
  You'll use the following components for this stage:  
 

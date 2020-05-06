@@ -1,6 +1,6 @@
-So far, you have verified, compiled, and deployed the code of the function in the cloud using the Azure IoT Workbench extension. In this unit, we'll learn how to implement the device code to the IoT Devkit. Before deploying the device code, you'll need to configure the connection string to the IoT Devkit.  
+So far, you've verified, compiled, and deployed the code of the function in the cloud using the Azure IoT Workbench extension. In this unit, we'll learn how to implement the device code to the IoT Devkit. Before deploying the device code, you'll need to configure the connection string to the IoT Devkit.  
 
-Since you have registered the device in the IoT Hub, the VS code will retrieve the connection string automatically. It will be saved locally in your development environment, and it will be sent back to the device.
+Since you've registered the device in the IoT Hub, the VS code will retrieve the connection string automatically. It will be saved locally in your development environment, and it will be sent back to the device.
 
 The components used in this unit are:
 
@@ -26,4 +26,4 @@ Steps we follow are:
 2. Upload the code to the IoT Devkit
 3. Test the project
 
-At the end of the unit, your device code will be compiled and uploaded to the IoT device. You will now have a working translation app on your IoT device hosted in Azure. The device records your voice. Whenever the IoT Hub receives a message from the device, it uses Cognitive Service APIs. An HTTP trigger invokes an Azure function when it receives an HTTP request to its function URL. HTTP triggers allow you to obtain data and return data to the caller.
+At the end of the unit, your device code will be compiled and uploaded to the IoT device. You'll now have a working translation app with your IoT device and it's hosted in Azure. The device records your voice. Whenever the IoT Hub receives a message from the device, it uses Cognitive Service APIs. An HTTP trigger invokes an Azure function when it receives an HTTP request to its function URL. HTTP triggers allow you to obtain data and return data to the caller.

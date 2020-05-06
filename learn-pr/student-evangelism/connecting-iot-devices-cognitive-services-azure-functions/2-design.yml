@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.deploy-cognitive-service-iot-edge-azure-func.design-cognitive-service
+uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.design-cognitive-service
 title: Design Cognitive Services using Azure Functions
 metadata:
   title: Design Cognitive Services using Azure Functions
@@ -8,7 +8,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.prod: learning-azure-iot-hub
 durationInMinutes: 6 # dummy number at present
 content: |
-  [!include[](includes/2-design-cognitive-services-azure-functions.md)]
+  [!include[](includes/2-design.md)]

@@ -1,9 +1,9 @@
 ## Using the Azure Cloud Shell
 
 To start Azure Cloud Shell,  
-Go to [**https://shell.azure.com**](https://shell.azure.com).
+Launch Cloud Shell from the top navigation of the Azure portal.
 
-![An illustration is showing how to open azure cloud shell.](../media/cloud-shell.png)
+![An illustration is showing how to open Azure Cloud Shell.](../media/cloud-shell.png)
 
 
 You need to install the Azure IoT extension for Azure CLI using the following command. This extension manages Azure resources such as IoT Hub.
@@ -25,7 +25,7 @@ az group create --name <resource-group-name> --location eastus2
 Create a F1 Tier IoT Hub using the following command. Give a name to your IoT Hub and replace with your resource group.
 
 ```azurecli
-az iot hub create --resource-group <resource-group-name> --name <iot-hub-name> --sku F1 
+az iot hub create --resource-group <resource-group-name> --name <iot-hub-name> --sku F1 --partition-count 2
 ```
 
 ## Creating a device identity in your IoT Hub
@@ -38,7 +38,13 @@ az iot hub device-identity create --hub-name <iot-hub-name> --device-id <device-
 
 ## Connecting the IoT Devkit to your computer
 
-Connect to IoT Devkit to the computer with the Micro-USB and confirm that green LED for power is on. 
+To connect the DevKit to your computer,
+
+1. Connect the USB end to your computer.
+
+2. Connect the Micro-USB end to the DevKit.
+
+3. Confirm that green LED for power is on.
 
 ![An illustration is showing how to connect the device to the computer.](../media/connect-device-pc.png) 
 
@@ -62,16 +68,16 @@ On the IoT DevKit,
 - Push and release the reset button
 - Release button B
 
-IoT DevKit enters AP mode for configuring the Wi-Fi connection. You will see the service set identifier (SSID) of the IoT DevKit and the configuration portal IP address on the screen of the device.  
+IoT DevKit enters AP mode for configuring the Wi-Fi connection. You'll see the service set identifier (SSID) of the IoT DevKit and the configuration portal IP address on the screen of the device.  
 
-![An illustration is showing how to configuring the device.](../media/connect-devkit-wifi.jpg)
+![An illustration is showing how to configure the device.](../media/connect-devkit-wifi.jpg)
 
 Use a Web browser on a different Wi-Fi enabled device (computer or mobile phone) to connect to the IoT DevKit SSID displayed in the previous step.
 
 ![An illustration is showing how to connect the network](../media/devkit-network.png)
 
-Browse 192.168.0.1. Select the Wi-Fi network that you want the IoT DevKit to connect to, type the Wi-Fi password then click Save.
+Browse **192.168.0.1**. Select the Wi-Fi network that you want the IoT DevKit to connect to, type the Wi-Fi password then click Save.
 
 ![An illustration is showing how to configure the device settings.](../media//devkit-settings.png)
 
-The IoT DevKit reboots in a few seconds. On the DevKit screen, you see the IP address for the DevKit.
+The IoT DevKit reboots in a few seconds. After done, you will see the firmware version on the screen of the kit if it has connected with Internet.
