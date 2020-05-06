@@ -8,7 +8,7 @@ Shifting to the cloud replaces the burgeoning costs of maintaining physical infr
 
 Cloud infrastructure can handle fluctuating resource usage scenarios. Resources that have significant periods of inactivity can be shut down when not in use, and thereby not incur any cost at all. Resource allocation can grow automatically with a successful service as demand increases, rather than having to wait for the next procurement cycle. Additional resources can be dynamically added and removed to respond to predictable and unpredictable bursts of demand. The following illustration shows why an on-premises infrastructure cannot handle all of these fluctuating scenarios.
 
-![An illustration showing disadvantages of using on-premises infrastructure.](../media/cloudcomputingpatterns.png)
+![An illustration showing disadvantages of using on-premises infrastructure.](../media/5-cloud-computing-patterns.png)
 
 In an efficient architecture, resources are provisioned to match the demand. If a virtual machine is less than 10% utilized the majority of the time, you are wasting resources, both in compute and cost. Conversely, a virtual machine that is running 90% utilized is using the majority of the available resources, and is an efficient use of money. Running a system at 100% utilization runs the risk of introducing performance issues. It is important to ensure that maximizing efficiency doesn't negatively impact the performance of your system. Demand is rarely constant, so adjusting resources when possible to match demand is important to ensure efficiency.
 
@@ -30,7 +30,7 @@ There are several different options available to achieve cost savings for virtua
 
 Right sizing a virtual machine is the process of matching virtual machine sizes with the respective resource demand requirements. If a VM is running 25% idle, reducing the size of the VM will immediately reduce your cost. Virtual machine costs are linear within an instance family; each next size larger will double your cost. Conversely, reducing a VM by a single instance size will reduce your cost by half. The following illustration shows a 50% savings achieved by moving one size down within the same series.
 
-![An illustration to demonstrate savings achieved by downsizing an under-utilized virtual machine.](../media/vm-resize.png)
+![An illustration to demonstrate savings achieved by downsizing an under-utilized virtual machine.](../media/5-vm-resize.png)
 
 Azure Advisor identifies which virtual machines are underutilized. Azure Advisor monitors your virtual machine usage for 14 days, and then it identifies any underutilized virtual machines. Virtual machines with a CPU utilization of 5 percent or less and network usage of 7 MB or less for four or more days are considered underutilized virtual machines.
 
@@ -52,7 +52,7 @@ The Azure Hybrid Benefit offers an additional avenue for optimizing the costs of
 
 Some virtual machines need to be up and running all the time. Perhaps you have a web application server farm for a production workload, or maybe you have a domain controller that is supporting various servers on a virtual network. If you know with certainty that these virtual machines will run continuously throughout the coming year or longer, you can reduce your costs even more by purchasing a reserved instance. Azure Reserved Virtual Machine Instances (RI) allow you to purchase compute capacity for one year or three year commitment, which offers you significant savings - up to 72 percent - when compared to pay-as-you-go compute resources. The following illustration shows savings achieved when you combine your on-premises licenses with the Azure Hybrid Benefit, and when you combine your on-premises licenses with both Azure RI and the Azure Hybrid Benefit.
 
-![An illustration showing the savings on Azure products when you have on-premises licenses with Software Assurance.](../media/ahub-save.png)
+![An illustration showing the savings on Azure products when you have on-premises licenses with Software Assurance.](../media/5-ahub-save.png)
 
 ### Virtual machine disk storage cost optimization
 
@@ -74,7 +74,7 @@ SQL Database elastic pools are a simple, cost-effective solution for managing an
 
 The more databases you can add to a pool, the greater your savings become. The following illustration shows the capabilities of the three types of Elastic Database Pools: *Basic*, *Standard*, and *Premium*.  Basic auto scales up to 5 eDTUs per DB, Standard auto scales up to 100 eDTUs per DB, and Premium that auto scales up to 1000 eDTUs per DB.
 
-![An illustration showing auto-scaling capacity of different types of Elastic Database Pools.](../media/sqldb-elastic-pools.png)
+![An illustration showing auto-scaling capacity of different types of Elastic Database Pools.](../media/5-sqldb-elastic-pools.png)
 
 Elastic pools are a great way to spread costs across multiple databases, and can make a significant impact on reducing your Azure SQL Database costs.
 
