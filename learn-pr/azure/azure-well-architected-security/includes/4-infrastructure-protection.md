@@ -14,7 +14,7 @@ Role-based access control (RBAC) offers a slightly different approach. Roles are
 
 On Azure, users, groups, and roles are all stored in Azure Active Directory (Azure AD). The Azure Resource Manager API uses role-based access control to secure all resource access management within Azure.
 
-![An illustration showing the implementation of a role-based access control.](../media/ACL_Based_Access.png)
+![An illustration showing the implementation of a role-based access control.](../media/4-acl-based-access.png)
 
 ### Roles and management groups
 
@@ -24,13 +24,13 @@ Management groups are an additional hierarchical level recently introduced into 
 
 The ability to flow roles through an arbitrarily defined subscription hierarchy also allows administrators to grant temporary access to an entire environment for authenticated users. For example, an auditor may require temporary read-only access to all subscriptions.
 
-:::image type="content" source="../media/management_groups.png" alt-text="An illustration showing the hierarchal representation of role-based access in a management group." loc-scope="other"::: <!-- no-loc -->
+:::image type="content" source="../media/4-management-groups.png" alt-text="An illustration showing the hierarchal representation of role-based access in a management group." loc-scope="other"::: <!-- no-loc -->
 
 ### Privileged Identity Management
 
 In addition to managing Azure resource access with RBAC, a comprehensive approach to infrastructure protection should consider including the ongoing auditing of role members as their organization changes and evolves. Azure AD Privileged Identity Management (PIM) is an additional paid-for offering that provides oversight of role assignments, self-service, and just-in-time role activation and Azure AD & Azure resource access reviews.
 
-![Screenshot of Privileged identity management dashboard](../media/PIM_Dashboard.png)
+![Screenshot of Privileged identity management dashboard](../media/4-pim-dashboard.png)
 
 With the Azure AD Privileged Identity Management (PIM) service, you can manage, control, and monitor access to important resources in your organization. This includes access to resources in Azure AD; Azure; and other Microsoft Online Services, like Office 365 and Microsoft Intune. This control does not eliminate the need for users to carry out privileged operations in Azure AD, Azure, Office 365, and Software as a Service (SaaS) apps.
 

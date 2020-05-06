@@ -26,13 +26,13 @@ If we start on the perimeter of the network, we're focused on limiting and elimi
 
 To provide inbound protection at the perimeter, there are a couple of ways to do this. Application Gateway is a Layer 7 load balancer that also includes a web application firewall (WAF) to provide advanced security for your HTTP-based services. The WAF is based on rules from the OWASP 3.0 or 2.2.9 core rule sets, and provides protection from commonly-known vulnerabilities such as cross-site scripting and SQL injection.
 
-![An illustration showing a single application gateway filtering all external requests made to the virtual machines located at two different sites. The web application firewall feature of the application gateway protects the system from malicious attacks whereas, the load balancer distributes the legitimate requests among virtual machines.](../media/appgw-waf.png)
+![An illustration showing a single application gateway filtering all external requests made to the virtual machines located at two different sites. The web application firewall feature of the application gateway protects the system from malicious attacks whereas, the load balancer distributes the legitimate requests among virtual machines.](../media/6-app-gateway-waf.png)
 
 For protection of non-HTTP-based services or for increased customization, network virtual appliances (NVA) can be used to secure your network resources. NVAs are similar to firewall appliances you might find in on-premises networks, and are available from many of the most popular network security vendors. NVAs can provide greater customization of security for those applications that require it, but can come with increased complexity, so careful consideration of requirements is advised.
 
 Any resource exposed to the internet is at risk of being attacked by a denial-of-service attack. These types of attacks attempt to overwhelm a network resource by sending so many requests that the resource becomes slow or unresponsive. To mitigate these attacks, Azure DDoS provides basic protection across all Azure services and enhanced protection for further customization for your resources. DDoS protection blocks attack traffic and forwards the remaining traffic to its intended destination. Within a few minutes of attack detection, you are notified using Azure Monitor metrics.
 
-![An illustration showing Azure DDoS protection installed between virtual network and external user requests. The Azure DDoS protection blocks malicious traffic attack but forwards the legitimate traffic to the intended destination.](../media/ddos.png)
+![An illustration showing Azure DDoS protection installed between virtual network and external user requests. The Azure DDoS protection blocks malicious traffic attack but forwards the legitimate traffic to the intended destination.](../media/6-ddos.png)
 
 ### Virtual network security
 
@@ -40,7 +40,7 @@ Once inside a virtual network, it's important to limit communication between res
 
 For communication between virtual machines, network security groups are a critical piece to restrict unnecessary communication. Network security groups operate at layers 3 & 4, and provide a list of allowed and denied communication to and from network interfaces and subnets. Network security groups are fully customizable, and give you the ability to fully lock down network communication to and from your virtual machines. By using network security groups, you can isolate applications between environments, tiers, and services.
 
-![An illustration showing usage of network security group to restrict backend and mid-tier from communicating directly with the Internet. The Internet requests are received by the frontend, which then passes them to the mid-tier. The mid-tier communicates with the backend. ](../media/azure-network-security.png)
+![An illustration showing usage of network security group to restrict backend and mid-tier from communicating directly with the Internet. The Internet requests are received by the frontend, which then passes them to the mid-tier. The mid-tier communicates with the backend. ](../media/6-azure-network-security.png)
 
 To isolate Azure services to only allow communication from virtual networks, use virtual network service endpoints. With service endpoints, Azure service resources can be secured to your virtual network. Securing service resources to a virtual network provides improved security by fully removing public internet access to resources, and allowing traffic only from your virtual network. This reduces the attack surface for your environment, reduces the administration required to limit communication between your virtual network and Azure services, and provides optimal routing for this communication.
 
@@ -52,6 +52,6 @@ Virtual private network (VPN) connections are a common way of establishing secur
 
 To provide a dedicated, private connection between your network and Azure, you can use ExpressRoute. ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection facilitated by a connectivity provider. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure, Office 365, and Dynamics 365. This improves the security of your on-premises communication by sending this traffic over the private circuit instead of over the internet. You don't need to allow access to these services for your end users over the internet, and you can send this traffic through appliances for further traffic inspection.
 
-![An architectural diagram showing an ExpressRoute Circuit connecting the customer network with Azure resources.](../media/expressroute-connection-overview.png)
+![An architectural diagram showing an ExpressRoute Circuit connecting the customer network with Azure resources.](../media/6-expressroute-connection-overview.png)
 
 To easily integrate multiple virtual networks in Azure, virtual network peering establishes a direct connection between designated virtual networks. Once established, you can use network security groups to provide isolation between resources in the same way you secure resources within a virtual network. This integration gives you the ability to provide the same fundamental layer of security across any peered virtual networks. Communication is only allowed between directly connected virtual networks.

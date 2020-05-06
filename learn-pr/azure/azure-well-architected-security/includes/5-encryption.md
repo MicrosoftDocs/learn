@@ -18,13 +18,13 @@ Data at rest is the data that has been stored on a physical medium. This could b
 
 The actual data that is encrypted could vary in its content, usage, and importance to the organization. This could be financial information critical to the business, intellectual property that has been developed by the business, personal data that the business stores about customers or employees, and even the keys and secrets used for the encryption of the data itself.
 
-![An illustration showing an example of encryption at rest.](../media/encryption-at-rest.png)
+![An illustration showing an example of encryption at rest.](../media/5-encryption-at-rest.png)
 
 ### Encryption in transit
 
 Data in transit is the data actively moving from one location to another, such as across the internet or through a private network. Secure transfer can be handled by encrypting the data prior to sending it over a network, or setting up a secure channel to transmit unencrypted data between two systems. Encrypting data in transit protects the data from outside observers and provides a mechanism to transmit data while limiting risk of exposure.
 
-![An illustration showing an example of encryption in transit. The data is encrypted before it is transferred. Once it reaches the destination, the data is then decrypted.](../media/encryption-in-transit.png)
+![An illustration showing an example of encryption in transit. The data is encrypted before it is transferred. Once it reaches the destination, the data is then decrypted.](../media/5-encryption-in-transit.png)
 
 ## Identify and classify data
 

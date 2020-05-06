@@ -35,7 +35,7 @@ Azure AD Connect will integrate your on-premises directories with Azure Active D
 
 It's a single tool to provide an easy deployment experience for synchronization and sign in.
 
-![An illustration showing Azure AD connect being used to synchronize your on-premises directories with Azure Active directory and your apps in the Azure cloud. This allows users to have a common sign on for all the application within the Azure cloud.](../media/AADCONNECTxprs_960.png)
+![An illustration showing Azure AD connect being used to synchronize your on-premises directories with Azure Active directory and your apps in the Azure cloud. This allows users to have a common sign on for all the application within the Azure cloud.](../media/3-azure-ad-connect.png)
 
 Your organization requires that authentication occurs primarily against on-premises DCs, but also requires cloud authentication in a disaster recovery scenario. They don't have any requirements not already supported by Azure AD.
 
@@ -69,15 +69,15 @@ Azure AD has MFA capabilities built in, and will integrate with other third-part
 
 Along with MFA, ensuring that additional requirements are met before granting access can add another layer of protection. Blocking logins from a suspicious IP address, or denying access from devices without malware protection could limit access from risky sign ins.
 
-Azure Active Directory provides a conditional access policies (CAP) feature that includes support for access policies based on group, location, or device state. The location feature allows your organization to differentiate IP addresses that don't belong to their network, and satisfies their security policy to require multi-factor authentication from all such locations.
+Azure Active Directory provides a conditional access policies feature that includes support for access policies based on group, location, or device state. The location feature allows your organization to differentiate IP addresses that don't belong to their network, and satisfies their security policy to require multi-factor authentication from all such locations.
 
-Your organization has created a [conditional access policy](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) that requires users accessing the application from an IP address outside of the company network to be challenged with MFA.
+Your organization has created a conditional access policy that requires users accessing the application from an IP address outside of the company network to be challenged with MFA.
 
-![An illustration showing a sample implementation of conditional access policy and multi-factor authentication. The user requests to access the on-premises and cloud applications are first checked against a list of conditions. The requests are either allowed access, enforced to go through multi-factor authentication, or blocked based on the conditions they satisfy.](../media/conditional-access.png)
+![An illustration showing a sample implementation of conditional access policy and multi-factor authentication. The user requests to access the on-premises and cloud applications are first checked against a list of conditions. The requests are either allowed access, enforced to go through multi-factor authentication, or blocked based on the conditions they satisfy.](../media/3-conditional-access.png)
 
 ## Securing legacy applications
 
-Your employees require secure remote access to their administrative application hosted on-premises. Users currently authenticate to the application using Windows Integrated Authentication (WIA) from their domain-joined machines, behind the corporate firewall. Although a project to incorporate modern authentication mechanisms into the application has been planned, there's considerable business pressure to enable remote access capabilities as soon as possible. Azure Application Proxy can quickly, easily, and securely allow the application to be accessed remotely without any code changes.
+Your employees require secure remote access to their administrative application hosted on-premises. Users currently authenticate to the application using Windows Integrated Authentication from their domain-joined machines, behind the corporate firewall. Although a project to incorporate modern authentication mechanisms into the application has been planned, there's considerable business pressure to enable remote access capabilities as soon as possible. Azure Application Proxy can quickly, easily, and securely allow the application to be accessed remotely without any code changes.
 
 Azure AD Application Proxy is:
 
