@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-hub
 durationInMinutes: 7 # dummy number at present
 content: |
-  [!include[](includes/11-exercise-customizing-cognitive-services-azure-functions-iot-device.md)]
+  [!include[](includes/11-exercise-customize.md)]

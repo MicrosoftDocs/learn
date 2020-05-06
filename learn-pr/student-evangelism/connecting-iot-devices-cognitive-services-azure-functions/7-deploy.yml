@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-edge
 durationInMinutes: 4 # dummy number at present
 content: |
-  [!include[](includes/7-how-deploy-azure-functions.md)]
+  [!include[](includes/7-deploy.md)]
