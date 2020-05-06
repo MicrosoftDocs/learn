@@ -58,11 +58,11 @@ HTML("<table><tr><th>Text</th><th>Key phrases</th></tr>{0}</table>".format("\n".
 Here's the output:
 
 ```Output
-| Text | Key phrases |
+| Text                                                                              | Key phrases                      |
 | I had a wonderful experience! The rooms were wonderful and the staff was helpful. | wonderful experience,staff,rooms |
-| I had a terrible time at the hotel. The staff was rude and the food was awful. | food,terrible time,hotel,staff |
-| Los caminos que llevan hasta Monte Rainier son espectaculares y hermosos. | Monte Rainier,caminos |
-| La carretera estaba atascada. Había mucho tráfico el día de ayer. | carretera,tráfico,día |
+| I had a terrible time at the hotel. The staff was rude and the food was awful.    | food,terrible time,hotel,staff   |
+| Los caminos que llevan hasta Monte Rainier son espectaculares y hermosos.         | Monte Rainier,caminos            |
+| La carretera estaba atascada. Había mucho tráfico el día de ayer.                 | carretera,tráfico,día            |
 ```
 
 Now call the Key Phrases API with the formatted documents to retrive the key phrases.
