@@ -1,4 +1,4 @@
-As a ornithologist you study the behavior, physiology, and conservation of birds and bird habitats. This work often involves surveying, recording and reporting on bird activity.
+As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitats. This work often involves surveying, recording, and reporting on bird activity.
 
 You want to build a machine learning model that will identify the birds to help with gathering data. Additionally you want to better document endangered birds species to help the populations increase. We will be using the NA Bird dataset from Cornell to train a model that will recognize bird species and help you document the different trends and patterns of the bird habits.
 
