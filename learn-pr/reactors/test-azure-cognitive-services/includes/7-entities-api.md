@@ -23,7 +23,7 @@ print(entity_linking_api_url)
 The output is:
 
 ```Output
-TBD
+https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/entities
 ```
 
 The next step is creating a document with id and text attributes to pass on to the Entities API.
@@ -32,12 +32,6 @@ The next step is creating a document with id and text attributes to pass on to t
 documents = {'documents' : [
   {'id': '1', 'text': 'Microsoft is an It company.'}
 ]}
-```
-
-Here's the output:
-
-```Output
-TBD
 ```
 
 Finally, call the service using the rest call below to retrieve the data listed in the text attribute.
@@ -52,7 +46,25 @@ entities
 The output is:
 
 ```Output
-TBD
+{'documents': [{'entities': [{'matches': [{'entityTypeScore': 0.999969482421875,
+       'length': 9,
+       'offset': 0,
+       'text': 'Microsoft'}],
+     'name': 'Microsoft',
+     'type': 'Organization'},
+    {'bingId': 'bc30426e-22ae-7a35-f24b-454722a47d8f',
+     'matches': [{'entityTypeScore': 0.8,
+       'length': 10,
+       'offset': 16,
+       'text': 'It company',
+       'wikipediaScore': 0.7183870642593111}],
+     'name': 'Technology company',
+     'type': 'Organization',
+     'wikipediaId': 'Technology company',
+     'wikipediaLanguage': 'en',
+     'wikipediaUrl': 'https://en.wikipedia.org/wiki/Technology_company'}],
+   'id': '1'}],
+ 'errors': []}
 ```
 
 ### Try it yourself
@@ -61,32 +73,8 @@ What other entities can be retrieved with the API? Create a document setup and u
 
 <br />
 
-<details> 
-
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
-
-  Here's the input:
-  
-  ```python
-  tbd
-  ```
-
-  The output is:
-  
-  ```Output
-  tbd
-  ```
-  
-</details>
-
 <br /><br />
 
 ***
 
-> [!div class="alert is-tip"]
-> ### Takeaway
->
->  In this subsection, you explored text analytics in the cloud. Specifically, you used a variety of different APIs to extract different information from text: language, sentiment, key phrases, and entities.
 
-<br />
-That's it for the instructional portion of this course. In these eight sections <!-- Sarah, confirm 'eight' and replace 'sections' with units or topics -->, you've now seen the range of tools that go into preparing data for analysis and performing ML and AI analysis on data. In the next, concluding section, you will bring these skills together in a final project.

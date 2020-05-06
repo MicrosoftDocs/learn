@@ -1,10 +1,3 @@
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Try it yourself block needa Input and Output code, and Hint text. Search on TBD.
-> - Need output cell content. Search on TBD.
->
-
 We've detected the language type using the Text Analytics API and the sentiment using the Sentiment Analysis API. What if we want to detect key phrases in the text? We can use the Key Phrase API.
 
 ```python
@@ -16,7 +9,7 @@ print(key_phrase_api_url)
 The output is:
 
 ```Output
-TBD
+https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/keyPhrases
 ```
 
 Create the documents needed to pass to the Key Phrases API with the `id` and `text` attributes.
@@ -28,12 +21,6 @@ documents = {'documents' : [
   {'id': '3', 'language': 'es', 'text': 'Los caminos que llevan hasta Monte Rainier son espectaculares y hermosos.'},  
   {'id': '4', 'language': 'es', 'text': 'La carretera estaba atascada. Había mucho tráfico el día de ayer.'}
 ]}
-```
-
-Here's the output:
-
-```Output
-TBD
 ```
 
 Now, call the Key Phrases API with the formatted documents to retrieve the key phrases.
@@ -48,7 +35,13 @@ pprint(key_phrases)
 The output is:
 
 ```Output
-TBD
+{'documents': [{'id': '1',
+                'keyPhrases': ['wonderful experience', 'staff', 'rooms']},
+               {'id': '2',
+                'keyPhrases': ['food', 'terrible time', 'hotel', 'staff']},
+               {'id': '3', 'keyPhrases': ['Monte Rainier', 'caminos']},
+               {'id': '4', 'keyPhrases': ['carretera', 'tráfico', 'día']}],
+ 'errors': []}
 ```
 
 We can make this easier to read by outputing the documents in an HTML table format.
@@ -65,7 +58,11 @@ HTML("<table><tr><th>Text</th><th>Key phrases</th></tr>{0}</table>".format("\n".
 Here's the output:
 
 ```Output
-TBD
+| Text | Key phrases |
+| I had a wonderful experience! The rooms were wonderful and the staff was helpful. | wonderful experience,staff,rooms |
+| I had a terrible time at the hotel. The staff was rude and the food was awful. | food,terrible time,hotel,staff |
+| Los caminos que llevan hasta Monte Rainier son espectaculares y hermosos. | Monte Rainier,caminos |
+| La carretera estaba atascada. Había mucho tráfico el día de ayer. | carretera,tráfico,día |
 ```
 
 Now call the Key Phrases API with the formatted documents to retrive the key phrases.
@@ -78,18 +75,37 @@ What other key phrases can you come up with for analysis?
 
 <details> 
 
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
   Here's the input:
 
   ```python
-  tbd
+  documents = {'documents' : [
+    {'id': '1', 'language': 'en', 'text': 'This was a great experience overall. I particularly loved the demos.'},
+    {'id': '2', 'language': 'en', 'text': 'I never want to come back here. The audio was horrendous.'}
+  ]}
+  headers   = {'Ocp-Apim-Subscription-Key': subscription_key}
+  response  = requests.post(key_phrase_api_url, headers=headers, json=documents)
+  key_phrases = response.json()
+  pprint(key_phrases)
+  table = []
+  for document in key_phrases["documents"]:
+      text    = next(filter(lambda d: d["id"] == document["id"], documents["documents"]))["text"]    
+      phrases = ",".join(document["keyPhrases"])
+      table.append("<tr><td>{0}</td><td>{1}</td>".format(text, phrases))
+  HTML("<table><tr><th>Text</th><th>Key phrases</th></tr>{0}</table>".format("\n".join(table)))
   ```
 
   The output is:
   
   ```Output
-  tbd
+  {'documents': [{'id': '1', 'keyPhrases': ['great experience', 'demos']},
+               {'id': '2', 'keyPhrases': ['audio']}],
+  'errors': []}
+
+  | Text | Key phrases |
+  | This was a great experience overall. I particularly loved the demos. | great experience,demos |
+  | I never want to come back here. The audio was horrendous. | audio |
   ```
   
 </details>

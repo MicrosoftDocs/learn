@@ -1,17 +1,3 @@
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> I formatted the Learning goal as the first item under Learning objectives.
-> I updated the steps to get the API keys based on the current UI.
->
-
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Add Learning objectives
-> - Add Prerequisites
->
-
 Just as you created a web service that could consume data and return predictions, so there are many AI software-as-a-service (SaaS) offerings on the web that return predictions or classifications based on data you supply. One family of AI SaaS offerings is Microsoft Azure Cognitive Services.
 
 The advantage of using cloud-based services is that they provide cutting-edge models that you can access without having to train them. This can help accelerate both your exploration and use of ML.
@@ -51,8 +37,9 @@ After you have your API keys, you're ready to start.
 In this module, you will:
 
 - By the end of this part, you should have a basic comfort with accessing cloud-based cognitive services by API from a Python environment.
-- TBD
+- Access computer-vision cognitive services by API to analyze and describe images 
+- Use a variety of different cognitive services APIs to extract different information from text: language, sentiment, key phrases, and entities.
 
 ## Prerequisites
 
-- None.
+- Basic understanding of Python

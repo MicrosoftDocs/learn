@@ -1,34 +1,10 @@
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> - Suggest moving the **Takeaway** at the end of the unit, to the list of Learning objectives
->    in the Introduction unit or to the abstract summary in the module index.yml.
-
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Try it yourself blocks need Input and Output code, and Hint text. Search on TBD.
-> - Need output cell content. Search on TBD.
-> - Several Input cells need intro statements. Search on "Add introduction"
->
-
 Computer vision is a hot topic in academic AI research and in business, medical, government, and environmental applications. We will explore it here by seeing firsthand how computers can tag and identify images.
+
+Make sure you've run a `pip install` for the `azure-cognitiveservices-vision-computervision` package within your environment first. 
 
 The first step in using the Cognitive Services Computer Vision API is to create a client object using the` ComputerVisionClient` class.
 
 Replace `ACCOUNT_ENDPOINT` with the account endpoint provided from the free trial. Replace `ACCOUNT_KEY` with the account key provided from the free trial.
-
-```python
-!pip install azure-cognitiveservices-vision-computervision
-```
-
-The output is:
-
-```Output
-TBD
-```
-
-<!-- Add introduction for snippet -->
 
 ```python
 from azure.cognitiveservices.vision.computervision.models import VisualFeatureTypes
@@ -47,12 +23,6 @@ credentials = CognitiveServicesCredentials(key)
 client = ComputerVisionClient(endpoint, credentials)
 ```
 
-Here's the output:
-
-```Output
-TBD
-```
-
 Now that we have a client object to work with, let's see what we can do.
 
 By using `analyze_image`, we can see the properties of the image with `VisualFeatureTypes.tags`.
@@ -69,7 +39,16 @@ for tag in image_analysis.tags:
 Here's the output:
 
 ```Output
-TBD
+{'additional_properties': {}, 'name': 'text', 'confidence': 0.9976017475128174, 'hint': None}
+{'additional_properties': {}, 'name': 'skyscraper', 'confidence': 0.9624584913253784, 'hint': None}
+{'additional_properties': {}, 'name': 'city', 'confidence': 0.9478592872619629, 'hint': None}
+{'additional_properties': {}, 'name': 'billboard', 'confidence': 0.9370654821395874, 'hint': None}
+{'additional_properties': {}, 'name': 'building', 'confidence': 0.8910864591598511, 'hint': None}
+{'additional_properties': {}, 'name': 'light', 'confidence': 0.7848806381225586, 'hint': None}
+{'additional_properties': {}, 'name': 'street', 'confidence': 0.6592667102813721, 'hint': None}
+{'additional_properties': {}, 'name': 'night', 'confidence': 0.3002099096775055, 'hint': None}
+{'additional_properties': {}, 'name': 'several', 'confidence': 0.19980567693710327, 'hint': None}
+{'additional_properties': {}, 'name': 'crowd', 'confidence': 0.0050629377365112305, 'hint': None}
 ```
 
 ### Try it yourself
@@ -80,18 +59,19 @@ How can you use the code above to also see the description by using the `VisualF
 
 <details> 
 
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
   Here's the input:
 
   ```python
-  tbd
+  image_analysis_desc = client.analyze_image(url,visual_features=[VisualFeatureTypes.description])
+  print(image_analysis_desc)
   ```
 
   The output is:
 
   ```Output
-  tbd
+  {'color': None, 'image_type': None, 'categories': None, 'tags': None, 'metadata': <azure.cognitiveservices.vision.computervision.models._models_py3.ImageMetadata object at 0x7fb6c8923f98>, 'additional_properties': {}, 'brands': None, 'objects': None, 'adult': None, 'faces': None, 'description': <azure.cognitiveservices.vision.computervision.models._models_py3.ImageDescriptionDetails object at 0x7fb6c8923550>, 'request_id': 'e72fb514-00bd-4735-ac8b-7c4671c336ba'}
   ```
   
 </details>
@@ -113,7 +93,8 @@ for x in models.models_property:
 Here's the output:
 
 ```Output
-TBD
+{'additional_properties': {}, 'name': 'celebrities', 'categories': ['people_', '人_', 'pessoas_', 'gente_']}
+{'additional_properties': {}, 'name': 'landmarks', 'categories': ['outdoor_', '户外_', '屋外_', 'aoarlivre_', 'alairelibre_', 'building_', '建筑_', '建物_', 'edifício_']}
 ```
 
 Let's analyze an image by domain:
@@ -137,7 +118,8 @@ for landmark in analysis.result["landmarks"]:
 Here's the output:
 
 ```Output
-TBD
+Space Needle
+0.9998365640640259
 ```
 
 ### Try it yourself
@@ -148,18 +130,28 @@ How can you use the code above to predict an image of a celebrity, by using [thi
 
 <details> 
 
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
   Here's the input:
 
   ```python
-  tbd
+  domain_2 = "celebrities"
+
+  # Public-domain image of Seattle
+  url_2 = "https://images.pexels.com/photos/270968/pexels-photo-270968.jpeg"
+  
+  analysis_2 = client.analyze_image_by_domain(domain_2, url_2, language)
+  
+  for celebrities in analysis_2.result["celebrities"]:
+      print(celebrities["name"])
+      print(celebrities["confidence"])
   ```
 
   The output is:
 
   ```Output
-  tbd
+  Elvis Presley
+  0.9977160692214966
   ```
   
 </details>
@@ -186,7 +178,12 @@ for caption in analysis.captions:
 Here's the output:
 
 ```Output
-TBD
+a bridge over a body of water
+0.6252799422757869
+a bird standing on a bridge
+0.3151035321369864
+a bridge over some water
+0.3141035321369864
 ```
 
 ### Try it yourself
@@ -198,18 +195,27 @@ What happens if you change the count of descriptions to output?
 
 <details> 
 
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
   Here's the input:
 
   ```python
-  tbd
+  max_descriptions = 2
+  
+  analysis_2 = client.describe_image(url_2, max_descriptions, language)
+  
+  for caption in analysis_2.captions:
+      print(caption.text)
+      print(caption.confidence)
   ```
 
   The output is:
 
   ```Output
-  tbd
+  Elvis Presley jumping a skate board
+  0.3821096023262668
+  Elvis Presley riding a skate board in the air
+  0.26785632250282876
   ```
   
 </details>
@@ -233,38 +239,40 @@ from azure.cognitiveservices.vision.computervision.models import TextOperationSt
 import time
 
 url = "https://images.pexels.com/photos/6375/quote-chalk-think-words.jpg"
-mode = TextRecognitionMode.handwritten
-raw = True
-custom_headers = None
-numberOfCharsInOperationId = 36
 
 # Async SDK call
-rawHttpResponse = client.batch_read_file(url, mode, custom_headers,  raw)
+recognize_printed_results = client.batch_read_file(url,  raw=True)
 
-# Get ID from returned headers
-operationLocation = rawHttpResponse.headers["Operation-Location"]
-idLocation = len(operationLocation) - numberOfCharsInOperationId
-operationId = operationLocation[idLocation:]
+# Get the operation location (URL with an ID at the end) from the response
+operation_location_remote = recognize_printed_results.headers["Operation-Location"]
+# Grab the ID from the URL
+operation_id = operation_location_remote.split("/")[-1]
 
-# SDK call
+# Call the "GET" API and wait for it to retrieve the results 
 while True:
-    result = client.get_read_operation_result(operationId)
-    if result.status not in ['NotStarted', 'Running']:
+    get_printed_text_results = client.get_read_operation_result(operation_id)
+    if get_printed_text_results.status not in ['NotStarted', 'Running']:
         break
     time.sleep(1)
 
-# Get data
-if result.status == TextOperationStatusCodes.succeeded:
-    for textResult in result.recognition_results:
-        for line in textResult.lines:
+# Print the detected text, line by line
+if get_printed_text_results.status == TextOperationStatusCodes.succeeded:
+    for text_result in get_printed_text_results.recognition_results:
+        for line in text_result.lines:
             print(line.text)
             print(line.bounding_box)
+print()
 ```
 
 Here's the output:
 
 ```Output
-TBD
+OU
+[496.0, 2324.0, 1225.0, 1745.0, 1718.0, 2323.0, 919.0, 2902.0]
+UTSIL
+[944.0, 2061.0, 1921.0, 955.0, 2338.0, 1213.0, 1458.0, 2462.0]
+OF THE BO
+[1102.0, 3226.0, 2829.0, 481.0, 3389.0, 833.0, 1661.0, 3467.0]
 ```
 
 ### Try it yourself
@@ -275,18 +283,48 @@ What other images with words can be analyzed?
 
 <details> 
 
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
   Here's the input:
 
   ```python
-  tbd
+  url = "https://cdn.pixabay.com/photo/2016/10/20/08/55/board-1754932_960_720.jpg"
+  
+  # Async SDK call
+  recognize_printed_results = client.batch_read_file(url,  raw=True)
+  
+  # Get the operation location (URL with an ID at the end) from the response
+  operation_location_remote = recognize_printed_results.headers["Operation-Location"]
+  # Grab the ID from the URL
+  operation_id = operation_location_remote.split("/")[-1]
+  
+  # Call the "GET" API and wait for it to retrieve the results 
+  while True:
+      get_printed_text_results = client.get_read_operation_result(operation_id)
+      if get_printed_text_results.status not in ['NotStarted', 'Running']:
+          break
+      time.sleep(1)
+  
+  # Print the detected text, line by line
+  if get_printed_text_results.status == TextOperationStatusCodes.succeeded:
+      for text_result in get_printed_text_results.recognition_results:
+          for line in text_result.lines:
+              print(line.text)
+              print(line.bounding_box)
+  print()
   ```
 
   The output is:
 
   ```Output
-  tbd
+  If you stumble
+  [151.0, 128.0, 816.0, 108.0, 819.0, 203.0, 154.0, 224.0]
+  make it part
+  [162.0, 268.0, 772.0, 253.0, 774.0, 347.0, 164.0, 362.0]
+  of the dance
+  [202.0, 391.0, 839.0, 382.0, 841.0, 485.0, 204.0, 495.0]
+  author unknown
+  [533.0, 504.0, 898.0, 506.0, 897.0, 572.0, 533.0, 571.0]
   ```
   
 </details>
@@ -308,13 +346,7 @@ Images come in varying sizes, and there might be cases where you want to create 
 !pip install Pillow
 ```
 
-Here's the output:
-
-```Output
-TBD
-```
-
-Now that the Pillow library is installed, we will import the Image module and create a thumbnail from a provided image. (Once generated, you can find the thumbnail image in your project folder on Azure Notebooks.)
+Now that the Pillow library is installed, we will import the Image module and create a thumbnail from a provided image. (Once generated, you can find the thumbnail image in your project folder.)
 
 ```python
 # Pillow package
@@ -336,12 +368,4 @@ image.save('thumbnail.jpg')
 ```
 
 The output is:
-
-```Output
-TBD
-```
-
-> [!div class="alert is-tip"]
-> ### Takeaway
->
-> In this unit, you explored how to access computer-vision cognitive services by API. Specifically, you used tools to analyze and describe images that you submitted to these services.
+:::image type="content" alt-text="A generated thumbnail." source="../media/thumbnail.jpg" loc-scope="azure":::

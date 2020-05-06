@@ -100,11 +100,6 @@ graph
 ```
 
 The output is:
-
-```Output
-TBD
-```
-
 :::image type="content" alt-text="A decision tree graph." source="../media/output-graphviz-tree.png" loc-scope="azure":::
 
 There are, of course, myriad other ML models that we could explore. However, you now know some of the most commonly encountered ones, which is great preparation to understand what automated, cloud-based ML and AI services are doing and how to intelligently apply them to data-science problems, the subject of the next section.

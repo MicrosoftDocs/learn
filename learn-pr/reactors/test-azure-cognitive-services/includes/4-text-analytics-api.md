@@ -1,10 +1,3 @@
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Try it yourself block needa Input and Output code, and Hint text. Search on TBD.
-> - Need output cell content. Search on TBD.
->
-
 Now it's time to start processing some text languages.
 
 To verify the URL endpoint for `text_analytics_base_url`, run the following:
@@ -17,7 +10,7 @@ print(language_api_url)
 The output is:
 
 ```Output
-TBD
+https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/languages
 ```
 
 The API requires that the payload be formatted in the form of documents containing `id` and `text` attributes:
@@ -32,12 +25,6 @@ The API requires that the payload be formatted in the form of documents containi
 ]}
 ```
 
-Here's the output:
-
-```Output
-TBD
-```
-
 The next lines of code call the API service using the requests library to determine the languages that were passed in from the documents:
 
 ```python
@@ -50,7 +37,31 @@ pprint(languages)
 The output is:
 
 ```Output
-TBD
+{'documents': [{'detectedLanguages': [{'iso6391Name': 'en',
+                                       'name': 'English',
+                                       'score': 1.0}],
+                'id': '1'},
+               {'detectedLanguages': [{'iso6391Name': 'es',
+                                       'name': 'Spanish',
+                                       'score': 1.0}],
+                'id': '2'},
+               {'detectedLanguages': [{'iso6391Name': 'zh_chs',
+                                       'name': 'Chinese_Simplified',
+                                       'score': 1.0}],
+                'id': '3'},
+               {'detectedLanguages': [{'iso6391Name': 'hu',
+                                       'name': 'Hungarian',
+                                       'score': 1.0}],
+                'id': '4'},
+               {'detectedLanguages': [{'iso6391Name': 'no',
+                                       'name': 'Norwegian',
+                                       'score': 1.0}],
+                'id': '5'},
+               {'detectedLanguages': [{'iso6391Name': 'ja',
+                                       'name': 'Japanese',
+                                       'score': 1.0}],
+                'id': '6'}],
+ 'errors': []}
 ```
 
 The next line of code outputs the documents in a table format with the language information for each document:
@@ -67,7 +78,14 @@ HTML("<table><tr><th>Text</th><th>Detected languages(scores)</th></tr>{0}</table
 Here's the output:
 
 ```Output
-TBD
+| Text | Detected languages(scores) |
+|------|----------------------------|
+| This is a document written in English. | English(1.0) |
+| Este es un documento escrito en Español. | Spanish(1.0) |
+| 这是一个用中文写的文件 | Chinese_Simplified(1.0) |
+| Ez egy magyar nyelvű dokumentum. | Hungarian(1.0) |
+| Dette er et dokument skrevet på dansk. | Norwegian(1.0) |
+| これは日本語で書かれた文書です。 | Japanese(1.0) |
 ```
 
 The service did a pretty good job of identifying the languages. It did confidently identify the Danish phrase as being Norwegian, but in fairness, even linguists argue as to whether Danish and Norwegian constitute distinct languages or are dialects of the same language. (Note that Danes and Norwegians have no doubts on the subject.)
@@ -80,18 +98,34 @@ Create another document set of text and use the Text Analytics API to detect the
 
 <details> 
 
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
   Here's the input:
   
   ```python
-  tbd
+  documents = { 'documents': [
+    { 'id': '1', 'text': 'Trying out this new feature' },
+    { 'id': '2', 'text': 'Creo que estoy aprendiendo.' }
+  ]}
+  headers   = {"Ocp-Apim-Subscription-Key": subscription_key}
+  response  = requests.post(language_api_url, headers=headers, json=documents)
+  languages = response.json()
+  pprint(languages)
+  table = []
+  for document in languages["documents"]:
+      text  = next(filter(lambda d: d["id"] == document["id"], documents["documents"]))["text"]
+      langs = ", ".join(["{0}({1})".format(lang["name"], lang["score"]) for lang in document["detectedLanguages"]])
+      table.append("<tr><td>{0}</td><td>{1}</td>".format(text, langs))
+  HTML("<table><tr><th>Text</th><th>Detected languages(scores)</th></tr>{0}</table>".format("\n".join(table)))
   ```
 
   The output is:
   
   ```Output
-  tbd
+  | Text | Detected languages(scores) |
+  |------|----------------------------|
+  | Trying out this new feature | English(1.0) |
+  | Creo que estoy aprendiendo. | Spanish(1.0) |
   ```
   
 </details>
