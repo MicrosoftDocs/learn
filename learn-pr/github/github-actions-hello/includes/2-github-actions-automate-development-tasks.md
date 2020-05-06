@@ -10,7 +10,7 @@ You can find GitHub actions in [GitHub Marketplace](https://github.com/marketpla
 
 There are two types of GitHub Actions, *container actions* and *JavaScript actions*. With container actions, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. JavaScript actions don't include the environment in the code. This means you'll have to specify the environment to execute this action. You can use a VM in the cloud, or on-premises. GitHub Actions support any language, and Linux, macOS, and Windows environments.
 
-Here is an example of an action that checks out the repository. This action, [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true), is part of a step in a workflow. This step also builds the Node.js code that was checked out. We will talk about workflows, jobs, and steps in the next section.
+Here is an example of an action that checks out the repository so the code can be used on the VM. This action, [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true), is part of a step in a workflow. This step also builds the Node.js code that was checked out. We will talk about workflows, jobs, and steps in the next section.
 
 ```yml
 steps:

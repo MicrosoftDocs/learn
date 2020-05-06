@@ -3,13 +3,12 @@ In this module, you learned about GitHub Actions and how to use them in a workfl
 You can now:
 
 - Describe GitHub Actions, the types of actions, and where to find them
-- Plan an automation of your software development life cycle with GitHub Workflows
+- Plan an automation of your software development life cycle with GitHub Actions workflows
 - Create a container action and have it run in a workflow triggered by a push event to your GitHub repository
 
 ## Next steps
 
-To continue your journey with GitHub Actions, check out the next 2 modules on this learning path called .... where you expand on what you have learned here and use GitHub Actions in continuous integration, continuous delivery, and infrastructure as code.
-TODO: put the module links here
+To continue your journey with GitHub Actions, check out the next two modules on this learning path. There, you expand on what you have learned here and use GitHub Actions in continuous integration, continuous delivery, and implementing infrastructure as code.
 
 ## Learn more
 
