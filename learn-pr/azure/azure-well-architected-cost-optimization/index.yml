@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-cost-optimization
 metadata:
-  title: Azure Well-Architected - Cost optimization
+  title: Azure Well-Architected Framework - Cost optimization
   description: Learn how to design an Azure architecture that is efficient, eliminates waste, and gives you full visibility into where your money is spent on cloud resources.
   ms.date: 05/19/2020
   author: jboeshart 
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure Well-Architected - Cost optimization
+title: Azure Well-Architected Framework - Cost optimization
 summary: Learn how to design an Azure architecture that is efficient, eliminates waste, and gives you full visibility into where your money is spent on cloud resources.
 abstract:  | 
   In this module, you will:
