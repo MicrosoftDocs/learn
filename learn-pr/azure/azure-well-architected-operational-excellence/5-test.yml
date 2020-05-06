@@ -40,5 +40,5 @@ quiz:
       isCorrect: false
       explanation: 'Canary tests are intended to determine if a particular feature is rolled out to users, but is not the best strategy for this scenario.'
     - content: 'A/B test'
-      isCorrect: false
+      isCorrect: true
       explanation: 'This would allow you to test one experience with some users, and different experience with others. You could then analyze the results to determine the impact of the new user experience.'
