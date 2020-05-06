@@ -10,7 +10,7 @@ Contoso Logistics needs to distribute containers between the two ships as evenly
 
 In this module you'll:
 
-- Learn how QIO emulates quantum algorithms on classical hardware. **Kitty:** We do mention several times that it is running on classical hardware. But we don't actually explain how.
+- Learn about the quantum effect that QIO emulates on classical hardware.
 - See which kinds of problems are best suited to QIO.
 - Understand how QIO applies quantum techniques to solve optimization problems.
 - Apply QIO to a real-world optimization problem.
