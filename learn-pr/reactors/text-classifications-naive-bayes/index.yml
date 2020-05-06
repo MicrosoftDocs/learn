@@ -20,7 +20,7 @@ abstract:  |
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - [Introduction to Python for data science](../../python-data-science/index.yml)
+  - Introduction to Python for data science
   
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
