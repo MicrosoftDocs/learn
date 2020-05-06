@@ -6,7 +6,6 @@ You'll use the following components in the design of the solution:
 
    - Serverless Kubernetes
    - Serverless Functions
-   
    - Serverless Application Environments
    
    In this module, we use Azure functions only. Azure Functions enable you to develop serverless applications. You run small pieces of code (called "functions").  Specific events trigger the function to run the code.
@@ -26,13 +25,20 @@ You'll use the following components in the design of the solution:
 
 The overall module steps are:
 
-1.  Configure IoT Devkit to the cloud
-2.  Create a Cognitive Speech Service in Azure
-3.  Build a translator sample using VS Code
-   - Open “Devkit Translator” sample
-   - Provision Azure IoT Hub and IoT device and Azure Functions
-   - Configure Speech API key in the Azure function
-   - Deploy Azure function
-   - Configure and compile the code 
+1. Configure IoT Devkit to the cloud
+
+2. Create a Cognitive Speech Service in Azure
+
+3. Build a translator sample using VS Code
+
+   a. Open “Devkit Translator” sample
+
+   b. Provision Azure IoT Hub and IoT device and Azure Functions
+
+   c. Configure Speech API key in the Azure function
+
+   d. Deploy Azure function
+
+   e. Configure and compile the code
 
 After completing the module, your device will be configured to the IoT Hub. You'll have the Azure function app deployed in the cloud. You'll also implement the device code in the IoT device. The device code will use the Azure function and will execute the code in a serverless environment. The resulting solution will perform speech translation using Cognitive Services for the Digital signage scenario.
