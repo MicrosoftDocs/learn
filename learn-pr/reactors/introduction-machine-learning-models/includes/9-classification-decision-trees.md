@@ -1,10 +1,3 @@
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Try it yourself block needs Input and Output code, and Hint text. Search on TBD.
-> - Missing some output cell content. Search on TBD.
->
-
 If logistic regression uses observations about variables to swing a metaphorical needle between 0 and 1, classification based on decision trees programmatically builds a Yes/No decision to classify items.
 
 :::image type="content" alt-text="A decision tree graph." source="../media/decision-tree.png" loc-scope="azure":::
@@ -27,7 +20,7 @@ Using the same split data as with the logistic regression, can you fit the decis
 
 <details> 
 
-  <summary>Hint: Refer to the code snippet for fitting the logistic regression in the unit "Logistic regression: Handle missing values".<i>(expand to reveal)</i></summary>
+  <summary>Hint: Refer to the code snippet for fitting the logistic regression in the unit "Logistic regression: Handle missing values."<i>(expand to reveal)</i></summary>
 
   Here's the input:
 
@@ -100,6 +93,7 @@ graph
 ```
 
 The output is:
+
 :::image type="content" alt-text="A decision tree graph." source="../media/output-graphviz-tree.png" loc-scope="azure":::
 
 There are, of course, myriad other ML models that we could explore. However, you now know some of the most commonly encountered ones, which is great preparation to understand what automated, cloud-based ML and AI services are doing and how to intelligently apply them to data-science problems, the subject of the next section.
