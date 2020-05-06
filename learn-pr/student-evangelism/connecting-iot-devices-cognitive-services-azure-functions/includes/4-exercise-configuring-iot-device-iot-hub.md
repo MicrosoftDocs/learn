@@ -1,7 +1,7 @@
 ## Using the Azure Cloud Shell
 
 To start Azure Cloud Shell,  
-Go to [**https://shell.azure.com**](https://shell.azure.com).
+Launch Cloud Shell from the top navigation of the Azure portal.
 
 ![An illustration is showing how to open Azure Cloud Shell.](../media/cloud-shell.png)
 
@@ -38,7 +38,13 @@ az iot hub device-identity create --hub-name <iot-hub-name> --device-id <device-
 
 ## Connecting the IoT Devkit to your computer
 
-Connect to IoT Devkit to the computer with the Micro-USB and confirm that green LED for power is on. 
+To connect the DevKit to your computer,
+
+1. Connect the USB end to your computer.
+
+2. Connect the Micro-USB end to the DevKit.
+
+3. Confirm that green LED for power is on.
 
 ![An illustration is showing how to connect the device to the computer.](../media/connect-device-pc.png) 
 
