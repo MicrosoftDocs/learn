@@ -145,13 +145,37 @@ The output is:
 'Python'
 ```
 
-One way to remember how slices work is to think of the indices as pointing between characters. The left edge of the first character in the string is numbered 0. The right edge of the last character of a string of `n` characters has index `n`. For example:
+<!-- Sarah, Here are my changes to address Mike's feedback about the "i" and "j" indecies and the oddly formatted code block.
+-- 
+--    Added for index "i"      "We can slice from this location with the index `i`."
+--    Changed for index "j"    "We can slice from this location with the index `j`."
+--    Emphasis added           "as pointing <strong>between</strong> characters"
+--    Python code cell         changed format from one long line to multi column, row table
+--    Added description        Added bullet list after code cell
+-->
 
-```
-+---+---+---+---+---+---+ | P | y | t | h | o | n | +---+---+---+---+---+---+ 0 1 2 3 4 5 6 -6 -5 -4 -3 -2 -1
+One way to remember how slices work is to think of the indices as pointing **between** characters. The left edge of the first character in the string is numbered 0. We can slice from this location with the index `i`. The right edge of the last character of a string of `n` characters has the index `n`. We can slice from this location with the index `j`. For example:
+
+```python
+ +---+---+---+---+---+---+
+ | P | y | t | h | o | n |
+ +---+---+---+---+---+---+
+ 0   1   2   3   4   5   6
+ +---+---+---+---+---+---+
+-6  -5  -4  -3  -2  -1  
+ +---+---+---+---+---+---+
+ i                       j
+ +---+---+---+---+---+---+
 ```
 
-The first row of numbers shows the position of the indices 0 to 6 in the string. The second row shows the corresponding negative indices. The slice from `i` to `j` includes all characters between the edges labeled `i` and `j`, respectively.
+In our example:
+
+- The first row contains the string that we want to slice, "Python".
+- The second row shows the position of the indices 0 to 6 in the string.
+- The third row shows the corresponding negative indices. Notice there is no 0 in this row.
+- The fourth row shows the starting locations for our slicing indecies, `i` and `j`.
+
+The slice from `i` to `j` includes all characters between the edges labeled `i` and `j`, respectively.
 
 For non-negative indices, the length of a slice is the difference between the indices, if both are within bounds. For example, the length of `word[1:3]` is 2.
 
