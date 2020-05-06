@@ -16,7 +16,7 @@ You learned about:
 - [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true)
 - [Metadata syntax for GitHub Actions](https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions?azure-portal=true)
 - [Workflow syntax for GitHub Actions](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions?azure-portal=true)
--[GitHub Actions usage limits](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#usage-limits?azure-portal=true)
+- [GitHub Actions usage limits](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#usage-limits?azure-portal=true)
 - [Introduction to Docker Containers](https://docs.microsoft.com/learn/modules/intro-to-docker-containers/?azure-portal=true)
 - [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true)
 - [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true)

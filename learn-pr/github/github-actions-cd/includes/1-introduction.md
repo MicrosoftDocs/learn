@@ -16,11 +16,11 @@ In this module, you:
 
 ## Prerequisites
 
-This module assumes you've completed the [Automate development tasks by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-hello/?azure-portal=true) module and [Build continuous integration workflows by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-ci/?azure-portal=true) module or that you're already familiar with GitHub Actions and GitHub Workflow basics used in continuous integration.
+This module assumes you've completed the [Automate development tasks by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-hello/?azure-portal=true) module and [Build continuous integration workflows by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-ci/?azure-portal=true) module or that you're already familiar with GitHub Actions and workflow basics used in continuous integration.
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub
-  - (For more information about GitHub, see [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true).)
+  - For more information about GitHub, see [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true).
 - Basic familiarity with GitHub Actions and workflows
   - If you aren't familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-hello/?azure-portal=true) module.
 - Basic familiarity with continuous integration using GitHub Actions and workflows
