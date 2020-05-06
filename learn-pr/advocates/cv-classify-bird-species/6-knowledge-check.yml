@@ -15,44 +15,44 @@ content: |
 quiz:
   title: Answer the questions below to check your understanding.
   questions:
-    - content: "What is the purpose of Artificial Intelligence?"
+    - content: "What is the purpose of artificial Intelligence?"
       choices:
         - content: "To build Skynet."
           isCorrect: false
-          explanation: "Incorrect! Skynet is from a movie and not real."
+          explanation: "Incorrect! Skynet is from a movie and isn't real."
         - content: "To mimic human intelligence with a computer."
           isCorrect: true
           explanation: "Correct!"
-    - content: "Which of the following options is <i>not</i> an indicator that custom vision provides to understand how the model is performing?"
+    - content: "Which of the following options <i>isn't</i> an indicator that Azure Cognitive Services Custom Vision provides to help you understand how well the model performs?"
       choices:
         - content: "Confusion Matrix"
           isCorrect: true
-          explanation: "Correct! A confusion matrix is a valid metric, but it is not provided by custom vision."
-        - content: "Recall"
+          explanation: "Correct! A confusion matrix is a valid metric, but it isn't provided by Azure Cognitive Services Custom Vision."
+        - content: "recall"
           isCorrect: false
-          explanation: "Incorrect. A Recall metric is provided."
+          explanation: "Incorrect. The recall metric is provided."
         - content: "AP"
           isCorrect: false
-          explanation: "Incorrect. An AP metric is provided."
-        - content: "Precision"
+          explanation: "Incorrect. The AP metric is provided."
+        - content: "precision"
           isCorrect: false
-          explanation: "Incorrect. A Precision metric is provided."
-    - content: "What is a common rookie mistake?"
+          explanation: "Incorrect. The precision metric is provided."
+    - content: "What's a common rookie mistake?"
       choices:
-        - content: "Bad data"
+        - content: "Using bad data."
           isCorrect: true
           explanation: "Correct! Good data is key to making a good machine learning model."
-        - content: "Too much data"
+        - content: "Using too much data."
           isCorrect: false
-          explanation: "Incorrect. More data is better if the data is good data."
-        - content: "Using unseen (new) data to test"
+          explanation: "Incorrect. More data is better, if the data is good data."
+        - content: "Using unseen (new) data to test."
           isCorrect: false
           explanation: "Incorrect. You always want to test with unseen (new) data."
-    - content: "The model should not be deployed until it has perfect results and is 100% accurate on all classes."
+    - content: "The model shouldn't be deployed until it has perfect results and is 100% accurate on all classes."
       choices:
         - content: "False"
           isCorrect: true
-          explanation: "Correct! You will have to make the decision of when the model is performing 'good enough' for the problem you are trying to solve."
+          explanation: "Correct! You must decide when the model is performing <i>good enough</i> for the problem you are trying to solve."
         - content: "True"
           isCorrect: false
-          explanation: "Incorrect. There is always some error in models; they will never be perfect."
+          explanation: "Incorrect. There's always some error in models. Machine learning models will never be perfect."
