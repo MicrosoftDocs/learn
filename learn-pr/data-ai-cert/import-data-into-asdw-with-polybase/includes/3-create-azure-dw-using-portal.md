@@ -30,7 +30,7 @@ First, let's create a SQL pool named **DemoDW** in Azure SQL Data Warehouse.
 
         - Performance Level: Click **Select performance level** and select **Gen2 DW100C**
 
-1. In the **Azure Synapse Analytics*** blade, click **Review + create**.
+1. In the **Azure Synapse Analytics** blade, click **Review + create**.
 
     ![Database settings for new a data warehouse](../media/3-create-db.png)
 

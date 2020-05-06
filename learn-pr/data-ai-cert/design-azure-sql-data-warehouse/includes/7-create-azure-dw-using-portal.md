@@ -36,11 +36,11 @@ Complete these steps to create a data warehouse that contains the *AdventureWork
 
     - Performance Level: Click **Select performance level** and select **Gen2 DW100C**
 
-1. In the **Azure Synapse Analytics*** blade, click **Review + create**.
+1. In the **Azure Synapse Analytics** blade, click **Review + create**.
 
     ![Screenshot of the new database server pane](../media/6-create-sql-db.png)
 
-1. In the **Azure Synapse Analytics*** blade, click **Create**.
+1. In the **Azure Synapse Analytics** blade, click **Create**.
 
 
 1. Select **Create** to provision the database. Provisioning takes a few minutes.
