@@ -16,6 +16,6 @@ Happy bird watching!
 
 [Create a Node.js app in Azure App Service on Linux](https://docs.microsoft.com/azure/app-service/containers/quickstart-nodejs?WT.mc_id=birds-learn-cassieb)
 
-[Custom Vision Node Tutorial Docs](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/node-tutorial)
+[Custom Vision Node Tutorial Docs](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/node-tutorial?WT.mc_id=birds-learn-cassieb)
 
-[Python SDK Docs](https://docs.microsoft.com/python/api/azure-cognitiveservices-vision-customvision/azure.cognitiveservices.vision.customvision.training.custom_vision_training_client.customvisiontrainingclient?view=azure-python)
+[Python SDK Docs](https://docs.microsoft.com/python/api/azure-cognitiveservices-vision-customvision/azure.cognitiveservices.vision.customvision.training.custom_vision_training_client.customvisiontrainingclient?view=azure-python?WT.mc_id=birds-learn-cassieb)
