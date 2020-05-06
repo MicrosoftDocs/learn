@@ -8,7 +8,7 @@ The user interface (UI) between people and computers has evolved greatly over th
 
 ## Conversational UI
 
-**Conversational UI** and **bots** is a new type of UX that has the potential to radically change how we use computers. You no longer need to know what buttons to press. You just ask the computer for what you need, and hope it will understand you correctly and do the job. In this new UX, we see the computer as an _assistant_ rather than as a _tool_. We want to speak to this assistant by using **natural language** in our own words.
+**Conversational UI** and **bots** are a new type of UX that has the potential to radically change how we use computers. You no longer need to know what buttons to press. You just ask the computer for what you need, and hope it will understand you correctly and do the job. In this new UX, we see the computer as an _assistant_ rather than as a _tool_. We want to speak to this assistant by using **natural language** in our own words.
 
 With this UX transition, we need to take extra care to make sure users are comfortable having conversations with a computer. People can subconsciously expect a bot to act like a human. They might attribute emotions to the bot assistant, and in general, feel more personal involvement. So, we need to make sure we build conversational UI responsibly.
 
