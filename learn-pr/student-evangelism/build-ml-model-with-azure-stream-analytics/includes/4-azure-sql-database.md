@@ -10,7 +10,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
     _Opening the Azure Cloud Shell_
 
-1. 1. Use these command to save the names you wish to use for your database server, admin username, admin password, and database name, replacing `<server name>`, `<admin username>`, `<admin password>`, and `<database name>` with the information you wish to use.
+1. 1. Use these commands to save the names you wish to use for your database server, admin username, admin password, and database name, replacing `<server name>`, `<admin username>`, `<admin password>`, and `<database name>` with the information you wish to use.
 
     ```bash
     SERVER_NAME="<server name>"

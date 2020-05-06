@@ -61,7 +61,7 @@ You now have a storage account for storing photos and a container to store them 
 
 The next task is to create a Node.js app that simulates an array of motion-activated cameras that upload photographs taken in the wild to the storage account's "photos" container.
 
-1. If Node.js isn't installed on your computer, go to [https://nodejs.org/](https://nodejs.org/?azure-portal=true) and install it it now. You can determine whether Node is installed — and what version is installed — by opening a Command Prompt or terminal window and typing the following command:
+1. If Node.js isn't installed on your computer, go to [https://nodejs.org/](https://nodejs.org/?azure-portal=true) and install its now. You can determine whether Node is installed — and what version is installed — by opening a Command Prompt or terminal window and typing the following command:
 
     ```bash
     node -v
