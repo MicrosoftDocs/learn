@@ -1,7 +1,6 @@
 Lets build our model! Here we will download the dataset, create our Azure service, upload the data, and train the model.
 
 ## Download data
-NEW-social-good-bird-species
 
 The first thing we need to create our model is to get data! We are going to use a subset of the NA Bird dataset from Cornell to train our model. Download the zip file with our dataset from [here](https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species/raw/master/bird_photos.zip).
 
