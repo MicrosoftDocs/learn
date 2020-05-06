@@ -14,11 +14,12 @@ Now our model is performing "good enough" - let's deploy it! There are different
 Once the model is trained and at a satisfactory accuracy it's ready to be used in your App
 
 - Go to the Resource Group that contains the Custom Vision Resource
-- There should be a resource named "YourCustomVisionResourceName_Prediction - Quick start"
-- The Select "Api Reference" from the list of helpful links
-- This will open a page with docs on how to call the api to get predictions from the model
+- There should be a resource named `YourCustomVisionResourceName_Prediction`
+- Select `Quick Start`
+- Select `API Reference` from the list of helpful links
+- This will open a page with docs on how to call the API to get predictions from the model
 - If you scroll all the way to the bottom, there are code samples in multiple languages to get you started
-- Here is the example code for calling the prediction API in python:
+- Here is the example code for calling the prediction API in Python:
 
 ```python
 from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
