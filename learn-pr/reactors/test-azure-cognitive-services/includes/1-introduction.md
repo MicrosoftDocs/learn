@@ -37,7 +37,7 @@ After you have your API keys, you're ready to start.
 In this module, you will:
 
 - By the end of this part, you should have a basic comfort with accessing cloud-based cognitive services by API from a Python environment.
-- Access computer-vision cognitive services by API to analyze and describe images 
+- Access computer-vision cognitive services by API to analyze and describe images.
 - Use a variety of different cognitive services APIs to extract different information from text: language, sentiment, key phrases, and entities.
 
 ## Prerequisites
