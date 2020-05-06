@@ -81,7 +81,7 @@ dtype: float64
 
 ## Series as one-dimensional array
 
-Because `Series` also provide array-style functionality, you can use the NumPy techniques we looked at earlier, like slices, masking, and fancy indexing.
+Because `Series` also provide array-style functionality, you can use the NumPy techniques you looked at earlier, like slices, masking, and fancy indexing.
 
 ### Slicing by using the explicit index
 
@@ -145,7 +145,7 @@ dtype: float64
 
 ## Indexers: loc and iloc
 
-Pandas allows you to use a lot different things for your explicit indices, but this capability can also be confusing. Integers are a good example. To avoid confusion between integer indices that you might supply, and those implicit integer indices that pandas generates, pandas provides special _indexer_ attributes. These attributes explicitly expose certain indexing schemes.
+pandas allows you to use a lot different things for your explicit indices, but this capability can also be confusing. Integers are a good example. To avoid confusion between integer indices that you might supply, and those implicit integer indices that pandas generates, pandas provides special _indexer_ attributes. These attributes explicitly expose certain indexing schemes.
 
 > [!Note]
 > These aren't functional methods. They are attributes that expose a particular slicing interface to the data in the `Series`.

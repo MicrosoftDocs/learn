@@ -203,7 +203,7 @@ The output is:
 | Russia   |  Moscow   | 17125200  | 143910127.0  | 8.403413           | 0.19              |
 ```
 
-You can use the`del` command to delete a column from a `DataFrame`:
+You can use the `del` command to delete a column from a `DataFrame`:
 
 ```python
 del countries['Capital']

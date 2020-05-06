@@ -139,8 +139,8 @@ You can also use array-like techniques, such as masking and fancy indexing, with
 
 Can you think of how to combine masking and fancy indexing in one line?
 
-- Your masking could be something like `countries['Population density'] > 200`.
-- Your fancy indexing could be something like `['Population', 'Population density']`.
+- Your masking might be something like `countries['Population density'] > 200`.
+- Your fancy indexing might be something like `['Population', 'Population density']`.
 
 Be sure to put the the masking and fancy indexing inside the square brackets: `countries.loc[]`.
 
@@ -214,4 +214,4 @@ The output is:
 | Japan    | 377972    | 126922333.0  | 335.798242         |
 ```
 
-These two conventions are syntactically similar to those on a NumPy array. Although these may not precisely fit the mold of the Pandas conventions, they are nevertheless quite useful in practice.
+These two conventions are syntactically similar to those on a NumPy array. Although these might not precisely fit the mold of the pandas conventions, they are nevertheless quite useful in practice.

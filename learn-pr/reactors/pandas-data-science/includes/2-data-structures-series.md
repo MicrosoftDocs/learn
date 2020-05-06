@@ -253,4 +253,4 @@ Spain             NaN
 dtype: float64
 ```
 
-Notice that in the case of *Germany*, *Japan*, *Russia*, and *Spain* (and *Albania*, depending on what you did in the previous exercise), the addition operation produced NaN (not a number) values. Pandas doesn't treat missing values as 0, but as NaN. (It can be helpful to think of arithmetic operations involving NaN as essentially $NaN + x = NaN$).
+Notice that in the case of *Germany*, *Japan*, *Russia*, and *Spain* (and *Albania*, depending on what you did in the previous exercise), the addition operation produced NaN (not a number) values. pandas doesn't treat missing values as 0, but as NaN. (It can be helpful to think of arithmetic operations involving NaN as essentially $NaN + x = NaN$).

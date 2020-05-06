@@ -1,4 +1,4 @@
-Index and column alignment is maintained in operations between a `DataFrame` and a `Series` as well. To see this, consider a common operation in data science, wherein we find the difference of a `DataFrame` and one of its rows. Because pandas inherits `ufuncs` from NumPy, pandas will compute the difference row-wise by default:
+Index and column alignment is maintained in operations between a `DataFrame` and a `Series` as well. To see this, consider a common operation in data science, wherein you find the difference of a `DataFrame` and one of its rows. Because pandas inherits `ufuncs` from NumPy, pandas will compute the difference row-wise by default:
 
 ```python
 df3 = pd.DataFrame(rng.randint(10, size=(3, 4)), columns=list('WXYZ'))
@@ -62,7 +62,7 @@ Y    2
 Name: 0, dtype: int64
 ```
 
-Note that the output from that operation was transposed. That was so that we can subtract it from the `DataFrame`:
+Note that the output from that operation was transposed. That was so that you can subtract it from the `DataFrame`:
 
 ```python
 df3 - halfrow

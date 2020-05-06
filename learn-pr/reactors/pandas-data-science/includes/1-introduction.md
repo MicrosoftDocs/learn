@@ -1,4 +1,4 @@
-Now that we've explored NumPy, it's time to get to know the other workhorse of data science in Python: pandas. The pandas library in Python makes working with data, like importing, cleaning, and organizing it, easier. It's hard to imagine doing data science in Python without it.
+Now that you've explored NumPy, it's time to get to know the other workhorse of data science in Python: pandas. The pandas library in Python makes working with data, like importing, cleaning, and organizing it, easier. It's hard to imagine doing data science in Python without it.
 
 But it was not always this way. Wes McKinney developed the library out of necessity in 2008, while at AQR Capital Management, in order to have a better tool for dealing with data analysis. The library has since taken off as an open-source software project that has become a mature and integral part of the data science ecosystem. (In fact, some examples in this module are drawn from McKinney's book, _[Python for Data Analysis](https://wesmckinney.com/pages/book.html?azure-portal=true)_.)
 
