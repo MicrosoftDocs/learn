@@ -27,7 +27,7 @@ The output is:
 dtype: int64
 ```
 
-Did you notice the NumPy function you used with the variable `rng`? By specifying a seed for the random-number generator, you get the same result each time. This can be a useful trick when you need to produce psuedo-random output that must be replicatable by others. (Go ahead and re-run the code cell above a couple of times to convince yourself that it produces the same output each time.)
+Did you notice the NumPy function you used with the variable `rng`? By specifying a seed for the random-number generator, you get the same result each time. This can be a useful trick when you need to produce pseudo-random output that must be replicable by others. (Go ahead and re-run the code cell above a couple of times to convince yourself that it produces the same output each time.)
 
 ```python
 df_example = pd.DataFrame(rng.randint(0, 10, (3, 4)),
