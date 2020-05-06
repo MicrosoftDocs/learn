@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-ml-model-with-azure-stream-analytics.5-power-bi
-title: Create a Power BI report
+title: Exercise - Create a Power BI report
 metadata:
-  title: Create a Power BI report
+  title:  Exercise - Create a Power BI report
   description: Create a Power BI report to show where polar bears are being spotted
   ms.date: 05/08/2020
   author: shanamatthews
