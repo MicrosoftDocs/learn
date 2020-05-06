@@ -198,6 +198,8 @@ You can check the status of your build and deploy action by clicking the link sh
 
 :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
 
+Once you're there:
+
 1. Click **Azure Static Web Apps CI/CD**
 1. Click the commit titled **Azure Static Web Apps added workflow for file for CI/CD**
 1. Click the **Build and Deploy Job** link

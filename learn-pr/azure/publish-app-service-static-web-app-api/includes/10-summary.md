@@ -6,7 +6,7 @@ The solution for the [sample project is on GitHub in the _solution_ branch](http
 
 ## Additional resources
 
-Here are several resources where you can learn more about the Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
+Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
 
 - [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
 - Learn how to [Refactor Node.js and Express APIs to Serverless APIs with Azure Functions](https://docs.microsoft.com/learn/modules/shift-nodejs-express-apis-serverless/)
