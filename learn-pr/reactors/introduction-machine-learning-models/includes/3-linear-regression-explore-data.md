@@ -1,11 +1,3 @@
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> Should we show the plot output message blocks that are shaded pink?
->    If so, how should these blocks be formatted -- as code blocks?
-> No - We shouldn't
-
-
 We'll begin by importing our usual libraries and using our `%matplotlib` inline magic command:
 
 ```python
