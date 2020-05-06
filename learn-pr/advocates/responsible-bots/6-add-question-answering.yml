@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.responsible-bots.5-add-question-answering
+uid: learn.advocates.responsible-bots.6-add-question-answering
 title: Implement question answering and personality
 metadata:
   title: Implement question answering and personality
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-advocates
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-add-question-answering.md)]
+  [!include[](includes/6-add-question-answering.md)]

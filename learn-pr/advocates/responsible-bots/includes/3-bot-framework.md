@@ -1,5 +1,3 @@
-## Microsoft Bot Framework and Microsoft Bot Service
-
 Before we start building out **GeoFriend** bot, let's learn the main principles of bot operation.
 
 Any conversational experience involves a user sending some messages to a bot, and the bot responding to the the user. Those conversations can happen in different **channels**: in a chat bot on a web site, or in some messenger application such as Facebook Messenger or Telegram. Those **messaging platforms** have their own principles and APIs for creating chat bots, thus developing a bot for Facebook would require different skills than creating a web chat.
@@ -10,7 +8,7 @@ To connect this function to actual channels, we use **[Azure Bot Service][BotSer
 
 Another important role of Bot Framework is to provide some useful developer abstractions to structure the logic of the bot. Complex conversations are difficult to program as simple request-response pattern. Bot Framework provides abstractions to define **dialogs**, **form filling**, etc. and allows us to compose complex conversational behavior from more simple building blocks.
 
-![Bot Framework Diagram](../media/BotFrameworkDiagram.png)
+![Bot Framework Diagram](../media/bot-framework-diagram.png)
 
 ## Cognitive Services
 
@@ -24,13 +22,13 @@ Cognitive Services are very often used with bots, that's why they occupy the lar
 
 Let's start creating our **GeoFriend** Assistant chat bot. The easiest way to start is to create a new Azure Bot Service:
 
-1. Go to [Azure Portal][AzPortal] and log in with your Azure Account.
+1. Go to [Azure Portal][azure-portal-] and log in with your Azure Account.
 
-   ![Azure Portal](../media/AzPortal.png)
+   ![Azure Portal](../media/azure-portal.png)
 
 1. Click on "Create a Resource" button (large +), type "Bot" in the search box, and select **Web App Bot**.
 
-   ![Create Bot](../media/AzPortalCreate.png)
+   ![Create Bot](../media/azure-portal-create.png)
 
    After that, on a new page, click **Create** button.
 
@@ -42,11 +40,11 @@ Let's start creating our **GeoFriend** Assistant chat bot. The easiest way to st
    - Change **Pricing Tier** to **F0**, which is the free tier.
    - Leave **App Name** at its default value.
 
-   ![Bot Parameters](../media/AzPortalBotForm.png)
+   ![Bot Parameters](../media/azure-portal-bot-form.png)
 
 1. Click on the **Bot Template** field. You will be taken to a pane with several template options:
 
-   ![Select Template](../media/AzPortalSelectTemplate.png)
+   ![Select Template](../media/azure-portal-select-template.png)
 
    Here you can select desired programming language (**C#** or **Node.js**, we will go with C#) and one of the templates that provides some pre-defined functionality:
 
@@ -58,9 +56,9 @@ Let's start creating our **GeoFriend** Assistant chat bot. The easiest way to st
 
 1. Now create **App Service Plan**. Click on "App Service Plan/Location", then **Create New**, and type in a suitable name for App Service Plan. This plan determines how much of compute resources would be allocated to your bot.
 
-   ![App Service Plan](../media/AzPortalAppServicePlan.png)
-
-   >[!TIP]
+   ![App Service Plan](../media/azure-portal-app-service-plan.png)
+   
+   > [!TIP]
    >By default, the **S1** plan is used, which is not free. If you want your bot to be hosted on another service plan (for example, on free Azure Web Site), you would need to adjust the service plan afterwards separately, as described [here][AdjustServicePlan].
 
 1. Finally, fine tune **Application Insights** settings. It is useful for monitoring the behavior of your bot. For the sake of this course you can turn application insights off, or specify the Azure datacenter location closest to you.
@@ -72,7 +70,7 @@ It will take some time for all bot resources to be created. Once you see the not
 ## Bot Page on the Azure Portal
 
 From the Azure Portal start page, click **Resource Groups**, and select the group you have specified on step 3.
-![Bot Resource Group](../media/AzPortalBotResourceGroup.png)
+![Bot Resource Group](../media/azure-portal-bot-resource-group.png)
 
 There are two important components here:
 
@@ -83,7 +81,7 @@ Two other resources are the bot app service plan (we should adjust it if we want
 
 Let's click on the first **GeoFriend** link. We are taken to the Bot page on the portal:
 
-![Azure Portal Bot Page](../media/AzPortalBotPage.png)
+![Azure Portal Bot Page](../media/azure-portal-bot-page.png)
 
 This page is the main starting point for configuring the bot. On the first **overview** tab you can see the typical sequence of steps that we need to do in order to complete the bot project. It all starts with the idea or a **Plan**, followed by the **Build** stage, at which we are now. We will discuss how to build the bot in the next unit. 
 
@@ -91,7 +89,7 @@ This page is the main starting point for configuring the bot. On the first **ove
 
 Right from this page, we can try our newly created bot in action. Click on **Test in Web Chat** tab on the left pane, and you will see a chat box that you can use to converse with the bot.
 
-![Web Chat](../media/AzPortalWebChat.png)
+![Web Chat](../media/azure-portal-web-chat.png)
 
 Try typing in some text, and see how the bot responds.
 
@@ -100,7 +98,7 @@ Let's move on to the next unit to see how we can alter the bot's behavior.
 [BotFW]: https://dev.botframework.com/
 [BotService]: https://azure.microsoft.com/services/bot-service/
 [CoServ]: https://microsoft.com/cognitive
-[AzPortal]: https://portal.azure.com
+[azure-portal-]: https://portal.azure.com
 [AdjustServicePlan]: https://docs.microsoft.com/azure/app-service/app-service-plan-manage
 [LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/
 [QnAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/

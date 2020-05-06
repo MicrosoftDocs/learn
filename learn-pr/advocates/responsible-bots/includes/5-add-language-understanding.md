@@ -1,5 +1,3 @@
-## Adding Language Understanding
-
 We have already developed one of the features of our bot - to tell capital cities from country names. However, now we need to make the bot more "human" by teaching it how to understand simple natural language. This is done using a cognitive service called **[LUIS][LUIS]** (short for *Language Understanding Intelligent Service*).
 
 LUIS does two important natural language understanding tasks:
@@ -38,47 +36,47 @@ To train the LUIS Model, we should give it a number of sample phrases for each i
 |`get_population` | What is the population of *Moscow*? |
 |`get_population` | How many people live in *Seoul*? |
 
-To set up LUIS service, let's go to the [LUIS Portal](http://luis.ai). 
+To set up LUIS service, let's go to the [LUIS Portal](https://luis.ai).
 
->[!NOTE]
-> In this course, we are using preview version of LUIS portal located at http://preview.luis.ai. 
+> [!NOTE]
+> In this course, we are using preview version of LUIS portal located at [https://preview.luis.ai](https://preview.luis.ai).
 
 At first sign in, you will be asked to specify your country and accept terms of use:
 
-![LUIS](../media/LuisTerms.png)
+![LUIS](../media/luis-terms.png)
 
 After that, you need to **link your Azure account**. Specify **Continue using an Azure Resource**, and then **Create New Authoring Resource** button:
 
-![LUIS Link Azure Account](../media/LuisLinkAcct.png)
+![LUIS Link Azure Account](../media/luis-link-account.png)
 
 In the dialog box, select you subscription, fill in suitable name for the service and select resource group you have previously used for the bot:
 
-![LUIS Create Resource](../media/LuisCreateRecognizerDialog.png)
+![LUIS Create Resource](../media/luis-create-recognizer-dialog.png)
 
 Once this is done, you are taken to LUIS portal again, where you can create new application:
 
-![LUIS Create App](../media/LuisCreateApp.png)
+![LUIS Create App](../media/luis-create-app.png)
 
 Click on **Create a LUIS App Now**, and you are taken to the main LUIS Portal:
 
-![LUIS Portal](../media/LuisNewApp.png)
+![LUIS Portal](../media/luis-new-app.png)
 
 Make sure your **subscription** and **Authoring resource** are selected. If you do not see your authoring resource, check that you are using portal for the correct region.
 
->[!NOTE]
->LUIS supports three locations for authoring: US, Europe and Asia. There are different portals for each location, and authoring resources from different region would not be visible.
+> [!NOTE]
+> LUIS supports three locations for authoring: US, Europe and Asia. There are different portals for each location, and authoring resources from different region would not be visible.
 
->[!TIP]
->In case your LUIS training resource is not visible, you can go to Azure portal to make sure it has been created. You can also create it manually from the Azure Portal.
+> [!TIP]
+> In case your LUIS training resource is not visible, you can go to Azure portal to make sure it has been created. You can also create it manually from the Azure Portal.
 
 Select **New app for conversation**, and specify an application name and description. I will use `GeoFriend` as an application name.
 
->[!NOTE]
->If you do not want to train the model "by hand" by providing sample phrases, you can train it from the saved data file. In this case, you should chose to create the model from file, and use [this file][LUISCodeFile] from the GitHub repository.
+> [!NOTE]
+> If you do not want to train the model "by hand" by providing sample phrases, you can train it from the saved data file. In this case, you should chose to create the model from file, and use [this file][LUISCodeFile] from the GitHub repository.
 
 After skipping through some information screens, you will end up at the main application dashboard:
 
-![LUIS App Dashboard](../media/LuisMain.png)
+![LUIS App Dashboard](../media/luis-main.png)
 
 First thing we need to do is to add pre-build entity for geographical locations:
 
@@ -87,7 +85,7 @@ First thing we need to do is to add pre-build entity for geographical locations:
 - From the list, select **Geography V2**
 You should see the entity added in the screen below:
 
-![LUIS Entities](../media/LuisEntityGeography.png)
+![LUIS Entities](../media/luis-entity-geography.png)
 
 Now Let's create our first intent: `get_capital`:
 
@@ -95,7 +93,7 @@ Now Let's create our first intent: `get_capital`:
 - Select **Create** and type in intent's name: `get_capital`
 - You will be offered to type in a sample utterance. Type something like *What is the capital of United States?*
 
-![LUIS Intents](../media/LuisIntent.png)
+![LUIS Intents](../media/luis-intent.png)
 
 You can see that LUIS automatically detects geographical entities!
 
@@ -103,7 +101,7 @@ Using the same procedure, enter a few more sentences for `get_capital` intent, a
 
 One you have done creating intents, click on the **Train** button to train the model. After training, use the **Test** button to see how well the model performs on some input sentences:
 
-![LUIS Test Results](../media/LuisTest.png)
+![LUIS Test Results](../media/luis-test.png)
 
 If you see some phrases classified incorrectly - you can click on **Inspect** to get the details and add the utterances to the training data to improve the model.
 
@@ -113,14 +111,14 @@ In this example, you can see that each utterance has some associated probability
 
 To use the LUIS model from our bot, first we need to publish the model. Click on **Publish** button, select **Production Slot**, and the press **Done**. You will get the screen with prediction endpoint URL and key:
 
-![LUIS Prediction](../media/LuisPublishModel.png)
+![LUIS Prediction](../media/luis-publish-model.png)
 
->[!TIP]
+> [!TIP]
 > Right now the model is deployed on some starter resources, and to deploy it in production you should **Add prediction resource**. Once you do that, you will have another set of prediction keys / endpoint URL that you can freely control through your subscription.
 
 Now we need to add LUIS model to our bot code. Open our Visual Studio project we have been working on in last unit.
 
->[!TIP]
+> [!TIP]
 >The code that I describe below is available [here on GitHub][CodeLUIS]. If you decide the take code from there, you would still need to make changes to the `appsetting.json` file to provide your keys for the LUIS service.
 
 First thing you need to do is to add `Microsoft.Bot.Builder.AI.Luis` nuget package:
@@ -130,7 +128,7 @@ First thing you need to do is to add `Microsoft.Bot.Builder.AI.Luis` nuget packa
 - Switch to **Browse** tab
 - Type `Luis`, chose `Microsoft.Bot.Builder.AI.Luis` and click **Install**
 
-![Add Nuget Package](../media/LuisAddNuget.png)
+![Add Nuget Package](../media/luis-add-nuget.png)
 
 To add the LUIS Recognized to our bot, we need to add corresponding code to `ConfigureServices` function in `Startup.cs`. Open the file, and insert the following code after the first line of `ConfigureServices` function:
 
@@ -142,7 +140,7 @@ To add the LUIS Recognized to our bot, we need to add corresponding code to `Con
     services.AddSingleton(new LuisRecognizer(luisApplication));
 ```
 
->[!NOTE]
+> [!NOTE]
 > The code above requires some `using` statement to make `LuisRecognizer` and `LuisApplication` classes visible. The easiest way to figure out the correct `using` statement is to click on the bulb icon next to the undefined class, and let Visual Studio automatically fix it. In this case, it will add the following line to the file: `using Microsoft.Bot.Builder.AI.Luis;`
 
 This code takes the LUIS service parameters from config file, so you also need to add the following to the `appsettings.json`:
@@ -251,18 +249,18 @@ The logic of this function is the following:
 
 We also need to add some more functions to `CountryData` class to figure out the population of a city from city name and country name from it's capital.
 
->[!TIP]
+> [!TIP]
 > You can find the complete code for this stage of bot development [in this repository][CodeLuis]
 
 Once we implement those changes, we can start the bot and have a little conversation:
 
-![Conversation with the bot](../media/LuisConversation.png)
+![Conversation with the bot](../media/luis-conversation.png)
 
 ## Conclusion
 
 Now the bot seems to be much more intelligent, but it ignores some of the responsible AI principles, such as making goal of the bot clear. In the next unit, we will implement some of the responsible functionality, as well as terms dictionary.
 
 [LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/
-[LUISPortal]: http://preview.luis.ai
+[LUISPortal]: https://preview.luis.ai
 [CodeLuis]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t2-luisrec
 [LUISCodeFile]: https://github.com/MicrosoftDocs/learn-responsible-bots/blob/master/models/GeoFriend.json
