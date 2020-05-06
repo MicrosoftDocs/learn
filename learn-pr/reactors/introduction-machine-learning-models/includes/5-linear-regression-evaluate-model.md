@@ -1,21 +1,5 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> - Should we show the plot output message blocks that are shaded pink?
->    If so, how should these blocks be formatted -- as code blocks?
->
-> - Suggest moving the **Takeaway** at the end of the unit, to the list of Learning objectives
->    in the Introduction unit or to the abstract summary in the module index.yml.
->
-
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Try it yourself block needs Input and Output code. Search on TBD.
->
-
 Now, a moment of truth: let's see how our model does making predictions based on the test data:
 
 ```python
@@ -126,22 +110,19 @@ The linear nature of our predicted prices is clear enough, but there are so many
   Here's the input:
 
   ```python
-  TBD
+  plt.scatter(y_test,predictions, color='blue', alpha=0.2)
   ```
 
   The output is:
 
   ```Output
-  TBD
+  <matplotlib.collections.PathCollection at 0x3bd80880>
   ```
+
+  :::image type="content" alt-text="A scatter graph showing the dist plot output for the prediction with an alpha set to 20%." source="../media/output-scatter-plot-alpha-1.png" loc-scope="azure":::
   
 </details>
 
 <br /><br />
 
 ***
-
-> [!div class="alert is-tip"]
-> ### Takeaway
->
-> In this unit, you performed prediction using linear regression by exploring your data, then fitting your model, and finally evaluating your model’s performance.

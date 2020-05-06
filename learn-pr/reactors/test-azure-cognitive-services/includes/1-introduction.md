@@ -55,4 +55,4 @@ In this module, you will:
 
 ## Prerequisites
 
-- TBD or None.
+- None.

@@ -3,13 +3,8 @@
 > 
 > Should we show the plot output message blocks that are shaded pink?
 >    If so, how should these blocks be formatted -- as code blocks?
->
+> No - We shouldn't
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Try it yourself block needs Input and Output code, and Hint text. Search on TBD.
->
 
 We'll begin by importing our usual libraries and using our `%matplotlib` inline magic command:
 
@@ -19,12 +14,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline 
 import seaborn as sns
-```
-
-The `%matplotlib` command produces an message while building the font cache:
-
-```Output
-/home/nbuser/anaconda3_420/lib/python3.5/site-packages/matplotlib/font_manager.py:281: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment. 'Matplotlib is building the font cache using fc-list.'
 ```
 
 And now for our data. In this case, we’ll use a newer housing dataset than the Boston Housing Dataset we used in the last section (with this one storing data on individual houses across the United States).
@@ -61,18 +50,31 @@ Do you remember the `DataFrames` method for looking at overall information about
 
 <details> 
 
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
+  <summary>Hint<i>(expand to reveal)</i></summary>
 
   Here's the input:
 
   ```python
-  TBD
+  df.info()
   ```
 
   The output is:
 
   ```Output
-  TBD
+  <class 'pandas.core.frame.DataFrame'>
+  RangeIndex: 5000 entries, 0 to 4999
+  Data columns (total 7 columns):
+   #   Column                        Non-Null Count  Dtype  
+  ---  ------                        --------------  -----  
+   0   Avg. Area Income              5000 non-null   float64
+   1   Avg. Area House Age           5000 non-null   float64
+   2   Avg. Area Number of Rooms     5000 non-null   float64
+   3   Avg. Area Number of Bedrooms  5000 non-null   float64
+   4   Area Population               5000 non-null   float64
+   5   Price                         5000 non-null   float64
+   6   Address                       5000 non-null   object 
+  dtypes: float64(6), object(1)
+  memory usage: 254.0+ KB
   ```
   
 </details>

@@ -1,18 +1,3 @@
-<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
-
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> - I added an introduction for section "Classification report"
-> - Suggest moving the **Takeaway** at the end of the unit, to the list of Learning objectives
->    in the Introduction unit or to the abstract summary in the module index.yml.
-
-> [!Note]
-> **Sarah: Action items**
->
-> - Several output code blocks need content. Search on TBD.
->
-
 In contrast to linear regression, logistic regression does not produce an $R^2$ score by which we can assess the accuracy of our model. In order to evaluate that, we will use a classification report, a confusion matrix, and the accuracy score.
 
 ## Classification report
@@ -21,12 +6,6 @@ The classification reports the proportions of both survivors and non-survivors.
 
 ```python
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
-```
-
-The output is: 
-
-```Output
-TBD
 ```
 
 The classification reports the proportions with four scores:
@@ -103,8 +82,3 @@ The output is:
 ```
 
 Not bad for an off-the-shelf model with no tuning!
-
-> [!div class="alert is-tip"]
-> ### Takeaway
->
-> In this subsection, you performed classification using logistic regression by removing extraneous variables, checking for multicollinearity, handling missing values, and fitting and evaluating your model.

@@ -3,17 +3,9 @@
 > [!Note]
 > **Sarah: Conversion feedback**
 > 
-> - I changed all instances of "Sex" or "sex" to "Gender" or "gender." The former term is considered "racy" and should be avoided.
+> - I changed all instances of "Sex" or "sex" to "Gender" or "gender." The former term is considered "racy" and should be avoided. - While I agree the data set has 'sex' as the column. I can see about changing the data thought to account for this. I agree with your change.
 > - I added some introduction statements for input and output cells.
 > - Suggest moving the **Learning goal** to the list of Learning objectives in the Introduction unit or to the abstract summary in the module index.yml.
->
-
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Try it yourself block needs Input and Output code, and Hint text. Search on TBD.
-> - Missing some output cell content. Search on TBD.
-> - Need some introduction content from you. Search on Sarah.
 >
 
 > [!div class="alert is-tip"]
@@ -117,12 +109,6 @@ The name of individual passengers and their ticket numbers will clearly do nothi
 df.drop(['Name','Ticket'],axis=1,inplace=True)
 ```
 
-The output is:
-
-```Output
-TBD
-```
-
 There are additional variables that will not add classifying power to our model, but to find them we will need to look for correlation between variables.
 
 ## Check for multicollinearity
@@ -151,20 +137,29 @@ Try running `sns.pairplot` twice more on some other combinations of columns and 
 
 <details> 
 
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
   Here's the input:
-
-  ```python
-  TBD
+  ```Python
+  sns.pairplot(df[['Survived','Age']], dropna=True)
   ```
 
   The output is:
-
   ```Output
-  TBD
+  <seaborn.axisgrid.PairGrid at 0x4e7f6d0>
   ```
+  :::image type="content" alt-text="A graph showing the pair plot output for data in the Survived column and the Fare column." source="../media/output-pair-plot-3.png" loc-scope="azure":::
   
+  Or, you could do this input:
+  ```Python
+  sns.pairplot(df[['Survived','Pclass']], dropna=True)
+  ```
+
+  The output is:
+  ```Output
+  <seaborn.axisgrid.PairGrid at 0x3c1b3928>
+  ```
+  :::image type="content" alt-text="A graph showing the pair plot output for data in the Survived column and the Fare column." source="../media/output-pair-plot-4.png" loc-scope="azure":::
 </details>
 
 <br /><br />
@@ -271,30 +266,6 @@ Here's the `groupby` output for the **Age** data:
 ```
 
 Survivors appear to be slightly younger on average with higher-cost fare.
-
-<!-- Sarah: Need introduction statement for this input code. -->
-
-```python
-df.head()
-```
-
-Here's the output:
-
-```Output
-----------------------------------------------------------------------------------------------------
-|   | PassengerId | Survived | Pclass | Gender | Age  | SibSp | Parch | Fare    | Cabin | Embarked | 
-----------------------------------------------------------------------------------------------------
-| 0	|      1      |    0     |    3   | male   | 22.0 |   1   |   0   | 7.2500  |  NaN  |     S    |
-----------------------------------------------------------------------------------------------------
-| 1	|      2      |    1     |    1   | female | 38.0 |   1   |   0   | 71.2833 |  C85  |     C    |
-----------------------------------------------------------------------------------------------------
-| 2	|      3      |    1     |    3   | female | 26.0 |   0   |   0   | 7.9250  |  NaN  |     S    |
-----------------------------------------------------------------------------------------------------
-| 3	|      4      |    1     |    1   | female | 35.0 |   1   |   0   | 53.1000 |  C123 |     S    |
-----------------------------------------------------------------------------------------------------
-| 4	|      5      |    0     |    3   | male   | 35.0 |   0   |   0   | 8.0500  |  NaN  |     S    |
-----------------------------------------------------------------------------------------------------
-```
 
 Value counts can also help us get a sense of the data before us, such as numbers for siblings and spouses on the _Titanic_, in addition to the gender split of passengers:
 

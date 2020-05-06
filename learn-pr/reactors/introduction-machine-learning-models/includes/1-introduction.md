@@ -21,8 +21,11 @@ As you get deeper into data science, it might seem like there are a bewildering 
 
 In this module, you will:
 
-- TBD
-- TBD
+- Fit linear regression models 
+- Interpret the output of linear regression models
+- Evaluate linear regression models
+- Perform classification using logistic regression by removing extraneous variables, checking for multicollinearity, handling missing values, and fitting and evaluating your model
+- Fit decision-tree models and analyze output
 
 ## Prerequisites
 
