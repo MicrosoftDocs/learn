@@ -29,4 +29,4 @@ azureSandbox: true
 durationInMinutes: 5
 
 content: |
-  [!include[](includes/14-deploy-with-github-actions)]
+  [!include[](includes/14-deploy-with-github-actions.md)]
