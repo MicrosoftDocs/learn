@@ -1,6 +1,4 @@
-Whether your organization is planning to build a new application on Azure, or you're looking to move an entire data center to the cloud, estimating costs is a key part of your planning process to ensure a successful project. For example: how do you know which services to select, or which size to choose? Do you provision virtual machines for your workload, or do you take advantage of higher-level services that can reduce operational costs?
-
-<!-- TODO: In "which size to choose," to what object are you referring? A service? A VM? -->
+Whether your organization is planning to build a new application on Azure, or you're looking to move an entire data center to the cloud, estimating costs is a key part of your planning process to ensure a successful project. For example, how do you know which services to select, or which service tier or VM size to choose? Do you provision virtual machines for your workload, or do you take advantage of higher-level services that can reduce operational costs?
 
 Proper planning is incredibly important to any cloud project. Let's take a look at what you need to consider.
 
@@ -32,13 +30,9 @@ As part of your cost estimation, it's also important to understand the different
 
 - Enterprise agreements enable organizations to take advantage of discounts through up-front commitments. These agreements enable organizations to centralize their Azure costs and billing, and they can include other Microsoft services such as Office 365.
 
-There are additional billing models, but all of them will provide you access to the full suite of Azure services with the flexibility to purchase only what you need, when you need it.
+There are additional billing models, each giving you access to the full suite of Azure services with the flexibility to purchase only what you need, when you need it.
 
-<!-- TODO: I'm not sure if the better conjunction should be "but" or "and" in the above sentence. -->
-
-No architecture is static, so you'll want your estimates to include any investments that you may be planning to make in the future. In the long run, taking the extra time to plan effectively for your application's future will give you better visibility into the long-term costs for your project, even if your costs may shift over time. Often the additional investment can reduce costs, such as moving from virtual machines to app services, reducing operational costs.
-
-<!-- TODO: I'm not sure what you mean by 'investment' in the excerpt "Often times the additional investment." Do you mean an investment in planning? Or a financial investment? I think that last sentence needs to be rewritten, but I'm not sure enough of what you're trying to say to hazard a guess. -->
+No architecture is static, so you'll want your estimates to include any investments that you may be planning to make in the future. In the long run, taking the extra time to plan effectively for your application's future will give you better visibility into the long-term costs for your project, even if your costs may shift over time. Evolving your architecture can reduce resources costs, such as moving from virtual machines to app services, and can reduce operational costs by requiring less downtime for maintenance.
 
 ## Create organization for cost-awareness
 
