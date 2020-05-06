@@ -78,14 +78,14 @@ HTML("<table><tr><th>Text</th><th>Detected languages(scores)</th></tr>{0}</table
 Here's the output:
 
 ```Output
-| Text | Detected languages(scores) |
-|------|----------------------------|
-| This is a document written in English. | English(1.0) |
-| Este es un documento escrito en Español. | Spanish(1.0) |
-| 这是一个用中文写的文件 | Chinese_Simplified(1.0) |
-| Ez egy magyar nyelvű dokumentum. | Hungarian(1.0) |
-| Dette er et dokument skrevet på dansk. | Norwegian(1.0) |
-| これは日本語で書かれた文書です。 | Japanese(1.0) |
+| Text                                     | Detected languages(scores) |
+|------------------------------------------|----------------------------|
+| This is a document written in English.   | English(1.0)               |
+| Este es un documento escrito en Español. | Spanish(1.0)               |
+| 这是一个用中文写的文件                     | Chinese_Simplified(1.0)    |
+| Ez egy magyar nyelvű dokumentum.         | Hungarian(1.0)             |
+| Dette er et dokument skrevet på dansk.   | Norwegian(1.0)             |
+| これは日本語で書かれた文書です。            | Japanese(1.0)              |
 ```
 
 The service did a pretty good job of identifying the languages. It did confidently identify the Danish phrase as being Norwegian, but in fairness, even linguists argue as to whether Danish and Norwegian constitute distinct languages or are dialects of the same language. (Note that Danes and Norwegians have no doubts on the subject.)
