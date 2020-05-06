@@ -30,8 +30,6 @@ So far we have discussed smooth and rugged objective functions, but what if ther
 
 ![A plot of an optimization landscape that shows points scattered randomly](../media/plot_random.png)
 
-**TODO:** Not required, but is there a basic well-known problem that would have this topology?
-
 In these cases, where the solutions are completely random, then no algorithm can improve on a brute force search.
 
 ## Summary
