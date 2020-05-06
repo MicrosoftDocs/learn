@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-ml-model-with-azure-stream-analytics.4-azure-sql-database
+title: Exercise - Deploy an Azure SQL Database
+metadata:
+  title: Exercise - Deploy an Azure SQL Database
+  description: Deploy an Azure SQL Database to record where polar bears are being spotted
+  ms.date: 04/28/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-azure-sql-database.md)]
