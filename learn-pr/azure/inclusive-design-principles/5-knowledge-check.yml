@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.inclusive-design-principles.5-knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Check your knowledge
+  ms.date: 04/16/2020
+  author: asajohnson
+  ms.author: asajohnson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following best describes inclusive design? Select one answer.
+    choices:
+    - content: Focused planning and development of solutions to target a narrow audience.
+      isCorrect: false
+      explanation: No. Inclusive design is concerned with delivering an experience that has mainstream appeal by creating solutions in an all-embracing manner.
+    - content: Delivering an experience that has mainstream appeal by creating solutions in an all-embracing manner.
+      isCorrect: true
+      explanation: That is the correct answer
+    - content: Inclusive design is the same as accessibility plus user experience work.
+      isCorrect: false
+      explanation: No. Inclusive design is concerned with delivering an experience that has mainstream appeal by creating solutions in an all-embracing manner.
+    - content: Making one thing for all people.
+      isCorrect: false
+      explanation: No. Inclusive design is concerned with delivering an experience that has mainstream appeal by creating solutions in an all-embracing manner.
+  - content: Which of the following describes the principles for creating and implementing inclusive design? Select one answer.
+    choices:
+    - content: Recognizing exclusion, solve one and extend for many, and learn from diversity.
+      isCorrect: true
+      explanation: That is the correct answer.
+    - content: Give control, be consistent, and add value.
+      isCorrect: false
+      explanation: No. The principles are "Recognizing exclusion, solve one and extend for many, and learn from diversity."
+    - content: Provide a comparable experience, recognize personal bias, and identify challenges.
+      isCorrect: false
+      explanation: No. The principles are "Recognizing exclusion, solve one and extend for many, and learn from diversity."
+    - content: Understand how users will react, consider future needs, and consider separation of concerns.
+      isCorrect: false
+      explanation: No. The principles are "Recognizing exclusion, solve one and extend for many, and learn from diversity."
+  - content: Which of the following is not a human diversity factor to be considered when implementing inclusive design? Select one answer.
+    choices:  
+    - content: Perception
+      isCorrect: false
+      explanation: No. The correct answer is Agility 
+    - content: Agility
+      isCorrect: true
+      explanation: That is the correct answer
+    - content: Cognition
+      isCorrect: false
+      explanation: No. The correct answer is Agility
+    - content: Hearing
+      isCorrect: false
+      explanation: No. The correct answer is Agility
+    - content: Vision
+      isCorrect: false
+      explanation: No. The correct answer is Agility
+    - content: Sensation
+      isCorrect: false
+      explanation: No. The correct answer is Agility
+
