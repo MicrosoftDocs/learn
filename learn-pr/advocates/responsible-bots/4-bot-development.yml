@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.responsible-bots.3-bot-development
-title: Start bot development
+uid: learn.advocates.responsible-bots.4-bot-development
+title: Bot development
 metadata:
-  title: Start bot development
+  title: Bot development
   description: In this unit, we'll learn how to start developing a bot by using Visual Studio Online or Visual Studio 2019.
   ms.date: 05/19/2020
   author: shwars
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-advocates
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-bot-development.md)]
+  [!include[](includes/4-bot-development.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.responsible-bots.6-more-responsible-ui
+uid: learn.advocates.responsible-bots.7-more-responsible-ui
 title: Implement a more responsible UI
 metadata:
   title: Implement a more responsible UI
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-advocates
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-more-responsible-ui.md)]
+  [!include[](includes/7-more-responsible-ui.md)]

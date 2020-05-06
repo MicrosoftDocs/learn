@@ -1,16 +1,14 @@
-## Implementing Question Answering and Personality
-
 Now out bot can handle a few specific requests, but it would also be nice to give it the ability to answer general questions on geography terminology, eg. act like a simple encyclopedia. We definitely could create this functionality using LUIS by creating separate intents, but there is an easier way. There is a special cognitive service to handle this type of scenarios called **[QnA Maker][QAMaker]**.
 
-## Training Q&A Maker Model
+## Training a Q&A Maker model
 
-Similar to LUIS, when adding QnA Maker to our bot, the first thing we need to do is to train QnA Maker on our specific data. To start, go to http://qnamaker.ai and sign in with your Microsoft Account:
+Similar to LUIS, when adding QnA Maker to our bot, the first thing we need to do is to train QnA Maker on our specific data. To start, go to [https://qnamaker.ai](https://qnamaker.ai) and sign in with your Microsoft Account:
 
-![QnA Maker](../media/QnAMakerCreate.png)
+![QnA Maker](../media/qna-maker-create.png)
 
 Next step is to create a new knowledge base by clicking on the link at the top:
 
-![QnA Maker Create KB](../media/QnAMakerCreateKB.png)
+![QnA Maker Create KB](../media/qna-maker-create-knowledge-base.png)
 
 When you click **Create QnA Service** you are taken (in a separate browser tab) to Azure Portal, where you need to fill in the parameters for newly created service:
 
@@ -22,7 +20,7 @@ When you click **Create QnA Service** you are taken (in a separate browser tab) 
 - Chose some reasonable web app name (I will again use `myquestionservice`)
 - Disable application insights
 
-![QnA Maker Properties](../media/QnAMakerCreateService.png)  
+![QnA Maker Properties](../media/qna-maker-create-service.png)  
 
 Go back to the browser tab with QnA Maker, and complete **Step 2** of setup:
 
@@ -30,30 +28,30 @@ Go back to the browser tab with QnA Maker, and complete **Step 2** of setup:
 - Chose correct subscription, tenant and service name
 - Select the language to be used for the information extraction among those available in the dropdown boxes. Go ahead and select **English**
 
-![QnAMaker Step 2](../media/QnAMakerCreate2.png)
+![QnAMaker Step 2](../media/qna-maker-create-2.png)
 
->[!NOTE]
->Some languages available in the dropdown will support **chit-chat** functionality, meaning that QnA Maker will also automatically support general conversation functionality. For other languages, only information extraction and basic QnA functionality will be available. For the purpose of this module, let's select English as the most supported language.
+> [!NOTE]
+> Some languages available in the dropdown will support **chit-chat** functionality, meaning that QnA Maker will also automatically support general conversation functionality. For other languages, only information extraction and basic QnA functionality will be available. For the purpose of this module, let's select English as the most supported language.
 
 In **Step 3**, provide a name for your database. I will use `qnadb`.
 
-In **Step 4**, you are asked to provide data sources. If you have a FAQ availabe, either in the form of an electronic document or a page on the web, you can enter the information here and have it automatically indexed by the service. In our case, we will prefer to skip this step and provide questions and answers later on manually through web interface.
+In **Step 4**, you are asked to provide data sources. If you have a FAQ available, either in the form of an electronic document or a page on the web, you can enter the information here and have it automatically indexed by the service. In our case, we will prefer to skip this step and provide questions and answers later on manually through web interface.
 
-You can also enable **chit-chat** functionality to your service. It will automatically support some level of general conversation, such as greeting the user, saying goodbye's, etc. 
+You can also enable **chit-chat** functionality to your service. It will automatically support some level of general conversation, such as greeting the user, saying goodbye's, etc.
 
->[!NOTE]
->General conversation capability plays an important role in Responsible Conversational UI, because it helps to build trust with the user, as well as maintain some degree of emotional connection.
+> [!NOTE]
+> General conversation capability plays an important role in Responsible Conversational UI, because it helps to build trust with the user, as well as maintain some degree of emotional connection.
 
 We can select among different **personalities** for our general chat. We will go ahead and select **enthusiastic**, because that corresponds well to our goal and target audience.
 
 The way chit-chat works in QnA Maker is by pre-populating our knowledge base with a set of potential common questions and possible answers. Thus, chosen personality would affect the initial set of phrases, and we would be able to change that later on according to our liking.
 
->[!NOTE]
->Choosing bot's personality is an important step, because we need to keep in mind potential diversity of the target audience. In QnA Maker, it is not easy to change personality "on the fly" during conversation. If you anticipate that your bot will be talking to different audiences, and different personalities are required, I recommend having a look at [Project Personality Chat][ProjectPersonalityChat].
+> [!NOTE]
+> Choosing bot's personality is an important step, because we need to keep in mind potential diversity of the target audience. In QnA Maker, it is not easy to change personality "on the fly" during conversation. If you anticipate that your bot will be talking to different audiences, and different personalities are required, I recommend having a look at [Project Personality Chat][ProjectPersonalityChat].
 
 Once we finish filling all the fields and click **Create** button, we will be taken to the knowledge base editing page:
 
-![QnA Maker KB Editor](../media/QnAMakerKB.png)
+![QnA Maker KB Editor](../media/qna-maker-knowledge-base.png)
 
 Here you can see chit-chat knowledgebase being pre-populated as `qna_chitchat_Enthusiastic.tsv` file, and you have the interface to edit all questions and answers.
 
@@ -67,17 +65,17 @@ Let's add questions about definition of terms *country* and *capital*. You can a
 
 Once the data has been added, click **Save and train**. After that, you can click **Test** to see your model in action. You will see a chat dialog, and can enjoy the conversation right from the browser:
 
-![QnA Maker Test](../media/QnAMakerTest.png)
+![QnA Maker Test](../media/qna-maker-test.png)
 
 If you click on **Inspect** link (highlighted in the picture above) you will see the detailed QnA Maker response to your query, including the probability of the selected answer, and you can also provide feedback, to further improve model accuracy.
 
 Once you are done putting the data and training the more, you can click **Publish** to have the model published in the cloud:
 
-![QnA Maker Publish](../media/QnAMakerPublish.png)
+![QnA Maker Publish](../media/qna-maker-publish.png)
 
 After publishing, you will get the final page with details on how to call the service, and a button to automatically **Create a Bot** that is tied up to the service.
 
-![QnA Maker Published Screen](../media/QnAMakerPublished.png)
+![QnA Maker Published Screen](../media/qna-maker-published.png)
 
 In fact, using QnA Maker is probably the easiest way to get a bot up and running in the cloud. Even a bot without sophisticated functionality can implement Responsible UI!
 
@@ -176,8 +174,8 @@ The logic here is quite clever, because we need to understand subtle differences
 
 In our code, we call both LUIS and QnA Maker, and select which service gives us the higher score. We then display corresponding result.
 
->[!TIP]
->If you have problems putting the code in the right place - you can check out the complete project code at this state [in this repository][CodeQnA]
+> [!TIP]
+> If you have problems putting the code in the right place - you can check out the complete project code at this state [in this repository][CodeQnA]
 
 At this point, you can run the project and test it in Bot Emulator.
 
