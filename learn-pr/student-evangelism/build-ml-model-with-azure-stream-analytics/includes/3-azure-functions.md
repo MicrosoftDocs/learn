@@ -154,7 +154,7 @@ Azure Functions can be written in the Azure portal or written externally using t
 
     > Rather than hard-code the Custom Vision Service URL and authentication key in the function's code, you are storing them in the Function App's application settings, where they are more secure.
 
-1. Return to the `BlobTrigger` function in the portal and click **Logs** at the bottom of the page to open the function's output log. 
+1. Return to the `BlobTrigger` function in the portal and click **Logs** at the bottom of the page to open the function's output log.
 
     ![Opening the function's output log](../media/open-output-log.png)
 
@@ -180,7 +180,7 @@ Next, you will run the simulated camera array that you created earlier. Then you
 
 1. Return to the project directory in a Command Prompt or terminal window. Then use the following command to run **run.js**:
 
-    ```
+    ```bash
     node run.js
     ```
 
@@ -192,4 +192,4 @@ Next, you will run the simulated camera array that you created earlier. Then you
 
 1. Finish up by returning to the Command Prompt or terminal window in which **run.js** is running and pressing **Ctrl+C** to stop it.
 
-Congratulations! You have built a system that transmits wildlife photos to blob storage and uses a custom AI model built with Azure's Custom Vision Service to determine which of the photos contains a polar bear. The next step is to make the output more visual, and that starts with an [Azure SQL Database](https://azure.microsoft.com/services/sql-database/).
+Congratulations! You have built a system that transmits wildlife photos to blob storage and uses a custom AI model built with Azure's Custom Vision Service to determine which of the photos contains a polar bear. The next step is to make the output more visual, and that starts with an Azure SQL Database.
