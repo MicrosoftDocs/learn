@@ -17,30 +17,30 @@ quiz:
     choices:
     - content: "You can bring your own containers."
       isCorrect: false
-      explanation: "You deploy and manage containerized applications easily with Serverless Kubernetes."
+      explanation: "You deploy and manage containerized applications with Serverless Kubernetes."
     - content: "You can automate your business process."
       isCorrect: false
       explanation: "You use a serverless engine to build automated workflows to integrate apps and data between cloud services and on-premises systems with Logic apps."
-    - content: "You can integrate services using triggers and bindings"
+    - content: "You can integrate services using triggers and bindings."
       isCorrect: true
-      explanation: "You can integrate Azure services into the function and use trigger to execute your code."
-  - content: "Suppose you're responsible for managing the reliability of speech data coming from different kinds of IoT devices, which are connected to IoT Hub. What is the reason of IoT Hub is an appropriate solution for this scenario?"
+      explanation: "You can incorporate Azure services into the function and use a trigger to execute your code."
+  - content: "Suppose you're responsible for managing the reliability of speech data coming from different kinds of IoT devices connected to IoT Hub. Why is IoT Hub appropriate for this scenario?"
     choices:
     - content: "IoT Hub provides per device identity to each device."
       isCorrect: true
-      explanation: "IoT Hub securely connects device to the IoT Hub by per-device authentication."
+      explanation: "IoT Hub securely connects the device to the IoT Hub by per-device authentication."
     - content: "IoT Hub tracks events like device creation, device failures and device connections."
       isCorrect: false
-      explanation: "IoT Hub maintains the health of your solution by tracking events."
+      explanation: "IoT Hub maintains the health of your solution by monitoring events. But this function cannot authenticate a device."
     - content: "IoT Hub is hosted in the cloud."
       isCorrect: false
-      explanation: "It doesn’t refer to secure connection."
-  - content: "Suppose that you’re responsible for implementing AI solution with IoT device as an event-based function. You want to explore the ability to interact with Cognitive Service. Which would be a better a solution to implement this scenario?"
+      explanation: "Cloud hosting does not impact authenticity in itself."
+  - content: "Suppose that you’re responsible for implementing AI solutions with IoT device as an event-based function. You want to explore the ability to interact with Cognitive Service. Which would be a better a solution to implement this scenario?"
     choices:
-    - content: "You can provide a binding that can be invoked by the trigger that will execute the functionality of Cognitive Service in the function."
+    - content: "You can configure Cognitive Service API key to trigger the function and execute your code."
       isCorrect: false
-      explanation: "The trigger invokes the function and provides the binding."
-    - content: "You can write a function that can be deployed locally, run the function by calling Cognitive service API."
+      explanation: "You use an API key to	access the Cognitive Service. It doesn’t trigger the function. "
+    - content: "You can write a function that can be deployed locally, then run the function by calling Cognitive service API."
       isCorrect: false
       explanation: "You can only deploy your function and access the Cognitive service in the cloud."
     - content: "You can write your code as an Azure function that is invoked by a trigger and call the Cognitive Service into the function."

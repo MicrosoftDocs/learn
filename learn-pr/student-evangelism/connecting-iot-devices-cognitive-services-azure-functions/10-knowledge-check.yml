@@ -21,10 +21,10 @@ quiz:
     - content: "A function code is the main content that executes and performs some jobs without any dependency on the server."
       isCorrect: true
       explanation: "A function code is written to perform one or multiple jobs in your code."
-    - content: "A function code is merely code, deployed in the local to perform a job."
+    - content: "A function code is merely code deployed in the local environment to perform a job."
       isCorrect: false
       explanation: "Function code is deployed in the cloud."
-  - content: "Suppose that you’re task with deploying a cognitive speech api into your function app. In what order would you perform the following steps to create a speech translation app?"
+  - content: "Suppose that you’re task with deploying a cognitive speech API into your function app. In what order would you perform the following steps to create a speech translation app?"
     choices:
     - content: " Trigger the function - speech recognition - removing speech disfluencies – translation – text-to-speech"
       isCorrect: true
@@ -35,14 +35,14 @@ quiz:
     - content: "Speech recognition - removing speech disfluencies – translation - text-to-speech"
       isCorrect: false
       explanation: "You need to trigger the function to execute the code"
-  - content: "Suppose you want to develop an application for tracking and controlling the Cognitive service API in the Azure function. How do you access the Cognitive Service API from your application?"
+  - content: "Suppose you want to develop an application using the Cognitive service API in the Azure function. How do you access the Cognitive Service API from your application?"
     choices:
     - content: "You could directly access the Cognitive Service api within Azure function once it establishes the connection."
       isCorrect: false
-      explanation: "You need to generate an API key to connect the application to the Cognitive service api’s and access the service"
+      explanation: "You need to generate an API key to connect the application to the Cognitive service API’s and access the service"
     - content: "You'll need to generate an API key each time to make an attempt to connect and access the cognitive service API."
       isCorrect: false
-      explanation: "You need to create an account once which generates the API key that can be used for the rest of period."
+      explanation: "You need to create an account once, which generates the API key that can be used for the rest of period."
     - content: "You create a Cognitive service account that will generate an API key that can be used to access to service API"
       isCorrect: true
       explanation: "You do need an API key to access the cognitive service API in the function"
