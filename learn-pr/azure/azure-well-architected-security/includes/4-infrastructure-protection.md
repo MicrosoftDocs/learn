@@ -18,7 +18,7 @@ On Azure, users, groups, and roles are all stored in Azure Active Directory (Azu
 
 ### Roles and management groups
 
-Roles are sets of permissions, like "Read-only" or "Contributor", that users can be granted to access an Azure service instance. Roles can be granted at the individual service instance level, but they also flow down the Azure Resource Manager hierarchy. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances. 
+Roles are sets of permissions, like *read-only* or *contributor*, that users can be granted to access an Azure service instance. Roles can be granted at the individual service instance level, but they also flow down the Azure Resource Manager hierarchy. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances.
 
 Management groups are an additional hierarchical level recently introduced into the RBAC model. Management groups add the ability to group subscriptions together and apply policy at an even higher level.
 
@@ -60,13 +60,13 @@ Azure AD addresses this problem through two methods: service principals and mana
 
 ### Service principals
 
-To understand service principals, it's useful to first understand the words **identity** and **principal** as they are used in Identity management world.
+To understand service principals, it's useful to first understand the words *identity* and *principal* as they are used in Identity management world.
 
-An **identity** is just a thing that can be authenticated. Obviously, this includes users with username and password, but it can also include applications or other servers, which might authenticate with secret keys or certificates. As a bonus definition, an **account** is data associated with an identity.
+An *identity* is just a thing that can be authenticated. Obviously, this includes users with username and password, but it can also include applications or other servers, which might authenticate with secret keys or certificates. As a bonus definition, an *account* is data associated with an identity.
 
-A **principal** is an identity acting with certain roles or claims. Consider the use 'sudo' on a bash prompt or on Windows using "run as Administrator". In both of those cases, you are still logged in as the same identity as before, but you've changed the role under which you are executing.
+A *principal* is an identity acting with certain roles or claims. Consider the use 'sudo' on a bash prompt or on Windows using "run as Administrator". In both of those cases, you are still logged in as the same identity as before, but you've changed the role under which you are executing.
 
-So, a **Service Principal** is literally named. It is an identity that is used by a service or application. Like other identities, it can be assigned roles.
+So, a *Service Principal* is literally named. It is an identity that is used by a service or application. Like other identities, it can be assigned roles.
 
 For example, your organization can assign its deployment scripts to run authenticated as a service principal. If that is the only identity that has permission to perform destructive actions, your organization will have gone a long way toward making sure they don't have a repeat of the accidental resource deletion.
 

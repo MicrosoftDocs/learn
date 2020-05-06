@@ -2,13 +2,13 @@ There's no "easy button" for security and no solution that solves all your probl
 
 ## Zero Trust model
 
-The analyst firm Forrester Research introduced the **Zero Trust model**, which states that you should never assume trust but instead continually validate trust. When users, devices, and data all resided inside the organization's firewall, they were assumed to be trusted. This assumed trust allowed for easy lateral movement after a malicious hacker compromised an endpoint device.
+The analyst firm Forrester Research introduced the *Zero Trust model*, which states that you should never assume trust but instead continually validate trust. When users, devices, and data all resided inside the organization's firewall, they were assumed to be trusted. This assumed trust allowed for easy lateral movement after a malicious hacker compromised an endpoint device.
 
-With most users now accessing applications and data from the Internet, and many companies now allowing users to "bring-your-own-devices" (BYOD), most of the components of the transactions — that is, the users, network, and devices — are no longer completely under organizational control. The Zero Trust model relies on verifiable user and device trust claims to grant access to organizational resources. No longer is trust assumed based on the location inside an organization's perimeter.
+With most users now accessing applications and data from the Internet, and many companies now allowing users to *bring-your-own-devices* (BYOD), most of the components of the transactions — that is, the users, network, and devices — are no longer completely under organizational control. The Zero Trust model relies on verifiable user and device trust claims to grant access to organizational resources. No longer is trust assumed based on the location inside an organization's perimeter.
 
-This model has forced security researchers, engineers, and architects to re-think the approach applied to security where we use a layered strategy to protect our resources called _defense in depth_.
+This model has forced security researchers, engineers, and architects to re-think the approach applied to security where we use a layered strategy to protect our resources called *defense in depth*.
 
-#### Defense in depth
+### Defense in depth
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWjTfZ]
 
@@ -16,11 +16,11 @@ This model has forced security researchers, engineers, and architects to re-thin
 
 *Defense in depth* is a strategy that employs a series of mechanisms to slow the advance of an attack aimed at acquiring unauthorized access to information. Each layer provides protection so that if one layer is breached, a subsequent layer is already in place to prevent further exposure. Microsoft applies a layered approach to security, both in our physical datacenters and across Azure services. The objective of defense in depth is to protect and prevent information from being stolen by individuals not authorized to access it. The common principles used to define a security posture are confidentiality, integrity, and availability, known collectively as CIA.
 
-- __Confidentiality__ - Principle of least privilege. Restricts access to information only to individuals explicitly granted access. This information includes protection of user passwords, remote access certificates, and email content.
+- **Confidentiality**: Principle of least privilege. Restricts access to information only to individuals explicitly granted access. This information includes protection of user passwords, remote access certificates, and email content.
 
-- __Integrity__ - The prevention of unauthorized changes to information at rest or in transit. A common approach used in data transmission is for the sender to create a unique fingerprint of the data using a one-way hashing algorithm. The hash is sent to the receiver along with the data. The data's hash is recalculated and compared to the original by the receiver to ensure the data wasn't lost or modified in transit.
+- **Integrity**: The prevention of unauthorized changes to information at rest or in transit. A common approach used in data transmission is for the sender to create a unique fingerprint of the data using a one-way hashing algorithm. The hash is sent to the receiver along with the data. The data's hash is recalculated and compared to the original by the receiver to ensure the data wasn't lost or modified in transit.
 
-- __Availability__ - Ensure services are available to authorized users. Denial of service attacks are a prevalent cause of loss of availability to users. Natural disasters also drive system design to prevent single points of failure and deploy multiple instances of an application to geo-dispersed locations.
+- **Availability**: Ensure services are available to authorized users. Denial of service attacks are a prevalent cause of loss of availability to users. Natural disasters also drive system design to prevent single points of failure and deploy multiple instances of an application to geo-dispersed locations.
 
 ## Security layers
 

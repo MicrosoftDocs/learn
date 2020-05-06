@@ -2,7 +2,7 @@ Data is an organization’s most valuable and irreplaceable asset, and encryptio
 
 ## What is encryption?
 
-Encryption is the process of making data unreadable and unusable. To use or read the encrypted data, it must be *decrypted*, which requires the use of a secret key. There are two top-level types of encryption: **Symmetric** and **Asymmetric**.
+Encryption is the process of making data unreadable and unusable. To use or read the encrypted data, it must be *decrypted*, which requires the use of a secret key. There are two top-level types of encryption: *symmetric* and *asymmetric*.
 
 Symmetric encryption uses the same key to encrypt and decrypt the data. Consider a desktop password manager application. You enter your passwords and they are encrypted with your own personal key (your key is often derived from your master password). When the data needs to be retrieved, the same key is used and the data is decrypted.
 
@@ -22,7 +22,7 @@ The actual data that is encrypted could vary in its content, usage, and importan
 
 ### Encryption in transit
 
-Data in transit is the data actively moving from one location to another, such as across the internet or through a private network. Secure transfer can be handled by encrypting the data prior to sending it over a network, or setting up a secure channel to transmit unencrypted data between two systems. Encrypting data in transit protects the data from outside observers and provides a mechanism to transmit data while limiting risk of exposure. 
+Data in transit is the data actively moving from one location to another, such as across the internet or through a private network. Secure transfer can be handled by encrypting the data prior to sending it over a network, or setting up a secure channel to transmit unencrypted data between two systems. Encrypting data in transit protects the data from outside observers and provides a mechanism to transmit data while limiting risk of exposure.
 
 ![An illustration showing an example of encryption in transit. The data is encrypted before it is transferred. Once it reaches the destination, the data is then decrypted.](../media/encryption-in-transit.png)
 

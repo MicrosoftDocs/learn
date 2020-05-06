@@ -1,4 +1,4 @@
-Imagine you work for a healthcare organization that hosts a legacy internal application and web portal for its clinicians to manage patient health data. The organization has received many requests for this application to be available to caregivers who are often on-site with patients and therefore outside of the network. 
+Imagine you work for a healthcare organization that hosts a legacy internal application and web portal for its clinicians to manage patient health data. The organization has received many requests for this application to be available to caregivers who are often on-site with patients and therefore outside of the network.
 
 A recent data leak by malicious agents has forced the company to tighten its password policies. They are now requiring users to change their passwords more frequently and use longer, more complex passwords. This has led to the unwanted side-effect of users recording complex passwords insecurely as they struggle to remember multiple sets of credentials created for different administrative roles. 
 
