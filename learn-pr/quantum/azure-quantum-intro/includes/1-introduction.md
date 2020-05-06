@@ -1,6 +1,4 @@
-In this module, you’ll learn about quantum-inspired optimization (QIO). You'll apply what you've learned to solve this  actual optimization problem.
-
-**TODO:** We need to decide whether its "quantum-inspired optimization", "quantum inspired optimization", or "Quantum Inspired Optimization". The choice largely depends on how marketing brands it.
+In this module, you’ll learn about quantum-inspired optimization (QIO). You'll apply what you've learned to solve this real-world optimization problem.
 
 Contoso Logistics Inc. is a freight company that operates two container ships.
 
