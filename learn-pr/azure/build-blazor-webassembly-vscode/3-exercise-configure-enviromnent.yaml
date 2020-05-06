@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-app-blazor-webassembly-vscode.3-exercise-configure-environment
+title: Introduction
+metadata:
+  title: Configure your development environment
+  description: Build your first WebAssembly app with Blazor, VS Code and C#.
+  ms.date: 05/07/2020
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-configure-environment.md)]

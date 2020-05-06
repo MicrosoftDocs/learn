@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.build-web-app-blazor-webassembly-vscode
+metadata:
+  title: Build a web app with Blazor WebAssembly and VS Code
+  description: Learn how to setup your development environment and build your first WebAssembly app with Blazor, VS Code and C#.
+  ms.date: 05/02/2020
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a web app with Blazor WebAssembly and VS Code
+summary: Learn how to setup your development environment and build your first WebAssembly app with Blazor, VS Code and C#.
+abstract: | 
+  In this module, you will:
+  - Configure your local environment for Blazor development with VS Code
+  - Create a new Blazor WebAssembly project
+  - Add client-side logic to a Blazor web app
+prerequisites: |
+  - Familiarity with web app concepts
+  - Familiarity with Blazor
+  - Familiarity with ASP.NET Core
+  - C# .NET experience at a beginner level
+  - Experience with VS Code
+iconUrl: 
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- dotnet
+- aspnet-core
+- dotnet-core
+- dotnet-standard
+units:
+- learn.build-web-app-blazor-webassembly-vscode.1-introduction
+- learn.build-web-app-blazor-webassembly-vscode.2-blazor-webassembly
+- learn.build-web-app-blazor-webassembly-vscode.3-exercise-configure-environment
+- learn.build-web-app-blazor-webassembly-vscode.4-blazor-pages-navigation
+- learn.build-web-app-blazor-webassembly-vscode.5-exercise-add-razor-page
+- learn.build-web-app-blazor-webassembly-vscode.6-csharp-razor-binding
+- learn.build-web-app-blazor-webassembly-vscode.7-exercise-razor-binding
+- learn.build-web-app-blazor-webassembly-vscode.8-summary
+badge:
+  uid: - learn.build-web-app-blazor-webassembly-vscode.badge
