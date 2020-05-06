@@ -34,7 +34,7 @@ Four different products and services can use Azure Backup to create backups:
 * **Azure Backup Server** is similar to Data Protection Manager, but it's licensed as part of an Azure subscription and doesn't require a System Center license. Azure Backup Server supports the same functionality as Data Protection Manager except for local tape backup and integration with the other System Center products.
 * **Azure IaaS VM Backup** is a turnkey backup and restore feature of Azure Virtual Machines. VM backup supports once-per-day backups for Windows and Linux virtual machines. It supports recovery of individual files, full disks, and entire VMs, and can also perform application-consistent backups. Individual applications can be made aware of backup operations and get their filesystem resources into a consistent state before the snapshot is taken.
 
-![An illustration showing an Azure backup agent configured with recovery vault and an Azure virtual machine backup. The backup agent and Azure virtual machine backup saves all the data to the recovery vault.](../media/azure-backup.png)
+![An illustration showing an Azure backup agent configured with recovery vault and an Azure virtual machine backup. The backup agent and Azure virtual machine backup saves all the data to the recovery vault.](../media/4-azure-backup.png)
 
 Azure Backup can add value and contribute to the backup and restore strategy for IaaS and on-premises applications of virtually any size and shape.
 

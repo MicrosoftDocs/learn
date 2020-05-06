@@ -71,7 +71,7 @@ The Azure cloud platform has been designed to provide high availability througho
 
 Availability sets are a way for you to inform Azure that VMs that belong to the same application workload should be distributed to prevent simultaneous impact from hardware failure and scheduled maintenance. Availability sets are made up of *update domains* and *fault domains*.
 
-:::image type="content" source="../media/AzAvailSets.png" alt-text="An illustration showing three availability sets. The first set has one update domain, the second has two update domains, and the third is without any update domain." loc-scope="other"::: <!-- no-loc -->
+:::image type="content" source="../media/2-availability-sets.png" alt-text="An illustration showing three availability sets. The first set has one update domain, the second has two update domains, and the third is without any update domain." loc-scope="other"::: <!-- no-loc -->
 
 Update domains ensure that a subset of your application's servers always remain running when the virtual machine hosts in an Azure datacenter require downtime for maintenance. Most updates can be performed with no impact to the VMs running on them, but there are times when this isn't possible. To ensure that updates don't happen to a whole datacenter at once, the Azure datacenter is logically sectioned into update domains (UD). When a maintenance event, such as a performance update and critical security patch that needs to be applied to the host, the update is sequenced through update domains. The use of sequencing updates using update domains ensures that the whole datacenter isn't unavailable during platform updates and patching.
 
@@ -83,7 +83,7 @@ With availability sets, you can ensure your application remains online if a high
 
 Availability zones are independent physical datacenter locations within a region that include their own power, cooling, and networking. By taking availability zones into account when deploying resources, you can protect workloads from datacenter outages while retaining presence in a particular region. Services like virtual machines are *zonal services* and allow you to deploy them to specific zones within a region. Other services are *zone-redundant services* and will replicate across the availability zones in the specific Azure region. Both types ensure that within an Azure region there are no single points of failure.
 
-![An illustration showing three availability zones within an Azure region. Each availability zone has its own set of resources and are connected with each other for replication of zone-redundant services.](../media/AzAvailZones.png)
+![An illustration showing three availability zones within an Azure region. Each availability zone has its own set of resources and are connected with each other for replication of zone-redundant services.](../media/2-availability-zones.png)
 
 Supported regions contain a minimum of three availability zones. When creating zonal service resources in those regions, you'll have the ability to select the zone in which the resource should be created. This will allow you to design your application to withstand a zonal outage and continue to operate in an Azure region before having to evacuate your application to another Azure region.
 
@@ -101,7 +101,7 @@ Azure possesses three load balancing technology services that are distinct in th
 
 One or a combination of all three Azure load-balancing technologies can ensure you have the necessary options available to architect a highly available solution to route network traffic through your application.
 
-![An illustration showing the different load balancing technology in Azure. The traffic manager balances the load between two regions. Within each region there is an application gateway that distributes the load among different virtual machines in the web tier based on the type of request. All images requests go to the image server pool, and any other request is directed to the default server pool. Further requests coming from the default server pools are handled by the Azure load balancer to distribute them among the virtual machines in the database tier.](../media/AzLBOptions.png)
+![An illustration showing the different load balancing technology in Azure. The traffic manager balances the load between two regions. Within each region there is an application gateway that distributes the load among different virtual machines in the web tier based on the type of request. All images requests go to the image server pool, and any other request is directed to the default server pool. Further requests coming from the default server pools are handled by the Azure load balancer to distribute them among the virtual machines in the database tier.](../media/2-azure-load-balancer.png)
 
 ### PaaS HA capabilities
 

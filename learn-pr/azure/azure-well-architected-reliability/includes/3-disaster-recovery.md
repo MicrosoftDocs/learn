@@ -29,7 +29,7 @@ A complete plan needs to specify two critical business requirements for each pro
 * **Recovery Point Objective (RPO)**: The maximum duration of acceptable data loss. RPO is measured in units of time, not volume: "30 minutes of data", "four hours of data", and so on. RPO is about limiting and recovering from data *loss*, not data *theft*.
 * **Recovery Time Objective (RTO)**: The maximum duration of acceptable downtime, where "downtime" needs to be defined by your specification. For example, if the acceptable downtime duration is eight hours in the event of a disaster, then your RTO is eight hours.
 
-![An illustration showing the duration, in hours, of the recovery point objective and recovery time objective from the time of the disaster.](../media/rto-rpo.png)
+![An illustration showing the duration, in hours, of the recovery point objective and recovery time objective from the time of the disaster.](../media/3-rto-rpo.png)
 
 Each major process or workload that's implemented by an app should have separate RPO and RTO values. Even if you arrive at the same values for different processes, each one should be generated through a separate analysis that examines disaster scenario risks and potential recovery strategies for each respective process.
 
@@ -73,7 +73,7 @@ Different Azure services support various levels and concepts of replication. For
 
 Many different replication designs exist that place different priorities on data consistency, performance, and cost. *Active* replication requires updates to take place on multiple replicas simultaneously, guaranteeing consistency at the cost of throughput. In contrast, *passive* replication performs synchronization in the background, removing replication as a constraint on application performance, but increasing RPO. *Active-active* or *multi-master* replication enables multiple replicas to be used simultaneously, enabling load balancing at the cost of complicating data consistency, while *active-passive* replication reserves replicas for live use only during failover.
 
-![An illustration showing an example of geographical replication. The primary writable database is placed at South Central US, whereas the readable secondary databases are placed at two different locations: West US and East US.](../media/geo-replication.png)
+![An illustration showing an example of geographical replication. The primary writable database is placed at South Central US, whereas the readable secondary databases are placed at two different locations: West US and East US.](../media/3-geo-replication.png)
 
 > [!IMPORTANT]
 > **Neither replication nor backup are complete disaster recovery solutions on their own**. Data recovery is only one component of disaster recovery, and replication will not fully satisfy many kinds of disaster recovery scenarios. For example, in a data corruption scenario, the nature of the corruption may allow it to spread from the primary data store to the replicas, rendering all the replicas useless and requiring a backup for recovery.
@@ -90,7 +90,7 @@ Depending on the design of your application, there are a few different strategie
 
 Azure Site Recovery is a service that's dedicated to managing process recovery for workloads running on VMs deployed to Azure, VMs running on physical servers, and workloads running directly on physical servers. Site Recovery replicates workloads to alternate locations and helps you to failover when an outage occurs and supports testing of a disaster recovery plan.
 
-![An illustration showing the role of Azure site recovery in replicating the workloads on three virtual machines located in the East US to West US.](../media/asr.png)
+![An illustration showing the role of Azure site recovery in replicating the workloads on three virtual machines located in the East US to West US.](../media/3-azure-site-recovery.png)
 
 Site Recovery supports replicating whole VMs and physical server images as well as individual *workloads*, where a workload may be an individual application or an entire VM or operating system with its applications. Any application workload can be replicated, but Site Recovery has first-class integrated support for many Microsoft server applications, such as SQL Server and SharePoint, as well as a handful of third-party applications like SAP.
 
@@ -100,7 +100,7 @@ Any app that runs on VMs or physical servers should at least investigate the use
 
 For apps that run on Azure PaaS offerings like App Service, most such services offer features and guidance for supporting disaster recovery. For certain scenarios, you can use service-specific features to support fast recovery. For example, Azure SQL Server supports geo-replication for quickly restoring service in another region. Azure App Service has a Backup and Restore feature, and the documentation includes guidance for using Azure Traffic Manager to support routing traffic to a secondary region.
 
-![An illustration showing a regional pair, within a geography, consisting individual datacenters.](../media/AzRegionPairs.png)
+![An illustration showing a regional pair, within a geography, consisting individual datacenters.](../media/3-region-pairs.png)
 
 ## Testing a disaster recovery plan
 
