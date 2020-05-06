@@ -30,4 +30,4 @@ interactive: bash
 durationInMinutes: 10
 
 content: |
-  [!include[](includes/10-setup-cosmosdb)]
+  [!include[](includes/10-setup-cosmosdb.md)]
