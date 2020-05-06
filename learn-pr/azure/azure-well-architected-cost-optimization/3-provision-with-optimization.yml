@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-cost-optimization.3-provision-with-optimizatio
 title: Provision with optimization
 metadata:
   title: Provision with optimization
-  description: Provision with optimization
+  description: Learn how to provision your resources with optimization in mind.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -24,12 +24,14 @@ quiz:
     - content: 'You have a web site that needs the flexibility to scale from hundreds to millions of users at any point in time.'
       isCorrect: false
       explanation: 'This scenario has a highly variable workload, and is not a good candidate for reserved instances.'
-    - content: 'You have an ERP system with consistent resource utilization.'
+    - content: 'You have an Enterprise Resource Planning (ERP) system with consistent resource utilization.'
       isCorrect: true
       explanation: 'This is a good candidate for reserved instances.'
     - content: 'You have a small administrative task that uses PowerShell that you wish to run automatically.'
       isCorrect: false
       explanation: 'This is a good fit for another Azure service, Azure Logic Apps, but is not a good candidate for reserved instances.'
+
+# TODO: Could the PowerShell example also run in Azure Functions?
 
   - content: 'Which of the following scenarios would be well-suited for spot instances?'
     choices:
@@ -42,6 +44,6 @@ quiz:
     - content: 'A system that enables patients to access health records.'
       isCorrect: false
       explanation: 'This system would likely need to remain online at all times and is not a good candidate for spot instances.'
-    - content: 'A system that processes batches of data sent in from partners.'
+    - content: 'A system that processes batches of data that is sent from partners.'
       isCorrect: true
       explanation: 'This system would be a good candidate for spot instances.'

@@ -2,17 +2,17 @@
 uid: learn.azure-well-architected-cost-optimization
 metadata:
   title: Azure Well-Architected - Cost optimization
-  description: Learn how to design an Azure architecture that is efficient, eliminates waste, and gives you full visibility into where your money is spent on cloud resources.
+  description: Learn how to use the cost optimization pillar of the Azure Well-Architected Framework to design a cloud-based architecture that is efficient, eliminates waste, and gives you full visibility into where your money is spent on cloud resources.
   ms.date: 05/19/2020
   author: jboeshart 
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure Well-Architected - Cost optimization
-summary: Learn how to design an Azure architecture that is efficient, eliminates waste, and gives you full visibility into where your money is spent on cloud resources.
+summary: Learn how to use the cost optimization pillar of the Azure Well-Architected Framework to design a cloud-based architecture that is efficient, eliminates waste, and gives you full visibility into where your money is spent on cloud resources.
 abstract:  | 
   In this module, you will:
-    - Use monitoring and analytics to gain cost insights
+    - Learn how to use monitoring and analytics to gain cost insights
     - Maximize the efficiency of your cloud environment
     - Identify the benefits of a cloud operating model
     - Identify ways to provision resources that are optimized for cost

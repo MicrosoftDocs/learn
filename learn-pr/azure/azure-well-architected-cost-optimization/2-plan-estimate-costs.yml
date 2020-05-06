@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-cost-optimization.2-plan-estimate-costs
 title: Plan and estimate your Azure costs
 metadata:
   title: Plan and estimate your Azure costs
-  description: Plan and estimate your Azure costs
+  description: Learn how to plan and estimate costs for your Azure projects.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -36,7 +36,7 @@ quiz:
     - content: 'The ability for users to cancel orders.'
       isCorrect: false
       explanation: 'This would be a business requirement for the application.'
-    - content: 'The ability for users to upload and store image files.'
+    - content: 'The ability for customers to upload and store image files in your application.'
       isCorrect: true
       explanation: 'This would impact Azure costs, as you would need to account for the storage of images on an Azure service.'
     - content: 'Sending notifications to procurement when inventory is low.'

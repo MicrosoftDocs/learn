@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-cost-optimization.5-maximize-efficiency-of-clo
 title: Maximize efficiency of cloud spend
 metadata:
   title: Maximize efficiency of cloud spend
-  description: Maximize efficiency of cloud spend
+  description: Learn how to maximize the efficiency of your cloud spending.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Your business stores PDF copies of all purchase orders. These files are infrequently accessed after initial upload and do not have a time-criticality associated with their retrieval. Which of the following storage tiers would be the best choice to reduce costs for long term storage?'
+  - content: 'Your business stores PDF copies of all purchase orders. These files are accessed infrequently after their initial upload, and they do not have a time-criticality associated with their retrieval. Which of the following storage tiers would be the best choice to reduce costs for long term storage?'
     choices:
     - content: 'Hot access tier'
       isCorrect: false
