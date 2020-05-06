@@ -13,7 +13,7 @@ The output is:
 This example uses the backslash:
 
 ```python
-'doesn\'t'  # Use \' to escape the single quotation mark or apostrophe.
+'doesn\'t'  # Use backslash \' to escape the single quotation mark or apostrophe.
 ```
 
 The output is:
@@ -25,7 +25,7 @@ The output is:
 This example encloses the apostrophe between double quotation marks:
 
 ```python
-"doesn't"  # Or, use double quotation marks instead.
+"doesn't"  # Use double quotation marks to enclose the entire string.
 ```
 
 The output is:
@@ -57,13 +57,13 @@ print('"Isn\'t," she said.')
 The output is:
 
 ```Output
-"Isn\'t," she said.
+"Isn't," she said.
 ```
 
 If you don't want escaped characters (prefaced by a backslash) to be interpreted as special characters, use _raw strings_ by adding an "r" before the first quotation mark. First, here's an example without the "r":
 
 ```python
-print('C:\some\name')  # Here \n means newline!
+print('C:\some\name')  # Here, the slash before the "n" (\n) means newline!
 ```
 
 The output is:
@@ -76,7 +76,7 @@ ame
 Here's an example that uses the "r":
 
 ```python
-print(r'C:\some\name')  # Note the r before the quotation mark.
+print(r'C:\some\name')  # Note the "r" before the single quotation mark.
 ```
 
 The output is:
