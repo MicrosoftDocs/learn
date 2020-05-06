@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-static-web-app-and-api.5-build-api
+uid: learn.azure.publish-static-web-app-and-api.7-build-api
 metadata:
   title: Build an API with Azure Functions
   description: Build an API with Azure Functions
@@ -11,4 +11,4 @@ metadata:
 title: Build an API with Azure Functions
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-build-api.md)]
+  [!include[](includes/7-build-api.md)]

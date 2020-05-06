@@ -1,91 +1,5 @@
 In this exercise, you'll create an Azure Static Web Apps instance including a GitHub Action that will automatically build and publish your application.
 
-## Create a routing rule
-
-Before publishing your app, create routing rules that include a fallback route.
-
-### Create the file routes.json
-
-1. Open the folder _my-static-web-app_ in Visual Studio Code
-
-::: zone pivot="angular"
-
-1. In Visual Studio Code, right-click the folder _angular-app/src/_
-
-::: zone-end
-
-::: zone pivot="react"
-
-1. In Visual Studio Code, right-click the folder _react-app/public_
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-1. In Visual Studio Code, right-click the folder _svelte-app/public_
-
-::: zone-end
-
-::: zone pivot="vue"
-
-1. In Visual Studio Code, right-click the folder _vue-app/public_
-
-::: zone-end
-
-2. Select **New File**
-3. Type _routes.json_ and press <kbd>Enter</kbd>
-4. Update the _routes.json_ file to include the following fallback route:
-
-   ```json
-   {
-     "routes": [
-       {
-         "route": "/*",
-         "serve": "/index.html",
-         "statusCode": 200
-       }
-     ]
-   }
-   ```
-
-::: zone pivot="angular"
-
-### Configure Angular
-
-Angular apps don't copy files in the _src_ folder to the artifact folder by default. Use the following steps to ensure the _routes.json_ is copied to the appropriate location.
-
-1. In Visual Studio Code, open the file _angular-app/angular.json_
-1. Go to the property at:
-
-   ```json-schema
-    projects
-     └── angular-app
-       └── architect
-         └── build
-           └── options
-              └──  assets
-   ```
-
-1. Extend the `assets` array to include the _src/routes.json_ file:
-
-   ```json
-   "assets": ["src/routes.json", "src/favicon.ico", "src/assets"],
-   ```
-
-Now Angular is configured to copy the _routes.json_ file to your artifact location when your app builds.
-
-::: zone-end
-
-### Push your changes to Git
-
-Now save, commit, and push your changes to Git by following these steps:
-
-1. Open the command palette by pressing <kbd>F1</kbd>.
-1. Type and select **Git: Commit All**. If Visual Studio Code prompts you to automatically stage all of your changes and commit them directly, select **Yes**.
-1. Enter a commit message such as **added routing rules for a fallback route**.
-1. Open the command palette by pressing <kbd>F1</kbd>.
-1. Type and select **Git: Push**.
-
 ## Create a Static Web App
 
 Now that you've created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
@@ -216,19 +130,13 @@ Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
 :::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
 
-Your app's now globally available, but it's still stuck at **Loading data ...** because there is no data or API yet. You'll add the API for your web app in the next section.
+Your app's now globally available, but it's still stuck at **Loading data ...** because there's no data or API yet. You'll add the API for your web app in the next section.
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 > [!NOTE]
 > Don't worry if you see a web page that says the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action runs automatically when the Azure Static Web Apps is created. So if you see the splash page, the app is still being deployed.
 
-### Try the fallback route
-
-Your app is displaying the **Products** page in the browser. Notice the URL is **/products**. Now refresh the browser and test your fallback route.
-
-In your browser, press <kbd>F5</kbd> to refresh the page. Your app should reload successfully thanks to your fallback route in your routing rules!
-
 ## Next steps
 
-Your app is missing an API for its shopping list. Next, you'll explore how to add an Azure Functions API to your app that will be published to Azure alongside the static assets.
+Your app is missing an API for its shopping list. Next, you'll explore how to add an Azure Functions API to your app that will publish to Azure alongside the static assets.
