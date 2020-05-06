@@ -12,8 +12,6 @@ Cloud infrastructure can handle fluctuating resource usage scenarios. Resources 
 
 In an efficient architecture, resources are provisioned to match the demand. If a virtual machine is less than 10% utilized the majority of the time, you are wasting resources, both in compute and cost. Conversely, a virtual machine that is running 90% utilized is using the majority of the available resources, and is an efficient use of money. Running a system at 100% utilization runs the risk of introducing performance issues. It is important to ensure that maximizing efficiency doesn't negatively impact the performance of your system. Demand is rarely constant, so adjusting resources when possible to match demand is important to ensure efficiency.
 
-<!-- TODO: You mention "scale up" and "scale out" in the Introduction module; is that worth mentioning here? -->
-
 ## Optimizing IaaS costs
 
 When using Infrastructure as a Service (IaaS) resources such as virtual machines (VM) as part of your solution, the cost associated with VMs is often the biggest portion of your spending. The compute costs are typically your largest expense, followed by storage costs. Taking time to optimize pay-for-what-you-use resources can have a large impact on the size of your monthly bill.

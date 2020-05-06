@@ -2,9 +2,7 @@ When provisioning resources, you'd ideally make them as efficient as possible fr
 
 ## Select appropriate service tiers and sizes
 
-When provisioning resources on the cloud, selecting the right SKU or tier will have a direct impact on the capabilities, capacity, and performance of the service, which is tied directly to cost. Carefully evaluate the workload requirements for your application, and select the SKU or tier that matches your resource requirements.
-
-<!-- TODO: When you say "performance of the service," do you mean an Azure service? Or do you mean the learner's application? -->
+When provisioning resources on the cloud, selecting the right SKU or tier will have a direct impact on the capabilities, capacity, and performance capabilities of the Azure service, which is tied directly to cost. Carefully evaluate the workload requirements for your application, and select the SKU or tier that matches your resource requirements.
 
 There is a wide variety of virtual machine types to choose from when provisioning for VM based workloads, and each VM SKU comes with an assigned amount of CPU, memory, and storage. Assess the resource requirements for your workload, and select the proper VM SKU that most closely matches your needs. Provisioning VM sizes can often be challenging, since you may be deploying for your maximum workload, even though your application may only need that capacity for a portion of its running time. Note that choosing a VM size is not a permanent decision; you can modify your VM size at any time, but in most cases it will require a restart of your VM.
 
@@ -12,9 +10,7 @@ There is a wide variety of virtual machine types to choose from when provisionin
 
 Many cloud services provide a consumption billing model. With consumption models you only pay for the amount of transactions, CPU time, or run time of your application. This can bring cost savings and efficiency to your application since you aren't paying for your the resources to run your application when it's not being used. Let's look at a few examples of Azure services that have a consumption cost model.
 
-- **Azure Functions** is an event-driven, serverless compute platform that provides a consumption plan. When you're using the consumption plan, you're charged for compute resources only when your functions are running; billing is based on the number of executions, the length of time running, and the amount of memory used. As an added benefit, your function scales automatically, as instances of the Azure Functions host are dynamically added and removed based on the number of incoming events, and function execution times out after a configurable period of time.
-
-<!-- TODO: I made a lot of changes to the Azure Functions bullet point; you might want to doublecheck that I didn't change your intended meaning. -->
+- **Azure Functions** is an event-driven, serverless compute platform that provides a consumption plan. When you're using the consumption plan, you're charged for compute resources only when your functions are running. Billing is based on the number of executions, the length of time running, and the amount of memory used. As an added benefit, your function scales automatically, as instances of the Azure Functions host are dynamically added and removed based on the number of incoming events, and function execution times out after a configurable period of time.
 
 - **Azure Logic Apps** is a service that helps you create automated, integration workflows in the cloud. Logic Apps provides a consumption tier where you only pay per execution of a connector.
 
@@ -44,8 +40,6 @@ If you have consistent resource usage that supports reservations, buying a reser
 
 Whenever possible, take advantage of combining lower resource costs and lower operational costs by utilizing managed services. These services come with lower operational costs since you don't need to patch and manage the underlying infrastructure and services. Deploying applications on VMs comes with the administration and maintenance of the operating system, as well as any layered software.
 
-Azure SQL Database is a great example of a managed service. You can deploy a single or pooled database, or a managed instance. All of these are fully managed, you don't need to patch the underlying database software, and operational items like backup are built-in and provided for you.
-
-<!-- TODO: When you wrote "You can deploy a single or pooled database, or a managed instance. All of these are fully managed...," I completely understand that all of those services are managed by Azure, but it becomes a little ambiguous to say, "single, pooled, or managed - although they're all managed." I'm not sure if there's some other way to write that, though. -->
+Azure SQL Database is a great example of a managed service. You can deploy a single or pooled database, or a managed instance and each of these are fully managed. You don't need to patch the underlying database software, and operational items like backup are built-in and provided for you.
 
 Azure App Service is another example of a managed service that is designed to host web applications. Rather than deploying and managing VMs to host your web applications, you can deploy your applications directly to App Service, and dramatically reduce the amount effort that is required to maintain infrastructure.

@@ -12,9 +12,7 @@ Azure Cost Management gives you insights where your spend is going, as well as u
 
 Azure Advisor also has a cost component. It recommends VM resizing when necessary, identifies unused ExpressRoute circuits and idle virtual network gateways, or advises when to consider buying reserved instances when that may be more cost effective than using pay-as-you-go instances. Azure Advisor makes additional recommendations in the areas of performance, high availability, and security.
 
-The important part is to take time to review your spend and evaluate where your money is going. Effective analysis will help you identify areas of inefficiency and ensure you're operating as efficiently as possible.
-
-<!-- TODO: You use "inefficiency" and "efficiently" within a few words of each other; you should try to find something that doesn't sound redundant. -->
+The important part is to take time to review your spend and evaluate where your money is going. Effective analysis will help you identify areas of inefficiency and ensure you're operating as cost effectively as possible.
 
 ## Conduct cost reviews
 
@@ -30,13 +28,9 @@ One of the key features of Azure Cost Management is the ability to configure ale
 
 - *Budget alerts* notify you when spending, based on usage or cost, reaches or exceeds the amount defined in the alert condition of the budget. Budgets in Azure Cost Management help you plan for and drive organizational accountability. With budgets, you can account for the Azure services that you consume or subscribe to during a specific period. They help you to proactively inform others about their spending, and to monitor how spending progresses over time. When the budget thresholds that you've created are exceeded, alerts can be sent to the appropriate teams. Budgets can be set at varying levels, from resource groups to subscriptions, to enterprise agreements.
 
-- *Credit alerts* notify you when your Azure credit monetary commitments are consumed. Monetary commitments are for organizations with Enterprise Agreements.
+- *Credit alerts* notify you when your Azure credit monetary commitments are consumed. Monetary commitments are for organizations with enterprise agreements.
 
-<!-- TODO: You use "enterprise agreements" in the first bullet point and "Enterprise Agreements" in the second; they should be consistent. -->
-
-- *Department spending quota alerts* notify you when department spending reaches a fixed threshold of the quota. Spending quotas are configured in the Enterprise Agreements portal. When a threshold is met, it generates an email to department owners and is shown in cost alerts.
-
-<!-- TODO: What does "it" mean in "it generates an email?" Azure Cost Management? -->
+- *Department spending quota alerts* notify you when department spending reaches a fixed threshold of the quota. Spending quotas are configured in the enterprise agreements portal. When a threshold is met, an email is sent to department owners and a notification is shown in cost alerts.
 
 ## Report anomalies
 
