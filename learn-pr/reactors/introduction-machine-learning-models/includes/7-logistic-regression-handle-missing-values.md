@@ -1,11 +1,7 @@
 > [!Note]
 > **Sarah: Action items**
-> 
-> - Several output code blocks need content. Search on TBD. - For every block that doesn't have "output" it's because there is no output.
-> - Try it yourself block needs Output code. Search on TBD.
-> - Try it yourself sections need introduction statements. Search on Sarah.
-> - Need some introduction content from you. Search on Sarah.
 >
+> - Line 152: Need input code introduction statement. Search on Sarah.
 
 Now we need to address missing values. First, let’s look to see which columns have more than half of their values missing:
 
@@ -152,7 +148,7 @@ Q     77
 Name: Embarked, dtype: int64
 ```
 
-<!-- Sarah, Add introduction statement for input code. -->
+<!-- Sarah: Add introduction statement for input code. -->
 
 ```python
 df = pd.get_dummies(data=df, columns=['Gender', 'Embarked'],drop_first=True)
@@ -182,7 +178,6 @@ df.corr()
 ```
 
 The output is: 
-
 
 ```Output
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -240,12 +235,14 @@ Set `test_size = 0.3` and `random_state = 67` to get the same results as below w
 
   X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3,random_state=67)
   ```
-
+ 
 </details>
 
-Now you will import and fit the logistic regression model.
+<br /><br />
 
-<br />
+***
+
+Now you will import and fit the logistic regression model.
 
 Here's the input:
 
@@ -253,10 +250,13 @@ Here's the input:
 from sklearn.linear_model import LogisticRegression
 lr = LogisticRegression()
 ```
+
 ```python
 lr.fit(X_train,y_train)
 ```
+
 The output is:
+
 ```Output
 LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                  intercept_scaling=1, l1_ratio=None, max_iter=100,
@@ -265,18 +265,8 @@ LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                  warm_start=False)
 ```
 
-<br /><br />
-
-***
-
 And then you will save the predictions to compare with the y_test values (aka the true output).
-
-<br />
 
 ```python
 predictions = lr.predict(X_test)
 ```
-
-<br /><br />
-
-***
