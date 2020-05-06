@@ -4,7 +4,7 @@ To complete the end-to-end solution for spotting polar bears in the wild, you wi
 
 You used the Custom Vision Service to train an image-classification model to differentiate between different types of Arctic wildlife, and modified the Azure Function you wrote to output the results to an Azure SQL Database. The first step in using Microsoft Power BI to explore and visualize this data is connecting it to the database. In this exercise, you will connect Power BI Desktop to the Azure SQL Database.
 
-1. If Power BI Desktop isn't already installed on your computer, go to [https://powerbi.microsoft.com/desktop/](https://powerbi.microsoft.com/desktop/?azure-portal=true) and install it now.
+1. If Power BI Desktop isn't already installed on your computer, go to [https://powerbi.microsoft.com/desktop/](https://powerbi.microsoft.comgit/desktop/?azure-portal=true) and install it now.
 
 1. Start Power BI Desktop. If you are asked to sign in, do so using your work/school or organizational account.
 
@@ -22,6 +22,7 @@ You used the Custom Vision Service to train an image-classification model to dif
     ```sql
     SELECT TOP 20 Id, CameraId, Latitude, Longitude, Url, Timestamp, FORMAT(Timestamp,'MM/dd/yyyy h:mm:ss tt') AS TimestampLabel, IsPolarBear FROM dbo.PolarBears ORDER BY Timestamp DESC
     ```
+
     ![Connecting to the database](../media/connect-to-database-2.png)
 
     _Connecting to the database_
@@ -39,13 +40,13 @@ After a short delay, Power BI will connect to the database and retrieve a datase
 Visualizations (or simply "visuals") are the primary element that make up Power BI reports. In this exercise, you will use the Power BI report designer to create visuals from the database you connected to in the previous exercise, adjust filters and aggregates to refine the way the data is displayed, and format the visuals to produce compelling output.
 
 1. Click the **Map** icon in the "Visualizations" panel to add a map visual to the report.
-    
+
     ![Adding a map visual](../media/add-map-visual.png)
 
     _Adding a map visual_
 
 1. Check the **IsPolarBear**, **Latitude**, and **Longitude** boxes in the "Fields" panel to include these fields in the map visual.
-    
+
     ![Adding fields to the map visual](../media/check-lat-lon.png)
 
     _Adding fields to the map visual_
@@ -155,4 +156,4 @@ Now that the report is prepared in Power BI, your final task is to run the end-t
 
 1. When you're satisfied that the solution is working as intended, return to the Command Prompt or terminal window and press **Ctrl+C** stop the cameras.
 
-You now have a report that shows, in near real-time, polar-bear activity on the island. If you have a [Power BI Pro or Power BI Premium](https://powerbi.microsoft.com/blog/power-bi-pro-power-bi-premium-flexibility-to-choose-the-licensing-best-for-you-and-your-organization/) account, you can share the report with other Power BI users so they, too, can monitor polar-bear activity. For more information about sharing your work, see [Share Power BI Dashboards and Reports](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports "Share Power BI Dashboards and Reports"). Reports can also be viewed in the [Power BI mobile apps](https://docs.microsoft.com/power-bi/mobile-apps-for-mobile-devices) so you can keep track of polar bears on your Windows, Android, or iOS device — even on an Apple watch!
+You now have a report that shows, in near real-time, polar-bear activity on the island. If you have a Power BI Pro or Power BI Premium account, you can share the report with other Power BI users so they, too, can monitor polar-bear activity. For more information about sharing your work, see [Share Power BI Dashboards and Reports](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports "Share Power BI Dashboards and Reports").
