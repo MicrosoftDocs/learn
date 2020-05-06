@@ -1,4 +1,4 @@
-Whether your organization is planning to build a new application on Azure, or you're looking to move an entire data center to the cloud, estimating costs is a key part of your planning process to ensure a successful project. For exampe: how do you know which services to select, or which size to choose? Do you provision virtual machines for your workload, or do you take advantage of higher-level services that can reduce operational costs?
+Whether your organization is planning to build a new application on Azure, or you're looking to move an entire data center to the cloud, estimating costs is a key part of your planning process to ensure a successful project. For example: how do you know which services to select, or which size to choose? Do you provision virtual machines for your workload, or do you take advantage of higher-level services that can reduce operational costs?
 
 <!-- TODO: In "which size to choose," to what object are you referring? A service? A VM? -->
 
@@ -36,7 +36,7 @@ There are additional billing models, but all of them will provide you access to 
 
 <!-- TODO: I'm not sure if the better conjunction should be "but" or "and" in the above sentence. -->
 
-No architecture is static, so you'll want your estimates to include any investments that you may be planning to make in the future. In the long run, taking the extra time to plan effectively for your application's future will give you better visibility into the long-term costs for your project, even if your costs may shift over time. Often times the additional investment can reduce costs, such as moving from virtual machines to app services, reducing operational costs.
+No architecture is static, so you'll want your estimates to include any investments that you may be planning to make in the future. In the long run, taking the extra time to plan effectively for your application's future will give you better visibility into the long-term costs for your project, even if your costs may shift over time. Often the additional investment can reduce costs, such as moving from virtual machines to app services, reducing operational costs.
 
 <!-- TODO: I'm not sure what you mean by 'investment' in the excerpt "Often times the additional investment." Do you mean an investment in planning? Or a financial investment? I think that last sentence needs to be rewritten, but I'm not sure enough of what you're trying to say to hazard a guess. -->
 
@@ -44,11 +44,11 @@ No architecture is static, so you'll want your estimates to include any investme
 
 It's also important to set up an organizational framework to enable the control, reporting, and attribution of costs throughout your environment.
 
-Use Azure policy to create limitations for the size or tier of resources that can be provisioned. For example, you can prevent users from creating virtual machines from the G or M series, which have higher costs. Should a need arise for VMs of those sizes, requests for those VMs could flow through an exception process, where individual scenarios can be reviewed and approved on a case by case basis. These types of policies will prevent your ogranization from facing unexpected large bills from your users creating resources that are larger than your projects actually need.
+Use Azure policy to create limitations for the size or tier of resources that can be provisioned. For example, you can prevent users from creating virtual machines from the G or M series, which have higher costs. Should a need arise for VMs of those sizes, requests for those VMs could flow through an exception process, where individual scenarios can be reviewed and approved on a case by case basis. These types of policies will prevent your organization from facing unexpected large bills from your users creating resources that are larger than your projects actually need.
 
-Enable your users to view reports and billing as needed by creating roles that allow them to view services such as Azure Cost Managment. Allowing your users to view costs will give them the ability to see the impact of their business decisions, and provides for transparency across the organization in respect to cloud resource costs.
+Enable your users to view reports and billing as needed by creating roles that allow them to view services such as Azure Cost Management. Allowing your users to view costs will give them the ability to see the impact of their business decisions, and provides for transparency across the organization in respect to cloud resource costs.
 
-Organize your resources into resource groups or subscriptions, which can servce as boundaries for projects, business units, or services. You can also use Azure Policy to enforce the tagging of resources. Subscriptions, resource groups and tags are exposed in billing reports, which will enable you to account for the usage of resources by product, business unit, or project.
+Organize your resources into resource groups or subscriptions, which can serve as boundaries for projects, business units, or services. You can also use Azure Policy to enforce the tagging of resources. Subscriptions, resource groups and tags are exposed in billing reports, which will enable you to account for the usage of resources by product, business unit, or project.
 
 ## Budget for education
 
