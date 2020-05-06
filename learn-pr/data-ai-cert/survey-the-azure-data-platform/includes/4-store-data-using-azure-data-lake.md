@@ -30,6 +30,6 @@ In Data Lake Storage Gen1, data engineers query data by using the U-SQL language
 
 ## Data security
 
-Because Data Lake Storage supports Azure Active Directory ACLs, security administrators can control data access by using the familiar Active Directory Security Groups. Role-based access control (RBAC) is available in Gen1. Built-in security groups include ReadOnlyUsers, WriteAccessUsers, and FullAccessUsers. 
+Because Data Lake Storage supports Azure Active Directory ACLs, security administrators can control data access by using the familiar Active Directory Security Groups. Role-based access control (RBAC) is available both in Gen1 and Gen2. Built-in security groups include ReadOnlyUsers, WriteAccessUsers, and FullAccessUsers. 
 
 Enable the firewall to limit traffic to only Azure services. Data Lake Storage automatically encrypts data at rest, protecting data privacy.
