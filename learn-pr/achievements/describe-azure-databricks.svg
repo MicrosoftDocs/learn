@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="101px" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Data engineering with Azure Databricks/describe-azure-databricks</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M47.1698113,0 C73.2209788,0 94.3396226,21.1186439 94.3396226,47.1698113 C94.3396226,73.2209788 73.2209788,94.3396226 47.1698113,94.3396226 C21.1186439,94.3396226 0,73.2209788 0,47.1698113 C0,21.1186439 21.1186439,0 47.1698113,0 Z M47.1698113,3.77358491 C23.2027373,3.77358491 3.77358491,23.2027373 3.77358491,47.1698113 C3.77358491,71.1368854 23.2027373,90.5660377 47.1698113,90.5660377 C71.1368854,90.5660377 90.5660377,71.1368854 90.5660377,47.1698113 C90.5660377,23.2027373 71.1368854,3.77358491 47.1698113,3.77358491 Z" id="path-6"></path>
+        <filter x="-6.7%" y="-6.1%" width="113.3%" height="112.2%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100883152 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#FB9449" offset="0%"></stop>
+            <stop stop-color="#F65B23" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9774416%" y1="17.9912184%" x2="49.9774416%" y2="124.588364%" id="linearGradient-10">
+            <stop stop-color="#32D4F5" offset="0%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data-engineering-with-Azure-Databricks" transform="translate(-160.000000, -320.000000)">
+            <g id="Data-engineering-with-Azure-Databricks/describe-azure-databricks" transform="translate(160.000000, 320.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-7)" fill="#27C0F5">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Databrick" filter="url(#filter-8)" transform="translate(20.000000, 17.000000)" fill-rule="nonzero">
+                    <g id="Lower" transform="translate(4.477612, 23.104478)">
+                        <polygon id="Rectangle-8" fill="#E63118" points="50.8329475 13.8644258 50.8367709 13.8623958 50.8367709 23.1799444 25.4183854 37.046456 25.4183854 27.7330231 50.8367709 13.8665116"></polygon>
+                        <polygon id="Rectangle-8" fill="#CC271F" points="0 13.8665116 25.4183854 27.7330231 25.4183854 37.046456 0 23.1799444 0 13.8641558"></polygon>
+                        <polygon id="Rectangle-8" fill="url(#linearGradient-9)" points="0 13.8665116 25.4183854 0 50.8367709 13.8665116 25.4183854 27.7330231"></polygon>
+                    </g>
+                    <g id="Top" transform="translate(4.477612, 4.477612)">
+                        <polygon id="Shadow" fill-opacity="0.093919837" fill="#000000" points="5.2912644e-16 24.6127802 0 20.3761461 50.8367709 20.3761461 50.8367709 24.6127802 25.4183854 38.4792918"></polygon>
+                        <polygon id="Rectangle-8" fill="#E63118" points="50.8329475 13.8644258 50.8367709 13.8623958 50.8367709 23.1799444 25.4183854 37.046456 25.4183854 27.7330231 50.8367709 13.8665116"></polygon>
+                        <polygon id="Rectangle-8" fill="#CC271F" points="0 13.8665116 25.4183854 27.7330231 25.4183854 37.046456 0 23.1799444 0 13.8641558"></polygon>
+                        <polygon id="Rectangle-8" fill="url(#linearGradient-9)" points="0 13.8665116 25.4183854 0 50.8367709 13.8665116 25.4183854 27.7330231"></polygon>
+                    </g>
+                </g>
+                <g id="Chat-bubble" transform="translate(17.000000, 24.000000)">
+                    <g id="Group" transform="translate(-0.000394, 0.371453)" fill="url(#linearGradient-10)" fill-rule="nonzero">
+                        <path d="M23.8192303,0.818328815 L23.8192303,15.9494282 C23.8192303,16.1667878 23.7317926,16.3750482 23.5764696,16.5274255 C23.4211465,16.6798028 23.2109935,16.7635209 22.9932195,16.7597733 L16.6651367,16.7597733 C16.5568875,16.7597733 16.4691342,16.8473467 16.4691342,16.9553739 L16.4691342,19.4003807 C16.4678203,19.5485622 16.3827198,19.6832827 16.249317,19.7483681 C16.1159143,19.8134534 15.957112,19.7977296 15.8391259,19.707753 L12.0310762,16.8016877 L11.9050745,16.8016877 L0.844929963,16.8016877 C0.627155951,16.8054353 0.417002903,16.7217172 0.261679858,16.5693399 C0.106356812,16.4169626 0.0189191572,16.2087022 0.0189191572,15.9913426 L0.0189191572,0.818328815 C0.0189191572,0.600969167 0.106356812,0.392708772 0.261679858,0.2403315 C0.417002903,0.0879542279 0.627155951,0.00423611318 0.844929963,0.00786308263 L22.9932195,0.00786308263 C23.2109935,0.00423611318 23.4211465,0.0879542279 23.5764696,0.2403315 C23.7317926,0.392708772 23.8192303,0.600969167 23.8192303,0.818328815 Z" id="Path"></path>
+                    </g>
+                    <rect id="Rectangle" fill="#FFFFFF" x="3.75" y="3.375" width="16.5" height="2.25" rx="1.125"></rect>
+                    <rect id="Rectangle-Copy" fill="#FFFFFF" x="3.75" y="7.5" width="16.5" height="2.25" rx="1.125"></rect>
+                    <rect id="Rectangle-Copy" fill="#FFFFFF" x="3.75" y="11.625" width="9" height="2.25" rx="1.125"></rect>
+                </g>
+                <g id="Chat-bubble" transform="translate(71.000000, 68.125000) scale(-1, 1) translate(-71.000000, -68.125000) translate(59.000000, 58.000000)">
+                    <g id="Group" transform="translate(-0.000394, 0.371453)" fill="url(#linearGradient-10)" fill-rule="nonzero">
+                        <path d="M23.8192303,0.818328815 L23.8192303,15.9494282 C23.8192303,16.1667878 23.7317926,16.3750482 23.5764696,16.5274255 C23.4211465,16.6798028 23.2109935,16.7635209 22.9932195,16.7597733 L16.6651367,16.7597733 C16.5568875,16.7597733 16.4691342,16.8473467 16.4691342,16.9553739 L16.4691342,19.4003807 C16.4678203,19.5485622 16.3827198,19.6832827 16.249317,19.7483681 C16.1159143,19.8134534 15.957112,19.7977296 15.8391259,19.707753 L12.0310762,16.8016877 L11.9050745,16.8016877 L0.844929963,16.8016877 C0.627155951,16.8054353 0.417002903,16.7217172 0.261679858,16.5693399 C0.106356812,16.4169626 0.0189191572,16.2087022 0.0189191572,15.9913426 L0.0189191572,0.818328815 C0.0189191572,0.600969167 0.106356812,0.392708772 0.261679858,0.2403315 C0.417002903,0.0879542279 0.627155951,0.00423611318 0.844929963,0.00786308263 L22.9932195,0.00786308263 C23.2109935,0.00423611318 23.4211465,0.0879542279 23.5764696,0.2403315 C23.7317926,0.392708772 23.8192303,0.600969167 23.8192303,0.818328815 Z" id="Path"></path>
+                    </g>
+                    <rect id="Rectangle" fill="#FFFFFF" x="3.75" y="3.375" width="16.5" height="2.25" rx="1.125"></rect>
+                    <rect id="Rectangle-Copy" fill="#FFFFFF" x="3.75" y="7.5" width="16.5" height="2.25" rx="1.125"></rect>
+                    <rect id="Rectangle-Copy" fill="#FFFFFF" x="3.75" y="11.625" width="9" height="2.25" rx="1.125"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
