@@ -3,8 +3,8 @@
 > [!Note]
 > **Sarah: Conversion feedback**
 > 
-> - I changed all instances of "Sex" or "sex" to "Gender" or "gender." The former term is considered "racy" and should be avoided. - While I agree the data set has 'sex' as the column. I can see about changing the data thought to account for this. I agree with your change.
-> - I added some introduction statements for input and output cells.
+> - All instances of "Sex" or "sex" to "Gender" or "gender."
+> ---- Sarah looking into updating the data set, which has 'sex' as a column.
 > - Suggest moving the **Learning goal** to the list of Learning objectives in the Introduction unit or to the abstract summary in the module index.yml.
 >
 
@@ -140,22 +140,26 @@ Try running `sns.pairplot` twice more on some other combinations of columns and 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   Here's the input:
-  ```Python
+  
+  ```python
   sns.pairplot(df[['Survived','Age']], dropna=True)
   ```
 
   The output is:
+  
   ```Output
   <seaborn.axisgrid.PairGrid at 0x4e7f6d0>
   ```
   :::image type="content" alt-text="A graph showing the pair plot output for data in the Survived column and the Fare column." source="../media/output-pair-plot-3.png" loc-scope="azure":::
   
   Or, you could do this input:
-  ```Python
+  
+  ```python
   sns.pairplot(df[['Survived','Pclass']], dropna=True)
   ```
 
   The output is:
+  
   ```Output
   <seaborn.axisgrid.PairGrid at 0x3c1b3928>
   ```
