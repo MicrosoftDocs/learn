@@ -136,7 +136,7 @@ Browse to [http://localhost:8080](http://localhost:8080?azure-portal=true)
 
 Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
 
-Now stop your running app by pressing **Ctrl-C** in the terminal.
+Now stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 
 ## Next steps
 
