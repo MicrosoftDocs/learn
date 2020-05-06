@@ -6,11 +6,11 @@ There are three indicators Custom Vision provides to help understand how the mod
 
 The three indicators provided for the entire model and for each class are:
 
-| Indicator              | Description                                                                                                                    |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| Precision              | Precision means if a tag is predicted by your model, how likely is that to be right?                                           |
-| Recall                 | This number will tell you: out of the tags which should be predicted correctly, what percentage did your model correctly find? |
-| AP (Average precision) | A measure of the model performance, summaries the precision and recall at different threshold.                                 |
+| Indicator              | Description                                                                                                                   |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Precision              | Precision means if a tag is predicted by your model, how likely is that to be right?                                          |
+| Recall                 | This number will tell you: out of the tags that should be predicted correctly, what percentage did your model correctly find? |
+| AP (Average precision) | A measure of the model performance, summaries the precision and recall at different threshold.                                |
 
 Now that we understand some of the different indicators we can use to understand how the model is performing. Lets talk about some of the "rookie mistakes" that can happen when starting to build machine learning models.
 
@@ -26,7 +26,7 @@ If you don't have enough data or not diverse enough data your model can become o
 
 ### Testing with training data
 
-As mentioned in the overfitting example, if you test with the same data you trained with, its going to look like it is performing well but when you deploy the model to production it will most likely do poorly.
+As mentioned in the overfitting example, if you test with the same data you trained with, it's going to look like it is performing well but when you deploy the model to production it will most likely do poorly.
 
 ### Bad data
 

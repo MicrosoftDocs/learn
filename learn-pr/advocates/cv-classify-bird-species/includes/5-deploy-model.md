@@ -45,7 +45,7 @@ with open(base_image_url + "images/Test/test_image.jpg", "rb") as image_contents
               ": {0:.2f}%".format(prediction.probability * 100))
 ```
 
-When you post to the published endpoint you will get a result that looks like the below text. It shows the probability of each tag the computer vision model was trained on sorted by the highest score. It only knows the type of birds it was trained to recognize. If you were to post an image of a new bird that it was not trained on it would predict one of the birds it was trained on for the new bird.
+When you post to the published endpoint, you will get a result that looks like the below text. It shows the probability of each tag the computer vision model was trained on sorted by the highest score. It only knows the type of birds it was trained to recognize. If you were to post an image of a new bird that it was not trained on it would predict one of the birds it was trained on for the new bird.
 
 ```bash
 	American Crow: 99.18%
