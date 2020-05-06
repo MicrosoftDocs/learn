@@ -1,4 +1,4 @@
-Python has a way to put definitions in a file and use them in a script or in an interactive instance of the interpreter. The file is called a [Python module](https://docs.python.org/3/tutorial/modules.html?azure-portal=true). YOu can import definitions from a Python module into other programs or other Python modules.
+Python has a way to put definitions in a file and use them in a script or in an interactive instance of the interpreter. The file is called a [Python module](https://docs.python.org/3/tutorial/modules.html?azure-portal=true). You can import definitions from a Python module into other programs or other Python modules.
 
 For example, the `factorial()` function isn't one of the standard functions built into Python. It's part of the Python [math module](https://docs.python.org/3/library/math.html?azure-portal=true). So, when we run `factorial()` before importing the math module, we get an error:
 
