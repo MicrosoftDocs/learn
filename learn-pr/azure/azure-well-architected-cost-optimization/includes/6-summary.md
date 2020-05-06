@@ -5,6 +5,6 @@ In this module, you've looked at some of the key principles of the Cost Optimiza
 To learn more about cost optimization visit the following documentation:
 
 - [Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true)
-- [Cloud Adoption Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/?azure-portal=true)
-- [What is Azure Cost Management and Billing](https://docs.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview?azure-portal=true)
-- [Introduction to Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview?azure-portal=true)
+- [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/?azure-portal=true)
+- [What is Azure Cost Management and Billing](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview?azure-portal=true)
+- [Introduction to Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview?azure-portal=true)

@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Your business stores PDF copies of all purchase orders. These files are accessed infrequently after their initial upload, and they do not have a time-criticality associated with their retrieval. Which of the following storage tiers would be the best choice to reduce costs for long term storage?'
+  - content: 'Your business stores PDF copies of all purchase orders. These files are accessed infrequently after their initial upload, and they do not have a time-criticality associated with their retrieval. Which of the following storage tiers would be the best choice to reduce costs for long-term  storage?'
     choices:
     - content: 'Hot access tier'
       isCorrect: false
-      explanation: 'The PDF files do not need the increased performance of the hot access tier, so this would not be a cost-effective choice.'
+      explanation: 'The PDF files do not need the increased performance of the hot access tier, so this choice would not be a cost-effective.'
     - content: 'Cool access tier'
       isCorrect: false
       explanation: 'This could be a good choice for a transitional storage, but is not a cost-effective choice in the long term.'
     - content: 'Archive access tier'
       isCorrect: true
-      explanation: 'This is the most cost-effective choice in the long term.'
+      explanation: 'This choice is the most cost-effective in the long term.'
 
   - content: 'Which of the following databases would be well-suited for elastic pools?'
     choices:
