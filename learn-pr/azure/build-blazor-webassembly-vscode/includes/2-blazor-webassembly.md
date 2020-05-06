@@ -2,7 +2,7 @@ We'll start with an introduction to Blazor and then explore Blazor WebAssembly.
 
 ## What is Blazor?
 
-Blazor is a web technology that lets you build client web applications using C#. Balzor is a feature of the ASP.NET framework that allows developers to use .NET tools and libraries to build web apps.
+Blazor is a web technology that lets you build client web applications using C#. Blazor is a feature of the ASP.NET framework that allows developers to use .NET tools and libraries to build web apps.
 
 Blazor apps are composed of reusable web UI components built using C#, HTML, and CSS. It enables developers to build both client and server code with  C#, allowing you to share code and libraries with both the front-end and back-end logic. This can simplify sharing data between the front-end and backend logic, enable code re-use to accelerate development and simplify maintenance. 
 

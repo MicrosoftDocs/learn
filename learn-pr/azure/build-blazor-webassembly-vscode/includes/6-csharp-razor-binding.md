@@ -7,9 +7,16 @@ Code-behind is a common term for the technique of using a separate code file to 
 Creating and Linking a Code-Behind
 First we'll need a class file that will represent our code-behind. This is a standard .NET class, however naming is very important. When we create our code-behind file we need to consider both the file name and class name as they can greatly effect our developer experience.
 
-## Blazor markup
+## Add C# to components using @code
 
-### C# in razor using the @code markup
+You can add C# code directly into a razor file using the **@code** razor markup. The @code markup is followed by a pair of code braces.
+
+    ```cshtml
+    @code
+    {
+
+    }
+    ```
 
 ## Event Handling
 
