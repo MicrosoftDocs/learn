@@ -1,16 +1,7 @@
 > [!Note]
-> **Sarah: Conversion feedback**
-> 
-> - Suggest moving the **Takeaway** at the end of the unit, to the list of Learning objectives
->    in the Introduction unit or to the abstract summary in the module index.yml.
-
-> [!Note]
 > **Sarah: Action items**
 > 
-> - Try it yourself block needa Input and Output code, and Hint text. Search on TBD.
-> - Need output cell content. Search on TBD.
-> - Last paragraph needs some tweaking regarding: "eight sections".
->
+> - Line 61: Try it yourself block needs Input and Output code, and Hint text.
 
 The final API we will use in the Text Analytics API service is the Entities API. This will retrieve attributes for documents provided to the API service.
 
@@ -70,11 +61,3 @@ The output is:
 ### Try it yourself
 
 What other entities can be retrieved with the API? Create a document setup and use the Text Analytics, Sentiment Analysis, Key Phrase, and Entities API services to retrieve the data.
-
-<br />
-
-<br /><br />
-
-***
-
-
