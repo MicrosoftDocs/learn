@@ -122,10 +122,10 @@ Create another document set of text and use the Text Analytics API to detect the
   The output is:
   
   ```Output
-  | Text | Detected languages(scores) |
-  |------|----------------------------|
-  | Trying out this new feature | English(1.0) |
-  | Creo que estoy aprendiendo. | Spanish(1.0) |
+  | Text                        | Detected languages(scores) |
+  |-----------------------------|----------------------------|
+  | Trying out this new feature | English(1.0)               |
+  | Creo que estoy aprendiendo. | Spanish(1.0)               |
   ```
   
 </details>
