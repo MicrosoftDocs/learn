@@ -2,8 +2,8 @@ Optimization problems are common in many industries, such as manufacturing, fina
 
 In the future, adiabatic quantum algorithms will run on quantum computers, once we have large-scale, high-quality devices. Today, we can emulate these algorithms by using quantum-inspired techniques on classical hardware, an approach which is known as quantum-inspired optimization (QIO). These techniques often perform better than state-of-the-art classical optimization techniques.
 
-Applying QIO to real-world problems may offer businesses new insights or help lower costs by making their processes more efficient. QIO is well-suited for these types of scenarios.
+Applying QIO to real-world problems may offer businesses new insights or help lower costs by making their processes more efficient. QIO gives us the opportunity to:
 
-- It can find the solution faster than other optimization techniques for a fixed use case and fixed quality of solution.
-- It can find a higher quality solution that other optimization techniques for a fixed problem and fixed amount of time.
-- It can use a more realistic model than other optimization techniques by extending the problem to consider more variables.
+- Find a solution faster than other optimization techniques for a fixed use case and fixed quality of solution.
+- Find a higher quality solution that other optimization techniques for a fixed problem and fixed amount of time.
+- Use a more realistic model than other optimization techniques by extending the problem to consider more variables.
