@@ -1,6 +1,6 @@
 Since its release in 1991, Python has become more than a popular, general-purpose programming language. It's also a preeminent computer language for data science. This learning path uses Python and the Python extension for Visual Studio Code to illustrate data-science tools and resources.
 
-Several examples in this learning path draw from the Python documentation. Material from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html?azure-portal=true) and examples from the [Python 3 documentation](https://docs.python.org/3/?azure-portal=true) are presented with edits and amendments. Original material from python.org is Copyright (c) 2001-2019 Python Software Foundation.
+Several examples in this learning path draw from the Python documentation. Material from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html?azure-portal=true) and examples from the [Python 3 documentation](https://docs.python.org/3/?azure-portal=true) are presented with edits and amendments. Original material from python.org is copyright (c) 2001-2019 Python Software Foundation.
 
 This introduction to Python is written for Python version 3.6.7 but generally applies to other Python 3._x_ versions.
 

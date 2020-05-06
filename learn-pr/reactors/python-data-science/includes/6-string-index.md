@@ -38,7 +38,7 @@ The output is:
 Again, a different negative index returns the character from the corresponding position:
 
 ```python
-word[-2]  # Second-last character.
+word[-2]  # Second-to-last character.
 ```
 
 The output is:
@@ -112,7 +112,7 @@ The output is:
 This example shows the use of a negative index in the start position:
 
 ```python
-word[-2:] # Characters from the second-last (included) to the end.
+word[-2:] # Characters from the second-to-last (included) to the end.
 ```
 
 The output is:
