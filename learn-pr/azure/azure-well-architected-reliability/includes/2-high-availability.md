@@ -101,7 +101,7 @@ Azure possesses three load balancing technology services that are distinct in th
 
 One or a combination of all three Azure load-balancing technologies can ensure you have the necessary options available to architect a highly available solution to route network traffic through your application.
 
-![Azure load balancing optionsAn illustration showing the different load balancing technology in Azure. The traffic manager balances the load between two regions. Within each region there is an application gateway that distributes the load among different virtual machines in the web tier based on the type of request. All images requests go to the image server pool, and any other request is directed to the default server pool. Further requests coming from the default server pools are handled by the Azure load balancer to distribute them among the virtual machines in the database tier.](../media/AzLBOptions.png)
+![An illustration showing the different load balancing technology in Azure. The traffic manager balances the load between two regions. Within each region there is an application gateway that distributes the load among different virtual machines in the web tier based on the type of request. All images requests go to the image server pool, and any other request is directed to the default server pool. Further requests coming from the default server pools are handled by the Azure load balancer to distribute them among the virtual machines in the database tier.](../media/AzLBOptions.png)
 
 ### PaaS HA capabilities
 

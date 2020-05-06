@@ -25,9 +25,6 @@ Azure offers several backup-related services and features for various scenarios,
 
 Azure Backup is a family of backup products that back up data to Azure Recovery Services vaults for storage and recovery. Recovery Service vaults are storage resources in Azure that are dedicated to holding data and configuration backups for virtual machines, servers, and individual workstations and workloads.
 
-> [!NOTE]
-> Both Azure Backup and Azure Site Recovery use Azure Recovery Service vaults for storage. Azure Backup is a general-purpose backup solution. Azure Site Recovery can coordinate replication and failover and support low RPO and RTO disaster recovery operations.
-
 Azure Backup serves as a general-purpose backup solution for cloud and on-premises workflows that run on VMs or physical servers. It's designed to be a drop-in replacement for traditional backup solutions that stores data in Azure instead of archive tapes or other local physical media.
 
 Four different products and services can use Azure Backup to create backups:

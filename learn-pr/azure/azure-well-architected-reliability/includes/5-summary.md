@@ -1,28 +1,16 @@
-We've discussed how to make your application available and recoverable by architecting for high availability, disaster recovery, and backups. Let's take a look at some of the key takeaways.
+We've discussed some key principles of the Reliability pillar of the Azure Well-Architected Framework. You've seen how to make your application available and recoverable by architecting for high availability, disaster recovery, and backups. 
 
-## High availability
+You've seen how to use availability sets and availability zones on Azure to provide HA for VM workloads. You can use load balancing services such as Azure Traffic Manager, Azure Application Gateway, and Azure Load Balancer to distribute load across available systems. PaaS services have HA built in, so leverage these services in your architecture where possible
 
-- High availability is the ability to handle the loss or severe degradation of a component of a system.
-- Evaluate your application for high availability by focusing on three key areas:
-  - Your defined SLA.
-  - The HA capabilities of your application.
-  - The HA capabilities of dependent applications.
-- Use availability sets and availability zones on Azure to provide HA for VM workloads.
-- Use load balancing services such as Azure Traffic Manager, Azure Application Gateway, and Azure Load Balancer to distribute load across available systems.
-- PaaS services have HA built in, so leverage these services in your architecture where possible.
+You've learned about disaster recovery, and how to define RPO and RTO for your application. You've learned about Azure Site Recovery and how it can provide recovery capabilities for your applications. You now understand the importance of testing your recovery plans to ensure they provide sufficient protection for your applications.
 
-## Disaster recovery
+You also learned about incorporating backup and restore into your recovery strategy for protection for isolated data loss scenarios. You've seen how you can use Azure Backup for virtual machines, and about the backup and restore capabilities for several PaaS services.
 
-- Disaster recovery is about *recovering from high-impact events* that result in downtime and loss of data.
-- Create a disaster recovery plan to define the procedures, responsibilities, and activities needed to recover from a disaster.
-- Define the RPO and RTO for your application to help determine the DR requirements for your application.
-- Use backup and replication to provide copies of your systems and data to recover to.
-- Use Azure Site Recovery for DR process recovery capabilities for your application.
-- Test your disaster recovery plan to identify gaps and relevance of steps.
+## Learn more
 
-## Backup and restore
+To learn more about the Azure Well-Architected Framework and Azure services to improve the reliability of your architecture, visit the following articles:
 
-- Use backups to restore your data as part of your DR strategy or for more isolated data loss scenarios.
-- Use Azure Backup for full VM backup, file and folder backup, and backup of systems in an on-premises environment.
-- Backup capabilities are often built into PaaS services, such as Azure SQL Database and Azure App Service. Take advantage of these backup capabilities when possible, understand their default configuration and overall capabilities.
-- Test your restoration processes and procedures regularly to ensure they are valid and sufficient.
+- [Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true)
+- [About Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview?azure-portal=true)
+- [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true)
+- [What is the Azure Backup service?](https://docs.microsoft.com/azure/backup/backup-overview)
