@@ -60,7 +60,7 @@ To validate our setup, we'll make a new Blazor WebAssembly client web app using 
 
 1. Create and navigate to a temporary folder for your test application named **CICalc**
 
-1. In the command prompt or terminal `dotnet new blazorwasm -o **CICalc**`
+1. In the command prompt or terminal `dotnet new blazorwasm -o CICalc`
 
 1. Navigate to the **CICalc** sub folder
 

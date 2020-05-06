@@ -1,4 +1,4 @@
-Now that we have 
+Now that we have the UI for our application defined, let's explore how we add logic to our web app.
 
 ## C# Code-behind in Blazor 
 
@@ -8,8 +8,8 @@ Code-behind is a common term for the technique of using a separate code file to 
 
 You can add C# code directly into a razor file using the **@code** razor markup. The @code markup is followed by a pair of code braces.
 
-    ```cshtml
-    @code
+    ```csharp
+    @code 
     {
 
     }
