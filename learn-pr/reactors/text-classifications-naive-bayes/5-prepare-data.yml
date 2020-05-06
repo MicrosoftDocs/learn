@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.text-classification-naive-bayes.5-prepare-data
+uid: learn.reactors.text-classifications-naive-bayes.5-prepare-data
 title: Prepare data
 metadata:
   title: Prepare data
-  description: Prepare data TBD.
+  description: Learn techniques and commands that help you prepare a dataset for machine learning.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

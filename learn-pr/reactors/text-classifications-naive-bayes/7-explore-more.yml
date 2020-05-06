@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.text-classification-naive-bayes.7-explore-more
+uid: learn.reactors.text-classifications-naive-bayes.7-explore-more
 title: Explore more
 metadata:
   title: Explore more
-  description: Explore more TBD.
+  description: Look at more advanced techniques to help you fine-tune your machine learning model.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.text-classification-naive-bayes.4-explore-data
+uid: learn.reactors.text-classifications-naive-bayes.4-explore-data
 title: Explore data
 metadata:
   title: Explore data
-  description: Explore data TBD.
+  description: Explore the data by using Python libraries and Python commands.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

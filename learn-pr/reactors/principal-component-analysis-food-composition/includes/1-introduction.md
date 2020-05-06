@@ -5,14 +5,14 @@ One way to accomplish this is by reducing the number of features considered in a
 ## Learning objectives
 
 > [!NOTE]
-> SARAH: Would you check the learning objectives I derived from the module content? Thanks.
+> SARAH: Would you check the learning objectives and prereqs I derived from the module content? Thanks.
 
 In this module, you will:
 
-- Learn the meaning of *principal component analysis (PCA)* and *eigenvector*, and their function in machine learning.
+- Identify the terms *principal component analysis (PCA)* and *eigenvector*, and understand their functions in machine learning.
 - Learn about PCA theory, and then apply PCA to a food composition dataset.
 - Check for correlation, and then normalize and center the data.
 
 ## Prerequisites
 
-- [Text classifications with Naive Bayes](../../text-classification-naive-bayes/index.yml)
+- Text classifications with Naive Bayes

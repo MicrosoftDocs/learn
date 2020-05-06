@@ -131,7 +131,6 @@ nutr_df.head()
 Here's the output:
 
 [ ![A screenshot that shows the results of running nutr_df.head, in table format](../media/nutr-df-head-46.png) ](../media/nutr-df-head-46.png#lightbox)
-
 5 rows × 46 columns
 
 ## Check for correlation among features
@@ -152,5 +151,5 @@ nutr_df.head()
 
 This is the output:
 
-[ ![A screenshot that shows the results of running nutr_df.head, in table format](../media/correlation-2.png) ](../media/correlation-2.png#lightbox]
+[ ![A screenshot that shows the results of running nutr_df.head, in table format](../media/correlation-2.png) ](../media/correlation-2.png#lightbox)
 5 rows × 43 columns
