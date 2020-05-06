@@ -1,8 +1,8 @@
 ## Creating Azure Cognitive Service
 
-In the Azure portal, click Create a resource and search for Speech. 
+In the Azure portal, click Create a resource and search for Speech.
 
-![An illustration is showing how to create cognitive speech service.](../media/create-cognitive-service.png)
+Create a Speech Service. 
 
 Fill out the form to create the Speech Service.
 
@@ -15,6 +15,8 @@ Fill out the form to create the Speech Service.
 **Pricing tier:** Select S0
 
 **Resource group:** Select your resource group
+
+![An illustration is showing how to create cognitive speech service.](../media/create-cognitive-service.png)
 
 
 Go to the Speech service you just created, click Keys section to copy and note down the Key1. You'll use it for IoT DevKit to access.
@@ -53,7 +55,7 @@ Click F1 to open the command palette, type, and select Arduino: Board Manager. S
 
 **Install Serial Port: ST-Link drivers**
 
-- **Windows:** Download and install the USB driver from [STMicroelectronics 	website](about:blank).
+- **Windows:** Download and install the USB driver from [STMicroelectronics website](https://www.st.com/en/development-tools/stsw-link009.html).
 - **macOS:** No driver is required for macOS.
 
 - **Ubuntu**: Run the commands in terminal and sign out and sign in for the group change to take effect:

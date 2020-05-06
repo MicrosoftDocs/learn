@@ -76,8 +76,8 @@ Use a Web browser on a different Wi-Fi enabled device (computer or mobile phone)
 
 ![An illustration is showing how to connect the network](../media/devkit-network.png)
 
-Browse 192.168.0.1. Select the Wi-Fi network that you want the IoT DevKit to connect to, type the Wi-Fi password then click Save.
+Browse **192.168.0.1**. Select the Wi-Fi network that you want the IoT DevKit to connect to, type the Wi-Fi password then click Save.
 
 ![An illustration is showing how to configure the device settings.](../media//devkit-settings.png)
 
-The IoT DevKit reboots in a few seconds. On the DevKit screen, you see the IP address for the DevKit.
+The IoT DevKit reboots in a few seconds. After done, you will see the firmware version on the screen of the kit if it has connected with Internet.
