@@ -1,10 +1,10 @@
 Static web sites have been around since the web's inception. At their essence, static web sites are made up of HTML, JavaScript, and CSS. These static assets are what are served to a user. Static Site Generation (SSG) is the process in which you create static assets. You can either create the assets manually, one by one, or use a tool or framework. So why do static web sites continue to be prominent on the web today? There are some major reasons:
 
-- Fast loading websites, our users will come to our site using different Internet speeds. A slow loading website means that our user might leave your site if it takes too long. That's lost business and revenue.
-- SEO, or search engine optimization, helps the search engines to find your site. Web application frameworks use different techniques to *pre render* content and serve the content so search engine robots can index your site.
-- Markdown is popular. Most people don't want to author documents in HTML. Instead, they want to use some high-level format. A popular format is for the moment Markdown. You need tools that can support converting from Markdown format to HTML.
-- Security, when you're making a page static you you can worry less about back-end security, because there is no back-end server.
-- Things have evolved, we can now carry out numerous things on the client-side that previously was done on the backend.
+- **Fast loading websites**, our users will come to our site using different Internet speeds. A slow loading website means that our user might leave your site if it takes too long. That's lost business and revenue.
+- **SEO, or search engine optimization**, helps the search engines to find your site. Web application frameworks use different techniques to *pre render* content and serve the content so search engine robots can index your site.
+- **Markdown is popular**. Most people don't want to author documents in HTML. Instead, they want to use some high-level format. A popular format is for the moment Markdown. You need tools that can support converting from Markdown format to HTML.
+- **Security**, when you're making a page static you can worry less about back-end security, because there is no back-end server.
+- **How we build applications have evolved**, we can now carry out numerous things on the client-side that previously was done on the backend. In the early days of the Web, when a page was requested it had to be constructed on the server from markup and calls to services and databases. Since then it's now possible to construct pages dynamically using JavaScript and markup. This has a price. Dynamically constructing a page is never as fast as serving the user an already rendered static site. It also affects SEO as search engine robots can't find dynamic pages. You need a technique to handle that.
 
 Modern sites can be massive applications. You can make sites fast to load by identifying which parts of you app can be static. The parts that can be made static can be served fast. To accomplish this, you use a pre-compilation step.
 
