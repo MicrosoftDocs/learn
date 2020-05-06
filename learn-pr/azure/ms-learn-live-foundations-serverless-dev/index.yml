@@ -90,3 +90,4 @@ units:
 - learn.azure.ms-learn-live-foundations-serverless-dev.12-configure-cosmosdb-output-bindings
 - learn.azure.ms-learn-live-foundations-serverless-dev.13-secure-during-development
 - learn.azure.ms-learn-live-foundations-serverless-dev.14-deploy-with-github-actions
+- learn.azure.ms-learn-live-foundations-serverless-dev.15-configure-cors
