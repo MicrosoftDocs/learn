@@ -1,4 +1,4 @@
-You started with a challenge of addressing common problems in the web development space including SEO, page speed load and also ensuring you had a reliable architecture building out your app.
+You started with a challenge of addressing common problems in the web development space including SEO, page load speed and also ensuring you had a reliable architecture building out your app.
 
 You evaluated the command-line tool Gatsby to address the above problems. Gatsby's approach is to produce a set of static pages that loads fast and is easy for a search engine to index effectively.
 

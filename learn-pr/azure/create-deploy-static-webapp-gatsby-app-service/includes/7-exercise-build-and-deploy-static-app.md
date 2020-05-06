@@ -134,6 +134,8 @@ Next, configure your new app and link it to your GitHub repository.
 
 1. Click the **Next: Build >** button to edit the build configuration
 
+:::image type="content" source="../media/next-build-button.png" alt-text="Go to build menu":::
+
 ### Build
 
 Next, add configuration details specific to your preferred front-end framework.
@@ -146,12 +148,17 @@ Next, add configuration details specific to your preferred front-end framework.
 
 Click the **Review + create** button
 
+:::image type="content" source="../media/review-create-button.png" alt-text="Click review + create":::
+
 ### Review + create
 
 Continue to create the application.
 
 1. Click the **Create** button
+:::image type="content" source="../media/create-button.png" alt-text="Click create button":::
+
 1. Once the deployment is complete, click the **Go to resource** button
+:::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource":::
 
 ### Review the GitHub Action
 
