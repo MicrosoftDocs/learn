@@ -1,10 +1,5 @@
 Lets build our model! Here we will download the dataset, create our Azure service, upload the data, and train the model.
 
-## First sign up for a free Azure Account
-
-- Sign up for [Azure for students](https://azure.microsoft.com/free/students/?WT.mc_id=birds-learn-cassieb) and get \$100 in Azure for 12 months with free tier of services - no credit card required with academic verification!
-- Or sign up for a [free Azure account here](https://azure.microsoft.com/free/?WT.mc_id=birds-learn-cassieb)!
-
 ## 1. Download Data
 
 The first thing we need to create our model is to get data! We are going to use a subset of the NA Bird dataset from Cornell to train our model. Download the zip file with our dataset from [here](https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species/raw/master/bird_photos.zip).
