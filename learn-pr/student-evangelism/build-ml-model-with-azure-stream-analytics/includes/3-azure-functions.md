@@ -91,7 +91,7 @@ Azure Functions can be written in the Azure portal or written externally using t
 
                 request(options, (err, result, body) => {
                     if (!err) {
-                        var probability =  body.predictions.find(p => p.tagName.toLowerCase() === 'polar bear').probability;          
+                        var probability =  body.predictions.find(p => p.tagName.toLowerCase() === 'polar-bear').probability;
                         var isPolarBear = probability > 0.8; // 80% threshold
 
                         if (isPolarBear) {
