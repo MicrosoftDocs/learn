@@ -15,8 +15,8 @@ In fact, we can construct a whole new feature space around this cluster, defined
 
 You will need to clean and prepare the data in order to conduct PCA on it, so pandas will be essential. You will also need NumPy, a bit of scikit-learn, and pyplot.
 
-> [!NOTE]
-> Review [Visual Studio Code environment set up to run Python and Jupyter notebooks](../../python-data-science/1-introduction.yml) for learn environment setup steps.
+> [!TIP]
+> Review steps TBD link for setting up the learn environment.
 
 To add these libraries, run this code:
 

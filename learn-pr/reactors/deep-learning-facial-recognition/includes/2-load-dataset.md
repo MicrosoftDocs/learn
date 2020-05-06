@@ -1,7 +1,7 @@
 The first step is to import facial images from the dataset. LFW contains more than 13,000 facial images collected from the Web. Of the more than 5,000 people represented in the dataset, 1,680 have two or more facial images, while only five have 100 or more. We'll set the minimum number of faces per person to 100, which means that five sets of faces corresponding to five famous people will be imported. Each facial image is labeled with the name of the person that the face belongs to.
 
 > [!TIP]
-> Review [Visual Studio Code environment set up to run Python and Jupyter notebooks](../../python-data-science/1-introduction.yml) for learn environment setup steps.
+> Review steps TBD link for setting up the learn environment.
 
 ```python
 import numpy as np

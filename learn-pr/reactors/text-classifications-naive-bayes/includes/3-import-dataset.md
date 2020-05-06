@@ -5,8 +5,8 @@ In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics
 | ham |	What you doing?how are you? |
 | ham |	Ok lar... Joking wif u oni... |
 
-> [!NOTE]
-> Review [Visual Studio Code environment set up to run Python and Jupyter notebooks](../../python-data-science/1-introduction.yml) for learn environment setup steps.
+> [!TIP]
+> Review steps TBD link for setting up the learn environment.
 
 Let’s import pandas and load the dataset. The path name is case-sensitive.
 

@@ -1,7 +1,7 @@
 To get started, we'll load the dataset, which includes importing the NumPy and pandas Python libraries. Then, we'll train the SVM model for image classification by using the faces in the dataset.
 
 > [!TIP]
-> Review [Visual Studio Code environment set up to run Python and Jupyter notebooks](../../python-data-science/1-introduction.yml) for learn environment setup steps.
+> Review steps TBD link for setting up the learn environment.
 
 ## Load the dataset
 
