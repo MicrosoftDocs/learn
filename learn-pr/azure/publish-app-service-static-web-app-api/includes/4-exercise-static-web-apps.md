@@ -6,6 +6,8 @@ Before publishing your app, create routing rules that include a fallback route.
 
 ### Create the file routes.json
 
+1. Open the folder _my-static-web-app_ in Visual Studio Code
+
 ::: zone pivot="angular"
 
 1. In Visual Studio Code, right-click the folder _angular-app/src/_

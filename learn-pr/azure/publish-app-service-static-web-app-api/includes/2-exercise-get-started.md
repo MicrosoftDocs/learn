@@ -14,6 +14,7 @@ This tutorial makes it easy for you to create a new repository by using a GitHub
 
 You just created a GitHub repository named **my-static-web-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
 
+1. Open a terminal on your computer.
 1. Start by cloning the GitHub repository to your computer.
 
    ```bash
