@@ -26,11 +26,11 @@ If you don't have enough data or not diverse enough data your model can become o
 
 ### Testing with training data
 
-As mentioned in the overfitting example, if you test with the same data you trained with, its going to look like it is performing well but when you deploy the model to production it will most likely do poorly..
+As mentioned in the overfitting example, if you test with the same data you trained with, its going to look like it is performing well but when you deploy the model to production it will most likely do poorly.
 
 ### Bad data
 
-Another common mistake is training with bad data. There are ways that your data can actually hurt your model and accuracy. Data that is noisy can cause issues because there is too much information that is not useful and is causing model confusion. More data is only better if the data is good data. This mean could mean throwing out bad data or features to improve your model accuracy.
+Another common mistake is training with bad data. There are ways that your data can actually hurt your model and accuracy. Data that is noisy can cause issues because there is too much information that is not useful and is causing model confusion. More data is only better if the data is good data. This could mean throwing out bad data or features to improve your model accuracy.
 
 ## Test the model
 
