@@ -36,7 +36,8 @@ Within the @code markup, add the following method to calculate compound interest
     {
         var total = Principal * Math.Pow(1 + InterestRate / (1200.0), Years * 12);
         Total = total.ToString("C");
-    }```
+    }
+    ```
 
 ## Add binding to the input fields
 
