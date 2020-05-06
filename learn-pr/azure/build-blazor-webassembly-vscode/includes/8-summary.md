@@ -2,8 +2,10 @@ In this module, we setup our development environment to be able to create and bu
 
 ## Learn More
 - [Blazor homepage](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
+- [Introduction to ASP.NET Core Blazor](https://docs.microsoft.com/aspnet/core/blazor/?)
 - [Host and deploy ASP.NET Core Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/host-and-deploy/blazor/webassembly)
 - [Project structure for Blazor apps](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/project-structure)
+- [Build Progressive Web Applications with ASP.NET Core Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/progressive-web-app)
 
 //https://www.codemag.com/Article/1809061/Re-Assembling-the-Web-with-Web-Assembly-and-Blazor
 //https://blazor-university.com/components/two-way-binding/

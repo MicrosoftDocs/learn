@@ -72,6 +72,6 @@ To validate our setup, we'll make a new Blazor WebAssembly client web app using 
 
 1. Open a web browser to http://localhost:5000   
 
-![Image showing the default Blazor WebAssembly client app running in a browser](../media/default-blazor.png)
+![Image showing the default Blazor WebAssembly client app running in a browser](../media/hello-blazor.png)
 
 We'll use this Blazor app in the following exercises

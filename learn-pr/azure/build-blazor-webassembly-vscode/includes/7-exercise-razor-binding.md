@@ -75,3 +75,5 @@ Finally, we bind the Calculate button using the @onclick event handler.
 1. Use the calculator - try changing the input parameters and press the calculate button.
 
 Congratulations, you successfully created a razor component with HTML, C# logic, binding and an event.
+
+![Image showing Blazor application running the browser](../media/calc-app.png)

@@ -48,6 +48,8 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 
 1. Open a web browser to http://localhost:5000  
 
+![Image showing Blazor application running the browser](../media/create-new-component.png)
+
 ## Add HTML UI 
     ```cshtml
     <table class="table">

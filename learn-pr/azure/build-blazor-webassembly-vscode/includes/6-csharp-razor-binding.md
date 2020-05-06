@@ -16,15 +16,10 @@ First we'll need a class file that will represent our code-behind. This is a sta
 You can handle client-side script events and route them to functions in your code.
 
 
-## Blazor binding 
+## Razor data binding 
 
+Razor components can data bind HTML elements to C# fields, properties or Razor expression values. This enables two-way synchronization between the HTML and .NET.
 
+Data is pushed from the HTML to .NET when the component is rendered. Since components render themselves after event handler code executes, property updates are usually reflected in the UI immediately after an event handler is triggered.
 
-Notifying parent components when state changes
-To fix this, we need to tell Blazor that the consuming page wants to use two-way binding. Instead of simply setting the CurrentCounterValue we now tell Blazor to bind (i.e. two-way bind) to the value instead. To use two-way binding on a parameter simply prefix the HTML attribute with the text @bind-. This tells Blazor it should not only push changes to the component, but should also observe the component for any changes and update its own state accordingly.
-
-<MyFirstComponent @bind-CurrentCounterValue=currentCount/>
-Note: The @ symbol is needed when assigning code values (rather than constants) to parameters. Previously our mark-up contained CurrentCounterValue=@currentCount, but once we prepend the parameter name with @bind- the @ symbol before currentCount becomes unnecessary.
-
-Running the app now will show the following error in the browser’s console window.
-
+### @bind
