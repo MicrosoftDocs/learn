@@ -18,7 +18,7 @@ You can handle client-side script events and route them to functions in your cod
 
 ## Blazor binding 
 
-//https://blazor-university.com/components/two-way-binding/
+
 
 Notifying parent components when state changes
 To fix this, we need to tell Blazor that the consuming page wants to use two-way binding. Instead of simply setting the CurrentCounterValue we now tell Blazor to bind (i.e. two-way bind) to the value instead. To use two-way binding on a parameter simply prefix the HTML attribute with the text @bind-. This tells Blazor it should not only push changes to the component, but should also observe the component for any changes and update its own state accordingly.

@@ -1,4 +1,4 @@
-Now that we have our development enviroment setup, we'll explore the structure of a Blazor WebAssembly project and learn how to add new pages.
+Now that we have our development environment setup, we'll explore the structure of a Blazor WebAssembly project and learn how to add new pages.
 
 ## Blazor WebAssembly project file
 
@@ -46,7 +46,3 @@ Razor Pages are made up of HTML templates mixed with C# code prefixed by @. You 
 ## Blazor Navigation
 
 
-
-//https://www.codemag.com/Article/1809061/Re-Assembling-the-Web-with-Web-Assembly-and-Blazor
-
-https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure

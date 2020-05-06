@@ -14,7 +14,7 @@ We'll start by downloading the .NET Core 3.1 SDK, this includes the .NET Core SD
 
 ## Install VS Code extensions
 
-We need to install two VS code extensions to develop Blazor WebAssembly applications: the Microsoft C# extension and the JavaScript dugger extension.
+We need to install two VS code extensions to develop Blazor WebAssembly applications: the Microsoft C# extension and the JavaScript debugger extension.
 
 ### Install the C# for Visual Studio Code extension
 

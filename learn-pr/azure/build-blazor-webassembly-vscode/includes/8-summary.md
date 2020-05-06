@@ -1,8 +1,9 @@
-In this module, 
+In this module, we setup our development environment to be able to create and build Blazor WebAssembly web apps. We then created a new Razor component, added HTML and C# to the .razor file, and used binding to sync user input to the calculator logic. You know how understand the fundamentals of building Blazor WebAssembly apps and can use your HTML and C# knowledge to build more complex client web apps.
 
+## Learn More
+- [Blazor homepage](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
+- [Host and deploy ASP.NET Core Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/host-and-deploy/blazor/webassembly)
+- [Project structure for Blazor apps](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/project-structure)
 
-
-
-https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/project-structure
-
-https://exceptionnotfound.net/learning-blazor-by-building-connect-four-in-asp-net-core/
+//https://www.codemag.com/Article/1809061/Re-Assembling-the-Web-with-Web-Assembly-and-Blazor
+//https://blazor-university.com/components/two-way-binding/
