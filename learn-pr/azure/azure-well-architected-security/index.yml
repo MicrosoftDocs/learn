@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-security
 metadata:
-  title: Azure Well Architected - Security
+  title: Azure Well Architected Framework - Security
   description: Discover the tools that Azure provides to help you design a secure environment throughout your infrastructure, data, network, and applications.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Design for security in Azure
+title: Azure Well Architected Framework - Security
 summary: Learn how to incorporate security into your architecture design, and discover the tools that Azure provides to help you create a secure environment through all the layers of your architecture.
 abstract:  | 
   In this module, you will:
