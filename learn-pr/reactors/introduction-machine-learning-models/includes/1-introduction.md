@@ -1,10 +1,3 @@
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Add Learning objectives
-> - Add Prerequisites
->
-
 You have now made it to the section on machine learning (ML). ML and the branch of computer science in which it resides, artificial intelligence (AI), are so central to data science that ML/AI and data science are synonymous in the minds of many people. However, the preceding sections have hopefully demonstrated that there are a lot of other facets to the discipline of data science apart from the prediction and classification tasks that supply so much value to the world. (Remember, at least 80 percent of the effort in most data-science projects will be composed of cleaning and manipulating the data to prepare it for analysis.)
 
 That said, ML is fun! In this section, and the next one on data science in the cloud, you will get to play around with some of the "magic" of data science and start to put into practice the tools you have spent the last five sections learning. Let's get started!
