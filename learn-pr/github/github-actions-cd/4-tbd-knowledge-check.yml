@@ -3,48 +3,51 @@ uid: learn.github.github-actions-cd.4-tbd-knowledge-check
 title: Check your knowledge
 metadata:
   title: Check your knowledge
-  description: TBD.
-  ms.date: 01/01/2020
-  author: tpetchel
-  ms.author: thpetche
+  description: Check what you've learned.
+  ms.date: 05/19/2020
+  author: jamcneil
+  ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/4-tbd-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Q1"
+  - content: "How do you grant your GitHub repository access to Azure?"
     choices:
-    - content: "C1"
+    - content: "It happens automatically"
+      isCorrect: false
+      explanation: "You must grant access to Azure with credentials."
+    - content: "Authenticate to Azure with GitHub"
+      isCorrect: false
+      explanation: "GitHub can't grant access to Azure."
+    - content: "Manage credentials using GitHub Secrets and use that secret name in the workflow"
       isCorrect: true
-      explanation: "E1"
-    - content: "C2"
+      explanation: "Storing your credentials in GitHub Secrets keeps them safe and assures they will not be exposed in plain text."
+    - content: "Manage credentials by generating tokens locally"
       isCorrect: false
-      explanation: "E2"
-    - content: "C3"
-      isCorrect: false
-      explanation: "E3"
-  - content: "Q2"
+      explanation: "You can't generate a local token that GitHub can use to authenticate onto Azure."
+  - content: "What can trigger a workflow for deploying to Microsoft Azure?"
     choices:
-    - content: "C1"
+    - content: "Only commit events"
+      isCorrect: false
+      explanation: "Commit events can trigger a workflow, but they are not the only thing that can be used as a trigger."
+    - content: "Any events that affect the repository's default branch"
+      isCorrect: false
+      explanation: "Events affecting the default branch can be used to trigger a workflow, but they are not the only thing that can be used as a trigger."
+    - content: "Any event, just like any other Action"
       isCorrect: true
-      explanation: "E1"
-    - content: "C2"
-      isCorrect: false
-      explanation: "E2"
-    - content: "C3"
-      isCorrect: false
-      explanation: "E3"
-  - content: "Q3"
+      explanation: "Any webhook event or event within GitHub can trigger a workflow"
+  - content: "How do you make sure that your Azure credentials are not stored in plain text in your repository?"
     choices:
-    - content: "C1"
+    - content: "Use GitHub Secrets to securely store your Azure credentials."
       isCorrect: true
-      explanation: "E1"
-    - content: "C2"
+      explanation: "Storing your credentials in GitHub secrets allows you to use the credential in a workflow without exposing the credential in plain text."
+    - content: "Use your GitHub token to authenticate into Azure"
       isCorrect: false
-      explanation: "E2"
-    - content: "C3"
+      explanation: "GitHub tokens can't authenticate to Azure"
+    - content: "Put your credentials directly in your workflow file."
       isCorrect: false
-      explanation: "E3"
+      explanation: "Putting your credentials in your workflow file exposes them to anyone that can read the file."

@@ -1,12 +1,12 @@
 In this module, you looked at GitHub Actions for implementing a continuous delivery solution. 
 
-You learned:
+You learned about:
 
-- options for Triggering a continuous delivery GitHub Workflow
-- to control execution with job conditionals
-- to deploy to Microsoft Azure with a GitHub deploy action
-- to store credentials with GitHub Secrets
-- to create and destroy Azure resources with GitHub Actions
+- options for triggering a continuous delivery GitHub Workflow
+- controlling workflow execution with job conditionals
+- deploying to Microsoft Azure with a GitHub deploy action
+- storing credentials with GitHub Secrets
+- how to create and destroy Azure resources with GitHub Actions workflows
 
 ## Learn more
 

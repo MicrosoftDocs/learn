@@ -1,27 +1,29 @@
-Continuous delivery (CD) is the process of getting code changes to the customer quickly and safely. To do this, development teams might set up a workflow where code is checked in to a repository, the project is built, the unit tests are run, the package is deployed to a testing or staging environment, and finally the package is deployed to production.  All of these tasks are automated to enusre they are run often and that if a problem is encountered in one task, it does not move forward to the next task. 
+Continuous delivery (CD) is the process of getting code changes to the customer quickly and safely.
 
-In this module you will learn how to use GitHub Actions and GitHub workflows to implement a continuous delivery solution to deploy a container-based webb app to Microsoft Azure Web Apps.
+Suppose you work with a software development team that is working on your company's product support web site. You have set up continuous integration using GitHub Actions and workflows, and now you need to implement continuous delivery. In your continuous integration workflow, you've saved off a container image. You can now create a continuous delivery workflow to deploy this container to your staging and production environments. You talked with IT about getting these environments created and torn down as needed and you've all decided to use GitHub Actions workflows to support *infrastructure as code*.
+
+In this module, you learn how to use GitHub Actions workflows to implement a continuous delivery solution to deploy a container-based web app to Microsoft Azure Web Apps. You also automate the creation and teardown of the deployment environments using a workflow.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you:
 
-- Learn about options for Triggering a continuous delivery GitHub Workflow
-- Learn to control execution with job conditionals
-- Learn about deploying to Microsoft Azure with a GitHub deploy action
-- Learn about storing credentials with GitHub Secrets
-- Learn to create and destroy Azure resources with GitHub Actions
+- discover options for triggering a continuous delivery GitHub Workflow
+- control workflow execution with job conditionals
+- deploying to Microsoft Azure with a GitHub deploy action
+- store credentials with GitHub Secrets
+- create and destroy Azure resources with GitHub Actions workflows
 
 ## Prerequisites
 
-This module assumes you have completed the (module 1 -hello) and (module 2 - ci) module or that you are already familiar with GitHub Actions and GitHub Workflow basics used in continuous integration.
+This module assumes you've completed the [Automate development tasks by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-hello/?azure-portal=true) module and [Build continuous integration workflows by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-ci/?azure-portal=true) module or that you're already familiar with GitHub Actions and GitHub Workflow basics used in continuous integration.
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub
   - (For more information about GitHub, see [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true).)
-- Basic familiarity with GitHub Actions and GitHub Workflows
-  - If you are unfamiliar with GitHub Actions or GitHub Workflows, check out ..... (hello world module)
-- Basic familiarity with continuous integration using GitHub Actions and GitHub Workflows
-  - If you are unfamiliar with continuous integration using GitHub Actions or GitHub Workflows, check out ..... (ci module)
+- Basic familiarity with GitHub Actions and workflows
+  - If you aren't familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-hello/?azure-portal=true) module.
+- Basic familiarity with continuous integration using GitHub Actions and workflows
+  - If you're unfamiliar with continuous integration using GitHub Actions and workflows, check out [Build continuous integration workflows by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-ci/?azure-portal=true)
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
-- An understanding of [Azure Fundamentals](https://docs.microsoft.com/learn/paths/azure-fundamentals/?aure-portal=true)
+- An understanding of [Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/paths/azure-fundamentals/?aure-portal=true)
