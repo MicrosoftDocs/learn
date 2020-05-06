@@ -1,10 +1,10 @@
-In this exercise, we'll add our C# logic to the razor page. Open folder for your compound interest project you created in the previous exercise.
+In this exercise, we'll add our C# logic to our compound interest razor component. Open the folder for the compound interest project you created in the previous exercise.
 
 ## Add code markup to a razor page
 
 1. Open **CompoundInterest.razor**
 
-1. Below the table add a **@code** markup with open and closing braces
+1. Below the table definition add an **@code** markup with open and closing braces
 
     ```csharp
     @code 
@@ -15,7 +15,7 @@ In this exercise, we'll add our C# logic to the razor page. Open folder for your
 
 ## Add member variables for compound interest calculation
 
-We'll add several variables which will be used to gather input from the user. Add the following within the @code markup
+We'll add several C# variables to store input values from the user. Add the following within the @code markup
     ```csharp
     @code
     {
@@ -38,7 +38,9 @@ Within the @code markup, add the following method to calculate compound interest
         Total = total.ToString("C");
     }```
 
-##
+## Add binding to the input fields
+
+We're now ready to bind the variables we defined in the **@code** markup to our HTML input fields. Use the **@bind** markup on each input field using the appropriate variable.
 
     ```csharp
     <tr>
@@ -57,6 +59,19 @@ Within the @code markup, add the following method to calculate compound interest
         <th>Total:</th>
         <th>@Total</th>
     </tr>
+    ```
 
+Finally, we bind the Calculate button using the @onclick event handler.
+    ```csharp
     <button class="btn btn-primary" @onclick="Calculate">Calculate</button>
     ```
+
+## Run the application 
+
+1. In the VS Code terminal, execute `dotnet run`
+
+1. Open a web browser to http://localhost:5000  
+
+1. Use the calculator - try changing the input parameters and press the calculate button.
+
+Congratulations, you successfully created a razor component with HTML, C# logic, binding and an event.
