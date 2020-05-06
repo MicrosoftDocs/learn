@@ -79,6 +79,14 @@ units:
 - learn.azure.ms-learn-live-foundations-serverless-dev.1-execute-first-function-in-portal
 - learn.azure.ms-learn-live-foundations-serverless-dev.2-setup-local-development
 - learn.azure.ms-learn-live-foundations-serverless-dev.3-create-function-endpoint
-- learn.azure.ms-learn-live-foundations-serverless-dev.4-setup-cosmosdb
 - learn.azure.ms-learn-live-foundations-serverless-dev.4-configure-http-action
 - learn.azure.ms-learn-live-foundations-serverless-dev.5-configure-url-route
+- learn.azure.ms-learn-live-foundations-serverless-dev.6-read-input-data-from-url
+- learn.azure.ms-learn-live-foundations-serverless-dev.7-return-data-to-caller
+- learn.azure.ms-learn-live-foundations-serverless-dev.8-post-complex-data
+- learn.azure.ms-learn-live-foundations-serverless-dev.9-add-remaining-endpoints
+- learn.azure.ms-learn-live-foundations-serverless-dev.10-setup-cosmosdb
+- learn.azure.ms-learn-live-foundations-serverless-dev.11-configure-cosmosdb-bindings
+- learn.azure.ms-learn-live-foundations-serverless-dev.12-configure-cosmosdb-output-bindings
+- learn.azure.ms-learn-live-foundations-serverless-dev.13-secure-during-development
+- learn.azure.ms-learn-live-foundations-serverless-dev.14-deploy-with-github-actions

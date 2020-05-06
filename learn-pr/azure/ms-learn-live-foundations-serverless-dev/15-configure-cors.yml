@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.ms-learn-live-foundations-serverless-dev.4-setup-cosmosdb
+uid: learn.azure.ms-learn-live-foundations-serverless-dev.15-configure-cors
 
 # Use the format "Prepare for session x - [Title of the session]" (do not use a colon in the title, it will make VScode show YAML errors).
-title: Setup a CosmosDB instance used by the API
+title: Configure CORS to grant client application access to the API
 
 metadata:
   # Use the same as the "title".
-  title: Setup a CosmosDB instance used by the API
+  title: Configure CORS to grant client application access to the API
   # Same as "title".
-  description: Setup a CosmosDB instance used by the API
+  description: Configure CORS to grant client application access to the API
   
   # Update this after changing the file.
   ms.date: 4/29/2020
@@ -23,11 +23,10 @@ metadata:
   ms.prod: learning-azure
 
 azureSandbox: true
-interactive: bash
 
 # Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
 # It's best to follow the instructions and take the time.
-durationInMinutes: 10
+durationInMinutes: 5
 
 content: |
-  [!include[](includes/4-setup-cosmosdb.md)]
+  [!include[](includes/15-configure-cors)]

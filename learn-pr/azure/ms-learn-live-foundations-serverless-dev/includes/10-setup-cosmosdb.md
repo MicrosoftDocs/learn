@@ -1,3 +1,7 @@
+# Setup CosmosDB
+
+Our API reads data from a CosmosDB instance. You must create a database instance in order to complete all the exercises.
+
 ## Objectives
 
 - Setup a CosmosDB instance on Azure for use with the client app
