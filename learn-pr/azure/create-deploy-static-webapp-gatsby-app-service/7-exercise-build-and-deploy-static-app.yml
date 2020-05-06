@@ -6,10 +6,10 @@ metadata:
   description: This exercise takes us through initializing a Git repo to pushing it to GitHub to finally deploy the repo to the Cloud.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 05/08/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-build-and-deploy-static-app.md)]

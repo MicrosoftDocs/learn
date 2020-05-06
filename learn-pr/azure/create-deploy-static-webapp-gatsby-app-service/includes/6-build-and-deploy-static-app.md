@@ -19,6 +19,9 @@ Static Web Apps is an Azure service that allows you to take some static files an
 
 Speaking of build, the service actually does the build step for you so there's no need to build anything up front. How it does this is by locating the `build` command in the `package.json` of the Gatsby project. All you need to do is put your project in a GitHub repository.
 
+> [!NOTE]
+> Azure Static Web Apps is currently in preview.
+
 Currently your code sits in a directory on your machine, so you'll need to do a few things to deploy Azure:
 
 1. **Initialize a Git repository**: Right now, your Gatsby project is in a directory that hasn't been initialized as a Git repository.
