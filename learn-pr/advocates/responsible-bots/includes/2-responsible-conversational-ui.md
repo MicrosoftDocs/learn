@@ -1,10 +1,12 @@
-To help developers create responsible bots, Microsoft has outlined [10 guidelines for developers of Conversational UI][Guidelines10]. We will not cover all principles here, but outline the major ones that we will need in this course. You can learn more about responsible conversational UI by viewing [this great interactive demo][InteractiveDemo].
+To help developers create responsible bots, Microsoft has outlined [10 guidelines for developers of Conversational UI][Guidelines10]. We'll only cover the major principles you'll need for this course, but we encourage you to learn more about responsible conversational UI by viewing [this interactive demo][InteractiveDemo].
 
-It is important for developers to be aware of responsible conversational UI principles, because, as one of the principles say, **developers are accountable for the bots they deploy**.
+"Developers are accountable for the bots they deploy" is one of the major principles of responsible bot creation. It's important for developers to be aware of responsible conversational UI principles.
 
-### Ensure bot has a clear goal
+## Give your bot a clear goal
 
-When developing a bot, you should clearly understand its purpose, and you should also articulate this purpose to the users. When using a bot, users should be aware of its limitations, so that they do not have higher expectations, which leads to disappointment and/or misuse of the bot.
+When developing a bot, you should clearly understand its purpose and communicate this purpose to users. When they interact with a a bot, users who aware of its limitations won't have overly high expectations. This clarity can help avoid disappointment and misuse of the bot.
+
+***
 
 It is especially important when you are dealing with so-called **consequential outcomes**, when a conversation with a bot can have a significant impact on user's life. Examples include bots in such problem domains as healthcare or education.
 
@@ -12,11 +14,11 @@ For example, in the case of our **GeoFriend** bot, it is important to articulate
 
 Clear goal also prevents the user from starting general conversation with a bot about unrelated topics. It is much easier to develop a bot that is good at solving specific tasks, than trying to handle general conversation.
 
-### Make it clear that users talks to a bot
+## Make it clear that users talks to a bot
 
 To avoid high expectations, it is advisable to make it clear in the first place that user is talking to a bot, and not a human being. This will help user focus on solving a specific task, and not on the emotional relationship with the bot. The bot should normally support some traditional phrases like greeting and ending a conversation, but not much more than that. Handling general conversation can be implemented using [Project Personality Chat][PersonalityChat], which we will use later in the course to enhance our **GeoFriend** bot.
 
-### Build trust
+## Build trust
 
 Also, clearly introducing the bot in the beginning of a conversation helps to **build trust** between a user and a bot. Another useful trick would be using an icon that shows a robot icon instead of a human face, which will remind user of whom he/she is talking to.
 
