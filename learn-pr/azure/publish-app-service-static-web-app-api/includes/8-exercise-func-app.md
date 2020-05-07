@@ -26,7 +26,7 @@ You just created the **api** git branch.
 
 ### Complete the Azure Functions API
 
-To complete the API, you'll start by moving the starter API code to a folder named _api_. This is the folder name you entered when you created the Static Web Apps instance.
+To complete the API, you'll start by moving the starter API code to a folder named _api_. This is the folder name you entered for the **api_location** when you created the Static Web Apps instance.
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Terminal: Create New Integrated Terminal**
