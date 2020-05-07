@@ -36,7 +36,7 @@ quiz:
       isCorrect: false
       explanation: "A drivers license can't be used for MFA."
     - content: 'A time-based one-time password'
-      isCorrect: false
+      isCorrect: true
       explanation: 'Applications that generate time-based one-time passwords are great to use for MFA.'
     - content: 'Your account number'
       isCorrect: false
