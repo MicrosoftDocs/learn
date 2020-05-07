@@ -13,7 +13,7 @@ durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Answer the questions below to check your understanding.
+  title: Answer the following questions to check your understanding.
   questions:
     - content: "What is the purpose of artificial intelligence?"
       choices:
@@ -25,13 +25,13 @@ quiz:
           explanation: "Correct!"
     - content: "Which of the following options <i>isn't</i> an indicator that Azure Cognitive Services Custom Vision provides to help you understand how well the model performs?"
       choices:
-        - content: "Confusion matrix"
+        - content: "A confusion matrix"
           isCorrect: true
           explanation: "Correct! A confusion matrix is a valid metric, but it isn't provided by Azure Cognitive Services Custom Vision."
         - content: "Recall"
           isCorrect: false
           explanation: "Incorrect. The recall metric is provided."
-        - content: "AP"
+        - content: "Average precision, or AP"
           isCorrect: false
           explanation: "Incorrect. The AP metric is provided."
         - content: "Precision"
