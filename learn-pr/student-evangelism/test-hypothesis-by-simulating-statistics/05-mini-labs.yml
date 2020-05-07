@@ -11,4 +11,4 @@ metadata:
   ms.prod: azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/05-mini-lab.md)]
+  [!include[](includes/05-mini-labs.md)]

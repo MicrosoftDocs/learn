@@ -1,14 +1,57 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.introduction
-title: Introduction
+uid: learn.student-evangelism.test-hypothesis-by-simulating--statistics.decisions-and-uncertainty
+title: Decisions And Uncertainty
 metadata:
-  title: Introduction
-  description: Undertand what models and statistics are with two examples
+  title: Decisions And Uncertainty
+  description: Learn how to make a decision in hypothesis testing
   ms.date: 19/03/2020
-  author: leestott
-  ms.author: leestott
+  author: sauravmittal
+  ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
-  [!include[](includes/01-introduction.md)]
+  [!include[](includes/03-decisions-and-uncertainty.md)]
+content: "Let's try to develop a general framework for decision making, into which all our examples will fit.
+
+Fill in the following blanks by selecting the appropriate word. Options may not be used at all.
+
+The basic structure of testing a hypothesis is the following:"
+quiz:
+  questions:
+    - content: '______A______: For a fully specified chance model under which you can simulate the data, it hypothesizes that the data were generated as if by random selection, according to the particulars of the chance model.'
+      choices:
+        - content: 'Null Hypothesis'
+          isCorrect: true
+          explanation: Correct, the null hypothesis is the one we usually simulate under and assumes randomness.
+        - content: 'Alternative Hypothesis'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Test Statistic'
+          isCorrect: false
+          explanation: Incorrect.
+    - content: '______B______: A value that can be computed for the observed data and and also for random samples from the chance model.'
+      choices:
+        - content: 'Null Hypothesis'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Alternative Hypothesis'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Test Statistic'
+          isCorrect: true
+          explanation: The test statistic computed from the observed data is called the Observed Value of the Test Statistic, while the test statistics computed from random samples from the chance model is called the simulated test statistic.
+    - content: '______C______: The probability under the chance model that the test statistic is equal to the observed value of the test statistic or ever further in the direction of the alternative hypothesis.'
+      choices:
+        - content: 'P-value Cutoff'
+          isCorrect: false
+          explanation: 'Incorrect'
+        - content: 'Empirical Distribution'
+          isCorrect: false
+          explanation: 'Incorrect'
+        - content: 'Probability Distribution'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'P-Value'
+          isCorrect: true
+          explanation: Correct.

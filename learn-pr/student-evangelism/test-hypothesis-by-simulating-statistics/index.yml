@@ -12,11 +12,11 @@ title: Test Hypothesis By Simulating  Statistics
 summary: Learn how to test hypothesis through simulation of statistics
 abstract: |
   In this module, you will:
-  - Motivate the need and use of Hypothesis Testing. 
+  - Motivate the need and use of Hypothesis Testing.
   - Understand how to set up & run hypothesis tests from scratch through multiple in-depth case studies.
   - Learn how to make decisions with uncertain results through P-values & P-value cutoffs.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/student-evangelism/test-hypothesis-by-simulating-statistics.svg
 levels:
 - beginner
 roles:
@@ -30,7 +30,7 @@ units:
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.multiple-categories
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.decisions-and-uncertainty
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.error-probabilities
-- learn.student-evangelism.test-hypothesis-by-simulating-statistics.mini-lab
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.mini-labs
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.summary
 badge:
-  uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.badge
+  uid: learn.test-hypothesis-by-simulating-statistics.badge

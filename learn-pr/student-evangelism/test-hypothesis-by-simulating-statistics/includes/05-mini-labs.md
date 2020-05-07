@@ -6,7 +6,7 @@ For convenience, you can launch your VS Code environment by clicking the link be
 
 Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking" target="_blank" rel="noopener">Visual Studio Online</a>
 
-In your online Visual Studio Code environment, you will find "mini lab" jupyter notebooks that will allow you to apply the concepts that you've learned from this module. You will be able to code your solutions in the notebook directly and receive real-time feedback from our autograder by running the corresponding grader cells.
+In your online Visual Studio Code environment, you will find "mini lab" Jupyter notebooks that will allow you to apply the concepts that you've learned from this module. You will be able to code your solutions in the notebook directly and receive real-time feedback from our autograder by running the corresponding grader cells.
 
 To access the mini labs for this module, you will need to do the following:
 

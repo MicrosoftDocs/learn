@@ -11,4 +11,4 @@ metadata:
   ms.prod: azure
 durationInMinutes: 5
 content: |
-  [!include[](berkeley-lab.md)]
+  [!include[](includes/berkeley-lab.md)]
