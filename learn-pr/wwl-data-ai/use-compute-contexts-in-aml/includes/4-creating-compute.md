@@ -2,9 +2,9 @@ The most common ways to create or attach a compute target are to use the **Compu
 
 ## Creating a managed compute target with the SDK
 
-A *managed* compute target is one that is managed by Azure Machine Learning, such as an Azure Machine Learning training cluster.
+A *managed* compute target is one that is managed by Azure Machine Learning, such as an Azure Machine Learning compute cluster.
 
-To create an Azure Machine Learning training cluster compute target, use the **azureml.core.compute.ComputeTarget** class and the **AmlCompute** class, like this:
+To create an Azure Machine Learning compute cluster, use the **azureml.core.compute.ComputeTarget** class and the **AmlCompute** class, like this:
 
 ```python
 from azureml.core import Workspace

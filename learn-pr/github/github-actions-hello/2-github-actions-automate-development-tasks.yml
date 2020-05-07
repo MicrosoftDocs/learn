@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-hello.2-github-actions-automate-development-tasks
+title: How does GitHub Actions automate development tasks?
+metadata:
+  title: How does GitHub Actions automate development tasks?
+  description: Learn the types of actions you can use and where to find them. Look at examples of these types of actions and how they fit in a workflow.
+  ms.date: 05/19/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-github-actions-automate-development-tasks.md)]

@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-hello.4-knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Check your knowledge.
+  ms.date: 05/19/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary function of a GitHub Action?"
+    choices:
+    - content: "To automate software development tasks"
+      isCorrect: false
+      explanation: "GitHub Actions are used to automate software development tasks, but they also facilitate CI/CD and integrate IaC."
+    - content: "To facilitate continuous integration and continuous delivery (CI/CD)"
+      isCorrect: false
+      explanation: "GitHub Actions are used to facilitate CI/CD, but they also automate software development tasks and integrate IaC."
+    - content: "Integrate infrastructure as code within your project's context"
+      isCorrect: false
+      explanation: "GitHub Actions can integrate infrastructure as code within your project's context, but they can also facilitate CI/CD and integrate IaC."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "GitHub Actions can integrate infrastructure as code within your project's context, facilitate CI/CD and integrate IaC."
+  - content: "What are the two types of actions?"
+    choices:
+    - content: "Container actions and JavaScript actions"
+      isCorrect: true
+      explanation: "With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code."
+    - content: "Embedded actions and container actions"
+      isCorrect: false
+      explanation: "Container actions and JavaScript actions. With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code."
+    - content: "Workflows and triggers"
+      isCorrect: false
+      explanation: "Container actions and JavaScript actions. With container actions, the environment is part of the action's code. JavaScript actions don't include the environment in the code."
+  - content: "Which of the following could _not_ be used as an event trigger ```(runs_on)```?" 
+    choices:
+    - content: "Making a commit"
+      isCorrect: false
+      explanation: "Event triggers use Git references and making a commit produces a Git reference."
+    - content: "Opening a new tab in your browser"
+      isCorrect: true
+      explanation: "Event triggers use Git references and opening a tab does not produce a Git reference."
+    - content: "Merging a branch"
+      isCorrect: false
+      explanation: "Event triggers use Git references and merging a branch produces a Git reference."
+    - content: "Opening an issue"
+      isCorrect: false
+      explanation: "Event triggers use Git references and opening an issue produces a Git reference."
