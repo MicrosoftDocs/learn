@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.run-sql-server-2017-linux-containers.3-create-custom-images
+uid: learn-sqlserver.run-sql-server-2019-linux-containers.4-create-custom-images
 title: Create custom images
 metadata:
   title: Create custom images
@@ -9,14 +9,13 @@ metadata:
   ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-create-custom-images.md)]
+  [!include[](includes/4-create-custom-images.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want to create a new container image based on the SQL Server on Linux image. Which directive should you use in the Dockerfile to specify this parent?"
+  - content: "You want to create a new container image based on the SQL Server on Linux image. You're using Docker to host your containers. Which directive should you use in the Dockerfile to specify this parent?"
     choices:
     - content: "The COPY directive"
       isCorrect: false

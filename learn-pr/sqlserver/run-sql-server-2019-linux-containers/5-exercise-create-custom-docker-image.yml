@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.run-sql-server-2017-linux-containers.6-exercise-create-custom-docker-image
+uid: learn-sqlserver.run-sql-server-2019-linux-containers.5-exercise-create-custom-docker-image
 title: Exercise - Create a custom Docker image
 metadata:
   title: Exercise - Create a custom Docker image
@@ -9,9 +9,8 @@ metadata:
   ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 10
-## TODO: Insert the correct Lab ID here when we have it.
-labId: 51799
+interactive: bash
+azureSandbox: true
 content: |
-  [!include[](includes/6-exercise-create-custom-docker-image.md)]
+  [!include[](includes/5-exercise-create-custom-docker-image.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.run-sql-server-2017-linux-containers.4-use-docker-compose-deploy-multiple-containers
+uid: learn-sqlserver.run-sql-server-2019-linux-containers.6-use-docker-compose-deploy-multiple-containers
 title: Use Docker Compose to deploy multiple containers
 metadata:
   title: Use Docker Compose to deploy multiple containers
@@ -9,10 +9,9 @@ metadata:
   ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-use-docker-compose-deploy-multiple-containers.md)]
+  [!include[](includes/6-use-docker-compose-deploy-multiple-containers.md)]
 quiz:
   title: "Check your knowledge"
   questions:
