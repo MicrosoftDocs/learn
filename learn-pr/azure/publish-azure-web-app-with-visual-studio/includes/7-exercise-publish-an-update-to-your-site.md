@@ -14,10 +14,10 @@ Your Alpine Ski House web app is up and running, but now you need to show it to 
 
 1. Save the file.
 
-1. Open the **About.cshtml.cs** file.
+1. Open the **Index.cshtml** file.
 
-1. Replace the `Message` string to say
-    **Alpine Ski House is the premier ski hill in Northeast.**
+1. Replace the content within the `<p>` tags to say
+    **Alpine Ski House is the premier ski hill in Northeast!**
 
 1. Save the file.
 
@@ -25,14 +25,12 @@ Your Alpine Ski House web app is up and running, but now you need to show it to 
 
 1. In Solution Explorer, right-click the project.
 
-1. Select **Publish**. You should have an option that includes your [website]-web deploy.
+1. Select **Publish...**. This should open a new tab named **AplineSkiHouse**.
 
-1. Select your site, and Visual Studio will send your changes to Azure.
+1. Select the **Publish** button to deploy the latest changes.
 
 ### View your changes
 
-Once you've published your changes, Visual Studio will open the site in your browser. Navigate to the **About** page, and see that your changes are reflected.
+Once you've published your changes, Visual Studio will open the site in your browser. You should now see your new message on the home page.
 
-## Congrats!
-
-You have successfully updated your web app using Visual Studio 2017.
+Congratulations, you have successfully updated your web app from within Visual Studio 2019.
