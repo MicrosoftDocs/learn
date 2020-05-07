@@ -9,32 +9,31 @@ metadata:
   ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-sql-server-linux.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How can SQL Server run on Linux?"
+  - content: "You have product catalog data in SAP HANA and sales data in SQL Server running on Linux. You want to write a report that uses data from both systems to analyze profit margins for all products but you want to minimize the amount work required for database administrators. What should you do?"
     choices:
-    - content: "The SQL Server code has been ported to the Linux kernel."
+    - content: "Set up a data warehouse and use ETL packages in SQL Integration Services to populate it with data from SAP HANA and SQL Server. Write the report against the data warehouse."
       isCorrect: false
-      explanation: "SQL Server on Linux runs on a platform abstraction layer, it has not been ported."
-    - content: "SQL Server runs on a platform abstraction layer."
+      explanation: "This solution is possible but requires significant database administrator time to create the ETL packages and populate the data warehouse."
+    - content: "Install PolyBase on the SQL Server and add SAP HANA as an external data source. Create external data tables that connect to the tables in SAP HANA. Write the report against the SQL Server."
       isCorrect: true
-      explanation: "Both SQL Server on Linux and SQL Server for Windows run on top of the SQL Platform Abstraction Layer (SQLPAL)."
-    - content: "A new version of SQL Server has been created for Linux"
+      explanation: "By using PolyBase data virtualization, you can present SAP HANA data in SQL Server as external tables. You can write reports that query both catalog data and sales data from SQL Server, even though the catalog is actually stored in SAP HANA. There's no need to develop custom code or ETL packages."
+    - content: "Write separate queries to obtain the data you need from SQL Server and SAP HANA. Then write custom code that integrates the two datasets into a unified report."
       isCorrect: false
-      explanation: "SQL Server on Linux runs on a platform abstraction layer, it is not a new version specifically for Linux."
-  - content: "What is a container?"
+      explanation: "This solution is possible but requires significant database administrator and developer time to create the custom integration code."
+  - content: "You have a mobile app, written in Python, that your sales team uses to record orders and view sales performance data. Recently, you have migrated the database from a Windows server to an Ubuntu Linux server. What changes does this require in your app code?"
     choices:
-    - content: "A fully virtualized operating system, running in the cloud."
+    - content: "You must rewrite the app in a .NET Framework language, such as VB.NET or C#."
       isCorrect: false
-      explanation: "A container does not include a full copy of an OS, and can run locally or in the cloud."
-    - content: "A system using a shared but isolated host operating system."
+      explanation: "It's not necessary to use a .NET language in apps that call SQL Server. Any app code that queries SQL Server databases hosted on Windows can query SQL Server databases hosted on Linux, because the database engine is the same."
+    - content: "You must rewrite the app to ensure that it does not call any stored procedures."
+      isCorrect: false
+      explanation: "You can call stored procedures in your app, regardless of whether it it hosted on Windows or Linux, because the database exngine is the same."
+    - content: "You don't need to make any changes to the app code."
       isCorrect: true
-      explanation: "A containerized virtualization system shares the host operating system while still isolating the applications and services."
-    - content: "An abstraction layer to allow SQL Server to run on Linux."
-      isCorrect: false
-      explanation: "A container is a form of abstraction, but it is not specifically for Linux or for SQL Server."
+      explanation: "The SQL Platform Abstraction Layer means that the database engine is exactly the same, whether SQL Server is running on Windows or on Linux. That means that developers don't have to make any code changes when you migrate a database server to another operating system, but only modify the connection string."

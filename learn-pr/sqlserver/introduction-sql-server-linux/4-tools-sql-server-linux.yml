@@ -9,33 +9,23 @@ metadata:
   ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
   [!include[](includes/4-tools-sql-server-linux.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which client system cannot be used to administer SQL Server on Linux?"
-    choices:   
-    - content: "SQLCMD on Linux"
+  - content: "To make sure that you're complying with legislation, you want to discover what Personally Identifiable Information (PII) you have in your database. Which tool should you be using?"
+    choices:
+    - content: "Azure Data Studio"
       isCorrect: false
-      explanation: "SQLCMD on Linux can connect to, and query databases on SQL Server on Linux or Windows."
-    - content: "SQLCMD on Windows"
+      explanation: "Azure Data Studio is powerful and cross-platform but has no tool to locate PII data. For this task, use Data Discovery and Classification. This tool is only available in SSMS."
+    - content: "mssql-conf"
       isCorrect: false
-      explanation: "SQLCMD on Windows can connect to, and query databases on SQL Server on Linux or Windows."
-    - content: "SQL Server Management Studio on Linux"
+      explanation: "Use mssql-conf to configure the database service, select an edition, set a administrator's password, and so on. To discover PII data, use Data Discovery and Classification. This tool is only available in SSMS."
+    - content: "SQL Server Management Studio (SSMS)"
       isCorrect: true
-      explanation: "SQL Server Management Studio is not available for Linux, and therefore cannot be used."
-    - content: "SQL Server Management Studio on Windows"
-      isCorrect: false
-      explanation: "SQL Server Management Studio on Windows can connect to, and manage databases on SQL Server on Linux or Windows."
-    - content: Azure Data Studio on Linux
-      isCorrect: false
-      explanation: "Azure Data Studio on Linux can connect to, and manage databases on SQL Server on Linux or Windows."
-    - content: Azure Data Studio on Windows
-      isCorrect: false
-      explanation: "Azure Data Studio on Windows can connect to, and manage databases on SQL Server on Linux or Windows."
+      explanation: "To discover PII data, use Data Discovery and Classification. This tool is only available in SSMS."
   - content: "Which command-line tool should be recommended if a user wants to write Transact-SQL in a rich multi-line editor with syntax highlighting?"
     choices:
     - content: mssql-conf
