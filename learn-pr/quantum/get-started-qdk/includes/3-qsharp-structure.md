@@ -96,7 +96,7 @@ In this module, you'll work with the `Result` type. A `Result` represents the re
 
 `EntryPoint` tells the Q# compiler that this is where to begin execution of the program. 
 
-Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation, which applies what's called the Hadamard transformation to a single qubit. Think of the Hadamard transformation as a way of putting a qubit into superposition. Once in superposition, a qubit has a 50% chance of being measured as zero or one.
+Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation. Think of the `H` operation as a way of putting a qubit into an even superposition. Once in superposition, a qubit has a 50% chance of being measured as zero or one.
 
 ### Allocating qubits
 
