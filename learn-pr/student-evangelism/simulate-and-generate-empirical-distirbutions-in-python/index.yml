@@ -4,7 +4,7 @@ metadata:
   title: Simulate And Generate Empirical Distirbutions In Python
   description: Learn how to simulate and generate empirical distributions in python
   ms.date: 19/03/2020
-  author: sauravmittal
+  author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: azure
@@ -26,6 +26,7 @@ roles:
 products:
 - azure
 units:
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.setup
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.introduction
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.monty-hall-problem
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.sampling-and-empirical-distributions
@@ -34,6 +35,7 @@ units:
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.empirical-distribution-of-a-statistic
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.randomization
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.endnote
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.mini-lab
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.summary
 badge:
   uid: learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.badge

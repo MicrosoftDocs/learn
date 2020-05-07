@@ -5,8 +5,8 @@ metadata:
   title: Monty Hall Problem
   description: Simulate the Monty Hall problem.
   ms.date: 19/03/2020
-  author: sauravmittal
-  ms.author: leescott
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 5
