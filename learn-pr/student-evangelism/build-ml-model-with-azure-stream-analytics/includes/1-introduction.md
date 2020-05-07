@@ -15,3 +15,10 @@ In the units that follow, you will deploy several Azure services and integrate t
 - How to create an Azure SQL Database and write records to it
 - How to connect Power BI to an Azure SQL Database
 - How to create a report with informative visuals in Power BI
+
+## Prerequisites
+
+- An Azure subscription
+- Basic knowledge of Azure services, the Azure portal, and the Azure CLI tools
+- Familiarity with Node.js
+- Power BI Desktop

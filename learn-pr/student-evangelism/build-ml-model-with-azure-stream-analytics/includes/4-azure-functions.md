@@ -1,6 +1,6 @@
 In this unit, you will write an Azure Function that is triggered each time an image is uploaded to the "photos" container in the storage account you created. The function will use the Custom Vision Service model you created in the previous unit to determine whether the photo contains a polar bear.
 
-## Create an Azure Function ##
+## Create an Azure Function
 
 Azure Functions can be written in the Azure portal or written externally using tools such as Visual Studio. You will write an Azure Function in the portal. The function will be written in JavaScript and executed using Azure Functions' Node.js run-time. It will be triggered each time an image is uploaded to the "photos" container that you created in blob storage, and it will pass each blob that is uploaded to the Custom Vision Service to be analyzed for polar bears.
 
@@ -162,7 +162,7 @@ Azure Functions can be written in the Azure portal or written externally using t
 
 1. Start a separate browser instance and navigate to the [Azure portal](https://portal.azure.com?azure-portal=true). Open the storage account and upload **image_12.jpg** from the "photos" folder you created in an earlier unit this module to the "photos" container. Here's what **image_12.jpg** looks like:
 
-    ![Image uploaded to blob storage](../media/image_12.jpg)
+    ![Image uploaded to blob storage](../media/image-12.jpg)
 
     _Image uploaded to blob storage_
 
@@ -174,7 +174,7 @@ Azure Functions can be written in the Azure portal or written externally using t
 
 The reason for the text "undefined at undefined, undefined" in the log output is that the function attempted to read the latitude, longitude, and camera ID from blob metadata and include them in the output, but those metadata values don't exist since you uploaded the blob manually. That will change when your virtual cameras upload photos to blob storage.
 
-## Run the camera array ##
+## Run the camera array
 
 Next, you will run the simulated camera array that you created earlier. Then you will check the log output from the Azure Function to verify that images are being uploaded to blob storage and analyzed for polar bears.
 

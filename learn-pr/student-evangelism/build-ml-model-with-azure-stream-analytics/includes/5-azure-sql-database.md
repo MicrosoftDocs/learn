@@ -1,6 +1,6 @@
 In the previous unit, you wrote an Azure Function that passes each photo uploaded to a blob container to the Custom Vision Service to determine whether the photo contains a polar bear. The only output from the function was log output showing the verdict rendered by the Custom Vision Service, as well as the ID and location of the camera that snapped the photo. Now you will create an Azure SQL Database and modify the function to write to the database. This will set the stage for visualizing polar-bear sightings in Power BI, which will draw information about what's being spotted and where from the database.
 
-## Create an Azure SQL Database ##
+## Create an Azure SQL Database
 
 Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This database will collect output from the Azure Function you deployed previously. Later, you will connect the database to Power BI to show where polar bears are being spotted.
 
@@ -10,7 +10,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
     _Opening the Azure Cloud Shell_
 
-1. 1. Use these commands to save the names you wish to use for your database server, admin username, admin password, and database name, replacing `<server name>`, `<admin username>`, `<admin password>`, and `<database name>` with the information you wish to use.
+1. Use these commands to save the names you wish to use for your database server, admin username, admin password, and database name, replacing `<server name>`, `<admin username>`, `<admin password>`, and `<database name>` with the information you wish to use.
 
     ```bash
     SERVER_NAME="<server name>"
@@ -25,7 +25,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
     > [!NOTE]
     > Remember the user name and password you enter, because you will need them later.
 
-1. Execute the following command in the Cloud Shell to create a database server in the "polar-bear-rg" resource group. Remember that you can use **Shift+Ins** to paste commands into the Cloud Shell.
+1. Execute the following command in the Cloud Shell to create a database server in the "polar-bear-rg" resource group. Remember that you can use **Shift+Insert** to paste commands into the Cloud Shell.
 
     ```bash
     az sql server create --name $SERVER_NAME --resource-group polar-bear-rg --location southcentralus --admin-user $ADMIN_USERNAME --admin-password $ADMIN_PASSWORD
@@ -81,7 +81,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
 Note the column named "IsPolarBear," which will be set to 1 or 0 to indicate that the corresponding image does or does not contain a polar bear.  
 
-## Modify the Azure Function ##
+## Modify the Azure Function
 
 The next step is to modify the Azure Function that you created to write output to the Azure SQL Database.
 

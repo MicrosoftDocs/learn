@@ -1,6 +1,6 @@
 In this unit, you will create an Azure Storage account and implement a simulated camera array in Node.js that uploads wildlife photos to the account. The storage account will store photographs taken by the cameras that you deploy. These represent the first steps toward building an end-to-end solution that demonstrates how Azure services are combined to create sophisticated systems that incorporate cloud services and AI.
 
-## Create a storage account ##
+## Create a storage account
 
 Let's begin by using Azure Cloud Shell to create an Azure Storage account. The Cloud Shell provides a browser-based command line for executing Azure commands and is an alternative to installing the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) on your own machine. Whether to use the CLI or the Cloud Shell is often a matter of personal preference. One of the advantages of the Cloud Shell is that it doesn't require you to install any software on your PC. Another is that you don't have to update it periodically as you do the CLI.
 
@@ -57,7 +57,7 @@ Let's begin by using Azure Cloud Shell to create an Azure Storage account. The C
 
 You now have a storage account for storing photos and a container to store them in. Now let's deploy some cameras to snap wildlife photos and upload them to blob storage.
 
-## Deploy a simulated camera array ##
+## Deploy a simulated camera array
 
 The next task is to create a Node.js app that simulates an array of motion-activated cameras that upload photographs taken in the wild to the storage account's "photos" container.
 
