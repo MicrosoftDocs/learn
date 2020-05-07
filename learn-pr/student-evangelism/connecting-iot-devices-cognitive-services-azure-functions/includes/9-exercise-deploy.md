@@ -36,9 +36,47 @@ You need to install some extensions for the Visual Studio Code.
 
 - Search for C# in the extension marketplace and install it.
 
+## Configure VS Code with Arduino settings.
+
+In Visual Studio Code, click File > Preference > Settings. Then click the ... and Open settings.json.
+
+Add following lines to configure Arduino depending on your platform:
+
+- **Windows**:
+
+  JSONCopy
+
+  ```json
+  "arduino.path": "C:\\Program Files (x86)\\Arduino",
+  "arduino.additionalUrls": "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/master/package_azureboard_index.json"
+  ```
+
+- **macOS**:
+
+  JSONCopy
+
+  ```json
+  "arduino.path": "/Applications",
+  "arduino.additionalUrls": "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/master/package_azureboard_index.json"
+  ```
+
+- **Ubuntu**:
+
+  Replace the **{username}** placeholder below with your username.
+
+  JSONCopy
+
+  ```json
+  "arduino.path": "/home/{username}/Downloads/arduino-1.8.8",
+  "arduino.additionalUrls": "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/master/package_azur
+  ```
+
+
 
 ##  Opening sample project
 
+First of all, start signing in your Azure account.
+Click F1 to open the command palette, type, and select Azure: Sign in
 
 Click F1 to open the command palette, type, and select Azure IoT Device Workbench: Open Examples.... Then select IoT DevKit as the board.
 
@@ -70,7 +108,7 @@ Click F1 to open the command palette, type, and select Arduino: Board Manager. S
   sudo usermod -a -G plugdev $(whoami)
   ```
 
-[!NOTE] [ST-Link/V2](about:blank) is the USB interface that IoT DevKit uses to communicate with your development machine. You need to install it on Windows to flash the compiled device code to the DevKit. Follow the OS-specific steps to allow the machine access to your device.
+[!NOTE] ST-Link/V2 is the USB interface that IoT DevKit uses to communicate with your development machine. You need to install it on Windows to flash the compiled device code to the DevKit. Follow the OS-specific steps to allow the machine access to your device.
 
 
 ##  Create Azure Function/Provision Azure Services
@@ -126,6 +164,10 @@ Paste the URL into **azure_config.h** file.
 
 ##  Configuring Device Settings
 
+In the bottom-right status bar, check the MXCHIP AZ3166 is shown as a selected board, and serial port with STMicroelectronics is used.
+
+![An illustration is showing how to select serial port](../media/select-serial-port.png) 
+
 Click F1, type, and select Azure IoT Device Workbench: Configure Device Settings... > Config Device Connection String. Select IoT Hub Device Connection String to configure it to the DevKit.
 
 ![An illustration is showing how to configure connecting string.](../media/configure-connection-string.png) 
@@ -138,10 +180,6 @@ You'll see the notification once it's done successfully.
 
 ##  Uploading device code
 
-
-In the bottom-right status bar, check the MXCHIP AZ3166 is shown as a selected board, and serial port with STMicroelectronics is used.
-
-![An illustration is showing how to select serial port](../media/select-serial-port.png) 
 
 Click F1 again, type, and select Azure IoT Device Workbench: Upload Device Code. It starts to compile and upload the code to DevKit.
 
