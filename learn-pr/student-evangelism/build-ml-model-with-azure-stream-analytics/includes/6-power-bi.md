@@ -1,6 +1,6 @@
 To complete the end-to-end solution for spotting polar bears in the wild, you will connect Microsoft Power BI to the database you created in the previous unit and build a report that shows in near real time where polar bears are being photographed. You will use Power BI Desktop to create the report, and Power BI Desktop only runs on Windows. If you aren't running Windows, one solution is to create a Windows VM in Azure and run Power BI Desktop from there.
 
-## Connect Power BI to the database ##
+## Connect Power BI to the database
 
 You used the Custom Vision Service to train an image-classification model to differentiate between different types of Arctic wildlife, and modified the Azure Function you wrote to output the results to an Azure SQL Database. The first step in using Microsoft Power BI to explore and visualize this data is connecting it to the database. In this exercise, you will connect Power BI Desktop to the Azure SQL Database.
 
@@ -13,7 +13,7 @@ You used the Custom Vision Service to train an image-classification model to dif
 
 1. Click **Get Data** in the ribbon at the top of the window. Then select **Azure SQL database** from the list of data sources and click the **Connect** button.
 
-    ![Adding a data source](../media/connect-to-database-1.png)
+    ![Adding a data source](../media/connect-database-1.png)
 
     _Adding a data source_
 
@@ -23,19 +23,19 @@ You used the Custom Vision Service to train an image-classification model to dif
     SELECT TOP 20 Id, CameraId, Latitude, Longitude, Url, Timestamp, FORMAT(Timestamp,'MM/dd/yyyy h:mm:ss tt') AS TimestampLabel, IsPolarBear FROM dbo.PolarBears ORDER BY Timestamp DESC
     ```
 
-    ![Connecting to the database](../media/connect-to-database-2.png)
+    ![Connecting to the database](../media/connect-database-2.png)
 
     _Connecting to the database_
 
 1. In the ensuing dialog, click **Database** in the menu on the left. Enter the user name and password you specified when you created the database server, and select the database server from the drop-down list. Click **Connect**, and then click the **Load** button in the next dialog.
 
-    ![Entering admin credentials](../media/connect-to-database-3.png)
+    ![Entering admin credentials](../media/connect-database-3.png)
 
     _Entering admin credentials_
 
 After a short delay, Power BI will connect to the database and retrieve a dataset using the query you provided. The next step is to add visuals to bring that dataset to life.
 
-## Build a report in Power BI Desktop ##
+## Build a report in Power BI Desktop
 
 Visualizations (or simply "visuals") are the primary element that make up Power BI reports. In this exercise, you will use the Power BI report designer to create visuals from the database you connected to in the previous exercise, adjust filters and aggregates to refine the way the data is displayed, and format the visuals to produce compelling output.
 
@@ -126,7 +126,7 @@ Visualizations (or simply "visuals") are the primary element that make up Power 
 
 Feel free to embellish the report further. Once you're satisfied with the layout and content, it's time to put it to work using a live data source.
 
-## Run the end-to-end solution ##
+## Run the end-to-end solution
 
 Now that the report is prepared in Power BI, your final task is to run the end-to-end solution and check for polar bears!
 
