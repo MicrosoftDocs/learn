@@ -27,7 +27,7 @@ With single sign-on, users only need to remember one ID and one password. Access
 
 Azure Active Directory (AD) is a cloud-based identity service. It has built-in support for synchronizing with your existing on-premises Active Directory or can be used stand-alone. This means that all your applications, whether on-premises, in the cloud (including Office 365), or even mobile can share the same credentials. Administrators and developers can control access to data and applications using centralized rules and policies configured in Azure AD.
 
-By leveraging Azure AD for SSO you'll also have the ability to combine multiple data sources into an intelligent security graph. This security graph enables the ability to provide threat analysis and real-time identity protection to all accounts in Azure AD, including accounts that are synchronized from your on-premises AD. By using a centralized identity provider, you'll have centralized the security controls, reporting, alerting, and administration of your identity infrastructure.
+By leveraging Azure AD for SSO, you'll also have the ability to combine multiple data sources into an intelligent security graph. This security graph enables the ability to provide threat analysis and real-time identity protection to all accounts in Azure AD, including accounts that are synchronized from your on-premises AD. By using a centralized identity provider, you'll have centralized the security controls, reporting, alerting, and administration of your identity infrastructure.
 
 ### Synchronize directories with AD Connect
 
@@ -35,7 +35,7 @@ Azure AD Connect will integrate your on-premises directories with Azure Active D
 
 It's a single tool to provide an easy deployment experience for synchronization and sign in.
 
-![An illustration showing Azure AD connect being used to synchronize your on-premises directories with Azure Active directory and your apps in the Azure cloud. This allows users to have a common sign on for all the application within the Azure cloud.](../media/3-azure-ad-connect.png)
+![An illustration showing Azure AD connect being used to synchronize your on-premises directories with Azure Active directory and your apps in the Azure cloud. This allows users to have a common sign-on for all the application within the Azure cloud.](../media/3-azure-ad-connect.png)
 
 Your organization requires that authentication occurs primarily against on-premises DCs, but also requires cloud authentication in a disaster recovery scenario. They don't have any requirements not already supported by Azure AD.
 
@@ -67,7 +67,7 @@ Azure AD has MFA capabilities built in, and will integrate with other third-part
 
 ### Conditional access policies
 
-Along with MFA, ensuring that additional requirements are met before granting access can add another layer of protection. Blocking logins from a suspicious IP address, or denying access from devices without malware protection could limit access from risky sign ins.
+Along with MFA, ensuring that additional requirements are met before granting access can add another layer of protection. Blocking logins from a suspicious IP address, or denying access from devices without malware protection could limit access from risky sign-ins.
 
 Azure Active Directory provides a conditional access policies feature that includes support for access policies based on group, location, or device state. The location feature allows your organization to differentiate IP addresses that don't belong to their network, and satisfies their security policy to require multi-factor authentication from all such locations.
 
@@ -90,7 +90,7 @@ Azure AD Application Proxy is:
 - Cost-effective
   - Application Proxy works in the cloud, so you can save time and money. On-premises solutions typically require you to set up and maintain DMZs, edge servers, or other complex infrastructures.
 
-Azure AD Application Proxy is comprised of two components: a connector agent that sits on a Windows server within your corporate network and an external endpoint, either the MyApps portal or an external URL. When a user navigates to the endpoint, they authenticate with Azure AD and are routed to the on-premises application via the connector agent.
+Azure AD Application Proxy is composed of two components: a connector agent that sits on a Windows server within your corporate network and an external endpoint, either the MyApps portal or an external URL. When a user navigates to the endpoint, they authenticate with Azure AD and are routed to the on-premises application via the connector agent.
 
 ## Working with consumer identities
 

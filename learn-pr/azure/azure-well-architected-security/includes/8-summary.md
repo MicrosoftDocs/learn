@@ -1,4 +1,4 @@
-We've talked through many principles of the Security pillar of the Azure Well-Architected Framework. 
+We've talked through many principles of the Security pillar of the Azure Well-Architected Framework.
 
 You've learned how to approach security in your architecture through defense in depth. Looking only at firewalls or antimalware alone isn't enough to slow down attackers. Use a layered approach and address security at each layer.
 

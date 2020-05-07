@@ -4,9 +4,9 @@ There's no "easy button" for security and no solution that solves all your probl
 
 The analyst firm Forrester Research introduced the *Zero Trust model*, which states that you should never assume trust but instead continually validate trust. When users, devices, and data all resided inside the organization's firewall, they were assumed to be trusted. This assumed trust allowed for easy lateral movement after a malicious hacker compromised an endpoint device.
 
-With most users now accessing applications and data from the Internet, and many companies now allowing users to *bring-your-own-devices* (BYOD), most of the components of the transactions — that is, the users, network, and devices — are no longer completely under organizational control. The Zero Trust model relies on verifiable user and device trust claims to grant access to organizational resources. No longer is trust assumed based on the location inside an organization's perimeter.
+With most users now accessing applications and data from the Internet, and many companies now allowing users to *bring-your-own-devices* (BYOD), most of the components of the transactions, the users, network, and devices, are no longer completely under organizational control. The Zero Trust model relies on verifiable user and device trust claims to grant access to organizational resources. No longer is trust assumed based on the location inside an organization's perimeter.
 
-This model has forced security researchers, engineers, and architects to re-think the approach applied to security where we use a layered strategy to protect our resources called *defense in depth*.
+This model has forced security researchers, engineers, and architects to rethink the approach applied to security where we use a layered strategy to protect our resources called *defense in depth*.
 
 ### Defense in depth
 
@@ -106,4 +106,4 @@ As computing environments move from customer-controlled datacenters to cloud dat
 
 The threat landscape is evolving in real time and at massive scale, therefore a security architecture is never complete. Microsoft and our customers require the ability to respond to these threats intelligently, quickly, and at scale.
 
-Azure Security Center provides customers with unified security management and advanced threat protection to understand and respond to security events on-premises and in Azure. In turn, Azure customers have a responsibility to continually re-evaluate and evolve their security architecture.
+Azure Security Center provides customers with unified security management and advanced threat protection to understand and respond to security events on-premises and in Azure. In turn, Azure customers have a responsibility to continually reevaluate and evolve their security architecture.

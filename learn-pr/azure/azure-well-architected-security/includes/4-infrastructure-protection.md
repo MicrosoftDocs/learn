@@ -24,7 +24,7 @@ Management groups are an additional hierarchical level recently introduced into 
 
 The ability to flow roles through an arbitrarily defined subscription hierarchy also allows administrators to grant temporary access to an entire environment for authenticated users. For example, an auditor may require temporary read-only access to all subscriptions.
 
-:::image type="content" source="../media/4-management-groups.png" alt-text="An illustration showing the hierarchal representation of role-based access in a management group." loc-scope="other"::: <!-- no-loc -->
+:::image type="content" source="../media/4-management-groups.png" alt-text="An illustration showing the hierarchical representation of role-based access in a management group." loc-scope="other"::: <!-- no-loc -->
 
 ### Privileged Identity Management
 
@@ -54,7 +54,7 @@ To use PIM, you need one of the following paid or trial licenses:
 
 ## Providing identities to services
 
-It's often valuable for services to have identities. Often times, and against best practices, credential information is embedded in configuration files. With no security around these configuration files, anyone with access to the systems or repositories can access these credentials and risk exposure.
+It's often valuable for services to have identities. Often, and against best practices, credential information is embedded in configuration files. With no security around these configuration files, anyone with access to the systems or repositories can access these credentials and risk exposure.
 
 Azure AD addresses this problem through two methods: service principals and managed identities for Azure services.
 
@@ -72,6 +72,6 @@ For example, your organization can assign its deployment scripts to run authenti
 
 ### Managed identities for Azure resources
 
-The creation of service principals can be a tedious process, and there are a lot of touch points that can make maintaining them difficult. Managed identities for Azure resources are much easier and will do most of the work for you.
+The creation of service principals can be a tedious process, and there are many touch points that can make maintaining them difficult. Managed identities for Azure resources are much easier and will do most of the work for you.
 
 A managed identity can be instantly created for any Azure service that supports it (the list is constantly growing). When you create a managed identity for a service, you are creating an account on the Azure AD tenant. Azure infrastructure will automatically take care of authenticating the service and managing the account. You can then use that account like any other AD account including securely letting the authenticated service access other Azure resources.
