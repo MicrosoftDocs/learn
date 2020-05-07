@@ -11,7 +11,7 @@ You now have a good understanding of how to deploy and manage an Azure web app w
 ## Learn more
 
 - [Eclipse IDE](https://www.eclipse.org/downloads/)
-- [Azure toolkit for Eclipse](https://docs.microsoft.com/java/azure/eclipse/azure-toolkit-for-eclipse?view=azure-java-stable)
+- [Azure toolkit for Eclipse](https://docs.microsoft.com/azure/developer/java/toolkit-for-eclipse/)
 - [Create a Hello World web app for Azure App Service using Eclipse](https://docs.microsoft.com/java/azure/eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app?view=azure-java-stable)
 - [Deploy Java Web Apps to Azure using Eclipse](https://azure.microsoft.com/blog/deploy-java-web-apps-to-azure-using-eclipse/)
 - [Install the JDK for Azure and Azure Stack](https://docs.microsoft.com/java/azure/jdk/java-jdk-install?view=azure-java-stable)
