@@ -1,6 +1,6 @@
 There are many applications you can use as a client for the Azure Synapse Analytics server. Data engineers often use SQL Server Management Studio (SSMS) to access Microsoft database products including Azure SQL Database, Azure Synapse Analytics, and on-premises SQL Server instances. Data analysts usually use Excel or Power BI as their client application to query the database. Developers use Visual Studio to write all kinds of third-party applications to query the database.
 
-Since SMSS is a common tool, let's look at how to use it to query our data warehouse. To connect to our database, we need to create a _connection string_.
+Since SSMS is a common tool, let's look at how to use it to query our data warehouse. To connect to our database, we need to create a _connection string_.
 
 > [!NOTE]
 > Azure Synapse Analytics currently has a tool named Azure Synapse Analytics Studio in preview mode to interact with Azure Synapse Analytics.

@@ -1022,42 +1022,42 @@
     },
     {
       "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/index.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/3-exercise-create-qna-knowledge-base.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/4-exercise-publish-your-knowledge-base.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/5-integrate-qna-with-a-bot.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/6-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/2-overview-of-qna-maker.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
       "redirect_document_id": true
     },
     {
@@ -1072,7 +1072,7 @@
     },
     {
       "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/7-summary.yml",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/secure-your-azure-virtual-machine-disks/8-summary/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secure-your-azure-virtual-machine-disks/8-summary/",
       "redirect_document_id": true
     },
     {
@@ -1134,6 +1134,41 @@
       "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/13-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/commercial-marketplace/intro-to-commercial-marketplace/intro-to-commercial-marketplace/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-commercial-marketplace/1-introduction/",
+      "redirect_document_id": true
+    },
+    {
+        "source_path": "learn-pr/commercial-marketplace/intro-to-commercial-marketplace/intro-to-commercial-marketplace/2-definitions.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-commercial-marketplace/2-definitions/",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "learn-pr/commercial-marketplace/intro-to-commercial-marketplace/intro-to-commercial-marketplace/3-web-storefronts.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-commercial-marketplace/3-web-storefronts/",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "learn-pr/commercial-marketplace/intro-to-commercial-marketplace/intro-to-commercial-marketplace/4-engage-customers.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-commercial-marketplace/4-engage-customers/",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "learn-pr/commercial-marketplace/intro-to-commercial-marketplace/intro-to-commercial-marketplace/5-go-market-with-microsoft.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-commercial-marketplace/5-go-market-with-microsoft/",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "learn-pr/commercial-marketplace/intro-to-commercial-marketplace/intro-to-commercial-marketplace/6-knowledge-check.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-commercial-marketplace/6-knowledge-check/",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "learn-pr/commercial-marketplace/intro-to-commercial-marketplace/intro-to-commercial-marketplace/7-summary.yml",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-commercial-marketplace/7-summary/",
+        "redirect_document_id": true
+      }
   ]
 }
