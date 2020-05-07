@@ -15,7 +15,9 @@ abstract: |
   - Learn about Azure Maps APIs for obtaining the weather forecast at any location.
   - Create and configure a Twilio account with programmable SMS phone number to receive and send text messages.
   - Deploy an existing application to Azure Functions utilizing Twilio and Azure Maps to manage and send temperature alerts for specific locations.
-iconUrl: /learn/achievements/advocates/send-crop-weather-alerts.svg
+# Use placeholder image until final artwork ready
+iconUrl: /learn/achievements/generic-badge.svg
+# iconUrl: /learn/achievements/advocates/send-crop-weather-alerts.svg
 levels:
 - beginner
 roles:
