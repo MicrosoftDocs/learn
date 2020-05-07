@@ -6,6 +6,7 @@ Azure Static Web Apps added a GitHub Actions workflow file to the branch you sel
 
 Pull your code changes from Git by following these steps:
 
+1. Open the folder _my-static-web-app_ in Visual Studio Code
 1. Open the command palette by pressing <kbd>F1</kbd>.
 1. Type and select **Git: Pull**.
 

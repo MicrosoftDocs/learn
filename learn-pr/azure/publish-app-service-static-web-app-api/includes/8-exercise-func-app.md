@@ -62,7 +62,7 @@ Your API has routes for manipulating the products for the shopping list, but it 
 You just extended your Azure Function app with a function to get your products!
 
 > [!NOTE]
-> The function app is in the _api_ folder, which separates it from the individual web app projects. All of the web apps using the front-end frameworks make calls the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
+> The function app is in the _api_ folder, which separates it from the individual web app projects. All of the web apps using the front-end frameworks make calls to the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
 
 ### Configure the HTTP Method and route endpoint
 
