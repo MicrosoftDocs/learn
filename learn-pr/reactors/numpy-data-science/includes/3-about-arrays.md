@@ -216,7 +216,7 @@ array([[3.14, 3.14, 3.14, 3.14, 3.14],
 ```
 
 Create an array filled with a linear sequence.
-Start at 0, end at 20, and step by 2. (This is similar to the built-in Python `range()` function).
+Start at 0, end at 20, and step by 2. (This is similar to the built-in Python `range()` function.)
 
 ```python
 np.arange(0, 20, 2).
