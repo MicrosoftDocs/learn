@@ -130,7 +130,7 @@ Feel free to embellish the report further. Once you're satisfied with the layout
 
 Now that the report is prepared in Power BI, your final task is to run the end-to-end solution and check for polar bears!
 
-1. Open the database that you created in the previous unit in the [Azure Portal](https://portal.azure.com) and use the query editor to execute the following query and delete all rows from the "dbo.PolarBears" table:
+1. Open the database that you created in the previous unit in the [Azure portal](https://portal.azure.com?azure-portal=true) and use the query editor to execute the following query and delete all rows from the "dbo.PolarBears" table:
 
     ```sql
     DELETE FROM dbo.PolarBears

@@ -162,7 +162,7 @@ Azure Functions can be written in the Azure portal or written externally using t
 
 1. Start a separate browser instance and navigate to the [Azure portal](https://portal.azure.com?azure-portal=true). Open the storage account and upload **image_12.jpg** from the "photos" folder you created in an earlier unit this module to the "photos" container. Here's what **image_12.jpg** looks like:
 
-    ![Image uploaded to blob storage](../media/image_12.jpg)
+    ![Image uploaded to blob storage](../media/image-12.jpg)
 
     _Image uploaded to blob storage_
 

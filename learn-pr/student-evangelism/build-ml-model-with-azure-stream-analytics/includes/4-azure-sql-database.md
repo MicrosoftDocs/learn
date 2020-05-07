@@ -10,7 +10,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
     _Opening the Azure Cloud Shell_
 
-1. 1. Use these commands to save the names you wish to use for your database server, admin username, admin password, and database name, replacing `<server name>`, `<admin username>`, `<admin password>`, and `<database name>` with the information you wish to use.
+1. Use these commands to save the names you wish to use for your database server, admin username, admin password, and database name, replacing `<server name>`, `<admin username>`, `<admin password>`, and `<database name>` with the information you wish to use.
 
     ```bash
     SERVER_NAME="<server name>"
@@ -25,7 +25,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
     > [!NOTE]
     > Remember the user name and password you enter, because you will need them later.
 
-1. Execute the following command in the Cloud Shell to create a database server in the "polar-bear-rg" resource group. Remember that you can use **Shift+Ins** to paste commands into the Cloud Shell.
+1. Execute the following command in the Cloud Shell to create a database server in the "polar-bear-rg" resource group. Remember that you can use **Shift+Insert** to paste commands into the Cloud Shell.
 
     ```bash
     az sql server create --name $SERVER_NAME --resource-group polar-bear-rg --location southcentralus --admin-user $ADMIN_USERNAME --admin-password $ADMIN_PASSWORD
