@@ -58,7 +58,7 @@ Drag and drop the .bin file you downloaded into the USB mass storage device call
 
 You can check out the latest version of firmware from the following link: https://github.com/microsoft/devkit-sdk/releases/
 
-**Note:** Firmware is a software program or set of instructions programmed on a hardware device. Firmware provides the necessary instructions for how the device communicates with the other computer hardware.
+[!NOTE] Firmware is a software program or set of instructions programmed on a hardware device. Firmware provides the necessary instructions for how the device communicates with the other computer hardware.
 
 ## Configuring the DevKit to connect to Wi-Fi 
 

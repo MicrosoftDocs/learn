@@ -32,7 +32,7 @@ You need to install some extensions for the Visual Studio Code.
 
 - Search for [Azure IoT Tools](about:blank) in the extension marketplace and install it.
 
-**Note:** The Azure IoT Tools extension pack contains the [Azure IoT Device Workbench](about:blank), which is used to develop and debug on various IoT devkit devices. The [Azure IoT Hub extension](about:blank), also included with the Azure IoT Tools extension pack, is used to manage and interact with Azure IoT Hubs.
+[!NOTE] The Azure IoT Tools extension pack contains the [Azure IoT Device Workbench](about:blank), which is used to develop and debug on various IoT devkit devices. The [Azure IoT Hub extension](about:blank), also included with the Azure IoT Tools extension pack, is used to manage and interact with Azure IoT Hubs.
 
 - Search for C# in the extension marketplace and install it.
 
@@ -72,7 +72,7 @@ Click F1 to open the command palette, type, and select Arduino: Board Manager. S
   sudo usermod -a -G plugdev $(whoami)
   ```
 
-**Note:** [ST-Link/V2](about:blank) is the USB interface that IoT DevKit uses to communicate with your development machine. You need to install it on Windows to flash the compiled device code to the DevKit. Follow the OS-specific steps to allow the machine access to your device.
+[!NOTE] [ST-Link/V2](about:blank) is the USB interface that IoT DevKit uses to communicate with your development machine. You need to install it on Windows to flash the compiled device code to the DevKit. Follow the OS-specific steps to allow the machine access to your device.
 
 
 ##  Create Azure Function/Provision Azure Services
