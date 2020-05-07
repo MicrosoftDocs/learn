@@ -37,7 +37,7 @@ units:
 - learn.azure-well-architected-reliability.1-introduction
 - learn.azure-well-architected-reliability.2-high-availability
 - learn.azure-well-architected-reliability.3-disaster-recovery
-- learn.azure-well-architected-reliability.4-backup-and-restore
+- learn.azure-well-architected-reliability.4-backup-restore
 - learn.azure-well-architected-reliability.5-summary
 badge:
   uid: learn.azure-well-architected-reliability.badge

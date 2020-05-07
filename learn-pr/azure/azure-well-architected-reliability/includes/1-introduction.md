@@ -9,3 +9,7 @@ In this module, you will:
 - Leverage Azure services to design a highly available application
 - Incorporate Azure disaster recovery capabilities into your architecture
 - Backup and restore on Azure to protect your application from data loss or corruption
+
+## Prerequisites
+
+None
