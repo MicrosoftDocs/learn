@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.cv-classify-bird-species.3-build-model
+uid: learn.advocates.custom-vision-classify-bird-species.3-build-model
 title: Exercise - Build model
 azureSandbox: true
 metadata:

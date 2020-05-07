@@ -15,7 +15,7 @@ The first thing we need to create our model is to get data! We are going to use 
 1. When the deployment succeeds, you will get a notification in the top-right corner.
 1. Select **Go to resource**.
 
-![An animated gif that demonstrates how to create a Custom Vision project](../media/create-custom-vision-service.gif)
+![An animated GIF that demonstrates how to create a Custom Vision project](../media/create-custom-vision-service.gif)
 
 ## Upload data
 
@@ -54,7 +54,7 @@ Now it is time to upload the data for training. There are a couple ways to do th
    1. Select **Upload photos**.
    1. Repeat these steps for each bird species (class).
 
-   ![An animated gif that demonstrates how to upload photos](../media/upload-costom-vision-photos.gif)
+   ![An animated GIF that demonstrates how to upload photos](../media/upload-custom-vision-photos.gif)
 
 ### Option 2: SDK upload
 

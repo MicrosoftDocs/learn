@@ -8,11 +8,11 @@ The three indicators provided for the entire model and for each class are:
 
 | Indicator              | Description                                                                                                                   |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Precision              | Precision means if a tag is predicted by your model, how likely is that to be right?                                          |
-| Recall                 | This number will tell you: out of the tags that should be predicted correctly, what percentage did your model correctly find? |
-| AP (Average precision) | A measure of the model performance, summaries the precision and recall at different threshold.                                |
+| Precision              | Indicates, if a tag is predicted by your model, how likely is that to be right?                                          |
+| Recall                 | Tells you, out of the tags that should be predicted correctly, what percentage did your model correctly find? |
+| AP (average precision) | A measure of the model performance; it computes the precision and recall at different thresholds.                                |
 
-Now that we understand some of the different indicators, we can use to understand how the model is performing. Let's talk about some of the "rookie mistakes" that can happen when starting to build machine learning models.
+Now that we understand some of the different indicators, we can use them to understand how the model is performing. Let's talk about some of the "rookie mistakes" that can happen when starting to build machine learning models.
 
 ## Common rookie mistakes
 
