@@ -1,8 +1,8 @@
 In this exercise, you use GitHub Learning Lab to create a GitHub repository, a container action that will print a greeting in the action's log file, and a workflow that triggers on a push to this repository.
 
-The GitHub Learning Lab has an easy to use integrated experience where you get feedback and instruction throughout the lab right in your GitHub repository.
+The GitHub Learning Lab is an integrated experience that's easy to use. You get feedback and instructions throughout the lab as you work in your GitHub repository.
 
-Just a quick heads-up to make this exercise more enjoyable:
+Here are a few suggestions to make the Learning Lab exercise more enjoyable.
 
 1. GitHub Learning Lab will be installed on your account in the first step of this lab. If you're asked, be sure to *install it on all repositories*. This will not affect the organizations that you're a member of, just the personal repositories that the lab creates for you.
 1. After the install, you may be returned to their main page. To get back to your lab, just use the button on the bottom of this page again.
