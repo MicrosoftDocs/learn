@@ -23,11 +23,11 @@ quiz:
         - content: "To mimic human intelligence with a computer."
           isCorrect: true
           explanation: "Correct!"
-    - content: "Which of the following options <i>isn't</i> an indicator that Azure Cognitive Services Custom Vision provides to help you understand how well the model performs?"
+    - content: "Which of the following options <i>isn't</i> an indicator that Azure Custom Vision provides to help you understand how well the model performs?"
       choices:
         - content: "Confusion Matrix"
           isCorrect: true
-          explanation: "Correct! A confusion matrix is a valid metric, but it isn't provided by Azure Cognitive Services Custom Vision."
+          explanation: "Correct! A confusion matrix is a valid metric, but it isn't provided by Azure Custom Vision."
         - content: "recall"
           isCorrect: false
           explanation: "Incorrect. The recall metric is provided."

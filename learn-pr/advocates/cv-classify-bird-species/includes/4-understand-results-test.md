@@ -12,7 +12,7 @@ The three indicators provided for the entire model and for each class are:
 | Recall                 | This number will tell you: out of the tags that should be predicted correctly, what percentage did your model correctly find? |
 | AP (Average precision) | A measure of the model performance, summaries the precision and recall at different threshold.                                |
 
-Now that we understand some of the different indicators, we can use to understand how the model is performing. Lets talk about some of the "rookie mistakes" that can happen when starting to build machine learning models.
+Now that we understand some of the different indicators, we can use to understand how the model is performing. Let's talk about some of the "rookie mistakes" that can happen when starting to build machine learning models.
 
 ## Common rookie mistakes
 
@@ -34,7 +34,7 @@ Another common mistake is training with bad data. There are ways that your data 
 
 ## Test the model
 
-Our model is performing well enough according to the metrics provided. Lets test our model and see how it performs on unseen data.
+Our model is performing well enough according to the metrics provided. Let's test our model and see how it performs on unseen data.
 
 ### Test in the Portal UI
 

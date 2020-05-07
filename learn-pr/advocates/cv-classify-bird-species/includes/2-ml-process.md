@@ -1,14 +1,14 @@
-We are going to be using an Azure service that creates a Computer Vision model. Lets learn more about how Computer Vision works! Then you will see the step-by-step process for building a model from idea to model!
+We are going to be using an Azure service that creates a Computer Vision model. Let's learn more about how Computer Vision works! Then you will see the step-by-step process for building a model from idea to model!
 
 ## What is machine learning?
 
 You've most likely heard about AI, machine learning, or deep learning before. However, you may not be clear about what they mean and the differences between them. Let's break it down!
 
-**artificial intelligence (AI)** is a technique that enables computers to mimic human intelligence. It includes machine learning. The idea of AI is as simple as trying to mimic human intelligence with a machine, but AI includes many different techniques. The technique this module focuses on is machine learning.
+*Artificial intelligence (AI)* is a technique that enables computers to mimic human intelligence. It includes machine learning. The idea of AI is as simple as trying to mimic human intelligence by using a machine, but AI includes many different techniques. The technique this module focuses on is machine learning.
 
-**machine learning (ML)** is a subset of artificial intelligence that uses techniques that enable machines to use experience. Think of experience as a dataset, with right and wrong answers already given that the computer can use to improve at tasks. The field of machine learning also includes what is called *deep learning*.
+*Machine learning (ML)* is a subset of artificial intelligence. Machine learning uses techniques that enable machines to use experience. Think of experience as a dataset, with right and wrong answers already given. In machine learning, the computer uses these answers to improve in completing tasks. The field of machine learning also includes what is called *deep learning*.
 
-**deep learning (DL)** is a subset of machine learning that's based on artificial neural networks. The learning process is deep because the structure of artificial neural networks consists of multiple input, output, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a certain predictive task. The neural network structure allows a machine to learn through its own data processing.
+*Deep learning (DL)* is a subset of machine learning. Deep learning is based on artificial neural networks. The learning process is deep because the structure of artificial neural networks consists of multiple input layers, output layers, and hidden layers. Each layer contains units that transform the input data into information that the next layer can use for a certain predictive task. The neural network structure allows a machine to learn through its own data processing.
 
 In summary, when we build a model, we're trying to mimic human intelligence. We use data as "experience" to train a model to learn a specific task or function.
 

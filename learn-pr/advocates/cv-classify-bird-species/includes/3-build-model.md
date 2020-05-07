@@ -1,4 +1,4 @@
-Lets build our model! Here we will download the dataset, create our Azure service, upload the data, and train the model.
+Let's build our model! Here we will download the dataset, create our Azure service, upload the data, and train the model.
 
 ## Download data
 
@@ -15,7 +15,7 @@ The first thing we need to create our model is to get data! We are going to use 
 1. When the deployment succeeds, you will get a notification in the top-right corner.
 1. Select **Go to resource**.
 
-![An animated gif that demonstrates how to create a custom vision](../media/create-custom-vision-service.gif)
+![An animated gif that demonstrates how to create a Custom Vision project](../media/create-custom-vision-service.gif)
 
 ## Upload data
 
@@ -26,23 +26,23 @@ Now it is time to upload the data for training. There are a couple ways to do th
 1. Create a project.
 
    1. Select **Quick Start**.
-   1. Select **Custom Vision Portal** or go to <https://www.customvision.ai/projects>.
+   1. Select **Custom Vision portal** or go to <https://www.customvision.ai/projects>.
    1. Select **Sign in**.
    1. Select **New Project** and fill in the required fields:
 
-     | Field                  | Value                             |
-     | ---------------------- | --------------------------------- |
-     | **Enter a Name**           | Name of your choice               |
-     | **Description**            | A Short description of the model  |
-     | **Enter a Resource Group** | Select the resource you created   |
-     | **Project Types**          | Classification                    |
-     | **Classification Types**   | Multiclass (Single tag per image) |
-     | **Domains**                | General                           |
+      | Field                  | Value                             |
+      | ---------------------- | --------------------------------- |
+      | **Enter a Name**           | Name of your choice               |
+      | **Description**            | A short description of the model  |
+      | **Enter a Resource Group** | Select the resource you created   |
+      | **Project Types**          | Classification                    |
+      | **Classification Types**   | Multiclass (single tag per image) |
+      | **Domains**                | General                           |
 
-   1. Create the project.
+   1. Select **Create** to create the project.
 
    > [!NOTE]
-   > If you want to export the model to deploy on a mobile device, tensorflowjs, or IoT select the `compact` model option. This can also be changed after the project is created in the settings.
+   > If you want to export the model to deploy on a mobile device, TensorFlow.js, or IoT, select the **compact** model option. You can change this option in the settings after the project is created.
 
 1. Add and tag an image:
 
@@ -62,13 +62,15 @@ The Custom Vision SDK is available in the following languages: Python, .NET, Nod
 
 The following steps show you how to create the notebook and copy in the code. 
 
-If you prefer to instead download the notebook and code, you can clone the repo by using the following command:
+> [!NOTE]
+> If you prefer to instead download the notebook and code, you can clone the repo by using the following command:
+> 
+> ```bash
+> git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
+>```
+>
 
-```bash
-git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
-```
-
-1. Open a new Jupyter notebook instance or the IDE of your choice. Then, run the following command to import the package:
+1. Open a new Jupyter Notebook instance or the IDE of your choice. Then, run the following command to import the package:
 
    ```python
    !pip install azure-cognitiveservices-vision-customvision
@@ -100,7 +102,7 @@ git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
    print("Project created!")
    ```
 
-1. Go to [customvision.ai](https://www.customvision.ai/) if you would like to validate the project was created in the UI.
+1. Go to [customvision.ai](https://www.customvision.ai/) if you want to validate the project was created in the UI.
 
 1. Unzip `bird_photos.zip` and save it to directory where your Jupyter notebook is saved. Then, add the following code to get the list of bird type tags to be created based on the folder names in the `bird_photos` directory:
 
@@ -116,61 +118,61 @@ git clone https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species.git
 
    1. Create an image name tag in Custom Vision project.
 
-     ```python
-     def createTag(tag):
-         result = trainer.create_tag(project.id, tag)
-         print(f'{tag} create with id: {result}')
-         return result.id
-     ```
+      ```python
+      def createTag(tag):
+          result = trainer.create_tag(project.id, tag)
+          print(f'{tag} create with id: {result}')
+          return result.id
+      ```
 
    1. In the function, we pass in the tag name from the list of folder names and the tag ID from the tag we created in our project. It takes the `base_image_url` value and sets the directory to the folder that contains the images for the tag we created from the folder names. Then we append each image to the list, which we will use to upload in batches to the tag created.
 
-     ```python
-     def createImageList(tag, tag_id):
-         #set directory to current tag
-         base_image_url = f"./{tag}/"
-         photo_name_list = os.listdir(base_image_url)
-         image_list = []
-         for file_name in photo_name_list:
-             with open(base_image_url+file_name, "rb") as image_contents:
-                 image_list.append(ImageFileCreateEntry(name=base_image_url+file_name, contents=image_contents.read(), tag_ids=[tag_id]))
-         return image_list
-     ```
+      ```python
+      def createImageList(tag, tag_id):
+          #set directory to current tag
+          base_image_url = f"./{tag}/"
+          photo_name_list = os.listdir(base_image_url)
+          image_list = []
+          for file_name in photo_name_list:
+              with open(base_image_url+file_name, "rb") as image_contents:
+                  image_list.append(ImageFileCreateEntry(name=base_image_url+file_name, contents=image_contents.read(), tag_ids=[tag_id]))
+          return image_list
+      ```
 
    1. In the `uploadImageList` function, we pass in the `image_list` we created from the folder and then upload that list to the tag.
 
-     ```python
-     def uploadImageList(image_list):
-         upload_result = trainer.create_images_from_files(project.id, images=image_list)
-         if not upload_result.is_batch_successful:
-             print("Image batch upload failed.")
-             for image in upload_result.images:
-                 print("Image status: ", image.status)
-             exit(-1)
-     ```
+      ```python
+      def uploadImageList(image_list):
+          upload_result = trainer.create_images_from_files(project.id, images=image_list)
+          if not upload_result.is_batch_successful:
+              print("Image batch upload failed.")
+              for image in upload_result.images:
+                  print("Image status: ", image.status)
+              exit(-1)
+      ```
 
    1. This is our main method that calls the functions we created for each tag. We will loop through each `tag` (folder name) in the `tags` collection we created from the folders in the `bird_folder` directory. 
    
       Steps in the loop:
 
-      1. Call the `createTag` to create the class tag in custom vision.
+      1. Call the `createTag` to create the class tag in Custom Vision.
       1. Call `createImageList` function and sending in the current `tag` name and `tag_id` that was returned from Custom Vision. This returns our list of images to upload.
       1. Then, we upload the images from the `image_list` in batches of 25. Computer Vision will time out if try to upload the entire dataset at once.
 
-     ```python
-     for tag in tags:
-         tag_id = createTag(tag)
-         print(f"tag creation done with tag id {tag_id}")
-         image_list = createImageList(tag, tag_id)
-         print("image_list created with length " + str(len(image_list)))
+      ```python
+      for tag in tags:
+          tag_id = createTag(tag)
+          print(f"tag creation done with tag id {tag_id}")
+          image_list = createImageList(tag, tag_id)
+          print("image_list created with length " + str(len(image_list)))
 
-         #break list into lists of 25 and upload in batches
-         for i in range(0, len(image_list), 25):
-             batch = image_list[i:i + 25]
-             print(f'Upload started for batch {i} total items {len(batch)} for tag {tag}...')
-             uploadImageList(batch)
-             print(f"Batch {i} Image upload completed. Total uploaded {len(batch)} for tag {tag}")
-     ```
+          #break list into lists of 25 and upload in batches
+          for i in range(0, len(image_list), 25):
+              batch = image_list[i:i + 25]
+              print(f'Upload started for batch {i} total items {len(batch)} for tag {tag}...')
+              uploadImageList(batch)
+              print(f"Batch {i} Image upload completed. Total uploaded {len(batch)} for tag {tag}")
+      ```
 
 ## Train the model
 

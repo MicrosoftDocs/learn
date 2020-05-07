@@ -29,7 +29,7 @@ endpoint = "<YourEndpoint>"
 base_image_url = "<BasePathToImageFolder>"
 # Example of default iteration name would be "Iteration1"
 publish_iteration_name = "<PublishedIterationName>"
-# You can find the project id in the settings of the custom vision project in the portal.
+# You can find the project ID in the settings of the Custom Vision project in the portal.
 project_id = "<CustomVisionProjectId>"
 
 predictor = CustomVisionPredictionClient(prediction_key, endpoint=endpoint)
