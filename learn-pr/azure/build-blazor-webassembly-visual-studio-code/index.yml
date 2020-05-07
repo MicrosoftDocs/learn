@@ -34,7 +34,7 @@ products:
 - dotnet-standard
 units:
 - learn.build-web-app-blazor-webassembly-vscode.1-introduction
-- learn.build-web-app-blazor-webassembly-vscode.2-blazor-webassembly
+- learn.build-web-app-blazor-webassembly-vscode.2-understand-blazor-webassembly
 - learn.build-web-app-blazor-webassembly-vscode.3-exercise-configure-environment
 - learn.build-web-app-blazor-webassembly-vscode.4-blazor-components
 - learn.build-web-app-blazor-webassembly-vscode.5-exercise-add-component

@@ -7,13 +7,13 @@ Blazor allows developers to build front and backend logic for web apps with a co
 And by using Blazor WebAssembly, your app can be configured to create Progressive Web Applications allowing your app to be downloaded and used offline.
 
 
-![](../media/BrandBlazor.png)
+    ![](../media/blazor-logo.png)
 
 ## Learning objectives
 
 In this module, you will:
 
-- Configure your local environment for Blazor development with VS Code
+- Configure your local environment for Blazor development with Visual Studio Code
 - Create a new Blazor WebAssembly project
 - Add a razor page to a Blazor project
 - Add client-side logic to a Blazor web app
@@ -24,4 +24,4 @@ In this module, you will:
 - Familiarity with Blazor
 - Familiarity with ASP.NET Core
 - C# .NET experience at a beginner level
-- Experience with VS Code
+- Experience with Visual Studio Code

@@ -72,7 +72,7 @@ Finally, we bind the Calculate button using the @onclick event handler.
 
 ## Run the application 
 
-1. In the VS Code terminal, execute `dotnet run` to launch the app
+1. In the Visual Studio Code terminal, execute `dotnet run` to launch the app
 
 1. Open a web browser to **http://localhost:5000**  
 
@@ -80,4 +80,4 @@ Finally, we bind the Calculate button using the @onclick event handler.
 
 Congratulations, you successfully created a razor component with HTML, C# logic, binding and an event.
 
-![Image showing Blazor application running the browser](../media/calc-app.png)
+    ![Image showing Blazor application running the browser](../media/calculator-app.png)

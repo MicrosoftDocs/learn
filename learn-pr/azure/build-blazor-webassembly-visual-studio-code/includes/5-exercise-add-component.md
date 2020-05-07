@@ -1,18 +1,18 @@
 In this exercise, we'll add a new Razor page and create the compound interest calculator UI. Open the folder for the compound interest project you created in the previous exercise.
 
-## Open the Compound Interest project in VS Code
+## Open the Compound Interest project in Visual Studio Code
 
-1. Open VS Code
+1. Open Visual Studio Code
 
-1. Open the folder containing your compound interest project within VS Code
+1. Open the folder containing your compound interest project within Visual Studio Code
 
-1. VS Code may prompt you to install required assets, if so, select **Yes**
+1. Visual Studio Code may prompt you to install required assets, if so, select **Yes**
 
-![Image showing VS Code prompting to install required assets to build and debug](../media/missing-assets-vscode.png)
+    ![Image showing Visual Studio Code prompting to install required assets to build and debug](../media/missing-assets-visual-studio-code.png)
 
 ## Create a new Razor page for your calculator
 
-1. Expand the folders in the VS Code project explorer
+1. Expand the folders in the Visual Studio Code project explorer
 
 1. Click on **> Pages** to view the existing razor pages 
 
@@ -44,11 +44,11 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 
 ### Optional - run the application 
 
-1. In the VS Code terminal `dotnet run` to launch the app
+1. In the Visual Studio Code terminal `dotnet run` to launch the app
 
 1. Open a web browser to http://localhost:5000  
 
-![Image showing Blazor application running the browser](../media/create-new-component.png)
+    ![Image showing Blazor application running the browser](../media/create-new-component.png)
 
 ## Add HTML UI 
 We'll add html UI for our calculator, specifically a table.  
@@ -85,6 +85,6 @@ We'll add html UI for our calculator, specifically a table.
 
 ### Optional - run the application 
 
-1. In the VS Code terminal `dotnet run` to launch the app
+1. In the Visual Studio Code terminal `dotnet run` to launch the app
 
 1. Open a web browser to **http://localhost:5000** 
