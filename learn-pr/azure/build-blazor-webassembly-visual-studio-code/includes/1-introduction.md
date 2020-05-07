@@ -6,9 +6,6 @@ Blazor allows developers to build front and backend logic for web apps with a co
 
 And by using Blazor WebAssembly, your app can be configured to create Progressive Web Applications allowing your app to be downloaded and used offline.
 
-
-    ![](../media/blazor-logo.png)
-
 ## Learning objectives
 
 In this module, you will:

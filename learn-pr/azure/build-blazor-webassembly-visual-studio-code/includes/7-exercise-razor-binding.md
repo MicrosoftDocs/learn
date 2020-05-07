@@ -4,19 +4,11 @@ In this exercise, we'll add our C# logic to our compound interest razor componen
 
 1. Open **CompoundInterest.razor**
 
-1. Below the table definition, add an @code markup with open and closing braces
-
-
-    ```cshtml
-    @code 
-    {
-
-    }
-    ```
+1. Below the table definition, add an `code` markup with open and closing braces `@code { }`
 
 ## Add member variables for compound interest calculation
 
-We'll add several C# variables to store input values from the user. Add the following within the @code markup
+We'll add several C# variables to store input values from the user. Add the following within the `@code` markup
 
     ```cshtml
     @code
@@ -31,7 +23,7 @@ We'll add several C# variables to store input values from the user. Add the foll
 
 ## Add calculation logic 
 
-Within the @code markup, add the following method to calculate compound interest:
+Within the `@code` markup, add the following method to calculate compound interest:
 
     ```cshtml
     private void Calculate()
@@ -43,7 +35,7 @@ Within the @code markup, add the following method to calculate compound interest
 
 ## Add binding to the input fields
 
-We're now ready to bind the variables we defined in the **@code** markup to our HTML input fields. Use the **@bind** markup on each input field using the appropriate variable.
+We're now ready to bind the variables we defined in the `@code` markup to our HTML input fields. Use the `@bind markup on each input field using the appropriate variable.
 
     ```cshtml
     <tr>
