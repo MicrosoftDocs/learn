@@ -38,7 +38,7 @@ Before making changes to an app, it's good practice to create a new branch for t
 
 After you make the changes, you'll want to see them running before deciding to merge the changes. Once you create a pull request from your new branch to the **master** branch, the GitHub Action will build your app and API and deploy them both to a preview URL. This allows you to leave your web app running with Azure Static Web Apps, but also see a second preview URL with the results from your pull request.
 
-### Configuration communication between your web app and API
+### Configure communication between your web app and API
 
 When you run your API locally, it runs on port 7071 by default. Your web app runs on a different local port. When your web app tries to make an HTTP request from its port to your API's port 7071, this is known as a Cross-Origin Resource Sharing (CORS). Your browser will prevent the HTTP request from completing unless the API server allows the request to proceed.
 
