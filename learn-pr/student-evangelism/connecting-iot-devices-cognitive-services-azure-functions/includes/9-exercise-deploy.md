@@ -60,8 +60,6 @@ Click F1 to open the command palette, type, and select Arduino: Board Manager. S
 
 - **Ubuntu**: Run the commands in terminal and sign out and sign in for the group change to take effect:
 
-  bashКопирај
-
   ```bash
   # Copy the default rules. This grants permission to the group 'plugdev'
   sudo cp ~/.arduino15/packages/AZ3166/tools/openocd/0.10.0/linux/contrib/60-openocd.rules /etc/udev/rules.d/
