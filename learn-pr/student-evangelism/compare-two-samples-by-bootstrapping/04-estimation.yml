@@ -5,8 +5,8 @@ metadata:
   title: Estimation
   description: Introduction to estimation of statistics
   ms.date: 19/03/2020
-  author: sauravmittal
-  ms.author: leescott
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 3
