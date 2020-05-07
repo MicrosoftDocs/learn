@@ -105,7 +105,7 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
 
 It's time to see your application running locally. Each front-end application runs on a different port.
 
-Select your preferred front-end application and click the link to browse to the application.
+Click the link to browse to your application.
 
 ::: zone pivot="angular"
 
