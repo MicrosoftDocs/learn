@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure-well-architected-security
+metadata:
+  title: Azure Well Architected Framework - Security
+  description: Discover the tools that Azure provides to help you design a secure environment throughout your infrastructure, data, network, and applications.
+  ms.date: 05/19/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Well Architected Framework - Security
+summary: Learn how to incorporate security into your architecture design, and discover the tools that Azure provides to help you create a secure environment through all the layers of your architecture.
+abstract:  | 
+  In this module, you will:
+  - Learn how to take a defense in depth approach to securing your architecture
+  - Learn how to protect your identities
+  - Learn what technologies are available to protect your Azure infrastructure
+  - Learn how and where to use encryption to secure your data
+  - Learn how to protect your architecture at the network level
+  - Learn how to leverage application security best practices to integrate security into your application
+prerequisites: None
+iconUrl: /learn/achievements/azure-well-architected-security.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+- security-engineer
+products:
+- azure
+- azure-active-directory
+units:
+- learn.azure-well-architected-security.1-introduction
+- learn.azure-well-architected-security.2-defense-in-depth
+- learn.azure-well-architected-security.3-identity-management
+- learn.azure-well-architected-security.4-infrastructure-protection
+- learn.azure-well-architected-security.5-encryption
+- learn.azure-well-architected-security.6-network-security
+- learn.azure-well-architected-security.7-application-security
+- learn.azure-well-architected-security.8-summary
+badge:
+  uid: learn.azure-well-architected-security.badge
