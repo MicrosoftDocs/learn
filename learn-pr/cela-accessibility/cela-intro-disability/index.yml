@@ -1,8 +1,8 @@
 ### YamlMime:Module
-#LP name: Introduction to the Cloud with Carnegie Mellon
+#LP name: Module 1: Introduction to Disability and Accessibility
 uid: learn.cela-disability-intro
 metadata:
-  title: Introduction to Disability and Accessibility
+  title: Introduction to disability and accessibility
   description: This module presents the core ideas and definitions needed to understand accessibility concepts. You will learn what accessibility means, how to be respectful and inclusive of people of all abilities, and why it's important for technology and materials to be accessible to everyone.
   ms.date: 05/06/2020
   author: erzelman
@@ -10,14 +10,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-cela-accessibility
   showCreativeCommonsFooter: true
-title: Introduction to Disability and Accessibility
-summary: Learn about the cloud, including the history, building blocks, and types on your way to becoming a Cloud Administrator.
+title: Introduction to disability and accessibility
+summary: This module presents the core ideas and definitions needed to understand accessibility concepts. You will learn what accessibility means, how to be respectful and inclusive of people of all abilities, and why it's important for technology and materials to be accessible to everyone.
 abstract: |
   In this module you will:
   - Learn what the concepts of accessibility, disability, and inclusion mean.
   - Explore appropriate disability language and etiquette when communicating with and about people with disabilities.
 prerequisites: None
-iconUrl: /learn/achievements/cmu-cloud-admin/cloud-admin-overview.svg
+iconUrl: /learn/achievements/accessibility-features.svg
 levels:
 - beginner
 roles:

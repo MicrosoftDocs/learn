@@ -1,19 +1,19 @@
-## Person-First Language and Identity-First Language
+## Person-first language and identity-first language
 Our words can hold a lot of power. Our hope is that positive language around disability will help people to be more inclusive.
 
 Microsoft recommends using people-first language whenever possible, such as "a person with a disability" or "a person with a vision disability" rather than "a disabled person" or "a visually impaired person." Avoid outdated or offensive terms such as handicapped, retarded, mute, or wheelchair bound.
 
 While we recommend people-first language as a best practice, individuals may have different preferences. Some people prefer to use identity-first language to describe themselves, such as "autistic person" rather than "person with autism." If you are corrected by someone or make a mistake, accept it, ask for suggestions to fix it, and move on.
 
-## Interacting with a Person who has a Disability
+## Interacting with a person who has a disability
 How you act tells people who you are and what you think of them. Regardless of whether you know someone has a disability or not, treat the person with respect and include them in your conversations, meetings, and events.
 
-## Speak to the Person
+## Speak to the person
 If you are in a meeting and one of the attendees is blind and asks a question, look directly at the person who is blind when answering the question, not just the sighted people around them.
 
 :::image type="content" source="../media/TwoPeopleTalking.png" alt-text="Two people sitting down and talking directly to each other":::
 
-## Disability Etiquette
+## Disability etiquette
 Treating people with disabilities with respect is about more than the language you use. Here are some important tips for interacting with people with disabilities in an appropriate and respectful way.
 
 They can be briefly summarized as:

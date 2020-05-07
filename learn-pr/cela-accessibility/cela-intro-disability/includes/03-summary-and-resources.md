@@ -5,7 +5,7 @@ In this module, you've learned about the meaning and significance of the concept
 - Person-first language as a recommended best practice that puts the person before their disability.
 - Examples of how people of all abilities access and interact with technology.
 
-### Learn More
+### Learn more
 [Microsoft Accessibility](https://www.microsoft.com/en-us/accessibility/) – How Microsoft approaches accessibility and resources to help people of all abilities.
 
 [World Health Organization](https://www.who.int/about/communications/accessible/ensuring-accessibility) – Principles of accessibility for communication and design.
