@@ -9,6 +9,7 @@ metadata:
   ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  show_latex: true
 durationInMinutes: 1
 content: |
   [!include[](includes/5-random-number-generator.md)]
