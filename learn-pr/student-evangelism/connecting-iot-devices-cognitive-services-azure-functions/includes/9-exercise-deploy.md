@@ -44,16 +44,12 @@ Add following lines to configure Arduino depending on your platform:
 
 - **Windows**:
 
-  JSONCopy
-
   ```json
   "arduino.path": "C:\\Program Files (x86)\\Arduino",
   "arduino.additionalUrls": "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/master/package_azureboard_index.json"
   ```
 
 - **macOS**:
-
-  JSONCopy
 
   ```json
   "arduino.path": "/Applications",
@@ -63,8 +59,6 @@ Add following lines to configure Arduino depending on your platform:
 - **Ubuntu**:
 
   Replace the **{username}** placeholder below with your username.
-
-  JSONCopy
 
   ```json
   "arduino.path": "/home/{username}/Downloads/arduino-1.8.8",
