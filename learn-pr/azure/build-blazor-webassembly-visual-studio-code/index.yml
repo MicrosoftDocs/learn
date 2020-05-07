@@ -2,14 +2,14 @@
 uid: learn.build-web-app-blazor-webassembly-vscode
 metadata:
   title: Build a web app with Blazor WebAssembly and VS Code
-  description: Learn how to setup your development environment and build your first WebAssembly app with Blazor, VS Code and C#.
+  description: Learn how to set up your development environment and build your first WebAssembly app with Blazor, Visual Studio Code, and C#.
   ms.date: 05/02/2020
   author: adrianstevens
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a web app with Blazor WebAssembly and VS Code
-summary: Learn how to setup your development environment and build your first WebAssembly app with Blazor, VS Code and C#.
+summary: Learn how to set up your development environment and build your first WebAssembly app with Blazor, Visual Studio Code, and C#.
 abstract: | 
   In this module, you will:
   - Configure your local environment for Blazor development with VS Code
