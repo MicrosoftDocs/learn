@@ -11,6 +11,6 @@ metadata:
   zone_pivot_groups: dev-javascript-framework
 azureSandbox: true
 title: Exercise - Create your fallback routes
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/6-exercise-fallback-routes.md)]
