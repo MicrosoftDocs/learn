@@ -9,69 +9,40 @@ metadata:
   ms.author: v-gea
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-
-
   - content: "Which version of SQL Server is best suited for smaller operational use, yet still supports cloud or on-premises installations? Select the correct answer."
     choices:
-    - content: "SQL Server 2017 Developer Edition"
+    - content: "SQL Server 2019 Developer Edition"
       isCorrect: false
-      explanation: "SQL Server Developer Edition is licensed for development and testing in a non-production environment. SQL Server 2017 Standard Edition is best suited for smaller operational use, yet still supports cloud or on-premises installations"
-    - content: "SQL Server 2017 Web Edition"
-      isCorrect: false
-      explanation: "SQL Server Web Edition is specifically designed for Web hosting organizations. SQL Server 2017 Standard Edition is best suited for smaller operational use, yet still supports cloud or on-premises installations"
-    - content: "SQL Server 2017 Standard Edition"
+      explanation: "That's incorrect. SQL Server Developer Edition is licensed for development and testing in a non-production environment."
+    - content: "SQL Server 2019 Standard Edition"
       isCorrect: true
-      explanation: "SQL Server 2017 Standard Edition is best suited for smaller operational use, yet still supports cloud or on-premises installations"
-    - content: "SQL Server 2017 Express Edition"
+      explanation: "That's correct. SQL Server 2019 Standard Edition is best suited for smaller operational use, yet still supports cloud or on-premises installations."
+    - content: "SQL Server 2019 Enterprise Edition"
       isCorrect: false
-      explanation: "SQL Server Express Edition is free to use, but has limited functionality. SQL Server 2017 Standard Edition is best suited for smaller operational use, yet still supports cloud or on-premises installations"
-    - content: "SQL Server 2017 Enterprise Edition"
-      isCorrect: false
-      explanation: "SQL Server Enterprise Edition is designed for large scale installations and mission-critical workloads. SQL Server 2017 Standard Edition is best suited for smaller operational use, yet still supports cloud or on-premises installations"
-
-  - content: "Which is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Log Shipping? Select the correct answer."
+      explanation: "That's incorrect. SQL Server Enterprise Edition is designed for large scale installations and mission-critical workloads."
+  - content: "Which is the earliest version of SQL Server that can be upgraded to SQL Server 2019 by using Log Shipping? Select the correct answer."
     choices:
     - content: "SQL Server 2000 Service Pack 4"
       isCorrect: false
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Log Shipping."
-    - content: "SQL Server 2005 Service Pack 5"
-      isCorrect: false
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Log Shipping."
-    - content: "SQL Server 2008 Service Pack 2"
-      isCorrect: false
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Log Shipping."
+      explanation: "That's incorrect. This feature is supported in a later version."
     - content: "SQL Server 2008 R2 Service Pack 2"
       isCorrect: true
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Log Shipping."
+      explanation: "That's correct. SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2019 by using Log Shipping."
     - content: "SQL Server 2012 Service Pack 1"
       isCorrect: false
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Log Shipping."
-    - content: "SQL Server 2014"
-      isCorrect: false
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Log Shipping."
-
-  - content: "Which is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Availability Groups? Select the correct answer."
+      explanation: "That's incorrect. This feature is supported in an earlier version."
+  - content: "Which is the earliest version of SQL Server that can be upgraded to SQL Server 2019 by using Availability Groups? Select the correct answer."
     choices:
-    - content: "SQL Server 2005 Service Pack 5"
-      isCorrect: false
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Availability Groups."
-    - content: "SQL Server 2008 Service Pack 3"
-      isCorrect: false
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Availability Groups."
     - content: "SQL Server 2008 R2 Service Pack 2"
+      isCorrect: false
+      explanation: "That's incorrect. Availability Groups were not available in SQL Server 2008."
+    - content: "SQL Server 2012"
       isCorrect: true
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Availability Groups."
-    - content: "SQL Server 2012 Service Pack 2"
-      isCorrect: false
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Availability Groups."
-    - content: "SQL Server 2014 Service Pack 1"
-      isCorrect: false
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Availability Groups."
+      explanation: "That's correct. SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2019 by using Availability Groups."
     - content: "SQL Server 2016"
       isCorrect: false
-      explanation: "SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2017 by using Availability Groups."
+      explanation: "That's incorrect. Availability Groups where available version."
