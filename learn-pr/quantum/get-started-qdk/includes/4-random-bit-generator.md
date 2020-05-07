@@ -4,7 +4,7 @@ You're likely already familiar with the concept of a random number generator. A 
 
 On classical computers, most random number generators don't produce truly random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates the same sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
 
-The quantum random number generator uses a Hadamard (`H`) operation to put a qubit into superposition. The measurement results in a zero or a one. But how can we use this behavior to generate larger numbers?
+The quantum random number generator uses an `H` operation to put a qubit into superposition. The measurement results in a zero or a one. But how can we use this behavior to generate larger numbers?
 
 Let's say you repeat the process four times, generating this sequence of binary digits:
 
