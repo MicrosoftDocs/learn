@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   zone_pivot_groups: dev-javascript-framework
 title: Exercise - Create an Azure Functions project
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
   [!include[](includes/8-exercise-func-app.md)]
