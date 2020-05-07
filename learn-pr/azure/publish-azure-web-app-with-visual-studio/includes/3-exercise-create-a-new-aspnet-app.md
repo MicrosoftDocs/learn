@@ -1,27 +1,29 @@
-In this unit, you will create, build, and run a new ASP.NET Core web application on your local machine.
+In this unit, you will create, build, and run a new ASP.NET Core web application on your local machine. You will need Visual Studio 2019 installed with the **ASP.NET and web development** and **Azure development** workloads installed.
 
-## Create a project
+## Create an ASP.NET Core project
 
 The first step is to start Visual Studio and create a local ASP.NET Core web application.
 
-1. On the Visual Studio start page, select **File**, then click **New**, and then click **Project..**.
+1. Open Visual Studio 2019 on your local machine.
 
-1. In the **New Project** dialog box, on the left-hand pane, select **Web**.
+1. From the Visual Studio landing page, click **Create a new project**.
 
-1. In the center pane, click **ASP.NET Core Web Application**.
+1. In the search box, enter **Web**.
 
-1. At the bottom of the dialog box, in the **Name** field, enter **AlpineSkiHouse**.
+1. From the search results, select **ASP.NET Core Web Application**.
+
+1. In the new project dialog, set the **Name** field to **AlpineSkiHouse**.
 
 1. Select a **Location** for your new solution.
 
-1. Click the **OK** button to create your project.
+1. Click the **Create** button to create your project.
 
-1. In the **New ASP.NET Core Web Application** dialog box, you will see a selection of starting templates. For this exercise, select **Web Application**, and then click **OK** to create your project.
+1. In the **Create a new ASP.NET Core web application** dialog box, you will see a selection of starting templates. For this exercise, select **Web Application**, and then click **Create** to create your project.
 
     :::image type="content" source="../media/3-aspnet-templates.png" alt-text="New Project Dialog." loc-scope="vs":::
 
     > [!NOTE]
-    > You can also select different starting templates in this dialog box depending on your web development requirements. At the top of the dialog box, you are also able to select the version of ASP.NET Core. You should select ASP.NET Core 2.0 or later.
+    > You can also select different starting templates in this dialog box depending on your web development requirements. At the top of the dialog box, you are also able to select the version of ASP.NET Core. You should select ASP.NET Core 3.1 or later.
 
 1. You should now have your new ASP.NET Core web application solution.
 

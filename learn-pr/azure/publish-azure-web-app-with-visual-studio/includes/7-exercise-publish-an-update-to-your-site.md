@@ -35,4 +35,4 @@ Once you've published your changes, Visual Studio will open the site in your bro
 
 ## Congrats!
 
-You have successfully updated your web app using Visual Studio 2017.
+You have successfully updated your web app using Visual Studio 2019.

@@ -31,10 +31,6 @@ Each page in your site is represented with two code files:
 
 This is a configuration file for ASP.NET Core.
 
-### bundleconfig.json
-
-The bundleconfig.json is preprocessing configuration. This file is making your .css and .js files smaller when they are published.
-
 ### Program.cs and Startup.cs
 
 Program.cs and Startup.cs configure and launch your web host for your site.

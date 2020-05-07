@@ -4,7 +4,7 @@ Here, we look at how to use Visual Studio to publish your ASP.NET Core web appli
 
 ## What is the Azure App Service?
 
-Azure App Service is a service for hosting web applications, REST APIs, and mobile backends. App Service supports code written in  .NET, .NET Core, Java, Ruby, Node.js, PHP, and Python. App Service is ideal for most websites, particularly if you don't need a lot of control over the hosting infrastructure.
+Azure App Service is a service for hosting web applications, REST APIs, and backend services. App Service supports code written in .NET, .NET Core, Java, Ruby, Node.js, PHP, and Python. App Service is ideal for most websites, particularly if you don't need a lot of control over the hosting infrastructure.
 
 ## What is the App Service plan?
 
@@ -21,11 +21,11 @@ Each App Service plan defines:
 - Size of VM instances (small, medium, large)
 - Pricing tier (Free, Shared, Basic, Standard, Premium, Premium V2, Isolated)
 
-## Specify the region
+## Select a region
 
 When creating an App Service plan, you have to define a region or location where that plan will be hosted. Typically, you would choose a region geographically close to your expected customers.
 
-## What are the pricing and reliability levels?
+## Pricing and reliability levels
 
 **Shared compute**: **Free** and **Shared**, the two base tiers, run an app on the same Azure VM as other App Service apps, including apps of other customers. These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources cannot scale out.
 

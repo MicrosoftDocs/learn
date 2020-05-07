@@ -1,16 +1,18 @@
-You now have an ASP.NET Core web application running locally. In this part, you'll publish your application to Azure App Service.
+You have an ASP.NET Core web application running locally. In this exercise, you'll publish your application to Azure App Service.
 
-1. In Solution Explorer, right-click your project and select **Publish**.
+## Publish your ASP.NET Core web app to Azure
 
-1. Click **Start**.
+1. In Solution Explorer, right-click on the **AlpineSkiHouse** project and select **Publish...**.
 
-1. In the dialog box that appears, on the left, choose **App Service** as your publish target.  On the right, select **Create New** to create an App Service app.
+1. In the dialog box that appears, on the left, choose **App Service** as your publish target. On the right, select **Create New** to create an App Service app.
 
-1. Click **Publish**.
+1. Under **Azure App Service** select **Select Existing**.
+
+1. Click the **Select profile** button to continue.
 
 ### Configure your new Azure App Service
 
-1. In the **Create App Service** dialog box, click **Add an account**, and sign in to Azure.
+1. In the **App Service** dialog box, click **Add an account**, and sign in to Azure.
 
 1. Enter the required information about your App Service plan.
 
