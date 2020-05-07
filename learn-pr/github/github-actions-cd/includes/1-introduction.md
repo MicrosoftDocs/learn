@@ -1,22 +1,22 @@
-Continuous delivery (CD) is the process of getting code changes to the customer quickly and safely.
+Continuous Delivery (CD) is the practice of using automation to build, test, configure and deploy from the build environment all the way to the final production environment.  
 
-Suppose you work with a software development team that is working on your company's product support web site. You have set up continuous integration using GitHub Actions and workflows, and now you need to implement continuous delivery. In your continuous integration workflow, you've saved off a container image. You can now create a continuous delivery workflow to deploy this container to your staging and production environments. You talked with IT about getting these environments created and torn down as needed and you've all decided to use GitHub Actions workflows to support *infrastructure as code*.
+Suppose that your development team is working on the company's product support website. You've already set up continuous integration (CI) by using GitHub Actions and workflows. Now you need to implement CD. Your CI workflow saves a container image. Your CD workflow will deploy this container to your staging and production environments. You've talked with IT about how to create and tear down these environments as needed and you've all decided to use GitHub Actions and workflows to support infrastructure as code.
 
-In this module, you learn how to use GitHub Actions workflows to implement a continuous delivery solution to deploy a container-based web app to Microsoft Azure Web Apps. You also automate the creation and teardown of the deployment environments using a workflow.
+In this module, you learn how to use GitHub Actions and workflows to implement a CD solution that deploys a container-based web app to Microsoft Azure Web Apps. You also automate the creation and teardown of the deployment environments by using a workflow.
 
 ## Learning objectives
 
-In this module, you:
+In this module, you will:
 
-- discover options for triggering a continuous delivery GitHub Workflow
-- control workflow execution with job conditionals
-- deploying to Microsoft Azure with a GitHub deploy action
-- store credentials with GitHub Secrets
-- create and destroy Azure resources with GitHub Actions workflows
+- Discover options for triggering a CD GitHub Workflow
+- Control workflow execution with job conditionals
+- Deploy to Microsoft Azure with a GitHub deploy action
+- Store credentials with GitHub Secrets
+- Create and destroy Azure resources with GitHub Actions and workflows
 
 ## Prerequisites
 
-This module assumes you've completed the [Automate development tasks by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-hello/?azure-portal=true) module and [Build continuous integration workflows by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-ci/?azure-portal=true) module or that you're already familiar with GitHub Actions and workflow basics used in continuous integration.
+This module assumes you've completed the [Automate development tasks by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-hello/?azure-portal=true) module and [Build continuous integration workflows by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-ci/?azure-portal=true) module or that you're already familiar with GitHub Actions and workflows that are used in CI.
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub
