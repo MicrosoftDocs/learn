@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.send-crop-weather-alerts.5-create-twilio-account
+title: Exercise - Create a Twilio Account for Sending and Receiving of SMS
+metadata:
+  title: Exercise - CCreate a Twilio Account for Sending and Receiving of SMS
+  description: To be able to receive and send SMS messages programmatically, you'll need to create a Twilio account.
+  author: berndverst
+  ms.author: beverst
+  ms.date: 05/07/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-create-twilio-account.md)]

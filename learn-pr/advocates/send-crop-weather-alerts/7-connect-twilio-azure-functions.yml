@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.send-crop-weather-alerts.7-connect-twilio-azure-functions
+title: Exercise - Connect Twilio to Azure Functions
+metadata:
+  title: Exercise - Connect Twilio to Azure Functions
+  description: In this unit, you'll connect your Twilio phone number to the Azure Functions app to receive text messages.
+  author: berndverst
+  ms.author: beverst
+  ms.date: 05/07/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-connect-twilio-azure-functions.md)]

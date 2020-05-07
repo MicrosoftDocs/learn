@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.advocates.send-crop-weather-alerts
+metadata:
+  title: Send Crop Weather Alerts
+  description: In this tutorial you will deploy an application that allows farmers to utilize SMS text messaging to setup and receive temperature alerts for specific locations.
+  ms.date: 05/07/2020
+  author: berndverst
+  ms.author: beverst
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Send Crop Weather Alerts
+summary: In this tutorial you will deploy an application that allows farmers to utilize SMS text messaging to setup and receive temperature alerts for specific locations.
+abstract: |
+  In this module you'll:
+  - Learn about Azure Maps APIs for obtaining the weather forecast at any location.
+  - Create and configure a Twilio account with programmable SMS phone number to receive and send text messages.
+  - Deploy an existing application to Azure Functions utilizing Twilio and Azure Maps to manage and send temperature alerts for specific locations.
+# Use placeholder image until final artwork ready
+iconUrl: /learn/achievements/generic-badge.svg
+# iconUrl: /learn/achievements/advocates/send-crop-weather-alerts.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure-maps
+prerequisites: | 
+  - Basic familiarity with Azure Functions.
+  You may want to complete the Microsoft Learn module: [Create serverless logic with Azure Functions](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/)
+
+units:
+- learn.advocates.send-crop-weather-alerts.1-introduction
+- learn.advocates.send-crop-weather-alerts.2-application-architecture
+- learn.advocates.send-crop-weather-alerts.3-create-azure-maps-account
+- learn.advocates.send-crop-weather-alerts.4-knowledge-check
+- learn.advocates.send-crop-weather-alerts.5-create-twilio-account
+- learn.advocates.send-crop-weather-alerts.6-deploy-azure-function-app
+- learn.advocates.send-crop-weather-alerts.7-connect-twilio-azure-functions
+- learn.advocates.send-crop-weather-alerts.8-summary
+
+badge:
+  uid: learn.send-crop-weather-alerts.badge
