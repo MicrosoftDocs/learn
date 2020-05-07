@@ -2,9 +2,9 @@ Now that we have our development environment setup, we'll explore the structure 
 
 ## Blazor WebAssembly project file
 
-Blazor WebAssembly projects target .NET Standard, currently version 2.0. Note, this is different that Blazor Server apps which are .NET Core projects.
+Blazor WebAssembly projects target .NET Standard, currently version 2.0. Note, this is different than Blazor Server apps which are .NET Core projects.
 
-Blazor WebAssembly Apps target .NET Standard because it runs directly in the browser on a WebAssembly-baed .NET runtime using mono. It's not possible to install .NET directly into a browser.
+Blazor WebAssembly Apps target .NET Standard because it runs directly in the browser on a WebAssembly-based .NET runtime using mono. It's not possible to install .NET directly into a browser.
 
 ## Blazor WebAssembly entry point 
 
@@ -14,7 +14,7 @@ By default, the Main method configures and creates the .NET WebAssembly object t
 
 ## What is Razor?
 
-Razor is a markup syntax for writing UI components with HTML and C# used in Blazor web apps. Razor  
+Razor is a markup syntax for writing UI components with HTML and C# used in Blazor web apps.  
 
 Razor is based on ASP.NET, and designed for creating web applications. 
 
