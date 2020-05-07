@@ -1,42 +1,46 @@
-To help developers create responsible bots, Microsoft has outlined [10 guidelines for developers of Conversational UI][Guidelines10]. We'll only cover the major principles you'll need for this course, but we encourage you to learn more about responsible conversational UI by viewing [this interactive demo][InteractiveDemo].
+To help developers create responsible bots, Microsoft has outlined [10 guidelines for developers of conversational UI][Guidelines10]. In this course, we'll cover the major principles that you'll need to develop a simple bot. You can learn more about all of the principles in [this interactive demo][InteractiveDemo].
 
-"Developers are accountable for the bots they deploy" is one of the major principles of responsible bot creation. It's important for developers to be aware of responsible conversational UI principles.
+**Developers are accountable for the bots they deploy**. This major principle is the foundation for responsible bot creation. It's important for developers to be aware of responsible conversational UI principles.
 
 ## Give your bot a clear goal
 
-When developing a bot, you should clearly understand its purpose and communicate this purpose to users. When they interact with a a bot, users who know its limitations won't have overly high expectations, that understanding can help avoid disappointment and misuse of the bot.
+Before you start to build your bot, take time to clearly define its purpose. As you develop, carefully consider how to communicate the purpose to your users. When a bot expresses its purpose and limitations in a responsible way, you can reduce frustration and unmet expectations for your users.
 
-It's especially important when with **consequential outcomes** - when a conversation with a bot can have a significant impact on user's life. For example, bots used healthcare or education.
+Exercise careful planning for bots that have _consequential outcomes_. When a bot has a conversation with the user, it can have a significant impact on the user's life. Bots that are used in healthcare or education need to be carefully designed for this consideration.
 
-In the case of our **GeoFriend** bot, we'll need to make it clear that the bot does not replace a teacher. It's only acting as an assistant to help students learn. We don't want a user to rely solely on the bot to teach them Geography, then discover later that their knowledge might not be up to standards.
+In our **GeoFriend** bot, we'll need to make it clear to our students that the bot doesn't replace their teacher. The bot is only acting as an assistant to help the students learn. We don't want a user to rely solely on the bot to teach them Geography. They might discover later that their knowledge isn't up to standards!
 
-A clear goal also discourages users from engaging in conversations with a bot about unrelated topics. It's much easier to develop a bot that's adept at solving specific tasks as opposed to general conversation.
+When the bot clearly communicates its goal, the user is discouraged from engaging in conversation about unrelated issues. Also, it's easier to build a bot to solve specific tasks, than provide support for general conversation.
 
-## Tell users that they're talking to a bot
+## Tell users they're talking to a bot
 
-To avoid high expectations, you should make it clear upfront that the user is talking to a bot and not a human being. This helps the user focus on solving a specific task, and not engaging the bot on an emotional level. The bot should normally support some traditional phrases like greeting and ending a conversation, but not much more than that. Handling general conversation can be implemented using [Project Personality Chat][PersonalityChat], which we will use later in the course to enhance our **GeoFriend** bot.
+From the start of the conversation, make it clear that the user is talking to a bot and not a human being. This approach helps the user to focus on solving a specific task. The user is less likely to expect emotional support. The bot should recognize some traditional phrases for greetings and endings of a conversation. General conversation can be implemented by using [Project personality chat][PersonalityChat]. We'll use this project later to enhance our **GeoFriend** bot.
 
-## Build trust
+## Build trust with the user
 
-Also, clearly introducing the bot in the beginning of a conversation helps to **build trust** between a user and a bot. Another useful trick is to use a robot icon instead of a human face to help remind the user what they're talking to.
+There are some useful tactics you can use to build trust between your user and the bot. 
 
-A bot that supports **handoff to a human operator** also helps to build trust, because the user knows that they can get the help from qualified personnel if needed. A common scenario is to use bot dialog to collect initial user information, and then hand the conversation over to a human to make expert decisions and solve any problems. This structure delegates tedious tasks to the bot and leaves the most creative part to human operator.
+- **Clear introduction**: Clearly introduce the bot as a technology assistant at the beginning of the conversation.
 
-One other aspect of building trust is respecting user's privacy. You should follow the best practices for collecting and handling personal information. Collect only information that is relevant to solving the problem.
+- **Robot picture**: Use a picture of a robot instead of a human face. The picture reminds users "who" they're talking to.
 
-## Fairness, diversity and accessibility
+- **Human hand-off**: Configure the bot to support _handoff to a human operator_. A common scenario is to use a bot dialog to collect initial information from the user. The information and conversation is then _handed off_ to an operator to make expert decisions and provide problem-solving. This structure delegates tedious tasks to the bot and leaves the most creative part to a human operator.
 
-A big problem in AI is to ensure fair and unbiased treatment. This issue is addressed by [Responsible AI][RespAI] principles. One way to help avoid bias is to include **diversity** in all stages of building a bot. For example, by including different genders and nationalities on the development team.
+- **Respect privacy**: Follow standard safe practices for collecting and handling personal information from the use. Collect only information that's relevant to solving the problem.
 
-Bots can also be made accessible to a diverse audience by supporting different languages. This can be simplified by using [translator cognitive service][TranslatorAPI] for automatic translation of incoming and outgoing messages, and by automatically [detecting a language][LangDetect] that user speaks.
+## Support diversity and accessibility
 
-There are also important **cultural norms** to pay attention to. In some cultures, an informal tone would be appropriate for a bot. In others, more formal communication is required. Adjusting to the appropriate style is a good idea. For example, **personality chat** supports three different conversational styles.
+A complex problem in AI is how to ensure fair and unbiased treatment for your users. This issue is addressed by [responsible AI][RespAI] principles.
 
-Building **accessibility practices** into a bot can broaden the potential audience. For example, the inclusion of **speech support** would make the bot usable by visually impaired users. It's also more attractive to users who don't want to type, like drivers.
+One way you can avoid bias is to include _diversity_ in all stages of bot development. When you include different genders and nationalities on your development team, you achieve stronger support for diversity.
 
-## Next steps
+Bots become accessible to a diverse audience when you support different languages. This task can be simplified with the [Azure Cognitive Services Translator Text API][TranslatorAPI]. You can use the API for automatic translation of incoming and outgoing messages, and to automatically [detect a user's language][LangDetect].
 
-Now that we know main principles of building responsible bots, let's apply them as we build a simple Geography Assistant Bot.
+_Cultural norms_ are important to consider when designing your bot. Some cultures use an informal tone, while others use more formal communication. Try to design your bot so it can adjust the conversational style to meet the culture. **Project personality chat** supports three conversational styles.
+
+Build _accessibility practices_ into your bot to broaden the potential audience. When you include _speech support_, you make the bot usable for visually impaired users. Your bot also becomes more attractive to users who don't want to type.
+
+Now that we know some of the main principles for building responsible bots, let's apply them as we build a simple Geography assistant bot.
 
 <!-- Links -->
 
@@ -45,4 +49,4 @@ Now that we know main principles of building responsible bots, let's apply them 
 [PersonalityChat]: https://www.microsoft.com/research/project/personality-chat/
 [RespAI]: https://www.microsoft.com/ai/responsible-ai
 [TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/
-[LandDetect]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection
+[LangDetect]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection
