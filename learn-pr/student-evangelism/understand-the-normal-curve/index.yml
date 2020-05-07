@@ -4,8 +4,8 @@ metadata:
   title: Understand The Normal Curve
   description: Learn about the normal curve
   ms.date: 19/03/2020
-  author: sauravmittal
-  ms.author: leescott
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: azure
 title: Understand The Normal Curve
@@ -33,6 +33,7 @@ units:
 - learn.student-evangelism.understand-the-normal-curve.central-limit-theorem
 - learn.student-evangelism.understand-the-normal-curve.variability-of-the-sample-mean
 - learn.student-evangelism.understand-the-normal-curve.choosing-a-sample-size
+- learn.student-evangelism.understand-the-normal-curve.mini-lab
 - learn.student-evangelism.understand-the-normal-curve.summary
 badge:
   uid: learn.student-evangelism.understand-the-normal-curve.badge

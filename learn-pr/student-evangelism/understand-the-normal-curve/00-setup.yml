@@ -2,11 +2,11 @@
 uid: learn.student-evangelism.understand-the-normal-curve.setup
 title: Setting up your Virtual Environment
 metadata:
-  title: Setting up your Virtuanl Environment
-  description: '** TODO: FILL IN **'
+  title: Setting up your Virtual Environment
+  description: Set up your Virtual Environment
   ms.date: 04/30/2020
   author: leestott
-  ms.author: leescott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 5
