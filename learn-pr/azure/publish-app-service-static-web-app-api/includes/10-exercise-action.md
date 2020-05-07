@@ -20,12 +20,12 @@ You pushed your **api** branch to GitHub. Now you want the GitHub Action to publ
 
    `https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app`
 
-1. Click on the **Pull requests** menu
+1. Click on the **Pull requests** link
 1. Click the **New pull request** button
 1. Select the **master** branch fro the **base** dropdown
 1. Select the **api** branch from the **compare** dropdown
 1. Click the **Create pull request** button
-1. Again, on the next screen, click the second **Create pull request** button
+1. Again, click the second **Create pull request** button
 
 Your GitHub Action has now been triggered.
 
