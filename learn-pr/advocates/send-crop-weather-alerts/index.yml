@@ -2,18 +2,18 @@
 uid: learn.advocates.send-crop-weather-alerts
 metadata:
   title: Send Crop Weather Alerts
-  description: In this tutorial you will deploy an application that allows farmers to utilize SMS text messaging to setup and receive temperature alerts for specific locations.
+  description: In this tutorial you will deploy an application that allows farmers to utilize SMS text messaging to setup and receive temperature alerts for specific locations. This would help farmers know when to plant, when to water, or went to protect their crops.
   ms.date: 05/07/2020
   author: berndverst
   ms.author: beverst
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Send Crop Weather Alerts
-summary: In this tutorial you will deploy an application that allows farmers to utilize SMS text messaging to setup and receive temperature alerts for specific locations.
+summary: In this tutorial you will deploy an application that allows farmers to utilize SMS text messaging to setup and receive temperature alerts for specific locations. This would help farmers know when to plant, when to water, or went to protect their crops.
 abstract: |
   In this module you'll:
   - Learn about Azure Maps APIs for obtaining the weather forecast at any location.
-  - Create and configure a Twilio account with programmable SMS phone number to receive and send text messages.
+  - Create and configure a Twilio account with programmable SMS phone number to send and receive text messages.
   - Deploy an existing application to Azure Functions utilizing Twilio and Azure Maps to manage and send temperature alerts for specific locations.
 # Use placeholder image until final artwork ready
 iconUrl: /learn/achievements/generic-badge.svg

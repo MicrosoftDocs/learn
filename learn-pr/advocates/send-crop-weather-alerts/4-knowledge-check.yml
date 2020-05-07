@@ -21,13 +21,13 @@ quiz:
     choices:  
     - content: 'Azure Message Bus'
       isCorrect: false
-      explanation: Azure Message Bus does handle SMS text messages, but instead data messages between applications.
+      explanation: Azure Message Bus doesn't handle SMS text messages, but instead data messages between applications.
     - content: 'Azure Notification Hub'
       isCorrect: false
       explanation: Azure Notification Hub handles push notifications to applications.
     - content: 'Twilio'
       isCorrect: true
-      explanation: Correct. This third party service can programmatically send and receive SMS text messages.
+      explanation: Correct. Twilio is the third party service can programmatically send and receive SMS text messages.
     
   - content: 'Azure Maps allows retrieving of coordinates for a location via which API endpoint?'
     choices:

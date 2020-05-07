@@ -1,30 +1,28 @@
-Our application will involve a variety of components. Let's review the application architecture.
+Our application will involve a number of different components to implement the different features. Let's review these features.
 
-- For a given location we want to retrieve the low and high temperature of the upcoming daily weather forecast.
-- We need to standardize location naming to get our weather forecast.
-- We want to enable alerts for temperature extremes at a particular location via text message (SMS).
-- We want to receive alerts via text message (SMS) if the weather forecast for a given location exceeds the temperature we care about.
-- We want to check the forecast every 12 hours.
+- Have a standardized way to request weather alerts for a location via an SMS message if the temperature goes outside a given range
+- For each location we want to retrieve the low and high temperature of the upcoming daily weather forecast
+- The forecast needs to be checked every 12 hours
+- If the temperature forecast for a given location is outside the given range, a notification should be sent via SMS
 
-## Retrieving Daily Weather Forecast
+## Receiving text message (SMS)
 
-Azure Maps offers an API called *Weather - Get Daily Forecast*.  Given a location in decimal geographic coordinates format (e.g. Seattle corresponds to 47.6062,-122.3321) you can receive the forecast for 1, 5, 10, and 15 days when using the lowest Azure Maps tier. We will be choosing 5 days to allow farmers to make decisions for the next upcoming days.
-
-## Normalizing Location to Coordinates (Geocoding)
-
-The Azure Maps API *Search - Get Search Address* accepts arbitrary text for a location and returns the closest matching normalized location including its coordinates. This is is useful as the Weather Forecast requires the location to be specified in decimal coordinates.
-
-## Sending and receiving text message (SMS)
-
-To support the most users around the world text messaging is all that is required for our application. Twilio is a third party service that can create programmable phone number to send and receive SMS. We can trigger custom code we write abd host every time a SMS is sent to our number.
+To support the most users around the world, text messaging is all that is required as the interface to our application. Twilio is a third party service that can create programmable phone numbers to send and receive SMS messages. We can trigger custom code in Azure using Azure Functions every time an SMS is sent to our number. This code will track all the locations and temperature ranges farmers want to know about in table storage.
 
 We will expect to handle text messages of the form `location maxTemp minTemp`, for example `1 Microsoft Way, Redmond, WA 5C 25C` to set up alerts.
 
-## Azure Functions
+## Normalizing the location to coordinates (Geocoding)
 
-Azure Functions allows triggering code when a certain period of time has passed. This is known as a Time Trigger. Using a Time Trigger we determine whether any location's weather forecast should result in a notification via SMS.
-We will later configure Twilio to send incoming messages to Azure Functions. For this we are utilizing a HTTPTrigger.
+The Azure Maps API [*Search - Get Search Address*](https://docs.microsoft.com/rest/api/maps/search/getsearchaddress) does address geocoding. Geocoding is converting from a street address to a geospatial location as longitude and latitude. For example, **1 Microsoft Way, Redmond, WA, USA** will give a longitude of `-122.1282593` and a latitude of `47.6393782`. This location can then be used to get the weather forecast.
 
-## Storage
+## Retrieving Daily Weather Forecast
 
-Under the hood we will be utilizing table storage to track all the locations and temperature ranges farmers want to know about. We will be using a queue to periodicially evaluate whether to send notification messages by SMS.
+Azure Maps offers an API called [*Weather - Get Daily Forecast*](https://docs.microsoft.com/rest/api/maps/weather/getdailyforecastpreview).  Given a geospatial location as longitude and latitude, you can receive the forecast for 1, 5, 10, and 15 days. We will be choosing 5 days to allow farmers to make decisions for the next upcoming days.
+
+## Check the forecast every 12 hours
+
+Azure Functions is an event based way to run code, and these events can be triggered by a number of different things, from web requests, to timers, to items added to queues or databases. This app can use a time trigger to run every 12 hours to check the weather.
+
+When an SMS is sent to Twilio to subscribe to temperature notifications, Twilio can make a web request to another Azure Function that uses an HTTP trigger.
+
+In this unit you looked at the features of the application. Next, you'll create an Azure Maps account.
