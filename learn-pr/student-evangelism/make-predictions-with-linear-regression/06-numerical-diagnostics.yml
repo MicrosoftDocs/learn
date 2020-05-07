@@ -5,8 +5,8 @@ metadata:
   title: Numerical Diagnostics
   description: Understand properties about the residuals from regression
   ms.date: 19/03/2020
-  author: sauravmittal
-  ms.author: leescott
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 10
