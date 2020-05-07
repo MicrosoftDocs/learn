@@ -1024,6 +1024,191 @@
       "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/5-amazon-s3.md",
       "redirect_url": "https://docs.microsoft.com/learn/cmu-cloud-computing/cmu-case-study-nosql-databases/5-openstack-swift/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/architect-great-solutions-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-availability-and-recoverability-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-availability-and-recoverability-in-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-availability-and-recoverability-in-azure/2-high-availability.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-availability-and-recoverability-in-azure/3-disaster-recovery.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-availability-and-recoverability-in-azure/4-backup-and-restore.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-availability-and-recoverability-in-azure/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-efficiency-and-operations-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-efficiency-and-operations-in-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-efficiency-and-operations-in-azure/2-maximize-efficiency-of-cloud-spend.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-efficiency-and-operations-in-azure/3-use-monitoring-and-analytics-to-gain-operational-insights.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-efficiency-and-operations-in-azure/4-use-automation-to-reduce-effort-and-error.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-efficiency-and-operations-in-azure/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-performance-and-scalability-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-performance-and-scalability-in-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-performance-and-scalability-in-azure/2-scaling-up-and-scaling-out.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-performance-and-scalability-in-azure/3-optimize-network-performance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-performance-and-scalability-in-azure/4-optimize-storage-performance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-performance-and-scalability-in-azure/5-identify-performance-bottlenecks-in-your-application.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-performance-and-scalability-in-azure/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-security-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-security-in-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-security-in-azure/2-defense-in-depth.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-security-in-azure/3-identity-management.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-security-in-azure/4-infrastructure-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-security-in-azure/5-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-security-in-azure/6-network-security.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-security-in-azure/7-application-security.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/design-for-security-in-azure/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pillars-of-a-great-azure-architecture/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pillars-of-a-great-azure-architecture/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pillars-of-a-great-azure-architecture/2-pillars-of-a-great-azure-architecture.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pillars-of-a-great-azure-architecture/3-design-for-security.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pillars-of-a-great-azure-architecture/4-design-for-performance-and-scalability.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pillars-of-a-great-azure-architecture/5-design-for-availability-and-recoverability.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pillars-of-a-great-azure-architecture/6-design-for-efficiency-and-operations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pillars-of-a-great-azure-architecture/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
     }
   ]
 }
