@@ -28,13 +28,13 @@ quiz:
         - content: "A confusion matrix"
           isCorrect: true
           explanation: "Correct! A confusion matrix is a valid metric, but it isn't provided by Azure Cognitive Services Custom Vision."
-        - content: "recall"
+        - content: "Recall"
           isCorrect: false
           explanation: "Incorrect. The recall metric is provided."
-        - content: "average precision"
+        - content: "Average precision, or AP"
           isCorrect: false
           explanation: "Incorrect. The AP metric is provided."
-        - content: "precision"
+        - content: "Precision"
           isCorrect: false
           explanation: "Incorrect. The precision metric is provided."
     - content: "What's a common rookie mistake?"
