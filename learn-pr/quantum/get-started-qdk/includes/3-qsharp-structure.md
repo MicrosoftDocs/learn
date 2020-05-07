@@ -94,7 +94,7 @@ Q# provides a number of built-in types you're already familiar with, including `
 
 In this module, you'll work with the `Result` type. A `Result` represents the result of a qubit measurement and can have two possible values: `One` and `Zero`.
 
-`EntryPoint` tells the Q# compiler that this is where to begin execution of the program. You can think of the entry point as you would the `main` function in C++ or the `Main` method in C#.
+`EntryPoint` tells the Q# compiler that this is where to begin execution of the program. 
 
 Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation, which applies what's called the Hadamard transformation to a single qubit. Think of the Hadamard transformation as a way of putting a qubit into superposition. Once in superposition, a qubit has a 50% chance of being measured as zero or one.
 
