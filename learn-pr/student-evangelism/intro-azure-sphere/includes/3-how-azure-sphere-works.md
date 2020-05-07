@@ -8,7 +8,8 @@ The three components of the Azure Sphere platform work together to provide end-t
 
 Also, Azure Sphere also includes support for legacy IoT devices through **Guardian modules.** Guardian Modules are implemented as a hardware solution and support connections to the Azure Sphere Security Service for security checks and automated patching. They also connect to Brownfield devices through device-specific protocols.   
 
-**Note:** Brownfield devices are typically legacy IoT devices already deployed in the field but without internet connectivity.  
+>[!NOTE] 
+>Brownfield devices are typically legacy IoT devices already deployed in the field but without internet connectivity.  
 
 Below we demonstrate how these components interact to address the scenario outlined above.
 
