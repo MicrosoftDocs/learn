@@ -51,9 +51,9 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 ![Image showing Blazor application running the browser](../media/create-new-component.png)
 
 ## Add Hmtl UI 
-We'll adda  
+We'll add html UI for our calculator, specifically a table.  
 
-1. Next, add a 2x4 html table. 
+1. Add a 2x4 html table. 
 
 1. Add text in the left column for: **Initial Principal**, **Years**, **Annual Interest Rate** and **Total:**. We'll populate the right column later.
 
@@ -77,6 +77,7 @@ We'll adda
         </tr>
     </table>
     ```
+1. Below the table, add a button which we'll use to trigger the calculation.
 
     ```cshtml
     <button class="btn btn-primary">Calculate</button>

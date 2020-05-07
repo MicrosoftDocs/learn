@@ -1,12 +1,11 @@
 Blazor enables C# developers to leverage their existing skills to build client web applications with C# and .NET.
 
-Commonly, companies building web applications hire developers for a variety of roles: some developers create the backend server-side logic, and others may build client-side web app. Often, these developers use different development languages and technologies.
-
-C# & .NET is a popular choice for building server-side logic but client-side apps are often built using web UI frameworks, commonly using JavaScript. Using multiple languages and toolsets requires multiple skillsets, and often requires hiring two separate teams. As well, code to transfer and represent data needs to be built in both languages and kept in sync.
+Imagine you’re building a client-side web application and you already have a talented team of .NET developers. As well, you want to have the option of deploying your web app as a Progressive Web Application so your users can download the app and use it offline.
 
 Blazor allows developers to build front and backend logic for web apps with a common development language, frameworks and tools. This can accelerate app development, reduce the complexity of the build pipeline, simplify maintenance, and enable developers to understand and work on both the client and server-side code.
 
-Blazor WebAssembly can also be configured as Progressive Web Applications. This allows your app to be used offline.
+And by using Blazor WebAssembly, your app can be configured to create Progressive Web Applications allowing your app to be downloaded and used offline.
+
 
 ![](../media/BrandBlazor.png)
 
