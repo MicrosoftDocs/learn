@@ -77,7 +77,7 @@ You can find a list of libraries used in Q# [here in the left dropdown menu](htt
 
 ### Operations
 
-Operations are the basic building blocks of a Q# program. A Q# operation is a quantum subroutine. That is, it's a callable routine that contains quantum operations. You can think of an operation as you would a function in C, C++ or Python, or a static method in C# or Java.
+Operations are the basic building blocks of a Q# program. A Q# operation is a quantum subroutine. That is, it's a callable routine that contains quantum operations that modify the state of the qubit register.
 
 To define a Q# operation, you specify a name for the operation along with its inputs and its output. Here's a basic example:
 
