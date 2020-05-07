@@ -326,7 +326,7 @@ Your API is already running on port 7071. Now when you run your web app it will 
 
 ### Browse to your app
 
-It's time to see your application running locally against the Azure Functions API. Select your preferred front-end application and click the link to browse to the application.
+It's time to see your application running locally against the Azure Functions API. 
 
 ::: zone pivot="angular"
 
