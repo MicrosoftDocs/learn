@@ -229,7 +229,7 @@ Configure the proxy for your front-end app with the following steps:
 ::: zone pivot="react"
 
 1. Open the file _react-app/package.json_
-1. Locate the `"proxy": "http://localhost:7071/",'` setting
+1. Locate the `"proxy": "http://localhost:7071/",` setting
 1. Notice that the proxy's port points to 7071
 
 ::: zone-end
