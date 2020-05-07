@@ -27,6 +27,6 @@ In this module, you will:
 
 Suppose you manage a company that offers a solution to monitor and maintain cheese caves' temperature and humidity at optimal levels. You've been working with gourmet cheese-making companies for a long time. You've established long-term trust with these customers, who value the quality of your product.
 
-Tracking details about thermostats installation is key to ensuring security and quality for your application. Each time a new thermostat is installed, you want your records to be updated and the right people to be notified.
+Tracking details about thermostat installation is key to ensuring security and quality for your application. Each time a new thermostat is installed, you want your records to be updated and the right people to be notified.
 
 Your solution is built with Azure IoT Hub to securely connect and manage the thermostats. Let's see how you can use the integration of Azure IoT Hub with Azure Event Grid to automate workflows and trigger a notification when a new device is added to your solution.

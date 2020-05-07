@@ -1,8 +1,6 @@
-In this unit, you'll create a new logic app that will be triggered via an HTTP webhook, and then send an email by using an Outlook.com email address.
+In this unit, you'll create a new logic app that will be triggered via an HTTP webhook. The app will send email by using an Outlook.com email address.
 
-## Create an HTTP webhook logic app that sends emails
-
-### Create the logic app
+## Create the logic app
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) (which you might still have open), select **+Create a resource** to open Azure Marketplace.
 1. On the **New** page, in the **Search the Marketplace** box, enter and search for **Logic App**.
@@ -20,7 +18,11 @@ In this unit, you'll create a new logic app that will be triggered via an HTTP w
 1. For the **Select the location** option, you have two choices: **Region** and **Integration Service Environment**. Select **Region**.
 
     > [!TIP]
-    > For scenarios where your logic apps and integration accounts need access to an Azure virtual network, you would create and use an integration service environment (ISE). An ISE is an isolated environment that uses dedicated storage and other resources that are kept separate from the public, "global", multitenant Azure Logic Apps service. This separation also reduces any impact that other Azure tenants might have on your apps' performance. An ISE also provides you with your own static IP addresses. To learn more about ISEs, see [Access to Azure Virtual Network resources from Azure Logic Apps by using integration service environments](https://docs.microsoft.com/azure/logic-apps/connect-virtual-network-vnet-isolated-environment-overview).
+    > For scenarios where your logic apps and integration accounts need access to an Azure virtual network, you would create and use an integration service environment (ISE). 
+    >
+    > An ISE is an isolated environment that uses dedicated storage and other resources that are kept separate from the public, "global," multitenant Azure Logic Apps service. This separation reduces any impact that other Azure tenants might have on your apps' performance. An ISE also provides you with your own static IP addresses. 
+    >
+    > To learn more about ISEs, see [Access to Azure Virtual Network resources from Azure Logic Apps by using integration service environments](https://docs.microsoft.com/azure/logic-apps/connect-virtual-network-vnet-isolated-environment-overview).
 
 1. In the **Location** drop-down list, choose the same Azure region that you used for the IoT hub that you created earlier.
 
@@ -29,7 +31,7 @@ In this unit, you'll create a new logic app that will be triggered via an HTTP w
     > [!NOTE]
     > It will take a minute or two for the logic app deployment to finish.
 
-### Configure the HTTP request trigger for the logic app
+## Configure the HTTP request trigger for the logic app
 
 The logic app is triggered with an HTTP request. In the body of the request, we have information about the event that triggered it. We want to be able to extract and use this information in the following steps. Let's see how it's done in configuring the logic app trigger.
 
@@ -48,7 +50,7 @@ The logic app is triggered with an HTTP request. In the body of the request, we 
 
 1. On the **When an HTTP request is received** trigger, select the **Use sample payload to generate schema** link.
 
-1. When prompted, paste the following sample JSON into the text box. Then change the IoT hub name to the one you used in previous unit to create the Azure IoT Hub instance (cheesecavesmanager-&lt;your ID&gt;). Select **Done** when you're finished.
+1. When you're prompted, paste the following sample JSON into the text box. Then change the IoT hub name to the one you used in the previous unit to create the Azure IoT Hub instance (cheesecavesmanager-&lt;your ID&gt;). Select **Done** when you're finished.
 
     ```json
      [{
@@ -103,7 +105,7 @@ The logic app is triggered with an HTTP request. In the body of the request, we 
 
 1. Notice that the **Request Body JSON Schema** box is now populated with a JSON schema that was automatically generated based on the sample JSON that was pasted in. It will allow the extraction of the information shared in the body of the trigger by the IoT hub.
 
-### Add the send-email step to the logic app by using the event's information
+## Add the send-email step to the logic app by using the event's information
 
 Now we want to configure the next step of the logic app: sending an email. And we want to populate the email fields with the event's information received in the trigger.
 
@@ -136,7 +138,7 @@ Now we want to configure the next step of the logic app: sending an email. And w
 
 1. Select **Save** to save all changes to the logic app workflow.
 
-1. Expand the **When an HTTP request is received** trigger, copy the value for the **HTTP POST URL** that is displayed, and save it for future reference. You now have the webhook endpoint URL for the logic app that Event Grid will use to trigger the execution of the logic app workflow.
+1. Expand the **When an HTTP request is received** trigger. Copy the displayed value for **HTTP POST URL**, and save it for future reference. You now have the webhook endpoint URL for the logic app that Event Grid will use to trigger the execution of the logic app workflow.
 
     [![HTTP request info](../media/http-post.png)](../media/http-post.png#lightbox)
 

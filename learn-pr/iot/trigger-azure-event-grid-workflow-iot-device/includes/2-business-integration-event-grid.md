@@ -18,7 +18,7 @@ Event Grid supports many different services as event sources, including Azure Io
 
 To trigger the workflow we want, we'll configure an event handler that Event Grid will notify when our IoT Hub instance posts messages about new devices.
 
-We chose to use Azure Logic Apps as the event handler. Azure Logic Apps is a cloud service that helps you schedule, automate, and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services across enterprises or organizations. 
+We chose to use Azure Logic Apps as the event handler. Logic Apps is a cloud service that helps you schedule, automate, and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services across enterprises or organizations. 
 
 Logic Apps simplifies how you design and build scalable solutions for app integration, data integration, system integration, enterprise application integration (EAI), and business-to-business (B2B) communication. These solutions can be in the cloud, on premises, or both. One of the Logic Apps connectors sends emails to specific recipients.
 

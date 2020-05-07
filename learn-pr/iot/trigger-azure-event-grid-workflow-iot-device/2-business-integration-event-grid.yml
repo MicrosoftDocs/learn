@@ -32,7 +32,7 @@ quiz:
     - content: 'False'
       isCorrect: true
       explanation: You're correct. Event Grid can't send emails directly. You need another service, such as Logic Apps, that can subscribe to specific events on Event Grid and send emails.
-    - content: 'True.'
+    - content: 'True'
       isCorrect: false
       explanation: Not really. Event Grid can't send emails directly. You need another service, such as Logic Apps, that can subscribe to specific events on Event Grid and send emails.
   - content: 'Azure Logic Apps is a service that allows creating mobile applications easily with a WYSIWYG experience.'
