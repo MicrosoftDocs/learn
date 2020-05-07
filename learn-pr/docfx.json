@@ -84,8 +84,8 @@
                 ],
                 "dest": "modules"
             },
-            {
-                "src": "commercial-marketplace",
+             {
+                "src": "cela-accessibility",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -97,6 +97,19 @@
                 ],
                 "dest": "modules"
             },
+             {
+                "src": "commercial-marketplace",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },               
             {
                 "src": "cmu-cloud-admin",
                 "files": [
