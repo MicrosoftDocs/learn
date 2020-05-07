@@ -1,4 +1,4 @@
-You created a site and you want to deploy it to Azure. Now we need to consider which Azure services to leverage to best support our needs. App Service provides a highly scalable, self-patching web hosting service for your applications.
+You created a new site, your next step is to deploy it to Azure. We need to consider which Azure services to leverage. Azure App Service provides a highly scalable, self-patching web hosting service for your applications.
 
 Here, we look at how to use Visual Studio to publish your ASP.NET Core web application to an Azure App Service plan.
 

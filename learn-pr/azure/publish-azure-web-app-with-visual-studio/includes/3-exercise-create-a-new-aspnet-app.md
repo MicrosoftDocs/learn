@@ -2,15 +2,15 @@ In this unit, you will create, build, and run a new ASP.NET Core web application
 
 ## Create an ASP.NET Core project
 
-The first step is to start Visual Studio and create a local ASP.NET Core web application.
-
 1. Open Visual Studio 2019 on your local machine.
 
-1. From the Visual Studio landing page, click **Create a new project**.
+1. From the Visual Studio landing page under **Get started**, click **Create a new project**.
 
 1. In the search box, enter **Web**.
 
 1. From the search results, select **ASP.NET Core Web Application**.
+
+1. Select the **Next** button.
 
 1. In the new project dialog, set the **Name** field to **AlpineSkiHouse**.
 
@@ -25,9 +25,7 @@ The first step is to start Visual Studio and create a local ASP.NET Core web app
     > [!NOTE]
     > You can also select different starting templates in this dialog box depending on your web development requirements. At the top of the dialog box, you are also able to select the version of ASP.NET Core. You should select ASP.NET Core 3.1 or later.
 
-1. You should now have your new ASP.NET Core web application solution.
-
-    :::image type="content" source="../media/3-new-solution.png" alt-text="New Project Dialog." loc-scope="vs":::
+1. You should now have a new ASP.NET Core web application solution.
 
 ## Build and test on your local machine
 
