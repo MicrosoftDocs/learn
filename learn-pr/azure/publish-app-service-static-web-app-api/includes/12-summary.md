@@ -1,6 +1,6 @@
 In this tutorial, you created, modified, and published a web app and API to Azure Static Web Apps.
 
-The solution for the [sample project is on GitHub in the _solution_ branch](https://github.com/MicrosoftDocs/mslearn-staticwebapp/tree/solution). The instructions on how to get started appear in the README file.
+The solution for the [sample project is on GitHub in the _solution_ branch](https://github.com/MicrosoftDocs/mslearn-staticwebapp/tree/solution?azure-portal=true). The instructions on how to get started appear in the README file.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
