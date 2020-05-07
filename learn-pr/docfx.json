@@ -150,6 +150,19 @@
                 "dest": "modules"
             },
             {
+                "src": "language",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "ai-business",
                 "files": [
                     "**/*.yml",
@@ -265,7 +278,7 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
-            },                    
+            },
             {
                 "files": [
                     "**/*.md",
