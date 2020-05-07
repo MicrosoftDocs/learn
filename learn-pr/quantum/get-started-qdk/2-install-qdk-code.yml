@@ -6,7 +6,7 @@ metadata:
   description: Prepare your development environment for writing quantum programs by using the Quantum Development Kit.
   ms.date: 05/19/2020
   author: gillenhaalb
-  ms.author: v-gillenbeck
+  ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

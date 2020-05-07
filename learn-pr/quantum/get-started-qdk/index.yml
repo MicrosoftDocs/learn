@@ -5,7 +5,7 @@ metadata:
   description: Use the Quantum Development Kit and combine quantum and classical programs to create a quantum random number generator.
   ms.date: 04/14/2020
   author: geduardo
-  ms.author: v-edsanc
+  ms.author: kitty
   ms.topic: tutorial
   ms.prod: learning-quantum
 title: Write your first program by using the Quantum Development Kit
