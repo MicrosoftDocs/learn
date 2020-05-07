@@ -32,7 +32,7 @@
             <stop stop-color="#0099BE" offset="0%"></stop>
             <stop stop-color="#006E97" offset="100%"></stop>
         </linearGradient>
-        <filter x="-56.7%" y="-54.5%" width="217.5%" height="209.1%" filterUnits="objectBoundingBox" id="filter-11">
+        <filter x="-54.5%" y="-57.1%" width="209.1%" height="214.3%" filterUnits="objectBoundingBox" id="filter-11">
             <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
@@ -79,17 +79,17 @@
                     <path d="M0.105128719,36.4722222 L0,36.0070679 C0.377425506,33.5981816 2.32170461,31.8564752 4.79818076,31.2046859 C7.27465691,30.5528966 9.9239794,31.3439679 11.5585895,33.2233021 C11.7825596,33.4563249 12.1337492,33.5365808 12.4452069,33.4259169 C12.7566645,33.315253 12.965564,33.0359922 12.972597,32.7208918 L12.972597,6.52856698 C13.0091343,6.20571682 13.0091343,5.88009052 12.972597,5.55724036 C12.4059315,2.61227592 9.69826437,0.472222222 6.53886285,0.472222222 C3.37946134,0.472222222 0.671794194,2.61227592 0.105128719,5.55724036 C0.0509322316,5.87897984 0.0509322316,6.20682749 0.105128719,6.52856698 L0.105128719,36.4722222 Z" id="Path" fill="url(#linearGradient-9)"></path>
                 </g>
                 <path d="M61.7554074,40.7909237 L67.0430567,41.8036246 L67.0430567,36.268793 L65.5345373,37.552441 C62.5201992,33.7257817 57.928478,31.5 53,31.5 C44.1786995,31.5 37,38.6786995 37,47.5 C37,56.3213005 44.1786995,63.5 53,63.5 C61.8213005,63.5 69,56.3213005 69,47.5 C69,46.8697017 68.5042019,46.3738765 67.8738765,46.3738765 C67.2435512,46.3738765 66.7477531,46.8696747 66.7477531,47.5 C66.7477531,55.084455 60.5818895,61.2504536 52.9972995,61.2504536 C45.4128444,61.2504536 39.2468459,55.0845901 39.2468459,47.5 C39.2468459,39.9154099 45.4127094,33.7495464 52.9972995,33.7495464 C57.18259,33.7495464 61.0989071,35.6404616 63.6860205,38.8578801 L61.7554074,40.7909237 Z" id="Fill-2" fill="url(#linearGradient-10)"></path>
-                <g id="Gear" filter="url(#filter-11)" transform="translate(42.500000, 36.000000)">
-                    <g transform="translate(0.073742, 1.000000)" fill-rule="nonzero" id="Shape">
+                <g id="Gear" filter="url(#filter-11)" transform="translate(42.500000, 37.000000)">
+                    <g transform="translate(0.073742, 0.000000)" fill-rule="nonzero" id="Shape">
                         <g>
                             <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
                             <use fill="url(#linearGradient-10)" xlink:href="#path-12"></use>
                         </g>
                     </g>
-                    <circle id="Oval" fill="#FFFFFF" cx="10.5737418" cy="11.5" r="4.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="10.7618084" cy="10.3128773" r="6"></circle>
                 </g>
-                <text id="$" font-family="SFProDisplay-Medium, SF Pro Display" font-size="6" font-weight="400" fill="#0078A0">
-                    <tspan x="50.833421" y="49">$</tspan>
+                <text id="$" font-family="SFProDisplay-Bold, SF Pro Display" font-size="10" font-weight="bold" fill="#0078A0">
+                    <tspan x="49.9250991" y="50.757351">$</tspan>
                 </text>
             </g>
         </g>
