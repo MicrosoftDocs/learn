@@ -102,8 +102,9 @@ Here is Snow's original map. Each black bar represents one death. When
 there are multiple deaths at the same address, the bars corresponding to
 those deaths are stacked on top of each other. The black discs mark the
 locations of water pumps. The map displays a striking revelation---the
-deaths are roughly clustered around the Broad Street pump. ![snow's
-cholera map](../media/snow-map.jpg)
+deaths are roughly clustered around the Broad Street pump. 
+
+![snow'scholera map](../media/snow-map.jpg)
 
 Snow studied his map carefully and investigated the apparent anomalies.
 All of them implicated the Broad Street pump. For example: - There were
@@ -174,8 +175,9 @@ the Southwark and Vauxhall (S&V) company drew its water below the sewage
 discharge, and thus its supply was contaminated.
 
 The map below shows the areas served by the two companies. Snow honed in
-on the region where the two service areas overlap. ![snow's other
-map](../media/snow-map2.jpg)
+on the region where the two service areas overlap.
+
+![snow's othermap](../media/snow-map2.jpg)
 
 Snow noticed that there was no systematic difference between the people
 who were supplied by S&V and those supplied by Lambeth. "Each company

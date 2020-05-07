@@ -16,7 +16,7 @@ abstract: |
   - Understand the motivation behind Data Science.
   - Familiarize yourself with concepts of randomization, experiments and causation.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/student-evangelism/learn-the-data-science-method.svg
 levels:
 - beginner
 roles:
@@ -31,4 +31,4 @@ units:
 - learn.student-evangelism.learn-the-data-science-method.observation-and-visualization-john-snow-and-the-broad-street-pump
 - learn.student-evangelism.learn-the-data-science-method.summary
 badge:
-  uid: learn.student-evangelism.learn-the-data-science-method.badge
+  uid: learn.learn-the-data-science-method.badge
