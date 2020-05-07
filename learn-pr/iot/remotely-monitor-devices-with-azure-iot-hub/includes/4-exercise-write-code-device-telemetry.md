@@ -414,7 +414,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. In the terminal, enter the following commands:
     * **dotnet add package Microsoft.Azure.EventHubs**
-    * **dotnet add package Microsoft.Azure.Device**
+    * **dotnet add package Microsoft.Azure.Devices**
     * **dotnet add package Newtonsoft.Json**.
 
 1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
