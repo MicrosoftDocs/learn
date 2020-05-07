@@ -1,8 +1,8 @@
 End users are expecting more from their applications. They want to have a great user experience and not be impacted by performance issues. How do you integrate performance bottleneck identification into your architecture? In this unit, we will look at both processes and tools that can help ensure that your application performs well, and help you track down why if it doesn't.
 
-## Importance of requirements
+## Performance requirements
 
-Before we talk about performance, it's important to talk about requirements. In theory, we could keep improving scalability and performance further and further without end. At some point, however, more improvement is prohibitively expensive, difficult, and doesn't have enough business impact to be worthwhile. 
+Before we talk about performance, it's important to talk about requirements. In theory, we could keep improving scalability and performance further and further without end. At some point, however, more improvement is prohibitively expensive, difficult, and doesn't have enough business impact to be worthwhile.
 
 Our **non-functional requirements** help us find that point. These particular requirements don't tell us what our app must *do*. Instead, they tell us what quality levels it must meet. As examples, we can define these non-functional requirements to tell us:
 
@@ -14,21 +14,7 @@ Defining these requirements in advance of building your solution is critical to 
 
 Discuss requirements with your stakeholders or customers, document them, and communicate them broadly to ensure that everyone agrees on what "good performance" means.
 
-## DevOps and application performance
-
-The idea behind DevOps is that we don't have development and infrastructure silos in our organization. Instead, they work together to effectively build, deploy, monitor, and maintain apps in streamlined process.
-
-The planning, development, testing, and monitoring is carried out in an iterative approach. Performance and quality of our application become a part of our software development life cycle, rather than an afterthought as we deploy into a live environment. The following illustration shows where opportunities for collaboration exist in the software development lifecycle.
-
-![An illustration showing the steps of a software lifecycle arranged into a loop to show how each stage feeds into the next.](../media/5-devops-cycle.png)
-
-This approach aligns with a DevOps concept called "shifting left". In other words, bring your quality control checks earlier into your deployment and release process. This allows you to catch end-user impacting issues earlier in the process. As we operate in a continuous cycle, we limit the amount of manual interaction and automate as much as possible. 
-
-One way we make performance part of our DevOps process is to carry out performance or load tests to validate that the application meets the non-functional requirements prior to a deployment into production.
-
-Ideally, we could carry out performance and load tests in an environment that is exactly like production while not impacting our actual production servers. When leveraging the cloud, you fully have this ability. You can automate the creation of a production-like environment, perform testing, and then destroy the environment to minimize cost. This approach to automation can provide reassurance that your application can handle the scale you require now, as well as respond to future growth.
-
-Application performance monitoring becomes a core part of this. If we're running performance and load tests on our application or want to keep our production performance in check, we want to understand what parts of our application may be performing non-optimally. Let's take a look at some ways to do this.
+Let's now take a look at some ways to track performance in your applications.
 
 ## Performance monitoring options in Azure
 
@@ -53,14 +39,6 @@ Azure Monitor can collect data from a variety of sources. You can think of monit
 - **Azure tenant monitoring data** - Data about the operation of tenant-level Azure services, such as Azure Active Directory (Azure AD).
 
 As soon as you create an Azure subscription and start adding resources, such as VMs and web apps, Azure Monitor starts collecting data. Activity logs record when resources are created or modified and metrics tell you how the resource is performing and the resources that it's consuming. You can also extend the data you're collecting by enabling diagnostics in your apps and adding agents to collect telemetry data from Linux and Windows or Application Insights.
-
-You can then use this data to help scale your application based on load. **Autoscale** in Azure Monitor helps to enable the elastic scaling feature of the cloud. It allows you to have the right amount of resources running to handle the load on your application. 
-
-![Screenshot showing the Autoscale pane in the Azure portal for Azure monitor](../media/5-discover-autoscale-azure-monitor.png)
-
-It allows you to create rules that use metrics collected by Azure Monitor for two purposes: to determine when to automatically add resources to handle increases in the load and to save money by removing idle resources. You specify a minimum and a maximum number of instances and the logic for when to increase or decrease resources. For example, you can set up rules around CPU utilization that increase or decrease the number of instances available for a resource.
-
-![Screenshot showing the Autoscale setting for CPU usage in the Azure portal with Azure monitor](../media/5-scale-based-on-cpu.png)
 
 Azure Monitor is the place to start for all your near real-time resource metric insights. Many Azure resources will start outputting metrics automatically once deployed. For example, Azure Web App instances will output compute and application request metrics. Metrics from Application Insights are also collated here in addition to VM host diagnostic metrics. VM guest diagnostic metrics will also appear once you opt in.
 
