@@ -67,8 +67,8 @@ Before publishing your app, you'll create routing rules that include a fallback 
 Angular apps don't copy files in the _src_ folder to the artifact folder by default. Use the following steps to ensure the _routes.json_ is copied to the appropriate location.
 
 1. In Visual Studio Code, open the workflow file in the _.github/workflows_ folder
-1. Add the `route_location` property right below the `app_artifact_location` property
-1. Set the value of `route_location` to `angular-app/src`
+1. Add the `routes_location` property right below the `app_artifact_location` property
+1. Set the value of `routes_location` to `angular-app/src`
 
    ```yaml
    jobs:
@@ -79,7 +79,7 @@ Angular apps don't copy files in the _src_ folder to the artifact folder by defa
              app_location: 'angular-app/'
              api_location: 'api'
              app_artifact_location: 'dist/angular-app'
-             route_location: 'angular-app/src'
+             routes_location: 'angular-app/src'
    ```
 
 Now your workflow is configured to locate the _routes.json_ file when your app builds.
