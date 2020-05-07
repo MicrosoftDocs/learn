@@ -1,4 +1,4 @@
-Quantum computing is based on quantum mechanics, which describes how subatomic particles move and interact with one another.
+Quantum computing is based on quantum mechanics, which describes how objects at atomic and subatomic scale behave and interact with one another.
 
 Although there are more formal methods for learning the mathematics and theory behind quantum computing, here we'll define a few basic terms and walk through the structure of a basic Q# program. You'll apply these concepts later as you build your quantum random number generator.
 
@@ -72,6 +72,8 @@ namespace HelloQuantum {
 The `Microsoft.Quantum.Canon` library provides the most basic operations of Q#.
 
 The `Microsoft.Quantum.Intrinsic` library provides common operations that you can perform on qubits. It also provides the `Message` function, which you used in the previous part of print a message to the console.
+
+You can find a list of libraries used in Q# [here in the left dropdown menu](https://docs.microsoft.com/en-us/qsharp/api/qsharp/).
 
 ### Operations
 

@@ -1,4 +1,4 @@
-In this part, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number. This phase builds on the random bit generator that you already created.
+In this part, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number. This phase builds on the random bit generator that you already created. You will need to write some classical code to do this. 
 
 First, let's see how classical code fits in with Q#.
 

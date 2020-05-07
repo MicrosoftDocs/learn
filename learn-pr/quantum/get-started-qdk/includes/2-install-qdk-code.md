@@ -34,7 +34,7 @@ The QDK also includes:
 This step installs the QDK and adds extensions to Visual Studio Code that provide support for developing quantum algorithms in Q#.
 
 1. Open Visual Studio Code.
-1. Go to [Microsoft Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode?azure-portal=true), select **Install**, then follow the installation steps.
+1. Go to [Microsoft Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode), select **Install**, then follow the installation steps.
 
 ## Verify the installation
 
