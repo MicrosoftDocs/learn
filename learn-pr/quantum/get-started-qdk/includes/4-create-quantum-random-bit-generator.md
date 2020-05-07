@@ -1,202 +1,149 @@
-One of the cornerstones of the Quantum Development Kit is the quantum
-programming language Q#. In this unit you are going to learn how to create a
-quantum application in Q# with Visual Studio Code. This application consists of
-a quantum random bit generator and it will be the base for our quantum random
-number generator. The quantum random number generator uses a Hadamard gate to
-put a qubit into superposition. The measurement results are random 0s or 1s.
+Now that you understand some of the basics, it's your turn to build a quantum random number generator (RNG).
 
-## Create the Q# application
+The quantum RNG uses a Hadamard operation to put a qubit into superposition. The measurement results in a zero or a one. But how can we use this behavior to generate larger numbers?
 
-### Create a folder
+Let's say you repeat the process four times, generating this sequence of binary digits:
 
-First things first, anytime you create a quantum project it's recommendable to
-create a folder to store the files. In our case we will create a new folder,
-anywhere on your computer, called `MyQRNG`.
+$${0, 1, 1, 0}$$
 
-### Create a Q# project
+If you concatenate, or combine, these bits into a bit string, you can form a larger number. In this example, the bit sequence ${0110}$ is equivalent to six in decimal.
 
-Create a project with the Q# standalone console application template introduced
-in [Unit 2](xref:learn.quantum.get-started-qdk.2-install-qdk). To do it:
+$${0110_{\ binary} \equiv 6_{\ decimal}}$$
 
-        - Go to **View** -> **Command Palette**
-        - Select **Q#: Create New Project**
-        - Select **Standalone console application**
-        - Navigate to the folder you want to store your quantum project. In our
-        case we select the folder `MyQRNG` and type the name you want to use 
-        for your Q# project. In our case: `Qrng`. This action will create the
-        a file called `Qrng` with several files inside.
-        - If you aren't already in the folder in VS Code, you can click on the
-        **Open new project...** button in the VS Code pop-up, once the project has been created.
-        
+You'll build out your quantum RNG in two phases. In this part, you build out the first phase, which is to generate a single random bit.
 
-### Use the template to write your program
+To do so, you:
 
-From the several files created in the `Qrng` folder we are interested in the one
-called `Program.qs`. We can change the name to something more informative. In
-our case let's rename the file to `my-random-bit.qs`. The Q# programming
-language uses its own file format `*.qs`. This file is where the Q# code is
-written to express the instructions for the quantum computer. Your
-`my-random-bit.qs` file should look like something similar to this:
+> [!div class="checklist"]
+> * Create a Q# project.
+> * Add code that uses the Hadamard operation to put a qubit into superposition and read its value.
+> * Run the program.
+
+In the next part, you build out the second phase, which combines bits to form a larger number.
+
+## Create the Q# project
+
+Here, you create a Q# project just like you did earlier.
+
+1. On the **View** menu, select **Command Palette**.
+1. Enter **Q#: Create New Project**.
+1. Select **Standalone console application**.
+1. Select a directory to hold your project, such as your home directory. Enter *quantum-rng* as the project name, then select **Create Project**.
+1. From the window that appears at the bottom, select **Open new project**.
+
+    Like before, you see two files: the project file and *Program.qs*, which contains starter code.
+
+## Include the Measurement library
+
+To measure a qubit, you use the [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true) operation. After you measure a qubit, you need to use the [Reset](/qsharp/api/qsharp/microsoft.quantum.intrinsic.reset?azure-portal) operation to place the qubit back in the zero state. The `Microsoft.Quantum.Intrinsic` library provides both of these these operations.
+
+To simplify the process, you can use the [MResetZ](/qsharp/api/qsharp/microsoft.quantum.measurement.mresetz) operation. This operation combines `M` and `Reset` as one operation.
+
+The `Microsoft.Quantum.Measurement` library provides the `MResetZ` operation. Let's ensure that library is referenced now.
+
+1. In Visual Studio, open *Program.qs*.
+1. Near the top of the file, add this `open` directive:
+
+    TODO: open Microsoft.Quantum.Measurement;
+
+## TODO: Create the quantum operation
+
+Recall that in the *quantum-hello* program, you defined the `HelloQ` operation like this:
+
 ```qsharp
-namespace Qrng {
+operation HelloQ() : Unit {
+    Message("Hello quantum world!");
+}
+```
 
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
+Here, you define the `GenerateRandomBit` operation. This operation takes no input and produces a value of type `Result`. The `Result` type represents the result of a measurement and can have two possible values: `Zero` and `One`.
+
+TODO: Remember to put this in a file and highlight. Update NS.
+
+To define the operation:
+
+1. Replace the contents of *Program.qs* with this:
+
+    ```qsharp
+    namespace Qrng {
+        open Microsoft.Quantum.Intrinsic;
+        open Microsoft.Quantum.Canon;
+        open Microsoft.Quantum.Measurement;
     
-
-    @EntryPoint()
-    operation HelloQ() : Unit {
-        Message("Hello quantum world!");
-    }
-}
-```
-
-There are several important things in this file so let's go by parts.
-
-#### Set a namespace
-
-In every Q# file we need a `namespace`. In the namespaces we can add quantum
-operations that will be used by the compiler. In our case the template named
-the namespace automatically `Qrng`.
-
-```qsharp
-namespace Qrng {
-
-// ...
-// stuff
-// ...
-
-}
-```
-
-#### Open the libraries
-
-Q# is a modular programming language that makes extensive use of libraries. For
-example, there's a Quantum Chemistry library to do quantum chemistry
-calculations or a Quantum Numerics library to exploit quantum computing to
-perform numerical calculations. There are several standard libraries that
-include all sorts of basic operations. The template automatically opens
-the `Microsoft.Quantum.Canon` and `Microsoft.Quantum.Intrinsic` libraries that
-include the most basic operations of Q#.
-```qsharp
-namespace Qrng {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-
-// ...
-// stuff
-// ...
-
-}
-```
-
-For our program `my-random-bit.qs` we just need and additional library,
-`Microsoft.Quantum.Measurement` that contains the `MResetZ(q)` operation. To 
-open it we just need to add it to the list with the `open` directive:
-```qsharp
-namespace Qrng {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Measurement;
-
-// ...
-// stuff
-// ...
-
-}
-```
-#### Create the quantum operation
-
-Operations are the basic building blocks of a Q# program. They are a set of instructions for the quantum computer to manipulate the qubit register in a specific way. To declare a Q# operation we need to specify a name for the operation and the
-input and output format. In the template the operation is:
-```qsharp
-    operation HelloQ() : Unit {
-        Message("Hello quantum world!");
-    }
-```
-that just prints the message "Hello quantum world!". We can overwrite the
-default operation with our operation. We will call the operation
-`GenerateRandomBit`. It has no input and it outputs a `Result`. A `Result` in Q#
-is a type that represents the result of a measurement and can have two possible
-values: `One` and `Zero`. 
-
-```qsharp
-namespace Qrng {
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Measurement;
-
-
-    @EntryPoint()
-    operation GenerateRandomBit() : Result {
-    }
-}
-```
-The line `@EntryPoint()` is just a pointer that the Q# compiler will use to know
-where to start executing operations. Now that we have declared the operation we
-can write its content:
-
-```qsharp
-namespace Qrng {
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Measurement;
-
-
-    @EntryPoint()
-    operation GenerateRandomBit() : Result {
-        using (q = Qubit())  {  // Allocate a qubit.
-            H(q);               // Put the qubit to superposition. It now has a 50% chance of being measured 0 or 1.
-            return MResetZ(q);  // Measure the qubit value.
+    
+        @EntryPoint()
+        operation GenerateRandomBit() : Result {
         }
     }
-}
-```
-Save the file (you can right click on the `my-random-bit.qs` file in the
-explorer and click on "Save" in the contextual menu).
+    ```
 
-Let's comment here what each command is doing:
+    Recall that `@EntryPoint` tells the Q# compiler that this is where to begin execution of the program.
 
-1. In Q#, to obtain a qubit we need to "ask" the computer for them with the
-   block `using` in which we specify how many qubits we need and its name. In
-   our case we just need one qubit. Every qubit we borrow with the command
-   `using` starts by default in the `0` state.
-2. We can put our qubit in a quantum superposition by applying the `H()`
-   operation from the Intrinsic library. We only need to specify the target
-   qubit inside the brackets.
-3. After throwing our qubit in a quantum superposition we can measure the state.
-   In Q#, at the end of every operation, we need to make sure that any used
-   qubit is initialized back to the state `0`. We can do both operations with an
-   `MResetZ` operation from the Intrinsic library. Alternatively, you can use an
-   `M()`  operation followed by a `Reset()` operation from the Intrinsic
-   library.
-4. We return the result of our measurement, which is a random bit.
+1. Add this code to the `GenerateRandomBit` operation:
 
-That's it! We have now a quantum program that takes a qubit, throws it into a
-superposition, measures it and returns a random bit whose value depends on the
-measurement result.
+    TODO:
 
-## Execute the Q# program
+    ```qsharp
+    namespace Qrng {
+        open Microsoft.Quantum.Intrinsic;
+        open Microsoft.Quantum.Canon;
+        open Microsoft.Quantum.Measurement;
+    
+    
+        @EntryPoint()
+        operation GenerateRandomBit() : Result {
+            using (q = Qubit())  {  // Allocate a qubit.
+                H(q);               // Put the qubit to superposition. It now has a 50% chance of being measured 0 or 1.
+                return MResetZ(q);  // Measure the qubit value.
+            }
+        }
+    }
+    ```
 
-Ok, you have created a Q# quantum program, how do we execute it? The Q# program
-allows us to communicate bidirectionally with the quantum computer by
-manipulating the qubits and reading the measurements. 
+    TODO: The `using` directive XXX.
+    H ...
+    MResetZ ... and returns
 
-The executable will run the operation or function marked with the
-`@EntryPoint()` attribute on a simulator, resource estimator, depending on the
-project configuration and command-line options.
+    1. In Q#, to obtain a qubit we need to "ask" the computer for them with the
+       block `using` in which we specify how many qubits we need and its name. In
+       our case we just need one qubit. Every qubit we borrow with the command
+       `using` starts by default in the `0` state.
+    2. We can put our qubit in a quantum superposition by applying the `H()`
+       operation from the Intrinsic library. We only need to specify the target
+       qubit inside the brackets.
+    3. After throwing our qubit in a quantum superposition we can measure the state.
+       In Q#, at the end of every operation, we need to make sure that any used
+       qubit is initialized back to the state `0`. We can do both operations with an
+       `MResetZ` operation from the Intrinsic library. Alternatively, you can use an
+       `M()`  operation followed by a `Reset()` operation from the Intrinsic
+       library.
+    4. We return the result of our measurement, which is a random bit.
 
-In VS Code terminal, build the `my-random-bit.qs` the first time by typing the
-below in the terminal: 
-```
-dotnet build
-```
-For subsequent runs, no need to build it again:
-```
-dotnet run --no-build
-```
-Pressing enter you should obtain the result of your measurement, either `Zero`
-or `One` and therefore your quantum bit. 
+## Run the program
 
-In the next unit you are going to explore how to create a complete random
-number generator using the classical logic of Q#.
+TODO: Let's try it out!
+
+1. In Visual Studio Code, go to the terminal. If you closed it, from the **View** menu, select **Terminal** or **Integrated Terminal**.
+1. Run `dotnet run`.
+
+    ```bash
+    dotnet run
+    ```
+1. TODO: YOU SEE:
+
+    ```output
+    Hello quantum world!
+    ```
+1. Run the program again. This time, you can skip the build phase by using the `--no-build` flag.
+
+    ```bash
+    dotnet run --no-build
+    ```
+
+    TODO: YOU SEE:
+
+    ```output
+    Hello quantum world!
+    ```
+
+Next, you'll implement the second phase of your quantum RNG: combining multiple random bits to form a larger number. Leave your project open in Visual Studio Code for the next part.

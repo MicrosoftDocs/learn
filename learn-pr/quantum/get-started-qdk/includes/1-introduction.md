@@ -1,34 +1,30 @@
-The Microsoft's Quantum Development Kit (QDK) comprises a wide range of tools which give developers everything they need to start writing quantum programs. The QDK uses the programming language Q#, domain-specific programming language used for expressing quantum algorithms. It provides quantum programmers a framework to focus on the algorithms without having to worry about technical details like gate sequence optimization or the physical implementation of a quantum computer.
+Welcome to the world of quantum computing!
 
-Alongside the Q# language, the QDK includes:
+Whether you're a researcher or simply want to get a feel for what quantum programming is all about, this is a great place to start exploring Microsoft's approach to quantum computing.
 
-- the Q# libraries, which allow developers to hit the ground running and create real-world quantum applications today
-- various target machines on which Q# programs can be run. These include resource estimators and simulators for larger quantum programs, as well as a full-state quantum simulator, which behaves as a noise-free quantum computer. The latter is very useful for tinkering with ideas, debugging programs, and learning about quantum physics, but only efficient for programs with relatively few qubits. The QDK is used for running Q# programs on quantum hardware via the Azure Quantum cloud service. (Learn more about Azure Quantum in a separate learning module: [Azure Quantum overview](https://docs.microsoft.com/learn/modules/azure-quantum-intro)) 
-- tools for making work with Q# as seamless as possible, such as extensions for Visual Studio and VS Code, and packages for use with Python and Jupyter Notebooks.
-- API documentation for pairing Q# with classical host languages such as Python and C#
+In this module, you'll write your very first quantum program by using the Quantum Development Kit (QDK). The QDK enables you to write and test your quantum programs locally through a simulator, on standard hardware. You can later run the same quantum program on real quantum hardware.
 
+The quantum program you'll write generates random numbers. A random number generator is not only easy to write, but helps you understand the basics of quantum computing.
 
 ## Learning objectives
 
-In this module you will:
+In this module you'll: TODO
+
 - Prepare your development environment for writing quantum programs
 - Understand how to use Q# to express quantum algorithms
 - Start your journey as a quantum developer
 - Learn how to contribute to the open-source quantum community
+- TODO: How to combine classical and quantum logic...
 
 ## Prerequisites
 
-- Basic understanding of quantum computing concepts
-- Ability to code in any programming language, at the beginner level
-- Experience using Visual Studio Code, at the beginner level
-
-## Learning scenario
-
-Since you are here, you are probably interested at some level in quantum computing. Maybe you are a quantum computing researcher who wants to try the Microsoft Quantum Development Kit or a hobbyist who wants to understand what quantum programming looks like. You may wonder how to contribute your own projects to this emerging industry. In any case, this is a great place to start exploring what tools Microsoft offers to quantum developers and how you can start today to write your own quantum programs.
-
-:::image type="content" source="../.../....jpg" alt-text="software dev":::
+- A basic understanding of quantum computing concepts.
+- The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true).
+- [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true).
 
 ## What you will do in this module
+
+TODO
 
 In the following units you will go through these steps:
 

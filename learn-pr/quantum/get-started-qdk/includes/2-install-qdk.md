@@ -1,97 +1,95 @@
-In this unit, you will prepare your development environment to begin writing
-quantum programs with Microsoft's Quantum Development Kit. The QDK consists of:
+In this part, you prepare your development environment to begin writing quantum programs.
 
-- the Q# programming language
-- a set of libraries that abstract complex functionality in Q#
-- APIs for Python and .NET languages (C#, F#, and VB.NET) for running quantum
-  programs written in Q#
-- tools to facilitate your development
+To set up your development environment, you:
 
-Q# programs can be executed standalone in command line or paired with a host
-program written in a .NET language (typically C#) or Python. The latter allows
-us to call quantum operations from inside a classical program.
+> [!div class="checklist"]
+> * Install the QDK for Visual Studio Code.
+> * Verify the installation by creating a basic Q# application.
 
-The QDK is available for multiple development environments, but in this module
-we will use the Q# standalone executable within Visual Studio Code, as it is
-available for all operating systems.
+But first, let's take a quick look at what you get with the Quantum Development Kit (QDK).
 
-Visual Studio Code (VS Code) offers a rich environment for developing Q#
-programs on Windows, Linux and Mac. The Quantum Development Kit VS Code
-extension includes support for Q# syntax highlighting, code completion, and Q#
-code snippets.
+> [!NOTE]
+> Before you proceed, make sure you have the latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true) installed on your computer.
 
-## Prerequisites 
+## What's the Quantum Development Kit (QDK)?
 
-The first thing you'll need to get going is the latest version of the [.NET Core
-SDK 3.1](https://dotnet.microsoft.com/download). Open a command prompt and run
-the following:
+The QDK gives you everything you need to start writing quantum programs. Included in the QDK is the Q# programming language.
 
-```bash
-dotnet --version
-```
+Q# is a *domain-specific programming language* (DSL). A DSL is a computer language that's built for a specific kind of application, just like how HTML is built for web pages. Q# enables you to focus on your quantum algorithms without having to worry about many of the underlying details, such as physical layout of a quantum computer.
 
-Verify the output is `3.1.100` or higher. If not, install the [latest
-version](https://dotnet.microsoft.com/download) and check again.
+The QDK also includes:
 
-Lastly, if you don't have it yet, [install VS
-Code](https://code.visualstudio.com/download).
+* Q# libraries that help you build real-world quantum applications right away.
+* Targets for which you can run your Q# programs.
 
-## Install the QDK extension for VS Code
+    Targets include resource estimators and simulators for larger quantum programs, as well as a full-state quantum simulator, which behaves as a noise-free quantum computer.
 
-Open VS Code. To install the QDK extension, you either follow the link
-[here](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode)
-or simply find the *Extensions* tab, and search for "Quantum Development Kit".
-Click the install button.
+    The simulator is useful for trying out new ideas, debugging programs, and learning about quantum physics, but it's suited for programs with relatively few qubits.
 
-If this isn't the first time you've installed the QDK, please make sure to update it to the latest version but running this is the command line:
+    You can also target your programs to run on real quantum hardware through Azure Quantum. (We'll discuss Azure Quantum later in this module.)
+* Tools that help you integrate quantum programs with classical programs, including support for C#, F#, and Python.
 
-```bash
-dotnet new -i Microsoft.Quantum.ProjectTemplates::0.11.2004.2825
-```
+## Install the QDK for Visual Studio Code
 
-## Verify the installation with your first quantum program!
+This step installs the QDK and adds extensions to Visual Studio Code that provide support for developing quantum algorithms in Q#.
 
-### Create the Q# program
+1. Open Visual Studio Code.
+1. Go to [Microsoft Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode?azure-portal=true), select **Install**, then follow the installation steps.
 
-Install the Quantum project templates:
+## Verify the installation
 
-    - Go to **View** -> **Command Palette**
-    - Select **Q#: Install project templates**
+To verify the installation, here you create a basic Q# application.
 
-You now have the Quantum Development Kit installed and ready to use in your own
-applications and libraries.
+### Install the Quantum project templates
 
- - Create a new project:
+Project templates enable you to more quickly create Q# applications, libraries, and unit tests.
 
-        - Go to **View** -> **Command Palette**
-        - Select **Q#: Create New Project**
-        - Select **Standalone console application**
-        - Navigate to the location on the file system where you would like to create the application
-        - Click on the **Open new project...** button in the VS Code pop-up, once the project has been created
+1. On the **View** menu, select **Command Palette**.
+1. Enter **Q#: Install project templates**.
 
-    - Inspect the project
+### Create a project
 
-        You should see that a file called `Program.qs` created, which is a Q#
-        program that defines a simple operation to print a message to the
-        console.You can ignore the other files for now as they are for use with
-        host programs.
+1. On the **View** menu, select **Command Palette**.
+1. Enter **Q#: Create New Project**.
+1. Select **Standalone console application**.
+1. Select a directory to hold your project, such as your home directory. Enter *quantum-hello* as the project name, then select **Create Project**.
+1. From the window that appears at the bottom, select **Open new project**.
+1. From the **View** menu, select **Explorer**.
+
+    You see two files: *quantum-hello.csproj* and *Program.qs*.
+
+    The *.csproj* file defines project settings. *Program.qs* contains a basic Q# program that prints a message to the console.
+
+    ```qsharp
+    namespace hello_quantum {
+
+        open Microsoft.Quantum.Canon;
+        open Microsoft.Quantum.Intrinsic;
+
+
+        @EntryPoint()
+        operation HelloQ() : Unit {
+            Message("Hello quantum world!");
+        }
+    }
+    ```
 
 ### Run the program
 
-        - Go to **Terminal** -> **New Terminal**
-        - Enter `dotnet run`
-        - You should see the following text in the output window `Hello quantum world!`
+Now let's run the program to verify everything is set up correctly. You use the `dotnet` utility to run Q# programs.
 
+1. From the **View** menu, select **Terminal** or **Integrated Terminal**.
+1. Run `dotnet run`.
 
-> [!NOTE]
-> * Workspaces with multiple root folders are not currently supported by the
->   Visual Studio Code extension. If you have multiple projects within one VS
->   Code workspace, all projects need to be contained within the same root
->   folder.
+    ```bash
+    dotnet run
+    ```
+1. The program prints this message:
 
-Congratulations, you just set up the QDK environment and ran your first Q#
-program! However, there hasn't been any quantum algorithm involved. The
-operation is simply giving an output message. 
+    ```output
+    Hello quantum world!
+    ```
 
-In the next unit, you will learn more about constructing a quantum program. We
-will make a quantum random number generator as a demonstration.
+Great work. You just ran your first Q# program!
+
+You likely noticed that this basic program doesn't involve any quantum computations. Shortly, you'll use quantum computation to create a random number generator.
