@@ -16,3 +16,7 @@ In this module, you will:
 - Learn how and where to use encryption to secure your data.
 - Learn how to protect your architecture at the network level.
 - Learn how to leverage application security best practices to integrate security into your application.
+
+## Prerequisites
+
+None
