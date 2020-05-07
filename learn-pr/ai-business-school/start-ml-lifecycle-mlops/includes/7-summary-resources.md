@@ -10,7 +10,7 @@ Now that you have reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
   
-* Download PDF of Introduction to MLOps and ML lifecycles.
+* Download PDF of Introduction to MLOps and ML lifecycle.
 * Download PDF of Discover the business value of MLOps.
   * If you'd like to read about best practices for software engineering teams working with machine learning, [this study published by the IEEE Computer Society](https://www.microsoft.com/research/publication/software-engineering-for-machine-learning-a-case-study/) is a great place to start.
 * Download PDF of Manage the machine learning lifecycle with MLOps.
