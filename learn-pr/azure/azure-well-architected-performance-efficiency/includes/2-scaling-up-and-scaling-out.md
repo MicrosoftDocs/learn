@@ -18,7 +18,7 @@ Easy scaling is a key benefit of Azure. Most Azure resources let you easily add 
 
 Scaling up is the process where we increase the capacity of a given instance. A virtual machine could be increased from 1 vCPU and 3.5 GB of RAM to 2 vCPUs and 7 GB of RAM to provide more processing capacity. On the other hand, scaling down is the process where we lower the capacity of a given instance. For example, reducing a virtual machine's capacity from 2 vCPUs and 7 GB of RAM to 1 vCPU and 3.5 GB of RAM, reducing both capacity and cost. The following illustration shows an example of changing the size of a virtual machine.
 
-![An illustration showing scaling up and scaling down of a virtual machine to change the performance capabilities.](../media/2-ScaleUpDown.png)
+![An illustration showing scaling up and scaling down of a virtual machine to change the performance capabilities.](../media/2-scale-up-down.png)
 
 Let's take a look at what scaling up or down means in the context of Azure resources:
 
@@ -45,7 +45,7 @@ _Scaling out_ is the process of adding more instances to support the load of you
 _Scaling in_ is the process of removing instances that are no longer needed to support the load of your solution. If the website front ends have low usage, we may want to lower the number of instances to save cost. The following illustration shows an example of changing the number of virtual machine instances.
 
 
-![An illustration showing scaling out the resources to handle demand and scaling in the resources to reduce costs.](../media/2-ScaleInOut.png)
+![An illustration showing scaling out the resources to handle demand and scaling in the resources to reduce costs.](../media/2-scale-in-out.png)
 
 Here are some examples of what scaling out or in means in the context of Azure resources:
 

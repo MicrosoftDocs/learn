@@ -10,7 +10,7 @@ In comparison, a cloud environment is built for scale. Cloud-hosted resources ma
 
 On top of this, the chattier an application, the more round trips that are required. Each round trip comes with a latency tax, with each round trip adding to the overall latency. The following illustration shows how the latency perceived by the user is the combination of the roundtrips required to service the request.
 
-![An illustration showing network latency among resources placed at different geographical locations in the cloud.](../media/3-networkLatency.png)
+![An illustration showing network latency among resources placed at different geographical locations in the cloud.](../media/3-network-latency.png)
 
 Now let's take a look at how to improve performance between Azure resources and from your end users to your Azure resources.
 
@@ -60,7 +60,7 @@ The website will likely be using some form of static content (either whole pages
 
 With content deployed to Azure CDN, those items are copied to multiple servers around the globe. Let's say one of those items is a video served from blob storage: `HowToCompleteYourBillingForms.MP4`. The team then configure the website so that each user's link to the video will actually reference the CDN edge server nearest them, rather than referencing blob storage. This approach puts content closer to the destination, reducing latency and improving user experience. The following illustration shows how using Azure CDN puts content closer to the destination, which reduces latency and improves the user experience.
 
-![An illustration showing usage of Azure content delivery network to reduce latency.](../media/3-cdnSketch.png)
+![An illustration showing usage of Azure content delivery network to reduce latency.](../media/3-cdn.png)
 
 Content delivery networks _can_ also be used to host cached dynamic content. Extra consideration is required, though, since cached content may be out of date compared with the source. Context expiration can be controlled by setting a time to live (TTL). If the TTL is too high, out-of-date content may be displayed and the cache would need to be purged.
 

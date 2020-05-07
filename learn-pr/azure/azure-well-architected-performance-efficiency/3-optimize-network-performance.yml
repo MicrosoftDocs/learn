@@ -29,7 +29,7 @@ quiz:
       explanation: 'The TTL of an asset on a content delivery network relates to how often it is refreshed from the original source.'
     - content: 'A private circuit between an on-premises network and Azure'
       isCorrect: false
-      explanation: 'ExpressRoute is a private circuit between an on-premises network and Azure, and while it can improve latency, it is not a defintion of the term.'
+      explanation: 'ExpressRoute is a private circuit between an on-premises network and Azure, and while it can improve latency, it is not a definition of the term.'
  
   - content: 'Suppose your web application is hosted in East US. Which of the following would be the most cost-effective way to optimize network latency for users around the world?'
     choices:

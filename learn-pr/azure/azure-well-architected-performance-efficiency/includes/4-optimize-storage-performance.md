@@ -40,7 +40,7 @@ Polyglot persistence is the usage of different data storage technologies to hand
 
 Consider an e-commerce example. You may store application assets in a blob store, product reviews and recommendations in a NoSQL store, and user profile or account data in a SQL database. The following illustration shows how an application might use multiple data storage techniques to store different types of data.
 
-![An illustration showing usage of different data storage methods within the same application to increase performance and reduce cost.](../media/4-polyglotpersistence.png)
+![An illustration showing usage of different data storage methods within the same application to increase performance and reduce cost.](../media/4-polyglot-persistence.png)
 
 This is important, as different data stores are designed for certain use cases or may be more accessible because of cost. As an example, storing blobs in a SQL database may be costly and slower to access than directly from a blob store.
 
