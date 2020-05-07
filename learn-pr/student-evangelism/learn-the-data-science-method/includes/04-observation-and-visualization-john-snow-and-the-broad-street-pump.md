@@ -194,19 +194,12 @@ quite free from impurity."
 Confident that he would be able to arrive at a clear conclusion, Snow
 summarized his data in the table below.
 
-  Supply Area      Number of houses   cholera deaths   deaths per 10,000 houses
-  ---------------- ------------------ ---------------- --------------------------
-  S&V              40,046             1,263            315
-  Lambeth          26,107             98               37
-  Rest of London   256,423            1,422            59
+| Supply Area    | Number of Hours | Cholera Deaths | Deaths per 10,000 Houses |
+|----------------|-----------------|----------------|--------------------------|
+| S&V            | 40,046          | 1,263          | 315                      |
+| Lambeth        | 26,107          | 98             | 37                       |
+| Rest of London | 256,423         | 1,422          | 59                       |
 
 The numbers pointed accusingly at S&V. The death rate from cholera in
 the S&V houses was almost ten times the rate in the houses supplied by
-Lambeth.
-d by
-Lambeth.
-m cholera in
-the S&V houses was almost ten times the rate in the houses supplied by
-Lambeth.
-d by
 Lambeth.
