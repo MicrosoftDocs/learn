@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.learn-the-data-science-method.summary
+title: Summary
+metadata:
+  title: Summary
+  description: An overview of content covered in this module.
+  ms.date: 03/12/2020
+  author: kvah
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 2
+content: '[!include[](includes/05-summary.md)]'
+
+content: 'A study at UCLA investigated factors that might result in greater attention to the health and education of girls in rural India. One such factor is information about job opportunities for women. The idea is that if people know that educated women can get good jobs, they might take more care of the health and education of girls in their families, as an investment in the girls’ future potential as earners.
+The study focused on 160 villages outside the capital of India, all with little access to information about call centers and similar organizations that offer job opportunities to women. In 80 of the villages chosen at random, recruiters visited the village, described the opportunities, recruited women who had some English language proficiency and experience with computers, and provided ongoing support free of charge for three years. In the other 80 villages, no recruiters visited and no other intervention was made.
+At the end of the study period, the researchers recorded data about the school attendance and health of the children in the villages.'
+
+quiz:
+  questions:
+    - content: 'Which statement best describes the treatment and control groups for this study?'
+      choices:
+        - content: The treatment group was the 80 villages visited by recruiters, and the control group was the other 80 villages with no intervention.
+          isCorrect: true
+          explanation: Correct. The treatment is exposure to job opportunities for women.
+        - content: The treatment group was the 160 villages selected, and the control group was the rest of the villages outside the capital of India.
+          explanation: Inorrect. Not all of the 160 villages received treatment.
+          isCorrect: false
+        - content: The treatment group was the girls in India, and the control group was the boys in India.
+          isCorrect: false
+          explanation: Incorrect. The treatment was applied to the entire village, regardless of gender.
+        - content: There is no clear notion of treatment and control group in this study.
+          isCorrect: false
+          explanation: Incorrect. The study had a distinct treatment that was applied to the treatment group.
+    - content: 'Was this an observational study, a randomized controlled experiment or a randomized observational study?'
+      choices:
+        - content: This was an observational study.
+          explanation: Incorrect. There was a treatment applied, which means the study is not purely observational.
+          isCorrect: false
+        - content: This was a randomized controlled experiment.
+          isCorrect: true
+          explanation: Correct. The treatment was applied to randomly selected villages, with a control group. This makes the study a randomized controlled experiment.
+        - content: This was a randomized observational study.
+          isCorrect: false
+          explanation: Incorrect. The study applied a treatment to one of the groups, which makes it not an observational study.
+    - content: 'The study found that "Girls aged 5-15 in villages that received the recruiting services were 3 to 5 percentage points more likely to be in school." Does the study provide evidence that receiving recruting services leads to an increase in the chance that girls are in school?'
+      choices:
+        - content: Yes, the study provides evidence of a causal link.
+          isCorrect: true
+          explanation: Correct. The study was a randomized controlled experiment, allowing assumptions of causality.
+        - content: No, the study does not provide evidence for causation because of confounding factors.
+          isCorrect: false
+          explanation: Incorrect. Randomizing which villages to apply the treatment to sufficiently minimized confounding factors in a randomized controlled experiment.
+        - content: There is not enough information to tell.
+          isCorrect: false
+          explanation: Incorrect.
