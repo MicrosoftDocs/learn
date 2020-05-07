@@ -1,4 +1,4 @@
-There are a host of useful operations you can do on Boolean arrays. We'll work with `two_dim_array`, the two-dimensional array we created earlier.
+There's a host of useful operations you can do on Boolean arrays. We'll work with `two_dim_array`, the two-dimensional array we created earlier.
 
 ```python
 print(two_dim_array)
@@ -119,7 +119,7 @@ Here, all the elements in the first and third rows are less than 7, but that isn
 
 ## Boolean operators
 
-We've already seen how we might count, say, all months with less than four inches of rain, or all months with more than two inches of rain. But what if we want to know about all months with less than four inches of rain and greater than one inch? You can accomplish by using Python's *bitwise logic operators*, `&`, `|`, `^`, and `~`. As with the standard arithmetic operators, NumPy overloads these as ufuncs that work element-wise on (usually Boolean) arrays.
+We've already seen how we might count, say, all months with less than four inches of rain, or all months with more than two inches of rain. But what if we want to know about all months with less than four inches of rain and greater than one inch? You can accomplish by using Python's *bitwise logic operators*, `&`, `|`, `^`, and `~`. As with the standard arithmetic operators, NumPy overloads these operators as ufuncs that work element-wise on (usually Boolean) arrays.
 
 For example, we can address this sort of compound question as follows:
 
@@ -133,7 +133,7 @@ The output is:
 2
 ```
 
-So we see that there are two months with rainfall between 0.5 and 1.0 inches. The parentheses here are important. Because of operator precedence rules, with parentheses removed, this expression would be evaluated as follows, which results in an error:
+So we see that there are two months with rainfall between 0.5 inches and 1.0 inches. The parentheses here are important. Because of operator precedence rules, with parentheses removed, this expression would be evaluated as follows, which results in an error:
 
 ```python
 rainfall_2003 > (0.5 & rainfall_2003) < 1

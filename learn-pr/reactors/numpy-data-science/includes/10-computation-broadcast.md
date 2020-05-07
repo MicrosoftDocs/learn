@@ -1,6 +1,6 @@
 Another way to vectorize operations is to use NumPy's *broadcasting* functionality: creating rules for applying binary ufuncs like addition, subtraction, or multiplication on arrays of different sizes.
 
-Earlier, when we performed binary operations on arrays of the same size, those operations were performed on an element-by-element basis.
+Earlier, when we performed binary operations on arrays of the same size, those operations were done on an element-by-element basis.
 
 ```python
 first_array = np.array([3, 6, 8, 1])
@@ -14,7 +14,7 @@ The output is:
 array([ 7, 11, 15,  3])
 ```
 
-Broadcasting enables you to perform these types of binary operations on arrays of different sizes. So you could just as easily add a scalar (which is really just a zero-dimensional array) to an array:
+Broadcasting enables you to do these types of binary operations on arrays of different sizes. So you could as easily add a scalar (which is just a zero-dimensional array) to an array:
 
 ```python
 first_array + 5
@@ -39,7 +39,7 @@ The output is:
 array([1.])
 ```
 
-For this:
+For this operation:
 
 ```python
 two_dim_array = np.ones((2, 2))
@@ -118,7 +118,7 @@ two_dim_array = np.ones((2, 3))
 one_dim_array = np.arange(3)
 ```
 
-Consider an operation on these two arrays. The shape of the arrays are:
+Consider an operation on these two arrays. The shapes of the arrays are:
 
 - `two_dim_array.shape = (2, 3)`
 - `one_dim_array.shape = (3,)`
@@ -148,7 +148,7 @@ array([[1., 2., 3.],
 
 ### Try it yourself
 
-Flip this around. Try adding these with `two_dim_array = np.ones((3, 2))`
+Flip this operation around. Try adding these with `two_dim_array = np.ones((3, 2))`
 and `one_dim_array = np.arange(3)[:, np.newaxis]`.
 
 What do you get?
@@ -240,7 +240,7 @@ M = np.ones((3, 2))
 i = np.arange(3)
 ```
 
-This situation is just slightly different from the situation in the first example: the matrix `M` is transposed. How does this affect the calculation? The shapes of the arrays are:
+This situation is slightly different from the situation in the first example: the matrix `M` is transposed. How does this change affect the calculation? The shapes of the arrays are:
 
 - `M.shape = (3, 2)`
 - `i.shape = (3,)`
@@ -278,7 +278,7 @@ Ufuncs enable you to avoid using slow Python loops. Broadcasting builds on that.
 
 A common data practice is to *center* an array of data. For example, say we have an array of 10 observations, each of which consists of three values (called features in this context). We might want to center that data so that we have the differences from the mean rather than the raw data itself. Doing so can help us better compare the different values.
 
-We'll store this in a 10 x 3 array:
+We'll store this data in a 10 x 3 array:
 
 ```python
 T = np.random.random((10, 3))

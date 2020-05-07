@@ -21,7 +21,7 @@ The output is:
 50.461758453195614
 ```
 
-If you guessed that there's also a built-in NumPy function for this, you guessed correctly:
+If you guessed that there's also a built-in NumPy function for this operation, you guessed correctly:
 
 ```python
 np.sum(myList)
@@ -33,7 +33,7 @@ The output is:
 50.46175845319564
 ```
 
-And if you guessed that the NumPy version is faster, you are doubly correct:
+And if you guessed that the NumPy version is faster, you're doubly correct:
 
 ```python
 large_array = np.random.rand(1000000)
