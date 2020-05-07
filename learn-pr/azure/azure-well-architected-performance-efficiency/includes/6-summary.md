@@ -1,4 +1,4 @@
-We've covered some of the key principles of the *performance efficiency* pillar of the Azure Well-Architected Framework. You've learned about the various options for scaling your application, how to use autoscaling to handle this automatically, and technlogies such as serverless computing that include scaling capabilities.
+We've covered some of the key principles of the *performance efficiency* pillar of the Azure Well-Architected Framework. You've learned about the various options for scaling your application, how to use autoscaling to handle this automatically, and technologies such as serverless computing that include scaling capabilities.
 
 You've learned ways to optimize network traffic for your application. You've seen how you can use services like Azure Traffic Manager to direct users to the closest application instance, and how caching content on Azure CDN can improve performance.
 

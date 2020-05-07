@@ -2,9 +2,9 @@ It's rare that we can exactly predict the load on our system: public facing appl
 
 ## What is scaling?
 
-_Scaling_ is the process of managing your resources to help your application meet a set of performance requirements.  When we have too many resources serving users, we won't be using it efficiently and we'll be wasting money. Too few available resources means that the performance of our application could be impacted. The goal is to meet our defined performance requirements while optimizing for cost. 
+*Scaling* is the process of managing your resources to help your application meet a set of performance requirements. When we have too many resources serving users, we won't be using it efficiently and we'll be wasting money. Too few available resources and the performance of our application could be impacted. The goal is to meet our defined performance requirements while optimizing for cost.
 
-"_Resources_" can refer to anything we need to manage to run our applications. Memory and CPU for virtual machines are the most obvious resources, but some Azure services might require you to consider bandwidth or abstractions, like Azure Cosmos DB Request Units.
+*Resources* can refer to anything we need to manage to run our applications. Memory and CPU for virtual machines are the most obvious resources, but some Azure services might require you to consider bandwidth or abstractions, like Azure Cosmos DB Request Units.
 
 In a world where application demand is constant, it's easy to predict the right amount of resources you'll need. In the real world, the demands of applications change over time, so the right amount of resources you'll need can be harder to predict. If you're lucky, that change will be predictable or seasonal, but that is not typical of all applications. Ideally, you want to provision the right amount of resources to meet demand and adjust as demand changes.
 
@@ -34,7 +34,7 @@ For example, if you choose to scale up in Azure SQL Database, the service deals 
 
 Alternatively, if you choose to scale up or down a virtual machine, you do so by selecting a different instance size. In most cases this requires a restart of the VM, so it's best to have the expectation that a reboot will be required and you'll need to account for when performing this activity.
 
-Finally, you should always look for places where scaling down is an option. If your application can provide adequate performance at a lower price tier, your Azure bill could be significantly reduced.
+Finally, you should always look for places where scaling down is an option. If your application can provide adequate performance at a lower price tier, your Azure bill could be reduced.
 
 ## What is scaling out or in?
 
@@ -55,7 +55,7 @@ Here are some examples of what scaling out or in means in the context of Azure r
 - In an Azure SQL Database implementation, you could share the load across database instances by sharding. _Sharding_ is a technique to distribute large amounts of identically structured data across a number of independent databases.
 - In Azure App Service, the App Service plan is the virtual web server farm hosting your application. Scaling out in this way means that you're increasing the number of virtual machines in the farm. As with virtual machine scale sets, the number of instances can be automatically raised or lowered in response to certain metrics or a schedule.
 
-Scaling out is typically easily performed in the Azure portal, command-line tools, or Resource Manager templates, and in most cases is seamless to the end user.
+Scaling out is typically easily performed in the Azure portal, command-line tools, or Resource Manager templates, and in most cases it's seamless to the end user.
 
 ### Autoscale
 
@@ -65,9 +65,9 @@ You can configure some of these services to use a feature called autoscale. With
 
 ### Considerations when scaling in and out
 
-When scaling out, the startup time of your application can impact how quickly your application can scale. If your web app takes two minutes to start up and be available for users, that means each of your instances will take two minutes until they are available to your users. You'll want to take this startup time into consideration when determining how fast you want to scale.
+When scaling out, the startup time of your application can impact how quickly your application can scale. If your web app takes two minutes to start up and become available for users, that means each of your instances will take two minutes until they are available to your users. You'll want to take this startup time into consideration when determining how fast you want to scale.
 
-You'll also need to think about how your application handles state. When the application scales in, any state stored on the machine is no longer available. If a user connects to an instance that doesn't have its state, it could force them to sign in or re-select data, leading to a poor user experience. A common pattern is to externalize state to another service like Redis Cache or SQL Database, making your web servers stateless. Now that our web front ends are stateless, we don't need to worry about which individual instances are available. They are all doing the same job and are deployed in the same way.
+You'll also need to think about how your application handles state. When the application scales in, any state stored on the machine is no longer available. If a user connects to an instance that doesn't have its state, it could force them to sign in or reselect data, leading to a poor user experience. A common pattern is to externalize state to another service like Redis Cache or SQL Database, making your web servers stateless. Now that our web front ends are stateless, we don't need to worry about which individual instances are available. They are all doing the same job and are deployed in the same way.
 
 ## Throttling
 

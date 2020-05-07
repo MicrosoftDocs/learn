@@ -58,7 +58,7 @@ You can then use this data to help scale your application based on load. **Autos
 
 ![Screenshot showing the Autoscale pane in the Azure portal for Azure monitor](../media/5-discover-autoscale-azure-monitor.png)
 
-It allows you to create rules that use metrics collected by Azure Monitor for two purposes: to determine when to automatically add resources to handle increases in the load and to save money by removing idle resources. You specify a minimum and a maximum number of instances and the logic for when to increase or decrease resources. For example, you can setup rules around CPU utilization that increase or decrease the number of instances available for a resource.
+It allows you to create rules that use metrics collected by Azure Monitor for two purposes: to determine when to automatically add resources to handle increases in the load and to save money by removing idle resources. You specify a minimum and a maximum number of instances and the logic for when to increase or decrease resources. For example, you can set up rules around CPU utilization that increase or decrease the number of instances available for a resource.
 
 ![Screenshot showing the Autoscale setting for CPU usage in the Azure portal with Azure monitor](../media/5-scale-based-on-cpu.png)
 
@@ -66,7 +66,7 @@ Azure Monitor is the place to start for all your near real-time resource metric 
 
 ### Log Analytics
 
-Centralized logging can help you uncover hidden issues that may be difficult to track down. With Log Analytics you can query and aggregate data across logs. This cross-source correlation can help you identify issues or performance problems that may not be evident when looking at logs or metrics individually. The following illustration shows how Log Analytics acts as a central hub for monitoring data. Log Analytics receives monitoring data from your Azure resources and makes it available to consumers for analysis or visualization.
+Centralized logging can help you uncover hidden issues that may be difficult to track down. With Log Analytics, you can query and aggregate data across logs. This cross-source correlation can help you identify issues or performance problems that may not be evident when looking at logs or metrics individually. The following illustration shows how Log Analytics acts as a central hub for monitoring data. Log Analytics receives monitoring data from your Azure resources and makes it available to consumers for analysis or visualization.
 
 ![An illustration showing the role of Log Analytics in resource monitoring.](../media/5-log-analytics.png)
 

@@ -16,7 +16,7 @@ Now let's take a look at how to improve performance between Azure resources and 
 
 ## Latency between Azure resources
 
-Imagine that you work for a healthcare organization that is piloting a new patient booking system. This system is running on several web servers and a database in the West Europe Azure region. This architecture minimizes the data time on the wire as resources are co-located inside an Azure region.
+Imagine that you work for a healthcare organization that is piloting a new patient booking system. This system is running on several web servers and a database in the West Europe Azure region. This architecture minimizes the data time on the wire as resources are colocated inside an Azure region.
 
 Suppose that the pilot of the system went well and has been expanded to users in Australia. Users in Australia will incur the round-trip time to the resources in West Europe to view the website, and their end-user experience will be poor due to the network latency.
 
@@ -58,7 +58,7 @@ It's important to note that this load balancing is only handled via DNS, there's
 
 The website will likely be using some form of static content (either whole pages or assets such as images and videos). This content could be delivered to users faster by using a content delivery network (CDN) such as Azure CDN. 
 
-With content deployed to Azure CDN, those items are copied to multiple servers around the globe. Let's say one of those items is a video served from blob storage: `HowToCompleteYourBillingForms.MP4`. The team then configure the website so that each user's link to the video will actually reference the CDN edge server nearest them, rather than referencing blob storage. This approach puts content closer to the destination, reducing latency and improving user experience. The following illustration shows how using Azure CDN puts content closer to the destination which reduces latency and improves the user experience.
+With content deployed to Azure CDN, those items are copied to multiple servers around the globe. Let's say one of those items is a video served from blob storage: `HowToCompleteYourBillingForms.MP4`. The team then configure the website so that each user's link to the video will actually reference the CDN edge server nearest them, rather than referencing blob storage. This approach puts content closer to the destination, reducing latency and improving user experience. The following illustration shows how using Azure CDN puts content closer to the destination, which reduces latency and improves the user experience.
 
 ![An illustration showing usage of Azure content delivery network to reduce latency.](../media/3-cdnSketch.png)
 
