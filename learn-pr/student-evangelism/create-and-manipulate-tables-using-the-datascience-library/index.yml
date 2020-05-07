@@ -17,7 +17,7 @@ abstract: |
   - Explore different datasets using the datascience Library.
   - Manipulate Tables & Wrangle data using various datascience Library functions.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/student-evangelism/create-and-manipulate-tables-using-the-datascience-library.svg
 levels:
 - beginner
 roles:
@@ -41,7 +41,7 @@ units:
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.randomness
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.conditional-statements
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.iteration
-- learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.mini-lab
+- learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.mini-labs
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.summary
 badge:
-  uid: learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.badge
+  uid: learn.create-and-manipulate-tables-using-the-datascience-library.badge
