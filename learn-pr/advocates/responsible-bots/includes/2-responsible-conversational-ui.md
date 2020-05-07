@@ -36,7 +36,7 @@ One way you can avoid bias is to include _diversity_ in all stages of bot develo
 
 Bots become accessible to a diverse audience when you support different languages. This task can be simplified with the [Azure Cognitive Services Translator Text API][TranslatorAPI]. You can use the API for automatic translation of incoming and outgoing messages, and to automatically [detect a user's language][LangDetect].
 
-_Cultural norms_ are important to consider when designing your bot. Some cultures use an informal tone, while others use more formal communication. Try to design your bot so it can adjust the conversational style to meet the culture. **Project personality chat** supports three conversational styles.
+_Cultural norms_ are important to consider when designing your bot. Some cultures use an informal tone, while others use more formal communication. Try to design your bot so it can adjust the conversational style to meet the culture. Project Personality Chat supports three conversational styles.
 
 Build _accessibility practices_ into your bot to broaden the potential audience. When you include _speech support_, you make the bot usable for visually impaired users. Your bot also becomes more attractive to users who don't want to type.
 
