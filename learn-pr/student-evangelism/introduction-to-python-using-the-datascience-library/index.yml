@@ -18,7 +18,7 @@ abstract: |
   - Make and manipulate and different sequences. 
   - Expose to and work with numerous numpy (np) functions arithmetic operations on arrays.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/student-evangelism/introduction-to-python-using-the-datascience-library.svg
 levels:
 - beginner
 roles:
@@ -44,4 +44,4 @@ units:
 - learn.student-evangelism.introduction-to-python-using-the-datascience-library.mini-labs
 - learn.student-evangelism.introduction-to-python-using-the-datascience-library.summary
 badge:
-  uid: learn.student-evangelism.introduction-to-python-using-the-datascience-library.badge
+  uid: learn.introduction-to-python-using-the-datascience-library.badge
