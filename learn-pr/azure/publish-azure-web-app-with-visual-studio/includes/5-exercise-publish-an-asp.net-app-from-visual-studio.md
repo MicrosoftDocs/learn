@@ -16,7 +16,7 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
 1. Enter the required information about your App Service plan.
 
-    In the **App Service** dialog box, under **Subscription**, select **Conceirge Subscription**.
+    In the **App Service** dialog box, under **Subscription**, select **Concierge Subscription**.
 
     - **Name**: the name of your application.  The name determines the URL of the published application, which will be https://&lt;AppName&gt;.azurewebsites.net. It must be a unique value. You may have to try out some different names to find one that is unique.
 
