@@ -19,7 +19,7 @@ You'll use the following components in the design of the solution:
 
 - **Function app:** is the container that hosts the execution of individual functions.
 
-- **Devkit Translator sample:** is a project sample using Azure Functions and Cognitive Services that are available on GitHub: [https://github.com/Azure-Samples/mxchip-iot-devkit-translator](about:blank). You'll use this code as a basis and modify it for the scenario outlined above  
+- **Devkit Translator sample:** is a project sample using Azure Functions and Cognitive Services that are available on [GitHub](https://github.com/Azure-Samples/mxchip-iot-devkit-translator). You'll use this code as a basis and modify it for the scenario outlined above  
 
 - **Device code:** is Arduino Sketch File (.ino file extension) that you can use for controlling an Arduino circuit board.  
 

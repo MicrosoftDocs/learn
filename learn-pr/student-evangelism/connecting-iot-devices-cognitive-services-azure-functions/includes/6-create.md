@@ -1,8 +1,11 @@
 To build a translator application, we'll firstly create a Cognitive Speech Service in Azure. Then we'll call Cognitive Speech API for real-time speech translation and configure its API key in Azure Function.
 
 You use the following components for this unit: 
+
 **Speech API:** It allows you to access Cognitive Services and add real-time speech translations to your app.
+
 **Speech API key:** It's a unique identifier used to authenticate your app with the API.
+
 **Speech API endpoint:** It s a base URL that associates with the network address of API service. 
 
 We’ll use the following steps in this unit:
