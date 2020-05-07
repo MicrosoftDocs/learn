@@ -1,5 +1,3 @@
-When your front-end JavaScript framework or library relies on client-side routing, you should consider creating a fallback route.
-
 There's a client-side route **/products** in your front-end application that displays a list of products for your shopping list. When you navigate to **/products** in your app by clicking the **Products** link, your browser's address bar will confirm that you're at **/products**. When you refresh the browser while on this page, you want the app to refresh and display the products once again. However, without a fallback route, you'll see a 404 error stating the page cannot be found.
 
 You see a 404 error when you refresh the page because the browser sends a request to the hosting platform to serve **/products**. There's no page on the server named **products** to serve.
