@@ -16,7 +16,7 @@ In this module, you'll learn how to:
 
 - [Eclipse IDE](https://www.eclipse.org/ide/) *Neon* (4.6) or later
 - The [Apache Tomcat](http://tomcat.apache.org/) server
-- The [Azure Toolkit for Eclipse](https://docs.microsoft.com/azure/java/eclipse/azure-toolkit-for-eclipse)
+- The [Azure Toolkit for Eclipse](https://docs.microsoft.com/azure/developer/java/toolkit-for-eclipse/)
 - Experience writing web apps in Java and Java Server Pages
 - Familiarity with the Eclipse IDE to create projects in Java
 
