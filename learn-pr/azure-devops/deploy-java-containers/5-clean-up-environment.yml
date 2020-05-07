@@ -6,7 +6,7 @@ metadata:
   description: Clean up your Azure DevOps project and your Azure resources.
   ms.date: 04/28/2020
   author: tpetchel
-  ms.author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

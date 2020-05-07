@@ -23,7 +23,7 @@ prerequisites: |
   - Have experience with the `print()` function, variables and literal strings, and numeric data.
   - Have awareness of calling helper functions on a data type, a literal value, and a variable.
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-format-strings.svg
 levels:
 - beginner
 roles:
