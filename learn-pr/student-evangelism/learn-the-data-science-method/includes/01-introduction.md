@@ -127,3 +127,11 @@ tools, techniques, and data sets are all readily available; this text
 aims to make them accessible to everyone.
 all readily available; this text
 aims to make them accessible to everyone.
+
+## Learning Objectives
+
+In this module, you will:
+
+- Learned the definition of Data Science and what the field entails.
+- Understood the motivation behind Data Science.
+- Familiarized yourself with concepts of randomization, experiments and causation.

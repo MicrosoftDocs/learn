@@ -12,7 +12,9 @@ title: Learn the Data Science Method
 summary: Learn about the history and motivation behind Data Science
 abstract: |
   In this module, you will:
-  - PLACEHOLDER
+  - Learn the definition of Data Science and what the field entails.
+  - Understand the motivation behind Data Science.
+  - Familiarize yourself with concepts of randomization, experiments and causation.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:
