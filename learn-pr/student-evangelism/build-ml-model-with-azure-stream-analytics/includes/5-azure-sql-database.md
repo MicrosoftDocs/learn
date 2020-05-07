@@ -1,6 +1,6 @@
 In the previous unit, you wrote an Azure Function that passes each photo uploaded to a blob container to the Custom Vision Service to determine whether the photo contains a polar bear. The only output from the function was log output showing the verdict rendered by the Custom Vision Service, as well as the ID and location of the camera that snapped the photo. Now you will create an Azure SQL Database and modify the function to write to the database. This will set the stage for visualizing polar-bear sightings in Power BI, which will draw information about what's being spotted and where from the database.
 
-## Create an Azure SQL Database ##
+## Create an Azure SQL Database
 
 Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This database will collect output from the Azure Function you deployed previously. Later, you will connect the database to Power BI to show where polar bears are being spotted.
 
@@ -81,7 +81,7 @@ Let's begin by using the Azure Cloud Shell to create an Azure SQL Database. This
 
 Note the column named "IsPolarBear," which will be set to 1 or 0 to indicate that the corresponding image does or does not contain a polar bear.  
 
-## Modify the Azure Function ##
+## Modify the Azure Function
 
 The next step is to modify the Azure Function that you created to write output to the Azure SQL Database.
 

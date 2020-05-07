@@ -6,7 +6,7 @@ The Custom Vision Service exposes two APIs: the [Custom Vision Training API](htt
 
 In this unit, you will create a Custom Vision Service model and train it to differentiate between various types of Arctic wildlife.
 
-## Build a Custom Vision Service model ##
+## Build a Custom Vision Service model
 
 You will begin by creating a new Custom Vision Service project. Then you will upload images of polar bears, Arctic foxes, and walruses and tag the images so the Custom Vision Service can learn to differentiate between them.
 
@@ -40,7 +40,7 @@ You will begin by creating a new Custom Vision Service project. Then you will up
 
 With the images tagged and uploaded, the next step is to train the model so it can distinguish between Arctic foxes, polar bears, and walruses, as well as determine whether an image contains one of these animals.
 
-## Train and test the model ##
+## Train and test the model
 
 Now it's time to train the model using the images that you tagged and uploaded. After training the model, you will test it to determine how adept it is at identifying Arctic wildlife in photos. Once trained, a model can be refined by uploading additional tagged images and retraining it.
 

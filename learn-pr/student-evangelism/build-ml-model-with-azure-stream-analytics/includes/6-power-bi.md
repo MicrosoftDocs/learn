@@ -47,13 +47,13 @@ Visualizations (or simply "visuals") are the primary element that make up Power 
 
 1. Check the **IsPolarBear**, **Latitude**, and **Longitude** boxes in the "Fields" panel to include these fields in the map visual.
 
-    ![Adding fields to the map visual](../media/check-lat-lon.png)
+    ![Adding fields to the map visual](../media/check-latitude-longitude.png)
 
     _Adding fields to the map visual_
 
 1. In the "Visualizations" panel, click the down arrow next to **Average of Latitude** and select **Don't summarize** from the menu. Then do the same for **Average of Longitude**.
 
-    ![Removing summary calculations](../media/dont-summarize.png)
+    ![Removing summary calculations](../media/do-not-summarize.png)
 
     _Removing summary calculations_
 
