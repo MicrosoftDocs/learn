@@ -77,3 +77,33 @@ achievements:
   title: Build an FAQ chatbot with QnA Maker and Azure Bot Service
   summary: Build an FAQ chatbot with QnA Maker and Azure Bot Service
   iconUrl: /learn/achievements/data-ai/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service.svg
+- uid: learn.architect-great-solutions-in-azure.trophy
+  type: trophy
+  title: Architect great solutions in Azure
+  summary: Architect great solutions in Azure
+  iconUrl: /learn/achievements/architect-great-solutions-in-azure.svg
+- uid: learn.pillars-of-a-great-azure-architecture.badge
+  type: badge
+  title: Pillars of a great Azure architecture
+  summary: Pillars of a great Azure architecture
+  iconUrl: /learn/achievements/pillars-of-a-great-azure-architecture.svg
+- uid: learn.design-for-availability-and-recoverability.badge
+  type: badge
+  title: Design for availability and recoverability in Azure
+  summary: Design for availability and recoverability in Azure
+  iconUrl: /learn/achievements/design-for-availability-and-recoverability-in-azure.svg
+- uid: learn.design-for-efficiency-and-operations.badge
+  type: badge
+  title: Design for efficiency and operations in Azure
+  summary: Design for efficiency and operations in Azure
+  iconUrl: /learn/achievements/design-for-efficiency-and-operations-in-azure.svg
+- uid: learn.design-for-performance-and-scalability.badge
+  type: badge
+  title: Design for performance and scalability in Azure
+  summary: Design for performance and scalability in Azure
+  iconUrl: /learn/achievements/design-for-performance-and-scalability-in-azure.svg
+- uid: learn.design-for-security.badge
+  type: badge
+  title: Design for security in Azure
+  summary: Design for security in Azure
+  iconUrl: /learn/achievements/design-for-security-in-azure.svg
