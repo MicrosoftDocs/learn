@@ -48,7 +48,7 @@ Once the GitHub Action has completed successfully, you can view your running app
 1. Select your pull request
 1. Click on the link following the message **Azure Static Web Apps: Your stage site is ready! Visit it here**
 
-Notice that the preview URL contains a hyphen followed by a number. The number matches the pull request number for the pull request you created. For every pull request you create, you'll get a unique and repeatable preview URL.
+Notice that the preview URL contains a hyphen followed by a number. The number matches the pull request number for the pull request you created. For every pull request you create, you'll get a unique and repeatable preview URL. The region is also used to form the preview URL, too
 
 ::: zone pivot="angular"
 
