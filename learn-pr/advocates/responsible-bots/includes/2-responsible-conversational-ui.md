@@ -14,7 +14,7 @@ When the bot clearly communicates its goal, the user is discouraged from engagin
 
 ## Tell users they're talking to a bot
 
-From the start of the conversation, make it clear that the user is talking to a bot and not a human being. This approach helps the user to focus on solving a specific task. The user is less likely to expect emotional support. The bot should recognize some traditional phrases for greetings and endings of a conversation. General conversation can be implemented by using [Project personality chat][PersonalityChat]. We'll use this project later to enhance our **GeoFriend** bot.
+From the start of the conversation, make it clear that the user is talking to a bot and not a human being. This approach helps the user to focus on solving a specific task. The user is less likely to expect emotional support. The bot should recognize some traditional phrases for greetings and endings of a conversation. General conversation can be implemented by using [Project Personality Chat][PersonalityChat]. We'll use this project later to enhance our **GeoFriend** bot.
 
 ## Build trust with the user
 
