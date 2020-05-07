@@ -1,4 +1,4 @@
-Congratulations! You have created a Computer Vision machine learning model that will help you identify and document the birds and better protect endangered bird species. We covered an introduction to machine learning and computer vision and went through the full model building process. Don't let the learning stop here! There are many more Microsoft Learn machine learning modules to help you start learning more about building models.
+Congratulations! You have created a Custom Vision machine learning model that will help you identify and document the birds, and better protect endangered bird species. We covered an introduction to machine learning and Custom Vision, and then we went through the full model building process. Don't let the learning stop here! There are many more Microsoft Learn machine learning modules to help you start learning more about building models.
 
 Additionally, here are some helpful articles that go into more detail about some of the concepts we covered in this module.
 

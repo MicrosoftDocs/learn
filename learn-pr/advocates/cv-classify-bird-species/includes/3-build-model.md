@@ -19,7 +19,7 @@ The first thing we need to create our model is to get data! We are going to use 
 
 ## Upload data
 
-Now it is time to upload the data for training. There are a couple ways to do this. Either use the UI to browse upload and tag OR we can use the SDK. Follow the instructions for the way that works best for you. With lots of data and images classes/tags it will be faster to use the SDK.
+Now it is time to upload the data for training. There are a couple ways to do this. Either use the UI to browse upload and tag *or* we can use the SDK. Follow the instructions for the way that works best for you. With lots of data and images classes/tags, it will be faster to use the SDK.
 
 ### Option 1: Steps for UI upload
 
@@ -28,7 +28,7 @@ Now it is time to upload the data for training. There are a couple ways to do th
    1. Select **Quick Start**.
    1. Select **Custom Vision portal** or go to <https://www.customvision.ai/projects>.
    1. Select **Sign in**.
-   1. Select **New Project** and fill in the required fields:
+   1. Select **New project** and fill in the required fields:
 
       | Field                  | Value                             |
       | ---------------------- | --------------------------------- |
@@ -39,7 +39,7 @@ Now it is time to upload the data for training. There are a couple ways to do th
       | **Classification Types**   | Multiclass (single tag per image) |
       | **Domains**                | General                           |
 
-   1. Select **Create** to create the project.
+   1. Select **Create project** to create the project.
 
    > [!NOTE]
    > If you want to export the model to deploy on a mobile device, TensorFlow.js, or IoT, select the **compact** model option. You can change this option in the settings after the project is created.
@@ -54,11 +54,11 @@ Now it is time to upload the data for training. There are a couple ways to do th
    1. Select **Upload photos**.
    1. Repeat these steps for each bird species (class).
 
-   ![An animated gif that demonstrates how to upload photos](../media/upload-computer-vision-photos.gif)
+   ![An animated gif that demonstrates how to upload photos](../media/upload-costom-vision-photos.gif)
 
 ### Option 2: SDK upload
 
-The Custom Vision SDK is available in the following languages: Python, .NET, Node, Go, and Java. We are going to use Python and Jupyter Notebooks. If you don't have these installed already, I recommend getting them with Anaconda. You can [download it](https://www.anaconda.com/).
+The Custom Vision SDK is available in the following languages: Python, .NET, Node, Go, and Java. We are going to use Python and Jupyter Notebook. If you don't have these installed already, I recommend getting them with Anaconda. You can [download it](https://www.anaconda.com/).
 
 The following steps show you how to create the notebook and copy in the code. 
 
@@ -157,7 +157,7 @@ The following steps show you how to create the notebook and copy in the code.
 
       1. Call the `createTag` to create the class tag in Custom Vision.
       1. Call `createImageList` function and sending in the current `tag` name and `tag_id` that was returned from Custom Vision. This returns our list of images to upload.
-      1. Then, we upload the images from the `image_list` in batches of 25. Computer Vision will time out if try to upload the entire dataset at once.
+      1. Then, we upload the images from the `image_list` in batches of 25. Custom Vision will time out if try to upload the entire dataset at once.
 
       ```python
       for tag in tags:

@@ -2,7 +2,7 @@ Now that our model has been created, let's take a look at how it's performing an
 
 ## Understanding the model performance
 
-There are three indicators Custom Vision provides to help understand how the model is performing. Beware that these are indicators not fact or accuracy. It's telling you how it did on the data you provided to give you an idea of how it will perform on unseen data.
+Custom Vision provides three indicators to help you understand how the model is performing. Beware that these are indicators not fact or accuracy. It's telling you how it did on the data you provided to give you an idea of how it will perform on unseen data.
 
 The three indicators provided for the entire model and for each class are:
 
@@ -36,7 +36,7 @@ Another common mistake is training with bad data. There are ways that your data 
 
 Our model is performing well enough according to the metrics provided. Let's test our model and see how it performs on unseen data.
 
-### Test in the Portal UI
+### Test in the portal UI
 
 1. Select **Quick Test** in the upper-right corner.
 1. Search for an image of a bird that matches one of the species you trained it to recognize. Grab the URL for the image and paste it into the **Image URL** box to test accuracy. The prediction will appear on the right side of the window.

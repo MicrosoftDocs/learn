@@ -12,9 +12,9 @@ The data was provided by the Cornell Lab of Ornithology, with a special thanks t
 
 In this module, you will:
 
-- Get an introduction to Computer Vision
-- Get an introduction to Machine Learning (ML)
-- Learn how to use prebuilt ML models in Azure called Cognitive Services
-- Learn how to use the Custom Vision Cognitive Service
-- Build a custom machine learning model
-- Deploy the model created with Custom Vision
+- Get an introduction to Custom Vision.
+- Get an introduction to machine learning.
+- Learn how to use prebuilt ML models in Azure Cognitive Services.
+- Learn how to use the Custom Vision service in Azure.
+- Build a custom machine learning model.
+- Deploy the model created by using Custom Vision.

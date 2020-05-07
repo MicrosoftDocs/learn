@@ -1,4 +1,4 @@
-We are going to be using an Azure service that creates a Computer Vision model. Let's learn more about how Computer Vision works! Then you will see the step-by-step process for building a model from idea to model!
+We are going to be using an Azure service that creates a Custom Vision model. Let's learn more about how Custom Vision works! Then, you will see the step-by-step process for building a model from idea to model!
 
 ## What is machine learning?
 
@@ -14,7 +14,7 @@ In summary, when we build a model, we're trying to mimic human intelligence. We 
 
 ## What is transfer learning?
 
-Azure Custom Vision uses something called *transfer learning*. This is the ability to use prior knowledge to better solve the current problem. We do this all the time as humans, and we are discovering new ways to do this with computers, too. The way it works for computer vision is to add a layer in the neural network that is a pre-trained model. This trained model gives us a head start with training new data. It starts with a general knowledge domain, and then new layers are added to the neural network to solve our specific problem. In this case, the problem is identifying birds. This enables us to get better results with less data.
+Azure Cognitive Services Custom Vision uses something called *transfer learning*. This is the ability to use prior knowledge to better solve the current problem. We do this all the time as humans, and we are discovering new ways to do this with computers, too. The way it works for Custom Vision is to add a layer in the neural network that is a pre-trained model. This trained model gives us a head start with training new data. It starts with a general knowledge domain, and then new layers are added to the neural network to solve our specific problem. In this case, the problem is identifying birds. This enables us to get better results with less data.
 
 ## The model building process
 

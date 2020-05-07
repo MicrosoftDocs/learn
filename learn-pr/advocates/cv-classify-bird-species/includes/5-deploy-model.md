@@ -1,18 +1,18 @@
-Now our model is performing "good enough" - let's deploy it! There are different ways to deploy the model based on what you need. There is an option to deploy to an endpoint or you can export the model to different formats to deploy to different platforms. We will go over how to deploy to the endpoint and consume with an app.
+Now our model is performing "good enough" - let's deploy it! There are different ways to deploy the model based on what you need. There is an option to deploy to an endpoint, or you can export the model to different formats to deploy to different platforms. We will go over how to deploy to the endpoint and consume with an app.
 
 ## Deploy to an endpoint
 
 ### Get the prediction URL
 
 1. Select **Performance** from the top navigation in the Custom Vision portal.
-1. Click **Publish**.
+1. Select **Publish**.
 1. Select **Prediction Url**. This is the URL you will use to post images to get predictions.
 
 ### Consume the API in a Python app
 
 Once the model is trained and at a satisfactory accuracy, it's ready to be used in your app.
 
-1. Go to the resource group that contains the Custom Vision Resource. There should be a resource named `YourCustomVisionResourceName_Prediction`.
+1. Go to the resource group that contains the Custom Vision resource. There should be a resource named `YourCustomVisionResourceName_Prediction`.
 1. Select **Quick Start**.
 1. Select **API Reference** from the list of helpful links. 
 
@@ -44,7 +44,7 @@ with open(base_image_url + "images/Test/test_image.jpg", "rb") as image_contents
               ": {0:.2f}%".format(prediction.probability * 100))
 ```
 
-When you post to the published endpoint, you will get a result that looks like the below text. It shows the probability of each tag the computer vision model was trained on sorted by the highest score. It only knows the type of birds it was trained to recognize. If you were to post an image of a new bird that it was not trained on it would predict one of the birds it was trained on for the new bird.
+When you post to the published endpoint, you will get a result that looks like the below text. It shows the probability of each tag the Custom Vision model was trained on, sorted by the highest score. It only knows the type of birds it was trained to recognize. If you were to post an image of a new bird that it was not trained on, it would predict one of the birds it was trained on for the new bird.
 
 ```bash
 	American Crow: 99.18%
@@ -65,4 +65,4 @@ When you post to the published endpoint, you will get a result that looks like t
 	American Goldfinch (Female): 0.01%
 ```
 
-Now you know how to use the model you created and you can start better documenting the birds habits to help conserve their habitat and increase endangered bird populations all with the help of computer vision!
+Now you know how to use the model you created. You can start better documenting the birds habits to help conserve their habitat and increase endangered bird populations - all with the help of Custom Vision!
