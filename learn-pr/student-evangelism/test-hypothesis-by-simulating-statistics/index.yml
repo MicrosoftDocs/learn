@@ -4,8 +4,8 @@ metadata:
   title: Test Hypothesis By Simulating Statistics
   description: Learn how to test hypothesis by simulating statistics
   ms.date: 19/03/2020
-  author: sauravmittal
-  ms.author: leescott
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: azure
 title: Test Hypothesis By Simulating  Statistics
@@ -17,18 +17,20 @@ abstract: |
   - Learn how to make decisions with uncertain results through P-values & P-value cutoffs.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
-levels: 
+levels:
 - beginner
 roles:
 - data-scientist
 - student
 products:
 - azure
-units: 
+units:
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.setup
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.introduction
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.multiple-categories
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.decisions-and-uncertainty
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.error-probabilities
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.mini-lab
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.summary
 badge:
   uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.badge
