@@ -17,7 +17,7 @@ abstract: |
   - Learn about Empirical & Probability Distributions and their differences.
   - Explore various components of a simulation and simulate a statistic.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/student-evangelism/simulate-and-generate-empirical-distirbutions-in-python.svg
 levels:
 - beginner
 roles:
@@ -35,7 +35,7 @@ units:
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.empirical-distribution-of-a-statistic
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.randomization
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.endnote
-- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.mini-lab
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.mini-labs
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.summary
 badge:
-  uid: learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.badge
+  uid: learn.simulate-and-generate-empirical-distirbutions-in-python.badge
