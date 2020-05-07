@@ -6,9 +6,9 @@ The capacity to pivot as a business and foster innovation is crucial to long-ter
 
 In this unit, we'll share some guidance on how to be an innovative organization. We approach innovation in three key ways at Microsoft: 
 
-* Enable a culture of meaningful innovation
-* Strategically apply innovation to real business challenges
-* Keep responsibility at the center throughout the innovation process
+* Enable a culture of meaningful innovation.
+* Strategically apply innovation to real business challenges.
+* Keep responsibility at the center throughout the innovation process.
 
 ## Enable a culture of meaningful innovation
 
