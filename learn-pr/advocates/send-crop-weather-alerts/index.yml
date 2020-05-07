@@ -28,7 +28,7 @@ prerequisites: |
   You may want to complete the Microsoft Learn module: [Create serverless logic with Azure Functions](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/)
 
 units:
-- learn.advocates.send-crop-weather-alerts.1-introduction.md
+- learn.advocates.send-crop-weather-alerts.1-introduction
 - learn.advocates.send-crop-weather-alerts.2-application-architecture
 - learn.advocates.send-crop-weather-alerts.3-create-azure-maps-account
 - learn.advocates.send-crop-weather-alerts.4-knowledge-check
