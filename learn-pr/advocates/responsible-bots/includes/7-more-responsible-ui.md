@@ -203,7 +203,7 @@ We have discussed many ways in which our bot could be improved. And even though 
 [AdaptiveCards]: https://docs.microsoft.com/adaptive-cards/getting-started/bots
 [WikiFlags]: https://en.wikipedia.org/wiki/National_flag
 [CountryFlagsFile]: https://github.com/#TODO
-[GitFlag]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t4.0-flags
+[GitFlag]: https://github.com/MicrosoftDocs/mslearn-responsible-bots/tree/t4.0-flags
 [TextAnalytics]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/
 [PersonalityChat]: https://aischool.microsoft.com/conversational/learning-paths/advanced-conversational-ai/ttmb-implementing-project-personality-chat
 [TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/

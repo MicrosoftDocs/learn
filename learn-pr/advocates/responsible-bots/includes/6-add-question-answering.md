@@ -194,4 +194,4 @@ The bot we have create so far already seems quite intelligence. Here is a sample
 
 [QAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/
 [ProjectPersonalityChat]: https://www.microsoft.com/research/project/personality-chat/
-[CodeQnA]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t3-qna
+[CodeQnA]: https://github.com/MicrosoftDocs/mslearn-responsible-bots/tree/t3-qna
