@@ -30,3 +30,17 @@ quiz:
       isCorrect: false
       explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are less identities to manage.'
 
+  - content: 'Which of the following would be a valid second element for MFA, when combined with a password?'
+    choices:
+    - content: 'A drivers license'
+      isCorrect: false
+      explanation: "A drivers license can't be used for MFA."
+    - content: 'A time-based one-time password'
+      isCorrect: false
+      explanation: 'Applications that generate time-based one-time passwords are great to use for MFA.'
+    - content: 'Your account number'
+      isCorrect: false
+      explanation: "Your account number can't be used for MFA."
+    - content: 'Your car keys'
+      isCorrect: false
+      explanation: "Your car keys can't be used for MFA."
