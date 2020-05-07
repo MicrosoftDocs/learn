@@ -17,7 +17,7 @@ abstract: |
   - Understand The Bootstrap: The idea behind it, what it is, and why it works.
   - Learn about Confidence Intervals: Understanding confidence levels, generating confidence intervals, and how to use them to estimate unknown parameters.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/student-evangelism/compare-two-samples-by-bootstrapping.svg
 levels:
 - beginner
 roles:
@@ -35,7 +35,7 @@ units:
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.bootstrap
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.confidence-intervals
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.using-confidence-intervals
-- learn.student-evangelism.compare-two-samples-by-bootstrapping.mini-lab
+- learn.student-evangelism.compare-two-samples-by-bootstrapping.mini-labs
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.summary
 badge:
-  uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.badge
+  uid: learn.compare-two-samples-by-bootstrapping.badge
