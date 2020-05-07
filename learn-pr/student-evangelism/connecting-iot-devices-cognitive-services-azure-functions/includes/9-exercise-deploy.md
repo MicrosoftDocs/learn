@@ -37,7 +37,7 @@ You need to install some extensions for the Visual Studio Code.
 
 - Search for C# in the extension marketplace and install it.
 
-## Configure VS Code with Arduino settings.
+## Configure VS Code with Arduino settings
 
 In Visual Studio Code, click File > Preference > Settings. Then click the ... and Open settings.json.
 
