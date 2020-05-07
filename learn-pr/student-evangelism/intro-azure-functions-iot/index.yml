@@ -21,9 +21,9 @@ prerequisites: |
     - Basic knowledge of REST and APIs
     - Basic understanding of IoT 
     
-iconUrl: /learn/achievements/student-evangelism/introduction-to-azure-functions-for-iot-edge.svg
+iconUrl: /learn/achievements/student-evangelism/introduction-to-azure-functions-iot-edge.svg
 badge:
-  uid: learn.oxford.intro-to-iot-funtions-iot.badge
+  uid: learn.oxford.intro-iot-funtions-iot.badge
 levels:
 - beginner
 roles:
