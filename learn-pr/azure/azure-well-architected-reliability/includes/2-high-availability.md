@@ -6,7 +6,7 @@ Here, you'll learn the need for high availability, evaluate application high-ava
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEvc]
 
-A highly-available service is a service that absorbs fluctuations in availability, load, and temporary failures in dependent services and hardware. The application remains online and available (or maintains the appearance of it) while performing acceptably. This availability is often defined by business requirements, service-level objectives, or service-level agreements.
+A highly available service is a service that absorbs fluctuations in availability, load, and temporary failures in dependent services and hardware. The application remains online and available (or maintains the appearance of it) while performing acceptably. This availability is often defined by business requirements, service-level objectives, or service-level agreements.
 
 High availability is ultimately about the ability to handle the loss or severe degradation of a component of a system. This might be due to a virtual machine that's hosting an application going offline because the host failed. It could be due to planned maintenance for a system upgrade. It could even be caused by the failure of a service in the cloud. Identifying the places where your system can fail, and building in the capabilities to handle those failures, will ensure that the services you offer to your customers can stay online.
 
@@ -38,7 +38,7 @@ The following table shows the potential cumulative downtime for various SLA leve
 | 99.99% |1.01 minutes |4.32 minutes |52.56 minutes |
 | 99.999% |6 seconds |25.9 seconds |5.26 minutes |
 
-Of course, higher availability is better, everything else being equal. But as you strive for more 9s, the cost and complexity to achieve that level of availability grows. An uptime of 99.99% translates to about 5 minutes of total downtime per month. Is it worth the additional complexity and cost to reach five 9s? The answer depends on the business requirements. 
+Higher availability is better, everything else being equal. But as you strive for more 9's, the cost and complexity to achieve that level of availability grows. An uptime of 99.99% translates to about 5 minutes of total downtime per month. Is it worth the additional complexity and cost to reach five 9s? The answer depends on the business requirements. 
 
 Here are some other considerations when defining an SLA:
 
@@ -87,7 +87,7 @@ Availability zones are independent physical datacenter locations within a region
 
 Supported regions contain a minimum of three availability zones. When creating zonal service resources in those regions, you'll have the ability to select the zone in which the resource should be created. This will allow you to design your application to withstand a zonal outage and continue to operate in an Azure region before having to evacuate your application to another Azure region.
 
-Availability zones are a newer high availability configuration service for Azure regions and are currently available for certain regions. It's important to check the availability of this service in the region that you're planning to deploy your application if you want to consider this functionality. Availability zones are supported when using virtual machines, as well as several PaaS services. Availability zones are mutually exclusive with availability sets. When using availability zones you no longer need to define an availability set for your systems. You'll have diversity at the data center level, and updates will never be performed to multiple availability zones at the same time.
+Availability zones are a newer high availability configuration service for Azure regions and are currently available for certain regions. It's important to check the availability of this service in the region that you're planning to deploy your application if you want to consider this functionality. Availability zones are supported when using virtual machines, as well as several PaaS services. Availability zones are mutually exclusive with availability sets. When using availability zones, you no longer need to define an availability set for your systems. You'll have diversity at the data center level, and updates will never be performed to multiple availability zones at the same time.
 
 ### Load balancing
 
@@ -101,7 +101,7 @@ Azure possesses three load balancing technology services that are distinct in th
 
 One or a combination of all three Azure load-balancing technologies can ensure you have the necessary options available to architect a highly available solution to route network traffic through your application.
 
-![An illustration showing the different load balancing technology in Azure. The traffic manager balances the load between two regions. Within each region there is an application gateway that distributes the load among different virtual machines in the web tier based on the type of request. All images requests go to the image server pool, and any other request is directed to the default server pool. Further requests coming from the default server pools are handled by the Azure load balancer to distribute them among the virtual machines in the database tier.](../media/2-azure-load-balancer.png)
+![An illustration showing the different load balancing technology in Azure. The traffic manager balances the load between two regions. Within each region, there is an application gateway that distributes the load among different virtual machines in the web tier based on the type of request. All images requests go to the image server pool, and any other request is directed to the default server pool. Further requests coming from the default server pools are handled by the Azure load balancer to distribute them among the virtual machines in the database tier.](../media/2-azure-load-balancer.png)
 
 ### PaaS HA capabilities
 
