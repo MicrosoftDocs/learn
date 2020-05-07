@@ -4,41 +4,39 @@ To help developers create responsible bots, Microsoft has outlined [10 guideline
 
 ## Give your bot a clear goal
 
-When developing a bot, you should clearly understand its purpose and communicate this purpose to users. When they interact with a a bot, users who aware of its limitations won't have overly high expectations. This clarity can help avoid disappointment and misuse of the bot.
+When developing a bot, you should clearly understand its purpose and communicate this purpose to users. When they interact with a a bot, users who know its limitations won't have overly high expectations, that understanding can help avoid disappointment and misuse of the bot.
 
-***
+It's especially important when with **consequential outcomes** - when a conversation with a bot can have a significant impact on user's life. For example, bots used healthcare or education.
 
-It is especially important when you are dealing with so-called **consequential outcomes**, when a conversation with a bot can have a significant impact on user's life. Examples include bots in such problem domains as healthcare or education.
+In the case of our **GeoFriend** bot, we'll need to make it clear that the bot does not replace a teacher. It's only acting as an assistant to help students learn. We don't want a user to rely solely on the bot to teach them Geography, then discover later that their knowledge might not be up to standards.
 
-For example, in the case of our **GeoFriend** bot, it is important to articulate that the bot does not replace a teacher, and may only act as an assistant, which may help to learn better. We do not want to end up in the situation when a user trusted the bot to teach him Geography, and later or discovered that his knowledge is not up to standards.
+A clear goal also discourages users from engaging in conversations with a bot about unrelated topics. It's much easier to develop a bot that's adept at solving specific tasks as opposed to general conversation.
 
-Clear goal also prevents the user from starting general conversation with a bot about unrelated topics. It is much easier to develop a bot that is good at solving specific tasks, than trying to handle general conversation.
+## Tell users that they're talking to a bot
 
-## Make it clear that users talks to a bot
-
-To avoid high expectations, it is advisable to make it clear in the first place that user is talking to a bot, and not a human being. This will help user focus on solving a specific task, and not on the emotional relationship with the bot. The bot should normally support some traditional phrases like greeting and ending a conversation, but not much more than that. Handling general conversation can be implemented using [Project Personality Chat][PersonalityChat], which we will use later in the course to enhance our **GeoFriend** bot.
+To avoid high expectations, you should make it clear upfront that the user is talking to a bot and not a human being. This helps the user focus on solving a specific task, and not engaging the bot on an emotional level. The bot should normally support some traditional phrases like greeting and ending a conversation, but not much more than that. Handling general conversation can be implemented using [Project Personality Chat][PersonalityChat], which we will use later in the course to enhance our **GeoFriend** bot.
 
 ## Build trust
 
-Also, clearly introducing the bot in the beginning of a conversation helps to **build trust** between a user and a bot. Another useful trick would be using an icon that shows a robot icon instead of a human face, which will remind user of whom he/she is talking to.
+Also, clearly introducing the bot in the beginning of a conversation helps to **build trust** between a user and a bot. Another useful trick is to use a robot icon instead of a human face to help remind the user what they're talking to.
 
-Supporting **handoff to a human operator** also helps to build trust, because a user knows that he can get the help from qualified personnel if needed. A common scenario is to use bot dialog to collect initial info from the user, and then involve human operator to take final decision and solve a problem. This we can delegate tedious task to the bot, leaving the most creative part to human operator.
+A bot that supports **handoff to a human operator** also helps to build trust, because the user knows that they can get the help from qualified personnel if needed. A common scenario is to use bot dialog to collect initial user information, and then hand the conversation over to a human to make expert decisions and solve any problems. This structure delegates tedious tasks to the bot and leaves the most creative part to human operator.
 
-One other aspect of building trust is respecting user's privacy. You should follow the best practices for collecting and handling personal information, and collect only information that is relevant to the problem being solved.
+One other aspect of building trust is respecting user's privacy. You should follow the best practices for collecting and handling personal information. Collect only information that is relevant to solving the problem.
 
-### Fairness, Diversity and Accessibility
+## Fairness, diversity and accessibility
 
-Ensuring that AI model acts fairly and does not have any biases is a big problem in AI in general, and it is addressed by [Responsible AI][RespAI] principles. One of the ways to help avoid biases is to include **diversity** on all stages of building a bot, for example, by having team members of different genders and/or nationalities.
+A big problem in AI is to ensure fair and unbiased treatment. This issue is addressed by [Responsible AI][RespAI] principles. One way to help avoid bias is to include **diversity** in all stages of building a bot. For example, by including different genders and nationalities on the development team.
 
-We also may target the bot for diverse audience by supporting different languages. This can be simplified by using [translator cognitive service][TranslatorAPI] for automatic translation of incoming and outgoing messages, and by automatically [detecting a language][LangDetect] that user speaks.
+Bots can also be made accessible to a diverse audience by supporting different languages. This can be simplified by using [translator cognitive service][TranslatorAPI] for automatic translation of incoming and outgoing messages, and by automatically [detecting a language][LangDetect] that user speaks.
 
-In addition to national diversity, there are also important **cultural norms** that we may need to pay attention to. In some cultures, an informal tone would be appropriate for a bot, which others would require more formal communication. Adjusting to appropriate style is a good idea: for example, **personality chat** supports three different conversational styles.
+There are also important **cultural norms** to pay attention to. In some cultures, an informal tone would be appropriate for a bot. In others, more formal communication is required. Adjusting to the appropriate style is a good idea. For example, **personality chat** supports three different conversational styles.
 
-Building **accessibility practices** into a bot may broaden the potential audience. For example, adding **speech support** would make the bot usable by those with vision impairments. It would also make it attractive to the people who would like to avoid typing, for example drivers.
+Building **accessibility practices** into a bot can broaden the potential audience. For example, the inclusion of **speech support** would make the bot usable by visually impaired users. It's also more attractive to users who don't want to type, like drivers.
 
 ## Next steps
 
-Now that we know main principles of building responsible bots, let's try to apply them to building a simple Geography Assistant Bot.
+Now that we know main principles of building responsible bots, let's apply them as we build a simple Geography Assistant Bot.
 
 <!-- Links -->
 
