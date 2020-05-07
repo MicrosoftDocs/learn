@@ -36,6 +36,7 @@ You can stay in your browser on your repository and watch the GitHub Action's pr
 1. Click on the **Actions** menu
 1. Under the Workflows menu, click on the **Azure Static Web Apps CI/CD** workflow item
 1. Select the latest (top) link in the action runs to the right
+1. Click the **Build and Deploy Job** link
 
 You can see the progress of your GitHub Action as it builds and publishes your web app and API.
 
