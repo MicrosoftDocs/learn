@@ -17,7 +17,7 @@ abstract: |
   - Learn the properties of the normal distribution and different bounds.
   - Examine the Central Limit Theorem through simulations and studied some use cases.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/student-evangelism/understand-the-normal-curve.svg
 levels:
 - beginner
 roles:
@@ -33,7 +33,7 @@ units:
 - learn.student-evangelism.understand-the-normal-curve.central-limit-theorem
 - learn.student-evangelism.understand-the-normal-curve.variability-of-the-sample-mean
 - learn.student-evangelism.understand-the-normal-curve.choosing-a-sample-size
-- learn.student-evangelism.understand-the-normal-curve.mini-lab
+- learn.student-evangelism.understand-the-normal-curve.mini-labs
 - learn.student-evangelism.understand-the-normal-curve.summary
 badge:
-  uid: learn.student-evangelism.understand-the-normal-curve.badge
+  uid: learn.understand-the-normal-curve.badge
