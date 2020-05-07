@@ -6,7 +6,7 @@ We'll start by downloading the .NET Core 3.1 SDK, it includes the .NET Core SDK,
 
 1. Install **.NET Core 3.1** by downloading the latest version from https://dotnet.microsoft.com/download/dotnet-core/3.1 for your operating system
 
-![Image showing the Microsoft .NET Core SDK installer](../media/install-sdk.png)
+    ![Image showing the Microsoft .NET Core SDK installer](../media/install-sdk.png)
 
 1. Open a terminal or command prompt on your local development machine 
 
@@ -42,7 +42,7 @@ The JavaScript debugger extension is currently in preview, we'll install the lat
 
 1. Find the **JavaScript Debugger (Nightly)** in the list of **Enabled** extensions
 
-    ![Image showing installed Visual Studio Code extensions in the extension browser with the JavaScript debugger extension highlighted](../media/visuals-studio-code-plugins.png)
+    ![Image showing installed Visual Studio Code extensions in the extension browser with the JavaScript debugger extension highlighted](../media/visual-studio-code-plugins.png)
 
 1. Open the extensions settings by right-clicking on **JavaScript Debugger (Nightly)** and select **Extension Settings**
 

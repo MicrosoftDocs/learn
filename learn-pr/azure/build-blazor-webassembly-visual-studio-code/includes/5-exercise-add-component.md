@@ -24,7 +24,7 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 
 1. Open **calc.razor**
 
-1. Add the @page directive `@page "/compoundinterest"`
+1. Add the `@page` directive `@page "/compoundinterest"`
 
 1. Add an H1 header `<h1>Compound Interest</h1>`
 
