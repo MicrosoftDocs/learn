@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-to-python-using-the-datascience-library.introduction
+title: Programming In Python
+metadata:
+  title: Programming In Python
+  description: Introduction to the introduction to python for datascience module.
+  ms.date: 19/03/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/01-introduction.md)]

@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.student-evangelism.introduction-to-python-using-the-datascience-library
+metadata:
+  title: Introduction To Python Using The Datascience Library
+  description: Learn about Python Expressions, Functions, basic data types(numbers,
+    strings), and comparisons
+  ms.date: 19/03/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Introduction To Python Using The Datascience Library
+summary: Learn about programming and data types in Python
+abstract: |
+  In this module, you will:
+  - Write basic arithmetic expressions and function calls in Python.
+  - Identify the correct data type of each object.
+  - Make and manipulate and different sequences. 
+  - Expose to and work with numerous numpy (np) functions arithmetic operations on arrays.
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- data-scientist
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.setup
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.introduction
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.expressions
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.names
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.growth
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.calls
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.introduction-to-tables
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.data-types
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.numbers
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.strings
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.string-methods
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.comparison
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.sequences
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.ranges
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.mini-labs
+- learn.student-evangelism.introduction-to-python-using-the-datascience-library.summary
+badge:
+  uid: learn.student-evangelism.introduction-to-python-using-the-datascience-library.badge
