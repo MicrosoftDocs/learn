@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.github.github-actions-hello
+metadata:
+  title: "Automate development tasks by using GitHub Actions - Learn"
+  description: Create a basic GitHub Action and use that action in a workflow.
+  ms.date: 05/19/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Automate development tasks by using GitHub Actions"
+summary: Create a basic GitHub Action and use that action in a workflow.
+abstract: |
+  In this module, you will:
+  - Describe GitHub Actions, the types of actions, and where to find them
+  - Plan an automation of your software development life cycle with GitHub Workflows
+  - Create a container action and have it run in a workflow triggered by a push event to your GitHub repository
+prerequisites: |
+  - A [GitHub](https://github.com?azure-portaql=true) account
+  - The ability to navigate and edit files in GitHub
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+units:
+- learn.github.github-actions-hello.1-introduction
+- learn.github.github-actions-hello.2-github-actions-automate-development-tasks
+- learn.github.github-actions-hello.3-exercise-create-container-action
+- learn.github.github-actions-hello.4-knowledge-check
+- learn.github.github-actions-hello.5-summary
+badge:
+  uid: learn.github.github-actions-hello.badge
