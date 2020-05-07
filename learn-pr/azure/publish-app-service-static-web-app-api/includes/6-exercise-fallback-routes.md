@@ -98,4 +98,15 @@ Now save, commit, and push your changes to Git by following these steps:
 
 ### Try the fallback route
 
-The GitHub Actions workflow will build and deploy your app. Once it is redeployed, browse to your app. Notice the URL displays **/products**. Now refresh the browser by pressing <kbd>F5</kbd> to test your fallback route. Your app should reload successfully thanks to your fallback route in your routing rules!
+The GitHub Actions workflow will build and deploy your app.
+
+Go to your repository in your browser and watch the GitHub Action's progress. Follow these steps to view the progress:
+
+1. Click on the **Actions** menu
+1. Under the Workflows menu, click on the **Azure Static Web Apps CI/CD** workflow item
+1. Select the latest (top) link in the action runs to the right
+1. Click the **Build and Deploy Job** link
+
+You can see the progress of your GitHub Action as it builds and publishes your web app and API.
+
+Once it is redeployed, browse to your app. Notice the URL displays **/products**. Now refresh the browser by pressing <kbd>F5</kbd> to test your fallback route. Your app should reload successfully thanks to your fallback route in your routing rules!
