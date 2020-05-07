@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.send-crop-weather-alerts.4-knowledge-check
+title: Knowledge Check - Send Crop Weather Alerts
+metadata:
+  title: Knowledge Check - Send Crop Weather Alerts
+  description: Before we continue, lets check what you have learned so far.
+  author: berndverst
+  ms.author: beverst
+  ms.date: 05/07/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'We can send and receive SMS text messages via which service?'
+    choices:  
+    - content: 'Azure Message Bus'
+      isCorrect: false
+      explanation: Azure Message Bus does handle SMS text messages, but instead data messages between applications.
+    - content: 'Azure Notification Hub'
+      isCorrect: false
+      explanation: Azure Notification Hub handles push notifications to applications.
+    - content: 'Twilio'
+      isCorrect: true
+      explanation: Correct. This third party service can programmatically send and receive SMS text messages.
+    
+  - content: 'Azure Maps allows retrieving of coordinates for a location via which API endpoint?'
+    choices:
+    - content: 'Search - Get Search Address'
+      isCorrect: true
+      explanation: Correct, this endpoint accepts arbitrary locations and normalizes them, providing details including coordinates.
+    - content: 'Location - Normalize'
+      isCorrect: false
+      explanation: This API endpoint does not exist.
+    - content: 'Location - Geocode'
+      isCorrect: false
+      explanation: Even though we are Geocoding, this is not the name of the API endpoint.
