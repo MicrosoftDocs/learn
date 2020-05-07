@@ -54,7 +54,7 @@ There is one ```job``` in this workflow. Let's go over what it does.
 
 The ```runs-on:``` attribute specifies that, for the operating system, the workflow runs on ```ubuntu-latest```. The ```node-version:``` attribute specifies that there will be two builds, one for Node version 10.x and one for Node version 12.x. We'll discuss the ```matrix``` portion in depth later, when we customize the workflow.
 
-The ```steps``` in the job use the GitHub Action [actions/checkout@v2](https://github.com/actions/checkout?azure-portal=true) to get the code from your repository into the VM, and the [actions/setup-node@v1](https://github.com/actions/setup-node?azure-portal=true) action to set up the right version of Node.js. We specify that we're going to test two versions of Node.js with the ```${{ matrix.node-version }}``` attribute. This atttribute points to the matrix we defined at the top of the file.
+The ```steps``` in the job use the GitHub Actions [actions/checkout@v2](https://github.com/actions/checkout?azure-portal=true) action to get the code from your repository into the VM, and the [actions/setup-node@v1](https://github.com/actions/setup-node?azure-portal=true) action to set up the right version of Node.js. We specify that we're going to test two versions of Node.js with the ```${{ matrix.node-version }}``` attribute. This atttribute points to the matrix we defined at the top of the file.
 
 The last part of this step executes commands used by Node.js projects. The ```npm ci``` command installs dependencies from the *package-lock.json* file, ```npm run build --if-present``` runs a build script if it exists, and ```npm test``` runs the testing framework. Notice that this template includes both the build and test steps in the same job.
 

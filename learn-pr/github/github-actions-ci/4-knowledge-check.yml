@@ -26,7 +26,7 @@ quiz:
     - content: "The ```actions/download-artifact``` action"
       isCorrect: false
       explanation: "The ```actions/upload-artifacts``` action allows you yo save an artifact. The ```actions/download-artifact``` action allows you to download a saved artifact."
-  - content: "What are ways that GitHub Actions workflows can NOT be used?"
+  - content: "What is one way that GitHub Actions workflows can NOT be used?"
     choices:
     - content: "To automatically run test suites on each push"
       isCorrect: false

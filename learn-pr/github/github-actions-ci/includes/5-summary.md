@@ -12,8 +12,7 @@ You can now:
 
 ## Next steps
 
-To continue your journey with GitHub Actions, check out the next module on this learning path called .... where you expand on what you have learned here and use GitHub Actions in continuous delivery, and implementing infrastructure as code.
-TODO: put the module name and links here
+To continue your journey with GitHub Actions, check out the next module on this learning path where you expand on what you have learned here and use GitHub Actions in continuous delivery, and implementing infrastructure as code.
 
 ## Learn more
 
@@ -29,8 +28,8 @@ Here are some links to more information on the topics we discussed in this modul
 - [Metadata syntax for GitHub Actions](https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions?azure-portal=true)
 - [Workflow syntax for GitHub Actions](https://help.github.com/actions/reference/workflow-syntax-for-github-actions?azure-portal=true)
 - [Events that trigger workflows](https://help.github.com/articles/events-that-trigger-workflows?azure-portal=true)
--[GitHub Actions usage limits](https://help.github.com/actions/reference/workflow-syntax-for-github-actions#usage-limits?azure-portal=true)
-- [About GitHub Actions: Job]()  https://help.github.com/articles/about-github-actions#job
+- [GitHub Actions usage limits](https://help.github.com/actions/reference/workflow-syntax-for-github-actions#usage-limits?azure-portal=true)
+- [About GitHub Actions: Job](https://help.github.com/articles/about-github-actions#job)
 - [About CI: Job](https://help.github.com/articles/about-continuous-integration#job)
 - [npm install](https://docs.npmjs.com/cli/install?azure-portal=true)
 - [npm run](https://docs.npmjs.com/cli/run-script?azure-portal=true)
