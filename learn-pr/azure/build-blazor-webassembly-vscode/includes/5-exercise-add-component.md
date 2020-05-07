@@ -1,4 +1,4 @@
-In this exercise, we'll add a new Razor page and create the compound interest calculator UI. Open folder for your compound interest project you created in the previous exercise.
+In this exercise, we'll add a new Razor page and create the compound interest calculator UI. Open the folder for the compound interest project you created in the previous exercise.
 
 ## Open the Compound Interest project in VS Code
 
@@ -6,7 +6,7 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 
 1. Open the folder containing your compound interest project within VS Code
 
-1. VS Code may prompt you to install required assets, if so, select yes
+1. VS Code may prompt you to install required assets, if so, select **Yes**
 
 ![Image showing VS Code prompting to install required assets to build and debug](../media/missing-assets-vscode.png)
 
@@ -18,7 +18,7 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 
 1. Right-click on **Pages** and select **New File**
 
-1. Name the new page **Calc.razor**
+1. Name the new page **CompoundInterest.razor**
 
 ## Add the CompoundInterest page to the app navigation
 
@@ -44,18 +44,18 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 
 ### Optional - run the application 
 
-1. In the VS Code terminal `dotnet run`
+1. In the VS Code terminal `dotnet run` to launch the app
 
 1. Open a web browser to http://localhost:5000  
 
 ![Image showing Blazor application running the browser](../media/create-new-component.png)
 
-## Add Hmtl UI 
+## Add HTML UI 
 We'll add html UI for our calculator, specifically a table.  
 
-1. Add a 2x4 html table. 
+1. Add a 2x4 html table
 
-1. Add text in the left column for: **Initial Principal**, **Years**, **Annual Interest Rate** and **Total:**. We'll populate the right column later.
+1. Add text in the left column for: **Initial Principal**, **Years**, **Annual Interest Rate** and **Total:**. We'll populate the right column later
 
     ```cshtml
     <table class="table">
@@ -85,6 +85,6 @@ We'll add html UI for our calculator, specifically a table.
 
 ### Optional - run the application 
 
-1. In the VS Code terminal `dotnet run`
+1. In the VS Code terminal `dotnet run` to launch the app
 
-1. Open a web browser to http://localhost:5000  
+1. Open a web browser to **http://localhost:5000** 

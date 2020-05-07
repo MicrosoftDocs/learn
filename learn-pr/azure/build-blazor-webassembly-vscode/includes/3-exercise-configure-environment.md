@@ -68,9 +68,9 @@ To validate our setup, we'll make a new Blazor WebAssembly client web app using 
 
 ### Optional - run the app
 
-1. In the command prompt or terminal `dotnet run`
+1. From the command prompt or terminal `dotnet run` to launch the app
 
-1. Open a web browser to http://localhost:5000   
+1. Open a web browser to **http://localhost:5000**   
 
 ![Image showing the default Blazor WebAssembly client app running in a browser](../media/hello-blazor.png)
 

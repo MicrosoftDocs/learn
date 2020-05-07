@@ -25,9 +25,3 @@ A .razor file defines components that make up a portion UI of the app. Component
 If you explore the project, you'll see that most files .razor files. 
 
 At compile time, each Razor component is built into a .NET class. The class includes common UI elements such as state, rendering logic, lifecycle methods, and event handlers. 
-
-## Razor directives
-
-Razor Pages are made up of HTML templates mixed with C# code prefixed by @. You can use @expression() to add C# code inline with html. Or embed full code blocks using @code; similar to Razor in MVC or Pages. You can also add an @functions section to the template to add methods and properties that are added at the top of the generated class, which can then be referenced in the document.
-
-The @Page directive identifies this View a as a page and you can specify a route on this directive. This maps to an Attribute route that’s then recognized by the Blazor engine to register and access the page.
