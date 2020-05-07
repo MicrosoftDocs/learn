@@ -4,7 +4,7 @@ To train a classification model, you need a dataset that includes historical *fe
 
 In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a *dataset*.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com), view the **Datasets** page. Datasets represent specific data files or tables that you plan to work with in Azure ML.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Datasets** page. Datasets represent specific data files or tables that you plan to work with in Azure ML.
 2. Create a dataset from web files, using the following settings:
     * **Basic Info**:
         * **Web URL**: https://aka.ms/diabetes-data
@@ -28,7 +28,7 @@ In Azure Machine Learning, data for model training and other operations is usual
 
 To get started with Azure Machine Learning designer, first you must create a pipeline and add the dataset you want to work with.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com) for your workspace, view the **Designer** page and select **+** to create a new pipeline.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, view the **Designer** page and select **+** to create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Diabetes Training** (if the **Settings** pane is not visible, click the **&#9881;** icon next to the pipeline name at the top).
 3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the **aml-cluster** compute target you created previously.
 4. On the left side of the designer, expand the **Datasets** section, and drag the **diabetes-data** dataset you created in the previous exercise onto the canvas.

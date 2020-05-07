@@ -19,7 +19,7 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - A GitHub account
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-devops/deploy-docker.svg
 levels:
 - beginner
 roles:

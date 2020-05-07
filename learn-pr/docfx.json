@@ -85,7 +85,7 @@
                 "dest": "modules"
             },
             {
-                "src": "ccc-commercial-marketplace",
+                "src": "commercial-marketplace",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
