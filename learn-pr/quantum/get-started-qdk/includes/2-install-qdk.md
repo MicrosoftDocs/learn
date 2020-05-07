@@ -44,7 +44,7 @@ To verify the installation, here you create a basic Q# application.
 
 Project templates enable you to more quickly create Q# applications, libraries, and unit tests.
 
-1. On the **View** menu, select **Command Palette**.
+1. In Visual Studio Code, on the **View** menu, select **Command Palette**.
 1. Enter **Q#: Install project templates**.
 
 ### Create a project
@@ -52,16 +52,16 @@ Project templates enable you to more quickly create Q# applications, libraries, 
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create New Project**.
 1. Select **Standalone console application**.
-1. Select a directory to hold your project, such as your home directory. Enter *quantum-hello* as the project name, then select **Create Project**.
+1. Select a directory to hold your project, such as your home directory. Enter *QuantumHello* as the project name, then select **Create Project**.
 1. From the window that appears at the bottom, select **Open new project**.
 1. From the **View** menu, select **Explorer**.
 
-    You see two files: *quantum-hello.csproj* and *Program.qs*.
+    You see two files: *QuantumHello.csproj* and *Program.qs*.
 
     The *.csproj* file defines project settings. *Program.qs* contains a basic Q# program that prints a message to the console.
 
     ```qsharp
-    namespace hello_quantum {
+    namespace QuantumHello {
 
         open Microsoft.Quantum.Canon;
         open Microsoft.Quantum.Intrinsic;

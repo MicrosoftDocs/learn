@@ -1,112 +1,30 @@
-TODO: IDEA: Use the project code to drive discussion of quantum computing. Say how QC is a huge field and this is a basic way to get started.
+Quantum computing is based on quantum mechanics, which describes how subatomic particles move and interact with one another.
 
-In this part, you'll learn how _superposition_ can help you create a quantum random number generator.
+Although there are more formal methods for learning the mathematics and theory behind quantum computing, here we'll define a few basic terms and walk through the structure of a basic Q# program. You'll apply these concepts later as you build your quantum random number generator.
 
-You're likely already familiar with the concept of a random number generator (RNG). An RNG is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code.
+> [!TIP]
+> You'll find resources to help you understand more of the theory behind quantum computing at the end of this module.
 
-On classical computers, most random number generators don't produce truly random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates the same sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
+## What are qubits and superposition?
 
-TODO: First, let's define some terms, then... To help understand TODO, we'll look at the (TODO problem) in three ways: SP, SC, and the BS.
+Qubits and superposition are fundamental to quantum computing.
 
-## What is a qubit?
+A _qubit_ (quantum bit) is a basic unit of quantum information, analogous to a bit in classical computing.
 
-TODO: A basic unit of quantum information, analogous to a bit in classical computing. For more information, see The Qubit.
+While a bit, or binary digit, can have a value of either zero or one, a qubit can have a value that's either of these or a quantum _superposition_ of zero and one.
 
-## What is superposition?
+Think of superposition as a combination of both zero and one states, with some probability of being zero or one when measured. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from being in superposition to one of the classical states.
 
-The concept in quantum computing that a qubit is a linear combination of two states, $\ket{\0}$ and $\ket{\1}$, until it is measured. For more information, see What is quantum computing.
+## What's in a Q# program?
 
-## What is Schrödinger's cat?
+Here's the Q# program that you ran in the previous part:
 
-One of the most direct applications of quantum devices is the generation of
-verified random numbers. We can perform measurements on quantum systems to
-obtain pure random values.
-
-![A conceptual image of Schrodinger's cat](../media/cat.png) 
-
-In Schrödinger's cat thought experiment, if we open the box to check if the cat
-is dead or alive, the quantum state of the cat randomly collapses into one of
-the two classical states. Since the state of the cat can be encoded with a
-single bit (0 -> Alive, 1 -> Dead), when we open the box we're generating a
-random bit.
-
-We can encode any random integer or float into a bit-string, depending on the
-number of decimals and size of our number. Therefore, to generate pure random
-numbers we just need to generate many pure random bits.
-
-In real life, cats can't be put in a quantum superposition (and of course we
-don't want to possibly kill many cats to generate a random number). However, the
-basic elements of quantum computers, the qubits, can be driven to a quantum
-superposition and measured like when we open the cat's box.
-
-## What is the Bloch sphere?
-
-(Was: Understand the Q# operation with the Bloch sphere)
-
-Let's illustrate how to obtain a random bit with a qubit in a quantum computer
-using the Bloch sphere.
-
-In the Bloch sphere, the north pole represents the classical value **0** and the
-south pole represents the classical value **1**. Any superposition can be
-represented by a point on the sphere (represented by an arrow). The closer the
-end of the arrow to a pole the higher the probability the qubit collapses into
-the classical value assigned to that pole when measured. For example, the qubit
-state represented by the red arrow below has a higher probability of giving the
-value **0** if we measure it.
-
-:::img src="../media/qrng-Bloch.png" width="175" alt="A qubit state with a high
-probability of measuring zero":::
-
-The steps to follow in a quantum program to obtain a random bit are the
-following:
-
-* First we start with a qubit initialized in the state **0** and apply `H` to
-  create a superposition in which the probabilities for **0** and **1** are the
-  same.
-
-:::img src="../media/qrng-H.png" width="450" alt="Preparing a qubit in
-superposition":::
-
-* Then we measure the qubit and save the output:
-
-:::img src="../media/qrng-meas.png" width="450" alt="Measuring a qubit and saving
-the output":::
-
-Since the outcome of the measurement is completely random, we have obtained a
-random bit. We can call this operation several times to create integers. For
-example, if we call the operation three times to obtain three random bits, we
-can build random 3-bit numbers (that is, a random number between 0 and 7).
-
-## What are quantum operations?
-
-The basic unit of quantum execution in Q#. It is roughly equivalent to a function in C, C++ or Python, or a static method in C# or Java. For more information, see Operation and function types.
-
-### What is the Hadamard operation?
-
-The Hadamard operation (also referred to as the Hadamard gate or transform) acts on a single qubit and puts it in an even superposition of $\ket{0}$ or $\ket{1}$ if the qubit is initially in the $\ket{0}$ state. In Q#, this operation is applied by the pre-defined H operation.
-
----
-
-In the next unit, we will put all these together into code.
-
----
-
-TODO: Possibly use this to drive the discussion:
-
-### Use the template to write your program
-
-From the several files created in the `Qrng` folder we are interested in the one
-called `Program.qs`. We can change the name to something more informative. In
-our case let's rename the file to `my-random-bit.qs`. The Q# programming
-language uses its own file format `*.qs`. This file is where the Q# code is
-written to express the instructions for the quantum computer. Your
-`my-random-bit.qs` file should look like something similar to this:
 ```qsharp
-namespace Qrng {
+namespace HelloQuantum {
 
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
-    
+
 
     @EntryPoint()
     operation HelloQ() : Unit {
@@ -115,152 +33,81 @@ namespace Qrng {
 }
 ```
 
-There are several important things in this file so let's go by parts.
+Let's explore how each piece fits within the overall program.
 
-#### Set a namespace
+### Namespaces
 
-In every Q# file we need a `namespace`. In the namespaces we can add quantum
-operations that will be used by the compiler. In our case the template named
-the namespace automatically `Qrng`.
+Every Q# file typically starts with a namespace. Here's an example:
 
 ```qsharp
-namespace Qrng {
-
-// ...
-// stuff
-// ...
-
+namespace HelloQuantum {
+    // Your code goes here.
 }
 ```
 
-#### Open the libraries
+Namespaces help you organize related functionality. They also help you clarify the functionality you intend when you have more than one function or operation with the same name.
 
-Q# is a modular programming language that makes extensive use of libraries. For
-example, there's a Quantum Chemistry library to do quantum chemistry
-calculations or a Quantum Numerics library to exploit quantum computing to
-perform numerical calculations. There are several standard libraries that
-include all sorts of basic operations. The template automatically opens
-the `Microsoft.Quantum.Canon` and `Microsoft.Quantum.Intrinsic` libraries that
-include the most basic operations of Q#.
+For example, say you define a quantum operation named `MyQuantumOperation`, which appears in two namespaces: `Math` and `Physics`. `MyQuantumOperation` might be implemented differently within each namespace.
+
+`Math.MyQuantumOperation` refers to the version of `MyQuantumOperation` from the `Math` namespace. Similarly, `Physics.MyQuantumOperation` refers to the version of `MyQuantumOperation` from the `Physics` namespace.
+
+### Libraries
+
+Q# makes extensive use of libraries. A library is a package that contains functions and operations that you can use in quantum programs.
+
+For example, the [Microsoft.Quantum.Chemistry](/qsharp/api/qsharp/microsoft.quantum.chemistry?azure-portal=true) library helps you perform quantum calculations that relate to chemistry. There are several standard libraries that include all sorts of basic operations.
+
+To use a library in your program, you use the `open` directive. Here's an example that includes the `Canon` and `Intrinsic` libraries:
+
 ```qsharp
-namespace Qrng {
+namespace HelloQuantum {
+
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
 
-// ...
-// stuff
-// ...
-
+    // Your code goes here.
 }
 ```
 
-For our program `my-random-bit.qs` we just need and additional library,
-`Microsoft.Quantum.Measurement` that contains the `MResetZ(q)` operation. To 
-open it we just need to add it to the list with the `open` directive:
+The `Microsoft.Quantum.Canon` library provides the most basic operations of Q#.
+
+The `Microsoft.Quantum.Intrinsic` library provides common operations that you can perform on qubits. It also provides the `Message` function, which you used in the previous part of print a message to the console.
+
+### Operations
+
+Operations are the basic building blocks of a Q# program. A Q# operation is a quantum subroutine. That is, it's a callable routine that contains quantum operations. You can think of an operation as you would a function in C, C++ or Python, or a static method in C# or Java.
+
+To define a Q# operation, you specify a name for the operation along with its inputs and its output. Here's a basic example:
+
 ```qsharp
-namespace Qrng {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Measurement;
-
-// ...
-// stuff
-// ...
-
+@EntryPoint()
+operation HelloQ() : Unit {
+    Message("Hello quantum world!");
 }
 ```
-#### Create the quantum operation
 
-Operations are the basic building blocks of a Q# program. They are a set of instructions for the quantum computer to manipulate the qubit register in a specific way. To declare a Q# operation we need to specify a name for the operation and the
-input and output format. In the template the operation is:
+Here, `HelloQ` is the name of the operation. It takes zero arguments as its input and returns type `Unit`. The value of the `Unit` type is always `()`, which means that the operation returns no information.
+
+Q# provides a number of built-in types you're already familiar with, including `Int`, `Double`, `Bool`, and `String`, along with types that are specific to quantum computing. Q# also provides types that define ranges, arrays, and tuples. You can even define your own custom types.
+
+In this module, you'll work with the `Result` type. A `Result` represents the result of a qubit measurement and can have two possible values: `One` and `Zero`.
+
+`EntryPoint` tells the Q# compiler that this is where to begin execution of the program. You can think of the entry point as you would the `main` function in C++ or the `Main` method in C#.
+
+Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation, which applies what's called the Hadamard transformation to a single qubit. Think of the Hadamard transformation as a way of putting a qubit into superposition. Once in superposition, a qubit has a 50% chance of being measured as zero or one.
+
+### Allocating qubits
+
+In Q#, to obtain a qubit you use the `using` keyword. You can allocate one or many qubits at a time.
+
+Here's an example that allocates one qubit:
+
 ```qsharp
-    operation HelloQ() : Unit {
-        Message("Hello quantum world!");
-    }
-```
-that just prints the message "Hello quantum world!". We can overwrite the
-default operation with our operation. We will call the operation
-`GenerateRandomBit`. It has no input and it outputs a `Result`. A `Result` in Q#
-is a type that represents the result of a measurement and can have two possible
-values: `One` and `Zero`. 
-
-```qsharp
-namespace Qrng {
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Measurement;
-
-
-    @EntryPoint()
-    operation GenerateRandomBit() : Result {
-    }
+using (q = Qubit()) { // Allocate a qubit.
+    // Do something with q here.
 }
 ```
-The line `@EntryPoint()` is just a pointer that the Q# compiler will use to know
-where to start executing operations. Now that we have declared the operation we
-can write its content:
 
-```qsharp
-namespace Qrng {
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Measurement;
+Every qubit you allocate with the `using` keyword starts in the zero state.
 
-
-    @EntryPoint()
-    operation GenerateRandomBit() : Result {
-        using (q = Qubit())  {  // Allocate a qubit.
-            H(q);               // Put the qubit to superposition. It now has a 50% chance of being measured 0 or 1.
-            return MResetZ(q);  // Measure the qubit value.
-        }
-    }
-}
-```
-Save the file (you can right click on the `my-random-bit.qs` file in the
-explorer and click on "Save" in the contextual menu).
-
-Let's comment here what each command is doing:
-
-1. In Q#, to obtain a qubit we need to "ask" the computer for them with the
-   block `using` in which we specify how many qubits we need and its name. In
-   our case we just need one qubit. Every qubit we borrow with the command
-   `using` starts by default in the `0` state.
-2. We can put our qubit in a quantum superposition by applying the `H()`
-   operation from the Intrinsic library. We only need to specify the target
-   qubit inside the brackets.
-3. After throwing our qubit in a quantum superposition we can measure the state.
-   In Q#, at the end of every operation, we need to make sure that any used
-   qubit is initialized back to the state `0`. We can do both operations with an
-   `MResetZ` operation from the Intrinsic library. Alternatively, you can use an
-   `M()`  operation followed by a `Reset()` operation from the Intrinsic
-   library.
-4. We return the result of our measurement, which is a random bit.
-
-That's it! We have now a quantum program that takes a qubit, throws it into a
-superposition, measures it and returns a random bit whose value depends on the
-measurement result.
-
-## Execute the Q# program
-
-Ok, you have created a Q# quantum program, how do we execute it? The Q# program
-allows us to communicate bidirectionally with the quantum computer by
-manipulating the qubits and reading the measurements. 
-
-The executable will run the operation or function marked with the
-`@EntryPoint()` attribute on a simulator, resource estimator, depending on the
-project configuration and command-line options.
-
-In VS Code terminal, build the `my-random-bit.qs` the first time by typing the
-below in the terminal: 
-```
-dotnet build
-```
-For subsequent runs, no need to build it again:
-```
-dotnet run --no-build
-```
-Pressing enter you should obtain the result of your measurement, either `Zero`
-or `One` and therefore your quantum bit. 
-
-In the next unit you are going to explore how to create a complete random
-number generator using the classical logic of Q#.
+With these ideas in place, let's dive in and start building our random number generator. You'll start by defining an operation that produces a single random bit.

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.get-started-qdk.3-approach-quantum-programs
-title: How do I approach writing quantum programs?
+uid: learn.quantum.get-started-qdk.3-quantum-program-structure
+title: How are Q# programs structured?
 metadata:
-  title: How do I approach writing quantum programs?
+  title: How are Q# programs structured?
   description: TBD
   ms.date: 05/19/2020
   author: geduardo

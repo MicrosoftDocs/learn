@@ -1,6 +1,10 @@
-Now that you understand some of the basics, it's your turn to build a quantum random number generator (RNG).
+Now that you understand some of the basics, it's your turn to build a quantum random number generator.
 
-The quantum RNG uses a Hadamard operation to put a qubit into superposition. The measurement results in a zero or a one. But how can we use this behavior to generate larger numbers?
+You're likely already familiar with the concept of a random number generator. A random number generator is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code.
+
+On classical computers, most random number generators don't produce truly random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates the same sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
+
+The quantum random number generator uses a Hadamard (`H`) operation to put a qubit into superposition. The measurement results in a zero or a one. But how can we use this behavior to generate larger numbers?
 
 Let's say you repeat the process four times, generating this sequence of binary digits:
 
@@ -10,16 +14,16 @@ If you concatenate, or combine, these bits into a bit string, you can form a lar
 
 $${0110_{\ binary} \equiv 6_{\ decimal}}$$
 
-You'll build out your quantum RNG in two phases. In this part, you build out the first phase, which is to generate a single random bit.
+You'll build out your quantum random number generator in two phases. In this part, you build out the first phase, which is to generate a single random bit.
 
 To do so, you:
 
 > [!div class="checklist"]
 > * Create a Q# project.
-> * Add code that uses the Hadamard operation to put a qubit into superposition and read its value.
+> * Add code that uses the `H` operation to put a qubit into superposition and then measure its value.
 > * Run the program.
 
-In the next part, you build out the second phase, which combines bits to form a larger number.
+In the next part, you build out the second phase, which combines random bits to form a larger number.
 
 ## Create the Q# project
 
@@ -28,7 +32,7 @@ Here, you create a Q# project just like you did earlier.
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create New Project**.
 1. Select **Standalone console application**.
-1. Select a directory to hold your project, such as your home directory. Enter *quantum-rng* as the project name, then select **Create Project**.
+1. Select a directory to hold your project, such as your home directory. Enter *QuantumRNG* as the project name, then select **Create Project**.
 1. From the window that appears at the bottom, select **Open new project**.
 
     Like before, you see two files: the project file and *Program.qs*, which contains starter code.
@@ -39,16 +43,16 @@ To measure a qubit, you use the [M](/qsharp/api/qsharp/microsoft.quantum.intrins
 
 To simplify the process, you can use the [MResetZ](/qsharp/api/qsharp/microsoft.quantum.measurement.mresetz) operation. This operation combines `M` and `Reset` as one operation.
 
-The `Microsoft.Quantum.Measurement` library provides the `MResetZ` operation. Let's ensure that library is referenced now.
+The `Microsoft.Quantum.Measurement` library provides the `MResetZ` operation. Let's add that library now.
 
 1. In Visual Studio, open *Program.qs*.
 1. Near the top of the file, add this `open` directive:
 
-    TODO: open Microsoft.Quantum.Measurement;
+    [!code-qsharp[](code/4-Program-1.qs?highlight=5)]
 
-## TODO: Create the quantum operation
+## Define the GenerateRandomBit operation
 
-Recall that in the *quantum-hello* program, you defined the `HelloQ` operation like this:
+Recall that in the *QuantumHello* program, you defined the `HelloQ` operation like this:
 
 ```qsharp
 operation HelloQ() : Unit {
@@ -58,81 +62,37 @@ operation HelloQ() : Unit {
 
 Here, you define the `GenerateRandomBit` operation. This operation takes no input and produces a value of type `Result`. The `Result` type represents the result of a measurement and can have two possible values: `Zero` and `One`.
 
-TODO: Remember to put this in a file and highlight. Update NS.
-
 To define the operation:
 
 1. Replace the contents of *Program.qs* with this:
 
-    ```qsharp
-    namespace Qrng {
-        open Microsoft.Quantum.Intrinsic;
-        open Microsoft.Quantum.Canon;
-        open Microsoft.Quantum.Measurement;
-    
-    
-        @EntryPoint()
-        operation GenerateRandomBit() : Result {
-        }
-    }
-    ```
+    [!code-qsharp[](code/4-Program-2.qs?highlight=7-9)]
 
-    Recall that `@EntryPoint` tells the Q# compiler that this is where to begin execution of the program.
+    Recall that `EntryPoint` tells the Q# compiler that this is where to begin execution of the program.
 
 1. Add this code to the `GenerateRandomBit` operation:
 
-    TODO:
+    [!code-qsharp[](code/4-Program-3.qs?highlight=9-15)]
 
-    ```qsharp
-    namespace Qrng {
-        open Microsoft.Quantum.Intrinsic;
-        open Microsoft.Quantum.Canon;
-        open Microsoft.Quantum.Measurement;
-    
-    
-        @EntryPoint()
-        operation GenerateRandomBit() : Result {
-            using (q = Qubit())  {  // Allocate a qubit.
-                H(q);               // Put the qubit to superposition. It now has a 50% chance of being measured 0 or 1.
-                return MResetZ(q);  // Measure the qubit value.
-            }
-        }
-    }
-    ```
+    Recall that you allocate qubits through the `using` keyword.
 
-    TODO: The `using` directive XXX.
-    H ...
-    MResetZ ... and returns
-
-    1. In Q#, to obtain a qubit we need to "ask" the computer for them with the
-       block `using` in which we specify how many qubits we need and its name. In
-       our case we just need one qubit. Every qubit we borrow with the command
-       `using` starts by default in the `0` state.
-    2. We can put our qubit in a quantum superposition by applying the `H()`
-       operation from the Intrinsic library. We only need to specify the target
-       qubit inside the brackets.
-    3. After throwing our qubit in a quantum superposition we can measure the state.
-       In Q#, at the end of every operation, we need to make sure that any used
-       qubit is initialized back to the state `0`. We can do both operations with an
-       `MResetZ` operation from the Intrinsic library. Alternatively, you can use an
-       `M()`  operation followed by a `Reset()` operation from the Intrinsic
-       library.
-    4. We return the result of our measurement, which is a random bit.
+    The `H` operation places the qubit in superposition. The `MResetZ` operation measures the qubit, resets the qubit to the zero state, and returns the measured value (a zero or a one).
 
 ## Run the program
 
-TODO: Let's try it out!
+Let's try out your random bit generator. To do so:
 
-1. In Visual Studio Code, go to the terminal. If you closed it, from the **View** menu, select **Terminal** or **Integrated Terminal**.
+1. In Visual Studio Code, go to the terminal. If you closed the terminal, on the **View** menu, select **Terminal** or **Integrated Terminal**.
 1. Run `dotnet run`.
 
     ```bash
     dotnet run
     ```
-1. TODO: YOU SEE:
+
+    You see either "Zero" or "One" in the output. Here's an example:
 
     ```output
-    Hello quantum world!
+    Zero
     ```
 1. Run the program again. This time, you can skip the build phase by using the `--no-build` flag.
 
@@ -140,10 +100,12 @@ TODO: Let's try it out!
     dotnet run --no-build
     ```
 
-    TODO: YOU SEE:
+    Again, you see either "Zero" or "One" in the output:
 
     ```output
-    Hello quantum world!
+    One
     ```
 
-Next, you'll implement the second phase of your quantum RNG: combining multiple random bits to form a larger number. Leave your project open in Visual Studio Code for the next part.
+Next, you'll implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number.
+
+Leave your project open in Visual Studio Code for the next part.

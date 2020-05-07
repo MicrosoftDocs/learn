@@ -2,7 +2,7 @@ The QDK is a perfect way to experiment with and verify your quantum algorithms b
 
 Keep in mind that the programs you ran here use a _simulator_ to mimic quantum behavior. When you're ready to run your programs on real quantum hardware, there's Azure Quantum, a quantum computing service that runs on Azure.
 
-Azure Quantum is not yet generally available to run compute jobs, but here's a preview of what to expect.
+Azure Quantum is not yet generally available for running compute jobs, but here's a preview of what to expect.
 
 ## What's included on Azure Quantum?
 
@@ -60,4 +60,4 @@ Azure Quantum provides information about the state of your job and its execution
 
 Each provider may have different billing plans and methods available. While you may only select a single billing plan for a specific provider in a single workspace, you can deploy to multiple workspaces within your Azure subscription.
 
-![Quantum Execution](../media/quantum-execution-info.PNG)
+![Quantum Execution](../media/quantum-execution-info.png)
