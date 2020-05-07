@@ -6,15 +6,15 @@ Developers write the application as functions. Typically, these functions are st
 
 You should consider using Azure Functions for IoT solutions based on the following criteria.
 
-#### Business considerations
+## Business considerations
 
 The key business considerations for using Azure function for IoT are to create scalable applications where you're charged only for the resources you use. Your solution can scale up or down dynamically and instantly depending on the business requirements. You don't have to manage the infrastructure and to allocate the resources in advance. Other business criteria include faster time to market, the flexibility to use multiple programming languages.  
 
-#### Considerations for IoT
+## Considerations for IoT
 
 Internet of Things solutions are typically event driven that is, you need to define a specific trigger that causes the function to run. If your IoT solution could potentially scale from a small number of devices to millions of devices – you should consider Azure Functions. Similarly, if your solution could see spikes of events to millions of events, you should consider Azure functions. 
 
-#### Best practice guidelines for Azure functions
+## Best practice guidelines for Azure Functions
 
 You should follow the guidelines in using Azure functions.
 

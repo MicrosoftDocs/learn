@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-hub
 durationInMinutes: 8 # dummy number at present
 content: |
-  [!include[](includes/4-when-use-azure-functions-iot.md)]
+  [!include[](includes/4-when-use.md)]

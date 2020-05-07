@@ -4,6 +4,4 @@ Suppose you work in a factory producing electrical appliances as a supervisor on
 
 ![scenario image](../media/scenario.jpg)
 
-
-
 In this module, you'll learn how Azure Functions work to manage scenarios like these. You'll understand how you can use Azure Functions to implement business logic with IoT devices. After completing this module, you'll be able to evaluate the role of Azure Functions for IoT solutions. 
