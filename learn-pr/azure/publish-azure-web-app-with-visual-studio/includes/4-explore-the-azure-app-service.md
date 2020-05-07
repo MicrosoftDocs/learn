@@ -4,7 +4,7 @@ Here, we look at how to use Visual Studio to publish your ASP.NET Core web appli
 
 ## What is the Azure App Service?
 
-Azure App Service is a service for hosting web applications, REST APIs, and backend services. App Service supports code written in .NET, .NET Core, Java, Ruby, Node.js, PHP, and Python. App Service is ideal for most websites, particularly if you don't need a lot of control over the hosting infrastructure.
+Azure App Service is a service for hosting web applications, REST APIs, and backend services. App Service supports code written in .NET, .NET Core, Java, Ruby, Node.js, PHP, and Python. App Service is ideal for most websites, particularly if you don't need tight control over the hosting infrastructure.
 
 ## What is the App Service plan?
 
@@ -27,9 +27,9 @@ When creating an App Service plan, you have to define a region or location where
 
 ## Pricing and reliability levels
 
-**Shared compute**: **Free** and **Shared**, the two base tiers, run an app on the same Azure VM as other App Service apps, including apps of other customers. These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources cannot scale out.
+**Shared compute**: **Free** and **Shared**, the two base tiers, run an app on the same Azure VM as other App Service apps, including apps of other customers. These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources cannot scale-out.
 
-Free and Shared plans are best for small-scale personal projects with very limited traffic demands, with a set limit of 165 MB of outbound data every 24 hours.
+Free and Shared plans are best for small-scale personal projects with limited traffic demands, with a set limit of 165 MB of outbound data every 24 hours.
 
 **Dedicated compute**: The **Basic, Standard, Premium, and Premium V2** tiers run apps on dedicated Azure VMs. Only apps in the same App Service plan share the same compute resources. The higher the tier, the more VM instances are available to you for scale out.
 

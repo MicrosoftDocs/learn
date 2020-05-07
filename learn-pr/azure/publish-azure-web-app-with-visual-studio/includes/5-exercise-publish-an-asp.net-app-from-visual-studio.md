@@ -6,7 +6,7 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
 1. In the dialog box that appears, on the left, choose **App Service** as your publish target. 
 
-1. Under **Azure App Service** select **Create New**.
+1. Under **Azure App Service**, select **Create New**.
 
 1. Click the **Create profile** button to continue.
 
@@ -32,7 +32,7 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
 1. Click the **Create** button to publish your application, this will take several seconds.
 
-1. After several sections the dialog window will disappear. Press the **Publish** button to publish to Azure.
+1. After several seconds, the dialog window will disappear. Press the **Publish** button to publish to Azure.
 
 1. Congratulations, your ASP.NET Core web application is now published and live. The final URL for your site in the build output and also on the publishing page in Visual Studio.
 

@@ -2,7 +2,7 @@ The first step in getting your new site ready is to prepare your development env
 
 ## Configure your Development environment
 
-We'll need to install additional tools within Visual Studio to build, debug and deploy ASP.NET Core web applications to Azure. To do this, we'll install two Visual Studio *workloads*.
+We'll need to install additional tools within Visual Studio to build, debug, and deploy ASP.NET Core web applications to Azure. To do this, we'll install two Visual Studio *workloads*.
 
 ### What are Visual Studio workloads?
 
@@ -12,7 +12,7 @@ For example, the *Desktop development with C++* workload includes Visual Studio 
 
 ### Visual Studio workloads for ASP.NET Core development and publishing
 
-Visual Studio 2019 has two workloads that you need to create, publish, and deploy your website to Azure. These workloads include all of the templates for your ASP.NET Core site and provides the ability to connect and deploy your site to Azure.
+Visual Studio 2019 has two workloads that you need to create, publish, and deploy your website to Azure. These workloads include the templates for your ASP.NET Core site and provides the ability to connect and deploy your site to Azure.
 
 With Visual Studio 2019 installed, you need to make sure you have the following Visual Studio workloads installed:
 
@@ -34,6 +34,6 @@ You use the Visual Studio Installer to modify the components installed as part o
 
 1. When the install completes, click **Launch** to open Visual Studio.
 
-Workloads are added to your local Visual Studio installation and only need to installed once. You can launch the Visual Studio Installer in the future to add additional workloads, customize installed workloads or remove them.
+Workloads are added to your local Visual Studio installation and only need to be installed once. You can launch the Visual Studio Installer in the future to add additional workloads, customize installed workloads, or remove them.
 
-To complete the exercises in this module you'll need the **ASP.NET and web development** and **Azure development** workloads installed. If you haven't already, install these workloads before moving onto the next exercise.
+To complete the exercises in this module, you'll need the **ASP.NET and web development** and **Azure development** workloads installed. If you haven't already, install these workloads before moving onto the next exercise.
