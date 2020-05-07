@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.advocates.custom-vision-classify-bird-species
+uid: learn.advocates.cv-classify-bird-species
 metadata:
   title: Classify endangered bird species with Custom Vision
   description: Learn how to use Azure Cognitive Services Custom Vision to build a machine learning model that identifies the species of a bird in an image, to help with gathering data.
@@ -33,12 +33,12 @@ products:
   - azure
   - azure-cognitive-services
 units:
-  - learn.advocates.custom-vision-classify-bird-species.1-introduction
-  - learn.advocates.custom-vision-classify-bird-species.2-machine-learning-process
-  - learn.advocates.custom-vision-classify-bird-species.3-build-model
-  - learn.advocates.custom-vision-classify-bird-species.4-understand-results-test
-  - learn.advocates.custom-vision-classify-bird-species.5-deploy-model
-  - learn.advocates.custom-vision-classify-bird-species.6-knowledge-check
-  - learn.advocates.custom-vision-classify-bird-species.7-summary
+  - learn.advocates.cv-classify-bird-species.1-introduction
+  - learn.advocates.cv-classify-bird-species.2-machine-learning-process
+  - learn.advocates.cv-classify-bird-species.3-build-model
+  - learn.advocates.cv-classify-bird-species.4-understand-results-test
+  - learn.advocates.cv-classify-bird-species.5-deploy-model
+  - learn.advocates.cv-classify-bird-species.6-knowledge-check
+  - learn.advocates.cv-classify-bird-species.7-summary
 badge:
-  uid: learn.advocates.custom-vision-classify-bird-species.badge
+  uid: learn.advocates.cv-classify-bird-species.badge
