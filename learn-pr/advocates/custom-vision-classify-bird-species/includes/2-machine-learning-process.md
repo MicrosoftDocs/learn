@@ -16,7 +16,7 @@ When we build a model, we are trying to mimic human intelligence. We use data as
 
 Azure Cognitive Services Custom Vision uses *transfer learning*. Transfer learning is the ability to use prior knowledge to better solve the current problem. As humans, we do this all the time. We are discovering new ways to do this with computers, too. 
 
-The way transfer learning works with the Custom Vision service in Azure is to add a layer in the neural network that is a pretrained model. Tha trained model gives us a head start when we train new data. It starts with a general-knowledge domain, and then new layers are added to the neural network to solve a specific problem. In this case, the problem we want to solve is how to identify birds. By starting with a pretrained model, we can get better results with adding less data.
+The way transfer learning works with the Custom Vision service in Azure is to add a layer in the neural network that is a pretrained model. The trained model gives us a head start when we train new data. It starts with a general-knowledge domain, and then new layers are added to the neural network to solve a specific problem. In this case, the problem we want to solve is how to identify birds. By starting with a pretrained model, we can get better results with adding less data.
 
 ## The model building process
 
