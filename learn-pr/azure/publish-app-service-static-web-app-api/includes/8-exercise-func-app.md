@@ -75,8 +75,8 @@ Configure your function:
 1. Open the file _api/products-get/function.json_
 1. Notice the methods allow both `GET` and `POST`
 1. Change the methods array to only allow `GET` requests
-1. Go to the `bindings` section's `req` properties
-1. Add a `route: "products"` entry
+1. Go to the `bindings` section for `"name": "req"`
+1. Add a `"route": "products"` entry
 
 Now your function is triggered on an HTTP `GET` request to **products**. Your _function.json_ should look like the following code:
 
