@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.get-started-qdk.3-quantum-program-structure
+uid: learn.quantum.get-started-qdk.3-qsharp-structure
 title: How are Q# programs structured?
 metadata:
   title: How are Q# programs structured?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-approach-quantum-programs.md)]
+  [!include[](includes/3-qsharp-structure.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.azure-quantum-intro.2-what-is-azure-quantum
+uid: learn.quantum.azure-quantum-intro.6-what-is-azure-quantum
 title: What is Azure Quantum?
 metadata:
   title: What is Azure Quantum?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-what-is-azure-quantum.md)]
+  [!include[](includes/6-what-is-azure-quantum.md)]

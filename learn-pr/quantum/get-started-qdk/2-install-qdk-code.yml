@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.get-started-qdk.2-install-qdk
+uid: learn.quantum.get-started-qdk.2-install-qdk-code
 title: Exercise - Install the QDK for Visual Studio Code
 metadata:
   title: Exercise - Install the QDK for Visual Studio Code
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-install-qdk.md)]
+  [!include[](includes/2-install-qdk-code.md)]
