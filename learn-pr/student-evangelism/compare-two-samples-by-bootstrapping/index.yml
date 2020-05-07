@@ -4,8 +4,8 @@ metadata:
   title: Compare Two Samples By Bootstrapping
   description: Learn how to test hypothesis about samples using bootstrapping
   ms.date: 19/03/2020
-  author: sauravmittal
-  ms.author: leescott
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: azure
 title: Compare Two Samples By Bootstrapping
@@ -26,6 +26,7 @@ roles:
 products:
 - azure
 units:
+- learn.student-evangelism.compare-two-samples-by-bootstrapping.setup
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.introduction
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.deflategate
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.causality
@@ -34,6 +35,7 @@ units:
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.bootstrap
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.confidence-intervals
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.using-confidence-intervals
+- learn.student-evangelism.compare-two-samples-by-bootstrapping.mini-lab
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.summary
 badge:
   uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.badge
