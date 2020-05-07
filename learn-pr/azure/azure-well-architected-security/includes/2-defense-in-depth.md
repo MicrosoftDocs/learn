@@ -8,11 +8,7 @@ With most users now accessing applications and data from the Internet, and many 
 
 This model has forced security researchers, engineers, and architects to rethink the approach applied to security where we use a layered strategy to protect our resources called *defense in depth*.
 
-### Defense in depth
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWjTfZ]
-
-## A layered approach to security
+## Defense in depth: A layered approach to security
 
 *Defense in depth* is a strategy that employs a series of mechanisms to slow the advance of an attack aimed at acquiring unauthorized access to information. Each layer provides protection so that if one layer is breached, a subsequent layer is already in place to prevent further exposure. Microsoft applies a layered approach to security, both in our physical datacenters and across Azure services. The objective of defense in depth is to protect and prevent information from being stolen by individuals not authorized to access it. The common principles used to define a security posture are confidentiality, integrity, and availability, known collectively as CIA.
 
