@@ -5,8 +5,8 @@ metadata:
   title: Functions And Tables
   description: Introduction to Tables in Python using the datascience package
   ms.date: 03/12/2020
-  author: sauravmittal
-  ms.author: n/a
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: n/a
 durationInMinutes: 5

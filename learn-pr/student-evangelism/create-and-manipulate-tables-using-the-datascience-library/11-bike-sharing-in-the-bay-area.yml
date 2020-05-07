@@ -5,8 +5,8 @@ metadata:
   title: Bike Sharing In The Bay Area
   description: Example of joining tables using bike-sharing data
   ms.date: 03/12/2020
-  author: sauravmittal
-  ms.author: n/a
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: n/a
 durationInMinutes: 5

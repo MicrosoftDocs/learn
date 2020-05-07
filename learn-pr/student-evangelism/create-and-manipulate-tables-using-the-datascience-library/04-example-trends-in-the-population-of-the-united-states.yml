@@ -5,8 +5,8 @@ metadata:
   title: Example Trends In The Population Of The United States
   description: Using Python names to calculate growth rates
   ms.date: 03/12/20
-  author: sauravmittal
-  ms.author: n/a
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: n/a
 durationInMinutes: 5

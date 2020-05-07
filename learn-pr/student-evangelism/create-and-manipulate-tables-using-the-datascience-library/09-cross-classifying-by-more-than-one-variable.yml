@@ -5,8 +5,8 @@ metadata:
   title: Cross Classifying By More Than One Variable
   description: Using multiple variables in the group method with an example
   ms.date: 03/12/2020
-  author: sauravmittal
-  ms.author: n/a
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: n/a
 durationInMinutes: 5

@@ -5,10 +5,10 @@ metadata:
   title: Introduction
   description: Learn the basics of table manipulation in the datascience library
   ms.date: 03/12/2020
-  author: kvah
+  author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: Azure
 durationInMinutes: 5
-content: |
+content: |-
   [!include[](includes/01-introduction.md)]

@@ -1,3 +1,10 @@
+### Note: You can find an interactive version of this unit named **example-gender-ratio-in-the-us-population.ipynb** in your virtual environment
+
+### If you haven't set up your online Virtual Studio Code environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+
+### Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking" target="_blank" rel="noopener">Visual Studio Online</a>
+
+
 ``` {.python}
 from datascience import *
 import numpy as np

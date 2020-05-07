@@ -2,9 +2,9 @@
 uid: learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library
 metadata:
   title: Create and Manipulate Tables Using the datascience Library
-  description: Learn 
+  description: Learn
   ms.date: 03/12/2020
-  author: kvah
+  author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: azure
@@ -26,6 +26,7 @@ roles:
 products:
 - azure
 units:
+- learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.setup
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.introduction
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.sorting-rows
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.selecting-rows
@@ -40,6 +41,7 @@ units:
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.randomness
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.conditional-statements
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.iteration
+- learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.mini-lab
 - learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.summary
 badge:
   uid: learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.badge
