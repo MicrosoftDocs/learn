@@ -1,4 +1,4 @@
-Now that our model is performing "good enough", let's deploy it! There are different ways to deploy the model based on what you need. There's an option to deploy to an endpoint, or you can export the model to different formats to deploy to different platforms. We'll discuss how to deploy to the endpoint and consume the model by using an app.
+Now that our model is performing well enough, let's deploy it! There are different ways to deploy the model depending on what you need. You can deploy to an endpoint, or you can export the model in different formats to deploy to different platforms. We'll discuss how to deploy to the endpoint and consume the model by using an app.
 
 ## Deploy to an endpoint
 
@@ -14,13 +14,13 @@ To get the prediction URL:
 
 ### Consume the API in a Python app
 
-When the model is trained and returns a satisfactory accuracy, it's ready to be used in your app.
+When the model is trained and performing with a satisfactory accuracy, it's ready to be used in your app.
 
 1. Go to the resource group that contains the Custom Vision resource. You should see a resource named **YourCustomVisionResourceName_Prediction**.
 1. Select **Quick Start**.
 1. Select **API Reference** from the list of helpful links. 
 
-A page that has documents about how to call the API to get predictions from the model opens. At the bottom of the page is a list of code samples in multiple languages to get you started. 
+A page that has documents about how to call the API to get predictions from the model opens. Scroll to the bottom of the page for a list of code samples in multiple languages to get you started. 
 
 Here's the example code for calling the prediction API in Python:
 
@@ -48,7 +48,7 @@ with open(base_image_url + "images/Test/test_image.jpg", "rb") as image_contents
               ": {0:.2f}%".format(prediction.probability * 100))
 ```
 
-When you post to the published endpoint, you get a result that looks like the following text. The text shows the probability of each tag the Custom Vision model was trained on, sorted by the highest score. The model knows only the type of birds it was trained to recognize. If you posted an image of a new bird that the model wasn't trained on, the model would predict one of the birds it was trained on to identify the species of the new bird.
+When you post to the published endpoint, you get a result that looks like the following output. The probability of each tag the Custom Vision model was trained on is shown, sorted by the highest score. The model recognizes only the type of birds it was trained to recognize. If you post an image of a bird that the model wasn't trained to recognize, the model predicts one of the bird species it was trained on as the species of the new bird.
 
 ```
 	American Crow: 99.18%
@@ -69,4 +69,4 @@ When you post to the published endpoint, you get a result that looks like the fo
 	American Goldfinch (Female): 0.01%
 ```
 
-Now, you know how to use the model you created. You can start better documenting the birds habits to help conserve their habitat and increase endangered bird populations. All with the help of Custom Vision!
+Now, you know how to use the model you created. You can start better documenting birds habits to help conserve bird habitat and increase endangered bird populations. All with the help of Custom Vision!

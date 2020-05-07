@@ -158,7 +158,7 @@ To create the notebook and copy in the code:
 
       1. Call the `createTag` to create the class tag in Custom Vision.
       1. Call the `createImageList` function and send in the current `tag` name and `tag_id` value that was returned from Custom Vision. It returns our list of images to upload.
-      1. We upload the images from the `image_list` in batches of 25. Custom Vision will time out if we try to upload the entire dataset at once.
+      1. Upload the images from the `image_list` in batches of 25. Custom Vision will time out if we try to upload the entire dataset at once.
 
          ```python
          for tag in tags:
