@@ -1,18 +1,18 @@
-Now that our model has been created lets take a look at how it's performing and test the model.
+Now that our model has been created, let's take a look at how it's performing and test the model.
 
 ## Understanding the model performance
 
-There are three indicators Custom Vision provides to help understand how the model is performing. Beware that these are indicators not fact or accuracy. It's telling you how it did on the data you provided to give you an idea of how it will perform on unseen data.
+Custom Vision provides three indicators to help you understand how the model is performing. Beware that these are indicators not fact or accuracy. It's telling you how it did on the data you provided to give you an idea of how it will perform on unseen data.
 
 The three indicators provided for the entire model and for each class are:
 
 | Indicator              | Description                                                                                                                   |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Precision              | Precision means if a tag is predicted by your model, how likely is that to be right?                                          |
-| Recall                 | This number will tell you: out of the tags that should be predicted correctly, what percentage did your model correctly find? |
-| AP (Average precision) | A measure of the model performance, summaries the precision and recall at different threshold.                                |
+| Precision              | Indicates, if a tag is predicted by your model, how likely is that to be right?                                          |
+| Recall                 | Tells you, out of the tags that should be predicted correctly, what percentage did your model correctly find? |
+| AP (average precision) | A measure of the model performance; it computes the precision and recall at different thresholds.                                |
 
-Now that we understand some of the different indicators we can use to understand how the model is performing. Lets talk about some of the "rookie mistakes" that can happen when starting to build machine learning models.
+Now that we understand some of the different indicators, we can use them to understand how the model is performing. Let's talk about some of the "rookie mistakes" that can happen when starting to build machine learning models.
 
 ## Common rookie mistakes
 
@@ -34,12 +34,11 @@ Another common mistake is training with bad data. There are ways that your data 
 
 ## Test the model
 
-Our model is performing well enough according to the metrics provided. Lets test our model and see how it performs on unseen data.
+Our model is performing well enough according to the metrics provided. Let's test our model and see how it performs on unseen data.
 
-### Test in the Portal UI
+### Test in the portal UI
 
-- Select "Quick Test" from the upper right corner
-- Search for an image of a bird that matches one of the species you trained it to recognize. Grab the URL for the image and paste it into the `Image URL` box to test accuracy.
-- The prediction will appear on the right side of the window.
+1. Select **Quick Test** in the upper-right corner.
+1. Search for an image of a bird that matches one of the species you trained it to recognize. Grab the URL for the image and paste it into the **Image URL** box to test accuracy. The prediction will appear on the right side of the window.
 
-In the next step where we will deploy the model. After the model is deployed we can do more testing with the endpoint we create.
+In the next step, we will deploy the model. After the model is deployed, we can do more testing with the endpoint we create.

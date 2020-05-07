@@ -1,4 +1,4 @@
-As a ornithologist you study the behavior, physiology, and conservation of birds and bird habitats. This work often involves surveying, recording and reporting on bird activity.
+As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitats. This work often involves surveying, recording, and reporting on bird activity.
 
 You want to build a machine learning model that will identify the birds to help with gathering data. Additionally you want to better document endangered birds species to help the populations increase. We will be using the NA Bird dataset from Cornell to train a model that will recognize bird species and help you document the different trends and patterns of the bird habits.
 
@@ -12,9 +12,9 @@ The data was provided by the Cornell Lab of Ornithology, with a special thanks t
 
 In this module, you will:
 
-- Get an introduction to Computer Vision
-- Get an introduction to Machine Learning (ML)
-- Learn how to use prebuilt ML models in Azure called Cognitive Services
-- Learn how to use the Custom Vision Cognitive Service
-- Build a custom machine learning model
-- Deploy the model created with Custom Vision
+- Get an introduction to Custom Vision.
+- Get an introduction to machine learning.
+- Learn how to use prebuilt machine learning models in Azure Cognitive Services.
+- Learn how to use the Custom Vision service in Azure.
+- Build a custom machine learning model.
+- Deploy the model created by using Custom Vision.

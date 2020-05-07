@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.cv-classify-bird-species.5-deploy-model
+uid: learn.advocates.custom-vision-classify-bird-species.5-deploy-model
 title: Exercise - Deploy the model and consume the endpoint
 metadata:
   title: Exercise - Deploy the model and consume the endpoint
