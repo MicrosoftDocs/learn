@@ -1074,6 +1074,66 @@
       "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/7-summary.yml",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/secure-your-azure-virtual-machine-disks/8-summary/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/2-design-a-solution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/3-create-azure-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/4-create-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/5-upload-sample-photo.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/6-analyze-streaming-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/7-add-azure-function.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/8-generate-events.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/9-train-and-test-image-classifier.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/10-create-sql-db.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/11-connect-db-and-function.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/12-visualize-output-with-powerbi.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/build-ml-model-with-azure-stream-analytics/13-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-ml-model-with-azure-stream-analytics/",
+      "redirect_document_id": false
     }
   ]
 }

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.3-azure-functions
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.4-azure-functions
 title: Exercise - Write an Azure Function to analyze photographs
 metadata:
   title: Exercise - Write an Azure Function to analyze photographs
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-azure-functions.md)]
+  [!include[](includes/4-azure-functions.md)]

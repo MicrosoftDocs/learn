@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.4-azure-sql-database
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.5-azure-sql-database
 title: Exercise - Deploy an Azure SQL Database
 metadata:
   title: Exercise - Deploy an Azure SQL Database
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-azure-sql-database.md)]
+  [!include[](includes/5-azure-sql-database.md)]

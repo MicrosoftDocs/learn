@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.5-power-bi
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.6-power-bi
 title: Exercise - Create a Power BI report
 metadata:
   title:  Exercise - Create a Power BI report
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-power-bi.md)]
+  [!include[](includes/6-power-bi.md)]

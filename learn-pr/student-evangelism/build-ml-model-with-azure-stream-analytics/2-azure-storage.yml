@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.1-azure-storage
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.2-azure-storage
 title: Exercise - Create a storage account and deploy virtual cameras
 metadata:
   title: Exercise - Create a storage account and deploy virtual cameras
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/1-azure-storage.md)]
+  [!include[](includes/2-azure-storage.md)]
