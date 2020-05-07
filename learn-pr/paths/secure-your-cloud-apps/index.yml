@@ -28,7 +28,7 @@ products:
 - azure-active-directory
 - azure-api-management
 modules:
-- learn.design-for-security
+- learn.azure-well-architected-security
 - learn.top-5-security-items-to-consider
 - learn.azure-security.create-security-baselines
 - learn.manage-secrets-with-azure-key-vault
