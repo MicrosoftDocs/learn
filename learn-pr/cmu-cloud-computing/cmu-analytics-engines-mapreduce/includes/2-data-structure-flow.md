@@ -39,6 +39,6 @@ The combiner function is best illustrated through an example. Assume that a map 
 
 [^1]: <https://www.researchgate.net/publication/221276678_LEEN_LocalityFairness-Aware_Key_Partitioning_for_MapReduce_in_the_Cloud> "S. Ibrahim, H. Jin, L. Lu, S. Wu, B. He, and L. Qi (Dec. 2010). *LEEN: Locality/Fairness-Aware Key Partitioning for MapReduce in the Cloud* CloudComm"
 [^2]: <https://web2.qatar.cmu.edu/~mhhammou/mhh_msakr_LARTS_CloudCom2011_paper.pdf> "M. Hammoud and M. F. Sakr (2011). *Locality-Aware Reduce Task Scheduling for MapReduce* CloudCom"
-[^3]: <(http://hadoop.apache.org/docs/r1.0.4/hdfs_design.html> "*HDFS Architecture Guide* Hadoop"
+[^3]: <http://hadoop.apache.org/docs/r1.0.4/hdfs_design.html> "*HDFS Architecture Guide* Hadoop"
 [^4]: <https://dl.acm.org/doi/10.1109/CLOUD.2012.92> "M. Hammoud, M. S. Rehman, and M. F. Sakr (2012). *Center-of-Gravity Reduce Task Scheduling to Lower MapReduce Network Traffic* CLOUD"
 [^5]: <https://arxiv.org/ftp/cs/papers/0701/0701155.pdf> "J. Gray, S. Chaudhuri, A. Bosworth, A. Layman, D. Reichart, M. Venkatrao, and H. Pirahesh (1997). *Data Cube: A Relational Aggregation Operator Generalizing Group-by, Cross-tab, and Sub-totals* Data Mining and Knowledge Discovery"
