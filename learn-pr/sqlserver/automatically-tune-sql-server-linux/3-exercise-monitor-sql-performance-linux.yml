@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.automatically-tune-sql-server-linux.4-exercise-monitor-sql-performance-linux
+uid: learn-sqlserver.automatically-tune-sql-server-linux.3-exercise-monitor-sql-performance-linux
 title: Exercise - Monitor SQL performance in Linux
 metadata:
   title: Exercise - Monitor SQL performance in Linux
@@ -9,9 +9,8 @@ metadata:
   ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
-durationInMinutes: 7
-## TODO: Update this when we have the correct Lab ID
-labId: 47218
+durationInMinutes: 15
+interactive: bash
+azureSandbox: true
 content: |
-  [!include[](includes/4-exercise-monitor-sql-performance-linux.md)]
+  [!include[](includes/3-exercise-monitor-sql-performance-linux.md)]

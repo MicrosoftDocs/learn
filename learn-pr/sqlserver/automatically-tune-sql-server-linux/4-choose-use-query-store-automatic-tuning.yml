@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.automatically-tune-sql-server-linux.3-choose-use-query-store-automatic-tuning
+uid: learn-sqlserver.automatically-tune-sql-server-linux.4-choose-use-query-store-automatic-tuning
 title: Choose to use Query Store and automatic tuning
 metadata:
   title: Choose to use Query Store and automatic tuning
@@ -9,10 +9,9 @@ metadata:
   ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-choose-use-query-store-automatic-tuning.md)]
+  [!include[](includes/4-choose-use-query-store-automatic-tuning.md)]
 quiz:
   title: "Check your knowledge"
   questions:
