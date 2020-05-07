@@ -18,7 +18,6 @@ Before publishing your app, you'll create routing rules that include a fallback 
 
 ### Create the file routes.json
 
-
 ::: zone pivot="angular"
 
 1. In Visual Studio Code, right-click the folder _angular-app/src/_
