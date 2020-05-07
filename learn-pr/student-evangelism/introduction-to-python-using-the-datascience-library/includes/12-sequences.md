@@ -104,7 +104,8 @@ formula.
 
     array([56.48  , 57.8966, 58.253 , 59.2952])
 
-<img src="../media/array-arithmetic.png" />
+![png](../media/array-arithmetic.PNG)
+
 
 Arrays also have *methods*, which are functions that operate on the
 array values. The `mean` of a collection of numbers is its average
