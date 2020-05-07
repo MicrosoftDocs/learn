@@ -26,13 +26,13 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 
 1. Add the @page directive `@page "/compoundinterest"`
 
-1. Add a simple H1 header `<h1>Compound Interest</h1>`
+1. Add an H1 header `<h1>Compound Interest</h1>`
 
 1. Open the **Shared** folder in the project explorer
 
 1. Open **NavMenu.razor**
 
-1. Add a forth list item with the href set to **calc** and a title off **Compound Interest**
+1. Add a fourth list item with the href set to **calc** and a title off **Compound Interest**
 
     ```cshtml
     <li class="nav-item px-3">
@@ -77,7 +77,7 @@ We'll add html UI for our calculator, specifically a table.
         </tr>
     </table>
     ```
-1. Below the table, add a button which we'll use to trigger the calculation.
+1. Below the table, add a button, which we'll use to trigger the calculation.
 
     ```cshtml
     <button class="btn btn-primary">Calculate</button>
@@ -85,6 +85,6 @@ We'll add html UI for our calculator, specifically a table.
 
 ### Optional - run the application 
 
-1. In the Visual Studio Code terminal `dotnet run` to launch the app
+1. In the Visual Studio Code terminal, execute `dotnet run` to launch the app
 
 1. Open a web browser to **http://localhost:5000** 

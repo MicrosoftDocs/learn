@@ -4,7 +4,7 @@ In this exercise, we'll add our C# logic to our compound interest razor componen
 
 1. Open **CompoundInterest.razor**
 
-1. Below the table definition add an **@code** markup with open and closing braces
+1. Below the table definition, add an **@code** markup with open and closing braces
 
 
     ```csharp

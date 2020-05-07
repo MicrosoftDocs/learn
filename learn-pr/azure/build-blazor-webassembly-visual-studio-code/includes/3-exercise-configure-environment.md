@@ -1,8 +1,8 @@
-In this exercise we're going to install of the tools and components needed to build a Blazor WebAssembly client app locally using Visual Studio Code. This exercise assumes you already have Visual Studio Code installed, you can download Visual Studio Code for free for Windows, macOS or Linux from https://code.visualstudio.com/.
+In this exercise, we're going to install of the tools and components needed to build a Blazor WebAssembly client app locally using Visual Studio Code. This exercise assumes you already have Visual Studio Code installed, you can download Visual Studio Code for free for Windows, macOS, or Linux from https://code.visualstudio.com/.
 
 ## Install tools and templates
 
-We'll start by downloading the .NET Core 3.1 SDK; this includes the .NET Core SDK, the .NET Core Runtime, and the ASP.NET Core runtime. We'll then install the Blazor WebAssembly template.
+We'll start by downloading the .NET Core 3.1 SDK, it includes the .NET Core SDK, the .NET Core Runtime, and the ASP.NET Core runtime. We'll then install the Blazor WebAssembly template.
 
 1. Install **.NET Core 3.1** by downloading the latest version from https://dotnet.microsoft.com/download/dotnet-core/3.1 for your operating system
 
