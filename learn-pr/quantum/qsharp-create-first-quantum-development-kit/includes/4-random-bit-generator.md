@@ -48,7 +48,7 @@ The `Microsoft.Quantum.Measurement` library provides the `MResetZ` operation. Le
 1. In Visual Studio, open *Program.qs*.
 1. Near the top of the file, add this `open` directive:
 
-    [!code-qsharp[](code/4-Program-1.qs?highlight=5)]
+    [!code-qsharp[](code/4-program-1.qs?highlight=5)]
 
 ## Define the GenerateRandomBit operation
 
@@ -66,13 +66,13 @@ To define the operation:
 
 1. Replace the contents of *Program.qs* with this:
 
-    [!code-qsharp[](code/4-Program-2.qs?highlight=7-9)]
+    [!code-qsharp[](code/4-program-2.qs?highlight=7-9)]
 
     `EntryPoint` tells the Q# compiler that this is where to begin execution of the program.
 
 1. Add this code to the `GenerateRandomBit` operation:
 
-    [!code-qsharp[](code/4-Program-3.qs?highlight=9-15)]
+    [!code-qsharp[](code/4-program-3.qs?highlight=9-15)]
 
     Recall that you allocate qubits through the `using` keyword.
 

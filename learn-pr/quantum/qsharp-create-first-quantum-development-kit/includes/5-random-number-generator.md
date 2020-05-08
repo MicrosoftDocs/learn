@@ -41,7 +41,7 @@ Here, you expand on the *QuantumRNG* project to build larger random numbers.
 
 For the complete random number generator, you need to include two additional libraries: `Microsoft.Quantum.Math` and `Microsoft.Quantum.Convert`. Add the following `open` directives to *Program.qs*, like this:
 
-[!code-qsharp[](code/5-Program-1.qs?highlight=6-7)]
+[!code-qsharp[](code/5-program-1.qs?highlight=6-7)]
 
 ### Define the GenerateRandomNumber operation
 
@@ -49,7 +49,7 @@ Here, you define the `GenerateRandomNumber` operation. Because this becomes the 
 
 Modify *Program.qs* like this:
 
-[!code-qsharp[](code/5-Program-2.qs?highlight=9-21)]
+[!code-qsharp[](code/5-program-2.qs?highlight=9-21)]
 
 ### Implement the GenerateRandomNumber operation
 
@@ -57,7 +57,7 @@ Here, you use the logic we defined earlier to implement the `GenerateRandomNumbe
 
 Modify *Program.qs* like this:
 
-[!code-qsharp[](code/5-Program-3.qs?highlight=21-47)]
+[!code-qsharp[](code/5-program-3.qs?highlight=21-47)]
 
 Let's take a moment to review the new code.
 
