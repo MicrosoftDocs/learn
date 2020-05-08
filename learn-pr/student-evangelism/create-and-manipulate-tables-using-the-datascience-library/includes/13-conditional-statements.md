@@ -17,7 +17,7 @@ conditions being satisfied. For example, individuals in randomized
 controlled trials receive the treatment if they have been assigned to
 the treatment group. A gambler makes money if she wins her bet.
 
-In this section we will learn how to describe such situations using
+In this section, we will learn how to describe such situations using
 code. A *conditional statement* is a multi-line statement that allows
 Python to choose among different alternatives based on the truth value
 of an expression. While conditional statements can appear anywhere, they
@@ -34,7 +34,7 @@ Let us start defining a function that returns the sign of a number.
 
 ``` {.python}
 def sign(x):
-    
+
     if x > 0:
         return 'Positive'
 ```
@@ -60,10 +60,10 @@ if Python's shorthand for the phrase "else, if".
 
 ``` {.python}
 def sign(x):
-    
+
     if x > 0:
         return 'Positive'
-    
+
     elif x < 0:
         return 'Negative'
 ```
@@ -81,13 +81,13 @@ What if the input is 0? To deal with this case, we can add another
 
 ``` {.python}
 def sign(x):
-    
+
     if x > 0:
         return 'Positive'
-    
+
     elif x < 0:
         return 'Negative'
-    
+
     elif x == 0:
         return 'Neither positive nor negative'
 ```
@@ -104,13 +104,13 @@ are false; that is, if the input value is equal to 0.
 
 ``` {.python}
 def sign(x):
-    
+
     if x > 0:
         return 'Positive'
-    
+
     elif x < 0:
         return 'Negative'
-    
+
     else:
         return 'Neither positive nor negative'
 ```
@@ -136,7 +136,7 @@ format of a multi-clause conditional statement appears below.
     ...
     else:
         <else body>
-        
+
 
 There is always exactly one `if` clause, but there can be any number of
 `elif` clauses. Python will evaluate the `if` and `elif` expressions in
@@ -209,6 +209,6 @@ one_bet(np.random.choice(np.arange(1, 7)))
 
     -1
 
-At this point it is natural to want to collect the results of all the
-bets so that we can analyze them. In the next section we develop a way
+At this point, it is natural to want to collect the results of all the
+bets so that we can analyze them. In the next section, we develop a way
 to do this without running the cell over and over again.

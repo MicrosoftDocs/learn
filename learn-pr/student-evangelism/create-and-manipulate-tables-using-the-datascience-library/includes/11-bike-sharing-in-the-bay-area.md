@@ -5490,7 +5490,7 @@ Castro Street and El Camino Real
 <p>
 ... (60 rows omitted)
 </p>
-Someone had a very quick trip (271 seconds, or about 4.5 minutes) from
+Someone had a quick trip (271 seconds, or about 4.5 minutes) from
 2nd at Folsom to Beale at Market, about five blocks away. There are no
 bike trips between the 2nd Avenue stations and Adobe on Almaden, because
 the latter is in a different city.
@@ -5498,7 +5498,7 @@ the latter is in a different city.
 ### Drawing Maps
 
 The table `stations` contains geographical information about each bike
-station, including latitude, longitude, and a "landmark" which is the
+station, including latitude, longitude, and a "landmark", which is the
 name of the city where the station is located.
 
 ``` {.python}
