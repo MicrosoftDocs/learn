@@ -31,7 +31,7 @@ In this course, we'll use the [Azure Bot Service][BotService] and [C# programmin
 Here's what you'll need to complete this course:
 
 - Basic knowledge of C#. You might want to [take this course][CSCourse] if you're not familiar with the C# language.
-- An Azure account. See [this module][AzAccount] to learn how to get an account.
+- An Azure account. See [this module][AzAccount] to learn how to get an account. Try [Azure for Students](aka.ms/a4s) for a free account if you are a current student!
 - We recommend [Visual Studio 2019][VS] as a source code editor. You can download and install Visual Studio on your computer and select **Azure Development**. If necessary, you can use Visual Studio Online, but it's not recommended.
 
 <!-- Links -->
