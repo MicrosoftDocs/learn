@@ -4,11 +4,11 @@ In this exercise, we'll add our C# logic to our compound interest razor componen
 
 1. Open **CompoundInterest.razor**
 
-1. Below the table definition, add an `code` markup with open and closing braces
+1. Below the table definition, add a `code` markup with open and closing braces
 
 ## Add member variables for compound interest calculation
 
-We'll add several C# variables to store input values from the user. Add the following within the `@code` markup
+We'll add several C# variables to store input values from the user. Add the following within the `code` markup
 
     ```cshtml
     @code
