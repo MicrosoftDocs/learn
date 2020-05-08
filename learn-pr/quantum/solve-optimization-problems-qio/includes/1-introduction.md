@@ -1,3 +1,5 @@
+In [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-qdk?azure-portal=true), you learned about the Q# language by building a program that measures qubits to generate random numbers.
+
 In this module, you'll learn about quantum-inspired algorithms. In particular, you'll see how they can be applied to solve optimization problems, which is an area called quantum-inspired optimization (QIO). In this module, we'll look at Contoso Logistics Inc, a freight company that operates two container ships.
 
 ![Two container ships that need to distribute load as evenly as possible](../media/contoso.png)
