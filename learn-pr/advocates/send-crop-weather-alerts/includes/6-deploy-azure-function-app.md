@@ -6,7 +6,7 @@ Azure Functions requires a Storage Account for storing the application code and 
 
 All Azure Storage accounts have a name, and this name needs to be globally unique among all storage account. Storage accounts can be accessed over the web, and the name forms part of the URL. To make a unique name, include things like the date or your name. This name needs to be between 3 and 24 characters long and only contain lower-case letters and numbers.
 
-1. Run this command to create an environment variable for the name of the storage account. This will be used by other commands later in this unit.
+1. Run this command to create an environment variable for the name of the storage account. This environment variable will be used by other commands later in this unit.
 
     ```azurecli
     export STORAGE_ACCOUNT_NAME=<YOUR-STORAGE-ACCOUNT-NAME>
@@ -32,7 +32,7 @@ All Azure Storage accounts have a name, and this name needs to be globally uniqu
 
 Azure Functions Apps need a globally unique name. To make a unique name, include things like the date or your name. This name can be the same as your storage account, as long as that name is unique across all Azure Functions apps.
 
-1. Run this command to create an environment variable for the name of the Azure Functions app. This will be used by other commands later in this unit.
+1. Run this command to create an environment variable for the name of the Azure Functions app. This environment variable will be used by other commands later in this unit.
 
     ```azurecli
     export FUNCTIONS_APP_NAME=<YOUR-FUNCTION-APP-NAME>
@@ -93,9 +93,9 @@ The Function application's source code lives in a repository on GitHub.
     git clone https://github.com/MicrosoftDocs/mslearn-send-crop-weather-alerts.git
     ```
 
-This code contains a timer trigger that runs at 12 hour intervals. This is perfect for a final app, but for testing purposes is too long. If you deploy this code, you won't see a response message for 12 hours, by which time the sandbox will have ended and the app will be deleted.
+This code contains a timer trigger that runs at 12-hour intervals. This is perfect for a final app, but for testing purposes, 12 hours is too long. If you deploy this code, you won't see a response message for 12 hours, by which time the sandbox will have ended and the app will be deleted.
 
-To see results faster, change this to run every 15 minutes.
+To see results faster, change this trigger to run every 10 minutes.
 
 1. Use the **nano** editor to edit the file using the following commands:
 
@@ -116,7 +116,7 @@ To see results faster, change this to run every 15 minutes.
     "schedule": "0 */10 * * * *"
     ```
 
-    This will schedule the trigger to run every 10 minutes.
+    This change will schedule the trigger to run every 10 minutes.
 
 1. Save the file by pressing `ctrl+o`, then press return to overwrite the existing file.
 
