@@ -1,4 +1,4 @@
-Our application has many components, which are designed to implement a variety of features. In this unit, we'll review these features. 
+Our application has many components, and it's designed to implement a variety of features. In this unit, we'll review these features. 
 
 You'll learn that:
 
