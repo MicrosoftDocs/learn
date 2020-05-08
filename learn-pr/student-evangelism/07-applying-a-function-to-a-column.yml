@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.create-and-manipulate-tables-using-the-datascience-library.applying-a-function-to-a-column
+title: Applying A Function To A Column
+metadata:
+  title: Applying A Function To A Column
+  description: Introduction to basic data types in Python.
+  ms.date: 03/12/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: n/a
+durationInMinutes: 5
+content: |
+  [!include[](includes/07-applying-a-function-to-a-column.md)]
