@@ -39,9 +39,9 @@ Here, you create a Q# project just like you did earlier.
 
 ## Include the Measurement library
 
-To measure a qubit, you use the [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true) operation. After you measure a qubit, you need to use the [Reset](/qsharp/api/qsharp/microsoft.quantum.intrinsic.reset?azure-portal) operation to place the qubit back in the zero state. The `Microsoft.Quantum.Intrinsic` library provides both of these these operations.
+To measure a qubit, you use the [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true) operation. After you measure a qubit, you need to use the [Reset](/qsharp/api/qsharp/microsoft.quantum.intrinsic.reset?azure-portal=true) operation to place the qubit back in the zero state. The `Microsoft.Quantum.Intrinsic` library provides both of these these operations.
 
-To simplify the process, you can use the [MResetZ](/qsharp/api/qsharp/microsoft.quantum.measurement.mresetz) operation. This operation combines `M` and `Reset` as one operation.
+To simplify the process, you can use the [MResetZ](/qsharp/api/qsharp/microsoft.quantum.measurement.mresetz?azure-portal=true) operation. This operation combines `M` and `Reset` as one operation.
 
 The `Microsoft.Quantum.Measurement` library provides the `MResetZ` operation. Let's add that library now.
 
