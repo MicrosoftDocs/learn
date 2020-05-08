@@ -28,10 +28,10 @@ roles:
 products:
 - azure
 units:
-- learn.cela-accessibility-features.00-windows-10-accessibility
-- learn.cela-accessibility-features.01-gaming-features-and-tools
-- learn.cela-accessibility-features.02-microsoft-365-features
-- learn.cela-accessibility-features.03-summary-and-resources
-- learn.cela-accessibility-features.04-knowledge-check
+- learn.cela-accessibility-features.windows-10-accessibility
+- learn.cela-accessibility-features.gaming-features-and-tools
+- learn.cela-accessibility-features.microsoft-365-features
+- learn.cela-accessibility-features.summary-and-resources
+- learn.cela-accessibility-features.knowledge-check
 badge:
   uid: learn.cela-accessibility-features.badge
