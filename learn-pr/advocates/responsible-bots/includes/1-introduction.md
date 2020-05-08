@@ -1,8 +1,8 @@
-The user interface (UI) between people and computers has evolved greatly over the years. From its humble beginning in paper-punch cards, UI design has progressed to command-line interfaces and windowed applications, to personalized phone apps and web sites. New concepts in UI design continue to make computers easier, more accessible, and more fun to use! But in spite of UI improvements, many people still think of a computer as a _tool_ they need to _learn how to use_ to be productive. There's an emerging type of user experience (UX) that's helping to solve this problem. 
+The user interface (UI) between people and computers has evolved greatly over the years. From its humble beginning in paper-punch cards, UI design has progressed to command-line interfaces and windowed applications, to personalized phone apps and web sites. New concepts in UI design continue to make computers easier, more accessible, and more fun to use!
 
 ## Conversational UI
 
-**Conversational UI** and **bots** are a new type of UX that has the potential to radically change how we use computers. You no longer need to know what buttons to press. You just ask the computer for what you need, and hope it will understand you correctly and do the job. In this new UX, we see the computer as an _assistant_ rather than as a _tool_. We want to speak to this assistant by using **natural language** in our own words.
+**Conversational UI** and **bots** are a new type of UX that has the potential to radically change how we use computers. You no longer need to know what buttons to press. In this new UX, we see the computer as an _assistant_ rather than as a _tool_. We want to speak to this assistant by using **natural language** in our own words.
 
 With this UX transition, we need to take extra care to make sure users are comfortable having conversations with a computer. People can subconsciously expect a bot to act like a human. They might attribute emotions to the bot assistant, and in general, feel more personal involvement. So, we need to make sure we build conversational UI responsibly.
 
