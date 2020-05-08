@@ -2,7 +2,7 @@ In addition to missing data, in real-world datasets, you frequently encounter du
 
 ## Identify duplicates: `duplicated`
 
-You can easily spot duplicate values by using the `duplicated` method in pandas. `duplicated` returns a Boolean mask that indicates whether an entry in a DataFrame is a duplicate of an earlier one. Let's create another example DataFrame to see this in action:
+You can easily spot duplicate values by using the `duplicated` method in pandas. `duplicated` returns a Boolean mask that indicates whether an entry in a `DataFrame` is a duplicate of an earlier one. Let's create another example `DataFrame` to see this in action:
 
 ```python
 example6 = pd.DataFrame({'letters': ['A','B'] * 2 + ['B'],
@@ -59,7 +59,7 @@ Here's the output:
 | 3 | B       | 3       |
 ```
 
-Both `duplicated` and `drop_duplicates` default to consider all columns, but you can specify that they examine only a subset of columns in your DataFrame.
+Both `duplicated` and `drop_duplicates` default to consider all columns, but you can specify that they examine only a subset of columns in your `DataFrame`.
 
 Run this code in a cell:
 
@@ -79,4 +79,4 @@ Here's the output:
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Removing duplicate data is an essential part of almost every data science project. Duplicate data can change the results of your analyses and give you spurious results!
+> Removing duplicate data is an essential part of almost every data science project. Duplicate data can change the results of your analyses and give you spurious results.

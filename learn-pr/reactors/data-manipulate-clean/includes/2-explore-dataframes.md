@@ -1,6 +1,6 @@
-After you load your data into pandas, the data most likely will be in a DataFrame. However, if the dataset in your DataFrame has 60,000 rows and 400 columns, how do you even begin to get a sense of what you're working with? Fortunately, pandas provides some convenient tools to help you quickly look at overall information about a DataFrame, including the first few and last few rows of data.
+After you load your data into pandas, the data most likely will be in a `DataFrame`. However, if the dataset in your `DataFrame` has 60,000 rows and 400 columns, how do you even begin to get a sense of what you're working with? Fortunately, pandas provides some convenient tools to help you quickly look at overall information about a `DataFrame`, including the first few and last few rows of data.
 
-To explore DataFrames in pandas, we will import the Python scikit-learn library and use an iconic dataset that every data scientist has seen hundreds of times: British biologist Ronald Fisher's Iris dataset. Fisher used the Iris dataset in his 1936 paper *The Use of Multiple Measurements in Taxonomic Problems*.
+To explore `DataFrames` in pandas, let's import the Python scikit-learn library and use an iconic dataset that every data scientist has seen hundreds of times: British biologist Ronald Fisher's Iris dataset. Fisher used the Iris dataset in his 1936 paper *The Use of Multiple Measurements in Taxonomic Problems*.
 
 First, import pandas and import the Python scikit-learn dataset:
 
@@ -38,13 +38,13 @@ From the output, we know that the Iris dataset has 150 entries in four columns. 
 
 ## `DataFrame.head`
 
-Next, let's see what the first few rows of our DataFrame look like. To return the first five rows of data, run:
+Next, let's see what the first few rows of our `DataFrame` look like. To return the first five rows of data, run:
 
 ```python
 iris_df.head()
 ```
 
-This is what is in the first five rows of the Iris dataset:
+This is what's in the first five rows of the Iris dataset:
 
 ```Output
 |    | sepal length (cm) | sepal width (cm) | petal length (cm) | petal width (cm) |
@@ -58,7 +58,7 @@ This is what is in the first five rows of the Iris dataset:
 
 ### Try it yourself
 
-By default, `DataFrame.head` returns the first five rows in a DataFrame. In a new code cell, can you figure out how to get it to show more?
+By default, `DataFrame.head` returns the first five rows in a `DataFrame`. In a new code cell, can you figure out how to get it to show more?
 
 <br />
 
@@ -76,7 +76,7 @@ By default, `DataFrame.head` returns the first five rows in a DataFrame. In a ne
 
 ## `DataFrame.tail`
 
-The flip side of `DataFrame.head` is `DataFrame.tail`, which returns the *last* five rows of a DataFrame:
+The flip side of `DataFrame.head` is `DataFrame.tail`, which returns the *last* five rows:
 
 ```python
 iris_df.tail()
@@ -94,9 +94,9 @@ This is what you'll find in the last five rows of the Iris dataset:
 | 150 | 6.9               | 3.0              | 5.1               | 1.8              |
 ```
 
-In practice, it's useful to be able to easily examine the first few rows or the last few rows of a DataFrame, particularly when you are looking for outliers in ordered datasets.
+In practice, it's useful to be able to easily examine the first few rows or the last few rows of a `DataFrame`, particularly when you're looking for outliers in ordered datasets.
 
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Even just by looking at the metadata about the information in a DataFrame or the first and last few values in one, you can get an immediate idea about the size, shape, and content of the data you are dealing with.
+> Even just by looking at the metadata about the information in a `DataFrame`, or the first and last few values in one, you can get an immediate idea about the size, shape, and content of the data you're dealing with.
