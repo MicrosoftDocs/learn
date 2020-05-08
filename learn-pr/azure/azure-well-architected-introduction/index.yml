@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-introduction
 metadata:
-  title: Introduction to the Azure Well-Architected Framework
+  title: Introduction to the Microsoft Azure Well-Architected Framework
   description: Learn how using key principles throughout your cloud architecture can help you design and build a solid architectural foundation that you can continuously improve.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to the Azure Well-Architected Framework
+title: Introduction to the Microsoft Azure Well-Architected Framework
 summary: You want to build great things on Azure, but you’re not sure exactly what that means. Using key principles throughout your architecture regardless of technology choice, can help you design, build, and continuously improve your architecture.
 abstract: |
   In this module, you will:

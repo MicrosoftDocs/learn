@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-reliability
 metadata:
-  title: Azure Well-Architected Framework - Reliability
+  title: Microsoft Azure Well-Architected Framework - Reliability
   description: Learn how to recover from infrastructure and service failure, loss of data, and disasters by incorporating reliability into your architecture.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure Well-Architected Framework - Reliability
+title: Microsoft Azure Well-Architected Framework - Reliability
 summary: Learn how to handle infrastructure and service failure, recover from the loss of data, and recover from a disaster by incorporating reliability into your architecture.
 abstract: |
   In this module, you will:
