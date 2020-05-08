@@ -113,7 +113,7 @@ quiz:
       isCorrect: true
       explanation: "Correct. The best way towards a more responsible UI is to implement a combination of principles that make the user experience better."
 
-  - content: "Suppose you want to create a bot that finds the lowest calorie dish in a restaurant. How would you implement user input?"
+  - content: "Suppose you want to create a bot that finds a favorite dish in a restaurant. How would you implement user input?"
     choices:
     - content: "User can type in the menu."
       isCorrect: false
