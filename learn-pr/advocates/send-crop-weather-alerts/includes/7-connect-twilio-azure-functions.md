@@ -22,6 +22,6 @@ Now that everything is set up, the only thing left to do is to make Twilio call 
 
 ## Test the application
 
-You can now send a text message to your Twilio phone number to get started using the application. Send a text message to your Twilio number that contains your location and a temperature range. Every 10 minutes you'll receive a reply that contains the temperature ranges for the next five days if the forecast is below or above your specified temperature range.
+You can now get started using the application by sending a text message to your Twilio phone number. Send a text message that contains your location and a temperature range. Every 10 minutes you'll receive a reply that contains the temperature ranges for the next five days if the forecast is below or above your specified temperature range.
 
 ![A screenshot of text messages sent to and received by our application](../media/text-message.png)
