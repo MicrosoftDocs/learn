@@ -34,7 +34,7 @@ In order to deploy to an Azure resource, the GitHub Action must have permission 
 
 To store information in GitHub Secrets, you create a secret on the portal.
 
-![Creating a github secret in the github portal](../media/2-secrets.png)
+![Creating a secret in the portal](../media/2-secrets.png)
 
 Then, you use the name of the secret you created in your workflow wherever you need that information. For example, below we use the Azure credential that was stored in GitHub Secrets in the ```creds:``` attribute of an Azure ```login``` action. (We talk about that action in the next section.)
 
@@ -50,7 +50,7 @@ steps:
 
 The [GitHub Marketplace](https://github.com/marketplace?type=actions&query=azure&azure-portal=true) has several actions that help you automate Azure-related tasks.
 
-![The github marketplace with search results for Azure](../media/2-marketplace-azure.png)
+![The GitHub Marketplace showing search results for Azure](../media/2-marketplace-azure.png)
 
 Suppose you want to deploy a container-based web app to Azure Web Apps. If you search the GitHub Marketplace you find these actions:
 
