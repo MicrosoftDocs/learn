@@ -23,7 +23,7 @@ The Azure Maps API [*Search - Get Search Address*](https://docs.microsoft.com/re
 
 ## Retrieving Daily Weather Forecast
 
-Azure Maps offers an API called [*Weather - Get Daily Forecast*](https://docs.microsoft.com/rest/api/maps/weather/getdailyforecastpreview).  Given a geospatial location as longitude and latitude, you can receive the forecast for a given number of days. We will be choosing five days to allow farmers to make decisions for the next few days.
+Azure Maps offers an API called [*Weather - Get Daily Forecast*](https://docs.microsoft.com/rest/api/maps/weather/getdailyforecastpreview).  Given a geospatial location as longitude and latitude, you can receive the forecast for a given number of days. We'll be using five days to allow farmers to make decisions for the next few days.
 
 ## Check the forecast every 12 hours
 

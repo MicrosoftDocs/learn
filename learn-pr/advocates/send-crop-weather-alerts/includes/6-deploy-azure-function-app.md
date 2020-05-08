@@ -93,6 +93,35 @@ The Function application's source code lives in a repository on GitHub.
     git clone https://github.com/MicrosoftDocs/mslearn-send-crop-weather-alerts.git
     ```
 
+This code contains a timer trigger that runs at 12 hour intervals. This is perfect for a final app, but for testing purposes is too long. If you deploy this code, you won't see a response message for 12 hours, by which time the sandbox will have ended and the app will be deleted.
+
+To see results faster, change this to run every 15 minutes.
+
+1. Use the **nano** editor to edit the file using the following commands:
+
+    ```azurecli
+    cd mslearn-send-crop-weather-alerts
+    nano CheckForecast/function.json
+    ```
+
+1. Navigate using cursor keys to line 8, and change the text:
+
+    ```json
+    "schedule": "12:00:00"
+    ```
+
+    to
+
+    ```json
+    "schedule": "0 */10 * * * *"
+    ```
+
+    This will schedule the trigger to run every 10 minutes.
+
+1. Save the file by pressing `ctrl+o`, then press return to overwrite the existing file.
+
+1. Exit nano by pressing `ctrl+x`
+
 ## Deploy the application to Azure Functions
 
 We're now ready to deploy our application to Azure Functions.
@@ -100,7 +129,6 @@ We're now ready to deploy our application to Azure Functions.
 1. Run the following command to publish the code
 
     ```azurecli
-    cd mslearn-send-crop-weather-alerts
     func azure functionapp publish $FUNCTIONS_APP_NAME --python
     ```
 
