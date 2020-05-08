@@ -87,6 +87,8 @@ You get a value from an element of an array in the same manner.  Use the index o
 Modify the code from Step 4 to write out the value of each fraudulent Order ID using string interpolation.  Your code should match the following passage of code.
 
 ```csharp-interactive
+string[] fraudulentOrderIDs = new string[3];
+
 fraudulentOrderIDs[0] = "A123";
 fraudulentOrderIDs[1] = "B456";
 fraudulentOrderIDs[2] = "C789";
@@ -119,6 +121,8 @@ Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
 Your .NET Editor should match the following passage of code.
 
 ```csharp-interactive
+string[] fraudulentOrderIDs = new string[3];
+
 fraudulentOrderIDs[0] = "A123";
 fraudulentOrderIDs[1] = "B456";
 fraudulentOrderIDs[2] = "C789";

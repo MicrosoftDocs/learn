@@ -15,7 +15,7 @@ We'll add to the number of rules as we expand our understanding of the `if` stat
 > [!Important]
 > We'll make extensive use of the `System.Random` class which we covered in the module "Call methods from the .NET Class Library using C#".  If you need a refresher how `Random.Next()` works, please refer to that module.
 
-### Step 1 - Write code that generates two random numbers and displays them in output.
+### Step 1 - Write code that generates three random numbers and displays them in output.
 
 Delete the code from all previous steps by highlighting the code and selecting the backspace key on the keyboard.
 

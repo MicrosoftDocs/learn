@@ -1,6 +1,6 @@
 Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
 
-You've been asked to add a feature to your company's software.  The feature is intended to improve the renewal rate of subscriptions to the software.  Your task is to display a renewal message when a user logs into the software system and their subscription will soon end.  You'll need two add a couple of decision statements to properly add branching logic to the application to satisfy the requirements.
+You've been asked to add a feature to your company's software.  The feature is intended to improve the renewal rate of subscriptions to the software.  Your task is to display a renewal message when a user logs into the software system and their subscription will soon end.  You'll need to add a couple of decision statements to properly add branching logic to the application to satisfy the requirements.
 
 ### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise.
 
