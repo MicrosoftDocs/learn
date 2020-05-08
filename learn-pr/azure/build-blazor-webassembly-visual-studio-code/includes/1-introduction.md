@@ -16,8 +16,4 @@ In this module, you will:
 ## Prerequisites
 
 - Basic knowledge of web app concepts
-- Basic knowledge of Blazor
-- Basic knowledge of ASP.NET Core
-- Basic knowledge of Razor pages
 - C# .NET experience at a beginner level
-- Experience with Visual Studio Code
