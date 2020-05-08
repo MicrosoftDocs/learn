@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python
+metadata:
+  title: Simulate And Generate Empirical distributions In Python
+  description: Learn how to simulate and generate empirical distributions in python
+  ms.date: 19/03/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Simulate And Generate Empirical distributions In Python
+summary: Learn how to simulate and generate empirical distributions in python
+abstract: |
+  In this module, you will:
+  - Study the idea of randomness, analyzed its importance, learned relevant terminology and studied the Law of Averages.
+  - Examine different types of samples and different sampling techniques.
+  - Learn about Empirical & Probability Distributions and their differences.
+  - Explore various components of a simulation and simulate a statistic.
+prerequisites: None
+iconUrl: /learn/achievements/student-evangelism/simulate-and-generate-empirical-distributions-in-python.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.setup
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.introduction
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.monty-hall-problem
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.sampling-and-empirical-distributions
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.empirical-distributions
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.sampling-from-a-population
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.empirical-distribution-of-a-statistic
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.randomization
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.endnote
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.mini-labs
+- learn.student-evangelism.simulate-and-generate-empirical-distributions-in-python.summary
+badge:
+  uid: learn.simulate-and-generate-empirical-distributions-in-python.badge
