@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.responsible-bots.3-bot-framework
-title: Microsoft Bot Framework and Azure Bot Service
+title: Exercise - Set up your bot
 metadata:
-  title: Microsoft Bot Framework and Azure Bot Service
+  title: Exercise - Set up your bot
   description: In this unit, we'll start developing our responsible bot by creating an Azure bot service.
   ms.date: 05/19/2020
   author: shwars

@@ -1,4 +1,4 @@
-Before we start to build our **GeoFriend** bot, let's look at basic bot operation.
+Before we start to build our **GeoFriend** bot, let's quickly review the basics of how bots work.
 
 ## Review basic bot operation
 
@@ -33,7 +33,7 @@ To build our bot, we'll use Azure [Language Understanding][LUIS] (LUIS). LUIS ca
 
 Let's start to create our **GeoFriend** assistant chat bot. The easiest way to start is with a new Azure Bot Service.
 
-1. Go to the [Azure portal][azure-portal-] and sign in to your Azure account.
+1. Go to the [Azure portal][azure-portal] and sign in to your Azure account.
 
     > [!div class="mx-imgBorder"]
     > ![Sign in to your account on the Azure portal.](../media/azure-portal.png)
@@ -47,7 +47,7 @@ Let's start to create our **GeoFriend** assistant chat bot. The easiest way to s
 
 1. Fill in the bot parameters.
 
-    - **Bot Handle**: Enter the name for our bot, **GeoFriend**.
+    - **Bot Handle**: Enter the name for your bot. We will use **GeoFriend**, but you need to pick a unique name in Azure.
     - **Resource group**: Select **Create New** and enter a name for the resource group.
     - **Location**: Select the data center location closest to you.
     - **Pricing Tier**: Select **F0**, which is the free tier.
@@ -106,12 +106,12 @@ We can see information about our bot in the Azure portal, and also complete deve
 
 1. Under your **resource group**, look for these important components:
 
-    - **GeoFriend**: A web app bot that connects your bot code to the different communication channels. This resource also gives you access to bot code and lets you test the bot in web chat.
-    - **geofriend**: An application service that contains the code for your bot. We'll choose this service later, when we deploy the bot code from Visual Studio.
-    
+    - **Your Bot**: A web app bot (with the name you gave it) that connects your bot code to the different communication channels. This resource also gives you access to bot code and lets you test the bot in web chat.
+    - **Your App Service**: An application service that contains the code for your bot. We'll choose this service later, when we deploy the bot code from Visual Studio.
+
     You should also see the Application Insights instance and the bot App Service plan. You might need to adjust the plan to scale the bot to handle more requests, or move the bot onto a free plan.
 
-1. Select the **GeoFriend** link. You'll see the bot page in the Azure portal.
+1. Select your bot's link. You'll see the bot page in the Azure portal.
     
     > [!div class="mx-imgBorder"]
     > ![Review the bot page in the Azure portal.](../media/azure-portal-bot-page.png)
@@ -128,7 +128,7 @@ From the bot page in the Azure portal, we can try our new bot in action.
     
     > [!div class="mx-imgBorder"]
     > ![You can test your bot with the web chat box.](../media/azure-portal-web-chat.png)
-    
+
 1. Try entering some text into the web chat box, and see how the bot responds.
 
 In the next unit, we'll learn how to change the behavior for our bot.
@@ -138,7 +138,7 @@ In the next unit, we'll learn how to change the behavior for our bot.
 [BotFW]: https://dev.botframework.com/
 [BotService]: https://azure.microsoft.com/services/bot-service/
 [CoServ]: https://microsoft.com/cognitive
-[azure-portal-]: https://portal.azure.com
+[azure-portal]: https://portal.azure.com?azure-portal=true
 [AdjustServicePlan]: https://docs.microsoft.com/azure/app-service/app-service-plan-manage
 [LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/
 [QnAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/

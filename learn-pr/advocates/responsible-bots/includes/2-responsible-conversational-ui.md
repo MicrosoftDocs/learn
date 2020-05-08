@@ -1,6 +1,6 @@
 To help developers create responsible bots, Microsoft has outlined [10 guidelines for developers of conversational UI][Guidelines10]. In this course, we'll cover the major principles that you'll need to develop a simple bot. You can learn more about all of the principles in [this interactive demo][InteractiveDemo].
 
-**Developers are accountable for the bots they deploy**. This major principle is the foundation for responsible bot creation. It's important for developers to be aware of responsible conversational UI principles.
+**Developers are accountable for the bots they deploy**. This major principle is the foundation for responsible bot creation. It's important for developers to be aware of responsible conversational UI principles so they can create the best experience possible for their users.
 
 ## Give your bot a clear goal
 
@@ -18,7 +18,7 @@ From the start of the conversation, make it clear that the user is talking to a 
 
 ## Build trust with the user
 
-There are some useful tactics you can use to build trust between your user and the bot. 
+There are some useful tactics you can use to build trust between your user and the bot.
 
 - **Clear introduction**: Clearly introduce the bot as a technology assistant at the beginning of the conversation.
 - **Robot picture**: Use a picture of a robot instead of a human face. The picture reminds users "who" they're talking to.
@@ -42,7 +42,7 @@ Now that we know some of the main principles for building responsible bots, let'
 <!-- Links -->
 
 [Guidelines10]: https://www.microsoft.com/research/publication/responsible-bots/
-[InteractiveDemo]: https://aidemos.microsoft.com/responsible-conversational-ai/building-a-trustworthy-bot
+[InteractiveDemo]: https://aidemos.microsoft.com/responsible-conversational-ai/building-a-trustworthy-bot?azure-portal=true
 [PersonalityChat]: https://www.microsoft.com/research/project/personality-chat/
 [RespAI]: https://www.microsoft.com/ai/responsible-ai
 [TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/

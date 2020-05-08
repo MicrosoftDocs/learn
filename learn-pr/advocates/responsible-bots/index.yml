@@ -1,19 +1,23 @@
 ### YamlMime:Module
 uid: learn.advocates.responsible-bots
 metadata:
-  title: Build responsible conversational UI
+  title: Create a chat bot to help students learn with Azure Bot Service
   description: Learn how to build responsible conversational UI by using bots.
   ms.date: 05/19/2020
   author: shwars
   ms.author: dmitryso
   ms.topic: interactive-tutorial
   ms.prod: learning-advocates
-title: Build responsible conversational UI
-summary: In this course, we'll learn about responsible conversational AI, and how to make bots that a user can trust and enjoy speaking to. We'll cover the main principles and then apply those principles to building simple a **Educational Assistant for Geography** bot, which we call **GeoFriend**. Our bot will help school children to learn more about geography and answer some questions, and also learn some study techniques!
+title: Create a chat bot to help students learn with Azure Bot Service
+summary: Learn how to build a simple bot called **GeoFriend**, to help students learn the basics of geography. This module covers the principles of responsible conversational AI and how to make bots that a user can trust and enjoy speaking to. Our bot will help school children to learn more about geography and answer some questions, and also learn some study techniques!
 abstract: |
   In this module, you will:
-  - Learn basic principles to develop responsible conversational experiences for users
-  - Develop a simple educational assistant with Azure Bot Service and Azure Cognitive Services
+  - Learn the basic building blocks to create conversational UI for users
+  - Understand the principles to develop responsible bots
+  - Create a simple educational bot using Azure Bot Service
+  - Improve upon your bot's ability to understand by adding LUIS
+  - Give your bot personality with Azure QnA Maker
+  - Explore how your bot could become more culturally sensitive
 # placeholder icon
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -26,6 +30,9 @@ products:
 - vs
 prerequisites: |
   - Basic knowledge of C\#
+  - An Azure account
+  - Visual Studio installed and set up on your local machine
+
 units:
 - learn.advocates.responsible-bots.1-introduction
 - learn.advocates.responsible-bots.2-responsible-conversational-ui
