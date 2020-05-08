@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-operational-excellence.2-design-build-orchestr
 title: Design, build, and orchestrate with modern practices
 metadata:
   title: Design, build, and orchestrate with modern practices
-  description: Design, build, and orchestrate with modern practices
+  description: Learn how to design, build, and orchestrate cloud-based solutions using modern practices.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -23,9 +23,9 @@ quiz:
     - content: 'Longer time between validation of developer code.'
       isCorrect: false
       explanation: 'Code is checked in and validated more frequently when using CI/CD.'
-    - content: 'Manual build processes.'
+    - content: 'Build processes revert to manual compilation, thereby allowing you to catch potential issues.'
       isCorrect: false
-      explanation: 'Build processes are fully automated in CI/CD workflows.'
+      explanation: 'Build processes are fully automated in CI/CD workflows, with automated testing built into your pipeline.'
     - content: 'Earlier identification of code defects.'
       isCorrect: true
       explanation: 'Your developers will be able to identify and resolve code defects earlier in the development cycle.'
