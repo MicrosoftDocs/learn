@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: True
 interactive: bash-editor
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/6-deploy-azure-function-app.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.advocates.send-crop-weather-alerts
 metadata:
-  title: Send Crop Weather Alerts
+  title: Improve crop health for farmers with SMS weather alerts using Azure Maps and Azure Functions
   description: In this module, you'll deploy an application that allows farmers to use SMS messaging to set up temperature alerts for specific locations. These alerts would help farmers know when to plant, when to water, or when to protect their crops.
   ms.date: 05/07/2020
   author: berndverst
   ms.author: beverst
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Send Crop Weather Alerts
+title: Improve crop health for farmers with SMS weather alerts using Azure Maps and Azure Functions
 summary: In this module, you'll deploy an application that allows farmers to use SMS messaging to set up temperature alerts for specific locations. These alerts would help farmers know when to plant, when to water, or when to protect their crops.
 abstract: |
   In this module you'll:

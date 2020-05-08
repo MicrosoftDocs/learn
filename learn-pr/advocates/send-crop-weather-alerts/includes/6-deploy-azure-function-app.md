@@ -132,11 +132,11 @@ We're now ready to deploy our application to Azure Functions.
     func azure functionapp publish $FUNCTIONS_APP_NAME --python
     ```
 
-## Obtain functions endpoints
+## Obtain the HTTP trigger endpoint
 
 One of our functions is configured to respond to HTTP requests, which will be made by Twilio.
 
-1. Run the following command to obtain and note down the full endpoint URL.
+1. Run the following command to obtain the full endpoint URL.
 
     ```azurecli
     func azure functionapp list-functions $FUNCTIONS_APP_NAME --show-keys
@@ -156,4 +156,4 @@ One of our functions is configured to respond to HTTP requests, which will be ma
 
     The full URL can be found after `Invoke url:`. Note this down.
 
-In this unit, you created an Azure Function app, deployed an existing app to Azure Functions, and configured all required environment variables known as App Settings for the app. Finally, you obtained the endpoint URL for one of the functions to be called by Twilio.
+In this unit, you created an Azure Function app, deployed code to this app, and configured all required environment variables known as App Settings for the app. Finally, you obtained the endpoint URL for one of the functions to be called by Twilio. Next, you will connect the Function App to Twilio.

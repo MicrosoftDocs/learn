@@ -9,6 +9,6 @@ metadata:
   ms.date: 05/07/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/5-create-twilio-account.md)]
