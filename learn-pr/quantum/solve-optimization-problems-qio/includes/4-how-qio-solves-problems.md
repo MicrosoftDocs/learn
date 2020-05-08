@@ -30,4 +30,4 @@ Initially we begin with the quantum state in a broad superposition over many pos
 
 This parameter defines the radius of neighboring states we can move to. As time goes on and we get closer to a solution, this radius becomes smaller and smaller. By the end of the annealing process, the system has settled into one particular low-energy configuration that can then be measured, which gives us the solution to the optimization problem. The most mathematically clean formulation of quantum annealing is called *adiabatic quantum optimization*, and this is what quantum-inspired methods attempt to emulate.
 
-Azure Quantum offers a range of solvers that are standard implementations of simulated annealing and (simulated) quantum annealing, and also variations on those methods too. The latter- simulated quantum annealing and variations - are QIO.
+Azure Quantum offers a range of solvers that are standard implementations of simulated annealing and (simulated) quantum annealing, and also variations on those methods too. The latter - simulated quantum annealing and variations - are examples of QIO.

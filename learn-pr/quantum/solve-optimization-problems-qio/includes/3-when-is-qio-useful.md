@@ -14,7 +14,7 @@ Consider the following plot of an objective function that looks like a single sm
 
 ![A plot of an optimization landscape that looks like a single smooth valley](../media/plot_simple.png)
 
-This kind of problem is easily solved with techniques such as gradient descent, where you begin from an initial starting point and greedily move to any solution with a lower cost. After a few moves, the solution converges to the *global minimum*. The global minimum is the lowest point is the optimization landscape. QIO offers no advantages over other techniques with these straightforward problems.
+This kind of problem is easily solved with techniques such as gradient descent, where you begin from an initial starting point and greedily move to any solution with a lower cost. After a few moves, the solution converges to the *global minimum*. The global minimum is the lowest point in the optimization landscape. QIO offers no advantages over other techniques with these straightforward problems.
 
 ## A structured, rugged landscape
 

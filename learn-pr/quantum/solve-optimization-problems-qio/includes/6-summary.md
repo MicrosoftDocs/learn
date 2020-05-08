@@ -1,4 +1,4 @@
-Congratulations! You now have a basic understanding of QIO and some of the problems it can solve. Here's a brief recap:
+You now have a basic understanding of QIO and some of the problems it can solve. Here's a brief recap:
 
 * QIO is based on a computational model called *adiabatic quantum computing*.
 * Adiabatic quantum algorithms will eventually run on quantum computers. Today, we can emulate these algorithms by using quantum-inspired techniques on classical hardware.
