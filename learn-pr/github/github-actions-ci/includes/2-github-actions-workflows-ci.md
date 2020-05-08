@@ -11,7 +11,7 @@ You'll learn to:
 
 ## Create a workflow from a template
 
-To create a workflow, you start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-hello/?azure-portal=true) module.
+To create a workflow, you start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-automate-tasks/?azure-portal=true) module.
 
 On the main page of your repository, click the *Actions* tab to create a new workflow. You'll see that you can choose from many different templates. Two examples are the *Node.js* template, which does a clean install of node dependencies, builds the source code and runs tests across different versions of Node, and the *Python package* template, which installs Python dependencies and runs tests, including lint, across different versions of Python.
 
@@ -54,7 +54,7 @@ There is one ```job``` in this workflow. Let's go over what it does.
 
 The ```runs-on:``` attribute specifies that, for the operating system, the workflow runs on ```ubuntu-latest```. The ```node-version:``` attribute specifies that there will be two builds, one for Node version 10.x and one for Node version 12.x. We'll discuss the ```matrix``` portion in depth later, when we customize the workflow.
 
-The ```steps``` in the job use the GitHub Actions [actions/checkout@v2](https://github.com/actions/checkout?azure-portal=true) action to get the code from your repository into the VM, and the [actions/setup-node@v1](https://github.com/actions/setup-node?azure-portal=true) action to set up the right version of Node.js. We specify that we're going to test two versions of Node.js with the ```${{ matrix.node-version }}``` attribute. This atttribute points to the matrix we defined at the top of the file.
+The ```steps``` in the job use the GitHub Actions [actions/checkout@v2](https://github.com/actions/checkout?azure-portal=true) action to get the code from your repository into the VM, and the [actions/setup-node@v1](https://github.com/actions/setup-node?azure-portal=true) action to set up the right version of Node.js. We specify that we're going to test two versions of Node.js with the ```${{ matrix.node-version }}``` attribute. This attribute points to the matrix we defined at the top of the file.
 
 The last part of this step executes commands used by Node.js projects. The ```npm ci``` command installs dependencies from the *package-lock.json* file, ```npm run build --if-present``` runs a build script if it exists, and ```npm test``` runs the testing framework. Notice that this template includes both the build and test steps in the same job.
 
@@ -119,7 +119,7 @@ Storing an artifact helps to preserve it between jobs. Each job uses a fresh ins
 
 ## Artifact storage
 
-Artifacts are stored in storage space on GitHub. The space is free for public repositories and some amount is free for private repositories, depending on the account. Github stores your artifact for 90 days.
+Artifacts are stored in storage space on GitHub. The space is free for public repositories and some amount is free for private repositories, depending on the account. GitHub stores your artifact for 90 days.
 
 In the workflow snippet below, notice that in the ```actions/upload-artifact@master``` action there is a ```path:``` attribute. This is the path to store the artifact. Here, we specify *public/* to upload everything to a directory. If it was just a file that we wanted to upload, we could use something like *public/mytext.txt*.
 
