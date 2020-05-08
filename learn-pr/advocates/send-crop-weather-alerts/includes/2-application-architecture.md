@@ -9,7 +9,7 @@ You'll learn that:
 
 ## Receive text messages
 
-To support the most users around the world, the application interface uses text messaging. Twilio is a third-party service that can create programmable phone numbers for sending and receiving text messages. Every time a text message is sent to our application's phone number, custom code in Azure is triggered with the help of the Azure Functions service. This code tracks all the locations and temperature ranges that farmers want to know about and keeps it all in table storage.
+To support the most users around the world, many of whom may only have access to a basic phone, the application interface uses text messaging. Twilio is a third-party service that can create programmable phone numbers for sending and receiving text messages. Every time a text message is sent to our application's phone number, custom code in Azure is triggered with the help of the Azure Functions service. This code tracks all the locations and temperature ranges that farmers want to know about and keeps it all in table storage.
 
 The code sets up text-message alerts in the following format:
 

@@ -8,7 +8,7 @@ In this module, you'll work with an application that lets farmers use text messa
 
 ![A screenshot of text messages sent to and received by our application](../media/text-message.png)
 
-The temperature and location services needed by this app will use Azure Maps. Azure Maps is a collection of geospatial services that use fresh mapping data to provide geographic context to web and mobile applications. These services include APIs for maps, vehicle routing, weather, and geofencing. 
+The temperature and location services needed by this app will use Azure Maps. Azure Maps is a collection of geospatial services that use fresh mapping data to provide geographic context to web and mobile applications. These services include APIs for maps, vehicle routing, weather, and geofencing.
 
 You'll use a third-party communications service, Twilio, to manage sending and receiving text messages, and you'll coordinate app functionality by using Azure Functions.
 
