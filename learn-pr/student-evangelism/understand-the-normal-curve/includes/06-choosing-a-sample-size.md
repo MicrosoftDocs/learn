@@ -7,8 +7,6 @@ import matplotlib.pyplot as plots
 plots.style.use('fivethirtyeight')
 ```
 
-### Choosing a Sample Size
-
 Candidate A is contesting an election. A polling organization wants to
 estimate the proportion of voters who will vote for her. Let's suppose
 that they plan to take a simple random sample of voters, though in
@@ -87,7 +85,7 @@ proportion of 1's and 0's, and one with 90% 1's and 10% 0's. Which one
 has the bigger SD?
 
 ``` {.python}
-# HIDDEN 
+# HIDDEN
 pop_50 = make_array(1, 1, 1, 1, 1, 0, 0, 0, 0, 0)
 pop_90 = make_array(1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
 
@@ -130,7 +128,7 @@ for i in np.arange(1, 10, 1):
     # Create an array of i 1's and (10-i) 0's
     population = np.append(np.ones(i), 1-np.ones(10-i))
     sd = np.append(sd, np.std(population))
-    
+
 zero_one_sds = Table().with_columns(
     "Population Proportion of 1's", np.arange(0.1, 1, 0.1),
     "Population SD", sd

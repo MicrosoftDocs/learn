@@ -8,8 +8,6 @@ import math
 import numpy as np
 ```
 
-### The SD and the Normal Curve
-
 We know that the mean is the balance point of the histogram. Unlike the
 mean, the SD is usually not easy to identify by looking at the
 histogram.

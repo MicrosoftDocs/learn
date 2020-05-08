@@ -1,8 +1,9 @@
-### Note: You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment
+> [!NOTE]
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment
 
-### If you haven't set up your online Virtual Studio Code environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-### Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking" target="_blank" rel="noopener">Visual Studio Online</a>
+Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 ``` {.python}
 from datascience import *
@@ -20,15 +21,13 @@ from scipy import stats
 colors = Table.read_table(path_data + 'roulette_wheel.csv').column('Color')
 pockets = make_array('0','00')
 for i in np.arange(1, 37):
-    pockets = np.append(pockets, str(i)) 
+    pockets = np.append(pockets, str(i))
 
 wheel = Table().with_columns(
     'Pocket', pockets,
     'Color', colors
 )
 ```
-
-### The Central Limit Theorem
 
 Very few of the data histograms that we have seen in this course have
 been bell shaped. When we have come across a bell shaped distribution,
@@ -562,7 +561,7 @@ for i in np.arange(repetitions):
     sample = model.sample(num_plants)
     new_prop = np.count_nonzero(sample.column('Color') == 'Purple')/num_plants
     props = np.append(props, new_prop)
-    
+
 results = Table().with_column('Sample Proportion: 200', props)
 ```
 
@@ -591,7 +590,7 @@ for i in np.arange(repetitions):
     sample = model.sample(num_plants)
     new_prop = np.count_nonzero(sample.column('Color') == 'Purple')/num_plants
     props2 = np.append(props2, new_prop)
-    
+
 results = results.with_column('Sample Proportion: 800', props2)
 ```
 

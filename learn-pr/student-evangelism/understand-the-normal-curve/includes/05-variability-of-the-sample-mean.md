@@ -1,8 +1,9 @@
-### Note: You can find an interactive version of this unit named **variability-of-the-sample-mean.ipynb** in your virtual environment
+> [!NOTE]
+> You can find an interactive version of this unit named **variability-of-the-sample-mean.ipynb** in your virtual environment
 
-### If you haven't set up your online Virtual Studio Code environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-### Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking" target="_blank" rel="noopener">Visual Studio Online</a>
+Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 
 ``` {.python}
@@ -13,8 +14,6 @@ path_data = '../../../../data/'
 import matplotlib.pyplot as plots
 plots.style.use('fivethirtyeight')
 ```
-
-### The Variability of the Sample Mean
 
 By the Central Limit Theorem, the probability distribution of the mean
 of a large random sample is roughly normal. The bell curve is centered
@@ -51,7 +50,7 @@ plots.scatter(pop_mean, -0.0008, marker='^', color='darkblue', s=60)
 plots.ylim(-0.004, 0.04);
 ```
 
-    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning: 
+    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning:
     The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
       alternative="'density'", removal="3.1")
 
@@ -70,7 +69,7 @@ size, and the number of simulations.
 """Empirical distribution of random sample means"""
 
 def simulate_sample_mean(table, label, sample_size, repetitions):
-    
+
     means = make_array()
 
     for i in range(repetitions):
@@ -79,7 +78,7 @@ def simulate_sample_mean(table, label, sample_size, repetitions):
         means = np.append(means, new_sample_mean)
 
     sample_means = Table().with_column('Sample Means', means)
-    
+
     # Display empirical histogram and print all relevant quantities
     sample_means.hist(bins=20)
     plots.xlabel('Sample Means')
@@ -103,7 +102,7 @@ plots.xlim(5, 35)
 plots.ylim(0, 0.25);
 ```
 
-    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning: 
+    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning:
     The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
       alternative="'density'", removal="3.1")
 
@@ -122,7 +121,7 @@ plots.xlim(5, 35)
 plots.ylim(0, 0.25);
 ```
 
-    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning: 
+    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning:
     The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
       alternative="'density'", removal="3.1")
 
@@ -141,7 +140,7 @@ plots.xlim(5, 35)
 plots.ylim(0, 0.25);
 ```
 
-    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning: 
+    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning:
     The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
       alternative="'density'", removal="3.1")
 

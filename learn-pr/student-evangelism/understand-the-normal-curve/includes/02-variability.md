@@ -7,8 +7,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Variability
-
 The mean tells us where a histogram balances. But in almost every
 histogram we have seen, the values spread out on both sides of the mean.
 How far from the mean can they be? To answer this question, we will
