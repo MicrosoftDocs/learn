@@ -34,6 +34,8 @@ In these cases, where the solutions are completely random, then no algorithm can
 
 ## Summary
 
+![A summary that shows how a complex, structured landscape works best for QIO](../media/plot_summary.png)
+
 To summarize, here are the necessary conditions for QIO to perform well:
 
 - Optimization landscapes should be rugged but structured. Such landscapes occur frequently in  real-world problems.
