@@ -1,4 +1,4 @@
-In [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-qdk?azure-portal=true), you learned about the Q# language by building a program that measures qubits to generate random numbers.
+In [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true), you learned about the Q# language by building a program that measures qubits to generate random numbers.
 
 In this module, you'll learn about quantum-inspired algorithms. In particular, you'll see how they can be applied to solve optimization problems, which is an area called quantum-inspired optimization (QIO). In this module, we'll look at Contoso Logistics Inc, a freight company that operates two container ships.
 
@@ -12,10 +12,10 @@ In this module you'll:
 
 - Learn about the origins of quantum-inspired algorithms.
 - See which kinds of problems are best suited to these techniques.
-- Understand how QIO emulates quantum physics to solve optimization problems.
-- Apply QIO to a real-world optimization problem.
+- Understand how quantum-inspired optimization emulates quantum physics to solve difficult problems.
+- Apply quantum-inspired optimization to a real-world problem.
 
 ## Prerequisites
 
 - Basic knowledge of quantum computing
-- [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-qdk?azure-portal=true)
+- [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)

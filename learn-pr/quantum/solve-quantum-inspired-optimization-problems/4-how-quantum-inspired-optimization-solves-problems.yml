@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-quantum-inspired-optimization-problems.4-how-quantum-inspired-optimization-solves-problems
+title: How does quantum-inspired optimization solve problems?
+metadata:
+  title: How does quantum-inspired optimization solve problems?
+  description: Learn how simulated annealing and quantum annealing can help solve optimization problems.
+  ms.date: 05/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-how-quantum-inspired-optimization-solves-problems.md)]
