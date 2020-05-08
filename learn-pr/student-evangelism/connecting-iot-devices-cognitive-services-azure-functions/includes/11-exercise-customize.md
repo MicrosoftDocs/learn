@@ -2,26 +2,26 @@ In this unit, you'll modify the source language and you'll change the target lan
 
 1. In the Visual Studio Code, go to the Device\DevKitTranslator.ino. There are 9 languages described and Chinese is selected as a default language.
 
-![An illustration is showing the languages are described.](../media/languages.png)
+    ![An illustration is showing the languages are described.](../media/languages.png)
 
 2. Remove Chinese, change the default language to English and save it.
 
-![An illustration is showing the modified languages.](../media/new-languages.png)
+    ![An illustration is showing the modified languages.](../media/new-languages.png)
 
 3. Open the Functions\SpeechTranslation.cs. The target language is defined as English (en-US).
 
-![An illustration is showing the target language.](../media/target-language.png)
+    ![An illustration is showing the target language.](../media/target-language.png)
 
 4. Change the target language to Spanish(es-ES) and save it.
 
-![An illustration is showing the target language.](../media/new-target-language.png)
+    ![An illustration is showing the target language.](../media/new-target-language.png)
 
->[!NOTE] 
->You can find many supported languages by Speech Translation API from the [Microsoft page](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support#speech-translation).
+    >[!NOTE] 
+    >You can find many supported languages by Speech Translation API from the [Microsoft page](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support#speech-translation).
 
 5. Click F1, type, and select Azure IoT Device Workbench: Deploy to Azure.... If VS Code asks for confirmation for redeployment, click Yes.
 
-![An illustration is showing how to deploy Azure function to the cloud.](../media/deploy-azure-function-2.png)
+    ![An illustration is showing how to deploy Azure function to the cloud.](../media/deploy-azure-function-2.png)
 
 Make sure the deployment is successful. 
 

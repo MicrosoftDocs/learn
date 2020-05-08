@@ -1,6 +1,5 @@
 ## Using the Azure Cloud Shell
-To start Azure Cloud Shell,  
-Launch Cloud Shell from the top navigation of the Azure portal.
+To start Azure Cloud Shell,  launch Cloud Shell from the top navigation of the Azure portal.
 
 ![An illustration is showing how to open Azure Cloud Shell.](../media/cloud-shell.png)
 
