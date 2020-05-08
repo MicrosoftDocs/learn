@@ -20,19 +20,19 @@ quiz:
     choices:
     - content: 'False'
       isCorrect: true
-      explanation: Correct, you don't need to deploy your own instance of Event Grid, the service natively spreads across multiple fault domains in every region, and across availability zones. You just need to configure event subscriptions in services that support it. 
+      explanation: Correct. You don't need to deploy your own instance of Event Grid. The service natively spreads across multiple fault domains in every region, and across availability zones. You just need to configure event subscriptions in services that support it. 
     - content: 'True'
       isCorrect: false
-      explanation: No, you don't need to deploy your own instance of Event Grid, the service natively spreads across multiple fault domains in every region, and across availability zones. You just need to configure event subscriptions in services that support it. 
+      explanation: No, you don't need to deploy your own instance of Event Grid. The service natively spreads across multiple fault domains in every region, and across availability zones. You just need to configure event subscriptions in services that support it. 
 
-  - content: 'Azure IoT Hub can only publish events related to devices life cycle.'
+  - content: 'Azure IoT Hub can publish only events related to device life cycle.'
     choices:
     - content: 'True'
       isCorrect: false
-      explanation: IoT Hub can publish events related to devices telemetry as well as life cycle.
+      explanation: IoT Hub can publish events related to device telemetry as well as life cycle.
     - content: 'False'
       isCorrect: true
-      explanation: IoT Hub can publish events related to devices telemetry as well as life cycle.
+      explanation: IoT Hub can publish events related to device telemetry as well as life cycle.
 
   - content: 'Azure IoT Hub event types are prefixed with:'
     choices:
@@ -51,12 +51,12 @@ quiz:
 
   - content: 'When filtering events before they are sent to Event Grid, you can filter on the following elements:'
     choices:
-    - content: 'Event type, Telemetry, Device ID'
+    - content: 'Event type, telemetry, device ID'
       isCorrect: true
       explanation: You are correct.
-    - content: 'Event type, IoT Hub name, Device ID'
+    - content: 'Event type, IoT hub name, device ID'
       isCorrect: false
-      explanation: You cannot filter on the IoT Hub name, and you don't need to as you are configuration the filters for the event subscription from within a specific IoT Hub already.
-    - content: 'Event type, IoT Hub name, Telemetry, Device ID'
+      explanation: You can't filter on the IoT hub name. And you don't need to, because you're configuring the filters for the event subscription from within a specific IoT hub already.
+    - content: 'Event type, IoT hub name, telemetry, device ID'
       isCorrect: false
-      explanation: You cannot filter on the IoT Hub name, and you don't need to as you are configuration the filters for the event subscription from within a specific IoT Hub already.
+      explanation: You can't filter on the IoT hub name. And you don't need to, because you're configuring the filters for the event subscription from within a specific IoT hub already.
