@@ -1,94 +1,108 @@
-By now, we've added most of the functionality to our bot, but some small pieces are missing. In this unit, we'll make small improvements to the bot to implement more  **Responsible Conversational UI** principles.
+So far, we've added some good functionality to our bot. There are a few small pieces that are missing. In this unit, we'll improve our bot to implement more **responsible conversational UI** principles.
 
-## Providing help
+## Help your users
 
-When a user starts using a bot for the first time, he or she does not always know what to say. Even though we all know how speak a human language, bots natural language understanding capabilities are not always up to the standards. That's why it is very helpful to provide user with some examples of possible commands that bot will definitely understand.
-
-Also, in many cases all functionality of a bot is not immediately clear, and giving a brief overview with sample commands is extremely helpful to the user.
+When a user first starts to work with a bot, they don't always know what to say. The user audience often speaks multiple languages and comes from many different cultures. Although a bot can be designed with natural language understanding, the capabilities can still be limited. In many cases, all of the bot's functionality isn't immediately clear. Users find it helpful when a bot begins with a brief overview and sample commands.
 
 > [!TIP]
-> Make sure that a user never feels lost, and he always knows what to do as the last resort. This can be achieved by implementing **help** command, or giving **menu** of possible options.
+> Design your bot so users can't _get lost_ in the functionality. Always provide a "last resort" option, so users can keep going. A good approach is to have a **help** feature with a **menu** of tasks and commands that the bot understands.
 
-Let's add **help** command to our bot! Because we are using QnA Maker already, all we need to do is to add corresponding text to the knowledge base through the QnA Maker UI.
+Let's add a **help** feature to our bot! Because we're already using QnA Maker, all we need to do is add corresponding text to the knowledge base through the QnA Maker UI.
 
-1. Visit [QnA Maker Portal][QnAPortal] and sign in with your Microsoft Account
-1. Open the knowledge base we have created in the previous unit.
-1. Click on **+ Add QnA Pair**
+1. Go to the [QnA Maker portal][QnAPortal]. Sign in with your Microsoft account or work or school account.
 
-   ![QnA KB Editing](../media/qna-maker-add-pair.png)
+1. Open the knowledge base we created in the previous unit.
 
-1. Type in different phrases that can bring up the help message, for example:
-   - *What can I say?*
-   - *Help*
-   - *I do not know what to do*
-1. As a response, provide some explanatory text about the bot functionality, with the exact examples of phrases.
+1. Select **+ Add QnA Pair**.
 
-   ```markdown
-   This bot can help you with **capitals** of countries. For example, you can say:
+    ![The QnA Maker knowledge base edit dialog.](../media/qna-maker-add-pair.png)
+
+1. Enter phrases to trigger the **help** feature.
+
+    Here are some examples:
+    - What can I say?
+    - Help
+    - I do not know what to do
+
+1. Add the bot response message for the help request.
+
+    Briefly describe the bot functionality. Give examples of phrases that the bot understands. Use Markdown syntax to make your message more readable. You can include URLs for some images, but don't overcomplicate!
+
+    ```markdown
+    This bot can help you with **capitals** of countries.
+    For example, you can say:
+
     * What is the capital of India?
     * In which country is Paris located?
     * What is the population of Beijing?
    
-   You can also look up some **definitions**:
+    You can also look up some **definitions**:
+
     * What is a capital?
     * What is the definition of country?
-   ```
+    ```
 
-   > [!TIP]
-   > You can use markdown syntax to make your message more readable. You can even include URLs to some images (but do not overcomplicate)!
+1. After you add the help message, select **Save and Train**.
 
-1. After you have added the help message, click on **Save and Train**
-1. When training is done - click **PUBLISH** to put the model online.
+1. After the model training is done, select **PUBLISH** to push the model online.
 
-At this point you can start your bot code in Visual Studio and see how it works in the Emulator.
+Now you can start your bot code in Visual Studio and see how it works in the Emulator.
 
 > [!TIP]
-> You can design complex multi-turn help system with QnA Maker using [follow-up prompts and multi-turn conversations][QnAFollowUp].
+> You can design a complex multi-turn help system with QnA Maker by using [follow-up prompts and multi-turn conversations][QnAFollowUp].
 
-## Meaningful welcome message
+## Show a welcome message
 
-Original Echo Bot code contained the functionality to send  user a welcome message. Function `OnMembersAddedAsync` in `Bots\EchoBot.cs` is responsible for monitoring new users in a chat, and when new user enters - it sends him/her a welcome message.
+The **Echo Bot** template includes functionality to send the user a welcome message. The `OnMembersAddedAsync` function in the `Bots\EchoBot.cs` file monitors new users in a chat session. When a new user enters the chat session, the bot sends a welcome message to the user.
 
-This welcome message ideally should serve three important purposes:
+A welcome message provides three important pieces of information:
 
-- Inform a user that he is **talking to a bot**.
-- Outline the **bot's goal**, possibly showing some limitations and typical use cases
-- Make it clear to the user what he can do, for example, mention **help** command that he can user to find more details, or **menu** command to enter menu system with options.
+- Informs the user that they're **talking to a bot**.
+- Outlines the **bot's primary purpose**. As an option, shows limitations and typical use cases.
+- Explains **what the user can do** with the bot. Mentions the **help** feature. Shows the **menu** of options and examples of understood phrases.
 
- Providing meaningful welcome message is a simple thing to do, but it can go a long way. The difficult thing here is to fit all those three important points into one concise message that will look reasonably nice in a small messenger screen. Here is a welcome message I have created for our bot:
+It's easy to add a meaningful welcome message to a bot. A good welcome helps to build trust with your users. The difficult task is to share all pieces of information in a single message that fits on a small screen.
+ 
+Here's a sample welcome message for our bot:
 
 ```csharp
 readonly string welcomeText = 
     "Hello!\n"+
-    "I am a teaching assistant bot that will help you learn **Geography**. I will not be able to teach you, but I can definitely help! Feel free to ask me about different countries and their capitals. If not sure, start with **what can I say?**";
+    "I am a teaching assistant bot that will help you learn **Geography**. I will not be able to teach you, but I can definitely help! Feel free to ask me about different countries and their capitals. If not sure, start with **What can I say?**";
         
 readonly string unknownText = 
     "I am not sure I understand you fully.\n"+
-    "If you are not sure what to say, ask **what can I say?**";
+    "If you are not sure what to say, ask **What can I say?**";
 ```
 
-I have also changed the message that the bot displays if it does not understand the command, and moved those messages into string constants in the `EchoBot` class, so they are easy to modify. 
+We need to respond to a user, when the bot doesn't understand the user's input. The sample phrases shown in the code snippet are saved as string constants in the `EchoBot` class. You can modify these constants as needed.
 
-Here is how the initial conversation with our bot might look like:
+Here's an example of an initial conversation between our bot and a user:
 
-![Welcome Message and Help](../media/help-conversation.png)
+![A sample welcome message and help feature for our bot.](../media/help-conversation.png)
 
-## More visual interaction
+## Add visual interactions
 
-Interacting with a bot using plain text solves most of the problems, but sometimes it is useful to be able to communicate through more visual means. Bot Framework supports that by using the following mechanisms:
+Users can accomplish most tasks by using plain text to interact with a bot. Sometimes it's helpful to communicate with the bot through more visual means. The Bot Framework supports visual interaction in the following ways:
 
-- A user can send an **attachment** to the bot, which can be a picture, a document, or essentially any file. Programmatically we receive the URL of that document, and can do whatever we want with it. Learn more about attachments [in the documentation][BotAttachments].
-- A bot can return back an **adaptive card**, which is a way to represent richer content than just text. A card can contain an image, a button, or a carousel of images. Learn more about cards [in this documentation][AdaptiveCards].
+- A user can send an **attachment** to the bot. An attachment can be a picture, a document, or most any file. When the bot receives the URL of the file, the bot processes the content according to the bot's functionality. To learn more about attachments, read about the [Bot Service][BotAttachments].
+- A bot can return an **adaptive card** to the user. An adaptive card is a way to represent richer content than just text. A card can contain an image, a button, or a carousel of images. To learn how to use this approach, see how to get started with [adaptive cards][AdaptiveCards].
 
-With attachments and adaptive cards, you can have many different ways of interacting with a bot:
+Attachments and adaptive cards offer several methods for interacting with a bot:
 
-- A bot can take some pictures as an input, and use cognitive services to extract some information from them. For example, a user can send pictures of printed documents, and the bot will be able to get the text using OCR.
-- You can also ask the user to send things like his/her location to retrieve points of interest nearby. However, you need to make sure that messengers you are planning to use support locations.
-- Adaptive cards can be used to organize menu-based interaction with the bot, instead of natural text. Menus are more clear to use, but it takes more time to navigate to the exact position in the hierarchy. However, you can always use some mixture of menu-driven interaction and natural text phrases.
+- A bot can receive pictures as input, and use Cognitive Services to extract data from the pictures. A user can send pictures of printed documents. The bot can use optical character recognition (OCR) to parse the text from the pictures.
+- A bot can ask the user to send information, and then act on the received data. When a user sends their location, the bot can retrieve nearby points of interest. To use this method, any messenger with which the bot connects must support location data.
+- Adaptive cards can be used to organize menu-based interaction with the bot, instead of natural text. Visual menus can be more clear for the user than text -only menus. A visual menu can take more time to navigate to reach the required option. A mixture of menu-driven interaction and natural text phrases can be a good approach.
 
-To add some more visual interactions to our bot, let's display country flags as part of the messages that mention countries. To do that, we first need to find some data on country flags - for example, we can use [this page on Wikipedia][WikiFlags]. We have collected the list of URLs for all country flags, and put them into [countryflags.csv][CountryFlagsFile] file. We do not need to download actual pictures, because during the bot dialog we just need to send back the URL, and the original flag from Wikipedia will be displayed.
+To add visual interaction to our bot, let's display country flags as part of the messages that mention countries.
 
-To incorporate those changes to our code, we will put `countryflags.csv` into our bot project, and add `GetFlag` function into our `CountryData` class. We will store the URLs corresponding to country names into a `Dictionary`:
+We'll use [data about country flags][WikiFlags] that's available on the internet at Wikipedia. The list of URLs for the country flags is stored in the [countryflags.csv][CountryFlagsFile] file. We don't need to download the actual pictures. The bot will return the URL to the user, and the flag picture from the internet site will be displayed.
+
+Here's how we update our code to support this interaction:
+
+- Add the `countryflags.csv` file to our bot project.
+- Add the `GetFlag` function to our `CountryData` class.
+- Store the URLs corresponding to each country name in a `Dictionary` structure.
 
 ```csharp
 protected Dictionary<string,string> Flags { get; set; }
@@ -105,7 +119,8 @@ public CountryData(string fn,string cf)
 }
 ```
 
-In the bot itself, we will change slightly the logic for displaying a country corresponding to a given capital inside `ProcessLuisResult` function:
+Next, we need to slightly change the logic for our bot.
+We need to display a country according to a given capital that's stored inside the `ProcessLuisResult` function:
 
 ```csharp
     case "get_country":
@@ -126,75 +141,75 @@ In the bot itself, we will change slightly the logic for displaying a country co
         break;
 ```
 
-To create an attachment, we use `MessageFactory` object. There are many different functions that correspond to different attachment types. We use simplest one that provides text with some corresponding `ContentUrl`.
+To create an attachment, we use the `MessageFactory` object. There are different functions that correspond to different attachment types. We'll use the simplest approach that provides text with the corresponding `ContentUrl` data.
 
 > [!TIP]
-> Some messages support markdown syntax, including image embedding. In this case, we might just use normal text message with image embedding command, instead of more complex adaptive card mechanism. However, you always need to check how those markdown messages will be rendered by all messenger platforms that you are planning to use.
+> Some messages support Markdown syntax, including image embedding. For our bot, we'll use normal text messages with an image embedding command. We won't support the more complex adaptive card mechanism. Be sure to test how Markdown messages are rendered by all messenger platforms that you plan to support.
 
-Here is how our conversation with attachment look like in the emulator:
+Here's how our conversation with support for attachments looks in the Visual Studio Emulator:
 
-![Flag ConversationYerevan](../media/flag-conversation.png)
-
-> [!NOTE]
-> In this example, we can see one more potential problem: the spelling of non-English names can differ, and our system does not support different possible transliteration for Yerevan, a capital of Armenia. When developing responsible bots we need to be careful and support different possible transliterations, or offer suggestions in case of slight variations in city names.
+![An example conversation with support for attachments in VS Emulator.](../media/flag-conversation.png)
 
 > [!NOTE]
-> The code for the application at this point is available [in this github repository][GitFlag].
+> In this example, we can see another potential problem. The spelling of non-English names can differ. Our bot doesn't support different transliterations for *Yerevan*, the capital of *Armenia*. To develop a responsible bot, we need to support different possible transliterations. An even better approach is to offer suggestions that provide slight variations in city names.
+
+The code for this stage of our bot development is available in the [Microsoft Learn > Responsible bots > Flags][GitFlag] GitHub repository.
 
 ## Support language diversity
 
-We have learned in the first unit that the ideal responsible bot should support **diversity**. Diversity can come in many flavors:
+In the first unit, we learned that an ideal responsible bot supports diversity. There are many different ways to add language diversity.
 
-- **Different styles of conversation** are suitable for different people, and for different moods.
-  - We can switch between styles using different sets of output messages.
-  - We can try to detect the appropriate style from the emotional sentiment of user's utterances. [Text analytics][TextAnalytics] cognitive service can be used for detecting sentiment.
-  - If we implement chit-chat functionality, we can use [Project Personality Chat][PersonalityChat]
-- Using **different languages** for a conversation is also a possibility, however, implementing it requires more efforts. Switching output language may be as simple as selecting different sets of output messages, but implementing language understanding properly would require separate LUIS models.
+- Store multiple sets of output messages, so the bot can switch between different conversation styles.
+- Examine the emotional sentiment of the user's utterances to detect the appropriate style to use. Azure [Text Analytics][TextAnalytics] can detect user sentiment.
+- Offer chit-chat functionality with [Project Personality Chat][PersonalityChat].
+- Design your bot to support multiple languages. This implementation is helpful for users, but it requires significant development effort. Switching between output languages can be as simple as selecting different sets of output messages, but support for language understanding requires separate LUIS models.
+- Support multiple languages by using **automatic translation** with the Azure Cognitive Services [Translator Text API][TranslatorAPI]. The API offers automatic [language detection][LangDetection] of user input messages. The API [translates][Translation] output messages to the user's language.
 
-However, it is also possible to provide support for many languages by utilizing **automatic translation** via [Translator API][TranslatorAPI]. This API would offer both automatic [language detection][LangDetection] of user's input message, as well as [translation][Translation] of output messages to the desired language.
+To incorporate translation into our bot, we can use the concept of [Bot Framework Middleware][Middleware]. We can add this component to pre-process and post-process all messages to and from the user. The Middleware component can:
 
-To incorporate translation into our bot, we can use the concept of [Bot Framework Middleware][Middleware]. Middleware is a component that can be added to pre- and post-process all messages to and from the user during message processing pipeline. Thus middleware can do the following:
+- Detect the language of the incoming message.
+- Translate the incoming message into English.
+- Complete all standard processing steps, including LUIS and QnA Maker operations that are trained on English phrases.
+- Translate the result message into the user's language.
 
-- detect the language of the incoming message
-- translate it into English
-- perform all standard processing steps (including LUIS/QnA Maker trained on English phrases
-- translate the result back into user's language
+In more complex scenarios, we can include language-switching logic. This logic can confirm the user's language, and use the language for the duration of the session.
 
-In more complex scenarios we can include some language switching logic, which will confirm user's language, and then use it for the duration of the session.
+The code to use the translation middleware is available in the [Microsoft > BotBuilder-Samples > Multilingual bot][BotTranslateSample] GitHub repository.
 
-> [!NOTE]
-> An example of using translation middleware can be found [here][BotTranslateSample].
+## Add dialog interactions
 
-## Adding dialog interactions
+So far, all interactions with our bot have been based on the request-response pattern. Our bot can't track the context of a conversation. There are scenarios where interaction with the user can involve consecutive steps.
 
-So far, all interactions with our bot have been based on request-response pattern, and the bot did not have to track the context of the conversation. However, there are scenarios when interaction with the user involves several consecutive steps, for example:
+- Fill in multiple fields on a form.
+- Confirm the user's actions.
+- Choose a series of items from the menu.
 
-- Filling a form with several fields
-- Confirming some action
-- Chosing exact items in the menu
+Our bot includes a game built with phrases that test a student's knowledge of capital cities for countries. We can upgrade our game, so the bot switches between modes. In the new mode, the game randomly selects a country and asks the user to enter the capital city (or the other way around). To stop playing, the user enters "end" and the game displays their score.
 
-For example, in our bot we have defined a phrase to play a quiz game to test student's knowledge of capitals. This game should probably switch the bot into a different mode, when it randomly selects a country, and expects user to type back it's capital (or vice versa). When the user gets tired, he/she can type "end", and receive his/her score.
-
-To implement this functionality, Bot Framework provides the concept of [Dialogs][BotDialogs]. A dialog defines a separate branch of conversation, such as our "capital quiz". Once the user enters the dialog, conversation would be handled by a different programming logic, until dialog ends (or until another dialog is initiated). Using this concept, a user can decompose complex conversation logic into simpler modular parts, and then combine them together into a complex conversation flow.
+We can add this new mode by using the Bot Framework concept of [dialogs][BotDialogs]. A dialog defines a separate branch of conversation. In our bot, the new branch of conversation is a "capital game" dialog. When the user starts a dialog, the conversation is handled by different programming logic. The operation logic continues until the dialog ends, or the user starts a different dialog. The dialog concept helps to decompose complex conversation logic into simple modular parts, and combine these parts together into a complex conversation flow.
 
 > [!NOTE]
-> Implementing dialogs is out of scope of this module. You can see dialog implementation in [this sample][BotDialogsSample], and read [more documentation on the subject][BotDialogs].
+> We're not going to implement dialogs in this course. To learn more about dialogs, see the [Microsoft > BotBuilder-Samples > Custom dialogs][BotDialogsSample] GitHub repository. You can also read about the [Dialogs library][BotDialogs].
 
-Another feature that could be implemented using dialogs is collecting feedback. One of the principles of responsible conversational UI is to give an opportunity to the user to provide feedback on bot's work. We can detect "end-of-conversation" phrases using LUIS, and as a response initiate a separate "good bye" dialog, which will collect multi-step feedback from the user and store it into the database for further processing.
+## Request feedback
+
+Another important feature that we can implement with dialogs is collecting feedback. One of the principles of responsible conversational UI is to give users the opportunity to provide feedback. How can a bot determine when the user is ready to end the session?
+
+The bot detects "end-of-conversation" phrases by using LUIS. A bot responds to the user and starts the "good-bye" dialog. The dialog collects multi-step feedback from the user and stores it in a database for further processing.
 
 > [!IMPORTANT]
-> A good responsible bot should give user an opportunity to provide feedback!
+> A **good** responsible bot always gives the user the opportunity to provide feedback!
 
-## Supporting Speech
+## Support speech
 
-As we know, bots should welcome diversity, and thus ideally they should support users who are not able to communicate via text, be that visually impaired users, or those who cannot type because their hands are busy. Luckily, support for speech interface can be added to the bot through [Speech API][SpeechAPI]. Bot Framework supports embedding speech data into messages in the form of **Simple Speech Markup Language** (SSML), so we just need to tweak our bot code to include this data as described [here][AddSpeech]. We also need a speech support from conversation client, and Web Chat control can integrate with Microsoft Speech API to support both text-to-speech and speech-to-text.
+Bots should welcome diversity. A responsible conversational bot accepts user input as text or speech--from a keypad, mouse, or touch-screen, and also from a microphone.
+
+Add a speech interface to your bot with the Azure [Speech Service][SpeechSDK]. The Bot Framework supports embedding speech data into messages in the form of **Simple Speech Markup Language** (SSML). Update your bot code to [add speech to messages][AddSpeech]. The bot also needs speech support from the conversation client. Web chat control integrates with the Microsoft Speech SDK to support both text-to-speech and speech-to-text.
 
 > [!NOTE]
-> To support more communication channels, you can also receive speech as an attachment, and then convert it to text on the server side through [Speech API][SpeechAPI].
+> To support more communication channels, you can receive speech as an attachment, and convert the attachment to text on the server side by using the [Speech SDK][SpeechSDK].
 
-## Conclusion
-
-We have discussed many ways in which our bot could be improved. And even though we did not discuss implementing all that functionality in detail, I hope that you are now confident that Bot Framework provides all necessary means to build responsible bot UI.
+In this unit, we reviewed several ways to improve our bot and provide a robust conversational UX for our users. We learned that the Bot Framework provides all the necessary means to build responsible bot UI.
 
 <!-- Links -->
 [QnAPortal]: https://qnamaker.ai
@@ -213,5 +228,5 @@ We have discussed many ways in which our bot could be improved. And even though 
 [BotTranslateSample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/17.multilingual-bot
 [BotDialogs]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0
 [BotDialogsSample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/19.custom-dialogs
-[SpeechAPI]: https://docs.microsoft.com/azure/cognitive-services/speech-service/
+[SpeechSDK]: https://docs.microsoft.com/azure/cognitive-services/speech-service/
 [AddSpeech]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-text-to-speech?view=azure-bot-service-4.0
