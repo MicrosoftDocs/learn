@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.qsharp-create-first-qdk.2-install-qdk-code
+uid: learn.quantum.qsharp-create-first-quantum-development-kit.2-install-quantum-development-kit-code
 title: Exercise - Install the QDK for Visual Studio Code
 metadata:
   title: Exercise - Install the QDK for Visual Studio Code
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |
-  [!include[](includes/2-install-qdk-code.md)]
+  [!include[](includes/2-install-quantum-development-kit-code.md)]

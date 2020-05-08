@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.quantum.qsharp-create-first-qdk
+uid: learn.quantum.qsharp-create-first-quantum-development-kit
 metadata:
   title: Create your first Q# program by using the Quantum Development Kit
   description: Get started with Q# programming by building a quantum random number generator.
@@ -28,12 +28,12 @@ products:
 - qdk
 - azure-quantum
 units:
-- learn.quantum.qsharp-create-first-qdk.1-introduction
-- learn.quantum.qsharp-create-first-qdk.2-install-qdk-code
-- learn.quantum.qsharp-create-first-qdk.3-qsharp-structure
-- learn.quantum.qsharp-create-first-qdk.4-random-bit-generator
-- learn.quantum.qsharp-create-first-qdk.5-random-number-generator
-- learn.quantum.qsharp-create-first-qdk.6-what-is-azure-quantum
-- learn.quantum.qsharp-create-first-qdk.7-summary
+- learn.quantum.qsharp-create-first-quantum-development-kit.1-introduction
+- learn.quantum.qsharp-create-first-quantum-development-kit.2-install-qdk-code
+- learn.quantum.qsharp-create-first-quantum-development-kit.3-qsharp-structure
+- learn.quantum.qsharp-create-first-quantum-development-kit.4-random-bit-generator
+- learn.quantum.qsharp-create-first-quantum-development-kit.5-random-number-generator
+- learn.quantum.qsharp-create-first-quantum-development-kit.6-what-is-azure-quantum
+- learn.quantum.qsharp-create-first-quantum-development-kit.7-summary
 badge:
-  uid: learn.quantum.qsharp-create-first-qdk.badge
+  uid: learn.quantum.qsharp-create-first-quantum-development-kit.badge
