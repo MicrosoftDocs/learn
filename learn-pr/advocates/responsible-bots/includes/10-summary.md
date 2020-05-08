@@ -1,17 +1,17 @@
-In this module, we started to build a bot that helps school students with their Geography lessons. Implementing a complete bot is out of scope for this module.
+In this module, we started to build a bot that can help school students with their geography lessons. Implementing a complete bot is out of scope for this module.
 
 The main thing you learned in this module is how to create a responsible bot. 
 
 A responsible bot:
 
-- Introduces itself and makes it clear that it is a bot.
+- Introduces itself and makes it clear to the user that it is a bot.
 - Speaks with the user in a natural language and tries to answer the user's questions.
 - Welcomes and supports diverse users by adapting to communication styles and supporting different means of communication (including text and speech).
 
 From a technological point of view, you learned how to:
 
-- Use Azure Bot Service to create and host a chat bot by using Azure Cloud Services.
-- Develop a chat bot by using either an online editor or Visual Studio 2019.
+- Use Azure Bot Service to create and host a chat bot in the Azure cloud.
+- Develop a chat bot by using either the online editor that's available through the Azure portal or Visual Studio 2019.
 - Use LUIS to enable language understanding through intent classification and entity extraction.
 - Implement simple question answering and chit-chat functionality by using QnA Maker.
 - Enhance bot interactions through visual cards, a meaningful welcome message, and help.

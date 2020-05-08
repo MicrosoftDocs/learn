@@ -1,4 +1,4 @@
-Now that we've implemented much of the bot's logic, we need to publish it back to the cloud. We can do publish the bot to the cloud easily from within Visual Studio, just like we did earlier. Now, it's even simpler, because we already defined a publishing profile for our project. We can complete the entire process by selecting one button in Visual Studio.
+Now that we've implemented much of the bot's logic, we need to publish it back to the cloud. We can publish the bot to the cloud easily from within Visual Studio, just like we did earlier. Now, it's even simpler, because we already defined a publishing profile for our project. We can complete the entire process by selecting one button in Visual Studio.
 
 ## Final steps
 
@@ -10,7 +10,7 @@ After we publish our bot, we need to complete two more steps for the bot to work
 To make sure that the files *worldcities.csv* and *countryflags.csv* are copied with our project, we change the file properties:
 
 1. In Visual Studio Solution Explorer, find the two files.
-1. For each file, under **Properties**, select the **Advanced** tab.
+1. For each file, under **Properties**, expand **Advanced**.
 1. Set **Build Action** to **Content**.
 1. Set **Copy to Output Directory** to **Copy if newer**.
 
@@ -20,7 +20,7 @@ The final step is to make a settings change in the Azure portal. We already defi
 
 To provide all required parameters for our bot:
 
-1. Go to the bot management page in the Azure portal.
+1. In the Azure portal, go to the bot management page.
 1. In the left menu, select **Configuration**. You'll see configuration settings for **MicrosoftAppId** and **MicrosoftAppPassword**:
 
    ![A screenshot that shows the bot management Configuration pane and existing settings in the Azure portal](../media/azure-bot-configuration.png)
@@ -28,7 +28,7 @@ To provide all required parameters for our bot:
 1. Select **New application setting**.
 1. Enter all the settings from the *appsettings.json* file that are missing. The specific settings to add are **LuisAppId**, **LuisAPIKey**, **LuisEndpointUrl**, **QnAKbId**, **QnAEndpointKey**, and **QnAHostname**.
 
-   Alternatively, you can select **Advanced edit** on the **Configuration** pane and edit the JSON file directly. The format of this JSON file is different than the format in *appsettings.json*. If you add the settings by using the alternative method, you'll need to do some manual conversion.
+   Alternatively, you can select **Advanced edit** on the **Configuration** pane and edit the JSON file directly. The format of this JSON file is different than the format that's used in *appsettings.json*. If you add the settings by using the alternative method, you'll need to do some manual conversion.
 
 Updating the settings was the final step. Now, you should be able to enjoy chatting with the bot. To test the bot, select **Test in Web Chat** in the bot management menu:
 
