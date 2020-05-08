@@ -1,41 +1,53 @@
-Now that we have implemented much of the bot's logic, we need to publish it back to the cloud. This can be easily done from within Visual Studio in the same manner, as we did in **unit 3**. It would be even simpler, because publishing profile is already defined for our project, and the whole process would just take one click of a button.
+Now that we've implemented much of the bot's logic, we need to publish it back to the cloud. We can publish the bot to the cloud easily from within Visual Studio, just like we did earlier. Now, it's even simpler, because we already defined a publishing profile for our project. We can complete the entire process by selecting one button in Visual Studio.
 
-There is one thing we must not forget to do - to make sure files `worldcities.csv` and `countryflags.csv` are copied together with our project. In order to do that, we need to find those files in Visual Studio **Solution Explorer**, and set their properties:
+## Final steps
 
-- Build Action = Content
-- Copy to Output Directory = Copy if newer
+After we publish our bot, we need to complete two more steps for the bot to work:
 
-![Solution Explorer](../media/visual-studio-solution-express.png)
+- Update the properties of the files our bot uses in Visual Studio Solution Explorer.
+- Add settings on the bot management page in the Azure portal.
 
-Once we publish the bot, there is one more thing we need to do before it works. We have defined additional configuration parameters in `appsettings.json`. Parameters inside the JSON file are used when running the bot locally, but for cloud deployment parameters are defined inside the Azure Portal.
+To make sure that the files *worldcities.csv* and *countryflags.csv* are copied with our project, we change the file properties:
 
-To provide all required parameters for our bot, let's go to the Bot page on the Portal, and click on **Configuration**. You will see the page that lists settings for **MicrosoftAppId** and **MicrosoftAppPassword**:
+1. In Visual Studio Solution Explorer, find the two files.
+1. For each file, under **Properties**, expand **Advanced**.
+1. Set **Build Action** to **Content**.
+1. Set **Copy to Output Directory** to **Copy if newer**.
 
-![Bot Configuration](../media/azure-bot-configuration.png)
+![A screenshot that demonstrates how to change a file's properties on the Advanced tab in Visual Studio Solution Explorer](../media/visual-studio-solution-express.png)
 
-Click on **New Application Setting**, and enter all the settings from `appsettings.json` file that are missing, namely `LuisAppId`, `LuisAPIKey`, `LuisEndpointUrl`,`QnAKbId`,`QnAEndpointKey` and `QnAHostname`.
+The final step is to make a settings change in the Azure portal. We already defined additional configuration parameters in *appsettings.json*. Parameters in the JSON file are used when the bot runs locally. For cloud deployment, parameters are defined in the Azure portal.
 
-Alternatively, if you prefer to do less clicks but more text editing, you can click on **Advanced edit** and alter JSON file directly. Note that format of this JSON file differs from the format used in `appsettings.json`, and you would need to do some manual conversion.
+To provide all required parameters for our bot:
 
-Once you do that, you should be able to enjoy the chat with the bot through the Web Chat:
+1. In the Azure portal, go to the bot management page.
+1. In the left menu, select **Configuration**. You'll see configuration settings for **MicrosoftAppId** and **MicrosoftAppPassword**:
 
-![Final Web Chat](../media/final-web-chat.png)
+   ![A screenshot that shows the bot management Configuration pane and existing settings in the Azure portal](../media/azure-bot-configuration.png)
 
-## Connecting the Bot to Communication Channels 
+1. Select **New application setting**.
+1. Enter all the settings from the *appsettings.json* file that are missing. The specific settings to add are **LuisAppId**, **LuisAPIKey**, **LuisEndpointUrl**, **QnAKbId**, **QnAEndpointKey**, and **QnAHostname**.
 
-Once you have finished the bot, you probably want to share it with your friends through some common communication channels, such as Skype or Telegram. This can be easily configures through Bot page on Azure Portal, by selecting **Channels** from the left menu:
+   Alternatively, you can select **Advanced edit** on the **Configuration** pane and edit the JSON file directly. The format of this JSON file is different than the format that's used in *appsettings.json*. If you add the settings by using the alternative method, you'll need to do some manual conversion.
 
-![Bot Add Channels](../media/add-channel.png)
+Updating the settings was the final step. Now, you should be able to enjoy chatting with the bot. To test the bot, select **Test in Web Chat** in the bot management menu:
 
-For example, to add the Bot to Telegram, you can do the following:
+![A screenshot that shows an example of testing a bot in the Test in Web Chat pane](../media/final-web-chat.png)
 
-- Select **Telegram** from the list of Channels
+## Connect the bot to communication channels 
 
-  ![Add Telegram Channel](../media/add-channel-telegram.png)
-  
-- Go to Telegram application and create a new bot by talking to **@BotFather** bot. This process is well described in the instruction that is provided inside the link **Step-by-step instructions...** in the setup page.
-- Copy the **Access Token** you receive from **@BotFather** into the corresponding text box
-- Click **Save**
+After you create a bot, you probably will want to share it with your friends through some common communication channels, such as email or Telegram. You can easily share your app by using the bot management page in the Azure portal. In the left menu, select **Channels**:
 
- After that the bot would be functional in Telegram, and you can share the link with your friends and potential students.
+![A screenshot that shows the bot management Channels pane in the Azure portal](../media/add-channel.png)
+
+For example, to add the bot to Telegram:
+
+1. Select **Telegram** from the list of channels.
+1. In the Telegram application, create a new bot by sending a message to the **@BotFather** bot. The process is described well under **Step-by-step instructions** on the Telegram setup page.
+1. Copy the **access token** you receive from **@BotFather** and paste it into the corresponding text box in the Azure portal.
+
+   ![A screenshot that shows where to add the access token in the Configure Telegram pane](../media/add-channel-telegram.png)
+1. Select **Save**.
+
+The bot will be functional in Telegram, and you can share the link with your friends and potential students.
  
