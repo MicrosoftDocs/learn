@@ -11,9 +11,9 @@ Even if you're new to quantum computing, you may have heard the terms _qubit_ an
 
 A _qubit_ (quantum bit) is a basic unit of quantum information, analogous to a bit in classical computing.
 
-While a bit (binary digit) can have a value of either zero or one, a qubit can have a value that's either of these or a quantum _superposition_ of zero and one.
+While a bit (binary digit) can have a value of either zero or one, a qubit can have a value that's either of these. We call that a quantum _superposition_ of zero and one.
 
-Think of superposition as a combination of both zero and one states, with some probability of being zero or one when measured. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from being in superposition to one of the classical states.
+Think of superposition as a combination of both the zero and one states, with some probability of being zero or one when measured. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from being in superposition to one of the classical states.
 
 ## What's in a Q# program?
 
@@ -99,13 +99,13 @@ operation HelloQ() : Unit {
 
 Here, `HelloQ` is the name of the operation. It takes zero arguments as its input and returns type `Unit`, which means that the operation returns no information.
 
-Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation. Think of the `H` operation as a way of putting a qubit into an even superposition. Once in superposition, a qubit has a 50% chance of being measured as zero or one.
+Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation. Think of the `H` operation as a way of putting a qubit into an *even* superposition. Once in superposition, a qubit has a 50% chance of being measured as zero or one.
 
 ### Types
 
 Q# provides a number of built-in types you're already familiar with, including `Int`, `Double`, `Bool`, and `String`, along with types that are specific to quantum computing. Q# also provides types that define ranges, arrays, and tuples. You can even define your own custom types.
 
-In this module, you'll work with the `Result` type. A `Result` represents the result of a qubit measurement and can have two possible values: `One` and `Zero`.
+In this module, you'll work with the `Result` type. A `Result` represents the result of a qubit measurement and can have one of two possible values: `One` and `Zero`.
 
 ### Allocating qubits
 
