@@ -202,7 +202,9 @@ How are you?
 
 *Awesome! Thanks for asking.*
 
-Next, we'll add some final touches that implement responsible conversational UI principles.
+## What's next?
+
+We've got a pretty useful, fun bot now! As our final step, let's reexamine some of the responsible conversational AI principles to make sure we're creating a responsible bot!
 
 [QAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/
 [ProjectPersonalityChat]: https://www.microsoft.com/research/project/personality-chat/
