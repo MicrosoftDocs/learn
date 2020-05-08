@@ -1,4 +1,4 @@
-So far, we've added some good functionality to our bot, however we need to revisit our **responsible conversational UI** principles. Let's make some improvments and learn about others we could make!
+So far, we've added some good functionality to our bot, however we need to revisit our **responsible conversational UI** principles. Let's make some improvements and learn about others we could make!
 
 ## Help your users
 
