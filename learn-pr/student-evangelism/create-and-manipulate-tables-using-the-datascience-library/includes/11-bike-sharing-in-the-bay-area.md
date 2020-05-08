@@ -6461,4 +6461,3 @@ blue
 
 That huge blob in San Francisco shows that the eastern section of the
 city is the unrivaled capital of bike rentals in the Bay Area.
-is the unrivaled capital of bike rentals in the Bay Area.
