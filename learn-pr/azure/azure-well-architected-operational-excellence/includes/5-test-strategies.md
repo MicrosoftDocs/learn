@@ -26,7 +26,7 @@ Smoke tests usually involve building the application code; and if you're deployi
 
 ### Integration Testing
 
-After making sure that your different application components operate correctly individually, integration testing determines whether your components can interact with each other as they should. Integration tests usually take longer than smoke testing; and as a consequence, they are sometimes executed less frequently. For example, running integration tests every night still offers a good compromise between the different types of automated testing; your itegration testing will detect interoperability issues between application components no later than one day after they were introduced.
+After making sure that your different application components operate correctly individually, integration testing determines whether your components can interact with each other as they should. Integration tests usually take longer than smoke testing; and as a consequence, they are sometimes executed less frequently. For example, running integration tests every night still offers a good compromise between the different types of automated testing; your integration testing will detect interoperability issues between application components no later than one day after they were introduced.
 
 ## Manual Testing
 

@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-operational-excellence.5-test-strategies
 title: Use automation to reduce effort and error
 metadata:
   title: Use automation to reduce effort and error
-  description: In this unit, we'll discuss how to use the vatious types of test to verify your application's functionality and performance.
+  description: In this unit, we'll discuss how to use the various types of test to verify your application's functionality and performance.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes

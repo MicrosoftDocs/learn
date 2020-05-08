@@ -43,7 +43,7 @@ quiz:
       isCorrect: false
       explanation: 'Post-deployment scripting can be used to install and configure software after a VM has been deployed.'
 
-  - content: 'True or false: Azure Automation could be used to automate the start/stop of virtual machines duing your off-hours.'
+  - content: 'True or false: Azure Automation could be used to automate the start/stop of virtual machines during your off-hours.'
     choices:
     - content: 'True'
       isCorrect: true
