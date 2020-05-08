@@ -1,5 +1,3 @@
-## Data Types
-
 Every value has a type, and the built-in `type` function returns the
 type of the result of any expression.
 

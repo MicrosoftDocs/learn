@@ -3,8 +3,6 @@ from datascience import *
 path_data = '../../../data/'
 ```
 
-## Sequences
-
 Values can be grouped together into collections, which allows
 programmers to organize those values and refer to all of them with a
 single name. By grouping values together, we can write code that

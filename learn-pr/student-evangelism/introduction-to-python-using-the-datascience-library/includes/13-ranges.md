@@ -3,8 +3,6 @@ import numpy as np
 path_data = '../../../../data/'
 ```
 
-## Ranges
-
 A *range* is an array of numbers in increasing or decreasing order, each
 separated by a regular interval. Ranges are useful in a surprisingly
 large number of situations, so it's worthwhile to learn about them.

@@ -1,5 +1,3 @@
-## Numbers
-
 Computers are designed to perform numerical calculations, but there are
 some important details about working with numbers that every programmer
 working with quantitative data should know. Python (and most other
