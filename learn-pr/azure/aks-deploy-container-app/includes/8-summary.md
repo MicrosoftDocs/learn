@@ -11,3 +11,4 @@ Imagine how would it be to deploy this application on a VM or another environmen
 - [Introduction to AKS](https://docs.microsoft.com/learn/modules/intro-to-azure-kubernetes-service/?WT.mc_id=learndeploycontainerappsaks-learn-ludossan)
 - [Deploy an AKS cluster](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-deploy-cluster?WT.mc_id=learndeploycontainerappsaks-learn-ludossan)
 - [Prepare an application for AKS](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-prepare-app?WT.mc_id=learndeploycontainerappsaks-learn-ludossan)
+- [Trident's documentation on cluster architectures](https://netapp-trident.readthedocs.io/en/stable-v19.01/dag/kubernetes/kubernetes_cluster_architecture_considerations.html#cluster-architectures)
