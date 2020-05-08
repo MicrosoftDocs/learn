@@ -10,7 +10,7 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-In many situations, actions and results depends on a specific set of
+In many situations, actions and results depend on a specific set of
 conditions being satisfied. For example, individuals in randomized
 controlled trials receive the treatment if they have been assigned to
 the treatment group. A gambler makes money if she wins her bet.
@@ -96,7 +96,7 @@ sign(0)
 
     'Neither positive nor negative'
 
-Equivalently, we can replaced the final `elif` clause by an `else`
+Equivalently, we can replace the final `elif` clause by an `else`
 clause, whose body will be executed only if all the previous comparisons
 are false; that is, if the input value is equal to 0.
 
@@ -148,10 +148,10 @@ clause must always come at the end (or not at all).
 
 Suppose I bet on a roll of a fair die. The rules of the game:
 
--   If the die shows 1 spot or 2 spots, I lose a dollar.
--   If the die shows 3 spots or 4 spots, I neither lose money nor gain
+-   If the die shows one spot or two spots, I lose a dollar.
+-   If the die shows three spots or four spots, I neither lose money nor gain
     money.
--   If the die shows 5 spots or 6 spots, I gain a dollar.
+-   If the die shows five spots or six spots, I gain a dollar.
 
 We will now use conditional statements to define a function `one_bet`
 that takes the number of spots on the roll and returns my net gain.
@@ -179,7 +179,7 @@ one_bet(1), one_bet(2), one_bet(3), one_bet (4), one_bet(5), one_bet(6)
 As a review of how conditional statements work, let's see what `one_bet`
 does when the input is 3.
 
--   First it evaluates the `if` expression, which is `3 <= 2` which is
+-   First it evaluates the `if` expression, which is `3 <= 2`, which is
     `False`. So `one_bet` doesn't execute the `if` body.
 -   Then it evaluates the first `elif` expression, which is `3 <= 4`,
     which is `True`. So `one_bet` executes the first `elif` body and
