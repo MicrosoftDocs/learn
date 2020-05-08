@@ -1,29 +1,31 @@
-In the last unit, we have created an echo bot from template, which echos back anything that the user types. Now let's see how can we change this behavior, and how the bot code looks like.
+In the previous unit, we created an echo bot from a template. This bot simply echoes back anything that the user types. Now let's see how can we take a look at the bot code and change this behavior.
 
-Open the bot page on Azure Portal:
+Open the bot page on the Azure portal:
 
-![Azure Portal Bot Page](../media/azure-portal-bot-page.png)
+![Azure portal Bot Page](../media/azure-portal-bot-page.png)
 
-The bot creation timeline on the right shows, that we are at the **Build** stage. It suggests that you should go to **Build Blade** to download the source code for the bot. Go ahead and click on **Build blade** link:
+The bot creation flow in the right pane shows that we're at the **Build** stage. It suggests  you go to **Build blade** to download the source code for the bot. Go ahead and select the **Build blade** link:
 
 ![Bot Build Blade](../media/azure-portal-bot-code-blade.png)
 
 From here, you have two main options:
 
-- Use full-fledged **Visual Studio 2019** to do your code development. In this case, you need to **Download the source code** of the bot to local directory, and then use it to develop the bot on a local computer. This is the preferred option, because you will have the power of Visual Studio, including **autocomplete**, and the whole development would be much easier. However, you need to have Visual Studio installed on your machine.
-- Use **Online Editor** right from the browser - in this case you need to click small **Open online code editor** link. This is especially useful if you want to make some small changes to your bot.
+- Use **Visual Studio 2019** installed on your local computer for your code development. To do that, you select **Download Bot source code**. We recommend this option. It gives the power of Visual Studio including **autocomplete**. Visual Studio can make the whole development process easier.
+- Use the **Online Editor** right from the browser. For this option, select the small **Open online code editor** link. This option is especially useful for making some small changes to your bot.
 
-## Exploring Bot's Code in Online Editor
+## Explore your bot's code in the online editor
 
-Let's first explore the online editor option. Click on the **open online code editor** link to bring up the web app code editor:
+Let's first tried the online editor option. Select the **Open online code editor** link to view the bot code.
 
 ![Web App Code Editor](../media/visual-studio-online.png)
 
-Here on the left you have the list of files. Navigate to `Bots` directory, and click on `EchoBot.cs` file.
+The left pane shows a list of files. Look in the `Bots` directory, and select `EchoBot.cs`.
 
-If you are familiar with ASP.NET web development, you would probably recognize that the code on the left corresponds to ASP.NET web site. In fact, Azure Bot Service bot is a web application that defines API endpoint `/api/messages`, which is called by the Bot Connector.
+If you're familiar with ASP.NET web development, you might recognize what looks like code for an ASP.NET web site. In fact, the Azure Bot Service bot is a web application that defines the API endpoint `/api/messages`. It's  called by the Bot Connector.
 
-If that sounds too complicated - don't worry. All you need to know is that `EchoBot.cs` is the main file that defines the functionality of the bot. In this file, `OnMessageActivityAsync` is the main function that is called each time the bot receives a message from the user. Here is the code responsible for printing out the echo message:
+If that explanation seems too complicated, don't worry. All you need to know is that the `EchoBot.cs` file  defines the functionality of the bot. In this file, the main function is `OnMessageActivityAsync`, which is called each time the bot receives a message from the user.
+
+Here's the code that creates the echo message:
 
 ```csharp
 protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
@@ -33,15 +35,15 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 }
 ```
 
-As you can probably understand, `turnContext.Activity` contains all information related to input message, including `turnContext.Activity.Text` - the input message text. It also contains other information, such as attachments, sender address, etc. To send the reply to the user, we use `SendActivityAsync` function.
+So `turnContext.Activity` contains all information related to input message, including the input message text, `turnContext.Activity.Text`. It also contains other information, such as attachments, sender address, and so on. To send the reply to the user, we use the `SendActivityAsync` function.
 
-Another useful function here is `OnMembersAddedAsync`, which is called whenever a new person enters the chat. In our case, we use it to display the initial welcome message to the user.
+Another useful function here is `OnMembersAddedAsync`. This function is called whenever a new person enters the chat. We use it to display the initial welcome message to the user.
 
-## Using Online Editor to change the code
+## Use the online editor to change the code
 
-Let's change bot's behavior a little bit, and make it greet us by name. I will assume that the user types in his name, and the bot responds with *Hello, name!*.
+Let's change bot's behavior in a small way to make it greet a user by name. When the user types in their name, the bot will respond with *Hello, name!*.
 
-To do that, I will change the `OnMessageActivityAsync` function a little bit. I will also slightly simplify the code for the sake of clarity:
+To do that, we change the `OnMessageActivityAsync` function slightly. Let's also simplify the code a bit for the sake of clarity:
 
 ```csharp
 protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
@@ -52,51 +54,60 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 }
 ```
 
-Once the code has been changed, we need to **build** the application to incorporate changes. Locate the `build.cmd` script amond the files in the left pane, right-click on it, and select **Run from console**. This will execute the script in the online editor that will re-build the site:
+Whenever we change the code, we need to **build** the application to incorporate the changes. Locate the `build.cmd` script among the files in the left pane. Right-click on the file, and then select **Run from console**. This command runs the script in the online editor that rebuilds the site.
 
 ![Build Result](..\media\azure-build.png)
 
-To test that the bot is working, navigate to the bot portal page, select **Test in Web Chat**, and try talking to the bot:
+To see if the bot works, go to the bot portal page. Select **Test in Web Chat** and try talking to the bot.
 
 ![Bot Chat](..\media\web-chat-hello-bot.png)
+
 You should see that the bot greets you in response to your name.
 
-## Using Visual Studio
+## Use Visual Studio
 
-To make more serious changes to the bot, it would be easier to use Visual Studio IDE. While this requires you to have Visual Studio installed on your machine, it offers several advantages:
+To make more extensive changes to the bot, it's easier to use Visual Studio on your local machine. It offers these advantages:
 
-- You have very flexible editor with autocomplete, and a lot of useful features
-- You can easily start and debug the code locally on your machine, which is faster than doing rebuild process in the cloud. Once you are happy with the bot - you do the final deployment.
+- Visual Studio is a flexible editor with autocomplete and many useful features.
+- You can start and debug the code locally on your machine, which is faster than doing rebuild process in the cloud. After you're happy with how the bot is working locally, you do the final deployment.
 
 > [!TIP]
-> If you are going to do any serious development - you should definitely [install Visual Studio][InstallVS]!
+> If you're going to do serious development, you should [install Visual Studio][InstallVS].
 
 > [!NOTE]
->You can still follow the course without Visual Studio Installation, by using Online Editor described above. In this case you would have to adjust the instructions a little bit, and use **web chat** to test the bot instead of the emulator. You would also have to execute **build** script after changes to the code.
+> You can complete the exercises in this module without installing Visual Studio. If you prefer using the online editor, you just need to make some slight adjustments when following the instructions:
 
-To start working with the bot code in Visual Studio, do the following:
+- Use **web chat** to test the bot instead of the emulator.
+- Execute the **build** script after changes to the code.
 
-- From the **Build** blade on the bot's portal page, select **Download Bot's Source Code**.
-- Answer **Yes** to the following question, indicating that you want to include `appSetting.json` file into the project. This file contains some sensitive keys that are used to communicate with Bot application, so you should not distribute this file to third parties when creating production bots.
-- Creating zip-file will take some time. After that you can download the compressed folder with bot's source code.
-- Unzip this file somewhere (I will use `c:\demo` directory on my Windows machine) and start `EchoBot.sln` file. This should open the Visual Studio 2019 with the same code that we have seen previously.
+To work with the bot code in Visual Studio:
 
-![Bot Code open in Visual Studio](../media/visual-studio-bot.png)
+1. From the **Build** pane on the bot's portal page, select **Download Bot's Source Code**.
+1. Answer **Yes** when you're asked if you want to include the `appSetting.json` file in the project. This file contains some sensitive keys that are used to communicate with the bot application. Don't distribute this file to third parties when you create production bots.
+1. After it downloads, unzip this file in an appropriate folder such as `c:\demo`.
+1. Start the `EchoBot.sln` file. Visual Studio 2019 will launch and display the same bot code that we saw earlier in the online editor.
 
-## Creating Capital Dictionary
+![Bot code shown in Visual Studio](../media/visual-studio-bot.png)
 
-Let's try to make our bot do something useful. Consider the problem of learning country's capital cities. Our first exercise would be to turn our bot into "capital dictionary", which will return the capital of any given country.
+## Create a capital dictionary
+
+Let's try to make our bot do something useful. Consider the problem of learning the capital cities of different countries. Our first exercise is to turn our bot into a "capital dictionary", which will return the capital city of any given country.
 
 > [!TIP]
->During this course, I will describe a series of steps that add some functionality to the bot, and provides pieces of code. The best way to learn would be to try and develop the bot yourself alongside those instructions. However, the code for the bot at different stages is available [in this GitHub Repository][GithubSample], and you can always grab the complete code from there. The only thing you would need to do is copy `appsettings.json` file from your project into the root directory.
+>During this module, we'll describe a series of steps that add some functionality to the bot and provide pieces of code. We recommend that you try and develop the bot yourself alongside the instructions.
+>
+> You can, however, get the code for the bot at different stages in [this GitHub Repository][GithubSample]. You can even grab the complete code from there. The only additional step you have to take is to copy the `appsettings.json` file from your project into the root directory.
 
-If we look at the [list of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals) on Wikipedia, we will immediately realize that we are facing an important **fairness** and **data complexity** problem. Some countries (like Switzerland) might not have a *de juro* capital at all, while for other countries (like Israel) the capital is not officially recognized.
+If you take a look [list of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals) on Wikipedia, you can see that there's an important **fairness** and **data complexity** problem. Some countries, like Switzerland, might not have a *de jure* capital at all. Also, in some other countries, like Israel, the capital is not officially recognized.
 
-There is no easy way to solve this problem. For our course, we will take the simplest solution, and will just indicate the source of data to the user. However, we might want to take more complex approach, where we will change the returned result based on the language the user speaks, or using some other technology mechanism to accommodate for this issue.
+There's no easy way to solve this problem. For this module, we'll choose the simplest solution - to cite the source of data. However, we can consider some options for a more complex approach:
 
-Another important issue here is that capitals and countries change. So we need to make sure to update our bot periodically, in order to keep trust of our users. We may also want to display "last updated" date in order to make it clear how recent the data is.
+- the bot returns different results based on the user's language.
+- make use of another technological mechanism to accommodate for this issue
 
-As a starting point for our data, we will use [Basic City list from SimpleMaps.com](https://simplemaps.com/data/world-cities). Download the basic database [from this page](https://simplemaps.com/data/world-cities) and extract `worldcities.csv` file into the root directory of our project.
+Another important issue to note: capitals and countries change. We'll need to update our bot periodically so that users maintain trust in the bot. Maybe we can display a "last updated" date to make it clear how recent the data is.
+
+As a starting point for our data, lets use the [Basic City list from SimpleMaps.com](https://simplemaps.com/data/world-cities). Download the basic database [from this page](https://simplemaps.com/data/world-cities) and extract the `worldcities.csv` file into the root of the bot project directory.
 
 Lines in `worldcities.csv` look like this:
 
@@ -107,12 +118,12 @@ Lines in `worldcities.csv` look like this:
 ...
 ```
 
-To handle the data, let's create a new class called `CountryData` in the root of out project. In Visual Studio, you can right-click on **EchoBot** project, and then select **Add** -> **Class**.
+To handle the data, let's create a new class called `CountryData` in the root of our project. In Visual Studio, you can right-click on the **EchoBot** project, and then select **Add** -> **Class**.
 
 > [!IMPORTANT]
-> To make the project compile correctly, you need to change the namespace name from `EchoBot` to the namespace used in other project files - `Microsoft.BotBuilderSamples`. 
+> To make the project compile correctly, you'll need to change the namespace name from `EchoBot` to the namespace used in other project files: `Microsoft.BotBuilderSamples`.
 
-To represent country data, we will create `Country` class:
+To represent country data, we create the `Country` class:
 
 ```csharp
 public class Country
@@ -133,11 +144,11 @@ public class Country
 }
 ```
 
-Constructor of this class takes one line from `worldcities.csv` table, and parses the data into corresponding fields.
+The constructor of this class takes one line from `worldcities.csv` table, and parses the data into corresponding fields.
 
 For simplicity, we can put this class definition into the same `CountryData.cs` file.
 
-To load the whole table, let's use `CountryData` class:
+To load the whole table, let's use the `CountryData` class:
 
 ```csharp
 public class CountryData
@@ -153,9 +164,9 @@ public class CountryData
 }
 ```
 
-Here, we use **LINQ** expression to go through each line of the data file, convert it to `Country` objects, and then store them as an array.
+Here, we use a **LINQ** expression to go through each line of the data file, convert it to `Country` objects, and then store them as an array.
 
-Finally, to get the capital for a given country, let's create `GetCapital` function:
+Finally, to get the capital for a given country, let's create the `GetCapital` function:
 
 ```csharp
     public string GetCapital(string country)
@@ -165,12 +176,12 @@ Finally, to get the capital for a given country, let's create `GetCapital` funct
     }
 ```
 
-This function will return `null` if the country was not found in the list.
+This function returns `null` if the country isn't found in the list.
 
 > [!NOTE]
-> In this code, we do not care too much about performance, and we prefer simple code in favor of more performant one. In proper implementation, we should probably use hash table structure to store the dictionary of countries and capitals, to ensure faster access.
+> In this code, we're not too worried about performance. Instead we're focusing on simplicity. In a proper implementation, we'd get faster access by using a hash table structure to store the dictionary of countries and capitals.
 
-Now, to implement the bot logic, we need to go to `Bots\EchoBot.cs` file and change the code inside `OnMessageActivityAsync` function:
+Now we'll implement the bot logic. Open the `Bots\EchoBot.cs` file and change the code inside `OnMessageActivityAsync` function:
 
 ```csharp
     var name = turnContext.Activity.Text;
@@ -184,47 +195,51 @@ Now, to implement the bot logic, we need to go to `Bots\EchoBot.cs` file and cha
 ```
 
 > [!TIP]
-> If you are not sure that you have made all changes correctly, you can find the complete version of the bot code [on GitHub][GitHubSampleStage1]. To make it work with the bot you have recently created, you need to place `appsettings.json` file from your bot into the root of the GitHub project.
+> If you're not sure you've made all changes correctly, you can refer to the complete version of the bot code [on GitHub][GitHubSampleStage1]. To make it work with the bot you have recently created, you'll need to place your `appsettings.json` file into the root of the GitHub project.
 
-## Testing the Bot locally
+## Testing the bot locally
 
-Once we have made changes to the bot, we can test it on our local machine. To do that, we need to install [Bot Framework Emulator][BotEmulator].
+After we've made changes to the bot, we can test it on our local machine. To do that, we need to install the [Bot Framework Emulator][BotEmulator].
 
-Testing the bot involves the following steps:
+To test the bot:
 
-- Copy **Application Id** and **Application Secret** from `appsetting.json` file
-- Run the project in Visual Studio. If the bot compiles correctly, this should open the browser window
-- Start Bot Framework Emulator and select **Open Bot**
-- Provide the endpoint address, which usually looks like this: `https://localhost:3978/api/messages`. You can verify the site address and port number in the browser window opened in the previous step
-- Paste Application Id and Application Password into corresponding text fields and click **Connect**
-- Start chatting with your bot!
+1. Copy the `Application Id` and the `Application Secret` from `appsetting.json` file.
+1. Run the project in Visual Studio. If the bot compiles correctly, a browser window will open.
+1. Start the Bot Framework Emulator and select **Open Bot**.
+1. Provide the endpoint address, which usually looks like this: `https://localhost:3978/api/messages`. You can verify the site address and port number in the browser window opened in the previous step.
+1. Paste the `Application Id` and the `Application Password` into the corresponding fields and select **Connect**.
+1. Start chatting with your bot!
 
 ![Bot Framework Emulator](../media/bot-emulator.png)
 
-## Deploying bot to Azure
+## Deploy the bot to Azure
 
 To deploy the bot back to the cloud, the easiest way is to use Visual Studio:
 
-1. Right-click on the **EchoBot** project in Visual Studio and select **Publish**.
-1. In the next dialog, select **App Service** on the left, and **Select Existing** App Service.
-1. In the next dialog, make sure the correct App Service name is selected as deployment target.
+1. In Visual Studio, right-click on the **EchoBot** project and select **Publish**.
+1. In the **Pick a publish target** window, select **App Service** in the left pane.
+1. Choose **Select Existing** in the App Service pane.
+1. In the **App Service** window, check that the correct App Service is selected as deployment target.
 
-   ![Visual Studio publish to Azure App Service window](../media/publish-step-1.png) | ![Azure App Service target selection confirmation window](../media/publish-step-2.png)
+   ![Publish to Azure App Service window](../media/publish-step-1.png) | ![Azure App Service target selection confirmation window](../media/publish-step-2.png)
    ---|---
    
    > [!TIP]
-   > You may be asked to log into your Azure account at this point. If you do not see the correct App Service, make sure that you are logged into your Azure Account - check the drop-down in the top right corner of the dialog.
+   > You might have to sign in to your Azure account at this step. If you don't see the correct App Service listed, check the top right to see if you're signed in to your Azure Account.
 
-1. Once this is completed, you will have a deployment profile created, and can deploy with one click of a **Publish** button:
+1. After a successful publish, Visual Studio saves a deployment profile. For future deployments, you can just select the **Publish** button.
 
-   ![Visual Studio publish window](../media/publish-step-3.png)
+   ![Visual Studio's publish window](../media/publish-step-3.png)
 
-After the deployment, you can switch to your bot page on the Azure Portal, and talk to your bot using **Test in Web Chat**.
+After deployment, you can open your bot page on the Azure portal. Use the **Test in Web Chat** function to talk to your bot.
 
 ## Conclusion
 
-In this unit, we have developed our bot into a useful tool. However, it does not follow any responsible conversational UI principles, and in fact it is completely unusable without specific instructions. In the next units, we will make this bot understand human language, and apply some responsible AI principles.
+In this unit, we've developed our bot into a useful tool. It still doesn't follow any of the responsible conversational UI principles. It's also not usable without specific instructions.
 
+Next, we'll enable the bot to understand human language, and we'll apply some of the principles of responsible UI.
+
+<!-- Links -->
 [BotEmulator]: https://aka.ms/abs/build/emulatordownload
 [GitHubSample]: https://github.com/MicrosoftDocs/learn-responsible-bots
 [GitHubSampleStage1]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t1-capdict
