@@ -41,12 +41,4 @@ This final model gives us a cost function with the required properties.
 
 In this case, we don't care about the actual value of *H*. It only has to be as small as possible.
 
-## See the solution
-
-This video uses the Azure Quantum Parallel Tempering solver to assign the containers to the ships. You'll see the algorithm exploring a number of different configurations, as it attempts to minimize the cost function that we defined above.
-
-**TODO:** Add the video here.
-
-> [!VIDEO https://www.microsoft.com/...] 
-
 That's it! You've learned the basics of QIO and seen how the Azure Quantum service can be used to solve optimization problems.
