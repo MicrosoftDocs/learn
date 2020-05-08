@@ -9,8 +9,8 @@ namespace QuantumRNG {
     operation GenerateRandomBit() : Result {
         using (q = Qubit())  {  // Allocate a qubit.
             // Put the qubit to superposition.
-            // It now has a 50% chance of being measured 0 or 1.
             H(q);
+            // It now has a 50% chance of being measured 0 or 1.
             // Measure the qubit value.
             return MResetZ(q);
         }
