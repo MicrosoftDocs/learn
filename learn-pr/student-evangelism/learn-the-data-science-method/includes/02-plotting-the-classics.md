@@ -17,8 +17,6 @@ def read_url(url):
     return re.sub('\\s+', ' ', urlopen(url).read().decode())
 ```
 
-## Plotting the classics
-
 In this example, we will explore statistics for two classic novels: *The
 Adventures of Huckleberry Finn* by Mark Twain, and *Little Women* by
 Louisa May Alcott. The text of any book can be read by a computer at
