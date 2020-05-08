@@ -2,10 +2,10 @@ You've successfully deployed a complete application that communicates via text m
 
 In this module you learned:
 
-* What Azure Maps is and how to create an account.
-* How to create and configure a Twilio account for sending and receiving text messages
+* What Azure Maps is and how to create an Azure Maps account.
+* How to create and configure a Twilio account for sending and receiving text messages.
 * How to create and configure an Azure function app.
-* How to deploy an existing application to an Azure function app.
+* How to deploy an existing application to the function app.
 
 ## Next steps
 
