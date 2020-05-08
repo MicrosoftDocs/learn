@@ -1,8 +1,8 @@
-We've added a good amount of functionality to our bot, but a few small pieces are missing. In this unit, we'll make some improvements to our bot to implement more **responsible conversational UI** principles.
+So far, we've added some good functionality to our bot. There are a few small pieces that are missing. In this unit, we'll improve our bot to implement more **responsible conversational UI** principles.
 
 ## Help your users
 
-When a user starts to work with a bot for the first time, they don't always know what to say. The user audience for a bot often speaks several languages across different cultures. Although a bot can be designed with natural language understanding, the capabilities can still be limited. In many cases, all of the functionality available in a bot isn't immediately clear. Users find it helpful when a bot provides a brief overview and sample commands that it definitely understands.
+When a user first starts to work with a bot, they don't always know what to say. The user audience often speaks multiple languages and comes from many different cultures. Although a bot can be designed with natural language understanding, the capabilities can still be limited. In many cases, all of the bot's functionality isn't immediately clear. Users find it helpful when a bot begins with a brief overview and sample commands.
 
 > [!TIP]
 > Design your bot so users can't _get lost_ in the functionality. Always provide a "last resort" option, so users can keep going. A good approach is to have a **help** feature with a **menu** of tasks and commands that the bot understands.
@@ -17,16 +17,16 @@ Let's add a **help** feature to our bot! Because we're already using QnA Maker, 
 
     ![The QnA Maker knowledge base edit dialog.](../media/qna-maker-add-pair.png)
 
-1. Enter some phrases that will access the **help** feature in the bot.
+1. Enter phrases to trigger the **help** feature.
 
     Here are some examples:
     - What can I say?
     - Help
     - I do not know what to do
 
-1. Add the message the bot will use to respond to the help request.
+1. Add the bot response message for the help request.
 
-    Briefly describe the bot functionality and give examples of phrases that the bot understands.
+    Briefly describe the bot functionality. Give examples of phrases that the bot understands. Use Markdown syntax to make your message more readable. You can include URLs for some images, but don't overcomplicate!
 
     ```markdown
     This bot can help you with **capitals** of countries.
@@ -42,14 +42,11 @@ Let's add a **help** feature to our bot! Because we're already using QnA Maker, 
     * What is the definition of country?
     ```
 
-    > [!TIP]
-    > Use Markdown syntax to make your message more readable. You can include URLs for some images (but don't overcomplicate)!
-
 1. After you add the help message, select **Save and Train**.
 
 1. After the model training is done, select **PUBLISH** to push the model online.
 
-Now you can start your bot code in Visual Studio, and see how it works in the Emulator.
+Now you can start your bot code in Visual Studio and see how it works in the Emulator.
 
 > [!TIP]
 > You can design a complex multi-turn help system with QnA Maker by using [follow-up prompts and multi-turn conversations][QnAFollowUp].
@@ -192,7 +189,7 @@ Our bot includes a game built with phrases that test a student's knowledge of ca
 We can add this new mode by using the Bot Framework concept of [dialogs][BotDialogs]. A dialog defines a separate branch of conversation. In our bot, the new branch of conversation is a "capital game" dialog. When the user starts a dialog, the conversation is handled by different programming logic. The operation logic continues until the dialog ends, or the user starts a different dialog. The dialog concept helps to decompose complex conversation logic into simple modular parts, and combine these parts together into a complex conversation flow.
 
 > [!NOTE]
-> We're not going to implement dialogs in this course. To learn more about dialogs, see the [Microsoft > BotBuilder-Samples > Custom dialogs][BotDialogsSample] GitHub repository. You can also read about [Azure Bot Service and the dialog concept][BotDialogs].
+> We're not going to implement dialogs in this course. To learn more about dialogs, see the [Microsoft > BotBuilder-Samples > Custom dialogs][BotDialogsSample] GitHub repository. You can also read about the [Dialogs library][BotDialogs].
 
 ## Request feedback
 
