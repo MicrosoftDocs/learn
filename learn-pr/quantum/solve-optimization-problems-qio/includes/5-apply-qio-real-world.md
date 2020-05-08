@@ -1,6 +1,8 @@
 Recall that in our container ship problem, Contoso Logistics has to optimize how it distributes containers between two ships. In other words, we have a set of container weights, *w*, which we would like to partition into two sets.
 
-![Contoso Logistics](../media/contoso.png)
+This short animation shows one possible way to optimize the distribution:
+
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Quantum-Optimization-Container-Demo/player?format=ny]
 
 Those two sets correspond to whether the container is loaded onto ship *a* or ship *b*. In this part, we'll use QIO to solve the problem.
 
