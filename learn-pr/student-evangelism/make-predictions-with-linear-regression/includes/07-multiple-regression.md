@@ -1,8 +1,9 @@
-### Note: You can find an interactive version of this unit named **multiple-regression.ipynb** in your virtual environment
+> [!NOTE]
+> You can find an interactive version of this unit named **multiple-regression.ipynb** in your virtual environment
 
-### If you haven't set up your online Virtual Studio Code environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-### Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking" target="_blank" rel="noopener">Visual Studio Online</a>
+Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 
 ``` {.python}
@@ -46,9 +47,9 @@ price column from the other columns.
 ``` {.python}
 all_sales = Table.read_table(path_data + 'house.csv')
 sales = all_sales.where('Bldg Type', '1Fam').where('Sale Condition', 'Normal').select(
-    'SalePrice', '1st Flr SF', '2nd Flr SF', 
-    'Total Bsmt SF', 'Garage Area', 
-    'Wood Deck SF', 'Open Porch SF', 'Lot Area', 
+    'SalePrice', '1st Flr SF', '2nd Flr SF',
+    'Total Bsmt SF', 'Garage Area',
+    'Wood Deck SF', 'Open Porch SF', 'Lot Area',
     'Year Built', 'Yr Sold')
 sales.sort('SalePrice')
 ```
@@ -501,9 +502,9 @@ print(train.num_rows, 'training and', test.num_rows, 'test instances.')
 
 1001 training and 1001 test instances.
 
-The slopes in multiple regression are represeented by an
-array that has one slope value for each attribute in an example. 
-Predicting the sale price involves multiplying each attribute 
+The slopes in multiple regression are represented by an
+array that has one slope value for each attribute in an example.
+Predicting the sale price involves multiplying each attribute
 by the slope and summing the result.
 
 ``` {.python}

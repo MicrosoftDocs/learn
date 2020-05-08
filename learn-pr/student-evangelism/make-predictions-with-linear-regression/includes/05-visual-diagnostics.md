@@ -15,7 +15,7 @@ warnings.simplefilter(action="ignore", category=FutureWarning)
 ```
 
 ``` {.python}
-# HIDDEN 
+# HIDDEN
 
 galton = Table.read_table(path_data + 'galton.csv')
 heights = galton.select('midparentHeight', 'childHeight')
@@ -46,8 +46,6 @@ def fit(table, x, y):
     b = intercept(table, x, y)
     return a * table.column(x) + b
 ```
-
-### Visual Diagnostics
 
 Suppose a data scientist has decided to use linear regression to
 estimate values of one variable (called the response variable) based on

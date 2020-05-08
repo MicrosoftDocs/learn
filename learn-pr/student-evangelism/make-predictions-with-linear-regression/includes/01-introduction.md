@@ -155,20 +155,20 @@ association between the two variables.
 
 Our approach was to base the prediction on all the points that
 correspond to a midparent height of around the midparent height of the
-new person. To do this, we wrote a function called `predict_child` which
+new person. To do this, we wrote a function called `predict_child` that
 takes a midparent height as its argument and returns the average height
 of all the children who had midparent heights within half an inch of the
 argument.
 
 ``` {.python}
 def predict_child(mpht):
-    """Return a prediction of the height of a child 
+    """Return a prediction of the height of a child
     whose parents have a midparent height of mpht.
-    
-    The prediction is the average height of the children 
+
+    The prediction is the average height of the children
     whose midparent height is in the range mpht plus or minus 0.5 inches.
     """
-    
+
     close_points = heights.where('MidParent', are.between(mpht-0.5, mpht + 0.5))
     return close_points.column('Child').mean()                       
 ```
@@ -507,7 +507,7 @@ hybrid.scatter('mpg', 'msrp')
 
 Along with the negative association, the scatter diagram of price versus
 efficiency shows a non-linear relation between the two variables. The
-points appear to be clustered around a curve, not around a straight-line.
+points appear to be clustered around a curve, not around a straight line.
 
 If we restrict the data just to the SUV class, however, the association
 between price and efficiency is still negative but the relation appears
@@ -544,12 +544,12 @@ def standard_units(any_numbers):
     return (any_numbers - np.mean(any_numbers))/np.std(any_numbers)  
 ```
 
-We can use this function to re-draw the two scatter diagrams for SUVs,
+We can use this function to redraw the two scatter diagrams for SUVs,
 with all the variables measured in standard units.
 
 ``` {.python}
 Table().with_columns(
-    'mpg (standard units)',  standard_units(suv.column('mpg')), 
+    'mpg (standard units)',  standard_units(suv.column('mpg')),
     'msrp (standard units)', standard_units(suv.column('msrp'))
 ).scatter(0, 1)
 plots.xlim(-3, 3)
@@ -560,7 +560,7 @@ plots.ylim(-3, 3);
 
 ``` {.python}
 Table().with_columns(
-    'acceleration (standard units)', standard_units(suv.column('acceleration')), 
+    'acceleration (standard units)', standard_units(suv.column('acceleration')),
     'msrp (standard units)',         standard_units(suv.column('msrp'))
 ).scatter(0, 1)
 plots.xlim(-3, 3)
@@ -581,7 +581,7 @@ kinds of association that we have seen.
 
 The *correlation coefficient* measures the strength of the linear
 relationship between two variables. Graphically, it measures how
-clustered the scatter diagram is around a straight-line.
+clustered the scatter diagram is around a straight line.
 
 The term *correlation coefficient* isn't easy to say, so it is usually
 shortened to *correlation* and denoted by $r$.
@@ -591,8 +591,8 @@ simulation.
 
 -   The correlation coefficient $r$ is a number between $-1$ and 1.
 -   $r$ measures the extent to which the scatter plot clusters around a
-    straight-line.
--   $r = 1$ if the scatter diagram is a perfect straight-line sloping
+    straight line.
+-   $r = 1$ if the scatter diagram is a perfect straight line sloping
     upwards, and $r = -1$ if the scatter diagram is a perfect straight
     line sloping downwards.
 
@@ -1461,5 +1461,5 @@ Image("../media/choco-nobel.png")
 
 - Learn about Correlation as a measure of linear association and the correlation coefficient.
 - Understand the Regression line, Regression Effect, and the equation of the regression line.
-- Motivate The Method of Least Squares, Least Square Regression, & Nonlinear Regression 
+- Motivate The Method of Least Squares, Least Square Regression, & Nonlinear Regression
 - Understand Residuals and residual diagnostics through residual plots.

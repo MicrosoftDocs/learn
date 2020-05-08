@@ -31,7 +31,6 @@ def fit(table, x, y):
     return a * table.column(x) + b
 ```
 
-### Least Squares Regression
 
 In an earlier section, we developed formulas for the slope and intercept
 of the regression line through a *football shaped* scatter diagram. It

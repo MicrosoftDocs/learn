@@ -31,7 +31,6 @@ def fit(table, x, y):
     return a * table.column(x) + b
 ```
 
-### The Method of Least Squares
 
 We have retraced the steps that Galton and Pearson took to develop the
 equation of the regression line that runs through a football shaped
@@ -450,7 +449,7 @@ Root mean squared error: 2701.690785311856
 ![png](../media/78-method-of-least-squares-29-1.png)
 
 The proof of this statement requires abstract mathematics that is beyond
-the scope of this course. On the other hand, we do have a powerful tool, 
+the scope of this course. On the other hand, we do have a powerful tool,
 Python, that performs large numerical computations with ease. So we
 can use Python to confirm that the regression line minimizes the mean
 squared error.
@@ -466,7 +465,7 @@ We are trying to predict the number of characters ($y$) based on the
 number of periods ($x$) in chapters of Little Women. If we use the line
 $$
 \mbox{prediction} ~=~ ax + b
-$$ it will have an mse that depends on the slope $a$ and the intercept
+$$, it will have an mse that depends on the slope $a$ and the intercept
 $b$. The function `lw_mse` takes the slope and intercept as its
 arguments and returns the corresponding mse.
 

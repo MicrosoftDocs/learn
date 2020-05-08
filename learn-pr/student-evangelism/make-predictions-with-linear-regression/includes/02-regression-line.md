@@ -1,8 +1,9 @@
-### Note: You can find an interactive version of this unit named **regression-line.ipynb** in your virtual environment
+> [!NOTE]
+> You can find an interactive version of this unit named **regression-line.ipynb** in your virtual environment
 
-### If you haven't set up your online Virtual Studio Code environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-### Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking" target="_blank" rel="noopener">Visual Studio Online</a>
+Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 
 ``` {.python}
@@ -13,8 +14,6 @@ path_data = '../../../../data/'
 import matplotlib.pyplot as plots
 plots.style.use('fivethirtyeight')
 ```
-
-### The Regression Line
 
 The correlation coefficient $r$ doesn't just measure how clustered the
 points in a scatter plot are about a straight line. It also helps
@@ -38,13 +37,13 @@ heights = Table().with_columns(
 
 ``` {.python}
 def predict_child(mpht):
-    """Return a prediction of the height of a child 
+    """Return a prediction of the height of a child
     whose parents have a midparent height of mpht.
-    
-    The prediction is the average height of the children 
+
+    The prediction is the average height of the children
     whose midparent height is in the range mpht plus or minus 0.5 inches.
     """
-    
+
     close_points = heights.where('MidParent', are.between(mpht-0.5, mpht + 0.5))
     return close_points.column('Child').mean()   
 ```
@@ -207,7 +206,7 @@ the table of values in standard units, and defining "close" as above.
 
 ``` {.python}
 def predict_child_su(mpht_su):
-    """Return a prediction of the height (in standard units) of a child 
+    """Return a prediction of the height (in standard units) of a child
     whose parents have a midparent height of mpht_su in standard units.
     """
     close = 0.5/sd_midparent
@@ -400,7 +399,7 @@ In the original units of the data, this becomes
 
 $$
 \frac{\mbox{estimate of}~y ~-~\mbox{average of}~y}{\mbox{SD of}~y}
-~=~ r \times 
+~=~ r \times
 \frac{\mbox{the given}~x ~-~\mbox{average of}~x}{\mbox{SD of}~x}
 $$
 

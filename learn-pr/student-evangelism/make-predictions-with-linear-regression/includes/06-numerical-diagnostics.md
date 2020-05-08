@@ -15,7 +15,7 @@ warnings.simplefilter(action="ignore", category=FutureWarning)
 ```
 
 ``` {.python}
-# HIDDEN 
+# HIDDEN
 
 galton = Table.read_table(path_data + 'galton.csv')
 heights = galton.select('midparentHeight', 'childHeight')
@@ -56,7 +56,7 @@ def scatter_fit(table, x, y):
     plots.plot(table.column(x), fit(table, x, y), lw=4, color='gold')
     plots.xlabel(x)
     plots.ylabel(y)
-    
+
 def residual_plot(table, x, y):
     x_array = table.column(x)
     t = Table().with_columns(
@@ -79,8 +79,6 @@ heights = heights.with_columns(
         'Residual', residual(heights, 'MidParent', 'Child')
     )
 ```
-
-### Numerical Diagnostics
 
 In addition to visualization, we can use numerical properties of
 residuals to assess the quality of regression. We will not prove these
