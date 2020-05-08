@@ -1,114 +1,128 @@
-Before we start building out our **GeoFriend** bot, let's review the main principles of bot operation.
+Before we start to build our **GeoFriend** bot, let's review the basic bot operation.
 
-A conversational experience involves:
+## Review basic bot operations
 
-- User sends messages to a bot
-- Bot responds to the user.
+A conversational experience involves two basic actions:
 
-These conversations can happen in different **channels**:
+- A user sends messages to the bot.
+- The bot responds to the user.
 
-- A chat bot on a web site
-- A messenger application such as Facebook Messenger or Telegram.
+The conversation can happen in different _channels_:
 
-Each **messaging platform** has their own principles and APIs for creating chat bots. Building a bot for Facebook requires different skills than creating a web chat.
+- A chat bot on a web site.
+- A messenger application like Facebook Messenger or Telegram.
 
-Microsoft unifies this process with **[Bot Framework][BotFW]** - a set of core libraries that standardize bot development. With this framework, we can develop a bot as **Web API**, which is essentially a function that we call over the internet. We'll give it the user input, and it figures out the desired output of the bot.
+Each _messaging platform_ has its own principles and APIs for creating chat bots. To build a bot for Facebook, you use different skills than to create a web chat.
 
-To connect this function to actual channels, we'll use the **[Azure Bot Service][BotService]**. This service allows us to define connections to those channels through a web interface on the Azure portal. Once we have developed a bot, we can connect exactly the same code to several channels, and provide an **inclusive omnichannel experience**.
+Microsoft supports the tasks for bot operation in the [Bot Framework][BotFW]. The framework provides a set of core libraries that standardize bot development. You can develop a bot as a web API function that can be called over the internet. The user provides the input, and the Bot Framework figures out the necessary output for the bot.
 
-Bot Framework also helps structure the bot logic by offering some useful developer abstractions. Complex conversations are difficult to program as simple request-response pattern. Bot Framework provides abstractions such as **dialogs**, **form filling**, and others. By using these abstractions, we can compose complex conversational behavior from more simple building blocks.
+To connect a web API function to the communication channels, we'll use the [Azure Bot Service][BotService]. This service allows you to define connections to those channels through a web interface on the Azure portal. After you develop your bot, you can connect the same code to multiple channels to provide an **inclusive omnichannel experience**.
 
-![Bot Framework Diagram](../media/bot-framework-diagram.png)
+The Bot Framework also helps structure bot logic by offering useful developer abstractions. Complex conversations are difficult to program as a simple request-response pattern. The Bot Framework provides abstractions like dialogs, form filling, and more. You can use the abstractions to support complex conversational behavior from the simple building blocks.
 
-## Cognitive Services
+![A diagram of the Bot Framework.](../media/bot-framework-diagram.png)
 
-To make bots intelligent, we'll need to use some AI techniques. For example, **natural language understanding** can help figure out what a user wants without requiring them to use an exact phrase. Intelligent tasks can be handled using **[Azure Cognitive Services][CoServ]** - a set of pre-trained, neural network models that are available in the cloud.
+## Use Azure Cognitive Services
 
-To build our bot, we'll use **[Language Understanding Intelligent Service][LUIS]** (LUIS). LUIS can be trained on a set of phrases by specifying some input phrases and their **intent** or meaning. The service tries to automatically figure out the best intent for each user's input phrase. We'll also use [**QnA Maker Service**][QnAMaker] to add question answering functionality and general chat support.
+To make bots intelligent, we'll need to use some AI techniques. **Natural language understanding** can help us figure out what a user wants without requiring them to enter an exact phrase. We can handle intelligent tasks with [Azure Cognitive Services][CoServ] that offer a set of pre-trained, neural network models for the cloud.
 
-## Create a bot
+To build our bot, we'll use Azure Cognitive Services [Language Understanding Intelligent Service][LUIS] (LUIS). LUIS can be trained on a set of phrases by specifying input phrases and their _intent_ or meaning. The service tries to figure out the best intent for each user's input phrase. We'll also use Azure Cognitive Services [QnA Maker Service][QnAMaker] to add question-answering functionality and general chat support.
 
-Let's start to create our **GeoFriend** Assistant chat bot. The easiest way to start is with a new Azure Bot Service:
+## Create the bot
+
+Let's start to create our **GeoFriend** assistant chat bot. The easiest way to start is with a new Azure Bot Service.
 
 1. Go to the [Azure portal][azure-portal-] and sign in to your Azure account.
 
-   ![The Azure portal](../media/azure-portal.png)
+    ![Sign in to your account on the Azure portal.](../media/azure-portal.png)
 
-1. Select **Create a Resource** (large +), type "Bot" in the search box, and choose **Web App Bot**.
+1. Select **Create a Resource** (or use the plus (+) symbol). Enter **Bot** in the search box, and then choose **Web App Bot**.
 
-   ![Create Bot](../media/azure-portal-create.png)
+    ![Create a new bot.](../media/azure-portal-create.png)
 
-   On the new page, select **Create**.
+    On the new page, select **Create**.
 
-1. Fill in the bot parameters:
+1. Fill in the bot parameters.
 
-   - **Bot Handle** - enter *GeoFriend*
-   - **Resource group** - select **Create New** and enter a name.
-   - **Location** - select the data center location closest to you.
-   - **Pricing Tier** - *F0*, which is the free tier.
-   - **App Name** - keep at the default value.
+    - **Bot Handle**: Enter the name for our bot, **GeoFriend**.
+    - **Resource group**: Select **Create New** and enter a name for the resource group.
+    - **Location**: Select the data center location closest to you.
+    - **Pricing Tier**: Select **F0**, which is the free tier.
+    - **App Name**: Keep the default value.
 
-   ![Bot Parameters](../media/azure-portal-bot-form.png)
+    ![Fill in the bot parameters.](../media/azure-portal-bot-form.png)
 
-1. Select the **Bot Template** field, then select a template.
+1. Select the **Bot Template** box, and then select a template.
 
-   For our bot, we'll use the **C#** SDK language and the **Echo Bot** template.
+    For our bot, we'll use the **C#** SDK language and the **Echo Bot** template.
+    
+    ![Select which language and bot template to use.](../media/azure-portal-select-template.png)
 
-   ![Select Template](../media/azure-portal-select-template.png)
+    Here are the template options:
 
-   Options in this pane:
+    - **Programming language**: Choose **C#**. The templates support the **C#** or **Node.js** language.
+    - **Echo Bot**: Choose this option. The Echo Bot template supports simple bot operations. The bot echoes back any message typed by the user. We'll start with this option for our bot because it's the easiest to build.
+    - **Basic Bot**: Ignore this option. The Basic Bot template supports traditional bot operations, such as the language understanding service and bot analytics.
+    - **Virtual Assistant**: Ignore this option. The Virtual Assistant bot template supports complex enterprise-level bot operations. The operations integrate different skills and provide integration with many different services.
+    - **Language Understanding Bot**: Ignore this option. The Language Understanding Bot template supports connecting to an existing LUIS language model.
+    - **Q&A Maker Bot**: Ignore this option. The Q&A Maker Bot template answers simple questions based on a questions and answers table.
 
-   - Programming language (**C#** or **Node.js**).
-   - **Echo Bot** - the simplest bot. It echoes back any message typed by a user. We'll start with this one because it's the easiest to understand.
-   - **Basic Bot** - a traditional template that includes language understanding service and bot analytics.
-   - **Virtual Assistant** - a very complex example of enterprise-level bot that can integrate different **skills** and provides integration of many different services.
-   - **Language Understanding Bot** - a bot that connects to an existing **LUIS** language model.
-   - **Q&A Maker Bot** - a bot that answers simple questions based on a questions and answers table.
+1. Now create an **App Service Plan**.
 
-1. Now we'll create an **App Service Plan**.
-   1. Select "App Service Plan/Location".
-   1. Select **Create New**
-   1. Type in a suitable name for App Service Plan. This plan determines how much of compute resources would be allocated to your bot.
+    1. Select **App Service Plan/Location**.
+    
+    1. Select **Create New**.
+    
+    1. Enter a name for your App Service plan. This plan determines how much compute resources are given to your bot.
 
-   ![App Service Plan](../media/azure-portal-app-service-plan.png)
+        ![Enter a name for your App Service plan.](../media/azure-portal-app-service-plan.png)
 
-   > [!TIP]
-   >The **S1** plan is the default. It's  not free so you might want to change your plan afterwards. See [Manage an App Service plan in Azure][AdjustServicePlan] for details.
+    > [!TIP]
+    > The **S1** plan level is the default. This plan level isn't free, so you might want to change your plan later. For details, see [Manage an App Service plan in Azure][AdjustServicePlan].
 
-1. Fine tune the settings for **Application Insights** which is useful for monitoring the behavior of your bot. For now, you can turn application insights off or specify the Azure datacenter location closest to you.
+1. Fine-tune the settings for **Azure Application Insights**.
 
-1. Select **Create** when all fields are filled in.
+    This service is useful for monitoring the behavior of your bot.
+    For now, you can turn off Application Insights, or specify the Azure datacenter location closest to you.
 
-It takes some time for all bot resources to be created. When you get the notification that deployment is complete, look at the resource group to see what's there.
+1. After you enter all required values, select **Create**.
 
-## Bot page on the Azure portal
+    It can take some time to create all the bot resources. After the deployment is complete, look at the resource group to see what's there.
 
-From the Azure portal start page, select **Resource Groups**. Then select the group you created earlier.
+## View the bot in the Azure portal
 
-![Bot Resource Group](../media/azure-portal-bot-resource-group.png)
+We can see information about our bot in the Azure portal, and also complete development tasks.
 
-Take note of these important components:
+1. On the Azure portal start page, select **Resource Groups**, and select the resource group for your bot.
 
-- **GeoFriend** - a web app bot that connects your bot code to the different communication channels. This resource also gives you access to bot code and lets you test the bot in web chat.
-- **geofriend** - an application service that contains the code for your bot. We'll choose this later when we deploy the bot code from Visual Studio.
+    ![Open the resource group for our bot in the Azure portal.](../media/azure-portal-bot-resource-group.png)
 
-Also shown are the application insights instance and the bot app service plan. The latter might need adjustment if you want to scale the bot to handle more requests or move it to a free plan.
+1. Under your **resource group**, look for these important components:
 
-Select the **GeoFriend** link. You'll see the bot page on the portal:
+    - **GeoFriend**: A web app bot that connects your bot code to the different communication channels. This resource also gives you access to bot code and lets you test the bot in web chat.
+    - **geofriend**: An application service that contains the code for your bot. We'll choose this service later, when we deploy the bot code from Visual Studio.
+    
+    You should also see the Application Insights instance and the bot App Service plan. You might need to adjust the plan to scale the bot to handle more requests, or move the bot onto a free plan.
 
-![Azure portal bot page](../media/azure-portal-bot-page.png)
+1. Select the **GeoFriend** link. You'll see the bot page in the Azure portal.
+    
+    ![Review the bot page in the Azure portal.](../media/azure-portal-bot-page.png)
+    
+    The bot page in the Azure portal is the main starting point for configuring our bot. Under **Overview**, we see the sequence of steps for completing the bot. The first step is the idea or **Plan**. The second step is to **Build**, which is where we are now. We'll discuss how to build our bot in the next unit.
 
-This page is the main starting point for configuring the bot. On the **Overview** tab you can see the typical sequence of steps for completing the bot project. The first stage is the idea or **Plan**. It's followed by the **Build** stage which is where we are now. We'll discuss how to build the bot in the next unit.
+## Run the bot
 
-## Running the bot
+From the bot page in the Azure portal, we can try our new bot in action.
 
-Right from bot page, we can try our newly created bot in action. Select **Test in Web Chat** tab on the left pane, and you'll see a chat box that you can use to converse with the bot.
+1. On the left, select **Test in Web Chat**.
 
-![Web Chat](../media/azure-portal-web-chat.png)
+    You'll see a chat box that you can use to converse with the bot.
+    
+    ![You can test your bot with the web chat box.](../media/azure-portal-web-chat.png)
+    
+1. Try entering some text into the web chat box, and see how the bot responds.
 
-Try typing in some text, and see how the bot responds.
-
-Next we'll learn how to alter the bot's behavior.
+In the next unit, we'll learn how to change the behavior for our bot.
 
 <!-- links -->
 
