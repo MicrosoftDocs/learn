@@ -11,15 +11,13 @@ metadata:
   ms.prod: learning-cela-accessibility-features
   showCreativeCommonsFooter: true
 title: Microsoft Accessibility Features and Tools
-summary: This module highlights how to find and use key accessibility features
-and tools built into Microsoft products such as Windows 10, Microsoft
-PowerPoint, and Microsoft Translator.
+summary: This module highlights how to find and use key accessibility features and tools built into Microsoft products such as Windows 10, Microsoft PowerPoint, and Microsoft Translator.
 abstract: |
-  In this module you will:
-  - Learn how to use accessibility features and tools built into Windows 10 and other Microsoft products.
-  - Explore Windows 10 features and tools including keyboard shortcuts, Dictation, Ease of Access settings, and Focus assist.
-  - Explore gaming features and tools including Copilot and the Xbox Adaptive Controller.
-  - Explore Microsoft 365 features and tools including Microsoft Teams, PowerPoint Designer, and PowerPoint Presenter Coach, plus Microsoft Translator.
+ In this module you will:
+ - Learn how to use accessibility features and tools built into Windows 10 and other Microsoft products.
+ - Explore Windows 10 features and tools including keyboard shortcuts, Dictation, Ease of Access settings, and Focus assist.
+ - Explore gaming features and tools including Copilot and the Xbox Adaptive Controller.
+ - Explore Microsoft 365 features and tools including Microsoft Teams, PowerPoint Designer, and PowerPoint Presenter Coach, plus Microsoft Translator.
 prerequisites: None
 iconUrl: /learn/achievements/introduction-to-disability-&-accessibility.svg
 levels:
