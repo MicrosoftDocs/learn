@@ -5,7 +5,7 @@ metadata:
   title: How are Q# programs structured?
   description: Learn some basic quantum computing concepts and walk through the structure of a basic Q# program.
   ms.date: 05/19/2020
-  author: geduardo
+  author: KittyYeungQ
   ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
