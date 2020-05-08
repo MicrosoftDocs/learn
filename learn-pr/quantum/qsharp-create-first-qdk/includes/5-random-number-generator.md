@@ -25,11 +25,11 @@ Before we proceed, let's outline what the logic of a random number generator sho
 
 As an example, let's set `max` to 12.
 
-You need ${floor(ln(12) / ln(2) + 1)}$, or four bits to represent a number between zero and 12. (For brevity, we'll skip how to derive this equation.)
+You need ${\lfloor ln(12) / ln(2) + 1 \rfloor}$, or four bits to represent a number between zero and 12. (For brevity, we'll skip how to derive this equation.)
 
-Let's say you generate the bit string ${1101_{\ binary}}$, which is equivalent to 13 in decimal. Because 13 is greater than 12, you repeat the process.
+Let's say you generate the bit string ${1101_{\ binary}}$, which is equivalent to ${13_{\ decimal}}$. Because 13 is greater than 12, you repeat the process.
 
-Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to six in decimal. Because six is less than 12, the process is complete.
+Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${6_{\ decimal}}$. Because six is less than 12, the process is complete.
 
 With our logic in place, you're now ready to build the complete random number generator.
 

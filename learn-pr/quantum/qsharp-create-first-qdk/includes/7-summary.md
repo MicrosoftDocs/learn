@@ -1,43 +1,29 @@
-**TODO:** This page isn't yet finalized. Need to write a summary and trim down links to resources.
+Congratulations! Your first Q# program, although basic, gives you practice performing quantum operations.
 
-Congratulations, you have completed your first experience writing a Q# program
-using the QDK. In this module you learned how to:
+Visual Studio Code and the Quantum Development Kit provide you with everything you need to start writing and verifying your own quantum algorithms right away.
 
-- prepare your development environment for writing quantum programs.
-- use Q# to express quantum algorithms.
-- create a simple quantum random bit generator.
-- use the *Repeat Until Sucess* loop structure of Q# to create a quantum random
-  number generator. 
+Azure Quantum is a cloud service that provides access to quantum hardware. It's currently in limited preview, but you can [request early access](https://azure.microsoft.com/services/quantum/#contact?azure-portal=true).
+
+In this module, we covered a lot. Here are a few key concepts to keep in mind:
+
+* A qubit is a basic unit of quantum information, analogous to a bit in classical computing.
+* Superposition is a quantum phenomena where a qubit is in a combination of both zero and one states. When measured, a qubit goes from being in superposition to one of the classical states.
+* You can combine classical code with quantum code. This enables you to perform quantum computations and work with the results, all from the same program.
+* A *Repeat-Until-Success* (RUS) loop is a common pattern in Q# that enables you to repeat a quantum operation until it achieves a specific result.
 
 ## Learn more
 
-You have started your journey as a quantum developer. Keep it up!
+If you're interested in learning more, exploring the [Microsoft Quantum Documentation](/quantum/?azure-portal=true) is a great next step.
 
-You can learn more about developing quantum algorithms from the [Microsoft Quantum Documentation](https://docs.microsoft.com/quantum/).
+There you'll find comprehensive reference material, including:
 
-You will find information on: 
+* Fundamental concepts around quantum computing.
+* Quickstarts and tutorials.
+* Q# language and API reference.
+* How to use Q# with C#, Python, and Jupyter notebooks.
 
-- [Quantum computing glossary](https://docs.microsoft.com/quantum/concepts/glossary).
-- other step-by-step quickstarts for learning Q#
-- more [code samples](https://docs.microsoft.com/samples/browse/?languages=qsharp) such as building a teleportation algorithm, doing a Grover search, running a CHSH game, etc.
-- [quantum katas](https://docs.microsoft.com/quantum/intro-to-katas) for practicing quantum programming 
-- information on the standard libraries, and libraries for chemistry, machine learning and numerics applications
-- API references
-- options for using Q# with C#, Python or Jupyter notebooks
+Once you're ready to dive deeper, you can [browse code samples](/samples/browse/?languages=qsharp&azure-portal=true) or [learn quantum computing with the Quantum Katas](/quantum/intro-to-katas?azure-portal=true).
 
-You will also find reading materials for quantum computing concepts on the documentation page. 
+To learn about real-world usage of the QDK, check out this blog post on Microsoft Quantum's collaboration with Pacific Northwest Laboratory, [Simulating nature with the new Microsoft Quantum Development Kit chemistry library](https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/?azure-portal=true).
 
-For an example of use case of QDK by Microsoft's customers, check out this blog post on Microsoft Quantum's collaboration with Pacific Northwest Laboratory, [Simulating nature with the new Microsoft Quantum Development Kit chemistry library](https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/).
-
-Don't forget, all of the quantum development documentations and samples are open-source. As a learner and quantum developer, you are encouraged to [contribute to the open-source quantum community](https://docs.microsoft.com/quantum/libraries/numerics/).
-
-These articles show how future advances in quantum computing can help researchers and industry solve today’s most pressing problems:
-
-* [Achieving scalability in quantum computing](https://cloudblogs.microsoft.com/quantum/2018/05/16/achieving-scalability-in-quantum-computing/?azure-portal=true)
-* [Efficient Quantum Walk Circuits for Metropolis-Hastings Algorithm](https://arxiv.org/pdf/1910.01659.pdf?azure-portal=true)
-
-## Learn more about Azure Quantum
-
-**TODO:** Point to QIO module.
-
-Azure Quantum is currently under private preview. You can request early access to Azure Quantum by [filling out this form](https://azure.microsoft.com/services/quantum/#contact?azure-portal=true). Stay tuned for information about the public release.
+Be sure to [join the quantum community](/quantum/overview/how-to-learn-quantum-computing#join-the-quantum-community?azure-portal=true) as you have questions or want to contribute to Microsoft's many open source projects.

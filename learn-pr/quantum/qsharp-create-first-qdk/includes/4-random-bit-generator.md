@@ -68,7 +68,7 @@ To define the operation:
 
     [!code-qsharp[](code/4-Program-2.qs?highlight=7-9)]
 
-    Recall that `EntryPoint` tells the Q# compiler that this is where to begin execution of the program.
+    `EntryPoint` tells the Q# compiler that this is where to begin execution of the program.
 
 1. Add this code to the `GenerateRandomBit` operation:
 

@@ -45,7 +45,7 @@ namespace HelloQuantum {
 }
 ```
 
-Namespaces help you organize related functionality.
+Namespaces help you organize related functionality. Their use becomes important when you use Q# libraries in your programs and when you write your own libraries.
 
 ### Libraries
 
@@ -92,21 +92,20 @@ Operations are the basic building blocks of a Q# program. A Q# operation is a qu
 To define a Q# operation, you specify a name for the operation along with its inputs and its output. Here's a basic example:
 
 ```qsharp
-@EntryPoint()
 operation HelloQ() : Unit {
     Message("Hello quantum world!");
 }
 ```
 
-Here, `HelloQ` is the name of the operation. It takes zero arguments as its input and returns type `Unit`. The value of the `Unit` type is always `()`, which means that the operation returns no information.
+Here, `HelloQ` is the name of the operation. It takes zero arguments as its input and returns type `Unit`, which means that the operation returns no information.
+
+Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation. Think of the `H` operation as a way of putting a qubit into an even superposition. Once in superposition, a qubit has a 50% chance of being measured as zero or one.
+
+### Types
 
 Q# provides a number of built-in types you're already familiar with, including `Int`, `Double`, `Bool`, and `String`, along with types that are specific to quantum computing. Q# also provides types that define ranges, arrays, and tuples. You can even define your own custom types.
 
 In this module, you'll work with the `Result` type. A `Result` represents the result of a qubit measurement and can have two possible values: `One` and `Zero`.
-
-`EntryPoint` tells the Q# compiler that this is where to begin execution of the program.
-
-Q# libraries also provide operations that you can use in your programs. One operation you'll use later is the `H` operation. Think of the `H` operation as a way of putting a qubit into an even superposition. Once in superposition, a qubit has a 50% chance of being measured as zero or one.
 
 ### Allocating qubits
 
