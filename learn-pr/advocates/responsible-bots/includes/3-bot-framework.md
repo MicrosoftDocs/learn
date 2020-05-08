@@ -125,7 +125,6 @@ From the bot page in the Azure portal, we can try our new bot in action.
 1. On the left, select **Test in Web Chat**.
 
     You'll see a chat box that you can use to converse with the bot.
-
     > [!div class="mx-imgBorder"]
     > ![You can test your bot with the web chat box.](../media/azure-portal-web-chat.png)
 
