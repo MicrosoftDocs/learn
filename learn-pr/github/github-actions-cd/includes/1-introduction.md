@@ -26,4 +26,4 @@ This module assumes you've completed the [Automate development tasks by using Gi
 - Basic familiarity with continuous integration using GitHub Actions and workflows
   - If you're unfamiliar with continuous integration using GitHub Actions and workflows, check out [Build continuous integration workflows by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-ci/?azure-portal=true)
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
-- An understanding of [Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/paths/azure-fundamentals/?aure-portal=true)
+- An understanding of [Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/paths/azure-fundamentals/?azure-portal=true)
