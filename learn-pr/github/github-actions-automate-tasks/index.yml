@@ -13,7 +13,7 @@ summary: Create a basic GitHub Action and use that action in a workflow.
 abstract: |
   In this module, you will:
   - Describe GitHub Actions, the types of actions, and where to find them
-  - Plan an automation of your software development life cycle with GitHub Workflows
+  - Plan an automation of your software development life cycle with GitHub Actions workflows
   - Create a container action and have it run in a workflow triggered by a push event to your GitHub repository
 prerequisites: |
   - A [GitHub](https://github.com?azure-portaql=true) account
