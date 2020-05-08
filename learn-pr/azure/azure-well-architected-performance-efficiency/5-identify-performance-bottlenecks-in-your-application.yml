@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-performance-efficiency.5-identify-performance-
 title: Identify performance bottlenecks in your application
 metadata:
   title: Identify performance bottlenecks in your application
-  description: In this unit we'll discuss how to identify performance bottlenecks in your application
+  description: In this unit, you'll learn how to identify performance bottlenecks in your application.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
