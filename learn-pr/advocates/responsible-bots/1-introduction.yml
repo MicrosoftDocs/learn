@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.responsible-bots.1-introduction
-title: Introduction to responsible conversational UI
+title: Introduction
 metadata:
-  title: Introduction to responsible conversational UI
+  title: Introduction
   description: In this unit, we'll get an overview of the module, including the learning objectives and the main goal of the module - to create an educational assistant for geography.
   ms.date: 05/19/2020
   author: shwars
