@@ -15,9 +15,9 @@ Solvers emulate certain processes from quantum physics by using classical hardwa
 
 **Quantum software**: If you're interested in developing quantum software, then Azure Quantum offers a suite of tools that help you express your algorithms using the Quantum Development Kit and Q#.
 
-There are tools for simulating your programs so that you can test the behavior and performance of your code. In addition, there are tools such as the resource estimator, which helps you understand the resources that your code would require. In terms of a quantum program, this can mean the types of quantum gates you use, and how many.
+There are tools for simulating your programs so that you can test the behavior and performance of your code. In addition, there are tools such as the resource estimator, which helps you understand the resources that your code would require. In terms of a quantum program, this can mean the types of quantum gates you use or the number of qubits you need.
 
-Using all these tools together helps you understand the features of a quantum computer that you'd need in order to run your program, such as the number of qubits **TODO-in previous paragraph it says gates**. From a software engineering perspective, it also helps you iterate and improve your code, so that you can reduce the number of resources required to run it.
+Using all these tools together helps you understand the features of a quantum computer that you'd need in order to run your program, such as the number of qubits. From a software engineering perspective, it also helps you iterate and improve your code, so that you can reduce the number of resources required to run it.
 
 For more details on how this is done in practice, check out Dave Wecker's talk on [Achieving Practical Quantum Computing](https://cloudblogs.microsoft.com/quantum/2018/06/01/achieving-practical-quantum-computing/?azure-portal=true).
 
@@ -45,7 +45,7 @@ For example, if you need quantum hardware, you could choose to enable IonQ, Hone
 
 Every workspace comes with the Microsoft provider always enabled, and you can select which third party providers you'd like to add.
 
-**Jobs**: When you execute a quantum program or solve a quantum-inspired optimization (QIO) problem on Azure Quantum, you're creating and running a job. (To learn about QIO, see **TODO-add link to QIO module**)
+**Jobs**: When you execute a quantum program or solve a quantum-inspired optimization (QIO) problem on Azure Quantum, you're creating and running a job.
 
 A job consists of:
 
