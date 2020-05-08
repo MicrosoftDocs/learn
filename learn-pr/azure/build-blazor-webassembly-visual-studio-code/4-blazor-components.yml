@@ -9,6 +9,31 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
   [!include[](includes/4-blazor-components.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Blazor WebAssembly apps are powered by which runtime?"
+    choices:
+    - content: "The runtime provided by the browser"
+      isCorrect: false
+      explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime using mono"
+    - content: "The .NET mono runtime deployed with your web app"
+      isCorrect: true
+      explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime using mono"
+    - content: "The JavaScript runtime deployed with your web app"
+      isCorrect: false
+      explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime using mono"
+  - content: "How is Blazor WebAssembly defined?"
+    choices:
+    - content: "In Razor pages as a mix of HTML and C#"
+      isCorrect: true
+      explanation: "A razor file defines components that make up portions of UI for the app" 
+    - content: "In XAML pages using XML"
+      isCorrect: false
+      explanation: "A razor file defines components that make up portions of UI for the app"
+    - content: "In C# defined in .NET Standard libraries"
+      isCorrect: false
+      explanation: "A razor file defines components that make up portions of UI for the app"
