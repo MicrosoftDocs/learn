@@ -43,4 +43,4 @@ MLOps processes and tools are valuable throughout all of these stages of the lif
 * They provide the ability to save and track changes to data sources, code, libraries, SDKs, and models. 
 * And they create efficiencies and accelerate the lifecycle with automation, repeatable workflows, and reusable assets.
 
-Next, learn more about the business value of MLOps.
+Next, we’ll take a look at an executive Q&A with David Aronchick, the Head of Open Source Machine Learning Strategy at Microsoft to learn why organizations should invest in MLOps today.
