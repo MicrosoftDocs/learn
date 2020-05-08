@@ -9,6 +9,7 @@ metadata:
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
+  show_latex: true
 durationInMinutes: 10
 content: |
   [!include[](includes/03-decisions-and-uncertainty.md)]
@@ -30,7 +31,7 @@ quiz:
         - content: 'Test Statistic'
           isCorrect: false
           explanation: Incorrect.
-    - content: '______B______: A value that can be computed for the observed data and and also for random samples from the chance model.'
+    - content: '______B______: A value that can be computed for the observed data and also for random samples from the chance model.'
       choices:
         - content: 'Null Hypothesis'
           isCorrect: false

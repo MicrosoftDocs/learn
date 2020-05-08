@@ -189,7 +189,7 @@ small relative to the size of the population, sampling without
 replacement resembles sampling with replacement; the proportions in the
 population don't change much between draws. The population of eligible
 jurors in Alameda County is over a million, and compared to that, a
-sample size of about 1500 is quite small. We will therefore sample with
+sample size of about 1500 is small. We will therefore sample with
 replacement.
 
 In the cell below, we sample at random 1453 times from the distribution
@@ -317,7 +317,7 @@ supported by the data.
 
 ### A New Statistic: The Distance between Two Distributions
 
-We know how to measure how different two numbers are -- if the numbers
+We know how to measure how different two numbers are--if the numbers
 are $x$ and $y$, the distance between them is $\vert x-y \vert$. Now we
 have to quantify the distance between two distributions. For example, we
 have to measure the distance between the blue and gold distributions
@@ -329,7 +329,7 @@ jury.barh('Ethnicity')
 
 ![png](../media/57-multiple-categories-16-0.png)
 
-For this we will compute a quantity called the *total variation
+For this, we will compute a quantity called the *total variation
 distance* between two distributions. The calculation is as an extension
 of the calculation of the distance between two numbers.
 
@@ -437,7 +437,7 @@ Other
 </table>
 Take a look at the column `Difference` and notice that the sum of its
 entries is 0: the positive entries add up to 0.14, exactly canceling the
-total of the negative entries which is -0.14.
+total of the negative entries, which is -0.14.
 
 This is numerical evidence of the fact that in the bar chart, the gold
 bars exceed the blue bars by exactly as much as the blue bars exceed the
@@ -682,7 +682,7 @@ Table().with_column('TVD', tvds).hist(bins=np.arange(0, 0.2, 0.005))
 
 ### Assessing the Model of Random Selection
 
-The panels in the study, however, were not quite so similar to the
+The panels in the study, however, were not so similar to the
 eligible population. The total variation distance between the panels and
 the population was 0.14, which is far out in the tail of the histogram
 above. It does not look at all like a typical distance between a random
@@ -740,15 +740,15 @@ using the 2000 Census data. To arrive at this estimate, Professor Weeks
 took into account the number of people who are not eligible for jury
 services because they do not speak English, are not citizens, are under
 18, or have a felony conviction. Thus, his estimate should be an
-accurate assessment of who is actually eligible for jury service in
+accurate assessment of who is eligible for jury service in
 Alameda County, much more so than simply reviewing the Census report of
 the race and ethnicity of all people living in Alameda County. It should
 be noted, however, that the Census data on which Professor Weeks relied
-is now ten years old and the demographics of the county may have changed
+is now 10 years old and the demographics of the county may have changed
 by two or three percent in some categories."
 
 Thus the distribution of ethnicities of eligible jurors used in the
-analysis is itself an estimate and might be somewhat out of date.
+analysis is itself an estimate and might be out of date.
 
 **Panels.** In addition, panels aren't selected from the entire eligible
 population. The Superior Court of Alameda County says, "The objective of
@@ -770,9 +770,8 @@ used by Professor Weeks who in turn used Census categories in his
 estimation process. Thus there are also questions about the
 correspondence between the two distributions being compared.
 
-Thus, while we have a clear conclusion about the data in our table --
-the panels do not look like a random sample from the distribution
-provided for eligible jurors -- questions about the nature of the data
+Thus, while we have a clear conclusion about the data in our table--the panels do not look like a random sample from the distribution
+provided for eligible jurors--questions about the nature of the data
 prevent us from concluding anything broader.
 tions about the nature of the data
 prevent us from concluding anything broader.

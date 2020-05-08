@@ -21,18 +21,18 @@ In data science, a "model" is a set of assumptions about data. Often,
 models include assumptions about chance processes used to generate data.
 
 Sometimes, data scientists have to decide whether or not their models
-are good. In this section we will discuss two examples of making such
-decisions. In later sections we will use the methods developed here as
+are good. In this section, we will discuss two examples of making such
+decisions. In later sections, we will use the methods developed here as
 the building blocks of a general framework for testing hypotheses.
 
 ### U.S. Supreme Court, 1965: Swain vs. Alabama
 
-In the early 1960's, in Talladega County in Alabama, a black man called
+In the early 1960s, in Talladega County in Alabama, a black man called
 Robert Swain was convicted of raping a white woman and was sentenced to
 death. He appealed his sentence, citing among other factors the
 all-white jury. At the time, only men aged 21 or older were allowed to
 serve on juries in Talladega County. In the county, 26% of the eligible
-jurors were black, but there were only 8 black men among the 100
+jurors were black, but there were only eight black men among the 100
 selected for the jury panel in Swain's trial. No black man was selected
 for the trial jury.
 
@@ -47,9 +47,9 @@ men on a panel of 100 might seem low.
 
 ### A Model
 
-But one view of the data -- a model, in other words -- is that the panel
+But one view of the data--a model, in other words--is that the panel
 was selected at random and ended up with a small number of black men
-just due to chance. This model is consistent with what the Supreme Court
+due to chance alone. This model is consistent with what the Supreme Court
 wrote in its ruling.
 
 The model specifies the details of a chance process. It says the data
@@ -78,7 +78,7 @@ the alternative viewpoint.
 
 ### Predicting the Statistic Under the Model
 
-If the model were true, how big would the statistic typically be? To
+If the model were true, how large would the statistic typically be? To
 answer that, we have to start by working out the details of the
 simulation.
 
@@ -183,8 +183,8 @@ variation. The counts range from about 10 to about 45.
 
 ### Comparing the Prediction and the Data
 
-Though the simulated counts are quite varied, very few of them came out
-to be eight or less. The value eight is far out in the left hand tail of
+Though the simulated counts are quite varied, few of them came out
+to be eight or less. The value eight is far out in the left-hand tail of
 the histogram. It's the red dot on the horizontal axis of the histogram.
 
 ``` {.python}
@@ -197,7 +197,7 @@ plots.scatter(8, 0, color='red', s=30);
 ![png](../media/56-assessing-models-14-0.png)
 
 The simulation shows that if we select a panel of 100 jurors at random
-from the eligible population, we are very unlikely to get counts of
+from the eligible population, we are unlikely to get counts of
 black men as low as the eight that were in Swain's jury panel. This is
 evidence that the model of random selection of the jurors in the panel
 is not consistent with the data from the panel.
@@ -213,8 +213,8 @@ unlikely. Thus our assessment is that the model of random draws is not
 supported by the evidence. Swain's jury panel does not look like the
 result of random sampling from the population of eligible jurors.
 
-This method of assessing models is very general. Here is an example in
-which we use it to assess a model in a completely different setting.
+This method of assessing models is general. Here is an example in
+which we use it to assess a model in a different setting.
 
 ### Mendel's Pea Flowers
 
@@ -259,7 +259,7 @@ purple-flowering will be away from 75%. It may be higher, or lower; the
 direction doesn't matter.
 
 The key for us is the *distance* between 75% and the percent of
-purple-flowering plants in the sample. Big distances are evidence that
+purple-flowering plants in the sample. Large distances are evidence that
 the model isn't good.
 
 Our statistic, therefore, is the **distance between the sample percent
@@ -279,7 +279,7 @@ First, we have to figure out how many times to sample. To do this,
 remember that we are going to compare our simulation with Mendel's
 plants. So we should simulate the same number of plants that he had.
 
-Mendel grew a lot of plants. There were 929 plants of the variety
+Mendel grew many plants. There were 929 plants of the variety
 corresponding to this model. So we have to sample 929 times.
 
 #### Generating One Value of the Statistic
@@ -289,7 +289,7 @@ The steps in the calculation:
 -   Sample 929 times at random from the distribution specified by the
     model and find the sample proportion in the purple-flowering
     category.
--   Multiply the proportion by 100 to get a pecent.
+-   Multiply the proportion by 100 to get a percent.
 -   Subtract 75 and take the absolute value of the difference.
 
 That's the statistic: the distance between the sample percent and 75.
@@ -363,7 +363,7 @@ Table().with_column(
 
 Look on the horizontal axis to see the typical values of the distance,
 as predicted by the model. They are rather small. For example, a high
-proportion of the distances are in the range 0 to 1, meaning that for a
+proportion of the distances is in the range 0 to 1, meaning that for a
 high proportion of the samples, the percent of purple-flowering plants
 is within 1% of 75%, that is, the sample percent is in the range 74% to
 76%.
@@ -381,8 +381,8 @@ about 75.89%.
 
     0.7588805166846071
 
-So the observed value of our statistic -- the distance between Mendel's
-sample percent and 75 -- is about 0.89:
+So the observed value of our statistic--the distance between Mendel's
+sample percent and 75--is about 0.89:
 
 ``` {.python}
 observed_statistic = distance_from_75(705/929)
