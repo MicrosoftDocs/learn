@@ -14,7 +14,11 @@ To enable Windows Subsystem for Linux (WSL) on your computer, you need to:
 
 There are several Linux distributions available to run on WSL. You can find and install your favorite in the Microsoft Store.
 
-1. Open Microsoft Store. (You can find it on your **Start** menu.) Enter **Linux** in the **Search** box. You'll see a list of Linux distributions in the **Apps** section. *We recommend installing [Ubuntu](https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6) for this course.*
+In general, you want to choose a distribution that offers the software packages you need, aligns with the production environment you're targeting, and uses tools and commands that you're familiar with. For example, Ubuntu uses the `apt` command to install software, while SUSE uses `zypper` and Fedora uses `dnf`. These package managers all perform the same basic tasks in slightly different ways and offer slightly different packages for install.
+
+*We recommend installing [Ubuntu](https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6) for this course.*
+
+1. Open Microsoft Store. (You can find it on your **Start** menu.) Enter **Linux** in the **Search** box. You'll see a list of Linux distributions in the **Apps** section. 
 
    The following links will open the Microsoft Store page for each of these supported Linux distributions:
 
@@ -30,24 +34,19 @@ For alternative installation methods or troubleshooting, see [Windows Subsystem 
 
 ![View of Linux distributions in Microsoft Store](../media/store.png)
 
-## Choose a Linux distribution
 
-As you can see, several Linux distributions are available in the Microsoft Store, and hundreds more exist elsewhere. If you're new to Linux, we recommend starting with Ubuntu. Ubuntu provides a solid desktop (and server) experience that remains modern, without too many bleeding edge new features consistently rolling out.
+3. After the Linux distribution has installed, open it. If you miss the prompt after the install, type the name of your distro in the **Start** menu - for example *ubuntu*. You'll be prompted to create an account name and password when you run a distribution for the first time. After this first time, when you start the distribution, you'll be signed in as this normal (non-admin) user by default.
 
-Distributions are still being added to Microsoft Store. If you're an experienced developer, you can pick the one that most closely fits your preferences and the environment you're developing for. There are too many differences among the distributions to cover in this introductory course. The main takeaway is to choose a distribution that offers the software packages you need, aligns with the production environment you're targeting, and uses tools and commands that you're familiar with. For example, Ubuntu uses the `apt` command to install software, while SUSE uses `zypper` and Fedora uses `dnf`. These package managers all perform the same basic tasks in slightly different ways and offer slightly different packages for install.
-
-## Set up your account
-
-After the Linux distribution has installed, open it. You can do this by entering **WSL** from the **Start** menu. You'll be prompted to create an account name and password when you run a distribution for the first time. After this first time, when you start the distribution, you'll be signed in as this normal (non-admin) user by default.
-
-> [!Note]
-> You can choose any user name and password. They have no bearing on your Windows user name. After you create the user account, you won't be prompted for your password when using the distribution, unless you elevate a process by using the `sudo` command. Sudo stands for "SuperUser Do" and is used for any task requiring root admin privilege, like installing tools or frameworks.
+    > [!Note]
+    > You can choose any user name and password. They have no bearing on your Windows user name. After you create the user account, you won't be prompted for your password when using the distribution, unless you elevate a process by using the `sudo` command. Sudo stands for "SuperUser Do" and is used for any task requiring root admin privilege, like installing tools or frameworks.
 
 ## Update your distribution
 
 We recommend updating your Linux distribution regularly. Most Linux distributions ship with an empty or minimal package catalog. An update will ensure it has the most recent packages. Windows doesn't automatically update or upgrade your Linux distributions. Linux users typically prefer to control this task themselves.
 
 To update your Ubuntu distribution, use the APT package manager by pasting this command into the terminal: `sudo apt update && sudo apt upgrade`. (These commands will be explained further in Unit 4.)
+
+To enable `sudo apt install <package name>`, run this command: `sudo apt-get update`.
 
 ## Build a custom Linux distribution
 You can also create your own custom Linux distribution for submission to the Microsoft Store and/or sideloading. At the end of this course, you'll find a link to instructions, an open-source WSL custom distribution sample, and the distribution launcher repo.
