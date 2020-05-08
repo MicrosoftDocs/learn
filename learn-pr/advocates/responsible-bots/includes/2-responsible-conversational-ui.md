@@ -8,9 +8,9 @@ Before you start to build your bot, take time to clearly define its purpose. As 
 
 Exercise careful planning for bots that have _consequential outcomes_. When a bot has a conversation with the user, it can have a significant impact on the user's life. Bots that are used in healthcare or education need to be carefully designed for this consideration.
 
-In our **GeoFriend** bot, we'll need to make it clear to our students that the bot doesn't replace their teacher. The bot is only acting as an assistant to help the students learn. We don't want a user to rely solely on the bot to teach them Geography. They might discover later that their knowledge isn't up to standards!
+In our **GeoFriend** bot, we'll need to make it clear to our students that the bot doesn't replace their teacher. The bot is only acting as an assistant to help the students learn. We don't want a user to rely solely on the bot to teach them geography. They might discover later that their knowledge isn't up to standards.
 
-When the bot clearly communicates its goal, the user is discouraged from engaging in conversation about unrelated issues. Also, it's easier to build a bot to solve specific tasks, than provide support for general conversation.
+When the bot clearly communicates its goal, the user is discouraged from engaging in conversation about unrelated issues. Also, it's easier to build a bot to solve specific tasks, than it is to provide support for general conversation.
 
 ## Tell users they're talking to a bot
 
@@ -21,11 +21,8 @@ From the start of the conversation, make it clear that the user is talking to a 
 There are some useful tactics you can use to build trust between your user and the bot. 
 
 - **Clear introduction**: Clearly introduce the bot as a technology assistant at the beginning of the conversation.
-
 - **Robot picture**: Use a picture of a robot instead of a human face. The picture reminds users "who" they're talking to.
-
 - **Human hand-off**: Configure the bot to support _handoff to a human operator_. A common scenario is to use a bot dialog to collect initial information from the user. The information and conversation is then _handed off_ to an operator to make expert decisions and provide problem-solving. This structure delegates tedious tasks to the bot and leaves the most creative part to a human operator.
-
 - **Respect privacy**: Follow standard safe practices for collecting and handling personal information from the use. Collect only information that's relevant to solving the problem.
 
 ## Support diversity and accessibility

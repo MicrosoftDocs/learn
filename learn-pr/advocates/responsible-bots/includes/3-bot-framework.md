@@ -1,6 +1,6 @@
-Before we start to build our **GeoFriend** bot, let's review the basic bot operation.
+Before we start to build our **GeoFriend** bot, let's look at basic bot operation.
 
-## Review basic bot operations
+## Review basic bot operation
 
 A conversational experience involves two basic actions:
 
@@ -59,7 +59,7 @@ Let's start to create our **GeoFriend** assistant chat bot. The easiest way to s
 1. Select the **Bot Template** box, and then select a template.
 
     For our bot, we'll use the **C#** SDK language and the **Echo Bot** template.
-    
+
     > [!div class="mx-imgBorder"]
     > ![Select which language and bot template to use.](../media/azure-portal-select-template.png)
 
@@ -75,9 +75,9 @@ Let's start to create our **GeoFriend** assistant chat bot. The easiest way to s
 1. Now create an **App Service Plan**.
 
     1. Select **App Service Plan/Location**.
-    
+
     1. Select **Create New**.
-    
+
     1. Enter a name for your App Service plan. This plan determines how much compute resources are given to your bot.
 
         > [!div class="mx-imgBorder"]

@@ -12,8 +12,8 @@ The bot creation flow in the right pane shows that we're at the **Build** stage.
 
 From here, you have two main options:
 
-- Use Visual Studio 2019 installed on your local computer for your code development. To do that, you select **Download Bot source code**. We recommend this option. It's a more complete and powerful development platform and can make the whole process easier.
-- Use the online editor in your browser. For this option, select the small **Open online code editor** link. This option is especially useful for making small changes to your bot.
+- Use **Visual Studio** installed on your local computer for your code development. To do that, you select **Download Bot source code**. We recommend this option. It's a more complete and powerful development platform and can make the whole process easier.
+- Use the **online editor** in your browser. For this option, select the small **Open online code editor** link. The online editor is especially useful for making small changes to your bot.
 
 ## Explore your bot's code in the online editor
 
@@ -74,16 +74,16 @@ You should see that the bot greets you in response to your name.
 To make more extensive changes to the bot, it's easier to use Visual Studio on your local machine. It offers these advantages:
 
 - Visual Studio is a flexible editor with autocomplete and many useful features.
-- You can start and debug the code locally on your machine, which is faster than doing rebuild process in the cloud. After you're happy with how the bot is working locally, you do the final deployment.
+- You can start and debug the code locally on your machine, which is faster than rebuilding in the cloud. After you're happy with how the bot is working locally, you deploy to the cloud.
 
 > [!TIP]
 > If you're going to do serious development, you should [install Visual Studio][InstallVS].
 
 > [!NOTE]
 > You can complete the exercises in this module without installing Visual Studio. If you prefer using the online editor, you just need to make some slight adjustments when following the instructions:
-
-- Use **web chat** to test the bot instead of the emulator.
-- Execute the **build** script after changes to the code.
+>
+> - Use **web chat** to test the bot instead of the emulator.
+> - Execute the **build** script after changes to the code.
 
 To work with the bot code in Visual Studio:
 
@@ -95,21 +95,21 @@ To work with the bot code in Visual Studio:
 > [!div class="mx-imgBorder"]
 > ![Bot code shown in Visual Studio](../media/visual-studio-bot.png)
 
-## Create a capital dictionary
+## Create a dictionary of capital cities
 
 Let's try to make our bot do something useful. Consider the problem of learning the capital cities of different countries. Our first exercise is to turn our bot into a "capital dictionary", which will return the capital city of any given country.
 
 > [!TIP]
 > During this module, we'll describe a series of steps that add some functionality to the bot and provide pieces of code. We recommend that you try and develop the bot yourself alongside the instructions.
 >
-> You can, however, get the code for the bot at different stages in [this GitHub Repository][GithubSample]. You can even grab the complete code from there. The only additional step you have to take is to copy the `appsettings.json` file from your project into the root directory.
+> You can, however, get the code for the bot at different stages in the [mslearn-responsible-bots GitHub repository][GithubSample]. You can even grab the complete code from there. The only additional step you have to take is to copy the `appsettings.json` file from your project into the root directory.
 
 If you take a look [list of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals) on Wikipedia, you can see that there's an important fairness and data complexity problem. Some countries, like Switzerland, might not have a *de jure* capital at all. Also, in some other countries, like Israel, the capital is not officially recognized.
 
-There's no easy way to solve this problem. For this module, we'll choose the simplest solution - to cite the source of data. However, we can consider some options for a more complex approach:
+There's no easy way to solve this problem. For this module, we'll choose the simplest solution - to cite the source of data. If we wanted a more complex approach, however, there are a some options we could consider:
 
-- the bot returns different results based on the user's language.
-- make use of another technological mechanism to accommodate for this issue
+- Enable the bot to return different results based on the user's language.
+- Make use of another technological mechanism to accommodate for this issue.
 
 Another important issue to note: capitals and countries change. We'll need to update our bot periodically so that users maintain trust in the bot. Maybe we can display a "last updated" date to make it clear how recent the data is.
 

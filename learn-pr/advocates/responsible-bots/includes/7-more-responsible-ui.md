@@ -205,7 +205,7 @@ The bot detects "end-of-conversation" phrases by using LUIS. A bot responds to t
 
 ## Support speech
 
-Bots should welcome diversity. A responsible conversational bot accepts user input as text or speech--from a keypad, mouse, or touch-screen, and also from a microphone.
+Bots should welcome diversity. A responsible conversational bot accepts user input as text or speech - from a keypad, mouse, or touch-screen, and also from a microphone.
 
 Add a speech interface to your bot with the Azure [Speech Service][SpeechSDK]. The Bot Framework supports embedding speech data into messages in the form of **Simple Speech Markup Language** (SSML). Update your bot code to [add speech to messages][AddSpeech]. The bot also needs speech support from the conversation client. Web chat control integrates with the Microsoft Speech SDK to support both text-to-speech and speech-to-text.
 
