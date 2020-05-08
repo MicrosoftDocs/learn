@@ -1,6 +1,6 @@
-In the previous unit, we created an echo bot from a template. This bot simply echoes back anything that the user types. Now let's see how can we take a look at the bot code and change this behavior.
+In the previous unit, we created an echo bot from a template. This bot simply echoes back anything that the user types. Now let's take a look at the bot code and change its behavior.
 
-Open the bot page on the Azure portal:
+Open the bot page on the [Azure portal](https://portal.azure.com?azure-portal=true):
 
 ![Azure portal Bot Page](../media/azure-portal-bot-page.png)
 

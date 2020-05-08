@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.responsible-bots.4-bot-development
-title: Bot development
+title: Exercise - Develop your bot
 metadata:
-  title: Bot development
+  title: Exercise - Develop your bot
   description: In this unit, we'll learn how to start developing a bot by using Visual Studio Online or Visual Studio 2019.
   ms.date: 05/19/2020
   author: shwars
