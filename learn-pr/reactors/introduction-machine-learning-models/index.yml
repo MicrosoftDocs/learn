@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Review the steps to manipulate and clean data
 # placeholder icon
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/reactors/introduction-machine-learning-models.svg
 levels:
 - beginner
 roles:
