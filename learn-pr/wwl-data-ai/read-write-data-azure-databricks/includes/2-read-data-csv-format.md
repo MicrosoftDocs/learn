@@ -53,9 +53,9 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
- ```
-  https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/03-Reading-and-writing-data-in-Azure-Databricks.dbc?raw=true
- ```
+    ```
+     https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/03-Reading-and-writing-data-in-Azure-Databricks.dbc?raw=true
+    ```
 
 1. Select **Import**.
 1. Select the **03-Reading-and-writing-data-in-Azure-Databricks** folder that appears.
