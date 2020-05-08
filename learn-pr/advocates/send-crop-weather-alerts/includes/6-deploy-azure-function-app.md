@@ -1,20 +1,20 @@
-In this unit, you'll create and deploy an existing application to Azure Functions.
+In this unit, you'll create and deploy an existing application to the function app.
 
-## Create a Storage account
+## Create a storage account
 
-Azure Functions requires a Storage Account for storing the application code and other information. Additionally our app requires a Table called `alerts` within the Storage Account to track the locations, phone numbers, and temperature ranges to create alerts for.
+The function app requires a storage account for storing the application code and other information. Additionally, the app requires a table called `alerts` within the storage account to track the locations, phone numbers, and temperature ranges to create alerts for.
 
-All Azure Storage accounts have a name, and this name needs to be globally unique among all storage account. Storage accounts can be accessed over the web, and the name forms part of the URL. To make a unique name, include things like the date or your name. This name needs to be between 3 and 24 characters long and only contain lower-case letters and numbers.
+An Azure storage account name must be globally unique among all storage accounts. Storage accounts can be accessed over the web, and the name forms part of the URL. To make a unique name, include information like the date or your name. This name must contain from 3 to 24 characters and contain only lowercase letters and numbers.
 
-1. Run this command to create an environment variable for the name of the storage account. This environment variable will be used by other commands later in this unit.
+1. To create an environment variable for the name of the storage account, a variable that will be used by other commands later in this unit, run the following command:
 
     ```azurecli
     export STORAGE_ACCOUNT_NAME=<YOUR-STORAGE-ACCOUNT-NAME>
     ```
 
-    Replace `<YOUR-STORAGE-ACCOUNT-NAME>` with the name you want to use for your storage account, for example `cropweatheralert20100519`.
+    Replace *\<YOUR-STORAGE-ACCOUNT-NAME>* with the name you want to use for your storage account (for example, *cropweatheralert20100519*.
 
-1. Run the following commands in the Sandbox to create a Storage Account and the required table.
+1. In the sandbox, create a storage account and the required table by running the following commands:
 
     ```azurecli
     az storage account create \
@@ -30,17 +30,17 @@ All Azure Storage accounts have a name, and this name needs to be globally uniqu
 
 ## Create a function app
 
-Azure Functions Apps need a globally unique name. To make a unique name, include things like the date or your name. This name can be the same as your storage account, as long as that name is unique across all Azure Functions apps.
+The Azure function app name must be globally unique. To make a unique name, include information like the date or your name. This name can be the same as your storage account name, as long as it's unique across all Azure function apps.
 
-1. Run this command to create an environment variable for the name of the Azure Functions app. This environment variable will be used by other commands later in this unit.
+1. To create an environment variable for the name of the Azure function app, run the following command. This environment variable will be used by other commands later in this unit.
 
     ```azurecli
     export FUNCTIONS_APP_NAME=<YOUR-FUNCTION-APP-NAME>
     ```
 
-    Replace `<YOUR-FUNCTION-APP-NAME>` with the name you want to use for your functions app, for example `cropweatheralert20100519`.
+    Replace *<YOUR-FUNCTION-APP-NAME>* with the name you want to use for your functions app (for example, *cropweatheralert20100519*).
 
-1. Run this command to create a new Azure Functions app:
+1. To create a new Azure function app, run this command:
 
     ```azurecli
     az functionapp create \
@@ -53,11 +53,11 @@ Azure Functions Apps need a globally unique name. To make a unique name, include
       --functions-version 2
     ```
 
-## Create Environment Variables
+## Create environment variables
 
-Our application once deployed will require the Azure Maps key, Twilio Phone number, Twilio Account SID, and Twilio Auth Token. This information is provided to the application via environment variables known as App Settings.
+After your application is deployed, it will require the Azure Maps key, the Twilio phone number, the Twilio account SID, and the Twilio auth token. This information is provided to the application via environment variables that are known as app settings.
 
-1. Run the following command to create the App Settings as follows:
+1. To create the app settings, run this command:
 
     ```azurecli
     az functionapp config appsettings set \
@@ -66,15 +66,15 @@ Our application once deployed will require the Azure Maps key, Twilio Phone numb
       --settings "AZURE_MAPS_SUBSCRIPTION_KEY=<YOUR-MAPS-KEY-HERE>" "TWILIO_PHONE_NUMBER=<YOUR-TWILIO-NUMBER-HERE, for example +12324345678>" "TwilioAccountSID=<YOUR-TWILIO-ACCOUNTSID>" "TwilioAuthToken=<YOUR-TWILIO-AUTHTOKEN>"
     ```
 
-    Replace `<YOUR-MAPS-KEY-HERE>` with the Azure Maps primary key you noted down earlier in this unit.
+    Replace *<YOUR-MAPS-KEY-HERE>* with the Azure Maps primary key that you copied earlier in this unit.
 
-    Replace `<YOUR-TWILIO-NUMBER-HERE>` with your Twilio trial phone number that you noted down in the previous unit.
+    Replace *<YOUR-TWILIO-NUMBER-HERE>* with your Twilio trial phone number, which you copied in the preceding unit.
 
-    Replace `<YOUR-TWILIO-ACCOUNTSID>` with your Twilio Account SID that you noted down in the previous unit.
+    Replace *<YOUR-TWILIO-ACCOUNTSID>* with your Twilio Account SID, which you copied in the preceding unit.
 
-    Replace `<YOUR-TWILIO-AUTHTOKEN>` with your Twilio Auth Token that you noted down in the previous unit.
+    Replace *<YOUR-TWILIO-AUTHTOKEN>* with your Twilio Auth Token, which you copied in the preceding unit.
 
-1. Verify the App Settings were created and have the correct value with the following command:
+1. To verify that the app settings were created and have the correct value, run this command:
 
     ```azurecli
     az functionapp config appsettings list \
@@ -85,26 +85,26 @@ Our application once deployed will require the Azure Maps key, Twilio Phone numb
 
 ## Download the application code for our app
 
-The Function application's source code lives in a repository on GitHub.
+The function app's source code lives in a repository on GitHub.
 
-1. Run the following command to clone the code down to our working environment.
+1. To clone the code in your working environment, run this command:  
 
     ```azurecli
     git clone https://github.com/MicrosoftDocs/mslearn-send-crop-weather-alerts.git
     ```
 
-This code contains a timer trigger that runs at 12-hour intervals. This is perfect for a final app, but for testing purposes, 12 hours is too long. If you deploy this code, you won't see a response message for 12 hours, by which time the sandbox will have ended and the app will be deleted.
+    This code contains a timer trigger that runs at 12-hour intervals. This is perfect for a final app, but for testing purposes, 12 hours is too long. If you deploy this code, you won't see a response message for 12 hours, by which time the sandbox period will have ended and the app will be deleted.
 
-To see results faster, change this trigger to run every 10 minutes.
+    To view results faster, change this trigger to run every 10 minutes.
 
-1. Use the **nano** editor to edit the file using the following commands:
+1. Use the **nano** editor to edit the file by using the following commands:
 
     ```azurecli
     cd mslearn-send-crop-weather-alerts
     nano CheckForecast/function.json
     ```
 
-1. Navigate using cursor keys to line 8, and change the text:
+1. Using the cursor keys, go to line 8, and change the text from:
 
     ```json
     "schedule": "12:00:00"
@@ -118,15 +118,15 @@ To see results faster, change this trigger to run every 10 minutes.
 
     This change will schedule the trigger to run every 10 minutes.
 
-1. Save the file by pressing `ctrl+o`, then press return to overwrite the existing file.
+1. Save the file by selecting Ctrl+O, and then select Enter to overwrite the existing file.
 
-1. Exit nano by pressing `ctrl+x`
+1. Close the **nano** editor by selecting Ctrl+X.
 
-## Deploy the application to Azure Functions
+## Deploy the application to the function app
 
-We're now ready to deploy our application to Azure Functions.
+You're now ready to deploy your application to the function app.
 
-1. Run the following command to publish the code
+1. To publish the code, run this command:
 
     ```azurecli
     func azure functionapp publish $FUNCTIONS_APP_NAME --python
@@ -136,13 +136,13 @@ We're now ready to deploy our application to Azure Functions.
 
 One of our functions is configured to respond to HTTP requests, which will be made by Twilio.
 
-1. Run the following command to obtain the full endpoint URL.
+1. To obtain the full endpoint URL, run this command:
 
     ```azurecli
     func azure functionapp list-functions $FUNCTIONS_APP_NAME --show-keys
     ```
 
-1. Find the `SetupAlert` URL in the output
+1. Find the `SetupAlert` URL in the output:
 
     ```output
     Functions in cropweatheralertjabenn:
@@ -154,6 +154,6 @@ One of our functions is configured to respond to HTTP requests, which will be ma
             Invoke url: https://cropweatheralertjabenn.azurewebsites.net/api/setupalert?code=Secr3tC0de
     ```
 
-    The full URL can be found after `Invoke url:`. Note this down.
+    The full URL is displayed after *Invoke url:*. Copy and store it for later use.
 
-In this unit, you created an Azure Function app, deployed code to this app, and configured all required environment variables known as App Settings for the app. Finally, you obtained the endpoint URL for one of the functions to be called by Twilio. Next, you will connect the Function App to Twilio.
+In this unit, you created an Azure function app, deployed code to this app, and configured all required environment variables for the app, also known as app settings. Finally, you obtained the endpoint URL for one of the functions to be called by Twilio. Next, you'll connect the function app to Twilio.

@@ -3,7 +3,7 @@ uid: learn.advocates.send-crop-weather-alerts.8-summary
 title: Summary and knowledge check
 metadata:
   title: Summary and knowledge check
-  description: Summarizes what you have learned in this module, describes some next steps, and finishes with a short knowledge check.
+  description: This page summarizes what you have learned in this module, describes some next steps, and finishes with a short knowledge check.
   author: berndverst
   ms.author: beverst
   ms.date: 05/07/2020
@@ -17,14 +17,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which HTTP Request method was used to connect Twilio to our app?'
+  - content: 'Which HTTP request method was used to connect Twilio to your app?'
     choices:  
     - content: 'GET'
       isCorrect: false
-      explanation: No, it was not a GET request.
+      explanation: Incorrect. It was not a GET request.
     - content: 'HEAD'
       isCorrect: false
-      explanation: HEAD requests cannot send data such as the contents of text messages.
+      explanation: Incorrect. HEAD requests cannot send data such as the contents of text messages.
     - content: 'POST'
       isCorrect: true
-      explanation: Correct. It was a POST request.
+      explanation: Correct! It was a POST request.
