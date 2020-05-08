@@ -1,4 +1,4 @@
-GitHub Actions can be used to implement *continuous integration* (CI) for code that is maintained in GitHub repositories. CI is the practice of using automation to build and test software every time a developer commits changes to version control. CI helps teams disover issues early in the development process and fix them quickly.
+GitHub Actions can be used to implement *continuous integration* (CI) for code that is maintained in GitHub repositories. CI is the practice of using automation to build and test software every time a developer commits changes to version control. CI helps teams discover issues early in the development process and fix them quickly.
 
 Suppose you want to set up a CI pipeline for your team. The team is developing a website to improve the experience customers have when they contact product support. A number of features are under development and you want to make sure the team can build and test them easily so that each one can be quickly added to the website. Because the code for the project is stored in a GitHub repository, you decide to use GitHub Actions for your CI project.
 
