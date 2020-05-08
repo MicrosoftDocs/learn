@@ -16,11 +16,13 @@ In this course, we'll develop a simple bot to help students learn geography. We'
 > As we mentioned, the bot interface is often more engaging for users because the bot seems to have a human-like personality. A bot helps users _feel_ like they're talking with another person, rather than giving instructions to a tool or computer. When human feelings are involved, frustrations can arise. To avoid frustrations and miscommunication, we need to build **responsible bots**. We'll talk about this issue in detail in a later unit.
 
 ## Learning objectives
-<!-- Add more objectives to this list -->
 
 - Learn the basic building blocks to create conversational UI for users
 - Understand the principles to develop responsible bots
-- Develop an educational assistant with Azure Bot Service and Azure Cognitive Services
+- Create a simple educational bot using Azure Bot Service
+- Improve upon your bot's ability to understand by adding LUIS
+- Give your bot personality with Azure QnA Maker
+- Explore how your bot could become more culturally sensitive
 
 ## Prerequisites
 
