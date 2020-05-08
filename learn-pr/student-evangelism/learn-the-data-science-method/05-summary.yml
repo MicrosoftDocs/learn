@@ -25,7 +25,7 @@ quiz:
           isCorrect: true
           explanation: Correct. The treatment is exposure to job opportunities for women.
         - content: The treatment group was the 160 villages selected, and the control group was the rest of the villages outside the capital of India.
-          explanation: Inorrect. Not all of the 160 villages received treatment.
+          explanation: Incorrect. Not all of the 160 villages received treatment.
           isCorrect: false
         - content: The treatment group was the girls in India, and the control group was the boys in India.
           isCorrect: false
@@ -33,18 +33,18 @@ quiz:
         - content: There is no clear notion of treatment and control group in this study.
           isCorrect: false
           explanation: Incorrect. The study had a distinct treatment that was applied to the treatment group.
-    - content: 'Was this an observational study, a randomized controlled experiment or a randomized observational study?'
+    - content: 'Was this study an observational study, a randomized controlled experiment, or a randomized observational study?'
       choices:
-        - content: This was an observational study.
+        - content: This study was an observational study.
           explanation: Incorrect. There was a treatment applied, which means the study is not purely observational.
           isCorrect: false
-        - content: This was a randomized controlled experiment.
+        - content: This study was a randomized controlled experiment.
           isCorrect: true
           explanation: Correct. The treatment was applied to randomly selected villages, with a control group. This makes the study a randomized controlled experiment.
-        - content: This was a randomized observational study.
+        - content: This study was a randomized observational study.
           isCorrect: false
           explanation: Incorrect. The study applied a treatment to one of the groups, which makes it not an observational study.
-    - content: 'The study found that "Girls aged 5-15 in villages that received the recruiting services were 3 to 5 percentage points more likely to be in school." Does the study provide evidence that receiving recruting services leads to an increase in the chance that girls are in school?'
+    - content: 'The study found that "Girls aged 5-15 in villages that received the recruiting services were 3 to 5 percentage points more likely to be in school." Does the study provide evidence that receiving recruiting services leads to an increase in the chance that girls are in school?'
       choices:
         - content: Yes, the study provides evidence of a causal link.
           isCorrect: true
