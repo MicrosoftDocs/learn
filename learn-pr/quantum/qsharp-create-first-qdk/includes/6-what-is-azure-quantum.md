@@ -3,7 +3,7 @@ Keep in mind that the programs you ran here use a _simulator_ to mimic quantum b
 
 When you're ready to run your programs on real quantum hardware, there's Azure Quantum, a quantum computing service that runs on Azure.
 
-Azure Quantum is currently in private preview, available for running compute jobs. It will be made available for the public soon. Here's a preview of what to expect.
+Azure Quantum is currently in limited preview with select partners and customers. Here's an early look at what to expect.
 
 ## What's included on Azure Quantum?
 
@@ -28,8 +28,6 @@ For example, there are trapped ion quantum computers from IonQ and Honeywell. Th
 ![Azure quantum offering](../media/6-azure-quantum.png)
 
 ## What are Azure Quantum Workspaces?
-
-**TODO:** "Workspaces" (capital 'W') or "workspaces"?
 
 Like other Azure services, you need to deploy an Azure Quantum resource into your Azure subscription in order to use the service.
 
@@ -62,4 +60,3 @@ Azure Quantum provides information about the state of your job and its execution
 **Billing**: When you enable a provider in your workspace, you also select the billing plan for that provider. The billing plan defines how you're billed for jobs against that provider.
 
 Each provider may have different billing plans and methods available. While you may only select a single billing plan for a specific provider in a single workspace, you can deploy to multiple workspaces within your Azure subscription.
-
