@@ -6,7 +6,8 @@ As we did with LUIS, when we add the QnA Maker service to our bot, the first thi
 
 Our first step is to create a new knowledge base. Select **Create a new knowledge base** in the top menu.
 
-![Screenshot of the QnA Maker My knowledge bases pane, with the Create a new knowledge base link in the top menu selected.](../media/qna-maker-create-knowledge-base.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the QnA Maker My knowledge bases pane, with the Create a new knowledge base link in the top menu selected.](../media/qna-maker-create-knowledge-base.png)
 
 For **step 1**, select the **Create a QnA service** button. A new browser window opens in the Azure portal. 
 
@@ -20,7 +21,8 @@ In the portal, select or enter the following information for the new QnA Maker s
 1. Enter an app name. Our example is **myquestionservice**.
 1. For **App insights**, select **Disable**.
 
-![Screenshot of the QnA Maker Create pane that shows information to select or enter.](../media/qna-maker-create-service.png)  
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the QnA Maker Create pane that shows information to select or enter.](../media/qna-maker-create-service.png)  
 
 For **step 2**, return to the browser window that displays QnA Maker and continue to create your QnA Maker service:
 
@@ -31,7 +33,8 @@ For **step 2**, return to the browser window that displays QnA Maker and continu
     > [!NOTE]
     > Some languages that are available in **Language**  support *chit-chat* functionality, which refers to general conversation functionality. For other languages, only information extraction and basic QnA functionality is available. For the purpose of this module, let's select English as the most supported language.
 
-![Screenshot of the QnA Maker Connect your QnA service to your KB pane that shows options to select](../media/qna-maker-create-2.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the QnA Maker Connect your QnA service to your KB pane that shows options to select](../media/qna-maker-create-2.png)
 
 For **step 3**, enter a name for your database. Our example is **qnadb**.
 
@@ -55,27 +58,32 @@ In QnA Maker, chit-chat prepopulates our knowledge base with a set of potential 
 
 Select **Create**. The knowledge base editing page opens.
 
-![Screenshot of the QnA Maker knowledge base editor.](../media/qna-maker-knowledge-base.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the QnA Maker knowledge base editor.](../media/qna-maker-knowledge-base.png)
 
 In the **Knowledge base** pane, you can see a chit-chat knowledge base that's prepopulated by using information from the *qna_chitchat_Enthusiastic.tsv* file. In the UI, you can edit all questions and answers. You can even provide a question (or a set of possible questions) and a corresponding answer.
 
 Let's add some geography terminology to this knowledge base. In the task bar, select **+**: 
 
-![Screenshot of the QnA Maker knowledge base editor, showing how to edit questions and answers, with the plus button highlighted.](../media/qna-maker-add-knowledge-base-host.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the QnA Maker knowledge base editor, showing how to edit questions and answers, with the plus button highlighted.](../media/qna-maker-add-knowledge-base-host.png)
 
 Let's add questions about definitions of the terms *country* and *capital*. You can provide more specific question-and-answer functionality for the problem domain of geography, but to demonstrate the UI, we'll use just two examples (shown in the following image).
 
 When you've added some data, select **Save and train**. Then, select **Test** to see your model in action. A chat dialog opens, and you can enjoy the conversation right in QnA Maker. To see the detailed QnA Maker response to your query, including the probability of the selected answer, in the dialog pane on the left, select **Inspect**. You also can provide feedback to improve the accuracy of the model.
 
-![Screenshot of the QnA Maker Edit pane, with a question and answer about the meaning of the word "capital" and the Inspect button highlighted.](../media/qna-maker-test.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the QnA Maker Edit pane, with a question and answer about the meaning of the word "capital" and the Inspect button highlighted.](../media/qna-maker-test.png)
 
 When you're finished adding data and training the model, select **Publish**. The model is published in the cloud.
 
-![Screenshot of the QnA Maker Publish tab, with the Publish button highlighted.](../media/qna-maker-publish.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the QnA Maker Publish tab, with the Publish button highlighted.](../media/qna-maker-publish.png)
 
 When publishing (deployment) is successful, QnA Maker displays details about how to access the service.
 
-![Screenshot of the QnA Maker Success pane, with details about the deployment and how to access it.](../media/qna-maker-published.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the QnA Maker Success pane, with details about the deployment and how to access it.](../media/qna-maker-published.png)
 
 > [!NOTE]
 > The **Create a Bot** button on this final pane begins the process of creating a bot that is tied to the QnA Maker service. In fact, using QnA Maker probably is the easiest way to get a bot up and running in the cloud. Even a bot without sophisticated functionality can implement responsible UI!

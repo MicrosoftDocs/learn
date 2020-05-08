@@ -15,7 +15,8 @@ Let's add a **help** feature to our bot! Because we're already using QnA Maker, 
 
 1. Select **+ Add QnA Pair**.
 
-    ![The QnA Maker knowledge base edit dialog.](../media/qna-maker-add-pair.png)
+   > [!div class="mx-imgBorder"]
+   > ![The QnA Maker knowledge base edit dialog.](../media/qna-maker-add-pair.png)
 
 1. Enter phrases to trigger the **help** feature.
 
@@ -79,7 +80,8 @@ We need to respond to a user, when the bot doesn't understand the user's input. 
 
 Here's an example of an initial conversation between our bot and a user:
 
-![A sample welcome message and help feature for our bot.](../media/help-conversation.png)
+> [!div class="mx-imgBorder"]
+> ![A sample welcome message and help feature for our bot.](../media/help-conversation.png)
 
 ## Add visual interactions
 
@@ -148,7 +150,8 @@ To create an attachment, we use the `MessageFactory` object. There are different
 
 Here's how our conversation with support for attachments looks in the Visual Studio Emulator:
 
-![An example conversation with support for attachments in VS Emulator.](../media/flag-conversation.png)
+> [!div class="mx-imgBorder"]
+> ![An example conversation with support for attachments in VS Emulator.](../media/flag-conversation.png)
 
 > [!NOTE]
 > In this example, we can see another potential problem. The spelling of non-English names can differ. Our bot doesn't support different transliterations for *Yerevan*, the capital of *Armenia*. To develop a responsible bot, we need to support different possible transliterations. An even better approach is to offer suggestions that provide slight variations in city names.
@@ -202,7 +205,7 @@ The bot detects "end-of-conversation" phrases by using LUIS. A bot responds to t
 
 ## Support speech
 
-Bots should welcome diversity. A responsible conversational bot accepts user input as text or speech--from a keypad, mouse, or touch-screen, and also from a microphone.
+Bots should welcome diversity. A responsible conversational bot accepts user input as text or speech - from a keypad, mouse, or touch-screen, and also from a microphone.
 
 Add a speech interface to your bot with the Azure [Speech Service][SpeechSDK]. The Bot Framework supports embedding speech data into messages in the form of **Simple Speech Markup Language** (SSML). Update your bot code to [add speech to messages][AddSpeech]. The bot also needs speech support from the conversation client. Web chat control integrates with the Microsoft Speech SDK to support both text-to-speech and speech-to-text.
 

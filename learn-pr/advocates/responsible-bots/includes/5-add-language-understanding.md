@@ -1,11 +1,11 @@
-We've already developed one of the features of our bot, which is to tell capital cities from country names. Now we need to make the bot more human by teaching it how to understand simple natural language. To do this, we use a cognitive service called the Language Understanding Intelligent Service ([LUIS][LUIS]).
+We've already developed one of the features of our bot, which is to tell capital cities from country names. Now we need to make the bot more human by teaching it how to understand simple natural language. To do it, we use a cognitive service called the Language Understanding Intelligent Service ([LUIS][LUIS]).
 
 LUIS does two important natural language understanding tasks:
 
 - **Intent Classification** allows you to classify each input sentence, a so-called utterance, with its intent, to figure out the overall meaning of a phrase.
 - **Named Entity Recognition** extracts some known entities from the phrase, such as city names or dates.
 
-For example, the phrase *What is the capital of France?* can be classified as a `get_capital` intent. *France* is extracted as a geographical entity. The same intent can be verbalized differently, for example, *What is France's capital city?*. The extracted entity and intent are the same, which leads to the same result.
+For example, the phrase *What is the capital of France?* can be classified as a `get_capital` intent. *France* is extracted as a geographical entity. The same intent can be verbalized differently, for example. What is France's capital city?*. The extracted entity and intent are the same, which leads to the same result.
 
 LUIS uses a machine learning model to match an input phrase to the best possible intent, but not an exact match. This model allows LUIS to classify phrases that aren't exact and find the best possible match. It also returns a *confidence* ranking with a number from 0 to 1, which indicates how certain the model is of the given classification. If the model returns a low confidence ranking, it means that the phrase wasn't understood well.
 
@@ -13,7 +13,7 @@ LUIS uses a machine learning model to match an input phrase to the best possible
 
 One of the principles of responsible conversational AI is that a bot should have a clear goal. A goal defines the set of intents that a bot can handle.
 
-The goal of the **GeoFriend** bot is to help a student study geography and act as an assistant. To do this, implement the following functionality so that the bot can:
+The goal of the **GeoFriend** bot is to help a student study geography and to act as an assistant. With this goal in mind, we'll implement the following functionality so that the bot can:
 
 - Give a capital city for a given country name.
 - Give a country name for a given capital city.
@@ -43,23 +43,28 @@ To train the LUIS model, we'll give it some sample phrases for each intent, as s
 
 1. When you first sign in, you're asked to specify your country and accept the terms of use.
 
-   ![LUIS terms of use](../media/luis-terms.png)
+   > [!div class="mx-imgBorder"]
+   > ![LUIS terms of use.](../media/luis-terms.png)
 
 1. Now link to your Azure account. Select the **Continue using an Azure Resource** option, and then select **Create New Authoring Resource**.
 
-   ![Link the Azure account](../media/luis-link-account.png)
+   > [!div class="mx-imgBorder"]
+   > ![Link the Azure account page.](../media/luis-link-account.png)
 
 1. In the dialog box, select your subscription, enter a suitable name for the service, and select the resource group you previously used for the bot.
 
-   ![Create the resource](../media/luis-create-recognizer-dialog.png)
+   > [!div class="mx-imgBorder"]
+   > ![Create the resource page.](../media/luis-create-recognizer-dialog.png)
 
-1. After this is done, the LUIS portal opens again, where you can create a new application.
+1. Next, the LUIS portal opens again, where you can create a new application.
 
-   ![Create a new app](../media/luis-create-app.png)
+   > [!div class="mx-imgBorder"]
+   > ![Create a new app.](../media/luis-create-app.png)
 
 1. Select **Create a LUIS app now**, and the LUIS portal opens again.
 
-   ![LUIS portal](../media/luis-new-app.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of the LUIS portal.](../media/luis-new-app.png)
 
 1. Make sure your **Subscription** and **Authoring resource** are selected. If you don't see your authoring resource, check that you're using the portal for the correct region.
 
@@ -76,7 +81,8 @@ To train the LUIS model, we'll give it some sample phrases for each intent, as s
 
    After some information screens, the main application dashboard appears.
 
-   ![Application dashboard](../media/luis-main.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of the Cognitive Services application dashboard.](../media/luis-main.png)
 
 1. To add a prebuilt entity for geographical locations, follow these steps:
 
@@ -86,7 +92,8 @@ To train the LUIS model, we'll give it some sample phrases for each intent, as s
 
    You should see the entity added to the screen, as shown here.
 
-   ![Add prebuilt entity](../media/luis-entity-geography.png)
+   > [!div class="mx-imgBorder"]
+   > ![Add prebuilt entity.](../media/luis-entity-geography.png)
 
 1. To create the first intent, `get_capital`, follow these steps:
 
@@ -94,15 +101,17 @@ To train the LUIS model, we'll give it some sample phrases for each intent, as s
    1. Select **Create**, and enter the intent's name, `get_capital`.
    1. Enter a sample utterance like **What is the capital of the United States?**
 
-   ![Create intents](../media/luis-intent.png)
+   > [!div class="mx-imgBorder"]
+   > ![Create intents.](../media/luis-intent.png)
 
    You can see that LUIS automatically detects geographical entities.
 
-1. Using the same procedure, enter a few more sentences for the `get_capital` intent. Create other intents from those listed in the previous table.
+1. Using the same procedure, enter a few more sentences for the `get_capital` intent. Create other intents from the ones listed in the previous table.
 
 1. After you've created intents, select **Train** to train the model. After training, select **Test** to see how well the model performs on some input sentences.
 
-   ![Test results](../media/luis-test.png)
+   > [!div class="mx-imgBorder"]
+   > ![Test results.](../media/luis-test.png)
 
 1. If you see some phrases classified incorrectly, select **Inspect** to get the details and add the utterances to the training data to improve the model.
 
@@ -114,7 +123,8 @@ To use the LUIS model from the bot, first we need to publish the model.
 
 1. Select **Publish**, select **Production Slot**, and then select **Done**. The screen with the prediction endpoint URL and key appears.
 
-   ![Prediction](../media/luis-publish-model.png)
+   > [!div class="mx-imgBorder"]
+   > ![Prediction.](../media/luis-publish-model.png)
 
    > [!TIP]
    > Right now the model is deployed on some starter resources. To deploy it in production, select **Add prediction resource**. After you do that, you'll have another set of prediction keys and an endpoint URL that you can freely control through your subscription.
@@ -131,7 +141,8 @@ To use the LUIS model from the bot, first we need to publish the model.
    1. Select the **Browse** tab.
    1. Enter `Luis`, choose `Microsoft.Bot.Builder.AI.Luis`, and select **Install**.
 
-   ![Add the NuGet package](../media/luis-add-nuget.png)
+   > [!div class="mx-imgBorder"]
+   > ![Add the NuGet package.](../media/luis-add-nuget.png)
 
 1. To add LUIS Recognized to our bot, add the corresponding code to the `ConfigureServices` function in `Startup.cs`. Open the file, and insert the following code after the first line of the `ConfigureServices` function:
 
@@ -154,7 +165,7 @@ To use the LUIS model from the bot, first we need to publish the model.
       "LuisEndpointUrl": "<your endpoint url here>"
     ```
 
-   This data is taken from the LUIS prediction screen shown in the previous step. The only tricky thing is to get the app ID. In the prediction screen, you see the **Example query**, which looks similar to this:
+   This data is taken from the LUIS prediction screen shown in the previous step. The only tricky thing is to get the app ID. In the prediction screen, you see the **Example query**, which looks similar to:
 
     ```json
     https://langrecognizer.cognitiveservices.azure.com/luis/prediction/v3.0/apps/5c9d81a8-2d13-448a-9f7c-df4ec1b5cdb4/slots/...
@@ -173,8 +184,8 @@ To use the LUIS model from the bot, first we need to publish the model.
     }
     ```
 
-1. To make sure that the recognizer works, change the code for `OnMessageAcitivityAsync` to the following:
-    
+1. To make sure that the recognizer works, change the code for `OnMessageAcitivityAsync` to :
+
     ```csharp
     protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
     {
@@ -257,7 +268,8 @@ We also need to add some more functions to the `CountryData` class to figure out
 
 After we implement those changes, we can start the bot and have a little conversation.
 
-![Conversation with the bot](../media/luis-conversation.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of a conversation with the bot.](../media/luis-conversation.png)
 
 ## Conclusion
 
