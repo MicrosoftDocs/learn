@@ -41,8 +41,8 @@ units:
 - learn.advocates.responsible-bots.5-add-language-understanding
 - learn.advocates.responsible-bots.6-add-question-answering
 - learn.advocates.responsible-bots.7-more-responsible-ui
-- learn.advocates.responsible-bots.8-knowledge-check
-- learn.advocates.responsible-bots.9-publish
+- learn.advocates.responsible-bots.8-publish
+- learn.advocates.responsible-bots.9-knowledge-check
 - learn.advocates.responsible-bots.10-summary
 badge:
   uid: learn.advocates.responsible-bots.badge

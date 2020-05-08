@@ -5,9 +5,9 @@ LUIS does two important natural language understanding tasks:
 - **Intent Classification** allows you to classify each input sentence, a so-called utterance, with its intent, to figure out the overall meaning of a phrase.
 - **Named Entity Recognition** extracts some known entities from the phrase, such as city names or dates.
 
-For example, the phrase *What is the capital of France?* can be classified as a `get_capital` intent. *France* is extracted as a geographical entity. The same intent can be verbalized differently, for example. What is France's capital city?*. The extracted entity and intent are the same, which leads to the same result.
+For example, the phrase *What is the capital of France?* can be classified as a `get_capital` intent. *France* is extracted as a geographical entity. The same intent can be verbalized differently, for example, *What is France's capital city?*. The extracted entity and intent are the same, which leads to the same result.
 
-LUIS uses a machine learning model to match an input phrase to the best possible intent, but not an exact match. This model allows LUIS to classify phrases that aren't exact and find the best possible match. It also returns a *confidence* ranking with a number from 0 to 1, which indicates how certain the model is of the given classification. If the model returns a low confidence ranking, it means that the phrase wasn't understood well.
+LUIS uses a machine learning model to match an input phrase to the best possible intent, but not an exact match. It also returns a *confidence* ranking with a number from 0 to 1, which indicates how certain the model is of the given classification. If the model returns a low confidence ranking, it means that the phrase wasn't understood well.
 
 ## Design intents
 
@@ -24,22 +24,10 @@ For simplicity, we'll limit ourselves to these cases. Ideally, the bot should in
 
 ## Train the LUIS model
 
-To train the LUIS model, we'll give it some sample phrases for each intent, as shown in this table.
-
-| Intent | Phrase |
-|---|---|
-|`get_capital` | What is the capital of the *United States*? |
-|`get_capital` | I need to know the capital city of *France*. |
-|`get_country` | What country's capital is *Paris*? |
-|`play_game` | I want to play! |
-|`play_game` | Let's start a capital quiz! |
-|`get_population` | What is the population of *Moscow*? |
-|`get_population` | How many people live in *Seoul*? |
-
-1. To set up the LUIS service, go to the [LUIS portal](https://luis.ai).
+1. To set up the LUIS service, go to the [LUIS portal](https://luis.ai?azure-portal=true).
 
    > [!NOTE]
-   > In this course, we're using a preview version of the LUIS portal located at [https://preview.luis.ai](https://preview.luis.ai).
+   > In this module, we're showing screenshots from a preview version of the LUIS portal located at [https://preview.luis.ai](https://preview.luis.ai?azure-portal=true).
 
 1. When you first sign in, you're asked to specify your country and accept the terms of use.
 
@@ -106,7 +94,17 @@ To train the LUIS model, we'll give it some sample phrases for each intent, as s
 
    You can see that LUIS automatically detects geographical entities.
 
-1. Using the same procedure, enter a few more sentences for the `get_capital` intent. Create other intents from the ones listed in the previous table.
+1. Using the same procedure, enter a few more sentences for the `get_capital` intent. Follow the same steps to create other intents from the sample sentences listed in this table.
+
+| Intent | Phrase |
+|---|---|
+|`get_capital` | What is the capital of the *United States*? |
+|`get_capital` | I need to know the capital city of *France*. |
+|`get_country` | What country's capital is *Paris*? |
+|`play_game` | I want to play! |
+|`play_game` | Let's start a capital quiz! |
+|`get_population` | What is the population of *Moscow*? |
+|`get_population` | How many people live in *Seoul*? |
 
 1. After you've created intents, select **Train** to train the model. After training, select **Test** to see how well the model performs on some input sentences.
 
@@ -127,7 +125,7 @@ To use the LUIS model from the bot, first we need to publish the model.
    > ![Prediction.](../media/luis-publish-model.png)
 
    > [!TIP]
-   > Right now the model is deployed on some starter resources. To deploy it in production, select **Add prediction resource**. After you do that, you'll have another set of prediction keys and an endpoint URL that you can freely control through your subscription.
+   > Right now the model is deployed on some starter resources, which is fine for now. If you wanted to deploy it in production, you would select **Add prediction resource**. That process would generate another set of prediction keys and an endpoint URL that you can control through your subscription.
 
 1. Add the LUIS model to the bot code. Open the Visual Studio project that we worked on in the last unit.
 
@@ -205,7 +203,7 @@ To use the LUIS model from the bot, first we need to publish the model.
    You can see that entities are extracted correctly and that LUIS can also distinguish between cities and countries automatically.
 
 1. Now let's add processing logic to the bot. In the `OnMessageActivityAsync` function, we'll check if the recognition result is good enough and call the corresponding function to process LUIS results:
-    
+
     ```csharp
     protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
     {
@@ -273,9 +271,9 @@ After we implement those changes, we can start the bot and have a little convers
 
 ## Conclusion
 
-Now the bot seems to be much more intelligent, but it ignores some of the responsible AI principles, such as making the goal of the bot clear. In the next unit, we'll implement some of the responsible functionality, as well as a terms dictionary.
+Now the bot seems to be much more intelligent, but it ignores some of the responsible AI principles, such as making the goal of the bot clear. In the next unit, add one more feature, before moving on to implementing some of the responsible conversational principles.
 
-[LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/
-[LUISPortal]: https://preview.luis.ai
-[CodeLuis]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t2-luisrec
-[LUISCodeFile]: https://github.com/MicrosoftDocs/learn-responsible-bots/blob/master/models/GeoFriend.json
+[LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/?azure-portal=true
+[LUISPortal]: https://preview.luis.ai?azure-portal=true
+[CodeLuis]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t2-luisrec?azure-portal=true
+[LUISCodeFile]: https://github.com/MicrosoftDocs/learn-responsible-bots/blob/master/models/GeoFriend.json?azure-portal=true

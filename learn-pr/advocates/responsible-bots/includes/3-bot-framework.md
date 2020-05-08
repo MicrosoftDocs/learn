@@ -112,10 +112,10 @@ We can see information about our bot in the Azure portal, and also complete deve
     You should also see the Application Insights instance and the bot App Service plan. You might need to adjust the plan to scale the bot to handle more requests, or move the bot onto a free plan.
 
 1. Select your bot's link. You'll see the bot page in the Azure portal.
-    
+
     > [!div class="mx-imgBorder"]
     > ![Review the bot page in the Azure portal.](../media/azure-portal-bot-page.png)
-    
+
     The bot page in the Azure portal is the main starting point for configuring our bot. Under **Overview**, we see the sequence of steps for completing the bot. The first step is the idea or **Plan**. The second step is to **Build**, which is where we are now. We'll discuss how to build our bot in the next unit.
 
 ## Run the bot
@@ -125,7 +125,6 @@ From the bot page in the Azure portal, we can try our new bot in action.
 1. On the left, select **Test in Web Chat**.
 
     You'll see a chat box that you can use to converse with the bot.
-    
     > [!div class="mx-imgBorder"]
     > ![You can test your bot with the web chat box.](../media/azure-portal-web-chat.png)
 

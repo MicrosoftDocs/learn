@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.responsible-bots.9-publish
-title: Publish the bot
+uid: learn.advocates.responsible-bots.8-publish
+title: Exercise - Publish the bot
 metadata:
-  title: Publish the bot
+  title: Exercise - Publish the bot
   description: Publish your responsible conversational bot
   ms.date: 05/19/2020
   author: shwars
   ms.author: dmitryso
   ms.topic: interactive-tutorial
   ms.prod: learning-advocates
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
-  [!include[](includes/9-publish.md)]
+  [!include[](includes/8-publish.md)]

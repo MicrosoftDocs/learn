@@ -106,23 +106,26 @@ Let's try to make our bot do something useful. Consider the problem of learning 
 
 If you take a look [list of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals) on Wikipedia, you can see that there's an important fairness and data complexity problem. Some countries, like Switzerland, might not have a *de jure* capital at all. Also, in some other countries, like Israel, the capital is not officially recognized.
 
-There's no easy way to solve this problem. For this module, we'll choose the simplest solution - to cite the source of data. If we wanted a more complex approach, however, there are a some options we could consider:
+To make our bot as responsible as possible, we have to keep these tricky situations in mind. Unfortunately, there's no easy way to solve this problem.  For this module, we'll choose the simplest solution - to cite the source of data. If we wanted a more complex approach, however, there are a some options we could consider:
 
 - Enable the bot to return different results based on the user's language.
 - Make use of another technological mechanism to accommodate for this issue.
 
 Another important issue to note: capitals and countries change. We'll need to update our bot periodically so that users maintain trust in the bot. Maybe we can display a "last updated" date to make it clear how recent the data is.
 
-As a starting point for our data, lets use the [Basic City list from SimpleMaps.com](https://simplemaps.com/data/world-cities). Download the basic database [from this page](https://simplemaps.com/data/world-cities) and extract the `worldcities.csv` file into the root of the bot project directory.
+As a starting point for our data, lets use the [Basic City list from SimpleMaps.com](https://simplemaps.com/data/world-cities). Download the basic database [from this page](https://simplemaps.com/data/world-cities?azure-portal=true) and extract the `worldcities.csv` file into the root of the bot project directory.
 
 Lines in `worldcities.csv` look like this:
 
-```
+```csv
 "city","city_ascii","lat","lng","country","iso2","iso3","admin_name","capital","population","id"
 "Tokyo","Tokyo","35.6850","139.7514","Japan","JP","JPN","Tōkyō","primary","35676000","1392685764"
 "New York","New York","40.6943","-73.9249","United States","US","USA","New York","","19354922.0","1840034016"
 ...
 ```
+
+> [!IMPORTANT]
+> To make sure your bot can publish to Azure correctly, make sure `wordcities.csv` has the property **Copy to Output Directory** set to **Copy always**.
 
 To handle the data, let's create a new class called `CountryData` in the root of our project. In Visual Studio, you can right-click on the **EchoBot** project, and then select **Add** -> **Class**.
 
@@ -172,7 +175,7 @@ public class CountryData
 
 Here, we use a **LINQ** expression to go through each line of the data file, convert it to `Country` objects, and then store them as an array.
 
-Finally, to get the capital for a given country, let's create the `GetCapital` function:
+Finally, to get the capital for a given country, let's create the `GetCapital` function inside the `CountryData` class:
 
 ```csharp
     public string GetCapital(string country)
@@ -194,8 +197,8 @@ Now we'll implement the bot logic. Open the `Bots\EchoBot.cs` file and change th
     var f = System.IO.Path.Combine(Environment.CurrentDirectory, @"worldcities.csv");
     var cd = new CountryData(f);
     var cap = cd.GetCapital(name);
-    var replyText = cap == null 
-        ? "I do not know this country" 
+    var replyText = cap == null
+        ? "I do not know this country"
         : $"The capital of {name} is {cap}!" ;
     await turnContext.SendActivityAsync(replyText);
 ```
@@ -209,10 +212,10 @@ After you've made changes to the bot, you can test it on our local machine. To d
 
 To test the bot:
 
-1. Copy the `Application Id` and the `Application Secret` from `appsetting.json` file.
+1. Copy the `MicrosoftAppId` and the `MicrosoftAppPassword` from `appsetting.json` file.
 1. Run the project in Visual Studio. If the bot code compiles correctly, a browser window will open.
 1. Start the Bot Framework Emulator and select **Open Bot**.
-1. Provide the endpoint address, which usually looks like this: `https://localhost:3978/api/messages`. You can verify the site address and port number in the browser window opened in the previous step.
+1. Provide the endpoint address, which usually looks like this: `https://localhost:3978/api/messages` and can be found in the browser window opened in the previous step.
 1. Paste the `Application Id` and the `Application Password` into the corresponding fields and select **Connect**.
 1. Start chatting with your bot!
 
@@ -220,6 +223,18 @@ To test the bot:
 > ![Screenshot of the Bot Framework Emulator.](../media/bot-emulator.png)
 
 ## Deploy the bot to Azure
+
+Before we can deploy our bot, we have to make one quick change to ensure it publishes correctly.
+
+To make sure that the data from *worldcities.csv* is copied with our project, we must change the file properties:
+
+1. In Visual Studio Solution Explorer, find the file.
+1. For each file, under **Properties**, expand **Advanced** if necessary.
+1. Set **Build Action** to **Content**.
+1. Set **Copy to Output Directory** to **Copy if newer**.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot that demonstrates how to change a file's properties on the Advanced tab in Visual Studio Solution Explorer.](../media/visual-studio-solution-express.png)
 
 To deploy the bot back to the cloud, the easiest way is to use Visual Studio:
 
@@ -230,7 +245,7 @@ To deploy the bot back to the cloud, the easiest way is to use Visual Studio:
 
    ![Screenshot of the Publish to Azure App Service window in Visual Studio.](../media/publish-step-1.png) | ![Screenshot of the App Service target selection confirmation window in Visual Studio.](../media/publish-step-2.png)
    ---|---
-   
+
    > [!TIP]
    > You might have to sign in to your Azure account at this step. If you don't see the correct App Service listed, check the top right to see if you're signed in to your Azure account.
 
@@ -248,7 +263,7 @@ In this unit, we've developed our bot into a useful tool. It still doesn't follo
 Next, we'll enable the bot to understand human language, and we'll apply some of the principles of responsible UI.
 
 <!-- Links -->
-[BotEmulator]: https://aka.ms/abs/build/emulatordownload
-[GitHubSample]: https://github.com/MicrosoftDocs/learn-responsible-bots
-[GitHubSampleStage1]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t1-capdict
-[InstallVS]: https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2019
+[BotEmulator]: https://aka.ms/abs/build/emulatordownload?azure-portal=true
+[GitHubSample]: https://github.com/MicrosoftDocs/learn-responsible-bots?azure-portal=true
+[GitHubSampleStage1]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t1-capdict?azure-portal=true
+[InstallVS]: https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2019?azure-portal=true
