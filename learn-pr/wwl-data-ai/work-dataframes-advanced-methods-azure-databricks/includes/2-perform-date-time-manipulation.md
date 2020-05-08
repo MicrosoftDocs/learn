@@ -53,9 +53,9 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
- ```
-  https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/07-Dataframe-Advanced-Methods.dbc?raw=true
- ```
+    ```
+    https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/07-Dataframe-Advanced-Methods.dbc?raw=true
+    ```
 
 5. Select **Import**.
 6. Select the **07-Dataframe-Advanced-Methods** folder that appears.
