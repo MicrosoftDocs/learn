@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/07-randomization.md)]
-content: "Kristen Gilbert was an American nurse in the 1990’s who had established a reputation of being very good in crisis situations. When a patient went into cardiac arrest, she would stay calm, sound the code blue alarm, and administer epinephrine to restart the heart. However, other nurses at the hospital became suspicious of Gilbert because it seemed like there was an unusual number of code blue calls when she was working. Some nurses thought that Gilbert was administering fatal injections to patients to cause their cardiac arrest, but no one ever witnessed this directly."
+content: "Kristen Gilbert was an American nurse in the 1990’s who had established a reputation of being good in crisis situations. When a patient went into cardiac arrest, she would stay calm, sound the code blue alarm, and administer epinephrine to restart the heart. However, other nurses at the hospital became suspicious of Gilbert because it seemed like there was an unusual number of code blue calls when she was working. Some nurses thought that Gilbert was administering fatal injections to patients to cause their cardiac arrest, but no one ever witnessed this directly."
 content: "Here are the data. There were 1641 shifts in total. Each shift was classified according to whether or not there was at least one death and whether or not Gilbert was present.
 |                |	AT LEAST ONE DEATH ON SHIFT?       |
 |GILBERT PRESENT?| Yes        | No        | Total      |
@@ -51,15 +51,15 @@ quiz:
           explanation: 'Incorrect'
         - content: '(74/1641) * 257'
           isCorrect: true
-          explanation: "Correct, we know from the first problem that the chance there’s at least one death on a randomly chosen shift is 74/1641, and from problem two we know that gilberts has 257 shifts, so the number of shifts with at least one deaths from 257 randomly chosen shifts is (74/1642)*257."
+          explanation: "Correct, we know from the first problem that the chance there’s at least one death on a randomly chosen shift is 74/1641, and from problem two we know that gilberts has 257 shifts, so the number of shifts with at least one death from 257 randomly chosen shifts is (74/1642)*257."
         - content: '(74/1641)'
           isCorrect: false
           explanation: Incorrect.
-    - content: 'If we simulate draws of 257 randomly chosen shifts 10,000 times and none of the simulations saw more than 25 shifts with at least one death, Which do you conclude?'
+    - content: 'If we simulate draws of 257 randomly chosen shifts 10,000 times and none of the simulations saw more than 25 shifts with at least one death. Which do you conclude?'
       choices:
         - content: "Gilbert's shifts were like random draws."
           isCorrect: false
           explanation: Incorrect
         - content: "Gilbert had too many shifts with at least one death. Her shifts don't look like random draws."
           isCorrect: true
-          explanation: "Gilbert had 40 shifts out of 257 where she saw at least one death. Knowing that no more than 25 shift should see at least one death in 257 random shifts, we know that the probability of Gilbert's shifts being random and seeing more than 25 shifts with at least one death is less than 1/10000. So it's very likely that Gilbert's shifts are not like random draws.  "
+          explanation: "Gilbert had 40 shifts out of 257 where she saw at least one death. Knowing that no more than 25 shift should see at least one death in 257 random shifts, we know that the probability of Gilbert's shifts being random and seeing more than 25 shifts with at least one death is less than 1/10000. So it's likely that Gilbert's shifts are not like random draws.  "

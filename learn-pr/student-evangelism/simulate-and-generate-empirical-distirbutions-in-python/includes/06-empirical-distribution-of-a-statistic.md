@@ -7,8 +7,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Empirical Distribution of a Statistic
-
 The Law of Averages implies that with high probability, the empirical
 distribution of a large random sample will resemble the distribution of
 the population from which the sample was drawn.

@@ -1,8 +1,8 @@
-### Note: You can find an interactive version of this unit named **monty-hall-problem.ipynb** in your virtual environment
+> [!NOTE] You can find an interactive version of this unit named **monty-hall-problem.ipynb** in your virtual environment
 
-### If you haven't set up your online Virtual Studio Code environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-### Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking" target="_blank" rel="noopener">Visual Studio Online</a>
+Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 
 ``` {.python}
@@ -17,7 +17,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### The Monty Hall Problem
 
 This [problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) has
 flummoxed many people over the years, [mathematicians
@@ -25,7 +24,7 @@ included](https://web.archive.org/web/20140413131827/http://www.decisionsciences
 Let's see if we can work it out by simulation.
 
 The setting is derived from a television game show called "Let's Make a
-Deal". Monty Hall hosted this show in the 1960's, and it has since led
+Deal". Monty Hall hosted this show in the 1960s, and it has since led
 to a number of spin-offs. An exciting part of the show was that while
 the contestants had the chance to win great prizes, they might instead
 end up with "zonks" that were less desirable. This is the basis for what
@@ -154,17 +153,17 @@ goats and the other goat is behind the remaining door.
 
 ``` {.python}
 def monty_hall_game():
-    """Return 
+    """Return
     [contestant's guess, what Monty reveals, what remains behind the other door]"""
-    
+
     contestant_guess = np.random.choice(hidden_behind_doors)
-    
+
     if contestant_guess == 'first goat':
         return [contestant_guess, 'second goat', 'car']
-    
+
     if contestant_guess == 'second goat':
         return [contestant_guess, 'first goat', 'car']
-    
+
     if contestant_guess == 'car':
         revealed = np.random.choice(goats)
         return [contestant_guess, revealed, other_goat(revealed)]
@@ -213,7 +212,7 @@ Now we can add 10,000 rows to `trials`. Each row will represent the
 result of one play of Monty's game.
 
 ``` {.python}
-# Play the game 10000 times and 
+# Play the game 10000 times and
 # record the results in the table games
 
 for i in np.arange(10000):
@@ -385,7 +384,7 @@ combined.barh(0)
 
 ![png](../media/49-monty-hall-problem-27-0.png)
 
-Notice how the three blue bars are almost equal -- the original choice
+Notice how the three blue bars are almost equal--the original choice
 is equally likely to be any of the three available items. But the gold
 bar corresponding to `Car` is twice as long as the blue.
 

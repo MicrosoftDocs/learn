@@ -10,8 +10,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Empirical Distributions
-
 In data science, the word "empirical" means "observed". Empirical
 distributions are distributions of observed data, such as data in random
 samples.

@@ -10,8 +10,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Sampling from a Population
-
 The law of averages also holds when the random sample is drawn from
 individuals in a large population.
 
@@ -275,8 +273,8 @@ empirical_hist_delay(100)
 ![png](../media/52-sampling-from-a-population-16-0.png)
 
 The most consistently visible discrepancies are among the values that
-are rare in the population. In our example, those values are in the the
-right hand tail of the distribution. But as the sample size increases,
+are rare in the population. In our example, those values are in the
+right-hand tail of the distribution. But as the sample size increases,
 even those values begin to appear in the sample in roughly the correct
 proportions.
 

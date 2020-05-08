@@ -1,4 +1,3 @@
-## Endnote
 
 In the terminology that we have developed, John Snow conducted an
 observational study, not a randomized experiment. But he called his
@@ -7,7 +6,7 @@ hundred thousand people ... were divided into two groups without their
 choice, and in most cases, without their knowledge ..."
 
 Studies such as Snow's are sometimes called "natural experiments."
-However, true randomization does not simply mean that the treatment and
+However, true randomization does not mean that the treatment and
 control groups are selected "without their choice."
 
 The method of randomization can be as simple as tossing a coin. It may
@@ -16,7 +15,7 @@ consists of a sequence of carefully defined steps that allow chances to
 be specified mathematically. This has two important consequences.
 
 1.  It allows us to account---mathematically---for the possibility that
-    randomization produces treatment and control groups that are quite
+    randomization produces treatment and control groups that are
     different from each other.
 
 2.  It allows us to make precise mathematical statements about

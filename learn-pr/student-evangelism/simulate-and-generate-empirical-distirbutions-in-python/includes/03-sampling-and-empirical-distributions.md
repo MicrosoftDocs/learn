@@ -8,7 +8,6 @@ plots.style.use('fivethirtyeight')
 %matplotlib inline
 ```
 
-### Sampling and Empirical Distributions
 
 An important part of data science consists of making conclusions based
 on the data in random samples. In order to correctly interpret their
