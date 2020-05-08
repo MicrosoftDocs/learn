@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.github.github-actions-cd
 metadata:
-  title: "GitHub Actions: Continuous Delivery with Azure - Learn"
+  title: "Build and deploy applications to Azure by using GitHub Actions - Learn"
   description: Create two deployment workflows using GitHub Actions and Microsoft Azure.
   ms.date: 05/19/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "GitHub Actions: Continuous Delivery with Azure"
+title: "Build and deploy applications to Azure by using GitHub Actions"
 summary: Create two deployment workflows using GitHub Actions and Microsoft Azure.
 abstract: |
   In this module, you will:
@@ -37,9 +37,9 @@ products:
 - azure
 units:
 - learn.github.github-actions-cd.1-introduction
-- learn.github.github-actions-cd.2-tbd-knowledge
-- learn.github.github-actions-cd.3-tbd-exercise
-- learn.github.github-actions-cd.4-tbd-knowledge-check
+- learn.github.github-actions-cd.2-use-github-actions-deploy-azure
+- learn.github.github-actions-cd.3-create-workflow-deploy-azure
+- learn.github.github-actions-cd.4-knowledge-check
 - learn.github.github-actions-cd.5-summary
 badge:
   uid: learn.github.github-actions-cd.badge

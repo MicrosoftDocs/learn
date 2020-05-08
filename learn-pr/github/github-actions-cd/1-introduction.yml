@@ -3,7 +3,7 @@ uid: learn.github.github-actions-cd.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: TBD.
+  description: Learn how to use GitHub Actions and workflows to implement a CD solution that deploys a container-based web app to Microsoft Azure Web Apps.
   ms.date: 05/19/2020
   author: jamcneil
   ms.author: jumcn

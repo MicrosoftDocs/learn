@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.github-actions-cd.4-tbd-knowledge-check
+uid: learn.github.github-actions-cd.4-knowledge-check
 title: Check your knowledge
 metadata:
   title: Check your knowledge
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-tbd-knowledge-check.md)]
+  [!include[](includes/4-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
