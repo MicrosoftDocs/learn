@@ -3,7 +3,7 @@ uid: learn.quantum.qsharp-create-first-qdk.3-qsharp-structure
 title: How are Q# programs structured?
 metadata:
   title: How are Q# programs structured?
-  description: TBD
+  description: Learn some basic quantum computing concepts and walk through the structure of a basic Q# program.
   ms.date: 05/19/2020
   author: geduardo
   ms.author: kitty

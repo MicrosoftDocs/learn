@@ -3,7 +3,7 @@ uid: learn.quantum.qsharp-create-first-qdk.5-random-number-generator
 title: Exercise - Create a quantum random number generator
 metadata:
   title: Exercise - Create a quantum random number generator
-  description: TBD
+  description: Write classical code to extend your random bit program to generate larger numbers.
   ms.date: 05/19/2020
   author: geduardo
   ms.author: kitty
