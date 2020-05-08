@@ -37,7 +37,7 @@ products:
 - azure
 units:
 - learn.github.github-actions-cd.1-introduction
-- learn.github.github-actions-cd.2-use-github-actions-deploy-azure
+- learn.github.github-actions-cd.2-deploy-azure
 - learn.github.github-actions-cd.3-create-workflow-deploy-azure
 - learn.github.github-actions-cd.4-knowledge-check
 - learn.github.github-actions-cd.5-summary

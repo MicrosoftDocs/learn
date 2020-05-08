@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.github-actions-cd.2-use-github-actions-deploy-azure
+uid: learn.github.github-actions-cd.2-deploy-azure
 title: How do I use GitHub Actions to deploy to Azure?
 metadata:
   title: Check your knowledge
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-use-github-actions-deploy-azure.md)]
+  [!include[](includes/2-deploy-azure.md)]
