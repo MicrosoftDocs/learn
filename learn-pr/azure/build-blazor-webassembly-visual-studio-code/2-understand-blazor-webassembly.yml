@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-app-blazor-webassembly-vscode.2-understand-blazor-webassembly
+title: What is Blazor WebAssembly?
+metadata:
+  title: What is Blazor WebAssembly?
+  description: Build your first WebAssembly app with Blazor, Visual Studio Code, and C#.
+  ms.date: 05/07/2020
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-blazor-webassembly.md)]
