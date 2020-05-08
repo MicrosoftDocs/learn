@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.automate-workflow-github-actions
+metadata:
+  title: Automate your workflow with GitHub Actions
+  description: Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
+  brand: azure
+  ms.date: 05/19/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Automate your workflow with GitHub Actions
+summary: |
+  Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
+
+  In this learning path, you'll:
+    - Plan automation of your software development life cycle with GitHub Actions workflows
+    - Use GitHub Actions to automatically build your application
+    - Deploy to Microsoft Azure with GitHub Actions
+
+cardDescription: Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
+prerequisites: None
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+modules:
+- learn.github.github-actions-automate-tasks
+- learn.github.github-actions-ci
+#- learn.github.github-actions-cd
+trophy:
+  uid: learn.automate-workflow-github-actions.trophy
