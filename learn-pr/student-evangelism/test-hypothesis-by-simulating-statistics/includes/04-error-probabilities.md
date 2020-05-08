@@ -6,8 +6,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Error Probabilities
-
 In the process by which we decide which of two hypotheses is better
 supported by our data, the final step involves a judgment about the
 consistency of the data and the null hypothesis. While this step results

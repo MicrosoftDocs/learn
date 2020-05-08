@@ -7,7 +7,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Decisions and Uncertainty
 
 We have seen several examples of assessing models that involve chance,
 by comparing observed data to the predictions made by the models. In all
@@ -767,4 +766,3 @@ important to keep the following points in mind.
 -   Even if a test concludes that the data don't support the chance
     model in the null hypothesis, it typically doesn't explain *why* the
     model doesn't work.
-    

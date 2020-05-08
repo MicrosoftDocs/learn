@@ -1,8 +1,9 @@
-### Note: You can find an interactive version of this unit named **multiple-categories.ipynb** in your virtual environment
+> [!NOTE]
+> You can find an interactive version of this unit named **multiple-categories.ipynb** in your virtual environment
 
-### If you haven't set up your online Virtual Studio Code environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-### Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking" target="_blank" rel="noopener">Visual Studio Online</a>
+Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 
 ``` {.python}
@@ -19,8 +20,6 @@ def proportions_from_distribution(table, label, sample_size):
     proportions = np.random.multinomial(sample_size, table.column(label))/sample_size
     return table.with_column('Random Sample', proportions)
 ```
-
-### Multiple Categories
 
 We have developed a way of assessing models about chance processes that
 generate data in two categories. The method extends to models involving
@@ -652,7 +651,7 @@ hypothesis of random selection. Then we use our function in a `for` loop
 to create an array `tvds` consisting of 5,000 such distances.
 
 ``` {.python}
-# Simulate one simulated value of 
+# Simulate one simulated value of
 # the total variation distance between
 # the distribution of a sample selected at random
 # and the distribution of the eligible population
