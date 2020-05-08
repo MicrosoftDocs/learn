@@ -1,14 +1,14 @@
 ### YamlMime:Module
-uid: learn.inclusive-marketing
+uid: learn.azure.inclusive-marketing
 metadata:
-  title: Empower authentic diversity and inclusivity in marketing 
+  title: Learn inclusive marketing principles
   description: Learn how to embody diversity and inclusivity across marketing engines 
   ms.date: 04/16/2020
   author: asajohnson
   ms.author: asajohnson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Empower authentic diversity and inclusivity in marketing 
+title: Learn inclusive marketing principles
 summary: Learn how to embody diversity and inclusivity across marketing engines.
 abstract: |
   In this module, you will learn how to:
@@ -30,11 +30,11 @@ products:
 - m365
 - dynamics
 units:
-- learn.inclusive-marketing.1-introduction
-- learn.inclusive-marketing.2-inclusive-marketing-overview
-- learn.inclusive-marketing.3-foundational-elements
-- learn.inclusive-marketing.4-marketing-design
-- learn.inclusive-marketing.5-knowledge-check
-- learn.inclusive-marketing.6-summary
+- learn.azure.inclusive-marketing.1-introduction
+- learn.azure.inclusive-marketing.2-inclusive-marketing-overview
+- learn.azure.inclusive-marketing.3-foundational-elements
+- learn.azure.inclusive-marketing.4-marketing-design
+- learn.azure.inclusive-marketing.5-knowledge-check
+- learn.azure.inclusive-marketing.6-summary
 badge:
-  uid: learn.inclusive-marketing.badge
+  uid: learn.azure.inclusive-marketing.badge
