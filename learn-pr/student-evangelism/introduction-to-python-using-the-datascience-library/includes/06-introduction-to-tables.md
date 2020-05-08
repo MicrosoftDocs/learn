@@ -12,8 +12,6 @@ nba = Table.read_table(path_data + 'nba_salaries.csv').relabeled(3, 'SALARY')
 movies = Table.read_table(path_data + 'movies_by_year.csv')
 ```
 
-## Introduction to Tables
-
 We can now apply Python to analyze data. We will work with data stored
 in Table structures.
 

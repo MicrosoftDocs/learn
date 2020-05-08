@@ -1,5 +1,3 @@
-## Names
-
 Names are given to values in Python using an *assignment* statement. In
 an assignment, a name is followed by `=`, which is followed by any
 expression. The value of the expression to the right of `=` is

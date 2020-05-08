@@ -1,5 +1,3 @@
-## Expressions
-
 Programming languages are much simpler than human languages.
 Nonetheless, there are some rules of grammar to learn in any language,
 and that is where we will begin. In this text, we will use the

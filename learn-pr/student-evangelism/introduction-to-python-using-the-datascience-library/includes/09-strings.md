@@ -1,5 +1,3 @@
-## Strings
-
 Much of the world's data is text, and a piece of text represented in a
 computer is called a *string*. A string can represent a word, a
 sentence, or even the contents of every book in a library. Since text
