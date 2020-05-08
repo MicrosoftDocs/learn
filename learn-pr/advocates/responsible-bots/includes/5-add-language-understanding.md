@@ -203,7 +203,7 @@ To use the LUIS model from the bot, first we need to publish the model.
    You can see that entities are extracted correctly and that LUIS can also distinguish between cities and countries automatically.
 
 1. Now let's add processing logic to the bot. In the `OnMessageActivityAsync` function, we'll check if the recognition result is good enough and call the corresponding function to process LUIS results:
-    
+
     ```csharp
     protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
     {

@@ -9,6 +9,6 @@ metadata:
   ms.author: dmitryso
   ms.topic: interactive-tutorial
   ms.prod: learning-advocates
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/8-publish.md)]

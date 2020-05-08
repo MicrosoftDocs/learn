@@ -192,7 +192,7 @@ The bot we have created so far already seems quite intelligent. Here's a sample 
 
 What is a capital?
 
-*A capital is the city or town that functions as the seat of government and administrative center of a country or region.* 
+*A capital is the city or town that functions as the seat of government and administrative center of a country or region.*
 
 What is a capital of Russia?
 
