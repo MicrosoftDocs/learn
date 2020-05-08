@@ -100,11 +100,11 @@ To work with the bot code in Visual Studio:
 Let's try to make our bot do something useful. Consider the problem of learning the capital cities of different countries. Our first exercise is to turn our bot into a "capital dictionary", which will return the capital city of any given country.
 
 > [!TIP]
->During this module, we'll describe a series of steps that add some functionality to the bot and provide pieces of code. We recommend that you try and develop the bot yourself alongside the instructions.
+> During this module, we'll describe a series of steps that add some functionality to the bot and provide pieces of code. We recommend that you try and develop the bot yourself alongside the instructions.
 >
 > You can, however, get the code for the bot at different stages in [this GitHub Repository][GithubSample]. You can even grab the complete code from there. The only additional step you have to take is to copy the `appsettings.json` file from your project into the root directory.
 
-If you take a look [list of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals) on Wikipedia, you can see that there's an important **fairness** and **data complexity** problem. Some countries, like Switzerland, might not have a *de jure* capital at all. Also, in some other countries, like Israel, the capital is not officially recognized.
+If you take a look [list of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals) on Wikipedia, you can see that there's an important fairness and data complexity problem. Some countries, like Switzerland, might not have a *de jure* capital at all. Also, in some other countries, like Israel, the capital is not officially recognized.
 
 There's no easy way to solve this problem. For this module, we'll choose the simplest solution - to cite the source of data. However, we can consider some options for a more complex approach:
 
@@ -150,7 +150,7 @@ public class Country
 }
 ```
 
-The constructor of this class takes one line from `worldcities.csv` table, and parses the data into corresponding fields.
+The constructor of this class takes one line from `worldcities.csv` table and parses the data into corresponding fields.
 
 For simplicity, we can put this class definition into the same `CountryData.cs` file.
 
@@ -205,12 +205,12 @@ Now we'll implement the bot logic. Open the `Bots\EchoBot.cs` file and change th
 
 ## Testing the bot locally
 
-After we've made changes to the bot, we can test it on our local machine. To do that, we need to install the [Bot Framework Emulator][BotEmulator].
+After you've made changes to the bot, you can test it on our local machine. To do that, you need to install the [Bot Framework Emulator][BotEmulator].
 
 To test the bot:
 
 1. Copy the `Application Id` and the `Application Secret` from `appsetting.json` file.
-1. Run the project in Visual Studio. If the bot compiles correctly, a browser window will open.
+1. Run the project in Visual Studio. If the bot code compiles correctly, a browser window will open.
 1. Start the Bot Framework Emulator and select **Open Bot**.
 1. Provide the endpoint address, which usually looks like this: `https://localhost:3978/api/messages`. You can verify the site address and port number in the browser window opened in the previous step.
 1. Paste the `Application Id` and the `Application Password` into the corresponding fields and select **Connect**.
@@ -228,17 +228,16 @@ To deploy the bot back to the cloud, the easiest way is to use Visual Studio:
 1. Choose **Select Existing** in the App Service pane.
 1. In the **App Service** window, check that the correct App Service is selected as deployment target.
 
-   ![Publish to Azure App Service window](../media/publish-step-1.png) | 
-   ![Azure App Service target selection confirmation window](../media/publish-step-2.png)
+   ![Screenshot of the Publish to Azure App Service window in Visual Studio.](../media/publish-step-1.png) | ![Screenshot of the App Service target selection confirmation window in Visual Studio.](../media/publish-step-2.png)
    ---|---
    
    > [!TIP]
-   > You might have to sign in to your Azure account at this step. If you don't see the correct App Service listed, check the top right to see if you're signed in to your Azure Account.
+   > You might have to sign in to your Azure account at this step. If you don't see the correct App Service listed, check the top right to see if you're signed in to your Azure account.
 
 1. After a successful publish, Visual Studio saves a deployment profile. For future deployments, you can just select the **Publish** button.
 
-   > [!div class="mx-imgBorder"]
-> ![Visual Studio's publish window](../media/publish-step-3.png)
+  > [!div class="mx-imgBorder"]
+  > ![Visual Studio's publish window](../media/publish-step-3.png)
 
 After deployment, you can open your bot page on the Azure portal. Use the **Test in Web Chat** function to talk to your bot.
 
