@@ -2,14 +2,14 @@
 uid: learn.quantum.solve-optimization-problems-qio
 metadata:
   title: Solve optimization problems by using quantum-inspired optimization (QIO) - Learn
-  description: TODO
+  description: Learn how quantum-inspired algorithms emulate quantum physics on today's hardware to solve difficult optimization problems.
   ms.date: 05/19/2020
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Solve optimization problems by using quantum-inspired optimization
-summary: TODO
+summary: Learn how quantum-inspired algorithms emulate quantum physics on today's hardware to solve difficult optimization problems.
 abstract: |
   In this module, you'll:
   - Learn about the origins of quantum-inspired algorithms.
