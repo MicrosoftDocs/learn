@@ -7,7 +7,7 @@ Azure Quantum is currently in private preview, available for running compute job
 
 ## What's included on Azure Quantum?
 
-![Quantum Execution](../media/quantum-execution-info.png)
+![Quantum Execution](../media/6-quantum-execution-info.png)
 
 **Quantum-inspired solutions**: If you want the ability to solve large, complex optimization problems at scale, then you can explore quantum-inspired solvers from Microsoft and partners such as 1QBit.
 
@@ -25,7 +25,7 @@ For more detail on how this is done in practice, check out Dave Wecker's talk on
 
 For example, there are trapped ion quantum computers from IonQ and Honeywell. There are also quantum computers built from superconducting circuits from QCI.
 
-![Azure quantum offering](../media/azure-quantum-2.png)
+![Azure quantum offering](../media/6-azure-quantum.png)
 
 ## What are Azure Quantum Workspaces?
 
