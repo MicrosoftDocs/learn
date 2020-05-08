@@ -1,9 +1,3 @@
-<!-- Add introduction statement - This is the intro to model it on:
-
-Air pollution can be incredibly harmful to human and animal health, and is caused by a number of factors, both natural and artificial. Factory output, burning different types of fuel and natural wildfires all contribute to a rise in air pollution. This pollution is airborne, and won't stay where it was produced, but can be carried many kilometers across the globe by the wind. In late 2019, for example, the smoke from wildfires in Australia reached New Zealand, over 2,000 kilometers away. 
-
--->
-
 The user interface (UI) between people and computers has evolved greatly over the years. From its humble beginning in paper-punch cards, UI design has progressed to command-line interfaces and windowed applications, to personalized phone apps and web sites. New concepts in UI design continue to make computers easier, more accessible, and more fun to use! But in spite of UI improvements, many people still think of a computer as a _tool_ they need to _learn how to use_ to be productive. There's an emerging type of user experience (UX) that's helping to solve this problem. 
 
 ## Conversational UI
