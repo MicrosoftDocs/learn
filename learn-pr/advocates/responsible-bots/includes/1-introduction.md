@@ -10,7 +10,7 @@ With this UX transition, we need to take extra care to make sure users are comfo
 
 If you know the basics about software development, you have the power to make great things. For example, you can help schools transition to online learning by building them a more effective and engaging UI for their students. Bots are the UX revolution!
 
-In this course, we'll develop a simple bot to help students learn geography. We'll call our bot **GeoFriend**. We won't cover how to create all of the functionality for the bot--just how to put the basic building blocks together. Later, you can expand on what you learned in this course to complete the bot project. You can also develop similar bots for other subject areas and different tasks.
+In this course, we'll develop a simple bot to help students learn geography. We'll call our bot **GeoFriend**. We won't cover how to create all of the functionality for the bot - just how to put the basic building blocks together. Later, you can expand on what you learned in this course to complete the bot project. You can also develop similar bots for other subject areas and different tasks.
 
 > [!NOTE]
 > As we mentioned, the bot interface is often more engaging for users because the bot seems to have a human-like personality. A bot helps users _feel_ like they're talking with another person, rather than giving instructions to a tool or computer. When human feelings are involved, frustrations can arise. To avoid frustrations and miscommunication, we need to build **responsible bots**. We'll talk about this issue in detail in a later unit.

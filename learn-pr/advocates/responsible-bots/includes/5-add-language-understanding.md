@@ -1,264 +1,279 @@
-We have already developed one of the features of our bot - to tell capital cities from country names. However, now we need to make the bot more "human" by teaching it how to understand simple natural language. This is done using a cognitive service called **[LUIS][LUIS]** (short for *Language Understanding Intelligent Service*).
+We've already developed one of the features of our bot, which is to tell capital cities from country names. Now we need to make the bot more human by teaching it how to understand simple natural language. To do it, we use a cognitive service called the Language Understanding Intelligent Service ([LUIS][LUIS]).
 
 LUIS does two important natural language understanding tasks:
 
-- **Intent Classification** allows us to classify each input sentence (so-called **utterance**) with it's **intent**, thus figuring out the overall meaning of a phrase.
-- **Named Entity Recognition** also extracts some known entities from the phrase, such as city names, or dates.
+- **Intent Classification** allows you to classify each input sentence, a so-called utterance, with its intent, to figure out the overall meaning of a phrase.
+- **Named Entity Recognition** extracts some known entities from the phrase, such as city names or dates.
 
-For example, the phrase *What is the capital of France?* can be classified as `get_capital` intent, and *France* would be extracted as geographical entity. The same intent can be verbalized differently, eg. *What is France capital city?*, but the extracted entity and intent would be the same, leading ot the same result.
+For example, the phrase *What is the capital of France?* can be classified as a `get_capital` intent. *France* is extracted as a geographical entity. The same intent can be verbalized differently, for example. What is France's capital city?*. The extracted entity and intent are the same, which leads to the same result.
 
-LUIS using a machine learning model to match input phrase to the best possible intent, and not the exact matching. This allows it to classify phrases that are not exact, and find the best possible match. It also returns the **confidence** - a number from 0 to 1, which indicates how certain the model is in the given classification. Thus, if the model returns low confidence, it means that the phrase was not understood well.
+LUIS uses a machine learning model to match an input phrase to the best possible intent, but not an exact match. This model allows LUIS to classify phrases that aren't exact and find the best possible match. It also returns a *confidence* ranking with a number from 0 to 1, which indicates how certain the model is of the given classification. If the model returns a low confidence ranking, it means that the phrase wasn't understood well.
 
-## Designing Intents
+## Design intents
 
-Now we should come back to one of the principles of responsible conversational AI: the bot should have a clear goal. This goal defines the set of intents that our bot would be able to handle.
+One of the principles of responsible conversational AI is that a bot should have a clear goal. A goal defines the set of intents that a bot can handle.
 
-The goal of our **GeoFriend** bot would be to help student study geography, and act as an assistant. For this, we will implement the following functionality:
+The goal of the **GeoFriend** bot is to help a student study geography and to act as an assistant. With this goal in mind, we'll implement the following functionality so that the bot can:
 
-- Being able to give capital cities given a country name
-- Giving country name given a capital city
-- Give a population of a city / country
-- Displaying some help on bot's usage
+- Give a capital city for a given country name.
+- Give a country name for a given capital city.
+- Give the population of a city or country.
+- Display some help on the bot's usage.
 
-For simplicity, we will limit ourselves to those cases, but ideally the bot should include more intents, and support more learning cases.
+For simplicity, we'll limit ourselves to these cases. Ideally, the bot should include more intents and support more learning cases.
 
-## Training LUIS Model
+## Train the LUIS model
 
-To train the LUIS Model, we should give it a number of sample phrases for each intent. For example:
+To train the LUIS model, we'll give it some sample phrases for each intent, as shown in this table.
 
 | Intent | Phrase |
 |---|---|
-|`get_capital` | What is the capital of *United States*? |
-|`get_capital` | I need to know *France's* capital city |
-|`get_country` | Whose capital is *Paris*? |
+|`get_capital` | What is the capital of the *United States*? |
+|`get_capital` | I need to know the capital city of *France*. |
+|`get_country` | What country's capital is *Paris*? |
 |`play_game` | I want to play! |
-|`play_game` | Let's start capital quiz! |
+|`play_game` | Let's start a capital quiz! |
 |`get_population` | What is the population of *Moscow*? |
 |`get_population` | How many people live in *Seoul*? |
 
-To set up LUIS service, let's go to the [LUIS Portal](https://luis.ai).
+1. To set up the LUIS service, go to the [LUIS portal](https://luis.ai).
 
-> [!NOTE]
-> In this course, we are using preview version of LUIS portal located at [https://preview.luis.ai](https://preview.luis.ai).
+   > [!NOTE]
+   > In this course, we're using a preview version of the LUIS portal located at [https://preview.luis.ai](https://preview.luis.ai).
 
-At first sign in, you will be asked to specify your country and accept terms of use:
+1. When you first sign in, you're asked to specify your country and accept the terms of use.
 
-![LUIS](../media/luis-terms.png)
+   > [!div class="mx-imgBorder"]
+   > ![LUIS terms of use.](../media/luis-terms.png)
 
-After that, you need to **link your Azure account**. Specify **Continue using an Azure Resource**, and then **Create New Authoring Resource** button:
+1. Now link to your Azure account. Select the **Continue using an Azure Resource** option, and then select **Create New Authoring Resource**.
 
-![LUIS Link Azure Account](../media/luis-link-account.png)
+   > [!div class="mx-imgBorder"]
+   > ![Link the Azure account page.](../media/luis-link-account.png)
 
-In the dialog box, select you subscription, fill in suitable name for the service and select resource group you have previously used for the bot:
+1. In the dialog box, select your subscription, enter a suitable name for the service, and select the resource group you previously used for the bot.
 
-![LUIS Create Resource](../media/luis-create-recognizer-dialog.png)
+   > [!div class="mx-imgBorder"]
+   > ![Create the resource page.](../media/luis-create-recognizer-dialog.png)
 
-Once this is done, you are taken to LUIS portal again, where you can create new application:
+1. Next, the LUIS portal opens again, where you can create a new application.
 
-![LUIS Create App](../media/luis-create-app.png)
+   > [!div class="mx-imgBorder"]
+   > ![Create a new app.](../media/luis-create-app.png)
 
-Click on **Create a LUIS App Now**, and you are taken to the main LUIS Portal:
+1. Select **Create a LUIS app now**, and the LUIS portal opens again.
 
-![LUIS Portal](../media/luis-new-app.png)
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of the LUIS portal.](../media/luis-new-app.png)
 
-Make sure your **subscription** and **Authoring resource** are selected. If you do not see your authoring resource, check that you are using portal for the correct region.
+1. Make sure your **Subscription** and **Authoring resource** are selected. If you don't see your authoring resource, check that you're using the portal for the correct region.
 
-> [!NOTE]
-> LUIS supports three locations for authoring: US, Europe and Asia. There are different portals for each location, and authoring resources from different region would not be visible.
+   > [!NOTE]
+   > LUIS supports three locations for authoring. They're the United States, Europe, and Asia. There are different portals for each location, and authoring resources from different regions aren't visible.
+
+   > [!TIP]
+   > If your LUIS training resource isn't visible, go to the Azure portal to make sure it was created. You can also create it manually from the Azure portal.
+
+1. Select **New app for conversation**, and specify an application name and description. In this example, we  use **GeoFriend** as an application name.
+
+   > [!NOTE]
+   > If you don't want to train the model by providing sample phrases, you can train it from the saved data file. In this case, choose to create the model from a file. Use [this file][LUISCodeFile] from the GitHub repository.
+
+   After some information screens, the main application dashboard appears.
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot of the Cognitive Services application dashboard.](../media/luis-main.png)
+
+1. To add a prebuilt entity for geographical locations, follow these steps:
+
+   1. Select the menu on the left, and select **Entities**.
+   1. On the **Entities** screen, select **Add prebuilt entity**.
+   1. From the list, select **geographyV2**.
+
+   You should see the entity added to the screen, as shown here.
+
+   > [!div class="mx-imgBorder"]
+   > ![Add prebuilt entity.](../media/luis-entity-geography.png)
+
+1. To create the first intent, `get_capital`, follow these steps:
+
+   1. From the menu, go to the **Intents** screen.
+   1. Select **Create**, and enter the intent's name, `get_capital`.
+   1. Enter a sample utterance like **What is the capital of the United States?**
+
+   > [!div class="mx-imgBorder"]
+   > ![Create intents.](../media/luis-intent.png)
+
+   You can see that LUIS automatically detects geographical entities.
+
+1. Using the same procedure, enter a few more sentences for the `get_capital` intent. Create other intents from the ones listed in the previous table.
+
+1. After you've created intents, select **Train** to train the model. After training, select **Test** to see how well the model performs on some input sentences.
+
+   > [!div class="mx-imgBorder"]
+   > ![Test results.](../media/luis-test.png)
+
+1. If you see some phrases classified incorrectly, select **Inspect** to get the details and add the utterances to the training data to improve the model.
+
+You can see that each utterance has some associated probability. If the phrase isn't recognized well, the probability is low, as in the example with the *main city* phrase. In the application, we can set some probability thresholds and consider only phrases that are recognized well.
+
+## Integrate LUIS into the bot
+
+To use the LUIS model from the bot, first we need to publish the model.
+
+1. Select **Publish**, select **Production Slot**, and then select **Done**. The screen with the prediction endpoint URL and key appears.
+
+   > [!div class="mx-imgBorder"]
+   > ![Prediction.](../media/luis-publish-model.png)
+
+   > [!TIP]
+   > Right now the model is deployed on some starter resources. To deploy it in production, select **Add prediction resource**. After you do that, you'll have another set of prediction keys and an endpoint URL that you can freely control through your subscription.
+
+1. Add the LUIS model to the bot code. Open the Visual Studio project that we worked on in the last unit.
+
+   > [!TIP]
+   >The code described here is available [here on GitHub][CodeLUIS]. If you decide to take code from there, you still need to make changes to the `appsetting.json` file to provide your keys for the LUIS service.
+
+1. To add the `Microsoft.Bot.Builder.AI.Luis` NuGet package, follow these steps:
+
+   1. Right-click the project **EchoBot**.
+   1. Select **Manage NuGet packages**.
+   1. Select the **Browse** tab.
+   1. Enter `Luis`, choose `Microsoft.Bot.Builder.AI.Luis`, and select **Install**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Add the NuGet package.](../media/luis-add-nuget.png)
+
+1. To add LUIS Recognized to our bot, add the corresponding code to the `ConfigureServices` function in `Startup.cs`. Open the file, and insert the following code after the first line of the `ConfigureServices` function:
+
+    ```csharp
+        var luisApplication = new LuisApplication(
+            Configuration["LuisAppId"],
+            Configuration["LuisAPIKey"],
+            Configuration["LuisEndpointUrl"]);
+        services.AddSingleton(new LuisRecognizer(luisApplication));
+    ```
+
+   > [!NOTE]
+   > The previous code requires a `using` statement to make the `LuisRecognizer` and `LuisApplication` classes visible. The easiest way to figure out the correct `using` statement is to select the bulb icon next to the undefined class and let Visual Studio automatically fix it. In this case, it adds the following line to the file `using Microsoft.Bot.Builder.AI.Luis;`.
+
+1. This code takes the LUIS service parameters from the config file, so you also need to add the following to the `appsettings.json`:
+
+    ```json
+      "LuisAppId": "<your app id here>",
+      "LuisAPIKey": "<your app key here>",
+      "LuisEndpointUrl": "<your endpoint url here>"
+    ```
+
+   This data is taken from the LUIS prediction screen shown in the previous step. The only tricky thing is to get the app ID. In the prediction screen, you see the **Example query**, which looks similar to:
+
+    ```json
+    https://langrecognizer.cognitiveservices.azure.com/luis/prediction/v3.0/apps/5c9d81a8-2d13-448a-9f7c-df4ec1b5cdb4/slots/...
+    ```
+
+    The application ID is the sequence of numbers after `/apps/` and before the `/slots` portion of this URL.
+
+1. After we've registered `LuisRecognizer` as a singleton, we'll be able to automatically receive its instance as a parameter to the `EchoBot` constructor. Open the `Bots\EchoBot.cs` file, and add a recognizer field and a constructor to the `EchoBot` class:
+
+    ```csharp
+    LuisRecognizer rec;
+    
+    public EchoBot(LuisRecognizer rec)
+    {
+        this.rec = rec;
+    }
+    ```
+
+1. To make sure that the recognizer works, change the code for `OnMessageAcitivityAsync` to :
+
+    ```csharp
+    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+    {
+        var res = await rec.RecognizeAsync(turnContext, cancellationToken);
+        await turnContext.SendActivityAsync(res.GetTopScoringIntent().ToString());
+        await turnContext.SendActivityAsync(res.Entities.ToString());
+    }
+    ```
+
+1. This function calls the LUIS recognizer and displays the top event and associated entities. Run the bot in the emulator and observe the results:
+
+    |Input utterance|Result|
+    |---|---|
+    |*What is the capital of France?*|`(get_capital,0.86)`<br/>`{"geographyV2": [{"location": "France","type": "countryRegion"}]`|
+    |*What is the capital of Paris?*|`(get_capital,0.86)`<br/>`{"geographyV2": [{"location": "Paris","type": "city"}]`|
+
+   You can see that entities are extracted correctly and that LUIS can also distinguish between cities and countries automatically.
+
+1. Now let's add processing logic to the bot. In the `OnMessageActivityAsync` function, we'll check if the recognition result is good enough and call the corresponding function to process LUIS results:
+    
+    ```csharp
+    protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
+    {
+        var res = await rec.RecognizeAsync(turnContext, cancellationToken);
+        var (intent, score) = res.GetTopScoringIntent();
+        if (score>0.3)
+        {
+            await ProcessLuisResult(turnContext, intent, res.Entities);
+        }
+        else
+        {
+            await turnContext.SendActivityAsync("I am not sure I understand you fully");
+        }
+    }
+    ```
+
+   All intent processing happens inside the `ProcessLuisResults` function (parts of the code are omitted for clarity):
+
+    ```csharp
+    protected async Task ProcessLuisResult(ITurnContext<IMessageActivity> turnContext, string intent, JObject entities)
+    {
+        if (intent=="hel")
+        {
+            await turnContext.SendActivityAsync("This feature is not yet implemented");
+            return;
+        }
+        var geo = entities["geographyV2"];
+        if (geo==null || geo.Count()!=1)
+        {
+            await turnContext.SendActivityAsync("I am not sure which location you mean");
+            return;
+        }
+        var loc = geo[0]["location"].ToString();
+        switch (intent)
+        {
+            case "get_capital":
+                var cap = CData.GetCapital(loc);
+                await turnContext.SendActivityAsync(cap==null
+                        ? $"I do not know the capital of {loc}"
+                        : $"The capital of {loc} is {cap}");
+                break;
+            ...
+            default:
+                await turnContext.SendActivityAsync("I do not know that one");
+                break;
+        }
+    }
+    ```
+
+Here's the logic of this function:
+
+- We first check if the intent is `play_game`, which doesn't require a location. At the moment, we handle this request by displaying a message that the game isn't implemented.
+- All other intents require exactly one location, so if no locations or more than one location is specified, we display an error message.
+- When exactly one location is found, we use `switch` to handle each intent separately according to the logic.
+
+We also need to add some more functions to the `CountryData` class to figure out the population of a city from a city name and a country name from its capital.
 
 > [!TIP]
-> In case your LUIS training resource is not visible, you can go to Azure portal to make sure it has been created. You can also create it manually from the Azure Portal.
+> You can find the complete code for this stage of bot development [in this repository][CodeLuis].
 
-Select **New app for conversation**, and specify an application name and description. I will use `GeoFriend` as an application name.
+After we implement those changes, we can start the bot and have a little conversation.
 
-> [!NOTE]
-> If you do not want to train the model "by hand" by providing sample phrases, you can train it from the saved data file. In this case, you should chose to create the model from file, and use [this file][LUISCodeFile] from the GitHub repository.
-
-After skipping through some information screens, you will end up at the main application dashboard:
-
-![LUIS App Dashboard](../media/luis-main.png)
-
-First thing we need to do is to add pre-build entity for geographical locations:
-
-- Click on the menu on the left, and select **Entities**.
-- On the **Entities** screen, select **Add pre-build entity**
-- From the list, select **Geography V2**
-You should see the entity added in the screen below:
-
-![LUIS Entities](../media/luis-entity-geography.png)
-
-Now Let's create our first intent: `get_capital`:
-
-- Using the menu, navigate to **Intents** screen.
-- Select **Create** and type in intent's name: `get_capital`
-- You will be offered to type in a sample utterance. Type something like *What is the capital of United States?*
-
-![LUIS Intents](../media/luis-intent.png)
-
-You can see that LUIS automatically detects geographical entities!
-
-Using the same procedure, enter a few more sentences for `get_capital` intent, and create other intents listed in the table above.
-
-One you have done creating intents, click on the **Train** button to train the model. After training, use the **Test** button to see how well the model performs on some input sentences:
-
-![LUIS Test Results](../media/luis-test.png)
-
-If you see some phrases classified incorrectly - you can click on **Inspect** to get the details and add the utterances to the training data to improve the model.
-
-In this example, you can see that each utterance has some associated probability. If the phrase is not recognized well, the probability will be low, as in the example above with the *main city* phrase. In the application, we can set some probability threshold, and consider only phrases that are recognized well.
-
-## Integrating LUIS into the Bot
-
-To use the LUIS model from our bot, first we need to publish the model. Click on **Publish** button, select **Production Slot**, and the press **Done**. You will get the screen with prediction endpoint URL and key:
-
-![LUIS Prediction](../media/luis-publish-model.png)
-
-> [!TIP]
-> Right now the model is deployed on some starter resources, and to deploy it in production you should **Add prediction resource**. Once you do that, you will have another set of prediction keys / endpoint URL that you can freely control through your subscription.
-
-Now we need to add LUIS model to our bot code. Open our Visual Studio project we have been working on in last unit.
-
-> [!TIP]
->The code that I describe below is available [here on GitHub][CodeLUIS]. If you decide the take code from there, you would still need to make changes to the `appsetting.json` file to provide your keys for the LUIS service.
-
-First thing you need to do is to add `Microsoft.Bot.Builder.AI.Luis` nuget package:
-
-- Right-click on the project **EchoBot**
-- Select **Manage nuget packages**
-- Switch to **Browse** tab
-- Type `Luis`, chose `Microsoft.Bot.Builder.AI.Luis` and click **Install**
-
-![Add Nuget Package](../media/luis-add-nuget.png)
-
-To add the LUIS Recognized to our bot, we need to add corresponding code to `ConfigureServices` function in `Startup.cs`. Open the file, and insert the following code after the first line of `ConfigureServices` function:
-
-```csharp
-    var luisApplication = new LuisApplication(
-        Configuration["LuisAppId"],
-        Configuration["LuisAPIKey"],
-        Configuration["LuisEndpointUrl"]);
-    services.AddSingleton(new LuisRecognizer(luisApplication));
-```
-
-> [!NOTE]
-> The code above requires some `using` statement to make `LuisRecognizer` and `LuisApplication` classes visible. The easiest way to figure out the correct `using` statement is to click on the bulb icon next to the undefined class, and let Visual Studio automatically fix it. In this case, it will add the following line to the file: `using Microsoft.Bot.Builder.AI.Luis;`
-
-This code takes the LUIS service parameters from config file, so you also need to add the following to the `appsettings.json`:
-
-```json
-  "LuisAppId": "<your app id here>",
-  "LuisAPIKey": "<your app key here>",
-  "LuisEndpointUrl": "<your endpoint url here>"
-```
-
-This data is taken from the LUIS prediction screen we have seen in our previous step. The only tricky thing is to get App Id. In the prediction screen you would see the **Example query** which looks similar to this:
-
-```json
-https://langrecognizer.cognitiveservices.azure.com/luis/prediction/v3.0/apps/5c9d81a8-2d13-448a-9f7c-df4ec1b5cdb4/slots/...
-```
-
-Application Id is the sequence of numbers after `/apps/` and before `/slots` portion of this URL.
-
-Once we have registered `LuisRecognizer` as a singleton, we will be able to automatically receive its instance as a parameter to `EchoBot` constructor. Open `Bots\EchoBot.cs` file, and add recognizer field and a constructor to the `EchoBot` class:
-
-```csharp
-LuisRecognizer rec;
-
-public EchoBot(LuisRecognizer rec)
-{
-    this.rec = rec;
-}
-```
-
-To make sure that recognizer works, let's change the code for `OnMessageAcitivityAsync` to the following:
-
-```csharp
-protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
-{
-    var res = await rec.RecognizeAsync(turnContext, cancellationToken);
-    await turnContext.SendActivityAsync(res.GetTopScoringIntent().ToString());
-    await turnContext.SendActivityAsync(res.Entities.ToString());
-}
-```
-
-This function will call LUIS recognizer and display the top event and associated entities. You can run the bot in the emulator and observe the results:
-
-|Input utterance|Result|
-|---|---|
-|*What is the capital of France?*|`(get_capital,0.86)`<br/>`{"geographyV2": [{"location": "France","type": "countryRegion"}]`|
-|*What is the capital of Paris?*|`(get_capital,0.86)`<br/>`{"geographyV2": [{"location": "Paris","type": "city"}]`|
-
-You can see that entities are extracted correctly, and that LUIS can also distinguish between cities and countries automatically.
-
-Now let's add the processing logic to the bot. In the `OnMessageActivityAsync` function we will check if the recognition result is good enough and call corresponding function to process LUIS results:
-
-```csharp
-protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
-{
-    var res = await rec.RecognizeAsync(turnContext, cancellationToken);
-    var (intent, score) = res.GetTopScoringIntent();
-    if (score>0.3)
-    {
-        await ProcessLuisResult(turnContext, intent, res.Entities);
-    }
-    else
-    {
-        await turnContext.SendActivityAsync("I am not sure I understand you fully");
-    }
-}
-```
-
-All intent processing happens inside `ProcessLuisResults` function (parts of the code are omitted for clarity):
-
-```csharp
-protected async Task ProcessLuisResult(ITurnContext<IMessageActivity> turnContext, string intent, JObject entities)
-{
-    if (intent=="hel")
-    {
-        await turnContext.SendActivityAsync("This feature is not yet implemented");
-        return;
-    }
-    var geo = entities["geographyV2"];
-    if (geo==null || geo.Count()!=1)
-    {
-        await turnContext.SendActivityAsync("I am not sure which location you mean");
-        return;
-    }
-    var loc = geo[0]["location"].ToString();
-    switch (intent)
-    {
-        case "get_capital":
-            var cap = CData.GetCapital(loc);
-            await turnContext.SendActivityAsync(cap==null
-                    ? $"I do not know the capital of {loc}"
-                    : $"The capital of {loc} is {cap}");
-            break;
-        ...
-        default:
-            await turnContext.SendActivityAsync("I do not know that one");
-            break;
-    }
-}
-```
-
-The logic of this function is the following:
-
-- We first check if the intent is `play_game`, which does not require a location. We handle this request - at the moment just displaying a message that the game is not implemented.
-- All other intents require exactly one location, so if not locations or more than one location is specified - we display an error message.
-- When exactly one location is found - we use `switch` to handle each intent separately according to the logic.
-
-We also need to add some more functions to `CountryData` class to figure out the population of a city from city name and country name from it's capital.
-
-> [!TIP]
-> You can find the complete code for this stage of bot development [in this repository][CodeLuis]
-
-Once we implement those changes, we can start the bot and have a little conversation:
-
-![Conversation with the bot](../media/luis-conversation.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of a conversation with the bot.](../media/luis-conversation.png)
 
 ## Conclusion
 
-Now the bot seems to be much more intelligent, but it ignores some of the responsible AI principles, such as making goal of the bot clear. In the next unit, we will implement some of the responsible functionality, as well as terms dictionary.
+Now the bot seems to be much more intelligent, but it ignores some of the responsible AI principles, such as making the goal of the bot clear. In the next unit, we'll implement some of the responsible functionality, as well as a terms dictionary.
 
 [LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/
 [LUISPortal]: https://preview.luis.ai

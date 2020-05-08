@@ -1,6 +1,6 @@
 Before we start to build our **GeoFriend** bot, let's quickly review the basics of how bots work.
 
-## Review basic bot operations
+## Review basic bot operation
 
 A conversational experience involves two basic actions:
 
@@ -20,7 +20,8 @@ To connect a web API function to the communication channels, we'll use the [Azur
 
 The Bot Framework also helps structure bot logic by offering useful developer abstractions. Complex conversations are difficult to program as a simple request-response pattern. The Bot Framework provides abstractions like dialogs, form filling, and more. You can use the abstractions to support complex conversational behavior from the simple building blocks.
 
-![A diagram of the Bot Framework.](../media/bot-framework-diagram.png)
+> [!div class="mx-imgBorder"]
+> ![A diagram of the Bot Framework.](../media/bot-framework-diagram.png)
 
 ## Use Azure Cognitive Services
 
@@ -34,11 +35,13 @@ Let's start to create our **GeoFriend** assistant chat bot. The easiest way to s
 
 1. Go to the [Azure portal][azure-portal] and sign in to your Azure account.
 
-    ![Sign in to your account on the Azure portal.](../media/azure-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Sign in to your account on the Azure portal.](../media/azure-portal.png)
 
 1. Select **Create a Resource** (or use the plus (+) symbol). Enter **Bot** in the search box, and then choose **Web App Bot**.
 
-    ![Create a new bot.](../media/azure-portal-create.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create a new bot.](../media/azure-portal-create.png)
 
     On the new page, select **Create**.
 
@@ -50,13 +53,15 @@ Let's start to create our **GeoFriend** assistant chat bot. The easiest way to s
     - **Pricing Tier**: Select **F0**, which is the free tier.
     - **App Name**: Keep the default value.
 
-    ![Fill in the bot parameters.](../media/azure-portal-bot-form.png)
+    > [!div class="mx-imgBorder"]
+    > ![Fill in the bot parameters.](../media/azure-portal-bot-form.png)
 
 1. Select the **Bot Template** box, and then select a template.
 
     For our bot, we'll use the **C#** SDK language and the **Echo Bot** template.
 
-    ![Select which language and bot template to use.](../media/azure-portal-select-template.png)
+    > [!div class="mx-imgBorder"]
+    > ![Select which language and bot template to use.](../media/azure-portal-select-template.png)
 
     Here are the template options:
 
@@ -75,7 +80,8 @@ Let's start to create our **GeoFriend** assistant chat bot. The easiest way to s
 
     1. Enter a name for your App Service plan. This plan determines how much compute resources are given to your bot.
 
-        ![Enter a name for your App Service plan.](../media/azure-portal-app-service-plan.png)
+        > [!div class="mx-imgBorder"]
+        > ![Enter a name for your App Service plan.](../media/azure-portal-app-service-plan.png)
 
     > [!TIP]
     > The **S1** plan level is the default. This plan level isn't free, so you might want to change your plan later. For details, see [Manage an App Service plan in Azure][AdjustServicePlan].
@@ -95,7 +101,8 @@ We can see information about our bot in the Azure portal, and also complete deve
 
 1. On the Azure portal start page, select **Resource Groups**, and select the resource group for your bot.
 
-    ![Open the resource group for our bot in the Azure portal.](../media/azure-portal-bot-resource-group.png)
+    > [!div class="mx-imgBorder"]
+    > ![Open the resource group for our bot in the Azure portal.](../media/azure-portal-bot-resource-group.png)
 
 1. Under your **resource group**, look for these important components:
 
@@ -105,9 +112,10 @@ We can see information about our bot in the Azure portal, and also complete deve
     You should also see the Application Insights instance and the bot App Service plan. You might need to adjust the plan to scale the bot to handle more requests, or move the bot onto a free plan.
 
 1. Select your bot's link. You'll see the bot page in the Azure portal.
-
-    ![Review the bot page in the Azure portal.](../media/azure-portal-bot-page.png)
-
+    
+    > [!div class="mx-imgBorder"]
+    > ![Review the bot page in the Azure portal.](../media/azure-portal-bot-page.png)
+    
     The bot page in the Azure portal is the main starting point for configuring our bot. Under **Overview**, we see the sequence of steps for completing the bot. The first step is the idea or **Plan**. The second step is to **Build**, which is where we are now. We'll discuss how to build our bot in the next unit.
 
 ## Run the bot
@@ -117,8 +125,9 @@ From the bot page in the Azure portal, we can try our new bot in action.
 1. On the left, select **Test in Web Chat**.
 
     You'll see a chat box that you can use to converse with the bot.
-
-    ![You can test your bot with the web chat box.](../media/azure-portal-web-chat.png)
+    
+    > [!div class="mx-imgBorder"]
+    > ![You can test your bot with the web chat box.](../media/azure-portal-web-chat.png)
 
 1. Try entering some text into the web chat box, and see how the bot responds.
 
