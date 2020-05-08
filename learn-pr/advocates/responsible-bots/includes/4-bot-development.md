@@ -111,7 +111,7 @@ As a starting point for our data, lets use the [Basic City list from SimpleMaps.
 
 Lines in `worldcities.csv` look like this:
 
-```
+```csv
 "city","city_ascii","lat","lng","country","iso2","iso3","admin_name","capital","population","id"
 "Tokyo","Tokyo","35.6850","139.7514","Japan","JP","JPN","Tōkyō","primary","35676000","1392685764"
 "New York","New York","40.6943","-73.9249","United States","US","USA","New York","","19354922.0","1840034016"
@@ -188,8 +188,8 @@ Now we'll implement the bot logic. Open the `Bots\EchoBot.cs` file and change th
     var f = System.IO.Path.Combine(Environment.CurrentDirectory, @"worldcities.csv");
     var cd = new CountryData(f);
     var cap = cd.GetCapital(name);
-    var replyText = cap == null 
-        ? "I do not know this country" 
+    var replyText = cap == null
+        ? "I do not know this country"
         : $"The capital of {name} is {cap}!" ;
     await turnContext.SendActivityAsync(replyText);
 ```
@@ -223,7 +223,7 @@ To deploy the bot back to the cloud, the easiest way is to use Visual Studio:
 
    ![Publish to Azure App Service window](../media/publish-step-1.png) | ![Azure App Service target selection confirmation window](../media/publish-step-2.png)
    ---|---
-   
+
    > [!TIP]
    > You might have to sign in to your Azure account at this step. If you don't see the correct App Service listed, check the top right to see if you're signed in to your Azure Account.
 
