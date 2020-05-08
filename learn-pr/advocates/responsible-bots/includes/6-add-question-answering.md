@@ -38,7 +38,7 @@ In **Step 4**, you can provide data sources. If you have an FAQ available, eithe
 You can also enable chit-chat functionality for your service. The bot automatically supports some level of general conversation, such as greeting the user and saying goodbye.
 
 > [!NOTE]
-> General conversation capability plays an important role in Responsible Conversational UI because it helps build trust with the user and helps maintain some degree of emotional connection with the user.
+> General conversation capability plays an important role in responsible conversational UI because it helps build trust with the user and helps maintain some degree of emotional connection with the user.
 
 We can select among different **personalities** for our general chat. We'll select **enthusiastic** because it corresponds well to our goal and target audience.
 
@@ -188,7 +188,7 @@ How are you?
 
 *Awesome! Thanks for asking.*
 
-Next, we'll add some final touches that implement Responsible Conversational UI principles.
+Next, we'll add some final touches that implement responsible conversational UI principles.
 
 [QAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/
 [ProjectPersonalityChat]: https://www.microsoft.com/research/project/personality-chat/
