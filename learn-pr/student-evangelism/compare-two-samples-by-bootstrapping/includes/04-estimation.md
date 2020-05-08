@@ -7,11 +7,9 @@ plt.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Estimation
-
-In the previous chapter we began to develop ways of inferential
+In the previous chapter, we began to develop ways of inferential
 thinking. In particular, we learned how to use data to decide between
-two hypotheses about the world. But often we just want to know how big
+two hypotheses about the world. But often we just want to know how large
 something is.
 
 For example, in an earlier chapter we investigated how many warplanes
@@ -28,8 +26,8 @@ To figure out the value of a parameter, we need data. If we have the
 relevant data for the entire population, we can simply calculate the
 parameter.
 
-But if the population is very large -- for example, if it consists of
-all the households in the United States -- then it might be too
+But if the population is very large--for example, if it consists of
+all the households in the United States--then it might be too
 expensive and time-consuming to gather data from the entire population.
 In such situations, data scientists rely on sampling at random from the
 population.

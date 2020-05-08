@@ -14,14 +14,14 @@ content: |
   [!include[](includes/03-causality.md)]
 content: 'In 2013, a Berkeley chemical engineering professor, Jay Keasling, discovered a synthetic version of artemisinin - a chemical crucial to producing antimalarial drugs. A group of researchers and statisticians come together to test the effectiveness of this new chemical, which is being used to treat malaria in developing countries.
 
-A random sample of 500 malaria patients are randomly assigned to take either the antimalarial drug or a placebo pill. It turns out that among the patients who took the drug, a much larger proportion recovered from malaria than among those who took the placebo. Meanwhile, cases of malaria are decreasing in developing nations, and some suggest that this might be due to the increased effectiveness of mosquito nets being distributed.'
+A random sample of 500 malaria patients are randomly assigned to take either the antimalarial drug or a placebo pill. It turns out that among the patients who took the drug, a much larger proportion recovered from malaria than among those who took the placebo. Meanwhile, cases of malaria are decreasing in developing nations, and some suggest that this might be because of the increased effectiveness of mosquito nets being distributed.'
 quiz:
   questions:
     - content: 'What kind of study is this?'
       choices:
         - content: 'randomized controlled experiment.'
           isCorrect: true
-          explanation: Correct, a treatment group and control group is clearly defined.
+          explanation: Correct, a treatment group and control group are clearly defined.
         - content: 'observational study'
           isCorrect: false
           explanation: Incorrect
@@ -49,4 +49,4 @@ quiz:
           explanation: 'Incorrect'
         - content: 'No, since the patients in the study already have malaria'
           isCorrect: true
-          explanation: 'We are able to establish causality because it’s a randomized controlled experiment. A much larger proportion recovered from malaria than among those who took the placebo. This statement indicates that there is a significant difference (greater than the difference observed if there was hypothetically no causation) between those who took the drug and those who took the pill. Also, the patients already have malaria, so the mosquito nets do not act as confounding variables.'
+          explanation: 'We are able to establish causality because it’s a randomized controlled experiment. A much larger proportion recovered from malaria than among those who took the placebo. This statement indicates that there is a significant difference--greater than the difference observed if there was hypothetically no causation, between those who took the drug and those who took the pill. Also, the patients already have malaria, so the mosquito nets do not act as confounding variables.'

@@ -65,8 +65,6 @@ def bootstrap_proportion(original_sample, label, replications):
     return proportions
 ```
 
-### Using Confidence Intervals
-
 A confidence interval has a single purpose -- to estimate an unknown
 parameter based on data in a random sample. In the last section, we said
 that the interval (36%, 42%) was an approximate 95% confidence interval

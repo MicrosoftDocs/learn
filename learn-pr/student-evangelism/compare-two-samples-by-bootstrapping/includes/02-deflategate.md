@@ -7,8 +7,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Deflategate
-
 On January 18, 2015, the Indianapolis Colts and the New England Patriots
 played the American Football Conference (AFC) championship game to
 determine which of those teams would play in the Super Bowl. After the

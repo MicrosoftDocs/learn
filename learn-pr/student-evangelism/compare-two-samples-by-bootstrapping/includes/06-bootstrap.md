@@ -7,8 +7,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### The Bootstrap
-
 A data scientist is using the data in a random sample to estimate an
 unknown parameter. She uses the sample to calculate the value of a
 statistic that she will use as her estimate.

@@ -7,8 +7,6 @@ plt.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Percentiles
-
 Numerical data can be sorted in increasing or decreasing order. Thus the
 values of a numerical data set have a *rank order*. A percentile is the
 value at a particular rank.

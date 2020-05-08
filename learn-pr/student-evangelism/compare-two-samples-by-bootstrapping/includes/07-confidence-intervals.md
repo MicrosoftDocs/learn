@@ -1,8 +1,9 @@
-### Note: You can find an interactive version of this unit named **compare-two-samples-by-bootstrapping.ipynb** in your virtual environment
+> [!NOTE]
+> You can find an interactive version of this unit named **compare-two-samples-by-bootstrapping.ipynb** in your virtual environment
 
-### If you haven't set up your online Virtual Studio Code environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-### Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking" target="_blank" rel="noopener">Visual Studio Online</a>
+Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 
 ``` {.python}
@@ -13,8 +14,6 @@ import matplotlib.pyplot as plots
 plots.style.use('fivethirtyeight')
 import numpy as np
 ```
-
-### Confidence Intervals
 
 We have developed a method for estimating a parameter by using random
 sampling and the bootstrap. Our method produces an interval of

@@ -7,8 +7,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Causality
-
 Our methods for comparing two samples have a powerful use in the
 analysis of randomized controlled experiments. Since the treatment and
 control groups are assigned randomly in such experiements, differences
@@ -393,7 +391,7 @@ Thus there are 31 potential treatment outcomes and 31 potential control
 outcomes. The question is about the distributions of these two sets of
 31 outcomes each. Are they the same, or are they different?
 
-We can't answer this just yet, because we don't get to see all 31 values
+We can't answer this yet, because we don't get to see all 31 values
 in each group. We just get to see a randomly selected 16 of the
 potential control outcomes, and the treatment outcomes of *the
 remaining* 15 patients.
@@ -1301,7 +1299,7 @@ def one_simulated_distance(table, label, group_label):
                                                     ).column(group_label)
     shuffled_table = table.select(label).with_column(
         'Shuffled Label', shuffled_labels)
-    return distance(shuffled_table, label, 'Shuffled Label') 
+    return distance(shuffled_table, label, 'Shuffled Label')
 ```
 
 ``` {.python}
@@ -1399,7 +1397,7 @@ non-specific LBP (N = 31)."
 
 Putting it all together, the meta-analysis concluded, "There is low
 quality evidence that BoNT injections improved pain, function, or both
-better than saline injections and very low quality evidence that they
+better than saline injections and very low-quality evidence that they
 were better than acupuncture or steroid injections. ... Further research
 is very likely to have an important impact on the estimate of effect and
 our confidence in it. Future trials should standardize patient
