@@ -11,9 +11,9 @@ plots.style.use('fivethirtyeight')
 import warnings
 warnings.simplefilter(action="ignore", category=FutureWarning)
 
-from urllib.request import urlopen 
+from urllib.request import urlopen
 import re
-def read_url(url): 
+def read_url(url):
     return re.sub('\\s+', ' ', urlopen(url).read().decode())
 ```
 
@@ -133,9 +133,9 @@ plots.style.use('fivethirtyeight')
 import warnings
 warnings.simplefilter(action="ignore", category=FutureWarning)
 
-from urllib.request import urlopen 
+from urllib.request import urlopen
 import re
-def read_url(url): 
+def read_url(url):
     return re.sub('\\s+', ' ', urlopen(url).read().decode())
 ```
 
@@ -347,9 +347,9 @@ plots.style.use('fivethirtyeight')
 import warnings
 warnings.simplefilter(action="ignore", category=FutureWarning)
 
-from urllib.request import urlopen 
+from urllib.request import urlopen
 import re
-def read_url(url): 
+def read_url(url):
     return re.sub('\\s+', ' ', urlopen(url).read().decode())
 ```
 
@@ -611,7 +611,7 @@ Number of Periods
 </p>
 You can see that the chapters of *Little Women* are in general longer
 than those of *Huckleberry Finn*. Let us see if these two simple
-variables -- the length and number of periods in each chapter -- can
+variables--the length and number of periods in each chapter--can
 tell us anything more about the two books. One way to do this is to plot
 both sets of data on the same axes.
 
@@ -622,11 +622,11 @@ axis represents the number of characters.
 
 ``` {.python}
 plots.figure(figsize=(6, 6))
-plots.scatter(chars_periods_huck_finn.column(1), 
-              chars_periods_huck_finn.column(0), 
+plots.scatter(chars_periods_huck_finn.column(1),
+              chars_periods_huck_finn.column(0),
               color='darkblue')
-plots.scatter(chars_periods_little_women.column(1), 
-              chars_periods_little_women.column(0), 
+plots.scatter(chars_periods_little_women.column(1),
+              chars_periods_little_women.column(0),
               color='gold')
 plots.xlabel('Number of periods in chapter')
 plots.ylabel('Number of characters in chapter');

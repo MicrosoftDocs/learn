@@ -27,10 +27,10 @@ humans contract cholera. That discovery was made in 1883, when the
 German scientist Robert Koch isolated the *Vibrio cholerae*, the
 bacterium that enters the human small intestine and causes cholera.
 
-In fact the *Vibrio cholerae* had been identified in 1854 by Filippo
+In fact, the *Vibrio cholerae* had been identified in 1854 by Filippo
 Pacini in Italy, just about when Snow was analyzing his data in London.
 Because of the dominance of the miasmatists in Italy, Pacini's discovery
-languished unknown. But by the end of the 1800's, the miasma brigade was
+languished unknown. But by the end of the 1800s, the miasma brigade was
 in retreat. Subsequent history has vindicated Pacini and John Snow.
 Snow's methods led to the development of the field of *epidemiology*,
 which is the study of the spread of diseases.
@@ -48,7 +48,7 @@ An underlying difference between the two groups (other than the
 treatment) is called a *confounding factor*, because it might confound
 you (that is, mess you up) when you try to reach a conclusion.
 
-**Example: Coffee and lung cancer.** Studies in the 1960's showed that
+**Example: Coffee and lung cancer.** Studies in the 1960s showed that
 coffee drinkers had higher rates of lung cancer than those who did not
 drink coffee. Because of this, some people identified coffee as a cause
 of lung cancer. But coffee does not cause lung cancer. The analysis
@@ -65,7 +65,7 @@ take great care to reduce confounding and to account for its effects.
 One of the most powerful examples of astute observation eventually
 leading to the establishment of causality dates back more than 150
 years. To get your mind into the right timeframe, try to imagine London
-in the 1850's. It was the world's wealthiest city but many of its people
+in the 1850s. It was the world's wealthiest city but many of its people
 were desperately poor. Charles Dickens, then at the height of his fame,
 was writing about their plight. Disease was rife in the poorer parts of
 the city, and cholera was among the most feared. It was not yet known
@@ -102,7 +102,7 @@ Here is Snow's original map. Each black bar represents one death. When
 there are multiple deaths at the same address, the bars corresponding to
 those deaths are stacked on top of each other. The black discs mark the
 locations of water pumps. The map displays a striking revelation---the
-deaths are roughly clustered around the Broad Street pump. 
+deaths are roughly clustered around the Broad Street pump.
 
 ![snow'scholera map](../media/snow-map.jpg)
 
