@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.send-crop-weather-alerts.2-application-architecture
-title: Application Architecture
+title: Application architecture
 metadata:
-  title: Application Architecture
-  description: Our application will involve different kinds of components. Let's review the application architecture.
+  title: Application architecture
+  description: This unit reviews the application architecture, which involves a variety of components. 
   author: berndverst
   ms.author: beverst
   ms.date: 05/07/2020

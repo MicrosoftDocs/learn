@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.advocates.send-crop-weather-alerts
 metadata:
-  title: Improve crop health for farmers with SMS weather alerts using Azure Maps and Azure Functions
-  description: In this module, you'll deploy an application that allows farmers to use SMS messaging to set up temperature alerts for specific locations. These alerts would help farmers know when to plant, when to water, or when to protect their crops.
+  title: Improve crop health for farmers with text message weather alerts by using Azure Maps and Azure function apps
+  description: In this module, you'll create an application that allows farmers to use text messaging to set up temperature alerts. These alerts can help farmers know when to plant, when to water, or when to protect their crops.
   ms.date: 05/07/2020
   author: berndverst
   ms.author: beverst
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Improve crop health for farmers with SMS weather alerts using Azure Maps and Azure Functions
-summary: In this module, you'll deploy an application that allows farmers to use SMS messaging to set up temperature alerts for specific locations. These alerts would help farmers know when to plant, when to water, or when to protect their crops.
+title: Improve crop health for farmers with text message weather alerts by using Azure Maps and Azure function apps
+summary: In this module, you'll create an application that allows farmers to use text messaging to set up temperature alerts. These alerts can help farmers know when to plant, when to water, or when to protect their crops.
 abstract: |
-  In this module you'll:
-  - Learn about the Azure Maps APIs for obtaining the weather forecast for a location.
-  - Create and configure a Twilio account with a programmable SMS phone number to send and receive text messages.
-  - Deploy an existing application to Azure Functions using Twilio and Azure Maps to manage and send temperature alerts for specific locations.
+  In this module you will:
+  - Learn about using Azure Maps APIs to obtain a weather forecast for a location.
+  - Create and configure a Twilio account with a programmable phone number for sending and receiving text messages.
+  - Deploy an existing application to an Azure function app by using Twilio and Azure Maps to manage and send temperature alerts for specific locations.
 
 # Use placeholder image until final artwork ready
 iconUrl: /learn/achievements/generic-badge.svg
@@ -28,7 +28,7 @@ products:
 - azure-maps
 prerequisites: | 
   - Basic familiarity with Azure Functions.
-  You may want to complete the Microsoft Learn module: [Create serverless logic with Azure Functions](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/)
+  - Before you begin, you might want to complete the Microsoft Learn module [Create serverless logic with Azure Functions](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/).
 
 units:
 - learn.advocates.send-crop-weather-alerts.1-introduction

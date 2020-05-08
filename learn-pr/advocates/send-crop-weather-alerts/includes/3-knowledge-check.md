@@ -1,1 +1,1 @@
-Before we continue, lets check what you have learned so far.
+Before we continue, lets check to see what you've learned so far.
