@@ -15,7 +15,8 @@ Let's add a **help** feature to our bot! Because we're already using QnA Maker, 
 
 1. Select **+ Add QnA Pair**.
 
-    ![The QnA Maker knowledge base edit dialog.](../media/qna-maker-add-pair.png)
+   > [!div class="mx-imgBorder"]
+   > ![The QnA Maker knowledge base edit dialog.](../media/qna-maker-add-pair.png)
 
 1. Enter phrases to trigger the **help** feature.
 
@@ -79,7 +80,8 @@ We need to respond to a user, when the bot doesn't understand the user's input. 
 
 Here's an example of an initial conversation between our bot and a user:
 
-![A sample welcome message and help feature for our bot.](../media/help-conversation.png)
+> [!div class="mx-imgBorder"]
+> ![A sample welcome message and help feature for our bot.](../media/help-conversation.png)
 
 ## Add visual interactions
 
@@ -148,7 +150,8 @@ To create an attachment, we use the `MessageFactory` object. There are different
 
 Here's how our conversation with support for attachments looks in the Visual Studio Emulator:
 
-![An example conversation with support for attachments in VS Emulator.](../media/flag-conversation.png)
+> [!div class="mx-imgBorder"]
+> ![An example conversation with support for attachments in VS Emulator.](../media/flag-conversation.png)
 
 > [!NOTE]
 > In this example, we can see another potential problem. The spelling of non-English names can differ. Our bot doesn't support different transliterations for *Yerevan*, the capital of *Armenia*. To develop a responsible bot, we need to support different possible transliterations. An even better approach is to offer suggestions that provide slight variations in city names.
