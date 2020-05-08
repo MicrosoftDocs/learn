@@ -17,6 +17,5 @@ In this module you'll:
 
 ## Prerequisites
 
-- A basic understanding of quantum computing concepts.
-- The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true).
+- The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
