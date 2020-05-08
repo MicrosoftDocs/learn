@@ -1,5 +1,4 @@
 ## Using the Azure Cloud Shell
-
 To start Azure Cloud Shell,  
 Launch Cloud Shell from the top navigation of the Azure portal.
 

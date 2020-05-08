@@ -19,7 +19,7 @@ In this unit, you'll modify the source language and you'll change the target lan
 >[!NOTE] 
 >You can find many supported languages by Speech Translation API from the [Microsoft page](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support#speech-translation).
 
-1. Click F1, type, and select Azure IoT Device Workbench: Deploy to Azure.... If VS Code asks for confirmation for redeployment, click Yes.
+5. Click F1, type, and select Azure IoT Device Workbench: Deploy to Azure.... If VS Code asks for confirmation for redeployment, click Yes.
 
 ![An illustration is showing how to deploy Azure function to the cloud.](../media/deploy-azure-function-2.png)
 
