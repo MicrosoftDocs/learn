@@ -1,4 +1,4 @@
-Before you can use the two Azure Maps APIs for Geocoding and Weather Forecast, you'll need an Azure Maps account. In this unit, you'll use the Azure CLI to create an Azure Maps account, and get a key needed by the web SDK to access the Maps account.
+Before you can use the two Azure Maps APIs for Geocoding and Weather Forecast, you'll need an Azure Maps account. In this unit, you'll use the Azure CLI to create an Azure Maps account, and get a key needed by the app to access the Maps account.
 
 ## Create an Azure Maps account
 
@@ -7,7 +7,10 @@ Before you can use the two Azure Maps APIs for Geocoding and Weather Forecast, y
 1. Run this command to create a new Azure Maps account
 
     ```Azure CLI
-    az maps account create --name weatherservice --resource-group <rgn>[sandbox resource group name]</rgn> --accept-tos
+    az maps account create \
+      --name weatherservice \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --accept-tos
     ```
 
 ## Retrieve the primary key
@@ -17,9 +20,11 @@ Azure Maps accounts are secured by either Azure Active Directory or via a key. L
 1. Run this command to view the keys
 
     ```Azure CLI
-    az maps account keys list --name weatherservice --resource-group <rgn>[sandbox resource group name]</rgn>
+    az maps account keys list \
+      --name weatherservice \
+      --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
 1. Note down the value of the `"primaryKey"`. You need the value inside the quotes.
 
-In this unit, you created an Azure Maps account and obtained the primary key. Next lets do a quick knowledge check on what you have learned so far.
+In this unit, you created an Azure Maps account and obtained the primary key. Next, you'll create a Twilio account.
