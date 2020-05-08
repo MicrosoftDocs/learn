@@ -3,7 +3,7 @@ uid: learn.advocates.send-crop-weather-alerts.6-deploy-azure-function-app
 title: Exercise - Deploy an Azure function app
 metadata:
   title: Exercise - Deploy an Azure function app
-  description: In this unit, you'll create and deploy your existing application to Azure Functions.
+  description: In this unit, you'll create and deploy your existing application to an Azure function app.
   author: berndverst
   ms.author: beverst
   ms.date: 05/07/2020
