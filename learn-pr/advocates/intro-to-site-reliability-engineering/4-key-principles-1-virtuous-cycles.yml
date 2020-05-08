@@ -4,10 +4,9 @@ title: "Key SRE principles and practices: virtuous cycles"
 metadata:
   title: "Key SRE principles and practices: virtuous cycles"
   description: "Key SRE principles and practices: virtuous cycles"
-  ms.date: 09/26/2018
-  #TODO: Update with real author name.
-  author: adrianstevens
-  ms.author: adsteven
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
