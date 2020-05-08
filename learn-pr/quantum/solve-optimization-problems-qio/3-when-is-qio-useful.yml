@@ -3,7 +3,7 @@ uid: learn.quantum.solve-optimization-problems-qio.3-when-is-qio-useful
 title: When is QIO useful?
 metadata:
   title: When is QIO useful?
-  description: TODO
+  description: Learn about a few optimization landscapes and which ones are good candidates for QIO.
   ms.date: 05/19/2020
   author: KittyYeungQ
   ms.author: kitty
