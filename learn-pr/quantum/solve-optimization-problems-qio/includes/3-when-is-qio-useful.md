@@ -18,11 +18,13 @@ This kind of problem is easily solved with techniques such as gradient descent, 
 
 ## A structured, rugged landscape
 
-QIO works best with problems where the landscape is rugged, with many hills and valleys. Here's an example that considers two continuous variables. In our Contoso Logistics example, we'll be considering a problem with eight variables:
+QIO works best with problems where the landscape is rugged, with many hills and valleys. Here's an example that considers two continuous variables.
 
 ![A plot of an optimization landscape that shows many peaks and valleys](../media/plot_rugged.png)
 
 In this scenario, one of the greatest challenges is to avoid getting stuck at any of the sub-optimal *local minima*. A rugged landscape can have multiple valleys. Each of these valleys will have a lowest point, which is the local minimum. One of these points will be the lowest overall, and that point is the global minimum. These rugged landscapes present situations where QIO can outperform other techniques.
+
+In our Contoso Logistics example, we'll be considering a problem with eight variables.
 
 ## A scattered, random landscape
 
