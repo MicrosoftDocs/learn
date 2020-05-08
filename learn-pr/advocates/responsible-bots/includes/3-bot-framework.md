@@ -26,7 +26,7 @@ The Bot Framework also helps structure bot logic by offering useful developer ab
 
 To make bots intelligent, we'll need to use some AI techniques. **Natural language understanding** can help us figure out what a user wants without requiring them to enter an exact phrase. We can handle intelligent tasks with [Azure Cognitive Services][CoServ] that offer a set of pre-trained, neural network models for the cloud.
 
-To build our bot, we'll use Azure Cognitive Services [Language Understanding Intelligent Service][LUIS] (LUIS). LUIS can be trained on a set of phrases by specifying input phrases and their _intent_ or meaning. The service tries to figure out the best intent for each user's input phrase. We'll also use Azure Cognitive Services [QnA Maker Service][QnAMaker] to add question-answering functionality and general chat support.
+To build our bot, we'll use Azure [Language Understanding][LUIS] (LUIS). LUIS can be trained on a set of phrases by specifying input phrases and their _intent_ or meaning. The service tries to figure out the best intent for each user's input phrase. We'll also use Azure [QnA Maker Service][QnAMaker] to add question-answering functionality and general chat support.
 
 ## Create the bot
 
@@ -65,7 +65,7 @@ Let's start to create our **GeoFriend** assistant chat bot. The easiest way to s
     - **Basic Bot**: Ignore this option. The Basic Bot template supports traditional bot operations, such as the language understanding service and bot analytics.
     - **Virtual Assistant**: Ignore this option. The Virtual Assistant bot template supports complex enterprise-level bot operations. The operations integrate different skills and provide integration with many different services.
     - **Language Understanding Bot**: Ignore this option. The Language Understanding Bot template supports connecting to an existing LUIS language model.
-    - **Q&A Maker Bot**: Ignore this option. The Q&A Maker Bot template answers simple questions based on a questions and answers table.
+    - **QnA Maker Bot**: Ignore this option. The QnA Maker Bot template answers simple questions based on a questions and answers table.
 
 1. Now create an **App Service Plan**.
 
