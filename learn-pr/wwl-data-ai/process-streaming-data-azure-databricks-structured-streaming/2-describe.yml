@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-streaming-data-azure-databricks-structured-streaming.describe
+title: Describe Azure Databricks structured streaming
+metadata:
+  title: Describe Azure Databricks structured streaming
+  description: "Describe Azure Databricks structured streaming"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-describe.md)]
