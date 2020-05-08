@@ -12,21 +12,21 @@ The bot creation flow in the right pane shows that we're at the **Build** stage.
 
 From here, you have two main options:
 
-- Use **Visual Studio 2019** installed on your local computer for your code development. To do that, you select **Download Bot source code**. We recommend this option. It gives the power of Visual Studio including **autocomplete**. Visual Studio can make the whole development process easier.
-- Use the **Online Editor** right from the browser. For this option, select the small **Open online code editor** link. This option is especially useful for making some small changes to your bot.
+- Use Visual Studio 2019 installed on your local computer for your code development. To do that, you select **Download Bot source code**. We recommend this option. It's a more complete and powerful development platform and can make the whole process easier.
+- Use the online editor in your browser. For this option, select the small **Open online code editor** link. This option is especially useful for making small changes to your bot.
 
 ## Explore your bot's code in the online editor
 
-Let's first tried the online editor option. Select the **Open online code editor** link to view the bot code.
+Let's first try the online editor option. Select the **Open online code editor** link to view the bot code.
 
 > [!div class="mx-imgBorder"]
 > ![Web App Code Editor](../media/visual-studio-online.png)
 
 The left pane shows a list of files. Look in the `Bots` directory, and select `EchoBot.cs`.
 
-If you're familiar with ASP.NET web development, you might recognize what looks like code for an ASP.NET web site. In fact, the Azure Bot Service bot is a web application that defines the API endpoint `/api/messages`. It's  called by the Bot Connector.
+If you're familiar with ASP.NET web development, you might recognize what looks like code for an ASP.NET website. In fact, the Azure Bot Service bot is a web application that defines the `/api/messages` endpoint. It's called by Bot Connector.
 
-If that explanation seems too complicated, don't worry. All you need to know is that the `EchoBot.cs` file  defines the functionality of the bot. In this file, the main function is `OnMessageActivityAsync`, which is called each time the bot receives a message from the user.
+If that explanation seems too complicated, don't worry. The main thing you need to know is that the `EchoBot.cs` file  contains your bot's functionality. In this file, the primary function is `OnMessageActivityAsync`, which is called each time the bot receives a message from the user.
 
 Here's the code that creates the echo message:
 
@@ -38,9 +38,9 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 }
 ```
 
-So `turnContext.Activity` contains all information related to input message, including the input message text, `turnContext.Activity.Text`. It also contains other information, such as attachments, sender address, and so on. To send the reply to the user, we use the `SendActivityAsync` function.
+The `turnContext.Activity` function contains all the information related to input messages, including message text, `turnContext.Activity.Text`. It also contains other information such as attachments, sender address, and so on. To send the reply to the user, we use the `SendActivityAsync` function.
 
-Another useful function here is `OnMembersAddedAsync`. This function is called whenever a new person enters the chat. We use it to display the initial welcome message to the user.
+Another useful function here is `OnMembersAddedAsync`. It's called whenever a new person enters the chat. We use it to display the initial welcome message to the user.
 
 ## Use the online editor to change the code
 
@@ -57,7 +57,7 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 }
 ```
 
-Whenever we change the code, we need to **build** the application to incorporate the changes. Locate the `build.cmd` script among the files in the left pane. Right-click on the file, and then select **Run from console**. This command runs the script in the online editor that rebuilds the site.
+Whenever we change the code, we need to build the application to incorporate the changes. Locate the `build.cmd` script among the files in the left pane. Right-click on the file, and then select **Run from console**. This command runs the script in the online editor that rebuilds the site.
 
 > [!div class="mx-imgBorder"]
 > ![Build Result](..\media\azure-build.png)
