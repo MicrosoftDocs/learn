@@ -1,4 +1,5 @@
-> [!NOTE] You can find an interactive version of this unit named **monty-hall-problem.ipynb** in your virtual environment
+> [!NOTE] 
+> You can find an interactive version of this unit named **monty-hall-problem.ipynb** in your virtual environment
 
 If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
@@ -58,14 +59,14 @@ In any problem involving chances, the assumptions about randomness are
 important. It's reasonable to assume that there is a 1/3 chance that the
 contestant's initial choice is the door that has the car behind it.
 
-The solution to the problem is quite straightforward under this
+The solution to the problem is straightforward under this
 assumption, though the straightforward solution doesn't convince
 everyone. Here it is anyway.
 
 -   The chance that the car is behind the originally chosen door is 1/3.
 -   The car is behind either the originally chosen door or the door that
     remains. It can't be anywhere else.
--   Therefore, the chance that the car is behind the door that remains
+-   Therefore, the chance that the car is behind the door that remain
     is 2/3.
 -   Therefore, the contestant should switch.
 
@@ -315,7 +316,7 @@ second goat
 </tbody>
 </table>
 As our earlier solution said, the car is behind the remaining door
-two-thirds of the time, to a pretty good approximation. The contestant
+two-thirds of the time, to a good approximation. The contestant
 is twice as likely to get the car if she switches than if she sticks
 with her original choice.
 

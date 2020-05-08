@@ -29,7 +29,7 @@ presented in this chapter. For now, just focus on the main idea: to try
 to establish causality, run a randomized controlled experiment if
 possible. If you are conducting an observational study, you might be
 able to establish association but it will be harder to establish
-causation. Be extremely careful about confounding factors before making
+causation. Be careful about confounding factors before making
 conclusions about causality based on an observational study.
 
 **Terminology**
@@ -64,7 +64,7 @@ conclusions about causality based on an observational study.
     one for mincing her words. "There is no end to the absurdities
     connected with this doctrine," she said. "Suffice it to say that in
     the ordinary sense of the word, there is no proof such as would be
-    admitted in any scientific enquiry that there is any such thing as
+    admitted in any scientific inquiry that there is any such thing as
     contagion."
 
 3.  A later RCT established that the conditions on which PROGRESA
