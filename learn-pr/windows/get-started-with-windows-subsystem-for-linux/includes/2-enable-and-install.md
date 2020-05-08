@@ -46,6 +46,8 @@ We recommend updating your Linux distribution regularly. Most Linux distribution
 
 To update your Ubuntu distribution, use the APT package manager by pasting this command into the terminal: `sudo apt update && sudo apt upgrade`. (These commands will be explained further in Unit 4.)
 
+To enable `sudo apt install <package name>`, run this command: `sudo apt-get update`.
+
 ## Build a custom Linux distribution
 You can also create your own custom Linux distribution for submission to the Microsoft Store and/or sideloading. At the end of this course, you'll find a link to instructions, an open-source WSL custom distribution sample, and the distribution launcher repo.
 
