@@ -271,7 +271,7 @@ After we implement those changes, we can start the bot and have a little convers
 
 ## Conclusion
 
-Now the bot seems to be much more intelligent, but it ignores some of the responsible AI principles, such as making the goal of the bot clear. In the next unit, we'll work to make our bot more responsible with new features.
+Now the bot seems to be much more intelligent, but it ignores some of the responsible AI principles, such as making the goal of the bot clear. In the next unit, add one more feature, before moving on to implementing some of the responsible conversational principles.
 
 [LUIS]: https://docs.microsoft.com/azure/cognitive-services/luis/?azure-portal=true
 [LUISPortal]: https://preview.luis.ai?azure-portal=true
