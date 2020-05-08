@@ -50,9 +50,9 @@ The test data is using this format:
 Copy the following command and paste it into Cloud Shell:
 
 ```azurecli
-wget -O create-cosmosdb.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-azure-fundamentals/master/scripts/create-cosmosdb.bash && 
-chmod +x ./create-cosmosdb.bash &&
-./create-cosmosdb.bash
+wget -O create-cosmosdb.sh https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-azure-fundamentals/master/scripts/create-cosmosdb.sh && 
+chmod +x ./create-cosmosdb.sh &&
+./create-cosmosdb.sh
 ```
 
  It's probably a good idea to go and grab a cup of coffee or tea - creating a CosmosDB instance can take a while. It's not uncommon to wait for about ten minutes. Don't cancel the script execution.
@@ -78,9 +78,9 @@ masterKey="[MASTER KEY GOES HERE]"
 Now you're ready to create test data by running this script:
 
 ```azurecli
-wget -O populate-cosmosdb.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-azure-fundamentals/master/scripts/populate-cosmosdb.bash && 
-chmod +x ./populate-cosmosdb.bash &&
-./populate-cosmosdb.bash $databaseName $masterKey
+wget -O populate-cosmosdb.sh https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-azure-fundamentals/master/scripts/populate-cosmosdb.sh && 
+chmod +x ./populate-cosmosdb.sh &&
+./populate-cosmosdb.sh $databaseName $masterKey
 ```
 
 ## Configure the Azure functions API project
