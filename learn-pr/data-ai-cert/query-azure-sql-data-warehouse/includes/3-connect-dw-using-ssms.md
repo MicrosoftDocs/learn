@@ -1,10 +1,9 @@
-There are many applications you can use as a client for the Azure SQL Data Warehouse server. 
+There are many applications you can use as a client for the Azure Synapse Analytics server. Data engineers often use SQL Server Management Studio (SSMS) to access Microsoft database products including Azure SQL Database, Azure Synapse Analytics, and on-premises SQL Server instances. Data analysts usually use Excel or Power BI as their client application to query the database. Developers use Visual Studio to write all kinds of third-party applications to query the database.
 
-- Data engineers often use SQL Server Management Studio to access Microsoft database products, such as Azure SQL Database, Azure SQL Data Warehouse, and on-premises SQL Server instances. 
-- Data analysts usually use Excel or Power BI as their client application to query the database. 
-- Developers use Visual Studio to write all kinds of third-party applications to query the database.
+Since SSMS is a common tool, let's look at how to use it to query our data warehouse. To connect to our database, we need to create a _connection string_.
 
-SQL Server Management Studio is a common tool, so let's see how to use it to query the data warehouse. To connect to the database, create a _connection string_.
+> [!NOTE]
+> Azure Synapse Analytics currently has a tool named Azure Synapse Analytics Studio in preview mode to interact with Azure Synapse Analytics.
 
 ## Configure SQL Server Management Studio to communicate with a database
 

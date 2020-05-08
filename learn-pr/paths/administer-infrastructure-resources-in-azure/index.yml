@@ -2,12 +2,11 @@
 uid: learn.administer-infrastructure-resources-in-azure
 metadata:
   title: Administer infrastructure resources in Azure learning path
-  description: Learn how to create, manage, secure and scale virtual machine resources.
+  description: This learning path teaches how to create and customize Windows and Linux virtual machines, connect them to virtual networks, and keep them updated.
   brand: azure
-  ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
-  #ms.learn-contact: smmark
+  ms.date: 10/24/2019
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Administer infrastructure resources in Azure
@@ -26,6 +25,7 @@ products:
 - azure-monitor
 - azure-clis
 - azure-resource-manager
+- azure-automation
 modules:
 - learn.introduction-to-azure-virtual-machines
 - learn.create-linux-vm-in-azure
@@ -39,5 +39,7 @@ modules:
 - learn.add-and-size-disks-in-azure-virtual-machines
 - learn.caching-and-performance-azure-storage-and-disks
 - learn.secure-your-azure-virtual-machine-disks
+- learn.azure.protect-vm-settings-with-dsc
+- learn.azure.monitor-azure-vm-using-diagnostic-data
 trophy:
   uid: learn.administer-infrastructure-resources-in-azure.trophy

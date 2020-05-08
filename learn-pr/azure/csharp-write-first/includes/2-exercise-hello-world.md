@@ -82,18 +82,18 @@ Common mistakes new programmers make:
 - Using lower-case letters instead of capitalizing `C` in `Console`, or the letters `W` or `L` in `WriteLine`
 - Using a comma instead of a period between `Console` and `WriteLine`
 - Forgetting double-quotation marks, or using single-quotation to surround the phrase `Hello World!`
-- Forgetting a semi-color at the end of the command
+- Forgetting a semi-colon at the end of the command
 
 Each of these mistakes prevents your code from compiling successfully.
 
 Assuming you were successful in the previous steps, let's continue on.
 
-### Step 4: Add new lines of code in the .NET Editor to print additional messages
+### Step 4: Comment out the previous line of code, then add new lines of code in the .NET Editor to print a new message
 
-Below the first line of code, modify the code you wrote so that it includes three additional lines:
+Modify the code you wrote so that it is prefixed by a code comment using two forward slashes `// `, then add new lines of code to match the following code snippet:
 
 ```csharp-interactive
-Console.WriteLine("Hello World!");
+// Console.WriteLine("Hello World!");
 
 Console.Write("Congratulations!");
 Console.Write(" ");
@@ -103,11 +103,12 @@ Console.Write("You wrote your first lines of code!");
 Press the green Run button again.  This time, you should see the following output.
 
 ```output
-Hello World!
 Congratulations! You wrote your first lines of code!
 ```
 
-Admittedly, the new lines of code we added could easily be shortened to a single line of code like we did in Step 1.  However, we wanted you to learn a second technique to print a message to the output console.  
+You create a code comment by prefixing a line of code with a two forward slashes `//`. This instructs the compiler to ignore all the instructions on that line.  Code comments are helpful when you're not ready to delete the code yet, but you want to ignore it for now.  You can also use code comments to add messages to yourself that reminds you what the code is doing.  We'll talk about code comments in an upcoming module.
+
+The three new lines of code you added demonstrated the difference between the `Console.WriteLine()` and `Console.Write()` methods.  Admittedly, the new lines of code you added could easily be shortened to a single line of code like you wrote in Step 1.  However, we wanted you to learn a second technique to print a message to the output console.
 
 The first technique used `Console.WriteLine()` to print an entire message to the output console.  At the end of the line, it added a line feed similar to how you might use the `Enter` or `Return` key on your keyboard to create a new line of text.  
 

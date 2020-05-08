@@ -2,12 +2,11 @@
 uid: learn.deploy-a-website-with-azure-app-service
 metadata:
   title: Deploy a website to Azure with Azure App Service learning path
-  description: Web apps in Azure allow you to publish and manage your website easily without having to work with the underlying servers, storage, or network assets. Instead, you can focus on your website features and rely on the robust Azure platform to provide secure access to your site.
+  description: In this learning path, get acquainted with using Azure App Service to create and deploy your website without underlying servers, storage or network assets.
   brand: azure
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
-  #ms.learn-contact: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy a website to Azure with Azure App Service
@@ -20,6 +19,7 @@ roles:
 - developer
 products: 
 - azure
+- azure-app-service
 - azure-portal
 modules:
 - learn.prepare-azure-dev-environment

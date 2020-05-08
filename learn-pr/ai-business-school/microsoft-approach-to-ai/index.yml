@@ -2,10 +2,10 @@
 uid: learn-wwl.microsoft-approach-to-ai
 metadata:
   title: Examine the Microsoft approach to artificial intelligence
-  description: This module is a starting point for business decision makers who want to understand how Microsoft is creating products, services, and solutions to help organizations leverage Artificial Intelligence (AI). We’ll also help you understand how these technologies relate to business problems.
+  description: Learn how Microsoft creates products, services, and solutions to help organizations leverage AI. Understand how these technologies relate to business problems.
   ms.date: 04/26/2019
-  author: RWortmanMorris
-  ms.author: rawortma
+  author: Adriamen
+  ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: barlan
@@ -28,6 +28,7 @@ products:
 - m365
 units: 
 - learn-wwl.microsoft-approach-to-ai.introduction
+- learn-wwl.microsoft-approach-to-ai.autonomous-systems
 - learn-wwl.microsoft-approach-to-ai.intelligent-bot-demo
 - learn-wwl.microsoft-approach-to-ai.pre-trained-cognitive-services
 - learn-wwl.microsoft-approach-to-ai.cognitive-search

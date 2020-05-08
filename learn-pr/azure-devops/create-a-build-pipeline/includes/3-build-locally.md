@@ -1,4 +1,4 @@
-Get ready to start building a CI pipeline with Azure Pipelines. The first step is to build and run the *Space Game* web app on your local machine. Understanding how to build software locally will prepare you to repeat the process in the pipeline.
+Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The first step is to build and run the *Space Game* web app on your local machine. Understanding how to build software locally will prepare you to repeat the process in the pipeline.
 
 Mara is going to do exactly that and, by following the procedures, you can do the same thing. Everyone on the team, including Mara, uses Visual Studio Code to build and run applications. But the team uses a centralized version control system for its code, and Mara is more comfortable with GitHub, so she's going to use that. If you've never used GitHub, don't worry. Just follow along for now. All will be explained here and in later modules.
 
@@ -66,7 +66,7 @@ To fork the *Space Game* web project into your GitHub account:
 
 You now have a copy of the *Space Game* web project in your GitHub account. Now you'll download, or *clone*, a copy to your computer so you can work with it.
 
-A clone, just a like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
+A clone, just like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
 
 To clone the *Space Game* web project to your computer:
 
@@ -77,10 +77,8 @@ To clone the *Space Game* web project to your computer:
 1. In Visual Studio Code, go to the terminal window and run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
 
     ```bash
-    git clone --branch master --single-branch https://github.com/your-name/mslearn-tailspin-spacegame-web.git
+    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web.git
     ```
-
-    You can typically omit the `--branch` and `--single-branch` arguments. We include them here to help you get starter code from the Microsoft repository in later modules.
 
 1. Move to the `mslearn-tailspin-spacegame-web` directory. This is the root directory of your repository.
 
@@ -151,6 +149,9 @@ Now that you have the web application, you can build and run it locally.
     dotnet build --configuration Release
     ```
 
+    > [!NOTE]
+    > If the `dotnet` command is not found, review the prerequisites at the start of this module. You may need to install .NET Core.
+
     .NET Core projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here we choose the Release configuration just to see the web app in action.
 
     You'll likely see a few build warnings in the output. These warnings are included intentionally. You can ignore them for now.
@@ -166,7 +167,7 @@ Now that you have the web application, you can build and run it locally.
 
 In development mode, the *Space Game* web site is configured to run on port 5000.
 
-From a new browser tab, navigate to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
+From a new browser tab, navigate to `http://localhost:5000` to see the running application.
 
 You see this:
 
@@ -176,7 +177,7 @@ You see this:
 > If you see an error in your browser that's related to a certificate error, select Ctrl+C from your terminal to stop the running application.
 > Then run `dotnet dev-certs https --trust` and select **Yes** when prompted. Or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
 >
-> After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to [http://localhost:5000](http://localhost:5000?azure-portal=true) from a new browser tab to see the running application.
+> After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to `http://localhost:5000` from a new browser tab to see the running application.
 
 You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 

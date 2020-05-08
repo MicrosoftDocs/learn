@@ -5,9 +5,8 @@ metadata:
   description: Learn how to work with the Azure command line and web portal to create, manage, and control cloud based resources.
   brand: azure
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
-  #ms.learn-contact: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage resources in Azure
@@ -31,5 +30,6 @@ modules:
 - learn.automate-azure-tasks-with-powershell
 - learn.predict-costs-and-optimize-spending
 - learn.control-and-organize-with-resource-manager
+- learn.azure.move-azure-resources-to-another-resource-group
 trophy:
   uid: learn.manage-resources-in-azure.trophy

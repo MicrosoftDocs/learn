@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-the-right-disk-storage-for-vm-workload.4-select-disk-type-for-your-workload
+title: Select a disk type for your workload
+metadata:
+  title: Select a disk type for your workload
+  description: Select a disk type for your workload
+  ms.date: 11/06/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-select-disk-type-for-your-workload.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "For the administrative web interface server, suppose you want to use Azure Backup to protect the content of the virtual machine's disks. How would this requirement change the disk type you choose?"
+    choices:
+    - content: "Use standard SSDs instead of standard HDDs."
+      isCorrect: false
+      explanation: "You can use Azure Backup with standard HDDs, so you don't need to change them to standard SSDs."
+    - content: "Use premium SSDs instead of standard HDDs."
+      isCorrect: false
+      explanation: "You can use Azure Backup with standard HDDs, so you don't need to change them to premium SSDs."
+    - content: "No change is needed."
+      isCorrect: true
+      explanation: "Azure Backup supports managed disks, so no change is needed."
+  - content: "For the standby database servers, suppose that your requirements change. You decide that a minimum IOPS of 1,100 is absolutely required at all times. How would this requirement change the disk type you choose?"
+    choices:
+    - content: "Use premium SSDs instead of standard SSDs."
+      isCorrect: true
+      explanation: "Although larger standard SSD sizes support this IOPS, it's not guaranteed and might occasionally drop below 1,100. Premium SSDs do have a guaranteed performance level."
+    - content: "Use standard HDDs instead of standard SSDs."
+      isCorrect: false
+      explanation: "Standard SSDs and standard HDDs don't guarantee an IOPS value."
+    - content: "Use unmanaged disks instead of managed disks."
+      isCorrect: false
+      explanation: "Managed disks and unmanaged disks don't guarantee an IOPS value."

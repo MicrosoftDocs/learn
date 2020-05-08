@@ -73,13 +73,13 @@ Let's examine how `ProductService` is made available as a service at startup.
 In the following code, the `ProductService` class constructor takes a parameter of an instance of `HttpClient` (`System.Net.Http.HttpClient`).
 
 ```csharp
-      public ProductService(
-            HttpClient httpClient,
-            IConfiguration configuration)
-        {
-            _httpClient = httpClient;
-            _route = configuration["ProductService:ControllerRoute"];
-        }
+public ProductService(
+    HttpClient httpClient,
+    IConfiguration configuration)
+{
+    _httpClient = httpClient;
+    _route = configuration["ProductService:ControllerRoute"];
+}
 ```
 
 `ProductService` is instantiated and made available to the app when registered as a service at start up in the `Startup.ConfigureServices` method located in `Startup.cs` as in the following code:
@@ -135,10 +135,10 @@ return RedirectToPage("Index");
 1. The `HttpClient` instance sends a `POST` request as an asynchronous operation to the specified URI string `_route` with the given value of `product`, serialized as JSON.
 
 ```csharp
-    public async Task CreateProduct(Product product)
-        {
-            await _httpClient.PostAsJsonAsync<Product>(_route, product);
-        }
+public async Task CreateProduct(Product product)
+{
+    await _httpClient.PostAsJsonAsync<Product>(_route, product);
+}
 ```
 
 As pointed out previously, the `ProductService` service was injected directly into `CreateModel` by including it as a constructor parameter, using DI.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ms-learn-live.5-session-4-prep
+title: Prepare for session 4 - "Identify the benefits of Azure Storage"
+metadata:
+  title: Prepare for session 4 - "Identify the benefits of Azure Storage"
+  description: Prepare for session 4 - "Identify the benefits of Azure Storage"
+  ms.date: 1/20/2020
+  author: krumelur
+  ms.author: renrup
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+interactive: bash
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-session-4-prep.md)]

@@ -6,12 +6,11 @@ metadata:
   description: Exercise - Create a Data Science Virtual Machine with the Azure CLI
   ms.date: 09/24/2018
   #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-interactive: bash
 durationInMinutes: 30
 content: |
   [!include[](includes/3-create-a-dsvm-with-the-azure-cli.md)]

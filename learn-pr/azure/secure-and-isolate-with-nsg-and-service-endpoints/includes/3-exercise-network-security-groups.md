@@ -10,7 +10,7 @@ In this unit, you'll configure a network security group and security rules to re
 
 First, you'll create a resource group, the virtual network, and subnets for your server resources. You'll then create a network security group.
 
-1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in. Use the Bash version of Cloud Shell.
 
 1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
@@ -64,7 +64,7 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
         --subnet Applications \
         --nsg ERP-SERVERS-NSG \
         --image UbuntuLTS \
-        --size Standard_B1ls
+        --size Standard_DS1_v2 \
         --admin-username azureuser \
         --custom-data cloud-init.yml \
         --no-wait \
@@ -80,7 +80,7 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
         --vnet-name ERP-servers \
         --subnet Databases \
         --nsg ERP-SERVERS-NSG \
-        --size Standard_B1ls
+        --size Standard_DS1_v2 \
         --image UbuntuLTS \
         --admin-username azureuser \
         --custom-data cloud-init.yml \

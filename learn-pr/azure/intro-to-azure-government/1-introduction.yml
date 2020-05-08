@@ -5,11 +5,10 @@ metadata:
   title: Introduction
   description: Introduction to Azure Government
   ms.date: 10/11/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -6,15 +6,14 @@ metadata:
   description: Review what you've learned
   ms.date: 09/03/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following variables names should be **avoided**."
+  - content: "Which of the following variable names should or must be **avoided**?"
     choices:
     - content: "$DATA"
       isCorrect: true
@@ -50,7 +49,7 @@ quiz:
     - content: "`string x = 12.3d;`"
       isCorrect: false
       explanation: "A `string` can't be set to a literal decimal value."
-    - content: "`decimal x = 12.3d;`"
+    - content: "`decimal x = 12.3m;`"
       isCorrect: true
       explanation: "Correct!"
     - content: "`bool x = 'False';`"

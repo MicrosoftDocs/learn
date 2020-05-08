@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.work-dataframes-columns-azure-databricks
+metadata:
+  title: Work with DataFrames columns in Azure Databricks
+  description: "Work with DataFrames columns in Azure Databricks"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with DataFrames columns in Azure Databricks
+summary: Use the DataFrame Column Class Azure Databricks to apply column-level transformations, such as sorts, filters and aggregations.
+abstract: |
+  In this module, you will:
+  - Learn the syntax for specifying column values for filtering and aggregations
+  - Understand the use of the Column Class
+  - Sort and filter a DataFrame based on Column Values
+  - Use collect() and take() to return records from a Dataframe to the driver of the cluster
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.work-dataframes-columns-azure-databricks.introduction
+- learn.wwl.work-dataframes-columns-azure-databricks.describe-column-class
+- learn.wwl.work-dataframes-columns-azure-databricks.column-expressions
+- learn.wwl.work-dataframes-columns-azure-databricks.exercise-washingtons-marthas
+- learn.wwl.work-dataframes-columns-azure-databricks.knowledge-check
+- learn.wwl.work-dataframes-columns-azure-databricks.summary
+badge:
+  uid: learn.wwl.work-dataframes-columns-azure-databricks.badge

@@ -14,7 +14,7 @@ Fiddler is a third-party tool that's used to help debug applications, in particu
 
 In this unit, you use Fiddler to monitor the connection to the storage account for the healthcare application. When the application detects that consultants are no longer able to download blobs from storage, it starts a failover to the secondary storage account. When it detects that the primary connection is available again, it redirects the connections to the primary location. In Fiddler, you'll see the traffic being directed to the various storage account endpoints.
 
-If you don't have Fiddler installed already, download and install it from the [Telerik Fiddler home page](https://www.telerik.com/fiddler).
+If you don't have Fiddler installed already, download and install it from the [Telerik Fiddler home page](https://www.telerik.com/fiddler?azure-portal=true).
 
 > [!NOTE]
 > Fiddler is available for Windows, Linux, and Mac OS X. This exercise works best if you use the Windows version.
@@ -23,7 +23,7 @@ If you don't have Fiddler installed already, download and install it from the [T
 
 The application code runs locally on your desktop. You require Visual Studio to build the application.
 
-1. If you don't already have Visual Studio 2019 installed, you can download a free version from the [Visual Studio 2019 home page](https://visualstudio.microsoft.com/vs/).
+1. If you don't already have Visual Studio 2019 installed, you can download a free version from the [Visual Studio 2019 home page](https://visualstudio.microsoft.com/vs/?azure-portal=true).
 
 1. Use Git to download the sample code. Open a Git command prompt window, and run the following command to download the circuit breaker sample application to your computer. Replace *\<folder>* with a convenient location on your hard drive:
 
@@ -41,7 +41,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. On the **HTTPS** tab, select **Decrypt HTTPS traffic**. If you're prompted to install additional certificates from Fiddler, accept them, and then close and restart Fiddler.
 
-    ![The Fiddler HTTPS configuration tab in the Options dialog box](../media/5-fiddler-options.png)
+    :::image type="content" source="../media/5-fiddler-options.png" alt-text="The Fiddler HTTPS configuration tab in the Options dialog box." loc-scope="third-party"::: <!--Fiddler, no-loc -->
 
 ## Examine the sample application
 
@@ -254,11 +254,11 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     The application starts by uploading a file to your Azure storage account. The application waits until the file has been replicated to the secondary storage account location, and then it loops, downloading the file repeatedly. The application displays a message containing an iteration number and a prefix that indicates that a file was downloaded from the primary location. For example, it displays *P0* for the first iteration, *P1* for the second iteration, and so on.
 
-    ![The output from the sample application, showing the messages displayed as the data is repeatedly downloaded](../media/5-app-download.png)
+    :::image type="content" source="../media/5-app-download.png" alt-text="The output from the sample application, showing the messages displayed as the data is repeatedly downloaded." loc-scope="other"::: <!-- no-loc -->
 
 1. While the app is running, switch to Fiddler. Fiddler shows the HTTP traffic uploading the file to your storage account and then downloading the data again. The left pane displays a list of requests that are sent to your storage account, similar to the list shown in the following image:
 
-    ![The Fiddler application, showing the traffic sent to your Azure storage account by the sample application](../media/5-fiddler-status.png)
+    :::image type="content" source="../media/5-fiddler-status.png" alt-text="[The Fiddler application, showing the traffic sent to your Azure storage account by the sample application." loc-scope="other"::: <!-- Fiddler, no-loc -->
 
 1. Return to the application window, and press any key to pause it.
 
@@ -280,7 +280,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
    Fiddler displays the HTTP 503 errors that are being generated against the primary location. The application window displays the message *Retrying event because of error reading the primary*. After five retries, the circuit breaker in the application switches to the secondary location and starts reading from it instead. You'll see messages with the "S" prefix (for secondary) rather than "P" (for primary). After the circuit breaker reads from the secondary account for a short period, it attempts to switch back to the primary location. This fails, so the circuit breaker reverts to the secondary location for another period. This process continues until the primary location becomes available again, as shown in the following image:
 
-    ![The output from the sample application, showing the switch from the primary account to the secondary account](../media/5-app-switch.png)
+   :::image type="content" source="../media/5-app-switch.png" alt-text="The output from the sample application, showing the switch from the primary account to the secondary account." loc-scope="other"::: <!-- no-loc -->
 
 1. Press any key to pause the application once again.
 

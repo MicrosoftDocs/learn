@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.hub-and-spoke-network-architecture.5-secure-hub-spoke
+metadata:
+  title: Secure your hub and spoke network
+  description: Secure your hub and spoke network
+  ms.date: 10/21/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure your hub and spoke network
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-secure-hub-spoke.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How do network security groups help you control the flow of traffic in your virtual networks?"
+    choices:
+    - content: "They have strict rules defined to block inbound traffic from the internet, and can't be modified."
+      isCorrect: false
+      explanation: "There are default rules, and one does restrict access to inbound traffic from the internet. However, it can be overridden."
+    - content: "They act like a stateful firewall, monitoring network traffic and enforcing policies you define."  
+      isCorrect: false
+      explanation: "This is how Azure Firewall works, not network security groups."
+    - content: "They allow you to create traffic rules, which can allow or deny traffic over specified ports and protocols."
+      isCorrect: true
+      explanation: "This is the correct definition of a network security group."     
+  - content: "How does using Azure ExpressRoute help improve your security?"
+    choices:
+    - content: "It provides a dedicated, private connection between your on-premises resources and Azure. Extra security is possible by adding network security appliances between edge routers."
+      isCorrect: true
+      explanation: "This is the correct definition of an ExpressRoute connection."
+    - content: "It provides a base layer of security by allowing you to segment and isolate your Azure resources."
+      isCorrect: false
+      explanation: "Segmenting of resources happens when you create virtual networks and have resources assigned to them."
+    - content: "It routes traffic from your network to Azure over the internet."
+      isCorrect: false
+      explanation: "Traffic over an ExpressRoute connection is not routed over the internet. It traverses a private circuit instead."

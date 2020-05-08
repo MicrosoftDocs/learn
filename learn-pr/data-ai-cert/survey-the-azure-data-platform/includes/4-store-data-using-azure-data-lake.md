@@ -6,7 +6,7 @@ Data Lake Storage Gen2 users take advantage of Azure Blob storage, a hierarchica
 
 Data Lake Storage is designed to store massive amounts of data for big-data analytics. For example, Contoso Life Sciences is a cancer research center that analyzes petabytes of genetic data, patient data, and records of related sample data. Data Lake Storage Gen2 reduces computation times, making the research faster and less expensive. 
 
-The compute aspect that sits above this storage can vary. The aspect can include platforms like HDInsight, Hadoop, Cloudera, Azure Databricks, and Hortonworks.
+The compute aspect that sits above this storage can vary. The aspect can include platforms like HDInsight, Hadoop, and Azure Databricks.
 
 ## Key features
 
@@ -30,6 +30,6 @@ In Data Lake Storage Gen1, data engineers query data by using the U-SQL language
 
 ## Data security
 
-Because Data Lake Storage supports Azure Active Directory ACLs, security administrators can control data access by using the familiar Active Directory Security Groups. Role-based access control (RBAC) is available in Gen1. Built-in security groups include ReadOnlyUsers, WriteAccessUsers, and FullAccessUsers. 
+Because Data Lake Storage supports Azure Active Directory ACLs, security administrators can control data access by using the familiar Active Directory Security Groups. Role-based access control (RBAC) is available both in Gen1 and Gen2. Built-in security groups include ReadOnlyUsers, WriteAccessUsers, and FullAccessUsers. 
 
 Enable the firewall to limit traffic to only Azure services. Data Lake Storage automatically encrypts data at rest, protecting data privacy.

@@ -6,15 +6,15 @@ Andy decides that he wants to add a check to the pull request in the form of ano
 
 Andy heads off to find Mara and spots her at her desk working away, her head bobbing to the music in her earbuds.
 
-**Andy**: Mara, I've been meaning to talk to you about something.
+**Andy:** Mara, I've been meaning to talk to you about something.
 
 Mara looks up.
 
-**Mara**: What can I help you with?
+**Mara:** What can I help you with?
 
-**Andy**: Several small mistakes are making it through the build. Just today, a typing error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the `master` branch. We need another pair of eyes on the code before the pull request is approved.
+**Andy:** Several small mistakes are making it through the build. Just today, a typing error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the `master` branch. We need another pair of eyes on the code before the pull request is approved.
 
-**Mara**: I can set that up. In GitHub, there's a way to make sure that no pull request is merged before someone else reviews and approves it.
+**Mara:** I can set that up. In GitHub, there's a way to make sure that no pull request is merged before someone else reviews and approves it.
 
 ## Set up approvals
 
@@ -80,12 +80,13 @@ In this section, you submit a fix to the typing error on the home page. Recall t
 
     ```bash
     git status
-    git add "Tailspin.SpaceGame.Web/Views/Home/Index.cshtml"
+    git add Tailspin.SpaceGame.Web/Views/Home/Index.cshtml
     git commit -m "Fix typing error on the home page"
     ```
 
     In practice, you would ordinarily build and run the site locally to verify the change. In this unit, for the sake of brevity, let's skip that step.
 1. Push the branch to GitHub.
+
     ```bash
     git push origin bugfix/home-page-typo
     ```
@@ -111,36 +112,3 @@ In this section, you submit a fix to the typing error on the home page. Recall t
 
    Your change is merged.
 1. To delete the `bugfix/home-page-typo` branch, select **Delete branch**.
-
-## Revert your master branch to its original state
-
-In future modules, you'll continue working with the Tailspin team and the _Space Game_ website. To limit each module to new concepts only, you'll base your new work on the original `master` branch that came with your fork of the _Space Game_ repository on GitHub.
-
-To ensure that the branches you create later will integrate properly with the `master` branch, reset your GitHub repository's `master` branch to its original state.
-
-> [!WARNING]
-> The process you follow here involves temporarily deleting the branch protection rule that you set up earlier, fetching the `master` branch from the Microsoft repository, and then performing a _force push_ of that branch to your repository.
->
-> Although we ordinarily don't recommend that you force-push changes, you'll do so here to reset the state of your GitHub repository. In practice, there are safer ways to [revert changes through Git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git?azure-portal=true).
-
-To delete the branch protection rule that you set up earlier, do the following:
-
-1. In GitHub, go to your _Space Game_ project repository.
-1. Select the **Settings** tab.
-1. On the menu, select **Branches**.
-1. Under **Branch protection rules**, select the rule named **master** that you set up earlier in this unit.
-1. Select **Edit**.
-1. Clear the **Require pull request reviews before merging** check box.
-1. Select **Save changes**.
-
-   The rule is deleted.
-
-1. In Visual Studio Code, go to the integrated terminal, and then run these commands:
-
-    ```bash
-    git checkout master
-    git reset --hard upstream/master --
-    git push -f origin master
-    ```
-
-1. In your GitHub repository, on the **Settings** tab, re-create the branch protection rule that you set up earlier in this unit.

@@ -1,4 +1,4 @@
-The **AzCopy** command is a command-line utility specially created and optimized for moving data in and out of Azure storage. Using AzCopy, you can bulk-transfer from the local file system on an on-premises computer to the cloud. 
+The **AzCopy** command is a command-line utility specially created and optimized for moving data in and out of Azure storage. Using AzCopy, you can bulk-transfer from the local file system on an on-premises computer to the cloud.
 
 In this unit, you'll learn how to use the AzCopy utility to upload, download, and transfer blob data between storage accounts.
 
@@ -15,19 +15,19 @@ The latest version of AzCopy enables you to take incremental backups of blobs, a
 Use the `AzCopy copy` command to upload data to Azure storage. The simplest form of this command copies a file to a blob. The example below uploads the contents of a file named *myfile.txt* to a blob, also named *myfile.txt*, to the *mycontainer* container in the *myaccount* blob storage account. The storage account and container must already exist.
 
 ```bash
-azcopy copy myfile.txt https://myaccount.blob.core.windows.net/mycontainer/
+azcopy copy "myfile.txt" "https://myaccount.blob.core.windows.net/mycontainer/"
 ```
 
 The AzCopy command requires you are authenticated and authorized to access the storage account. If your organization uses ADFS, you can authenticate by using the `azcopy login` command and signing in. Alternatively, the owner of a storage account can create a Shared Access Signature (SAS) token that provides access to the storage account. The SAS token is time-limited, and can be restricted to only allowing certain operations. You provide the SAS token as a query string to the Azure storage URL when you upload or download data:
 
 ```bash
-azcopy copy myfile.txt https://myaccount.blob.core.windows.net/mycontainer/?<sas token>
+azcopy copy "myfile.txt" "https://myaccount.blob.core.windows.net/mycontainer/?<sas token>"
 ```
 
 You can upload multiple files and complete folder structures with AzCopy. The `--recursive=true` option will walk the folder structure starting at the specified point, and will create a corresponding structure of blobs in your container in Azure storage. You can also specify that only files whose names match a particular pattern are uploaded, by using wildcard pattern matching. This example uploads all files  under the *myfolder* folder and subfolders:
 
 ```bash
-azcopy copy myfolder https://myaccount.blob.core.windows.net/mycontainer/?<sas token> --recursive=true
+azcopy copy "myfolder" "https://myaccount.blob.core.windows.net/mycontainer/?<sas token>" --recursive=true
 ```
 
 ## Monitor and manage jobs
@@ -41,7 +41,7 @@ If an AzCopy transfer is interrupted, it will appear in the jobs list. You can r
 The `AzCopy copy` command can also download data from blob storage. The next example transfers the  data in the blob *myblob* to a local folder named *myblobdata*:
 
 ```bash
-azcopy copy https://myaccount.blob.core.windows.net/mycontainer/myblob?<sas token> myblobdata
+azcopy copy "https://myaccount.blob.core.windows.net/mycontainer/myblob?<sas token>" "myblobdata"
 ```
 
 As with uploads, you can use wildcards to download multiple blobs with matching names, and iterate through the blob container hierarchy with the `--recursive=true` flag.
@@ -51,7 +51,7 @@ As with uploads, you can use wildcards to download multiple blobs with matching 
 The final use of the `AzCopy copy` command is to transfer blobs between storage accounts. This example copies the blobs from *sourcecontainer* in the *sourceaccount* storage account to *destcontainer* in *destaccount*. This example requires two SAS tokens; one for the source account and another for the destination account.
 
 ```bash
-azcopy copy https://sourceaccount.blob.core.windows.net/sourcecontainer/*?<source sas token> https://destaccount.blob.core.windows.net/destcontainer/*?<dest sas token>
+azcopy copy "https://sourceaccount.blob.core.windows.net/sourcecontainer/*?<source sas token>" "https://destaccount.blob.core.windows.net/destcontainer/*?<dest sas token>"
 ```
 
 The `--recursive=true` flag is available if your container has a hierarchical set of blobs.
@@ -65,19 +65,19 @@ Another way to copy blobs between storage accounts is to use the `AzCopy sync` c
 You can view the blobs available in a container with the `AzCopy list` command. The following example displays the blobs in the *sourcecontainer* container:
 
 ```bash
-./azcopy list https://sourceaccount.blob.core.windows.net/sourcecontainer?<sas token>
+./azcopy list "https://sourceaccount.blob.core.windows.net/sourcecontainer?<sas token>"
 ```
 
 You can create a new container in a blob storage account using the `AzCopy make` command, like this:
 
 ```bash
-./azcopy make https://myaccount.blob.core.windows.net/newcontainer?<sas token>
+./azcopy make "https://myaccount.blob.core.windows.net/newcontainer?<sas token>"
 ```
 
 To remove a blob, run the `AzCopy remove` command. You can remove all blobs with names that match a specific pattern with the `--include` flag, and you can walk through a hierarchical container with the `--recursive` flag. The next example removes all blobs with the *txt* suffix from *mycontainer*.
 
 ```bash
-./azcopy remove https://myaccount.blob.core.windows.net/mycontainer?<sas token> --include "*.txt" --recursive=true
+./azcopy remove "https://myaccount.blob.core.windows.net/mycontainer?<sas token>" --include "*.txt" --recursive=true
 ```
 
 ## Configure concurrency

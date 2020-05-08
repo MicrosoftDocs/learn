@@ -30,10 +30,10 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 1. Download the script that creates the virtual machines with the following command:
 
     ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway/ module-files
+    git clone https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway module-files
     ```
 
-1. Run the following commands to create and configure the virtual machines for the web servers. The virtual machines are called `webServer1` and `webServer2`. Each virtual machine runs Ubuntu Server 16.04.0-LTS. An administrative user account is created for each virtual machine, with the login name `azureuser`. Each virtual machine has the vehicle registration web app installed.
+1. Run the following commands to create and configure the virtual machines for the web servers. The virtual machines are called `webServer1` and `webServer2`. Each virtual machine runs Ubuntu Server. An administrative user account is created for each virtual machine, with the login name `azureuser`. Each virtual machine has the vehicle registration web app installed.
 
     The first command runs asynchronously to allow both virtual machines to be created simultaneously.
 
@@ -108,7 +108,6 @@ You've now created the virtual machines running the vehicle registration web app
         --resource-group $rg \
         --name $APPSERVICE \
         --plan vehicleAppServicePlan \
-        --runtime "aspnet|v4.7" \
         --deployment-source-url https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway \
         --deployment-source-branch appService
     ```

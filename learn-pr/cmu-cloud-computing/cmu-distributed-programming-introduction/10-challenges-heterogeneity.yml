@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.10-challenges-heterogeneity
+title: 'Cloud challenges: Heterogeneity'
+metadata:
+  title: 'Cloud challenges: Heterogeneity'
+  description: Learn about heterogeneity challenges in building cloud programs.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/10-challenges-heterogeneity.md)]

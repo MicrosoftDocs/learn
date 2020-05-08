@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-modify-content.exercise-replace-remove
+title: Exercise - Use the Remove() and Replace() methods
+metadata:
+  title: Exercise - Use the Remove() and Replace() methods
+  description: Remove characters and replace characters of a source string
+  ms.date: 11/05/2019
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/3-exercise-replace-remove.md)]

@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.wwl.translate-text-with-translation-service
+metadata:
+  title: Translate text and speech
+  description: "Automated translation capabilities in an AI solution enables closer collaboration by removing language barriers."
+  ms.date: 04/24/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Translate text and speech
+summary: Automated translation capabilities in an AI solution enables closer collaboration by removing language barriers.
+abstract: |
+  After completing this module, you will be able to perform text and speech translation using Azure Cognitive Services.
+prerequisites: |
+  Ability to navigate the Azure portal
+iconUrl: /learn/achievements/translate-text-with-translation-service.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure-cognitive-services
+units:
+- learn.wwl.translate-text-with-translation-service.introduction
+- learn.wwl.translate-text-with-translation-service.get-started-azure
+- learn.wwl.translate-text-with-translation-service.exercise-translate-text-use-azure
+- learn.wwl.translate-text-with-translation-service.summary
+badge:
+  uid: learn.wwl.translate-text-with-translation-service.badge

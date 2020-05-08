@@ -1,21 +1,22 @@
 ### YamlMime:Module
-uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1
 metadata:
   title: Microsoft Cloud Adoption Framework for Azure
-  description: This module covers the basics of how to use the Cloud Adoption Framework for Azure, which is a set of documentation, implementation guidance, best practices, and tools. The Cloud Adoption Framework aids in aligning the strategy for business, people, and technology to enable the desired business outcomes that guide the cloud journey. We describe how to identify opportunities and develop a strategy based on real-world examples of cloud adoption.
-  ms.date: 6/11/2019
-  author: dragosapostu
+  description: Learn how to use the Cloud Adoption Framework to develop best practices for cloud adoption in real-world scenarios.
+  ms.date: 11/13/2019
+  author: wwlpublish
   ms.author: a-drapos
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Microsoft Cloud Adoption Framework for Azure
-summary: This module covers the basics of how to use the Cloud Adoption Framework for Azure, which is a set of documentation, implementation guidance, best practices, and tools. The Cloud Adoption Framework aids in aligning the strategy for business, people, and technology to enable the desired business outcomes that guide the cloud journey. We describe how to identify opportunities and develop a strategy based on real-world examples of cloud adoption.
+summary: This module covers the basics of how to use the Cloud Adoption Framework—a set of documentation, implementation guidance, best practices, and tools that aid in aligning the strategy for business, people, and technology.
 abstract: |
   In this module, you will:
-  - Learn how to use the Cloud Adoption Framework to identify where your organization is in the digital transformation journey.
+  - Learn how to leverage the Cloud Adoption Framework to identify where your organization is in the digital transformation journey.
   - Identify triggers and opportunities for cloud adoption.
   - Recognize the components needed to develop a digital transformation strategy around your business, people, and technology.
-prerequisites: none
+prerequisites: |
+  None
 iconUrl: /learn/achievements/microsoft-cloud-adoption-framework-for-azure.svg
 levels:
 - beginner
@@ -24,15 +25,14 @@ roles:
 products:
 - azure
 units:
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure.1-introduction
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure.2-cloud-adoption-framework-overview
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure.3-motivations
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure.4-strategy
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure.5-plan
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure.6-ready
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure.7-adopt
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure.8-operate
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure.9-knowledge-check
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure.10-summary-and-resources
-badge: 
-  uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.badge
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.1-introduction
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.2-cloud-adoption-framework-overview
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.3-motivations
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.4-strategy
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.5-plan
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.6-ready
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.7-adopt
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.8-operate
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.9-knowledge-check
+badge:
+  uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.badge

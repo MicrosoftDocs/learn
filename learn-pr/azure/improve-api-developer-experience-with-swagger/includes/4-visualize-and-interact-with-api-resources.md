@@ -2,13 +2,13 @@ The Swagger UI allows you to interact and visualize an API's resources without r
 
 The Swagger UI visualizes operations and methods clearly, as shown in the image below.
 
-![Operations of API in Swagger UI](../media/Swagger_UI.png)
+:::image type="content" source="../media/Swagger_UI.png" alt-text="Operations of API in Swagger UI." loc-scope="third-party"::: <!-- Swagger, no-loc -->
 
 The Swagger also UI allows you to interact and even try out each operation.
 
-![Interaction with API Operation in Swagger UI](../media/Swagger_UI_interact.png)
+:::image type="content" source="../media/Swagger_UI_interact.png" alt-text="Interaction with API Operation in Swagger UI." loc-scope="third-party":::
 
-Automatically creating your API documentation with Swagger and Swashbuckle can really help third parties to understand your API’s resources. But what if you wanted to go a little further and provide even more detailed information? If you're using an API for the first time, you want as much information as possible.
+Automatically creating your API documentation with Swagger and Swashbuckle can really help third parties to understand your API's resources. But what if you wanted to go a little further and provide even more detailed information? If you're using an API for the first time, you want as much information as possible.
 
 ## XML comments
 
@@ -39,9 +39,9 @@ Here's the XML nodes in use:
 - param: A parameter to the method, and what it represents.
 - returns: A description of what the method returns.
 
-Swagger will automatically include your XML documentation comments in the API documentation, and allow you to view it in Swagger UI. 
+Swagger will automatically include your XML documentation comments in the API documentation, and allow you to view it in Swagger UI.
 
-![Image showing Swagger UI and added XML Comments](../media/Swagger_UI_XML.png) 
+:::image type="content" source="../media/Swagger_UI_XML.png" alt-text="Image showing Swagger UI and added XML Comments." loc-scope="third-party":::
 
 ## Data annotations
 
@@ -55,4 +55,4 @@ For example, if you add the following annotation to a controller:
 
 ... you'll see the added information in Swagger UI!
 
-![Image showing Swagger UI with added content type added to annotations](../media/Swagger_UI_annotations.png)
+:::image type="content" source="../media/Swagger_UI_annotations.png" alt-text="Image showing Swagger UI with added content type added to annotations." loc-scope="third-party":::

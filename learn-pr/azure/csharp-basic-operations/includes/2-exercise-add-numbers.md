@@ -4,7 +4,7 @@ Often we'll want to perform mathematical operations on numeric data.  We'll star
 
 To add two numbers together, we'll use the *addition operator*, which is the plus symbol `+`.  Yes, the same plus symbol `+` that you use for string concatenation is also used for addition.  The reuse of one symbol for multiple purposes is sometimes called "overloading the operator" and happens frequently in C#.
 
-In this instance, the C# compiler understands what you're attempting to do.  The compiler parses your code and sees that the `+` symbol is surrounded by two operands that are both numeric values.  It deduces that you intended to add those two values.
+In this instance, the C# compiler understands what you're attempting to do.  The compiler parses your code and sees that the `+` (the operator) is surrounded by two numeric values (the operands).  Given the data types of the variables (both are `int`s) it  figures out that you intended to add those two values.
 
 Delete the code from the previous exercise in the .NET Editor and add the following code:
 
@@ -45,7 +45,7 @@ In this case, the C# compiler understands that we want to use the `+` symbol to 
 
 ### Step 3: Attempt a more advanced case of adding numbers and concatenating strings.
 
-Modify the code ion the .NET Editor to match the following code:
+Modify the code in the .NET Editor to match the following code:
 
 ```csharp-interactive
 string firstName = "Bob";

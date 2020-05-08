@@ -6,19 +6,18 @@ metadata:
   description: Review what you've learned.
   ms.date: 09/24/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
   - content: "You want to compare two strings ignoring their case.  Which string helper method do you use?"
     choices:
-    - content: "`Compare()`"
+    - content: "`Trim()`"
       isCorrect: false
-      explanation: "The `Compare()` method won't ignore case."
+      explanation: "The `Trim()` method won't help you to ignore case when comparing strings."
     - content: "`Lower()`"
       isCorrect: false
       explanation: "`Lower()` isn't a method of the string class."

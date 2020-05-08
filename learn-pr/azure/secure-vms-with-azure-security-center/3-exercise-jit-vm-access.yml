@@ -5,12 +5,11 @@ metadata:
   title: Exercise - enable JIT VM access
   description: Exercise - enable JIT VM access
   ms.date: 09/30/2019
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 10
-interactive: bash
 content: |
   [!include[](includes/3-exercise-jit-vm-access.md)]

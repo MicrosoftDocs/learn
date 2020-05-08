@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-receipts-form-recognizer.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to invoice and receipt processing"
+  ms.date: 04/24/2020
+  author: benjiang
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

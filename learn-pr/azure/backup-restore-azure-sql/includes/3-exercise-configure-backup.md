@@ -44,7 +44,7 @@ Let's use the Azure CLI to create a SQL Database server and a database.
 
 In the portal, you can examine the default retention policy and adapt it to your needs.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select the **ERPServer-NNNN** database server that you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **ERPServer-NNNN** database server that you created.
 
 1. On the left in the **Settings** section, select **Manage Backups**.
 
@@ -52,7 +52,7 @@ In the portal, you can examine the default retention policy and adapt it to your
 
 1. In the **Point In Time Restore Configuration** drop-down list, select **28**.
 
-    ![Screenshot of the Azure portal, showing the database restore options for point-in-time restore](../media/3-configure-backup-pitr-retention.png)
+    ![Screenshot of the Azure portal, showing the database restore options for point-in-time restore.](../media/3-configure-backup-pitr-retention.png)
 
 1. Select **Apply**, and then select **Yes**.
 
@@ -66,7 +66,7 @@ By default, Azure SQL Database blocks network access to the server. Let's enable
 
 1. Under **Allow access to Azure services**, select **ON**.
 
-    ![Add a client IP address rule](../media/3-add-client-ip.png)
+    ![Screenshot of Add a client IP address rule with a callout highlighting Allow access to Azure services option and the Save button.](../media/3-add-client-ip.png)
 
 1. Select **Save**. When the rule is saved, select **OK**.
 
@@ -90,7 +90,7 @@ Now let's add a table and a sample record to the database. It's helpful to have 
     )
     ```
 
-    ![Create a new table in the sql-erp-db database](../media/3-create-table.png)
+    ![Screenshot of the query editor with T-SQL to create a new table in the sql-erp-db database. A callout highlights the run button.](../media/3-create-table.png)
 
 1. To add a record, select **+ New Query**. In the **Query 2** window, enter this SQL command, and then select **Run**.
 
@@ -99,7 +99,7 @@ Now let's add a table and a sample record to the database. It's helpful to have 
     VALUES ('Lucas', 'Ball', '1987-11-03');
     ```
 
-    ![Insert a record into the sql-erp-db database](../media/3-insert-record.png)
+    ![Screenshot of the query editor with T-SQL to insert a record into the Person table of the sql-erp-db database. A callout highlights the run button.](../media/3-insert-record.png)
 
 1. To query the database, select **+ New Query**. In the **Query 3** window, enter this SQL command, and then select **Run**.
 
@@ -109,6 +109,6 @@ Now let's add a table and a sample record to the database. It's helpful to have 
 
     The **Results** window displays the record for Lucas Ball.
 
-    ![Query the person table in the sql-erp-db database](../media/3-query-person-table.png)
+    ![Screenshot of the query editor with T-SQL to query the person table in the sql-erp-db database. A callout highlights the run button.](../media/3-query-person-table.png)
 
 You now have an Azure SQL database that's populated with data. And you've set up a retention policy to ensure that you have 4 weeks of backups immediately available for restore.
