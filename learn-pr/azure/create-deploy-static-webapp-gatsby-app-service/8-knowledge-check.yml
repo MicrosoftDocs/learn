@@ -51,7 +51,7 @@ quiz:
           isCorrect: false
         - content: "Use the function `useData()` and pass it your query as a parameter. It will return an object with a property `data` that contains your GraphQL response."
           isCorrect: false
-    - content: "What pre-steps would you need to take to deploy a Gatsby app using the Azure Static Web Apps ervice?"
+    - content: "What pre-steps would you need to take to deploy a Gatsby app using the Azure Static Web Apps service?"
       choices:
         - content: "Initialize a Git repo, build the project, and push it to GitHub"
           isCorrect: false
