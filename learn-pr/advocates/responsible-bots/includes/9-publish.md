@@ -25,7 +25,7 @@ To provide all required parameters for our bot:
 
    ![A screenshot that shows the bot management Configuration pane and existing settings in the Azure portal](../media/azure-bot-configuration.png)
 
-1. Select **New Application Setting**.
+1. Select **New application setting**.
 1. Enter all the settings from the *appsettings.json* file that are missing. The specific settings to add are **LuisAppId**, **LuisAPIKey**, **LuisEndpointUrl**, **QnAKbId**, **QnAEndpointKey**, and **QnAHostname**.
 
    Alternatively, you can select **Advanced edit** on the **Configuration** pane and edit the JSON file directly. The format of this JSON file is different than the format in *appsettings.json*. If you add the settings by using the alternative method, you'll need to do some manual conversion.
