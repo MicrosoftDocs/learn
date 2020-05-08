@@ -28,7 +28,7 @@ To set up Dictation and get started using it:
 2. To stop dictating, simply say "Stop dictation."
 3. If using a tablet or a touchscreen, tap the microphone button on the touch keyboard to start dictating. Tap the button again to stop dictation, or say "Stop dictation."
 
-:::image type="content" source="../media/DictationToolbar.png" alt-text="Dictation toolbar showing the \"Listening\...\" prompt":::
+:::image type="content" source="../media/DictationToolbar.png" alt-text="Dictation toolbar showing the Listening prompt":::
 
 Here are a few commands you can speak as well: 
 - **New line:** Takes cursor to new line 
