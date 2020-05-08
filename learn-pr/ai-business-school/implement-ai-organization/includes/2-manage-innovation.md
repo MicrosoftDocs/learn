@@ -58,4 +58,4 @@ At Microsoft, we've recognized six principles that we believe should guide AI de
 
 For more information about our approach to responsible AI, please see the module "Identify guiding principles for responsible AI."
 
-Next, let's discuss how to evaluate and prioritize the AI investments that are right for your business.
+Up next, we’ll hear from Rimes Mortimer, Innovation Lead at Microsoft Applied Innovation, as he shares crucial insights for business leaders who are looking to cultivate and encourage innovation in their organization.
