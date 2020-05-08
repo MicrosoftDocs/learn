@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.quantum.get-started-qdk
 metadata:
-  title: Write your first program by using the Quantum Development Kit
-  description: Use the Quantum Development Kit and combine quantum and classical programs to create a quantum random number generator.
+  title: Write your first Q# program by using the Quantum Development Kit
+  description: Get started with Q# programming by building a quantum random number generator.
   ms.date: 04/14/2020
   author: geduardo
   ms.author: kitty
   ms.topic: tutorial
   ms.prod: learning-quantum
-title: Write your first program by using the Quantum Development Kit
-summary: Use the Quantum Development Kit and combine quantum and classical programs to create a quantum random number generator.
+title: Write your first Q# program by using the Quantum Development Kit
+summary: Get started with Q# programming by building a quantum random number generator.
 abstract: |
   In this module you will:
   - Prepare your development environment for writing quantum programs in Q#.
@@ -27,8 +27,8 @@ roles:
 #- computer-scientist
 #- student
 products:
-- azure # TODO: Get product taxonomy
-#- Quantum Development Kit
+- qdk
+- azure-quantum
 units:
 - learn.quantum.get-started-qdk.1-introduction
 - learn.quantum.get-started-qdk.2-install-qdk-code
