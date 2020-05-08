@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.qsharp-create-first-qdk.2-install-qdk-code
+title: Exercise - Install the QDK for Visual Studio Code
+metadata:
+  title: Exercise - Install the QDK for Visual Studio Code
+  description: Prepare your development environment for writing quantum programs by using the Quantum Development Kit.
+  ms.date: 05/19/2020
+  author: gillenhaalb
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-install-qdk-code.md)]

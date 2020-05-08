@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.quantum.qsharp-create-first-qdk
+metadata:
+  title: Create your first Q# program by using the Quantum Development Kit
+  description: Get started with Q# programming by building a quantum random number generator.
+  ms.date: 04/14/2020
+  author: geduardo
+  ms.author: kitty
+  ms.topic: tutorial
+  ms.prod: learning-quantum
+title: Create your first Q# program by using the Quantum Development Kit
+summary: Get started with Q# programming by building a quantum random number generator.
+abstract: |
+  In this module you will:
+  - Prepare your development environment for writing quantum programs in Q#.
+  - Understand how Q# programs are structured.
+  - Work with qubits and superposition to build a quantum random number generator.
+  - Learn how Azure Quantum enables you to run your programs on real quantum hardware.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+#- scientist
+#- quantum-engineer
+#- computer-scientist
+#- student
+products:
+- qdk
+- azure-quantum
+units:
+- learn.quantum.qsharp-create-first-qdk.1-introduction
+- learn.quantum.qsharp-create-first-qdk.2-install-qdk-code
+- learn.quantum.qsharp-create-first-qdk.3-qsharp-structure
+- learn.quantum.qsharp-create-first-qdk.4-random-bit-generator
+- learn.quantum.qsharp-create-first-qdk.5-random-number-generator
+- learn.quantum.qsharp-create-first-qdk.6-what-is-azure-quantum
+- learn.quantum.qsharp-create-first-qdk.7-summary
+badge:
+  uid: learn.quantum.qsharp-create-first-qdk.badge

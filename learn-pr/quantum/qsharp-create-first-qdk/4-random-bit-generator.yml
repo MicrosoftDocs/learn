@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.get-started-qdk.4-create-quantum-random-bit-generator
+uid: learn.quantum.qsharp-create-first-qdk.4-random-bit-generator
 title: Exercise - Create a quantum random bit generator
 metadata:
   title: Exercise - Create a quantum random bit generator
   description: Tutorial for how to create a quantum random bit generator using the QDK.
   ms.date: 05/19/2020
   author: geduardo
-  ms.author: v-edsanc
+  ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  show_latex: true
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-create-quantum-random-bit-generator.md)]
+  [!include[](includes/4-random-bit-generator.md)]

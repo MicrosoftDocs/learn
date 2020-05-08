@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.get-started-qdk.1-introduction
+uid: learn.quantum.qsharp-create-first-qdk.1-introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction
   ms.date: 05/19/2020
   author: geduardo
-  ms.author: v-edsanc
+  ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
