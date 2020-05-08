@@ -73,9 +73,9 @@ The `for` loop inside `repeat` works exactly the same as a `for` loop in other p
 
 The `let` directive declares variables that don't change during the computation. The `mutable` directive declares variables that can change during the computation. You use the `set` directive to change the value of a `mutable` variable.
 
-The [`Floor`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.math.floor), [`Log`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.math.log), and [`LogOf2`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.math.logof2) functions come from the `Microsoft.Quantum.Math` library.
+The [Floor](/qsharp/api/qsharp/microsoft.quantum.math.floor?azure-portal=true), [Log](/qsharp/api/qsharp/microsoft.quantum.math.log?azure-portal=true), and [LogOf2](/qsharp/api/qsharp/microsoft.quantum.math.logof2?azure-portal=true) functions come from the `Microsoft.Quantum.Math` library.
 
-The [`IntAsDouble`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.convert.intasdouble) and [`ResultArrayAsInt`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasint) functions come from the `Microsoft.Quantum.Convert` library.
+The [IntAsDouble](/qsharp/api/qsharp/microsoft.quantum.convert.intasdouble?azure-portal=true) and [ResultArrayAsInt](/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasint?azure-portal=true) functions come from the `Microsoft.Quantum.Convert` library.
 
 The `ResultArrayAsInt` function transforms the resulting bit string to an integer (`Int`) value.
 
