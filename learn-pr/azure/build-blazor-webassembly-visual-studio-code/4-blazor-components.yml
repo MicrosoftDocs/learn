@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-web-app-blazor-webassembly-vscode.4-blazor-components
-title: Blazor Components
+title: Blazor components
 metadata:
-  title: Blazor Components
+  title: Blazor components
   description: Build your first WebAssembly app with Blazor, Visual Studio Code, and C#.
   ms.date: 05/07/2020
   author: adrianstevens

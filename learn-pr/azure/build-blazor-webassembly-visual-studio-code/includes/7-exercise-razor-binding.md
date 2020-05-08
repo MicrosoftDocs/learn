@@ -35,7 +35,7 @@ Within the `@code` markup, add the following method to calculate compound intere
 
 ## Add binding to the input fields
 
-We're now ready to bind the variables we defined in the `@code` markup to our HTML input fields. Use the `@bind markup on each input field using the appropriate variable.
+We're now ready to bind the variables we defined in the `@code` markup to our HTML input fields. Use the `@bind` markup on each input field using the appropriate variable.
 
     ```cshtml
     <tr>
