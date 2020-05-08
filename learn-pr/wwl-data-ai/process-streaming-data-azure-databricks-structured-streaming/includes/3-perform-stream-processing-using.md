@@ -98,9 +98,9 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
- ```
-  https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/10-Structured-Streaming.dbc?raw=true
- ```
+    ```
+    https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/10-Structured-Streaming.dbc?raw=true
+    ```
 
 5. Select **Import**.
 6. Select the **10-Structured-Streaming** folder that appears.
