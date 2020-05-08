@@ -4,10 +4,10 @@ Your Alpine Ski House web app is up and running, but now you need to show it to 
 
 ### Replace the boilerplate code
 
-1. In the **Pages** folder, open the **About.cshtml** file.
+1. In the **Pages** folder, open the **Privacy.cshtml** file.
 
 1. At the bottom of the code, locate 
-    `<p> Use this area to provide additional information. </p>`.
+    `<p>Use this page to detail your site's privacy policy.</p>`.
 
 1. Replace this boilerplate text with
     `<p>Welcome to the Alpine Ski House!</p>`.
@@ -25,12 +25,12 @@ Your Alpine Ski House web app is up and running, but now you need to show it to 
 
 1. In Solution Explorer, right-click the project.
 
-1. Select **Publish...**. This should open a new tab named **AplineSkiHouse**.
+1. Select **Publish**. This should open a new tab named **AlpineSkiHouse**.
 
 1. Select the **Publish** button to deploy the latest changes.
 
 ### View your changes
 
-Once you've published your changes, Visual Studio will open the site in your browser. You should now see your new message on the home page.
+Once you've published your changes, Visual Studio will open the site in your browser. You should now see your new messages on the home and privacy pages.
 
 Congratulations, you have successfully updated your web app from within Visual Studio 2019.
