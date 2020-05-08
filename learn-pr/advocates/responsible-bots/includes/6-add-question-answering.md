@@ -2,14 +2,14 @@ Our bot can now handle a few specific requests, but it would be nice to give the
 
 ## Train your QnA Maker model
 
-As we did with LUIS, when we add the QnA Maker service to our bot, the first thing we do is train the service by using our specific data. To begin training QnA Maker, go to [https://qnamaker.ai](https://qnamaker.ai) and sign in by using your Microsoft account.
+As we did with LUIS, when we add the QnA Maker service to our bot, the first thing we do is train the service by using our specific data. To begin training QnA Maker, go to [https://qnamaker.ai](https://qnamaker.ai?azure-portal=true) and sign in by using your Microsoft account.
 
 Our first step is to create a new knowledge base. Select **Create a new knowledge base** in the top menu.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the QnA Maker My knowledge bases pane, with the Create a new knowledge base link in the top menu selected.](../media/qna-maker-create-knowledge-base.png)
 
-For **step 1**, select the **Create a QnA service** button. A new browser window opens in the Azure portal. 
+For **step 1**, select the **Create a QnA service** button. A new browser window opens in the Azure portal.
 
 In the portal, select or enter the following information for the new QnA Maker service:
 
@@ -63,7 +63,7 @@ Select **Create**. The knowledge base editing page opens.
 
 In the **Knowledge base** pane, you can see a chit-chat knowledge base that's prepopulated by using information from the *qna_chitchat_Enthusiastic.tsv* file. In the UI, you can edit all questions and answers. You can even provide a question (or a set of possible questions) and a corresponding answer.
 
-Let's add some geography terminology to this knowledge base. In the task bar, select **+**: 
+Let's add some geography terminology to this knowledge base. In the task bar, select **+**:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the QnA Maker knowledge base editor, showing how to edit questions and answers, with the plus button highlighted.](../media/qna-maker-add-knowledge-base-host.png)
@@ -94,10 +94,10 @@ In our case, we already have a working bot; we just want to add QnA Maker functi
 
 In the final pane, after publishing your QnA Maker model, QnA Maker displayed these details of the deployed service:
 
-```
-POST /knowledgebases/b36405a5-3858-43d2-b41f-7fb4fd4db81d/generateAnswer
-Host: https://myquestionservice.azurewebsites.net/qnamaker
-Authorization: EndpointKey a10aa460-2bf4-4be9-804c-82a7f8b3f4c8
+```output
+POST /knowledgebases/<knowledge_base_id>/generateAnswer
+Host: https://<your_service_name>.azurewebsites.net/qnamaker
+Authorization: EndpointKey <endpoint_key>
 Content-Type: application/json
 {"question":"<Your question>"}
 ```
@@ -112,13 +112,13 @@ You add this information to the *appSettings.json* file. Anywhere in that file, 
 
 ```json
 "QnAKbId": "<your knowledge base id>",
-"QnAEndpointKey": "<your qna maker subscription key>",
+"QnAEndpointKey": "<your qna maker endpoint key>",
 "QnAHostname": "<your qna maker url>"
 ```
 
 Next, we need to make some changes to the application code:
 
-1. In the bot project in Visual Studio, use NuGet to add `Microsoft.Bot.Builder.AI.QnA` to the project.
+1. In the bot project in Visual Studio, use NuGet to add `Microsoft.Bot.Builder.AI.QnA` to the project, similar to how we added LUIS in the previous unit.
 1. Open `Startup.cs`, locate the `ConfigureServices` function, and then insert the following code below the code that adds the LUIS recognizer:
 
    ```csharp
@@ -206,4 +206,4 @@ Next, we'll add some final touches that implement responsible conversational UI 
 
 [QAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/
 [ProjectPersonalityChat]: https://www.microsoft.com/research/project/personality-chat/
-[CodeQnA]: https://github.com/MicrosoftDocs/mslearn-responsible-bots/blob/t3-qna/src/Bots/EchoBot.cs
+[CodeQnA]: https://github.com/MicrosoftDocs/mslearn-responsible-bots/blob/t3-qna/src/Bots/EchoBot.cs?azure-portal=true

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.responsible-bots.7-more-responsible-ui
-title: Implement a more responsible UI
+title: Exercise - Implement a more responsible bot
 metadata:
-  title: Implement a more responsible UI
-  description: Learn how to implement a more responsible UI.
+  title: Exercise - Implement a more responsible bot
+  description: Learn how to implement a more responsible UI for your bot.
   ms.date: 05/19/2020
   author: shwars
   ms.author: dmitryso
