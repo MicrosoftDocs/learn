@@ -320,7 +320,6 @@
             "feedback_github_repo": "MicrosoftDocs/learn",
             "clicktale": true,
             "uhfHeaderId": "MSDocsHeader-Learn",
-            "show_latex": true
         },
         "fileMetadata": {
             "sandbox-disabled": {},
