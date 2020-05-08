@@ -1,4 +1,4 @@
-Before we start to build our **GeoFriend** bot, let's quickly review the basics of what bots do.
+Before we start to build our **GeoFriend** bot, let's quickly review the basics of how bots work.
 
 ## Review basic bot operations
 

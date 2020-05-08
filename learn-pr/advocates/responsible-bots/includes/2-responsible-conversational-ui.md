@@ -45,7 +45,7 @@ Now that we know some of the main principles for building responsible bots, let'
 <!-- Links -->
 
 [Guidelines10]: https://www.microsoft.com/research/publication/responsible-bots/
-[InteractiveDemo]: https://aidemos.microsoft.com/responsible-conversational-ai/building-a-trustworthy-bot
+[InteractiveDemo]: https://aidemos.microsoft.com/responsible-conversational-ai/building-a-trustworthy-bot?azure-portal=true
 [PersonalityChat]: https://www.microsoft.com/research/project/personality-chat/
 [RespAI]: https://www.microsoft.com/ai/responsible-ai
 [TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/
