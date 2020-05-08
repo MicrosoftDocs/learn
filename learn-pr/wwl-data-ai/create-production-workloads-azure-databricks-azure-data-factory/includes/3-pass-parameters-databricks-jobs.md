@@ -10,9 +10,9 @@ Before finishing the Notebook activity in your new Data Factory pipeline, you ne
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
-  ```
-  https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/12-Production-Workloads-with-Azure-Data-Factory.dbc?raw=true
-  ```
+    ```
+    https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/12-Production-Workloads-with-Azure-Data-Factory.dbc?raw=true
+    ```
 
 5. Select **Import**.
 6. Select the **12-Production-Workloads-with-Azure-Data-Factory** folder that appears.
