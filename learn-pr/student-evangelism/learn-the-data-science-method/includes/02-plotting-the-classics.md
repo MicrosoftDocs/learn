@@ -646,10 +646,10 @@ period.
 
 Indeed, it appears from looking at the plot that on average both books
 tend to have somewhere between 100 and 150 characters between periods,
-as a very rough estimate. Perhaps these two great 19th century novels
-were signaling something so very familiar to us now: the 140-character
+as a rough estimate. Perhaps these two great 19th century novels
+were signaling something so familiar to us now: the 140-character
 limit of Twitter.
-o very familiar to us now: the 140-character
+o familiar to us now: the 140-character
 limit of Twitter.
 ry familiar to us now: the 140-character
 limit of Twitter.

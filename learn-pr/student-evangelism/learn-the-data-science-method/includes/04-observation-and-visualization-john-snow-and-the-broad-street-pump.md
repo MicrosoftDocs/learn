@@ -22,7 +22,7 @@ Snow's brilliance lay in identifying two groups that would make his
 comparison clear. He had set out to establish a causal relation between
 contaminated water and cholera infection, and to a great extent he
 succeeded, even though the miasmatists ignored and even ridiculed him.
-Of course, Snow did not understand the detailed mechanism by which
+Snow did not understand the detailed mechanism by which
 humans contract cholera. That discovery was made in 1883, when the
 German scientist Robert Koch isolated the *Vibrio cholerae*, the
 bacterium that enters the human small intestine and causes cholera.
@@ -83,7 +83,7 @@ within a day or two of contracting it, hundreds could die in a week, and
 the total death toll in a single wave could reach tens of thousands.
 Snow was skeptical of the miasma theory. He had noticed that while
 entire households were wiped out by cholera, the people in neighboring
-houses sometimes remained completely unaffected. As they were breathing
+houses sometimes remained unaffected. As they were breathing
 the same air---and miasmas---as their neighbors, there was no compelling
 association between bad smells and the incidence of cholera.
 
@@ -112,7 +112,7 @@ deaths in houses that were nearer the Rupert Street pump than the Broad
 Street pump. Though the Rupert Street pump was closer as the crow flies,
 it was less convenient to get to because of dead ends and the layout of
 the streets. The residents in those houses used the Broad Street pump
-instead. - There were no deaths in two blocks just east of the pump.
+instead. - There were no deaths in two blocks east of the pump.
 That was the location of the Lion Brewery, where the workers drank what
 they brewed. If they wanted water, the brewery had its own well. - There
 were scattered deaths in houses several blocks away from the Broad
@@ -121,7 +121,7 @@ their way to school. The pump's water was known to be cool and
 refreshing.
 
 The final piece of evidence in support of Snow's theory was provided by
-two isolated deaths in the leafy and genteel Hampstead area, quite far
+two isolated deaths in the leafy and genteel Hampstead area, far
 from Soho. Snow was puzzled by these until he learned that the deceased
 were Mrs. Susannah Eley, who had once lived in Broad Street, and her
 niece. Mrs. Eley had water from the Broad Street pump delivered to her
@@ -203,5 +203,5 @@ summarized his data in the table below.
 | Rest of London | 256,423         | 1,422          | 59                       |
 
 The numbers pointed accusingly at S&V. The death rate from cholera in
-the S&V houses was almost ten times the rate in the houses supplied by
+the S&V houses was almost 10 times the rate in the houses supplied by
 Lambeth.
