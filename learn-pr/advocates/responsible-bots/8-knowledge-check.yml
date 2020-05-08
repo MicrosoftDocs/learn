@@ -16,7 +16,7 @@ quiz:
   questions: 
   - content: "Why does a developer need to know the principles of responsible conversational UI?"
     choices:
-    - content: "Because developers are responsible for the bots, they deploy"
+    - content: "Because developers are responsible for the bots, they deploy."
       isCorrect: true
       explanation: "Correct. Developers should take the responsibility for the code they writes."
     - content: "To make more diverse bots."
