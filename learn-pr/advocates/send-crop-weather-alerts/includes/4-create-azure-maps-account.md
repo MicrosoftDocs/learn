@@ -15,7 +15,7 @@ Before you can use the two Azure Maps APIs for geocoding and weather forecasting
 
 ## Get the primary key
 
-Azure Maps accounts are secured by either an Azure Active Directory instance or a primary key. You get the key by using the Azure CLI. Later in this module, you'll use the key to give an Azure functions application access to your Azure Maps account. 
+Azure Maps accounts are secured by either an Azure Active Directory instance or a primary key. You get the key by using the Azure CLI. Later in this module, you'll use the key to give an Azure function app access to your Azure Maps account. 
 
 1. To view the keys list and get the primary key, run this command:
 
