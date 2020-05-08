@@ -1,6 +1,6 @@
 Commonly, companies building web applications hire developers for a variety of roles: some developers create the backend server-side logic, and others may build client-side web app. Often, these developers use different development languages and technologies.
 
-C# & .NET is a popular choice for building server-side logic but client-side apps are often built using web UI frameworks, commonly using JavaScript. Using multiple languages and tool sets requires multiple skill sets, and often requires hiring two separate teams. As well, code to transfer and represent data needs to be built in both languages and kept in sync.
+C# & .NET is a popular choice for building server-side logic but client-side apps are often built using web UI frameworks, commonly using JavaScript. Using multiple languages and tool sets requires multiple skillsets, and often requires hiring two separate teams. As well, code to transfer and represent data needs to be built in both languages and kept in sync.
 
 We'll start with an introduction to Blazor and then explore Blazor WebAssembly.
 
@@ -39,6 +39,6 @@ Blazor WebAssembly requires a modern desktop or mobile browser. The following br
 
 ## Blazor WebAssembly development requirements
 
-Blazor WebAssembly applications can be built using Visual Studio 2019, Visual Studio for Mac or Visual Studio Code. You'll need the lastest version installed regardless of the IDE you choose. In this module, we'll be focusing on Visual Studio code.
+Blazor WebAssembly applications can be built using Visual Studio 2019, Visual Studio for Mac or Visual Studio Code. You'll need the latest version installed regardless of the IDE you choose. In this module, we'll be focusing on Visual Studio code.
 
 Regardless of your development environment, you'll need to install the .NET Core 3.1 SDK. With the SDK installed, you'll be able to download the Blazor WebAssembly templates. You'll install all of the requirements to build Blazor WebAssembly app with Visual Studio Code in the next exercise.
