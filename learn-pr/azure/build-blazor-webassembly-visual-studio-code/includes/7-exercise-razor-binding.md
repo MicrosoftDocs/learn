@@ -4,11 +4,20 @@ In this exercise, we'll add our C# logic to our compound interest razor componen
 
 1. Open **CompoundInterest.razor**
 
-1. Below the table definition, add a `code` markup with open and closing braces
+1. Below the table definition, add a `@code` markup with open and closing braces
+
+    ```cshtml
+    @code
+    {
+  
+    }
+    ```
 
 ## Add member variables for compound interest calculation
 
-We'll add several C# variables to store input values from the user. Add the following within the `code` markup
+We'll add several C# variables to store input values from the user. 
+
+1. Add the following within the `@code` markup 
 
     ```cshtml
     @code
@@ -23,7 +32,7 @@ We'll add several C# variables to store input values from the user. Add the foll
 
 ## Add calculation logic 
 
-Within the `code` markup, add the following method to calculate compound interest:
+1. Within the `@code` markup, add the following method to calculate compound interest:
 
     ```cshtml
     private void Calculate()
@@ -35,7 +44,9 @@ Within the `code` markup, add the following method to calculate compound interes
 
 ## Add binding to the input fields
 
-We're now ready to bind the variables we defined in the `code` markup to our HTML input fields. Use the `bind` markup on each input field using the appropriate variable.
+We're now ready to bind the variables we defined in the `code` markup to our HTML input fields. 
+
+1. Use the `bind` markup on each input field using the appropriate variable.
 
     ```cshtml
     <tr>
@@ -56,7 +67,7 @@ We're now ready to bind the variables we defined in the `code` markup to our HTM
     </tr>
     ```
 
-Finally, we bind the Calculate button using the `onclick` event handler.
+1. Finally, we bind the Calculate button using the `onclick` event handler.
 
     ```cshtml
     <button class="btn btn-primary" @onclick="Calculate">Calculate</button>
@@ -72,4 +83,4 @@ Finally, we bind the Calculate button using the `onclick` event handler.
 
 Congratulations, you successfully created a razor component with HTML, C# logic, binding and an event.
 
-    ![Image showing Blazor application running the browser](../media/calculator-app.png)
+![Image showing Blazor application running the browser](../media/calculator-app.png)
