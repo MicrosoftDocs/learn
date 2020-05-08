@@ -11,11 +11,11 @@ In this module, we mentioned a number of concepts and techniques that support QI
 
 Here are resources where you can learn more:
 
-* [Adiabatic quantum computation](https://wikipedia.org/wiki/Adiabatic_quantum_computation)
-* [Gradient descent](https://wikipedia.org/wiki/Gradient_descent)
-* [Simulated annealing](https://wikipedia.org/wiki/Simulated_annealing)
-* [Quantum annealing](https://wikipedia.org/wiki/Quantum_annealing)
-* [Quantum superposition](https://wikipedia.org/wiki/Quantum_superposition)
-* [Ising model](https://wikipedia.org/wiki/Ising_model)
+* [Adiabatic quantum computation](https://wikipedia.org/wiki/Adiabatic_quantum_computation?azure-portal=true)
+* [Gradient descent](https://wikipedia.org/wiki/Gradient_descent?azure-portal=true)
+* [Simulated annealing](https://wikipedia.org/wiki/Simulated_annealing?azure-portal=true)
+* [Quantum annealing](https://wikipedia.org/wiki/Quantum_annealing?azure-portal=true)
+* [Quantum superposition](https://wikipedia.org/wiki/Quantum_superposition?azure-portal=true)
+* [Ising model](https://wikipedia.org/wiki/Ising_model?azure-portal=true)
 
-[How the quest for a scalable quantum computer is helping fight cancer](https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/) shows how QIO is helping fight cancer.
+[How the quest for a scalable quantum computer is helping fight cancer](https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/?azure-portal=true) shows how QIO is helping fight cancer.
