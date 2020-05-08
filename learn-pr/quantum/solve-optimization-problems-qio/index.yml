@@ -29,11 +29,10 @@ products:
 - azure-quantum
 units:
 - learn.quantum.solve-optimization-problems-qio.1-introduction
-- learn.quantum.solve-optimization-problems-qio.2-what-is-qio
-- learn.quantum.solve-optimization-problems-qio.3-how-is-qio-useful
-- learn.quantum.solve-optimization-problems-qio.4-when-is-qio-useful
-- learn.quantum.solve-optimization-problems-qio.5-how-qio-solves-problems
-- learn.quantum.solve-optimization-problems-qio.6-apply-qio-real-world
-- learn.quantum.solve-optimization-problems-qio.7-summary
+- learn.quantum.solve-optimization-problems-qio.2-what-are-quantum-inspired-algorithms
+- learn.quantum.solve-optimization-problems-qio.3-when-is-qio-useful
+- learn.quantum.solve-optimization-problems-qio.4-how-qio-solves-problems
+- learn.quantum.solve-optimization-problems-qio.5-apply-qio-real-world
+- learn.quantum.solve-optimization-problems-qio.6-summary
 badge:
   uid: learn.quantum.solve-optimization-problems-qio.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.solve-optimization-problems-qio.6-apply-qio-real-world
+uid: learn.quantum.solve-optimization-problems-qio.5-apply-qio-real-world
 title: Apply QIO to a real-world problem
 metadata:
   title: Apply QIO to a real-world problem
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-apply-qio-real-world.md)]
+  [!include[](includes/5-apply-qio-real-world.md)]
 quiz:
   title: Check your knowledge
   questions:

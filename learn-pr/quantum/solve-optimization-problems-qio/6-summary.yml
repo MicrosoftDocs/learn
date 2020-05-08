@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.solve-optimization-problems-qio.3-how-is-qio-useful
-title: How is QIO useful?
+uid: learn.quantum.solve-optimization-problems-qio.6-summary
+title: Summary
 metadata:
-  title: How is QIO useful?
+  title: Summary
   description: TODO
   ms.date: 05/19/2020
   author: KittyYeungQ
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-how-is-qio-useful.md)]
+  [!include[](includes/6-summary.md)]
