@@ -29,7 +29,7 @@ products:
 - azure-quantum
 units:
 - learn.quantum.qsharp-create-first-quantum-development-kit.1-introduction
-- learn.quantum.qsharp-create-first-quantum-development-kit.2-install-qdk-code
+- learn.quantum.qsharp-create-first-quantum-development-kit.2-install-quantum-development-kit-code
 - learn.quantum.qsharp-create-first-quantum-development-kit.3-qsharp-structure
 - learn.quantum.qsharp-create-first-quantum-development-kit.4-random-bit-generator
 - learn.quantum.qsharp-create-first-quantum-development-kit.5-random-number-generator
