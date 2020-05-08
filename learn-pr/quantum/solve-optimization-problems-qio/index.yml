@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.quantum.solve-optimization-problems-qio
+metadata:
+  title: Solve optimization problems by using quantum-inspired optimization (QIO) - Learn
+  description: TODO
+  ms.date: 05/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Solve optimization problems by using quantum-inspired optimization
+summary: TODO
+abstract: |
+  In this module, you'll:
+  - Learn about the origins of quantum-inspired algorithms.
+  - See which kinds of problems are best suited to these techniques.
+  - Understand how QIO emulates quantum physics to solve optimization problems.
+  - Apply QIO to a real-world optimization problem.
+prerequisites: |
+  - Basic knowledge of quantum computing
+  - [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-qdk?azure-portal=true)
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-quantum
+units:
+- learn.quantum.solve-optimization-problems-qio.1-introduction
+- learn.quantum.solve-optimization-problems-qio.2-what-are-quantum-inspired-algorithms
+- learn.quantum.solve-optimization-problems-qio.3-when-is-qio-useful
+- learn.quantum.solve-optimization-problems-qio.4-how-qio-solves-problems
+- learn.quantum.solve-optimization-problems-qio.5-apply-qio-real-world
+- learn.quantum.solve-optimization-problems-qio.6-summary
+badge:
+  uid: learn.quantum.solve-optimization-problems-qio.badge

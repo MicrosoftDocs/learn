@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.solve-optimization-problems-qio.5-apply-qio-real-world
+title: Apply QIO to a real-world problem
+metadata:
+  title: Apply QIO to a real-world problem
+  description: TODO
+  ms.date: 05/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-apply-qio-real-world.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "**TODO:** Can we briefly define 3 kinds of problems and ask which QIO can best solve?"
+    choices:
+    - content: "A"
+      isCorrect: false
+      explanation: "."
+    - content: "B"
+      isCorrect: false
+      explanation: "."
+    - content: "C"
+      isCorrect: true
+      explanation: "."
+  - content: "**TODO:** Question 2"
+    choices:
+    - content: "A"
+      isCorrect: false
+      explanation: "."
+    - content: "B"
+      isCorrect: false
+      explanation: "."
+    - content: "C"
+      isCorrect: true
+      explanation: "."
+  - content: "**TODO:** Question 3"
+    choices:
+    - content: "A"
+      isCorrect: false
+      explanation: "."
+    - content: "B"
+      isCorrect: false
+      explanation: "."
+    - content: "C"
+      isCorrect: true
+      explanation: "."
