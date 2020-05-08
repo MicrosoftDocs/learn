@@ -9,8 +9,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Functions and Tables
-
 We are building up a useful inventory of techniques for identifying
 patterns and themes in a data set by using functions already available
 in Python. We will now explore a core feature of the Python programming

@@ -5,8 +5,6 @@ path_data = '../../../../data/'
 np.set_printoptions(threshold=50)
 ```
 
-## Sorting Rows
-
 "The NBA is the highest paying professional sports league in the world,"
 [reported
 CNN](http://edition.cnn.com/2015/12/04/sport/gallery/highest-paid-nba-players/)

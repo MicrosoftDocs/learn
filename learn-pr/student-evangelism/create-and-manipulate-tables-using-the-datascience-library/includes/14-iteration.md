@@ -10,8 +10,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Iteration
-
 It is often the case in programming -- especially when dealing with
 randomness -- that we want to repeat a process multiple times. For
 example, recall the game of betting on one roll of a die with the

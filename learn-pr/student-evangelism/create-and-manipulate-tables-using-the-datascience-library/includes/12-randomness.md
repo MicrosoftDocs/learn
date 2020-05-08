@@ -11,8 +11,6 @@ import matplotlib.pyplot as plots
 plots.style.use('fivethirtyeight')
 ```
 
-### Randomness
-
 In the previous chapters we developed skills needed to make insightful
 descriptions of data. Data scientists also have to be able to understand
 randomness. For example, they have to be able to assign individuals to

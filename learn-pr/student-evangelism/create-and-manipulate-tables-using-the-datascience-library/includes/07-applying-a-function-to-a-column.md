@@ -9,8 +9,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Applying a Function to a Column
-
 We have seen many examples of creating new columns of tables by applying
 functions to existing columns or to other arrays. All of those functions
 took arrays as their arguments. But frequently we will want to convert

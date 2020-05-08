@@ -10,8 +10,6 @@ nba_salaries = Table.read_table(path_data + 'nba_salaries.csv')
 nba = nba_salaries.relabeled("'15-'16 SALARY", 'SALARY')
 ```
 
-## Selecting Rows
-
 Often, we would like to extract just those rows that correspond to
 entries with a particular feature. For example, we might want only the
 rows corresponding to the Warriors, or to players who earned more than

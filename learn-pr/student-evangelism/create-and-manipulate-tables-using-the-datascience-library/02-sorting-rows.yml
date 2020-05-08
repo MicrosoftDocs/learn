@@ -22,11 +22,11 @@ quiz:
           isCorrect: false
           explanation: Incorrect. We want the names and the emails from the table.
         - content: students.select('name').select('email')
-          explanation: Inorrect. students.select('name') returns a table with just one column 'name', so you cannot select 'email' from this resulting one column table.
+          explanation: Incorrect. students.select('name') returns a table with just one-column 'name', so you cannot select 'email' from this resulting one-column table.
           isCorrect: false
         - content: students.select(name, email)
           isCorrect: false
-          explanation: Incorrect. Column names should be in quotetion marks to signify they should be searched for in the table.
+          explanation: Incorrect. Column names should be in quotation marks to signify they should be searched for in the table.
         - content: students.select('name', 'email') correct
           isCorrect: true
           explanation: Correct.
@@ -48,13 +48,13 @@ quiz:
       choices:
         - content: students.select('name').sort('age')
           isCorrect: false
-          explanation: Incorrect. students.select returns a one column table which does not include age, so the sort function would error.
+          explanation: Incorrect. students.select returns a one-column table that does not include age, so the sort function would error.
         - content: students.sort('age').select('name')
           isCorrect: true
           explanation: Correct. The table should be sorted first, then single out the column "name" from the sorted table.
         - content: students.select('name', 'age').sort('age')
           isCorrect: false
-          explanation: Incorrect. While "select" do support selecting multiple columns at once, the coulmn names should be in an array. The correct version of this code will also return a two column table.
+          explanation: Incorrect. While "select" do support selecting multiple columns at once, the column names should be in an array. The correct version of this code will also return a two-column table.
         - content: students.sort('age').select('name', 'age')
           isCorrect: false
-          explanation: Incorrect. We want a table with only one column, the above code returns a two column table.
+          explanation: Incorrect. We want a table with only one-column, the above code returns a two-column table.

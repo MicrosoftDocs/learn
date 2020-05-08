@@ -10,8 +10,6 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-### Conditional Statements
-
 In many situations, actions and results depends on a specific set of
 conditions being satisfied. For example, individuals in randomized
 controlled trials receive the treatment if they have been assigned to

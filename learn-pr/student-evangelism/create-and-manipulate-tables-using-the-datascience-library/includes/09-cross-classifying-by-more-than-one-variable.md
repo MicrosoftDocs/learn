@@ -11,8 +11,6 @@ import matplotlib.pyplot as plots
 plots.style.use('fivethirtyeight')
 ```
 
-### Cross-Classifying by More than One Variable
-
 When individuals have multiple features, there are many different ways
 to classify them. For example, if we have a population of college
 students for each of whom we have recorded a major and the number of
