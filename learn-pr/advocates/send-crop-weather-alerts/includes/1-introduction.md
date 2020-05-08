@@ -6,7 +6,8 @@ In the developed world, widespread access to the internet via computers and smar
 
 In this module, you'll work with an application that lets farmers use text messaging to set up temperature alerts for specific locations. These alerts help farmers know when to plant, when to water, or when to protect their crops.
 
-![A screenshot of text messages sent to and received by our application](../media/text-message.png)
+> [!div class="mx-imgBorder"]
+> ![A screenshot of text messages sent to and received by our application](../media/text-message.png)
 
 The temperature and location services needed by this app will use Azure Maps. Azure Maps is a collection of geospatial services that use fresh mapping data to provide geographic context to web and mobile applications. These services include APIs for maps, vehicle routing, weather, and geofencing.
 
