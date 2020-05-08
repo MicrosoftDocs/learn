@@ -2,7 +2,7 @@ Suppose you're working for a data analytics company that has expanded to the poi
 
 [!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
 
-## Learning objectives
+## Learning objectives 
 
 In this module, you'll:
 
