@@ -22,7 +22,9 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 
 ## Add the CompoundInterest page to the app navigation
 
-1. Open **calc.razor**
+Here we'll set up the route for our new page and add a link to our side menu.
+
+1. Open **CompoundInterest.razor**
 
 1. Add the `@page` directive `@page "/compoundinterest"`
 
@@ -32,7 +34,7 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 
 1. Open **NavMenu.razor**
 
-1. Add a fourth list item with the href set to **calc** and a title off **Compound Interest**
+1. Add a fourth list item with the href set to **compoundinterest** and a title off **Compound Interest**
 
     ```cshtml
     <li class="nav-item px-3">
@@ -46,7 +48,7 @@ In this exercise, we'll add a new Razor page and create the compound interest ca
 
 1. In the Visual Studio Code terminal `dotnet run` to launch the app
 
-1. Open a web browser to http://localhost:5000  
+1. Open a web browser to **https://localhost:5001**   
 
     ![Image showing Blazor application running the browser](../media/create-new-component.png)
 
@@ -55,7 +57,7 @@ We'll add html UI for our calculator, specifically a table.
 
 1. Add a 2x4 html table
 
-1. Add text in the left column for: **Initial Principal**, **Years**, **Annual Interest Rate** and **Total:**. We'll populate the right column later
+1. Add text in the left column for: **Initial Principal**, **Years**, **Annual Interest Rate** and **Total:**
 
     ```cshtml
     <table class="table">
@@ -87,4 +89,4 @@ We'll add html UI for our calculator, specifically a table.
 
 1. In the Visual Studio Code terminal, execute `dotnet run` to launch the app
 
-1. Open a web browser to **http://localhost:5000** 
+1. Open a web browser to **https://localhost:5001** 
