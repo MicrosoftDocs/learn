@@ -61,7 +61,7 @@ That's orders of magnitude better.
 
 You can use ufuncs between a scalar and an array and between arrays of arbitrary dimensions.
 
-Computations vectorized by ufuncs are almost always more efficient than same computations done with Python loops. This is increased efficiency is especially apparent on large arrays. When possible, try to use ufuncs when operating on NumPy arrays rather than using ordinary Python loops.
+Computations vectorized by ufuncs are almost always more efficient than the same computations done with Python loops. This increased efficiency is especially apparent on large arrays. When possible, try to use ufuncs when you operate on NumPy arrays rather than using ordinary Python loops.
 
 Ufuncs come in two flavors: *unary ufuncs*, which take a single input, and *binary ufuncs*, which operate on two inputs. The common ufuncs we'll look at here include both kinds.
 

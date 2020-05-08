@@ -1,4 +1,4 @@
-*Masking* is manipulating or counting or extracting values in an array based on a criterion. For example, counting all the values in an array that are greater than a certain value. Boolean masking is often the most efficient way to accomplish these types of tasks in NumPy. It plays a large part in cleaning and otherwise preparing data for analysis. (See Section 5.)
+*Masking* is manipulating, counting, or extracting values in an array based on a criterion. For example, counting all the values in an array that are greater than a certain value. Boolean masking is often the most efficient way to accomplish these types of tasks in NumPy. It plays a large part in cleaning and otherwise preparing data for analysis. (See Section 5.)
 
 ## Example: Counting rainy days
 
@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 ```
 
-Use pandas to extract rainfall as a NumPy array. Make sure you've cloned the [Reactor repository](https://github.com/microsoft/Reactors?azure-portal=true) and opened the [Learn/Intro-python-data-science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md?azure-portal=true) in VS Code as described in the [environment setup unit](../../python-data-science/1-introduction.yml?azure-portal=true). In this folder, you'll find a data folder with the required CSV files.
+Use pandas to extract rainfall as a NumPy array. Make sure you've cloned the [Reactor repository](https://github.com/microsoft/Reactors?azure-portal=true) and opened the [Learn/Intro-python-data-science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md?azure-portal=true) in VS Code, as described in the [environment setup unit](../../python-data-science/1-introduction.yml?azure-portal=true). In this folder, you'll find a data folder with the required CSV files.
 
 ```python
 rainfall_2003 = pd.read_csv('Data/Observed_Monthly_Rain_Gauge_Accumulations_-_Oct_2002_to_May_2017.csv')['RG01'][ 2:14].values
@@ -25,7 +25,7 @@ array([6.55, 1.61, 5.01, 2.27, 0.91, 0.49, 0.12, 0.33, 0.97, 6.32, 2.54,
 
 Let's break down what we just did in the preceding code cell. The rainfall data contains monthly rainfall totals from several rain gauges around the city of Seattle. We selected the first one. From that gauge, we then selected the relevant months for the first full calendar year in the dataset, 2003. That range of months started at the third row of the CSV file (remember, Python zero-indexes!) and ran through the thirteenth row, hence `2:14]`.
 
-You now have an array containing 12 values, each of which records the monthly rainfall in inches from January to December 2003.
+You now have an array that contains 12 values, each of which records the monthly rainfall in inches from January to December 2003.
 
 In data science, you'll commonly want to take a quick first exploratory look at the data. In this case, a bar chart is a good way to do so. To generate this bar chart, we'll use Matplotlib, another important data-science tool that we'll introduce formally later in the course. (This example also brings up another widely used Python convention that you should adopt: `import matplotlib.pyplot as plt`.)
 

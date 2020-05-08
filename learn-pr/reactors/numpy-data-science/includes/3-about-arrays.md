@@ -337,7 +337,7 @@ Or you can specify the data type directly by using the NumPy object:
 
 | Data type | Description |
 | --- | --- |
-| `bool_` | Boolean (True or False) stored as a byte |
+| `bool_` | Boolean (`True` or `False`) stored as a byte |
 | `int_` | Default integer type (same as C `long`; normally either `int64` or `int32`) |
 | `intc` | Identical to C `int` (normally `int32` or `int64`) |
 | `intp` | Integer used for indexing (same as C `ssize_t`; normally either `int32` or `int64`) |

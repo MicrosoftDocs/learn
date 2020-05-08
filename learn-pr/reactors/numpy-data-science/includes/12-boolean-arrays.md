@@ -119,7 +119,7 @@ Here, all the elements in the first and third rows are less than 7, but that isn
 
 ## Boolean operators
 
-We've already seen how we might count, say, all months with less than four inches of rain, or all months with more than two inches of rain. But what if we want to know about all months with less than four inches of rain and greater than one inch? You can accomplish by using Python's *bitwise logic operators*, `&`, `|`, `^`, and `~`. As with the standard arithmetic operators, NumPy overloads these operators as ufuncs that work element-wise on (usually Boolean) arrays.
+We've already seen how we might count, say, all months with less than four inches of rain, or all months with more than two inches of rain. But what if we want to know about all months with less than four inches of rain and greater than one inch? We can figure that out by using Python's *bitwise logic operators*: `&`, `|`, `^`, and `~`. As with the standard arithmetic operators, NumPy overloads these operators as ufuncs that work element-wise on (usually Boolean) arrays.
 
 For example, we can address this sort of compound question as follows:
 

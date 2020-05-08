@@ -144,4 +144,4 @@ Finally, just as there's an `np.argsort` that computes indices of the sort, th
 >[!div class="alert is-tip"]
 >### Takeaway
 >
->Sorting your data is a fundamental way to explore it and answer questions about it. The sorting algorithms in NumPy provide a fast, computationally efficient way of sorting large amounts of data with fine-grained control.
+>Sorting your data is a fundamental way to explore it and answer questions about it. The sorting algorithms in NumPy provide a fast, computationally efficient way to sort large amounts of data with fine-grained control.

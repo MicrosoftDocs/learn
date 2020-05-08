@@ -1,6 +1,6 @@
 One of the first things you'll find yourself doing with most datasets is computing the summary statistics for the data to get a general overview of your data before exploring it further. These summary statistics include the mean and standard deviation, in addition to other aggregates, like the sum, product, median, minimum and maximum, and quantiles of the data.
 
-NumPy has fast built-in aggregation functions for working on arrays that are the subject of this subsection.
+NumPy has fast built-in aggregation functions for working on arrays. They are the subject of this subsection.
 
 ## Summing the values of an array
 
@@ -147,7 +147,7 @@ Remember that the `axis` keyword specifies the *dimension of the array that's
 
 ## Other aggregation functions
 
-This table lists other aggregation functions in NumPy. Most NumPy aggregates have a "`NaN`-safe" version, which computes the result while it ignores missing values marked by the `NaN` value.
+This table lists other NumPy aggregation functions. Most NumPy aggregates have a "`NaN`-safe" version, which computes the result while it ignores missing values marked by the `NaN` value.
 
 | Function name | NaN-safe version | Description |
 | --- | --- | --- |

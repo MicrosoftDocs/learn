@@ -123,7 +123,7 @@ The output is:
  [7 8 9]]
 ```
 
-Another common manipulation you'll do in data science is convert one-dimensional arrays into two-dimensional row or column matrices. This manipulation is a common necessity when you do linear algebra for machine learning. While you can do this by using the `reshape` method, an easier way is to use the `newaxis` keyword in a slice operation.
+Another common manipulation you'll do in data science is convert one-dimensional arrays into two-dimensional row or column matrices. This manipulation is a common necessity when you do linear algebra for machine learning. Although you can do this by using the `reshape` method, an easier way is to use the `newaxis` keyword in a slice operation.
 
 Row vector via `reshape`:
 
