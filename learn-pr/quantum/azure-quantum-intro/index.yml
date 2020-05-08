@@ -1,39 +1,39 @@
 ### YamlMime:Module
-uid: learn.quantum.azure-quantum-intro
+uid: learn.quantum.solve-optimization-problems-qio
 metadata:
-  title: TODO by using Quantum Inspired Optimization (QIO) - Learn
+  title: Solve optimization problems by using quantum-inspired optimization (QIO) - Learn
   description: TODO
   ms.date: 05/19/2020
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: TODO by using Quantum Inspired Optimization (QIO)
+title: Solve optimization problems by using quantum-inspired optimization
 summary: TODO
 abstract: |
   In this module, you'll:
-  - Learn how QIO emulates quantum algorithms on classical hardware.
-  - See which kinds of problems are best suited to QIO.
-  - Understand how QIO applies quantum techniques to solve optimization problems.
+  - Learn about the origins of quantum-inspired algorithms.
+  - See which kinds of problems are best suited to these techniques.
+  - Understand how QIO emulates quantum physics to solve optimization problems.
   - Apply QIO to a real-world optimization problem.
 prerequisites: |
   - Basic knowledge of quantum computing
-  - [Write your first program by using the Quantum Development Kit](/learn/modules/get-started-qdk?azure-portal=true)
+  - [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-qdk?azure-portal=true)
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
-- beginner
+- intermediate
 roles:
 - developer
 products:
 - azure-quantum
 units:
-- learn.quantum.azure-quantum-intro.1-introduction
-- learn.quantum.azure-quantum-intro.2-what-is-qio
-- learn.quantum.azure-quantum-intro.3-how-is-qio-useful
-- learn.quantum.azure-quantum-intro.4-when-is-qio-useful
-- learn.quantum.azure-quantum-intro.5-how-qio-solves-problems
-- learn.quantum.azure-quantum-intro.6-apply-qio-real-world
-- learn.quantum.azure-quantum-intro.7-summary
+- learn.quantum.solve-optimization-problems-qio.1-introduction
+- learn.quantum.solve-optimization-problems-qio.2-what-is-qio
+- learn.quantum.solve-optimization-problems-qio.3-how-is-qio-useful
+- learn.quantum.solve-optimization-problems-qio.4-when-is-qio-useful
+- learn.quantum.solve-optimization-problems-qio.5-how-qio-solves-problems
+- learn.quantum.solve-optimization-problems-qio.6-apply-qio-real-world
+- learn.quantum.solve-optimization-problems-qio.7-summary
 badge:
-  uid: learn.quantum.azure-quantum-intro.badge
+  uid: learn.quantum.solve-optimization-problems-qio.badge
