@@ -6,7 +6,7 @@ Those two sets correspond to whether the container is loaded onto ship *a* or sh
 
 ## Express the problem
 
-Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship. This is expressed in the following equation, where *w<sub>i</sub>* is the weight of container *i*:
+Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship. This sum is expressed in the following equation, where *w<sub>i</sub>* is the weight of container *i*:
 
 ![Term](../media/example_1.png)
 
@@ -14,7 +14,7 @@ Ideally, we want a solution where the weight difference between the ships is as 
 
 ![Term](../media/example_2.png)
 
-The letter *H* is typically used to represent a cost function. It is also referred to as a Hamiltonian as an acknowledgement to the quantum mechanical roots of QIO techniques. If the value of *H* is zero, we know the ships are equally loaded.
+The letter *H* is typically used to represent a cost function. It is also referred to as a Hamiltonian as an acknowledgment to the quantum mechanical roots of QIO techniques. If the value of *H* is zero, we know the ships are equally loaded.
 
 ## Refine the problem
 
@@ -30,7 +30,7 @@ By introducing this variable *x<sub>i</sub>*, we can simplify the equation as fo
 
 There's one last change we need to make before we can solve our problem.
 
-If we look at our cost function *H* there's a flaw: the solution with the least cost is to simply assign all containers to ship *b* by setting all of the *x<sub>i</sub>* variables equal to *-1*. But that's not correct! To fix this, we simply square the right hand side of the equation to ensure that it cannot be negative.
+If we look at our cost function *H*, there's a flaw: the solution with the least cost is to simply assign all containers to ship *b* by setting all of the *x<sub>i</sub>* variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
 
 ![Term](../media/example_4.png)
 
