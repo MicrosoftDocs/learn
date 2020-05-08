@@ -4,7 +4,7 @@ After you've used automated machine learning to train some models, you can deplo
 In Azure Machine Learning, you can deploy a service as an Azure Container Instances (ACI) or to an Azure Kubernetes Service (AKS) cluster. For production scenarios, an AKS deployment is recommended, for which you must create an *inference cluster* compute target. In this exercise, you'll use an ACI service, which is a suitable deployment target for testing, and does not require you to create an inference cluster.
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Automated ML** page, select the run for your automated machine learning experiment and view the **Details** tab.
-2. Select **Deploy best model**. Then deploy the model with the following settings:
+2. Select the algorithm name for the best model. Then use the **Deploy** button to deploy the model with the following settings:
     - **Name**: predict-rentals
     - **Description**: Predict cycle rentals
     - **Compute type**: ACI
