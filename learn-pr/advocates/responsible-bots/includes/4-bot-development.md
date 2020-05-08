@@ -3,12 +3,12 @@ In the previous unit, we created an echo bot from a template. This bot simply ec
 Open the bot page on the Azure portal:
 
 > [!div class="mx-imgBorder"]
-> ![Azure portal Bot Page](../media/azure-portal-bot-page.png)
+> ![Azure portal Bot page.](../media/azure-portal-bot-page.png)
 
 The bot creation flow in the right pane shows that we're at the **Build** stage. It suggests  you go to **Build blade** to download the source code for the bot. Go ahead and select the **Build blade** link:
 
 > [!div class="mx-imgBorder"]
-> ![Bot Build Blade](../media/azure-portal-bot-code-blade.png)
+> ![Screenshot of the Bot Build blade.](../media/azure-portal-bot-code-blade.png)
 
 From here, you have two main options:
 
@@ -20,7 +20,7 @@ From here, you have two main options:
 Let's first try the online editor option. Select the **Open online code editor** link to view the bot code.
 
 > [!div class="mx-imgBorder"]
-> ![Web App Code Editor](../media/visual-studio-online.png)
+> ![Screenshot of code editor in the web app browser window.](../media/visual-studio-online.png)
 
 The left pane shows a list of files. Look in the `Bots` directory, and select `EchoBot.cs`.
 
@@ -60,12 +60,12 @@ protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivi
 Whenever we change the code, we need to build the application to incorporate the changes. Locate the `build.cmd` script among the files in the left pane. Right-click on the file, and then select **Run from console**. This command runs the script in the online editor that rebuilds the site.
 
 > [!div class="mx-imgBorder"]
-> ![Build Result](..\media\azure-build.png)
+> ![Screenshot of the build results in the online editor.](..\media\azure-build.png)
 
 To see if the bot works, go to the bot portal page. Select **Test in Web Chat** and try talking to the bot.
 
 > [!div class="mx-imgBorder"]
-> ![Bot Chat](..\media\web-chat-hello-bot.png)
+> ![Screenshot of the bot chat.](..\media\web-chat-hello-bot.png)
 
 You should see that the bot greets you in response to your name.
 
@@ -93,7 +93,7 @@ To work with the bot code in Visual Studio:
 1. Start the `EchoBot.sln` file. Visual Studio 2019 will launch and display the same bot code that we saw earlier in the online editor.
 
 > [!div class="mx-imgBorder"]
-> ![Bot code shown in Visual Studio](../media/visual-studio-bot.png)
+> ![Bot code shown in Visual Studio.](../media/visual-studio-bot.png)
 
 ## Create a dictionary of capital cities
 
@@ -217,7 +217,7 @@ To test the bot:
 1. Start chatting with your bot!
 
 > [!div class="mx-imgBorder"]
-> ![Bot Framework Emulator](../media/bot-emulator.png)
+> ![Screenshot of the Bot Framework Emulator.](../media/bot-emulator.png)
 
 ## Deploy the bot to Azure
 
@@ -237,7 +237,7 @@ To deploy the bot back to the cloud, the easiest way is to use Visual Studio:
 1. After a successful publish, Visual Studio saves a deployment profile. For future deployments, you can just select the **Publish** button.
 
   > [!div class="mx-imgBorder"]
-  > ![Visual Studio's publish window](../media/publish-step-3.png)
+  > ![Visual Studio's publish window.](../media/publish-step-3.png)
 
 After deployment, you can open your bot page on the Azure portal. Use the **Test in Web Chat** function to talk to your bot.
 

@@ -44,27 +44,27 @@ To train the LUIS model, we'll give it some sample phrases for each intent, as s
 1. When you first sign in, you're asked to specify your country and accept the terms of use.
 
    > [!div class="mx-imgBorder"]
-   > ![LUIS terms of use](../media/luis-terms.png)
+   > ![LUIS terms of use.](../media/luis-terms.png)
 
 1. Now link to your Azure account. Select the **Continue using an Azure Resource** option, and then select **Create New Authoring Resource**.
 
    > [!div class="mx-imgBorder"]
-   > ![Link the Azure account](../media/luis-link-account.png)
+   > ![Link the Azure account page.](../media/luis-link-account.png)
 
 1. In the dialog box, select your subscription, enter a suitable name for the service, and select the resource group you previously used for the bot.
 
    > [!div class="mx-imgBorder"]
-   > ![Create the resource](../media/luis-create-recognizer-dialog.png)
+   > ![Create the resource page.](../media/luis-create-recognizer-dialog.png)
 
 1. Next, the LUIS portal opens again, where you can create a new application.
 
    > [!div class="mx-imgBorder"]
-   > ![Create a new app](../media/luis-create-app.png)
+   > ![Create a new app.](../media/luis-create-app.png)
 
 1. Select **Create a LUIS app now**, and the LUIS portal opens again.
 
    > [!div class="mx-imgBorder"]
-   > ![LUIS portal](../media/luis-new-app.png)
+   > ![Screenshot of the LUIS portal.](../media/luis-new-app.png)
 
 1. Make sure your **Subscription** and **Authoring resource** are selected. If you don't see your authoring resource, check that you're using the portal for the correct region.
 
@@ -82,7 +82,7 @@ To train the LUIS model, we'll give it some sample phrases for each intent, as s
    After some information screens, the main application dashboard appears.
 
    > [!div class="mx-imgBorder"]
-   > ![Application dashboard](../media/luis-main.png)
+   > ![Screenshot of the Cognitive Services application dashboard.](../media/luis-main.png)
 
 1. To add a prebuilt entity for geographical locations, follow these steps:
 
@@ -93,7 +93,7 @@ To train the LUIS model, we'll give it some sample phrases for each intent, as s
    You should see the entity added to the screen, as shown here.
 
    > [!div class="mx-imgBorder"]
-   > ![Add prebuilt entity](../media/luis-entity-geography.png)
+   > ![Add prebuilt entity.](../media/luis-entity-geography.png)
 
 1. To create the first intent, `get_capital`, follow these steps:
 
@@ -102,7 +102,7 @@ To train the LUIS model, we'll give it some sample phrases for each intent, as s
    1. Enter a sample utterance like **What is the capital of the United States?**
 
    > [!div class="mx-imgBorder"]
-   > ![Create intents](../media/luis-intent.png)
+   > ![Create intents.](../media/luis-intent.png)
 
    You can see that LUIS automatically detects geographical entities.
 
@@ -111,7 +111,7 @@ To train the LUIS model, we'll give it some sample phrases for each intent, as s
 1. After you've created intents, select **Train** to train the model. After training, select **Test** to see how well the model performs on some input sentences.
 
    > [!div class="mx-imgBorder"]
-   > ![Test results](../media/luis-test.png)
+   > ![Test results.](../media/luis-test.png)
 
 1. If you see some phrases classified incorrectly, select **Inspect** to get the details and add the utterances to the training data to improve the model.
 
@@ -124,7 +124,7 @@ To use the LUIS model from the bot, first we need to publish the model.
 1. Select **Publish**, select **Production Slot**, and then select **Done**. The screen with the prediction endpoint URL and key appears.
 
    > [!div class="mx-imgBorder"]
-   > ![Prediction](../media/luis-publish-model.png)
+   > ![Prediction.](../media/luis-publish-model.png)
 
    > [!TIP]
    > Right now the model is deployed on some starter resources. To deploy it in production, select **Add prediction resource**. After you do that, you'll have another set of prediction keys and an endpoint URL that you can freely control through your subscription.
@@ -142,7 +142,7 @@ To use the LUIS model from the bot, first we need to publish the model.
    1. Enter `Luis`, choose `Microsoft.Bot.Builder.AI.Luis`, and select **Install**.
 
    > [!div class="mx-imgBorder"]
-   > ![Add the NuGet package](../media/luis-add-nuget.png)
+   > ![Add the NuGet package.](../media/luis-add-nuget.png)
 
 1. To add LUIS Recognized to our bot, add the corresponding code to the `ConfigureServices` function in `Startup.cs`. Open the file, and insert the following code after the first line of the `ConfigureServices` function:
 
@@ -269,7 +269,7 @@ We also need to add some more functions to the `CountryData` class to figure out
 After we implement those changes, we can start the bot and have a little conversation.
 
 > [!div class="mx-imgBorder"]
-> ![Conversation with the bot](../media/luis-conversation.png)
+> ![Screenshot of a conversation with the bot.](../media/luis-conversation.png)
 
 ## Conclusion
 
