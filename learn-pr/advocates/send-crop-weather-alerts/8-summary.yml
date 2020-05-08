@@ -17,7 +17,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which HTTP Request method did we use to connect Twilio to our app?'
+  - content: 'Which HTTP Request method was used to connect Twilio to our app?'
     choices:  
     - content: 'GET'
       isCorrect: false

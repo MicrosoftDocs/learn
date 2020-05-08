@@ -12,11 +12,11 @@ The temperature and location services needed by this app will use Azure Maps. Az
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Learn about the Azure Maps APIs for obtaining the weather forecast for a location.
 - Create and configure a Twilio account with a programmable SMS phone number to send and receive text messages.
-- Deploy an existing application to Azure Functions utilizing Twilio and Azure Maps to manage and send temperature alerts for specific locations.
+- Deploy an existing application to Azure Functions using Twilio and Azure Maps to manage and send temperature alerts for specific locations.
 
 ## Prerequisites
 

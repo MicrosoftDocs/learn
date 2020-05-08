@@ -7,7 +7,10 @@ Before you can use the two Azure Maps APIs for Geocoding and Weather Forecast, y
 1. Run this command to create a new Azure Maps account
 
     ```Azure CLI
-    az maps account create --name weatherservice --resource-group <rgn>[sandbox resource group name]</rgn> --accept-tos
+    az maps account create \
+      --name weatherservice \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --accept-tos
     ```
 
 ## Retrieve the primary key
@@ -17,7 +20,9 @@ Azure Maps accounts are secured by either Azure Active Directory or via a key. L
 1. Run this command to view the keys
 
     ```Azure CLI
-    az maps account keys list --name weatherservice --resource-group <rgn>[sandbox resource group name]</rgn>
+    az maps account keys list \
+      --name weatherservice \
+      --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
 1. Note down the value of the `"primaryKey"`. You need the value inside the quotes.

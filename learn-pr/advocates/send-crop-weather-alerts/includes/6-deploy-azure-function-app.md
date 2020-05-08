@@ -6,11 +6,17 @@ Azure Functions requires a Storage Account for storing the application code and 
 
 All Azure Storage accounts have a name, and this name needs to be globally unique among all storage account. Storage accounts can be accessed over the web, and the name forms part of the URL. To make a unique name, include things like the date or your name. This name needs to be between 3 and 24 characters long and only contain lower-case letters and numbers.
 
-1. Run the following commands in the Sandbox to create a Storage Account and the required table.
+1. Run this command to create an environment variable for the name of the storage account. This will be used by other commands later in this unit.
 
     ```azurecli
     export STORAGE_ACCOUNT_NAME=<YOUR-STORAGE-ACCOUNT-NAME>
+    ```
 
+    Replace `<YOUR-STORAGE-ACCOUNT-NAME>` with the name you want to use for your storage account, for example `cropweatheralert20100519`.
+
+1. Run the following commands in the Sandbox to create a Storage Account and the required table.
+
+    ```azurecli
     az storage account create \
       --name $STORAGE_ACCOUNT_NAME \
       --location westus \
@@ -22,17 +28,21 @@ All Azure Storage accounts have a name, and this name needs to be globally uniqu
       --account-name $STORAGE_ACCOUNT_NAME
     ```
 
-    Replace `<YOUR-STORAGE-ACCOUNT-NAME>` with the name you want to use for your storage account, for example `cropweatheralert20100519`.
-
 ## Create a function app
 
 Azure Functions Apps need a globally unique name. To make a unique name, include things like the date or your name. This name can be the same as your storage account, as long as that name is unique across all Azure Functions apps.
 
-1. Run this command to create a new Azure Functions app:
+1. Run this command to create an environment variable for the name of the Azure Functions app. This will be used by other commands later in this unit.
 
     ```azurecli
     export FUNCTIONS_APP_NAME=<YOUR-FUNCTION-APP-NAME>
+    ```
 
+    Replace `<YOUR-FUNCTION-APP-NAME>` with the name you want to use for your functions app, for example `cropweatheralert20100519`.
+
+1. Run this command to create a new Azure Functions app:
+
+    ```azurecli
     az functionapp create \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --os-type Linux \
@@ -43,11 +53,9 @@ Azure Functions Apps need a globally unique name. To make a unique name, include
       --functions-version 2
     ```
 
-    Replace `<YOUR-FUNCTION-ACCOUNT-NAME>` with the name you want to use for your functions app, for example `cropweatheralert20100519`.
-
 ## Create Environment Variables
 
-Our application once deployed will require the Azure Maps key, Twilio Phone number, Twilio Account SID, and Twilio Auth Token. We can provide this information to the application via environment variables known as App Settings.
+Our application once deployed will require the Azure Maps key, Twilio Phone number, Twilio Account SID, and Twilio Auth Token. This information is provided to the application via environment variables known as App Settings.
 
 1. Run the following command to create the App Settings as follows:
 
