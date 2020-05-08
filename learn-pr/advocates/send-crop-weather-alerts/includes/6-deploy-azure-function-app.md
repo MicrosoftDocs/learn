@@ -4,9 +4,9 @@ In this unit, you'll create and deploy an existing application to the function a
 
 The function app requires a storage account for storing the application code and other information. Additionally, the app requires a table called `alerts` within the storage account to track the locations, phone numbers, and temperature ranges to create alerts for.
 
-An Azure storage account name must be globally unique among all storage accounts. Storage accounts can be accessed over the web, and the name forms part of the URL. To make a unique name, include things like the date or your name. This name contain from 3 to 24 characters and contain only lowercase letters and numbers.
+An Azure storage account name must be globally unique among all storage accounts. Storage accounts can be accessed over the web, and the name forms part of the URL. To make a unique name, include information like the date or your name. This name must contain from 3 to 24 characters and contain only lowercase letters and numbers.
 
-1. To create an environment variable for the name of the storage account, one that will be used by other commands later in this unit, run the following command:
+1. To create an environment variable for the name of the storage account, a variable that will be used by other commands later in this unit, run the following command:
 
     ```azurecli
     export STORAGE_ACCOUNT_NAME=<YOUR-STORAGE-ACCOUNT-NAME>
@@ -30,7 +30,7 @@ An Azure storage account name must be globally unique among all storage accounts
 
 ## Create a function app
 
-The Azure function app name must be globally unique. To make a unique name, include things like the date or your name. This name can be the same as your storage account name, as long as it is unique across all Azure function apps.
+The Azure function app name must be globally unique. To make a unique name, include information like the date or your name. This name can be the same as your storage account name, as long as it's unique across all Azure function apps.
 
 1. To create an environment variable for the name of the Azure function app, run the following command. This environment variable will be used by other commands later in this unit.
 
@@ -93,9 +93,9 @@ The function app's source code lives in a repository on GitHub.
     git clone https://github.com/MicrosoftDocs/mslearn-send-crop-weather-alerts.git
     ```
 
-    This code contains a timer trigger that runs at 12-hour intervals. This is perfect for a final app, but for testing purposes, 12 hours is too long. If you deploy this code, you won't see a response message for 12 hours, by which time the sandbox will have ended and the app will be deleted.
+    This code contains a timer trigger that runs at 12-hour intervals. This is perfect for a final app, but for testing purposes, 12 hours is too long. If you deploy this code, you won't see a response message for 12 hours, by which time the sandbox period will have ended and the app will be deleted.
 
-    To see results faster, change this trigger to run every 10 minutes.
+    To view results faster, change this trigger to run every 10 minutes.
 
 1. Use the **nano** editor to edit the file by using the following commands:
 
