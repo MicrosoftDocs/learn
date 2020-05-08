@@ -36,6 +36,6 @@ products:
 modules:
 - learn.github.github-actions-automate-tasks
 - learn.github.github-actions-ci
-#- learn.github.github-actions-cd
+- learn.github.github-actions-cd
 trophy:
   uid: learn.automate-workflow-github-actions.trophy
