@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.static-apps-gatsby.5-exercise-gatsby-data
+uid: learn.static-apps-gatsby.5-exercise-add-data
 title: Exercise - Add data to your Gatsby app
 metadata:
   title: Exercise - Add data to your Gatsby app
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-exercise-gatsby-data.md)]
+  [!include[](includes/5-exercise-add-data.md)]

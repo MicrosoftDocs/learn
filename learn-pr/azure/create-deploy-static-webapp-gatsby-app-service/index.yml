@@ -31,10 +31,10 @@ prerequisites: |
   - A GitHub account
 units:
 - learn.static-apps-gatsby.1-introduction
-- learn.static-apps-gatsby.2-gatsby
-- learn.static-apps-gatsby.3-exercise-gatsby
-- learn.static-apps-gatsby.4-gatsby-data
-- learn.static-apps-gatsby.5-exercise-gatsby-data
+- learn.static-apps-gatsby.2-create-app
+- learn.static-apps-gatsby.3-exercise-create-app
+- learn.static-apps-gatsby.4-add-data
+- learn.static-apps-gatsby.5-exercise-add-data
 - learn.static-apps-gatsby.6-build-deploy-static-app
 - learn.static-apps-gatsby.7-exercise-build-deploy-static-app
 - learn.static-apps-gatsby.8-knowledge-check

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.static-apps-gatsby.3-exercise-gatsby
+uid: learn.static-apps-gatsby.3-exercise-create-app
 title: Exercise - Create a static app with Gatsby
 metadata:
   title: Exercise - Create a static app with Gatsby
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-exercise-gatsby.md)]
+  [!include[](includes/3-exercise-create-app.md)]

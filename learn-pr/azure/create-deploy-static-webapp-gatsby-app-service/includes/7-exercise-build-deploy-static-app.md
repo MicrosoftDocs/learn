@@ -26,7 +26,7 @@ Go to the browser on `http://localhost:5000`.
 
 You should now see the following content rendered:
 
-:::image type="content" source="../media/gatsby-built-site.png" alt-text="Our built app":::
+:::image type="content" source="../media/built-site.png" alt-text="Our built app":::
 
 You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 
@@ -74,10 +74,10 @@ git commit -m "adding Gatsby project"
 1. Go to GitHub and log on. You should now be on a URL like so `https://github.com/<your username>?tab=repositories`
 
 2. Now click the `new` button as indicated below:
-:::image type="content" source="../media/gatsby-create-gh-repo.png" alt-text="Create new GitHub repo":::
+:::image type="content" source="../media/create-github-repo.png" alt-text="Create new GitHub repo":::
 
 3. Name your repository `gatsby-app` and click `Create repository` as indicated below:
-:::image type="content" source="../media/gatsby-gh-naming.png" alt-text="GitHub naming":::
+:::image type="content" source="../media/github-naming.png" alt-text="GitHub naming":::
 
 4. Finally, add your GitHub repository as a remote and push. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
 
@@ -171,7 +171,7 @@ Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
 :::image type="content" source="../media/static-app-portal-finished.png" alt-text="Azure Static Web Apps overview page":::
 
-:::image type="content" source="../media/gatsby-published.png" alt-text="Azure Static Web Apps overview page":::
+:::image type="content" source="../media/published.png" alt-text="Azure Static Web Apps overview page":::
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.static-apps-gatsby.2-gatsby
+uid: learn.static-apps-gatsby.2-create-app
 title: Create a static app with Gatsby
 metadata:
   title: Create a static app with Gatsby
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-gatsby.md)]
+  [!include[](includes/2-create-app.md)]
