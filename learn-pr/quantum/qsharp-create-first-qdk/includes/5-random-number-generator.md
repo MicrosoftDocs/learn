@@ -1,4 +1,4 @@
-In this part, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number. This phase builds on the random bit generator that you already created. You will need to write some classical code to do this. 
+In this part, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number. This phase builds on the random bit generator that you already created. You will need to write some classical code for this phase. 
 
 First, let's see how classical code fits in with Q#.
 
@@ -31,11 +31,11 @@ Let's say you generate the bit string ${1101_{\ binary}}$, which is equivalent t
 
 Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${6_{\ decimal}}$. Because six is less than 12, the process is complete.
 
-With our logic in place, you're now ready to build the complete random number generator.
+With our logic in place, you're now ready to build a complete random number generator.
 
 ## Create the GenerateRandomNumber operation
 
-Here, you build on the *QuantumRNG* project to build larger random numbers.
+Here, you expand on the *QuantumRNG* project to build larger random numbers.
 
 ### Add the required libraries
 
@@ -63,9 +63,9 @@ Let's take a moment to review the new code.
 
 The `GenerateRandomNumber` operation uses a type of loop that's specific to Q# called *Repeat-Until-Success* (RUS). This kind of loop works well with quantum computers and avoids incompatibilities with some properties that quantum operations need to fulfill. A RUS loop has three parts: `repeat`, `until`, and `fixup`.
 
-- `until` takes a Boolean expression (one that evaluates to `True` or `False`) as its argument. This is the condition that needs to be fulfilled in order to succeed and stop the loop.
-- `repeat` contains the set of actions that need to be taken until the condition of `until` is fulfilled.
-- `fixup` contains the set of actions that are taken each time the condition of `until` is not fulfilled and the loop starts a new iteration.
+- `until` takes a Boolean expression (one that evaluates to `True` or `False`) as its argument. This is the condition that needs to be satisfied in order to succeed and stop the loop.
+- `repeat` contains the set of actions that need to be taken until the condition of `until` is satisfied.
+- `fixup` contains the set of actions that are taken each time the condition of `until` is not satisfied and the loop starts a new iteration.
 
 Here, we use a RUS loop to generate random bit strings of length `nBits` until we obtain a number that's less than `max`.
 

@@ -1,10 +1,10 @@
 Welcome to the world of quantum computing!
 
-Whether you're a researcher or simply want to get a feel for what quantum programming is all about, this is a great place to start exploring Microsoft's approach to quantum computing.
+Whether you're a researcher or simply someone who wants to get a feel for what quantum programming is all about, this is a great place to start exploring Microsoft's approach to quantum computing.
 
-In this module, you'll write your very first quantum program by using the Quantum Development Kit (QDK). The QDK enables you to write and test your quantum programs locally through a simulator, on standard hardware. You can later run the same quantum program on real quantum hardware through the Azure Quantum service.
+In this module, you'll write your very first quantum program by using the Quantum Development Kit (QDK). The QDK enables you to write and test your quantum programs locally, with a simulator, on standard hardware. You can, when it's generally available, run the same quantum program on real quantum hardware through the Azure Quantum service.
 
-The quantum program you'll write in this module generates random numbers. A random number generator is not only easy to write, but helps you understand the basics of quantum computing.
+The quantum program you'll write in this module generates random numbers. A random number generator is not only easy to write, but it will help you understand the basics of quantum computing.
 
 ## Learning objectives
 
