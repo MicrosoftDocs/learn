@@ -1,5 +1,5 @@
 
-To be able to receive and send SMS messages programmatically, you'll need a Twilio account. The free account is more than enough to get started.
+To send and receive SMS messages programmatically, you'll need a Twilio account. In this unit, you'll create a free Twilio account. The free account is more than enough to get started.
 
 ## Create a Twilio account
 
@@ -9,13 +9,13 @@ To be able to receive and send SMS messages programmatically, you'll need a Twil
 
 1. Fill in your details and Select **Start your free trial**
 
-1. Twilio will send you an email to verify your email address. Select the **Confirm your email** option in the verification email you will receive, then log in to Twilio with the email and password you provided in the previous step.
+1. Twilio will send you an email to verify your email address. Select the **Confirm your email** option in the verification email you'll receive, then log in to Twilio with the email and password you provided in the previous step.
 
 1. Enter your phone number to verify. Twilio free accounts let you send messages only to verified phone numbers to stop them from being used for spam. Twilio will send you a verification code via SMS that you need to enter to verify your phone.
 
     ![Screenshot of phone verification step in Twilio sign up](../media/twilio-verify-phone.png)
 
-1. Work through the introductory question that you will be asked until you get to the dashboard. These questions will be used to create a first Twilio project for you to use.
+1. Work through the introductory question asked until you get to the dashboard. These questions will be used to create a first Twilio project for you to use.
 
 1. Select the **Get a Trial Number** button in your account dashboard. Twilio assigns you a phone number that is used to send messages.
 

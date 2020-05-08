@@ -21,22 +21,22 @@ quiz:
     choices:  
     - content: 'Azure Message Bus'
       isCorrect: false
-      explanation: Azure Message Bus doesn't handle SMS text messages, but instead data messages between applications.
+      explanation: Twilio is the third-party service can programmatically send and receive SMS text messages.
     - content: 'Azure Notification Hub'
       isCorrect: false
-      explanation: Azure Notification Hub handles push notifications to applications.
+      explanation: Twilio is the third-party service can programmatically send and receive SMS text messages.
     - content: 'Twilio'
       isCorrect: true
-      explanation: Correct. Twilio is the third party service can programmatically send and receive SMS text messages.
+      explanation: Correct. Twilio is the third-party service can programmatically send and receive SMS text messages.
     
   - content: 'Azure Maps allows retrieving of coordinates for a location via which API endpoint?'
     choices:
     - content: 'Search - Get Search Address'
       isCorrect: true
-      explanation: Correct, this endpoint accepts arbitrary locations and normalizes them, providing details including coordinates.
+      explanation: Correct, the Search - Get Search Address endpoint accepts arbitrary locations and returns their coordinates.
     - content: 'Location - Normalize'
       isCorrect: false
-      explanation: This API endpoint does not exist.
+      explanation: The Search - Get Search Address endpoint accepts arbitrary locations and returns their coordinates.
     - content: 'Location - Geocode'
       isCorrect: false
-      explanation: Even though we are Geocoding, this is not the name of the API endpoint.
+      explanation: The Search - Get Search Address endpoint accepts arbitrary locations and returns their coordinates.

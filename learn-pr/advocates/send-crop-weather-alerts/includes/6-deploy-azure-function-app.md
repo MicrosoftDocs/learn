@@ -1,10 +1,10 @@
-In this unit we will create and deploy an existing application to Azure Functions.
+In this unit, you'll create and deploy an existing application to Azure Functions.
 
 ## Create a Storage account
 
-Azure Functions requires a Storage Account for storing the application code and other information. Additionally our app requires a Table called `alerts` within the Storage Account to track the locations, phone numbers and temperature ranges to create alerts for.
+Azure Functions requires a Storage Account for storing the application code and other information. Additionally our app requires a Table called `alerts` within the Storage Account to track the locations, phone numbers, and temperature ranges to create alerts for.
 
-All Azure Storage accounts have a name, and this name needs to be globally unique amongst all storage account. Storage accounts can be accessed over the web, and the name forms part of the URL. To make a unique name, include things like the date or your name. This name needs to be between 3 and 24 characters long and only contain lower-case letters and numbers.
+All Azure Storage accounts have a name, and this name needs to be globally unique among all storage account. Storage accounts can be accessed over the web, and the name forms part of the URL. To make a unique name, include things like the date or your name. This name needs to be between 3 and 24 characters long and only contain lower-case letters and numbers.
 
 1. Run the following commands in the Sandbox to create a Storage Account and the required table.
 
@@ -26,7 +26,7 @@ All Azure Storage accounts have a name, and this name needs to be globally uniqu
 
 ## Create a function app
 
-Azure Functions need a globally unique name. To make a unique name, include things like the date or your name. This can be the same as your storage account, as long as that name is unique across all Azure Functions apps.
+Azure Functions Apps need a globally unique name. To make a unique name, include things like the date or your name. This name can be the same as your storage account, as long as that name is unique across all Azure Functions apps.
 
 1. Run this command to create a new Azure Functions app:
 
@@ -77,7 +77,7 @@ Our application once deployed will require the Azure Maps key, Twilio Phone numb
 
 ## Download the application code for our app
 
-The Function application's source code resides in a repository on GitHub.
+The Function application's source code lives in a repository on GitHub.
 
 1. Run the following command to clone the code down to our working environment.
 
@@ -87,7 +87,7 @@ The Function application's source code resides in a repository on GitHub.
 
 ## Deploy the application to Azure Functions
 
-We are now ready to deploy our application to Azure Functions.
+We're now ready to deploy our application to Azure Functions.
 
 1. Run the following command to publish the code
 

@@ -4,7 +4,7 @@ In this unit, you'll connect your Twilio phone number to the Azure Functions app
 
 Now that everything is set up the only thing that reminds to be done is to make Twilio call our Functions Endpoint for incoming SMS.
 
-1. Login into Twilio at [twilio.com](https://www.twilio.com?azure-portal=true)
+1. Log in into Twilio at [twilio.com](https://www.twilio.com?azure-portal=true)
 
 1. Select the ellipses on the side bar
 
