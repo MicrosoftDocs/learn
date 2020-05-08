@@ -224,6 +224,18 @@ To test the bot:
 
 ## Deploy the bot to Azure
 
+Before we can deploy our bot, we have to make one quick change to ensure it publishes correctly.
+
+To make sure that the data from *worldcities.csv* is copied with our project, we must change the file properties:
+
+1. In Visual Studio Solution Explorer, find the file.
+1. For each file, under **Properties**, expand **Advanced** if necessary.
+1. Set **Build Action** to **Content**.
+1. Set **Copy to Output Directory** to **Copy if newer**.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot that demonstrates how to change a file's properties on the Advanced tab in Visual Studio Solution Explorer.](../media/visual-studio-solution-express.png)
+
 To deploy the bot back to the cloud, the easiest way is to use Visual Studio:
 
 1. In Visual Studio, right-click on the **EchoBot** project and select **Publish**.
