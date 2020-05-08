@@ -14,9 +14,9 @@ In this unit, you need to complete the exercises within two Databricks Notebooks
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
- ```
-  https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/08-Azure-Databricks-Security-Data-Protection.dbc?raw=true
- ```
+    ```
+    https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/08-Azure-Databricks-Security-Data-Protection.dbc?raw=true
+    ```
 
 5. Select **Import**.
 6. Select the **08-Azure-Databricks-Security-Data-Protection** folder that appears.
