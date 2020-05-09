@@ -85,19 +85,6 @@
                 "dest": "modules"
             },
             {
-                "src": "ccc-commercial-marketplace",
-                "files": [
-                    "**/*.yml",
-                    "**/*.md"
-                ],
-                "exclude": [
-                    "**/includes/**",
-                    "**/design/**",
-                    "**/resources/**"
-                ],
-                "dest": "modules"
-            },
-            {
                 "src": "cmu-cloud-admin",
                 "files": [
                     "**/*.yml",
@@ -319,7 +306,7 @@
             "feedback_system": "GitHub",
             "feedback_github_repo": "MicrosoftDocs/learn",
             "clicktale": true,
-            "uhfHeaderId": "MSDocsHeader-Learn",
+            "uhfHeaderId": "MSDocsHeader-Learn"
         },
         "fileMetadata": {
             "sandbox-disabled": {},
