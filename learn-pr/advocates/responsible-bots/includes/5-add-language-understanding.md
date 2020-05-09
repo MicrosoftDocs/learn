@@ -96,15 +96,15 @@ For simplicity, we'll limit ourselves to these cases. Ideally, the bot should in
 
 1. Using the same procedure, enter a few more sentences for the `get_capital` intent. Follow the same steps to create other intents from the sample sentences listed in this table.
 
-| Intent | Phrase |
-|---|---|
-|`get_capital` | What is the capital of the *United States*? |
-|`get_capital` | I need to know the capital city of *France*. |
-|`get_country` | What country's capital is *Paris*? |
-|`play_game` | I want to play! |
-|`play_game` | Let's start a capital quiz! |
-|`get_population` | What is the population of *Moscow*? |
-|`get_population` | How many people live in *Seoul*? |
+    | Intent | Phrase |
+    |---|---|
+    |`get_capital` | What is the capital of the *United States*? |
+    |`get_capital` | I need to know the capital city of *France*. |
+    |`get_country` | What country's capital is *Paris*? |
+    |`play_game` | I want to play! |
+    |`play_game` | Let's start a capital quiz! |
+    |`get_population` | What is the population of *Moscow*? |
+    |`get_population` | How many people live in *Seoul*? |
 
 1. After you've created intents, select **Train** to train the model. After training, select **Test** to see how well the model performs on some input sentences.
 
