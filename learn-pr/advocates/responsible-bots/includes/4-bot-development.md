@@ -92,8 +92,8 @@ To work with the bot code in Visual Studio:
 1. After it downloads, unzip this file in an appropriate folder such as `c:\demo`.
 1. Start the `EchoBot.sln` file. Visual Studio 2019 will launch and display the same bot code that we saw earlier in the online editor.
 
-> [!div class="mx-imgBorder"]
-> ![Bot code shown in Visual Studio.](../media/visual-studio-bot.png)
+    > [!div class="mx-imgBorder"]
+    > ![Bot code shown in Visual Studio.](../media/visual-studio-bot.png)
 
 ## Create a dictionary of capital cities
 
