@@ -10,8 +10,8 @@ import numpy as np
 Our methods for comparing two samples have a powerful use in the
 analysis of randomized controlled experiments. Since the treatment and
 control groups are assigned randomly in such experiements, differences
-in their outcomes can be compared to what would happen just due to
-chance if the treatment had no effect at all. If the observed
+in their outcomes can be compared to what would happen due to
+chance alone if the treatment had no effect at all. If the observed
 differences are more marked than what we would predict as purely due to
 chance, we will have evidence of *causation*. Because of the unbiased
 assignment of individuals to the treatment and control groups,
@@ -21,14 +21,14 @@ treatment.
 The key to the analysis of randomized controlled experiments is
 understanding exactly how chance enters the picture. This helps us set
 up clear null and alternative hypotheses. Once that's done, we can
-simply use the methods of the previous sections to complete the
+use the methods of the previous sections to complete the
 analysis.
 
 Let's see how to do this in an example.
 
 ### Treating Chronic Back Pain: A Randomized Controlled Trial
 
-Low-back pain in adults can be very persistent and hard to treat. Common
+Low-back pain in adults can be persistent and hard to treat. Common
 methods run the gamut from corticosteroids to acupuncture. A [randomized
 controlled trial (RCT)](https://www.ncbi.nlm.nih.gov/pubmed/11376175)
 examined the effect of using Botulinum Toxin A as a treatment. Botulinum
@@ -368,7 +368,7 @@ assigned at random into the two groups, so perhaps the difference could
 just be due to chance?
 
 To understand what this means, we have to consider the possibility that
-among the 31 patients in the study, some were simply better able to
+among the 31 patients in the study, some were better able to
 recover than others, even without any help from the treatment. What if
 an unusually large proportion of such patients got assigned to the
 treatment group, just by chance? Then even if the treatment did nothing
@@ -785,7 +785,7 @@ different from the distribution of the 31 "control" values in Column 2
 **Null Hypothesis:** The distribution of all 31 potential "treatment"
 outcomes is the same as that of all 31 potential "control" outcomes.
 Botulinum toxin A does nothing different from saline; the difference in
-the two samples is just due to chance.
+the two samples is due to chance alone.
 
 **Alternative Hypothesis:** The distribution of 31 potential "treatment"
 outcomes is different from that of the 31 control outcomes. The
@@ -810,7 +810,7 @@ testing.
 
 ### The Test Statistic
 
-If the two group proportions are very different from each other, we will
+If the two group proportions are different from each other, we will
 lean towards the alternative hypothesis that the two underlying
 distributions are different. So our test statistic will be the distance
 between the two group proportions, that is, the absolute value of the
@@ -1273,7 +1273,7 @@ distance(bta_with_shuffled_labels, 'Result', 'Shuffled Label')
 
 0.041666666666666685
 
-This is quite different from the distance between the two original
+This is different from the distance between the two original
 proportions.
 
 ``` {.python}
@@ -1344,7 +1344,7 @@ print('Observed Distance', observed_distance)
 print('Empirical P-value:', round(empirical_P, 4) *100, '%')
 ```
 
-Observed Distance 0.475 Empirical P-value: 0.8500000000000001 %
+Observed Distance 0.475 Empirical P-value: 0.8500000000000001%
 
 ![png](../media/62-causality-30-1.png)
 
@@ -1374,7 +1374,7 @@ While the RCT does provide evidence that the botulinum toxin A treatment
 helped patients, a study of 31 patients isn't enough to establish the
 effectiveness of a medical treatment. This is not just because of the
 small sample size. Our results in this section are valid for the 31
-patients in the study, but we are really interested in the population of
+patients in the study, but we are interested in the population of
 *all possible patients*. If the 31 patients were a random sample from
 that larger population, our confidence interval would be valid for that
 population. But they were not a random sample.
@@ -1386,7 +1386,7 @@ studies of such treatments for low-back pain and summarized the collated
 results.
 
 There were several studies but not many could be included in a
-scientifically sound manner: "We excluded evidence from nineteen studies
+scientifically sound manner: "We excluded evidence from 19 studies
 due to non-randomisation, incomplete or unpublished data." Only three
 randomized controlled trials remained, one of which is the one we have
 studied in this section. The meta-analysis gave it the highest
@@ -1397,15 +1397,15 @@ non-specific LBP (N = 31)."
 
 Putting it all together, the meta-analysis concluded, "There is low
 quality evidence that BoNT injections improved pain, function, or both
-better than saline injections and very low-quality evidence that they
+better than saline injections and low-quality evidence that they
 were better than acupuncture or steroid injections. ... Further research
-is very likely to have an important impact on the estimate of effect and
+is likely to have an important impact on the estimate of effect and
 our confidence in it. Future trials should standardize patient
 populations, treatment protocols and comparison groups, enlist more
 participants and include long-term outcomes, cost-benefit analysis and
 clinical relevance of findings."
 
-It takes a lot of careful work to establish that a medical treatment has
+It takes much careful work to establish that a medical treatment has
 a beneficial effect. Knowing how to analyze randomized controlled trials
 is a crucial part of this work. Now that you know how to do that, you
 are well positioned to help medical and other professions establish
