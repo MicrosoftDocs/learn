@@ -27,8 +27,7 @@ In this unit, you'll modify the source language and you'll change the target lan
 
 6. Click F1 again, type, and select Azure IoT Device Workbench: Upload Device Code. It starts to compile and upload the code to DevKit.
 
-
-The DevKit reboots and starts running the code.
+    The DevKit reboots and starts running the code.
 
 
 ##  Test the project
