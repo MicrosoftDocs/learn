@@ -1,4 +1,4 @@
-Your Alpine Ski House web app is up and running, but now you need to show it to your boss. You are going to have to update the site and publish those updates to Azure.
+Your Alpine Ski House web app is up and running, but now you need to show it to your boss. You're going to have to update the site and publish those updates to Azure.
 
 ## Update your web app
 
@@ -25,7 +25,7 @@ Your Alpine Ski House web app is up and running, but now you need to show it to 
 
 1. In Solution Explorer, right-click the project.
 
-1. Select **Publish**. This should open a new tab named **AlpineSkiHouse**.
+1. Select **Publish**. A new tab named **AlpineSkiHouse** should open.
 
 1. Select the **Publish** button to deploy the latest changes.
 
