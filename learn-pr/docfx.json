@@ -84,6 +84,32 @@
                 ],
                 "dest": "modules"
             },
+             {
+                "src": "cela-accessibility",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+             {
+                "src": "commercial-marketplace",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },               
             {
                 "src": "cmu-cloud-admin",
                 "files": [
@@ -125,6 +151,19 @@
             },
             {
                 "src": "iot",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "language",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -252,7 +291,7 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
-            },                    
+            },
             {
                 "files": [
                     "**/*.md",
@@ -306,7 +345,7 @@
             "feedback_system": "GitHub",
             "feedback_github_repo": "MicrosoftDocs/learn",
             "clicktale": true,
-            "uhfHeaderId": "MSDocsHeader-Learn",
+            "uhfHeaderId": "MSDocsHeader-Learn"
         },
         "fileMetadata": {
             "sandbox-disabled": {},
