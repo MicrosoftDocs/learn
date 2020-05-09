@@ -593,8 +593,7 @@ simulation.
 -   $r$ measures the extent to which the scatter plot clusters around a
     straight-line.
 -   $r = 1$ if the scatter diagram is a perfect straight-line sloping
-    upwards, and $r = -1$ if the scatter diagram is a perfect straight
-    line sloping downwards.
+    upwards, and $r = -1$ if the scatter diagram is a perfect straight-line sloping downwards.
 
 The function `r_scatter` takes a value of $r$ as its argument and
 simulates a scatter plot with a correlation close to $r$. Because
@@ -1400,7 +1399,7 @@ correlation(sat2014, 'Critical Reading', 'Math')
 
 0.9847558411067434
 
-That's an high correlation. But it's important to note that
+That's a high correlation. But it's important to note that
 this does not reflect the strength of the relation between the Math and
 Critical Reading scores of *students*.
 
