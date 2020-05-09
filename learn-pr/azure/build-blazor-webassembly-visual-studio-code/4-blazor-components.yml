@@ -26,12 +26,12 @@ quiz:
     - content: "The JavaScript runtime deployed with your web app"
       isCorrect: false
       explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime using mono"
-  - content: "How is Blazor WebAssembly defined?"
+  - content: "How is Blazor WebAssembly UI defined?"
     choices:
-    - content: "In Razor pages as a mix of HTML and C#"
+    - content: "As Razor pages as a mix of HTML and C#"
       isCorrect: true
       explanation: "A razor file defines components that make up portions of UI for the app" 
-    - content: "In XAML pages using XML"
+    - content: "As XAML pages using XML"
       isCorrect: false
       explanation: "A razor file defines components that make up portions of UI for the app"
     - content: "In C# defined in .NET Standard libraries"
