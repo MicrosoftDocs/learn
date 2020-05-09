@@ -209,6 +209,7 @@ Squared Deviations from Average
 </tr>
 </tbody>
 </table>
+
 ``` {.python}
 # Step 4. Variance = the mean squared deviation from average
 
@@ -216,7 +217,7 @@ variance = np.mean(squared_deviations)
 variance
 ```
 
-13.1875
+    13.1875
 
 **Variance:** The mean squared deviation calculated above is called the
 *variance* of the values.

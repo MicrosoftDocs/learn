@@ -257,9 +257,3 @@ So the sample size should be at least $200^2 = 40,000$. That's an
 enormous sample! But that's what you need if you want to guarantee great
 accuracy with high confidence no matter what the population looks like.
 
-``` {.python}
-```
-the population looks like.
-
-``` {.python}
-```
