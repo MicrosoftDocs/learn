@@ -10,13 +10,14 @@ To send and receive text messages programmatically, you'll need a Twilio account
 
 1. Twilio will send you an email to verify your email address. In the email message, select **Confirm your email**, and then log in to Twilio with the email address and password that you provided in the preceding step.
 
-1. Enter your phone number for verification. 
+1. Enter your phone number for verification.
 
    To prevent phone numbers from being used for spam, Twilio free accounts let you send messages to verified phone numbers only.  
-   
+
 1. Twilio will send you a verification code via text message. On the **Verify Your Identity** page, verify your phone number by entering that code, and then select **Verify**.
 
-    ![A screenshot of the phone verification step in Twilio sign-up process](../media/twilio-verify-phone.png)
+    > [!div class="mx-imgBorder"]
+    > ![A screenshot of the phone verification step in Twilio sign-up process](../media/twilio-verify-phone.png)
 
 1. Work through the introductory questions until you get to the dashboard. These questions are used to create a first Twilio project for you to use.
 
@@ -31,7 +32,8 @@ To send and receive text messages programmatically, you'll need a Twilio account
    - Account SID
    - Auth Token
 
-   ![A screenshot of the Twilio dashboard, showing the values to be copied and stored](../media/twilio-dashboard.png)
+    > [!div class="mx-imgBorder"]
+    > ![A screenshot of the Twilio dashboard, showing the values to be copied and stored](../media/twilio-dashboard.png)
 
    You'll need these values later in this module.
 

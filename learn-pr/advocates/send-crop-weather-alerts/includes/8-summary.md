@@ -1,4 +1,4 @@
-You've successfully deployed a complete application that communicates via text message to set up and send temperature alerts.
+You've successfully deployed a complete application that communicates via text message to set up and send temperature alerts to help farmers make informed decisions about when to plant, water, or protect their crops.
 
 In this module you learned:
 
