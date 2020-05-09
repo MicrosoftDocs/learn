@@ -251,8 +251,8 @@ To deploy the bot back to the cloud, the easiest way is to use Visual Studio:
 
 1. After a successful publish, Visual Studio saves a deployment profile. For future deployments, you can just select the **Publish** button.
 
-  > [!div class="mx-imgBorder"]
-  > ![Visual Studio's publish window.](../media/publish-step-3.png)
+    > [!div class="mx-imgBorder"]
+    > ![Visual Studio's publish window.](../media/publish-step-3.png)
 
 After deployment, you can open your bot page on the Azure portal. Use the **Test in Web Chat** function to talk to your bot.
 
