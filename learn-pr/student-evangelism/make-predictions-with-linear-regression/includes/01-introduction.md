@@ -226,7 +226,7 @@ def r_scatter(r):
 ### Correlation
 
 In this section, we will develop a measure of how tightly clustered a
-scatter diagram is about a straight-line. Formally, this is called
+scatter diagram is about a straight line. Formally, this is called
 measuring *linear association*.
 
 The table `hybrid` contains data on hybrid passenger cars sold in the
@@ -350,7 +350,7 @@ Insight
 53
 </td>
 <td>
-Two Seater
+Two Seaters
 </td>
 </tr>
 <tr>
@@ -390,7 +390,7 @@ Insight
 53
 </td>
 <td>
-Two Seater
+Two Seaters
 </td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ Insight
 53
 </td>
 <td>
-Two Seater
+Two Seaters
 </td>
 </tr>
 <tr>
@@ -450,7 +450,7 @@ Insight
 53
 </td>
 <td>
-Two Seater
+Two Seaters
 </td>
 </tr>
 <tr>
@@ -507,7 +507,7 @@ hybrid.scatter('mpg', 'msrp')
 
 Along with the negative association, the scatter diagram of price versus
 efficiency shows a non-linear relation between the two variables. The
-points appear to be clustered around a curve, not around a straight-line.
+points appear to be clustered around a curve, not around a straight line.
 
 If we restrict the data just to the SUV class, however, the association
 between price and efficiency is still negative but the relation appears
@@ -591,9 +591,9 @@ simulation.
 
 -   The correlation coefficient $r$ is a number between $-1$ and 1.
 -   $r$ measures the extent to which the scatter plot clusters around a
-    straight-line.
--   $r = 1$ if the scatter diagram is a perfect straight-line sloping
-    upwards, and $r = -1$ if the scatter diagram is a perfect straight-line sloping downwards.
+    straight line.
+-   $r = 1$ if the scatter diagram is a perfect straight line sloping
+    upwards, and $r = -1$ if the scatter diagram is a perfect straight line sloping downwards.
 
 The function `r_scatter` takes a value of $r$ as its argument and
 simulates a scatter plot with a correlation close to $r$. Because
@@ -1103,7 +1103,7 @@ correlation(nonlinear, 'x', 'y')
 
 ### Correlation is Affected by Outliers
 
-Outliers can have a significant effect on correlation. Here is an example where
+Outliers can have a significant effect on correlation. Here is an example of
 a scatter plot for which $r$ is equal to 1 is turned into a plot for
 which $r$ is equal to 0, by the addition of just one outlying point.
 
@@ -1384,7 +1384,7 @@ Florida
 ... (41 rows omitted)
 </p>
 The scatter diagram of Math scores versus Critical Reading scores is
-tightly clustered around a straight-line; the correlation is close
+tightly clustered around a straight line; the correlation is close
 to 0.985.
 
 ``` {.python}
