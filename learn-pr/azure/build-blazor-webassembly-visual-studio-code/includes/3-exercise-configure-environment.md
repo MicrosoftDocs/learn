@@ -1,16 +1,14 @@
-In this exercise, we're going to install of the tools and components needed to build a Blazor WebAssembly client app locally using Visual Studio Code. This exercise assumes you already have Visual Studio Code installed, you can download Visual Studio Code for free for Windows, macOS, or Linux from https://code.visualstudio.com/.
+In this exercise, we're going to install of the tools and components needed to build a Blazor WebAssembly client app locally using Visual Studio Code. This exercise assumes you already have Visual Studio Code installed. You can download Visual Studio Code for free for Windows, macOS, or Linux from https://code.visualstudio.com/.
 
 ## Install tools and templates
 
-We'll start by downloading the .NET Core 3.1 SDK, it includes the .NET Core SDK, the .NET Core Runtime, and the ASP.NET Core runtime. We'll then install the Blazor WebAssembly template.
+We'll start by downloading the .NET Core 3.1 SDK, it includes the .NET Core SDK, the .NET Core Runtime, and the ASP.NET Core runtime. If you install Version 3.1.300, you'll be set. If you run an earlier version, we'll manually install the Blazor WebAssembly template. 
 
 1. Install **.NET Core 3.1** by downloading the latest version from https://dotnet.microsoft.com/download/dotnet-core/3.1 for your operating system
 
-    ![Image showing the Microsoft .NET Core SDK installer](../media/install-sdk.png)
-
 1. Open a terminal or command prompt on your local development machine 
 
-1. Execute dotnet new -i Microsoft.AspNetCore.Components.WebAssembly.Templates::3.2.0-rc1.20223.4
+1. If you're running .NET Core 3.1 SDK v3.1.300 you're all set. If you're using an earlier version, execute `dotnet new -i Microsoft.AspNetCore.Components.WebAssembly.Templates::3.2.0-rc1.20223.4` to install the Blazor WebAssembly template.
 
 ## Install Visual Studio Code extensions
 
@@ -58,20 +56,18 @@ To validate our setup, we'll make a new Blazor WebAssembly client web app using 
 
 1. Open a terminal or command prompt on your local development machine 
 
-1. Create and navigate to a temporary folder for your test application named **CICalc**
-
 1. In the command prompt or terminal `dotnet new blazorwasm -o CICalc`
 
 1. Navigate to the **CICalc** sub folder
 
-1. In the command prompt or terminal `dotnet publish –c Release`
-
-### Optional - run the app
+## Run the app
 
 1. From the command prompt or terminal `dotnet run` to launch the app
 
-1. Open a web browser to **http://localhost:5000**   
+1. Open a web browser to **https://localhost:5001**   
 
     ![Image showing the default Blazor WebAssembly client app running in a browser](../media/hello-blazor.png)
+
+1. Return to the terminal in Visual Studio code and press "Ctrl-C" to stop the app
 
 We'll use this Blazor app in the following exercises.
