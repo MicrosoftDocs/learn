@@ -57,5 +57,3 @@ percentile is the median, often used in summaries of income data. Other
 percentiles will be important in the method of estimation that we are
 about to develop. So we will start by defining percentiles carefully.
 
-``` {.python}
-```

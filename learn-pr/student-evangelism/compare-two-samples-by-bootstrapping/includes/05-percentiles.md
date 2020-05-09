@@ -272,19 +272,19 @@ For our `scores` data, those values are:
 percentile(25, scores)
 ```
 
-11
+    11
 
 ``` {.python}
 percentile(50, scores)
 ```
 
-16
+    16
 
 ``` {.python}
 percentile(75, scores)
 ```
 
-20
+    20
 
 Distributions of scores are sometimes summarized by the "middle 50%"
 interval, between the first and third quartiles.
