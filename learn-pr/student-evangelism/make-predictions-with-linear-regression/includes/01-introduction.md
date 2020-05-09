@@ -226,7 +226,7 @@ def r_scatter(r):
 ### Correlation
 
 In this section, we will develop a measure of how tightly clustered a
-scatter diagram is about a straight line. Formally, this is called
+scatter diagram is about a straight-line. Formally, this is called
 measuring *linear association*.
 
 The table `hybrid` contains data on hybrid passenger cars sold in the
@@ -507,12 +507,12 @@ hybrid.scatter('mpg', 'msrp')
 
 Along with the negative association, the scatter diagram of price versus
 efficiency shows a non-linear relation between the two variables. The
-points appear to be clustered around a curve, not around a straight line.
+points appear to be clustered around a curve, not around a straight-line.
 
 If we restrict the data just to the SUV class, however, the association
 between price and efficiency is still negative but the relation appears
 to be more linear. The relation between the price and acceleration of
-SUV's also shows a linear trend, but with a positive slope.
+SUVs also shows a linear trend, but with a positive slope.
 
 ``` {.python}
 suv = hybrid.where('class', 'SUV')
@@ -581,9 +581,9 @@ kinds of association that we have seen.
 
 The *correlation coefficient* measures the strength of the linear
 relationship between two variables. Graphically, it measures how
-clustered the scatter diagram is around a straight line.
+clustered the scatter diagram is around a straight-line.
 
-The term *correlation coefficient* isn't easy to say, so it is usually
+The term *correlation coefficient* isn't easy to say, so it is
 shortened to *correlation* and denoted by $r$.
 
 Here are some mathematical facts about $r$ that we will just observe by
@@ -591,13 +591,13 @@ simulation.
 
 -   The correlation coefficient $r$ is a number between $-1$ and 1.
 -   $r$ measures the extent to which the scatter plot clusters around a
-    straight line.
--   $r = 1$ if the scatter diagram is a perfect straight line sloping
+    straight-line.
+-   $r = 1$ if the scatter diagram is a perfect straight-line sloping
     upwards, and $r = -1$ if the scatter diagram is a perfect straight
     line sloping downwards.
 
 The function `r_scatter` takes a value of $r$ as its argument and
-simulates a scatter plot with a correlation very close to $r$. Because
+simulates a scatter plot with a correlation close to $r$. Because
 of randomness in the simulation, the correlation is not expected to be
 exactly equal to $r$.
 
@@ -1080,8 +1080,8 @@ children, on average.
 
 ### Correlation Measures *Linear* Association
 
-Correlation measures only one kind of association -- linear. Variables
-that have strong non-linear association might have very low correlation.
+Correlation measures only one kind of association--linear. Variables
+that have strong non-linear association might have low correlation.
 Here is an example of variables that have a perfect quadratic relation
 $y = x^2$ but have correlation equal to 0.
 
@@ -1104,7 +1104,7 @@ correlation(nonlinear, 'x', 'y')
 
 ### Correlation is Affected by Outliers
 
-Outliers can have a big effect on correlation. Here is an example where
+Outliers can have a significant effect on correlation. Here is an example where
 a scatter plot for which $r$ is equal to 1 is turned into a plot for
 which $r$ is equal to 0, by the addition of just one outlying point.
 
@@ -1385,7 +1385,7 @@ Florida
 ... (41 rows omitted)
 </p>
 The scatter diagram of Math scores versus Critical Reading scores is
-very tightly clustered around a straight line; the correlation is close
+tightly clustered around a straight-line; the correlation is close
 to 0.985.
 
 ``` {.python}
@@ -1400,12 +1400,12 @@ correlation(sat2014, 'Critical Reading', 'Math')
 
 0.9847558411067434
 
-That's an extremely high correlation. But it's important to note that
+That's an high correlation. But it's important to note that
 this does not reflect the strength of the relation between the Math and
 Critical Reading scores of *students*.
 
 The data consist of average scores in each state. But states don't take
-tests -- students do. The data in the table have been created by lumping
+tests--students do. The data in the table have been created by lumping
 all the students in each state into a single point at the average values
 of the two variables in that state. But not all students in the state
 will be at that point, as students vary in their performance. If you
@@ -1416,7 +1416,7 @@ Critical Reading scores of the students will be *lower* than the value
 calculated based on state averages.
 
 Correlations based on aggregates and averages are called *ecological
-correlations* and are frequently reported. As we have just seen, they
+correlations* and are frequently reported. As we have seen, they
 must be interpreted with care.
 
 ### Serious or tongue-in-cheek?
@@ -1430,8 +1430,7 @@ American](http://blogs.scientificamerican.com/the-curious-wavefunction/chocolate
 responded seriously whereas
 [others](http://www.reuters.com/article/2012/10/10/us-eat-chocolate-win-the-nobel-prize-idUSBRE8991MS20121010#vFdfFkbPVlilSjsB.97)
 were more relaxed. You are welcome to make your own decision! The
-following graph, provided in the paper, should motivate you to go and
-take a look.
+following graph, provided in the paper, should motivate you to take a look.
 
 ``` {.python}
 
@@ -1443,8 +1442,7 @@ Image("../../../images/chocoNobel.png")
 
 ``` {.python}
 ```
-d in the paper, should motivate you to go and
-take a look.
+d in the paper, should motivate you to take a look.
 
 ``` {.python}
 

@@ -63,7 +63,7 @@ heights_with_predictions.scatter('MidParent')
 ### Measuring in Standard Units
 
 Let's see if we can find a way to identify this line. First, notice that
-linear association doesn't depend on the units of measurement -- we
+linear association doesn't depend on the units of measurement--we
 might as well measure both variables in standard units.
 
 ``` {.python}
@@ -232,15 +232,15 @@ understand the prediction process by just working in standard units.
 
 ### Identifying the Line in Standard Units
 
-Galton's scatter plot has a *football* shape -- that is, it is roughly
+Galton's scatter plot has a *football* shape--that is, it is roughly
 oval like an American football. Not all scatter plots are football
-shaped, not even those that show linear association. But in this section
+shaped, not even those that show linear association. But in this section,
 we will pretend we are Galton and work only with football shaped scatter
 plots. In the next section, we will generalize our analysis to other
 shapes of plots.
 
 Here is a football shaped scatter plot with both variables measured in
-standard units. The 45 degree line is shown in red.
+standard units. The 45-degree line is shown in red.
 
 ``` {.python}
 r = 0.5
@@ -260,7 +260,7 @@ plots.ylabel('y in standard units');
 
 ![png](../media/77-regression-line-18-0.png)
 
-But the 45 degree line is not the line that picks off the centers of the
+But the 45-degree line is not the line that picks off the centers of the
 vertical strips. You can see that in the figure below, where the
 vertical line at 1.5 standard units is shown in black. The points on the
 scatter plot near the black line all have heights roughly in the -2 to 3
@@ -284,7 +284,7 @@ plots.ylabel('y in standard units');
 
 ![png](../media/77-regression-line-20-0.png)
 
-So the 45 degree line is not the "graph of averages." That line is the
+So the 45-degree line is not the "graph of averages." That line is the
 green one shown below.
 
 ``` {.python}
@@ -307,19 +307,19 @@ plots.ylabel('y in standard units');
 
 Both lines go through the origin (0, 0). The green line goes through the
 centers of the vertical strips (at least roughly), and is *flatter* than
-the red 45 degree line.
+the red 45-degree line.
 
-The slope of the 45 degree line is 1. So the slope of the green "graph
+The slope of the 45-degree line is 1. So the slope of the green "graph
 of averages" line is a value that is positive but less than 1.
 
-What value could that be? You've guessed it -- it's $r$.
+What value could that be? You've guessed it--it's $r$.
 
 ### The Regression Line, in Standard Units
 
 The green "graph of averages" line is called the *regression line*, for
 reasons we will explain shortly. But first, let's simulate some football
 shaped scatter plots with different values of $r$, and see how the line
-changes. In each case, the red 45 degree line has been drawn for
+changes. In each case, the red 45-degree line has been drawn for
 comparison.
 
 The function that performs the simulation is called `regression_line`
@@ -354,19 +354,19 @@ regression_line(0.6)
 
 ![png](../media/77-regression-line-27-0.png)
 
-When $r$ is close to 1, the scatter plot, the 45 degree line, and the
-regression line are all very close to each other. But for more moderate
+When $r$ is close to 1, the scatter plot, the 45-degree line, and the
+regression line are all close to each other. But for more moderate
 values of $r$, the regression line is noticeably flatter.
 
 ### The Regression Effect
 
-In terms of prediction, this means that for a parents whose midparent
+In terms of prediction, this means that for a parent whose midparent
 height is at 1.5 standard units, our prediction of the child's height is
-somewhat *less* than 1.5 standard units. If the midparent height is 2
-standard units, we predict that the child's height will be somewhat less
+*less* than 1.5 standard units. If the midparent height is 2
+standard units, we predict that the child's height will be less
 than 2 standard units.
 
-In other words, we predict that the child will be somewhat closer to
+In other words, we predict that the child will be closer to
 average than the parents were.
 
 This didn't please Sir Francis Galton. He had been hoping that
@@ -377,7 +377,7 @@ tall, on average. Frustrated, Galton called this phenomenon "regression
 to mediocrity."
 
 Galton also noticed that exceptionally short parents had children who
-were somewhat taller relative to their generation, on average. In
+were taller relative to their generation, on average. In
 general, individuals who are away from average on one variable are
 expected to be not quite as far away from average on the other. This is
 called the *regression effect*.
@@ -475,7 +475,7 @@ galton_slope*70.48 + galton_intercept
 67.55743656799862
 
 Our original prediction, created by taking the average height of all
-children who had midparent heights close to 70.48, came out to be pretty
+children who had midparent heights close to 70.48, came out to be
 close: 67.63 inches compared to the regression line's prediction of
 67.55 inches.
 
@@ -717,7 +717,7 @@ heights_with_predictions.scatter('MidParent')
 ![png](../media/77-regression-line-43-0.png)
 
 The grey dots show the regression predictions, all on the regression
-line. Notice how the line is very close to the gold graph of averages.
+line. Notice how the line is close to the gold graph of averages.
 For these data, the regression line does a good job of approximating the
 centers of the vertical strips.
 
@@ -760,7 +760,7 @@ which it is measured. Our example comes from the familiar dataset about
 mothers who gave birth in a hospital system. The scatter plot of
 pregnancy weights versus heights looks like a football that has been
 used in one game too many, but it's close enough to a football that we
-can justify putting our fitted line through it. In later sections we
+can justify putting our fitted line through it. In later sections, we
 will see how to make such justifications more formal.
 
 ``` {.python}
@@ -846,7 +846,7 @@ decreases.
 ### Endnote
 
 Even though we won't establish the mathematical basis for the regression
-equation, we can see that it gives pretty good predictions when the
+equation, we can see that it gives good predictions when the
 scatter plot is football shaped. It is a surprising mathematical fact
 that no matter what the shape of the scatter plot, the same equation
 gives the "best" among all straight lines. That's the topic of the next
