@@ -30,7 +30,7 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
     - **Application Insights:** Specifies if you want to use Application Insights for your application. For this exercise, we recommend that you choose **None.**
 
-1. Click the **Create** button to publish your application. This action will take several seconds to be completed.
+1. Click the **Create** button to publish your application. This action will take several seconds to complete.
 
 1. After several seconds, the dialog window will disappear. Press the **Publish** button to publish to Azure.
 
