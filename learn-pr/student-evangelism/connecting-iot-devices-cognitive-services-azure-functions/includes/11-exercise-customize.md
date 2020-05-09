@@ -23,7 +23,7 @@ In this unit, you'll modify the source language and you'll change the target lan
 
     ![An illustration is showing how to deploy Azure function to the cloud.](../media/deploy-azure-function-2.png)
 
-Make sure the deployment is successful. 
+    Make sure the deployment is successful. 
 
 6. Click F1 again, type, and select Azure IoT Device Workbench: Upload Device Code. It starts to compile and upload the code to DevKit.
 
