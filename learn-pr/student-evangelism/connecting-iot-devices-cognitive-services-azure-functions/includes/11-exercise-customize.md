@@ -32,7 +32,6 @@ In this unit, you'll modify the source language and you'll change the target lan
 
 ##  Test the project
 
-
 After app initialization, follow the instructions on the DevKit screen. The default source language is Chinese.
 
 To select another language for translation:
