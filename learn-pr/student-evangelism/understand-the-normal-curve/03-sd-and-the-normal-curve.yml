@@ -9,6 +9,7 @@ metadata:
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
+  show_latex: true
 durationInMinutes: 5
 content: |
   [!include[](includes/03-sd-and-the-normal-curve.md)]

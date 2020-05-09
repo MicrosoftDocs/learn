@@ -29,12 +29,12 @@ wheel = Table().with_columns(
 )
 ```
 
-Very few of the data histograms that we have seen in this course have
+Few of the data histograms that we have seen in this course have
 been bell shaped. When we have come across a bell shaped distribution,
 it has almost invariably been an empirical histogram of a statistic
 based on a random sample.
 
-The examples below show two very different situations in which an
+The examples below show two different situations in which an
 approximate bell shape appears in such histograms.
 
 ### Net Gain in Roulette
@@ -380,8 +380,8 @@ the SD is the distance from the center to a point of inflection. The
 center is roughly -\$20, which means that the SD of the distribution is
 around \$20.
 
-In the next section we will see where the \$20 comes from. For now,
-let's confirm our observation by simply calculating the SD of the 10,000
+In the next section, we will see where the \$20 comes from. For now,
+let's confirm our observation by calculating the SD of the 10,000
 simulated net gains:
 
 ``` {.python}
@@ -413,7 +413,7 @@ united.select('Delay').hist(bins=np.arange(-20, 300, 10))
 
 The mean delay was about 16.6 minutes and the SD was about 39.5 minutes.
 Notice how large the SD is, compared to the mean. Those large deviations
-on the right have an effect, even though they are a very small
+on the right have an effect, even though they are a small
 proportion of the data.
 
 ``` {.python}
@@ -426,7 +426,7 @@ mean_delay, sd_delay
 (16.658155515370705, 39.480199851609314)
 
 Now suppose we sampled 400 delays at random with replacement. You could
-sample without replacement if you like, but the results would be very
+sample without replacement if you like, but the results would be
 similar to with-replacement sampling. If you sample a few hundred out of
 13,825 without replacement, you hardly change the population each time
 you pull out a value.
@@ -474,7 +474,7 @@ results.hist(bins=np.arange(10, 25, 0.5))
 ![png](../media/72-central-limit-theorem-33-0.png)
 
 Once again, we see a rough bell shape, even though we are drawing from a
-very skewed distribution. The bell is centered somewhere between 16 ad
+skewed distribution. The bell is centered somewhere between 16 ad
 17, as we expect.
 
 ### Central Limit Theorem
@@ -492,7 +492,7 @@ be applied to random samples *regardless of the distribution of the
 population* are very powerful, because in data science we rarely know
 the distribution of the population.
 
-The Central Limit Theorem makes it possible to make inferences with very
+The Central Limit Theorem makes it possible to make inferences with
 little knowledge about the population, provided we have a large random
 sample. That is why it is central to the field of statistical inference.
 
