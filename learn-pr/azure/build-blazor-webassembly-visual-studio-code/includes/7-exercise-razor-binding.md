@@ -77,7 +77,7 @@ We're now ready to bind the variables we defined in the `code` markup to our HTM
 
 1. In the Visual Studio Code terminal, execute `dotnet run` to launch the app
 
-1. Open a web browser to **http://localhost:5000**  
+1. Open a web browser to **https://localhost:5001**  
 
 1. Use the calculator - try changing the input parameters and press the calculate button.
 
