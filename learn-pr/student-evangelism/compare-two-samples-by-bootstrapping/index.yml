@@ -35,7 +35,7 @@ units:
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.bootstrap
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.confidence-intervals
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.using-confidence-intervals
-- learn.student-evangelism.compare-two-samples-by-bootstrapping.mini-lab
+- learn.student-evangelism.compare-two-samples-by-bootstrapping.mini-labs
 - learn.student-evangelism.compare-two-samples-by-bootstrapping.summary
 badge:
   uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.badge
