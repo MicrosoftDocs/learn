@@ -318,9 +318,3 @@ $$
 \frac{\mbox{variance of fitted values}}{\mbox{variance of }y} ~=~ r^2
 $$
 
-``` {.python}
-```
-$$
-
-``` {.python}
-```

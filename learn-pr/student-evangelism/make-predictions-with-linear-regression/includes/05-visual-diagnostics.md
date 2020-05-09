@@ -527,11 +527,3 @@ original scatter plot.
 at 0, the regression estimates are not equally accurate across the range
 of the predictor variable.**
 
-``` {.python}
-```
-tion about the horizontal line
-at 0, the regression estimates are not equally accurate across the range
-of the predictor variable.**
-
-``` {.python}
-```

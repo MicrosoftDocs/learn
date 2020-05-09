@@ -1049,16 +1049,3 @@ plots.plot([0, 7e5], [0, 0]);
 
 ![png](../media/82-multiple-regression-41-0.png)
 
-``` {.python}
-```
-, 0]);
-```
-
-![png](82_Multiple_Regression_files/82_Multiple_Regression_41_0.png)
-
-``` {.python}
-```
-sion_files/82_Multiple_Regression_41_0.png)
-
-``` {.python}
-```
