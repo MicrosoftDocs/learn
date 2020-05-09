@@ -310,7 +310,7 @@ The data below are Galton's carefully collected measurements on the
 heights of parents and their adult children. Each row corresponds to one
 adult child. The variables are a numerical code for the family, the
 heights (in inches) of the father and mother, a "midparent height" which
-is a weighted average [\[1\]](#footnotes) of the height of the two
+is a weighted average of the height of the two
 parents, the number of children in the family, as well as the child's
 birth rank (1 = oldest), gender, and height.
 
@@ -1097,7 +1097,8 @@ methods that now have powerful applications in diverse settings. The
 modern field of *machine learning* includes the automation of such
 methods to make predictions based on vast and rapidly evolving datasets.
 
-<a id='footnotes'></a> \#\#\#\#\# Footnotes \[1\] Galton multiplied the
+> [!NOTE]
+> Galton multiplied the
 heights of all the women by 1.08 before taking the average height of the
 men and the women. For a discussion of this, see
 [Chance](http://chance.amstat.org/2013/09/1-pagano/), a magazine

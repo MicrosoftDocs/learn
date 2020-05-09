@@ -191,6 +191,3 @@ np.count_nonzero(tosses == 'Heads')
 ```
 
     3
-
-``` {.python}
-```

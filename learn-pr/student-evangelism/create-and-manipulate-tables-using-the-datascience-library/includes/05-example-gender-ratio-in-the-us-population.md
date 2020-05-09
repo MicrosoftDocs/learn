@@ -39,7 +39,7 @@ us_pop = partial_census_table.relabeled('POPESTIMATE2010', '2010').relabeled('PO
 ## Example: Trends in Gender
 
 We are now equipped with enough coding skills to examine features and
-trends in subgroups of the U.S. population. In this example, we will
+trends in subgroups of the United States population. In this example, we will
 look at the distribution of males and females across age groups. We will
 continue using the `us_pop` table from the previous section.
 
@@ -383,7 +383,7 @@ AGE
 </tr>
 </tbody>
 </table>
-Row 0 of `all_ages` contains the total U.S. population in each of the
+Row 0 of `all_ages` contains the total United States population in each of the
 two years. The United States had just under 319 million in 2014.
 
 Row 1 contains the counts for males and Row 2 for females. Compare these
@@ -533,7 +533,7 @@ AGE
 </table>
 As before, we can convert these counts to percents out of the total
 numbers of infants. The resulting table shows that in 2014, just over
-51% of infants in the U.S. were male.
+51% of infants in the United States were male.
 
 ``` {.python}
 infants_2014 = infants.column('2014').item(0)
@@ -1369,7 +1369,7 @@ The ratios are almost 1 (signifying close to equal numbers of males and
 females) for ages 0 through 60, but they start shooting up dramatically
 (more females than males) starting at about age 65.
 
-That females outnumber males in the U.S. is partly due to the marked
+That females outnumber males in the United States is partly due to the marked
 gender imbalance in favor of women among senior citizens.
 
 ``` {.python}

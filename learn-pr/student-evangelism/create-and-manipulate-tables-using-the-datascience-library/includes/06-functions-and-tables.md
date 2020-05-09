@@ -256,9 +256,8 @@ print("Rounded to the default number of decimal places:", percents(parts))
     Rounded to 1 decimal place: [28.6 14.3 57.1]
     Rounded to the default number of decimal places: [28.57 14.29 57.14]
 
-### Note: Methods
-
-Functions are called by placing argument expressions in parentheses
+> [!NOTE]
+> Functions are called by placing argument expressions in parentheses
 after the function name. Any function that is defined in isolation is
 called in this way. You have also seen examples of methods, which are
 like functions but are called using dot notation, such as
@@ -266,11 +265,3 @@ like functions but are called using dot notation, such as
 be called using the function name first, passing in all of the
 arguments.
 
-``` {.python}
-```
-on}
-```
-on}
-```
-on}
-```

@@ -1256,7 +1256,7 @@ born.
 
 -   Those who were in the 64-67 age group in 2010 were born in the years
     1943 to 1946. The attack on Pearl Harbor was in late 1941, and by
-    1942 U.S. forces were heavily engaged in a massive war that ended
+    1942 United States forces were heavily engaged in a massive war that ended
     in 1945.
 
 -   Those who were 64 to 67 years old in 2014 were born in the years
