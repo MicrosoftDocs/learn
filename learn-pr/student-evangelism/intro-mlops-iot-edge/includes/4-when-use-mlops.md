@@ -1,4 +1,4 @@
-Here, we'll discuss how you can decide whether MLOPs for IoT Edge is the right choice for your machine learning applications. We will analyze the suitability based on the following criteria:
+Here, we'll discuss how you can decide whether MLOps for IoT Edge is the right choice for your machine learning applications. We'll analyze the suitability based on the following criteria:
 
 **Collaborative considerations:** MLOps enables data scientists and developers to collaborate using the same DevOps processes. Hence, most teams need MLOps to collaborate and increase the pace of model development and deployment. Even if a team is small (say comprising five developers), MLOps can help to foster good engineering practices and future saleability.
 
