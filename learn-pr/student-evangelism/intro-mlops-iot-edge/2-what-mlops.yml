@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-mlops-iot-edge.what-mlops
+title: What is MLOps?
+metadata:
+  title: What is MLOps?
+  description: In this section, we provide a definition of the product and discuss the value proposition of the product.
+  ms.date: 05/10/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 7 # dummy number at present
+content: |
+  [!include[](includes/2-what-mlops.md)]
