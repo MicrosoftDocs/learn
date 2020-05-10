@@ -1,4 +1,3 @@
-
 An excellent way to avoid confounding is to assign individuals to the
 treatment and control groups *at random*, and then administer the
 treatment to those who were assigned to the treatment group.

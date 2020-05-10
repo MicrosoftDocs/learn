@@ -214,7 +214,7 @@ delay_bins = np.append(np.arange(-20, 301, 10), 600)
 united.hist('Delay', bins = delay_bins, unit = 'minute')
 ```
 
-![png](../media/52-sampling-from-a-population-6-0.png)
+![png](../media/52-sampling-from-population-6-0.png)
 
 For the purposes of this section, it is enough to zoom in on the bulk of
 the data and ignore the 0.8% of flights that had delays of more than 200
@@ -232,7 +232,7 @@ delay_bins = np.arange(-20, 201, 10)
 united.hist('Delay', bins = delay_bins, unit = 'minute')
 ```
 
-![png](../media/52-sampling-from-a-population-9-0.png)
+![png](../media/52-sampling-from-population-9-0.png)
 
 The height of the \[0, 10) bar is just under 3% per minute, which means
 that just under 30% of the flights had delays between 0 and 10 minutes.
@@ -264,13 +264,13 @@ population. Compare these histograms to the population histogram above.
 empirical_hist_delay(10)
 ```
 
-![png](../media/52-sampling-from-a-population-15-0.png)
+![png](../media/52-sampling-from-population-15-0.png)
 
 ``` {.python}
 empirical_hist_delay(100)
 ```
 
-![png](../media/52-sampling-from-a-population-16-0.png)
+![png](../media/52-sampling-from-population-16-0.png)
 
 The most consistently visible discrepancies are among the values that
 are rare in the population. In our example, those values are in the
@@ -282,7 +282,7 @@ proportions.
 empirical_hist_delay(1000)
 ```
 
-![png](../media/52-sampling-from-a-population-18-0.png)
+![png](../media/52-sampling-from-population-18-0.png)
 
 ### Convergence of the Empirical Histogram of the Sample
 
