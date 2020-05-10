@@ -10,7 +10,7 @@ For your first task in this exercise, you'll delete the virtual machine that you
 
 Your first step is to remove the existing virtual machine you created in the previous exercise. Using the Cloud Shell, use the following command to delete the existing virtual machine:
 
-```aszurecli
+```azurecli
 az vm delete \
     --name my-linux-vm \
     --yes \
