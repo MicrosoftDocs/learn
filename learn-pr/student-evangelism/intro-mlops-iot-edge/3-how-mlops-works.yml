@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.intro-mlops-iot-edge.how-mlops-work-iot-edge
+uid: learn.oxford.intro-mlops-iot-edge.how-mlops-works-iot-edge
 title: How MLOps works for IoT Edge
 metadata:
   title: How MLOps works for IoT Edge
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-edge
 durationInMinutes: 10 # dummy number at present
 content: |
-  [!include[](includes/3-how-mlops-work.md)]
+  [!include[](includes/3-how-mlops-works.md)]
