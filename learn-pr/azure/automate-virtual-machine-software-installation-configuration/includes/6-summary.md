@@ -2,8 +2,6 @@ In the past, your company's operations team was faced with the tasks of creating
 
 In this module, you've seen some of the tools that are available on Azure to automate the creation of Linux and Windows virtual machines, with all of the the required infrastructure that's necessary to host dynamic content on your web servers. Azure has helped you to simply your team's processes, and your team is more productive and efficient. Your team can deliver a great experience to your customers by guaranteeing their servers are and and running running and configured correctly.
 
-When you're working in your own subscription, it's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.
-
 ## Clean up resources
 
 [!include[](../../../includes/azure-subscription-cleanup.md)]
