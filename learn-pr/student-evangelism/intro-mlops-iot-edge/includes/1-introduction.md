@@ -12,11 +12,11 @@ The end-to-end ML life cycle is as below:
 
 4. Deploy and monitor performance so you can release models with confidence and know when to retrain.
 
-4. Observe data drift and feedback model information to improve future training.
+5. Observe data drift and feedback model information to improve future training.
 
 The deployment of machine learning models in production presents one of the most significant pain points in the workflow. The deployment process presents additional challenges when the target platform is IoT Edge. These include: 
 
-- IoT machine learning models are rapidly changing, and hence they degrade faster (with respect to data drift of the current data). Therefore, they need more frequent and automatic retraining
+- IoT machine learning models are rapidly changing, and hence they degrade faster (with respect to data drift of the current data). Therefore, they need more frequent and automatic retraining.
 
 - IoT machine learning models need to be deployed on different kind of target platforms, and you need to leverage the capabilities of these platforms in terms of performance, security, so on.
 
