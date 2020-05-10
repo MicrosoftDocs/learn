@@ -30,3 +30,4 @@ products:
 - azure-iot-edge
 units:
 - learn.oxford.intro-mlops-iot-edge.introduction
+- learn.oxford.intro-mlops-iot-edge.what-mlops
