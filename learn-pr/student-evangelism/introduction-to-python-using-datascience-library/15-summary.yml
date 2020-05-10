@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-to-python-using-datascience-library.summary
+title: Summary
+metadata:
+  title: Summary
+  description: An overview of content covered in this module.
+  ms.date: 02/02/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: Azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/15-summary.md)]

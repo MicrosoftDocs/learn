@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.student-evangelism.create-manipulate-tables-using-datascience-library
+metadata:
+  title: Create and Manipulate Tables Using the datascience Library
+  description: Learn
+  ms.date: 03/12/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Create and Manipulate Tables Using the datascience Library
+summary: Learn the basics of table manipulation in the datascience library
+abstract: |
+  In this module, you will:
+  - Tables as a fundamental object type used for representing data sets.
+  - Make Tables in Python using the datascience Library.
+  - Explore different datasets using the datascience Library.
+  - Manipulate Tables & Wrangle data using various datascience Library functions.
+prerequisites: None
+iconUrl: /learn/achievements/student-evangelism/create-manipulate-tables-using-datascience-library.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.setup
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.introduction
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.sorting-rows
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.selecting-rows
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.example-trends-population-of-united-states
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.example-gender-ratio-us-population
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.functions-tables
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.applying-function-to-column
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.classifying-by-one-variable
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.cross-classifying-by-more-than-one-variable
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.joining-tables-by-columns
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.bike-sharing-bay-area
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.randomness
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.conditional-statements
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.iteration
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.mini-labs
+- learn.student-evangelism.create-manipulate-tables-using-datascience-library.summary
+badge:
+  uid: learn.create-manipulate-tables-using-datascience-library.badge
