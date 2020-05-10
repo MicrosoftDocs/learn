@@ -22,8 +22,6 @@ understanding a particular domain, data scientists learn to ask
 appropriate questions about their data and correctly interpret the
 answers provided by our inferential and computational tools.
 
-## Chapter 1: Introduction
-
 Data are descriptions of the world around us, collected through
 observation and stored on computers. Computers enable us to infer
 properties of the world from these descriptions. Data science is the
@@ -124,8 +122,6 @@ The world has too many unanswered questions and difficult challenges to
 leave this critical reasoning to only a few specialists. All educated
 members of society can build the capacity to reason about data. The
 tools, techniques, and data sets are all readily available; this text
-aims to make them accessible to everyone.
-all readily available; this text
 aims to make them accessible to everyone.
 
 ## Learning Objectives
