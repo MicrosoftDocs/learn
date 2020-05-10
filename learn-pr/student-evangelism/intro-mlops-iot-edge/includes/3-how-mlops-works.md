@@ -10,26 +10,26 @@ We describe the role of the individual components below.
 
 **Model packaging**: involves capturing the dependencies required for the model to run in its target inferencing environment. Model packaging is implemented through containers. Containers span both the cloud and intelligent edge. You can implement your models using reusable formats such as Open Neural Network Exchange (ONNX).
 
-**Model validation**: You can validate your model in a variety of ways, such as basic unit tests for the training code, an A/B comparison against a previous version of a model, or an end-to-end functional and performance test suite.
+**Model validation**: You can validate your model in different kinds of ways, such as basic unit tests for the training code, an A/B comparison against a previous version of a model, or an end-to-end functional and performance test suite.
 
-**Deployment:** Enables you to deploy new models to a variety of platforms across including IoT Edge. You will aim to understand and leverage the unique characteristics of the target platform.
+**Deployment:** Enables you to deploy new models to different kinds of platforms across including IoT Edge. You'll aim to understand and leverage the unique characteristics of the target platform.
 
 **Monitoring:** You need the ability to monitor your models in a production environment. You can understand and improve the performance of your models. You can also monitor for data drift between your training dataset and inference data so that you know when your model needs to be retrained.
 
 **Retraining**: Based on the monitoring criteria, you need the ability to retrain your models.
 
-**IoT considerations:** In addition to the above, you need special considerations for IoT deployment. From the perspective of MLOps, IoT Edge is another deployment platform. However, if you deploy models on IoT Edge, you need to cater to some additional considerations MLOPs models, which target IoT edge, should be capable of running offline. IoT models are more susceptible to data drift due to the high rate of data. IoT machine learning models need to be deployed on a variety of target platforms, and you need to leverage the capabilities of these platforms.  
+**IoT considerations:** In addition to the above, you need special considerations for IoT deployment. From the perspective of MLOps, IoT Edge is another deployment platform. However, if you deploy models on IoT Edge, you need to cater to some additional considerations MLOps models, which target IoT Edge, should be capable of running offline. IoT models are more susceptible to data drift due to the high rate of data. IoT machine learning models need to be deployed on a variety of target platforms, and you need to leverage the capabilities of these platforms.  
 
 Other capabilities of MLOps are also applicable to the IoT Edge environment, such as profiling, model optimization, and the ability to deploy models as containers. When using a model as a web service or IoT Edge device, you provide the following items:
 
 1. The actual models being deployed
-2. An entry script which accepts the request, uses the model(s) to score the data, and return a response
+2. An entry script that accepts the request, uses the model(s) to score the data, and return a response
 3. An Azure Machine Learning environment that describes the pip and Conda dependencies required by the model(s)
-4. The entry script and any additional assets such as text, data, etc. that are required by the model(s) and entry script
+4. The entry script and any additional assets such as text, data, so on. that are required by the model(s) and entry script
 
 You also provide the configuration of the target deployment platform. When the image is created, components required by Azure Machine Learning are also added. For example, assets needed to run the web service and interact with IoT Edge.
 
-Let us now reconsider the Oil and Gas industry scenario we discussed previously. To recall, you are responsible for maintaining thousands of oil and gas pumps operating in remote/offshore locations. Your team must rapidly identify and fix faults in the field. You want to build and deploy a predictive maintenance system for the pumps using the data captured from the sensors to create up to date machine learning models. The models should reflect the current state of the data i.e. the model should not be stale with respect to the data drift. Finally, because you are using an IoT Edge scenario, the models should be able to run on edge devices (if necessary in an offline mode).
+Let us now reconsider the Oil and Gas industry scenario we discussed previously. To recall, you're responsible for maintaining thousands of oil and gas pumps operating in remote/offshore locations. Your team must rapidly identify and fix faults in the field. You want to build and deploy a predictive maintenance system for the pumps using the data captured from the sensors to create up-to-date machine learning models. The models should reflect the current state of the data that is, the model shouldn't be stale with respect to the data drift. Finally, because you're using an IoT Edge scenario, the models should be able to run on edge devices (if necessary in an offline mode).
 
 To address this scenario using MLOps for Edge devices, you can consider three pipelines.
 
@@ -43,11 +43,11 @@ To address this scenario using MLOps for Edge devices, you can consider three pi
 
 ![The illustration shows the flow of predictive-maintenance](../media/predictive-maintenance-step1.jpg)
 
-**Step 2 - Package and Deploy**: In this step, you package, validate and deploy models. In this pipeline, you will operationalize the scoring image and promote it safely across different environments. The pipeline gets triggered every time a new artifact is available. The registered model is packaged together with a scoring script and Python dependencies (Conda YAML file) into an operationalization Docker image. The image automatically gets versioned through Azure Container Registry. The scoring image is deployed on container instances where it can be tested. If it is successful, the scoring image is deployed as a web service in the production environment.
+**Step 2 - Package and Deploy**: In this step, you package, validate, and deploy models. In this pipeline, you'll operationalize the scoring image and promote it safely across different environments. The pipeline gets triggered every time a new artifact is available. The registered model is packaged together with a scoring script and Python dependencies (Conda YAML file) into an operationalization Docker image. The image automatically gets versioned through Azure Container Registry. The scoring image is deployed on container instances where it can be tested. If it's successful, the scoring image is deployed as a web service in the production environment.
 
 ![The illustration shows the flow of predictive-maintenance](../media/predictive-maintenance-step2.jpg)
 
-**Step 3 - Monitor and Retrain:** Explain & observe model behaviour and automate the retraining process. The machine learning pipeline orchestrates the process of retraining the model asynchronously. Retraining can be triggered on a schedule or when new data becomes available by calling the published pipeline REST endpoint from the previous step. In this stage, you retrain, evaluate and register the model.
+**Step 3 - Monitor and Retrain:** Explain & observe model behavior and automate the retraining process. The machine learning pipeline orchestrates the process of retraining the model asynchronously. Retraining can be triggered on a schedule or when new data becomes available by calling the published pipeline REST endpoint from the previous step. In this stage, you retrain, evaluate, and register the model.
 
 ![The illustration shows the flow of predictive-maintenance](../media/predictive-maintenance-step3.jpg)
 
