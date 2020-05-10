@@ -28,7 +28,7 @@ units:
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.setup
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.introduction
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.multiple-categories
-- learn.student-evangelism.test-hypothesis-by-simulating-statistics.decisions-and-uncertainty
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.decisions-uncertainty
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.error-probabilities
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.mini-labs
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.summary
