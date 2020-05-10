@@ -238,6 +238,7 @@ pink
 </tr>
 </tbody>
 </table>
+
 ### Two Variables: Finding a Characteristic of Each Paired Category
 
 A second argument aggregates all other columns that are not in the list

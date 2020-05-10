@@ -129,6 +129,7 @@ F
 </tr>
 </tbody>
 </table>
+
 ### `apply`
 
 To cut off each of the ages at 100, we will use the a new Table method.
@@ -242,6 +243,7 @@ F
 </tr>
 </tbody>
 </table>
+
 ### Functions as Values
 
 We've seen that Python has many kinds of values. For example, `6` is a

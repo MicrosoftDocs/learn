@@ -998,6 +998,7 @@ Percent Change
 <p>
 ... (296 rows omitted)
 </p>
+
 **Sorting the data.** Let us sort the table in decreasing order of the
 absolute change in population.
 

@@ -469,6 +469,7 @@ Proportion
 </tr>
 </tbody>
 </table>
+
 ### Proportions of Boys and Girls among Infants
 
 When we look at infants, however, the opposite is true. Let's define

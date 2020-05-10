@@ -92,6 +92,7 @@ chocolate
 </tr>
 </tbody>
 </table>
+
 ``` {.python}
 cones.group('Flavor')
 ```
