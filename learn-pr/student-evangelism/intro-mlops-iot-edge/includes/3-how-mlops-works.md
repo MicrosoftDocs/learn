@@ -22,10 +22,10 @@ We describe the role of the individual components below.
 
 Other capabilities of MLOps are also applicable to the IoT Edge environment, such as profiling, model optimization, and the ability to deploy models as containers. When using a model as a web service or IoT Edge device, you provide the following items:
 
-1. The actual models being deployed
-2. An entry script that accepts the request, uses the model(s) to score the data, and return a response
-3. An Azure Machine Learning environment that describes the pip and Conda dependencies required by the model(s)
-4. The entry script and any additional assets such as text, data, so on. that are required by the model(s) and entry script
+- The actual models being deployed
+- An entry script that accepts the request, uses the model(s) to score the data, and return a response
+- An Azure Machine Learning environment that describes the pip and Conda dependencies required by the model(s)
+- The entry script and any additional assets such as text, data, so on. that are required by the model(s) and entry script
 
 You also provide the configuration of the target deployment platform. When the image is created, components required by Azure Machine Learning are also added. For example, assets needed to run the web service and interact with IoT Edge.
 
