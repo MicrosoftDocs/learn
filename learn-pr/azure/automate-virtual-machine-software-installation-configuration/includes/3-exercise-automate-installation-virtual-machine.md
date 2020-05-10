@@ -4,11 +4,23 @@ After you have created your virtual machines, you'll need to log into those mach
 
 In this exercise, you'll deploy all the components you need to have a publicly accessible virtual machine that will be used as a web server. Next, you'll connect to the virtual machine and check for installed components.
 
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 ## Create the common components needed for your virtual machine
 
 In this section of the exercise, you'll use the Azure CLI in the sandbox Cloud Shell to create the common components that you'll need for your virtual machine.
 
-1. Create a virtual network.
+1. Enter the following command to create a resource group.
+
+    ```azurecli
+    az group create \
+        --name my-resource-group-name \
+        --location westus 
+    ```
+
+    This example specifies `westus` for the `location`, but you should choose the Azure region that is closest to you for the `location`. For a list of locations, enter `az account list-locations` in the Azure CLI.
+
+1. Enter the following command to create a virtual network.
 
     ```azurecli
     az network vnet create \
@@ -16,61 +28,28 @@ In this section of the exercise, you'll use the Azure CLI in the sandbox Cloud S
         --address-prefix 192.168.0.0/16 \
         --subnet-name my-subnet \
         --subnet-prefix 192.168.1.0/24 \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group my-resource-group-name
     ```
 
-1. Create a public IP address.
+1. Enter the following command to create a public IP address.
 
     ```azurecli
     az network public-ip create \
         --name my-public-ip \
-        --dns-name my-public-dns \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group my-resource-group-name
     ```
 
-1. Create a Network Security Group.
+    In the exercises for this module, you'll use the your public IP address to connection to your virtual machine. However, for normal operations you might want to add the optional `--dns-name` parameter to specify the unique DNS name for your virtual machine.
+
+1. Enter the following command to create a Network Security Group (NSG).
 
     ```azurecli
     az network nsg create \
         --name my-nsg \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group my-resource-group-name
     ```
 
-::: zone pivot="linux-cloud"
-
-1. Create a rule to allow SSH access to your virtual machine.
-
-    ```azurecli
-    az network nsg rule create \
-        --nsg-name my-nsg \
-        --name my-nsg-ssh-rule \
-        --protocol tcp \
-        --priority 1000 \
-        --destination-port-range 22 \
-        --access allow \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
-    ```
-
-::: zone-end
-
-::: zone pivot="windows-cloud"
-
-1. Create a rule to allow Remote Desktop access to your virtual machine.
-
-    ```azurecli
-    az network nsg rule create \
-        --nsg-name my-nsg \
-        --name my-nsg-rdp-rule \
-        --protocol tcp \
-        --priority 300 \
-        --destination-port-range 3389 \
-        --access allow \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
-    ```
-
-::: zone-end
-
-1. Create a rule to allow HTTP access to your virtual machine.
+1. Enter the following command to create a rule to allow HTTP access to your virtual machine.
 
     ```azurecli
     az network nsg rule create \
@@ -80,10 +59,12 @@ In this section of the exercise, you'll use the Azure CLI in the sandbox Cloud S
         --priority 1001 \
         --destination-port-range 80 \
         --access allow \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group my-resource-group-name
     ```
 
-1. Create a Network Interface.
+    This rule adds a single protocol to the list of default protocols for your NSG. However, for normal operations you might want to add other protocols for your specific environment, and you can add protocols to your NSG later. For example, later in this exercise you'll add a remote communication protocol to allow access to your virtual machine.
+
+1. Enter the following command to create a Network Interface.
 
     ```azurecli
     az network nic create \
@@ -92,17 +73,17 @@ In this section of the exercise, you'll use the Azure CLI in the sandbox Cloud S
         --subnet my-subnet \
         --public-ip-address my-public-ip \
         --network-security-group my-nsg \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group my-resource-group-name
     ```
 
-1. Create an availability set.
+1. Enter the following command to create an availability set.
 
     ```azurecli
     az vm availability-set create \
         --name my-availability-set \
         --platform-fault-domain-count 3 \
         --platform-update-domain-count 3 \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group my-resource-group-name
     ```
 
 ::: zone pivot="linux-cloud"
@@ -111,7 +92,20 @@ In this section of the exercise, you'll use the Azure CLI in the sandbox Cloud S
 
 Not that you have created all of the necessary networking infrastructure, your next task is to use the Azure CLI to create your virtual machine.
 
-1. Create an Ubuntu virtual machine that will use SSH keys for authentication.
+1. Enter the following command to create an additional NSG rule to allow SSH access to your Linux virtual machine after it has been created.
+
+    ```azurecli
+    az network nsg rule create \
+        --nsg-name my-nsg \
+        --name my-nsg-ssh-rule \
+        --protocol tcp \
+        --priority 1000 \
+        --destination-port-range 22 \
+        --access allow \
+        --resource-group my-resource-group-name
+    ```
+
+1. Enter the following command to create an Ubuntu virtual machine that will use SSH keys for authentication.
 
     ```azurecli
     az vm create \
@@ -121,7 +115,7 @@ Not that you have created all of the necessary networking infrastructure, your n
         --image UbuntuLTS \
         --admin-username azureuser \
         --generate-ssh-keys \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group my-resource-group-name
     ```
 
 1. Wait for Azure to create the virtual machine, and then copy the `publicIpAddress` value from the JSON response. For example:
@@ -129,13 +123,13 @@ Not that you have created all of the necessary networking infrastructure, your n
     ```json
     {
         "fqdns": "my-public-dns.westus.cloudapp.azure.com",
-        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/my-linux-vm",
+        "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/my-resource-group-name/providers/Microsoft.Compute/virtualMachines/my-linux-vm",
         "location": "westus",
-        "macAddress": "00-00-00-00-00-00",
+        "macAddress": "mm-mm-mm-mm-mm-mm",
         "powerState": "VM running",
         "privateIpAddress": "iii.iii.iii.iii",
         "publicIpAddress": "eee.eee.eee.eee",
-        "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
+        "resourceGroup": "my-resource-group-name",
         "zones": ""
     }
     ```
@@ -190,7 +184,20 @@ After you have created your Linux virtual machine, you'll use the public IP addr
 
 Not that you have created all of the necessary networking infrastructure, your next task is to use the Azure CLI to create your virtual machine.
 
-1. Create a secure password that you'll use to access the virtual machine.
+1. Enter the following command to create an additional NSG rule to allow Remote Desktop access to your Windows virtual machine after it has been created.
+
+    ```azurecli
+    az network nsg rule create \
+        --nsg-name my-nsg \
+        --name my-nsg-rdp-rule \
+        --protocol tcp \
+        --priority 300 \
+        --destination-port-range 3389 \
+        --access allow \
+        --resource-group my-resource-group-name
+    ```
+
+1. Enter the following command to create a secure password that you'll use to access the virtual machine.
 
     ```bash
     export SECUREPASSWORD=$(date +%s | sha256sum | base64 | head -c 32)
@@ -199,7 +206,7 @@ Not that you have created all of the necessary networking infrastructure, your n
 
     Copy the secure password value that is displayed, as you'll use that to connect to your virtual machine later.
 
-1. Create a Windows virtual machine that will your secure password for authentication.
+1. Enter the following command to create a Windows virtual machine that will your secure password for authentication.
 
     ```azurecli
     az vm create \
@@ -209,7 +216,7 @@ Not that you have created all of the necessary networking infrastructure, your n
         --nics my-nic \
         --admin-username azureuser \
         --admin-password $SECUREPASSWORD \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group my-resource-group-name
     ```
 
 1. Wait for Azure to create the virtual machine, and then copy the `publicIpAddress` value from the JSON response. For example:
@@ -217,13 +224,13 @@ Not that you have created all of the necessary networking infrastructure, your n
     ```json
     {
         "fqdns": "",
-        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/my-windows-vm",
+        "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/my-resource-group-name/providers/Microsoft.Compute/virtualMachines/my-windows-vm",
         "location": "westus",
-        "macAddress": "00-00-00-00-00-00",
+        "macAddress": "mm-mm-mm-mm-mm-mm",
         "powerState": "VM running",
         "privateIpAddress": "iii.iii.iii.iii",
         "publicIpAddress": "eee.eee.eee.eee",
-        "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
+        "resourceGroup": "my-resource-group-name",
         "zones": ""
     }
     ```
@@ -246,9 +253,13 @@ Not that you have created all of the necessary networking infrastructure, your n
     
     1. Click **Connect**.
 
+1. In the Windows Security pop-up, enter the value of your `$SECUREPASSWORD` from earlier, and then click **OK**.
+
+1. If you're prompted to connect due to an unknown certificate, click **Yes**.
+
 1. In the Remote Desktop Connection pop-up, select **Connect**.
 
-1. When you are connected over remote desktop, Windows Server will automatically open the **Server Manager**.
+1. When you're connected over remote desktop, Windows Server will automatically open the **Server Manager**.
 
     ![Screenshot of the Windows virtual machine Server Manager.](../media/3-server-manage.png)
 

@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> In this module you created resources using your Azure subscription. You want to clean up these resources so that you will not continue to be charged for them. You can delete resources individually or delete the resource group to delete the entire set of resources.

@@ -137,7 +137,7 @@ runcmd:
   - service php7.2-fpm restart
 ```
 
-In the next exercise, you will use the knowledge from this unit to install Nginx and PHP on a Linux virtual machine.
+In the next exercise, you'll use the knowledge from this unit to install Nginx and PHP on a Linux virtual machine.
 
 ::: zone-end
 
@@ -156,7 +156,7 @@ The relevant PowerShell commands that you can use when setting up your virtual m
 | `Add-WebConfiguration` | Allows you to configure IIS. |
 | `Remove-Item` and `New-Item` | Allows you to delete and create files. |
 
-When you are setting up your Windows virtual machines, you'll add custom commands with the installation and configuration steps for your virtual machines to a PowerShell script, and then you'll run the `az vm extension` command to run your script.
+When you're setting up your Windows virtual machines, you'll add custom commands with the installation and configuration steps for your virtual machines to a PowerShell script, and then you'll run the `az vm extension` command to run your script.
 
 ### Using PowerShell to install and configure IIS
 
@@ -247,6 +247,6 @@ The **C:\inetpub\wwwroot** folder also contains an *iisstart.htm* file by defaul
 Remove-Item -Path C:\inetpub\wwwroot\iisstart.htm -Force
 ```
 
-In the next exercise, you will use the knowledge from this unit to install IIS and PHP on a Windows virtual machine.
+In the next exercise, you'll use the knowledge from this unit to install IIS and PHP on a Windows virtual machine.
 
 ::: zone-end

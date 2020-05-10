@@ -16,7 +16,7 @@ Your first step is to create a virtual network; you you must create your virtual
 az network vnet create \
     --name [virtual network name] \
     --subnet-name [subnet name]
-    --resource-group [resource group]  
+    --resource-group [resource group name]  
 ```
 
 As you can see in this example, you can create a basic virtual network by specifying only the name and subnet for your network, along with the resource group where your virtual network will be added.
@@ -32,10 +32,10 @@ When you use the Azure CLI to create a virtual network, Azure will return a JSON
       ]
     },
     . . .
-    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-11111111-1111-1111-1111-111111111111/providers/Microsoft.Network/virtualNetworks/my-vnet",
+    "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/[resource group name]/providers/Microsoft.Network/virtualNetworks/my-vnet",
     "location": "westus",
     "name": "my-vnet",
-    "resourceGroup": "learn-11111111-1111-1111-1111-111111111111",
+    "resourceGroup": "[resource group name]",
     . . .
   }
 }
@@ -61,7 +61,7 @@ If you're using a virtual machine as a web server, it will need to be accessible
 ```azurecli
 az network public-ip create \
     --name [IP name] \
-    --resource-group [resource group]
+    --resource-group [resource group name]
 ```
 
 As you can see in this example, you can create a public IP address by specifying only the name for your public IP address and the resource group where your IP address will be added.
@@ -72,10 +72,10 @@ When you use the Azure CLI to create a public IP address, Azure will return a JS
 {
   "publicIp": {
     . . .
-    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-11111111-1111-1111-1111-111111111111/providers/Microsoft.Network/publicIPAddresses/my-public-ip",
+    "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/[resource group name]/providers/Microsoft.Network/publicIPAddresses/my-public-ip",
     "location": "westus",
     "name": "my-public-ip",
-    "resourceGroup": "learn-11111111-1111-1111-1111-111111111111",
+    "resourceGroup": "[resource group name]",
     . . .
   }
 }
@@ -91,7 +91,7 @@ A few of the additional options that you might want to consider when creating yo
 
 | Parameter | Description |
 |---|---|
-| `--dns-name` | Specifies a globally unique DNS entry. |
+| `--dns-name` | Specifies a globally unique DNS entry; this is useful for when you want to access your virtual machine using a DNS name rather than the IP address. |
 | `--allocation-method` | Specifies `Dynamic` or `Static` to define whether the IP address can change when virtual machine is powered down; `Dynamic` is the default. |
 | `--sku` | Specifies `Basic` or `Standard` to define whether you need to have zone resiliency; `Basic` is the default, but you can pay for the `Standard` sku if you need zone resiliency. |
 | `--version` | Specifies `IPv4` or `IPv6` to define the IP address type; `IPv4` is the default. |
@@ -103,7 +103,7 @@ You can filter the traffic on your network by adding a Network Security Group (N
 ```azurecli
 az network nsg create \
     --name [NSG name] \
-    --resource-group [resource group]
+    --resource-group [resource group name]
 ```
 
 When you use the Azure CLI to create an NSG, Azure will return a JSON response that resembles the following abbreviated response:
@@ -116,10 +116,10 @@ When you use the Azure CLI to create an NSG, Azure will return a JSON response t
         . . .
       }
     ],
-    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-11111111-1111-1111-1111-111111111111/providers/Microsoft.Network/networkSecurityGroups/my-nsg",
+    "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/[resource group name]/providers/Microsoft.Network/networkSecurityGroups/my-nsg",
     "location": "westus",
     "name": "my-nsg",
-    "resourceGroup": "learn-11111111-1111-1111-1111-111111111111",
+    "resourceGroup": "[resource group name]",
     "type": "Microsoft.Network/networkSecurityGroups"
     . . .
   }
@@ -138,7 +138,7 @@ az network nsg rule create \
     --priority 1000 \
     --destination-port-range 22 \
     --access allow \
-    --resource-group [resource group]
+    --resource-group [resource group name]
 ```
 
 When you use the Azure CLI to create a rule like the preceding Azure CLI example, Azure will return a JSON response that resembles the following abbreviated response:
@@ -147,12 +147,12 @@ When you use the Azure CLI to create a rule like the preceding Azure CLI example
 {
   "access": "Allow",
   . . .
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-11111111-1111-1111-1111-111111111111/providers/Microsoft.Network/networkSecurityGroups/my-nsg/securityRules/my-nsg-ssh-rule",
+  "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/[resource group name]/providers/Microsoft.Network/networkSecurityGroups/my-nsg/securityRules/my-nsg-ssh-rule",
   "name": "my-nsg-ssh-rule",
   "priority": 1000,
   "protocol": "Tcp",
   "provisioningState": "Succeeded",
-  "resourceGroup": "learn-11111111-1111-1111-1111-111111111111",
+  "resourceGroup": "[resource group name]",
   . . .
   "type": "Microsoft.Network/networkSecurityGroups/securityRules"
 }
@@ -172,7 +172,7 @@ az network nsg rule create \
     --priority 1001 \
     --destination-port-range 80 \
     --access allow \
-    --resource-group [resource group]
+    --resource-group [resource group name]
 ```
 
 When you use the Azure CLI to create a rule like the preceding example, Azure will return a JSON response that resembles the following abbreviated response:
@@ -181,12 +181,12 @@ When you use the Azure CLI to create a rule like the preceding example, Azure wi
 {
   "access": "Allow",
   . . .
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-11111111-1111-1111-1111-111111111111/providers/Microsoft.Network/networkSecurityGroups/my-nsg/securityRules/my-nsg-http-rule",
+  "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/[resource group name]/providers/Microsoft.Network/networkSecurityGroups/my-nsg/securityRules/my-nsg-http-rule",
   "name": "my-nsg-http-rule",
   "priority": 1001,
   "protocol": "Tcp",
   "provisioningState": "Succeeded",
-  "resourceGroup": "learn-11111111-1111-1111-1111-111111111111",
+  "resourceGroup": "[resource group name]",
   . . .
   "type": "Microsoft.Network/networkSecurityGroups/securityRules"
 }
@@ -205,7 +205,7 @@ az network nic create \
     --subnet [subnet name] \
     --public-ip-address [IP name] \
     --network-security-group [NSG name] \
-    --resource-group [resource group]
+    --resource-group [resource group name]
 ```
 
 When you use the Azure CLI to create a network interface, Azure will return a JSON response that resembles the following abbreviated response:
@@ -214,12 +214,12 @@ When you use the Azure CLI to create a network interface, Azure will return a JS
 {
   "NewNIC": {
     . . .
-    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-11111111-1111-1111-1111-111111111111/providers/Microsoft.Network/networkInterfaces/my-nic",
+    "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/[resource group name]/providers/Microsoft.Network/networkInterfaces/my-nic",
     . . .
     "name": "my-nic",
     . . .
     "provisioningState": "Succeeded",
-    "resourceGroup": "learn-11111111-1111-1111-1111-111111111111",
+    "resourceGroup": "[resource group name]",
     . . .
     "type": "Microsoft.Network/networkInterfaces",
     "virtualMachine": null
@@ -242,26 +242,26 @@ A few of the additional options that you might want to consider when creating yo
 
 ### Creating an availability set
 
-Availability Sets are logical groupings for virtual machines, and are essential for reliable cloud solutions. For example, your company wants to ensure their machines have high availability. If an app relies a single virtual machine, any issues with that virtual machine or its domain will impact your app's reliability. When you are initially setting up your virtual machine infrastructure, you might not want to provision multiple virtual machines. However, because you can't add a virtual machine to an availability set after it's created, a best practice is to create and reference an availability set when you are settings up virtual machines, even if you are creating a single virtual machine.
+Availability Sets are logical groupings for virtual machines, and are essential for reliable cloud solutions. For example, your company wants to ensure their machines have high availability. If an app relies a single virtual machine, any issues with that virtual machine or its domain will impact your app's reliability. When you're initially setting up your virtual machine infrastructure, you might not want to provision multiple virtual machines. However, because you can't add a virtual machine to an availability set after it's created, a best practice is to create and reference an availability set when you're settings up virtual machines, even if you're creating a single virtual machine.
 
 ```azurecli
 az vm availability-set create \
     --name [availability set name] \
     --platform-fault-domain-count 3 \
     --platform-update-domain-count 3 \
-    --resource-group [resource group]
+    --resource-group [resource group name]
 ```
 
 When you use the Azure CLI to create an availability set, Azure will return a JSON response that resembles the following abbreviated response:
 
 ```json
 {
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-11111111-1111-1111-1111-111111111111/providers/Microsoft.Compute/availabilitySets/my-availability-set",
+  "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/[resource group name]/providers/Microsoft.Compute/availabilitySets/my-availability-set",
   "location": "westus",
   "name": "my-availability-set",
   "platformFaultDomainCount": 3,
   "platformUpdateDomainCount": 3,
-  "resourceGroup": "learn-11111111-1111-1111-1111-111111111111",
+  "resourceGroup": "[resource group name]",
   . . .
   "type": "Microsoft.Compute/availabilitySets",
   "virtualMachines": []
@@ -341,7 +341,7 @@ As you'll see later, you use the Uniform Resource Name Alias (`urnAlias`) when y
 
 ### Create the Linux virtual machine using the Azure CLI
 
-Your organization has standardized on Ubuntu, so the `urnAlias` value from the preceding section that you'll use create your virtual machine is `UbuntuLTS`. To create your virtual machine, you'll combine all of the common components that you created earlier to create a command like the following example:
+To create your virtual machine, you'll combine all of the common components that you created earlier to create a command like the following example:
 
 ```azurecli
 az vm create \
@@ -351,21 +351,23 @@ az vm create \
     --image [image name] \
     --admin-username [admin username] \
     --admin-password [secure password] \
-    --resource-group [resource group]
+    --resource-group [resource group name]
 ```
+
+In the above example, if your organization had standardized on Ubuntu, you would use the **URN Alias** value from the preceding section of `UbuntuLTS` for the value of the `--image` parameter.
 
 Azure will create your virtual machine, which might take a few minutes. When Azure has provisioned your virtual machine, it will return a JSON response that resembles the following response:
 
 ```json
 {
   "fqdns": "",
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-11111111-1111-1111-1111-111111111111/providers/Microsoft.Compute/virtualMachines/my-linux-vm",
+  "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/[resource group name]/providers/Microsoft.Compute/virtualMachines/my-linux-vm",
   "location": "westus",
-  "macAddress": "00-00-00-00-00-00",
+  "macAddress": "mm-mm-mm-mm-mm-mm",
   "powerState": "VM running",
   "privateIpAddress": "iii.iii.iii.iii",
   "publicIpAddress": "eee.eee.eee.eee",
-  "resourceGroup": "learn-11111111-1111-1111-1111-111111111111",
+  "resourceGroup": "[resource group name]",
   "zones": ""
 }
 ```
@@ -377,13 +379,13 @@ Where:
 | `iii.iii.iii.iii` | This is the internal/private IP address for your virtual machine on your virtual network. |
 | `eee.eee.eee.eee` | This is the external/public IP address for your virtual machine on the Internet. |
 
-As you have seen with all of the Azure CLI commands thus far, there are several optional parameters that you can specify when you are creating a virtual machine, and you can retrieve a list of these options with the following command:
+As you have seen with all of the Azure CLI commands thus far, there are several optional parameters that you can specify when you're creating a virtual machine, and you can retrieve a list of these options with the following command:
 
 ```azurecli
 az vm create --help
 ```
 
-If you run the above command, you will notice that there are far more parameters than all the previous components you have examined.
+If you run the above command, you'll notice that there are far more parameters than all the previous components you have examined.
 
 ### Choose your virtual machine authentication options
 
@@ -397,7 +399,7 @@ az vm create \
     --image [image name] \
     --admin-username [admin username] \
     --generate-ssh-keys \
-    --resource-group [resource group]
+    --resource-group [resource group name]
 ```
 
 When you run the above command, your SSH keys will be stored in the `~/.ssh/` folder of your user profile.
@@ -483,7 +485,7 @@ az vm create \
     --image [image name] \
     --admin-username [admin username] \
     --admin-password [secure password] \
-    --resource-group [resource group]
+    --resource-group [resource group name]
 ```
 
 Azure will create your virtual machine, which might take a few minutes. When Azure has provisioned your virtual machine, it will return a JSON response that resembles the following response:
@@ -491,13 +493,13 @@ Azure will create your virtual machine, which might take a few minutes. When Azu
 ```json
 {
   "fqdns": "",
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-11111111-1111-1111-1111-111111111111/providers/Microsoft.Compute/virtualMachines/my-windows-vm",
+  "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/[resource group name]/providers/Microsoft.Compute/virtualMachines/my-windows-vm",
   "location": "westus",
-  "macAddress": "00-00-00-00-00-00",
+  "macAddress": "mm-mm-mm-mm-mm-mm",
   "powerState": "VM running",
   "privateIpAddress": "iii.iii.iii.iii",
   "publicIpAddress": "eee.eee.eee.eee",
-  "resourceGroup": "learn-11111111-1111-1111-1111-111111111111",
+  "resourceGroup": "[resource group name]",
   "zones": ""
 }
 ```
@@ -509,13 +511,13 @@ Where:
 | `iii.iii.iii.iii` | This is the internal/private IP address for your virtual machine on your virtual network. |
 | `eee.eee.eee.eee` | This is the external/public IP address for your virtual machine on the Internet. |
 
-As you have seen with all of the Azure CLI commands thus far, there are several optional parameters that you can specify when you are creating a virtual machine, and you can retrieve a list of these options with the following command:
+As you have seen with all of the Azure CLI commands thus far, there are several optional parameters that you can specify when you're creating a virtual machine, and you can retrieve a list of these options with the following command:
 
 ```azurecli
 az vm create --help
 ```
 
-If you run the above command, you will notice that there are far more parameters than all the previous components you have examined.
+If you run the above command, you'll notice that there are far more parameters than all the previous components you have examined.
 
 For example, if your company had purchased *Azure Hybrid Benefit*, you could choose to use your current on-premises Windows Server licenses to run Windows virtual machines on Azure in order to lower costs. To enable this option, you would add the `--license-type Windows_Server` parameter to the create command.
 
@@ -525,4 +527,4 @@ Azure supports several authentication methods to access virtual machines; for ex
 
 ::: zone-end
 
-In the next exercise, you will use the knowledge from this unit to create virtual machine.
+In the next exercise, you'll use the knowledge from this unit to create virtual machine.

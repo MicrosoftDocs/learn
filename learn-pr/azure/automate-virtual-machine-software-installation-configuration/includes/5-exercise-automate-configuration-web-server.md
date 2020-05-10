@@ -1,6 +1,6 @@
 In the previous units, you learned how to create a virtual machine, and how to automate the installation and configuration of a web server and PHP in order to host dynamic web content. On a Linux virtual machine, the installation and configuration tasks are automated by using a custom cloud-init file, whereas the installation and configuration tasks are automated on a Windows virtual machine by using a custom PowerShell script.
 
-For your first task in this exercise, you'll delete the virtual machine that you created in the previous exercise; once that virtual machine is deleted, you'll have a clean environment for starting over and creating a new virtual machine that you will use to automate the installation and configuration of a web server and PHP. When your virtual machine is up and running in Azure, you'll browse to a dynamic PHP webpage to verify that everything is working, and to review the details of your virtual machine environment.
+For your first task in this exercise, you'll delete the virtual machine that you created in the previous exercise; once that virtual machine is deleted, you'll have a clean environment for starting over and creating a new virtual machine that you'll use to automate the installation and configuration of a web server and PHP. When your virtual machine is up and running in Azure, you'll browse to a dynamic PHP webpage to verify that everything is working, and to review the details of your virtual machine environment.
 
 ::: zone pivot="linux-cloud"
 
@@ -14,18 +14,18 @@ Your first step is to remove the existing virtual machine you created in the pre
 az vm delete \
     --name my-linux-vm \
     --yes \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group my-resource-group-name
 ```
 
-### Create a *cloud-init.txt* file to configure a virtual machine
+### Create a *cloud-init.yaml* file to configure a virtual machine
 
-1. In the Cloud Shell, open the code editor to create a new *cloud-init.txt* file.
+1. In the Cloud Shell, open the code editor to create a new *cloud-init.yaml* file.
 
     ```bash
-    code cloud-init.txt
+    code cloud-init.yaml
     ```
 
-1. Add the following configuration settings to your *cloud-init.txt* file; these settings will install the Nginx and PHP packages:
+1. Add the following configuration settings to your *cloud-init.yaml* file; these settings will install the Nginx and PHP packages:
 
     ```yaml
     #cloud-config
@@ -36,7 +36,7 @@ az vm delete \
         - php7.2-fpm
     ```
 
-1. Append the following configuration settings to the bottom of your *cloud-init.txt* file; these settings will enable Nginx to serve webpages using PHP, and create a default home page for your web server that uses `phpinfo()` to return information about your virtual machine:
+1. Append the following configuration settings to the bottom of your *cloud-init.yaml* file; these settings will enable Nginx to serve webpages using PHP, and create a default home page for your web server that uses `phpinfo()` to return information about your virtual machine:
 
     ```yaml
     write_files:
@@ -88,7 +88,7 @@ az vm delete \
           </html>    
     ```
 
-1. For your final step, append the following configuration settings to the bottom of your *cloud-init.txt* file; these settings will ensure that both Nginx and PHP services are running:
+1. For your final step, append the following configuration settings to the bottom of your *cloud-init.yaml* file; these settings will ensure that both Nginx and PHP services are running:
 
     ```yaml
     runcmd:
@@ -96,7 +96,7 @@ az vm delete \
       - service php7.2-fpm restart
     ```
 
-1. Your completed *cloud-init.txt* file should resemble the following example:
+1. Your completed *cloud-init.yaml* file should resemble the following example:
 
     ```yaml
     #cloud-config
@@ -157,13 +157,13 @@ az vm delete \
       - service php7.2-fpm restart
     ```
 
-1. Type <kbd>CTRL+S</kbd> to save your *cloud-init.txt* file, then type <kbd>CTRL+Q</kbd> to close the editor.
+1. Type <kbd>CTRL+S</kbd> to save your *cloud-init.yaml* file, then type <kbd>CTRL+Q</kbd> to close the editor.
 
-### Create a Linux virtual machine using a *cloud-init.txt* file
+### Create a Linux virtual machine using a *cloud-init.yaml* file
 
 Now that you've created a cloud-init file that contains the configuration steps for your virtual machine, you can use it with the Azure CLI command to create a Linux virtual machine.
 
-Using the Cloud Shell, use the following command to create an Ubuntu virtual machine using your *cloud-init.txt* file:
+Using the Cloud Shell, use the following command to create an Ubuntu virtual machine using your *cloud-init.yaml* file:
 
 ```azurecli
 az vm create \
@@ -173,8 +173,8 @@ az vm create \
     --image UbuntuLTS \
     --admin-username azureuser \
     --generate-ssh-keys \
-    --custom-data cloud-init.txt \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --custom-data cloud-init.yaml \
+    --resource-group my-resource-group-name
 ```
 
 It may take Azure several minutes to create the virtual machine. When it has finished, copy the value of the `publicIpAddress` field, which is represented by `eee.eee.eee.eee` in this JSON example:
@@ -182,13 +182,13 @@ It may take Azure several minutes to create the virtual machine. When it has fin
 ```json
 {
   "fqdns": "",
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/my-linux-vm",
+  "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/my-resource-group-name/providers/Microsoft.Compute/virtualMachines/my-linux-vm",
   "location": "westus",
-  "macAddress": "00-00-00-00-00-00",
+  "macAddress": "mm-mm-mm-mm-mm-mm",
   "powerState": "VM running",
   "privateIpAddress": "iii.iii.iii.iii",
   "publicIpAddress": "eee.eee.eee.eee",
-  "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
+  "resourceGroup": "my-resource-group-name",
   "zones": ""
 }
 ```
@@ -207,7 +207,7 @@ Your first step is to remove the existing virtual machine you created in the pre
 az vm delete \
     --name my-windows-vm \
     --yes \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group my-resource-group-name
 ```
 
 ### Create a PowerShell script to configure a virtual machine
@@ -339,14 +339,14 @@ az vm delete \
 
 Now that you've created a PowerShell script that contains the configuration steps for your virtual machine, you can use it to configure a Windows virtual machine.
 
-1. Create a secure password that you'll use to access the virtual machine.
+1. Enter the following command to create a secure password that you'll use to access the virtual machine.
 
     ```bash
     export SECUREPASSWORD=$(date +%s | sha256sum | base64 | head -c 32)
     echo $SECUREPASSWORD
     ```
 
-1. Use Azure CLI to create a Windows virtual machine.
+1. Enter the following command to create a Windows virtual machine.
 
     ```azurecli
     az vm create \
@@ -356,7 +356,7 @@ Now that you've created a PowerShell script that contains the configuration step
         --nics my-nic \
         --admin-username azureuser \
         --admin-password $SECUREPASSWORD \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group my-resource-group-name
     ```
 
     It may take Azure several minutes to create the virtual machine. When it has finished, copy the value of the `publicIpAddress` field, which is represented by `eee.eee.eee.eee` in this JSON example:
@@ -364,13 +364,13 @@ Now that you've created a PowerShell script that contains the configuration step
     ```json
     {
       "fqdns": "",
-      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/my-linux-vm",
+      "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/my-resource-group-name/providers/Microsoft.Compute/virtualMachines/my-linux-vm",
       "location": "westus",
-      "macAddress": "00-00-00-00-00-00",
+      "macAddress": "mm-mm-mm-mm-mm-mm",
       "powerState": "VM running",
       "privateIpAddress": "iii.iii.iii.iii",
       "publicIpAddress": "eee.eee.eee.eee",
-      "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
+      "resourceGroup": "my-resource-group-name",
       "zones": ""
     }
     ```
@@ -383,7 +383,7 @@ Now that you've created a PowerShell script that contains the configuration step
 
     1. Select your Cloud Shell account, then select **Storage Explorer (preview)**.
 
-    1. Expand **FILE SHARES**, and then select the *cloudshellfiles* entry.
+    1. Expand **FILE SHARES**, and then select your cloud shell entry.
 
     1. Right-click **setup.ps1**, then select **Get Shared Access Signature...**.
 
@@ -394,7 +394,7 @@ Now that you've created a PowerShell script that contains the configuration step
     1. Copy the **URI** value, you'll use this in the next step to install and configure IIS. Your URI should resemble the following example:
 
         ```output
-        https://cloudshell00000000.file.core.windows.net/cloudshellfiles00000000/setup.ps1?sp=rl&st=yyyy-mm-ddThh:mm:ssZ&se=yyyy-mm-ddThh:mm:ssZ&sv=yyyy-mm-dd&sig=AbCdEfGhIjKlMnOpQrStUvWxYz&sr=f
+        https://cloudshell00000000.file.core.windows.net/cloudshellfiles/setup.ps1?sp=rl&st=yyyy-mm-ddThh:mm:ssZ&se=yyyy-mm-ddThh:mm:ssZ&sv=yyyy-mm-dd&sig=AbCdEfGhIjKlMnOpQrStUvWxYz&sr=f
         ```
 
     1. Click **Close**.
@@ -406,7 +406,7 @@ Now that you've created a PowerShell script that contains the configuration step
         --name CustomscriptExtension \
         --publisher Microsoft.compute \
         --vm-name my-windows-vm \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group my-resource-group-name \
         --settings '{ "fileUris": ["SHARED_ACCESS_URI"], "commandToExecute": "powershell.exe ./setup.ps1" }'
     ```
 
@@ -418,18 +418,18 @@ Now that you've created a PowerShell script that contains the configuration step
     {
       "autoUpgradeMinorVersion": true,
       "forceUpdateTag": null,
-      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/my-windows-vm/extensions/CustomscriptExtension",
+      "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/resourceGroups/my-resource-group-name/providers/Microsoft.Compute/virtualMachines/my-windows-vm/extensions/CustomscriptExtension",
       "instanceView": null,
       "location": "westus",
       "name": "CustomscriptExtension",
       "protectedSettings": null,
       "provisioningState": "Succeeded",
       "publisher": "Microsoft.compute",
-      "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
+      "resourceGroup": "my-resource-group-name",
       "settings": {
         "commandToExecute": "powershell.exe ./setup.ps1",
         "fileUris": [
-          "https://cloudshell00000000.file.core.windows.net/cloudshellfiles00000000/setup.ps1?sp=rl&st=yyyy-mm-ddThh:mm:ssZ&se=yyyy-mm-ddThh:mm:ssZ&sv=yyyy-mm-dd&sig=AbCdEfGhIjKlMnOpQrStUvWxYz&sr=f"
+          "https://cloudshell00000000.file.core.windows.net/cloudshellfiles/setup.ps1?sp=rl&st=yyyy-mm-ddThh:mm:ssZ&se=yyyy-mm-ddThh:mm:ssZ&sv=yyyy-mm-dd&sig=AbCdEfGhIjKlMnOpQrStUvWxYz&sr=f"
         ]
       },
       "tags": null,
