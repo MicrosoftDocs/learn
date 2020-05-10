@@ -86,7 +86,3 @@ happens if you divide twice in a row? You don't always need to ask an
 expert (or the Internet); many of these details can be discovered by
 trying them out yourself.
 
-``` {.python}
-```
-hon}
-```

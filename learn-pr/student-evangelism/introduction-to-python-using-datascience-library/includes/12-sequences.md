@@ -175,6 +175,7 @@ single value.
                        numbers are true)
 
   `np.count_nonzero`   Count the number of non-zero elements
+  
   ----------------------------------------------------------------------------
 
 Each of these functions takes an array as an argument and returns an
@@ -200,6 +201,7 @@ array of values.
   `np.sqrt`       Take the square root of each element
 
   `np.sort`       Sort the elements
+
   -----------------------------------------------------------------------
 
 Each of these functions takes an array of strings and returns an array.
@@ -217,6 +219,7 @@ Each of these functions takes an array of strings and returns an array.
                         symbols)
 
   `np.char.isnumeric`   Whether each element is only numeric (no letters)
+
   ---------------------------------------------------------------------------
 
 Each of these functions takes both an array of strings and a *search
@@ -235,7 +238,5 @@ string*; each returns an array.
                          is found last
 
   `np.char.startswith`   Whether each element starts with the search string
+  
   ------------------------------------------------------------------------------
-------
----
-------
