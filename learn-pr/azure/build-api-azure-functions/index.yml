@@ -25,7 +25,7 @@ prerequisites: |
   - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
   - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
   - Must have the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/build-api-azure-functions.svg
 levels:
   - beginner
 roles:

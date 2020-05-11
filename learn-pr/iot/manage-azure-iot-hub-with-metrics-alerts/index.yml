@@ -31,6 +31,7 @@ levels:
 roles:
 - developer
 products:
+- azure-iot
 - azure-iot-hub
 units:
 - learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.introduction

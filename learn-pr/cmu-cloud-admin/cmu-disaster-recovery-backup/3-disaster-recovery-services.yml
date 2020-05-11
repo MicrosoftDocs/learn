@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup.3-disaster-recovery-services
+title: Disaster recovery services
+metadata:
+  title: Disaster recovery services
+  description: Disaster recovery services
+  ms.date: 03/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-disaster-recovery-services.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "In disaster recovery, a failover occurs when a primary resource set becomes unreachable or unresponsive and traffic is routed to a secondary resource set that mirrors the primary. Failover time is key because you want to minimize downtime. Which of the following DR methodologies would you expect to have the greatest failover time?"
+    choices:
+    - content: "Pilot light"
+      isCorrect: true
+      explanation: "Correct! Pilot light typically has the greatest failover time because applications and services have to be replicated before traffic can be directed to them."
+    - content: "Warm standby"
+      isCorrect: false
+      explanation: "Incorrect. Pilot light typically has the greatest failover time because applications and services have to be replicated before traffic can be directed to them."
+    - content: "Hot standby"
+      isCorrect: false
+      explanation: "Incorrect. Pilot light typically has the greatest failover time because applications and services have to be replicated before traffic can be directed to them."
+    - content: "All three exhibit roughly equal failover times"
+      isCorrect: false
+      explanation: "Incorrect. Pilot light typically has the greatest failover time because applications and services have to be replicated before traffic can be directed to them."
+
+  - content: "Key service-level objectives that organizations use to structure backup and disaster-recovery plans are Recovery Point Objective (RPO), Recovery Time Objective (RTO), and retention time. Suppose an organization decides that minimizing data loss is more important than minimizing downtime. Which service-level objective does the organization favor?"
+    choices:
+    - content: "RPO"
+      isCorrect: true
+      explanation: "Correct! Minimizing RPO minimizes data loss, even at the expense of increased recovery time."
+    - content: "RTO"
+      isCorrect: false
+      explanation: "Incorrect. Minimizing RTO minimizes recovery time, even at the expense of increased data loss."
+    - content: "RPO and RTO"
+      isCorrect: false
+      explanation: "Incorrect. Minimizing RPO minimizes data loss, even at the expense of increased recovery time. Increasing RTO frequently increases rather than decreases data loss."
+    - content: "Retention time"
+      isCorrect: false
+      explanation: "Incorrect. Retention time determines how long backups are kept. It does not set minimum acceptable levels for data loss or recovery time."

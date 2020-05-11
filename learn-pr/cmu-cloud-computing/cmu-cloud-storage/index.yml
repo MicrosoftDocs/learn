@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  showCreativeCommonsFooter: true
 title: Cloud storage overview
 summary: Learn all about data and get an overview of how it's stored, including local and distributed file systems, databases, and object storage.
 abstract: | 

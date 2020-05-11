@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  showCreativeCommonsFooter: true
 title: Cloud storage
 summary: |
   Gain a deep understanding of data and how it's stored on the cloud.
@@ -32,6 +31,7 @@ prerequisites: |
   - Understand CPU virtualization
   - Understand memory virtualization
   - Understand I/O virtualization
+showCreativeCommonsFooter: true
 iconUrl: /learn/achievements/cmu-cloud-developer/cloud-storage.svg
 levels:
 - beginner

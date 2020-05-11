@@ -5,8 +5,8 @@ metadata:
   title: View security alerts
   description: View security alerts
   ms.date: 09/30/2019
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

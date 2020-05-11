@@ -10,12 +10,9 @@ metadata:
   ms.prod: learning-sqlserver
 title: Automatically tune SQL Server on Linux
 summary: |
-  Database administrators often spend much time optimizing performance for their database queries. 
-  In SQL Server 2016 and later, you can use the Query Store feature to collect query performance 
-  information and view recommendations that may help accelerate responses. In SQL Server 2017, 
-  you can also use automatic tuning to configure the server to apply these recommendations. This 
-  module shows you how to collect performance data when using SQL Server 2017 on Linux servers by 
-  using Azure Data Studio and how to use Query Store and automatic tuning.
+  Use Azure Data Studio to supplement performance data from Dynamic Management Views (DMVs) and display
+  how your SQL Server 2019 system performs over time. Investigate query plan regressions and then use 
+  the Query Store and automatic tuning to mitigate their effect. 
 abstract: |
  In this module, you will:
  - Decide whether to enable Query Store.
@@ -24,7 +21,7 @@ abstract: |
  - Enable automatic tuning in SQL Server on a Linux server.
 prerequisites: | 
   - Understand the difference between a query and a query execution plan in SQL Server.
-  - Be able to install and configure SQL Server 2017 on a Linux server.
+  - Be able to install and configure SQL Server 2019 on a Linux server.
   - Be able to write Transact-SQL queries.
   - Understand Dynamic Management Views (DMVs) in SQL Server.
 iconUrl: /learn/achievements/sqlserver/automatically-tune-sql-server-on-linux.svg

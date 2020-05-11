@@ -18,7 +18,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. On the right side of that pane, select **Storage account**.
 
-    ![Screenshot of the Azure portal showing the Create a resource pane with the Storage category and Storage account option highlighted.](../media/5-portal-storage-select.png)
+    :::image type="content" source="../media/5-portal-storage-select.png" border="true" alt-text="Screenshot of the Azure portal showing the Create a resource pane with the Storage category and Storage account option highlighted.":::
 
 ### Configure the basic options
 
@@ -49,15 +49,15 @@ Under **INSTANCE DETAILS**:
 
 The following screenshot shows the completed settings for the **Basics** tab. Note that the resource group, subscription, and name will have different values.
 
-![Screenshot of a Create a storage account pane with the **Basics** tab selected.](../media/5-create-storage-account-basics.png)
+:::image type="content" source="../media/5-create-storage-account-basics.png" border="true" alt-text="Screenshot of a Create a storage account pane with the Basics tab selected.":::
 
 ### Configure the networking options
 
 1. Click the **Next: Networking >** button to move to the **Networking** tab, or select the **Networking** tab at the top of the screen.
 
-1. Set the **Connectivity method** option to _Public endpoint (all networks)_. This option allows you to isolate the storage account on an Azure virtual network. We want to use public Internet access. Our content is public facing and you need to allow access from public clients.
+1. Set the **Connectivity method** option to _Public endpoint (all networks)_. We want to allow public Internet access. Our content is public facing and you need to allow access from public clients.
 
-![Screenshot of a Create a storage account pane with the **Basics** tab selected.](../media/5-create-storage-account-network.png)
+:::image type="content" source="../media/5-create-storage-account-network.png" border="true" alt-text="Screenshot of a Create a storage account pane with the Networking tab selected.":::
 
 ### Configure the advanced options
 
@@ -66,7 +66,7 @@ The following screenshot shows the completed settings for the **Basics** tab. No
 1. Set **Secure transfer required** to _Enabled_. The **Secure transfer required** setting controls whether **HTTP** can be used for the REST APIs used to access data in the Storage account. Setting this option to _Enabled_ will force all clients to use SSL (**HTTPS**). Most of the time you'll want to set this to _Enabled_ as using HTTPS over the network is considered a best practice.
 
     > [!WARNING]
-    > If this option is enabled, it will enforce some additional restrictions. Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn’t support SSL for custom domain names, this option cannot be used with a custom domain name.
+    > If this option is enabled, it will enforce some additional restrictions. Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn't support SSL for custom domain names, this option cannot be used with a custom domain name.
 
 1. Leave the **Large file shares** option set to _Disabled_. Large file shares provides support up to a 100TiB, however this type of storage account can't convert to a Geo-redundant storage offering and upgrades are permanent.
 
@@ -76,7 +76,7 @@ The following screenshot shows the completed settings for the **Basics** tab. No
 
 The following screenshot shows the completed settings for the **Advanced** tab.
 
-![Screenshot of a Create a storage account pane with the **Advanced** tab selected.](../media/5-create-storage-account-advanced.png)
+:::image type="content" source="../media/5-create-storage-account-advanced.png" border="true" alt-text="Screenshot of a Create a storage account pane with the Advanced tab selected.":::
 
 ### Create
 
@@ -84,7 +84,7 @@ The following screenshot shows the completed settings for the **Advanced** tab.
 
 1. Click **Review + create** to review the settings. This will do a quick validation of your options to make sure all the required fields are selected. If there are issues, they'll be reported here. Once you've reviewed the settings, click **Create** to provision the storage account.
 
-It will take a few minutes to deploy the account. While Azure is working on that, let's explore the APIs we'll use with this account.
+It will take a few minutes to deploy the account.
 
 ### Verify
 

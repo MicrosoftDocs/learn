@@ -20,7 +20,7 @@ The Ceilometer project aims to deliver a unique point of contact for billing sys
 
 ## Orchestration service (Heat) 
 
-Heat is the primary orchestration system in OpenStack. Heat provides orchestration services for higher-level systems such as Sahara, OpenStack's cluster provisioning system that is similar to AWS EMR. Heat can orchestrate individual cloud middleware services such as the compute service (Nova), block storage service (Cinder), and networking service (Neutron). 
+Heat is the primary orchestration system in OpenStack. Heat provides orchestration services for higher-level systems such as Sahara, OpenStack's cluster provisioning system that is similar to Azure HDInsight. Heat can orchestrate individual cloud middleware services such as the compute service (Nova), block storage service (Cinder), and networking service (Neutron). 
 
 ## Virtual machine image service (Glance)
 
@@ -32,15 +32,15 @@ Swift is a highly available, distributed, eventually consistent object store, si
 
 ## Block storage volume management service (Cinder)
 
-Cinder is an OpenStack project to provide "block storage as a service," similar to Amazon's Elastic Block Storage (EBS) service. Cinder allows users to define block storage devices and attach them as volumes to individual virtual machines. Cinder virtualizes pools of block storage devices and provides end users with a self-service API to request and consume those resources without requiring any knowledge of where their storage is actually deployed or on what type of device. Cinder is also used by the Glance service to instantiate volumes from virtual machine images. Cinder is designed to work with a growing number of storage systems and devices, including storage area network (SAN) appliances and distributed file systems. 
+Cinder is an OpenStack project to provide "block storage as a service," similar to Azure's Block Bob Storage service. Cinder allows users to define block storage devices and attach them as volumes to individual virtual machines. Cinder virtualizes pools of block storage devices and provides end users with a self-service API to request and consume those resources without requiring any knowledge of where their storage is actually deployed or on what type of device. Cinder is also used by the Glance service to instantiate volumes from virtual machine images. Cinder is designed to work with a growing number of storage systems and devices, including storage area network (SAN) appliances and distributed file systems. 
 
 ## Cluster provisioning and management service (Sahara)
 
-The Sahara project aims to provide users with a simple means to provision data-processing frameworks (such as Hadoop, Spark, and Storm) on OpenStack, much like the Elastic MapReduce (EMR) service on AWS. Sahara can be used to specify cluster configuration parameters such as the framework version, cluster topology, and node hardware details. Sahara uses Nova to provision individual cluster nodes using framework-specific images supplied by Glance. Sahara then runs special scripts to complete the configuration of each of the individual cluster nodes so that they are ready to execute jobs. 
+The Sahara project aims to provide users with a simple means to provision data-processing frameworks (such as Hadoop, Spark, and Storm) on OpenStack, much like Azure HDInsight. Sahara can be used to specify cluster configuration parameters such as the framework version, cluster topology, and node hardware details. Sahara uses Nova to provision individual cluster nodes using framework-specific images supplied by Glance. Sahara then runs special scripts to complete the configuration of each of the individual cluster nodes so that they are ready to execute jobs. 
 
 ## Compute service (Nova)
 
-Nova is an OpenStack project designed to provide massively scalable, on-demand, self-service access to compute resources. Nova is designed to provision and manage different virtual machines deployed using different virtualization platforms, including Xen, VMWare, and Hyper-V. It can even deploy virtual machines onto EC2, with an aim to support the notion of "cloud bursting." The Nova service is also used by other services such as Trove (to provision virtual machines that hold databases) and Sahara (to provision virtual machines for analytics clusters). 
+Nova is an OpenStack project designed to provide massively scalable, on-demand, self-service access to compute resources. Nova is designed to provision and manage different virtual machines deployed using different virtualization platforms, including Xen, VMWare, and Hyper-V. It can even deploy virtual machines onto AWS EC2, with an aim to support the notion of "cloud bursting." The Nova service is also used by other services such as Trove (to provision virtual machines that hold databases) and Sahara (to provision virtual machines for analytics clusters). 
 
 ## Database as a service (Trove)
 

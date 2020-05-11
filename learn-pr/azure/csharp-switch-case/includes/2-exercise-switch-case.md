@@ -57,7 +57,9 @@ Once the runtime finds a matching label, it performs the code in that particular
 
 Only one switch section can be executed.  The `break` keyword is one of several ways to end a switch section and literally break out of the switch statement.  If you forget the `break` keyword (or, optionally, the `return` keyword) the compiler will generate an error.
 
-If there are no matching labels, the optional `default` label will be matched.
+If there are no matching labels, the optional `default` label will be matched.  If there's no `default` defined, then the `switch` statement only executes when one of its cases match.
+
+The optional `default` label is not required to be defined after the rest of the cases.  However, most developers choose to put it last because logically it makes sense as the "default" or "last option".
 
 ### Step 2 - Change the level variable value to see how the switch statement evaluates it
 

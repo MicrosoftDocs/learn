@@ -49,7 +49,7 @@ Console.WriteLine("Decimal quotient: " + decimalQuotient);
 If you run the code, you will see the following output:
 
 ```output
-decimal quotient: 1.4
+Decimal quotient: 1.4
 ```
 
 In order for this to work, the quotient (left of the assignment operator) must be of type `decimal` **and** either the dividend *or* divisor must be of type `decimal` (*or* both).
@@ -61,7 +61,7 @@ decimal decimalQuotient = 7 / 5.0m;
 decimal decimalQuotient = 7.0m / 5.0m;
 ```
 
-However, the following lines of code won't work:
+However, the following lines of code won't work (or give inaccurate results):
 
 ```csharp
 int decimalQuotient = 7 / 5.0m;
