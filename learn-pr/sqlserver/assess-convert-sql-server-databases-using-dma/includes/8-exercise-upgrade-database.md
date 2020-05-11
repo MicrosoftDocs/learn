@@ -20,7 +20,7 @@ To use the DMA to migrate the database, follow these steps:
 1. On the **Add databases** tab, under **Source server**, ensure only **AdventureWorks2008R2** is selected.
 1. In the **Shared location accessible by source and target servers for backup operation** box, type **C:\\temp**, and then select **Next**.
 
-    >[!ALERT] Note that migrating a database on the same server, to the same location, causes an error.
+    >[!NOTE] Note that migrating a database on the same server, to the same location, causes an error.
 
 1. In the **Provide target database name** box, type **`AWMigrate2019`**.
 1. In the **Restore options** section, change the **Data** path for **Restore as on target server** to:
