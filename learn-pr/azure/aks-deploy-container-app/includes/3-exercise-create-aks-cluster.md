@@ -1,10 +1,10 @@
 ## Creating an AKS Cluster
 
-You can create an AKS cluster in one of two ways: Either by the Azure Portal via Browser, or via Azure CLI.
+The first action you need to take in order to create your cluster is to provide it within Azure. Providing an AKS cluster in Azure is simple and intuitive and can be done in one of two ways: Either by the Azure Portal via Browser, or via Azure CLI.
 
 #### [Browser](#tab/browser/)
 
-First of all access the [Azure Portal](https://portal.azure.com):
+1. First of all access the [Azure Portal](https://portal.azure.com):
 
 :::image type="content" source="../media/3-access-azure-portal.png" alt-text="Azure Portal":::
 
@@ -31,6 +31,8 @@ You can also click the "Create a resource" button in the home screen to be taken
 Then you can search or, if it's present, click the "Kubernetes Service" button right at the bottom right of your screen
 
 :::image type="content" source="../media/3-search-aks.png" alt-text="Azure Portal: AKS on search bar":::
+
+2. Fill the creation form
 
 Despite there are different ways to access the Kubernetes Service, all of those options should bring you to the AKS Creation Form below:
 
@@ -62,29 +64,52 @@ The final configuration will be like this:
 
 :::image type="content" source="../media/3-final-basic-config.png" alt-text="Final basic configuration":::
 
-When finished, click the `Next: Node pools >` button to configure other settings:
+3. Configure Node Pools
+
+When finished, click the `Next: Node pools >` button to configure the next settings:
 
 :::image type="content" source="../media/3-next-node-pools.png" alt-text="Finish basic configuration":::
 
-The _Node Pools_ tab has the configuration needed to create multiple node types within the same cluster. This configuration is provided through the `VM Scale Sets` setting.
-
-Each node is put into a "Node Pool", this means you can have several nodes with different sizes in different Node Pools across your cluster. You can even tell applications and pods to spin up in nodes according to their characteristics. That's what is called _Node Affinity_.
-
-A common usage of this feature is, for instance, to have CPU-intensive nodes and GPU-intensive nodes in separate groups so future applications which use more CPU – like processing spreadsheets – and applications which use intense GPU power – like Machine Learning models – can be deployed to separate nodes based on the __affinity__ they have with the desired resource.
+In this next screen you'll be presented with the configuration of the Node Pools, which were explained in the conceptual part of this exercise. But, as a reminder, _Node Pools_ are a way to have multiple node types within the same cluster.
 
 For this module, you'll leave the setting as it is:
 
 :::image type="content" source="../media/3-step-node-pools.png" alt-text="Setting up node pools":::
 
+4. Define authentication settings
+
 Click the `Next: Authentication >` button to proceed:
 
 :::image type="content" source="../media/3-authentication-button.png" alt-text="Proceed to next step":::
 
-The `Authentication` tab is where you set up everything related to user credentials and the Kubernetes integration with Azure services via [Service Principal](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?WT.mc_id=learndeploycontainerappsaks-learn-ludossan#create-a-service-principal). There's nothing to update here, click the `Next: Networking >` button to go on to the next step:
+The `Authentication` tab is where you set up everything related to user credentials and the Kubernetes integration with Azure services via [Service Principal](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?WT.mc_id=learndeploycontainerappsaks-learn-ludossan#create-a-service-principal). Leave all settings as they are.
+
+5. Creating a network
+
+Click the `Next: Networking >` button to go on to the next step:
 
 :::image type="content" source="../media/3-step-auth.png" alt-text="Authentication configuration":::
 
-The __Networking__ tab is the place where you'll configure how your cluster will behave to the world.
+The __Networking__ tab is the place where you'll configure how your cluster will behave to the world and how it'll manager the internal traffic from its pods and workloads.
+
+The Network tab has two different types of configuration, the _basic_ configuration, in which all IP addresses and subnets are automatically configured, and the _advanced_ mode, where you'll have to configure all the address ranges and subnets. For now let's keep on the basic.
+
+Next up, you can choose a __DNS name__, this is what is going to identify your cluster's ingress rules and external DNS records.
+
+__Private clusters__ allow you to keep your Kubernetes API internal only. This means no one outside your cluster will be able to access it, learn more [in the docs](https://docs.microsoft.com/azure/aks/private-clusters?WT.mc_id=learndeploycontainerappsaks-learn-ludossan).
+
+__Network Policies__ allow you to customize how your cluster's data will flow between all the workloads. By default, all internal communications are allowed. However, it's possible to define the cluster to use _Calico_ resource policy when using the _basic_ configurations, while the _Azure_ network policy needs you to switch to an _advanced_ configuration.
+
+> [!TIP]
+> Read more about __network policies__ [in the docs](https://docs.microsoft.com/azure/aks/use-network-policies?WT.mc_id=learndeploycontainerappsaks-learn-ludossan) or in [The Azure Friday Series, in Channel 9](https://azure.microsoft.com/resources/videos/azure-friday-secure-traffic-between-pods-using-network-policies-in-azure-kubernetes-service-aks/?WT.mc_id=learndeploycontainerappsaks-learn-ludossan)
+
+Lastly you'll enable the `HTTP Application Routing` configuration, explained in the conceptual part of this exercise. Read more about it [in the docs](https://docs.microsoft.com/azure/aks/http-application-routing?WT.mc_id=learndeploycontainerappsaks-learn-ludossan)
+
+:::image type="content" source="../media/3-network-settings.png" alt-text="Network tab":::
+
+Once all is done, click the `Review + Create` button:
+
+:::image type="content" source="../media/3-network-finish.png" alt-text="Finish network settings":::
 
 #### [Bash](#tab/bash/)
 

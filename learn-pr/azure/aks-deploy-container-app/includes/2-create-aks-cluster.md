@@ -38,3 +38,21 @@ A variant of the previous architecture, mostly used as developer environment on 
 This is the most used architecture to production clusters. Deploying multiple master nodes and multiple worker nodes allows for a high availability even when a master node is down. For this purpose, master nodes should be deployed in odd numbers, so quorum can be maintained in case one or more masters fail, because Kubernetes holds elections for the master manager node in order to avoid conflicts.
 
 Despite this difference, all other worker nodes should be able to communicate with any master using the API server through a Load Balancer. This architecture is more complex to be deployed, but is the recommended configuration for most production clusters.
+
+## Node Pools
+
+ _Node Pools_ is the name given to the configuration needed to create multiple node types within the same cluster. This configuration is provided through the `VM Scale Sets` setting – which you'll see later on in the exercise.
+
+Each node is put into a "Node Pool", this means you can have several nodes with different sizes in different Node Pools across your cluster. You can even tell applications and pods to spin up in nodes according to their characteristics. That's what is called _Node Affinity_.
+
+A common usage of this feature is, for instance, to have CPU-intensive nodes and GPU-intensive nodes in separate groups so future applications which use more CPU – like processing spreadsheets – and applications which use intense GPU power – like Machine Learning models – can be deployed to separate nodes based on the __affinity__ they have with the desired resource.
+
+## Automatic Routing
+
+AKS allows you to enable what is called __[HTTP Application Routing](https://docs.microsoft.com/azure/aks/http-application-routing?WT.mc_id=learndeploycontainerappsaks-learn-ludossan)__. This add-on makes it easy to access applications deployed to the cluster through the automatic creation of an [Ingress Controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/).
+
+In short, it creates a reverse-proxy NGINX server that allows for all the requests to be served from a single DNS output automatically. This means that you don't have to create an ingress every time a new service is deployed, the ingress controller will take care of it.
+
+As soon as a new ingress is deployed to the cluster, the Ingress Controller will create a new record on an Azure-managed DNS Zone and will link it to an existing Load Balancer. This allows for easy access to the resource through the Internet without the need of additional configuration.
+
+Despite the advantages, the __HTTP Application Routing__ add-on is not well suited to production due to its status as __not__ production-ready.
