@@ -54,17 +54,17 @@ In this exercise we'll enrich the documentation a developer sees about our API b
        // Register the Swagger generator, defining 1 or more Swagger documents
        services.AddSwaggerGen(c =>
        {
-           c.SwaggerDoc("v1", new Info
+           c.SwaggerDoc("v1", new OpenApiInfo
            {
                Version = "v1",
                Title = "PrintFramer API",
                Description = "Calculates the cost of a picture frame based on its dimensions.",
-               TermsOfService = "None",
-               Contact = new Contact
+               TermsOfService = new Uri("https://go.microsoft.com/fwlink/?LinkID=206977"),
+               Contact = new OpenApiContact
                {
                    Name = "Your name",
                    Email = string.Empty,
-                   Url = "https://www.microsoft.com/learn"
+                   Url = new Uri("https://www.microsoft.com/learn")
                }
            });
 
@@ -122,7 +122,7 @@ In this exercise we'll enrich the documentation a developer sees about our API b
 
 You use attributes from the `System.ComponentModel.DataAnnotations` namespace, to enable Swagger to improve the documentation.
 
-1. In the API controller, add a `[Produces("text/plain")]` attribute to the controller, to show that our API supports a content type response for **text/plain**.
+1. In the API controller, **PriceFrameController.cs**, add a `[Produces("text/plain")]` attribute to the controller, to show that our API supports a content type response for **text/plain**.
 
     ```csharp
     [Produces("text/plain")]
