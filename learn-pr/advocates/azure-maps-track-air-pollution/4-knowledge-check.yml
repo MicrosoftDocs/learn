@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.use-azure-maps-to-track-air-pollution.4-knowledge-check
+title: Knowledge Check - Azure Maps
+metadata:
+  title: Knowledge Check - Azure Maps
+  description: Before we start using the Azure Maps web SDK, lets check what you have learned so far.
+  author: jimbobbennett
+  ms.author: jabenn
+  ms.date: 04/20/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'The Spherical Mercator projection coordinate system does what to the map'
+    choices:  
+    - content: 'Makes it round'
+      isCorrect: false
+      explanation: The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This stretching makes a square map that can be rendered on a flat screen
+    - content: 'Colors it in green and blue'
+      isCorrect: false
+      explanation: The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This stretching makes a square map that can be rendered on a flat screen
+    - content: 'Stretches the map at the poles'
+      isCorrect: true
+      explanation: Correct. The Spherical Mercator projection coordinate system stretches the map at both the North and South poles. This stretching makes a square map that can be rendered on a flat screen
+    
+  - content: 'Heat map layers show...'
+    choices:
+    - content: 'The density of data using a range of colors'
+      isCorrect: true
+      explanation: Correct, heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map.
+    - content: 'The current temperature of the planet'
+      isCorrect: false
+      explanation: Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map.
+    - content: 'The height above sea level'
+      isCorrect: false
+      explanation: Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map.

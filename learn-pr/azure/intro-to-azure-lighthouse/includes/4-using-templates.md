@@ -33,10 +33,10 @@ When you visit the GitHub repository (https://github.com/Azure/Azure-Lighthouse-
 
 | **Onboarding scenario**                                      | **Template to use**                                          |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Subscription                                                 | [delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/Azure-Delegated-Resource-Management/templates/delegated-resource-management) |
-| Resource group                                               | [rg-delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/Azure-Delegated-Resource-Management/templates/rg-delegated-resource-management) |
-| Multiple resource groups within a subscription               | [multipleRgDelegatedResourceManagement](https://github.com/Azure/Azure-Lighthouse-samples/blob/master/Azure-Delegated-Resource-Management/templates/rg-delegated-resource-management/multipleRgDelegatedResourceManagement.json) |
-| Subscription when using an offer published to Azure Marketplace | [marketplace-delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/Azure-Delegated-Resource-Management/templates/marketplace-delegated-resource-management) |
+| Subscription                                                 | [delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/delegated-resource-management) |
+| Resource group                                               | [rg-delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/rg-delegated-resource-management) |
+| Multiple resource groups within a subscription               | [multipleRgDelegatedResourceManagement](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/rg-delegated-resource-management) |
+| Subscription when using an offer published to Azure Marketplace | [marketplace-delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/marketplace-delegated-resource-management) |
 
 As Contoso expands its Azure-managed service offerings, you'll pick the corresponding template to meet the service offering you want to manage. For Lamna Healthcare, it's straightforward. One of the requirements they've asked us to manage is their subscription. Looking at the list, the template that best meets our need is the **delegated-resource-management** template, which enables Lamna Healthcare to project an entire subscription into Contoso's tenant.
 
@@ -60,7 +60,6 @@ All template files are based on JSON. So, when editing templates, you'll need a 
 If you haven't done so already, you'll need to download the **delegated-resource-management** template from the GitHub repository. To get to this template, you'll need to:
 
 1. Open the GitHub repository.
-1. Select the Azure **Delegated-Resource-Management** folder.
 1. Select the **Templates**  folder.
 1. Select the **delegated-resource-management** folder.
 1. You'll see the folder contains two files:

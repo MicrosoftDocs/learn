@@ -3,7 +3,8 @@ After you've created environments and compute targets in your workspace, you can
 To use a particular compute target, you can specify it in the appropriate parameter for an experiment run configuration or estimator. For example, the following code configures an estimator to use the compute target named *aml-cluster*:
 
 ```python
-from azureml.core import Environment, Estimator
+from azureml.core import Environment
+from azureml.train.estimator import Estimator
 
 compute_name = 'aml-cluster'
 
@@ -20,7 +21,8 @@ When an experiment for the estimator is submitted, the run will be queued while 
 Instead of specifying the name of the compute target, you can specify a **ComputeTarget** object, like this:
 
 ```python
-from azureml.core import Environment, Estimator
+from azureml.core import Environment
+from azureml.train.estimator import Estimator
 from azureml.core.compute import ComputeTarget
 
 compute_name = 'aml-cluster'

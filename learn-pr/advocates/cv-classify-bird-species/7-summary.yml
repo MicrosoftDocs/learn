@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.cv-classify-bird-species.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 04/30/2020
+  author: cassieview
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

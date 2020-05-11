@@ -33,6 +33,12 @@ NGINX ingress controller is deployed as any other deployment in Kubernetes. You 
     ```bash
     kubectl create namespace ingress
     ```
+    
+1. Configure the Helm client to use the stable repository by running the `helm repo add` command below.
+
+    ```bash
+    helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+    ```
 
 1. Next, install the NGINX ingress controller. NGINX ingress is part of the stable Helm repository you configured earlier when you installed MongoDB. You'll install two replicas of the NGINX ingress controllers are deployed with the `--set controller.replicaCount` parameter for added redundancy. Make sure to schedule the controller only on Linux nodes as Windows Server nodes shouldn't run the ingress controller. You specify a node selector by using the `--set nodeSelector` parameter to tell the Kubernetes scheduler to run the NGINX ingress controller only on Linux-based nodes.
 
