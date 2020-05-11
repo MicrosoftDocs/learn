@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.simulate-generate-empirical-distributions-python.sampling-from-population
-title: Sampling From A Population
+title: Sampling from a Population
 metadata:
-  title: Sampling From A Population
+  title: Sampling from a Population
   description: Understand convergence of emperical distributions
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/05-sampling-from-population.md)]

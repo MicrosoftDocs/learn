@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.simulate-generate-empirical-distributions-python
 metadata:
-  title: Simulate And Generate Empirical distributions In Python
+  title: Simulate and generate Empirical distributions in Python
   description: Learn how to simulate and generate empirical distributions in python
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
-title: Simulate And Generate Empirical distributions In Python
+  ms.prod: learning-azure
+title: Simulate and generate Empirical distributions in Python
 summary: Learn how to simulate and generate empirical distributions in python
 abstract: |
   In this module, you will:
@@ -32,7 +32,7 @@ units:
 - learn.student-evangelism.simulate-generate-empirical-distributions-python.sampling-empirical-distributions
 - learn.student-evangelism.simulate-generate-empirical-distributions-python.empirical-distributions
 - learn.student-evangelism.simulate-generate-empirical-distributions-python.sampling-from-population
-- learn.student-evangelism.simulate-generate-empirical-distributions-python.empirical-distribution-of-statistic
+- learn.student-evangelism.simulate-generate-empirical-distributions-python.empirical-distribution-statistic
 - learn.student-evangelism.simulate-generate-empirical-distributions-python.randomization
 - learn.student-evangelism.simulate-generate-empirical-distributions-python.endnote
 - learn.student-evangelism.simulate-generate-empirical-distributions-python.mini-labs
