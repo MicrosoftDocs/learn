@@ -32,89 +32,15 @@ here we will just work with it. First, let's take a look at it.
 cones
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Color
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-light brown
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-bubblegum
-</td>
-<td>
-pink
-</td>
-<td>
-4.75
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Color|Price|
+|--- |--- |--- |
+|strawberry|pink|3.55|
+|chocolate|light brown|4.75|
+|chocolate|dark brown|5.25|
+|strawberry|pink|5.25|
+|chocolate|dark brown|5.25|
+|bubblegum|pink|4.75|
+
 The table has six rows. Each row corresponds to one ice cream cone. The
 ice cream cones are the *individuals*.
 
@@ -134,49 +60,13 @@ can use the table method `show`.
 ``` {.python}
 cones.show(2)
 ```
+|Flavor|Color|Price|
+|--- |--- |--- |
+|strawberry|pink|3.55|
+|chocolate|light brown|4.75|
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Color
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-light brown
-</td>
-<td>
-4.75
-</td>
-</tr>
-</tbody>
-</table>
-<p>
 ... (4 rows omitted)
-</p>
+
 You can replace 2 by any number of rows. If you ask for more than six,
 you will only get six, because `cones` only has six rows.
 
@@ -188,137 +78,31 @@ columns.
 ``` {.python}
 cones.select('Flavor')
 ```
+|Flavor|
+|--- |
+|strawberry|
+|chocolate|
+|chocolate|
+|strawberry|
+|chocolate|
+|bubblegum|
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-</tr>
-<tr>
-<td>
-bubblegum
-</td>
-</tr>
-</tbody>
-</table>
 This leaves the original table unchanged.
 
 ``` {.python}
 cones
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Color
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-light brown
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-bubblegum
-</td>
-<td>
-pink
-</td>
-<td>
-4.75
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Color|Price|
+|--- |--- |--- |
+|strawberry|pink|3.55|
+|chocolate|light brown|4.75|
+|chocolate|dark brown|5.25|
+|strawberry|pink|5.25|
+|chocolate|dark brown|5.25|
+|bubblegum|pink|4.75|
+
+
 You can select more than one column, by separating the column labels by
 commas.
 
@@ -326,68 +110,15 @@ commas.
 cones.select('Flavor', 'Price')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-bubblegum
-</td>
-<td>
-4.75
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Price|
+|--- |--- |
+|strawberry|3.55|
+|chocolate|4.75|
+|chocolate|5.25|
+|strawberry|5.25|
+|chocolate|5.25|
+|bubblegum|4.75|
+
 You can also *drop* columns you don't want. The table above can be
 created by dropping the `Color` column.
 
@@ -395,68 +126,15 @@ created by dropping the `Color` column.
 cones.drop('Color')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-bubblegum
-</td>
-<td>
-4.75
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Price|
+|--- |--- |
+|strawberry|3.55|
+|chocolate|4.75|
+|chocolate|5.25|
+|strawberry|5.25|
+|chocolate|5.25|
+|bubblegum|4.75|
+
 You can name this new table and look at it again by just typing its
 name.
 
@@ -466,68 +144,15 @@ no_colors = cones.drop('Color')
 no_colors
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-bubblegum
-</td>
-<td>
-4.75
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Price|
+|--- |--- |
+|strawberry|3.55|
+|chocolate|4.75|
+|chocolate|5.25|
+|strawberry|5.25|
+|chocolate|5.25|
+|bubblegum|4.75|
+
 Like `select`, the `drop` method creates a smaller table and leaves the
 original table unchanged. In order to explore your data, you can create
 any number of smaller tables by using choosing or dropping columns. It
@@ -544,89 +169,16 @@ of the cones.
 cones.sort('Price')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Color
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-light brown
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-bubblegum
-</td>
-<td>
-pink
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Color|Price|
+|--- |--- |--- |
+|strawberry|pink|3.55|
+|chocolate|light brown|4.75|
+|bubblegum|pink|4.75|
+|chocolate|dark brown|5.25|
+|strawberry|pink|5.25|
+|chocolate|dark brown|5.25|
+
+
 To sort in descending order, you can use an *optional* argument to
 `sort`. As the name implies, optional arguments don't have to be used,
 but they can be used if you want to change the default behavior of a
@@ -640,89 +192,15 @@ specified column. To sort in decreasing order, use the optional argument
 cones.sort('Price', descending=True)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Color
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-bubblegum
-</td>
-<td>
-pink
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-light brown
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-3.55
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Color|Price|
+|--- |--- |--- |
+|chocolate|dark brown|5.25|
+|strawberry|pink|5.25|
+|chocolate|dark brown|5.25|
+|bubblegum|pink|4.75|
+|chocolate|light brown|4.75|
+|strawberry|pink|3.55|
+
 Like `select` and `drop`, the `sort` method leaves the original table
 unchanged.
 
@@ -741,56 +219,12 @@ corresponding to chocolate cones.
 cones.where('Flavor', 'chocolate')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Color
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-light brown
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Color|Price|
+|--- |--- |--- |
+|chocolate|light brown|4.75|
+|chocolate|dark brown|5.25|
+|chocolate|dark brown|5.25|
+
 The arguments, separated by a comma, are the label of the column and the
 value we are looking for in that column. The `where` method can also be
 used when the condition that the rows must satisfy is more complicated.
@@ -804,23 +238,9 @@ where the flavor is `Chocolate`.
 cones.where('Flavor', 'Chocolate')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Color
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+| Flavor | Color | Price |
+|--------|-------|-------|
+
 Like all the other table methods in this section, `where` leaves the
 original table unchanged.
 
@@ -854,209 +274,30 @@ Hawks, had a salary of almost $\$18.7$ million in 2015-2016.
 nba
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Paul Millsap
-</td>
-<td>
-PF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-18.6717
-</td>
-</tr>
-<tr>
-<td>
-Al Horford
-</td>
-<td>
-C
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-12
-</td>
-</tr>
-<tr>
-<td>
-Tiago Splitter
-</td>
-<td>
-C
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-9.75625
-</td>
-</tr>
-<tr>
-<td>
-Jeff Teague
-</td>
-<td>
-PG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-8
-</td>
-</tr>
-<tr>
-<td>
-Kyle Korver
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-5.74648
-</td>
-</tr>
-<tr>
-<td>
-Thabo Sefolosha
-</td>
-<td>
-SF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-4
-</td>
-</tr>
-<tr>
-<td>
-Mike Scott
-</td>
-<td>
-PF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-3.33333
-</td>
-</tr>
-<tr>
-<td>
-Kent Bazemore
-</td>
-<td>
-SF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-Dennis Schroder
-</td>
-<td>
-PG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-1.7634
-</td>
-</tr>
-<tr>
-<td>
-Tim Hardaway Jr.
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-1.30452
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Paul Millsap|PF|Atlanta Hawks|18.6717|
+|Al Horford|C|Atlanta Hawks|12|
+|Tiago Splitter|C|Atlanta Hawks|9.75625|
+|Jeff Teague|PG|Atlanta Hawks|8|
+|Kyle Korver|SG|Atlanta Hawks|5.74648|
+|Thabo Sefolosha|SF|Atlanta Hawks|4|
+|Mike Scott|PF|Atlanta Hawks|3.33333|
+|Kent Bazemore|SF|Atlanta Hawks|2|
+|Dennis Schroder|PG|Atlanta Hawks|1.7634|
+|Tim Hardaway Jr.|SG|Atlanta Hawks|1.30452|
 ... (407 rows omitted)
-</p>
+
 Fans of Stephen Curry can find his row by using `where`.
 
 ``` {.python}
 nba.where('PLAYER', 'Stephen Curry')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Stephen Curry
-</td>
-<td>
-PG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-11.3708
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Stephen Curry|PG|Golden State Warriors|11.3708|
+
 We can also create a new table called `warriors` consisting of just the
 data for the Golden State Warriors.
 
@@ -1064,170 +305,21 @@ data for the Golden State Warriors.
 warriors = nba.where('TEAM', 'Golden State Warriors')
 warriors
 ```
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Klay Thompson|SG|Golden State Warriors|15.501|
+|Draymond Green|PF|Golden State Warriors|14.2609|
+|Andrew Bogut|C|Golden State Warriors|13.8|
+|Andre Iguodala|SF|Golden State Warriors|11.7105|
+|Stephen Curry|PG|Golden State Warriors|11.3708|
+|Jason Thompson|PF|Golden State Warriors|7.00847|
+|Shaun Livingston|PG|Golden State Warriors|5.54373|
+|Harrison Barnes|SF|Golden State Warriors|3.8734|
+|Marreese Speights|C|Golden State Warriors|3.815|
+|Leandro Barbosa|SG|Golden State Warriors|2.5|
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Klay Thompson
-</td>
-<td>
-SG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-15.501
-</td>
-</tr>
-<tr>
-<td>
-Draymond Green
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-14.2609
-</td>
-</tr>
-<tr>
-<td>
-Andrew Bogut
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-13.8
-</td>
-</tr>
-<tr>
-<td>
-Andre Iguodala
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-11.7105
-</td>
-</tr>
-<tr>
-<td>
-Stephen Curry
-</td>
-<td>
-PG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-11.3708
-</td>
-</tr>
-<tr>
-<td>
-Jason Thompson
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-7.00847
-</td>
-</tr>
-<tr>
-<td>
-Shaun Livingston
-</td>
-<td>
-PG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-5.54373
-</td>
-</tr>
-<tr>
-<td>
-Harrison Barnes
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-3.8734
-</td>
-</tr>
-<tr>
-<td>
-Marreese Speights
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-3.815
-</td>
-</tr>
-<tr>
-<td>
-Leandro Barbosa
-</td>
-<td>
-SG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-2.5
-</td>
-</tr>
-</tbody>
-</table>
-<p>
 ... (4 rows omitted)
-</p>
+
 By default, the first 10 lines of a table are displayed. You can use
 `show` to display more or fewer. To display the entire table, use `show`
 with no argument in the parentheses.
@@ -1236,222 +328,23 @@ with no argument in the parentheses.
 warriors.show()
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Klay Thompson
-</td>
-<td>
-SG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-15.501
-</td>
-</tr>
-<tr>
-<td>
-Draymond Green
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-14.2609
-</td>
-</tr>
-<tr>
-<td>
-Andrew Bogut
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-13.8
-</td>
-</tr>
-<tr>
-<td>
-Andre Iguodala
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-11.7105
-</td>
-</tr>
-<tr>
-<td>
-Stephen Curry
-</td>
-<td>
-PG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-11.3708
-</td>
-</tr>
-<tr>
-<td>
-Jason Thompson
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-7.00847
-</td>
-</tr>
-<tr>
-<td>
-Shaun Livingston
-</td>
-<td>
-PG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-5.54373
-</td>
-</tr>
-<tr>
-<td>
-Harrison Barnes
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-3.8734
-</td>
-</tr>
-<tr>
-<td>
-Marreese Speights
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-3.815
-</td>
-</tr>
-<tr>
-<td>
-Leandro Barbosa
-</td>
-<td>
-SG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-2.5
-</td>
-</tr>
-<tr>
-<td>
-Festus Ezeli
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-2.00875
-</td>
-</tr>
-<tr>
-<td>
-Brandon Rush
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-1.27096
-</td>
-</tr>
-<tr>
-<td>
-Kevon Looney
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-1.13196
-</td>
-</tr>
-<tr>
-<td>
-Anderson Varejao
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-0.289755
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Klay Thompson|SG|Golden State Warriors|15.501|
+|Draymond Green|PF|Golden State Warriors|14.2609|
+|Andrew Bogut|C|Golden State Warriors|13.8|
+|Andre Iguodala|SF|Golden State Warriors|11.7105|
+|Stephen Curry|PG|Golden State Warriors|11.3708|
+|Jason Thompson|PF|Golden State Warriors|7.00847|
+|Shaun Livingston|PG|Golden State Warriors|5.54373|
+|Harrison Barnes|SF|Golden State Warriors|3.8734|
+|Marreese Speights|C|Golden State Warriors|3.815|
+|Leandro Barbosa|SG|Golden State Warriors|2.5|
+|Festus Ezeli|C|Golden State Warriors|2.00875|
+|Brandon Rush|SF|Golden State Warriors|1.27096|
+|Kevon Looney|SF|Golden State Warriors|1.13196|
+|Anderson Varejao|PF|Golden State Warriors|0.289755|
+
 The `nba` table is sorted in alphabetical order of the team names. To
 see how the players were paid in 2015-2016, it is useful to sort the
 data by salary. Remember that by default, the sorting is in increasing
@@ -1461,169 +354,21 @@ order.
 nba.sort('SALARY')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Thanasis Antetokounmpo
-</td>
-<td>
-SF
-</td>
-<td>
-New York Knicks
-</td>
-<td>
-0.030888
-</td>
-</tr>
-<tr>
-<td>
-Jordan McRae
-</td>
-<td>
-SG
-</td>
-<td>
-Phoenix Suns
-</td>
-<td>
-0.049709
-</td>
-</tr>
-<tr>
-<td>
-Cory Jefferson
-</td>
-<td>
-PF
-</td>
-<td>
-Phoenix Suns
-</td>
-<td>
-0.049709
-</td>
-</tr>
-<tr>
-<td>
-Elliot Williams
-</td>
-<td>
-SG
-</td>
-<td>
-Memphis Grizzlies
-</td>
-<td>
-0.055722
-</td>
-</tr>
-<tr>
-<td>
-Orlando Johnson
-</td>
-<td>
-SG
-</td>
-<td>
-Phoenix Suns
-</td>
-<td>
-0.055722
-</td>
-</tr>
-<tr>
-<td>
-Phil Pressey
-</td>
-<td>
-PG
-</td>
-<td>
-Phoenix Suns
-</td>
-<td>
-0.055722
-</td>
-</tr>
-<tr>
-<td>
-Keith Appling
-</td>
-<td>
-PG
-</td>
-<td>
-Orlando Magic
-</td>
-<td>
-0.061776
-</td>
-</tr>
-<tr>
-<td>
-Sean Kilpatrick
-</td>
-<td>
-SG
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-0.099418
-</td>
-</tr>
-<tr>
-<td>
-Erick Green
-</td>
-<td>
-PG
-</td>
-<td>
-Utah Jazz
-</td>
-<td>
-0.099418
-</td>
-</tr>
-<tr>
-<td>
-Jeff Ayres
-</td>
-<td>
-PF
-</td>
-<td>
-Los Angeles Clippers
-</td>
-<td>
-0.111444
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Thanasis Antetokounmpo|SF|New York Knicks|0.030888|
+|Jordan McRae|SG|Phoenix Suns|0.049709|
+|Cory Jefferson|PF|Phoenix Suns|0.049709|
+|Elliot Williams|SG|Memphis Grizzlies|0.055722|
+|Orlando Johnson|SG|Phoenix Suns|0.055722|
+|Phil Pressey|PG|Phoenix Suns|0.055722|
+|Keith Appling|PG|Orlando Magic|0.061776|
+|Sean Kilpatrick|SG|Denver Nuggets|0.099418|
+|Erick Green|PG|Utah Jazz|0.099418|
+|Jeff Ayres|PF|Los Angeles Clippers|0.111444|
+
 ... (407 rows omitted)
-</p>
+
 These figures are somewhat difficult to compare as some of these players
 changed teams during the season and received salaries from more than one
 team; only the salary from the last team appears in the table.
@@ -1636,175 +381,19 @@ we can sort in descending order of salary and look at the top few rows.
 nba.sort('SALARY', descending=True)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Kobe Bryant
-</td>
-<td>
-SF
-</td>
-<td>
-Los Angeles Lakers
-</td>
-<td>
-25
-</td>
-</tr>
-<tr>
-<td>
-Joe Johnson
-</td>
-<td>
-SF
-</td>
-<td>
-Brooklyn Nets
-</td>
-<td>
-24.8949
-</td>
-</tr>
-<tr>
-<td>
-LeBron James
-</td>
-<td>
-SF
-</td>
-<td>
-Cleveland Cavaliers
-</td>
-<td>
-22.9705
-</td>
-</tr>
-<tr>
-<td>
-Carmelo Anthony
-</td>
-<td>
-SF
-</td>
-<td>
-New York Knicks
-</td>
-<td>
-22.875
-</td>
-</tr>
-<tr>
-<td>
-Dwight Howard
-</td>
-<td>
-C
-</td>
-<td>
-Houston Rockets
-</td>
-<td>
-22.3594
-</td>
-</tr>
-<tr>
-<td>
-Chris Bosh
-</td>
-<td>
-PF
-</td>
-<td>
-Miami Heat
-</td>
-<td>
-22.1927
-</td>
-</tr>
-<tr>
-<td>
-Chris Paul
-</td>
-<td>
-PG
-</td>
-<td>
-Los Angeles Clippers
-</td>
-<td>
-21.4687
-</td>
-</tr>
-<tr>
-<td>
-Kevin Durant
-</td>
-<td>
-SF
-</td>
-<td>
-Oklahoma City Thunder
-</td>
-<td>
-20.1586
-</td>
-</tr>
-<tr>
-<td>
-Derrick Rose
-</td>
-<td>
-PG
-</td>
-<td>
-Chicago Bulls
-</td>
-<td>
-20.0931
-</td>
-</tr>
-<tr>
-<td>
-Dwyane Wade
-</td>
-<td>
-SG
-</td>
-<td>
-Miami Heat
-</td>
-<td>
-20
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Kobe Bryant|SF|Los Angeles Lakers|25|
+|Joe Johnson|SF|Brooklyn Nets|24.8949|
+|LeBron James|SF|Cleveland Cavaliers|22.9705|
+|Carmelo Anthony|SF|New York Knicks|22.875|
+|Dwight Howard|C|Houston Rockets|22.3594|
+|Chris Bosh|PF|Miami Heat|22.1927|
+|Chris Paul|PG|Los Angeles Clippers|21.4687|
+|Kevin Durant|SF|Oklahoma City Thunder|20.1586|
+|Derrick Rose|PG|Chicago Bulls|20.0931|
+|Dwyane Wade|SG|Miami Heat|20|
+
 ... (407 rows omitted)
-</p>
 Kobe Bryant, since retired, was the highest earning NBA player in
 2015-2016.
-
-``` {.python}
-```
-
-
-``` {.python}
-```
