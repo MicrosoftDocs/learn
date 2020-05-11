@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.intro-to-kubernetes-on-azure
+metadata:
+  title: Introduction to Kubernetes on Azure
+  description: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service. 
+  brand: azure
+  ms.date: 5/19/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage security operations in Azure
+summary: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service. 
+prerequisites: None
+iconUrl: /learn/achievements/intro-to-kubernetes-on-azure.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- devops-engineer
+products:
+- azure
+- azure-kubernetes-service
+modules:
+- learn.intro-to-docker-containers
+- learn.intro-to-kubernetes
+- learn.intro-to-azure-kubernetes-service
+trophy:
+  uid: learn.intro-to-kubernetes-on-azure.trophy
