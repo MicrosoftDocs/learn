@@ -16,9 +16,7 @@ abstract: |
   - Create and configure a Twilio account with a programmable phone number for sending and receiving text messages.
   - Deploy an existing application to an Azure function app by using Twilio and Azure Maps to manage and send temperature alerts for specific locations.
 
-# Use placeholder image until final artwork ready
-iconUrl: /learn/achievements/generic-badge.svg
-# iconUrl: /learn/achievements/advocates/send-crop-weather-alerts.svg
+iconUrl: /learn/achievements/advocates/send-crop-weather-alerts.svg
 levels:
 - beginner
 roles:

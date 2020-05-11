@@ -18,8 +18,7 @@ abstract: |
   - Improve upon your bot's ability to understand by adding LUIS
   - Give your bot personality with Azure QnA Maker
   - Explore how your bot could become more culturally sensitive
-# placeholder icon
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/advocates/responsible-bots.svg
 levels:
 - beginner
 roles:
