@@ -19,14 +19,14 @@ abstract: |
  - Explore gaming features and tools including Copilot and the Xbox Adaptive Controller.
  - Explore Microsoft 365 features and tools including Microsoft Teams, PowerPoint Designer, and PowerPoint Presenter Coach, plus Microsoft Translator.
 prerequisites: None
-iconUrl: /learn/achievements/introduction-to-disability-&-accessibility.svg
+iconUrl: /learn/achievements/accessibility-features.svg
 levels:
 - beginner
 roles:
 - administrator
 - student
 products:
-- azure
+- Microsoft 365
 units:
 - learn.cela-accessibility-features.windows-10-accessibility
 - learn.cela-accessibility-features.gaming-features-and-tools
@@ -34,4 +34,4 @@ units:
 - learn.cela-accessibility-features.summary-and-resources
 - learn.cela-accessibility-features.knowledge-check
 badge:
-  uid: learn.cela-accessibility-features.badge
+  uid: learn.accessibility-features.badge
