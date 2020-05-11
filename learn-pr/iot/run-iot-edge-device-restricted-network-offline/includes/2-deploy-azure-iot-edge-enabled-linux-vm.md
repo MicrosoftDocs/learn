@@ -5,7 +5,7 @@ This unit will detail steps on deploying an Ubuntu Server VM with Azure IoT Edge
 
 1. Log in to your Azure portal using your Azure account credentials.
 
-2. Open the Azure Cloudshell by clicking the Terminal icon located within the top header bar of the Azure portal, and select the Bash shell option.
+2. Open the Azure CloudShell by clicking the Terminal icon located within the top header bar of the Azure portal, and select the Bash shell option.
 
 3. To create a resource group for the Azure IoT Edge enabled VM, enter the following command:
 
