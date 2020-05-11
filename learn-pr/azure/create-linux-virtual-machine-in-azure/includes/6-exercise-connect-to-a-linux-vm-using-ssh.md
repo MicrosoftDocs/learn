@@ -9,21 +9,23 @@ Let's connect to our Linux VM with SSH, and configure Apache, so we have a runni
     - Get the public IP address of the VM
     - See the activity of the CPU, disk, and network
 
-1. Click the **Connect** button at the top of the pane.
+1. Click the **Connect** > **SSH** at the top of the pane.
 
-1. In the **Connect to virtual machine** panel, note the **IP address** and **Port number** settings. On the **SSH** tab, you will also find the command you need to execute locally to connect to the VM. Copy the command to the clipboard.
+1. Under step 4, copy the command to the clipboard.
 
     ![Screenshot of the Azure portal showing the Connect to a virtual machine panel configured to connect via SSH to the newly created Linux VM.](../media/5-connect-ssh.png)
 
+1. We used the default SSH private key file path when we created the SSH key pair. So we don't need to specify the private key path in the command by using the flag `-i` with the private key path. But if you entered a different path when you created the SSH key pair, you'd add that path to the command.
+
 ## Connect with SSH
 
-1. Paste the command from your clipboard into the Azure Cloud Shell. It should look something like the sample below; however, it will have a different IP address (and perhaps a different username if you didn't use **jim**!):
+1. Paste the command from your clipboard into the Azure Cloud Shell. Delete the `-i` flag and the private key path placeholder. It should look something like the sample below with a different IP address and username:
 
     ```bash
-    ssh jim@137.117.101.249
+    ssh azureuser@13.68.150.164
     ```
 
-    The first time we connect, SSH will ask us about authenticating against an unknown host. SSH is telling you that you've never connected to this server before. If that's true, then it's perfectly normal, and you can respond with **yes** to save the fingerprint of the server in the known host file:
+1. The first time we connect, SSH will ask us about authenticating against an unknown host. SSH is telling you that you've never connected to this server before. If that's true, then it's perfectly normal, and you can respond with **yes** to save the fingerprint of the server in the known host file:
 
     ```output
     The authenticity of host '137.117.101.249 (137.117.101.249)' can't be established.
@@ -31,10 +33,8 @@ Let's connect to our Linux VM with SSH, and configure Apache, so we have a runni
     Are you sure you want to continue connecting (yes/no)? yes
     Warning: Permanently added '137.117.101.249' (ECDSA) to the list of known hosts.
     ```
-
-1. This command will open an SSH connection and place you at a shell command prompt for Linux.
-
-1. Try executing a few Linux commands
+1. Enter the passphrase you used when you created the SSH key pair.
+1. In the shell command prompt for Linux, try executing a few Linux commands
     - `ls -la /` to show the root of the disk
     - `ps -l` to show all the running processes
     - `dmesg` to list all the kernel messages
