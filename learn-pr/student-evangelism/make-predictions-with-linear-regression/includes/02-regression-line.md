@@ -21,7 +21,7 @@ identify the straight line about which the points are clustered. In this
 section we will retrace the path that Galton and Pearson took to
 discover that line.
 
-Galton's data on the heights of parents and their adult children showed
+Galton's data on the heights of parents and their adult children showedthe 
 a linear association. The linearity was confirmed when our predictions
 of the children's heights based on the midparent heights roughly
 followed a straight line.

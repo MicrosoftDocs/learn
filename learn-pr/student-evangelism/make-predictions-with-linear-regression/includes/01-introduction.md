@@ -142,6 +142,7 @@ Child
 <p>
 ... (924 rows omitted)
 </p>
+
 ``` {.python}
 heights.scatter('MidParent')
 ```

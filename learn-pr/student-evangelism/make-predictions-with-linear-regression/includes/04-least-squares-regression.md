@@ -156,6 +156,7 @@ Shot Put Distance
 <p>
 ... (18 rows omitted)
 </p>
+
 ``` {.python}
 shotput.scatter('Weight Lifted')
 ```
@@ -308,4 +309,3 @@ shotput.with_column('Best Quadratic Curve', shotput_fit).scatter(0)
 ```
 
 ![png](../media/79-least-squares-regression-23-0.png)
-g](79_Least_Squares_Regression_files/79_Least_Squares_Regression_23_0.png)

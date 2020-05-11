@@ -101,6 +101,7 @@ Characters
 <p>
 ... (44 rows omitted)
 </p>
+
 ``` {.python}
 little_women.scatter('Periods', 'Characters')
 ```

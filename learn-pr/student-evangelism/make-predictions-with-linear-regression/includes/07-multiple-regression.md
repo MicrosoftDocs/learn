@@ -424,11 +424,6 @@ does not contain any houses that sold for less than \$35,000.
 sales.hist('SalePrice', bins=32, unit='$')
 ```
 
-/home/choldgraf/anaconda/envs/dev/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
 ![png](../media/82-multiple-regression-5-1.png)
 
 #### Correlation
