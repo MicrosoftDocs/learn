@@ -12,11 +12,12 @@ metadata:
 title: Introduction to Python for data science
 summary: |
   Welcome to the introduction to Python for data science. The modules in this learning path pair with in-person workshops that run in Microsoft Reactors, and they're also standalone learning resources. That is, you don't have to come to a workshop to benefit from them.
+
   Throughout this learning path, you'll be encouraged to try out Python code in Visual Studio Code by using the Python extension and Jupyter Notebook.
 
   In this learning path, you will:
     - Learn about Python for data science
-    - Understand the basics of using the NumPy and Pandas packages
+    - Understand the basics of using the NumPy and Pandas libraries
     - Clean and manipulate data to prepare for analysis
     - Work with your data in Visual Studio Code by using Jupyter Notebook
 
