@@ -4,17 +4,18 @@ title: Variability
 metadata:
   title: Variability
   description: Learn about standard devation and chebyshev's inequality
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
   show_latex: true
 durationInMinutes: 10
 content: |
   [!include[](includes/02-variability.md)]
 
 quiz:
+  title: Check your Knowledge
   questions:
     - content: "For a distribution that's skewed towards the right, would the mean be to the left, to the right of the median, or will the mean and the median probably overlap?"
       choices:

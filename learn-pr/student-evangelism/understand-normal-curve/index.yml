@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.understand-normal-curve
 metadata:
-  title: Understand The Normal Curve
+  title: Understand the Normal Curve
   description: Learn about the normal curve
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
-title: Understand The Normal Curve
+  ms.prod: learning-azure
+title: Understand the Normal Curve
 summary: Learn about the normal curve
 abstract: |
   In this module, you will:
@@ -31,7 +31,7 @@ units:
 - learn.student-evangelism.understand-normal-curve.variability
 - learn.student-evangelism.understand-normal-curve.sd-normal-curve
 - learn.student-evangelism.understand-normal-curve.central-limit-theorem
-- learn.student-evangelism.understand-normal-curve.variability-of-sample-mean
+- learn.student-evangelism.understand-normal-curve.variability-sample-mean
 - learn.student-evangelism.understand-normal-curve.choosing-sample-size
 - learn.student-evangelism.understand-normal-curve.mini-labs
 - learn.student-evangelism.understand-normal-curve.summary
