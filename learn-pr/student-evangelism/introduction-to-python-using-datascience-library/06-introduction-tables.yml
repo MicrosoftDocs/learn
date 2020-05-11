@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.introduction-to-python-using-datascience-library.introduction-to-tables
+uid: learn.student-evangelism.introduction-to-python-using-datascience-library.introduction-tables
 title: Introduction to Tables
 metadata:
   title: Introduction to Tables
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/06-introduction-to-tables.md)]
+  [!include[](includes/06-introduction-tables.md)]
 content: 'You have a table of the top 50 most played songs on spotify called top_50_songs with columns rank (an integer), song_name (a string), artist_name (a string), and num_plays (an integer).'
 
 quiz:
