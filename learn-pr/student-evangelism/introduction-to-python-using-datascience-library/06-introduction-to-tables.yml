@@ -4,17 +4,18 @@ title: Introduction to Tables
 metadata:
   title: Introduction to Tables
   description: Introduction to Tables using the datascience Package
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/06-introduction-to-tables.md)]
 content: 'You have a table of the top 50 most played songs on spotify called top_50_songs with columns rank (an integer), song_name (a string), artist_name (a string), and num_plays (an integer).'
 
 quiz:
+  title: Check your Knowledge
   questions:
     - content: 'The expression top_50_songs.where("num_plays", are.greater_than(1000000)) returns a table of all songs played more than 1,000,000 times. Which of the following expressions returns the same result?'
       choices:

@@ -4,17 +4,18 @@ title: Strings
 metadata:
   title: Strings
   description: Introduction to Strings
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/09-strings.md)]
 content: 'The following commands are executed in order, what would python display? We first run six = "6"'
 
 quiz:
+  title: Check your Knowledge
   questions:
     - content: 'str(six)'
       choices:

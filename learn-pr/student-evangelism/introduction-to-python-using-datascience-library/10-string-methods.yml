@@ -4,11 +4,11 @@ title: String Methods
 metadata:
   title: String Methods
   description: Introduction to String Methods
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/10-string-methods.md)]
@@ -18,6 +18,7 @@ y = 2
 z = x / y'
 
 quiz:
+  title: Check your Knowledge
   questions:
     - content: 'What will x + y evaluate to?'
       choices:
