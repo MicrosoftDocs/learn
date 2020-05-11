@@ -18,7 +18,7 @@ When building an IaaS workload, which type of disk should you use? There are fou
 
 - **Premium storage SSD** - This SSD backed storage is well suited for those workloads that are going into production and require the greatest reliability, demand consistent low latency, or need high levels of throughput and IOPS. Since these disks have greater performance and reliability capabilities, they are recommended for all production workloads.
 
-Premium storage can attach only to specific virtual machine (VM) sizes. Premium storage capable sizes are designated with an "s" in the name, for example D2**s**_v3 or Standard_F2**s**_v2. Any virtual machine type (with or without an "s" in the name) can attach standard storage HDD or SSD drives.
+Premium storage can attach only to specific virtual machine (VM) sizes. Premium storage capable sizes are designated with an "s" in the name, for example D2**s**\_v3 or Standard_F2**s**\_v2. Any virtual machine type (with or without an "s" in the name) can attach standard storage HDD or SSD drives.
 
 Disks can be striped using a striping technology (such as Storage Spaces on Windows or mdadm on Linux) to increase the throughput and IOPS by spreading disk activity across multiple disks. Using disk striping allows you to really push the limits of performance for disks, and is often seen in high-performance database systems and other systems with intensive storage requirements.
 
