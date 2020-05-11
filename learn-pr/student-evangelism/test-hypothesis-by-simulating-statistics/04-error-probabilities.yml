@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.error-probabilities
-title: Error Probabilities
+title: error probabilities
 metadata:
-  title: Error Probabilities
+  title: error probabilities
   description: Learn the error associated with decisions
   ms.date: 03/19/2020
   author: leestott

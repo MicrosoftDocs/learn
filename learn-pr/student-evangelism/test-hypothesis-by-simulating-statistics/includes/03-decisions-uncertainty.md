@@ -453,3 +453,6 @@ important to keep the following points in mind.
 -   Even if a test concludes that the data don't support the chance
     model in the null hypothesis, it typically doesn't explain *why* the
     model doesn't work.
+
+> [!IMPORTANT]
+> Let's try to develop a general framework for decision making, into which all our examples will fit. Choose the appropriate word. Options may not be used at all. The basic structure of testing a hypothesis is the following:"

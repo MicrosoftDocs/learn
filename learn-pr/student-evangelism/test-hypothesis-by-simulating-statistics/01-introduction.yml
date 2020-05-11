@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.introduction
-title: Introduction
+title: introduction
 metadata:
-  title: Introduction
-  description: Undertand what models and statistics are with two examples
+  title: introduction
+  description: understand what models and statistics are with two examples
   ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
