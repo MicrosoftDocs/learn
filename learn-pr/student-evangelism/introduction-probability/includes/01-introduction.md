@@ -254,9 +254,7 @@ results.where('Rolls', are.equal_to(50))
 |--- |--- |
 |50|0.99989|
 
-Calculations like these can be used to find the chance that a particular
-individual is selected in a random sample. The exact calculation will
-depend on the sampling scheme. But what we have observed above can
-usually be generalized: increasing the size of the random sample
-increases the chance that an individual is selected.
-dividual is selected.
+Calculations like these can be used to find the chance that a particular individual is selected in a random sample. The exact calculation will depend on the sampling scheme. But what we have observed above can usually be generalized: increasing the size of the random sample increases the chance that an individual is selected.
+
+> [!IMPORTANT]
+> For the following questions, a die (singular form of 'dice') means a fair, 6-sided die, with the sides having values 1, 2, 3, 4, 5, 6. The chance of an outcome for one roll doesn't depend on outcomes of any previous or future rolls.
