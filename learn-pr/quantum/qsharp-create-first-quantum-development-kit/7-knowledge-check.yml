@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.qsharp-create-first-quantum-development-kit.7-knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Check your understanding so far.
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.date: 05/19/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of these statements is true about the random number generator that you built in this module?'
+    choices:  
+    - content: 'You always get truly random numbers, both in the simulator and on a quantum computer.'
+      isCorrect: false
+      explanation: A quantum computer can produce truly random numbers. Although the simulator produces pseudorandom numbers, you can use it to test and verify your algorithms.
+    - content: 'You never get truly random numbers. You get only pseudorandom numbers.'
+      isCorrect: false
+      explanation: A quantum computer can produce truly random numbers. The simulator produces pseudorandom numbers.
+    - content: 'In the simulator, you get pseudorandom numbers. On a quantum computer, you get truly random numbers.'
+      isCorrect: true
+      explanation: Although the simulator produces pseudorandom numbers, you can use it to test and verify your algorithms.
+
+  - content: "You need to run a quantum computation multiple times and then compute the average of all results. The easiest way to do that is to:"
+    choices:
+    - content: 'Run the quantum program multiple times and then route the results to a second program, which computes the average.'
+      isCorrect: true
+      explanation: Although you _could_ route the results to a second program, is there an easier way?
+    - content: 'Combine classical and quantum operations in the same program.'
+      isCorrect: false
+      explanation: Quantum computers perform specialized tasks. Q# enables you to write classical code that resembles programming languages you already know. Averaging a set of numbers is a good use for classical code.
+    - content: 'Write the quantum computation as well as the averaging computation all as quantum operations.'
+      isCorrect: false
+      explanation: Quantum computers perform specialized tasks. You don't use a quantum computer for everything because, for basic tasks like averaging a set of numbers, classical computers work just fine.
+
+  - content: "You're ready to run your algorthm on quantum hardware provided by Azure Quantum. What's the best way to choose which hardware runs your code most efficiently?"
+    choices:
+    - content: 'Run a more limited version of your program on each hardware type and then choose the one that completes most quickly.'
+      isCorrect: false
+      explanation: 
+    - content: 'Combine the simulator with the resource estimator to understand understand the resources that your code would require.'
+      isCorrect: true
+      explanation: 
+    - content: "There isn't a need to choose. All quantum hardware utilize resources in the exact same way."
+      isCorrect: false
+      explanation: Different workloads can require different hardware capabilities. Azure Quantum provides TODO

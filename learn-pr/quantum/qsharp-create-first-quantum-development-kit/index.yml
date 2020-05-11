@@ -34,6 +34,7 @@ units:
 - learn.quantum.qsharp-create-first-quantum-development-kit.4-random-bit-generator
 - learn.quantum.qsharp-create-first-quantum-development-kit.5-random-number-generator
 - learn.quantum.qsharp-create-first-quantum-development-kit.6-what-is-azure-quantum
-- learn.quantum.qsharp-create-first-quantum-development-kit.7-summary
+- learn.quantum.qsharp-create-first-quantum-development-kit.7-knowledge-check
+- learn.quantum.qsharp-create-first-quantum-development-kit.8-summary
 badge:
   uid: learn.quantum.qsharp-create-first-quantum-development-kit.badge
