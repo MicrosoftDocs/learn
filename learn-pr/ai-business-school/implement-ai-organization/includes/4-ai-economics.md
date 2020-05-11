@@ -125,4 +125,4 @@ AI is already transforming industries, and the potential value it can generate w
 
 Learn more about how [Digital Advisory Services](https://www.microsoft.com/industry/services/digital-advisors) can help you drive successful AI initiatives today.
 
-In the next unit, learn how you can successfully run the machine learning lifecycle using MLOps practices. 
+Up next, we’ll hear from Athina Kanioura, Accenture’s Chief Analytics Officer and Global Lead of Applied Intelligence, as she discusses what organizations should consider as they invest in AI and start to become an AI organization.
