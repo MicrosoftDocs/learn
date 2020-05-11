@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.make-predictions-with-linear-regression
 metadata:
-  title: Learn linear regression
+  title: Make Predictions with Linear Regression
   description: Learn
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
-title: Make Predictions With Linear Regression
+  ms.prod: learning azure
+title: Make Predictions with Linear Regression
 summary: Learn how to make predictions using linear regression
 abstract: |
   In this module, you will:
@@ -29,7 +29,7 @@ units:
 - learn.student-evangelism.make-predictions-with-linear-regression.setup
 - learn.student-evangelism.make-predictions-with-linear-regression.introduction
 - learn.student-evangelism.make-predictions-with-linear-regression.regression-line
-- learn.student-evangelism.make-predictions-with-linear-regression.method-of-least-squares
+- learn.student-evangelism.make-predictions-with-linear-regression.method-least-squares
 - learn.student-evangelism.make-predictions-with-linear-regression.least-squares-regression
 - learn.student-evangelism.make-predictions-with-linear-regression.visual-diagnostics
 - learn.student-evangelism.make-predictions-with-linear-regression.numerical-diagnostics

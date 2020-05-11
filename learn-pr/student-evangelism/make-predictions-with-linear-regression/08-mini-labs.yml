@@ -8,7 +8,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning azure
 durationInMinutes: 15
 content: |
   [!include[](includes/08-mini-labs.md)]

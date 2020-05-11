@@ -4,16 +4,17 @@ title: Least Squares Regression
 metadata:
   title: Least Squares Regression
   description: Regression using least squares
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning azure
   show_latex: true
 durationInMinutes: 7
 content: |
   [!include[](includes/04-least-squares-regression.md)]
 quiz:
+  title: Check your Knowledge
   questions:
     - content: 'which of the following is incorrect?'
       choices:

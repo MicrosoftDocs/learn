@@ -4,11 +4,11 @@ title: Visual Diagnostics
 metadata:
   title: Visual Diagnostics
   description: Visualize the errors of regression
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning azure
   show_latex: true
 durationInMinutes: 5
 content: |

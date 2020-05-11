@@ -4,11 +4,11 @@ title: Regression Line
 metadata:
   title: Regression Line
   description: Learn the equation of the regression line
-  ms.date: 19/03/2020
-  author: sauravmittal
-  ms.author: leescott
+  ms.date: 03/19/2020
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning azure
   show_latex: true
 durationInMinutes: 10
 content: |
@@ -22,6 +22,7 @@ content: 'The water table contains one row per country with data from 2014. The 
 |correlation(water, "OBS_VALUE", "mm_precipitation")    |0.262079|
 '
 quiz:
+  title: Check your Knowledge
   questions:
     - content: 'What is the value of correlation(water, "mm_precipitation", "OBS_VALUE")?'
       choices:
