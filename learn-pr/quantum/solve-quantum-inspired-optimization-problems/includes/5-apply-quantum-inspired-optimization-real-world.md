@@ -16,13 +16,15 @@ Ideally, we want a solution where the weight difference between the ships is as 
 
 ![Term](../media/example_2.png)
 
+This equation subtracts the sum of weights on ship _b_ from the sum of weights on ship _a_.
+
 The letter *H* is typically used to represent a cost function. It is also referred to as a Hamiltonian as an acknowledgment to the quantum mechanical roots of QIO techniques. If the value of *H* is zero, we know the ships are equally loaded.
 
 ## Refine the problem
 
 Next, we introduce a variable, *x<sub>i</sub>*, to represent whether an individual container *i* is assigned to ship *a* or ship *b*.
 
-Because we can assign the container *i* to either ship, the variable *x<sub>i</sub>* can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the container is placed on ship *a*, and *-1* represents that the container is placed on ship *b*. Because of our decision to make *i* be either *1* or *-1*, our optimization problem is called an _Ising problem_.
+Because we can assign the container *i* to either ship, the variable *x<sub>i</sub>* can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* represents that the container is placed on ship *a*, and *-1* represents that the container is placed on ship *b*. Because of our decision to make *x<sub>i</sub>* be either *1* or *-1*, our optimization problem is called an _Ising problem_.
 
 By introducing this variable *x<sub>i</sub>*, we can simplify the equation as follows:
 

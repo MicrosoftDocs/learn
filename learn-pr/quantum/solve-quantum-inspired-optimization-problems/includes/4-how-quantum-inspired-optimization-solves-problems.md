@@ -16,7 +16,7 @@ Simulated annealing isn't a QIO method, since it uses only thermal effects. Howe
 
 ## Quantum annealing
 
-Quantum annealing is a quantum algorithm that is similar in spirit to simulated annealing but differs in a few ways. In simulated annealing, we explored the solution space by making thermal jumps, from one solution to the next. In quantum annealing, we instead make use of a quantum effect called _quantum tunnelling_, which allows us to travel through these energy barriers.
+Quantum annealing is a quantum algorithm that is similar in spirit to simulated annealing but differs in a few ways. In simulated annealing, we explored the solution space by making thermal jumps, from one solution to the next. In quantum annealing, we instead make use of a quantum effect called _quantum tunneling_, which allows us to travel through these energy barriers.
 
 ![Tunneling](../media/tunneling.png)
 

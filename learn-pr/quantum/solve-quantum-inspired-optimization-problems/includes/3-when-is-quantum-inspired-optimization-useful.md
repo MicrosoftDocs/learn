@@ -24,8 +24,6 @@ QIO works best with problems where the landscape is rugged, with many hills and 
 
 In this scenario, one of the greatest challenges is to avoid getting stuck at any of the sub-optimal *local minima*. A rugged landscape can have multiple valleys. Each of these valleys will have a lowest point, which is the local minimum. One of these points will be the lowest overall, and that point is the global minimum. These rugged landscapes present situations where QIO can outperform other techniques.
 
-In our Contoso Logistics example, we'll be considering a problem with eight variables.
-
 ## A scattered, random landscape
 
 So far we have discussed smooth and rugged objective functions, but what if there is no structure at all? The following diagram shows such a landscape:
