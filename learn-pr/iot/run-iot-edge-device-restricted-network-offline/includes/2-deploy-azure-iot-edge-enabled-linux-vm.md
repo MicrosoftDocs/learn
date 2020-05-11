@@ -13,7 +13,7 @@ This unit will detail steps on deploying an Ubuntu Server VM with Azure IoT Edge
    az group create --name AZ-220-IoTEdge-RG --location {YOUR-LOCATION}
    ```
 
-  Remember to replace {YOUR-LOCATION} with a location close to you.
+      Remember to replace {YOUR-LOCATION} with a location close to you.
 
 4. To create a Linux VM, enter the following commands:
 
