@@ -12,6 +12,8 @@ groups:
     title: Sandbox
   - id: support
     title: Support
+  - id: educators
+    title: Educators
 - id: os
   title: Operating system
   prompt: Choose your operating system
