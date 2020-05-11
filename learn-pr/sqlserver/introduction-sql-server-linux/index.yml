@@ -2,7 +2,7 @@
 uid: learn-sqlserver.introduction-sql-server-linux
 metadata:
   title: Introduction to SQL Server on Linux 
-  description: In this module, you will learn about running SQL Server 2017 on Linux servers and containers.
+  description: In this module, you will learn about running SQL Server 2019 on Linux servers and containers.
   ms.date: 06/11/2019
   author: alistairmatthews
   ms.author: v-alism
@@ -14,8 +14,8 @@ abstract: |
  In this module, you will:
  - Describe the key benefits of running SQL Server on Linux
  - Describe both Windows and cross-platform tools that can be used to administer SQL Server on Linux
- - Describe the benefits of running SQL Server on Linus virtual machines
- - Describe the benefits of running SQL Server on container images
+ - Describe the benefits of running SQL Server on Linux virtual machines
+ - Describe the benefits of running SQL Server on container runtime environments, such as Docker
 prerequisites: | 
   - Basic Linux administration
 iconUrl: /learn/achievements/sqlserver/introduction-to-sql-server-on-linux.svg
