@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.student-evangelism.understand-normal-curve
+metadata:
+  title: Understand The Normal Curve
+  description: Learn about the normal curve
+  ms.date: 19/03/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Understand The Normal Curve
+summary: Learn about the normal curve
+abstract: |
+  In this module, you will:
+  - Understand various properties of the mean and its importance as a statistic.
+  - Measure the spread of values in a distribution and converted distributions to Standard Units.
+  - Learn the properties of the normal distribution and different bounds.
+  - Examine the Central Limit Theorem through simulations and studied some use cases.
+prerequisites: None
+iconUrl: /learn/achievements/student-evangelism/understand-normal-curve.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.understand-normal-curve.setup
+- learn.student-evangelism.understand-normal-curve.introduction
+- learn.student-evangelism.understand-normal-curve.variability
+- learn.student-evangelism.understand-normal-curve.sd-normal-curve
+- learn.student-evangelism.understand-normal-curve.central-limit-theorem
+- learn.student-evangelism.understand-normal-curve.variability-of-sample-mean
+- learn.student-evangelism.understand-normal-curve.choosing-sample-size
+- learn.student-evangelism.understand-normal-curve.mini-labs
+- learn.student-evangelism.understand-normal-curve.summary
+badge:
+  uid: learn.understand-normal-curve.badge

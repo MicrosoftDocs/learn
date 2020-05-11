@@ -176,7 +176,7 @@ t1 = Table().with_columns('not symmetric', not_symmetric)
 t1.hist(bins=np.arange(1.5, 9.6, 1))
 ```
 
-![png](../media/69-properties-of-the-mean-17-0.png)
+![png](../media/69-properties-of-mean-17-0.png)
 
 Imagine the histogram as a figure made out of cardboard attached to a
 wire that runs along the horizontal axis, and imagine the bars as
@@ -203,7 +203,7 @@ plots.plot([1.5, 9.5], [0, 0], color='grey')
 plots.ylim(-0.05, 0.5);
 ```
 
-![png](../media/69-properties-of-the-mean-19-0.png)
+![png](../media/69-properties-of-mean-19-0.png)
 
 ### The Mean and the Median
 
@@ -234,7 +234,7 @@ plots.xlim(1, 10)
 plots.ylim(-0.05, 0.5);
 ```
 
-![png](../media/69-properties-of-the-mean-22-0.png)
+![png](../media/69-properties-of-mean-22-0.png)
 
 ``` {.python}
 np.mean(symmetric)
@@ -265,7 +265,7 @@ plots.scatter(mean_ns, -0.009, marker='^', color='gold', s=60)
 plots.ylim(-0.05, 0.5);
 ```
 
-![png](../media/69-properties-of-the-mean-26-0.png)
+![png](../media/69-properties-of-mean-26-0.png)
 
 The blue histogram represents the original `symmetric` distribution. The
 gold histogram of `not_symmetric` starts out the same as the blue at the
@@ -305,7 +305,7 @@ vast majority of employees had compensations below \$300,000.
 sf2015.select('Total Compensation').hist(bins = np.arange(10000, 700000, 25000))
 ```
 
-![png](../media/69-properties-of-the-mean-33-0.png)
+![png](../media/69-properties-of-mean-33-0.png)
 
 This histogram is skewed to the right; it has a right-hand tail.
 

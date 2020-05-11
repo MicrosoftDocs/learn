@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.understand-normal-curve.variability-of-sample-mean
+title: Variability Of The Sample Mean
+metadata:
+  title: Variability Of The Sample Mean
+  description: Learn about the distribution of the sample mean
+  ms.date: 19/03/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  show_latex: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/05-variability-of-sample-mean.md)]
