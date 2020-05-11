@@ -91,78 +91,14 @@ jury = Table().with_columns(
 jury
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Ethnicity
-</th>
-<th>
-Eligible
-</th>
-<th>
-Panels
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Asian
-</td>
-<td>
-0.15
-</td>
-<td>
-0.26
-</td>
-</tr>
-<tr>
-<td>
-Black
-</td>
-<td>
-0.18
-</td>
-<td>
-0.08
-</td>
-</tr>
-<tr>
-<td>
-Latino
-</td>
-<td>
-0.12
-</td>
-<td>
-0.08
-</td>
-</tr>
-<tr>
-<td>
-White
-</td>
-<td>
-0.54
-</td>
-<td>
-0.54
-</td>
-</tr>
-<tr>
-<td>
-Other
-</td>
-<td>
-0.01
-</td>
-<td>
-0.04
-</td>
-</tr>
-</tbody>
-</table>
+| Ethnicity | Eligible | Panels |
+|-----------|----------|--------|
+| Asian     | 0.15     | 0.26   |
+| Black     | 0.18     | 0.08   |
+| Latino    | 0.12     | 0.08   |
+| White     | 0.54     | 0.54   |
+| Other     | 0.01     | 0.04   |
+
 Some ethnicities are overrepresented and some are underrepresented on
 the jury panels in the study. A bar chart is helpful for visualizing the
 differences.
@@ -204,96 +140,14 @@ panels_and_sample = jury.with_column('Random Sample', sample_distribution)
 panels_and_sample
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Ethnicity
-</th>
-<th>
-Eligible
-</th>
-<th>
-Panels
-</th>
-<th>
-Random Sample
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Asian
-</td>
-<td>
-0.15
-</td>
-<td>
-0.26
-</td>
-<td>
-0.13214
-</td>
-</tr>
-<tr>
-<td>
-Black
-</td>
-<td>
-0.18
-</td>
-<td>
-0.08
-</td>
-<td>
-0.168617
-</td>
-</tr>
-<tr>
-<td>
-Latino
-</td>
-<td>
-0.12
-</td>
-<td>
-0.08
-</td>
-<td>
-0.115623
-</td>
-</tr>
-<tr>
-<td>
-White
-</td>
-<td>
-0.54
-</td>
-<td>
-0.54
-</td>
-<td>
-0.573985
-</td>
-</tr>
-<tr>
-<td>
-Other
-</td>
-<td>
-0.01
-</td>
-<td>
-0.04
-</td>
-<td>
-0.00963524
-</td>
-</tr>
-</tbody>
-</table>
+| Ethnicity | Eligible | Panels | Random Sample |
+|-----------|----------|--------|---------------|
+| Asian     | 0.15     | 0.26   | 0.13214       |
+| Black     | 0.18     | 0.08   | 0.168617      |
+| Latino    | 0.12     | 0.08   | 0.115623      |
+| White     | 0.54     | 0.54   | 0.573985      |
+| Other     | 0.01     | 0.04   | 0.00963524    |
+
 The distribution of the random sample is quite close to the distribution
 of the eligible population, unlike the distribution of the panels.
 
@@ -345,96 +199,14 @@ jury_with_diffs = jury.with_column(
 jury_with_diffs
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Ethnicity
-</th>
-<th>
-Eligible
-</th>
-<th>
-Panels
-</th>
-<th>
-Difference
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Asian
-</td>
-<td>
-0.15
-</td>
-<td>
-0.26
-</td>
-<td>
-0.11
-</td>
-</tr>
-<tr>
-<td>
-Black
-</td>
-<td>
-0.18
-</td>
-<td>
-0.08
-</td>
-<td>
--0.1
-</td>
-</tr>
-<tr>
-<td>
-Latino
-</td>
-<td>
-0.12
-</td>
-<td>
-0.08
-</td>
-<td>
--0.04
-</td>
-</tr>
-<tr>
-<td>
-White
-</td>
-<td>
-0.54
-</td>
-<td>
-0.54
-</td>
-<td>
-0
-</td>
-</tr>
-<tr>
-<td>
-Other
-</td>
-<td>
-0.01
-</td>
-<td>
-0.04
-</td>
-<td>
-0.03
-</td>
-</tr>
-</tbody>
-</table>
+| Ethnicity | Eligible | Panels | Difference |
+|-----------|----------|--------|------------|
+| Asian     | 0.15     | 0.26   | 0.11       |
+| Black     | 0.18     | 0.08   | -0.1       |
+| Latino    | 0.12     | 0.08   | -0.04      |
+| White     | 0.54     | 0.54   | 0          |
+| Other     | 0.01     | 0.04   | 0.03       |
+
 Take a look at the column `Difference` and notice that the sum of its
 entries is 0: the positive entries add up to 0.14, exactly canceling the
 total of the negative entries, which is -0.14.
@@ -458,114 +230,14 @@ jury_with_diffs = jury_with_diffs.with_column(
 jury_with_diffs
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Ethnicity
-</th>
-<th>
-Eligible
-</th>
-<th>
-Panels
-</th>
-<th>
-Difference
-</th>
-<th>
-Absolute Difference
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Asian
-</td>
-<td>
-0.15
-</td>
-<td>
-0.26
-</td>
-<td>
-0.11
-</td>
-<td>
-0.11
-</td>
-</tr>
-<tr>
-<td>
-Black
-</td>
-<td>
-0.18
-</td>
-<td>
-0.08
-</td>
-<td>
--0.1
-</td>
-<td>
-0.1
-</td>
-</tr>
-<tr>
-<td>
-Latino
-</td>
-<td>
-0.12
-</td>
-<td>
-0.08
-</td>
-<td>
--0.04
-</td>
-<td>
-0.04
-</td>
-</tr>
-<tr>
-<td>
-White
-</td>
-<td>
-0.54
-</td>
-<td>
-0.54
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-</tr>
-<tr>
-<td>
-Other
-</td>
-<td>
-0.01
-</td>
-<td>
-0.04
-</td>
-<td>
-0.03
-</td>
-<td>
-0.03
-</td>
-</tr>
-</tbody>
-</table>
+| Ethnicity | Eligible | Panels | Random Sample |
+|-----------|----------|--------|---------------|
+| Asian     | 0.15     | 0.26   | 0.13214       |
+| Black     | 0.18     | 0.08   | 0.168617      |
+| Latino    | 0.12     | 0.08   | 0.115623      |
+| White     | 0.54     | 0.54   | 0.573985      |
+| Other     | 0.01     | 0.04   | 0.00963524    |
+
 ``` {.python}
 jury_with_diffs.column('Absolute Difference').sum() / 2
 ```

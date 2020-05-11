@@ -199,103 +199,19 @@ scores = Table.read_table(path_data + 'scores_by_section.csv')
 scores
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Section
-</th>
-<th>
-Midterm
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-1
-</td>
-<td>
-22
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-12
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-23
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-14
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-<td>
-20
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-<td>
-25
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-19
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-<td>
-24
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-8
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-14
-</td>
-</tr>
-</tbody>
-</table>
-<p>
-... (349 rows omitted)
-</p>
+| Section | Midterm |
+|---------|---------|
+| 1       | 22      |
+| 2       | 12      |
+| 2       | 23      |
+| 2       | 14      |
+| 1       | 20      |
+| 3       | 25      |
+| 4       | 19      |
+| 1       | 24      |
+| 5       | 8       |
+| 6       | 14      |
+
 To find the average score in each section, we will use `group`.
 
 ``` {.python}
@@ -303,116 +219,22 @@ section_averages = scores.group('Section', np.average)
 section_averages.show()
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Section
-</th>
-<th>
-Midterm average
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-1
-</td>
-<td>
-15.5938
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-15.125
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-<td>
-13.6667
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-14.7667
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-17.4545
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-15.0312
-</td>
-</tr>
-<tr>
-<td>
-7
-</td>
-<td>
-16.625
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-16.3103
-</td>
-</tr>
-<tr>
-<td>
-9
-</td>
-<td>
-14.5667
-</td>
-</tr>
-<tr>
-<td>
-10
-</td>
-<td>
-15.2353
-</td>
-</tr>
-<tr>
-<td>
-11
-</td>
-<td>
-15.8077
-</td>
-</tr>
-<tr>
-<td>
-12
-</td>
-<td>
-15.7333
-</td>
-</tr>
-</tbody>
-</table>
+| Section | Midterm average |
+|---------|-----------------|
+| 1       | 15.5938         |
+| 2       | 15.125          |
+| 3       | 13.6667         |
+| 4       | 14.7667         |
+| 5       | 17.4545         |
+| 6       | 15.0312         |
+| 7       | 16.625          |
+| 8       | 16.3103         |
+| 9       | 14.5667         |
+| 10      | 15.2353         |
+| 11      | 15.8077         |
+| 12      | 15.7333         |
+
+
 The average score of Section 3 is 13.667, which does look low compared
 to the other section averages. But is it lower than the average of a
 section of the same size selected at random from the class?
@@ -425,103 +247,19 @@ large Section 3 is, which we can by once again using `group`.
 scores.group('Section')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Section
-</th>
-<th>
-count
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-1
-</td>
-<td>
-32
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-32
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-<td>
-27
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-30
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-33
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-32
-</td>
-</tr>
-<tr>
-<td>
-7
-</td>
-<td>
-24
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-29
-</td>
-</tr>
-<tr>
-<td>
-9
-</td>
-<td>
-30
-</td>
-</tr>
-<tr>
-<td>
-10
-</td>
-<td>
-34
-</td>
-</tr>
-</tbody>
-</table>
-<p>
-... (2 rows omitted)
-</p>
+| Section | count |
+|---------|-------|
+| 1       | 32    |
+| 2       | 32    |
+| 3       | 27    |
+| 4       | 30    |
+| 5       | 33    |
+| 6       | 32    |
+| 7       | 24    |
+| 8       | 29    |
+| 9       | 30    |
+| 10      | 34    |
+
 Section 3 had 27 students.
 
 Now we can figure out how to create one simulated value of our test
@@ -543,70 +281,19 @@ random_sample = scores_only.sample(27, with_replacement=False)
 random_sample
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Midterm
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-20
-</td>
-</tr>
-<tr>
-<td>
-14
-</td>
-</tr>
-<tr>
-<td>
-14
-</td>
-</tr>
-<tr>
-<td>
-25
-</td>
-</tr>
-<tr>
-<td>
-14
-</td>
-</tr>
-<tr>
-<td>
-12
-</td>
-</tr>
-<tr>
-<td>
-10
-</td>
-</tr>
-<tr>
-<td>
-22
-</td>
-</tr>
-<tr>
-<td>
-16
-</td>
-</tr>
-<tr>
-<td>
-15
-</td>
-</tr>
-</tbody>
-</table>
-<p>
-... (17 rows omitted)
-</p>
+| Midterm |
+|---------|
+| 20      |
+| 14      |
+| 14      |
+| 25      |
+| 14      |
+| 12      |
+| 10      |
+| 22      |
+| 16      |
+| 15      |
+
 The average of these 27 randomly selected scores is
 
 ``` {.python}
