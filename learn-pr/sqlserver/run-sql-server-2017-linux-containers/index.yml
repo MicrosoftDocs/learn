@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn-sqlserver.run-sql-server-2019-linux-containers
+uid: learn-sqlserver.run-sql-server-2017-linux-containers
 metadata:
   title: Run SQL Server 2019 on Linux containers 
   description: In this module, you will learn how to use Docker containers on Linux operating systems to host SQL Server installations.
@@ -36,13 +36,13 @@ roles:
 products: 
 - sql-server
 units:
-- learn-sqlserver.run-sql-server-2019-linux-containers.1-introduction
-- learn-sqlserver.run-sql-server-2019-linux-containers.2-choose-run-sql-server-2019-linux-containers
-- learn-sqlserver.run-sql-server-2019-linux-containers.3-exercise-run-sql-server-2019-linux-containers
-- learn-sqlserver.run-sql-server-2019-linux-containers.4-create-custom-images
-- learn-sqlserver.run-sql-server-2019-linux-containers.5-exercise-create-custom-docker-image
-- learn-sqlserver.run-sql-server-2019-linux-containers.6-use-docker-compose-deploy-multiple-containers
-- learn-sqlserver.run-sql-server-2019-linux-containers.7-exercise-use-docker-compose-deploy-multiple-containers
-- learn-sqlserver.run-sql-server-2019-linux-containers.8-summary
+- learn-sqlserver.run-sql-server-2017-linux-containers.1-introduction
+- learn-sqlserver.run-sql-server-2017-linux-containers.2-choose-run-sql-server-2017-linux-containers
+- learn-sqlserver.run-sql-server-2017-linux-containers.3-exercise-run-sql-server-2017-linux-containers
+- learn-sqlserver.run-sql-server-2017-linux-containers.4-create-custom-images
+- learn-sqlserver.run-sql-server-2017-linux-containers.5-exercise-create-custom-docker-image
+- learn-sqlserver.run-sql-server-2017-linux-containers.6-use-docker-compose-deploy-multiple-containers
+- learn-sqlserver.run-sql-server-2017-linux-containers.7-exercise-use-docker-compose-deploy-multiple-containers
+- learn-sqlserver.run-sql-server-2017-linux-containers.8-summary
 badge: 
-  uid: learn-sqlserver.run-sql-server-2019-linux-containers.badge
+  uid: learn-sqlserver.run-sql-server-2017-linux-containers.badge

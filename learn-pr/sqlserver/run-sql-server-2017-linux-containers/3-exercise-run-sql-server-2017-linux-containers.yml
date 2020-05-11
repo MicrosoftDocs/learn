@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.run-sql-server-2019-linux-containers.3-exercise-run-sql-server-2019-linux-containers
+uid: learn-sqlserver.run-sql-server-2017-linux-containers.3-exercise-run-sql-server-2017-linux-containers
 title: Exercise - Run SQL Server 2019 on Linux conainers
 metadata:
   title: Exercise - Run SQL Server 2019 on Linux conainers
@@ -13,4 +13,4 @@ durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/3-exercise-run-sql-server-2019-linux-containers.md)]
+  [!include[](includes/3-exercise-run-sql-server-2017-linux-containers.md)]
