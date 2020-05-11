@@ -28,8 +28,8 @@ In this exercise, you'll install the Data Migration Assistant.
 ## Download and restore your company's database
 
 1. On the task bar, select **Internet Explorer**.
-1. Go to 
-[https://github.com/microsoft/sql-server-samples/releases/download/adventureworks2008r2/adventure-works-2008r2-oltp.bak](https://github.com/microsoft/sql-server-samples/releases/download/adventureworks2008r2/adventure-works-2008r2-oltp.bak).
+1. In the address bar type  
+https://github.com/microsoft/sql-server-samples/releases/download/adventureworks2008r2/adventure-works-2008r2-oltp.bak, then press Enter.
 1. On the pop-up menu, select **Save As**, select the **Windows (C:)** drive on the left, and then select **Save**.
 1. On the Start menu, type **cmd**, and select **Command Prompt**.
 1. Execute this command to restore the downloaded backup.
@@ -40,7 +40,7 @@ In this exercise, you'll install the Data Migration Assistant.
 
 ## Download the Data Migration Assistant
 
-1. Go to [https://www.microsoft.com/download/details.aspx?id=53595](https://www.microsoft.com/download/details.aspx?id=53595), then select **Download**.
+1. Go to the [Microsoft® Data Migration Assistant v5.2](https://www.microsoft.com/download/details.aspx?id=53595) download page, then select **Download**.
 1. On the pop-up menu, select **Save**.
 
 ## Install the Data Migration Assistant
