@@ -49,7 +49,7 @@ Here, you define the `SampleRandomNumberInRange` operation. This operation repea
 
 Modify *Program.qs* like this:
 
-[!code-qsharp[](code/5-program-2.qs?highlight=19-29)]
+[!code-qsharp[](code/5-program-2.qs?highlight=20-30)]
 
 Let's take a moment to review the new code.
 
@@ -69,7 +69,7 @@ Your program can how generate random numbers. Here, you define the entry point f
 
 Modify *Program.qs* like this:
 
-[!code-qsharp[](code/5-program-3.qs?highlight=31-36)]
+[!code-qsharp[](code/5-program-3.qs?highlight=32-37)]
 
 The `let` directive declares variables that don't change during the computation. For learning purposes, here we define the maximum value as 50.
 

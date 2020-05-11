@@ -112,7 +112,8 @@ In Q#, to obtain a qubit you use the `using` keyword. You can allocate one or ma
 Here's an example that allocates one qubit:
 
 ```qsharp
-using (q = Qubit()) { // Allocate a qubit.
+// Allocate a qubit.
+using (q = Qubit()) {
     // Do something with q here.
 }
 ```
