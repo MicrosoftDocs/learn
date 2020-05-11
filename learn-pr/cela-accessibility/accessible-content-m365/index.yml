@@ -24,7 +24,7 @@ roles:
 - administrator
 - student
 products:
-- accessibility
+- Microsoft 365
 units:
 - learn.accessible-content-m365.accessibility-checker
 - learn.accessible-content-m365.word
