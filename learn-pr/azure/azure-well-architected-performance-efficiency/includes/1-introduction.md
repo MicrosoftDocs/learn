@@ -6,12 +6,14 @@ The concepts discussed in this module are not all-inclusive, but represent some 
 
 ## Learning objectives
 
-In this module, you'll learn how to:
+By the end of this module, you will be able to:
 
-- Adjust your capacity based on workload by scaling up and scaling out
+- Scale your capacity based on workload
 - Optimize network performance
 - Optimize storage and database performance
+- Improve application performance by identifying bottlenecks
 
-## Prerequisites  
+## Prerequisites
 
-None
+- Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking.
+- Experience building or operating technology systems to solve business problems

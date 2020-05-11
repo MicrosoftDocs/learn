@@ -6,11 +6,12 @@ The concepts discussed in this module are not all-inclusive, but represent some 
 
 ## Learning objectives
 
-In this module, you will:
+By the end of this module, you will be able to:
 
 - Describe the pillars of the Azure Well-Architected Framework
-- Apply key principles for creating a solid architectural foundation
+- Identify key principles for creating a solid architectural foundation
 
-## Prerequisites  
+## Prerequisites
 
-None
+- Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking.
+- Experience building or operating technology systems to solve business problems

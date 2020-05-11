@@ -11,12 +11,13 @@ metadata:
 title: Microsoft Azure Well-Architected Framework - Cost optimization
 summary: Learn how to use the cost optimization pillar of the Microsoft Azure Well-Architected Framework to design a cloud-based architecture that is efficient, eliminates waste, and gives you full visibility into where your money is spent on cloud resources.
 abstract:  | 
-  In this module, you will:
-    - Learn how to use monitoring and analytics to gain cost insights
+  By the end of this module, you will be able to:
+    - Use monitoring and analytics to gain cost insights
     - Maximize the efficiency of your cloud environment
-    - Identify the benefits of a cloud operating model
-    - Identify ways to provision resources that are optimized for cost
-prerequisites: None
+    - Provision resources that are optimized for cost
+prerequisites: |
+  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking.
+  - Experience building or operating technology systems to solve business problems
 iconUrl: /learn/achievements/azure-well-architected-cost-optimization.svg
 levels:
 - intermediate

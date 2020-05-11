@@ -8,15 +8,13 @@ The concepts discussed in this module are not all-inclusive, but represent some 
 
 ## Learning objectives
 
-In this module, you will:
+By the end of this module, you will be able to:
 
-- Learn how to take a defense in depth approach to securing your architecture.
-- Learn how to protect your identities.
-- Learn what technologies are available to protect your Azure infrastructure.
-- Learn how and where to use encryption to secure your data.
-- Learn how to protect your architecture at the network level.
-- Learn how to leverage application security best practices to integrate security into your application.
+- Develop a defense in depth approach to securing your architecture
+- Choose the technologies to secure your Azure infrastructure
+- Develop a strategy for secure identity management
 
 ## Prerequisites
 
-None
+- Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking.
+- Experience building or operating technology systems to solve business problems
