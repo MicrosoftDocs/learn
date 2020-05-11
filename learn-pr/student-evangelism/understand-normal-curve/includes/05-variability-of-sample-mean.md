@@ -50,10 +50,6 @@ plots.scatter(pop_mean, -0.0008, marker='^', color='darkblue', s=60)
 plots.ylim(-0.004, 0.04);
 ```
 
-    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning:
-    The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
-      alternative="'density'", removal="3.1")
-
 ![png](../media/73-variability-of-sample-mean-5-1.png)
 
 Now let's take random samples and look at the probability distribution
@@ -102,11 +98,6 @@ plots.xlim(5, 35)
 plots.ylim(0, 0.25);
 ```
 
-    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning:
-    The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
-      alternative="'density'", removal="3.1")
-
-
     Sample size:  100
     Population mean: 16.658155515370705
     Average of sample means:  16.612564
@@ -121,11 +112,6 @@ plots.xlim(5, 35)
 plots.ylim(0, 0.25);
 ```
 
-    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning:
-    The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
-      alternative="'density'", removal="3.1")
-
-
     Sample size:  400
     Population mean: 16.658155515370705
     Average of sample means:  16.650027499999997
@@ -139,11 +125,6 @@ simulate_sample_mean(delay, 'Delay', 625, 10000)
 plots.xlim(5, 35)
 plots.ylim(0, 0.25);
 ```
-
-    /mnt/c/Users/chold/github/forks/python/viz/matplotlib/lib/matplotlib/axes/_axes.py:6250: MatplotlibDeprecationWarning:
-    The 'normed' kwarg was deprecated in Matplotlib 2.1 and will be removed in 3.1. Use 'density' instead.
-      alternative="'density'", removal="3.1")
-
 
     Sample size:  625
     Population mean: 16.658155515370705

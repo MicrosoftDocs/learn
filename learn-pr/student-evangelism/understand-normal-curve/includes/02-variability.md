@@ -476,11 +476,6 @@ Here is a histogram of the players' heights.
 nba13.select('Height').hist(bins=np.arange(68, 88, 1))
 ```
 
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
 ![png](../media/70-variability-22-1.png)
 
 It is no surprise that NBA players are tall! Their average height is
@@ -692,6 +687,7 @@ Guard
 <p>
 ... (502 rows omitted)
 </p>
+
 ``` {.python}
 (69 - mean_height)/sd_height
 ```
@@ -722,11 +718,6 @@ the mean and SD of the ages.
 ``` {.python}
 nba13.select('Age in 2013').hist(bins=np.arange(15, 45, 1))
 ```
-
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
 
 ![png](../media/70-variability-39-1.png)
 
@@ -1438,10 +1429,4 @@ united.hist('Delay (Standard Units)', bins=np.arange(-5, 15.5, 0.5))
 plots.xticks(np.arange(-6, 17, 3));
 ```
 
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
 ![png](../media/70-variability-59-1.png)
-lity_files/70_Variability_59_1.png)
