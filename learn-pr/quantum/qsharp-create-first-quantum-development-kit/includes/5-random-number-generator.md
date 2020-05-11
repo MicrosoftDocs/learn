@@ -33,7 +33,7 @@ Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${
 
 With our logic in place, you're now ready to build a complete random number generator.
 
-## Create the GenerateRandomNumber operation
+## Create the SampleRandomNumberInRange operation
 
 Here, you expand on the *QuantumRNG* project to build larger random numbers.
 
@@ -43,41 +43,35 @@ For the complete random number generator, you need to include two additional lib
 
 [!code-qsharp[](code/5-program-1.qs?highlight=6-7)]
 
-### Define the GenerateRandomNumber operation
+### Define the operation
 
-Here, you define the `GenerateRandomNumber` operation. Because this becomes the new entry point to your program, you also move the `EntryPoint` attribute to the new operation.
-
-Modify *Program.qs* like this:
-
-[!code-qsharp[](code/5-program-2.qs?highlight=9-21)]
-
-### Implement the GenerateRandomNumber operation
-
-Here, you use the logic we defined earlier to implement the `GenerateRandomNumber` operation.
+Here, you define the `SampleRandomNumberInRange` operation. This operation repeatedly calls the `GenerateRandomBit` operation to build string of bits.
 
 Modify *Program.qs* like this:
 
-[!code-qsharp[](code/5-program-3.qs?highlight=21-47)]
+[!code-qsharp[](code/5-program-2.qs?highlight=19-29)]
 
 Let's take a moment to review the new code.
 
-The `GenerateRandomNumber` operation uses a type of loop that's specific to Q# called *Repeat-Until-Success* (RUS). This kind of loop works well with quantum computers and avoids incompatibilities with some properties that quantum operations need to fulfill. A RUS loop has three parts: `repeat`, `until`, and `fixup`.
+Recall that we need to calculate the number of bits we need to express integers up to `max`. The `Microsoft.Quantum.Math` library provides the [BitSizeI](/qsharp/api/qsharp/microsoft.quantum.math.bitsizei?azure-portal=true) function to accomplish this.
 
-- `until` takes a Boolean expression (one that evaluates to `True` or `False`) as its argument. This is the condition that needs to be satisfied in order to succeed and stop the loop.
-- `repeat` contains the set of actions that need to be taken until the condition of `until` is satisfied.
-- `fixup` contains the set of actions that are taken each time the condition of `until` is not satisfied and the loop starts a new iteration.
-
-Here, we use a RUS loop to generate random bit strings of length `nBits` until we obtain a number that's less than `max`.
+The `SampleRandomNumberInRange` operation uses a `repeat` loop to generate random numbers until it generates one that's equal to or less than `max`.
 
 The `for` loop inside `repeat` works exactly the same as a `for` loop in other programming languages.
 
-The `let` directive declares variables that don't change during the computation. The `mutable` directive declares variables that can change during the computation. You use the `set` directive to change the value of a `mutable` variable.
+In this example, `output` and `bits` are mutable variables. A mutable variable is one that can change during the computation. You use the `set` directive to change a mutable variable's value.
 
-The [Floor](/qsharp/api/qsharp/microsoft.quantum.math.floor?azure-portal=true), [Log](/qsharp/api/qsharp/microsoft.quantum.math.log?azure-portal=true), and [LogOf2](/qsharp/api/qsharp/microsoft.quantum.math.logof2?azure-portal=true) functions come from the `Microsoft.Quantum.Math` library.
+The [ResultArrayAsInt](/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasint?azure-portal=true) function comes from the `Microsoft.Quantum.Convert` library. This function converts the bit string to a positive integer.
 
-The [IntAsDouble](/qsharp/api/qsharp/microsoft.quantum.convert.intasdouble?azure-portal=true) and [ResultArrayAsInt](/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasint?azure-portal=true) functions come from the `Microsoft.Quantum.Convert` library.
+## Define the entry point
 
-The `ResultArrayAsInt` function transforms the resulting bit string to an integer (`Int`) value.
+Your program can how generate random numbers. Here, you define the entry point for your program.
+
+Modify *Program.qs* like this:
+
+[!code-qsharp[](code/5-program-3.qs?highlight=31-36)]
+
+The `let` directive declares variables that don't change during the computation. For learning purposes, here we define the maximum value as 50.
 
 ## Run the program
 
@@ -93,11 +87,10 @@ Let's try out our new random number generator!
 
     ```output
     Sampling a random number between 0 and 50:
-    60 > 50, trying again.
     42
     ```
 
-    For simplicity, `max` is set to 50 in the program. In this example, the RUS loop runs two times. The first iteration produces a value that's greater than 50. The second iteration produces 42, which fits our range.
+    The computation might produce numbers that are greater than 50. But the `repeat` loop retries the operation until it produces a number that's 50 or less.
 
 1. As an optional step, run the program again like this:
 
