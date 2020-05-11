@@ -1,26 +1,30 @@
-End users are expecting more from their applications. They want to have a great user experience and not be impacted by performance issues. How do you integrate performance bottleneck identification into your architecture? In this unit, we will look at both processes and tools that can help ensure that your application performs well, and help you track down why if it doesn't.
+In today's fast-paced, digital world, your end users are expecting more from your applications. You want them to have a great user experience and not be impacted by performance issues. How do you identify potential performance bottlenecks in your architecture?
+
+In this unit, you'll look at both processes and tools that can help you ensure that your application performs well, and help you discover the cause if it doesn't perform well.
 
 ## Performance requirements
 
-Before we talk about performance, it's important to talk about requirements. In theory, we could keep improving scalability and performance further and further without end. At some point, however, more improvement is prohibitively expensive, difficult, and doesn't have enough business impact to be worthwhile.
+Before we talk about performance, it's important to talk about requirements. In theory, you could keep improving scalability and performance further and further without end. At some point, however, more improvement is prohibitively expensive, difficult, and doesn't have enough business impact to be worthwhile.
 
-Our **non-functional requirements** help us find that point. These particular requirements don't tell us what our app must *do*. Instead, they tell us what quality levels it must meet. As examples, we can define these non-functional requirements to tell us:
+Our **non-functional requirements** help us find that point. These particular requirements don't tell us what your app must *do*. Instead, they tell us what quality levels it must meet. For example, you can define non-functional requirements to discover:
 
 - How fast a transaction must return under a given load.
-- How many simultaneous connections we need to support before we start returning errors.
-- In the event of server failure, what is the maximum amount of time our application is allowed to be down before a back-up is online.
 
-Defining these requirements in advance of building your solution is critical to ensure that the application meets expectations but doesn't require more effort or expend more money than necessary. We can also plan our monitoring and operations rules around these non-functional requirements. 
+- How many simultaneous connections your applications need to support before it begins to return errors.
 
-Discuss requirements with your stakeholders or customers, document them, and communicate them broadly to ensure that everyone agrees on what "good performance" means.
+- In the event of server failure, what is the maximum amount of time your application is allowed to be down before a back-up is online.
 
-Let's now take a look at some ways to track performance in your applications.
+Defining these requirements in advance of building your solution is critical to ensure that your application meets expectations, but doesn't require more effort or expend more money than necessary. You can also plan your monitoring and operations rules around these non-functional requirements. 
+
+You should discuss requirements with your stakeholders or customers, document them, and communicate them broadly to ensure that everyone agrees on what "good performance" means.
+
+IN the following section, let's look at some ways to track performance in your applications.
 
 ## Performance monitoring options in Azure
 
 Monitoring is the act of collecting and analyzing data to determine the performance, health, and availability of your business application and associated resources.
 
-We want to be kept informed that our application is running smoothly. Proactive notifications can be used to inform about critical issues that arise. There are many layers of monitoring to consider, mainly the infrastructure layer and the application layer.
+You want to be kept informed that your applications are running smoothly. Proactive notifications can be used to inform about critical issues that arise. There are many layers of monitoring to consider, mainly the infrastructure layer and the application layer.
 
 ### Azure Monitor
 
@@ -33,14 +37,18 @@ The following diagram depicts a high-level view of Azure Monitor. At the center 
 Azure Monitor can collect data from a variety of sources. You can think of monitoring data for your applications as occurring in tiers that range from your application to any OS and the services it relies on to the platform itself. Azure Monitor collects data from each of the following tiers:
 
 - **Application monitoring data** - Data about the performance and functionality of the code you have written, regardless of its platform.
-- **Guest OS monitoring data** - Data about the OS on which your application is running. It might be running in Azure, in another cloud, or on-premises.
+
+- **Guest OS monitoring data** - Data about the OS on which your application is running. This might be in Azure, or another cloud, or on-premises.
+
 - **Azure resource monitoring data** - Data about the operation of an Azure resource.
-- **Azure subscription monitoring data** - Data about the operation and management of an Azure subscription and data about the health and operation of Azure itself.
+
+- **Azure subscription monitoring data** - Data about the operation and management of an Azure subscription, and data about the health and operation of Azure itself.
+
 - **Azure tenant monitoring data** - Data about the operation of tenant-level Azure services, such as Azure Active Directory (Azure AD).
 
-As soon as you create an Azure subscription and start adding resources, such as VMs and web apps, Azure Monitor starts collecting data. Activity logs record when resources are created or modified and metrics tell you how the resource is performing and the resources that it's consuming. You can also extend the data you're collecting by enabling diagnostics in your apps and adding agents to collect telemetry data from Linux and Windows or Application Insights.
+As soon as you create an Azure subscription and start adding resources, such as VMs and web apps, Azure Monitor starts collecting data. Activity logs record when resources are created or modified, and metrics tell you how the resource is performing and the resources that it's consuming. You can also extend the data you're collecting by enabling diagnostics in your apps, and adding agents to collect telemetry data from Linux and Windows or Application Insights.
 
-Azure Monitor is the place to start for all your near real-time resource metric insights. Many Azure resources will start outputting metrics automatically once deployed. For example, Azure Web App instances will output compute and application request metrics. Metrics from Application Insights are also collated here in addition to VM host diagnostic metrics. VM guest diagnostic metrics will also appear once you opt in.
+Azure Monitor is the place to start for all your near real-time resource metric insights. Many Azure resources will start outputting metrics automatically once they are deployed. For example, Azure Web App instances will output compute and application request metrics. Metrics from Application Insights are also collated here in addition to VM host diagnostic metrics. VM guest diagnostic metrics will also appear once you opt in.
 
 ### Log Analytics
 
@@ -48,20 +56,20 @@ Centralized logging can help you uncover hidden issues that may be difficult to 
 
 ![An illustration showing the role of Log Analytics in resource monitoring.](../media/5-log-analytics.png)
 
-You can collate a wide range of data sources, security logs, Azure activity logs, server, network, and application logs. You can also push on-premises System Center Operations Manager data to Log Analytics in hybrid deployment scenarios and have Azure SQL Database send diagnostic information directly into Log Analytics for detailed performance monitoring.
+You can collate a wide range of data sources, security logs, Azure activity logs, server, network, and application logs. You can also push on-premises System Center Operations Manager data to Log Analytics in hybrid deployment scenarios, and have Azure SQL Database send diagnostic information directly into Log Analytics for detailed performance monitoring.
 
-Centralized logging can be massively beneficial for troubleshooting all types of scenarios, including performance issues. It's a key part of a good monitoring strategy for any architecture.
+Centralized logging can be massively beneficial for troubleshooting all types of scenarios, including performance issues, and it's a key part of a good monitoring strategy for any architecture.
 
 ## Application performance management
 
-Deep application issues are often tricky to track down. This is where integrating telemetry into an application by using an application performance management solution (APM) to track down low-level application performance and behavior can be beneficial. This telemetry can include individual page request times, exceptions within your application, and even custom metrics to track business logic. This telemetry can provide a wealth of insight into what is going on within your application.
+Deep application issues are often tricky to track down. This type of scenario is when it can be beneficial to integrate telemetry into your application by using an application performance management solution (APM), which will help you to track down low-level application performance and behavior. This telemetry can include individual page request times, exceptions within your application, and even custom metrics to track business logic. This telemetry can provide a wealth of insight into what is going on within your application.
 
 On Azure, Application Insights is a service that provides this deep application performance management. You install a small instrumentation package in your application, and set up an Application Insights resource in the Microsoft Azure portal. The instrumentation monitors your app and sends telemetry data to the portal.
 
-Telemetry from the host environments, such as performance counters, Azure diagnostics, and Docker logs, can be ingested. You can also set up web tests that periodically send synthetic requests to your web service. You could even configure your application to send custom events and metrics that you write yourself in the client or server code. For example, application-specific events such as items sold or games won.
+You can use Application Insights to consume telemetry from the host environments, such as performance counters, Azure diagnostics, and Docker logs. You can also set up web tests that periodically send synthetic requests to your web service. You could even configure your application to send custom events and metrics that you write yourself in the client or server code. For example, application-specific events such as items sold or games won.
 
-Application Insights stores its data in a common repository, and metrics are shared with Azure Monitor. It can take advantage of shared functionality such as alerts, dashboards, and deep analysis with the Log Analytics query language.
+Application Insights stores its data in a common repository, and metrics are shared with Azure Monitor. Application Insights can also take advantage of shared functionality such as alerts, dashboards, and deep analysis with the Log Analytics query language.
 
-A common pattern used in determining the availability of a web application is the health endpoint monitoring pattern. This pattern is used to monitor web applications and associated back-end services, to ensure that they're available and performing correctly. The pattern is implemented by querying a particular uri. The endpoint checks on the status of many components, including the back-end services that the app depends on, rather than just the availability of the front end itself. This acts as a service-level health check that returns an indication of the overall health of the service.
+A common pattern used in determining the availability of a web application is the health endpoint monitoring pattern. This pattern is used to monitor web applications (and their associated back-end services) to ensure that they're available and performing correctly. The pattern is implemented by querying a particular URI. The endpoint checks on the status of many components, including the back-end services that the app depends on, rather than just the availability of the front end itself. This acts as a service-level health check that returns an indication of the overall health of the service.
 
-Use an APM solution such as Application Insights to gain a deep understanding of your application and correlate activity across your application. This can help you understand how a specific action works in the client browser, on the server, and through to downstream services. It will also provide insight into trends, provide notifications when there is a problem, and help identify where the problem is and how to fix it, before your users are aware.
+You should use an APM solution such as Application Insights to gain a deep understanding of your application and to correlate activity across your application. This can help you understand how a specific action works in the client browser, on the server, and through to downstream services. It will also provide insight into trends, provide notifications when there is a problem, help identify where the problem is, and inform you on how to fix it before your users are aware.
