@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.knowledge-check-3
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
+  ms.date: 06/05/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 3 # dummy number at present
+content: |
+quiz:
+  questions:
+  - content: "Which of the following descriptions best describes how Speech translation works?"
+    choices:
+    - content: "Speech translation recognizes speech from microphone input to convert the speech into a large number of audio files, and asynchronously receives transcription results."
+      isCorrect: false
+      explanation: "You only convert the speech into the text."
+    - content: "Speech translation recognizes speech from microphone input to convert speech into an audio file, normalizes the text, and then translates into an audio file."
+      isCorrect: true
+      explanation: "You convert speech to text then translate the text."
+    - content: "It recognizes speech from microphone input to convert the speech into an audio file and then synthesize speech to a speaker."
+      isCorrect: false
+      explanation: "You only synthesize speech to a speaker."
+  - content: "How would you describe a function app?"
+    choices:
+    - content: "A function app is a function runtime to execute the function code."
+      isCorrect: false
+      explanation: "A function app isn’t a runtime. It’s a collection of one or more functions. Azure functions runtime provides a way to manage the function and execute the function code."
+    - content: "A function app is a containerized application that can be invoked using a trigger."
+      isCorrect: false
+      explanation: "A function app isn't a containerized application."
+    - content: "A function app is a collection of one or more functions that are managed together."
+      isCorrect: true
+      explanation: "A function app can handle multiple functions."
