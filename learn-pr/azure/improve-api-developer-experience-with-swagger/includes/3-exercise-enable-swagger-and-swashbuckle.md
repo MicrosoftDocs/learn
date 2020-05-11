@@ -76,7 +76,7 @@ Since we created the API, we knew its shape, but an external developer who wants
 1. At the top of the file add another *using* entry:
 
     ```csharp
-    using Swashbuckle.AspNetCore.Swagger;
+    using Microsoft.OpenApi.Models;
     ```
 
 1. Replace the method `ConfigureServices(IServiceCollection services)` with  the following implementation to add the Swagger generator to the services collection.
@@ -94,7 +94,7 @@ Since we created the API, we knew its shape, but an external developer who wants
         // NEW CODE STARTS HERE
         services.AddSwaggerGen(c =>
         {
-            c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
         });
         // NEW CODE ENDS HERE
     }
