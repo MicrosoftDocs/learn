@@ -5,7 +5,7 @@ Microsoft SQL Server has many unique features, compared to other database manage
 - **Industry-leading performance and scalability**. SQL Server is currently first in the TPC-E benchmark for performance, and first for performance in the TPC-H 1 TB, 10 TB, and 30-TB benchmarks.
 - **Industry-leading security**. According to the National Institute of Standards and Technology (NIST), SQL Server has been the most secure RDBMS for more than the last nine years. Security features include the following and you'll see others later in this module:
     - Transparent Data Encryption (TDE). You can use this technology to encrypt data-at-rest in SQL Server data files.
-    - SQL Data Discovery and Classification. You can use this tool in SQL Server Management Studio (SSMS) to find the most sensitive data in your databases, including Personally Identifiable Information (PII), so that you can take action to secure it.
+    - SQL Data Discovery and Classification. You can use this tool in SQL Server Management Studio (SSMS) to find the most sensitive data in your databases, including Personally Identifiable Information, so that you can take action to secure it.
     - Dynamic Data Masking (DDM). You can use this feature to protect sensitive values, such as credit card numbers, by masking parts of them from non-privileged users. 
 - **Insights in minutes on any device**. SQL Server provides an end-to-end solution for reporting, and scales from mobile to desktop at a fraction of the cost of other systems. You can turn data into answers using the enterprise reporting capabilities of SQL Server Reporting Services along with the included Power BI Report Server, which gives users access to rich, interactive Power BI reports on any device.
 

@@ -37,7 +37,7 @@ SET AUTOMATIC_TUNING ( FORCE_LAST_GOOD_PLAN = ON );
 Intelligent Query Processing (IQP) is a set of features, many of which are new in SQL Server 2019, that automatically improve and optimize the performance of your workload. The IQP features include:
 
 - **Adaptive Joins.** SQL Server dynamically selects a join type during runtime based on the actual number of input rows.
-- **Approximate Count Distinct.** SQL Server provices an approximate count of distinct results for big data scenarios to run such queries with high performance and low memory load.
+- **Approximate Count Distinct.** SQL Server provides an approximate count of distinct results for big data scenarios to run such queries with high performance and low memory load.
 - **Memory Grant Feedback.** If a query has operations that spill to disk, SQL Server can add more memory for subsequent operations. Similarly, if a query wastes more than half of the memory allocated to it, SQL Server can reduce the memory assigned to it.
 - **Table Variable Deferred Compilation.** SQL Server uses the actual cardinality of a table variable on its first compilation instead of a fixed guess.
 
@@ -66,7 +66,7 @@ SQL Server on Linux supports advanced security features such as Always Encrypted
 
 - **Dynamic data masking** masks a portion of the data. Four different kinds of masks are available. The types are: masking all the data in a column, masking email addresses, random number masking for numerical data, and custom string masking. You could use custom string masking, for example, to mask all but the last four digits in a Social Security Number.
 
-- **Data Discovery and Classification** identifies, labels, and reports on the sensitive data in your databases, such as Personally Identifiable Information (PII). It's a tool within SQL Server Management Studio (SSMS) that makes it easier to comply with data privacy legislation and harden the databases that contain the most valuable data. Data Discovery and Classification is a service that is part of the Advanced Data Security (ADS) package.
+- **Data Discovery and Classification** identifies, labels, and reports on the sensitive data in your databases, such as Personally Identifiable Information. It's a tool within SQL Server Management Studio (SSMS) that makes it easier to comply with data privacy legislation and harden the databases that contain the most valuable data. Data Discovery and Classification is a service that is part of the Advanced Data Security (ADS) package.
 
 - **Vulnerability Assessment** identifies vulnerabilities in your databases. Once you are aware of the weaknesses that your server configuration and database designs may cause, you can mitigate them and prevent common attacks. Vulnerability Assessment is another ADS service.
 
@@ -97,7 +97,7 @@ Another solution for SQL Server on Linux is its ability to be run in containers 
 
 ### PolyBase
 
-Many organizations have data in different systems. That mght be because different teams had different requirements when they selected their system, because you merged with another company, or for some other historical reason. It has traditionally been difficult to integrate data across these system boundaries to answer questions for users.
+Many organizations have data in different systems. That might be because different teams had different requirements when they selected their system, because you merged with another company, or for some other historical reason. It has traditionally been difficult to integrate data across these system boundaries to answer questions for users.
 
 Suppose you have data in SQL Server that records sales for your product catalog. But the data that records how much it costs to make your products is in a SAP HANA database. You want to create a report that analyzes profit margins. You'll need information from both databases. In the past, you could:
 
@@ -106,14 +106,14 @@ Suppose you have data in SQL Server that records sales for your product catalog.
 
 Both these approaches are complex and can require significant development time to get right. 
 
-With PolyBase, you can create an external table in SQL Server. An external table is a connection to an external system and a dataset hosted there. Once created, clients can submit queries to the external table in exactly the same way they would to internal tables. `JOIN` querys can integrate data from external tables with internal tables. As you can see, PolyBase can remove the boundaries that different systems impose on your data and make it easier to do the analyses you need on your business data, regardless of its location.
+With PolyBase, you can create an external table in SQL Server. An external table is a connection to an external system and a dataset hosted there. Once created, clients can submit queries to the external table in exactly the same way they would to internal tables. `JOIN` queries can integrate data from external tables with internal tables. As you can see, PolyBase can remove the boundaries that different systems impose on your data and make it easier to do the analyses you need on your business data, regardless of its location.
 
 > [!NOTE]
 > On Linux operating systems, PolyBase is supported in SQL Server 2019 or later. To use it, you must install the **mssql-server-polybase** package, in addition to SQL Server 2019.
 
 ### Machine Learning Services
 
-In machine learning, large datasets are used to model the behavior of some complex system. When a model has been developed that accurately predicts the observed behavoir of the system, it's used to predict how that system might behave in the future. Sophisticated libraries of code, often open-source, have been developed that can prepare your dataset, add features to it, train a model, evaluate the accuracy of the trained model, and deploy those models for other clients to call. These libraries are written in the R and Python languages. 
+In machine learning, large datasets are used to model the behavior of some complex system. When a model has been developed that accurately predicts the observed behavior of the system, it's used to predict how that system might behave in the future. Sophisticated libraries of code, often open-source, have been developed that can prepare your dataset, add features to it, train a model, evaluate the accuracy of the trained model, and deploy those models for other clients to call. These libraries are written in the R and Python languages. 
 
 SQL Server Machine Learning Services allows you to run these R and Python scripts against the data in your SQL Server databases. You can add the popular machine learning and data science frameworks, including PyTorch, TensorFLow, SciKit-Learn, and others.
 
