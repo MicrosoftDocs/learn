@@ -10,23 +10,23 @@ Blazor is a web technology that lets you build client web applications using C#.
 
 Blazor apps are composed of reusable web UI components built using C#, HTML, and CSS. It enables developers to build both client and server code with C#, allowing you to share code and libraries with both the front-end client code and back-end logic. Using C# for both can simplify sharing data between the front-end and backend, enable code reuse to accelerate development and simplify maintenance. 
 
-Blazor can be used to generate server-side code where the UI is deployed from the server, or a client-side web app using Blazor WebAssembly.
+Blazor can be used to generate server-side code that handles UI interactions over a WebSocket connection, or a client-side web app that runs directly in the browser via WebAssembly.
 
 ## What is WebAssembly?
 
 WebAssembly (WASM) is an open binary standard that defines a portable code format for executable programs designed to run in web browsers. It is a textual assembly language with a compact binary format built for fast downloads and near-native performance. 
 
-WebAssembly provides complication targets for languages such as C/C++ and Rust. It is designed to run alongside JavaScript, allowing both to work together. It can also be used to generate Progressive Web Applications that can be downloaded and run offline.
+WebAssembly provides a compilation target for languages such as C/C++ and Rust. It is designed to run alongside JavaScript, allowing both to work together. It can also be used to generate Progressive Web Applications that can be downloaded and run offline.
 
 ## What is Blazor WebAssembly?
 
-Blazor WebAssembly allows developers to build WebAssembly binaries using .NET. It's a single-page app framework and uses the WebAssembly open standards without requiring plugins or code generation. 
+Blazor WebAssembly allows developers to run .NET code in a browser. It's a single-page app framework and uses the WebAssembly open standards without requiring plugins or code generation. 
 
 .NET code executed via WebAssembly in the browser runs in the browser's JavaScript sandbox. It includes all the security and protection that the sandbox provides to help prevent malicious actions on the client machine.
 
-Under the hood, Blazor uses a Mono-compiled version of the .NET Runtime compiled to a WebAssembly module. The module is able execute the .NET Standard code included in your Blazor application. 
+Under the hood, Blazor uses a .NET runtime compiled to a WebAssembly module that is downloaded with the app. The module is able execute .NET Standard code included in your Blazor application. 
 
-Blazor WebAssembly apps are restricted to the capabilities of the browser that is executing the application but can access full browser functionality via the JavaScript interop.
+Blazor WebAssembly apps are restricted to the capabilities of the browser that is executing the application but can access full browser functionality via JavaScript interop.
 
 ### Blazor WebAssembly supported browsers
 
@@ -39,6 +39,6 @@ Blazor WebAssembly requires a modern desktop or mobile browser. The following br
 
 ## Blazor WebAssembly development requirements
 
-Blazor WebAssembly applications can be built using Visual Studio 2019, Visual Studio for Mac or Visual Studio Code. You'll need the latest version installed regardless of the IDE you choose. In this module, we'll be focusing on Visual Studio code.
+Blazor WebAssembly applications can be built using can be built using the latest versions of Visual Studio 2019, Visual Studio for Mac or Visual Studio Code. In this module, we'll be focusing on Visual Studio code.
 
-Regardless of your development environment, you'll need to install the .NET Core 3.1 SDK. With the SDK installed, you'll be able to download the Blazor WebAssembly templates. You'll install all of the requirements to build Blazor WebAssembly app with Visual Studio Code in the next exercise.
+Regardless of your development environment, you'll need to install the .NET Core 3.1 SDK. With the SDK installed, you'll have everything you need to start building Blazor apps. You'll install all of the requirements to build Blazor WebAssembly app with Visual Studio Code in the next exercise.
