@@ -32,7 +32,9 @@ Notice that there are some edits from the previous code:
 - The resource name was changed from **"name": "[parameters('storageName')]",** to **"name": "[variables(uniqueStorageName)]",** to leverage the newly created variable.
 
 > [!NOTE]
-> As previously mentioned, the result of "uniqueString(resourceGroup().id)" is a 13 character hash based on result of **"resourgroup().id"** and therefore, it will **ALWAYS** be the same as long as you're deploying in the same resource group.  
+> As previously mentioned, the result of "uniqueString(resourceGroup().id)" is a 13 character hash based on result of **"resourgroup().id"** and therefore, it will **ALWAYS** be the same as long as you're deploying in the same resource group.
+
+3. Save the updated template, prepare to deploy it.
 
 ## Deploy the template
 
@@ -69,6 +71,9 @@ The deployment command returns results in a JSON format. Look for `ProvisioningS
 You can verify the deployment by exploring the resource group from the Azure portal.
 
 1. Sign in to the Azure [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. From the left menu, select Resource groups.
+1. From the left menu, select Resource groups. If the left menu is not visible, click the 'hamburger' Icon in the upper left corner to bring up the menu.
+
+![Azure Portal Menu](../media/13-open-rg-portal.gif)
+
 1. Select the resource group you deployed to.
 1. You see that a storage account resource with a name including the prefix you selected has been deployed.
