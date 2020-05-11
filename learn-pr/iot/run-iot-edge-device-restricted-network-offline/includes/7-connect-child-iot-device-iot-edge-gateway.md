@@ -23,9 +23,9 @@ In a previous unit, you created the IoT Device Identities in Azure IoT Hub. You 
     ```
     Be sure to replace the placeholders with the appropriate values:
 
-    - <iot-hub-name>: The Name of the Azure IoT Hub.
-    - <iot-device-key>: The Primary or Secondary Key for the ChildDevice1 IoT Device in IoT Hub.
-    - <iot-edge-gateway-hostname>: Enter the IP Address for the IoTEdgeGateway virtual machine.
+    - iot-hub-name: The Name of the Azure IoT Hub.
+    - iot-device-key: The Primary or Secondary Key for the ChildDevice1 IoT Device in IoT Hub.
+    - iot-edge-gateway-hostname: Enter the IP Address for the IoTEdgeGateway virtual machine.
 
 1. Save the file.
 
