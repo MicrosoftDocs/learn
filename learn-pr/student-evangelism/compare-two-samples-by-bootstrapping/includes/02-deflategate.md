@@ -1007,7 +1007,7 @@ report said,
 > and assuming an initial pressure of 12.5 psi for the Patriots balls
 > and 13.0 for the Colts balls."
 >
-> -- *Investigative report commissioned by the NFL regarding the AFC
+> *Investigative report commissioned by the NFL regarding the AFC
 > Championship game on January 18, 2015*
 
 Our analysis shows an average pressure drop of about 0.73 psi, which is
@@ -1023,4 +1023,3 @@ causation: the question was whether the excess drop of pressure in the
 Patriots' footballs was deliberate. If you are curious about the answer
 given by the investigators, here is the [full
 report](https://nfllabor.files.wordpress.com/2015/05/investigative-and-expert-reports-re-footballs-used-during-afc-championsh.pdf).
-ionsh.pdf).

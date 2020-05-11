@@ -456,11 +456,6 @@ Here is a histogram of the ratios.
 ratios.select('Ratio BW/GD').hist()
 ```
 
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
 ![png](../media/66-confidence-intervals-9-1.png)
 
 At first glance the histogram looks quite symmetric, with the density at
@@ -579,11 +574,6 @@ resampled_medians.hist(bins=15)
 plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ```
 
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
 ![png](../media/66-confidence-intervals-19-1.png)
 
 This histogram and interval resembles those we drew in the previous
@@ -610,11 +600,6 @@ is the distribution of their ages, and their average age which was about
 ``` {.python}
 baby.select('Maternal Age').hist()
 ```
-
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
 
 ![png](../media/66-confidence-intervals-23-1.png)
 
@@ -685,11 +670,6 @@ resampled_means.hist(bins=15)
 plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ```
 
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
 ![png](../media/66-confidence-intervals-29-1.png)
 
 Once again, the average of the original sample (27.23 years) is close to
@@ -706,15 +686,10 @@ ages was not symmetric at all:
 baby.select('Maternal Age').hist()
 ```
 
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
 ![png](../media/66-confidence-intervals-32-1.png)
 
 This is a consequence of the Central Limit Theorem of probability and
-statistics. In later sections, we will see what the theorem says.
+statistics. In later sections, we will see what the theorem says.w
 
 ### An 80% Confidence Interval
 
@@ -737,11 +712,6 @@ array(\[27.01192504, 27.44633731\])
 resampled_means.hist(bins=15)
 plots.plot(make_array(left_80, right_80), make_array(0, 0), color='yellow', lw=8);
 ```
-
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
 
 ![png](../media/66-confidence-intervals-36-1.png)
 
@@ -839,11 +809,6 @@ resampled_proportions = Table().with_column(
 resampled_proportions.hist(bins=15)
 plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ```
-
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
 
 ![png](../media/66-confidence-intervals-47-1.png)
 

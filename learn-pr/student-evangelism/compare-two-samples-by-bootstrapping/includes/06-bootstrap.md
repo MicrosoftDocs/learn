@@ -1733,7 +1733,7 @@ Cook
 </p>
 For clarity of comparison, we will focus our attention on those who had
 at least the equivalent of a half-time job for the whole year. At a
-minimum wage of about \$10 per hour, and 20 hours per week for 52 weeks,
+minimum wage of about \$ 10per hour, and 20 hours per week for 52 weeks,
 that's a salary of about \$10,000.
 
 ``` {.python}

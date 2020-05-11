@@ -413,6 +413,7 @@ True
 </tr>
 </tbody>
 </table>
+
 ``` {.python}
 means = means_table.column(1)
 observed_difference = means.item(1) - means.item(0)

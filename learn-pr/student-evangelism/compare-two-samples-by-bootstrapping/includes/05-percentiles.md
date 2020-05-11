@@ -87,10 +87,11 @@ By this definition, any percentile between 0 and 100 can be computed for
 any collection of values, and it is always an element of the collection.
 
 In practical terms, suppose there are $n$ elements in the collection. To
-find the $p$th percentile: - Sort the collection in increasing order. -
-Find p% of n: $(p/100) \times n$. Call that $k$. - If $k$ is an integer,
-take the $k$th element of the sorted collection. - If $k$ is not an
-integer, round it up to the next integer, and take that element of the
+find the $p$th percentile: 
+- Sort the collection in increasing order.
+- Find p% of n: $(p/100) \times n$. Call that $k$. 
+- If $k$ is an integer, take the $k$th element of the sorted collection. 
+- If $k$ is not an integer, round it up to the next integer, and take that element of the
 sorted collection.
 
 ### Example
@@ -201,14 +202,10 @@ Midterm
 <p>
 ... (349 rows omitted)
 </p>
+
 ``` {.python}
 scores_and_sections.select('Midterm').hist(bins=np.arange(-0.5, 25.6, 1))
 ```
-
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
 
 ![png](../media/64-percentiles-12-1.png)
 
