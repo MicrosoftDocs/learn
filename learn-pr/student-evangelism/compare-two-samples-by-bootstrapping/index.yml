@@ -1,13 +1,13 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.compare-two-samples-by-bootstrapping
 metadata:
-  title: Compare Two Samples By Bootstrapping
+  title: Compare two samples by bootstrapping
   description: Learn how to test hypothesis about samples using bootstrapping
   ms.date: 19/03/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 title: Compare Two Samples By Bootstrapping
 summary: Learn how to test hypothesis about samples using bootstrapping
 abstract: |

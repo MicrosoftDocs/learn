@@ -4,16 +4,17 @@ title: Using Confidence Intervals
 metadata:
   title: Using Confidence Intervals
   description: Examples using confidence intervals
-  ms.date: 19/03/2020
-  author: sauravmittal
-  ms.author: leescott
+  ms.date: 03/19/2020
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/08-using-confidence-intervals.md)]
 content: 'You sample 100 dogs at random from all dogs in Berkeley and compute a 95% confidence interval of their average height. For each of the statements below, state whether they are Always True, Typically True, Not Expected to be True, or False.'
 quiz:
+  title: Checking your Knowledge
   questions:
     - content: 'The chance that the average height of all dogs in Berkeley is in this interval is 95%.'
       choices:
