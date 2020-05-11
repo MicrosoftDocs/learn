@@ -2,7 +2,7 @@ To optimize the performance of SQL Server, you first have to measure it.
 
 Suppose you're a system architect for a large wine retail company. You have a database that's hosted on SQL Server 2019, and runs on Red Hat Enterprise Linux (RHEL) servers. You want to ensure that the database server is doing as well as possible, given the server's hardware.
 
-SQL Server administrators often use Dynamic Management Views (DMVs) as their primary source of performance data. The **dm_os_performance_counters** DMV includes many performance counters that profile the perfomance of the server under user demand. For example, when monitoring SQL Server performance, you can use counters such as **Batch requests per second** and **Buffer cache hit ratio** to diagnose problems.
+SQL Server administrators often use Dynamic Management Views (DMVs) as their primary source of performance data. The **dm_os_performance_counters** DMV includes many performance counters that profile the performance of the server under user demand. For example, when monitoring SQL Server performance, you can use counters such as **Batch requests per second** and **Buffer cache hit ratio** to diagnose problems.
 
 In this unit, you'll learn how to use Azure Data Studio to gather data from SQL Server counters and display how those counters vary over time in a chart.
 
@@ -24,7 +24,7 @@ Azure Data Studio includes the following features:
 - Server groups to organize connection information for the SQL servers you work with
 - An integrated terminal you can use to execute PowerShell, Bash, or other shell commands
 
-When you run a Transact-SQL query that returns numeric data in multiple rows, you can use the Chart Viewer feature of Azure Data Studio to display how that data varies over time. By collecting data from SQL performance counters in a global temporary table, then querying that data and displaying the results in Chart Viewer, you can see a graph of a performance counter against time. This kind of display highlights how performance and demand is changing and can help you to spot problems before they become bottlenecks. You'll use the feature to investigate performance in this module.
+When you run a Transact-SQL query that returns numeric data in multiple rows, you can use the Chart Viewer feature of Azure Data Studio to display how that data varies over time. By collecting data from SQL performance counters in a global temporary table, then querying that data and displaying the results in Chart Viewer, you can see a graph of a performance counter against time. This kind of display highlights how performance and demand are changing and can help you to spot problems before they become bottlenecks. You'll use the feature to investigate performance in this module.
 
 ## Common SQL Server performance counters
 
