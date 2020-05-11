@@ -15,7 +15,7 @@ abstract: |
   - Prepare your development environment for writing quantum programs in Q#.
   - Understand how Q# programs are structured.
   - Work with qubits and superposition to build a quantum random number generator.
-  - Learn how Azure Quantum enables you to run your programs on real quantum hardware.
+  - Learn how Azure Quantum enables you to run your programs on quantum computers.
 prerequisites: |
   - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)

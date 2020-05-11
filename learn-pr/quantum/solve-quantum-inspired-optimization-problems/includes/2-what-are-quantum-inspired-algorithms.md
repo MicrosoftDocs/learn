@@ -5,7 +5,7 @@ There are many models of quantum computing. Quantum-inspired algorithms are base
 
 A good analogy of this is to imagine you have a glass of water. If you move that glass slowly across a table, the contents won't spill because the system has time to adapt to its new configuration. If you were to move the glass quickly however, the system has been forced to change too quickly, and we have water everywhere.
 
-Adiabatic quantum computation is well understood and, as a result, a number of techniques have been developed to simulate this type of physics. These classical algorithms, which we can run on classical computers today, are also known as quantum-inspired approaches.
+Adiabatic quantum computation is well understood and, as a result, a number of techniques have been developed to simulate this type of physics. These classical algorithms, which we can run on classical computers today, are also known as quantum-inspired optimization.
 
 ## What is quantum-inspired optimization (QIO)?
 
@@ -16,7 +16,7 @@ In the future, adiabatic quantum algorithms will run on quantum computers, once 
 Applying QIO to real-world problems may offer businesses new insights or help lower costs by making their processes more efficient. QIO gives us the opportunity to:
 
 - Find a solution faster than other optimization techniques for a fixed use case and fixed quality of solution.
-- Find a higher quality solution that other optimization techniques for a fixed problem and fixed amount of time.
+- Find a higher quality solution than other optimization techniques for a fixed problem and fixed amount of time.
 - Use a more realistic model than other optimization techniques by extending the problem to consider more variables.
 
 Since QIO methods are heuristics, they're not guaranteed to find the optimal solution. Also, they don't always outperform other optimization techniques. In reality, it depends on the problem, and discovering what makes QIO perform better than other methods in some situations and not others is still an active area of research.
