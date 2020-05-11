@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-configure-iot-hub-event-subscription
-title: Exercise - Configure Azure IoT Hub Event Subscription
+title: Exercise - Configure an Azure IoT Hub event subscription
 metadata:
-  title: Exercise - Configure Azure IoT Hub Event Subscription
-  description: Exercise - Configure Azure IoT Hub Event Subscription
+  title: Exercise - Configure an Azure IoT Hub event subscription
+  description: Exercise - Configure an Azure IoT Hub event subscription
   ms.date: 3/20/20
   author: olivierbloch
   ms.author: Olivier.Bloch
