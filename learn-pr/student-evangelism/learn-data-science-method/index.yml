@@ -29,6 +29,7 @@ units:
 - learn.student-evangelism.learn-data-science-method.plotting-classics
 - learn.student-evangelism.learn-data-science-method.causality-experiments
 - learn.student-evangelism.learn-data-science-method.observation-visualization-john-snow-broad-street-pump
+- learn.student-evangelism.learn-data-science-method.knowledge-check
 - learn.student-evangelism.learn-data-science-method.summary
 badge:
   uid: learn.learn-data-science-method.badge

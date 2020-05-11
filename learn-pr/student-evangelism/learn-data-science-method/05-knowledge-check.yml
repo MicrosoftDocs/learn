@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.learn-data-science-method.summary
-title: Summary
+uid: learn.student-evangelism.learn-data-science-method.knowledge-check
+title: Check your knowledge
 metadata:
-  title: Summary
-  description: An overview of content covered in this module.
+  title: Check your knowledge
+  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
   ms.date: 03/12/2020
   author: leestott
   ms.author: leestott
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/05-summary.md)]
+  [!include[](includes/05-knowledge-check.md)]
 
 
 quiz:
