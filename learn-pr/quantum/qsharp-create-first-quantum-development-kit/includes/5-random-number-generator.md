@@ -45,7 +45,7 @@ For the complete random number generator, you need to include two additional lib
 
 ### Define the operation
 
-Here, you define the `SampleRandomNumberInRange` operation. This operation repeatedly calls the `GenerateRandomBit` operation to build string of bits.
+Here, you define the `SampleRandomNumberInRange` operation. This operation repeatedly calls the `GenerateRandomBit` operation to build a string of bits.
 
 Modify *Program.qs* like this:
 
