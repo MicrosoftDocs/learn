@@ -2,19 +2,20 @@
 uid: learn.student-evangelism.create-manipulate-tables-using-datascience-library.sorting-rows
 title: Sorting Rows
 metadata:
-  title: Sorting Rows
-  description: Learn about Python Expressions.
-  ms.date: 09/03/2020
-  author: sauravmittal
-  ms.author: n/a
+  title: Sorting rows
+  description: Learn about Python expressions
+  ms.date: 03/09/2020
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: n/a
+  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/02-sorting-rows.md)]
 
 content: 'Suppose you have a table called students with columns labeled name, age, and email. Select the best table expression for the following statements.'
 quiz:
+  title: Check your Knowledge
   questions:
     - content: 'A table with just the names and emails of all students.'
       choices:

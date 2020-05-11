@@ -2,13 +2,13 @@
 uid: learn.student-evangelism.create-manipulate-tables-using-datascience-library.joining-tables-by-columns
 title: Joining Tables By Columns
 metadata:
-  title: Joining Tables By Columns
+  title: Joining tables by columns
   description: Joining tables
   ms.date: 03/12/2020
-  author: sauravmittal
-  ms.author: n/a
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: n/a
+  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/10-joining-tables-by-columns.md)]
@@ -21,6 +21,7 @@ content: '|Color	|Amount	|Price ($)|
           |Green	|9	    |1.40     |
           |Green	|2	    |1.00     |'
 quiz:
+  title: Check your Knowledge
   questions:
     - content: 'Which line of code returns a new table which displays the total number of candies and the total cost for each unique color?'
       choices:
