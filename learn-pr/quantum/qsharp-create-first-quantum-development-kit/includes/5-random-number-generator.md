@@ -29,7 +29,7 @@ You need ${\lfloor ln(12) / ln(2) + 1 \rfloor}$, or four bits to represent a num
 
 Let's say you generate the bit string ${1101_{\ binary}}$, which is equivalent to ${13_{\ decimal}}$. Because 13 is greater than 12, you repeat the process.
 
-Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${6_{\ decimal}}$. Because six is less than 12, the process is complete.
+Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${6_{\ decimal}}$. Because 6 is less than 12, the process is complete.
 
 With our logic in place, you're now ready to build a complete random number generator.
 
