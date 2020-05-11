@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics
+metadata:
+  title: Test Hypothesis by Simulating Statistics
+  description: Learn how to test hypothesis by simulating statistics
+  ms.date: 03/19/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Test Hypothesis by Simulating  Statistics
+summary: Learn how to test hypothesis through simulation of statistics
+abstract: |
+  In this module, you will:
+  - Motivate the need and use of Hypothesis Testing.
+  - Understand how to set up & run hypothesis tests from scratch through multiple in-depth case studies.
+  - Learn how to make decisions with uncertain results through P-values & P-value cutoffs.
+prerequisites: None
+iconUrl: /learn/achievements/student-evangelism/test-hypothesis-by-simulating-statistics.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.setup
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.introduction
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.multiple-categories
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.decisions-uncertainty
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.error-probabilities
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.mini-labs
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.summary
+badge:
+  uid: learn.test-hypothesis-by-simulating-statistics.badge
