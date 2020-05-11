@@ -32,8 +32,8 @@ This lab assumes the following resources are available:
 
 Execute the **lab-setup.azcli** script before starting the lab if the resources are unavailable. 
 
-    >[!NOTE]
-    >You will need the SimulatedDevice connection string. You can obtain that by running the following command in the Azure Cloud Shell
+   >[!NOTE]
+   >You will need the SimulatedDevice connection string. You can obtain that by running the following command in the Azure Cloud Shell
  
   ```bash
   az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id SimulatedThermostat -o tsv
