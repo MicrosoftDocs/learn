@@ -33,7 +33,7 @@ quiz:
       explanation: "It's not necessary to use a .NET language in apps that call SQL Server. Any app code that queries SQL Server databases hosted on Windows can query SQL Server databases hosted on Linux, because the database engine is the same."
     - content: "You must rewrite the app to ensure that it does not call any stored procedures."
       isCorrect: false
-      explanation: "You can call stored procedures in your app, regardless of whether it it hosted on Windows or Linux, because the database engine is the same."
+      explanation: "You can call stored procedures in your app, regardless of whether it is hosted on Windows or Linux, because the database engine is the same."
     - content: "You don't need to make any changes to the app code."
       isCorrect: true
       explanation: "The SQL Platform Abstraction Layer means that the database engine is exactly the same, whether SQL Server is running on Windows or on Linux. That means that developers don't have to make any code changes when you migrate a database server to another operating system, but only modify the connection string."
