@@ -18,7 +18,7 @@ You can use the same single public-private key pair to access multiple Azure VMs
 
 ## Create the SSH key pair
 
-On Linux, Windows 10, and MacOS, you can use the built-in `ssh-keygen` command to generate the SSH public and private key files.
+On Linux, Windows 10, and macOS, you can use the built-in `ssh-keygen` command to generate the SSH public and private key files.
 
 Windows 10 includes an SSH client with the **Fall Creators Update**. Earlier versions of Windows require additional software to use SSH; [check the documentation for full details](https://docs.microsoft.com/azure/virtual-machines/linux/ssh-from-windows). Alternatively, you can install the Linux subsystem for Windows and get the same functionality.
 

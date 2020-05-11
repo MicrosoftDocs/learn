@@ -66,8 +66,7 @@ Any additional drives you create from scratch need to be initialized and formatt
     sudo mkdir /data && sudo mount /dev/sdc1 /data
     ```
 
-    > [!TIP]
-    > We initialized the disk and mounted it. If you are interested in more details on this process go through the **Add and size disks in Azure virtual machines** module. This task is covered in more detail there.
+We initialized the disk and mounted it. If you want more details on this process see the **Add and size disks in Azure virtual machines** module. This task is covered in more detail there.
 
 ## Install software onto the VM
 
@@ -116,8 +115,6 @@ Apache is available within Ubuntu's default software repositories, so we will in
     test-web-eus-vm1 apachectl[11129]: AH00558: apache2: Could not reliably determine the server's fully qua
     test-web-eus-vm1 systemd[1]: Started The Apache HTTP Server.
     ```
-    > [!NOTE]
-    > It's trivial to execute commands like this, however it's a manual process - if we always need to install some software, you might consider automating the process using scripting.
 
 1. Finally, we can try retrieving the default page through the public IP address. However, even though the web server is running on the VM, you won't get a valid connection or response. Do you know why?
 
