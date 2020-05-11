@@ -65,55 +65,20 @@ the book. We can place them into a table to see how each chapter begins.
 Table().with_column('Chapters', huck_finn_chapters)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Chapters
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-I. YOU don't know about me without you have read a book ...
-</td>
-</tr>
-<tr>
-<td>
-II. WE went tiptoeing along a path amongst the trees bac ...
-    </td>
-        </tr>
-        <tr>
-            <td>III. WELL, I got a good going-over in the morning from o ...</td>
-        </tr>
-        <tr>
-            <td>IV. WELL, three or four months run along, and it was wel ...</td>
-        </tr>
-        <tr>
-            <td>V. I had shut the door to. Then I turned around and ther ...</td>
-        </tr>
-        <tr>
-            <td>VI. WELL, pretty soon the old man was up and around agai ...</td>
-        </tr>
-        <tr>
-            <td>VII. "GIT up! What you 'bout?" I opened my eyes and look ...</td>
-        </tr>
-        <tr>
-            <td>VIII. THE sun was up so high when I waked that I judged  ...</td>
-        </tr>
-        <tr>
-            <td>IX. I wanted to go and look at a place right about the m ...</td>
-        </tr>
-        <tr>
-            <td>X. AFTER breakfast I wanted to talk about the dead man a ...</td>
-        </tr>
+|Chapters|
+|--- |
+|1. YOU don't know about me without you have read a book ...|
+|2. WE went tiptoeing along a path amongst the trees bac ...|
+|3. WELL, I got a good going-over in the morning from o ...|
+|4. WELL, three or four months run along, and it was wel ...|
+|5. I had shut the door to. Then I turned around and ther ...|
+|6. WELL, pretty soon the old man was up and around agai ...|
+|7. "GIT up! What you 'bout?" I opened my eyes and look ...|
+|8. THE sun was up so high when I waked that I judged  ...|
+|9. I wanted to go and look at a place right about the m ...|
+|10. AFTER breakfast I wanted to talk about the dead man a ...|
 
-    </tbody>
-    </table>
-    <p>
-    ... (33 rows omitted)
-    </p>
+... (33 rows omitted)
 
 Each chapter begins with a chapter number in Roman numerals, followed by
 the first sentence of the chapter. Project Gutenberg has printed the
@@ -200,110 +165,21 @@ titles are written in all capital letters.
 Table().with_column('Chapters', little_women_chapters)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Chapters
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-ONE
+|Chapters|
+|--- |
+|1. PLAYING PILGRIMS. "Christmas won't be Christmas wit ...|
+|2. A MERRY CHRISTMAS. Jo was the first to wake in the ...|
+|3. THE LAURENCE BOY. "Jo! Jo! Where are you?" crie ...|
+|4. BURDENS. "Oh, dear, how hard it does seem to take ...|
+|5. BEING NEIGHBORLY. "What in the world are you going ...|
+|6. BETH FINDS THE PALACE BEAUTIFUL. The big house did ...|
+|7. AMY'S VALLEY OF HUMILIATION. "That boy is a perfe ...|
+|8. JO MEETS APOLLYON. "Girls, where are you going?" ...|
+|9. MEG GOES TO VANITY FAIR. "I do think it was the mo ...|
+|10. THE P.C. AND P.O. As spring came on, a new set of ...|
 
-PLAYING PILGRIMS
-
-\"Christmas won't be Christmas wit ...
-</td>
-</tr>
-<tr>
-<td>
-TWO
-
-A MERRY CHRISTMAS
-
-Jo was the first to wake in the ...
-</td>
-</tr>
-<tr>
-<td>
-THREE
-
-THE LAURENCE BOY
-
-"Jo! Jo! Where are you?" crie ...
-</td>
-</tr>
-<tr>
-<td>
-FOUR
-
-BURDENS
-
-\"Oh, dear, how hard it does seem to take ...
-</td>
-</tr>
-<tr>
-<td>
-FIVE
-
-BEING NEIGHBORLY
-
-\"What in the world are you going ...
-</td>
-</tr>
-<tr>
-<td>
-SIX
-
-BETH FINDS THE PALACE BEAUTIFUL
-
-The big house did ...
-</td>
-</tr>
-<tr>
-<td>
-SEVEN
-
-AMY'S VALLEY OF HUMILIATION
-
-\"That boy is a perfe ...
-</td>
-</tr>
-<tr>
-<td>
-EIGHT
-
-JO MEETS APOLLYON
-
-"Girls, where are you going?" ...
-</td>
-</tr>
-<tr>
-<td>
-NINE
-
-MEG GOES TO VANITY FAIR
-
-\"I do think it was the mo ...
-</td>
-</tr>
-<tr>
-<td>
-TEN
-
-THE P.C. AND P.O.
-
-As spring came on, a new set of ...
-</td>
-</tr>
-</tbody>
-</table>
-<p>
 ... (37 rows omitted)
-</p>
+
 We can track the mentions of main characters to learn about the plot of
 this book as well. The protagonist Jo interacts with her sisters Meg,
 Beth, and Amy regularly, up until Chapter 27 when she moves to New York
@@ -407,206 +283,42 @@ punctuation such as question marks.
 chars_periods_huck_finn
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Huck Finn Chapter Length
-</th>
-<th>
-Number of Periods
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-7026
-</td>
-<td>
-66
-</td>
-</tr>
-<tr>
-<td>
-11982
-</td>
-<td>
-117
-</td>
-</tr>
-<tr>
-<td>
-8529
-</td>
-<td>
-72
-</td>
-</tr>
-<tr>
-<td>
-6799
-</td>
-<td>
-84
-</td>
-</tr>
-<tr>
-<td>
-8166
-</td>
-<td>
-91
-</td>
-</tr>
-<tr>
-<td>
-14550
-</td>
-<td>
-125
-</td>
-</tr>
-<tr>
-<td>
-13218
-</td>
-<td>
-127
-</td>
-</tr>
-<tr>
-<td>
-22208
-</td>
-<td>
-249
-</td>
-</tr>
-<tr>
-<td>
-8081
-</td>
-<td>
-71
-</td>
-</tr>
-<tr>
-<td>
-7036
-</td>
-<td>
-70
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Huck Finn Chapter Length|Number of Periods|
+|--- |--- |
+|7026|66|
+|11982|117|
+|8529|72|
+|6799|84|
+|8166|91|
+|14550|125|
+|13218|127|
+|22208|249|
+|8081|71|
+|7036|70|
+
 ... (33 rows omitted)
-</p>
+
 Here are the corresponding data for *Little Women*.
 
 ``` {.python}
 chars_periods_little_women
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Little Women Chapter Length
-</th>
-<th>
-Number of Periods
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-21759
-</td>
-<td>
-189
-</td>
-</tr>
-<tr>
-<td>
-22148
-</td>
-<td>
-188
-</td>
-</tr>
-<tr>
-<td>
-20558
-</td>
-<td>
-231
-</td>
-</tr>
-<tr>
-<td>
-25526
-</td>
-<td>
-195
-</td>
-</tr>
-<tr>
-<td>
-23395
-</td>
-<td>
-255
-</td>
-</tr>
-<tr>
-<td>
-14622
-</td>
-<td>
-140
-</td>
-</tr>
-<tr>
-<td>
-14431
-</td>
-<td>
-131
-</td>
-</tr>
-<tr>
-<td>
-22476
-</td>
-<td>
-214
-</td>
-</tr>
-<tr>
-<td>
-33767
-</td>
-<td>
-337
-</td>
-</tr>
-<tr>
-<td>
-18508
-</td>
-<td>
-185
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Little Women Chapter Length|Number of Periods|
+|--- |--- |
+|21759|189|
+|22148|188|
+|20558|231|
+|25526|195|
+|23395|255|
+|14622|140|
+|14431|131|
+|22476|214|
+|33767|337|
+|18508|185|
+
 ... (37 rows omitted)
-</p>
+
 You can see that the chapters of *Little Women* are in general longer
 than those of *Huckleberry Finn*. Let us see if these two simple
 variables--the length and number of periods in each chapter--can
