@@ -2,13 +2,13 @@
 uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.mini-labs
 title: Mini Labs
 metadata:
-  title: Mini labs
+  title: Mini Labs
   description: Mini Lab Exercises
   ms.date: 05/06/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 15
 content: |
   [!include[](includes/05-mini-labs.md)]

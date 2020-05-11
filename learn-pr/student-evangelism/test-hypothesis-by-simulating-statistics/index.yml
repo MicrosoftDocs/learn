@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics
 metadata:
-  title: Test Hypothesis By Simulating Statistics
+  title: Test Hypothesis by Simulating Statistics
   description: Learn how to test hypothesis by simulating statistics
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
-title: Test Hypothesis By Simulating  Statistics
+  ms.prod: learning-azure
+title: Test Hypothesis by Simulating  Statistics
 summary: Learn how to test hypothesis through simulation of statistics
 abstract: |
   In this module, you will:

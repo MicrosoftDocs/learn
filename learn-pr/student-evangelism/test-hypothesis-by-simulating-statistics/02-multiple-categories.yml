@@ -2,28 +2,25 @@
 uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.multiple-categories
 title: Multiple Categories
 metadata:
-  title: Multiple categories
+  title: Multiple Categories
   description: Use the difference between two distributions as a statistic for assessing models
-  ms.date: 19/03/2020
-  author: sauravmittal
-  ms.author: leescott
+  ms.date: 03/19/2020
+  author: leestott
+  ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/02-multiple-categories.md)]
-
 content: "Let's explore the example of jury selection in Alameda County. One distribution represents, for each ethnicity, the proportion of all eligible juror candidates of that ethnicity. The other distribution represents the proportion of people of a particular ethnicity that were selected to be on the jury panel. The table of the exact proportions can be found below.
-
-'
-|Ethnicity	|Eligible	|Panel |
-|Asian	    |0.15    	|0.26  |
-|Black      |0.18   	|0.08  |
-|Latino   	|0.12    	|0.08  |
-|White    	|0.54    	|0.54  |
-|Other    	|0.0   1	|0.04  |'"
-
+'|Ethnicity	|Eligible	|Panel |
+ |Asian	    |0.15    	|0.26  |
+ |Black     |0.18   	|0.08  |
+ |Latino   	|0.12    	|0.08  |
+ |White    	|0.54    	|0.54  |
+ |Other    	|0.0   1	|0.04  |'"
 quiz:
+  title: Check your Knowledge
   questions:
     - content: 'which ethnicities are underrepresented in the jury panel?'
       choices:

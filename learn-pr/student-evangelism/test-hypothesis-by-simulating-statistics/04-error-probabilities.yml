@@ -2,13 +2,13 @@
 uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.error-probabilities
 title: Error Probabilities
 metadata:
-  title: Error probabilities
+  title: Error Probabilities
   description: Learn the error associated with decisions
-  ms.date: 19/03/2020
+  ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
   show_latex: true
 durationInMinutes: 10
 content: |
