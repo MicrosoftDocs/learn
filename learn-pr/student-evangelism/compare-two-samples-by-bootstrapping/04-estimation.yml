@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.estimation
+title: Estimation
+metadata:
+  title: Estimation
+  description: Introduction to estimation of statistics
+  ms.date: 03/19/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/04-estimation.md)]

@@ -1,0 +1,117 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.using-confidence-intervals
+title: Using Confidence Intervals
+metadata:
+  title: Using Confidence Intervals
+  description: Examples using confidence intervals
+  ms.date: 03/19/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/08-using-confidence-intervals.md)]
+content: 'You sample 100 dogs at random from all dogs in Berkeley and compute a 95% confidence interval of their average height. For each of the statements below, state whether they are Always True, Typically True, Not Expected to be True, or False.'
+quiz:
+  title: Checking your Knowledge
+  questions:
+    - content: 'The chance that the average height of all dogs in Berkeley is in this interval is 95%.'
+      choices:
+        - content: 'Always True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Typically True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Not Expected to be True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'False'
+          isCorrect: true
+          explanation: Once the interval is chosen, the parameter is either in it or not.
+    - content: 'If you had repeated the process of sampling 100 dogs many times and computed a confidence interval from each sample, approximately 95% of the intervals would contain the average height of all dogs in Berkeley.'
+      choices:
+        - content: 'Always True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Typically True'
+          isCorrect: true
+          explanation: About 95% would contain the parameter, but it might be 93% or 96%.
+        - content: 'Not Expected to be True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'False'
+          isCorrect: false
+          explanation: Incorrect.
+    - content: 'If you had repeated the process of sampling 100 dogs many times and computed a confidence interval from each sample, 95% of the intervals would contain the heights of all dogs in Berkeley.'
+      choices:
+        - content: 'Always True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Typically True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Not Expected to be True'
+          isCorrect: true
+          explanation: The interval estimates the population mean, not all population values.
+        - content: 'False'
+          isCorrect: false
+          explanation: Incorrect.
+    - content: 'If you had sampled another 100 dogs from the population and computed a second confidence interval, it would be the same as the first.'
+      choices:
+        - content: 'Always True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Typically True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Not Expected to be True'
+          isCorrect: true
+          explanation: Since our second sample is also randomly chosen from the population, the confidence interval generated from it may come out differently.
+        - content: 'False'
+          isCorrect: false
+          explanation: Incorrect.
+    - content: 'If you had sampled 100 dogs a second time and computed a new confidence interval, it would overlap with your original confidence interval.
+'
+      choices:
+        - content: 'Always True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Typically True'
+          isCorrect: true
+          explanation: Often two confidence intervals generated the same way will overlap, but not always. If you have two confidence intervals for the same parameter that don't overlap, at least one of them does not contain the population parameter.
+        - content: 'Not Expected to be True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'False'
+          isCorrect: false
+          explanation: Incorrect.
+    - content: 'If you had sampled 100 dogs a second time and computed a second confidence interval, it would be approximately the same size as the first, but have a different center.'
+      choices:
+        - content: 'Always True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Typically True'
+          isCorrect: true
+          explanation: The sizes of confidence intervals are similar, but even their width depends on the sample, so the width may change a little bit for each sample.
+        - content: 'Not Expected to be True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'False'
+          isCorrect: false
+          explanation: Incorrect.
+    - content: 'If you had sampled 1000 dogs instead of 100 dogs, your confidence interval would have been smaller.'
+      choices:
+        - content: 'Always True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'Typically True'
+          isCorrect: true
+          explanation: With a larger sample, the interval tends to be smaller due to less variation in each resample statistic. However, the width depends on the sample, so it's possible (but unlikely) that the interval for a larger sample will be as big or bigger. In practice, the interval for a larger sample will almost always be smaller.
+        - content: 'Not Expected to be True'
+          isCorrect: false
+          explanation: Incorrect.
+        - content: 'False'
+          isCorrect: false
+          explanation: Incorrect.
