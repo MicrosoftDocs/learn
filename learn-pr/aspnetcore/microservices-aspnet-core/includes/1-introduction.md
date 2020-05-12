@@ -1,6 +1,6 @@
-Suppose you work for an online retailer. The retailer uses a microservices-based architecture developed using .NET Core for its online storefront. You are asked to implement a coupon feature. This module walks through the addition of a single microservice to the existing app, followed by deploying the updated app.
+Imagine you're a software developer for an online retailer named eShopOnContainers. The retailer uses a cloud-native, microservices-based architecture developed using .NET Core for its online storefront. A new project is underway to add support for accepting coupon codes at checkout. Your assignment on the project is to finish writing a containerized ASP.NET Core web API to manage coupon codes&mdash;a web API that will be referred to as the coupon service.
 
-You'll use your Azure subscription to deploy the resources in this module. To estimate the expected costs for these resources, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-aspnet-core-estimate?azure-portal=true) of the resources that you'll deploy.
+This module explores completing the coupon service, adding it to the existing solution, and deploying it to the multi-container Kubernetes cluster. You'll use your own Azure subscription to deploy the resources in this module. To estimate the expected costs for these resources, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-aspnet-core-estimate?azure-portal=true) of the resources that you'll deploy.
 
 > [!WARNING]
 > Be sure to deprovision your Azure resources when you are done with this module to avoid unnecessary charges to your Azure subscription.

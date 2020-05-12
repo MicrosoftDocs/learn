@@ -1,4 +1,4 @@
-In this unit, you'll deploy the eShop app to AKS. You'll also gain an understanding of the microservices architecture used.
+In this unit, you'll deploy the eShop on Learn app to AKS. You'll also gain an understanding of the microservices architecture used.
 
 ## Set up development environment
 
@@ -23,7 +23,7 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 
 ## Review code and architecture
 
-Soon after launching the script, a code editor window will appear. You may investigate the code while the script continues to deploy the containers to AKS.
+Soon after launching the setup script, the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution to the *~/clouddrive/source/eShop-Learn/* directory. You may investigate the solution while the script continues to deploy the Docker containers to AKS. The solution is a smaller, modified version of the larger [eShop on Containers app](https://github.com/dotnet-architecture/eshoponcontainers).
 
 The following directories in *src/* contain .NET Core projects, each of which is containerized and deployed to AKS:
 
@@ -32,7 +32,7 @@ The following directories in *src/* contain .NET Core projects, each of which is
 | *Aggregators/* | Services to aggregate across multiple microservices for certain cross-service operations. This is implemented by the *ApiGateways/Aggregators/Web.Shopping.HttpAggregator* project. |
 | *BuildingBlocks/* | Services that provide cross-cutting functionality, such as the app's event bus used for inter-service events. |
 | *Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), **D**omain-**D**riven **D**esign (DDD), and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS). |
-| *Web/* | ASP.NET Core apps that implement user interfaces:<br>*WebSPA* is a storefront UI built with Angular. *WebStatus* is the health checks dashboard for monitoring the operational status of each service. |
+| *Web/* | ASP.NET Core apps that implement user interfaces:<br>*WebSPA* is a storefront UI built with Angular.<br>*WebStatus* is the health checks dashboard for monitoring the operational status of each service. |
 
 ![eShop application architecture](../media/temp/eshop-architecture.png)
 
@@ -97,13 +97,13 @@ An ASP.NET Core project for the coupon service has been provided in *src/Service
     * If the coupon returned is `null` or has already been used, an HTTP 404 status code is returned.
     * If the coupon returned isn't `null` and hasn't already been used, the `Coupon` object is converted to a `CouponDto` **D**ata **T**ransfer **O**bject (DTO). Finally, an HTTP 200 status code is returned along with the DTO.
 
-1. Make the following changes to the ConfigureServices method in *src/Services/Coupon/Coupon.API/Startup.cs*
+1. Make the following changes to the `ConfigureServices` method in *src/Services/Coupon/Coupon.API/Startup.cs*
 
     [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configureServices&highlight=13)]
 
     The preceding change adds the custom health check service to the app.
 
-1. Also in *Startup.cs*, make following changes to the Configure method:
+1. Also in *Startup.cs*, make following changes to the `Configure` method:
 
     [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configure&highlight=30-38)]
 
@@ -132,26 +132,28 @@ An ASP.NET Core project for the coupon service has been provided in *src/Service
     | *templates/configmap.yaml* | %TODO% - Nish |
     | *templates/ingress.yaml* | %TODO% - Nish |
 
-1. Open *deploy/k8s/build-to-acr.sh*
-
-    %TODO% explain that we're building the project to ACR in this script
-    
-1. Run the following script in the command shell:
+1. Run the following script in the command shell to build the coupon service container and the WebSPA container:
 
     ```bash
     ./deploy/k8s/build-to-acr.sh
     ```
 
-    The containers are published to ACR.
+    The preceding script compiles and builds the containers in Azure Container Registry using the `az acr build` command with the provided `Dockerfile` files.
 
-1. Open *deploy/k8s/update-to-aks.sh*
+    > [!TIP]
+    > ACR is not required to use AKS. Other public container repositories, such as Docker Hub, are supported.
 
-    %TODO% explain that this is installing Helm charts
-1. Run the following script in the command shell:
+1. Run the following script in the command shell to update the existing AKS cluster with the new configuration:
 
     ```bash
-    ./deploy/k8s/update-to-aks.sh
+    ./deploy/k8s/update-aks.sh
     ```
+
+    The preceding script:
+
+    * Uninstalls and reinstalls the WebStatus, WebSPA, and aggregator Helm charts.
+    * Installs 
+
 1. Observe the services stopping and redeploying on the web status.
 1. After the app deploys, refresh the page.
 1. Add items to the cart.
