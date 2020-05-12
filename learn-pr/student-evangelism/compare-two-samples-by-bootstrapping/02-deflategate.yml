@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.deflategate
-title: deflategate
+title: Deflategate
 metadata:
   title: Deflategate
   description: Using the deflategate example for A/B testing

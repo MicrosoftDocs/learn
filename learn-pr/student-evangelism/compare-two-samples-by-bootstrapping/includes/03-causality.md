@@ -484,3 +484,6 @@ a beneficial effect. Knowing how to analyze randomized controlled trials
 is a crucial part of this work. Now that you know how to do that, you
 are well positioned to help medical and other professions establish
 cause-and-effect relations.
+
+> [!IMPORTANT]
+> Knowledge Check Question: 'In 2013, a Berkeley chemical engineering professor, Jay Keasling, discovered a synthetic version of artemisinin - a chemical crucial to producing antimalarial drugs. A group of researchers and statisticians come together to test the effectiveness of this new chemical, which is being used to treat malaria in developing countries. A random sample of 500 malaria patients is randomly assigned to take either the antimalarial drug or a placebo pill. It turns out that among the patients who took the drug, a much larger proportion recovered from malaria than those who took the placebo. Meanwhile, cases of malaria are decreasing in developing nations, and some suggest that this might be because of the increased effectiveness of mosquito nets being distributed.'

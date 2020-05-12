@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.confidence-intervals
-title: confidence Intervals
+title: Confidence intervals
 metadata:
-  title: Confidence Intervals
+  title: Confidence intervals
   description: Learn how to create confidence intervals
   ms.date: 03/19/2020
   author: leestott

@@ -487,3 +487,6 @@ important to keep some points in mind.
     -   The original sample is very small, say less than 10 or 15.
 e probability distribution of the statistic is not roughly
         bell shaped.
+
+> [!IMPORTANT]
+> Knowledge Check Question: 'You sample 100 dogs at random from all dogs in Berkeley and compute a 95% confidence interval of their average height. For each of the statements below, state whether they are Always True, Typically True, Not Expected to be True, or False.'

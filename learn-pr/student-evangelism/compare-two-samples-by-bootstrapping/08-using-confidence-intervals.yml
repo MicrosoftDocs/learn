@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.using-confidence-intervals
-title: using confidence intervals
+title: Using confidence intervals
 metadata:
-  title: Using Confidence intervals
+  title: Using confidence intervals
   description: examples using confidence intervals
   ms.date: 03/19/2020
   author: leestott
@@ -12,7 +12,6 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/08-using-confidence-intervals.md)]
-content: 'You sample 100 dogs at random from all dogs in Berkeley and compute a 95% confidence interval of their average height. For each of the statements below, state whether they are Always True, Typically True, Not Expected to be True, or False.'
 quiz:
   title: Checking your Knowledge
   questions:
