@@ -146,12 +146,12 @@ remaining* 15 patients.
 Here is a good way to visualize the setting. Each patient has a
 two-sided ticket:
 
-![Two-sided ticket](../../../images/causality1.png)
+![Two-sided ticket](../media/causality1.png)
 
 After the randomization, we get to see the right half of a randomly
 selected set of tickets, and the left half of the remaining group.
 
-![Half-tickets](../../../images/causality2.png)
+![Half-tickets](../media/causality2.png)
 
 The table `observed_outcomes` collects the information about every
 patient's potential outcomes, leaving the unobserved half of each
