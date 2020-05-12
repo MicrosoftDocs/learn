@@ -45,235 +45,21 @@ births = Table.read_table(path_data + 'baby.csv')
 births
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Birth Weight
-</th>
-<th>
-Gestational Days
-</th>
-<th>
-Maternal Age
-</th>
-<th>
-Maternal Height
-</th>
-<th>
-Maternal Pregnancy Weight
-</th>
-<th>
-Maternal Smoker
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-120
-</td>
-<td>
-284
-</td>
-<td>
-27
-</td>
-<td>
-62
-</td>
-<td>
-100
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-113
-</td>
-<td>
-282
-</td>
-<td>
-33
-</td>
-<td>
-64
-</td>
-<td>
-135
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-128
-</td>
-<td>
-279
-</td>
-<td>
-28
-</td>
-<td>
-64
-</td>
-<td>
-115
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-108
-</td>
-<td>
-282
-</td>
-<td>
-23
-</td>
-<td>
-67
-</td>
-<td>
-125
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-136
-</td>
-<td>
-286
-</td>
-<td>
-25
-</td>
-<td>
-62
-</td>
-<td>
-93
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-138
-</td>
-<td>
-244
-</td>
-<td>
-33
-</td>
-<td>
-62
-</td>
-<td>
-178
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-132
-</td>
-<td>
-245
-</td>
-<td>
-23
-</td>
-<td>
-65
-</td>
-<td>
-140
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-120
-</td>
-<td>
-289
-</td>
-<td>
-25
-</td>
-<td>
-62
-</td>
-<td>
-125
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-143
-</td>
-<td>
-299
-</td>
-<td>
-30
-</td>
-<td>
-66
-</td>
-<td>
-136
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-140
-</td>
-<td>
-351
-</td>
-<td>
-27
-</td>
-<td>
-68
-</td>
-<td>
-120
-</td>
-<td>
-False
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Birth Weight|Gestational Days|Maternal Age|Maternal Height|Maternal Pregnancy Weight|Maternal Smoker|
+|--- |--- |--- |--- |--- |--- |
+|120|284|27|62|100|False|
+|113|282|33|64|135|False|
+|128|279|28|64|115|True|
+|108|282|23|67|125|True|
+|136|286|25|62|93|False|
+|138|244|33|62|178|False|
+|132|245|23|65|140|False|
+|120|289|25|62|125|False|
+|143|299|30|66|136|True|
+|140|351|27|68|120|False|
+
 ... (1164 rows omitted)
-</p>
+
 One of the aims of the study was to see whether maternal smoking was
 associated with birth weight. Let's see what we can say about the two
 variables.
@@ -290,36 +76,11 @@ smoking_and_birthweight = births.select('Maternal Smoker', 'Birth Weight')
 smoking_and_birthweight.group('Maternal Smoker')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Maternal Smoker
-</th>
-<th>
-count
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-False
-</td>
-<td>
-715
-</td>
-</tr>
-<tr>
-<td>
-True
-</td>
-<td>
-459
-</td>
-</tr>
-</tbody>
-</table>
+|Maternal Smoker|count|
+|--- |--- |
+|False|715|
+|True|459|
+
 Let's look at the distribution of the birth weights of the babies of the
 non-smoking mothers compared to those of the smoking mothers. To
 generate two overlaid histograms, we will use `hist` with the optional
@@ -349,7 +110,7 @@ because of the mothers who happened to be selected?
 
 We can try to answer this question by a test of hypotheses. The chance
 model that we will test says that there is no underlying difference in
-the popuations; the distributions in the samples are different just due
+the populations; the distributions in the samples are different just due
 to chance.
 
 Formally, this is the null hypothesis. We are going to have to figure
@@ -383,36 +144,10 @@ means_table = smoking_and_birthweight.group('Maternal Smoker', np.average)
 means_table
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Maternal Smoker
-</th>
-<th>
-Birth Weight average
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-False
-</td>
-<td>
-123.085
-</td>
-</tr>
-<tr>
-<td>
-True
-</td>
-<td>
-113.819
-</td>
-</tr>
-</tbody>
-</table>
+|Maternal Smoker|Birth Weight average|
+|--- |--- |
+|False|123.085|
+|True|113.819|
 
 ``` {.python}
 means = means_table.column(1)
@@ -480,103 +215,21 @@ data.
 smoking_and_birthweight
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Maternal Smoker
-</th>
-<th>
-Birth Weight
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-False
-</td>
-<td>
-120
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-113
-</td>
-</tr>
-<tr>
-<td>
-True
-</td>
-<td>
-128
-</td>
-</tr>
-<tr>
-<td>
-True
-</td>
-<td>
-108
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-136
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-138
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-132
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-120
-</td>
-</tr>
-<tr>
-<td>
-True
-</td>
-<td>
-143
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-140
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Maternal Smoker|Birth Weight|
+|--- |--- |
+|False|120|
+|False|113|
+|True|128|
+|True|108|
+|False|136|
+|False|138|
+|False|132|
+|False|120|
+|True|143|
+|False|140|
+
 ... (1164 rows omitted)
-</p>
+
 There are 1,174 rows in the table. To shuffle all the labels, we will
 draw a random sample of 1,174 rows without replacement. Then the sample
 will include all the rows of the table, in random order.
@@ -595,136 +248,21 @@ original_and_shuffled = smoking_and_birthweight.with_column('Shuffled Label', sh
 original_and_shuffled
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Maternal Smoker
-</th>
-<th>
-Birth Weight
-</th>
-<th>
-Shuffled Label
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-False
-</td>
-<td>
-120
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-113
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-True
-</td>
-<td>
-128
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-True
-</td>
-<td>
-108
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-136
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-138
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-132
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-120
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-True
-</td>
-<td>
-143
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-False
-</td>
-<td>
-140
-</td>
-<td>
-True
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Maternal Smoker|Birth Weight|Shuffled Label|
+|--- |--- |--- |
+|False|120|False|
+|False|113|False|
+|True|128|True|
+|True|108|False|
+|False|136|True|
+|False|138|True|
+|False|132|True|
+|False|120|False|
+|True|143|True|
+|False|140|True|
+
 ... (1164 rows omitted)
-</p>
+
 Each baby's mother now has a random smoker/non-smoker label in the
 column `Shuffled Label`, while her original label is in
 `Maternal Smoker`. If the null hypothesis is true, all the random
@@ -739,36 +277,11 @@ shuffled_group_means = shuffled_only.group('Shuffled Label', np.average)
 shuffled_group_means
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Shuffled Label
-</th>
-<th>
-Birth Weight average
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-False
-</td>
-<td>
-119.709
-</td>
-</tr>
-<tr>
-<td>
-True
-</td>
-<td>
-119.078
-</td>
-</tr>
-</tbody>
-</table>
+|Shuffled Label|Birth Weight average|
+|--- |--- |
+|False|119.709|
+|True|119.078|
+
 The averages of the two randomly selected groups are quite a bit closer
 than the averages of the two original groups. We can use our function
 `difference_of_means` to find the two differences.

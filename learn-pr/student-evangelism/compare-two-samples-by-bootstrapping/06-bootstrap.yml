@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.bootstrap
-title: Bootstrap
+title: bootstrap
 metadata:
-  title: Bootstrap
+  title: bootstrap
   description: Learn the bootstrap process
   ms.date: 03/19/2020
   author: leestott

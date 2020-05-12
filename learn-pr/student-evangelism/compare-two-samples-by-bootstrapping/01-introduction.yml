@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.introduction
-title: Introduction
+title: introduction
 metadata:
-  title: Introduction
-  description: Introduction to the Bootstrapping method
+  title: introduction
+  description: introduction to the bootstrapping method
   ms.date: 03/19/2020
   author: leestott
   ms.author: leestott

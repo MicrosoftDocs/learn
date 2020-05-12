@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.using-confidence-intervals
-title: Using Confidence Intervals
+title: using confidence intervals
 metadata:
-  title: Using Confidence Intervals
-  description: Examples using confidence intervals
+  title: using Confidence intervals
+  description: examples using confidence intervals
   ms.date: 03/19/2020
   author: leestott
   ms.author: leestott

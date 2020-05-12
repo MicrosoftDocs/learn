@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.percentiles
-title: Percentiles
+title: percentiles
 metadata:
-  title: Percentiles
+  title: percentiles
   description: Learn how to calculate percentiles
   ms.date: 03/19/2020
   author: leestott

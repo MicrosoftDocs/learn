@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.causality
-title: Causality
+title: causality
 metadata:
-  title: Causality
-  description: Learn the relation between causality and hypothesis testing
+  title: causality
+  description: learn the relation between causality and hypothesis testing
   ms.date: 03/19/2020
   author: leestott
   ms.author: leestott

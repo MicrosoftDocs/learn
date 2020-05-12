@@ -66,235 +66,21 @@ baby = Table.read_table(path_data + 'baby.csv')
 baby
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Birth Weight
-</th>
-<th>
-Gestational Days
-</th>
-<th>
-Maternal Age
-</th>
-<th>
-Maternal Height
-</th>
-<th>
-Maternal Pregnancy Weight
-</th>
-<th>
-Maternal Smoker
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-120
-</td>
-<td>
-284
-</td>
-<td>
-27
-</td>
-<td>
-62
-</td>
-<td>
-100
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-113
-</td>
-<td>
-282
-</td>
-<td>
-33
-</td>
-<td>
-64
-</td>
-<td>
-135
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-128
-</td>
-<td>
-279
-</td>
-<td>
-28
-</td>
-<td>
-64
-</td>
-<td>
-115
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-108
-</td>
-<td>
-282
-</td>
-<td>
-23
-</td>
-<td>
-67
-</td>
-<td>
-125
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-136
-</td>
-<td>
-286
-</td>
-<td>
-25
-</td>
-<td>
-62
-</td>
-<td>
-93
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-138
-</td>
-<td>
-244
-</td>
-<td>
-33
-</td>
-<td>
-62
-</td>
-<td>
-178
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-132
-</td>
-<td>
-245
-</td>
-<td>
-23
-</td>
-<td>
-65
-</td>
-<td>
-140
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-120
-</td>
-<td>
-289
-</td>
-<td>
-25
-</td>
-<td>
-62
-</td>
-<td>
-125
-</td>
-<td>
-False
-</td>
-</tr>
-<tr>
-<td>
-143
-</td>
-<td>
-299
-</td>
-<td>
-30
-</td>
-<td>
-66
-</td>
-<td>
-136
-</td>
-<td>
-True
-</td>
-</tr>
-<tr>
-<td>
-140
-</td>
-<td>
-351
-</td>
-<td>
-27
-</td>
-<td>
-68
-</td>
-<td>
-120
-</td>
-<td>
-False
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Birth Weight|Gestational Days|Maternal Age|Maternal Height|Maternal Pregnancy Weight|Maternal Smoker|
+|--- |--- |--- |--- |--- |--- |
+|120|284|27|62|100|False|
+|113|282|33|64|135|False|
+|128|279|28|64|115|True|
+|108|282|23|67|125|True|
+|136|286|25|62|93|False|
+|138|244|33|62|178|False|
+|132|245|23|65|140|False|
+|120|289|25|62|125|False|
+|143|299|30|66|136|True|
+|140|351|27|68|120|False|
+
 ... (1164 rows omitted)
-</p>
+
 Birth weight is an important factor in the health of a newborn infant --
 smaller babies tend to need more medical care in their first days than
 larger newborns. It is therefore helpful to have an estimate of birth
@@ -319,137 +105,21 @@ ratios = baby.select('Birth Weight', 'Gestational Days').with_column(
 ``` {.python}
 ratios
 ```
+|Birth Weight|Gestational Days|Ratio BW/GD|
+|--- |--- |--- |
+|120|284|0.422535|
+|113|282|0.400709|
+|128|279|0.458781|
+|108|282|0.382979|
+|136|286|0.475524|
+|138|244|0.565574|
+|132|245|0.538776|
+|120|289|0.415225|
+|143|299|0.478261|
+|140|351|0.39886|
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Birth Weight
-</th>
-<th>
-Gestational Days
-</th>
-<th>
-Ratio BW/GD
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-120
-</td>
-<td>
-284
-</td>
-<td>
-0.422535
-</td>
-</tr>
-<tr>
-<td>
-113
-</td>
-<td>
-282
-</td>
-<td>
-0.400709
-</td>
-</tr>
-<tr>
-<td>
-128
-</td>
-<td>
-279
-</td>
-<td>
-0.458781
-</td>
-</tr>
-<tr>
-<td>
-108
-</td>
-<td>
-282
-</td>
-<td>
-0.382979
-</td>
-</tr>
-<tr>
-<td>
-136
-</td>
-<td>
-286
-</td>
-<td>
-0.475524
-</td>
-</tr>
-<tr>
-<td>
-138
-</td>
-<td>
-244
-</td>
-<td>
-0.565574
-</td>
-</tr>
-<tr>
-<td>
-132
-</td>
-<td>
-245
-</td>
-<td>
-0.538776
-</td>
-</tr>
-<tr>
-<td>
-120
-</td>
-<td>
-289
-</td>
-<td>
-0.415225
-</td>
-</tr>
-<tr>
-<td>
-143
-</td>
-<td>
-299
-</td>
-<td>
-0.478261
-</td>
-</tr>
-<tr>
-<td>
-140
-</td>
-<td>
-351
-</td>
-<td>
-0.39886
-</td>
-</tr>
-</tbody>
-</table>
-<p>
 ... (1164 rows omitted)
-</p>
+
 Here is a histogram of the ratios.
 
 ``` {.python}
@@ -468,34 +138,10 @@ per day, almost double the typical value.
 ratios.sort('Ratio BW/GD', descending=True).take(0)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Birth Weight
-</th>
-<th>
-Gestational Days
-</th>
-<th>
-Ratio BW/GD
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-116
-</td>
-<td>
-148
-</td>
-<td>
-0.783784
-</td>
-</tr>
-</tbody>
-</table>
+|Birth Weight|Gestational Days|Ratio BW/GD|
+|--- |--- |--- |
+|116|148|0.783784|
+
 The median gives a sense of the typical ratio because it is unaffected
 by the very large or very small ratios. The median ratio in the sample
 is about 0.429 ounces per day.
@@ -843,4 +489,4 @@ important to keep some points in mind.
     -   The original sample is very small, say less than 10 or 15.
 e probability distribution of the statistic is not roughly
         bell shaped.
-    -   The original sample is very small, say less than 10 or 15.
+

@@ -105,103 +105,20 @@ scores_and_sections = Table.read_table(path_data + 'scores_by_section.csv')
 scores_and_sections
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Section
-</th>
-<th>
-Midterm
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-1
-</td>
-<td>
-22
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-12
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-23
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-14
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-<td>
-20
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-<td>
-25
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-19
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-<td>
-24
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-8
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-14
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Section|Midterm|
+|--- |--- |
+|1|22|
+|2|12|
+|2|23|
+|2|14|
+|1|20|
+|3|25|
+|4|19|
+|1|24|
+|5|8|
+|6|14|
+
 ... (349 rows omitted)
-</p>
 
 ``` {.python}
 scores_and_sections.select('Midterm').hist(bins=np.arange(-0.5, 25.6, 1))
@@ -285,4 +202,3 @@ percentile(75, scores)
 
 Distributions of scores are sometimes summarized by the "middle 50%"
 interval, between the first and third quartiles.
- quartiles.
