@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.save-money-with-azure-reserved-instances.manage-your-reservation
+metadata:
+  title: Manage your reservation
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Manage your reservation
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-manage-your-reservation.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.save-money-with-azure-reserved-instances.determine-purchase
+metadata:
+  title: Determine what to purchase
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Determine what to purchase
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-determine-what-to-purchase.md)]
