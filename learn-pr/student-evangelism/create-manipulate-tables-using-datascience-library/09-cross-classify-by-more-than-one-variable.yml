@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.create-manipulate-tables-using-datascience-library.cross-classifying-by-more-than-one-variable
-title: Cross Classifying By More Than One Variable
+title: Cross classifying by more than one variable
 metadata:
   title: Cross classifying by more than one variable
   description: Using multiple variables in the group method with an example
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/09-cross-classifying-by-more-than-one-variable.md)]
+  [!include[](includes/09-cross-classify-by-more-than-one-variable.md)]

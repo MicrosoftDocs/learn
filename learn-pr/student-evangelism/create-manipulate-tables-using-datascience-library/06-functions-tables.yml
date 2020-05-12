@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.create-manipulate-tables-using-datascience-library.functions-tables
-title: Functions And Tables
+title: Functions and tables
 metadata:
   title: Functions and tables
-  description: Introduction to Tables in Python using the datascience package
+  description: Introduction to tables in Python using the datascience package
   ms.date: 03/12/2020
   author: leestott
   ms.author: leestott

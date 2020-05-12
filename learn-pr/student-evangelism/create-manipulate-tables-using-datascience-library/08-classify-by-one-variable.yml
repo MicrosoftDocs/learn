@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.create-manipulate-tables-using-datascience-library.classifying-by-one-variable
-title: Classifying By One Variable
+title: Classifying by one Variable
 metadata:
   title: Classifying by one variable
   description: Using one variable in the group method with an example
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/08-classifying-by-one-variable.md)]
+  [!include[](includes/08-classify-by-one-variable.md)]

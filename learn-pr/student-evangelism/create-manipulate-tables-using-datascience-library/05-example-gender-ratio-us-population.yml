@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.create-manipulate-tables-using-datascience-library.example-gender-ratio-us-population
-title: Example Gender Ratio In The United States Population
+title: Example gender ratio in the United States population
 metadata:
   title: Example gender ratio in the United States population
-  description: Introduction to Call Expressions in Python
+  description: Introduction to call expressions in Python
   ms.date: 03/12/2020
   author: leestott
   ms.author: leestott
