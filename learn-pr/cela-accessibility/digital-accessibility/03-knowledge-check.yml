@@ -43,15 +43,15 @@ quiz:
       explanation: "Incorrect."
   - content: "Which is a good example of informative alt text for the Microsoft logo?"
     choices:
-    - content: "`alt="logo"`"
+    - content: "**alt="logo"**"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "`alt="company logo"`"
+    - content: "**alt="company logo"**"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "`alt="Microsoft logo"`"
+    - content: "**alt="Microsoft logo"**"
       isCorrect: true
       explanation: "Correct."
-    - content: "`alt="MSFT logo"`"
+    - content: "**alt="MSFT logo"**"
       isCorrect: false
       explanation: "Incorrect."
