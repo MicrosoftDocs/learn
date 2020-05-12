@@ -25,24 +25,24 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 
 Soon after launching the script, a code editor window will appear. You may investigate the code while the script continues to deploy the containers to AKS.
 
-The following directories contain .NET Core projects, each of which are built to containers and deployed to AKS:
+The following directories contain .NET Core projects, each of which is built to containers and deployed to AKS:
 
 | Project directory | Description |
 |-------------------|-------------|
-| *src/Aggregators/* | Services to aggregate across multiple microservices for certain cross-service operations. |
+| *src/Aggregators/* | Services to aggregate across multiple microservices for certain cross-service operations. This is implemented by the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator project. |
 | *src/BuildingBlocks/* | These services provide cross-cutting functionality, such as the app's event bus used for inter-service events. |
 | *src/Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own database or other data store. They showcase different software patterns, including Create-Read-Update-Delete (CRUD), Domain Driven Design (DDD), and Command-query Separation (CQRS).
 | *src/Web/* | ASP.NET Core apps that implement user interfaces. *WebSPA* is the storefront UI. *WebStatus* is the health check app for monitoring the operational status of the app.
 
 ![eShop application architecture](../media/temp/eshop-architecture.png)
 
-As depicted in the diagram, the event bus is used for integrating events across microservices. The implementation that has been deployed in AKS uses RabbitMQ in a container, but a service such as Azure Service Bus would also be appropriate.
+As depicted in the preceding diagram, the event bus is used for integrating events across microservices. The implementation that has been deployed in AKS uses RabbitMQ in a container, but a service such as Azure Service Bus would also be appropriate.
 
 ## Test deployment
 
-When the app is done deploying to AKS, you will see a message similar to this in the console:
+Once the app has deployed to AKS, you'll see a variation of the following message in the Azure Cloud Shell:
 
-```console
+```
 The eShop-Learn application has been deployed.
 
 You can begin exploring these services (when available):
@@ -51,28 +51,28 @@ You can begin exploring these services (when available):
 - Web SPA application       : http://13.83.97.100/
 ```
 
-Select the link indicated by the **General application status** link. This health check page shows the status of all the microservices in the deployment.
+1. Select the **General application status** link. The resulting health check page displays the status of each microservice in the deployment.
 
-![Health check page](../media/temp/health-check.png)
+    ![Health check page](../media/temp/health-check.png)
 
-When the services are all healthy, you may select the **Web SPA application** link to test the eShop on Containers web app.
+1. Once all the services are healthy, select the **Web SPA application** link to test the eShop on Containers web app.
 
-![eShop SPA](../media/temp/eshop-spa.png)
+    ![eShop SPA](../media/temp/eshop-spa.png)
 
-Login to the app (the credentials are provided on the login page) and then browse the shop. Add some items to the cart, and then complete the purchase.
+1. Log in to the app (the credentials are provided on the login page) and then browse the shop. Add some items to the cart, and then complete the purchase.
 
-## Add the Coupon service
+## Add the coupon service
 
-A project for the Coupon service has been provided in *src/Services/Coupon*. 
+A project for the coupon service has been provided in *src/Services/Coupon*.
 
 1. Open *src/Services/Coupon/Coupon.API/Controllers/CouponController.cs*.
 1. Replace the comment `/* Add the GetCouponByCodeAsync method */` with the following code:
 
     ```csharp
     [HttpGet("{code}")]
-    [ProducesResponseType((int)HttpStatusCode.NotFound)]
-    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-    [ProducesResponseType(typeof(CouponDto), (int)HttpStatusCode.OK)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<CouponDto>> GetCouponByCodeAsync(string code)
     {
         var coupon = await _couponRepository.FindCouponByCodeAsync(code);
@@ -84,7 +84,7 @@ A project for the Coupon service has been provided in *src/Services/Coupon*.
 
         var couponDto = _mapper.Translate(coupon);
 
-        return Ok(couponDto);
+        return couponDto;
     }
     ```
 
@@ -128,7 +128,7 @@ A project for the Coupon service has been provided in *src/Services/Coupon*.
     ```bash
     ./deploy/k8s/update-to-aks.sh
     ```
-1. Observe the services stopping and redploying on the web status.
+1. Observe the services stopping and redeploying on the web status.
 1. After the app deploys, refresh the page.
 1. Add items to the cart.
 1. Navigate to the cart and select **Check out**.
