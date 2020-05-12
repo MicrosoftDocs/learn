@@ -17,13 +17,13 @@ In this unit, we code our app. In stages, to make it a little more understandabl
             
                 <!-- Add a reference to the Azure Maps Services Module JavaScript file. -->
                 <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas-service.min.js"></script>
-            
-    
+
+
                     ADD JavaScript CODE IN HERE
-    
-    
+
+
                     ADD HTML STYLE CODE IN HERE
-    
+
             </head>
             
     
