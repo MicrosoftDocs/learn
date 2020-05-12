@@ -1,7 +1,7 @@
 > [!NOTE] 
 > You can find an interactive version of this unit named **monty-hall-problem.ipynb** in your virtual environment
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", refer to the first unit **Setup**
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
@@ -22,7 +22,7 @@ flummoxed many people over the years, [mathematicians
 included](https://web.archive.org/web/20140413131827/http://www.decisionsciences.org/DecisionLine/Vol30/30_1/vazs30_1.pdf).
 Let's see if we can work it out by simulation.
 
-The setting is derived from a television game show called "Let's Make a
+The setting is derived from a TV game show called "Let's Make a
 Deal". Monty Hall hosted this show in the 1960s, and it has since led
 to a number of spin-offs. An exciting part of the show was that while
 the contestants had the chance to win great prizes, they might instead
@@ -31,7 +31,7 @@ is now known as *the Monty Hall problem*.
 
 The setting is a game show in which the contestant is faced with three
 closed doors. Behind one of the doors is a fancy car, and behind each of
-the other two there is a goat. The contestant doesn't know where the car
+the other two there's a goat. The contestant doesn't know where the car
 is, and has to attempt to find it under the following rules.
 
 - The contestant makes an initial choice, but that door isn't opened.
@@ -40,21 +40,20 @@ is, and has to attempt to find it under the following rules.
     its glory in
     [Wikipedia](https://en.wikipedia.org/wiki/Monty_Hall_problem):
 
-![Monty Hall goat](../media/monty-hall-goat.png)
+    ![Monty Hall goat](../media/monty-hall-goat.png)
 
 - There are two doors left, one of which was the contestant's original
     choice. One of the doors has the car behind it, and the other one
     has a goat. The contestant now gets to choose which of the two doors
     to open.
 
-The contestant has a decision to make. Which door should she choose to
-open, if she wants the car? Should she stick with her initial choice, or
-switch to the other door? That is the Monty Hall problem.
+The contestant has a decision to make. Which door should they choose to
+open, if they wants the car? Should they stick with their initial choice, or switch to the other door? That is the Monty Hall problem.
 
 ### The Solution
 
 In any problem involving chances, the assumptions about randomness are
-important. It's reasonable to assume that there is a 1/3 chance that the
+important. It's reasonable to assume that there's a 1/3 chance that the
 contestant's initial choice is the door that has the car behind it.
 
 The solution to the problem is straightforward under this
@@ -63,8 +62,7 @@ everyone. Here it is anyway.
 
 - The chance that the car is behind the originally chosen door is 1/3.
 - The car is behind either the originally chosen door or the door that remains. It can't be anywhere else.
-- Therefore, the chance that the car is behind the door that remain
-    is 2/3.
+- Therefore, the chance that the car is behind the door that remain is 2/3.
 - Therefore, the contestant should switch.
 
 That's it. End of story.
@@ -74,16 +72,16 @@ out.
 
 ### Simulation
 
-The simulation will be more complex that those we have done so far.
+The simulation will be more complex that those we've done so far.
 Let's break it down.
 
 ### Step 1: What to Simulate
 
-For each play we will simulate what's behind all three doors: - the one
+For each play we'll simulate what's behind all three doors: - the one
 the contestant first picks - the one that Monty opens - the remaining
 door
 
-So we will be keeping track of three quantitites, not just one.
+So we'll be keeping track of three quantities, not just one.
 
 ### Step 2: Simulating One Play
 
@@ -133,12 +131,12 @@ behind the doors.
 hidden_behind_doors = make_array('car', 'first goat', 'second goat')
 ```
 
-We are now ready to simulate one play. To do this, we will define a
+We are now ready to simulate one play. To do this, we'll define a
 function `monty_hall_game` that takes no arguments. When the function is
 called, it plays Monty's game once and returns a list consisting of:
 
 - the contestant's guess
-- what Monty reveals when he opens a door
+- what Monty reveals when they opens a door
 - what remains behind the other door
 
 The game starts with the contestant choosing one door at random. In
@@ -189,7 +187,7 @@ repetitions.
 
 It's time to run the whole simulation.
 
-We will play the game 10,000 times and collect the results in a table.
+We'll play the game 10,000 times and collect the results in a table.
 Each row of the table will contain the result of one play.
 
 One way to grow a table by adding a new row is to use the `append`
@@ -197,7 +195,7 @@ method. If `my_table` is a table and `new_row` is a list containing the
 entries in a new row, then `my_table.append(new_row)` adds the new row
 to the bottom of `my_table`.
 
-Note that `append` does not create a new table. It changes `my_table` to
+`append` doesn't create a new table. It changes `my_table` to
 have one more row than it did before.
 
 First let's create a table `games` that has three empty columns. We can
@@ -226,8 +224,8 @@ the work was done in simulating the outcome of one game.
 
 ### Visualization
 
-To see whether the contestant should stick with her original choice or
-switch, let's see how frequently the car is behind each of her two
+To see whether the contestant should stick with their original choice or
+switch, let's see how frequently the car is behind each of their two
 options.
 
 ``` {.python}
@@ -254,8 +252,8 @@ remaining_door
 
 As our earlier solution said, the car is behind the remaining door
 two-thirds of the time, to a good approximation. The contestant
-is twice as likely to get the car if she switches than if she sticks
-with her original choice.
+is twice as likely to get the car if they switch than if they sticks
+with their original choice.
 
 To see this graphically, we can join the two tables above and draw
 overlaid bar charts.
@@ -283,4 +281,4 @@ is equally likely to be any of the three available items. But the gold
 bar corresponding to `Car` is twice as long as the blue.
 
 The simulation confirms that the contestant is twice as likely to win if
-she switches.
+they switch.
