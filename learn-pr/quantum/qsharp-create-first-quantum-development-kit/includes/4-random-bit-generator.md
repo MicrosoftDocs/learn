@@ -75,7 +75,7 @@ To define the operation:
 
 1. Add this code to the `GenerateRandomBit` operation:
 
-    [!code-qsharp[](code/4-program-3.qs?highlight=10-16)]
+    [!code-qsharp[](code/4-program-3.qs?highlight=9-16)]
 
     Recall that you allocate qubits through the `using` keyword.
 
