@@ -48,4 +48,3 @@ this function, strings can be constructed that have embedded values.
 
  > [!IMPORTANT]
  > Knowledge Check: The following commands are executed in order, what would python display? We first run six = "6"
-
