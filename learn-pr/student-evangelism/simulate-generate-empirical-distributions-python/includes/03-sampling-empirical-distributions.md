@@ -42,7 +42,7 @@ top.set_format(make_array(3, 4), NumberFormatter)
 
 ... (190 rows omitted)
 
-### Sampling Rows of a Table
+### Sampling rows of a table
 
 Each row of a data table represents an individual; in `top`, each
 individual is a movie. Sampling individuals can thus be achieved by
@@ -52,7 +52,7 @@ The contents of a row are the values of different variables measured on
 the same individual. So the contents of the sampled rows form samples of
 values of each of the variables.
 
-### Deterministic Samples
+### Deterministic samples
 
 When you simply specify which elements of a set you want to choose,
 without any chances involved, you create a *deterministic sample*.
@@ -88,7 +88,7 @@ top.where('Title', are.containing('Harry Potter'))
 While these are samples, they are not random samples. They don't involve
 chance.
 
-## Probability Samples
+## Probability samples
 
 For describing random samples, some terminology will be helpful.
 
@@ -102,15 +102,13 @@ will enter the sample.
 In a probability sample, all elements need not have the same chance of
 being chosen.
 
-### A Random Sampling Scheme
+### A Random sampling scheme
 
 For example, suppose you choose two people from a population that
 consists of three people A, B, and C, according to the following scheme:
 
 - Person A is chosen with probability 1.
-- One of Persons B or C is chosen according to the toss of a coin: if
-    the coin lands heads, you choose B, and if it lands tails you
-    choose C.
+- One of Persons B or C is chosen according to the toss of a coin: if the coin lands heads, you choose B, and if it lands tails you choose C.
 
 This is a probability sample of size 2. Here are the chances of entry
 for all non-empty subsets:
@@ -128,7 +126,7 @@ indeed, Person A is certain to be selected. Since these differences are
 known and quantified, they can be taken into account when working with
 the sample.
 
-### A Systematic Sample
+### A systematic sample
 
 Imagine all the elements of the population listed in a sequence. One
 method of sampling starts by choosing a random position early in the
@@ -176,7 +174,7 @@ of rows all separated by multiples of 10. Any of those subsets is
 selected with chance 1/10. Other subsets, like the subset containing the
 first 11 rows of the table, are selected with chance 0.
 
-### Random Samples Drawn With or Without Replacement
+### Random samples drawn with or without replacement
 
 In this course, we will mostly deal with the two most straightforward
 methods of sampling.

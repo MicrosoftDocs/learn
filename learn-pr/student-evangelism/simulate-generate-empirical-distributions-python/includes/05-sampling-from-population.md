@@ -104,7 +104,7 @@ united.where('Delay', are.between(0, 10)).num_rows/united.num_rows
 0.2935985533453888
 ```
 
-### Empirical Distribution of the Sample
+### Empirical distribution of the sample
 
 Let us now think of the 13,825 flights as a population, and draw random
 samples from it with replacement. It is helpful to package our code into
@@ -144,7 +144,7 @@ empirical_hist_delay(1000)
 
 ![png](../media/52-sampling-from-population-18-0.png)
 
-### Convergence of the Empirical Histogram of the Sample
+### Convergence of the empirical histogram of the sample
 
 What we have observed in this section can be summarized as follows:
 
@@ -153,6 +153,4 @@ resembles the histogram of the population, with high probability.
 
 This justifies the use of large random samples in statistical inference.
 The idea is that since a large random sample is likely to resemble the
-population from which it is drawn, quantities computed from the values
-in the sample are likely to be close to the corresponding quantities in
-the population.
+population from which it is drawn, quantities computed from the values in the sample are likely to be close to the corresponding quantities in the population.

@@ -4,8 +4,8 @@ If you aren't interested in viewing the content interactively, feel free to skip
 
 ### You'll need:
 
-- A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at <https://azure.microsoft.com.>
-- OR A Microsoft Azure Student subscription. If you don't already have one, you can sign up for an Azure for Student Subscription at <https://azure.microsoft.com/free/students.>
+- A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at <https://azure.microsoft.com>
+- OR A Microsoft Azure Student subscription. If you don't already have one, you can sign up for an Azure for Student Subscription at <https://azure.microsoft.com/free/students>
 - A Visual Studio Codespaces environment based on the MicrosoftDocs/inferentialthinking code repository. This environment provides a hosted instance of Visual Studio Codespaces, in which you can run the interactive notebooks.
 
 ## To set up a Visual Studio Codespaces environment:

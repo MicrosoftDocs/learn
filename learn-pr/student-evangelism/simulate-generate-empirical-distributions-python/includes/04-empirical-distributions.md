@@ -36,7 +36,7 @@ die
 |5|
 |6|
 
-### A Probability Distribution
+### A probability distribution
 
 The histogram below helps us visualize the fact that every face appears
 with probability 1/6. We say that the histogram shows the *distribution*
@@ -71,7 +71,7 @@ to two decimal places. The width of each bin is 1 unit. So the height of
 each bar is 16.67% per unit. This agrees with the horizontal and
 vertical scales of the graph.
 
-### Empirical Distributions
+### Empirical distributions
 
 The distribution above consists of the theoretical probability of each
 face. It is not based on data. It can be studied and understood without
@@ -122,7 +122,7 @@ def empirical_hist_die(n):
     die.sample(n).hist(bins = die_bins)
 ```
 
-### Empirical Histograms
+### Empirical histograms
 
 Here is an empirical histogram of 10 rolls. It doesn't look very much
 like the probability histogram above. Run the cell a few times to see
@@ -153,7 +153,7 @@ As we increase the number of rolls in the simulation, the area of each
 bar gets closer to 16.67%, which is the area of each bar in the
 probability histogram.
 
-### The Law of Averages
+### The law of averages
 
 What we have observed above is an instance of a general rule.
 
