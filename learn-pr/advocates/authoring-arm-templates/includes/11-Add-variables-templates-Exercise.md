@@ -71,7 +71,7 @@ The deployment command returns results in a JSON format. Look for `ProvisioningS
 You can verify the deployment by exploring the resource group from the Azure portal.
 
 1. Sign in to the Azure [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. From the left menu, select Resource groups. If the left menu is not visible, click the 'hamburger' Icon in the upper left corner to bring up the menu.
+1. From the left menu, select Resource groups. If the left menu is not visible, click the 'ellipsis' Icon in the upper left corner to bring up the menu.
 
 ![Azure Portal Menu](../media/13-open-rg-portal.gif)
 

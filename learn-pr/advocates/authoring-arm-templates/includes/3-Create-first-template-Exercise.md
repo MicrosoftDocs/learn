@@ -2,39 +2,39 @@ In this exercise, you will create your own template using the built-in Azure She
 
 1. Open Visual Studio Code from the Azure shell provides here in the sandbox by using the following command.
 
-```shell
+    ```shell
     code azuredeploy.json
-```
+    ```
 
-Copy and paste the following JSON into the editor:
+1. Copy and paste the following JSON into the editor:
 
-```JSON
-{
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "apiProfile": "",
-    "parameters": {},
-    "variables": {},
-    "functions": [],
-    "resources": [],
-    "outputs": {}
-}
+    ```JSON
+    {
+        "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+        "contentVersion": "1.0.0.0",
+        "apiProfile": "",
+        "parameters": {},
+        "variables": {},
+        "functions": [],
+        "resources": [],
+        "outputs": {}
+    }
 
-```
+    ```
 
-2. From the **editor** menu, select **save** to save your changes and close editor return to shell.
+1. From the **editor** menu, select **save** to save your changes and close editor return to shell.
 
     ![visual studio code in shell save first template](../media/save-template.gif)
 
-  This template doesn't deploy any resources. We're starting with a blank template to get familiar with the required steps to deploy, while minimizing the chance of something going wrong.
+    This template doesn't deploy any resources. We're starting with a blank template to get familiar with the required steps to deploy, while minimizing the chance of something going wrong.
 
-  The JSON file has these elements:
+    The JSON file has these elements:
 
-- **$schema**: Specifies the location of the JSON schema file. The schema file describes the properties that are available within a template. For example, the schema defines **resources** as one of the valid properties for a template. Don't worry that the date for the schema is "2019-04-01". This schema version is up to date and includes all of the latest features. The schema date hasn't been changed because there have been no breaking changes since its introduction.
-- **contentVersion**: Specifies the version of the template (such as 1.0.0.0). You can provide any value for this element. Use this value to document significant changes in your template. When deploying resources using the template, this value can be used to make sure that the right template is being used.
-- **resources**: Contains the resources you want to deploy or update. Currently, it's empty, but you'll add resources later.
+    - **$schema**: Specifies the location of the JSON schema file. The schema file describes the properties that are available within a template. For example, the schema defines **resources** as one of the valid properties for a template. Don't worry that the date for the schema is "2019-04-01". This schema version is up to date and includes all of the latest features. The schema date hasn't been changed because there have been no breaking changes since its introduction.
+    - **contentVersion**: Specifies the version of the template (such as 1.0.0.0). You can provide any value for this element. Use this value to document significant changes in your template. When deploying resources using the template, this value can be used to make sure that the right template is being used.
+    - **resources**: Contains the resources you want to deploy or update. Currently, it's empty, but you'll add resources later.
 
-3. Now that you saved the template. Close the editor by either clicking on the ellipsis (upper right corner **...**) and select **Close Editor**, or use the keyboard shortcut **CTRL-Q**.
+1. Now that you saved the template. Close the editor by either clicking on the ellipsis (upper right corner **...**) and select **Close Editor**, or use the keyboard shortcut **CTRL-Q**.
 
 ## Create resource group
 
@@ -52,15 +52,15 @@ When you deploy a template, you need to specify a resource group that will conta
     RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
     ```
 
-To verify that the command successfully, you can use the **echo** command in the shell to print out on screen the content of the $RG variable.
+    To verify that the command successfully, you can use the **echo** command in the shell to print out on screen the content of the $RG variable.
 
-```shell
-echo $RG
-```
+    ```shell
+    echo $RG
+    ```
 
-If **echo $RG** does not return a valid resource group name, use the **az group list** command to get the listing of all resource groups in your sandbox and look for the name.
+    If **echo $RG** does not return a valid resource group name, use the **az group list** command to get the listing of all resource groups in your sandbox and look for the name.
 
-![visual studio code in shell save first template](../media/az-list.png)
+    ![visual studio code in shell save first template](../media/az-list.png)
 
 ## Deploy the template
 
@@ -95,17 +95,17 @@ You can verify the deployment by exploring the resource group from the Azure por
 
 1. From the left menu, select **Resource groups**.
 
-![Azure Portal menu](../media/portal-menu.png)
+    ![Azure Portal menu](../media/portal-menu.png)
 
 1. Select the resource group you used to deploy your blank template in the last procedure. The resource group will have a name similar to **learn-0ab1c234-d567-8e90-fabcd-12e34d56789f**. You will not see any resource deployed within that resource group since our template had no resources.
 
 1. Notice in the upper right of the overview, the status of the deployment is displayed. Select **1 Succeeded**.
 
-![View deployment status](../media/portal-verify-deployment.png)
+    ![View deployment status](../media/portal-verify-deployment.png)
 
 1. You see a history of the deployments for the resource group. Select the deployment that is contains  **blanktemplate** and the deployment date as part of the name.
 
-![Select deployment](../media/portal-verify-blanktemplate.png)
+    ![Select deployment](../media/portal-verify-blanktemplate.png)
 
 1. You see a summary of the deployment. In this case, there's not a lot to see because no resources were deployed. Later in this series you might find it helpful to review the summary in the deployment history. Notice on the left you can view inputs, outputs, and the template used during deployment.
 
