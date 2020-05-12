@@ -24,7 +24,7 @@ roles:
 - administrator
 - student
 products:
-- azure
+- m365
 units:
 - learn.cela-disability-intro.00-what-is-accessibility
 - learn.cela-disability-intro.01-language-and-etiquette
