@@ -21,14 +21,14 @@ estimates, to account for chance variability in the random sample. By
 providing an interval of estimates instead of just one estimate, we give
 ourselves some wiggle room.
 
-In the previous example we saw that our process of estimation produced a
+In the previous example, we saw that our process of estimation produced a
 good interval about 95% of the time, a "good" interval being one that
 contains the parameter. We say that we are *95% confident* that the
 process results in a good interval. Our interval of estimates is called
 a *95% confidence interval* for the parameter, and 95% is called the
 *confidence level* of the interval.
 
-The situation in the previous example was a bit unusual. Because we
+The situation in the previous example, was a bit unusual. Because we
 happened to know the value of the parameter, we were able to check
 whether an interval was good or a dud, and this in turn helped us to see
 that our process of estimation captured the parameter about 95 out of
@@ -81,8 +81,7 @@ baby
 
 ... (1164 rows omitted)
 
-Birth weight is an important factor in the health of a newborn infant --
-smaller babies tend to need more medical care in their first days than
+Birth weight is an important factor in the health of a newborn infant--smaller babies tend to need more medical care in their first days than
 larger newborns. It is therefore helpful to have an estimate of birth
 weight before the baby is born. One way to do this is to examine the
 relationship between birth weight and the number of gestational days.
@@ -90,7 +89,7 @@ relationship between birth weight and the number of gestational days.
 A simple measure of this relationship is the ratio of birth weight to
 the number of gestational days. The table `ratios` contains the first
 two columns of `baby`, as well as a column of the ratios. The first
-entry in that column was calcualted as follows:
+entry in that column was calculated as follows:
 
 $$
 \frac{120~\mbox{ounces}}{284~\mbox{days}} ~\approx ~ 0.4225~ \mbox{ounces per day}
@@ -128,10 +127,10 @@ ratios.select('Ratio BW/GD').hist()
 
 ![png](../media/66-confidence-intervals-9-1.png)
 
-At first glance the histogram looks quite symmetric, with the density at
+At first, glance the histogram looks symmetric, with the density at
 its maximum over the interval 4 ounces per day to 4.5 ounces per day.
-But a closer look reveals that some of the ratios were quite large by
-comparison. The maximum value of the ratios was just over 0.78 ounces
+But a closer look reveals that some of the ratios were large by
+comparison. The maximum value of the ratios was just over 0.78 ounce
 per day, almost double the typical value.
 
 ``` {.python}
@@ -143,8 +142,8 @@ ratios.sort('Ratio BW/GD', descending=True).take(0)
 |116|148|0.783784|
 
 The median gives a sense of the typical ratio because it is unaffected
-by the very large or very small ratios. The median ratio in the sample
-is about 0.429 ounces per day.
+by the large or very small ratios. The median ratio in the sample
+is about 0.429 ounce per day.
 
 ``` {.python}
 np.median(ratios.column(2))
@@ -199,10 +198,10 @@ make_array(left, right)
 
 array(\[0.42545455, 0.43272727\])
 
-The 95% confidence interval goes from about 0.425 ounces per day to
-about 0.433 ounces per day. We are estimating the median "birth weight
+The 95% confidence interval goes from about 0.425 ounce per day to
+about 0.433 ounce per day. We are estimating the median "birth weight
 to gestational days" ratio in the population is somewhere in the
-interval 0.425 ounces per day to 0.433 ounces per day.
+interval 0.425 ounce per day to 0.433 ounce per day.
 
 The estimate of 0.429 based on the original sample happens to be exactly
 half-way in between the two ends of the interval, though that need not
@@ -223,7 +222,7 @@ plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ![png](../media/66-confidence-intervals-19-1.png)
 
 This histogram and interval resembles those we drew in the previous
-section, with one big difference -- there is no red dot showing where
+section, with one big difference--there is no red dot showing where
 the parameter is. We don't know where that dot should be, or whether it
 is even in the interval.
 
@@ -301,8 +300,7 @@ years. That is, we are estimating that the average age of the mothers in
 the population is somewhere in the interval 26.9 years to 27.6 years.
 
 Notice how close the two ends are to the average of about 27.2 years in
-the original sample. The sample size is very large -- 1,174 mothers --
-and so the sample averages don't vary much. We will explore this
+the original sample. The sample size is very large--1,174 mothers--and so the sample averages don't vary much. We will explore this
 observation further in the next chapter.
 
 The empirical histogram of the 5,000 bootstrapped means is shown below,
@@ -319,7 +317,7 @@ plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ![png](../media/66-confidence-intervals-29-1.png)
 
 Once again, the average of the original sample (27.23 years) is close to
-the center of the interval. That's not very surprising, because each
+the center of the interval. That's not surprising, because each
 bootstrapped sample is drawn from that same original sample. The
 averages of the bootstrapped samples are about symmetrically distributed
 on either side of the average of the sample from which they were drawn.
@@ -442,10 +440,10 @@ right = percentile(97.5, bstrap_props)
 make_array(left, right)
 ```
 
-array(\[0.3637138 , 0.41737649\])
+array(\[0.3637138,0.41737649\])
 
 The confidence interval goes from about 36% to about 42%. The original
-sample percent of 39% is very close to the center of the interval, as
+sample percent of 39% is close to the center of the interval, as
 you can see below.
 
 ``` {.python}
@@ -473,20 +471,19 @@ important to keep some points in mind.
     good idea to replicate the resampling procedure as many times as
     possible. A few thousand replications will result in decent
     approximations to the distribution of sample median, especially if
-    the distribution of the population has one peak and is not very
+    the distribution of the population has one peak and is not
     asymmetric. We used 5,000 replications in our examples but would
     recommend 10,000 in general.
 
 -   The bootstrap percentile method works well for estimating the
-    population median or mean based on a large random sample. However,
+    population median or means based on a large random sample. However,
     it has limitations, as do all methods of estimation. For example, it
     is not expected to do well in the following situations.
     -   The goal is to estimate the minimum or maximum value in the
-        population, or a very low or very high percentile, or parameters
+        population, or a very low or high percentile, or parameters
         that are greatly influenced by rare elements of the population.
     -   The probability distribution of the statistic is not roughly
         bell shaped.
     -   The original sample is very small, say less than 10 or 15.
 e probability distribution of the statistic is not roughly
         bell shaped.
-
