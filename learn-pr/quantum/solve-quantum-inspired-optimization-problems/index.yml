@@ -32,6 +32,7 @@ units:
 - learn.quantum.solve-quantum-inspired-optimization-problems.3-when-is-quantum-inspired-optimization-useful
 - learn.quantum.solve-quantum-inspired-optimization-problems.4-how-quantum-inspired-optimization-solves-problems
 - learn.quantum.solve-quantum-inspired-optimization-problems.5-apply-quantum-inspired-optimization-real-world
-- learn.quantum.solve-quantum-inspired-optimization-problems.6-summary
+- learn.quantum.solve-quantum-inspired-optimization-problems.6-knowledge-check
+- learn.quantum.solve-quantum-inspired-optimization-problems.7-summary
 badge:
   uid: learn.quantum.solve-quantum-inspired-optimization-problems.badge
