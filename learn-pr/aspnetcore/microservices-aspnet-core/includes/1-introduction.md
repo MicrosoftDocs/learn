@@ -2,6 +2,9 @@ Suppose you work for an online retailer. The retailer uses a microservices-based
 
 You'll use your Azure subscription to deploy the resources in this module. To estimate the expected costs for these resources, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-aspnet-core-estimate?azure-portal=true) of the resources that you'll deploy.
 
+> [!WARNING]
+> Be sure to deprovision your Azure resources when you are done with this module to avoid unnecessary charges to your Azure subscription.
+
 ## Learning objectives
 
 In this module, you will:

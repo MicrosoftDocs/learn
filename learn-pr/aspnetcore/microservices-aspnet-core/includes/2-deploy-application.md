@@ -29,9 +29,9 @@ The following directories contain .NET Core projects, each of which is built to 
 
 | Project directory | Description |
 |-------------------|-------------|
-| *src/Aggregators/* | Services to aggregate across multiple microservices for certain cross-service operations. This is implemented by the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator project. |
+| *src/Aggregators/* | Services to aggregate across multiple microservices for certain cross-service operations. This is implemented by the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator* project. |
 | *src/BuildingBlocks/* | These services provide cross-cutting functionality, such as the app's event bus used for inter-service events. |
-| *src/Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own database or other data store. They showcase different software patterns, including Create-Read-Update-Delete (CRUD), Domain Driven Design (DDD), and Command-query Separation (CQRS).
+| *src/Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own database or other data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), **D**omain-**D**riven **D**esign (DDD), and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS).
 | *src/Web/* | ASP.NET Core apps that implement user interfaces. *WebSPA* is the storefront UI. *WebStatus* is the health check app for monitoring the operational status of the app.
 
 ![eShop application architecture](../media/temp/eshop-architecture.png)
@@ -88,11 +88,11 @@ A project for the coupon service has been provided in *src/Services/Coupon*.
     }
     ```
 
-    In the preceding code:
+    In the preceding asynchronous action method:
 
-    * %TODO%
-    * %TODO%
-    * %TODO% 
+    * The `CouponRepository` class' `FindCouponByCodeAsync` method retrieves the coupon corresponding to the provided `code` parameter value. The coupon is retrieved from a MongoDB database.
+    * If the coupon returned is `null` or has already been used, an HTTP 404 status code is returned.
+    * If the coupon returned isn't `null` and hasn't already been used, the `Coupon` object is converted to a `CouponDto` Data Transfer Object (DTO). Finally, an HTTP 200 status code is returned along with the DTO.
 
 1. Open *Startup.cs*.
 1. Note on line 38 `.AddCustomHealthCheck(Configuration)`. %TODO% Explanation of AddCustomHealthCheck
@@ -108,7 +108,7 @@ A project for the coupon service has been provided in *src/Services/Coupon*.
     * Uncomments the coupon field and markup in the SPA.
     * Creates a helm charts for the coupon service (%TODO% explain the following: helm-simple/coupon/Chart.yaml helm-simple/coupon/templates/deployment.yamhelm-simple/coupon/templates/service.yaml helm-simple/coupon/templates/configmap.yaml helm-simple/coupon/templates/ingress.yaml )
     * Adds the coupon service endpoints to the aggregator (see helm-simple/webshoppingagg/templates/configmap.yaml)
-    * Adds the coupon HC to the webstatus (see helm-simple/webstatus/templates/configmap.yaml)
+    * Adds the coupon health check to the webstatus (see helm-simple/webstatus/templates/configmap.yaml)
 
 1. Open *deploy/k8s/build-to-acr.sh*
 
@@ -122,7 +122,7 @@ A project for the coupon service has been provided in *src/Services/Coupon*.
     The containers are published to ACR.
 1. Open *deploy/k8s/update-to-aks.sh*
 
-    %TODO% explain that this is installing help charts
+    %TODO% explain that this is installing Helm charts
 1. Execute the script by running:
 
     ```bash
