@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.student-evangelism.make-predictions-with-linear-regression
+metadata:
+  title: Make Predictions with Linear Regression
+  description: Learn
+  ms.date: 03/19/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning azure
+title: Make Predictions with Linear Regression
+summary: Learn how to make predictions using linear regression
+abstract: |
+  In this module, you will:
+  - Learn about Correlation as a measure of linear association and the correlation coefficient.
+  - Understand the Regression line, Regression Effect, and the equation of the regression line.
+  - Motivate The Method of Least Squares, Least Square Regression, & Nonlinear Regression
+  - Understand Residuals and residual diagnostics through residual plots.
+prerequisites: None
+iconUrl: /learn/achievements/student-evangelism/make-predictions-with-linear-regression.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.make-predictions-with-linear-regression.setup
+- learn.student-evangelism.make-predictions-with-linear-regression.introduction
+- learn.student-evangelism.make-predictions-with-linear-regression.regression-line
+- learn.student-evangelism.make-predictions-with-linear-regression.method-least-squares
+- learn.student-evangelism.make-predictions-with-linear-regression.least-squares-regression
+- learn.student-evangelism.make-predictions-with-linear-regression.visual-diagnostics
+- learn.student-evangelism.make-predictions-with-linear-regression.numerical-diagnostics
+- learn.student-evangelism.make-predictions-with-linear-regression.multiple-regression
+- learn.student-evangelism.make-predictions-with-linear-regression.mini-labs
+- learn.student-evangelism.make-predictions-with-linear-regression.summary
+badge:
+  uid: learn.make-predictions-with-linear-regression.badge
