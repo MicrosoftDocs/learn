@@ -8,7 +8,7 @@ plots.style.use('fivethirtyeight')
 %matplotlib inline
 ```
 
-### Finding Probabilities
+### Finding probabilities
 
 Over the centuries, there has been considerable philosophical debate
 about what probabilities are. Some people think that probabilities are
@@ -36,7 +36,7 @@ We will use the standard notation $P(\mbox{event})$ to denote the
 probability that "event" happens, and we will use the words "chance" and
 "probability" interchangeably.
 
-### When an Event Doesn't Happen
+### When an event doesn't happen
 
 If the chance that event happens is 40%, then the chance that it doesn't
 happen is 60%. This natural calculation can be described in general as
@@ -46,7 +46,7 @@ $$
 P(\mbox{an event doesn't happen}) ~=~ 1 - P(\mbox{the event happens})
 $$
 
-### When All Outcomes are Equally Likely
+### When all outcomes are equally likely
 
 If you are rolling an ordinary die, a natural assumption is that all six
 faces are equally likely. Then probabilities of how one roll comes out
@@ -73,7 +73,7 @@ Not all random phenomena are as simple as one roll of a die. The two
 main rules of probability, developed below, allow mathematicians to find
 probabilities even in complex situations.
 
-### When Two Events Must Both Happen
+### When two events must both happen
 
 Suppose you have a box that contains three tickets: one red, one blue,
 and one green. Suppose you draw two tickets at random without
@@ -118,7 +118,7 @@ another -- the chance is *a fraction of a fraction*, which is smaller
 than either of the two component fractions. The more conditions that
 have to be satisfied, the less likely they are to all be satisfied.
 
-### When an Event Can Happen in Two Different Ways
+### When an event can happen in two different ways
 
 Suppose instead we want the chance that one of the two tickets is green
 and the other red. This event doesn't specify the order in which the
@@ -157,7 +157,7 @@ to events that can happen in one of several different ways.
 We end the section with examples that use combinations of all these
 rules.
 
-### At Least One Success
+### At least one success
 
 Data scientists often work with random samples from populations. A
 question that sometimes arises is about the likelihood that a particular

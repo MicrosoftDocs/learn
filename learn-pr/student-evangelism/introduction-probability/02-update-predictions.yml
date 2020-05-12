@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.introduction-probability.update-predictions
-title: Updating Predictions
+title: Updating predictions
 metadata:
-  title: Updating Predictions
+  title: Updating predictions
   description: Using bayes rule to update predictions
   ms.date: 03/19/2020
   author: leestott
