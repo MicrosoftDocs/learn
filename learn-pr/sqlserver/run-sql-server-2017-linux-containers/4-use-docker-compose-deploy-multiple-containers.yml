@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.run-sql-server-2017-linux-containers.4-create-custom-images
+uid: learn-sqlserver.run-sql-server-2017-linux-containers.4-use-docker-compose-deploy-multiple-containers
 title: Create custom images
 metadata:
   title: Create custom images

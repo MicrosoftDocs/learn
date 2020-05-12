@@ -59,7 +59,7 @@ If you choose to use containers, consider whether to use Linux or Windows for th
 
 Because SQL Server 2019 can run on both Windows and Linux operating systems, your choice is no longer determined by your database system. Instead you can choose the operating system that your administrative team have more experience with.
 
-Next, consider the images available in public registries, such as the Docker registeries and Microsoft registries. If there's an image that includes some or all of the software you need, use it as it is or create a child image from it. This approach reduces the complexity of the image you create.
+Next, consider the images available in public registries, such as the Docker registries and Microsoft registries. If there's an image that includes some or all of the software you need, use it as it is or create a child image from it. This approach reduces the complexity of the image you create.
 
 For example, if you want to run SQL Server 2019 on a Linux Docker host, consider using the **mcr.microsoft.com/mssql/server:2019-latest** from the Microsoft registry. With this parent image, you already have SQL Server 2019 installed.
 

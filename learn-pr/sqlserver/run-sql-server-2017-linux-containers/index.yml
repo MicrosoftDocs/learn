@@ -38,8 +38,8 @@ products:
 units:
 - learn-sqlserver.run-sql-server-2017-linux-containers.1-introduction
 - learn-sqlserver.run-sql-server-2017-linux-containers.2-choose-run-sql-server-2017-linux-containers
-- learn-sqlserver.run-sql-server-2017-linux-containers.3-exercise-run-sql-server-2017-linux-containers
-- learn-sqlserver.run-sql-server-2017-linux-containers.4-create-custom-images
+- learn-sqlserver.run-sql-server-2017-linux-containers.3-create-custom-images
+- learn-sqlserver.run-sql-server-2017-linux-containers.4-use-docker-compose-deploy-multiple-containers
 - learn-sqlserver.run-sql-server-2017-linux-containers.5-exercise-create-custom-docker-image
 - learn-sqlserver.run-sql-server-2017-linux-containers.6-use-docker-compose-deploy-multiple-containers
 - learn-sqlserver.run-sql-server-2017-linux-containers.7-exercise-use-docker-compose-deploy-multiple-containers

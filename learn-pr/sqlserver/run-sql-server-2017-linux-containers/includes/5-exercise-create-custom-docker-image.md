@@ -17,7 +17,7 @@ If you've disconnected from the VM that you created in the last unit, you must r
     ```
 
 1. When asked if you're sure, type **yes**, and then press Enter.
-1. For the password, type the password you recroded earlier, and then press Enter. SSH connects to the VM and shows a bash shell.
+1. For the password, type the password you recorded earlier, and then press Enter. SSH connects to the VM and shows a bash shell.
 
 ## Create a Dockerfile
 

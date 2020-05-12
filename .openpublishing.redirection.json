@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.md",
+      "redirect_url": "https://docs.microsoft.comlearn/modules/run-sql-server-2017-linux-containers/3-exercise-run-sql-server-2017-linux-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/4-use-docker-compose-deploy-multiple-containers.md",
+      "redirect_url": "https://docs.microsoft.comlearn/modules/run-sql-server-2017-linux-containers/4-create-custom-images",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/index.md",
       "redirect_url": "/learn/browse/",
       "redirect_document_id": false

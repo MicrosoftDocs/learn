@@ -8,7 +8,7 @@ Here, you'll install the Docker container host and a SQL Server image on an Ubun
 
 Let's start by creating an Ubuntu Virtual Machine (VM) in Azure. Later, we can install Docker on that VM:
 
-1. Using the cloud shell on the right, enter Azure CLI commands to create an Ubuntu 18.04 LTS server. This can take a couple of minutes to complete.
+1. Using the Cloud Shell on the right, enter Azure CLI commands to create an Ubuntu 18.04 LTS server. This can take a couple of minutes to complete.
 
     ```azurecli
     export UBUNTUPASSWORD=$(openssl rand -base64 32)

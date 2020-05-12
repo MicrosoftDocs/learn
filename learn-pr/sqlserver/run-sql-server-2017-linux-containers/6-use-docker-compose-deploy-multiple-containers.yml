@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "Prepend the 'sudo' command to the docker-compose command."
       isCorrect: true
-      explanation: "You must execute the docker-compose command with elevated privileges, so use the 'sudo' command."
+      explanation: "You execute the docker-compose command with elevated privileges, so use the 'sudo' command."
     - content: "Use the 'environment' directive in the YAML file to set the correct user name."
       isCorrect: false
-      explanation: "You must execute the docker-compose command with elevated privileges, so use the 'sudo' command."
+      explanation: "You execute the docker-compose command with elevated privileges."
     - content: "Use the 'docker run' command to start the containers."
       isCorrect: false
-      explanation: "You must execute the docker-compose command with elevated privileges, so use the 'sudo' command."
+      explanation: "You execute the docker-compose command with elevated privileges."
