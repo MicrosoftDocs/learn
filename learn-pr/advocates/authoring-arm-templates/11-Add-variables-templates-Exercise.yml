@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.authoring-arm-templates.11-add-variables-templates-exercise
-title: Add variables to your templates - Exercise
+title: Exercise - Add variables to your templates.
 azureSandbox: true
 interactive: bash
 metadata:
-  title: Add variables to your templates - Exercise
+  title: Exercise - Add variables to your templates.
   description: Introduction
   ms.date: 09/24/2018
   author: pierreroman
