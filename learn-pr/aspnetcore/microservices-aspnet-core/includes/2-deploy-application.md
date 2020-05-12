@@ -63,17 +63,84 @@ Login to the app (the credentials are provided on the login page) and then brows
 
 ## Add the Coupon service
 
-The code for the Coupon service has been provided in *src/Services/Coupon*. 
+A project for the Coupon service has been provided in *src/Services/Coupon*. 
 
-The service has the following traits, etc. etc.:
+1. Open *src/Services/Coupon/Coupon.API/Controllers/CouponController.cs*.
+1. Replace the comment `/* Add the GetCouponByCodeAsync method */` with the following code:
 
+    ```csharp
+    [HttpGet("{code}")]
+    [ProducesResponseType((int)HttpStatusCode.NotFound)]
+    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+    [ProducesResponseType(typeof(CouponDto), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<CouponDto>> GetCouponByCodeAsync(string code)
+    {
+        var coupon = await _couponRepository.FindCouponByCodeAsync(code);
 
+        if (coupon is null || coupon.Consumed)
+        {
+            return NotFound();
+        }
 
+        var couponDto = _mapper.Translate(coupon);
 
+        return Ok(couponDto);
+    }
+    ```
 
+    In the preceding code:
 
+    * %TODO%
+    * %TODO%
+    * %TODO% 
+
+1. Open *Startup.cs*.
+1. Note on line 38 `.AddCustomHealthCheck(Configuration)`. %TODO% Explanation of AddCustomHealthCheck
+1. Note on lines 70-82 %TODO% Explanation of /hc and /liveness endpoints
+1. Execute the following script:
+
+    ```bash
+    ./deploy/k8s/implementation-script.sh
+    ```
+
+    The preceding script:
+
+    * Uncomments the coupon field and markup in the SPA.
+    * Creates a helm charts for the coupon service (%TODO% explain the following: helm-simple/coupon/Chart.yaml helm-simple/coupon/templates/deployment.yamhelm-simple/coupon/templates/service.yaml helm-simple/coupon/templates/configmap.yaml helm-simple/coupon/templates/ingress.yaml )
+    * Adds the coupon service endpoints to the aggregator (see helm-simple/webshoppingagg/templates/configmap.yaml)
+    * Adds the coupon HC to the webstatus (see helm-simple/webstatus/templates/configmap.yaml)
+
+1. Open *deploy/k8s/build-to-acr.sh*
+
+    %TODO% explain that we're building the project to ACR in this script
+1. Execute the script by running:
+
+    ```bash
+    ./deploy/k8s/build-to-acr.sh
+    ```
+
+    The containers are published to ACR.
+1. Open *deploy/k8s/update-to-aks.sh*
+
+    %TODO% explain that this is installing help charts
+1. Execute the script by running:
+
+    ```bash
+    ./deploy/k8s/update-to-aks.sh
+    ```
+1. Observe the services stopping and redploying on the web status.
+1. After the app deploys, refresh the page.
+1. Add items to the cart.
+1. Navigate to the cart and select **Check out**.
+1. Add the coupon code **DISC-15**.
 
 ## Clean up Azure resources
 
 To de-provision... 
+
+```bash
+az group delete --name eshop-learn-rg --yes
+```
+
+Also explain how to remove the service principal. Can that be done easily from a script?
 
