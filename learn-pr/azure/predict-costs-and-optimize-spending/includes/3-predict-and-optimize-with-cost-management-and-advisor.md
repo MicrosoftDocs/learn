@@ -2,7 +2,7 @@ We learned how to estimate costs before you deploy services on Azure, but what i
 
 ## What is Azure Advisor?
 
-**Azure Advisor** is a free service built into Azure that provides recommendations on high availability, security, performance, operational excellence, and cost. Advisor analyzes your deployed services and looks for ways to improve your environment across those four areas. We'll focus on the cost recommendations, but you'll want to take some time to review the other recommendations as well.
+**Azure Advisor** is a free service built into Azure that provides recommendations on high availability, security, performance, operational excellence, and cost. Advisor analyzes your deployed services and looks for ways to improve your environment across each of these areas. We'll focus on the cost recommendations, but you'll want to take some time to review the other recommendations as well.
 
 Advisor makes cost recommendations in the following areas:
 
