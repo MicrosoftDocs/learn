@@ -121,7 +121,7 @@ Moving forward, we advise putting systemic processes in place to manage and eval
 
 ## Conclusion
 
-AI is already transforming industries, and the potential value it can generate will only continue to grow. We need a new, creative way to evaluate transformative AI initiatives. Equipped with the right framework, you'll have strong foundation for innovation.
+AI is already transforming industries, and the potential value it can generate will only continue to grow. We need a new, creative way to evaluate transformative AI initiatives. Equipped with the right framework, you'll have a strong foundation for innovation.
 
 Learn more about how [Digital Advisory Services](https://www.microsoft.com/industry/services/digital-advisors) can help you drive successful AI initiatives today.
 
