@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.understand-normal-curve.variability
-title: Variability
+title: variability
 metadata:
   title: Variability
-  description: Learn about standard devation and chebyshev's inequality
+  description: Learn about standard deviation and chebyshev's inequality
   ms.date: 03/19/2020
   author: leestott
   ms.author: leestott

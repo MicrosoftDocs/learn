@@ -9,12 +9,12 @@ import numpy as np
 ```
 
 We know that the mean is the balance point of the histogram. Unlike the
-mean, the SD is usually not easy to identify by looking at the
+mean, the Standard Deviation (SD) is not easy to identify by looking at the
 histogram.
 
 However, there is one shape of distribution for which the SD is almost
 as clearly identifiable as the mean. That is the bell-shaped
-disribution. This section examines that shape, as it appears frequently
+distribution. This section examines that shape, as it appears frequently
 in probability histograms and also in some histograms of data.
 
 ### A Roughly Bell-Shaped Histogram of Data
@@ -53,7 +53,7 @@ plots.xticks(positions);
     /home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
       warnings.warn("The 'normed' kwarg is deprecated, and has been "
 
-![png](../media/71-sd-normal-curve-6-1.png)
+![png](../media/71-standard-deviation-normal-curve-6-1.png)
 
 The last two lines of code in the cell above change the labeling of the
 horizontal axis. Now, the labels correspond to "average $\pm$ $z$ SDs"
@@ -159,7 +159,7 @@ standard normal curve.
 plot_normal_cdf(1)
 ```
 
-![png](../media/71-sd-normal-curve-16-0.png)
+![png](../media/71-standard-deviation-normal-curve-16-0.png)
 
 The numerical value of the shaded area can be found by calling
 `stats.norm.cdf`.
@@ -181,7 +181,7 @@ The area to the right of $z=1$ is about 100% - 84% = 16%.
 plot_normal_cdf(lbound=1)
 ```
 
-![png](../media/71-sd-normal-curve-20-0.png)
+![png](../media/71-standard-deviation-normal-curve-20-0.png)
 
 ``` {.python}
 1 - stats.norm.cdf(1)
@@ -198,7 +198,7 @@ ways. It is the gold area under the curve below.
 plot_normal_cdf(1, lbound=-1)
 ```
 
-![png](../media/71-sd-normal-curve-23-0.png)
+![png](../media/71-standard-deviation-normal-curve-23-0.png)
 
 For example, we could calculate the area as "100% - two equal tails",
 which works out to roughly 100% - 2x16% = 68%.
@@ -221,7 +221,7 @@ about 95%.
 plot_normal_cdf(2, lbound=-2)
 ```
 
-![png](../media/71-sd-normal-curve-27-0.png)
+![png](../media/71-standard-deviation-normal-curve-27-0.png)
 
 ``` {.python}
 stats.norm.cdf(2) - stats.norm.cdf(-2)

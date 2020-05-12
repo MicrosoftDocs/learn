@@ -47,103 +47,21 @@ different spins of a roulette wheel.
 wheel
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Pocket
-</th>
-<th>
-Color
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-0
-</td>
-<td>
-green
-</td>
-</tr>
-<tr>
-<td>
-00
-</td>
-<td>
-green
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-<td>
-red
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-black
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-<td>
-red
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-black
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-red
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-black
-</td>
-</tr>
-<tr>
-<td>
-7
-</td>
-<td>
-red
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-black
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Pocket|Color|
+|--- |--- |
+|0|green|
+|00|green|
+|1|red|
+|2|black|
+|3|red|
+|4|black|
+|5|red|
+|6|black|
+|7|red|
+|8|black|
+
 ... (28 rows omitted)
-</p>
+
 Recall that the bet on red pays even money, 1 to 1. We defined the
 function `red_winnings` that returns the net winnings on one \$1 bet on
 red. Specifically, the function takes a color as its argument and
@@ -166,136 +84,21 @@ red = wheel.with_column(
 red
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Pocket
-</th>
-<th>
-Color
-</th>
-<th>
-Winnings: Red
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-0
-</td>
-<td>
-green
-</td>
-<td>
--1
-</td>
-</tr>
-<tr>
-<td>
-00
-</td>
-<td>
-green
-</td>
-<td>
--1
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-<td>
-red
-</td>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-black
-</td>
-<td>
--1
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-<td>
-red
-</td>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-black
-</td>
-<td>
--1
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-red
-</td>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-black
-</td>
-<td>
--1
-</td>
-</tr>
-<tr>
-<td>
-7
-</td>
-<td>
-red
-</td>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-black
-</td>
-<td>
--1
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Pocket|Color|Winnings: Red|
+|--- |--- |--- |
+|0|green|-1|
+|00|green|-1|
+|1|red|1|
+|2|black|-1|
+|3|red|1|
+|4|black|-1|
+|5|red|1|
+|6|black|-1|
+|7|red|1|
+|8|black|-1|
+
 ... (28 rows omitted)
-</p>
+
 Your net gain on one bet is one random draw from the `Winnings: Red`
 column. There is an 18/38 chance making \$1, and a 20/38 chance of
 making -\$1. This probability distribution is shown in the histogram
@@ -520,37 +323,13 @@ model = Table().with_column('Color', colors)
 model
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Color
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Purple
-</td>
-</tr>
-<tr>
-<td>
-Purple
-</td>
-</tr>
-<tr>
-<td>
-Purple
-</td>
-</tr>
-<tr>
-<td>
-White
-</td>
-</tr>
-</tbody>
-</table>
+|Color|
+|--- |
+|Purple|
+|Purple|
+|Purple|
+|White|
+
 ``` {.python}
 props = make_array()
 
@@ -611,8 +390,5 @@ a statistic. However, in the case of a sample average, we can *quantify*
 the relationship between sample size and variability.
 
 Exactly how does the sample size affect the variability of a sample
-average or proportion? That is the question we will examine in the next
-section.
-the sample size affect the variability of a sample
 average or proportion? That is the question we will examine in the next
 section.

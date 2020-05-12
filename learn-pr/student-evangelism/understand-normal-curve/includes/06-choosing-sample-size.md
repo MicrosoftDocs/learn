@@ -137,92 +137,18 @@ zero_one_sds = Table().with_columns(
 zero_one_sds
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Population Proportion of 1's
-</th>
-<th>
-Population SD
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-0.1
-</td>
-<td>
-0.3
-</td>
-</tr>
-<tr>
-<td>
-0.2
-</td>
-<td>
-0.4
-</td>
-</tr>
-<tr>
-<td>
-0.3
-</td>
-<td>
-0.458258
-</td>
-</tr>
-<tr>
-<td>
-0.4
-</td>
-<td>
-0.489898
-</td>
-</tr>
-<tr>
-<td>
-0.5
-</td>
-<td>
-0.5
-</td>
-</tr>
-<tr>
-<td>
-0.6
-</td>
-<td>
-0.489898
-</td>
-</tr>
-<tr>
-<td>
-0.7
-</td>
-<td>
-0.458258
-</td>
-</tr>
-<tr>
-<td>
-0.8
-</td>
-<td>
-0.4
-</td>
-</tr>
-<tr>
-<td>
-0.9
-</td>
-<td>
-0.3
-</td>
-</tr>
-</tbody>
-</table>
+|Population Proportion of 1's|Population SD|
+|--- |--- |
+|0.1|0.3|
+|0.2|0.4|
+|0.3|0.458258|
+|0.4|0.489898|
+|0.5|0.5|
+|0.6|0.489898|
+|0.7|0.458258|
+|0.8|0.4|
+|0.9|0.3|
+
 Not surprisingly, the SD of a population with 10% 1's and 90% 0's is the
 same as that of a population with 90% 1's and 10% 0's. That's because
 you switch the bars of one histogram to get the other; there is no

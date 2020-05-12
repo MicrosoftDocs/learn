@@ -3,7 +3,7 @@
 
 If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 
 ``` {.python}
@@ -205,137 +205,21 @@ sd_comparison = Table().with_columns(
 ``` {.python}
 sd_comparison
 ```
+|Sample Size n|SD of 10,000 Sample Means|pop\_sd/sqrt(n)|
+|--- |--- |--- |
+|25|7.80558|7.89604|
+|50|5.60588|5.58334|
+|75|4.58432|4.55878|
+|100|3.93334|3.94802|
+|125|3.51501|3.53122|
+|150|3.22156|3.22354|
+|175|2.95652|2.98442|
+|200|2.83387|2.79167|
+|225|2.61634|2.63201|
+|250|2.49718|2.49695|
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Sample Size n
-</th>
-<th>
-SD of 10,000 Sample Means
-</th>
-<th>
-pop\_sd/sqrt(n)
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-25
-</td>
-<td>
-7.80558
-</td>
-<td>
-7.89604
-</td>
-</tr>
-<tr>
-<td>
-50
-</td>
-<td>
-5.60588
-</td>
-<td>
-5.58334
-</td>
-</tr>
-<tr>
-<td>
-75
-</td>
-<td>
-4.58432
-</td>
-<td>
-4.55878
-</td>
-</tr>
-<tr>
-<td>
-100
-</td>
-<td>
-3.93334
-</td>
-<td>
-3.94802
-</td>
-</tr>
-<tr>
-<td>
-125
-</td>
-<td>
-3.51501
-</td>
-<td>
-3.53122
-</td>
-</tr>
-<tr>
-<td>
-150
-</td>
-<td>
-3.22156
-</td>
-<td>
-3.22354
-</td>
-</tr>
-<tr>
-<td>
-175
-</td>
-<td>
-2.95652
-</td>
-<td>
-2.98442
-</td>
-</tr>
-<tr>
-<td>
-200
-</td>
-<td>
-2.83387
-</td>
-<td>
-2.79167
-</td>
-</tr>
-<tr>
-<td>
-225
-</td>
-<td>
-2.61634
-</td>
-<td>
-2.63201
-</td>
-</tr>
-<tr>
-<td>
-250
-</td>
-<td>
-2.49718
-</td>
-<td>
-2.49695
-</td>
-</tr>
-</tbody>
-</table>
-<p>
 ... (15 rows omitted)
-</p>
+
 The values in the second and third columns are very close. If we plot
 each of those columns with the sample size on the horizontal axis, the
 two graphs are essentially indistinguishable.
@@ -407,7 +291,4 @@ of the sample mean goes up by the square root of that factor.
 
 So to increase accuracy by a factor of 10, you have to multiply sample
 size by a factor of 100. Accuracy doesn't come cheap!
- square root of that factor.
 
-So to increase accuracy by a factor of 10, you have to multiply sample
-size by a factor of 100. Accuracy doesn't come cheap!
