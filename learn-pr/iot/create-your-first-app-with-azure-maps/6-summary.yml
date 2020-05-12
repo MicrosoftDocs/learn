@@ -73,8 +73,8 @@ quiz:
     choices: 
     - content: 'The Primary Key is used to verify that you have access to Azure resources.'
       isCorrect: false
-      explanation: No, separate keys are required for each rYou cannot, for example, use an Azure Maps key to access an Azure IoT resource.
-    - content: 'The Primary Key is used by Azure Map, to verify that the app making the requests of the resource is from a legit subscription.'
+      explanation: No, separate keys are required for each resource. You cannot, for example, use an Azure Maps key to access an Azure IoT resource.
+    - content: 'The Primary Key is used by Azure Maps, to verify that the app making the requests of the resource is from a legit subscription.'
       isCorrect: true
       explanation: Either the Primary Key, or the Secondary Key, works for this purpose.    
     - content: 'The Primary Key is used to verify that your subscription has been paid up to date.'
@@ -88,7 +88,7 @@ quiz:
       explanation: A bounding box is calculated based on the start and end points.
     - content: 'coordinates'
       isCorrect: false
-      explanation: Coordinates are used to send the start, end, and all intermediary points to the route finding service.
+      explanation: Coordinates are used to send the start, end, and all intermediary points, to the route finding service.
     - content: 'layers'
       isCorrect: false
       explanation: No, layers apply only to map construction.

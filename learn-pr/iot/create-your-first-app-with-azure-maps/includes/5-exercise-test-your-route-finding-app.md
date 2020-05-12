@@ -52,4 +52,4 @@ Running a new app for the first time is always an exiting moment!
 
 1. Try replacing a city in the USA, with locations elsewhere in North America. Or, add several locations on another continent.
 
-Hopefully, you've thoroughly tested your route finding app. Now to return to the more formal side of this module, and summarize what we have done, and finish with a knowledge check.
+Hopefully, you've thoroughly tested your route finding app. Now, to return to the more formal side of this module, let's summarize what we have done, and finish with a knowledge check.

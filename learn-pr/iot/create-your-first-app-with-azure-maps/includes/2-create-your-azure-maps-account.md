@@ -34,7 +34,7 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
 
     [![Screenshot showing the authentication keys](../media/azure-maps-create-account-3.png)](../media/azure-maps-create-account-3.png#lightbox)
 
-1. Paste the string into a text file. This key is the only authentication you need to connect an app to your resource.
+1. Paste the string into a text file. This key is the only authentication you need to connect an app to your Maps resource.
 
 1. It is now OK to close the Azure portal.
 

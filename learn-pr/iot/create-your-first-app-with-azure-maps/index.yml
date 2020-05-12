@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.iot.create-your-first-app-with-azure-maps
 metadata:
-  description: Learn about writing code to interact with Azure Maps. Develop and test a fun app to find the best route for a truck, car, or bicycle. The route is from the west coast of the USA, to the east coast. You will see how routes change based on vehicle, and, for trucks, if the contents are hazardous.
+  description: Learn about writing code to interact with Azure Maps. Develop and test a fun app to find the best route for a truck, car, or bicycle. The route is from the west coast of the USA, to the east coast. You will see how routes change based on vehicle. And, for trucks, how routes vary if the contents are hazardous. You will get the chance to add in your own locations.
   ms.date: 6/1/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
@@ -9,7 +9,7 @@ metadata:
   ms.prod: learning-azure
 title: Create your first app with Azure Maps
 summary: >
-  Learn about writing code to interact with Azure Maps. Develop and test a fun app to find the best route for a truck, car, or bicycle. The route is from the west coast of the USA, to the east coast. You will see how routes change based on vehicle, and, for trucks, if the contents are hazardous.
+  Learn about writing code to interact with Azure Maps. Develop and test a fun app to find the best route for a truck, car, or bicycle. The route is from the west coast of the USA, to the east coast. You will see how routes change based on vehicle. And, for trucks, how routes vary if the contents are hazardous. You will get the chance to add in your own locations.
 abstract: |
   In this module, you will:
   - Create a free Azure Maps account
@@ -17,8 +17,8 @@ abstract: |
   - Learn about route finding, map layers, hazardous materials, and integrating maps into your apps
 prerequisites: |
   - An introductory knowledge of the purpose of Azure Maps
-  - Ability to navigate Azure portal 
-  - Ability to use HTML and JavaScript, at the beginner level 
+  - Ability to navigate the Azure portal 
+  - Ability to use HTML, and JavaScript, at the beginner level 
   - Experience using Visual Studio Code, at the beginner level 
 iconUrl: /learn/achievements/iot/create-your-first-app-with-azure-maps.svg
 ratingEnabled: true

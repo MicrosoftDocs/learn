@@ -41,7 +41,7 @@ Routing information is available for nearly all countries in the world. However,
 
 To calculate a traffic route from A to B obviously takes detailed data: every junction, one-way street, bridge clearance, road gradient, needs to be known. In addition, accurate information is needed on the vehicle. This information includes the physical: length, width, height, weight. Also, engine efficiency data: fuel consumption, acceleration efficiency, uphill efficiency, and so on. Different engine data is needed for an electric vehicle.
 
-A mass of physical data, and engine efficiency data, can be specified using the Azure Maps API. However, decent defaults are available. And, as we're only having some fun at this stage, the **fuelEnergyDensityInMJoulesPerLiter** setting does not interest us much right now!
+A mass of physical data, and engine efficiency data, can be specified using the Azure Maps API. However, decent defaults are available. And, as we're only having some fun at this stage, the `fuelEnergyDensityInMJoulesPerLiter` setting does not interest us much right now!
 
 In our sample app, we specify three vehicles, a bicycle, a car, and a truck. We set the width, height, and length for all three. For the truck, we add a fourth variable, the load. The load neatly brings hazardous materials into the picture!
 
@@ -49,7 +49,7 @@ In our sample app, we specify three vehicles, a bicycle, a car, and a truck. We 
 
 A fun feature of the app we're going to build, is the ability to set a hazardous material classification for our truck.
 
-There are nine classifications of hazardous materials, agree upon by the  _United Nations Committee of Experts on the Transport of Dangerous Goods_. These nine classes are summarized in the following table, along with the US hazard class. These classifications apply to all forms of transport - road, rail, sea, air, and inland waterways. he numerical order of the classes _does not_ indicate a greater or lesser degree of danger.
+There are nine classifications of hazardous materials, agreed upon by the  _United Nations Committee of Experts on the Transport of Dangerous Goods_. These nine classes are summarized in the following table, along with the US hazard class. These classifications apply to all forms of transport - road, rail, sea, air, and inland waterways. The numerical order of the classes _does not_ indicate a greater or lesser degree of danger.
 
 | Classification | Description |
 | -------------- | ----------- |
@@ -69,7 +69,7 @@ With the given classification, certain roads can't be used. The first three do h
 
 Azure Maps uses the metric system as its base for calculations. For example, the length, width and height of vehicles is specified in meters. Also, fuel consumption is stored as litres, and used in constants such as `currentFuelInLitres`, `constantSpeedConsumptionInLitersPerHundredkm`, and `fuelEnergyDensityInMJoulesPerLiter`. We don't go into engine fuel consumption models in this module, but you can tweak these parameters to diverge from the default consumption model.
 
-If you wanted your user to see miles, or US, or Imperial, gallons, for example. You would need to multiply the values returned by Azure Maps by appropriate constants.
+Say you wanted your user to see miles, or US, or Imperial, gallons, for example. You would need to multiply the values returned by Azure Maps by appropriate constants.
 
 ## Azure Maps and Azure IoT
 
@@ -77,17 +77,17 @@ Azure IoT, the "Internet of Things", provides cloud resources to read telemetry 
 
 In addition to fleet management, other popular location-based scenarios include asset tracking, and smart city applications. You can imagine that if you managed a group of smart buildings, all with temperature, humidity, and security sensors, that seeing the exact map location of each device might be valuable, and reassuring. Perhaps the map with the device locations would be part of an IoT dashboard. The other elements of the dashboard might show incoming telemetry, and provide some commands to send to the devices.
 
-IoT is all about remote devices sending data to a single cloud service, known as an IoT Hub, for storage and processing. Check out the Learn modules that provide introductory material on IoT, and one that combines Azure Maps and IoT, in the Summary section of this module.
+IoT is all about remote devices sending data to a single cloud service, known as an IoT Hub, for storage and processing. Check out the Learn modules that provide introductory material on IoT, and one that combines Azure Maps and IoT, in the **Summary** section of this module.
 
 ## Making calls to Azure Maps using JavaScript
 
-In the discussion above, you'll remember that the map view can be zoomed in to great detail, or zoomed out to see the whole world. We need some control over the view. This control is done by setting a _start_ and _end_ point for a route, and calling a camera function in Azure Maps. These points specify a bounding box for the region that needs to be shown by default. The user can change the zoom, but the first view will show the whole route.
+In the discussion above, you'll remember that the map view can be zoomed in to great detail, or zoomed out to see the whole world. We need some control over the view. This control is done by setting a _start_ and _end_ point for a route, and calling a _camera_ function in Azure Maps. These points specify a bounding box for the region that needs to be shown by default. The user can change the zoom, but the first view will show the whole route.
 
 Also mentioned above is the concept of layers. In our app, we add a layer to show the route, with certain colors and line thicknesses for the three vehicles. So, all three routes can be displayed at the same time. Some graphic icons are added, to a second layer, to show the start, end, and intermediary points of the route.
 
-The same start and end points are used to set up _coordinates_. The coordinates are the basis of the main call of our app. A **routeURL** object is created, and a call to **calculateRouteDirections** can be made. Note there's a timeout value in milliseconds. It can take quite a few seconds to calculate the best bicycle route from Seattle to Miami! And you may want to bail on your route finding if it's taking too long.
+The same start and end points are used to set up _coordinates_. The coordinates are the basis of the main call of our app. A `routeURL` object is created, and a call to `calculateRouteDirections` can be made. Note there's a timeout value in milliseconds. It can take quite a few seconds to calculate the best bicycle route from Seattle to Miami! And you may want to bail on your route finding if it's taking too long.
 
-The following code is a snippet from the source code in the next unit. It shows the all important call, and how it returns the **directions**.
+The following code is a snippet from the source code in the next unit. It shows the all important call, and how it returns the `directions`.
 
 ```javascript
     ...

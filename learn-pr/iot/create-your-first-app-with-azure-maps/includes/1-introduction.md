@@ -19,8 +19,8 @@ In this module, you'll:
 ## Prerequisites
 
 - An introductory knowledge of the purpose of Azure Maps
-- Ability to navigate Azure portal
-- Ability to use HTML and JavaScript, at the beginner level
+- Ability to navigate the Azure portal
+- Ability to use HTML, and JavaScript, at the beginner level
 - Experience using Visual Studio Code, at the beginner level
 
 ## The scenario
