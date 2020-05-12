@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.make-predictions-with-linear-regression.visual-diagnostics
-title: Visual Diagnostics
+title: Visual diagnostics
 metadata:
-  title: Visual Diagnostics
+  title: Visual diagnostics
   description: Visualize the errors of regression
   ms.date: 03/19/2020
   author: leestott

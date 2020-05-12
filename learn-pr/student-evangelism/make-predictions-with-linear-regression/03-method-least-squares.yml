@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.make-predictions-with-linear-regression.method-least-squares
-title: Method of Least Squares
+title: Method of least squares
 metadata:
-  title: Method of Least Squares
+  title: Method of least squares
   description: Understand the method of least squares
   ms.date: 03/19/2020
   author: leestott

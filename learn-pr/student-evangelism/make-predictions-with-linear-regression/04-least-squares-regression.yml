@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.make-predictions-with-linear-regression.least-squares-regression
-title: least squares regression
+title: Least squares regression
 metadata:
-  title: Least Squares Regression
+  title: Least squares regression
   description: Regression using least squares
   ms.date: 03/19/2020
   author: leestott

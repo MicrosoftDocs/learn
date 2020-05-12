@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.make-predictions-with-linear-regression.numerical-diagnostics
-title: numerical diagnostics
+title: Mumerical diagnostics
 metadata:
-  title: Numerical Diagnostics
+  title: Numerical diagnostics
   description: Understand properties about the residuals from regression
   ms.date: 03/19/2020
   author: leestott
