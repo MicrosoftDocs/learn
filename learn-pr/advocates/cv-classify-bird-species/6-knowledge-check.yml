@@ -1,0 +1,58 @@
+## YamlMime:ModuleUnit
+uid: learn.advocates.cv-classify-bird-species.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 04/30/2020
+  author: cassieview
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Answer the following questions to check your understanding.
+  questions:
+    - content: "What is the purpose of artificial intelligence?"
+      choices:
+        - content: "To build Skynet."
+          isCorrect: false
+          explanation: "Incorrect! Skynet is from a movie and isn't real."
+        - content: "To mimic human intelligence by using a computer."
+          isCorrect: true
+          explanation: "Correct!"
+    - content: "Which of the following options <i>isn't</i> an indicator that Azure Cognitive Services Custom Vision provides to help you understand how well the model performs?"
+      choices:
+        - content: "A confusion matrix"
+          isCorrect: true
+          explanation: "Correct! A confusion matrix is a valid metric, but it isn't provided by Azure Cognitive Services Custom Vision."
+        - content: "Recall"
+          isCorrect: false
+          explanation: "Incorrect. The recall metric is provided."
+        - content: "Average precision, or AP"
+          isCorrect: false
+          explanation: "Incorrect. The AP metric is provided."
+        - content: "Precision"
+          isCorrect: false
+          explanation: "Incorrect. The precision metric is provided."
+    - content: "What's a common rookie mistake?"
+      choices:
+        - content: "Using bad data."
+          isCorrect: true
+          explanation: "Correct! Good data is key to making a good machine learning model."
+        - content: "Using too much data."
+          isCorrect: false
+          explanation: "Incorrect. More data is better, if the data is good data."
+        - content: "Using unseen (new) data to test."
+          isCorrect: false
+          explanation: "Incorrect. You always want to test by using unseen (new) data."
+    - content: "The model shouldn't be deployed until it has perfect results and is 100% accurate on all classes."
+      choices:
+        - content: "False"
+          isCorrect: true
+          explanation: "Correct! You must decide when the model is performing <i>good enough</i> for the problem you're trying to solve."
+        - content: "True"
+          isCorrect: false
+          explanation: "Incorrect. There's always some error in models. Machine learning models will never be perfect."

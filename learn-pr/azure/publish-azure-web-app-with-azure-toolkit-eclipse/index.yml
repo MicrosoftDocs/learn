@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Experience writing web apps in Java
   - Familiarity with the [Eclipse IDE](https://www.eclipse.org/ide/) to write projects in Java
-  - The [Azure Toolkit for Eclipse](https://docs.microsoft.com/azure/java/eclipse/azure-toolkit-for-eclipse)
+  - The [Azure Toolkit for Eclipse](https://docs.microsoft.com/azure/developer/java/toolkit-for-eclipse/)
   - The [Apache Tomcat](http://tomcat.apache.org/) server
 iconUrl: /learn/achievements/publish-azure-web-app-with-azure-toolkit-eclipse.svg
 levels:

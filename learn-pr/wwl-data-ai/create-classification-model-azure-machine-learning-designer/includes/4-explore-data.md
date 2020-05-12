@@ -70,8 +70,6 @@ To see the effect of your data transformations, you need to run the pipeline as 
 > ![diabetes-data dataset with Normalize Data module](../media/data-prep-pipeline.png)
 
 2. Select **Submit**, and run the pipeline as a new experiment named **diabetes-training**.
-3. Wait for the run to complete - this may take a few minutes.
-4. When the run has completed (indicated by a &#x2705; icon for each module other than the dataset), select the **Normalize Data** module and in the settings pane, on the **Outputs + Logs** tab, under **Port outputs** in the **Transformed dataset** section, use the **Visualize** icon to view the transformed columns.
-5. Close the **Normalize Data** visualization, then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon.
+3. Wait for the run to complete - this may take a few minutes and will be indicated by a &#x2705; icon on the **Normalize Data** module.
 
 The dataset is now prepared for model training.
