@@ -37,4 +37,3 @@ not just whether there there is a relation between chocolate and health.
 The establishment of causality often takes place in two stages. First,
 an association is observed. Next, a more careful analysis leads to a
 decision about causality.
-ision about causality.
