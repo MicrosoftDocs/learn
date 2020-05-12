@@ -25,14 +25,14 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 
 Soon after launching the script, a code editor window will appear. You may investigate the code while the script continues to deploy the containers to AKS.
 
-The following directories contain .NET Core projects, each of which is built to containers and deployed to AKS:
+The following directories in *src/* contain .NET Core projects, each of which is containerized and deployed to AKS:
 
 | Project directory | Description |
 |-------------------|-------------|
-| *src/Aggregators/* | Services to aggregate across multiple microservices for certain cross-service operations. This is implemented by the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator* project. |
-| *src/BuildingBlocks/* | These services provide cross-cutting functionality, such as the app's event bus used for inter-service events. |
-| *src/Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own database or other data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), **D**omain-**D**riven **D**esign (DDD), and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS).
-| *src/Web/* | ASP.NET Core apps that implement user interfaces. *WebSPA* is the storefront UI. *WebStatus* is the health check app for monitoring the operational status of the app.
+| *Aggregators/* | Services to aggregate across multiple microservices for certain cross-service operations. This is implemented by the *ApiGateways/Aggregators/Web.Shopping.HttpAggregator* project. |
+| *BuildingBlocks/* | Services that provide cross-cutting functionality, such as the app's event bus used for inter-service events. |
+| *Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), **D**omain-**D**riven **D**esign (DDD), and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS). |
+| *Web/* | ASP.NET Core apps that implement user interfaces:<br>*WebSPA* is a storefront UI built with Angular. *WebStatus* is the health checks dashboard for monitoring the operational status of each service. |
 
 ![eShop application architecture](../media/temp/eshop-architecture.png)
 
@@ -55,6 +55,9 @@ You can begin exploring these services (when available):
 
     ![Health check page](../media/temp/health-check.png)
 
+    > [!NOTE]
+    > While the app is warming up, you may receive an HTTP 50x response from the server. You may retry after a few seconds. The Seq logs viewable at the **Centralized logging** URL will be available before the other endpoints. 
+
 1. Once all the services are healthy, select the **Web SPA application** link to test the eShop on Containers web app.
 
     ![eShop SPA](../media/temp/eshop-spa.png)
@@ -63,7 +66,7 @@ You can begin exploring these services (when available):
 
 ## Add the coupon service
 
-A project for the coupon service has been provided in *src/Services/Coupon*.
+An ASP.NET Core project for the coupon service has been provided in *src/Services/Coupon*.
 
 1. Open *src/Services/Coupon/Coupon.API/Controllers/CouponController.cs*.
 1. Replace the comment `/* Add the GetCouponByCodeAsync method */` with the following code:
@@ -92,12 +95,21 @@ A project for the coupon service has been provided in *src/Services/Coupon*.
 
     * The `CouponRepository` class' `FindCouponByCodeAsync` method retrieves the coupon corresponding to the provided `code` parameter value. The coupon is retrieved from a MongoDB database.
     * If the coupon returned is `null` or has already been used, an HTTP 404 status code is returned.
-    * If the coupon returned isn't `null` and hasn't already been used, the `Coupon` object is converted to a `CouponDto` Data Transfer Object (DTO). Finally, an HTTP 200 status code is returned along with the DTO.
+    * If the coupon returned isn't `null` and hasn't already been used, the `Coupon` object is converted to a `CouponDto` **D**ata **T**ransfer **O**bject (DTO). Finally, an HTTP 200 status code is returned along with the DTO.
 
-1. Open *Startup.cs*.
-1. Note on line 38 `.AddCustomHealthCheck(Configuration)`. %TODO% Explanation of AddCustomHealthCheck
-1. Note on lines 70-82 %TODO% Explanation of /hc and /liveness endpoints
-1. Execute the following script:
+1. Make the following changes to the ConfigureServices method in *src/Services/Coupon/Coupon.API/Startup.cs*
+
+    [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configureServices&highlight=13)]
+
+    The preceding change adds the custom health check service to the app.
+
+1. Also in *Startup.cs*, make following changes to the Configure method:
+
+    [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configure&highlight=30-38)]
+
+    The preceding change adds the readiness `/hc` and liveness `/liveness` endpoints for the custom health check service.
+
+1. Run the following script in the command shell to make additional configuration changes for the coupon service:
 
     ```bash
     ./deploy/k8s/implementation-script.sh
@@ -105,25 +117,37 @@ A project for the coupon service has been provided in *src/Services/Coupon*.
 
     The preceding script:
 
-    * Uncomments the coupon field and markup in the SPA.
-    * Creates a helm charts for the coupon service (%TODO% explain the following: helm-simple/coupon/Chart.yaml helm-simple/coupon/templates/deployment.yamhelm-simple/coupon/templates/service.yaml helm-simple/coupon/templates/configmap.yaml helm-simple/coupon/templates/ingress.yaml )
-    * Adds the coupon service endpoints to the aggregator (see helm-simple/webshoppingagg/templates/configmap.yaml)
-    * Adds the coupon health check to the webstatus (see helm-simple/webstatus/templates/configmap.yaml)
+    * Uncomments HTML markup in the WebSPA checkout and order details views to support accepting coupon codes and displaying discount amounts, respectively.
+    * Creates a Helm chart for the coupon service in *deploy/k8s/helm-simple/*. 
+    * Adds the coupon service endpoints to the aggregator Helm chart in *deploy/k8s/helm-simple/webshoppingagg/templates/configmap.yaml*
+    * Adds the coupon health check to the WebStatus Helm chart in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*.
+
+    The Helm chart for the coupon service is comprised of five files in *deploy/k8s/helm-simple/coupon/*:
+
+    | File | Description |
+    |------|-------------|
+    | *Chart.yaml* | %TODO% - Nish |
+    | *templates/deployment.yaml* | %TODO% - Nish |
+    | *templates/service.yaml* | %TODO% - Nish |
+    | *templates/configmap.yaml* | %TODO% - Nish |
+    | *templates/ingress.yaml* | %TODO% - Nish |
 
 1. Open *deploy/k8s/build-to-acr.sh*
 
     %TODO% explain that we're building the project to ACR in this script
-1. Execute the script by running:
+    
+1. Run the following script in the command shell:
 
     ```bash
     ./deploy/k8s/build-to-acr.sh
     ```
 
     The containers are published to ACR.
+
 1. Open *deploy/k8s/update-to-aks.sh*
 
     %TODO% explain that this is installing Helm charts
-1. Execute the script by running:
+1. Run the following script in the command shell:
 
     ```bash
     ./deploy/k8s/update-to-aks.sh
@@ -132,13 +156,13 @@ A project for the coupon service has been provided in *src/Services/Coupon*.
 1. After the app deploys, refresh the page.
 1. Add items to the cart.
 1. Navigate to the cart and select **Check out**.
-1. Add the coupon code **DISC-15**.
+1. Add the coupon code *DISC-15*.
 
 ## Clean up Azure resources
 
 To de-provision... 
 
-```bash
+```azurecli
 az group delete --name eshop-learn-rg --yes
 ```
 
