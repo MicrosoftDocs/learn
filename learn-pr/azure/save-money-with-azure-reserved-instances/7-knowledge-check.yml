@@ -11,5 +11,40 @@ metadata:
   ROBOTS: NOINDEX
 title: Knowledge check
 durationInMinutes: 1
-content: |
-  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "When you enable Azure Disk Encryption (ADE) on a Windows virtual machine (VM), what does it use to encrypt the data on your virtual hard disks?"
+    choices:
+    - content: "DM-Crypt"
+      isCorrect: false
+      explanation: "DM-Crypt is used on Linux virtual machines."
+    - content: "BitLocker"
+      isCorrect: true
+      explanation: "Windows VMs are encrypted using BitLocker."
+    - content: "Azure Key Vault"
+      isCorrect: false
+      explanation: "Azure Key Vault is integrated with ADE to manage the disk-encryption keys and secrets."
+  - content: "To use Azure Key Vault with ADE, what policy do you need to set?"
+    choices:
+    - content: "Configure an access policy to permit at least one security principal."
+      isCorrect: false
+      explanation: "You don't need to configure a security principal for ADE."
+    - content: "Create an access policy to allow template deployment."
+      isCorrect: false
+      explanation: "The template deployment access policy allows Azure Resource Manager to get secrets from the key vault when the key vault is referenced in a template deployment."
+    - content: "Set the key vault access policy to support disk encryption."
+      isCorrect: true
+      explanation: "You must set the access policy on the Azure Key Vault to allow disk encryption with ADE."
+  - content: "Suppose you create a new VM with a single OS disk and a single data disk. You use the default options when you create the VM. You don't have an Azure Key Vault set up in your subscription. Which option most accurately describes the encryption state of those disks?"
+    choices:
+    - content: "Both disks are unencrypted."
+      isCorrect: false
+      explanation: "Storage Service Encryption (SSE) is enabled by default for new virtual hard disks. With SSE, Azure manages the keys and automatically decrypts data for any read operations without impact on performance."
+    - content: "The OS disk is encrypted using Storage Service Encryption (SSE). The data disk is unencrypted."
+      isCorrect: false
+      explanation: "Storage Service Encryption (SSE) is enabled by default for new virtual hard disks. With SSE, Azure manages the keys and automatically decrypts data for any read operations without impact on performance."
+    - content: "Both disks are encrypted using Storage Service Encryption."
+      isCorrect: true
+      explanation: "All disks are encrypted using SSE by default. With SSE, Azure manages the keys and automatically decrypts data for any read operations without impact on performance."
+
