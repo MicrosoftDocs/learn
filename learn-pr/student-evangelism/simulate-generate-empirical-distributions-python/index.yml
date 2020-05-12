@@ -2,14 +2,14 @@
 uid: learn.student-evangelism.simulate-generate-empirical-distributions-python
 metadata:
   title: Simulate and generate empirical distributions in Python
-  description: Learn how to simulate and generate empirical distributions in python
+  description: Learn how to simulate and generate empirical distributions in Python
   ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Simulate and generate empirical distributions in Python
-summary: Learn how to simulate and generate empirical distributions in python
+summary: Learn how to simulate and generate empirical distributions in Python
 abstract: |
   In this module, you will:
   - Study the idea of randomness, analyzed its importance, learned relevant terminology and studied the Law of Averages.
