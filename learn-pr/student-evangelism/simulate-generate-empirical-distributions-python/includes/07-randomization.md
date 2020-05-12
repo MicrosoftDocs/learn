@@ -49,3 +49,16 @@ women to your "alcohol" group. You should not expect cooperation from
 them if you present them with a drink. In such situations, you will
 almost invariably be conducting an observational study, not an
 experiment. Be alert for confounding factors.
+
+> [!IMPORTANT]
+> "Kristen Gilbert was an American nurse in the 1990’s who had established a reputation of being good in crisis situations. When a patient went into cardiac arrest, she would stay calm, sound the code blue alarm, and administer epinephrine to restart the heart. However, other nurses at the hospital became suspicious of Gilbert because it seemed like there was an unusual number of code blue calls when she was working. Some nurses thought that Gilbert was administering fatal injections to patients to cause their cardiac arrest, but no one ever witnessed this directly."
+>
+> "Here are the data. There were 1641 shifts in total. Each shift was classified according to whether or not there was at least one death and whether or not Gilbert was present.
+>
+> |GILBERT PRESENT?| Yes        | No        | Total      |
+> |----------------|------------|-----------|------------|
+> |Yes             | 40         | 217       | 257        |
+> |No              | 34         | 1350      | 1384       |
+> |Total           | 74         | 1567      | 1641       |
+>
+> In defense of Gilbert, assess whether her shifts are like random draws from all 1641 shifts in the following steps."

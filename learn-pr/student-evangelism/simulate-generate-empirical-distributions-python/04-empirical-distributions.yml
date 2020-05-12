@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.simulate-generate-empirical-distributions-python.empirical-distributions
-title: Empirical Distributions
+title: Empirical distributions
 metadata:
-  title: Empirical Distributions
+  title: Empirical distributions
   description: Generate empirical distributions.
   ms.date: 03/19/2020
   author: leestott
