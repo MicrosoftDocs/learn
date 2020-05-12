@@ -13,7 +13,7 @@ Azure Security Center is part of the [Center for Internet Security (CIS) recomme
 
   :::column-end:::
   :::column:::
-    ![Image representing Azure Security Center](../media/2a-securitycenter.png)
+    :::image type="icon" source="../media/2a-securitycenter.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -34,7 +34,7 @@ You can integrate Security Center into your workflows and use it in many ways. H
 
     Many organizations learn how to respond to security incidents only after suffering an attack. To reduce costs and damage, it's important to have an incident response plan in place before an attack occurs. You can use Azure Security Center in different stages of an incident response.
 
-    ![Circular arrows point from the words detect, to assess, to diagnose, to stabilize, to close](../media/2a-security-center-incident-response.png)
+    :::image type="content" source="../media/2a-security-center-incident-response.png" alt-text="Diagram showing direction of incident response from detect to assess to diagnose to stabilize and then to close":::
 
     You can use Security Center during the detect, assess, and diagnose stages. Here are examples of how Security Center can be useful during the three initial incident response stages:
 

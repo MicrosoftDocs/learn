@@ -42,7 +42,7 @@ With single sign-on (SSO), users need to remember only one ID and one password. 
 
 :::row:::
   :::column:::
-    ![A thumbprint representing Azure Active Directory](../media/3-sso-with-azure-ad.png)
+    :::image type="icon" source="../media/3-sso-with-azure-ad.png" border="false":::
   :::column-end:::
   :::column span="3":::
 **SSO with Azure Active Directory**
@@ -77,7 +77,7 @@ Azure AD addresses this problem through two methods: service principals and mana
 
 :::row:::
   :::column:::
-    ![Image representing various roles](../media/3-service-principals.png)
+    :::image type="icon" source="../media/3-service-principals.png" border="false":::
   :::column-end:::
   :::column span="3":::
 **Service principals**
@@ -94,7 +94,7 @@ A **service principal** is an identity that is used by a service or application.
 
 :::row:::
   :::column:::
-    ![Image representing managed identities](../media/3-managed-service-identities.png)
+    :::image type="icon" source="../media/3-managed-service-identities.png" border="false":::
   :::column-end:::
   :::column span="3":::
 **Managed identities for Azure services**
@@ -115,13 +115,13 @@ Roles can be granted at the individual service instance level, but they also flo
 
 Here's a diagram that shows this relationship. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances.
 
-![An illustration showing the hierarchical representation of role-based access in a management group.](../media/3-role-assignment-scope.png)
+:::image type="content" source="../media/3-role-assignment-scope.png" alt-text="Illustration showing the hierarchical representation of role-based access in a management group starting at management group above subscription above resource group above resource.":::
 
 ### Privileged Identity Management
 
 In addition to managing Azure resource access with role-based access control (RBAC), a comprehensive approach to infrastructure protection should consider including the ongoing auditing of role members as their organization changes and evolves. Azure AD Privileged Identity Management (PIM) is an additional, paid-for offering that provides oversight of role assignments, self-service, and just-in-time role activation and Azure AD and Azure resource access reviews.
 
-![Screenshot of Privileged identity management dashboard](../media/PIM_Dashboard.png)
+:::image type="content" source="../media/PIM_Dashboard.png" alt-text="Screenshot of Azure portal showing privileged identity management dashboard with a graph of directory activation, users, and roles.":::
 
 ## Summary
 

@@ -2,7 +2,7 @@ In this module, we discussed the basic concepts for protecting your infrastructu
 
 **Defense in depth** is the overriding theme - think about security as a multi-layer, multi-vector concern. Threats come from places we don't expect, and they can come with strength that will surprise us.
 
-![Concept of being safe from security threats](../media/6-heading.png)
+:::image type="icon" source="../media/6-heading.png" border="false":::
 
 Azure has out-of-the-box help for a great deal of the security issues we face. One of the first steps we should take is assessing how much help from Azure we can use based on whether we're leveraging IaaS, PaaS, or SaaS.
 

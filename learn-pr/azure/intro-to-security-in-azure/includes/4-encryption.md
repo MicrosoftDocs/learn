@@ -23,7 +23,7 @@ The actual data that is encrypted could vary in its content, usage, and importan
 
 Here's a diagram that shows what encrypted customer data might look like as it sits in a database.
 
-![An illustration showing an example of encryption at rest. The data is saved in the storage in an encrypted form accessed only through a key.](../media/encryption-at-rest.png)
+:::image type="content" source="../media/encryption-at-rest.png" alt-text="Illustration showing an example of encryption at rest. The incoming plaintext data is saved in storage in an encrypted form accessible only through a key.":::
 
 ## Encryption in transit
 
@@ -35,7 +35,7 @@ Encrypting data in transit protects the data from outside observers and provides
 
 This diagram shows the process. Here, customer data is encrypted as it's sent over the network. Only the receiver has the secret key that can decrypt the data to a usable form.
 
-![An illustration showing an example of encryption in transit. The data is encrypted before it is transferred. Once it reaches the destination, the data is then decrypted.](../media/encryption-in-transit.png)
+:::image type="content" source="../media/encryption-in-transit.png" alt-text="Illustration showing an example of encryption in transit. The data is encrypted before it is transferred. Once the data reaches the destination, it is then decrypted.":::
 
 ## Encryption on Azure
 
@@ -43,7 +43,7 @@ Let's take a look at some ways that Azure enables you to encrypt data across ser
 
 :::row:::
   :::column:::
-    ![Image representing encrypted storage](../media/4-encrypt-raw-storage.png)
+    :::image type="icon" source="../media/4-encrypt-raw-storage.png" border="false":::
   :::column-end:::
   :::column span="3":::
 **Encrypt raw storage**
@@ -55,7 +55,7 @@ Let's take a look at some ways that Azure enables you to encrypt data across ser
 
 :::row:::
   :::column:::
-    ![Image representing an encrypted virtual machine](../media/4-encrypt-virtual-machines.png)
+    :::image type="icon" source="../media/4-encrypt-virtual-machines.png" border="false":::
   :::column-end:::
   :::column span="3":::
 **Encrypt virtual machine disks**
@@ -70,7 +70,7 @@ For Contoso Shipping, using VMs was one of the first moves toward the cloud. Hav
 
 :::row:::
   :::column:::
-    ![Image representing an encrypted database](../media/4-encrypt-databases.png)
+    :::image type="icon" source="../media/4-encrypt-databases.png" border="false":::
   :::column-end:::
   :::column span="3":::
 **Encrypt databases**
@@ -86,7 +86,7 @@ Because TDE is enabled by default, you are confident that Contoso Shipping has t
 
 :::row:::
   :::column:::
-    ![Image representing an encrypted secret](../media/4-encrypt-secrets.png)
+    :::image type="icon" source="../media/4-encrypt-secrets.png" border="false":::
   :::column-end:::
   :::column span="3":::
 **Encrypt secrets**

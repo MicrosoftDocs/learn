@@ -10,7 +10,7 @@ Azure ATP consists of several components.
 
 Azure ATP has its own portal, through which you can monitor and respond to suspicious activity. The Azure ATP portal allows you to create your Azure ATP instance, and view the data received from Azure ATP sensors. You can also use the portal to monitor, manage, and investigate threats in your network environment. You can sign in to the Azure ATP portal at [https://portal.atp.azure.com](https://portal.atp.azure.com?azure-portal=true). Your user accounts must be assigned to an Azure AD security group that has access to the Azure ATP portal to be able to sign in.
 
-![Screenshot of Azure Advanced Threat Protection dashboard and event timeline, showing security events such as HoneyToken activity, remote execution attempt detected, and suspicious service created.](../media/7-atp-sa-timeline.png)
+:::image type="content" source="../media/7-atp-sa-timeline.png" alt-text="Screenshot of Azure Advanced Threat Protection dashboard and event timeline, showing security events such as HoneyToken activity, remote execution attempt detected, and suspicious service created.":::
 
 ### Azure ATP sensor
 
