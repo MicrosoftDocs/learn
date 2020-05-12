@@ -154,10 +154,10 @@ Third Years among the students who have Declared**.
 
 ### Tree Diagram
 
-The proportion that we have just calculated was based on a class of 100
+The proportion that we have calculated was based on a class of 100
 students. But there's no reason the class couldn't have had 200
 students, for example, as long as all the proportions in the cells were
-correct. Then our calculation would just have been 64/(60 + 64) which is
+correct. Then our calculation would have been 64/(60 + 64) which is
 0.516 as before.
 
 So the calculation depends only on the proportions in the different
@@ -206,7 +206,7 @@ who are Declared**, as before.
 
 ### Bayes' rule
 
-The method that we have just used is due to the Reverend Thomas
+The method that we have used is due to the Reverend Thomas
 Bayes (1701-1761). His
 method solved what was called an "inverse probability" problem: given
 new data, how can you update chances you had found earlier? Though Bayes
