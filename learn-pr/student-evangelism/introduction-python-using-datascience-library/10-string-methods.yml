@@ -3,7 +3,7 @@ uid: learn.student-evangelism.introduction-python-using-datascience-library.stri
 title: String methods
 metadata:
   title: String methods
-  description: Introduction to String Methods
+  description: Introduction to string methods
   ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
@@ -25,7 +25,7 @@ quiz:
           isCorrect: true
         - content: '"xy"'
           isCorrect: false
-          explanation: Incorrect. x and y is not regognized as strings in python without quotation marks, so string concatenation rules doesn't apply here.
+          explanation: Incorrect. x and y is not recognized as strings in python without quotation marks, so string concatenation rules doesn't apply here.
     - content: what will y + z evaluate to?
       choices:
         - content: '6'
