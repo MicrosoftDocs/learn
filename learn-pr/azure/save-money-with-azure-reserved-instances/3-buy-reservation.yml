@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.save-money-with-azure-reserved-instances.buy-reservation
+metadata:
+  title: Make a purchase
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Make a purchase
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-buy-reservation.md)]

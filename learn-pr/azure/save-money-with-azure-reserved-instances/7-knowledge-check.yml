@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.save-money-with-azure-reserved-instances.knowledge-check
+metadata:
+  title: Knowledge check
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Knowledge check
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-knowledge-check.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.save-money-with-azure-reserved-instances.view-reservation-reports
+metadata:
+  title: Reporting after purchase
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Reporting after purchase
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-view-reservation-reports.md)]

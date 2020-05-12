@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.save-money-with-azure-reserved-instances
+metadata:
+  title: Save money with Azure Reserved Instances
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: ...
+  ms.prod: ...
+title: Save money with Azure Reserved Instances
+summary: Save money by taking advantage of Azure up front compute purchase options. Analyze and decide what to purchase and then learn how to make a purchase. Understand the benefits provided through compute purchases and optimize against any under use. Perform basic reporting on your reservations.
+abstract: | 
+  In this module, you will:
+  - Understand what reserved instance purchases are and how they can benefit your organization.
+  - Choose the right compute purchase for your business, transact the purchase and manage it going forward.
+  - Monitor and optimize your purchases using available tools.
+  - Perform and access basic reporting on your purchases.
+prerequisites: | 
+  A subscription owner role in one of the following subscription types:
+  - Enterprise offers MS-AZR-0017P or MS-AZR-0148P
+  - Pay-As-You-Go offers MS-AZR-0003P or MS-AZR-0023P
+  - Microsoft Customer Agreement offer MS-AZR-0017G
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels: 
+- beginner
+roles: 
+- administrator
+- developer
+products: 
+- azure
+- azure-cost-management
+units:
+- learn.save-money-with-azure-reserved-instances.introduction
+- learn.save-money-with-azure-reserved-instances.determine-purchase
+- learn.save-money-with-azure-reserved-instances.buy-reservation
+- learn.save-money-with-azure-reserved-instances.manage-your-reservation
+- learn.save-money-with-azure-reserved-instances.monitor-reservations-use
+- learn.save-money-with-azure-reserved-instances.view-reservation-reports
+- learn.save-money-with-azure-reserved-instances.knowledge-check
+- learn.save-money-with-azure-reserved-instances.summary
+badge:
+  uid: learn.save-money-with-azure-reserved-instances.badge
