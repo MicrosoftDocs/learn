@@ -16,7 +16,7 @@ Managing the entire lifecycle at scale is complicated. Organizations have to be 
 * **Auditability:** It can be difficult to ensure that models meet regulatory standards and performance thresholds over time.
 * **Explainability:** Black box models make it difficult to understand how the model works.
 
-These challenges are similar to what application development teams face when creating and managing apps. To help, they use DevOps, the industry standard for managing operations for an application development cycle. To address these challenges with machine learning, organizations need an approach that brings the agility of DevOps to the ML lifecycle. We call this approach MLOps.
+These challenges are similar to what application development teams face when creating and managing apps. To help, they use DevOps, the industry standard for managing operations for an application development- cycle. To address these challenges with machine learning, organizations need an approach that brings the agility of DevOps to the ML lifecycle. We call this approach MLOps.
 
 ## Typical ML lifecycle
 
