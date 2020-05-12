@@ -1,4 +1,4 @@
-As a Node.js developer on Tailwind Traders you are running applications on many different systems with a multitude of operating systems. Also not all of our Node.js apps can for various reasons run on the same version of Node.js. For that reason we will take a closer look at the tool `nvm` to help us manage our installations.
+As a Node.js developer on Tailwind Traders you are running applications on many different systems with a multitude of operating systems. Also not all of our Node.js apps can for various reasons run on the same version of Node.js. For that reason you will use the tool NVM to install Node.js with and to manage different installations.
 
 ## Learn to leverage NVM
 

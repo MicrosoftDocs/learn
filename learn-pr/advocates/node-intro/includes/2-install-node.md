@@ -4,7 +4,7 @@ There are many ways to install Node.js. We list a few of the most common options
 - Install via Brew, Brew is a popular package manager for Linux and Mac.
 - Install via NVM, NVM stands for Node Version Manager. NVM will not only help you install a desired version of Node.js but help you manage your installation. Let's go deeper into what that means in this section.
 
-Above you have three really great options for install Node.js on your system. Let's now delve into more detail on what the required steps are to download it but also install it and verify that everything went well.
+Above you have three great options for install Node.js on your system. Let's now delve into more detail on what the required steps are to download it but also install it and verify that everything went well.
 
 ## Install via executable
 
@@ -12,9 +12,9 @@ Here's an excerpt from the Install page found at `https://nodejs.org/en/download
 
 ![Install page](../media/nodejs-install-page.png)
 
-As you can see above there are various installers available to cater to different OSs like Windows, Mac andd Linux. There's even source code available. What it also shows is how there are two different versions LTS and Current. What's that and which one should you choose?
+As you can see above there are various installers available to cater to different OSs like Windows, Mac and Linux. There's even source code available. What it also shows is how there are two different versions LTS and Current. What's that and which one should you choose?
 
-- `LTS`, LTS stands for **L**ong **t**erm **s**upport. Worth noting is how it comes with the description text `Recommended for most users`. LTS is meant for enterprise usage where frequent updates might not be possible or for various reasons are undesired.
+- `LTS`, LTS stands for **Long-term **s**upport. Worth noting is how it comes with the description text `Recommended for most users`. LTS is meant for enterprise usage where frequent updates might not be possible or for various reasons are undesired.
 
 - Current, this means it's under active development. Feature additions as well as breaking changes might happen. It should adhere to semantic versioning though [Semantic versioning](https://semver.org/)
 
@@ -24,13 +24,13 @@ To learn more about the different release types have a read here [Release types]
 
 ## Install via package manager Brew
 
-If you don't have Brew installed then run this command in your Mac/Linux terminal:
+If you don't have Brew installed, then run this command in your Mac/Linux terminal:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-Once you have Brew installed you can type the following command in your terminal to get the installation started:
+Once you have Brew installed, you can type the following command in your terminal to get the installation started:
 
 ```bash
 brew install node
@@ -49,13 +49,13 @@ NVM stands for Node Version Manager and is great tool you can install to help yo
 
 As you can see it's so much more than just an installation tool.
 
-Why would we need a tool that can do all that, isn't installation alone enough? If you work in a complex environment you might have a lot of projects you are maintaining. Not all of those projects might use the same version of Node.js for various reasons. Therefore you need to be able to have different versions of Node.js installed and you need to be able to choose which version of Node.js to run for which project.
+Why would we need a tool that can do all that, isn't installation alone enough? If you work in a complex environment, you might have numerous projects you are maintaining. Not all of those projects might use the same version of Node.js for various reasons. Therefore you need to be able to have different versions of Node.js installed and you need to be able to choose which version of Node.js to run for which project.
 
-If you have such a situation NVM is for you.
+If you have such a situation, NVM is for you.
 
 ## Verify installation
 
-Once Node.js has finished installing we can verify that everything is ok. One command we can run in our terminal is this command:
+Once Node.js has finished installing, we can verify that everything is ok. One command we can run in our terminal is this command:
 
 ```bash
 node --version
