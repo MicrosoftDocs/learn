@@ -35,133 +35,27 @@ more_cones = Table().with_columns(
 more_cones
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Color
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-light brown
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-pink
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-dark brown
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-bubblegum
-</td>
-<td>
-pink
-</td>
-<td>
-4.75
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Color|Price|
+|--- |--- |--- |
+|strawberry|pink|3.55|
+|chocolate|light brown|4.75|
+|chocolate|dark brown|5.25|
+|strawberry|pink|5.25|
+|chocolate|dark brown|5.25|
+|bubblegum|pink|4.75|
+
 We know how to use `group` to count the number of cones of each flavor:
 
 ``` {.python}
 more_cones.group('Flavor')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-count
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-bubblegum
-</td>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-3
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-2
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|count|
+|--- |--- |
+|bubblegum|1|
+|chocolate|3|
+|strawberry|2|
+
 But now each cone has a color as well. To classify the cones by both
 flavor and color, we will pass a list of labels as an argument to
 `group`. The resulting table has one row for every *unique combination*

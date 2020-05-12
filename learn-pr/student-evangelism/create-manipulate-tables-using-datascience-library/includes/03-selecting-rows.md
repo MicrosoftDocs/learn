@@ -28,207 +28,29 @@ For example, if we wanted just the first row of `nba`, we could use
 nba
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Paul Millsap
-</td>
-<td>
-PF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-18.6717
-</td>
-</tr>
-<tr>
-<td>
-Al Horford
-</td>
-<td>
-C
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-12
-</td>
-</tr>
-<tr>
-<td>
-Tiago Splitter
-</td>
-<td>
-C
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-9.75625
-</td>
-</tr>
-<tr>
-<td>
-Jeff Teague
-</td>
-<td>
-PG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-8
-</td>
-</tr>
-<tr>
-<td>
-Kyle Korver
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-5.74648
-</td>
-</tr>
-<tr>
-<td>
-Thabo Sefolosha
-</td>
-<td>
-SF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-4
-</td>
-</tr>
-<tr>
-<td>
-Mike Scott
-</td>
-<td>
-PF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-3.33333
-</td>
-</tr>
-<tr>
-<td>
-Kent Bazemore
-</td>
-<td>
-SF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-Dennis Schroder
-</td>
-<td>
-PG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-1.7634
-</td>
-</tr>
-<tr>
-<td>
-Tim Hardaway Jr.
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-1.30452
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Paul Millsap|PF|Atlanta Hawks|18.6717|
+|Al Horford|C|Atlanta Hawks|12|
+|Tiago Splitter|C|Atlanta Hawks|9.75625|
+|Jeff Teague|PG|Atlanta Hawks|8|
+|Kyle Korver|SG|Atlanta Hawks|5.74648|
+|Thabo Sefolosha|SF|Atlanta Hawks|4|
+|Mike Scott|PF|Atlanta Hawks|3.33333|
+|Kent Bazemore|SF|Atlanta Hawks|2|
+|Dennis Schroder|PG|Atlanta Hawks|1.7634|
+|Tim Hardaway Jr.|SG|Atlanta Hawks|1.30452|
+
 ... (407 rows omitted)
-</p>
+
 ``` {.python}
 nba.take(0)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Paul Millsap
-</td>
-<td>
-PF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-18.6717
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Paul Millsap|PF|Atlanta Hawks|18.6717|
+
 This is a new table with just the single row that we specified.
 
 We could also get the fourth, fifth, and sixth rows by specifying a
@@ -238,68 +60,12 @@ range of indices as the argument.
 nba.take(np.arange(3, 6))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Jeff Teague
-</td>
-<td>
-PG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-8
-</td>
-</tr>
-<tr>
-<td>
-Kyle Korver
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-5.74648
-</td>
-</tr>
-<tr>
-<td>
-Thabo Sefolosha
-</td>
-<td>
-SF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-4
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Jeff Teague|PG|Atlanta Hawks|8|
+|Kyle Korver|SG|Atlanta Hawks|5.74648|
+|Thabo Sefolosha|SF|Atlanta Hawks|4|
+
 If we want a table of the top 5 highest paid players, we can first sort
 the list by salary and then `take` the first five rows:
 
@@ -307,96 +73,14 @@ the list by salary and then `take` the first five rows:
 nba.sort('SALARY', descending=True).take(np.arange(5))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Kobe Bryant
-</td>
-<td>
-SF
-</td>
-<td>
-Los Angeles Lakers
-</td>
-<td>
-25
-</td>
-</tr>
-<tr>
-<td>
-Joe Johnson
-</td>
-<td>
-SF
-</td>
-<td>
-Brooklyn Nets
-</td>
-<td>
-24.8949
-</td>
-</tr>
-<tr>
-<td>
-LeBron James
-</td>
-<td>
-SF
-</td>
-<td>
-Cleveland Cavaliers
-</td>
-<td>
-22.9705
-</td>
-</tr>
-<tr>
-<td>
-Carmelo Anthony
-</td>
-<td>
-SF
-</td>
-<td>
-New York Knicks
-</td>
-<td>
-22.875
-</td>
-</tr>
-<tr>
-<td>
-Dwight Howard
-</td>
-<td>
-C
-</td>
-<td>
-Houston Rockets
-</td>
-<td>
-22.3594
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Kobe Bryant|SF|Los Angeles Lakers|25|
+|Joe Johnson|SF|Brooklyn Nets|24.8949|
+|LeBron James|SF|Cleveland Cavaliers|22.9705|
+|Carmelo Anthony|SF|New York Knicks|22.875|
+|Dwight Howard|C|Houston Rockets|22.3594|
+
 ### Rows Corresponding to a Specified Feature
 
 More often, we will want to access data in a set of rows that have a
@@ -424,169 +108,21 @@ than $\$10$ million.
 nba.where('SALARY', are.above(10))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Paul Millsap
-</td>
-<td>
-PF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-18.6717
-</td>
-</tr>
-<tr>
-<td>
-Al Horford
-</td>
-<td>
-C
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-12
-</td>
-</tr>
-<tr>
-<td>
-Joe Johnson
-</td>
-<td>
-SF
-</td>
-<td>
-Brooklyn Nets
-</td>
-<td>
-24.8949
-</td>
-</tr>
-<tr>
-<td>
-Thaddeus Young
-</td>
-<td>
-PF
-</td>
-<td>
-Brooklyn Nets
-</td>
-<td>
-11.236
-</td>
-</tr>
-<tr>
-<td>
-Al Jefferson
-</td>
-<td>
-C
-</td>
-<td>
-Charlotte Hornets
-</td>
-<td>
-13.5
-</td>
-</tr>
-<tr>
-<td>
-Nicolas Batum
-</td>
-<td>
-SG
-</td>
-<td>
-Charlotte Hornets
-</td>
-<td>
-13.1253
-</td>
-</tr>
-<tr>
-<td>
-Kemba Walker
-</td>
-<td>
-PG
-</td>
-<td>
-Charlotte Hornets
-</td>
-<td>
-12
-</td>
-</tr>
-<tr>
-<td>
-Derrick Rose
-</td>
-<td>
-PG
-</td>
-<td>
-Chicago Bulls
-</td>
-<td>
-20.0931
-</td>
-</tr>
-<tr>
-<td>
-Jimmy Butler
-</td>
-<td>
-SG
-</td>
-<td>
-Chicago Bulls
-</td>
-<td>
-16.4075
-</td>
-</tr>
-<tr>
-<td>
-Joakim Noah
-</td>
-<td>
-C
-</td>
-<td>
-Chicago Bulls
-</td>
-<td>
-13.4
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Paul Millsap|PF|Atlanta Hawks|18.6717|
+|Al Horford|C|Atlanta Hawks|12|
+|Joe Johnson|SF|Brooklyn Nets|24.8949|
+|Thaddeus Young|PF|Brooklyn Nets|11.236|
+|Al Jefferson|C|Charlotte Hornets|13.5|
+|Nicolas Batum|SG|Charlotte Hornets|13.1253|
+|Kemba Walker|PG|Charlotte Hornets|12|
+|Derrick Rose|PG|Chicago Bulls|20.0931|
+|Jimmy Butler|SG|Chicago Bulls|16.4075|
+|Joakim Noah|C|Chicago Bulls|13.4|
+
 ... (59 rows omitted)
-</p>
+
 The use of the argument `are.above(10)` ensured that each selected row
 had a value of `SALARY` that was greater than 10.
 
@@ -599,169 +135,21 @@ the data easier to analyze. DeMar DeRozan of the Toronto Raptors was the
 nba.where('SALARY', are.above(10)).sort('SALARY')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-DeMar DeRozan
-</td>
-<td>
-SG
-</td>
-<td>
-Toronto Raptors
-</td>
-<td>
-10.05
-</td>
-</tr>
-<tr>
-<td>
-Gerald Wallace
-</td>
-<td>
-SF
-</td>
-<td>
-Philadelphia 76ers
-</td>
-<td>
-10.1059
-</td>
-</tr>
-<tr>
-<td>
-Luol Deng
-</td>
-<td>
-SF
-</td>
-<td>
-Miami Heat
-</td>
-<td>
-10.1516
-</td>
-</tr>
-<tr>
-<td>
-Monta Ellis
-</td>
-<td>
-SG
-</td>
-<td>
-Indiana Pacers
-</td>
-<td>
-10.3
-</td>
-</tr>
-<tr>
-<td>
-Wilson Chandler
-</td>
-<td>
-SF
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-10.4494
-</td>
-</tr>
-<tr>
-<td>
-Brendan Haywood
-</td>
-<td>
-C
-</td>
-<td>
-Cleveland Cavaliers
-</td>
-<td>
-10.5225
-</td>
-</tr>
-<tr>
-<td>
-Jrue Holiday
-</td>
-<td>
-PG
-</td>
-<td>
-New Orleans Pelicans
-</td>
-<td>
-10.5955
-</td>
-</tr>
-<tr>
-<td>
-Tyreke Evans
-</td>
-<td>
-SG
-</td>
-<td>
-New Orleans Pelicans
-</td>
-<td>
-10.7346
-</td>
-</tr>
-<tr>
-<td>
-Marcin Gortat
-</td>
-<td>
-C
-</td>
-<td>
-Washington Wizards
-</td>
-<td>
-11.2174
-</td>
-</tr>
-<tr>
-<td>
-Thaddeus Young
-</td>
-<td>
-PF
-</td>
-<td>
-Brooklyn Nets
-</td>
-<td>
-11.236
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|DeMar DeRozan|SG|Toronto Raptors|10.05|
+|Gerald Wallace|SF|Philadelphia 76ers|10.1059|
+|Luol Deng|SF|Miami Heat|10.1516|
+|Monta Ellis|SG|Indiana Pacers|10.3|
+|Wilson Chandler|SF|Denver Nuggets|10.4494|
+|Brendan Haywood|C|Cleveland Cavaliers|10.5225|
+|Jrue Holiday|PG|New Orleans Pelicans|10.5955|
+|Tyreke Evans|SG|New Orleans Pelicans|10.7346|
+|Marcin Gortat|C|Washington Wizards|11.2174|
+|Thaddeus Young|PF|Brooklyn Nets|11.236|
+
 ... (59 rows omitted)
-</p>
+
 How much did Stephen Curry make? For the answer, we have to access the
 row where the value of `PLAYER` is equal to `Stephen Curry`. That is
 placed a table consisting of just one line:
@@ -770,40 +158,10 @@ placed a table consisting of just one line:
 nba.where('PLAYER', are.equal_to('Stephen Curry'))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Stephen Curry
-</td>
-<td>
-PG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-11.3708
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Stephen Curry|PG|Golden State Warriors|11.3708|
+
 Curry made just under $\$11.4$ million dollars. That's a lot of money,
 but it's less than half the salary of LeBron James. You'll find that
 salary in the "Top 5" table earlier in this section, or you could find
@@ -818,222 +176,23 @@ all the Warriors:
 nba.where('TEAM', are.equal_to('Golden State Warriors')).show()
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Klay Thompson
-</td>
-<td>
-SG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-15.501
-</td>
-</tr>
-<tr>
-<td>
-Draymond Green
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-14.2609
-</td>
-</tr>
-<tr>
-<td>
-Andrew Bogut
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-13.8
-</td>
-</tr>
-<tr>
-<td>
-Andre Iguodala
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-11.7105
-</td>
-</tr>
-<tr>
-<td>
-Stephen Curry
-</td>
-<td>
-PG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-11.3708
-</td>
-</tr>
-<tr>
-<td>
-Jason Thompson
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-7.00847
-</td>
-</tr>
-<tr>
-<td>
-Shaun Livingston
-</td>
-<td>
-PG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-5.54373
-</td>
-</tr>
-<tr>
-<td>
-Harrison Barnes
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-3.8734
-</td>
-</tr>
-<tr>
-<td>
-Marreese Speights
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-3.815
-</td>
-</tr>
-<tr>
-<td>
-Leandro Barbosa
-</td>
-<td>
-SG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-2.5
-</td>
-</tr>
-<tr>
-<td>
-Festus Ezeli
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-2.00875
-</td>
-</tr>
-<tr>
-<td>
-Brandon Rush
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-1.27096
-</td>
-</tr>
-<tr>
-<td>
-Kevon Looney
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-1.13196
-</td>
-</tr>
-<tr>
-<td>
-Anderson Varejao
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-0.289755
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Klay Thompson|SG|Golden State Warriors|15.501|
+|Draymond Green|PF|Golden State Warriors|14.2609|
+|Andrew Bogut|C|Golden State Warriors|13.8|
+|Andre Iguodala|SF|Golden State Warriors|11.7105|
+|Stephen Curry|PG|Golden State Warriors|11.3708|
+|Jason Thompson|PF|Golden State Warriors|7.00847|
+|Shaun Livingston|PG|Golden State Warriors|5.54373|
+|Harrison Barnes|SF|Golden State Warriors|3.8734|
+|Marreese Speights|C|Golden State Warriors|3.815|
+|Leandro Barbosa|SG|Golden State Warriors|2.5|
+|Festus Ezeli|C|Golden State Warriors|2.00875|
+|Brandon Rush|SF|Golden State Warriors|1.27096|
+|Kevon Looney|SF|Golden State Warriors|1.13196|
+|Anderson Varejao|PF|Golden State Warriors|0.289755|
+
 This portion of the table is already sorted by salary, because the
 original table listed players sorted by salary within the same team. The
 `.show()` at the end of the line ensures that all rows are shown, not
@@ -1048,169 +207,21 @@ achieve the same effect.
 nba.where('TEAM', 'Denver Nuggets') # equivalent to nba.where('TEAM', are.equal_to('Denver Nuggets'))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Danilo Gallinari
-</td>
-<td>
-SF
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-14
-</td>
-</tr>
-<tr>
-<td>
-Kenneth Faried
-</td>
-<td>
-PF
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-11.236
-</td>
-</tr>
-<tr>
-<td>
-Wilson Chandler
-</td>
-<td>
-SF
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-10.4494
-</td>
-</tr>
-<tr>
-<td>
-JJ Hickson
-</td>
-<td>
-C
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-5.6135
-</td>
-</tr>
-<tr>
-<td>
-Jameer Nelson
-</td>
-<td>
-PG
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-4.345
-</td>
-</tr>
-<tr>
-<td>
-Will Barton
-</td>
-<td>
-SF
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-3.53333
-</td>
-</tr>
-<tr>
-<td>
-Emmanuel Mudiay
-</td>
-<td>
-PG
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-3.10224
-</td>
-</tr>
-<tr>
-<td>
-Darrell Arthur
-</td>
-<td>
-PF
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-2.814
-</td>
-</tr>
-<tr>
-<td>
-Jusuf Nurkic
-</td>
-<td>
-C
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-1.842
-</td>
-</tr>
-<tr>
-<td>
-Joffrey Lauvergne
-</td>
-<td>
-C
-</td>
-<td>
-Denver Nuggets
-</td>
-<td>
-1.70972
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Danilo Gallinari|SF|Denver Nuggets|14|
+|Kenneth Faried|PF|Denver Nuggets|11.236|
+|Wilson Chandler|SF|Denver Nuggets|10.4494|
+|JJ Hickson|C|Denver Nuggets|5.6135|
+|Jameer Nelson|PG|Denver Nuggets|4.345|
+|Will Barton|SF|Denver Nuggets|3.53333|
+|Emmanuel Mudiay|PG|Denver Nuggets|3.10224|
+|Darrell Arthur|PF|Denver Nuggets|2.814|
+|Jusuf Nurkic|C|Denver Nuggets|1.842|
+|Joffrey Lauvergne|C|Denver Nuggets|1.70972|
+
 ... (4 rows omitted)
-</p>
+
 ### Multiple Features
 
 You can access rows that have multiple specified features, by using
@@ -1221,96 +232,14 @@ Guards whose salaries were over $\$15$ million.
 nba.where('POSITION', 'PG').where('SALARY', are.above(15))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Derrick Rose
-</td>
-<td>
-PG
-</td>
-<td>
-Chicago Bulls
-</td>
-<td>
-20.0931
-</td>
-</tr>
-<tr>
-<td>
-Kyrie Irving
-</td>
-<td>
-PG
-</td>
-<td>
-Cleveland Cavaliers
-</td>
-<td>
-16.4075
-</td>
-</tr>
-<tr>
-<td>
-Chris Paul
-</td>
-<td>
-PG
-</td>
-<td>
-Los Angeles Clippers
-</td>
-<td>
-21.4687
-</td>
-</tr>
-<tr>
-<td>
-Russell Westbrook
-</td>
-<td>
-PG
-</td>
-<td>
-Oklahoma City Thunder
-</td>
-<td>
-16.7442
-</td>
-</tr>
-<tr>
-<td>
-John Wall
-</td>
-<td>
-PG
-</td>
-<td>
-Washington Wizards
-</td>
-<td>
-15.852
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Derrick Rose|PG|Chicago Bulls|20.0931|
+|Kyrie Irving|PG|Cleveland Cavaliers|16.4075|
+|Chris Paul|PG|Los Angeles Clippers|21.4687|
+|Russell Westbrook|PG|Oklahoma City Thunder|16.7442|
+|John Wall|PG|Washington Wizards|15.852|
+
 ### General Form
 
 By now you will have realized that the general way to create a new table
@@ -1323,82 +252,13 @@ the appropriate condition:
 nba.where('SALARY', are.between(10, 10.3))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Luol Deng
-</td>
-<td>
-SF
-</td>
-<td>
-Miami Heat
-</td>
-<td>
-10.1516
-</td>
-</tr>
-<tr>
-<td>
-Gerald Wallace
-</td>
-<td>
-SF
-</td>
-<td>
-Philadelphia 76ers
-</td>
-<td>
-10.1059
-</td>
-</tr>
-<tr>
-<td>
-Danny Green
-</td>
-<td>
-SG
-</td>
-<td>
-San Antonio Spurs
-</td>
-<td>
-10
-</td>
-</tr>
-<tr>
-<td>
-DeMar DeRozan
-</td>
-<td>
-SG
-</td>
-<td>
-Toronto Raptors
-</td>
-<td>
-10.05
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Luol Deng|SF|Miami Heat|10.1516|
+|Gerald Wallace|SF|Philadelphia 76ers|10.1059|
+|Danny Green|SG|San Antonio Spurs|10|
+|DeMar DeRozan|SG|Toronto Raptors|10.05|
+
 Notice that the table above includes Danny Green who made $\$10$
 million, but *not* Monta Ellis who made $\$10.3$ million. As elsewhere
 in Python, the range `between` includes the left end but not the right.
@@ -1410,26 +270,9 @@ table with column labels but no rows.
 nba.where('PLAYER', are.equal_to('Barack Obama'))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+
 ### Some More Conditions
 
 Here are some predicates of `are` that you might find useful. Note that
@@ -1481,222 +324,23 @@ can just specify `Warriors` instead of `Golden State Warriors`:
 nba.where('TEAM', are.containing('Warriors')).show()
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Klay Thompson
-</td>
-<td>
-SG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-15.501
-</td>
-</tr>
-<tr>
-<td>
-Draymond Green
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-14.2609
-</td>
-</tr>
-<tr>
-<td>
-Andrew Bogut
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-13.8
-</td>
-</tr>
-<tr>
-<td>
-Andre Iguodala
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-11.7105
-</td>
-</tr>
-<tr>
-<td>
-Stephen Curry
-</td>
-<td>
-PG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-11.3708
-</td>
-</tr>
-<tr>
-<td>
-Jason Thompson
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-7.00847
-</td>
-</tr>
-<tr>
-<td>
-Shaun Livingston
-</td>
-<td>
-PG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-5.54373
-</td>
-</tr>
-<tr>
-<td>
-Harrison Barnes
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-3.8734
-</td>
-</tr>
-<tr>
-<td>
-Marreese Speights
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-3.815
-</td>
-</tr>
-<tr>
-<td>
-Leandro Barbosa
-</td>
-<td>
-SG
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-2.5
-</td>
-</tr>
-<tr>
-<td>
-Festus Ezeli
-</td>
-<td>
-C
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-2.00875
-</td>
-</tr>
-<tr>
-<td>
-Brandon Rush
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-1.27096
-</td>
-</tr>
-<tr>
-<td>
-Kevon Looney
-</td>
-<td>
-SF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-1.13196
-</td>
-</tr>
-<tr>
-<td>
-Anderson Varejao
-</td>
-<td>
-PF
-</td>
-<td>
-Golden State Warriors
-</td>
-<td>
-0.289755
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Klay Thompson|SG|Golden State Warriors|15.501|
+|Draymond Green|PF|Golden State Warriors|14.2609|
+|Andrew Bogut|C|Golden State Warriors|13.8|
+|Andre Iguodala|SF|Golden State Warriors|11.7105|
+|Stephen Curry|PG|Golden State Warriors|11.3708|
+|Jason Thompson|PF|Golden State Warriors|7.00847|
+|Shaun Livingston|PG|Golden State Warriors|5.54373|
+|Harrison Barnes|SF|Golden State Warriors|3.8734|
+|Marreese Speights|C|Golden State Warriors|3.815|
+|Leandro Barbosa|SG|Golden State Warriors|2.5|
+|Festus Ezeli|C|Golden State Warriors|2.00875|
+|Brandon Rush|SF|Golden State Warriors|1.27096|
+|Kevon Looney|SF|Golden State Warriors|1.13196|
+|Anderson Varejao|PF|Golden State Warriors|0.289755|
+
 You can extract data for all the guards, both Point Guards and Shooting
 Guards:
 
@@ -1704,169 +348,21 @@ Guards:
 nba.where('POSITION', are.containing('G'))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Jeff Teague
-</td>
-<td>
-PG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-8
-</td>
-</tr>
-<tr>
-<td>
-Kyle Korver
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-5.74648
-</td>
-</tr>
-<tr>
-<td>
-Dennis Schroder
-</td>
-<td>
-PG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-1.7634
-</td>
-</tr>
-<tr>
-<td>
-Tim Hardaway Jr.
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-1.30452
-</td>
-</tr>
-<tr>
-<td>
-Jason Richardson
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-0.947276
-</td>
-</tr>
-<tr>
-<td>
-Lamar Patterson
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-0.525093
-</td>
-</tr>
-<tr>
-<td>
-Terran Petteway
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-0.525093
-</td>
-</tr>
-<tr>
-<td>
-Avery Bradley
-</td>
-<td>
-PG
-</td>
-<td>
-Boston Celtics
-</td>
-<td>
-7.73034
-</td>
-</tr>
-<tr>
-<td>
-Isaiah Thomas
-</td>
-<td>
-PG
-</td>
-<td>
-Boston Celtics
-</td>
-<td>
-6.91287
-</td>
-</tr>
-<tr>
-<td>
-Marcus Smart
-</td>
-<td>
-PG
-</td>
-<td>
-Boston Celtics
-</td>
-<td>
-3.43104
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Jeff Teague|PG|Atlanta Hawks|8|
+|Kyle Korver|SG|Atlanta Hawks|5.74648|
+|Dennis Schroder|PG|Atlanta Hawks|1.7634|
+|Tim Hardaway Jr.|SG|Atlanta Hawks|1.30452|
+|Jason Richardson|SG|Atlanta Hawks|0.947276|
+|Lamar Patterson|SG|Atlanta Hawks|0.525093|
+|Terran Petteway|SG|Atlanta Hawks|0.525093|
+|Avery Bradley|PG|Boston Celtics|7.73034|
+|Isaiah Thomas|PG|Boston Celtics|6.91287|
+|Marcus Smart|PG|Boston Celtics|3.43104|
+
 ... (171 rows omitted)
-</p>
+
 You can get all the players who were not Cleveland Cavaliers and had a
 salary of no less than $\$20$ million:
 
@@ -1875,152 +371,18 @@ other_than_Cavs = nba.where('TEAM', are.not_equal_to('Cleveland Cavaliers'))
 other_than_Cavs.where('SALARY', are.not_below(20))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Joe Johnson
-</td>
-<td>
-SF
-</td>
-<td>
-Brooklyn Nets
-</td>
-<td>
-24.8949
-</td>
-</tr>
-<tr>
-<td>
-Derrick Rose
-</td>
-<td>
-PG
-</td>
-<td>
-Chicago Bulls
-</td>
-<td>
-20.0931
-</td>
-</tr>
-<tr>
-<td>
-Dwight Howard
-</td>
-<td>
-C
-</td>
-<td>
-Houston Rockets
-</td>
-<td>
-22.3594
-</td>
-</tr>
-<tr>
-<td>
-Chris Paul
-</td>
-<td>
-PG
-</td>
-<td>
-Los Angeles Clippers
-</td>
-<td>
-21.4687
-</td>
-</tr>
-<tr>
-<td>
-Kobe Bryant
-</td>
-<td>
-SF
-</td>
-<td>
-Los Angeles Lakers
-</td>
-<td>
-25
-</td>
-</tr>
-<tr>
-<td>
-Chris Bosh
-</td>
-<td>
-PF
-</td>
-<td>
-Miami Heat
-</td>
-<td>
-22.1927
-</td>
-</tr>
-<tr>
-<td>
-Dwyane Wade
-</td>
-<td>
-SG
-</td>
-<td>
-Miami Heat
-</td>
-<td>
-20
-</td>
-</tr>
-<tr>
-<td>
-Carmelo Anthony
-</td>
-<td>
-SF
-</td>
-<td>
-New York Knicks
-</td>
-<td>
-22.875
-</td>
-</tr>
-<tr>
-<td>
-Kevin Durant
-</td>
-<td>
-SF
-</td>
-<td>
-Oklahoma City Thunder
-</td>
-<td>
-20.1586
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Joe Johnson|SF|Brooklyn Nets|24.8949|
+|Derrick Rose|PG|Chicago Bulls|20.0931|
+|Dwight Howard|C|Houston Rockets|22.3594|
+|Chris Paul|PG|Los Angeles Clippers|21.4687|
+|Kobe Bryant|SF|Los Angeles Lakers|25|
+|Chris Bosh|PF|Miami Heat|22.1927|
+|Dwyane Wade|SG|Miami Heat|20|
+|Carmelo Anthony|SF|New York Knicks|22.875|
+|Kevin Durant|SF|Oklahoma City Thunder|20.1586|
+
 The same table can be created in many ways. Here is another, and no
 doubt you can think of more.
 
@@ -2028,153 +390,17 @@ doubt you can think of more.
 other_than_Cavs.where('SALARY', are.above_or_equal_to(20))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Joe Johnson
-</td>
-<td>
-SF
-</td>
-<td>
-Brooklyn Nets
-</td>
-<td>
-24.8949
-</td>
-</tr>
-<tr>
-<td>
-Derrick Rose
-</td>
-<td>
-PG
-</td>
-<td>
-Chicago Bulls
-</td>
-<td>
-20.0931
-</td>
-</tr>
-<tr>
-<td>
-Dwight Howard
-</td>
-<td>
-C
-</td>
-<td>
-Houston Rockets
-</td>
-<td>
-22.3594
-</td>
-</tr>
-<tr>
-<td>
-Chris Paul
-</td>
-<td>
-PG
-</td>
-<td>
-Los Angeles Clippers
-</td>
-<td>
-21.4687
-</td>
-</tr>
-<tr>
-<td>
-Kobe Bryant
-</td>
-<td>
-SF
-</td>
-<td>
-Los Angeles Lakers
-</td>
-<td>
-25
-</td>
-</tr>
-<tr>
-<td>
-Chris Bosh
-</td>
-<td>
-PF
-</td>
-<td>
-Miami Heat
-</td>
-<td>
-22.1927
-</td>
-</tr>
-<tr>
-<td>
-Dwyane Wade
-</td>
-<td>
-SG
-</td>
-<td>
-Miami Heat
-</td>
-<td>
-20
-</td>
-</tr>
-<tr>
-<td>
-Carmelo Anthony
-</td>
-<td>
-SF
-</td>
-<td>
-New York Knicks
-</td>
-<td>
-22.875
-</td>
-</tr>
-<tr>
-<td>
-Kevin Durant
-</td>
-<td>
-SF
-</td>
-<td>
-Oklahoma City Thunder
-</td>
-<td>
-20.1586
-</td>
-</tr>
-</tbody>
-</table>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Joe Johnson|SF|Brooklyn Nets|24.8949|
+|Derrick Rose|PG|Chicago Bulls|20.0931|
+|Dwight Howard|C|Houston Rockets|22.3594|
+|Chris Paul|PG|Los Angeles Clippers|21.4687|
+|Kobe Bryant|SF|Los Angeles Lakers|25|
+|Chris Bosh|PF|Miami Heat|22.1927|
+|Dwyane Wade|SG|Miami Heat|20|
+|Carmelo Anthony|SF|New York Knicks|22.875|
+|Kevin Durant|SF|Oklahoma City Thunder|20.1586|
+
 As you can see, the use of `where` with `are` gives you great
-flexibility in accessing rows with features that interest you. Don't
-hesitate to experiment!
-experiment!
+flexibility in accessing rows with features that interest you. Don't hesitate to experiment!

@@ -264,4 +264,3 @@ like functions but are called using dot notation, such as
 `some_table.sort(some_label)`. The functions that you define will always
 be called using the function name first, passing in all of the
 arguments.
-

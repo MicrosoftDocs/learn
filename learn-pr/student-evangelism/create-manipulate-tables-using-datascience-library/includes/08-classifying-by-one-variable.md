@@ -38,95 +38,23 @@ cones = Table().with_columns(
 cones
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-6.55
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.25
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Price|
+|--- |--- |
+|strawberry|3.55|
+|chocolate|4.75|
+|chocolate|6.55|
+|strawberry|5.25|
+|chocolate|5.25|
 
 ``` {.python}
 cones.group('Flavor')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-count
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-3
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-2
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|count|
+|--- |--- |
+|chocolate|3|
+|strawberry|2|
+
 There are two distinct categories, chocolate and strawberry. The call to
 `group` creates a table of counts in each category. The column is called
 `count` by default, and contains the number of rows in each category.
@@ -154,36 +82,11 @@ second argument: the function name `sum`.
 cones.group('Flavor', sum)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Price sum
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-16.55
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-8.8
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Price sum|
+|--- |--- |
+|chocolate|16.55|
+|strawberry|8.8|
+
 To create this new table, `group` has calculated the sum of the `Price`
 entries in all the rows corresponding to each distinct flavor. The
 prices in the three `chocolate` rows add up to $\$16.55$ (you can assume
@@ -240,45 +143,11 @@ price_totals = grouped_cones.with_column(
 price_totals
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Array of All the Prices
-</th>
-<th>
-Sum of the Array
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-\[4.75 6.55 5.25\]
-</td>
-<td>
-16.55
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-\[3.55 5.25\]
-</td>
-<td>
-8.8
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Array of All the Prices|Sum of the Array|
+|--- |--- |--- |
+|chocolate|\[4.75 6.55 5.25\]|16.55|
+|strawberry|\[3.55 5.25\]|8.8|
+
 You can replace `sum` by any other functions that work on arrays. For
 example, you could use `max` to find the largest price in each category:
 
@@ -286,36 +155,11 @@ example, you could use `max` to find the largest price in each category:
 cones.group('Flavor', max)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Price max
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-6.55
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-5.25
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Price max|
+|--- |--- |
+|chocolate|6.55|
+|strawberry|5.25|
+
 Once again, `group` creates arrays of the prices in each `Flavor`
 category. But now it finds the `max` of each array:
 
@@ -326,45 +170,11 @@ price_maxes = grouped_cones.with_column(
 price_maxes
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Array of All the Prices
-</th>
-<th>
-Max of the Array
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-\[4.75 6.55 5.25\]
-</td>
-<td>
-6.55
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-\[3.55 5.25\]
-</td>
-<td>
-5.25
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Array of All the Prices|Max of the Array|
+|--- |--- |--- |
+|chocolate|\[4.75 6.55 5.25\]|6.55|
+|strawberry|\[3.55 5.25\]|5.25|
+
 Indeed, the original call to `group` with just one argument has the same
 effect as using `len` as the function and then cleaning up the table.
 
@@ -375,45 +185,11 @@ lengths = grouped_cones.with_column(
 lengths
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Array of All the Prices
-</th>
-<th>
-Length of the Array
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-\[4.75 6.55 5.25\]
-</td>
-<td>
-3
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-\[3.55 5.25\]
-</td>
-<td>
-2
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Array of All the Prices|Length of the Array|
+|--- |--- |--- |
+|chocolate|\[4.75 6.55 5.25\]|3|
+|strawberry|\[3.55 5.25\]|2|
+
 ### Example: NBA Salaries
 
 The table `nba` contains data on the 2015-2016 players in the National
@@ -426,169 +202,21 @@ nba = nba1.relabeled("'15-'16 SALARY", 'SALARY')
 nba
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-PLAYER
-</th>
-<th>
-POSITION
-</th>
-<th>
-TEAM
-</th>
-<th>
-SALARY
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Paul Millsap
-</td>
-<td>
-PF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-18.6717
-</td>
-</tr>
-<tr>
-<td>
-Al Horford
-</td>
-<td>
-C
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-12
-</td>
-</tr>
-<tr>
-<td>
-Tiago Splitter
-</td>
-<td>
-C
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-9.75625
-</td>
-</tr>
-<tr>
-<td>
-Jeff Teague
-</td>
-<td>
-PG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-8
-</td>
-</tr>
-<tr>
-<td>
-Kyle Korver
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-5.74648
-</td>
-</tr>
-<tr>
-<td>
-Thabo Sefolosha
-</td>
-<td>
-SF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-4
-</td>
-</tr>
-<tr>
-<td>
-Mike Scott
-</td>
-<td>
-PF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-3.33333
-</td>
-</tr>
-<tr>
-<td>
-Kent Bazemore
-</td>
-<td>
-SF
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-Dennis Schroder
-</td>
-<td>
-PG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-1.7634
-</td>
-</tr>
-<tr>
-<td>
-Tim Hardaway Jr.
-</td>
-<td>
-SG
-</td>
-<td>
-Atlanta Hawks
-</td>
-<td>
-1.30452
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|PLAYER|POSITION|TEAM|SALARY|
+|--- |--- |--- |--- |
+|Paul Millsap|PF|Atlanta Hawks|18.6717|
+|Al Horford|C|Atlanta Hawks|12|
+|Tiago Splitter|C|Atlanta Hawks|9.75625|
+|Jeff Teague|PG|Atlanta Hawks|8|
+|Kyle Korver|SG|Atlanta Hawks|5.74648|
+|Thabo Sefolosha|SF|Atlanta Hawks|4|
+|Mike Scott|PF|Atlanta Hawks|3.33333|
+|Kent Bazemore|SF|Atlanta Hawks|2|
+|Dennis Schroder|PG|Atlanta Hawks|1.7634|
+|Tim Hardaway Jr.|SG|Atlanta Hawks|1.30452|
+
 ... (407 rows omitted)
-</p>
+
 **1.** How much money did each team pay for its players' salaries?
 
 The only columns involved are `TEAM` and `SALARY`. We have to `group`
@@ -599,103 +227,21 @@ teams_and_money = nba.select('TEAM', 'SALARY')
 teams_and_money.group('TEAM', sum)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-TEAM
-</th>
-<th>
-SALARY sum
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Atlanta Hawks
-</td>
-<td>
-69.5731
-</td>
-</tr>
-<tr>
-<td>
-Boston Celtics
-</td>
-<td>
-50.2855
-</td>
-</tr>
-<tr>
-<td>
-Brooklyn Nets
-</td>
-<td>
-57.307
-</td>
-</tr>
-<tr>
-<td>
-Charlotte Hornets
-</td>
-<td>
-84.1024
-</td>
-</tr>
-<tr>
-<td>
-Chicago Bulls
-</td>
-<td>
-78.8209
-</td>
-</tr>
-<tr>
-<td>
-Cleveland Cavaliers
-</td>
-<td>
-102.312
-</td>
-</tr>
-<tr>
-<td>
-Dallas Mavericks
-</td>
-<td>
-65.7626
-</td>
-</tr>
-<tr>
-<td>
-Denver Nuggets
-</td>
-<td>
-62.4294
-</td>
-</tr>
-<tr>
-<td>
-Detroit Pistons
-</td>
-<td>
-42.2118
-</td>
-</tr>
-<tr>
-<td>
-Golden State Warriors
-</td>
-<td>
-94.0851
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|TEAM|SALARY sum|
+|--- |--- |
+|Atlanta Hawks|69.5731|
+|Boston Celtics|50.2855|
+|Brooklyn Nets|57.307|
+|Charlotte Hornets|84.1024|
+|Chicago Bulls|78.8209|
+|Cleveland Cavaliers|102.312|
+|Dallas Mavericks|65.7626|
+|Denver Nuggets|62.4294|
+|Detroit Pistons|42.2118|
+|Golden State Warriors|94.0851|
+
 ... (20 rows omitted)
-</p>
+
 **2.** How many NBA players were there in each of the five positions?
 
 We have to classify by `POSITION`, and count. This can be done with just
@@ -705,60 +251,14 @@ one argument to group:
 nba.group('POSITION')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-POSITION
-</th>
-<th>
-count
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-C
-</td>
-<td>
-69
-</td>
-</tr>
-<tr>
-<td>
-PF
-</td>
-<td>
-85
-</td>
-</tr>
-<tr>
-<td>
-PG
-</td>
-<td>
-85
-</td>
-</tr>
-<tr>
-<td>
-SF
-</td>
-<td>
-82
-</td>
-</tr>
-<tr>
-<td>
-SG
-</td>
-<td>
-96
-</td>
-</tr>
-</tbody>
-</table>
+|POSITION|count|
+|--- |--- |
+|C|69|
+|PF|85|
+|PG|85|
+|SF|82|
+|SG|96|
+
 **3.** What was the average salary of the players at each of the five
 positions?
 
@@ -771,60 +271,14 @@ positions_and_money = nba.select('POSITION', 'SALARY')
 positions_and_money.group('POSITION', np.mean)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-POSITION
-</th>
-<th>
-SALARY mean
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-C
-</td>
-<td>
-6.08291
-</td>
-</tr>
-<tr>
-<td>
-PF
-</td>
-<td>
-4.95134
-</td>
-</tr>
-<tr>
-<td>
-PG
-</td>
-<td>
-5.16549
-</td>
-</tr>
-<tr>
-<td>
-SF
-</td>
-<td>
-5.53267
-</td>
-</tr>
-<tr>
-<td>
-SG
-</td>
-<td>
-3.9882
-</td>
-</tr>
-</tbody>
-</table>
+|POSITION|SALARY mean|
+|--- |--- |
+|C|6.08291|
+|PF|4.95134|
+|PG|5.16549|
+|SF|5.53267|
+|SG|3.9882|
+
 Center was the most highly paid position, at an average of over 6
 million dollars.
 
@@ -838,83 +292,10 @@ the rest blank.
 nba.group('POSITION', np.mean)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-POSITION
-</th>
-<th>
-PLAYER mean
-</th>
-<th>
-TEAM mean
-</th>
-<th>
-SALARY mean
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-C
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-6.08291
-</td>
-</tr>
-<tr>
-<td>
-PF
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-4.95134
-</td>
-</tr>
-<tr>
-<td>
-PG
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-5.16549
-</td>
-</tr>
-<tr>
-<td>
-SF
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-5.53267
-</td>
-</tr>
-<tr>
-<td>
-SG
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-3.9882
-</td>
-</tr>
-</tbody>
-</table>
+|POSITION|PLAYER mean|TEAM mean|SALARY mean|
+|--- |--- |--- |--- |
+|C|||6.08291|
+|PF|||4.95134|
+|PG|||5.16549|
+|SF|||5.53267|
+|SG|||3.9882|
