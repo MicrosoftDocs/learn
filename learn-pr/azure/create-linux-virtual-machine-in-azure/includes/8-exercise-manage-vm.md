@@ -12,14 +12,20 @@ Port 80 is open on the NSG applied to the subnet. But port 80 is blocked by the 
 
     ![Screenshot that shows the "Add inbound port rule" button in the network security group > network interface section.](../media/8-add-rule-network-interface.png)
 
-1. Switch to the **Basic** mode.
+1. Select **Basic**.
 
-1. Add the information for our HTTP rule:
+    ![Screenshot of that shows the basic button called out.](../media/8-inbound-port-basic.png)
 
-    - Set the **Service** to be HTTP. This sets up your port range.
-    - Set the **Priority** to **310**.
-    - Give the rule a name; use **allow-http-traffic**.
-    - Give the rule a description.
+1. Use the following information for our HTTP rule:
+
+    ![Screenshot of that shows the basic form filled out.](../media/8-inbound-rule-basic-form.png)
+
+   |Field |Value  |
+   |---------|---------|
+   |Service   | HTTP        |
+   |Priority    |   310      |
+   |Name    |     allow-http-traffic    |
+   |Description  |    Allows http traffic    |
 
 1. Click **Add** to create the rule.
 
