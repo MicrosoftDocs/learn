@@ -2,7 +2,7 @@
 uid: learn.reactors.introduction-python-data-science
 metadata:
   title: Introduction to Python for data science
-  description: Introduction to Python for data science
+  description: Learn to use Python for data science. Modules introduce the Python language, the NumPy and pandas libraries, basic data-preparation methods, and related tools.
   brand: azure
   ms.date: 04/22/2020
   author: sguthals
@@ -17,7 +17,7 @@ summary: |
 
   In this learning path, you will:
     - Learn about Python for data science
-    - Understand the basics of using the NumPy and Pandas libraries
+    - Understand the basics of using the NumPy and pandas libraries
     - Clean and manipulate data to prepare for analysis
     - Work with your data in Visual Studio Code by using Jupyter Notebook
 
