@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-app-with-azure-maps.introduction
 metadata:
-  description: Outlines the learning objectives, prerequisites, and the scenario, for this module.
+  description: Outlines the learning objectives, prerequisites, and the route-finding scenario, for this module.
   ms.date: 6/1/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
