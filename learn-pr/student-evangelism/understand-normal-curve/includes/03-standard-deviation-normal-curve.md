@@ -102,7 +102,7 @@ $$
 plot_normal_cdf()
 ```
 
-![png](../media/71-sd-normal-curve-11-0.png)
+![png](../media/71-standard-deviation-normal-curve-11-0.png)
 
 As always when you examine a new histogram, start by looking at the
 horizontal axis. On the horizontal axis of the standard normal curve,
