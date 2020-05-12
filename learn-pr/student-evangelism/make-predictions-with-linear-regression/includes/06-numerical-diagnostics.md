@@ -317,4 +317,3 @@ and therefore, by squaring both sides of our result,
 $$
 \frac{\mbox{variance of fitted values}}{\mbox{variance of }y} ~=~ r^2
 $$
-

@@ -13,14 +13,6 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/02-regression-line.md)]
-content: 'The water table contains one row per country with data from 2014. The OBS_VALUE column represents the approximate price of a 1.5 liter bottle of mineral water in that country, and the mm_precipitation column represents the average precipitation in that country (in millimeters). The next table below contains calculations from the water table.
-|Expression                                             |Values  |
-|np.average(water.column("OBS_VALUE"))                  |0.919016|
-|np.std(water.column("OBS_VALUE"))                      |0.464763|
-|np.average(water.column("mm_precipitation"))           |1010.4  |
-|np.std(water.column("mm_precipitation"))               |7520475 |
-|correlation(water, "OBS_VALUE", "mm_precipitation")    |0.262079|
-'
 quiz:
   title: Check your Knowledge
   questions:

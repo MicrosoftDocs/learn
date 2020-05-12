@@ -80,103 +80,21 @@ heights_SU = Table().with_columns(
 heights_SU
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-MidParent SU
-</th>
-<th>
-Child SU
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-3.45465
-</td>
-<td>
-1.80416
-</td>
-</tr>
-<tr>
-<td>
-3.45465
-</td>
-<td>
-0.686005
-</td>
-</tr>
-<tr>
-<td>
-3.45465
-</td>
-<td>
-0.630097
-</td>
-</tr>
-<tr>
-<td>
-3.45465
-</td>
-<td>
-0.630097
-</td>
-</tr>
-<tr>
-<td>
-2.47209
-</td>
-<td>
-1.88802
-</td>
-</tr>
-<tr>
-<td>
-2.47209
-</td>
-<td>
-1.60848
-</td>
-</tr>
-<tr>
-<td>
-2.47209
-</td>
-<td>
--0.348285
-</td>
-</tr>
-<tr>
-<td>
-2.47209
-</td>
-<td>
--0.348285
-</td>
-</tr>
-<tr>
-<td>
-1.58389
-</td>
-<td>
-1.18917
-</td>
-</tr>
-<tr>
-<td>
-1.58389
-</td>
-<td>
-0.350559
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|MidParent SU|Child SU|
+|--- |--- |
+|3.45465|1.80416|
+|3.45465|0.686005|
+|3.45465|0.630097|
+|3.45465|0.630097|
+|2.47209|1.88802|
+|2.47209|1.60848|
+|2.47209|-0.348285|
+|2.47209|-0.348285|
+|1.58389|1.18917|
+|1.58389|0.350559|
+
 ... (924 rows omitted)
-</p>
+
 On this scale, we can calculate our predictions exactly as before. But
 first we have to figure out how to convert our old definition of "close"
 points to a value on the new scale. We had said that midparent heights
@@ -483,59 +401,14 @@ close: 67.63 inches compared to the regression line's prediction of
 heights_with_predictions.where('MidParent', are.equal_to(70.48)).show(3)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-MidParent
-</th>
-<th>
-Child
-</th>
-<th>
-Prediction
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-70.48
-</td>
-<td>
-74
-</td>
-<td>
-67.6342
-</td>
-</tr>
-<tr>
-<td>
-70.48
-</td>
-<td>
-70
-</td>
-<td>
-67.6342
-</td>
-</tr>
-<tr>
-<td>
-70.48
-</td>
-<td>
-68
-</td>
-<td>
-67.6342
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|MidParent|Child|Prediction|
+|--- |--- |--- |
+|70.48|74|67.6342|
+|70.48|70|67.6342|
+|70.48|68|67.6342|
+
 ... (5 rows omitted)
-</p>
+
 Here are all of the rows in Galton's table, along with our original
 predictions and the new regression predictions of the children's
 heights.
@@ -546,170 +419,21 @@ heights_with_predictions = heights_with_predictions.with_column(
 )
 heights_with_predictions
 ```
+|MidParent|Child|Prediction|Regression Prediction|
+|--- |--- |--- |--- |
+|75.43|73.2|70.1|70.7124|
+|75.43|69.2|70.1|70.7124|
+|75.43|69|70.1|70.7124|
+|75.43|69|70.1|70.7124|
+|73.66|73.5|70.4158|69.5842|
+|73.66|72.5|70.4158|69.5842|
+|73.66|65.5|70.4158|69.5842|
+|73.66|65.5|70.4158|69.5842|
+|72.06|71|68.5025|68.5645|
+|72.06|68|68.5025|68.5645|
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-MidParent
-</th>
-<th>
-Child
-</th>
-<th>
-Prediction
-</th>
-<th>
-Regression Prediction
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-75.43
-</td>
-<td>
-73.2
-</td>
-<td>
-70.1
-</td>
-<td>
-70.7124
-</td>
-</tr>
-<tr>
-<td>
-75.43
-</td>
-<td>
-69.2
-</td>
-<td>
-70.1
-</td>
-<td>
-70.7124
-</td>
-</tr>
-<tr>
-<td>
-75.43
-</td>
-<td>
-69
-</td>
-<td>
-70.1
-</td>
-<td>
-70.7124
-</td>
-</tr>
-<tr>
-<td>
-75.43
-</td>
-<td>
-69
-</td>
-<td>
-70.1
-</td>
-<td>
-70.7124
-</td>
-</tr>
-<tr>
-<td>
-73.66
-</td>
-<td>
-73.5
-</td>
-<td>
-70.4158
-</td>
-<td>
-69.5842
-</td>
-</tr>
-<tr>
-<td>
-73.66
-</td>
-<td>
-72.5
-</td>
-<td>
-70.4158
-</td>
-<td>
-69.5842
-</td>
-</tr>
-<tr>
-<td>
-73.66
-</td>
-<td>
-65.5
-</td>
-<td>
-70.4158
-</td>
-<td>
-69.5842
-</td>
-</tr>
-<tr>
-<td>
-73.66
-</td>
-<td>
-65.5
-</td>
-<td>
-70.4158
-</td>
-<td>
-69.5842
-</td>
-</tr>
-<tr>
-<td>
-72.06
-</td>
-<td>
-71
-</td>
-<td>
-68.5025
-</td>
-<td>
-68.5645
-</td>
-</tr>
-<tr>
-<td>
-72.06
-</td>
-<td>
-68
-</td>
-<td>
-68.5025
-</td>
-<td>
-68.5645
-</td>
-</tr>
-</tbody>
-</table>
-<p>
 ... (924 rows omitted)
-</p>
+
 ``` {.python}
 heights_with_predictions.scatter('MidParent')
 ```
@@ -855,3 +579,13 @@ prising mathematical fact
 that no matter what the shape of the scatter plot, the same equation
 gives the "best" among all straight lines. That's the topic of the next
 section.
+
+> [!IMPORTANT]
+> The following Question will check your knowledge 'The water table contains one row per country with data from 2014. The OBS_VALUE column represents the approximate price of a 1.5 liter bottle of mineral water in that country, and the mm_precipitation column represents the average precipitation in that country (in millimeters). The next table below contains calculations from the water table.
+
+|Expression                                             |Values  |
+|np.average(water.column("OBS_VALUE"))                  |0.919016|
+|np.std(water.column("OBS_VALUE"))                      |0.464763|
+|np.average(water.column("mm_precipitation"))           |1010.4  |
+|np.std(water.column("mm_precipitation"))               |7520475 |
+|correlation(water, "OBS_VALUE", "mm_precipitation")    |0.262079|

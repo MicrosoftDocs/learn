@@ -31,7 +31,6 @@ def fit(table, x, y):
     return a * table.column(x) + b
 ```
 
-
 In an earlier section, we developed formulas for the slope and intercept
 of the regression line through a *football shaped* scatter diagram. It
 turns out that the slope and intercept of the least squares line have
@@ -59,103 +58,20 @@ shotput = Table.read_table(path_data + 'shotput.csv')
 shotput
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Weight Lifted
-</th>
-<th>
-Shot Put Distance
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-37.5
-</td>
-<td>
-6.4
-</td>
-</tr>
-<tr>
-<td>
-51.5
-</td>
-<td>
-10.2
-</td>
-</tr>
-<tr>
-<td>
-61.3
-</td>
-<td>
-12.4
-</td>
-</tr>
-<tr>
-<td>
-61.3
-</td>
-<td>
-13
-</td>
-</tr>
-<tr>
-<td>
-63.6
-</td>
-<td>
-13.2
-</td>
-</tr>
-<tr>
-<td>
-66.1
-</td>
-<td>
-13
-</td>
-</tr>
-<tr>
-<td>
-70
-</td>
-<td>
-12.7
-</td>
-</tr>
-<tr>
-<td>
-92.7
-</td>
-<td>
-13.9
-</td>
-</tr>
-<tr>
-<td>
-90.5
-</td>
-<td>
-15.5
-</td>
-</tr>
-<tr>
-<td>
-90.5
-</td>
-<td>
-15.8
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Weight Lifted|Shot Put Distance|
+|--- |--- |
+|37.5|6.4|
+|51.5|10.2|
+|61.3|12.4|
+|61.3|13|
+|63.6|13.2|
+|66.1|13|
+|70|12.7|
+|92.7|13.9|
+|90.5|15.5|
+|90.5|15.8|
+
 ... (18 rows omitted)
-</p>
 
 ``` {.python}
 shotput.scatter('Weight Lifted')

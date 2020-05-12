@@ -31,7 +31,6 @@ def fit(table, x, y):
     return a * table.column(x) + b
 ```
 
-
 We have retraced the steps that Galton and Pearson took to develop the
 equation of the regression line that runs through a football shaped
 scatter plot. But not all scatter plots are football shaped, not even
@@ -59,48 +58,13 @@ little_women = Table.read_table(path_data + 'little_women.csv')
 little_women = little_women.move_to_start('Periods')
 little_women.show(3)
 ```
+|Periods|Characters|
+|--- |--- |
+|189|21759|
+|188|22148|
+|231|20558|
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Periods
-</th>
-<th>
-Characters
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-189
-</td>
-<td>
-21759
-</td>
-</tr>
-<tr>
-<td>
-188
-</td>
-<td>
-22148
-</td>
-</tr>
-<tr>
-<td>
-231
-</td>
-<td>
-20558
-</td>
-</tr>
-</tbody>
-</table>
-<p>
 ... (44 rows omitted)
-</p>
 
 ``` {.python}
 little_women.scatter('Periods', 'Characters')
@@ -148,167 +112,19 @@ errors = actual - predicted
 lw_with_predictions.with_column('Error', errors)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Periods
-</th>
-<th>
-Characters
-</th>
-<th>
-Linear Prediction
-</th>
-<th>
-Error
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-189
-</td>
-<td>
-21759
-</td>
-<td>
-21183.6
-</td>
-<td>
-575.403
-</td>
-</tr>
-<tr>
-<td>
-188
-</td>
-<td>
-22148
-</td>
-<td>
-21096.6
-</td>
-<td>
-1051.38
-</td>
-</tr>
-<tr>
-<td>
-231
-</td>
-<td>
-20558
-</td>
-<td>
-24836.7
-</td>
-<td>
--4278.67
-</td>
-</tr>
-<tr>
-<td>
-195
-</td>
-<td>
-25526
-</td>
-<td>
-21705.5
-</td>
-<td>
-3820.54
-</td>
-</tr>
-<tr>
-<td>
-255
-</td>
-<td>
-23395
-</td>
-<td>
-26924.1
-</td>
-<td>
--3529.13
-</td>
-</tr>
-<tr>
-<td>
-140
-</td>
-<td>
-14622
-</td>
-<td>
-16921.7
-</td>
-<td>
--2299.68
-</td>
-</tr>
-<tr>
-<td>
-131
-</td>
-<td>
-14431
-</td>
-<td>
-16138.9
-</td>
-<td>
--1707.88
-</td>
-</tr>
-<tr>
-<td>
-214
-</td>
-<td>
-22476
-</td>
-<td>
-23358
-</td>
-<td>
--882.043
-</td>
-</tr>
-<tr>
-<td>
-337
-</td>
-<td>
-33767
-</td>
-<td>
-34056.3
-</td>
-<td>
--289.317
-</td>
-</tr>
-<tr>
-<td>
-185
-</td>
-<td>
-18508
-</td>
-<td>
-20835.7
-</td>
-<td>
--2327.69
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Periods|Characters|Linear Prediction|Error|
+|--- |--- |--- |--- |
+|189|21759|21183.6|575.403|
+|188|22148|21096.6|1051.38|
+|231|20558|24836.7|-4278.67|
+|195|25526|21705.5|3820.54|
+|255|23395|26924.1|-3529.13|
+|140|14622|16921.7|-2299.68|
+|131|14431|16138.9|-1707.88|
+|214|22476|23358|-882.043|
+|337|33767|34056.3|-289.317|
+|185|18508|20835.7|-2327.69|
+
 ... (37 rows omitted)
 </p>
 We can use `slope` and `intercept` to calculate the slope and intercept
@@ -567,10 +383,6 @@ the regression line. The regression line is the only line that minimizes
 mean squared error.
 
 That is why the regression line is sometimes called the "least squares
-line."
-squared error, but also that minimizing mean squared error gives us
+line." squared error, but also that minimizing mean squared error gives us
 the regression line. The regression line is the only line that minimizes
 mean squared error.
-
-That is why the regression line is sometimes called the "least squares
-line."
