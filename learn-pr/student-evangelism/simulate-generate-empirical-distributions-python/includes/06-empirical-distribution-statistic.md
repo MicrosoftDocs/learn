@@ -78,10 +78,8 @@ united.where('Delay', are.below_or_equal_to(2)).num_rows / united.num_rows
 Half of all flights left no more than 2 minutes after their scheduled
 departure time. That's a very short delay!
 
-**Note.** The percent isn't exactly 50 because of "ties," that is,
-flights that had delays of exactly 2 minutes. There were 480 such
-flights. Ties are quite common in data sets, and we will not worry about
-them in this course.
+> [!NOTE] 
+> The percent isn't exactly 50 because of "ties," that is, flights that had delays of exactly 2 minutes. There were 480 such flights. Ties are quite common in data sets, and we will not worry about them in this course.
 
 ``` {.python}
 united.where('Delay', are.equal_to(2)).num_rows
@@ -138,7 +136,7 @@ statistic.
 
 Let's recall the main steps in a simulation.
 
-### Simulating a Statistic
+### Simulating a statistic
 
 We will simulate the sample median using the steps we set up in an
 earlier chapter when we started studying simulation. You can replace the
@@ -230,7 +228,7 @@ the median delay in the population.
 This is an example of how a statistic can provide a good estimate of a
 parameter.
 
-### The Power of Simulation
+### The power of simulation
 
 If we could generate all possible random samples of size 1000, we would
 know all possible values of the statistic (the sample median), as well

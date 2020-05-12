@@ -21,12 +21,12 @@ in that simulation were examples of the steps that will constitute every
 simulation we do in this course. In this section we will set out those
 steps and follow them in examples.
 
-### Step 1: What to Simulate
+### Step 1: What to simulate
 
 Specify the quantity you want to simulate. For example, you might decide
 that you want to simulate the outcomes of tosses of a coin.
 
-### Step 2: Simulating One Value
+### Step 2: Simulating one value
 
 Figure out how to simulate *one* value of the quantity you specified in
 Step 1. In our example, you have to figure out how to simulate the
@@ -34,14 +34,14 @@ outcome of *one* toss of a coin. If your quantity is more complicated,
 you might need several lines of code to come up with one simulated
 value.
 
-### Step 3: Number of Repetitions
+### Step 3: Number of repetitions
 
 Decide how many times you want to simulate the quantity. You will have
 to repeat Step 2 that many times. In one of our earlier examples we had
 decided to simulate the outcomes of 1000 tosses of a coin, and so we
 needed 1000 repetitions of generating the outcome of a single toss.
 
-### Step 4: Coding the Simulation
+### Step 4: Coding the simulation
 
 Put it all together in code. - Create an empty array in which to collect
 all the simulated values. We will call this the collection array. -
@@ -59,7 +59,7 @@ At this point you can use the collection array as you would any other
 array. You can visualize the distribution of the simulated values, count
 how many simulated values fall into a particular category, and so on.
 
-### Number of Heads in 100 Tosses
+### Number of heads in 100 tosses
 
 It is natural to expect that in 100 tosses of a coin, there will be 50
 heads, give or take a few.
@@ -76,12 +76,12 @@ many heads are likely.
 
 Let's get started on the simulation, following the steps above.
 
-### Step 1: What to Simulate
+### Step 1: What to simulate
 
 The quantity we are going to simulate is the number of heads in 100
 tosses.
 
-### Step 2: Simulating One Value
+### Step 2: Simulating one value
 
 We have to figure out how to make one set of 100 tosses and count the
 number of heads. Let's start by creating a coin.
@@ -102,8 +102,10 @@ ten_tosses = np.random.choice(coin, 10)
 ten_tosses
 ```
 
-    array(['Tails', 'Heads', 'Heads', 'Tails', 'Tails', 'Heads', 'Tails',
-           'Tails', 'Heads', 'Tails'], dtype='<U5')
+```output
+array(['Tails', 'Heads', 'Heads', 'Tails', 'Tails', 'Heads', 'Tails',
+        'Tails', 'Heads', 'Tails'], dtype='<U5')
+```
 
 We can count the number of heads by using `np.count_nonzero` as before:
 
@@ -111,7 +113,9 @@ We can count the number of heads by using `np.count_nonzero` as before:
 np.count_nonzero(ten_tosses == 'Heads')
 ```
 
-    4
+```output
+4
+```
 
 Our goal is to simulate the number of heads in 100 tosses, not 10. To do
 that we can just repeat the same code, replacing 10 by 100.
@@ -122,9 +126,11 @@ num_heads = np.count_nonzero(outcomes == 'Heads')
 num_heads
 ```
 
-    45
+```output
+45
+```
 
-### Step 3: Number of Repetitions
+### Step 3: Number of repetitions
 
 How many repetitions we want is up to us. The more we use, the more
 reliable our simulations will be, but the longer it will take to run the
@@ -134,7 +140,7 @@ Toss a coin 100 times and count the number of heads.
 
 That's a lot of tossing! It's good that we have Python to do it for us.
 
-### Step 4: Coding the Simulation
+### Step 4: Coding the simulation
 
 We are ready to write the code to execute the entire simulation.
 
@@ -148,11 +154,11 @@ repetitions_sequence = np.arange(num_repetitions)
 
 # for loop
 for i in repetitions_sequence:
-    
+
     # simulate one value
     outcomes = np.random.choice(coin, 100)
     num_heads = np.count_nonzero(outcomes == 'Heads')
-    
+
     # augment the collection array with the simulated value
     heads = np.append(heads, num_heads)  
 
@@ -166,7 +172,9 @@ repetition of the experiment.
 len(heads)
 ```
 
-    10000
+```output
+10000
+```
 
 To get a sense of the variability in the number of heads in 100 tosses,
 we can collect the results in a table and draw a histogram.
@@ -224,7 +232,7 @@ anywhere between 0 and 100, the simulation shows that the range of
 This is an instance of a more general phenomenon about the variability
 in coin tossing, as we will see later in the course.
 
-### A More Compact Version of the Code
+### A more compact version of the code
 
 We wrote the code for the simulation to show each of the steps in
 detail. Here are the same steps written in a more compact form. You can
@@ -301,7 +309,7 @@ results.hist('Sum of Two Rolls', bins = np.arange(1.5, 12.6, 1))
 Seven is the most common value, with the frequencies falling off
 symmetrically on either side.
 
-## Learning Objectives
+## Learning objectives
 
 - Study the idea of randomness, analyzed its importance, learned relevant terminology and studied the Law of Averages.
 - Examine different types of samples and different sampling techniques.

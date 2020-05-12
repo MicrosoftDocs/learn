@@ -1,4 +1,4 @@
-> [!NOTE] 
+> [!NOTE]
 > You can find an interactive version of this unit named **monty-hall-problem.ipynb** in your virtual environment
 
 If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", refer to the first unit **Setup**
@@ -50,7 +50,7 @@ is, and has to attempt to find it under the following rules.
 The contestant has a decision to make. Which door should they choose to
 open, if they wants the car? Should they stick with their initial choice, or switch to the other door? That is the Monty Hall problem.
 
-### The Solution
+### The solution
 
 In any problem involving chances, the assumptions about randomness are
 important. It's reasonable to assume that there's a 1/3 chance that the
@@ -75,7 +75,7 @@ out.
 The simulation will be more complex that those we've done so far.
 Let's break it down.
 
-### Step 1: What to Simulate
+### Step 1: What to simulate
 
 For each play we'll simulate what's behind all three doors: - the one
 the contestant first picks - the one that Monty opens - the remaining
@@ -83,12 +83,12 @@ door
 
 So we'll be keeping track of three quantities, not just one.
 
-### Step 2: Simulating One Play
+### Step 2: Simulating one play
 
 The bulk of our work consists of simulating one play of the game. This
 involves several pieces.
 
-#### The Goats
+#### The goats
 
 We start by setting up an array `goats` that contains unimaginative
 names for the two goats.
@@ -122,7 +122,7 @@ other_goat('first goat'), other_goat('second goat'), other_goat('watermelon')
 The string `'watermelon'` is not the name of one of the goats, so when
 `'watermelon'` is the input then `other_goat` does nothing.
 
-#### The Options
+#### The options
 
 The array `hidden_behind_doors` contains the set of things that could be
 behind the doors.
@@ -177,13 +177,13 @@ monty_hall_game()
 ['second goat', 'first goat', 'car']
 ```
 
-### Step 3: Number of Repetitions
+### Step 3: Number of repetitions
 
 To gauge the frequency with which the different results occur, we have
 to play the game many times and collect the results. Let's run 10,000
 repetitions.
 
-### Step 4: Coding the Simulation
+### Step 4: Coding the simulation
 
 It's time to run the whole simulation.
 
