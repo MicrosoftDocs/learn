@@ -201,11 +201,6 @@ simulation_results
 simulation_results.hist('Number of Heads', bins = np.arange(30.5, 69.6, 1))
 ```
 
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
 ![png](../media/48-simulation-17-1.png)
 
 Each bins has width 1 and is centered at each value of the number of
@@ -250,7 +245,9 @@ for i in np.arange(num_repetitions):
 heads
 ```
 
+```output
 array(\[52., 45., 48., ..., 48., 44., 51.\])
+```
 
 ### Moves in Monopoly
 
@@ -271,7 +268,9 @@ die = np.arange(1, 7)
 sum(np.random.choice(die, 2))
 ```
 
+```output
 8
+```
 
 That simulates one value of the sum of two rolls. We are now all set to
 run the simulation according to the steps that are now familiar.
@@ -296,11 +295,6 @@ results = Table().with_column(
 
 results.hist('Sum of Two Rolls', bins = np.arange(1.5, 12.6, 1))
 ```
-
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
 
 ![png](../media/48-simulation-27-1.png)
 

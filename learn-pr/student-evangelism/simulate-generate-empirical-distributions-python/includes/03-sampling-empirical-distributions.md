@@ -115,7 +115,13 @@ consists of three people A, B, and C, according to the following scheme:
 This is a probability sample of size 2. Here are the chances of entry
 for all non-empty subsets:
 
-A: 1 B: 1/2 C: 1/2 AB: 1/2 AC: 1/2 BC: 0 ABC: 0
+- A: 1
+- B: 1/2
+- C: 1/2
+- AB: 1/2
+- AC: 1/2
+- BC: 0
+- ABC: 0
 
 Person A has a higher chance of being selected than Persons B or C;
 indeed, Person A is certain to be selected. Since these differences are

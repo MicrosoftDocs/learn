@@ -58,7 +58,7 @@ contestant's initial choice is the door that has the car behind it.
 
 The solution to the problem is straightforward under this
 assumption, though the straightforward solution doesn't convince
-everyone. Here it is anyway.
+everyone. Here it is anyway:
 
 - The chance that the car is behind the originally chosen door is 1/3.
 - The car is behind either the originally chosen door or the door that remains. It can't be anywhere else.

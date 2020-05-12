@@ -53,13 +53,17 @@ as the histogram below shows.
 united.column('Delay').min()
 ```
 
+```output
 -16
+```
 
 ``` {.python}
 united.column('Delay').max()
 ```
 
+```output
 580
+```
 
 ``` {.python}
 delay_bins = np.append(np.arange(-20, 301, 10), 600)
@@ -77,7 +81,9 @@ still retains all the data.
 united.where('Delay', are.above(200)).num_rows/united.num_rows
 ```
 
+```output
 0.008390596745027125
+```
 
 ``` {.python}
 delay_bins = np.arange(-20, 201, 10)
@@ -94,7 +100,9 @@ That is confirmed by counting rows:
 united.where('Delay', are.between(0, 10)).num_rows/united.num_rows
 ```
 
+```output
 0.2935985533453888
+```
 
 ### Empirical Distribution of the Sample
 
