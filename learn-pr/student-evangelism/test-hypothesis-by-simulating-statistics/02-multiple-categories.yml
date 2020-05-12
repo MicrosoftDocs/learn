@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.multiple-categories
-title: multiple categories
+title: Multiple categories
 metadata:
-  title: multiple categories
+  title: Multiple categories
   description: use the difference between two distributions as a statistic for assessing models
   ms.date: 03/19/2020
   author: leestott

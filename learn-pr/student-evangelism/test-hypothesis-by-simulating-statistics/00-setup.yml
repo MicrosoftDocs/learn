@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.setup
-title: setting up your virtual environment
+title: Setting up your virtual environment
 metadata:
-  title: setting up your virtual environment
+  title: Setting up your virtual environment
   description: set up your virtual environment
   ms.date: 04/30/2020
   author: leestott

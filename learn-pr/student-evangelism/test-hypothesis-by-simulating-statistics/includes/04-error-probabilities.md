@@ -14,7 +14,7 @@ astray. The reason is chance variation. For example, even when the null
 hypothesis is true, chance variation might cause the sample to look
 quite different from what the null hypothesis predicts.
 
-### Wrong Conclusions
+### Wrong conclusions
 
 If you are testing a null hypothesis against the alternative that the
 null hypothesis isn't true, then there are four ways of classifying
@@ -35,7 +35,7 @@ Since the null hypothesis is a completely specified chance model, we can
 estimate the chance of the first type of error. The answer turns out to
 be essentially the cutoff that we use for the P-value. Let's see how.
 
-### The Chance of an Error
+### The chance of an error
 
 Suppose you want to test whether a coin is fair or not. Then the
 hypotheses are:
@@ -90,7 +90,7 @@ So *if the coin is fair* and our test uses a 5% cutoff for deciding
 whether it is fair or not, then there is about a 5% chance that the test
 will wrongly conclude that the coin is unfair.
 
-### The Cutoff for the P-value is an Error Probability
+### The cutoff for the P-value is an error probability
 
 The example above is a special case of a general fact:
 
@@ -118,7 +118,7 @@ does nothing, there is about a 1% chance of concluding that the
 treatment does something. This is due to chance variation. There is a
 small chance that data from random samples end up leading you astray.
 
-### Data Snooping and P-Hacking
+### Data snooping and P-hacking
 
 The discussion above implies that if each of 100 different research
 groups runs a separate randomized controlled experiment about the effect
@@ -154,7 +154,7 @@ replicating the experiment and testing for that particular effect alone.
 If it comes out significant again, that will validate the original
 conclusion.
 
-### Technical Note: The Other Kind of Error
+### Technical Note: The other kind of error
 
 There is, of course, another kind of error: concluding that the
 treatment does nothing when in fact it does something. Discussions of

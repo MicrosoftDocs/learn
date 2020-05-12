@@ -30,7 +30,7 @@ in most statistical tests, along with some terminology and examples. You
 will see that they are consistent with the sequence of steps we have
 used for assessing models.
 
-### Step 1: The Hypotheses
+### Step 1: The hypotheses
 
 All statistical tests attempt to choose between two views of the world.
 Specifically, the choice is between two views about how the data were
@@ -61,7 +61,7 @@ null hypothesis.
 In the example about Mendel's plants, the alternative hypothesis is
 simply that his model isn't good.
 
-### Step 2: The Test Statistic
+### Step 2: The test statistic
 
 In order to decide between the two hypothesis, we must choose a
 statistic that we can use to make the decision. This is called the
@@ -102,7 +102,7 @@ abs ( 100 * (705 / 929) - 75)
 
     0.8880516684607045
 
-### Step 3: The Distribution of the Test Statistic, Under the Null Hypothesis
+### Step 3: The distribution of the test statistic, under the null hypothesis
 
 The main computational aspect of a test of hypotheses is figuring out
 *what the values of the test statistic might be if the null hypothesis
@@ -120,7 +120,7 @@ the statistic, as predicted by the model in the null hypothesis.
 As with all distributions, it is useful to visualize this
 distribution by a histogram. We have done so in all our examples.
 
-### Step 4. The Conclusion of the Test
+### Step 4. The conclusion of the test
 
 The choice between the null and alternative hypotheses depends on the
 comparison between what you computed in Steps 2 and 3: the observed
@@ -142,7 +142,7 @@ composition.
 If the data do not support the null hypothesis, we say that the test
 *rejects* the null hypothesis.
 
-### The Meaning of "Consistent"
+### The meaning of "Consistent"
 
 In the example about Alameda County juries, it was apparent that our
 observed test statistic was far from what was predicted by the null
@@ -160,7 +160,7 @@ make his or her own judgment about whether the two are consistent.
 
 Here is an example where the decision requires judgment.
 
-### The GSI's Defense
+### The GSI's defense
 
 A Berkeley Statistics class of about 350 students was divided into 12
 discussion sections led by Graduate Student Instructors (GSIs). After
@@ -351,7 +351,7 @@ hand tail of the histogram for you to think that it is "too far"?
 It's up to you to decide! Use your judgment. Go ahead--it's OK to do
 so.
 
-### Conventional Cut-offs and the P-value
+### Conventional cut-offs and the P-value
 
 If you don't want to make your own judgment, there are conventions that
 you can follow. These conventions tell us how far out into the tails is
@@ -413,7 +413,7 @@ say whether or not the result is statistically significant. Along with
 your conclusion, provide the observed statistic and the P-value as well,
 so that readers can use their own judgment.
 
-### Historical Note on the Conventions
+### Historical note on the conventions
 
 The determination of statistical significance, as defined above, has
 become standard in statistical analyses in all fields of application.

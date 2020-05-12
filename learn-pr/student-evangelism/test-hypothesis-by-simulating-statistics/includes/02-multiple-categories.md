@@ -31,7 +31,7 @@ Let's do this in an example that addresses the same kind of question
 that was raised in the case of Robert Swain's jury panel. This time, the
 data are more recent.
 
-### Jury Selection in Alameda County
+### Jury selection in Alameda County
 
 In 2010, the American Civil Liberties Union (ACLU) of Northern
 California presented a
@@ -46,7 +46,7 @@ result.
 Some details about jury panels and juries will be helpful in
 interpreting the results of our analysis.
 
-### Jury Panels
+### Jury panels
 
 A jury panel is a group of people chosen to be prospective jurors; the
 final trial jury is selected from among them. Jury panels can consist of
@@ -65,7 +65,7 @@ trial judge might make a selection based on questionnaires filled out by
 the panel; and so on. But the initial panel is supposed to resemble a
 random sample of the population of eligible jurors.
 
-### Composition of Panels in Alameda County
+### Composition of panels in Alameda County
 
 The focus of the study by the ACLU of Northern California was the ethnic
 composition of jury panels in Alameda County. The ACLU compiled data on
@@ -109,7 +109,7 @@ jury.barh('Ethnicity')
 
 ![png](../media/57-multiple-categories-8-0.png)
 
-### Comparison with Panels Selected at Random
+### Comparison with panels selected at random
 
 What if we select a random sample of 1,453 people from the population of
 eligible jurors? Will the distribution of their ethnicities look like
@@ -169,7 +169,7 @@ look at thousands of bar charts like the one above. We need a statistic
 that will help us assess whether or not the model or random selection is
 supported by the data.
 
-### A New Statistic: The Distance between Two Distributions
+### A new statistic: the distance between two distributions
 
 We know how to measure how different two numbers are--if the numbers
 are $x$ and $y$, the distance between them is $\vert x-y \vert$. Now we
@@ -253,7 +253,7 @@ differences. But our method of including all the absolute differences
 eliminates the need to keep track of which differences are positive and
 which are not.
 
-### Simulating One Value of the Statistic
+### Simulating one value of the statistic
 
 We will use the total variation distance between distributions as the
 statistic to simulate. It will help us decide whether the model of
@@ -307,7 +307,7 @@ between the distribution of the panels and the eligible jurors.
 We are now ready to run a simulation to assess the model of random
 selection.
 
-### Predicting the Statistic Under the Model of Random Selection
+### Predicting the statistic under the model of random selection
 
 The total variation distance between the distributions of the random
 sample and the eligible jurors is the statistic that we are using to
@@ -352,7 +352,7 @@ Table().with_column('TVD', tvds).hist(bins=np.arange(0, 0.2, 0.005))
 
 ![png](../media/57-multiple-categories-34-0.png)
 
-### Assessing the Model of Random Selection
+### Assessing the model of random selection
 
 The panels in the study, however, were not so similar to the
 eligible population. The total variation distance between the panels and
@@ -365,7 +365,7 @@ the statistic based on the model of random selection. So our analysis
 supports the ACLU's calculation that the panels were not representative
 of the distribution provided for the eligible jurors.
 
-### Some Possible Explanations for the Differences
+### Some possible explanations for the differences
 
 As with most such analyses, however, our analysis does not say *why* the
 distributions are different or what the difference might imply.
@@ -381,7 +381,7 @@ reasons, it seems clear that the composition of the jury panels was
 different from what we would have expected in a random sample from the
 distribution in the `Eligible` column.
 
-### Questions about the Data
+### Questions about the data
 
 We have developed a powerful technique that helps decide whether one
 distribution looks like a random sample from another. But data science
