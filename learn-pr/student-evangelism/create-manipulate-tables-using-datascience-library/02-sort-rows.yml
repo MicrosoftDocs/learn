@@ -13,7 +13,6 @@ durationInMinutes: 5
 content: |
   [!include[](includes/02-sorting-rows.md)]
 
-content: 'Suppose you have a table called students with columns labeled name, age, and email. Select the best table expression for the following statements.'
 quiz:
   title: Check your Knowledge
   questions:

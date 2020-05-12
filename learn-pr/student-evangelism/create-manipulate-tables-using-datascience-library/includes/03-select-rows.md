@@ -404,3 +404,6 @@ other_than_Cavs.where('SALARY', are.above_or_equal_to(20))
 
 As you can see, the use of `where` with `are` gives you great
 flexibility in accessing rows with features that interest you. Don't hesitate to experiment!
+
+>[!IMPORTANT]
+>For the knowledge check, select one of the following table commands with a description of its effect. Assume that it is a table that has already been loaded.

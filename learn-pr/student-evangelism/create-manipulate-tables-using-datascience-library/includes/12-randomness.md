@@ -53,9 +53,9 @@ np.random.choice(two_groups, 10)
 A fundamental question about random events is whether or not they occur.
 For example:
 
--   Did an individual get assigned to the treatment group, or not?
--   Is a gambler going to win money, or not?
--   Has a poll made an accurate prediction, or not?
+- Did an individual get assigned to the treatment group, or not?
+- Is a gambler going to win money, or not?
+- Has a poll made an accurate prediction, or not?
 
 Once the event has occurred, you can answer "yes" or "no" to all these
 questions. In programming, it is conventional to do this by labeling

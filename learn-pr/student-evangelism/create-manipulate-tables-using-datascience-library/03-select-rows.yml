@@ -12,7 +12,6 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/03-selecting-rows.md)]
-content: 'Select one of the following table commands with a description of its effect. Assume that t is a table that has already been loaded.'
 
 quiz:
   title: Check your Knowledge

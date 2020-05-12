@@ -35,60 +35,14 @@ cones = Table().with_columns(
 cones
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-vanilla
-</td>
-<td>
-4.75
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-6.55
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.75
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Price|
+|--- |--- |
+|strawberry|3.55|
+|vanilla|4.75|
+|chocolate|6.55|
+|strawberry|5.25|
+|chocolate|5.75|
+
 ``` {.python}
 ratings = Table().with_columns(
     'Kind', make_array('strawberry', 'chocolate', 'vanilla'),
@@ -97,44 +51,11 @@ ratings = Table().with_columns(
 ratings
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Kind
-</th>
-<th>
-Stars
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-2.5
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-3.5
-</td>
-</tr>
-<tr>
-<td>
-vanilla
-</td>
-<td>
-4
-</td>
-</tr>
-</tbody>
-</table>
+|Kind|Stars|
+|--- |--- |
+|strawberry|2.5|
+|chocolate|3.5|
+|vanilla|4|
 Each of the tables has a column that contains ice cream flavors: `cones`
 has the column `Flavor`, and `ratings` has the column `Kind`. The
 entries in these columns can be used to link the two tables.
@@ -150,78 +71,14 @@ rated = cones.join('Flavor', ratings, 'Kind')
 rated
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Price
-</th>
-<th>
-Stars
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-6.55
-</td>
-<td>
-3.5
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.75
-</td>
-<td>
-3.5
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-3.55
-</td>
-<td>
-2.5
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-5.25
-</td>
-<td>
-2.5
-</td>
-</tr>
-<tr>
-<td>
-vanilla
-</td>
-<td>
-4.75
-</td>
-<td>
-4
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Price|Stars|
+|--- |--- |--- |
+|chocolate|6.55|3.5|
+|chocolate|5.75|3.5|
+|strawberry|3.55|2.5|
+|strawberry|5.25|2.5|
+|vanilla|4.75|4|
+
 Each cone now has not only its price but also the rating of its flavor.
 
 In general, a call to `join` that augments a table (say `table1`) with
@@ -238,96 +95,14 @@ they mean that you are paying less for each rating star.
 rated.with_column('$/Star', rated.column('Price') / rated.column('Stars')).sort(3)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Price
-</th>
-<th>
-Stars
-</th>
-<th>
-\$/Star
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-vanilla
-</td>
-<td>
-4.75
-</td>
-<td>
-4
-</td>
-<td>
-1.1875
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-3.55
-</td>
-<td>
-2.5
-</td>
-<td>
-1.42
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.75
-</td>
-<td>
-3.5
-</td>
-<td>
-1.64286
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-6.55
-</td>
-<td>
-3.5
-</td>
-<td>
-1.87143
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-5.25
-</td>
-<td>
-2.5
-</td>
-<td>
-2.1
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Price|Stars|\$/Star|
+|--- |--- |--- |--- |
+|vanilla|4.75|4|1.1875|
+|strawberry|3.55|2.5|1.42|
+|chocolate|5.75|3.5|1.64286|
+|chocolate|6.55|3.5|1.87143|
+|strawberry|5.25|2.5|2.1|
+
 Though strawberry has the lowest rating among the three flavors, the
 less expensive strawberry cone does well on this measure because it
 doesn't cost a lot per star.
@@ -341,78 +116,14 @@ any fundamental difference.
 ratings.join('Kind', cones, 'Flavor')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Kind
-</th>
-<th>
-Stars
-</th>
-<th>
-Price
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-3.5
-</td>
-<td>
-6.55
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-3.5
-</td>
-<td>
-5.75
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-2.5
-</td>
-<td>
-3.55
-</td>
-</tr>
-<tr>
-<td>
-strawberry
-</td>
-<td>
-2.5
-</td>
-<td>
-5.25
-</td>
-</tr>
-<tr>
-<td>
-vanilla
-</td>
-<td>
-4
-</td>
-<td>
-4.75
-</td>
-</tr>
-</tbody>
-</table>
+|Kind|Stars|Price|
+|--- |--- |--- |
+|chocolate|3.5|6.55|
+|chocolate|3.5|5.75|
+|strawberry|2.5|3.55|
+|strawberry|2.5|5.25|
+|vanilla|4|4.75|
+
 Also note that the join will only contain information about items that
 appear in both tables. Let's see an example. Suppose there is a table of
 reviews of some ice cream cones, and we have found the average review
@@ -426,87 +137,23 @@ reviews = Table().with_columns(
 reviews
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Stars
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-vanilla
-</td>
-<td>
-5
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-3
-</td>
-</tr>
-<tr>
-<td>
-vanilla
-</td>
-<td>
-5
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-4
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Stars|
+|--- |--- |
+|vanilla|5|
+|chocolate|3|
+|vanilla|5|
+|chocolate|4|
+
 ``` {.python}
 average_review = reviews.group('Flavor', np.average)
 average_review
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Stars average
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-3.5
-</td>
-</tr>
-<tr>
-<td>
-vanilla
-</td>
-<td>
-5
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Stars average|
+|--- |--- |
+|chocolate|3.5|
+|vanilla|5|
+
 We can join `cones` and `average_review` by providing the labels of the
 columns by which to join.
 
@@ -514,57 +161,24 @@ columns by which to join.
 cones.join('Flavor', average_review, 'Flavor')
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Flavor
-</th>
-<th>
-Price
-</th>
-<th>
-Stars average
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-6.55
-</td>
-<td>
-3.5
-</td>
-</tr>
-<tr>
-<td>
-chocolate
-</td>
-<td>
-5.75
-</td>
-<td>
-3.5
-</td>
-</tr>
-<tr>
-<td>
-vanilla
-</td>
-<td>
-4.75
-</td>
-<td>
-5
-</td>
-</tr>
-</tbody>
-</table>
+|Flavor|Price|Stars average|
+|--- |--- |--- |
+|chocolate|6.55|3.5|
+|chocolate|5.75|3.5|
+|vanilla|4.75|5|
+
 Notice how the strawberry cones have disappeared. None of the reviews
 are for strawberry cones, so there is nothing to which the `strawberry`
 rows can be joined. This might be a problem, or it might not be - that
 depends on the analysis we are trying to perform with the joined table.
+
+>[!IMPORTANT]
+>For the knowledge check: Data 8X has opened up a candy store where we sell small bags of candies in groups of different amounts. Each bag contains candies of one color. Each row is a bag of candies. Our table "candy" is as follows
+>|Color|Amount|Price ($)|
+>|-|-|-|
+>|Red|4|1.30|
+>|Green|6|1.20|
+>|Blue|12|2.00|
+>|Red|7|1.75|
+>|Green|9|1.40|
+>|Green|2|1.00|

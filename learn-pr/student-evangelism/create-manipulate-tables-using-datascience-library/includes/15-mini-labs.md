@@ -3,7 +3,7 @@
 
 For convenience, you can launch your VS Codespaces environment by clicking the link below:
 
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 In your online Visual Studio Codespaces environment, you'll find "mini lab" Jupyter notebooks that will allow you to apply the concepts that you've learned from this module. You'll be able to code your solutions in the notebook directly and receive real-time feedback from our autograder by running the corresponding grader cells.
 

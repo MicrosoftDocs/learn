@@ -252,8 +252,3 @@ outcome_table.group('Outcome').barh(0)
 Not surprisingly, each of the three outcomes -1, 0, and 1 appeared about
 about 100 of the 300 times, give or take. We will examine the "give or
 take" amounts more closely in later chapters.
-
-``` {.python}
-```
-thon}
-```
