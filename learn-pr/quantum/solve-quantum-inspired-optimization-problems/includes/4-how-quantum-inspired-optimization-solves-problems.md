@@ -1,8 +1,8 @@
-Azure Quantum offers a range of solvers based on two techniques to solve optimization problems. One of them is *simulated annealing* and the other is *quantum annealing*. 
+Here, we discuss two common methods for finding the global minimum of a cost function: *simulated annealing* and *quantum annealing*. Simulated annealing is based on ideas from thermal physics; quantum annealing is a quantum algorithm.
 
 ## Simulated annealing
 
-For optimization problems in search spaces that are too large to solve by exhaustive search and with objective functions that are rugged, one of the most successful and commonly used heuristics is simulated annealing. A *heuristic* is a technique for finding an approximate solution. Heuristics are useful in situations where finding an exact solution can take too long. You can think of the technique as a random walk through the solution space, where each step a person or particle creates a path through the optimization landscape.
+For optimization problems in search spaces that are too large to solve by exhaustive search and with cost functions that are rugged, one of the most successful and commonly used heuristics is simulated annealing. A *heuristic* is a technique for finding an approximate solution. Heuristics are useful in situations where finding an exact solution can take too long. You can think of the technique as a random walk through the solution space, where each person or particle creates a path through the optimization landscape.
 
 ### How does simulated annealing work?
 
@@ -24,10 +24,10 @@ In this graph, you can see the difference between a thermal jump (where thermal 
 
 ### How does quantum annealing work?
 
-In quantum annealing, we frame our problem by giving assignments to qubits, which are our variables. The energy of a given assignment to the qubits is the value of the objective function.
+In quantum annealing, we frame our problem by giving assignments to qubits, which are our variables. The energy of a given assignment to the qubits is the value of the cost function.
 
 Initially we begin with the quantum state in a broad superposition over many possible assignments to the qubits. Instead of varying the temperature, as we did in simulated annealing, we vary a parameter called the *quantum field strength*.
 
 This parameter defines the radius of neighboring states we can move to. As time goes on and we get closer to a solution, this radius becomes smaller and smaller. By the end of the annealing process, the system has settled into one particular low-energy configuration that can then be measured, which gives us the solution to the optimization problem. The most mathematically clean formulation of quantum annealing is called *adiabatic quantum optimization*, and this is what quantum-inspired methods attempt to emulate.
 
-Azure Quantum offers a range of solvers that are standard implementations of simulated annealing and (simulated) quantum annealing, and also variations on those methods too. The latter - simulated quantum annealing and variations - are examples of QIO.
+Azure Quantum offers a range of solvers that are standard implementations of simulated annealing and quantum-inspired optimization solvers.

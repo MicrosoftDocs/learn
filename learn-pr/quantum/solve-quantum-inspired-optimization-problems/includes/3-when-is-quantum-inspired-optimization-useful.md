@@ -1,16 +1,15 @@
 To understand optimization problems, you first need to learn some terminology. 
 
 - **Search space**. This is the space that contains all the feasible solutions to the optimization problem. Each point in this search space is a valid solution to the problem but it's not necessarily the lowest point, which corresponds to the lowest cost solution.
-- **Objective function**. This is a mathematical description, which, when evaluated, tells you the cost of that solution.
-- **Cost function**. This is the objective function that we specifically wish to minimize. For Contoso Logistics, the cost function is the weight difference between the two ships. In other scenarios, it might be length of travel or a monetary cost.
+- **Cost function**. This is a mathematical function to be minimized. For Contoso Logistics, the cost function is the weight difference between the two ships. In other scenarios, it might be length of travel or a monetary cost.
 
-Together, the search space and the objective function are often referred to as an _optimization landscape_. In the case of a problem that involves two continuous variables, the analogy to a landscape is quite direct.
+Together, the search space and the cost function are often referred to as an _optimization landscape_. In the case of a problem that involves two continuous variables, the analogy to a landscape is quite direct.
 
 Let's explore a few landscapes and see which are good candidates for QIO.
 
 ## A single, smooth landscape
 
-Consider the following plot of an objective function that looks like a single smooth valley:
+Consider the following plot of a cost function that looks like a single smooth valley:
 
 ![A plot of an optimization landscape that looks like a single smooth valley](../media/plot-simple.png)
 
@@ -26,7 +25,7 @@ In this scenario, one of the greatest challenges is to avoid getting stuck at an
 
 ## A scattered, random landscape
 
-So far we have discussed smooth and rugged objective functions, but what if there is no structure at all? The following diagram shows such a landscape:
+So far we have discussed smooth and rugged cost functions, but what if there is no structure at all? The following diagram shows such a landscape:
 
 ![A plot of an optimization landscape that shows points scattered randomly](../media/plot-random.png)
 
@@ -36,7 +35,7 @@ In these cases, where the solutions are completely random, then no algorithm can
 
 ![A summary that shows how a complex, structured landscape works best for QIO](../media/plot-summary.png)
 
-To summarize, here are the necessary conditions for QIO to perform well:
+To summarize, here are the necessary conditions for QIO to perform well, compared to other classical optimization algorithms:
 
 - Optimization landscapes should be rugged but structured. Such landscapes occur frequently in  real-world problems.
 - If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with over 100 variables, QIO has achieved orders of magnitude improvement over [previously used methods](https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/?azure-portal=true).

@@ -6,6 +6,9 @@ This short animation shows one possible way to optimize the distribution:
 
 Those two sets correspond to whether the container is loaded onto ship *a* or ship *b*. In this part, we'll use QIO to solve the problem.
 
+> [!NOTE]
+> This problem is known as a _number partitioning problem_. Although you can apply other heuristics to solve this type of problem, the container ship problem is a good introductory way to illustrate how to apply QIO concepts.
+
 ## Express the problem
 
 Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship. This sum is expressed in the following equation, where *w<sub>i</sub>* is the weight of container *i*:
