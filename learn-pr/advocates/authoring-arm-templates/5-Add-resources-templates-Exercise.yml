@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.authoring-arm-templates.5-add-resources-templates-exercise
-title: Add a resources to your template - Exercise
+title: Add resources to your template - Exercise
 interactive: bash
 azureSandbox: true
 metadata:
-  title: Add a resources to your template - Exercise
-  description: In this exercise you will add a resource to your newly created template.
+  title: Add resources to your template - Exercise
+  description: In this exercise, you will add a resource to your newly created template.
   ms.date: 09/24/2018
   author: pierreroman
   ms.author: pierrer
