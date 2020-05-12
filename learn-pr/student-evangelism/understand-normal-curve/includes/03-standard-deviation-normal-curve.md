@@ -255,5 +255,5 @@ SDs \| at least 75% \| about 95% \| \|average $\pm$ 3 SDs \| at least
 SDs \| at least 75% \| about 95% \| \|average $\pm$ 3 SDs \| at least
 88.888...% \| about 99.73% \|
 
-``` {.python}
-```
+> [!IMPORTANT]
+> Knowledge Check Question: "Recall Chebychev's bounds from this module. Select the correct percentages for the bounds and approximations for the corresponding distributions."
