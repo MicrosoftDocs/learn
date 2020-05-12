@@ -30,169 +30,21 @@ united = Table.read_table(path_data + 'united_summer2015.csv')
 united
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Flight Number
-</th>
-<th>
-Destination
-</th>
-<th>
-Delay
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-6/1/15
-</td>
-<td>
-73
-</td>
-<td>
-HNL
-</td>
-<td>
-257
-</td>
-</tr>
-<tr>
-<td>
-6/1/15
-</td>
-<td>
-217
-</td>
-<td>
-EWR
-</td>
-<td>
-28
-</td>
-</tr>
-<tr>
-<td>
-6/1/15
-</td>
-<td>
-237
-</td>
-<td>
-STL
-</td>
-<td>
--3
-</td>
-</tr>
-<tr>
-<td>
-6/1/15
-</td>
-<td>
-250
-</td>
-<td>
-SAN
-</td>
-<td>
-0
-</td>
-</tr>
-<tr>
-<td>
-6/1/15
-</td>
-<td>
-267
-</td>
-<td>
-PHL
-</td>
-<td>
-64
-</td>
-</tr>
-<tr>
-<td>
-6/1/15
-</td>
-<td>
-273
-</td>
-<td>
-SEA
-</td>
-<td>
--6
-</td>
-</tr>
-<tr>
-<td>
-6/1/15
-</td>
-<td>
-278
-</td>
-<td>
-SEA
-</td>
-<td>
--8
-</td>
-</tr>
-<tr>
-<td>
-6/1/15
-</td>
-<td>
-292
-</td>
-<td>
-EWR
-</td>
-<td>
-12
-</td>
-</tr>
-<tr>
-<td>
-6/1/15
-</td>
-<td>
-300
-</td>
-<td>
-HNL
-</td>
-<td>
-20
-</td>
-</tr>
-<tr>
-<td>
-6/1/15
-</td>
-<td>
-317
-</td>
-<td>
-IND
-</td>
-<td>
--10
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Date|Flight Number|Destination|Delay|
+|--- |--- |--- |--- |
+|6/1/15|73|HNL|257|
+|6/1/15|217|EWR|28|
+|6/1/15|237|STL|-3|
+|6/1/15|250|SAN|0|
+|6/1/15|267|PHL|64|
+|6/1/15|273|SEA|-6|
+|6/1/15|278|SEA|-8|
+|6/1/15|292|EWR|12|
+|6/1/15|300|HNL|20|
+|6/1/15|317|IND|-10|
+
 ... (13815 rows omitted)
-</p>
+
 One flight departed 16 minutes early, and one was 580 minutes late. The
 other delay times were almost all between -10 minutes and 200 minutes,
 as the histogram below shows.
@@ -294,8 +146,5 @@ resembles the histogram of the population, with high probability.
 This justifies the use of large random samples in statistical inference.
 The idea is that since a large random sample is likely to resemble the
 population from which it is drawn, quantities computed from the values
-in the sample are likely to be close to the corresponding quantities in
-the population.
- is drawn, quantities computed from the values
 in the sample are likely to be close to the corresponding quantities in
 the population.

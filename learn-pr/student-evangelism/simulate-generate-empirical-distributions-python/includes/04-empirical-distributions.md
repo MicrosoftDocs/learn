@@ -27,47 +27,14 @@ die = Table().with_column('Face', np.arange(1, 7, 1))
 die
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Face
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-</tr>
-</tbody>
-</table>
+|Face|
+|--- |
+|1|
+|2|
+|3|
+|4|
+|5|
+|6|
 
 ### A Probability Distribution
 
@@ -131,67 +98,19 @@ Here are the results of 10 rolls of a die.
 die.sample(10)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Face
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-</tr>
-</tbody>
-</table>
+|Face|
+|--- |
+|1|
+|2|
+|3|
+|4|
+|4|
+|1|
+|1|
+|2|
+|6|
+|2|
+
 We can use the same method to simulate as many rolls as we like, and
 then draw empirical histograms of the results. Because we are going to
 do this repeatedly, we define a function `empirical_hist_die` that takes
@@ -247,7 +166,5 @@ For example, in the long run, the proportion of times the face with four
 spots appears gets closer and closer to 1/6.
 
 Here "independently and under identical conditions" means that every
-repetition is performed in the same way regardless of the results of all
-the other repetitions.
 repetition is performed in the same way regardless of the results of all
 the other repetitions.

@@ -3,8 +3,7 @@
 
 If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
-
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 ``` {.python}
 
@@ -17,7 +16,6 @@ import matplotlib.pyplot as plots
 plots.style.use('fivethirtyeight')
 import numpy as np
 ```
-
 
 This [problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) has
 flummoxed many people over the years, [mathematicians
@@ -36,15 +34,15 @@ closed doors. Behind one of the doors is a fancy car, and behind each of
 the other two there is a goat. The contestant doesn't know where the car
 is, and has to attempt to find it under the following rules.
 
--   The contestant makes an initial choice, but that door isn't opened.
--   At least one of the other two doors must have a goat behind it.
+- The contestant makes an initial choice, but that door isn't opened.
+- At least one of the other two doors must have a goat behind it.
     Monty opens one of these doors to reveal a goat, displayed in all
     its glory in
     [Wikipedia](https://en.wikipedia.org/wiki/Monty_Hall_problem):
 
 ![Monty Hall goat](../media/monty-hall-goat.png)
 
--   There are two doors left, one of which was the contestant's original
+- There are two doors left, one of which was the contestant's original
     choice. One of the doors has the car behind it, and the other one
     has a goat. The contestant now gets to choose which of the two doors
     to open.
@@ -63,12 +61,11 @@ The solution to the problem is straightforward under this
 assumption, though the straightforward solution doesn't convince
 everyone. Here it is anyway.
 
--   The chance that the car is behind the originally chosen door is 1/3.
--   The car is behind either the originally chosen door or the door that
-    remains. It can't be anywhere else.
--   Therefore, the chance that the car is behind the door that remain
+- The chance that the car is behind the originally chosen door is 1/3.
+- The car is behind either the originally chosen door or the door that remains. It can't be anywhere else.
+- Therefore, the chance that the car is behind the door that remain
     is 2/3.
--   Therefore, the contestant should switch.
+- Therefore, the contestant should switch.
 
 That's it. End of story.
 
@@ -120,7 +117,9 @@ Let's confirm that the function works.
 other_goat('first goat'), other_goat('second goat'), other_goat('watermelon')
 ```
 
-    ('second goat', 'first goat', None)
+```output
+('second goat', 'first goat', None)
+```
 
 The string `'watermelon'` is not the name of one of the goats, so when
 `'watermelon'` is the input then `other_goat` does nothing.
@@ -138,9 +137,9 @@ We are now ready to simulate one play. To do this, we will define a
 function `monty_hall_game` that takes no arguments. When the function is
 called, it plays Monty's game once and returns a list consisting of:
 
--   the contestant's guess
--   what Monty reveals when he opens a door
--   what remains behind the other door
+- the contestant's guess
+- what Monty reveals when he opens a door
+- what remains behind the other door
 
 The game starts with the contestant choosing one door at random. In
 doing so, the contestant makes a random choice from among the car, the
@@ -176,7 +175,9 @@ Let's play! Run the cell several times and see how the results change.
 monty_hall_game()
 ```
 
-    ['second goat', 'first goat', 'car']
+```output
+['second goat', 'first goat', 'car']
+```
 
 ### Step 3: Number of Repetitions
 
@@ -234,87 +235,23 @@ original_choice = games.group('Guess')
 original_choice
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Guess
-</th>
-<th>
-count
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-car
-</td>
-<td>
-3268
-</td>
-</tr>
-<tr>
-<td>
-first goat
-</td>
-<td>
-3372
-</td>
-</tr>
-<tr>
-<td>
-second goat
-</td>
-<td>
-3360
-</td>
-</tr>
-</tbody>
-</table>
+|Guess|count|
+|--- |--- |
+|car|3268|
+|first goat|3372|
+|second goat|3360|
+
 ``` {.python}
 remaining_door = games.group('Remaining')
 remaining_door
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Remaining
-</th>
-<th>
-count
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-car
-</td>
-<td>
-6732
-</td>
-</tr>
-<tr>
-<td>
-first goat
-</td>
-<td>
-1615
-</td>
-</tr>
-<tr>
-<td>
-second goat
-</td>
-<td>
-1653
-</td>
-</tr>
-</tbody>
-</table>
+|Remaining|count|
+|--- |--- |
+|car|6732|
+|first goat|1615|
+|second goat|1653|
+
 As our earlier solution said, the car is behind the remaining door
 two-thirds of the time, to a good approximation. The contestant
 is twice as likely to get the car if she switches than if she sticks
@@ -329,56 +266,12 @@ combined = joined.relabeled(0, 'Item').relabeled(1, 'Original Door').relabeled(2
 combined
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Item
-</th>
-<th>
-Original Door
-</th>
-<th>
-Remaining Door
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-car
-</td>
-<td>
-3268
-</td>
-<td>
-6732
-</td>
-</tr>
-<tr>
-<td>
-first goat
-</td>
-<td>
-3372
-</td>
-<td>
-1615
-</td>
-</tr>
-<tr>
-<td>
-second goat
-</td>
-<td>
-3360
-</td>
-<td>
-1653
-</td>
-</tr>
-</tbody>
-</table>
+|Item|Original Door|Remaining Door|
+|--- |--- |--- |
+|car|3268|6732|
+|first goat|3372|1615|
+|second goat|3360|1653|
+
 ``` {.python}
 combined.barh(0)
 ```
@@ -390,6 +283,4 @@ is equally likely to be any of the three available items. But the gold
 bar corresponding to `Car` is twice as long as the blue.
 
 The simulation confirms that the contestant is twice as likely to win if
-she switches.
-n if
 she switches.

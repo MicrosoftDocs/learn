@@ -8,7 +8,6 @@ plots.style.use('fivethirtyeight')
 %matplotlib inline
 ```
 
-
 An important part of data science consists of making conclusions based
 on the data in random samples. In order to correctly interpret their
 results, data scientists have to first understand exactly what random
@@ -28,235 +27,21 @@ top = top2.move_to_start('Row Index')
 top.set_format(make_array(3, 4), NumberFormatter)
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Row Index
-</th>
-<th>
-Title
-</th>
-<th>
-Studio
-</th>
-<th>
-Gross
-</th>
-<th>
-Gross (Adjusted)
-</th>
-<th>
-Year
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-0
-</td>
-<td>
-Star Wars: The Force Awakens
-</td>
-<td>
-Buena Vista (Disney)
-</td>
-<td>
-906,723,418
-</td>
-<td>
-906,723,400
-</td>
-<td>
-2015
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-<td>
-Avatar
-</td>
-<td>
-Fox
-</td>
-<td>
-760,507,625
-</td>
-<td>
-846,120,800
-</td>
-<td>
-2009
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-Titanic
-</td>
-<td>
-Paramount
-</td>
-<td>
-658,672,302
-</td>
-<td>
-1,178,627,900
-</td>
-<td>
-1997
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-<td>
-Jurassic World
-</td>
-<td>
-Universal
-</td>
-<td>
-652,270,625
-</td>
-<td>
-687,728,000
-</td>
-<td>
-2015
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-Marvel's The Avengers
-</td>
-<td>
-Buena Vista (Disney)
-</td>
-<td>
-623,357,910
-</td>
-<td>
-668,866,600
-</td>
-<td>
-2012
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-The Dark Knight
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-534,858,444
-</td>
-<td>
-647,761,600
-</td>
-<td>
-2008
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-Star Wars: Episode I - The Phantom Menace
-</td>
-<td>
-Fox
-</td>
-<td>
-474,544,677
-</td>
-<td>
-785,715,000
-</td>
-<td>
-1999
-</td>
-</tr>
-<tr>
-<td>
-7
-</td>
-<td>
-Star Wars
-</td>
-<td>
-Fox
-</td>
-<td>
-460,998,007
-</td>
-<td>
-1,549,640,500
-</td>
-<td>
-1977
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-Avengers: Age of Ultron
-</td>
-<td>
-Buena Vista (Disney)
-</td>
-<td>
-459,005,868
-</td>
-<td>
-465,684,200
-</td>
-<td>
-2015
-</td>
-</tr>
-<tr>
-<td>
-9
-</td>
-<td>
-The Dark Knight Rises
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-448,139,099
-</td>
-<td>
-500,961,700
-</td>
-<td>
-2012
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Row Index|Title|Studio|Gross|Gross (Adjusted)|Year|
+|--- |--- |--- |--- |--- |--- |
+|0|Star Wars: The Force Awakens|Buena Vista (Disney)|906,723,418|906,723,400|2015|
+|1|Avatar|Fox|760,507,625|846,120,800|2009|
+|2|Titanic|Paramount|658,672,302|1,178,627,900|1997|
+|3|Jurassic World|Universal|652,270,625|687,728,000|2015|
+|4|Marvel's The Avengers|Buena Vista (Disney)|623,357,910|668,866,600|2012|
+|5|The Dark Knight|Warner Bros.|534,858,444|647,761,600|2008|
+|6|Star Wars: Episode I - The Phantom Menace|Fox|474,544,677|785,715,000|1999|
+|7|Star Wars|Fox|460,998,007|1,549,640,500|1977|
+|8|Avengers: Age of Ultron|Buena Vista (Disney)|459,005,868|465,684,200|2015|
+|9|The Dark Knight Rises|Warner Bros.|448,139,099|500,961,700|2012|
+
 ... (190 rows omitted)
-</p>
+
 ### Sampling Rows of a Table
 
 Each row of a data table represents an individual; in `top`, each
@@ -278,264 +63,28 @@ You have done this many times, for example by using `take`:
 top.take(make_array(3, 18, 100))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Row Index
-</th>
-<th>
-Title
-</th>
-<th>
-Studio
-</th>
-<th>
-Gross
-</th>
-<th>
-Gross (Adjusted)
-</th>
-<th>
-Year
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-3
-</td>
-<td>
-Jurassic World
-</td>
-<td>
-Universal
-</td>
-<td>
-652,270,625
-</td>
-<td>
-687,728,000
-</td>
-<td>
-2015
-</td>
-</tr>
-<tr>
-<td>
-18
-</td>
-<td>
-Spider-Man
-</td>
-<td>
-Sony
-</td>
-<td>
-403,706,375
-</td>
-<td>
-604,517,300
-</td>
-<td>
-2002
-</td>
-</tr>
-<tr>
-<td>
-100
-</td>
-<td>
-Gone with the Wind
-</td>
-<td>
-MGM
-</td>
-<td>
-198,676,459
-</td>
-<td>
-1,757,788,200
-</td>
-<td>
-1939
-</td>
-</tr>
-</tbody>
-</table>
+|Row Index|Title|Studio|Gross|Gross (Adjusted)|Year|
+|--- |--- |--- |--- |--- |--- |
+|3|Jurassic World|Universal|652,270,625|687,728,000|2015|
+|18|Spider-Man|Sony|403,706,375|604,517,300|2002|
+|100|Gone with the Wind|MGM|198,676,459|1,757,788,200|1939|
+
 You have also used `where`:
 
 ``` {.python}
 top.where('Title', are.containing('Harry Potter'))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Row Index
-</th>
-<th>
-Title
-</th>
-<th>
-Studio
-</th>
-<th>
-Gross
-</th>
-<th>
-Gross (Adjusted)
-</th>
-<th>
-Year
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-22
-</td>
-<td>
-Harry Potter and the Deathly Hallows Part 2
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-381,011,219
-</td>
-<td>
-417,512,200
-</td>
-<td>
-2011
-</td>
-</tr>
-<tr>
-<td>
-43
-</td>
-<td>
-Harry Potter and the Sorcerer's Stone
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-317,575,550
-</td>
-<td>
-486,442,900
-</td>
-<td>
-2001
-</td>
-</tr>
-<tr>
-<td>
-54
-</td>
-<td>
-Harry Potter and the Half-Blood Prince
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-301,959,197
-</td>
-<td>
-352,098,800
-</td>
-<td>
-2009
-</td>
-</tr>
-<tr>
-<td>
-59
-</td>
-<td>
-Harry Potter and the Order of the Phoenix
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-292,004,738
-</td>
-<td>
-369,250,200
-</td>
-<td>
-2007
-</td>
-</tr>
-<tr>
-<td>
-62
-</td>
-<td>
-Harry Potter and the Goblet of Fire
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-290,013,036
-</td>
-<td>
-393,024,800
-</td>
-<td>
-2005
-</td>
-</tr>
-<tr>
-<td>
-69
-</td>
-<td>
-Harry Potter and the Chamber of Secrets
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-261,988,482
-</td>
-<td>
-390,768,100
-</td>
-<td>
-2002
-</td>
-</tr>
-<tr>
-<td>
-76
-</td>
-<td>
-Harry Potter and the Prisoner of Azkaban
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-249,541,069
-</td>
-<td>
-349,598,600
-</td>
-<td>
-2004
-</td>
-</tr>
-</tbody>
-</table>
+|Row Index|Title|Studio|Gross|Gross (Adjusted)|Year|
+|--- |--- |--- |--- |--- |--- |
+|22|Harry Potter and the Deathly Hallows Part 2|Warner Bros.|381,011,219|417,512,200|2011|
+|43|Harry Potter and the Sorcerer's Stone|Warner Bros.|317,575,550|486,442,900|2001|
+|54|Harry Potter and the Half-Blood Prince|Warner Bros.|301,959,197|352,098,800|2009|
+|59|Harry Potter and the Order of the Phoenix|Warner Bros.|292,004,738|369,250,200|2007|
+|62|Harry Potter and the Goblet of Fire|Warner Bros.|290,013,036|393,024,800|2005|
+|69|Harry Potter and the Chamber of Secrets|Warner Bros.|261,988,482|390,768,100|2002|
+|76|Harry Potter and the Prisoner of Azkaban|Warner Bros.|249,541,069|349,598,600|2004|
+
 While these are samples, they are not random samples. They don't involve
 chance.
 
@@ -558,8 +107,8 @@ being chosen.
 For example, suppose you choose two people from a population that
 consists of three people A, B, and C, according to the following scheme:
 
--   Person A is chosen with probability 1.
--   One of Persons B or C is chosen according to the toss of a coin: if
+- Person A is chosen with probability 1.
+- One of Persons B or C is chosen according to the toss of a coin: if
     the coin lands heads, you choose B, and if it lands tails you
     choose C.
 
@@ -593,235 +142,21 @@ start = np.random.choice(np.arange(10))
 top.take(np.arange(start, top.num_rows, 10))
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Row Index
-</th>
-<th>
-Title
-</th>
-<th>
-Studio
-</th>
-<th>
-Gross
-</th>
-<th>
-Gross (Adjusted)
-</th>
-<th>
-Year
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-2
-</td>
-<td>
-Titanic
-</td>
-<td>
-Paramount
-</td>
-<td>
-658,672,302
-</td>
-<td>
-1,178,627,900
-</td>
-<td>
-1997
-</td>
-</tr>
-<tr>
-<td>
-12
-</td>
-<td>
-The Hunger Games: Catching Fire
-</td>
-<td>
-Lionsgate
-</td>
-<td>
-424,668,047
-</td>
-<td>
-444,697,400
-</td>
-<td>
-2013
-</td>
-</tr>
-<tr>
-<td>
-22
-</td>
-<td>
-Harry Potter and the Deathly Hallows Part 2
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-381,011,219
-</td>
-<td>
-417,512,200
-</td>
-<td>
-2011
-</td>
-</tr>
-<tr>
-<td>
-32
-</td>
-<td>
-American Sniper
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-350,126,372
-</td>
-<td>
-374,796,000
-</td>
-<td>
-2014
-</td>
-</tr>
-<tr>
-<td>
-42
-</td>
-<td>
-Iron Man
-</td>
-<td>
-Paramount
-</td>
-<td>
-318,412,101
-</td>
-<td>
-385,808,100
-</td>
-<td>
-2008
-</td>
-</tr>
-<tr>
-<td>
-52
-</td>
-<td>
-Skyfall
-</td>
-<td>
-Sony
-</td>
-<td>
-304,360,277
-</td>
-<td>
-329,225,400
-</td>
-<td>
-2012
-</td>
-</tr>
-<tr>
-<td>
-62
-</td>
-<td>
-Harry Potter and the Goblet of Fire
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-290,013,036
-</td>
-<td>
-393,024,800
-</td>
-<td>
-2005
-</td>
-</tr>
-<tr>
-<td>
-72
-</td>
-<td>
-Jaws
-</td>
-<td>
-Universal
-</td>
-<td>
-260,000,000
-</td>
-<td>
-1,114,285,700
-</td>
-<td>
-1975
-</td>
-</tr>
-<tr>
-<td>
-82
-</td>
-<td>
-Twister
-</td>
-<td>
-Warner Bros.
-</td>
-<td>
-241,721,524
-</td>
-<td>
-475,786,700
-</td>
-<td>
-1996
-</td>
-</tr>
-<tr>
-<td>
-92
-</td>
-<td>
-Ghost
-</td>
-<td>
-Paramount
-</td>
-<td>
-217,631,306
-</td>
-<td>
-447,747,400
-</td>
-<td>
-1990
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Row Index|Title|Studio|Gross|Gross (Adjusted)|Year|
+|--- |--- |--- |--- |--- |--- |
+|2|Titanic|Paramount|658,672,302|1,178,627,900|1997|
+|12|The Hunger Games: Catching Fire|Lionsgate|424,668,047|444,697,400|2013|
+|22|Harry Potter and the Deathly Hallows Part 2|Warner Bros.|381,011,219|417,512,200|2011|
+|32|American Sniper|Warner Bros.|350,126,372|374,796,000|2014|
+|42|Iron Man|Paramount|318,412,101|385,808,100|2008|
+|52|Skyfall|Sony|304,360,277|329,225,400|2012|
+|62|Harry Potter and the Goblet of Fire|Warner Bros.|290,013,036|393,024,800|2005|
+|72|Jaws|Universal|260,000,000|1,114,285,700|1975|
+|82|Twister|Warner Bros.|241,721,524|475,786,700|1996|
+|92|Ghost|Paramount|217,631,306|447,747,400|1990|
+
 ... (10 rows omitted)
-</p>
+
 Run the cell a few times to see how the output varies.
 
 This systematic sample is a probability sample. In this scheme, all rows
@@ -861,4 +196,3 @@ because you didn't choose who walked by. But it's not a random sample --
 it's a *sample of convenience*. You didn't know ahead of time the
 probability of each person entering the sample; perhaps you hadn't even
 specified exactly who was in the population.
- the population.
