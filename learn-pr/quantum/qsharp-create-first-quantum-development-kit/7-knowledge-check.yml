@@ -19,7 +19,7 @@ quiz:
 
   - content: 'Which of these statements is true about the random number generator that you built in this module?'
     choices:
-    - content: 'You always get truly random numbers, both in the simulator and on a quantum computer.'
+    - content: 'You always get truly random numbers, both in the simulator and on quantum hardware.'
       isCorrect: false
       explanation: 'A quantum computer can produce truly random numbers. Although the simulator produces pseudorandom numbers, you can use it to test and verify your algorithms.'
     - content: 'You never get truly random numbers. You get only pseudorandom numbers.'

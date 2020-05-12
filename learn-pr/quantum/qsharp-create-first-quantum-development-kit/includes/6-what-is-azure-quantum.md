@@ -1,7 +1,7 @@
 
 Keep in mind that the programs you ran here use a _simulator_ to mimic quantum behavior. A simulator is a perfect way to experiment with and verify your quantum algorithms before you run your programs on a quantum computer.
 
-When you're ready to run your programs on quantum computers, there's Azure Quantum, a quantum computing service that runs on Azure.
+When you're ready to run your programs on quantum hardware, there's Azure Quantum, a quantum computing service that runs on Azure.
 
 Azure Quantum is currently in limited preview with select partners and customers. Here's an early look at what to expect.
 
@@ -23,9 +23,9 @@ For more details on how this is done in practice, check out Dave Wecker's talk o
 
 **Quantum hardware**: After you have a quantum program that you'd like to run on a quantum computer, you can choose from a range of compute options.
 
-For example, there are trapped ion quantum computers from IonQ and Honeywell. There are also quantum computers built from superconducting circuits from QCI.
+For example, there's trapped ion quantum hardware from IonQ and Honeywell. There's also quantum hardware built from superconducting circuits from QCI.
 
-![Companies who provide quantum computers on Azure Quantum](../media/6-azure-quantum.png)
+![Companies who provide quantum hardware on Azure Quantum](../media/6-azure-quantum.png)
 
 ## What are Azure Quantum Workspaces?
 

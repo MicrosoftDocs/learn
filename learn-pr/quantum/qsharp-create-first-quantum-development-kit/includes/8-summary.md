@@ -2,7 +2,7 @@ Congratulations! Your first Q# program, although basic, gave you practice perfor
 
 Visual Studio Code and the QDK provide you with everything you need to start writing and verifying your own quantum algorithms right away.
 
-Azure Quantum is a cloud service that provides access to quantum computers. It's currently in limited preview, but you can [request early access](https://azure.microsoft.com/services/quantum/#contact?azure-portal=true).
+Azure Quantum is a cloud service that provides access to quantum hardware. It's currently in limited preview, but you can [request early access](https://azure.microsoft.com/services/quantum/#contact?azure-portal=true).
 
 In this module, we covered a lot. Here are a few key concepts to keep in mind:
 
