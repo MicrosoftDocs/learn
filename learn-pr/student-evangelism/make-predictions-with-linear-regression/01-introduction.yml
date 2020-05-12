@@ -8,7 +8,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning azure
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/01-introduction.md)]
