@@ -10,11 +10,11 @@ Those two sets correspond to whether the container is loaded onto ship *a* or sh
 
 Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship. This sum is expressed in the following equation, where *w<sub>i</sub>* is the weight of container *i*:
 
-![Term](../media/example_1.png)
+![Term](../media/example-1.png)
 
 Ideally, we want a solution where the weight difference between the ships is as small as possible.
 
-![Term](../media/example_2.png)
+![Term](../media/example-2.png)
 
 This equation subtracts the sum of weights on ship _b_ from the sum of weights on ship _a_.
 
@@ -28,7 +28,7 @@ Because we can assign the container *i* to either ship, the variable *x<sub>i</s
 
 By introducing this variable *x<sub>i</sub>*, we can simplify the equation as follows:
 
-![Term](../media/example_3.png)
+![Term](../media/example-3.png)
 
 ## Refine the problem again
 
@@ -36,7 +36,7 @@ There's one last change we need to make before we can solve our problem.
 
 If we look at our cost function *H*, there's a flaw: the solution with the least cost is to simply assign all containers to ship *b* by setting all of the *x<sub>i</sub>* variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
 
-![Term](../media/example_4.png)
+![Term](../media/example-4.png)
 
 This final model gives us a cost function with the required properties.
 
