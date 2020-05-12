@@ -27,5 +27,3 @@ We think of dependencies as belonging to one of two different categories:
 2. dev dependencies, these are dependencies we only need when we develop our application. Examples of this is for example test runners and libraries. Those are an important part of ensuring our application works well but we don't need to ship our application with them.
 
 Our NPM tool lets us specify what dependency should end up in what bucked through the use of the flag `--save` with the alias `-s`. By using this flag an installed package will be classified as a dev dependency.
-
-

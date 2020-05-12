@@ -16,10 +16,6 @@ As you can see above there are various installers available to cater to differen
 
 - `LTS`, LTS stands for **L**ong **t**erm **s**upport. Worth noting is how it comes with the description text `Recommended for most users`. LTS is meant for enterprise usage where frequent updates might not be possible or for various reasons are undesired.
 
-To quote Rod Vagg of the LTS working group:
-
-> The point of establishing an LTS plan for Node is to build on top of an existing stable release cycle by delivering new new versions on a predictable schedule that have a clearly defined extended support life cycle. While this may seem at odds with the open source tradition of “release early, release often” it is an essential requirement for enterprise application development and operations teams. It also affects companies ... that provide professional support for Node.js.
-
 - Current, this means it's under active development. Feature additions as well as breaking changes might happen. It should adhere to semantic versioning though [Semantic versioning](https://semver.org/)
 
 So which one to go with? Well you know your company best. Can you update often and is there a desired feature in the Current version you need - then Current version might be for you.

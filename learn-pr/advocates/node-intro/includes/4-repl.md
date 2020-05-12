@@ -9,8 +9,8 @@ Using a REPL can be a great way to just run a command to try something out. The 
 The Node.js has quite a lot of features
 
 - Evaluate a statement, the REPL can take a statement like `2+2` and evaluate that.
-- List all commands, it can also list all the commands avilable in the core.
-- Code completion, just like an IDE, an integrated development enviironment the REPL helps you complete commands. You start taking a command, press the `tab` key and it lists all commands that matches.
+- List all commands, it can also list all the commands available in the core.
+- Code completion, just like an IDE, an integrated development environment the REPL helps you complete commands. You start taking a command, press the `tab` key and it lists all commands that matches.
 - Show latest result, the REPL can list the latest result through the use of the `_`. Just type the `_` character and the enter key and you will see the latests result.
 - Multiline editing, sometimes what you need to write spans over multiple lines. The REPL supports that kind of editing.
 - Run script, the REPL not only supports you typing in code and have that evaluated. You can also give it a script file as an argument have the script run.
