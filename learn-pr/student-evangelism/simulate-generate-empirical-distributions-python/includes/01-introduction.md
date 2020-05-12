@@ -182,111 +182,24 @@ simulation_results = Table().with_column(
 simulation_results
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Repetition
-</th>
-<th>
-Number of Heads
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-1
-</td>
-<td>
-46
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-<td>
-54
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-<td>
-53
-</td>
-</tr>
-<tr>
-<td>
-4
-</td>
-<td>
-52
-</td>
-</tr>
-<tr>
-<td>
-5
-</td>
-<td>
-58
-</td>
-</tr>
-<tr>
-<td>
-6
-</td>
-<td>
-48
-</td>
-</tr>
-<tr>
-<td>
-7
-</td>
-<td>
-45
-</td>
-</tr>
-<tr>
-<td>
-8
-</td>
-<td>
-44
-</td>
-</tr>
-<tr>
-<td>
-9
-</td>
-<td>
-43
-</td>
-</tr>
-<tr>
-<td>
-10
-</td>
-<td>
-47
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Repetition|Number of Heads|
+|--- |--- |
+|1|46|
+|2|54|
+|3|53|
+|4|52|
+|5|58|
+|6|48|
+|7|45|
+|8|44|
+|9|43|
+|10|47|
+
 ... (9990 rows omitted)
-</p>
+
 ``` {.python}
 simulation_results.hist('Number of Heads', bins = np.arange(30.5, 69.6, 1))
 ```
-
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
 
 ![png](../media/48-simulation-17-1.png)
 
@@ -332,7 +245,9 @@ for i in np.arange(num_repetitions):
 heads
 ```
 
+```output
 array(\[52., 45., 48., ..., 48., 44., 51.\])
+```
 
 ### Moves in Monopoly
 
@@ -353,7 +268,9 @@ die = np.arange(1, 7)
 sum(np.random.choice(die, 2))
 ```
 
+```output
 8
+```
 
 That simulates one value of the sum of two rolls. We are now all set to
 run the simulation according to the steps that are now familiar.
@@ -379,17 +296,12 @@ results = Table().with_column(
 results.hist('Sum of Two Rolls', bins = np.arange(1.5, 12.6, 1))
 ```
 
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
 ![png](../media/48-simulation-27-1.png)
 
 Seven is the most common value, with the frequencies falling off
 symmetrically on either side.
 
-## Learning Objectives 
+## Learning Objectives
 
 - Study the idea of randomness, analyzed its importance, learned relevant terminology and studied the Law of Averages.
 - Examine different types of samples and different sampling techniques.

@@ -58,7 +58,9 @@ value of the parameter "median delay":
 np.median(united.column('Delay'))
 ```
 
-    2.0
+```output
+2.0
+```
 
 The `NumPy` function `median` returns the median (half-way point) of an
 array. Among all the flights in `united`, the median delay was 2
@@ -69,7 +71,9 @@ or fewer minutes:
 united.where('Delay', are.below_or_equal_to(2)).num_rows / united.num_rows
 ```
 
-    0.5018444846292948
+```output
+0.5018444846292948
+```
 
 Half of all flights left no more than 2 minutes after their scheduled
 departure time. That's a very short delay!
@@ -83,7 +87,9 @@ them in this course.
 united.where('Delay', are.equal_to(2)).num_rows
 ```
 
-    480
+```output
+480
+```
 
 ### Statistic
 
@@ -101,7 +107,9 @@ from `united`. The observed value of the sample median is:
 np.median(sample_1000.column('Delay'))
 ```
 
-    3.0
+```output
+3.0
+```
 
 Our sample -- one set of 1,000 flights -- gave us one observed value of
 the statistic. This raises an important problem of inference:
@@ -115,7 +123,9 @@ come out differently too.
 np.median(united.sample(1000).column('Delay'))
 ```
 
-    2.0
+```output
+2.0
+```
 
 Run the cell above a few times to see how the answer varies. Often it is
 equal to 2, the same value as the population parameter. But sometimes it
@@ -185,70 +195,21 @@ simulated_medians = Table().with_column('Sample Median', medians)
 simulated_medians
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Sample Median
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-2.5
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-</tr>
-<tr>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-</tr>
-<tr>
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-3
-</td>
-</tr>
-</tbody>
-</table>
-<p>
+|Sample Median|
+|--- |
+|2|
+|2|
+|2.5|
+|1|
+|2|
+|3|
+|2|
+|3|
+|1|
+|3|
+
 ... (4990 rows omitted)
-</p>
+
 We can also visualize the simulated data using a histogram. The
 histogram is called an *empirical histogram of the statistic*. It
 displays the *empirical distribution* of the statistic. Remember that

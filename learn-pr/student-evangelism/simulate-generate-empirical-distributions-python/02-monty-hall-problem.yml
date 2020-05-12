@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.simulate-generate-empirical-distributions-python.monty-hall-problem
-title: Monty Hall Problem
+title: Monty Hall problem
 metadata:
-  title: Monty Hall Problem
+  title: Monty Hall problem
   description: Simulate the Monty Hall problem.
   ms.date: 03/19/2020
   author: leestott
