@@ -43,15 +43,15 @@ quiz:
       explanation: "Incorrect."
   - content: "Which is a good example of informative alt text for the Microsoft logo?"
     choices:
-    - content: "[!include[]includes/answer1.md)]"
+    - content: "logo"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "[!include[]includes/answer2.md)]"
+    - content: "company logo"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "-[!include[]includes/answer3.md)]"
+    - content: "Microsoft logo"
       isCorrect: true
       explanation: "Correct."
-    - content: "-[!include[]includes/answer4.md)]"
+    - content: "MSFT logo"
       isCorrect: false
       explanation: "Incorrect."
