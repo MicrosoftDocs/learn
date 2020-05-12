@@ -25,7 +25,7 @@ Websites should also include a programmatic title or proper formatting of headin
 To avoid these issues:
 
 - Ensure web pages provide an informative and context-appropriate page title, using the \<title\> element.
-- Ensure programmatic headings are used whenever appropriate, and are nested properly — for example, an \<h3\> element should not follow an \<h1\> element unless there is an \<h2\> element between them.  
+- Ensure programmatic headings are used whenever appropriate, and are nested properly—for example, an \<h3\> element should not follow an \<h1\> element unless there is an \<h2\> element between them.  
 - Avoid using heading elements just for stylistic reasons.
 
 ## Color
@@ -48,11 +48,11 @@ Figure 1. Large on-screen text for accessibility purposes
 
 Data tables can be difficult for some assistive technology (AT) applications, such as screen readers. In order to make data tables as accessible as possible, when you use tables in your website be sure to do the following:
 
-- Use native HTML table elements (table, thead, tbody, tr, th, and td)
+- Use native HTML table elements (`table`, `thead`, `tbody`, `tr`, `th`, and `td`)
 - Properly identify table headers (use the th element)
 - With complex tables (more than one row of headers), ensure headers are associated with the right data:
 - Use the scope attribute to identify whether the cell is a header for a row, column, or group of rows or columns (using the values row, col, rowgroup, or colgroup)
-- Add an id attribute to any cell used as a header for other cells, and then reference the appropriate id value using a headers attribute in each data cell
+- Add an `id` attribute to any cell used as a header for other cells, and then reference the appropriate `id` value using a headers attribute in each data cell
 
 :::image type="content" source="../media/DataTableHTML.png" alt-text="Data table and its corresponding native HTML table elements":::
 
@@ -110,7 +110,7 @@ Provide brief, specific, and informative alternative text for images such as pho
 
 \<img src=\"MSFTlogo.jpg\" alt=\"Microsoft logo\" /\>
 
-While the inaccessible example describes the image as a logo, it does not specify the type of logo, so it is not very helpful to someone who relies on alt text. With the addition of the qualifier in the accessible
+While the inaccessible example describes the image as a logo, it does not specify the type of logo, so it is not helpful to someone who relies on alt text. With the addition of the qualifier in the accessible
 example, a user will know exactly what the logo is.
 
 Another non-text element to consider is decorative images. For example, if a web page includes a stylized border, there is no need to describe it in detail in the alt text. You can indicate it is decorative in the
