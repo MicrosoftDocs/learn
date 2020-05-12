@@ -44,7 +44,7 @@ If you're using a static public IP address for the VM, you can save the **.rdp**
 
 When you connect, you will typically receive two warnings. These are:
 
--**Publisher warning** - caused by the **.rdp** file not being publicly signed.
+- **Publisher warning** - caused by the **.rdp** file not being publicly signed.
 - **Certificate warning** - caused by the machine certificate not being trusted.
 
 In test environments, these warnings can be ignored. In production environments, the **.rdp** file can be signed using **RDPSIGN.EXE** and the machine certificate placed in the client's **Trusted Root Certification Authorities** store.

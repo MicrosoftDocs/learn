@@ -8,9 +8,15 @@ We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. In the search box, enter  **Windows Server**  and then click on the link with the same title in the presented list.
+1. Select the **See all** link next to the *Azure Marketplace* heading. This option displays all available images on the Azure Marketplace.
 
-    :::image type="content" source="../media/3-azure-portal-search-image.png" border="false" alt-text="Screenshot showing the virtual machine image search result.":::
+    Select **Microsoft** as the filter value from the *Publisher* filter options.  In the search box, enter  **Windows Server**  and then action the search by pressing enter or return.
+
+    :::image type="content" source="../media/3-marketplace-search.png" border="true" alt-text="Screenshot showing the virtual machine image search options.":::
+
+1. The result will show several *Windows Server* related images. Choose the **Windows Server** image.
+
+    :::image type="content" source="../media/3-marketplace-windows-server.png" border="true" alt-text="Screenshot showing the virtual machine image search result that highlights the Windows Server option.":::
 
 1. There are several Windows Server versions we can select from to create our VM. In the *Windows Server* image overview panel, click on the **Select a software plan** dropdown list and find the **[smalldisk] Windows Server 2019 Datacenter** option.
 
@@ -93,7 +99,7 @@ Recall we will get an OS disk (C:) and Temporary disk (D:). Let's add a data dis
 
 1. In a production system, where we already have other components, we'd want to utilize an _existing_ virtual network. That way our VM can communicate with the other cloud services in our solution. If there isn't one defined in this location yet, we can create it here and configure the:
     - **Address space**: the overall IPV4 space available to this network.
-    - **Subnet range**: the first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created you can add additional subnets.
+    - **Subnet range**: the first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created, you can add additional subnets.
 
 1. Let's change the default ranges to use the `172.xxx` IP address space. Click **Create New** under Virtual Network.
     - Change the **Address space** field to be `172.16.0.0/16` to give it the full range of addresses
