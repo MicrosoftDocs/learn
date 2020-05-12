@@ -1,9 +1,9 @@
 You now have a basic understanding of QIO and some of the problems it can solve. Here's a brief recap:
 
 * QIO is based on a computational model called *adiabatic quantum computing*.
-* Adiabatic quantum algorithms will eventually run on quantum computers. Today, we can emulate these algorithms by using quantum-inspired techniques on classical hardware.
-* QIO works best with problems where the landscape is rugged, with many hills and valleys. The container ship problem you saw here is one example.
-* *Simulated annealing* and *quantum annealing* are two techniques that can be used in Azure Quantum to solve optimization problems.
+* Today, we can emulate adiabatic quantum algorithms by using quantum-inspired techniques on classical hardware.
+* QIO works best with problems where the landscape is rugged, with many hills and valleys.
+* QIO can be used in Azure Quantum to solve optimization problems.
 
 ## Learn more about QIO
 
@@ -18,3 +18,7 @@ Here are resources where you can learn more:
 * [Ising model](https://wikipedia.org/wiki/Ising_model?azure-portal=true)
 
 [How the quest for a scalable quantum computer is helping fight cancer](https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/?azure-portal=true) shows how QIO is helping fight cancer.
+
+## Get started with quantum programming with Q#
+
+To get started with writing quantum programs, check out [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true). There, you'll build a basic program that measures qubits to generate random numbers.

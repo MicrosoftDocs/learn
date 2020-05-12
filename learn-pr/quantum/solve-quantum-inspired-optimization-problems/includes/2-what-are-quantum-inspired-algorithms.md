@@ -5,7 +5,7 @@ There are many models of quantum computing. One commonly used quantum-inspired a
 
 A good analogy of this is to imagine you have a glass of water. If you move that glass slowly across a table, the contents won't spill because the system has time to adapt to its new configuration. If you were to move the glass quickly however, the system has been forced to change too quickly, and we have water everywhere.
 
-Adiabatic quantum computation is an area of active research, as a result, a number of techniques have been developed to simulate this type of physics. These classical algorithms, which we can run on classical computers today, are also known as quantum-inspired optimization.
+Adiabatic quantum computation is an area of active research that's already being used in the industry. A number of techniques have been developed to simulate this type of physics. These classical algorithms, which we can run on classical computers today, are also known as _quantum-inspired optimization_.
 
 ## What is quantum-inspired optimization (QIO)?
 

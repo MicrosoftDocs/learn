@@ -48,4 +48,4 @@ This final model gives us a cost function with the required properties.
 
 In this case, we don't care about the actual value of *H*. It only has to be as small as possible.
 
-That's it! You've learned the basics of QIO and seen how the Azure Quantum service can be used to solve optimization problems.
+That's it! You've learned the basics of QIO and how QIO can be used to solve optimization problems.
