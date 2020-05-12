@@ -15,17 +15,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'If a truck is classified with USHazmatClass1, what is it carrying?'
+  - content: 'A truck is carrying a poison, which hazardous classification applies?'
     choices: 
-    - content: 'Gases'
+    - content: 'Class 2, Gases'
       isCorrect: false
-      explanation: This cargo is USHazmatClass2.
-    - content: 'Flammable or combustible liquid'
+      explanation: There is a more appropriate class.
+    - content: 'Class 5, Oxidizer and organic peroxide'
       isCorrect: false
-      explanation: This cargo is USHazmatClass3.
-    - content: 'Explosives'
+      explanation: There is a more appropriate class.
+    - content: 'Class 6, Toxic, infectious, or inhalation hazard'
       isCorrect: true
-      explanation: Yes, this classification tops the list of hazardous cargo.
+      explanation: Class 6 is the most appropriate classification.
 
   - content: 'What is the default order of layers in Azure Maps, from the lowest up?'
     choices: 
@@ -101,7 +101,7 @@ quiz:
     - content: 'B: route finding'
       isCorrect: false
       explanation: Route finding isn't suitable for displaying as a heat map.
-    - content: 'C: disease outbreaks in the last week'
+    - content: 'C: construction cranes per square mile'
       isCorrect: false
       explanation: Other data sets might work too.
     - content: 'D: population growth'

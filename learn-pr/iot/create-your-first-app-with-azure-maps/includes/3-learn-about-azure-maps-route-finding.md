@@ -49,7 +49,7 @@ In our sample app, we specify three vehicles, a bicycle, a car, and a truck. We 
 
 A fun feature of the app we're going to build, is the ability to set a hazardous material classification for our truck.
 
-There are nine classifications in the USA. Summarized in the following table.
+There are nine classifications of hazardous materials, agree upon by the the _United Nations Committee of Experts on the Transport of Dangerous Goods_. These nine classes are summarized in the following table, along with the US hazard class. These classifications apply to all forms of transport - road, rail, sea, air, and inland waterways. Note that the numerical order of the classes _does not_ indicate a greater or lesser degree of danger.
 
 | Classification | Description |
 | -------------- | ----------- |
@@ -58,12 +58,12 @@ There are nine classifications in the USA. Summarized in the following table.
 | USHazmatClass3 | Flammable or combustible liquid |
 | USHazmatClass4 | Flammable solid, spontaneously combustible, dangerous when wet |
 | USHazmatClass5 | Oxidizer and organic peroxide |
-| USHazmatClass6 | Poison, inhalation hazard |
+| USHazmatClass6 | Toxic, infectious, or inhalation hazard |
 | USHazmatClass7 | Radioactive |
 | USHazmatClass8 | Corrosive |
 | USHazmatClass9 | Miscellaneous |
 
-With the given classification, certain roads cannot be used. The first three have the most significant effect on a route, as they are perceived as the most dangerous. For example, many tunnels are closed to explosive, or inflammable, cargo. When we test our app, you'll be able to hone in on routes, and see how the truck routes diverge from car routes, or trucks carrying other content, when hazardous cargo is involved. Road restrictions are most likely to be found in heavily populated areas, for obvious reasons.
+With the given classification, certain roads cannot be used. The first three do have a significant effect on a route. For example, many tunnels are closed to explosive, or inflammable, cargo. When we test our app, you'll be able to hone in on routes, and see how the truck routes diverge from car routes, or trucks carrying other content, when hazardous cargo is involved. Road restrictions are most likely to be found in heavily populated areas, for obvious reasons.
 
 ## Azure Maps and Azure IoT
 
@@ -72,6 +72,12 @@ Azure IoT, the "Internet of Things", provides cloud resources to read telemetry 
 In addition to fleet management, other popular location-based scenarios include asset tracking, and smart city applications. You can imagine that if you managed a group of smart buildings, all with temperature, humidity, and security sensors, that seeing the exact map location of each device might be valuable, and reassuring. Perhaps the map with the device locations would be part of an IoT dashboard. The other elements of the dashboard might show incoming telemetry, and provide some commands to send to the devices.
 
 IoT is all about remote devices sending data to a single cloud service, known as an IoT Hub, for storage and processing. Check out the Learn modules that provide introductory material on IoT, and one that combines Azure Maps and IoT, in the Summary section of this module.
+
+## Azure Maps units
+
+Azure Maps uses the metric system as its base for calculations. For example, the length, width and height of vehicles is specified in meters. Also, fuel consumption is stored as litres, and used in constants such as `currentFuelInLitres`, `constantSpeedConsumptionInLitersPerHundredkm`, and `fuelEnergyDensityInMJoulesPerLiter`. We do not go into engine fuel consumption models in this module, but you can tweak these parameters to diverge from the default consumption model.
+
+If you wanted your user to see miles, or US, or Imperial, gallons, for example. You would need to multiply the values returned by Azure Maps by appropriate constants.
 
 ## Making calls to Azure Maps using JavaScript
 
