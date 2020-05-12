@@ -17,7 +17,7 @@ abstract:  |
     - Reduce effort and error by using automation
     - Identify issues and improve quality in your application by using tests
 prerequisites: |
-  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking.
+  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
 iconUrl: /learn/achievements/azure-well-architected-operational-excellence.svg
 levels:

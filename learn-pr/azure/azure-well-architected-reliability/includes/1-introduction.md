@@ -12,5 +12,5 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-- Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking.
+- Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
 - Experience building or operating technology systems to solve business problems

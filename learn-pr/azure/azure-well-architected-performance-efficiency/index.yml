@@ -17,7 +17,7 @@ abstract:  |
   - Optimize storage and database performance
   - Improve application performance by identifying bottlenecks
 prerequisites: |
-  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking.
+  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
 iconUrl: /learn/achievements/azure-well-architected-performance-efficiency.svg
 levels:

@@ -16,7 +16,7 @@ abstract: |
     - Incorporate Azure disaster recovery capabilities into your architecture
     - Protect your application from data loss or corruption
 prerequisites: |
-  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking.
+  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
 iconUrl: /learn/achievements/azure-well-architected-reliability.svg
 levels:
