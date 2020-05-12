@@ -35,7 +35,7 @@ import numpy as np
 plots.style.use('fivethirtyeight')
 ```
 
-### A "More Likely Than Not" Binary Classifier
+### A "more likely than not" binary classifier
 
 Let's try to use data to classify a point into one of two categories,
 choosing the category that we think is more likely than not. To do this,
@@ -69,7 +69,7 @@ additional information about the student who was picked:
 
 Would this knowledge change your classification?
 
-### Updating the Prediction Based on New Information
+### Updating the prediction based on new information
 
 Now that we know the student has declared a major, it becomes important
 to look at the relation between year and major declaration. It's still
@@ -204,7 +204,7 @@ who are Declared**, as before.
 
 0.5161290322580645
 
-### Bayes' Rule
+### Bayes' rule
 
 The method that we have just used is due to the Reverend Thomas
 Bayes (1701-1761). His

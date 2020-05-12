@@ -53,7 +53,7 @@ dangerous). False negatives can have even more serious consequences if
 the patient doesn't receive treatment because of their Negative test
 result.
 
-### A Test for a Rare Disease
+### A test for a rare disease
 
 Suppose there is a large population and a disease that strikes a tiny
 proportion of the population. The tree diagram below summarizes
@@ -147,7 +147,7 @@ These two proportions are comparable; the second is a little larger.
 So, given that the randomly chosen person tested positive, we were right
 to classify them as more likely than not to **not** have the disease.
 
-### A Subjective Prior
+### A subjective prior
 
 Being right isn't always satisfying. Classifying a Positive patient as
 not having the disease still seems somehow wrong, for such an accurate
@@ -208,7 +208,7 @@ disease shoots up to more than 91%.
 If the patient tests Positive, it would be reasonable for the doctor to
 proceed as though the patient has the disease.
 
-### Confirming the Answer
+### Confirming the answer
 
 Though the doctor's opinion is subjective, we can generate an artificial
 population in which 5% of the people have the disease and are tested

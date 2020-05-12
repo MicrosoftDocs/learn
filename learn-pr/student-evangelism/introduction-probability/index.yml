@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.introduction-probability
 metadata:
-  title: Introduction to Probability
+  title: Introduction to probability
   description: Learn
   ms.date: 03/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Probability
+title: Introduction to probability
 summary: Learn about basic probability
 abstract: |
   In this module, you will learn:
