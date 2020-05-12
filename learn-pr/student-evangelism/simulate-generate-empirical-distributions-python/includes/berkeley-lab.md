@@ -1,6 +1,6 @@
 Before you start the module, you need to set up your virtual environment—some of the units and assignments can be viewed interactively through Jupyter notebooks.
 
-If you are not interested in viewing the content interactively, feel free to skip the steps below.
+If you aren't interested in viewing the content interactively, feel free to skip the steps below.
 
 ### You will need:
 
@@ -12,7 +12,7 @@ A Visual Studio Codespaces environment based on the MicrosoftDocs/inferentialthi
 
 ## To set up a Visual Studio Codespaces environment:
 
-Open Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
 
 If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
 
@@ -20,7 +20,7 @@ Environment Name: A name for your environment - for example, inferentialthinking
 
 Git Repository: MicrosoftDocs/inferentialthinking
 
-Instance Type: Standard (Linux) 4 cores, 8GB RAM
+Instance Type: Standard (Linux) 4 cores, 8 GB RAM
 
 Suspend idle environment after: 30 minutes
 
