@@ -1,4 +1,4 @@
-In the terminology that we have developed, John Snow conducted an
+In the terminology that we've developed, John Snow conducted an
 observational study, not a randomized experiment. But he called his
 study a "grand experiment" because, as he wrote, "No fewer than three
 hundred thousand people ... were divided into two groups without their
@@ -22,11 +22,11 @@ be specified mathematically. This has two important consequences.
     helps us make justifiable conclusions about whether the treatment
     has any effect.
 
-In this course, you will learn how to conduct and analyze your own
+In this course, you'll learn how to conduct and analyze your own
 randomized experiments. That will involve more detail than has been
 presented in this chapter. For now, just focus on the main idea: to try
 to establish causality, run a randomized controlled experiment if
-possible. If you are conducting an observational study, you might be
+possible. If you're conducting an observational study, you might be
 able to establish association but it will be harder to establish
 causation. Be careful about confounding factors before making
 conclusions about causality based on an observational study.
@@ -54,9 +54,9 @@ conclusions about causality based on an observational study.
 
 - John Snow is sometimes called the father of epidemiology, but he was an anesthesiologist by profession. One of his patients was Queen Victoria, who was an early recipient of anesthetics during childbirth.
 
-- Florence Nightingale, the originator of modern nursing practices and famous for her work in the Crimean War, was a die-hard miasmatist. She had no time for theories about contagion and germs, and was not one for mincing her words. "There is no end to the absurdities connected with this doctrine," she said. "Suffice it to say that in the ordinary sense of the word, there is no proof such as would be admitted in any scientific inquiry that there is any such thing as contagion."
+- Florence Nightingale, the originator of modern nursing practices and famous for her work in the Crimean War, was a die-hard miasmatist. She had no time for theories about contagion and germs, and wasn't one for mincing her words. "There is no end to the absurdities connected with this doctrine," she said. "Suffice it to say that in the ordinary sense of the word, there is no proof such as would be admitted in any scientific inquiry that there is any such thing as contagion."
 
-- A later RCT established that the conditions on which PROGRESA insisted---children going to school, preventive health care---were not necessary to achieve increased enrollment. Just the financial boost of the welfare payments was sufficient.
+- A later RCT established that the conditions on which PROGRESA insisted---children going to school, preventive health care---weren't necessary to achieve increased enrollment. Just the financial boost of the welfare payments was sufficient.
 
 **Good reads**
 
@@ -69,5 +69,5 @@ contents of the book are stomach-churning.
 
 [*Poor Economics*](http://www.pooreconomics.com), the best seller by
 Abhijit Banerjee and Esther Duflo of MIT, is an accessible and lively
-account of ways to fight global poverty. It includes numerous examples
+account of ways to fight global poverty. It includes many examples
 of RCTs, including the PROGRESA example in this section.

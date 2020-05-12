@@ -101,7 +101,7 @@ united.where('Delay', are.between(0, 10)).num_rows/united.num_rows
 Let us now think of the 13,825 flights as a population, and draw random
 samples from it with replacement. It is helpful to package our code into
 a function. The function `empirical_hist_delay` takes the sample size as
-its argument and draws an empiricial histogram of the results.
+its argument and draws an empirical histogram of the results.
 
 ``` {.python}
 def empirical_hist_delay(n):
