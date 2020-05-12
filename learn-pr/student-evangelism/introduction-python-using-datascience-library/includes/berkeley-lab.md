@@ -12,7 +12,8 @@ A Visual Studio Codespaces environment based on the MicrosoftDocs/inferentialthi
 
 ## To set up a Visual Studio Codespaces environment:
 
-Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking" target="_blank" rel="noopener">Visual Studio Codespaces</a> in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
+[Open Visual Studio Codespaces](https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking)
+
 If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
 
 Environment Name: A name for your environment - for example, inferentialthinking.

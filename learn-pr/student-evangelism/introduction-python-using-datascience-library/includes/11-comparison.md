@@ -53,4 +53,3 @@ string is less than a longer string that begins with the shorter string.
 ```
 
     True
-    True

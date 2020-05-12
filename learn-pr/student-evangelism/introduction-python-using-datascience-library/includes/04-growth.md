@@ -3,8 +3,7 @@
 
 If you haven't set up your online Virtual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
-
+[Open Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 ## Example: Growth Rates
 
@@ -135,4 +134,3 @@ To compute `g`, raise the total growth to the power of `1/t` and
 subtract one.
 
 `(changed/initial) ** (1/t) - 1`
-ial) ** (1/t) - 1`

@@ -49,10 +49,9 @@ This is the first time we've seen methods, but methods are not unique to
 strings. As we will see shortly, other types of objects can have them.
  have them.
 
-(Knowledge Check) After executing the following lines of code:
-
-``` {.python}
-  x = 8
-  y = 2
-  z = x / y
-```
+> [!IMPORTANT] After executing the following lines of code:
+> ``` {.python}
+>  x = 8
+>  y = 2
+>  z = x / y
+> ```
