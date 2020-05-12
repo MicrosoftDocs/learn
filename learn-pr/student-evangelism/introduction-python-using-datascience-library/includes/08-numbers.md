@@ -187,4 +187,3 @@ standard way that arithmetic is carried out on computers.
 Although `float` values are not always exact, they are certainly
 reliable and work the same way across all different kinds of computers
 and programming languages.
-nd programming languages.

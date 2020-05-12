@@ -398,4 +398,5 @@ nba.sort('SALARY', descending=True)
 Kobe Bryant, since retired, was the highest earning NBA player in
 2015-2016.
 
-(Knowledge Check): You have a table of the top 50 most played songs on spotify called top_50_songs with columns rank (an integer), song_name (a string), artist_name (a string), and num_plays (an integer).
+> [!IMPORTANT]
+> Knowledge Check: You have a table of the top 50 most played songs on spotify called top_50_songs with columns rank (an integer), song_name (a string), artist_name (a string), and num_plays (an integer)

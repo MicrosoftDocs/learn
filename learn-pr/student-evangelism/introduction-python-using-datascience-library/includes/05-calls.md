@@ -107,4 +107,3 @@ applications. The list of [mathematical functions in the `math`
 module](https://docs.python.org/3/library/math.html) is similarly long.
 This text will introduce the most important functions in context, rather
 than expecting the reader to memorize or understand these lists.
- these lists.

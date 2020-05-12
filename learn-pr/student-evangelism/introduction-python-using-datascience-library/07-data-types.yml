@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.introduction-python-using-datascience-library.data-types
-title: Data Types
+title: Data types
 metadata:
-  title: Data Types
+  title: Data types
   description: Introduction to basic data types in Python.
   ms.date: 03/19/2020
   author: leestott
