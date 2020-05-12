@@ -19,7 +19,7 @@ prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
   - Basic familiarity with GitHub Actions and workflows
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/github/github-actions-ci.svg
 ratingEnabled: true
 levels:
 - beginner

@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - A [GitHub](https://github.com?azure-portal=true) account
   - The ability to navigate and edit files in GitHub
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/github/github-actions-automate-tasks.svg
 ratingEnabled: true
 levels:
 - beginner

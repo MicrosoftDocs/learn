@@ -24,7 +24,7 @@ prerequisites: |
   - Basic familiarity with continuous integration using GitHub Actions and workflows
   - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
   - An understanding of Microsoft Azure Fundamentals
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/github/github-actions-cd.svg
 ratingEnabled: true
 levels:
 - intermediate

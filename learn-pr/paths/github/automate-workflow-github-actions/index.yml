@@ -22,7 +22,7 @@ cardDescription: Learn how GitHub Actions enables you to automate your software 
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
  - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/github/automate-workflow-github-actions.svg
 levels:
 - beginner
 - intermediate
