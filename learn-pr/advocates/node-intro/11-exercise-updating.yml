@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.node-intro.11-exercise-updating
+title: Exercise Updating
+metadata:
+  title: Exercise Updating
+  description: Exercise Updating
+  author: 
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 4
+content: |
+  [!include[](includes/11-exercise-updating.md)]

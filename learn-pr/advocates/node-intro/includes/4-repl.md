@@ -1,6 +1,6 @@
 REPL stands for **r**ead-**e**val-**p**rint-**l**oop and is a command line tool that allows you to run Node.js commands. Node.js has a very compentent REPl that allows you to do many things. Let's explore what those are.
 
-## Why use a REPL?
+## Why use a REPL
 
 Using a REPL can be a great way to just run a command to try something out. The alternative would be to author a JavaScript file, write some commands and then run it with the `node` executable. Sometimes you just want to run a few commands. A REPL is limited in what it can do but in the case of Node.js its REPL is really competent. So what can it do for us?
 

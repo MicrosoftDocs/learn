@@ -29,13 +29,16 @@ units:
 - learn.node-intro.5-exercise-repl
 - learn.node-intro.6-dependencies
 - learn.node-intro.7-exercise-dependencies
-- learn.node-intro.8-local-global
-- learn.node-intro.9-install-uninstall
+- learn.node-intro.8-install-uninstall
+- learn.node-intro.9-exercise-install-uninstall
 - learn.node-intro.10-updating
-- learn.node-intro.11-package-json
-- learn.node-intro.12-exercise-package-json
-- learn.node-intro.13-knowledge-check
-- learn.node-intro.14-summary
+- learn.node-intro.11-exercise-updating
+- learn.node-intro.12-package-json
+- learn.node-intro.13-exercise-package-json
+- learn.node-intro.14-package-json-package
+- learn.node-intro.15-exercise-package-json-package
+- learn.node-intro.16-knowledge-check
+- learn.node-intro.17-summary
 
 badge:
   uid: learn.node-intro.badge

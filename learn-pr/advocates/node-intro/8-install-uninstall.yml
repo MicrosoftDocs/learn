@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.13-knowledge-check
+uid: learn.node-intro.8-install-uninstall
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  author: 
+  author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
-  [!include[](includes/13-knowledge-check.md)]
+  [!include[](includes/8-install-uninstall.md)]

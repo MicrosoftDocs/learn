@@ -9,6 +9,6 @@ metadata:
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-install-node.md)]

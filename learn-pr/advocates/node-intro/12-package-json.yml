@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.14-summary
+uid: learn.node-intro.12-package-json
 title: Introduction
 metadata:
   title: Introduction
@@ -9,6 +9,6 @@ metadata:
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
-  [!include[](includes/14-summary.md)]
+  [!include[](includes/12-package-json.md)]

@@ -86,7 +86,6 @@ It should have created a `package.json` file with the following content:
   "main": "script.js",
   "dependencies": {},
   "devDependencies": {
-    
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

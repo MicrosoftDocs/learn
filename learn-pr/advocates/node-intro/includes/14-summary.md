@@ -1,3 +1,0 @@
-# Hello, it's me
-
-I've been wondered after all these years...
