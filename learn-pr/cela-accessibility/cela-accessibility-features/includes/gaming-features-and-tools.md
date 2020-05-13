@@ -17,9 +17,8 @@ To turn on Copilot for Xbox One:
 For more information, learn how to use [Copilot on Xbox One](https://beta.support.xbox.com/help/account-profile/accessibility/copilot).
 
 ## Xbox Adaptive Controller
-The Xbox Adaptive Controller is a hub for devices to make gaming more accessible. The controller features large programmable buttons and can be connected to external switches, buttons, mounts, and joysticks to
-create a custom controller experience. The Xbox Adaptive Controller is designed primarily to meet the needs of gamers with limited mobility. For example, if a person has limited mobility with their hands, they can put the controller on the floor and use their feet to press the larger buttons. A gamer with limited mobility in their left arm could connect an assistive device such as a joystick to use as an alternative to the buttons. The Xbox Adaptive Controller can also be used with Copilot for cooperative gaming or shared control of a game.
+The Xbox Adaptive Controller is a hub for devices to make gaming more accessible. The controller features large programmable buttons and can be connected to external switches, buttons, mounts, and joysticks to create a custom controller experience. The Xbox Adaptive Controller is designed primarily to meet the needs of gamers with limited mobility. For example, if a person has limited mobility with their hands, they can put the controller on the floor and use their feet to press the larger buttons. A gamer with limited mobility in their left arm could connect an assistive device such as a joystick to use as an alternative to the buttons. The Xbox Adaptive Controller can also be used with Copilot for cooperative gaming or shared control of a game.
 
-:::image type="content" source="../media/XboxAdaptiveController.png" alt-text="Xbox Adaptive Controller":::
+:::image type="content" source="../media/xbox-adaptive-controller.png" alt-text="Xbox Adaptive Controller":::
 
 For more information, explore how to [play with the Xbox Adaptive Controller](https://beta.support.xbox.com/help/account-profile/accessibility/play-with-adaptive-controller).

@@ -10,7 +10,7 @@ shortcut works whether you're copying and pasting text from a website into an Ou
 a different version of Windows.
 
 Common keyboard shortcuts include:
-:::image type="content" source="../media/KeyboardShortcuts.png" alt-text="A list of common Windows keyboard shortcuts":::
+:::image type="content" source="../media/keyboard-shortcuts.png" alt-text="A list of common Windows keyboard shortcuts":::
 
 For more information, reference these lists of common keyboard shortcuts for each product:
 
@@ -21,20 +21,20 @@ For more information, reference these lists of common keyboard shortcuts for eac
 ## Dictation in Windows 10
 Dictation is a speech-to-text software tool in Windows that lets you type with your voice. You can input text using a microphone rather than a keyboard. The voice recognition technology can help users who have
 difficulty typing with a regular keyboard to write documents and compose e-mails. This tool is a useful option for anyone seeking to avoid unnecessary keystrokes, including people with temporary disabilities
-like a broken arm. 
+like a broken arm.
 
 To set up Dictation and get started using it:
 1. Select the **Windows Logo Key ** + **H**.
 2. To stop dictating, simply say "Stop dictation."
 3. If using a tablet or a touchscreen, tap the microphone button on the touch keyboard to start dictating. Tap the button again to stop dictation, or say "Stop dictation."
 
-:::image type="content" source="../media/DictationToolbar.png" alt-text="Dictation toolbar showing the Listening prompt":::
+:::image type="content" source="../media/dictation-toolbar.png" alt-text="Dictation toolbar showing the Listening prompt":::
 
-Here are a few commands you can speak as well: 
-- **New line:** Takes cursor to new line 
-- **Delete:** Removes the last line you dictated 
-- **Full stop** or **period:** Types period character (.) 
-- **Question mark:** Types (?) 
+Here are a few commands you can speak as well:
+- **New line:** Takes cursor to new line
+- **Delete:** Removes the last line you dictated
+- **Full stop** or **period:** Types period character (.)
+- **Question mark:** Types (?)
 
 For more information, learn how to [use dictation to talk instead of type on your PC](https://support.microsoft.com/en-us/help/4042244/windows-10-use-dictation).
 
@@ -49,7 +49,7 @@ Visit the Microsoft Education website to learn more about [Learning Tools](https
 ## Ease of Access settings
 Dictation is one of many accessibility tools built into Windows 10. These features can be found in the Ease of Access settings menu on Windows 10 PCs.
 
-:::image type="content" source="../media/EaseOfAccess.png" alt-text="The Ease of Access menu in Windows 10":::
+:::image type="content" source="../media/ease-of-access.png" alt-text="The Ease of Access menu in Windows 10":::
 
 For example, Narrator is a screen reader built into Windows 10 that describes what's on your screen so you can use that information to navigate your device. Controlling Narrator with keyboard commands lets you use your PC without a mouse. This makes it easier for people who are blind or have low vision to complete common tasks such as navigating apps, reading text, and interacting with user interface elements like buttons. Narrator can also be used with braille displays.
 
@@ -60,7 +60,7 @@ There are three ways to start and stop Narrator:
 
 Every time you turn on Narrator, you'll go to Narrator Home, which gives you one place where you can open everything you need, whether you want to change your Narrator settings or learn basics with QuickStart.
 
-:::image type="content" source="../media/NarratorHomeMenu.png" alt-text="Screenshot of the Narrator Home menu":::
+:::image type="content" source="../media/narrator-home-menu.png" alt-text="Screenshot of the Narrator Home menu":::
 
 For more information, explore the [Complete guide to Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-complete-guide-to-narrator).
 
@@ -71,18 +71,18 @@ To turn on color filters:
 1. Go to **Settings** \> **Ease of Access** \> **Color filters** and toggle **Turn on color filters** to **On**. Or use the keyboard shortcut **Windows logo key** **** + **Ctrl** + **C**.
 2. Select the color filter you prefer.
 
-:::image type="content" source="../media/ColorFilters.png" alt-text="Screenshot of the Windows 10 Color Filters menu":::
+:::image type="content" source="../media/color-filters.png" alt-text="Screenshot of the Windows 10 Color Filters menu":::
 
 For more information, learn how to [use color filters in Windows 10](https://support.microsoft.com/en-us/help/4344736/windows-10-use-color-filters).
 
 ### Focus assist
-Focus assist allows you to turn off notifications in Windows anytime you need to focus. When enabled, this feature blocks alerts and notifications from any of your installed apps. 
+Focus assist allows you to turn off notifications in Windows anytime you need to focus. When enabled, this feature blocks alerts and notifications from any of your installed apps.
 
 People with mental health disabilities such as anxiety may benefit from the enhanced ability to get things done without distractions that Focus assist provides. By eliminating moving objects like pop-up notifications, the setting may also reduce stress and help people focus on the task at hand. 
 
 To use Focus assist, select the **Start**  button and type **Focus assist settings** in the search box. You can then choose if you want to receive all notifications, priority notifications only, or just alarms.
 In Windows 10, you can also access Focus assist settings by selecting the **Notifications & actions** button.
 
-:::image type="content" source="../media/ActionCenter.png" alt-text="Action center in Windows 10 with Focus assist highlighted":::
+:::image type="content" source="../media/action-center.png" alt-text="Action center in Windows 10 with Focus assist highlighted":::
 
 For more information, learn how to [make it easier to focus on tasks](https://support.microsoft.com/en-us/help/27930/windows-10-make-it-easier-to-focus-on-tasks).
