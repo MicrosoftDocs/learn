@@ -28,18 +28,19 @@ For example, if we wanted just the first row of `nba`, we could use
 nba
 ```
 
-| Player                |     Position     |              Team    |   Salary  |
-|-----------------------|----------------  |----------------------|-----------|
-| Paul Millsap          |       PF         |     Atlanta Hawks    |   18.6717 |
-| Al Horford            |       C          |     Atlanta Hawks    |   12      |
-| Tiago Splitter        |       C          |     Atlanta Hawks    |   9.75625 |
-| Jeff Teague           |       PG         |     Atlanta Hawks    |   8       |
-| Kyle Korver           |       SG         |     Atlanta Hawks    |   5.74648 |
-| Thabo Sefolosha       |       SF         |     Atlanta Hawks    |   4       |
-| Mike Scott            |       PF         |     Atlanta Hawks    |   3.33333 |
-| Kent Bazemore         |       SF         |     Atlanta Hawks    |   2       |
-| Dennis Schroder       |       PG         |     Atlanta Hawks    |   1.7634  |
-| Tim Hardaway Jr.      |       SG         |     Atlanta Hawks    |   1.30452 |
+| Player           | Position | Team          | Salary  |
+|------------------|----------|---------------|---------|
+| Paul Millsap     | PF       | Atlanta Hawks | 18.6717 |
+| Al Horford       | C        | Atlanta Hawks | 12      |
+| Tiago Splitter   | C        | Atlanta Hawks | 9.75625 |
+| Jeff Teague      | PG       | Atlanta Hawks | 8       |
+| Kyle Korver      | SG       | Atlanta Hawks | 5.74648 |
+| Thabo Sefolosha  | SF       | Atlanta Hawks | 4       |
+| Mike Scott       | PF       | Atlanta Hawks | 3.33333 |
+| Kent Bazemore    | SF       | Atlanta Hawks | 2       |
+| Dennis Schroder  | PG       | Atlanta Hawks | 1.7634  |
+| Tim Hardaway Jr. | SG       | Atlanta Hawks | 1.30452 |
+
 
 ... (407 rows omitted)
 
@@ -47,9 +48,10 @@ nba
 nba.take(0)
 ```
 
-| Player                |       Position   |           Team       |   Salary  |
-|-----------------------|------------------|----------------------|-----------|
-| Paul Millsap          |       PF         |        Atlanta Hawks |   18.6717 |
+| Player       | Position | Team          | Salary  |
+|--------------|----------|---------------|---------|
+| Paul Millsap | PF       | Atlanta Hawks | 18.6717 |
+
 
 This is a new table with just the single row that we specified.
 
@@ -60,11 +62,12 @@ range of indices as the argument.
 nba.take(np.arange(3, 6))
 ```
 
-| Player                |     Position   |             Team     |   Salary  |
-|-----------------------|----------------|----------------------|-----------|
-|    Jeff Teague        |       PG       |      Atlanta Hawks   |   8       |
-|    Kyle Korver        |       SG       |      Atlanta Hawks   |  5.74648  |
-| Thabo Sefolosha       |       SF       |      Atlanta Hawks   |   4       |
+| Player          | Position | Team          | Salary  |
+|-----------------|----------|---------------|---------|
+| Jeff Teague     | PG       | Atlanta Hawks | 8       |
+| Kyle Korver     | SG       | Atlanta Hawks | 5.74648 |
+| Thabo Sefolosha | SF       | Atlanta Hawks | 4       |
+
 
 If we want a table of the top 5 highest paid players, we can first sort
 the list by salary and then `take` the first five rows:
@@ -73,13 +76,14 @@ the list by salary and then `take` the first five rows:
 nba.sort('Salary', descending=True).take(np.arange(5))
 ```
 
-| Player                |     Position   |           Team       |   Salary  |
-|-----------------------|----------------|----------------------|-----------|
-| Kobe Bryant           |       SF       |  Los Angeles Lakers  |   25      |
-| Joe Johnson           |       SF       |  Brooklyn Nets       |   24.8949 |
-| LeBron James          |       SF       |  Cleveland Cavaliers |   22.9705 |
-| Carmelo Anthony       |       SF       |  New York Knicks     |   22.875  |
-| Dwight Howard         |       C        |  Houston Rockets     |   22.3594 |
+| Player          | Position | Team                | Salary  |
+|-----------------|----------|---------------------|---------|
+| Kobe Bryant     | SF       | Los Angeles Lakers  | 25      |
+| Joe Johnson     | SF       | Brooklyn Nets       | 24.8949 |
+| LeBron James    | SF       | Cleveland Cavaliers | 22.9705 |
+| Carmelo Anthony | SF       | New York Knicks     | 22.875  |
+| Dwight Howard   | C        | Houston Rockets     | 22.3594 |
+
 
 ### Rows corresponding to a specified feature
 
@@ -108,8 +112,8 @@ than $\$10$ million.
 nba.where('Salary', are.above(10))
 ```
 
-| Player                |     Position   |              Team     |   Salary  |
-|-----------------------|----------------|----------------------|-----------|
+| Player         | Position | Team              | Salary  |
+|----------------|----------|-------------------|---------|
 | Paul Millsap   | PF       | Atlanta Hawks     | 18.6717 |
 | Al Horford     | C        | Atlanta Hawks     | 12      |
 | Joe Johnson    | SF       | Brooklyn Nets     | 24.8949 |
@@ -120,6 +124,7 @@ nba.where('Salary', are.above(10))
 | Derrick Rose   | PG       | Chicago Bulls     | 20.0931 |
 | Jimmy Butler   | SG       | Chicago Bulls     | 16.4075 |
 | Joakim Noah    | C        | Chicago Bulls     | 13.4    |
+
 
 ... (59 rows omitted)
 
@@ -134,18 +139,20 @@ the data easier to analyze. DeMar DeRozan of the Toronto Raptors was the
 ``` python
 nba.where('Salary', are.above(10)).sort('Salary')
 ```
-| Player                |     Position   |              Team    |   Salary  |
-|-----------------------|----------------|----------------------|-----------|
-|       DeMar DeRozan   |       SG       | Toronto Raptors      |   10.05   |
-|       Gerald Wallace  |       SF       | Philadelphia 76ers   |   10.1059 |
-|       Luol Deng       |       SF       | Miami Heat           |   10.1516 |
-|       Monta Ellis     |       SG       | Indiana Pacers       |   10.3    |
-| Wilson Chandler       |       SF       | Denver Nuggets       |   10.4494 |
-| Brendan Haywood       |       C        | Cleveland Cavaliers  |   10.5225 |
-| Jrue Holiday          |       PG       | New Orleans Pelicans |   10.5955 |
-| Tyreke Evans          |       SG       | New Orleans Pelicans |   10.7346 |
-| Marcin Gortat         |       C        | Washington Wizards   |   11.2174 |
-| Thaddeus Young        |       PF       | Brooklyn Nets        |   11.236  |
+
+| Player          | Position | Team                 | Salary  |
+|-----------------|----------|----------------------|---------|
+| DeMar DeRozan   | SG       | Toronto Raptors      | 10.05   |
+| Gerald Wallace  | SF       | Philadelphia 76ers   | 10.1059 |
+| Luol Deng       | SF       | Miami Heat           | 10.1516 |
+| Monta Ellis     | SG       | Indiana Pacers       | 10.3    |
+| Wilson Chandler | SF       | Denver Nuggets       | 10.4494 |
+| Brendan Haywood | C        | Cleveland Cavaliers  | 10.5225 |
+| Jrue Holiday    | PG       | New Orleans Pelicans | 10.5955 |
+| Tyreke Evans    | SG       | New Orleans Pelicans | 10.7346 |
+| Marcin Gortat   | C        | Washington Wizards   | 11.2174 |
+| Thaddeus Young  | PF       | Brooklyn Nets        | 11.236  |
+
 
 ... (59 rows omitted)
 
@@ -157,9 +164,10 @@ placed a table consisting of just one line:
 nba.where('Player', are.equal_to('Stephen Curry'))
 ```
 
-| Player                |     Position   |           Team         |   Salary  |
-|-----------------------|----------------|------------------------|-----------|
-|       Stephen Curry   |       PG       | Golden State Warriors  |   11.3708 |
+| Player        | Position | Team                  | Salary  |
+|---------------|----------|-----------------------|---------|
+| Stephen Curry | PG       | Golden State Warriors | 11.3708 |
+
 
 Curry made just under $\$11.4$ million dollars. That's a lot of money,
 but it's less than half the salary of LeBron James. You'll find that
@@ -175,22 +183,23 @@ all the Warriors:
 nba.where('Team', are.equal_to('Golden State Warriors')).show()
 ```
 
-| Player                |     Position   |               Team     |   Salary  |
-|-----------------------|----------------|------------------------|-----------|
-|   Klay Thompson       |       SG       | Golden State Warriors  |  15.501   |
-|   Draymond Green      |       PF       | Golden State Warriors  |  14.2609  |
-|   Andrew Bogut        |       C        | Golden State Warriors  |  13.8     |
-|   Andre Iguodala      |       SF       | Golden State Warriors  |  11.7105  |
-|   Stephen Curry       |       PG       | Golden State Warriors  |  11.3708  |
-|   Jason Thompson      |       PF       | Golden State Warriors  |  7.00847  |
-|   Shaun Livingston    |       PG       | Golden State Warriors  |  5.54373  |
-|   Harrison Barnes     |       SF       | Golden State Warriors  |  3.8734   |
-|   Marreese Speights   |       C        | Golden State Warriors  |  3.815    |
-|   Leandro Barbosa     |       SG       | Golden State Warriors  |  2.5      |
-|   Festus Ezeli        |       C        | Golden State Warriors  |  2.00875  |
-|   Brandon Rush        |       SF       | Golden State Warriors  |  1.27096  |
-|   Kevon Looney        |       SF       | Golden State Warriors  |  1.13196  |
-|   Anderson Varejao    |       PF       | Golden State Warriors  |  0.289755 |
+| Player            | Position | Team                  | Salary   |
+|-------------------|----------|-----------------------|----------|
+| Klay Thompson     | SG       | Golden State Warriors | 15.501   |
+| Draymond Green    | PF       | Golden State Warriors | 14.2609  |
+| Andrew Bogut      | C        | Golden State Warriors | 13.8     |
+| Andre Iguodala    | SF       | Golden State Warriors | 11.7105  |
+| Stephen Curry     | PG       | Golden State Warriors | 11.3708  |
+| Jason Thompson    | PF       | Golden State Warriors | 7.00847  |
+| Shaun Livingston  | PG       | Golden State Warriors | 5.54373  |
+| Harrison Barnes   | SF       | Golden State Warriors | 3.8734   |
+| Marreese Speights | C        | Golden State Warriors | 3.815    |
+| Leandro Barbosa   | SG       | Golden State Warriors | 2.5      |
+| Festus Ezeli      | C        | Golden State Warriors | 2.00875  |
+| Brandon Rush      | SF       | Golden State Warriors | 1.27096  |
+| Kevon Looney      | SF       | Golden State Warriors | 1.13196  |
+| Anderson Varejao  | PF       | Golden State Warriors | 0.289755 |
+
 
 This portion of the table is already sorted by salary, because the
 original table listed players sorted by salary within the same team. The
@@ -206,7 +215,7 @@ achieve the same effect.
 nba.where('Team', 'Denver Nuggets') # equivalent to nba.where('Team', are.equal_to('Denver Nuggets'))
 ```
 
-| Player            | Position |      Team      | Salary  |
+| Player            | Position | Team           | Salary  |
 |-------------------|----------|----------------|---------|
 | Danilo Gallinari  | SF       | Denver Nuggets | 14      |
 | Kenneth Faried    | PF       | Denver Nuggets | 11.236  |
@@ -231,13 +240,14 @@ Guards whose salaries were over $\$15$ million.
 nba.where('Position', 'PG').where('Salary', are.above(15))
 ```
 
-| Player            |  Position  |       Team             | Salary  |
-|-------------------|------------|------------------------|---------|
-| Derrick Rose      |   PG       |  Chicago Bulls         | 20.0931 |
-| Kyrie Irving      |   PG       |  Cleveland Cavaliers   | 16.4075 |
-| Chris Paul        |   PG       |  Los Angeles Clippers  | 21.4687 |
-| Russell Westbrook |   PG       |  Oklahoma City Thunder | 16.7442 |
-| John Wall         |   PG       |  Washington Wizards    | 15.852  |
+| Player            | Position | Team                  | Salary  |
+|-------------------|----------|-----------------------|---------|
+| Derrick Rose      | PG       | Chicago Bulls         | 20.0931 |
+| Kyrie Irving      | PG       | Cleveland Cavaliers   | 16.4075 |
+| Chris Paul        | PG       | Los Angeles Clippers  | 21.4687 |
+| Russell Westbrook | PG       | Oklahoma City Thunder | 16.7442 |
+| John Wall         | PG       | Washington Wizards    | 15.852  |
+
 
 ### General form
 
@@ -251,12 +261,13 @@ the appropriate condition:
 nba.where('Salary', are.between(10, 10.3))
 ```
 
-| Player           | Position  |      Team           | Salary  |
-|------------------|-----------|---------------------|---------|
-|   Luol Deng      |  SF       |  Miami Heat         | 10.1516 |
-|   Gerald Wallace |  SF       |  Philadelphia 76ers | 10.1059 |
-|   Danny Green    |  SG       |  San Antonio Spurs  | 10      |
-|   DeMar DeRozan  |  SG       |  Toronto Raptors    | 10.05   |
+| Player         | Position | Team               | Salary  |
+|----------------|----------|--------------------|---------|
+| Luol Deng      | SF       | Miami Heat         | 10.1516 |
+| Gerald Wallace | SF       | Philadelphia 76ers | 10.1059 |
+| Danny Green    | SG       | San Antonio Spurs  | 10      |
+| DeMar DeRozan  | SG       | Toronto Raptors    | 10.05   |
+
 
 Notice that the table above includes Danny Green who made $\$10$
 million, but *not* Monta Ellis who made $\$10.3$ million. As elsewhere
@@ -311,22 +322,22 @@ can just specify `Warriors` instead of `Golden State Warriors`:
 nba.where('Team', are.containing('Warriors')).show()
 ```
 
-| Player              |   Position  |       Team              | Salary   |
-|---------------------|-------------|-------------------------|----------|
-|   Klay Thompson     |   SG        |   Golden State Warriors | 15.501   |
-|   Draymond Green    |   PF        |   Golden State Warriors | 14.2609  |
-|   Andrew Bogut      |   C         |   Golden State Warriors | 13.8     |
-|   Andre Iguodala    |   SF        |   Golden State Warriors | 11.7105  |
-|   Stephen Curry     |   PG        |   Golden State Warriors | 11.3708  |
-|   Jason Thompson    |   PF        |   Golden State Warriors | 7.00847  |
-|   Shaun Livingston  |   PG        |   Golden State Warriors | 5.54373  |
-|   Harrison Barnes   |   SF        |   Golden State Warriors | 3.8734   |
-|   Marreese Speights |   C         |   Golden State Warriors | 3.815    |
-|   Leandro Barbosa   |   SG        |   Golden State Warriors | 2.5      |
-|   Festus Ezeli      |   C         |   Golden State Warriors | 2.00875  |
-|   Brandon Rush      |   SF        |   Golden State Warriors | 1.27096  |
-|   Kevon Looney      |   SF        |   Golden State Warriors | 1.13196  |
-|   Anderson Varejao  |   PF        |   Golden State Warriors | 0.289755 |
+| Player            | Position | Team                  | Salary   |
+|-------------------|----------|-----------------------|----------|
+| Klay Thompson     | SG       | Golden State Warriors | 15.501   |
+| Draymond Green    | PF       | Golden State Warriors | 14.2609  |
+| Andrew Bogut      | C        | Golden State Warriors | 13.8     |
+| Andre Iguodala    | SF       | Golden State Warriors | 11.7105  |
+| Stephen Curry     | PG       | Golden State Warriors | 11.3708  |
+| Jason Thompson    | PF       | Golden State Warriors | 7.00847  |
+| Shaun Livingston  | PG       | Golden State Warriors | 5.54373  |
+| Harrison Barnes   | SF       | Golden State Warriors | 3.8734   |
+| Marreese Speights | C        | Golden State Warriors | 3.815    |
+| Leandro Barbosa   | SG       | Golden State Warriors | 2.5      |
+| Festus Ezeli      | C        | Golden State Warriors | 2.00875  |
+| Brandon Rush      | SF       | Golden State Warriors | 1.27096  |
+| Kevon Looney      | SF       | Golden State Warriors | 1.13196  |
+| Anderson Varejao  | PF       | Golden State Warriors | 0.289755 |
 
 You can extract data for all the guards, both Point Guards and Shooting
 Guards:
@@ -335,18 +346,19 @@ Guards:
 nba.where('Position', are.containing('G'))
 ```
 
-| Player             | Position   |        Team      |   Salary |
-|------------------  |----------  |------------------|----------|
-|   Jeff Teague      |   PG       |   Atlanta Hawks  | 8        |
-|   Kyle Korver      |   SG       |   Atlanta Hawks  | 5.74648  |
-|   Dennis Schroder  |   PG       |   Atlanta Hawks  | 1.7634   |
-|   Tim Hardaway Jr. |   SG       |   Atlanta Hawks  | 1.30452  |
-|   Jason Richardson |   SG       |   Atlanta Hawks  | 0.947276 |
-|   Lamar Patterson  |   SG       |   Atlanta Hawks  | 0.525093 |
-|   Terran Petteway  |   SG       |   Atlanta Hawks  | 0.525093 |
-|   Avery Bradley    |   PG       |   Boston Celtics | 7.73034  |
-|   Isaiah Thomas    |   PG       |   Boston Celtics | 6.91287  |
-|   Marcus Smart     |   PG       |   Boston Celtics | 3.43104  |
+| Player           | Position | Team           | Salary   |
+|------------------|----------|----------------|----------|
+| Jeff Teague      | PG       | Atlanta Hawks  | 8        |
+| Kyle Korver      | SG       | Atlanta Hawks  | 5.74648  |
+| Dennis Schroder  | PG       | Atlanta Hawks  | 1.7634   |
+| Tim Hardaway Jr. | SG       | Atlanta Hawks  | 1.30452  |
+| Jason Richardson | SG       | Atlanta Hawks  | 0.947276 |
+| Lamar Patterson  | SG       | Atlanta Hawks  | 0.525093 |
+| Terran Petteway  | SG       | Atlanta Hawks  | 0.525093 |
+| Avery Bradley    | PG       | Boston Celtics | 7.73034  |
+| Isaiah Thomas    | PG       | Boston Celtics | 6.91287  |
+| Marcus Smart     | PG       | Boston Celtics | 3.43104  |
+
 
 ... (171 rows omitted)
 
@@ -358,17 +370,17 @@ other_than_Cavs = nba.where('Team', are.not_equal_to('Cleveland Cavaliers'))
 other_than_Cavs.where('Salary', are.not_below(20))
 ```
 
-| Player            |   Position |        Team             |  Salary |
-|-------------------|------------|-------------------------|---------|
-|   Joe Johnson     |   SF       |   Brooklyn Nets         | 24.8949 |
-|   Derrick Rose    |   PG       |   Chicago Bulls         | 20.0931 |
-|   Dwight Howard   |   C        |   Houston Rockets       | 22.3594 |
-|   Chris Paul      |   PG       |   Los Angeles Clippers  | 21.4687 |
-|   Kobe Bryant     |   SF       |   Los Angeles Lakers    | 25      |
-|   Chris Bosh      |   PF       |   Miami Heat            | 22.1927 |
-|   Dwyane Wade     |   SG       |   Miami Heat            | 20      |
-|   Carmelo Anthony |   SF       |   New York Knicks       | 22.875  |
-|   Kevin Durant    |   SF       |   Oklahoma City Thunder | 20.1586 |
+| Player          | Position | Team                  | Salary  |
+|-----------------|----------|-----------------------|---------|
+| Carmelo Anthony | SF       | New York Knicks       | 22.875  |
+| Chris Bosh      | PF       | Miami Heat            | 22.1927 |
+| Chris Paul      | PG       | Los Angeles Clippers  | 21.4687 |
+| Derrick Rose    | PG       | Chicago Bulls         | 20.0931 |
+| Dwight Howard   | C        | Houston Rockets       | 22.3594 |
+| Dwyane Wade     | SG       | Miami Heat            | 20      |
+| Joe Johnson     | SF       | Brooklyn Nets         | 24.8949 |
+| Kevin Durant    | SF       | Oklahoma City Thunder | 20.1586 |
+| Kobe Bryant     | SF       | Los Angeles Lakers    | 25      |
 
 The same table can be created in many ways. Here is another, and no
 doubt you can think of more.
@@ -377,17 +389,17 @@ doubt you can think of more.
 other_than_Cavs.where('Salary', are.above_or_equal_to(20))
 ```
 
-| Player            | Position   |       Team             | Salary  |
-|-------------------|------------|------------------------|---------|
-|   Joe Johnson     |   SF       |  Brooklyn Nets         | 24.8949 |
-|   Derrick Rose    |   PG       |  Chicago Bulls         | 20.0931 |
-|   Dwight Howard   |   C        |  Houston Rockets       | 22.3594 |
-|   Chris Paul      |   PG       |  Los Angeles Clippers  | 21.4687 |
-|   Kobe Bryant     |   SF       |  Los Angeles Lakers    | 25      |
-|   Chris Bosh      |   PF       |  Miami Heat            | 22.1927 |
-|   Dwyane Wade     |   SG       |  Miami Heat            | 20      |
-|   Carmelo Anthony |   SF       |  New York Knicks       | 22.875  |
-|   Kevin Durant    |   SF       |  Oklahoma City Thunder | 20.1586 |
+| Player          | Position | Team                  | Salary  |
+|-----------------|----------|-----------------------|---------|
+| Joe Johnson     | SF       | Brooklyn Nets         | 24.8949 |
+| Derrick Rose    | PG       | Chicago Bulls         | 20.0931 |
+| Dwight Howard   | C        | Houston Rockets       | 22.3594 |
+| Chris Paul      | PG       | Los Angeles Clippers  | 21.4687 |
+| Kobe Bryant     | SF       | Los Angeles Lakers    | 25      |
+| Chris Bosh      | PF       | Miami Heat            | 22.1927 |
+| Dwyane Wade     | SG       | Miami Heat            | 20      |
+| Carmelo Anthony | SF       | New York Knicks       | 22.875  |
+| Kevin Durant    | SF       | Oklahoma City Thunder | 20.1586 |
 
 As you can see, the use of `where` with `are` gives you great
 flexibility in accessing rows with features that interest you. Don't hesitate to experiment!
