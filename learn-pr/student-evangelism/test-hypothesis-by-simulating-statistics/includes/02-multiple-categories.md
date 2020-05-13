@@ -446,14 +446,14 @@ Thus, while we have a clear conclusion about the data in our table--the panels d
 provided for eligible jurors--questions about the nature of the data
 prevent us from concluding anything broader.
 
-> [!IMPORTANT]
-> Let's explore the example of jury selection in Alameda County. One distribution represents, for each ethnicity, the proportion of all eligible juror candidates of that ethnicity. The other distribution represents the proportion of people of a particular ethnicity that were selected to be on the jury panel. The table of the exact proportions can be found below.
-
-|Ethnicity	|Eligible	|Panel |
- |Asian	    |0.15    	|0.26  |
- |Black     |0.18   	|0.08  |
- |Latino   	|0.12    	|0.08  |
- |White    	|0.54    	|0.54  |
- |Other    	|0.0   1	|0.04  |
 
 ## Check your knowledge
+
+Let's explore the example of jury selection in Alameda County. One distribution represents, for each ethnicity, the proportion of all eligible juror candidates of that ethnicity. The other distribution represents the proportion of people of a particular ethnicity that were selected to be on the jury panel. The table of the exact proportions can be found below.
+
+|Ethnicity	|Eligible	|Panel |
+|Asian	    |0.15    	|0.26  |
+|Black      |0.18   	|0.08  |
+|Latino   	|0.12    	|0.08  |
+|White    	|0.54    	|0.54  |
+|Other    	|0.01	    |0.04  |
