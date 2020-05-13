@@ -28,7 +28,7 @@ This is the cost to back up, copy, or archive data. Options might include settin
 
 ### Organization continuity and disaster recovery costs
 
-Along with server fault tolerance and redundancy, you need to plan for how to recover from a disaster and continue operating. Your plan should consist of creating a data recovery site. It could also include backup generators. Most of these are upfront costs, especially if you build a data recovery site, but there's an additional ongoing cost for the infrastructure and its maintenance.
+Along with server fault tolerance and redundancy, you need to plan for how to recover from a disaster and continue operating. Your plan should consist of creating a disaster recovery site. It could also include backup generators. Most of these are upfront costs, especially if you build a disaster recovery site, but there's an additional ongoing cost for the infrastructure and its maintenance.
 
 ### Datacenter infrastructure costs
 
@@ -36,7 +36,7 @@ These are costs for construction and building equipment, as well as future renov
 
 ### Technical personnel
 
-While not a capital expenditure, the personnel required to work on your infrastructure are specific to on-premises datacenters. You will need the technical expertise and workforce to install, deploy, and manage the systems in the datacenter and at the data recovery site.
+While not a capital expenditure, the personnel required to work on your infrastructure are specific to on-premises datacenters. You will need the technical expertise and workforce to install, deploy, and manage the systems in the datacenter and at the disaster recovery site.
 
 ## OpEx cloud computing costs
 
@@ -48,7 +48,7 @@ Using a pay-per-use model requires actively managing your subscriptions to ensur
 
 ### Scaling charges based on usage/demand instead of fixed hardware or capacity. 
 
-Cloud computing can bill in various ways, such as the number of users or CPU usage time. However, billing categories can also include allocated RAM, I/O operations per second (IOPS), and storage space. Plan for backup traffic and data recovery traffic to determine the bandwidth needed.
+Cloud computing can bill in various ways, such as the number of users or CPU usage time. However, billing categories can also include allocated RAM, I/O operations per second (IOPS), and storage space. Plan for backup traffic and disaster recovery traffic to determine the bandwidth needed.
 
 ### Billing at the user or organization level.
 

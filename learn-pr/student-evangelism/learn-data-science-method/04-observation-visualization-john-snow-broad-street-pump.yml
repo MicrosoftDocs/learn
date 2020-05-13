@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.learn-data-science-method.observation-visualization-john-snow-broad-street-pump
+title: Observation and Visualization - John Snow and the Broad Street Pump
+metadata:
+  title: Observation and Visualization - John Snow and the Broad Street Pump
+  description: Story of John Snow and the Broad Street Pump
+  ms.date: 03/12/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/04-observation-visualization-john-snow-broad-street-pump.md)]
