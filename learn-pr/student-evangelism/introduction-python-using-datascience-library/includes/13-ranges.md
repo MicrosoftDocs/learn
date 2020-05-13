@@ -79,8 +79,7 @@ $$4 \cdot \left(1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - \fra
 We will calculate this finite sum by adding all the positive terms first
 and then subtracting the sum of all the negative terms
 
-> [!NOTE]
-> $$4 \cdot \left( \left(1 + \frac{1}{5} + \frac{1}{9} + \dots + \frac{1}{9997} \right) - \left(\frac{1}{3} + \frac{1}{7} + \frac{1}{11} + \dots + \frac>{1}{9999} \right) \right)$$
+$$4 \cdot \left( \left(1 + \frac{1}{5} + \frac{1}{9} + \dots + \frac{1}{9997} \right) - \left(\frac{1}{3} + \frac{1}{7} + \frac{1}{11} + \dots + \frac>{1}{9999} \right) \right)$$
 
 The positive terms in the sum have 1, 5, 9, and so on in the
 denominators. The array `by_four_to_20` contains these numbers up to 17:
@@ -236,8 +235,7 @@ a million of them, and see if the product is close to $\pi$.
 Remember that multiplication can done in any order,
 so we can readjust our calculation to:
 
-> [!NOTE] 
-> $$\pi \approx 2 \cdot \left( \frac{2}{1} \cdot \frac{4}{3} \cdot \frac{6}{5} \cdots \frac{1,000,000}{999999} \right) \cdot \left( \frac{2}{3} \cdot \frac{4}{5} \cdot \frac{6}{7} \cdots \frac{1,000,000}{1,000,001} \right)$$
+$$\pi \approx 2 \cdot \left( \frac{2}{1} \cdot \frac{4}{3} \cdot \frac{6}{5} \cdots \frac{1,000,000}{999999} \right) \cdot \left( \frac{2}{3} \cdot \frac{4}{5} \cdot \frac{6}{7} \cdots \frac{1,000,000}{1,000,001} \right)$$
 
 We're now ready to do the calculation. We start by creating an array of
 even numbers 2, 4, 6, and so on upto 1,000,000. Then we create two lists
@@ -262,7 +260,7 @@ together. Now we can calculate Wallis' product, to a good approximation.
 That's $\pi$ correct to five decimal places. Wallis clearly came up with
 a great formula.
 
-> [!NOTE] 
+> [!IMPORTANT]
 > As we saw in the
 example about Leibniz's formula, when we add *infinitely* many
 fractions, the order can matter. The same is true with multiplying
