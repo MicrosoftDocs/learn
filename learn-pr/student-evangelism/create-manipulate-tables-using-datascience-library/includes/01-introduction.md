@@ -28,7 +28,7 @@ from datascience import *
 ```
 
 Empty tables can be created using the `Table` function. An empty table
-is usefuly because it can be extended to contain new rows and columns.
+is usefully because it can be extended to contain new rows and columns.
 
 ``` {.python}
 Table()

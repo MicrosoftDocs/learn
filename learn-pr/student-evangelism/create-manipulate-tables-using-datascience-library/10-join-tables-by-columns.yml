@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your Knowledge
   questions:
-    - content: 'Which line of code returns a new table which displays the total number of candies and the total cost for each unique color?'
+    - content: 'Which line of code returns a new table, which displays the total number of candies and the total cost for each unique color?'
       choices:
         - content: "marbles.group('Color', max)"
           isCorrect: false
@@ -37,7 +37,7 @@ quiz:
           explanation: 'Incorrect, these are the original column names'
         - content: '"Color", "Amount sum", "Price($) sum"'
           isCorrect: true
-          explanation: 'Correct, the group fuction attaches the aggregation function name to the end of the original column names to all columns besides the column being grouped on'
+          explanation: 'Correct, the group function attaches the aggregation function name to the end of the original column names to all columns besides the column being grouped on'
         - content: '"color", "amount sum", "price($) sum"'
           isCorrect: false
           explanation: 'The group function will not change the capitalization of the original column names'
@@ -62,4 +62,4 @@ quiz:
           explanation: 'Incorrect, when you are using the third argument, an aggregation function must be used. This code will result in an error.'
         - content: 'candy.pivot("Amount", "Color", "Price($)", sum)'
           isCorrect: true
-          explanation: 'Correct. Since the amount of candy in each bag is unique, there will only be one bag of candy for each color and amount combination. Then using sum as the aggregation function will return just the price of that particular bag of candy. The first argument will get a column for each unique value, and the secomd will get a row for each unique value, which is what the question is asking for.'
+          explanation: 'Correct. Since the amount of candy in each bag is unique, there will only be one bag of candy for each color and amount combination. Then using sum as the aggregation function will return just the price of that particular bag of candy. The first argument will get a column for each unique value, and the second will get a row for each unique value, which is what the question is asking for.'

@@ -180,7 +180,7 @@ their late sixties and early seventies. This stunning change contributes
 to what is known as the greying of America.
 
 By far the greatest absolute change was among those in the 64-67
-agegroup in 2014. What could explain this large increase? We can explore
+age group in 2014. What could explain this large increase? We can explore
 this question by examining the years in which the relevant groups were
 born.
 

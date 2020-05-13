@@ -123,7 +123,7 @@ more_cones.group(['Flavor', 'Color'])
 |chocolate|light brown|1|
 |strawberry|pink|2|
 
-The same data can be displayed differenly using the Table method
+The same data can be displayed differently using the Table method
 `pivot`. Ignore the code for a moment, and just examine the table of
 outcomes.
 

@@ -37,7 +37,7 @@ quiz:
           isCorrect: false
         - content: students.sort('age', descending=False)
           isCorrect: false
-          explanation: Incorrect. The sort with "descending=False" will sort the table in acsending order, which will sort the table from youngest to oldest.
+          explanation: Incorrect. The sort with "descending=False" will sort the table in ascending order, which will sort the table from youngest to oldest.
         - content: students.sort('age', descending=True)
           isCorrect: true
           explanation: Correct. The sort with "descending=True" will sort the table in descending order, which will sort the table from oldest to youngest.

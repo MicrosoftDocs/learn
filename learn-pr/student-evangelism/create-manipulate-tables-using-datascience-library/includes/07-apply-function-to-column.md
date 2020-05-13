@@ -279,7 +279,7 @@ _ = plots.scatter(68, 66.24, color='gold', s=40)
 ![png](../media/32-apply-function-to-column-26-0.png)
 
 In order to calculate exactly where the gold dot should be, we first
-need to indentify all the points in the strip. These correspond to the
+need to identify all the points in the strip. These correspond to the
 rows where `MidParent` is between 67.5 inches and 68.5 inches.
 
 ``` {.python}

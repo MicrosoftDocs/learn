@@ -63,7 +63,7 @@ double(-0.6/4)
 
 The two expressions above are both *call expressions*. In the second
 one, the value of the expression `-0.6/4` is computed and then passed as
-the argument named `x` to the `double` function. Each call expresson
+the argument named `x` to the `double` function. Each call expression
 results in the body of `double` being executed, but with a different
 value of `x`.
 
