@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true
-durationInMinutes: 5
+durationInMinutes: 15
 content: |
   [!include[](includes/03-visualize-numerical-distributions.md)]
 quiz:
