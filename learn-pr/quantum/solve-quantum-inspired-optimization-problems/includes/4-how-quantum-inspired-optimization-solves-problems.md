@@ -12,7 +12,7 @@ Simulated annealing is similar to gradient descent. The algorithm simulates a wa
 
 In this graph, notice that this uphill move is described as a *thermal jump*. That's because simulated annealing is an algorithm from physics that mimics the behavior of materials as they are slowly cooled. The walker is like an atom in a metal that's driven by temperature to reconfigure itself. These changes are random but moves to lower-energy configurations are more likely than moves to higher-energy configurations. That is why we say the walker follows a biased random walk.
 
-Simulated annealing isn't a QIO method, since it uses only thermal effects. However it's a technique that's commonly used for solving combinatorial problems like the ones we use QIO methods on. Problems can be formulated in the same way. Azure Quantum provides a simulated annealing solver because it's a simple, yet powerful, heuristic.
+Simulated annealing isn't a QIO method, since it uses only thermal effects. However it's a technique that's commonly used for solving combinatorial problems like the ones we use QIO methods on. Problems can be formulated in the same way.
 
 ## Quantum annealing
 
@@ -29,5 +29,3 @@ In quantum annealing, we frame our problem by giving assignments to qubits, whic
 Initially we begin with the quantum state in a broad superposition over many possible assignments to the qubits. Instead of varying the temperature, as we did in simulated annealing, we vary a parameter called the *quantum field strength*.
 
 This parameter defines the radius of neighboring states we can move to. As time goes on and we get closer to a solution, this radius becomes smaller and smaller. By the end of the annealing process, the system has settled into one particular low-energy configuration that can then be measured, which gives us the solution to the optimization problem. The most mathematically clean formulation of quantum annealing is called *adiabatic quantum optimization*, and this is what quantum-inspired methods attempt to emulate.
-
-Azure Quantum offers a range of solvers that are standard implementations of simulated annealing and quantum-inspired optimization solvers.

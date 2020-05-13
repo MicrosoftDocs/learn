@@ -1,6 +1,6 @@
 You now have a basic understanding of QIO and some of the problems it can solve. Here's a brief recap:
 
-* QIO is based on a computational model called *adiabatic quantum computing*.
+* There are many types of quantum-inspired algorithms. One commonly used quantum-inspired algorithm is based on a computational model called *adiabatic quantum computing*.
 * Today, we can emulate adiabatic quantum algorithms by using quantum-inspired techniques on classical hardware.
 * QIO works best with problems where the landscape is rugged, with many hills and valleys.
 * QIO can be used in Azure Quantum to solve optimization problems.
