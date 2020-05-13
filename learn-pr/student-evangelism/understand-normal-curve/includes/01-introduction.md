@@ -1,4 +1,4 @@
-### Why the Mean Matters
+### Why the mean matters
 
 In this course we have studied several different statistics, including
 total variation distance, the maximum, the median, and also the mean.
@@ -37,7 +37,7 @@ import pylab as pl
 import numpy as np
 ```
 
-### Properties of the Mean
+### Properties of the mean
 
 In this course, we have used the words "average" and "mean"
 interchangeably, and will continue to do so. The definition of the mean
@@ -57,15 +57,19 @@ not_symmetric = make_array(2, 3, 3, 9)
 np.average(not_symmetric)
 ```
 
+``` output
     4.25
+```
 
 ``` python
 np.mean(not_symmetric)
 ```
 
+``` output
     4.25
+```
 
-### Basic Properties
+### Basic properties
 
 The definition and the example above point to some properties of the
 mean.
@@ -84,7 +88,7 @@ mean.
 We will now study some other properties that are helpful in
 understanding the mean and its relation to other statistics.
 
-### The Mean is a "Smoother"
+### The mean is a "smoother"
 
 You can think of taking the mean as an "equalizing" or "smoothing"
 operation. For example, imagine the entries in `not_symmetric` above as
@@ -94,7 +98,7 @@ evenly among the four people. They had started out with different
 amounts of money in their pockets (\$2, \$3, \$3, and \$9), but now each
 person has \$4.25, the mean amount.
 
-### Proportions are Means
+### Proportions are means
 
 If a collection consists only of ones and zeroes, then the sum of the
 collection is the number of ones in it, and the mean of the collection
@@ -105,13 +109,17 @@ zero_one = make_array(1, 1, 1, 0)
 sum(zero_one)
 ```
 
+``` output
     3
+```
 
 ``` python
 np.mean(zero_one)
 ```
 
+``` output
     0.75
+```
 
 You can replace 1 by the Boolean `True` and 0 by `False`:
 
@@ -119,12 +127,14 @@ You can replace 1 by the Boolean `True` and 0 by `False`:
 np.mean(make_array(True, True, True, False))
 ```
 
+``` output
     0.75
+```
 
 Because proportions are a special case of means, results about random
 sample means apply to random sample proportions as well.
 
-### The Mean and the Histogram
+### The mean and the histogram
 
 The mean of the collection {2, 3, 3, 9} is 4.25, which is not the
 "halfway point" of the data. So then what does the mean measure?
@@ -158,14 +168,18 @@ as `not_symmetric` and hence the same mean.
 not_symmetric
 ```
 
-    array([2, 3, 3, 9])
-
+``` output
+ array([2, 3, 3, 9])
+```
+   
 ``` python
 same_distribution = make_array(2, 2, 3, 3, 3, 3, 9, 9)
 np.mean(same_distribution)
 ```
 
-    4.25
+``` output
+ 4.25
+```
 
 The mean is a physical attribute of the histogram of the distribution.
 Here is the histogram of the distribution of `not_symmetric` or
@@ -205,7 +219,7 @@ plots.ylim(-0.05, 0.5);
 
 ![property mean](../media/69-properties-mean-19-0.png)
 
-### The Mean and the Median
+### The mean and the median
 
 If a student's score on a test is below average, does that imply that
 the student is in the bottom half of the class on that test?
@@ -240,13 +254,17 @@ plots.ylim(-0.05, 0.5);
 np.mean(symmetric)
 ```
 
-    3.0
+``` output
+  3
+```
 
 ``` python
 percentile(50, symmetric)
 ```
 
-    3
+``` output
+  3
+```
 
 In general, **for symmetric distributions, the mean and the median are
 equal.**
@@ -318,13 +336,17 @@ compensation = sf2015.column('Total Compensation')
 percentile(50, compensation)
 ```
 
+``` output
     110305.79
+```
 
 ``` python
 np.mean(compensation)
 ```
 
+``` output
     114725.98411824222
+```
 
 Distributions of incomes of large populations tend to be right skewed.
 When the bulk of a population has middle to low incomes, but a very
@@ -337,7 +359,7 @@ affected by values at the extremes of the distribution. That is why
 economists often summarize income distributions by the median instead of
 the mean.
 
-## Learning Objectives
+## Learning objectives
 
 - Understand various properties of the mean and its importance as a statistic.
 - Measure the spread of values in a distribution and converted distributions to Standard Units.

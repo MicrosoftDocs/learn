@@ -13,11 +13,11 @@ How far from the mean can they be? To answer this question, we will
 develop a measure of variability about the mean.
 
 We will start by describing how to calculate the measure. Then we will
-see why it is a good measure to calcualte.
+see why it is a good measure to calculate.
 
-### The Rough Size of Deviations from Average
+### The rough size of deviations from average
 
-For simplicity, we will begin our calcuations in the context of a simple
+For simplicity, we will begin our calculations in the context of a simple
 array `any_numbers` consisting of just four values. As you will see, our
 method will extend easily to any other array of values.
 
@@ -35,7 +35,9 @@ mean = np.mean(any_numbers)
 mean
 ```
 
-    3.75
+``` output
+   3.75
+```
 
 Next, let's find out how far each value is from the mean. These are
 called the *deviations from the average*. A "deviation from average" is
@@ -71,7 +73,9 @@ when all the deviations are added together:
 sum(deviations)
 ```
 
-0.0
+``` output
+   0.0
+```
 
 The positive deviations exactly cancel out the negative ones. This is
 true of all lists of numbers, no matter what the histogram of the list
@@ -84,7 +88,9 @@ Since the sum of the deviations is 0, the mean of the deviations will be
 np.mean(deviations)
 ```
 
-0.0
+``` output
+   0.0
+```
 
 Because of this, the mean of the deviations is not a useful measure of
 the size of the deviations. What we really want to know is roughly how
@@ -123,7 +129,9 @@ variance = np.mean(squared_deviations)
 variance
 ```
 
-    13.1875
+``` output
+   13.1875
+```
 
 **Variance:** The mean squared deviation calculated above is called the
 *variance* of the values.
@@ -144,12 +152,14 @@ sd = variance ** 0.5
 sd
 ```
 
-3.6314597615834874
+``` output
+  3.6314597615834874
+```
 
-### Standard Deviation
+### Standard deviation
 
 The quantity that we have just computed is called the *standard
-deviation* of the list, and is abbreviated as SD. It measures roughly
+deviation* (SD) of the list, and is abbreviated as SD. It measures roughly
 how far the numbers on the list are from their average.
 
 **Definition.** The SD of a list is defined as the *root mean square of
@@ -164,7 +174,9 @@ array:
 np.std(any_numbers)
 ```
 
-3.6314597615834874
+``` output
+  3.6314597615834874
+```
 
 ### Working with the SD
 
@@ -212,7 +224,9 @@ mean_height = np.mean(nba13.column('Height'))
 mean_height
 ```
 
-79.06534653465347
+``` output
+  79.06534653465347
+```
 
 About how far off are the players' heights from the average? This is
 measured by the SD of the heights, which is about 3.45 inches.
@@ -222,7 +236,9 @@ sd_height = np.std(nba13.column('Height'))
 sd_height
 ```
 
-3.4505971830275546
+``` output
+  3.4505971830275546
+```
 
 The towering center Hasheem Thabeet of the Oklahoma City Thunder was the
 tallest player at a height of 87 inches.
@@ -245,7 +261,10 @@ Thabeet was about 8 inches above the average height.
 87 - mean_height
 ```
 
-7.934653465346528
+``` output
+  7.934653465346528
+```
+
 
 That's a deviation from average, and it is about 2.3 times the standard
 deviation:
@@ -254,7 +273,9 @@ deviation:
 (87 - mean_height)/sd_height
 ```
 
-2.2995015194397923
+``` output
+  2.2995015194397923
+```
 
 In other words, the height of the tallest player was about 2.3 SDs above
 average.
@@ -278,7 +299,9 @@ nba13.sort('Height').show(3)
 (69 - mean_height)/sd_height
 ```
 
--2.9169868288775844
+``` output
+  -2.9169868288775844
+```
 
 What we have observed is that the tallest and shortest players were both
 just a few SDs away from the average height. This is an example of why
@@ -292,7 +315,7 @@ the histogram is situated on the number line.
 entries are within the range "average $\pm$ a few SDs".
 
 For now, resist the desire to know exactly what fuzzy words like "bulk"
-and "few" mean. We wil make them precise later in this section. Let's
+and "few" mean. We will make them precise later in this section. Let's
 just examine the statement in the context of some more examples.
 
 We have already seen that *all* of the heights of the NBA players were
@@ -314,7 +337,9 @@ sd_age = np.std(ages)
 mean_age, sd_age
 ```
 
-(26.19009900990099, 4.321200441720307)
+``` output
+ (26.19009900990099, 4.321200441720307)
+```
 
 The average age was just over 26 years, and the SD was about 4.3 years.
 
@@ -341,7 +366,9 @@ Howard's age was about 3.2 SDs above average.
 (40 - mean_age)/sd_age
 ```
 
-3.1958482778922357
+``` output
+ 3.1958482778922357
+```
 
 The youngest was 15-year-old Jarvis Varnado, who won the NBA
 Championship that year with the Miami Heat. His age was about 2.6 SDs
@@ -350,6 +377,7 @@ below average.
 ``` python
 nba13.sort('Age in 2013').show(3)
 ```
+
 |Name|Position|Height|Weight|Age in 2013|
 |--- |--- |--- |--- |--- |
 |Jarvis Varnado|Forward|81|230|15|
@@ -362,13 +390,15 @@ nba13.sort('Age in 2013').show(3)
 (15 - mean_age)/sd_age
 ```
 
--2.589581103867081
+``` output
+  -2.589581103867081
+```
 
 What we have observed for the heights and ages is true in great
 generality. For *all* lists, the bulk of the entries are no more than 2
 or 3 SDs away from the average.
 
-### Chebychev's Bounds
+### Chebychev's bounds
 
 The Russian mathematician [Pafnuty
 Chebychev](https://en.wikipedia.org/wiki/Pafnuty_Chebyshev) (1821-1894)
@@ -501,7 +531,9 @@ within_3_sd = united.where('Delay (Standard Units)', are.between(-3, 3))
 within_3_sd.num_rows/united.num_rows
 ```
 
-0.9790235081374322
+``` output
+  0.9790235081374322
+```
 
 The histogram of delay times is shown below, with the horizontal axis in
 standard units. By the table above, the right hand tail continues all
@@ -516,4 +548,4 @@ plots.xticks(np.arange(-6, 17, 3));
 
 ![variability example](../media/70-variability-59-1.png)
 
-## Check your Knowledge
+## Check your knowledge

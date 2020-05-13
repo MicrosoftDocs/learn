@@ -35,14 +35,18 @@ mean_height = np.round(np.mean(heights), 1)
 mean_height
 ```
 
-    64.0
+``` output
+   64.0
+```
 
 ``` python
 sd_height = np.round(np.std(heights), 1)
 sd_height
 ```
 
-    2.5
+``` output
+   2.5
+```
 
 ``` python
 baby.hist('Maternal Height', bins=np.arange(55.5, 72.5, 1), unit='inch')
@@ -168,7 +172,9 @@ The numerical value of the shaded area can be found by calling
 stats.norm.cdf(1)
 ```
 
+``` output
     0.8413447460685429
+```
 
 That's about 84%. We can now use the symmetry of the curve and the fact
 that the total area under the curve is 1 to find other areas.
@@ -187,7 +193,9 @@ plot_normal_cdf(lbound=1)
 1 - stats.norm.cdf(1)
 ```
 
+``` output
     0.15865525393145707
+```
 
 The area between $z=-1$ and $z=1$ can be computed in several different
 ways. It is the gold area under the curve below.
@@ -210,7 +218,9 @@ the area to the left of $z=1$, minus all the area to the left of $z=-1$.
 stats.norm.cdf(1) - stats.norm.cdf(-1)
 ```
 
+``` output
     0.6826894921370859
+```
 
 By a similar calculation, we see that the area between $-2$ and 2 is
 about 95%.
@@ -227,7 +237,9 @@ plot_normal_cdf(2, lbound=-2)
 stats.norm.cdf(2) - stats.norm.cdf(-2)
 ```
 
+``` output
     0.9544997361036416
+```
 
 In other words, if a histogram is roughly bell shaped, the proportion of
 data in the range "average $\pm$ 2 SDs" is about 95%.

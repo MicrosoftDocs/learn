@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 import numpy as np
 path_data = '../../../../data/'
@@ -29,7 +29,7 @@ Recall that a proportion is a mean, when the values in the population
 are only 0 (the type of individual you are not counting) or 1 (the type
 of individual you are counting).
 
-### Width of Confidence Interval
+### Width of confidence interval
 
 If we had a random sample, we could go about using the bootstrap to
 construct a confidence interval for the percent of voters for Candidate
@@ -84,7 +84,7 @@ Here are histograms of two such distributions, one for an equal
 proportion of 1's and 0's, and one with 90% 1's and 10% 0's. Which one
 has the bigger SD?
 
-``` {.python}
+``` python
 # HIDDEN
 pop_50 = make_array(1, 1, 1, 1, 1, 0, 0, 0, 0, 0)
 pop_90 = make_array(1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
@@ -98,9 +98,6 @@ plots.scatter(0.5, -0.02, marker='^', color='darkblue', s=60)
 plots.scatter(0.9, -0.02, marker='^', color='gold', s=60)
 plots.ylim(-0.05, 1);
 ```
-
-    /home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
-      warnings.warn("The 'normed' kwarg is deprecated, and has been "
 
 ![Sample size example](../media/74-choose-sample-size-4-1.png)
 
@@ -122,7 +119,7 @@ only consist of 0's and 1's, in varying proportions. The function
 `np.ones` is useful for this. It takes a positive integer as its
 argument and returns an array consisting of that many 1's.
 
-``` {.python}
+``` python
 sd = make_array()
 for i in np.arange(1, 10, 1):
     # Create an array of i 1's and (10-i) 0's
@@ -158,7 +155,7 @@ More importantly for our purposes, the SD increases as the proportion of
 1's increases, until the proportion of 1's is 0.5; then it starts to
 decrease symmetrically.
 
-``` {.python}
+``` python
 zero_one_sds.scatter("Population Proportion of 1's")
 ```
 
@@ -168,7 +165,7 @@ zero_one_sds.scatter("Population Proportion of 1's")
 That's the value of the SD when 50% of the population is coded 1 and the
 other 50% are coded 0.
 
-### The Sample Size
+### The sample size
 
 We know that $$
 \sqrt{\mbox{sample size}} ~ \ge ~ 4 \times \frac{\mbox{SD of the 0-1 population}}{0.01}
@@ -182,4 +179,3 @@ $$
 So the sample size should be at least $200^2 = 40,000$. That's an
 enormous sample! But that's what you need if you want to guarantee great
 accuracy with high confidence no matter what the population looks like.
-
