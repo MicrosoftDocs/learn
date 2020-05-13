@@ -255,7 +255,7 @@ take" amounts more closely in later chapters.
 
 ## Check your knowledge
 
-For the knowledge check: Trace each of the iterations in the following for loop.
+Trace each of the iterations in the following for loop.
 ``` python 
 for count in make_array(1,2,3,7):
    if count % 2 == 0:
