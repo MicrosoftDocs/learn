@@ -411,8 +411,6 @@ The observed statistic is like a typical distance predicted by the
 model. By this measure, the data are consistent with the histogram that
 we generated under the assumptions of Mendel's model. This is evidence
 in favor of the model.
-umptions of Mendel's model. This is evidence
-in favor of the model.
 
 ## Learning objectives
 
