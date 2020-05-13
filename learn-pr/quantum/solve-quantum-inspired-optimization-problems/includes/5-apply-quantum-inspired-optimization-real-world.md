@@ -23,7 +23,7 @@ Ideally, we want a solution where the weight difference between the ships is as 
 
 This equation subtracts the sum of weights on ship _b_ from the sum of weights on ship _a_.
 
-The letter *H* is used to represent a cost function. This originates from the model we are using to define our optimization problem, known as the _Ising model_. In this model, the energy (which represents the cost) is given by a Hamiltonian, whose variables take the value of +1 or -1. Our goal is to map the optimization to this form.
+The letter *H* is used to represent a cost function. This notation originates from the model we are using to define our optimization problem, known as the _Ising model_. In this model, the energy (which represents the cost) is given by a Hamiltonian, whose variables take the value of +1 or -1. Our goal is to map the optimization to this form.
 
 ## Refine the problem
 
@@ -39,7 +39,7 @@ By introducing this variable *x<sub>i</sub>*, we can simplify the equation as fo
 
 There's one last change we need to make before we can solve our problem.
 
-If we look at our cost function *H*, there's a flaw: the solution with the least cost is to simply assign all containers to ship *b* by setting all of the *x<sub>i</sub>* variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
+If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign all containers to ship *b* by setting all of the *x<sub>i</sub>* variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
 
 ![Term](../media/example-4.png)
 
