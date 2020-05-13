@@ -275,6 +275,7 @@ educ_totals
 |College, less than 4-yr degree|7775497|
 |High school or equivalent|6294141|
 |No high school diploma|4258277|
+
 There are only four categories of educational attainment. The counts are
 so large that is is more helpful to look at percents. For this, we will
 use the function `percents` that we defined in an earlier section. It
@@ -323,6 +324,7 @@ totals
 |F: 35,000 to 49,999|1122791|1112421|782804|260579|
 |G: 50,000 to 74,999|1594681|883826|525517|132516|
 |H: 75,000 and over|2986698|748103|323192|58945|
+
 Here you see the power of `pivot` over other cross-classification
 methods. Each column of counts is a distribution of personal income at a
 specific level of educational attainment. Converting the counts to

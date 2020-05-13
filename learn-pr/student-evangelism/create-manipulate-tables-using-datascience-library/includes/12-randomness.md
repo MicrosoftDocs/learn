@@ -83,14 +83,14 @@ The value `True` indicates that the comparison is valid; Python has
 confirmed this simple fact about the relationship between `3` and `1+1`.
 The full set of common comparison operators are listed below.
 
-  Comparison           Operator   True example   False Example
-  -------------------- ---------- -------------- ---------------
-  Less than            \<         2 \< 3         2 \< 2
-  Greater than         \>         3 \> 2         3 \> 3
-  Less than or equal   \<=        2 \<= 2        3 \<= 2
-  Greater or equal     \>=        3 \>= 3        2 \>= 3
-  Equal                ==         3 == 3         3 == 2
-  Not equal            !=         3 != 2         2 != 2
+|Comparison|Operator|True example|False example|
+|--|--|--|--|
+|Less than|\<|2 \< 3|2 \< 2|
+|Greater than|\>|3 \> 2|3 \> 3|
+|Less than or equal|\<=|2 \<= 2|3 \<= 2|
+|Greater or equal|\>=|3 \>= 3|2 \>= 3|
+|Equal|==|3 == 3|3 == 2|
+|Not equal|!=|3 != 2|2 != 2|
 
 Notice the two equal signs `==` in the comparison to determine equality.
 This is necessary because Python already uses `=` to mean assignment to

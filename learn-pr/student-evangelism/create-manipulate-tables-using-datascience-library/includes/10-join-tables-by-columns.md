@@ -56,6 +56,7 @@ ratings
 |strawberry|2.5|
 |chocolate|3.5|
 |vanilla|4|
+
 Each of the tables has a column that contains ice cream flavors: `cones`
 has the column `Flavor`, and `ratings` has the column `Kind`. The
 entries in these columns can be used to link the two tables.
@@ -107,7 +108,8 @@ Though strawberry has the lowest rating among the three flavors, the
 less expensive strawberry cone does well on this measure because it
 doesn't cost a lot per star.
 
-**Side note.** Does the order we list the two tables matter? Let's try
+>[!NOTE]
+> Does the order we list the two tables matter? Let's try
 it. As you see it, this changes the order that the columns appear in,
 and can potentially changes the order of the rows, but it doesn't make
 any fundamental difference.
@@ -174,6 +176,7 @@ depends on the analysis we are trying to perform with the joined table.
 
 >[!IMPORTANT]
 >For the knowledge check: Data 8X has opened up a candy store where we sell small bags of candies in groups of different amounts. Each bag contains candies of one color. Each row is a bag of candies. Our table "candy" is as follows
+>
 >|Color|Amount|Price ($)|
 >|-|-|-|
 >|Red|4|1.30|

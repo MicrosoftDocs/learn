@@ -13,12 +13,12 @@ National Basketball Association players in 2015-2016.
 
 Each row represents one player. The columns are:
 
-  **Column Label**   Description
-  ------------------ ------------------------------------------------------
-  `PLAYER`           Player's name
-  `POSITION`         Player's position on team
-  `TEAM`             Team name
-  `'15-'16 SALARY`   Player's salary in 2015-2016, in millions of dollars
+| | |
+|-|-|
+|**PLAYER**| Player's name|
+|**POSITION**|Player's position on team|
+|**TEAM**|Team name|
+|**'15-'16 SALARY**|Player's salary in 2015-2016, in millions of dollars|
 
 The code for the positions is PG (Point Guard), SG (Shooting Guard), PF
 (Power Forward), SF (Small Forward), and C (Center). But what follows
@@ -162,53 +162,70 @@ or method.
 help(nba.sort)
 ```
 
-Help on method sort in module datascience.tables:
-
-sort(column\_or\_label, descending=False, distinct=False) method of
-datascience.tables.Table instance Return a Table of rows sorted
-according to the values in a column.
-
-Args: `column_or_label`: the column whose values are used for sorting.
-
-`descending`: if True, sorting will be in descending, rather than
-ascending order.
-
-`distinct`: if True, repeated values in `column_or_label` will be
-omitted.
-
-Returns: An instance of `Table` containing rows sorted based on the
-values in `column_or_label`.
-
-> > > marbles = Table().with\_columns( ... "Color", make\_array("Red",
-> > > "Green", "Blue", "Red", "Green", "Green"), ... "Shape",
-> > > make\_array("Round", "Rectangular", "Rectangular", "Round",
-> > > "Rectangular", "Round"), ... "Amount", make\_array(4, 6, 12, 7, 9,
-> > > 2), ... "Price", make\_array(1.30, 1.30, 2.00, 1.75, 1.40, 1.00))
-
-> > > marbles Color \| Shape \| Amount \| Price Red \| Round \| 4 \| 1.3
-> > > Green \| Rectangular \| 6 \| 1.3 Blue \| Rectangular \| 12 \| 2
-> > > Red \| Round \| 7 \| 1.75 Green \| Rectangular \| 9 \| 1.4 Green
-> > > \| Round \| 2 \| 1
-
-> > > marbles.sort("Amount") Color \| Shape \| Amount \| Price Green \|
-> > > Round \| 2 \| 1 Red \| Round \| 4 \| 1.3 Green \| Rectangular \| 6
-> > > \| 1.3 Red \| Round \| 7 \| 1.75 Green \| Rectangular \| 9 \| 1.4
-> > > Blue \| Rectangular \| 12 \| 2
-
-> > > marbles.sort("Amount", descending = True) Color \| Shape \| Amount
-> > > \| Price Blue \| Rectangular \| 12 \| 2 Green \| Rectangular \| 9
-> > > \| 1.4 Red \| Round \| 7 \| 1.75 Green \| Rectangular \| 6 \| 1.3
-> > > Red \| Round \| 4 \| 1.3 Green \| Round \| 2 \| 1
-
-> > > marbles.sort(3) \# the Price column Color \| Shape \| Amount \|
-> > > Price Green \| Round \| 2 \| 1 Red \| Round \| 4 \| 1.3 Green \|
-> > > Rectangular \| 6 \| 1.3 Green \| Rectangular \| 9 \| 1.4 Red \|
-> > > Round \| 7 \| 1.75 Blue \| Rectangular \| 12 \| 2
-
-> > > marbles.sort(3, distinct = True) Color \| Shape \| Amount \| Price
-> > > Green \| Round \| 2 \| 1 Red \| Round \| 4 \| 1.3 Green \|
-> > > Rectangular \| 9 \| 1.4 Red \| Round \| 7 \| 1.75 Blue \|
-> > > Rectangular \| 12 \| 2
+``` {}
+  Help on method sort in module datascience.tables:
+ 
+  sort(column_or_label, descending=False, distinct=False) method of datascience.tables.Table instance
+      Return a Table of rows sorted according to the values in a column.
+    
+    Args:
+        ``column_or_label``: the column whose values are used for sorting.
+    
+        ``descending``: if True, sorting will be in descending, rather than
+            ascending order.
+    
+        ``distinct``: if True, repeated values in ``column_or_label`` will
+            be omitted.
+    
+    Returns:
+        An instance of ``Table`` containing rows sorted based on the values
+        in ``column_or_label``.
+    
+    >>> marbles = Table().with_columns(
+    ...    "Color", make_array("Red", "Green", "Blue", "Red", "Green", "Green"),
+    ...    "Shape", make_array("Round", "Rectangular", "Rectangular", "Round","Rectangular", "Round"),
+    ...    "Amount", make_array(4, 6, 12, 7, 9, 2),
+    ...    "Price", make_array(1.30, 1.30, 2.00, 1.75, 1.40, 1.00))
+    >>> marbles
+    Color | Shape       | Amount | Price
+    Red   | Round       | 4      | 1.3
+    Green | Rectangular | 6      | 1.3
+    Blue  | Rectangular | 12     | 2
+    Red   | Round       | 7      | 1.75
+    Green | Rectangular | 9      | 1.4
+    Green | Round       | 2      | 1
+    >>> marbles.sort("Amount")
+    Color | Shape       | Amount | Price
+    Green | Round       | 2      | 1
+    Red   | Round       | 4      | 1.3
+    Green | Rectangular | 6      | 1.3
+    Red   | Round       | 7      | 1.75
+    Green | Rectangular | 9      | 1.4
+    Blue  | Rectangular | 12     | 2
+    >>> marbles.sort("Amount", descending = True)
+    Color | Shape       | Amount | Price
+    Blue  | Rectangular | 12     | 2
+    Green | Rectangular | 9      | 1.4
+    Red   | Round       | 7      | 1.75
+    Green | Rectangular | 6      | 1.3
+    Red   | Round       | 4      | 1.3
+    Green | Round       | 2      | 1
+    >>> marbles.sort(3) # the Price column
+    Color | Shape       | Amount | Price
+    Green | Round       | 2      | 1
+    Red   | Round       | 4      | 1.3
+    Green | Rectangular | 6      | 1.3
+    Green | Rectangular | 9      | 1.4
+    Red   | Round       | 7      | 1.75
+    Blue  | Rectangular | 12     | 2
+    >>> marbles.sort(3, distinct = True)
+    Color | Shape       | Amount | Price
+    Green | Round       | 2      | 1
+    Red   | Round       | 4      | 1.3
+    Green | Rectangular | 9      | 1.4
+    Red   | Round       | 7      | 1.75
+    Blue  | Rectangular | 12     | 2
+  ```
 
 At the very top of this `help` text, the *signature* of the `sort`
 method appears:

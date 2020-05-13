@@ -252,3 +252,12 @@ outcome_table.group('Outcome').barh(0)
 Not surprisingly, each of the three outcomes -1, 0, and 1 appeared about
 about 100 of the 300 times, give or take. We will examine the "give or
 take" amounts more closely in later chapters.
+
+>[!IMPORTANT]
+>For the knowledge check: Trace each of the iterations in the following for loop.
+>``` {.python} 
+>for count in make_array(1,2,3,7):
+>   if count % 2 == 0:
+>        print(“Even!”)
+>    else:
+>	print(“Odd!”)'

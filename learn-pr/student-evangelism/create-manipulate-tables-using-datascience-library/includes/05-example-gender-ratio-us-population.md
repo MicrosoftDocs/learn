@@ -169,6 +169,7 @@ infants
 |0|0|3949775|
 |1|0|2020326|
 |2|0|1929449|
+
 As before, we can convert these counts to percents out of the total
 numbers of infants. The resulting table shows that in 2014, just over
 51% of infants in the United States were male.
@@ -185,6 +186,7 @@ infants.with_column(
 |0|0|3949775|100.00%|
 |1|0|2020326|51.15%|
 |2|0|1929449|48.85%|
+
 In fact, it has long been observed that the proportion of boys among
 newborns is slightly more than 1/2. The reason for this is not
 thoroughly understood, and [scientists are still working on
@@ -346,6 +348,7 @@ ratios.where('AGE', are.above(75)).show()
 |98|3.41826|
 |99|3.63278|
 |100|4.25966|
+
 Not only are all of these ratios greater than 1, signifying more women
 than men in all of these age groups, many of them are considerably
 greater than 1.
@@ -366,6 +369,7 @@ males.where('AGE', are.between(98, 100))
 |--- |--- |--- |
 |1|98|13518|
 |1|99|8951|
+
 ``` {.python}
 females.where('AGE', are.between(98, 100))
 ```
@@ -374,6 +378,7 @@ females.where('AGE', are.between(98, 100))
 |--- |--- |--- |
 |2|98|46208|
 |2|99|32517|
+
 The graph below shows the gender ratios plotted against age. The blue
 curve shows the 2014 ratio by age.
 

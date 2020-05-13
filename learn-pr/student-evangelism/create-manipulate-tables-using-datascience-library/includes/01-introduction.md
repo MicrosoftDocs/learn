@@ -34,14 +34,6 @@ is usefully because it can be extended to contain new rows and columns.
 Table()
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
 The `with_columns` method on a table constructs a new table with
 additional labeled columns. Each column of a table is an array. To add
 one new column to a table, call `with_columns` with a label and an
@@ -135,6 +127,7 @@ minard
 |32|54.6|Smolensk|Retreat|24000|
 |30.4|54.4|Orscha|Retreat|20000|
 |26.8|54.3|Moiodexno|Retreat|12000|
+
 We will use this small table to demonstrate some useful Table methods.
 We will then use those same methods, and develop other methods, on much
 larger tables of data.
@@ -185,6 +178,7 @@ minard.relabeled('City', 'City Name')
 |32|54.6|Smolensk|Retreat|24000|
 |30.4|54.4|Orscha|Retreat|20000|
 |26.8|54.3|Moiodexno|Retreat|12000|
+
 However, this method does not change the original table.
 
 ``` {.python}
@@ -201,6 +195,7 @@ minard
 |32|54.6|Smolensk|Retreat|24000|
 |30.4|54.4|Orscha|Retreat|20000|
 |26.8|54.3|Moiodexno|Retreat|12000|
+
 A common pattern is to assign the original name `minard` to the new
 table, so that all future uses of `minard` will refer to the relabeled
 table.
@@ -220,6 +215,7 @@ minard
 |32|54.6|Smolensk|Retreat|24000|
 |30.4|54.4|Orscha|Retreat|20000|
 |26.8|54.3|Moiodexno|Retreat|12000|
+
 ### Accessing the Data in a Column
 
 We can use a column's label to access the array of data in the column.
@@ -319,6 +315,7 @@ minard.select('Longitude', 'Latitude')
 |32|54.6|
 |30.4|54.4|
 |26.8|54.3|
+
 The same selection can be made using column indices instead of labels.
 
 ``` {.python}
@@ -335,6 +332,7 @@ minard.select(0, 1)
 |32|54.6|
 |30.4|54.4|
 |26.8|54.3|
+
 The result of using `select` is a new table, even when you select just
 one column.
 
@@ -379,6 +377,7 @@ minard.drop('Longitude', 'Latitude', 'Direction')
 |Smolensk|24000|16.55%|
 |Orscha|20000|13.79%|
 |Moiodexno|12000|8.28%|
+
 Neither `select` nor `drop` change the original table. Instead, they
 create new smaller tables that share the same data. The fact that the
 original table is preserved is useful! You can generate multiple
@@ -402,7 +401,7 @@ minard
 
 All of the methods that we have used above can be applied to any table.
 
-# Learning Objectives
+## Learning Objectives
 
 - Tables as a fundamental object type used for representing data sets.
 - Make Tables in Python using the datascience Library.
