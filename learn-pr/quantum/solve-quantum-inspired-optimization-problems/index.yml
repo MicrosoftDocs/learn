@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.quantum.solve-quantum-inspired-optimization-problems
 metadata:
-  title: Solve optimization problems by using quantum-inspired optimization (QIO) - Learn
-  description: Learn how quantum-inspired algorithms solve difficult optimization problems.
+  title: Solve optimization problems by using quantum-inspired optimization - Learn
+  description: Learn how quantum-inspired algorithms mimic quantum physics to solve difficult optimization problems.
   ms.date: 05/19/2020
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Solve optimization problems by using quantum-inspired optimization (QIO)
-summary: Learn how quantum-inspired algorithms solve difficult optimization problems.
+title: Solve optimization problems by using quantum-inspired optimization
+summary: Learn how quantum-inspired algorithms mimic quantum physics to solve difficult optimization problems.
 abstract: |
   In this module, you'll:
 
