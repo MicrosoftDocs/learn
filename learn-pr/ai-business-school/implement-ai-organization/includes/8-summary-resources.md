@@ -18,7 +18,5 @@ Now that you have reviewed this module, you should be able to:
 ## References
 
 1. Clayton Christensen, "The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail," 1997. 
-1. Harvard Business Review, "Digital Transformation is Racing Ahead and No Industry is Immune," 2017 July 19. 
-1. Cindy Zanelli, "Anyone Can Innovate – 10 Years of Great Ideas," 2019 May 9. 
-1. Gartner, "Organizational Best Practices for Successful AI and ML Initiatives," Figure 2, 2020 February 18. 
+1. Harvard Business Review, "Digital Transformation is Racing Ahead and No Industry is Immune," 2017 July 19.
 1. Microsoft, "Spanish telco builds digital assistant based on natural language bot, engages customers on new level," 2019 June 11.

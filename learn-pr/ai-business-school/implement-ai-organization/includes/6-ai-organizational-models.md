@@ -32,7 +32,7 @@ As for the other leaders across an organization, there's no single model to foll
 This person is a business executive responsible for operations of a particular function, line of business, or process within an organization.
 
 * **Source ideas from all employees:** It's important to empower people from every department and level to contribute ideas, ask questions, and make suggestions related to AI. We've discovered that ideas for our most impactful application of AI have come from our employees within business functions, not from outside or above. See the first unit in this module for more information on this topic.
-* **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>5</sup> Ultimately, this increased customer loyalty and satisfaction.
+* **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>3</sup> Ultimately, this increased customer loyalty and satisfaction.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/implement-ai-organization-5.png" alt-text="Diagram showing AI-related roles.":::
