@@ -2,8 +2,8 @@ Imagine you're a software developer for an online retailer named eShopOnContaine
 
 This module explores completing the coupon service, adding it to the existing solution, and deploying it to the multi-container Kubernetes cluster. You'll use your own Azure subscription to deploy the resources in this module. To estimate the expected costs for these resources, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-aspnet-core-estimate?azure-portal=true) of the resources that you'll deploy.
 
-> [!WARNING]
-> Be sure to deprovision your Azure resources when you are done with this module to avoid unnecessary charges to your Azure subscription.
+> [!IMPORTANT]
+> Since you will be using your own Azure subscription, be sure to deprovision your Azure resources when you are done with this module to avoid unnecessary charges.
 
 ## Learning objectives
 
