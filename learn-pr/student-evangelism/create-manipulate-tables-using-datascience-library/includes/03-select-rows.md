@@ -13,7 +13,7 @@ nba = nba_salaries.relabeled("'15-'16 Salary", 'Salary')
 Often, we would like to extract just those rows that correspond to
 entries with a particular feature. For example, we might want only the
 rows corresponding to the Warriors, or to players who earned more than
-$\$10$ million. Or we might just want the top five earners.
+$10 million. Or we might just want the top five earners.
 
 ### Specified rows
 
@@ -89,7 +89,7 @@ nba.sort('Salary', descending=True).take(np.arange(5))
 
 More often, we will want to access data in a set of rows that have a
 certain feature, but whose indices we don't know ahead of time. For
-example, we might want data on all the players who made more than $\$10$
+example, we might want data on all the players who made more than $10
 million, but we don't want to spend time counting rows in the sorted
 table.
 
@@ -99,14 +99,14 @@ occurs.
 
 The first argument of `where` is the label of the column that contains
 the information about whether or not a row has the feature we want. If
-the feature is "made more than $\$10$ million", the column is `Salary`.
+the feature is "made more than $10 million", the column is `Salary`.
 
 The second argument of `where` is a way of specifying the feature. A
 couple of examples will make the general method of specification easier
 to understand.
 
 In the first example, we extract the data for all those who earned more
-than $\$10$ million.
+than $10 million.
 
 ``` python
 nba.where('Salary', are.above(10))
@@ -169,7 +169,7 @@ nba.where('Player', are.equal_to('Stephen Curry'))
 | Stephen Curry | PG       | Golden State Warriors | 11.3708 |
 
 
-Curry made just under $\$11.4$ million dollars. That's a lot of money,
+Curry made just under $11.4 million dollars. That's a lot of money,
 but it's less than half the salary of LeBron James. You'll find that
 salary in the "Top 5" table earlier in this section, or you could find
 it replacing `'Stephen Curry'` by `'LeBron James'` in the line of code
@@ -234,7 +234,7 @@ nba.where('Team', 'Denver Nuggets') # equivalent to nba.where('Team', are.equal_
 
 You can access rows that have multiple specified features, by using
 `where` repeatedly. For example, here is a way to extract all the Point
-Guards whose salaries were over $\$15$ million.
+Guards whose salaries were over $15 million.
 
 ``` python
 nba.where('Position', 'PG').where('Salary', are.above(15))
@@ -269,8 +269,8 @@ nba.where('Salary', are.between(10, 10.3))
 | DeMar DeRozan  | SG       | Toronto Raptors    | 10.05   |
 
 
-Notice that the table above includes Danny Green who made $\$10$
-million, but *not* Monta Ellis who made $\$10.3$ million. As elsewhere
+Notice that the table above includes Danny Green who made $10
+million, but *not* Monta Ellis who made $10.3 million. As elsewhere
 in Python, the range `between` includes the left end but not the right.
 
 If we specify a condition that isn't satisfied by any row, we get a
@@ -363,7 +363,7 @@ nba.where('Position', are.containing('G'))
 ... (171 rows omitted)
 
 You can get all the players who were not Cleveland Cavaliers and had a
-salary of no less than $\$20$ million:
+salary of no less than $20 million:
 
 ``` python
 other_than_Cavs = nba.where('Team', are.not_equal_to('Cleveland Cavaliers'))
