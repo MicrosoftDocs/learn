@@ -39,11 +39,11 @@ female. The columns are:
 |  |  |
 |--|--|
 |**Actor**|Name of actor|
-|**Total Gross**|Total gross domestic box office receipt, in millions of dollars, of all of the actor's movies|
+|**Total Gross**|Total gross domestic box office receipt, in USD millions, of all of the actor's movies|
 |**Number of Movies**|The number of movies the actor has been in|
 |**Average per Movie**|Total gross divided by number of movies|
 |**#1 movie**|The highest grossing movie the actor has been in|
-|**Gross**| Gross domestic box office receipt, in millions of dollars, of the actor's #1 Movie|
+|**Gross**| Gross domestic box office receipt, in USD millions, of the actor's #1 Movie|
 
 In the calculation of the gross receipt, the data tabulators did not
 include movies where an actor had a cameo role or a speaking role that
@@ -192,7 +192,7 @@ actors.where('Number of Movies', are.below(10))
 
 As an actor, Anthony Daniels might not have the stature of Robert
 DeNiro. But his seven movies had an astonishingly high average receipt of
-nearly $452$ million dollars per movie.
+nearly USD452 million per movie.
 
 What were these movies? You might know about the droid C-3PO in Star
 Wars:
@@ -219,14 +219,11 @@ Line graphs are among the most common visualizations and are often used
 to study chronological trends and patterns.
 
 The table `movies_by_year` contains data on movies produced by U.S.
-studios in each of the years 1980 through 2015. The columns are:
+studios in each of the years 1980 through 2015. The columns report this data for each year:
 
-| | |
-|-|-|
-|**Year**|Year|
-|**Total gross**|Total domestic box office gross, in millions of dollars, of all movies released|
-|**Number of movies**|Number of movies released|
-|**#1 Movie**|Highest grossing movie|
+- Total domestic box office gross, in millions of USD, of all movies released
+- Number of movies released
+- Highest grossing movie
 
 ``` python
 movies_by_year = Table.read_table(path_data + 'movies_by_year.csv')
@@ -281,7 +278,7 @@ century_21.plot('Year', 'Number of Movies')
 The global financial crisis of 2008 has a visible effect--in 2009
 there is a sharp drop in the number of movies released.
 
-The dollar figures, however, didn't suffer much.
+The USD figures, however, didn't suffer much.
 
 ``` python
 century_21.plot('Year', 'Total Gross')
