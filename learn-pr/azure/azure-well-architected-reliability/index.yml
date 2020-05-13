@@ -11,11 +11,13 @@ metadata:
 title: Microsoft Azure Well-Architected Framework - Reliability
 summary: Learn how to handle infrastructure and service failure, recover from the loss of data, and recover from a disaster by incorporating reliability into your architecture.
 abstract: |
-  In this module, you will:
-    - Leverage Azure services to design a highly available application
+  By the end of this module, you will be able to:
+    - Design a highly available application by leveraging Azure services
     - Incorporate Azure disaster recovery capabilities into your architecture
-    - Backup and restore on Azure to protect your application from data loss or corruption
-prerequisites: None
+    - Protect your application from data loss or corruption
+prerequisites: |
+  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
+  - Experience building or operating technology systems to solve business problems
 iconUrl: /learn/achievements/azure-well-architected-reliability.svg
 levels:
 - intermediate

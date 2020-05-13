@@ -4,9 +4,13 @@ The concepts discussed in this module are not all-inclusive, but they represent 
 
 ## Learning objectives
 
-In this module, you will:
+By the end of this module, you will be able to:
 
-- Identify the benefits of a cloud operating model
+- Use monitoring and analytics to gain cost insights
 - Maximize the efficiency of your cloud environment
-- Learn how to use monitoring and analytics to gain cost insights
-- Identify ways to provision resources that are optimized for cost
+- Provision resources that are optimized for cost
+
+## Prerequisites
+
+- Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
+- Experience building or operating technology systems to solve business problems

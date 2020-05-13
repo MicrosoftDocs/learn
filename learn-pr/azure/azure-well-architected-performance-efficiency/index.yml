@@ -11,11 +11,14 @@ metadata:
 title: Microsoft Azure Well-Architected Framework - Performance efficiency
 summary: Scaling your system to handle load, identifying network bottlenecks, and optimizing your storage performance are important to ensure your users have the best experience. Learn how to make your application perform at its best.
 abstract:  | 
-  In this module, you'll learn how to:
-  - Adjust your capacity based on workload by scaling up and scaling out
+  By the end of this module, you will be able to:
+  - Scale your capacity based on workload
   - Optimize network performance
   - Optimize storage and database performance
-prerequisites: None
+  - Improve application performance by identifying bottlenecks
+prerequisites: |
+  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
+  - Experience building or operating technology systems to solve business problems
 iconUrl: /learn/achievements/azure-well-architected-performance-efficiency.svg
 levels:
 - intermediate

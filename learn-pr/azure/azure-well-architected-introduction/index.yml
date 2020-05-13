@@ -11,10 +11,12 @@ metadata:
 title: Introduction to the Microsoft Azure Well-Architected Framework
 summary: You want to build great things on Azure, but you’re not sure exactly what that means. Using key principles throughout your architecture regardless of technology choice, can help you design, build, and continuously improve your architecture.
 abstract: |
-  In this module, you will:
+  By the end of this module, you will be able to:
     - Describe the pillars of the Azure Well-Architected Framework
-    - Apply key principles for creating a solid architectural foundation
-prerequisites: None
+    - Identify key principles for creating a solid architectural foundation
+prerequisites: |
+  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
+  - Experience building or operating technology systems to solve business problems
 iconUrl: /learn/achievements/azure-well-architected-introduction.svg
 levels:
 - beginner

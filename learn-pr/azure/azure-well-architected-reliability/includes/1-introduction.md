@@ -4,12 +4,13 @@ The concepts discussed in this module are not all-inclusive, but represent some 
 
 ## Learning objectives
 
-In this module, you will:
+By the end of this module, you will be able to:
 
-- Leverage Azure services to design a highly available application
+- Design a highly available application by leveraging Azure services
 - Incorporate Azure disaster recovery capabilities into your architecture
-- Backup and restore on Azure to protect your application from data loss or corruption
+- Protect your application from data loss or corruption
 
 ## Prerequisites
 
-None
+- Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
+- Experience building or operating technology systems to solve business problems
