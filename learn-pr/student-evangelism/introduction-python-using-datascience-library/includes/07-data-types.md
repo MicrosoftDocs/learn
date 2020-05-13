@@ -6,7 +6,7 @@ indicates that the type is a `builtin_function_or_method`; the
 distinction between a *function* and a *method* is not important at this
 stage.
 
-``` {.python}
+``` python
 type(abs)
 ```
 

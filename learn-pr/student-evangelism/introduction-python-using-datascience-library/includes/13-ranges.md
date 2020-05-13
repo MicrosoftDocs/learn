@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 import numpy as np
 path_data = '../../../../data/'
 ```
@@ -21,7 +21,7 @@ A range always includes its `start` value, but does not include its
 
     np.arange(end): An array starting with 0 of increasing consecutive integers, stopping before end.
 
-``` {.python}
+``` python
 np.arange(5)
 ```
 
@@ -32,7 +32,7 @@ value of 5.
 
     np.arange(start, end): An array of consecutive increasing integers from start, stopping before end.
 
-``` {.python}
+``` python
 np.arange(3, 9)
 ```
 
@@ -43,7 +43,7 @@ np.arange(3, 9)
 
     np.arange(start, end, step): A range with a difference of step between each pair of consecutive values, starting from start and stopping before end.
 
-``` {.python}
+``` python
 np.arange(3, 30, 5)
 ```
 
@@ -55,7 +55,7 @@ step of 5 to get to 13, and so on.
 When you specify a step, the start, end, and step can all be either
 positive or negative and may be whole numbers or fractions.
 
-``` {.python}
+``` python
 np.arange(1.5, -2, -0.5)
 ```
 
@@ -85,7 +85,7 @@ and then subtracting the sum of all the negative terms
 The positive terms in the sum have 1, 5, 9, and so on in the
 denominators. The array `by_four_to_20` contains these numbers up to 17:
 
-``` {.python}
+``` python
 by_four_to_20 = np.arange(1, 20, 4)
 by_four_to_20
 ```
@@ -95,7 +95,7 @@ by_four_to_20
 To get an accurate approximation to $\pi$, we'll use the much longer
 array `positive_term_denominators`.
 
-``` {.python}
+``` python
 positive_term_denominators = np.arange(1, 10000, 4)
 positive_term_denominators
 ```
@@ -105,20 +105,20 @@ positive_term_denominators
 The positive terms we actually want to add together are just 1 over
 these denominators:
 
-``` {.python}
+``` python
 positive_terms = 1 / positive_term_denominators
 ```
 
 The negative terms have 3, 7, 11, and so on on in their denominators.
 This array is just 2 added to `positive_term_denominators`.
 
-``` {.python}
+``` python
 negative_terms = 1 / (positive_term_denominators + 2)
 ```
 
 The overall sum is
 
-``` {.python}
+``` python
 4 * ( sum(positive_terms) - sum(negative_terms) )
 ```
 
@@ -133,7 +133,7 @@ add *infinitely* many fractions, the order can matter! But our
 approximation to $\pi$ uses only a large finite number of fractions, so
 it's okay to add the terms in any convenient order.
 
-``` {.python}
+``` python
 from datascience import *
 import numpy as np
 path_data = '../../../../data/'
@@ -152,7 +152,7 @@ and
 [low](http://berkeleyearth.lbl.gov/auto/Regional/TMIN/Text/global-land-TMIN-Trend.txt)
 temperatures for the decades surrounding 1850, 1900, 1950, and 2000.
 
-``` {.python}
+``` python
 baseline_high = 14.48
 highs = make_array(baseline_high - 0.880, 
                    baseline_high - 0.093,
@@ -163,7 +163,7 @@ highs
 
     array([ 13.6  ,  14.387,  14.585,  15.164])
 
-``` {.python}
+``` python
 baseline_low = 3.00
 lows = make_array(baseline_low - 0.872, baseline_low - 0.629,
                   baseline_low - 0.126, baseline_low + 0.728)
@@ -179,7 +179,7 @@ other decade.
 
 We could write this laboriously using `.item`:
 
-``` {.python}
+``` python
 make_array(
     highs.item(0) - lows.item(0),
     highs.item(1) - lows.item(1),
@@ -193,7 +193,7 @@ make_array(
 As when we converted an array of temperatures from Celsius to
 Fahrenheit, Python provides a much cleaner way to write this:
 
-``` {.python}
+``` python
 highs - lows
 ```
 
@@ -244,7 +244,7 @@ even numbers 2, 4, 6, and so on upto 1,000,000. Then we create two lists
 of odd numbers: 1, 3, 5, 7, ... upto 999,999, and 3, 5, 7, ... upto
 1,000,001.
 
-``` {.python}
+``` python
 even = np.arange(2, 1000001, 2)
 one_below_even = even - 1
 one_above_even = even + 1
@@ -253,7 +253,7 @@ one_above_even = even + 1
 Remember that `np.prod` multiplies all the elements of an array
 together. Now we can calculate Wallis' product, to a good approximation.
 
-``` {.python}
+``` python
 2 * np.prod(even/one_below_even) * np.prod(even/one_above_even)
 ```
 

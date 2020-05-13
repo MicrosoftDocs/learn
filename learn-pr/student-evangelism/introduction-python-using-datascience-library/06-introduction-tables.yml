@@ -19,10 +19,10 @@ quiz:
       choices:
         - content: 'top_50_songs.where(num_plays > 1000000)'
           isCorrect: false
-          explanation: "Incorrect.The column name should be in quotes and tbl.where should be used with an are. function or an array of True anf Falses"
+          explanation: "Incorrect.The column name should be in quotes and tbl.where should be used with an are. function or an array of True and Falses"
         - content: 'top_50_songs.where("num_plays" > 1000000)'
           isCorrect: false
-          explanation: "Incorrect. tbl.where should be used with an are. function or an array of True anf Falses"
+          explanation: "Incorrect. tbl.where should be used with an are. function or an array of True and Falses"
         - content: 'top_50_songs.where(top_50_songs.column("num_plays") > 1000000)'
           isCorrect: true
           explanation: "Correct."
@@ -47,7 +47,7 @@ quiz:
       choices:
         - content: 'top_50_songs.where("artist_name" == "Taylor Swift")'
           isCorrect: true
-          explanation: 'Correct. tbl.where needed two arguments or an array only tontaining True and Falses. This syntax is neither, so it will result in an error.'
+          explanation: 'Correct. tbl.where needed two arguments or an array only containing True and Falses. This syntax is neither, so it will result in an error.'
         - content: 'top_50_songs.where("artist_name", "Taylor Swift")'
           isCorrect: false
           explanation: 'Incorrect. are.equal_to() is used by default by tbl.where when there is a second argument, so this syntax will return the correct table as well.'

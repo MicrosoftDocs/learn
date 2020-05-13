@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../../data/'
@@ -28,7 +28,7 @@ details.
 The table `cones` has been imported for us; later we will see how, but
 here we will just work with it. First, let's take a look at it.
 
-``` {.python}
+``` python
 cones
 ```
 
@@ -57,7 +57,7 @@ So the call looks like
 For example, if you want to see just the first two rows of a table, you
 can use the table method `show`.
 
-``` {.python}
+``` python
 cones.show(2)
 ```
 |Flavor|Color|Price|
@@ -75,7 +75,7 @@ you will only get six, because `cones` only has six rows.
 The method `select` creates a new table consisting of only the specified
 columns.
 
-``` {.python}
+``` python
 cones.select('Flavor')
 ```
 |Flavor|
@@ -89,7 +89,7 @@ cones.select('Flavor')
 
 This leaves the original table unchanged.
 
-``` {.python}
+``` python
 cones
 ```
 
@@ -106,7 +106,7 @@ cones
 You can select more than one column, by separating the column labels by
 commas.
 
-``` {.python}
+``` python
 cones.select('Flavor', 'Price')
 ```
 
@@ -122,7 +122,7 @@ cones.select('Flavor', 'Price')
 You can also *drop* columns you don't want. The table above can be
 created by dropping the `Color` column.
 
-``` {.python}
+``` python
 cones.drop('Color')
 ```
 
@@ -138,7 +138,7 @@ cones.drop('Color')
 You can name this new table and look at it again by just typing its
 name.
 
-``` {.python}
+``` python
 no_colors = cones.drop('Color')
 
 no_colors
@@ -165,7 +165,7 @@ original table in ascending order of the values in the specified column.
 Here the `cones` table has been sorted in ascending order of the price
 of the cones.
 
-``` {.python}
+``` python
 cones.sort('Price')
 ```
 
@@ -188,7 +188,7 @@ By default, `sort` sorts in increasing order of the values in the
 specified column. To sort in decreasing order, use the optional argument
 `descending=True`.
 
-``` {.python}
+``` python
 cones.sort('Price', descending=True)
 ```
 
@@ -215,15 +215,15 @@ arguments.
 The code in the cell below creates a table consisting only of the rows
 corresponding to chocolate cones.
 
-``` {.python}
+``` python
 cones.where('Flavor', 'chocolate')
 ```
 
-|Flavor|Color|Price|
-|--- |--- |--- |
-|chocolate|light brown|4.75|
-|chocolate|dark brown|5.25|
-|chocolate|dark brown|5.25|
+|Flavor   |Color      |Price|
+|---      |---        |---  |
+|chocolate|light brown|4.75 |
+|chocolate|dark brown |5.25 |
+|chocolate|dark brown |5.25 |
 
 The arguments, separated by a comma, are the label of the column and the
 value we are looking for in that column. The `where` method can also be
@@ -234,12 +234,13 @@ It is important to provide the value exactly. For example, if we specify
 `Chocolate` instead of `chocolate`, then `where` correctly finds no rows
 where the flavor is `Chocolate`.
 
-``` {.python}
+``` python
 cones.where('Flavor', 'Chocolate')
 ```
 
 | Flavor | Color | Price |
 |--------|-------|-------|
+|        |       |       |
 
 Like all the other table methods in this section, `where` leaves the
 original table unchanged.
@@ -256,12 +257,12 @@ players](https://www.statcrunch.com/app/index.php?dataid=1843341) in
 
 Each row represents one player. The columns are:
 
-  **Column Label**   Description
-  ------------------ ------------------------------------------------------
-  `PLAYER`           Player's name
-  `POSITION`         Player's position on team
-  `TEAM`             Team name
-  `SALARY`           Player's salary in 2015-2016, in millions of dollars
+|          |                                                      |
+|----------|------------------------------------------------------|
+| PLAYER   | Player's name                                        |
+| POSITION | Player's position on team                            |
+| TEAM     | Team name                                            |
+| SALARY   | Player's salary in 2015-2016, in millions of dollars |
 
 The code for the positions is PG (Point Guard), SG (Shooting Guard), PF
 (Power Forward), SF (Small Forward), and C (Center). But what follows
@@ -270,27 +271,28 @@ doesn't involve details about how basketball is played.
 The first row shows that Paul Millsap, Power Forward for the Atlanta
 Hawks, had a salary of almost $\$18.7$ million in 2015-2016.
 
-``` {.python}
+``` python
 nba
 ```
 
-|PLAYER|POSITION|TEAM|SALARY|
-|--- |--- |--- |--- |
-|Paul Millsap|PF|Atlanta Hawks|18.6717|
-|Al Horford|C|Atlanta Hawks|12|
-|Tiago Splitter|C|Atlanta Hawks|9.75625|
-|Jeff Teague|PG|Atlanta Hawks|8|
-|Kyle Korver|SG|Atlanta Hawks|5.74648|
-|Thabo Sefolosha|SF|Atlanta Hawks|4|
-|Mike Scott|PF|Atlanta Hawks|3.33333|
-|Kent Bazemore|SF|Atlanta Hawks|2|
-|Dennis Schroder|PG|Atlanta Hawks|1.7634|
-|Tim Hardaway Jr.|SG|Atlanta Hawks|1.30452|
+|PLAYER          |POSITION|TEAM         |SALARY |
+|----------------|--------|-------------|---    |
+|Paul Millsap    |PF      |Atlanta Hawks|18.6717|
+|Al Horford      |C       |Atlanta Hawks|12     |
+|Tiago Splitter  |C       |Atlanta Hawks|9.75625|
+|Jeff Teague     |PG      |Atlanta Hawks|8      |
+|Kyle Korver     |SG      |Atlanta Hawks|5.74648|
+|Thabo Sefolosha |SF      |Atlanta Hawks|4      |
+|Mike Scott      |PF      |Atlanta Hawks|3.33333|
+|Kent Bazemore   |SF      |Atlanta Hawks|2      |
+|Dennis Schroder |PG      |Atlanta Hawks|1.7634 |
+|Tim Hardaway Jr.|SG      |Atlanta Hawks|1.30452|
+
 ... (407 rows omitted)
 
 Fans of Stephen Curry can find his row by using `where`.
 
-``` {.python}
+``` python
 nba.where('PLAYER', 'Stephen Curry')
 ```
 
@@ -301,7 +303,7 @@ nba.where('PLAYER', 'Stephen Curry')
 We can also create a new table called `warriors` consisting of just the
 data for the Golden State Warriors.
 
-``` {.python}
+``` python
 warriors = nba.where('TEAM', 'Golden State Warriors')
 warriors
 ```
@@ -324,7 +326,7 @@ By default, the first 10 lines of a table are displayed. You can use
 `show` to display more or fewer. To display the entire table, use `show`
 with no argument in the parentheses.
 
-``` {.python}
+``` python
 warriors.show()
 ```
 
@@ -350,7 +352,7 @@ see how the players were paid in 2015-2016, it is useful to sort the
 data by salary. Remember that by default, the sorting is in increasing
 order.
 
-``` {.python}
+``` python
 nba.sort('SALARY')
 ```
 
@@ -377,7 +379,7 @@ The CNN report is about the other end of the salary scale -- the players
 who are among the highest paid in the world. To identify these players
 we can sort in descending order of salary and look at the top few rows.
 
-``` {.python}
+``` python
 nba.sort('SALARY', descending=True)
 ```
 
