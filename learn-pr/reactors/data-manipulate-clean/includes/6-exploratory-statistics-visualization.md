@@ -1,8 +1,8 @@
 An old joke goes: “What does a data scientist see when they look at a dataset? A bunch of numbers.” There is more than a little truth in that joke. Visualization often is the key to finding patterns and correlations in your data. Although a visualization often can't deliver precise results, it can point you in the right direction to ask better questions and efficiently find value in the data.
 
-Often when probing a new dataset, it's invaluable to get high-level information about what the dataset holds. Earlier in this module, we discussed using methods like `DataFrame.info`, `DataFrame.head`, and `DataFrame.tail` to examine some aspects of a DataFrame. Although these methods are critical, on their own they often are insufficient to get enough information to know how to approach a new dataset. This is where exploratory statistics and visualizations for datasets come in.
+Often when probing a new dataset, you'll find it valuable to get high-level information about what the dataset holds. Earlier in this module, we discussed using methods like `DataFrame.info`, `DataFrame.head`, and `DataFrame.tail` to examine some aspects of a `DataFrame`. Although these methods are critical, on their own they often are insufficient to produce enough information for you to know how to approach a new dataset. This is where exploratory statistics and visualizations for datasets come in.
 
-To see what we mean in terms of gaining exploratory insight—both visually and numerically—let's dig into one of the datasets that come with the scikit-learn library, the Boston Housing Dataset. First, load the dataset from a CSV file:
+To see what we mean in terms of gaining exploratory insight, both visually and numerically, let's dig into one of the datasets that comes with the scikit-learn library, the Boston Housing Dataset. First, load the dataset from a CSV file:
 
 ```python
 df = pd.read_csv('Data/housing_dataset.csv')
@@ -11,25 +11,25 @@ df.head()
 
 Here's what is returned:
 
-![A screenshot that shows the output of running df.head()](../media/df-head.png)
+![Screenshot that shows the output of running df.head()](../media/df-head.png)
 
 This dataset contains information that was collected from the U.S Census Bureau about housing in the area of Boston, Massachusetts. The dataset was first published in 1978. The dataset has 14 columns:
 
-* **`CRIM`**: Per-capita crime rate by town
-* **`ZN`**: Proportion of residential land zoned for lots larger than 25,000 square feet
-* **`INDUS`**: Proportion of non-retail business acres per town
-* **`CHAS`**: Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+* **`CRIM`**: The per-capita crime rate by town
+* **`ZN`**: The proportion of residential land zoned for lots larger than 25,000 square feet
+* **`INDUS`**: The proportion of non-retail business acres per town
+* **`CHAS`**: The Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
 * **`NOX`**: Nitric oxides concentration (parts per 10 million)
-* **`RM`**: Average number of rooms per dwelling
-* **`AGE`**: Proportion of owner-occupied units built before 1940
+* **`RM`**: The average number of rooms per dwelling
+* **`AGE`**: The proportion of owner-occupied units built before 1940
 * **`DIS`**: Weighted distances to five Boston employment centers
 * **`RAD`**: Index of accessibility to radial highways
-* **`TAX`**: Full-value property tax rate per \$10,000
-* **`PTRATIO`**: Pupil-teacher ratio by town
-* **`LSTAT`**: Percent of lower-status portion of the population
-* **`MEDV`**: Median value of owner-occupied homes in \$1,000s
+* **`TAX`**: The full-value property tax rate per \$10,000
+* **`PTRATIO`**: The pupil-teacher ratio by town
+* **`LSTAT`**: The percent of the lower-status portion of the population
+* **`MEDV`**: The median value of owner-occupied homes in \$1,000s
 
-One of the first methods we can use to better understand this dataset is `DataFrame.shape`. 
+One of the first methods you can use to better understand this dataset is `DataFrame.shape`. 
 
 To find out how many rows and columns the dataset contains, run this command:
 
@@ -45,7 +45,7 @@ Here's the output:
 
 The dataset has 506 rows and 13 columns.
 
-To get a better idea of the contents of each column, we can use `DataFrame.describe`. `DataFrame.describe` returns the maximum value, minimum value, mean, and standard deviation of numeric values in each column, and the quartiles for each column:
+To get a better idea of the contents of each column, we can use `DataFrame.describe`. `DataFrame.describe` returns the maximum value, minimum value, mean, and standard deviation of numeric values in each column, and the quartiles for each column.
 
 ```python
 df.describe()
@@ -53,11 +53,11 @@ df.describe()
 
 Here's the output, which shows all the values:
 
-![A screenshot that shows the output of running df.describe()](../media/df-describe.png)
+![Screenshot that shows the output of running df.describe()](../media/df-describe.png)
 
 Because a dataset can have only so many columns, often it can be useful to transpose the results of `DataFrame.describe` to use them better.
 
-Note that you can also examine specific descriptive statistics for columns without invoking `DataFrame.describe`.
+Note that you can also examine specific descriptive statistics for columns, without invoking `DataFrame.describe`.
 
 To get the mean of the median value of owner-occupied homes in the dataset (in $1,000s), run this command:
 
@@ -93,7 +93,7 @@ Next, to get the median of `AGE`, the proportion of owner-occupied units built b
 df['AGE'].median()
 ```
 
-The output shows that 77.5% is the median of `AGE`:
+The output shows that 77.5 percent is the median of `AGE`:
 
 ```Output
 77.5
@@ -122,7 +122,7 @@ Now, find the maximum value in `df['AGE']`.
 
 ***
 
-Other information that you often will want to see is the relationship between different columns. To do this, use the `DataFrame.groupby` method. For example, you could examine the average `MEDV` (median value of owner-occupied homes) for each value of `AGE` (proportion of owner-occupied units built prior to 1940):
+Other information that you'll often want to see is the relationship between different columns. To do this, use the `DataFrame.groupby` method. For example, you might examine the average `MEDV` (median value of owner-occupied homes) for each value of `AGE` (proportion of owner-occupied units built prior to 1940):
 
 ```python
 df.groupby(['AGE'])['MEDV'].mean()
@@ -281,13 +281,13 @@ Now try to find the median value for `AGE` for each value of `MEDV`.
 
 ***
 
-You can also apply a lambda function to each element of a DataFrame column by using the `apply` method. For example, say you wanted to create a new column that flagged a row if more than 50 percent of owner-occupied homes were build before 1940:
+You can also apply a `lambda` function to each element of a `DataFrame` column by using the `apply` method. For example, say you wanted to create a new column that flagged a row if more than 50 percent of owner-occupied homes were built before 1940:
 
 ```python
 df['AGE_50'] = df['AGE'].apply(lambda x: x>50)
 ```
 
-Once applied, you also can see how many values returned `true` and how many `false` by using the `value_counts` method:
+When this is applied, you also can see how many values returned `true` and how many `false` by using the `value_counts` method:
 
 ```python
 df['AGE_50'].value_counts()
@@ -301,7 +301,7 @@ False    147
 Name: AGE_50, dtype: int64
 ```
 
-You can also examine figures from the `groupby` statement you created earlier:
+You can also examine figures from the `groupby` statement that you created earlier:
 
 ```python
 df.groupby(['AGE_50'])['MEDV'].mean()
@@ -316,7 +316,7 @@ True     20.829248
 Name: MEDV, dtype: float64
 ```
 
-You can also group by more than one variable, such as `AGE_50` (the one you just created), `CHAS` (whether a town is on the Charles River), and `RAD` (an index that measures access to the Boston-area radial highways), and then evaluate each group for the average median home price in that group:
+You can also group by more than one variable, such as `AGE_50` (the one you just created), `CHAS` (whether a town is on the Charles River), and `RAD` (an index that measures access to the Boston-area radial highways). Then you can evaluate each group for the average median home price in that group:
 
 ```python
 groupby_twovar=df.groupby(['AGE_50','RAD','CHAS'])['MEDV'].mean()
@@ -361,9 +361,15 @@ True    1.0   0.0     20.185714
 Name: MEDV, dtype: float64
 ```
 
-Let's take a moment to analyze these results in more depth. The first row reports that communities with less than half of houses built before 1940, with a highway-access index of 1, and that are not situated on the Charles River have a mean house price of $24,667 (1970s dollars). The next row shows that communities that are similar to the first row, except for being located on the Charles River, have a mean house price of $50,000.
+Let's take a moment to analyze these results in more depth. The first row reports that communities with the following characteristics have a mean house price of $24,667 (1970s dollars):
 
-One insight that pops out from continuing down this is that, all else being equal, being located next to the Charles River can significantly increase the value of newer housing stock. The story is more ambiguous for communities dominated by older houses: proximity to the Charles significantly increases home prices in one community (and that one presumably farther away from the city). For all others, being situated on the river either provided a modest increase in value or actually decreased mean home prices.
+- Less than half of houses built before 1940
+- A highway-access index of 1
+- Not situated on the Charles River
+
+The next row shows that communities that are similar to the first row, except for being located on the Charles River, have a mean house price of $50,000.
+
+One insight that seems clear from the data is that, all else being equal, being located next to the Charles River can significantly increase the value of newer housing stock. The story is more ambiguous for communities dominated by older houses: proximity to the Charles significantly increases home prices in one community (and that one presumably farther away from the city). For all others, being situated on the river either provided a modest increase in value or actually decreased mean home prices.
 
 Although groupings like this can be a great way to begin to interrogate your data, you might not care for the tall format it comes in. In that case, you can unstack the data into a wide format:
 
@@ -373,7 +379,7 @@ groupby_twovar.unstack()
 
 Here's the output:
 
-![A screenshot that shows the output of running groupby_twovar](../media/groupby-twovar.png)
+![Screenshot that shows the output of running groupby_twovar](../media/groupby-twovar.png)
 
 It's often valuable to know how many unique values a column has in it by using the `nunique` method:
 
@@ -387,7 +393,7 @@ Here's the output:
 2
 ```
 
-Complementary to that, you also likely will want to know what those unique values are, which is where the `unique` method helps:
+Complementary to that, you also likely will want to know what those unique values are. This is where the `unique` method helps:
 
 ```python
 df['CHAS'].unique()
@@ -413,7 +419,7 @@ Here's the output:
 Name: CHAS, dtype: int64
 ```
 
-Or you can easily plot a bar graph to visually see the breakdown:
+Or you can easily plot a bar graph to see the breakdown:
 
 ```python
 df['CHAS'
@@ -427,12 +433,12 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x12cddbed0>
 ```
 
-![A screenshot that shows the output of running df with CHAS and plot](../media/df-chas-plot.png)
+![Screenshot that shows the output of running df with CHAS and plot](../media/df-chas-plot.png)
 
 > [!NOTE]
 > The IPython magic command `%matplotlib inline` enables you to view the chart inline.
 
-Let's pull back from the dataset as a whole for a moment. Two major things that you will look for in almost any dataset are trends and relationships. A typical relationship between variables to explore is the Pearson correlation, or the extent to which two variables are linearly related. The `corr` method will show this in table format for all of the columns in a DataFrame:
+Let's pull back from the dataset as a whole for a moment. Two major things that you'll look for in almost any dataset are trends and relationships. A typical relationship between variables to explore is the Pearson correlation, or the extent to which two variables are linearly related. The `corr` method shows this in table format for all of the columns in a `DataFrame`:
 
 ```python
 df.corr(method='pearson')
@@ -440,9 +446,9 @@ df.corr(method='pearson')
 
 Here's the output:
 
-![A screenshot that shows the output of running df.corr with the person method](../media/df-corr-pearson.png)
+![Screenshot that shows the output of running df.corr with the person method](../media/df-corr-pearson.png)
 
-Suppose you want to look only at the correlations between all the columns and one variable? Let's examine only the correlation between all other variables and the percentage of owner-occupied houses build before 1940 (`AGE`). We will do this by accessing the column by index number:
+Suppose you want to look only at the correlations between all the columns and one variable? Let's examine only the correlation between all other variables and the percentage of owner-occupied houses build before 1940 (`AGE`). Do this by accessing the column by index number:
 
 ```python
 corr = df.corr(method='pearson')
@@ -470,9 +476,9 @@ DIS       -0.673813
 Name: AGE_50, dtype: float64
 ```
 
-With the correlations arranged in descending order, it's easy to start to see some patterns. Correlating `AGE` with a variable we created from `AGE` is a trivial correlation. However, it is interesting to note that the percentage of older housing stock in communities strongly correlates with air pollution (`NOX`) and the proportion of non-retail business acres per town (`INDUS`). This tells us that, at least in 1978 metro Boston, older towns are more industrial.
+With the correlations arranged in descending order, it's easy to start to see some patterns. Correlating `AGE` with a variable you created from `AGE` is a trivial correlation. However, it's interesting to note that the percentage of older housing stock in communities strongly correlates with air pollution (`NOX`) and the proportion of non-retail business acres per town (`INDUS`). This tells us that, at least in 1978 metro Boston, older towns are more industrial.
 
-Graphically, we can see the correlations by using a heatmap from the Seaborn library:
+Graphically, you can see the correlations by using a heatmap from the Seaborn library:
 
 ```python
 import seaborn as sns
@@ -485,7 +491,7 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x12e168ad0>
 ```
 
-![A screenshot that shows the output of running sns.heatmap](../media/sns-heatmap.png)
+![Screenshot that shows the output of running sns.heatmap](../media/sns-heatmap.png)
 
 Histograms are another valuable tool for investigating your data. For example, what is the overall distribution of prices of owner-occupied houses in the Boston area?
 
@@ -502,9 +508,9 @@ Here's the output:
  <a list of 10 Patch objects>)
 ```
 
-![A screenshot that shows the output of running plt-hist](../media/plt-hist.png)
+![Screenshot that shows the output of running plt-hist](../media/plt-hist.png)
 
-The default bin size for the matplotlib histogram (essentially big of buckets of percentages that you include in each histogram bar in this case) is pretty large and might mask smaller details. To get a finer-grained view of the AGE column, you can manually increase the number of bins in the histogram:
+The default bin size for the matplotlib histogram (essentially buckets of percentages that you include in each histogram bar in this case) is pretty large, and might mask smaller details. To get a finer-grained view of the `AGE` column, you can manually increase the number of bins in the histogram:
 
 ```python
 plt.hist(df['MEDV'],bins=50)
@@ -525,7 +531,7 @@ Here's the output:
  <a list of 50 Patch objects>)
 ```
 
-![A screenshot that shows the output of running plt-hist with the number of bins increased to 50](../media/plt-hist-bin-50.png)
+![Screenshot that shows the output of running plt-hist with the number of bins increased to 50](../media/plt-hist-bin-50.png)
 
 Seaborn has a somewhat more attractive version of the standard matplotlib histogram: the distribution plot. This is a combination histogram and kernel density estimate (KDE) plot (essentially a smoothed histogram):
 
@@ -539,9 +545,9 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x12dde6bd0>
 ```
 
-![A screenshot that shows the output of running sns.distplot](../media/sns-distplot.png)
+![Screenshot that shows the output of running sns.distplot](../media/sns-distplot.png)
 
-Another commonly used plot is the Seaborn `jointplot`, which combines histograms for two columns along with a scatterplot:
+Another commonly used plot is the Seaborn `jointplot`, which combines histograms for two columns, along with a scatterplot:
 
 ```python
 sns.jointplot(df['RM'], df['MEDV'], kind='scatter')
@@ -553,9 +559,9 @@ Here's the output:
 <seaborn.axisgrid.JointGrid at 0x12e0f35d0>
 ```
 
-![A screenshot that shows the output of running sns.jointplot](../media/sns-jointplot.png)
+![Screenshot that shows the output of running sns.jointplot](../media/sns-jointplot.png)
 
-Unfortunately, many of the dots print over each other. You can help address this by adding some alpha blending, a figure that sets the transparency for the dots so that concentrations of them drawing over one another will be apparent:
+Unfortunately, many of the dots print over each other. You can help address this by adding some alpha blending. This is a figure that sets the transparency for the dots, so that concentrations of them drawing over one another will be apparent:
 
 ```python
 sns.jointplot(df['RM'], df['MEDV'], kind='scatter', alpha=0.3)
@@ -567,7 +573,7 @@ Here's the output:
 <seaborn.axisgrid.JointGrid at 0x12e760510>
 ```
 
-![A screenshot that shows the output of running sns.jointplot with alpha blending](../media/sns-jointplot-alpha-blend.png)
+![Screenshot that shows the output of running sns.jointplot with alpha blending](../media/sns-jointplot-alpha-blend.png)
 
 Another way to see patterns in your data is with a two-dimensional KDE plot. Darker colors represent a higher concentration of data points:
 
@@ -581,11 +587,11 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x11c455650>
 ```
 
-![A screenshot that shows the output of running sns.kdeplot](../media/sns-kdeplot.png)
+![Screenshot that shows the output of running sns.kdeplot](../media/sns-kdeplot.png)
 
-Note that although the KDE plot is very good at showing concentrations of data points, finer structures like linear relationships (such as the clear relationship between the number of rooms in homes and the house price) are lost in the KDE plot.
+The KDE plot is very good at showing concentrations of data points. On the other hand, finer structures, like linear relationships (such as the clear relationship between the number of rooms in homes and the house price), are lost in the KDE plot.
 
-Finally, `pairplot` in Seaborn allows you to see scatterplots and histograms for several columns in one table. Here, we have played with some of the keywords to produce a more sophisticated and easier-to-read `pairplot` that incorporates both alpha blending and linear regression lines for the scatterplots:
+Finally, `pairplot` in Seaborn allows you to see scatterplots and histograms for several columns in one table. Here, we have played with some of the keywords to produce a more sophisticated, and easier-to-read, `pairplot`. It incorporates both alpha blending and linear regression lines for the scatterplots:
 
 ```python
 sns.pairplot(df[['RM', 'AGE', 'LSTAT', 'DIS', 'MEDV']], kind="reg", plot_kws={'line_kws':{'color':'red'}, 'scatter_kws': {'alpha': 0.1}})
@@ -597,6 +603,6 @@ Here's the output:
 <seaborn.axisgrid.PairGrid at 0x12eb4dd10>
 ```
 
-![A screenshot that shows the output of running sns.pairplot](../media/sns-pairplot.png)
+![Screenshot that shows the output of running sns.pairplot](../media/sns-pairplot.png)
 
 Visualization is the start of the really cool, fun part of data science. So play around with these visualization tools and see what you can learn from the data!
