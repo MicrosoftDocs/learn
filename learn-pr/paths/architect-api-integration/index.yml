@@ -27,5 +27,6 @@ modules:
 - learn.azure.improve-api-performance-with-apim-caching-policy
 - learn.protect-apis-on-api-management
 - learn.control-authentication-with-apim
+- learn.build-serverless-api-with-functions-api-management
 trophy:
   uid: learn.architect-api-integration.trophy
