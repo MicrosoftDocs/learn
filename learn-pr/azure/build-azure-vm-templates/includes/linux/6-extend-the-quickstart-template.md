@@ -74,8 +74,8 @@ Here you'll download the template and modify it.
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-build-azure-vm-templates/master/linux/azuredeploy.json > azuredeploy.json
     ```
 
-1. You're all done editing files. Select the ellipsis in the corner and **Save**.
-1. To close the editor, click the ellipsis in the corner and then select **Close Editor**.
+1. You're all done editing files. Select the ellipses in the corner and **Save**.
+1. To close the editor, click the ellipses in the corner and then select **Close Editor**.
 
 ## Verify the template
 

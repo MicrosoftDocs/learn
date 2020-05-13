@@ -2,19 +2,19 @@
 name of the function appears first, followed by expressions in
 parentheses.
 
-``` python
+``` {.python}
 abs(-12)
 ```
 
     12
 
-``` python
+``` {.python}
 round(5 - 1.3)
 ```
 
     4
 
-``` python
+``` {.python}
 max(2, 2 + 3, 4)
 ```
 
@@ -31,7 +31,7 @@ most functions that are built into the Python language are stored in a
 collection of functions called a *module*. An *import statement* is used
 to provide access to a module, such as `math` or `operator`.
 
-``` python
+``` {.python}
 import math
 import operator
 math.sqrt(operator.add(4, 5))
@@ -42,7 +42,7 @@ math.sqrt(operator.add(4, 5))
 An equivalent expression could be expressed using the `+` and `**`
 operators instead.
 
-``` python
+``` {.python}
 (4 + 5) ** 0.5
 ```
 
@@ -58,7 +58,7 @@ between the values, divided by their average. In this case, the
 difference is larger than the average, and so the percent difference is
 greater than 100.
 
-``` python
+``` {.python}
 florida = 2.72
 iowa = 16.25
 100*abs(florida-iowa)/((florida+iowa)/2)
@@ -76,7 +76,7 @@ Typing will narrow down the list of options. To learn more about a
 function, place a `?` after its name. For example, typing `math.log?`
 will bring up a description of the `log` function in the `math` module.
 
-``` python
+``` {.python}
 math.log?
 ```
 
@@ -88,13 +88,13 @@ math.log?
 The square brackets in the example call indicate that an argument is
 optional. That is, `log` can be called with either one or two arguments.
 
-``` python
+``` {.python}
 math.log(16, 2)
 ```
 
     4.0
 
-``` python
+``` {.python}
 math.log(16)/math.log(2)
 ```
 
