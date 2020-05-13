@@ -10,7 +10,7 @@ In this module you'll:
 
 - Learn about the origins of quantum-inspired algorithms.
 - See which kinds of problems are best suited to these techniques.
-- Understand how quantum-inspired optimization emulates quantum physics to solve difficult problems.
+- Understand how algorithms inspired by physical processes are used to solve difficult problems.
 - Apply quantum-inspired optimization to a real-world problem.
 
 ## Prerequisites

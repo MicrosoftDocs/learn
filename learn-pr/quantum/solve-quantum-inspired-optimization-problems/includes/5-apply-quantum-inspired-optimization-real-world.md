@@ -21,7 +21,7 @@ Ideally, we want a solution where the weight difference between the ships is as 
 
 This equation subtracts the sum of weights on ship _b_ from the sum of weights on ship _a_.
 
-The letter *H* is typically used to represent a cost function. It is also referred to as a Hamiltonian as an acknowledgment to the quantum mechanical roots of QIO techniques. If the value of *H* is zero, we know the ships are equally loaded.
+The letter *H* is typically used to represent a cost function. If the value of *H* is zero, we know the ships are equally loaded.
 
 ## Refine the problem
 

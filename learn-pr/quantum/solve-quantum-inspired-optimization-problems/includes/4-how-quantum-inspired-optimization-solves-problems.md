@@ -12,7 +12,7 @@ Simulated annealing is similar to gradient descent. The algorithm simulates a wa
 
 In this graph, notice that this uphill move is described as a *thermal jump*. That's because simulated annealing is an algorithm from physics that mimics the behavior of materials as they are slowly cooled. The walker is like an atom in a metal that's driven by temperature to reconfigure itself. These changes are random but moves to lower-energy configurations are more likely than moves to higher-energy configurations. That is why we say the walker follows a biased random walk.
 
-Simulated annealing isn't a QIO method, since it uses only thermal effects. However it's a technique that's commonly used for solving combinatorial problems like the ones we use QIO methods on. Problems can be formulated in the same way.
+Simulated annealing isn't a QIO method, since it uses only thermal effects. However it's a technique that's commonly used for solving combinatorial problems like the ones we use QIO methods on. Problems can be formulated in the same way. Azure Quantum provides a simulated annealing solver because it's a simple, yet powerful, heuristic.
 
 ## Quantum annealing
 

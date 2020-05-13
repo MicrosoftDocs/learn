@@ -38,4 +38,4 @@ In these cases, where the solutions are completely random, then no algorithm can
 To summarize, here are the necessary conditions for QIO to perform well, compared to other classical optimization algorithms:
 
 - Optimization landscapes should be rugged but structured. Such landscapes occur frequently in  real-world problems.
-- If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with over 100 variables, QIO has achieved orders of magnitude improvement over [previously used methods](https://news.microsoft.com/innovation-stories/quantum-computing-mri-cancer-treatment/?azure-portal=true).
+- If the number of variables is too small, then simplistic algorithms are already sufficient. For problems with hundreds of variables, QIO has achieved orders of magnitude improvement over previously used methods.
