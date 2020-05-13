@@ -30,9 +30,9 @@ convenience, here is the description of the table again.
 
 The first column contains the title of the movie. The second column
 contains the name of the studio that produced the movie. The third
-contains the domestic box office gross in USD, and the fourth
+contains the domestic box office gross in dollars, and the fourth
 contains the gross amount that would have been earned from ticket sales
-at 2016 prices (USD). The fifth contains the release year of the movie.
+at 2016 prices. The fifth contains the release year of the movie.
 
 There are 200 movies on the list. Here are the top ten according to the
 unadjusted gross receipts in the column `Gross`.
@@ -64,7 +64,7 @@ In this section we will draw graphs of the distribution of the numerical
 variable in the column `Gross (Adjusted)`. For simplicity, let's create
 a smaller table that has the information that we need. And since
 three-digit numbers are easier to work with than nine-digit numbers,
-let's measure the `Adjusted Gross` receipts in USD millions. Note
+let's measure the `Adjusted Gross` receipts in millions of dollars. Note
 how `round` is used to retain only two decimal places.
 
 ``` python
@@ -97,7 +97,7 @@ section. First, let's just draw a histogram of the adjusted receipts.
 The `hist` method generates a histogram of the values in a column. The
 optional `unit` argument is used in the labels on the two axes. The
 histogram shows the distribution of the adjusted gross amounts, in
-2016 USD millions.
+millions of 2016 dollars.
 
 ``` python
 millions.hist('Adjusted Gross', unit="Million Dollars")
@@ -125,7 +125,7 @@ old or older."
 
 We can see that there are 10 bins (some bars are so low that they are
 hard to see), and that they all have the same width. We can also see
-that none of the movies grossed fewer than USD300 million; that is
+that none of the movies grossed fewer than 300 million dollars; that is
 because we are considering only the top grossing movies of all time.
 
 It is a little harder to see exactly where the ends of the bins are
@@ -148,9 +148,9 @@ millions.hist('Adjusted Gross', bins=np.arange(300,2001,100), unit="Million Doll
 The horizontal axis of this figure is easier to read. The labels 200,
 400, 600, and so on are centered at the corresponding values. The
 tallest bar is for movies that grossed between 300 million and 400
-million (USD).
+million dollars.
 
-A very small number of movies grossed USD800 million or more. This
+A very small number of movies grossed 800 million dollars or more. This
 results in the figure being "skewed to the right," or, less formally,
 having "a long right hand tail." Distributions of variables like income
 or rent in large populations also often have this kind of shape.
@@ -197,8 +197,8 @@ Notice the `bin` value 2000 in the last row. That's not the left
 end-point of any bar -- it's the right end point of the last bar. By the
 endpoint convention, the data there are not included. So the
 corresponding `count` is recorded as 0, and would have been recorded as
-0 even if there had been movies that made more than USD2,000 million. 
-When either `bin` or `hist` is called with a `bins` argument,
+0 even if there had been movies that made more than $2,000 million 
+dollars. When either `bin` or `hist` is called with a `bins` argument,
 the graph only considers values that are in the specified bins.
 
 Once values have been binned, the resulting counts can be used to
@@ -273,8 +273,8 @@ $$
 The code for calculating the heights used the facts that there are 200
 movies in all and that the width of each bin is 100.
 
-**Units.** The height of the bar is 40.5% divided by USD100 million, 
-and so the height is 0.405% per million (USD).
+**Units.** The height of the bar is 40.5% divided by 100 million 
+dollars, and so the height is 0.405% per million dollars.
 
 This method of drawing histograms creates a vertical axis that is said
 to be *on the density scale*. The height of bar is **not** the percent
@@ -345,7 +345,7 @@ millions.hist('Adjusted Gross', bins=uneven, normed=False)
 
 Even though the method used is called `hist`, **the figure above is NOT
 A HISTOGRAM.** It misleadingly exaggerates the proportion of movies
-grossing at least USD600 million. The height of each bar is simply
+grossing at least 600 million dollars. The height of each bar is simply
 plotted at the number of movies in the bin, *without accounting for the
 difference in the widths of the bins*.
 
@@ -411,7 +411,7 @@ Even though the density scale correctly represents percents using area,
 some detail is lost by grouping values into bins.
 
 Take another look at the \[300, 400) bin in the figure below. The flat
-top of the bar, at the level 0.405% per million USD, hides the fact
+top of the bar, at the level 0.405% per million dollars, hides the fact
 that the movies are somewhat unevenly distributed across that bin.
 
 ``` python
@@ -421,7 +421,7 @@ millions.hist('Adjusted Gross', bins=uneven, unit="Million Dollars")
 ![png](../media/42-visualize-numerical-distributions-34-0.png)
 
 To see this, let us split the \[300, 400) bin into 10 narrower bins,
-each of width USD 10 million.
+each of width 10 million dollars.
 
 ``` python
 some_tiny_bins = make_array(300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 400, 600, 1500)
@@ -440,13 +440,13 @@ for understanding the general shape of the distribution.
 **The height as a rough approximation.** This observation gives us a
 different way of thinking about the height. Look again at the \[300,
 400) bin in the earlier histograms. As we have seen, the bin is 100
-million USD wide and contains 40.5% of the data. Therefore the
-height of the corresponding bar is 0.405% per million USD.
+million dollars wide and contains 40.5% of the data. Therefore the
+height of the corresponding bar is 0.405% per million dollars.
 
 Now think of the bin as consisting of 100 narrow bins that are each 1
-million USD wide. The bar's height of "0.405% per million dollars"
+million dollars wide. The bar's height of "0.405% per million dollars"
 means that as a rough approximation, 0.405% of the movies are in each of
-those 100 skinny bins of width 1 million USD.
+those 100 skinny bins of width 1 million dollars.
 
 Notice that because we have the entire dataset that is being used to
 draw the histograms, we can draw the histograms to as fine a level of
@@ -542,7 +542,8 @@ convenience, here is the description of the table again.
 
 The first column contains the title of the movie. The second column
 contains the name of the studio that produced the movie. The third
-contains the domestic box office gross in USD, and the fourth
+contains the domestic box office gross in dollars, and the fourth
+contains the gross amount that would have been earned from ticket sales
 at 2016 prices. The fifth contains the release year of the movie.
 
 There are 200 movies on the list. Here are the top ten according to the
