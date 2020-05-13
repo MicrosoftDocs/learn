@@ -13,7 +13,6 @@ durationInMinutes: 10
 content: |
   [!include[](includes/02-multiple-categories.md)]
 quiz:
-  title: Check your Knowledge
   questions:
     - content: 'which ethnicities are underrepresented in the jury panel?'
       choices:

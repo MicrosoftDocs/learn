@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -96,7 +96,7 @@ statistic you get from the data in the study, not a simulated value.
 Among Mendel's 929 plants, 705 had purple flowers. The observed value of
 the test statistic was therefore
 
-``` {.python}
+``` python
 abs ( 100 * (705 / 929) - 75)
 ```
 
@@ -194,7 +194,7 @@ The table `scores` contains the section number and midterm score for
 each student in the class. The midterm scores were integers in the range
 0 through 25; 0 means that the student didn't take the test.
 
-``` {.python}
+``` python
 scores = Table.read_table(path_data + 'scores_by_section.csv')
 scores
 ```
@@ -214,7 +214,7 @@ scores
 
 To find the average score in each section, we will use `group`.
 
-``` {.python}
+``` python
 section_averages = scores.group('Section', np.average)
 section_averages.show()
 ```
@@ -243,7 +243,7 @@ To answer this, we can select a section at random from the class and
 find its average. To select a section at random to we need to know how
 large Section 3 is, which we can by once again using `group`.
 
-``` {.python}
+``` python
 scores.group('Section')
 ```
 
@@ -272,11 +272,11 @@ Remember that by default, `sample` draws with replacement. The optional
 argument `with_replacement = False` produces a random sample drawn
 without replacement.
 
-``` {.python}
+``` python
 scores_only = scores.drop('Section')
 ```
 
-``` {.python}
+``` python
 random_sample = scores_only.sample(27, with_replacement=False)
 random_sample
 ```
@@ -296,7 +296,7 @@ random_sample
 
 The average of these 27 randomly selected scores is
 
-``` {.python}
+``` python
 np.average(random_sample.column('Midterm'))
 ```
 
@@ -308,13 +308,13 @@ collects the code necessary for generating this random average.
 Now we can simulate the random sample average by repeating the
 calculation multple times.
 
-``` {.python}
+``` python
 def random_sample_average():
     random_sample = scores_only.sample(27, with_replacement=False)
     return np.average(random_sample.column('Midterm'))
 ```
 
-``` {.python}
+``` python
 sample_averages = make_array()
 
 repetitions = 10000
@@ -330,7 +330,7 @@ The observed Section 3 average score of 13.667 is shown as a red dot on
 the horizontal axis. You can ignore the last line of code; it just draws
 the dot.
 
-``` {.python}
+``` python
 averages_tbl = Table().with_column('Sample Average', sample_averages)
 averages_tbl.hist(bins=20)
 
@@ -370,7 +370,7 @@ is. The array `sample_averages` contains the averages for all 10,000
 repetitions of the random sampling, and `observed_statistic` is 13.667,
 the average score of Section 3.
 
-``` {.python}
+``` python
 np.count_nonzero(sample_averages <= observed_statistic) / repetitions
 ```
 

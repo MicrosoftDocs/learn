@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 import matplotlib.pyplot as plots
@@ -59,7 +59,7 @@ values favor the alternative.
 We have simulated this statistic under the null hypothesis many times,
 and drawn its empirical distribution.
 
-``` {.python}
+``` python
 fair_coin = [1, 0]
 
 def one_simulated_statistic():

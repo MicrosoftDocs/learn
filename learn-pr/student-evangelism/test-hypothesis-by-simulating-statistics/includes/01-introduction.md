@@ -6,7 +6,7 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -111,7 +111,7 @@ name `eligible_population`. Now let's sample at random 100 times from
 this distribution, and see what proportions of the two categories we get
 in our sample.
 
-``` {.python}
+``` python
 eligible_population = [0.26, 0.74]
 sample_proportions(100, eligible_population)
 ```
@@ -127,7 +127,7 @@ counts instead of proportions, and access the count of black men only.
 
 Run the cell a few times to see how the output varies.
 
-``` {.python}
+``` python
 # count of black men in a simulated panel
 
 (100 * sample_proportions(100, eligible_population)).item(0)
@@ -144,7 +144,7 @@ The code follows the same steps that we have used in every simulation.
 First, we define a function to simulate one value of the count, using
 the code we wrote above.
 
-``` {.python}
+``` python
 def one_simulated_count():
     return (100 * sample_proportions(100, eligible_population)).item(0)
 ```
@@ -152,7 +152,7 @@ def one_simulated_count():
 Next, we create an array of 10,000 simulated counts by using a `for`
 loop.
 
-``` {.python}
+``` python
 counts = make_array()
 
 repetitions = 10000
@@ -165,7 +165,7 @@ for i in np.arange(repetitions):
 To interpret the results of our simulation, we start as usual by
 visualizing the results by an empirical histogram.
 
-``` {.python}
+``` python
 Table().with_column(
     'Count in a Random Sample', counts
 ).hist(bins = np.arange(5.5, 46.6, 1))
@@ -187,7 +187,7 @@ Though the simulated counts are varied, few of them came out
 to be eight or less. The value eight is far out in the left-hand tail of
 the histogram. It's the red dot on the horizontal axis of the histogram.
 
-``` {.python}
+``` python
 Table().with_column(
     'Count in a Random Sample', counts
 ).hist(bins = np.arange(5.5, 46.6, 1))
@@ -297,7 +297,7 @@ That's the statistic: the distance between the sample percent and 75.
 We will start by defining a function that takes a proportion and returns
 the absolute difference between the corresponding percent and 75.
 
-``` {.python}
+``` python
 def distance_from_75(p):
     return abs(100*p - 75)
 ```
@@ -308,11 +308,11 @@ model, we have to first simulate the proportion of purple-flowering
 plants among 929 plants under the assumption of the model, and then
 calculate the discrepancy from 75%.
 
-``` {.python}
+``` python
 model_proportions = [0.75, 0.25]
 ```
 
-``` {.python}
+``` python
 proportion_purple_in_sample = sample_proportions(929, model_proportions).item(0)
 distance_from_75(proportion_purple_in_sample)
 ```
@@ -331,7 +331,7 @@ We will generate 10,000 values of the distance. As before, we will first
 use the code we developed above to define a function that returns one
 simulated value Mendel's hypothesis.
 
-``` {.python}
+``` python
 def one_simulated_distance():
     proportion_purple_in_sample = sample_proportions(929, model_proportions).item(0)
     return distance_from_75(proportion_purple_in_sample)
@@ -340,7 +340,7 @@ def one_simulated_distance():
 Next, we will use a `for` loop to create 10,000 such simulated
 distances.
 
-``` {.python}
+``` python
 distances = make_array()
 
 repetitions = 10000
@@ -353,7 +353,7 @@ for i in np.arange(repetitions):
 The empirical histogram of the simulated values shows the distribution
 of the distance as predicted by Mendel's model.
 
-``` {.python}
+``` python
 Table().with_column(
     'Distance between Sample % and 75%', distances
 ).hist()
@@ -375,7 +375,7 @@ Mendel recorded the number of purple and white flowering plants. Among
 the 929 plants that he grew, 705 were purple flowering. That's just
 about 75.89%.
 
-``` {.python}
+``` python
 705 / 929
 ```
 
@@ -384,7 +384,7 @@ about 75.89%.
 So the observed value of our statistic--the distance between Mendel's
 sample percent and 75--is about 0.89:
 
-``` {.python}
+``` python
 observed_statistic = distance_from_75(705/929)
 observed_statistic
 ```
@@ -398,7 +398,7 @@ distribution predicted by Mendel's model.
 The cell below redraws the histogram with the observed value plotted on
 the horizontal axis.
 
-``` {.python}
+``` python
 Table().with_column(
     'Distance between Sample % and 75%', distances
 ).hist()

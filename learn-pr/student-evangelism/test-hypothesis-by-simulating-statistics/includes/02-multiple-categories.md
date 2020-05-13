@@ -455,3 +455,5 @@ prevent us from concluding anything broader.
  |Latino   	|0.12    	|0.08  |
  |White    	|0.54    	|0.54  |
  |Other    	|0.0   1	|0.04  |
+
+## Check your knowledge

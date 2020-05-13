@@ -9,10 +9,10 @@ In your online Visual Studio Codespaces environment, you'll find "mini lab" Jupy
 
 To access the mini labs for this module, you'll need to do the following:
 
-- Launch your Online Visual Studio Codespaces Environment
-- Open your Workspace and click the "minilabs" directory
-- Click the corresponding module directory and you should be able to see all the mini labs available for this module
+1. Launch your Online Visual Studio Codespaces Environment
+2. Open your Workspace and click the "minilabs" directory
+3. Click the corresponding module directory and you should be able to see all the mini labs available for this module
 
 Here is what the mini-lab should look like in your virtual environment:
 
-![png](../media/vscode-example.png)
+![.png](../media/vscode-example.png)
