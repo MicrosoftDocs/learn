@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.introduction-python-using-datascience-library
 metadata:
   title: Introduction to python using the datascience library
-  description: Learn about Python expressions, functions, basic data types(numbers,
+  description: Learn about Python Expressions, Functions, basic data types(numbers,
     strings), and comparisons
   ms.date: 19/03/2020
   author: leestott
@@ -18,7 +18,7 @@ abstract: |
   - Make and manipulate and different sequences. 
   - Expose to and work with numerous numpy (np) functions arithmetic operations on arrays.
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/introduction-python-using-datascience-library.svg
+iconUrl: /learn/achievements/student-evangelism/introduction-python-using-the-datascience-library.svg
 levels:
 - beginner
 roles:

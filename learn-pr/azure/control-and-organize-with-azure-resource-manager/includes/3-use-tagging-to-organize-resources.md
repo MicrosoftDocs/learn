@@ -2,7 +2,7 @@ You've gone through your resources and moved them into resource groups that are 
 
 ## What are tags?
 
-Tags are name/value pairs of text data that you can apply to resources and resource groups, and tags allow you to associate custom details about your resource. In addition to the standard Azure properties, a resource has the following properties:
+Tags are name/value pairs of text data that you can apply to resources and resource groups. Tags allow you to associate custom details about your resource, in addition to the standard Azure properties a resource has the following properties:
 
 - department (like finance, marketing, and more)
 - environment (prod, test, dev)

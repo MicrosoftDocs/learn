@@ -9,7 +9,7 @@ cannot study the world on their own. People must describe precisely what
 steps the computer should take in order to collect and analyze data, and
 those steps are expressed through programs.
 
-## Learning objectives
+## Learning Objectives
 
 - Write basic arithmetic expressions and function calls in Python.
 - Identify the correct data type of each object.

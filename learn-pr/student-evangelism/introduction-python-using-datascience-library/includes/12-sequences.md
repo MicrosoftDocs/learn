@@ -1,4 +1,4 @@
-``` python
+``` {.python}
 from datascience import *
 path_data = '../../../data/'
 ```
@@ -18,7 +18,7 @@ land on Earth (in degrees Celsius) for the decades surrounding 1850,
 average absolute high temperature between 1951 and 1980, which was 14.48
 degrees.
 
-``` python
+``` {.python}
 baseline_high = 14.48
 highs = make_array(baseline_high - 0.880, baseline_high - 0.093,
                    baseline_high + 0.105, baseline_high + 0.684)
@@ -33,7 +33,7 @@ values in a collection, and the `len` function computes its length.
 (That's the number of values we put in it.) Using them together, we can
 compute the average of a collection.
 
-``` python
+``` {.python}
 sum(highs)/len(highs)
 ```
 
@@ -41,17 +41,17 @@ sum(highs)/len(highs)
 
 The complete chart of daily high and low temperatures appears below.
 
-### Mean of daily high temperature
+### Mean of Daily High Temperature
 
 ![Mean of Daily High
 Temperature](http://berkeleyearth.lbl.gov/auto/Regional/TMAX/Figures/global-land-TMAX-Trend.png)
 
-### Mean of daily low temperature
+### Mean of Daily Low Temperature
 
 ![Mean of Daily Low
 Temperature](http://berkeleyearth.lbl.gov/auto/Regional/TMIN/Figures/global-land-TMIN-Trend.png)
 
-``` python
+``` {.python}
 from datascience import *
 path_data = '../../../../data/'
 ```
@@ -66,7 +66,7 @@ Arrays can also contain strings or other types of values, but a single
 array can only contain a single kind of data. (It usually doesn't make
 sense to group together unlike data anyway.) For example:
 
-``` python
+``` {.python}
 english_parts_of_speech = make_array("noun", "pronoun", "verb", "adverb", "adjective", "conjunction", "preposition", "interjection")
 english_parts_of_speech
 ```
@@ -79,7 +79,7 @@ Returning to the temperature data, we create arrays of average daily
 temperatures](http://berkeleyearth.lbl.gov/auto/Regional/TMAX/Text/global-land-TMAX-Trend.txt)
 for the decades surrounding 1850, 1900, 1950, and 2000.
 
-``` python
+``` {.python}
 baseline_high = 14.48
 highs = make_array(baseline_high - 0.880, 
                    baseline_high - 0.093,
@@ -96,7 +96,7 @@ combined with each element of the array. Therefore, we can convert all
 of these temperatures to Fahrenheit by writing the familiar conversion
 formula.
 
-``` python
+``` {.python}
 (9/5) * highs + 32
 ```
 
@@ -111,31 +111,31 @@ value: the sum divided by the length. Each pair of parentheses in the
 examples below is part of a call expression; it's calling a function
 with no arguments to perform a computation on the array called `highs`.
 
-``` python
+``` {.python}
 highs.size
 ```
 
     4
 
-``` python
+``` {.python}
 highs.sum()
 ```
 
     57.736000000000004
 
-``` python
+``` {.python}
 highs.mean()
 ```
 
     14.434000000000001
 
-#### Functions on arrays
+#### Functions on Arrays
 
 The `numpy` package, abbreviated `np` in programs, provides Python
 programmers with convenient and powerful functions for creating and
 manipulating arrays.
 
-``` python
+``` {.python}
 import numpy as np
 ```
 
@@ -143,7 +143,7 @@ For example, the `diff` function computes the difference between each
 adjacent pair of elements in an array. The first element of the `diff`
 is the second element minus the first.
 
-``` python
+``` {.python}
 np.diff(highs)
 ```
 
@@ -161,44 +161,81 @@ However, you **don't need to memorize these**. Use this as a reference.
 Each of these functions takes an array as an argument and returns a
 single value.
 
-|   Function       | Description                                                           |
-|------------------|-----------------------------------------------------------------------|
-| `np.prod`          | Multiply all elements together                                        |
-| `np.sum`           | Add all elements together                                             |
-| `np.all`           | Test whether all elements are true values (non-zero numbers are true) |
-| `np.any`           | Test whether any elements are true values (non-zero numbers are true) |
-| `np.count_nonzero` | Count the number of non-zero elements                                 |
+  ----------------------------------------------------------------------------
+  **Function**         Description
+  -------------------- -------------------------------------------------------
+  `np.prod`            Multiply all elements together
+
+  `np.sum`             Add all elements together
+
+  `np.all`             Test whether all elements are true values (non-zero
+                       numbers are true)
+
+  `np.any`             Test whether any elements are true values (non-zero
+                       numbers are true)
+
+  `np.count_nonzero`   Count the number of non-zero elements
+  ----------------------------------------------------------------------------
 
 Each of these functions takes an array as an argument and returns an
 array of values.
 
-|   Function   | Description                                                          |
-|--------------|----------------------------------------------------------------------|
-| `np.diff`      | Difference between adjacent elements                                 |
-| `np.round`     | Round each number to the nearest integer (whole number)              |
-| `np.cumprod`   | A cumulative product: for each element, multiply all elements so far |
-| `np.cumsum`    | A cumulative sum: for each element, add all elements so far          |
-| `np.exp`       | Exponentiate each element                                            |
-| `np.log`       | Take the natural logarithm of each element                           |
-| `np.sqrt`      | Take the square root of each element                                 |
-| `np.sort`      | Sort the elements                                                    |
+  -----------------------------------------------------------------------
+  **Function**    Description
+  --------------- -------------------------------------------------------
+  `np.diff`       Difference between adjacent elements
+
+  `np.round`      Round each number to the nearest integer (whole number)
+
+  `np.cumprod`    A cumulative product: for each element, multiply all
+                  elements so far
+
+  `np.cumsum`     A cumulative sum: for each element, add all elements so
+                  far
+
+  `np.exp`        Exponentiate each element
+
+  `np.log`        Take the natural logarithm of each element
+
+  `np.sqrt`       Take the square root of each element
+
+  `np.sort`       Sort the elements
+  -----------------------------------------------------------------------
 
 Each of these functions takes an array of strings and returns an array.
 
-| Function            | Description                                                  |
-|---------------------|--------------------------------------------------------------|
-| `np.char.lower`     | Lowercase eachelement                                       |
-| `np.char.upper`     | Uppercase each element                                       |
-| `np.char.strip`     | Remove spaces at the beginning or end of each element        |
-| `np.char.isalpha`   | Whether each element is only letters (no numbers or symbols) |
-| `np.char.isnumeric` | Whether each element is only numeric (no letters)            |
+  ---------------------------------------------------------------------------
+  **Function**          **Description**
+  --------------------- -----------------------------------------------------
+  `np.char.lower`       Lowercase each element
+
+  `np.char.upper`       Uppercase each element
+
+  `np.char.strip`       Remove spaces at the beginning or end of each element
+
+  `np.char.isalpha`     Whether each element is only letters (no numbers or
+                        symbols)
+
+  `np.char.isnumeric`   Whether each element is only numeric (no letters)
+  ---------------------------------------------------------------------------
 
 Each of these functions takes both an array of strings and a *search
 string*; each returns an array.
 
-| Function             | Description                                                                      |
-|----------------------|----------------------------------------------------------------------------------|
-| `np.char.count`      | Count the number of times a search string appears among the elements of an array |
-| `np.char.find`       | The position within each element that a search string is found first             |
-| `np.char.rfind`      | The position within each element that a search string is found last              |
-| `np.char.startswith` | Whether each element starts with the search string                               |
+  ------------------------------------------------------------------------------
+  **Function**           **Description**
+  ---------------------- -------------------------------------------------------
+  `np.char.count`        Count the number of times a search string appears among
+                         the elements of an array
+
+  `np.char.find`         The position within each element that a search string
+                         is found first
+
+  `np.char.rfind`        The position within each element that a search string
+                         is found last
+
+  `np.char.startswith`   Whether each element starts with the search string
+  ------------------------------------------------------------------------------
+------
+---
+------

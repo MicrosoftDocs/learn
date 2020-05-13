@@ -12,7 +12,7 @@ such as `3 * 4`, are *evaluated* by the computer. The value (the result
 of *evaluation*) of the last expression in each cell, `12` in this case,
 is displayed below the cell.
 
-``` python
+``` {.python}
 3 * 4
 ```
 
@@ -26,7 +26,7 @@ a language is its set of grammar rules, and a `SyntaxError` indicates
 that an expression structure doesn't match any of the rules of the
 language.
 
-``` python
+``` {.python}
 3 * * 4
 ```
 
@@ -42,13 +42,13 @@ between two numerical expressions, the expression is a well-formed
 second: 3 times 3 times 3 times 3). The symbols `*` and `**` are called
 *operators*, and the values they combine are called *operands*.
 
-``` python
+``` {.python}
 3 ** 4
 ```
 
     81
 
-**Common operators.** Data science often involves combining numerical
+**Common Operators.** Data science often involves combining numerical
 values, and the set of operators in a programming language are designed
 to so that expressions can be used to express any sort of arithmetic. In
 Python, the following operators are essential.
@@ -67,13 +67,13 @@ algebra: multiplication and division occur before addition and
 subtraction. Parentheses can be used to group together smaller
 expressions within a larger expression.
 
-``` python
+``` {.python}
 1 + 2 * 3 * 4 * 5 / 6 ** 3 + 7 + 8 - 9 + 10
 ```
 
     17.555555555555557
 
-``` python
+``` {.python}
 1 + 2 * (3 * 4 * 5 / 6) ** 3 + 7 + 8 - 9 + 10
 ```
 
