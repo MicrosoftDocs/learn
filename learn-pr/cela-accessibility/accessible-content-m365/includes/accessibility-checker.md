@@ -28,6 +28,6 @@ You can use the errors, warnings, and tips to make updates to your content to ma
 
 Note: If you have customized your ribbon, the button might not be here.
 
-:::image type="content" source="../media/check-acc-outlook.png" alt-text="Check Accessibility button highlighted in Outlook":::
+:::image type="content" source="../media/check-accessibility-outlook.png" alt-text="Check Accessibility button highlighted in Outlook":::
 
 For more information, learn how to [improve accessibility with the Accessibility Checker](https://support.office.com/en-us/article/Improve-accessibility-with-the-Accessibility-Checker-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f).

@@ -18,7 +18,7 @@ To add a heading style:  
 
 Note: Be attentive to which heading style you use and make sure they're properly nested in your document. The order of headings (Heading 1, Heading 2, Heading 3, etc.) is critical to informing screen reader users how to navigate.
 
-:::image type="content" source="../media/heading1-heading2.png" alt-text="Heading 1 and Heading 2 highlighted in Word Home ribbon":::
+:::image type="content" source="../media/heading-1-heading-2.png" alt-text="Heading 1 and Heading 2 highlighted in Word Home ribbon":::
 
 ## Images
 
@@ -40,7 +40,7 @@ To add alt text to an image:
 2. Enter a description of the image in the **Alt Text** field or select "Generate a description for me" to enable AI to create alternative text.
 3. Alternatively, the Accessibility Checker can generate a list of images that require alt text for you.
 
-:::image type="content" source="../media/picture-in-word.png" alt-text="A picture in Word with the accompanying Alt Text description displayed":::
+:::image type="content" source="../media/picture-word.png" alt-text="A picture in Word with the accompanying Alt Text description displayed":::
 
 ## Links
 
@@ -55,7 +55,7 @@ To edit link text:
 3. Enter the web address into the **Address** field.
 4. In the **Text to display** field, ensure the text is meaningful and identifies the purpose of the link.
 
-:::image type="content" source="../media/text-to-display.png" alt-text="A comparison of examples of non-descriptive and descriptive, unique links":::
+:::image type="content" source="../media/text-display.png" alt-text="A comparison of examples of non-descriptive and descriptive, unique links":::
 
 ## Lists  
 
