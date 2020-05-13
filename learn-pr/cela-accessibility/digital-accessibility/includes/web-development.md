@@ -40,7 +40,7 @@ on. Ensure that text and images of text provide a color contrast ratio of at lea
 - **Incidentals**: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
 - **Logotypes**: Text that is part of a logo or brand name has no minimum contrast requirement.
 
-:::image type="content" source="../media/LargeText.png" alt-text="People viewing large text on a computer screen":::
+:::image type="content" source="../media/large-text.png" alt-text="People viewing large text on a computer screen":::
 
 Figure 1. Large on-screen text for accessibility purposes
 
@@ -54,7 +54,7 @@ Data tables can be difficult for some assistive technology (AT) applications, su
 - Use the scope attribute to identify whether the cell is a header for a row, column, or group of rows or columns (using the values row, col, rowgroup, or colgroup)
 - Add an `id` attribute to any cell used as a header for other cells, and then reference the appropriate `id` value using a headers attribute in each data cell
 
-:::image type="content" source="../media/DataTableHTML.png" alt-text="Data table and its corresponding native HTML table elements":::
+:::image type="content" source="../media/data-table-html.png" alt-text="Data table and its corresponding native HTML table elements":::
 
 If these steps are not taken, people who use assistive technology may have difficulty understanding the data tables on your site.
 
@@ -84,13 +84,13 @@ it has been provided. These examples show a list with generic, inaccessible lin
 
 **Accessible links example:**
 
-:::image type="content" source="../media/ThreeDescriptiveLinkNames.png" alt-text="Web page with a series of three descriptive link names":::
+:::image type="content" source="../media/three-descriptive-link-names.png" alt-text="Web page with a series of three descriptive link names":::
 
 Figure 3. Series of descriptive link names
 
 **Inaccessible links example:**
 
-:::image type="content" source="../media/ThreeNondescriptiveLinkNames.png" alt-text="Web page with a series of three descriptive link names":::
+:::image type="content" source="../media/three-nondescriptive-link-names.png" alt-text="Web page with a series of three generic, non-descriptive link names":::
 
 Figure 4. Series of generic, non-descriptive link names
 
@@ -116,7 +116,7 @@ example, a user will know exactly what the logo is.
 Another non-text element to consider is decorative images. For example, if a web page includes a stylized border, there is no need to describe it in detail in the alt text. You can indicate it is decorative in the
 code by adding a blank alt attribute.
 
-:::image type="content" source="../media/ExamplesOfNontextElements.png" alt-text="Example of non-text elements requiring and not requiring descriptive alternative text attributes":::
+:::image type="content" source="../media/examples-of-nontext-elements.png" alt-text="Example of non-text elements requiring and not requiring descriptive alternative text attributes":::
 
 Figure 5. Example of image and decorative border
 
