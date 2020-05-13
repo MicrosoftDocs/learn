@@ -16,6 +16,9 @@ ponse to an HTTP GET
 
 Create a new Function app in the sandbox environment - the quickest way to do so is to click on "Create a resource" and search for "Function app".
 
+> [!TIP]
+> For this demonstration, make sure you don't create a Linux server. Linux servers do not allow for the function editing within the portal.
+
 Use the following credentials:
 - Function App Name: Use a globally unique name (e.g., your initials + "functiontest" + a numeric value)
 - Publish: Code
