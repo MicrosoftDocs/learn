@@ -28,18 +28,18 @@ For example, if we wanted just the first row of `nba`, we could use
 nba
 ```
 
-| Player                |     Position   |           Team       |   Salary  |
-|-----------------------|----------------|----------------------|-----------|
-| Paul Millsap          |       PF       |     Atlanta Hawks    |   18.6717 |
-| Al Horford            |       C        |     Atlanta Hawks    |   12      |
-| Tiago Splitter        |       C        |     Atlanta Hawks    |   9.75625 |
-| Jeff Teague           |       PG       |     Atlanta Hawks    |   8       |
-| Kyle Korver           |       SG       |     Atlanta Hawks    |   5.74648 |
-| Thabo Sefolosha       |       SF       |     Atlanta Hawks    |   4       |
-| Mike Scott            |       PF       |     Atlanta Hawks    |   3.33333 |
-| Kent Bazemore         |       SF       |     Atlanta Hawks    |   2       |
-| Dennis Schroder       |       PG       |     Atlanta Hawks    |   1.7634  |
-| Tim Hardaway Jr.      |       SG       |     Atlanta Hawks    |   1.30452 |
+| Player                |     Position     |              Team    |   Salary  |
+|-----------------------|----------------  |----------------------|-----------|
+| Paul Millsap          |       PF         |     Atlanta Hawks    |   18.6717 |
+| Al Horford            |       C          |     Atlanta Hawks    |   12      |
+| Tiago Splitter        |       C          |     Atlanta Hawks    |   9.75625 |
+| Jeff Teague           |       PG         |     Atlanta Hawks    |   8       |
+| Kyle Korver           |       SG         |     Atlanta Hawks    |   5.74648 |
+| Thabo Sefolosha       |       SF         |     Atlanta Hawks    |   4       |
+| Mike Scott            |       PF         |     Atlanta Hawks    |   3.33333 |
+| Kent Bazemore         |       SF         |     Atlanta Hawks    |   2       |
+| Dennis Schroder       |       PG         |     Atlanta Hawks    |   1.7634  |
+| Tim Hardaway Jr.      |       SG         |     Atlanta Hawks    |   1.30452 |
 
 ... (407 rows omitted)
 
@@ -47,9 +47,9 @@ nba
 nba.take(0)
 ```
 
-| Player                |     Position   |           Team       |   Salary  |
-|-----------------------|----------------|----------------------|-----------|
-| Paul Millsap          |       PF       |        Atlanta Hawks |   18.6717 |
+| Player                |       Position   |           Team       |   Salary  |
+|-----------------------|------------------|----------------------|-----------|
+| Paul Millsap          |       PF         |        Atlanta Hawks |   18.6717 |
 
 This is a new table with just the single row that we specified.
 
@@ -60,10 +60,10 @@ range of indices as the argument.
 nba.take(np.arange(3, 6))
 ```
 
-| Player                |     Position   |           Team       |   Salary  |
+| Player                |     Position   |             Team     |   Salary  |
 |-----------------------|----------------|----------------------|-----------|
-| Jeff Teague           |       PG       |      Atlanta Hawks   |   8       |
-| Kyle Korver           |       SG       |      Atlanta Hawks   |  5.74648  |
+|    Jeff Teague        |       PG       |      Atlanta Hawks   |   8       |
+|    Kyle Korver        |       SG       |      Atlanta Hawks   |  5.74648  |
 | Thabo Sefolosha       |       SF       |      Atlanta Hawks   |   4       |
 
 If we want a table of the top 5 highest paid players, we can first sort
@@ -108,7 +108,7 @@ than $\$10$ million.
 nba.where('Salary', are.above(10))
 ```
 
-| Player                |     Position   |           Team       |   Salary  |
+| Player                |     Position   |              Team     |   Salary  |
 |-----------------------|----------------|----------------------|-----------|
 | Paul Millsap   | PF       | Atlanta Hawks     | 18.6717 |
 | Al Horford     | C        | Atlanta Hawks     | 12      |
@@ -134,7 +134,7 @@ the data easier to analyze. DeMar DeRozan of the Toronto Raptors was the
 ``` python
 nba.where('Salary', are.above(10)).sort('Salary')
 ```
-| Player                |     Position   |           Team       |   Salary  |
+| Player                |     Position   |              Team    |   Salary  |
 |-----------------------|----------------|----------------------|-----------|
 |       DeMar DeRozan   |       SG       | Toronto Raptors      |   10.05   |
 |       Gerald Wallace  |       SF       | Philadelphia 76ers   |   10.1059 |
@@ -175,7 +175,7 @@ all the Warriors:
 nba.where('Team', are.equal_to('Golden State Warriors')).show()
 ```
 
-| Player                |     Position   |           Team         |   Salary  |
+| Player                |     Position   |               Team     |   Salary  |
 |-----------------------|----------------|------------------------|-----------|
 |   Klay Thompson       |       SG       | Golden State Warriors  |  15.501   |
 |   Draymond Green      |       PF       | Golden State Warriors  |  14.2609  |
@@ -206,7 +206,7 @@ achieve the same effect.
 nba.where('Team', 'Denver Nuggets') # equivalent to nba.where('Team', are.equal_to('Denver Nuggets'))
 ```
 
-| Player            | Position |   Team         | Salary  |
+| Player            | Position |      Team      | Salary  |
 |-------------------|----------|----------------|---------|
 | Danilo Gallinari  | SF       | Denver Nuggets | 14      |
 | Kenneth Faried    | PF       | Denver Nuggets | 11.236  |
@@ -231,7 +231,7 @@ Guards whose salaries were over $\$15$ million.
 nba.where('Position', 'PG').where('Salary', are.above(15))
 ```
 
-| Player            |  Position  |    Team                | Salary  |
+| Player            |  Position  |       Team             | Salary  |
 |-------------------|------------|------------------------|---------|
 | Derrick Rose      |   PG       |  Chicago Bulls         | 20.0931 |
 | Kyrie Irving      |   PG       |  Cleveland Cavaliers   | 16.4075 |
@@ -251,7 +251,7 @@ the appropriate condition:
 nba.where('Salary', are.between(10, 10.3))
 ```
 
-| Player           | Position  |   Team              | Salary  |
+| Player           | Position  |      Team           | Salary  |
 |------------------|-----------|---------------------|---------|
 |   Luol Deng      |  SF       |  Miami Heat         | 10.1516 |
 |   Gerald Wallace |  SF       |  Philadelphia 76ers | 10.1059 |
@@ -311,7 +311,7 @@ can just specify `Warriors` instead of `Golden State Warriors`:
 nba.where('Team', are.containing('Warriors')).show()
 ```
 
-| Player              |   Position  |   Team                  | Salary   |
+| Player              |   Position  |       Team              | Salary   |
 |---------------------|-------------|-------------------------|----------|
 |   Klay Thompson     |   SG        |   Golden State Warriors | 15.501   |
 |   Draymond Green    |   PF        |   Golden State Warriors | 14.2609  |
@@ -335,7 +335,7 @@ Guards:
 nba.where('Position', are.containing('G'))
 ```
 
-| Player             | Position   |     Team         | Salary   |
+| Player             | Position   |        Team      |   Salary |
 |------------------  |----------  |------------------|----------|
 |   Jeff Teague      |   PG       |   Atlanta Hawks  | 8        |
 |   Kyle Korver      |   SG       |   Atlanta Hawks  | 5.74648  |
@@ -358,8 +358,8 @@ other_than_Cavs = nba.where('Team', are.not_equal_to('Cleveland Cavaliers'))
 other_than_Cavs.where('Salary', are.not_below(20))
 ```
 
-| Player            |   Position |     Team                | Salary  |
-|-------------------|------------|-----------__------------|---------|
+| Player            |   Position |        Team             |  Salary |
+|-------------------|------------|-------------------------|---------|
 |   Joe Johnson     |   SF       |   Brooklyn Nets         | 24.8949 |
 |   Derrick Rose    |   PG       |   Chicago Bulls         | 20.0931 |
 |   Dwight Howard   |   C        |   Houston Rockets       | 22.3594 |
@@ -377,7 +377,7 @@ doubt you can think of more.
 other_than_Cavs.where('Salary', are.above_or_equal_to(20))
 ```
 
-| Player            | Position   |   Team                 | Salary  |
+| Player            | Position   |       Team             | Salary  |
 |-------------------|------------|------------------------|---------|
 |   Joe Johnson     |   SF       |  Brooklyn Nets         | 24.8949 |
 |   Derrick Rose    |   PG       |  Chicago Bulls         | 20.0931 |
