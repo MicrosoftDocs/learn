@@ -46,7 +46,7 @@ quiz:
 
   - content: "What's the difference between simulated annealing and quantum annealing?"
     choices:
-    - content: 'Simulated annealing uses thermal jumps overcome energy barriers. Quantum annealing uses quantum tunneling to travel through energy barriers.'
+    - content: 'Simulated annealing uses thermal jumps to overcome energy barriers. Quantum annealing uses quantum tunneling to travel through energy barriers.'
       isCorrect: true
       explanation: "Simulated annealing is based on ideas from thermal physics; quantum annealing is a quantum algorithm."
     - content: 'Simulated annealing can discover only the local minimum of a cost function. Quantum annealing can discover the global minimum.'
