@@ -48,7 +48,7 @@ second: 3 times 3 times 3 times 3). The symbols `*` and `**` are called
 
     81
 
-**Common Operators.** Data science often involves combining numerical
+**Common operators.** Data science often involves combining numerical
 values, and the set of operators in a programming language are designed
 to so that expressions can be used to express any sort of arithmetic. In
 Python, the following operators are essential.

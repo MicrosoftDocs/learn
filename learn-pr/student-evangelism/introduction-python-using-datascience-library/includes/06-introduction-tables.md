@@ -8,7 +8,7 @@ import matplotlib.pyplot as plots
 plots.style.use('fivethirtyeight')
 
 cones = Table.read_table(path_data + 'cones.csv')
-nba = Table.read_table(path_data + 'nba_salaries.csv').relabeled(3, 'SALARY')
+nba = Table.read_table(path_data + 'nba_salaries.csv').relabeled(3, 'Salary')
 movies = Table.read_table(path_data + 'movies_by_year.csv')
 ```
 
@@ -206,7 +206,7 @@ cones.sort('Price', descending=True)
 Like `select` and `drop`, the `sort` method leaves the original table
 unchanged.
 
-### Selecting Rows that Satisfy a Condition
+### Selecting rows that satisfy a condition
 
 The `where` method creates a new table consisting only of the rows that
 satisfy a given condition. In this section we will work with a very
@@ -261,10 +261,10 @@ Each row represents one player. The columns are:
 
 |          |                                                      |
 |----------|------------------------------------------------------|
-| PLAYER   | Player's name                                        |
-| POSITION | Player's position on team                            |
-| TEAM     | Team name                                            |
-| SALARY   | Player's salary in 2015-2016, in millions of dollars |
+| **Player**  | Player's name                                        |
+| **Position** | Player's position on team                            |
+| **Team**     | Team name                                            |
+| **Salary**   | Player's salary in 2015-2016, in millions of dollars |
 
 The code for the positions is PG (Point Guard), SG (Shooting Guard), PF
 (Power Forward), SF (Small Forward), and C (Center). But what follows
@@ -277,7 +277,7 @@ Hawks, had a salary of almost $\$18.7$ million in 2015-2016.
 nba
 ```
 
-| PLAYER           | POSITION | TEAM          | SALARY  |
+| Player           | Position | Team          | Salary  |
 |------------------|----------|---------------|---------|
 | Paul Millsap     | PF       | Atlanta Hawks | 18.6717 |
 | Al Horford       | C        | Atlanta Hawks | 12      |
@@ -295,10 +295,10 @@ nba
 Fans of Stephen Curry can find his row by using `where`.
 
 ``` python
-nba.where('PLAYER', 'Stephen Curry')
+nba.where('Player', 'Stephen Curry')
 ```
 
-| PLAYER        | POSITION | TEAM                  | SALARY  |
+| Player        | Position | Team                  | Salary  |
 |---------------|----------|-----------------------|---------|
 | Stephen Curry | PG       | Golden State Warriors | 11.3708 |
 
@@ -306,11 +306,11 @@ We can also create a new table called `warriors` consisting of just the
 data for the Golden State Warriors.
 
 ``` python
-warriors = nba.where('TEAM', 'Golden State Warriors')
+warriors = nba.where('Team', 'Golden State Warriors')
 warriors
 ```
 
-| PLAYER            | POSITION | TEAM                  | SALARY  |
+| Player            | Position | Team                  | Salary  |
 |-------------------|----------|-----------------------|---------|
 | Klay Thompson     | SG       | Golden State Warriors | 15.501  |
 | Draymond Green    | PF       | Golden State Warriors | 14.2609 |
@@ -333,7 +333,7 @@ with no argument in the parentheses.
 warriors.show()
 ```
 
-| PLAYER            | POSITION | TEAM                  | SALARY   |
+| Player            | Position | Team                  | Salary   |
 |-------------------|----------|-----------------------|----------|
 | Klay Thompson     | SG       | Golden State Warriors | 15.501   |
 | Draymond Green    | PF       | Golden State Warriors | 14.2609  |
@@ -356,10 +356,10 @@ data by salary. Remember that by default, the sorting is in increasing
 order.
 
 ``` python
-nba.sort('SALARY')
+nba.sort('Salary')
 
 ```
-| PLAYER                 | POSITION | TEAM                 | SALARY   |
+| Player                 | Position | Team                 | Salary   |
 |------------------------|----------|----------------------|----------|
 | Thanasis Antetokounmpo | SF       | New York Knicks      | 0.030888 |
 | Jordan McRae           | SG       | Phoenix Suns         | 0.049709 |
@@ -383,10 +383,10 @@ who are among the highest paid in the world. To identify these players
 we can sort in descending order of salary and look at the top few rows.
 
 ``` python
-nba.sort('SALARY', descending=True)
+nba.sort('Salary', descending=True)
 ```
 
-| PLAYER          | POSITION | TEAM                  | SALARY  |
+| Player          | Position | Team                  | Salary  |
 |-----------------|----------|-----------------------|---------|
 | Kobe Bryant     | SF       | Los Angeles Lakers    | 25      |
 | Joe Johnson     | SF       | Brooklyn Nets         | 24.8949 |
@@ -405,4 +405,4 @@ Kobe Bryant, since retired, was the highest earning NBA player in
 
 ## Check your knowledge
 
- You have a table of the top 50 most played songs on spotify called top_50_songs with columns rank (an integer), song_name (a string), artist_name (a string), and num_plays (an integer)
+ You have a table of the top 50 most played songs on Spotify called top_50_songs with columns rank (an integer), song_name (a string), artist_name (a string), and num_plays (an integer)

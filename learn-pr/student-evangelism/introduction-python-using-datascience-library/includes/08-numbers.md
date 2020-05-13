@@ -103,7 +103,7 @@ type(x + 2.5)
 
     float
 
-## More About Float Values
+## More about float values
 
 Float values are very flexible, but they do have limits.
 

@@ -3,7 +3,7 @@
 
 If you haven't set up your online Virtual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**.
 
-## Example: Growth Rates
+## Example: growth rates
 
 The relationship between two measurements of the same quantity taken at
 different times is often expressed as a *growth rate*. For example, the

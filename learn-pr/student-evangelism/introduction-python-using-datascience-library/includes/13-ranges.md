@@ -139,7 +139,7 @@ import numpy as np
 path_data = '../../../../data/'
 ```
 
-## More on Arrays
+## More on arrays
 
 It's often necessary to compute something that involves data from more
 than one array. If two arrays are of the same size, Python makes it easy

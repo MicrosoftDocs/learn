@@ -41,12 +41,12 @@ sum(highs)/len(highs)
 
 The complete chart of daily high and low temperatures appears below.
 
-### Mean of Daily High Temperature
+### Mean of daily high temperature
 
 ![Mean of Daily High
 Temperature](http://berkeleyearth.lbl.gov/auto/Regional/TMAX/Figures/global-land-TMAX-Trend.png)
 
-### Mean of Daily Low Temperature
+### Mean of daily low temperature
 
 ![Mean of Daily Low
 Temperature](http://berkeleyearth.lbl.gov/auto/Regional/TMIN/Figures/global-land-TMIN-Trend.png)
@@ -129,7 +129,7 @@ highs.mean()
 
     14.434000000000001
 
-#### Functions on Arrays
+#### Functions on arrays
 
 The `numpy` package, abbreviated `np` in programs, provides Python
 programmers with convenient and powerful functions for creating and
