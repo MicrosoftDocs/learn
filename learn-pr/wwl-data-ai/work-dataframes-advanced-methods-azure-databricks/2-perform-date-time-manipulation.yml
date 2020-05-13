@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-dataframes-advanced-methods-azure-databricks.perform-date-time-manipulation
+title: Perform date and time manipulation
+metadata:
+  title: Perform date and time manipulation
+  description: "Perform date and time manipulation"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-perform-date-time-manipulation.md)]
