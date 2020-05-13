@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -44,11 +44,11 @@ all other employees of the City.
 
 Compensation data for the calendar year 2015 are in the table `sf2015`.
 
-``` {.python}
+``` python
 sf2015 = Table.read_table(path_data + 'san_francisco_2015.csv')
 ```
 
-``` {.python}
+``` python
 sf2015
 ```
 
@@ -73,7 +73,7 @@ details of the different parts of the employee's compensation package.
 Here is the row correspoding to the late Edward Lee, the Mayor at that
 time.
 
-``` {.python}
+``` python
 sf2015.where('Job', are.equal_to('Mayor'))
 ```
 
@@ -90,7 +90,7 @@ understand as they depend on the date of hire, whether the employee is
 changing jobs within the City, and so on. For example, the lowest values
 in the `Total Compensation` column look a little strange.
 
-``` {.python}
+``` python
 sf2015.sort('Total Compensation')
 ```
 
@@ -115,11 +115,11 @@ at least the equivalent of a half-time job for the whole year. At a
 minimum wage of about \$ 10per hour, and 20 hours per week for 52 weeks,
 that's a salary of about \$10,000.
 
-``` {.python}
+``` python
 sf2015 = sf2015.where('Salaries', are.above(10000))
 ```
 
-``` {.python}
+``` python
 sf2015.num_rows
 ```
 
@@ -130,19 +130,19 @@ sf2015.num_rows
 Let this table of just over 36,500 rows be our population. Here is a
 histogram of the total compensations.
 
-``` {.python}
+``` python
 sf_bins = np.arange(0, 700000, 25000)
 sf2015.select('Total Compensation').hist(bins=sf_bins)
 ```
 
-![png](../media/65-bootstrap-14-0.png)
+![Bootstrap example](../media/65-bootstrap-14-0.png)
 
 While most of the values are below \$300,000, a few are quite a bit
 higher. For example, the total compensation of the Chief Investment
 Officer was almost \$650,000. That is why the horizontal axis stretches
 to \$700,000.
 
-``` {.python}
+``` python
 sf2015.sort('Total Compensation', descending=True).show(2)
 ```
 
@@ -158,7 +158,7 @@ Now let the parameter be the median of the total compensations.
 Since we have the luxury of having all of the data from the population,
 we can simply calculate the parameter:
 
-``` {.python}
+``` python
 pop_median = percentile(50, sf2015.column('Total Compensation'))
 pop_median
 ```
@@ -181,14 +181,14 @@ Let us draw a sample of 500 employees at random without replacement, and
 let the median total compensation of the sampled employees serve as our
 estimate of the parameter.
 
-``` {.python}
+``` python
 our_sample = sf2015.sample(500, with_replacement=False)
 our_sample.select('Total Compensation').hist(bins=sf_bins)
 ```
 
-![png](../media/65-bootstrap-21-0.png)
+![Bootstrap example](../media/65-bootstrap-21-0.png)
 
-``` {.python}
+``` python
 est_median = percentile(50, our_sample.column('Total Compensation'))
 est_median
 ```
@@ -248,13 +248,13 @@ distributions of all the "resamples" are likely to resemble the original
 sample. So the distributions of all the resamples are likely to resemble
 the population as well.
 
-``` {.python}
+``` python
 
 from IPython.display import Image
 Image("../../../images/bootstrap_pic.png")
 ```
 
-![png](../media/65-bootstrap-25-0.png)
+![Bootstrap example](../media/65-bootstrap-25-0.png)
 
 ### A Resampled Median
 
@@ -264,17 +264,17 @@ from which the sample is drawn. That's perfect for the bootstrap! Here
 is one new sample drawn from the original sample, and the corresponding
 sample median.
 
-``` {.python}
+``` python
 resample_1 = our_sample.sample()
 ```
 
-``` {.python}
+``` python
 resample_1.select('Total Compensation').hist(bins=sf_bins)
 ```
 
-![png](../media/65-bootstrap-28-0.png)
+![Bootstrap example](../media/65-bootstrap-28-0.png)
 
-``` {.python}
+``` python
 resampled_median_1 = percentile(50, resample_1.column('Total Compensation'))
 resampled_median_1
 ```
@@ -285,7 +285,7 @@ By resampling, we have another estimate of the population median. By
 resampling again and again, we will get many such estimates, and hence
 an empirical distribution of the estimates.
 
-``` {.python}
+``` python
 resample_2 = our_sample.sample()
 resampled_median_2 = percentile(50, resample_2.column('Total Compensation'))
 resampled_median_2
@@ -304,7 +304,7 @@ Each time we resample and find the median, we *replicate* the bootstrap
 process. So the number of bootstrap samples will be called the number of
 replications.
 
-``` {.python}
+``` python
 def bootstrap_median(original_sample, label, replications):
     """Returns an array of bootstrapped sample medians:
     original_sample: table containing the original sample
@@ -326,7 +326,7 @@ We now replicate the bootstrap process 5,000 times. The array
 Notice that the code takes longer to run than our previous code. It has
 a lot of resampling to do!
 
-``` {.python}
+``` python
 bstrap_medians = bootstrap_median(our_sample, 'Total Compensation', 5000)
 ```
 
@@ -334,7 +334,7 @@ Here is the histogram of the 5000 medians. The red dot is the population
 parameter: it is the median of the entire population, which we happen to
 know but did not use in the bootstrap process.
 
-``` {.python}
+``` python
 resampled_medians = Table().with_column('Bootstrap Sample Median', bstrap_medians)
 
 #median_bins=np.arange(100000, 130000, 2500)
@@ -344,7 +344,7 @@ resampled_medians.hist()
 plots.scatter(pop_median, 0, color='red', s=30);
 ```
 
-![png](../media/65-bootstrap-37-0.png)
+![Bootstrap example](../media/65-bootstrap-37-0.png)
 
 It is important to remember that the red dot is fixed: it is
 \$110,305.79, the population median. The empirical histogram is the
@@ -366,14 +366,14 @@ middle 95% of the resampled medians contains the red dot".
 
 Here are the two ends of the "middle 95%" interval of resampled medians:
 
-``` {.python}
+``` python
 left = percentile(2.5, bstrap_medians)
 left
 ```
 
 102285.4
 
-``` {.python}
+``` python
 right = percentile(97.5, bstrap_medians)
 right
 ```
@@ -383,7 +383,7 @@ right
 The population median of \$110,305 is between these two numbers. The
 interval and the population median are shown on the histogram below.
 
-``` {.python}
+``` python
 #median_bins=np.arange(100000, 130000, 2500)
 #resampled_medians.hist(bins = median_bins)
 resampled_medians.hist()
@@ -392,7 +392,7 @@ plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=3, zord
 plots.scatter(pop_median, 0, color='red', s=30, zorder=2);
 ```
 
-![png](../media/65-bootstrap-43-0.png)
+![Bootstrap example](../media/65-bootstrap-43-0.png)
 
 The "middle 95%" interval of estimates captured the parameter in our
 example. But was that a fluke?
@@ -412,7 +412,7 @@ the population median.
 number should be around 95. It may be in the low 90s or high 90s, but
 not much farther off 95 than that.
 
-``` {.python}
+``` python
 # THE BIG SIMULATION: This one takes several minutes.
 
 # Generate 100 intervals, in the table intervals
@@ -437,7 +437,7 @@ intervals = Table().with_columns(
 For each of the 100 replications, we get one interval of estimates of
 the median.
 
-``` {.python}
+``` python
 intervals
 ```
 
@@ -460,7 +460,7 @@ The good intervals are those that contain the parameter we are trying to
 estimate. Typically the parameter is unknown, but in this section we
 happen to know what the parameter is.
 
-``` {.python}
+``` python
 pop_median
 ```
 
@@ -470,7 +470,7 @@ How many of the 100 intervals contain the population median? That's the
 number of intervals where the left end is below the population median
 and the right end is above.
 
-``` {.python}
+``` python
 intervals.where('Left', are.below(pop_median)).where('Right', are.above(pop_median)).num_rows
 ```
 
@@ -497,7 +497,7 @@ Any method based on sampling has the possibility of being off. The
 beauty of methods based on random sampling is that we can quantify how
 often they are likely to be off.
 
-``` {.python}
+``` python
 # HIDDEN 
 
 replication_number = np.ndarray.astype(np.arange(1, 101), str)
@@ -513,7 +513,7 @@ plots.ylabel('Replication')
 plots.title('Population Median and Intervals of Estimates');
 ```
 
-![png](../media/65-bootstrap-53-0.png)
+![Bootstrap example](../media/65-bootstrap-53-0.png)
 
 To summarize what the simulation shows, suppose you are estimating the
 population median by the following process:

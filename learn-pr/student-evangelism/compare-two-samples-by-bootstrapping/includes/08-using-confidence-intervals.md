@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -7,7 +7,7 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-``` {.python}
+``` python
 def bootstrap_median(original_sample, label, replications):
     
     """Returns an array of bootstrapped sample medians:
@@ -26,7 +26,7 @@ def bootstrap_median(original_sample, label, replications):
     return medians
 ```
 
-``` {.python}
+``` python
 def bootstrap_mean(original_sample, label, replications):
     
     """Returns an array of bootstrapped sample means:
@@ -45,7 +45,7 @@ def bootstrap_mean(original_sample, label, replications):
     return means
 ```
 
-``` {.python}
+``` python
 def bootstrap_proportion(original_sample, label, replications):
     
     """Returns an array of bootstrapped sample proportions:
@@ -84,11 +84,11 @@ expect 95% of mothers to all be within a few months of each other in
 age. Indeed, the histogram of the sampled ages shows quite a bit of
 variation.
 
-``` {.python}
+``` python
 baby = Table.read_table(path_data + 'baby.csv')
 ```
 
-``` {.python}
+``` python
 baby.select('Maternal Age').hist()
 ```
 
@@ -162,11 +162,11 @@ on the lungs of 22 patients. The columns are:
     lungs
 -   The same score of the health of the lungs, 15 months after treatment
 
-``` {.python}
+``` python
 hodgkins = Table.read_table(path_data + 'hodgkins.csv')
 ```
 
-``` {.python}
+``` python
 hodgkins
 ```
 
@@ -196,13 +196,13 @@ worse 15 months after the treatment. This is confirmed by the mostly
 positive values in the column `drop`, the amount by which the score
 dropped from baseline to 15 months.
 
-``` {.python}
+``` python
 hodgkins = hodgkins.with_column(
     'drop', hodgkins.column('base') - hodgkins.column('month15')
 )
 ```
 
-``` {.python}
+``` python
 hodgkins
 ```
 |height|rad|chemo|base|month15|drop|
@@ -220,7 +220,7 @@ hodgkins
 
 ... (12 rows omitted)
 
-``` {.python}
+``` python
 hodgkins.select('drop').hist(bins=np.arange(-20, 81, 20))
 ```
 
@@ -231,7 +231,7 @@ and has been"
 
 ![png](../media/67-using-confidence-intervals-17-1.png)
 
-``` {.python}
+``` python
 np.mean(hodgkins.column('drop'))
 ```
 
@@ -252,7 +252,7 @@ To test this hypothesis with a 1% cutoff for the P-value, let's
 construct an approximate 99% confidence interval for the average drop in
 the population.
 
-``` {.python}
+``` python
 bstrap_means = bootstrap_mean(hodgkins, 'drop', 10000)
 
 left = percentile(0.5, bstrap_means)
@@ -263,7 +263,7 @@ make_array(left, right)
 
 array(\[17.22636364, 40.54045455\])
 
-``` {.python}
+``` python
 resampled_means = Table().with_column(
     'Bootstrap Sample Mean', bstrap_means
 )
@@ -304,3 +304,7 @@ who first proposed the bootstrap technique, used a term that has
 [American origins](https://en.wikipedia.org/wiki/Bootstrapping). Not to
 be outdone, Chinese statisticians have [proposed their own
 method](http://econpapers.repec.org/article/eeestapro/v_3a37_3ay_3a1998_3ai_3a4_3ap_3a321-329.htm).
+
+## Check your knowledge
+
+'You sample 100 dogs at random from all dogs in Berkeley and compute a 95% confidence interval of their average height. For each of the statements below, state whether they are Always True, Typically True, Not Expected to be True, or False.'

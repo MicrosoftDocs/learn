@@ -6,7 +6,7 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../../data/'
@@ -40,7 +40,7 @@ gestational days, the mother's age in completed years, the mother's
 height in inches, pregnancy weight in pounds, and whether or not the
 mother smoked during pregnancy.
 
-``` {.python}
+``` python
 births = Table.read_table(path_data + 'baby.csv')
 births
 ```
@@ -68,11 +68,11 @@ We'll start by selecting just `Birth Weight` and `Maternal Smoker`.
 There are 715 non-smokers among the women in the sample, and 459
 smokers.
 
-``` {.python}
+``` python
 smoking_and_birthweight = births.select('Maternal Smoker', 'Birth Weight')
 ```
 
-``` {.python}
+``` python
 smoking_and_birthweight.group('Maternal Smoker')
 ```
 
@@ -88,11 +88,11 @@ generate two overlaid histograms, we will use `hist` with the optional
 are first grouped by this column and then a histogram is drawn for each
 one.
 
-``` {.python}
+``` python
 smoking_and_birthweight.hist('Birth Weight', group = 'Maternal Smoker')
 ```
 
-![png](../media/60-ab-testing-8-0.png)
+![AB Testing](../media/60-ab-testing-8-0.png)
 
 The distribution of the weights of the babies born to mothers who smoked
 appears to be based slightly to the left of the distribution
@@ -139,7 +139,7 @@ hypothesis.
 
 The observed value of the test statistic is about $-9.27$ ounces.
 
-``` {.python}
+``` python
 means_table = smoking_and_birthweight.group('Maternal Smoker', np.average)
 means_table
 ```
@@ -149,7 +149,7 @@ means_table
 |False|123.085|
 |True|113.819|
 
-``` {.python}
+``` python
 means = means_table.column(1)
 observed_difference = means.item(1) - means.item(0)
 observed_difference
@@ -170,7 +170,7 @@ three arguments:
 It returns the difference between the means of the `True` group and the
 `False` group.
 
-``` {.python}
+``` python
 def difference_of_means(table, label, group_label):
     reduced = table.select(label, group_label)
     means_table = reduced.group(group_label, np.average)
@@ -181,7 +181,7 @@ def difference_of_means(table, label, group_label):
 To check that the function is working, let's use it to calculate the
 observed difference between the means of the two groups in the sample.
 
-``` {.python}
+``` python
 difference_of_means(births, 'Birth Weight', 'Maternal Smoker')
 ```
 
@@ -211,7 +211,7 @@ under the null hypothesis.
 Let's see how to do this. It's always a good idea to start with the
 data.
 
-``` {.python}
+``` python
 smoking_and_birthweight
 ```
 
@@ -239,12 +239,12 @@ We can use the Table method `sample` with the optional
 size, because by default, `sample` draws as many times as there are rows
 in the table.
 
-``` {.python}
+``` python
 shuffled_labels = smoking_and_birthweight.sample(with_replacement = False).column(0)
 original_and_shuffled = smoking_and_birthweight.with_column('Shuffled Label', shuffled_labels)
 ```
 
-``` {.python}
+``` python
 original_and_shuffled
 ```
 
@@ -271,7 +271,7 @@ re-arrangements of the labels should be equally likely.
 Let's see how different the average weights are in the two randomly
 labeled groups.
 
-``` {.python}
+``` python
 shuffled_only = original_and_shuffled.drop('Maternal Smoker')
 shuffled_group_means = shuffled_only.group('Shuffled Label', np.average)
 shuffled_group_means
@@ -286,13 +286,13 @@ The averages of the two randomly selected groups are quite a bit closer
 than the averages of the two original groups. We can use our function
 `difference_of_means` to find the two differences.
 
-``` {.python}
+``` python
 difference_of_means(original_and_shuffled, 'Birth Weight', 'Shuffled Label')
 ```
 
 -0.6306595365418843
 
-``` {.python}
+``` python
 difference_of_means(original_and_shuffled, 'Birth Weight', 'Maternal Smoker')
 ```
 
@@ -316,7 +316,7 @@ will define a function that takes three arguments:
 It returns the difference between the means of two groups formed by
 randomly shuffling all the labels.
 
-``` {.python}
+``` python
 def one_simulated_difference(table, label, group_label):
     shuffled_labels = table.sample(with_replacement = False
                                                     ).column(group_label)
@@ -327,7 +327,7 @@ def one_simulated_difference(table, label, group_label):
 
 Run the cell below a few times to see how the output changes.
 
-``` {.python}
+``` python
 one_simulated_difference(births, 'Birth Weight', 'Maternal Smoker')
 ```
 
@@ -340,7 +340,7 @@ tests*. We are performing one in this example. In the cell below, we
 will simulate our test statistic -- the difference between the averages
 of the two groups -- many times and collect the differences in an array.
 
-``` {.python}
+``` python
 differences = make_array()
 
 repetitions = 5000
@@ -361,7 +361,7 @@ the empirical distribution of the test statistic simulated under the
 null hypothesis. This is a prediction about the test statistic, based on
 the null hypothesis.
 
-``` {.python}
+``` python
 Table().with_column('Difference Between Group Means', differences).hist()
 print('Observed Difference:', observed_difference)
 plots.title('Prediction Under the Null Hypothesis');
@@ -369,7 +369,7 @@ plots.title('Prediction Under the Null Hypothesis');
 
 Observed Difference: -9.266142572024918
 
-![png](../media/60-ab-testing-36-1.png)
+![AB Testing](../media/60-ab-testing-36-1.png)
 
 Notice how the distribution is centered around 0. This makes sense,
 because under the null hypothesis the two groups should have roughly the
@@ -388,7 +388,7 @@ is less than the average birth weight of babies born to non-smokers.
 If you want to compute an empirical P-value, remember that low values of
 the statistic favor the alternative hypothesis.
 
-``` {.python}
+``` python
 empirical_P = np.count_nonzero(differences <= observed_difference) / repetitions
 empirical_P
 ```
@@ -407,16 +407,16 @@ and the non-smokers, such as their ages. Histograms of the ages of the
 two groups show that in the sample, the mothers who smoked tended to be
 younger.
 
-``` {.python}
+``` python
 smoking_and_age = births.select('Maternal Smoker', 'Maternal Age')
 smoking_and_age.hist('Maternal Age', group = 'Maternal Smoker')
 ```
 
-![png](../media/60-ab-testing-41-0.png)
+![AB Testing](../media/60-ab-testing-41-0.png)
 
 The observed difference between the average ages is about $-0.8$ years.
 
-``` {.python}
+``` python
 observed_age_difference = difference_of_means(births, 'Maternal Age', 'Maternal Smoker')
 observed_age_difference
 ```
@@ -435,7 +435,7 @@ underlying distributions of ages in the two groups are the same, then
 the empirical distribution of the difference based on permuted samples
 will predict how the statistic should vary due to chance.
 
-``` {.python}
+``` python
 age_differences = make_array()
 
 repetitions = 5000
@@ -447,7 +447,7 @@ for i in np.arange(repetitions):
 The observed difference is in the tail of the empirical distribution of
 the differences simulated under the null hypothesis.
 
-``` {.python}
+``` python
 Table().with_column('Difference Between Group Means', age_differences).hist()
 plots.scatter(observed_age_difference, 0, color='red', s=40)
 plots.title('Prediction Under the Null Hypothesis')
@@ -456,14 +456,14 @@ print('Observed Difference:', observed_age_difference)
 
 Observed Difference: -0.8076725017901509
 
-![png](../media/60-ab-testing-47-1.png)
+![AB testing](../media/60-ab-testing-47-1.png)
 
 The empirical P-value of the test is the proportion of simulated
 differences that were equal to or less than the observed difference.
 This is because low values of the difference favor the alternative
 hypothesis that the smokers were younger on average.
 
-``` {.python}
+``` python
 empirical_P = np.count_nonzero(age_differences <= observed_age_difference) / 5000
 empirical_P
 ```

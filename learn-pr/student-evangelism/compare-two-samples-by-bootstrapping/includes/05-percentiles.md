@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -43,7 +43,7 @@ For example, let's consider the sizes of the five largest continents --
 Africa, Antarctica, Asia, North America, and South America -- rounded to
 the nearest million square miles.
 
-``` {.python}
+``` python
 sizes = make_array(12, 17, 6, 9, 7)
 ```
 
@@ -51,7 +51,7 @@ The 80th percentile is the smallest value that is at least as large as
 80% of the elements of `sizes`, that is, four-fifths of the five
 elements. That's 12:
 
-``` {.python}
+``` python
 np.sort(sizes)
 ```
 
@@ -71,7 +71,7 @@ on the list. That's 12, the same as the 80th percentile for these data.
 The `percentile` function takes two arguments: a rank between 0 and 100,
 and a array. It returns the corresponding percentile of the array.
 
-``` {.python}
+``` python
 percentile(70, sizes)
 ```
 
@@ -100,7 +100,7 @@ The table `scores_and_sections` contains one row for each student in a
 class of 359 students. The columns are the student's discussion section
 and midterm score.
 
-``` {.python}
+``` python
 scores_and_sections = Table.read_table(path_data + 'scores_by_section.csv')
 scores_and_sections
 ```
@@ -120,7 +120,7 @@ scores_and_sections
 
 ... (349 rows omitted)
 
-``` {.python}
+``` python
 scores_and_sections.select('Midterm').hist(bins=np.arange(-0.5, 25.6, 1))
 ```
 
@@ -130,11 +130,11 @@ What was the 85th percentile of the scores? To use the `percentile`
 function, create an array `scores` containing the midterm scores, and
 find the 85th percentile:
 
-``` {.python}
+``` python
 scores = scores_and_sections.column(1)
 ```
 
-``` {.python}
+``` python
 percentile(85, scores)
 ```
 
@@ -146,14 +146,14 @@ definition directly.
 
 First, put the scores in increasing order:
 
-``` {.python}
+``` python
 sorted_scores = np.sort(scores_and_sections.column(1))
 ```
 
 There are 359 scores in the array. So next, find 85% of 359, which is
 305.15.
 
-``` {.python}
+``` python
 0.85 * 359
 ```
 
@@ -163,7 +163,7 @@ That's not an integer. By our definition, the 85th percentile is the
 306th element of `sorted_scores`, which, by Python's indexing
 convention, is item 305 of the array.
 
-``` {.python}
+``` python
 # The 306th element of the sorted array
 
 sorted_scores.item(305)
@@ -182,19 +182,19 @@ the median, and the third quartile is the 75th percentile.
 
 For our `scores` data, those values are:
 
-``` {.python}
+``` python
 percentile(25, scores)
 ```
 
     11
 
-``` {.python}
+``` python
 percentile(50, scores)
 ```
 
     16
 
-``` {.python}
+``` python
 percentile(75, scores)
 ```
 

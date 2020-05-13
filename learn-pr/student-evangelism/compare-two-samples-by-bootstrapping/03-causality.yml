@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/03-causality.md)]
 quiz:
-  title: Check your Knowledge
+ 
   questions:
     - content: 'What kind of study is this?'
       choices:

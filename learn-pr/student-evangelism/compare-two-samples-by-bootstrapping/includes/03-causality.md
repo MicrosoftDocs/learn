@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -52,7 +52,7 @@ treatment group and two of the 16 in the control group had pain relief
 are in the table `bta` and appear to show that the treatment has a clear
 benefit.
 
-``` {.python}
+``` python
 bta = Table.read_table(path_data + 'bta.csv')
 bta.show()
 ```
@@ -96,7 +96,7 @@ Remember that counting is the same as adding zeros and ones. The sum of
 pain relief. So the *average* of the number of 1's is the *proportion*
 of control group patients who had pain relief.
 
-``` {.python}
+``` python
 bta.group('Group', np.average)
 ```
 
@@ -158,7 +158,7 @@ patient's potential outcomes, leaving the unobserved half of each
 "ticket" blank. (It's just another way of thinking about the `bta`
 table, carrying the same information.)
 
-``` {.python}
+``` python
 observed_outcomes = Table.read_table(path_data + "observed_outcomes.csv")
 observed_outcomes.show()
 ```
@@ -245,7 +245,7 @@ over the null.
 Since the two group proportions were 0.6 and 0.125, the observed value
 of the test statistic is $\big{\vert} 0.6 - 0.125 \big{\vert} = 0.475$.
 
-``` {.python}
+``` python
 bta.group('Group', np.average)
 ```
 
@@ -254,7 +254,7 @@ bta.group('Group', np.average)
 |Control|0.125|
 |Treatment|0.6|
 
-``` {.python}
+``` python
 observed_proportions = bta.group('Group', np.average).column(1)
 observed_distance = abs(observed_proportions.item(0) - observed_proportions.item(1))
 observed_distance
@@ -271,14 +271,14 @@ following arguments:
 
 and returns the absolute difference between the two group proportions.
 
-``` {.python}
+``` python
 def distance(table, label, group_label):
     reduced = table.select(label, group_label)
     proportions = reduced.group(group_label, np.average).column(1)
     return abs(proportions.item(1) - proportions.item(0))
 ```
 
-``` {.python}
+``` python
 distance(bta, 'Result', 'Group')
 ```
 
@@ -295,11 +295,11 @@ The simulation follows exactly the same process we used in the previous
 section. We start by randomly permuting the all group labels and then
 attaching the shuffled labels to the 0/1 results.
 
-``` {.python}
+``` python
 shuffled_labels = bta.sample(with_replacement=False).column(0)
 ```
 
-``` {.python}
+``` python
 bta_with_shuffled_labels = bta.with_column('Shuffled Label', shuffled_labels)
 bta_with_shuffled_labels.show()
 ```
@@ -341,7 +341,7 @@ bta_with_shuffled_labels.show()
 We can now find the distance between the two proportions after the group
 labels have been shuffled.
 
-``` {.python}
+``` python
 distance(bta_with_shuffled_labels, 'Result', 'Shuffled Label')
 ```
 
@@ -350,7 +350,7 @@ distance(bta_with_shuffled_labels, 'Result', 'Shuffled Label')
 This is different from the distance between the two original
 proportions.
 
-``` {.python}
+``` python
 distance(bta_with_shuffled_labels, 'Result', 'Group')
 ```
 
@@ -367,7 +367,7 @@ such simulated values in an array.
 You can see that we are doing exactly what we did in our previous
 examples of the permutation test.
 
-``` {.python}
+``` python
 def one_simulated_distance(table, label, group_label):
     shuffled_labels = table.sample(with_replacement = False
                                                     ).column(group_label)
@@ -376,7 +376,7 @@ def one_simulated_distance(table, label, group_label):
     return distance(shuffled_table, label, 'Shuffled Label')
 ```
 
-``` {.python}
+``` python
 distances = make_array()
 
 repetitions = 20000
@@ -395,7 +395,7 @@ statistic favor the alternative hypothesis. So the empirical P-value is
 the proportion of simulated statistics that were equal to or larger than
 the observed statistic.
 
-``` {.python}
+``` python
 empirical_P = np.count_nonzero(distances >= observed_distance) / repetitions
 empirical_P
 ```
@@ -410,7 +410,7 @@ The result is statistically significant. The test favors the alternative
 hypothesis over the null. The evidence supports the hypothesis that the
 treatment is doing something.
 
-``` {.python}
+``` python
 Table().with_column('Distance', distances).hist(bins = np.arange(0, 0.7, 0.1))
 plots.scatter(observed_distance, 0, color='red', s=40)
 plots.title('Prediction Under the Null Hypothesis')
@@ -420,7 +420,7 @@ print('Empirical P-value:', round(empirical_P, 4) *100, '%')
 
 Observed Distance 0.475 Empirical P-value: 0.8500000000000001%
 
-![png](../media/62-causality-30-1.png)
+![Causality example](../media/62-causality-30-1.png)
 
 The study reports a P-value of 0.009, or 0.9%, which is not far from our
 empirical value.
@@ -485,5 +485,6 @@ is a crucial part of this work. Now that you know how to do that, you
 are well positioned to help medical and other professions establish
 cause-and-effect relations.
 
-> [!IMPORTANT]
-> Knowledge Check Question: 'In 2013, a Berkeley chemical engineering professor, Jay Keasling, discovered a synthetic version of artemisinin - a chemical crucial to producing antimalarial drugs. A group of researchers and statisticians come together to test the effectiveness of this new chemical, which is being used to treat malaria in developing countries. A random sample of 500 malaria patients is randomly assigned to take either the antimalarial drug or a placebo pill. It turns out that among the patients who took the drug, a much larger proportion recovered from malaria than those who took the placebo. Meanwhile, cases of malaria are decreasing in developing nations, and some suggest that this might be because of the increased effectiveness of mosquito nets being distributed.'
+## Check your knowledge
+
+'In 2013, a Berkeley chemical engineering professor, Jay Keasling, discovered a synthetic version of artemisinin - a chemical crucial to producing antimalarial drugs. A group of researchers and statisticians come together to test the effectiveness of this new chemical, which is being used to treat malaria in developing countries. A random sample of 500 malaria patients is randomly assigned to take either the antimalarial drug or a placebo pill. It turns out that among the patients who took the drug, a much larger proportion recovered from malaria than those who took the placebo. Meanwhile, cases of malaria are decreasing in developing nations, and some suggest that this might be because of the increased effectiveness of mosquito nets being distributed.'

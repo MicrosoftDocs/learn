@@ -13,7 +13,7 @@ durationInMinutes: 5
 content: |
   [!include[](includes/08-using-confidence-intervals.md)]
 quiz:
-  title: Checking your Knowledge
+
   questions:
     - content: 'The chance that the average height of all dogs in Berkeley is in this interval is 95%.'
       choices:

@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -42,7 +42,7 @@ Colts was not inspected at half-time. Nor were most of the Colts' balls
 -- the officials simply ran out of time and had to relinquish the balls
 for the start of second half play.
 
-``` {.python}
+``` python
 football = Table.read_table(path_data + 'deflategate.csv')
 football.show()
 ```
@@ -70,7 +70,7 @@ same object yield different results, especially when the measurements
 are performed by different people. So we will assign to each the ball
 the average of the two measurements made on that ball.
 
-``` {.python}
+``` python
 football = football.with_column(
     'Combined', (football.column(1)+football.column(2))/2
     ).drop(1, 2)
@@ -111,13 +111,13 @@ consisting of four values each of which is all 13. We will use the NumPy
 function `np.ones`, which takes a count as its argument and returns an
 array of that many elements, each of which is 1.
 
-``` {.python}
+``` python
 np.ones(11)
 ```
 
 array(\[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.\])
 
-``` {.python}
+``` python
 patriots_start = 12.5 * np.ones(11)
 colts_start = 13 * np.ones(4)
 start = np.append(patriots_start, colts_start)
@@ -130,7 +130,7 @@ array(\[12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5,
 The drop in pressure for each football is the difference between the
 starting pressure and the combined pressure measurement.
 
-``` {.python}
+``` python
 drop = start - football.column('Combined')
 football = football.with_column('Pressure Drop', drop)
 football.show()
@@ -157,7 +157,7 @@ It looks as though the Patriots' drops were larger than the Colts'.
 Let's look at the average drop in each of the two groups. We no longer
 need the combined scores.
 
-``` {.python}
+``` python
 football = football.drop('Combined')
 football.group('Team', np.average)
 ```
@@ -192,7 +192,7 @@ which we will compute as "average drop for Patriots - average drop for
 Colts". Large values of this statistic will favor the alternative
 hypothesis.
 
-``` {.python}
+``` python
 observed_means = football.group('Team', np.average).column(1)
 
 observed_difference = observed_means.item(1) - observed_means.item(0)
@@ -216,7 +216,7 @@ It returns the difference between the means of the two groups.
 We have defined this function in an earlier section. The definition is
 repeated here for ease of reference.
 
-``` {.python}
+``` python
 def difference_of_means(table, label, group_label):
     reduced = table.select(label, group_label)
     means_table = reduced.group(group_label, np.average)
@@ -224,7 +224,7 @@ def difference_of_means(table, label, group_label):
     return means.item(1) - means.item(0)
 ```
 
-``` {.python}
+``` python
 difference_of_means(football, 'Pressure Drop', 'Team')
 ```
 
@@ -240,7 +240,7 @@ footballs are labeled Patriots and which are labeled Colts. The
 distributions of the two sets of drops would be the same. We can
 simulate this by randomly shuffling the team labels.
 
-``` {.python}
+``` python
 shuffled_labels = football.sample(with_replacement=False).column(0)
 original_and_shuffled = football.with_column('Shuffled Label', shuffled_labels)
 original_and_shuffled.show()
@@ -266,13 +266,13 @@ original_and_shuffled.show()
 
 How do all the group averages compare?
 
-``` {.python}
+``` python
 difference_of_means(original_and_shuffled, 'Pressure Drop', 'Shuffled Label')
 ```
 
 0.11988636363636407
 
-``` {.python}
+``` python
 difference_of_means(original_and_shuffled, 'Pressure Drop', 'Team')
 ```
 
@@ -292,7 +292,7 @@ teams.
 Once again, we will use the function `one_simulated_difference` defined
 in an earlier section as follows.
 
-``` {.python}
+``` python
 def one_simulated_difference(table, label, group_label):
     shuffled_labels = table.sample(with_replacement = False
                                                     ).column(group_label)
@@ -305,7 +305,7 @@ We can now use this function to create an array `differences` that
 contains 10,000 values of the test statistic simulated under the null
 hypothesis.
 
-``` {.python}
+``` python
 differences = make_array()
 
 repetitions = 10000
@@ -325,7 +325,7 @@ P-value is the chance (computed under the null hypothesis) of getting a
 test statistic equal to our observed value of 0.733522727272728 or
 larger.
 
-``` {.python}
+``` python
 empirical_P = np.count_nonzero(differences >= observed_difference) / 10000
 empirical_P
 ```
@@ -336,7 +336,7 @@ That's a pretty small P-value. To visualize this, here is the empirical
 distribution of the test statistic under the null hypothesis, with the
 observed statistic marked on the horizontal axis.
 
-``` {.python}
+``` python
 Table().with_column('Difference Between Group Averages', differences).hist()
 plots.scatter(observed_difference, 0, color='red', s=30)
 plots.title('Prediction Under the Null Hypothesis')
@@ -346,7 +346,7 @@ print('Empirical P-value:', empirical_P)
 
 Observed Difference: 0.733522727272728 Empirical P-value: 0.0043
 
-![png](../media/61-deflategate-31-1.png)
+![Deflategate example](../media/61-deflategate-31-1.png)
 
 As in previous examples of this test, the bulk of the distribution is
 centered around 0. Under the null hypothesis, the Patriots' drops are a
