@@ -53,14 +53,14 @@ values, and the set of operators in a programming language are designed
 to so that expressions can be used to express any sort of arithmetic. In
 Python, the following operators are essential.
 
-|  Expression Type |  Operator |  Example   | Example   |
-|------------------|-----------|------------|-----------|
+|  Expression Type |  Operator |  Example   | Example   |  
+|------------------|-----------|------------|-----------|  
 |  Addition        |     `+`   |   `2 + 3`  |   `5`     |   
-|  Subtraction     |     `-`   |   `2 - 3   |   `-1`    |
-|  Multiplication  |     `*`   |   `2 * 3`  |   `6`     |
-|  Division        |     `/`   |   `7 / 3`  | `2.66667` |
-|  Remainder       |     `%`   |   `7 / 3`  |    `1`    |
-|  Exponentiation  |     `**`  | `2 ** 0.5` | `1.41421` |
+|  Subtraction     |     `-`   |   `2 - 3   |   `-1`    |  
+|  Multiplication  |     `*`   |   `2 * 3`  |   `6`     |  
+|  Division        |     `/`   |   `7 / 3`  | `2.66667` |  
+|  Remainder       |     `%`   |   `7 / 3`  |    `1`    |  
+|  Exponentiation  |     `**`  | `2 ** 0.5` | `1.41421` |  
 
 Python expressions obey the same familiar rules of *precedence* as in
 algebra: multiplication and division occur before addition and
