@@ -241,19 +241,11 @@ The table below compares what we know about all distributions and about
 normal distributions. Notice that when $z=1$, Chebychev's bound is
 correct but not illuminating.
 
-| Percent in Range \| All Distributions: Bound \| Normal Distribution:
-  Approximation \|
-| :--------------- \| :---------------- --\| :-------------------\|
-
-\|average $\pm$ 1 SD \| at least 0% \| about 68% \| \|average $\pm$ 2
-SDs \| at least 75% \| about 95% \| \|average $\pm$ 3 SDs \| at least
-88.888...% \| about 99.73% \|
-
-``` python
-```
-68% \| \|average $\pm$ 2
-SDs \| at least 75% \| about 95% \| \|average $\pm$ 3 SDs \| at least
-88.888...% \| about 99.73% \|
+| Percent in Range | All Distributions: Bound | Normal Distribution: Approximation |
+|--------------------|-----------------------|-------------------|
+|average $\pm$ 1 SD  | at least 0%           | about 68%         |
+|average $\pm$ 2 SDs | at least 75%          | about 95%         |
+|average $\pm$ 3 SDs | at least 88.888...%   | about 99.73%      |
 
 ## Check your knowledge
 
