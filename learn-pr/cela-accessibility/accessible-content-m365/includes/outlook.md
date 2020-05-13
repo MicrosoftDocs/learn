@@ -32,7 +32,7 @@ The default fonts you use in Outlook messages should be easy to read. Large san
 To set the default font for all messages:
 
 1. Select **File** \> **Options** \> **Mail**.
-2. In the Compose messages section, select **Stationery and Fonts** \> **Personal Stationery.**
+2. In the Compose messages section, select **Stationery and Fonts** \> **Personal Stationery**.
 3. For **New mail messages**, select **Font**, then set a default sans serif font.
 
 :::image type="content" source="../media/calibri.png" alt-text="Calibri sans serif font selected in the Font menu of the New mail message option":::
