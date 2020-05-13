@@ -52,6 +52,6 @@ quiz:
     - content: 'Simulated annealing can discover only the local minimum of a cost function. Quantum annealing can discover the global minimum.'
       isCorrect: false
       explanation: "You can use both methods to find the global minimum of a cost function."
-    - content: "They're different names used to descibe the same physical process."
+    - content: "They're different names used to describe the same physical process."
       isCorrect: false
       explanation: "One of these methods is based on ideas from thermal physics; the other is a quantum algorithm."
