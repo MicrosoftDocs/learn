@@ -201,7 +201,7 @@ Here is a histogram of the players' heights.
 nba13.select('Height').hist(bins=np.arange(68, 88, 1))
 ```
 
-![png](../media/70-variability-22-1.png)
+![variability example](../media/70-variability-22-1.png)
 
 It is no surprise that NBA players are tall! Their average height is
 just over 79 inches (6'7\"), about 10 inches taller than the average
@@ -305,7 +305,7 @@ the mean and SD of the ages.
 nba13.select('Age in 2013').hist(bins=np.arange(15, 45, 1))
 ```
 
-![png](../media/70-variability-39-1.png)
+![variability example](../media/70-variability-39-1.png)
 
 ``` python
 ages = nba13.column('Age in 2013')
@@ -514,7 +514,6 @@ united.hist('Delay (Standard Units)', bins=np.arange(-5, 15.5, 0.5))
 plots.xticks(np.arange(-6, 17, 3));
 ```
 
-![png](../media/70-variability-59-1.png)
+![variability example](../media/70-variability-59-1.png)
 
 ## Check your Knowledge
-

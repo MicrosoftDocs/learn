@@ -50,7 +50,7 @@ plots.scatter(pop_mean, -0.0008, marker='^', color='darkblue', s=60)
 plots.ylim(-0.004, 0.04);
 ```
 
-![png](../media/73-variability-sample-mean-5-1.png)
+![Sample mean example](../media/73-variability-sample-mean-5-1.png)
 
 Now let's take random samples and look at the probability distribution
 of the sample mean. As usual, we will use simulation to get an empirical
@@ -104,7 +104,7 @@ plots.ylim(0, 0.25);
     Population SD: 39.480199851609314
     SD of sample means: 3.8997187931829136
 
-![png](../media/73-variability-sample-mean-9-2.png)
+![Sample mean example](../media/73-variability-sample-mean-9-2.png)
 
 ``` python
 simulate_sample_mean(delay, 'Delay', 400, 10000)
@@ -118,7 +118,7 @@ plots.ylim(0, 0.25);
     Population SD: 39.480199851609314
     SD of sample means: 1.9777759739145762
 
-![png](../media/73-variability-sample-mean-10-2.png)
+![Sample mean example](../media/73-variability-sample-mean-10-2.png)
 
 ``` python
 simulate_sample_mean(delay, 'Delay', 625, 10000)
@@ -132,7 +132,7 @@ plots.ylim(0, 0.25);
     Population SD: 39.480199851609314
     SD of sample means: 1.5794443889422805
 
-![png](../media/73-variability-sample-mean-11-2.png)
+![Sample mean example](../media/73-variability-sample-mean-11-2.png)
 
 You can see the Central Limit Theorem in action -- the histograms of the
 sample means are roughly normal, even though the histogram of the delays
@@ -228,7 +228,7 @@ two graphs are essentially indistinguishable.
 sd_comparison.plot('Sample Size n')
 ```
 
-![png](../media/73-variability-sample-mean-20-0.png)
+![Sample mean example](../media/73-variability-sample-mean-20-0.png)
 
 There really are two curves there. But they are so close to each other
 that it looks as though there is just one.
@@ -291,4 +291,3 @@ of the sample mean goes up by the square root of that factor.
 
 So to increase accuracy by a factor of 10, you have to multiply sample
 size by a factor of 100. Accuracy doesn't come cheap!
-
