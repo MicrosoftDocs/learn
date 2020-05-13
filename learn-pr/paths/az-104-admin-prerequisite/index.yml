@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.az104-admin-prerequisite
+metadata:
+  title: AZ-104 Prerequisite for Administrators learning path
+  description: Learn the basic concepts you'll need to know as an Azure administrator.
+  brand: azure
+  ms.date: 05/13/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: AZ-104 Prerequisite for Administrators learning path
+summary: |
+  If you're an IT Administrator that's new to Azure and need help preparing for the [Exam AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/exams/az-104), this path is the place to start. Learn the basic concepts you'll need to know as an Azure administrator. 
+prerequisites: None
+iconUrl: /learn/achievements/az-104-admin-prerequisite.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-virtual-machines
+- azure-virtual-network
+- azure-clis
+- azure-active-directory
+- azure-container-instances
+- azure-container-registry
+- azure-storage
+modules:
+- learn.intro-to-governance​
+- learn.introduction-to-azure-virtual-machines​
+- learn.azure.network-fundamentals​
+- learn.azure.network-fundamentals-2​
+- learn.control-azure-services-with-cli​
+- learn.intro-to-azure-ad​
+- learn.intro-to-docker-containers​
+- learn.choose-storage-approach-in-azure​
+trophy:
+  uid: learn.az104-admin-prerequisite.trophy
