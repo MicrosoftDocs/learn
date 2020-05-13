@@ -31,7 +31,7 @@ units:
 - learn.accessible-content-m365.powerpoint
 - learn.accessible-content-m365.excel
 - learn.accessible-content-m365.outlook
-- learn.accessible-content-m365.summary-and-resources
 - learn.accessible-content-m365.knowledge-check
+- learn.accessible-content-m365.summary-resources
 badge:
   uid: learn.accessible-content-m365.badge
