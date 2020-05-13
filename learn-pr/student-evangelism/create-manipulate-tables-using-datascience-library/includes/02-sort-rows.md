@@ -25,7 +25,7 @@ The code for the positions is PG (Point Guard), SG (Shooting Guard), PF
 doesn't involve details about how basketball is played.
 
 The first row shows that Paul Millsap, Power Forward for the Atlanta
-Hawks, had a salary of almost $\$18.7$ million in 2015-2016.
+Hawks, had a salary of almost $18.7 million in 2015-2016.
 
 ``` python
 # This table can be found online: https://www.statcrunch.com/app/index.php?dataid=1843341

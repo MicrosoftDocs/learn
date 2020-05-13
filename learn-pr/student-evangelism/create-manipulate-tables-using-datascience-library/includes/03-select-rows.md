@@ -28,18 +28,18 @@ For example, if we wanted just the first row of `nba`, we could use
 nba
 ```
 
-| Player           | Position |    Team       | Salary  |
-|------------------|----------|---------------|---------|
-| Paul Millsap     | PF       | Atlanta Hawks | 18.6717 |
-| Al Horford       | C        | Atlanta Hawks | 12      |
-| Tiago Splitter   | C        | Atlanta Hawks | 9.75625 |
-| Jeff Teague      | PG       | Atlanta Hawks | 8       |
-| Kyle Korver      | SG       | Atlanta Hawks | 5.74648 |
-| Thabo Sefolosha  | SF       | Atlanta Hawks | 4       |
-| Mike Scott       | PF       | Atlanta Hawks | 3.33333 |
-| Kent Bazemore    | SF       | Atlanta Hawks | 2       |
-| Dennis Schroder  | PG       | Atlanta Hawks | 1.7634  |
-| Tim Hardaway Jr. | SG       | Atlanta Hawks | 1.30452 |
+| Player                |     Position   |           Team       |   Salary  |
+|-----------------------|----------------|----------------------|-----------|
+| Paul Millsap          |       PF       |     Atlanta Hawks    |   18.6717 |
+| Al Horford            |       C        |     Atlanta Hawks    |   12      |
+| Tiago Splitter        |       C        |     Atlanta Hawks    |   9.75625 |
+| Jeff Teague           |       PG       |     Atlanta Hawks    |   8       |
+| Kyle Korver           |       SG       |     Atlanta Hawks    |   5.74648 |
+| Thabo Sefolosha       |       SF       |     Atlanta Hawks    |   4       |
+| Mike Scott            |       PF       |     Atlanta Hawks    |   3.33333 |
+| Kent Bazemore         |       SF       |     Atlanta Hawks    |   2       |
+| Dennis Schroder       |       PG       |     Atlanta Hawks    |   1.7634  |
+| Tim Hardaway Jr.      |       SG       |     Atlanta Hawks    |   1.30452 |
 
 ... (407 rows omitted)
 
