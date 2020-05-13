@@ -46,5 +46,6 @@ this function, strings can be constructed that have embedded values.
 
     "That's 2 True"
 
- > [!IMPORTANT]
- > For the knowledge check below: The following commands are executed in order, what would python display? We first run six = "6"
+## Check your knowledge 
+
+The following commands are executed in order, what would python display? We first run six = "6"
