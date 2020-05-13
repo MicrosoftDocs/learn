@@ -15,4 +15,4 @@ Now that you have reviewed this module, you should be able to:
   * If you'd like to read about best practices for software engineering teams working with machine learning, [this study published by the IEEE Computer Society](https://www.microsoft.com/research/publication/software-engineering-for-machine-learning-a-case-study/) is a great place to start.
 * Download PDF of Manage the machine learning lifecycle with MLOps.
   * To learn more about model drift, we recommend [this resource from Databricks](https://databricks.com/blog/2019/09/18/productionizing-machine-learning-from-deployment-to-drift-detection.html).
-  
+* Microsoft Services partners with forward-thinking businesses to apply enterprise technology to business problems by understanding their goals, identifying risks, and guiding each step of their digital transformation. Call or contact your Microsoft account representative, or visit [our services page](https://enterprise.microsoft.com/services), to discover how Microsoft Services has helped customers with their transformation journey.

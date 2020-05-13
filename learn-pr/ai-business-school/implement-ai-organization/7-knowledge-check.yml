@@ -54,6 +54,6 @@ quiz:
     - content: "H1 initiatives can be carried out quickly, driving immediate value to the business."
       isCorrect: false
       explanation: "Incorrect. H1 initiatives optimize core business functions, but there’s no timetable for how long this may take."
-    - content: "It’s also helpful to grow capabilities and get buy-in with simpler technologies before moving on to more complex projects."
+    - content: "Horizon 1 initiatives can grow capabilities and get buy-in with simpler technologies before moving on to more complex projects."
       isCorrect: true
       explanation: "Correct. Capabilities and buy-in gained in H1 can benefit later initiatives in H2 and H3."

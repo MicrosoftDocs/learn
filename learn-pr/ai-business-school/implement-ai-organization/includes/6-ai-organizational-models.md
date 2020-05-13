@@ -32,7 +32,7 @@ As for the other leaders across an organization, there's no single model to foll
 This person is a business executive responsible for operations of a particular function, line of business, or process within an organization.
 
 * **Source ideas from all employees:** It's important to empower people from every department and level to contribute ideas, ask questions, and make suggestions related to AI. We've discovered that ideas for our most impactful application of AI have come from our employees within business functions, not from outside or above. See the first unit in this module for more information on this topic.
-* **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>5</sup> Ultimately, this increased customer loyalty and satisfaction.
+* **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>3</sup> Ultimately, this increased customer loyalty and satisfaction.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/implement-ai-organization-5.png" alt-text="Diagram showing AI-related roles.":::
@@ -46,20 +46,20 @@ This graphic shows the business roles that are involved with AI initiatives. The
 
 ### Chief Digital Officer
 
-The Chief Digital Officer is a change agent who oversees the transformation of traditional operations using digital processes. Their goal is to generate new business opportunities, revenue streams, and customer services.
+The Chief Digital Officer (CDO) is a change agent who oversees the transformation of traditional operations using digital processes. Their goal is to generate new business opportunities, revenue streams, and customer services.
 
 * **Cultivate a culture of data sharing across the company:** Most organizations generate, store, and use data in a siloed manner. While each department may have a good view of their own data, they may lack other information that could be relevant to their operations. For instance, a sales department might not have a complete view of a customer because they're missing e-commerce data that's controlled by another department. Sharing data is key to efficiently using AI.
 * **Create your AI manifesto:** This is the 'north star' that clearly outlines the organization's vision for AI and digital transformation more broadly. Its goal is not only to solidify the company's strategy, but to inspire everyone across the organization and help them understand what the transformation will mean for them. The CDO will need to work with other members of C-suite to create the document and message it to the company.
 * **Identify catalyst projects for quick wins:** Kick-start AI transformation by identifying work that can immediately benefit from AI. Then, showcase those projects to prove its value and gain momentum among other teams.
-* **Roll out an education program on data management best practices: **As more people outside of IT become involved in creating AI models, it's important to make sure everyone understands data management best practices. Data needs to be cleaned, consolidated, formatted, and managed so that it's easily consumable by AI. It's extremely important to be careful about what training data is used and how it's structured. Using unsuitable or biased training data negatively affects model performance and fairness. And the need for rigorous processes doesn't end after training – it's also important to plan for monitoring model accuracy over time and retraining them when necessary.
+* **Roll out an education program on data management best practices:** As more people outside of IT become involved in creating AI models, it's important to make sure everyone understands data management best practices. Data needs to be cleaned, consolidated, formatted, and managed so that it's easily consumable by AI. It's extremely important to be careful about what training data is used and how it's structured. Using unsuitable or biased training data negatively affects model performance and fairness. And the need for rigorous processes doesn't end after training – it's also important to plan for monitoring model accuracy over time and retraining them when necessary.
 
-### HR leader
+### Human Resources leader
 
-An HR director makes fundamental contributions to an organization's culture and people development. Their wide-ranging tasks includes implementing cultural development, creating internal training programs, and hiring according to the needs of the business.
+A Human Resources (HR) director makes fundamental contributions to an organization's culture and people development. Their wide-ranging tasks include implementing cultural development, creating internal training programs, and hiring according to the needs of the business.
 
 * **Foster a "learning culture":** Consider how to encourage a culture championed by leadership that embraces challenges and acknowledges failure as a valuable part of continual learning and innovation.
 * **Design a "digital leadership" strategy:** Make a plan to help line of business leaders and the C-suite build their own AI literacy and lead teams through AI adoption. 
-* **Create a hiring plan for new roles such as data scientists:** While upskilling your employees is the long-term goal, in the short-term you may need hire some new roles specifically for AI initiatives. New roles that will likely be required include data scientists, software engineers, and DevOps managers.
+* **Create a hiring plan for new roles such as data scientists:** While upskilling your employees is the long-term goal, in the short-term you may need to hire some new roles specifically for AI initiatives. New roles that will likely be required include data scientists, software engineers, and DevOps managers.
 * **Create a skills plan for roles impacted by AI:** Creating an AI-ready culture requires a sustained commitment from leadership to educate and upskill employees on both the technical and business sides.
 
   * On the technical side, employees need core skills in building and operationalizing AI applications. It can be helpful to partner with other companies to get your teams up to speed, but AI solutions are never static. They require constant adjustments to exploit new data, new methods, and new opportunities by those who also have an intimate understanding of the business.
@@ -67,13 +67,11 @@ An HR director makes fundamental contributions to an organization's culture and 
 
 ### IT leader
 
-While the Chief Digital Officer is charged with creating and implementing overall digital strategy, an IT director oversees the day-to-day technology operations.
+While the Chief Digital Officer is charged with creating and implementing the overall digital strategy, an IT director oversees the day-to-day technology operations.
 
 * **Launch Agile working initiatives between business and IT:** Implementing Agile processes between business and IT teams can help keep those teams aligned around a common goal. This requires a cultural shift to facilitate collaboration and reduce turf wars. Tools such as Microsoft Teams, Skype, and Slack are effective collaboration tools.
 * **Create a "dark data" remediation plan:** Dark data is unstructured, untagged, and siloed data that organizations fail to analyze. Across industries, companies stand to benefit greatly if they can bring dark data into the light. To do so, they need a plan to remove data siloes, extract structured information from unstructured content, and clean out unnecessary data. 
 * **Set up agile cross-functional delivery teams and projects:** Cross-functional delivery teams are crucial to running successful AI projects. People with intimate knowledge of and control over business goals and processes should be a central part of planning and maintaining AI solutions. Data scientists working in isolation might create models that lack the context, purpose, or value that would make them effective.
 * **Scale MLOps across the company:** Managing the entire machine learning (ML) lifecycle at scale is complicated. Organizations need an approach that brings the agility of DevOps to the ML lifecycle. We call this approach MLOps: the practice of collaboration between data scientists, ML engineers, app developers, and other IT teams to manage the end-to-end ML lifecycle. Learn more about MLOps in the previous units of this module.
-
-Learn more about how [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting) can help your organization foster innovation, growth, and a culture of data-driven decisions. Contact your Microsoft Services account representative for more information.
 
 Now that you've seen how organizations can become AI-ready, let's wrap up everything you've learned with a Knowledge check.

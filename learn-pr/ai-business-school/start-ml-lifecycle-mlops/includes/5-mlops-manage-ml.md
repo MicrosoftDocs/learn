@@ -12,7 +12,7 @@ Reasons for inaccurate predictions might include:
 
 * **Inadequate training**. For example: app users submit photos taken at night for object recognition, but the model was only trained on well-lit photos.
 * **Issues with the "live data" that the model evaluates**. For example: sellers record customer data inconsistently in a company's CRM system.  
-* **The model itself "drifts" or declines over time**. This includes "concept drift," where the concept of what you're trying to predict changes. "Data drift," or when the properties of the data change, is also common. And "upstream data changes," or operational changes to how or what data is collected, can impact models as well. To learn more about model drift, we recommend this resource from Databricks.  
+* **The model itself "drifts" or declines over time**. This includes "concept drift," where the concept of what you're trying to predict changes. "Data drift," or when the properties of the data change, is also common. And "upstream data changes," or operational changes to how or what data is collected, can impact models as well.
 * **The world changes**. For example: a financial trading model based on 2001 data probably isn't effective in 2020.
 :::column-end:::
 :::column span="2":::
@@ -24,7 +24,7 @@ There are two large blue circles in the center of the diagram, with an icon and 
 
 Regardless of whether you use a pre-trained model or a custom model, your approach to monitoring and incident response should be the same. However, for pre-trained models, the way you pull teams in, exactly what they have control over, and how teams troubleshoot issues, may vary.
 
-## MLOps practices for model monitoring and retraining 
+## MLOps practices for model monitoring and retraining
 
 ### Monitoring
 
@@ -76,8 +76,6 @@ While ML services can help automate aspects of this process, it's important to k
 
 MLOps practices facilitate real business results, enabling a faster time to market for machine learning-based solutions and a more rapid rate of experimentation and innovation. These practices also increase collaboration and alignment across teams and help assure model quality and auditability—ultimately accelerating the ML lifecycle.  
 
-When you're setting up new processes, be aware that these aren't just technical shifts, but also cultural shifts in how your employees work. It's important to manage those changes carefully. To more easily track and manage the processes we've discussed, we recommend using a central MLOps platform that supports the entire lifecycle, such as the Microsoft Azure MLOps offering. If you'd like to read about best practices for software engineering teams working with machine learning, this study published by the IEEE Computer Society is a great place to start.  
-
-Are you ready to take the next step? Microsoft Services partners with forward-thinking businesses to apply enterprise technology to business problems by understanding their goals, identifying risks, and guiding each step of their digital transformation. Call or contact your Microsoft account representative, or visit [our services page](https://enterprise.microsoft.com/services), to discover how Microsoft Services has helped customers with their transformation journey.
+When you're setting up new processes, be aware that these aren't just technical shifts, but also cultural shifts in how your employees work. It's important to manage those changes carefully. To more easily track and manage the processes we've discussed, we recommend using a central MLOps platform that supports the entire lifecycle, such as the Microsoft Azure MLOps offering. If you'd like to read about best practices for software engineering teams working with machine learning, this study published by the IEEE Computer Society is a great place to start.
 
 Next, let's wrap up everything you've learned about MLOps with a knowledge check.

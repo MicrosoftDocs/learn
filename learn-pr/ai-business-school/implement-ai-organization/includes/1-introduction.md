@@ -1,4 +1,4 @@
-This module provides our perspective on how to manage AI-related processes and responsibilities in an organization.
+This module provides Microsoft perspective on how to manage AI-related processes and responsibilities in an organization.
 
 ## Learning objectives
 

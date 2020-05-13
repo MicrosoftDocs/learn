@@ -1,6 +1,6 @@
 How do companies keep up as industries evolve? The answer is innovation. 
 
-Even if companies "do everything right" with their existing business models, they'll lose competitiveness if they don't embrace innovative disruptions.<sup>1</sup> Indeed, 52 percent of Fortune 500 companies from year 2000 have either been acquired, gone bankrupt, or ceased to exist.<sup>2</sup>  
+Even if companies "do everything right" with their existing business models, they'll lose competitiveness if they don't embrace innovative disruptions.<sup>1</sup> Indeed, 52 percent of Fortune 500 companies have either been acquired, gone bankrupt, or ceased to exist since 2000.<sup>2</sup>  
 
 The capacity to pivot as a business and foster innovation is crucial to long-term success. Innovative companies generally lead their industry's market share, attract top talent, and create cutting-edge products and services.
 
@@ -34,13 +34,11 @@ It can sometimes be challenging to connect R&D with real-world business needs. T
 
 ### Involve all employees in identifying solutions to business problems
 
-We've found it beneficial to foster a company culture where employees across all departments and levels are empowered to share their ideas. We take a three-pronged approach to this:
+We've found it beneficial to foster a company culture where employees across all departments and levels are empowered to share their ideas. Companies who embrace this culture demonstrate a three-pronged approach to this:
 
-* Learning: allow every employee to share their ideas and knowledge openly.
-   * A prime example is The Innovation Pipeline (TIP) built by AT&T.<sup>3</sup> TIP encourages ideas from all employees and helps the best ones rise to the top. Since its launch, 130,000 employees across 54 countries have submitted over 50,000 ideas. These ideas have transformed over 100 projects into real products and services that benefit the company and its customers.
-   * At Microsoft, we have many processes for identifying and funding new ideas. In one program, a small "seed" team delivers a start-up style pitch as if they were an external company. If approved, the team is allocated initial funding and resources to begin building out their solution. If concepts and prototypes are validated, projects can be scaled with additional funding and headcount to bring an idea to fruition. If the project doesn't move forward, the team can focus efforts elsewhere. Whatever the outcome, it's important to reward all efforts, even failures, so people want to continue experimenting. In this sense, we acknowledge failure as a valuable part of innovation that provides direction for future learnings and fuels constant innovation.
-* Enablement: help employees come up with outstanding ideas through professional development. This entails providing the time, space, and resources for career and technical training. For example, one of the initiatives we've set up is called The Garage. This is a designated innovation space where employees can spark creativity and freely experiment.
-* Sharing: facilitate cross-departmental idea-sharing where people with different backgrounds and expertise can discuss each other's challenges and innovative ideas. We host different kinds of events to encourage intellectual sharing, including our annual global Hackathon. We also make sure that teams share their breakthroughs across the company through blogs and whitepapers.
+* **Learning:** allow every employee to share their ideas and knowledge openly. We have many processes for identifying and funding new ideas. In one program, a small "seed" team delivers a start-up style pitch as if they were an external company. If approved, the team is allocated initial funding and resources to begin building out their solution. If concepts and prototypes are validated, projects can be scaled with additional funding and headcount to bring an idea to fruition. If the project doesn't move forward, the team can focus efforts elsewhere. Whatever the outcome, it's important to reward all efforts, even failures, so people want to continue experimenting. In this sense, we acknowledge failure as a valuable part of innovation that provides direction for future learnings and fuels constant innovation.
+* **Enablement:** help employees come up with outstanding ideas through professional development. This entails providing the time, space, and resources for career and technical training. For example, one of the initiatives we've set up is called The Garage. This is a designated innovation space where employees can spark creativity and freely experiment.
+* **Sharing:** facilitate cross-departmental idea-sharing where people with different backgrounds and expertise can discuss each other's challenges and innovative ideas. We host different kinds of events to encourage intellectual sharing, including our annual global Hackathon. We also make sure that teams share their breakthroughs across the company through blogs and whitepapers.
 
 ### Incubate disruptive business solutions
 

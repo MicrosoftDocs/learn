@@ -11,12 +11,12 @@ As more organizations experiment with AI, they find that creating a machine lear
 Managing the entire lifecycle at scale is complicated. Organizations have to be able to document and manage data, code, model environments, and the machine learning models themselves. They need to establish processes for developing, packaging, and deploying models, as well as monitoring their performance and occasionally retraining them. And most organizations are managing multiple models in production at the same time, adding to the complexity. All of this is challenging due to lack of:
 
 * **Cross-team alignment:** Siloed teams impede workflow alignment and collaboration.
-* **Standard, repeatable processes:** Without automated and repeatable processes, employees have to reinvent the wheel each time they create and deploy new model.
+* **Standard, repeatable processes:** Without automated and repeatable processes, employees have to reinvent the wheel each time they create and deploy a new model.
 * **Resources:** Large amounts of time and personnel are required to manage the lifecycle.
 * **Auditability:** It can be difficult to ensure that models meet regulatory standards and performance thresholds over time.
 * **Explainability:** Black box models make it difficult to understand how the model works.
 
-These challenges are similar to what application development teams face when creating and managing apps. To help, they use DevOps, the industry standard for managing operations for an app dev cycle. To address these challenges with machine learning, organizations need an approach that brings the agility of DevOps to the ML lifecycle. We call this approach MLOps.
+These challenges are similar to what application development teams face when creating and managing apps. To help, they use DevOps, the industry standard for managing operations for an application development cycle. To address these challenges with machine learning, organizations need an approach that brings the agility of DevOps to the ML lifecycle. We call this approach MLOps.
 
 ## Typical ML lifecycle
 
