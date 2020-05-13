@@ -68,15 +68,15 @@ Table().with_column('Chapters', huck_finn_chapters)
 |Chapters|
 |--- |
 |1. YOU don't know about me without you have read a book ...|
-|2. WE went tiptoeing along a path amongst the trees bac ...|
-|3. WELL, I got a good going-over in the morning from o ...|
-|4. WELL, three or four months run along, and it was wel ...|
-|5. I had shut the door to. Then I turned around and ther ...|
-|6. WELL, pretty soon the old man was up and around agai ...|
+|2. WE went tiptoeing along a path amongst the trees ...|
+|3. WELL, I got a good going-over in the morning from ...|
+|4. WELL, three or four months run along, and it was ...|
+|5. I had shut the door to. Then I turned around and ...|
+|6. WELL, pretty soon the old man was up and around ...|
 |7. "GIT up! What you 'bout?" I opened my eyes and look ...|
 |8. THE sun was up so high when I waked that I judged  ...|
-|9. I wanted to go and look at a place right about the m ...|
-|10. AFTER breakfast I wanted to talk about the dead man a ...|
+|9. I wanted to go and look at a place right about the ...|
+|10. AFTER breakfast I wanted to talk about the dead man ...|
 
 ... (33 rows omitted)
 
@@ -167,15 +167,15 @@ Table().with_column('Chapters', little_women_chapters)
 
 |Chapters|
 |--- |
-|1. PLAYING PILGRIMS. "Christmas won't be Christmas wit ...|
+|1. PLAYING PILGRIMS. "Christmas won't be Christmas ...|
 |2. A MERRY CHRISTMAS. Jo was the first to wake in the ...|
-|3. THE LAURENCE BOY. "Jo! Jo! Where are you?" crie ...|
+|3. THE LAURENCE BOY. "Jo! Jo! Where are you?" cried ...|
 |4. BURDENS. "Oh, dear, how hard it does seem to take ...|
 |5. BEING NEIGHBORLY. "What in the world are you going ...|
 |6. BETH FINDS THE PALACE BEAUTIFUL. The big house did ...|
-|7. AMY'S VALLEY OF HUMILIATION. "That boy is a perfe ...|
+|7. AMY'S VALLEY OF HUMILIATION. "That boy is a perfect ...|
 |8. JO MEETS APOLLYON. "Girls, where are you going?" ...|
-|9. MEG GOES TO VANITY FAIR. "I do think it was the mo ...|
+|9. MEG GOES TO VANITY FAIR. "I do think it was the ...|
 |10. THE P.C. AND P.O. As spring came on, a new set of ...|
 
 ... (37 rows omitted)
