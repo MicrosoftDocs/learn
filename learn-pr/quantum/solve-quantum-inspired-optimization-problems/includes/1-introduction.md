@@ -12,7 +12,3 @@ In this module you'll:
 - See which kinds of problems are best suited to these techniques.
 - Understand how algorithms inspired by physical processes are used to solve difficult problems.
 - Apply quantum-inspired optimization to a real-world problem.
-
-## Prerequisites
-
-- Basic knowledge of quantum computing
