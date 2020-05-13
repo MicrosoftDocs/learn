@@ -6,7 +6,7 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 
-``` {.python}
+``` python
 from datascience import *
 import numpy as np
 path_data = '../../../../data/'
@@ -32,19 +32,19 @@ sample size.
 Let's start with our table of flight delays. The mean delay is about
 16.7 minutes, and the distribution of delays is skewed to the right.
 
-``` {.python}
+``` python
 united = Table.read_table(path_data + 'united_summer2015.csv')
 delay = united.select('Delay')
 ```
 
-``` {.python}
+``` python
 pop_mean = np.mean(delay.column('Delay'))
 pop_mean
 ```
 
     16.658155515370705
 
-``` {.python}
+``` python
 delay.hist(bins=np.arange(-20, 300, 10))
 plots.scatter(pop_mean, -0.0008, marker='^', color='darkblue', s=60)
 plots.ylim(-0.004, 0.04);
@@ -61,7 +61,7 @@ are going to vary the sample size later. The arguments are the name of
 the table, the label of the column containing the variable, the sample
 size, and the number of simulations.
 
-``` {.python}
+``` python
 """Empirical distribution of random sample means"""
 
 def simulate_sample_mean(table, label, sample_size, repetitions):
@@ -92,7 +92,7 @@ each of these process. The `xlim` and `ylim` lines set the axes
 consistently in all the plots for ease of comparison. You can just
 ignore those two lines of code in each cell.
 
-``` {.python}
+``` python
 simulate_sample_mean(delay, 'Delay', 100, 10000)
 plots.xlim(5, 35)
 plots.ylim(0, 0.25);
@@ -106,7 +106,7 @@ plots.ylim(0, 0.25);
 
 ![png](../media/73-variability-sample-mean-9-2.png)
 
-``` {.python}
+``` python
 simulate_sample_mean(delay, 'Delay', 400, 10000)
 plots.xlim(5, 35)
 plots.ylim(0, 0.25);
@@ -120,7 +120,7 @@ plots.ylim(0, 0.25);
 
 ![png](../media/73-variability-sample-mean-10-2.png)
 
-``` {.python}
+``` python
 simulate_sample_mean(delay, 'Delay', 625, 10000)
 plots.xlim(5, 35)
 plots.ylim(0, 0.25);
@@ -153,7 +153,7 @@ closer attention to the measure of spread.
 
 The SD of the population of all delays is about 40 minutes.
 
-``` {.python}
+``` python
 pop_sd = np.std(delay.column('Delay'))
 pop_sd
 ```
@@ -183,7 +183,7 @@ sample means. The third column contains the result of the calculation
 The cell takes a while to run, as it's a large simulation. But you'll
 soon see that it's worth the wait.
 
-``` {.python}
+``` python
 repetitions = 10000
 sample_sizes = np.arange(25, 626, 25)
 
@@ -202,7 +202,7 @@ sd_comparison = Table().with_columns(
 )
 ```
 
-``` {.python}
+``` python
 sd_comparison
 ```
 |Sample Size n|SD of 10,000 Sample Means|pop\_sd/sqrt(n)|
@@ -224,7 +224,7 @@ The values in the second and third columns are very close. If we plot
 each of those columns with the sample size on the horizontal axis, the
 two graphs are essentially indistinguishable.
 
-``` {.python}
+``` python
 sd_comparison.plot('Sample Size n')
 ```
 

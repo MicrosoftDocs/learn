@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -21,14 +21,14 @@ For simplicity, we will begin our calcuations in the context of a simple
 array `any_numbers` consisting of just four values. As you will see, our
 method will extend easily to any other array of values.
 
-``` {.python}
+``` python
 any_numbers = make_array(1, 2, 2, 10)
 ```
 
 The goal is to measure roughly how far off the numbers are from their
 average. To do this, we first need the average:
 
-``` {.python}
+``` python
 # Step 1. The average.
 
 mean = np.mean(any_numbers)
@@ -42,7 +42,7 @@ called the *deviations from the average*. A "deviation from average" is
 just a value minus the average. The table `calculation_steps` displays
 the results.
 
-``` {.python}
+``` python
 # Step 2. The deviations from average.
 
 deviations = any_numbers - mean
@@ -67,7 +67,7 @@ To calculate roughly how big the deviations are, it is natural to
 compute the mean of the deviations. But something interesting happens
 when all the deviations are added together:
 
-``` {.python}
+``` python
 sum(deviations)
 ```
 
@@ -80,7 +80,7 @@ looks like: **the sum of the deviations from average is zero.**
 Since the sum of the deviations is 0, the mean of the deviations will be
 0 as well:
 
-``` {.python}
+``` python
 np.mean(deviations)
 ```
 
@@ -99,7 +99,7 @@ course.
 So let's eliminate the signs by squaring all the deviations. Then we
 will take the mean of the squares:
 
-``` {.python}
+``` python
 # Step 3. The squared deviations from average
 
 squared_deviations = deviations ** 2
@@ -116,7 +116,7 @@ calculation_steps
 |2|-1.75|3.0625|
 |10|6.25|39.0625|
 
-``` {.python}
+``` python
 # Step 4. Variance = the mean squared deviation from average
 
 variance = np.mean(squared_deviations)
@@ -135,7 +135,7 @@ original. This makes interpretation very difficult.
 So we return to the original scale by taking the positive square root of
 the variance:
 
-``` {.python}
+``` python
 # Step 5.
 # Standard Deviation:    root mean squared deviation from average
 # Steps of calculation:   5    4      3       2             1
@@ -160,7 +160,7 @@ left and you have the sequence of steps in the calculation.
 can also use the function `np.std` to compute the SD of values in an
 array:
 
-``` {.python}
+``` python
 np.std(any_numbers)
 ```
 
@@ -175,7 +175,7 @@ player, the table records the position at which the player usually
 played, his height in inches, his weight in pounds, and his age in
 years.
 
-``` {.python}
+``` python
 nba13 = Table.read_table(path_data + 'nba2013.csv')
 nba13
 ```
@@ -197,7 +197,7 @@ nba13
 
 Here is a histogram of the players' heights.
 
-``` {.python}
+``` python
 nba13.select('Height').hist(bins=np.arange(68, 88, 1))
 ```
 
@@ -207,7 +207,7 @@ It is no surprise that NBA players are tall! Their average height is
 just over 79 inches (6'7\"), about 10 inches taller than the average
 height of men in the United States.
 
-``` {.python}
+``` python
 mean_height = np.mean(nba13.column('Height'))
 mean_height
 ```
@@ -217,7 +217,7 @@ mean_height
 About how far off are the players' heights from the average? This is
 measured by the SD of the heights, which is about 3.45 inches.
 
-``` {.python}
+``` python
 sd_height = np.std(nba13.column('Height'))
 sd_height
 ```
@@ -227,7 +227,7 @@ sd_height
 The towering center Hasheem Thabeet of the Oklahoma City Thunder was the
 tallest player at a height of 87 inches.
 
-``` {.python}
+``` python
 nba13.sort('Height', descending=True).show(3)
 ```
 
@@ -241,7 +241,7 @@ nba13.sort('Height', descending=True).show(3)
 
 Thabeet was about 8 inches above the average height.
 
-``` {.python}
+``` python
 87 - mean_height
 ```
 
@@ -250,7 +250,7 @@ Thabeet was about 8 inches above the average height.
 That's a deviation from average, and it is about 2.3 times the standard
 deviation:
 
-``` {.python}
+``` python
 (87 - mean_height)/sd_height
 ```
 
@@ -262,7 +262,7 @@ average.
 At 69 inches tall, Isaiah Thomas was one of the two shortest NBA players
 in 2013. His height was about 2.9 SDs below average.
 
-``` {.python}
+``` python
 nba13.sort('Height').show(3)
 ```
 
@@ -274,7 +274,7 @@ nba13.sort('Height').show(3)
 
 ... (502 rows omitted)
 
-``` {.python}
+``` python
 (69 - mean_height)/sd_height
 ```
 
@@ -301,13 +301,13 @@ in the range "average $\pm$ 3 SDs".
 What about the ages? Here is a histogram of the distribution, along with
 the mean and SD of the ages.
 
-``` {.python}
+``` python
 nba13.select('Age in 2013').hist(bins=np.arange(15, 45, 1))
 ```
 
 ![png](../media/70-variability-39-1.png)
 
-``` {.python}
+``` python
 ages = nba13.column('Age in 2013')
 mean_age = np.mean(ages)
 sd_age = np.std(ages)
@@ -323,7 +323,7 @@ heights, let's look at the two extreme values of the ages.
 
 Juwan Howard was the oldest player, at 40.
 
-``` {.python}
+``` python
 nba13.sort('Age in 2013', descending=True).show(3)
 ```
 
@@ -337,7 +337,7 @@ nba13.sort('Age in 2013', descending=True).show(3)
 
 Howard's age was about 3.2 SDs above average.
 
-``` {.python}
+``` python
 (40 - mean_age)/sd_age
 ```
 
@@ -347,7 +347,7 @@ The youngest was 15-year-old Jarvis Varnado, who won the NBA
 Championship that year with the Miami Heat. His age was about 2.6 SDs
 below average.
 
-``` {.python}
+``` python
 nba13.sort('Age in 2013').show(3)
 ```
 |Name|Position|Height|Weight|Age in 2013|
@@ -358,7 +358,7 @@ nba13.sort('Age in 2013').show(3)
 
 ... (502 rows omitted)
 
-``` {.python}
+``` python
 (15 - mean_age)/sd_age
 ```
 
@@ -419,7 +419,7 @@ As we will see, standard units are frequently used in data analysis. So
 it is useful to define a function that converts an array of numbers to
 standard units.
 
-``` {.python}
+``` python
 def standard_units(numbers_array):
     "Convert any array of numbers to standard units."
     return (numbers_array - np.mean(numbers_array))/np.std(numbers_array)    
@@ -435,7 +435,7 @@ function `standard_units` to the column of delay times. This allows us
 to see all the delay times in minutes as well as their corresponding
 values in standard units.
 
-``` {.python}
+``` python
 united = Table.read_table(path_data + 'united_summer2015.csv')
 united = united.with_column(
     'Delay (Standard Units)', standard_units(united.column('Delay'))
@@ -466,7 +466,7 @@ But something rather alarming happens when we sort the delay times from
 highest to lowest. The standard units that we can see are extremely
 high!
 
-``` {.python}
+``` python
 united.sort('Delay', descending=True)
 ```
 
@@ -496,7 +496,7 @@ is the same as the percent of times for which the standard units are in
 the range (-3, 3). That is about 98%, as computed below, consistent with
 Chebychev's bound of "at least 89%".
 
-``` {.python}
+``` python
 within_3_sd = united.where('Delay (Standard Units)', are.between(-3, 3))
 within_3_sd.num_rows/united.num_rows
 ```
@@ -509,9 +509,12 @@ the way out to $z=14.27$ standard units (580 minutes). The area of the
 histogram outside the range $z=-3$ to $z=3$ is about 2%, put together in
 tiny little bits that are mostly invisible in the histogram.
 
-``` {.python}
+``` python
 united.hist('Delay (Standard Units)', bins=np.arange(-5, 15.5, 0.5))
 plots.xticks(np.arange(-6, 17, 3));
 ```
 
 ![png](../media/70-variability-59-1.png)
+
+## Check your Knowledge
+

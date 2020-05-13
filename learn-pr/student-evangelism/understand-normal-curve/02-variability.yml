@@ -15,7 +15,7 @@ content: |
   [!include[](includes/02-variability.md)]
 
 quiz:
-  title: Check your Knowledge
+
   questions:
     - content: "For a distribution that's skewed towards the right, would the mean be to the left, to the right of the median, or will the mean and the median probably overlap?"
       choices:

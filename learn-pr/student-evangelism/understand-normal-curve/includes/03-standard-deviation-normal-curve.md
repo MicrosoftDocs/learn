@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -25,11 +25,11 @@ of 64 inches and an SD of 2.5 inches. Unlike the heights of the
 basketball players, the mothers' heights are distributed fairly
 symmetrically about the mean in a bell-shaped curve.
 
-``` {.python}
+``` python
 baby = Table.read_table(path_data + 'baby.csv')
 ```
 
-``` {.python}
+``` python
 heights = baby.column('Maternal Height')
 mean_height = np.round(np.mean(heights), 1)
 mean_height
@@ -37,14 +37,14 @@ mean_height
 
     64.0
 
-``` {.python}
+``` python
 sd_height = np.round(np.std(heights), 1)
 sd_height
 ```
 
     2.5
 
-``` {.python}
+``` python
 baby.hist('Maternal Height', bins=np.arange(55.5, 72.5, 1), unit='inch')
 positions = np.arange(-3, 3.1, 1)*sd_height + mean_height
 plots.xticks(positions);
@@ -96,7 +96,7 @@ $$
 \phi(z) = {\frac{1}{\sqrt{2 \pi}}} e^{-\frac{1}{2}z^2}, ~~ -\infty < z < \infty
 $$
 
-``` {.python}
+``` python
 # The standard normal curve
 
 plot_normal_cdf()
@@ -138,7 +138,7 @@ curve. It is also why all statistical systems, including a module of
 Python, include methods that provide excellent approximations to those
 areas.
 
-``` {.python}
+``` python
 from scipy import stats
 ```
 
@@ -153,7 +153,7 @@ rather unwieldy mouthful is abbreviated as cdf.
 Let us use this function to find the area to the left of $z=1$ under the
 standard normal curve.
 
-``` {.python}
+``` python
 # Area under the standard normal curve, below 1
 
 plot_normal_cdf(1)
@@ -164,7 +164,7 @@ plot_normal_cdf(1)
 The numerical value of the shaded area can be found by calling
 `stats.norm.cdf`.
 
-``` {.python}
+``` python
 stats.norm.cdf(1)
 ```
 
@@ -175,7 +175,7 @@ that the total area under the curve is 1 to find other areas.
 
 The area to the right of $z=1$ is about 100% - 84% = 16%.
 
-``` {.python}
+``` python
 # Area under the standard normal curve, above 1
 
 plot_normal_cdf(lbound=1)
@@ -183,7 +183,7 @@ plot_normal_cdf(lbound=1)
 
 ![png](../media/71-standard-deviation-normal-curve-20-0.png)
 
-``` {.python}
+``` python
 1 - stats.norm.cdf(1)
 ```
 
@@ -192,7 +192,7 @@ plot_normal_cdf(lbound=1)
 The area between $z=-1$ and $z=1$ can be computed in several different
 ways. It is the gold area under the curve below.
 
-``` {.python}
+``` python
 # Area under the standard normal curve, between -1 and 1
 
 plot_normal_cdf(1, lbound=-1)
@@ -206,7 +206,7 @@ which works out to roughly 100% - 2x16% = 68%.
 Or we could note that the area between $z=1$ and $z=-1$ is equal to all
 the area to the left of $z=1$, minus all the area to the left of $z=-1$.
 
-``` {.python}
+``` python
 stats.norm.cdf(1) - stats.norm.cdf(-1)
 ```
 
@@ -215,7 +215,7 @@ stats.norm.cdf(1) - stats.norm.cdf(-1)
 By a similar calculation, we see that the area between $-2$ and 2 is
 about 95%.
 
-``` {.python}
+``` python
 # Area under the standard normal curve, between -2 and 2
 
 plot_normal_cdf(2, lbound=-2)
@@ -223,7 +223,7 @@ plot_normal_cdf(2, lbound=-2)
 
 ![png](../media/71-standard-deviation-normal-curve-27-0.png)
 
-``` {.python}
+``` python
 stats.norm.cdf(2) - stats.norm.cdf(-2)
 ```
 
@@ -249,11 +249,12 @@ correct but not illuminating.
 SDs \| at least 75% \| about 95% \| \|average $\pm$ 3 SDs \| at least
 88.888...% \| about 99.73% \|
 
-``` {.python}
+``` python
 ```
 68% \| \|average $\pm$ 2
 SDs \| at least 75% \| about 95% \| \|average $\pm$ 3 SDs \| at least
 88.888...% \| about 99.73% \|
 
-> [!IMPORTANT]
-> Knowledge Check Question: "Recall Chebychev's bounds from this module. Select the correct percentages for the bounds and approximations for the corresponding distributions."
+## Check your knowledge
+
+"Recall Chebychev's bounds from this module. Select the correct percentages for the bounds and approximations for the corresponding distributions."

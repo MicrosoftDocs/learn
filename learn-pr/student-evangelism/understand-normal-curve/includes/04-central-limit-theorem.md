@@ -5,7 +5,7 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 
 Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -16,7 +16,7 @@ import numpy as np
 from scipy import stats
 ```
 
-``` {.python}
+``` python
 
 colors = Table.read_table(path_data + 'roulette_wheel.csv').column('Color')
 pockets = make_array('0','00')
@@ -43,7 +43,7 @@ In an earlier section, the bell appeared as the rough shape of the total
 amount of money we would make if we placed the same bet repeatedly on
 different spins of a roulette wheel.
 
-``` {.python}
+``` python
 wheel
 ```
 
@@ -67,7 +67,7 @@ function `red_winnings` that returns the net winnings on one \$1 bet on
 red. Specifically, the function takes a color as its argument and
 returns 1 if the color is red. For all other colors it returns -1.
 
-``` {.python}
+``` python
 def red_winnings(color):
     if color == 'red':
         return 1
@@ -77,7 +77,7 @@ def red_winnings(color):
 
 The table `red` shows each pocket's winnings on red.
 
-``` {.python}
+``` python
 red = wheel.with_column(
     'Winnings: Red', wheel.apply(red_winnings, 'Color')
     )
@@ -104,7 +104,7 @@ column. There is an 18/38 chance making \$1, and a 20/38 chance of
 making -\$1. This probability distribution is shown in the histogram
 below.
 
-``` {.python}
+``` python
 red.select('Winnings: Red').hist(bins=np.arange(-1.5, 1.6, 1))
 ```
 
@@ -122,7 +122,7 @@ done all along in this course.
 The code below simulates your net gain if you bet \$1 on red on 400
 different spins of the roulette wheel.
 
-``` {.python}
+``` python
 num_bets = 400
 repetitions = 10000
 
@@ -139,7 +139,7 @@ results = Table().with_column(
     )
 ```
 
-``` {.python}
+``` python
 results.hist(bins=np.arange(-80, 50, 6))
 ```
 
@@ -153,7 +153,7 @@ see why, note that your winnings will be \$1 on about 18/38 of the bets,
 and -\$1 on the remaining 20/38. So your average winnings per dollar bet
 will be roughly -5.26 cents:
 
-``` {.python}
+``` python
 average_per_bet = 1*(18/38) + (-1)*(20/38)
 average_per_bet
 ```
@@ -162,7 +162,7 @@ average_per_bet
 
 So in 400 bets you expect that your net gain will be about -\$21:
 
-``` {.python}
+``` python
 400 * average_per_bet
 ```
 
@@ -171,7 +171,7 @@ So in 400 bets you expect that your net gain will be about -\$21:
 For confirmation, we can compute the mean of the 10,000 simulated net
 gains:
 
-``` {.python}
+``` python
 np.mean(results.column(0))
 ```
 
@@ -187,7 +187,7 @@ In the next section, we will see where the \$20 comes from. For now,
 let's confirm our observation by calculating the SD of the 10,000
 simulated net gains:
 
-``` {.python}
+``` python
 np.std(results.column(0))
 ```
 
@@ -204,11 +204,11 @@ Airlines domestic flights out of San Francisco airport in the summer of
 2015. As we have seen before, the distribution of delays has a long
 right-hand tail.
 
-``` {.python}
+``` python
 united = Table.read_table(path_data + 'united_summer2015.csv')
 ```
 
-``` {.python}
+``` python
 united.select('Delay').hist(bins=np.arange(-20, 300, 10))
 ```
 
@@ -219,7 +219,7 @@ Notice how large the SD is, compared to the mean. Those large deviations
 on the right have an effect, even though they are a small
 proportion of the data.
 
-``` {.python}
+``` python
 mean_delay = np.mean(united.column('Delay'))
 sd_delay = np.std(united.column('Delay'))
 
@@ -239,11 +239,11 @@ around 16 or 17, because that's the population average; but it is likely
 to be somewhat off. Let's see what we get by sampling. We'll work with
 the table `delay` that only contains the column of delays.
 
-``` {.python}
+``` python
 delay = united.select('Delay')
 ```
 
-``` {.python}
+``` python
 np.mean(delay.sample(400).column('Delay'))
 ```
 
@@ -254,7 +254,7 @@ will simulate the sampling process repeatedly and draw the empirical
 histogram of the sample average. That will be an approximation to the
 probability histogram of the sample average.
 
-``` {.python}
+``` python
 sample_size = 400
 repetitions = 10000
 
@@ -270,7 +270,7 @@ results = Table().with_column(
 )
 ```
 
-``` {.python}
+``` python
 results.hist(bins=np.arange(10, 25, 0.5))
 ```
 
@@ -315,7 +315,7 @@ purple plants is roughly normal.
 We can confirm this by simulation. Let's simulate the proportion of
 purple-flowered plants in a sample of 200 plants.
 
-``` {.python}
+``` python
 colors = make_array('Purple', 'Purple', 'Purple', 'White')
 
 model = Table().with_column('Color', colors)
@@ -330,7 +330,7 @@ model
 |Purple|
 |White|
 
-``` {.python}
+``` python
 props = make_array()
 
 num_plants = 200
@@ -344,7 +344,7 @@ for i in np.arange(repetitions):
 results = Table().with_column('Sample Proportion: 200', props)
 ```
 
-``` {.python}
+``` python
 results.hist(bins=np.arange(0.65, 0.85, 0.01))
 ```
 
@@ -360,7 +360,7 @@ simulations based on a sample size of 200. We will keep the number of
 `repetitions` the same as before so that the two columns have the same
 length.
 
-``` {.python}
+``` python
 props2 = make_array()
 
 num_plants = 800
@@ -373,7 +373,7 @@ for i in np.arange(repetitions):
 results = results.with_column('Sample Proportion: 800', props2)
 ```
 
-``` {.python}
+``` python
 results.hist(bins=np.arange(0.65, 0.85, 0.01))
 ```
 

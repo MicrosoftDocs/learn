@@ -27,7 +27,7 @@ we will address include:
     shaped?
 -   How can we use sample means effectively for inference?
 
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -49,17 +49,17 @@ elements in the collection.
 
 The methods `np.average` and `np.mean` return the mean of an array.
 
-``` {.python}
+``` python
 not_symmetric = make_array(2, 3, 3, 9)
 ```
 
-``` {.python}
+``` python
 np.average(not_symmetric)
 ```
 
     4.25
 
-``` {.python}
+``` python
 np.mean(not_symmetric)
 ```
 
@@ -100,14 +100,14 @@ If a collection consists only of ones and zeroes, then the sum of the
 collection is the number of ones in it, and the mean of the collection
 is the proportion of ones.
 
-``` {.python}
+``` python
 zero_one = make_array(1, 1, 1, 0)
 sum(zero_one)
 ```
 
     3
 
-``` {.python}
+``` python
 np.mean(zero_one)
 ```
 
@@ -115,7 +115,7 @@ np.mean(zero_one)
 
 You can replace 1 by the Boolean `True` and 0 by `False`:
 
-``` {.python}
+``` python
 np.mean(make_array(True, True, True, False))
 ```
 
@@ -154,13 +154,13 @@ have the same mean.**
 For example, here is another collection that has the same distribution
 as `not_symmetric` and hence the same mean.
 
-``` {.python}
+``` python
 not_symmetric
 ```
 
     array([2, 3, 3, 9])
 
-``` {.python}
+``` python
 same_distribution = make_array(2, 2, 3, 3, 3, 3, 9, 9)
 np.mean(same_distribution)
 ```
@@ -171,12 +171,12 @@ The mean is a physical attribute of the histogram of the distribution.
 Here is the histogram of the distribution of `not_symmetric` or
 equivalently the distribution of `same_distribution`.
 
-``` {.python}
+``` python
 t1 = Table().with_columns('not symmetric', not_symmetric)
 t1.hist(bins=np.arange(1.5, 9.6, 1))
 ```
 
-![png](../media/69-properties-of-mean-17-0.png)
+![png](../media/69-properties-mean-17-0.png)
 
 Imagine the histogram as a figure made out of cardboard attached to a
 wire that runs along the horizontal axis, and imagine the bars as
@@ -195,7 +195,7 @@ distinct values weighted by their proportions.
 Because the mean is a balance point, it is sometimes displayed as a
 *fulcrum* or triangle at the base of the histogram.
 
-``` {.python}
+``` python
 mean_ns = np.mean(not_symmetric)
 t1.hist(bins=np.arange(1.5, 9.6, 1))
 plots.scatter(mean_ns, -0.009, marker='^', color='darkblue', s=60)
@@ -203,7 +203,7 @@ plots.plot([1.5, 9.5], [0, 0], color='grey')
 plots.ylim(-0.05, 0.5);
 ```
 
-![png](../media/69-properties-of-mean-19-0.png)
+![png](../media/69-properties-mean-19-0.png)
 
 ### The Mean and the Median
 
@@ -220,11 +220,11 @@ of the collection {2, 3, 3, 4} which is in the array `symmetric`. The
 distribution is symmetric about 3. The mean and the median are both
 equal to 3.
 
-``` {.python}
+``` python
 symmetric = make_array(2, 3, 3, 4)
 ```
 
-``` {.python}
+``` python
 t2 = Table().with_columns('symmetric', symmetric)
 mean_s = np.mean(symmetric)
 
@@ -234,15 +234,15 @@ plots.xlim(1, 10)
 plots.ylim(-0.05, 0.5);
 ```
 
-![png](../media/69-properties-of-mean-22-0.png)
+![png](../media/69-properties-mean-22-0.png)
 
-``` {.python}
+``` python
 np.mean(symmetric)
 ```
 
     3.0
 
-``` {.python}
+``` python
 percentile(50, symmetric)
 ```
 
@@ -254,7 +254,7 @@ equal.**
 What if the distribution is not symmetric? Let's compare `symmetric` and
 `not_symmetric`.
 
-``` {.python}
+``` python
 t3 = t2.with_column(
         'not_symmetric', not_symmetric
 )
@@ -265,7 +265,7 @@ plots.scatter(mean_ns, -0.009, marker='^', color='gold', s=60)
 plots.ylim(-0.05, 0.5);
 ```
 
-![png](../media/69-properties-of-mean-26-0.png)
+![png](../media/69-properties-mean-26-0.png)
 
 The blue histogram represents the original `symmetric` distribution. The
 gold histogram of `not_symmetric` starts out the same as the blue at the
@@ -294,18 +294,18 @@ City employees in 2015. As before, we will restrict our analysis to
 those who had the equivalent of at least half-time employment for the
 year.
 
-``` {.python}
+``` python
 sf2015 = Table.read_table(path_data + 'san_francisco_2015.csv').where('Salaries', are.above(10000))
 ```
 
 As we saw earlier, the highest compensation was above \$600,000 but the
 vast majority of employees had compensations below \$300,000.
 
-``` {.python}
+``` python
 sf2015.select('Total Compensation').hist(bins = np.arange(10000, 700000, 25000))
 ```
 
-![png](../media/69-properties-of-mean-33-0.png)
+![png](../media/69-properties-mean-33-0.png)
 
 This histogram is skewed to the right; it has a right-hand tail.
 
@@ -313,14 +313,14 @@ The mean gets pulled away from the median in the direction of the tail.
 So we expect the mean compensation to be larger than the median, and
 that is indeed the case.
 
-``` {.python}
+``` python
 compensation = sf2015.column('Total Compensation')
 percentile(50, compensation)
 ```
 
     110305.79
 
-``` {.python}
+``` python
 np.mean(compensation)
 ```
 
