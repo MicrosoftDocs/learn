@@ -46,7 +46,7 @@ strawberry, and vanilla. The table shows the number of cartons of each
 flavor. We call this a *distribution table*. A *distribution* shows all
 the values of a variable, along with the frequency of each one.
 
-### Bar Chart
+### Bar chart
 
 The bar chart is a familiar way of visualizing categorical
 distributions. It displays a bar for each category. The bars are equally
@@ -75,7 +75,7 @@ icecream.barh('Flavor')
 
 ![png](../media/41-visualize-categorical-distributions-8-0.png)
 
-### Features of Categorical Distributions
+### Features of categorical distributions
 
 Apart from purely visual differences, there is an important fundamental
 distinction between bar charts and the two graphs that we saw in the
@@ -112,7 +112,7 @@ ones, but it is a little easier to read. While this is not a huge gain
 in reading a chart with just three bars, it can be quite significant
 when the number of categories is large.
 
-### Grouping Categorical Data
+### Grouping categorical data
 
 To construct the table `icecream`, someone had to look at all 30 cartons
 of ice-cream and count the number of each flavor. But if our data does

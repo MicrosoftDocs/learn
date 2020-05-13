@@ -31,7 +31,7 @@ summaries of IMDB data, some of which we have adapted. We have also used
 data summaries from [The Numbers](http://www.the-numbers.com), a site
 with a tagline that says it is "where data and the movie business meet."
 
-### Scatter Plots and Line Graphs
+### Scatter plots and line graphs
 
 The table `actors` contains data on Hollywood actors, both male and
 female. The columns are:
@@ -85,7 +85,7 @@ Variables that have numerical values, such as 'number of movies' or
 'average gross receipts per movie' are called *quantitative* or
 *numerical* variables.
 
-### Scatter Plots
+### Scatter plots
 
 A *scatter plot* displays the relation between two numerical variables.
 You saw an example of a scatter plot in an early section where we looked
@@ -213,7 +213,7 @@ movie. This example is a reminder that studying the association between
 two variables often involves understanding other related variables as
 well.
 
-### Line Graphs
+### Line graphs
 
 Line graphs are among the most common visualizations and are often used
 to study chronological trends and patterns.
@@ -316,7 +316,7 @@ century_21.where('Year', are.equal_to(2009))
 |--- |--- |--- |--- |
 |2009|10595.5|521|Avatar|
 
-## Learning Objectives
+## Learning objectives
 
 - Learned different fundamental graphical methods of data analysis: Scatter Plots, Line Graphs, Bar Charts, and Histograms.
 - Studied categorical and numerical distributions and the difference between them.

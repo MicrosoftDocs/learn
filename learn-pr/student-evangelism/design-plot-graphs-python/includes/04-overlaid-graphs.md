@@ -29,7 +29,7 @@ common axis:
 
 `name_of_table.method(column_label_of_common_axis)`
 
-### Scatter Plots
+### Scatter plots
 
 [Francis Galton](https://en.wikipedia.org/wiki/Francis_Galton)
 (1822-1911) was an English polymath who was a pioneer in the analysis of
@@ -84,7 +84,7 @@ positive association between the sons' heights and the heights of both
 their parents. The blue (fathers) plot is in general higher than the
 gold, because the fathers were in general taller than the mothers.
 
-### Line Plots
+### Line plots
 
 Our next example involves data on children of more recent times. We will
 return to the Census data table `us_pop`, created below again for
@@ -153,7 +153,7 @@ of children who entered the country between 2010 and 2014 outnumbering
 those who left. Fortunately at these ages there is not much loss of
 life.
 
-### Bar Charts
+### Bar charts
 
 For our final example of this section, we look at distributions of
 ethnicities of adults and children in California as well as in the
