@@ -49,7 +49,7 @@ Visit the Microsoft Education website to learn more about [Learning Tools](https
 ## Ease of Access settings
 Dictation is one of many accessibility tools built into Windows 10. These features can be found in the Ease of Access settings menu on Windows 10 PCs.
 
-:::image type="content" source="../media/ease-of-access.png" alt-text="The Ease of Access menu in Windows 10":::
+:::image type="content" source="../media/ease-access.png" alt-text="The Ease of Access menu in Windows 10":::
 
 For example, Narrator is a screen reader built into Windows 10 that describes what's on your screen so you can use that information to navigate your device. Controlling Narrator with keyboard commands lets you use your PC without a mouse. This makes it easier for people who are blind or have low vision to complete common tasks such as navigating apps, reading text, and interacting with user interface elements like buttons. Narrator can also be used with braille displays.
 
