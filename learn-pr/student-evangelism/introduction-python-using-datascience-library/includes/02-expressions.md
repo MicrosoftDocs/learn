@@ -54,9 +54,9 @@ to so that expressions can be used to express any sort of arithmetic. In
 Python, the following operators are essential.
 
 |  Expression Type |  Operator |  Example   | Example   |  
-|------------------|-----------|------------|-----------|  
-|  Addition        |     `+`   |   `2 + 3`  |   `5`     |   
-|  Subtraction     |     `-`   |   `2 - 3   |   `-1`    |  
+|------------------|:-----------:|:------------:|:-----------:|  
+|  Addition        |     `+`   |   `2 + 3`  |   `5`     |  
+|  Subtraction     |     `-`   |   `2 - 3`  |   `-1`    |  
 |  Multiplication  |     `*`   |   `2 * 3`  |   `6`     |  
 |  Division        |     `/`   |   `7 / 3`  | `2.66667` |  
 |  Remainder       |     `%`   |   `7 / 3`  |    `1`    |  
