@@ -50,11 +50,9 @@ strings. As we will see shortly, other types of objects can have them.
  have them.
 
 > [!IMPORTANT]
-> Knowledge Check Question:
-
- After executing the following lines of code:
- ``` python
-  x = 8
-  y = 2
-  z = x / y
- ```
+> For the knowledge check below: After executing the following lines of code:
+ >``` python
+ > x = 8
+ > y = 2
+ > z = x / y
+> ```
