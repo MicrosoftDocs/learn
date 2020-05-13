@@ -36,7 +36,7 @@ partial_census_table
 us_pop = partial_census_table.relabeled('POPESTIMATE2010', '2010').relabeled('POPESTIMATE2014', '2014')
 ```
 
-## Example: Trends in Gender
+## Example: trends in gender
 
 We are now equipped with enough coding skills to examine features and
 trends in subgroups of the United States population. In this example, we will
@@ -102,7 +102,7 @@ The row with `AGE` 100 doesn't just represent 100-year-olds -- it also
 includes those who are older than 100. That is why the numbers in that
 row are larger than in the row for the 99-year-olds.
 
-### Overall Proportions of Males and Females
+### Overall Proportions of males and females
 
 We will now begin looking at gender ratios in 2014. First, let's look at
 all the age groups together. Remember that this means looking at the
@@ -152,7 +152,7 @@ all_ages.with_column(
 |1|999|156955337|49.22%|
 |2|999|161952064|50.78%|
 
-### Proportions of Boys and Girls among Infants
+### Proportions of boys and girls among infants
 
 When we look at infants, however, the opposite is true. Let's define
 infants to be babies who have not yet completed one year, represented in
@@ -192,7 +192,7 @@ newborns is slightly more than 1/2. The reason for this is not
 thoroughly understood, and [scientists are still working on
 it](http://www.npr.org/sections/health-shots/2015/03/30/396384911/why-are-more-baby-boys-born-than-girls).
 
-### Female:Male Gender Ratio at Each Age
+### Female:male gender ratio at each age
 
 We have seen that while there are more baby boys than baby girls, there
 are more females than males overall. So it's clear that the split

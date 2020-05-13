@@ -20,7 +20,7 @@ each group.
 This section is about classifying individuals into categories that are
 not numerical. We begin by recalling the basic use of `group`.
 
-### Counting the Number in Each Category
+### Counting the number in each category
 
 The `group` method with a single argument counts the number of rows for
 each category in a column. The result contains one row per unique value
@@ -65,7 +65,7 @@ The `Price` column has not been used.
 But what if we wanted the total price of the cones of each different
 flavor? That's where the second argument of `group` comes in.
 
-### Finding a Characteristic of Each Category
+### Finding a characteristic of each category
 
 The optional second argument of `group` names the function that will be
 used to aggregate values in other columns for all of those rows. For
@@ -190,7 +190,7 @@ lengths
 |chocolate|\[4.75 6.55 5.25\]|3|
 |strawberry|\[3.55 5.25\]|2|
 
-### Example: NBA Salaries
+### Example: NBA salaries
 
 The table `nba` contains data on the 2015-2016 players in the National
 Basketball Association. We have examined these data earlier. Recall that

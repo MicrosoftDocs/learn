@@ -119,7 +119,7 @@ sign(0)
 
     'Neither positive nor negative'
 
-### The General Form
+### The general form
 
 A conditional statement can also have multiple clauses with multiple
 bodies, and only one of those bodies can ever be executed. The general
@@ -144,7 +144,7 @@ execute the corresponding body. The `else` clause is optional. When an
 the header expressions of the previous clauses are true. The `else`
 clause must always come at the end (or not at all).
 
-### Example: Betting on a Die
+### Example: betting on a die
 
 Suppose I bet on a roll of a fair die. The rules of the game:
 

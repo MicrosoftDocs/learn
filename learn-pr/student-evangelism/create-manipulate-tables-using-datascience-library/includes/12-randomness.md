@@ -64,7 +64,7 @@ assigned to the treatment group, then the statement, "The individual was
 assigned to the treatment group" would be `True`. If not, it would be
 `False`.
 
-### Booleans and Comparison
+### Booleans and comparison
 
 In Python, Boolean values, named for the logician [George
 Boole](https://en.wikipedia.org/wiki/George_Boole), represent truth and
@@ -140,7 +140,7 @@ min(x, y) <= (x+y)/2 <= max(x, y)
 
     True
 
-### Comparing Strings
+### Comparing strings
 
 Strings can also be compared, and their order is alphabetical. A shorter
 string is less than a longer string that begins with the shorter string.
@@ -168,7 +168,7 @@ whether `treatment` or `control` was chosen. With any cell that involves
 random selection, it is a good idea to run the cell several times to get
 a sense of the variability in the result.
 
-### Comparing an Array and a Value
+### Comparing an array and a value
 
 Recall that we can perform arithmetic operations on many numbers in an
 array at once. For example, `make_array(0, 5, 2)*2` is equivalent to

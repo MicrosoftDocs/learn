@@ -115,7 +115,7 @@ ages.with_column(
 |E|6|6|
 |F|101|100|
 
-### Functions as Values
+### Functions as values
 
 We've seen that Python has many kinds of values. For example, `6` is a
 number value, `"cake"` is a text value, `Table()` is an empty table, and
@@ -165,7 +165,7 @@ cut_off
 
 Let us see another application of `apply`.
 
-### Example: Prediction
+### Example: prediction
 
 Data Science is often used to make predictions about the future. If we
 are trying to predict an outcome for a particular individual -- for

@@ -21,7 +21,7 @@ times. There are many situations in computing that require repeated
 computation. For example, it is often the case that we want to perform
 the same manipulation on every value in a column of a table.
 
-### Defining a Function
+### Defining a function
 
 The definition of the `double` function below simply doubles a number.
 
@@ -208,7 +208,7 @@ Here is what happens when we run that cell:
 
 ![](../media/function-execution.jpg)
 
-## Multiple Arguments
+## Multiple arguments
 
 There can be multiple ways to generalize an expression or block of code,
 and so a function can take multiple arguments that each determine

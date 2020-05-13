@@ -15,10 +15,10 @@ Each row represents one player. The columns are:
 
 | | |
 |-|-|
-|**PLAYER**| Player's name|
-|**POSITION**|Player's position on team|
-|**TEAM**|Team name|
-|**'15-'16 SALARY**|Player's salary in 2015-2016, in millions of dollars|
+|**Player**| Player's name|
+|**Position**|Player's position on team|
+|**Team**|Team name|
+|**'15-'16 Salary**|Player's salary in 2015-2016, in millions of dollars|
 
 The code for the positions is PG (Point Guard), SG (Shooting Guard), PF
 (Power Forward), SF (Small Forward), and C (Center). But what follows
@@ -33,7 +33,7 @@ nba_salaries = Table.read_table(path_data + 'nba_salaries.csv')
 nba_salaries
 ```
 
-|PLAYER|POSITION|TEAM|'15-'16 SALARY|
+|Player|Position|Team|'15-'16 Salary|
 |--- |--- |--- |--- |
 |Paul Millsap|PF|Atlanta Hawks|18.6717|
 |Al Horford|C|Atlanta Hawks|12|
@@ -57,7 +57,7 @@ table.
 nba_salaries.show(3)
 ```
 
-|PLAYER|POSITION|TEAM|'15-'16 SALARY|
+|Player|Position|Team|'15-'16 Salary|
 |--- |--- |--- |--- |
 |Paul Millsap|PF|Atlanta Hawks|18.6717|
 |Al Horford|C|Atlanta Hawks|12|
@@ -71,10 +71,10 @@ rows in alphabetical order by player name using the `sort` method. The
 argument to `sort` is a column label or index.
 
 ``` python
-nba_salaries.sort('PLAYER').show(5)
+nba_salaries.sort('Player').show(5)
 ```
 
-|PLAYER|POSITION|TEAM|'15-'16 SALARY|
+|Player|Position|Team|'15-'16 Salary|
 |--- |--- |--- |--- |
 |Aaron Brooks|PG|Chicago Bulls|2.25|
 |Aaron Gordon|PF|Orlando Magic|4.17168|
@@ -88,18 +88,18 @@ To examine the players' salaries, it would be much more helpful if the
 data were ordered by salary.
 
 To do this, we will first simplify the label of the column of salaries
-(just for convenience), and then sort by the new label `SALARY`.
+(just for convenience), and then sort by the new label `Salary`.
 
 This arranges all the rows of the table in *increasing* order of salary,
 with the lowest salary appearing first. The output is a new table with
 the same columns as the original but with the rows rearranged.
 
 ``` python
-nba = nba_salaries.relabeled("'15-'16 SALARY", 'SALARY')
-nba.sort('SALARY')
+nba = nba_salaries.relabeled("'15-'16 Salary", 'Salary')
+nba.sort('Salary')
 ```
 
-|PLAYER|POSITION|TEAM|SALARY|
+|Player|Position|Team|Salary|
 |--- |--- |--- |--- |
 |Thanasis Antetokounmpo|SF|New York Knicks|0.030888|
 |Jordan McRae|SG|Phoenix Suns|0.049709|
@@ -128,10 +128,10 @@ To order the rows of the table in *decreasing* order of salary, we must
 use `sort` with the option `descending=True`.
 
 ``` python
-nba.sort('SALARY', descending=True)
+nba.sort('Salary', descending=True)
 ```
 
-|PLAYER|POSITION|TEAM|SALARY|
+|Player|Position|Team|Salary|
 |--- |--- |--- |--- |
 |Kobe Bryant|SF|Los Angeles Lakers|25|
 |Joe Johnson|SF|Brooklyn Nets|24.8949|
@@ -151,7 +151,7 @@ at a salary of $\$25$ million. Notice that the MVP Stephen Curry doesn't
 appear among the top 10. He is quite a bit further down the list, as we
 will see later.
 
-### Named Arguments
+### Named arguments
 
 The `descending=True` portion of this call expression is called a *named
 argument*. When a function or method is called, each argument has both a
@@ -237,8 +237,8 @@ arguments to `sort`. When calling this method, you can use either
 positional arguments or named arguments, so the following three calls do
 exactly the same thing.
 
-sort('SALARY', True) sort('SALARY', descending=True)
-sort(column\_or\_label='SALARY', descending=True)
+sort('Salary', True) sort('Salary', descending=True)
+sort(column\_or\_label='Salary', descending=True)
 
 When an argument is simply `True` or `False`, it's a useful convention
 to include the argument name so that it's more obvious what the argument

@@ -7,7 +7,7 @@ np.set_printoptions(threshold=50)
 
 ``` python
 nba_salaries = Table.read_table(path_data + 'nba_salaries.csv')
-nba = nba_salaries.relabeled("'15-'16 SALARY", 'SALARY')
+nba = nba_salaries.relabeled("'15-'16 Salary", 'Salary')
 ```
 
 Often, we would like to extract just those rows that correspond to
@@ -15,7 +15,7 @@ entries with a particular feature. For example, we might want only the
 rows corresponding to the Warriors, or to players who earned more than
 $\$10$ million. Or we might just want the top five earners.
 
-### Specified Rows
+### Specified rows
 
 The Table method `take` does just that -- it takes a specified set of
 rows. Its argument is a row index or array of indices, and it creates a
@@ -28,7 +28,7 @@ For example, if we wanted just the first row of `nba`, we could use
 nba
 ```
 
-| PLAYER           | POSITION | TEAM          | SALARY  |
+| Player           | Position | Team          | Salary  |
 |------------------|----------|---------------|---------|
 | Paul Millsap     | PF       | Atlanta Hawks | 18.6717 |
 | Al Horford       | C        | Atlanta Hawks | 12      |
@@ -47,7 +47,7 @@ nba
 nba.take(0)
 ```
 
-| PLAYER       | POSITION | TEAM          | SALARY  |
+| Player       | Position | Team          | Salary  |
 |--------------|----------|---------------|---------|
 | Paul Millsap | PF       | Atlanta Hawks | 18.6717 |
 
@@ -60,7 +60,7 @@ range of indices as the argument.
 nba.take(np.arange(3, 6))
 ```
 
-| PLAYER          | POSITION | TEAM          | SALARY  |
+| Player          | Position | Team          | Salary  |
 |-----------------|----------|---------------|---------|
 | Jeff Teague     | PG       | Atlanta Hawks | 8       |
 | Kyle Korver     | SG       | Atlanta Hawks | 5.74648 |
@@ -70,10 +70,10 @@ If we want a table of the top 5 highest paid players, we can first sort
 the list by salary and then `take` the first five rows:
 
 ``` python
-nba.sort('SALARY', descending=True).take(np.arange(5))
+nba.sort('Salary', descending=True).take(np.arange(5))
 ```
 
-| PLAYER          | POSITION | TEAM                | SALARY  |
+| Player          | Position | Team                | Salary  |
 |-----------------|----------|---------------------|---------|
 | Kobe Bryant     | SF       | Los Angeles Lakers  | 25      |
 | Joe Johnson     | SF       | Brooklyn Nets       | 24.8949 |
@@ -81,7 +81,7 @@ nba.sort('SALARY', descending=True).take(np.arange(5))
 | Carmelo Anthony | SF       | New York Knicks     | 22.875  |
 | Dwight Howard   | C        | Houston Rockets     | 22.3594 |
 
-### Rows Corresponding to a Specified Feature
+### Rows corresponding to a specified feature
 
 More often, we will want to access data in a set of rows that have a
 certain feature, but whose indices we don't know ahead of time. For
@@ -95,7 +95,7 @@ occurs.
 
 The first argument of `where` is the label of the column that contains
 the information about whether or not a row has the feature we want. If
-the feature is "made more than $\$10$ million", the column is `SALARY`.
+the feature is "made more than $\$10$ million", the column is `Salary`.
 
 The second argument of `where` is a way of specifying the feature. A
 couple of examples will make the general method of specification easier
@@ -105,10 +105,10 @@ In the first example, we extract the data for all those who earned more
 than $\$10$ million.
 
 ``` python
-nba.where('SALARY', are.above(10))
+nba.where('Salary', are.above(10))
 ```
 
-| PLAYER         | POSITION | TEAM              | SALARY  |
+| Player         | Position | Team              | Salary  |
 |----------------|----------|-------------------|---------|
 | Paul Millsap   | PF       | Atlanta Hawks     | 18.6717 |
 | Al Horford     | C        | Atlanta Hawks     | 12      |
@@ -124,7 +124,7 @@ nba.where('SALARY', are.above(10))
 ... (59 rows omitted)
 
 The use of the argument `are.above(10)` ensured that each selected row
-had a value of `SALARY` that was greater than 10.
+had a value of `Salary` that was greater than 10.
 
 There are 69 rows in the new table, corresponding to the 69 players who
 made more than $10$ million dollars. Arranging these rows in order makes
@@ -132,10 +132,10 @@ the data easier to analyze. DeMar DeRozan of the Toronto Raptors was the
 "poorest" of this group, at a salary of just over $10$ million dollars.
 
 ``` python
-nba.where('SALARY', are.above(10)).sort('SALARY')
+nba.where('Salary', are.above(10)).sort('Salary')
 ```
 
-| PLAYER          | POSITION | TEAM                 | SALARY  |
+| Player          | Position | Team                 | Salary  |
 |-----------------|----------|----------------------|---------|
 | DeMar DeRozan   | SG       | Toronto Raptors      | 10.05   |
 | Gerald Wallace  | SF       | Philadelphia 76ers   | 10.1059 |
@@ -151,14 +151,14 @@ nba.where('SALARY', are.above(10)).sort('SALARY')
 ... (59 rows omitted)
 
 How much did Stephen Curry make? For the answer, we have to access the
-row where the value of `PLAYER` is equal to `Stephen Curry`. That is
+row where the value of `Player` is equal to `Stephen Curry`. That is
 placed a table consisting of just one line:
 
 ``` python
-nba.where('PLAYER', are.equal_to('Stephen Curry'))
+nba.where('Player', are.equal_to('Stephen Curry'))
 ```
 
-| PLAYER        | POSITION | TEAM                  | SALARY  |
+| Player        | Position | Team                  | Salary  |
 |---------------|----------|-----------------------|---------|
 | Stephen Curry | PG       | Golden State Warriors | 11.3708 |
 
@@ -173,10 +173,10 @@ In the code, `are` is used again, but this time with the *predicate*
 all the Warriors:
 
 ``` python
-nba.where('TEAM', are.equal_to('Golden State Warriors')).show()
+nba.where('Team', are.equal_to('Golden State Warriors')).show()
 ```
 
-| PLAYER            | POSITION | TEAM                  | SALARY   |
+| Player            | Position | Team                  | Salary   |
 |-------------------|----------|-----------------------|----------|
 | Klay Thompson     | SG       | Golden State Warriors | 15.501   |
 | Draymond Green    | PF       | Golden State Warriors | 14.2609  |
@@ -204,10 +204,10 @@ some value that the `are.equal_to` call is optional. Instead, the
 achieve the same effect.
 
 ``` python
-nba.where('TEAM', 'Denver Nuggets') # equivalent to nba.where('TEAM', are.equal_to('Denver Nuggets'))
+nba.where('Team', 'Denver Nuggets') # equivalent to nba.where('Team', are.equal_to('Denver Nuggets'))
 ```
 
-| PLAYER            | POSITION | TEAM           | SALARY  |
+| Player            | Position | Team           | Salary  |
 |-------------------|----------|----------------|---------|
 | Danilo Gallinari  | SF       | Denver Nuggets | 14      |
 | Kenneth Faried    | PF       | Denver Nuggets | 11.236  |
@@ -222,17 +222,17 @@ nba.where('TEAM', 'Denver Nuggets') # equivalent to nba.where('TEAM', are.equal_
 
 ... (4 rows omitted)
 
-### Multiple Features
+### Multiple features
 
 You can access rows that have multiple specified features, by using
 `where` repeatedly. For example, here is a way to extract all the Point
 Guards whose salaries were over $\$15$ million.
 
 ``` python
-nba.where('POSITION', 'PG').where('SALARY', are.above(15))
+nba.where('Position', 'PG').where('Salary', are.above(15))
 ```
 
-| PLAYER            | POSITION | TEAM                  | SALARY  |
+| Player            | Position | Team                  | Salary  |
 |-------------------|----------|-----------------------|---------|
 | Derrick Rose      | PG       | Chicago Bulls         | 20.0931 |
 | Kyrie Irving      | PG       | Cleveland Cavaliers   | 16.4075 |
@@ -240,7 +240,7 @@ nba.where('POSITION', 'PG').where('SALARY', are.above(15))
 | Russell Westbrook | PG       | Oklahoma City Thunder | 16.7442 |
 | John Wall         | PG       | Washington Wizards    | 15.852  |
 
-### General Form
+### General form
 
 By now you will have realized that the general way to create a new table
 by selecting rows with a given feature is to use `where` and `are` with
@@ -249,10 +249,10 @@ the appropriate condition:
 `original_table_name.where(column_label_string, are.condition)`
 
 ``` python
-nba.where('SALARY', are.between(10, 10.3))
+nba.where('Salary', are.between(10, 10.3))
 ```
 
-| PLAYER         | POSITION | TEAM               | SALARY  |
+| Player         | Position | Team               | Salary  |
 |----------------|----------|--------------------|---------|
 | Luol Deng      | SF       | Miami Heat         | 10.1516 |
 | Gerald Wallace | SF       | Philadelphia 76ers | 10.1059 |
@@ -267,13 +267,13 @@ If we specify a condition that isn't satisfied by any row, we get a
 table with column labels but no rows.
 
 ``` python
-nba.where('PLAYER', are.equal_to('Barack Obama'))
+nba.where('Player', are.equal_to('Barack Obama'))
 ```
 
-| PLAYER | POSITION | TEAM | SALARY |
+| Player | Position | Team | Salary |
 |--------|----------|------|--------|
 
-### Some More Conditions
+### Some more conditions
 
 Here are some predicates of `are` that you might find useful. Note that
 `x` and `y` are numbers, `STRING` is a string, and `Z` is either a
@@ -309,10 +309,10 @@ The use of `are.containing` can help save some typing. For example, you
 can just specify `Warriors` instead of `Golden State Warriors`:
 
 ``` python
-nba.where('TEAM', are.containing('Warriors')).show()
+nba.where('Team', are.containing('Warriors')).show()
 ```
 
-| PLAYER            | POSITION | TEAM                  | SALARY   |
+| Player            | Position | Team                  | Salary   |
 |-------------------|----------|-----------------------|----------|
 | Klay Thompson     | SG       | Golden State Warriors | 15.501   |
 | Draymond Green    | PF       | Golden State Warriors | 14.2609  |
@@ -333,10 +333,10 @@ You can extract data for all the guards, both Point Guards and Shooting
 Guards:
 
 ``` python
-nba.where('POSITION', are.containing('G'))
+nba.where('Position', are.containing('G'))
 ```
 
-| PLAYER           | POSITION | TEAM           | SALARY   |
+| Player           | Position | Team           | Salary   |
 |------------------|----------|----------------|----------|
 | Jeff Teague      | PG       | Atlanta Hawks  | 8        |
 | Kyle Korver      | SG       | Atlanta Hawks  | 5.74648  |
@@ -355,11 +355,11 @@ You can get all the players who were not Cleveland Cavaliers and had a
 salary of no less than $\$20$ million:
 
 ``` python
-other_than_Cavs = nba.where('TEAM', are.not_equal_to('Cleveland Cavaliers'))
-other_than_Cavs.where('SALARY', are.not_below(20))
+other_than_Cavs = nba.where('Team', are.not_equal_to('Cleveland Cavaliers'))
+other_than_Cavs.where('Salary', are.not_below(20))
 ```
 
-| PLAYER          | POSITION | TEAM                  | SALARY  |
+| Player          | Position | Team                  | Salary  |
 |-----------------|----------|-----------------------|---------|
 | Joe Johnson     | SF       | Brooklyn Nets         | 24.8949 |
 | Derrick Rose    | PG       | Chicago Bulls         | 20.0931 |
@@ -375,10 +375,10 @@ The same table can be created in many ways. Here is another, and no
 doubt you can think of more.
 
 ``` python
-other_than_Cavs.where('SALARY', are.above_or_equal_to(20))
+other_than_Cavs.where('Salary', are.above_or_equal_to(20))
 ```
 
-| PLAYER          | POSITION | TEAM                  | SALARY  |
+| Player          | Position | Team                  | Salary  |
 |-----------------|----------|-----------------------|---------|
 | Joe Johnson     | SF       | Brooklyn Nets         | 24.8949 |
 | Derrick Rose    | PG       | Chicago Bulls         | 20.0931 |

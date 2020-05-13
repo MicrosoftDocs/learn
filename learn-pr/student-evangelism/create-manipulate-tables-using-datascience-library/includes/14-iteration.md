@@ -113,7 +113,7 @@ In this case, we simply perform exactly the same (random) action several
 times, so the code in the body of our `for` statement does not actually
 refer to `i`.
 
-### Augmenting Arrays
+### Augmenting arrays
 
 While the `for` statement above does simulate the results of five bets,
 the results are simply printed and are not in a form that we can use for
@@ -152,7 +152,7 @@ pets
 
     array(['Cat', 'Dog', 'Another Pet'], dtype='<U11')
 
-### Example: Betting on 5 Rolls
+### Example: betting on 5 rolls
 
 We can now simulate five bets on the die and collect the results in an
 array that we will call the *collection array*. We will start out by
@@ -217,7 +217,7 @@ np.count_nonzero(outcomes)
 
     3
 
-### Example: Betting on 300 Rolls
+### Example: betting on 300 rolls
 
 Iteration is a powerful technique. For example, we can see the variation
 in the results of 300 bets by running exactly the same code for 300 bets

@@ -20,7 +20,7 @@ year, or by a combination of major and year.
 The `group` method also allows us to classify individuals according to
 multiple variables. This is called *cross-classifying*.
 
-### Two Variables: Counting the Number in Each Paired Category
+### Two variables: counting the number in each paired category
 
 The table `more_cones` records the flavor, color, and price of six ice
 cream cones.
@@ -78,7 +78,7 @@ more_cones.group(['Flavor', 'Color'])
 |chocolate|light brown|1|
 |strawberry|pink|2|
 
-### Two Variables: Finding a Characteristic of Each Paired Category
+### Two variables: finding a characteristic of each paired category
 
 A second argument aggregates all other columns that are not in the list
 of grouped columns.
@@ -94,13 +94,13 @@ more_cones.group(['Flavor', 'Color'], sum)
 |chocolate|light brown|4.75|
 |strawberry|pink|8.8|
 
-**Three or More Variables.** You can use `group` to classify rows by
+**Three or more variables.** You can use `group` to classify rows by
 three or more categorical variables. Just include them all in the list
 that is the first argument. But cross-classifying by multiple variables
 can become complex, as the number of distinct combinations of categories
 can be quite large.
 
-### Pivot Tables: Rearranging the Output of `group`
+### Pivot tables: rearranging the output of `group`
 
 Many uses of cross-classification involve just two categorical
 variables, like `Flavor` and `Color` in the example above. In these
@@ -197,7 +197,7 @@ Though the numbers in both tables are the same, table produced by
 advantage of `pivot` is that it places grouped values into adjacent
 columns, so that they can be combined and compared.
 
-### Example: Education and Income of Californian Adults
+### Example: education and income of californian adults
 
 The State of California's Open Data Portal is a rich source of
 information about the lives of Californians. It is our source of a
