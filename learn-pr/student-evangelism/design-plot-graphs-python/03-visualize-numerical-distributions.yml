@@ -13,6 +13,7 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/03-visualize-numerical-distributions.md)]
+  
 quiz:
   questions:
     - content: 'Which bin contains the most number of players?'
