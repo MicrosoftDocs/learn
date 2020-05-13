@@ -40,7 +40,7 @@ Next, let's create a new registration in the Azure AD tenant for the web app. By
     | --- | --- |
     | Name | WebApp-OpenIDConnect-DotNet |
     | Supported account types | Accounts in this organizational directory only (Learn Module AAD Tenant) |
-    | Redirect URI | https://localhost:5000/signin-oidc |
+    | Redirect URI | `https://localhost:5000/signin-oidc` |
 
     ![Registering an application](../media/4-register-application.png)
 

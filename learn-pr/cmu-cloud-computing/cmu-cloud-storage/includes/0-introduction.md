@@ -1,8 +1,8 @@
-We now move on to the next part of the course, namely cloud storage. Storage is an important aspect of cloud computing and has seen a lot of innovation in the last decade or so. In fact, Amazon's first public cloud service was Simple Storage Service (S3). 
+We now move on to the next part of the course, namely cloud storage. Storage is an important aspect of cloud computing and has seen a lot of innovation in the last decade or so.
 
-We will begin with a description of the types of and characteristics of data. We will then move to typical applications and their requirements on storage systems. 
+We will begin with a description of the types of and characteristics of data. We will then move to typical applications and their requirements on storage systems.
 
-We will then explore storage devices and recap the various types of devices that are currently used in storage systems. Next, we will visit the various abstractions that are used to organize data—either as blocks on disk, files within a file system, or objects in a database. We will then explore each of those abstractions in detail. 
+We will then explore storage devices and recap the various types of devices that are currently used in storage systems. Next, we will visit the various abstractions that are used to organize data—either as blocks on disk, files within a file system, or objects in a database. We will then explore each of those abstractions in detail.
 
 The first abstraction we will dive into is file systems. We will discuss the different types of file systems as well as their design considerations. We will then explore databases, consider the various design choices made when creating database systems, and discuss the three main types of databases that are popular today: relational, NoSQL, and NewSQL databases. We will finally end this unit with a discussion on a class of cloud-specific storage systems, namely object storage as a cloud service.
 

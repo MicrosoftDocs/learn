@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Some patients have difficulties hearing. You have been asked to ensure that multi-factor authentication takes these difficulties into account. How can you do meet this requirement with minimal effort?
+  - content: Some patients are hard of hearing. You've been asked to ensure that multi-factor authentication takes these patients into account. How can you meet this requirement with minimal effort?
     choices:
-    - content: Configure multi-factor authentication in your application code. Configure the app to let users select they want to receive text-messages instead of phone calls.
+    - content: Configure multi-factor authentication in your application code. Code the app so that users can choose to receive text messages instead of phone calls.
       isCorrect: false
       explanation: You don't need to add code to your application to configure multi-factor authentication. Instead, use user flows to configure multi-factor authentication for your app.
-    - content: Configure multi-factor authentication in your user flow. The users can select that they want to receive a text-message rather than a phone call.
+    - content: Configure multi-factor authentication in your user flow. Users can then choose to receive a text message instead of a phone call.
       isCorrect: true
-      explanation: Your users with hearing-difficulties can select that they want to receive a text-message.
-    - content: Configure multi-factor authentication in your page layout template. The users can select that they want to receive a text-message rather than a phone call.
+      explanation: Hard-of-hearing users can choose to receive a text-message when they go through the user flow that you've configured.
+    - content: Configure multi-factor authentication in your page-layout template. Users can choose to receive a text message instead of a phone call.
       isCorrect: false
-      explanation: Use page layout templates to customize your app's UI. Use user flows to configure multi-factor authentication for your app.
-  - content: You need to disable multi-factor authentication for the healthcare application temporarily, how can you do this?
+      explanation: You use page-layout templates to customize your app's UI. Use user flows to configure multi-factor authentication for your app.
+  - content: You need to disable multi-factor authentication temporarily for your healthcare application. How can you do that?
     choices:
-    - content: You'll delete the user flow and create a new one to disable multi-factor authentication.
+    - content: Delete the user flow and create a new one to disable multi-factor authentication.
       isCorrect: false
       explanation: You can go back to your user flow and disable multi-factor authentication.
-    - content: You pause the user flow and disable multi-factor authentication, then resume the user flow.
+    - content: Pause the user flow and disable multi-factor authentication. Then, resume the user flow.
       isCorrect: false
       explanation: You don't pause a user flow. You can go back to your user flow and disable multi-factor authentication. 
-    - content: You go back to your user flow and disable multi-factor authentication using the toggle.
+    - content: Go back to your user flow and disable multi-factor authentication by using the toggle.
       isCorrect: true
-      explanation: Use the toggle in your user flow to disable MFA, and enable it again when you are ready.
+      explanation: Use the toggle in your user flow to disable multi-factor authentication. When you're ready to enable it again, use the toggle once more.

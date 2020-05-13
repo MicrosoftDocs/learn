@@ -1,9 +1,8 @@
-We have covered several important topics in this module. 
+We have covered several important topics in this module.
 
 - You have learned about Azure purchasing options and the Azure free account.
 - You have created an Azure free account and learned how to sign in using that account.
 - You have seen how billing, subscriptions, and support are managed in Azure.
-
 
 ## Learn more
 

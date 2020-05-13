@@ -1,14 +1,14 @@
-You use Azure Storage to authorize access to files with a shared key, shared access signatures, or via Azure AD. With SAS, you control what a client can do with the files, and for how long.
+You use Azure Storage to authorize access to files with a shared key, with a shared access signature (SAS), or via Azure Active Directory (Azure AD). With a SAS, you control what a client can do with the files and for how long.
 
-Your company's image diagnostic system accesses its patient images internally via a shared key. Your team needs to create an API to allow third parties access to diagnostic images. You'll create a test page on your web app to see how SAS helps you grant secure access to third-party clients.
+Your company's image diagnostic system accesses its patient images internally via a shared key. Your team needs to create an API to allow third parties access to diagnostic images. You'll create a test page on your web app to see how a SAS helps you grant secure access to third-party clients.
 
-In this exercise, you'll create a storage account and upload some example patient images. You'll deploy your team's existing web app, and test that it can access the storage. The last step is to add C# and JavaScript code to generate a SAS token on demand to view the images securely.
+In this exercise, you'll create a storage account and upload some example patient images. You'll deploy your team's existing web app and test that it can access the storage. The last step is to add C# and JavaScript code to generate a SAS token on demand to view the images securely.
 
-:::image type="content" source="../media/4-app-running.png" alt-text="Screenshot your company's patient diagnostic image system, showing three example images loaded." loc-scope="other"::: <!-- no-loc -->
+:::image type="content" source="../media/4-app-running.png" alt-text="Screenshot your company's patient diagnostic image system showing three example images loaded." loc-scope="other"::: <!-- no-loc -->
 
 ### Create a storage account and upload images
 
-1. Using Cloud Shell, create a storage account for patient images.
+1. Using Azure Cloud Shell, create a storage account for patient images.
 
     ```azurecli
     export STORAGENAME=medicalrecords$RANDOM
@@ -61,7 +61,7 @@ In this exercise, you'll create a storage account and upload some example patien
     }
     ```
 
-    Copy the connectionString value in Cloud Shell output from your command, including the quotes.
+    Copy the connectionString value in Cloud Shell output from your command. Include the quotation marks.
 
 1. Edit the **appsettings.json** file to add the connection credentials.
 
@@ -69,15 +69,15 @@ In this exercise, you'll create a storage account and upload some example patien
     code sas/appsettings.json
     ```
 
-1. In the code editor, replace the ConnectionString value `"[connection string]"` with the string you copied above.
+1. In the code editor, replace the ConnectionString value `"[connection string]"` with the string you copied.
 
-1. Change the AccountName to the randomly generated name.
+1. Change AccountName to the randomly generated name.
 
 1. In the editor, copy the string after the `AccountKey=` parameter up to the `;` in the connection string.
 
 1. Replace the `"[account key]"` string with the account key you copied.
 
-1. The **appsettings.json** file should now look similar to this:
+1. The **appsettings.json** file should now look similar to this output.
 
     ```json
     {
@@ -96,9 +96,9 @@ In this exercise, you'll create a storage account and upload some example patien
     }
     ```
 
-    Make sure you have the `==` at the end of the `AccountKey`.
+    Make sure you have the `==` at the end of the `AccountKey` line.
 
-1. Save and close the code editor with <kbd>Ctrl</kbd>+<kbd>S</kbd>, and then <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
+1. Save and close the code editor by selecting <kbd>Ctrl</kbd>+<kbd>S</kbd> and then selecting <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
 1. To access your web app when it's running in Cloud Shell, you need to open a port.
 
@@ -106,7 +106,7 @@ In this exercise, you'll create a storage account and upload some example patien
     curl -X POST http://localhost:8888/openPort/8000;
     ```
 
-    This command will return a **url** where your app can be accessed.
+    This command returns a `url1 where your app can be accessed.
 
     ```json
     {"message":"Port 8000 is open","url":"https://gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/"}
@@ -119,7 +119,7 @@ In this exercise, you'll create a storage account and upload some example patien
     dotnet run
     ```
 
-    When the app is ready to be viewed, you'll see the following details in the console:
+    When the app is ready to be viewed, you'll see the following details in the console.
 
     ```bash
     Hosting environment: Development
@@ -129,13 +129,13 @@ In this exercise, you'll create a storage account and upload some example patien
     Application started. Press Ctrl+C to shut down.
     ```
 
-1. Go to your personal URL, which should be in this format: **https:\//gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/**. Make sure you have a **/** at the end of the address.
+1. Go to your personal URL, which should be in this format: https:\//gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/. Make sure you have a slash (/) at the end of the address.
 
-1. Select **Get all patients**, to view all the images stored in the storage account.
+1. Select **Get all patients** to view all the images stored in the storage account.
 
 ### Add code to create a SAS
 
-1. Stop the web app with <kbd>Ctrl+C</kbd>.
+1. Stop the web app by selecting <kbd>Ctrl+C</kbd>.
 
 1. You'll enhance the **PatientRecordController** class to create an on-demand SAS and return it to the front end of the web app.
 
@@ -157,9 +157,9 @@ In this exercise, you'll create a storage account and upload some example patien
     }
     ```
 
-1. This method will return the requested patient image with a SAS that can be used to access it.
+1. This method returns the requested patient image with a SAS that can be used to access it.
 
-1. Add a method that will create the SAS for the blob.
+1. Add a method that creates the SAS for the blob.
 
     ```C#
     // Build a SAS token for the given blob
@@ -188,7 +188,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
     The method uses the passed `BlobClient` object to create a `BlobSasBuilder`. You'll generate a SAS that is read-only and expires in one minute.
 
-1. Save and quit the editor with <kbd>Ctrl</kbd>+<kbd>S</kbd>, and then <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
+1. Save and quit the editor by selecting <kbd>Ctrl</kbd>+<kbd>S</kbd> and then selecting <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
 ### Add code to use the SAS
 
@@ -210,9 +210,9 @@ In this exercise, you'll create a storage account and upload some example patien
     });
     ```
 
-    This jQuery code adds a click listener on the `btn-getKey` button. The code executes an Ajax call to the new secure url for the given image file. When it returns, it populates the key input box with the SAS.
+    This jQuery code adds a click listener on the `btn-getKey` button. The code executes an Ajax call to the new secure URL for the given image file. When it returns, it populates the key input box with the SAS.
 
-1. Save the changes and quit the editor with <kbd>Ctrl</kbd>+<kbd>S</kbd> and then <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
+1. Save the changes, and quit the editor by selecting <kbd>Ctrl</kbd>+<kbd>S</kbd> and then selecting <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
 ### Test your changes
 
@@ -222,20 +222,20 @@ In this exercise, you'll create a storage account and upload some example patien
     dotnet run
     ```
 
-1. Select **Get all patients**, then copy one of the image filenames.
+1. Select **Get all patients**, and then copy one of the image filenames.
 
 1. In the menu at the top of the page, select **External companies**.
 
 1. Paste the filename into the **Patient image filename** field.
 
-1. Select **View scan**. The image won't be accessible as you haven't created a SAS.
+1. Select **View scan**. The image won't be accessible because you haven't created a SAS.
 
     > [!NOTE]
-    > If you view the console in your browser, you'll see the web server returned a 404 error code.
+    > If you view the console in your browser, you'll see the web server returned a 404 error-code message.
 
 1. Select **Get Key**, which should populate the **Key** field with a SAS.
 
-1. Select **View scan**. The patient's diagnostic image should be displayed below.
+1. Select **View scan**. The patient's diagnostic image should be displayed.
 
     :::image type="content" source="../media/4-viewing-image.png" alt-text="Screenshot of the patient diagnostic image web app showing a patient's image." loc-scope="other":::
 
@@ -243,7 +243,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. Open a new browser window.
 
-1. Go to the copied image address in the new window. If it's been longer than a minute since you created the SAS, you'll see this error. You may need to refresh the page.
+1. Go to the copied image address in the new window. If it's been longer than a minute since you created the SAS, you'll see this message. You might need to refresh the page.
 
     ```xml
     <Error>
@@ -256,6 +256,6 @@ In this exercise, you'll create a storage account and upload some example patien
     ```
 
     > [!NOTE]
-    > To see this error, you need to use a new browser window that won't have cached the image.
+    > To see this message, you need to use a new browser window that won't have cached the image.
 
-1. In the Cloud Shell quit the web app with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+1. In Cloud Shell, quit the web app by selecting <kbd>Ctrl</kbd>+<kbd>C</kbd>.

@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.8-challenges-scalability
+title: 'Cloud challenges: Scalability'
+metadata:
+  title: 'Cloud challenges: Scalability'
+  description: Learn about scalability challenges in building cloud programs.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-challenges-scalability.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Assume a program that runs for 15 hours on a single processor. One-third of the program consists of data access, which is serial, and the remaining two-thirds consists of computation, which can be parallelized ad infinitum. What is the least amount of time in which the program can execute?"
+    choices:
+    - content: "3 hours"
+      isCorrect: false
+      explanation: "Incorrect. Applying Amdahl's Law, the maximum speedup can be calculated as (1 / (1/3)) = 3. Hence, this program cannot execute in less than 5 hours, even with an infinite number of parallel processors."
+    - content: "5 hours"
+      isCorrect: true
+      explanation: "Correct! Applying Amdahl's Law, this program cannot execute in less than 5 hours, even with an infinite number of parallel processors."
+    - content: "10 hours"
+      isCorrect: false
+      explanation: "Incorrect. Applying Amdahl's Law, the maximum speedup can be calculated as (1 / (1/3)) = 3. Hence, this program cannot execute in less than 5 hours, even with an infinite number of parallel processors."

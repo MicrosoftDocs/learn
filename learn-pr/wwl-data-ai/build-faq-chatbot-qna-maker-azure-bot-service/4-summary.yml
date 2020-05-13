@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Check your learning"
+  ms.date: 04/24/2020
+  author: benjiang
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-summary.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "Your organization has an existing frequently asked questions (FAQ) document. You need to create a QnA Maker knowledge base that includes the questions and answers from the FAQ with the least possible effort. What should you do?"
+    choices:
+    - content: "Create an empty knowledge base, and then manually copy and paste the FAQ entries into it."
+      isCorrect: false
+      explanation: "Incorrect. While you could do it this way, importing there's an option that requires less effort."
+    - content: "Import the existing FAQ document into a new knowledge base."
+      isCorrect: true
+      explanation: "Correct. You can import question and answer pairs from an existing FAQ document into a QnA Maker knowledge base."
+    - content: "Import a pre-defined chit-chat data source."
+      isCorrect: false
+      explanation: "Incorrect. A pre-defined chit-chat data source is unlikely to include relevant question and answer pairs for your FAQ."
+  - content: "You need to deliver a support bot for internal use in your organization. Some users want to be able to submit questions to the bot using Microsoft Teams, others want to use a web chat interface on an internal web site. What should you do?"
+    choices:
+    - content: "Create a knowledge base. Then create a bot for the knowledge base and connect the Web Chat and Microsoft Teams channels for your bot"
+      isCorrect: true
+      explanation: "Correct. The Microsoft Teams channel enables your bot to receive and respond to messages in Microsoft Teams, and the Web Chat channel enables interactions through a web chat interface."
+    - content: "Create a knowledge base. Then create two bots that use the same knowledge base - one bot connected to the Microsoft Teams channel, and the other to the Web Chat channel."
+      isCorrect: false
+      explanation: "Incorrect. A single bot can be delivered through multiple channels."
+    - content: "Create two knowledge bases with the same question and answer pairs. Then create a bot for each knowledge base; one connected to the Microsoft Teams channel, and the other to the Web Chat channel"
+      isCorrect: false
+      explanation: "Incorrect. A single bot can be delivered through multiple channels."

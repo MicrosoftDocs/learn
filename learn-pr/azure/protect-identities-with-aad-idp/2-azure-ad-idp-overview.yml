@@ -15,20 +15,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: How do you protect against identity-based risks using Azure AD Identity Protection?
+  - content: How do you protect against identity-based risks by using Azure AD Identity Protection?
     choices:
     - content: Configure an investigation policy and then remediate.
       isCorrect: false
       explanation: There's no such thing as an investigation policy.
-    - content: Configure a report, remediate and then configure a policy.
+    - content: Configure a report, remediate, and then configure a policy.
       isCorrect: false
       explanation: You have to configure a policy first before you can report or remediate.
-    - content: Configure a policy, investigate using a report and remediate.
+    - content: Configure a policy, investigate by using a report, and remediate.
       isCorrect: true
       explanation: Use your risk policy to help you investigate and remediate threats.
-  - content: You want to analyze risks that describe authentication requests for sign-ins that have probably not been authorized by users. Which type of risks will you analyze?
+  - content: You want to analyze risks that describe authentication requests for sign-ins that probably weren't authorized by users. Which type of risks will you analyze?
     choices:
-    - content:  User risk
+    - content: User risk
       isCorrect: false
       explanation: A user risk is the type of risk that can cause, or is caused by, a user's identity or account being compromised.
     - content: Sign-in risk
