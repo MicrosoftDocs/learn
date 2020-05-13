@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-speech-speech-service.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/30/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "How does the translation engine know when an utterance has finished?"
+    choices:
+    - content: "User needs to speak the word 'Stop'."
+      isCorrect: false
+      explanation: "Incorrect. The user is not required to speak a word to end the utterance."
+    - content: "After a pause in the audio"
+      isCorrect: true
+      explanation: "Correct. It uses silence detection to determine the end of an utterance, then, after a pause in voice activity, the service will stream back a final result for the completed utterance."
+    - content: "User presses the space bar"
+      isCorrect: false
+      explanation: "Incorrect. The user is not required to press and keys to indicate end of utterances."
+    - content: "After 10 words have been spoken."
+      isCorrect: false
+      explanation: "Incorrect. There isn't a word count limit."
+  - content: "Translating into multiple languages is achieved by using the _______?"
+    choices:
+    - content: "Speech Synthesizer."
+      isCorrect: false
+      explanation: "Incorrect. The Speech Synthesizer is used to speak the translated text."
+    - content: "Add target language methods of the Speech Config object."
+      isCorrect: true
+      explanation: "Correct. The AddTargetLanguage or add_target_language methods, add target languages to the collection of languages for the Speech Config object."
+    - content: "Specifying the languages in the Speech Recognition Language property."
+      isCorrect: false
+      explanation: "Incorrect. The Speech Recognition Language property is used for the **from** language."

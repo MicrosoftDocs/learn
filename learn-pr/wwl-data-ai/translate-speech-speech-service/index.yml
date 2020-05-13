@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.translate-speech-speech-service
+metadata:
+  title: Translate speech with the speech service
+  description: "Perform speech translation tasks with the speech service to translate spoken text to different languages."
+  ms.date: 06/30/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Translate speech with the speech service
+summary: Perform speech translation tasks with the speech service to translate spoken text to different languages.
+abstract: |
+  In this module you will:
+  - Translate Speech to Text from Microphone Input
+  - Translate Speech to Speech in a Different Language
+  - Translate Speech to Multiple Target Languages
+prerequisites: |
+  - Translate Speech to Text from Microphone Input
+  - Translate Speech to Speech in a Different Language
+  - Translate Speech to Multiple Target Languages
+iconUrl: /learn/achievements/translate-speech-speech-service.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+- student
+products:
+- azure-cognitive-services
+units:
+- learn.wwl.translate-speech-speech-service.introduction-speech-translation
+- learn.wwl.translate-speech-speech-service.translate-speech-text-microphone-input
+- learn.wwl.translate-speech-speech-service.translate-speech-different-language
+- learn.wwl.translate-speech-speech-service.translate-speech-multiple-target-languages
+- learn.wwl.translate-speech-speech-service.knowledge-check
+- learn.wwl.translate-speech-speech-service.summary
+badge:
+  uid: learn.wwl.translate-speech-speech-service.badge
