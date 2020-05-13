@@ -14,7 +14,6 @@ content: |
   [!include[](includes/02-sort-rows.md)]
 
 quiz:
-  title: Check your Knowledge
   questions:
     - content: 'A table with just the names and emails of all students.'
       choices:

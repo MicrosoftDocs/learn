@@ -14,7 +14,6 @@ content: |
   [!include[](includes/10-join-tables-by-columns.md)]
 
 quiz:
-  title: Check your Knowledge
   questions:
     - content: 'Which line of code returns a new table, which displays the total number of candies and the total cost for each unique color?'
       choices:

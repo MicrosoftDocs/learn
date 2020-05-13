@@ -174,14 +174,15 @@ are for strawberry cones, so there is nothing to which the `strawberry`
 rows can be joined. This might be a problem, or it might not be - that
 depends on the analysis we are trying to perform with the joined table.
 
->[!IMPORTANT]
->For the knowledge check: Data 8X has opened up a candy store where we sell small bags of candies in groups of different amounts. Each bag contains candies of one color. Each row is a bag of candies. Our table "candy" is as follows
->
->|Color|Amount|Price ($)|
->|-|-|-|
->|Red|4|1.30|
->|Green|6|1.20|
->|Blue|12|2.00|
->|Red|7|1.75|
->|Green|9|1.40|
->|Green|2|1.00|
+## Check your knowledge
+
+Data 8X has opened up a candy store where we sell small bags of candies in groups of different amounts. Each bag contains candies of one color. Each row is a bag of candies. Our table "candy" is as follows
+
+|Color|Amount|Price ($)|
+|-|-|-|
+|Red|4|1.30|
+|Green|6|1.20|
+|Blue|12|2.00|
+|Red|7|1.75|
+|Green|9|1.40|
+|Green|2|1.00|

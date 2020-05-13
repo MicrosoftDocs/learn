@@ -244,5 +244,6 @@ When an argument is simply `True` or `False`, it's a useful convention
 to include the argument name so that it's more obvious what the argument
 value means.
 
->[!IMPORTANT]
->Suppose you have a table called students with columns labeled name, age, and email. Select the best table expression for the following statements.
+## Check your knowledge
+
+Suppose you have a table called students with columns labeled name, age, and email. Select the best table expression for the following statements.

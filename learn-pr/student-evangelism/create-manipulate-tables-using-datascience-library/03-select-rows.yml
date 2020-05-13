@@ -14,7 +14,6 @@ content: |
   [!include[](includes/03-select-rows.md)]
 
 quiz:
-  title: Check your Knowledge
   questions:
     - content: 'Displays the first few rows of t'
       choices:

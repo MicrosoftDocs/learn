@@ -14,7 +14,6 @@ content: |
   [!include[](includes/14-iteration.md)]
 
 quiz:
-  title: Check your Knowledge
   questions:
     - content: 'How many times (iterations) does the body of the for loop run?'
       choices:
