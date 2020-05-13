@@ -25,5 +25,4 @@ If you don't already have a Visual Studio Codespaces billing plan, create one. T
 
 - Wait for the environment to be created. This will take around a minute.
 
-- Wait for another minute or so while the environment is set up for you. It might look like nothing is happening, but in the background we're installing some components you'll need for the exercise. You'll see the following things happen:
-A list of notebook (.ipynb) files will appear in the pane on the left.
+- Wait for another minute or so while the environment is set up for you. It might look like nothing is happening, but in the background we're installing some components you'll need for the exercise. You'll see a list of notebook (.ipynb) files appear in the pane on the left.
