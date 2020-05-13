@@ -32,14 +32,14 @@ here we will just work with it. First, let's take a look at it.
 cones
 ```
 
-|Flavor|Color|Price|
-|--- |--- |--- |
-|strawberry|pink|3.55|
-|chocolate|light brown|4.75|
-|chocolate|dark brown|5.25|
-|strawberry|pink|5.25|
-|chocolate|dark brown|5.25|
-|bubblegum|pink|4.75|
+| Flavor     | Color       | Price |
+|------------|-------------|-------|
+| strawberry | pink        | 3.55  |
+| chocolate  | light brown | 4.75  |
+| chocolate  | dark brown  | 5.25  |
+| strawberry | pink        | 5.25  |
+| chocolate  | dark brown  | 5.25  |
+| bubblegum  | pink        | 4.75  |
 
 The table has six rows. Each row corresponds to one ice cream cone. The
 ice cream cones are the *individuals*.
@@ -60,10 +60,11 @@ can use the table method `show`.
 ``` python
 cones.show(2)
 ```
-|Flavor|Color|Price|
-|--- |--- |--- |
-|strawberry|pink|3.55|
-|chocolate|light brown|4.75|
+
+| Flavor     | Color       | Price |
+|------------|-------------|-------|
+| strawberry | pink        | 3.55  |
+| chocolate  | light brown | 4.75  |
 
 ... (4 rows omitted)
 
@@ -78,14 +79,15 @@ columns.
 ``` python
 cones.select('Flavor')
 ```
-|Flavor|
-|--- |
-|strawberry|
-|chocolate|
-|chocolate|
-|strawberry|
-|chocolate|
-|bubblegum|
+
+| Flavor     |
+|------------|
+| strawberry |
+| chocolate  |
+| chocolate  |
+| strawberry |
+| chocolate  |
+| bubblegum  |
 
 This leaves the original table unchanged.
 
@@ -110,14 +112,14 @@ commas.
 cones.select('Flavor', 'Price')
 ```
 
-|Flavor|Price|
-|--- |--- |
-|strawberry|3.55|
-|chocolate|4.75|
-|chocolate|5.25|
-|strawberry|5.25|
-|chocolate|5.25|
-|bubblegum|4.75|
+| Flavor     | Color       | Price |
+|------------|-------------|-------|
+| strawberry | pink        | 3.55  |
+| chocolate  | light brown | 4.75  |
+| chocolate  | dark brown  | 5.25  |
+| strawberry | pink        | 5.25  |
+| chocolate  | dark brown  | 5.25  |
+| bubblegum  | pink        | 4.75  |
 
 You can also *drop* columns you don't want. The table above can be
 created by dropping the `Color` column.
@@ -126,14 +128,14 @@ created by dropping the `Color` column.
 cones.drop('Color')
 ```
 
-|Flavor|Price|
-|--- |--- |
-|strawberry|3.55|
-|chocolate|4.75|
-|chocolate|5.25|
-|strawberry|5.25|
-|chocolate|5.25|
-|bubblegum|4.75|
+| Flavor     | Price |
+|------------|-------|
+| strawberry | 3.55  |
+| chocolate  | 4.75  |
+| chocolate  | 5.25  |
+| strawberry | 5.25  |
+| chocolate  | 5.25  |
+| bubblegum  | 4.75  |
 
 You can name this new table and look at it again by just typing its
 name.
@@ -144,14 +146,14 @@ no_colors = cones.drop('Color')
 no_colors
 ```
 
-|Flavor|Price|
-|--- |--- |
-|strawberry|3.55|
-|chocolate|4.75|
-|chocolate|5.25|
-|strawberry|5.25|
-|chocolate|5.25|
-|bubblegum|4.75|
+| Flavor     | Price |
+|------------|-------|
+| strawberry | 3.55  |
+| chocolate  | 4.75  |
+| chocolate  | 5.25  |
+| strawberry | 5.25  |
+| chocolate  | 5.25  |
+| bubblegum  | 4.75  |
 
 Like `select`, the `drop` method creates a smaller table and leaves the
 original table unchanged. In order to explore your data, you can create
@@ -169,14 +171,14 @@ of the cones.
 cones.sort('Price')
 ```
 
-|Flavor|Color|Price|
-|--- |--- |--- |
-|strawberry|pink|3.55|
-|chocolate|light brown|4.75|
-|bubblegum|pink|4.75|
-|chocolate|dark brown|5.25|
-|strawberry|pink|5.25|
-|chocolate|dark brown|5.25|
+| Flavor     | Color       | Price |
+|------------|-------------|-------|
+| strawberry | pink        | 3.55  |
+| chocolate  | light brown | 4.75  |
+| bubblegum  | pink        | 4.75  |
+| chocolate  | dark brown  | 5.25  |
+| strawberry | pink        | 5.25  |
+| chocolate  | dark brown  | 5.25  |
 
 
 To sort in descending order, you can use an *optional* argument to
@@ -192,14 +194,14 @@ specified column. To sort in decreasing order, use the optional argument
 cones.sort('Price', descending=True)
 ```
 
-|Flavor|Color|Price|
-|--- |--- |--- |
-|chocolate|dark brown|5.25|
-|strawberry|pink|5.25|
-|chocolate|dark brown|5.25|
-|bubblegum|pink|4.75|
-|chocolate|light brown|4.75|
-|strawberry|pink|3.55|
+| Flavor     | Color       | Price |
+|------------|-------------|-------|
+| chocolate  | dark brown  | 5.25  |
+| strawberry | pink        | 5.25  |
+| chocolate  | dark brown  | 5.25  |
+| bubblegum  | pink        | 4.75  |
+| chocolate  | light brown | 4.75  |
+| strawberry | pink        | 3.55  |
 
 Like `select` and `drop`, the `sort` method leaves the original table
 unchanged.
@@ -275,18 +277,18 @@ Hawks, had a salary of almost $\$18.7$ million in 2015-2016.
 nba
 ```
 
-|PLAYER          |POSITION|TEAM         |SALARY |
-|----------------|--------|-------------|---    |
-|Paul Millsap    |PF      |Atlanta Hawks|18.6717|
-|Al Horford      |C       |Atlanta Hawks|12     |
-|Tiago Splitter  |C       |Atlanta Hawks|9.75625|
-|Jeff Teague     |PG      |Atlanta Hawks|8      |
-|Kyle Korver     |SG      |Atlanta Hawks|5.74648|
-|Thabo Sefolosha |SF      |Atlanta Hawks|4      |
-|Mike Scott      |PF      |Atlanta Hawks|3.33333|
-|Kent Bazemore   |SF      |Atlanta Hawks|2      |
-|Dennis Schroder |PG      |Atlanta Hawks|1.7634 |
-|Tim Hardaway Jr.|SG      |Atlanta Hawks|1.30452|
+| PLAYER           | POSITION | TEAM          | SALARY  |
+|------------------|----------|---------------|---------|
+| Paul Millsap     | PF       | Atlanta Hawks | 18.6717 |
+| Al Horford       | C        | Atlanta Hawks | 12      |
+| Tiago Splitter   | C        | Atlanta Hawks | 9.75625 |
+| Jeff Teague      | PG       | Atlanta Hawks | 8       |
+| Kyle Korver      | SG       | Atlanta Hawks | 5.74648 |
+| Thabo Sefolosha  | SF       | Atlanta Hawks | 4       |
+| Mike Scott       | PF       | Atlanta Hawks | 3.33333 |
+| Kent Bazemore    | SF       | Atlanta Hawks | 2       |
+| Dennis Schroder  | PG       | Atlanta Hawks | 1.7634  |
+| Tim Hardaway Jr. | SG       | Atlanta Hawks | 1.30452 |
 
 ... (407 rows omitted)
 
@@ -296,9 +298,9 @@ Fans of Stephen Curry can find his row by using `where`.
 nba.where('PLAYER', 'Stephen Curry')
 ```
 
-|PLAYER|POSITION|TEAM|SALARY|
-|--- |--- |--- |--- |
-|Stephen Curry|PG|Golden State Warriors|11.3708|
+| PLAYER        | POSITION | TEAM                  | SALARY  |
+|---------------|----------|-----------------------|---------|
+| Stephen Curry | PG       | Golden State Warriors | 11.3708 |
 
 We can also create a new table called `warriors` consisting of just the
 data for the Golden State Warriors.
@@ -307,18 +309,19 @@ data for the Golden State Warriors.
 warriors = nba.where('TEAM', 'Golden State Warriors')
 warriors
 ```
-|PLAYER|POSITION|TEAM|SALARY|
-|--- |--- |--- |--- |
-|Klay Thompson|SG|Golden State Warriors|15.501|
-|Draymond Green|PF|Golden State Warriors|14.2609|
-|Andrew Bogut|C|Golden State Warriors|13.8|
-|Andre Iguodala|SF|Golden State Warriors|11.7105|
-|Stephen Curry|PG|Golden State Warriors|11.3708|
-|Jason Thompson|PF|Golden State Warriors|7.00847|
-|Shaun Livingston|PG|Golden State Warriors|5.54373|
-|Harrison Barnes|SF|Golden State Warriors|3.8734|
-|Marreese Speights|C|Golden State Warriors|3.815|
-|Leandro Barbosa|SG|Golden State Warriors|2.5|
+
+| PLAYER            | POSITION | TEAM                  | SALARY  |
+|-------------------|----------|-----------------------|---------|
+| Klay Thompson     | SG       | Golden State Warriors | 15.501  |
+| Draymond Green    | PF       | Golden State Warriors | 14.2609 |
+| Andrew Bogut      | C        | Golden State Warriors | 13.8    |
+| Andre Iguodala    | SF       | Golden State Warriors | 11.7105 |
+| Stephen Curry     | PG       | Golden State Warriors | 11.3708 |
+| Jason Thompson    | PF       | Golden State Warriors | 7.00847 |
+| Shaun Livingston  | PG       | Golden State Warriors | 5.54373 |
+| Harrison Barnes   | SF       | Golden State Warriors | 3.8734  |
+| Marreese Speights | C        | Golden State Warriors | 3.815   |
+| Leandro Barbosa   | SG       | Golden State Warriors | 2.5     |
 
 ... (4 rows omitted)
 
@@ -330,22 +333,22 @@ with no argument in the parentheses.
 warriors.show()
 ```
 
-|PLAYER|POSITION|TEAM|SALARY|
-|--- |--- |--- |--- |
-|Klay Thompson|SG|Golden State Warriors|15.501|
-|Draymond Green|PF|Golden State Warriors|14.2609|
-|Andrew Bogut|C|Golden State Warriors|13.8|
-|Andre Iguodala|SF|Golden State Warriors|11.7105|
-|Stephen Curry|PG|Golden State Warriors|11.3708|
-|Jason Thompson|PF|Golden State Warriors|7.00847|
-|Shaun Livingston|PG|Golden State Warriors|5.54373|
-|Harrison Barnes|SF|Golden State Warriors|3.8734|
-|Marreese Speights|C|Golden State Warriors|3.815|
-|Leandro Barbosa|SG|Golden State Warriors|2.5|
-|Festus Ezeli|C|Golden State Warriors|2.00875|
-|Brandon Rush|SF|Golden State Warriors|1.27096|
-|Kevon Looney|SF|Golden State Warriors|1.13196|
-|Anderson Varejao|PF|Golden State Warriors|0.289755|
+| PLAYER            | POSITION | TEAM                  | SALARY   |
+|-------------------|----------|-----------------------|----------|
+| Klay Thompson     | SG       | Golden State Warriors | 15.501   |
+| Draymond Green    | PF       | Golden State Warriors | 14.2609  |
+| Andrew Bogut      | C        | Golden State Warriors | 13.8     |
+| Andre Iguodala    | SF       | Golden State Warriors | 11.7105  |
+| Stephen Curry     | PG       | Golden State Warriors | 11.3708  |
+| Jason Thompson    | PF       | Golden State Warriors | 7.00847  |
+| Shaun Livingston  | PG       | Golden State Warriors | 5.54373  |
+| Harrison Barnes   | SF       | Golden State Warriors | 3.8734   |
+| Marreese Speights | C        | Golden State Warriors | 3.815    |
+| Leandro Barbosa   | SG       | Golden State Warriors | 2.5      |
+| Festus Ezeli      | C        | Golden State Warriors | 2.00875  |
+| Brandon Rush      | SF       | Golden State Warriors | 1.27096  |
+| Kevon Looney      | SF       | Golden State Warriors | 1.13196  |
+| Anderson Varejao  | PF       | Golden State Warriors | 0.289755 |
 
 The `nba` table is sorted in alphabetical order of the team names. To
 see how the players were paid in 2015-2016, it is useful to sort the
@@ -354,20 +357,20 @@ order.
 
 ``` python
 nba.sort('SALARY')
-```
 
-|PLAYER|POSITION|TEAM|SALARY|
-|--- |--- |--- |--- |
-|Thanasis Antetokounmpo|SF|New York Knicks|0.030888|
-|Jordan McRae|SG|Phoenix Suns|0.049709|
-|Cory Jefferson|PF|Phoenix Suns|0.049709|
-|Elliot Williams|SG|Memphis Grizzlies|0.055722|
-|Orlando Johnson|SG|Phoenix Suns|0.055722|
-|Phil Pressey|PG|Phoenix Suns|0.055722|
-|Keith Appling|PG|Orlando Magic|0.061776|
-|Sean Kilpatrick|SG|Denver Nuggets|0.099418|
-|Erick Green|PG|Utah Jazz|0.099418|
-|Jeff Ayres|PF|Los Angeles Clippers|0.111444|
+```
+| PLAYER                 | POSITION | TEAM                 | SALARY   |
+|------------------------|----------|----------------------|----------|
+| Thanasis Antetokounmpo | SF       | New York Knicks      | 0.030888 |
+| Jordan McRae           | SG       | Phoenix Suns         | 0.049709 |
+| Cory Jefferson         | PF       | Phoenix Suns         | 0.049709 |
+| Elliot Williams        | SG       | Memphis Grizzlies    | 0.055722 |
+| Orlando Johnson        | SG       | Phoenix Suns         | 0.055722 |
+| Phil Pressey           | PG       | Phoenix Suns         | 0.055722 |
+| Keith Appling          | PG       | Orlando Magic        | 0.061776 |
+| Sean Kilpatrick        | SG       | Denver Nuggets       | 0.099418 |
+| Erick Green            | PG       | Utah Jazz            | 0.099418 |
+| Jeff Ayres             | PF       | Los Angeles Clippers | 0.111444 |
 
 ... (407 rows omitted)
 
@@ -383,18 +386,18 @@ we can sort in descending order of salary and look at the top few rows.
 nba.sort('SALARY', descending=True)
 ```
 
-|PLAYER|POSITION|TEAM|SALARY|
-|--- |--- |--- |--- |
-|Kobe Bryant|SF|Los Angeles Lakers|25|
-|Joe Johnson|SF|Brooklyn Nets|24.8949|
-|LeBron James|SF|Cleveland Cavaliers|22.9705|
-|Carmelo Anthony|SF|New York Knicks|22.875|
-|Dwight Howard|C|Houston Rockets|22.3594|
-|Chris Bosh|PF|Miami Heat|22.1927|
-|Chris Paul|PG|Los Angeles Clippers|21.4687|
-|Kevin Durant|SF|Oklahoma City Thunder|20.1586|
-|Derrick Rose|PG|Chicago Bulls|20.0931|
-|Dwyane Wade|SG|Miami Heat|20|
+| PLAYER          | POSITION | TEAM                  | SALARY  |
+|-----------------|----------|-----------------------|---------|
+| Kobe Bryant     | SF       | Los Angeles Lakers    | 25      |
+| Joe Johnson     | SF       | Brooklyn Nets         | 24.8949 |
+| LeBron James    | SF       | Cleveland Cavaliers   | 22.9705 |
+| Carmelo Anthony | SF       | New York Knicks       | 22.875  |
+| Dwight Howard   | C        | Houston Rockets       | 22.3594 |
+| Chris Bosh      | PF       | Miami Heat            | 22.1927 |
+| Chris Paul      | PG       | Los Angeles Clippers  | 21.4687 |
+| Kevin Durant    | SF       | Oklahoma City Thunder | 20.1586 |
+| Derrick Rose    | PG       | Chicago Bulls         | 20.0931 |
+| Dwyane Wade     | SG       | Miami Heat            | 20      |
 
 ... (407 rows omitted)
 Kobe Bryant, since retired, was the highest earning NBA player in

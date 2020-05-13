@@ -161,81 +161,44 @@ However, you **don't need to memorize these**. Use this as a reference.
 Each of these functions takes an array as an argument and returns a
 single value.
 
-  ----------------------------------------------------------------------------
-  **Function**         Description
-  -------------------- -------------------------------------------------------
-  `np.prod`            Multiply all elements together
-
-  `np.sum`             Add all elements together
-
-  `np.all`             Test whether all elements are true values (non-zero
-                       numbers are true)
-
-  `np.any`             Test whether any elements are true values (non-zero
-                       numbers are true)
-
-  `np.count_nonzero`   Count the number of non-zero elements
-  ----------------------------------------------------------------------------
+|   Function       | Description                                                           |
+|------------------|-----------------------------------------------------------------------|
+| `np.prod`          | Multiply all elements together                                        |
+| `np.sum`           | Add all elements together                                             |
+| `np.all`           | Test whether all elements are true values (non-zero numbers are true) |
+| `np.any`           | Test whether any elements are true values (non-zero numbers are true) |
+| `np.count_nonzero` | Count the number of non-zero elements                                 |
 
 Each of these functions takes an array as an argument and returns an
 array of values.
 
-  -----------------------------------------------------------------------
-  **Function**    Description
-  --------------- -------------------------------------------------------
-  `np.diff`       Difference between adjacent elements
-
-  `np.round`      Round each number to the nearest integer (whole number)
-
-  `np.cumprod`    A cumulative product: for each element, multiply all
-                  elements so far
-
-  `np.cumsum`     A cumulative sum: for each element, add all elements so
-                  far
-
-  `np.exp`        Exponentiate each element
-
-  `np.log`        Take the natural logarithm of each element
-
-  `np.sqrt`       Take the square root of each element
-
-  `np.sort`       Sort the elements
-  -----------------------------------------------------------------------
+|   Function   | Description                                                          |
+|--------------|----------------------------------------------------------------------|
+| `np.diff`      | Difference between adjacent elements                                 |
+| `np.round`     | Round each number to the nearest integer (whole number)              |
+| `np.cumprod`   | A cumulative product: for each element, multiply all elements so far |
+| `np.cumsum`    | A cumulative sum: for each element, add all elements so far          |
+| `np.exp`       | Exponentiate each element                                            |
+| `np.log`       | Take the natural logarithm of each element                           |
+| `np.sqrt`      | Take the square root of each element                                 |
+| `np.sort`      | Sort the elements                                                    |
 
 Each of these functions takes an array of strings and returns an array.
 
-  ---------------------------------------------------------------------------
-  **Function**          **Description**
-  --------------------- -----------------------------------------------------
-  `np.char.lower`       Lowercase each element
-
-  `np.char.upper`       Uppercase each element
-
-  `np.char.strip`       Remove spaces at the beginning or end of each element
-
-  `np.char.isalpha`     Whether each element is only letters (no numbers or
-                        symbols)
-
-  `np.char.isnumeric`   Whether each element is only numeric (no letters)
-  ---------------------------------------------------------------------------
+| Function            | Description                                                  |
+|---------------------|--------------------------------------------------------------|
+| `np.char.lower`     | Lowercase eachelement                                       |
+| `np.char.upper`     | Uppercase each element                                       |
+| `np.char.strip`     | Remove spaces at the beginning or end of each element        |
+| `np.char.isalpha`   | Whether each element is only letters (no numbers or symbols) |
+| `np.char.isnumeric` | Whether each element is only numeric (no letters)            |
 
 Each of these functions takes both an array of strings and a *search
 string*; each returns an array.
 
-  ------------------------------------------------------------------------------
-  **Function**           **Description**
-  ---------------------- -------------------------------------------------------
-  `np.char.count`        Count the number of times a search string appears among
-                         the elements of an array
-
-  `np.char.find`         The position within each element that a search string
-                         is found first
-
-  `np.char.rfind`        The position within each element that a search string
-                         is found last
-
-  `np.char.startswith`   Whether each element starts with the search string
-  ------------------------------------------------------------------------------
-------
----
-------
+| Function             | Description                                                                      |
+|----------------------|----------------------------------------------------------------------------------|
+| `np.char.count`      | Count the number of times a search string appears among the elements of an array |
+| `np.char.find`       | The position within each element that a search string is found first             |
+| `np.char.rfind`      | The position within each element that a search string is found last              |
+| `np.char.startswith` | Whether each element starts with the search string                               |
