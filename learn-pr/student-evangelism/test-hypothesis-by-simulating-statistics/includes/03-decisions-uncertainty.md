@@ -338,7 +338,7 @@ observed_statistic = 13.667
 plots.scatter(observed_statistic, 0, color='red', s=30);
 ```
 
-![png](../media/58-decisions-uncertainty-24-0.png)
+![uncertainty example](../media/58-decisions-uncertainty-24-0.png)
 
 As we said earlier, small values of the test statistic will make us lean
 towards the alternative hypothesis, that the average score in the

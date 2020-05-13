@@ -6,7 +6,7 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -15,7 +15,7 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-``` {.python}
+``` python
 def proportions_from_distribution(table, label, sample_size):
     proportions = np.random.multinomial(sample_size, table.column(label))/sample_size
     return table.with_column('Random Sample', proportions)
@@ -81,7 +81,7 @@ candidates of that ethnicity. The second value is the proportion of
 people of that ethnicity among those who appeared for the process of
 selection into the jury.
 
-``` {.python}
+``` python
 jury = Table().with_columns(
     'Ethnicity', make_array('Asian', 'Black', 'Latino', 'White', 'Other'),
     'Eligible', make_array(0.15, 0.18, 0.12, 0.54, 0.01),
@@ -103,11 +103,11 @@ Some ethnicities are overrepresented and some are underrepresented on
 the jury panels in the study. A bar chart is helpful for visualizing the
 differences.
 
-``` {.python}
+``` python
 jury.barh('Ethnicity')
 ```
 
-![png](../media/57-multiple-categories-8-0.png)
+![category example](../media/57-multiple-categories-8-0.png)
 
 ### Comparison with panels selected at random
 
@@ -133,7 +133,7 @@ of eligible jurors, and display the distribution of the random sample
 along with the distributions of the eligible jurors and the panel in the
 data.
 
-``` {.python}
+``` python
 eligible_population = jury.column('Eligible')
 sample_distribution = sample_proportions(1453, eligible_population)
 panels_and_sample = jury.with_column('Random Sample', sample_distribution)
@@ -153,11 +153,11 @@ of the eligible population, unlike the distribution of the panels.
 
 As always, it helps to visualize.
 
-``` {.python}
+``` python
 panels_and_sample.barh('Ethnicity')
 ```
 
-![png](../media/57-multiple-categories-12-0.png)
+![category example](../media/57-multiple-categories-12-0.png)
 
 The bar chart shows that the distribution of the random sample resembles
 the eligible population but the distribution of the panels does not.
@@ -177,11 +177,11 @@ have to quantify the distance between two distributions. For example, we
 have to measure the distance between the blue and gold distributions
 below.
 
-``` {.python}
+``` python
 jury.barh('Ethnicity')
 ```
 
-![png](../media/57-multiple-categories-16-0.png)
+![category example](../media/57-multiple-categories-16-0.png)
 
 For this, we will compute a quantity called the *total variation
 distance* between two distributions. The calculation is as an extension
@@ -190,7 +190,7 @@ of the calculation of the distance between two numbers.
 To compute the total variation distance, we first take the difference
 between the two proportions in each category.
 
-``` {.python}
+``` python
 # Augment the table with a column of differences between proportions
 
 jury_with_diffs = jury.with_column(
@@ -222,7 +222,7 @@ the entries. But this gives us two times the total of the positive
 entries (equivalently, two times the total of the negative entries, with
 the sign removed). So we divide the sum by 2.
 
-``` {.python}
+``` python
 jury_with_diffs = jury_with_diffs.with_column(
     'Absolute Difference', np.abs(jury_with_diffs.column('Difference'))
 )
@@ -238,7 +238,7 @@ jury_with_diffs
 | White     | 0.54     | 0.54   | 0.573985      |
 | Other     | 0.01     | 0.04   | 0.00963524    |
 
-``` {.python}
+``` python
 jury_with_diffs.column('Absolute Difference').sum() / 2
 ```
 
@@ -269,7 +269,7 @@ we will write a function to compute it.
 The function `total_variation_distance` returns the TVD between
 distributions in two arrays.
 
-``` {.python}
+``` python
 def total_variation_distance(distribution_1, distribution_2):
     return sum(np.abs(distribution_1 - distribution_2)) / 2
 ```
@@ -279,7 +279,7 @@ the simulation. But first, let's check that it gives the right answer
 when we use it to compute the distance between the blue (eligible) and
 gold (panels) distributions above.
 
-``` {.python}
+``` python
 total_variation_distance(jury.column('Panels'), jury.column('Eligible'))
 ```
 
@@ -294,7 +294,7 @@ code for simulating one value of our statistic. Recall that
 `eligible_population` is the array containing the distribution of the
 eligible jurors.
 
-``` {.python}
+``` python
 sample_distribution = sample_proportions(1453, eligible_population)
 total_variation_distance(sample_distribution, eligible_population)
 ```
@@ -322,7 +322,7 @@ returns one simulated value of the total variation distance under the
 hypothesis of random selection. Then we use our function in a `for` loop
 to create an array `tvds` consisting of 5,000 such distances.
 
-``` {.python}
+``` python
 # Simulate one simulated value of
 # the total variation distance between
 # the distribution of a sample selected at random
@@ -333,7 +333,7 @@ def one_simulated_tvd():
     return total_variation_distance(sample_distribution, eligible_population)   
 ```
 
-``` {.python}
+``` python
 tvds = make_array()
 
 repetitions = 5000
@@ -346,11 +346,11 @@ The empirical histogram of the simulated distances shows that drawing
 distribution that rarely deviates from the eligible jurors' race
 distribution by more than about 0.05.
 
-``` {.python}
+``` python
 Table().with_column('TVD', tvds).hist(bins=np.arange(0, 0.2, 0.005))
 ```
 
-![png](../media/57-multiple-categories-34-0.png)
+![category example](../media/57-multiple-categories-34-0.png)
 
 ### Assessing the model of random selection
 

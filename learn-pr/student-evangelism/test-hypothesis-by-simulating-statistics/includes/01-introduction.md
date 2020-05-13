@@ -171,7 +171,7 @@ Table().with_column(
 ).hist(bins = np.arange(5.5, 46.6, 1))
 ```
 
-![png](../media/56-assessing-models-11-0.png)
+![model example](../media/56-assessing-models-11-0.png)
 
 The histogram tells us what the model of random selection predicts about
 our statistic, the count of black men in the sample.
@@ -194,7 +194,7 @@ Table().with_column(
 plots.scatter(8, 0, color='red', s=30);
 ```
 
-![png](../media/56-assessing-models-14-0.png)
+![model example](../media/56-assessing-models-14-0.png)
 
 The simulation shows that if we select a panel of 100 jurors at random
 from the eligible population, we are unlikely to get counts of
@@ -359,7 +359,7 @@ Table().with_column(
 ).hist()
 ```
 
-![png](../media/56-assessing-models-29-0.png)
+![model example](../media/56-assessing-models-29-0.png)
 
 Look on the horizontal axis to see the typical values of the distance,
 as predicted by the model. They are rather small. For example, a high
@@ -405,7 +405,7 @@ Table().with_column(
 plots.scatter(observed_statistic, 0, color='red', s=30);
 ```
 
-![png](../media/56-assessing-models-36-0.png)
+![model example](../media/56-assessing-models-36-0.png)
 
 The observed statistic is like a typical distance predicted by the
 model. By this measure, the data are consistent with the histogram that
