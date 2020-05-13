@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.synthesize-text-input-speech
+metadata:
+  title: Synthesize Text Input to Speech
+  description: "Learn how to synthesize text to speech using the Speech
+-to
+-Text service."
+  ms.date: 06/30/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Synthesize Text Input to Speech
+summary: Learn how to synthesize text to speech using the Speech-to-Text service.
+abstract: |
+  In this module you will:
+  - Learn key concepts of Text-to-Speech
+  - Synthesize text to speech output
+prerequisites: |
+  * Ability to navigate the Azure portal
+  * Knowledge of C# or Python
+iconUrl: /learn/achievements/synthesize-text-input-speech.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+- student
+products:
+- azure-cognitive-services
+units:
+- learn.wwl.synthesize-text-input-speech.introduce-text
+- learn.wwl.synthesize-text-input-speech.environment-setup
+- learn.wwl.synthesize-text-input-speech.synthesize-speech-audio-output
+- learn.wwl.synthesize-text-input-speech.synthesize-speech-audio-file
+- learn.wwl.synthesize-text-input-speech.knowledge-check
+- learn.wwl.synthesize-text-input-speech.summary
+badge:
+  uid: learn.wwl.synthesize-text-input-speech.badge

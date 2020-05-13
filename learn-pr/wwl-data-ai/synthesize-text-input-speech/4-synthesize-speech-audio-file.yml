@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.synthesize-text-input-speech.synthesize-speech-audio-file
+title: Synthesize speech to an audio file
+metadata:
+  title: Synthesize speech to an audio file
+  description: "Synthesize speech to an audio file"
+  ms.date: 06/30/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-synthesize-speech-audio-file.md)]

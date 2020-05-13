@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.synthesize-text-input-speech.synthesize-speech-audio-output
+title: Synthesize speech to audio output
+metadata:
+  title: Synthesize speech to audio output
+  description: "Synthesize speech to audio output"
+  ms.date: 06/30/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-synthesize-speech-audio-output.md)]
