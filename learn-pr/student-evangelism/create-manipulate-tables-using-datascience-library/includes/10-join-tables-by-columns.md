@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../../data/'
@@ -27,7 +27,7 @@ method with a larger dataset.
 The table `cones` is one we have encountered earlier. Now suppose each
 flavor of ice cream comes with a rating that is in a separate table.
 
-``` {.python}
+``` python
 cones = Table().with_columns(
     'Flavor', make_array('strawberry', 'vanilla', 'chocolate', 'strawberry', 'chocolate'),
     'Price', make_array(3.55, 4.75, 6.55, 5.25, 5.75)
@@ -43,7 +43,7 @@ cones
 |strawberry|5.25|
 |chocolate|5.75|
 
-``` {.python}
+``` python
 ratings = Table().with_columns(
     'Kind', make_array('strawberry', 'chocolate', 'vanilla'),
     'Stars', make_array(2.5, 3.5, 4)
@@ -67,7 +67,7 @@ For each cone in `cones`, `join` finds a row in `ratings` whose `Kind`
 matches the cone's `Flavor`. We have to tell `join` to use those columns
 for matching.
 
-``` {.python}
+``` python
 rated = cones.join('Flavor', ratings, 'Kind')
 rated
 ```
@@ -92,7 +92,7 @@ The new table `rated` allows us to work out the price per star, which
 you can think of as an informal measure of value. Low values are good --
 they mean that you are paying less for each rating star.
 
-``` {.python}
+``` python
 rated.with_column('$/Star', rated.column('Price') / rated.column('Stars')).sort(3)
 ```
 
@@ -114,7 +114,7 @@ it. As you see it, this changes the order that the columns appear in,
 and can potentially changes the order of the rows, but it doesn't make
 any fundamental difference.
 
-``` {.python}
+``` python
 ratings.join('Kind', cones, 'Flavor')
 ```
 
@@ -131,7 +131,7 @@ appear in both tables. Let's see an example. Suppose there is a table of
 reviews of some ice cream cones, and we have found the average review
 for each flavor.
 
-``` {.python}
+``` python
 reviews = Table().with_columns(
     'Flavor', make_array('vanilla', 'chocolate', 'vanilla', 'chocolate'),
     'Stars', make_array(5, 3, 5, 4)
@@ -146,7 +146,7 @@ reviews
 |vanilla|5|
 |chocolate|4|
 
-``` {.python}
+``` python
 average_review = reviews.group('Flavor', np.average)
 average_review
 ```
@@ -159,7 +159,7 @@ average_review
 We can join `cones` and `average_review` by providing the labels of the
 columns by which to join.
 
-``` {.python}
+``` python
 cones.join('Flavor', average_review, 'Flavor')
 ```
 

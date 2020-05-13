@@ -6,7 +6,7 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 
-``` {.python}
+``` python
 from datascience import *
 import numpy as np
 path_data = '../../../../data/'
@@ -20,7 +20,7 @@ contains "Annual Estimates of the Resident Population by Single Year of
 Age and Sex for the United States." Notice that `read_table` can read
 data directly from a URL.
 
-``` {.python}
+``` python
 # As of Jan 2017, this census file is online here: 
 data = 'http://www2.census.gov/programs-surveys/popest/datasets/2010-2015/national/asrh/nc-est2015-agesex-res.csv'
 
@@ -63,7 +63,7 @@ for a particular investigation or analysis. In this case, let us suppose
 that we are only interested in the population changes from 2010 to 2014.
 Let us `select` the relevant columns.
 
-``` {.python}
+``` python
 partial_census_table = full_census_table.select('SEX', 'AGE', 'POPESTIMATE2010', 'POPESTIMATE2014')
 partial_census_table
 ```
@@ -85,7 +85,7 @@ partial_census_table
 
 We can also simplify the labels of the selected columns.
 
-``` {.python}
+``` python
 us_pop = partial_census_table.relabeled('POPESTIMATE2010', '2010').relabeled('POPESTIMATE2014', '2014')
 us_pop
 ```
@@ -109,7 +109,7 @@ We now have a table that is easy to work with. Each column of the table
 is an array of the same length, and so columns can be combined using
 arithmetic. Here is the change in population between 2010 and 2014.
 
-``` {.python}
+``` python
 us_pop.column('2014') - us_pop.column('2010')
 ```
 
@@ -118,7 +118,7 @@ array(\[ -1555, -8112, -131198, ..., 6443, 12950, 4693244\])
 Let us augment `us_pop` with a column that contains these changes, both
 in absolute terms and as percents relative to the value in 2010.
 
-``` {.python}
+``` python
 change = us_pop.column('2014') - us_pop.column('2010')
 census = us_pop.with_columns(
     'Change', change,
@@ -145,7 +145,7 @@ census.set_format('Percent Change', PercentFormatter)
 **Sorting the data.** Let us sort the table in decreasing order of the
 absolute change in population.
 
-``` {.python}
+``` python
 census.sort('Change', descending=True)
 ```
 

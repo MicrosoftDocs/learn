@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../../data/'
@@ -30,14 +30,14 @@ value, then the body of the `if` is skipped.
 
 Let us start defining a function that returns the sign of a number.
 
-``` {.python}
+``` python
 def sign(x):
 
     if x > 0:
         return 'Positive'
 ```
 
-``` {.python}
+``` python
 sign(3)
 ```
 
@@ -48,7 +48,7 @@ number. But if the input is not a positive number, then the *if
 expression* evaluates to a false value, and so the `return` statement is
 skipped and the function call has no value.
 
-``` {.python}
+``` python
 sign(-3)
 ```
 
@@ -56,7 +56,7 @@ So let us refine our function to return `Negative` if the input is a
 negative number. We can do this by adding an `elif` clause, where `elif`
 if Python's shorthand for the phrase "else, if".
 
-``` {.python}
+``` python
 def sign(x):
 
     if x > 0:
@@ -68,7 +68,7 @@ def sign(x):
 
 Now `sign` returns the correct answer when the input is -3:
 
-``` {.python}
+``` python
 sign(-3)
 ```
 
@@ -77,7 +77,7 @@ sign(-3)
 What if the input is 0? To deal with this case, we can add another
 `elif` clause:
 
-``` {.python}
+``` python
 def sign(x):
 
     if x > 0:
@@ -90,7 +90,7 @@ def sign(x):
         return 'Neither positive nor negative'
 ```
 
-``` {.python}
+``` python
 sign(0)
 ```
 
@@ -100,7 +100,7 @@ Equivalently, we can replace the final `elif` clause by an `else`
 clause, whose body will be executed only if all the previous comparisons
 are false; that is, if the input value is equal to 0.
 
-``` {.python}
+``` python
 def sign(x):
 
     if x > 0:
@@ -113,7 +113,7 @@ def sign(x):
         return 'Neither positive nor negative'
 ```
 
-``` {.python}
+``` python
 sign(0)
 ```
 
@@ -156,7 +156,7 @@ Suppose I bet on a roll of a fair die. The rules of the game:
 We will now use conditional statements to define a function `one_bet`
 that takes the number of spots on the roll and returns my net gain.
 
-``` {.python}
+``` python
 def one_bet(x):
     """Returns my net gain if the die shows x spots"""
     if x <= 2:
@@ -170,7 +170,7 @@ def one_bet(x):
 Let's check that the function does the right thing for each different
 number of spots.
 
-``` {.python}
+``` python
 one_bet(1), one_bet(2), one_bet(3), one_bet (4), one_bet(5), one_bet(6)
 ```
 
@@ -192,7 +192,7 @@ expression evaluates to `False` as do both of the `elif` expressions. So
 `one_bet` does not execute the `if` body nor the two `elif` bodies, and
 there is no value when you make the call below.
 
-``` {.python}
+``` python
 one_bet(17)
 ```
 
@@ -201,7 +201,7 @@ To play the game based on one roll of a die, you can use
 the argument to `one_bet`. Run the cell a few times to see how the
 output changes.
 
-``` {.python}
+``` python
 one_bet(np.random.choice(np.arange(1, 7)))
 ```
 

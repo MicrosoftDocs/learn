@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 import numpy as np
 path_data = '../../../../data/'
@@ -27,7 +27,7 @@ doesn't involve details about how basketball is played.
 The first row shows that Paul Millsap, Power Forward for the Atlanta
 Hawks, had a salary of almost $\$18.7$ million in 2015-2016.
 
-``` {.python}
+``` python
 # This table can be found online: https://www.statcrunch.com/app/index.php?dataid=1843341
 nba_salaries = Table.read_table(path_data + 'nba_salaries.csv')
 nba_salaries
@@ -53,7 +53,7 @@ are displayed. The `show` method allows us to specify the number of
 rows, with the default (no specification) being all the rows of the
 table.
 
-``` {.python}
+``` python
 nba_salaries.show(3)
 ```
 
@@ -70,7 +70,7 @@ in alphabetical order by team name. It's also possible to list the same
 rows in alphabetical order by player name using the `sort` method. The
 argument to `sort` is a column label or index.
 
-``` {.python}
+``` python
 nba_salaries.sort('PLAYER').show(5)
 ```
 
@@ -94,7 +94,7 @@ This arranges all the rows of the table in *increasing* order of salary,
 with the lowest salary appearing first. The output is a new table with
 the same columns as the original but with the rows rearranged.
 
-``` {.python}
+``` python
 nba = nba_salaries.relabeled("'15-'16 SALARY", 'SALARY')
 nba.sort('SALARY')
 ```
@@ -127,7 +127,7 @@ who are among the highest paid in the world.
 To order the rows of the table in *decreasing* order of salary, we must
 use `sort` with the option `descending=True`.
 
-``` {.python}
+``` python
 nba.sort('SALARY', descending=True)
 ```
 
@@ -158,7 +158,7 @@ argument*. When a function or method is called, each argument has both a
 position and a name. Both are evident from the help text of a function
 or method.
 
-``` {.python}
+``` python
 help(nba.sort)
 ```
 

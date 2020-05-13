@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../data/'
@@ -29,7 +29,7 @@ of the items. The function call is `np.random.choice(array_name)`, where
 Thus the following code evaluates to `treatment` with chance 50%, and
 `control` with chance 50%.
 
-``` {.python}
+``` python
 two_groups = make_array('treatment', 'control')
 np.random.choice(two_groups)
 ```
@@ -42,7 +42,7 @@ value. It can return either `treatment` or `control`, and we don't know
 ahead of time which one it will pick. We can repeat the process by
 providing a second argument, the number of times to repeat the process.
 
-``` {.python}
+``` python
 np.random.choice(two_groups, 10)
 ```
 
@@ -73,7 +73,7 @@ involve randomness or not, Boolean values most often arise from
 comparison operators. Python includes a variety of operators that
 compare values. For example, `3` is larger than `1 + 1`.
 
-``` {.python}
+``` python
 3 > 1 + 1
 ```
 
@@ -101,7 +101,7 @@ Python assumes you are trying to assign the value of the expression 10/2
 to a name that is the numeral 5. Instead, you must use `5 == 10/2`,
 which evaluates to `True`.
 
-``` {.python}
+``` python
 5 = 10/2
 ```
 
@@ -110,7 +110,7 @@ which evaluates to `True`.
                 ^
     SyntaxError: can't assign to literal
 
-``` {.python}
+``` python
 5 == 10/2
 ```
 
@@ -121,7 +121,7 @@ in order for the whole expression to be `True`. For example, we can
 express that `1+1` is between `1` and `3` using the following
 expression.
 
-``` {.python}
+``` python
 1 < 1 + 1 < 3
 ```
 
@@ -132,7 +132,7 @@ larger number. We express this relationship for the numbers `x` and `y`
 below. You can try different values of `x` and `y` to confirm this
 relationship.
 
-``` {.python}
+``` python
 x = 12
 y = 5
 min(x, y) <= (x+y)/2 <= max(x, y)
@@ -145,7 +145,7 @@ min(x, y) <= (x+y)/2 <= max(x, y)
 Strings can also be compared, and their order is alphabetical. A shorter
 string is less than a longer string that begins with the shorter string.
 
-``` {.python}
+``` python
 'Dog' > 'Catastrophe' > 'Cat'
 ```
 
@@ -156,7 +156,7 @@ consists of just two elements, `treatment` and `control`. To see whether
 a randomly assigned individual went to the treatment group, you can use
 a comparison:
 
-``` {.python}
+``` python
 np.random.choice(two_groups) == 'treatment'
 ```
 
@@ -176,7 +176,7 @@ array at once. For example, `make_array(0, 5, 2)*2` is equivalent to
 one value, each element of the array is compared to that value, and the
 comparison evaluates to an array of Booleans.
 
-``` {.python}
+``` python
 tosses = make_array('Tails', 'Heads', 'Tails', 'Heads', 'Heads')
 tosses == 'Heads'
 ```
@@ -186,7 +186,7 @@ tosses == 'Heads'
 The `numpy` method `count_nonzero` evaluates to the number of non-zero
 (that is, `True`) elements of the array.
 
-``` {.python}
+``` python
 np.count_nonzero(tosses == 'Heads')
 ```
 

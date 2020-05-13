@@ -6,7 +6,7 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 
-``` {.python}
+``` python
 import numpy as np
 np.set_printoptions(threshold=50)
 path_data = '../../../data/'
@@ -23,14 +23,14 @@ set.
 In order to use tables, import all of the module called `datascience`, a
 module created for this text.
 
-``` {.python}
+``` python
 from datascience import *
 ```
 
 Empty tables can be created using the `Table` function. An empty table
 is usefully because it can be extended to contain new rows and columns.
 
-``` {.python}
+``` python
 Table()
 ```
 
@@ -41,7 +41,7 @@ array. (The `with_column` method can be used with the same effect.)
 
 Below, we begin each example with an empty table that has no columns.
 
-``` {.python}
+``` python
 Table().with_columns('Number of petals', make_array(8, 34, 5))
 ```
 
@@ -54,7 +54,7 @@ Table().with_columns('Number of petals', make_array(8, 34, 5))
 To add two (or more) new columns, provide the label and array for each
 column. All columns must have the same length, or an error will occur.
 
-``` {.python}
+``` python
 Table().with_columns(
     'Number of petals', make_array(8, 34, 5),
     'Name', make_array('lotus', 'sunflower', 'rose')
@@ -70,7 +70,7 @@ Table().with_columns(
 We can give this table a name, and then extend the table with another
 column.
 
-``` {.python}
+``` python
 flowers = Table().with_columns(
     'Number of petals', make_array(8, 34, 5),
     'Name', make_array('lotus', 'sunflower', 'rose')
@@ -91,7 +91,7 @@ The `with_columns` method creates a new table each time it is called, so
 the original table is not affected. For example, the table `flowers`
 still has only the two columns that it had when it was created.
 
-``` {.python}
+``` python
 flowers
 ```
 
@@ -112,7 +112,7 @@ Below, we use the Table method `read_table` to read a CSV file that
 contains some of the data used by Minard in his graphic about Napoleon's
 Russian campaign. The data are placed in a table named `minard`.
 
-``` {.python}
+``` python
 minard = Table.read_table(path_data + 'minard.csv')
 minard
 ```
@@ -137,13 +137,13 @@ larger tables of data.
 The method `num_columns` gives the number of columns in the table, and
 `num_rows` the number of rows.
 
-``` {.python}
+``` python
 minard.num_columns
 ```
 
 5
 
-``` {.python}
+``` python
 minard.num_rows
 ```
 
@@ -155,7 +155,7 @@ The method `labels` can be used to list the labels of all the columns.
 With `minard` we don't gain much by this, but it can be very useful for
 tables that are so large that not all columns are visible on the screen.
 
-``` {.python}
+``` python
 minard.labels
 ```
 
@@ -164,7 +164,7 @@ minard.labels
 We can change column labels using the `relabeled` method. This creates a
 new table and leaves `minard` unchanged.
 
-``` {.python}
+``` python
 minard.relabeled('City', 'City Name')
 ```
 
@@ -181,7 +181,7 @@ minard.relabeled('City', 'City Name')
 
 However, this method does not change the original table.
 
-``` {.python}
+``` python
 minard
 ```
 
@@ -200,7 +200,7 @@ A common pattern is to assign the original name `minard` to the new
 table, so that all future uses of `minard` will refer to the relabeled
 table.
 
-``` {.python}
+``` python
 minard = minard.relabeled('City', 'City Name')
 minard
 ```
@@ -220,7 +220,7 @@ minard
 
 We can use a column's label to access the array of data in the column.
 
-``` {.python}
+``` python
 minard.column('Survivors')
 ```
 
@@ -229,7 +229,7 @@ array(\[145000, 140000, 127100, 100000, 55000, 24000, 20000, 12000\])
 The 5 columns are indexed 0, 1, 2, 3, and 4. The column `Survivors` can
 also be accessed by using its column index.
 
-``` {.python}
+``` python
 minard.column(4)
 ```
 
@@ -238,13 +238,13 @@ array(\[145000, 140000, 127100, 100000, 55000, 24000, 20000, 12000\])
 The 8 items in the array are indexed 0, 1, 2, and so on, up to 7. The
 items in the column can be accessed using `item`, as with any array.
 
-``` {.python}
+``` python
 minard.column(4).item(0)
 ```
 
 145000
 
-``` {.python}
+``` python
 minard.column(4).item(5)
 ```
 
@@ -256,7 +256,7 @@ Because columns are arrays, we can use array operations on them to
 discover new information. For example, we can create a new column that
 contains the percent of all survivors at each city after Smolensk.
 
-``` {.python}
+``` python
 initial = minard.column('Survivors').item(0)
 minard = minard.with_columns(
     'Percent Surviving', minard.column('Survivors')/initial
@@ -281,7 +281,7 @@ use the method `set_format` with the option `PercentFormatter`. The
 (`DateFormatter`), currencies (`CurrencyFormatter`), numbers, and
 percentages.
 
-``` {.python}
+``` python
 minard.set_format('Percent Surviving', PercentFormatter)
 ```
 
@@ -301,7 +301,7 @@ minard.set_format('Percent Surviving', PercentFormatter)
 The method `select` creates a new table that contains only the specified
 columns.
 
-``` {.python}
+``` python
 minard.select('Longitude', 'Latitude')
 ```
 
@@ -318,7 +318,7 @@ minard.select('Longitude', 'Latitude')
 
 The same selection can be made using column indices instead of labels.
 
-``` {.python}
+``` python
 minard.select(0, 1)
 ```
 
@@ -336,7 +336,7 @@ minard.select(0, 1)
 The result of using `select` is a new table, even when you select just
 one column.
 
-``` {.python}
+``` python
 minard.select('Survivors')
 ```
 
@@ -354,7 +354,7 @@ minard.select('Survivors')
 Notice that the result is a table, unlike the result of `column`, which
 is an array.
 
-``` {.python}
+``` python
 minard.column('Survivors')
 ```
 
@@ -363,7 +363,7 @@ array(\[145000, 140000, 127100, 100000, 55000, 24000, 20000, 12000\])
 Another way to create a new table consisting of a set of columns is to
 `drop` the columns you don't want.
 
-``` {.python}
+``` python
 minard.drop('Longitude', 'Latitude', 'Direction')
 ```
 
@@ -384,7 +384,7 @@ original table is preserved is useful! You can generate multiple
 different tables that only consider certain columns without worrying
 that one analysis will affect the other.
 
-``` {.python}
+``` python
 minard
 ```
 

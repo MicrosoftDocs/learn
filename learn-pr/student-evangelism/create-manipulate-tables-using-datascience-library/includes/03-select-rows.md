@@ -1,11 +1,11 @@
-``` {.python}
+``` python
 from datascience import *
 import numpy as np
 path_data = '../../../../data/'
 np.set_printoptions(threshold=50)
 ```
 
-``` {.python}
+``` python
 nba_salaries = Table.read_table(path_data + 'nba_salaries.csv')
 nba = nba_salaries.relabeled("'15-'16 SALARY", 'SALARY')
 ```
@@ -24,7 +24,7 @@ new table consisting of only those rows.
 For example, if we wanted just the first row of `nba`, we could use
 `take` as follows.
 
-``` {.python}
+``` python
 nba
 ```
 
@@ -43,7 +43,7 @@ nba
 
 ... (407 rows omitted)
 
-``` {.python}
+``` python
 nba.take(0)
 ```
 
@@ -56,7 +56,7 @@ This is a new table with just the single row that we specified.
 We could also get the fourth, fifth, and sixth rows by specifying a
 range of indices as the argument.
 
-``` {.python}
+``` python
 nba.take(np.arange(3, 6))
 ```
 
@@ -69,7 +69,7 @@ nba.take(np.arange(3, 6))
 If we want a table of the top 5 highest paid players, we can first sort
 the list by salary and then `take` the first five rows:
 
-``` {.python}
+``` python
 nba.sort('SALARY', descending=True).take(np.arange(5))
 ```
 
@@ -104,7 +104,7 @@ to understand.
 In the first example, we extract the data for all those who earned more
 than $\$10$ million.
 
-``` {.python}
+``` python
 nba.where('SALARY', are.above(10))
 ```
 
@@ -131,7 +131,7 @@ made more than $10$ million dollars. Arranging these rows in order makes
 the data easier to analyze. DeMar DeRozan of the Toronto Raptors was the
 "poorest" of this group, at a salary of just over $10$ million dollars.
 
-``` {.python}
+``` python
 nba.where('SALARY', are.above(10)).sort('SALARY')
 ```
 
@@ -154,7 +154,7 @@ How much did Stephen Curry make? For the answer, we have to access the
 row where the value of `PLAYER` is equal to `Stephen Curry`. That is
 placed a table consisting of just one line:
 
-``` {.python}
+``` python
 nba.where('PLAYER', are.equal_to('Stephen Curry'))
 ```
 
@@ -172,7 +172,7 @@ In the code, `are` is used again, but this time with the *predicate*
 `equal_to` instead of `above`. Thus for example you can get a table of
 all the Warriors:
 
-``` {.python}
+``` python
 nba.where('TEAM', are.equal_to('Golden State Warriors')).show()
 ```
 
@@ -203,7 +203,7 @@ some value that the `are.equal_to` call is optional. Instead, the
 `where` method can be called with only a column name and a value to
 achieve the same effect.
 
-``` {.python}
+``` python
 nba.where('TEAM', 'Denver Nuggets') # equivalent to nba.where('TEAM', are.equal_to('Denver Nuggets'))
 ```
 
@@ -228,7 +228,7 @@ You can access rows that have multiple specified features, by using
 `where` repeatedly. For example, here is a way to extract all the Point
 Guards whose salaries were over $\$15$ million.
 
-``` {.python}
+``` python
 nba.where('POSITION', 'PG').where('SALARY', are.above(15))
 ```
 
@@ -248,7 +248,7 @@ the appropriate condition:
 
 `original_table_name.where(column_label_string, are.condition)`
 
-``` {.python}
+``` python
 nba.where('SALARY', are.between(10, 10.3))
 ```
 
@@ -266,7 +266,7 @@ in Python, the range `between` includes the left end but not the right.
 If we specify a condition that isn't satisfied by any row, we get a
 table with column labels but no rows.
 
-``` {.python}
+``` python
 nba.where('PLAYER', are.equal_to('Barack Obama'))
 ```
 
@@ -320,7 +320,7 @@ We end the section with a series of examples.
 The use of `are.containing` can help save some typing. For example, you
 can just specify `Warriors` instead of `Golden State Warriors`:
 
-``` {.python}
+``` python
 nba.where('TEAM', are.containing('Warriors')).show()
 ```
 
@@ -344,7 +344,7 @@ nba.where('TEAM', are.containing('Warriors')).show()
 You can extract data for all the guards, both Point Guards and Shooting
 Guards:
 
-``` {.python}
+``` python
 nba.where('POSITION', are.containing('G'))
 ```
 
@@ -366,7 +366,7 @@ nba.where('POSITION', are.containing('G'))
 You can get all the players who were not Cleveland Cavaliers and had a
 salary of no less than $\$20$ million:
 
-``` {.python}
+``` python
 other_than_Cavs = nba.where('TEAM', are.not_equal_to('Cleveland Cavaliers'))
 other_than_Cavs.where('SALARY', are.not_below(20))
 ```
@@ -386,7 +386,7 @@ other_than_Cavs.where('SALARY', are.not_below(20))
 The same table can be created in many ways. Here is another, and no
 doubt you can think of more.
 
-``` {.python}
+``` python
 other_than_Cavs.where('SALARY', are.above_or_equal_to(20))
 ```
 

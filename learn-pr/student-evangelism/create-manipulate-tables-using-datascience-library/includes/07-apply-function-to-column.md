@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 import matplotlib
 path_data = '../../../../data/'
@@ -16,25 +16,25 @@ the entries in a column by a function that doesn't take an array as its
 argument. For example, it might take just one number as its argument, as
 in the function `cut_off_at_100` defined below.
 
-``` {.python}
+``` python
 def cut_off_at_100(x):
     """The smaller of x and 100"""
     return min(x, 100)
 ```
 
-``` {.python}
+``` python
 cut_off_at_100(17)
 ```
 
     17
 
-``` {.python}
+``` python
 cut_off_at_100(117)
 ```
 
     100
 
-``` {.python}
+``` python
 cut_off_at_100(100)
 ```
 
@@ -59,7 +59,7 @@ numbers in a column.
 First, we create the table `ages` with a column for people and one for
 their ages. For example, person `C` is 52 years old.
 
-``` {.python}
+``` python
 ages = Table().with_columns(
     'Person', make_array('A', 'B', 'C', 'D', 'E', 'F'),
     'Age', make_array(17, 117, 52, 100, 6, 101)
@@ -85,7 +85,7 @@ name it (without quotation marks or parentheses). The name of the column
 of input values is a string that must still appear within quotation
 marks.
 
-``` {.python}
+``` python
 ages.apply(cut_off_at_100, 'Age')
 ```
 
@@ -100,7 +100,7 @@ This array, which has the same length as the original `Age` column of
 the `ages` table, can be used as the values in a new column called
 `Cut Off Age` alongside the existing `Person` and `Age` columns.
 
-``` {.python}
+``` python
 ages.with_column(
     'Cut Off Age', ages.apply(cut_off_at_100, 'Age')
 )
@@ -134,7 +134,7 @@ we called `apply` above. When we write a function's name by itself as
 the last line in a cell, Python produces a text representation of the
 function, just like it would print out a number or a string value.
 
-``` {.python}
+``` python
 cut_off_at_100
 ```
 
@@ -150,14 +150,14 @@ names for functions. For example, suppose we want to refer to our
 function as `cut_off` instead of `cut_off_at_100`. We can just write
 this:
 
-``` {.python}
+``` python
 cut_off = cut_off_at_100
 ```
 
 Now `cut_off` is a name for a function. It's the same function as
 `cut_off_at_100`, so the printed value is exactly the same.
 
-``` {.python}
+``` python
 cut_off
 ```
 
@@ -187,7 +187,7 @@ is a weighted average of the height of the two
 parents, the number of children in the family, as well as the child's
 birth rank (1 = oldest), gender, and height.
 
-``` {.python}
+``` python
 # Galton's data on heights of parents and their adult children
 galton = Table.read_table(path_data + 'galton.csv')
 galton
@@ -218,7 +218,7 @@ The table `heights` consists of just the midparent heights and child's
 heights. The scatter plot of the two variables shows a positive
 association, as we would expect for these variables.
 
-``` {.python}
+``` python
 heights = galton.select(3, 7).relabeled(0, 'MidParent').relabeled(1, 'Child')
 heights
 ```
@@ -238,7 +238,7 @@ heights
 
 ... (924 rows omitted)
 
-``` {.python}
+``` python
 heights.scatter(0)
 ```
 
@@ -269,7 +269,7 @@ of all the children in the strip. That's represented by the gold dot.
 Ignore the code, and just focus on understanding the mental process of
 arriving at that gold dot.
 
-``` {.python}
+``` python
 heights.scatter('MidParent')
 _ = plots.plot([67.5, 67.5], [50, 85], color='red', lw=2)
 _ = plots.plot([68.5, 68.5], [50, 85], color='red', lw=2)
@@ -282,7 +282,7 @@ In order to calculate exactly where the gold dot should be, we first
 need to identify all the points in the strip. These correspond to the
 rows where `MidParent` is between 67.5 inches and 68.5 inches.
 
-``` {.python}
+``` python
 close_to_68 = heights.where('MidParent', are.between(67.5, 68.5))
 close_to_68
 ```
@@ -306,7 +306,7 @@ The predicted height of a child who has a midparent height of 68 inches
 is the average height of the children in these rows. That's 66.24
 inches.
 
-``` {.python}
+``` python
 close_to_68.column('Child').mean()
 ```
 
@@ -317,7 +317,7 @@ the midparent height near those in our dataset. We can define a function
 `predict_child` that does this. The body of the function consists of the
 code in the two cells above, apart from choices of names.
 
-``` {.python}
+``` python
 def predict_child(mpht):
     """Predict the height of a child whose parents have a midparent height of mpht.
     
@@ -334,13 +334,13 @@ returns the same prediction (66.24 inches) as we got earlier. The
 advantage of defining the function is that we can easily change the
 value of the predictor and get a new prediction.
 
-``` {.python}
+``` python
 predict_child(68)
 ```
 
 66.24045801526718
 
-``` {.python}
+``` python
 predict_child(74)
 ```
 
@@ -351,7 +351,7 @@ the predictions with the data that we already have. To do this, we first
 apply the function `predict_child` to the column of `Midparent` heights,
 and collect the results in a new column called `Prediction`.
 
-``` {.python}
+``` python
 # Apply predict_child to all the midparent heights
 
 heights_with_predictions = heights.with_column(
@@ -359,7 +359,7 @@ heights_with_predictions = heights.with_column(
 )
 ```
 
-``` {.python}
+``` python
 heights_with_predictions
 ```
 
@@ -382,7 +382,7 @@ To see where the predictions lie relative to the observed data, we can
 draw overlaid scatter plots with `MidParent` as the common horizontal
 axis.
 
-``` {.python}
+``` python
 heights_with_predictions.scatter('MidParent')
 ```
 

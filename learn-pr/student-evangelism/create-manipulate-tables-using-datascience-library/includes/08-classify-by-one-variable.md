@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../../data/'
@@ -30,7 +30,7 @@ Here is a small table of data on ice cream cones. The `group` method can
 be used to list the distinct flavors and provide the counts of each
 flavor.
 
-``` {.python}
+``` python
 cones = Table().with_columns(
     'Flavor', make_array('strawberry', 'chocolate', 'chocolate', 'strawberry', 'chocolate'),
     'Price', make_array(3.55, 4.75, 6.55, 5.25, 5.25)
@@ -46,7 +46,7 @@ cones
 |strawberry|5.25|
 |chocolate|5.25|
 
-``` {.python}
+``` python
 cones.group('Flavor')
 ```
 
@@ -78,7 +78,7 @@ To find the total price of each flavor, we call `group` again, with
 `Flavor` as its first argument as before. But this time there is a
 second argument: the function name `sum`.
 
-``` {.python}
+``` python
 cones.group('Flavor', sum)
 ```
 
@@ -107,13 +107,13 @@ also using code. For example, to find the total price of all the
 chocolate cones, you could start by creating a new table consisting of
 only the chocolate cones, and then accessing the column of prices:
 
-``` {.python}
+``` python
 cones.where('Flavor', are.equal_to('chocolate')).column('Price')
 ```
 
 array(\[4.75, 6.55, 5.25\])
 
-``` {.python}
+``` python
 sum(cones.where('Flavor', are.equal_to('chocolate')).column('Price'))
 ```
 
@@ -121,7 +121,7 @@ sum(cones.where('Flavor', are.equal_to('chocolate')).column('Price'))
 
 This is what `group` is doing for each distinct value in `Flavor`.
 
-``` {.python}
+``` python
 # For each distinct value in `Flavor, access all the rows
 # and create an array of `Price`
 
@@ -151,7 +151,7 @@ price_totals
 You can replace `sum` by any other functions that work on arrays. For
 example, you could use `max` to find the largest price in each category:
 
-``` {.python}
+``` python
 cones.group('Flavor', max)
 ```
 
@@ -163,7 +163,7 @@ cones.group('Flavor', max)
 Once again, `group` creates arrays of the prices in each `Flavor`
 category. But now it finds the `max` of each array:
 
-``` {.python}
+``` python
 price_maxes = grouped_cones.with_column(
     'Max of the Array', make_array(max(cones_choc), max(cones_strawb))
 )
@@ -178,7 +178,7 @@ price_maxes
 Indeed, the original call to `group` with just one argument has the same
 effect as using `len` as the function and then cleaning up the table.
 
-``` {.python}
+``` python
 lengths = grouped_cones.with_column(
     'Length of the Array', make_array(len(cones_choc), len(cones_strawb))
 )
@@ -196,7 +196,7 @@ The table `nba` contains data on the 2015-2016 players in the National
 Basketball Association. We have examined these data earlier. Recall that
 salaries are measured in millions of dollars.
 
-``` {.python}
+``` python
 nba1 = Table.read_table(path_data + 'nba_salaries.csv')
 nba = nba1.relabeled("'15-'16 SALARY", 'SALARY')
 nba
@@ -222,7 +222,7 @@ nba
 The only columns involved are `TEAM` and `SALARY`. We have to `group`
 the rows by `TEAM` and then `sum` the salaries of the groups.
 
-``` {.python}
+``` python
 teams_and_money = nba.select('TEAM', 'SALARY')
 teams_and_money.group('TEAM', sum)
 ```
@@ -247,7 +247,7 @@ teams_and_money.group('TEAM', sum)
 We have to classify by `POSITION`, and count. This can be done with just
 one argument to group:
 
-``` {.python}
+``` python
 nba.group('POSITION')
 ```
 
@@ -266,7 +266,7 @@ This time, we have to group by `POSITION` and take the mean of the
 salaries. For clarity, we will work with a table of just the positions
 and the salaries.
 
-``` {.python}
+``` python
 positions_and_money = nba.select('POSITION', 'SALARY')
 positions_and_money.group('POSITION', np.mean)
 ```
@@ -288,7 +288,7 @@ impossible to average two strings like "Atlanta Hawks" and "Boston
 Celtics".) It performs arithmetic only on numerical columns and leaves
 the rest blank.
 
-``` {.python}
+``` python
 nba.group('POSITION', np.mean)
 ```
 

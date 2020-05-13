@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../../data/'
@@ -23,7 +23,7 @@ The function `bet_on_one_roll` takes no argument. Each time it is
 called, it simulates one roll of a fair die and returns the net gain in
 dollars.
 
-``` {.python}
+``` python
 def bet_on_one_roll():
     """Returns my net gain on one bet"""
     x = np.random.choice(np.arange(1, 7))  # roll a die once and record the number of spots
@@ -37,7 +37,7 @@ def bet_on_one_roll():
 
 Playing this game once is easy:
 
-``` {.python}
+``` python
 bet_on_one_roll()
 ```
 
@@ -55,7 +55,7 @@ in the sequence, followed by the word `in`, and ending with an
 expression that evaluates to a sequence. The indented body of the `for`
 statement is executed once *for each item in that sequence*.
 
-``` {.python}
+``` python
 for animal in make_array('cat', 'dog', 'rabbit'):
     print(animal)
 ```
@@ -71,7 +71,7 @@ A `for` statement simple replicates the code inside it, but before each
 iteration, it assigns a new value from the given sequence to the name we
 chose. For example, here is an unrolled version of the loop above.
 
-``` {.python}
+``` python
 animal = make_array('cat', 'dog', 'rabbit').item(0)
 print(animal)
 animal = make_array('cat', 'dog', 'rabbit').item(1)
@@ -98,7 +98,7 @@ To repeat a process `n` times, it is common to use the sequence
 short name for each item. In our code we will use the name `i` to remind
 ourselves that it refers to an item.
 
-``` {.python}
+``` python
 for i in np.arange(5):
     print(bet_on_one_roll())
 ```
@@ -126,7 +126,7 @@ The `append` method in `NumPy` helps us do this. The call
 `array_name` augmented by `value`. When you use `append`, keep in mind
 that all the entries of an array must have the same type.
 
-``` {.python}
+``` python
 pets = make_array('Cat', 'Dog')
 np.append(pets, 'Another Pet')
 ```
@@ -135,7 +135,7 @@ np.append(pets, 'Another Pet')
 
 This keeps the array `pets` unchanged:
 
-``` {.python}
+``` python
 pets
 ```
 
@@ -145,7 +145,7 @@ But often while using `for` loops it will be convenient to mutate an
 array -- that is, change it -- when augmenting it. This is done by
 assigning the augmented array to the same name as the original.
 
-``` {.python}
+``` python
 pets = np.append(pets, 'Another Pet')
 pets
 ```
@@ -160,7 +160,7 @@ creating an empty array for this, and then append the outcome of each
 bet. Notice that the body of the `for` loop contains two statements.
 Both statements are executed for each item in the given sequence.
 
-``` {.python}
+``` python
 outcomes = make_array()
 
 for i in np.arange(5):
@@ -174,7 +174,7 @@ outcomes
 
 Let us rewrite the cell with the `for` statement unrolled:
 
-``` {.python}
+``` python
 outcomes = make_array()
 
 i = np.arange(5).item(0)
@@ -211,7 +211,7 @@ By capturing the results in an array we have given ourselves the ability
 to use array methods to do computations. For example, we can use
 `np.count_nonzero` to count the number of times money changed hands.
 
-``` {.python}
+``` python
 np.count_nonzero(outcomes)
 ```
 
@@ -223,7 +223,7 @@ Iteration is a powerful technique. For example, we can see the variation
 in the results of 300 bets by running exactly the same code for 300 bets
 instead of five.
 
-``` {.python}
+``` python
 outcomes = make_array()
 
 for i in np.arange(300):
@@ -233,7 +233,7 @@ for i in np.arange(300):
 
 The array `outcomes` contains the results of all 300 bets.
 
-``` {.python}
+``` python
 len(outcomes)
 ```
 
@@ -242,7 +242,7 @@ len(outcomes)
 To see how often the three different possible results appeared, we can
 use the array `outcomes` and `Table` methods.
 
-``` {.python}
+``` python
 outcome_table = Table().with_column('Outcome', outcomes)
 outcome_table.group('Outcome').barh(0)
 ```
@@ -255,7 +255,7 @@ take" amounts more closely in later chapters.
 
 >[!IMPORTANT]
 >For the knowledge check: Trace each of the iterations in the following for loop.
->``` {.python} 
+>``` python 
 >for count in make_array(1,2,3,7):
 >   if count % 2 == 0:
 >        print(“Even!”)

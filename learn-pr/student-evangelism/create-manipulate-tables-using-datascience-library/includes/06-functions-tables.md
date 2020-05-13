@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 import matplotlib
 path_data = '../../../data/'
@@ -25,7 +25,7 @@ the same manipulation on every value in a column of a table.
 
 The definition of the `double` function below simply doubles a number.
 
-``` {.python}
+``` python
 # Our first function definition
 
 def double(x):
@@ -49,13 +49,13 @@ We can call `double` in exactly the same way we have called other
 functions. Each time we do that, the code in the body is executed, with
 the value of the argument given the name `x`.
 
-``` {.python}
+``` python
 double(17)
 ```
 
     34
 
-``` {.python}
+``` python
 double(-0.6/4)
 ```
 
@@ -79,7 +79,7 @@ a number. For example, it can be a name. The `double` function does not
 know or care how its argument is computed or stored; its only job is to
 execute its own body using the values of the arguments passed to it.
 
-``` {.python}
+``` python
 any_name = 42
 double(any_name)
 ```
@@ -90,7 +90,7 @@ The argument can also be any value that can be doubled. For example, a
 whole array of numbers can be passed as an argument to `double`, and the
 result will be another array.
 
-``` {.python}
+``` python
 double(make_array(3, 4, 5))
 ```
 
@@ -105,7 +105,7 @@ of `double`. The technical terminology is that `x` has *local scope*.
 Therefore the name `x` isn't recognized outside the body of the
 function, even though we have called `double` in the cells above.
 
-``` {.python}
+``` python
 x
 ```
 
@@ -138,7 +138,7 @@ future users of the function.
 Here is a definition of a function called `percent` that takes two
 arguments. The definition includes a docstring.
 
-``` {.python}
+``` python
 # A function with more than one argument
 
 def percent(x, total):
@@ -156,7 +156,7 @@ def percent(x, total):
     return round((x/total)*100, 2)
 ```
 
-``` {.python}
+``` python
 percent(33, 200)
 ```
 
@@ -169,7 +169,7 @@ the values in the array. The percents are all rounded to two decimal
 places, this time replacing `round` by `np.round` because the argument
 is an array and not a number.
 
-``` {.python}
+``` python
 def percents(counts):
     """Convert the values in array_x to percents out of the total of array_x."""
     total = counts.sum()
@@ -179,7 +179,7 @@ def percents(counts):
 The function `percents` returns an array of percents that add up to 100
 apart from rounding.
 
-``` {.python}
+``` python
 some_array = make_array(7, 10, 4)
 percents(some_array)
 ```
@@ -190,7 +190,7 @@ It is helpful to understand the steps Python takes to execute a
 function. To facilitate this, we have put a function definition and a
 call to that function in the same cell below.
 
-``` {.python}
+``` python
 def biggest_difference(array_x):
     """Find the biggest difference in absolute value between two adjacent elements of array_x."""
     diffs = np.diff(array_x)
@@ -217,7 +217,7 @@ defined previously rounded to two decimal places every time. The
 following two-argument definition allows different calls to round to
 different amounts.
 
-``` {.python}
+``` python
 def percents(counts, decimal_places):
     """Convert the values in array_x to percents out of the total of array_x."""
     total = counts.sum()
@@ -242,7 +242,7 @@ of the `def` statement. For example, in this final definition of
 `percents`, the optional argument `decimal_places` is given a default
 value of 2.
 
-``` {.python}
+``` python
 def percents(counts, decimal_places=2):
     """Convert the values in array_x to percents out of the total of array_x."""
     total = counts.sum()

@@ -6,7 +6,7 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 
-``` {.python}
+``` python
 from datascience import *
 import numpy as np
 path_data = '../../../../data/'
@@ -20,7 +20,7 @@ import warnings
 warnings.simplefilter(action="ignore", category=FutureWarning)
 ```
 
-``` {.python}
+``` python
 # As of Jan 2017, this census file is online here: 
 data = 'http://www2.census.gov/programs-surveys/popest/datasets/2010-2015/national/asrh/nc-est2015-agesex-res.csv'
 
@@ -43,7 +43,7 @@ trends in subgroups of the United States population. In this example, we will
 look at the distribution of males and females across age groups. We will
 continue using the `us_pop` table from the previous section.
 
-``` {.python}
+``` python
 us_pop
 ```
 
@@ -79,7 +79,7 @@ As a preliminary, let's interpret data in the final age category in the
 table, where `AGE` is 100. The code below extracts the rows for the
 combined group of men and women (`SEX` code 0) for the highest ages.
 
-``` {.python}
+``` python
 us_pop.where('SEX', are.equal_to(0)).where('AGE', are.between(97, 101))
 ```
 
@@ -110,7 +110,7 @@ rows where the "age" is coded 999. The table `all_ages` contains this
 information. There are three rows: one for the total of both genders,
 one for males (`SEX` code 1), and one for females (`SEX` code 2).
 
-``` {.python}
+``` python
 us_pop_2014 = us_pop.drop('2010')
 all_ages = us_pop_2014.where('AGE', are.equal_to(999))
 all_ages
@@ -139,7 +139,7 @@ proportion column. Consistent with our earlier observation that there
 were more females than males, about 50.8% of the population in 2014 was
 female and about 49.2% male in each of the two years.
 
-``` {.python}
+``` python
 pop_2014 = all_ages.column('2014').item(0)
 all_ages.with_column(
     'Proportion', all_ages.column('2014')/pop_2014
@@ -159,7 +159,7 @@ infants to be babies who have not yet completed one year, represented in
 the row corresponding to `AGE` 0. Here are their numbers in the
 population. You can see that male infants outnumbered female infants.
 
-``` {.python}
+``` python
 infants = us_pop_2014.where('AGE', are.equal_to(0))
 infants
 ```
@@ -174,7 +174,7 @@ As before, we can convert these counts to percents out of the total
 numbers of infants. The resulting table shows that in 2014, just over
 51% of infants in the United States were male.
 
-``` {.python}
+``` python
 infants_2014 = infants.column('2014').item(0)
 infants.with_column(
     'Proportion', infants.column('2014')/infants_2014
@@ -205,7 +205,7 @@ and `AGE` is coded as 999.
 The tables `females` and `males` contain the data for each the two
 genders.
 
-``` {.python}
+``` python
 females_all_rows = us_pop_2014.where('SEX', are.equal_to(2))
 females = females_all_rows.where('AGE', are.not_equal_to(999))
 females
@@ -226,7 +226,7 @@ females
 
 ... (91 rows omitted)
 
-``` {.python}
+``` python
 males_all_rows = us_pop_2014.where('SEX', are.equal_to(1))
 males = males_all_rows.where('AGE', are.not_equal_to(999))
 males
@@ -252,7 +252,7 @@ each age, for each of the two years. Array and Table methods give us
 straightforward ways to do this. Both of these tables have one row for
 each age.
 
-``` {.python}
+``` python
 males.column('AGE')
 ```
 
@@ -263,7 +263,7 @@ array(\[ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100\])
 
-``` {.python}
+``` python
 females.column('AGE')
 ```
 
@@ -281,7 +281,7 @@ corresponding array of male counts, and then simply divide one array by
 the other. Elementwise division will create an array of gender ratios
 for all the years.
 
-``` {.python}
+``` python
 ratios = Table().with_columns(
     'AGE', females.column('AGE'),
     '2014 F:M RATIO', females.column('2014')/males.column('2014')
@@ -317,7 +317,7 @@ than the males?
 Something extraordinary happens when we examine the other end of the age
 range. Here are the Female:Male ratios for people aged more than 75.
 
-``` {.python}
+``` python
 ratios.where('AGE', are.above(75)).show()
 ```
 
@@ -361,7 +361,7 @@ greater than 1.
 If you are wondering how many people there were at these advanced ages,
 you can use Python to find out:
 
-``` {.python}
+``` python
 males.where('AGE', are.between(98, 100))
 ```
 
@@ -370,7 +370,7 @@ males.where('AGE', are.between(98, 100))
 |1|98|13518|
 |1|99|8951|
 
-``` {.python}
+``` python
 females.where('AGE', are.between(98, 100))
 ```
 
@@ -389,7 +389,7 @@ females) for ages 0 through 60, but they start shooting up dramatically
 That females outnumber males in the United States is partly due to the marked
 gender imbalance in favor of women among senior citizens.
 
-``` {.python}
+``` python
 ratios.plot('AGE')
 ```
 

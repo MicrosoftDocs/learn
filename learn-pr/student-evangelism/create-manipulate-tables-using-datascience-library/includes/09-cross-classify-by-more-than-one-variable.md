@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../../data/'
@@ -25,7 +25,7 @@ multiple variables. This is called *cross-classifying*.
 The table `more_cones` records the flavor, color, and price of six ice
 cream cones.
 
-``` {.python}
+``` python
 more_cones = Table().with_columns(
     'Flavor', make_array('strawberry', 'chocolate', 'chocolate', 'strawberry', 'chocolate', 'bubblegum'),
     'Color', make_array('pink', 'light brown', 'dark brown', 'pink', 'dark brown', 'pink'),
@@ -46,7 +46,7 @@ more_cones
 
 We know how to use `group` to count the number of cones of each flavor:
 
-``` {.python}
+``` python
 more_cones.group('Flavor')
 ```
 
@@ -67,7 +67,7 @@ Although there are six cones, there are only four unique combinations of
 flavor and color. Two of the cones were dark brown chocolate, and two
 pink strawberry.
 
-``` {.python}
+``` python
 more_cones.group(['Flavor', 'Color'])
 ```
 
@@ -83,7 +83,7 @@ more_cones.group(['Flavor', 'Color'])
 A second argument aggregates all other columns that are not in the list
 of grouped columns.
 
-``` {.python}
+``` python
 more_cones.group(['Flavor', 'Color'], sum)
 ```
 
@@ -112,7 +112,7 @@ have been classified according to two variables.
 Recall the use of `group` to count the number of cones in each paired
 category of flavor and color:
 
-``` {.python}
+``` python
 more_cones.group(['Flavor', 'Color'])
 ```
 
@@ -127,7 +127,7 @@ The same data can be displayed differently using the Table method
 `pivot`. Ignore the code for a moment, and just examine the table of
 outcomes.
 
-``` {.python}
+``` python
 more_cones.pivot('Flavor', 'Color')
 ```
 
@@ -169,7 +169,7 @@ collect them all into one aggregated value to be displayed in the cell.
 An example will help clarify this. Here is `pivot` being used to find
 the total price of the cones in each cell.
 
-``` {.python}
+``` python
 more_cones.pivot('Flavor', 'Color', values='Price', collect=sum)
 ```
 
@@ -181,7 +181,7 @@ more_cones.pivot('Flavor', 'Color', values='Price', collect=sum)
 
 And here is `group` doing the same thing.
 
-``` {.python}
+``` python
 more_cones.group(['Flavor', 'Color'], sum)
 ```
 
@@ -210,7 +210,7 @@ For each year, the table records the `Population Count` of Californians
 in many different combinations of age, gender, educational attainment,
 and personal income. We will study only the data for the year 2014.
 
-``` {.python}
+``` python
 full_table = Table.read_table(path_data + 'educ_inc.csv')
 ca_2014 = full_table.where('Year', are.equal_to('1/1/14 0:00')).where('Age', are.not_equal_to('00 to 17'))
 ca_2014
@@ -238,7 +238,7 @@ As a first step it is a good idea to start with just one or two
 variables. We will focus on just one pair: educational attainment and
 personal income.
 
-``` {.python}
+``` python
 educ_inc = ca_2014.select('Educational Attainment', 'Personal Income', 'Population Count')
 educ_inc
 ```
@@ -263,7 +263,7 @@ this variable have been subdivided by the different levels of income. So
 we will group the table by `Educational Attainment` and `sum` the
 `Population Count` in each category.
 
-``` {.python}
+``` python
 education = educ_inc.select('Educational Attainment', 'Population Count')
 educ_totals = education.group('Educational Attainment', sum)
 educ_totals
@@ -282,7 +282,7 @@ use the function `percents` that we defined in an earlier section. It
 converts an array of numbers to an array of percents out of the total in
 the input array.
 
-``` {.python}
+``` python
 def percents(array_x):
     return np.round( (array_x/sum(array_x))*100, 2)
 ```
@@ -291,7 +291,7 @@ We now have the distribution of educational attainment among adult
 Californians. More than 30% have a Bachelor's degree or higher, while
 almost 16% lack a high school diploma.
 
-``` {.python}
+``` python
 educ_distribution = educ_totals.with_column(
     'Population Percent', percents(educ_totals.column(1))
 )
@@ -309,7 +309,7 @@ By using `pivot`, we can get a contingency table (a table of counts) of
 adult Californians cross-classified by `Educational Attainment` and
 `Personal Income`.
 
-``` {.python}
+``` python
 totals = educ_inc.pivot('Educational Attainment', 'Personal Income', values='Population Count', collect=sum)
 totals
 ```
@@ -330,7 +330,7 @@ methods. Each column of counts is a distribution of personal income at a
 specific level of educational attainment. Converting the counts to
 percents allows us to compare the four distributions.
 
-``` {.python}
+``` python
 distributions = totals.select(0).with_columns(
     "Bachelor's degree or higher", percents(totals.column(1)),
     'College, less than 4-yr degree', percents(totals.column(2)),
@@ -362,7 +362,7 @@ Bachelor's degree or higher. The difference in the distributions is
 striking. There is a clear positive association between educational
 attainment and personal income.
 
-``` {.python}
+``` python
 distributions.select(0, 1, 4).barh(0)
 ```
 
