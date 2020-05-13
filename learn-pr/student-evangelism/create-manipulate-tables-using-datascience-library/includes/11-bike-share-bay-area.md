@@ -21,8 +21,8 @@ We end this chapter by using all the methods we have learned to examine
 a new and large dataset. We will also introduce `map_table`, a powerful
 visualization tool.
 
-The [Bay Area Bike Share](http://www.bayareabikeshare.com/) service
-published a [dataset](http://www.bayareabikeshare.com/open-data)
+The  Bay Area Bike Share service
+published a Open Data set.
 describing every bicycle rental from September 2014 to August 2015 in
 their system. There were 354,152 rentals in all. The columns are:
 

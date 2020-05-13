@@ -123,7 +123,7 @@ x
 functions perform complicated tasks and are difficult to use without
 explanation. (You may have discovered this yourself!) Therefore, a
 well-composed function has a name that evokes its behavior, as well as
-documentation. In Python, this is called a *docstring* --- a description
+documentation. In Python, this is called a *docstring* -- a description
 of its behavior and expectations about its arguments. The docstring can
 also show example calls to the function, where the call is preceded by
 `>>>`.

@@ -147,7 +147,7 @@ nba.sort('Salary', descending=True)
 ... (407 rows omitted)
 
 Kobe Bryant, in his final season with the Lakers, was the highest paid
-at a salary of $\$25$ million. Notice that the MVP Stephen Curry doesn't
+at a salary of $25 million. Notice that the MVP Stephen Curry doesn't
 appear among the top 10. He is quite a bit further down the list, as we
 will see later.
 
@@ -162,7 +162,7 @@ or method.
 help(nba.sort)
 ```
 
-``` {}
+``` python
   Help on method sort in module datascience.tables:
  
   sort(column_or_label, descending=False, distinct=False) method of datascience.tables.Table instance
@@ -230,15 +230,19 @@ help(nba.sort)
 At the very top of this `help` text, the *signature* of the `sort`
 method appears:
 
+``` python
 sort(column\_or\_label, descending=False, distinct=False)
+```
 
 This describes the positions, names, and default values of the three
 arguments to `sort`. When calling this method, you can use either
 positional arguments or named arguments, so the following three calls do
 exactly the same thing.
 
+``` python
 sort('Salary', True) sort('Salary', descending=True)
 sort(column\_or\_label='Salary', descending=True)
+```
 
 When an argument is simply `True` or `False`, it's a useful convention
 to include the argument name so that it's more obvious what the argument
