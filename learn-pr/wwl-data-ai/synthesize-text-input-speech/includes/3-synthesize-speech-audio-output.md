@@ -135,13 +135,12 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
 
 1. In the terminal, enter ```dotnet add package Microsoft.CognitiveServices.Speech```
 
->[!NOTE]
->Ensure you are in the csharp folder. The previous extension install will change the folder for the Terminal
+   > [!NOTE]
+   > Ensure you are in the csharp folder. The previous extension install will change the folder for the Terminal
 
 1. Once the package is added, you are ready to run the application.
 1. Get your key and region from the Speech resource your created on Azure and paste them in the **YourSubscriptionKey** and **YourServiceRegion** placeholders in the code.
-1. In the terminal, type ```dotnet run```
-and press Enter.
+1. In the terminal, type ```dotnet run``` and press Enter.
 1. You will be prompted to enter some text.  Enter a phrase of your choosing and press Enter.
 1. The computer will read back the text to you in the default voice.
 
@@ -161,8 +160,7 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
 1. In the terminal, where you typed the ```dotnet new console``` command, enter ```dotnet add package Microsoft.CognitiveServices.Speech```
 1. Once the package is added, you are ready to run the application.
 1. Get your key and region from the Speech resource your created on Azure and paste them in the **YourSubscriptionKey** and **YourServiceRegion** placeholders in the code.
-1. In the terminal, type ```dotnet run```
-and press Enter.
+1. In the terminal, type ```dotnet run``` and press Enter.
 1. You will be prompted to enter some text.  Enter a phrase of your choosing and press Enter.
 1. The computer will read back the text to you in the default voice.
 
