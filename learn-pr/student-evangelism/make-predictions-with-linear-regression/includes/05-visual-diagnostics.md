@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../../data/'
@@ -14,7 +14,7 @@ import warnings
 warnings.simplefilter(action="ignore", category=FutureWarning)
 ```
 
-``` {.python}
+``` python
 # HIDDEN
 
 galton = Table.read_table(path_data + 'galton.csv')
@@ -23,7 +23,7 @@ heights = heights.relabel(0, 'MidParent').relabel(1, 'Child')
 hybrid = Table.read_table(path_data + 'hybrid.csv')
 ```
 
-``` {.python}
+``` python
 
 def standard_units(x):
     return (x - np.mean(x))/np.std(x)
@@ -76,7 +76,7 @@ The function `residual` calculates the residuals. The calculation
 assumes all the relevant functions we have already defined:
 `standard_units`, `correlation`, `slope`, `intercept`, and `fit`.
 
-``` {.python}
+``` python
 def residual(table, x, y):
     return table.column(y) - fit(table, x, y)
 ```
@@ -85,7 +85,7 @@ Continuing our example of using Galton's data to estimate the heights of
 adult children (the response) based on the midparent height (the
 predictor), let us calculate the fitted values and the residuals.
 
-``` {.python}
+``` python
 heights = heights.with_columns(
         'Fitted Value', fit(heights, 'MidParent', 'Child'),
         'Residual', residual(heights, 'MidParent', 'Child')
@@ -112,7 +112,7 @@ When there are so many variables to work with, it is always helpful to
 start with visualization. The function `scatter_fit` draws the scatter
 plot of the data, as well as the regression line.
 
-``` {.python}
+``` python
 def scatter_fit(table, x, y):
     table.scatter(x, y, s=15)
     plots.plot(table.column(x), fit(table, x, y), lw=4, color='gold')
@@ -120,7 +120,7 @@ def scatter_fit(table, x, y):
     plots.ylabel(y)
 ```
 
-``` {.python}
+``` python
 scatter_fit(heights, 'MidParent', 'Child')
 ```
 
@@ -129,7 +129,7 @@ scatter_fit(heights, 'MidParent', 'Child')
 A *residual plot* can be drawn by plotting the residuals against the
 predictor variable. The function `residual_plot` does just that.
 
-``` {.python}
+``` python
 def residual_plot(table, x, y):
     x_array = table.column(x)
     t = Table().with_columns(
@@ -142,7 +142,7 @@ def residual_plot(table, x, y):
     plots.title('Residual Plot')
 ```
 
-``` {.python}
+``` python
 residual_plot(heights, 'MidParent', 'Child')
 ```
 
@@ -162,13 +162,13 @@ linear regression analysis. Such assessments are called *diagnostics*.
 The function `regression_diagnostic_plots` draws the original scatter
 plot as well as the residual plot for ease of comparison.
 
-``` {.python}
+``` python
 def regression_diagnostic_plots(table, x, y):
     scatter_fit(table, x, y)
     residual_plot(table, x, y)
 ```
 
-``` {.python}
+``` python
 regression_diagnostic_plots(heights, 'MidParent', 'Child')
 ```
 
@@ -212,7 +212,7 @@ in meters. Because dugongs tend not to keep track of their birthdays,
 ages are estimated based on variables such as the condition of their
 teeth.
 
-``` {.python}
+``` python
 dugong = Table.read_table('http://www.statsci.org/data/oz/dugongs.txt')
 dugong = dugong.move_to_start('Length')
 dugong
@@ -238,7 +238,7 @@ age? Let's examine what our data say. Here is a regression of age (the
 response) on length (the predictor). The correlation between the two
 variables is substantial, at 0.83.
 
-``` {.python}
+``` python
 correlation(dugong, 'Length', 'Age')
 ```
 
@@ -247,7 +247,7 @@ correlation(dugong, 'Length', 'Age')
 High correlation notwithstanding, the plot shows a curved pattern that
 is much more visible in the residual plot.
 
-``` {.python}
+``` python
 regression_diagnostic_plots(dugong, 'Length', 'Age')
 ```
 
@@ -279,7 +279,7 @@ Here is a regression of fuel efficiency on the rate of acceleration. The
 association is negative: cars that accelerate quickly tend to be less
 efficient.
 
-``` {.python}
+``` python
 regression_diagnostic_plots(hybrid, 'acceleration', 'mpg')
 ```
 

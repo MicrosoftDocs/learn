@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../../data/'
@@ -14,7 +14,7 @@ import warnings
 warnings.simplefilter(action="ignore", category=FutureWarning)
 ```
 
-``` {.python}
+``` python
 # HIDDEN
 
 galton = Table.read_table(path_data + 'galton.csv')
@@ -25,7 +25,7 @@ dugong = dugong.move_to_start('Length')
 hybrid = Table.read_table(path_data + 'hybrid.csv')
 ```
 
-``` {.python}
+``` python
 
 def standard_units(x):
     return (x - np.mean(x))/np.std(x)
@@ -73,7 +73,7 @@ def regression_diagnostic_plots(table, x, y):
     residual_plot(table, x, y)   
 ```
 
-``` {.python}
+``` python
 heights = heights.with_columns(
         'Fitted Value', fit(heights, 'MidParent', 'Child'),
         'Residual', residual(heights, 'MidParent', 'Child')
@@ -98,7 +98,7 @@ You can see this in all the residual plots above. We can also calculate
 the correlation between the predictor variable and the residuals in each
 case.
 
-``` {.python}
+``` python
 correlation(heights, 'MidParent', 'Residual')
 ```
 
@@ -108,13 +108,13 @@ That doesn't look like zero, but it is a tiny number that is 0 apart
 from rounding error due to computation. Here it is again, correct to 10
 decimal places. The minus sign is because of the rounding that above.
 
-``` {.python}
+``` python
 round(correlation(heights, 'MidParent', 'Residual'), 10)
 ```
 
     -0.0
 
-``` {.python}
+``` python
 dugong = dugong.with_columns(
        'Fitted Value', fit(dugong, 'Length', 'Age'),
        'Residual', residual(dugong, 'Length', 'Age')
@@ -141,7 +141,7 @@ As a numerical example, here is the average of the residuals in the
 regression of children's heights based on parents' heights in Galton's
 dataset.
 
-``` {.python}
+``` python
 round(np.mean(heights.column('Residual')), 10)
 ```
 
@@ -151,7 +151,7 @@ The same is true of the average of the residuals in the regression of
 the age of dugongs on their length. The mean of the residuals is 0,
 apart from rounding error.
 
-``` {.python}
+``` python
 round(np.mean(dugong.column('Residual')), 10)
 ```
 
@@ -173,7 +173,7 @@ estimate. But first, let's confirm it by example.
 In the case of children's heights and midparent heights, the SD of the
 residuals is about 3.39 inches.
 
-``` {.python}
+``` python
 np.std(heights.column('Residual'))
 ```
 
@@ -181,7 +181,7 @@ np.std(heights.column('Residual'))
 
 That's the same as $\sqrt{1-r^2}$ times the SD of response variable:
 
-``` {.python}
+``` python
 r = correlation(heights, 'MidParent', 'Child')
 np.sqrt(1 - r**2) * np.std(heights.column('Child'))
 ```
@@ -192,14 +192,14 @@ The same is true for the regression of mileage on acceleration of hybrid
 cars. The correlation $r$ is negative (about -0.5), but $r^2$ is
 positive and therefore $\sqrt{1-r^2}$ is a fraction.
 
-``` {.python}
+``` python
 r = correlation(hybrid, 'acceleration', 'mpg')
 r
 ```
 
     -0.5060703843771186
 
-``` {.python}
+``` python
 hybrid = hybrid.with_columns(
      'fitted mpg', fit(hybrid, 'acceleration', 'mpg'),
      'residual', residual(hybrid, 'acceleration', 'mpg')
@@ -258,7 +258,7 @@ To see where the fraction comes in, notice that the fitted values are
 all on the regression line whereas the observed values of $y$ are the
 heights of all the points in the scatter plot and are more variable.
 
-``` {.python}
+``` python
 scatter_fit(heights, 'MidParent', 'Child')
 ```
 
@@ -271,7 +271,7 @@ to 80.
 To verify the result numerically, we just have to calculate both sides
 of the identity.
 
-``` {.python}
+``` python
 correlation(heights, 'MidParent', 'Child')
 ```
 
@@ -280,7 +280,7 @@ correlation(heights, 'MidParent', 'Child')
 Here is ratio of the SD of the fitted values and the SD of the observed
 values of birth weight:
 
-``` {.python}
+``` python
 np.std(heights.column('Fitted Value'))/np.std(heights.column('Child'))
 ```
 
@@ -292,13 +292,13 @@ Where does the absolute value come in? First note that as SDs can't be
 negative, nor can a ratio of SDs. So what happens when $r$ is negative?
 The example of fuel efficiency and acceleration will show us.
 
-``` {.python}
+``` python
 correlation(hybrid, 'acceleration', 'mpg')
 ```
 
     -0.5060703843771186
 
-``` {.python}
+``` python
 np.std(hybrid.column('fitted mpg'))/np.std(hybrid.column('mpg'))
 ```
 

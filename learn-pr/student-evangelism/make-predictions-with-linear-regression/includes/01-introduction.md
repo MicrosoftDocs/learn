@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 import matplotlib
 path_data = '../../../data/'
@@ -32,7 +32,7 @@ parents. We have studied the dataset that Galton collected for this. The
 table `heights` contains his data on the midparent height and child's
 height (all in inches) for a population of 934 adult "children".
 
-``` {.python}
+``` python
 # Galton's data on heights of parents and their adult children
 galton = Table.read_table(path_data + 'galton.csv')
 heights = Table().with_columns(
@@ -41,7 +41,7 @@ heights = Table().with_columns(
     )
 ```
 
-``` {.python}
+``` python
 heights
 ```
 
@@ -61,7 +61,7 @@ heights
 
 ... (924 rows omitted)
 
-``` {.python}
+``` python
 heights.scatter('MidParent')
 ```
 
@@ -79,7 +79,7 @@ takes a midparent height as its argument and returns the average height
 of all the children who had midparent heights within half an inch of the
 argument.
 
-``` {.python}
+``` python
 def predict_child(mpht):
     """Return a prediction of the height of a child
     whose parents have a midparent height of mpht.
@@ -95,7 +95,7 @@ def predict_child(mpht):
 We applied the function to the column of `Midparent` heights, visualized
 our results.
 
-``` {.python}
+``` python
 # Apply predict_child to all the midparent heights
 
 heights_with_predictions = heights.with_column(
@@ -103,7 +103,7 @@ heights_with_predictions = heights.with_column(
     )
 ```
 
-``` {.python}
+``` python
 # Draw the original scatter plot along with the predicted values
 
 heights_with_predictions.scatter('MidParent')
@@ -119,7 +119,7 @@ arbitrary definitions of "closeness" being "within 0.5 inches". But
 first we will develop a measure that can be used in many settings to
 decide how good one variable will be as a predictor of another.
 
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -130,7 +130,7 @@ import numpy as np
 from scipy import stats
 ```
 
-``` {.python}
+``` python
 def r_scatter(r):
     plots.figure(figsize=(5,5))
     "Generate a scatter plot with a correlation approximately r"
@@ -160,11 +160,11 @@ of the University of Florida. The columns:
 -   `mpg`: fuel economy in miles per gallon
 -   `class`: the model's class.
 
-``` {.python}
+``` python
 hybrid = Table.read_table(path_data + 'hybrid.csv')
 ```
 
-``` {.python}
+``` python
 hybrid
 ```
 |vehicle|year|msrp|acceleration|mpg|class|
@@ -186,7 +186,7 @@ The graph below is a scatter plot of `msrp` *versus* `acceleration`.
 That means `msrp` is plotted on the vertical axis and `acceleration` on
 the horizontal.
 
-``` {.python}
+``` python
 hybrid.scatter('acceleration', 'msrp')
 ```
 
@@ -203,7 +203,7 @@ seems surprising until you consider that cars that accelerate fast tend
 to be less fuel efficient and have lower mileage. As the previous
 scatter plot showed, those were also the cars that tended to cost more.
 
-``` {.python}
+``` python
 hybrid.scatter('mpg', 'msrp')
 ```
 
@@ -218,14 +218,14 @@ between price and efficiency is still negative but the relation appears
 to be more linear. The relation between the price and acceleration of
 SUVs also shows a linear trend, but with a positive slope.
 
-``` {.python}
+``` python
 suv = hybrid.where('class', 'SUV')
 suv.scatter('mpg', 'msrp')
 ```
 
 ![png](../media/76-correlation-11-0.png)
 
-``` {.python}
+``` python
 suv.scatter('acceleration', 'msrp')
 ```
 
@@ -242,7 +242,7 @@ linearity in two scatter diagrams.
 Recall that in an earlier section we defined the function
 `standard_units` to convert an array of numbers to standard units.
 
-``` {.python}
+``` python
 def standard_units(any_numbers):
     "Convert any array of numbers to standard units."
     return (any_numbers - np.mean(any_numbers))/np.std(any_numbers)  
@@ -251,7 +251,7 @@ def standard_units(any_numbers):
 We can use this function to redraw the two scatter diagrams for SUVs,
 with all the variables measured in standard units.
 
-``` {.python}
+``` python
 Table().with_columns(
     'mpg (standard units)',  standard_units(suv.column('mpg')),
     'msrp (standard units)', standard_units(suv.column('msrp'))
@@ -262,7 +262,7 @@ plots.ylim(-3, 3);
 
 ![png](../media/76-correlation-16-0.png)
 
-``` {.python}
+``` python
 Table().with_columns(
     'acceleration (standard units)', standard_units(suv.column('acceleration')),
     'msrp (standard units)',         standard_units(suv.column('msrp'))
@@ -312,25 +312,25 @@ $r=-1$, the scatter plot is perfectly linear and slopes downward. When
 $r=0$, the scatter plot is a formless cloud around the horizontal axis,
 and the variables are said to be *uncorrelated*.
 
-``` {.python}
+``` python
 r_scatter(0.9)
 ```
 
 ![png](../media/76-correlation-21-0.png)
 
-``` {.python}
+``` python
 r_scatter(0.25)
 ```
 
 ![png](../media/76-correlation-22-0.png)
 
-``` {.python}
+``` python
 r_scatter(0)
 ```
 
 ![png](../media/76-correlation-23-0.png)
 
-``` {.python}
+``` python
 r_scatter(-0.55)
 ```
 
@@ -351,7 +351,7 @@ variables are measured in standard units.**
 Here are the steps in the calculation. We will apply the steps to a
 simple table of values of $x$ and $y$.
 
-``` {.python}
+``` python
 x = np.arange(1, 7, 1)
 y = make_array(2, 3, 1, 5, 2, 7)
 t = Table().with_columns(
@@ -373,7 +373,7 @@ t
 Based on the scatter diagram, we expect that $r$ will be positive but
 not equal to 1.
 
-``` {.python}
+``` python
 t.scatter(0, 1, s=30, color='red')
 ```
 
@@ -381,7 +381,7 @@ t.scatter(0, 1, s=30, color='red')
 
 **Step 1.** Convert each variable to standard units.
 
-``` {.python}
+``` python
 t_su = t.with_columns(
         'x (standard units)', standard_units(x),
         'y (standard units)', standard_units(y)
@@ -400,7 +400,7 @@ t_su
 
 **Step 2.** Multiply each pair of standard units.
 
-``` {.python}
+``` python
 t_product = t_su.with_column('product of standard units', t_su.column(2) * t_su.column(3))
 t_product
 ```
@@ -416,7 +416,7 @@ t_product
 
 **Step 3.** $r$ is the average of the products computed in Step 2.
 
-``` {.python}
+``` python
 # r is the average of the products of standard units
 
 r = np.mean(t_product.column(4))
@@ -441,7 +441,7 @@ The calculation shows that:
     reflects the scatter plot about the line $y=x$, but does not change
     the amount of clustering nor the sign of the association.
 
-``` {.python}
+``` python
 t.scatter('y', 'x', s=30, color='red')
 ```
 
@@ -455,7 +455,7 @@ described above. Let's define a function `correlation` that takes a
 table and the labels of two columns in the table. The function returns
 $r$, the mean of the products of those column values in standard units.
 
-``` {.python}
+``` python
 def correlation(t, x, y):
     return np.mean(standard_units(t.column(x))*standard_units(t.column(y)))
 ```
@@ -464,7 +464,7 @@ Let's call the function on the `x` and `y` columns of `t`. The function
 returns the same answer to the correlation between $x$ and $y$ as we got
 by direct application of the formula for $r$.
 
-``` {.python}
+``` python
 correlation(t, 'x', 'y')
 ```
 
@@ -473,7 +473,7 @@ correlation(t, 'x', 'y')
 As we noticed, the order in which the variables are specified doesn't
 matter.
 
-``` {.python}
+``` python
 correlation(t, 'y', 'x')
 ```
 
@@ -483,13 +483,13 @@ Calling `correlation` on columns of the table `suv` gives us the
 correlation between price and mileage as well as the correlation between
 price and acceleration.
 
-``` {.python}
+``` python
 correlation(suv, 'mpg', 'msrp')
 ```
 
 -0.6667143635709919
 
-``` {.python}
+``` python
 correlation(suv, 'acceleration', 'msrp')
 ```
 
@@ -524,7 +524,7 @@ that have strong non-linear association might have low correlation.
 Here is an example of variables that have a perfect quadratic relation
 $y = x^2$ but have correlation equal to 0.
 
-``` {.python}
+``` python
 new_x = np.arange(-4, 4.1, 0.5)
 nonlinear = Table().with_columns(
         'x', new_x,
@@ -535,7 +535,7 @@ nonlinear.scatter('x', 'y', s=30, color='r')
 
 ![png](../media/76-correlation-51-0.png)
 
-``` {.python}
+``` python
 correlation(nonlinear, 'x', 'y')
 ```
 
@@ -547,7 +547,7 @@ Outliers can have a significant effect on correlation. Here is an example where
 a scatter plot for which $r$ is equal to 1 is turned into a plot for
 which $r$ is equal to 0, by the addition of just one outlying point.
 
-``` {.python}
+``` python
 line = Table().with_columns(
         'x', make_array(1, 2, 3, 4),
         'y', make_array(1, 2, 3, 4)
@@ -557,13 +557,13 @@ line.scatter('x', 'y', s=30, color='r')
 
 ![png](../media/76-correlation-54-0.png)
 
-``` {.python}
+``` python
 correlation(line, 'x', 'y')
 ```
 
 1.0
 
-``` {.python}
+``` python
 outlier = Table().with_columns(
         'x', make_array(1, 2, 3, 4, 5),
         'y', make_array(1, 2, 3, 4, 0)
@@ -573,7 +573,7 @@ outlier.scatter('x', 'y', s=30, color='r')
 
 ![png](../media/76-correlation-56-0.png)
 
-``` {.python}
+``` python
 correlation(outlier, 'x', 'y')
 ```
 
@@ -589,7 +589,7 @@ who took the test. The next three columns show the average score in the
 state on each portion of the test, and the final column is the average
 of the total scores on the test.
 
-``` {.python}
+``` python
 sat2014 = Table.read_table(path_data + 'sat2014.csv').sort('State')
 sat2014
 ```
@@ -612,13 +612,13 @@ The scatter diagram of Math scores versus Critical Reading scores is
 tightly clustered around a straight-line; the correlation is close
 to 0.985.
 
-``` {.python}
+``` python
 sat2014.scatter('Critical Reading', 'Math')
 ```
 
 ![png](../media/76-correlation-61-0.png)
 
-``` {.python}
+``` python
 correlation(sat2014, 'Critical Reading', 'Math')
 ```
 
@@ -656,7 +656,7 @@ responded seriously whereas
 were more relaxed. You are welcome to make your own decision! The
 following graph, provided in the paper, should motivate you to take a look.
 
-``` {.python}
+``` python
 
 from IPython.display import Image
 Image("../../../images/chocoNobel.png")
@@ -664,7 +664,7 @@ Image("../../../images/chocoNobel.png")
 
 ![png](../media/76-correlation-65-0.png)
 
-``` {.python}
+``` python
 from IPython.display import Image
 Image("../media/choco-nobel.png")
 ```
@@ -677,3 +677,5 @@ Image("../media/choco-nobel.png")
 - Understand the Regression line, Regression Effect, and the equation of the regression line.
 - Motivate The Method of Least Squares, Least Square Regression, & Nonlinear Regression
 - Understand Residuals and residual diagnostics through residual plots.
+
+## Check your knowledge

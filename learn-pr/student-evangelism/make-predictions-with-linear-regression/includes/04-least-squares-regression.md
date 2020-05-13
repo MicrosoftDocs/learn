@@ -1,4 +1,4 @@
-``` {.python}
+``` python
 from datascience import *
 %matplotlib inline
 path_data = '../../../../data/'
@@ -7,7 +7,7 @@ plots.style.use('fivethirtyeight')
 import numpy as np
 ```
 
-``` {.python}
+``` python
 
 def standard_units(any_numbers):
     "Convert any array of numbers to standard units."
@@ -50,11 +50,11 @@ Strength was measured by the biggest amount (in kilograms) that the
 athlete lifted in the "1RM power clean" in the pre-season. The distance
 (in meters) was the athlete's personal best.
 
-``` {.python}
+``` python
 shotput = Table.read_table(path_data + 'shotput.csv')
 ```
 
-``` {.python}
+``` python
 shotput
 ```
 
@@ -73,7 +73,7 @@ shotput
 
 ... (18 rows omitted)
 
-``` {.python}
+``` python
 shotput.scatter('Weight Lifted')
 ```
 
@@ -87,13 +87,13 @@ straight lines.
 Our formulas for the slope and intercept of the regression line, derived
 for football shaped scatter plots, give the following values.
 
-``` {.python}
+``` python
 slope(shotput, 'Weight Lifted', 'Shot Put Distance')
 ```
 
 0.09834382159781997
 
-``` {.python}
+``` python
 intercept(shotput, 'Weight Lifted', 'Shot Put Distance')
 ```
 
@@ -108,7 +108,7 @@ slope and intercept as arguments and return the corresponding mse. Then
 `minimize` applied to `shotput_linear_mse` will return the best slope
 and intercept.
 
-``` {.python}
+``` python
 def shotput_linear_mse(any_slope, any_intercept):
     x = shotput.column('Weight Lifted')
     y = shotput.column('Shot Put Distance')
@@ -116,7 +116,7 @@ def shotput_linear_mse(any_slope, any_intercept):
     return np.mean((y - fitted) ** 2)
 ```
 
-``` {.python}
+``` python
 minimize(shotput_linear_mse)
 ```
 
@@ -139,7 +139,7 @@ $$
 \mbox{average of }y ~-~ \mbox{slope} \cdot \mbox{average of }x
 $$
 
-``` {.python}
+``` python
 fitted = fit(shotput, 'Weight Lifted', 'Shot Put Distance')
 shotput.with_column('Best Straight Line', fitted).scatter('Weight Lifted')
 ```
@@ -180,7 +180,7 @@ The function is called `shotput_quadratic_mse`. Notice that the
 definition is analogous to that of `lw_mse`, except that the fitted
 values are based on a quadratic function instead of linear.
 
-``` {.python}
+``` python
 def shotput_quadratic_mse(a, b, c):
     x = shotput.column('Weight Lifted')
     y = shotput.column('Shot Put Distance')
@@ -191,7 +191,7 @@ def shotput_quadratic_mse(a, b, c):
 We can now use `minimize` just as before to find the constants that
 minimize the mean squared error.
 
-``` {.python}
+``` python
 best = minimize(shotput_quadratic_mse)
 best
 ```
@@ -205,7 +205,7 @@ $$ meters. For example, if the athlete can lift 100 kilograms, the
 predicted distance is 16.33 meters. On the scatter plot, that's near the
 center of a vertical strip around 100 kilograms.
 
-``` {.python}
+``` python
 (-0.00104)*(100**2) + 0.2827*100 - 1.5318
 ```
 
@@ -215,12 +215,12 @@ Here are the predictions for all the values of `Weight Lifted`. You can
 see that they go through the center of the scatter plot, to a rough
 approximation.
 
-``` {.python}
+``` python
 x = shotput.column(0)
 shotput_fit = best.item(0)*(x**2) + best.item(1)*x + best.item(2)
 ```
 
-``` {.python}
+``` python
 shotput.with_column('Best Quadratic Curve', shotput_fit).scatter(0)
 ```
 

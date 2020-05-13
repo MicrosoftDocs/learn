@@ -6,7 +6,7 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
 
 
-``` {.python}
+``` python
 
 from datascience import *
 path_data = '../../../../data/'
@@ -19,7 +19,7 @@ plots.style.use('fivethirtyeight')
 np.set_printoptions(suppress=True)
 ```
 
-``` {.python}
+``` python
 
 def standard_units(any_numbers):
     "Convert any array of numbers to standard units."
@@ -44,7 +44,7 @@ online](http://ww2.amstat.org/publications/jse/v19n3/decock.pdf). We
 will focus only a subset of the columns. We will try to predict the sale
 price column from the other columns.
 
-``` {.python}
+``` python
 all_sales = Table.read_table(path_data + 'house.csv')
 sales = all_sales.where('Bldg Type', '1Fam').where('Sale Condition', 'Normal').select(
     'SalePrice', '1st Flr SF', '2nd Flr SF',
@@ -74,7 +74,7 @@ distribution that is clearly not normal. A long tail to the right
 contains a few houses that had high prices. The short left tail
 does not contain any houses that sold for less than \$35,000.
 
-``` {.python}
+``` python
 sales.hist('SalePrice', bins=32, unit='$')
 ```
 
@@ -86,13 +86,13 @@ No single attribute is sufficient to predict the sale price. For
 example, the area of first floor, measured in square feet, correlates
 with sale price but only explains some of its variability.
 
-``` {.python}
+``` python
 sales.scatter('1st Flr SF', 'SalePrice')
 ```
 
 ![png](../media/82-multiple-regression-7-0.png)
 
-``` {.python}
+``` python
 correlation(sales, 'SalePrice', '1st Flr SF')
 ```
 
@@ -101,7 +101,7 @@ correlation(sales, 'SalePrice', '1st Flr SF')
 In fact, none of the individual attributes have a correlation with sale
 price that is above 0.7 (except for the sale price itself).
 
-``` {.python}
+``` python
 for label in sales.labels:
     print('Correlation of', label, 'and SalePrice:\t', correlation(sales, label, 'SalePrice'))
 ```
@@ -121,7 +121,7 @@ However, combining attributes can provide higher correlation. In
 particular, if we sum the first floor and second floor areas, the result
 has a higher correlation than any single attribute alone.
 
-``` {.python}
+``` python
 both_floors = sales.column(1) + sales.column(2)
 correlation(sales.with_column('Both Floors', both_floors), 'SalePrice', 'Both Floors')
 ```
@@ -144,7 +144,7 @@ on the first floor of the house that should be used in our prediction.
 Before we begin prediction, we split our data randomly into a training
 and test set of equal size.
 
-``` {.python}
+``` python
 train, test = sales.split(1001)
 print(train.num_rows, 'training and', test.num_rows, 'test instances.')
 ```
@@ -156,7 +156,7 @@ array that has one slope value for each attribute in an example.
 Predicting the sale price involves multiplying each attribute
 by the slope and summing the result.
 
-``` {.python}
+``` python
 def predict(slopes, row):
     return sum(slopes * np.array(row))
 
@@ -178,7 +178,7 @@ actual sale price to assess whether the slopes provide accurate
 predictions. Since the `example_slopes` above were chosen at random, we
 should not expect them to provide accurate predictions at all.
 
-``` {.python}
+``` python
 print('Actual sale price:', test.column('SalePrice').item(0))
 print('Predicted sale price using random slopes:', predict(example_slopes, example_row))
 ```
@@ -193,7 +193,7 @@ squares objective. We perform the prediction for each row in the
 training set, and then compute the root mean squared error (RMSE) of the
 predictions from the actual prices.
 
-``` {.python}
+``` python
 train_prices = train.column(0)
 train_attributes = train.drop(0)
 
@@ -222,7 +222,7 @@ array. Finally, to speed up optimization, we indicate that `rmse_train`
 is a smooth function using the `smooth=True` attribute. Computation of
 the best slopes may take several minutes.
 
-``` {.python}
+``` python
 best_slopes = minimize(rmse_train, start=example_slopes, smooth=True, array=True)
 print('The best slopes for the training set:')
 Table(train_attributes.labels).with_row(list(best_slopes)).show()
@@ -252,7 +252,7 @@ the training set, on average. We find a similar error when predicting
 prices on the test set, which indicates that our prediction method will
 generalize to other samples from the same population.
 
-``` {.python}
+``` python
 test_prices = test.column(0)
 test_attributes = test.drop(0)
 
@@ -270,7 +270,7 @@ and actual values would be a straight line with slope 1. We see that
 most dots fall near that line, but there is some error in the
 predictions.
 
-``` {.python}
+``` python
 def fit(row):
     return sum(best_slopes * np.array(row))
 
@@ -286,7 +286,7 @@ the residual plot below that we have systematically underestimated the
 value of expensive houses, shown by the many positive residual values on
 the right side of the graph.
 
-``` {.python}
+``` python
 test.with_column('Residual', test_prices-test.drop(0).apply(fit)).scatter(0, 'Residual')
 plots.plot([0, 7e5], [0, 0]);
 ```
@@ -307,7 +307,7 @@ similar to our classifier. To speed up computation, we will only use the
 attributes that had the highest correlation with the sale price in our
 original analysis.
 
-``` {.python}
+``` python
 train_nn = train.select(0, 1, 2, 3, 4, 8)
 test_nn = test.select(0, 1, 2, 3, 4, 8)
 train_nn.show(3)
@@ -326,7 +326,7 @@ classifier. In this case, we will exclude the `'SalePrice'` rather than
 the `'Class'` column from the distance computation. The five nearest
 neighbors of the first test row are shown below.
 
-``` {.python}
+``` python
 def distance(pt1, pt2):
     """The distance between two points, represented as arrays."""
     return np.sqrt(sum((pt1 - pt2) ** 2))
@@ -362,7 +362,7 @@ closest(train_nn, example_nn_row, 5, 'SalePrice')
 One simple method for predicting the price is to average the prices of
 the nearest neighbors.
 
-``` {.python}
+``` python
 def predict_nn(example):
     """Return the majority class among the k nearest neighbors."""
     return np.average(closest(train_nn, example, 5, 'SalePrice').column('SalePrice'))
@@ -375,7 +375,7 @@ predict_nn(example_nn_row)
 Finally, we can inspect whether our prediction is close to the true sale
 price for our one test example. Looks reasonable!
 
-``` {.python}
+``` python
 print('Actual sale price:', test_nn.column('SalePrice').item(0))
 print('Predicted sale price using nearest neighbors:', predict_nn(example_nn_row))
 ```
@@ -390,7 +390,7 @@ apply `predict_nn` to each test example, then compute the root mean
 squared error of the predictions. Computation of the predictions may
 take several minutes.
 
-``` {.python}
+``` python
 nn_test_predictions = test_nn.drop('SalePrice').apply(predict_nn)
 rmse_nn = np.mean((test_prices - nn_test_predictions) ** 2) ** 0.5
 
@@ -414,7 +414,7 @@ not appear to be as systematic. However, fewer residuals are very close
 to zero, indicating that fewer prices were predicted with high
 accuracy.
 
-``` {.python}
+``` python
 test.with_column('Residual', test_prices-nn_test_predictions).scatter(0, 'Residual')
 plots.plot([0, 7e5], [0, 0]);
 ```
