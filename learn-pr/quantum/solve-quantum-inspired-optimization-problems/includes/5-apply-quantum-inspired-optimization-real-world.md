@@ -4,7 +4,7 @@ This short animation shows one possible way to optimize the distribution:
 
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Quantum-Optimization-Container-Demo/player?format=ny]
 
-Those two sets correspond to whether the container is loaded onto ship *a* or ship *b*. $\Delta$ is the weight difference between the two ships. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
+Those two sets correspond to whether the container is loaded onto ship *a* or ship *b*. ${\Delta}$ is the weight difference between the two ships. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
 
 In this part, we'll use quantum-inspired optimization to solve the problem.
 
@@ -54,13 +54,13 @@ Now that you've learned how a real problem can be cast in Ising form, we have on
 
 In the video, you can see the containers of different weights. Let's take three of them and show how we would plug these values into our equation. Of course, in the video we use all the container values, and they are much larger weights.
 
-$$H=(5x_0+10x_1+3x_2)^2$$
+$${H=(5x_0+10x_1+3x_2)^2}$$
 
 Here you can see we have plugged in weights 5, 10, and 3, corresponding to container 0, container 1 and container 2.
 
 If we expand this equation, we have:
 
-$$H=50x_0x_1+15x_0x_2+50x_1x_0+30x_1x_2+15x_2x_0+30x_2x_1+134$$
+$${H=50x_0x_1+15x_0x_2+50x_1x_0+30x_1x_2+15x_2x_0+30x_2x_1+134}$$
 
 This now gives us the terms. These are the weights and the variables that we apply our solver to in order to minimize the cost function. In this case, we don't care about the actual value of *H*; it only has to be as small as possible.
 
