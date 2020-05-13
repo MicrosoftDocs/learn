@@ -68,7 +68,7 @@ For example, a chemical manufacturer could sell "fertilizer-as-a-service"—whic
 
 :::row:::
 :::column span="2":::
-Using this framework, you can then map AI scenarios into quadrants. The "tactical" spectrum represents initiatives that are confined to a single team or use cases. The "strategic" side represents larger business initiatives that might impact the entire organization.
+Using this framework, you can then map AI scenarios into quadrants. The "tactical" spectrum represents initiatives that are confined to a single team or use case. The "strategic" side represents larger business initiatives that might impact the entire organization.
 
 To use a retail example, you might place location-based targeted advertising in the upper left quadrant. It's an initiative that digitizes and optimizes an existing business model without requiring systemic changes.
 

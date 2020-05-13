@@ -74,6 +74,4 @@ While the Chief Digital Officer is charged with creating and implementing the ov
 * **Set up agile cross-functional delivery teams and projects:** Cross-functional delivery teams are crucial to running successful AI projects. People with intimate knowledge of and control over business goals and processes should be a central part of planning and maintaining AI solutions. Data scientists working in isolation might create models that lack the context, purpose, or value that would make them effective.
 * **Scale MLOps across the company:** Managing the entire machine learning (ML) lifecycle at scale is complicated. Organizations need an approach that brings the agility of DevOps to the ML lifecycle. We call this approach MLOps: the practice of collaboration between data scientists, ML engineers, app developers, and other IT teams to manage the end-to-end ML lifecycle. Learn more about MLOps in the previous units of this module.
 
-Learn more about how [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting) can help your organization foster innovation, growth, and a culture of data-driven decisions. Contact your Microsoft Services account representative for more information.
-
 Now that you've seen how organizations can become AI-ready, let's wrap up everything you've learned with a Knowledge check.

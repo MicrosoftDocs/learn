@@ -13,6 +13,7 @@ Now that you have reviewed this module, you should be able to:
 * Download PDF of Apply best practices for fueling innovation in your organization.
 * Download PDF of Evaluate and prioritize AI investments.
 * Download PDF of Establish AI-related roles and responsibilities.
+* Learn more about how [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting) can help your organization foster innovation, growth, and a culture of data-driven decisions. Contact your Microsoft Services account representative for more information.
 
 ## References
 
