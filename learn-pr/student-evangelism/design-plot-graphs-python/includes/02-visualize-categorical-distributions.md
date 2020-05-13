@@ -123,10 +123,10 @@ necessary.
 The table `top` consists of U.S.A.'s top grossing movies of all time.
 The first column contains the title of the movie; *Star Wars: The Force
 Awakens* has the top rank, with a box office gross amount of more than
-$900 million in the United States. The second column contains the
+900 million dollars in the United States. The second column contains the
 name of the studio that produced the movie. The third contains the
-domestic box office gross in USD, and the fourth contains the gross
-amount (USD) that would have been earned from ticket sales at 2016 prices. The
+domestic box office gross in dollars, and the fourth contains the gross
+amount that would have been earned from ticket sales at 2016 prices. The
 fifth contains the release year of the movie.
 
 There are 200 movies on the list. Here are the top ten according to
@@ -207,7 +207,7 @@ Warner Brothers and Buena Vista are the most common studios among the
 top 200 movies. Warner Brothers produces the Harry Potter movies and
 Buena Vista produces Star Wars.
 
-Because total gross receipts are being measured in unadjusted USD,
+Because total gross receipts are being measured in unadjusted dollars,
 it is not very surprising that the top movies are more frequently from
 recent years than from bygone decades. In absolute terms, movie tickets
 cost more now than they used to, and thus gross receipts are higher.
