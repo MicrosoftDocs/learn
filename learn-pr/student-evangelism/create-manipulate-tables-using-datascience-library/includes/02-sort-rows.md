@@ -1,10 +1,3 @@
-``` python
-from datascience import *
-import numpy as np
-path_data = '../../../../data/'
-np.set_printoptions(threshold=50)
-```
-
 "The NBA is the highest paying professional sports league in the world,"
 [reported
 CNN](http://edition.cnn.com/2015/12/04/sport/gallery/highest-paid-nba-players/)
@@ -13,12 +6,21 @@ National Basketball Association players in 2015-2016.
 
 Each row represents one player. The columns are:
 
+``` python
+from datascience import *
+import numpy as np
+path_data = '../../../../data/'
+np.set_printoptions(threshold=50)
+```
+
+``` output
 | | |
 |-|-|
 |**Player**| Player's name|
 |**Position**|Player's position on team|
 |**Team**|Team name|
 |**'15-'16 Salary**|Player's salary in 2015-2016, in millions of dollars|
+```
 
 The code for the positions is PG (Point Guard), SG (Shooting Guard), PF
 (Power Forward), SF (Small Forward), and C (Center). But what follows
@@ -33,6 +35,7 @@ nba_salaries = Table.read_table(path_data + 'nba_salaries.csv')
 nba_salaries
 ```
 
+``` output
 |Player|Position|Team|'15-'16 Salary|
 |--- |--- |--- |--- |
 |Paul Millsap|PF|Atlanta Hawks|18.6717|
@@ -47,6 +50,7 @@ nba_salaries
 |Tim Hardaway Jr.|SG|Atlanta Hawks|1.30452|
 
 ... (407 rows omitted)
+```
 
 The table contains 417 rows, one for each player. Only 10 of the rows
 are displayed. The `show` method allows us to specify the number of
@@ -57,6 +61,7 @@ table.
 nba_salaries.show(3)
 ```
 
+``` output
 |Player|Position|Team|'15-'16 Salary|
 |--- |--- |--- |--- |
 |Paul Millsap|PF|Atlanta Hawks|18.6717|
@@ -64,6 +69,7 @@ nba_salaries.show(3)
 |Tiago Splitter|C|Atlanta Hawks|9.75625|
 
 ... (414 rows omitted)
+```
 
 Glance through about 20 rows or so, and you will see that the rows are
 in alphabetical order by team name. It's also possible to list the same
@@ -74,6 +80,7 @@ argument to `sort` is a column label or index.
 nba_salaries.sort('Player').show(5)
 ```
 
+``` output
 |Player|Position|Team|'15-'16 Salary|
 |--- |--- |--- |--- |
 |Aaron Brooks|PG|Chicago Bulls|2.25|
@@ -83,6 +90,7 @@ nba_salaries.sort('Player').show(5)
 |Al Horford|C|Atlanta Hawks|12|
 
 ... (412 rows omitted)
+```
 
 To examine the players' salaries, it would be much more helpful if the
 data were ordered by salary.
@@ -99,6 +107,7 @@ nba = nba_salaries.relabeled("'15-'16 Salary", 'Salary')
 nba.sort('Salary')
 ```
 
+``` output
 |Player|Position|Team|Salary|
 |--- |--- |--- |--- |
 |Thanasis Antetokounmpo|SF|New York Knicks|0.030888|
@@ -113,6 +122,7 @@ nba.sort('Salary')
 |Jeff Ayres|PF|Los Angeles Clippers|0.111444|
 
 ... (407 rows omitted)
+```
 
 These figures are somewhat difficult to compare as some of these players
 changed teams during the season and received salaries from more than one
@@ -131,6 +141,7 @@ use `sort` with the option `descending=True`.
 nba.sort('Salary', descending=True)
 ```
 
+``` output
 |Player|Position|Team|Salary|
 |--- |--- |--- |--- |
 |Kobe Bryant|SF|Los Angeles Lakers|25|
@@ -145,6 +156,7 @@ nba.sort('Salary', descending=True)
 |Dwyane Wade|SG|Miami Heat|20|
 
 ... (407 rows omitted)
+```
 
 Kobe Bryant, in his final season with the Lakers, was the highest paid
 at a salary of $25 million. Notice that the MVP Stephen Curry doesn't
@@ -186,6 +198,10 @@ help(nba.sort)
     ...    "Shape", make_array("Round", "Rectangular", "Rectangular", "Round","Rectangular", "Round"),
     ...    "Amount", make_array(4, 6, 12, 7, 9, 2),
     ...    "Price", make_array(1.30, 1.30, 2.00, 1.75, 1.40, 1.00))
+```
+
+``` output
+
     >>> marbles
     Color | Shape       | Amount | Price
     Red   | Round       | 4      | 1.3

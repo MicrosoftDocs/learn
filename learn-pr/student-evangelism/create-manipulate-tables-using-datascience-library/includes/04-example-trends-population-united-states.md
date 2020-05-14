@@ -5,14 +5,6 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
-
-``` python
-from datascience import *
-import numpy as np
-path_data = '../../../../data/'
-np.set_printoptions(threshold=50)
-```
-
 ## Example: population trends
 
 We are now ready to work with large tables of data. The file below
@@ -31,6 +23,7 @@ full_census_table = Table.read_table(data)
 full_census_table
 ```
 
+``` output
 |SEX|AGE|CENSUS2010POP|ESTIMATESBASE2010|POPESTIMATE2010|POPESTIMATE2011|POPESTIMATE2012|POPESTIMATE2013|POPESTIMATE2014|POPESTIMATE2015|
 |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
 |0|0|3944153|3944160|3951330|3963087|3926540|3931141|3949775|3978038|
@@ -42,9 +35,10 @@ full_census_table
 |0|6|4066381|4066412|4073013|4074993|4097605|4142916|4135930|4019207|
 |0|7|4030579|4030594|4043046|4083225|4084913|4108349|4155326|4148360|
 |0|8|4046486|4046497|4025604|4053203|4093177|4095711|4120903|4167887|
-|0|9|4148353|4148369|4125415|4035710|4063152|4104072|4108349|4133564|
+|0|9|4148353|4148369|4125415|4035710|4063152|4104072|4108349|4133564|  
 
 ... (296 rows omitted)
+```
 
 Only the first 10 rows of the table are displayed. Later we will see how
 to display the entire table; however, this is typically not useful with
@@ -68,6 +62,7 @@ partial_census_table = full_census_table.select('SEX', 'AGE', 'POPESTIMATE2010',
 partial_census_table
 ```
 
+``` output
 |SEX|AGE|POPESTIMATE2010|POPESTIMATE2014|
 |--- |--- |--- |--- |
 |0|0|3951330|3949775|
@@ -79,9 +74,10 @@ partial_census_table
 |0|6|4073013|4135930|
 |0|7|4043046|4155326|
 |0|8|4025604|4120903|
-|0|9|4125415|4108349|
+|0|9|4125415|4108349|  
 
 ... (296 rows omitted)
+```
 
 We can also simplify the labels of the selected columns.
 
@@ -90,6 +86,7 @@ us_pop = partial_census_table.relabeled('POPESTIMATE2010', '2010').relabeled('PO
 us_pop
 ```
 
+``` output
 |SEX|AGE|2010|2014|
 |--- |--- |--- |--- |
 |0|0|3951330|3949775|
@@ -101,9 +98,10 @@ us_pop
 |0|6|4073013|4135930|
 |0|7|4043046|4155326|
 |0|8|4025604|4120903|
-|0|9|4125415|4108349|
+|0|9|4125415|4108349|  
 
 ... (296 rows omitted)
+```
 
 We now have a table that is easy to work with. Each column of the table
 is an array of the same length, and so columns can be combined using
@@ -113,7 +111,9 @@ arithmetic. Here is the change in population between 2010 and 2014.
 us_pop.column('2014') - us_pop.column('2010')
 ```
 
+``` output 
 array(\[ -1555, -8112, -131198, ..., 6443, 12950, 4693244\])
+```
 
 Let us augment `us_pop` with a column that contains these changes, both
 in absolute terms and as percents relative to the value in 2010.
@@ -127,6 +127,7 @@ census = us_pop.with_columns(
 census.set_format('Percent Change', PercentFormatter)
 ```
 
+``` output
 |SEX|AGE|2010|2014|Change|Percent Change|
 |--- |--- |--- |--- |--- |--- |
 |0|0|3951330|3949775|-1555|-0.04%|
@@ -138,9 +139,10 @@ census.set_format('Percent Change', PercentFormatter)
 |0|6|4073013|4135930|62917|1.54%|
 |0|7|4043046|4155326|112280|2.78%|
 |0|8|4025604|4120903|95299|2.37%|
-|0|9|4125415|4108349|-17066|-0.41%|
+|0|9|4125415|4108349|-17066|-0.41%|  
 
 ... (296 rows omitted)
+```
 
 **Sorting the data.** Let us sort the table in decreasing order of the
 absolute change in population.
@@ -149,6 +151,7 @@ absolute change in population.
 census.sort('Change', descending=True)
 ```
 
+``` output
 |SEX|AGE|2010|2014|Change|Percent Change|
 |--- |--- |--- |--- |--- |--- |
 |0|999|309346863|318907401|9560538|3.09%|
@@ -160,9 +163,10 @@ census.sort('Change', descending=True)
 |0|65|2678525|3382824|704299|26.29%|
 |0|71|1953607|2519705|566098|28.98%|
 |0|34|3822189|4364748|542559|14.19%|
-|0|23|4217228|4702156|484928|11.50%|
+|0|23|4217228|4702156|484928|11.50%|  
 
 ... (296 rows omitted)
+```
 
 Not surprisingly, the top row of the sorted table is the line that
 corresponds to the entire population: both sexes and all age groups.

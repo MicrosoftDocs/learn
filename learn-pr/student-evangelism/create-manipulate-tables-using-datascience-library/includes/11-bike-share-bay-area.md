@@ -5,18 +5,6 @@ If you haven't set up your online Visual Studio Code environment for the Learnin
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
-
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plt
-plt.style.use('fivethirtyeight')
-import math
-from scipy import stats
-import numpy as np
-```
-
 We end this chapter by using all the methods we have learned to examine
 a new and large dataset. We will also introduce `map_table`, a powerful
 visualization tool.
@@ -39,6 +27,7 @@ trips = Table.read_table(path_data + 'trip.csv')
 trips
 ```
 
+``` output
 |Trip ID|Duration|Start Date|Start Station|Start Terminal|End Date|End Station|End Terminal|Bike \#|Subscriber Type|Zip Code|
 |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
 |913460|765|8/31/2015 23:26|Harry Bridges Plaza (Ferry Building)|50|8/31/2015 23:39|San Francisco Caltrain (Townsend at 4th)|70|288|Subscriber|2139|
@@ -50,9 +39,10 @@ trips
 |913451|896|8/31/2015 23:07|Embarcadero at Folsom|51|8/31/2015 23:22|Embarcadero at Sansome|60|363|Customer|92562|
 |913450|255|8/31/2015 22:16|Embarcadero at Sansome|60|8/31/2015 22:20|Steuart at Market|74|470|Subscriber|94111|
 |913449|126|8/31/2015 22:12|Beale at Market|56|8/31/2015 22:15|Temporary Transbay Terminal (Howard at Beale)|55|439|Subscriber|94130|
-|913448|932|8/31/2015 21:57|Post at Kearny|47|8/31/2015 22:12|South Van Ness at Market|66|472|Subscriber|94702|
+|913448|932|8/31/2015 21:57|Post at Kearny|47|8/31/2015 22:12|South Van Ness at Market|66|472|Subscriber|94702|  
 
 ... (354142 rows omitted)
+```
 
 We'll focus only on the *free trips*, which are trips that last less
 than 1800 seconds (half an hour). There is a charge for longer trips.
@@ -67,12 +57,9 @@ commute = trips.where('Duration', are.below(1800))
 commute.hist('Duration', unit='Second')
 ```
 
-/home/choldgraf/anaconda/envs/dev/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
+``` output
 ![png](../media/36-bike-share-bay-area-4-1.png)
+```
 
 We can get more detail by specifying a larger number of bins. But the
 overall shape doesn't change much.
@@ -81,12 +68,9 @@ overall shape doesn't change much.
 commute.hist('Duration', bins=60, unit='Second')
 ```
 
-/home/choldgraf/anaconda/envs/dev/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
+``` output
 ![png](../media/36-bike-share-bay-area-6-1.png)
+```
 
 ### Exploring the Data with `group` and `pivot`
 
@@ -97,6 +81,7 @@ starts = commute.group('Start Station').sort('count', descending=True)
 starts
 ```
 
+``` output
 |Start Station|count|
 |--- |--- |
 |San Francisco Caltrain (Townsend at 4th)|25858|
@@ -108,9 +93,10 @@ starts
 |Steuart at Market|13215|
 |Embarcadero at Sansome|12842|
 |Market at 10th|11523|
-|Market at Sansome|11023|
+|Market at Sansome|11023|  
 
 ... (60 rows omitted)
+```
 
 The largest number of trips started at the Caltrain Station on Townsend
 and 4th in San Francisco. People take the train into the city, and then
@@ -123,6 +109,7 @@ Start Station and End Station.
 commute.group(['Start Station', 'End Station'])
 ```
 
+``` output
 |Start Station|End Station|count|
 |--- |--- |--- |
 |2nd at Folsom|2nd at Folsom|54|
@@ -134,9 +121,10 @@ commute.group(['Start Station', 'End Station'])
 |2nd at Folsom|Civic Center BART (7th at Market)|47|
 |2nd at Folsom|Clay at Battery|240|
 |2nd at Folsom|Commercial at Montgomery|128|
-|2nd at Folsom|Davis at Jackson|28|
+|2nd at Folsom|Davis at Jackson|28|  
 
 ... (1619 rows omitted)
+```
 
 Fifty-four trips both started and ended at the station on 2nd at Folsom.
 A much large number (437) were between 2nd at Folsom and 2nd at
@@ -156,6 +144,7 @@ start and end there.
 commute.pivot('Start Station', 'End Station')
 ```
 
+``` output
 |End Station|2nd at Folsom|2nd at South Park|2nd at Townsend|5th at Howard|Adobe on Almaden|Arena Green / SAP Center|Beale at Market|Broadway St at Battery St|California Ave Caltrain Station|Castro Street and El Camino Real|Civic Center BART (7th at Market)|Clay at Battery|Commercial at Montgomery|Cowper at University|Davis at Jackson|Embarcadero at Bryant|Embarcadero at Folsom|Embarcadero at Sansome|Embarcadero at Vallejo|Evelyn Park and Ride|Franklin at Maple|Golden Gate at Polk|Grant Avenue at Columbus Avenue|Harry Bridges Plaza (Ferry Building)|Howard at 2nd|Japantown|MLK Library|Market at 10th|Market at 4th|Market at Sansome|Mechanics Plaza (Market at Battery)|Mezes Park|Mountain View Caltrain Station|Mountain View City Hall|Palo Alto Caltrain Station|Park at Olive|Paseo de San Antonio|Post at Kearny|Powell Street BART|Powell at Post (Union Square)|Redwood City Caltrain Station|Redwood City Medical Center|Redwood City Public Library|Rengstorff Avenue / California Street|Ryland Park|SJSU - San Salvador at 9th|SJSU 4th at San Carlos|San Antonio Caltrain Station|San Antonio Shopping Center|San Francisco Caltrain (Townsend at 4th)|San Francisco Caltrain 2 (330 Townsend)|San Francisco City Hall|San Jose City Hall|San Jose Civic Center|San Jose Diridon Caltrain Station|San Mateo County Center|San Pedro Square|San Salvador at 1st|Santa Clara County Civic Center|Santa Clara at Almaden|South Van Ness at Market|Spear at Folsom|St James Park|Stanford in Redwood City|Steuart at Market|Temporary Transbay Terminal (Howard at Beale)|Townsend at 7th|University and Emerson|Washington at Kearny|Yerba Buena Center of the Arts (3rd @ Howard)|
 |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
 |2nd at Folsom|54|190|554|107|0|0|40|21|0|0|44|78|54|0|9|77|32|41|14|0|0|11|30|416|53|0|0|169|114|302|33|0|0|0|0|0|0|60|121|88|0|0|0|0|0|0|0|0|0|694|445|21|0|0|0|0|0|0|0|0|38|57|0|0|39|237|342|0|17|31|
@@ -167,9 +156,10 @@ commute.pivot('Start Station', 'End Station')
 |Beale at Market|127|79|183|59|0|0|59|661|0|0|201|75|101|0|247|178|38|590|165|0|0|54|435|57|72|0|0|286|236|163|26|0|0|0|0|0|0|49|227|179|0|0|0|0|0|0|0|0|0|640|269|25|0|0|0|0|0|0|0|0|243|128|0|0|16|167|35|0|64|45|
 |Broadway St at Battery St|67|89|279|119|0|0|1022|110|0|0|62|283|226|0|191|198|79|231|35|0|0|5|70|168|49|0|0|32|97|341|214|0|0|0|0|0|0|169|71|218|0|0|0|0|0|0|0|0|0|685|438|7|0|0|0|0|0|0|0|0|18|106|0|0|344|748|50|0|79|47|
 |California Ave Caltrain Station|0|0|0|0|0|0|0|0|38|1|0|0|0|29|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|192|40|0|0|0|0|0|0|0|6|0|0|0|17|10|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|57|0|0|
-|Castro Street and El Camino Real|0|0|0|0|0|0|0|0|0|30|0|0|0|0|0|0|0|0|0|14|0|0|0|0|0|0|0|0|0|0|0|0|931|34|0|0|0|0|0|0|0|0|0|7|0|0|0|4|12|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|
+|Castro Street and El Camino Real|0|0|0|0|0|0|0|0|0|30|0|0|0|0|0|0|0|0|0|14|0|0|0|0|0|0|0|0|0|0|0|0|931|34|0|0|0|0|0|0|0|0|0|7|0|0|0|4|12|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|  
 
 ... (60 rows omitted)
+```
 
 We can also use `pivot` to find the shortest time of the rides between
 Start and End Stations. Here `pivot` has been given `Duration` as the
@@ -180,6 +170,7 @@ on the values in each cell.
 commute.pivot('Start Station', 'End Station', 'Duration', min)
 ```
 
+``` output
 |End Station|2nd at Folsom|2nd at South Park|2nd at Townsend|5th at Howard|Adobe on Almaden|Arena Green / SAP Center|Beale at Market|Broadway St at Battery St|California Ave Caltrain Station|Castro Street and El Camino Real|Civic Center BART (7th at Market)|Clay at Battery|Commercial at Montgomery|Cowper at University|Davis at Jackson|Embarcadero at Bryant|Embarcadero at Folsom|Embarcadero at Sansome|Embarcadero at Vallejo|Evelyn Park and Ride|Franklin at Maple|Golden Gate at Polk|Grant Avenue at Columbus Avenue|Harry Bridges Plaza (Ferry Building)|Howard at 2nd|Japantown|MLK Library|Market at 10th|Market at 4th|Market at Sansome|Mechanics Plaza (Market at Battery)|Mezes Park|Mountain View Caltrain Station|Mountain View City Hall|Palo Alto Caltrain Station|Park at Olive|Paseo de San Antonio|Post at Kearny|Powell Street BART|Powell at Post (Union Square)|Redwood City Caltrain Station|Redwood City Medical Center|Redwood City Public Library|Rengstorff Avenue / California Street|Ryland Park|SJSU - San Salvador at 9th|SJSU 4th at San Carlos|San Antonio Caltrain Station|San Antonio Shopping Center|San Francisco Caltrain (Townsend at 4th)|San Francisco Caltrain 2 (330 Townsend)|San Francisco City Hall|San Jose City Hall|San Jose Civic Center|San Jose Diridon Caltrain Station|San Mateo County Center|San Pedro Square|San Salvador at 1st|Santa Clara County Civic Center|Santa Clara at Almaden|South Van Ness at Market|Spear at Folsom|St James Park|Stanford in Redwood City|Steuart at Market|Temporary Transbay Terminal (Howard at Beale)|Townsend at 7th|University and Emerson|Washington at Kearny|Yerba Buena Center of the Arts (3rd @ Howard)|
 |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
 |2nd at Folsom|61|97|164|268|0|0|271|407|0|0|483|329|306|0|494|239|262|687|599|0|0|639|416|282|80|0|0|506|237|167|250|0|0|0|0|0|0|208|264|290|0|0|0|0|0|0|0|0|0|300|303|584|0|0|0|0|0|0|0|0|590|208|0|0|318|149|448|0|429|165|
@@ -191,9 +182,10 @@ commute.pivot('Start Station', 'End Station', 'Duration', min)
 |Beale at Market|219|343|417|387|0|0|60|155|0|0|343|122|153|0|115|216|170|303|198|0|0|437|235|149|204|0|0|535|203|88|72|0|0|0|0|0|0|191|316|191|0|0|0|0|0|0|0|0|0|499|395|526|0|0|0|0|0|0|0|0|575|173|0|0|87|94|619|0|222|264|
 |Broadway St at Battery St|351|424|499|555|0|0|195|62|0|0|520|90|129|0|70|340|284|128|101|0|0|961|148|168|357|0|0|652|351|218|221|0|0|0|0|0|0|255|376|316|0|0|0|0|0|0|0|0|0|611|599|799|0|0|0|0|0|0|0|0|738|336|0|0|169|291|885|0|134|411|
 |California Ave Caltrain Station|0|0|0|0|0|0|0|0|82|1645|0|0|0|628|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1771|0|484|131|0|0|0|0|0|0|0|1077|0|0|0|870|911|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|531|0|0|
-|Castro Street and El Camino Real|0|0|0|0|0|0|0|0|0|74|0|0|0|0|0|0|0|0|0|499|0|0|0|0|0|0|0|0|0|0|0|0|201|108|0|0|0|0|0|0|0|0|0|654|0|0|0|953|696|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|
+|Castro Street and El Camino Real|0|0|0|0|0|0|0|0|0|74|0|0|0|0|0|0|0|0|0|499|0|0|0|0|0|0|0|0|0|0|0|0|201|108|0|0|0|0|0|0|0|0|0|654|0|0|0|953|696|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|  
 
 ... (60 rows omitted)
+```
 
 Someone had a quick trip (271 seconds, or about 4.5 minutes) from
 2nd at Folsom to Beale at Market, about five blocks away. There are no
@@ -211,6 +203,7 @@ stations = Table.read_table(path_data + 'station.csv')
 stations
 ```
 
+``` output
 |station\_id|name|lat|long|dockcount|landmark|installation|
 |--- |--- |--- |--- |--- |--- |--- |
 |2|San Jose Diridon Caltrain Station|37.3297|-121.902|27|San Jose|8/6/2013|
@@ -222,9 +215,10 @@ stations
 |8|San Salvador at 1st|37.3302|-121.886|15|San Jose|8/5/2013|
 |9|Japantown|37.3487|-121.895|15|San Jose|8/5/2013|
 |10|San Jose City Hall|37.3374|-121.887|15|San Jose|8/6/2013|
-|11|MLK Library|37.3359|-121.886|19|San Jose|8/6/2013|
+|11|MLK Library|37.3359|-121.886|19|San Jose|8/6/2013|  
 
 ... (60 rows omitted)
+```
 
 We can draw a map of where the stations are located, using
 `Marker.map_table`. The function operates on a table, whose columns are
@@ -238,7 +232,9 @@ point.
 Marker.map_table(stations.select('lat', 'long', 'name'))
 ```
 
+``` output
 ![Bay Area Map](../media/folium1.png)
+```
 
 The map is created using
 [OpenStreetMap](http://www.openstreetmap.org/#map=5/51.500/-0.100),
@@ -255,8 +251,9 @@ sf = stations.where('landmark', are.equal_to('San Francisco'))
 sf_map_data = sf.select('lat', 'long', 'name')
 Circle.map_table(sf_map_data, color='green', radius=200)
 ```
-
+``` output
 ![Bay Area Map](../media/folium2.png)
+```
 
 ### More Informative Maps: An Application of `join`
 
@@ -270,26 +267,30 @@ cities = stations.group('landmark').relabeled('landmark', 'city')
 cities
 ```
 
+``` output
 |city|count|
 |--- |--- |
 |Mountain View|7|
 |Palo Alto|5|
 |Redwood City|7|
 |San Francisco|35|
-|San Jose|16|
+|San Jose|16|  
+```
 
 ``` python
 colors = cities.with_column('color', make_array('blue', 'red', 'green', 'orange', 'purple'))
 colors
 ```
 
+``` output
 |city|count|color|
 |--- |--- |--- |
 |Mountain View|7|blue|
 |Palo Alto|5|red|
 |Redwood City|7|green|
 |San Francisco|35|orange|
-|San Jose|16|purple|
+|San Jose|16|purple|  
+```
 
 Now we can join `stations` and `colors` by `landmark`, and then select
 the columns we need to draw a map.
@@ -300,7 +301,9 @@ colored = joined.select('lat', 'long', 'name', 'color')
 Marker.map_table(colored)
 ```
 
+``` output
 ![Bay Area Map](../media/folium3.png)
+```
 
 Now the markers have five different colors for the five different
 cities.
@@ -313,6 +316,7 @@ starts = commute.group('Start Station').sort('count', descending=True)
 starts
 ```
 
+``` output
 |Start Station|count|
 |--- |--- |
 |San Francisco Caltrain (Townsend at 4th)|25858|
@@ -324,9 +328,10 @@ starts
 |Stuart at Market|13215|
 |Embarcadero at Sansome|12842|
 |Market at 10th|11523|
-|Market at Sansome|11023|
+|Market at Sansome|11023|  
 
 ... (60 rows omitted)
+```
 
 We can include the geographical data needed to map these stations, by
 first joining `starts` with `stations`:
@@ -336,6 +341,7 @@ station_starts = stations.join('name', starts, 'Start Station')
 station_starts
 ```
 
+``` output
 |name|station\_id|lat|long|dockcount|landmark|installation|count|
 |--- |--- |--- |--- |--- |--- |--- |--- |
 |2nd at Folsom|62|37.7853|-122.396|19|San Francisco|8/22/2013|7841|
@@ -347,9 +353,10 @@ station_starts
 |Beale at Market|56|37.7923|-122.397|19|San Francisco|8/20/2013|8135|
 |Broadway St at Battery St|82|37.7985|-122.401|15|San Francisco|1/22/2014|7460|
 |California Ave Caltrain Station|36|37.4291|-122.143|15|Palo Alto|8/14/2013|300|
-|Castro Street and El Camino Real|32|37.386|-122.084|11|Mountain View|12/31/2013|1137|
+|Castro Street and El Camino Real|32|37.386|-122.084|11|Mountain View|12/31/2013|1137|   
 
 ... (58 rows omitted)
+```
 
 Now we extract just the data needed for drawing our map, adding a color
 and an area to each station. The area is 1000 times the count of the
@@ -366,6 +373,7 @@ starts_map_data.show(3)
 Circle.map_table(starts_map_data)
 ```
 
+``` output
 |lat|long|name|color|area|
 |--- |--- |--- |--- |--- |
 |37.7853|-122.396|2nd at Folsom|blue|7841000|
@@ -375,5 +383,6 @@ Circle.map_table(starts_map_data)
 ... (65 rows omitted)
 
 ![Bay Area Map](../media/folium4.png)
+```
 
 That huge blob in San Francisco shows that the eastern section of the city is the unrivaled capital of bike rentals in the Bay Area.

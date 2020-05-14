@@ -1,15 +1,3 @@
-``` python
-
-from datascience import *
-path_data = '../../../../data/'
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 Often, data about the same individuals is maintained in more than one
 table. For example, one university office might have data about each
 student's time to completion of degree, while another has data about the
@@ -35,6 +23,7 @@ cones = Table().with_columns(
 cones
 ```
 
+``` output
 |Flavor|Price|
 |--- |--- |
 |strawberry|3.55|
@@ -42,6 +31,7 @@ cones
 |chocolate|6.55|
 |strawberry|5.25|
 |chocolate|5.75|
+```
 
 ``` python
 ratings = Table().with_columns(
@@ -51,11 +41,13 @@ ratings = Table().with_columns(
 ratings
 ```
 
+``` output
 |Kind|Stars|
 |--- |--- |
 |strawberry|2.5|
 |chocolate|3.5|
 |vanilla|4|
+```
 
 Each of the tables has a column that contains ice cream flavors: `cones`
 has the column `Flavor`, and `ratings` has the column `Kind`. The
@@ -72,6 +64,7 @@ rated = cones.join('Flavor', ratings, 'Kind')
 rated
 ```
 
+``` output
 |Flavor|Price|Stars|
 |--- |--- |--- |
 |chocolate|6.55|3.5|
@@ -79,6 +72,7 @@ rated
 |strawberry|3.55|2.5|
 |strawberry|5.25|2.5|
 |vanilla|4.75|4|
+```
 
 Each cone now has not only its price but also the rating of its flavor.
 
@@ -96,6 +90,7 @@ they mean that you are paying less for each rating star.
 rated.with_column('$/Star', rated.column('Price') / rated.column('Stars')).sort(3)
 ```
 
+``` output
 |Flavor|Price|Stars|\$/Star|
 |--- |--- |--- |--- |
 |vanilla|4.75|4|1.1875|
@@ -103,6 +98,7 @@ rated.with_column('$/Star', rated.column('Price') / rated.column('Stars')).sort(
 |chocolate|5.75|3.5|1.64286|
 |chocolate|6.55|3.5|1.87143|
 |strawberry|5.25|2.5|2.1|
+```
 
 Though strawberry has the lowest rating among the three flavors, the
 less expensive strawberry cone does well on this measure because it
@@ -118,6 +114,7 @@ any fundamental difference.
 ratings.join('Kind', cones, 'Flavor')
 ```
 
+``` output
 |Kind|Stars|Price|
 |--- |--- |--- |
 |chocolate|3.5|6.55|
@@ -125,6 +122,7 @@ ratings.join('Kind', cones, 'Flavor')
 |strawberry|2.5|3.55|
 |strawberry|2.5|5.25|
 |vanilla|4|4.75|
+```
 
 Also note that the join will only contain information about items that
 appear in both tables. Let's see an example. Suppose there is a table of
@@ -139,22 +137,27 @@ reviews = Table().with_columns(
 reviews
 ```
 
+``` output
 |Flavor|Stars|
 |--- |--- |
 |vanilla|5|
 |chocolate|3|
 |vanilla|5|
-|chocolate|4|
+|chocolate|4|  
+
+```
 
 ``` python
 average_review = reviews.group('Flavor', np.average)
 average_review
 ```
 
+``` output 
 |Flavor|Stars average|
 |--- |--- |
 |chocolate|3.5|
-|vanilla|5|
+|vanilla|5|  
+```
 
 We can join `cones` and `average_review` by providing the labels of the
 columns by which to join.
@@ -163,11 +166,13 @@ columns by which to join.
 cones.join('Flavor', average_review, 'Flavor')
 ```
 
+``` output
 |Flavor|Price|Stars average|
 |--- |--- |--- |
 |chocolate|6.55|3.5|
 |chocolate|5.75|3.5|
 |vanilla|4.75|5|
+```
 
 Notice how the strawberry cones have disappeared. None of the reviews
 are for strawberry cones, so there is nothing to which the `strawberry`

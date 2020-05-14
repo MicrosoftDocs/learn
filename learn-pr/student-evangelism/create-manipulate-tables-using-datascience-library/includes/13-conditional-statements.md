@@ -1,15 +1,3 @@
-``` python
-
-from datascience import *
-path_data = '../../../../data/'
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 In many situations, actions and results depend on a specific set of
 conditions being satisfied. For example, individuals in randomized
 controlled trials receive the treatment if they have been assigned to
@@ -41,7 +29,9 @@ def sign(x):
 sign(3)
 ```
 
+``` output
     'Positive'
+```
 
 This function returns the correct sign if the input is a positive
 number. But if the input is not a positive number, then the *if
@@ -72,7 +62,9 @@ Now `sign` returns the correct answer when the input is -3:
 sign(-3)
 ```
 
+```  output
     'Negative'
+```
 
 What if the input is 0? To deal with this case, we can add another
 `elif` clause:
@@ -94,7 +86,9 @@ def sign(x):
 sign(0)
 ```
 
+```
     'Neither positive nor negative'
+```
 
 Equivalently, we can replace the final `elif` clause by an `else`
 clause, whose body will be executed only if all the previous comparisons
@@ -117,7 +111,9 @@ def sign(x):
 sign(0)
 ```
 
+``` output
     'Neither positive nor negative'
+```
 
 ### The general form
 
@@ -174,7 +170,9 @@ number of spots.
 one_bet(1), one_bet(2), one_bet(3), one_bet (4), one_bet(5), one_bet(6)
 ```
 
+``` output
     (-1, -1, 0, 0, 1, 1)
+```
 
 As a review of how conditional statements work, let's see what `one_bet`
 does when the input is 3.
@@ -205,7 +203,9 @@ output changes.
 one_bet(np.random.choice(np.arange(1, 7)))
 ```
 
+``` output
     -1
+```
 
 At this point, it is natural to want to collect the results of all the
 bets so that we can analyze them. In the next section, we develop a way

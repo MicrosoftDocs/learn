@@ -1,16 +1,3 @@
-``` python
-
-from datascience import *
-path_data = '../../../data/'
-import numpy as np
-
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-```
-
 In the previous chapters we developed skills needed to make insightful
 descriptions of data. Data scientists also have to be able to understand
 randomness. For example, they have to be able to assign individuals to
@@ -34,7 +21,9 @@ two_groups = make_array('treatment', 'control')
 np.random.choice(two_groups)
 ```
 
+``` output
     'treatment'
+```
 
 The big difference between the code above and all the other code we have
 run thus far is that the code above doesn't always return the same
@@ -46,9 +35,11 @@ providing a second argument, the number of times to repeat the process.
 np.random.choice(two_groups, 10)
 ```
 
+``` output
     array(['control', 'control', 'treatment', 'treatment', 'control',
            'treatment', 'treatment', 'control', 'control', 'treatment'],
           dtype='<U9')
+```
 
 A fundamental question about random events is whether or not they occur.
 For example:
@@ -77,12 +68,15 @@ compare values. For example, `3` is larger than `1 + 1`.
 3 > 1 + 1
 ```
 
+``` output
     True
+```
 
 The value `True` indicates that the comparison is valid; Python has
 confirmed this simple fact about the relationship between `3` and `1+1`.
 The full set of common comparison operators are listed below.
 
+``` output
 |Comparison|Operator|True example|False example|
 |--|--|--|--|
 |Less than|\<|2 \< 3|2 \< 2|
@@ -91,6 +85,7 @@ The full set of common comparison operators are listed below.
 |Greater or equal|\>=|3 \>= 3|2 \>= 3|
 |Equal|==|3 == 3|3 == 2|
 |Not equal|!=|3 != 2|2 != 2|
+```
 
 Notice the two equal signs `==` in the comparison to determine equality.
 This is necessary because Python already uses `=` to mean assignment to
@@ -105,16 +100,20 @@ which evaluates to `True`.
 5 = 10/2
 ```
 
+``` output
       File "<ipython-input-5-e8c755f5e450>", line 1
         5 = 10/2
                 ^
     SyntaxError: can't assign to literal
+```
 
 ``` python
 5 == 10/2
 ```
 
+``` output
     True
+```
 
 An expression can contain multiple comparisons, and they all must hold
 in order for the whole expression to be `True`. For example, we can
@@ -125,7 +124,9 @@ expression.
 1 < 1 + 1 < 3
 ```
 
+``` output
     True
+```
 
 The average of two numbers is always between the smaller number and the
 larger number. We express this relationship for the numbers `x` and `y`
@@ -138,7 +139,9 @@ y = 5
 min(x, y) <= (x+y)/2 <= max(x, y)
 ```
 
+``` output
     True
+```
 
 ### Comparing strings
 
@@ -149,7 +152,9 @@ string is less than a longer string that begins with the shorter string.
 'Dog' > 'Catastrophe' > 'Cat'
 ```
 
+``` output
     True
+```
 
 Let's return to random selection. Recall the array `two_groups` which
 consists of just two elements, `treatment` and `control`. To see whether
@@ -160,7 +165,9 @@ a comparison:
 np.random.choice(two_groups) == 'treatment'
 ```
 
+``` output
     False
+```
 
 As before, the random choice will not always be the same, so the result
 of the comparison won't always be the same either. It will depend on
@@ -181,7 +188,9 @@ tosses = make_array('Tails', 'Heads', 'Tails', 'Heads', 'Heads')
 tosses == 'Heads'
 ```
 
+``` output
     array([False,  True, False,  True,  True])
+```
 
 The `numpy` method `count_nonzero` evaluates to the number of non-zero
 (that is, `True`) elements of the array.
@@ -190,4 +199,6 @@ The `numpy` method `count_nonzero` evaluates to the number of non-zero
 np.count_nonzero(tosses == 'Heads')
 ```
 
+``` output
     3
+```

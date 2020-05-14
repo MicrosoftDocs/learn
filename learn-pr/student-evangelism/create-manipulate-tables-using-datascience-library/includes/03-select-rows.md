@@ -1,15 +1,3 @@
-``` python
-from datascience import *
-import numpy as np
-path_data = '../../../../data/'
-np.set_printoptions(threshold=50)
-```
-
-``` python
-nba_salaries = Table.read_table(path_data + 'nba_salaries.csv')
-nba = nba_salaries.relabeled("'15-'16 Salary", 'Salary')
-```
-
 Often, we would like to extract just those rows that correspond to
 entries with a particular feature. For example, we might want only the
 rows corresponding to the Warriors, or to players who earned more than
@@ -41,9 +29,9 @@ nba
 | Kent Bazemore    | SF       | Atlanta Hawks | 2       |
 | Dennis Schroder  | PG       | Atlanta Hawks | 1.7634  |
 | Tim Hardaway Jr. | SG       | Atlanta Hawks | 1.30452 |  
-```
 
 ... (407 rows omitted)
+```
 
 ``` python
 nba.take(0)
