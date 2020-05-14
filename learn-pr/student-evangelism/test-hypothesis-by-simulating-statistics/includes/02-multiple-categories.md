@@ -3,23 +3,7 @@
 
 If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
-
-
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
-``` python
-def proportions_from_distribution(table, label, sample_size):
-    proportions = np.random.multinomial(sample_size, table.column(label))/sample_size
-    return table.with_column('Random Sample', proportions)
-```
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 We have developed a way of assessing models about chance processes that
 generate data in two categories. The method extends to models involving
@@ -91,13 +75,16 @@ jury = Table().with_columns(
 jury
 ```
 
+``` output
 | Ethnicity | Eligible | Panels |
 |-----------|----------|--------|
 | Asian     | 0.15     | 0.26   |
 | Black     | 0.18     | 0.08   |
 | Latino    | 0.12     | 0.08   |
 | White     | 0.54     | 0.54   |
-| Other     | 0.01     | 0.04   |
+| Other     | 0.01     | 0.04   |  
+
+```
 
 Some ethnicities are overrepresented and some are underrepresented on
 the jury panels in the study. A bar chart is helpful for visualizing the
@@ -140,13 +127,16 @@ panels_and_sample = jury.with_column('Random Sample', sample_distribution)
 panels_and_sample
 ```
 
+``` output
 | Ethnicity | Eligible | Panels | Random Sample |
 |-----------|----------|--------|---------------|
 | Asian     | 0.15     | 0.26   | 0.13214       |
 | Black     | 0.18     | 0.08   | 0.168617      |
 | Latino    | 0.12     | 0.08   | 0.115623      |
 | White     | 0.54     | 0.54   | 0.573985      |
-| Other     | 0.01     | 0.04   | 0.00963524    |
+| Other     | 0.01     | 0.04   | 0.00963524    |  
+
+```
 
 The distribution of the random sample is quite close to the distribution
 of the eligible population, unlike the distribution of the panels.
@@ -199,6 +189,7 @@ jury_with_diffs = jury.with_column(
 jury_with_diffs
 ```
 
+``` output
 | Ethnicity | Eligible | Panels | Difference |
 |-----------|----------|--------|------------|
 | Asian     | 0.15     | 0.26   | 0.11       |
@@ -206,6 +197,8 @@ jury_with_diffs
 | Latino    | 0.12     | 0.08   | -0.04      |
 | White     | 0.54     | 0.54   | 0          |
 | Other     | 0.01     | 0.04   | 0.03       |
+
+```
 
 Take a look at the column `Difference` and notice that the sum of its
 entries is 0: the positive entries add up to 0.14, exactly canceling the
@@ -230,19 +223,24 @@ jury_with_diffs = jury_with_diffs.with_column(
 jury_with_diffs
 ```
 
+``` output
 | Ethnicity | Eligible | Panels | Random Sample |
 |-----------|----------|--------|---------------|
 | Asian     | 0.15     | 0.26   | 0.13214       |
 | Black     | 0.18     | 0.08   | 0.168617      |
 | Latino    | 0.12     | 0.08   | 0.115623      |
 | White     | 0.54     | 0.54   | 0.573985      |
-| Other     | 0.01     | 0.04   | 0.00963524    |
+| Other     | 0.01     | 0.04   | 0.00963524    |  
+
+```
 
 ``` python
 jury_with_diffs.column('Absolute Difference').sum() / 2
 ```
 
+``` output
 0.14
+```
 
 This quantity 0.14 is the *total variation distance* (TVD) between the
 distribution of ethnicities in the eligible juror population and the
@@ -283,7 +281,9 @@ gold (panels) distributions above.
 total_variation_distance(jury.column('Panels'), jury.column('Eligible'))
 ```
 
+``` output
 0.14
+```
 
 This agrees with the value that we computed directly without using the
 function.
@@ -299,7 +299,9 @@ sample_distribution = sample_proportions(1453, eligible_population)
 total_variation_distance(sample_distribution, eligible_population)
 ```
 
+``` output
 0.0202202339986235
+```
 
 Notice that the distance is quite a bit smaller than 0.14, the distance
 between the distribution of the panels and the eligible jurors.

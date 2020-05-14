@@ -1,11 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 In the process by which we decide which of two hypotheses is better
 supported by our data, the final step involves a judgment about the
 consistency of the data and the null hypothesis. While this step results
@@ -76,7 +68,7 @@ results.hist(bins = np.arange(0, 101, 5))
 plots.plot([45, 45], [0, 0.035], color='gold', lw=2);
 ```
 
-![png](../media/59-error-probabilities-4-0.png)
+![probabilities example](../media/59-error-probabilities-4-0.png)
 
 The area to the right of 45 (where the gold line is) is about 5%. Large
 values of the test statistic favor the alternative. So if the test

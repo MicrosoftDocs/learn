@@ -1,13 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
-
 We have seen several examples of assessing models that involve chance,
 by comparing observed data to the predictions made by the models. In all
 of our examples, there has been no doubt about whether the data were
@@ -100,7 +90,9 @@ the test statistic was therefore
 abs ( 100 * (705 / 929) - 75)
 ```
 
+``` output
     0.8880516684607045
+```
 
 ### Step 3: The distribution of the test statistic, under the null hypothesis
 
@@ -199,6 +191,7 @@ scores = Table.read_table(path_data + 'scores_by_section.csv')
 scores
 ```
 
+``` output
 | Section | Midterm |
 |---------|---------|
 | 1       | 22      |
@@ -210,7 +203,9 @@ scores
 | 4       | 19      |
 | 1       | 24      |
 | 5       | 8       |
-| 6       | 14      |
+| 6       | 14      |  
+
+```
 
 To find the average score in each section, we will use `group`.
 
@@ -219,6 +214,7 @@ section_averages = scores.group('Section', np.average)
 section_averages.show()
 ```
 
+``` output
 | Section | Midterm average |
 |---------|-----------------|
 | 1       | 15.5938         |
@@ -234,6 +230,7 @@ section_averages.show()
 | 11      | 15.8077         |
 | 12      | 15.7333         |
 
+```
 
 The average score of Section 3 is 13.667, which does look low compared
 to the other section averages. But is it lower than the average of a
@@ -247,6 +244,7 @@ large Section 3 is, which we can by once again using `group`.
 scores.group('Section')
 ```
 
+``` output
 | Section | count |
 |---------|-------|
 | 1       | 32    |
@@ -259,6 +257,8 @@ scores.group('Section')
 | 8       | 29    |
 | 9       | 30    |
 | 10      | 34    |
+
+```
 
 Section 3 had 27 students.
 
@@ -281,6 +281,7 @@ random_sample = scores_only.sample(27, with_replacement=False)
 random_sample
 ```
 
+``` output
 | Midterm |
 |---------|
 | 20      |
@@ -294,13 +295,17 @@ random_sample
 | 16      |
 | 15      |
 
+```
+
 The average of these 27 randomly selected scores is
 
 ``` python
 np.average(random_sample.column('Midterm'))
 ```
 
+``` output
 16.814814814814813
+```
 
 That's the average of 27 randomly selected scores. The cell below
 collects the code necessary for generating this random average.
@@ -374,7 +379,9 @@ the average score of Section 3.
 np.count_nonzero(sample_averages <= observed_statistic) / repetitions
 ```
 
+``` output
 0.0564
+```
 
 About 5.7% of the simulated random sample averages were 13.667 or below.
 If we had drawn the students of Section 3 at random from the whole

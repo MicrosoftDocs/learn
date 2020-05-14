@@ -3,17 +3,7 @@
 
 If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
-
-
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 ### Assessing models
 
@@ -116,7 +106,9 @@ eligible_population = [0.26, 0.74]
 sample_proportions(100, eligible_population)
 ```
 
+``` output
     array([0.27, 0.73])
+```
 
 That was easy! The proportion of black men in the random sample is
 `item(0)` of the output array.
@@ -133,7 +125,9 @@ Run the cell a few times to see how the output varies.
 (100 * sample_proportions(100, eligible_population)).item(0)
 ```
 
+``` output
     27.0
+```
 
 #### Running the simulation
 
@@ -317,7 +311,9 @@ proportion_purple_in_sample = sample_proportions(929, model_proportions).item(0)
 distance_from_75(proportion_purple_in_sample)
 ```
 
+``` output
     1.7491926803014053
+```
 
 That's one simulated value of the distance between the sample percent of
 purple-flowering plants and 75% as predicted by Mendel's model.
@@ -379,7 +375,9 @@ about 75.89%.
 705 / 929
 ```
 
+``` output
     0.7588805166846071
+```
 
 So the observed value of our statistic--the distance between Mendel's
 sample percent and 75--is about 0.89:
@@ -389,7 +387,9 @@ observed_statistic = distance_from_75(705/929)
 observed_statistic
 ```
 
+``` output
     0.8880516684607045
+```
 
 Just by eye, locate roughly where 0.89 is on the horizontal axis of the
 histogram. You will see that it is clearly in the heart of the
