@@ -18,7 +18,7 @@ abstract:  |
 prerequisites: |
   - TBD
   
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/reactors/supervised-learning-regression.svg
 levels:
 - beginner
 roles:
