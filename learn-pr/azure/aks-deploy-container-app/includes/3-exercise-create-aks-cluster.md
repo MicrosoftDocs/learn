@@ -73,6 +73,8 @@ Once all is done, click the __Review + Create__ button and wait a few seconds wh
 
 When it finishes, you should see a notification with a button named __Go to Resource__. Click it and Azure will take you to the newly-created cluster.
 
+:::image type="content" source="../media/3-finished.png" alt-text="Finished creation":::
+
 :::zone-end
 
 :::zone pivot="bash"
