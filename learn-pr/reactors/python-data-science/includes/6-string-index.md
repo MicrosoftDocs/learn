@@ -47,18 +47,6 @@ The output is:
 'o'
 ```
 
-Another example:
-
-```python
-word[-6]
-```
-
-The output is:
-
-```Output
-'P'
-```
-
 ## Slices
 
 Python supports both indexing, which extracts individual characters from a string, and _slicing_, which extracts a substring or _slice_. To slice, you indicate a _range_ in the format _start_**:**_end_. The start position is included in the returned substring but the end position is excluded from it:
@@ -144,15 +132,6 @@ The output is:
 ```Output
 'Python'
 ```
-
-<!-- Sarah, Here are my changes to address Mike's feedback about the "i" and "j" indices and the oddly formatted code block.
--- 
---    Added for index "i"      "We can slice from this location with the index `i`."
---    Changed for index "j"    "We can slice from this location with the index `j`."
---    Emphasis added           "as pointing <strong>between</strong> characters"
---    Python code cell         changed format from one long line to multi column, row table
---    Added description        Added bullet list after code cell
--->
 
 One way to remember how slices work is to think of the indices as pointing **between** characters. The left edge of the first character in the string is numbered 0. We can slice from this location with the index `i`. The right edge of the last character of a string of `n` characters has the index `n`. We can slice from this location with the index `j`. For example:
 
