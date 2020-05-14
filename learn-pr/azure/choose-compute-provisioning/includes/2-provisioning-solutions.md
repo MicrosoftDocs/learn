@@ -246,7 +246,7 @@ terraform apply
 
 Azure automation state configuration is the service you use to make sure that your DSC configurations are managed properly and deployed across your nodes (virtual machines). Azure automation state configuration works with both Azure virtual machines and machines on-premises. It also works with machines on other cloud providers. Through an intuitive Azure portal process, you can apply configurations to all of your nodes.
 
-![Screenshot of the State configuration panel in the Azure portal](../media/2-automation-state-config.png)
+![Screenshot of the State configuration panel in the Azure portal.](../media/2-automation-state-config.png)
 
 Azure automation state configuration makes it possible for you to ensure that all target machines are assigned the correct configurations automatically. It also ensures that each machine reports back on what its current state is and shows whether it has achieved the desired state. You can send this information for reporting and for further decision making. You can interact with Azure automation state configuration through the Azure portal or through Azure PowerShell.
 

@@ -1,12 +1,14 @@
-Machine learning uses mathematics and statistics to predict unknown values. For example, Suppose *Adventure Works Cycles* is a business that rents cycles in a city. The business could use historic data to train a model that predicts daily rental demand in order to make sure sufficient staff and cycles are available.
+Machine learning uses mathematics and statistics to predict unknown values. For example, suppose *Adventure Works Cycles* is a business that rents cycles in a city. The business could use historic data to train a model that predicts daily rental demand in order to make sure sufficient staff and cycles are available.
 
-<p style='text-align:center'><img src='media/adventureworks.png' alt='Adventure Works cycle rental location, on a cloudy day in January'/></p>
+> [!div class="centered"]
+> ![Adventure Works cycle rental location, on a cloudy day in January](../media/adventureworks.png)
 
 To do this, Adventure Works could create a machine learning model that takes information about a specific day (the day of week, the expected weather conditions, and so on) as an input, and produces the predicted number of rentals as an output.
 
 Mathematically, you can think of machine learning as a way of defining a function (let's call it ***f***) that operates on one or more *features* of something (which we'll call ***x***) to calculate a predicted *label* (***y***) - like this:
 
-<div align='center'><b><i>y = f(x)</i></b></div>
+> [!div class="centered"]
+> ***y = f(x)***
 
 In this bicycle rental example, the details about a given day (day of the week, weather, and so on) are the *features* (***x***), the number of rentals for that day is the *label* (***y***), and the function (***f***) that calculates the number of rentals based on the information about the day is the machine learning model.
 
@@ -31,4 +33,4 @@ In the Adventure Works bicycle rental example, you're looking for a function tha
 
 Unsupervised machine learning models also predict a label based on features, but this time there are no known label values in the training dataset - the function just identifies similarities between items based on their features.
 
-The most common kind of unsupervised machine learning model is a **Clustering** model, which attempts to separate items ins a specified number of groups, or *clusters*, based on similarity of features.
+The most common kind of unsupervised machine learning model is a **Clustering** model, which attempts to separate items into a specified number of groups, or *clusters*, based on similarity of features.

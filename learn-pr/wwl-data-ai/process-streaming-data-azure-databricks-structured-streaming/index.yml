@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.process-streaming-data-azure-databricks-structured-streaming
+metadata:
+  title: Process streaming data with Azure Databricks structured streaming
+  description: "Process streaming data with Azure Databricks structured streaming"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Process streaming data with Azure Databricks structured streaming
+summary: Learn how Structured Streaming helps you process streaming data in real time, and how you can aggregate data over windows of time.
+abstract: |
+  In this module, you will:
+  - Learn the key features and uses of Structured Streaming.
+  - Stream data from a file and write it out to a distributed file system.
+  - Use sliding windows to aggregate over chunks of data rather than all data.
+  - Apply watermarking to throw away stale old data that you do not have space to keep.
+  - Connect to Event Hubs read and write streams.
+prerequisites: ""
+iconUrl: /learn/achievements/process-streaming-data-azure-databricks-structured-streaming.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.process-streaming-data-azure-databricks-structured-streaming.introduction
+- learn.wwl.process-streaming-data-azure-databricks-structured-streaming.describe
+- learn.wwl.process-streaming-data-azure-databricks-structured-streaming.perform-stream-processing-using
+- learn.wwl.process-streaming-data-azure-databricks-structured-streaming.work-time-windows
+- learn.wwl.process-streaming-data-azure-databricks-structured-streaming.process-data-from-event-hubs
+- learn.wwl.process-streaming-data-azure-databricks-structured-streaming.knowledge-check
+- learn.wwl.process-streaming-data-azure-databricks-structured-streaming.summary
+badge:
+  uid: learn.wwl.process-streaming-data-azure-databricks-structured-streaming.badge

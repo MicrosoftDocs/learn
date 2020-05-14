@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.6-data-graph-parallelism
+title: Types of parallelism
+metadata:
+  title: Types of parallelism
+  description: Types of parallelism
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 11
+content: |
+  [!include[](includes/6-data-graph-parallelism.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Microsoft's Dryad programming model allows users to express a distributed computational task as a directed acyclic graph (DAG) with the vertices representing computational units and the edges representing the communication between the computational units. The computational units can consist of any program or process. What kind of data parallelism model encompasses Dryad?"
+    choices:
+    - content: "Single program, multiple data (SPMD)"
+      isCorrect: false
+      explanation: "Incorrect. Dryad allows any program or process to be used as a computational unit. Hence, more than one program is running concurrently on multiple data."    
+    - content: "Multiple program, multiple data (MPMD)"
+      isCorrect: true
+      explanation: "Correct! Dryad allows any program or process to be used as a computational unit. Hence, more than one program is running concurrently on multiple data. This is MPMD."
+
+  - content: "What are the primary goals of a graph-partitioning technique for graph-parallel programs on a distributed system?"
+    choices:
+    - content: "Reduce the communication between processors."
+      isCorrect: false
+      explanation: "That's not quite right. Is that the only correct answer?"
+    - content: "Uniformly distribute the work over the processors."
+      isCorrect: false
+      explanation: "That's not quite right. Is that the only correct answer?"
+    - content: "Improve parallelism by finding computations that can be executed in parallel."
+      isCorrect: false
+      explanation: "That's not quite right. Is that the only correct answer?"
+    - content: "Reduce the communication between processors and uniformly distribute the work over the processors."
+      isCorrect: false
+      explanation: "That's not quite right. Is that the only correct answer?"    
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct! Graph-partitioning techniques aim to optimize program execution on all these fronts."

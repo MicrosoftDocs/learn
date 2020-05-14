@@ -17,7 +17,7 @@ Representational State Transfer, or REST, is an architectural pattern that provi
 
 When you load a web page in the browser, the browser makes an HTTP request. That request is called a "GET". It's just that the browser does that automatically. All _you_ ever see is the URL and the page that gets returned.
 
-![A diagram showing a request from the browser to the server and the response coming back](../media/request-response.svg)
+![Diagram showing an HTTP request from the browser to the server and the response returning HTML.](../media/request-response.svg)
 
 When you're calling an API, you can control the _method_ that is used to call a URL. The method is called, wait for it, the "HTTP request method". In a REST architecture, these HTTP request methods are used to define the action that you want to take on a resource. REST says that HTTP request methods match up to what a service does.
 
@@ -108,7 +108,7 @@ You can change the URL, or "route", that Azure Functions listens on for a specif
 }
 ```
 
-Specifying a route changes everything after the "api" section of the URL. In the above configuration file, the route to the "GetProducts" function is now "http://localhost:7071/api/products".
+Specifying a route changes everything after the "api" section of the URL. In the above configuration file, the route to the "GetProducts" function is now `http://localhost:7071/api/products`.
 
 You can pass parameters along with a route. Parameters take the form of "{parameterName}". This means that to pass a parameter called "id" to the "product" endpoint, you would specify the following route...
 

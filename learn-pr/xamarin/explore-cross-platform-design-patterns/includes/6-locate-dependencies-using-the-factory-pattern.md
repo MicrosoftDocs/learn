@@ -1,6 +1,6 @@
 The first pattern we'll look at is the *factory pattern*. The factory pattern routes the client through an intermediary, called a *factory*, to create its dependency.
 
-![An illustration showing the factory pattern](../media/6-factory-pattern.png)
+![Diagram showing a factory pattern, where a client uses a factory to create a service.](../media/6-factory-pattern.png)
 
 The platform-specific code and the cross-platform code share the factory. The factory is defined in your shared code assembly. It's responsible for creating the platform-specific dependency. Only the factory class knows how to create the dependency.
 

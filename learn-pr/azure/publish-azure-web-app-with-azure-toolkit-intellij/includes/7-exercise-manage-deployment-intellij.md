@@ -14,7 +14,7 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 
 1. Right-click your web app again, and then click **Open in Browser**. The web browser should display an HTTP 403 message indicating that the web app isn't currently running.
 
-    ![Screenshot of the web browser displaying the HTTP 403 message](../media/7-web-browser-403.png)
+    :::image type="content" source="../media/7-web-browser-403.png" alt-text="Screenshot of the web browser displaying the HTTP 403 message." loc-scope="third-party":::
 
 1. Leave the web browser open and return to IntelliJ IDEA. 
 
@@ -81,7 +81,7 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 
 1. Click the **Published** link in the **Azure Activity Log** window. A new browser window will open. After 20 seconds, the messages displaying the time at two-second intervals will appear, followed by the IP address of the client computer.
 
-    ![Screenshot of the web browser running the new version of the web app](../media/7-updated-web-app.png)
+    :::image type="content" source="../media/7-updated-web-app.png" alt-text="Screenshot of the web browser running the new version of the web app." loc-scope="third-party":::
 
     > [!NOTE]
     >
@@ -99,7 +99,7 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 
 1. Switch back to the web browser and refresh the display. This time, the page will display the time at one-second intervals, repeated only five times. Notice that you didn't need to redeploy the web app.
 
-    ![Screenshot of the web browser running the modified version of the web app](../media/7-modified-web-app.png)
+    :::image type="content" source="../media/7-modified-web-app.png" alt-text="Screenshot of the web browser running the modified version of the web app." loc-scope="third-party":::
 
 1. Close the web browser and return to IntelliJ IDEA.
 

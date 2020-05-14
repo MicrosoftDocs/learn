@@ -121,7 +121,7 @@ The variables are used in the [calls to the Face API](https://github.com/Microso
 
     You should see the json response that the Face API returns when passed an image: `http://localhost:7071/api/MojifyImage?imageUrl=<image>`.
 
-    Look at the code in [`shared/faceapi/index.ts`](https://github.com/MicrosoftDocs/mslearn-the-mojifier/blob/master/shared/faceapi/index.tsazure-portal=true) to see how the response from the Face API is being converted into an instance of an array of `Face` objects. Each `Face` object contains the emotive coordinates, the location of the face in the image, the matching emoji, and the emoji icon.
+    Look at the code in [`shared/faceapi/index.ts`](https://github.com/MicrosoftDocs/mslearn-the-mojifier/blob/master/shared/faceapi/index.ts) to see how the response from the Face API is being converted into an instance of an array of `Face` objects. Each `Face` object contains the emotive coordinates, the location of the face in the image, the matching emoji, and the emoji icon.
 
 1. Create the mojified image
 

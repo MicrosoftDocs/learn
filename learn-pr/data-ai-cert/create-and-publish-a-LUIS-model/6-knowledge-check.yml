@@ -8,8 +8,7 @@ metadata:
   author: gerryaobrien    
   ms.author: gerryo    
   ms.topic: interactive-tutorial    
-  ms.prod: learning-azure    
-  ROBOTS: NOINDEX  
+  ms.prod: learning-azure     
 durationInMinutes: 7
 quiz:
   title: Check your knowledge

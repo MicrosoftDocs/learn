@@ -68,7 +68,7 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
 
 ## Test the sample web app
 
-1. For this exercise, you'll need to open a port to make the local web server available to view in a browser. To do so, use the following `curl` command in the cloud shell.
+1. For this exercise, you'll need to open a port to make the local web server available to view in a browser. To do so, use the following `curl` command in the Cloud Shell.
 
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;
@@ -86,10 +86,10 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
     mvn tomcat7:run
     ```
 
-1. Open a new browser tab by using the URL from the JSON that was returned by the `curl` command you ran earlier, appending `MyWebApp/` to the end of the URL. For example, using the above illustration, that URL would be https://gateway18.westeurope.console.azure.com/n/cc-1829663c/cc-1829663c/proxy/8000/MyWebApp/. You should see **Hello World!** displayed in your browser.
+1. Open a new browser tab by using the URL from the JSON that was returned by the `curl` command you ran earlier, appending `MyWebApp/` to the end of the URL. For example, using the above illustration, that URL would be https:\//gateway18.westeurope.console.azure.com/n/cc-1829663c/cc-1829663c/proxy/8000/MyWebApp/. You should see **Hello World!** displayed in your browser.
 
-    ![Example web app running on Tomcat in a web browser](../media/3-tomcat-server-response.png)
+    :::image type="content" source="../media/3-tomcat-server-response.png" alt-text="Example web app running on Tomcat in a web browser." loc-scope="other"::: <!-- no-loc -->
 
-1. Quit the web server by typing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the cloud shell.
+1. Quit the web server by typing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the Cloud Shell.
 
 In the next unit, you'll learn how to deploy your web app to Azure App Service.

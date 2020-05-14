@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.deploy-kubernetes.4-deploy-kubernetes
+title: Exercise - Deploy a multi-container solution to Kubernetes
+metadata:
+  title: Exercise - Deploy a multi-container solution to Kubernetes
+  description: Extend the CI/CD pipeline to build and deploy a multi-container solution to Kubernetes.
+  ms.date: 04/24/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-deploy-kubernetes.md)]

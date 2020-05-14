@@ -5,7 +5,7 @@ After creating and running a pipeline to train the model, you need a second pipe
 1. View the **Diabetes Training** pipeline you created in the previous exercise.
 2. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Diabetes Training-real time inference** will be opened.
 3. Rename the new pipeline to **Predict Diabetes**, and then review the new pipeline. Some of the transformations and training steps have been encapsulated in this pipeline so that the statistics from your training data will be used to normalize any new data values, and the trained model will be used to score the new data.
-4. The inference pipeline assumes that new data will match the schema of the original training data, so the **diabetes-data** dataset from the training pipeline is included. However, this input data includes the **Diabetic** label that the model predicts, which is unintuitive to include in new patient data for which a diabetes prediction has not yet been made. Delete this module and replace it with an **Enter Data Manually** module from the **Data Input and Output** section, containing the following CSV data, , which includes feature values without labels for three new patient observations:
+4. The inference pipeline assumes that new data will match the schema of the original training data, so the **diabetes-data** dataset from the training pipeline is included. However, this input data includes the **Diabetic** label that the model predicts, which is unintuitive to include in new patient data for which a diabetes prediction has not yet been made. Delete this module and replace it with an **Enter Data Manually** module from the **Data Input and Output** section, containing the following CSV data, which includes feature values without labels for three new patient observations:
 
     ```CSV
     PatientID,Pregnancies,PlasmaGlucose,DiastolicBloodPressure,TricepsThickness,SerumInsulin,BMI,DiabetesPedigree,Age
@@ -35,9 +35,10 @@ After creating and running a pipeline to train the model, you need a second pipe
     - Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the output of the **Execute Python Script** module to the **Web Service Output**.
 8. Verify that your pipeline looks similar to the following:
 
-    <p style='text-align:center'><img src='media/visual-inference.jpg' alt="A visual inference pipeline"/></p>
+> [!div class="centered"]
+> ![A visual inference pipeline](../media/visual-inference.png)
 
-8. Run the pipeline as a new experiment named **predict-diabetes** on the **aml-compute** compute target you used for training. This may take a while!
-9. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
+9. Run the pipeline as a new experiment named **predict-diabetes** on the **aml-compute** compute target you used for training. This may take a while!
+10. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
 
 Your inference pipeline predicts whether or not patients are at risk for diabetes based on their features. Now you're ready to publish the pipeline so that client applications can use it.

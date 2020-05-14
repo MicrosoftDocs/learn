@@ -23,7 +23,9 @@ Add all the code necessary to implement the following business rules:
 **Business Rules:**
 
 Rule 1: If the value is alphanumeric, concatenate it to form a message
+
 Rule 2: If the value is numeric, add it to the total
+
 Rule 3: Make sure the result matches the following output:
 
 ```output

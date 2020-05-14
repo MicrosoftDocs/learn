@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.create-cognitive-service
+title: How to create Azure Cognitive Services
+metadata:
+  title: How to create Azure Cognitive Services
+  description: In this section, we help the learner to create a Speech service in the cloud
+  ms.date: 04/07/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/6-create.md)]
