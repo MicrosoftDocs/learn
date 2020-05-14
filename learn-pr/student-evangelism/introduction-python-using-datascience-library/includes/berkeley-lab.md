@@ -13,16 +13,15 @@ If you aren't interested in viewing the content interactively, feel free to skip
 
 1. Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
 
-1. If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
+2. If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
 
     - Environment Name: A name for your environment - for example, `inferentialthinking`
     - Git Repository: MicrosoftDocs/inferentialthinking
     - Instance Type: Standard (Linux) 4 cores, 8 GB RAM
     - Suspend idle environment after: 30 minutes
 
-1. Wait about a minute for the environment to be created.
+3. Wait about a minute for the environment to be created.
 
-1. Wait for another minute or so while the environment is set up for you. In the background we're installing some components you'll need for the exercise. You'll see the following things happen:
+4. Wait for another minute or so while the environment is set up for you. In the background we're installing some components you'll need for the exercise. You'll see the following things happen:
 
-1. A list of notebook (.ipynb) files will appear in the pane on the left.
-
+5. A list of notebook (.ipynb) files will appear in the pane on the left.
