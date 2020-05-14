@@ -14,12 +14,12 @@ np.set_printoptions(threshold=50)
 ```
 
 ``` output
-| | |
-|-|-|
-|**Player**| Player's name|
-|**Position**|Player's position on team|
-|**Team**|Team name|
-|**'15-'16 Salary**|Player's salary in 2015-2016, in millions of dollars|
+|                    |                                                      |
+|--------------------|------------------------------------------------------|
+| **Player**         | Player's name                                        |
+| **Position**       | Player's position on team                            |
+| **Team**           | Team name                                            |
+| **'15-'16 Salary** | Player's salary in 2015-2016, in millions of dollars |
 ```
 
 The code for the positions is PG (Point Guard), SG (Shooting Guard), PF
