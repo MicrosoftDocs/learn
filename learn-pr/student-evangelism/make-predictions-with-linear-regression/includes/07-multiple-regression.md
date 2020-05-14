@@ -1,33 +1,9 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **multiple-regression.ipynb** in your virtual environment
+> You can find an interactive version of this unit named **multiple-regression.ipynb** in your virtual environment.
 
 If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
-
-
-``` python
-
-from datascience import *
-path_data = '../../../../data/'
-import numpy as np
-
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-
-np.set_printoptions(suppress=True)
-```
-
-``` python
-
-def standard_units(any_numbers):
-    "Convert any array of numbers to standard units."
-    return (any_numbers - np.mean(any_numbers))/np.std(any_numbers)  
-
-def correlation(t, x, y):
-    return np.mean(standard_units(t.column(x))*standard_units(t.column(y)))
-```
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 Now that we have explored ways to use multiple attributes to predict a
 categorical variable, let us return to predicting a quantitative
@@ -35,7 +11,7 @@ variable. Predicting a numerical quantity is called regression, and a
 commonly used method to use multiple attributes for regression is called
 *multiple linear regression*.
 
-## Home Prices
+## Home prices
 
 The following dataset of house prices and attributes was collected over
 several years for the city of Ames, Iowa. A [description of the dataset
@@ -54,20 +30,23 @@ sales = all_sales.where('Bldg Type', '1Fam').where('Sale Condition', 'Normal').s
 sales.sort('SalePrice')
 ```
 
-|SalePrice|1st Flr SF|2nd Flr SF|Total Bsmt SF|Garage Area|Wood Deck SF|Open Porch SF|Lot Area|Year Built|Yr Sold|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|35000|498|0|498|216|0|0|8088|1922|2006|
-|39300|334|0|0|0|0|0|5000|1946|2007|
-|40000|649|668|649|250|0|54|8500|1920|2008|
-|45000|612|0|0|308|0|0|5925|1940|2009|
-|52000|729|0|270|0|0|0|4130|1935|2008|
-|52500|693|0|693|0|0|20|4118|1941|2006|
-|55000|723|363|723|400|0|24|11340|1920|2008|
-|55000|796|0|796|0|0|0|3636|1922|2008|
-|57625|810|0|0|280|119|24|21780|1910|2009|
-|58500|864|0|864|200|0|0|8212|1914|2010|
+``` output
+| SalePrice | 1st Flr SF | 2nd Flr SF | Total Bsmt SF | Garage Area | Wood Deck SF | Open Porch SF | Lot Area | Year Built | Yr Sold |
+|-----------|------------|------------|---------------|-------------|--------------|---------------|----------|------------|---------|
+| 35000     | 498        | 0          | 498           | 216         | 0            | 0             | 8088     | 1922       | 2006    |
+| 39300     | 334        | 0          | 0             | 0           | 0            | 0             | 5000     | 1946       | 2007    |
+| 40000     | 649        | 668        | 649           | 250         | 0            | 54            | 8500     | 1920       | 2008    |
+| 45000     | 612        | 0          | 0             | 308         | 0            | 0             | 5925     | 1940       | 2009    |
+| 52000     | 729        | 0          | 270           | 0           | 0            | 0             | 4130     | 1935       | 2008    |
+| 52500     | 693        | 0          | 693           | 0           | 0            | 20            | 4118     | 1941       | 2006    |
+| 55000     | 723        | 363        | 723           | 400         | 0            | 24            | 11340    | 1920       | 2008    |
+| 55000     | 796        | 0          | 796           | 0           | 0            | 0             | 3636     | 1922       | 2008    |
+| 57625     | 810        | 0          | 0             | 280         | 119          | 24            | 21780    | 1910       | 2009    |
+| 58500     | 864        | 0          | 864           | 200         | 0            | 0             | 8212     | 1914       | 2010    |  
 
 ... (1992 rows omitted)
+
+```
 
 A histogram of sale prices shows a large amount of variability and a
 distribution that is clearly not normal. A long tail to the right
@@ -78,7 +57,7 @@ does not contain any houses that sold for less than \$35,000.
 sales.hist('SalePrice', bins=32, unit='$')
 ```
 
-![png](../media/82-multiple-regression-5-1.png)
+![regression example](../media/82-multiple-regression-5-1.png)
 
 #### Correlation
 
@@ -96,7 +75,9 @@ sales.scatter('1st Flr SF', 'SalePrice')
 correlation(sales, 'SalePrice', '1st Flr SF')
 ```
 
+``` output
 0.6424662541030225
+```
 
 In fact, none of the individual attributes have a correlation with sale
 price that is above 0.7 (except for the sale price itself).
@@ -106,6 +87,7 @@ for label in sales.labels:
     print('Correlation of', label, 'and SalePrice:\t', correlation(sales, label, 'SalePrice'))
 ```
 
+``` output
 Correlation of SalePrice and SalePrice: 1.0 Correlation of 1st Flr SF
 and SalePrice: 0.6424662541030225 Correlation of 2nd Flr SF and
 SalePrice: 0.3575218942800824 Correlation of Total Bsmt SF and
@@ -116,6 +98,7 @@ SalePrice: 0.652978626757169 Correlation of Garage Area and SalePrice:
 0.2908234551157694 Correlation of Year Built and SalePrice:
 0.5651647537135916 Correlation of Yr Sold and SalePrice:
 0.02594857908072111
+```
 
 However, combining attributes can provide higher correlation. In
 particular, if we sum the first floor and second floor areas, the result
@@ -126,14 +109,16 @@ both_floors = sales.column(1) + sales.column(2)
 correlation(sales.with_column('Both Floors', both_floors), 'SalePrice', 'Both Floors')
 ```
 
+``` output
 0.7821920556134877
+```
 
 This high correlation indicates that we should try to use more than one
 attribute to predict the sale price. In a dataset with multiple observed
 attributes and a single numerical value to be predicted (the sale price
 in this case), multiple linear regression can be an effective technique.
 
-## Multiple Linear Regression
+## Multiple linear regression
 
 In multiple linear regression, a numerical output is predicted from
 numerical input attributes by multiplying each attribute value by a
@@ -149,7 +134,9 @@ train, test = sales.split(1001)
 print(train.num_rows, 'training and', test.num_rows, 'test instances.')
 ```
 
+``` output
 1001 training and 1001 test instances.
+```
 
 The slopes in multiple regression are represented by an
 array that has one slope value for each attribute in an example.
@@ -167,11 +154,13 @@ print('Using slopes:', example_slopes)
 print('Result:', predict(example_slopes, example_row))
 ```
 
+``` output
 Predicting sale price for: Row(1st Flr SF=707, 2nd Flr SF=707, Total
 Bsmt SF=707.0, Garage Area=403.0, Wood Deck SF=100, Open Porch SF=35,
 Lot Area=7750, Year Built=2002, Yr Sold=2008) Using slopes: \[
 9.70697704 8.68451487 9.48574052 11.65887763 9.76283493 7.75180442
 10.26963618 12.39555854 9.93561073\] Result: 150011.62264018963
+```
 
 The result is an estimated sale price, which can be compared to the
 actual sale price to assess whether the slopes provide accurate
@@ -183,10 +172,12 @@ print('Actual sale price:', test.column('SalePrice').item(0))
 print('Predicted sale price using random slopes:', predict(example_slopes, example_row))
 ```
 
+``` output
 Actual sale price: 176000 Predicted sale price using random slopes:
 150011.62264018963
+```
 
-#### Least Squares Regression
+#### Least squares regression
 
 The next step in performing multiple regression is to define the least
 squares objective. We perform the prediction for each row in the
@@ -211,7 +202,9 @@ def rmse_train(slopes):
 print('RMSE of all training examples using random slopes:', rmse_train(example_slopes))
 ```
 
+``` output
 RMSE of all training examples using random slopes: 103585.76518182222
+```
 
 Finally, we use the `minimize` function to find the slopes with the
 lowest RMSE. Since the function we want to minimize, `rmse_train`, takes
@@ -229,15 +222,18 @@ Table(train_attributes.labels).with_row(list(best_slopes)).show()
 print('RMSE of all training examples using the best slopes:', rmse_train(best_slopes))
 ```
 
+``` ioutput 
 The best slopes for the training set:
 
-|1st Flr SF|2nd Flr SF|Total Bsmt SF|Garage Area|Wood Deck SF|Open Porch SF|Lot Area|Year Built|Yr Sold|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|78.7701|75.9304|49.6108|42.9615|38.8186|13.2336|0.328059|510.312|-508.186|
+| 1st Flr SF | 2nd Flr SF | Total Bsmt SF | Garage Area | Wood Deck SF | Open Porch SF | Lot Area | Year Built | Yr Sold  |
+|------------|------------|---------------|-------------|--------------|---------------|----------|------------|----------|
+| 78.7701    | 75.9304    | 49.6108       | 42.9615     | 38.8186      | 13.2336       | 0.328059 | 510.312    | -508.186 |
+
 
 RMSE of all training examples using the best slopes: 32283.50513136445
+```
 
-#### Interpreting Multiple Regression
+#### Interpreting multiple regression
 
 Let's interpret these results. The best slopes give us a method for
 estimating the price of a house from its attributes. A square foot of
@@ -246,8 +242,8 @@ on the second floor is worth about \$70 (the second slope). The final
 negative value describes the market: prices in later years were lower on
 average.
 
-The RMSE of around \$30,000 means that our best linear prediction of the
-sale price based on all of the attributes is off by around \$30,000 on
+The RMSE of around $30,000 means that our best linear prediction of the
+sale price based on all of the attributes is off by around $30,000 on
 the training set, on average. We find a similar error when predicting
 prices on the test set, which indicates that our prediction method will
 generalize to other samples from the same population.
@@ -263,7 +259,9 @@ rmse_linear = rmse_test(best_slopes)
 print('Test set RMSE for multiple linear regression:', rmse_linear)
 ```
 
+``` output
 Test set RMSE for multiple linear regression: 29898.407434368237
+```
 
 If the predictions were perfect, then a scatter plot of the predicted
 and actual values would be a straight line with slope 1. We see that
@@ -278,7 +276,7 @@ test.with_column('Fitted', test.drop(0).apply(fit)).scatter('Fitted', 0)
 plots.plot([0, 5e5], [0, 5e5]);
 ```
 
-![png](../media/82-multiple-regression-26-0.png)
+![regression example](../media/82-multiple-regression-26-0.png)
 
 A residual plot for multiple regression typically compares the errors
 (residuals) to the actual values of the predicted variable. We see in
@@ -291,7 +289,7 @@ test.with_column('Residual', test_prices-test.drop(0).apply(fit)).scatter(0, 'Re
 plots.plot([0, 7e5], [0, 0]);
 ```
 
-![png](../media/82-multiple-regression-28-0.png)
+![regression example](../media/82-multiple-regression-28-0.png)
 
 As with simple linear regression, interpreting the result of a predictor
 is at least as important as making predictions. There are many lessons
@@ -299,7 +297,7 @@ about interpreting multiple regression that are not included in this
 textbook. A natural next step after completing this text would be to
 study linear modeling and regression in further depth.
 
-## Nearest Neighbors for Regression
+## Nearest neighbors for regression
 
 Another approach to predicting the sale price of a house is to use the
 price of similar houses. This *nearest neighbor* approach is very
@@ -313,13 +311,15 @@ test_nn = test.select(0, 1, 2, 3, 4, 8)
 train_nn.show(3)
 ```
 
-|SalePrice|1st Flr SF|2nd Flr SF|Total Bsmt SF|Garage Area|Year Built|
-|--- |--- |--- |--- |--- |--- |
-|67500|1012|0|816|429|1920|
-|116000|734|384|648|440|1920|
-|228500|1689|0|1680|432|1991|
+``` output
+| SalePrice | 1st Flr SF | 2nd Flr SF | Total Bsmt SF | Garage Area | Year Built |
+|-----------|------------|------------|---------------|-------------|------------|
+| 67500     | 1012       | 0          | 816           | 429         | 1920       |
+| 116000    | 734        | 384        | 648           | 440         | 1920       |
+| 228500    | 1689       | 0          | 1680          | 432         | 1991       |  
 
 ... (998 rows omitted)
+```
 
 The computation of closest neighbors is identical to a nearest-neighbor
 classifier. In this case, we will exclude the `'SalePrice'` rather than
@@ -351,13 +351,15 @@ example_nn_row = test_nn.drop(0).row(0)
 closest(train_nn, example_nn_row, 5, 'SalePrice')
 ```
 
-|SalePrice|1st Flr SF|2nd Flr SF|Total Bsmt SF|Garage Area|Year Built|Distance|
-|--- |--- |--- |--- |--- |--- |--- |
-|175000|729|717|729|406|1996|33.3617|
-|176000|728|728|728|400|2005|36.6197|
-|189000|728|728|728|410|2005|37.1618|
-|159500|698|728|690|440|1977|52.9623|
-|174000|742|742|742|390|2005|62.0725|
+``` output
+| SalePrice | 1st Flr SF | 2nd Flr SF | Total Bsmt SF | Garage Area | Year Built | Distance |
+|-----------|------------|------------|---------------|-------------|------------|----------|
+| 175000    | 729        | 717        | 729           | 406         | 1996       | 33.3617  |
+| 176000    | 728        | 728        | 728           | 400         | 2005       | 36.6197  |
+| 189000    | 728        | 728        | 728           | 410         | 2005       | 37.1618  |
+| 159500    | 698        | 728        | 690           | 440         | 1977       | 52.9623  |
+| 174000    | 742        | 742        | 742           | 390         | 2005       | 62.0725  |  
+```
 
 One simple method for predicting the price is to average the prices of
 the nearest neighbors.
@@ -370,7 +372,9 @@ def predict_nn(example):
 predict_nn(example_nn_row)
 ```
 
+``` output
 174700.0
+```
 
 Finally, we can inspect whether our prediction is close to the true sale
 price for our one test example. Looks reasonable!
@@ -380,8 +384,10 @@ print('Actual sale price:', test_nn.column('SalePrice').item(0))
 print('Predicted sale price using nearest neighbors:', predict_nn(example_nn_row))
 ```
 
+``` output
 Actual sale price: 176000 Predicted sale price using nearest neighbors:
 174700.0
+```
 
 #### Evaluation
 
@@ -398,8 +404,10 @@ print('Test set RMSE for multiple linear regression: ', rmse_linear)
 print('Test set RMSE for nearest neighbor regression:', rmse_nn)
 ```
 
+``` output
 Test set RMSE for multiple linear regression: 29898.407434368237 Test
 set RMSE for nearest neighbor regression: 33424.833033298106
+```
 
 For these data, the errors of the two techniques are similar! For
 different data sets, one technique might outperform another. By
@@ -419,4 +427,4 @@ test.with_column('Residual', test_prices-nn_test_predictions).scatter(0, 'Residu
 plots.plot([0, 7e5], [0, 0]);
 ```
 
-![png](../media/82-multiple-regression-41-0.png)
+![regression example](../media/82-multiple-regression-41-0.png)

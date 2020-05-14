@@ -1,52 +1,3 @@
-``` python
-
-from datascience import *
-path_data = '../../../../data/'
-import numpy as np
-from scipy import stats
-
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import warnings
-warnings.simplefilter(action="ignore", category=FutureWarning)
-```
-
-``` python
-# HIDDEN
-
-galton = Table.read_table(path_data + 'galton.csv')
-heights = galton.select('midparentHeight', 'childHeight')
-heights = heights.relabel(0, 'MidParent').relabel(1, 'Child')
-hybrid = Table.read_table(path_data + 'hybrid.csv')
-```
-
-``` python
-
-def standard_units(x):
-    return (x - np.mean(x))/np.std(x)
-
-def correlation(table, x, y):
-    x_in_standard_units = standard_units(table.column(x))
-    y_in_standard_units = standard_units(table.column(y))
-    return np.mean(x_in_standard_units * y_in_standard_units)
-
-def slope(table, x, y):
-    r = correlation(table, x, y)
-    return r * np.std(table.column(y))/np.std(table.column(x))
-
-def intercept(table, x, y):
-    a = slope(table, x, y)
-    return np.mean(table.column(y)) -  a * np.mean(table.column(x))
-
-def fit(table, x, y):
-    a = slope(table, x, y)
-    b = intercept(table, x, y)
-    return a * table.column(x) + b
-```
-
 Suppose a data scientist has decided to use linear regression to
 estimate values of one variable (called the response variable) based on
 another variable (called the predictor). To see how well this method of
@@ -93,20 +44,22 @@ heights = heights.with_columns(
 heights
 ```
 
-|MidParent|Child|Fitted Value|Residual|
-|--- |--- |--- |--- |
-|75.43|73.2|70.7124|2.48763|
-|75.43|69.2|70.7124|-1.51237|
-|75.43|69|70.7124|-1.71237|
-|75.43|69|70.7124|-1.71237|
-|73.66|73.5|69.5842|3.91576|
-|73.66|72.5|69.5842|2.91576|
-|73.66|65.5|69.5842|-4.08424|
-|73.66|65.5|69.5842|-4.08424|
-|72.06|71|68.5645|2.43553|
-|72.06|68|68.5645|-0.564467|
+``` output
+| MidParent | Child | Fitted Value | Residual  |
+|-----------|-------|--------------|-----------|
+| 75.43     | 73.2  | 70.7124      | 2.48763   |
+| 75.43     | 69.2  | 70.7124      | -1.51237  |
+| 75.43     | 69    | 70.7124      | -1.71237  |
+| 75.43     | 69    | 70.7124      | -1.71237  |
+| 73.66     | 73.5  | 69.5842      | 3.91576   |
+| 73.66     | 72.5  | 69.5842      | 2.91576   |
+| 73.66     | 65.5  | 69.5842      | -4.08424  |
+| 73.66     | 65.5  | 69.5842      | -4.08424  |
+| 72.06     | 71    | 68.5645      | 2.43553   |
+| 72.06     | 68    | 68.5645      | -0.564467 |
 
 ... (924 rows omitted)
+```
 
 When there are so many variables to work with, it is always helpful to
 start with visualization. The function `scatter_fit` draws the scatter
@@ -124,7 +77,7 @@ def scatter_fit(table, x, y):
 scatter_fit(heights, 'MidParent', 'Child')
 ```
 
-![png](../media/80-visual-diagnostics-9-0.png)
+![Diagnostic example](../media/80-visual-diagnostics-9-0.png)
 
 A *residual plot* can be drawn by plotting the residuals against the
 predictor variable. The function `residual_plot` does just that.
@@ -146,7 +99,7 @@ def residual_plot(table, x, y):
 residual_plot(heights, 'MidParent', 'Child')
 ```
 
-![png](../media/80-visual-diagnostics-12-0.png)
+![diagnostic example](../media/80-visual-diagnostics-12-0.png)
 
 The midparent heights are on the horizontal axis, as in the original
 scatter plot. But now the vertical axis shows the residuals. Notice that
@@ -155,7 +108,7 @@ the plot appears to be centered around the horizontal line at the level
 downward trend. We will observe later that this is true of all
 regressions.
 
-### Regression Diagnostics
+### Regression diagnostics
 
 Residual plots help us make visual assessments of the quality of a
 linear regression analysis. Such assessments are called *diagnostics*.
@@ -172,9 +125,9 @@ def regression_diagnostic_plots(table, x, y):
 regression_diagnostic_plots(heights, 'MidParent', 'Child')
 ```
 
-![png](../media/80-visual-diagnostics-16-0.png)
+![diagnostic example](../media/80-visual-diagnostics-16-0.png)
 
-![png](../media/80-visual-diagnostics-16-1.png)
+![diagnostics example](../media/80-visual-diagnostics-16-1.png)
 
 This residual plot indicates that linear regression was a reasonable
 method of estimation. Notice how the residuals are distributed fairly
@@ -192,7 +145,7 @@ same across the observed range of the predictor variable.
 look about the same, above and below the horizontal line at 0, across
 the range of the predictor variable.**
 
-### Detecting Nonlinearity
+### Detecting nonlinearity
 
 Drawing the scatter plot of the data usually gives an indication of
 whether the relation between the two variables is non-linear. Often,
@@ -218,20 +171,22 @@ dugong = dugong.move_to_start('Length')
 dugong
 ```
 
-|Length|Age|
-|--- |--- |
-|1.8|1|
-|1.85|1.5|
-|1.87|1.5|
-|1.77|1.5|
-|2.02|2.5|
-|2.27|4|
-|2.15|5|
-|2.26|5|
-|2.35|7|
-|2.47|8|
+``` output
+| Length | Age |
+|--------|-----|
+| 1.8    | 1   |
+| 1.85   | 1.5 |
+| 1.87   | 1.5 |
+| 1.77   | 1.5 |
+| 2.02   | 2.5 |
+| 2.27   | 4   |
+| 2.15   | 5   |
+| 2.26   | 5   |
+| 2.35   | 7   |
+| 2.47   | 8   |
 
 ... (17 rows omitted)
+```
 
 If we could measure the length of a dugong, what could we say about its
 age? Let's examine what our data say. Here is a regression of age (the
@@ -242,7 +197,9 @@ variables is substantial, at 0.83.
 correlation(dugong, 'Length', 'Age')
 ```
 
+``` output
 0.8296474554905714
+```
 
 High correlation notwithstanding, the plot shows a curved pattern that
 is much more visible in the residual plot.
@@ -251,9 +208,9 @@ is much more visible in the residual plot.
 regression_diagnostic_plots(dugong, 'Length', 'Age')
 ```
 
-![png](../media/80-visual-diagnostics-24-0.png)
+![diagnostic example](../media/80-visual-diagnostics-24-0.png)
 
-![png](../media/80-visual-diagnostics-24-1.png)
+![diagnostic example](../media/80-visual-diagnostics-24-1.png)
 
 While you can spot the non-linearity in the original scatter, it is more
 clearly evident in the residual plot.
@@ -268,7 +225,7 @@ ages.
 **When a residual plot shows a pattern, there may be a non-linear
 relation between the variables.**
 
-### Detecting Heteroscedasticity
+### Detecting heteroscedasticity
 
 *Heteroscedasticity* is a word that will surely be of interest to those
 who are preparing for Spelling Bees. For data scientists, its interest
@@ -283,9 +240,9 @@ efficient.
 regression_diagnostic_plots(hybrid, 'acceleration', 'mpg')
 ```
 
-![png](../media/80-visual-diagnostics-27-0.png)
+![diagnostic example](../media/80-visual-diagnostics-27-0.png)
 
-![png](../media/80-visual-diagnostics-27-1.png)
+![diagnostic example](../media/80-visual-diagnostics-27-1.png)
 
 Notice how the residual plot flares out towards the low end of the
 accelerations. In other words, the variability in the size of the errors

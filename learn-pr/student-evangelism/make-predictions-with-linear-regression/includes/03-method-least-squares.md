@@ -1,36 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
-``` python
-
-def standard_units(any_numbers):
-    "Convert any array of numbers to standard units."
-    return (any_numbers - np.mean(any_numbers))/np.std(any_numbers)  
-
-def correlation(t, x, y):
-    return np.mean(standard_units(t.column(x))*standard_units(t.column(y)))
-
-def slope(table, x, y):
-    r = correlation(table, x, y)
-    return r * np.std(table.column(y))/np.std(table.column(x))
-
-def intercept(table, x, y):
-    a = slope(table, x, y)
-    return np.mean(table.column(y)) - a * np.mean(table.column(x))
-
-def fit(table, x, y):
-    """Return the height of the regression line at each x value."""
-    a = slope(table, x, y)
-    b = intercept(table, x, y)
-    return a * table.column(x) + b
-```
-
 We have retraced the steps that Galton and Pearson took to develop the
 equation of the regression line that runs through a football shaped
 scatter plot. But not all scatter plots are football shaped, not even
@@ -58,19 +25,22 @@ little_women = Table.read_table(path_data + 'little_women.csv')
 little_women = little_women.move_to_start('Periods')
 little_women.show(3)
 ```
-|Periods|Characters|
-|--- |--- |
-|189|21759|
-|188|22148|
-|231|20558|
+
+``` output
+| Periods | Characters |
+|---------|------------|
+| 189     | 21759      |
+| 188     | 22148      |
+| 231     | 20558      |
 
 ... (44 rows omitted)
+```
 
 ``` python
 little_women.scatter('Periods', 'Characters')
 ```
 
-![png](../media/78-method-least-squares-5-0.png)
+![least square example](../media/78-method-least-squares-5-0.png)
 
 To explore the data, we will need to use the functions `correlation`,
 `slope`, `intercept`, and `fit` defined in the previous section.
@@ -79,12 +49,14 @@ To explore the data, we will need to use the functions `correlation`,
 correlation(little_women, 'Periods', 'Characters')
 ```
 
+``` output
 0.9229576895854816
+```
 
 The scatter plot is remarkably close to linear, and the correlation is
 more than 0.92.
 
-### Error in Estimation
+### Error in estimation
 
 The graph below shows the scatter plot and line that we developed in the
 previous section. We don't yet know if that's the best among all lines.
@@ -95,7 +67,7 @@ lw_with_predictions = little_women.with_column('Linear Prediction', fit(little_w
 lw_with_predictions.scatter('Periods')
 ```
 
-![png](../media/78-method-least-squares-10-0.png)
+![least square](../media/78-method-least-squares-10-0.png)
 
 Corresponding to each point on the scatter plot, there is an error of
 prediction calculated as the actual value minus the predicted value. It
@@ -112,21 +84,24 @@ errors = actual - predicted
 lw_with_predictions.with_column('Error', errors)
 ```
 
-|Periods|Characters|Linear Prediction|Error|
-|--- |--- |--- |--- |
-|189|21759|21183.6|575.403|
-|188|22148|21096.6|1051.38|
-|231|20558|24836.7|-4278.67|
-|195|25526|21705.5|3820.54|
-|255|23395|26924.1|-3529.13|
-|140|14622|16921.7|-2299.68|
-|131|14431|16138.9|-1707.88|
-|214|22476|23358|-882.043|
-|337|33767|34056.3|-289.317|
-|185|18508|20835.7|-2327.69|
+```output
+| Periods | Characters | Linear Prediction | Error    |
+|---------|------------|-------------------|----------|
+| 189     | 21759      | 21183.6           | 575.403  |
+| 188     | 22148      | 21096.6           | 1051.38  |
+| 231     | 20558      | 24836.7           | -4278.67 |
+| 195     | 25526      | 21705.5           | 3820.54  |
+| 255     | 23395      | 26924.1           | -3529.13 |
+| 140     | 14622      | 16921.7           | -2299.68 |
+| 131     | 14431      | 16138.9           | -1707.88 |
+| 214     | 22476      | 23358             | -882.043 |
+| 337     | 33767      | 34056.3           | -289.317 |
+| 185     | 18508      | 20835.7           | -2327.69 |  
 
 ... (37 rows omitted)
-</p>
+
+```
+
 We can use `slope` and `intercept` to calculate the slope and intercept
 of the fitted line. The graph below shows the line (in light blue). The
 errors corresponding to four of the points are shown in red. There is
@@ -159,7 +134,7 @@ lw_errors(lw_reg_slope, lw_reg_intercept)
 Slope of Regression Line: 87.0 characters per period Intercept of
 Regression Line: 4745.0 characters
 
-![png](../media/78-method-least-squares-17-1.png)
+![least square example](../media/78-method-least-squares-17-1.png)
 
 Had we used a different line to create our estimates, the errors would
 have been different. The graph below shows how large the errors would be
@@ -170,15 +145,15 @@ large errors obtained by using a line that is downright silly.
 lw_errors(50, 10000)
 ```
 
-![png](../media/78-method-least-squares-19-0.png)
+![least square example](../media/78-method-least-squares-19-0.png)
 
 ``` python
 lw_errors(-100, 50000)
 ```
 
-![png](../media/78-method-least-squares-20-0.png)
+![least square example](../media/78-method-least-squares-20-0.png)
 
-### Root Mean Squared Error
+### Root mean squared error
 
 What we need now is one overall measure of the rough size of the errors.
 You will recognize the approach to creating this--it's exactly the way
@@ -196,7 +171,7 @@ interpret. Taking the square root yields the root mean square error
 (rmse), which is in the same units as the variable being predicted and
 therefore much easier to understand.
 
-### Minimizing the Root Mean Squared Error
+### Minimizing the root mean squared error
 
 Our observations so far can be summarized as follows.
 
@@ -226,17 +201,21 @@ def lw_rmse(slope, intercept):
 lw_rmse(50, 10000)
 ```
 
+``` output
 Root mean squared error: 4322.167831766537
+```
 
-![png](../media/78-method-least-squares-24-1.png)
+![least square example](../media/78-method-least-squares-24-1.png)
 
 ``` python
 lw_rmse(-100, 50000)
 ```
 
+``` output
 Root mean squared error: 16710.11983735375
+```
 
-![png](../media/78-method-least-squares-25-1.png)
+![least square example](../media/78-method-least-squares-25-1.png)
 
 Bad lines have large values of rmse, as expected. But the rmse is much
 smaller if we choose a slope and intercept close to those of the
@@ -246,9 +225,11 @@ regression line.
 lw_rmse(90, 4000)
 ```
 
+``` output
 Root mean squared error: 2715.5391063834586
+```
 
-![png](../media/78-method-least-squares-27-1.png)
+![least square example](../media/78-method-least-squares-27-1.png)
 
 Here is the root mean squared error corresponding to the regression
 line. By a remarkable fact of mathematics, no other line can beat this
@@ -261,9 +242,11 @@ one.
 lw_rmse(lw_reg_slope, lw_reg_intercept)
 ```
 
+``` output
 Root mean squared error: 2701.690785311856
+```
 
-![png](../media/78-method-least-squares-29-1.png)
+![least square example](../media/78-method-least-squares-29-1.png)
 
 The proof of this statement requires abstract mathematics that is beyond
 the scope of this course. On the other hand, we do have a powerful tool,
@@ -271,7 +254,7 @@ Python, that performs large numerical computations with ease. So we
 can use Python to confirm that the regression line minimizes the mean
 squared error.
 
-### Numerical Optimization
+### Numerical optimization
 
 First note that a line that minimizes the root mean squared error is
 also a line that minimizes the squared error. The square root makes no
@@ -302,7 +285,9 @@ mean squared error, so we have to take the square root to get the rmse.
 lw_mse(lw_reg_slope, lw_reg_intercept)**0.5
 ```
 
+``` output
 2701.690785311856
+```
 
 That's the same as the value we got by using `lw_rmse` earlier:
 
@@ -310,9 +295,10 @@ That's the same as the value we got by using `lw_rmse` earlier:
 lw_rmse(lw_reg_slope, lw_reg_intercept)
 ```
 
+``` output
 Root mean squared error: 2701.690785311856
-
-![png](../media/78-method-least-squares-36-1.png)
+```
+![least square example](../media/78-method-least-squares-36-1.png)
 
 You can confirm that `lw_mse` returns the correct value for other slopes
 and intercepts too. For example, here is the rmse of the bad
@@ -322,7 +308,9 @@ line that we tried earlier.
 lw_mse(-100, 50000)**0.5
 ```
 
+``` output
 16710.11983735375
+```
 
 And here is the rmse for a line that is close to the regression line.
 
@@ -330,7 +318,9 @@ And here is the rmse for a line that is close to the regression line.
 lw_mse(90, 4000)**0.5
 ```
 
+``` output
 2715.5391063834586
+```
 
 If we experiment with different values, we can find a low-error slope
 and intercept through trial and error, but that would take a while.
@@ -357,7 +347,9 @@ best = minimize(lw_mse)
 best
 ```
 
+``` output
 array(\[ 86.97784117, 4744.78484535\])
+```
 
 These values are the same as the values we calculated earlier by using
 the `slope` and `intercept` functions. We see small deviations due to
@@ -371,11 +363,13 @@ print("intercept from formula:    ", lw_reg_intercept)
 print("intercept from minimize:   ", best.item(1))
 ```
 
+``` output
 slope from formula: 86.97784125829821 slope from minimize:
 86.97784116615884 intercept from formula: 4744.784796574928 intercept
 from minimize: 4744.784845352655
+```
 
-### The Least Squares Line
+### The least squares line
 
 Therefore, we have found not only that the regression line minimizes
 mean squared error, but also that minimizing mean squared error gives us

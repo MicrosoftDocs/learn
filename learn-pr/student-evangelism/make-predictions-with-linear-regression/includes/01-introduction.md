@@ -1,14 +1,3 @@
-``` python
-from datascience import *
-import matplotlib
-path_data = '../../../data/'
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 ### Prediction
 
 An important aspect of data science is to find out what data can tell us
@@ -45,21 +34,23 @@ heights = Table().with_columns(
 heights
 ```
 
-|MidParent|Child|
-|--- |--- |
-|75.43|73.2|
-|75.43|69.2|
-|75.43|69|
-|75.43|69|
-|73.66|73.5|
-|73.66|72.5|
-|73.66|65.5|
-|73.66|65.5|
-|72.06|71|
-|72.06|68|
-
+``` output 
+| MidParent | Child |
+|-----------|-------|
+| 75.43     | 73.2  |
+| 75.43     | 69.2  |
+| 75.43     | 69    |
+| 75.43     | 69    |
+| 73.66     | 73.5  |
+| 73.66     | 72.5  |
+| 73.66     | 65.5  |
+| 73.66     | 65.5  |
+| 72.06     | 71    |
+| 72.06     | 68    |  
 
 ... (924 rows omitted)
+
+```
 
 ``` python
 heights.scatter('MidParent')
@@ -109,7 +100,7 @@ heights_with_predictions = heights.with_column(
 heights_with_predictions.scatter('MidParent')
 ```
 
-![png](../media/75-prediction-10-0.png)
+![predication example](../media/75-prediction-10-0.png)
 
 The prediction at a given midparent height lies roughly at the center of
 the vertical strip of points at the given height. This method of
@@ -167,20 +158,23 @@ hybrid = Table.read_table(path_data + 'hybrid.csv')
 ``` python
 hybrid
 ```
-|vehicle|year|msrp|acceleration|mpg|class|
-|--- |--- |--- |--- |--- |--- |
-|Prius (1st Gen)|1997|24509.7|7.46|41.26|Compact|
-|Tino|2000|35355|8.2|54.1|Compact|
-|Prius (2nd Gen)|2000|26832.2|7.97|45.23|Compact|
-|Insight|2000|18936.4|9.52|53|Two Seater|
-|Civic (1st Gen)|2001|25833.4|7.04|47.04|Compact|
-|Insight|2001|19036.7|9.52|53|Two Seater|
-|Insight|2002|19137|9.71|53|Two Seater|
-|Alphard|2003|38084.8|8.33|40.46|Minivan|
-|Insight|2003|19137|9.52|53|Two Seater|
-|Civic|2003|14071.9|8.62|41|Compact|
+
+``` output
+| vehicle         | year | msrp    | acceleration | mpg   | class      |
+|-----------------|------|---------|--------------|-------|------------|
+| Prius (1st Gen) | 1997 | 24509.7 | 7.46         | 41.26 | Compact    |
+| Tino            | 2000 | 35355   | 8.2          | 54.1  | Compact    |
+| Prius (2nd Gen) | 2000 | 26832.2 | 7.97         | 45.23 | Compact    |
+| Insight         | 2000 | 18936.4 | 9.52         | 53    | Two Seater |
+| Civic (1st Gen) | 2001 | 25833.4 | 7.04         | 47.04 | Compact    |
+| Insight         | 2001 | 19036.7 | 9.52         | 53    | Two Seater |
+| Insight         | 2002 | 19137   | 9.71         | 53    | Two Seater |
+| Alphard         | 2003 | 38084.8 | 8.33         | 40.46 | Minivan    |
+| Insight         | 2003 | 19137   | 9.52         | 53    | Two Seater |
+| Civic           | 2003 | 14071.9 | 8.62         | 41    | Compact    |  
 
 ... (143 rows omitted)
+```
 
 The graph below is a scatter plot of `msrp` *versus* `acceleration`.
 That means `msrp` is plotted on the vertical axis and `acceleration` on
@@ -190,7 +184,7 @@ the horizontal.
 hybrid.scatter('acceleration', 'msrp')
 ```
 
-![png](../media/76-correlation-7-0.png)
+![Correlation Example](../media/76-correlation-7-0.png)
 
 Notice the positive association. The scatter of points is sloping
 upwards, indicating that cars with greater acceleration tended to cost
@@ -207,7 +201,7 @@ scatter plot showed, those were also the cars that tended to cost more.
 hybrid.scatter('mpg', 'msrp')
 ```
 
-![png](../media/76-correlation-9-0.png)
+![Correlation Example](../media/76-correlation-9-0.png)
 
 Along with the negative association, the scatter diagram of price versus
 efficiency shows a non-linear relation between the two variables. The
@@ -223,13 +217,13 @@ suv = hybrid.where('class', 'SUV')
 suv.scatter('mpg', 'msrp')
 ```
 
-![png](../media/76-correlation-11-0.png)
+![correlation example](../media/76-correlation-11-0.png)
 
 ``` python
 suv.scatter('acceleration', 'msrp')
 ```
 
-![png](../media/76-correlation-12-0.png)
+![correlation example](../media/76-correlation-12-0.png)
 
 You will have noticed that we can derive useful information from the
 general orientation and shape of a scatter diagram even without paying
@@ -260,7 +254,7 @@ plots.xlim(-3, 3)
 plots.ylim(-3, 3);
 ```
 
-![png](../media/76-correlation-16-0.png)
+![correlation example](../media/76-correlation-16-0.png)
 
 ``` python
 Table().with_columns(
@@ -271,7 +265,7 @@ plots.xlim(-3, 3)
 plots.ylim(-3, 3);
 ```
 
-![png](../media/76-correlation-17-0.png)
+![correlation example](../media/76-correlation-17-0.png)
 
 The associations that we see in these figures are the same as those we
 saw before. Also, because the two scatter diagrams are now drawn on
@@ -316,25 +310,25 @@ and the variables are said to be *uncorrelated*.
 r_scatter(0.9)
 ```
 
-![png](../media/76-correlation-21-0.png)
+![correlation example](../media/76-correlation-21-0.png)
 
 ``` python
 r_scatter(0.25)
 ```
 
-![png](../media/76-correlation-22-0.png)
+![correlation](../media/76-correlation-22-0.png)
 
 ``` python
 r_scatter(0)
 ```
 
-![png](../media/76-correlation-23-0.png)
+![correlation example](../media/76-correlation-23-0.png)
 
 ``` python
 r_scatter(-0.55)
 ```
 
-![png](../media/76-correlation-24-0.png)
+![correlation example](../media/76-correlation-24-0.png)
 
 ### Calculating $r$
 
@@ -361,14 +355,16 @@ t = Table().with_columns(
 t
 ```
 
-|x|y|
-|--- |--- |
-|1|2|
-|2|3|
-|3|1|
-|4|5|
-|5|2|
-|6|7|
+``` output| x | y |
+|---|---|
+| 1 | 2 |
+| 2 | 3 |
+| 3 | 1 |
+| 4 | 5 |
+| 5 | 2 |
+| 6 | 7 |
+
+```
 
 Based on the scatter diagram, we expect that $r$ will be positive but
 not equal to 1.
@@ -377,7 +373,7 @@ not equal to 1.
 t.scatter(0, 1, s=30, color='red')
 ```
 
-![png](../media/76-correlation-28-0.png)
+![correlation example](../media/76-correlation-28-0.png)
 
 **Step 1.** Convert each variable to standard units.
 
@@ -389,14 +385,16 @@ t_su = t.with_columns(
 t_su
 ```
 
-|x|y|x (standard units)|y (standard units)|
-|--- |--- |--- |--- |
-|1|2|-1.46385|-0.648886|
-|2|3|-0.87831|-0.162221|
-|3|1|-0.29277|-1.13555|
-|4|5|0.29277|0.811107|
-|5|2|0.87831|-0.648886|
-|6|7|1.46385|1.78444|
+``` code
+| x | y | x (standard units) | y (standard units) |
+|---|---|--------------------|--------------------|
+| 1 | 2 | -1.46385           | -0.648886          |
+| 2 | 3 | -0.87831           | -0.162221          |
+| 3 | 1 | -0.29277           | -1.13555           |
+| 4 | 5 | 0.29277            | 0.811107           |
+| 5 | 2 | 0.87831            | -0.648886          |
+| 6 | 7 | 1.46385            | 1.78444            |  
+```
 
 **Step 2.** Multiply each pair of standard units.
 
@@ -405,14 +403,17 @@ t_product = t_su.with_column('product of standard units', t_su.column(2) * t_su.
 t_product
 ```
 
-|x|y|x (standard units)|y (standard units)|product of standard units|
-|--- |--- |--- |--- |--- |
-|1|2|-1.46385|-0.648886|0.949871|
-|2|3|-0.87831|-0.162221|0.142481|
-|3|1|-0.29277|-1.13555|0.332455|
-|4|5|0.29277|0.811107|0.237468|
-|5|2|0.87831|-0.648886|-0.569923|
-|6|7|1.46385|1.78444|2.61215|
+``` output
+| x | y | x (standard units) | y (standard units) | product of standard units |
+|---|---|--------------------|--------------------|---------------------------|
+| 1 | 2 | -1.46385           | -0.648886          | 0.949871                  |
+| 2 | 3 | -0.87831           | -0.162221          | 0.142481                  |
+| 3 | 1 | -0.29277           | -1.13555           | 0.332455                  |
+| 4 | 5 | 0.29277            | 0.811107           | 0.237468                  |
+| 5 | 2 | 0.87831            | -0.648886          | -0.569923                 |
+| 6 | 7 | 1.46385            | 1.78444            | 2.61215                   |
+
+```
 
 **Step 3.** $r$ is the average of the products computed in Step 2.
 
@@ -423,7 +424,9 @@ r = np.mean(t_product.column(4))
 r
 ```
 
+``` output
 0.6174163971897709
+```
 
 As expected, $r$ is positive but not equal to 1.
 
@@ -445,7 +448,7 @@ The calculation shows that:
 t.scatter('y', 'x', s=30, color='red')
 ```
 
-![png](../media/76-correlation-37-0.png)
+![correlation examples](../media/76-correlation-37-0.png)
 
 ### The `correlation` function
 
@@ -468,7 +471,9 @@ by direct application of the formula for $r$.
 correlation(t, 'x', 'y')
 ```
 
+``` output
 0.6174163971897709
+```
 
 As we noticed, the order in which the variables are specified doesn't
 matter.
@@ -477,7 +482,9 @@ matter.
 correlation(t, 'y', 'x')
 ```
 
+``` output
 0.6174163971897709
+```
 
 Calling `correlation` on columns of the table `suv` gives us the
 correlation between price and mileage as well as the correlation between
@@ -487,13 +494,17 @@ price and acceleration.
 correlation(suv, 'mpg', 'msrp')
 ```
 
+``` output
 -0.6667143635709919
+```
 
 ``` python
 correlation(suv, 'acceleration', 'msrp')
 ```
 
+``` output
 0.48699799279959155
+```
 
 These values confirm what we had observed:
 
@@ -507,7 +518,7 @@ Correlation is a simple and powerful concept, but it is sometimes
 misused. Before using $r$, it is important to be aware of what
 correlation does and does not measure.
 
-### Association is not Causation
+### Association is not causation
 
 Correlation only measures association. Correlation does not imply
 causation. Though the correlation between the weight and the math
@@ -517,7 +528,7 @@ improves the children's math skills. Age is a confounding variable:
 older children are both heavier and better at math than younger
 children, on average.
 
-### Correlation Measures *Linear* Association
+### Correlation measures *linear* association
 
 Correlation measures only one kind of association--linear. Variables
 that have strong non-linear association might have low correlation.
@@ -533,7 +544,7 @@ nonlinear = Table().with_columns(
 nonlinear.scatter('x', 'y', s=30, color='r')
 ```
 
-![png](../media/76-correlation-51-0.png)
+![correlation example](../media/76-correlation-51-0.png)
 
 ``` python
 correlation(nonlinear, 'x', 'y')
@@ -541,7 +552,7 @@ correlation(nonlinear, 'x', 'y')
 
 0.0
 
-### Correlation is Affected by Outliers
+### Correlation is affected by outliers
 
 Outliers can have a significant effect on correlation. Here is an example where
 a scatter plot for which $r$ is equal to 1 is turned into a plot for
@@ -555,13 +566,16 @@ line = Table().with_columns(
 line.scatter('x', 'y', s=30, color='r')
 ```
 
-![png](../media/76-correlation-54-0.png)
+![correlation example](../media/76-correlation-54-0.png)
 
 ``` python
 correlation(line, 'x', 'y')
 ```
 
+``` output
 1.0
+
+```
 
 ``` python
 outlier = Table().with_columns(
@@ -577,9 +591,11 @@ outlier.scatter('x', 'y', s=30, color='r')
 correlation(outlier, 'x', 'y')
 ```
 
+``` output
 0.0
+```
 
-### Ecological Correlations Should be Interpreted with Care
+### Ecological correlations should be interpreted with care
 
 Correlations based on aggregated data can be misleading. As an example,
 here are data on the Critical Reading and Math SAT scores in 2014. There
@@ -593,20 +609,23 @@ of the total scores on the test.
 sat2014 = Table.read_table(path_data + 'sat2014.csv').sort('State')
 sat2014
 ```
-|State|Participation Rate|Critical Reading|Math|Writing|Combined|
-|--- |--- |--- |--- |--- |--- |
-|Alabama|6.7|547|538|532|1617|
-|Alaska|54.2|507|503|475|1485|
-|Arizona|36.4|522|525|500|1547|
-|Arkansas|4.2|573|571|554|1698|
-|California|60.3|498|510|496|1504|
-|Colorado|14.3|582|586|567|1735|
-|Connecticut|88.4|507|510|508|1525|
-|Delaware|100|456|459|444|1359|
-|District of Columbia|100|440|438|431|1309|
-|Florida|72.2|491|485|472|1448|
+
+``` output 
+| State                | Participation Rate | Critical Reading | Math | Writing | Combined |
+|----------------------|--------------------|------------------|------|---------|----------|
+| Alabama              | 6.7                | 547              | 538  | 532     | 1617     |
+| Alaska               | 54.2               | 507              | 503  | 475     | 1485     |
+| Arizona              | 36.4               | 522              | 525  | 500     | 1547     |
+| Arkansas             | 4.2                | 573              | 571  | 554     | 1698     |
+| California           | 60.3               | 498              | 510  | 496     | 1504     |
+| Colorado             | 14.3               | 582              | 586  | 567     | 1735     |
+| Connecticut          | 88.4               | 507              | 510  | 508     | 1525     |
+| Delaware             | 100                | 456              | 459  | 444     | 1359     |
+| District of Columbia | 100                | 440              | 438  | 431     | 1309     |
+| Florida              | 72.2               | 491              | 485  | 472     | 1448     |  
 
 ... (41 rows omitted)
+```
 
 The scatter diagram of Math scores versus Critical Reading scores is
 tightly clustered around a straight-line; the correlation is close
@@ -616,13 +635,15 @@ to 0.985.
 sat2014.scatter('Critical Reading', 'Math')
 ```
 
-![png](../media/76-correlation-61-0.png)
+![correlation example](../media/76-correlation-61-0.png)
 
 ``` python
 correlation(sat2014, 'Critical Reading', 'Math')
 ```
 
+``` output
 0.9847558411067434
+```
 
 That's a high correlation. But it's important to note that
 this does not reflect the strength of the relation between the Math and
@@ -662,14 +683,14 @@ from IPython.display import Image
 Image("../../../images/chocoNobel.png")
 ```
 
-![png](../media/76-correlation-65-0.png)
+![correlation example](../media/76-correlation-65-0.png)
 
 ``` python
 from IPython.display import Image
 Image("../media/choco-nobel.png")
 ```
 
-![png](../media/76-correlation-65-0.png)
+![correlation example](../media/76-correlation-65-0.png)
 
 ## Learning Objectives
 

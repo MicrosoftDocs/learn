@@ -1,19 +1,9 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **regression-line.ipynb** in your virtual environment
+> You can find an interactive version of this unit named **regression-line.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setting up your virtual environment**
 
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
-
-
-``` python
-from datascience import *
-import numpy as np
-path_data = '../../../../data/'
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-```
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 The correlation coefficient $r$ doesn't just measure how clustered the
 points in a scatter plot are about a straight line. It also helps
@@ -58,7 +48,7 @@ heights_with_predictions = heights.with_column(
 heights_with_predictions.scatter('MidParent')
 ```
 
-![png](../media/77-regression-line-5-0.png)
+![regression example](../media/77-regression-line-5-0.png)
 
 ### Measuring in Standard Units
 
@@ -80,20 +70,22 @@ heights_SU = Table().with_columns(
 heights_SU
 ```
 
-|MidParent SU|Child SU|
-|--- |--- |
-|3.45465|1.80416|
-|3.45465|0.686005|
-|3.45465|0.630097|
-|3.45465|0.630097|
-|2.47209|1.88802|
-|2.47209|1.60848|
-|2.47209|-0.348285|
-|2.47209|-0.348285|
-|1.58389|1.18917|
-|1.58389|0.350559|
+``` output
+| MidParent SU | Child SU  |
+|--------------|-----------|
+| 3.45465      | 1.80416   |
+| 3.45465      | 0.686005  |
+| 3.45465      | 0.630097  |
+| 3.45465      | 0.630097  |
+| 2.47209      | 1.88802   |
+| 2.47209      | 1.60848   |
+| 2.47209      | -0.348285 |
+| 2.47209      | -0.348285 |
+| 1.58389      | 1.18917   |
+| 1.58389      | 0.350559  |
 
 ... (924 rows omitted)
+```
 
 On this scale, we can calculate our predictions exactly as before. But
 first we have to figure out how to convert our old definition of "close"
@@ -110,13 +102,17 @@ sd_midparent = np.std(heights.column(0))
 sd_midparent
 ```
 
+``` output
 1.8014050969207571
+```
 
 ``` python
 0.5/sd_midparent
 ```
 
+``` output
 0.277561110965367
+```
 
 We are now ready to modify our prediction function to make predictions
 on the standard units scale. All that has changed is that we are using
@@ -142,13 +138,13 @@ heights_with_su_predictions = heights_SU.with_column(
 heights_with_su_predictions.scatter('MidParent SU')
 ```
 
-![png](../media/77-regression-line-15-0.png)
+![regression example](../media/77-regression-line-15-0.png)
 
 This plot looks exactly like the plot drawn on the original scale. Only
 the numbers on the axes have changed. This confirms that we can
 understand the prediction process by just working in standard units.
 
-### Identifying the Line in Standard Units
+### Identifying the line in standard units
 
 Galton's scatter plot has a *football* shape--that is, it is roughly
 oval like an American football. Not all scatter plots are football
@@ -176,7 +172,7 @@ plots.xlabel('x in standard units')
 plots.ylabel('y in standard units');
 ```
 
-![png](../media/77-regression-line-18-0.png)
+![regression example](../media/77-regression-line-18-0.png)
 
 But the 45-degree line is not the line that picks off the centers of the
 vertical strips. You can see that in the figure below, where the
@@ -200,7 +196,7 @@ plots.xlabel('x in standard units')
 plots.ylabel('y in standard units');
 ```
 
-![png](../media/77-regression-line-20-0.png)
+![regression example](../media/77-regression-line-20-0.png)
 
 So the 45-degree line is not the "graph of averages." That line is the
 green one shown below.
@@ -221,7 +217,7 @@ plots.xlabel('x in standard units')
 plots.ylabel('y in standard units');
 ```
 
-![png](../media/77-regression-line-22-0.png)
+![regression example](../media/77-regression-line-22-0.png)
 
 Both lines go through the origin (0, 0). The green line goes through the
 centers of the vertical strips (at least roughly), and is *flatter* than
@@ -232,7 +228,7 @@ of averages" line is a value that is positive but less than 1.
 
 What value could that be? You've guessed it--it's $r$.
 
-### The Regression Line, in Standard Units
+### The regression line, in standard units
 
 The green "graph of averages" line is called the *regression line*, for
 reasons we will explain shortly. But first, let's simulate some football
@@ -264,19 +260,19 @@ def regression_line(r):
 regression_line(0.95)
 ```
 
-![png](../media/77-regression-line-26-0.png)
+![regression example](../media/77-regression-line-26-0.png)
 
 ``` python
 regression_line(0.6)
 ```
 
-![png](../media/77-regression-line-27-0.png)
+![regression example](../media/77-regression-line-27-0.png)
 
 When $r$ is close to 1, the scatter plot, the 45-degree line, and the
 regression line are all close to each other. But for more moderate
 values of $r$, the regression line is noticeably flatter.
 
-### The Regression Effect
+### The regression effect
 
 In terms of prediction, this means that for a parent whose midparent
 height is at 1.5 standard units, our prediction of the child's height is
@@ -300,7 +296,7 @@ general, individuals who are away from average on one variable are
 expected to be not quite as far away from average on the other. This is
 called the *regression effect*.
 
-### The Equation of the Regression Line
+### The equation of the regression line
 
 In regression, we use the value of one variable (which we will call $x$)
 to predict the value of another (which we will call $y$). When the
@@ -361,7 +357,9 @@ galton_r = correlation(heights, 'MidParent', 'Child')
 galton_r
 ```
 
+``` output
 0.32094989606395924
+```
 
 We can also find the equation of the regression line for predicting the
 child's height based on midparent height.
@@ -372,7 +370,9 @@ galton_intercept = intercept(heights, 'MidParent', 'Child')
 galton_slope, galton_intercept
 ```
 
+``` output
 (0.637360896969479, 22.63624054958975)
+```
 
 The equation of the regression line is
 
@@ -390,7 +390,9 @@ equation predicts the child's height to be 67.56 inches.
 galton_slope*70.48 + galton_intercept
 ```
 
+``` output
 67.55743656799862
+```
 
 Our original prediction, created by taking the average height of all
 children who had midparent heights close to 70.48, came out to be
@@ -401,13 +403,15 @@ close: 67.63 inches compared to the regression line's prediction of
 heights_with_predictions.where('MidParent', are.equal_to(70.48)).show(3)
 ```
 
-|MidParent|Child|Prediction|
-|--- |--- |--- |
-|70.48|74|67.6342|
-|70.48|70|67.6342|
-|70.48|68|67.6342|
+``` output
+| MidParent | Child | Prediction |
+|-----------|-------|------------|
+| 70.48     | 74    | 67.6342    |
+| 70.48     | 70    | 67.6342    |
+| 70.48     | 68    | 67.6342    |
 
 ... (5 rows omitted)
+```
 
 Here are all of the rows in Galton's table, along with our original
 predictions and the new regression predictions of the children's
@@ -419,26 +423,29 @@ heights_with_predictions = heights_with_predictions.with_column(
 )
 heights_with_predictions
 ```
-|MidParent|Child|Prediction|Regression Prediction|
-|--- |--- |--- |--- |
-|75.43|73.2|70.1|70.7124|
-|75.43|69.2|70.1|70.7124|
-|75.43|69|70.1|70.7124|
-|75.43|69|70.1|70.7124|
-|73.66|73.5|70.4158|69.5842|
-|73.66|72.5|70.4158|69.5842|
-|73.66|65.5|70.4158|69.5842|
-|73.66|65.5|70.4158|69.5842|
-|72.06|71|68.5025|68.5645|
-|72.06|68|68.5025|68.5645|
+
+``` output
+| MidParent | Child | Prediction | Regression Prediction |
+|-----------|-------|------------|-----------------------|
+| 75.43     | 73.2  | 70.1       | 70.7124               |
+| 75.43     | 69.2  | 70.1       | 70.7124               |
+| 75.43     | 69    | 70.1       | 70.7124               |
+| 75.43     | 69    | 70.1       | 70.7124               |
+| 73.66     | 73.5  | 70.4158    | 69.5842               |
+| 73.66     | 72.5  | 70.4158    | 69.5842               |
+| 73.66     | 65.5  | 70.4158    | 69.5842               |
+| 73.66     | 65.5  | 70.4158    | 69.5842               |
+| 72.06     | 71    | 68.5025    | 68.5645               |
+| 72.06     | 68    | 68.5025    | 68.5645               |
 
 ... (924 rows omitted)
+```
 
 ``` python
 heights_with_predictions.scatter('MidParent')
 ```
 
-![png](../media/77-regression-line-43-0.png)
+![regression example](../media/77-regression-line-43-0.png)
 
 The grey dots show the regression predictions, all on the regression
 line. Notice how the line is close to the gold graph of averages.
@@ -466,7 +473,7 @@ It is easier to see the line in the graph below than in the one above.
 heights.with_column('Fitted', fit(heights, 'MidParent', 'Child')).scatter('MidParent')
 ```
 
-![png](../media/77-regression-line-48-0.png)
+![regression example](../media/77-regression-line-48-0.png)
 
 Another way to draw the line is to use the option `fit_line=True` with
 the Table method `scatter`.
@@ -475,7 +482,7 @@ the Table method `scatter`.
 heights.scatter('MidParent', fit_line=True)
 ```
 
-![png](../media/77-regression-line-50-0.png)
+![regression example](../media/77-regression-line-50-0.png)
 
 ### Units of Measurement of the Slope
 
@@ -495,13 +502,15 @@ baby = Table.read_table(path_data + 'baby.csv')
 baby.scatter('Maternal Height', 'Maternal Pregnancy Weight', fit_line=True)
 ```
 
-![png](../media/77-regression-line-53-0.png)
+![regression example](../media/77-regression-line-53-0.png)
 
 ``` python
 slope(baby, 'Maternal Height', 'Maternal Pregnancy Weight')
 ```
 
+``` output
 3.572846259275056
+```
 
 The slope of the regression line is **3.57 pounds per inch**. This means
 that for two women who are 1 inch apart in height, our prediction of
@@ -572,10 +581,6 @@ decreases.
 Even though we won't establish the mathematical basis for the regression
 equation, we can see that it gives good predictions when the
 scatter plot is football shaped. It is a surprising mathematical fact
-that no matter what the shape of the scatter plot, the same equation
-gives the "best" among all straight lines. That's the topic of the next
-section.
-prising mathematical fact
 that no matter what the shape of the scatter plot, the same equation
 gives the "best" among all straight lines. That's the topic of the next
 section.

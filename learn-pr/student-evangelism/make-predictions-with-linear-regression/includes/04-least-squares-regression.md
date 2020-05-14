@@ -1,36 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
-``` python
-
-def standard_units(any_numbers):
-    "Convert any array of numbers to standard units."
-    return (any_numbers - np.mean(any_numbers))/np.std(any_numbers)  
-
-def correlation(t, x, y):
-    return np.mean(standard_units(t.column(x))*standard_units(t.column(y)))
-
-def slope(table, x, y):
-    r = correlation(table, x, y)
-    return r * np.std(table.column(y))/np.std(table.column(x))
-
-def intercept(table, x, y):
-    a = slope(table, x, y)
-    return np.mean(table.column(y)) - a * np.mean(table.column(x))
-
-def fit(table, x, y):
-    """Return the height of the regression line at each x value."""
-    a = slope(table, x, y)
-    b = intercept(table, x, y)
-    return a * table.column(x) + b
-```
-
 In an earlier section, we developed formulas for the slope and intercept
 of the regression line through a *football shaped* scatter diagram. It
 turns out that the slope and intercept of the least squares line have
@@ -58,26 +25,28 @@ shotput = Table.read_table(path_data + 'shotput.csv')
 shotput
 ```
 
-|Weight Lifted|Shot Put Distance|
-|--- |--- |
-|37.5|6.4|
-|51.5|10.2|
-|61.3|12.4|
-|61.3|13|
-|63.6|13.2|
-|66.1|13|
-|70|12.7|
-|92.7|13.9|
-|90.5|15.5|
-|90.5|15.8|
+``` output
+| Weight Lifted | Shot Put Distance |
+|---------------|-------------------|
+| 37.5          | 6.4               |
+| 51.5          | 10.2              |
+| 61.3          | 12.4              |
+| 61.3          | 13                |
+| 63.6          | 13.2              |
+| 66.1          | 13                |
+| 70            | 12.7              |
+| 92.7          | 13.9              |
+| 90.5          | 15.5              |
+| 90.5          | 15.8              |  
 
 ... (18 rows omitted)
+```
 
 ``` python
 shotput.scatter('Weight Lifted')
 ```
 
-![png](../media/79-least-squares-regression-5-0.png)
+![regression example](../media/79-least-squares-regression-5-0.png)
 
 That's not a football shaped scatter plot. In fact, it seems to have a
 slight non-linear component. But if we insist on using a straight line
@@ -91,13 +60,17 @@ for football shaped scatter plots, give the following values.
 slope(shotput, 'Weight Lifted', 'Shot Put Distance')
 ```
 
+``` output
 0.09834382159781997
+```
 
 ``` python
 intercept(shotput, 'Weight Lifted', 'Shot Put Distance')
 ```
 
+``` output
 5.959629098373952
+```
 
 Does it still make sense to use these formulas even though the scatter
 plot isn't football shaped? We can answer this by finding the slope and
@@ -120,7 +93,9 @@ def shotput_linear_mse(any_slope, any_intercept):
 minimize(shotput_linear_mse)
 ```
 
+``` output
 array(\[0.09834382, 5.95962911\])
+```
 
 These values are the same as those we got by using our formulas. To
 summarize:
@@ -144,9 +119,9 @@ fitted = fit(shotput, 'Weight Lifted', 'Shot Put Distance')
 shotput.with_column('Best Straight Line', fitted).scatter('Weight Lifted')
 ```
 
-![png](../media/79-least-squares-regression-13-0.png)
+![regression example](../media/79-least-squares-regression-13-0.png)
 
-### Nonlinear Regression
+### Nonlinear regression
 
 The graph above reinforces our earlier observation that the scatter plot
 is a bit curved. So it is better to fit a curve than a straight line.
@@ -196,7 +171,9 @@ best = minimize(shotput_quadratic_mse)
 best
 ```
 
+``` output
 array(\[-1.04004838e-03, 2.82708045e-01, -1.53182115e+00\])
+```
 
 Our prediction of the shot put distance for an athlete who lifts $x$
 kilograms is about $$
@@ -209,7 +186,9 @@ center of a vertical strip around 100 kilograms.
 (-0.00104)*(100**2) + 0.2827*100 - 1.5318
 ```
 
+``` output
 16.3382
+```
 
 Here are the predictions for all the values of `Weight Lifted`. You can
 see that they go through the center of the scatter plot, to a rough
@@ -224,4 +203,4 @@ shotput_fit = best.item(0)*(x**2) + best.item(1)*x + best.item(2)
 shotput.with_column('Best Quadratic Curve', shotput_fit).scatter(0)
 ```
 
-![png](../media/79-least-squares-regression-23-0.png)
+![regression example](../media/79-least-squares-regression-23-0.png)
