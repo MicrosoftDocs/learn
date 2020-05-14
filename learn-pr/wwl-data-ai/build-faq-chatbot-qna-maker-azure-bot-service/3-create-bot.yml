@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.create-bot
+title: Exercise - Create a bot
+metadata:
+  title: Exercise - Create a bot
+  description: "Get hands-on and create a bot."
+  ms.date: 04/24/2020
+  author: benjiang
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-create-bot.md)]

@@ -1,12 +1,19 @@
-The ratings web front end is a Node.js application. Recall that you've already created an Azure Container Registry instance. You used it to build a Docker image of the front end and store it in a repository.
+The Fruit Smoothies' ratings website consists of several components. There's a web frontend, a document database that stores captured data, and a RESTful ratings API that allows the web frontend to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
 
-In this exercise, you deploy that Docker image of the front end to Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](/azure/aks/concepts-clusters-workloads?azure-portal=true#deployments-and-yaml-manifests). You then expose it through a load balancer by creating a Kubernetes [service](/azure/aks/concepts-network?azure-portal=true#services). Additionally, you configure the front end to connect to the ratings API that you already deployed.
+In the previous unit, you deployed the ratings API. You'll continue your deployment and deploy the ratings web front end. The ratings web front end is a Node.js application. Recall that you've already created an Azure Container Registry instance. You used it to build a Docker image of the front end and store it in a repository.
 
-By the end of this unit, you should have deployed the ratings web front end and configured it to communicate with the ratings API. The front end is exposed through a public IP.
+In this exercise, you will:
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/06-arch-3.svg)
+> [!div class="checklist"]
+> - Create a Kubernetes deployment for the web front end
+> - Create a Kubernetes service manifest file to expose the web front end as a load-balanced service
+> - Test the web front end
 
-## Create a Kubernetes deployment file for the ratings web front end
+:::image type="content" source="../media/06-arch-3.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
+
+## Create a Kubernetes deployment for the ratings web front end
+
+Let's start by creating a deployment for the ratings front end.
 
 1. Create a file called `ratings-web-deployment.yaml` by using the integrated editor.
 
@@ -48,27 +55,19 @@ By the end of this unit, you should have deployed the ratings web front end and 
                 memory: 512Mi
     ```
 
-    In the `image` key update, the value replaces `<acrname>` with the name of your Container Registry instance.
+1. In the `image` key update, the value replaces `<acrname>` with the name of your Container Registry instance.
 
 1. Review the file, and note the following points:
 
-    - **Image**
+    - `image`: You'll create a deployment running the image you pushed in the Container Registry instance you created earlier, for example, `acr4229.azurecr.io/ratings-web:v1`. The container listens to port `8080`. The deployment and the pods are labeled with `app=ratings-web`.
 
-       You'll create a deployment running the image you pushed in the Container Registry instance you created earlier, for example, `acr4229.azurecr.io/ratings-web:v1`. The container listens to port `8080`. The deployment and the pods are labeled with `app=ratings-web`.
+    - `env`: The ratings front end expects to connect to the API endpoint configured in an `API` environment variable. If you used the defaults and deployed the ratings API service in the `ratingsapp` namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
 
-    - **Environment variables**
-
-       The ratings front end expects to connect to the API endpoint configured in an `API` environment variable. If you used the defaults and deployed the ratings API service in the `ratingsapp` namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
-
-    - **Resource requests and limits**
-
-       Each container instance is allocated a minimum of 0.25 cores and 64 Mb of memory. The Kubernetes scheduler looks for a node with available capacity to schedule such a pod. A container might or might not be allowed to exceed its CPU limit for extended periods. But it won't be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
+    - `resources`: Each container instance is given a minimum of 0.25 cores and 64 Mb of memory. The Kubernetes scheduler looks for a node with available capacity to schedule such a pod. A container might or might not be allowed to exceed its CPU limit for extended periods. But it won't be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-## Apply the Kubernetes deployment file
-
-1. Apply the configuration by using the `kubectl apply` command. You'll deploy the application in the `ratingsapp` namespace.
+1. Apply the configuration by using the `kubectl apply` command and deploy the application in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -82,7 +81,7 @@ By the end of this unit, you should have deployed the ratings web front end and 
     deployment.apps/ratings-web created
     ```
 
-1. Watch the pods rolling out. You'll query for pods in the `ratingsapp` namespace that are labeled with `app=ratings-web`.
+1. You can *watch* the pods rolling out using the `-w` flag with the `kubectl get pods` command. Make sure to query for pods in the `ratingsapp` namespace that are labeled with `app=ratings-web`. Select <kbd>Ctrl+C</kbd> to stop watching.
 
     ```bash
     kubectl get pods --namespace ratingsapp -l app=ratings-web -w
@@ -110,9 +109,11 @@ By the end of this unit, you should have deployed the ratings web front end and 
     ratings-web   1/1     1            1           2m
     ```
 
-## Create a Kubernetes service file for the ratings API service
+## Create a Kubernetes service for the ratings web front end
 
-To simplify the network configuration for application workloads, Kubernetes uses [services](/azure/aks/concepts-network?azure-portal=true#services) to logically group a set of pods together and provide network connectivity.
+Your next step is to simplify the network configuration for your application workloads. Use a Kubernetes service to group your pods and provide network connectivity.
+
+You'll use a Kubernetes *LoadBalancer* instead of a *ClusterIP* for this service. A *LoadBalancer* allows you to expose a Kubernetes service on a public IP in the cluster. The type makes the service reachable from outside the cluster.
 
 1. Create a file called `ratings-web-service.yaml` by using the integrated editor.
 
@@ -139,23 +140,15 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
 1. Review the file, and note the following points:
 
-    - **Selector**
+    - `selector`: The set of pods targeted by a service is determined by the selector. In the following example, Kubernetes load balances traffic to pods that have the label `app: ratings-web`. The label was defined when you created the deployment. The controller for the service continuously scans for pods that match that label to add them to the load balancer.
 
-       The set of pods targeted by a service is determined by the selector. In the following example, Kubernetes load balances traffic to pods that have the label `app: ratings-web`. The label was defined when you created the deployment. The controller for the service continuously scans for pods that match that label to add them to the load balancer.
+    - `ports`: A service can map an incoming `port` to `targetPort`. The incoming port is what the service responds to. The target port is what the pods are configured to listen to. For example, the service is exposed externally at port `80` and load balances the traffic to the ratings-web pods listening on port `8080`.
 
-    - **Ports**
-
-       A service can map an incoming `port` to `targetPort`. The incoming port is what the service responds to. The target port is what the pods are configured to listen to. For example, the service is exposed externally at port `80` and load balances the traffic to the ratings-web pods listening on port `8080`.
-
-    - **Type**
-
-       A service of type **LoadBalancer** creates a public IP address in Azure and assigns it to Azure Load Balancer. Choosing this value makes the service reachable from outside the cluster.
+    - `type`: A service of type `LoadBalancer` creates a public IP address in Azure and assigns it to Azure Load Balancer. Choosing this value makes the service reachable from outside the cluster.
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-## Apply the Kubernetes service file to create a load-balanced service
-
-1. Apply the configuration by using the `kubectl apply` command. Deploy the service in the `ratingsapp` namespace.
+1. Apply the configuration by using the `kubectl apply` command to deploy the service in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -169,7 +162,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
     service/ratings-web created
     ```
 
-1. Next, let's check the status of the service. It takes a few minutes for the service to acquire the public IP. Run the following command with a *watch* by adding the `-w` flag to see it update in real time. Select <kbd>Ctrl+C</kbd> to stop watching.
+1. Next, let's check the status of the service. It takes a few minutes for the service to acquire the public IP. Run the `kubectl get service` command with a *watch* by adding the `-w` flag to see it update in real time. Select <kbd>Ctrl+C</kbd> to stop watching.
 
     ```bash
     kubectl get service ratings-web --namespace ratingsapp -w
@@ -189,9 +182,13 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
 Now that the ratings-web service has a public IP, open the IP in a web browser, for example, at <http://13.90.152.99>, to view and interact with the application.
 
-:::image type="content" source="../media/06-ratings-web.png" alt-text="Screenshot of the ratings-web application." loc-scope="other"::: <!-- no-loc -->
+:::image type="content" source="../media/06-ratings-web.png" alt-text="Screenshot of the ratings-web application running in a browser.":::
+
+## Summary
 
 In this exercise, you created a deployment of **ratings-web** and exposed it to the internet through a LoadBalancer type service.
 
 - **Deployment/ratings-web**: The web front end.
 - **Service/ratings-web**: The load-balanced service, which is exposed on Azure Load Balancer through a public IP.
+
+Next, we'll improve the network accessibility of the application by using Ingress.

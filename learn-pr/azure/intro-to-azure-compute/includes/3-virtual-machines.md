@@ -48,7 +48,7 @@ With an availability set, you get:
 - Up to three fault domains that each have a server rack with dedicated power and network resources
 - Five logical update domains which then can be increased to a maximum of 20
 
-Your VMs are then sequentially placed across the fault and update domains. The following diagram shows an example where you have six VMs in an availability set distributed across the two fault domains and five update domains.
+Your VMs are then sequentially placed across the fault and update domains. The following diagram shows an example where you have six VMs in two availability sets distributed across the two fault domains and five update domains.
 
 ![Diagram that shows availability sets update and fault domains that are duplicated across servers](../media/3-availability-sets.png)
 

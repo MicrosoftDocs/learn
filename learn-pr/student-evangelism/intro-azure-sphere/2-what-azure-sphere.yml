@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-azure-sphere.what-azure-sphere
+title: What is Azure Sphere?
+metadata:
+  title: What is Azure Sphere?
+  description: In this section, we provide a definition of the product and discuss the value proposition of the product.
+  ms.date: 03/31/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 8 # dummy number at present
+content: |
+  [!include[](includes/2-what-azure-sphere.md)]
