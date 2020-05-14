@@ -18,7 +18,8 @@ abstract: |
   - Databricks runtime
   - HA/DR
   - Clusters
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/describe-azure-databricks-best-practices.svg
 levels:
 - intermediate
