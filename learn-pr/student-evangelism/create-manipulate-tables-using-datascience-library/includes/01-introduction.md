@@ -45,11 +45,13 @@ Below, we begin each example with an empty table that has no columns.
 Table().with_columns('Number of petals', make_array(8, 34, 5))
 ```
 
+``` output
 |Number of petals|
 |--- |
 |8|
 |34|
 |5|
+```
 
 To add two (or more) new columns, provide the label and array for each
 column. All columns must have the same length, or an error will occur.
@@ -61,11 +63,13 @@ Table().with_columns(
 )
 ```
 
+``` output
 |Number of petals|Name|
 |--- |--- |
 |8|lotus|
 |34|sunflower|
 |5|rose|
+```
 
 We can give this table a name, and then extend the table with another
 column.
@@ -81,11 +85,13 @@ flowers.with_columns(
 )
 ```
 
+``` output
 |Number of petals|Name|Color|
 |--- |--- |--- |
 |8|lotus|pink|
 |34|sunflower|yellow|
 |5|rose|red|
+```
 
 The `with_columns` method creates a new table each time it is called, so
 the original table is not affected. For example, the table `flowers`
@@ -95,11 +101,13 @@ still has only the two columns that it had when it was created.
 flowers
 ```
 
+``` output
 |Number of petals|Name|
 |--- |--- |
 |8|lotus|
 |34|sunflower|
 |5|rose|
+```
 
 Creating tables in this way involves a lot of typing. If the data have
 already been entered somewhere, it is usually possible to use Python to
@@ -117,6 +125,7 @@ minard = Table.read_table(path_data + 'minard.csv')
 minard
 ```
 
+``` output
 |Longitude|Latitude|City|Direction|Survivors|
 |--- |--- |--- |--- |--- |
 |32|54.8|Smolensk|Advance|145000|
@@ -126,7 +135,8 @@ minard
 |34.3|55.2|Wixma|Retreat|55000|
 |32|54.6|Smolensk|Retreat|24000|
 |30.4|54.4|Orscha|Retreat|20000|
-|26.8|54.3|Moiodexno|Retreat|12000|
+|26.8|54.3|Moiodexno|Retreat|12000|  
+```
 
 We will use this small table to demonstrate some useful Table methods.
 We will then use those same methods, and develop other methods, on much
@@ -141,13 +151,17 @@ The method `num_columns` gives the number of columns in the table, and
 minard.num_columns
 ```
 
+``` output
 5
+```
 
 ``` python
 minard.num_rows
 ```
 
+``` output
 8
+```
 
 ### Column Labels
 
@@ -159,7 +173,9 @@ tables that are so large that not all columns are visible on the screen.
 minard.labels
 ```
 
+``` output
 ('Longitude', 'Latitude', 'City', 'Direction', 'Survivors')
+```
 
 We can change column labels using the `relabeled` method. This creates a
 new table and leaves `minard` unchanged.
@@ -168,6 +184,7 @@ new table and leaves `minard` unchanged.
 minard.relabeled('City', 'City Name')
 ```
 
+``` output
 |Longitude|Latitude|City Name|Direction|Survivors|
 |--- |--- |--- |--- |--- |
 |32|54.8|Smolensk|Advance|145000|
@@ -177,7 +194,9 @@ minard.relabeled('City', 'City Name')
 |34.3|55.2|Wixma|Retreat|55000|
 |32|54.6|Smolensk|Retreat|24000|
 |30.4|54.4|Orscha|Retreat|20000|
-|26.8|54.3|Moiodexno|Retreat|12000|
+|26.8|54.3|Moiodexno|Retreat|12000|  
+
+```
 
 However, this method does not change the original table.
 
@@ -185,6 +204,7 @@ However, this method does not change the original table.
 minard
 ```
 
+``` output
 |Longitude|Latitude|City|Direction|Survivors|
 |--- |--- |--- |--- |--- |
 |32|54.8|Smolensk|Advance|145000|
@@ -194,7 +214,9 @@ minard
 |34.3|55.2|Wixma|Retreat|55000|
 |32|54.6|Smolensk|Retreat|24000|
 |30.4|54.4|Orscha|Retreat|20000|
-|26.8|54.3|Moiodexno|Retreat|12000|
+|26.8|54.3|Moiodexno|Retreat|12000|  
+
+```
 
 A common pattern is to assign the original name `minard` to the new
 table, so that all future uses of `minard` will refer to the relabeled
@@ -205,6 +227,7 @@ minard = minard.relabeled('City', 'City Name')
 minard
 ```
 
+``` outpput
 |Longitude|Latitude|City Name|Direction|Survivors|
 |--- |--- |--- |--- |--- |
 |32|54.8|Smolensk|Advance|145000|
@@ -214,7 +237,9 @@ minard
 |34.3|55.2|Wixma|Retreat|55000|
 |32|54.6|Smolensk|Retreat|24000|
 |30.4|54.4|Orscha|Retreat|20000|
-|26.8|54.3|Moiodexno|Retreat|12000|
+|26.8|54.3|Moiodexno|Retreat|12000|  
+
+```
 
 ### Accessing the Data in a Column
 
@@ -224,7 +249,10 @@ We can use a column's label to access the array of data in the column.
 minard.column('Survivors')
 ```
 
+``` output
+
 array(\[145000, 140000, 127100, 100000, 55000, 24000, 20000, 12000\])
+```
 
 The 5 columns are indexed 0, 1, 2, 3, and 4. The column `Survivors` can
 also be accessed by using its column index.
@@ -233,7 +261,9 @@ also be accessed by using its column index.
 minard.column(4)
 ```
 
+``` output
 array(\[145000, 140000, 127100, 100000, 55000, 24000, 20000, 12000\])
+```
 
 The 8 items in the array are indexed 0, 1, 2, and so on, up to 7. The
 items in the column can be accessed using `item`, as with any array.
@@ -242,13 +272,17 @@ items in the column can be accessed using `item`, as with any array.
 minard.column(4).item(0)
 ```
 
+``` output
 145000
+```
 
 ``` python
 minard.column(4).item(5)
 ```
 
+``` output
 24000
+```
 
 ### Working with the Data in a Column
 
@@ -264,6 +298,7 @@ minard = minard.with_columns(
 minard
 ```
 
+``` output
 |Longitude|Latitude|City Name|Direction|Survivors|Percent Surviving|
 |--- |--- |--- |--- |--- |--- |
 |32|54.8|Smolensk|Advance|145000|1|
@@ -273,7 +308,8 @@ minard
 |34.3|55.2|Wixma|Retreat|55000|0.37931|
 |32|54.6|Smolensk|Retreat|24000|0.165517|
 |30.4|54.4|Orscha|Retreat|20000|0.137931|
-|26.8|54.3|Moiodexno|Retreat|12000|0.0827586|
+|26.8|54.3|Moiodexno|Retreat|12000|0.0827586|  
+```
 
 To make the proportions in the new columns appear as percents, we can
 use the method `set_format` with the option `PercentFormatter`. The
@@ -285,6 +321,7 @@ percentages.
 minard.set_format('Percent Surviving', PercentFormatter)
 ```
 
+``` output
 |Longitude|Latitude|City Name|Direction|Survivors|Percent Surviving|
 |--- |--- |--- |--- |--- |--- |
 |32|54.8|Smolensk|Advance|145000|100.00%|
@@ -294,7 +331,8 @@ minard.set_format('Percent Surviving', PercentFormatter)
 |34.3|55.2|Wixma|Retreat|55000|37.93%|
 |32|54.6|Smolensk|Retreat|24000|16.55%|
 |30.4|54.4|Orscha|Retreat|20000|13.79%|
-|26.8|54.3|Moiodexno|Retreat|12000|8.28%|
+|26.8|54.3|Moiodexno|Retreat|12000|8.28%|  
+```
 
 ### Choosing Sets of Columns
 
@@ -305,6 +343,7 @@ columns.
 minard.select('Longitude', 'Latitude')
 ```
 
+``` output
 |Longitude|Latitude|
 |--- |--- |
 |32|54.8|
@@ -314,7 +353,8 @@ minard.select('Longitude', 'Latitude')
 |34.3|55.2|
 |32|54.6|
 |30.4|54.4|
-|26.8|54.3|
+|26.8|54.3|  
+```
 
 The same selection can be made using column indices instead of labels.
 
@@ -322,6 +362,7 @@ The same selection can be made using column indices instead of labels.
 minard.select(0, 1)
 ```
 
+``` output
 |Longitude|Latitude|
 |--- |--- |
 |32|54.8|
@@ -332,6 +373,8 @@ minard.select(0, 1)
 |32|54.6|
 |30.4|54.4|
 |26.8|54.3|
+
+```
 
 The result of using `select` is a new table, even when you select just
 one column.
@@ -340,6 +383,7 @@ one column.
 minard.select('Survivors')
 ```
 
+``` output
 |Survivors|
 |--- |
 |145000|
@@ -349,7 +393,8 @@ minard.select('Survivors')
 |55000|
 |24000|
 |20000|
-|12000|
+|12000|  
+```
 
 Notice that the result is a table, unlike the result of `column`, which
 is an array.
@@ -358,7 +403,9 @@ is an array.
 minard.column('Survivors')
 ```
 
+``` output
 array(\[145000, 140000, 127100, 100000, 55000, 24000, 20000, 12000\])
+```
 
 Another way to create a new table consisting of a set of columns is to
 `drop` the columns you don't want.
@@ -367,6 +414,7 @@ Another way to create a new table consisting of a set of columns is to
 minard.drop('Longitude', 'Latitude', 'Direction')
 ```
 
+``` output
 |City Name|Survivors|Percent Surviving|
 |--- |--- |--- |
 |Smolensk|145000|100.00%|
@@ -376,7 +424,8 @@ minard.drop('Longitude', 'Latitude', 'Direction')
 |Wixma|55000|37.93%|
 |Smolensk|24000|16.55%|
 |Orscha|20000|13.79%|
-|Moiodexno|12000|8.28%|
+|Moiodexno|12000|8.28%|  
+```
 
 Neither `select` nor `drop` change the original table. Instead, they
 create new smaller tables that share the same data. The fact that the
@@ -388,6 +437,7 @@ that one analysis will affect the other.
 minard
 ```
 
+``` output
 |Longitude|Latitude|City Name|Direction|Survivors|Percent Surviving|
 |--- |--- |--- |--- |--- |--- |
 |32|54.8|Smolensk|Advance|145000|100.00%|
@@ -397,7 +447,8 @@ minard
 |34.3|55.2|Wixma|Retreat|55000|37.93%|
 |32|54.6|Smolensk|Retreat|24000|16.55%|
 |30.4|54.4|Orscha|Retreat|20000|13.79%|
-|26.8|54.3|Moiodexno|Retreat|12000|8.28%|
+|26.8|54.3|Moiodexno|Retreat|12000|8.28%|  
+```
 
 All of the methods that we have used above can be applied to any table.
 
