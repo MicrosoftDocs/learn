@@ -47,18 +47,18 @@ Table().with_column('Chapters', huck_finn_chapters)
 ```
 
 ``` output
-| Chapters                                                    |   |
-|-------------------------------------------------------------|---|
-| 1. YOU don't know about me without you have read a book ... |   |
-| 2. WE went tiptoeing along a path amongst the trees ...     |   |
-| 3. WELL, I got a good going-over in the morning from ...    |   |
-| 4. WELL, three or four months run along, and it was ...     |   |
-| 5. I had shut the door to. Then I turned around and ...     |   |
-| 6. WELL, pretty soon the old man was up and around ...      |   |
-| 7. "GIT up! What you 'bout?" I opened my eyes and look ...  |   |
-| 8. THE sun was up so high when I waked that I judged ...    |   |
-| 9. I wanted to go and look at a place right about the ...   |   |
-| 10. AFTER breakfast I wanted to talk about the dead man ... |   |
+| Chapters                                                    |
+|-------------------------------------------------------------|
+| 1. YOU don't know about me without you have read a book ... |
+| 2. WE went tiptoeing along a path amongst the trees ...     |
+| 3. WELL, I got a good going-over in the morning from ...    |
+| 4. WELL, three or four months run along, and it was ...     |
+| 5. I had shut the door to. Then I turned around and ...     |
+| 6. WELL, pretty soon the old man was up and around ...      |
+| 7. "GIT up! What you 'bout?" I opened my eyes and look ...  |
+| 8. THE sun was up so high when I waked that I judged ...    |
+| 9. I wanted to go and look at a place right about the ...   |
+| 10. AFTER breakfast I wanted to talk about the dead man ... |
 
 ... (33 rows omitted)
 ```
