@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab.3-program-model
+title: Programming model
+metadata:
+  title: Programming model
+  description: Programming model
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-program-model.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+ 
+# Quiz uses image "quiz-units-2-and-4-vertices-graph.png"
+# Original course uses text box for user to enter answer. Using sample choices for now.
+# LaTeX dollar sign syntax not supported in 'explanation' property. Using HTML 'sub' subscript syntax.
+  - content: "For the following graph, under the full consistency model, what's the maximum number of vertices that can read or write data in parallel at any given time? <br><br>
+             <img src=./media/quiz-units-2-and-4-vertices-graph.png></img>"
+    choices:
+    - content: "5"
+      isCorrect: false
+      explanation: "Incorrect. Under the full consistency model, a vertex that's reading or writing data has a lock on all incident edges and adjacent vertices. In this graph, V<sub>5</sub> and V<sub>6</sub> can read and write data in parallel as their scopes will not overlap. The maximum number of vertices that can read or write data in parallel is 2."
+    - content: "4"
+      isCorrect: false
+      explanation: "Incorrect. Under the full consistency model, a vertex that's reading or writing data has a lock on all incident edges and adjacent vertices. In this graph, V<sub>5</sub> and V<sub>6</sub> can read and write data in parallel as their scopes will not overlap. The maximum number of vertices that can read or write data in parallel is 2."
+    - content: "2"
+      isCorrect: true
+      explanation: "Correct! Under the full consistency model, any vertex that's reading or writing data has an exclusive lock on all incident edges and adjacent vertices. In this graph, V<sub>5</sub> and V<sub>6</sub> can read and write data in parallel as their scopes will not overlap."
+    - content: "1"
+      isCorrect: false
+      explanation: "Incorrect. Under the full consistency model, a vertex that's reading or writing data has a lock on all incident edges and adjacent vertices. In this graph, V<sub>5</sub> and V<sub>6</sub> can read and write data in parallel as their scopes will not overlap. The maximum number of vertices that can read or write data in parallel is 2."

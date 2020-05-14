@@ -4,7 +4,23 @@ The final basic operations you'll learn about in this module is how to increment
 
 Frequently, you'll need to increment and decrement a value, especially when you work with any looping logic or code that interacts with a data structure, which houses multiple elements of data.
 
-There are several techniques to perform an increment and decrement.  The following exercise steps will highlight a few.
+The `+=` operator adds and assigns the value on the right of the operator to the value on the left of the operator.  So, lines two and three in the following code snippet are the same:
+
+```csharp-interactive
+int value = 0;
+value = value + 5;
+value += 5;
+```
+
+The `++` operator increments the value of the variable by 1.  So, lines two and three in the following code snippet are the same:
+
+```csharp-interactive
+int value = 0;
+value = value + 1;
+value++;
+```
+
+These same techniques can be used for subtraction, multiplication and more.  The following exercise steps will highlight a few.
 
 > [!NOTE]
 > Operators like `+=`, `-=`, `*=`, `++`, and `--` are known as *compound assignment* operators because they compound some operation in addition to assigning the result to the variable.  The `+=` operator is specifically termed the *addition assignment* operator.

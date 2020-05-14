@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-azure-sphere.how-azure-sphere-works
+title: How Azure Sphere works
+metadata:
+  title: How Azure Sphere works
+  description: In this section, we provide a high-level explanation of the parts of the product and explain how these parts work together. We also show how the product would work when solving the scenario outlined in the introduction section
+  ms.date: 03/31/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 6 # dummy number at present
+content: |
+  [!include[](includes/3-how-azure-sphere-works.md)]

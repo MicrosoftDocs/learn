@@ -4,7 +4,7 @@ To train a classification model, you need a dataset that includes historical *fe
 
 In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a *dataset*.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com), view the **Datasets** page. Datasets represent specific data files or tables that you plan to work with in Azure ML.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Datasets** page. Datasets represent specific data files or tables that you plan to work with in Azure ML.
 2. Create a dataset from web files, using the following settings:
     * **Basic Info**:
         * **Web URL**: https://aka.ms/diabetes-data
@@ -28,7 +28,7 @@ In Azure Machine Learning, data for model training and other operations is usual
 
 To get started with Azure Machine Learning designer, first you must create a pipeline and add the dataset you want to work with.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com) for your workspace, view the **Designer** page and select **+** to create a new pipeline.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, view the **Designer** page and select **+** to create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Diabetes Training** (if the **Settings** pane is not visible, click the **&#9881;** icon next to the pipeline name at the top).
 3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the **aml-cluster** compute target you created previously.
 4. On the left side of the designer, expand the **Datasets** section, and drag the **diabetes-data** dataset you created in the previous exercise onto the canvas.
@@ -70,8 +70,6 @@ To see the effect of your data transformations, you need to run the pipeline as 
 > ![diabetes-data dataset with Normalize Data module](../media/data-prep-pipeline.png)
 
 2. Select **Submit**, and run the pipeline as a new experiment named **diabetes-training**.
-3. Wait for the run to complete - this may take a few minutes.
-4. When the run has completed (indicated by a &#x2705; icon for each module other than the dataset), select the **Normalize Data** module and in the settings pane, on the **Outputs + Logs** tab, under **Port outputs** in the **Transformed dataset** section, use the **Visualize** icon to view the transformed columns.
-5. Close the **Normalize Data** visualization, then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon.
+3. Wait for the run to complete - this may take a few minutes and will be indicated by a &#x2705; icon on the **Normalize Data** module.
 
 The dataset is now prepared for model training.

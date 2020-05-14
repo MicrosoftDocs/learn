@@ -1,9 +1,9 @@
-Apache HBase is an open-source version of Google's BigTable distributed storage system and is supported by the Apache Software Foundation. BigTable is a distributed, scalable, high-performance, versioned database. BigTable's infrastructure is designed to store billions of rows and<!-- billions of --> columns of data in loosely defined tables, such as the webtable described earlier. The following video contains an overview of HBase. 
+Apache HBase is an open-source non-relational database modeled after of Google's BigTable distributed storage system and is supported by the Apache Software Foundation. HBase is a distributed, scalable, high-performance, versioned database. HBase's infrastructure is designed to store billions of rows an columns of data in loosely defined tables, such as the webtable described earlier. The following video contains an overview of HBase. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pSFl]
 
-<!-- HBase is the open-source version of Google's BigTable, which is supported by the Apache Software Foundation. -->Just as<!-- like how --> traditional RDBMSs are designed to run on top of a local file system, HBase is designed to work on top of the Hadoop Distributed File System (HDFS). As described earlier, HDFS is a distributed file system that stores files as replicated blocks across multiple servers. HDFS lends a scalable and reliable file system back end to HBase.
+Just as traditional RDBMSs are designed to run on top of a local file system, HBase is designed to work on top of the Hadoop Distributed File System (HDFS). As described earlier, HDFS is a distributed file system that stores files as replicated blocks across multiple servers. HDFS lends a scalable and reliable file system back end to HBase.
 
 ### HBase data model
 
@@ -15,7 +15,7 @@ _Figure 2: A table in HBase_
 
 A row in HBase is referenced using a row key, which can be considered to be the primary key of the table in an RDBMS. The primary key of the table has to be unique and hence reference one and only one row. Unlike in RDBMSs (which require primary keys to be of certain types), row keys are raw byte arrays, so theoretically, anything from strings to binary representations of long integers, floats, or even entire data structures that have been serialized (converted to a byte array form) can serve as a row key<!-- from strings to binary representations of long integers, floats, or even entire data structures that have been serialized (converted to a byte array form) -->. HBase automatically sorts table rows by row key when it stores them. By default, this sort is byte ordered. 
 
-Columns in HBase have a column name, which can be used to refer to a column. Columns can be further grouped into column families. All column family members have a common prefix, so, in the webtable example, the columns `Metadata:Type` and `Metadata:Language` are both members of the `Metadata` column family, whereas `Content:Data` belongs to the `Content` family. By default, the colon character (:)<!-- ‘:’ --> delimits the column prefix from the family member. The column family prefix must be composed of printable characters. The qualifying tail can be made of any arbitrary bytes. 
+Columns in HBase have a column name, which can be used to refer to a column. Columns can be further grouped into column families. All column family members have a common prefix, so, in the webtable example, the columns `Metadata:Type` and `Metadata:Language` are both members of the `Metadata` column family, whereas `Content:Data` belongs to the `Content` family. By default, the colon character (:)<!-- ':' --> delimits the column prefix from the family member. The column family prefix must be composed of printable characters. The qualifying tail can be made of any arbitrary bytes. 
 
 HBase differs from an RDBMS because the columns do not need to be typed; they are simply interpreted as raw byte strings. This interpretation enables<!-- lends the flexibility for --> HBase to store any kind of data in the table but also prevents it from being able to automatically validate data values when they are loaded into the table. 
 
@@ -39,7 +39,7 @@ HBase is organized as a cluster of HBase nodes. These nodes are of two types: a 
 
 _Figure 3: HBase architecture_
 
-As with most databases, HBase is able to persist data using an underlying file system. HBase is designed to use HDFS in the back end but also supports various kinds of file systems, including a local file system and even Amazon S3. Typically, every regionserver in HBase is also an HDFS DataNode (an HDFS fileserver), but this is not mandatory in HBase. 
+As with most databases, HBase is able to persist data using an underlying file system. HBase is designed to use HDFS in the back end but also supports various kinds of file systems, including a local file system and cloud filesystems including Azure Blob Storage. Typically, every regionserver in HBase is also an HDFS DataNode (an HDFS fileserver), but this is not mandatory in HBase.
 
 #### Data partitioning
 
