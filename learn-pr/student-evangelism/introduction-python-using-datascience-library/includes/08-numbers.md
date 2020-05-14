@@ -15,33 +15,33 @@ The type of a number is evident from the way it is displayed: `int`
 values have no decimal point and `float` values always have a decimal
 point.
 
-``` {.python}
+``` python
 # Some int values
 2
 ```
 
     2
 
-``` {.python}
+``` python
 1 + 3
 ```
 
     4
 
-``` {.python}
+``` python
 -1234567890000000000
 ```
 
     -1234567890000000000
 
-``` {.python}
+``` python
 # Some float values
 1.2
 ```
 
     1.2
 
-``` {.python}
+``` python
 3.0
 ```
 
@@ -54,19 +54,19 @@ cases, two integers combine to form another integer, but any number
 large or very small `float` values are displayed using scientific
 notation.
 
-``` {.python}
+``` python
 1.5 + 2
 ```
 
     3.5
 
-``` {.python}
+``` python
 3 / 1
 ```
 
     3.0
 
-``` {.python}
+``` python
 -12345678900000000000.0
 ```
 
@@ -74,13 +74,13 @@ notation.
 
 The `type` function can be used to find the type of any number.
 
-``` {.python}
+``` python
 type(3)
 ```
 
     int
 
-``` {.python}
+``` python
 type(3 / 1)
 ```
 
@@ -90,29 +90,29 @@ The `type` of an expression is the type of its final value. So, the
 `type` function will never indicate that the type of an expression is a
 name, because names are always evaluated to their assigned values.
 
-``` {.python}
+``` python
 x = 3
 type(x) # The type of x is an int, not a name
 ```
 
     int
 
-``` {.python}
+``` python
 type(x + 2.5)
 ```
 
     float
 
-## More About Float Values
+## More about float values
 
 Float values are very flexible, but they do have limits.
 
-1.  A `float` can represent extremely large and extremely small numbers.
+- A `float` can represent extremely large and extremely small numbers.
     There are limits, but you will rarely encounter them.
-2.  A `float` only represents 15 or 16 significant digits for any
+- A `float` only represents 15 or 16 significant digits for any
     number; the remaining precision is lost. This limited precision is
     enough for the vast majority of applications.
-3.  After combining `float` values with arithmetic, the last few digits
+- After combining `float` values with arithmetic, the last few digits
     may be incorrect. Small rounding errors are often confusing when
     first encountered.
 
@@ -120,25 +120,25 @@ The first limit can be observed in two ways. If the result of a
 computation is a very large number, then it is represented as infinite.
 If the result is a very small number, then it is represented as zero.
 
-``` {.python}
+``` python
 2e306 * 10
 ```
 
     2e+307
 
-``` {.python}
+``` python
 2e306 * 100
 ```
 
     inf
 
-``` {.python}
+``` python
 2e-322 / 10
 ```
 
     2e-323
 
-``` {.python}
+``` python
 2e-322 / 100
 ```
 
@@ -148,7 +148,7 @@ The second limit can be observed by an expression that involves numbers
 with more than 15 significant digits. These extra digits are discarded
 before any arithmetic is carried out.
 
-``` {.python}
+``` python
 0.6666666666666666 - 0.6666666666666666123456789
 ```
 
@@ -159,19 +159,19 @@ expressions that should be equivalent. For example, the expression
 `2 ** 0.5` computes the square root of 2, but squaring this value does
 not exactly recover 2.
 
-``` {.python}
+``` python
 2 ** 0.5
 ```
 
     1.4142135623730951
 
-``` {.python}
+``` python
 (2 ** 0.5) * (2 ** 0.5)
 ```
 
     2.0000000000000004
 
-``` {.python}
+``` python
 (2 ** 0.5) * (2 ** 0.5) - 2
 ```
 
