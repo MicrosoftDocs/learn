@@ -16,7 +16,8 @@ abstract: |
   - Use Delta Lake to create, append, and upsert tables.
   - Perform optimizations in Delta Lake.
   - Compare different versions of a Delta table using Time Machine.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/build-query-delta-lake.svg
 levels:
 - intermediate

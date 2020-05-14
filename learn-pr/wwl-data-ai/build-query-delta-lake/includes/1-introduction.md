@@ -4,8 +4,6 @@ You need a solution that matches Data Lake in scalability but is also reliable a
 
 Delta Lake can solve your problem. It's a file format that integrates with Spark and has both open-source and managed offerings. Delta Lake is provided as a managed offering as part of your Azure Databricks account, and helps you combine the best capabilities of Data Lake, data warehousing, and a streaming ingestion system.
 
-[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
-
 ## Learning objectives
 
 In this module, you will:
