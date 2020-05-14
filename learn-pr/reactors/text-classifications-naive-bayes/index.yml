@@ -22,7 +22,7 @@ abstract:  |
 prerequisites: |
   - Introduction to Python for data science
   
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/reactors/text-classifications-naive-bayes.svg
 levels:
 - beginner
 roles:

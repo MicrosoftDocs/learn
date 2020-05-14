@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Machine Learning: PCA, SVM, and Deep Learning/principal-component-analysis-pca</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M47.1698113,0 C73.2209788,0 94.3396226,21.1186439 94.3396226,47.1698113 C94.3396226,73.2209788 73.2209788,94.3396226 47.1698113,94.3396226 C21.1186439,94.3396226 0,73.2209788 0,47.1698113 C0,21.1186439 21.1186439,0 47.1698113,0 Z M47.1698113,3.77358491 C23.2027373,3.77358491 3.77358491,23.2027373 3.77358491,47.1698113 C3.77358491,71.1368854 23.2027373,90.5660377 47.1698113,90.5660377 C71.1368854,90.5660377 90.5660377,71.1368854 90.5660377,47.1698113 C90.5660377,23.2027373 71.1368854,3.77358491 47.1698113,3.77358491 Z" id="path-6"></path>
+        <linearGradient x1="49.9774416%" y1="17.9912184%" x2="49.9774416%" y2="124.588364%" id="linearGradient-8">
+            <stop stop-color="#32D4F5" offset="0%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0140555%" y1="2.51545844e-15%" x2="50.0140555%" y2="100.054352%" id="linearGradient-9">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#8C4FE4" offset="62%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#F59051" offset="0%"></stop>
+            <stop stop-color="#E55E14" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-11">
+            <stop stop-color="#2AA327" offset="0%"></stop>
+            <stop stop-color="#45E658" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Machine-Learning:-PCA,-SVM,-and-Deep-Learning" transform="translate(-159.000000, -509.000000)">
+            <g id="Machine-Learning:-PCA,-SVM,-and-Deep-Learning/principal-component-analysis-pca" transform="translate(160.000000, 510.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-7)" fill="#27C0F5">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-3" transform="translate(11.000000, 27.000000)">
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="29.9310345" cy="32.9655172" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="27.2413793" cy="15.4827586" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="33.9655172" cy="30.2758621" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="54.137931" cy="20.862069" r="1.34482759"></circle>
+                    <polygon id="Rectangle" fill="url(#linearGradient-9)" transform="translate(38.260633, 22.344828) rotate(-29.000000) translate(-38.260633, -22.344828) " points="-4.73936724 21 81.2606328 21 81.2606328 23.6896552 -4.73936724 23.6896552"></polygon>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="27.2413793" cy="34.3103448" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="24.5517241" cy="23.5517241" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="40.6896552" cy="15.4827586" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="21.862069" cy="33.6551724" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="31.2758621" cy="30.2758621" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="31.2758621" cy="35.6551724" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="26.5517241" cy="38.3448276" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" transform="translate(43.379310, 24.896552) scale(-1, 1) translate(-43.379310, -24.896552) " cx="43.3793103" cy="24.8965517" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" transform="translate(56.827586, 18.172414) scale(-1, 1) translate(-56.827586, -18.172414) " cx="56.8275862" cy="18.1724138" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" transform="translate(51.448276, 19.517241) scale(-1, 1) translate(-51.448276, -19.517241) " cx="51.4482759" cy="19.5172414" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" transform="translate(51.862069, 27.517241) scale(-1, 1) translate(-51.862069, -27.517241) " cx="51.862069" cy="27.5172414" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" transform="translate(54.137931, 22.206897) scale(-1, 1) translate(-54.137931, -22.206897) " cx="54.137931" cy="22.2068966" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="44.7241379" cy="10.1034483" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="48.7586207" cy="7.4137931" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="28.5862069" cy="18.1724138" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="42.0344828" cy="11.4482759" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="36.6551724" cy="12.7931034" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="46.0689655" cy="12.7931034" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="39.3448276" cy="15.4827586" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="42.0344828" cy="12.7931034" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="46.0689655" cy="10.1034483" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="25.8965517" cy="20.862069" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="39.3448276" cy="14.137931" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="33.9655172" cy="15.4827586" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="43.3793103" cy="15.4827586" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="36.6551724" cy="18.1724138" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" transform="translate(44.724138, 10.103448) scale(1, -1) translate(-44.724138, -10.103448) " cx="44.7241379" cy="10.1034483" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="27.2413793" cy="22.2068966" r="1.34482759"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="20.5172414" cy="27.5862069" r="1.34482759"></circle>
+                </g>
+                <circle id="Oval" fill="url(#linearGradient-10)" transform="translate(45.551724, 24.068966) scale(1, -1) translate(-45.551724, -24.068966) " cx="45.5517241" cy="24.0689655" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" transform="translate(59.000000, 17.344828) scale(1, -1) translate(-59.000000, -17.344828) " cx="59" cy="17.3448276" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" transform="translate(53.620690, 18.689655) scale(1, -1) translate(-53.620690, -18.689655) " cx="53.6206897" cy="18.6896552" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" transform="translate(63.034483, 18.689655) scale(1, -1) translate(-63.034483, -18.689655) " cx="63.0344828" cy="18.6896552" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" transform="translate(56.310345, 21.379310) scale(1, -1) translate(-56.310345, -21.379310) " cx="56.3103448" cy="21.3793103" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="28.0689655" cy="36.1724138" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="21.3448276" cy="41.5517241" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="66.5517241" cy="66.0689655" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="80" cy="59.3448276" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="74.6206897" cy="60.6896552" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="84.0344828" cy="60.6896552" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="77.3103448" cy="63.3793103" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="49.0689655" cy="78.1724138" r="1.34482759"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="42.3448276" cy="83.5517241" r="1.34482759"></circle>
+                <g id="Group-13" transform="translate(54.000000, 56.500000) scale(-1, 1) translate(-54.000000, -56.500000) translate(27.000000, 27.000000)" fill-rule="nonzero">
+                    <path d="M-0.392111954,44.0407493 L24.7682789,43.5843811 C25.1161611,43.5780711 25.4032906,43.8549701 25.4096006,44.2028522 C25.4096747,44.2069361 25.409709,44.2110206 25.4097037,44.2151052 L25.4029314,49.3699687 C25.4024752,49.7172032 25.1211435,49.9986017 24.7739092,49.9991403 L-0.0062594395,50.0375802 C-0.33537164,50.0380907 -0.60942166,49.7851897 -0.635287941,49.4570952 L-1.00873789,44.7201599 C-1.03608385,44.3732968 -0.777064011,44.0699404 -0.430200897,44.0425945 C-0.41752611,44.0415952 -0.404823979,44.0409799 -0.392111954,44.0407493 Z" id="Rectangle" fill="#A3AEB2" transform="translate(12.174602, 46.805608) rotate(-46.000000) translate(-12.174602, -46.805608) "></path>
+                    <path d="M32.1780822,0 C44.2299946,0 54,9.77000539 54,21.8219178 C54,33.8738302 44.2299946,43.6438356 32.1780822,43.6438356 C20.1261698,43.6438356 10.3561644,33.8738302 10.3561644,21.8219178 C10.3561644,9.77000539 20.1261698,0 32.1780822,0 Z M32.1780822,4.84931507 C22.8043725,4.84931507 15.2054795,12.4482082 15.2054795,21.8219178 C15.2054795,31.1956275 22.8043725,38.7945205 32.1780822,38.7945205 C41.5517918,38.7945205 49.1506849,31.1956275 49.1506849,21.8219178 C49.1506849,12.4482082 41.5517918,4.84931507 32.1780822,4.84931507 Z" id="Combined-Shape" fill="#0B3C4D"></path>
+                    <circle id="Oval" fill="#FFFFFF" opacity="0.246628534" cx="32.1780822" cy="21.8219178" r="16.9726027"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

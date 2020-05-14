@@ -22,7 +22,7 @@ prerequisites: |
   - Principal component analysis (PCA)
   - Support vector machines with facial recognition
 # placeholder icon
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/reactors/deep-learning-facial-recognition.svg
 levels:
 - beginner
 roles:
