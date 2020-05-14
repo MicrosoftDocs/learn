@@ -1,10 +1,7 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **variability-of-the-sample-mean.ipynb** in your virtual environment
-
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
-
 
 ``` python
 from datascience import *
@@ -42,7 +39,9 @@ pop_mean = np.mean(delay.column('Delay'))
 pop_mean
 ```
 
-    16.658155515370705
+``` output
+   16.658155515370705
+```
 
 ``` python
 delay.hist(bins=np.arange(-20, 300, 10))
@@ -158,7 +157,9 @@ pop_sd = np.std(delay.column('Delay'))
 pop_sd
 ```
 
+``` output
     39.480199851609314
+```
 
 Take a look at the SDs in the sample mean histograms above. In all three
 of them, the SD of the population of delays is about 40 minutes, because
@@ -205,6 +206,7 @@ sd_comparison = Table().with_columns(
 ``` python
 sd_comparison
 ```
+
 |Sample Size n|SD of 10,000 Sample Means|pop\_sd/sqrt(n)|
 |--- |--- |--- |
 |25|7.80558|7.89604|
@@ -251,7 +253,7 @@ This is the standard deviation of the averages of all the possible
 samples that could be drawn. **It measures roughly how far off the
 sample means are from the population mean.**
 
-### The Central Limit Theorem for the Sample Mean
+### The central limit theorem for the sample mean
 
 If you draw a large random sample with replacement from a population,
 then, regardless of the distribution of the population, the probability
@@ -259,7 +261,7 @@ distribution of the sample mean is roughly normal, centered at the
 population mean, with an SD equal to the population SD divided by the
 square root of the sample size.
 
-### The Accuracy of the Sample Mean
+### The accuracy of the sample mean
 
 The SD of all possible sample means measures how variable the sample
 mean can be. As such, it is taken as a measure of the accuracy of the
@@ -274,7 +276,7 @@ Because the sample size appears in the denominator, the variability of
 the sample mean *decreases* as the sample size increases, and hence the
 accuracy increases.
 
-### The Square Root Law
+### The square root law
 
 From the table of SD comparisons, you can see that the SD of the means
 of random samples of 25 flight delays is about 8 minutes. If you

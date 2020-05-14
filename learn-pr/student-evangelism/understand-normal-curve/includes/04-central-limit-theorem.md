@@ -1,9 +1,7 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
-
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 ``` python
 from datascience import *
@@ -37,7 +35,7 @@ based on a random sample.
 The examples below show two different situations in which an
 approximate bell shape appears in such histograms.
 
-### Net Gain in Roulette
+### Net gain in roulette
 
 In an earlier section, the bell appeared as the rough shape of the total
 amount of money we would make if we placed the same bet repeatedly on
@@ -158,7 +156,9 @@ average_per_bet = 1*(18/38) + (-1)*(20/38)
 average_per_bet
 ```
 
--0.05263157894736842
+``` output
+  -0.05263157894736842
+```
 
 So in 400 bets you expect that your net gain will be about -\$21:
 
@@ -166,7 +166,9 @@ So in 400 bets you expect that your net gain will be about -\$21:
 400 * average_per_bet
 ```
 
--21.052631578947366
+``` output
+  -21.052631578947366
+```
 
 For confirmation, we can compute the mean of the 10,000 simulated net
 gains:
@@ -175,7 +177,9 @@ gains:
 np.mean(results.column(0))
 ```
 
--21.122
+``` output
+  -21.122
+```
 
 **Spread.** Run your eye along the curve starting at the center and
 notice that the point of inflection is near 0. On a bell shaped curve,
@@ -191,13 +195,15 @@ simulated net gains:
 np.std(results.column(0))
 ```
 
-19.863723618697477
+``` output
+  19.863723618697477
+```
 
 **Summary.** The net gain in 400 bets is the sum of the 400 amounts won
 on each individual bet. The probability distribution of that sum is
 approximately normal, with an average and an SD that we can approximate.
 
-### Average Flight Delay
+### Average flight delay
 
 The table `united` contains data on departure delays of 13,825 United
 Airlines domestic flights out of San Francisco airport in the summer of
@@ -226,7 +232,9 @@ sd_delay = np.std(united.column('Delay'))
 mean_delay, sd_delay
 ```
 
+``` output
 (16.658155515370705, 39.480199851609314)
+```
 
 Now suppose we sampled 400 delays at random with replacement. You could
 sample without replacement if you like, but the results would be
@@ -247,7 +255,9 @@ delay = united.select('Delay')
 np.mean(delay.sample(400).column('Delay'))
 ```
 
-13.855
+``` output
+  13.855
+```
 
 The sample average varies according to how the sample comes out, so we
 will simulate the sampling process repeatedly and draw the empirical
@@ -299,7 +309,7 @@ The Central Limit Theorem makes it possible to make inferences with
 little knowledge about the population, provided we have a large random
 sample. That is why it is central to the field of statistical inference.
 
-### Proportion of Purple Flowers
+### Proportion of purple flowers
 
 Recall Mendel's probability model for the colors of the flowers of a
 species of pea plant. The model says that the flower colors of the
