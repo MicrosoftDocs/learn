@@ -15,11 +15,11 @@ To set up your environment:
 1. Download and install [Visual Studio Code](https://code.visualstudio.com?azure-portal=true). It's free and works on Windows, Mac, and Linux. Select the stable build for your platform. 
 2. Download and install the [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python?azure-portal=true). This step requires that you first install a supported version of Python.
 3. Activate the [Anaconda environment in Visual Studio Code](https://code.visualstudio.com/docs/python/jupyter-support?azure-portal=true) so that you can run Jupyter Notebook.
-4. Set up a [Data Science environment in Visual Studio Code](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true) so that you can use the NumPy and Pandas libraries.
+4. Set up a [Data Science environment in Visual Studio Code](https://code.visualstudio.com/docs/python/data-science-tutorial?azure-portal=true) so that you can use the NumPy and pandas libraries.
 
 ## Test your environment
 
-You've successfully set up your environment with Visual Studio Code, Python, Anaconda, and the NumPy and Pandas libraries. You're now ready to run a Jupyter notebook inside Visual Studio Code.
+You've successfully set up your environment with Visual Studio Code, Python, Anaconda, and the NumPy and pandas libraries. You're now ready to run a Jupyter notebook inside Visual Studio Code.
 
 1. Clone the [Reactor repository](https://github.com/microsoft/Reactors?azure-portal=true) and open the [Learn/Intro-Python-Data-Science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md?azure-portal=true) in Visual Studio Code.
 2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/Test-Setup-Config.ipynb?azure-portal=true) file to ensure that you're ready to continue through the learning path.
