@@ -18,7 +18,8 @@ abstract: |
   * Understand the fundamentals of Apache Spark notebook
   * Create, or attach to, a Spark cluster
   * Identify the types of tasks well-suited to the unified analytics engine Apache Spark
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/describe-azure-databricks.svg
 levels:
 - intermediate
