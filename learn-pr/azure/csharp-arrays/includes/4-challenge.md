@@ -35,10 +35,17 @@ B177
 B179
 ```
 
-> [!IMPORTANT]
-> Here's a hint:  As you loop through each element in your array, you'll need an `if` statement.  The `if` statement will need to use a method on the string class to determine if a string starts with a specific letter.  If you're not sure how to use an `if` statement, please see the module "Add decision logic to your code using the if-elseif-else statement in C#".
+To determine whether or not an element starts with the letter "B", use the `String.StartsWith()` method.  Here's a simple example of how to use the `String.StartsWith()` method so you can use it in your code:
+
+```csharp-interactive
+string name = "Bob";
+if (name.StartsWith("B"))
+{
+    Console.WriteLine("The name starts with 'B'!");
+}
+```
 
 > [!IMPORTANT]
-> Second hint: Use the string's `StartsWith()` method to identify the orders that start with the letter "B".  You may need to reference docs.microsoft.com to look up the `String.StartsWith()` method.  If you're not sure how to do this, see the module "Call methods from the .NET Class Library using C#".
+> Here's a hint:  As you loop through each element in your array, you'll need an `if` statement.  The `if` statement will need to use a method on the string class to determine if a string starts with a specific letter.  If you're not sure how to use an `if` statement, please see the module "Add decision logic to your code using the if-elseif-else statement in C#".
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-test-logic-app
-title: Exercise - Test your Logic App with new Devices
+title: Exercise - Test your logic app with new devices
 metadata:
-  title: Exercise - Test your Logic App with new Devices
-  description: Exercise - Test your Logic App with new Devices
+  title: Exercise - Test your logic app with new devices
+  description: Exercise - Test your logic app with new devices
   ms.date: 3/20/20
   author: olivierbloch
   ms.author: Olivier.Bloch
