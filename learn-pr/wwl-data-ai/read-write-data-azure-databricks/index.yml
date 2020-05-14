@@ -15,7 +15,8 @@ abstract: |
   - Use Azure Databricks to read multiple file types, both with and without a Schema.
   - Combine inputs from files and data stores, such as Azure SQL Database.
   - Transform and store that data for advanced analytics.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/read-write-data-azure-databricks.svg
 levels:
 - intermediate
