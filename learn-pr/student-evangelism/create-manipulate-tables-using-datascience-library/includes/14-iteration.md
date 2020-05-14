@@ -257,9 +257,7 @@ outcome_table = Table().with_column('Outcome', outcomes)
 outcome_table.group('Outcome').barh(0)
 ```
 
-``` output
-![png](../media/39-iteration-29-0.png)
-```
+![Example Plot](../media/39-iteration-29-0.png)
 
 Not surprisingly, each of the three outcomes -1, 0, and 1 appeared about
 about 100 of the 300 times, give or take. We will examine the "give or

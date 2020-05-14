@@ -27,13 +27,14 @@ cones
 ```
 
 ``` output
-|Flavor|Price|
-|--- |--- |
-|strawberry|3.55|
-|chocolate|4.75|
-|chocolate|6.55|
-|strawberry|5.25|
-|chocolate|5.25|
+| Flavor     | Price |
+|------------|-------|
+| strawberry | 3.55  |
+| chocolate  | 4.75  |
+| chocolate  | 6.55  |
+| strawberry | 5.25  |
+| chocolate  | 5.25  |  
+
 ```
 
 ``` python
@@ -41,10 +42,10 @@ cones.group('Flavor')
 ```
 
 ``` output
-|Flavor|count|
-|--- |--- |
-|chocolate|3|
-|strawberry|2|
+| Flavor     | count |
+|------------|-------|
+| chocolate  | 3     |
+| strawberry | 2     |  
 ```
 
 There are two distinct categories, chocolate and strawberry. The call to

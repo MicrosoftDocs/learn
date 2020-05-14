@@ -25,7 +25,7 @@ def double(x):
 We start any function definition by writing `def`. Here is a breakdown
 of the other parts (the *syntax*) of this small function:
 
-![](../media/function-definition.jpg)
+![Define Function](../media/function-definition.jpg)
 
 When we run the cell above, no particular number is doubled, and the
 code inside the body of `double` is not yet evaluated. In this respect,
@@ -211,7 +211,7 @@ print("The biggest difference is", big_diff)
 
 Here is what happens when we run that cell:
 
-![](../media/function-execution.jpg)
+![Define Function](../media/function-execution.jpg)
 
 ## Multiple arguments
 
