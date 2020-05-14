@@ -115,7 +115,7 @@ For learning purposes, here you'll also run a few commands on your VM to verify 
       --name support-web-vm01 \
       --show-details \
       --query [publicIps] \
-      --o tsv)
+      --output tsv)
     ```
 
 1. Run the following `ssh` command to run the `lsblk` command on your VM over an SSH connection using the `ipaddress` variable data you just created. Recall that `azureuser` was the admin username we used when we created the VM. If you chose a different name, use that instead. Enter "yes" when prompted.

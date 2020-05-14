@@ -4,7 +4,7 @@ Azure Machine Learning includes an *automated machine learning* capability that 
 
 In Azure Machine Learning, operations that you run are called *experiments*. Follow the steps below to run an experiment that uses automated machine learning to train a regression model that predicts bicycle rentals.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com), view the **Automated ML** page (under **Author**).
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Automated ML** page (under **Author**).
 2. Create a new Automated ML run with the following settings:
     - **Select dataset**:
         - **Dataset**: bike-rentals
@@ -16,7 +16,6 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
         - **Task type**: Regression
         - **Additional configuration settings:**
             - **Primary metric**: Normalized root mean square error - *more about this metric later!*
-            - **Automated featurization**: Selected - *this option causes automated machine learning to apply preprocessing techniques such as imputing missing values, removing high-cardinality columns, and performing other tasks that might improve prediction performance*
             - **Explain best model**: Unselected - *this option causes automated machine learning to calculate feature importance for the best model; making it possible to determine the influence of each feature on the predicted label*
             - **Blocked algorithms**: *Block **all** other than **RandomForest** and **LightGBM** - normally you'd want to try as many as possible, but doing so can take a long time!*
 3. When you finish submitting the automated ML run details, it will start automatically. Wait for the run status to change from *Preparing* to *Running* (this may take five minutes or so, as the cluster nodes need to be initialized before training can begin - now might be a good time for a coffee break!). You may need to select **&#8635; Refresh** periodically.
@@ -30,7 +29,7 @@ Although you canceled the automated machine learning run, some models were train
 1. On the **Details** tab of the automated machine learning run, note the recommended model.
 
     This recommendation is based on the performance metric you specified (*Normalized root mean square error*). To calculate this metric, the training process used some of the data to train the model, and applied a technique called *cross-validation* to iteratively test the trained model with data it wasn't trained with and compare the predicted value with the actual known value. The difference between the predicted and actual value (known as the *residuals*) indicates the amount of *error* in the model, and our performance metric is calculated by squaring the errors across all of the test cases, finding the mean of these squares, and then taking the square root. What all of this means is that smaller this value is, the more accurately the model is predicting.
-2. Select **View model details**, and note that you can see all of the run metrics that give statistical information about the performance of the model.
+2. Select the algorithm name for the best model, and note that you can see all of the run metrics that give statistical information about the performance of the model.
 3. Select the **Visualizations** tab and review the charts that show the performance of the model by comparing the predicted values against the true values, and showing the *residuals* (differences between predicted and actual values) as a histogram.
 
 The **Predicted vs. True** chart should show a diagonal trend in which the predicted value correlates closely to the true value. A dotted line shows how a perfect model should perform, and the closer the line for your model's average predicted value is to this, the better its performance. A histogram below the line chart shows the distribution of true values.
