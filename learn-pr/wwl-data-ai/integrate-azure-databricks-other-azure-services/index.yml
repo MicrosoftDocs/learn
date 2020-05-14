@@ -14,7 +14,8 @@ abstract: |
   In this module, you will:
   - Access Azure Synapse Analytics from Azure Databricks by using the - SQL Data Warehouse connector.
   - Read from and write to Azure Cosmos DB from Azure Databricks.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/integrate-azure-databricks-other-azure-services.svg
 levels:
 - intermediate
