@@ -28,13 +28,13 @@ products:
 - azure-container-registry
 - azure-storage
 modules:
-- learn.intro-to-governance​
-- learn.introduction-to-azure-virtual-machines​
-- learn.azure.network-fundamentals​
-- learn.azure.network-fundamentals-2​
-- learn.control-azure-services-with-cli​
-- learn.intro-to-azure-ad​
-- learn.intro-to-docker-containers​
-- learn.choose-storage-approach-in-azure​
+- learn.intro-to-governance
+- learn.introduction-to-azure-virtual-machines
+- learn.azure.network-fundamentals
+- learn.azure.network-fundamentals-2
+- learn.control-azure-services-with-cli
+- learn.intro-to-azure-ad
+- learn.intro-to-docker-containers
+- learn.choose-storage-approach-in-azure
 trophy:
   uid: learn.az104-admin-prerequisite.trophy
