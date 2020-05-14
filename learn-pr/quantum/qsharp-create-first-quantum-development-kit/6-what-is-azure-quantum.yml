@@ -3,7 +3,7 @@ uid: learn.quantum.qsharp-create-first-quantum-development-kit.6-what-is-azure-q
 title: What is Azure Quantum?
 metadata:
   title: What is Azure Quantum?
-  description: Learn how Azure Quantum enables you to run programs on real quantum hardware.
+  description: Learn how Azure Quantum enables you to run programs on quantum hardware.
   ms.date: 05/19/2020
   author: KittyYeungQ
   ms.author: kitty

@@ -15,11 +15,11 @@ abstract: |
   - Prepare your development environment for writing quantum programs in Q#.
   - Understand how Q# programs are structured.
   - Work with qubits and superposition to build a quantum random number generator.
-  - Learn how Azure Quantum enables you to run your programs on real quantum hardware.
+  - Learn how Azure Quantum enables you to run your programs on quantum hardware.
 prerequisites: |
   - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/quantum/qsharp-create-first-quantum-development-kit.svg
 levels:
 - beginner
 roles:
@@ -34,6 +34,7 @@ units:
 - learn.quantum.qsharp-create-first-quantum-development-kit.4-random-bit-generator
 - learn.quantum.qsharp-create-first-quantum-development-kit.5-random-number-generator
 - learn.quantum.qsharp-create-first-quantum-development-kit.6-what-is-azure-quantum
-- learn.quantum.qsharp-create-first-quantum-development-kit.7-summary
+- learn.quantum.qsharp-create-first-quantum-development-kit.7-knowledge-check
+- learn.quantum.qsharp-create-first-quantum-development-kit.8-summary
 badge:
   uid: learn.quantum.qsharp-create-first-quantum-development-kit.badge

@@ -6,7 +6,8 @@ namespace QuantumRNG {
 
     @EntryPoint()
     operation GenerateRandomBit() : Result {
-        using (q = Qubit())  {  // Allocate a qubit.
+        // Allocate a qubit.
+        using (q = Qubit()) {
             // Put the qubit to superposition.
             H(q);
             // It now has a 50% chance of being measured 0 or 1.

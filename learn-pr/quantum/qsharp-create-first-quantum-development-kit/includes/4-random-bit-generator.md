@@ -25,6 +25,9 @@ To do so, you:
 
 In the next part, you build out the second phase, which combines random bits to form a larger number.
 
+> [!NOTE]
+> Keep in mind that because you're using the simulator to run your Q# program, you still get pseudorandom results. But after you verify your program through the simulator, you can run the same program on a quantum computer to get truly random results that measure fundamental physical processes.
+
 ## Create the Q# project
 
 Here, you create a Q# project just like you did earlier.
@@ -39,7 +42,7 @@ Here, you create a Q# project just like you did earlier.
 
 ## Include the Measurement library
 
-To measure a qubit, you use the [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true) operation. After you measure a qubit, you need to use the [Reset](/qsharp/api/qsharp/microsoft.quantum.intrinsic.reset?azure-portal=true) operation to place the qubit back in the zero state. The `Microsoft.Quantum.Intrinsic` library provides both of these these operations.
+To measure a qubit, you use the [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true) operation. After you measure a qubit, you need to use the [Reset](/qsharp/api/qsharp/microsoft.quantum.intrinsic.reset?azure-portal=true) operation to place the qubit back in the zero state. The `Microsoft.Quantum.Intrinsic` library provides both of these operations.
 
 To simplify the process, you can use the [MResetZ](/qsharp/api/qsharp/microsoft.quantum.measurement.mresetz?azure-portal=true) operation. This operation combines `M` and `Reset` as one operation.
 
@@ -72,7 +75,7 @@ To define the operation:
 
 1. Add this code to the `GenerateRandomBit` operation:
 
-    [!code-qsharp[](code/4-program-3.qs?highlight=9-15)]
+    [!code-qsharp[](code/4-program-3.qs?highlight=9-16)]
 
     Recall that you allocate qubits through the `using` keyword.
 

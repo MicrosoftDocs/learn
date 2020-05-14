@@ -20,13 +20,13 @@ Q# is a *domain-specific programming language* (DSL). A DSL is a computer langua
 The QDK also includes:
 
 * Q# libraries that help you build real-world quantum applications right away.
-* Targets, which allow you to run your program on a variety of hardware through Azure Quantum.
+* Targets, which allow you to run your program locally or on a variety of hardware through Azure Quantum.
 
-    Targets include resource estimators and simulators for larger quantum programs, as well as a quantum simulator, which behaves like a noise-free quantum computer would.
+    Targets include resource estimators and simulators for larger quantum programs, as well as a quantum simulator, which behaves much like a quantum computer would.
 
-    The simulator is useful for trying out new ideas, debugging programs, and learning about quantum physics, but it's only suitable for programs that require relatively few qubits. (Don't worry, we'll explain what a qubit is later in the module.)
+    The simulator is useful for trying out new ideas, debugging programs, and learning about quantum computing, but it's only suitable for programs that require relatively few qubits. (Don't worry, we'll explain what a qubit is later in the module.)
 
-    You can also target your programs to run on real quantum hardware by using Azure Quantum. (We'll discuss Azure Quantum later in this module.)
+    The simulator enables you to run quantum programs locally, on computers you use to write software. You can also target your programs to run on quantum hardware by using Azure Quantum. (We'll discuss Azure Quantum later in this module.)
 * Tools that help you integrate quantum programs with classical programs, including support for C#, F#, and Python. (Classical code enables you to work with the results from quantum computations.)
 
 ## Install the QDK for Visual Studio Code
