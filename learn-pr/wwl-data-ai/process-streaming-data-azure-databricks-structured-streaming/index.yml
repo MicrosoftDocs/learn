@@ -17,7 +17,8 @@ abstract: |
   - Use sliding windows to aggregate over chunks of data rather than all data.
   - Apply watermarking to throw away stale old data that you do not have space to keep.
   - Connect to Event Hubs read and write streams.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/process-streaming-data-azure-databricks-structured-streaming.svg
 levels:
 - intermediate
