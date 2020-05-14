@@ -77,7 +77,7 @@ confirmed this simple fact about the relationship between `3` and `1+1`.
 The full set of common comparison operators are listed below.
 
 ``` output|
- Comparison         | Operator | True example | False example |
+| Comparison         | Operator | True example | False example |
 |--------------------|----------|--------------|---------------|
 | Less than          | \<       | 2 \< 3       | 2 \< 2        |
 | Greater than       | \>       | 3 \> 2       | 3 \> 3        |
