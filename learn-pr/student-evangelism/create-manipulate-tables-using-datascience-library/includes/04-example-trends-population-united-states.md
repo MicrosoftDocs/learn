@@ -177,7 +177,7 @@ both in absolute and percentage terms. Both percent changes were around
 Now take a look at the next few rows. The percent change jumps from
 about 3% for the overall population to almost 30% for the people in
 their late sixties and early seventies. This stunning change contributes
-to what is known as the greying of America.
+to what is known as the graying of America.
 
 By far the greatest absolute change was among those in the 64-67
 age group in 2014. What could explain this large increase? We can explore

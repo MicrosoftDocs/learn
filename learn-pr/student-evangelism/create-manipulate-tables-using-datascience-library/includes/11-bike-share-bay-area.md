@@ -21,8 +21,8 @@ We end this chapter by using all the methods we have learned to examine
 a new and large dataset. We will also introduce `map_table`, a powerful
 visualization tool.
 
-The [Bay Area Bike Share](http://www.bayareabikeshare.com/) service
-published a [dataset](http://www.bayareabikeshare.com/open-data)
+The  Bay Area Bike Share service
+published a Open Data set.
 describing every bicycle rental from September 2014 to August 2015 in
 their system. There were 354,152 rentals in all. The columns are:
 
@@ -238,7 +238,7 @@ point.
 Marker.map_table(stations.select('lat', 'long', 'name'))
 ```
 
-![png](../media/folium-1.PNG)
+![Bay Area Map](../media/folium1.png)
 
 The map is created using
 [OpenStreetMap](http://www.openstreetmap.org/#map=5/51.500/-0.100),
@@ -256,7 +256,7 @@ sf_map_data = sf.select('lat', 'long', 'name')
 Circle.map_table(sf_map_data, color='green', radius=200)
 ```
 
-![png](../media/folium-2.PNG)
+![Bay Area Map](../media/folium2.png)
 
 ### More Informative Maps: An Application of `join`
 
@@ -300,7 +300,7 @@ colored = joined.select('lat', 'long', 'name', 'color')
 Marker.map_table(colored)
 ```
 
-![png](../media/folium-3.PNG)
+![Bay Area Map](../media/folium3.png)
 
 Now the markers have five different colors for the five different
 cities.
@@ -374,6 +374,6 @@ Circle.map_table(starts_map_data)
 
 ... (65 rows omitted)
 
-![png](../media/folium-4.PNG)
+![Bay Area Map](../media/folium4.png)
 
 That huge blob in San Francisco shows that the eastern section of the city is the unrivaled capital of bike rentals in the Bay Area.

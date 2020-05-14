@@ -268,7 +268,7 @@ For any given age, we can get the Female:Male gender ratio by dividing
 the number of females by the number of males. To do this in one step, we
 can use `column` to extract the array of female counts and the
 corresponding array of male counts, and then simply divide one array by
-the other. Elementwise division will create an array of gender ratios
+the other. Element-wise division will create an array of gender ratios
 for all the years.
 
 ``` python
@@ -383,4 +383,4 @@ gender imbalance in favor of women among senior citizens.
 ratios.plot('AGE')
 ```
 
-![png](../media/30-example-gender-ratio-us-population-34-0.png)
+![Example Gender Ratios US](../media/30-example-gender-ratio-us-population-34-0.png)

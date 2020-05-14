@@ -2,7 +2,7 @@ Before you start the module, you need to set up your virtual environment—some 
 
 If you are not interested in viewing the content interactively, feel free to skip the steps below.
 
-## You will need:
+## You will need
 
 A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.microsoft.com.
 
@@ -10,7 +10,7 @@ A Microsoft Azure Student subscription. If you don't already have one, you can s
 
 A Visual Studio Codespaces environment based on the MicrosoftDocs/inferentialthinking code repository. This environment provides a hosted instance of Visual Studio Codespaces, in which you'll be able to run the interactive notebooks.
 
-## To set up a Visual Studio Codespaces environment:
+## To set up a Visual Studio Codespaces environment
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking) in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
 If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
