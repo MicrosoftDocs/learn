@@ -1,9 +1,11 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **introduction-to-tables.ipynb** in your virtual environment
+> You can find an interactive version of this unit named **introduction-to-tables.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science".
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Please refer to the unit, Setting up your virtual environment.
+
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments).
 
 
 ``` python
@@ -38,8 +40,6 @@ The `with_columns` method on a table constructs a new table with
 additional labeled columns. Each column of a table is an array. To add
 one new column to a table, call `with_columns` with a label and an
 array. (The `with_column` method can be used with the same effect.)
-
-Below, we begin each example with an empty table that has no columns.
 
 ``` python
 Table().with_columns('Number of petals', make_array(8, 34, 5))
@@ -465,7 +465,9 @@ minard
 
 All of the methods that we have used above can be applied to any table.
 
-## Learning Objectives
+## Learning objectives
+
+In the rest of this module, you will learn:
 
 - Tables as a fundamental object type used for representing data sets.
 - Make Tables in Python using the datascience Library.

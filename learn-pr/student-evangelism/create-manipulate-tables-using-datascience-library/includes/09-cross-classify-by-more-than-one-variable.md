@@ -153,6 +153,8 @@ could take one or three or more. On the other hand, `pivot` always takes
 two column labels, one to determine the columns and one to determine the
 rows.
 
+### The pivot method
+
 **`pivot`**
 
 The `pivot` method is closely related to the `group` method: it groups

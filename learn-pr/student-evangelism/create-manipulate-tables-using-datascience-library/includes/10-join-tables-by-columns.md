@@ -82,8 +82,10 @@ Each cone now has not only its price but also the rating of its flavor.
 In general, a call to `join` that augments a table (say `table1`) with
 information from another table (say `table2`) looks like this:
 
+``` python
 table1.join(table1\_column\_for\_joining, table2,
 table2\_column\_for\_joining)
+```
 
 The new table `rated` allows us to work out the price per star, which
 you can think of as an informal measure of value. Low values are good --

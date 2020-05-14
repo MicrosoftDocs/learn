@@ -1,9 +1,11 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **example-gender-ratio-in-the-us-population.ipynb** in your virtual environment
+> You can find an interactive version of this unit named **introduction-to-tables.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science",  refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science".
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Please refer to the unit, Setting up your virtual environment.
+
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments).
 
 
 ``` python

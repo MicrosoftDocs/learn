@@ -1,9 +1,11 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **bike-sharing-in-the-bay-area.ipynb** in your virtual environment
+> You can find an interactive version of this unit named **introduction-to-tables.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Code environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science".
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Please refer to the unit, Setting up your virtual environment.
+
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments).
 
 We end this chapter by using all the methods we have learned to examine
 a new and large dataset. We will also introduce `map_table`, a powerful
@@ -250,7 +252,7 @@ Circle.map_table(sf_map_data, color='green', radius=200)
 
 ![Bay Area Map](../media/folium2.png)
 
-### More Informative Maps: An Application of `join`
+### More informative maps: an application of `join`
 
 The bike stations are located in five different cities in the Bay Area.
 To distinguish the points by using a different color for each city,

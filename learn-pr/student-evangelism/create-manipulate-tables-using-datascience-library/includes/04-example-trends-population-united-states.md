@@ -1,9 +1,11 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **example-trends-in-the-population-of-the-united-states.ipynb** in your virtual environment
+> You can find an interactive version of this unit named **introduction-to-tables.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science".
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Please refer to the unit, Setting up your virtual environment.
+
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments).
 
 ## Example: population trends
 
@@ -45,7 +47,7 @@ Only the first 10 rows of the table are displayed. Later we will see how
 to display the entire table; however, this is typically not useful with
 large tables.
 
-a [description of the
+A [description of the
 table](http://www2.census.gov/programs-surveys/popest/datasets/2010-2015/national/asrh/nc-est2015-agesex-res.pdf)
 appears online. The `SEX` column contains numeric codes: `0` stands for
 the total, `1` for male, and `2` for female. The `AGE` column contains

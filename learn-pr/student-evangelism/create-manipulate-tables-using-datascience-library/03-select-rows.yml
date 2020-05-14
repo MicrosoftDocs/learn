@@ -20,7 +20,7 @@ quiz:
       choices:
         - content: t.select(...)
           isCorrect: false
-          explanation: Incorrect. t.select will subset the data to a table only containing the selected columns
+          explanation: Incorrect. t.select will subset the data to a table only containing the selected columns.
         - content: t.take(...)
           isCorrect: false
           explanation: Incorrect. We want to display the first few rows, not subset the data to the first few rows.
@@ -42,7 +42,7 @@ quiz:
       choices:
         - content: t.select(...)
           isCorrect: true
-          explanation: Correct. t.select returns a table consisting of the selected columns
+          explanation: Correct. t.select returns a table consisting of the selected columns.
         - content: t.column(...)
           isCorrect: false
           explanation: Incorrect. t.coulmn(...) will return the selected column as an array.
@@ -52,7 +52,7 @@ quiz:
     - content: 'Returns a table with the same contents as t, but with the rows ordered by the values in a certain column.'
       choices:
         - content: Table.read_table(...)
-          explanation: Incorrect. Table.read_table(...) reads a table from a file or webpage
+          explanation: Incorrect. Table.read_table(...) reads a table from a file or webpage.
           isCorrect: false
         - content: t.sort(...)
           isCorrect: true
