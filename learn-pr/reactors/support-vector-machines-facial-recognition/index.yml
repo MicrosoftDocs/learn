@@ -21,7 +21,7 @@ abstract:  |
 prerequisites: |
   - Text classifications with Naive Bayes
   - Principal component analysis (PCA)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/reactors/support-vector-machines-facial-recognition.svg
 levels:
 - beginner
 roles:

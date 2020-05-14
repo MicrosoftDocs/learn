@@ -23,7 +23,7 @@ summary: |
   
 prerequisites: |
  - Introduction to Python for data science
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/reactors/machine-learning-popular-algorithms.svg
 levels:
 - beginner
 roles:
@@ -34,7 +34,7 @@ products:
 - azure
 - vs-code
 modules:
-- learn.reactors.text-classifications-naive-bayes
+- learn.reactors.text-classification-naive-bayes
 - learn.reactors.principal-component-analysis-food-composition
 - learn.reactors.support-vector-machines-facial-recognition
 - learn.reactors.deep-learning-facial-recognition

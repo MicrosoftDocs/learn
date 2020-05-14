@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.text-classifications-naive-bayes.1-introduction
+uid: learn.reactors.text-classification-naive-bayes.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to text classifications with Naive Bayes.
+  description: Introduction to text classification with Naive Bayes.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

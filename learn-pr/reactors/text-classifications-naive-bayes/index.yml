@@ -1,7 +1,7 @@
 ### YamlMime:Module
-uid: learn.reactors.text-classifications-naive-bayes
+uid: learn.reactors.text-classification-naive-bayes
 metadata:
-  title: 'Text classifications for Naive Bayes'
+  title: 'Text classification for Naive Bayes'
   description: Learn how to use conditional probability and Bayes classification to analyze an email dataset for spam.
   ms.date: 05/15/2020
   author: sguthals
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   show_latex: true
-title: 'Text classifications for Naive Bayes'
+title: 'Text classification for Naive Bayes'
 summary: Learn how to use conditional probability and Bayes classification to analyze an email dataset for spam.
 abstract:  | 
   In this module, you will:
@@ -22,7 +22,7 @@ abstract:  |
 prerequisites: |
   - Introduction to Python for data science
   
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/reactors/text-classification-naive-bayes.svg
 levels:
 - beginner
 roles:
@@ -33,12 +33,12 @@ products:
 - azure
 - vs-code
 units:
-- learn.reactors.text-classifications-naive-bayes.1-introduction
-- learn.reactors.text-classifications-naive-bayes.2-conditional-probability-bayes
-- learn.reactors.text-classifications-naive-bayes.3-import-dataset
-- learn.reactors.text-classifications-naive-bayes.4-explore-data
-- learn.reactors.text-classifications-naive-bayes.5-prepare-data
-- learn.reactors.text-classifications-naive-bayes.6-train-model
-- learn.reactors.text-classifications-naive-bayes.7-explore-more
+- learn.reactors.text-classification-naive-bayes.1-introduction
+- learn.reactors.text-classification-naive-bayes.2-conditional-probability-bayes
+- learn.reactors.text-classification-naive-bayes.3-import-dataset
+- learn.reactors.text-classification-naive-bayes.4-explore-data
+- learn.reactors.text-classification-naive-bayes.5-prepare-data
+- learn.reactors.text-classification-naive-bayes.6-train-model
+- learn.reactors.text-classification-naive-bayes.7-explore-more
 badge:
-  uid: learn.reactors.text-classifications-naive-bayes.badge 
+  uid: learn.reactors.text-classification-naive-bayes.badge 
