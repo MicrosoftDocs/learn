@@ -840,4 +840,4 @@ Here's the output:
 > [!div class="alert is-tip"]
 > ### Takeaway
 
->  A large part of the value you can provide as a data scientist comes from connecting multiple, often disparate datasets to find new insights. Learning how to join and merge    data is thus an essential part of your skill set.
+> A large part of the value you can provide as a data scientist comes from connecting multiple, often disparate datasets to find new insights. Learning how to join and merge    data is thus an essential part of your skill set.
