@@ -19,7 +19,8 @@ abstract: |
   - Use select() to select a subset of columns from a DataFrame
   - Use distinct() and dropDuplicates to remove duplicate data
   - Use drop() to remove columns from a DataFrame
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/work-dataframes-azure-databricks.svg
 levels:
 - intermediate
