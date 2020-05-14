@@ -6,7 +6,7 @@ To use the Azure Machine Learning designer, you create a *pipeline* that you wil
 
 1. in [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Designer** page (under **Author**), and select **+** to create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Auto Price Training** (if the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top).
-3. Observe that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, use **Select compute target** to select the **aml-cluster** compute target you created in the previous lab.
+3. Observe that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, use **Select compute target** to select the compute instance you created previously.
 
 ## Add and explore a dataset
 
@@ -20,18 +20,32 @@ In this module, you'll train a regression model that predicts the price of an au
 6. Scroll back to the left and select the **normalized-losses** column header. Then review the statistics for this column noting, there are quite a few missing values in this column. This will limit its usefulness in predicting the **price** label; so you might want to exclude it from training.
 7. View the statistics for the **bore**, **stroke**, and **horsepower** columns, noting the number of missing values. These columns have significantly fewer missing values than **normalized-losses**, so they may still be useful in predicting **price** if you exclude the rows where the values are missing from training.
 8. Compare the values in the **stroke**, **peak-rpm**, and **city-mpg** columns. These are all measured in different scales, and its possible that the larger values for **peak-rpm** might bias the training algorithm and create an over-dependency on this column compared to columns with lower values, such as **stroke**. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.
-9. Close the **Automobile price data (Raw) result visualization** window, and then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon.
+9. Close the **Automobile price data (Raw) result visualization** window, and then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon so that you can see the dataset on the canvas like this:
+
+> [!div class="centered"]
+> ![The Automobile price data (Raw) dataset on the designer canvas](../media/dataset.png)
 
 ## Add data transformations
 
 You typically apply data transformations to prepare the data for modeling. In the case of the automobile price data, you'll add transformations to address the issues you identified when exploring the data.
 
 1. In the pane on the left, collapse the **Datasets** section if it is still expanded, and expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
-2. Drag a **Select Columns in Dataset** module to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module.
+2. Drag a **Select Columns in Dataset** module to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module, like this:
+
+> [!div class="centered"]
+> ![The Automobile price data (Raw) dataset connected to the Select Columns in Dataset module](../media/dataset-select-columns.png)
+
 3. Select the **Select Columns in Dataset** module, and in its **Settings** pane on the right, select **Edit column**. Then in the **Select columns** window, select **By name** and use the **+** links to add all columns other than **normalized-losses**, like this:
 
 > [!div class="centered"]
 > ![all columns other than normalized_losses](../media/select-columns.png)
+
+In the rest of this exercise, you're going to create a pipeline that looks like this:
+
+> [!div class="centered"]
+> ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
+
+Follow the remaining steps, using the image above for reference as you add and configure the required modules.
 
 4. Drag a **Clean Missing Data** module from the **Data Transformations** section, and place it under the **Select Columns in Dataset** module. Then connect the output from the **Select Columns in Dataset** module to the input of the **Clean Missing Data** module.
 5. Select the **Clean Missing Data** module, and in the settings pane on the right, click **Edit column**. Then in the **Select columns** window, select **With rules**, in the **Include** list select **Column names**, in the box of column names enter **bore**, **stroke**, and **horsepower** (making sure you match the spelling and capitalization exactly), like this:
@@ -72,9 +86,7 @@ To see the effect of your data transformations, you need to run the pipeline as 
 > [!div class="centered"]
 > ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **auto-price-training**.
-3. Wait for the run to complete - this may take 5 minutes or more.
-4. When the run has completed (indicated by a &#x2705; icon for each module), select the **Normalize Data** module and in the settings pane, on the **Outputs + Logs** tab, under **Port outputs** in the **Transformed dataset** section, use the **Visualize** icon to view the transformed columns.
-5. Close the **Normalize Data** visualization.
+2. Select **Submit**, and run the pipeline as a new experiment named **auto-price-training** on your compute instance.
+3. Wait for the run to complete (indicated by a &#x2705; icon for each module). This may take 5 minutes or more.
 
 The dataset is now prepared for model training.
