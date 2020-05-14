@@ -1,7 +1,5 @@
 Suppose you're a data engineer working for a health data analysis and reporting company, and you have a large volume of statistical data and health equipment telemetry. You are currently using Azure Databricks to read and transform all this data, but need to find a better way to optimize your workloads. As your data grows, so does the amount time it takes to gain valuable insights about your data. Your ability to optimize your workload is no longer a nice-to-have, but a must-have capability.
 
-[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
-
 ## Learning objectives
 
 In this module, you'll:
