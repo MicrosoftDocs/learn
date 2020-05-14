@@ -1,5 +1,5 @@
-It is often the case in programming -- especially when dealing with
-randomness -- that we want to repeat a process multiple times. For
+It is often the case in programming--especially when dealing with
+randomness--that we want to repeat a process multiple times. For
 example, recall the game of betting on one roll of a die with the
 following rules:
 
@@ -87,7 +87,7 @@ called *simulating* the results of five bets. We use the word
 *simulating* to remind ourselves that we are not physically rolling dice
 and exchanging money but using Python to mimic the process.
 
-To repeat a process `n` times, it is common to use the sequence
+To repeat a process `n` time, it is common to use the sequence
 `np.arange(n)` in the `for` statement. It is also common to use a very
 short name for each item. In our code we will use the name `i` to remind
 ourselves that it refers to an item.
@@ -259,8 +259,7 @@ outcome_table.group('Outcome').barh(0)
 
 ![Example Plot](../media/39-iteration-29-0.png)
 
-Not surprisingly, each of the three outcomes -1, 0, and 1 appeared about
-about 100 of the 300 times, give or take. We will examine the "give or
+Not surprisingly, each of the three outcomes -1, 0, and 1 appeared about 100 of the 300 times, give or take. We will examine the "give or
 take" amounts more closely in later chapters.
 
 ## Check your knowledge
