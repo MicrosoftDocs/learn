@@ -1,15 +1,6 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 Our methods for comparing two samples have a powerful use in the
 analysis of randomized controlled experiments. Since the treatment and
-control groups are assigned randomly in such experiements, differences
+control groups are assigned randomly in such experiments, differences
 in their outcomes can be compared to what would happen due to
 chance alone if the treatment had no effect at all. If the observed
 differences are more marked than what we would predict as purely due to
@@ -26,7 +17,7 @@ analysis.
 
 Let's see how to do this in an example.
 
-### Treating Chronic Back Pain: A Randomized Controlled Trial
+### Treating chronic back pain, a randomized controlled trial
 
 Low-back pain in adults can be persistent and hard to treat. Common
 methods run the gamut from corticosteroids to acupuncture. A [randomized
@@ -57,39 +48,42 @@ bta = Table.read_table(path_data + 'bta.csv')
 bta.show()
 ```
 
-|Group|Result|
-|--- |--- |
-|Control|1|
-|Control|1|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Control|0|
-|Treatment|1|
-|Treatment|1|
-|Treatment|1|
-|Treatment|1|
-|Treatment|1|
-|Treatment|1|
-|Treatment|1|
-|Treatment|1|
-|Treatment|1|
-|Treatment|0|
-|Treatment|0|
-|Treatment|0|
-|Treatment|0|
-|Treatment|0|
-|Treatment|0|
+``` output
+| Group     | Result |
+|-----------|--------|
+| Control   | 1      |
+| Control   | 1      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Control   | 0      |
+| Treatment | 1      |
+| Treatment | 1      |
+| Treatment | 1      |
+| Treatment | 1      |
+| Treatment | 1      |
+| Treatment | 1      |
+| Treatment | 1      |
+| Treatment | 1      |
+| Treatment | 1      |
+| Treatment | 0      |
+| Treatment | 0      |
+| Treatment | 0      |
+| Treatment | 0      |
+| Treatment | 0      |
+| Treatment | 0      |  
+
+```
 
 Remember that counting is the same as adding zeros and ones. The sum of
 1's in the control group is the number of control group patients who had
@@ -100,10 +94,13 @@ of control group patients who had pain relief.
 bta.group('Group', np.average)
 ```
 
-|Group|Result average|
-|--- |--- |
-|Control|0.125|
-|Treatment|0.6|
+``` output
+| Group     | Result average |
+|-----------|----------------|
+| Control   | 0.125          |
+| Treatment | 0.6            |  
+
+```
 
 In the treatment group, 60% of the patients had pain relief, compared to
 only 12.5% in the control group. None of the patients suffered any side
@@ -125,7 +122,7 @@ group might look better than those of the control group.
 To account for this possibility, let's start by carefully setting up the
 chance model.
 
-### Potential Outcomes
+### Potential outcomes
 
 Before the patients are randomized into the two groups, our minds
 instinctively imagine two possible outcomes for each patient: the
@@ -163,41 +160,44 @@ observed_outcomes = Table.read_table(path_data + "observed_outcomes.csv")
 observed_outcomes.show()
 ```
 
-|Group|Outcome if assigned treatment|Outcome if assigned control|
-|--- |--- |--- |
-|Control|Unknown|1|
-|Control|Unknown|1|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Control|Unknown|0|
-|Treatment|1|Unknown|
-|Treatment|1|Unknown|
-|Treatment|1|Unknown|
-|Treatment|1|Unknown|
-|Treatment|1|Unknown|
-|Treatment|1|Unknown|
-|Treatment|1|Unknown|
-|Treatment|1|Unknown|
-|Treatment|1|Unknown|
-|Treatment|0|Unknown|
-|Treatment|0|Unknown|
-|Treatment|0|Unknown|
-|Treatment|0|Unknown|
-|Treatment|0|Unknown|
-|Treatment|0|Unknown|
+``` output
+| Group     | Outcome if assigned treatment | Outcome if assigned control |
+|-----------|-------------------------------|-----------------------------|
+| Control   | Unknown                       | 1                           |
+| Control   | Unknown                       | 1                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Control   | Unknown                       | 0                           |
+| Treatment | 1                             | Unknown                     |
+| Treatment | 1                             | Unknown                     |
+| Treatment | 1                             | Unknown                     |
+| Treatment | 1                             | Unknown                     |
+| Treatment | 1                             | Unknown                     |
+| Treatment | 1                             | Unknown                     |
+| Treatment | 1                             | Unknown                     |
+| Treatment | 1                             | Unknown                     |
+| Treatment | 1                             | Unknown                     |
+| Treatment | 0                             | Unknown                     |
+| Treatment | 0                             | Unknown                     |
+| Treatment | 0                             | Unknown                     |
+| Treatment | 0                             | Unknown                     |
+| Treatment | 0                             | Unknown                     |
+| Treatment | 0                             | Unknown                     |
 
-### The Hypotheses
+```
+
+### The hypotheses
 
 The question is whether the treatment does anything. In terms of the
 table `observed_outcomes`, the question is whether the distribution of
@@ -231,7 +231,7 @@ will carry out the test below showing the details of all the steps. You
 should confirm that they are the same as the steps carried out for A/B
 testing.
 
-### The Test Statistic
+### The test statistic
 
 If the two group proportions are different from each other, we will
 lean towards the alternative hypothesis that the two underlying
@@ -249,10 +249,12 @@ of the test statistic is $\big{\vert} 0.6 - 0.125 \big{\vert} = 0.475$.
 bta.group('Group', np.average)
 ```
 
-|Group|Result average|
-|--- |--- |
-|Control|0.125|
-|Treatment|0.6|
+``` output
+| Group     | Result average |
+|-----------|----------------|
+| Control   | 0.125          |
+| Treatment | 0.6            |
+
 
 ``` python
 observed_proportions = bta.group('Group', np.average).column(1)
@@ -260,7 +262,9 @@ observed_distance = abs(observed_proportions.item(0) - observed_proportions.item
 observed_distance
 ```
 
+``` output
 0.475
+```
 
 As we have done before, we will define a function that takes the
 following arguments:
@@ -282,14 +286,16 @@ def distance(table, label, group_label):
 distance(bta, 'Result', 'Group')
 ```
 
+``` output
 0.475
+```
 
-### Predicting the Statistic Under the Null Hypothesis
+### Predicting the statistic under the null hypothesis
 
 We can simulate results under the null hypothesis, to see how our test
 statistic should come out if the null hypothesis is true.
 
-#### Generating One Value of the Statistic
+#### Generating one value of the statistic
 
 The simulation follows exactly the same process we used in the previous
 section. We start by randomly permuting the all group labels and then
@@ -304,39 +310,42 @@ bta_with_shuffled_labels = bta.with_column('Shuffled Label', shuffled_labels)
 bta_with_shuffled_labels.show()
 ```
 
-|Group|Result|Shuffled Label|
-|--- |--- |--- |
-|Control|1|Control|
-|Control|1|Control|
-|Control|0|Control|
-|Control|0|Treatment|
-|Control|0|Control|
-|Control|0|Treatment|
-|Control|0|Treatment|
-|Control|0|Treatment|
-|Control|0|Control|
-|Control|0|Treatment|
-|Control|0|Treatment|
-|Control|0|Control|
-|Control|0|Treatment|
-|Control|0|Control|
-|Control|0|Treatment|
-|Control|0|Control|
-|Treatment|1|Treatment|
-|Treatment|1|Treatment|
-|Treatment|1|Treatment|
-|Treatment|1|Control|
-|Treatment|1|Control|
-|Treatment|1|Treatment|
-|Treatment|1|Control|
-|Treatment|1|Treatment|
-|Treatment|1|Control|
-|Treatment|0|Control|
-|Treatment|0|Treatment|
-|Treatment|0|Control|
-|Treatment|0|Treatment|
-|Treatment|0|Control|
-|Treatment|0|Control|
+``` output
+| Group     | Result | Shuffled Label |
+|-----------|--------|----------------|
+| Control   | 1      | Control        |
+| Control   | 1      | Control        |
+| Control   | 0      | Control        |
+| Control   | 0      | Treatment      |
+| Control   | 0      | Control        |
+| Control   | 0      | Treatment      |
+| Control   | 0      | Treatment      |
+| Control   | 0      | Treatment      |
+| Control   | 0      | Control        |
+| Control   | 0      | Treatment      |
+| Control   | 0      | Treatment      |
+| Control   | 0      | Control        |
+| Control   | 0      | Treatment      |
+| Control   | 0      | Control        |
+| Control   | 0      | Treatment      |
+| Control   | 0      | Control        |
+| Treatment | 1      | Treatment      |
+| Treatment | 1      | Treatment      |
+| Treatment | 1      | Treatment      |
+| Treatment | 1      | Control        |
+| Treatment | 1      | Control        |
+| Treatment | 1      | Treatment      |
+| Treatment | 1      | Control        |
+| Treatment | 1      | Treatment      |
+| Treatment | 1      | Control        |
+| Treatment | 0      | Control        |
+| Treatment | 0      | Treatment      |
+| Treatment | 0      | Control        |
+| Treatment | 0      | Treatment      |
+| Treatment | 0      | Control        |
+| Treatment | 0      | Control        |  
+
+```
 
 We can now find the distance between the two proportions after the group
 labels have been shuffled.
@@ -345,7 +354,9 @@ labels have been shuffled.
 distance(bta_with_shuffled_labels, 'Result', 'Shuffled Label')
 ```
 
+``` output
 0.041666666666666685
+```
 
 This is different from the distance between the two original
 proportions.
@@ -354,9 +365,11 @@ proportions.
 distance(bta_with_shuffled_labels, 'Result', 'Group')
 ```
 
+``` output
 0.475
+```
 
-### Permutation Test
+### Permutation test
 
 If we shuffled the labels again, how different would the new distance
 be? To answer this, we will define a function that simulates one
@@ -385,7 +398,7 @@ for i in np.arange(repetitions):
     distances = np.append(distances, new_distance)
 ```
 
-### Conclusion of the Test
+### Conclusion of the test
 
 The array `distances` contains 20,000 values of our test statistic
 simulated under the null hypothesis.
@@ -400,7 +413,9 @@ empirical_P = np.count_nonzero(distances >= observed_distance) / repetitions
 empirical_P
 ```
 
+``` output
 0.0085
+``` 
 
 This is a small P-value. The observed statistic, shown as the red dot
 below, is in the tail of the empirical histogram of the test statistic
@@ -418,7 +433,9 @@ print('Observed Distance', observed_distance)
 print('Empirical P-value:', round(empirical_P, 4) *100, '%')
 ```
 
+``` output
 Observed Distance 0.475 Empirical P-value: 0.8500000000000001%
+```
 
 ![Causality example](../media/62-causality-30-1.png)
 
@@ -442,7 +459,7 @@ more pain would be more likely to choose the treatment *and* more likely
 to experience some reduction in pain even without medication.
 Pre-existing pain would then be a *confounding factor* in the analysis.
 
-### A Meta-Analysis
+### A Meta-analysis
 
 While the RCT does provide evidence that the botulinum toxin A treatment
 helped patients, a study of 31 patients isn't enough to establish the

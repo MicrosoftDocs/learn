@@ -1,12 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plt
-plt.style.use('fivethirtyeight')
-import numpy as np
-```
-
 Numerical data can be sorted in increasing or decreasing order. Thus the
 values of a numerical data set have a *rank order*. A percentile is the
 value at a particular rank.
@@ -33,7 +24,7 @@ collection, or the 9th, or somewhere in between?
 In this section, we will give a definition that works consistently for
 all ranks and all lists.
 
-### A Numerical Example
+### A Numerical example
 
 Before giving a general definition of all percentiles, we will define
 the 80th percentile of a collection of values to be the smallest value
@@ -55,7 +46,9 @@ elements. That's 12:
 np.sort(sizes)
 ```
 
+``` output
     array([ 6,  7,  9, 12, 17])
+```
 
 The 80th percentile is a value on the list, namely 12. You can see that
 80% of the values are less than or equal to it, and that it is the
@@ -75,9 +68,11 @@ and a array. It returns the corresponding percentile of the array.
 percentile(70, sizes)
 ```
 
+``` output
     12
+```
 
-### The General Definition
+### The general definition
 
 Let $p$ be a number between 0 and 100. The $p$th percentile of a
 collection is the smallest value in the collection that is at least as
@@ -87,7 +82,8 @@ By this definition, any percentile between 0 and 100 can be computed for
 any collection of values, and it is always an element of the collection.
 
 In practical terms, suppose there are $n$ elements in the collection. To
-find the $p$th percentile: 
+find the $p$th percentile:
+
 - Sort the collection in increasing order.
 - Find p% of n: $(p/100) \times n$. Call that $k$. 
 - If $k$ is an integer, take the $k$th element of the sorted collection. 
@@ -105,26 +101,28 @@ scores_and_sections = Table.read_table(path_data + 'scores_by_section.csv')
 scores_and_sections
 ```
 
-|Section|Midterm|
-|--- |--- |
-|1|22|
-|2|12|
-|2|23|
-|2|14|
-|1|20|
-|3|25|
-|4|19|
-|1|24|
-|5|8|
-|6|14|
+``` output
+| Section | Midterm |
+|---------|---------|
+| 1       | 22      |
+| 2       | 12      |
+| 2       | 23      |
+| 2       | 14      |
+| 1       | 20      |
+| 3       | 25      |
+| 4       | 19      |
+| 1       | 24      |
+| 5       | 8       |
+| 6       | 14      |  
 
 ... (349 rows omitted)
+```
 
 ``` python
 scores_and_sections.select('Midterm').hist(bins=np.arange(-0.5, 25.6, 1))
 ```
 
-![png](../media/64-percentiles-12-1.png)
+![Percentiles example](../media/64-percentiles-12-1.png)
 
 What was the 85th percentile of the scores? To use the `percentile`
 function, create an array `scores` containing the midterm scores, and
@@ -138,7 +136,9 @@ scores = scores_and_sections.column(1)
 percentile(85, scores)
 ```
 
+``` output
 22
+```
 
 According to the percentile function, the 85th percentile was 22. To
 check that this is consistent with our new definition, let's apply the
@@ -157,7 +157,9 @@ There are 359 scores in the array. So next, find 85% of 359, which is
 0.85 * 359
 ```
 
+``` output
 305.15
+```
 
 That's not an integer. By our definition, the 85th percentile is the
 306th element of `sorted_scores`, which, by Python's indexing
@@ -169,7 +171,9 @@ convention, is item 305 of the array.
 sorted_scores.item(305)
 ```
 
+``` output
 22
+```
 
 That's the same as the answer we got by using `percentile`. In future,
 we will just use `percentile`.
@@ -186,19 +190,25 @@ For our `scores` data, those values are:
 percentile(25, scores)
 ```
 
+``` output
     11
+```
 
 ``` python
 percentile(50, scores)
 ```
 
+``` output
     16
+```
 
 ``` python
 percentile(75, scores)
 ```
 
+``` output
     20
+```
 
 Distributions of scores are sometimes summarized by the "middle 50%"
 interval, between the first and third quartiles.

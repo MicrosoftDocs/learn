@@ -1,70 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
-``` python
-def bootstrap_median(original_sample, label, replications):
-    
-    """Returns an array of bootstrapped sample medians:
-    original_sample: table containing the original sample
-    label: label of column containing the variable
-    replications: number of bootstrap samples
-    """
-    
-    just_one_column = original_sample.select(label)
-    medians = make_array()
-    for i in np.arange(replications):
-        bootstrap_sample = just_one_column.sample()
-        resampled_median = percentile(50, bootstrap_sample.column(0))
-        medians = np.append(medians, resampled_median)
-        
-    return medians
-```
-
-``` python
-def bootstrap_mean(original_sample, label, replications):
-    
-    """Returns an array of bootstrapped sample means:
-    original_sample: table containing the original sample
-    label: label of column containing the variable
-    replications: number of bootstrap samples
-    """
-    
-    just_one_column = original_sample.select(label)
-    means = make_array()
-    for i in np.arange(replications):
-        bootstrap_sample = just_one_column.sample()
-        resampled_mean = np.mean(bootstrap_sample.column(0))
-        means = np.append(means, resampled_mean)
-        
-    return means
-```
-
-``` python
-def bootstrap_proportion(original_sample, label, replications):
-    
-    """Returns an array of bootstrapped sample proportions:
-    original_sample: table containing the original sample
-    label: label of column containing the Boolean variable
-    replications: number of bootstrap samples
-    """
-    
-    just_one_column = original_sample.select(label)
-    proportions = make_array()
-    for i in np.arange(replications):
-        bootstrap_sample = just_one_column.sample()
-        resample_array = bootstrap_sample.column(0)
-        resampled_proportion = np.count_nonzero(resample_array)/len(resample_array)
-        proportions = np.append(proportions, resampled_proportion)
-        
-    return proportions
-```
-
 A confidence interval has a single purpose -- to estimate an unknown
 parameter based on data in a random sample. In the last section, we said
 that the interval (36%, 42%) was an approximate 95% confidence interval
@@ -92,10 +25,7 @@ baby = Table.read_table(path_data + 'baby.csv')
 baby.select('Maternal Age').hist()
 ```
 
-    /home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
-      warnings.warn("The 'normed' kwarg is deprecated, and has been "
-
-![png](../media/67-using-confidence-intervals-6-1.png)
+![Confidence Interval Example](../media/67-using-confidence-intervals-6-1.png)
 
 A small percent of the sampled ages are in the (26.9, 27.6) interval,
 and you would expect a similar small percent in the population. The
@@ -105,7 +35,7 @@ population.
 However, estimating a parameter by confidence intervals does have an
 important use besides just telling us roughly how big the parameter is.
 
-### Using a Confidence Interval to Test Hypotheses
+### Using a confidence interval to test hypotheses
 
 Our approximate 95% confidence interval for the average age in the
 population goes from 26.9 years to 27.6 years. Suppose someone wants to
@@ -170,20 +100,22 @@ hodgkins = Table.read_table(path_data + 'hodgkins.csv')
 hodgkins
 ```
 
-|height|rad|chemo|base|month15|
-|--- |--- |--- |--- |--- |
-|164|679|180|160.57|87.77|
-|168|311|180|98.24|67.62|
-|173|388|239|129.04|133.33|
-|157|370|168|85.41|81.28|
-|160|468|151|67.94|79.26|
-|170|341|96|150.51|80.97|
-|163|453|134|129.88|69.24|
-|175|529|264|87.45|56.48|
-|185|392|240|149.84|106.99|
-|178|479|216|92.24|73.43|
+``` output
+|| height | rad | chemo | base   | month15 |
+|--------|-----|-------|--------|---------|
+| 164    | 679 | 180   | 160.57 | 87.77   |
+| 168    | 311 | 180   | 98.24  | 67.62   |
+| 173    | 388 | 239   | 129.04 | 133.33  |
+| 157    | 370 | 168   | 85.41  | 81.28   |
+| 160    | 468 | 151   | 67.94  | 79.26   |
+| 170    | 341 | 96    | 150.51 | 80.97   |
+| 163    | 453 | 134   | 129.88 | 69.24   |
+| 175    | 529 | 264   | 87.45  | 56.48   |
+| 185    | 392 | 240   | 149.84 | 106.99  |
+| 178    | 479 | 216   | 92.24  | 73.43   |
 
 ... (12 rows omitted)
+```
 
 We will compare the baseline and 15-month scores. As each row
 corresponds to one patient, we say that the sample of baseline scores
@@ -205,29 +137,27 @@ hodgkins = hodgkins.with_column(
 ``` python
 hodgkins
 ```
-|height|rad|chemo|base|month15|drop|
-|--- |--- |--- |--- |--- |--- |
-|164|679|180|160.57|87.77|72.8|
-|168|311|180|98.24|67.62|30.62|
-|173|388|239|129.04|133.33|-4.29|
-|157|370|168|85.41|81.28|4.13|
-|160|468|151|67.94|79.26|-11.32|
-|170|341|96|150.51|80.97|69.54|
-|163|453|134|129.88|69.24|60.64|
-|175|529|264|87.45|56.48|30.97|
-|185|392|240|149.84|106.99|42.85|
-|178|479|216|92.24|73.43|18.81|
+
+``` output
+| height | rad | chemo | base   | month15 | drop   |
+|--------|-----|-------|--------|---------|--------|
+| 164    | 679 | 180   | 160.57 | 87.77   | 72.8   |
+| 168    | 311 | 180   | 98.24  | 67.62   | 30.62  |
+| 173    | 388 | 239   | 129.04 | 133.33  | -4.29  |
+| 157    | 370 | 168   | 85.41  | 81.28   | 4.13   |
+| 160    | 468 | 151   | 67.94  | 79.26   | -11.32 |
+| 170    | 341 | 96    | 150.51 | 80.97   | 69.54  |
+| 163    | 453 | 134   | 129.88 | 69.24   | 60.64  |
+| 175    | 529 | 264   | 87.45  | 56.48   | 30.97  |
+| 185    | 392 | 240   | 149.84 | 106.99  | 42.85  |
+| 178    | 479 | 216   | 92.24  | 73.43   | 18.81  |
 
 ... (12 rows omitted)
+```
 
 ``` python
 hodgkins.select('drop').hist(bins=np.arange(-20, 81, 20))
 ```
-
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
 
 ![png](../media/67-using-confidence-intervals-17-1.png)
 
@@ -235,7 +165,9 @@ and has been"
 np.mean(hodgkins.column('drop'))
 ```
 
+``` output
 28.615909090909096
+```
 
 But could this be the result of chance variation? It really doesn't seem
 so, but the data are from a random sample. Could it be that in the
@@ -261,7 +193,9 @@ right = percentile(99.5, bstrap_means)
 make_array(left, right)
 ```
 
+``` output
 array(\[17.22636364, 40.54045455\])
+```
 
 ``` python
 resampled_means = Table().with_column(
@@ -270,11 +204,6 @@ resampled_means = Table().with_column(
 resampled_means.hist()
 plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ```
-
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
 
 ![png](../media/67-using-confidence-intervals-21-1.png)
 

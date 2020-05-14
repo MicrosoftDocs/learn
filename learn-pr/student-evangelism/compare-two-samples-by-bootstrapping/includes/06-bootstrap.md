@@ -1,12 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 A data scientist is using the data in a random sample to estimate an
 unknown parameter. She uses the sample to calculate the value of a
 statistic that she will use as her estimate.
@@ -33,7 +24,7 @@ sample*.
 In this section, we will see how and why the bootstrap works. In the
 rest of the chapter, we will use the bootstrap for inference.
 
-### Employee Compensation in the City of San Francisco
+### Employee compensation in the city of San Francisco
 
 [SF OpenData](https://data.sfgov.org) is a website where the City and
 County of San Francisco make some of their data publicly available. One
@@ -52,34 +43,39 @@ sf2015 = Table.read_table(path_data + 'san_francisco_2015.csv')
 sf2015
 ```
 
-|Year Type|Year|Organization Group Code|Organization Group|Department Code|Department|Union Code|Union|Job Family Code|Job Family|Job Code|Job|Employee Identifier|Salaries|Overtime|Other Salaries|Total Salary|Retirement|Health/Dental|Other Benefits|Total Benefits|Total Compensation|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|Calendar|2015|2|Public Works, Transportation & Commerce|WTR|PUC Water Department|21|Prof & Tech Engineers - Miscellaneous, Local 21|2400|Lab, Pharmacy & Med Techs|2481|Water Qualitytech I/II|21538|82146|0|0|82146|16942.2|12340.9|6337.73|35620.8|117767|
-|Calendar|2015|2|Public Works, Transportation & Commerce|DPW|General Services Agency - Public Works|12|Carpet, Linoleum and Soft Tile Workers, Local 12|7300|Journeyman Trade|7393|Soft Floor Coverer|5459|32165.8|973.19|848.96|33987.9|0|4587.51|2634.42|7221.93|41209.8|
-|Calendar|2015|4|Community Health|DPH|Public Health|790|SEIU - Miscellaneous, Local 1021|1600|Payroll, Billing & Accounting|1636|Health Care Billing Clerk 2|41541|71311|5757.98|0|77069|14697.6|12424.5|6370.06|33492.2|110561|
-|Calendar|2015|4|Community Health|DPH|Public Health|351|Municipal Executive Association - Miscellaneous|0900|Management|2620|Food Service Mgr Administrator|26718|28430.2|0|763.07|29193.3|0|4223.14|5208.51|9431.65|38625|
-|Calendar|2015|2|Public Works, Transportation & Commerce|MTA|Municipal Transportation Agency|790|SEIU - Miscellaneous, Local 1021|8200|Protection & Apprehension|8201|School Crossing Guard|45810|7948.75|0|0|7948.75|0|2873.17|616.24|3489.41|11438.2|
-|Calendar|2015|1|Public Protection|POL|Police|911|Police Officers' Association|Q000|Police Services|Q002|Police Officer|32906|2235|0|0|2235|490.36|286.72|176.57|953.65|3188.65|
-|Calendar|2015|4|Community Health|DPH|Public Health|791|SEIU - Staff and Per Diem Nurses, Local 1021|2300|Nursing|2328|Nurse Practitioner|7506|187247|0|11704.1|198951|37683.7|12424.5|11221.7|61329.9|260281|
-|Calendar|2015|2|Public Works, Transportation & Commerce|MTA|Municipal Transportation Agency|253|Transport Workers - Transit Operators, Local 250-A|9100|Street Transit|9163|Transit Operator|36773|66988.5|3512.88|2770.39|73271.8|19127.2|13203|5455.1|37785.3|111057|
-|Calendar|2015|6|General Administration & Finance|CAT|City Attorney|311|Municipal Attorneys' Association|8100|Legal & Court|8177|Attorney (Civil/Criminal)|12963|135190|0|1562.5|136752|27501.8|12424.5|10103|50029.3|186781|
-|Calendar|2015|3|Human Welfare & Neighborhood Development|DSS|Human Services|535|SEIU - Human Services, Local 1021|9700|Community Development|9703|Emp & Training Spec 2|35179|70474.8|147.28|1647.24|72269.3|14650.3|10696.9|5993.11|31340.3|103610|
+``` output
+| Year Type | Year | Organization Group Code | Organization Group                       | Department Code | Department                             | Union Code | Union                                              | Job Family Code | Job Family                    | Job Code | Job                            | Employee Identifier | Salaries | Overtime | Other Salaries | Total Salary | Retirement | Health/Dental | Other Benefits | Total Benefits | Total Compensation |
+|-----------|------|-------------------------|------------------------------------------|-----------------|----------------------------------------|------------|----------------------------------------------------|-----------------|-------------------------------|----------|--------------------------------|---------------------|----------|----------|----------------|--------------|------------|---------------|----------------|----------------|--------------------|
+| Calendar  | 2015 | 2                       | Public Works, Transportation & Commerce  | WTR             | PUC Water Department                   | 21         | Prof & Tech Engineers - Miscellaneous, Local 21    | 2400            | Lab, Pharmacy & Med Techs     | 2481     | Water Qualitytech I/II         | 21538               | 82146    | 0        | 0              | 82146        | 16942.2    | 12340.9       | 6337.73        | 35620.8        | 117767             |
+| Calendar  | 2015 | 2                       | Public Works, Transportation & Commerce  | DPW             | General Services Agency - Public Works | 12         | Carpet, Linoleum and Soft Tile Workers, Local 12   | 7300            | Journeyman Trade              | 7393     | Soft Floor Coverer             | 5459                | 32165.8  | 973.19   | 848.96         | 33987.9      | 0          | 4587.51       | 2634.42        | 7221.93        | 41209.8            |
+| Calendar  | 2015 | 4                       | Community Health                         | DPH             | Public Health                          | 790        | SEIU - Miscellaneous, Local 1021                   | 1600            | Payroll, Billing & Accounting | 1636     | Health Care Billing Clerk 2    | 41541               | 71311    | 5757.98  | 0              | 77069        | 14697.6    | 12424.5       | 6370.06        | 33492.2        | 110561             |
+| Calendar  | 2015 | 4                       | Community Health                         | DPH             | Public Health                          | 351        | Municipal Executive Association - Miscellaneous    | 0900            | Management                    | 2620     | Food Service Mgr Administrator | 26718               | 28430.2  | 0        | 763.07         | 29193.3      | 0          | 4223.14       | 5208.51        | 9431.65        | 38625              |
+| Calendar  | 2015 | 2                       | Public Works, Transportation & Commerce  | MTA             | Municipal Transportation Agency        | 790        | SEIU - Miscellaneous, Local 1021                   | 8200            | Protection & Apprehension     | 8201     | School Crossing Guard          | 45810               | 7948.75  | 0        | 0              | 7948.75      | 0          | 2873.17       | 616.24         | 3489.41        | 11438.2            |
+| Calendar  | 2015 | 1                       | Public Protection                        | POL             | Police                                 | 911        | Police Officers' Association                       | Q000            | Police Services               | Q002     | Police Officer                 | 32906               | 2235     | 0        | 0              | 2235         | 490.36     | 286.72        | 176.57         | 953.65         | 3188.65            |
+| Calendar  | 2015 | 4                       | Community Health                         | DPH             | Public Health                          | 791        | SEIU - Staff and Per Diem Nurses, Local 1021       | 2300            | Nursing                       | 2328     | Nurse Practitioner             | 7506                | 187247   | 0        | 11704.1        | 198951       | 37683.7    | 12424.5       | 11221.7        | 61329.9        | 260281             |
+| Calendar  | 2015 | 2                       | Public Works, Transportation & Commerce  | MTA             | Municipal Transportation Agency        | 253        | Transport Workers - Transit Operators, Local 250-A | 9100            | Street Transit                | 9163     | Transit Operator               | 36773               | 66988.5  | 3512.88  | 2770.39        | 73271.8      | 19127.2    | 13203         | 5455.1         | 37785.3        | 111057             |
+| Calendar  | 2015 | 6                       | General Administration & Finance         | CAT             | City Attorney                          | 311        | Municipal Attorneys' Association                   | 8100            | Legal & Court                 | 8177     | Attorney (Civil/Criminal)      | 12963               | 135190   | 0        | 1562.5         | 136752       | 27501.8    | 12424.5       | 10103          | 50029.3        | 186781             |
+| Calendar  | 2015 | 3                       | Human Welfare & Neighborhood Development | DSS             | Human Services                         | 535        | SEIU - Human Services, Local 1021                  | 9700            | Community Development         | 9703     | Emp & Training Spec 2          | 35179               | 70474.8  | 147.28   | 1647.24        | 72269.3      | 14650.3    | 10696.9       | 5993.11        | 31340.3        | 103610             |  
+
 
 ... (42979 rows omitted)
+```
 
 There is one row for each of 42,979 employees. There are numerous
 columns containing information about City departmental affiliation and
 details of the different parts of the employee's compensation package.
-Here is the row correspoding to the late Edward Lee, the Mayor at that
+Here is the row corresponding to the late Edward Lee, the Mayor at that
 time.
 
 ``` python
 sf2015.where('Job', are.equal_to('Mayor'))
 ```
 
-|Year Type|Year|Organization Group Code|Organization Group|Department Code|Department|Union Code|Union|Job Family Code|Job Family|Job Code|Job|Employee Identifier|Salaries|Overtime|Other Salaries|Total Salary|Retirement|Health/Dental|Other Benefits|Total Benefits|Total Compensation|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|Calendar|2015|6|General Administration & Finance|MYR|Mayor|556|Elected Officials|1100|Administrative & Mgmt (Unrep)|1190|Mayor|22433|288964|0|0|288964|58117|12424.5|20293|90834.5|379798|
+``` output
+| Year Type | Year | Organization Group Code | Organization Group               | Department Code | Department | Union Code | Union             | Job Family Code | Job Family                    | Job Code | Job   | Employee Identifier | Salaries | Overtime | Other Salaries | Total Salary | Retirement | Health/Dental | Other Benefits | Total Benefits | Total Compensation |
+|-----------|------|-------------------------|----------------------------------|-----------------|------------|------------|-------------------|-----------------|-------------------------------|----------|-------|---------------------|----------|----------|----------------|--------------|------------|---------------|----------------|----------------|--------------------|
+| Calendar  | 2015 | 6                       | General Administration & Finance | MYR             | Mayor      | 556        | Elected Officials | 1100            | Administrative & Mgmt (Unrep) | 1190     | Mayor | 22433               | 288964   | 0        | 0              | 288964       | 58117      | 12424.5       | 20293          | 90834.5        | 379798             |  
+```
 
 We are going to study the final column, `Total Compensation`. That's the
 employee's salary plus the City's contribution towards his/her
@@ -94,21 +90,22 @@ in the `Total Compensation` column look a little strange.
 sf2015.sort('Total Compensation')
 ```
 
-|Year Type|Year|Organization Group Code|Organization Group|Department Code|Department|Union Code|Union|Job Family Code|Job Family|Job Code|Job|Employee Identifier|Salaries|Overtime|Other Salaries|Total Salary|Retirement|Health/Dental|Other Benefits|Total Benefits|Total Compensation|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|Calendar|2015|1|Public Protection|FIR|Fire Department|798|Firefighters - Miscellaneous, Local 798|H000|Fire Services|H002|Firefighter|43833|0|0|0|0|0|0|-423.76|-423.76|-423.76|
-|Calendar|2015|4|Community Health|DPH|Public Health|790|SEIU - Miscellaneous, Local 1021|9900|Public Service Aide|9924|PS Aide Health Services|27871|-292.4|0|0|-292.4|0|-95.58|-22.63|-118.21|-410.61|
-|Calendar|2015|1|Public Protection|JUV|Juvenile Probation|790|SEIU - Miscellaneous, Local 1021|8300|Correction & Detention|8320|Counselor, Juvenile Hall|10517|0|0|0|0|0|0|-159.12|-159.12|-159.12|
-|Calendar|2015|6|General Administration & Finance|CPC|City Planning|21|Prof & Tech Engineers - Miscellaneous, Local 21|1000|Information Systems|1053|IS Business Analyst-Senior|18961|0|0|0|0|0|0|-26.53|-26.53|-26.53|
-|Calendar|2015|6|General Administration & Finance|CPC|City Planning|21|Prof & Tech Engineers - Miscellaneous, Local 21|5200|Professional Engineering|5277|Planner 1|19387|0|0|0|0|0|0|-9.51|-9.51|-9.51|
-|Calendar|2015|2|Public Works, Transportation & Commerce|PUC|PUC Public Utilities Commission|21|Prof & Tech Engineers - Miscellaneous, Local 21|1000|Information Systems|1044|IS Engineer-Principal|28988|0|0|0|0|0|0|-3.1|-3.1|-3.1|
-|Calendar|2015|1|Public Protection|JUV|Juvenile Probation|39|Stationary Engineers, Local 39|7300|Journeyman Trade|7335|Senior Stationary Engineer|19125|0|0|0|0|0|0|-0.01|-0.01|-0.01|
-|Calendar|2015|1|Public Protection|ECD|Department of Emergency Management|351|Municipal Executive Association - Miscellaneous|0900|Management|0922|Manager I|30025|0|0|0|0|0|0|0|0|0|
-|Calendar|2015|7|General City Responsibilities|UNA|General Fund Unallocated|790|SEIU - Miscellaneous, Local 1021|3200|Recreation|3280|Assistant Recreation Director|49784|0|0|0|0|0|0|1.27|1.27|1.27|
-|Calendar|2015|4|Community Health|DPH|Public Health|250|SEIU - Health Workers, Local 1021|2600|Dietary & Food|2654|Cook|26768|0|0|2.21|2.21|0|0|0.17|0.17|2.38|
-
+``` output
+| Year Type | Year | Organization Group Code | Organization Group                      | Department Code | Department                         | Union Code | Union                                           | Job Family Code | Job Family               | Job Code | Job                           | Employee Identifier | Salaries | Overtime | Other Salaries | Total Salary | Retirement | Health/Dental | Other Benefits | Total Benefits | Total Compensation |
+|-----------|------|-------------------------|-----------------------------------------|-----------------|------------------------------------|------------|-------------------------------------------------|-----------------|--------------------------|----------|-------------------------------|---------------------|----------|----------|----------------|--------------|------------|---------------|----------------|----------------|--------------------|
+| Calendar  | 2015 | 1                       | Public Protection                       | FIR             | Fire Department                    | 798        | Firefighters - Miscellaneous, Local 798         | H000            | Fire Services            | H002     | Firefighter                   | 43833               | 0        | 0        | 0              | 0            | 0          | 0             | -423.76        | -423.76        | -423.76            |
+| Calendar  | 2015 | 4                       | Community Health                        | DPH             | Public Health                      | 790        | SEIU - Miscellaneous, Local 1021                | 9900            | Public Service Aide      | 9924     | PS Aide Health Services       | 27871               | -292.4   | 0        | 0              | -292.4       | 0          | -95.58        | -22.63         | -118.21        | -410.61            |
+| Calendar  | 2015 | 1                       | Public Protection                       | JUV             | Juvenile Probation                 | 790        | SEIU - Miscellaneous, Local 1021                | 8300            | Correction & Detention   | 8320     | Counselor, Juvenile Hall      | 10517               | 0        | 0        | 0              | 0            | 0          | 0             | -159.12        | -159.12        | -159.12            |
+| Calendar  | 2015 | 6                       | General Administration & Finance        | CPC             | City Planning                      | 21         | Prof & Tech Engineers - Miscellaneous, Local 21 | 1000            | Information Systems      | 1053     | IS Business Analyst-Senior    | 18961               | 0        | 0        | 0              | 0            | 0          | 0             | -26.53         | -26.53         | -26.53             |
+| Calendar  | 2015 | 6                       | General Administration & Finance        | CPC             | City Planning                      | 21         | Prof & Tech Engineers - Miscellaneous, Local 21 | 5200            | Professional Engineering | 5277     | Planner 1                     | 19387               | 0        | 0        | 0              | 0            | 0          | 0             | -9.51          | -9.51          | -9.51              |
+| Calendar  | 2015 | 2                       | Public Works, Transportation & Commerce | PUC             | PUC Public Utilities Commission    | 21         | Prof & Tech Engineers - Miscellaneous, Local 21 | 1000            | Information Systems      | 1044     | IS Engineer-Principal         | 28988               | 0        | 0        | 0              | 0            | 0          | 0             | -3.1           | -3.1           | -3.1               |
+| Calendar  | 2015 | 1                       | Public Protection                       | JUV             | Juvenile Probation                 | 39         | Stationary Engineers, Local 39                  | 7300            | Journeyman Trade         | 7335     | Senior Stationary Engineer    | 19125               | 0        | 0        | 0              | 0            | 0          | 0             | -0.01          | -0.01          | -0.01              |
+| Calendar  | 2015 | 1                       | Public Protection                       | ECD             | Department of Emergency Management | 351        | Municipal Executive Association - Miscellaneous | 0900            | Management               | 0922     | Manager I                     | 30025               | 0        | 0        | 0              | 0            | 0          | 0             | 0              | 0              | 0                  |
+| Calendar  | 2015 | 7                       | General City Responsibilities           | UNA             | General Fund Unallocated           | 790        | SEIU - Miscellaneous, Local 1021                | 3200            | Recreation               | 3280     | Assistant Recreation Director | 49784               | 0        | 0        | 0              | 0            | 0          | 0             | 1.27           | 1.27           | 1.27               |
+| Calendar  | 2015 | 4                       | Community Health                        | DPH             | Public Health                      | 250        | SEIU - Health Workers, Local 1021               | 2600            | Dietary & Food           | 2654     | Cook                          | 26768               | 0        | 0        | 2.21           | 2.21         | 0          | 0             | 0.17           | 0.17           | 2.38               |  
 
 ... (42979 rows omitted)
+```
 
 For clarity of comparison, we will focus our attention on those who had
 at least the equivalent of a half-time job for the whole year. At a
@@ -123,9 +120,11 @@ sf2015 = sf2015.where('Salaries', are.above(10000))
 sf2015.num_rows
 ```
 
+``` output
 36569
+```
 
-### Population and Parameter
+### Population and parameter
 
 Let this table of just over 36,500 rows be our population. Here is a
 histogram of the total compensations.
@@ -137,21 +136,23 @@ sf2015.select('Total Compensation').hist(bins=sf_bins)
 
 ![Bootstrap example](../media/65-bootstrap-14-0.png)
 
-While most of the values are below \$300,000, a few are quite a bit
+While most of the values are below $300,000, a few are quite a bit
 higher. For example, the total compensation of the Chief Investment
-Officer was almost \$650,000. That is why the horizontal axis stretches
-to \$700,000.
+Officer was almost $650,000. That is why the horizontal axis stretches
+to $700,000.
 
 ``` python
 sf2015.sort('Total Compensation', descending=True).show(2)
 ```
 
-|Year Type|Year|Organization Group Code|Organization Group|Department Code|Department|Union Code|Union|Job Family Code|Job Family|Job Code|Job|Employee Identifier|Salaries|Overtime|Other Salaries|Total Salary|Retirement|Health/Dental|Other Benefits|Total Benefits|Total Compensation|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|Calendar|2015|6|General Administration & Finance|RET|Retirement System|351|Municipal Executive Association - Miscellaneous|1100|Administrative & Mgmt (Unrep)|1119|Chief Investment Officer|46881|507832|0|0|507832|105053|12424.5|23566.2|141044|648875|
-|Calendar|2015|6|General Administration & Finance|ADM|General Services Agency - City Admin|164|Physicians and Dentists - Miscellaneous|2500|Med Therapy & Auxiliary|2598|Asst Med Examiner|1016|279311|3829.36|114434|397574|56211.6|12424.5|14299.1|82935.2|480509|
+``` output
+| Year Type | Year | Organization Group Code | Organization Group               | Department Code | Department                           | Union Code | Union                                           | Job Family Code | Job Family                    | Job Code | Job                      | Employee Identifier | Salaries | Overtime | Other Salaries | Total Salary | Retirement | Health/Dental | Other Benefits | Total Benefits | Total Compensation |
+|-----------|------|-------------------------|----------------------------------|-----------------|--------------------------------------|------------|-------------------------------------------------|-----------------|-------------------------------|----------|--------------------------|---------------------|----------|----------|----------------|--------------|------------|---------------|----------------|----------------|--------------------|
+| Calendar  | 2015 | 6                       | General Administration & Finance | RET             | Retirement System                    | 351        | Municipal Executive Association - Miscellaneous | 1100            | Administrative & Mgmt (Unrep) | 1119     | Chief Investment Officer | 46881               | 507832   | 0        | 0              | 507832       | 105053     | 12424.5       | 23566.2        | 141044         | 648875             |
+| Calendar  | 2015 | 6                       | General Administration & Finance | ADM             | General Services Agency - City Admin | 164        | Physicians and Dentists - Miscellaneous         | 2500            | Med Therapy & Auxiliary       | 2598     | Asst Med Examiner        | 1016                | 279311   | 3829.36  | 114434         | 397574       | 56211.6    | 12424.5       | 14299.1        | 82935.2        | 480509             |  
 
 ... (36567 rows omitted)
+```
 
 Now let the parameter be the median of the total compensations.
 
@@ -163,7 +164,9 @@ pop_median = percentile(50, sf2015.column('Total Compensation'))
 pop_median
 ```
 
+``` output
 110305.79
+```
 
 The median total compensation of all employees was just over \$110,300.
 
@@ -175,7 +178,7 @@ well we can estimate it based on a random sample.
 In later sections, we will come down to earth and work in situations
 where the parameter is unknown. For now, we are all-knowing.
 
-### A Random Sample and an Estimate
+### A random sample and an estimate
 
 Let us draw a sample of 500 employees at random without replacement, and
 let the median total compensation of the sampled employees serve as our
@@ -193,7 +196,9 @@ est_median = percentile(50, our_sample.column('Total Compensation'))
 est_median
 ```
 
+``` output
 108405.39
+```
 
 The sample size is large. By the law of averages, the distribution of
 the sample resembles that of the population, and consequently the sample
@@ -214,7 +219,7 @@ won't have all the population data at hand.
 Somehow, we have to get another random sample without sampling from the
 population.
 
-### The Bootstrap: Resampling from the Sample
+### The bootstrap, re-sampling from the sample
 
 What we do have is a large random sample from the population. As we
 know, a large random sample is likely to resemble the population from
@@ -229,7 +234,7 @@ random sample that resembles the population:
 -   **Draw from the sample**, at random **with** replacement, **the same
     number of times as the original sample size**.
 
-It is important to resample the same number of times as the original
+It is important to re-sample the same number of times as the original
 sample size. The reason is that the variability of an estimate depends
 on the size of the sample. Since our original sample consisted of 500
 employees, our sample median was based on 500 values. To see how
@@ -244,8 +249,8 @@ than once and others not at all.
 
 Why is this a good idea? By the law of averages, the distribution of the
 original sample is likely to resemble the population, and the
-distributions of all the "resamples" are likely to resemble the original
-sample. So the distributions of all the resamples are likely to resemble
+distributions of all the "re-samples" are likely to resemble the original
+sample. So the distributions of all the re-samples are likely to resemble
 the population as well.
 
 ``` python
@@ -256,7 +261,7 @@ Image("../../../images/bootstrap_pic.png")
 
 ![Bootstrap example](../media/65-bootstrap-25-0.png)
 
-### A Resampled Median
+### A resampled median
 
 Recall that when the `sample` method is used without specifying a sample
 size, by default the sample size equals the number of rows of the table
@@ -279,7 +284,9 @@ resampled_median_1 = percentile(50, resample_1.column('Total Compensation'))
 resampled_median_1
 ```
 
+``` output
 108366.9
+```
 
 By resampling, we have another estimate of the population median. By
 resampling again and again, we will get many such estimates, and hence
@@ -291,9 +298,11 @@ resampled_median_2 = percentile(50, resample_2.column('Total Compensation'))
 resampled_median_2
 ```
 
+``` output
 110391.29
+```
 
-### Bootstrap Empirical Distribution of the Sample Median
+### Bootstrap empirical distribution of the sample median
 
 Let us define a function `bootstrap_median` that takes our original
 sample, the label of the column containing the variable, and the number
@@ -357,7 +366,7 @@ randomly generated sampled medians whose histogram you see above. We
 want those estimates to contain the parameter -- it they don't, then
 they are off.
 
-### Do the Estimates Capture the Parameter?
+### Do the estimates capture the parameter
 
 How often does the empirical histogram of the resampled medians sit
 firmly over the red dot, and not just brush the dot with its tails? To
@@ -371,14 +380,18 @@ left = percentile(2.5, bstrap_medians)
 left
 ```
 
+``` output
 102285.4
+```
 
 ``` python
 right = percentile(97.5, bstrap_medians)
 right
 ```
 
+``` output
 115557.27
+```
 
 The population median of \$110,305 is between these two numbers. The
 interval and the population median are shown on the histogram below.
@@ -441,20 +454,22 @@ the median.
 intervals
 ```
 
-|Left|Right|
-|--- |--- |
-|104850|116807|
-|106560|115858|
-|100109|115978|
-|109391|120038|
-|101859|115358|
-|98604.9|110325|
-|101024|113680|
-|105506|116921|
-|103487|117259|
-|102741|112957|
+``` output
+| Left    | Right  |
+|---------|--------|
+| 104850  | 116807 |
+| 106560  | 115858 |
+| 100109  | 115978 |
+| 109391  | 120038 |
+| 101859  | 115358 |
+| 98604.9 | 110325 |
+| 101024  | 113680 |
+| 105506  | 116921 |
+| 103487  | 117259 |
+| 102741  | 112957 |  
 
 ... (90 rows omitted)
+```
 
 The good intervals are those that contain the parameter we are trying to
 estimate. Typically the parameter is unknown, but in this section we
@@ -464,7 +479,9 @@ happen to know what the parameter is.
 pop_median
 ```
 
+``` output
 110305.79
+```
 
 How many of the 100 intervals contain the population median? That's the
 number of intervals where the left end is below the population median
@@ -474,7 +491,9 @@ and the right end is above.
 intervals.where('Left', are.below(pop_median)).where('Right', are.above(pop_median)).num_rows
 ```
 
+``` output
 97
+```
 
 It takes a few minutes to construct all the intervals, but try it again
 if you have the patience. Most likely, about 95 of the 100 intervals

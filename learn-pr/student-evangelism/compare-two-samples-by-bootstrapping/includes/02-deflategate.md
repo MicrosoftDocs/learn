@@ -1,12 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 On January 18, 2015, the Indianapolis Colts and the New England Patriots
 played the American Football Conference (AFC) championship game to
 determine which of those teams would play in the Super Bowl. After the
@@ -46,23 +37,26 @@ for the start of second half play.
 football = Table.read_table(path_data + 'deflategate.csv')
 football.show()
 ```
-|Team|Blakeman|Prioleau|
-|--- |--- |--- |
-|Patriots|11.5|11.8|
-|Patriots|10.85|11.2|
-|Patriots|11.15|11.5|
-|Patriots|10.7|11|
-|Patriots|11.1|11.45|
-|Patriots|11.6|11.95|
-|Patriots|11.85|12.3|
-|Patriots|11.1|11.55|
-|Patriots|10.95|11.35|
-|Patriots|10.5|10.9|
-|Patriots|10.9|11.35|
-|Colts|12.7|12.35|
-|Colts|12.75|12.3|
-|Colts|12.5|12.95|
-|Colts|12.55|12.15|
+
+``` output
+| Team     | Blakeman | Prioleau |
+|----------|----------|----------|
+| Patriots | 11.5     | 11.8     |
+| Patriots | 10.85    | 11.2     |
+| Patriots | 11.15    | 11.5     |
+| Patriots | 10.7     | 11       |
+| Patriots | 11.1     | 11.45    |
+| Patriots | 11.6     | 11.95    |
+| Patriots | 11.85    | 12.3     |
+| Patriots | 11.1     | 11.55    |
+| Patriots | 10.95    | 11.35    |
+| Patriots | 10.5     | 10.9     |
+| Patriots | 10.9     | 11.35    |
+| Colts    | 12.7     | 12.35    |
+| Colts    | 12.75    | 12.3     |
+| Colts    | 12.5     | 12.95    |
+| Colts    | 12.55    | 12.15    |  
+```
 
 For each of the 15 balls that were inspected, the two officials got
 different results. It is not uncommon that repeated measurements on the
@@ -76,23 +70,26 @@ football = football.with_column(
     ).drop(1, 2)
 football.show()
 ```
-|Team|Combined|
-|--- |--- |
-|Patriots|11.65|
-|Patriots|11.025|
-|Patriots|11.325|
-|Patriots|10.85|
-|Patriots|11.275|
-|Patriots|11.775|
-|Patriots|12.075|
-|Patriots|11.325|
-|Patriots|11.15|
-|Patriots|10.7|
-|Patriots|11.125|
-|Colts|12.525|
-|Colts|12.525|
-|Colts|12.725|
-|Colts|12.35|
+
+``` output
+| Team     | Combined |
+|----------|----------|
+| Patriots | 11.65    |
+| Patriots | 11.025   |
+| Patriots | 11.325   |
+| Patriots | 10.85    |
+| Patriots | 11.275   |
+| Patriots | 11.775   |
+| Patriots | 12.075   |
+| Patriots | 11.325   |
+| Patriots | 11.15    |
+| Patriots | 10.7     |
+| Patriots | 11.125   |
+| Colts    | 12.525   |
+| Colts    | 12.525   |
+| Colts    | 12.725   |
+| Colts    | 12.35    |
+```
 
 At a glance, it seems apparent that the Patriots' footballs were at a
 lower pressure than the Colts' balls. Because some deflation is normal
@@ -115,7 +112,9 @@ array of that many elements, each of which is 1.
 np.ones(11)
 ```
 
+``` output
 array(\[1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.\])
+```
 
 ``` python
 patriots_start = 12.5 * np.ones(11)
@@ -124,8 +123,10 @@ start = np.append(patriots_start, colts_start)
 start
 ```
 
+``` output
 array(\[12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5,
 12.5, 13. , 13. , 13. , 13. \])
+```
 
 The drop in pressure for each football is the difference between the
 starting pressure and the combined pressure measurement.
@@ -135,23 +136,27 @@ drop = start - football.column('Combined')
 football = football.with_column('Pressure Drop', drop)
 football.show()
 ```
-|Team|Combined|Pressure Drop|
-|--- |--- |--- |
-|Patriots|11.65|0.85|
-|Patriots|11.025|1.475|
-|Patriots|11.325|1.175|
-|Patriots|10.85|1.65|
-|Patriots|11.275|1.225|
-|Patriots|11.775|0.725|
-|Patriots|12.075|0.425|
-|Patriots|11.325|1.175|
-|Patriots|11.15|1.35|
-|Patriots|10.7|1.8|
-|Patriots|11.125|1.375|
-|Colts|12.525|0.475|
-|Colts|12.525|0.475|
-|Colts|12.725|0.275|
-|Colts|12.35|0.65|
+
+``` output
+|| Team     | Combined | Pressure Drop |
+|----------|----------|---------------|
+| Colts    | 12.525   | 0.475         |
+| Colts    | 12.525   | 0.475         |
+| Colts    | 12.725   | 0.275         |
+| Colts    | 12.35    | 0.65          |
+| Patriots | 11.65    | 0.85          |
+| Patriots | 11.025   | 1.475         |
+| Patriots | 11.325   | 1.175         |
+| Patriots | 10.85    | 1.65          |
+| Patriots | 11.275   | 1.225         |
+| Patriots | 11.775   | 0.725         |
+| Patriots | 12.075   | 0.425         |
+| Patriots | 11.325   | 1.175         |
+| Patriots | 11.15    | 1.35          |
+| Patriots | 10.7     | 1.8           |
+| Patriots | 11.125   | 1.375         |  
+
+```
 
 It looks as though the Patriots' drops were larger than the Colts'.
 Let's look at the average drop in each of the two groups. We no longer
@@ -161,11 +166,14 @@ need the combined scores.
 football = football.drop('Combined')
 football.group('Team', np.average)
 ```
-|Team|Pressure Drop average|
-|--- |--- |
-|Colts|0.46875|
-|Patriots|1.20227|
 
+``` output
+| Team     | Pressure Drop average |
+|----------|-----------------------|
+| Colts    | 0.46875               |
+| Patriots | 1.20227               |  
+
+```
 The average drop for the Patriots was about 1.2 psi compared to about
 0.47 psi for the Colts.
 
@@ -173,7 +181,7 @@ The question now is why the Patriots' footballs had a larger drop in
 pressure, on average, than the Colts footballs. Could it be due to
 chance?
 
-### The Hypotheses
+### The hypotheses
 
 How does chance come in here? Nothing was being selected at random. But
 we can make a chance model by hypothesizing that the 11 Patriots' drops
@@ -185,7 +193,7 @@ For the alternative, we can take the position that the Patriots' drops
 are too large, on average, to resemble a random sample drawn from all
 the drops.
 
-### Test Statistic
+### Test statistic
 
 A natural statistic is the difference between the two average drops,
 which we will compute as "average drop for Patriots - average drop for
@@ -199,7 +207,9 @@ observed_difference = observed_means.item(1) - observed_means.item(0)
 observed_difference
 ```
 
+``` output
 0.733522727272728
+```
 
 This positive difference reflects the fact that the average drop in
 pressure of the Patriots' footballs was greater than that of the Colts.
@@ -228,7 +238,9 @@ def difference_of_means(table, label, group_label):
 difference_of_means(football, 'Pressure Drop', 'Team')
 ```
 
+``` output
 0.733522727272728
+```
 
 Notice that the difference has been calculated as Patriots' drops minus
 Colts' drops as before.
@@ -246,23 +258,26 @@ original_and_shuffled = football.with_column('Shuffled Label', shuffled_labels)
 original_and_shuffled.show()
 ```
 
-|Team|Pressure Drop|Shuffled Label|
-|--- |--- |--- |
-|Patriots|0.85|Colts|
-|Patriots|1.475|Patriots|
-|Patriots|1.175|Patriots|
-|Patriots|1.65|Patriots|
-|Patriots|1.225|Patriots|
-|Patriots|0.725|Patriots|
-|Patriots|0.425|Patriots|
-|Patriots|1.175|Colts|
-|Patriots|1.35|Patriots|
-|Patriots|1.8|Patriots|
-|Patriots|1.375|Colts|
-|Colts|0.475|Patriots|
-|Colts|0.475|Patriots|
-|Colts|0.275|Colts|
-|Colts|0.65|Patriots|
+``` output
+| Team     | Pressure Drop | Shuffled Label |
+|----------|---------------|----------------|
+| Patriots | 0.85          | Colts          |
+| Patriots | 1.475         | Patriots       |
+| Patriots | 1.175         | Patriots       |
+| Patriots | 1.65          | Patriots       |
+| Patriots | 1.225         | Patriots       |
+| Patriots | 0.725         | Patriots       |
+| Patriots | 0.425         | Patriots       |
+| Patriots | 1.175         | Colts          |
+| Patriots | 1.35          | Patriots       |
+| Patriots | 1.8           | Patriots       |
+| Patriots | 1.375         | Colts          |
+| Colts    | 0.475         | Patriots       |
+| Colts    | 0.475         | Patriots       |
+| Colts    | 0.275         | Colts          |
+| Colts    | 0.65          | Patriots       |  
+
+```
 
 How do all the group averages compare?
 
@@ -270,19 +285,23 @@ How do all the group averages compare?
 difference_of_means(original_and_shuffled, 'Pressure Drop', 'Shuffled Label')
 ```
 
+``` output
 0.11988636363636407
+```
 
 ``` python
 difference_of_means(original_and_shuffled, 'Pressure Drop', 'Team')
 ```
 
+``` output
 0.733522727272728
+```
 
 The two teams' average drop values are closer when the team labels are
 randomly assigned to the footballs than they were for the two groups
 actually used in the game.
 
-### Permutation Test
+### Permutation test
 
 It's time for a step that is now familiar. We will do repeated
 simulations of the test statistic under the null hypothesis, by
@@ -314,7 +333,7 @@ for i in np.arange(repetitions):
     differences = np.append(differences, new_difference)
 ```
 
-### Conclusion of the Test
+### Conclusion of the test
 
 To calculate the empirical P-value, it's important to recall the
 alternative hypothesis, which is that the Patriots' drops are too large
@@ -330,7 +349,9 @@ empirical_P = np.count_nonzero(differences >= observed_difference) / 10000
 empirical_P
 ```
 
+``` output
 0.0043
+```
 
 That's a pretty small P-value. To visualize this, here is the empirical
 distribution of the test statistic under the null hypothesis, with the
@@ -344,7 +365,9 @@ print('Observed Difference:', observed_difference)
 print('Empirical P-value:', empirical_P)
 ```
 
+``` output
 Observed Difference: 0.733522727272728 Empirical P-value: 0.0043
+```
 
 ![Deflategate example](../media/61-deflategate-31-1.png)
 
@@ -383,4 +406,4 @@ more complex than running a test of hypotheses.
 
 But the all-important question in the football world was about
 causation: the question was whether the excess drop of pressure in the
-Patriots' footballs was deliberate. 
+Patriots' footballs was deliberate.

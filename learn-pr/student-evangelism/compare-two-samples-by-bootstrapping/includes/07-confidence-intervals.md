@@ -5,15 +5,6 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 We have developed a method for estimating a parameter by using random
 sampling and the bootstrap. Our method produces an interval of
 estimates, to account for chance variability in the random sample. By
@@ -41,7 +32,7 @@ statistical theory and demonstrations like the one we have seen, data
 scientists can be confident that their process of generating the
 interval results in a good interval a known percent of the time.
 
-### Confidence Interval for a Population Median: Bootstrap Percentile Method
+### Confidence interval for a population median, bootstrap percentile method
 
 We will now use the bootstrap method to estimate an unknown population
 median. The data come from a sample of newborns in a large hospital
@@ -65,20 +56,22 @@ baby = Table.read_table(path_data + 'baby.csv')
 baby
 ```
 
-|Birth Weight|Gestational Days|Maternal Age|Maternal Height|Maternal Pregnancy Weight|Maternal Smoker|
-|--- |--- |--- |--- |--- |--- |
-|120|284|27|62|100|False|
-|113|282|33|64|135|False|
-|128|279|28|64|115|True|
-|108|282|23|67|125|True|
-|136|286|25|62|93|False|
-|138|244|33|62|178|False|
-|132|245|23|65|140|False|
-|120|289|25|62|125|False|
-|143|299|30|66|136|True|
-|140|351|27|68|120|False|
+``` output
+| Birth Weight | Gestational Days | Maternal Age | Maternal Height | Maternal Pregnancy Weight | Maternal Smoker |
+|--------------|------------------|--------------|-----------------|---------------------------|-----------------|
+| 120          | 284              | 27           | 62              | 100                       | False           |
+| 113          | 282              | 33           | 64              | 135                       | False           |
+| 128          | 279              | 28           | 64              | 115                       | True            |
+| 108          | 282              | 23           | 67              | 125                       | True            |
+| 136          | 286              | 25           | 62              | 93                        | False           |
+| 138          | 244              | 33           | 62              | 178                       | False           |
+| 132          | 245              | 23           | 65              | 140                       | False           |
+| 120          | 289              | 25           | 62              | 125                       | False           |
+| 143          | 299              | 30           | 66              | 136                       | True            |
+| 140          | 351              | 27           | 68              | 120                       | False           |  
 
 ... (1164 rows omitted)
+```
 
 Birth weight is an important factor in the health of a newborn infant--smaller babies tend to need more medical care in their first days than
 larger newborns. It is therefore helpful to have an estimate of birth
@@ -103,20 +96,24 @@ ratios = baby.select('Birth Weight', 'Gestational Days').with_column(
 ``` python
 ratios
 ```
-|Birth Weight|Gestational Days|Ratio BW/GD|
-|--- |--- |--- |
-|120|284|0.422535|
-|113|282|0.400709|
-|128|279|0.458781|
-|108|282|0.382979|
-|136|286|0.475524|
-|138|244|0.565574|
-|132|245|0.538776|
-|120|289|0.415225|
-|143|299|0.478261|
-|140|351|0.39886|
+
+``` output
+| Birth Weight | Gestational Days | Ratio BW/GD |
+|--------------|------------------|-------------|
+| 120          | 284              | 0.422535    |
+| 113          | 282              | 0.400709    |
+| 128          | 279              | 0.458781    |
+| 108          | 282              | 0.382979    |
+| 136          | 286              | 0.475524    |
+| 138          | 244              | 0.565574    |
+| 132          | 245              | 0.538776    |
+| 120          | 289              | 0.415225    |
+| 143          | 299              | 0.478261    |
+| 140          | 351              | 0.39886     |  
 
 ... (1164 rows omitted)
+
+```
 
 Here is a histogram of the ratios.
 
@@ -136,9 +133,11 @@ per day, almost double the typical value.
 ratios.sort('Ratio BW/GD', descending=True).take(0)
 ```
 
-|Birth Weight|Gestational Days|Ratio BW/GD|
-|--- |--- |--- |
-|116|148|0.783784|
+``` output
+| Birth Weight | Gestational Days | Ratio BW/GD |
+|--------------|------------------|-------------|
+| 116          | 148              | 0.783784    |
+```
 
 The median gives a sense of the typical ratio because it is unaffected
 by the large or very small ratios. The median ratio in the sample
@@ -148,7 +147,9 @@ is about 0.429 ounce per day.
 np.median(ratios.column(2))
 ```
 
+``` output
 0.42907801418439717
+```
 
 But what was the median in the population? We don't know, so we will
 estimate it.
@@ -195,7 +196,9 @@ right = percentile(97.5, bstrap_medians)
 make_array(left, right)
 ```
 
+``` output
 array(\[0.42545455, 0.43272727\])
+```
 
 The 95% confidence interval goes from about 0.425 ounce per day to
 about 0.433 ounce per day. We are estimating the median "birth weight
@@ -251,7 +254,9 @@ baby.select('Maternal Age').hist()
 np.mean(baby.column('Maternal Age'))
 ```
 
+``` output
 27.228279386712096
+```
 
 What was the average age of the mothers in the population? We don't know
 the value of this parameter.
@@ -292,7 +297,9 @@ right = percentile(97.5, bstrap_means)
 make_array(left, right)
 ```
 
+``` output
 array(\[26.89778535, 27.56218058\])
+```
 
 The 95% confidence interval goes from about 26.9 years to about 27.6
 years. That is, we are estimating that the average age of the mothers in
@@ -334,7 +341,7 @@ baby.select('Maternal Age').hist()
 This is a consequence of the Central Limit Theorem of probability and
 statistics. In later sections, we will see what the theorem says.w
 
-### An 80% Confidence Interval
+### An 80% confidence interval
 
 You can use the bootstrapped sample means to construct an interval of
 any level of confidence. For example, to construct an 80% confidence
@@ -349,7 +356,9 @@ right_80 = percentile(90, bstrap_means)
 make_array(left_80, right_80)
 ```
 
+``` output
 array(\[27.01192504, 27.44633731\])
+```
 
 ``` python
 resampled_means.hist(bins=15)
@@ -370,7 +379,7 @@ To get a narrow confidence interval at a high level of confidence,
 you'll have to start with a larger sample. We'll see why in the next
 chapter.
 
-### Confidence Interval for a Population Proportion: Bootstrap Percentile Method
+### confidence interval for a population proportion, bootstrap percentile method
 
 In the sample, 39% of the mothers smoked during pregnancy.
 
@@ -378,7 +387,9 @@ In the sample, 39% of the mothers smoked during pregnancy.
 baby.where('Maternal Smoker', are.equal_to(True)).num_rows/baby.num_rows
 ```
 
+``` output
 0.3909710391822828
+```
 
 For what follows, it is useful to observe that this proportion can also
 be calculated by an array operation:
@@ -388,7 +399,9 @@ smoking = baby.column('Maternal Smoker')
 np.count_nonzero(smoking)/len(smoking)
 ```
 
+``` output
 0.3909710391822828
+```
 
 What percent of mothers in the population smoked during pregnancy? This
 is an unknown parameter which we can estimate by a bootstrap confidence
@@ -439,7 +452,9 @@ right = percentile(97.5, bstrap_props)
 make_array(left, right)
 ```
 
+``` output
 array(\[0.3637138,0.41737649\])
+```
 
 The confidence interval goes from about 36% to about 42%. The original
 sample percent of 39% is close to the center of the interval, as
@@ -455,7 +470,7 @@ plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 
 ![Confidence Intervals](../media/66-confidence-intervals-47-1.png)
 
-### Care in Using the Bootstrap
+### Care in using the bootstrap
 
 The bootstrap is an elegant and powerful method. Before using it, it is
 important to keep some points in mind.
@@ -486,4 +501,3 @@ important to keep some points in mind.
     -   The original sample is very small, say less than 10 or 15.
 e probability distribution of the statistic is not roughly
         bell shaped.
-

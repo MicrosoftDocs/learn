@@ -3,23 +3,9 @@
 
 If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
 
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
-
-``` python
-
-from datascience import *
-path_data = '../../../../data/'
-import numpy as np
-
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-```
-
-### A/B Testing
+### A/B testing
 
 In modern data analytics, deciding whether two numerical samples come
 from the same underlying distribution is called *A/B testing*. The name
@@ -32,7 +18,7 @@ multiple stages. [Stat Labs](https://www.stat.berkeley.edu/~statlabs/)
 by Deborah Nolan and Terry Speed has details about a larger dataset from
 which this set is drawn.
 
-### Smokers and Nonsmokers
+### Smokers and nonsmokers
 
 The table `births` contains the following variables for 1,174
 mother-baby pairs: the baby's birth weight in ounces, the number of
@@ -45,20 +31,22 @@ births = Table.read_table(path_data + 'baby.csv')
 births
 ```
 
-|Birth Weight|Gestational Days|Maternal Age|Maternal Height|Maternal Pregnancy Weight|Maternal Smoker|
-|--- |--- |--- |--- |--- |--- |
-|120|284|27|62|100|False|
-|113|282|33|64|135|False|
-|128|279|28|64|115|True|
-|108|282|23|67|125|True|
-|136|286|25|62|93|False|
-|138|244|33|62|178|False|
-|132|245|23|65|140|False|
-|120|289|25|62|125|False|
-|143|299|30|66|136|True|
-|140|351|27|68|120|False|
+``` output
+| Birth Weight | Gestational Days | Maternal Age | Maternal Height | Maternal Pregnancy Weight | Maternal Smoker |
+|--------------|------------------|--------------|-----------------|---------------------------|-----------------|
+| 120          | 284              | 27           | 62              | 100                       | False           |
+| 113          | 282              | 33           | 64              | 135                       | False           |
+| 128          | 279              | 28           | 64              | 115                       | True            |
+| 108          | 282              | 23           | 67              | 125                       | True            |
+| 136          | 286              | 25           | 62              | 93                        | False           |
+| 138          | 244              | 33           | 62              | 178                       | False           |
+| 132          | 245              | 23           | 65              | 140                       | False           |
+| 120          | 289              | 25           | 62              | 125                       | False           |
+| 143          | 299              | 30           | 66              | 136                       | True            |
+| 140          | 351              | 27           | 68              | 120                       | False           |  
 
 ... (1164 rows omitted)
+```
 
 One of the aims of the study was to see whether maternal smoking was
 associated with birth weight. Let's see what we can say about the two
@@ -76,10 +64,12 @@ smoking_and_birthweight = births.select('Maternal Smoker', 'Birth Weight')
 smoking_and_birthweight.group('Maternal Smoker')
 ```
 
-|Maternal Smoker|count|
-|--- |--- |
-|False|715|
-|True|459|
+``` output
+| Maternal Smoker | count |
+|-----------------|-------|
+| False           | 715   |
+| True            | 459   |  
+```
 
 Let's look at the distribution of the birth weights of the babies of the
 non-smoking mothers compared to those of the smoking mothers. To
@@ -106,7 +96,7 @@ Could it be that there is no difference between the two distributions in
 the population, but we are seeing a difference in the samples just
 because of the mothers who happened to be selected?
 
-### The Hypotheses
+### The hypotheses
 
 We can try to answer this question by a test of hypotheses. The chance
 model that we will test says that there is no underlying difference in
@@ -125,7 +115,7 @@ who do. The difference in the sample is due to chance.
 who smoke have a lower birth weight, on average, than the babies of the
 non-smokers.
 
-### Test Statistic
+### Test statistic
 
 The alternative hypothesis compares the average birth weights of the two
 groups and says that the average for the mothers who smoke is smaller.
@@ -144,10 +134,13 @@ means_table = smoking_and_birthweight.group('Maternal Smoker', np.average)
 means_table
 ```
 
-|Maternal Smoker|Birth Weight average|
-|--- |--- |
-|False|123.085|
-|True|113.819|
+``` output
+| Maternal Smoker | Birth Weight average |
+|-----------------|----------------------|
+| False           | 123.085              |
+| True            | 113.819              |  
+
+```
 
 ``` python
 means = means_table.column(1)
@@ -155,7 +148,9 @@ observed_difference = means.item(1) - means.item(0)
 observed_difference
 ```
 
+``` output
 -9.266142572024918
+```
 
 We are going compute such differences repeatedly in our simulations
 below, so we will define a function to do the job. The function takes
@@ -185,12 +180,14 @@ observed difference between the means of the two groups in the sample.
 difference_of_means(births, 'Birth Weight', 'Maternal Smoker')
 ```
 
+``` output
 -9.266142572024918
+```
 
 That's the same as the value of `observed_difference` calculated
 earlier.
 
-### Predicting the Statistic Under the Null Hypothesis
+### Predicting the statistic under the null hypothesis
 
 To see how the statistic should vary under the null hypothesis, we have
 to figure out how to simulate the statistic under that hypothesis. A
@@ -215,20 +212,22 @@ data.
 smoking_and_birthweight
 ```
 
-|Maternal Smoker|Birth Weight|
-|--- |--- |
-|False|120|
-|False|113|
-|True|128|
-|True|108|
-|False|136|
-|False|138|
-|False|132|
-|False|120|
-|True|143|
-|False|140|
+``` output
+| Maternal Smoker | Birth Weight |
+|-----------------|--------------|
+| False           | 120          |
+| False           | 113          |
+| True            | 128          |
+| True            | 108          |
+| False           | 136          |
+| False           | 138          |
+| False           | 132          |
+| False           | 120          |
+| True            | 143          |
+| False           | 140          |  
 
 ... (1164 rows omitted)
+```
 
 There are 1,174 rows in the table. To shuffle all the labels, we will
 draw a random sample of 1,174 rows without replacement. Then the sample
@@ -277,10 +276,12 @@ shuffled_group_means = shuffled_only.group('Shuffled Label', np.average)
 shuffled_group_means
 ```
 
-|Shuffled Label|Birth Weight average|
-|--- |--- |
-|False|119.709|
-|True|119.078|
+``` output
+| Shuffled Label | Birth Weight average |
+|----------------|----------------------|
+| False          | 119.709              |
+| True           | 119.078              |
+```
 
 The averages of the two randomly selected groups are quite a bit closer
 than the averages of the two original groups. We can use our function
@@ -290,13 +291,17 @@ than the averages of the two original groups. We can use our function
 difference_of_means(original_and_shuffled, 'Birth Weight', 'Shuffled Label')
 ```
 
+``` output
 -0.6306595365418843
+```
 
 ``` python
 difference_of_means(original_and_shuffled, 'Birth Weight', 'Maternal Smoker')
 ```
 
+``` output
 -9.266142572024918
+```
 
 But could a different shuffle have resulted in a larger difference
 between the group averages? To get a sense of the variability, we must
@@ -331,9 +336,11 @@ Run the cell below a few times to see how the output changes.
 one_simulated_difference(births, 'Birth Weight', 'Maternal Smoker')
 ```
 
+``` output
 -1.8218839983545791
+```
 
-### Permutation Test
+### Permutation test
 
 Tests based on random permutations of the data are called *permutation
 tests*. We are performing one in this example. In the cell below, we
@@ -354,7 +361,7 @@ statistic: the difference between the mean weight in the smoking group
 and the mean weight in the non-smoking group, when the labels have been
 assigned at random.
 
-### Conclusion of the Test
+### Conclusion of the test
 
 The histogram below shows the distribution of these 5,000 values. It is
 the empirical distribution of the test statistic simulated under the
@@ -367,7 +374,9 @@ print('Observed Difference:', observed_difference)
 plots.title('Prediction Under the Null Hypothesis');
 ```
 
+``` output
 Observed Difference: -9.266142572024918
+```
 
 ![AB Testing](../media/60-ab-testing-36-1.png)
 
@@ -393,14 +402,16 @@ empirical_P = np.count_nonzero(differences <= observed_difference) / repetitions
 empirical_P
 ```
 
+``` output
 0.0
+```
 
 The empirical P-value is 0, meaning that none of the 5,000 permuted
 samples resulted in a difference of -9.27 or lower. This is only an
 approximation. The exact chance of getting a difference in that range is
 not 0 but it is vanishingly small.
 
-### Another Permutation Test
+### Another permutation test
 
 We can use the same method to compare other attributes of the smokers
 and the non-smokers, such as their ages. Histograms of the ages of the
@@ -421,7 +432,9 @@ observed_age_difference = difference_of_means(births, 'Maternal Age', 'Maternal 
 observed_age_difference
 ```
 
+``` output
 -0.8076725017901509
+```
 
 Remember that the difference is calculated as the mean age of the
 smokers minus the mean age of the non-smokers. The negative sign shows
@@ -454,7 +467,9 @@ plots.title('Prediction Under the Null Hypothesis')
 print('Observed Difference:', observed_age_difference)
 ```
 
+``` output
 Observed Difference: -0.8076725017901509
+```
 
 ![AB testing](../media/60-ab-testing-47-1.png)
 
@@ -468,13 +483,15 @@ empirical_P = np.count_nonzero(age_differences <= observed_age_difference) / 500
 empirical_P
 ```
 
+``` output
 0.0104
+```
 
 The empirical P-value is around 1% and therefore the result is
 statistically significant. The test supports the hypothesis that the
 smokers were younger on average.
 
-## Learning Objectives
+## Learning objectives
 
 - Study A/B Tests and how to run an A/B Test.
 - Prove causality with Randomized Controlled Trial (RCTs).

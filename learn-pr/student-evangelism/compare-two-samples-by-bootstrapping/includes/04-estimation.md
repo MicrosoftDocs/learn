@@ -1,12 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../data/'
-import matplotlib.pyplot as plt
-plt.style.use('fivethirtyeight')
-import numpy as np
-```
-
 In the previous chapter, we began to develop ways of inferential
 thinking. In particular, we learned how to use data to decide between
 two hypotheses about the world. But often we just want to know how large
