@@ -11,7 +11,7 @@ The validation data you held back and used to score the model includes the known
 
 4. Select **Submit**, and run the pipeline using the existing experiment named **diabetes-training**.
 5. Wait for the experiment run to complete.
-6. When the experiment run has completed, select the **Evaluate Model** module and in the settings pane, on the **Outputs + Logs** tab, under **Port outputs** in the **Evaluation results** section, use the **Visualize** icon to view the performance metrics. These metrics can help data scientists assess how well the model predicts based on the validation data.
+6. When the experiment run has completed, select the **Evaluate Model** module and in the settings pane, on the **Outputs + Logs** tab, under **Data outputs** in the **Evaluation results** section, use the **Visualize** icon to view the performance metrics. These metrics can help data scientists assess how well the model predicts based on the validation data.
 7. View the *confusion matrix* for the model, which is a tabulation of the predicted and actual value counts for each possible class. For a binary classification model like this one, where you're predicting one of two possible values, the confusion matrix is a 2x2 grid showing the predicted and actual value counts for classes **0** and **1**, similar to this:
 
 > [!div class="centered"]

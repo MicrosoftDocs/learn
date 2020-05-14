@@ -4,6 +4,13 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 It's common practice to train the model using a subset of the data, while holding back some data with which to test the trained model. This enables you to compare the labels that the model predicts with the actual known labels in the original dataset.
 
+In this exercise, you're going to extend the **Auto Price Training** pipeline as shown here:
+
+> [!div class="centered"]
+> ![split data, then train with logistic regression and score](../media/train-score-pipeline.png)
+
+Follow the steps below, using the image above for reference as you add and configure the required modules.
+
 1. Open the **Diabetes Training** pipeline you created in the previous unit if it's not already open.
 2. In the pane on the left, in the **Data Transformations** section, drag a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the *Transformed Dataset* (left) output of the **Normalize Data** module to the input of the **Split Data** module.
 3. Select the **Split Data** module, and configure its settings as follows:
@@ -22,7 +29,7 @@ It's common practice to train the model using a subset of the data, while holdin
 8. Ensure your pipeline looks like this:
 
  > [!div class="centered"]
- > ![split data, then train with linear regression and score](../media/train-score-pipeline.png)
+ > ![split data, then train with logistic regression and score](../media/train-score-pipeline.png)
 
 ## Run the training pipeline
 
@@ -30,8 +37,8 @@ Now you're ready to run the training pipeline and train the model.
 
 1. Select **Submit**, and run the pipeline using the existing experiment named **diabetes-training**.
 2. Wait for the experiment run to complete. This may take 5 minutes or more.
-3. When the experiment run has completed, select the **Score Model** module and in the settings pane, on the **Outputs + Logs** tab, under **Port outputs** in the **Scored dataset** section, use the **Visualize** icon to view the results.
-4. Scroll to the right, and note that next to the **Diabetic** column (which contains the known true values of the label) there is a new column named **Scored Labels**, which contains the predicted label values, and a **Scored Probabilities** columns containing a probability value between 0 and 1. This indicates the probability of a *positive* prediction, so probabilities greater than 0.5 result in a predicted label of ***1*** (diabetic), which probabilities between 0 and 0.5 result in a predicted label of ***0*** (not diabetic).
+3. When the experiment run has completed, select the **Score Model** module and in the settings pane, on the **Outputs + Logs** tab, under **Data outputs** in the **Scored dataset** section, use the **Visualize** icon to view the results.
+4. Scroll to the right, and note that next to the **Diabetic** column (which contains the known true values of the label) there is a new column named **Scored Labels**, which contains the predicted label values, and a **Scored Probabilities** columns containing a probability value between 0 and 1. This indicates the probability of a *positive* prediction, so probabilities greater than 0.5 result in a predicted label of ***1*** (diabetic), while probabilities between 0 and 0.5 result in a predicted label of ***0*** (not diabetic).
 5. Close the **Score Model result visualization** window.
 
 The model is predicting values for the **Diabetic** label, but how reliable are its predictions? To assess that, you need to evaluate the model.
