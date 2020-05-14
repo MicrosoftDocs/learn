@@ -3,16 +3,6 @@
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import math
-import numpy as np
-from scipy import stats
-```
 
 ``` python
 
@@ -45,20 +35,22 @@ different spins of a roulette wheel.
 wheel
 ```
 
-|Pocket|Color|
-|--- |--- |
-|0|green|
-|00|green|
-|1|red|
-|2|black|
-|3|red|
-|4|black|
-|5|red|
-|6|black|
-|7|red|
-|8|black|
+``` output
+| Pocket | Color |
+|--------|-------|
+| 0      | green |
+| 00     | green |
+| 1      | red   |
+| 2      | black |
+| 3      | red   |
+| 4      | black |
+| 5      | red   |
+| 6      | black |
+| 7      | red   |
+| 8      | black |
 
 ... (28 rows omitted)
+```
 
 Recall that the bet on red pays even money, 1 to 1. We defined the
 function `red_winnings` that returns the net winnings on one \$1 bet on
@@ -81,25 +73,26 @@ red = wheel.with_column(
     )
 red
 ```
-
-|Pocket|Color|Winnings: Red|
-|--- |--- |--- |
-|0|green|-1|
-|00|green|-1|
-|1|red|1|
-|2|black|-1|
-|3|red|1|
-|4|black|-1|
-|5|red|1|
-|6|black|-1|
-|7|red|1|
-|8|black|-1|
+``` output
+| Pocket | Color | Winnings: Red |
+|--------|-------|---------------|
+| 0      | green | -1            |
+| 00     | green | -1            |
+| 1      | red   | 1             |
+| 2      | black | -1            |
+| 3      | red   | 1             |
+| 4      | black | -1            |
+| 5      | red   | 1             |
+| 6      | black | -1            |
+| 7      | red   | 1             |
+| 8      | black | -1            |
 
 ... (28 rows omitted)
+```
 
 Your net gain on one bet is one random draw from the `Winnings: Red`
-column. There is an 18/38 chance making \$1, and a 20/38 chance of
-making -\$1. This probability distribution is shown in the histogram
+column. There is an 18/38 chance making $1, and a 20/38 chance of
+making -$1. This probability distribution is shown in the histogram
 below.
 
 ``` python
@@ -147,8 +140,8 @@ That's a roughly bell shaped histogram, even though the distribution we
 are drawing from is nowhere near bell shaped.
 
 **Center.** The distribution is centered near -20 dollars, roughly. To
-see why, note that your winnings will be \$1 on about 18/38 of the bets,
-and -\$1 on the remaining 20/38. So your average winnings per dollar bet
+see why, note that your winnings will be $1 on about 18/38 of the bets,
+and -$1 on the remaining 20/38. So your average winnings per dollar bet
 will be roughly -5.26 cents:
 
 ``` python
@@ -184,8 +177,8 @@ np.mean(results.column(0))
 **Spread.** Run your eye along the curve starting at the center and
 notice that the point of inflection is near 0. On a bell shaped curve,
 the SD is the distance from the center to a point of inflection. The
-center is roughly -\$20, which means that the SD of the distribution is
-around \$20.
+center is roughly -$20, which means that the SD of the distribution is
+around $20.
 
 In the next section, we will see where the \$20 comes from. For now,
 let's confirm our observation by calculating the SD of the 10,000
@@ -295,10 +288,8 @@ skewed distribution. The bell is centered somewhere between 16 ad
 The reason why the bell shape appears in such settings is a remarkable
 result of probability theory called the **Central Limit Theorem**.
 
-**The Central Limit Theorem says that the probability distribution of
-the sum or average of a large random sample drawn with replacement will
-be roughly normal, *regardless of the distribution of the population
-from which the sample is drawn*.**
+> [!IMPORTANT]
+>The Central Limit Theorem says that the probability distribution of the sum or average of a large random sample drawn with replacement will be roughly normal, regardless of the distribution of the population from which the sample is drawn.
 
 As we noted when we were studying Chebychev's bounds, results that can
 be applied to random samples *regardless of the distribution of the
@@ -333,12 +324,15 @@ model = Table().with_column('Color', colors)
 model
 ```
 
-|Color|
-|--- |
-|Purple|
-|Purple|
-|Purple|
-|White|
+``` output
+| Color  |
+|--------|
+| Purple |
+| Purple |
+| Purple |
+| White  |  
+
+```
 
 ``` python
 props = make_array()

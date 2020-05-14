@@ -3,15 +3,6 @@
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
-``` python
-from datascience import *
-import numpy as np
-path_data = '../../../../data/'
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-```
-
 By the Central Limit Theorem, the probability distribution of the mean
 of a large random sample is roughly normal. The bell curve is centered
 at the population mean. Some of the sample means are higher, and some
@@ -97,11 +88,13 @@ plots.xlim(5, 35)
 plots.ylim(0, 0.25);
 ```
 
+``` output
     Sample size:  100
     Population mean: 16.658155515370705
     Average of sample means:  16.612564
     Population SD: 39.480199851609314
     SD of sample means: 3.8997187931829136
+```
 
 ![Sample mean example](../media/73-variability-sample-mean-9-2.png)
 
@@ -111,11 +104,13 @@ plots.xlim(5, 35)
 plots.ylim(0, 0.25);
 ```
 
+``` output
     Sample size:  400
     Population mean: 16.658155515370705
     Average of sample means:  16.650027499999997
     Population SD: 39.480199851609314
     SD of sample means: 1.9777759739145762
+```
 
 ![Sample mean example](../media/73-variability-sample-mean-10-2.png)
 
@@ -125,11 +120,13 @@ plots.xlim(5, 35)
 plots.ylim(0, 0.25);
 ```
 
+``` output
     Sample size:  625
     Population mean: 16.658155515370705
     Average of sample means:  16.68069616
     Population SD: 39.480199851609314
     SD of sample means: 1.5794443889422805
+```
 
 ![Sample mean example](../media/73-variability-sample-mean-11-2.png)
 
@@ -144,7 +141,7 @@ mean. Both values are provided in the printout above each histogram. As
 expected, the sample mean is an unbiased estimate of the population
 mean.
 
-### The SD of All the Sample Means
+### The SD of all the sample means
 
 You can also see that the histograms get narrower, and hence taller, as
 the sample size increases. We have seen that before, but now we will pay
@@ -169,7 +166,7 @@ Now look at the SD of all 10,000 sample means, when the sample size is
 100. That SD is about one-tenth of the population SD. When the sample
 size is 400, the SD of all the sample means is about one-twentieth of
 the population SD. When the sample size is 625, the SD of the sample
-means is about one-twentyfifth of the population SD.
+means is about one-twenty fifth of the population SD.
 
 It seems like a good idea to compare the SD of the empirical
 distribution of the sample means to the quantity "population SD divided
@@ -206,21 +203,22 @@ sd_comparison = Table().with_columns(
 ``` python
 sd_comparison
 ```
-
-|Sample Size n|SD of 10,000 Sample Means|pop\_sd/sqrt(n)|
-|--- |--- |--- |
-|25|7.80558|7.89604|
-|50|5.60588|5.58334|
-|75|4.58432|4.55878|
-|100|3.93334|3.94802|
-|125|3.51501|3.53122|
-|150|3.22156|3.22354|
-|175|2.95652|2.98442|
-|200|2.83387|2.79167|
-|225|2.61634|2.63201|
-|250|2.49718|2.49695|
+``` output
+| Sample Size n | SD of 10,000 Sample Means | pop\_sd/sqrt(n) |
+|---------------|---------------------------|-----------------|
+| 25            | 7.80558                   | 7.89604         |
+| 50            | 5.60588                   | 5.58334         |
+| 75            | 4.58432                   | 4.55878         |
+| 100           | 3.93334                   | 3.94802         |
+| 125           | 3.51501                   | 3.53122         |
+| 150           | 3.22156                   | 3.22354         |
+| 175           | 2.95652                   | 2.98442         |
+| 200           | 2.83387                   | 2.79167         |
+| 225           | 2.61634                   | 2.63201         |
+| 250           | 2.49718                   | 2.49695         |
 
 ... (15 rows omitted)
+```
 
 The values in the second and third columns are very close. If we plot
 each of those columns with the sample size on the horizontal axis, the

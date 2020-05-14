@@ -1,12 +1,3 @@
-``` python
-from datascience import *
-import numpy as np
-path_data = '../../../../data/'
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-```
-
 Candidate A is contesting an election. A polling organization wants to
 estimate the proportion of voters who will vote for her. Let's suppose
 that they plan to take a simple random sample of voters, though in
@@ -134,17 +125,19 @@ zero_one_sds = Table().with_columns(
 zero_one_sds
 ```
 
-|Population Proportion of 1's|Population SD|
-|--- |--- |
-|0.1|0.3|
-|0.2|0.4|
-|0.3|0.458258|
-|0.4|0.489898|
-|0.5|0.5|
-|0.6|0.489898|
-|0.7|0.458258|
-|0.8|0.4|
-|0.9|0.3|
+``` output
+| Population Proportion of 1's | Population SD |
+|------------------------------|---------------|
+| 0.1                          | 0.3           |
+| 0.2                          | 0.4           |
+| 0.3                          | 0.458258      |
+| 0.4                          | 0.489898      |
+| 0.5                          | 0.5           |
+| 0.6                          | 0.489898      |
+| 0.7                          | 0.458258      |
+| 0.8                          | 0.4           |
+| 0.9                          | 0.3           |  
+```
 
 Not surprisingly, the SD of a population with 10% 1's and 90% 0's is the
 same as that of a population with 90% 1's and 10% 0's. That's because

@@ -1,13 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import math
-import numpy as np
-```
-
 We know that the mean is the balance point of the histogram. Unlike the
 mean, the Standard Deviation (SD) is not easy to identify by looking at the
 histogram.

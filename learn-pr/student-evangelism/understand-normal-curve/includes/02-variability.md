@@ -1,12 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 The mean tells us where a histogram balances. But in almost every
 histogram we have seen, the values spread out on both sides of the mean.
 How far from the mean can they be? To answer this question, we will
@@ -422,7 +413,7 @@ Specifically, it says that for every list:
     1/9 $\approx$ 0.89**
 
 -   the proportion in the range "average $\pm$ 4.5 SDs" is **at least
-    1 - 1/$\boldsymbol{4.5^2}$ $\approx$ 0.95**
+    1 - 1/${4.5^2}$ $\approx$ 0.95**
 
 As we noted above, Chebychev's result gives a lower bound, not an exact
 answer or an approximation. For example, the percent of entries in the
@@ -472,19 +463,20 @@ united = united.with_column(
 )
 united
 ```
-
-|Date|Flight Number|Destination|Delay|Delay (Standard Units)|
-|--- |--- |--- |--- |--- |
-|6/1/15|73|HNL|257|6.08766|
-|6/1/15|217|EWR|28|0.287279|
-|6/1/15|237|STL|-3|-0.497924|
-|6/1/15|250|SAN|0|-0.421937|
-|6/1/15|267|PHL|64|1.19913|
-|6/1/15|273|SEA|-6|-0.573912|
-|6/1/15|278|SEA|-8|-0.62457|
-|6/1/15|292|EWR|12|-0.117987|
-|6/1/15|300|HNL|20|0.0846461|
-|6/1/15|317|IND|-10|-0.675228|
+``` output
+| Date   | Flight Number | Destination | Delay | Delay (Standard Units) |
+|--------|---------------|-------------|-------|------------------------|
+| 6/1/15 | 73            | HNL         | 257   | 6.08766                |
+| 6/1/15 | 217           | EWR         | 28    | 0.287279               |
+| 6/1/15 | 237           | STL         | -3    | -0.497924              |
+| 6/1/15 | 250           | SAN         | 0     | -0.421937              |
+| 6/1/15 | 267           | PHL         | 64    | 1.19913                |
+| 6/1/15 | 273           | SEA         | -6    | -0.573912              |
+| 6/1/15 | 278           | SEA         | -8    | -0.62457               |
+| 6/1/15 | 292           | EWR         | 12    | -0.117987              |
+| 6/1/15 | 300           | HNL         | 20    | 0.0846461              |
+| 6/1/15 | 317           | IND         | -10   | -0.675228              |  
+```
 
 ... (13815 rows omitted)
 
@@ -499,21 +491,22 @@ high!
 ``` python
 united.sort('Delay', descending=True)
 ```
-
-|Date|Flight Number|Destination|Delay|Delay (Standard Units)|
-|--- |--- |--- |--- |--- |
-|6/21/15|1964|SEA|580|14.269|
-|6/22/15|300|HNL|537|13.1798|
-|6/21/15|1149|IAD|508|12.4453|
-|6/20/15|353|ORD|505|12.3693|
-|8/23/15|1589|ORD|458|11.1788|
-|7/23/15|1960|LAX|438|10.6722|
-|6/23/15|1606|ORD|430|10.4696|
-|6/4/15|1743|LAX|408|9.91236|
-|6/17/15|1122|HNL|405|9.83637|
-|7/27/15|572|ORD|385|9.32979|
+``` output
+| Date    | Flight Number | Destination | Delay | Delay (Standard Units) |
+|---------|---------------|-------------|-------|------------------------|
+| 6/21/15 | 1964          | SEA         | 580   | 14.269                 |
+| 6/22/15 | 300           | HNL         | 537   | 13.1798                |
+| 6/21/15 | 1149          | IAD         | 508   | 12.4453                |
+| 6/20/15 | 353           | ORD         | 505   | 12.3693                |
+| 8/23/15 | 1589          | ORD         | 458   | 11.1788                |
+| 7/23/15 | 1960          | LAX         | 438   | 10.6722                |
+| 6/23/15 | 1606          | ORD         | 430   | 10.4696                |
+| 6/4/15  | 1743          | LAX         | 408   | 9.91236                |
+| 6/17/15 | 1122          | HNL         | 405   | 9.83637                |
+| 7/27/15 | 572           | ORD         | 385   | 9.32979                |
 
 ... (13815 rows omitted)
+```
 
 What this shows is that it is possible for data to be many SDs above
 average (and for flights to be delayed by almost 10 hours). The highest

@@ -27,16 +27,6 @@ we will address include:
     shaped?
 -   How can we use sample means effectively for inference?
 
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import pylab as pl
-import numpy as np
-```
-
 ### Properties of the mean
 
 In this course, we have used the words "average" and "mean"
@@ -171,7 +161,7 @@ not_symmetric
 ``` output
  array([2, 3, 3, 9])
 ```
-   
+
 ``` python
 same_distribution = make_array(2, 2, 3, 3, 3, 3, 9, 9)
 np.mean(same_distribution)
@@ -316,8 +306,8 @@ year.
 sf2015 = Table.read_table(path_data + 'san_francisco_2015.csv').where('Salaries', are.above(10000))
 ```
 
-As we saw earlier, the highest compensation was above \$600,000 but the
-vast majority of employees had compensations below \$300,000.
+As we saw earlier, the highest compensation was above $600,000 but the
+vast majority of employees had compensations below $300,000.
 
 ``` python
 sf2015.select('Total Compensation').hist(bins = np.arange(10000, 700000, 25000))
