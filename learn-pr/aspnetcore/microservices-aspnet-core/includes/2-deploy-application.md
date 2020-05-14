@@ -1,5 +1,28 @@
 In this unit, you'll deploy the eShop on Learn app to AKS. You'll also gain an understanding of the microservices architecture used.
 
+## eShopOnContainers App architecture
+
+**TODO**: The below image has to be modified. Better representation of API Gateway needed.
+
+![eShop application architecture](../media/temp/eshop-architecture.png)
+
+The application represents an online store that sells various physical products like pins, t-shirts and coffee mugs. Here are some of the basic features the store implements:
+
+* Catalog management
+* Shopping basket
+* User management
+* Order management
+* Payments
+* ..and more!
+
+The above functionality is broken up into several distinct microservices. Each microservice is autonomous, independently deployable, and responsible for its own data. This enables each microservice to implement the data store that is best optimized for its workload, storage needs, and read/write patterns. Choices include relational, document, key-value, and even graph-based data stores. As shown in the above figure, the `catalog` microservice stores its data in a `SQL Server on Linux`, a `basket` microservice uses a `Redis cache` for storage, and so on. Note that there's no single master data store with which all services interact. Instead, communication between the services are done on an as-needed basis, either via synchronous API calls or asynchronously through messaging. This data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in production.
+
+The event bus is used for asynchronous messaging and event-driven communication. The above implementation uses RabbitMQ in a container deployed in AKS, but a service such as Azure Service Bus would also be appropriate.
+
+These microservices are accessible to the web or mobile app of eShop via the API Gateway. API Gateways offer several advantages, such as decoupling back-end services from individual front-end clients and providing better security. The app also makes use of related patterns like Backends-for-Frontends (BFF) and the Gateway aggregation. In this module, we have an ASP .NET Core WebSPA app that is publicly accessible via an IP address. The requests from the WebSPA app to microservices are routed through the API Gateway. Basic routing configurations are implemented using the NGINX reverse proxy and the Gateway aggregation pattern is custom implemented using the ASP.NET Core Web API called `Web.Shopping.HttpAggregator`. For real-world scenarios, use of managed API Gateway services like [Azure API Management](https://azure.microsoft.com/services/api-management/) is recommended.
+
+Typically, microservices are small enough for a feature team to independently build, test, and deploy them in production multiple times a day without affecting other systems. In this module, you'll learn to create a new microservice called `Coupon.API` and deploy them to an existing eShop application in production. While doing so, you'll also learn about designing a microservice using Domain Driven Design, containerizing them using Docker, publishing them to a container registry and finally deploying them to an existing AKS Cluster.
+
 ## Set up development environment
 
 Run the following command in the command shell. Be patient, as setup can take a few minutes to complete.
@@ -34,9 +57,6 @@ The following directories in *src/* contain .NET Core projects, each of which is
 | *Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), **D**omain-**D**riven **D**esign (DDD), and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS). |
 | *Web/* | ASP.NET Core apps that implement user interfaces:<br>*WebSPA* is a storefront UI built with Angular.<br>*WebStatus* is the health checks dashboard for monitoring the operational status of each service. |
 
-![eShop application architecture](../media/temp/eshop-architecture.png)
-
-As depicted in the preceding diagram, the event bus is used for integrating events across microservices. The implementation that has been deployed in AKS uses RabbitMQ in a container, but a service such as Azure Service Bus would also be appropriate.
 
 ## Test deployment
 
