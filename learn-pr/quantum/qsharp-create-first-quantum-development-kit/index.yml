@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-iconUrl: /learn/achievements/quantum/qsharp-create-first-quantum-development-kit.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
