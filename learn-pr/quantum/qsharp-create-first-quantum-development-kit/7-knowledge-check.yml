@@ -41,7 +41,7 @@ quiz:
       isCorrect: false
       explanation: "Quantum computers perform specialized tasks. You don't use a quantum computer for everything because, for basic tasks like averaging a set of numbers, classical computers work just fine."
 
-  - content: "You're ready to run your algorthm on Azure Quantum. What's the best way to choose which hardware runs your code most efficiently?"
+  - content: "You're ready to run your algorithm on Azure Quantum. What's the best way to choose which hardware runs your code most efficiently?"
     choices:
     - content: 'Run a more limited version of your program on each hardware type and then choose the one that completes most quickly.'
       isCorrect: false
