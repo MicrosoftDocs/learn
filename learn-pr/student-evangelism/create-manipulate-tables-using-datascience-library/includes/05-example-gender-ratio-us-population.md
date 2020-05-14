@@ -1,7 +1,7 @@
 > [!NOTE]
 > You can find an interactive version of this unit named **example-gender-ratio-in-the-us-population.ipynb** in your virtual environment
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science",  refer to the first unit **Setup**
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
@@ -81,15 +81,14 @@ us_pop.where('SEX', are.equal_to(0)).where('AGE', are.between(97, 101))
 
 ```
 
-Not surprisingly, the numbers of people are smaller at higher ages --
-for example, there are fewer 99-year-olds than 98-year-olds.
+Not surprisingly, the numbers of people are smaller at higher ages--for example, there are fewer 99-year-olds than 98-year-olds.
 
 It does come as a surprise, though, that the numbers for `AGE` 100 are
 quite a bit larger than those for age 99. A closer examination of the
 documentation shows that it's because the Census Bureau used 100 as the
 code for everyone aged 100 or more.
 
-The row with `AGE` 100 doesn't just represent 100-year-olds -- it also
+The row with `AGE` 100 doesn't just represent 100 year olds, it also
 includes those who are older than 100. That is why the numbers in that
 row are larger than in the row for the 99-year-olds.
 
