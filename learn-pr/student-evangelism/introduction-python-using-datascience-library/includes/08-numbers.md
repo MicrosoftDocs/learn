@@ -20,32 +20,42 @@ point.
 2
 ```
 
-    2
+``` output
+2
+```
 
 ``` python
 1 + 3
 ```
 
-    4
+``` output
+4
+```
 
 ``` python
 -1234567890000000000
 ```
 
-    -1234567890000000000
+``` output
+-1234567890000000000
+```
 
 ``` python
 # Some float values
 1.2
 ```
 
-    1.2
+``` output
+1.2
+```
 
 ``` python
 3.0
 ```
 
-    3.0
+``` output
+3.0
+```
 
 When a `float` value is combined with an `int` value using some
 arithmetic operator, then the result is always a `float` value. In most
@@ -58,19 +68,25 @@ notation.
 1.5 + 2
 ```
 
-    3.5
+``` output
+3.5
+```
 
 ``` python
 3 / 1
 ```
 
-    3.0
+``` output
+3.0
+```
 
 ``` python
 -12345678900000000000.0
 ```
 
-    -1.23456789e+19
+``` output
+-1.23456789e+19
+```
 
 The `type` function can be used to find the type of any number.
 
@@ -78,13 +94,17 @@ The `type` function can be used to find the type of any number.
 type(3)
 ```
 
-    int
+``` output
+int
+```
 
 ``` python
 type(3 / 1)
 ```
 
-    float
+``` output
+float
+```
 
 The `type` of an expression is the type of its final value. So, the
 `type` function will never indicate that the type of an expression is a
@@ -95,13 +115,17 @@ x = 3
 type(x) # The type of x is an int, not a name
 ```
 
-    int
+``` output
+int
+```
 
 ``` python
 type(x + 2.5)
 ```
 
-    float
+``` output
+float
+```
 
 ## More about float values
 
@@ -124,25 +148,33 @@ If the result is a very small number, then it is represented as zero.
 2e306 * 10
 ```
 
-    2e+307
+``` output
+2e+307
+```
 
 ``` python
 2e306 * 100
 ```
 
-    inf
+``` output
+inf
+```
 
 ``` python
 2e-322 / 10
 ```
 
-    2e-323
+``` output
+2e-323
+```
 
 ``` python
 2e-322 / 100
 ```
 
-    0.0
+``` output
+ 0.0
+```
 
 The second limit can be observed by an expression that involves numbers
 with more than 15 significant digits. These extra digits are discarded
@@ -152,7 +184,9 @@ before any arithmetic is carried out.
 0.6666666666666666 - 0.6666666666666666123456789
 ```
 
-    0.0
+``` output
+0.0
+```
 
 The third limit can be observed when taking the difference between two
 expressions that should be equivalent. For example, the expression
@@ -163,19 +197,25 @@ not exactly recover 2.
 2 ** 0.5
 ```
 
-    1.4142135623730951
+``` output
+1.4142135623730951
+```
 
 ``` python
 (2 ** 0.5) * (2 ** 0.5)
 ```
 
-    2.0000000000000004
+``` output
+2.0000000000000004
+```
 
 ``` python
 (2 ** 0.5) * (2 ** 0.5) - 2
 ```
 
-    4.440892098500626e-16
+``` output
+4.440892098500626e-16
+```
 
 The final result above is `0.0000000000000004440892098500626`, a number
 that is very close to zero. The correct answer to this arithmetic

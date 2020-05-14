@@ -13,7 +13,9 @@ addition expression, but it is combining a different type of value.
 "data" + "science"
 ```
 
+``` output
     'datascience'
+```
 
 Addition is completely literal; it combines these two strings together
 without regard for their contents. It doesn't add a space because these
@@ -23,7 +25,9 @@ are different words; that's up to the programmer (you) to specify.
 "data" + " " + "science"
 ```
 
+``` output
     'data science'
+```
 
 Single and double quotes can both be used to create strings: `'hi'` and
 `"hi"` are identical expressions. Double quotes are often preferred
@@ -33,7 +37,9 @@ because they allow you to include apostrophes inside of strings.
 "This won't work with a single-quoted string!"
 ```
 
+``` output
     "This won't work with a single-quoted string!"
+```
 
 Why not? Try it out.
 
@@ -44,8 +50,10 @@ this function, strings can be constructed that have embedded values.
 "That's " + str(1 + 1) + ' ' + str(True)
 ```
 
+``` output
     "That's 2 True"
+```
 
-## Check your knowledge 
+## Check your knowledge
 
 The following commands are executed in order, what would python display? We first run six = "6"
