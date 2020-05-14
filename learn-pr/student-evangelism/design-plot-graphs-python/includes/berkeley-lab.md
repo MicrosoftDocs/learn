@@ -12,8 +12,9 @@ A Visual Studio Codespaces environment based on the MicrosoftDocs/inferentialthi
 
 ## To set up a Visual Studio Codespaces environment:
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking) in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
-If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
+1. Open [Visual Studio Codespaces](https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking) in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
+
+1. If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
 
 - Environment Name: A name for your environment - for example, inferential thinking.
 
@@ -23,7 +24,8 @@ If you don't already have a Visual Studio Codespaces billing plan, create one. T
 
 - Suspend idle environment after: 30 minutes
 
-- Wait for the environment to be created. This will take around a minute.
+1. Wait for the environment to be created. This will take around a minute.
 
-- Wait for another minute or so while the environment is set up for you. It might look like nothing is happening, but in the background we're installing some components you'll need for the exercise. You'll see the following things happen:
-A list of notebook (.ipynb) files will appear in the pane on the left.
+1. Wait for another minute or so while the environment is set up for you. It might look like nothing is happening, but in the background we're installing some components you'll need for the exercise. You'll see the following things happen:
+
+1. A list of notebook (.ipynb) files will appear in the pane on the left.
