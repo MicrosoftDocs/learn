@@ -123,6 +123,4 @@ Moving forward, we advise putting systemic processes in place to manage and eval
 
 AI is already transforming industries, and the potential value it can generate will only continue to grow. We need a new, creative way to evaluate transformative AI initiatives. Equipped with the right framework, you'll have a strong foundation for innovation.
 
-Learn more about how [Digital Advisory Services](https://www.microsoft.com/industry/services/digital-advisors) can help you drive successful AI initiatives today.
-
-Up next, we’ll hear from Athina Kanioura, Accenture’s Chief Analytics Officer and Global Lead of Applied Intelligence, as she discusses what organizations should consider as they invest in AI and start to become an AI organization.
+Next, let’s take a look at the AI-related roles and responsibilities that should be established in every AI organization.
