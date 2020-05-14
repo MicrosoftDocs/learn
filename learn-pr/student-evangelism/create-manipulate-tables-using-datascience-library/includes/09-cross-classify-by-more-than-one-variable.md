@@ -23,14 +23,15 @@ more_cones
 ```
 
 ``` output
-|Flavor|Color|Price|
-|--- |--- |--- |
-|strawberry|pink|3.55|
-|chocolate|light brown|4.75|
-|chocolate|dark brown|5.25|
-|strawberry|pink|5.25|
-|chocolate|dark brown|5.25|
-|bubblegum|pink|4.75|  
+| Flavor     | Color       | Price |
+|------------|-------------|-------|
+| strawberry | pink        | 3.55  |
+| chocolate  | light brown | 4.75  |
+| chocolate  | dark brown  | 5.25  |
+| strawberry | pink        | 5.25  |
+| chocolate  | dark brown  | 5.25  |
+| bubblegum  | pink        | 4.75  |   
+
 ```
 
 We know how to use `group` to count the number of cones of each flavor:
@@ -40,11 +41,12 @@ more_cones.group('Flavor')
 ```
 
 ``` output
-|Flavor|count|
-|--- |--- |
-|bubblegum|1|
-|chocolate|3|
-|strawberry|2|  
+| Flavor     | count |
+|------------|-------|
+| bubblegum  | 1     |
+| chocolate  | 3     |
+| strawberry | 2     |  
+
 ```
 
 But now each cone has a color as well. To classify the cones by both
@@ -63,12 +65,13 @@ more_cones.group(['Flavor', 'Color'])
 ```
 
 ``` output
-|Flavor|Color|count|
-|--- |--- |--- |
-|bubblegum|pink|1|
-|chocolate|dark brown|2|
-|chocolate|light brown|1|
-|strawberry|pink|2|  
+| Flavor     | Color       | count |
+|------------|-------------|-------|
+| bubblegum  | pink        | 1     |
+| chocolate  | dark brown  | 2     |
+| chocolate  | light brown | 1     |
+| strawberry | pink        | 2     |  
+
 ```
 
 ### Two variables: finding a characteristic of each paired category
@@ -81,12 +84,13 @@ more_cones.group(['Flavor', 'Color'], sum)
 ```
 
 ``` output
-|Flavor|Color|Price sum|
-|--- |--- |--- |
-|bubblegum|pink|4.75|
-|chocolate|dark brown|10.5|
-|chocolate|light brown|4.75|
-|strawberry|pink|8.8|  
+| Flavor     | Color       | Price sum |
+|------------|-------------|-----------|
+| bubblegum  | pink        | 4.75      |
+| chocolate  | dark brown  | 10.5      |
+| chocolate  | light brown | 4.75      |
+| strawberry | pink        | 8.8       |  
+
 ```
 
 **Three or more variables.** You can use `group` to classify rows by
@@ -112,12 +116,13 @@ more_cones.group(['Flavor', 'Color'])
 ```
 
 ``` output
-|Flavor|Color|count|
-|--- |--- |--- |
-|bubblegum|pink|1|
-|chocolate|dark brown|2|
-|chocolate|light brown|1|
-|strawberry|pink|2|  
+| Flavor     | Color       | count |
+|------------|-------------|-------|
+| bubblegum  | pink        | 1     |
+| chocolate  | dark brown  | 2     |
+| chocolate  | light brown | 1     |
+| strawberry | pink        | 2     |  
+
 ```
 
 The same data can be displayed differently using the Table method
@@ -129,11 +134,12 @@ more_cones.pivot('Flavor', 'Color')
 ```
 
 ``` output
-|Color|bubblegum|chocolate|strawberry|
-|--- |--- |--- |--- |
-|dark brown|0|2|0|
-|light brown|0|1|0|
-|pink|1|0|2|  
+| Color       | bubblegum | chocolate | strawberry |
+|-------------|-----------|-----------|------------|
+| dark brown  | 0         | 2         | 0          |
+| light brown | 0         | 1         | 0          |
+| pink        | 1         | 0         | 2          |  
+
 ```
 
 Notice how this table displays all nine possible pairs of flavor and
@@ -173,11 +179,12 @@ more_cones.pivot('Flavor', 'Color', values='Price', collect=sum)
 ```
 
 ``` output
-|Color|bubblegum|chocolate|strawberry|
-|--- |--- |--- |--- |
-|dark brown|0|10.5|0|
-|light brown|0|4.75|0|
-|pink|4.75|0|8.8|    
+| Color       | bubblegum | chocolate | strawberry |
+|-------------|-----------|-----------|------------|
+| dark brown  | 0         | 10.5      | 0          |
+| light brown | 0         | 4.75      | 0          |
+| pink        | 4.75      | 0         | 8.8        |  
+
 ```
 
 And here is `group` doing the same thing.
@@ -187,12 +194,13 @@ more_cones.group(['Flavor', 'Color'], sum)
 ```
 
 ``` output
-|Flavor|Color|Price sum|
-|--- |--- |--- |
-|bubblegum|pink|4.75|
-|chocolate|dark brown|10.5|
-|chocolate|light brown|4.75|
-|strawberry|pink|8.8|  
+| Flavor     | Color       | Price sum |
+|------------|-------------|-----------|
+| bubblegum  | pink        | 4.75      |
+| chocolate  | dark brown  | 10.5      |
+| chocolate  | light brown | 4.75      |
+| strawberry | pink        | 8.8       |  
+
 ```
 
 Though the numbers in both tables are the same, table produced by
@@ -220,18 +228,18 @@ ca_2014
 ```
 
 ``` output
-|Year|Age|Gender|Educational Attainment|Personal Income|Population Count|
-|--- |--- |--- |--- |--- |--- |
-|1/1/14 0:00|18 to 64|Female|No high school diploma|H: 75,000 and over|2058|
-|1/1/14 0:00|65 to 80+|Male|No high school diploma|H: 75,000 and over|2153|
-|1/1/14 0:00|65 to 80+|Female|No high school diploma|G: 50,000 to 74,999|4666|
-|1/1/14 0:00|65 to 80+|Female|High school or equivalent|H: 75,000 and over|7122|
-|1/1/14 0:00|65 to 80+|Female|No high school diploma|F: 35,000 to 49,999|7261|
-|1/1/14 0:00|65 to 80+|Male|No high school diploma|G: 50,000 to 74,999|8569|
-|1/1/14 0:00|18 to 64|Female|No high school diploma|G: 50,000 to 74,999|14635|
-|1/1/14 0:00|65 to 80+|Male|No high school diploma|F: 35,000 to 49,999|15212|
-|1/1/14 0:00|65 to 80+|Male|College, less than 4-yr degree|B: 5,000 to 9,999|15423|
-|1/1/14 0:00|65 to 80+|Female|Bachelor's degree or higher|A: 0 to 4,999|15459|    
+| Year        | Age       | Gender | Educational Attainment         | Personal Income     | Population Count |
+|-------------|-----------|--------|--------------------------------|---------------------|------------------|
+| 1/1/14 0:00 | 18 to 64  | Female | No high school diploma         | H: 75,000 and over  | 2058             |
+| 1/1/14 0:00 | 65 to 80+ | Male   | No high school diploma         | H: 75,000 and over  | 2153             |
+| 1/1/14 0:00 | 65 to 80+ | Female | No high school diploma         | G: 50,000 to 74,999 | 4666             |
+| 1/1/14 0:00 | 65 to 80+ | Female | High school or equivalent      | H: 75,000 and over  | 7122             |
+| 1/1/14 0:00 | 65 to 80+ | Female | No high school diploma         | F: 35,000 to 49,999 | 7261             |
+| 1/1/14 0:00 | 65 to 80+ | Male   | No high school diploma         | G: 50,000 to 74,999 | 8569             |
+| 1/1/14 0:00 | 18 to 64  | Female | No high school diploma         | G: 50,000 to 74,999 | 14635            |
+| 1/1/14 0:00 | 65 to 80+ | Male   | No high school diploma         | F: 35,000 to 49,999 | 15212            |
+| 1/1/14 0:00 | 65 to 80+ | Male   | College, less than 4-yr degree | B: 5,000 to 9,999   | 15423            |
+| 1/1/14 0:00 | 65 to 80+ | Female | Bachelor's degree or higher    | A: 0 to 4,999       | 15459            |  
 
 ... (117 rows omitted)
 ```
@@ -249,18 +257,18 @@ educ_inc
 ```
 
 ``` output
-|Educational Attainment|Personal Income|Population Count|
-|--- |--- |--- |
-|No high school diploma|H: 75,000 and over|2058|
-|No high school diploma|H: 75,000 and over|2153|
-|No high school diploma|G: 50,000 to 74,999|4666|
-|High school or equivalent|H: 75,000 and over|7122|
-|No high school diploma|F: 35,000 to 49,999|7261|
-|No high school diploma|G: 50,000 to 74,999|8569|
-|No high school diploma|G: 50,000 to 74,999|14635|
-|No high school diploma|F: 35,000 to 49,999|15212|
-|College, less than 4-yr degree|B: 5,000 to 9,999|15423|
-|Bachelor's degree or higher|A: 0 to 4,999|15459|  
+| Educational Attainment         | Personal Income     | Population Count |
+|--------------------------------|---------------------|------------------|
+| No high school diploma         | H: 75,000 and over  | 2058             |
+| No high school diploma         | H: 75,000 and over  | 2153             |
+| No high school diploma         | G: 50,000 to 74,999 | 4666             |
+| High school or equivalent      | H: 75,000 and over  | 7122             |
+| No high school diploma         | F: 35,000 to 49,999 | 7261             |
+| No high school diploma         | G: 50,000 to 74,999 | 8569             |
+| No high school diploma         | G: 50,000 to 74,999 | 14635            |
+| No high school diploma         | F: 35,000 to 49,999 | 15212            |
+| College, less than 4-yr degree | B: 5,000 to 9,999   | 15423            |
+| Bachelor's degree or higher    | A: 0 to 4,999       | 15459            |  
 
 ... (117 rows omitted)
 ```
@@ -326,16 +334,17 @@ totals
 ```
 
 ``` output
-|Personal Income|Bachelor's degree or higher|College, less than 4-yr degree|High school or equivalent|No high school diploma|
-|--- |--- |--- |--- |--- |
-|A: 0 to 4,999|575491|985011|1161873|1204529|
-|B: 5,000 to 9,999|326020|810641|626499|597039|
-|C: 10,000 to 14,999|452449|798596|692661|664607|
-|D: 15,000 to 24,999|773684|1345257|1252377|875498|
-|E: 25,000 to 34,999|693884|1091642|929218|464564|
-|F: 35,000 to 49,999|1122791|1112421|782804|260579|
-|G: 50,000 to 74,999|1594681|883826|525517|132516|
-|H: 75,000 and over|2986698|748103|323192|58945|  
+| Personal Income     | Bachelor's degree or higher | College, less than 4-yr degree | High school or equivalent | No high school diploma |
+|---------------------|-----------------------------|--------------------------------|---------------------------|------------------------|
+| A: 0 to 4,999       | 575491                      | 985011                         | 1161873                   | 1204529                |
+| B: 5,000 to 9,999   | 326020                      | 810641                         | 626499                    | 597039                 |
+| C: 10,000 to 14,999 | 452449                      | 798596                         | 692661                    | 664607                 |
+| D: 15,000 to 24,999 | 773684                      | 1345257                        | 1252377                   | 875498                 |
+| E: 25,000 to 34,999 | 693884                      | 1091642                        | 929218                    | 464564                 |
+| F: 35,000 to 49,999 | 1122791                     | 1112421                        | 782804                    | 260579                 |
+| G: 50,000 to 74,999 | 1594681                     | 883826                         | 525517                    | 132516                 |
+| H: 75,000 and over  | 2986698                     | 748103                         | 323192                    | 58945                  |  
+
 ```
 
 Here you see the power of `pivot` over other cross-classification
@@ -355,16 +364,17 @@ distributions
 ```
 
 ``` output
-|Personal Income|Bachelor's degree or higher|College, less than 4-yr degree|High school or equivalent|No high school diploma|
-|--- |--- |--- |--- |--- |
-|A: 0 to 4,999|6.75|12.67|18.46|28.29|
-|B: 5,000 to 9,999|3.82|10.43|9.95|14.02|
-|C: 10,000 to 14,999|5.31|10.27|11|15.61|
-|D: 15,000 to 24,999|9.07|17.3|19.9|20.56|
-|E: 25,000 to 34,999|8.14|14.04|14.76|10.91|
-|F: 35,000 to 49,999|13.17|14.31|12.44|6.12|
-|G: 50,000 to 74,999|18.7|11.37|8.35|3.11|
-|H: 75,000 and over|35.03|9.62|5.13|1.38|  
+| Personal Income     | Bachelor's degree or higher | College, less than 4-yr degree | High school or equivalent | No high school diploma |
+|---------------------|-----------------------------|--------------------------------|---------------------------|------------------------|
+| A: 0 to 4,999       | 6.75                        | 12.67                          | 18.46                     | 28.29                  |
+| B: 5,000 to 9,999   | 3.82                        | 10.43                          | 9.95                      | 14.02                  |
+| C: 10,000 to 14,999 | 5.31                        | 10.27                          | 11                        | 15.61                  |
+| D: 15,000 to 24,999 | 9.07                        | 17.3                           | 19.9                      | 20.56                  |
+| E: 25,000 to 34,999 | 8.14                        | 14.04                          | 14.76                     | 10.91                  |
+| F: 35,000 to 49,999 | 13.17                       | 14.31                          | 12.44                     | 6.12                   |
+| G: 50,000 to 74,999 | 18.7                        | 11.37                          | 8.35                      | 3.11                   |
+| H: 75,000 and over  | 35.03                       | 9.62                           | 5.13                      | 1.38                   |  
+
 ```
 
 At a glance, you can see that over 35% of those with Bachelor's degrees
@@ -382,5 +392,5 @@ distributions.select(0, 1, 4).barh(0)
 ```
 
 ``` output
-![png](../media/34-cross-classify-by-more-than-one-variable-37-0.png)
+![Variable](../media/34-cross-classify-by-more-than-one-variable-37-0.png)
 ```

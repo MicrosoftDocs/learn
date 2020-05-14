@@ -116,7 +116,8 @@ x
 
 
     NameError: name 'x' is not defined
-
+```
+    
 **Docstrings.** Though `double` is relatively easy to understand, many
 functions perform complicated tasks and are difficult to use without
 explanation. (You may have discovered this yourself!) Therefore, a
@@ -125,7 +126,6 @@ documentation. In Python, this is called a *docstring* -- a description
 of its behavior and expectations about its arguments. The docstring can
 also show example calls to the function, where the call is preceded by
 `>>>`.
-```
 
 A docstring can be any string, as long as it is the first thing in a
 function's body. Docstrings are typically defined using triple quotation
@@ -205,7 +205,9 @@ big_diff = biggest_difference(some_numbers)
 print("The biggest difference is", big_diff)
 ```
 
+``` output
     The biggest difference is 5
+```
 
 Here is what happens when we run that cell:
 

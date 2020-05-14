@@ -36,18 +36,19 @@ nba_salaries
 ```
 
 ``` output
-|Player|Position|Team|'15-'16 Salary|
-|--- |--- |--- |--- |
-|Paul Millsap|PF|Atlanta Hawks|18.6717|
-|Al Horford|C|Atlanta Hawks|12|
-|Tiago Splitter|C|Atlanta Hawks|9.75625|
-|Jeff Teague|PG|Atlanta Hawks|8|
-|Kyle Korver|SG|Atlanta Hawks|5.74648|
-|Thabo Sefolosha|SF|Atlanta Hawks|4|
-|Mike Scott|PF|Atlanta Hawks|3.33333|
-|Kent Bazemore|SF|Atlanta Hawks|2|
-|Dennis Schroder|PG|Atlanta Hawks|1.7634|
-|Tim Hardaway Jr.|SG|Atlanta Hawks|1.30452|
+| Player           | Position | Team          | '15-'16 Salary |
+|------------------|----------|---------------|----------------|
+| Paul Millsap     | PF       | Atlanta Hawks | 18.6717        |
+| Al Horford       | C        | Atlanta Hawks | 12             |
+| Tiago Splitter   | C        | Atlanta Hawks | 9.75625        |
+| Jeff Teague      | PG       | Atlanta Hawks | 8              |
+| Kyle Korver      | SG       | Atlanta Hawks | 5.74648        |
+| Thabo Sefolosha  | SF       | Atlanta Hawks | 4              |
+| Mike Scott       | PF       | Atlanta Hawks | 3.33333        |
+| Kent Bazemore    | SF       | Atlanta Hawks | 2              |
+| Dennis Schroder  | PG       | Atlanta Hawks | 1.7634         |
+| Tim Hardaway Jr. | SG       | Atlanta Hawks | 1.30452        |  
+
 
 ... (407 rows omitted)
 ```
@@ -62,11 +63,12 @@ nba_salaries.show(3)
 ```
 
 ``` output
-|Player|Position|Team|'15-'16 Salary|
-|--- |--- |--- |--- |
-|Paul Millsap|PF|Atlanta Hawks|18.6717|
-|Al Horford|C|Atlanta Hawks|12|
-|Tiago Splitter|C|Atlanta Hawks|9.75625|
+| Player         | Position | Team          | '15-'16 Salary |
+|----------------|----------|---------------|----------------|
+| Paul Millsap   | PF       | Atlanta Hawks | 18.6717        |
+| Al Horford     | C        | Atlanta Hawks | 12             |
+| Tiago Splitter | C        | Atlanta Hawks | 9.75625        |  
+
 
 ... (414 rows omitted)
 ```
@@ -81,13 +83,14 @@ nba_salaries.sort('Player').show(5)
 ```
 
 ``` output
-|Player|Position|Team|'15-'16 Salary|
-|--- |--- |--- |--- |
-|Aaron Brooks|PG|Chicago Bulls|2.25|
-|Aaron Gordon|PF|Orlando Magic|4.17168|
-|Aaron Harrison|SG|Charlotte Hornets|0.525093|
-|Adreian Payne|PF|Minnesota Timberwolves|1.93884|
-|Al Horford|C|Atlanta Hawks|12|
+| Player         | Position | Team                   | '15-'16 Salary |
+|----------------|----------|------------------------|----------------|
+| Aaron Brooks   | PG       | Chicago Bulls          | 2.25           |
+| Aaron Gordon   | PF       | Orlando Magic          | 4.17168        |
+| Aaron Harrison | SG       | Charlotte Hornets      | 0.525093       |
+| Adreian Payne  | PF       | Minnesota Timberwolves | 1.93884        |
+| Al Horford     | C        | Atlanta Hawks          | 12             |  
+
 
 ... (412 rows omitted)
 ```
@@ -108,18 +111,18 @@ nba.sort('Salary')
 ```
 
 ``` output
-|Player|Position|Team|Salary|
-|--- |--- |--- |--- |
-|Thanasis Antetokounmpo|SF|New York Knicks|0.030888|
-|Jordan McRae|SG|Phoenix Suns|0.049709|
-|Cory Jefferson|PF|Phoenix Suns|0.049709|
-|Elliot Williams|SG|Memphis Grizzlies|0.055722|
-|Orlando Johnson|SG|Phoenix Suns|0.055722|
-|Phil Pressey|PG|Phoenix Suns|0.055722|
-|Keith Appling|PG|Orlando Magic|0.061776|
-|Sean Kilpatrick|SG|Denver Nuggets|0.099418|
-|Erick Green|PG|Utah Jazz|0.099418|
-|Jeff Ayres|PF|Los Angeles Clippers|0.111444|
+| Player                 | Position | Team                 | Salary   |
+|------------------------|----------|----------------------|----------|
+| Thanasis Antetokounmpo | SF       | New York Knicks      | 0.030888 |
+| Jordan McRae           | SG       | Phoenix Suns         | 0.049709 |
+| Cory Jefferson         | PF       | Phoenix Suns         | 0.049709 |
+| Elliot Williams        | SG       | Memphis Grizzlies    | 0.055722 |
+| Orlando Johnson        | SG       | Phoenix Suns         | 0.055722 |
+| Phil Pressey           | PG       | Phoenix Suns         | 0.055722 |
+| Keith Appling          | PG       | Orlando Magic        | 0.061776 |
+| Sean Kilpatrick        | SG       | Denver Nuggets       | 0.099418 |
+| Erick Green            | PG       | Utah Jazz            | 0.099418 |
+| Jeff Ayres             | PF       | Los Angeles Clippers | 0.111444 |  
 
 ... (407 rows omitted)
 ```
@@ -142,18 +145,18 @@ nba.sort('Salary', descending=True)
 ```
 
 ``` output
-|Player|Position|Team|Salary|
-|--- |--- |--- |--- |
-|Kobe Bryant|SF|Los Angeles Lakers|25|
-|Joe Johnson|SF|Brooklyn Nets|24.8949|
-|LeBron James|SF|Cleveland Cavaliers|22.9705|
-|Carmelo Anthony|SF|New York Knicks|22.875|
-|Dwight Howard|C|Houston Rockets|22.3594|
-|Chris Bosh|PF|Miami Heat|22.1927|
-|Chris Paul|PG|Los Angeles Clippers|21.4687|
-|Kevin Durant|SF|Oklahoma City Thunder|20.1586|
-|Derrick Rose|PG|Chicago Bulls|20.0931|
-|Dwyane Wade|SG|Miami Heat|20|
+| Player          | Position | Team                  | Salary  |
+|-----------------|----------|-----------------------|---------|
+| Kobe Bryant     | SF       | Los Angeles Lakers    | 25      |
+| Joe Johnson     | SF       | Brooklyn Nets         | 24.8949 |
+| LeBron James    | SF       | Cleveland Cavaliers   | 22.9705 |
+| Carmelo Anthony | SF       | New York Knicks       | 22.875  |
+| Dwight Howard   | C        | Houston Rockets       | 22.3594 |
+| Chris Bosh      | PF       | Miami Heat            | 22.1927 |
+| Chris Paul      | PG       | Los Angeles Clippers  | 21.4687 |
+| Kevin Durant    | SF       | Oklahoma City Thunder | 20.1586 |
+| Derrick Rose    | PG       | Chicago Bulls         | 20.0931 |
+| Dwyane Wade     | SG       | Miami Heat            | 20      |  
 
 ... (407 rows omitted)
 ```

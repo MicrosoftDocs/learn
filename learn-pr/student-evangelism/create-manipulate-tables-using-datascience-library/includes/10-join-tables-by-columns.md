@@ -24,13 +24,14 @@ cones
 ```
 
 ``` output
-|Flavor|Price|
-|--- |--- |
-|strawberry|3.55|
-|vanilla|4.75|
-|chocolate|6.55|
-|strawberry|5.25|
-|chocolate|5.75|
+| Flavor     | Price |
+|------------|-------|
+| strawberry | 3.55  |
+| vanilla    | 4.75  |
+| chocolate  | 6.55  |
+| strawberry | 5.25  |
+| chocolate  | 5.75  |  
+
 ```
 
 ``` python
@@ -42,11 +43,12 @@ ratings
 ```
 
 ``` output
-|Kind|Stars|
-|--- |--- |
-|strawberry|2.5|
-|chocolate|3.5|
-|vanilla|4|
+| Kind       | Stars |
+|------------|-------|
+| strawberry | 2.5   |
+| chocolate  | 3.5   |
+| vanilla    | 4     |  
+
 ```
 
 Each of the tables has a column that contains ice cream flavors: `cones`
@@ -65,13 +67,14 @@ rated
 ```
 
 ``` output
-|Flavor|Price|Stars|
-|--- |--- |--- |
-|chocolate|6.55|3.5|
-|chocolate|5.75|3.5|
-|strawberry|3.55|2.5|
-|strawberry|5.25|2.5|
-|vanilla|4.75|4|
+| Flavor     | Price | Stars |
+|------------|-------|-------|
+| chocolate  | 6.55  | 3.5   |
+| chocolate  | 5.75  | 3.5   |
+| strawberry | 3.55  | 2.5   |
+| strawberry | 5.25  | 2.5   |
+| vanilla    | 4.75  | 4     |  
+
 ```
 
 Each cone now has not only its price but also the rating of its flavor.
@@ -91,13 +94,14 @@ rated.with_column('$/Star', rated.column('Price') / rated.column('Stars')).sort(
 ```
 
 ``` output
-|Flavor|Price|Stars|\$/Star|
-|--- |--- |--- |--- |
-|vanilla|4.75|4|1.1875|
-|strawberry|3.55|2.5|1.42|
-|chocolate|5.75|3.5|1.64286|
-|chocolate|6.55|3.5|1.87143|
-|strawberry|5.25|2.5|2.1|
+| Flavor     | Price | Stars | \$/Star |
+|------------|-------|-------|---------|
+| vanilla    | 4.75  | 4     | 1.1875  |
+| strawberry | 3.55  | 2.5   | 1.42    |
+| chocolate  | 5.75  | 3.5   | 1.64286 |
+| chocolate  | 6.55  | 3.5   | 1.87143 |
+| strawberry | 5.25  | 2.5   | 2.1     |  
+
 ```
 
 Though strawberry has the lowest rating among the three flavors, the
@@ -115,13 +119,14 @@ ratings.join('Kind', cones, 'Flavor')
 ```
 
 ``` output
-|Kind|Stars|Price|
-|--- |--- |--- |
-|chocolate|3.5|6.55|
-|chocolate|3.5|5.75|
-|strawberry|2.5|3.55|
-|strawberry|2.5|5.25|
-|vanilla|4|4.75|
+| Kind       | Stars | Price |
+|------------|-------|-------|
+| chocolate  | 3.5   | 6.55  |
+| chocolate  | 3.5   | 5.75  |
+| strawberry | 2.5   | 3.55  |
+| strawberry | 2.5   | 5.25  |
+| vanilla    | 4     | 4.75  |  
+
 ```
 
 Also note that the join will only contain information about items that
@@ -136,15 +141,20 @@ reviews = Table().with_columns(
 )
 reviews
 ```
+| Flavor    | Stars |
+|-----------|-------|
+| vanilla   | 5     |
+| chocolate | 3     |
+| vanilla   | 5     |
+| chocolate | 4     |  
 
 ``` output
-|Flavor|Stars|
-|--- |--- |
-|vanilla|5|
-|chocolate|3|
-|vanilla|5|
-|chocolate|4|  
-
+| Flavor    | Stars |
+|-----------|-------|
+| vanilla   | 5     |
+| chocolate | 3     |
+| vanilla   | 5     |
+| chocolate | 4     |  
 ```
 
 ``` python
@@ -153,10 +163,11 @@ average_review
 ```
 
 ``` output 
-|Flavor|Stars average|
-|--- |--- |
-|chocolate|3.5|
-|vanilla|5|  
+| Flavor    | Stars average |
+|-----------|---------------|
+| chocolate | 3.5           |
+| vanilla   | 5             |  
+
 ```
 
 We can join `cones` and `average_review` by providing the labels of the
@@ -167,11 +178,12 @@ cones.join('Flavor', average_review, 'Flavor')
 ```
 
 ``` output
-|Flavor|Price|Stars average|
-|--- |--- |--- |
-|chocolate|6.55|3.5|
-|chocolate|5.75|3.5|
-|vanilla|4.75|5|
+| Flavor    | Price | Stars average |
+|-----------|-------|---------------|
+| chocolate | 6.55  | 3.5           |
+| chocolate | 5.75  | 3.5           |
+| vanilla   | 4.75  | 5             |  
+
 ```
 
 Notice how the strawberry cones have disappeared. None of the reviews
@@ -183,11 +195,11 @@ depends on the analysis we are trying to perform with the joined table.
 
 Data 8X has opened up a candy store where we sell small bags of candies in groups of different amounts. Each bag contains candies of one color. Each row is a bag of candies. Our table "candy" is as follows
 
-|Color|Amount|Price ($)|
-|-|-|-|
-|Red|4|1.30|
-|Green|6|1.20|
-|Blue|12|2.00|
-|Red|7|1.75|
-|Green|9|1.40|
-|Green|2|1.00|
+| Color | Amount | Price ($) |
+|-------|--------|-----------|
+| Red   | 4      | 1.30      |
+| Green | 6      | 1.20      |
+| Blue  | 12     | 2.00      |
+| Red   | 7      | 1.75      |
+| Green | 9      | 1.40      |
+| Green | 2      | 1.00      |  

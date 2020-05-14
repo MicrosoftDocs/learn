@@ -207,18 +207,19 @@ nba
 ```
 
 ``` output
-|PLAYER|POSITION|TEAM|SALARY|
-|--- |--- |--- |--- |
-|Paul Millsap|PF|Atlanta Hawks|18.6717|
-|Al Horford|C|Atlanta Hawks|12|
-|Tiago Splitter|C|Atlanta Hawks|9.75625|
-|Jeff Teague|PG|Atlanta Hawks|8|
-|Kyle Korver|SG|Atlanta Hawks|5.74648|
-|Thabo Sefolosha|SF|Atlanta Hawks|4|
-|Mike Scott|PF|Atlanta Hawks|3.33333|
-|Kent Bazemore|SF|Atlanta Hawks|2|
-|Dennis Schroder|PG|Atlanta Hawks|1.7634|
-|Tim Hardaway Jr.|SG|Atlanta Hawks|1.30452|
+| PLAYER           | POSITION | TEAM          | SALARY  |
+|------------------|----------|---------------|---------|
+| Paul Millsap     | PF       | Atlanta Hawks | 18.6717 |
+| Al Horford       | C        | Atlanta Hawks | 12      |
+| Tiago Splitter   | C        | Atlanta Hawks | 9.75625 |
+| Jeff Teague      | PG       | Atlanta Hawks | 8       |
+| Kyle Korver      | SG       | Atlanta Hawks | 5.74648 |
+| Thabo Sefolosha  | SF       | Atlanta Hawks | 4       |
+| Mike Scott       | PF       | Atlanta Hawks | 3.33333 |
+| Kent Bazemore    | SF       | Atlanta Hawks | 2       |
+| Dennis Schroder  | PG       | Atlanta Hawks | 1.7634  |
+| Tim Hardaway Jr. | SG       | Atlanta Hawks | 1.30452 |  
+
 
 ... (407 rows omitted)
 ```
@@ -234,18 +235,19 @@ teams_and_money.group('TEAM', sum)
 ```
 
 ``` output
-|TEAM|SALARY sum|
-|--- |--- |
-|Atlanta Hawks|69.5731|
-|Boston Celtics|50.2855|
-|Brooklyn Nets|57.307|
-|Charlotte Hornets|84.1024|
-|Chicago Bulls|78.8209|
-|Cleveland Cavaliers|102.312|
-|Dallas Mavericks|65.7626|
-|Denver Nuggets|62.4294|
-|Detroit Pistons|42.2118|
-|Golden State Warriors|94.0851|
+| TEAM                  | SALARY sum |
+|-----------------------|------------|
+| Atlanta Hawks         | 69.5731    |
+| Boston Celtics        | 50.2855    |
+| Brooklyn Nets         | 57.307     |
+| Charlotte Hornets     | 84.1024    |
+| Chicago Bulls         | 78.8209    |
+| Cleveland Cavaliers   | 102.312    |
+| Dallas Mavericks      | 65.7626    |
+| Denver Nuggets        | 62.4294    |
+| Detroit Pistons       | 42.2118    |
+| Golden State Warriors | 94.0851    |  
+
 
 ... (20 rows omitted)
 ```
@@ -260,13 +262,14 @@ nba.group('POSITION')
 ```
 
 ``` output
-|POSITION|count|
-|--- |--- |
-|C|69|
-|PF|85|
-|PG|85|
-|SF|82|
-|SG|96|
+| POSITION | count |
+|----------|-------|
+| C        | 69    |
+| PF       | 85    |
+| PG       | 85    |
+| SF       | 82    |
+| SG       | 96    |  
+
 ```
 
 **3.** What was the average salary of the players at each of the five
@@ -282,13 +285,14 @@ positions_and_money.group('POSITION', np.mean)
 ```
 
 ``` output
-|POSITION|SALARY mean|
-|--- |--- |
-|C|6.08291|
-|PF|4.95134|
-|PG|5.16549|
-|SF|5.53267|
-|SG|3.9882|
+| POSITION | SALARY mean |
+|----------|-------------|
+| C        | 6.08291     |
+| PF       | 4.95134     |
+| PG       | 5.16549     |
+| SF       | 5.53267     |
+| SG       | 3.9882      |  
+
 ```
 
 Center was the most highly paid position, at an average of over 6
@@ -305,11 +309,12 @@ nba.group('POSITION', np.mean)
 ```
 
 ``` output
-|POSITION|PLAYER mean|TEAM mean|SALARY mean|
-|--- |--- |--- |--- |
-|C|||6.08291|
-|PF|||4.95134|
-|PG|||5.16549|
-|SF|||5.53267|
-|SG|||3.9882|
+| POSITION | PLAYER mean | TEAM mean | SALARY mean |
+|----------|-------------|-----------|-------------|
+| C        |             |           | 6.08291     |
+| PF       |             |           | 4.95134     |
+| PG       |             |           | 5.16549     |
+| SF       |             |           | 5.53267     |
+| SG       |             |           | 3.9882      |  
+
 ```

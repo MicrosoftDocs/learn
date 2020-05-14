@@ -86,7 +86,7 @@ def sign(x):
 sign(0)
 ```
 
-```
+``` output
     'Neither positive nor negative'
 ```
 

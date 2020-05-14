@@ -46,11 +46,12 @@ Table().with_columns('Number of petals', make_array(8, 34, 5))
 ```
 
 ``` output
-|Number of petals|
-|--- |
-|8|
-|34|
-|5|
+| Number of petals |
+|------------------|
+| 8                |
+| 34               |
+| 5                |  
+
 ```
 
 To add two (or more) new columns, provide the label and array for each
@@ -64,11 +65,12 @@ Table().with_columns(
 ```
 
 ``` output
-|Number of petals|Name|
-|--- |--- |
-|8|lotus|
-|34|sunflower|
-|5|rose|
+| Number of petals | Name      |
+|------------------|-----------|
+| 8                | lotus     |
+| 34               | sunflower |
+| 5                | rose      |  
+
 ```
 
 We can give this table a name, and then extend the table with another
@@ -86,11 +88,12 @@ flowers.with_columns(
 ```
 
 ``` output
-|Number of petals|Name|Color|
-|--- |--- |--- |
-|8|lotus|pink|
-|34|sunflower|yellow|
-|5|rose|red|
+| Number of petals | Name      | Color  |
+|------------------|-----------|--------|
+| 8                | lotus     | pink   |
+| 34               | sunflower | yellow |
+| 5                | rose      | red    |  
+
 ```
 
 The `with_columns` method creates a new table each time it is called, so
@@ -102,11 +105,12 @@ flowers
 ```
 
 ``` output
-|Number of petals|Name|
-|--- |--- |
-|8|lotus|
-|34|sunflower|
-|5|rose|
+| Number of petals | Name      |
+|------------------|-----------|
+| 8                | lotus     |
+| 34               | sunflower |
+| 5                | rose      |  
+
 ```
 
 Creating tables in this way involves a lot of typing. If the data have
@@ -126,16 +130,17 @@ minard
 ```
 
 ``` output
-|Longitude|Latitude|City|Direction|Survivors|
-|--- |--- |--- |--- |--- |
-|32|54.8|Smolensk|Advance|145000|
-|33.2|54.9|Dorogobouge|Advance|140000|
-|34.4|55.5|Chjat|Advance|127100|
-|37.6|55.8|Moscou|Advance|100000|
-|34.3|55.2|Wixma|Retreat|55000|
-|32|54.6|Smolensk|Retreat|24000|
-|30.4|54.4|Orscha|Retreat|20000|
-|26.8|54.3|Moiodexno|Retreat|12000|  
+| Longitude | Latitude | City        | Direction | Survivors |
+|-----------|----------|-------------|-----------|-----------|
+| 32        | 54.8     | Smolensk    | Advance   | 145000    |
+| 33.2      | 54.9     | Dorogobouge | Advance   | 140000    |
+| 34.4      | 55.5     | Chjat       | Advance   | 127100    |
+| 37.6      | 55.8     | Moscou      | Advance   | 100000    |
+| 34.3      | 55.2     | Wixma       | Retreat   | 55000     |
+| 32        | 54.6     | Smolensk    | Retreat   | 24000     |
+| 30.4      | 54.4     | Orscha      | Retreat   | 20000     |
+| 26.8      | 54.3     | Moiodexno   | Retreat   | 12000     |  
+
 ```
 
 We will use this small table to demonstrate some useful Table methods.
@@ -185,16 +190,16 @@ minard.relabeled('City', 'City Name')
 ```
 
 ``` output
-|Longitude|Latitude|City Name|Direction|Survivors|
-|--- |--- |--- |--- |--- |
-|32|54.8|Smolensk|Advance|145000|
-|33.2|54.9|Dorogobouge|Advance|140000|
-|34.4|55.5|Chjat|Advance|127100|
-|37.6|55.8|Moscou|Advance|100000|
-|34.3|55.2|Wixma|Retreat|55000|
-|32|54.6|Smolensk|Retreat|24000|
-|30.4|54.4|Orscha|Retreat|20000|
-|26.8|54.3|Moiodexno|Retreat|12000|  
+| Longitude | Latitude | City Name   | Direction | Survivors |
+|-----------|----------|-------------|-----------|-----------|
+| 32        | 54.8     | Smolensk    | Advance   | 145000    |
+| 33.2      | 54.9     | Dorogobouge | Advance   | 140000    |
+| 34.4      | 55.5     | Chjat       | Advance   | 127100    |
+| 37.6      | 55.8     | Moscou      | Advance   | 100000    |
+| 34.3      | 55.2     | Wixma       | Retreat   | 55000     |
+| 32        | 54.6     | Smolensk    | Retreat   | 24000     |
+| 30.4      | 54.4     | Orscha      | Retreat   | 20000     |
+| 26.8      | 54.3     | Moiodexno   | Retreat   | 12000     |  
 
 ```
 
@@ -205,16 +210,17 @@ minard
 ```
 
 ``` output
-|Longitude|Latitude|City|Direction|Survivors|
-|--- |--- |--- |--- |--- |
-|32|54.8|Smolensk|Advance|145000|
-|33.2|54.9|Dorogobouge|Advance|140000|
-|34.4|55.5|Chjat|Advance|127100|
-|37.6|55.8|Moscou|Advance|100000|
-|34.3|55.2|Wixma|Retreat|55000|
-|32|54.6|Smolensk|Retreat|24000|
-|30.4|54.4|Orscha|Retreat|20000|
-|26.8|54.3|Moiodexno|Retreat|12000|  
+| Longitude | Latitude | City        | Direction | Survivors |
+|-----------|----------|-------------|-----------|-----------|
+| 32        | 54.8     | Smolensk    | Advance   | 145000    |
+| 33.2      | 54.9     | Dorogobouge | Advance   | 140000    |
+| 34.4      | 55.5     | Chjat       | Advance   | 127100    |
+| 37.6      | 55.8     | Moscou      | Advance   | 100000    |
+| 34.3      | 55.2     | Wixma       | Retreat   | 55000     |
+| 32        | 54.6     | Smolensk    | Retreat   | 24000     |
+| 30.4      | 54.4     | Orscha      | Retreat   | 20000     |
+| 26.8      | 54.3     | Moiodexno   | Retreat   | 12000     |  
+
 
 ```
 
@@ -228,16 +234,16 @@ minard
 ```
 
 ``` outpput
-|Longitude|Latitude|City Name|Direction|Survivors|
-|--- |--- |--- |--- |--- |
-|32|54.8|Smolensk|Advance|145000|
-|33.2|54.9|Dorogobouge|Advance|140000|
-|34.4|55.5|Chjat|Advance|127100|
-|37.6|55.8|Moscou|Advance|100000|
-|34.3|55.2|Wixma|Retreat|55000|
-|32|54.6|Smolensk|Retreat|24000|
-|30.4|54.4|Orscha|Retreat|20000|
-|26.8|54.3|Moiodexno|Retreat|12000|  
+| Longitude | Latitude | City Name   | Direction | Survivors |
+|-----------|----------|-------------|-----------|-----------|
+| 32        | 54.8     | Smolensk    | Advance   | 145000    |
+| 33.2      | 54.9     | Dorogobouge | Advance   | 140000    |
+| 34.4      | 55.5     | Chjat       | Advance   | 127100    |
+| 37.6      | 55.8     | Moscou      | Advance   | 100000    |
+| 34.3      | 55.2     | Wixma       | Retreat   | 55000     |
+| 32        | 54.6     | Smolensk    | Retreat   | 24000     |
+| 30.4      | 54.4     | Orscha      | Retreat   | 20000     |
+| 26.8      | 54.3     | Moiodexno   | Retreat   | 12000     |  
 
 ```
 
@@ -299,16 +305,17 @@ minard
 ```
 
 ``` output
-|Longitude|Latitude|City Name|Direction|Survivors|Percent Surviving|
-|--- |--- |--- |--- |--- |--- |
-|32|54.8|Smolensk|Advance|145000|1|
-|33.2|54.9|Dorogobouge|Advance|140000|0.965517|
-|34.4|55.5|Chjat|Advance|127100|0.876552|
-|37.6|55.8|Moscou|Advance|100000|0.689655|
-|34.3|55.2|Wixma|Retreat|55000|0.37931|
-|32|54.6|Smolensk|Retreat|24000|0.165517|
-|30.4|54.4|Orscha|Retreat|20000|0.137931|
-|26.8|54.3|Moiodexno|Retreat|12000|0.0827586|  
+| Longitude | Latitude | City Name   | Direction | Survivors | Percent Surviving |
+|-----------|----------|-------------|-----------|-----------|-------------------|
+| 32        | 54.8     | Smolensk    | Advance   | 145000    | 1                 |
+| 33.2      | 54.9     | Dorogobouge | Advance   | 140000    | 0.965517          |
+| 34.4      | 55.5     | Chjat       | Advance   | 127100    | 0.876552          |
+| 37.6      | 55.8     | Moscou      | Advance   | 100000    | 0.689655          |
+| 34.3      | 55.2     | Wixma       | Retreat   | 55000     | 0.37931           |
+| 32        | 54.6     | Smolensk    | Retreat   | 24000     | 0.165517          |
+| 30.4      | 54.4     | Orscha      | Retreat   | 20000     | 0.137931          |
+| 26.8      | 54.3     | Moiodexno   | Retreat   | 12000     | 0.0827586         |  
+
 ```
 
 To make the proportions in the new columns appear as percents, we can
@@ -322,16 +329,17 @@ minard.set_format('Percent Surviving', PercentFormatter)
 ```
 
 ``` output
-|Longitude|Latitude|City Name|Direction|Survivors|Percent Surviving|
-|--- |--- |--- |--- |--- |--- |
-|32|54.8|Smolensk|Advance|145000|100.00%|
-|33.2|54.9|Dorogobouge|Advance|140000|96.55%|
-|34.4|55.5|Chjat|Advance|127100|87.66%|
-|37.6|55.8|Moscou|Advance|100000|68.97%|
-|34.3|55.2|Wixma|Retreat|55000|37.93%|
-|32|54.6|Smolensk|Retreat|24000|16.55%|
-|30.4|54.4|Orscha|Retreat|20000|13.79%|
-|26.8|54.3|Moiodexno|Retreat|12000|8.28%|  
+| Longitude | Latitude | City Name   | Direction | Survivors | Percent Surviving |
+|-----------|----------|-------------|-----------|-----------|-------------------|
+| 32        | 54.8     | Smolensk    | Advance   | 145000    | 100.00%           |
+| 33.2      | 54.9     | Dorogobouge | Advance   | 140000    | 96.55%            |
+| 34.4      | 55.5     | Chjat       | Advance   | 127100    | 87.66%            |
+| 37.6      | 55.8     | Moscou      | Advance   | 100000    | 68.97%            |
+| 34.3      | 55.2     | Wixma       | Retreat   | 55000     | 37.93%            |
+| 32        | 54.6     | Smolensk    | Retreat   | 24000     | 16.55%            |
+| 30.4      | 54.4     | Orscha      | Retreat   | 20000     | 13.79%            |
+| 26.8      | 54.3     | Moiodexno   | Retreat   | 12000     | 8.28%             |  
+
 ```
 
 ### Choosing Sets of Columns
@@ -344,16 +352,17 @@ minard.select('Longitude', 'Latitude')
 ```
 
 ``` output
-|Longitude|Latitude|
-|--- |--- |
-|32|54.8|
-|33.2|54.9|
-|34.4|55.5|
-|37.6|55.8|
-|34.3|55.2|
-|32|54.6|
-|30.4|54.4|
-|26.8|54.3|  
+| Longitude | Latitude |
+|-----------|----------|
+| 32        | 54.8     |
+| 33.2      | 54.9     |
+| 34.4      | 55.5     |
+| 37.6      | 55.8     |
+| 34.3      | 55.2     |
+| 32        | 54.6     |
+| 30.4      | 54.4     |
+| 26.8      | 54.3     |  
+
 ```
 
 The same selection can be made using column indices instead of labels.
@@ -363,16 +372,17 @@ minard.select(0, 1)
 ```
 
 ``` output
-|Longitude|Latitude|
-|--- |--- |
-|32|54.8|
-|33.2|54.9|
-|34.4|55.5|
-|37.6|55.8|
-|34.3|55.2|
-|32|54.6|
-|30.4|54.4|
-|26.8|54.3|
+| Longitude | Latitude |
+|-----------|----------|
+| 32        | 54.8     |
+| 33.2      | 54.9     |
+| 34.4      | 55.5     |
+| 37.6      | 55.8     |
+| 34.3      | 55.2     |
+| 32        | 54.6     |
+| 30.4      | 54.4     |
+| 26.8      | 54.3     |  
+
 
 ```
 
@@ -384,16 +394,17 @@ minard.select('Survivors')
 ```
 
 ``` output
-|Survivors|
-|--- |
-|145000|
-|140000|
-|127100|
-|100000|
-|55000|
-|24000|
-|20000|
-|12000|  
+| Survivors |
+|-----------|
+| 145000    |
+| 140000    |
+| 127100    |
+| 100000    |
+| 55000     |
+| 24000     |
+| 20000     |
+| 12000     |  
+
 ```
 
 Notice that the result is a table, unlike the result of `column`, which
@@ -415,16 +426,17 @@ minard.drop('Longitude', 'Latitude', 'Direction')
 ```
 
 ``` output
-|City Name|Survivors|Percent Surviving|
-|--- |--- |--- |
-|Smolensk|145000|100.00%|
-|Dorogobouge|140000|96.55%|
-|Chjat|127100|87.66%|
-|Moscou|100000|68.97%|
-|Wixma|55000|37.93%|
-|Smolensk|24000|16.55%|
-|Orscha|20000|13.79%|
-|Moiodexno|12000|8.28%|  
+| City Name   | Survivors | Percent Surviving |
+|-------------|-----------|-------------------|
+| Smolensk    | 145000    | 100.00%           |
+| Dorogobouge | 140000    | 96.55%            |
+| Chjat       | 127100    | 87.66%            |
+| Moscou      | 100000    | 68.97%            |
+| Wixma       | 55000     | 37.93%            |
+| Smolensk    | 24000     | 16.55%            |
+| Orscha      | 20000     | 13.79%            |
+| Moiodexno   | 12000     | 8.28%             |  
+
 ```
 
 Neither `select` nor `drop` change the original table. Instead, they
@@ -438,16 +450,17 @@ minard
 ```
 
 ``` output
-|Longitude|Latitude|City Name|Direction|Survivors|Percent Surviving|
-|--- |--- |--- |--- |--- |--- |
-|32|54.8|Smolensk|Advance|145000|100.00%|
-|33.2|54.9|Dorogobouge|Advance|140000|96.55%|
-|34.4|55.5|Chjat|Advance|127100|87.66%|
-|37.6|55.8|Moscou|Advance|100000|68.97%|
-|34.3|55.2|Wixma|Retreat|55000|37.93%|
-|32|54.6|Smolensk|Retreat|24000|16.55%|
-|30.4|54.4|Orscha|Retreat|20000|13.79%|
-|26.8|54.3|Moiodexno|Retreat|12000|8.28%|  
+| Longitude | Latitude | City Name   | Direction | Survivors | Percent Surviving |
+|-----------|----------|-------------|-----------|-----------|-------------------|
+| 32        | 54.8     | Smolensk    | Advance   | 145000    | 100.00%           |
+| 33.2      | 54.9     | Dorogobouge | Advance   | 140000    | 96.55%            |
+| 34.4      | 55.5     | Chjat       | Advance   | 127100    | 87.66%            |
+| 37.6      | 55.8     | Moscou      | Advance   | 100000    | 68.97%            |
+| 34.3      | 55.2     | Wixma       | Retreat   | 55000     | 37.93%            |
+| 32        | 54.6     | Smolensk    | Retreat   | 24000     | 16.55%            |
+| 30.4      | 54.4     | Orscha      | Retreat   | 20000     | 13.79%            |
+| 26.8      | 54.3     | Moiodexno   | Retreat   | 12000     | 8.28%             |  
+
 ```
 
 All of the methods that we have used above can be applied to any table.
