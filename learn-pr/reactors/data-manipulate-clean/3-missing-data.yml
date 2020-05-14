@@ -3,7 +3,7 @@ uid: learn.reactors.data-manipulate-clean.3-missing-data
 title: Work with missing data
 metadata:
   title: Work with missing data
-  description: Work with missing data in a pandas DataFrame.
+  description: Work with missing data in a pandas `DataFrame`.
   ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals

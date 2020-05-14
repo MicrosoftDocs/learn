@@ -12,11 +12,11 @@ title: Manipulate and clean data in Python
 summary: How to use Python, and popular libraries like NumPy and pandas, to manipulate and clean data to prepare it for analysis.
 abstract:  | 
   In this module, you will:
-  - Learn how to find general information about the data that's stored in a pandas DataFrame
-  - Get a general knowledge of the ways you can combine DataFrames
-  - Learn how to identify and remove duplicate values from a DataFrame
-  - Learn how to replace or remove null values in a DataFrame
-  - Learn ways to visually explore the data that's stored in a pandas DataFrame
+  - Learn how to find general information about the data that's stored in a pandas `DataFrame`
+  - Get a general knowledge of the ways you can combine `DataFrames`
+  - Learn how to identify and remove duplicate values from a `DataFrame`
+  - Learn how to replace or remove null values in a `DataFrame`
+  - Learn ways to visually explore the data that's stored in a pandas `DataFrame`
 
   This module is complementary content for Microsoft Reactor Workshops.
 prerequisites: |

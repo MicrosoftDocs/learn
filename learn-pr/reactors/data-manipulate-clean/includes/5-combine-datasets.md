@@ -14,7 +14,7 @@ Let's examine merging data first, because it will be the most familiar to those 
 
 Consider combining two `DataFrames` that contain different information about the same employees in a company.
 
-We can group an example of four employees by the department they work in:
+You can group an example of four employees by the department they work in:
 
 ```python
 df1 = pd.DataFrame({'employee': ['Gary', 'Stu', 'Mary', 'Sue'],

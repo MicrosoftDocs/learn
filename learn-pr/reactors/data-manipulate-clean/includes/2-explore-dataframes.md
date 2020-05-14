@@ -14,7 +14,7 @@ iris_df = pd.DataFrame(data=iris['data'], columns=iris['feature_names'])
 
 ## `DataFrame.info`
 
-To take a look at this dataset to see what we have, run:
+To take a look at this dataset to see what you have, run:
 
 ```python
 iris_df.info()
@@ -34,7 +34,7 @@ dtypes: float64(4)
 memory usage: 4.8 KB
 ```
 
-From the output, we know that the Iris dataset has 150 entries in four columns. All the data is stored as 64-bit floating-point numbers.
+From the output, you know that the Iris dataset has 150 entries in four columns. All the data is stored as 64-bit floating-point numbers.
 
 ## `DataFrame.head`
 

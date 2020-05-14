@@ -45,7 +45,7 @@ Here's the output:
 
 The dataset has 506 rows and 13 columns.
 
-To get a better idea of the contents of each column, we can use `DataFrame.describe`. `DataFrame.describe` returns the maximum value, minimum value, mean, and standard deviation of numeric values in each column, and the quartiles for each column.
+To get a better idea of the contents of each column, you can use `DataFrame.describe`. `DataFrame.describe` returns the maximum value, minimum value, mean, and standard deviation of numeric values in each column, and the quartiles for each column.
 
 ```python
 df.describe()

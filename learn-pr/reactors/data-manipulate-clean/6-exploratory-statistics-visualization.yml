@@ -3,7 +3,7 @@ uid: learn.reactors.data-manipulate-clean.6-exploratory-statistics-visualization
 title: Exploratory statistics and visualization
 metadata:
   title: Exploratory statistics and visualization
-  description: Exploratory statistics and visualization by using a pandas DataFrame.
+  description: Exploratory statistics and visualization by using a pandas `DataFrame`.
   ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals

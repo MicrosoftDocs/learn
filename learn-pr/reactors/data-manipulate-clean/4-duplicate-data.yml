@@ -3,7 +3,7 @@ uid: learn.reactors.data-manipulate-clean.4-duplicate-data
 title: Remove duplicate data
 metadata:
   title: Remove duplicate data
-  description: Remove duplicate data in a pandas DataFrame.
+  description: Remove duplicate data in a pandas `DataFrame`.
   ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals

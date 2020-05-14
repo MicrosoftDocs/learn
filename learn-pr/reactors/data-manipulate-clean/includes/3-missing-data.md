@@ -196,7 +196,7 @@ This output is returned:
 dtype: bool
 ```
 
-Look closely at the output. Does any of it surprise you? Although 0 is an arithmetic null, it's nevertheless a perfectly good integer, and pandas treats it as such. `''` is a little more subtle. Although we used it earlier to represent an empty string value, it's nevertheless a string object and not a representation of null, as far as pandas is concerned.
+Look closely at the output. Does any of it surprise you? Although 0 is an arithmetic null, it's nevertheless a perfectly good integer, and pandas treats it as such. `''` is a little more subtle. Although you used it earlier to represent an empty string value, it's nevertheless a string object and not a representation of null, as far as pandas is concerned.
 
 Now, let's turn this around and use these methods in a manner more like you will use them in practice. You can use Boolean masks directly as a `Series` or `DataFrame` index, which can be useful when trying to work with isolated missing (or present) values.
 
