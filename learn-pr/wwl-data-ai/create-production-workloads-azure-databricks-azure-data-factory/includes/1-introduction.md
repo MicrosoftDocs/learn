@@ -2,8 +2,6 @@ Imagine you're part of an analytics team that needs to build a new data pipeline
 
 Your supervisor requested that you investigate the ability to execute Azure Databricks jobs from Azure Data Factory, passing in parameters used for data processing, and returning parameters used to continue the pipeline processing.
 
-[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
-
 ## Learning objectives 
 
 In this module, you'll:
