@@ -11,6 +11,6 @@ metadata:
 title: Exercise - Deploy an application on your AKS cluster
 durationInMinutes: 10
 interactive: bash
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/5-exercise-deploy-app.md)]

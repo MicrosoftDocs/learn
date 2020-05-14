@@ -11,6 +11,6 @@ metadata:
 title: Exercise - Create an Azure Kubernetes Service cluster
 durationInMinutes: 10
 interactive: bash
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/3-exercise-create-aks-cluster.md)]

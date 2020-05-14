@@ -11,6 +11,6 @@ metadata:
 title: Exercise - Enable network access to an application
 durationInMinutes: 10
 interactive: bash
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/7-exercise-expose-app.md)]
