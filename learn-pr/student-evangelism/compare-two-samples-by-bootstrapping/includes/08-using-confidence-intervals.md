@@ -1,4 +1,4 @@
-A confidence interval has a single purpose -- to estimate an unknown
+A confidence interval has a single purpose--to estimate an unknown
 parameter based on data in a random sample. In the last section, we said
 that the interval (36%, 42%) was an approximate 95% confidence interval
 for the percent of smokers among mothers in the population. That was a
@@ -12,7 +12,7 @@ other purposes. For example, recall that we calculated the interval
 the average age of mothers in the population. A dismayingly common
 misuse of the interval is to conclude that about 95% of the women were
 between 26.9 years and 27.6 years old. You don't need to know much about
-confidence intervals to see that this can't be right -- you wouldn't
+confidence intervals to see that this can't be right--you wouldn't
 expect 95% of mothers to all be within a few months of each other in
 age. Indeed, the histogram of the sampled ages shows quite a bit of
 variation.
@@ -33,7 +33,7 @@ interval just estimates one number: the *average* of all the ages in the
 population.
 
 However, estimating a parameter by confidence intervals does have an
-important use besides just telling us roughly how big the parameter is.
+important use besides just telling us roughly how significant the parameter is.
 
 ### Using a confidence interval to test hypotheses
 
@@ -46,7 +46,7 @@ test the following hypotheses:
 **Alternative hypothesis.** The average age in the population is not 30
 years.
 
-Then, if you were using the 5% cutoff for the P-value, you would reject
+Then, if you are using the 5% cutoff for the P-value, you would reject
 the null hypothesis. This is because 30 is not in the 95% confidence
 interval for the population average. At the 5% level of significance, 30
 is not a plausible value for the population average.
@@ -61,7 +61,7 @@ This can be established by statistical theory. In practice, it just
 boils down to checking whether or not the value specified in the null
 hypothesis lies in the confidence interval.
 
-If you were using the 1% cutoff for the P-value, you would have to check
+If you are using the 1% cutoff for the P-value, you would have to check
 if the value specified in the null hypothesis lies in a 99% confidence
 interval for the population mean.
 
@@ -212,11 +212,11 @@ from about 17 to about 40. The interval doesn't contain 0. So we reject
 the null hypothesis.
 
 But notice that we have done better than simply concluding that the
-average drop in the population isn't 0. We have estimated how big the
+average drop in the population isn't 0. We have estimated how significant the
 average drop is. That's a more useful result than just saying, "It's not
 0."
 
-**A note on accuracy.** Our confidence interval is quite wide, for two
+**A note on accuracy.** Our confidence interval is wide, for two
 main reasons: - The confidence level is high (99%). - The sample size is
 relatively small compared to those in our earlier examples.
 

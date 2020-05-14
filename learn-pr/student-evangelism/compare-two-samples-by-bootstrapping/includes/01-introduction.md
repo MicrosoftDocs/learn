@@ -1,7 +1,7 @@
 > [!NOTE] 
 > You can find an interactive version of this unit named **introduction-to-bootstrapping.ipynb** in your virtual environment
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", refer to the first unit **Setup**
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 

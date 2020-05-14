@@ -1,21 +1,20 @@
 A data scientist is using the data in a random sample to estimate an
-unknown parameter. She uses the sample to calculate the value of a
-statistic that she will use as her estimate.
+unknown parameter. The data scientist uses the sample to calculate the value of a
+statistic that the data scientist will use as her estimate.
 
-Once she has calculated the observed value of her statistic, she could
-just present it as her estimate and go on her merry way. But she's a
-data scientist. She knows that her random sample is just one of numerous
-possible random samples, and thus her estimate is just one of numerous
+Once the data scientist has calculated the observed value of the statistic, the data scientist could
+just present it as the estimate and go on their merry way. The data scientist knows that the random sample is just one of numerous
+possible random samples, and thus the estimate is just one of numerous
 plausible estimates.
 
 By how much could those estimates vary? To answer this, it appears as
-though she needs to draw another sample from the population, and compute
-a new estimate based on the new sample. But she doesn't have the
+though the data scientist needs to draw another sample from the population, and compute
+a new estimate based on the new sample. But the data scientist doesn't have the
 resources to go back to the population and draw another sample.
 
 It looks as though the data scientist is stuck.
 
-Fortunately, a brilliant idea called *the bootstrap* can help her out.
+Fortunately, a brilliant idea called *the bootstrap* can help them out.
 Since it is not feasible to generate new samples from the population,
 the bootstrap generates new random samples by a method called
 *resampling*: the new samples are drawn at random *from the original
@@ -26,7 +25,7 @@ rest of the chapter, we will use the bootstrap for inference.
 
 ### Employee compensation in the city of San Francisco
 
-[SF OpenData](https://data.sfgov.org) is a website where the City and
+[San Francisco OpenData](https://data.sfgov.org) is a website where the City and
 County of San Francisco make some of their data publicly available. One
 of the data sets contains compensation data for employees of the City.
 These include medical professionals at City-run hospitals, police
@@ -109,8 +108,8 @@ sf2015.sort('Total Compensation')
 
 For clarity of comparison, we will focus our attention on those who had
 at least the equivalent of a half-time job for the whole year. At a
-minimum wage of about \$ 10per hour, and 20 hours per week for 52 weeks,
-that's a salary of about \$10,000.
+minimum wage of about $10 per hour, and 20 hours per week for 52 weeks,
+that's a salary of about $10,000.
 
 ``` python
 sf2015 = sf2015.where('Salaries', are.above(10000))
@@ -157,7 +156,7 @@ sf2015.sort('Total Compensation', descending=True).show(2)
 Now let the parameter be the median of the total compensations.
 
 Since we have the luxury of having all of the data from the population,
-we can simply calculate the parameter:
+we can calculate the parameter:
 
 ``` python
 pop_median = percentile(50, sf2015.column('Total Compensation'))
@@ -202,7 +201,7 @@ est_median
 
 The sample size is large. By the law of averages, the distribution of
 the sample resembles that of the population, and consequently the sample
-median is not very far from the population median (though of course it
+median is not far from the population median (though of course it
 is not exactly the same).
 
 So now we have one estimate of the parameter. But had the sample come
@@ -234,7 +233,7 @@ random sample that resembles the population:
 -   **Draw from the sample**, at random **with** replacement, **the same
     number of times as the original sample size**.
 
-It is important to re-sample the same number of times as the original
+It is important to resample the same number of times as the original
 sample size. The reason is that the variability of an estimate depends
 on the size of the sample. Since our original sample consisted of 500
 employees, our sample median was based on 500 values. To see how
@@ -249,8 +248,8 @@ than once and others not at all.
 
 Why is this a good idea? By the law of averages, the distribution of the
 original sample is likely to resemble the population, and the
-distributions of all the "re-samples" are likely to resemble the original
-sample. So the distributions of all the re-samples are likely to resemble
+distributions of all the "resamples" are likely to resemble the original
+sample. So the distributions of all the resamples are likely to resemble
 the population as well.
 
 ``` python

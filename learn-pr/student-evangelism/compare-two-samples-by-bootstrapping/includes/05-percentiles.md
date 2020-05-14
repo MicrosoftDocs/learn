@@ -30,8 +30,7 @@ Before giving a general definition of all percentiles, we will define
 the 80th percentile of a collection of values to be the smallest value
 in the collection that is at least as large as 80% of all of the values.
 
-For example, let's consider the sizes of the five largest continents --
-Africa, Antarctica, Asia, North America, and South America -- rounded to
+For example, let's consider the sizes of the five largest continents--Africa, Antarctica, Asia, North America, and South America--rounded to
 the nearest million square miles.
 
 ``` python

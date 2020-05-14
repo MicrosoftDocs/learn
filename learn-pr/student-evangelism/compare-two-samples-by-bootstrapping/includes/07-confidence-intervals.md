@@ -140,7 +140,7 @@ ratios.sort('Ratio BW/GD', descending=True).take(0)
 ```
 
 The median gives a sense of the typical ratio because it is unaffected
-by the large or very small ratios. The median ratio in the sample
+by the large or small ratios. The median ratio in the sample
 is about 0.429 ounce per day.
 
 ``` python
@@ -224,7 +224,7 @@ plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ![Confidence Intervals](../media/66-confidence-intervals-19-1.png)
 
 This histogram and interval resembles those we drew in the previous
-section, with one big difference--there is no red dot showing where
+section, with one significant difference--there is no red dot showing where
 the parameter is. We don't know where that dot should be, or whether it
 is even in the interval.
 
@@ -241,7 +241,7 @@ approximation is not bad, but it is not exact.
 What we have done for medians can be done for means as well. Suppose we
 want to estimate the average age of the mothers in the population. A
 natural estimate is the average age of the mothers in the sample. Here
-is the distribution of their ages, and their average age which was about
+is the distribution of their ages, and their average age, which was about
 27.2 years.
 
 ``` python
@@ -306,7 +306,7 @@ years. That is, we are estimating that the average age of the mothers in
 the population is somewhere in the interval 26.9 years to 27.6 years.
 
 Notice how close the two ends are to the average of about 27.2 years in
-the original sample. The sample size is very large--1,174 mothers--and so the sample averages don't vary much. We will explore this
+the original sample. The sample size is large--1,174 mothers--and so the sample averages don't vary much. We will explore this
 observation further in the next chapter.
 
 The empirical histogram of the 5,000 bootstrapped means is shown below,
@@ -404,7 +404,7 @@ np.count_nonzero(smoking)/len(smoking)
 ```
 
 What percent of mothers in the population smoked during pregnancy? This
-is an unknown parameter which we can estimate by a bootstrap confidence
+is an unknown parameter, which we can estimate by a bootstrap confidence
 interval. The steps in the process are analogous to those we took to
 estimate the population mean and median.
 
@@ -498,6 +498,6 @@ important to keep some points in mind.
         that are greatly influenced by rare elements of the population.
     -   The probability distribution of the statistic is not roughly
         bell shaped.
-    -   The original sample is very small, say less than 10 or 15.
+    -   The original sample is small, say less than 10 or 15.
 e probability distribution of the statistic is not roughly
         bell shaped.

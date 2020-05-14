@@ -31,7 +31,7 @@ cause disease in humans, but it is also used in medicine to treat
 various diseases involving the muscles. The RCT analyzed by Foster,
 Clapp, and Jabbari in 2001 examined it as a treatment for low back pain.
 
-Thirty one patients with low-back pain were randomized into treatment
+Thirty-one patients with low-back pain were randomized into treatment
 and control groups, with 15 in the treatment group and 16 in control.
 The control group was given normal saline, and the trials were run
 double-blind so that neither doctors nor patients knew which group they
