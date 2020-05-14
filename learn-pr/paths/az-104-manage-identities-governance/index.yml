@@ -1,17 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.az-104-manage-identities-governance
 metadata:
-  title: AZ-104 Manage Azure identities and governance
-  description: Learn how to manage identities and governance  in Azure and prepare for Exam AZ-104 Microsoft Azure Administrator. 
+  title: AZ-104 Manage identities and governance in Azure
+  description: Learn how to manage identities and governance in Azure and prepare for Exam AZ-104 Microsoft Azure Administrator. 
   brand: azure
   ms.date: 05/14/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: AZ-104 Manage Azure identities and governance
+title: AZ-104 Manage identities and governance in Azure
 summary: |
-  Learn how to manage users, groups, subscriptions, role-based access controls, and governance in Azure. This learning path helps prepare you for [Exam AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/exams/az-104). 
+  Learn how to manage manage Azure Active Directory objects, role-based access control (RBAC), subscriptions, and governance in Azure. This learning path helps prepare you for [Exam AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/exams/az-104). 
 prerequisites: None
 iconUrl: /learn/achievements/az-104-manage-identities-governance.svg
 levels:
