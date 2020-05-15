@@ -17,14 +17,14 @@ Now you can test your deployed service from a client application - in this case,
     - The REST endpoint for your service
     - The Primary Key for your service
 3. Observe that you can use the &#10697; link next to these values to copy them to the clipboard.
-4. With the **Consume** page for the **predict-auto-price** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com). Then in the new tab, view the **Notebooks** page.
+4. With the **Consume** page for the **predict-auto-price** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page.
 5. On the **Notebooks** page, create a new file with the following settings:
     - **File name**: auto_test.ipynb
     - **File type**: Python Notebooks
     - **Overwrite if already exists**: Selected
     - **Select target directory**: *Select the folder with your user name under **User files***
 6. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
-7. If the notebook is not editable, in the **Edit** menu,  select **Edit inline**. Then in the **[ ]** cell that is created in the notebook, paste the following code:
+7. If the notebook is not editable, in the **Edit** menu,  select **Edit inline**. Then in the cell that is created in the notebook, paste the following code:
 
     ```Python
     endpoint = 'YOUR_ENDPOINT' #Replace with your endpoint
@@ -95,5 +95,5 @@ Now you can test your deployed service from a client application - in this case,
 
 8. Switch to the browser tab containing the **Consume** page for the **predict-auto-price** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
 9. Switch to the browser tab containing the **Consume** page for the **predict-auto-price** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
-10. Save the notebook, Then select **&#9655; Run All** to run the code (depending on the width of your screen, you may need to open the **...** menu to see this).
+10. Save the notebook, Then use the **&#9655;** button next to the cell to run the code.
 11. Verify that predicted price is returned.

@@ -5,7 +5,7 @@ metadata:
   description: Implement CI/CD pipeline for Node.js applications.
   ms.date: 04/24/2020
   author: tpetchel
-  ms.author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Node.js deployments with Azure Pipelines

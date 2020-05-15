@@ -13,7 +13,7 @@ In this exercise, you will:
 
 :::image type="content" source="../media/04-arch-1.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-## Add the Helm stable repository
+## Add the Helm bitnami repository
 
 Helm is an application package manager for Kubernetes. It offers a way to easily deploy applications and services using charts. 
 
