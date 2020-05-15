@@ -1,13 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
-
 We have seen several examples of assessing models that involve chance,
 by comparing observed data to the predictions made by the models. In all
 of our examples, there has been no doubt about whether the data were
@@ -94,13 +84,15 @@ of the distance will make you lean towards the alternative.
 The **observed value of the test statistic** is the value of the
 statistic you get from the data in the study, not a simulated value.
 Among Mendel's 929 plants, 705 had purple flowers. The observed value of
-the test statistic was therefore
+the test statistic was therefore:
 
 ``` python
 abs ( 100 * (705 / 929) - 75)
 ```
 
+``` output
     0.8880516684607045
+```
 
 ### Step 3: The distribution of the test statistic, under the null hypothesis
 
@@ -142,7 +134,7 @@ composition.
 If the data do not support the null hypothesis, we say that the test
 *rejects* the null hypothesis.
 
-### The meaning of "Consistent"
+### The meaning of "consistent"
 
 In the example about Alameda County juries, it was apparent that our
 observed test statistic was far from what was predicted by the null
@@ -199,6 +191,7 @@ scores = Table.read_table(path_data + 'scores_by_section.csv')
 scores
 ```
 
+``` output
 | Section | Midterm |
 |---------|---------|
 | 1       | 22      |
@@ -210,7 +203,9 @@ scores
 | 4       | 19      |
 | 1       | 24      |
 | 5       | 8       |
-| 6       | 14      |
+| 6       | 14      |  
+
+```
 
 To find the average score in each section, we will use `group`.
 
@@ -219,6 +214,7 @@ section_averages = scores.group('Section', np.average)
 section_averages.show()
 ```
 
+``` output
 | Section | Midterm average |
 |---------|-----------------|
 | 1       | 15.5938         |
@@ -234,6 +230,7 @@ section_averages.show()
 | 11      | 15.8077         |
 | 12      | 15.7333         |
 
+```
 
 The average score of Section 3 is 13.667, which does look low compared
 to the other section averages. But is it lower than the average of a
@@ -247,6 +244,7 @@ large Section 3 is, which we can by once again using `group`.
 scores.group('Section')
 ```
 
+``` output
 | Section | count |
 |---------|-------|
 | 1       | 32    |
@@ -259,6 +257,8 @@ scores.group('Section')
 | 8       | 29    |
 | 9       | 30    |
 | 10      | 34    |
+
+```
 
 Section 3 had 27 students.
 
@@ -281,6 +281,7 @@ random_sample = scores_only.sample(27, with_replacement=False)
 random_sample
 ```
 
+``` output
 | Midterm |
 |---------|
 | 20      |
@@ -294,19 +295,23 @@ random_sample
 | 16      |
 | 15      |
 
-The average of these 27 randomly selected scores is
+```
+
+The average of these 27 randomly selected scores is:
 
 ``` python
 np.average(random_sample.column('Midterm'))
 ```
 
+``` output
 16.814814814814813
+```
 
 That's the average of 27 randomly selected scores. The cell below
 collects the code necessary for generating this random average.
 
 Now we can simulate the random sample average by repeating the
-calculation multple times.
+calculation multiple times.
 
 ``` python
 def random_sample_average():
@@ -374,7 +379,9 @@ the average score of Section 3.
 np.count_nonzero(sample_averages <= observed_statistic) / repetitions
 ```
 
+``` output
 0.0564
+```
 
 About 5.7% of the simulated random sample averages were 13.667 or below.
 If we had drawn the students of Section 3 at random from the whole
@@ -388,7 +395,7 @@ commonly called the *P-value* of the test.
 **Definition:** The P-value of a test is the chance, based on the model
 in the null hypothesis, that the test statistic will be equal to the
 observed value in the sample or even further in the direction that
-supports the alternative.\*\*
+supports the alternative.
 
 If a P-value is small, that means the tail beyond the observed statistic
 is small and so the observed statistic is far away from what the null
@@ -435,8 +442,7 @@ made the point that the value was his personal choice from among many:
 in an article in 1926, he wrote, "If one in twenty does not seem high
 enough odds, we may, if we prefer it draw the line at one in fifty (the
 2 percent point), or one in a hundred (the 1 percent point). Personally,
-the author prefers to set a low standard of significance at the 5
-percent point ..."
+the author prefers to set a low standard of significance at the 5 percent point."
 
 Fisher knew that "low" is a matter of judgment and has no unique
 definition. We suggest that you follow his excellent example. Provide
@@ -454,5 +460,10 @@ important to keep the following points in mind.
     model in the null hypothesis, it typically doesn't explain *why* the
     model doesn't work.
 
-> [!IMPORTANT]
-> Let's try to develop a general framework for decision making, into which all our examples will fit. Choose the appropriate word. Options may not be used at all. The basic structure of testing a hypothesis is the following:"
+### Knowledge Check
+
+Let's try to develop a general framework for decision making, into which all our examples will fit. 
+
+Choose the appropriate word. Options may not be used at all.
+
+The basic structure of testing a hypothesis is the following:

@@ -1,19 +1,9 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **introduction-to-hypothesis-testing.ipynb** in your virtual environment
+> You can find an interactive version of this unit named **introduction-to-hypothesis-testing.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
 
-Open <a href = "https://online.visualstudio.com/environments" target="_blank" rel="noopener">Visual Studio Codespaces</a>
-
-
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 ### Assessing models
 
@@ -96,7 +86,7 @@ this chapter.
 
 The `sample_proportions` function in the `datascience` library takes two
 arguments: - the sample size - the distribution of the categories in the
-population, as a list or array of proportions that add up to 1
+population, as a list or array of proportions that add up to 1.
 
 It returns an array containing the distribution of the categories in a
 random sample of the given size taken from the population. That's an
@@ -116,7 +106,9 @@ eligible_population = [0.26, 0.74]
 sample_proportions(100, eligible_population)
 ```
 
+``` output
     array([0.27, 0.73])
+```
 
 That was easy! The proportion of black men in the random sample is
 `item(0)` of the output array.
@@ -133,7 +125,9 @@ Run the cell a few times to see how the output varies.
 (100 * sample_proportions(100, eligible_population)).item(0)
 ```
 
+``` output
     27.0
+```
 
 #### Running the simulation
 
@@ -216,7 +210,7 @@ result of random sampling from the population of eligible jurors.
 This method of assessing models is general. Here is an example in
 which we use it to assess a model in a different setting.
 
-### Mendel's Pea Flowers
+### Mendel's pea flowers
 
 [Gregor Mendel](https://en.wikipedia.org/wiki/Gregor_Mendel) (1822-1884)
 was an Austrian monk who is widely recognized as the founder of the
@@ -262,8 +256,9 @@ The key for us is the *distance* between 75% and the percent of
 purple-flowering plants in the sample. Large distances are evidence that
 the model isn't good.
 
-Our statistic, therefore, is the **distance between the sample percent
-and 75%**:
+Our statistic, therefore, is the distance between the sample percent
+and 75%:
+
 
 $$
 \big{\vert} \text{sample percent of purple-flowering plants} - 75 \big{\vert}
@@ -286,11 +281,11 @@ corresponding to this model. So we have to sample 929 times.
 
 The steps in the calculation:
 
--   Sample 929 times at random from the distribution specified by the
+1.   Sample 929 times at random from the distribution specified by the
     model and find the sample proportion in the purple-flowering
     category.
--   Multiply the proportion by 100 to get a percent.
--   Subtract 75 and take the absolute value of the difference.
+2.   Multiply the proportion by 100 to get a percent.
+3.   Subtract 75 and take the absolute value of the difference.
 
 That's the statistic: the distance between the sample percent and 75.
 
@@ -317,7 +312,9 @@ proportion_purple_in_sample = sample_proportions(929, model_proportions).item(0)
 distance_from_75(proportion_purple_in_sample)
 ```
 
+``` output
     1.7491926803014053
+```
 
 That's one simulated value of the distance between the sample percent of
 purple-flowering plants and 75% as predicted by Mendel's model.
@@ -379,7 +376,9 @@ about 75.89%.
 705 / 929
 ```
 
+``` output
     0.7588805166846071
+```
 
 So the observed value of our statistic--the distance between Mendel's
 sample percent and 75--is about 0.89:
@@ -389,7 +388,9 @@ observed_statistic = distance_from_75(705/929)
 observed_statistic
 ```
 
+``` output
     0.8880516684607045
+```
 
 Just by eye, locate roughly where 0.89 is on the horizontal axis of the
 histogram. You will see that it is clearly in the heart of the

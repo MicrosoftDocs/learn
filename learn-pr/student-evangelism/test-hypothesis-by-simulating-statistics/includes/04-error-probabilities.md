@@ -1,11 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 In the process by which we decide which of two hypotheses is better
 supported by our data, the final step involves a judgment about the
 consistency of the data and the null hypothesis. While this step results
@@ -20,10 +12,11 @@ If you are testing a null hypothesis against the alternative that the
 null hypothesis isn't true, then there are four ways of classifying
 reality and the result of the test.
 
-                                      Null is True    Alternative is True
-  --------------------------------- ---------------- ---------------------
-           **Test Favors the Null**  Correct result          Error
-    **Test Favors the Alternative**      Error          Correct result
+| Test                          | Null is True   | Alternative is True |
+|-------------------------------|----------------|---------------------|
+| Test Favors the Null          | Correct result | Error               |
+| Test Favors the Alternative   | Error          | Correct result      |
+
 
 In two out of the four cells of this table, the test result is wrong.
 One type of error occurs if the test favors the alternative hypothesis
@@ -76,7 +69,7 @@ results.hist(bins = np.arange(0, 101, 5))
 plots.plot([45, 45], [0, 0.035], color='gold', lw=2);
 ```
 
-![png](../media/59-error-probabilities-4-0.png)
+![probabilities example](../media/59-error-probabilities-4-0.png)
 
 The area to the right of 45 (where the gold line is) is about 5%. Large
 values of the test statistic favor the alternative. So if the test
@@ -154,7 +147,7 @@ replicating the experiment and testing for that particular effect alone.
 If it comes out significant again, that will validate the original
 conclusion.
 
-### Technical Note: The other kind of error
+### Technical note: The other kind of error
 
 There is, of course, another kind of error: concluding that the
 treatment does nothing when in fact it does something. Discussions of
