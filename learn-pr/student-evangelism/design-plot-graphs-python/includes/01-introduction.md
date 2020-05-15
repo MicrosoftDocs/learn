@@ -152,7 +152,7 @@ the plot where the number of movies is large:
 actors.where('Number of Movies', are.above(60))
 ```
 
-``` ouput
+``` output
 | Actor             | Total Gross | Number of Movies | Average per Movie | #1 Movie           | Gross |
 |-------------------|-------------|------------------|-------------------|--------------------|-------|
 | Samuel L. Jackson | 4772.8      | 69               | 69.2              | The Avengers       | 623.4 |
