@@ -137,8 +137,8 @@ sf2015.select('Total Compensation').hist(bins=sf_bins)
 
 While most of the values are below $300,000, a few are quite a bit
 higher. For example, the total compensation of the Chief Investment
-Officer was almost $650,000. That is why the horizontal axis stretches
-to $700,000.
+Officer was almost 650,000 dollars. That is why the horizontal axis stretches
+to 700,000 dollars.
 
 ``` python
 sf2015.sort('Total Compensation', descending=True).show(2)

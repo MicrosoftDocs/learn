@@ -236,4 +236,4 @@ method](http://econpapers.repec.org/article/eeestapro/v_3a37_3ay_3a1998_3ai_3a4_
 
 ## Check your knowledge
 
-'You sample 100 dogs at random from all dogs in Berkeley and compute a 95% confidence interval of their average height. For each of the statements below, state whether they are Always True, Typically True, Not Expected to be True, or False.'
+You sample 100 dogs at random from all dogs in Berkeley and compute a 95% confidence interval of their average height. For each of the statements below, state whether they are **always true**, **typically true**, **not expected to be true**, or **false**.
