@@ -1,15 +1,3 @@
-``` {.python}
-
-from datascience import *
-path_data = '../../../../data/'
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 ### Simulation
 
 Simulation is the process of using a computer to mimic a physical
@@ -86,7 +74,7 @@ tosses.
 We have to figure out how to make one set of 100 tosses and count the
 number of heads. Let's start by creating a coin.
 
-``` {.python}
+``` python
 coin = make_array('Heads', 'Tails')
 ```
 
@@ -97,7 +85,7 @@ a second argument that is the number of times to toss.
 
 Here are the results of 10 tosses.
 
-``` {.python}
+``` python
 ten_tosses = np.random.choice(coin, 10)
 ten_tosses
 ```
@@ -109,7 +97,7 @@ array(['Tails', 'Heads', 'Heads', 'Tails', 'Tails', 'Heads', 'Tails',
 
 We can count the number of heads by using `np.count_nonzero` as before:
 
-``` {.python}
+``` python
 np.count_nonzero(ten_tosses == 'Heads')
 ```
 
@@ -120,7 +108,7 @@ np.count_nonzero(ten_tosses == 'Heads')
 Our goal is to simulate the number of heads in 100 tosses, not 10. To do
 that we can just repeat the same code, replacing 10 by 100.
 
-``` {.python}
+``` python
 outcomes = np.random.choice(coin, 100)
 num_heads = np.count_nonzero(outcomes == 'Heads')
 num_heads
@@ -144,7 +132,7 @@ That's a lot of tossing! It's good that we have Python to do it for us.
 
 We are ready to write the code to execute the entire simulation.
 
-``` {.python}
+``` python
 # An empty array to collect the simulated values
 heads = make_array()
 
@@ -168,7 +156,7 @@ for i in repetitions_sequence:
 Check that the array `heads` contains 10,000 entries, one for each
 repetition of the experiment.
 
-``` {.python}
+``` python
 len(heads)
 ```
 
@@ -179,14 +167,14 @@ len(heads)
 To get a sense of the variability in the number of heads in 100 tosses,
 we can collect the results in a table and draw a histogram.
 
-``` {.python}
+``` python
 simulation_results = Table().with_column(
     'Repetition', np.arange(1, num_repetitions + 1),
     'Number of Heads', heads
 )
 ```
 
-``` {.python}
+``` python
 simulation_results
 ```
 
@@ -205,7 +193,7 @@ simulation_results
 
 ... (9990 rows omitted)
 
-``` {.python}
+``` python
 simulation_results.hist('Number of Heads', bins = np.arange(30.5, 69.6, 1))
 ```
 
@@ -239,7 +227,7 @@ detail. Here are the same steps written in a more compact form. You can
 see that the code starts out the same way as before, but then some steps
 are combined.
 
-``` {.python}
+``` python
 heads = make_array()
 
 num_repetitions = 10000
@@ -249,7 +237,7 @@ for i in np.arange(num_repetitions):
     heads = np.append(heads, np.count_nonzero(outcomes == 'Heads'))
 ```
 
-``` {.python}
+``` python
 heads
 ```
 
@@ -271,7 +259,7 @@ simulation process.
 Step 2 is the one in which we simulate one pair of rolls and add up the
 number of spots.
 
-``` {.python}
+``` python
 die = np.arange(1, 7)
 sum(np.random.choice(die, 2))
 ```
@@ -283,7 +271,7 @@ sum(np.random.choice(die, 2))
 That simulates one value of the sum of two rolls. We are now all set to
 run the simulation according to the steps that are now familiar.
 
-``` {.python}
+``` python
 moves = make_array()
 
 num_repetitions = 10000
@@ -295,7 +283,7 @@ for i in np.arange(num_repetitions):
 
 Here is a histogram of the results.
 
-``` {.python}
+``` python
 results = Table().with_column(
     'Repetition', np.arange(1, num_repetitions + 1),
     'Sum of Two Rolls', moves
