@@ -1,8 +1,7 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
-
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) please refer to unit 1, for guidance on setting up your environment.
 
 ``` python
 
@@ -91,8 +90,8 @@ red
 ```
 
 Your net gain on one bet is one random draw from the `Winnings: Red`
-column. There is an 18/38 chance making $1, and a 20/38 chance of
-making -$1. This probability distribution is shown in the histogram
+column. There is an 18/38 chance making 1 dollar, and a 20/38 chance of
+making <1 dollar. This probability distribution is shown in the histogram
 below.
 
 ``` python
@@ -140,8 +139,8 @@ That's a roughly bell shaped histogram, even though the distribution we
 are drawing from is nowhere near bell shaped.
 
 **Center.** The distribution is centered near -20 dollars, roughly. To
-see why, note that your winnings will be $1 on about 18/38 of the bets,
-and -$1 on the remaining 20/38. So your average winnings per dollar bet
+see why, note that your winnings will be 1 dollar on about 18/38 of the bets,
+and <1 dollar on the remaining 20/38. So your average winnings per dollar bet
 will be roughly -5.26 cents:
 
 ``` python
@@ -177,8 +176,8 @@ np.mean(results.column(0))
 **Spread.** Run your eye along the curve starting at the center and
 notice that the point of inflection is near 0. On a bell shaped curve,
 the SD is the distance from the center to a point of inflection. The
-center is roughly -$20, which means that the SD of the distribution is
-around $20.
+center is roughly -20 dollars, which means that the SD of the distribution is
+around 20 dollars.
 
 In the next section, we will see where the \$20 comes from. For now,
 let's confirm our observation by calculating the SD of the 10,000

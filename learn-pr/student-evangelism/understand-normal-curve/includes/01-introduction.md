@@ -85,8 +85,8 @@ operation. For example, imagine the entries in `not_symmetric` above as
 the dollars in the pockets of four different people. To get the mean,
 you first put all of the money into one big pot and then divide it
 evenly among the four people. They had started out with different
-amounts of money in their pockets (\$2, \$3, \$3, and \$9), but now each
-person has \$4.25, the mean amount.
+amounts of money in their pockets ($2, $3, $3, and $9), but now each
+person has $4.25, the mean amount.
 
 ### Proportions are means
 
@@ -306,8 +306,7 @@ year.
 sf2015 = Table.read_table(path_data + 'san_francisco_2015.csv').where('Salaries', are.above(10000))
 ```
 
-As we saw earlier, the highest compensation was above $600,000 but the
-vast majority of employees had compensations below $300,000.
+As we saw earlier, the highest compensation was above 600,000 dollars but the vast majority of employees had compensations below 300,000 dollars.
 
 ``` python
 sf2015.select('Total Compensation').hist(bins = np.arange(10000, 700000, 25000))

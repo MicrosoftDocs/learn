@@ -46,12 +46,15 @@ calculation_steps = Table().with_columns(
 calculation_steps
 ```
 
-|Value|Deviation from Average|
-|--- |--- |
-|1|-2.75|
-|2|-1.75|
-|2|-1.75|
-|10|6.25|
+``` output
+| Value | Deviation from Average |
+|-------|------------------------|
+| 1     | -2.75                  |
+| 2     | -1.75                  |
+| 2     | -1.75                  |
+| 10    | 6.25                   |
+
+```
 
 Some of the deviations are negative; those correspond to values that are
 below average. Positive deviations correspond to above-average values.
@@ -106,12 +109,15 @@ calculation_steps = calculation_steps.with_column(
 calculation_steps
 ```
 
-|Value|Deviation from Average|Squared Deviations from Average|
-|--- |--- |--- |
-|1|-2.75|7.5625|
-|2|-1.75|3.0625|
-|2|-1.75|3.0625|
-|10|6.25|39.0625|
+``` output
+| Value | Deviation from Average | Squared Deviations from Average |
+|-------|------------------------|---------------------------------|
+| 1     | -2.75                  | 7.5625                          |
+| 2     | -1.75                  | 3.0625                          |
+| 2     | -1.75                  | 3.0625                          |
+| 10    | 6.25                   | 39.0625                         |  
+
+```
 
 ``` python
 # Step 4. Variance = the mean squared deviation from average
@@ -183,20 +189,22 @@ nba13 = Table.read_table(path_data + 'nba2013.csv')
 nba13
 ```
 
-|Name|Position|Height|Weight|Age in 2013|
-|--- |--- |--- |--- |--- |
-|DeQuan Jones|Guard|80|221|23|
-|Darius Miller|Guard|80|235|23|
-|Trevor Ariza|Guard|80|210|28|
-|James Jones|Guard|80|215|32|
-|Wesley Johnson|Guard|79|215|26|
-|Klay Thompson|Guard|79|205|23|
-|Thabo Sefolosha|Guard|79|215|29|
-|Chase Budinger|Guard|79|218|25|
-|Kevin Martin|Guard|79|185|30|
-|Evan Fournier|Guard|79|206|20|
+``` output
+| Name            | Position | Height | Weight | Age in 2013 |
+|-----------------|----------|--------|--------|-------------|
+| DeQuan Jones    | Guard    | 80     | 221    | 23          |
+| Darius Miller   | Guard    | 80     | 235    | 23          |
+| Trevor Ariza    | Guard    | 80     | 210    | 28          |
+| James Jones     | Guard    | 80     | 215    | 32          |
+| Wesley Johnson  | Guard    | 79     | 215    | 26          |
+| Klay Thompson   | Guard    | 79     | 205    | 23          |
+| Thabo Sefolosha | Guard    | 79     | 215    | 29          |
+| Chase Budinger  | Guard    | 79     | 218    | 25          |
+| Kevin Martin    | Guard    | 79     | 185    | 30          |
+| Evan Fournier   | Guard    | 79     | 206    | 20          |
 
 ... (495 rows omitted)
+```
 
 Here is a histogram of the players' heights.
 
@@ -238,13 +246,15 @@ tallest player at a height of 87 inches.
 nba13.sort('Height', descending=True).show(3)
 ```
 
-|Name|Position|Height|Weight|Age in 2013|
-|--- |--- |--- |--- |--- |
-|Hasheem Thabeet|Center|87|263|26|
-|Roy Hibbert|Center|86|278|26|
-|Tyson Chandler|Center|85|235|30|
+``` output
+| Name            | Position | Height | Weight | Age in 2013 |
+|-----------------|----------|--------|--------|-------------|
+| Hasheem Thabeet | Center   | 87     | 263    | 26          |
+| Roy Hibbert     | Center   | 86     | 278    | 26          |
+| Tyson Chandler  | Center   | 85     | 235    | 30          |
 
 ... (502 rows omitted)
+```
 
 Thabeet was about 8 inches above the average height.
 
@@ -278,13 +288,15 @@ in 2013. His height was about 2.9 SDs below average.
 nba13.sort('Height').show(3)
 ```
 
-|Name|Position|Height|Weight|Age in 2013|
-|--- |--- |--- |--- |--- |
-|Isaiah Thomas|Guard|69|185|24|
-|Nate Robinson|Guard|69|180|29|
-|John Lucas III|Guard|71|157|30|
+``` output
+| Name           | Position | Height | Weight | Age in 2013 |
+|----------------|----------|--------|--------|-------------|
+| Isaiah Thomas  | Guard    | 69     | 185    | 24          |
+| Nate Robinson  | Guard    | 69     | 180    | 29          |
+| John Lucas III | Guard    | 71     | 157    | 30          |  
 
 ... (502 rows omitted)
+```
 
 ``` python
 (69 - mean_height)/sd_height
@@ -343,13 +355,16 @@ Juwan Howard was the oldest player, at 40.
 nba13.sort('Age in 2013', descending=True).show(3)
 ```
 
-|Name|Position|Height|Weight|Age in 2013|
-|--- |--- |--- |--- |--- |
-|Juwan Howard|Forward|81|250|40|
-|Marcus Camby|Center|83|235|39|
-|Derek Fisher|Guard|73|210|39|
+``` Output
+| Name         | Position | Height | Weight | Age in 2013 |
+|--------------|----------|--------|--------|-------------|
+| Juwan Howard | Forward  | 81     | 250    | 40          |
+| Marcus Camby | Center   | 83     | 235    | 39          |
+| Derek Fisher | Guard    | 73     | 210    | 39          |  
 
 ... (502 rows omitted)
+
+```
 
 Howard's age was about 3.2 SDs above average.
 
@@ -369,13 +384,15 @@ below average.
 nba13.sort('Age in 2013').show(3)
 ```
 
-|Name|Position|Height|Weight|Age in 2013|
-|--- |--- |--- |--- |--- |
-|Jarvis Varnado|Forward|81|230|15|
-|Giannis Antetokounmpo|Forward|81|205|18|
-|Sergey Karasev|Guard|79|197|19|
+``` output
+| Name                  | Position | Height | Weight | Age in 2013 |
+|-----------------------|----------|--------|--------|-------------|
+| Jarvis Varnado        | Forward  | 81     | 230    | 15          |
+| Giannis Antetokounmpo | Forward  | 81     | 205    | 18          |
+| Sergey Karasev        | Guard    | 79     | 197    | 19          |
 
 ... (502 rows omitted)
+```
 
 ``` python
 (15 - mean_age)/sd_age
