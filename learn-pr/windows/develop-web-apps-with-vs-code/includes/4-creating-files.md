@@ -1,4 +1,4 @@
-As with most of the Visual Studio Code (VS Code) functionality, there are many ways to create and manage files. In this unit, we'll create and edit a file. We suggest creating a folder called **intro-to-vscode** on your local computer and work from there. Although you can think of this as your project folder for this module, VS Code won't create any files other than the specific files needed for this lesson unless you create a Workspace, discussed at the end of this unit.
+As with most of the Visual Studio Code functionality, there are many ways to create and manage files. In this unit, we'll create and edit a file. We suggest creating a folder called **intro-to-vscode** on your local computer and work from there. Although you can think of this as your project folder for this module, VS Code won't create any files other than the specific files needed for this lesson unless you create a Workspace, discussed at the end of this unit.
 
 ## Using Explorer to manage files
 

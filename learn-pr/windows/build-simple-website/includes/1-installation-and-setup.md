@@ -14,7 +14,7 @@ Let's get started by installing the tools we need and setting up our developer e
 
 You could write an entire webpage in a text editor and save the file with the `.html` extension. After all, computer code is just characters written in a language computers understand. However, using a *source code editor* or *integrated development environment* (IDE) can help us to write better code. We can save time and reduce errors with features like autocomplete, syntax highlighting, and error checking.
 
-Visual Studio Code (VS Code) is a code editor that works across different operating systems: Windows, macOS, and Linux. You can read more about [why Visual Studio Code](https://code.visualstudio.com/docs/editor/whyvscode) get a taste of its features.
+Visual Studio Code is a code editor that works across different operating systems: Windows, macOS, and Linux. You can read more about [why Visual Studio Code](https://code.visualstudio.com/docs/editor/whyvscode) get a taste of its features.
 
 ### Download and install
 

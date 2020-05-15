@@ -1,4 +1,4 @@
-In this unit, you'll learn how easy it is to locate and install Visual Studio Code (VS Code) extensions. As seen previously, VS Code installs with many built-in extensions, but it does not come bundled with support for every development language and environment. By using the Extensions Marketplace, you can locate the tools, languages, and debuggers you need for your particular workflow and personal preference. Additionally, there are many extensions that add to the powerful features of VS Code for even greater customization and control, efficiency, and maybe even some fun.
+In this unit, you'll learn how easy it is to locate and install Visual Studio Code extensions. As seen previously, VS Code installs with many built-in extensions, but it does not come bundled with support for every development language and environment. By using the Extensions Marketplace, you can locate the tools, languages, and debuggers you need for your particular workflow and personal preference. Additionally, there are many extensions that add to the powerful features of VS Code for even greater customization and control, efficiency, and maybe even some fun.
 
 ## Extension Marketplace
 

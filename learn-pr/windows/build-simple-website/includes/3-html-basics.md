@@ -2,7 +2,7 @@ At the moment we have an empty HTML file. Let's add some code! The goal is to us
 
 ## Using autocomplete
 
-Visual Studio Code (VS Code) provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting. VS Code also includes great Emmet support (from the documentation on Emmet in Visual Studio Code).
+Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting. VS Code also includes great Emmet support (from the documentation on Emmet in Visual Studio Code).
 
 In **Visual Studio Code**, open `index.html` by selecting the `index.html` file. Select the `index.html` page and type `html:5`, then hit Enter (Return).
 

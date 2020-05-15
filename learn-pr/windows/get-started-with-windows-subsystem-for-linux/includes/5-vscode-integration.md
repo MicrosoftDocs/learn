@@ -1,4 +1,4 @@
-Visual Studio Code (VS Code) was voted the most popular web development environment in the 2018 Stack Overflow survey. It's free, available on Windows, Linux, and macOS, and has built-in Git support, an active support community, a rich gallery of extensions, and IntelliSense for autocompletion of code.
+Visual Studio Code was voted the most popular web development environment in the 2018 Stack Overflow survey. It's free, available on Windows, Linux, and macOS, and has built-in Git support, an active support community, a rich gallery of extensions, and IntelliSense for autocompletion of code.
 
 ## Configure VS Code to work with WSL
 
