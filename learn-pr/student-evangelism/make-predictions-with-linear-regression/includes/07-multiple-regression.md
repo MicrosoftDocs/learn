@@ -222,7 +222,7 @@ Table(train_attributes.labels).with_row(list(best_slopes)).show()
 print('RMSE of all training examples using the best slopes:', rmse_train(best_slopes))
 ```
 
-``` ioutput 
+``` output 
 The best slopes for the training set:
 
 | 1st Flr SF | 2nd Flr SF | Total Bsmt SF | Garage Area | Wood Deck SF | Open Porch SF | Lot Area | Year Built | Yr Sold  |

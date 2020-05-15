@@ -265,7 +265,7 @@ We are trying to predict the number of characters ($y$) based on the
 number of periods ($x$) in chapters of Little Women. If we use the line
 $$
 \mbox{prediction} ~=~ ax + b
-$$, it will have an mse that depends on the slope $a$ and the intercept
+$$ it will have an mse that depends on the slope $a$ and the intercept
 $b$. The function `lw_mse` takes the slope and intercept as its
 arguments and returns the corresponding mse.
 

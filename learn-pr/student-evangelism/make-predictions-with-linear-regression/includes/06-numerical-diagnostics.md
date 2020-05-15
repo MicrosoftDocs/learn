@@ -32,7 +32,7 @@ decimal places. The minus sign is because of the rounding that above.
 round(correlation(heights, 'MidParent', 'Residual'), 10)
 ```
 
-``` outputt
+``` output
     -0.0
 ```
 
@@ -105,7 +105,7 @@ residuals is about 3.39 inches.
 np.std(heights.column('Residual'))
 ```
 
-``` outlook
+``` output
     3.3880799163953426
 ```
 

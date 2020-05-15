@@ -11,8 +11,7 @@ identify the straight line about which the points are clustered. In this
 section we will retrace the path that Galton and Pearson took to
 discover that line.
 
-Galton's data on the heights of parents and their adult children showedthe 
-a linear association. The linearity was confirmed when our predictions
+Galton's data on the heights of parents and their adult children showed a linear association. The linearity was confirmed when our predictions
 of the children's heights based on the midparent heights roughly
 followed a straight line.
 
@@ -535,10 +534,10 @@ with the regression model. Suppose the observed correlation $r$ is 0.5,
 and that the summary statistics for the two variables are as in the
 table below:
 
-            **average**    **SD**
-  -------- ------------- ----------
-    height   14 inches    2 inches
-    weight   50 pounds    5 pounds
+| Table  | Average   | SD       |
+|--------|-----------|----------|
+| height | 14 inches | 2 inches |
+| weight | 50 pounds | 5 pounds |
 
 To calculate the equation of the regression line, we need the slope and
 the intercept.

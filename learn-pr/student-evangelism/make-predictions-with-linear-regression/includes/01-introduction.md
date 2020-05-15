@@ -100,7 +100,7 @@ heights_with_predictions = heights.with_column(
 heights_with_predictions.scatter('MidParent')
 ```
 
-![predication example](../media/75-prediction-10-0.png)
+![prediction example](../media/75-prediction-10-0.png)
 
 The prediction at a given midparent height lies roughly at the center of
 the vertical strip of points at the given height. This method of
@@ -355,7 +355,8 @@ t = Table().with_columns(
 t
 ```
 
-``` output| x | y |
+``` output
+| x | y |
 |---|---|
 | 1 | 2 |
 | 2 | 3 |

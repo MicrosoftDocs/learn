@@ -14,7 +14,7 @@ A residual is what's left over -- the residue -- after estimation.
 Residuals are the vertical distances of the points from the regression
 line. There is one residual for each point in the scatter plot. The
 residual is the difference between the observed value of $y$ and the
-fitted value of $y$, so for the point $(x, y)$,
+fitted value of $y$ so for the point $(x, y)$
 
 $$
 \mbox{residual} ~~ = ~~ y ~-~
