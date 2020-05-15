@@ -1,4 +1,4 @@
-As with most of the Visual Studio Code functionality, there are many ways to create and manage files. In this unit, we'll create and edit a file. We suggest creating a folder called **intro-to-vscode** on your local computer and work from there. Although you can think of this as your project folder for this module, VS Code won't create any files other than the specific files needed for this lesson unless you create a Workspace, discussed at the end of this unit.
+As with most of the Visual Studio Code functionality, there are many ways to create and manage files. In this unit, we'll create and edit a file. We suggest creating a folder called **intro-to-vscode** on your local computer and work from there. Although you can think of this as your project folder for this module, Visual Studio Code won't create any files other than the specific files needed for this lesson unless you create a Workspace, discussed at the end of this unit.
 
 ## Using Explorer to manage files
 
@@ -22,7 +22,7 @@ Name the new file `index.html` and press Enter.
 
 ## Using Emmet to create code
 
-You should now have an empty file named `index.html` open in the editor and listed in the Explorer. If you start typing valid HTML, you'll see color coding come in as you work. Instead of typing everything manually, we can use VS Code's built-in Emmet support to do a lot of the tedious bits.
+You should now have an empty file named `index.html` open in the editor and listed in the Explorer. If you start typing valid HTML, you'll see color coding come in as you work. Instead of typing everything manually, we can use Visual Studio Code's built-in Emmet support to do a lot of the tedious bits.
 
 In your empty editor window `index.html`, type `!` (exclamation point) then select the Tab key. This will tell Emmet to fill in the minimum HTML needed to make a web page using default values, as shown below.
 
@@ -42,11 +42,11 @@ There's a number 1 on the **Explorer** icon in the Activity Bar, which means the
 
 All these various indicators are provided to notify you that you have unsaved changes, so you'll know regardless of which parts of the UI you decide to hide or show.
 
-Saving files manually is no different than usual, from the File menu or using keyboard shortcuts. VS Code also has a handy automatic file save feature you can enable, which is in the File menu. (Alternately, hit F1, start typing "auto save," and select File: Toggle Auto Save).
+Saving files manually is no different than usual, from the File menu or using keyboard shortcuts. Visual Studio Code also has a handy automatic file save feature you can enable, which is in the File menu. (Alternately, hit F1, start typing "auto save," and select File: Toggle Auto Save).
 
 ## Syntax highlighting from built-in extensions
 
-Let's look over the built-in extensions list. These are the extensions that come pre-installed on VS Code, and don't show up in your usual installed extensions list. To view the built-in extensions, select the ellipsis icon (`...`) in the upper right of the Extensions area and choose **Show Built-in Extensions**. The length of this list may surprise you! Take a moment to scroll through the various items to get a feel for what's already here.
+Let's look over the built-in extensions list. These are the extensions that come pre-installed on Visual Studio Code, and don't show up in your usual installed extensions list. To view the built-in extensions, select the ellipsis icon (`...`) in the upper right of the Extensions area and choose **Show Built-in Extensions**. The length of this list may surprise you! Take a moment to scroll through the various items to get a feel for what's already here.
 
 > [!NOTE]
 > There are syntax highlighting extensions for many languages such as HTML already built in. You may have noticed this particular extension at work in the previous section when you added HTML with Emmet.

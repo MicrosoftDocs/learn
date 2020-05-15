@@ -29,7 +29,7 @@ The overall module steps are:
 
 2. Create a Cognitive Speech Service in Azure
 
-3. Build a translator sample using VS Code
+3. Build a translator sample using Visual Studio Code
 
    a. Open “Devkit Translator” sample
 

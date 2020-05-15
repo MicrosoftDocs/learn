@@ -22,7 +22,7 @@ Our next step is to [download Visual Studio Code](https://code.visualstudio.com/
 
 You can read the [manual for Visual Studio Code](https://code.visualstudio.com/docs) if you have questions or would like more detail. Visual Studio Code uses the Electron software framework, which relies on the V8 JavaScript engine.
 
-If you're having trouble with installing VS Code, look through the [setup guide](https://code.visualstudio.com/docs/setup/setup-overview) for Windows, macOS, or Linux.
+If you're having trouble with installing Visual Studio Code, look through the [setup guide](https://code.visualstudio.com/docs/setup/setup-overview) for Windows, macOS, or Linux.
 
 ### Additional tools
 
@@ -100,25 +100,25 @@ You can check your assigned username and email with the following command.
 git config --global --edit
 ```
 
-If you do enter the command, a built-in text editor called Vim will show the result. To exit Vim, press Control+C, then enter the characters `:qa!` and press Enter (return). We can avoid these type of commands and edit more easily by using VS Code.
+If you do enter the command, a built-in text editor called Vim will show the result. To exit Vim, press Control+C, then enter the characters `:qa!` and press Enter (return). We can avoid these type of commands and edit more easily by using Visual Studio Code.
 
 ### Configure Git for your editor
 
 After creating a Git identity to tag your projects with, it's useful to associate your source code editor with Git. As a result, you can use your editor to open and edit files with Git. Also, you'll gain syntax highlighting for Git changes and conflict resolution when merging with other peoples' work. Otherwise, Git editing would take place in the default CLI text editor, which can be inhospitable.
 
-Use **Git Bash** or **Terminal** to configure [VS Code as your Git editor](https://code.visualstudio.com/Docs/editor/versioncontrol).
+Use **Git Bash** or **Terminal** to configure [Visual Studio Code as your Git editor](https://code.visualstudio.com/Docs/editor/versioncontrol).
 
 ```bash
 git config --global core.editor "code --wait"
 ```
 
-To edit your Git configuration with VS Code, run the following.
+To edit your Git configuration with Visual Studio Code, run the following.
 
 ```bash
 git config --global -e
 ```
 
-If you see the following error after typing this command, close VS Code, then move the VS Code application from **Downloads** to the **Applications** folder. Reopen VS Code from the **Applications** folder.
+If you see the following error after typing this command, close Visual Studio Code, then move the Visual Studio Code application from **Downloads** to the **Applications** folder. Reopen Visual Studio Code from the **Applications** folder.
 
 ```bash
 hint: Waiting for your editor to close the file... code --wait: code: command not found
@@ -127,7 +127,7 @@ error: There was a problem with the editor 'code --wait'.
 
 Now that we have an editor, it's easier to edit and save changes.
 
-To compare the differences between files, copy and paste this code into the VS Code configuration.
+To compare the differences between files, copy and paste this code into the Visual Studio Code configuration.
 
 ```bash
 [diff]
@@ -136,17 +136,17 @@ To compare the differences between files, copy and paste this code into the VS C
     cmd = code --wait --diff $LOCAL $REMOTE
 ```
 
-For macOS, save your changes in **VS Code** by going to the **File** menu and selecting **Save**. Or use the keyboard shortcut Command+S.
+For macOS, save your changes in **Visual Studio Code** by going to the **File** menu and selecting **Save**. Or use the keyboard shortcut Command+S.
 
 ![Screenshot of customizing Git configuration differences](../media/git-config-diff.png)
 
 ### Install extensions or packages
 
-You can extend the functionality of VS Code using the [extensions marketplace](https://code.visualstudio.com/docs/editor/extension-gallery). Keep in mind these are community developed resources. There are often a few solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line. See the [VS Code manual](https://code.visualstudio.com/docs/editor/extension-gallery) for more details about customization.
+You can extend the functionality of Visual Studio Code using the [extensions marketplace](https://code.visualstudio.com/docs/editor/extension-gallery). Keep in mind these are community developed resources. There are often a few solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line. See the [Visual Studio Code manual](https://code.visualstudio.com/docs/editor/extension-gallery) for more details about customization.
 
 For web development, the extensions and packages below will get you started.
 
-All we need right now is **open-in-browser**. To install a VS Code extension from the command line, use the following format.
+All we need right now is **open-in-browser**. To install a Visual Studio Code extension from the command line, use the following format.
 
 ```bash
 code --install-extension techer.open-in-browser
@@ -158,6 +158,6 @@ You can take a peek at all the extensions you installed with the following comma
 code --list-extensions
 ```
 
-For more information about how to uninstall a an extension, visit the [VS Code user guide](https://code.visualstudio.com/docs/editor/extension-gallery).
+For more information about how to uninstall a an extension, visit the [Visual Studio Code user guide](https://code.visualstudio.com/docs/editor/extension-gallery).
 
 Way to go! Installation and setup can be hard work. Thankfully, we only need to install and setup once. Now we're ready to create a website.

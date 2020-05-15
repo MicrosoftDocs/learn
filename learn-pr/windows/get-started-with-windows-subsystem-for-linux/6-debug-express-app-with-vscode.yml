@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-title: Debug your Express app with VS Code
+title: Debug your Express app with Visual Studio Code
 uid: learn-windows.get-started-with-windows-subsystem-linux.6-debug-express-app-with-vscode
 metadata:
-  title: Debug Node.js in Linux with VS Code
-  description: Debug a Node.js Express app running on WSL inside VS Code. 
+  title: Debug Node.js in Linux with Visual Studio Code
+  description: Debug a Node.js Express app running on WSL inside Visual Studio Code. 
   ms.date: 03/01/2019
   displayType: one-Column
   author: mattwojo
