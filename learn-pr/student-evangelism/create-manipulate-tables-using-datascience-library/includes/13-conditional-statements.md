@@ -140,7 +140,7 @@ execute the corresponding body. The `else` clause is optional. When an
 the header expressions of the previous clauses are true. The `else`
 clause must always come at the end (or not at all).
 
-### Example: betting on a die
+### Example: Bet on a die
 
 Suppose I bet on a roll of a fair die. The rules of the game:
 

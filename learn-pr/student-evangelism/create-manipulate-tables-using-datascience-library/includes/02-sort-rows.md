@@ -14,12 +14,13 @@ np.set_printoptions(threshold=50)
 ```
 
 ``` output
-|                    |                                                      |
+| Table              | Description                                          |
 |--------------------|------------------------------------------------------|
 | **Player**         | Player's name                                        |
 | **Position**       | Player's position on team                            |
 | **Team**           | Team name                                            |
 | **'15-'16 Salary** | Player's salary in 2015-2016, in millions of dollars |
+
 ```
 
 The code for the positions is PG (Point Guard), SG (Shooting Guard), PF
@@ -49,8 +50,8 @@ nba_salaries
 | Dennis Schroder  | PG       | Atlanta Hawks | 1.7634         |
 | Tim Hardaway Jr. | SG       | Atlanta Hawks | 1.30452        |  
 
-
 ... (407 rows omitted)
+
 ```
 
 The table contains 417 rows, one for each player. Only 10 of the rows
@@ -255,7 +256,7 @@ sort(column\_or\_label, descending=False, distinct=False)
 
 This describes the positions, names, and default values of the three
 arguments to `sort`. When calling this method, you can use either
-positional arguments or named arguments, so the following three calls do
+positional arguments or named arguments, so the following two calls do
 exactly the same thing.
 
 ``` python
@@ -269,4 +270,4 @@ value means.
 
 ## Check your knowledge
 
-Suppose you have a table called students with columns labeled name, age, and email. Select the best table expression for the following statements.
+Suppose you have a table called **students** with columns labeled **name**, **age**, and **email**. Select the best table expression for the following statements.

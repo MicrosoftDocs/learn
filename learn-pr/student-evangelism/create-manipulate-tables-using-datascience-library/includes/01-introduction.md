@@ -1,11 +1,7 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **introduction-to-tables.ipynb** in your virtual environment.
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science".
-
-Please refer to the unit, Setting up your virtual environment.
-
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments).
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) please refer to unit 1, for guidance on setting up your environment.
 
 
 ``` python
@@ -17,9 +13,10 @@ path_data = '../../../data/'
 ## Tables
 
 Tables are a fundamental object type for representing data sets. A table
-can be viewed in two ways: \* a sequence of named columns that each
-describe a single aspect of all entries in a data set, or \* a sequence
-of rows that each contain all information about a single entry in a data
+can be viewed in two ways:
+
+- A sequence of named columns that each describe a single aspect of all entries in a data set
+- A sequence of rows that each contain all information about a single entry in a data
 set.
 
 In order to use tables, import all of the module called `datascience`, a
@@ -30,7 +27,7 @@ from datascience import *
 ```
 
 Empty tables can be created using the `Table` function. An empty table
-is usefully because it can be extended to contain new rows and columns.
+is useful because it can be extended to contain new rows and columns.
 
 ``` python
 Table()
@@ -113,7 +110,7 @@ flowers
 
 ```
 
-Creating tables in this way involves a lot of typing. If the data have
+Creating tables in this way involves a lot of typing. If the data has
 already been entered somewhere, it is usually possible to use Python to
 read it into a table, instead of typing it all in cell by cell.
 
@@ -122,7 +119,7 @@ values. Such files are called CSV files.
 
 Below, we use the Table method `read_table` to read a CSV file that
 contains some of the data used by Minard in his graphic about Napoleon's
-Russian campaign. The data are placed in a table named `minard`.
+Russian campaign. The data is placed in a table named `minard`.
 
 ``` python
 minard = Table.read_table(path_data + 'minard.csv')
@@ -147,7 +144,7 @@ We will use this small table to demonstrate some useful Table methods.
 We will then use those same methods, and develop other methods, on much
 larger tables of data.
 
-### The Size of the Table
+### Get the table size
 
 The method `num_columns` gives the number of columns in the table, and
 `num_rows` the number of rows.
@@ -168,7 +165,7 @@ minard.num_rows
 8
 ```
 
-### Column Labels
+### list the column Labels
 
 The method `labels` can be used to list the labels of all the columns.
 With `minard` we don't gain much by this, but it can be very useful for
@@ -233,7 +230,7 @@ minard = minard.relabeled('City', 'City Name')
 minard
 ```
 
-``` outpput
+``` output
 | Longitude | Latitude | City Name   | Direction | Survivors |
 |-----------|----------|-------------|-----------|-----------|
 | 32        | 54.8     | Smolensk    | Advance   | 145000    |
@@ -247,7 +244,7 @@ minard
 
 ```
 
-### Accessing the Data in a Column
+### Accessing the data in a column
 
 We can use a column's label to access the array of data in the column.
 
@@ -290,7 +287,7 @@ minard.column(4).item(5)
 24000
 ```
 
-### Working with the Data in a Column
+### Working with the data in a column
 
 Because columns are arrays, we can use array operations on them to
 discover new information. For example, we can create a new column that
@@ -322,7 +319,7 @@ To make the proportions in the new columns appear as percents, we can
 use the method `set_format` with the option `PercentFormatter`. The
 `set_format` method takes `Formatter` objects, which exist for dates
 (`DateFormatter`), currencies (`CurrencyFormatter`), numbers, and
-percentages.
+appears as percentages.
 
 ``` python
 minard.set_format('Percent Surviving', PercentFormatter)
@@ -342,7 +339,7 @@ minard.set_format('Percent Surviving', PercentFormatter)
 
 ```
 
-### Choosing Sets of Columns
+### Choosing sets of columns
 
 The method `select` creates a new table that contains only the specified
 columns.
@@ -469,7 +466,7 @@ All of the methods that we have used above can be applied to any table.
 
 In the rest of this module, you will learn:
 
-- Tables as a fundamental object type used for representing data sets.
-- Make Tables in Python using the datascience Library.
-- Explore different datasets using the datascience Library.
-- Manipulate Tables & Wrangle data using various datascience Library functions.
+- Understand tables as a fundamental object type used for representing data sets.
+- Make Tables in Python using the Python datascience library.
+- Explore different datasets using the Python datascience library.
+- How to manipulate tables and wrangle data using various Python datascience library functions.

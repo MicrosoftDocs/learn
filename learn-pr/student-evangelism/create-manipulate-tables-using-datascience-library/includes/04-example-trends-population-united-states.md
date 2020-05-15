@@ -1,13 +1,9 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **introduction-to-tables.ipynb** in your virtual environment.
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science".
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) please refer to unit 1, for guidance on setting up your environment.
 
-Please refer to the unit, Setting up your virtual environment.
-
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments).
-
-## Example: population trends
+## Example: Population trends
 
 We are now ready to work with large tables of data. The file below
 contains "Annual Estimates of the Resident Population by Single Year of
@@ -147,8 +143,9 @@ census.set_format('Percent Change', PercentFormatter)
 ... (296 rows omitted)
 ```
 
-**Sorting the data.** Let us sort the table in decreasing order of the
-absolute change in population.
+## Sorting the data
+
+Let us sort the table in decreasing order of the absolute change in population.
 
 ``` python
 census.sort('Change', descending=True)

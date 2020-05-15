@@ -76,7 +76,7 @@ The value `True` indicates that the comparison is valid; Python has
 confirmed this simple fact about the relationship between `3` and `1+1`.
 The full set of common comparison operators are listed below.
 
-``` output|
+``` output
 | Comparison         | Operator | True example | False example |
 |--------------------|----------|--------------|---------------|
 | Less than          | \<       | 2 \< 3       | 2 \< 2        |
@@ -144,7 +144,7 @@ min(x, y) <= (x+y)/2 <= max(x, y)
     True
 ```
 
-### Comparing strings
+### Compare strings
 
 Strings can also be compared, and their order is alphabetical. A shorter
 string is less than a longer string that begins with the shorter string.

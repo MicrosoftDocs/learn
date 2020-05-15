@@ -31,7 +31,7 @@ quiz:
       choices:
         - content: '1'
           isCorrect: true
-          explanation: 'Correct, at the first iteration, "count" is assigned to the first item of the array, which is 1'
+          explanation: 'Correct, at the first iteration, "count" is assigned to the first item of the array, which is 1.'
         - content: '0'
           isCorrect: false
           explanation: 'Incorrect'
@@ -45,7 +45,7 @@ quiz:
           explanation: 'Incorrect'
         - content: '1'
           isCorrect: true
-          explanation: 'In iteration 2, count is assigned to 2, and 2%2 is 0, so "Even!" will be printed in that iteration. All of the other iterations should print "Odd!"'
+          explanation: 'Correct, in iteration 2, count is assigned to 2, and 2%2 is 0, so "Even!" will be printed in that iteration. All of the other iterations should print "Odd!"'
         - content: '2'
           isCorrect: false
           explanation: Incorrect.

@@ -1,20 +1,15 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **introduction-to-tables.ipynb** in your virtual environment.
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science".
-
-Please refer to the unit, Setting up your virtual environment.
-
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments).
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) please refer to unit 1, for guidance on setting up your environment.
 
 We end this chapter by using all the methods we have learned to examine
 a new and large dataset. We will also introduce `map_table`, a powerful
 visualization tool.
 
 The  Bay Area Bike Share service
-published a Open Data set.
-describing every bicycle rental from September 2014 to August 2015 in
-their system. There were 354,152 rentals in all. The columns are:
+published a Open Data set that describing every bicycle rental from September 2014 to August 2015 in
+their system. There were 354,152 rentals in all the columns are:
 
 -   An ID for the rental
 -   Duration of the rental, in seconds
@@ -50,7 +45,7 @@ We'll focus only on the *free trips*, which are trips that last less
 than 1800 seconds (half an hour). There is a charge for longer trips.
 
 The histogram below shows that most of the trips took around 10 minutes
-(600 seconds) or so. Very few took near 30 minutes (1800 seconds),
+(600 seconds) or so. Very few took trips near 30 minutes (1800 seconds),
 possibly because people try to return the bikes before the cutoff time
 so as not to have to pay.
 
@@ -70,7 +65,7 @@ commute.hist('Duration', bins=60, unit='Second')
 
 ![Bay Area Bike Sharing Map](../media/36-bike-share-bay-area-6-1.png)
 
-### Exploring the Data with `group` and `pivot`
+### Exploring the Data with group and pivot
 
 We can use `group` to identify the most highly used Start Station:
 
@@ -126,7 +121,7 @@ commute.group(['Start Station', 'End Station'])
 ```
 
 Fifty-four trips both started and ended at the station on 2nd at Folsom.
-A much large number (437) were between 2nd at Folsom and 2nd at
+A much larger number (437) were between 2nd at Folsom and 2nd at
 Townsend.
 
 The `pivot` method does the same classification but displays its results
@@ -191,7 +186,7 @@ Someone had a quick trip (271 seconds, or about 4.5 minutes) from
 bike trips between the 2nd Avenue stations and Adobe on Almaden, because
 the latter is in a different city.
 
-### Drawing Maps
+### Draw Maps
 
 The table `stations` contains geographical information about each bike
 station, including latitude, longitude, and a "landmark", which is the
@@ -252,7 +247,7 @@ Circle.map_table(sf_map_data, color='green', radius=200)
 
 ![Bay Area Map](../media/folium2.png)
 
-### More informative maps: an application of `join`
+### More informative maps: An application of join
 
 The bike stations are located in five different cities in the Bay Area.
 To distinguish the points by using a different color for each city,
@@ -340,7 +335,7 @@ station_starts
 ```
 
 ``` output
-| name                             | station\_id | lat     | long     | dockcount | landmark      | installation | count |
+| name                             | station_id | lat     | long     | dockcount | landmark      | installation | count |
 |----------------------------------|-------------|---------|----------|-----------|---------------|--------------|-------|
 | 2nd at Folsom                    | 62          | 37.7853 | -122.396 | 19        | San Francisco | 8/22/2013    | 7841  |
 | 2nd at South Park                | 64          | 37.7823 | -122.393 | 15        | San Francisco | 8/22/2013    | 9274  |

@@ -125,9 +125,9 @@ The use of the argument `are.above(10)` ensured that each selected row
 had a value of `Salary` that was greater than 10.
 
 There are 69 rows in the new table, corresponding to the 69 players who
-made more than $10$ million dollars. Arranging these rows in order makes
+made more than $10 million dollars. Arranging these rows in order makes
 the data easier to analyze. DeMar DeRozan of the Toronto Raptors was the
-"poorest" of this group, at a salary of just over $10$ million dollars.
+"poorest" of this group, at a salary of just over $1 million dollars.
 
 ``` python
 nba.where('Salary', are.above(10)).sort('Salary')
@@ -152,7 +152,7 @@ nba.where('Salary', are.above(10)).sort('Salary')
 
 How much did Stephen Curry make? For the answer, we have to access the
 row where the value of `Player` is equal to `Stephen Curry`. That is
-placed a table consisting of just one line:
+displayed in a table consisting of just one line:
 
 ``` python
 nba.where('Player', are.equal_to('Stephen Curry'))
@@ -280,8 +280,9 @@ nba.where('Player', are.equal_to('Barack Obama'))
 ```
 
 ``` output
-| Player | Position |  Team | Salary |
-|--------|----------|------|--------|  
+| Player | Position | Team | Salary |
+|--------|----------|------|--------|
+
 ```
 
 ### Some more conditions

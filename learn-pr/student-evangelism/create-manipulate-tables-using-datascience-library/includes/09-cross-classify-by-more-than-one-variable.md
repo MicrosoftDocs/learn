@@ -7,7 +7,7 @@ year, or by a combination of major and year.
 The `group` method also allows us to classify individuals according to
 multiple variables. This is called *cross-classifying*.
 
-### Two variables: counting the number in each paired category
+### Two variables: Count the number in each paired category
 
 The table `more_cones` records the flavor, color, and price of six ice
 cream cones.
@@ -74,7 +74,7 @@ more_cones.group(['Flavor', 'Color'])
 
 ```
 
-### Two variables: finding a characteristic of each paired category
+### Two variables: Find a characteristic of each paired category
 
 A second argument aggregates all other columns that are not in the list
 of grouped columns.
@@ -99,7 +99,7 @@ that is the first argument. But cross-classifying by multiple variables
 can become complex, as the number of distinct combinations of categories
 can be quite large.
 
-### Pivot tables: rearranging the output of `group`
+### Rearrange the output of group
 
 Many uses of cross-classification involve just two categorical
 variables, like `Flavor` and `Color` in the example above. In these
@@ -155,8 +155,6 @@ rows.
 
 ### The pivot method
 
-**`pivot`**
-
 The `pivot` method is closely related to the `group` method: it groups
 together rows that share a combination of values. It differs from
 `group` because it organizes the resulting values in a grid. The first
@@ -210,7 +208,7 @@ Though the numbers in both tables are the same, table produced by
 advantage of `pivot` is that it places grouped values into adjacent
 columns, so that they can be combined and compared.
 
-### Example: education and income of californian adults
+### Example: Education and income of Californian adults
 
 The State of California's Open Data Portal is a rich source of
 information about the lives of Californians. It is our source of a
@@ -286,13 +284,14 @@ educ_totals = education.group('Educational Attainment', sum)
 educ_totals
 ```
 
-``` python
-|Educational Attainment|Population Count sum|
-|--- |--- |
-|Bachelor's degree or higher|8525698|
-|College, less than 4-yr degree|7775497|
-|High school or equivalent|6294141|
-|No high school diploma|4258277|  
+``` output
+| Educational Attainment         | Population Count sum |
+|--------------------------------|----------------------|
+| Bachelor's degree or higher    | 8525698              |
+| College, less than 4-yr degree | 7775497              |
+| High school or equivalent      | 6294141              |
+| No high school diploma         | 4258277              |
+
 ```
 
 There are only four categories of educational attainment. The counts are
@@ -318,12 +317,13 @@ educ_distribution
 ```
 
 ``` output
-|Educational Attainment|Population Count sum|Population Percent|
-|--- |--- |--- |
-|Bachelor's degree or higher|8525698|31.75|
-|College, less than 4-yr degree|7775497|28.96|
-|High school or equivalent|6294141|23.44|
-|No high school diploma|4258277|15.86|  
+| Educational Attainment         | Population Count sum | Population Percent |
+|--------------------------------|----------------------|--------------------|
+| Bachelor's degree or higher    | 8525698              | 31.75              |
+| College, less than 4-yr degree | 7775497              | 28.96              |
+| High school or equivalent      | 6294141              | 23.44              |
+| No high school diploma         | 4258277              | 15.86              |
+
 ```
 
 By using `pivot`, we can get a contingency table (a table of counts) of

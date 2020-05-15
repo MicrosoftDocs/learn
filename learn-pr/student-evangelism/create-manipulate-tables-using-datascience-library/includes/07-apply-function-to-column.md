@@ -74,7 +74,7 @@ ages
 
 ```
 
-### `apply`
+### Apply method
 
 To cut off each of the ages at 100, we will use the a new Table method.
 The `apply` method calls a function on each element of a column, forming
@@ -141,7 +141,7 @@ function, just like it would print out a number or a string value.
 cut_off_at_100
 ```
 
-```
+``` output
 \<function **main**.cut\_off\_at\_100(x)\>
 ```
 
@@ -166,13 +166,13 @@ Now `cut_off` is a name for a function. It's the same function as
 cut_off
 ```
 
-```
+``` output
 \<function **main**.cut\_off\_at\_100(x)\>
 ```
 
 Let us see another application of `apply`.
 
-### Example: prediction
+### Example: Prediction
 
 Data Science is often used to make predictions about the future. If we
 are trying to predict an outcome for a particular individual -- for

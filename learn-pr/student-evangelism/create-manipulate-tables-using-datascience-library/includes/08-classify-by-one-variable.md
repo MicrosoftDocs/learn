@@ -8,7 +8,7 @@ each group.
 This section is about classifying individuals into categories that are
 not numerical. We begin by recalling the basic use of `group`.
 
-### Counting the number in each category
+### Count the number in each category
 
 The `group` method with a single argument counts the number of rows for
 each category in a column. The result contains one row per unique value
@@ -58,7 +58,7 @@ The `Price` column has not been used.
 But what if we wanted the total price of the cones of each different
 flavor? That's where the second argument of `group` comes in.
 
-### Finding a characteristic of each category
+### Find a characteristic of each category
 
 The optional second argument of `group` names the function that will be
 used to aggregate values in other columns for all of those rows. For
@@ -76,17 +76,18 @@ cones.group('Flavor', sum)
 ```
 
 ``` output
-|Flavor|Price sum|
-|--- |--- |
-|chocolate|16.55|
-|strawberry|8.8|
+| Flavor     | Price sum |
+|------------|-----------|
+| chocolate  | 16.55     |
+| strawberry | 8.8       |
+
 ```
 
 To create this new table, `group` has calculated the sum of the `Price`
 entries in all the rows corresponding to each distinct flavor. The
-prices in the three `chocolate` rows add up to $\$16.55$ (you can assume
+prices in the three `chocolate` rows add up to $16.55 (you can assume
 that price is being measured in dollars). The prices in the two
-`strawberry` rows have a total of $\$8.80$.
+`strawberry` rows have a total of $8.80.
 
 The label of the newly created "sum" column is `Price sum`, which is
 created by taking the label of the column being summed, and appending
@@ -106,7 +107,9 @@ only the chocolate cones, and then accessing the column of prices:
 cones.where('Flavor', are.equal_to('chocolate')).column('Price')
 ```
 
+``` output
 array(\[4.75, 6.55, 5.25\])
+```
 
 ``` python
 sum(cones.where('Flavor', are.equal_to('chocolate')).column('Price'))
@@ -141,10 +144,11 @@ price_totals
 ```
 
 ``` output
-|Flavor|Array of All the Prices|Sum of the Array|
-|--- |--- |--- |
-|chocolate|\[4.75 6.55 5.25\]|16.55|
-|strawberry|\[3.55 5.25\]|8.8|
+| Flavor     | Array of All the Prices | Sum of the Array |
+|------------|-------------------------|------------------|
+| chocolate  | \[4.75 6.55 5.25\]      | 16.55            |
+| strawberry | \[3.55 5.25\]           | 8.8              |
+
 ```
 
 You can replace `sum` by any other functions that work on arrays. For
@@ -155,10 +159,11 @@ cones.group('Flavor', max)
 ```
 
 ``` output
-|Flavor|Price max|
-|--- |--- |
-|chocolate|6.55|
-|strawberry|5.25|
+| Flavor     | Array of All the Prices | Sum of the Array |
+|------------|-------------------------|------------------|
+| chocolate  | \[4.75 6.55 5.25\]      | 16.55            |
+| strawberry | \[3.55 5.25\]           | 8.8              |
+
 ```
 
 Once again, `group` creates arrays of the prices in each `Flavor`
@@ -172,10 +177,11 @@ price_maxes
 ```
 
 ``` output
-|Flavor|Array of All the Prices|Max of the Array|
-|--- |--- |--- |
-|chocolate|\[4.75 6.55 5.25\]|6.55|
-|strawberry|\[3.55 5.25\]|5.25|
+| Flavor     | Array of All the Prices | Max of the Array |
+|------------|-------------------------|------------------|
+| chocolate  | \[4.75 6.55 5.25\]      | 6.55             |
+| strawberry | \[3.55 5.25\]           | 5.25             |
+
 ```
 
 Indeed, the original call to `group` with just one argument has the same
@@ -189,10 +195,11 @@ lengths
 ```
 
 ``` output
-|Flavor|Array of All the Prices|Length of the Array|
-|--- |--- |--- |
-|chocolate|\[4.75 6.55 5.25\]|3|
-|strawberry|\[3.55 5.25\]|2|
+| Flavor     | Array of All the Prices | Length of the Array |
+|------------|-------------------------|---------------------|
+| chocolate  | \[4.75 6.55 5.25\]      | 3                   |
+| strawberry | \[3.55 5.25\]           | 2                   |
+
 ```
 
 ### Example: NBA salaries
@@ -225,7 +232,9 @@ nba
 ... (407 rows omitted)
 ```
 
-**1.** How much money did each team pay for its players' salaries?
+### Amount paid for salaries
+
+How much money did each team pay for its players' salaries?
 
 The only columns involved are `TEAM` and `SALARY`. We have to `group`
 the rows by `TEAM` and then `sum` the salaries of the groups.
@@ -253,7 +262,9 @@ teams_and_money.group('TEAM', sum)
 ... (20 rows omitted)
 ```
 
-**2.** How many NBA players were there in each of the five positions?
+### Number of players per position
+
+How many NBA players were there in each of the five positions?
 
 We have to classify by `POSITION`, and count. This can be done with just
 one argument to group:
@@ -273,7 +284,9 @@ nba.group('POSITION')
 
 ```
 
-**3.** What was the average salary of the players at each of the five
+### Average salary per position
+
+What was the average salary of the players at each of the five
 positions?
 
 This time, we have to group by `POSITION` and take the mean of the

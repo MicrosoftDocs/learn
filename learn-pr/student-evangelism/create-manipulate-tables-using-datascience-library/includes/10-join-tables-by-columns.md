@@ -143,12 +143,6 @@ reviews = Table().with_columns(
 )
 reviews
 ```
-| Flavor    | Stars |
-|-----------|-------|
-| vanilla   | 5     |
-| chocolate | 3     |
-| vanilla   | 5     |
-| chocolate | 4     |  
 
 ``` output
 | Flavor    | Stars |

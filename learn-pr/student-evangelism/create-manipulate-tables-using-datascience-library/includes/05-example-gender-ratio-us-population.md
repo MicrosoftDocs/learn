@@ -1,11 +1,8 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **introduction-to-tables.ipynb** in your virtual environment.
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science".
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) please refer to unit 1, for guidance on setting up your environment.
 
-Please refer to the unit, Setting up your virtual environment.
-
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments).
 
 
 ``` python
@@ -24,7 +21,7 @@ partial_census_table
 us_pop = partial_census_table.relabeled('POPESTIMATE2010', '2010').relabeled('POPESTIMATE2014', '2014')
 ```
 
-## Example: trends in gender
+## Example: Trends in gender
 
 We are now equipped with enough coding skills to examine features and
 trends in subgroups of the United States population. In this example, we will
@@ -63,7 +60,7 @@ codes: `0` stands for the total, `1` for male, and `2` for female. The
 `999` represents the entire population regardless of age. The rest of
 the columns contain estimates of the US population.
 
-### Understanding `AGE` = 100
+### Understand data for the age value 100
 
 As a preliminary, let's interpret data in the final age category in the
 table, where `AGE` is 100. The code below extracts the rows for the
@@ -94,7 +91,7 @@ The row with `AGE` 100 doesn't just represent 100 year olds, it also
 includes those who are older than 100. That is why the numbers in that
 row are larger than in the row for the 99-year-olds.
 
-### Overall Proportions of males and females
+### Overall proportions of males and females
 
 We will now begin looking at gender ratios in 2014. First, let's look at
 all the age groups together. Remember that this means looking at the

@@ -117,8 +117,10 @@ x
 
     NameError: name 'x' is not defined
 ```
-    
-**Docstrings.** Though `double` is relatively easy to understand, many
+
+### Docstrings
+
+Though `double` is relatively easy to understand, many
 functions perform complicated tasks and are difficult to use without
 explanation. (You may have discovered this yourself!) Therefore, a
 well-composed function has a name that evokes its behavior, as well as
@@ -185,7 +187,7 @@ some_array = make_array(7, 10, 4)
 percents(some_array)
 ```
 
-``` outout
+``` output
     array([33.33, 47.62, 19.05])
 ```
 
