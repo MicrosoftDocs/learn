@@ -12,7 +12,7 @@ A database account is a container for multiple Azure Cosmos DB databases.
 
 1. Create an Azure Cosmos DB account by using the following command:
 
-    ```bash
+    ```azurecli
     az cosmosdb create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name $COSMOS_NAME
@@ -73,7 +73,7 @@ We look at indexing in units 6 and 7.
 
 1. Create a database called `mslearn` in your Azure Cosmos DB account. We need only one database for these exercises.
 
-    ```bash
+    ```azurecli
     az cosmosdb database create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --account-name $COSMOS_NAME \
@@ -86,7 +86,7 @@ We look at indexing in units 6 and 7.
 
     We'll allocate a smaller capacity to this collection to demonstrate overloading it. The partition key for this collection is the unique identifier of the order. In this case, the partition isn't important because the collection is smaller than a single partition.
 
-    ```bash
+    ```azurecli
     az cosmosdb sql container create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --account-name $COSMOS_NAME \
@@ -100,7 +100,7 @@ We look at indexing in units 6 and 7.
 
     This collection uses an order item's product category as the partition key. We'll explore the consequences of this choice as we go through the exercises in this module.
 
-    ```bash
+    ```azurecli
     az cosmosdb sql container create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --account-name $COSMOS_NAME \
@@ -114,7 +114,7 @@ We look at indexing in units 6 and 7.
 
     This collection partitions the documents by the order item's unique product identifier.
 
-    ```bash
+    ```azurecli
     az cosmosdb sql container create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --account-name $COSMOS_NAME \
