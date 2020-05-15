@@ -9,7 +9,9 @@ string.
 "loud".upper()
 ```
 
+``` output
     'LOUD'
+```
 
 Perhaps the most important method is `replace`, which replaces all
 instances of a substring within the string. The `replace` method takes
@@ -19,7 +21,9 @@ two arguments, the text to be replaced and its replacement.
 'hitchhiker'.replace('hi', 'ma')
 ```
 
+``` output
     'matchmaker'
+```
 
 String methods can also be invoked using variable names, as long as
 those names are bound to strings. So, for instance, the following
@@ -33,7 +37,9 @@ u = t.replace('in', 'de')
 u
 ```
 
+``` output
     'degrade'
+```
 
 Note that the line `t = s.replace('t', 'ing')` doesn't change the string
 `s`, which is still "train". The method call `s.replace('t', 'ing')`
@@ -43,7 +49,9 @@ just has a value, which is the string "ingrain".
 s
 ```
 
+``` output
     'train'
+```
 
 This is the first time we've seen methods, but methods are not unique to
 strings. As we will see shortly, other types of objects can have them.

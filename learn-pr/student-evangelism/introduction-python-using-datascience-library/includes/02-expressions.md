@@ -16,7 +16,9 @@ is displayed below the cell.
 3 * 4
 ```
 
-    12
+``` output
+12
+```
 
 The grammar rules of a programming language are rigid. In Python, the
 `*` symbol cannot appear twice in a row. The computer will not try to
@@ -46,21 +48,23 @@ second: 3 times 3 times 3 times 3). The symbols `*` and `**` are called
 3 ** 4
 ```
 
-    81
+``` output
+81
+```
 
 **Common operators.** Data science often involves combining numerical
 values, and the set of operators in a programming language are designed
 to so that expressions can be used to express any sort of arithmetic. In
 Python, the following operators are essential.
 
-  Expression Type   Operator   Example      Value
-  ----------------- ---------- ------------ -----------
-  Addition          `+`        `2 + 3`      `5`
-  Subtraction       `-`        `2 - 3`      `-1`
-  Multiplication    `*`        `2 * 3`      `6`
-  Division          `/`        `7 / 3`      `2.66667`
-  Remainder         `%`        `7 % 3`      `1`
-  Exponentiation    `**`       `2 ** 0.5`   `1.41421`
+| Expression Type | Operator | Example    | Value     |
+|-----------------|----------|------------|-----------|
+| Addition        | `+`      | `2 + 3`    | `5`       |
+| Subtraction     | `-`      | `2 - 3`    | `-1`      |
+| Multiplication  | `*`      | `2 * 3`    | `6`       |
+| Division        | `/`      | `7 / 3`    | `2.66667` |
+| Remainder       | `%`      | `7 % 3`    | `1`       |
+| Exponentiation  | `**`     | `2 ** 0.5` | `1.41421` |
 
 Python expressions obey the same familiar rules of *precedence* as in
 algebra: multiplication and division occur before addition and
@@ -71,13 +75,17 @@ expressions within a larger expression.
 1 + 2 * 3 * 4 * 5 / 6 ** 3 + 7 + 8 - 9 + 10
 ```
 
-    17.555555555555557
+``` output
+17.555555555555557
+```
 
 ``` python
 1 + 2 * (3 * 4 * 5 / 6) ** 3 + 7 + 8 - 9 + 10
 ```
 
-    2017.0
+``` output
+2017.0
+```
 
 This chapter introduces many types of expressions. Learning to program
 involves trying out everything you learn in combination, investigating
