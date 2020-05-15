@@ -1,12 +1,3 @@
-``` python
-from datascience import *
-import numpy as np
-path_data = '../../../../data/'
-%matplotlib inline
-import matplotlib.pyplot as plt
-plt.style.use('fivethirtyeight')
-```
-
 In this chapter, we have learned how to visualize data by drawing
 graphs. A common use of such visualizations is to compare two datasets.
 In this section, we will see how to *overlay* plots, that is, draw them
@@ -50,20 +41,22 @@ heights = Table.read_table(path_data + 'galton_subset.csv')
 heights
 ```
 
-|father|mother|son|
-|--- |--- |--- |
-|78.5|67|73.2|
-|75.5|66.5|73.5|
-|75|64|71|
-|75|64|70.5|
-|75|58.5|72|
-|74|68|76.5|
-|74|62|74|
-|73|67|71|
-|73|67|68|
-|73|66.5|71|
+``` output
+| father | mother | son  |
+|--------|--------|------|
+| 78.5   | 67     | 73.2 |
+| 75.5   | 66.5   | 73.5 |
+| 75     | 64     | 71   |
+| 75     | 64     | 70.5 |
+| 75     | 58.5   | 72   |
+| 74     | 68     | 76.5 |
+| 74     | 62     | 74   |
+| 73     | 67     | 71   |
+| 73     | 67     | 68   |
+| 73     | 66.5   | 71   |
 
 ... (169 rows omitted)
+```
 
 The `scatter` method allows us to visualize how the sons' heights are
 related to the heights of both their parents. In the graph, the sons'
@@ -105,27 +98,29 @@ children = us_pop.where('SEX', are.equal_to(0)).where('AGE', are.below(19)).drop
 children.show()
 ```
 
-|AGE|2010|2014|
-|--- |--- |--- |
-|0|3951330|3949775|
-|1|3957888|3949776|
-|2|4090862|3959664|
-|3|4111920|4007079|
-|4|4077551|4005716|
-|5|4064653|4006900|
-|6|4073013|4135930|
-|7|4043046|4155326|
-|8|4025604|4120903|
-|9|4125415|4108349|
-|10|4187062|4116942|
-|11|4115511|4087402|
-|12|4113279|4070682|
-|13|4119666|4171030|
-|14|4145614|4233839|
-|15|4231002|4164796|
-|16|4313252|4168559|
-|17|4376367|4186513|
-|18|4491005|4227920|
+``` output
+| AGE | 2010    | 2014    |
+|-----|---------|---------|
+| 0   | 3951330 | 3949775 |
+| 1   | 3957888 | 3949776 |
+| 2   | 4090862 | 3959664 |
+| 3   | 4111920 | 4007079 |
+| 4   | 4077551 | 4005716 |
+| 5   | 4064653 | 4006900 |
+| 6   | 4073013 | 4135930 |
+| 7   | 4043046 | 4155326 |
+| 8   | 4025604 | 4120903 |
+| 9   | 4125415 | 4108349 |
+| 10  | 4187062 | 4116942 |
+| 11  | 4115511 | 4087402 |
+| 12  | 4113279 | 4070682 |
+| 13  | 4119666 | 4171030 |
+| 14  | 4145614 | 4233839 |
+| 15  | 4231002 | 4164796 |
+| 16  | 4313252 | 4168559 |
+| 17  | 4376367 | 4186513 |
+| 18  | 4491005 | 4227920 |
+```
 
 We can now draw two overlaid line plots, showing the numbers of children
 in the different age groups for each of the years 2010 and 2014. The
@@ -180,12 +175,14 @@ usa_ca = Table.read_table(path_data + 'usa_ca_2014.csv')
 usa_ca
 ```
 
-|Ethnicity|USA All|CA All|USA Children|CA Children|
-|--- |--- |--- |--- |--- |
-|Black|0.12|0.05|0.14|0.05|
-|Hispanic|0.18|0.38|0.24|0.5|
-|White|0.62|0.39|0.52|0.29|
-|Other|0.08|0.18|0.1|0.16|
+``` output
+| Ethnicity | USA All | CA All | USA Children | CA Children |
+|-----------|---------|--------|--------------|-------------|
+| Black     | 0.12    | 0.05   | 0.14         | 0.05        |
+| Hispanic  | 0.18    | 0.38   | 0.24         | 0.5         |
+| White     | 0.62    | 0.39   | 0.52         | 0.29        |
+| Other     | 0.08    | 0.18   | 0.1          | 0.16        |
+```
 
 It is natural to want to compare these distributions. It makes sense to
 compare the columns directly, because all the entries are proportions
