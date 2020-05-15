@@ -21,6 +21,4 @@ If you aren't interested in viewing the content interactively, feel free to skip
 
 1. Wait about a minute for the environment to be created.
 
-1. Wait for another minute or so while the environment is set up for you. In the background we're installing some components you'll need for the exercise. You'll see the following things happen:
-
-1. A list of notebook (.ipynb) files will appear in the pane on the left.
+1. Wait for another minute or so while the environment is set up for you. In the background we're installing some components you'll need for the exercise. You'll see a list of notebook (.ipynb) files will appear in the pane on the left.

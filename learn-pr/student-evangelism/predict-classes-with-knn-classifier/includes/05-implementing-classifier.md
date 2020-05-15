@@ -1,11 +1,11 @@
 > [!NOTE]
 > You can find an interactive version of this unit named **implementing-the-classifier.ipynb** in your virtual environment
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**.
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
-We are now ready to implement a $k$-nearest neighbor classifier based on
+We are now ready to implement a k-nearest neighbor classifier based on
 multiple attributes. We have used only two attributes so far, for ease
 of visualization. But usually predictions will be based on many
 attributes. Here is an example that shows how multiple attributes can be
@@ -63,7 +63,7 @@ predicting whether the banknote is counterfeit or not. However, in this
 example you can now see that there is some overlap between the blue
 cluster and the gold cluster. This indicates that there will be some
 images where it's hard to tell whether the banknote is legitimate based
-on just these two numbers. Still, you could use a $k$-nearest neighbor
+on just these two numbers. Still, you could use a k-nearest neighbor
 classifier to predict the legitimacy of a banknote.
 
 Take a minute and think it through: Suppose we used $k=11$ (say). What
@@ -81,7 +81,7 @@ banknotes.scatter('WaveletSkew', 'Entropy', group='Color')
 ![Classifier](../media/91-implementing-classifier-9-0.png)
 
 There does seem to be a pattern, but it's a complex one.
-Nonetheless, the $k$-nearest neighbors classifier can still be used and
+Nonetheless, the k-nearest neighbors classifier can still be used and
 will effectively "discover" patterns out of this. This illustrates how
 powerful machine learning can be: it can effectively take advantage of
 even patterns that we would not have anticipated, or that we would have
@@ -95,12 +95,12 @@ instance, what if we have three attributes?
 
 Here's the cool part: you can use the same ideas for this case, too. All
 you have to do is make a three-dimensional scatterplot, instead of a
-two-dimensional plot. You can still use the $k$-nearest neighbors
+two-dimensional plot. You can still use the k-nearest neighbors
 classifier, but now computing distances in three dimensions instead of just
 two. It just works. Cool!
 
 In fact, there's nothing special about two or three. If you have four attributes,
-you can use the $k$-nearest neighbors classifier in four dimensions. five
+you can use the k-nearest neighbors classifier in four dimensions. five
 attributes? Work in five-dimensional space. And no need to stop there! This
 all works for arbitrarily many attributes; you just work in a high
 dimensional space. It gets wicked-impossible to visualize, but that's
@@ -129,24 +129,24 @@ attributes, the two clusters have almost no overlap. In other words, a
 classifier that uses these three attributes will be more accurate than one
 that only uses the 2 attributes.
 
-This is a general phenomenom in classification. Each attribute can
+This is a general phenomenon in classification. Each attribute can
 potentially give you new information, so more attributes sometimes helps
 you build a better classifier. The cost is that now we have
 to gather more information to measure the value of each attribute, but
 this cost may be well worth it if it significantly improves the accuracy
 of our classifier.
 
-To sum up: you now know how to use $k$-nearest neighbor classification
+To sum up: you now know how to use k-nearest neighbor classification
 to predict the answer to a yes/no question, based on the values of some
 attributes, assuming you have a training set with examples where the
 correct prediction is known. The general roadmap is this:
 
-1.  identify some attributes that you think might help you predict the
+1.  Identify some attributes that you think might help you predict the
     answer to the question.
 2.  Gather a training set of examples where you know the values of the
     attributes as well as the correct prediction.
 3.  To make predictions in the future, measure the value of the
-    attributes and then use $k$-nearest neighbor classification to
+    attributes and then use k-nearest neighbor classification to
     predict the answer to the question.
 
 ### Distance in multiple dimensions
@@ -292,7 +292,7 @@ attributes. After that, we'll see how accurate it is.
 
 It's time to write some code to implement the classifier. The input is a
 `point` that we want to classify. The classifier works by finding the
-$k$ nearest neighbors of `point` from the training set. So, our approach
+k-nearest neighbors of `point` from the training set. So, our approach
 will go like this:
 
 1.  Find the closest $k$ neighbors of `point`, i.e., the $k$ wines from

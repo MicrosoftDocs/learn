@@ -112,7 +112,7 @@ don't have CKD, and the rest tend to be folks with CKD. To a human, the
 pattern is obvious. But how can we program a computer to automatically
 detect patterns such as this one?
 
-### A Nearest neighbor classifier
+### A nearest neighbor classifier
 
 There are lots of kinds of patterns one might look for, and lots of
 algorithms for classification. But I'm going to tell you about one that
@@ -166,10 +166,11 @@ show_closest(alice)
 
 ![88 nearest neighbors](../media/88-nearest-neighbors-16-0.png)
 
-Thus our *nearest neighbor classifier* works like this: - Find the point
-in the training set that is nearest to the new point. - If that nearest
-point is a "CKD" point, classify the new point as "CKD". If the nearest
-point is a "not CKD" point, classify the new point as "not CKD".
+Thus our *nearest neighbor classifier* works like this:
+
+- Find the point in the training set that is nearest to the new point.
+- If that nearest point is a "CKD" point, classify the new point as "CKD". 
+- If the nearest point is a "not CKD" point, classify the new point as "not CKD".
 
 The scatterplot suggests that this nearest neighbor classifier should be accurate. Points in the lower right will tend to receive an "no
 CKD" diagnosis, as their nearest neighbor will be a gold point. The rest
@@ -199,7 +200,7 @@ alice = make_array(0, 0.97)
 show_closest(alice)
 ```
 
-![88 nearest neighbour](../media/88-nearest-neighbors-19-0.png)
+![88 nearest neighbor](../media/88-nearest-neighbors-19-0.png)
 
 Here are hundreds of new unclassified points, all in red.
 

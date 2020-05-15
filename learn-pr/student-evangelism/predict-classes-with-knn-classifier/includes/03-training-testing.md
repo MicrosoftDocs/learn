@@ -1,7 +1,7 @@
 > [!NOTE]
 > You can find an interactive version of this unit named **training-and-testing.ipynb** in your virtual environment
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", refer to the first unit **Setup.**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", refer to the first unit **Setup**.
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
@@ -96,13 +96,13 @@ We will use an analogous idea to test our classifier. We will *create
 two samples out of the original training set*, use one of the samples as
 our training set, and *the other one for testing*.
 
-So we will have three groups of individuals: - a training set on which
-we can do any amount of exploration to build our classifier; - a
-separate testing set on which to try out our classifier and see what
-fraction of times it classifies correctly; - the underlying population
-of individuals for whom we don't know the true classes; the hope is that
-our classifier will succeed about as well for these individuals as it
-did for our testing set.
+So we will have three groups of individuals:
+
+1. A training set on which we can do any amount of exploration to build our classifier.
+2. A separate testing set on which to try out our classifier and see what fraction of times it classifies correctly. 
+3. The underlying population of individuals for whom we don't know the true classes.
+
+The hope is that our classifier will succeed about as well for these individuals as it did for our testing set.
 
 How to generate the training and testing sets? You've guessed it--we'll select at random.
 

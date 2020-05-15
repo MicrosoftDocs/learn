@@ -1,7 +1,7 @@
 > [!NOTE]
 > You can find an interactive version of this unit named **accuracy-of-the-classifier.ipynb** in your virtual environment
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**.
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
@@ -25,7 +25,7 @@ estimate of its accuracy.
 ### Measuring the accuracy of our wine classifier
 
 OK, so let's apply the hold-out method to evaluate the effectiveness of
-the $k$-nearest neighbor classifier for identifying wines. The data set
+the k-nearest neighbor classifier for identifying wines. The data set
 has 178 wines, so we'll randomly permute the data set and put 89 of them
 in the training set and the remaining 89 in the test set.
 
