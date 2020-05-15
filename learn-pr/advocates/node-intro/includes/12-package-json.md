@@ -4,7 +4,7 @@ The package.json file is manifest file for your Node.js project. It contains a l
 
 A `package.json` file is not something you author by hand but it's the result of running the `init` command. There are two major ways to run this command:
 
-- `npm init`, this will start a wizard where you are prompted for information around `name`, `version`, `description`, `entry point`, `test command`, `git repository`, `keywords`, `author`, `license`
+- `npm init`, this will start a wizard where you are prompted for information around `name`, `version`, `description`, `entry point`, `test command`, `git repository`, `keywords`, `author`, `license`.
 - `npm init -y`, this version of the command including the flag `-y` is a quicker version of `npm init`. It's quicker in the sense that it's *not* interactive. Instead it assigns the default value to all fields that you were asked for when running `npm init`.
 
 Regardless of whether you run the `npm init` or `npm init -y` command it will generate a `package.json` file. Here's what a generated `package.json` can look like:
@@ -54,16 +54,3 @@ Let's list some actions that you are likely to set up
 - Test, this should run the tests of your project so if you are using a 3rd party test library it should invoke it's executable.
 
 What actions you set up after this is up to the project you are building but the above actions are the most common ones.
-
-## Share your Node.js project
-
-A lot of the fields in a `package.json` files are used if you want to distribute your Node.js project as a package. Setting those fields becomes mandatory or strongly recommended in that context. Here are some of those fields:
-
-- **version**, the `version` property governs what version your Node.js project is currently. If you plan to publish your Node.js project as a package this is something you need to fill in. Updates to your project should not only mean updating the code but also increment the version number in a predictable way. Having this approach is called semantic versioning. You will learn more about semantic versioning in the Updating chapter in this module.
-- **license**, This communicates to the consumers of your library how it can be used. There are different types of licenses. A common one is MIT which give you the right to use the software as is.
-- **files**, this is about specifying what files should be included in the package you create to distribute your Node.js project. This is an array structure where you specify what should be included. The default value is `*` which says to include all files. There are some exceptions though to what files/directories always gets included/excluded. Examples of files that are always included are `package.json`, README, LICENSE and much more. Excluded examples are files starting with a dot, `.` or files that pertains to Node and NPM and are helper files and not part of your project.
-Additionally the files `.npmignore` and `.gitignore` are looked at to specify what files/ directories should be excluded from a package.
-- **contributors**, this field should list all the authors of a library.
-- **main**, this is the entry point of your application
-- **bin**, If your project is either a CLI tool that should be a single executable or if you have a larger project with many executable files you will want to install those executable files in into the PATH - specifying this field will do that for you.
-- **repository**, this field should point to where the code exist. That could be a GitHub repository URL for example.

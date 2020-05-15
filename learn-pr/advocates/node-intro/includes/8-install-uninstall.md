@@ -4,7 +4,7 @@ There are different ways to install a package, from a registry, from a file or e
 
 The command `npm install --help` gives you all the different ways for installing a package. Currently the output looks like this:
 
-```bash
+```output
 npm install (with no args, in package dir)
 npm install [<@scope>/]<pkg>
 npm install [<@scope>/]<pkg>@<tag>
@@ -18,6 +18,13 @@ npm install <git:// url>
 npm install <github username>/<github project>
 ```
 
+The above output shows that there are a number of ways to install a library. All the different ways above cover different cases.
+
+- Scoped, these are packages scoped under a namespace at NPM.
+- Folder, you can install directly from folder
+- Tarball, a tarball is a compressed file and in this case it's a compressed Node.js project.
+- Git URL, you can also install directly from a Git URL
+
 ### Scoping & Private registries
 
 There are four different options above how to install a package that starts with the word `@scope`, what is that? All packages on the NPM registry needs to have a unique name. However if we *scope* our packages we can be more flexible on this. *Scoping* means that we add like a namespace to our packages that they group under. Packages can be scoped on user-level or org-level. Which it is depends on how you sign up to NPM as you can sign up as a user or as an organization.
@@ -30,7 +37,7 @@ Scoping your packages and making them private is something you likely want to do
 
 ### Installing from files
 
-Additionally to installing from a registry like NPM you can also install from a tarball, a compressed file. So when would I install from a tarball? One scenario is during the development of a Node.js library that your authoring. Once you want to test your library you can create the tarball in the fby typing `node pack`. Then you can place yourself in a project where you want to test out the library and install it like you would a package on NPM using the name of the package.
+Additionally to installing from a registry like NPM you can also install from a tarball, a compressed file. So when would I install from a tarball? One scenario is during the development of a Node.js library that your authoring. Once you want to test your library you can create the tarball in the by typing `node pack`. Then copy the tarball to another Node.js project where you want to install and install it like you would a library with the `npm install` command.
 
 ### Installing from GitHub
 
@@ -53,6 +60,4 @@ Globally installed packages are packages that are installed and available for al
 
 ### NPX
 
-
-
-
+NPX is an NPM package runner. It helps you run executable files that is hosted on the registry or in `node_modules/.bin`. The `.bin` directory is where executable files end up when a dependency is installed. One really great thing about NPX is it allows you to run an executable located on a registry without downloading it first.How this works is that NPX loads the needed code into the running Node process so there's no need to install anything on your machine. This makes NPX ideal to use if you just want to test out a library and see if it's something you want to use. In many cases NPX therefore replaces the need to do a global install of a library.
