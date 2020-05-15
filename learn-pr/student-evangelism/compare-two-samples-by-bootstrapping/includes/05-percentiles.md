@@ -179,7 +179,7 @@ we will just use `percentile`.
 
 ### Quartiles
 
-The *first quartile* of a numercial collection is the 25th percentile.
+The *first quartile* of a numerical collection is the 25th percentile.
 The terminology arises from *the first quarter*. The second quartile is
 the median, and the third quartile is the 75th percentile.
 

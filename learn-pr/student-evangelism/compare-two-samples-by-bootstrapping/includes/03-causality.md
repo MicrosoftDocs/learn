@@ -255,6 +255,7 @@ bta.group('Group', np.average)
 | Control   | 0.125          |
 | Treatment | 0.6            |
 
+```
 
 ``` python
 observed_proportions = bta.group('Group', np.average).column(1)

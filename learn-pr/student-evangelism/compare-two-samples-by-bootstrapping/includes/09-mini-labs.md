@@ -1,9 +1,7 @@
 > [!NOTE]
-> You'll need to set up your Online Visual Studio Codespaces environment in the setup unit at the beginning of the module to access and interact with these mini labs
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
 
-For convenience, you can launch your VS Codespaces environment by clicking the link below:
-
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) please refer to unit 1, for guidance on setting up your environment.
 
 In your online Visual Studio Codespaces environment, you'll find "mini lab" Jupyter notebooks that will allow you to apply the concepts that you've learned from this module. You'll be able to code your solutions in the notebook directly and receive real-time feedback from our autograder by running the corresponding grader cells.
 

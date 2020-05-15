@@ -1,9 +1,7 @@
-> [!NOTE] 
-> You can find an interactive version of this unit named **introduction-to-bootstrapping.ipynb** in your virtual environment
+> [!NOTE]
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", refer to the first unit **Setup**
-
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) please refer to unit 1, for guidance on setting up your environment.
 
 ### A/B testing
 
@@ -247,20 +245,23 @@ original_and_shuffled = smoking_and_birthweight.with_column('Shuffled Label', sh
 original_and_shuffled
 ```
 
-|Maternal Smoker|Birth Weight|Shuffled Label|
-|--- |--- |--- |
-|False|120|False|
-|False|113|False|
-|True|128|True|
-|True|108|False|
-|False|136|True|
-|False|138|True|
-|False|132|True|
-|False|120|False|
-|True|143|True|
-|False|140|True|
+``` output
+| Maternal Smoker | Birth Weight | Shuffled Label |
+|-----------------|--------------|----------------|
+| False           | 120          | False          |
+| False           | 113          | False          |
+| True            | 128          | True           |
+| True            | 108          | False          |
+| False           | 136          | True           |
+| False           | 138          | True           |
+| False           | 132          | True           |
+| False           | 120          | False          |
+| True            | 143          | True           |
+| False           | 140          | True           |
 
 ... (1164 rows omitted)
+
+```
 
 Each baby's mother now has a random smoker/non-smoker label in the
 column `Shuffled Label`, while her original label is in
@@ -493,7 +494,9 @@ smokers were younger on average.
 
 ## Learning objectives
 
-- Study A/B Tests and how to run an A/B Test.
-- Prove causality with Randomized Controlled Trial (RCTs).
-- Understand The Bootstrap: The idea behind it, what it is, and why it works.
-- Learn about Confidence Intervals: Understanding confidence levels, generating confidence intervals, and how to use them to estimate unknown parameters.
+In the following module you will learn:
+
+- The fundamentals of A/B tests and how to run an A/B test.
+- How to prove causality with randomized controlled trial (RCTs).
+- Understand the bootstrap method: The idea behind it, what it is, and why it works.
+- Learn about confidence intervals: Understanding confidence levels, generating confidence intervals, and how to use them to estimate unknown parameters.

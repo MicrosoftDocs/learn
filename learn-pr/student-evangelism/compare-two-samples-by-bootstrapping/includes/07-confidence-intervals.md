@@ -1,9 +1,7 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **compare-two-samples-by-bootstrapping.ipynb** in your virtual environment
+> You can find an interactive version of this unit named **central-limit-theorem.ipynb** in your virtual environment.If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
-
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) please refer to unit 1, for guidance on setting up your environment.
 
 We have developed a method for estimating a parameter by using random
 sampling and the bootstrap. Our method produces an interval of
@@ -379,7 +377,7 @@ To get a narrow confidence interval at a high level of confidence,
 you'll have to start with a larger sample. We'll see why in the next
 chapter.
 
-### confidence interval for a population proportion, bootstrap percentile method
+### Confidence interval for a population proportion, bootstrap percentile method
 
 In the sample, 39% of the mothers smoked during pregnancy.
 

@@ -245,7 +245,7 @@ difference_of_means(football, 'Pressure Drop', 'Team')
 Notice that the difference has been calculated as Patriots' drops minus
 Colts' drops as before.
 
-### Predicting the Statistic Under the Null Hypothesis
+### Predicting the statistic under the null hypothesis
 
 If the null hypothesis were true, then it shouldn't matter which
 footballs are labeled Patriots and which are labeled Colts. The
