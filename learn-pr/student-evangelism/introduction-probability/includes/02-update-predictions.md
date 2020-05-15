@@ -25,10 +25,12 @@ are involved.
 We will start out in a simple artificial setting just to develop the main
 technique, and then move to a more intriguing example.
 
-Suppose there is a university class with the following composition: -
-60% of the students are Second Years and the remaining 40% are Third
-Years - 50% of the Second Years have declared their major - 80% of the
-Third Years have declared their major
+Suppose there is a university class with the following composition: 
+
+- 60% of the students are Second Years and the remaining 40% are Third
+Years 
+- 50% of the Second Years have declared their major 
+- 80% of the Third Years have declared their major
 
 Now suppose **I pick a student at random from the class**. Can you
 classify the student as Second Year or Third Year, using our "more
