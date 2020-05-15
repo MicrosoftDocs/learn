@@ -13,7 +13,6 @@ durationInMinutes: 3
 content: |
   [!include[](includes/07-randomization.md)]
 quiz:
-  title: Check your Knowledge
   questions:
     - content: "If you picked a shift at random, what’s the chance there’s at least one death on that shift?"
       choices:

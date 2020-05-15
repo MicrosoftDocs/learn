@@ -21,7 +21,7 @@ summaries of IMDB data, some of which we have adapted. We have also used
 data summaries from [The Numbers](http://www.the-numbers.com), a site
 with a tagline that says it is "where data and the movie business meet."
 
-### Scatter Plots and Line Graphs
+### Scatter plots and line graphs
 
 The table `actors` contains data on Hollywood actors, both male and
 female. The columns are:
@@ -77,7 +77,7 @@ Variables that have numerical values, such as 'number of movies' or
 'average gross receipts per movie' are called *quantitative* or
 *numerical* variables.
 
-### Scatter Plots
+### Scatter plots
 
 A *scatter plot* displays the relation between two numerical variables.
 You saw an example of a scatter plot in an early section where we looked
@@ -188,7 +188,7 @@ actors.where('Number of Movies', are.below(10))
 
 As an actor, Anthony Daniels might not have the stature of Robert
 DeNiro. But his seven movies had an astonishingly high average receipt of
-nearly $452$ million dollars per movie.
+nearly $452 million dollars per movie.
 
 What were these movies? You might know about the droid C-3PO in Star
 Wars:
@@ -209,20 +209,17 @@ movie. This example is a reminder that studying the association between
 two variables often involves understanding other related variables as
 well.
 
-### Line Graphs
+### Line graphs
 
 Line graphs are among the most common visualizations and are often used
 to study chronological trends and patterns.
 
 The table `movies_by_year` contains data on movies produced by U.S.
-studios in each of the years 1980 through 2015. The columns are:
+studios in each of the years 1980 through 2015. The columns report this data for each year:
 
-| | |
-|-|-|
-|**Year**|Year|
-|**Total gross**|Total domestic box office gross, in millions of dollars, of all movies released|
-|**Number of movies**|Number of movies released|
-|**#1 Movie**|Highest grossing movie|
+- Total domestic box office gross, in millions of dollars, of all movies released
+- Number of movies released
+- Highest grossing movie
 
 ``` python
 movies_by_year = Table.read_table(path_data + 'movies_by_year.csv')
@@ -316,7 +313,7 @@ century_21.where('Year', are.equal_to(2009))
 | 2009 | 10595.5     | 521              | Avatar   |
 ```
 
-## Learning Objectives
+## Learning objectives
 
 - Learned different fundamental graphical methods of data analysis: Scatter Plots, Line Graphs, Bar Charts, and Histograms.
 - Studied categorical and numerical distributions and the difference between them.
