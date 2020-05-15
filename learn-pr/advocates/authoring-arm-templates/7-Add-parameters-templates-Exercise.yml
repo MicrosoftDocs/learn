@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.authoring-arm-templates.7-add-parameters-templates-exercise
-title: Exercise - Add parameters to your templates.
+title: Exercise - Add parameters to your templates
 azureSandbox: true
 interactive: bash
 metadata:
   title: Exercise - Add parameters to your templates.
-  description: Introduction
-  ms.date: 09/24/2018
+  description: In this unit, you will add parameters to your ARM templates.
+  ms.date: 05/12/2020
   author: pierreroman
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 12
 content: |
   [!include[](includes/7-Add-parameters-templates-Exercise.md)]

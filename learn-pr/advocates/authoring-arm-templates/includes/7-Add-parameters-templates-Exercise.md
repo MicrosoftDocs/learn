@@ -117,7 +117,7 @@ The previous version of the template you used in exercise 2 always deployed a St
 You will use the code below to update the template you have been working with.
 
 1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
-       
+
 ```azurecli
 code azuredeploy.json
 ```
@@ -136,11 +136,10 @@ Copy and execute this code block in the shell provided.  Remember to change **{y
 
 :::code language="azurecli" source="../samples/exercise3-skuparamdeploy.sh" highlight="9":::
 
-
 >[!NOTE]
 >If the deployment failed, use the **--debug** switch with the deployment command to show the debug logs. You can also use the **--verbose** switch to show the full debug logs.
 
-To see the flexibility of your template, let's deploy again. This time set the SKU parameter to Standard_GRS. You can either pass in a new name to create a different storage account, or use the same name to update your existing storage account. Both options work.
+To see the flexibility of your template, let's deploy again. This time you will set the SKU parameter to **basic** in the command overwriting the *defaultValue*. You can either pass in a new name to create a different storage account, or use the same name to update your existing storage account. Both options work.
 
 Again. Copy and execute this code block in the shell provided.  Remember to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
 

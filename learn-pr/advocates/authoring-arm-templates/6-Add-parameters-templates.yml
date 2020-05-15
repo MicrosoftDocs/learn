@@ -3,13 +3,12 @@ uid: learn.advocates.authoring-arm-templates.6-add-parameters-templates
 title: Add parameters to your templates
 metadata:
   title: Add parameters to your templates
-  description: Introduction
-  ms.date: 09/24/2018
+  description: This unit will cover parameters. Their uses and their composition.  Parameters are a great way to make your template reusable, and repeatable.
+  ms.date: 05/12/2020
   author: pierreroman
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/6-Add-parameters-templates.md)]
