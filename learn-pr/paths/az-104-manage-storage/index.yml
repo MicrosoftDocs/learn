@@ -1,40 +1,39 @@
 ### YamlMime:LearningPath
-uid: learn.az-104-manage-identities-governance
+uid: learn.az-104-manage-storage
 metadata:
-  title: AZ-104 Manage Azure identities and governance
-  description: Learn how to manage identities and governance  in Azure and prepare for Exam AZ-104 Microsoft Azure Administrator. 
+  title: AZ-104 Implement and manage storage
+  description: Learn how to manage storage in Azure and prepare for Exam AZ-104 Microsoft Azure Administrator. 
   brand: azure
   ms.date: 05/14/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: AZ-104 Manage Azure identities and governance
+title: AZ-104 Implement and manage storage
 summary: |
-  Learn how to manage users, groups, subscriptions, role-based access controls, and governance in Azure. This learning path helps prepare you for [Exam AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/exams/az-104). 
+  Learn how to manage storage accounts, data in Azure Storage, and Azure File and Blob storage. This learning path helps prepare you for [Exam AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/exams/az-104). 
 prerequisites: None
-iconUrl: /learn/achievements/az-104-manage-identities-governance.svg
+iconUrl: /learn/achievements/az-104-manage-storage.svg
 levels:
 - beginner
 roles:
 - administrator
 products:
 - azure
-- azure-active-directory
-- azure-rbac
-- azure-resource-manager
-- azure-cost-management
+- azure-storage
+- azure-storage-accounts
+- azure-storage-explorer
+- azure-blob-storage
+- azure-file-storage
+- azure-data-box-family
+- azure-virtual-machines
 modules:
-- learn.azure.create-users-and-groups-in-azure-active-directory
-- learn.azure-security.manage-users-and-groups-in-aad
-- learn.azure.allow-users-to-reset-their-password
-- learn.azure.manage-subscription-access-azure-rbac
-- learn.secure-azure-resources-with-rbac
-- learn.azure.create-custom-roles-rbac
-- learn.control-and-organize-with-resource-manager
-- learn.predict-costs-and-optimize-spending
-- learn.azure.analyze-costs-create-budgets-azure-cost-management
-- learn.azure.move-azure-resources-to-another-resource-group
-- learn.azure.manage-device-identity-ad-join
+- learn.create-azure-storage-account
+- learn.choose-the-right-disk-storage-for-vm-workload
+- learn.azure.secure-azure-storage-account
+- learn.store-and-share-with-azure-files
+- learn.upload-download-and-manage-data-with-azure-storage-explorer
+- learn.azure.export-data-with-azure-import-export
+- learn.azure.move-data-with-azure-data-box
 trophy:
-  uid: learn.az-104-manage-identities-governance.trophy
+  uid: learn.az-104-manage-storage.trophy
