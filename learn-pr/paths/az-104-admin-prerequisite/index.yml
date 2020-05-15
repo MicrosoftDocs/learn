@@ -9,7 +9,7 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: AZ-104 Prerequisite for Administrators
+title: AZ-104 Prerequisite for Azure administrators
 summary: |
   If you're an IT Administrator that's new to Azure and need to prepare for [Exam AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/exams/az-104), this path is the place to start. Learn the basic Azure concepts you'll need to know as an Azure administrator. 
 prerequisites: None
