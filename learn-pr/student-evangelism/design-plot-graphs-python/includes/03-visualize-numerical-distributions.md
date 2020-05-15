@@ -66,7 +66,7 @@ millions = top.select(0).with_column('Adjusted Gross',
 millions
 ```
 
-``` outut
+``` output
 | Title                                     | Adjusted Gross |
 |-------------------------------------------|----------------|
 | Star Wars: The Force Awakens              | 906.72         |
@@ -370,9 +370,9 @@ bins have different widths.
 
 That is why a histogram has two defining properties:
 
-1.  The bins are drawn to scale and are contiguous (though some might be
+- The bins are drawn to scale and are contiguous (though some might be
     empty), because the values on the horizontal axis are numerical.
-2.  The **area** of each bar is proportional to the number of entries in
+- The **area** of each bar is proportional to the number of entries in
     the bin.
 
 Property 2 is the key to drawing a histogram, and is usually achieved as
