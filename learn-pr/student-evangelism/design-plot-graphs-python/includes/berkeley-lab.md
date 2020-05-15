@@ -16,13 +16,13 @@ A Visual Studio Codespaces environment based on the MicrosoftDocs/inferentialthi
 
 1. If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
 
-- Environment Name: A name for your environment - for example, inferential thinking.
+    - Environment Name: A name for your environment - for example, inferential thinking.
 
-- Git Repository: MicrosoftDocs/inferentialthinking
+    - Git Repository: MicrosoftDocs/inferentialthinking
 
-- Instance Type: Standard (Linux) 4 cores, 8GB RAM
+    - Instance Type: Standard (Linux) 4 cores, 8GB RAM
 
-- Suspend idle environment after: 30 minutes
+    - Suspend idle environment after: 30 minutes
 
 1. Wait for the environment to be created. This will take around a minute.
 
