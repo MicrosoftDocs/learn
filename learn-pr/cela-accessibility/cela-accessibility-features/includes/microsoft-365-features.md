@@ -1,13 +1,14 @@
 Like the Windows 10 operating system, Microsoft apps offer features and tools to help people of all abilities access and navigate technology.
 
 ## Microsoft Teams
+
 Microsoft Teams is a messaging app for virtual conversations, meetings, and collaboration. Accessibility tools are built in to make communication and teamwork more inclusive.
 
 With live captions, Teams can detect what's said in a meeting and present real-time captions for anyone who wants them. Live captions can make your meeting more inclusive to participants who are deaf or hard-of-hearing, people with different levels of language proficiency, and participants in loud places by giving them another way to follow along.
 
 :::image type="content" source="../media/teams-meeting.png" alt-text="Five people in a Microsoft Teams meeting using live captions":::
 
-To use live captions in a meeting, go to your meeting controls and select **More options** :::image type="content" source="../media/more-options.png" alt-text="More options button"::: > **Turn on live captions (preview)**.
+To use live captions in a meeting, go to your meeting controls and select **More options** ![More options button](../media/more-options.png) > **Turn on live captions (preview)**.
 
 Teams can also help minimize communication barriers with language translation. The inline message translation feature allows users to translate Teams messages in the language specified in their personal
 language settings for Microsoft 365.
@@ -25,6 +26,7 @@ To launch Immersive Reader from a Teams message, hover over a message with your 
 For more information, explore the [Accessibility overview of Microsoft Teams](https://support.office.com/en-us/article/accessibility-overview-of-microsoft-teams-2d4009e7-1300-4766-87e8-7a217496c3d5).
 
 ## PowerPoint Designer
+
 PowerPoint Designer improves your slides by automatically generating design ideas that you can choose from. While you*'*re putting content like images and text on a slide, Designer works in the background to match that content to *professionally designed layouts.
 
 Designer can be useful for anyone looking to take their presentation to the next level. The feature can also make it easier for people with disabilities to use PowerPoint. For example, people with mobility disabilities like reduced movement of arms or hands can use PowerPoint Designer to create professional-looking slides with fewer clicks of the mouse or keyboard commands.
@@ -39,6 +41,9 @@ In Microsoft 365, users can access PowerPoint Designer by selecting the **Design
 For more information, learn how to [create professional slide layouts with PowerPoint Designer](https://support.office.com/en-us/article/create-professional-slide-layouts-with-powerpoint-designer-53c77d7b-dc40-45c2-b684-81415eac0617?ui=en-US&rs=en-US&ad=US).
 
 ## PowerPoint Presenter Coach
+
+:::image type="content" source="../media/presenter-coach.gif" alt-text="A tip pops up in PowerPoint that says practice helps you better understand your content, while onscreen text says Presenter Coach in PowerPoint gives you intelligent tips to improves your presentation skills":::
+
 Presenter Coach, PowerPoint's new AI-powered tool, provides training and feedback to improve your public speaking skills. Presenter Coach lets you enter rehearsal mode in PowerPoint, providing on-screen guidance for pacing, inclusive language, use of profanity, filler words, and culturally insensitive phrases.
 
 This feature is designed to help people practice their presentation to deliver it with confidence. This may be especially helpful for people who are neurodiverse and people with mental health disabilities such as anxiety.
@@ -61,6 +66,7 @@ To rehearse with Presenter Coach in PowerPoint for the web:
 For more information, learn how to [rehearse your slide show with Presenter Coach](https://support.office.com/en-us/article/Rehearse-your-slide-show-with-Presenter-Coach-cd7fc941-5c3b-498c-a225-83ef3f64f07b).
 
 ## Microsoft Translator
+
 Microsoft Translator helps not only break down language barriers, but also provides people who are deaf or hard of hearing with a tool to more easily understand content. For example, if someone who speaks English is listening to a presentation in a language they do not speak that is supported by Translator, they can use their device to get English captions of what the presenter is saying. Likewise, if a person is deaf, they can use Translator to get English-to-English captions of the presentation on their device.
 
 You can translate real-time conversations, menus, and even street signs whether you are offline, online, or simply accessing documents or apps on your device. For example, if someone is at an airport in a country where they don't speak the language, they can take a picture of the signs to determine when flights are arriving or departing, or perhaps just figure out where the baggage claim is located.

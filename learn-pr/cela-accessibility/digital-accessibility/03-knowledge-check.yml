@@ -3,7 +3,7 @@ uid: learn.digital-accessibility.knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge check
-  description: This unit is a quiz to find out how much you learned from this module. 
+  description: This unit lets you find out how much you learned from this module. 
   ms.date: 05/10/2020
   author: erzelman
   ms.author: erzelman
@@ -15,16 +15,16 @@ quiz:
   questions:
   - content: "Which of the following elements does not need keyboard focus when you are making your app accessible?"
     choices:
-    - content: "buttons"
+    - content: "Buttons"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "static images"
+    - content: "Static images"
       isCorrect: true
       explanation: "Correct."
-    - content: "form controls"
+    - content: "Form controls"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "links"
+    - content: "Links"
       isCorrect: false
       explanation: "Incorrect."
   - content: "What do you need to do to make data tables accessible in your web page?"
@@ -43,10 +43,10 @@ quiz:
       explanation: "Incorrect."
   - content: "Which is a good example of informative alt text for the Microsoft logo?"
     choices:
-    - content: "logo"
+    - content: "Logo"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "company logo"
+    - content: "Company logo"
       isCorrect: false
       explanation: "Incorrect."
     - content: "Microsoft logo"
