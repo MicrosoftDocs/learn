@@ -37,10 +37,11 @@ nba
 nba.take(0)
 ```
 
-``` output 
+``` output
 | Player       | Position | Team          | Salary  |
 |--------------|----------|---------------|---------|
 | Paul Millsap | PF       | Atlanta Hawks | 18.6717 |  
+
 ```
 
 This is a new table with just the single row that we specified.
@@ -58,6 +59,7 @@ nba.take(np.arange(3, 6))
 | Jeff Teague     | PG       | Atlanta Hawks | 8       |
 | Kyle Korver     | SG       | Atlanta Hawks | 5.74648 |
 | Thabo Sefolosha | SF       | Atlanta Hawks | 4       |  
+
 ```
 
 If we want a table of the top 5 highest paid players, we can first sort
@@ -67,7 +69,7 @@ the list by salary and then `take` the first five rows:
 nba.sort('Salary', descending=True).take(np.arange(5))
 ```
 
-``` output 
+``` output
 | Player          | Position | Team                | Salary  |
 |-----------------|----------|---------------------|---------|
 | Kobe Bryant     | SF       | Los Angeles Lakers  | 25      |
@@ -75,6 +77,7 @@ nba.sort('Salary', descending=True).take(np.arange(5))
 | LeBron James    | SF       | Cleveland Cavaliers | 22.9705 |
 | Carmelo Anthony | SF       | New York Knicks     | 22.875  |
 | Dwight Howard   | C        | Houston Rockets     | 22.3594 |  
+
 ```
 
 ### Rows corresponding to a specified feature
@@ -117,9 +120,9 @@ nba.where('Salary', are.above(10))
 | Derrick Rose   | PG       | Chicago Bulls     | 20.0931 |
 | Jimmy Butler   | SG       | Chicago Bulls     | 16.4075 |
 | Joakim Noah    | C        | Chicago Bulls     | 13.4    |  
-```
 
 ... (59 rows omitted)
+```
 
 The use of the argument `are.above(10)` ensured that each selected row
 had a value of `Salary` that was greater than 10.
@@ -146,9 +149,9 @@ nba.where('Salary', are.above(10)).sort('Salary')
 | Tyreke Evans    | SG       | New Orleans Pelicans | 10.7346 |
 | Marcin Gortat   | C        | Washington Wizards   | 11.2174 |
 | Thaddeus Young  | PF       | Brooklyn Nets        | 11.236  |
-```
 
 ... (59 rows omitted)
+```
 
 How much did Stephen Curry make? For the answer, we have to access the
 row where the value of `Player` is equal to `Stephen Curry`. That is
@@ -162,6 +165,7 @@ nba.where('Player', are.equal_to('Stephen Curry'))
 | Player        | Position | Team                  | Salary  |
 |---------------|----------|-----------------------|---------|
 | Stephen Curry | PG       | Golden State Warriors | 11.3708 |
+
 ```
 
 Curry made just under $11.4 million dollars. That's a lot of money,
@@ -245,6 +249,7 @@ nba.where('Position', 'PG').where('Salary', are.above(15))
 | Chris Paul        | PG       | Los Angeles Clippers  | 21.4687 |
 | Russell Westbrook | PG       | Oklahoma City Thunder | 16.7442 |
 | John Wall         | PG       | Washington Wizards    | 15.852  |  
+
 ```
 
 ### General form
@@ -265,7 +270,8 @@ nba.where('Salary', are.between(10, 10.3))
 | Luol Deng      | SF       | Miami Heat         | 10.1516 |
 | Gerald Wallace | SF       | Philadelphia 76ers | 10.1059 |
 | Danny Green    | SG       | San Antonio Spurs  | 10      |
-| DeMar DeRozan  | SG       | Toronto Raptors    | 10.05   |  
+| DeMar DeRozan  | SG       | Toronto Raptors    | 10.05   | 
+
 ```
 
 Notice that the table above includes Danny Green who made $10
@@ -304,6 +310,7 @@ you want.
 | `are.strictly_between(x, y)`    | Greater than `x` and less than `y`                          |
 | `are.between_or_equal_to(x, y)` | Greater than or equal to `x`, and less than or equal to `y` |
 | `are.containing(S)`             | Contains the string `S`                                     |
+
 ```
 
 You can also specify the negation of any of these conditions, by using
@@ -313,7 +320,8 @@ You can also specify the negation of any of these conditions, by using
 | Predicate             | Description      |
 |-----------------------|------------------|
 | `are.not_equal_to(Z)` | Not equal to `Z` |
-| `are.not_above(x)`    | Not above `x`    |
+| `are.not_above(x)`    | Not above `x`    |  
+
 ```
 
 ... and so on. The usual rules of logic apply -- for example, "not above
@@ -345,6 +353,7 @@ nba.where('Team', are.containing('Warriors')).show()
 | Brandon Rush      | SF       | Golden State Warriors | 1.27096  |
 | Kevon Looney      | SF       | Golden State Warriors | 1.13196  |
 | Anderson Varejao  | PF       | Golden State Warriors | 0.289755 |  
+
 ```
 
 You can extract data for all the guards, both Point Guards and Shooting
@@ -391,6 +400,7 @@ other_than_Cavs.where('Salary', are.not_below(20))
 | Joe Johnson     | SF       | Brooklyn Nets         | 24.8949 |
 | Kevin Durant    | SF       | Oklahoma City Thunder | 20.1586 |
 | Kobe Bryant     | SF       | Los Angeles Lakers    | 25      |
+
 ```
 
 The same table can be created in many ways. Here is another, and no
@@ -412,6 +422,7 @@ other_than_Cavs.where('Salary', are.above_or_equal_to(20))
 | Dwyane Wade     | SG       | Miami Heat            | 20      |
 | Carmelo Anthony | SF       | New York Knicks       | 22.875  |
 | Kevin Durant    | SF       | Oklahoma City Thunder | 20.1586 |
+
 ```
 
 As you can see, the use of `where` with `are` gives you great
