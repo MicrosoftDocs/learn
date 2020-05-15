@@ -23,7 +23,7 @@ Here are some resources that can help you expand on what you learned in this mod
 Here are some topics that we did not discuss here, but you might be interested in as you explore and build your own templates.
 
 - [Use condition in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-tutorial-use-conditions)
-- [Integrate Azure Key Vault in Resource Manager Template deployment](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-tutorial-use-key-vault
+- [Integrate Azure Key Vault in Resource Manager Template deployment](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-tutorial-use-key-vault)
 - [Create linked Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-tutorial-create-linked-templates)
 - [Best Practices For Using Azure Resource Manager Templates](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager)
 - [Troubleshoot common Azure deployment errors with Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-common-deployment-errors)

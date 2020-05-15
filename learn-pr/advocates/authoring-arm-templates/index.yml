@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.advocates.authoring-arm-templates
 metadata:
-  title: Author Azure Resource Manager templates from Scratch.
+  title: Author Azure Resource Manager templates from scratch
   description: This Module will teach you how to create a template and deploy it to Azure from scratch.
   ms.date: 05/12/2020
   author: pierreroman
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title:  Author Azure Resource Manager templates from scratch.
+title:  Author Azure Resource Manager templates from scratch
 summary: Learn to write Resource Manager templates enabling you to deploy your infrastructure and solutions faster and more reliably.
 abstract: |
   In this module, you will:
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience using Bash and the Azure CLI
   - Experience working with Azure resources and resource groups
-iconUrl: /learn/achievements/build-azure-vm-templates.svg
+iconUrl: /learn/achievements/authoring-arm-templates.svg
 levels:
 - beginner
 roles:
