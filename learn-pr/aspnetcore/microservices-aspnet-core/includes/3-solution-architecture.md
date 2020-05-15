@@ -1,0 +1,25 @@
+In this module, you'll gain an understanding of the eShopOnContainers app and the microservices architecture used.
+
+## eShopOnContainers architecture
+
+**TODO**: The below image has to be modified. Better representation of API Gateway needed.
+
+![eShop application architecture](../media/temp/eshop-architecture.png)
+
+The eShopOnContainers app is an online store that sells various physical products like pins, t-shirts, and coffee mugs. The store includes the following functionality:
+
+* Catalog management
+* Shopping basket
+* User management
+* Order management
+* Payments
+
+These functions are broken up into several distinct microservices. Each microservice is autonomous, independently deployable, and responsible for its own data. This enables each microservice to implement the data store that is best optimized for its workload, storage needs, and read/write patterns. Possible choices include relational, document, key-value, and even graph-based data stores. As shown in the above figure, the *catalog* microservice stores its data in a **SQL Server on Linux**, the *basket* microservice uses a **Redis cache** for storage, and so on. Note that there's no single master data store with which all services interact. Instead, inter-service communication is are done on an as-needed basis, either via synchronous API calls or asynchronously through messaging. This data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in production.
+
+The event bus is used for asynchronous messaging and event-driven communication. The above implementation uses RabbitMQ in a container deployed in AKS, but a service such as Azure Service Bus would also be appropriate.
+
+These microservices are accessible to clients via the API gateway. API gateways offer several advantages, such as decoupling back-end services from individual front-end clients and providing enhanced security. The eShopOnContainers storefront WebSPA is an ASP.NET Core app that is accessible via a public IP address. The requests from the WebSPA app to the microservices are routed through the API gateway, which is an implemention of the **B**ackends-**F**or-**F**rontends pattern. Basic routing configurations are implemented using the NGINX reverse proxy and the Gateway Aggregation pattern is implemented using the ASP.NET Core Web API called `Web.Shopping.HttpAggregator`. For real-world scenarios, use of managed API gateway services like [Azure API Management](https://azure.microsoft.com/services/api-management/) is recommended.
+
+Typically, microservices are small enough for a feature team to independently build, test, and deploy them in production multiple times a day without affecting other systems. Next, you'll create a new microservice called `Coupon.API` and deploy it to the existing eShopOnContainers application in production. While doing so, you'll also learn about designing microservices using Domain Driven Design, containerizing them using Docker, publishing them to a container registry, and deploying them to an existing kubernetes cluster.
+
+In the next unit, you'll investigate the code for the app and test it running in AKS.

@@ -34,6 +34,10 @@ products:
 units:
 - learn.microservices-aspnet-core.1-introduction
 - learn.microservices-aspnet-core.2-deploy-application
+- learn.microservices-aspnet-core.3-solution-architecture
+- learn.microservices-aspnet-core.4-review-code-and-test
+- learn.microservices-aspnet-core.5-add-coupon-service
+- learn.microservices-aspnet-core.6-update-aks-deployment
 - learn.microservices-aspnet-core.7-knowledge-check
 - learn.microservices-aspnet-core.8-summary
 iconUrl: /learn/achievements/aspnetcore/microservices-aspnet-core.svg
