@@ -29,7 +29,6 @@ nba
 | Kent Bazemore    | SF       | Atlanta Hawks | 2       |
 | Dennis Schroder  | PG       | Atlanta Hawks | 1.7634  |
 | Tim Hardaway Jr. | SG       | Atlanta Hawks | 1.30452 |  
-
 ... (407 rows omitted)
 ```
 
@@ -120,7 +119,6 @@ nba.where('Salary', are.above(10))
 | Derrick Rose   | PG       | Chicago Bulls     | 20.0931 |
 | Jimmy Butler   | SG       | Chicago Bulls     | 16.4075 |
 | Joakim Noah    | C        | Chicago Bulls     | 13.4    |  
-
 ... (59 rows omitted)
 ```
 
@@ -149,7 +147,6 @@ nba.where('Salary', are.above(10)).sort('Salary')
 | Tyreke Evans    | SG       | New Orleans Pelicans | 10.7346 |
 | Marcin Gortat   | C        | Washington Wizards   | 11.2174 |
 | Thaddeus Young  | PF       | Brooklyn Nets        | 11.236  |
-
 ... (59 rows omitted)
 ```
 
@@ -376,7 +373,6 @@ nba.where('Position', are.containing('G'))
 | Avery Bradley    | PG       | Boston Celtics | 7.73034  |
 | Isaiah Thomas    | PG       | Boston Celtics | 6.91287  |
 | Marcus Smart     | PG       | Boston Celtics | 3.43104  |   
-
 ... (171 rows omitted)
 ```
 
