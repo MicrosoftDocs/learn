@@ -1,22 +1,3 @@
-``` {.python}
-from datascience import *
-from datascience.predicates import are
-path_data = '../../../../data/'
-import numpy as np
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import warnings
-warnings.simplefilter(action="ignore", category=FutureWarning)
-
-from urllib.request import urlopen
-import re
-def read_url(url):
-    return re.sub('\\s+', ' ', urlopen(url).read().decode())
-```
-
 In this example, we will explore statistics for two classic novels: *The
 Adventures of Huckleberry Finn* by Mark Twain, and *Little Women* by
 Louisa May Alcott. The text of any book can be read by a computer at
@@ -42,7 +23,7 @@ content; in this case, the text of a book. The `#` symbol starts a
 comment, which is ignored by the computer but helpful for people reading
 the code.
 
-``` {.python}
+``` python
 # Read two books, fast!
 
 huck_finn_url = 'https://www.inferentialthinking.com/data/huck_finn.txt'
@@ -59,65 +40,34 @@ with some insight into the structure of the text. The name
 `huck_finn_chapters` is currently bound to a list of all the chapters in
 the book. We can place them into a table to see how each chapter begins.
 
-``` {.python}
+``` python
 # Display the chapters of Huckleberry Finn in a table.
 
 Table().with_column('Chapters', huck_finn_chapters)
 ```
 
-|Chapters|
-|--- |
-|1. YOU don't know about me without you have read a book ...|
-|2. WE went tiptoeing along a path amongst the trees ...|
-|3. WELL, I got a good going-over in the morning from ...|
-|4. WELL, three or four months run along, and it was ...|
-|5. I had shut the door to. Then I turned around and ...|
-|6. WELL, pretty soon the old man was up and around ...|
-|7. "GIT up! What you 'bout?" I opened my eyes and look ...|
-|8. THE sun was up so high when I waked that I judged  ...|
-|9. I wanted to go and look at a place right about the ...|
-|10. AFTER breakfast I wanted to talk about the dead man ...|
+``` output
+| Chapters                                                    |
+|-------------------------------------------------------------|
+| 1. YOU don't know about me without you have read a book ... |
+| 2. WE went tiptoeing along a path amongst the trees ...     |
+| 3. WELL, I got a good going-over in the morning from ...    |
+| 4. WELL, three or four months run along, and it was ...     |
+| 5. I had shut the door to. Then I turned around and ...     |
+| 6. WELL, pretty soon the old man was up and around ...      |
+| 7. "GIT up! What you 'bout?" I opened my eyes and look ...  |
+| 8. THE sun was up so high when I waked that I judged ...    |
+| 9. I wanted to go and look at a place right about the ...   |
+| 10. AFTER breakfast I wanted to talk about the dead man ... |
 
 ... (33 rows omitted)
+```
 
 Each chapter begins with a chapter number in Roman numerals, followed by
 the first sentence of the chapter. Project Gutenberg has printed the
 first word of each chapter in upper case.
 
-``` {.python}
-from datascience import *
-import numpy as np
-path_data = '../../../../../data/'
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import warnings
-warnings.simplefilter(action="ignore", category=FutureWarning)
-
-from urllib.request import urlopen
-import re
-def read_url(url):
-    return re.sub('\\s+', ' ', urlopen(url).read().decode())
-```
-
-``` {.python}
-
-# Read two books, fast (again)!
-
-huck_finn_path = path_data + 'huck_finn.txt'
-with open(huck_finn_path, 'r') as ff:
-    huck_finn_text = ff.read()
-huck_finn_chapters = huck_finn_text.split('CHAPTER ')[44:]
-
-little_women_path = path_data + 'little_women.txt'
-with open(little_women_path, 'r') as ff:
-    little_women_text = ff.read()
-little_women_chapters = little_women_text.split('CHAPTER ')[1:]
-```
-
-## Literary Characters
+## Literary characters
 
 *The Adventures of Huckleberry Finn* describes a journey that Huck and
 Jim take along the Mississippi River. Tom Sawyer joins them towards the
@@ -125,7 +75,7 @@ end as the action heats up. Having loaded the text, we can quickly
 visualize how many times these characters have each been mentioned at
 any point in the book.
 
-``` {.python}
+``` python
 # Count how many times the names Jim, Tom, and Huck appear in each chapter.
 
 counts = Table().with_columns([
@@ -159,33 +109,35 @@ because he is the narrator.
 civil war. In this book, chapter numbers are spelled out and chapter
 titles are written in all capital letters.
 
-``` {.python}
+``` python
 # The chapters of Little Women, in a table
 
 Table().with_column('Chapters', little_women_chapters)
 ```
 
-|Chapters|
-|--- |
-|1. PLAYING PILGRIMS. "Christmas won't be Christmas ...|
-|2. A MERRY CHRISTMAS. Jo was the first to wake in the ...|
-|3. THE LAURENCE BOY. "Jo! Jo! Where are you?" cried ...|
-|4. BURDENS. "Oh, dear, how hard it does seem to take ...|
-|5. BEING NEIGHBORLY. "What in the world are you going ...|
-|6. BETH FINDS THE PALACE BEAUTIFUL. The big house did ...|
-|7. AMY'S VALLEY OF HUMILIATION. "That boy is a perfect ...|
-|8. JO MEETS APOLLYON. "Girls, where are you going?" ...|
-|9. MEG GOES TO VANITY FAIR. "I do think it was the ...|
-|10. THE P.C. AND P.O. As spring came on, a new set of ...|
+``` output
+| Chapters                                                   |   |
+|------------------------------------------------------------|---|
+| 1. PLAYING PILGRIMS. "Christmas won't be Christmas ...     |   |
+| 2. A MERRY CHRISTMAS. Jo was the first to wake in the ...  |   |
+| 3. THE LAURENCE BOY. "Jo! Jo! Where are you?" cried ...    |   |
+| 4. BURDENS. "Oh, dear, how hard it does seem to take ...   |   |
+| 5. BEING NEIGHBORLY. "What in the world are you going ...  |   |
+| 6. BETH FINDS THE PALACE BEAUTIFUL. The big house did ...  |   |
+| 7. AMY'S VALLEY OF HUMILIATION. "That boy is a perfect ... |   |
+| 8. JO MEETS APOLLYON. "Girls, where are you going?" ...    |   |
+| 9. MEG GOES TO VANITY FAIR. "I do think it was the ...     |   |
+| 10. THE P.C. AND P.O. As spring came on, a new set of ...  |   |
 
 ... (37 rows omitted)
+```
 
 We can track the mentions of main characters to learn about the plot of
 this book as well. The protagonist Jo interacts with her sisters Meg,
 Beth, and Amy regularly, up until Chapter 27 when she moves to New York
 alone.
 
-``` {.python}
+``` python
 # Counts of names in the chapters of Little Women
 
 counts = Table().with_columns([
@@ -209,38 +161,8 @@ plots.title('Cumulative Number of Times Each Name Appears', y=1.08);
 Laurie is a young man who marries one of the girls in the end. See if
 you can use the plots to guess which one.
 
-``` {.python}
-from datascience import *
-import numpy as np
-path_data = '../../../../../data/'
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import warnings
-warnings.simplefilter(action="ignore", category=FutureWarning)
 
-from urllib.request import urlopen
-import re
-def read_url(url):
-    return re.sub('\\s+', ' ', urlopen(url).read().decode())
-```
-
-``` {.python}
-
-# Read two books, fast (again)!
-
-huck_finn_url = 'https://www.inferentialthinking.com/data/huck_finn.txt'
-huck_finn_text = read_url(huck_finn_url)
-huck_finn_chapters = huck_finn_text.split('CHAPTER ')[44:]
-
-little_women_url = 'https://www.inferentialthinking.com/data/little_women.txt'
-little_women_text = read_url(little_women_url)
-little_women_chapters = little_women_text.split('CHAPTER ')[1:]
-```
-
-## Another Kind of Character
+## Another kind of character
 
 In some situations, the relationships between quantities allow us to
 make predictions. This text will explore how to make accurate
@@ -255,7 +177,7 @@ number or punctuation symbol. Here, we ask the computer to count the
 number of characters and the number of periods in each chapter of both
 *Huckleberry Finn* and *Little Women*.
 
-``` {.python}
+``` python
 # In each chapter, count the number of all characters;
 # call this the "length" of the chapter.
 # Also count the number of periods.
@@ -279,45 +201,49 @@ tend to be, and vice versa. The relation is not entirely predictable,
 however, as sentences are of varying lengths and can involve other
 punctuation such as question marks.
 
-``` {.python}
+``` python
 chars_periods_huck_finn
 ```
 
-|Huck Finn Chapter Length|Number of Periods|
-|--- |--- |
-|7026|66|
-|11982|117|
-|8529|72|
-|6799|84|
-|8166|91|
-|14550|125|
-|13218|127|
-|22208|249|
-|8081|71|
-|7036|70|
+``` output
+| Huck Finn Chapter Length | Number of Periods |
+|--------------------------|-------------------|
+| 7026                     | 66                |
+| 11982                    | 117               |
+| 8529                     | 72                |
+| 6799                     | 84                |
+| 8166                     | 91                |
+| 14550                    | 125               |
+| 13218                    | 127               |
+| 22208                    | 249               |
+| 8081                     | 71                |
+| 7036                     | 70                |
 
 ... (33 rows omitted)
+```
 
 Here are the corresponding data for *Little Women*.
 
-``` {.python}
+``` python
 chars_periods_little_women
 ```
 
-|Little Women Chapter Length|Number of Periods|
-|--- |--- |
-|21759|189|
-|22148|188|
-|20558|231|
-|25526|195|
-|23395|255|
-|14622|140|
-|14431|131|
-|22476|214|
-|33767|337|
-|18508|185|
+``` ouput
+| Little Women Chapter Length | Number of Periods |
+|-----------------------------|-------------------|
+| 21759                       | 189               |
+| 22148                       | 188               |
+| 20558                       | 231               |
+| 25526                       | 195               |
+| 23395                       | 255               |
+| 14622                       | 140               |
+| 14431                       | 131               |
+| 22476                       | 214               |
+| 33767                       | 337               |
+| 18508                       | 185               |
 
 ... (37 rows omitted)
+```
 
 You can see that the chapters of *Little Women* are in general longer
 than those of *Huckleberry Finn*. Let us see if these two simple
@@ -330,7 +256,7 @@ dots correspond to *Huckleberry Finn* and gold dots to *Little Women*.
 The horizontal axis represents the number of periods and the vertical
 axis represents the number of characters.
 
-``` {.python}
+``` python
 plots.figure(figsize=(6, 6))
 plots.scatter(chars_periods_huck_finn.column(1),
               chars_periods_huck_finn.column(0),

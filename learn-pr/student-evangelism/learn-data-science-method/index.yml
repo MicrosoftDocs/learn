@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.learn-data-science-method
 metadata:
-  title: Learn the Data Science Method
-  description: Learn about the history and motivation behind Data Science
+  title: Learn the data science method
+  description: Learn about the history and motivation behind data science
   ms.date: 03/12/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Learn the Data Science Method
-summary: Learn about the history and motivation behind Data Science
+title: Learn the data science method
+summary: Learn about the history and motivation behind data science
 abstract: |
   In this module, you will:
-  - Learn the definition of Data Science and what the field entails.
-  - Understand the motivation behind Data Science.
+  - Learn the definition of data science and what the field entails.
+  - Understand the motivation behind data science.
   - Familiarize yourself with concepts of randomization, experiments and causation.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/learn-data-science-method.svg
