@@ -1,71 +1,9 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
+> [!NOTE]
+> You can find an interactive version of this unit named **confidence-intervals.ipynb** in your virtual environment. If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science" refer to the first unit **Setup.**
 
-``` python
-def bootstrap_median(original_sample, label, replications):
-    
-    """Returns an array of bootstrapped sample medians:
-    original_sample: table containing the original sample
-    label: label of column containing the variable
-    replications: number of bootstrap samples
-    """
-    
-    just_one_column = original_sample.select(label)
-    medians = make_array()
-    for i in np.arange(replications):
-        bootstrap_sample = just_one_column.sample()
-        resampled_median = percentile(50, bootstrap_sample.column(0))
-        medians = np.append(medians, resampled_median)
-        
-    return medians
-```
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
-``` python
-def bootstrap_mean(original_sample, label, replications):
-    
-    """Returns an array of bootstrapped sample means:
-    original_sample: table containing the original sample
-    label: label of column containing the variable
-    replications: number of bootstrap samples
-    """
-    
-    just_one_column = original_sample.select(label)
-    means = make_array()
-    for i in np.arange(replications):
-        bootstrap_sample = just_one_column.sample()
-        resampled_mean = np.mean(bootstrap_sample.column(0))
-        means = np.append(means, resampled_mean)
-        
-    return means
-```
-
-``` python
-def bootstrap_proportion(original_sample, label, replications):
-    
-    """Returns an array of bootstrapped sample proportions:
-    original_sample: table containing the original sample
-    label: label of column containing the Boolean variable
-    replications: number of bootstrap samples
-    """
-    
-    just_one_column = original_sample.select(label)
-    proportions = make_array()
-    for i in np.arange(replications):
-        bootstrap_sample = just_one_column.sample()
-        resample_array = bootstrap_sample.column(0)
-        resampled_proportion = np.count_nonzero(resample_array)/len(resample_array)
-        proportions = np.append(proportions, resampled_proportion)
-        
-    return proportions
-```
-
-A confidence interval has a single purpose -- to estimate an unknown
+A confidence interval has a single purpose--to estimate an unknown
 parameter based on data in a random sample. In the last section, we said
 that the interval (36%, 42%) was an approximate 95% confidence interval
 for the percent of smokers among mothers in the population. That was a
@@ -79,7 +17,7 @@ other purposes. For example, recall that we calculated the interval
 the average age of mothers in the population. A dismayingly common
 misuse of the interval is to conclude that about 95% of the women were
 between 26.9 years and 27.6 years old. You don't need to know much about
-confidence intervals to see that this can't be right -- you wouldn't
+confidence intervals to see that this can't be right--you wouldn't
 expect 95% of mothers to all be within a few months of each other in
 age. Indeed, the histogram of the sampled ages shows quite a bit of
 variation.
@@ -92,10 +30,7 @@ baby = Table.read_table(path_data + 'baby.csv')
 baby.select('Maternal Age').hist()
 ```
 
-    /home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
-      warnings.warn("The 'normed' kwarg is deprecated, and has been "
-
-![png](../media/67-using-confidence-intervals-6-1.png)
+![Confidence Interval Example](../media/67-using-confidence-intervals-6-1.png)
 
 A small percent of the sampled ages are in the (26.9, 27.6) interval,
 and you would expect a similar small percent in the population. The
@@ -103,9 +38,9 @@ interval just estimates one number: the *average* of all the ages in the
 population.
 
 However, estimating a parameter by confidence intervals does have an
-important use besides just telling us roughly how big the parameter is.
+important use besides just telling us roughly how significant the parameter is.
 
-### Using a Confidence Interval to Test Hypotheses
+### Using a confidence interval to test hypotheses
 
 Our approximate 95% confidence interval for the average age in the
 population goes from 26.9 years to 27.6 years. Suppose someone wants to
@@ -116,7 +51,7 @@ test the following hypotheses:
 **Alternative hypothesis.** The average age in the population is not 30
 years.
 
-Then, if you were using the 5% cutoff for the P-value, you would reject
+Then, if you are using the 5% cutoff for the P-value, you would reject
 the null hypothesis. This is because 30 is not in the 95% confidence
 interval for the population average. At the 5% level of significance, 30
 is not a plausible value for the population average.
@@ -131,7 +66,7 @@ This can be established by statistical theory. In practice, it just
 boils down to checking whether or not the value specified in the null
 hypothesis lies in the confidence interval.
 
-If you were using the 1% cutoff for the P-value, you would have to check
+If you are using the 1% cutoff for the P-value, you would have to check
 if the value specified in the null hypothesis lies in a 99% confidence
 interval for the population mean.
 
@@ -170,20 +105,22 @@ hodgkins = Table.read_table(path_data + 'hodgkins.csv')
 hodgkins
 ```
 
-|height|rad|chemo|base|month15|
-|--- |--- |--- |--- |--- |
-|164|679|180|160.57|87.77|
-|168|311|180|98.24|67.62|
-|173|388|239|129.04|133.33|
-|157|370|168|85.41|81.28|
-|160|468|151|67.94|79.26|
-|170|341|96|150.51|80.97|
-|163|453|134|129.88|69.24|
-|175|529|264|87.45|56.48|
-|185|392|240|149.84|106.99|
-|178|479|216|92.24|73.43|
+``` output
+|| height | rad | chemo | base   | month15 |
+|--------|-----|-------|--------|---------|
+| 164    | 679 | 180   | 160.57 | 87.77   |
+| 168    | 311 | 180   | 98.24  | 67.62   |
+| 173    | 388 | 239   | 129.04 | 133.33  |
+| 157    | 370 | 168   | 85.41  | 81.28   |
+| 160    | 468 | 151   | 67.94  | 79.26   |
+| 170    | 341 | 96    | 150.51 | 80.97   |
+| 163    | 453 | 134   | 129.88 | 69.24   |
+| 175    | 529 | 264   | 87.45  | 56.48   |
+| 185    | 392 | 240   | 149.84 | 106.99  |
+| 178    | 479 | 216   | 92.24  | 73.43   |
 
 ... (12 rows omitted)
+```
 
 We will compare the baseline and 15-month scores. As each row
 corresponds to one patient, we say that the sample of baseline scores
@@ -205,29 +142,27 @@ hodgkins = hodgkins.with_column(
 ``` python
 hodgkins
 ```
-|height|rad|chemo|base|month15|drop|
-|--- |--- |--- |--- |--- |--- |
-|164|679|180|160.57|87.77|72.8|
-|168|311|180|98.24|67.62|30.62|
-|173|388|239|129.04|133.33|-4.29|
-|157|370|168|85.41|81.28|4.13|
-|160|468|151|67.94|79.26|-11.32|
-|170|341|96|150.51|80.97|69.54|
-|163|453|134|129.88|69.24|60.64|
-|175|529|264|87.45|56.48|30.97|
-|185|392|240|149.84|106.99|42.85|
-|178|479|216|92.24|73.43|18.81|
+
+``` output
+| height | rad | chemo | base   | month15 | drop   |
+|--------|-----|-------|--------|---------|--------|
+| 164    | 679 | 180   | 160.57 | 87.77   | 72.8   |
+| 168    | 311 | 180   | 98.24  | 67.62   | 30.62  |
+| 173    | 388 | 239   | 129.04 | 133.33  | -4.29  |
+| 157    | 370 | 168   | 85.41  | 81.28   | 4.13   |
+| 160    | 468 | 151   | 67.94  | 79.26   | -11.32 |
+| 170    | 341 | 96    | 150.51 | 80.97   | 69.54  |
+| 163    | 453 | 134   | 129.88 | 69.24   | 60.64  |
+| 175    | 529 | 264   | 87.45  | 56.48   | 30.97  |
+| 185    | 392 | 240   | 149.84 | 106.99  | 42.85  |
+| 178    | 479 | 216   | 92.24  | 73.43   | 18.81  |
 
 ... (12 rows omitted)
+```
 
 ``` python
 hodgkins.select('drop').hist(bins=np.arange(-20, 81, 20))
 ```
-
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
 
 ![png](../media/67-using-confidence-intervals-17-1.png)
 
@@ -235,7 +170,9 @@ and has been"
 np.mean(hodgkins.column('drop'))
 ```
 
+``` output
 28.615909090909096
+```
 
 But could this be the result of chance variation? It really doesn't seem
 so, but the data are from a random sample. Could it be that in the
@@ -261,7 +198,9 @@ right = percentile(99.5, bstrap_means)
 make_array(left, right)
 ```
 
+``` output
 array(\[17.22636364, 40.54045455\])
+```
 
 ``` python
 resampled_means = Table().with_column(
@@ -271,11 +210,6 @@ resampled_means.hist()
 plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ```
 
-/home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/\_axes.py:6462:
-UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
-the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
-and has been"
-
 ![png](../media/67-using-confidence-intervals-21-1.png)
 
 The 99% confidence interval for the average drop in the population goes
@@ -283,11 +217,11 @@ from about 17 to about 40. The interval doesn't contain 0. So we reject
 the null hypothesis.
 
 But notice that we have done better than simply concluding that the
-average drop in the population isn't 0. We have estimated how big the
+average drop in the population isn't 0. We have estimated how significant the
 average drop is. That's a more useful result than just saying, "It's not
 0."
 
-**A note on accuracy.** Our confidence interval is quite wide, for two
+**A note on accuracy.** Our confidence interval is wide, for two
 main reasons: - The confidence level is high (99%). - The sample size is
 relatively small compared to those in our earlier examples.
 
@@ -307,4 +241,4 @@ method](http://econpapers.repec.org/article/eeestapro/v_3a37_3ay_3a1998_3ai_3a4_
 
 ## Check your knowledge
 
-'You sample 100 dogs at random from all dogs in Berkeley and compute a 95% confidence interval of their average height. For each of the statements below, state whether they are Always True, Typically True, Not Expected to be True, or False.'
+You sample 100 dogs at random from all dogs in Berkeley and compute a 95% confidence interval of their average height. For each of the statements below, state whether they are **always true**, **typically true**, **not expected to be true**, or **false**.
