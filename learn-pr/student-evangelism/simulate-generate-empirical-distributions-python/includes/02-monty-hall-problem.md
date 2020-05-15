@@ -5,18 +5,6 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
-``` {.python}
-
-from datascience import *
-path_data = '../../../../data/'
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 This [problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) has
 flummoxed many people over the years, [mathematicians
 included](https://web.archive.org/web/20140413131827/http://www.decisionsciences.org/DecisionLine/Vol30/30_1/vazs30_1.pdf).
@@ -93,7 +81,7 @@ involves several pieces.
 We start by setting up an array `goats` that contains unimaginative
 names for the two goats.
 
-``` {.python}
+``` python
 goats = make_array('first goat', 'second goat')
 ```
 
@@ -101,7 +89,7 @@ To help Monty conduct the game, we are going to have to identify which
 goat is selected and which one is revealed behind the open door. The
 function `other_goat` takes one goat and returns the other.
 
-``` {.python}
+``` python
 def other_goat(x):
     if x == 'first goat':
         return 'second goat'
@@ -111,7 +99,7 @@ def other_goat(x):
 
 Let's confirm that the function works.
 
-``` {.python}
+``` python
 other_goat('first goat'), other_goat('second goat'), other_goat('watermelon')
 ```
 
@@ -127,7 +115,7 @@ The string `'watermelon'` is not the name of one of the goats, so when
 The array `hidden_behind_doors` contains the set of things that could be
 behind the doors.
 
-``` {.python}
+``` python
 hidden_behind_doors = make_array('car', 'first goat', 'second goat')
 ```
 
@@ -149,7 +137,7 @@ is revealed and the car is behind the remaining door.
 If the contestant happens to pick the car, then Monty reveals one of the
 goats and the other goat is behind the remaining door.
 
-``` {.python}
+``` python
 def monty_hall_game():
     """Return
     [contestant's guess, what Monty reveals, what remains behind the other door]"""
@@ -169,7 +157,7 @@ def monty_hall_game():
 
 Let's play! Run the cell several times and see how the results change.
 
-``` {.python}
+``` python
 monty_hall_game()
 ```
 
@@ -201,7 +189,7 @@ have one more row than it did before.
 First let's create a table `games` that has three empty columns. We can
 do this by just specifying a list of the column labels, as follows.
 
-``` {.python}
+``` python
 games = Table(['Guess', 'Revealed', 'Remaining'])
 ```
 
@@ -211,7 +199,7 @@ the order in which `monty_hall_game` returns the result of one game.
 Now we can add 10,000 rows to `trials`. Each row will represent the
 result of one play of Monty's game.
 
-``` {.python}
+``` python
 # Play the game 10000 times and
 # record the results in the table games
 
@@ -228,27 +216,31 @@ To see whether the contestant should stick with their original choice or
 switch, let's see how frequently the car is behind each of their two
 options.
 
-``` {.python}
+``` python
 original_choice = games.group('Guess')
 original_choice
 ```
 
-|Guess|count|
-|--- |--- |
-|car|3268|
-|first goat|3372|
-|second goat|3360|
+``` output
+| Guess       | count |
+|-------------|-------|
+| car         | 3268  |
+| first goat  | 3372  |
+| second goat | 3360  |
+```
 
-``` {.python}
+``` python
 remaining_door = games.group('Remaining')
 remaining_door
 ```
 
-|Remaining|count|
-|--- |--- |
-|car|6732|
-|first goat|1615|
-|second goat|1653|
+``` output
+| Remaining   | count |
+|-------------|-------|
+| car         | 6732  |
+| first goat  | 1615  |
+| second goat | 1653  |
+```
 
 As our earlier solution said, the car is behind the remaining door
 two-thirds of the time, to a good approximation. The contestant
@@ -258,19 +250,21 @@ with their original choice.
 To see this graphically, we can join the two tables above and draw
 overlaid bar charts.
 
-``` {.python}
+``` python
 joined = original_choice.join('Guess', remaining_door, 'Remaining')
 combined = joined.relabeled(0, 'Item').relabeled(1, 'Original Door').relabeled(2, 'Remaining Door')
 combined
 ```
 
-|Item|Original Door|Remaining Door|
-|--- |--- |--- |
-|car|3268|6732|
-|first goat|3372|1615|
-|second goat|3360|1653|
+``` output
+| Item        | Original Door | Remaining Door |
+|-------------|---------------|----------------|
+| car         | 3268          | 6732           |
+| first goat  | 3372          | 1615           |
+| second goat | 3360          | 1653           |
+```
 
-``` {.python}
+``` python
 combined.barh(0)
 ```
 

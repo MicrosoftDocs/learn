@@ -1,12 +1,3 @@
-``` {.python}
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 The Law of Averages implies that with high probability, the empirical
 distribution of a large random sample will resemble the distribution of
 the population from which the sample was drawn.
@@ -19,11 +10,11 @@ As a reminder, here is the histogram of the delays of all the flights in
 `united`, and an empirical histogram of the delays of a random sample of
 1,000 of these flights.
 
-``` {.python}
+``` python
 united = Table.read_table(path_data + 'united_summer2015.csv')
 ```
 
-``` {.python}
+``` python
 delay_bins = np.arange(-20, 201, 10)
 united.hist('Delay', bins = delay_bins, unit = 'minute')
 plots.title('Population');
@@ -31,7 +22,7 @@ plots.title('Population');
 
 ![png](../media/53-empirical-distribution-statistic-3-0.png)
 
-``` {.python}
+``` python
 sample_1000 = united.sample(1000)
 sample_1000.hist('Delay', bins = delay_bins, unit = 'minute')
 plots.title('Sample of Size 1000');
@@ -54,7 +45,7 @@ Numerical quantities associated with a population are called
 *parameters*. For the population of flights in `united`, we know the
 value of the parameter "median delay":
 
-``` {.python}
+``` python
 np.median(united.column('Delay'))
 ```
 
@@ -67,7 +58,7 @@ array. Among all the flights in `united`, the median delay was 2
 minutes. That is, about 50% of flights in the population had delays of 2
 or fewer minutes:
 
-``` {.python}
+``` python
 united.where('Delay', are.below_or_equal_to(2)).num_rows / united.num_rows
 ```
 
@@ -81,7 +72,7 @@ departure time. That's a very short delay!
 > [!NOTE] 
 > The percent isn't exactly 50 because of "ties," that is, flights that had delays of exactly 2 minutes. There were 480 such flights. Ties are quite common in data sets, and we will not worry about them in this course.
 
-``` {.python}
+``` python
 united.where('Delay', are.equal_to(2)).num_rows
 ```
 
@@ -101,7 +92,7 @@ in a sample. The sample median, therefore, is a statistic.
 Remember that `sample_1000` contains a random sample of 1000 flights
 from `united`. The observed value of the sample median is:
 
-``` {.python}
+``` python
 np.median(sample_1000.column('Delay'))
 ```
 
@@ -117,7 +108,7 @@ in using any statistic based on a random sample is that *the sample
 could have come out differently*, and therefore the statistic could have
 come out differently too.
 
-``` {.python}
+``` python
 np.median(united.sample(1000).column('Delay'))
 ```
 
@@ -152,7 +143,7 @@ a random sample of size 1000 and compute the median of the sample. We
 did this in the code cell above. Here it is again, encapsulated in a
 function.
 
-``` {.python}
+``` python
 def random_sample_median():
     return np.median(united.sample(1000).column('Delay'))
 ```
@@ -172,7 +163,7 @@ it is performing 5000 repetitions of the process of drawing a sample of
 size 1000 and computing its median. That's a lot of sampling and
 repeating!
 
-``` {.python}
+``` python
 medians = make_array()
 
 for i in np.arange(5000):
@@ -188,32 +179,34 @@ results.
 Here are the simulated random sample medians displayed in the table
 `simulated_medians`.
 
-``` {.python}
+``` python
 simulated_medians = Table().with_column('Sample Median', medians)
 simulated_medians
 ```
 
-|Sample Median|
-|--- |
-|2|
-|2|
-|2.5|
-|1|
-|2|
-|3|
-|2|
-|3|
-|1|
-|3|
+``` output
+| Sample Median |
+|---------------|
+| 2             |
+| 2             |
+| 2.5           |
+| 1             |
+| 2             |
+| 3             |
+| 2             |
+| 3             |
+| 1             |
+| 3             |
 
 ... (4990 rows omitted)
+```
 
 We can also visualize the simulated data using a histogram. The
 histogram is called an *empirical histogram of the statistic*. It
 displays the *empirical distribution* of the statistic. Remember that
 *empirical* means *observed*.
 
-``` {.python}
+``` python
 simulated_medians.hist(bins=np.arange(0.5, 5, 1))
 ```
 

@@ -1,15 +1,3 @@
-``` {.python}
-
-from datascience import *
-path_data = '../../../../data/'
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 The law of averages also holds when the random sample is drawn from
 individuals in a large population.
 
@@ -25,31 +13,33 @@ the date of the flight, the flight number, the destination airport code,
 and the departure delay time in minutes. Some delay times are negative;
 those flights left early.
 
-``` {.python}
+``` python
 united = Table.read_table(path_data + 'united_summer2015.csv')
 united
 ```
 
-|Date|Flight Number|Destination|Delay|
-|--- |--- |--- |--- |
-|6/1/15|73|HNL|257|
-|6/1/15|217|EWR|28|
-|6/1/15|237|STL|-3|
-|6/1/15|250|SAN|0|
-|6/1/15|267|PHL|64|
-|6/1/15|273|SEA|-6|
-|6/1/15|278|SEA|-8|
-|6/1/15|292|EWR|12|
-|6/1/15|300|HNL|20|
-|6/1/15|317|IND|-10|
+``` output
+| Date   | Flight Number | Destination | Delay |
+|--------|---------------|-------------|-------|
+| 6/1/15 | 73            | HNL         | 257   |
+| 6/1/15 | 217           | EWR         | 28    |
+| 6/1/15 | 237           | STL         | -3    |
+| 6/1/15 | 250           | SAN         | 0     |
+| 6/1/15 | 267           | PHL         | 64    |
+| 6/1/15 | 273           | SEA         | -6    |
+| 6/1/15 | 278           | SEA         | -8    |
+| 6/1/15 | 292           | EWR         | 12    |
+| 6/1/15 | 300           | HNL         | 20    |
+| 6/1/15 | 317           | IND         | -10   |
 
 ... (13815 rows omitted)
+```
 
 One flight departed 16 minutes early, and one was 580 minutes late. The
 other delay times were almost all between -10 minutes and 200 minutes,
 as the histogram below shows.
 
-``` {.python}
+``` python
 united.column('Delay').min()
 ```
 
@@ -57,7 +47,7 @@ united.column('Delay').min()
 -16
 ```
 
-``` {.python}
+``` python
 united.column('Delay').max()
 ```
 
@@ -65,7 +55,7 @@ united.column('Delay').max()
 580
 ```
 
-``` {.python}
+``` python
 delay_bins = np.append(np.arange(-20, 301, 10), 600)
 united.hist('Delay', bins = delay_bins, unit = 'minute')
 ```
@@ -77,7 +67,7 @@ the data and ignore the 0.8% of flights that had delays of more than 200
 minutes. This restriction is just for visual convenience; the table
 still retains all the data.
 
-``` {.python}
+``` python
 united.where('Delay', are.above(200)).num_rows/united.num_rows
 ```
 
@@ -85,7 +75,7 @@ united.where('Delay', are.above(200)).num_rows/united.num_rows
 0.008390596745027125
 ```
 
-``` {.python}
+``` python
 delay_bins = np.arange(-20, 201, 10)
 united.hist('Delay', bins = delay_bins, unit = 'minute')
 ```
@@ -96,7 +86,7 @@ The height of the \[0, 10) bar is just under 3% per minute, which means
 that just under 30% of the flights had delays between 0 and 10 minutes.
 That is confirmed by counting rows:
 
-``` {.python}
+``` python
 united.where('Delay', are.between(0, 10)).num_rows/united.num_rows
 ```
 
@@ -111,7 +101,7 @@ samples from it with replacement. It is helpful to package our code into
 a function. The function `empirical_hist_delay` takes the sample size as
 its argument and draws an empirical histogram of the results.
 
-``` {.python}
+``` python
 def empirical_hist_delay(n):
     united.sample(n).hist('Delay', bins = delay_bins, unit = 'minute')
 ```
@@ -120,13 +110,13 @@ As we saw with the dice, as the sample size increases, the empirical
 histogram of the sample more closely resembles the histogram of the
 population. Compare these histograms to the population histogram above.
 
-``` {.python}
+``` python
 empirical_hist_delay(10)
 ```
 
 ![png](../media/52-sampling-from-population-15-0.png)
 
-``` {.python}
+``` python
 empirical_hist_delay(100)
 ```
 
@@ -138,7 +128,7 @@ right-hand tail of the distribution. But as the sample size increases,
 even those values begin to appear in the sample in roughly the correct
 proportions.
 
-``` {.python}
+``` python
 empirical_hist_delay(1000)
 ```
 

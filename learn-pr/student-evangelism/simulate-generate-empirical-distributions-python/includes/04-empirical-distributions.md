@@ -1,15 +1,3 @@
-``` {.python}
-
-from datascience import *
-path_data = '../../../../data/'
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 In data science, the word "empirical" means "observed". Empirical
 distributions are distributions of observed data, such as data in random
 samples.
@@ -22,19 +10,21 @@ keeping track of which face appears. The table `die` contains the
 numbers of spots on the faces of a die. All the numbers appear exactly
 once, as we are assuming that the die is fair.
 
-``` {.python}
+``` python
 die = Table().with_column('Face', np.arange(1, 7, 1))
 die
 ```
 
-|Face|
-|--- |
-|1|
-|2|
-|3|
-|4|
-|5|
-|6|
+``` output
+| Face |
+|------|
+| 1    |
+| 2    |
+| 3    |
+| 4    |
+| 5    |
+| 6    |
+```
 
 ### A probability distribution
 
@@ -44,7 +34,7 @@ of probabilities over all the possible faces. Since all the bars
 represent the same percent chance, the distribution is called *uniform
 on the integers 1 through 6.*
 
-``` {.python}
+``` python
 die_bins = np.arange(0.5, 6.6, 1)
 die.hist(bins = die_bins)
 ```
@@ -94,22 +84,24 @@ drawn without replacement, but that does not apply to rolling a die.
 
 Here are the results of 10 rolls of a die.
 
-``` {.python}
+``` python
 die.sample(10)
 ```
 
-|Face|
-|--- |
-|1|
-|2|
-|3|
-|4|
-|4|
-|1|
-|1|
-|2|
-|6|
-|2|
+``` output
+| Face |
+|------|
+| 1    |
+| 2    |
+| 3    |
+| 4    |
+| 4    |
+| 1    |
+| 1    |
+| 2    |
+| 6    |
+| 2    |
+```
 
 We can use the same method to simulate as many rolls as we like, and
 then draw empirical histograms of the results. Because we are going to
@@ -117,7 +109,7 @@ do this repeatedly, we define a function `empirical_hist_die` that takes
 the sample size as its argument, rolls a die as many times as its
 argument, and then draws a histogram of the observed results.
 
-``` {.python}
+``` python
 def empirical_hist_die(n):
     die.sample(n).hist(bins = die_bins)
 ```
@@ -128,7 +120,7 @@ Here is an empirical histogram of 10 rolls. It doesn't look very much
 like the probability histogram above. Run the cell a few times to see
 how it varies.
 
-``` {.python}
+``` python
 empirical_hist_die(10)
 ```
 
@@ -137,13 +129,13 @@ empirical_hist_die(10)
 When the sample size increases, the empirical histogram begins to look
 more like the histogram of theoretical probabilities.
 
-``` {.python}
+``` python
 empirical_hist_die(100)
 ```
 
 ![png](../media/51-empirical-distributions-13-0.png)
 
-``` {.python}
+``` python
 empirical_hist_die(1000)
 ```
 
