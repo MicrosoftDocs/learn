@@ -179,7 +179,7 @@ $$
 D = \sqrt{(x_0-x_1)^2 + (y_0-y_1)^2}
 $$
 
-(Where did this come from? It comes from the Pythogorean theorem: we
+(Where did this come from? It comes from the Pythagorean theorem: we
 have a right triangle with side lengths $x_0-x_1$ and $y_0-y_1$, and we
 want to find the length of the hypotenuse.)
 
