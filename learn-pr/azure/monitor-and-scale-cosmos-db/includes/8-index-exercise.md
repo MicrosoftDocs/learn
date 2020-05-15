@@ -45,7 +45,7 @@ Update the **Orders** collection to index none of the properties.
 
 1. Run the following command to update the collection index to `none`.
 
-    ```bash
+    ```azurecli
     az cosmosdb sql container update \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --account-name $COSMOS_NAME \
@@ -78,7 +78,7 @@ Update the **Orders** collection to index none of the properties.
 
 1. Update the Orders collection to index on only some of the order properties.
 
-    ```bash
+    ```azurecli
     az cosmosdb sql container update \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --account-name $COSMOS_NAME \
@@ -117,7 +117,7 @@ In the previous exercises, the index is set to **consistent** so it's updated sy
 
 1. Update the Orders collection to lazy index on all properties.
 
-    ```bash
+    ```azurecli
     az cosmosdb sql container update \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --account-name $COSMOS_NAME \
