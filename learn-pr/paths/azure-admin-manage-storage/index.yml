@@ -12,7 +12,9 @@ metadata:
 title: Implement and manage storage for Azure administrators
 summary: |
   Learn how to manage storage accounts, data in Azure Storage, and Azure File and Blob storage. 
-prerequisites: None
+prerequisites: |
+  - learn.cloud-foundations
+  - learn.azure-admin-prerequisites
 iconUrl: /learn/achievements/azure-admin-manage-storage.svg
 levels:
 - beginner
