@@ -1,3 +1,8 @@
+> [!NOTE]
+> You can find an interactive version of this unit named **confidence-intervals.ipynb** in your virtual environment. If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science" refer to the first unit **Setup.**
+
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+
 A confidence interval has a single purpose--to estimate an unknown
 parameter based on data in a random sample. In the last section, we said
 that the interval (36%, 42%) was an approximate 95% confidence interval

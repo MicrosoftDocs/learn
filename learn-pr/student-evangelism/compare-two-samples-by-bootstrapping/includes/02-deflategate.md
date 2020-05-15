@@ -1,3 +1,8 @@
+> [!NOTE]
+> You can find an interactive version of this unit named **deflategate.ipynb** in your virtual environment. If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science" refer to the first unit **Setup.**
+
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) 
+
 On January 18, 2015, the Indianapolis Colts and the New England Patriots
 played the American Football Conference (AFC) championship game to
 determine which of those teams would play in the Super Bowl. After the
