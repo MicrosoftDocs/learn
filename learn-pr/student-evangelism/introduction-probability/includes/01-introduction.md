@@ -114,8 +114,8 @@ P(\text {green first, then red})
 ~=~ \frac {1} {6}
 $$
 
-The factor of $1/2$ is called \" the conditional chance that the red
-ticket appears second, given that the green ticket appeared first.\"
+The factor of $1/2$ is called the conditional chance that the red
+ticket appears second, given that the green ticket appeared first.
 
 In general, we have the **multiplication rule**:
 
@@ -266,9 +266,9 @@ results
 | 8     | 0.767432                 |
 | 9     | 0.806193                 |
 | 10    | 0.838494                 |  
-```
 
 ... (40 rows omitted)
+```
 
 The chance that a 6 appears at least once rises rapidly as the number of
 rolls increases.
