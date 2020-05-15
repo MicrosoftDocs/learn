@@ -1,9 +1,9 @@
 > [!NOTE]
 > You can find an interactive version of this unit named **regression-line.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setting up your virtual environment**
+If you haven't set up your online Visual Studio codespaces environment for the Learning Path "Foundations of Data Science" refer to the first unit Setting up your virtual environment.
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Open your [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
 The correlation coefficient $r$ doesn't just measure how clustered the
 points in a scatter plot are about a straight line. It also helps
@@ -584,12 +584,16 @@ that no matter what the shape of the scatter plot, the same equation
 gives the "best" among all straight lines. That's the topic of the next
 section.
 
-> [!IMPORTANT]
-> The following Question will check your knowledge 'The water table contains one row per country with data from 2014. The OBS_VALUE column represents the approximate price of a 1.5 liter bottle of mineral water in that country, and the mm_precipitation column represents the average precipitation in that country (in millimeters). The next table below contains calculations from the water table.
+### Check you knowledge
 
-|Expression                                             |Values  |
-|np.average(water.column("OBS_VALUE"))                  |0.919016|
-|np.std(water.column("OBS_VALUE"))                      |0.464763|
-|np.average(water.column("mm_precipitation"))           |1010.4  |
-|np.std(water.column("mm_precipitation"))               |7520475 |
-|correlation(water, "OBS_VALUE", "mm_precipitation")    |0.262079|
+The water table contains one row per country with data from 2014. The OBS_VALUE column represents the approximate price of a 1.5 liter bottle of mineral water in that country, and the mm_precipitation column represents the average precipitation in that country (in millimeters).
+
+The table below contains calculations from the water table.
+
+| Expression                                          | Values   |
+|-----------------------------------------------------|----------|
+| np.average(water.column("OBS_VALUE"))               | 0.919016 |
+| np.std(water.column("OBS_VALUE"))                   | 0.464763 |
+| np.average(water.column("mm_precipitation"))        | 1010.4   |
+| np.std(water.column("mm_precipitation"))            | 7520475  |
+| correlation(water, "OBS_VALUE", "mm_precipitation") | 0.262079 |
