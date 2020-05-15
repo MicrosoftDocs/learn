@@ -2,7 +2,7 @@
 
 In this unit, you'll use a script to deploy the existing eShopOnContainers app to AKS.
 
-# Run deployment script
+## Run deployment script
 
 Run the following command in the command shell. Be patient, as setup can take a few minutes to complete.
 
@@ -51,9 +51,11 @@ These microservices are accessible to clients via the API gateway. API gateways 
 
 Typically, microservices are small enough for a feature team to independently build, test, and deploy them in production multiple times a day without affecting other systems. Next, you'll create a new microservice called `Coupon.API` and deploy it to the existing eShopOnContainers application in production. While doing so, you'll also learn about designing microservices using Domain Driven Design, containerizing them using Docker, publishing them to a container registry, and deploying them to an existing kubernetes cluster.
 
+In the next unit, you'll investigate the code for the app and test it running in AKS.
+
 # Unit 4: Exercise - Review code and test deployment
 
-Soon after launching the setup script, the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution to the *~/clouddrive/source/eShop-Learn/* directory. If the script is still running, you may investigate the solution while the script continues to deploy the Docker containers to AKS. 
+Soon after launching the setup script, the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution to the *~/clouddrive/source/eShop-Learn/* directory. You may investigate the solution while the script continues to deploy the Docker containers to AKS, even if the script is still running. 
 
 ## Review code
 
@@ -84,7 +86,7 @@ You can begin exploring these services (when available):
     ![Health check page](../media/temp/health-check.png)
 
     > [!NOTE]
-    > While the app is warming up, you may receive an HTTP 50x response from the server. You may retry after a few seconds. The Seq logs viewable at the **Centralized logging** URL will be available before the other endpoints. 
+    > While the app is warming up, you may receive an HTTP 500 response from the server. You may retry after a few seconds. The Seq logs viewable at the **Centralized logging** URL will be available before the other endpoints. 
 
 1. Once all the services are healthy, select the **Web SPA application** link to test the eShopOnContainers web app.
 
@@ -92,9 +94,11 @@ You can begin exploring these services (when available):
 
 1. Log in to the app (the credentials are provided on the login page) and then browse the shop. Add some items to the cart, and then complete the purchase.
 
+Now that you've seen the existing eShopOnContainers app, you'll add the coupon microservice in the next unit.
+
 # Unit 5: Exercise - Add the coupon service
 
-In this unit, you complete the **Coupon.API** project. You then run a script to generate changes to the WebSPA HTML, as well as generate and modify Helm charts to define the kubernetes deployment.
+In this unit, you complete the **Coupon.API** project. You will then run a script to generate changes to the WebSPA HTML, as well as generate and modify Helm charts to define the kubernetes deployment.
 
 ## Add the coupon service
 
