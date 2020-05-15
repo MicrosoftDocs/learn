@@ -38,13 +38,10 @@ quiz:
         - content: '"Color", "Amount sum", "Price($) sum"'
           isCorrect: true
           explanation: 'Correct, the group function attaches the aggregation function name to the end of all the original column names. It add add a new column besides the column being grouped on'
-        - content: '"color", "amount sum", "price($) sum"'
+        - content: '"Color", "amount sum", "price($) sum"'
           isCorrect: false
           explanation: 'The group function will not change the capitalization of the original column names'
-    - content: "If we had another two-column table called **flavors** with these columns: <br><ul>
-    <li>A column called **Color** for the candy's color (Red, Green, or Blue).</li>
-    <li>A column called **Flavor** for each color's unique corresponding flavor.<li></ul><br>
-    How can we combine the two tables so that we get every combination possible for a bag of candy?"
+    - content: "If we had another two-column table, a column called **Color** for the candy's color (Red, Green, or Blue) and a column called **Flavor** for each color's unique corresponding flavor. How can we combine the two tables so that we get every combination possible for a bag of candy?"
       choices:
         - content: 'candy.join("Color", flavors)'
           isCorrect: true
