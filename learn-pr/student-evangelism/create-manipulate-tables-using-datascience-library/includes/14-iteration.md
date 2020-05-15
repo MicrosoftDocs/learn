@@ -1,17 +1,5 @@
-``` python
-
-from datascience import *
-path_data = '../../../../data/'
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
-It is often the case in programming -- especially when dealing with
-randomness -- that we want to repeat a process multiple times. For
+It is often the case in programming--especially when dealing with
+randomness--that we want to repeat a process multiple times. For
 example, recall the game of betting on one roll of a die with the
 following rules:
 
@@ -41,7 +29,9 @@ Playing this game once is easy:
 bet_on_one_roll()
 ```
 
+``` output
     1
+```
 
 To get a sense of how variable the results are, we have to play the game
 over and over again. We could run the cell repeatedly, but that's
@@ -60,9 +50,11 @@ for animal in make_array('cat', 'dog', 'rabbit'):
     print(animal)
 ```
 
+``` output
     cat
     dog
     rabbit
+```
 
 It is helpful to write code that exactly replicates a `for` statement,
 without using the `for` statement. This is called *unrolling* the loop.
@@ -80,9 +72,11 @@ animal = make_array('cat', 'dog', 'rabbit').item(2)
 print(animal)
 ```
 
+``` output
     cat
     dog
     rabbit
+```
 
 Notice that the name `animal` is arbitrary, just like any name we assign
 with `=`.
@@ -93,7 +87,7 @@ called *simulating* the results of five bets. We use the word
 *simulating* to remind ourselves that we are not physically rolling dice
 and exchanging money but using Python to mimic the process.
 
-To repeat a process `n` times, it is common to use the sequence
+To repeat a process `n` time, it is common to use the sequence
 `np.arange(n)` in the `for` statement. It is also common to use a very
 short name for each item. In our code we will use the name `i` to remind
 ourselves that it refers to an item.
@@ -103,17 +97,19 @@ for i in np.arange(5):
     print(bet_on_one_roll())
 ```
 
+``` output
     1
     1
     0
     -1
     1
+```
 
 In this case, we simply perform exactly the same (random) action several
 times, so the code in the body of our `for` statement does not actually
 refer to `i`.
 
-### Augmenting arrays
+### Augment arrays
 
 While the `for` statement above does simulate the results of five bets,
 the results are simply printed and are not in a form that we can use for
@@ -131,7 +127,9 @@ pets = make_array('Cat', 'Dog')
 np.append(pets, 'Another Pet')
 ```
 
+``` output
     array(['Cat', 'Dog', 'Another Pet'], dtype='<U11')
+```
 
 This keeps the array `pets` unchanged:
 
@@ -139,7 +137,9 @@ This keeps the array `pets` unchanged:
 pets
 ```
 
+``` output
     array(['Cat', 'Dog'], dtype='<U3')
+```
 
 But often while using `for` loops it will be convenient to mutate an
 array -- that is, change it -- when augmenting it. This is done by
@@ -150,9 +150,11 @@ pets = np.append(pets, 'Another Pet')
 pets
 ```
 
+``` output
     array(['Cat', 'Dog', 'Another Pet'], dtype='<U11')
+```
 
-### Example: betting on 5 rolls
+### Example: Bet on five rolls
 
 We can now simulate five bets on the die and collect the results in an
 array that we will call the *collection array*. We will start out by
@@ -170,7 +172,9 @@ for i in np.arange(5):
 outcomes
 ```
 
+``` output
     array([-1.,  0.,  0.,  1.,  0.])
+```
 
 Let us rewrite the cell with the `for` statement unrolled:
 
@@ -200,7 +204,9 @@ outcomes = np.append(outcomes, outcome_of_bet)
 outcomes
 ```
 
+``` output
     array([ 0., -1.,  0.,  1., -1.])
+```
 
 The contents of the array are likely to be different from the array that
 we got by running the previous cell, but that is because of randomness
@@ -215,9 +221,11 @@ to use array methods to do computations. For example, we can use
 np.count_nonzero(outcomes)
 ```
 
+``` output
     3
+```
 
-### Example: betting on 300 rolls
+### Example: Bet on 300 rolls
 
 Iteration is a powerful technique. For example, we can see the variation
 in the results of 300 bets by running exactly the same code for 300 bets
@@ -237,7 +245,9 @@ The array `outcomes` contains the results of all 300 bets.
 len(outcomes)
 ```
 
+``` output
     300
+```
 
 To see how often the three different possible results appeared, we can
 use the array `outcomes` and `Table` methods.
@@ -247,10 +257,9 @@ outcome_table = Table().with_column('Outcome', outcomes)
 outcome_table.group('Outcome').barh(0)
 ```
 
-![png](../media/39-iteration-29-0.png)
+![Example Plot](../media/39-iteration-29-0.png)
 
-Not surprisingly, each of the three outcomes -1, 0, and 1 appeared about
-about 100 of the 300 times, give or take. We will examine the "give or
+Not surprisingly, each of the three outcomes -1, 0, and 1 appeared about 100 of the 300 times, give or take. We will examine the "give or
 take" amounts more closely in later chapters.
 
 ## Check your knowledge

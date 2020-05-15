@@ -1,14 +1,3 @@
-``` python
-from datascience import *
-import matplotlib
-path_data = '../../../../data/'
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 We have seen many examples of creating new columns of tables by applying
 functions to existing columns or to other arrays. All of those functions
 took arrays as their arguments. But frequently we will want to convert
@@ -26,19 +15,25 @@ def cut_off_at_100(x):
 cut_off_at_100(17)
 ```
 
+``` output
     17
+```
 
 ``` python
 cut_off_at_100(117)
 ```
 
+``` output
     100
+```
 
 ``` python
 cut_off_at_100(100)
 ```
 
+``` output
     100
+```
 
 The function `cut_off_at_100` simply returns its argument if the
 argument is less than or equal to 100. But if the argument is greater
@@ -67,16 +62,19 @@ ages = Table().with_columns(
 ages
 ```
 
-|Person|Age|
-|--- |--- |
-|A|17|
-|B|117|
-|C|52|
-|D|100|
-|E|6|
-|F|101|
+``` output 
+| Person | Age |
+|--------|-----|
+| A      | 17  |
+| B      | 117 |
+| C      | 52  |
+| D      | 100 |
+| E      | 6   |
+| F      | 101 |  
 
-### `apply`
+```
+
+### Apply method
 
 To cut off each of the ages at 100, we will use the a new Table method.
 The `apply` method calls a function on each element of a column, forming
@@ -89,7 +87,9 @@ marks.
 ages.apply(cut_off_at_100, 'Age')
 ```
 
+``` output
 array(\[ 17, 100, 52, 100, 6, 100\])
+```
 
 What we have done here is `apply` the function `cut_off_at_100` to each
 value in the `Age` column of the table `ages`. The output is the array
@@ -106,14 +106,17 @@ ages.with_column(
 )
 ```
 
-|Person|Age|Cut Off Age|
-|--- |--- |--- |
-|A|17|17|
-|B|117|100|
-|C|52|52|
-|D|100|100|
-|E|6|6|
-|F|101|100|
+``` output
+| Person | Age | Cut Off Age |
+|--------|-----|-------------|
+| A      | 17  | 17          |
+| B      | 117 | 100         |
+| C      | 52  | 52          |
+| D      | 100 | 100         |
+| E      | 6   | 6           |
+| F      | 101 | 100         |  
+
+```
 
 ### Functions as values
 
@@ -138,7 +141,9 @@ function, just like it would print out a number or a string value.
 cut_off_at_100
 ```
 
+``` output
 \<function **main**.cut\_off\_at\_100(x)\>
+```
 
 Notice that we did not write `"cut_off_at_100"` with quotes (which is
 just a piece of text), or `cut_off_at_100()` (which is a function call,
@@ -161,11 +166,13 @@ Now `cut_off` is a name for a function. It's the same function as
 cut_off
 ```
 
+``` output
 \<function **main**.cut\_off\_at\_100(x)\>
+```
 
 Let us see another application of `apply`.
 
-### Example: prediction
+### Example: Prediction
 
 Data Science is often used to make predictions about the future. If we
 are trying to predict an outcome for a particular individual -- for
@@ -193,20 +200,23 @@ galton = Table.read_table(path_data + 'galton.csv')
 galton
 ```
 
-|family|father|mother|midparentHeight|children|childNum|gender|childHeight|
-|--- |--- |--- |--- |--- |--- |--- |--- |
-|1|78.5|67|75.43|4|1|male|73.2|
-|1|78.5|67|75.43|4|2|female|69.2|
-|1|78.5|67|75.43|4|3|female|69|
-|1|78.5|67|75.43|4|4|female|69|
-|2|75.5|66.5|73.66|4|1|male|73.5|
-|2|75.5|66.5|73.66|4|2|male|72.5|
-|2|75.5|66.5|73.66|4|3|female|65.5|
-|2|75.5|66.5|73.66|4|4|female|65.5|
-|3|75|64|72.06|2|1|male|71|
-|3|75|64|72.06|2|2|female|68|
+``` output
+| family | father | mother | midparentHeight | children | childNum | gender | childHeight |
+|--------|--------|--------|-----------------|----------|----------|--------|-------------|
+| 1      | 78.5   | 67     | 75.43           | 4        | 1        | male   | 73.2        |
+| 1      | 78.5   | 67     | 75.43           | 4        | 2        | female | 69.2        |
+| 1      | 78.5   | 67     | 75.43           | 4        | 3        | female | 69          |
+| 1      | 78.5   | 67     | 75.43           | 4        | 4        | female | 69          |
+| 2      | 75.5   | 66.5   | 73.66           | 4        | 1        | male   | 73.5        |
+| 2      | 75.5   | 66.5   | 73.66           | 4        | 2        | male   | 72.5        |
+| 2      | 75.5   | 66.5   | 73.66           | 4        | 3        | female | 65.5        |
+| 2      | 75.5   | 66.5   | 73.66           | 4        | 4        | female | 65.5        |
+| 3      | 75     | 64     | 72.06           | 2        | 1        | male   | 71          |
+| 3      | 75     | 64     | 72.06           | 2        | 2        | female | 68          |  
+
 
 ... (924 rows omitted)
+```
 
 A primary reason for collecting the data was to be able to predict the
 adult height of a child born to parents similar to those in the dataset.
@@ -223,26 +233,28 @@ heights = galton.select(3, 7).relabeled(0, 'MidParent').relabeled(1, 'Child')
 heights
 ```
 
-|MidParent|Child|
-|--- |--- |
-|75.43|73.2|
-|75.43|69.2|
-|75.43|69|
-|75.43|69|
-|73.66|73.5|
-|73.66|72.5|
-|73.66|65.5|
-|73.66|65.5|
-|72.06|71|
-|72.06|68|
+``` output
+| MidParent | Child |
+|-----------|-------|
+| 75.43     | 73.2  |
+| 75.43     | 69.2  |
+| 75.43     | 69    |
+| 75.43     | 69    |
+| 73.66     | 73.5  |
+| 73.66     | 72.5  |
+| 73.66     | 65.5  |
+| 73.66     | 65.5  |
+| 72.06     | 71    |
+| 72.06     | 68    |  
 
 ... (924 rows omitted)
+```
 
 ``` python
 heights.scatter(0)
 ```
 
-![png](../media/32-apply-function-to-column-24-0.png)
+![Apply Function](../media/32-apply-function-to-column-24-0.png)
 
 Now suppose Galton encountered a new couple, similar to those in his
 dataset, and wondered how tall their child would be. What would be a
@@ -276,7 +288,7 @@ _ = plots.plot([68.5, 68.5], [50, 85], color='red', lw=2)
 _ = plots.scatter(68, 66.24, color='gold', s=40)
 ```
 
-![png](../media/32-apply-function-to-column-26-0.png)
+![Apply Function](../media/32-apply-function-to-column-26-0.png)
 
 In order to calculate exactly where the gold dot should be, we first
 need to identify all the points in the strip. These correspond to the
@@ -287,20 +299,22 @@ close_to_68 = heights.where('MidParent', are.between(67.5, 68.5))
 close_to_68
 ```
 
-|MidParent|Child|
-|--- |--- |
-|68.44|62|
-|67.94|71.2|
-|67.94|67|
-|68.33|62.5|
-|68.23|73|
-|68.23|72|
-|68.23|69|
-|67.98|73|
-|67.98|71|
-|67.98|71|
+``` output
+| MidParent | Child |
+|-----------|-------|
+| 68.44     | 62    |
+| 67.94     | 71.2  |
+| 67.94     | 67    |
+| 68.33     | 62.5  |
+| 68.23     | 73    |
+| 68.23     | 72    |
+| 68.23     | 69    |
+| 67.98     | 73    |
+| 67.98     | 71    |
+| 67.98     | 71    |  
 
 ... (121 rows omitted)
+```
 
 The predicted height of a child who has a midparent height of 68 inches
 is the average height of the children in these rows. That's 66.24
@@ -310,7 +324,9 @@ inches.
 close_to_68.column('Child').mean()
 ```
 
+``` output
 66.24045801526718
+```
 
 We now have a way to predict the height of a child given any value of
 the midparent height near those in our dataset. We can define a function
@@ -338,13 +354,17 @@ value of the predictor and get a new prediction.
 predict_child(68)
 ```
 
+``` output
 66.24045801526718
+```
 
 ``` python
 predict_child(74)
 ```
 
+``` output
 70.41578947368421
+```
 
 How good are these predictions? We can get a sense of this by comparing
 the predictions with the data that we already have. To do this, we first
@@ -363,20 +383,23 @@ heights_with_predictions = heights.with_column(
 heights_with_predictions
 ```
 
-|MidParent|Child|Prediction|
-|--- |--- |--- |
-|75.43|73.2|70.1|
-|75.43|69.2|70.1|
-|75.43|69|70.1|
-|75.43|69|70.1|
-|73.66|73.5|70.4158|
-|73.66|72.5|70.4158|
-|73.66|65.5|70.4158|
-|73.66|65.5|70.4158|
-|72.06|71|68.5025|
-|72.06|68|68.5025|
+``` output
+| MidParent | Child | Prediction |
+|-----------|-------|------------|
+| 75.43     | 73.2  | 70.1       |
+| 75.43     | 69.2  | 70.1       |
+| 75.43     | 69    | 70.1       |
+| 75.43     | 69    | 70.1       |
+| 73.66     | 73.5  | 70.4158    |
+| 73.66     | 72.5  | 70.4158    |
+| 73.66     | 65.5  | 70.4158    |
+| 73.66     | 65.5  | 70.4158    |
+| 72.06     | 71    | 68.5025    |
+| 72.06     | 68    | 68.5025    |  
+
 
 ... (924 rows omitted)
+```
 
 To see where the predictions lie relative to the observed data, we can
 draw overlaid scatter plots with `MidParent` as the common horizontal
@@ -386,7 +409,7 @@ axis.
 heights_with_predictions.scatter('MidParent')
 ```
 
-![png](../media/32-apply-function-to-column-40-0.png)
+![Apply Function](../media/32-apply-function-to-column-40-0.png)
 
 The graph of gold dots is called a *graph of averages,* because each
 gold dot is the center of a vertical strip like the one we drew earlier.

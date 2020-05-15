@@ -1,14 +1,3 @@
-``` python
-from datascience import *
-import matplotlib
-path_data = '../../../data/'
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
 We are building up a useful inventory of techniques for identifying
 patterns and themes in a data set by using functions already available
 in Python. We will now explore a core feature of the Python programming
@@ -36,7 +25,7 @@ def double(x):
 We start any function definition by writing `def`. Here is a breakdown
 of the other parts (the *syntax*) of this small function:
 
-![](../media/function-definition.jpg)
+![Define Function](../media/function-definition.jpg)
 
 When we run the cell above, no particular number is doubled, and the
 code inside the body of `double` is not yet evaluated. In this respect,
@@ -53,13 +42,17 @@ the value of the argument given the name `x`.
 double(17)
 ```
 
+``` output
     34
+```
 
 ``` python
 double(-0.6/4)
 ```
 
+``` output
     -0.3
+```
 
 The two expressions above are both *call expressions*. In the second
 one, the value of the expression `-0.6/4` is computed and then passed as
@@ -84,7 +77,9 @@ any_name = 42
 double(any_name)
 ```
 
+``` output
     84
+```
 
 The argument can also be any value that can be doubled. For example, a
 whole array of numbers can be passed as an argument to `double`, and the
@@ -94,7 +89,9 @@ result will be another array.
 double(make_array(3, 4, 5))
 ```
 
+``` output
     array([ 6,  8, 10])
+```
 
 However, names that are defined inside a function, including arguments
 like `double`'s `x`, have only a fleeting existence. They are defined
@@ -109,6 +106,7 @@ function, even though we have called `double` in the cells above.
 x
 ```
 
+``` output
     ---------------------------------------------------------------------------
 
     NameError                                 Traceback (most recent call last)
@@ -118,8 +116,11 @@ x
 
 
     NameError: name 'x' is not defined
+```
 
-**Docstrings.** Though `double` is relatively easy to understand, many
+### Docstrings
+
+Though `double` is relatively easy to understand, many
 functions perform complicated tasks and are difficult to use without
 explanation. (You may have discovered this yourself!) Therefore, a
 well-composed function has a name that evokes its behavior, as well as
@@ -160,7 +161,9 @@ def percent(x, total):
 percent(33, 200)
 ```
 
+``` output
     16.5
+```
 
 Contrast the function `percent` defined above with the function
 `percents` defined below. The latter takes an array as its argument, and
@@ -184,7 +187,9 @@ some_array = make_array(7, 10, 4)
 percents(some_array)
 ```
 
+``` output
     array([33.33, 47.62, 19.05])
+```
 
 It is helpful to understand the steps Python takes to execute a
 function. To facilitate this, we have put a function definition and a
@@ -202,11 +207,13 @@ big_diff = biggest_difference(some_numbers)
 print("The biggest difference is", big_diff)
 ```
 
+``` output
     The biggest difference is 5
+```
 
 Here is what happens when we run that cell:
 
-![](../media/function-execution.jpg)
+![Define Function](../media/function-execution.jpg)
 
 ## Multiple arguments
 
@@ -229,9 +236,11 @@ print("Rounded to 2 decimal places:", percents(parts, 2))
 print("Rounded to 3 decimal places:", percents(parts, 3))
 ```
 
+``` output
     Rounded to 1 decimal place:  [28.6 14.3 57.1]
     Rounded to 2 decimal places: [28.57 14.29 57.14]
     Rounded to 3 decimal places: [28.571 14.286 57.143]
+```
 
 The flexibility of this new definition comes at a small price: each time
 the function is called, the number of decimal places must be specified.
@@ -253,8 +262,10 @@ print("Rounded to 1 decimal place:", percents(parts, 1))
 print("Rounded to the default number of decimal places:", percents(parts))
 ```
 
+``` output
     Rounded to 1 decimal place: [28.6 14.3 57.1]
     Rounded to the default number of decimal places: [28.57 14.29 57.14]
+```
 
 > [!NOTE]
 > Functions are called by placing argument expressions in parentheses

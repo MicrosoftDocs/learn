@@ -26,7 +26,7 @@ quiz:
           explanation: Incorrect.
         - content: "marbles.group('Color', sum)"
           isCorrect: true
-          explanation: We want one row in the new table for each unique candy color, which points to grouping by color, and the aggregation function in group should return the total for each group, which will be done by the function sum.
+          explanation: 'Correct, we want one row in the new table for each unique candy color, which points to grouping by color. The aggregation function in group should return the total for each group, which will then be completed by the function sum.'
         - content: "marbles.group('Price', sum)"
           explanation: Incorrect.
           isCorrect: false
@@ -37,21 +37,22 @@ quiz:
           explanation: 'Incorrect, these are the original column names'
         - content: '"Color", "Amount sum", "Price($) sum"'
           isCorrect: true
-          explanation: 'Correct, the group function attaches the aggregation function name to the end of the original column names to all columns besides the column being grouped on'
-        - content: '"color", "amount sum", "price($) sum"'
+          explanation: 'Correct, the group function attaches the aggregation function name to the end of all the original column names. It add add a new column besides the column being grouped on'
+        - content: '"Color", "amount sum", "price($) sum"'
           isCorrect: false
           explanation: 'The group function will not change the capitalization of the original column names'
-    - content: "If we had another two-column table called 'flavors' with a column called 'Color' for the candy's color(Red, Green, or Blue) and another column called 'Flavor' for each color's unique corresponding flavor, how can we combine the two tables so that we get every combination possible for a bag of candy?"
+    - content: "If we had another two-column table, a column called **Color** for the candy's color (Red, Green, or Blue) and a column called **Flavor** for each color's unique corresponding flavor. How can we combine the two tables so that we get every combination possible for a bag of candy?"
       choices:
         - content: 'candy.join("Color", flavors)'
           isCorrect: true
-          explanation: 'Correct, the syntax for tbl.join is tblA.join(colA, tblB, colB). Since colA and colB in this case have the same name, tblA.join(colA, tblB) will also return the correct result.'
+          explanation: 'Correct, the syntax for tbl.join is tblA.join(colA, tblB, colB). Since colA and colB in this case have the same name. <br><ul> 
+          <li>tblA.join(colA, tblB) will also return the correct result.</li></ul>'
         - content: 'candy.join(flavors)'
           isCorrect: false
-          explanation: 'Incorrect, missing the column to join the two tables on.'
+          explanation: 'Incorrect, you will be missing the column to join the two tables on.'
         - content: 'candy.join(Color, flavors)'
           isCorrect: false
-          explanation: 'Incorrect, the column to join the two tables on should be in quotes.'
+          explanation: 'Incorrect, the column to join the two tables on should be in "" quotes.'
     - content: 'using the original table called "candy", which of the following code will return a table that clearly shows the price for every combination of color and amount for a bag of candy, with one row for each color?'
       choices:
         - content: 'candy.pivot("Amount", "Color")'

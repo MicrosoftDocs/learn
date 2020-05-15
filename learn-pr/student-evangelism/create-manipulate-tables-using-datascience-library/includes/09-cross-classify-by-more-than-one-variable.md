@@ -1,16 +1,3 @@
-``` python
-
-from datascience import *
-path_data = '../../../../data/'
-import numpy as np
-
-import matplotlib
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-```
-
 When individuals have multiple features, there are many different ways
 to classify them. For example, if we have a population of college
 students for each of whom we have recorded a major and the number of
@@ -20,7 +7,7 @@ year, or by a combination of major and year.
 The `group` method also allows us to classify individuals according to
 multiple variables. This is called *cross-classifying*.
 
-### Two variables: counting the number in each paired category
+### Two variables: Count the number in each paired category
 
 The table `more_cones` records the flavor, color, and price of six ice
 cream cones.
@@ -35,14 +22,17 @@ more_cones = Table().with_columns(
 more_cones
 ```
 
-|Flavor|Color|Price|
-|--- |--- |--- |
-|strawberry|pink|3.55|
-|chocolate|light brown|4.75|
-|chocolate|dark brown|5.25|
-|strawberry|pink|5.25|
-|chocolate|dark brown|5.25|
-|bubblegum|pink|4.75|
+``` output
+| Flavor     | Color       | Price |
+|------------|-------------|-------|
+| strawberry | pink        | 3.55  |
+| chocolate  | light brown | 4.75  |
+| chocolate  | dark brown  | 5.25  |
+| strawberry | pink        | 5.25  |
+| chocolate  | dark brown  | 5.25  |
+| bubblegum  | pink        | 4.75  |   
+
+```
 
 We know how to use `group` to count the number of cones of each flavor:
 
@@ -50,11 +40,14 @@ We know how to use `group` to count the number of cones of each flavor:
 more_cones.group('Flavor')
 ```
 
-|Flavor|count|
-|--- |--- |
-|bubblegum|1|
-|chocolate|3|
-|strawberry|2|
+``` output
+| Flavor     | count |
+|------------|-------|
+| bubblegum  | 1     |
+| chocolate  | 3     |
+| strawberry | 2     |  
+
+```
 
 But now each cone has a color as well. To classify the cones by both
 flavor and color, we will pass a list of labels as an argument to
@@ -71,14 +64,17 @@ pink strawberry.
 more_cones.group(['Flavor', 'Color'])
 ```
 
-|Flavor|Color|count|
-|--- |--- |--- |
-|bubblegum|pink|1|
-|chocolate|dark brown|2|
-|chocolate|light brown|1|
-|strawberry|pink|2|
+``` output
+| Flavor     | Color       | count |
+|------------|-------------|-------|
+| bubblegum  | pink        | 1     |
+| chocolate  | dark brown  | 2     |
+| chocolate  | light brown | 1     |
+| strawberry | pink        | 2     |  
 
-### Two variables: finding a characteristic of each paired category
+```
+
+### Two variables: Find a characteristic of each paired category
 
 A second argument aggregates all other columns that are not in the list
 of grouped columns.
@@ -87,12 +83,15 @@ of grouped columns.
 more_cones.group(['Flavor', 'Color'], sum)
 ```
 
-|Flavor|Color|Price sum|
-|--- |--- |--- |
-|bubblegum|pink|4.75|
-|chocolate|dark brown|10.5|
-|chocolate|light brown|4.75|
-|strawberry|pink|8.8|
+``` output
+| Flavor     | Color       | Price sum |
+|------------|-------------|-----------|
+| bubblegum  | pink        | 4.75      |
+| chocolate  | dark brown  | 10.5      |
+| chocolate  | light brown | 4.75      |
+| strawberry | pink        | 8.8       |  
+
+```
 
 **Three or more variables.** You can use `group` to classify rows by
 three or more categorical variables. Just include them all in the list
@@ -100,7 +99,7 @@ that is the first argument. But cross-classifying by multiple variables
 can become complex, as the number of distinct combinations of categories
 can be quite large.
 
-### Pivot tables: rearranging the output of `group`
+### Rearrange the output of group
 
 Many uses of cross-classification involve just two categorical
 variables, like `Flavor` and `Color` in the example above. In these
@@ -116,12 +115,15 @@ category of flavor and color:
 more_cones.group(['Flavor', 'Color'])
 ```
 
-|Flavor|Color|count|
-|--- |--- |--- |
-|bubblegum|pink|1|
-|chocolate|dark brown|2|
-|chocolate|light brown|1|
-|strawberry|pink|2|
+``` output
+| Flavor     | Color       | count |
+|------------|-------------|-------|
+| bubblegum  | pink        | 1     |
+| chocolate  | dark brown  | 2     |
+| chocolate  | light brown | 1     |
+| strawberry | pink        | 2     |  
+
+```
 
 The same data can be displayed differently using the Table method
 `pivot`. Ignore the code for a moment, and just examine the table of
@@ -131,11 +133,14 @@ outcomes.
 more_cones.pivot('Flavor', 'Color')
 ```
 
-|Color|bubblegum|chocolate|strawberry|
-|--- |--- |--- |--- |
-|dark brown|0|2|0|
-|light brown|0|1|0|
-|pink|1|0|2|
+``` output
+| Color       | bubblegum | chocolate | strawberry |
+|-------------|-----------|-----------|------------|
+| dark brown  | 0         | 2         | 0          |
+| light brown | 0         | 1         | 0          |
+| pink        | 1         | 0         | 2          |  
+
+```
 
 Notice how this table displays all nine possible pairs of flavor and
 color, including pairs like "dark brown bubblegum" that don't exist in
@@ -148,7 +153,7 @@ could take one or three or more. On the other hand, `pivot` always takes
 two column labels, one to determine the columns and one to determine the
 rows.
 
-**`pivot`**
+### The pivot method
 
 The `pivot` method is closely related to the `group` method: it groups
 together rows that share a combination of values. It differs from
@@ -173,11 +178,14 @@ the total price of the cones in each cell.
 more_cones.pivot('Flavor', 'Color', values='Price', collect=sum)
 ```
 
-|Color|bubblegum|chocolate|strawberry|
-|--- |--- |--- |--- |
-|dark brown|0|10.5|0|
-|light brown|0|4.75|0|
-|pink|4.75|0|8.8|
+``` output
+| Color       | bubblegum | chocolate | strawberry |
+|-------------|-----------|-----------|------------|
+| dark brown  | 0         | 10.5      | 0          |
+| light brown | 0         | 4.75      | 0          |
+| pink        | 4.75      | 0         | 8.8        |  
+
+```
 
 And here is `group` doing the same thing.
 
@@ -185,19 +193,22 @@ And here is `group` doing the same thing.
 more_cones.group(['Flavor', 'Color'], sum)
 ```
 
-|Flavor|Color|Price sum|
-|--- |--- |--- |
-|bubblegum|pink|4.75|
-|chocolate|dark brown|10.5|
-|chocolate|light brown|4.75|
-|strawberry|pink|8.8|
+``` output
+| Flavor     | Color       | Price sum |
+|------------|-------------|-----------|
+| bubblegum  | pink        | 4.75      |
+| chocolate  | dark brown  | 10.5      |
+| chocolate  | light brown | 4.75      |
+| strawberry | pink        | 8.8       |  
+
+```
 
 Though the numbers in both tables are the same, table produced by
 `pivot` is easier to read and lends itself more easily to analysis. The
 advantage of `pivot` is that it places grouped values into adjacent
 columns, so that they can be combined and compared.
 
-### Example: education and income of californian adults
+### Example: Education and income of Californian adults
 
 The State of California's Open Data Portal is a rich source of
 information about the lives of Californians. It is our source of a
@@ -216,20 +227,22 @@ ca_2014 = full_table.where('Year', are.equal_to('1/1/14 0:00')).where('Age', are
 ca_2014
 ```
 
-|Year|Age|Gender|Educational Attainment|Personal Income|Population Count|
-|--- |--- |--- |--- |--- |--- |
-|1/1/14 0:00|18 to 64|Female|No high school diploma|H: 75,000 and over|2058|
-|1/1/14 0:00|65 to 80+|Male|No high school diploma|H: 75,000 and over|2153|
-|1/1/14 0:00|65 to 80+|Female|No high school diploma|G: 50,000 to 74,999|4666|
-|1/1/14 0:00|65 to 80+|Female|High school or equivalent|H: 75,000 and over|7122|
-|1/1/14 0:00|65 to 80+|Female|No high school diploma|F: 35,000 to 49,999|7261|
-|1/1/14 0:00|65 to 80+|Male|No high school diploma|G: 50,000 to 74,999|8569|
-|1/1/14 0:00|18 to 64|Female|No high school diploma|G: 50,000 to 74,999|14635|
-|1/1/14 0:00|65 to 80+|Male|No high school diploma|F: 35,000 to 49,999|15212|
-|1/1/14 0:00|65 to 80+|Male|College, less than 4-yr degree|B: 5,000 to 9,999|15423|
-|1/1/14 0:00|65 to 80+|Female|Bachelor's degree or higher|A: 0 to 4,999|15459|
+``` output
+| Year        | Age       | Gender | Educational Attainment         | Personal Income     | Population Count |
+|-------------|-----------|--------|--------------------------------|---------------------|------------------|
+| 1/1/14 0:00 | 18 to 64  | Female | No high school diploma         | H: 75,000 and over  | 2058             |
+| 1/1/14 0:00 | 65 to 80+ | Male   | No high school diploma         | H: 75,000 and over  | 2153             |
+| 1/1/14 0:00 | 65 to 80+ | Female | No high school diploma         | G: 50,000 to 74,999 | 4666             |
+| 1/1/14 0:00 | 65 to 80+ | Female | High school or equivalent      | H: 75,000 and over  | 7122             |
+| 1/1/14 0:00 | 65 to 80+ | Female | No high school diploma         | F: 35,000 to 49,999 | 7261             |
+| 1/1/14 0:00 | 65 to 80+ | Male   | No high school diploma         | G: 50,000 to 74,999 | 8569             |
+| 1/1/14 0:00 | 18 to 64  | Female | No high school diploma         | G: 50,000 to 74,999 | 14635            |
+| 1/1/14 0:00 | 65 to 80+ | Male   | No high school diploma         | F: 35,000 to 49,999 | 15212            |
+| 1/1/14 0:00 | 65 to 80+ | Male   | College, less than 4-yr degree | B: 5,000 to 9,999   | 15423            |
+| 1/1/14 0:00 | 65 to 80+ | Female | Bachelor's degree or higher    | A: 0 to 4,999       | 15459            |  
 
 ... (117 rows omitted)
+```
 
 Each row of the table corresponds to a combination of age, gender,
 educational level, and income. There are 127 such combinations in all!
@@ -243,20 +256,22 @@ educ_inc = ca_2014.select('Educational Attainment', 'Personal Income', 'Populati
 educ_inc
 ```
 
-|Educational Attainment|Personal Income|Population Count|
-|--- |--- |--- |
-|No high school diploma|H: 75,000 and over|2058|
-|No high school diploma|H: 75,000 and over|2153|
-|No high school diploma|G: 50,000 to 74,999|4666|
-|High school or equivalent|H: 75,000 and over|7122|
-|No high school diploma|F: 35,000 to 49,999|7261|
-|No high school diploma|G: 50,000 to 74,999|8569|
-|No high school diploma|G: 50,000 to 74,999|14635|
-|No high school diploma|F: 35,000 to 49,999|15212|
-|College, less than 4-yr degree|B: 5,000 to 9,999|15423|
-|Bachelor's degree or higher|A: 0 to 4,999|15459|
+``` output
+| Educational Attainment         | Personal Income     | Population Count |
+|--------------------------------|---------------------|------------------|
+| No high school diploma         | H: 75,000 and over  | 2058             |
+| No high school diploma         | H: 75,000 and over  | 2153             |
+| No high school diploma         | G: 50,000 to 74,999 | 4666             |
+| High school or equivalent      | H: 75,000 and over  | 7122             |
+| No high school diploma         | F: 35,000 to 49,999 | 7261             |
+| No high school diploma         | G: 50,000 to 74,999 | 8569             |
+| No high school diploma         | G: 50,000 to 74,999 | 14635            |
+| No high school diploma         | F: 35,000 to 49,999 | 15212            |
+| College, less than 4-yr degree | B: 5,000 to 9,999   | 15423            |
+| Bachelor's degree or higher    | A: 0 to 4,999       | 15459            |  
 
 ... (117 rows omitted)
+```
 
 Let's start by looking at educational level alone. The categories of
 this variable have been subdivided by the different levels of income. So
@@ -269,12 +284,15 @@ educ_totals = education.group('Educational Attainment', sum)
 educ_totals
 ```
 
-|Educational Attainment|Population Count sum|
-|--- |--- |
-|Bachelor's degree or higher|8525698|
-|College, less than 4-yr degree|7775497|
-|High school or equivalent|6294141|
-|No high school diploma|4258277|
+``` output
+| Educational Attainment         | Population Count sum |
+|--------------------------------|----------------------|
+| Bachelor's degree or higher    | 8525698              |
+| College, less than 4-yr degree | 7775497              |
+| High school or equivalent      | 6294141              |
+| No high school diploma         | 4258277              |
+
+```
 
 There are only four categories of educational attainment. The counts are
 so large that is is more helpful to look at percents. For this, we will
@@ -298,12 +316,15 @@ educ_distribution = educ_totals.with_column(
 educ_distribution
 ```
 
-|Educational Attainment|Population Count sum|Population Percent|
-|--- |--- |--- |
-|Bachelor's degree or higher|8525698|31.75|
-|College, less than 4-yr degree|7775497|28.96|
-|High school or equivalent|6294141|23.44|
-|No high school diploma|4258277|15.86|
+``` output
+| Educational Attainment         | Population Count sum | Population Percent |
+|--------------------------------|----------------------|--------------------|
+| Bachelor's degree or higher    | 8525698              | 31.75              |
+| College, less than 4-yr degree | 7775497              | 28.96              |
+| High school or equivalent      | 6294141              | 23.44              |
+| No high school diploma         | 4258277              | 15.86              |
+
+```
 
 By using `pivot`, we can get a contingency table (a table of counts) of
 adult Californians cross-classified by `Educational Attainment` and
@@ -314,16 +335,19 @@ totals = educ_inc.pivot('Educational Attainment', 'Personal Income', values='Pop
 totals
 ```
 
-|Personal Income|Bachelor's degree or higher|College, less than 4-yr degree|High school or equivalent|No high school diploma|
-|--- |--- |--- |--- |--- |
-|A: 0 to 4,999|575491|985011|1161873|1204529|
-|B: 5,000 to 9,999|326020|810641|626499|597039|
-|C: 10,000 to 14,999|452449|798596|692661|664607|
-|D: 15,000 to 24,999|773684|1345257|1252377|875498|
-|E: 25,000 to 34,999|693884|1091642|929218|464564|
-|F: 35,000 to 49,999|1122791|1112421|782804|260579|
-|G: 50,000 to 74,999|1594681|883826|525517|132516|
-|H: 75,000 and over|2986698|748103|323192|58945|
+``` output
+| Personal Income     | Bachelor's degree or higher | College, less than 4-yr degree | High school or equivalent | No high school diploma |
+|---------------------|-----------------------------|--------------------------------|---------------------------|------------------------|
+| A: 0 to 4,999       | 575491                      | 985011                         | 1161873                   | 1204529                |
+| B: 5,000 to 9,999   | 326020                      | 810641                         | 626499                    | 597039                 |
+| C: 10,000 to 14,999 | 452449                      | 798596                         | 692661                    | 664607                 |
+| D: 15,000 to 24,999 | 773684                      | 1345257                        | 1252377                   | 875498                 |
+| E: 25,000 to 34,999 | 693884                      | 1091642                        | 929218                    | 464564                 |
+| F: 35,000 to 49,999 | 1122791                     | 1112421                        | 782804                    | 260579                 |
+| G: 50,000 to 74,999 | 1594681                     | 883826                         | 525517                    | 132516                 |
+| H: 75,000 and over  | 2986698                     | 748103                         | 323192                    | 58945                  |  
+
+```
 
 Here you see the power of `pivot` over other cross-classification
 methods. Each column of counts is a distribution of personal income at a
@@ -341,16 +365,19 @@ distributions = totals.select(0).with_columns(
 distributions
 ```
 
-|Personal Income|Bachelor's degree or higher|College, less than 4-yr degree|High school or equivalent|No high school diploma|
-|--- |--- |--- |--- |--- |
-|A: 0 to 4,999|6.75|12.67|18.46|28.29|
-|B: 5,000 to 9,999|3.82|10.43|9.95|14.02|
-|C: 10,000 to 14,999|5.31|10.27|11|15.61|
-|D: 15,000 to 24,999|9.07|17.3|19.9|20.56|
-|E: 25,000 to 34,999|8.14|14.04|14.76|10.91|
-|F: 35,000 to 49,999|13.17|14.31|12.44|6.12|
-|G: 50,000 to 74,999|18.7|11.37|8.35|3.11|
-|H: 75,000 and over|35.03|9.62|5.13|1.38|
+``` output
+| Personal Income     | Bachelor's degree or higher | College, less than 4-yr degree | High school or equivalent | No high school diploma |
+|---------------------|-----------------------------|--------------------------------|---------------------------|------------------------|
+| A: 0 to 4,999       | 6.75                        | 12.67                          | 18.46                     | 28.29                  |
+| B: 5,000 to 9,999   | 3.82                        | 10.43                          | 9.95                      | 14.02                  |
+| C: 10,000 to 14,999 | 5.31                        | 10.27                          | 11                        | 15.61                  |
+| D: 15,000 to 24,999 | 9.07                        | 17.3                           | 19.9                      | 20.56                  |
+| E: 25,000 to 34,999 | 8.14                        | 14.04                          | 14.76                     | 10.91                  |
+| F: 35,000 to 49,999 | 13.17                       | 14.31                          | 12.44                     | 6.12                   |
+| G: 50,000 to 74,999 | 18.7                        | 11.37                          | 8.35                      | 3.11                   |
+| H: 75,000 and over  | 35.03                       | 9.62                           | 5.13                      | 1.38                   |  
+
+```
 
 At a glance, you can see that over 35% of those with Bachelor's degrees
 or higher had incomes of $\$75,000$ and over, whereas fewer than 10% of
@@ -366,4 +393,4 @@ attainment and personal income.
 distributions.select(0, 1, 4).barh(0)
 ```
 
-![png](../media/34-cross-classify-by-more-than-one-variable-37-0.png)
+![Variable](../media/34-cross-classify-by-more-than-one-variable-37-0.png)
