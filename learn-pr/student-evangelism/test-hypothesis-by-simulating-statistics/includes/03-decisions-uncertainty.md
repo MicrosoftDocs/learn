@@ -84,7 +84,7 @@ of the distance will make you lean towards the alternative.
 The **observed value of the test statistic** is the value of the
 statistic you get from the data in the study, not a simulated value.
 Among Mendel's 929 plants, 705 had purple flowers. The observed value of
-the test statistic was therefore
+the test statistic was therefore:
 
 ``` python
 abs ( 100 * (705 / 929) - 75)
@@ -134,7 +134,7 @@ composition.
 If the data do not support the null hypothesis, we say that the test
 *rejects* the null hypothesis.
 
-### The meaning of "Consistent"
+### The meaning of "consistent"
 
 In the example about Alameda County juries, it was apparent that our
 observed test statistic was far from what was predicted by the null
@@ -297,7 +297,7 @@ random_sample
 
 ```
 
-The average of these 27 randomly selected scores is
+The average of these 27 randomly selected scores is:
 
 ``` python
 np.average(random_sample.column('Midterm'))
@@ -311,7 +311,7 @@ That's the average of 27 randomly selected scores. The cell below
 collects the code necessary for generating this random average.
 
 Now we can simulate the random sample average by repeating the
-calculation multple times.
+calculation multiple times.
 
 ``` python
 def random_sample_average():
@@ -395,7 +395,7 @@ commonly called the *P-value* of the test.
 **Definition:** The P-value of a test is the chance, based on the model
 in the null hypothesis, that the test statistic will be equal to the
 observed value in the sample or even further in the direction that
-supports the alternative.\*\*
+supports the alternative.
 
 If a P-value is small, that means the tail beyond the observed statistic
 is small and so the observed statistic is far away from what the null
@@ -442,8 +442,7 @@ made the point that the value was his personal choice from among many:
 in an article in 1926, he wrote, "If one in twenty does not seem high
 enough odds, we may, if we prefer it draw the line at one in fifty (the
 2 percent point), or one in a hundred (the 1 percent point). Personally,
-the author prefers to set a low standard of significance at the 5
-percent point ..."
+the author prefers to set a low standard of significance at the 5 percent point."
 
 Fisher knew that "low" is a matter of judgment and has no unique
 definition. We suggest that you follow his excellent example. Provide
@@ -461,5 +460,10 @@ important to keep the following points in mind.
     model in the null hypothesis, it typically doesn't explain *why* the
     model doesn't work.
 
-> [!IMPORTANT]
-> Let's try to develop a general framework for decision making, into which all our examples will fit. Choose the appropriate word. Options may not be used at all. The basic structure of testing a hypothesis is the following:"
+### Knowledge Check
+
+Let's try to develop a general framework for decision making, into which all our examples will fit. 
+
+Choose the appropriate word. Options may not be used at all.
+
+The basic structure of testing a hypothesis is the following:

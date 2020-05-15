@@ -1,7 +1,7 @@
 > [!NOTE]
-> You can find an interactive version of this unit named **multiple-categories.ipynb** in your virtual environment
+> You can find an interactive version of this unit named **multiple-categories.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup.**
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
@@ -56,7 +56,7 @@ composition of jury panels in Alameda County. The ACLU compiled data on
 the ethnic composition of the jury panels in 11 felony trials in Alameda
 County in the years 2009 and 2010. In those panels, the total number of
 people who reported for jury service was 1,453. The ACLU gathered
-demographic data on all of these prosepctive jurors, and compared those
+demographic data on all of these prospective jurors, and compared those
 data with the composition of all eligible jurors in the county.
 
 The data are tabulated below in a table called `jury`. For each

@@ -9,13 +9,14 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  show_latex: true
 durationInMinutes: 10
 content: |
   [!include[](includes/02-multiple-categories.md)]
 
 quiz:
   questions:
-    - content: 'which ethnicities are underrepresented in the jury panel?'
+    - content: 'Which ethnicities are underrepresented in the jury panel?'
       choices:
         - content: 'Asian'
           isCorrect: false

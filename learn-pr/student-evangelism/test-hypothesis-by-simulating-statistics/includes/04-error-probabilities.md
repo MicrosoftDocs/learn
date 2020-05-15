@@ -12,10 +12,11 @@ If you are testing a null hypothesis against the alternative that the
 null hypothesis isn't true, then there are four ways of classifying
 reality and the result of the test.
 
-                                      Null is True    Alternative is True
-  --------------------------------- ---------------- ---------------------
-           **Test Favors the Null**  Correct result          Error
-    **Test Favors the Alternative**      Error          Correct result
+| Test                          | Null is True   | Alternative is True |
+|-------------------------------|----------------|---------------------|
+| Test Favors the Null          | Correct result | Error               |
+| Test Favors the Alternative   | Error          | Correct result      |
+
 
 In two out of the four cells of this table, the test result is wrong.
 One type of error occurs if the test favors the alternative hypothesis
@@ -146,7 +147,7 @@ replicating the experiment and testing for that particular effect alone.
 If it comes out significant again, that will validate the original
 conclusion.
 
-### Technical Note: The other kind of error
+### Technical note: The other kind of error
 
 There is, of course, another kind of error: concluding that the
 treatment does nothing when in fact it does something. Discussions of
