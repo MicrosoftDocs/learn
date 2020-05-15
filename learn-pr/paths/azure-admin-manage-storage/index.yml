@@ -35,6 +35,6 @@ modules:
 - learn.upload-download-and-manage-data-with-azure-storage-explorer
 - learn.azure.export-data-with-azure-import-export
 - learn.azure.move-data-with-azure-data-box
-- learn.caching-and-performance-azure-storage-and-disk
+- learn.caching-and-performance-azure-storage-and-disks
 trophy:
   uid: learn.azure-admin-manage-storage.trophy
