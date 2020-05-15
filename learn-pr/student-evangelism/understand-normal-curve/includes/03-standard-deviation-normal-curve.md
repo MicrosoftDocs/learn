@@ -1,13 +1,3 @@
-``` python
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import math
-import numpy as np
-```
-
 We know that the mean is the balance point of the histogram. Unlike the
 mean, the Standard Deviation (SD) is not easy to identify by looking at the
 histogram.
@@ -53,9 +43,6 @@ baby.hist('Maternal Height', bins=np.arange(55.5, 72.5, 1), unit='inch')
 positions = np.arange(-3, 3.1, 1)*sd_height + mean_height
 plots.xticks(positions);
 ```
-
-    /home/choldgraf/anaconda/envs/textbook/lib/python3.6/site-packages/matplotlib/axes/_axes.py:6462: UserWarning: The 'normed' kwarg is deprecated, and has been replaced by the 'density' kwarg.
-      warnings.warn("The 'normed' kwarg is deprecated, and has been "
 
 ![Standard deviation example](../media/71-standard-deviation-normal-curve-6-1.png)
 
@@ -253,11 +240,15 @@ The table below compares what we know about all distributions and about
 normal distributions. Notice that when $z=1$, Chebychev's bound is
 correct but not illuminating.
 
-| Percent in Range | All Distributions: Bound | Normal Distribution: Approximation |
-|--------------------|-----------------------|-------------------|
-|average $\pm$ 1 SD  | at least 0%           | about 68%         |
-|average $\pm$ 2 SDs | at least 75%          | about 95%         |
-|average $\pm$ 3 SDs | at least 88.888...%   | about 99.73%      |
+``` output
+| Percent in Range    | All Distributions: Bound | Normal Distribution: Approximation |
+|---------------------|--------------------------|------------------------------------|
+| average $\pm$ 1 SD  | at least 0%              | about 68%                          |
+| average $\pm$ 2 SDs | at least 75%             | about 95%                          |
+| average $\pm$ 3 SDs | at least 88.888...%      | about 99.73%                       |
+
+
+```
 
 ## Check your knowledge
 
