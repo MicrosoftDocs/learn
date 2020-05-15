@@ -23,7 +23,7 @@ quiz:
           explanation: Incorrect.
         - content: '4'
           isCorrect: true
-          explanation: There are only 4 elements in the array (1, 2, 3, 7), so the body of the for loop will run 4 times.
+          explanation: 'Correct, There are only 4 elements in the array (1, 2, 3, 7), so the body of the for loop will run 4 times.'
         - content: '0'
           isCorrect: false
           explanation: Incorrect.
@@ -34,7 +34,7 @@ quiz:
           explanation: 'Correct, at the first iteration, "count" is assigned to the first item of the array, which is 1.'
         - content: '0'
           isCorrect: false
-          explanation: 'Incorrect'
+          explanation: 'Incorrect.'
         - content: '2'
           isCorrect: false
           explanation: Incorrect.
@@ -42,10 +42,10 @@ quiz:
       choices:
         - content: '0'
           isCorrect: false
-          explanation: 'Incorrect'
+          explanation: 'Incorrect.'
         - content: '1'
           isCorrect: true
-          explanation: 'Correct, in iteration 2, count is assigned to 2, and 2%2 is 0, so "Even!" will be printed in that iteration. All of the other iterations should print "Odd!"'
+          explanation: 'Correct, in iteration 2, count is assigned to 2, and 2%2 is 0, so "Even!" <br> All of the other iterations should print "Odd!"</br>'
         - content: '2'
           isCorrect: false
           explanation: Incorrect.

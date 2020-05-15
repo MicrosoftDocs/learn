@@ -8,7 +8,7 @@ a new and large dataset. We will also introduce `map_table`, a powerful
 visualization tool.
 
 The  Bay Area Bike Share service
-published a Open Data set that describing every bicycle rental from September 2014 to August 2015 in
+published a Open Data set that describes every bicycle rental from September 2014 to August 2015 in
 their system. There were 354,152 rentals in all the columns are:
 
 -   An ID for the rental
@@ -186,7 +186,7 @@ Someone had a quick trip (271 seconds, or about 4.5 minutes) from
 bike trips between the 2nd Avenue stations and Adobe on Almaden, because
 the latter is in a different city.
 
-### Draw Maps
+### Draw maps
 
 The table `stations` contains geographical information about each bike
 station, including latitude, longitude, and a "landmark", which is the

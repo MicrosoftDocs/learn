@@ -143,7 +143,7 @@ census.set_format('Percent Change', PercentFormatter)
 ... (296 rows omitted)
 ```
 
-## Sorting the data
+## Sort the data
 
 Let us sort the table in decreasing order of the absolute change in population.
 

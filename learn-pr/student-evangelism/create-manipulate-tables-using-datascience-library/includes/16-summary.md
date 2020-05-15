@@ -1,9 +1,7 @@
-Congratulations on finishing the module! In this module you have learned about a powerful way of organizing and visualizing data, Tables. In addition, you have also learned how to generate and interact with them in Python using the datascience Library. 
+In this module, you've learned the fundamentals of interacting with data, what it is and what its key characteristics are. Here are some of the things you covered.
 
-We have covered lots of ground in this module and are some the key areas which you have covered.
-
-- Understanding of Tables as a fundamental object type used for representing data sets.
-- The creation of tables in python using the datascience Library.
-- Understanding and interacting with various different datasets using the datascience Library.
-- Manipulating and creating tables.
-- Data wrangling and using the various datascience Library functions.
+- Working with tables, the fundamental concepts of object types and how table represent data sets.
+- The creation of tables in python using the datascience library.
+- How to interact with various different datasets using the datascience library.
+- How to manipulate data and created tables and interacted with data.
+- The fundamentals of data wrangling and using the various datascience library functions.

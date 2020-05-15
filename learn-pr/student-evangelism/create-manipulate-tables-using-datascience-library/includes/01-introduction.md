@@ -10,7 +10,7 @@ np.set_printoptions(threshold=50)
 path_data = '../../../data/'
 ```
 
-## Tables
+## Introduction to Tables
 
 Tables are a fundamental object type for representing data sets. A table
 can be viewed in two ways:
@@ -165,7 +165,7 @@ minard.num_rows
 8
 ```
 
-### list the column Labels
+### List the column labels
 
 The method `labels` can be used to list the labels of all the columns.
 With `minard` we don't gain much by this, but it can be very useful for
@@ -244,7 +244,7 @@ minard
 
 ```
 
-### Accessing the data in a column
+### Access data in a column
 
 We can use a column's label to access the array of data in the column.
 
@@ -287,7 +287,7 @@ minard.column(4).item(5)
 24000
 ```
 
-### Working with the data in a column
+### Work with data in a column
 
 Because columns are arrays, we can use array operations on them to
 discover new information. For example, we can create a new column that
@@ -339,7 +339,7 @@ minard.set_format('Percent Surviving', PercentFormatter)
 
 ```
 
-### Choosing sets of columns
+### Choose sets of columns
 
 The method `select` creates a new table that contains only the specified
 columns.
