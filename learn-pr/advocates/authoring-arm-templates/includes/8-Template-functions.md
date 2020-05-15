@@ -16,7 +16,7 @@ In ARM template, there are multiple types of [ARM template functions](https://do
 
 A function is invoked when the Azure Resource Manager detects the square brackets "[]".  These brackets indicate that whatever is in between must be processed, and the result will be used as the value.
 
-for example, in order to adhere to a naming convention, you might want to use a function to name a resource by adding a prefix. In that case, you need to know that when generating that name for a storage account, there are a few requirements:
+For example, in order to adhere to a naming convention, you might want to use a function to name a resource by adding a prefix. In that case, you need to know that when generating that name for a storage account, there are a few requirements:
 
 - Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.
 - Your storage account name must be unique within Azure. No two storage accounts can have the same name.

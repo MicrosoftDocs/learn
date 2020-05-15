@@ -14,7 +14,7 @@ For that you go to the [Define resources in Azure Resource Manager templates](ht
 
 ![Microsoft.Storage resource types](../media/Storage-API-reference.png)
 
-There you will find each resource types and versions of the apiVersion that you need to identify the properties needed in your template.  for example, the latest version of the apiVersion for storage account provides you with the required template format in a JSON notation.  Including all the properties that can be defined in the template.
+There you will find each resource types and versions of the apiVersion that you need to identify the properties needed in your template.  For example, the latest version of the apiVersion for storage account provides you with the required template format in a JSON notation.  Including all the properties that can be defined in the template.
 
 ```json
 {

@@ -25,7 +25,7 @@ code azuredeploy.json
 
 4. Save the updated template, prepare to deploy it.
 
-## Deploy The modified template
+## Deploy the modified template
 
 Now that you have modified the template, again, Let's deploy it. The following example deploys the template with Azure CLI.
 
