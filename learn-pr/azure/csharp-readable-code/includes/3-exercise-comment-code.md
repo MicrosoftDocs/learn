@@ -184,13 +184,13 @@ foreach (var orderID in orderIDs)
 }
 ```
 
-A comment's usefulness is subjective.  In all matter related to code readability, you should use your best judgment.  Do what you think is best to improve the clarity of your code.
+A comment's usefulness is subjective.  In all matters related to code readability, you should use your best judgment.  Do what you think is best to improve the clarity of your code.
 
 ## Recap
 
 The main takeaways from this exercise:
 
-- Use code comments to leave meaningful notes to yourself about the problem you code solves.
+- Use code comments to leave meaningful notes to yourself about the problem your code solves.
 - Don't use code comments that explain how C# or the .NET Class Library works.
 - Use code comments when temporarily trying alternative solutions until you're ready to commit to the new code solution, at which point you can delete the old code.
 - Never trust comments.  They may not reflect the current state of the code after many changes and updates.

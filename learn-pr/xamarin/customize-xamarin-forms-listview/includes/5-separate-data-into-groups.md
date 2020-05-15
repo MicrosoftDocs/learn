@@ -44,7 +44,7 @@ To display our appointments by day, we just need to set this as our `ItemSource`
 
 ```csharp
 appointmentListView.ItemsSource = groupedAppointments;
-appointmentListView.IsGroupEnabled = true;
+appointmentListView.IsGroupingEnabled = true;
 ```
 
 ### Add group headers

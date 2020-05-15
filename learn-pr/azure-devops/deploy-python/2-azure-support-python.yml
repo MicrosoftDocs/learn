@@ -6,7 +6,7 @@ metadata:
   description: Understand what Python is and how it can be deployed to Azure.
   ms.date: 04/27/2020
   author: tpetchel
-  ms.author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

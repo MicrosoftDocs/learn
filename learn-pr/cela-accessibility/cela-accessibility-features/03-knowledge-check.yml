@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility-features.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge check
+  description: This unit is a quiz to find out how much you learned from this module. 
+  ms.date: 05/07/2020
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-cela-accessibility
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does the Copilot feature for Windows 10 and Xbox One enable?"
+    choices:
+    - content: "two physical controllers to be treated as one digital controller input"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "two people to play against each other in one game"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "two physical controllers to be connected to one console"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "two physical controllers to be connected to two separate devices"
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "What setting(s) for notifications are available with Focus Assist?"
+    choices:
+    - content: "all notifications"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "priority notifications only"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "just alarms"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "all of the above"
+      isCorrect: true
+      explanation: "Correct."
+  - content: "What is the primary audience for Microsoft Translator?"
+    choices:
+    - content: "personal use"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "business use"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "educational use"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "all of the above"
+      isCorrect: true
+      explanation: "Correct."
+  - content: "After using PowerPoint Presenter Coach to rehearse a presentation, what will you receive after you exit full-screen mode?"
+    choices:
+    - content: "numeric score from 1 to 100"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Rehearsal Report that summarizes what is observed and offer recommendations to improve"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "examples of other PowerPoint presentations similar to yours"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "all of the above"
+      isCorrect: false
+      explanation: "Incorrect."

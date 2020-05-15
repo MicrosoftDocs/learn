@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-production-workloads-azure-databricks-azure-data-factory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What's the purpose of linked services in Azure Data Factory?"
+    choices:
+    - content: "To represent a data store or a compute resource that can host execution of an activity"
+      isCorrect: true
+      explanation: "Correct. Linked services define the connection information needed for Data Factory to connect to external resources."
+    - content: "To represent a processing step in a pipeline"
+      isCorrect: false
+      explanation: "Activities, not linked services, represent processing steps in a Data Factory pipeline."
+    - content: "To link data stores or computer resources together for the movement of data between resources"
+      isCorrect: false
+      explanation: "Linked services define the connection information needed for Data Factory to connect to external resources. But linked services aren't the connection between resources."
+  - content: "How can parameters be passed into an Azure Databricks notebook from Azure Data Factory?"
+    choices:
+    - content: "Use the new API endpoint option on a notebook in Databricks and provide the parameter name"
+      isCorrect: false
+      explanation: "Incorrect. There is no such option for notebooks in Databricks."
+    - content: "Use notebook widgets to define parameters that can be passed into the notebook"
+      isCorrect: true
+      explanation: "Correct. You can configure parameters by using widgets on the Databricks notebook. You then pass in parameters with those names via a Databricks notebook activity in Data Factory."
+    - content: "Deploy the notebook as a web service in Databricks, defining parameter names and types"
+      isCorrect: false
+      explanation: "Incorrect. There is no such option for notebooks in Databricks."
+  - content: "What happens to Databricks activities (notebook, JAR, Python) in Azure Data Factory if the target cluster in Azure Databricks isn't running when the cluster is called by Data Factory?"
+    choices:
+    - content: "If the target cluster is stopped, Databricks will start the cluster before attempting to execute"
+      isCorrect: true
+      explanation: "This situation will result in a longer execution time because the cluster must start, but the activity will still execute as expected."
+    - content: "The Databricks activity will fail in Azure Data Factory – you must always have the cluster running"
+      isCorrect: false
+      explanation: "Incorrect. If the cluster isn't running, Databricks will start it automatically when it receives the request for execution from Data Factory."
+    - content: "Simply add a Databricks cluster start activity before the notebook, JAR, or Python Databricks activity"
+      isCorrect: false
+      explanation: "There is no such cluster activity in Azure Data Factory. If the cluster isn't running, Databricks will start it automatically when it receives the request for execution from Data Factory."

@@ -11,9 +11,12 @@ At the end of this unit, you'll be sending and receiving telemetry.
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave device app`. Save the file to the `cheesecave` folder (locating this folder might involve a bit of navigation), with the name `app.js`. By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
 1. Back in the terminal, install the required libraries. Enter:
-    * **npm install azure-iot-device**
-    * **npm install azure-iot-device-mqtt**
-    * **npm install chalk**
+
+    ```
+        npm install azure-iot-device
+        npm install azure-iot-device-mqtt
+        npm install chalk
+    ```
 
 1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the `cheesecave` folder is the current folder of the terminal, when you run the app.
 
@@ -29,9 +32,12 @@ At the end of this unit, you'll be sending and receiving telemetry.
 1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
 1. In the terminal, install the required libraries. Enter:
-    * **dotnet add package Microsoft.Azure.Devices.Client**
-    * **dotnet add package Microsoft.Azure.Devices.Shared**
-    * **dotnet add package Newtonsoft.Json**
+
+    ```
+        dotnet add package Microsoft.Azure.Devices.Client
+        dotnet add package Microsoft.Azure.Devices.Shared
+        dotnet add package Newtonsoft.Json
+    ```    
 
 1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
 
@@ -398,8 +404,13 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave back-end service app`. Save the file to the `cheesecaveservice` folder (locating this folder might involve a bit of navigation), with the name `app.js`.
 
 1. Back in the terminal, enter the following commands:
-    * **npm install azure-iothub**
-    * **npm install chalk**
+
+    ```
+        npm install azure-iothub
+        npm install @azure/event-hubs
+        npm install @azure/event-hubs@2
+        npm install chalk
+    ```
 
 1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the `cheesecaveservice` folder is the current folder of the terminal.
 
@@ -413,9 +424,12 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
 1. In the terminal, enter the following commands:
-    * **dotnet add package Microsoft.Azure.EventHubs**
-    * **dotnet add package Microsoft.Azure.Device**
-    * **dotnet add package Newtonsoft.Json**.
+
+    ```
+        dotnet add package Microsoft.Azure.EventHubs
+        dotnet add package Microsoft.Azure.Device
+        dotnet add package Newtonsoft.Json
+    ```
 
 1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
 

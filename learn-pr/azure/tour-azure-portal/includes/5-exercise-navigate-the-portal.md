@@ -8,13 +8,11 @@ The Azure portal has several features and services available; let's look at some
 
     ![Screenshot of the portal menu option](../media/5-show-portal-menu.png)
 
-1. Select **All services**. Take a couple of minutes to scroll down the list to see how many services Azure offers.
+1. Select **All services**. Take a couple of minutes to look through the list to see how many services Azure offers.
 
-    ![Screenshot of the all services pane](../media/5-services.pane.png)
+1. You can search for services through the _Search All_ box.
 
-1. You can search for services through the _filter_ box.
-
-1. Select **Virtual machines**. If you don't see it, use the filter box. The **Virtual Machines** pane appears. You haven't created any virtual machines so there are no results.
+1. Select **Virtual machines**. If you don't see it, use the search box. The **Virtual Machines** pane appears. You haven't created any virtual machines so there are no results.
 
 1. Select **+ Add**. The **Create a virtual machine** pane appears.
 
