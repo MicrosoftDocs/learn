@@ -33,7 +33,7 @@ This lab assumes the following resources are available:
 Execute the **lab-setup.azcli** script before starting the lab if the resources are unavailable. 
 
    >[!NOTE]
-   >You will need the SimulatedDevice connection string. You can obtain that by running the following command in the Azure CloudShell
+   >You will need the SimulatedDevice connection string. You can obtain that by running the following command in the Azure Cloud Shell
  
   ```bash
   az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id SimulatedThermostat -o tsv
@@ -49,7 +49,7 @@ In this module, you will learn the different scenarios where IoT Edge device is 
 
 1. If necessary, log in to your Azure portal using your Azure account credentials.  If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
-1. Open the Azure CloudShell by clicking the **Terminal** icon within the top header bar of the Azure portal, and select the Bash shell option.
+1. Open the Azure Cloud Shell by clicking the **Terminal** icon within the top header bar of the Azure portal, and select the Bash shell option.
 
 1. Before the Azure CLI can be used with commands for working with Azure IoT Hub, the Azure IoT Extensions need to be installed. To install the extension, run the following command:
 
@@ -57,7 +57,7 @@ In this module, you will learn the different scenarios where IoT Edge device is 
      az extension add --name azure-cli-iot-ext
     ```
 
-1. To upload the setup script, in the Azure CloudShell toolbar, click **Upload/Download** files (fourth button from the right).
+1. To upload the setup script, in the Azure Cloud Shell toolbar, click **Upload/Download** files (fourth button from the right).
 
 1. In the dropdown, select **Upload** and in the file selection dialog, navigate to the **lab-setup.azcli** file for this lab. Select the file and click **Open** to upload it.
 
