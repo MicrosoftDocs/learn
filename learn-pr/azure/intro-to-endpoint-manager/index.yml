@@ -17,7 +17,7 @@ abstract: |
   - Determine how to assess your Enterprise Mobility Management (EMM) needs
   - Understand the benefits of Microsoft Endpoint Manager
 prerequisites: None
-iconUrl: /learn/achievements/align-requirements-in-azure.svg
+iconUrl: http://via.placeholder.com/120x120
 ratingEnabled: false
 levels:
 - beginner
@@ -29,4 +29,4 @@ units:
 - learn.intro-to-endpoint-manager.1-introduction
 - learn.intro-to-endpoint-manager.2-what-is-endpoint-manager
 badge:
-  uid: learn.align-requirements-in-azure.badge
+  uid: learn.intro-to-endpoint-manager.badge
