@@ -12,9 +12,9 @@ metadata:
 title: Manage identities and governance for Azure administrators
 summary: |
   Learn how to manage users, subscriptions, role-based access control (RBAC), and governance in Azure. 
-prerequisites: |
-  - learn.cloud-foundations
-  - learn.azure-admin-prerequisites
+prerequisites: | 
+  - [Azure fundamentals](../azure-fundamentals/index.yml)
+  - [Prerequisites for Azure administrators](../azure-admin-prerequisites/index.yml)
 iconUrl: /learn/achievements/azure-admin-manage-identities-governance.svg
 levels:
 - beginner
