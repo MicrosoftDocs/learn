@@ -45,7 +45,7 @@ quiz:
         - content: "Latino"
           isCorrect: false
           explanation: Incorrect.
-    - content: 'Calculate the total variation distance for the two distritbutions shown above (The eligible juror distribution and the panel juror distribution). What is the total variation distance?'
+    - content: 'Calculate the total variation distance for the two distributions shown above (The eligible juror distribution and the panel juror distribution). What is the total variation distance?'
       choices:
         - content: '0.14'
           isCorrect: true
