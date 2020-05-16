@@ -12,9 +12,9 @@ metadata:
 title: Monitor and back up resources for Azure administrators
 summary: |
   Learn how to monitor resources by using Azure Monitor and implement backup and recover in Azure. 
-prerequisites:  |
-  - learn.cloud-foundations
-  - learn.azure-admin-prerequisites
+prerequisites: | 
+  - [Azure fundamentals](../azure-fundamentals/index.yml)
+  - [Prerequisites for Azure administrators](../azure-admin-prerequisites/index.yml)
 iconUrl: /learn/achievements/azure-admin-monitor-backup-resources.svg
 levels:
 - beginner
