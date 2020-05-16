@@ -22,4 +22,6 @@ These microservices are accessible to clients via the API gateway. API gateways 
 
 Typically, microservices are small enough for a feature team to independently build, test, and deploy them in production multiple times a day without affecting other systems. Next, you'll create a new microservice called `Coupon.API` and deploy it to the existing eShopOnContainers application in production. While doing so, you'll also learn about designing microservices using Domain Driven Design, containerizing them using Docker, publishing them to a container registry, and deploying them to an existing kubernetes cluster.
 
-In the next unit, you'll investigate the code for the app and test it running in AKS.
+There are a few services in the Kubernetes deployment that aren't represented in the above diagram. Services such as Seq (for unified logging) and the WebStatus web app are also present in the deployment.
+
+In the next unit, you'll investigate the code for the app and verify it running in AKS when it's done deploying.

@@ -1,10 +1,10 @@
 # Summary
 
-In this module you: 
+In this module, you: 
 
-* Deployed and examined an existing ASP.NET Core microservice running in Azure Kubernetes Service (AKS).
-* Created an ASP.NET Core microservice.
-* Deployed the microservice to the existing application in AKS.
+* Deployed and examined an existing ASP.NET Core microservice running in AKS.
+* Modified an existing ASP.NET Core microservice.
+* Deployed the microservice to the existing AKS cluster.
 
 ## Clean up Azure resources
 
