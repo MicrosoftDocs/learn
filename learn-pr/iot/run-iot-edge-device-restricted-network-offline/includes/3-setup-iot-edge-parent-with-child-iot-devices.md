@@ -11,7 +11,7 @@ When the parent IoT Edge Device is disconnected (or loses connection to the Azur
 1. If necessary, log in to your Azure portal using your Azure account credentials.
 If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
-1. Click on the **CloudShell** icon, located at the top of the Azure portal, to open up the **Azure CloudShell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the CloudShell.
+1. Click on the **Cloud Shell** icon, located at the top of the Azure portal, to open up the **Azure Cloud Shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
 1. Create the IoT Edge Device Identity. This unit will be the IoT Edge Gateway, or the Parent IoT Device. Run the following command to create a new IoT Edge Device Identity within Azure IoT Hub:
 
