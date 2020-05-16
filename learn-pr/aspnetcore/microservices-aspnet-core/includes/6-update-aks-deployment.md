@@ -1,5 +1,3 @@
-# Exercise - Update the AKS deployment
-
 In this unit, you'll run a script to deploy the *Coupon.API* microservice and other configuration changes to the existing app. You'll then verify the changes were successful. 
 
 ## Deploy changes

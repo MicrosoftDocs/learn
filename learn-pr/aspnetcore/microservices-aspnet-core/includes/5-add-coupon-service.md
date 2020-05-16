@@ -1,5 +1,3 @@
-# Exercise - Add the coupon service
-
 In this unit, you complete the *Coupon.API* project. You will then run a script to generate changes to the *WebSPA* HTML, as well as generate and modify Helm charts to define the kubernetes deployment.
 
 ## Add the coupon service
