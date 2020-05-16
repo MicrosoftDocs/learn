@@ -94,15 +94,14 @@ Below is a table of each element that makes up the definition of a parameter and
 | defaultValue |No |Default value for the parameter, if no value is provided for the parameter. |
 | allowedValues |No |Array of allowed values for the parameter to make sure that the right value is provided. |
 | minValue |No |The minimum value for "int" type parameters, this value is inclusive. |
-| maxValue |No |The maximum value for int type parameters, this value is inclusive. |
+| maxValue |No |The maximum value for "int" type parameters, this value is inclusive. |
 | minLength |No |The minimum length for string, secure string, and array type parameters, this value is inclusive. |
 | maxLength |No |The maximum length for string, secure string, and array type parameters, this value is inclusive. |
 | description |No |Description of the parameter that is displayed to users through the portal. |
 
-
 ## General recommendations for parameters
 
-when creating your template, there are some recommendations you should follow. These recommendations are not rules, and therefore can be altered for your own environment.  However, experience has taught us that the following points will benefit you when building your own templates from scratch. 
+when creating your template, there are some recommendations you should follow. These recommendations are not rules, and therefore can be altered for your own environment.  However, experience has taught us that the following points will benefit you when building your own templates from scratch.
 
 1. Minimize your use of parameters. Instead, use variables or literal/constructed values for properties that don't need to be specified during each deployment or do not required an easily readable notation.
 
@@ -114,15 +113,15 @@ when creating your template, there are some recommendations you should follow. T
 
 1. Provide a description of **every** parameter in the metadata:
 
-:::code language="json" source="../samples/parameter-description-example.json" highlight="5":::
+    :::code language="json" source="../samples/parameter-description-example.json" highlight="5":::
 
 6. Define default values for parameters whenever possible.  A defined value will make it easier to deploy the template, and users of your template see an example of an appropriate value.
 
-:::code language="json" source="../samples/parameter-defaultValue-example.json" highlight="4":::
+    :::code language="json" source="../samples/parameter-defaultValue-example.json" highlight="4":::
 
 7. To specify an optional parameter, instead of making up strings or other types,  you can use a literal value with a language expression to **construct** a value using template functions.
 
-:::code language="json" source="../samples/parameter-construct-example.json" highlight="3,10":::
+    :::code language="json" source="../samples/parameter-construct-example.json" highlight="3,10":::
 
 8. **Don't*** use a parameter for the API version for a resource type
 

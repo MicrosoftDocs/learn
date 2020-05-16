@@ -1,6 +1,6 @@
 At the end of the previous exercise, your template had the following JSON code in it:
 
-:::code language="JSON" source="../samples/exercise3-parameter-sku.json":::
+:::code language="JSON" source="../samples/exercise-3-parameter-sku.json":::
 
 In this exercise, you'll update your template to remove the hard-coded **Location** to something more flexible so you can enjoy the flexibility to deploy the resources in another region.
 
@@ -10,18 +10,18 @@ This situation is one where **functions** become helpful. You already used funct
 
 1. Open Visual Studio Code and the template you created in the last exercise.  From the Azure shell provided here, type the following command.
 
-```azurecli
-code azuredeploy.json
-```
+    ```azurecli
+    code azuredeploy.json
+    ```
 
 2. You'll notice that in the example below, we are making use of two functions.  The first usage is taking advantage of the **"resource"** functions ("[resourceGroup().location]") where we can extract the value of the resource group properties such as depicted in the following JSON file. The second time you used a function is when you added "[parameters('storageName')]" to your template.
 
 3. Copy the whole file and replace your template with its contents, or just adjust with the highlighted section.
 
-:::code language="JSON" source="../samples/exercise4-function-1.json" highlight="24-27,34":::
+    :::code language="JSON" source="../samples/exercise-4-function-1.json" highlight="24-27,34":::
 
->[!NOTE]
->As it was the case in the previous exercises, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.4"** because again, you are making changes to your template.
+    >[!NOTE]
+    >As it was the case in the previous exercises, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.4"** because again, you are making changes to your template.
 
 4. Save the updated template, prepare to deploy it.
 
@@ -50,7 +50,7 @@ To run this deployment, you will use Azure CLI that is built in the Azure shell 
 
 Copy and execute this code block in the shell provided.
 
-:::code language="azurecli" source="../samples/exercise4-function-add.sh" highlight="9":::
+:::code language="azurecli" source="../samples/exercise-4-function-add.sh" highlight="9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 

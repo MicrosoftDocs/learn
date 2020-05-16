@@ -1,6 +1,6 @@
 At the end of the previous exercise, your template had the following template:
 
-:::code language="JSON" source="../samples/exercise4-function-2.json":::
+:::code language="JSON" source="../samples/exercise-4-function-2.json":::
 
 It deploys your storage account, but it doesn't return any information about the storage account. You may need to capture properties of the new resource,  so they'd be available later for reference or to pass them on to another template should you be using [nested templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/linked-templates).
 
@@ -20,7 +20,7 @@ It uses the reference function to get the runtime state of the storage account. 
 
 2. Copy and paste the highlighted code sections, or the whole file and replace the content of your existing template.
 
-:::code language="JSON" source="../samples/exercise6-add-output.json" highlight="47-52":::
+:::code language="JSON" source="../samples/exercise-6-add-output.json" highlight="47-52":::
 
 3. Save you changes and close the editor.
 
@@ -30,13 +30,13 @@ You're ready to deploy your template and get at the returned values.
 
 Again, like in the previous exercises, you need to specify a resource group that will contain the resources. Before running the deployment command. In the **sandbox** provided here, you already have a resource group to target your deployment.
 
-1. To get the name of the resource group in the sandbox, you can use an Azure CLI command. The Resource Group name might already be stored in the variable $RG from the last exercises.  in the shell use following command:
+1. To get the name of the resource group in the sandbox, you can use an Azure CLI command. The Resource Group name might already be stored in the variable $RG from the last exercises.  In the shell, use the following command:
 
 ```bash
 echo $RG
 ```
 
-in no result is displayed, Type the code below in the sandbox to store the value of the Resource Group name in the "RG" variable for Azure CLI to use to deploy the template.
+If no result is displayed, type the code below in the sandbox to store the value of the Resource Group name in the "RG" variable for Azure CLI to use to deploy the template.
 
 ```azurecli
 RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
@@ -48,7 +48,7 @@ Copy and execute this code block in the shell provided.
 > [!IMPORTANT]
 > Don't forget to change **{your-Prefix-name}** in the code below with the same prefix you used in the last exercise.
 
-:::code language="azurecli" source="../samples/exercise6-add-output.sh" highlight="9":::
+:::code language="azurecli" source="../samples/exercise-6-add-output.sh" highlight="9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 
@@ -56,7 +56,7 @@ The deployment command returns results in a JSON format. Look for `ProvisioningS
 
 You'll also see in the output of the **AZ** command, an object similar to the following example only if the output is in JSON format:
 
-![Template Processing](../media/Add-output-result.png)
+![Template Processing](../media/add-output-result.png)
 
 ### Review your work
 

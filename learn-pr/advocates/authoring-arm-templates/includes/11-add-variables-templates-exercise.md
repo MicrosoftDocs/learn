@@ -1,6 +1,6 @@
 At the end of the previous exercise, your template looked like the following:
 
-:::code language="JSON" source="../samples/exercise4-function-1.json":::
+:::code language="JSON" source="../samples/exercise-4-function-1.json":::
 
 The parameter for the storage account name is hard-to-use because you have to provide a unique name. In unit 8, we addressed a way to use functions to generate a unique name instead of having you guess a unique name.  Now we can use that function to solve this problem by adding a variable that will use that function and constructs a unique name for the storage account still using the passed parameter as the prefix string.
 
@@ -15,7 +15,7 @@ code azuredeploy.json
 
 2. Copy and paste the highlighted code below, or copy the whole file in your template and use it in the following exercise.
 
-:::code language="JSON" source="../samples/exercise4-function-2.json" highlight="4-9,29-31,36":::
+:::code language="JSON" source="../samples/exercise-4-function-2.json" highlight="4-9,29-31,36":::
 
 Notice that there are some edits from the previous code:
 
@@ -60,7 +60,7 @@ Copy and execute this code block in the shell provided.
 > [!IMPORTANT]
 > Don't forget to change **{your-Prefix-name}** in the code below with any prefix you now wish to use, as long as it's minimum 3 characters and maximum 11 like you specified in the parameter section.
 
-:::code language="azurecli" source="../samples/exercise5-variable-add.sh" highlight="9":::
+:::code language="azurecli" source="../samples/exercise-5-variable-add.sh" highlight="9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 

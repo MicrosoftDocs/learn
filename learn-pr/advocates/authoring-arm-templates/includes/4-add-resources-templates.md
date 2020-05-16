@@ -12,7 +12,7 @@ The name of a resource type is normally displayed in the format: **{resource-pro
 
 For that you go to the [Define resources in Azure Resource Manager templates](https://docs.microsoft.com/azure/templates/) page and in the left side menu find the resource you are trying to deploy. Right now you should be scrolling down to **Storage**.
 
-![Microsoft.Storage resource types](../media/Storage-API-reference.png)
+![Microsoft.Storage resource types](../media/storage-api-reference.png)
 
 There you will find each resource types and versions of the apiVersion that you need to identify the properties needed in your template.  For example, the latest version of the apiVersion for storage account provides you with the required template format in a JSON notation.  Including all the properties that can be defined in the template.
 

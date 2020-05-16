@@ -13,11 +13,11 @@ In this exercise, you will add a storage account definition to your existing tem
 
     Now, you can copy the code and change the highlighted sections into the resource section of your existing empty template.
 
-:::code language="JSON" source="../samples/Exercise2-resource.json" highlight="4-5":::
+:::code language="JSON" source="../samples/exercise-2-resource.json" highlight="4-5":::
 
 At this point your ARM template should now look like the following code snippet:
 
-:::code language="JSON" source="../samples/exercise2-add-resource.json":::
+:::code language="JSON" source="../samples/exercise-2-add-resource.json":::
 
 >[!NOTE]
 >Notice that in this example we incremented the "contentVersion" value since we are making a significant change to the template.
@@ -95,6 +95,6 @@ You can verify the deployment by exploring the resource group from the Azure por
 
 1. You see a summary of the deployment. You now see the storage account resources deployed.
 
-   ![View deployment summary](../media/Storage-account-deploy-details.png)
+   ![View deployment summary](../media/storage-account-deploy-details.png)
 
 You have now added a resource to your template.  The next unit will cover how to add parameters.

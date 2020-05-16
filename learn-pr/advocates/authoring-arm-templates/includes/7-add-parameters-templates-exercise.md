@@ -38,17 +38,17 @@ The JSON code in the following example shows what you need to change in your tem
 In order to carry on with your exercises, you will add a storage account definition to your existing template.  To do so, you will edit the template you used in the first 2 exercises.
 
 1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
-       
-```azurecli
-code azuredeploy.json
-```
-              
+
+    ```azurecli
+    code azuredeploy.json
+    ```
+
 2. Copy and paste the highlighted code below, in the corresponding section of your ARM template in the sandbox.  Or replace the whole content with the content below.
 
 > [!IMPORTANT]
 > When copying the code. You still need to set the **{location}** in the template, to the **same** location a resource group provided for you in the **sandbox**.  In order to get the resource group name and location use the following command.<br><br>**az group list --query "[?contains(name, 'learn')]" -o table**
 
-:::code language="JSON" source="../samples/exercise3-parameter-azuredeploy.json" highlight="5-10,18":::
+:::code language="JSON" source="../samples/exercise-3-parameter-azuredeploy.json" highlight="5-10,18":::
 
 You'll notice that the code has changed from the last one.  In this exercise, we are adding parameters.  Therefore we have to define the parameter in the **parameters** section (line 5-10) and then insert the referral to the parameter in the **resources** section (line 17)
 
@@ -65,19 +65,19 @@ Just as it was in the first two exercises, you need to specify a resource group 
 
 1. To get the name of the resource group in the sandbox, you can use an Azure CLI command. Type the code below in the sandbox to list the resource group name. the second command will store that value in a variable for Azure CLI to use to deploy the template.
 
-```azurecli
-az group list --query "[?contains(name, 'learn')]" -o table
-RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
-```
+    ```azurecli
+    az group list --query "[?contains(name, 'learn')]" -o table
+    RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
+    ```
 
-To run this deployment you will use Azure CLI that is built-in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name) and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
+    To run this deployment you will use Azure CLI that is built-in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name) and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
 
-> [!IMPORTANT]
-> Don't forget to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
+    > [!IMPORTANT]
+    > Don't forget to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
 
 2. Copy and execute this code block in the shell provided.
 
-:::code language="azurecli" source="../samples/exercise3-storagenameparamdeploy.sh" highlight="9":::
+:::code language="azurecli" source="../samples/exercise-3-storagenameparamdeploy.sh" highlight="9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 
@@ -89,8 +89,8 @@ You can verify the deployment by exploring the resource group from the Azure por
 
 1. Sign in to the sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
->[!NOTE]
-> When accessing the portal, please authenticate using the same account you used to access Microsoft Learn
+    >[!NOTE]
+    > When accessing the portal, please authenticate using the same account you used to access Microsoft Learn
 
 1. From the left menu, select **Resource groups**.
 
@@ -106,7 +106,7 @@ You can verify the deployment by exploring the resource group from the Azure por
 
 1. You see a summary of the deployment. You now see the storage account resources deployed.
 
-   ![View deployment summary](../media/Template-deploy-details-parameters.png)
+   ![View deployment summary](../media/template-deploy-details-parameters.png)
 
    ---
 
@@ -118,23 +118,23 @@ You will use the code below to update the template you have been working with.
 
 1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
 
-```azurecli
-code azuredeploy.json
-```
+    ```azurecli
+    code azuredeploy.json
+    ```
 
 2. Copy and paste the highlighted code below in your template. As you may notice the new highlighted code includes a storageSKU parameter with a default value. This value is used when a value isn't specified during the deployment. It also has a list of allowed values. These values match the values that are needed to create a storage account. You don't want users of your template to pass in SKUs that don't work.
 
 > [!IMPORTANT]
 > When copying the code. You still need to set the **{location}** in the template, to the **same** location a resource group provided for you in the **sandbox** just as you did in the fiirst part of this exercise.  In order to get the resource group name and location use the following command.<br><br>**az group list --query "[?contains(name, 'learn')]" -o table**
 
-:::code language="JSON" source="../samples/exercise3-parameter-sku.json" highlight="10-23,31-33":::
+:::code language="JSON" source="../samples/exercise-3-parameter-sku.json" highlight="10-23,31-33":::
 
 ## Redeploy template
 You're ready to deploy again. Because the default SKU is set to Standard_LRS, you don't need to provide a value for that parameter.
 
 Copy and execute this code block in the shell provided.  Remember to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
 
-:::code language="azurecli" source="../samples/exercise3-skuparamdeploy.sh" highlight="9":::
+:::code language="azurecli" source="../samples/exercise-3-skuparamdeploy.sh" highlight="9":::
 
 >[!NOTE]
 >If the deployment failed, use the **--debug** switch with the deployment command to show the debug logs. You can also use the **--verbose** switch to show the full debug logs.
@@ -143,7 +143,7 @@ To see the flexibility of your template, let's deploy again. This time you will 
 
 Again. Copy and execute this code block in the shell provided.  Remember to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
 
-:::code language="azurecli" source="../samples/exercise3-skuparamdeploy-badsku.sh" highlight="9":::
+:::code language="azurecli" source="../samples/exercise-3-skuparamdeploy-badsku.sh" highlight="9":::
 
 Finally, let's run one more test and see what happens when you pass in a SKU that isn't one of the allowed values. In this case, we test the scenario where a user of your template thinks **basic** is one of the SKUs.
 

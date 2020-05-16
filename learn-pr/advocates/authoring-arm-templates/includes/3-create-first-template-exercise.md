@@ -95,7 +95,7 @@ You can verify the deployment by exploring the resource group from the Azure por
 
 1. From the left menu, select **Resource groups**.
 
-    ![Azure Portal menu](../media/portal-menu.png)
+    ![The Azure portal menu](../media/portal-menu.png)
 
 1. Select the resource group you used to deploy your blank template in the last procedure. The resource group will have a name similar to **learn-0ab1c234-d567-8e90-fabcd-12e34d56789f**. You will not see any resource deployed within that resource group since our template had no resources.
 
@@ -109,4 +109,4 @@ You can verify the deployment by exploring the resource group from the Azure por
 
 1. You see a summary of the deployment. In this case, there's not a lot to see because no resources were deployed. Later in this series you might find it helpful to review the summary in the deployment history. Notice on the left you can view inputs, outputs, and the template used during deployment.
 
-   ![View deployment summary](../media/Template-deploy-details.png)
+   ![View deployment summary](../media/template-deploy-details.png)

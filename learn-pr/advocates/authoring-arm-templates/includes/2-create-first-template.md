@@ -2,7 +2,7 @@ ARM templates are a JavaScript Object Notation (JSON) files that defines the inf
 
 ARM templates allow you declare what you intend to deploy without having to write the sequence of programming commands to create it.  In a template, you specify the resources and the properties for those resources, then the [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) uses that information to deploys the resources in an organized and consistent manner.
 
-## Benefits of using ARM Templates
+## Benefits of using ARM templates
 
 Using ARM templates allows you to automate deployments and use the practice of infrastructure as code (IaC). The ARM code becomes part of your infrastructure and development projects. Just like application code, you can store the IaC files in a source repository such as [Azure Repos](https://azure.microsoft.com/services/devops/repos/) and version it.
 
