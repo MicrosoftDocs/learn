@@ -5,7 +5,7 @@ Endpoints include the mobile devices, desktop computers, virtual machines, embed
 By protecting and monitoring your organization's endpoints using Microsoft Endpoint Manager, you do the following:
 - Protect the data that the people at your organization are accessing.
 - Ensure your organization is using proper credentials to access and share company data.
-- Safeguard the devices and apps that access your organization resouces.
+- Safeguard the devices and apps that access your organization resources.
 - Confirm security rules are in place based on your organizations requirements. 
 
 The Microsoft Endpoint Manager console helps keep your organization's cloud and on-premises devices, apps, and data secure. Endpoint Manager integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, co-management, Desktop Analytics, and Windows Autopilot.
