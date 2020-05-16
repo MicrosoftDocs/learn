@@ -12,7 +12,9 @@ metadata:
 title: Configure and manage virtual networks for Azure administrators
 summary: |
   Learn how to configure and manage Azure network capabilities like connectivity services, application protection, application delivery, and network monitoring services. 
-prerequisites: None
+prerequisites: |
+  - [Azure fundamentals](../azure-fundamentals/index.yml)
+  - [Prerequisites for Azure administrators](../azure-admin-prerequisites/index.yml)
 iconUrl: /learn/achievements/azure-admin-manage-virtual-networks.svg
 levels:
 - beginner
