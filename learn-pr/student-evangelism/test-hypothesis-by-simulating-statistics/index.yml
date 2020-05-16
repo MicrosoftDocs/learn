@@ -8,8 +8,8 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: test hypothesis by simulating  statistics
-summary: Learn how to test hypothesis through simulation of statistics
+title: Test hypothesis by simulating  statistics
+summary: Learn how to test hypothesis through simulation of statistics.
 abstract: |
   In this module, you will:
   - Motivate the need and use of Hypothesis Testing.
