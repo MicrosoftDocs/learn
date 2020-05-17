@@ -3,7 +3,7 @@ uid: learn.azure.extend-share-capacity-with-azure-file-sync.exercise-assess-wind
 title: Exercise - Assess Windows Server readiness
 metadata:
   title: Exercise - Assess Windows Server readiness
-  description: In this exercise you'll run the evaluation cmdlets to check the compatibility of your companies file server.
+  description: In this exercise, you'll run the evaluation cmdlets to check the compatibility of your file server.
   ms.date: 05/18/20
   author: cwatson-cat
   ms.author: cwatson

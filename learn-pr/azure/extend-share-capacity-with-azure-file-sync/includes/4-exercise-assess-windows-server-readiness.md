@@ -1,6 +1,6 @@
-You can run the Azure File Sync evaluation powershell cmdlets on any Windows Server that you'd like to use file sync on. The cmdlets check the OS, filesystem, file name, and folder name compatibility for you.
+You can run the Azure File Sync evaluation PowerShell cmdlets on any Windows Server that you'd like to use file sync on. The cmdlets check the OS, filesystem, file name, and folder name compatibility for you.
 
-Before you install and set up Azure File Sync on your company's CAD file server, you're going to assess the server to ensure it's compatible. To do this, you'll run the evaluation cmdlets to produce a report.
+Before you install and set up Azure File Sync on your company's CAD file server, you're going to assess the server to ensure it's compatible. You'll run the evaluation cmdlets to produce a report.
 
 ## Create a Windows file server
 
@@ -34,7 +34,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 
     ```
 
-1.  Run the following command to set the username and password for the administrator account on the VM. Enter the username `learnadmin` and a password that's at least 8 characters long that uses a digit, and upper, lower, and special characters. Write down the password as you'll need it later.
+1.  Run the following command to set the username and password for the administrator account on the VM. Enter the username `learnadmin` and a password that's at least eight characters long that uses a digit, and upper, lower, and special characters. Write down the password as you'll need it later.
 
     ```powershell
     $cred = Get-Credential
