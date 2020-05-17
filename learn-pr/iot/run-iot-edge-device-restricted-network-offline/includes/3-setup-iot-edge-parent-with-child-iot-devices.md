@@ -69,6 +69,7 @@ If you have more than one Azure account, be sure that you are logged in with the
    ```bash
      az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id IoTEdgeGateway -o tsv
    ```
+
     >[!NOTE]
     >Be sure to replace the AZ-220-HUB-_{YOUR-ID}_ IoT Hub name with the name of your Azure IoT Hub.
 
@@ -142,6 +143,7 @@ If you have more than one Azure account, be sure that you are logged in with the
     ```bash
       az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id ChildDevice1 -o tsv
     ```
+
     >[!NOTE]
     >Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub. 
 

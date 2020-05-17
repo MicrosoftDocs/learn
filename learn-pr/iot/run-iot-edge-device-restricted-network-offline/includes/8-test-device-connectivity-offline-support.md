@@ -46,9 +46,9 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 
 1. On the **Add outbound security rule** pane, set the following field values:
 
-    -- Destination port ranges: *
-    -- Action: **Deny**
-    -- Name: **DenyAll**
+    - Destination port ranges: *
+    - Action: **Deny**
+    - Name: **DenyAll**
     
     A **Destination port range** of “*” will apply the rule to all ports.
 
