@@ -6,7 +6,7 @@ The Module Twin for the IoT Edge Hub is called $edgeHub and is used to coordinat
 
 The timeToLiveSecs property for the Edge Hub can be specified in the Deployment Manifest on a specific device as part of a single-device or at-scale deployment. In this unit, you will use the Azure portal user interface for Azure IoT Hub to modify the timeToLiveSecs property for the Edge Hub ($edgeHub) module on the single IoT Edge Gateway device.
 
-### Task 1: Configure the Module Twin
+### Task 1: Configure the module twin
 
 1. If necessary, log in to your Azure portal using your Azure account credentials.
 
@@ -95,7 +95,7 @@ You will note that the "desired" properties are empty for this new device.
 
 Once the changes have been passed to the Azure IoT Edge device, it will restart the edgeHub module with the new configuration.
 
-### Task 2: Update Directory Permissions
+### Task 2: Update directory permissions
 
 Before continuing, it is essential to ensure that the user profile for the IoT Edge Hub module has the required read, write, and execute permissions to the **/etc/iotedge/storage/ directory**.
 
