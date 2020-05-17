@@ -1,7 +1,7 @@
 
 This unit will detail steps on deploying an Ubuntu Server VM with Azure IoT Edge runtime support from the Azure Marketplace. In previous labs, VMs have been created using the Azure portal. This lab will detail the use of Azure CLI to create the required VMs.
 
-## Deploy Azure IoT Edge enabled Linux VM
+## Deploy Azure IoT edge enabled Linux VM
 
 1. Log in to your Azure portal using your Azure account credentials.
 
@@ -23,8 +23,8 @@ Remember to replace {YOUR-LOCATION} with a location close to you.
 ```
 The first command above accepts the terms and conditions of use for VM image. The second command actually creates the VM within the resource group specified above. Remember to update AZ220EdgeVM{YOUR-ID} with your unique ID and replace {YOUR-PASSWORD-HERE} with a suitably secure password.
 
-    >[!NOTE]
-    >In production, you may elect to generate SSH keys rather than use the username/password approach. You can learn more about Linux VMs and SSH here: https://docs.microsoft.com/azure/virtual-machines/linux/create-ssh-keys-detailed.
+   >[!NOTE]
+   >In production, you may elect to generate SSH keys rather than use the username/password approach. You can learn more about Linux VMs and SSH here: https://docs.microsoft.com/azure/virtual-machines/linux/create-ssh-keys-detailed.
     
-    >[!NOTE]
-    >Deployment will take approximately 5 minutes to complete. You can continue on to the next unit while it is deploying.
+   >[!NOTE]
+   >Deployment will take approximately 5 minutes to complete. You can continue on to the next unit while it is deploying.
