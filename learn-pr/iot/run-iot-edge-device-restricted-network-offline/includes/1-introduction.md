@@ -1,4 +1,4 @@
-Run an IoT Edge device in restricted network and offline.
+Run an IoT edge device in restricted network and offline.
 
 Azure IoT Edge supports extended offline operations on IoT Edge devices, and also enables offline operations on non-IoT Edge child devices. The IoT Edge device and any connected child devices can continue to function with intermittent or no internet connection as long as the IoT Edge device has had one opportunity to connect to IoT Hub.
 
