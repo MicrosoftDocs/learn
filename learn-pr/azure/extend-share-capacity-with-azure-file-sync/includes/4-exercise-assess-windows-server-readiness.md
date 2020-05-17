@@ -87,6 +87,8 @@ Connect to the new server by using Remote Desktop Client. You'll download a samp
 
 1. In the **File Explorer** window, select **Compressed Folder Tools**, then select **Extract all** and **Extract**.
 
+## Install the Azure PowerShell modules
+
 1. Right-click on Start, then select **Windows PowerShell (Admin)**.
 1. In the console, download the latest Azure PowerShell modules:
 

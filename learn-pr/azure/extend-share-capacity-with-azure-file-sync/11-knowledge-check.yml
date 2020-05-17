@@ -4,13 +4,13 @@ title: Knowledge Check
 metadata:
   title: Check your knowledge
   description: Review what you've learned
-  ms.date: 05/17/2020
+  ms.date: 05/18/20
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 3
+durationInMinutes: 7
 quiz:
   title: Check your knowledge
   questions:
@@ -29,14 +29,14 @@ quiz:
     choices:
     - content: It's installed on a server to enable Azure File Sync replication between the local file share and an Azure File share.
       isCorrect: true
-      explanation: Azure File Sync agent is a downloadable package that enables Windows Server to be synced with an Azure file share.
-    - content: It is installed on a server to set NTFS permissions on files and folders.
+      explanation: Azure File Sync agent is a downloadable package that enables a Windows Server file share to be synced with an Azure file share.
+    - content: It's installed on a server to set NTFS permissions on files and folders.
       isCorrect: false
       explanation: The Azure File Sync agent doesn't set permissions.
-    - content: It is installed on a Azure File share to control on-premises file and folder replication traffic.
+    - content: It's installed on an Azure File share to control on-premises file and folder replication traffic.
       isCorrect: false
       explanation: The Azure File Sync agent isn't installed on an Azure File share.
-  - content: "How do you access your on-premises server's compatibility with Azure File Sync?"
+  - content: "How do you access your server's compatibility with Azure File Sync?"
     choices:
     - content: Download and run the Azure File Sync agent to assess the file share and server.
       isCorrect: false
@@ -51,11 +51,11 @@ quiz:
     choices:
     - content: Storage Sync Service, Storage account, file share, and then sync group.
       isCorrect: false
-      explanation: The Storage Sync Service needs to be created in an Azure Storage account.
+      explanation: Create the Storage Sync Service in an Azure Storage account.
     - content: Storage account, file share, Storage Sync Service, and then the sync group.
       isCorrect: true
-      explanation: Create the storage account then within the storage account you create a file share, the Storage Sync Service, and then the sync group.
-    - content: Storage account, file share, sync group and then Storage Sync Service.
+      explanation: Create the storage account, then within the storage account you create a file share. Create the Storage Sync Service, and within the Storage Sync Service you create the sync group.
+    - content: Storage account, file share, sync group, and then Storage Sync Service.
       isCorrect: false
       explanation: The sync group is created within the Storage Sync Service.
   - content: "What is cloud tiering in Azure File Sync?"
@@ -76,7 +76,18 @@ quiz:
       explanation: Verify that your on-premises server's OS and file system are supported. Then create the required resources in Azure. On the local server, install the Azure File Sync agent and register the server. And finally you create the server endpoint in Azure.
     - content: Create the Azure resources, install the Azure File Sync agent, register the on-premises server, and create the server endpoint.
       isCorrect: false
-      explanation: First, evaluate your on-premises server to verify it'll work with Azure File Sync.
+      explanation: First, evaluate your on-premises server to verify it will work with Azure File Sync.
     - content: Evaluate your on-premises system, create the Azure resources, install the Azure File Sync agent on a virtual machine, register the on-premises server, and create the server endpoint.
       isCorrect: false
       explanation: Install the Azure File Sync agent on the server with the file share you want to sync with Azure.
+  - content: "Which of these answers isn't a possible causes for file sync issues?"
+    choices:
+    - content: Your company's firewall rules are blocking network traffic on port 445.
+      isCorrect: false
+      explanation: Azure needs to have port 445 open to connect to Azure datacenters.
+    - content: The virtual machine that runs the Storage Sync Service is stopped.
+      isCorrect: true
+      explanation: The Storage Sync Service is the high-level Azure resource for Azure File Sync. You create this resource in Azure.
+    - content: Your on-premises server doesn't support SMB encryption.
+      isCorrect: false
+      explanation: Azure denies connections that aren't secure.
