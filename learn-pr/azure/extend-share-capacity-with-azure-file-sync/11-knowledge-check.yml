@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 7
+durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
@@ -80,7 +80,7 @@ quiz:
     - content: Evaluate your on-premises system, create the Azure resources, install the Azure File Sync agent on a virtual machine, register the on-premises server, and create the server endpoint.
       isCorrect: false
       explanation: Install the Azure File Sync agent on the server with the file share you want to sync with Azure.
-  - content: "Which of these answers isn't a possible causes for file sync issues?"
+  - content: "Which of these answers isn't a possible cause for file sync issues?"
     choices:
     - content: Your company's firewall rules are blocking network traffic on port 445.
       isCorrect: false
