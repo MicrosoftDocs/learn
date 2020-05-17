@@ -6,7 +6,7 @@ In this scenario, the child device connects to, and authenticate against the par
 
 When the parent IoT Edge Device is disconnected (or loses connection to the Azure IoT Hub), it will automatically store all device messages to the IoT Edge Device. Once the connection is restored, the IoT Edge Device will resume connectivity and send any stored messages to Azure IoT Hub. Messages stored on the IoT Edge Device may expire according to the Time-to-Live (TTL) configurations for the device; which defaults to store messages for up to 7200 seconds (two hours).
 
-## Setting up the IoT Edge Parent with Child IoT Devices
+## Setting up the IoT edge parent with child IoT devices
 
 1. If necessary, log in to your Azure portal using your Azure account credentials.
 If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
@@ -74,9 +74,9 @@ If you have more than one Azure account, be sure that you are logged in with the
 
     Notice the az iot hub device-identity show-connection-string command is called by passing in several parameters:
 
-        -- hub-name: This required parameter is used to specify the name of the **Azure IoT Hub** to add the new device to.
+      -- hub-name: This required parameter is used to specify the name of the **Azure IoT Hub** to add the new device to.
 
-        -- device-id: This required parameter is used to specify the **Device ID** of the IoT Device being created.
+      -- device-id: This required parameter is used to specify the **Device ID** of the IoT Device being created.
 
     The IoT Hub connection string output from the **IoTEdgeGateway** device will be in the following format:
 
@@ -95,11 +95,11 @@ If you have more than one Azure account, be sure that you are logged in with the
 
     This command is passed the following parameters:
 
-        -- n: This required parameter is the shorthand for --hub-name and is used to specify the name of the **Azure IoT Hub** to add the new device to.
+      -- n: This required parameter is the shorthand for --hub-name and is used to specify the name of the **Azure IoT Hub** to add the new device to.
 
-        -- device-id: This required parameter is used to specify the **Device ID** of the IoT Device being created.
+      -- device-id: This required parameter is used to specify the **Device ID** of the IoT Device being created.
 
-        -- pd: This parameter specifies the **Parent Device** for the IoT Device being created. The value passed in must be the **Device ID** of the **Parent Device** to assign this **Child Device** to.
+      -- pd: This parameter specifies the **Parent Device** for the IoT Device being created. The value passed in must be the **Device ID** of the **Parent Device** to assign this **Child Device** to.
 
     Notice that this command is not passing in the --auth-method. By omitting this parameter, the default value of shared_private_key will be used.
 
