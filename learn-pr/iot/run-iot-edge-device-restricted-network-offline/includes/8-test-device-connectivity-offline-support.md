@@ -1,6 +1,6 @@
 In this exercise, you will monitor events from the **ChildIoTDevice** are being sent to Azure IoT Hub through the **IoTEdgeGateway** IoT Edge Transparent Gateway. You will then interrupt connectivity between the IoTEdgeGateway and Azure IoT Hub to see that telemetry is still sent from the child IoT Device to the **IoT Edge Gateway**. After this step, you will resume connectivity with Azure IoT Hub and monitor that the IoT Edge Gateway resumes sending telemetry to Azure IoT Hub.
 
-## Testing Device Connectivity and Offline Support
+## Testing device connectivity and offline support
 
 1. Log in to your Azure portal using your Azure account credentials.
 
