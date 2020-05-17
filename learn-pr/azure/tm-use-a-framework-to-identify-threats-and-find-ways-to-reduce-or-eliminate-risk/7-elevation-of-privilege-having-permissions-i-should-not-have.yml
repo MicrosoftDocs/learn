@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.7-elevation-of-privilege-having-permissions-i-should-not-have
+title: Elevation of privilege - having permissions I should not have
+metadata:
+  title: Elevation of Privilege - Having Permissions I Should Not Have
+  description: Learn about Elevation of Privilege and its corresponding security control
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-elevation-of-privilege-having-permissions-i-should-not-have.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which statement describes a potential security control against elevation of privilege?"
+    choices:
+    - content: "System runs a process with the least possible amount of privilege"
+      isCorrect: true
+      explanation: "This statement applies to elevation of privilege"
+    - content: "Sender digitally signs a message so the receiver knows who the message came from"
+      isCorrect: false
+      explanation: "This message applies to spoofing"
+    - content: "System logs all actions and users to keep everyone accountable"
+      isCorrect: false
+      explanation: "This statement applies to repudiation"

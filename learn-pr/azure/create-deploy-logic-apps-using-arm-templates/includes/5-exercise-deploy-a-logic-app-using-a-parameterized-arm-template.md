@@ -143,7 +143,7 @@ Let's now turn our attention to making our app do a little more than just sendin
 1. To see the app in action, find the **logicAppUrl** value in the JSON result.  Select the URL and paste it into a new browser window. 
 1. Update the URL in the browser, changing `/triggers/manual/paths/invoke?api` to `/triggers/manual/paths/invoke/{width}/{height}?api`, where **{width}** and **{height}** are integer values for the width and height of the area we want to calculate. For example, `/triggers/manual/paths/invoke/6/7?api`. The response from the app will list the name of the workflow and the calculated area, as shown in the following screenshot.
 
-    ![Web browser displaying response from our app called calculate area](../media/calculate-area-response.png)
+    :::image type="content" source="../media/calculate-area-response.png" alt-text="Web browser displaying response from our app called calculate area." loc-scope="other"::: <!-- no-loc -->
 
 1. Run the following command to list all Logic Apps workflows we've deployed so far. 
 

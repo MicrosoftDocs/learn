@@ -47,7 +47,7 @@ WITH
 
 A round-robin table is the most straightforward table to create and delivers fast performance when used as a staging table for loads.
 
-A round-robin distributed table distributes data evenly across the table but without any further optimization. A distribution is first chosen at random, and then buffers of rows are assigned to distributions sequentially. It is quick to load data into a round-robin table, but query performance can often be better with hash distributed tables. Joins on round-robin tables require reshuffling data, and this takes additional time.
+A round-robin distributed table distributes data evenly across the nodes but without any further optimization. A distribution is first chosen at random, and then buffers of rows are assigned to distributions sequentially. It is quick to load data into a round-robin table, but query performance can often be better with hash distributed tables. Joins on round-robin tables require reshuffling data, and this takes additional time.
 
 The following is an example of a create table statement that defines a round robin distribution.
 

@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.5-scale
+title: Scale resources
+metadata:
+  title: Scale resources
+  description: Learn how to scale resources
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/5-scale.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is **not** one of the benefits of scaling, when done well?"
+    choices:
+    - content: "Reduced resource cost (compared to provisioning for peak utilization)"
+      isCorrect: false
+      explanation: "Incorrect. This is clearly a benefit of scalability. Scalability has many benefits, but at a price."
+    - content: "Less complexity in deployment"
+      isCorrect: true
+      explanation: "Correct! Making a scalable application is more complex."
+    - content: "Stable performance irrespective of load on the system"
+      isCorrect: false
+      explanation: "Incorrect. This is clearly a benefit of scalability. Scalability has many benefits, but at a price."
+    - content: "Fewer failures due to overwhelming the capacity of a single resource"
+      isCorrect: false
+      explanation: "Incorrect. This is clearly a benefit of scalability. Scalability has many benefits, but at a price."
+

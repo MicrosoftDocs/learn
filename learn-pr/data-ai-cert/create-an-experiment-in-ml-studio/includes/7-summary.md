@@ -7,3 +7,7 @@ Developing a model like this is an iterative process. As you modify the various 
 - [Azure Machine Learning Studio documentation](https://docs.microsoft.com/azure/machine-learning/studio/)
 - [Azure Machine Learning Studio Capabilities Diagram (PDF)](https://download.microsoft.com/download/C/4/6/C4606116-522F-428A-BE04-B6D3213E9E52/ml_studio_overview_v1.1.pdf)
 - [Sample datasets for Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/studio/use-sample-datasets)
+
+## Learn more with a Channel 9 video series
+
+- [ML.NET](https://channel9.msdn.com/Series/MLNET/?WT.mc_id=Educationalmlnet-c9-niner&azure-portal=true)

@@ -180,9 +180,10 @@ Upload your SSH key pair to Cloud Shell, so that you can connect to your VMs fro
 
     ![Screenshot of switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-bash-cloud-shell.png)
 
-1. In Cloud Shell, move your SSH key files to the *~/.ssh* directory:
+1. In Cloud Shell, create the *~/.ssh* directory and move your SSH key files to that directory:
 
     ```bash
+    mkdir ~/.ssh
     mv ~/ansible_rsa ~/.ssh
     mv ~/ansible_rsa.pub ~/.ssh
     ```

@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory
+metadata:
+  title: Virtualize memory
+  description: Carnegie Mellon University's Cloud Developer course. Learn how memory is virtualized to support cloud resources. Covers different types of memory mapping and related issues.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Virtualize memory
+summary: Learn how memory is virtualized to support cloud resources. Covers different types of memory mapping and related issues.
+abstract: | 
+  In this module, you will:
+  - Identify how most general-purpose operating systems support virtual memory
+  - Discuss the one-level page mapping between virtual and physical addresses
+  - Identify the difference between one-level page mapping, as provided in traditional operating systems, and two-level page mapping, as provided in system memory virtualization
+  - Discuss multiple-level page mapping as implied by various virtualized environments, such as native and user-mode hosted virtualized systems
+  - Define memory overcommitment, and discuss the benefits it provides to virtualized systems
+  - Describe what reclamation techniques are and why they are needed
+  - Explain memory ballooning in VMware ESX as an example of a reclamation technique
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know what the different types of virtualization are
+  - Understand CPU virtualization
+iconUrl: /learn/achievements/cmu-cloud-developer/virtualize-memory.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.0-introduction
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.1-one-level-page-map
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.2-two-level-page-map
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.3-memory-over-commit
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.4-reclaim-memory
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.5-summary
+badge:
+  uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-storage-network-virtualization.3-software-defined-data-centers-networking
+title: Virtual networks for software-defined datacenters
+metadata:
+  title: Virtual networks for software-defined datacenters
+  description: Virtual networks for software-defined datacenters
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-software-defined-data-centers-networking.md)]

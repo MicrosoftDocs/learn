@@ -13,7 +13,7 @@ These TCP/IP port numbers are for the supported protocols:
 | AMQP + WS (Websocket)	| 443 |
 
 
-## Opening an IoT Edge Gateway Device Inbound Ports using Azure CLI
+## Opening an IoT edge gateway device inbound ports using Azure CLI
 
 1. Log in to your Azure portal using your Azure account credentials.
 

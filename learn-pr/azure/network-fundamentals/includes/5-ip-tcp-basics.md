@@ -77,7 +77,7 @@ In an IPv4 network, for a packet of data to be routed to the correct network and
 
 A more common way to define the subnet and the routing prefix is to use the Classless Interdomain Routing (CIDR) notation. CIDR applies to the IP address as the number of bits you want to allocate to your subnet. Using CIDR notation, at the end of the IP address, add a "/" and then the number of bits. For example, 198.51.100.0/24 is the same as using the dotted-decimal format subnet mask 255.255.255.0. It offers an address range of 198.51.100.0 to 198.51.100.255.
 
-![A diagram of a subnet](../media/5-subnet-diagram.svg)
+:::image type="content" source="../media/5-subnet-diagram.svg" alt-text="Diagram of two virtual networks each containing three different sub networks to segment virtual machines on the networks.":::
 
 Subnets allow multiple subnetworks to exist within one network. They can be used to enhance routing performance. Subnets can be arranged hierarchically to create routing trees.
 
@@ -138,7 +138,7 @@ The new standard allows for the address to be simplified by using the following 
 - One or more leading zeros from any group can be removed, so `0042` becomes `42`.
 - Consecutive sections of zeros are replaced with a double colon (`::`), which can be used only once in an address. So the three sets of `0000` in this example are replaced by three colons (`:::`).
 
-The shortened version of the IPv6 example is `2001:db8::8a2e:370:7334`. Notice that all the instances of `0000` are removed.
+The shortened version of the IPv6 example is `2001:db8:::8a2e:370:7334`. Notice that all the instances of `0000` are removed.
 
 ## DNS
 

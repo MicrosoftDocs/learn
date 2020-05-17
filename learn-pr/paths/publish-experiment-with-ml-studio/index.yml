@@ -1,5 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.publish-experiment-with-ml-studio
+hidden: true
 metadata:
   title: Publish a Machine Learning Experiment with Microsoft Azure Machine Learning Studio
   description: In this learning path, use Azure’s Machine Learning Studio to create a machine learning model and learn how to publish your model as a web service.

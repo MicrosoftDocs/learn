@@ -23,7 +23,7 @@ prerequisites: |
   - Successfully log in to the Azure portal
   - Understand the Azure storage options
   - Understand the Azure compute options
-  - Create and configure a HDInsight Cluster in the Azure portal
+  - Installation of Power BI desktop to create a dashboard
 iconUrl: /learn/achievements/learn-pr/achievements/perform-zero-etl-analytics-with-hdinsights-interactive-query.svg
 levels:
 - beginner

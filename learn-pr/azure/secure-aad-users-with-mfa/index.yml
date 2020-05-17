@@ -25,6 +25,7 @@ levels:
 - beginner
 roles: 
 - security-engineer
+- administrator
 products:
 - azure
 - azure-portal

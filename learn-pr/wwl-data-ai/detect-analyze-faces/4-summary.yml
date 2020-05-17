@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-analyze-faces.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review what you've learned"
+  ms.date: 04/24/2020
+  author: benjiang
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-summary.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "You plan to use the Face service to detect human faces in an image. How does the service indicate the location of the faces it detects?"
+    choices:
+    - content: "A pair of coordinates for each face, indicating the center of the face"
+      isCorrect: false
+      explanation: "Incorrect: The location of detected faces are indicated by a coordinates for a rectangular bounding box"
+    - content: "Two pairs of coordinates for each face, indicating the location of the eyes"
+      isCorrect: false
+      explanation: "Incorrect: The location of detected faces are indicated by a coordinates for a rectangular bounding box"
+    - content: "A set of coordinates for each face, defining a rectangular bounding box around the face"
+      isCorrect: true
+      explanation: "Correct: The location of detected faces are indicated by a coordinates for a rectangular bounding box"
+  - content: "What is one aspect that may impair facial detection?"
+    choices:
+    - content: "Sunglasses"
+      isCorrect: false
+      explanation: "Incorrect: This is not listed as an impairment to detection.  The service can detect if a person is wearing glasses, but other landmarks can help detect a face, even with sunglasses on"
+    - content: "Extreme angles"
+      isCorrect: true
+      explanation: "Correct: Best results are obtained when the faces are full-frontal or as near as possible to full-frontal"
+    - content: "Fast shutter speed"
+      isCorrect: false
+      explanation: "Incorrect: This applies to video more than images however, faster shutter speeds tend to create a sharper image, which is beneficial to facial detection"

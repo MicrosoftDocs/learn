@@ -34,6 +34,9 @@ products:
 - azure-iot-hub
 units:
 - learn.oxford.train-package-azure-ml-module-iot-edge.introduction
+- learn.oxford.train-package-azure-ml-module-iot-edge.what-is-virtual-machine
+- learn.oxford.train-package-azure-ml-module-iot-edge.how-setup-communication
+- learn.oxford.train-package-azure-ml-module-iot-edge.exercise-setup-communication
 - learn.oxford.train-package-azure-ml-module-iot-edge.how-create-and-deploy-azure-ml-modules
 - learn.oxford.train-package-azure-ml-module-iot-edge.exercise-creating-and-deploying-azure-ml-module
 - learn.oxford.train-package-azure-ml-module-iot-edge.how-view-container-repository

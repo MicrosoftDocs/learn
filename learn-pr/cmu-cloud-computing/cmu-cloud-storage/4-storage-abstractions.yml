@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.4-storage-abstractions
+title: Storage abstractions
+metadata:
+  title: Storage abstractions
+  description: Storage abstractions
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-storage-abstractions.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Applications can interact with storage devices using the following abstractions:"
+    choices:
+    - content: "Block devices, file systems, and databases"
+      isCorrect: true
+      explanation: "Correct! Applications can interact with storage devices using any of the given abstractions."
+    - content: "File systems and databases"
+      isCorrect: false
+      explanation: "That's not quite right. Applications can interact with more than just a file system or a database. If you write a program that interacts with a storage device, what kinds
+                    of APIs can you access? What abstractions do those APIs provide?"
+    - content: "Only databases"
+      isCorrect: false
+      explanation: "That's not quite right. Applications can interact with more than just a database. If you write a program that interacts with a storage device, what kinds
+                    of APIs can you access? What abstractions do those APIs provide?"
+

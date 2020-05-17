@@ -78,7 +78,7 @@ You use a prebuilt image called `azch/artillery` that's available on Docker hub 
 
 When it runs as a container instance set, you don't want it to restart after it has finished. Use the `--restart-policy` parameter and set the value to `Never` to prevent the restart.
 
-1. In Azure Cloud Shell, store the front-end API load test endpoint in a Bash variable and replace `<frontend hostname>` with your exposed ingress host name, for example, https://frontend.13-68-177-68.nip.io.
+1. In Azure Cloud Shell, store the front-end API load test endpoint in a Bash variable and replace `<frontend hostname>` with your exposed ingress host name, for example, https:\//frontend.13-68-177-68.nip.io.
 
     ```bash
     LOADTEST_API_ENDPOINT=https://<frontend hostname>/api/loadtest

@@ -35,7 +35,7 @@ Here you'll enable Update Manager on the virtual machine you created.
 2. In the **Virtual machines** pane, select the virtual machine from the list. In this example, select **MediaWebServer**.
 3. In the MediaWebServer pane, scroll down the list to **Operations**, and then select **Update management**.
 4. In the **Update Management** pane, ensure that the **Enable for this VM** radio button is selected. Note that a default **Log Analytics workspace** and **Automation account** will be created. Accept the remaining defaults, and then select **Enable**.
-5. In the upper left corner, select the Notification bell and wait for deployment to finish.
+5. In the upper right corner, select the Notification bell and wait for deployment to finish.
 6. When Update Management deployment has completed, the Update Management menu will appear as shown below.
 
 ![Update Management Deployment Complete](../media/3-update-management-deployment-complete-edited.png "Update Management Deployment Complete")

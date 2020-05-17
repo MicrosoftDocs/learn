@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-centers
+metadata:
+  title: Datacenter trends in cloud computing
+  description: Carnegie Mellon University's Cloud Developer course. Datacenters are what power the cloud. Learn what they are, how they work, and challenges in managing them.
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Datacenter trends in cloud computing
+summary: Datacenters power the cloud. Learn what they are, how they work, and challenges in managing them.
+abstract: | 
+  In this module, you will:
+  - Learn about the history and fundamentals of datacenters
+  - Understand the issues related to size, density, and efficiency growth for datacenters
+  - Be aware of the challenges in managing cloud datacenters
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud  
+iconUrl: /learn/achievements/cmu-cloud-developer/understand-data-centers.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.cloud-basics.cmu-data-centers.0-introduction
+- learn.cmu-cloud-computing.cloud-basics.cmu-data-centers.1-data-center-fundamentals
+- learn.cmu-cloud-computing.cloud-basics.cmu-data-centers.2-data-center-history
+- learn.cmu-cloud-computing.cloud-basics.cmu-data-centers.3-data-center-growth
+- learn.cmu-cloud-computing.cloud-basics.cmu-data-centers.4-data-center-design
+- learn.cmu-cloud-computing.cloud-basics.cmu-data-centers.5-summary
+badge:
+  uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-centers.badge

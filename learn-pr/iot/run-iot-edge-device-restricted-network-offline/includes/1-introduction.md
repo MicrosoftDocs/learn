@@ -1,4 +1,4 @@
-Run an IoT Edge device in restricted network and offline.
+Run an IoT edge device in restricted network and offline
 
 Azure IoT Edge supports extended offline operations on IoT Edge devices, and also enables offline operations on non-IoT Edge child devices. The IoT Edge device and any connected child devices can continue to function with intermittent or no internet connection as long as the IoT Edge device has had one opportunity to connect to IoT Hub.
 
@@ -45,7 +45,7 @@ Retailer Tailwind Trader's conveyor belt system monitors vibrations, telemetry, 
 
 In this module, you will learn the different scenarios where IoT Edge device is on an enterprise network (needs proxy settings) or needs extended offline capabilities to address the scenario above
 
-## Task 1: Execute Setup Script
+## Task 1: Execute setup script
 
 1. If necessary, log in to your Azure portal using your Azure account credentials.  If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 

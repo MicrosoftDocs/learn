@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.3-apache-cassandra
+title: Apache Cassandra
+metadata:
+  title: Apache Cassandra
+  description: Apache Cassandra
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 27
+content: |
+  [!include[](includes/3-apache-cassandra.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block 1 has only intro statement and no visible graphic      
+# content: "Arrange the various entities of a Cassandra table in *decreasing* order of size in the HBase hierarchy:"
+
+# Did I Get This block 2 question 1
+  - content: "Which topology does Cassandra follow?"
+    choices:
+    - content: "Master-slave topology"
+      isCorrect: false
+      explanation: "Incorrect. All the nodes in Cassandra have the same role."
+    - content: "Peer-to-peer topology"
+      isCorrect: true
+      explanation: "Correct!"
+
+# Did I Get This block 2 question 2
+  - content: "Which methods are used to keep data replicas in Cassandra consistent?"
+    choices:
+    - content: "Antientropy"
+      isCorrect: false
+      explanation: "That's not quite right. Antientropy is used to keep data replicas in Cassandra consistent, but it isn't the only method."
+    - content: "Read repairs"
+      isCorrect: false
+      explanation: "That's not quite right. Read repairs are used to keep data replicas in Cassandra consistent, but it isn't the only method."
+    - content: "Hinted handoff"
+      isCorrect: false
+      explanation: "That's not quite right. Hinted handoff is used to keep data replicas in Cassandra consistent, but it isn't the only method."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct! Cassandra uses all three methods as mechanisms to keep data replicas consistent."
+
+# Did I Get This block 2 question 3
+  - content: "An application is using the **ONE** consistency model for reads and the **ALL** consistency model for writes. In this mode, Cassandra will offer the application:"
+    choices:
+    - content: "Strong consistency"
+      isCorrect: true
+      explanation: "Correct! Using the _W_ + _R_ > _N_ formula, where _W_ = 1 and _R_ = _N_, the system is strongly consistent for this application."
+    - content: "Weak consistency"
+      isCorrect: false
+      explanation: "Incorrect. Apply the _W_ + _R_ > _N_ formula and see if the read and write models read at least all of the replicas of the data item."      
+
+# Did I Get This block 2 question 4
+  - content: "Which of the following consistency models are offered in Cassandra for **read** operations?"
+    choices:
+    - content: "ONE, QUORUM, ALL"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "ZERO, QUORUM, ALL"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "ZERO, ANY, ONE, QUORUM, ALL"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "ANY, QUORUM, ALL"
+      isCorrect: false
+      explanation: "Incorrect."

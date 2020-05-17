@@ -29,3 +29,9 @@ In this module, you learned:
 #### Other useful links
 
 * The [Windows Community Toolkit](https://docs.microsoft.com/windows/communitytoolkit/).
+
+### Learn more with a Channel 9 video series
+
+- [NuGet 101](https://channel9.msdn.com/Series/NuGet-101/?&WT.mc_id=EducationalNuget-c9-niner&azure-portal=true)
+- [Intro to Visual Studio](https://channel9.msdn.com/Series/Intro-to-Visual-Studio/?WT.mc_id=Educationalvside-c9-niner&azure-portal=true)
+- [Intro to Visual Studio for Mac](https://channel9.msdn.com/Series/Intro-to-Visual-Studio-for-Mac?azure-portal=true)

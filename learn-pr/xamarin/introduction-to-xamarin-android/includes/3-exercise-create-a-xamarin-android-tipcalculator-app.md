@@ -10,21 +10,21 @@ To create a new project in Visual Studio for Windows:
 
 1. To begin creating your app, choose **Create a new project**.
 
-    ![A screenshot showing the Visual Studio 2019 "Get started" dialog box](../media/3-create-new-project-1.png)
+    ![Screenshot of the Visual Studio new project window with Create a new project highlighted.](../media/3-create-new-project-1.png)
 
 1. Filter the new project type options by using _xamarin_ as your search term. Then choose **Android App (Xamarin)** and select **Next**.
 
-    ![A screenshot showing the Visual Studio 2019 "Get started" dialog box](../media/3-create-new-project-2.png)
+    ![Screenshot of the Visaul Studio Create a new project dialog with a search of "xamarin" and the Android App (Xamarin) template highlighted.](../media/3-create-new-project-2.png)
 
 1. Name the project **TipCalculator**.
 
 1. Choose a location for the project and select **Create**.
 
-    ![A screenshot showing the Visual Studio 2019 "Get started" dialog box](../media/3-create-new-project-3.png)
+    ![Screenshot showing the Visual Studio Get started dialog with "TipCalculator" highlighted in the project name field.](../media/3-create-new-project-3.png)
 
 1. For the template, select **Single View App**.
 
-    ![A screenshot showing the Visual Studio 2019 "Get started" dialog box](../media/3-create-new-project-4.png)
+    ![Screenshot of the Visual Studio New Android App dialog box with Single View App and Minimum Android Version dropdown highlighted.](../media/3-create-new-project-4.png)
 
 1. Use the default values for all other project settings.
 
@@ -136,20 +136,20 @@ You'll notice some other controls also use the `android` namespace to declare `I
 
 To compile your code, you'll use the same technique you would for any other app. You can use the **Run** button on the toolbar, the **Build** menu, or a keyboard shortcut.
 
-![A screenshot showing the Build Solution option in Visual Studio 2019](../media/3-create-new-project-5.png)
+![Screenshot of the Visual Studio Build menu showing the Build Solution option.](../media/3-create-new-project-5.png)
 
 Build warnings and errors are reported through the **Error** window. You can turn the window on and off through the **View** menu.
 
 On the toolbar, the **Run** button allows you to deploy your application to an available Android emulator.
 
-![A screenshot showing the Run option in Visual Studio 2019](../media/3-create-new-project-6.png)
+![Screenshot of the Visual Studio build toolbar with a Nexus 5X Android simulator device selected for debug deployment.](../media/3-create-new-project-6.png)
 
 If no emulator is shown, you can create a compatible emulator. An Android emulator is compatible if the app you want to deploy has a minimum supported Android version earlier than the OS version running on the emulator.
 
-![A screenshot showing the Run option in Visual Studio 2019](../media/3-create-new-project-7.png)
+![Screenshot of the Visual Studio build toolbar showing the device dropdown with the Create Android Emulator option highlighted.](../media/3-create-new-project-7.png)
 
 * Run the app. Spend some time using it so you understand its behavior. The template code typically creates a single page with a title bar and menu button, a label, and a floating action button that will display a message when it's selected.
 
- ![A screenshot of the final application running on the Android emulator](../media/3-ex1-completed-windows.png)
+    ![Screenshot of the new TipCalculator application running on an Android emulator.](../media/3-ex1-completed-windows.png)
 
 You can view the completed solution in the **exercise1** > **final** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)] from GitHub.

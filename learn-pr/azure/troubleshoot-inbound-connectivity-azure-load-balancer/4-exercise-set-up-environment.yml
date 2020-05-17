@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.exercise-set-up-environment
+title: Exercise - Set up your environment
+metadata:
+  title: Exercise - Set up your environment
+  description: Set up the resources you'll need to troubleshoot inbound network connectivity
+  ms.date: 03/23/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 40
+azureSandbox: false
+content: |
+  [!include[](includes/4-exercise-set-up-environment.md)]

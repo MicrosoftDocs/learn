@@ -9,4 +9,4 @@ By the end of this module, you'll be able to:
 - Describe the Cosmos DB architecture and APIs.
 - Plan a NoSQL to Cosmos DB migration.
 - Plan Cosmos DB throughput.
-- Choose an appropriate partitioning key.
+- Choose an appropriate partitioning key. 

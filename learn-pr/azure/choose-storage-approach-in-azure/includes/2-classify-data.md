@@ -12,7 +12,7 @@ Structured data, sometimes referred to as _relational data_, is data that adhere
 
 Structured data is often stored in database tables with rows and columns with key columns to indicate how one row in a table relates to data in another row of another table. The below image shows data about students and classes with a relationship to grades that ties them together.
 
-![Conceptual art showing two structured data tables and a relationship table containing data that ties them together](../media/2-relational-db.png)
+![Diagram showing two structured data tables and a relationship table containing data that ties them together.](../media/2-relational-db.png)
 
 Structured data is straightforward in that it's easy to enter, query, and analyze. All of the data follows the same format. However, forcing a consistent structure also means evolution of the data is more difficult as each record has to be updated to conform to the new structure.
 
@@ -21,6 +21,8 @@ Structured data is straightforward in that it's easy to enter, query, and analyz
 Semi-structured data is less organized than structured data, and is not stored in a relational format, as the fields do not neatly fit into tables, rows, and columns. Semi-structured data contains tags that make the organization and hierarchy of the data apparent - for example, key/value pairs. Semi-structured data is also referred to as non-relational or _NoSQL data_. The expression and structure of the data in this style is defined by a *serialization language*.
 
 For software developers, data serialization languages are important because they can be used to write data stored in memory to a file, sent to another system, parsed and read. The sender and receiver don’t need to know details about the other system, as long as the same serialization language is used, the data can be understood by both systems.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Learn/Data-Serialization-Languages/player?format=ny]
 
 ### Common formats
 

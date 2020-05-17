@@ -37,18 +37,18 @@ Here you'll install the **WhiteSource Bolt** extension for Microsoft Azure Pipel
 1. Search for "WhiteSource Bolt".
 1. Select **WhiteSource Bolt** from the results.
 
-    ![Marketplace WhiteSource Bolt extension](../media/4-marketplace-whitesource-bolt.png)
+    ![Screenshot of Azure DevOps Marketplace showing results for a search of "WhiteSource Bolt".](../media/4-marketplace-whitesource-bolt.png)
 1. Select **Get it free**.
 1. Select your Microsoft Azure DevOps organization from the drop-down box.
 1. Select **Install**. Note the WhiteSource Bolt version number.
 1. From Azure DevOps, go to your project. Then go to **Pipelines**.
 1. Go to the **WhiteSource Bolt** tab.
 
-    ![Azure DevOps showing the WhiteSource Bolt menu](../media/4-pipelines-whitesource-menu.png)
+    ![Screenshot of Azure Pipelines menu showing the WhiteSource Bolt menu item highlighted.](../media/4-pipelines-whitesource-menu.png)
 
     You see a form that asks for your email address and company name.
 
-   ![Activate WhiteSource Bolt extension](../media/4-activate-whitesource.png)
+   ![Screenshot of the Activate WhiteSource Bolt pane with an email and company name entered.](../media/4-activate-whitesource.png)
 
     Enter the required information.
 1. Select **Get Started**.
@@ -82,17 +82,17 @@ Here you'll push your changes to GitHub and see the pipeline run. Recall that yo
 
     You see the scan task complete successfully.
 
-    ![WhiteSource scan completed in pipeline](../media/4-scan-success.png)
+    ![Screenshot of WhiteSource scan completed in pipeline: Publish the project - Release, Run WhiteSource Bolt, and Publish Artifact: drop are all marked "succeeded".](../media/4-scan-success.png)
 
 1. Select the completed **Run WhiteSource Bolt** task, and then scroll to the bottom of the report details for that task.
 
-    ![WhiteSource scan completed details](../media/4-scan-task-detail.png)
+    ![Screenshot of WhiteSource scan pipeline output ending with "##[section]Finishing: Run WhiteSource Bolt".](../media/4-scan-task-detail.png)
 
     You see that the data is being uploaded for the scan report.
 
 1. When the build completes, navigate to the **WhiteSource Bolt Build Report** tab.
 
-    ![WhiteSource report screen](../media/4-scan-report.png)
+    ![Screenshot of WhiteSource report screen with a vulnerability score of medium and several medium-rated vulnerabilities listed.](../media/4-scan-report.png)
 
     This image is for illustration. You may see different results based on the current recommendations.
 
@@ -102,13 +102,13 @@ Take a moment to review the findings. You see that there are some issues to addr
 
 1. In the **Security Vulnerabilities** section find the **jquery-3.3.1.js** entry. Then select the CVE link.
 
-    ![jquery vulnerability CVE entry](../media/4-cve-report-jquery.png)
+    ![Screenshot of jQuery vulnerability CVE entry (CVE-2019-11358).](../media/4-cve-report-jquery.png)
 
     This shows the vulnerability that is associated with this library.
 
 1. Go back to the report and scroll down to the **License Risk and Compliance** section. Notice the list of licenses for the open-source dependencies. While they may all be green, it's  up to the legal team to decide if these are acceptable.
 
-    ![License risk section](../media/4-license-risk.png)
+    ![Screenshot of License Risks and Compliance report listing 5 low-risk licenses used and one with an unspecified, unknown-risk license.](../media/4-license-risk.png)
 
 The team gets together to look at the results.
 

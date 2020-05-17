@@ -1,4 +1,4 @@
-There are various methods for creating an HDInsight cluster, this can range from using the Azure portal for graphical setups, to scripted setups that can help with automated deployments. The following table shows the different methods you can use to setup an HDInsight cluster. 
+There are various methods for creating an HDInsight cluster, this can range from using the Azure portal for an easy user interface, to scripted setups that can help with automated deployments. The following table shows the different methods you can use to setup an HDInsight cluster. 
 
 |Clusters created with| Web browser| Command line| REST API| SDK|
 |-|-|-|-|-|

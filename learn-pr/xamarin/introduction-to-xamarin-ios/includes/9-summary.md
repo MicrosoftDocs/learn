@@ -15,3 +15,8 @@ To learn more about developing apps with Xamarin.iOS, refer to the following doc
 - Learn how to [build apps for watchOS](https://docs.microsoft.com/xamarin/ios/watchos/).
 
 - Learn how to [build apps for tvOS](https://docs.microsoft.com/xamarin/ios/tvos/).
+
+## Learn more with a Channel 9 video series
+
+- [Xamarin Tutorial 101](https://channel9.msdn.com/Series/Xamarin-101/?WT.mc_id=Educationalmobile-c9-niner&azure-portal=true)
+- [Intro to Visual Studio for Mac](https://channel9.msdn.com/Series/Intro-to-Visual-Studio-for-Mac?azure-portal=true)

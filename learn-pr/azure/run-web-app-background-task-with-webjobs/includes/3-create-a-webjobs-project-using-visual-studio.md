@@ -59,7 +59,7 @@ To set the schedule for your triggered WebJob, add the **settings.json** file to
 
 ## How to publish the project
 
-When when you use Visual Studio's **Publish** functionality to deploy the web app to App Service, Visual Studio deploys the WebJob along with the application. You can also deploy the WebJob separately from the web app by right-clicking the project in **Solution Explorer** and then clicking **Publish as Azure WebJob**.
+When you use Visual Studio's **Publish** functionality to deploy the web app to App Service, Visual Studio deploys the WebJob along with the application. You can also deploy the WebJob separately from the web app by right-clicking the project in **Solution Explorer** and then clicking **Publish as Azure WebJob**.
 
 Right-click the name of the web app and select **Publish** to start the publishing wizard and publish the complete solution. Visual Studio shows the wizard page, where you can pick a publishing target. You must publish to App Service for WebJobs to be deployed.
 

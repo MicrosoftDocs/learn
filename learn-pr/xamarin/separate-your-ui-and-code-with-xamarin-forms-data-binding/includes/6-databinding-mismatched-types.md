@@ -10,7 +10,7 @@ A common type mismatch is an intrinsic type that you want to display as a format
 
 The following mockup shows the goal of displaying the `BillAmount` property as currency. Notice how the localized currency symbol is included and the value is rounded to two decimal places.
 
-![An illustration of a UI showing the amount of a bill formatted as currency.](../media/formattedString.png)
+![Example illustration of a UI displaying a bill amount formatted as currency: "You Owe: $26.75".](../media/formattedString.png)
 
 Xamarin.Forms bindings give you access to the `String.Format` method. For example, you can tell the binding to take the value for the `BillAmount` and send it to the `String.Format` method by using a format of `C` to create a currency string. The binding then loads the formatted string into your UI.
 

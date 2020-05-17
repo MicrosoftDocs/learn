@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-provide-context-with-the-right-depth-layer.3-layer-1-the-process-layer
+title: Layer 1 - The process layer
+metadata:
+  title: Layer 1 - The Process Layer
+  description: Learn what Layer 1 is and when to use it
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-layer-1-the-process-layer.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which layer do most applications fall under?"
+    choices:
+    - content: "Context Layer"
+      isCorrect: false
+      explanation: "This layer is the starting ground for any system. Also known as System Layer"
+    - content: "Process Layer"
+      isCorrect: true
+      explanation: "This layer focuses on each system part"
+    - content: "Subprocess Layer"
+      isCorrect: false
+      explanation: "This layer focuses on the system subparts for a system part"

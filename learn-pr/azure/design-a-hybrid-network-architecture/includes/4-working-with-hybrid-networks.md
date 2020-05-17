@@ -28,7 +28,7 @@ Azure VPN Gateway, a virtual network gateway service, allows site-to-site and po
 
 A VPN or virtual private network is a well-established, well-understood network architecture.
 
-VPN Gateway uses your existing connection to the internet. However, all communication is encrypted using the Internet Key Exchange (IKE) and Internet Protocol Security (IPsec) protocols. You can have only one virtual network gateway per virtual private network.  
+VPN Gateway uses your existing connection to the internet. However, all communication is encrypted using the Internet Key Exchange (IKE) and Internet Protocol Security (IPsec) protocols. You can have only one virtual network gateway per virtual network.  
 
 When you set up a virtual network gateway, you must specify whether it's a VPN gateway or an ExpressRoute gateway.  
 
@@ -47,7 +47,7 @@ All site-to-site gateway connections use an IPsec/IKE VPN tunnel to create a con
 
 ### Point-to-site
 
-A point-to-site gateway connection creates a secured connection between an individual device and your Azure virtual network. This gateway type is suited to remote workers; for example, users attending a conference or working from home. A point-to-point network doesn't require a dedicated on-premises VPN device.
+A point-to-site gateway connection creates a secured connection between an individual device and your Azure virtual network. This gateway type is suited to remote workers; for example, users attending a conference or working from home. A point-to-site connection doesn't require a dedicated on-premises VPN device.
 
 ![Diagram of a VPN point-to-site connection between the on-premises network and the Azure virtual network](../media/4-p2s-connection.svg)
 

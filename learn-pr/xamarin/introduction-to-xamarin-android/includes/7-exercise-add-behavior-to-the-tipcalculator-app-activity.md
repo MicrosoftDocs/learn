@@ -180,5 +180,4 @@ Run the app to test your work. The following image shows an example of the expec
 
 You can view the completed solution in the folder **exercise3** > **final** in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].
 
-![Screenshot showing the completed Android app running](../media/7-ex3-completed.png)
-
+![Screenshot showing the completed TipCalculator app running on an Android emulator.](../media/7-ex3-completed.png)

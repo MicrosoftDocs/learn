@@ -1,19 +1,20 @@
-In the sample scenario, your organization is rolling out a new environment in Azure that uses virtual machines. You've already constructed a virtual machine that contains the software and tools required to support the organization's functions. You need to use this virtual machine to generate a custom image that you can then use to create new virtual machine instances.
+In this sample scenario, your organization is rolling out a new environment in Azure that uses virtual machines. You've already constructed a virtual machine that contains the software and tools required to support the organization's functions. You need to use this virtual machine to generate a custom image that you can then use to create new virtual machine instances.
 
-In this exercise, you'll create a virtual machine and generalize it. You'll then create an image from the generalized virtual machine, and then use this image to create another virtual machine.
+In this exercise, you'll create a virtual machine and generalize it. You'll then create an image from the generalized virtual machine, and then use this image to create another virtual machine. You can try this out with either Windows or Linux (or both) by selecting the platform type above.
 
 ## Create a virtual machine
 
 In this task, you'll quickly create a virtual machine that runs a simple web app. The web app displays the name of the host machine. You'll use this virtual machine as the basis for the rest of the exercise.
 
+[!include[](../../../includes/subscription-cloudshell-azurecli-create-rg.md)]
+
 ::: zone pivot="windows-cloud"
 
-1. In the Azure Cloud Shell window on the right, run the following commands to create a Windows Server Datacenter virtual machine that's running IIS. When you're prompted for the *azureuser* password, enter a password of your choice.
+1. In the Azure Cloud Shell, run the following commands to create a Windows Server Datacenter virtual machine that's running IIS. When you're prompted for the *azureuser* password, enter a password of your choice.
 
     ```azurecli
     az vm create \
         --name MyWindowsVM \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --image Win2019Datacenter \
         --admin-username azureuser
     ```
@@ -24,7 +25,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     az vm extension set \
         --name CustomScriptExtension \
         --vm-name MyWindowsVM \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --publisher Microsoft.Compute \
         --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $(hostname)"}'
     ```
@@ -34,7 +34,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     ```azurecli
     az vm open-port \
         --name MyWindowsVM \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --port 80
     ```
 
@@ -42,7 +41,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
-                 --resource-group <rgn>[Sandbox resource group name]</rgn> \
                  --name MyWindowsVM \
                  --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
                  --output tsv)
@@ -56,25 +54,22 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="linux-cloud"
 
-1. In the Cloud Shell window on the right, run the following commands to create an Ubuntu Server virtual machine that's running Nginx. When you're prompted for the *azureuser* password, enter a password of your choice.
+1. In the Cloud Shell, run the following commands to create an Ubuntu Server virtual machine that's running Nginx. When you're prompted for the *azureuser* password, enter a password of your choice.
 
     ```azurecli
     az vm create \
         --name MyUbuntuVM \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --image UbuntuLTS \
         --generate-ssh-keys
 
     az vm open-port \
         --name MyUbuntuVM \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --port 80
 
     az vm extension set \
         --publisher Microsoft.Azure.Extensions \
         --name CustomScript \
         --vm-name MyUbuntuVM \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --settings '{"commandToExecute":"apt-get -y update && apt-get -y install nginx && hostname > /var/www/html/index.html"}'
     ```
 
@@ -82,7 +77,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
-                 --resource-group <rgn>[Sandbox resource group name]</rgn> \
                  --name MyUbuntuVM \
                  --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
                  --output tsv)
@@ -98,9 +92,23 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="windows-cloud"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the <rgn>[Sandbox resource group name]</rgn> resource group.
+::: zone-end
+
+::: zone pivot="windows-cloud, hosted-subscription"
+
+1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the **<rgn>[Sandbox resource group name]</rgn>** resource group.
+
+::: zone-end
+
+::: zone pivot="windows-cloud, personal-subscription"
+
+1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the **learn-resources** resource group.
+
+::: zone-end
+
+::: zone pivot="windows-cloud"
 
 1. Select the **MyWindowsVM** virtual machine.
 
@@ -158,7 +166,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ```azurecli
     az vm deallocate \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --name MyWindowsVM
     ```
 
@@ -166,7 +173,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ```azurecli
     az vm generalize \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --name MyWindowsVM
     ```
 
@@ -198,7 +204,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ```azurecli
     az vm deallocate \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --name MyUbuntuVM
     ```
 
@@ -206,7 +211,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ```azurecli
     az vm generalize \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --name MyUbuntuVM
     ```
 
@@ -221,7 +225,6 @@ Run the following command to create a virtual machine image named *MyVMImage* fr
 ```azurecli
 az image create \
     --name MyVMIMage \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
     --source MyWindowsVM
 ```
 
@@ -234,7 +237,6 @@ az image create \
     ```azurecli
     az image create \
         --name MyVMIMage \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --source MyUbuntuVM
     ```
 
@@ -248,7 +250,6 @@ az image create \
 
     ```azurecli
     az vm create \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
       --name MyVMFromImage \
       --computer-name MyVMFromImage \
       --image MyVMImage \
@@ -263,7 +264,6 @@ az image create \
         --publisher Microsoft.Azure.Extensions \
         --name CustomScript \
         --vm-name MyVMFromImage \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --settings '{"commandToExecute":"hostname > /var/www/html/index.html"}'
     ```
 
@@ -272,7 +272,6 @@ az image create \
     ```azurecli
     az vm open-port \
         --name MyVMFromImage \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --port 80
     ````
 
@@ -280,7 +279,6 @@ az image create \
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
-                    --resource-group <rgn>[Sandbox resource group name]</rgn> \
                     --name MyVMFromImage \
                     --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
                     --output tsv)
@@ -296,7 +294,6 @@ az image create \
 
     ```azurecli
     az vm create \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
       --name MyVMFromImage \
       --computer-name MyVMFromImage \
       --image MyVMImage \
@@ -309,7 +306,6 @@ az image create \
     az vm extension set \
         --name CustomScriptExtension \
         --vm-name MyVMFromImage \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --publisher Microsoft.Compute \
         --settings '{"commandToExecute":"powershell Clear-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\"; Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $(hostname)"}'
     ```
@@ -319,7 +315,6 @@ az image create \
     ```azurecli
     az vm open-port \
         --name MyVMFromImage \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --port 80
     ````
 
@@ -327,7 +322,6 @@ az image create \
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
-                    --resource-group <rgn>[Sandbox resource group name]</rgn> \
                     --name MyVMFromImage \
                     --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
                     --output tsv)
@@ -336,3 +330,5 @@ az image create \
 1. In the web browser, go to the public IP address of the new virtual machine. Verify that a webpage displays the name of the virtual machine from which the image was built, *MyVMFromImage*.
 
 ::: zone-end
+
+[!include[](../../../includes/subscription-cloudshell-azurecli-cleanup.md)]

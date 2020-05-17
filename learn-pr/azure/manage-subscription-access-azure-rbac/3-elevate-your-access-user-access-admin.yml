@@ -31,7 +31,7 @@ quiz:
     - content: An administrator with Owner or User Access Administrator access to the development environment can grant the manager access to the subscription. 
       isCorrect: true
       explanation: Users with Owner or User Access Administrator access can grant other users permissions to manage a management group or subscription.
-    - content: The manager should go to the switch directory option in the Azure portal and select the subscription.
+    - content: The manager should go to the **Switch directory** option in the Azure portal and select the subscription.
       isCorrect: false
       explanation: The manager needs User Access Administrator permissions to grant Owner access to the subscription.
     - content: The manager should use PowerShell to assign themselves Owner access to the subscription.

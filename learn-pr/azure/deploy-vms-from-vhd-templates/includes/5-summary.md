@@ -1,13 +1,13 @@
-In this module, you've learned about customized virtual machine images and how you can use them to deploy virtual machines. You saw how to:
+In this module, you've learned how to:
 
-- Create a specialized virtual hard disk.
-- Create a virtual machine from an existing managed disk.
-- Create a virtual machine image.
-- Create a virtual machine from an existing virtual machine image.
+> [!div class="checklist"]
+>
+> - Create a specialized virtual hard disk.
+> - Create a virtual machine from an existing managed disk.
+> - Create a virtual machine image.
+> - Create a virtual machine from an existing virtual machine image.
 
 You can use this knowledge to build a customized virtual machine image that's configured to meet your organization's requirements. You can then use this image to roll out virtual machines across the entire organization.
-
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Learn more
 

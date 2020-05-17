@@ -14,7 +14,7 @@ Within the scope of this tutorial, the most important option to consider when cr
 
 To publish a functions project to Azure, run `func azure functionapp publish <app_name>` from the functions project folder. `<app_name>` is the name of the target function app in Azure, not the name of your project folder, which can be different.
 
-![Publishing a function app with `func azure functionapp publish`](../media/4-publish.png)
+:::image type="content" source="../media/4-publish.png" alt-text="Publishing a function app with func azure functionapp publish." loc-scope="other":::
 
 The Core Tools don't ask you to sign in to Azure. Instead, they access your subscriptions and resources by loading your session information from the Azure CLI or Azure PowerShell. If you don't have an active session in one of those tools, publishing will fail. It's possible to publish from the Core Tools without the Azure CLI or Azure PowerShell, but it's much easier if you do have them, and we recommend you install one or the other and log in before trying to publish.
 

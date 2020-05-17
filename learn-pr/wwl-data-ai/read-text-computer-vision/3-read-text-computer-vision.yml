@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-text-computer-vision.exercise
+title: Exercise - Read text with the Computer Vision service
+metadata:
+  title: Exercise - Read text with the Computer Vision service
+  description: "Get hands-on with the Computer Vision service and use it to read text in images."
+  ms.date: 04/24/2020
+  author: benjiang
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-read-text-computer-vision.md)]

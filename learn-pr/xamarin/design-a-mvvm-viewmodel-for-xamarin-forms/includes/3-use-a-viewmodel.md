@@ -74,7 +74,7 @@ public void OnPropertyChanged(string propertyName)
 
 You can use a viewmodel at any level where there's a view. A page usually *has* a viewmodel, but so might subviews of the page. One common reason for nested viewmodels is when there's a `ListView` on the page. The list page itself has a viewmodel `EmployeeListViewModel`, which has a collection that the ListView uses as `ItemSource`. Each element in the collection can be an `EmployeeViewModel` and provide data to the rows of the `ListView`.
 
-![An illustration of EmployeeListViewModel with EmployeeViewModel](../media/EmployeeListViewModel.png)
+![Diagram of an EmployeeListViewModel with several EmployeeViewModel sub-objects.](../media/EmployeeListViewModel.png)
 
 It's also common to have a top-level viewmodel that holds data and state for the entire application but isn't associated with any particular page. Such a viewmodel is commonly used for maintaining the "active" item. Consider the ListView example that we just described. When the user selects an employee row, that employee represents the *current item*. If the user navigates to a detail page or selects a toolbar button while that row is selected, the action or display should be for that employee. An elegant way of handling this scenario is to have the `ListView.SelectItem` data-bound to a property that the toolbar or detail page can also access. Putting that property on a central viewmodel works well.
 
@@ -86,7 +86,7 @@ Viewmodels often closely reflect the structure of a model class, and they have a
 
 Similarly, you might find that viewmodels and *views* often have a one-to-one relationship. But this also isn't necessarily the case. Let's again think about a `ListView` that shows a row for each employee. When you select one of the rows, you go to an employee-detail page.
 
-![A screenshot of a phone with a listview](../media/PhoneWithList.png)
+![Screenshot of a iPhone list view of employees, showing a name and title for each row.](../media/PhoneWithList.png)
 
  The list page has its viewmodel with a collection. As suggested earlier, that collection *could* be a collection of `EmployeeViewModel` objects. And when the user selects a row, the `EmployeeViewModel` instance *could* be passed to the `EmployeeDetailPage`. And the detail page *could* use that `EmployeeViewModel` as its `BindingContext`.
 

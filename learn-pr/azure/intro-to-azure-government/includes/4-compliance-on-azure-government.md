@@ -28,19 +28,19 @@ Microsoft Azure is the most trusted and compliant cloud. It offers the most comp
 
 The following table is an illustration of the Azure Government Services and their FedRAMP moderate, FedRAMP High, and CJIS compliance. 
 
-![Overview of Azure Government compliance depth in terms of services offered.](../media/compliance-depth.png)
+:::image type="content" source="../media/compliance-depth.png" alt-text="Overview of Azure Government compliance depth in terms of services offered." loc-scope="other"::: <!-- Azure Government Services, no-loc -->
 
 
 ### How can I deploy my own cloud-based solutions to scenarios that have accreditation or compliance requirements?
 
 Microsoft Azure Blueprint provides a fast track to certification and compliance. The five-step process streamlines paperwork through templates and tools, allowing security professionals to focus on security – not paperwork.
 
-Certification and compliance can be costly in terms of both dollars and time. Microsoft is developing the Azure Blueprint program to reduce these costs to our customers who build on top of Azure’s architecture. Azure Blueprint offers support in the following areas. 
+Certification and compliance can be costly in terms of both dollars and time. Microsoft is developing the Azure Blueprint program to reduce these costs to our customers who build on top of Azure's architecture. Azure Blueprint offers support in the following areas. 
 
 - **Architecture**: Transparency that allows our customers to build secure and compliant applications.
 - **Deployment**: Automation that speeds the process of deploying secure and compliant applications on Azure.
 - **Certification**: Pre-built and pre-approved compliance documentation that dramatically reduces the cost/time of certification.
-- **Expertise**: Deep Azure experts are available for consulting with customers who don’t have in-house compliance organizations
+- **Expertise**: Deep Azure experts are available for consulting with customers who don't have in-house compliance organizations
 - **Partnership**: The Cloud Health & Security Engineering team available to assist customers in meetings with regulators and achieving authorization to operate (ATO).
 
 To learn more about the Azure Blueprint program, see the official [Security and Compliance Blueprints on Azure](https://servicetrust.microsoft.com/ViewPage/BlueprintOverview) documentation

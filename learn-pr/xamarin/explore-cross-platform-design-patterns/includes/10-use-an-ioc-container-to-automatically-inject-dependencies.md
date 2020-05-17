@@ -119,7 +119,7 @@ To create an object, the IoC container examines the object's type and invokes on
 
 Adding an IoC container to your code can make dealing with dependencies confusing. Let's have a look at how a container works conceptually.
 
-![An illustration showing the behavior of an IoC container](../media/10-inversion-of-control-container.png)
+![Diagram showing the behavior of an IoC container, which injects a SqliteRepo dependency, that implements an IDbRepository interface, as a data access layer.](../media/10-inversion-of-control-container.png)
 
 With this diagram in mind, let's see how the IoC container will process your `DataAccessLayer` class.
 

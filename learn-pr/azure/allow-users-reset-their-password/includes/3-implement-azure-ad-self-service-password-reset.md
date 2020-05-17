@@ -32,24 +32,24 @@ Here are the high-level steps to configure SSPR.
    - You can enable it for all users in the Azure AD organization or for selected users.
    - To enable for selected users, you must specify the security group. Members of this group can use SSPR.
 
-    ![Screenshot that shows how to enable SSPR](../media/3-enable-sspr.png)
+    ![Screenshot of the Password Reset configuration panel. Properties option is selected allowing user to enable self service password resets.](../media/3-enable-sspr.png)
 
 1. Authentication methods:
    - Choose whether to require one or two authentication methods.
    - Choose the authentication methods that the users can use.
 
-    ![Screenshot that shows authentication methods for SSPR](../media/3-auth-methods.png)
+    ![Screenshot of the Password Reset panel's Authentication methods option selected displaying panel with authentication options.](../media/3-auth-methods.png)
 
 1. Registration:
    - Specify whether users are required to register for SSPR when they next sign in.
    - Specify how often users are asked to reconfirm their authentication information.
 
-    ![Screenshot that shows registration options for SSPR](../media/3-registration-options.png)
+    ![Screenshot of the Password Reset panel's Registration option selected displaying panel with registration options.](../media/3-registration-options.png)
 
 1. Notifications: Choose whether to notify users and administrators of password resets.
 
-    ![Screenshot that shows notification settings](../media/3-notification-settings.png)
+    ![Screenshot of the Password Reset panel's Notification option selected displaying panel with notification options.](../media/3-notification-settings.png)
 
 1. Customization: Provide an email address or web page URL where your users can get help.
 
-    ![Screenshot that shows customization settings](../media/3-customization-settings.png)
+    ![Screenshot of the Password Reset panel's Customization option selected displaying panel with helpdesk options.](../media/3-customization-settings.png)

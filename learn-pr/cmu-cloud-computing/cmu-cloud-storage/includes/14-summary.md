@@ -1,0 +1,27 @@
+- Data can be characterized by its structure, dynamicity, and volume. It usually can be fixed or structured, static or dynamic.
+- Storage technologies have been evolving to keep pace with ever-growing needs to store vast amounts of data. 
+- Different applications can exhibit different requirements in terms of capacity, performance, fault-tolerance, durability, and others. Storage systems are designed to address these requirements in an efficient manner.
+- Storage abstractions can be in the form of blocks on a block device, files on a file system, or entities in a database.
+- There are many types of file systems, such as local, shared, and networked file systems.
+- Local file systems manage data on block devices (physical disks or LUNs). They map files to regions of the disk called _blocks_. File systems are designed with performance and dependability concerns in mind.
+- A single file system can be expanded over multiple disks, typically using LVM/RAID.
+- It is typical for storage to be consolidated in enterprise environments to facilitate pooling, sharing, and improving manageability of storage resources. Consolidated storage systems are typically shared among multiple servers using a storage area network (SAN).
+- A distributed file system is a network file system with files distributed among multiple file servers. A file is stored whole on one of the file system servers that are part of the DFS.
+- Distributed file systems have many design considerations, including fault tolerance, replication, consistency, and file-sharing semantics.
+- Databases evolved from the navigational model to the modern relational database model and further to the NoSQL and NewSQL models.
+- There are multiple design considerations for database systems.
+- When the data is amenable to structuring, it is typical to organize it using a well-defined model (also known as a _schema_). Semi-structured or unstructured data is typically stored in schemaless systems such as key-value stores.
+- The CAP theorem states that any distributed storage system with shared data can have at most two of three desirable properties among the following: consistency, availability, and partition tolerance.
+- An RDBMS models data into interconnected tables. A schema defines the rules on the types and valid inputs for each column of a table. Tables are defined, accessed, and modified through a query language (typically SQL). 
+- An RDBMS supports transactions by providing atomicity, consistency, isolation, and durability (ACID) guarantees. 
+- Traditional databases can be scaled either vertically or horizontally. Vertical scaling simply requires the underlying hardware (CPU, memory, disk, etc.) to be upgraded.
+- With horizontal scaling, a database is distributed across multiple machines, either through replication (same data is stored across multiple machines) or sharding (data is distributed across multiple machines).
+- Achieving ACID properties in a distributed database is challenging. Typically, a two-phase commit protocol (2PC) is used to ensure ACID properties in such databases. However, this approach affects performance at very large scale.
+- NoSQL databases take a relaxed approach to strict consistency guarantees in order to provide availability and partition tolerance at large scale and high performance.
+- A few types of NoSQL databases include document stores, graph databases, key-value stores, and columnar databases.
+- NoSQL databases typically offer data flexibility, scalability, and high performance for large volumes of data when compared to traditional RDBMSs.
+- Applications must take into account the relaxed consistency model of NoSQL data stores. Lack of standardization makes it difficult to migrate data from one database to another.
+- NewSQL databases attempt to combine the relational data model and SQL interface of RDBMSs with the scalability and performance of NoSQL systems. This is done by reengineering the database engines to perform well at scale through in-memory storage and a shared-nothing architecture.
+- Object stores provide an abstraction of an object (which is a generic container to store any arbitrary type of information) and a set of very basic operations—create, read, update, and delete (CRUD)—to enable online storage. They can be considered to be a service-oriented version of key-value stores.
+- Object stores are typically accessed using an API that is accessed over the network using REST/SOAP-style calls.
+- Amazon S3 is an example of an object store, and CDMI is an upcoming open standard that defines a cloud storage environment.

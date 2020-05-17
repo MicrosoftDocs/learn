@@ -11,12 +11,12 @@ metadata:
 title: Fundamentals of network security
 summary: Explore the fundamentals of computer networking security and monitoring.
 abstract: | 
-  In this module, you will:
-  - Describe the client-server network model
-  - Describe the difference between authentication and authorization
-  - List the different network firewall types
-  - List the types of items to monitor in a network
-  - Map core network components to Azure networking
+  In this module, you will learn how to:
+  - Describe the client-server network model.
+  - Describe the difference between authentication and authorization.
+  - List the different network firewall types.
+  - List the types of items to monitor in a network.
+  - Map core network components to Azure networking.
 prerequisites: | 
   - Fundamentals of computer networking
 iconUrl: /learn/achievements/network-fundamentals-2.svg

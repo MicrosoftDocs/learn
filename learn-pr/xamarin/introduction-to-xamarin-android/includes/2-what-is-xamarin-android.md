@@ -1,12 +1,12 @@
 Visual Studio Tools for Xamarin is an open-source app-development platform that lets you build apps for many operating systems. Xamarin allows you to write apps that can take full advantage of the power, features, and performance of each platform with a single shared .NET code base. Xamarin.Android is a Xamarin framework you can use to create fully native Android apps by using C# in Visual Studio.
 
-![An illustration showing Xamarin targets on all platforms](../media/2-target-all-platforms.png)
+![Illustration showing Xamarin targets on all platforms.](../media/2-target-all-platforms.png)
 
 ## What is a Xamarin.Android app?
 
 A Xamarin.Android app is a native Android app that's built by using the Xamarin tools and libraries. The UI is created from Xamarin wrappers around native Android views so the app has the look and feel users expect. The behavior logic is written in C#, which is comfortable and familiar to the community of .NET developers.
 
-![A screenshot showing a running Xamarin Android app](../media/2-xamarin-android-app.png)
+![Screenshot showing a running Xamarin Android app.](../media/2-xamarin-android-app.png)
 
 ## Use Visual Studio and C# to develop for Android
 
@@ -64,7 +64,7 @@ You can use familiar idioms in C#. The Xamarin C# wrappers will:
 
 Java Android apps have access to libraries for nearly all use cases. This access means you can develop your apps faster. Libraries are also accessible to you as a Xamarin.Android developer.
 
-![A diagram showing the conceptual grouping of libraries](../media/2-libraries-in-xamarin-android.png)
+![Diagram showing the conceptual grouping of libraries.](../media/2-libraries-in-xamarin-android.png)
 
 Xamarin.Android apps can use utility classes from three libraries.
 
@@ -93,11 +93,11 @@ The decision between the two techniques is a matter of personal preference. If y
 
 Let's look at the steps to create and run a Xamarin.Android app. We'll assume you're using Visual Studio 2019. Creating your app begins with the **Create a new project** option.
 
-![A diagram showing the conceptual grouping of libraries](../media/2-create-new-project-1.png)
+![Screenshot of the Visual Studio new projection window with the Create a new project button highlighted.](../media/2-create-new-project-1.png)
 
 Xamarin.Android includes several project templates for Android apps and libraries. Each project type includes a quick summary of its purpose and content. Notice that we've used the keyword _android_ to filter the project options.
 
-![A diagram showing the conceptual grouping of libraries](../media/2-xamarin-android-templates.png)
+![Screenshot of the Visual Studio Create a new project window with a search of "android".](../media/2-xamarin-android-templates.png)
 
 | Project type | Description |
 | ----- | ----- |
@@ -112,11 +112,11 @@ Suppose you want to create an app called Tip Calculator. You'll choose the **And
 
 Here we've filtered the project options by using _xamarin_ as our keyword.
 
-![A screenshot showing the Visual Studio 2019 "Get started" dialog box](../media/3-create-new-project-2.png)
+![Screenshot of the Visual Studio Create a new project window with a search of "android" and the Android App (Xamarin) template highlighted.](../media/3-create-new-project-2.png)
 
 Both Visual Studio and Visual Studio for Mac offer a set of installed project templates you can use to create Android applications in a few different styles. Keep in mind that the app-creation experience differs a little between the two versions of Visual Studio.
 
-![A screenshot showing the Visual Studio 2019 "Get started" dialog box](../media/3-create-new-project-4.png)
+![Screenshot of the Visual Studio New Android App dialog box with Single View App and Minimum Android Version dropdown highlighted.](../media/3-create-new-project-4.png)
 
 Visual Studio 2019 lets you choose one of the following default templates:
 

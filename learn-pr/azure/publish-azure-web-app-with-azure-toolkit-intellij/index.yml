@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij
+metadata:
+  title: Publish a web app to Azure by using Azure Toolkit for IntelliJ
+  description: In this module, you will learn how to use Azure to host your Java web apps, built by using IntelliJ IDEA.
+  ms.date: 03/01/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Publish a web app to Azure by using Azure Toolkit for IntelliJ
+summary: Create a web app in IntelliJ and deploy the app to Azure by using Azure Toolkit for IntelliJ.
+abstract: | 
+  In this module, you will:
+  - Create a web app in IntelliJ IDEA
+  - Deploy the app to Azure by using the Azure Toolkit for IntelliJ
+  - Manage deployed web app configurations using the Azure Toolkit
+prerequisites: | 
+  - Experience writing web apps in Java
+  - Familiarity with [IntelliJ IDEA](https://www.jetbrains.com/idea/) to create projects in Java
+  - The [Azure Toolkit for IntelliJ](https://docs.microsoft.com/azure/java/intellij/azure-toolkit-for-intellij)
+iconUrl: /learn/achievements/publish-a-web-app-to-azure-by-using-azure-toolkit-for-intellij.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-virtual-machines
+units:
+- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.1-introduction
+- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.2-create-web-app-intellij
+- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.3-exercise-create-web-app-intellij
+- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.4-deploy-web-app-azure
+- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.5-exercise-deploy-web-app-azure
+- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.6-manage-deployment-intellij
+- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.7-exercise-manage-deployment-intellij
+- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.8-summary
+badge:
+  uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.badge
+
+

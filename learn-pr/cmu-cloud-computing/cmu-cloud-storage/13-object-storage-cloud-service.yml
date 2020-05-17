@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.13-object-storage-cloud-service
+title: Object storage as a cloud service
+metadata:
+  title: Object storage as a cloud service
+  description: Object storage as a cloud service
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/13-object-storage-cloud-service.md)]

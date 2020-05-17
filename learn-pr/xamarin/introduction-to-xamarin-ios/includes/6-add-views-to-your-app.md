@@ -9,7 +9,7 @@ Remember that you can create screens in two ways:
 
 Here is what the TipCalculator UI design might look like in the GUI designer.
 
-![An image showing the Xamarin ios designer user interface](../media/6-storyboard-designer.png)
+![Screenshot of Visual Studio showing the Xamarin.iOS designer user interface with a tip calculator storyboard shown.](../media/6-storyboard-designer.png)
 
 This module looks at the code-based approach. It forces you to understand how a UI is constructed.
 
@@ -27,13 +27,13 @@ A _superview_ is a parent view to which child views are added in iOS.
 
 Suppose you decide to lay out the TipCalculator app's first screen like the UI showed above. The visual tree for the hierarchy would look like this structure:
 
-![An image showing an example UI visual tree structure](../media/6-view-hierarchy-1.png)
+![Screenshot showing an example UI visual tree structure from UIWindow to UIView, to that view's labels, text fields, and subviews.](../media/6-view-hierarchy-1.png)
 
 Notice how `UIWindow` forms the root of the visual tree. `UIView` is a subview of the `UIWindow`. `UIView` is also the superview of a number of views, including two `UILabel`, a `UITextField`, a `UIButton`, and few other views not visible in the designer.
 
 This hierarchy extends further into the controls.
 
-![An image showing an expanded example UI visual tree structure](../media/6-view-hierarchy-2.png)
+![Screenshot of an example UI visual tree structure expanded further to show UIImageView and UIView subviews of a UITextField control and a UILabel subview of a UIButton control.](../media/6-view-hierarchy-2.png)
 
 The `UIButton` view has a single `UILabel` child that displays the text for the label. `UITextField` is an even more complex superview, containing `UIImageView` and another `UIView`. Each of these controls extends further with additional subviews.
 
@@ -51,7 +51,7 @@ The frame is used not only to size the view, but also to position the view. View
 
 iOS uses an absolute layout coordinate system to position views. The coordinate system is set up so that you position a subview from its top-left corner, relative to the top-left corner of the parent. The top-left corner of the parent view is considered the _origin_ (0,0). Positive coordinates run right and down, and negative coordinates run left and up.
 
-![An image showing the Xamarin ios designer user interface](../media/6-position-views.png)
+![Annotated iOS screenshot showing the elements of positioning: a zero-zero origin and the X and Y width and height.](../media/6-position-views.png)
 
 ## Position a subview in a superview
 
@@ -71,7 +71,7 @@ To add a subview that's 100 (width) x 100 (height), centered in the parent, you 
 
 Suppose you want to use a frame to specify the location of the new view. The parameters to create a frame are X, Y, width, and height. How would you define `Frame` property?
 
-![An image showing subview inside a view using a frame for positioning](../media/6-layout-using-frame.png)
+![Device illustration showing subview inside a view using a frame for positioning.](../media/6-layout-using-frame.png)
 
 The calculation can be a bit tricky. You have to calculate the frame to position the top-left corner of the subview and to set the width and height of the rectangle.
 
@@ -83,7 +83,7 @@ Again, suppose you have to add a subview that's 100 (width) x 100 (height), cent
 
 The `Center` property is the center point of the subview. The coordinate used for this property is also within the parent's coordinate system. What would you use as the center coordinate?
 
-![An image showing subview inside a view using the view center property for positioning](../media/6-layout-using-center.png)
+![Device illustration showing subview inside a view using the view center property for positioning.](../media/6-layout-using-center.png)
 
 Since you have a `480x320` area, and you've centered this `100x100` view in that area, your center point is `(240,160)`. You calculate this coordinate from the origin of the superview.
 
@@ -91,7 +91,7 @@ Since you have a `480x320` area, and you've centered this `100x100` view in that
 
 The `Bounds` property is what the subview uses to determine its own dimensions. It's also used to position any children of its own. If you change the X and Y for the `Bounds` property, children of this subview will adjust in response.
 
-![An image showing subview inside a view using the view center property for positioning](../media/6-layout-using-bounds.png)
+![Device illustration showing subview positioned inside the bounds of a superview.](../media/6-layout-using-bounds.png)
 
 The `Bounds` property would be a rectangle with the values `(0,0,100,100)`, where the origin is the top-left corner of the subview itself.
 

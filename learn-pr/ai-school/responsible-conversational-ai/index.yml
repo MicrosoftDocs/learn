@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn-wwl.responsible-conversational-ai
+metadata:
+  title: Discover Microsoft guidelines for responsible conversational AI development
+  description: Learn Microsoft guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
+  ms.date: 02/20/2020
+  author: Adriamen
+  ms.author: japerena
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Discover Microsoft guidelines for responsible conversational AI development
+summary: Learn Microsoft guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
+abstract: | 
+  In this module, you will:
+  - Identify the different types of conversational AI bots and common stakeholders
+  - Learn the benefits of making bots transparent and trustworthy
+  - Discover guidelines to ensure bots are reliable and accessible 
+prerequisites: None
+iconUrl: /learn/achievements/responsible-conversational-ai.svg
+levels: 
+- beginner
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+units: 
+- learn-wwl.responsible-conversational-ai.introduction
+- learn-wwl.responsible-conversational-ai.conversational-ai-bot-types
+- learn-wwl.responsible-conversational-ai.responsibility-imperatives
+- learn-wwl.responsible-conversational-ai.transparent-trustworthy-bots
+- learn-wwl.responsible-conversational-ai.ensure-bot-reliability
+- learn-wwl.responsible-conversational-ai.make-your-bot-accessible
+- learn-wwl.responsible-conversational-ai.knowledge-check
+- learn-wwl.responsible-conversational-ai.summary-and-resources
+badge: 
+  uid: learn-wwl.responsible-conversational-ai.badge #add the uid for your achievement badge.

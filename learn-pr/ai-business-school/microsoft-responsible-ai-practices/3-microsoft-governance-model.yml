@@ -5,8 +5,8 @@ metadata:
   title: Understanding the Microsoft governance model - AETHER + Office of Responsible AI
   description: Introduction to discuss practices for responsible AI at Microsoft
   ms.date: 10/01/2019
-  author: RWortmanMorris
-  ms.author: rawortma
+  author: Adriamen
+  ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 9 

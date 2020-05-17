@@ -2,9 +2,8 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db
 metadata:
   title: Introduction to open-source database migration to Azure Cosmos DB
-  description: "&quot;An introduction to migrating an open
--source database to Cosmos DB&quot;"
-  ms.date: 01/31/2020
+  description: "An introduction to migrating an open-source database to Azure Cosmos DB"
+  ms.date: 02/17/2020
   author: wwlpublish
   ms.author: v-gea
   ms.topic: interactive-tutorial

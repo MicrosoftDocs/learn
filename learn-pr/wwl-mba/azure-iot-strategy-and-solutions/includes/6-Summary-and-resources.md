@@ -42,3 +42,7 @@ Learn more about IoT customer Stories:
 - [ExxonMobil](https://customers.microsoft.com/story/exxonmobil-mining-oil-gas-azure)
 - [Kohler](https://customers.microsoft.com/story/kohler-konnect-azure-iot)
 - [Roche Diagnostics](https://customers.microsoft.com/story/roche-diagnostics)
+
+## Learn more with a Channel 9 video series
+
+- [IoT 101](https://channel9.msdn.com/Series/IoT-101/?&WT.mc_id=EducationalIoT-c9-niner&azure-portal=true)

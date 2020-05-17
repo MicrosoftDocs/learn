@@ -6,7 +6,15 @@
 
 The heart of the .NET CLI tools is the `dotnet` command-line tool. Using this command, you will create a new ASP.NET Core web project.
 
-In the Cloud Shell on the right, create a new ASP.NET Core MVC application. Name it "BestBikeApp".
+First, let's install the appropriate version of `dotnet` into the Cloud Shell. For this exercise, we'll be using SDK version 3.1.102. Run the following commands in the Cloud Shell panel on the right to install it.
+
+```bash
+wget -q -O - https://dot.net/v1/dotnet-install.sh | bash -s -- --version 3.1.102
+export PATH="~/.dotnet:$PATH"
+echo "export PATH=~/.dotnet:\$PATH" >> ~/.bashrc
+```
+
+Next, run the following commands to create a new ASP.NET Core MVC application named "BestBikeApp".
 
 ```bash
 dotnet new mvc --name BestBikeApp
@@ -22,11 +30,16 @@ dotnet run
 You should get something like:
 
 ```console
-Hosting environment: Development
-Content root path: /home/your-user/BestBikeApp
-Now listening on: https://localhost:5001
-Now listening on: http://localhost:5000
-Application started.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/user/BestBikeApp
 ```
 
 The output describes the situation after starting your app: the application is running and listening at port 5000.

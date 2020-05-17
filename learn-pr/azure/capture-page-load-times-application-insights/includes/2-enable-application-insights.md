@@ -29,7 +29,7 @@ By viewing an Application Insights resource in the Azure portal, you can visuali
 
 These tools are all available in the Azure portal and in Visual Studio. You can also view Application Insights data in Power BI, which you might already be using for business intelligence.
 
-![Application Insight architecture](../media/2-app-insights-architecture.png)
+![Diagram Application Insight's relationship to incoming data from client, server and background services and to various outputs.](../media/2-app-insights-architecture.png)
 
 ### Runtime instrumentation and build-time instrumentation
 
@@ -54,7 +54,7 @@ You can enable runtime instrumentation for a Windows App Service web app when yo
 
 - To enable it when you create the web app, on the web app **Create** pane, select the **Monitoring** tab and then select **Yes** next to **Enable Application Insights**. This screen will also give you the opportunity to create a new Application Insights resource.
 
-    ![Enable Application Insights you you create a web app](../media/2-enable-app-insights-at-web-app-creation.png)
+    ![Screenshot of Web app create dialog's Monitoring tab to enable Application Insights as you create a web app.](../media/2-enable-app-insights-at-web-app-creation.png)
 - If you choose to create a web app without enabling Application Insights, you can enable it later on the **Application Insights** page of the web app's pane.
 
 Both options open a wizard that will help you create a new Application Insights resource if you don't already have one in your subscription.

@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.languages.python-install-vscode
+metadata:
+  title: Set up your Python beginner development environment with Visual Studio Code
+  description: Get started with learning Python by installing and configuring the tools you'll need to build real applications.
+  ms.date: 3/2/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Set up your Python beginner development environment with Visual Studio Code
+summary: Get started with learning Python by installing and configuring the tools you'll need to build real applications.
+abstract: |
+  In this module, you will:
+  - Determine which version of Python, if any, is installed on your computer.
+  - Install Python 3.
+  - Start Python interactive mode to run Python code one line at a time.
+  - Install Visual Studio Code, Python, and the Python extension for Visual Studio Code on your computer.
+  - Create a Python script file and write Python code in Visual Studio Code.
+  - Run your Python script file code by using the Python command-line tools.
+prerequisites: None
+ratingEnabled: true
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- vs-code
+units:
+- learn.languages.python-install-vscode.introduction
+- learn.languages.python-install-vscode.python-programming-language
+- learn.languages.python-install-vscode.exercise-install-python3
+- learn.languages.python-install-vscode.exercise-interactive-mode
+- learn.languages.python-install-vscode.exercise-setup-visual-studio-code
+- learn.languages.python-install-vscode.exercise-write-execute-first-script
+- learn.languages.python-install-vscode.knowledge-check
+- learn.languages.python-install-vscode.summary
+badge:
+  uid: learn.languages.python-install-vscode.badge

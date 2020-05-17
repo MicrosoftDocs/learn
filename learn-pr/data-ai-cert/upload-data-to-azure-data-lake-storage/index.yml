@@ -4,8 +4,8 @@ metadata:
   title: Upload data to Azure Data Lake Storage
   description: Learn about creating an Azure Data Lake Storage account and uploading data to Data Lake Storage Gen 2 through the Azure Storage Explorer.
   ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  author: wwlpublish
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Upload data to Azure Data Lake Storage

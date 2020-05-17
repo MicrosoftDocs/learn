@@ -25,7 +25,7 @@ quiz:
       explanation: Log Analytics can help you run complex queries over your log data.
     - content: You use an agent to run queries on the data that has been collected.
       isCorrect: false
-      explanation: An agent is used to collect information from a resource like a virtual machine. Use Log Analytics to run queries.
+      explanation: An agent is used to collect information from a resource such as a virtual machine. Use Log Analytics to run queries.
       
   - content: What is Syslog used for?
     choices:

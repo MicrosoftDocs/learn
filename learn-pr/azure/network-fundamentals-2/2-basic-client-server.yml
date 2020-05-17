@@ -3,7 +3,7 @@ uid: learn.azure.network-fundamentals-2.basic-client-server
 title: An introduction to network client and server technology
 metadata:
   title:  An introduction to network client and server technology
-  description: An introduction to network based client technology and the various server options available.
+  description: An introduction to network-based client technology and the various server options available.
   ms.date: 01/09/2020
   author: cryophobia
   ms.author: chrvaw
@@ -27,14 +27,14 @@ quiz:
       isCorrect: false
       explanation: "A thin client makes requests of a server, and is incapable of running apps or storing data locally."
 
-  - content: "What is the purpose of an Application server?"
+  - content: "What is the purpose of an application server?"
     choices:
-    - content: "Hosts non-web apps allowing users in the network to run them through."
+    - content: "Hosts non-web apps and lets users in the network run them through."
       isCorrect: false
-      explanation: "An App server provides application access to a client. Both web-apps and custom software."
+      explanation: "An application server provides application access to a client (both web apps and custom software)."
     - content: "Hosts all your web and non-web apps in one place, so they can be accessed across the network."
       isCorrect: true
-      explanation: "An App server provides application access to a client."
-    - content: "Hosts all your web apps allowing users in the network to run and use them in their browser."
+      explanation: "An application server provides application access to a client."
+    - content: "Hosts all your web apps and lets users in the network run them and use them in their browser."
       isCorrect: false
-      explanation: "An App server provides application access to a client. Both web-apps and custom software."
+      explanation: "An application server provides application access to a client (both web apps and custom software)."

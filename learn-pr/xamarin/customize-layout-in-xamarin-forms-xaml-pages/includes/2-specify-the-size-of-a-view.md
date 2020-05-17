@@ -8,7 +8,7 @@ A *layout panel* is a Xamarin.Forms container that holds a collection of child v
 
 Xamarin.Forms has multiple layout panels that you can choose from. Each panel manages its child views differently. Your job is to choose the best panel for the user interface that you want. The following illustration shows a conceptual overview of the options.
 
-![An illustration showing StackLayout, Grid, AbsoluteLayout, and RelativeLayout.](../media/2-layouts.png)
+![Illustration showing representative StackLayout, Grid, AbsoluteLayout, and RelativeLayout designs.](../media/2-layouts.png)
 
 - `StackLayout`: arranges its children in a single row or column.
 - `Grid`: arranges its children in cells that are created by rows and columns
@@ -33,7 +33,7 @@ If you don't specify the size of a view, it will automatically grow to be exactl
 
 We're defining a label to display the word `Hello` on a `Silver` background. Because we're not specifying the size of the label, it will automatically be sized so it fits around the word `Hello`. Here's what the label would look like rendered on an iOS device:
 
-![A screenshot showing a label rendered on an iOS device that displays the word Hello and has a silver background.](../media/2-label-ios.png)
+![Screenshot showing a label rendered on an iOS device that displays the word Hello in the center with a silver background.](../media/2-label-ios.png)
 
 > [!NOTE]
 > We set the background color of the label to help us determine how large it is at runtime. This is a good debugging technique to keep in mind as you build your UI.
@@ -105,7 +105,7 @@ We'll look at `Alignment` here because it's the most common and intuitive.
 </StackLayout>
 ```
 
-![A screenshot showing four labels being rendered on iOS with different HorizontalOptions.](../media/2-layout-options.png)
+![Screenshot showing four labels being rendered on iOS with different HorizontalOptions: Start to the left, Center centered, End to the right, and Fill spanning the full screen.](../media/2-layout-options.png)
 
 We're using a vertical `StackLayout` so each child view is given a row. `HorizontalOptions` determines the view's position within its row.
 

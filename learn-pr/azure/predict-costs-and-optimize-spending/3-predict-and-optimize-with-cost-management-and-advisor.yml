@@ -20,13 +20,13 @@ quiz:
     - content: "Azure Advisor provides recommendations for _________."
       choices:
       - content: "Costs only"
-        explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
         isCorrect: false
-      - content: "High availability, security, performance, and cost"
-        explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+      - content: "High availability, security, performance, operational excellence, and cost"
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
         isCorrect: true
       - content: "High availability, performance, and cost"
-        explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
         isCorrect: false
     - content: "Azure Cost Management allows you to _________."
       choices:

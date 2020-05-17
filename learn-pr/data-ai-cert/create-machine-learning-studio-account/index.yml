@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.data-ai.create-machine-learning-studio-account
+hidden: true
 metadata:
   title: Create an Azure Machine Learning Studio Account
   description: Get an overview of Azure Machine Learning Studio as you create an experiment, publish it as a web service, and consume the web service with a Python application.

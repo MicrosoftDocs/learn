@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-onpremises-workloads-migration-azure.prepare-onpremises-environment-for-agentless-migration
+title: Prepare the on-premises environment for agentless migration
+metadata:
+  title: Prepare the on-premises environment for agentless migration
+  description: "Prepare the on-premises environment for agentless migration"
+  ms.date: 03/02/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-prepare-on-premises-environment-for-agentless-migration.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In your scenario, what does the Hyper-V host need to send replication data to Azure Migrate?"
+    choices:
+    - content: "Access to the URL **login.microsoftonline.com**"
+      isCorrect: false
+      explanation: "The Hyper-V host does need access to this URL, but **login.microsoftonline.com** is used for access control and identity management using Active Directory. The question is about sending replication data to Azure Migrate, not identity management."
+    - content: "Outbound connections enabled on HTTPS port 443"
+      isCorrect: true
+      explanation: "The Hyper-V host needs to have outbound connections enabled on HTTPS port 443 so that it can send VM replication data to Azure Migrate. Each VM will also need outbound connections on port 443."
+    - content: "Inbound connections enabled on TCP port 902"
+      isCorrect: false
+      explanation: "Inbound connections on TCP port 902 are used when replicating data from VMware VMs, not Hyper-V VMs."
+  - content: "In your scenario, what do you need to do to ensure your on-premises VMs can be replicated to Azure?"
+    choices:
+    - content: "Enable Remote Desktop (RDP) and Secure Shell (SSH), disable BitLocker"
+      isCorrect: true
+      explanation: "Correct. You need to be able to connect the Azure VMs after migration, both Linux and Windows machines. BitLocker isn't supported for Azure VMs and must be disabled before replication."
+    - content: "Enable BitLocker, Ensure Windows Firewall can block RDP"
+      isCorrect: false
+      explanation: "BitLocker isn't supported for Azure VMs so it must be disabled before replication. You must enable RDP to connect to Azure VMs after migration."
+    - content: "Disable BitLocker, Enable RDP connections only"
+      isCorrect: false
+      explanation: "While you must disable BitLocker and enable RDP, you also need to allow SSH connections for the Linux VMs in your scenario."

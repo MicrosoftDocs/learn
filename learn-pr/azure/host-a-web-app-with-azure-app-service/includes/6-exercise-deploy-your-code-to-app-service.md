@@ -2,31 +2,32 @@ In this unit, you'll deploy your web application to App Service.
 
 ::: zone pivot="csharp"
 
-## Deploy with `az webapp up`
+## Deploy with zipdeploy
 
-Let's deploy our .NET application with `az webapp up`. This command will package up our application and send it to our App Service instance, where it will be built and deployed.
+Let's deploy our .NET application with zipdeploy.
 
-First, we need to gather some information about our web app resource. Run these commands to set shell variables that contain our app's name, resource group name, plan name, sku, and location. These use different `az` commands to request the information from Azure; `az webapp up` needs these values to target our existing web app.
+First, use `dotnet publish` to build the final app files and `zip` to package them into a zip file. Make sure you are in the `BestBikeApp` directory before running these commands.
 
 ```bash
-APPNAME=$(az webapp list --query [0].name --output tsv)
-APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
-APPPLAN=$(az appservice plan list --query [0].name --output tsv)
-APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
-APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
+dotnet publish -o pub
+cd pub
+zip -r site.zip *
 ```
 
-Now, run `az webapp up` with the appropriate values. Make sure you are in the `BestBikeApp` directory before running this command.
+Finally, perform the deployment with `az webapp deployment source config-zip`. Replace `<your-unique-app-name>` in the following command with the name of your Azure web app and run it.
 
 ```bash
-az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
+az webapp deployment source config-zip \
+    --src site.zip \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-unique-app-name>
 ```
 
 The deployment will take a couple minutes, during which time you'll see status output.
 
 ## Verify the deployment
 
-Let's browse to our application to see it live. The last line of text output from `az webapp up`, before the JSON output, has a link to your app. Click it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
+Let's browse to our application to see it live. Navigate back to the open browser tab containing the placeholder page and refresh it. If the placeholder page appears again, your App Service instance hasn't fully restarted yet, so wait a moment and try again. When you refresh after your app has restarted, you'll see the splash page for a new ASP.NET Core web app.
 
 You have successfully hosted your new ASP.NET Core application on App Service!
 

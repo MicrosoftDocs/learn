@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-devops-continuous-security-operations.explore-continuous-security
+title: Explore Continuous Security
+metadata:
+  title: Explore Continuous Security
+  description: "Explore Continuous Security"
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-continuous-security.md)]

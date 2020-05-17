@@ -24,6 +24,7 @@ roles:
 - developer
 - solution-architect
 - security-engineer
+- administrator
 products:
 - azure
 - azure-virtual-machines

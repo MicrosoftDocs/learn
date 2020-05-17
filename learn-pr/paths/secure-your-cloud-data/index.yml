@@ -24,7 +24,7 @@ products:
 - azure-key-vault
 - azure-storage
 - azure-cosmos-db
-- azure-sql-data-warehouse
+- azure-synapse-analytics
 - azure-sql-database
 modules:
 - learn.introduction-to-security

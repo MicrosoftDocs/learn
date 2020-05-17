@@ -1,0 +1,165 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design.1-information-technology-components
+title: IT equipment
+metadata:
+  title: IT equipment
+  description: IT equipment
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 34
+content: |
+  [!include[](includes/1-information-technology-components.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I get this block 1 question 1
+  - content: "Company X is building a datacenter with ten 4U servers, two 5U storage arrays, and two 1U network switches in a standard-height rack. How many racks will the company need to mount all this hardware?"
+    choices:
+    - content: "Two racks"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "One rack"
+      isCorrect: false
+      explanation: "Incorrect. The company needs two racks because it has a total of 40 + 10 + 2 = 52U of equipment. A standard-height rack is 42U. You have been given the size of a server in U and the total capacity of the rack in U. How do you compute the total number of servers?"
+    - content: "Three racks"
+      isCorrect: false
+      explanation: "Incorrect. The company needs two racks because it has a total of 40 + 10 + 2 = 52U of equipment. A standard-height rack is 42U. You have been given the size of a server in U and the total capacity of the rack in U. How do you compute the total number of servers?"
+    - content: "One-half rack"
+      isCorrect: false
+      explanation: "Incorrect. The company needs two racks because it has a total of 40 + 10 + 2 = 52U of equipment. A standard-height rack is 42U. You have been given the size of a server in U and the total capacity of the rack in U. How do you compute the total number of servers?"
+
+# Did I get this block 1 question 2 part A
+# Original course has one scenario with a two-part question. Added these as separate questions.
+# Original course uses text fields for user to enter numerical answers.
+# Added sample incorrect answers for next two questions.
+  - content: "Company X is also considering blade servers with the following specifications: <br>
+      <ul><li>Blade enclosure (chassis): 7U</li>
+      <li>Number of blade servers: 20 servers per 7U chassis</li></ul>
+      The company is planning to fully populate the rack with servers. Assume that network and power distribution is off rack. How many blade enclosures can fit in a 42U rack?"
+    choices:
+    - content: "Two blade enclosures"
+      isCorrect: false
+      explanation: "Incorrect. Blade servers go into blade enclosures, which go into a rack. The right answer is 42 / 7 = 6."
+    - content: "Three blade enclosures"
+      isCorrect: false
+      explanation: "Incorrect. Blade servers go into blade enclosures, which go into a rack. The right answer is 42 / 7 = 6."
+    - content: "Six blade enclosures"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Seven blade enclosures"
+      isCorrect: false
+      explanation: "Incorrect. Blade servers go into blade enclosures, which go into a rack. The right answer is 42 / 7 = 6."  
+
+# Did I get this block 1 question 2 part B          
+  - content: "If we assume the blade enclosures used by company X are fully populated, how many servers can you fit in a 42U rack?"
+    choices:
+    - content: "140 servers"
+      isCorrect: false
+      explanation: "Incorrect. Blade servers go into blade enclosures, which go into a rack. The right answer is 6 × 20 = 120."    
+    - content: "120 servers"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "100 servers"
+      isCorrect: false
+      explanation: "Incorrect. Blade servers go into blade enclosures, which go into a rack. The right answer is 6 × 20 = 120."
+    - content: "42 servers"
+      isCorrect: false
+      explanation: "Incorrect. Blade servers go into blade enclosures, which go into a rack. The right answer is 6 × 20 = 120."
+
+# Did I get this block 2 question 1
+  - content: "What's the difference between SATA and SAS drives?"
+    choices:
+    - content: "SATA allows drives to be daisy chained through SATA expanders."
+      isCorrect: false
+      explanation: "Incorrect. SAS allows a single drive to be connected to two drive controllers for failover redundancy. You might have heard of SATA already, as they're present in most desktops and laptops. SAS disks are mainly used in servers, so what additional features will they have to support?"
+    - content: "SAS allows a single drive to be connected to two drive controllers for failover redundancy."
+      isCorrect: true
+      explanation: "Correct!"    
+    - content: "SAS doesn't support daisy chaining."
+      isCorrect: false
+      explanation: "Incorrect. SATA supports daisy chaining via an SAS expander. You might have heard of SATA already, as they're present in most desktops and laptops. SAS disks are mainly used in servers, so what additional features will they have to support?"
+
+# Did I get this block 2 question 2      
+  - content: "Which of the following is **not** a feature of SSD drives?"
+    choices:
+    - content: "Higher performance than spinning drives"
+      isCorrect: false
+      explanation: "Incorrect. The technology behind SSDs that allows non-volatile writes to flash chips comes with a price."
+    - content: "No moving parts"
+      isCorrect: false
+      explanation: "Incorrect.  The technology behind SSDs that allows non-volatile writes to flash chips comes with a price."
+    - content: "Unlimited number of write operations"
+      isCorrect: true
+      explanation: "Correct!"  
+    - content: "Lower seek times"
+      isCorrect: false
+      explanation: "Incorrect.  The technology behind SSDs that allows non-volatile writes to flash chips comes with a price."
+
+# Did I get this block 2 question 3
+  - content: "What is the main difference between SAN and NAS?"
+    choices:
+    - content: "NAS provides block-level storage, while SAN provides a file system."
+      isCorrect: false
+      explanation: "Incorrect. Consider how SANs and NASes are used. At what level do you interact with each?"
+    - content: "SAN supports NFS, but NAS supports only CIFS."
+      isCorrect: false
+      explanation: "Incorrect. Consider how SANs and NASes are used. At what level do you interact with each?"
+    - content: "SAN provides block-level storage, while NAS provides a file system."
+      isCorrect: true
+      explanation: "Correct!"  
+    - content: "None of the above."
+      isCorrect: false
+      explanation: "Incorrect. Consider how SANs and NASes are used. At what level do you interact with each?"
+
+# Did I get this block 3 question 1
+# Original course uses text field for user to enter numerical answers.
+# Added sample incorrect answers for next question.
+  - content: "How much aggregate bandwidth does a 2U server with four 10-G fiber ports have?"
+    choices:
+    - content: "80 Gbit/s"
+      isCorrect: false
+      explanation: "Incorrect. The physical dimensions of the server aren't relevant here. The right answer can be calculated as 4 × 10 = 40 Gbit/s."    
+    - content: "40 Gbit/s"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "20 Gbit/s"
+      isCorrect: false
+      explanation: "Incorrect. The physical dimensions of the server aren't relevant here. The right answer can be calculated as 4 × 10 = 40 Gbit/s."
+    - content: "5 Gbit/s"
+      isCorrect: false
+      explanation: "Incorrect. The physical dimensions of the server aren't relevant here. The right answer can be calculated as 4 × 10 = 40 Gbit/s."
+
+# Did I get this block 3 question 2
+# Original course uses text field for user to enter numerical answers.
+# Added sample incorrect answers for next question.      
+  - content: "Assume you have a top-of-rack, 48-port network switch, and each switch has two 10-G uplinks. If you want to guarantee a minimum of 500 Mbps upstream to each server (each has a 1-G Ethernet connection), what is the maximum number of ports that can be used per switch?"
+    choices:
+    - content: "10 ports"
+      isCorrect: false
+      explanation: "Incorrect. The aggregate upstream bandwidth of the switch is the sum of its uplink ports. The right answer can be calculated as 20 Gbit / 500 Mbps = 40 ports."
+    - content: "40 ports"
+      isCorrect: true
+      explanation: "Correct!"      
+    - content: "48 ports"
+      isCorrect: false
+      explanation: "Incorrect. The aggregate upstream bandwidth of the switch is the sum of its uplink ports. The right answer can be calculated as 20 Gbit / 500 Mbps = 40 ports."
+
+# Did I get this block 3 question 3
+  - content: "Which of the following is **not** a characteristic of InfiniBand networking?"
+    choices:
+    - content: "End-to-end latencies of less than 2 microseconds"
+      isCorrect: false
+      explanation: "Incorrect. InfiniBand networks have low end-to-end latencies. Consider the typical applications of InfiniBand networks. What makes them different from other networking systems?"
+    - content: "Fully nonblocking switches"
+      isCorrect: false
+      explanation: "Incorrect. InfiniBand switches are fully nonblocking. Consider the typical applications of InfiniBand networks. What makes them different from other networking systems?"
+    - content: "Speeds ranging from 8 Gbit/s to 100 Gbit/s"
+      isCorrect: false
+      explanation: "Incorrect. InfiniBand switches range from 8 Gbit/s to 100 Gbit/s. Consider the typical applications of InfiniBand networks. What makes them different from other networking systems?"
+    - content: "Higher end-to-end latency than Ethernet"
+      isCorrect: true
+      explanation: "Correct! InfiniBand networks have low end-to-end latencies."

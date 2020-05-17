@@ -5,11 +5,10 @@ metadata:
   title: Exercise - create a blob container for the source data
   description: Exercise - create a blob container for the source data
   ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  author: wwlpublish
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-create-blob-storage.md)]

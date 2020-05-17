@@ -9,8 +9,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-  zone_pivot_groups: platform-cloud
+  zone_pivot_groups: platform-cloud,subscription-type
 interactive: bash
 azureSandbox: true
 durationInMinutes: 15

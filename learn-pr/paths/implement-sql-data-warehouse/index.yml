@@ -29,7 +29,7 @@ products:
 - azure
 - azure-portal
 - azure-storage
-- azure-sql-data-warehouse
+- azure-synapse-analytics
 modules:
 - learn.data-ai.design-azure-sql-data-warehouse
 - learn.data-ai.query-azure-sql-data-warehouse

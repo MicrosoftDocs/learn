@@ -43,11 +43,11 @@ In this module, you'll build the app displayed in the above image.
 
 1. Your **Application name** can be any friendly name, such as "Refrigerated Trucks". However, the **URL** _must_ be unique, which is why you'll add a unique ID to the end of the URL for the app. For example, `refrigerated-trucks-<your id>`, replacing `<your id>` with some unique ID.
 
-1. Leave the **Application template** as **Preview application**.
+1. Leave the **Application template** as **Custom application**.
 
-1. Select the free **7 day free trial** option. Seven days is plenty of time to complete the scenario.
+1. Select **Free**, for the **Pricing plan** option. Seven days is plenty of time to complete the scenario.
 
-    [![Screenshot showing how to create a new IoT Central app, using the IoT Central portal](../media/refrigerated-trucks-my-apps.png)](../media/refrigerated-trucks-my-apps.png#lightbox)
+    [![Screenshot showing how to create a new IoT Central app, using the IoT Central portal](../media/refrigerated-trucks-new-app.png)](../media/refrigerated-trucks-new-app.png#lightbox)
 
     > [!NOTE]
     > Click on any image in this module, to display a full-sized image.

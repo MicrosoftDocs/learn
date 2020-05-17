@@ -34,7 +34,7 @@ We know now that to display stuff in an app, we'll want to use a content page. S
 
 Views in Xamarin.Forms are just like the controls we've used in other UI frameworks. The Xamarin.Forms docs (see the link at the end of this module) describe all the built-in controls, but a few of the most common can be seen here:
 
-![Image of mobile device with several UI controls](../media/4-SubviewsShowcase.png)
+![Screenshot of mobile device with several iOS UI controls: Label, Entry, Button, DatePicker, ActivityIndicator, ProgressBar, Slider, Switch, and Stepper.](../media/4-SubviewsShowcase.png)
 
 The views in Xamarin.Forms use the event handling and property setting patterns we'd see in other .NET-based UI frameworks.
 
@@ -50,7 +50,7 @@ void OnClick (object sender, EventArgs e) { /*do something*/ }
 
 Let's take a closer look at what this code produces, though. On iOS, we get a default-looking iOS button. On Android, we get an Android button.
 
-![An illustration showing how a Xamarin.Forms button is rendered as a native control at runtime.](../media/4-ButtonRenderTargets.png)
+![Illustration showing how a Xamarin.Forms button is rendered as a native control at runtime, either an Android Android.Widget.Button or an iOS UIKit.UIButton.](../media/4-ButtonRenderTargets.png)
 
 It works this way because Xamarin.Forms doesn't draw any controls directly. Instead, there is a platform renderer for each control on each platform. So when we run on Android, the Android button renderer is invoked, and it creates a native button.
 
@@ -64,7 +64,7 @@ With pages and views defined, it might seem like we have everything we need to s
 
 But in Xamarin.Forms, we use a more flexible system called layouts. When you choose a layout, you are choosing the rules by which your controls will be laid out.
 
-![Graphic showing visual representations of the Xamarin.Forms layout types: StackLayout, AbsoluteLayout, RelativeLayout, Grid, and ScrollView](../media/4-LayoutTypes.png)
+![Illustration showing visual representations of the Xamarin.Forms layout types: StackLayout, AbsoluteLayout, RelativeLayout, Grid, and ScrollView.](../media/4-LayoutTypes.png)
 
 These illustrations show some of the built-in layout types. We'll get to know them all a lot better in future modules, but let's do a quick overview:
 
@@ -93,7 +93,7 @@ layout.Children.Add(new Button{ Text= "Ok"});
 ```
 
 The `Orientation` property we set will control the flow of the stack.
-![An illustration showing the difference between a vertical and horizontal StackLayout.](../media/4-StackLayoutFlow.png)
+![Illustration showing the difference between a vertical, stacking child views top-to-bottom, and horizontal StackLayout, stacking child views left-to-right.](../media/4-StackLayoutFlow.png)
 
 By default, when we use `.Vertical` orientation, each control fills the full width of the parent.
 

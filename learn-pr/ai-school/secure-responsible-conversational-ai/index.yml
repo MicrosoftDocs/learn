@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn-wwl.secure-responsible-conversational-ai
+metadata:
+  title: Discover Microsoft safety guidelines for responsible conversational AI development
+  description: Learn Microsoft development guidelines for fair and secure responsible conversational AI.
+  ms.date: 02/20/2020
+  author: Adriamen
+  ms.author: japerena
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Discover Microsoft safety guidelines for responsible conversational AI development
+summary: Learn Microsoft development guidelines for fair and secure responsible conversational AI.
+abstract: | 
+  In this module, you will:
+  - Identify potential biases that your bot may contain
+  - Ensure your bot respects users privacy
+  - Analyze situations where human supervision may be necessary 
+prerequisites: None
+iconUrl: /learn/achievements/secure-responsible-conversational-ai.svg
+levels: 
+- beginner
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+units: 
+- learn-wwl.secure-responsible-conversational-ai.introduction
+- learn-wwl.secure-responsible-conversational-ai.consequential-use-cases
+- learn-wwl.secure-responsible-conversational-ai.respectful-protecting-bots
+- learn-wwl.secure-responsible-conversational-ai.fair-diverse-bots
+- learn-wwl.secure-responsible-conversational-ai.ensure-bots-respect-users-privacy
+- learn-wwl.secure-responsible-conversational-ai.bot-security
+- learn-wwl.secure-responsible-conversational-ai.bot-responsibility
+- learn-wwl.secure-responsible-conversational-ai.knowledge-check
+- learn-wwl.secure-responsible-conversational-ai.summary-and-resources
+badge: 
+  uid: learn-wwl.secure-responsible-conversational-ai.badge #add the uid for your achievement badge.

@@ -1,14 +1,14 @@
-There are different configurations of the HDInsight service that can be used for different analytical scenarios. In fact, HDInsight contains so many OSS analytics technologies, it could be considered a one stop shop for meeting your advanced analytical needs. All the various cluster types that are available can meet the needs of the business scenarios outlined below. And give you complete control over how you manage each of those scenarios within HDInsight.  
+There are different configurations of the HDInsight service that can be used for different analytical scenarios. In fact, HDInsight contains so many OSS analytics technologies, it could be considered a one stop shop for meeting your advanced analytical needs. All the various cluster types that are available can meet the needs of the business scenarios outlined below. With each cluster type, you have complete control over how you manage each of those scenarios within HDInsight.  
 
 Many businesses have similar requirements when it comes to the scenarios for processing and analyzing data to derive business value. These requirements can include:  
 
 ## Batch processing  
 
-HDInsight can be used to extract, transform, and load (ETL) or extract, load, and transform (ELT) operations on both structured and unstructured data using either both Hadoop or Spark and the data processing frameworks including such as Hive and Sqoop.   
+HDInsight can be used to extract, transform, and load (ETL) or extract, load, and transform (ELT) operations on both structured and unstructured data using either both Hadoop or Spark and the data processing frameworks including Hive and Sqoop.   
  
 ## Data warehousing  
 
-Traditionally done by on-premises relational database such as SQL Server, and more recently with Azure SQL Data Warehouse over structured data at petabyte scale. HDInsight enables interactive queries at petabyte scale over structured or unstructured data in many formats. This capability can work well if you manage your data operations and reporting requirements using HDInsight Hadoop with Hive.  
+Traditionally done by on-premises relational databases such as SQL Server, and more recently with Azure SQL Data Warehouse over structured data at petabyte scale. HDInsight enables interactive queries at petabyte scale over structured or unstructured data in many formats. This capability can work well if you manage your data operations and reporting requirements using HDInsight Hadoop with Hive.  
 
 ## Streaming data  
 

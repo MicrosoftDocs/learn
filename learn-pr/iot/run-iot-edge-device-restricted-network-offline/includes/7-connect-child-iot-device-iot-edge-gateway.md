@@ -4,7 +4,7 @@ The process to authenticate regular IoT devices to IoT Hub with symmetric keys a
 
 In a previous unit, you created the IoT Device Identities in Azure IoT Hub. You copied the **Connection String** for the IoT Device. The Connection String can also be accessed with the Azure portal for the Device ID of the device within Azure IoT Hub.
 
-## Connecting the Child IoT Device to IoT Edge Gateway
+## Connecting the child IoT device to IoT edge gateway
 
 1. Copy the azure-iot-test-only.root.ca.cert.pem x.509 certificate file downloaded previously (when the IoT Edge Gateway was configured) to the /LabFiles/ChildIoTDevice directory where the source code for the Child IoT Device is located.
 

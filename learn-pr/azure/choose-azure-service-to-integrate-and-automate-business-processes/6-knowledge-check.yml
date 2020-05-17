@@ -17,21 +17,21 @@ quiz:
   questions:
   - content: "In the television advert company, which technology would you use for the advert review process?"
     choices:
-    - content: "Microsoft Flow"
+    - content: "Microsoft Power Automate"
       isCorrect: true
-      explanation: "Implement the workflow using Microsoft Flow because this allows the creative team, who are not developers, to manage the flow."
+      explanation: "Implement the workflow using Microsoft Power Automate because this allows the creative team, who are not developers, to manage the flow."
     - content: "Azure Logic Apps"
       isCorrect: false
-      explanation: "Azure Logic Apps don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Flow."
+      explanation: "Azure Logic Apps don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Power Automate."
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "Azure Functions don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Flow."
+      explanation: "Azure Functions don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Power Automate."
     - content: "Azure App Service WebJobs" 
       isCorrect: false
-      explanation: "Azure WebJobs don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Flow."
+      explanation: "Azure WebJobs don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Power Automate."
   - content: "In the television advert company, which technology would you use for the feedback collection process?"
     choices: 
-    - content: "Microsoft Flow"
+    - content: "Microsoft Power Automate"
       isCorrect: false
       explanation: "WebJobs are the only technology that permits developers to control retry policies."
     - content: "Azure Logic Apps"
@@ -45,7 +45,7 @@ quiz:
       explanation: "WebJobs are the only technology that permits developers to control retry policies."
   - content: "In the merged camera company, which technology would you use for the lens quality control procedure?"
     choices: 
-    - content: "Microsoft Flow"
+    - content: "Microsoft Power Automate"
       isCorrect: false
       explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
     - content: "Azure Logic Apps"
@@ -59,7 +59,7 @@ quiz:
       explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
   - content: "In the merged camera company, which technology would you use for the ordering and dispatch procedure?"
     choices: 
-    - content: "Microsoft Flow"
+    - content: "Microsoft Power Automate"
       isCorrect: false
       explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
     - content: "Azure Logic Apps"

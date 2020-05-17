@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.4-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review what you've learned about system focused threat modeling exercises, and the high-level differences between system, asset, and attacker focused approaches
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-summary.md)]

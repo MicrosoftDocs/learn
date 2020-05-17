@@ -13,14 +13,14 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of the following is true about an Azure subscription?
+  - content: Which of the following statements is true about an Azure subscription?
     choices:
     - content: Using Azure does not require a subscription
       isCorrect: false
       explanation: "Incorrect: Using Azure requires an Azure subscription. When you sign up, an Azure subscription is created by default."
     - content: An Azure subscription is a logical unit of Azure services
       isCorrect: true
-      explanation: "Correct:An Azure subscription is a container used to provision resources in Azure. To create and use Azure services, you need an Azure subscription."
+      explanation: "Correct: An Azure subscription is a container used to provision resources in Azure. To create and use Azure services, you need an Azure subscription."
     - content: You can't have more than one subscription
       isCorrect: false
       explanation: "Incorrect: When you sign up, an Azure subscription is created by default. You might want to create additional subscriptions for resource or billing management purposes."
@@ -50,7 +50,7 @@ quiz:
     choices:
     - content: "Azure Developer"
       isCorrect: false
-      explanation: "Incorrect: Azure Developer support plan offers 1 business day response time and is best for non-critical workloads."
+      explanation: "Incorrect: Azure Developer support plan offers one business day response time and is best for non-critical workloads."
     - content: "Azure Professional Direct"
       isCorrect: true
       explanation: "Correct: Azure Professional Direct support plan is best for business-critical workloads. This support plan offers 1-hour response time and priority tracking of critical cases."

@@ -39,7 +39,7 @@ public class EmployeeRepository
 
 The *view* code controls things that directly interact with the user. Usually that means changing pixels on the screen and receiving clicks and taps. View items include controls like buttons and entry fields, as well as any other purely visual elements like themes, styles, and fonts.
 
-![A screenshot of examples of views including controls, themes, and fonts](../media/ViewExamples.png)
+![Examples of views including controls (a button), colors/themes (a grid of colored squares), and fonts (a script typeface saying "Hello World!").](../media/ViewExamples.png)
 
 In many Xamarin.Forms apps, you don't need to write any C# code for views yourself. Instead, your views are often defined by your *.xaml* files. Of course, there are situations that call for a custom user control. In those cases, you can create your own view code. Check out the Xamarin.Forms renderer module to create custom Xamarin.Forms controls.
 
@@ -47,7 +47,7 @@ In many Xamarin.Forms apps, you don't need to write any C# code for views yourse
 
 That brings us back to the *viewmodel*. The viewmodel is the intermediary between our business logic and our views.
 
-![A diagram showing a viewmodel as an intermediary](../media/MVVMOverview.png)
+![Diagram showing a ViewModel as an intermediary between a Model and View.](../media/MVVMOverview.png)
 
 Before we go deeper, let's think about what a viewmodel might do for us. Consider in our HR application a modal page that displays an employee's available vacation time. We want our screen to show vacation balance as a string in the format: "2 weeks, 3 days, 4 hours." But our business logic calculates that same value as 13.5 days. Our structure might look like this:
 

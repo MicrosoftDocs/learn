@@ -27,10 +27,13 @@ products:
 - azure-resource-manager
 - azure-blueprints
 - azure-policy
+- azure-rbac
 modules:
 - learn.introduction-to-security
 - learn.intro-to-governance
 - learn.control-and-organize-with-resource-manager
 - learn.secure-azure-resources-with-rbac
+- learn.azure.manage-subscription-access-azure-rbac
+- learn.azure.create-custom-roles-rbac
 trophy:
   uid: learn.security.implement-resource-mgmt-security.trophy

@@ -26,7 +26,7 @@ Policy-based VPN gateways specify statically the IP address of packets that shou
 
 ### Route-based VPNs
 
-If defining which IP addresses are behind each tunnel is too cumbersome, route-based gateways can be used. In this devices IPSec tunnels are modeled as a network interface or VTI (virtual tunnel interface), and IP routing (static routes or dynamic routing protocols) will decide across which one of these tunnel interfaces to send each packet. Route-based VPNs are the preferred connection method for on-premises devices, since they are more resilient to topology changes such as the creation of new subnets, for example. Use a route-based VPN gateway if you need any of the following types of connectivity:
+If defining which IP addresses are behind each tunnel is too cumbersome, route-based gateways can be used. With route-based gateways, IPSec tunnels are modeled as a network interface or VTI (virtual tunnel interface). IP routing (static routes or dynamic routing protocols) decide across which one of these tunnel interfaces to send each packet. Route-based VPNs are the preferred connection method for on-premises devices, since they are more resilient to topology changes such as the creation of new subnets, for example. Use a route-based VPN gateway if you need any of the following types of connectivity:
 
 - Connections between virtual networks
 - Point-to-site connections

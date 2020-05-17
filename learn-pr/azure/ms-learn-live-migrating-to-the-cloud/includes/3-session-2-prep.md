@@ -50,7 +50,7 @@ You're now ready to join session two! :-)
 
 - Microsoft Learn Module: [Provision an Azure SQL Database](https://docs.microsoft.com/learn/modules/provision-azure-sql-db/)
 - Data Migration Assistant app: [aka.ms/datamigrationassistant](https://aka.ms/datamigrationassistant)
-- Azure Data Studio app: [Azure Data Studio](https://docs.microsoft.com/de-de/sql/azure-data-studio/what-is?view=sql-server-2017)
+- Azure Data Studio app: [Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/what-is?view=sql-server-2017)
 - SQL Database features overview: [aka.ms/sql-database-features](https://aka.ms/sql-database-features)
 - Azure Database Migration Service: [azure.microsoft.com/services/database-migration/](https://azure.microsoft.com/services/database-migration/)
 - Run SQL Server Enterprise on a VM: [azure.microsoft.com/pricing/details/virtual-machines/sql-server-enterprise/](https://azure.microsoft.com/pricing/details/virtual-machines/sql-server-enterprise/)

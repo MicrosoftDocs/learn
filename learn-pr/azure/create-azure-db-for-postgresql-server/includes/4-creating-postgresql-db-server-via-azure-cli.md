@@ -21,9 +21,9 @@ Azure Cloud Shell is a browser-based shell experience that's hosted in the cloud
 
 ## Create an Azure Database for PostgreSQL server using the Azure CLI
 
-You'll use the Azure Cloud Shell terminal on the right to create an Azure Database for PostgreSQL server using Azure CLI.
+You'll use the Azure Cloud Shell terminal to create an Azure Database for PostgreSQL server using Azure CLI.
 
-The Azure CLI server creation command usage help showing all available parameters looks like the following example:
+The Azure CLI server creation command provides usage help that shows all available parameters. Here is an example of the command:
 
 ```azurecli
 az postgres server create [-h] [--verbose] [--debug]
@@ -43,7 +43,7 @@ az postgres server create [-h] [--verbose] [--debug]
 
 ```
 
-The optional parameters are surrounded in brackets. Let's examine a few of the common ones.
+The optional parameters are surrounded in brackets. Let's examine a few of the common parameters.
 
 ### Parameters
 

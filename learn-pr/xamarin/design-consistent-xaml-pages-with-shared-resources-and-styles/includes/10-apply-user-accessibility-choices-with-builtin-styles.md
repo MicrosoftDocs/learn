@@ -1,6 +1,6 @@
 Operating systems let users choose some device-wide preferences. The most common setting is text size. The following screenshots show how the user would adjust their preferences on iOS and Android.
 
-![An image that shows an example of iOS and Android accessibility settings](../media/10-ios-android-pref.png)
+![Screenshot showing the iOS and Android system accessibility settings.](../media/10-ios-android-pref.png)
 
 Your applications should respect the user's device-wide preferences for appearance and accessibility. Ideally you'll update the application's UI immediately when the user's settings change. In this unit, we'll discuss how to use built-in styles to incorporate the user's device settings into your app's UI.
 
@@ -12,7 +12,7 @@ Built-in styles target the `Label` class. The main goal is to let your applicati
 
 The styles are designed around specific use cases. For example, there's a built-in style intended for use with your titles, another one for body text, and so on. The following screenshot shows several labels with various built-in styles applied. The screenshot uses the name of the built-in style as the label text.
 
-![An image that shows a complete example of built-in styles](../media/10-style-example.png)
+![Screenshot of an iOS app using the built-in styles: Body, Caption, ListItemDetail, ListItemText, Subtitle, and Title.](../media/10-style-example.png)
 
 ## How to apply a built-in style
 

@@ -1,0 +1,35 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.4-load-balance
+title: Load balancing
+metadata:
+  title: Load balancing
+  description: Load balancing
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-load-balance.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Consider the following scenario. You're using AWS ELB with a round-robin scheduler as a front end to two web servers. One server is a medium-class instance with two cores and 8 GB of RAM. The other server is a large instance with four cores and 16 GB of RAM. Which of the following scenarios is likely?"
+    choices:
+    - content: "Both instances will receive an equal amount of load. The large instance will have half the utilization (in terms of percentage of CPU and memory) of the medium instance."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "The large instance will receive twice the load of the medium instance. The large instance will have twice the utilization (in terms of percentage of CPU and memory) of the medium instance."
+      isCorrect: false
+      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it. Consider the mechanism that ELB uses to distribute load across multiple machines."
+    - content: "The large instance will receive twice the load of the medium instance. The large instance will have half the utilization (in terms of percentage of CPU and memory) of the medium instance."
+      isCorrect: false
+      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it. Consider the mechanism that ELB uses to distribute load across multiple machines."
+    - content: "Both instances will be equally utilized (in terms of percentage of CPU and memory). The medium instance will receive twice the load of the large instance."
+      isCorrect: false
+      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it. Consider the mechanism that ELB uses to distribute load across multiple machines."
+    - content: "Both instances will be equally utilized (in terms of percentage of CPU and memory). The large instance will receive twice the load of the medium instance."
+      isCorrect: false
+      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it. Consider the mechanism that ELB uses to distribute load across multiple machines."
+

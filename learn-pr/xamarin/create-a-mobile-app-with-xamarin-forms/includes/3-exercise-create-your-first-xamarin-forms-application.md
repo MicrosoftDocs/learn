@@ -6,20 +6,20 @@ Open Visual Studio and create a new solution. This opens the **New Project** wiz
 
 1. In the **New Project** wizard, search for "mobile" and select the **Mobile App (Xamarin.Forms)** template.
 
-    ![Screenshot of Visual Studio Create a new project window](../media/3-create-a-new-project-mobile-search-mobile-app-selected.png)
+    ![Screenshot of Visual Studio Create a new project window, searching for "mobile", with Mobile App (Xamarin.Forms) selected.](../media/3-create-a-new-project-mobile-search-mobile-app-selected.png)
 
 1. Name the project **Phoneword**, and select **Create** to continue.
 
 1. Select the **Blank App** to create an app with minimal XAML-based UI.
 1. Select **OK** to create your solution.
 
-    ![Screenshot of Visual Studio New Cross Platform App window](../media/3-new-cross-platform-app-firstapp.png)
+    ![Screenshot of Visual Studio New Cross Platform App window with the Blank template selected.](../media/3-new-cross-platform-app-firstapp.png)
 
 ## Examine the solution structure
 
 Explore the Xamarin.Forms solution to learn each item's purpose within a Xamarin.Forms app.
 
-![Screenshot of Visual Studio Solution Explorer, with several items highlighted](../media/3-new-solution-structure.png)
+![Screenshot of Visual Studio Solution Explorer, with several items labeled as described next.](../media/3-new-solution-structure.png)
 
 1. **Solution Node** - The source code is organized within a single solution. There are multiple, related projects, including a shared project and a project for each supported platform.
 
@@ -47,6 +47,6 @@ This builds, deploys, and runs the application on the selected device or emulato
 
 It should display a welcome message or your custom text as shown here:
 
-![Screenshot of the FirstApp project running on the iOS Simulator](../media/3-first-app-screenshot-first-run-ios.png)
+![Screenshot of the FirstApp project running on the iOS Simulator.](../media/3-first-app-screenshot-first-run-ios.png)
 
 If you have trouble setting a project as active, or you get deployment errors, check the build type and the solution configuration to see which projects are being built.

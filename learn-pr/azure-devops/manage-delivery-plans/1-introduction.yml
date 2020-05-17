@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-delivery-plans.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn about coordinating schedules across multiple Agile teams.
+  ms.date: 03/18/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

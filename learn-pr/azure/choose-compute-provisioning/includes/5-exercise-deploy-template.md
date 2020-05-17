@@ -131,7 +131,7 @@ Now that you have a completed template and zipped configuration file, you can us
 
 1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the `error` property, which can be found by scrolling back through the output text. It should be `null`.
 
-    ![Screenshot of Cloud Shell showing a successful template validation](../media/5-error-null.png)
+    ![Screenshot of Cloud Shell showing a successful template validation with a callout highlighting the error property set to null.](../media/5-error-null.png)
 
 1. If there are no errors, your template was validated and can be deployed.
 
@@ -174,6 +174,6 @@ Now that we know the template is valid, we can perform the deployment.
 
 1. Select the URL, or copy and paste it into a new browser window. You should see the default IIS page.
 
-    ![Screenshot of the default IIS page on the virtual machine that was deployed](../media/5-iis-server-runs.png)
+    ![Screenshot of the default IIS page on the virtual machine that was deployed.](../media/5-iis-server-runs.png)
 
 You provisioned a web server by using Resource Manager templates and enforced a desired state configuration on your machine through a DSC extension handler.

@@ -6,7 +6,7 @@ Live log streaming is an easy and efficient way to view live logs for troublesho
 ### What logs can be streamed
 The log streaming service adds a redirect from the file system logs, so you'll see the same information as is saved to those log files. So, if you enable verbose logging for ASP.NET Windows apps, for example, the live log stream will show all your logged messages.
 
-![Example live log stream](../media/4-live-log-stream.png)
+![Screenshot of a live log stream with sample data from an ASP.NET website including the process id, error severity and full error message.](../media/4-live-log-stream.png)
 
 ### Typical scenarios for using live logging
 Live logging is a good tool for initial debugging; log messages show in real time to give you quick feedback on code or server issues. You can then make a change, redeploy your app, and instantly see the results. 
@@ -34,7 +34,7 @@ To use Curl, you need **_deployment credentials_**. There are two types of deplo
 
 You can view and copy these details from the **Deployment Credentials** page in the Azure portal.
 
-![App deployment credentials](../media/4-deployment-credentials.png)
+![Screenshot of the deployment center detail pane with the App deployment credentials dialog displayed.](../media/4-deployment-credentials.png)
 
 
 Use the following command to create a new set of user-level credentials.

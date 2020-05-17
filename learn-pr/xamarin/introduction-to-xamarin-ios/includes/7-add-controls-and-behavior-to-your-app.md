@@ -168,7 +168,9 @@ There are six notifications that the view sends to the view controller. These no
 
 The following diagram shows the sequence of these methods in relation to `ViewDidLoad`.
 
-![A diagram showing View s presentation life cycle](../media/7-view-lifecycle.png)
+:::image type="complex" source="../media/7-view-lifecycle.png" alt-text="Diagram showing View's presentation life cycle.":::
+    Flow diagram starting with LoadView. An arrow proceeds to ViewDidLoad and then to ViewWillAppear. ViewWillAppear is part of a cycle going to ViewDidAppear, ViewWillDisappear, ViewDidDisappear, and back to ViewWillAppear.
+:::image-end:::
 
 ### Subscribe to a button event
 

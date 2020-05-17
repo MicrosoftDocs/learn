@@ -18,7 +18,8 @@ You will use the Visual Studio Installer to modify the components installed as p
     ![Modify Visual Studio](../media/2-visual-studio-installer-modify.PNG)
 
 1. Ensure the **ASP.NET and web development** and **Azure development** workloads are selected under the **Web & Cloud** section of the **Workloads** tab.
-    ![Install Workloads](../media/2-select-workloads.png)
+
+    :::image type="content" source="../media/2-select-workloads.png" alt-text="Install Workloads." loc-scope="vs":::
 
 1. Next, click the **Modify** button on the bottom right of the Installer. The Visual Studio Installer will download and install the necessary components.
 

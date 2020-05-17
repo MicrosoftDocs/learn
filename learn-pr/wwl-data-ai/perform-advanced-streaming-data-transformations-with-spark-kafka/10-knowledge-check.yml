@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/28/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What API does Spark use to read data from Kafka?"
+    choices:
+    - content: "spark.readStream()."
+      isCorrect: true
+      explanation: "Correct. The Spark notebook uses spark.readStream to read data from the Kafka cluster."
+    - content: "read.Stream()."
+      isCorrect: false
+      explanation: "No. read.Stream is the R method to read data from a stream."
+    - content: "spark.writeStream()."
+      isCorrect: false
+      explanation: "No. spark.writeStream writes data to the stream."
+  - content: "In order to perform Spark Structured Streaming in HDInsight, should the Kafka and Spark cluster be in the same VNET or a different VNET?"
+    choices:
+    - content: "Doesn’t matter."
+      isCorrect: false
+      explanation: "Incorrect. The Kafka and Spark clusters must be in the same VNET."
+    - content: "Same VNET."
+      isCorrect: true
+      explanation: "Correct. The Kafka and Spark clusters must be in the same VNET."
+    - content: "Different VNETs."
+      isCorrect: false
+      explanation: "Incorrect. The Kafka and Spark clusters must be in the same VNET."
+  - content: "Which of the following parameters cannot be used to read data from Kafka?"
+    choices:
+    - content: "Window."
+      isCorrect: true
+      explanation: "Correct. Window is not a required parameter."
+    - content: "Offset."
+      isCorrect: false
+      explanation: "Incorrect. Offset is a required parameter."
+    - content: "Broker connection string."
+      isCorrect: false
+      explanation: "Incorrect. The broker connection string is a required parameter."
+  - content: "Which scenario is best suited for using Spark Structured Streaming in Azure HDInsight?"
+    choices:
+    - content: "Running reports on a nightly basis and saving the reports for future use."
+      isCorrect: false
+      explanation: "Incorrect. Running reports for future use is best suited by a data warehousing solution."
+    - content: "Creating adhoc queries on historical data."
+      isCorrect: false
+      explanation: "Incorrect. Adhoc queries are best served by using Interactive Query clusters for HDInsight."
+    - content: "Running continuous jobs on streaming data."
+      isCorrect: true
+      explanation: "Correct, running continuous jobs on click stream analytics streaming from a website is a good solution for Spark Structured Streaming."

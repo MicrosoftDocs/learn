@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.python-datatypes-numeric-operations.solution
+title: Solution - Temperature converter
+metadata:
+  title: Solution - Temperature converter
+  description: One possible solution to the challenge in the previous unit.
+  ms.date: 02/18/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-solution.md)]

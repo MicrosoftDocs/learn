@@ -1,7 +1,5 @@
-In this module, you needed to investigate the basics of network security to protect your network. 
+Without a thorough understanding of network security, an organization is vulnerable to attacks and performance issues on its network. This vulnerability can negatively affect the organization's finances and reputation.
 
-We explored how authentication and authorization are used to protect a network. We learned how a network is monitored for intrusion, performance, and availability. We've also seen which Azure tools can be used to protect our network.
+In this module, we discussed how authentication and authorization are used to protect a network. We covered how a network is monitored for intrusion, performance, and availability. And we explored the Azure tools that can help in these efforts.
 
-Without an appropriate understanding of security, your network is vulnerable to attacks and performance issues. This vulnerability can negatively impact your organization from a financial and reputational perspective.
-
-Your investigation has helped us understand how the resources, devices, and users on our network can be better protected. So our organization is better protected financially, and its reputation is also protected.
+You should now have a better understanding of how to protect the resources, devices, and users on your network.

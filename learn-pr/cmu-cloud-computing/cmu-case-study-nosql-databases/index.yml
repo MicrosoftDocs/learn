@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage
+metadata:
+  title: 'Case studies: NoSQL databases and cloud object storage'
+  description: Carnegie Mellon University's Cloud Developer course. Learn about two more types of storage - NoSQL databases and object storage - with case studies from industry.
+  brand: azure
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: 'Case studies: NoSQL databases and cloud object storage'
+summary:  Learn about two more types of storage - NoSQL databases and object storage - with case studies from industry.
+abstract: | 
+  In this module, you will:
+  - Explain the Apache HBase, Apache Cassandra, MongoDB, and Amazon DynamoDB NoSQL database data models
+  - List the common operations in HBase, Cassandra, MongoDB, and DynamoDB
+  - Summarize the architectures of HBase, Cassandra, MongoDB, and DynamoDB
+  - List the use cases of HBase, Cassandra, MongoDB, and DynamoDB
+  - Explain the Amazon S3 and OpenStack Swift cloud object storage data models
+  - Discuss the consistency guarantees provided by S3 and Swift
+
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know what the different types of virtualization are
+  - Understand CPU virtualization
+  - Understand memory virtualization
+  - Understand I/O virtualization
+  - Know about the different types of data and how they are stored
+  - Be familiar with distributed file systems and how they work
+iconUrl: /learn/achievements/cmu-cloud-developer/case-studies-nosql-databases.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.0-introduction
+- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.1-apache-hbase
+- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.2-mongodb
+- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.3-apache-cassandra
+- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.4-amazon-dynamodb
+- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.5-amazon-s3
+- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.6-summary
+badge:
+  uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.badge

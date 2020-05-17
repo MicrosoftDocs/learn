@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-identities-with-aad-idp.3-detect-risks-with-policies
+metadata:
+  title: Detect risks with Identity Protection policies
+  description: Detect risks with Identity Protection policies
+  ms.date: 03/23/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Detect risks with Identity Protection policies
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-detect-risks-with-policies.md)]

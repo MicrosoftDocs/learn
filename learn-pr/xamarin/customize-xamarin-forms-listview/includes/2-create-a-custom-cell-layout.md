@@ -1,6 +1,6 @@
 The simplest `ListView` implementations have only a single `Label` in each row. You can give them a slightly more purpose-driven layout by using one of the built-in cell types with static layouts: `TextCell`, `EntryCell`, `SwitchCell`, or `ImageCell`.
 
-![Screenshot that illustrates the built-in cell types](../media/built-in-cell-types.png)
+![Screenshot illustrating the built-in cell types: TextCell with some subtext, EntryCell with input placeholder adjacent, SwitchCell with a toggle button, and ImageCell with a left-hand image and some subtext.](../media/built-in-cell-types.png)
 
 Both approaches are described in another module. But many apps will require cells that are custom designed for the app. In our scenario of a smart home management app, if we use custom rows for each smart device type, we can create an easier user experience. For example, we could allow users to cancel a smoke alarm or speak to someone at their doorbell directly from the `ListView` screen.
 

@@ -18,14 +18,14 @@ The first step is to start Visual Studio and create a local ASP.NET Core web app
 
 1. In the **New ASP.NET Core Web Application** dialog box, you will see a selection of starting templates. For this exercise, select **Web Application**, and then click **OK** to create your project.
 
-    ![New Project Dialog](../media/3-aspnet-templates.png)
+    :::image type="content" source="../media/3-aspnet-templates.png" alt-text="New Project Dialog." loc-scope="vs":::
 
     > [!NOTE]
     > You can also select different starting templates in this dialog box depending on your web development requirements. At the top of the dialog box, you are also able to select the version of ASP.NET Core. You should select ASP.NET Core 2.0 or later.
 
 1. You should now have your new ASP.NET Core web application solution.
 
-    ![New Project Dialog](../media/3-new-solution.png)
+    :::image type="content" source="../media/3-new-solution.png" alt-text="New Project Dialog." loc-scope="vs":::
 
 ## Build and test on your local machine
 
@@ -42,7 +42,7 @@ Now, let's build and test your application on your local machine before deployin
 
 1. Visual Studio starts the IIS Express web browser and loads the app.
 
-    ![The web app running in a browser](../media/3-webapp-launch-windows.png)
+    :::image type="content" source="../media/3-webapp-launch-windows.png" alt-text="The web app running in a browser." loc-scope="other":::
 
     When Visual Studio creates a web project, a random port is used for the web server. In the preceding image, the port number is 44381. When you run the app, you'll likely see a different port number.
 

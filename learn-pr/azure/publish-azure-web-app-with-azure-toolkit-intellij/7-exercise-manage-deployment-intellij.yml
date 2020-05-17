@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.7-exercise-manage-deployment-intellij
+title: Exercise - Manage app deployments from IntelliJ IDE
+metadata:
+  title: Exercise - Manage app deployments from IntelliJ IDE
+  description: In this unit, you'll manage your deployed web apps using the Azure Toolkit for IntelliJ.
+  ms.date: 03/01/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/7-exercise-manage-deployment-intellij.md)]

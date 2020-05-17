@@ -34,7 +34,7 @@ You now have an ASP.NET Core web application running locally. In this part, you'
 
 1. To test your website, go to the URL indicated.
 
-    ![Live Site](../media/5-WebPageLive.png)
+    :::image type="content" source="../media/5-WebPageLive.png" alt-text="Live site." loc-scope="vs":::
 
     > [!NOTE]
     > If you can't locate the URL from the output, navigate to https://&lt;AppName&gt;.azurewebsites.net, where &lt;AppName&gt; is the name you provided earlier. For example, **https://alpineskihouse123.azurewebsites.net/**.

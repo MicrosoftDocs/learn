@@ -20,7 +20,7 @@ PolyBase is a technology that removes complexity for data engineers. They take a
 
 ## Queries
 
-As a data engineer, you can use the familiar Transact-SQL to query the contents of SQL Data Warehouse. This method takes advantage of a wide range of features, including the WHERE, ORDER BY, and GROUP BY clauses. Load data fast by using PolyBase with additional Transact-SQL constructs such as CREATE TABLE and AS SELECT.
+As a data engineer, you can use the familiar Transact-SQL to query the contents of SQL Data Warehouse. This method takes advantage of a wide range of features, including the WHERE, ORDER BY, and GROUP BY clauses. Load data fast by using PolyBase with additional Transact-SQL constructs such as CREATE TABLE and SELECT.
 
 ## Data security
 

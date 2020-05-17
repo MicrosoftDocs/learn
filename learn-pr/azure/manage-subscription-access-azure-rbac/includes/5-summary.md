@@ -4,7 +4,7 @@ In this module, you've learned:
 
 - The differences between Azure role-based access control (RBAC), for managing Azure resources, and Azure Active Directory (Azure AD), for managing Azure AD resources.
 - How to temporarily elevate your permissions from the Global Administrator role to the Azure RBAC User Access Administrator role to regain access to Azure resources.
-- How to grant a user Administrator access to a subscription.
+- How to grant a user administrator access to a subscription.
 
 ## Learn more
 
