@@ -1604,6 +1604,16 @@
       "source_path": "learn-pr/languages/python-while/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-while/index",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/02-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/digital-accessibility/03-summary-and-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/04-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-accessibility-disability/03-knowledge-check",
+      "redirect_document_id": true
+     }
   ]
 }
