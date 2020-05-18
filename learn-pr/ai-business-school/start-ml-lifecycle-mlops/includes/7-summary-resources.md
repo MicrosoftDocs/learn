@@ -10,8 +10,9 @@ Now that you have reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
   
-* Download PDF of Introduction to MLOps and ML lifecycle.
-* Download PDF of Discover the business value of MLOps.
+* [Download PDF of Introduction to MLOps and ML lifecycle](https://aka.ms/AIBSSCAMLO1).
+* [Download PDF of Discover the business value of MLOps](https://aka.ms/AIBSSCAMLO2).
+* [Download PDF of Manage the machine learning lifecycle with MLOps](https://aka.ms/AIBSSCAMLO3).
   * If you'd like to read about best practices for software engineering teams working with machine learning, [this study published by the IEEE Computer Society](https://www.microsoft.com/research/publication/software-engineering-for-machine-learning-a-case-study/) is a great place to start.
 * Download PDF of Manage the machine learning lifecycle with MLOps.
   * To learn more about model drift, we recommend [this resource from Databricks](https://databricks.com/blog/2019/09/18/productionizing-machine-learning-from-deployment-to-drift-detection.html).
