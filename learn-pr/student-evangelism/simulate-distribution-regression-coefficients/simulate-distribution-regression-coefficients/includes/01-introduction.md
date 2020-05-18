@@ -25,7 +25,7 @@ assumptions about the data. Sets of assumptions are known as *models*.
 Sets of assumptions about randomness in roughly linear scatter plots are
 called *regression models*.
 
-### A Regression model
+### A regression model
 
 In brief, such models say that the underlying relation between the two
 variables is perfectly linear; this straight line is the *signal* that
