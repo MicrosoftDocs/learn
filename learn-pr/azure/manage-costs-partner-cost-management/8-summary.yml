@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.manage-costs-partner-cost-management.summary
+metadata:
+  title: Summary
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/summary.md)]

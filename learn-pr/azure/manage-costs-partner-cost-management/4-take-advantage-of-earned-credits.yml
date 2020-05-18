@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.manage-costs-partner-cost-management.take-advantage-of-earned-credits
+metadata:
+  title: Take advantage of earned credits
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Take advantage of earned credits
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-take-advantage-of-earned-credits.md)]

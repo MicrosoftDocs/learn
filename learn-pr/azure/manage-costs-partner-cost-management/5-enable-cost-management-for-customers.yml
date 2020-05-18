@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.manage-costs-partner-cost-management.enable-cost-management-for-customers
+metadata:
+  title: Enable cost management for customers
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Enable cost management for customers
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-enable-cost-management-for-customers.md)]
