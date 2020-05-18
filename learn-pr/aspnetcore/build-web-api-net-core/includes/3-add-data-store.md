@@ -131,12 +131,12 @@ An in-memory database is used in this unit for simplicity. Choose a different da
                         new Product
                         {
                             Name = "Squeaky Bone",
-                            Price = 20.99m
+                            Price = 20.99m,
                         },
                         new Product
                         {
                             Name = "Knotted Rope",
-                            Price = 12.99m
+                            Price = 12.99m,
                         }
                     );
 

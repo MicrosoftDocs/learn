@@ -60,7 +60,7 @@ The preceding command installs a specific version of the .NET Core SDK in the Az
 1. Run the following .NET Core CLI command in the command shell:
 
     ```dotnetcli
-    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+    dotnet ./bin/Debug/netcoreapp3.1/ContosoPets.Api.dll \
         > ContosoPets.Api.log &
     ```
 
