@@ -39,7 +39,6 @@ modules:
 - learn.build-azure-vm-templates
 - learn.deploy-vms-from-vhd-templates
 - learn.build-app-with-scale-sets
-- learn.automate-azure-tasks-with-powershell
 - learn.azure.protect-vm-settings-with-dsc
 - learn.azure.deploy-run-container-app-service
 - learn.azure.app-service-scale-up-scale-out
