@@ -131,7 +131,7 @@ Looking at the two word clouds, it's immediately apparent that the frequency of 
 
 ## Explore the data numerically
 
-Just because the data does not naturally lend itself to numerical analysis "out of the box" does not mean that we can't do so. We can also analyze the average length of spam and ham messages to see if there are differences. For this, we need to create a new column.
+Just because the data does not naturally lend itself to numerical analysis "out of the box" does not mean that we can't do so. We can also analyze the average length of spam and ham messages to see if there are differences. First, we need to create a new column.
 
 ```python
 df['Length_of_msg'] = df['Message'].apply(len)
@@ -140,7 +140,7 @@ df.head()
 
 ```Output
 -----------------------------------------------------------------------------------------------------------------------------------------
-|    | Class | Message                                                                                                  | Length_of_msg |
+|   | Class  | Message                                                                                                  | Length_of_msg |
 -----------------------------------------------------------------------------------------------------------------------------------------
 | 0 | ham    | Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore | 111           |
 |   |        | wat...                                                                                                   |               |

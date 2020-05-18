@@ -1,10 +1,10 @@
-One of the great strengths of naive Bayes analysis is that we don't have to go too deep into text processing in order to develop robust spam detection. However, the text is raw and it does require a certain amount of cleaning. To do this, we will use one of the most commonly used text analytics libraries in Python, the Natural Language Toolkit (NLTK). However, before we can import it, we will need to first install it.
+One of the great strengths of Naive Bayes analysis is that we don't have to go too deep into text processing in order to develop robust spam detection. However, the text is raw and it does require a certain amount of cleaning. To clean the text, we will use one of the most commonly used text analytics libraries in Python, the Natural Language Toolkit (NLTK). However, before we can import it, we will need to first install it.
 
 ```python
 !pip install nltk
 ```
 
-If you already have the NLTK installed, you'll see this output:
+If you already have the NLTK installed, you'll see the following output:
 
 ```Output
 Requirement already satisfied: nltk in /home/nbuser/anaconda3_420/lib/python3.5/site-packages (3.2.1)
@@ -26,7 +26,7 @@ The output:
 [nltk_data]   Unzipping corpora/stopwords.zip.
 ```
 
-Part of our data preparation will be *vectorizing* the text data. Recall that earlier in the section when we first introduced naive Bayes analysis, we stated that we wanted to treat our messages as "bags of words" rather than as English-language messages. Vectorization is the process by which we convert our collection of text messages to a matrix of word counts.
+Part of our data preparation will be *vectorizing* the text data. Recall that earlier in the section when we first introduced Naive Bayes analysis, we stated that we wanted to treat our messages as "bags of words" rather than as English-language messages. Vectorization is the process by which we convert our collection of text messages to a matrix of word counts.
 
 Part of the vectorization process will be for us to remove punctuation from the messages and exclude stop words from our analysis. We will write a function to perform those tasks here, because we will want to access those actions later on.
 
@@ -78,7 +78,7 @@ Finally, we will transform our training messages into a [document-term matrix](h
 X_train_data = CountVect.transform(X_train)
 ```
 
-This can be a tricky concept, so let's look at the training-text matrix directly:
+It can a tricky concept, so let's look at the training text matrix directly:
 
 ```python
 print(X_train_data)
@@ -87,31 +87,31 @@ print(X_train_data)
 Here's the output:
 
 ```Output
-(0, 7173)	1
-  (0, 9613)	1
+  (0, 7173)	    1
+  (0, 9613)	    1
   (0, 10093)	1
   (0, 11051)	1
-  (1, 16)	1
-  (1, 273)	1
-  (1, 370)	1
-  (1, 526)	1
-  (1, 685)	1
-  (1, 1341)	1
-  (1, 3350)	1
-  (1, 3851)	1
-  (1, 4098)	1
-  (1, 4828)	1
-  (1, 4881)	1
-  (1, 5286)	1
-  (1, 5683)	1
-  (1, 8064)	1
-  (1, 8218)	1
-  (1, 11369)	1
-  (2, 2648)	1
-  (2, 5881)	1
-  (2, 7395)	1
-  (2, 7838)	1
-  (2, 8000)	1
+  (1, 16)	    1
+  (1, 273)	    1
+  (1, 370)    	1
+  (1, 526)	    1
+  (1, 685)    	1
+  (1, 1341)	    1
+  (1, 3350)    	1
+  (1, 3851)	    1
+  (1, 4098)	    1
+  (1, 4828)	    1
+  (1, 4881)	    1
+  (1, 5286)	    1
+  (1, 5683)    	1
+  (1, 8064)	    1
+  (1, 8218)	    1
+  (1, 11369)    1
+  (2, 2648)	    1
+  (2, 5881)	    1
+  (2, 7395)	    1
+  (2, 7838)	    1
+  (2, 8000)	    1
   :	:
   (3896, 4254)	1
   (3896, 7944)	1
@@ -140,7 +140,7 @@ Here's the output:
   (3899, 6079)	1
 ```
 
-Then we run:
+Then, we run:
 
 ```python
 X_train_data.shape
@@ -157,5 +157,5 @@ The output is:
 > [!div class="alert is-tip"]
 > ### Key takeaway
 >
-> Putting our bag of words into a document-term matrix like this is a standard tool of natural-language processing and text analysis, and it is used in contexts beyond naive Bayes analysis in which word-frequency is important, such as [term frequency–inverse document frequency (TF-IDF)](https://wikipedia.org/wiki/Tf%E2%80%93idf?azure-portal=true).
+> Putting our bag of words into a document term matrix the way we did here is a standard tool of natural language processing and text analysis, and it is used in contexts beyond Naive Bayes analysis in which word frequency is important, such as [term frequency–inverse document frequency (TF-IDF)](https://wikipedia.org/wiki/Tf%E2%80%93idf?azure-portal=true).
 >

@@ -2,9 +2,9 @@ Beyond detecting spam, we can use machine learning to explore the SMS data more 
 
 ## Azure Cognitive Services
 
-The advantage of using cloud-based services is that they provide cutting-edge models that you can access without having to train the models. This can help accelerate both your exploration and your use of machine learning.
+The advantage of using cloud-based services is that they provide cutting-edge models that you can access without having to train the models. Using better models can help accelerate both your exploration and your use of machine learning.
 
-Azure provides Cognitive Services APIs that can be consumed using Python to conduct image recognition, speech recognition, and text recognition, just to name a few. For the purposes of this subsection, we're going to look at using the Azure Text Analytics API.
+Azure provides Cognitive Services APIs that can be consumed using Python to conduct image recognition, speech recognition, and text recognition, just to name a few. We're going to take a look at using the Azure Text Analytics API.
 
 First, we’ll start by obtaining a Cognitive Services API key. Note that you can get a free key for seven days (after which you'll be required to pay for continued access to the API).
 
@@ -261,7 +261,7 @@ Break out the single histogram above into two histograms (one for each class of 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Refer back to the code we used to do this earlier in the section.
+Refer back to the code we used earlier in the section.
 
 ```python
 azure_df.hist(bins=50,by='Class', column='Sentiment')

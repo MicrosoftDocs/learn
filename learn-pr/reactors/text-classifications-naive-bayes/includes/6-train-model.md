@@ -1,12 +1,18 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-Now, it's time to train our naive Bayes model. For our model, we will use the multinomial naive Bayes classifier. "Multinomial" in this case derives from our assumption that, for our bag of $n$ words: $P({\rm S}\mid {\rm word_1}, {\rm word_2},\ldots, {\rm word}_n)=P({\rm S})P({\rm word_1}\mid {\rm S})P({\rm word_2}\mid {\rm S})\cdots P({\rm word}_n\mid {\rm S})$. We don't assume that our word likelihoods follow a normal distribution.
+Now, it's time to train our Naive Bayes model. For our model, we will use the multinomial Naive Bayes classifier. 
+
+*Multinomial* in this case derives from our assumption that, for our bag of $n$ words:
+
+$P({\rm S}\mid {\rm word_1}, {\rm word_2},\ldots, {\rm word}_n)=P({\rm S})P({\rm word_1}\mid {\rm S})P({\rm word_2}\mid {\rm S})\cdots P({\rm word}_n\mid {\rm S})$ 
+
+We don't assume that our word likelihoods follow a normal distribution.
 
 ```python
 from sklearn.naive_bayes import MultinomialNB
 ```
 
-Then, run this command:
+Then, run the following command:
 
 ```python
 naivebayes_model = MultinomialNB()
@@ -26,13 +32,13 @@ pred = naivebayes_model.predict(CountVect.transform(['Get 50% off your next purc
 pred
 ```
 
-This is the output:
+The output is:
 
 ```Output
 array(['spam'], dtype='<U4')
 ```
 
-As we expected, our model correctly classified this message as spam.
+As we expected, our model correctly classified the message as spam.
 
 ### Try it yourself
 
@@ -80,7 +86,7 @@ Run the predictions for the test data.
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-This is a possible solution:
+A possible solution:
 
 ```python
 predictions = naivebayes_model.predict(X_test_data)
@@ -126,7 +132,7 @@ Overall, our model is good for spam detection, but our recall score (the proport
 
 Use the scikit-learn `confusion_matrix()` function to better understand the specific performance of the model. Get help [interpreting the confusion matrix](https://wikipedia.org/wiki/Confusion_matrix).
 
-This is a possible exercise solution:
+A possible solution:
 
 ```python
 print(confusion_matrix(y_test, predictions))
@@ -148,6 +154,6 @@ The output is:
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
->The performance of our naive Bayes model helps underscore the algorithm's popularity, particularly for spam detection. Even untuned, we got good performance, performance that would only continue to improve in production as users submitted more examples of spam messages.
+>The performance of our Naive Bayes model helps underscore the algorithm's popularity, particularly for spam detection. Even untuned, we got good performance, performance that would only continue to improve in production as users submitted more examples of spam messages.
 >
 
