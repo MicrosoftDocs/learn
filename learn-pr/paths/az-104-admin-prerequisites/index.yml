@@ -34,6 +34,7 @@ modules:
 - learn.azure.network-fundamentals
 - learn.azure.network-fundamentals-2
 - learn.control-azure-services-with-cli
+- learn.automate-azure-tasks-with-powershell
 - learn.intro-to-azure-ad
 - learn.intro-to-docker-containers
 - learn.choose-storage-approach-in-azure
