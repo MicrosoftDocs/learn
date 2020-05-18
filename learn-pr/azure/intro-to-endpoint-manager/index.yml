@@ -28,5 +28,8 @@ products:
 units:
 - learn.intro-to-endpoint-manager.1-introduction
 - learn.intro-to-endpoint-manager.2-what-is-endpoint-manager
+- learn.intro-to-endpoint-manager.3-why-use-endpoint-manager
+- learn.intro-to-endpoint-manager.4-understand-endpoint-environment
+- learn.intro-to-endpoint-manager.5-platform-considerations
 badge:
   uid: learn.intro-to-endpoint-manager.badge
