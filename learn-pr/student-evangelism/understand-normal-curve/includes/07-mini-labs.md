@@ -1,5 +1,5 @@
 > [!NOTE]
-> You'll need to set up your Online Visual Studio Codespaces environment in the setup unit at the beginning of the module to access and interact with these mini labs
+> You'll need to set up your Online Visual Studio Codespaces environment in the setup unit at the beginning of the module to access and interact with these mini labs.
 
 For convenience, you can launch your VS Codespaces environment by clicking the link below:
 
