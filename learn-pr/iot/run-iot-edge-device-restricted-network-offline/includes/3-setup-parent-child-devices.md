@@ -6,7 +6,7 @@ In this scenario, the child device connects to, and authenticate against the par
 
 When the parent IoT Edge Device is disconnected (or loses connection to the Azure IoT Hub), it will automatically store all device messages to the IoT Edge Device. Once the connection is restored, the IoT Edge Device will resume connectivity and send any stored messages to Azure IoT Hub. Messages stored on the IoT Edge Device may expire according to the Time-to-Live (TTL) configurations for the device; which defaults to store messages for up to 7200 seconds (two hours).
 
-## Setting up the IoT edge parent with child IoT devices
+## Setting up the IoT Edge parent with child IoT devices
 
 1. If necessary, log in to your Azure portal using your Azure account credentials.
 If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
