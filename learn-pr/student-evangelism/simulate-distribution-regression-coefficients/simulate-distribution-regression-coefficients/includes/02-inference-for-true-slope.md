@@ -1,9 +1,9 @@
 > [!NOTE]
 > You can find an interactive version of this unit named **inference-for-the-true-slope.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**.
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments).
 
 
 Our simulations show that if the regression model holds and the sample
@@ -130,7 +130,7 @@ left, right
 An approximate 95% confidence interval for the true slope extends from
 about 0.38 ounces per day to about 0.56 ounces per day.
 
-### A Function to bootstrap the slope
+### A function to bootstrap the slope
 
 Let us collect all the steps of our method of estimating the slope and
 define a function `bootstrap_slope` that carries them out. Its arguments
@@ -144,9 +144,8 @@ of the "middle 95%" of the slopes.
 ``` python
 def bootstrap_slope(table, x, y, repetitions):
 
-    # For each repetition:
-    # Bootstrap the scatter, get the slope of the regression line,
-    # augment the list of generated slopes
+    For each repetition:
+    # Bootstrap the scatter, get the slope of the regression line, augment the list of generated slopes
     slopes = make_array()
     for i in np.arange(repetitions):
         bootstrap_sample = table.sample()
