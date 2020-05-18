@@ -123,8 +123,8 @@ num_heads
 How many repetitions we want is up to us. The more we use, the more
 reliable our simulations will be, but the longer it will take to run the
 code. Python is pretty fast at tossing coins. Let's go for 10,000
-repetitions. That means we are going to do the following 10,000 times: -
-Toss a coin 100 times and count the number of heads.
+repetitions. That means we are going to do the following 10,000 times: 
+- Toss a coin 100 times and count the number of heads.
 
 That's a lot of tossing! It's good that we have Python to do it for us.
 
