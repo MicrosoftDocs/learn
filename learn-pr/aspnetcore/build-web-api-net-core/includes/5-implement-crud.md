@@ -51,7 +51,7 @@ Replace the `// POST action` comment in *:::no-loc text="Controllers/ProductsCon
 
 ```csharp
 [HttpPost]
-public async Task<ActionResult<Product>> Create(Product product)
+public async Task<IActionResult> Create(Product product)
 {
     _context.Products.Add(product);
     await _context.SaveChangesAsync();
