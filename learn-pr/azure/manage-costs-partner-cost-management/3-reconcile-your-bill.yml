@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.manage-costs-partner-cost-management.reconcile-your-bill
+metadata:
+  title: Reconcile your bill
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Reconcile your bill
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-reconcile-your-bill.md)]

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.manage-costs-partner-cost-management
+metadata:
+  title: Configure and manage costs as a Microsoft Partner by using Azure Cost Management
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure and manage costs as a Microsoft Partner by using Azure Cost Management
+summary: Reconcile your bill and analyze costs across your customers and resources by using Azure Cost Management as a partner. Determine which of your resources do not receive discounted pricing and manage costs through budgets to ensure your spending stays within defined limits. Enable your customers to use Azure Cost Management as well with Pay As You Go rates.
+abstract: | 
+  In this module, you will:
+  - Describe options to manage device identities in Azure AD
+  - Configure Azure AD join to manage device identities
+  - Configure Enterprise State Roaming to reduce the time that users need to configure a new device
+prerequisites:  | 
+  - Basic knowledge of Azure Active Directory features such as Azure AD Connect, Azure AD Seamless Single Sign-On, and Azure Multi-Factor Authentication
+  - Basic understanding of mobile device management software like Microsoft Intune 
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels: 
+- beginner
+roles: 
+- administrator
+products: 
+- azure-cost-management
+- azure
+units:
+- learn.manage-costs-partner-cost-management.introduction
+- learn.manage-costs-partner-cost-management.understand-cost-management-scopes
+- learn.manage-costs-partner-cost-management.reconcile-your-bill
+- learn.manage-costs-partner-cost-management.take-advantage-of-earned-credits
+- learn.manage-costs-partner-cost-management.enable-cost-management-for-customers
+- learn.manage-costs-partner-cost-management.set-cost-thresholds
+- learn.manage-costs-partner-cost-management.knowledge-check
+- learn.manage-costs-partner-cost-management.summary
+badge:
+  uid: learn.manage-costs-partner-cost-management.badge

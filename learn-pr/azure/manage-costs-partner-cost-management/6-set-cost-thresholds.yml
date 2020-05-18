@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.manage-costs-partner-cost-management.set-cost-thresholds
+metadata:
+  title: Set cost thresholds
+  description: ...
+  ms.date: ...
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Set cost thresholds
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-set-cost-thresholds.md)]
