@@ -1,6 +1,6 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-Naive Bayes is a convenient algorithm for spam detection because it doesn't require encoding complex rules. All it needs is training examples, of which there are plenty when it comes to email spam. Naive Bayes does all this through the use of [conditional probability](https://wikipedia.org/wiki/Conditional_probability?azure-portal=true).
+Naive Bayes is a convenient algorithm for spam detection because it doesn't require encoding complex rules. All it needs is training examples, of which there are plenty when it comes to email spam. Naive Bayes does this work by using [conditional probability](https://wikipedia.org/wiki/Conditional_probability?azure-portal=true).
 
 ## Conditional probability
 
@@ -24,7 +24,7 @@ In words, Bayes' law says that if I know the prior probabilities $P(A)$ and $P(B
 
 :::image type="content" source="../media/spam.png" alt-text="A screenshot of an example spam email that has the title Reduce Debt by up to 60 Percent" loc-scope="Azure":::
 
-In order to use Bayesian probability on spam email messages like this one, consider it (and all other emails, spam or ham) to be bags of words. We don't care about word order or even word meaning. We just want to count the frequency of certain words in spam messages versus the frequency of those same words in valid email messages.
+In order to use Bayesian probability on spam email messages like this one, consider it (and all other emails, spam or ham) to be bags of words. (*Ham* is email that is *not* spam, although it might appear to be at first.) We don't care about word order or even word meaning. We just want to count the frequency of certain words in spam messages versus the frequency of those same words in valid email messages.
 
 Let's say that, after having counted the words in hundreds of emails that we have received, we determine the probability of the word "debt" appearing in any kind of email message (spam or ham) to be 0.157, with the probability of "debt" appearing in spam messages being 0.309. Further more, let's say that we assume that there is a 50 percent chance that any given email message we receive is spam (for this example, we don't know either way what type of email it might be, so it's a coin flip). Mathematically, we could thus say:
 

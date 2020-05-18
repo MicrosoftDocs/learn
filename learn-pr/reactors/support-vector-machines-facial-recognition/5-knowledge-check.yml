@@ -18,13 +18,13 @@ quiz:
     choices:
     - content: "Simple Vectorized Model"
       isCorrect: false
-      explanation: "Incorrect. In machine learning, SVM does not refer to Simple Vectorized Model."
+      explanation: "Incorrect. In machine learning, SVM is not an abbreviation for Simple Vectorized Model."
     - content: "Simultaneous Vector Manipulation"
       isCorrect: false
-      explanation: "Incorrect. In machine learning, SVM does not refer to Simultaneous Vector Manipulation."
+      explanation: "Incorrect. In machine learning, SVM is not an abbreviation for Simultaneous Vector Manipulation."
     - content: "Simulated Volumetric Model"
       isCorrect: false
-      explanation: "Incorrect. In machine learning, SVM does not refer to	Simulated Volumetric Model."
+      explanation: "Incorrect. In machine learning, SVM is not an abbreviation for Simulated Volumetric Model."
     - content: "Support Vector Machine"
       isCorrect: true
       explanation: "Correct. In machine learning, SVM is an abbreviation for Support Vector Machine."
@@ -33,7 +33,7 @@ quiz:
     - content: "Get a more accurate estimate of a model’s accuracy."
       isCorrect: true
       explanation: "Correct. Cross-validation helps you determine how accurate your model is."
-    - content: "Prevent a model from overfitting the training data"
+    - content: "Prevent a model from overfitting the training data."
       isCorrect: false
       explanation: "Incorrect. In machine learning, cross-validation does not refer to fitting or overfitting training data."
     - content: "Prevent a model from underfitting the training data."
@@ -44,19 +44,19 @@ quiz:
       explanation: "Incorrect. In machine learning, cross-validation is not used to help reduce time spent testing a model."
   - content: "What is the purpose of hyperparameter tuning?"
     choices:
-    - content: "Find the learning algorithm that produces the most accurate model."
+    - content: "To find the learning algorithm that produces the most accurate model."
       isCorrect: false
       explanation: "Incorrect. In machine learning, tuning hyperparameters does not focus on finding an algorithm that would produce the most accurate model."
-    - content: "Eliminate collinearity in a dataset."
+    - content: "To eliminate collinearity in a dataset."
       isCorrect: false
       explanation: "Incorrect. In machine learning, tuning hyperparameters does not address collinearity in a dataset."
-    - content: "Find the combination of parameters that produces the most accurate model."
+    - content: "To fnd the combination of parameters that produces the most accurate model."
       isCorrect: true
       explanation: "Correct. In machine learning, tuning hyperparameters helps you find the combination of parameters that produces the most accurate model."
-    - content: "Reduce training time."
+    - content: "To reduce training time."
       isCorrect: false
       explanation: "Incorrect. Tuning hyperparameters is not related to how long it takes to train a dataset. Tuning hyperparameters and cross-validation might take more time, but you might end up with more accurate data."
-  - content: "For which of the following tasks might you use Principal Component Analysis (PCA)?"
+  - content: "For which of the following tasks might you use principal component analysis (PCA)?"
     choices:
     - content: "Normalize the values in a column or a set of columns."
       isCorrect: false
@@ -86,15 +86,15 @@ quiz:
       explanation: "Incorrect. The <code>C</code> and <code>gamma</code> parameters are not used to verify the veracity of the training data."
   - content: "What is the scikit-learn function you would call to train an SVM model?"
     choices:
-    - content: "fit"
+    - content: "<code>fit</code>"
       isCorrect: true
       explanation: "Correct. You can use the scikit-learn <code>fit</code> function to train an SVM model."
-    - content: "train"
+    - content: "<code>train</code>"
       isCorrect: false
-      explanation: "Incorrect. <code>train</code> is not the function you use in scikit-learn to train an SVM model."
-    - content: "score"
+      explanation: "Incorrect. In scikit-learn, <code>train</code> is not the function you use to train an SVM model."
+    - content: "<code>score</code>"
       isCorrect: false
-      explanation: "Incorrect. <code>score</code> is not the function you use in scikit-learn to train an SVM model."
-    - content: "transform"
+      explanation: "Incorrect. In scikit-learn, <code>score</code> is not the function you use to train an SVM model."
+    - content: "<code>transform</code>"
       isCorrect: false
-      explanation: "Incorrect. <code>transform</code> is not the function you use in scikit-learn to train an SVM model."
+      explanation: "Incorrect. in scikit-learn, <code>transform</code> is not the function you use to train an SVM model."

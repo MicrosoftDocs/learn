@@ -2,9 +2,9 @@ Beyond detecting spam, we can use machine learning to explore the SMS data more 
 
 ## Azure Cognitive Services
 
-The advantage of using cloud-based services is that they provide cutting-edge models that you can access without having to train the models. This can help accelerate both your exploration and your use of machine learning.
+The advantage of using cloud-based services is that they provide cutting-edge models that you can access without having to train the models. Using better models can help accelerate both your exploration and your use of machine learning.
 
-Azure provides Cognitive Services APIs that can be consumed using Python to conduct image recognition, speech recognition, and text recognition, just to name a few. For the purposes of this subsection, we're going to look at using the Azure Text Analytics API.
+Azure provides Cognitive Services APIs that can be consumed using Python to conduct image recognition, speech recognition, and text recognition, just to name a few. We're going to take a look at using the Azure Text Analytics API.
 
 First, we’ll start by obtaining a Cognitive Services API key. Note that you can get a free key for seven days (after which you'll be required to pay for continued access to the API).
 
@@ -26,7 +26,7 @@ assert subscription_key
 
 # If using a Free Trial account, this URL does not need to be updated.
 # If using a paid account, verify that it matches the region where the 
-# Text Analytics Service was setup.
+# Text Analytics Service was set up.
 text_analytics_base_url = "https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/"
 ```
 
@@ -88,21 +88,7 @@ for i in range(len(chunks)):
     chunks[i]['Language'] = np.array(lang_list)
 ```
 
-```Output
----------------------------------------------------------------------------
-KeyError                                  Traceback (most recent call last)
-<ipython-input-62-a51920ac8ffe> in <module>
-     22     # Put the identified languages in a list.
-     23     lang_list = []
----> 24     for document in languages['documents']:
-     25         lang_list.append(document['detectedLanguages'][0]['name'])
-     26 
-
-KeyError: 'documents'
-```
-
 Now, we need perform similar preparation of the data for sentiment analysis.
-
 
 ```python
 # Supply the URL for the sentiment-analysis API.
@@ -145,6 +131,8 @@ azure_df.drop(['Index'], axis=1, inplace=True)
 azure_df.head()
 ```
 
+Here's the output:
+
 ```Output
 --------------------------------------------------------------------------------------------------------------------------------------
 |       | Class | Message                                                                    | Language  | Sentiment | Length_of_msg |
@@ -171,6 +159,8 @@ We can also look at the tail of the DataFrame to check that our indexing worked 
 ```python
 azure_df.tail()
 ```
+
+Here's the output:
 
 ```Output
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -199,42 +189,13 @@ Let's see if all of the SMS messages were in English (and, if not, how many mess
 azure_df.groupby('Language')['Message'].count().plot(kind='bar')
 ```
 
+The output is:
+
 ```Output
----------------------------------------------------------------------------
-IndexError                                Traceback (most recent call last)
-<ipython-input-65-9b69cae9a0dd> in <module>
-----> 1 azure_df.groupby('Language')['Message'].count().plot(kind='bar')
-
-~\Anaconda3\lib\site-packages\pandas\plotting\_core.py in __call__(self, *args, **kwargs)
-    845                     data.columns = label_name
-    846 
---> 847         return plot_backend.plot(data, kind=kind, **kwargs)
-    848 
-    849     __call__.__doc__ = __doc__
-
-~\Anaconda3\lib\site-packages\pandas\plotting\_matplotlib\__init__.py in plot(data, kind, **kwargs)
-     59             kwargs["ax"] = getattr(ax, "left_ax", ax)
-     60     plot_obj = PLOT_CLASSES[kind](data, **kwargs)
----> 61     plot_obj.generate()
-     62     plot_obj.draw()
-     63     return plot_obj.result
-
-~\Anaconda3\lib\site-packages\pandas\plotting\_matplotlib\core.py in generate(self)
-    268         for ax in self.axes:
-    269             self._post_plot_logic_common(ax, self.data)
---> 270             self._post_plot_logic(ax, self.data)
-    271 
-    272     def _args_adjust(self):
-
-~\Anaconda3\lib\site-packages\pandas\plotting\_matplotlib\core.py in _post_plot_logic(self, ax, data)
-   1414         name = self._get_index_name()
-   1415 
--> 1416         s_edge = self.ax_pos[0] - 0.25 + self.lim_offset
-   1417         e_edge = self.ax_pos[-1] + 0.25 + self.bar_width + self.lim_offset
-   1418 
-
-IndexError: index 0 is out of bounds for axis 0 with size 0
+<matplotlib.axes._subplots.AxesSubplot at 0x7fd95f5d3278>
 ```
+
+:::image type="content" alt-text="Histogram chart that demonstrates the results of language analysis." source="../media/language-analysis.png" loc-scope="Azure":::
 
 So the overwhelming majority of the messages are in English, although we have several additional languages in our dataset. Let's look at the actual numbers.
 
@@ -249,8 +210,23 @@ Now use the `groupby` method to display actual counts of the languages detected 
 azure_df.groupby('Language')['Message'].count()
 ```
 
+The output it:
+
 ```Output
-Series([], Name: Message, dtype: int64)
+Language
+(Unknown)     3   
+Catalan       1   
+English       5557
+Filipino      1   
+German        2   
+Indonesian    1   
+Malay         1   
+Romanian      1   
+Spanish       2   
+Swahili       1   
+Swedish       1   
+Turkish       1   
+Name: Message, dtype: int64
 ```
 
 </details>
@@ -274,7 +250,7 @@ spam    AxesSubplot(0.125,0.125;0.775x0.755)
 Name: Sentiment, dtype: object
 ```
 
-:::image type="content" alt-text="A screenshot of the histogram chart that is created when you run the azure_df.groupby example code." source="../media/azure-df-groupby.png" loc-scope="Azure":::
+:::image type="content" alt-text="Histogram chart that demonstrates the results of sentiment analysis." source="../media/sentiment-analysis.png" loc-scope="Azure":::
 
 It is perhaps not too surprising that the sentiments represented in the dataset should be bifurcated: SMS is a medium that captures extremes better than nuanced middle ground. That said, the number of dead-center messages is interesting. The proportion of spam messages right in the middle is also interesting. Let's break the two classes (ham and spam) into separate histograms to get a better look.
 
@@ -285,19 +261,21 @@ Break out the single histogram above into two histograms (one for each class of 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Refer back to the code we used to do this earlier in the section.
+Refer back to the code we used earlier in the section.
 
 ```python
 azure_df.hist(bins=50,by='Class', column='Sentiment')
 ```
 
+The output is:
+
 ```Output
-array([<matplotlib.axes._subplots.AxesSubplot object at 0x00000194F6985848>,
-       <matplotlib.axes._subplots.AxesSubplot object at 0x00000194FC3A7FC8>],
+array([<matplotlib.axes._subplots.AxesSubplot object at 0x7fd95ed57c18>,
+       <matplotlib.axes._subplots.AxesSubplot object at 0x7fd95ed2f7b8>],
       dtype=object)
 ```
 
-:::image type="content" alt-text="A screenshot of the two histogram charts that are created when you run the azure_df.hist example code." source="../media/azure-df-hist.png" loc-scope="Azure":::
+:::image type="content" alt-text="Side-by-side histograms that analyze sentiments in ham and spam." source="../media/sentiment-analysis-ham-spam.png" loc-scope="Azure":::
 
 </details>
 

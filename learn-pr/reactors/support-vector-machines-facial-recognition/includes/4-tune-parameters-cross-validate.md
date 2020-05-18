@@ -66,7 +66,6 @@ print(classification_report(y_test, y_predicted, target_names=faces.target_names
 The output is:
 
 ```Output
-
                    precision    recall  f1-score   support
 
      Colin Powell       0.89      0.98      0.93        50
@@ -103,7 +102,7 @@ Text(89.18, 0.5, 'Predicted label')
 
 The model correctly identified Colin Powell 49 times out of 50, Donald Rumsfeld 23 times out of 25, and so on. That's not bad. And it's a great example of SVMs at work. It would be challenging, perhaps impossible, to do this well by using more conventional learning algorithms such as logistic regression.
 
-## Cross-validate
+## Cross-validate the model
 
 Currently, we are using a randomly selected 20% of the faces in the dataset to test the model and quantify its accuracy. Unfortunately, you can (and almost always will) get different results depending on which 20% of the dataset you select. For a more reliable measure of accuracy, you can cross-validate the model by training it several times, each time using different subsets of the original dataset for training and testing, and averaging the scores from each run. (This is precisely what `GridSearchCV` does when it evaluates the effect of different parameter combinations.) scikit's `cross_validate` function makes this easy. Let's finish up by using `GridSearchCV` to measure the accuracy of our model. We'll divide the original dataset into five folds and train the model five times, each time using a different fold for testing and the remaining folds for training.
 
