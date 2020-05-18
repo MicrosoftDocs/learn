@@ -4,6 +4,12 @@ One of the great strengths of naive Bayes analysis is that we don't have to go t
 !pip install nltk
 ```
 
+If you already have the NLTK installed, you'll see this output:
+
+```Output
+Requirement already satisfied: nltk in /home/nbuser/anaconda3_420/lib/python3.5/site-packages (3.2.1)
+```
+
 We can now import NLTK, in addition to the native Python string library to help with our text manipulation. We will also download the latest list of stop words (such as _the_, _is_, and _are_) for NLTK.
 
 ```python
@@ -13,7 +19,14 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 ```
 
-Part of our data preparation will be vectorizing the text data. Recall that earlier in the section when we first introduced naive Bayes analysis, we stated that we wanted to treat our messages as "bags of words" rather than as English-language messages. Vectorization is the process by which we convert our collection of text messages to a matrix of word counts.
+The output:
+
+```Output
+[nltk_data] Downloading package stopwords to /home/nbuser/nltk_data...
+[nltk_data]   Unzipping corpora/stopwords.zip.
+```
+
+Part of our data preparation will be *vectorizing* the text data. Recall that earlier in the section when we first introduced naive Bayes analysis, we stated that we wanted to treat our messages as "bags of words" rather than as English-language messages. Vectorization is the process by which we convert our collection of text messages to a matrix of word counts.
 
 Part of the vectorization process will be for us to remove punctuation from the messages and exclude stop words from our analysis. We will write a function to perform those tasks here, because we will want to access those actions later on.
 
@@ -29,9 +42,7 @@ def txt_preprocess(text):
     return processedtext
 ```
 
-TBD output
-
-Scikit-learn provides a count-vectorizer function. We will now import it and then use the `txt_preprocess()` function we just wrote as a custom analyzer for it.
+scikit-learn provides a count-vectorizer function. We will now import it and then use the `txt_preprocess()` function we just wrote as a custom analyzer for it.
 
 ```python
 from sklearn.feature_extraction.text import CountVectorizer
@@ -42,8 +53,6 @@ y = df['Class']
 CountVect = CountVectorizer(analyzer=txt_preprocess).fit(X)
 ```
 
-TBD output
-
 > [!NOTE]
 > The convention of using an uppercase `X` to represent the independent variables (the predictors) and a lowercase `y` to represent the dependent variable (the response) comes from statistics and is commonly used by data scientists.
 
@@ -53,9 +62,7 @@ In order to see how the vectorizer transformed the words, let's check it against
 print(CountVect.vocabulary_.get('go'))
 ```
 
-TBD output
-
-So, "go" appears 6,864 times in our dataset.
+The output is `6864`. So, "go" appears 6,864 times in our dataset.
 
 Now, before we transform the entire dataset and train the model, we have the final preparatory step of splitting our data into training and test data to perform.
 
@@ -65,15 +72,11 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=50)
 ```
 
-TBD output
-
 Finally, we will transform our training messages into a [document-term matrix](https://wikipedia.org/wiki/Document-term_matrix?azure-portal=true). "Document" might sound a little grandiose in this case as it refers to individual text messages, but it is a term of art for text analysis.
 
 ```python
 X_train_data = CountVect.transform(X_train)
 ```
-
-TBD output
 
 This can be a tricky concept, so let's look at the training-text matrix directly:
 
@@ -81,14 +84,73 @@ This can be a tricky concept, so let's look at the training-text matrix directly
 print(X_train_data)
 ```
 
-TBD output
+Here's the output:
 
+```Output
+(0, 7173)	1
+  (0, 9613)	1
+  (0, 10093)	1
+  (0, 11051)	1
+  (1, 16)	1
+  (1, 273)	1
+  (1, 370)	1
+  (1, 526)	1
+  (1, 685)	1
+  (1, 1341)	1
+  (1, 3350)	1
+  (1, 3851)	1
+  (1, 4098)	1
+  (1, 4828)	1
+  (1, 4881)	1
+  (1, 5286)	1
+  (1, 5683)	1
+  (1, 8064)	1
+  (1, 8218)	1
+  (1, 11369)	1
+  (2, 2648)	1
+  (2, 5881)	1
+  (2, 7395)	1
+  (2, 7838)	1
+  (2, 8000)	1
+  :	:
+  (3896, 4254)	1
+  (3896, 7944)	1
+  (3896, 8009)	1
+  (3896, 8241)	1
+  (3896, 9549)	1
+  (3897, 1634)	1
+  (3897, 4005)	1
+  (3897, 4491)	1
+  (3897, 5275)	1
+  (3898, 61)	1
+  (3898, 1353)	1
+  (3898, 1417)	1
+  (3898, 1867)	1
+  (3898, 2088)	1
+  (3898, 2971)	1
+  (3898, 3746)	1
+  (3898, 5519)	1
+  (3898, 6838)	1
+  (3898, 6969)	1
+  (3898, 7839)	1
+  (3898, 8607)	1
+  (3898, 11363)	1
+  (3898, 11384)	1
+  (3899, 1445)	1
+  (3899, 6079)	1
+```
+
+Then we run:
 
 ```python
 X_train_data.shape
 ```
 
-TBD output
+The output is:
+
+```Output
+(3900, 11425)
+```
 
 `X_train_data` is now a 3900 &times; 11425 matrix, where each of the 3,900 rows represents a text ("document") from the training dataset and each column is a specific word (11,425 of them, in this case).
 

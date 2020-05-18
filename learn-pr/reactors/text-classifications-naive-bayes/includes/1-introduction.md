@@ -4,11 +4,6 @@ Spam emails are more than just a nuisance. As recently as 2008, spam constituted
 
 Naive Bayes is a convenient algorithm for spam detection because it doesn't require encoding complex rules. All it needs is training examples, of which there are plenty when it comes to email spam. Naive Bayes does all this through the use of [conditional probability](https://wikipedia.org/wiki/Conditional_probability?azure-portal=true).
 
-> [!div class="alert is-tip"]
-> ### Learning objective
->
-> By the end of this module, you should have a basic understanding of how naive Bayes works and some of the reasons for its popularity.
-
 ## Learning objectives
 
 In this module, you will:

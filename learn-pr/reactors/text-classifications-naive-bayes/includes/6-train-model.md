@@ -13,22 +13,30 @@ naivebayes_model = MultinomialNB()
 naivebayes_model.fit(X_train_data,y_train)
 ```
 
-TBD output
+The output is:
+
+```Output
+MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
+```
 
 Our model is now fitted. However, before we run our predictions on all of our test data, let's see what our model says about some artificial data in order to get a better sense of what our model will do with all of the messages in our test dat. From the word clouds we constructed earlier, we can see that "call" and "free" are both prominent words among our spam messages, so let's create our own spam message and see how our model classifies it.
 
 ```python
-pred = naivebayes_model.predict(CountVect.transform(['Call for a free offer!']))
+pred = naivebayes_model.predict(CountVect.transform(['Get 50% off your next purchase. Call now']))
 pred
 ```
 
-TBD output
+This is the output:
+
+```Output
+array(['spam'], dtype='<U4')
+```
 
 As we expected, our model correctly classified this message as spam.
 
 ### Try it yourself
 
-Review the ham word cloud above, construct a ham message, and then run it against the model to see how it is classified.
+Review the ham word cloud, construct a ham message, and then run it against the model to see how it is classified.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -40,7 +48,11 @@ pred2 = naivebayes_model.predict(CountVect.transform(['Let me know what time we 
 pred2
 ```
 
-TBD output
+The output is:
+
+```Output
+array(['ham'], dtype='<U4')
+```
 
 </details>
 
@@ -55,7 +67,11 @@ X_test_data = CountVect.transform(X_test)
 X_test_data.shape
 ```
 
-TBD output
+Here's the output:
+
+```Output
+(1672, 11425)
+```
 
 ### Try it yourself
 
@@ -66,12 +82,16 @@ Run the predictions for the test data.
 
 This is a possible solution:
 
-```Python
+```python
 predictions = naivebayes_model.predict(X_test_data)
 predictions
 ```
 
-TBD output
+The output is:
+
+```Output
+array(['spam', 'ham', 'ham', ..., 'spam', 'ham', 'spam'], dtype='<U4')
+```
 
 </details>
 
@@ -87,7 +107,15 @@ from sklearn.metrics import classification_report, confusion_matrix
 print(classification_report(predictions, y_test))
 ```
 
-TBD output
+Here's the output:
+```Output
+             precision    recall  f1-score   support
+
+        ham       0.97      0.99      0.98      1430
+       spam       0.95      0.79      0.86       242
+
+avg / total       0.96      0.96      0.96      1672
+```
 
 ### Try it yourself
 
@@ -104,14 +132,18 @@ This is a possible exercise solution:
 print(confusion_matrix(y_test, predictions))
 ```
 
-TBD output
+The output is:
+
+```Output
+[[1419   50]
+ [  11  192]]
+ ```
 
 </details>
 
 <br /><br />
 
 ***
-
 
 > [!div class="alert is-tip"]
 > ### Takeaway
