@@ -1,6 +1,6 @@
 How do companies keep up as industries evolve? The answer is innovation. 
 
-Even if companies "do everything right" with their existing business models, they'll lose competitiveness if they don't embrace innovative disruptions.<sup>1</sup> Indeed, 52 percent of Fortune 500 companies have either been acquired, gone bankrupt, or ceased to exist since 2000.<sup>2</sup>  
+Even if companies "do everything right" with their existing business models, they'll lose competitiveness if they don't embrace innovative disruptions.<sup>1</sup> Indeed, research shows that since 2000, 52 percent of companies in the Fortune 500 have either gone bankrupt, been acquired, or ceased to exist.<sup>2</sup>  
 
 The capacity to pivot as a business and foster innovation is crucial to long-term success. Innovative companies generally lead their industry's market share, attract top talent, and create cutting-edge products and services.
 
