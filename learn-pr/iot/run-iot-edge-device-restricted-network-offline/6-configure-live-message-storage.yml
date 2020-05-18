@@ -3,7 +3,7 @@ uid: learn.iot.run-iot-edge-device-restricted-network-offline.configure-live-mes
 metadata:
   title: Configure an IoT Edge device time-to-live and message storage
   description: Configure an IoT Edge device time-to-live and message storage
-  ms.date: 05/01/2020
+  ms.date: 01/05/2020
   author: abartolo
   ms.author: abartolo
   ms.topic: interactive-tutorial
