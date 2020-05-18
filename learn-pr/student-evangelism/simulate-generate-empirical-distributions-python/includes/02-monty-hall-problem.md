@@ -5,7 +5,7 @@ If you haven't set up your online Visual Studio Codespaces environment for the L
 
 Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
 
-This [problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) has
+[The Monty Hall problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) has
 flummoxed many people over the years, [mathematicians
 included](https://web.archive.org/web/20140413131827/http://www.decisionsciences.org/DecisionLine/Vol30/30_1/vazs30_1.pdf).
 Let's see if we can work it out by simulation.
