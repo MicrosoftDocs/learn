@@ -493,9 +493,8 @@ united
 | 6/1/15 | 292           | EWR         | 12    | -0.117987              |
 | 6/1/15 | 300           | HNL         | 20    | 0.0846461              |
 | 6/1/15 | 317           | IND         | -10   | -0.675228              |  
-```
-
 ... (13815 rows omitted)
+```
 
 The standard units that we can see are consistent with what we expect
 based on Chebychev's bounds. Most are of quite small size; only one is

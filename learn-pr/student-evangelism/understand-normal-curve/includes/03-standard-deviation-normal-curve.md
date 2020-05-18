@@ -7,7 +7,7 @@ as clearly identifiable as the mean. That is the bell-shaped
 distribution. This section examines that shape, as it appears frequently
 in probability histograms and also in some histograms of data.
 
-### A Roughly Bell-Shaped Histogram of Data
+### A roughly bell-shaped histogram of data
 
 Let us look at the distribution of heights of mothers in our familiar
 sample of 1,174 mother-newborn pairs. The mothers' heights have a mean
@@ -52,7 +52,7 @@ for $z = 0, \pm 1, \pm 2$, and $\pm 3$. Because of the shape of the
 distribution, the "center" has an unambiguous meaning and is clearly
 visible at 64.
 
-### How to Spot the SD on a Bell Shaped Curve
+### How to spot the "sd" on a bell shaped curve
 
 To see how the SD is related to the curve, start at the top of the curve
 and look towards the right. Notice that there is a place where the curve

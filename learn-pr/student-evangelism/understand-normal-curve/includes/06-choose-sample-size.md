@@ -6,13 +6,17 @@ decide how large their sample should be, to get a desired level of
 accuracy?
 
 We are now in a position to answer this question, after making a few
-assumptions: - The population of voters is very large and that therefore
+assumptions:
+
+- The population of voters is very large and that therefore
 we can just as well assume that the random sample will be drawn with
-replacement. - The polling organization will make its estimate by
+replacement.
+- The polling organization will make its estimate by
 constructing an approximate 95% confidence interval for the percent of
-voters who will vote for Candidate A. - The desired level of accuracy is
-that the width of the interval should be no more than 1%. That's pretty
-accurate! For example, the confidence interval (33.2%, 34%) would be
+voters who will vote for Candidate A. 
+- The desired level of accuracy is that the width of the interval should be no more than 1%. 
+
+That's accurate! For example, the confidence interval (33.2%, 34%) would be
 fine but (33.2%, 35%) would not.
 
 We will work with the sample proportion of voters for Candidate A.
