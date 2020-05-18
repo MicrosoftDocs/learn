@@ -12,4 +12,4 @@ title: Connect a child IoT device to an IoT Edge gateway
 # azureSandbox: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-connect-child-gatewayay.md)]
+  [!include[](includes/7-connect-child-gateway.md)]
