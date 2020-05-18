@@ -162,8 +162,8 @@ top.take(np.arange(start, top.num_rows, 10))
 Run the cell a few times to see how the output varies.
 
 This systematic sample is a probability sample. In this scheme, all rows
-have chance $1/10$ of being chosen. For example, Row 23 is chosen if and
-only if Row 3 is chosen, and the chance of that is $1/10$.
+have chance 1/10 of being chosen. For example, Row 23 is chosen if and
+only if Row 3 is chosen, and the chance of that is 1/10.
 
 But not all subsets have the same chance of being chosen. Because the
 selected rows are evenly spaced, most subsets of rows have no chance of

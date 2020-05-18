@@ -31,14 +31,14 @@ needed 1000 repetitions of generating the outcome of a single toss.
 
 ### Step 4: Coding the simulation
 
-Put it all together in code. - Create an empty array in which to collect
-all the simulated values. We will call this the collection array. -
-Create a "repetitions sequence," that is, a sequence whose length is the
+Put it all together in code. 
+- Create an empty array in which to collect all the simulated values. We will call this the collection array. 
+- Create a "repetitions sequence," that is, a sequence whose length is the
 number of repetitions you specified in Step 3. For `n` repetitions we
-will almost always use the sequence `np.arange(n)`. - Create a `for`
-loop. For each element of the repetitions sequence: - Simulate *one*
-value based on the code you developed in Step 2. - Augment the
-collection array with this simulated value.
+will almost always use the sequence `np.arange(n)`. 
+- Create a `for` loop. For each element of the repetitions sequence: 
+    - Simulate *one* value based on the code you developed in Step 2. 
+    - Augment the collection array with this simulated value.
 
 That's it! Once you have carried out the steps above, your simulation is
 done. The collection array contains all the simulated values.
@@ -178,6 +178,7 @@ simulation_results = Table().with_column(
 simulation_results
 ```
 
+``` output
 |Repetition|Number of Heads|
 |--- |--- |
 |1|46|
@@ -192,6 +193,7 @@ simulation_results
 |10|47|
 
 ... (9990 rows omitted)
+```
 
 ``` python
 simulation_results.hist('Number of Heads', bins = np.arange(30.5, 69.6, 1))
