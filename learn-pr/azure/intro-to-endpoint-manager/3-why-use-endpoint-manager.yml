@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-endpoint-manager.3-why-use-endpoint-manager
+title: Why use Endpoint Manager?
+metadata:
+  title: Why use Endpoint Manager?
+  description: Learn why you would use Microsoft Endpoint Manager to protect your organization.
+  ms.date: 05/18/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-why-use-endpoint-manager.md)]
