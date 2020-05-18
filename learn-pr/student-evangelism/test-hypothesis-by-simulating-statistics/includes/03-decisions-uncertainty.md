@@ -462,8 +462,4 @@ important to keep the following points in mind.
 
 ### Knowledge Check
 
-Let's try to develop a general framework for decision making, into which all our examples will fit. 
-
 Choose the appropriate word. Options may not be used at all.
-
-The basic structure of testing a hypothesis is the following:
