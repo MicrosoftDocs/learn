@@ -106,7 +106,7 @@ hodgkins
 ```
 
 ``` output
-|| height | rad | chemo | base   | month15 |
+| height | rad | chemo | base   | month15 |
 |--------|-----|-------|--------|---------|
 | 164    | 679 | 180   | 160.57 | 87.77   |
 | 168    | 311 | 180   | 98.24  | 67.62   |
