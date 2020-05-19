@@ -1,7 +1,5 @@
 Suppose you're working for a data analytics startup that's now expanding along with its increasing customer base. You receive customer data from multiple sources in different raw formats. To efficiently handle huge amounts of customer data, your company has decided to invest in Azure Databricks. Your team is responsible for analyzing how Databricks supports day-to-day data-handling functions, such as reads, writes, and queries. You want to move beyond simple data-handling functions and learn ways to simplify data exploration and perform data transformations. The data exploration and transformation tasks help your team conduct advanced analytics and machine learning in later stages of the data pipeline.
 
-[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
-
 ## Learning objectives
 
 In this module, you'll:

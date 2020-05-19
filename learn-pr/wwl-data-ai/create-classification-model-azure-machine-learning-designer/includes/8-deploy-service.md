@@ -24,7 +24,7 @@ Now you can test your deployed service from a client application - in this case,
     - **Overwrite if already exists**: Selected
     - **Select target directory**: *Select the folder with your user name under **User files***
 6. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
-7. If the notebook is not editable, in the **Edit** menu,  select **Edit inline**. Then in the cell that is created in the notebook, paste the following code:
+7. In the cell that has been created in the notebook, paste the following code:
 
     ```Python
     endpoint = 'YOUR_ENDPOINT' #Replace with your endpoint

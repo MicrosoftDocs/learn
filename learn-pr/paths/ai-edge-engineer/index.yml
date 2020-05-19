@@ -67,5 +67,9 @@ modules:
 - learn.oxford.intro-to-iot-edge
 - learn.oxford.deploy-prebuilt-module-edge-device
 - learn.oxford.train-package-azure-ml-module-iot-edge
+- learn.oxford.intro-iot-funtions-iot
+- learn.oxford.deploy-cognitive-service-iot-edge-azure-func
+- learn.oxford.intro-mlops-iot-edge
+- learn.oxford.intro-azure-sphere
 trophy:
   uid: learn.oxford.ai-edge-engineer.trophy

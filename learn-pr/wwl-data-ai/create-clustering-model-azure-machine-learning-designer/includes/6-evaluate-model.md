@@ -11,7 +11,7 @@ Evaluating a clustering model is made difficult by the fact that there are no pr
 
 4. Select **Submit**, and run the pipeline using the existing experiment named **iris-training**.
 5. Wait for the experiment run to complete.
-6. When the experiment run has completed, select the **Evaluate Model** module and in the settings pane, on the **Outputs + Logs** tab, under **Port outputs** in the **Evaluation results** section, use the **Visualize** icon to view the performance metrics. These metrics can help data scientists assess how well the model separates the clusters. They include a row of metrics for each cluster, and a summary row for a combined evaluation. The metrics in each row are:
+6. When the experiment run has completed, select the **Evaluate Model** module and in the settings pane, on the **Outputs + Logs** tab, under **Data outputs** in the **Evaluation results** section, use the **Visualize** icon to view the performance metrics. These metrics can help data scientists assess how well the model separates the clusters. They include a row of metrics for each cluster, and a summary row for a combined evaluation. The metrics in each row are:
     - **Average Distance to Other Center**: This indicates how close, on average, each point in the cluster is to the centroids of all other clusters.
     - **Average Distance to Cluster Center**: This indicates how close, on average, each point in the cluster is to the centroid of the cluster.
     - **Number of Points**: The number of points assigned to the cluster.
