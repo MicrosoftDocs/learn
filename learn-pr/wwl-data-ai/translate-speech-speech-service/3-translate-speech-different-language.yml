@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-speech-speech-service.translate-speech-different-language
+title: Translate Speech to Speech in a different language
+metadata:
+  title: Translate Speech to Speech in a different language
+  description: "Translate Speech to Speech in a different language"
+  ms.date: 06/30/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-translate-speech-different-language.md)]

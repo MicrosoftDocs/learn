@@ -115,7 +115,7 @@ Since your solution has just the one project in it, the scope of the job agent i
 Here, you'll set up a second pipeline to build the package and upload that package to Azure Artifacts.
 
 1. From Azure DevOps, go to the **Space Game - web - Dependencies** project.
-1. Select **Pipelines**, either from the project page or from the menu on the left and the the **All** tab.
+1. Select **Pipelines**, either from the project page or from the menu on the left and the **All** tab.
 1. Select **+ New Pipeline**.
 1. From the **Connect** tab, select **GitHub**.
 1. From the **Select** tab, select **mslearn-tailspin-spacegame-web-models**.

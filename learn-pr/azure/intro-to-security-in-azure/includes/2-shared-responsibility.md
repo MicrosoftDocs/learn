@@ -2,7 +2,9 @@ Organizations face many challenges with securing their datacenters, including re
 
 As computing environments move from customer-controlled datacenters to the cloud, the responsibility of security also shifts. Security of the operational environment is now a concern shared by both cloud providers and customers. By shifting these responsibilities to a cloud service like Azure, organizations can reduce focus on activities that aren't core business competencies. Depending on the specific technology choices, some security protections will be built into the particular service, while addressing others will remain the customer's responsibility. To ensure that the proper security controls are provided, a careful evaluation of the services and technology choices becomes necessary.
 
-![Diagram that depicts the advantages of using cloud technology for security.](../media/2-cloud-security.png)
+:::image type="complex" source="../media/2-cloud-security.png" alt-text="Diagram depicting the advantages of using cloud technology for security.":::
+    Diagram titled Security Advantages of Cloud Era. Showing two grids of boxes, one titled traditional approach, one titled cloud-enabled security, where boxes are shaded representing satisfied responsibility, unmet responsibility, partially met responsibility, and Cloud Provider responsibility. The traditional approach has these boxes scattered while the cloud-enabled security grid has them consolidated with several enabling factors: shift commodity responsibilities to provider and re-allocate your resources, leverage cloud-based security capabilities for more effectiveness, and use cloud intelligence to improve detection/response time.
+:::image-end:::
 
 #### Understand security threats
 
@@ -16,7 +18,9 @@ Moving to platform as a service (PaaS) outsources several security concerns. At 
 
 With software as a service (SaaS), you outsource almost everything. SaaS is software that runs with an internet infrastructure. The code is controlled by the vendor but configured to be used by the customer. Like so many companies, Contoso Shipping uses Office 365, which is a great example of SaaS!
 
-![An illustration showing how cloud providers and customers share security responsibilities under different types of compute service implementation: on-premises, infrastructure as a service, platform as a service, and software as a service.](../media/2-shared_responsibilities.png)
+:::image type="complex" source="../media/2-shared_responsibilities.png" alt-text="Illustration showing how cloud providers and customers share security responsibilities under different types of compute service implementation: on-premises, infrastructure as a service, platform as a service, and software as a service.":::
+    Responsibilities shift from customer to Microsoft moving from on-prem to IaaS to PaaS to SaaS. In on-prem, all boxes are customer. In IaaS, physical hosts, network, and datacenter are now Microsoft. In PaaS, additional responsibility moves to or becomes shared by Microsoft: operating system is entirely Microsoft; network controls, application, and identity & directory infrastructure are shared responsibility. In SaaS, network controls and application become entirely the responsibility of Microsoft.
+:::image-end:::
 
 For all cloud deployment types, you own your data and identities. You are responsible for helping secure your data and identities, your on-premises resources, and the cloud components you control (which vary by service type).
 
@@ -37,11 +41,11 @@ Regardless of the deployment type, you always retain responsibility for the foll
 
 Defense in depth can be visualized as a set of concentric rings, with the data to be secured at the center. Each ring adds an additional layer of security around the data. This approach removes reliance on any single layer of protection and acts to slow down an attack and provide alert telemetry that can be acted upon, either automatically or manually. Let's take a look at each of the layers.
 
-![An illustration showing Defense in depth with Data at the center. The rings of security around data are: application, compute, network, perimeter, identity and access, and physical security.](../media/defense_in_depth_layers_small.PNG)
+:::image type="content" source="../media/defense_in_depth_layers_small.png" alt-text="Illustration showing Defense in depth with Data at the center. The rings of security encompassing data are: application, compute, network, perimeter, identity and access, and physical security.":::
 
 :::row:::
   :::column:::
-    ![Image representing data](../media/2-data.png)
+    :::image type="icon" source="../media/2-data.png" border="false":::
   :::column-end:::
   :::column span="3":::  
 **Data**
@@ -59,7 +63,7 @@ It's the responsibility of those storing and controlling access to data to ensur
 
 :::row:::
   :::column:::
-    ![Image of a file on the network](../media/2-application.png)
+    :::image type="icon" source="../media/2-application.png" border="false":::
   :::column-end:::
   :::column span="3":::  
 **Application**
@@ -74,7 +78,7 @@ Integrating security into the application development life cycle will help reduc
 
 :::row:::
   :::column:::
-    ![A terminal representing compute](../media/2-compute.png)
+    :::image type="icon" source="../media/2-compute.png" border="false":::
   :::column-end:::
   :::column span="3":::  
 **Compute**
@@ -88,7 +92,7 @@ Malware, unpatched systems, and improperly secured systems open your environment
 
 :::row:::
   :::column:::
-    ![Three connected systems representing networking](../media/2-networking.png)
+    :::image type="icon" source="../media/2-networking.png" border="false":::
   :::column-end:::
   :::column span="3":::  
 **Networking**
@@ -104,7 +108,7 @@ At this layer, the focus is on limiting the network connectivity across all your
 
 :::row:::
   :::column:::
-    ![A physical barrier representing the network perimeter](../media/2-perimeter.png)
+    :::image type="icon" source="../media/2-perimeter.png" border="false":::
   :::column-end:::
   :::column span="3":::  
 **Perimeter**
@@ -118,7 +122,7 @@ At the network perimeter, it's about protecting from network-based attacks again
 
 :::row:::
   :::column:::
-    ![A badge representing a secure access](../media/2-policies-and-access.png)
+    :::image type="icon" source="../media/2-policies-and-access.png" border="false":::
   :::column-end:::
   :::column span="3":::  
 **Identity and access**
@@ -133,7 +137,7 @@ The identity and access layer is all about ensuring identities are secure, acces
 
 :::row:::
   :::column:::
-    ![A security camera representing physical security](../media/2-physical-security.png)
+    :::image type="icon" source="../media/2-physical-security.png" border="false":::
   :::column-end:::
   :::column span="3":::  
 **Physical security**
