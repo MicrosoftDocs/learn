@@ -2,8 +2,6 @@ In this module, you'll gain an understanding of the eShopOnContainers app and th
 
 ## eShopOnContainers architecture
 
-**TODO**: The below image has to be modified. Better representation of API Gateway needed.
-
 ![eShop application architecture](../media/temp/eshop-architecture.png)
 
 The eShopOnContainers app is an online store that sells various physical products like pins, t-shirts, and coffee mugs. The store includes the following functionality:

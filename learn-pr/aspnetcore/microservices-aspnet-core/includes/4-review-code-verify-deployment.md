@@ -1,5 +1,3 @@
-# Exercise - Review code and test deployment
-
 Soon after launching the setup script, the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution to the *~/clouddrive/source/eShop-Learn/* directory. You may investigate the solution while the script continues to deploy the Docker containers to AKS, even if the script is still running. 
 
 ## Review code

@@ -1,5 +1,3 @@
-# Exercise - Deploy application
-
 In this unit, you'll use a script to deploy the existing eShopOnContainers app to AKS.
 
 ## Run deployment script

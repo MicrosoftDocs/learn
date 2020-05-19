@@ -1,5 +1,3 @@
-# Summary
-
 In this module, you: 
 
 * Deployed and examined an existing ASP.NET Core microservice running in AKS.
