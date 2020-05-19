@@ -6,10 +6,9 @@ metadata:
   description: Review what you've learned
   ms.date: 09/19/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -30,16 +29,16 @@ quiz:
       explanation: "Make sure to use square brackets to access an element using an index."
   - content: "Which of the following answers is the correct way to create a new array of int with three elements?"
     choices:
-    - content: "`int[] myArray = new Array[3];`"
+    - content: "`int[] myArray = new int[3];`"
       isCorrect: true
       explanation: "Correct!"
-    - content: "`int[] myArray = new Array[2];`"
+    - content: "`int[] myArray = new int[2];`"
       isCorrect: false
       explanation: "Indexes are zero based, but when creating a new array, use the actual number of elements you want to create."
-    - content: "`int myArray[] = new Array[3];`"
+    - content: "`int myArray[] = new int[3];`"
       isCorrect: false
       explanation: "The square brackets don't go there."
-    - content: "`int myArray = new Array[3];`"
+    - content: "`int myArray = new int[3];`"
       isCorrect: false
       explanation: "Missing a set of square brackets."
   - content: "Which of the following `foreach` statements is correct?"
@@ -50,7 +49,7 @@ quiz:
     - content: "`foreach (int value of values)`"
       isCorrect: false
       explanation: "The `foreach` statement doesn't include an `of` keyword."
-    - content: "foreach (int value with values)`"
+    - content: "`foreach (int value with values)`"
       isCorrect: false
       explanation: "The `foreach` statement doesn't include an `with` keyword."
     - content: "`foreach (int value on values)`"

@@ -32,7 +32,7 @@ The `WriteLine()` part is called a **method**.  You can always spot a method bec
 
 The `Console` part is called a **class**.  Classes "own" methods, or perhaps a better way to say it is that methods live inside of a class.  To visit the method, you must know which class it's in.  For now, think of a class as a way to store and organize all of the methods that do similar things.  In this case, all of the methods that operate on our Output pane are defined inside of the Console class.
 
-There was also a dot, or period, that separated the class name `Console` and the method name `WriteLine()`.  The period is the *member access operator*.  In other words, the dot is how you "navigate" from the class to one of it's methods.
+There was also a dot, or period, that separated the class name `Console` and the method name `WriteLine()`.  The period is the *member access operator*.  In other words, the dot is how you "navigate" from the class to one of its methods.
 
 Finally, the semi-colon is the *end of statement operator*.  A **statement** is a complete instruction in C#.  The semi-colon tells the compiler that we're finished typing the command.
 

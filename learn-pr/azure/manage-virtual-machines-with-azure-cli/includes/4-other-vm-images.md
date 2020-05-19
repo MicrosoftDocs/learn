@@ -1,4 +1,4 @@
-We used `Debian` for the image to create the virtual machine. Azure has several standard VM images you can use to create a virtual machine. 
+We used UbuntuLTS for the image to create the virtual machine. Azure has several standard VM images you can use to create a virtual machine. 
 
 ## Listing images
 

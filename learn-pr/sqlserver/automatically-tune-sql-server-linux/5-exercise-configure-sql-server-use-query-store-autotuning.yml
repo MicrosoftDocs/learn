@@ -9,9 +9,8 @@ metadata:
   ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 5
-## TODO: Update this when we have the correct Lab ID
-labId: 47218
+interactive: bash
+azureSandbox: true
 content: |
   [!include[](includes/5-exercise-configure-sql-server-use-query-store-autotuning.md)]

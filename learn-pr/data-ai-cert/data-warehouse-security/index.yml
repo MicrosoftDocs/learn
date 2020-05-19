@@ -2,14 +2,15 @@
 uid: learn.data-ai.data-warehouse-security
 metadata:
   title: Data warehouse security
-  description: Learn about the security controls that Azure SQL Data Warehouse provides to help secure your data warehouse infrastructure and the data that's stored in it
+  description: Learn about the security controls that Azure Synapse Analytics provides to help secure your data warehouse infrastructure and the data that's stored in it
   ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  author: wwlpublish
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Data warehouse security
-summary: Learn about the security controls that Azure SQL Data Warehouse provides to help secure your data warehouse infrastructure and the data that's stored in it.
+summary: Learn about the security controls that Azure Synapse Analytics provides to help secure your data warehouse infrastructure and the data that's stored in it.
+hidden: true
 abstract: | 
   In this module, you will:
   - Configure access controls to the server.
@@ -26,7 +27,7 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-sql-data-warehouse
+- azure-synapse-analytics
 units:
 - learn.data-ai.data-warehouse-security.introduction
 - learn.data-ai.data-warehouse-security.azure-dw-security-control

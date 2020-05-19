@@ -1,4 +1,4 @@
-1. The Ambari dashboard can be accessed by clicking the Ambari home link in the Cluster dashboards section of the HDInsight Overview blade in Azure portal.
+1. The Ambari dashboard can be accessed by clicking the Ambari home link in the Cluster dashboards section of the HDInsight Overview pane in Azure portal.
 
 2. You will then be prompted for a cluster login username and password. Enter the credentials you chose when you created the cluster.
 

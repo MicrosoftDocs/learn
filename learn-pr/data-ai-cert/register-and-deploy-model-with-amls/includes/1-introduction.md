@@ -1,17 +1,13 @@
-In this module, you will learn how to register and deploy a model at scale using the Azure Machine Learning service. You will create a deployment workspace, register the machine learning models and containers, and deploy the models and containers using the Azure Machine Learning service.
+In machine learning, *inferencing* refers to the use of a trained model to predict labels for new data on which the model has not been trained. Often, the model is deployed as part of a service that enables applications to request immediate, or *real-time*, predictions for individual or small numbers of data observations.
 
-> [!NOTE]
-> This module requires an Azure subscription. The services you create and use are free, but you'll need an active subscription or trial to complete the exercises. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+![A real-time inferencing service](../media/07-01-real-time.jpg)
+
+In Azure Machine learning, you can create real-time inferencing solutions by deploying a model as a service, hosted in a containerized platform such as Azure Kubernetes Services (AKS).
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you will learn how to:
 
-- Create a deployment workspace using the Azure portal
-- Create a deployment workspace using Python and the Azure ML SDK
-- Register a model to the container registry in the workspace
-- Create a model scoring script
-- Create a YAML file configuring Python module dependencies
-- Create a container image
-- Deploy a model as a web service
-- Score new data with the deployed model
+- Deploy a model as a real-time inferencing service.
+- Consume a real-time inferencing service.
+- Troubleshoot service deployment

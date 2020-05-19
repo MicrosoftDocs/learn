@@ -307,7 +307,7 @@ List the content that will enable the learner to *Create web servers*:
     az network public-ip show --resource-group gatewayrg --name appgwipaddr --query dnsSettings.fqdn
     ```
 
-    1. Using a web browser, navigate to http://*\<fqdn of app gateway\>*.
+    1. Using a web browser, navigate to `http://{fqdn of app gateway}`.
     1. Verify that the Home page of the web app appears. Note the name of the selected server to which the session has been connected.
     1. Click **Register** to register a vehicle.
     1. Click the **Refresh** button in the address bar of the web browser. Notice that the session should now be connected to a different server.

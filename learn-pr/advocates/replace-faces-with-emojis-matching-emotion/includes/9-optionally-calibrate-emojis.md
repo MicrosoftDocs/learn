@@ -110,11 +110,12 @@ export async function index(context, req) {
 Now comes the fun part! We are going to run each of the images in the `shared/proxy-images` through the Face API to calculate an emotional point for that emoji in emotional space.
 
 Make sure the function app is running by starting it from the debug menu or running it from the terminal.
+
 ```bash
 func host start
 ```
 
-Run the new `Calibrate` function by connecting to: http://localhost:7071/api/Calibrate.
+Run the new `Calibrate` function by connecting to: `http://localhost:7071/api/Calibrate`.
 
 > [!NOTE]
 > The Face API restricts the rate at which it can be called. If the rate limit is exceed the code will wait 30 seconds and try again. Since the calibrate function is make calls in quick succession you may hit this rate limit, and see that the Calibrate function takes a minute or two to execute.

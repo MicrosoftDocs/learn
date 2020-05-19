@@ -27,7 +27,7 @@ Migrating your Security Center subscription from the free tier to the standard t
 - **Adaptive Network Hardening**. Adaptive Network Hardening provides recommendations to harden applied NSG rules. It uses machine learning algorithms that factors in actual traffic, known trusted configuration, threat intelligence, and other indicators of compromise, and then provides recommendations to allow traffic only from specific IP/port tuples.
 - **Security alerts**. Security Center supports a variety of security alerts such as detection of potential distributed denial-of-service (DDOS) attacks. Just-in-time alerts gives you the chance to investigate evolving issues before they result in a service failure.
 - **Threat intelligence**. This feature can help determine the nature of an attack, the attack point of origin, and more.
-- **Security Playbook**. Security playbook is a collection of procedures that can be executed from Security Center once a certain playbook is triggered from selected alert. Security playbook can help to automate and orchestrate your response to a specific security alert detected by Security Center.
+- **Workflow Automation**. Workflow automation is a collection of procedures that can be executed from Security Center once a certain playbook is triggered from selected alert. Workflow automation can help to automate and orchestrate your response to a specific security alert detected by Security Center.
 
 ## Switch to the Standard tier
 

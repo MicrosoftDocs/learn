@@ -1,12 +1,12 @@
-In this module, you've looked at the basics of data classification. You should now understand how to deal with data based on its expected impact level on the organization, and its stakeholders.
+In this module, you've looked at the basics of data classification. You should now understand how to deal with data based on its expected impact level on the organization and on stakeholders.
 
-You've considered encryption at rest, and walked through how it's achieved with the different tools, and methods in Azure. You've seen how encryption at rest can be achieved with different data structured in different formats.
+You've considered encryption at rest and walked through how you can achieve it by using tools and methods in Azure. You've seen how to achieve encryption at rest with data structured in different formats.
 
-You've seen how Azure Key Vault is used to manage all of your keys and secrets in a secure and central location. Azure Key Vault also increases the robustness and security of your applications.
+You've seen how to use Azure Key Vault to manage all of your keys and secrets in a central location. Azure Key Vault also increases the robustness and security of your applications.
 
 ## Learn more
 
-To learn more about data security on Azure, please visit the following articles.
+To learn more about data security on Azure, see the following articles:
 
 - [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 - [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)

@@ -36,7 +36,7 @@ It can take up to 15 minutes for the first successful backup to finish. We need 
 
 Let's start by simulating a mistaken database modification.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select the **sql-erp-db** database.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)menu or from the **Home** page, select **All resources**, and then select the **sql-erp-db** database.
 
 1. Select **Query editor**, and then sign in with the **dbadmin** user and the password that you specified for this account.
 
@@ -57,13 +57,13 @@ Let's start by simulating a mistaken database modification.
 
     You should see **No results** returned, because we deleted the **Person** table.
 
-    ![Screenshot with no results after querying for the tables in the database](../media/7-no-results.png)
+    ![Screenshot with no results after querying for the tables in the database.](../media/7-no-results.png)
 
 ## Run a point-in-time restore
 
 The **Person** table was mistakenly deleted. Now, let's restore the database to its previous state.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select the **sql-erp-db** database.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **sql-erp-db** database.
 
 1. At the top of the **Overview** page, select **Restore**.
 
@@ -79,7 +79,7 @@ The **Person** table was mistakenly deleted. Now, let's restore the database to 
     | Pricing tier | Default value |
     | | |
 
-    ![Screenshot of restoring a database in the portal](../media/7-restoring-a-database-pitr.png)
+    ![Screenshot of restoring a database in the portal. A callout highlights the OK button.](../media/7-restoring-a-database-pitr.png)
 
     The database restore will take several minutes.
 
@@ -87,7 +87,7 @@ The **Person** table was mistakenly deleted. Now, let's restore the database to 
 
 The restored database should contain the **Person** table. You can check that in the portal.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select the **sql-erp-db-restored** database.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **sql-erp-db-restored** database.
 
 1. Select **Query editor**, and then sign in with the **dbadmin** user and the password that you specified for this account.
 
@@ -102,7 +102,7 @@ The restored database should contain the **Person** table. You can check that in
 
     The **Person** table should now be present.
 
-    ![Screenshot with results after querying for the tables in the database](../media/7-query-after-restore-1.png)
+    ![Screenshot of results after querying for the tables in the database.](../media/7-query-after-restore-1.png)
 
 1. Confirm that the data is in the table by running this command.
 
@@ -112,6 +112,6 @@ The restored database should contain the **Person** table. You can check that in
 
     You should see the data that you entered previously.
 
-    ![Screenshot with results after querying for the tables in the database](../media/7-query-after-restore-2.png)
+    ![Screenshot of results after querying for the tables in the database.](../media/7-query-after-restore-2.png)
 
 You've now seen how you can restore a database if something unintended happens to the data. You've familiarized yourself with the restore process. You can now assure your organization that your backup and restore procedures are properly defined.

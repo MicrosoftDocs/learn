@@ -20,7 +20,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. The resources for the group will then be displayed. Click the name of the function app that you created in the previous exercise by selecting the **escalator-functions-xxxxxxx** item (also indicated by the lightning bolt Function icon).
 
-    ![Screenshot of the Azure portal showing the All resources blade highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
+    ![Screenshot of the Azure portal showing the All resources pane highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
 
 1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
 
@@ -92,7 +92,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. The resources for the group will then be displayed. Click the name of the function app that you created in the previous exercise by selecting the **escalator-functions-xxxxxxx** item (also indicated by the lightning bolt Function icon).
 
-    ![Screenshot of the Azure portal showing the All resources blade highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
+    ![Screenshot of the Azure portal showing the All resources pane highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
 
 1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
 
@@ -104,7 +104,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. Enter **DriveGearTemperatureService** in the name field of the **New Function** dialog that appears. Leave the Authorization level as "Function" and press the **Create** button to create the function.
 
-1. When your function creation completes, the code editor opens with the contents of the *index.js* code file. The default code that the template generated for us is listed in the following snippet.
+1. When your function creation completes, the code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```powershell
     using namespace System.Net
@@ -190,7 +190,7 @@ The function and master keys are found in the **Manage** section when the functi
 
 1. Expand your function and select the **Manage** section, show the default Function Key, and copy it to the clipboard.
 
-    ![Screenshot of the Azure portal showing the function Manage blade with the revealed function key highlighted.](../media/5-get-function-key.png)
+    ![Screenshot of the Azure portal showing the function Manage pane with the revealed function key highlighted.](../media/5-get-function-key.png)
 
 1. Next, from the command line where you installed the **cURL** tool, format a cURL command with the URL for your function, and the Function key.
 
@@ -363,7 +363,7 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
 
 1. Select **Run** and view the response in the output pane. To see log messages, open the **Logs** tab in the bottom flyout of the page. The following screenshot shows an example response in the output pane and messages in the  **Logs** pane.
 
-    ![Screenshot of the Azure portal showing the function editor blade with the Test and Logs tabs visible. A sample response from the function is shown in the output pane.](../media/5-portal-testing.png)
+    ![Screenshot of the Azure portal showing the function editor pane with the Test and Logs tabs visible. A sample response from the function is shown in the output pane.](../media/5-portal-testing.png)
 
     You can see in the output pane that our status field has been correctly added to each of the readings.
 

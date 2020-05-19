@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-devops-continuous-security-operations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements about remediating security breaches is optimal?"
+    choices:
+    - content: "Manual remediation is a viable option in environments with combined legacy and modern application platforms."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn’t an optimal statement about remediating security breaches."
+    - content: "Remediation must be automated as much as possible."
+      isCorrect: true
+      explanation: "That’s correct. This is an optimal statement about remediating security breaches."
+    - content: "Determining the source of the breach is more important than rapid remediation."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn’t an optimal statement about remediating security breaches."
+  - content: "Which of the following provides the best basic description of the defense-in-depth security concept?"
+    choices:
+    - content: "Valuable data and information are located within extremely complex, or deep, data structures."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn’t the best basic description of defense-in-depth."
+    - content: "Defensive mechanisms are layered to protect valuable data and information."
+      isCorrect: true
+      explanation: "That’s correct. This is the best basic description of defense-in-depth."
+    - content: "Different attack vectors are prioritized and the use of redundant security mechanisms is de-emphasized."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn’t the best basic description of defense-in-depth."
+  - content: "The costs of a security breach often go well beyond the loss of sales and trust in a company. Which items in the following list are non-obvious potential effects of a breach?"
+    choices:
+    - content: "Regulatory fines and responses, and brand recovery costs"
+      isCorrect: true
+      explanation: "That’s correct. Regulatory fines and responses, and brand recovery costs are non-obvious potential effects of a breach."
+    - content: "Good publicity from news headlines and regulatory fines and responses"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Good publicity from news headlines and regulatory fines and responses aren't non-obvious potential effects of a breach."
+    - content: "Brand recovery costs and good publicity from news headlines"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Brand recovery costs and good publicity from news headlines aren't non-obvious potential effect of a breach."
+  - content: "Continuous Operations reduces or eliminates the need for planned downtimes or interruptions, such as scheduled maintenance. What should continuous monitoring of infrastructure, applications, and services be tied to, if possible?"
+    choices:
+    - content: "Security scanning"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Security scanning shouldn’t be tied to continuous monitoring."
+    - content: "Sprint planning"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Sprint planning shouldn’t be tied to continuous monitoring."
+    - content: "Automated remediation"
+      isCorrect: true
+      explanation: "That’s correct. Automated remediation should be tied to continuous monitoring if possible."
+  - content: "A large part of the value of DevOps in general is about finding the right balance between which of the following?"
+    choices:
+    - content: "Innovation (speed) and business continuity (control)"
+      isCorrect: true
+      explanation: "That’s correct. The value of DevOps in general is about finding a balance between innovation and business continuity."
+    - content: "Discussion (iteration) and implementation (deployment)"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. The value of DevOps isn’t about finding a balance between discussion and implementation."
+    - content: "Estimation (planning) and achievability (results)"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. The value of DevOps isn’t about finding a balance between estimation and achievability."

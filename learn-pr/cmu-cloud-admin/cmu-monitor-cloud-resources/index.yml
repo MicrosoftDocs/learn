@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources
+metadata:
+  title: Monitor cloud resources
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Monitoring how your cloud resources are performing is crucial to building reliable cloud applications. This module covers what monitoring is, why you need to do it, and how you can about monitoring your resources.
+  ms.date: 1/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Monitor cloud resources
+summary: Monitoring how your cloud resources are performing is crucial to building reliable cloud applications. This module covers what monitoring is, why you need to do it, and how you can about monitoring your resources.
+abstract: | 
+  In this module you will:
+  - Explain the main argument in favor of continual and consistent monitoring and oversight in cloud-based IT systems
+  - Describe the three types of quantitative measurements that play a role in monitoring
+  - Understand the mechanics of monitoring platforms that utilize agents to collect and report back information
+  - Understand the mechanics of monitoring platforms that rely upon pre-existing sources of information such as service logs to analyze performance
+  - Understand the metrics that are the most beneficial to monitoring
+  - Learn how measurements are used to judge performance levels
+  - Describe the justification for problem ticketing
+  - Describe what KPIs are and how they differ from metrics
+  - Discuss the concept of “everyday remediation”
+
+  This content is provided in partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+ - Understand what cloud computing is, including cloud service models, and common cloud providers
+ - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+ - Be familiar with different organizational IT cost types like CapEx and OpEx
+ - Understand how cloud resource provisioning works
+
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-monitor-cloud-resources.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.0-introduction
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.1-why-monitor
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.2-monitoring-platforms
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.3-metrics-indicators-correlations
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.4-remediation-planning
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.5-summary
+
+badge:
+  uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources.badge

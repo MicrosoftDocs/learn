@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.deploy-prebuilt-module-edge-device.2-what-is-prebuilt-module
+title: What is a prebuilt module?
+metadata:
+  title: What is a prebuilt module?
+  description: In this section, we provide a definition of the prebuilt module
+  ms.date: 9/29/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/2-what-is-prebuilt-module.md)]

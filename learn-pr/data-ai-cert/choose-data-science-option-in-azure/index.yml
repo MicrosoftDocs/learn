@@ -1,8 +1,9 @@
 ### YamlMime:Module
 uid: learn.data-ai.choose-azure-data-science-option
+hidden: true
 metadata:
   title: Choose the Data Science service in Azure you need
-  description: In this module, you will learn about Azure services that support the Data Science process. You will learn the features of each service and what use cases each service supports.
+  description: Learn about Azure services that support the Data Science process, the features of each service, and what use cases each service supports.
   ms.date: 03/18/2019
   author: GraemeMalcolm
   ms.author: gmalc
@@ -22,6 +23,7 @@ levels:
 - beginner
 roles:
 - data-scientist
+- student
 products:
 - azure
 units:

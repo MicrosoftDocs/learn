@@ -20,11 +20,12 @@ prerequisites: |
   - Beginner level experience with string helper methods
   - Beginner level experience with the `while` iteration statement
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/csharp-modify-content.svg
 levels:
 - beginner
 roles:
 - developer
+- student
 products:
 - dotnet
 units:

@@ -9,27 +9,26 @@ metadata:
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following tasks would be a good fit for the Speech Translation API?"
+  - content: "Which of the following tasks would be a good fit for the Speech-to-Text?"
     choices:
     - content: Translating a document written in English into German
       isCorrect: false
-      explanation: "The Speech Translation API isn't designed to translate written content into other languages or to do untranslated speech recognition or synthesis. These features are part of the Bing Speech API."
-    - content:  Real-time voice-chat translation between a German and a French speaker
+      explanation: "The Speech-to-Text isn't designed to translate written content into other languages or to do untranslated speech recognition or synthesis. These features are part of the Bing Speech API."
+    - content:  Real-time voice-chat transcription from a microphone
       isCorrect: true
-      explanation: "The Speech Translation API is designed to do real-time speech translation for scenarios like in-person or remote translated communications and media subtitling."
+      explanation: "Speech-to-Text can perform real-time transcribing (text output) from audio streams such as input from a microphone."
     - content: Creating an audio file from a famous quote
       isCorrect: false
-      explanation: "The Speech Translation API isn't designed to translate written content into other languages, or to do untranslated speech recognition or synthesis. These features are part of the Bing Speech API."
-  - content: "Which of the following text-to-speech output formats are supported by the Speech Translation API Translate method?"
+      explanation: "Speech-to-Text isn't designed to translate written content into other languages, or to do untranslated speech recognition or synthesis. These features are part of the Bing Speech API."
+  - content: "Which of the following text-to-speech output formats are supported by Speech-to-Text?"
     choices:
     - content: audio/wav
       isCorrect: true
-      explanation: "The Speech Translation API Translate method supports \"audio/wav\" and \"audio/mp3\" as output formats via the format parameter."
+      explanation: "Speech-to-Text supports \"audio/wav\" and \"audio/mp3\" as output formats via the format parameter."
     - content: audio/midi
       isCorrect: false
       explanation: "MIDI isn't a supported output format."

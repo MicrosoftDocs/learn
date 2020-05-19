@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>NA/add-custom-domain-to-azure-active-directory</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-5.9%" y="-6.9%" width="111.8%" height="113.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.104902627 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-41" transform="translate(-50.000000, -460.000000)">
+            <g id="NA/add-custom-domain-to-azure-active-directory" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Certificate" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(14.000000, 23.000000)">
+                            <path d="M68,45.8181818 C68,47.0181818 67.04375,48 65.875,48 L2.125,48 C0.95625,48 0,47.0181818 0,45.8181818 L0,2.18181818 C0,0.981818182 0.95625,0 2.125,0 L65.875,0 C67.04375,0 68,0.981818182 68,2.18181818 L68,45.8181818" id="Fill-1145" fill="#F2BE53"></path>
+                            <path d="M66,44 C66,45.1 65.1,46 64,46 L4,46 C2.9,46 2,45.1 2,44 L2,4 C2,2.9 2.9,2 4,2 L64,2 C65.1,2 66,2.9 66,4 L66,44" id="Fill-1145" fill="#E1E4E1"></path>
+                            <g id="Group" stroke-width="1" fill="none" transform="translate(3.000000, 26.000000)">
+                                <polyline id="Fill-1146" fill="#DF5142" points="15 32 10 29 5 32 5 13 15 13 15 32"></polyline>
+                                <polyline id="Fill-1147" fill="#C5CCCD" points="18.051 12.158 18.225 12.966 20 11 19.548 10.5 18.051 12.158"></polyline>
+                                <polyline id="Fill-1148" fill="#C5CCCD" points="1.949 7.842 1.54 5.935 1.339 6 1.776 8.034 1.949 7.842"></polyline>
+                                <polyline id="Fill-1149" fill="#C5CCCD" points="18.461 5.935 18.051 7.842 18.225 8.034 18.662 6 18.461 5.935"></polyline>
+                                <polyline id="Fill-1150" fill="#C5CCCD" points="1.949 12.158 0.452 10.5 2.55906407e-13 11 1.776 12.966 1.949 12.158"></polyline>
+                                <polyline id="Fill-1151" fill="#C5CCCD" points="15.892 15.891 15 18.662 12.158 18.049 10 20 7.842 18.049 5 18.662 4.108 15.891 1.54 15.065 1.339 16 4.108 16.891 5 19.662 7.842 19.049 10 21 12.158 19.049 15 19.662 15.892 16.891 18.662 16 18.461 15.065 15.892 15.891"></polyline>
+                                <polyline id="Fill-1152" fill="#EFB252" points="10 0 12.158 1.95 15 1.339 15.892 4.109 18.662 5 18.051 7.842 20 10 18.051 12.158 18.662 15 15.892 15.891 15 18.662 12.158 18.049 10 20 7.842 18.049 5 18.662 4.108 15.891 1.339 15 1.949 12.158 0 10 1.949 7.842 1.339 5 4.108 4.109 5 1.339 7.842 1.95 10 0"></polyline>
+                                <polyline id="Fill-1153" fill="#C2423D" points="12.158 18.049 10 20 7.842 18.049 5 18.662 5 20.662 7.842 20.049 10 22 12.158 20.049 15 20.662 15 18.662 12.158 18.049"></polyline>
+                                <polyline id="Fill-1160" fill="#F2BE53" points="12.158 1.95 10 1.4033219e-13 9.861 0.125 3.784 15.786 4.108 15.891 5 18.662 7.101 18.209 13.635 1.632 12.158 1.95"></polyline>
+                                <polyline id="Fill-1161" fill="#F2BE53" points="10 20 12.158 18.049 15 18.662 15.892 15.891 18.662 15 18.051 12.158 20 10 18.051 7.842 18.662 5 15.892 4.109 15.377 2.511 8.875 18.983 10 20"></polyline>
+                                <path d="M10,7 C8.346,7 7,8.346 7,10 C7,11.654 8.346,13 10,13 C11.654,13 13,11.654 13,10 C13,8.346 11.654,7 10,7" id="Fill-1162" fill="#CC9547"></path>
+                                <polyline id="Fill-1163" fill="#C2423D" points="10 21 15 19 15 32 10 29 10 21"></polyline>
+                            </g>
+                            <path d="M39,39 L27,39 C26.141,39 26,38.552 26,38 C26,37.448 26.141,37 27,37 L39,37 C39.859,37 40,37.448 40,38 C40,38.552 39.859,39 39,39" id="Fill-1154" fill="#C5CCCD"></path>
+                            <path d="M44,11 L24,11 C23.141,11 23,10.552 23,10 C23,9.448 23.141,9 24,9 L44,9 C44.859,9 45,9.448 45,10 C45,10.552 44.859,11 44,11" id="Fill-1155" fill="#546670"></path>
+                            <path d="M40,15 L28,15 C27.141,15 27,14.552 27,14 C27,13.448 27.141,13 28,13 L40,13 C40.859,13 41,13.448 41,14 C41,14.552 40.859,15 40,15" id="Fill-1156" fill="#546670"></path>
+                            <path d="M52,31 L27,31 C26.141,31 26,30.552 26,30 C26,29.448 26.141,29 27,29 L52,29 C52.859,29 53,29.448 53,30 C53,30.552 52.859,31 52,31" id="Fill-1157" fill="#C5CCCD"></path>
+                            <path d="M58,27 L27,27 C26.141,27 26,26.552 26,26 C26,25.448 26.141,25 27,25 L58,25 C58.859,25 59,25.448 59,26 C59,26.552 58.859,27 58,27" id="Fill-1158" fill="#C5CCCD"></path>
+                            <path d="M58,23 L27,23 C26.141,23 26,22.552 26,22 C26,21.448 26.141,21 27,21 L58,21 C58.859,21 59,21.448 59,22 C59,22.552 58.859,23 58,23" id="Fill-1159" fill="#C5CCCD"></path>
+                        </g>
+                    </g>
+                    <g id="azure-active-directory-icon" mask="url(#mask-2)" fill="#C2423D">
+                        <g transform="translate(20.000000, 29.000000)">
+                            <ellipse id="Oval" cx="7.11864407" cy="2" rx="1.89830508" ry="2"></ellipse>
+                            <ellipse id="Oval" cx="7.11864407" cy="12" rx="1.89830508" ry="2"></ellipse>
+                            <rect id="Rectangle" x="6.6440678" y="3.5" width="1.4" height="8.5"></rect>
+                            <ellipse id="Oval" cx="12.1016949" cy="7.5" rx="1.89830508" ry="2"></ellipse>
+                            <ellipse id="Oval" cx="1.89830508" cy="7.5" rx="1.89830508" ry="2"></ellipse>
+                            <polygon id="Rectangle" transform="translate(9.728814, 5.000000) rotate(-40.000000) translate(-9.728814, -5.000000) " points="9.35014213 0.851806757 10.3203036 0.826769272 10.107485 9.14819324 9.1373235 9.17323073"></polygon>
+                            <polygon id="Rectangle" transform="translate(4.508475, 5.000000) scale(-1, 1) rotate(-40.000000) translate(-4.508475, -5.000000) " points="4.12980315 0.851806757 5.09996463 0.826769272 4.88714601 9.14819324 3.91698452 9.17323073"></polygon>
+                            <polygon id="Rectangle" transform="translate(9.491525, 9.250000) scale(1, -1) rotate(-56.000000) translate(-9.491525, -9.250000) " points="9.09965834 5.16031364 10.0837585 5.13674117 9.88339251 13.3396864 8.89929234 13.3632588"></polygon>
+                            <polygon id="Rectangle" transform="translate(4.745763, 9.250000) scale(-1, -1) rotate(-56.000000) translate(-4.745763, -9.250000) " points="4.35389563 5.16031364 5.3379958 5.13674117 5.13762979 13.3396864 4.15352963 13.3632588"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

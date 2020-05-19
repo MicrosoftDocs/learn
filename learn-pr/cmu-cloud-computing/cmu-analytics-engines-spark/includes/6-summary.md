@@ -1,0 +1,8 @@
+- MapReduce is ill suited for certain types of applications that are iterative in nature. This is due to the heavy I/O cost involved in reading inputs from DFS and writing them back to DFS for each iteration.
+- Spark is an optimized, in-memory framework suited for iterative, interactive, and streaming applications.
+- Spark relies on resilient distributed datasets (RDDs), a distributed memory abstraction to support fault-tolerant, in-memory computations on large clusters.
+- Spark can either be run in standalone mode, or in a cluster using either the Mesos or YARN resource manager.
+- RDDs are in-memory read-only (immutable) objects partitioned across the cluster. 
+- RDDs are fault tolerant by using a lineage tracking technique that keeps track of the sequence operations performed to transform on-disk data to its current form in memory.
+- Dependencies in RDDs are classified as either narrow or wide.
+- The Spark ecosystem includes Spark SQL, Spark Streaming, MLlib, and GraphX.

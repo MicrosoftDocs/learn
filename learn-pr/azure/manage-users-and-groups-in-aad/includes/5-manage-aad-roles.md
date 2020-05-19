@@ -40,7 +40,7 @@ Next, let's explore some of the other built-in roles.
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true)
 1. Select **Resource groups** from the left sidebar.
-1. Select the sole resource group **<rgn>[Learn sandbox resource group</rgn>** from the list.
+1. Select the resource group.
 1. Select the **Access control (IAM)** item from the sidebar menu.
 1. Select the **Roles** tab as shown below to see the list of available roles.
 
@@ -113,7 +113,7 @@ Data operations are specified in the `DataActions` and `NotDataActions` properti
 
 Only data operations can be added to the `DataActions` and `NotDataActions` properties. Resource providers identify which operations are data operations by setting the `isDataAction` property to `true`.  Roles that do not have data operations can omit these properties from the role definition.
 
-These actions work exactly like their management cousins. You specify actions you want to allow (or `*` for all) and then provide a list of specific actions to remove in the `NotDataActions` collection. Here are some examples, you can find the [full list of actions and data actions in the resource provider documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations):
+These actions work exactly like their management cousins. You specify actions you want to allow (or `*` for all) and then provide a list of specific actions to remove in the `NotDataActions` collection. Here are some examples, you can find the [full list of actions and data actions in the resource provider documentation](https://docs.microsoft.com/azure/role-based-access-control/resource-provider-operations):
 
 | Data operation | Description |
 |----------------|-------------|

@@ -31,7 +31,7 @@ Suppose you have to troubleshoot a virtual network created by your colleagues. U
 
 You use the Azure portal to view the topology of an Azure network. In the Azure portal:
 
-1. Go to **All Services** > **Networking** > **Network Watcher**.
+1. On the Azure portal menu, select **All services**. Then go to **Networking** > **Network Watcher**.
 
 1. Select **Topology**.
 
@@ -42,7 +42,7 @@ You use the Azure portal to view the topology of an Azure network. In the Azure 
 
     Here's an example of a topology generated for a virtual network named MyVNet:
 
-    ![A diagram that shows a virtual network topology as shown in Network Watcher](../media/2-network-watcher-topology.png)
+    :::image type="content" source="../media/2-network-watcher-topology.png" alt-text="A diagram that shows a virtual network topology as shown in Network Watcher." loc-scope="azure-network-watcher":::
 
 ### What is the Connection Monitor tool?
 
@@ -90,13 +90,13 @@ When a VM sends a packet to a destination, it might take multiple hops in its jo
 
 With the next hop tool, you can determine how a packet gets from a VM to any destination. You specify the source VM, source network adapter, source IP address, and destination IP address. The tool then determines the packet's destination. You can use this tool to diagnose problems caused by incorrect routing tables.
 
-### What is the security group view tool?
+### What is the effective security rules tool?
 
-The security group view tool in Network Watcher displays all the effective NSG rules applied to a network interface.
+The effective security rules tool in Network Watcher displays all the effective NSG rules applied to a network interface.
 
 Network security groups are used in Azure networks to filter packets based on their source and destination IP address and port numbers. NSGs are vital to security because they help you carefully control the surface area of the VMs that users can access. Keep in mind, though, that a mistakenly configured NSG rule might prevent legitimate communication. As a result, NSGs are a frequent source of network problems.
 
-For example, if two VMs can't communicate because an NSG rule blocks them, it can be difficult to diagnose which rule is causing the problem. You'll use the security group view tool in Network Watcher to display all the effective NSG rules and help you diagnose which rule is causing the specific problem.
+For example, if two VMs can't communicate because an NSG rule blocks them, it can be difficult to diagnose which rule is causing the problem. You'll use the effective security rules tool in Network Watcher to display all the effective NSG rules and help you diagnose which rule is causing the specific problem.
 
 To use the tool, you choose a VM and its network adapter. The tool displays all the NSG rules that apply to that adapter. It's easy to determine a blocking rule by viewing this list.
 

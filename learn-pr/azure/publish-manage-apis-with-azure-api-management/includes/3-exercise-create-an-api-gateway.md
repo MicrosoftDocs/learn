@@ -42,7 +42,7 @@ The script takes about a minute to run. When the script finishes, it will displa
     - **api/Products**, which generates a list of products
     - **api/Products/{productid}**, which returns the details for the specified productid
 
-![Overview of API management](../media/3-swagger.png)
+:::image type="content" source="../media/3-swagger.png" alt-text="Overview of API management." loc-scope="third-party"::: <!-- no-loc -->
 
 Finally, copy the last URL from the Cloud Shell output, this is the swagger JSON URL, you will need this in the next exercise
 
@@ -51,7 +51,7 @@ The final step in this exercise is to create an API gateway in the Azure portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the left menu, click **+ Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Click **Integration**, and then click **API management**.
 

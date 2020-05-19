@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-iot-central-app.create-a-real-device-in-nodejs
 metadata:
-  title: Create a real device in Node.js
-  description: Create a Node.js app simulating a real refrigerated truck, communicating with both Azure Maps and Azure IoT Central.
+  title: Exercise - Create a programming project for a real device
+  description: Create an app simulating a real refrigerated truck, communicating with both Azure Maps and Azure IoT Central.
   ms.date: 10/17/2019
-  author: PeterTurcan
+  author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: vsandcode
-title: Create a real device in Node.js
+  zone_pivot_groups: vs-vscode-language
+title: Create a programming project for a real device
 # azureSandbox: true
 durationInMinutes: 20
 content: |

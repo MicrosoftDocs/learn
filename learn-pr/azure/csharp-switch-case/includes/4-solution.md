@@ -64,6 +64,8 @@ This code is merely "*one possible solution*".  No matter what, the output shoul
 Product: Large Maroon Sweat shirt
 ```
 
+As long as the output is the same and you used the switch-case statement instead of the if-elseif-else statement, then you successfully completed the challenge.
+
 If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]

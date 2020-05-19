@@ -13,7 +13,7 @@ For example, let's say your configured throughput is 500 RUs per second (RU/s), 
 ## Review metrics for your database
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using your Microsoft Learn account.
-1. Search on Azure Cosmos DB.
+1. Search for and select **Azure Cosmos DB**.
 
    ![Screenshot that shows search in the Azure portal](../media/4-search-cosmos-db.png)
 

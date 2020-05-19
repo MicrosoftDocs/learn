@@ -73,7 +73,7 @@ c:\source\repos
 To create the mockup of our command line too, add the following code in the editor.
 
 ```csharp-interactive
-Console.WriteLine("Generating invoices for customer \"ABC Corp\" ...");
+Console.WriteLine("Generating invoices for customer \"ABC Corp\" ...\n");
 Console.WriteLine("Invoice: 1021\t\tComplete!");
 Console.WriteLine("Invoice: 1022\t\tComplete!");
 Console.WriteLine("\nOutput Directory:\t");
@@ -117,6 +117,7 @@ When you run the code, you should see now the following output that includes the
 
 ```output
 Generating invoices for customer "ABC Corp" ...
+
 Invoice: 1021		Complete!
 Invoice: 1022		Complete!
 

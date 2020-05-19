@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.develop-test-deploy-azure-functions-core-tools.1-introduction
+metadata:
+  title: Introduction
+  description: In this unit, you'll find out what you'll be learning about the Azure Functions Core Tools in this tutorial.
+  ms.date: 11/13/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

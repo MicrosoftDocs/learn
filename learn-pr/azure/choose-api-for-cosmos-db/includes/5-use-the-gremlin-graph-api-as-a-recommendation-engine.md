@@ -6,7 +6,7 @@ The data store needs to be able to assign weight values to the relationships bet
 
 ## Recommended API: Gremlin
 
-![text](../media/graph-example.png)
+![Illustration of two nodes represented as circles with the text Product A and Product B.  A line points from A to B.](../media/graph-example.png)
 
 A graph database is the perfect fit to model this kind of data. Gremlin, the graph query language, will support the marketing department's requirements.
 

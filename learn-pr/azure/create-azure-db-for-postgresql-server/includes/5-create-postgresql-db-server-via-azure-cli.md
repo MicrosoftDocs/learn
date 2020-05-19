@@ -4,6 +4,18 @@ You decide to create an Azure Database for PostgreSQL server to store routes cap
 
 Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 support with 1 vCore and a retention period of 15 days for data backups.
 
+1. Set the name of our new database server into an environment variable so we can reuse it.
+
+   ```azurecli
+   serverName=wingtiptoys-$RANDOM
+   ```
+
+1. Set the username of the user that is allowed to access the server into an environment variable so we can reuse it.
+
+   ```azurecli
+   userName=azureuser
+   ```
+
 1. Use the `az postgres server create` method to create a new database using the following syntax.
 
    ```azurecli
@@ -33,18 +45,18 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
    | `--backup-retention` | Specify the number of days a backup is retained. |
    | `--version` | Specify the major version of the server. |
 
-   For example:
+   Run the following command. Remember to replace the `<location>` value with one of the regions suggested above.
    
    ```azurecli
    az postgres server create \
-      --name wingtiptoys \
+      --name $serverName \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --location centralus \
+      --location <location> \
       --sku-name B_Gen5_1 \
       --storage-size 20480 \
       --backup-retention 15 \
       --version 10 \
-      --admin-user "azureuser" \
+      --admin-user $userName \
       --admin-password "P@ssw0rd"
    ```
 
@@ -61,7 +73,7 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
       "fullyQualifiedDomainName": "wingtiptoys.postgres.database.azure.com",
       "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox Resource Group]</rgn>/providers/Microsoft.DBforPostgreSQL/servers/wingtiptoys",
       "location": "centralus",
-      "name": "wingtiptoys",
+      "name": "wingtiptoys-16764",
       "resourceGroup": "<rgn>[sandbox Resource Group]</rgn>",
       "sku": {
         "capacity": 1,

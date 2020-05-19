@@ -4,7 +4,7 @@ title: Exercise - Scan the project locally by using SonarCloud
 metadata:
   title: Exercise - Scan the project locally by using SonarCloud
   description: Scan a sample project for potential vulnerabilities by using SonarCloud and examine the results.
-  ms.date: 11/04/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

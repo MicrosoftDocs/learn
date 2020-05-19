@@ -13,7 +13,7 @@ title: Architect message brokering and serverless applications in Azure
 summary: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
 prerequisites: |
   - Familiarity with C#
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/architect-messaging-serverless.svg
 levels:
 - intermediate
 roles:
@@ -32,5 +32,7 @@ modules:
 - learn.communicate-between-applications-with-azure-queue-storage
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
 - learn.implement-message-workflows-with-service-bus
+- learn.react-to-state-changes-using-event-grid
+- learn.expose-hybrid-services-with-azure-relay
 trophy:
   uid: learn.architect-messaging-serverless.trophy

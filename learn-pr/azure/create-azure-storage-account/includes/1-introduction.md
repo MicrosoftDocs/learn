@@ -1,4 +1,4 @@
-Most organizations have diverse requirements for their cloud-hosted data. For example, storing data in a specific region,or needing separate billing for different data categories. Azure storage accounts let you formalize these types of policies and apply them to your Azure data.
+Most organizations have diverse requirements for their cloud-hosted data. For example, storing data in a specific region, or needing separate billing for different data categories. Azure storage accounts let you formalize these types of policies and apply them to your Azure data.
 
 Suppose you work at a chocolate manufacturer that produces baking ingredients such as cocoa powder and chocolate chips. You market your products to grocery stores who then sell them to consumers.
 

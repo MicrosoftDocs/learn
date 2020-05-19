@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.analyze-devops-continuous-planning-intergration
+metadata:
+  title: Analyze DevOps Continuous Planning and Continuous Integration
+  description: "Explore the first two capabilities in the DevOps taxonomy, Continuous Planning and Continuous Integration."
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Analyze DevOps Continuous Planning and Continuous Integration
+summary: Explore the first two capabilities in the DevOps taxonomy, Continuous Planning and Continuous Integration.
+abstract: |
+  - Describe Objectives and Key Results
+  - Compare Continuous and Static Planning
+  - Describe the six principles of Continuous Planning
+  - Characterize Continuous Integration
+  - Analyze the effects of Continuous Integration on performance
+prerequisites: |
+  None
+iconUrl: /learn/achievements/analyze-devops-continuous-planning-continuous-integration.svg
+levels:
+- beginner
+roles:
+- administrator
+- ai-edge-engineer
+- ai-engineer
+- business-analyst
+- business-owner
+- business-user
+- data-analyst
+- data-engineer
+- data-scientist
+- developer
+- devops-engineer
+- functional-consultant
+- maker
+- security-engineer
+- solution-architect
+- technology-manager
+products:
+- azure
+units:
+- learn.wwl.analyze-devops-continuous-planning-intergration.introduction
+- learn.wwl.analyze-devops-continuous-planning-intergration.explore-continuous-planning
+- learn.wwl.analyze-devops-continuous-planning-intergration.analyze-continuous-integration
+- learn.wwl.analyze-devops-continuous-planning-intergration.knowledge-check
+- learn.wwl.analyze-devops-continuous-planning-intergration.summary
+badge:
+  uid: learn.wwl.analyze-devops-continuous-planning-intergration.badge

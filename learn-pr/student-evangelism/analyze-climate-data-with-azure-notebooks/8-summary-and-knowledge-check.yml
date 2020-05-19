@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.analyze-climate-data-with-azure-notebooks.summary
-title: Summary and knowledge check
+title: Summary
 metadata:
   title: Summary and knowledge check
   description: Confirm that you understand the steps required to create and use an Azure Notebook.
-  ms.date: 02/25/2018
+  ms.date: 02/25/2019
   author: JeffProsise
   ms.author: shanama
   ms.topic: interactive-tutorial

@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azdo.route-system-feedback
+metadata:
+  title: Route system feedback to development teams - Learn
+  description: Learn how continuous monitoring and dashboards give you insight into how customers use your software and where patterns of failure occur.
+  ms.date: 12/20/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Route system feedback to development teams
+summary: Learn how continuous monitoring and dashboards give you insight into how customers use your software and where patterns of failure occur.
+abstract: |
+  In this module, you'll learn:
+  - How Azure Monitor and Application Insights enable continuous monitoring on your applications and on your infrastructure.
+  - How IT Service Management Connector can help you implement a ticketing system.
+  - How to build dashboards that enable you to visualize and act on monitoring data.
+prerequisites: None
+iconUrl: /learn/achievements/azure-devops/route-system-feedback.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure-devops
+units:
+- learn.azdo.route-system-feedback.1-introduction
+- learn.azdo.route-system-feedback.2-continuously-monitor
+- learn.azdo.route-system-feedback.3-monitoring-status-dashboards
+- learn.azdo.route-system-feedback.4-knowledge-check
+- learn.azdo.route-system-feedback.5-summary
+badge:
+  uid: learn.azdo.route-system-feedback.badge

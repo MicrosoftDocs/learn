@@ -1,0 +1,310 @@
+Directly pulling from someone else's repository works, provided you're both on the same network, but it's a clumsy process — and most collaborators are not on the same network. It's much better to set up a central repository to which everyone involved can push as well as pull from.
+
+When you tell Bob about your project, and Bob asks to participate too, that's exactly what you decide to do.
+
+## Create a bare repository
+
+What you need is a repository that doesn't have a working tree. That's called a _bare repository_. A bare repo has several advantages:
+
+- Without a working tree, everybody can push changes without having to worry about which branch is checked out.
+- It's easy for Git to detect when somebody else has pushed changes that might conflict with yours (because your push wouldn't be fast-forward, and Git's default is to reject it so that you can merge the new files with your own).
+- A shared repo scales to any number of developers. You only have to know about the shared repo rather than about all the other people from whom you might need to pull.
+- By putting the shared repo on a server that you can all access, you don't have to worry about firewalls and permissions.
+- You don't need separate accounts on the server, because Git keeps track of who made each commit. GitHub has millions of users all sharing the `git` account. (Everyone uses `ssh`, and users are distinguished by their public keys.)
+
+Creating a bare repo for sharing is easy.
+
+1. Create a new directory named "Shared.git" next to the **Alice** and **Cats** directories to hold the bare repo.
+
+    ```bash
+    cd ..
+    mkdir Shared.git
+    cd Shared.git
+    ```
+
+    The directory name is not important, but we will refer to it as the "Shared.git" directory or simply the *shared* directory in these exercises.
+
+    Naming the directory "Shared.git" follows the longstanding tradition of assigning bare repositories a name ending with `.git` to distinguish them from working trees. It is a convention but not a requirement.
+
+1. Now use the following command to create a bare repo in the shared directory:
+
+    ```bash
+    git init --bare
+    ```
+
+1. The next step is to get the contents of _your_ repo into the shared repo. Use these commands to return to the project directory where your repo is stored, set up an "origin" remote, and perform an initial push:
+
+    ```bash
+    cd ../Cats
+    git remote add origin ../Shared.git
+    git push origin master
+    ```
+
+1. You should see this output indicating success:
+
+    ```output
+    Counting objects: 12, done.
+    Delta compression using up to 2 threads.
+    Compressing objects: 100% (8/8), done.
+    Writing objects: 100% (12/12), 1.07 KiB | 0 bytes/s, done.
+    Total 12 (delta 1), reused 0 (delta 0)
+    To ../Shared.git
+     * [new branch]      master -> master
+    ```
+
+1. You want `push` and `pull` to use "origin's" master branch by default, as if you had made your repo by cloning it in the first place. To do so, you need to tell Git which branch to track:
+
+    ```bash
+    git branch --set-upstream-to origin/master
+    ```
+
+1. You'll get this output:
+
+    ```output
+    Branch master set up to track remote branch master from origin.
+    ```
+
+Git would have complained if you had tried to do this command before the initial push, because the new repository had no branches. Git can't track a branch that doesn't exist. All Git is doing under the hood is looking in ".git/refs/remotes/origin" for a file named **trunk**.
+
+## Set up for collaborators
+
+The next step is for Bob to clone the bare repository, and then for Alice to set the origin in her repo to target the shared repo for pushes and pulls.
+
+1. Create a directory named "Bob" that's a sibling of the project directory and `cd` into the "Bob" directory:
+
+    ```bash
+    cd ..
+    mkdir Bob
+    cd Bob
+    ```
+
+1. Now clone the shared repo, and be sure to include the period at the end of the command:
+
+    ```Bash
+    git clone ../Shared.git .
+    ```
+
+1. Currently, Alice's repo is configured to push to and pull from her own repo. Use the following commands to `cd` to the "Alice" directory and change "origin" to point to the shared repo:
+
+    ```bash
+    cd ../Alice
+    git remote set-url origin ../Shared.git
+    ```
+
+## Start collaborating
+
+Now that Bob is set up to work on the Web site, they decide to add a footer to the bottom of the page. Let's take on Bob and Alice's persona for a few moments and learn the basics of collaboration.
+
+1. Begin by navigating to the "Bob" directory and impersonating Bob:
+
+    ```bash
+    cd ../Bob
+    git config user.name Bob
+    git config user.email bob@contoso.com
+    ```
+
+1. Open **index.html** and replace the `<hr>` element with this line (found at the end of the `<body>` element):
+
+    ```html
+    <footer><hr>Copyright (c) 2019 Contoso Cats</footer>
+    ```
+
+    Then save and close the file.
+
+1. Commit the changes and push to the remote origin:
+
+    ```bash
+    git commit -a -m "Put a footer at the bottom of the page"
+    git push
+    ```
+
+1. If you see a warning like this, don't worry:
+
+    ```output
+    warning: push.default is unset; its implicit value has changed in
+    Git 2.0 from 'matching' to 'simple'. To squelch this message
+    and maintain the traditional behavior, use:
+
+      git config --global push.default matching
+
+    To squelch this message and adopt the new behavior now, use:
+
+      git config --global push.default simple
+
+    When push.default is set to 'matching', git will push local branches
+    to the remote branches that already exist with the same name.
+
+    Since Git 2.0, Git defaults to the more conservative 'simple'
+    behavior, which only pushes the current branch to the corresponding
+    remote branch that 'git pull' uses to update the current branch.
+
+    See 'git help config' and search for 'push.default' for further information.
+    (the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+    'current' instead of 'simple' if you sometimes use older versions of Git)
+    ```
+
+    It's just letting users know about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type `git config --global push.default simple`.
+
+1. While Bob is editing the site, Alice is, too. They decide to add a nav bar to the page. This addition requires them to modify two files: **index.html** and **site.css**. Begin by returning to the "Alice" directory:
+
+    ```bash
+    cd ../Alice
+    ```
+
+1. Now open **index.html** and insert the following line right after the `<body>` tag on line 8:
+
+    ```html
+    <nav><a href="./index.html">home</a></nav>
+    ```
+
+1. Save and close the file, then open **site.css** in the **CSS** folder and add the following line at the bottom:
+
+    ```css
+    nav { background-color: #C0D8DF; }
+    ```
+
+1. Save and close. Now let's assume that Alice receives an e-mail from Bob saying they have made changes to the site. Alice decides to pull Bob's changes before committing their own. (If Alice had already committed their changes, they would have a different problem, which is discussed in another module.) Do a pull with `git pull`:
+
+    ```bash
+    git pull
+    ```
+
+1. From the output, it looks as if Git has prevented a problem:
+
+    ```output
+    remote: Counting objects: 3, done.
+    remote: Compressing objects: 100% (3/3), done.
+    remote: Total 3 (delta 2), reused 0 (delta 0)
+    Unpacking objects: 100% (3/3), done.
+    From ../Shared
+       843d142..2cf6cbf  master     -> origin/master
+    Updating 843d142..2cf6cbf
+    error: Your local changes to the following files would be overwritten by merge:
+            index.html
+    Please commit your changes or stash them before you can merge.
+    Aborting
+    ```
+
+    Git warns that the pull would overwrite Alice's version of **index.html** and lose her changes. That's because Bob modified **index.html**, too. If Alice hadn't changed **index.html**, Git would have gone ahead and committed the merge.
+
+1. Use a `git diff` command to see what changes Bob made to **index.html**:
+
+    ```bash
+    git diff origin -- index.html
+    ```
+
+1. From the output, it is evident that Alice's changes and Bob's changes don't overlap. Now Alice can _stash_ her changes.
+
+    `git stash` saves the state of the working tree and index by making a couple of temporary commits. Think of the stash as a way to save your current work while you do something else, without making a "real" commit or affecting your repository history.
+
+    > In reality, Alice should have stashed or committed her changes before she tried to pull. Pulling to a "dirty" working tree is risky, because it can do things from which you can't easily recover.
+
+    Use the following command to stash Alice's changes:
+
+    ```bash
+    git stash
+    ```
+
+1. You should see this output:
+
+    ```output
+    Saved working directory and index state WIP on master: 95bbc3b Change background color to light blue
+    HEAD is now at 95bbc3b Change background color to light blue
+    ```
+
+1. Now it's safe for Alice to pull, after which she can "pop" the stash, which is organized as a stack. (In fact, `git stash` is shorthand for `git stash push`. It's a lot like the stack where you put bills that you haven't gotten around to paying yet.)  Execute these commands:
+
+    ```bash
+    git pull
+    git stash pop
+    ```
+
+    Popping the stash merges the changes. If changes overlap, there may be a conflict. There is a more advanced module on Git where you learn how to resolve those situations.
+
+1. You'll see this output letting you know that the merge was successful, and your changes are back, but not yet staged for commit:
+
+    ```output
+    Auto-merging index.html
+    On branch master
+    Your branch is up-to-date with 'origin/master'.
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+
+            modified:   CSS/site.css
+            modified:   index.html
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+    Dropped refs/stash@{0} (0cfb7b75d56611d9fc6a6ab660a51f5582b8d9c5)
+    ```
+
+    At this point Alice can continue working, or simply commit and push her changes. Let's make another change as Alice by assigning footers the same style as nav bars.
+
+1. Open **site.css** in the **CSS** folder and replace the third line — the one that styles `<nav>` elements — with this shared CSS rule, and, as usual, save your changes and close:
+
+    ```html
+    nav, footer { background-color: #C0D8DF; }
+    ```
+
+1. Now commit the changes and push them to the shared repo:
+
+    ```bash
+    git commit -a -m "Stylize the nav bar"
+    git push
+    ```
+
+1. The updated site is now in the shared repo. Finish up returning to the project directory and doing a pull:
+
+    ```bash
+    cd ../Cats
+    git pull
+    ```
+
+1. Confirm that the changes made by both Bob and Alice are present in your local repo by opening **index.html** (the one in the project directory) and verifying **index.html** has the most up-to-date code:
+
+    ```html
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset='UTF-8'>
+        <title>Our Feline Friends</title>
+        <link rel="stylesheet" href="CSS/site.css">
+      </head>
+      <body>
+        <nav><a href="./index.html">home</a></nav>
+        <h1>Our Feline Friends</h1>
+        <p>Eventually we will put cat pictures here.</p>
+        <footer><hr>Copyright (c) 2019 Contoso Cats</footer>
+      </body>
+    </html>
+    ```
+
+1. At the moment, your repo and Alice's repo are synced, but Bob's is not. Finish up by getting Bob up to date, too:
+
+    ```bash
+    cd ../Bob
+    git pull
+    ```
+
+All three repos are now in alignment. The shared repo is the single source of truth for all concerned, and all pushes and pulls are directed to the shared repo.
+
+If you're curious what the website looks like, here's a preview:
+
+![Cats website](../media/cats-home-page.png)
+
+If you'd like, you can download your files to preview them locally with these commands:
+
+1. Zip up the Cats folder:
+
+    ```bash
+    cd ..
+    zip -r Cats.zip Cats
+    ```
+
+1. Download:
+
+    ```bash
+    download Cats.zip
+    ```
+
+1. Now unzip the file on your local machine and open up **index.hml** to see for yourself!

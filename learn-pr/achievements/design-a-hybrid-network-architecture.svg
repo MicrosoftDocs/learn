@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Azure Solution Architect - Networking Infrastructure/design-a-hybrid-network-architecture-on-azure</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <ellipse id="path-3" cx="35.872093" cy="41.2978723" rx="33.872093" ry="33.2978723"></ellipse>
+        <filter x="-3.3%" y="-3.4%" width="106.6%" height="109.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.25" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-5" cx="7.37209302" cy="25.2978723" rx="7.37209302" ry="7.29787234"></ellipse>
+        <filter x="-15.3%" y="-15.4%" width="130.5%" height="144.5%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="1.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-7" cx="64.372093" cy="25.2978723" rx="7.37209302" ry="7.29787234"></ellipse>
+        <filter x="-15.3%" y="-15.4%" width="130.5%" height="144.5%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="1.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-9" cx="35.372093" cy="7.29787234" rx="7.37209302" ry="7.29787234"></ellipse>
+        <filter x="-15.3%" y="-15.4%" width="130.5%" height="144.5%" filterUnits="objectBoundingBox" id="filter-10">
+            <feMorphology radius="1.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M64.372093,51 C68.4435876,51 71.744186,54.2673687 71.744186,58.2978723 C71.744186,62.3283759 68.4435876,65.5957447 64.372093,65.5957447 C60.3005985,65.5957447 57,62.3283759 57,58.2978723 C57,54.2673687 60.3005985,51 64.372093,51 Z" id="path-11"></path>
+        <filter x="-15.3%" y="-15.4%" width="130.5%" height="144.5%" filterUnits="objectBoundingBox" id="filter-12">
+            <feMorphology radius="1.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M7.37209302,51 C11.4435876,51 14.744186,54.2673687 14.744186,58.2978723 C14.744186,62.3283759 11.4435876,65.5957447 7.37209302,65.5957447 C3.30059847,65.5957447 -1.04805054e-13,62.3283759 -9.76996262e-14,58.2978723 C-9.76996262e-14,54.2673687 3.30059847,51 7.37209302,51 Z" id="path-13"></path>
+        <filter x="-15.3%" y="-15.4%" width="130.5%" height="144.5%" filterUnits="objectBoundingBox" id="filter-14">
+            <feMorphology radius="1.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M36.372093,69 C40.4435876,69 43.744186,72.2673687 43.744186,76.2978723 C43.744186,80.3283759 40.4435876,83.5957447 36.372093,83.5957447 C32.3005985,83.5957447 29,80.3283759 29,76.2978723 C29,72.2673687 32.3005985,69 36.372093,69 Z" id="path-15"></path>
+        <filter x="-15.3%" y="-15.4%" width="130.5%" height="144.5%" filterUnits="objectBoundingBox" id="filter-16">
+            <feMorphology radius="1.25" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M48.5,30 C58.1649831,30 66,37.8350169 66,47.5 C66,57.1649831 58.1649831,65 48.5,65 C38.8350169,65 31,57.1649831 31,47.5 C31,37.8350169 38.8350169,30 48.5,30 Z" id="path-17"></path>
+        <filter x="-2.9%" y="-2.9%" width="105.7%" height="111.4%" filterUnits="objectBoundingBox" id="filter-18">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azure-Solution-Architect---Networking-Infrastructure" transform="translate(-50.000000, -460.000000)">
+            <g id="Azure-Solution-Architect---Networking-Infrastructure/design-a-hybrid-network-architecture-on-azure" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <rect id="Rectangle" fill="#FFFFFF" mask="url(#mask-2)" x="47" y="19" width="2" height="55"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(48.000000, 47.500000) rotate(122.000000) translate(-48.000000, -47.500000) " x="47" y="20" width="2" height="55"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(48.000000, 47.500000) scale(1, -1) rotate(122.000000) translate(-48.000000, -47.500000) " x="47" y="20" width="2" height="55"></rect>
+                    <g id="Networking" mask="url(#mask-2)">
+                        <g transform="translate(47.727518, 47.621890) rotate(1.000000) translate(-47.727518, -47.621890) translate(11.727518, 5.621890)" id="Oval">
+                            <g>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use stroke="#FFFFFF" stroke-width="2.5" xlink:href="#path-3"></use>
+                            </g>
+                            <g>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use stroke="#FFFFFF" stroke-width="2.5" fill="#55A2FF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            </g>
+                            <g>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                <use stroke="#FFFFFF" stroke-width="2.5" fill="#55A2FF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                            </g>
+                            <g>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                <use stroke="#FFFFFF" stroke-width="2.5" fill="#55A2FF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                            </g>
+                            <g>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                <use stroke="#FFFFFF" stroke-width="2.5" fill="#55A2FF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                            </g>
+                            <g>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                                <use stroke="#FFFFFF" stroke-width="2.5" fill="#55A2FF" fill-rule="evenodd" xlink:href="#path-13"></use>
+                            </g>
+                            <g>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"></use>
+                                <use stroke="#FFFFFF" stroke-width="2.5" fill="#55A2FF" fill-rule="evenodd" xlink:href="#path-15"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Oval" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-18)" xlink:href="#path-17"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-17"></use>
+                    </g>
+                    <g id="Azure-Logo" mask="url(#mask-2)" fill="#4C91E5">
+                        <g transform="translate(36.846473, 38.043478)" id="Path">
+                            <polygon points="6.0057971 17.6938927 22.5217391 17.6956522 13.62661 1.47463768 10.9174336 9.30626101 16.1200556 15.8182444"></polygon>
+                            <polygon points="12.0115942 0 5.54027762 5.85549805 0 16.2044943 4.99731339 16.2044943 4.99731339 16.2210145"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

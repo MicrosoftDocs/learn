@@ -95,8 +95,8 @@ Let's enable Advanced Data Security on our database. Advanced Data Security is a
 1. Select **Advanced Threat Protection Types** to take a quick look at those. The preferred option is All, which is the default setting.
 
     **All** represents the following values:
-    - SQL injection reports where SQL injections attacks have occurred;
-    - SQL injection vulnerability reports where the possibility of a SQL injection is likely; and
+    - SQL injection reports where SQL injection attacks have occurred.
+    - SQL injection vulnerability reports where the possibility of a SQL injection is likely.
     - Anomalous client login looks at logins that are irregular and could be cause for concern, such as a potential attacker gaining access.
 
 1. Click the **Save** button to apply the changes and enable Advanced Data Security on your server.
@@ -143,7 +143,7 @@ On the vulnerability page you will see the details such as the risk level, which
 
 Click on the **Threat Detection** panel.
 
-This displays a list of detected threats. For example, in this list you one potential SQL injection attacks.
+This displays a list of detected threats. For example, here you can see one potential SQL injection attack listed.
 
 ![Threat Detection](../media/5-threat-detection-dashboard.png)
 

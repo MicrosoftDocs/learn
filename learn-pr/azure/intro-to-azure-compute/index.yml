@@ -23,6 +23,7 @@ roles:
 - solution-architect
 - administrator
 - security-engineer
+- student
 products:
 - azure
 - azure-virtual-machines

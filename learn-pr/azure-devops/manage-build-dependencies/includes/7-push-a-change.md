@@ -1,16 +1,16 @@
 At this point, you have two pipelines. One publishes the Models package to Azure Artifacts, and one is for the _Space Game_ web application. The build configuration for the web application references the Models package so that it can access the model classes.
 
-Here, you'll practice the process of updating the Models package and consuming that change from the web application.
+Here, you practice the process of updating the Models package and consuming that change from the web application.
 
-To do that, you'll start by adding a property to one of the model classes, bumping the package version. Then you submit the change to GitHub, so that the pipeline can build the package and publish it to Azure Artifacts.
+To do that, you start by adding a property to one of the model classes, bumping the package version. Then you submit the change to GitHub, so that the pipeline can build the package and publish it to Microsoft Azure Artifacts.
 
-You'll update the web application to reference the newer version number of the Models package, so that it can use the added property.
+You update the web application to reference the newer version number of the Models package, so that it can use the added property.
 
 ## Create a branch
 
 Let's start by creating a branch to hold our work. Create a branch named `add-game-style`, which is based off the `master` branch.
 
-At this point, you have two copies of Visual Studio Code open, one for the **Tailspin.SpaceGame.Web.Models** project and one for the _Space Game_ web application project, **Tailspin.SpaceGame.Web**. Here, you'll work from the copy for the **Tailspin.SpaceGame.Web.Models** project.
+At this point, you have two copies of Visual Studio Code open, one for the *Tailspin.SpaceGame.Web.Models* project and one for the _Space Game_ web application project, *Tailspin.SpaceGame.Web*. Here, you'll work from the copy for the *Tailspin.SpaceGame.Web.Models* project.
 
 1. From Visual Studio Code, open the integrated terminal.
 1. From the terminal, run the following `git checkout` command to create a branch named `add-game-style`.
@@ -66,7 +66,7 @@ Now that you've added the new property to the `Score` class, and verified the pr
     git push origin add-game-style
     ```
 
-1. From Azure Pipelines, go to the **Tailspin.SpaceGame.Web.Models** project and watch the build run.
+1. From Microsoft Azure Pipelines, go to the **Tailspin.SpaceGame.Web.Models** project and watch the build run.
 
 1. Open the **Artifacts** tab and note the new version. Don't worry, your old version is still there for any projects that still reference it.
 

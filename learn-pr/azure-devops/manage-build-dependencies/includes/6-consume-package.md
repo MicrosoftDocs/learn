@@ -83,4 +83,4 @@ The `models-package` branch doesn't contain an initial *azure-pipelines.yml* fil
     git push origin models-package
     ```
 
-1. Go to Azure Pipelines and watch the build run. The build picks up your Models package from Azure Artifacts, and builds the project successfully.
+1. Go to Microsoft Azure Pipelines and watch the build run. The build picks up your Models package from Azure Artifacts, and builds the project successfully.

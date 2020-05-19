@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn-xamarin.build-mobile-apps-with-xamarin-forms
+metadata:
+  title: Build mobile apps with Xamarin.Forms
+  description: In this learning path, use C# and Visual Studio with Xamarin.Forms to create a mobile app that includes visual controls to run on Android and iOS.
+  ms.date: 05/01/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+title: Build mobile apps with Xamarin.Forms
+summary: "Use C# and Visual Studio to create apps that run on iOS and Android devices."
+prerequisites: |
+  [!include[](../../includes/prerequisites.md)]
+iconUrl: /learn/achievements/xamarin/build-mobile-apps-with-xamarin-forms-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- xamarin
+- dotnet
+- vs
+modules:
+- learn-xamarin.create-a-mobile-app-with-xamarin-forms
+- learn-xamarin.introduction-to-xamarin-android
+- learn-xamarin.introduction-to-xamarin-ios
+- learn-xamarin.create-ui-in-xamarin-forms-apps-with-xaml
+- learn-xamarin.customize-layout-in-xamarin-forms-xaml-pages
+- learn-xamarin.design-consistent-xaml-pages-with-shared-resources-and-styles
+- learn-xamarin.prepare-to-publish-your-xamarin-application
+- learn-xamarin.consume-rest-services
+- learn-xamarin.store-local-data-with-sqlite
+- learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation
+trophy:
+  uid: learn-xamarin.build-mobile-apps-with-xamarin-forms.trophy

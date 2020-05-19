@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-onpremises-workloads-azure.configure-replication-onprem-vms
+title: Configure replication of on-premises virtual machines
+metadata:
+  title: Configure replication of on-premises virtual machines
+  description: "Configure replication of on-premises virtual machines"
+  ms.date: 03/02/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-configure-replication-on-premises-virtual-machines.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You’ve confirmed your target region for migration to East US in Azure Migrate Server Migration. You decide you need to replicate and migrate your on-premises VMs to West US instead. What should you do?"
+    choices:
+    - content: "Change the target region in Azure Migrate Server Migration."
+      isCorrect: false
+      explanation: "Once you confirm the target region for migration in the Azure Migrate project, it cannot be changed for the project."
+    - content: "Create a new Azure Migrate project and set the target region to West US."
+      isCorrect: true
+      explanation: "Once the target region is confirmed, you can’t change it for the project. If you want to change the target region, you’ll need to create a new Azure Migrate project, and then set the desired target region."
+    - content: "Use Azure Site Recovery to move your VMs from East US to West US."
+      isCorrect: false
+      explanation: "You can use Azure Site Recovery to move Azure VMs to a different region. However, you should create a new Azure Migrate project and migrate your on-premises VMs to the preferred target region. You’ll avoid the additional step of moving Azure VMS from one region to another."
+  - content: "While configuring replication of your on-premises VMS, you discover one of the recommended Azure VM sizes doesn’t support the equivalent on-premises VM configuration. What should you do?"
+    choices:
+    - content: "Change the disk type from Standard HDD to Premium-managed disk."
+      isCorrect: false
+      explanation: "The suggested Azure VM size doesn’t support the on-premises configuration. Changing the disk type doesn’t guarantee that the VM will support the on-premises configuration."
+    - content: "Exclude data disks to reduce the Azure VM size."
+      isCorrect: false
+      explanation: "You can exclude disks from replication to optimize bandwidth and save resources by not replicating data you don’t need. Excluding data disks in this case could adversely affect the functionality of the migrated VM."
+    - content: "Pick another VM size that supports the on-premises configuration."
+      isCorrect: true
+      explanation: "Correct. If the suggested VM size isn’t appropriate, select another VM size in the Compute settings of Replication."

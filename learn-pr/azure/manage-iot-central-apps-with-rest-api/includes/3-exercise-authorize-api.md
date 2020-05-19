@@ -6,10 +6,10 @@ In this unit, you'll use the Azure CLI to create an IoT Central application from
 
 ## Install the Azure IoT CLI extension
 
-The **azure-cli-iot-ext** CLI extension provides commands to manage IoT resources such as IoT Central applications. Run the following command in the Cloud Shell to install the extension:
+The **azure-iot** CLI extension provides commands to manage IoT resources such as IoT Central applications. Run the following command in the Cloud Shell to install the extension:
 
 ```azurecli
-az extension add --name azure-cli-iot-ext
+az extension add --name azure-iot
 
 ```
 

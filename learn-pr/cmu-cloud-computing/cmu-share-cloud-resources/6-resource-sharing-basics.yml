@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.6-resource-sharing-basics
+title: Basics of resource sharing
+metadata:
+  title: Basics of resource sharing
+  description: Basics of resource sharing
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-resource-sharing-basics.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "A system component can be shared:"
+    choices:
+    - content: "Only in time"
+      isCorrect: false
+      explanation: "Incorrect. In practice, main memory is shared in space. The question is about a system that includes various components, such as memory and CPU."
+    - content: "Only in space"
+      isCorrect: false
+      explanation: "Incorrect. CPU is shared only in time. The question is about a system that includes various components, such as memory and CPU."
+    - content: "In time and space"
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "True or false? Time sharing allows processes to share a resource simultaneously."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. Sharing in space partitions a resource and gives the processes exclusive control to parts of a resource."
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct! Time sharing allows processes to use resources turn by turn. Read and understand the various ways in which resources can be shared."
+      

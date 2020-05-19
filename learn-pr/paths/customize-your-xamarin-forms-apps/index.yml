@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn-xamarin.customize-your-xamarin-forms-apps
+metadata:
+  title: Customize and add advanced features to Xamarin.Forms apps
+  description: Take this learning path to discover how to use professional touches and development techniques that result in more beautiful and maintainable apps.
+  ms.date: 05/01/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+title: Customize and add advanced features to Xamarin.Forms apps
+summary: "Add professional touches and development techniques for more beautiful and maintainable apps."
+prerequisites: |
+  - Ability to build and debug Xamarin.Forms app
+iconUrl: /learn/achievements/xamarin/customize-your-xamarin-forms-apps-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- xamarin
+- dotnet
+- vs
+modules:
+- learn-xamarin.explore-cross-platform-design-patterns
+- learn-xamarin.separate-your-ui-and-code-with-xamarin-forms-data-binding
+- learn-xamarin.display-collections-in-xamarin-forms-apps-with-listview
+- learn-xamarin.customize-xamarin-forms-listview
+- learn-xamarin.design-a-mvvm-viewmodel-for-xamarin-forms
+- learn-xamarin.display-relationships-in-xamarin-forms-with-master-detail-navigation
+- learn-xamarin.create-custom-controls-with-forms-renderers
+- learn-xamarin.use-effects-in-xamarin-forms
+trophy:
+  uid: learn-xamarin.customize-your-xamarin-forms-apps.trophy

@@ -19,7 +19,7 @@ quiz:
     - content: "Where data is disconnected and relationships do not matter"
       isCorrect: false
       explanation: "A graph database is built and optimized for traversing relationships from a particular starting point, it is not optimized for searching for data across the entire graph"
-    - content: "A data model where the ability to expand the model to add new data or data relationships"
+    - content: "A data model where the ability to expand the model to add new data or relationships is necessary"
       isCorrect: true
       explanation: "Perfect for graph databases, with a graph data model, changes to the data model can be made with little or no impact to the application"
     - content: "If your queries are doing table scans to find a match or searching for data"

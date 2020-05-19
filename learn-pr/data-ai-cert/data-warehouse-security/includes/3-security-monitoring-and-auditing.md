@@ -1,4 +1,4 @@
-Azure SQL Data Warehouse provides built-in threat monitoring capabilities. It's off by default, but you can turn it on as follows:
+Azure Synapse Analytics provides built-in threat monitoring capabilities. It's off by default, but you can turn it on as follows:
 
 1. Go to the database that you created in the Azure portal.
 1. Under **Security** in the options pane, select **Advanced Threat Protection**.

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview
+metadata:
+  title: Foundations of cloud computing for developers
+  description: Carnegie Mellon University's Cloud Developer course. Discover what the cloud is, the history of cloud computing, what types of clouds are available, and how you might use the cloud.
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Foundations of cloud computing for developers
+summary: Discover what the cloud is, the history of cloud computing, what types of clouds are available, and how you might use the cloud.
+abstract: | 
+  In this module you will:
+  - Explain the concept of cloud computing
+  - Briefly understand how computing systems across domains dealt with scale before the cloud
+  - Briefly recall the recent history of cloud computing, illustrating its evolution
+  - List some of the enabling technologies in cloud computing, and discuss their significance
+  - Differentiate cloud service models, such as IaaS, PaaS, and SaaS
+  - Enumerate the different types of clouds, and compare and contrast them
+  - List some of the common cloud providers and their associated cloud stacks
+  - Recall popular cloud use case scenarios
+
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: None.
+iconUrl: /learn/achievements/cmu-cloud-developer/foundations-of-cloud-computing-for-developers.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.0-introduction
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.1-define-cloud-computing
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.2-before-cloud-computing
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.3-evolution
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.4-building-blocks
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.5-types
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.6-major-providers
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.7-use-cases
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.8-summary
+badge:
+  uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.badge

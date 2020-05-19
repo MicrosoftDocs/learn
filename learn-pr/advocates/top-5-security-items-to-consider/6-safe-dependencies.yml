@@ -4,12 +4,11 @@ title: Safe Dependencies
 metadata:
   title: Safe Dependencies
   description: Safe Dependencies
-  author: lnyswonger
+  author: patridge
+  ms.author: adpatrid
   ms.date: 09/24/2018
-  ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/6-safe-dependencies.md)]

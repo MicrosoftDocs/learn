@@ -2,24 +2,23 @@ To connect to a data source, you have to configure an *input binding*. This bind
 
 ## Input binding types
 
-There are multiple types of input. However, not all types support both input and output. You'll use them anytime you want to ingest data of that type. Here, we'll look at the types that support input bindings and when to use them.
+There are multiple types of input. However, not all types support both input and output. You'll use them whenever you want to ingest data of that type. Here, we'll look at the types that support input bindings and when to use them.
 
-- **Blob storage**  Blob storage bindings allow you to read from a blob.
+- **Blob storage** - Blob storage bindings allow you to read from a blob.
 
-- **Azure Cosmos DB**  The Azure Cosmos DB input binding uses the SQL API to retrieve one or more Azure Cosmos DB documents and passes them to the input parameter of the function. The document ID or query parameters can be determined based on the trigger that invokes the function.
+- **Azure Cosmos DB** - The Azure Cosmos DB input binding uses the SQL API to retrieve one or more Azure Cosmos DB documents and passes them to the input parameter of the function. The document ID or query parameters can be determined based on the trigger that invokes the function.
 
-- **Microsoft Graph**  Microsoft Graph input bindings allow you to read files from OneDrive, read data from Excel, and get auth tokens so you can interact with any Microsoft Graph API.
+- **Microsoft Graph** - Microsoft Graph input bindings allow you to read files from OneDrive, read data from Excel, and get auth tokens so you can interact with any Microsoft Graph API.
 
-- **Mobile Apps**  The Mobile Apps input binding loads a record from a mobile table endpoint and passes it into your function.
+- **Mobile Apps** - The Mobile Apps input binding loads a record from a mobile table endpoint and passes it into your function.
 
-- **Table storage**  You can read data and work with Azure Table storage.
+- **Table storage** - You can read data and work with Azure Table storage.
 
-To create a binding as an input, you must define the `direction` as `in`.
-The parameters for each type of binding may vary.
+To create a binding as an input, you must define the `direction` as `in`. The parameters for each type of binding may vary.
 
 ## What is a binding expression?
 
-A binding expression is specialized text in **function.json**, function parameters, or code that is evaluated when the function is invoked to yield a value. For example, if you have a Service Bus Queue binding you could use a binding expression to get the name of the queue from App Settings.
+A binding expression is specialized text in **function.json**, function parameters, or code that is evaluated when the function is invoked to yield a value. For example, if you have a Service Bus Queue binding, you could use a binding expression to get the name of the queue from App Settings.
 
 ### Types of binding expressions
 

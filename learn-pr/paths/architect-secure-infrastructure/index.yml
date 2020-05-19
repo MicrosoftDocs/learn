@@ -32,5 +32,6 @@ modules:
 - learn.end-to-end-encryption-with-app-gateway
 - learn.secure-data-at-rest
 - learn.secure-your-azure-sql-database
+- learn.monitor-report-aad-security-events
 trophy:
   uid: learn.architect-secure-infrastructure.trophy

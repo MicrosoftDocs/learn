@@ -18,7 +18,7 @@ Path-based routing enables you to send requests with different paths in the URL 
 
 ### Multiple site hosting
 
-Multiple site hosting enables you to configure more than one web application on the same application gateway instance. In a multi-site configuration, you register multiple DNS names (CNAMEs) for the IP address of the Application Gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site.  Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. For example, you could configure Application Gateway to direct all requests for **http://contoso.com** to servers in one back-end pool, and requests for **http://fabrikam.com** to another back-end pool. The following diagram shows this configuration.
+Multiple site hosting enables you to configure more than one web application on the same application gateway instance. In a multi-site configuration, you register multiple DNS names (CNAMEs) for the IP address of the Application Gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site.  Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. For example, you could configure Application Gateway to direct all requests for `http://contoso.com` to servers in one back-end pool, and requests for `http://fabrikam.com` to another back-end pool. The following diagram shows this configuration.
 
 ![Diagram showing how a request is routed by Application Gateway configured with multiple site hosting](../media/2-multisite.svg)
 

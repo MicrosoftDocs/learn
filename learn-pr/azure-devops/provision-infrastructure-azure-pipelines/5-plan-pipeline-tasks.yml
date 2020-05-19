@@ -4,7 +4,7 @@ title: Plan provisioning tasks for Azure Pipelines
 metadata:
   title: Plan provisioning tasks for Azure Pipelines
   description: Learn how Azure Blob storage and service principals enable you to run your Terraform plan from Azure Pipelines.
-  ms.date: 11/07/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

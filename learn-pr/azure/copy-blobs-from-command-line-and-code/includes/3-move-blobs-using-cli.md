@@ -39,7 +39,7 @@ az storage container create \
 You can upload a single file to blob storage with the `az storage blob upload` command. This command creates a blob for the contents of the file. Specify the details of the account and container, together with the file and the name of the blob to be created.
 
 > [!NOTE]
-> The `az storage` commands require an account name and key to authenticate you against the storage account. You can specify these values as the `account-name` and `account-key` parameters to many `az storage` commands, but if you are running a series of operations a more convenient mechanism is to store this information in the `AZURE_STORAGE_ACCOUNT` and `AZURE_STORAGE_KEY` environment variables. The `az storage` commands will look for these variables if you don't provide the `account-name` and `account-key` parameters. 
+> The `az storage` commands require an account name and key to authenticate you against the storage account. You can specify these values as the `account-name` and `account-key` parameters to many `az storage` commands, but if you are running a series of operations a more convenient mechanism is to store this information in the `AZURE_STORAGE_ACCOUNT` and `AZURE_STORAGE_KEY` environment variables. The `az storage` commands will look for these variables if you don't provide the `account-name` and `account-key` parameters.
 
 The example below uploads the data in the file named *blobdata.dat* to a blob called *myBlob* in the *myContainer* container. Depending on the type and size of data, you can also specify the `--type` parameter to indicate whether the blob should be a block blob or a page blob (the default for most types of data is *block*).
 

@@ -37,7 +37,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 ## View basic metrics for the VM
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox. 
-1. On the left menu, select **Virtual machines**.
+1. On the Azure portal menu or from the **Home** page, select **Virtual machines**.
 1. Select the **monitored-linux-vm** virtual machine that you created.
 1. Scroll down, and under **Monitoring**, select **Metrics**.
 1. Select the following values:

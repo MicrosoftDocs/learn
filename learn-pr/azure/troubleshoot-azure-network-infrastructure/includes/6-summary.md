@@ -11,8 +11,6 @@ In this module, you learned about the four tool categories and the features offe
 
 Azure Network Watcher enables engineers to *monitor*, *diagnose*, and *gain insight* into their network health and performance.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-
 ## Learn more
 
 - [Azure Network Watcher Agent virtual machine extension for Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-nwa)

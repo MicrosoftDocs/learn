@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.automate-model-selection-with-azure-automl.automl-preprocessing
+title: Preprocessing and featurization 
+metadata:
+  title: Preprocessing and featurization
+  description: Learn about options for automatic preprocessing and featurization.
+  ms.date: 01/13/2020
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-automl-preprocessing.md)]

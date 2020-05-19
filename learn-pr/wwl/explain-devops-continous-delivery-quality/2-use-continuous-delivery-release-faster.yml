@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explain-devops-continous-delivery-quality.use-continuous-delivery-release-faster
+title: Use Continuous Delivery to release faster, with smaller costs and risks
+metadata:
+  title: Use Continuous Delivery to release faster, with smaller costs and risks
+  description: "Use Continuous Delivery to release faster, with smaller costs and risks"
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-use-continuous-delivery-release-faster.md)]

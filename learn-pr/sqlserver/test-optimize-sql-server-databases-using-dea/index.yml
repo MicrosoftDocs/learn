@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn-sqlserver.test-optimize-sql-server-databases-using-dea
 metadata:
-  title: Test and optimize SQL Server databases using the Data Experimentation Assistant (DEA) 
+  title: Test and optimize SQL Server databases using the Database Experimentation Assistant (DEA) 
   description: Test and Optimize SQL Server Databases using DEA
   ms.date: 01/31/2019
   author: geoffallix
   ms.author: v-gea
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-title: Test and optimize SQL Server databases using the Data Experimentation Assistant (DEA)
+title: Test and optimize SQL Server databases using the Database Experimentation Assistant (DEA)
 summary: The Database Experimentation Assistant is a standalone application that can compare workloads between the current version of your database, and the target.
 abstract: |
  In this module, you will:

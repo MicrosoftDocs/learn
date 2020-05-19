@@ -8,7 +8,7 @@ When you select a completed test, you get a results pane. This pane provides two
 
 The **Details** chart shows the most important metrics from the performance test, presented in several sections:
 
-![Chart showing an overview of the performance test results](../media/4-results-overview.png)
+:::image type="content" source="../media/4-results-overview.png" alt-text=" ![Chart showing an overview of the performance test results." loc-scope="azure-devops":::
 
 This example shows:
 
@@ -35,7 +35,7 @@ The **Requests** area of the chart shows the number of requests that failed beca
 
 To get more details about failures, click in the **Requests** area to open the **Request Details** pane. In this example, the host closed the connection 36 times:
 
-![Table shown after clicking in the Requests area of the overview chart](../media/4-request-failure-details.png)
+:::image type="content" source="../media/4-request-failure-details.png" alt-text="Table shown after clicking in the Requests area of the overview chart." loc-scope="azure-devops":::
 
 ### Web app usage
 

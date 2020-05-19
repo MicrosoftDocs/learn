@@ -9,7 +9,7 @@ In this unit, you'll add an alert for your VM. Then you'll cause the VM CPU usag
 If CPU usage goes above 90 percent for one minute, you'd like to get a notification. 
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
-1. Select **Virtual machines**.
+1. On the Azure portal menu or from the **Home** page, select **Virtual machines**.
 1. Select the **monitored-linux-vm** virtual machine that you created.
 1. On the left, scroll down and select **Metrics**.
 1. Select **New alert rule**.
@@ -49,7 +49,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 ### Add an action
 
-1. Under **ACTIONS**, select **Create action group**.
+1. Under **ACTIONS GROUPS (optional)**, select **Create**.
 
     ![Screenshot that shows the "Create action group" button highlighted](../media/8-create-action-group.png)
 
@@ -72,9 +72,9 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. Select **OK**.
 1. In the **Add action group** pane, select **OK**.
-1. Under **ACTIONS**, select **Select action group**.
+1. Under **ACTIONS GROUPS (optional)**, select **Add**.
 
-   ![Screenshot that shows the "Select action group" button in the "Create rule" pane](../media/8-select-action-group-button.png)
+   ![Screenshot that shows the "Add" button in the "Create rule" pane](../media/8-select-action-group-button.png)
 
 1. Under **Action group name**, select **Email alerts**.
 
@@ -95,12 +95,18 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 ## Activate the alert
 
 1. Go to the VM **Overview** pane.
-1. Select **Connect**.
+1. Select **Connect** > **SSH**.
 
    ![Screenshot that shows the "Connect" button on the VM overview pane](../media/8-vm-overview-connect-button.png)
 
-1. Copy the **Login using VM local account** field.
-1. In Azure Cloud Shell to the right, right-click and paste the value that you copied. If Cloud Shell times out, select **Reconnect**.
+1. From the last step, copy the **azureuser**@ and IP address that follows.
+1. In Azure Cloud Shell to the right, type **SSH** and paste what you copied in the previous step. It should look like the following command.
+
+    ```bash
+    ssh azureuser@<ipaddress>
+    ```
+
+    If Cloud Shell times out, select **Reconnect**.
 1. When you're prompted, enter **yes** to connect to the VM.
 1. Run the following command to install the stress tool on the VM.
 
@@ -113,7 +119,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
     sudo stress --cpu 16 -v -t 10m
     ```
 1. Return to the Azure portal.
-1. Go to **Dashboard** > **KPI Dashboard**.
+1. On the Azure portal menu or from the **Home** page, select **Dashboard** and then select **KPI Dashboard**.
 1. On the **Max CPU percentage guest OS for monitored-linux-vm** graph, select the ellipses (**...**) on the upper right, and then select **Refresh**.
 1. After a few minutes, the CPU should approach 100 percent and you'll receive an alert email.
 

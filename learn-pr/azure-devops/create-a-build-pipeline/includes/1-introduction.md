@@ -12,7 +12,7 @@ She also remembers that they picked three of the problems to fix within the next
 
 ![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
 
-Mara decides to take an initial pass on the biggest issue, **Stabilize the build server**, herself. She won't try to fix everything. Instead, she's going to see if she can use Azure Pipelines to replicate the current build process. She's convinced that Azure Pipelines provides enough benefits to improve the process. If she's right, she'll show her version to the team to see if she can make them more enthusiastic.
+Mara decides to take an initial pass on the biggest issue, **Stabilize the build server**, herself. She won't try to fix everything. Instead, she's going to see if she can use Microsoft Azure Pipelines to replicate the current build process. She's convinced that Azure Pipelines provides enough benefits to improve the process. If she's right, she'll show her version to the team to see if she can make them more enthusiastic.
 
 ## Learning objectives
 
@@ -34,7 +34,7 @@ If you want to start with this learning path, you need to set up a development e
 * An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 * A [GitHub](https://github.com/join?azure-portal=true) account
 * [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
 If your company's policy doesn't allow you to create an Azure DevOps organization, you can create your own personal account. You can get started with Azure DevOps for free.
@@ -57,4 +57,4 @@ You met the *Space Game* web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more streamlined process by using Azure DevOps.
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process by using Microsoft Azure DevOps.

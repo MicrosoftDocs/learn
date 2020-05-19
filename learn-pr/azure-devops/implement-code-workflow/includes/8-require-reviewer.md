@@ -6,15 +6,15 @@ Andy decides that he wants to add a check to the pull request in the form of ano
 
 Andy heads off to find Mara and spots her at her desk working away, her head bobbing to the music in her earbuds.
 
-**Andy**: Mara, I've been meaning to talk to you about something.
+**Andy:** Mara, I've been meaning to talk to you about something.
 
 Mara looks up.
 
-**Mara**: What can I help you with?
+**Mara:** What can I help you with?
 
-**Andy**: Several small mistakes are making it through the build. Just today, a typing error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the `master` branch. We need another pair of eyes on the code before the pull request is approved.
+**Andy:** Several small mistakes are making it through the build. Just today, a typing error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the `master` branch. We need another pair of eyes on the code before the pull request is approved.
 
-**Mara**: I can set that up. In GitHub, there's a way to make sure that no pull request is merged before someone else reviews and approves it.
+**Mara:** I can set that up. In GitHub, there's a way to make sure that no pull request is merged before someone else reviews and approves it.
 
 ## Set up approvals
 

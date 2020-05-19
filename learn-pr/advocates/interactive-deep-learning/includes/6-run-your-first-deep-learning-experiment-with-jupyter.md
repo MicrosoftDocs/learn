@@ -10,7 +10,7 @@ Now you might ask, why would we use PyTorch to build deep learning models?
 - Python support – PyTorch smoothly integrates with the scientific computing stack.
 - Dynamic computation graphs – Instead of predefined graphs with specific functionality, PyTorch builds computational graphs dynamically that can be modified during runtime. Dynamic computation graphs are valuable for nested batching and when we do not know how much memory will be needed for creating a given network.
 
-For more information about PyTorch, see [PyTorch.org official documentation](https://pytorch.org/about/).
+For more information about PyTorch, see [PyTorch.org official documentation](https://pytorch.org).
 
 ## Run your first PyTorch model
 

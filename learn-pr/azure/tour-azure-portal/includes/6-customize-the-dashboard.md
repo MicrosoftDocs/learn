@@ -8,12 +8,11 @@ Dashboards give you considerable flexibility regarding how you manage Azure. For
 
 Dashboards are stored as JavaScript Object Notation (JSON) files. This format means they can be uploaded and downloaded to other computers, or shared with members of the Azure directory. Azure stores dashboards within resource groups, just like virtual machines or storage accounts that you can manage within the portal.
 
-> [!TIP]
-> Because dashboards are JSON files, you can also [customize them programmatically](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-create-programmatically), making them compelling administrative tools. Also, some tile types can be query-based, so they update automatically when the source data changes.
+Because dashboards are JSON files, you can also [customize them programmatically](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-create-programmatically), making them compelling administrative tools. Also, some tile types can be query-based, so they update automatically when the source data changes.
 
 ## Explore the default dashboard
 
-The default dashboard is named "Dashboard". When you log into the portal for the first time, you are presented with this dashboard containing five tiles.
+The default dashboard is named "Dashboard". When you log into the portal for the first time and select **Dashboard** from the portal menu, you are presented with this dashboard containing five tiles.
 
 ![Screenshot showing the default dashboard with different parts numbered and highlighted.](../media/6-dashboard-default-webparts.png)
 
@@ -69,7 +68,7 @@ On the left-hand side appears the **Tile Gallery**, with several possible tiles.
 Adding tiles is as easy as selecting the tile from the list on the left and then dragging it to the work area. You can then move each tile about, resize it, or change the data that it displays.
 
 > [!TIP]
-> One cool feature is that you can take elements on child blades and put them on your dashboard. Just hover over the item and look for the `...` tile edit menu - this will have a "Pin to Dashboard" option which lets you quickly grab a tile from a service and put it onto the dashboard.
+> One cool feature is that you can take elements on child panes and put them on your dashboard. Just hover over the item and look for the `...` tile edit menu - this will have a "Pin to Dashboard" option which lets you quickly grab a tile from a service and put it onto the dashboard.
 
 The work area in edit mode is divided into squares. Each tile must occupy at least one square, and tiles will snap to the nearest largest set of tile dividers. Any overlapping tiles are moved out of the way. When you make a tile smaller, the surrounding tiles will move back up against it.
 
@@ -116,11 +115,11 @@ You can reset any dashboard to the default style. In edit mode, right-click the 
 
 When you define a new dashboard, it is private and visible only to your account. To make it visible to others, you need to share a dashboard. However, as with any other Azure resource, you need to specify a new resource group (or use an existing resource group) in which to store shared dashboards. If you do not have an existing resource group, Azure will create a *dashboards* resource group in whichever location you specify. If you have existing resource groups, you can specify that resource group to store the dashboards.
 
-![Screenshot of the Sharing and access control blade before the dashboard is shared.](../media/6-share-dashboards-default.png)
+![Screenshot of the Sharing and access control pane before the dashboard is shared.](../media/6-share-dashboards-default.png)
 
-When you have shared the template, you will see a second **Sharing + access control** blade.
+When you have shared the template, you will see a second **Sharing + access control** pane.
 
-![Screenshot of the Sharing and access control blade after the dashboard is shared.](../media/6-share-dashboards-access-control.png)
+![Screenshot of the Sharing and access control pane after the dashboard is shared.](../media/6-share-dashboards-access-control.png)
 
 You can then click **Manage users** to specify the users who have access to that dashboard.
 
@@ -130,9 +129,9 @@ To switch to a shared dashboard, you click on the list of dashboards, and then c
 
 ![Screenshot showing a list of shared dashboards with the Browse all dashboards link highlighted.](../media/6-browse-dashboards.png)
 
-You will now see the **All dashboards** blade, with the names of any shared dashboards displayed. Just click on a dashboard to apply it to the Azure portal.
+You will now see the **All dashboards** pane, with the names of any shared dashboards displayed. Just click on a dashboard to apply it to the Azure portal.
 
-![Screenshot showing the Shared dashboards in the All dashboards blade.](../media/6-select-shared-dashboard.png)
+![Screenshot showing the Shared dashboards in the All dashboards pane.](../media/6-select-shared-dashboard.png)
 
 ## Display a dashboard as a full screen
 

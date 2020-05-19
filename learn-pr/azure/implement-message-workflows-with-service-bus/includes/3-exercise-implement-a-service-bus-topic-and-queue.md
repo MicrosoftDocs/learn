@@ -17,13 +17,13 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. In the navigation on the left, click **All services**.
+1. On the Azure portal menu, select **All services**.
 
-1. In the **All Services** blade, scroll down to the **INTEGRATION** section, and then click **Service Bus**.
+1. In the **All services** pane, scroll down to the **INTEGRATION** section, and then click **Service Bus**.
 
-    ![Screenshot showing the Integration section of the All services blade with Service Bus highlighted](../media/3-create-namespace-1.png)
+    ![Screenshot showing the Integration section of the All services pane with Service Bus highlighted](../media/3-create-namespace-1.png)
 
-1. In the top left of the **Service Bus** blade, click **Add**.
+1. In the top left of the **Service Bus** pane, click **Add**.
 
 1. In the **Name** text box, type a unique name for the namespace. For example: "salesteamapp" + *your initials* + *current date*.
 
@@ -39,21 +39,21 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Click **Create** to create the Service Bus namespace.
 
-    ![Screenshot of the Service bus and Create namespace blades with the Add button and Create button highlighted](../media/3-create-namespace-2.png)
+    ![Screenshot of the Service bus and Create namespace panes with the Add button and Create button highlighted](../media/3-create-namespace-2.png)
 
 ## Create a Service Bus queue
 
 Now that you have a namespace, you can create a queue for messages about individual sales. To do this, follow these steps:
 
-1. In the **Service Bus** blade, click **Refresh**. The namespace you just created is displayed.
+1. In the **Service Bus** pane, click **Refresh**. The namespace you just created is displayed.
 
 1. Click the namespace you just created.
 
-1. In the top left of the namespace blade, click **+ Queue**.
+1. In the top left of the namespace pane, click **+ Queue**.
 
-1. In the **Create queue** blade, in the **Name** text box, type **salesmessages**, and then click **Create**. Azure creates the queue in your namespace.
+1. In the **Create queue** pane, in the **Name** text box, type **salesmessages**, and then click **Create**. Azure creates the queue in your namespace.
 
-    ![Screenshot of the Create queue blade with the Create button highlighted](../media/3-create-queue.png)
+    ![Screenshot of the Create queue pane with the Create button highlighted](../media/3-create-queue.png)
 
 ## Create a Service Bus topic and subscriptions
 
@@ -61,13 +61,13 @@ You also want to create a topic that will be used for messages that relate to sa
 
 Follow these steps:
 
-1. In the **Service Bus Namespace** blade, click **+ Topic**.
+1. In the **Service Bus Namespace** pane, click **+ Topic**.
 
-1. In the **Create topic** blade, in the **Name** text box, type **salesperformancemessages**, and then click **Create**. Azure creates the topic in your namespace.
+1. In the **Create topic** pane, in the **Name** text box, type **salesperformancemessages**, and then click **Create**. Azure creates the topic in your namespace.
 
-    ![Screenshot of the Create topic blade with the Create button highlighted](../media/3-create-topic.png)
+    ![Screenshot of the Create topic pane with the Create button highlighted](../media/3-create-topic.png)
 
-1. When the topic has been created, in the **Service Bus Namespace** blade, under **Entities**, click **Topics**.
+1. When the topic has been created, in the **Service Bus Namespace** pane, under **Entities**, click **Topics**.
 
 1. In the list of topics, click **salesperformancemessages**, and then click **+ Subscription**.
 

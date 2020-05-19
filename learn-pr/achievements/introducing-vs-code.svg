@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>NA/introduction-to-vs-code</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-8.0%" y="-7.8%" width="116.0%" height="115.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-13" transform="translate(-50.000000, -460.000000)">
+            <g id="NA/introduction-to-vs-code" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-2" mask="url(#mask-2)" fill="#FFFFFF">
+                        <g transform="translate(4.000000, 10.000000)" id="Path">
+                            <path d="M52.9027949,86.2041235 C52.9027949,80.480039 48.2905784,75.8678225 42.566494,75.8678225 C48.2905784,75.8678225 52.9027949,71.255606 52.9027949,65.5315216 C52.9027949,71.255606 57.5150114,75.8678225 63.2390959,75.8678225 C57.5150114,75.8678225 52.9027949,80.480039 52.9027949,86.2041235 Z" opacity="0.5"></path>
+                            <path d="M22.2418567,29.0663365 C16.0956983,29.0663365 11.143393,24.1140312 11.143393,17.9678728 C11.143393,24.1140312 6.19108773,29.0663365 0.0449292629,29.0663365 C6.19108773,29.0663365 11.143393,34.0186418 11.143393,40.1648002 C11.143393,34.0186418 16.0956983,29.0663365 22.2418567,29.0663365 Z" opacity="0.800000012"></path>
+                            <path d="M77.3131573,9.13382111 C72.5237538,9.13382111 68.6646623,5.27472959 68.6646623,0.485326116 C68.6646623,5.27472959 64.8055708,9.13382111 60.0161673,9.13382111 C64.8055708,9.13382111 68.6646623,12.9929126 68.6646623,17.7823161 C68.732227,12.9929126 72.5912786,9.13382111 77.3131573,9.13382111 Z"></path>
+                        </g>
+                    </g>
+                    <path d="M50.5653836,0.0668117466 C22.8917962,-1.37321138 0,20.6522852 0,48.0012959 C0,48.7738798 0.0800012849,49.5236061 0.116573301,50.2870469 C1.13373249,28.7461295 16.3134049,10.9012715 36.572016,5.94347756 C42.3755377,4.52402619 48.000771,8.83723833 48.000771,14.8121914 L48.000771,96.0020669 C75.3749249,96.0020669 97.3981358,73.0759844 95.9306836,45.3909683 C94.6483773,21.1642935 74.7920584,1.3285463 50.5653836,0.0668117466" id="Fill-8" fill="#000000" opacity="0.102748326" mask="url(#mask-2)"></path>
+                    <g id="vs-code" filter="url(#filter-3)" mask="url(#mask-2)" fill="#F7CB64">
+                        <g transform="translate(23.000000, 28.000000)">
+                            <polygon id="Path-130" points="37.4941406 0 50 5.23746654 49.9166667 45.4394531 37.4941406 50.5 0 37.859375 37.4941406 43.4628906"></polygon>
+                            <path d="M24.3955078,35.7006836 L12.986445,24.3170056 L6.02929688,29.6079102 L3.21813965,28.578125 L10.2050497,21.5417989 L3.21813965,14.5704346 L6.1574707,13.5769043 L12.9359995,18.7915341 L24.3955078,7.25097656 L31.3117676,10.3806152 L31.3117676,32.7266846 L24.3955078,35.7006836 Z M24.3955078,27.6071777 L24.3955078,15.6404242 L16.5730032,21.5894315 L24.3955078,27.6071777 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

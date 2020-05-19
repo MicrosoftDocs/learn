@@ -1,0 +1,1 @@
+In this module, you surveyed the vCPU, memory, disks, and network throughput recommendations for Azure virtual machines available to SAP HANA. You reviewed the storage layout implementations based on the recommendations of the SAP HANA Tailored Data Center Integration (TDI). Lastly, explored recommendations for connecting single and multiple SAP systems.

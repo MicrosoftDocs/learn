@@ -13,7 +13,7 @@ Use the Azure portal to get both of these values.
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. In the Storage account, under **Settings**, select **Access keys**.
-1. On the **Access keys** blade, copy the value of **key1** and save it to a temporary file. The value is used in the next unit.
+1. On the **Access keys** pane, copy the value of **key1** and save it to a temporary file. The value is used in the next unit.
 
     ![Getting the access key](../media/6-get-access-key.png)
 
@@ -23,7 +23,7 @@ Use the Azure portal to get both of these values.
 
     ![Copying the URL](../media/6-copy-url.png)
 
-    You will be manipulating the URL using the location **demodwstorage.blob.core.windows.net** and the container **data-files**. They become important when you import data from blob storage to Azure SQL Data Warehouse by using PolyBase in the next unit
+    You will be manipulating the URL using the location **demodwstorage.blob.core.windows.net** and the container **data-files**. They become important when you import data from blob storage to Azure Synapse Analytics by using PolyBase in the next unit
 
 1. Save the URL into the same text file.
 

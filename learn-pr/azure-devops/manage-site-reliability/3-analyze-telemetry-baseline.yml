@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-site-reliability.3-analyze-telemetry-baseline
+title: Analyze telemetry to establish a baseline
+metadata:
+  title: Analyze telemetry to establish a baseline
+  description: Learn about Application Insights notifications and telemetry.
+  ms.date: 12/20/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-analyze-telemetry-baseline.md)]

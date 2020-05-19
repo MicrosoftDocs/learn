@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-the-right-disk-storage-for-vm-workload.3-disk-types-for-virtual-machines
+title: Disk types for virtual machines
+metadata:
+  title: Disk types for virtual machines
+  description: Disk types for virtual machines
+  ms.date: 11/06/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-disk-types-for-virtual-machines.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You need the best disk performance for a new virtual machine. What disk type should you use, assuming all disk types are supported in your region?"
+    choices:
+    - content: "Ultra SSD"
+      isCorrect: true
+      explanation: "Ultra SSDs offer the best performance of disk types on Azure."
+    - content: "Premium SSD"
+      isCorrect: false
+      explanation: "Premium SSDs have excellent performance, but do not offer the best performance of disk types on Azure."
+    - content: "Standard HDD"
+      isCorrect: false
+      explanation: "Standard HDDs don't perform as well as premium SSDs or Ultra SSDs."
+  - content: "You have a medium-sized application with modest IO requirements. However, you need to ensure that a throughput of 25 MBps is guaranteed. What disk type should you use?"
+    choices:
+    - content: "Premium SSD"
+      isCorrect: true
+      explanation: "Standard tier disks don't guarantee a minimum throughput. For such a guarantee, use premium SSD disks."
+    - content: "Standard SSD"
+      isCorrect: false
+      explanation: "Although standard SSDs can easily support the required throughput 99% of the time, that performance is not guaranteed."
+    - content: "Standard HDD"
+      isCorrect: false
+      explanation: "Although standard HDDs can easily support the required throughput, that performance is not guaranteed."

@@ -1,5 +1,5 @@
 
-You define the structure and workflow for a Logic App using a JSON document. This document contains a JSON description of the elements that make up the Logic App ad is validated by the Workflow Definition Language schema.  The easiest way to explain the schema is to examine an existing Logic App created using the Logic Apps Designer in the Azure portal, and then view the JSON description of this app.
+You define the structure and workflow for a Logic App using a JSON document. This document contains a JSON description of the elements that make up the Logic App and is validated by the Workflow Definition Language schema. The easiest way to explain the schema is to examine an existing Logic App created using the Logic Apps Designer in the Azure portal, and then view the JSON description of this app.
 
 In the sample scenario, you want to provide your consultants with common workflows, which they can adapt to the specific needs of the universities they work with. You want to make it as easy as possible to customize and deploy each workflow, so you decide to take a look at the code behind the workflow, namely the workflow definition JSON. 
 
@@ -9,7 +9,7 @@ The Logic Apps Designer enables you to create and debug the workflow for a Logic
 
 ![workflow designer overview](../media/2-workflowdesigner.png)
 
- Lets now look at the workflow definition language as used by the JSON template.
+Let's now look at the workflow definition language as used by the JSON template.
 
 ## The Code view
 
@@ -47,7 +47,7 @@ The Code View window in the Logic Apps Designer shows the JSON document that des
 }
 ```
 
- Notice the sections in the `definition` scope that relate to the actions and triggers shown in the Logic Apps Designer. You can edit the JSON code in this document to reflect any changes required in the functionality of the Logic App. You can also add further actions, and specify how the logic in the workflow runs from one action to the next.
+Notice the sections in the `definition` scope that relate to the actions and triggers shown in the Logic Apps Designer. You can edit the JSON code in this document to reflect any changes required in the functionality of the Logic App. You can also add further actions, and specify how the logic in the workflow runs from one action to the next.
 
 ### The triggers section
 
@@ -127,20 +127,22 @@ A trigger can also specify conditions. The trigger will only fire if these condi
 
 The actions section of a Logic App defines the logic and structure of the workflow. It contains a series of *action* items. An action item is a basic building block for constructing workflows. Action items take inputs and produce outputs, which are passed to the next action item in the workflow. The different types of action items available include:
 
-- *ApiConnection*. Use this type of action to send an HTTP request to a Microsoft Service. This action type enables you to integrate a Logic App with Azure features such as Azure Service Bus, and Azure Event Grid, amongst others. The action requires inputs that include a connection string for accessing the service, and any additional information and parameters required to invoke the service.
-- *Compose*. Use this action to combine multiple inputs and expressions into a single output.
-- *Function*. This action enables you to call an Azure Function.
-- *HTTP*. This action can send an HTTP request to an HTTP endpoint (as opposed to an Azure service).
-- *Join*. This action takes an array of data items as input and generates string containing these items separated by a specified delimiter.
-- *Parse*. Use this action to parse a JSON document into a set of tokens, using a specified schema.
-- *Query*. This action enables you to filter the items in an input array using a specified condition.
-- *Response*. Use this action to create a response for an HTTP request.
-- *Table*. This action can generate an HTML table from an array of JSON objects.
-- *Terminate*. Use this action to cancel a workflow immediately.
-- *Wait*. This action pauses the workflow for a specified interval or until a timeout occurs.
-- *Workflow*. Use this action to run another Logic App.
-- *Condition*. This is actually a set of action types (*Foreach*, *If*, *Switch*, and *Until*) that enable you to implement programmatic flow of control in a workflow. You can iterate through the items in a collection, make decisions based on the values of input parameters, and loop until some condition is met.
-- *InitializeVariable*, *IncrementVariable*, *DecrementVariable*, and *SetVariable*. Use these actions to define, initialize, assign, and modify variables that you can pass between action items in a workflow.
+| Action Item | Description |
+|---|---|
+| *ApiConnection* | Use this type of action to send an HTTP request to a Microsoft Service. This action type enables you to integrate a Logic App with Azure features such as Azure Service Bus, and Azure Event Grid, amongst others. The action requires inputs that include a connection string for accessing the service, and any additional information and parameters required to invoke the service. |
+| *Compose* | Use this action to combine multiple inputs and expressions into a single output. |
+| *Function* | This action enables you to call an Azure Function. |
+| *HTTP* | This action can send an HTTP request to an HTTP endpoint (as opposed to an Azure service). |
+| *Join* | This action takes an array of data items as input and generates string containing these items separated by a specified delimiter. |
+| *Parse* | Use this action to parse a JSON document into a set of tokens, using a specified schema. |
+| *Query* | This action enables you to filter the items in an input array using a specified condition. |
+| *Response* | Use this action to create a response for an HTTP request. |
+| *Table* | This action can generate an HTML table from an array of JSON objects. |
+| *Terminate* | Use this action to cancel a workflow immediately. |
+| *Wait* | This action pauses the workflow for a specified interval or until a timeout occurs. |
+| *Workflow* | Use this action to run another Logic App. |
+| *Condition* | This is actually a set of action types (*Foreach*, *If*, *Switch*, and *Until*) that enable you to implement programmatic flow of control in a workflow. You can iterate through the items in a collection, make decisions based on the values of input parameters, and loop until some condition is met. |
+| *InitializeVariable*,<br>*IncrementVariable*,<br>*DecrementVariable*,<br><nobr>and *SetVariable*</nobr> | Use these actions to define, initialize, assign, and modify variables that you can pass between action items in a workflow. |
 
 Like a trigger, each action must have a unique name in the workflow. The example shown below names the item *Response*, but you could use any valid identifier. An action must have an *inputs* section that specifies the data that the action works on. For an HTTP Response action, this is where you can specify the data for an expression to be returned in the response message, together with an HTTP status code.
 

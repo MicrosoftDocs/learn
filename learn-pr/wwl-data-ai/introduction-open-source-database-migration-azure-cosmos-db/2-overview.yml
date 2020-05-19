@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-overview
+title: An overview of Cosmos DB
+metadata:
+  title: An overview of Cosmos DB
+  description: "An overview of Cosmos DB"
+  ms.date: 02/17/2020
+  author: wwlpublish
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-overview.md)]

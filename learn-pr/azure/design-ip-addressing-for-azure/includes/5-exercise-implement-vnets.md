@@ -1,14 +1,14 @@
-Now you're ready to create and deploy some virtual networks with the IP addresses that you planned.
+Now, you're ready to create and deploy some virtual networks with the IP addresses that you planned.
 
 In this unit, you will implement three virtual networks and subnets to support resources in those virtual networks.
 
-The **CoreServicesVnet** virtual network is deployed in the **US West** region. This virtual network will have the largest number of resources, and will have connectivity to on-premises networks through a VPN connection. This network will have web services, databases, and other systems that are key to the operations of the business. Shared services, such as AD domain controllers and DNS will also be located here. Large amounts of growth is anticipated, so a large address space is necessary for this virtual network.
+The **CoreServicesVnet** virtual network is deployed in the **US West** region. This virtual network will have the largest number of resources. It will have connectivity to on-premises networks through a VPN connection. This network will have web services, databases, and other systems that are key to the operations of the business. Shared services, such as Azure Active Directory (Azure AD) domain controllers and DNS also will be located here. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
 
-The **ManufacturingVnet** virtual network is deployed in the **North Europe** region, near the location of the manufacturing facilities. This virtual network will contain systems for the operations of the manufacturing facilities. The organization is anticipating a large number of internal connected devices for their systems to retrieve data such as temperature and will need an IP address space that they can expand into.
+The **ManufacturingVnet** virtual network is deployed in the **North Europe** region, near the location of your organization's manufacturing facilities. This virtual network will contain systems for the operations of the manufacturing facilities. The organization is anticipating a large number of internal connected devices for their systems to retrieve data from, such as temperature, and will need an IP address space that it can expand into.
 
-The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the research and development team. The research and development team uses this virtual network. This team has a small, stable set of resources that is not expected to grow. They need a small number of IP addresses for a few virtual machines for their work.
+The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
-![A diagram of virtual networks you need to create](../media/5-design-implement-vnet-peering.svg)
+![A diagram of virtual networks that you need to create](../media/5-design-implement-vnet-peering.svg)
 
 You will create the following resources:
 
@@ -28,11 +28,11 @@ You will create the following resources:
 | | | | ResearchSystemSubnet | 10.40.40.0/24|
 | | | | | |
 
-These virtual networks and subnets are structured in a way that accommodates existing resources, yet allows for the projected growth. Let's create these virtual networks and subnets to lay the foundation for our networking infrastructure.
+These virtual networks and subnets are structured in a way that accommodates existing resources yet allows for projected growth. Let's create these virtual networks and subnets to lay the foundation for our networking infrastructure.
 
 ## Create the *CoreServicesVnet* virtual network
 
-1. In Cloud Shell, run the following command to create the **CoreServicesVnet** virtual network.
+1. In Azure Cloud Shell, run the following command to create the **CoreServicesVnet** virtual network:
 
     ```azurecli
     az network vnet create \
@@ -42,7 +42,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --location westus
     ```
 
-1. Now, let's create the subnets needed for the planned resources in the virtual network.
+1. Now, let's create the subnets that we need for the planned resources in the virtual network:
 
     ```azurecli
     az network vnet subnet create \
@@ -70,7 +70,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --address-prefixes 10.20.30.0/24
     ```
 
-1. Let's take a look at what we have created. Run this command to show all the subnets that we just configured.
+1. Let's take a look at what we have created. Run this command to show all the subnets that we configured:
 
     ```azurecli
     az network vnet subnet list \
@@ -79,7 +79,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --output table
     ```
 
-    You should see the following subnets listed.
+    You should see the following subnets listed:
 
     ```output
     AddressPrefix    Name                    ProvisioningState    ResourceGroup
@@ -92,7 +92,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 ## Create the *ManufacturingVnet* virtual network
 
-1. In Cloud Shell, run the following command to create the **ManufacturingVnet** virtual network.
+1. In Cloud Shell, run the following command to create the **ManufacturingVnet** virtual network:
 
     ```azurecli
     az network vnet create \
@@ -102,7 +102,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --location northeurope
     ```
 
-1. Now, let's create the subnets needed for the planned resources in the virtual network.
+1. Now, let's create the subnets that we need for the planned resources in the virtual network:
 
     ```azurecli
     az network vnet subnet create \
@@ -130,7 +130,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --address-prefixes 10.30.22.0/24
     ```
 
-1. Let's take a look at what we have created. Run this command to show all the subnets that we just configured.
+1. Let's take a look at what we have created. Run this command to show all the subnets that we configured:
 
     ```azurecli
     az network vnet subnet list \
@@ -139,7 +139,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --output table
     ```
 
-    You should see the following subnets listed.
+    You should see the following subnets listed:
 
     ```azurecli
     AddressPrefix    Name                       ProvisioningState    ResourceGroup
@@ -152,7 +152,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 ## Create the *ResearchVnet* virtual network
 
-1. In Cloud Shell, run the following command to create the **ResearchVnet** virtual network.
+1. In Cloud Shell, run the following command to create the **ResearchVnet** virtual network:
 
     ```azurecli
     az network vnet create \
@@ -162,7 +162,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --location westindia
     ```
 
-1. Now, let's create the subnets needed for the planned resources in the virtual network.
+1. Now, let's create the subnets that we need for the planned resources in the virtual network:
 
     ```azurecli
     az network vnet subnet create \
@@ -172,7 +172,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --address-prefixes 10.40.40.0/24
     ```
 
-1. Let's take a look at the final virtual network. Run this command to show all the subnets that we just configured.
+1. Let's take a look at the final virtual network. Run this command to show all the subnets that we configured:
 
     ```azurecli
     az network vnet subnet list \
@@ -181,7 +181,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
         --output table
     ```
 
-    You should see the following subnets listed.
+    You should see the following subnets listed:
 
     ```azurecli
     AddressPrefix    Name                  ProvisioningState    ResourceGroup
@@ -191,4 +191,4 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 Now that you have created the virtual networks and subnets, you have the infrastructure on which you can deploy resources.
 
-These networks can be further integrated through virtual network peering and through VPN gateway to connect to on-premises networks. You can use network security groups to filter traffic and control access within and between virtual networks.
+These networks can be further integrated through virtual network peering and through Azure VPN Gateway to connect to on-premises networks. You can use network security groups to filter traffic and control access within and between virtual networks.

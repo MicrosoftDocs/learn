@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.read-and-write-data-using-azure-databricks
+hidden: true
 metadata:
   title: Read and write data using Azure Databricks
   description: Learn how to read and write data by using Azure Databricks and multiple data sources and destinations.
@@ -25,6 +26,7 @@ roles:
 - developer
 - data-engineer
 - data-scientist
+- student
 products:
 - azure
 - azure-databricks

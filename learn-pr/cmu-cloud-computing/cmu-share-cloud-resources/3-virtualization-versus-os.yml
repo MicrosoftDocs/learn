@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.3-virtualization-versus-os
+title: Virtualization vs. traditional operating systems
+metadata:
+  title: Virtualization vs. traditional operating systems
+  description: Virtualization vs. traditional operating systems
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-virtualization-versus-os.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Why would traditional operating systems trail behind virtualization in enabling cloud computing?"
+    choices:
+    - content: "Traditional operating systems limit the ability of different users' applications running concurrently to safely share datacenter resources"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only valid statement? Think about which of these features (resource sharing, isolation, and elasticity) are possible with or without virtualization."
+    - content: "Traditional operating systems make it difficult to allow elasticity"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only valid statement? Think about which of these features (resource sharing, isolation, and elasticity) are possible with or without virtualization."
+    - content: "Traditional operating systems don't provide full isolation"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only valid statement? Think about which of these features (resource sharing, isolation, and elasticity) are possible with or without virtualization."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Thats right!"
+
+  - content: "A user unknowingly downloaded malicious code. This code intends to shut down the machine it is running on. Running this code on a virtual machine will impact which of the following?"
+    choices:
+    - content: "Programs running on the same virtual machine"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Programs running on other virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. Running the malicious code will affect only programs running on the same virtual machine, not programs running on other virtual machines. Think about the various types of isolations that virtualization provides."
+    - content: "The physical machine at which the virtual machine is provisioned"
+      isCorrect: false
+      explanation: "Incorrect. Running the malicious code will affect only programs running on the same virtual machine, not the physical machine at which the virtual machine is provisioned. Think about the various types of isolations that virtualization provides."
+    - content: "All of the above"
+      isCorrect: false
+      explanation: "Incorrect. Running the malicious code will affect only programs running on the same virtual machine. Think about the various types of isolations that virtualization provides."
+
+  - content: "What types of isolation should a hypervisor provide?"
+    choices:
+    - content: "Fault isolation"
+      isCorrect: false
+      explanation: "That's not quite right. Virtualization prevents a buggy program in one virtual machine from affecting other virtual machines, but it can provide other types of isolations as well. Read about the various isolation levels on this page."
+    - content: "Resource isolation"
+      isCorrect: false
+      explanation: "That's not quite right. Virtualization can help control access to resources, but it can provide other types of isolations as well. Read about the various isolation levels on this page."
+    - content: "Security isolation"
+      isCorrect: false
+      explanation: "That's not quite right. Virtualization can hide information about an application from other users, but it can provide other types of isolations as well. Read about the various isolation levels on this page."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct! Virtualization provides all types of isolation."

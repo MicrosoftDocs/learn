@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-onpremises-workloads-azure
+metadata:
+  title: Migrate on-premises workloads to Azure
+  description: "Migrate on
+-premises workloads to Azure"
+  ms.date: 02/28/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate on-premises workloads to Azure
+summary: Enable VMs for replication by registering the Hyper-V host(s) to the Azure Migrate project. Configure Hyper-V VMs for replication, monitor, and run a test failover. After migration complete, migrated VMs should have security controls added.
+abstract: |
+  1.	Set up the migration target environment
+  2.	Prepare virtualized on-premises workloads for migration
+  3.	Monitor and test a failover of workloads for successful migration
+  4.	Complete the migration
+  5.	Implement security controls for migrated workloads
+prerequisites: |
+  + Knowledge of cloud and traditional architecture concepts
+  + Knowledge of networking, compute, and database systems
+  + Familiarity with virtualization concepts such as VMs, virtual networking, and virtual hard disks
+  + Ability to manage cloud identities with Azure Active Directory
+iconUrl: /learn/achievements/migrate-onpremises-workloads-azure.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.migrate-onpremises-workloads-azure.introduction
+- learn.wwl.migrate-onpremises-workloads-azure.enable-hyperv-host-servers-replication
+- learn.wwl.migrate-onpremises-workloads-azure.configure-replication-onprem-vms
+- learn.wwl.migrate-onpremises-workloads-azure.migrate-onprem-vms
+- learn.wwl.migrate-onpremises-workloads-azure.secure-migrated-vms
+- learn.wwl.migrate-onpremises-workloads-azure.summary
+badge:
+  uid: learn.wwl.migrate-onpremises-workloads-azure.badge

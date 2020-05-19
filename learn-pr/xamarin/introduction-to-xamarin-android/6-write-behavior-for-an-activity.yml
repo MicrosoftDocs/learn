@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-xamarin.introduction-to-xamarin-android.6-write-behavior-for-an-activity
+metadata:
+  title: Write behavior for an activity
+  description: "Learn how to add behavior to your Android app."
+  ms.date: 04/17/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+  
+title: Write behavior for an activity
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-write-behavior-for-an-activity.md)]

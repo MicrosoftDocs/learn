@@ -20,5 +20,5 @@ resource "azurerm_app_service" "my" {
   name                = "my-appsvc"
   location            = "northeurope"
   resource_group_name = "my-rg"
-  app_service_plan_id = "${azurerm_app_service_plan.my.id}"
+  app_service_plan_id = azurerm_app_service_plan.my.id
 }

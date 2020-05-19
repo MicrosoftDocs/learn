@@ -13,27 +13,27 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
     When prompted, enter your GitHub credentials.
 1. On the **Select** tab, select your **mslearn-tailspin-spacegame-web** repository.
-1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
+1. You might be redirected to GitHub to install the Azure Pipelines app. If so, scroll to the bottom and select **Approve and install**.
 1. On the **Configure** tab, select **ASP.NET Core**.
 1. On the **Review** tab, note the initial build configuration.
 
     ![Azure Pipelines showing the initial build configuration](../media/6-initial-pipeline-yml.png)
 
-    This is a very basic configuration that Azure DevOps provides for you based on your application type, ASP.NET Core.
+    This is a very basic configuration that Azure DevOps provides for you based on your application type, ASP.NET Core. 
 
 1. On the **Review** tab, select **Save and run**. Then select **Save and run** a second time to commit your changes to GitHub and start the build.
 
 ## Watch the pipeline run
 
-On the build screen, trace the build process through each of the steps. When the build completes, select the **Logs** tab.
+Under **Jobs** select **Job**, trace the build process through each of the steps. When the build completes, optionally select **View raw log**.
 
-Remember that at this point, you have a very basic build definition. It doesn't yet specify all of the tasks that are needed to build your app.
+Remember that at this point, you have a very basic build definition for a .NET Core Application. It is a shell and doesn't yet specify all of the tasks that are needed to build your app. As well, it doesn't meet the requirements that Andy and Mara have discussed.
 
-Here you see the minimum number of steps needed to prepare the VM, fetch the latest source code from GitHub, run `dotnet build`, and clean up:
+Here you see the steps that the build definition created. It prepares the VM, although it is using a Windows VM and Andy and Mara need Ubuntu. It fetches the latest source code from GitHub, runs `dotnet build`, and a few other things:
 
-![Initial build configuration](../media/6-build-initial.png)
+![Initial build configuration](../media/6-initial-build.png)
 
-This configuration is a great start because now you have a starting point for adding build tasks.
+This configuration is a great start because now you have a starting point for adding build tasks. However, it needs editing to meet the requirements for the Tailspin build.
 
 > [!TIP]
 > Check your email. You might have already received a build notification with the results of your run. You can use these notifications to let your team members know when builds complete and whether each build passed or failed.
@@ -92,7 +92,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     You can also define your own variables, which you'll do soon.
 
-    You might have also noticed the `DotNetCoreInstaller@0` task, which is the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with a number of .NET Core SDK versions, this task lets her easily specify the version she needs to use on the build agent.
+    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with a number of .NET Core SDK versions, this task lets her easily specify the version she needs to use on the build agent.
 
 1. Run the following Git commands from the integrated terminal to add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub. These steps are similar to steps you performed earlier.
 
@@ -109,7 +109,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     Pushing the branch to GitHub triggers the build process in Azure Pipelines.
 
-1. In Azure Pipelines, go to your build. To do so, select **Pipelines** on the side of the page and then select **Builds**. You see your commit message and that the build is running using the code from the `build-pipeline` branch:
+1. In Azure Pipelines, go to your build. To do so, select **Pipelines** on the side of the page and then select your pipeline. You see your commit message and that the build is running using the code from the `build-pipeline` branch:
 
     ![Azure Pipelines showing the latest build](../media/6-build-history.png)
 
@@ -128,8 +128,6 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     ![Azure Pipelines showing the complete list of build tasks](../media/6-add-build-tasks.png)
 
-1. After your build is completed, select the **Summary** tab.
+1. After your build is completed, select any of the steps to see the overall progression of the build. From there, you can jump to the build logs or the associated change on GitHub.
 
-    You see the overall progression of the build. From there, you can jump to the build logs or the associated change on GitHub.
-
-    ![Azure Pipelines showing the build summary](../media/6-build-summary.png)
+    ![Azure Pipelines showing the complete list of build tasks with one selected](../media/6-build-summary.png)

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-xamarin.prepare-to-publish-your-xamarin-application.7-summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 05/01/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+  
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

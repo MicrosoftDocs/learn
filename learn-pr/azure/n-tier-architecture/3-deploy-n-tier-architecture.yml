@@ -10,8 +10,8 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Deploy an N-tier architecture
-# interactive: bash
-# azureSandbox: true
+interactive: bash
+azureSandbox: true
 durationInMinutes: 20
 content: |
   [!include[](includes/3-deploy-n-tier-architecture.md)]

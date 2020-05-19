@@ -25,13 +25,14 @@ You'll do the following things:
     WEBAPPNAME=educationapp-$RANDOM
     az webapp up \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --location centralus \
         --sku F1 \
         --name $WEBAPPNAME
     ```
 
 1. When the web application has been deployed, the output will show an *App_url* with the URL of the web site. Open this site in a new tab.
 
-    ![The education web app running. Currently, no data is displayed.](../media/5-web-app-no-data.png)
+    :::image type="content" source="../media/5-web-app-no-data.png" alt-text="The education web app running. Currently, no data is displayed." loc-scope="other"::: <!-- no-loc -->
 
     You want the web app to display a list of courses and the modules that make up each course. Currently, the app doesn't retrieve or display this data. So, you need to update the code to get the data from the database and display it.
 
@@ -157,7 +158,9 @@ Now let's add to the application the code to retrieve course data from the datab
     }
     ```
 
-1. Leave the code editor open, and switch to the Azure portal. In the pane on the left side, click **SQL databases**, and select your database.
+1. Leave the code editor open, and switch to the Azure portal. 
+
+1. On the Azure portal menu, select **SQL databases**, and select your database.
 
 1. Under **Settings**, select **Connection strings**. Copy the **ADO.NET** connection string to the clipboard.
 
@@ -500,4 +503,4 @@ With the application fully configured to retrieve and display the course data to
 
 3. After the new web app is deployed, select the link for the app. It should now display a list of courses and modules with the data that's stored in the database.
 
-    ![Screenshot of the education web app running, showing the data](../media/5-web-app-with-data.png)
+    :::image type="content" source="../media/5-web-app-with-data.png" alt-text="Screenshot of the education web app running, showing the data." loc-scope="other":::

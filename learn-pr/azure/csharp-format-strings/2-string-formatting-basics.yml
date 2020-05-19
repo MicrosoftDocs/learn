@@ -4,9 +4,9 @@ title: String formatting basics
 metadata:
   title: String formatting basics
   description: Use composite formatting and string interpolation along with format specifiers to merge a string template with variable data.
-  ms.date: 10/18/2019
+  ms.date: 1/3/2020
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

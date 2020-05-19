@@ -29,7 +29,7 @@ Let's use the **Azure Log Analytics** website to practice writing queries agains
         | top 10 by TimeGenerated
     ```
 
-1. Enter a query by using a filter clause and a time. This query fetches records that are more than 30 minutes old and that have a level of 10 or more.
+1. Enter a query by using a filter clause and a time range. This query fetches records that are more than 30 minutes old and that have a level of 10 or more.
 
     ```kusto
         SecurityEvent

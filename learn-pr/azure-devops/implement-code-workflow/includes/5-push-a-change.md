@@ -56,13 +56,13 @@ To ensure that you have a working copy to start your changes, build and run the 
     > If you see an error in your browser that's related to a certificate error, select <kbd>Ctrl+C</kbd> from your terminal to stop the running application.
     > Then run `dotnet dev-certs https --trust` and select **Yes** when prompted. Or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
     >
-    > After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to [http://localhost:5000](http://localhost:5000?azure-portal=true) from a new browser tab to see the running application.
+    > After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to `http://localhost:5000` from a new browser tab to see the running application.
 
 ## Verify that the application is running
 
 In development mode, the *Space Game* website is configured to run on port 5000.
 
-In a new browser tab, navigate to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
+In a new browser tab, navigate to `http://localhost:5000` to see the running application.
 
 You see this:
 
@@ -119,7 +119,7 @@ Like before, the `feature/home-page-text` is based off of `master`.
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
     ```
 
-1. On a new browser tab, go to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
+1. On a new browser tab, go to `http://localhost:5000` to see the running application.
 
     You can see that the home page contains the updated text.
 

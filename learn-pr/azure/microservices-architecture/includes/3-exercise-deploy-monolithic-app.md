@@ -13,7 +13,7 @@ Let's start by deploying the application. First, we need to create the Azure res
 1. Run this command to deploy the resources that are needed for this application. This deployment takes a few minutes.
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
         --resource-group <rgn>[sandbox resource group]</rgn> \
         --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-microservices-architecture/master/deployment/azuredeploy.json
     ```
@@ -68,7 +68,7 @@ Let's start by deploying the application. First, we need to create the Azure res
                     --output tsv)
     ```
 
-    ![Screenshot of the Drone Delivery website](../media/3-web-site-before.png)
+    :::image type="content" source="../media/3-web-site-before.png" alt-text="Screenshot of the Drone Delivery website." loc-scope="other":::
 
 ## Perform a load test against the application
 
@@ -78,6 +78,6 @@ Now let's test out the performance of the application in its monolithic architec
 
 1. For the first request, you see a result of around 8 to 12 seconds to process 100 messages. If you refresh the page and resubmit if prompted, this number might drop by about half. It still takes around five seconds per request.
 
-    ![Screenshot of the Drone Delivery website after running the performance test](../media/3-performance-test.png)
+    :::image type="content" source="../media/3-performance-test.png" alt-text="Screenshot of the Drone Delivery website after running the performance test." loc-scope="other":::
 
 Fabrikam suspects that the monolithic architecture is preventing heavily used services from scaling, which leads to the poor performance seen here.

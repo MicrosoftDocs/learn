@@ -14,7 +14,7 @@ Suppose, for example, you have two databases. You use one for production and the
 
 To view and configure settings for the swap, go to the web app resource and follow these steps:
 
-1. In the **All resources** view of the Azure portal, select the deployment slot you want to configure.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and select the deployment slot you want to configure.
 1. Navigate to the **Configuration** page.
 1. On the **Application settings** tab, observe whether or not the settings you're interested in have a checkmark in the **deployment slot setting** field. To set or unset the checkmark on a given setting, select the setting's pencil button to edit it, then toggle the **deployment slot setting** checkbox to the desired value and select **OK**.
 
@@ -28,7 +28,7 @@ To view and configure settings for the swap, go to the web app resource and foll
 
 To swap two slots in the Azure portal:
 
-1. From the **All resources** view in the Azure portal, navigate to any of the deployment slots for the web app and select the **Deployment Slots** page.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and navigate to any of the deployment slots for the web app and select the **Deployment Slots** page.
 1. Select **Swap**. 
 1. In the **Swap** dialog box, you can select the source and target slots and see a summary of the settings that will be applied to the swapped slots:
 

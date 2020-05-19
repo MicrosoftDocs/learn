@@ -42,7 +42,7 @@ The first step is to create a new file named `Dockerfile`. You can use any text 
     ```
 
     > [!NOTE]
-    > Don't forget the period `.` at the end of the preceding command. It represents the source directory containing the docker file, which in our case is the current directory. Since we didn't specify the name of a file with the --file parameter, the command looks for a file called **Dockerfile** in our current directory.
+    > Don't forget the period `.` at the end of the preceding command. It represents the source directory containing the docker file, which in our case is the current directory. Since we didn't specify the name of a file with the `--file` parameter, the command looks for a file called **Dockerfile** in our current directory.
 
 ## Verify the image
 
@@ -52,9 +52,9 @@ The first step is to create a new file named `Dockerfile`. You can use any text 
     az acr repository list --name $ACR_NAME --output table
     ```
 
-    The output from this command should look similar to the following:
+    The output from this command should look similar to the following example:
 
-    ```console
+    ```output
     Result
     -------------
     helloacrtasks

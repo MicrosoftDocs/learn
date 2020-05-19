@@ -24,7 +24,7 @@ In this module, you got a sense of how the MEAN stack works and brought up a bas
 Learn more about the MEAN stack components and other Node.js packages you used in this module.
 
 * [MongoDB](https://www.mongodb.com?azure-portal=true)
-* [Express](http://expressjs.com?azure-portal=true)
+* [Express](https://expressjs.com?azure-portal=true)
 * [AngularJS](https://angularjs.org?azure-portal=true)
 * [Node.js](https://nodejs.org?azure-portal=true)
 

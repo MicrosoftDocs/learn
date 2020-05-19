@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-xamarin.explore-cross-platform-design-patterns.11-exercise-switch-to-an-ioc-container-and-inject-your-dependency-into-your-code
+metadata:
+  title: Exercise - Switch to an IoC container and inject your dependency into your code
+  description: "Implement an IoC container in the GreatQuotes Xamarin.Forms application."
+  ms.date: 05/01/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+  
+title: Exercise - Switch to an IoC container and inject your dependency into your code
+durationInMinutes: 10
+content: |
+  [!include[](includes/11-exercise-switch-to-an-ioc-container-and-inject-your-dependency-into-your-code.md)]

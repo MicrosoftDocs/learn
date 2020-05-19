@@ -6,9 +6,9 @@ But before we can discuss *why* you might choose one type over another, first yo
 
 Answering the question "what is data" depends on who you ask, and in what context you're asking it.  
 
-In software development, data is essentially a value that is stored in the computer's memory as a series of bits.  A **bit** is a simple binary switch represented as a `0` or `1`, or rather, "off" and "on", respectively.  A single bit doesn't seem useful, however when you combine 8 bits together in a sequence, they form a **byte**.  When used in a byte, each bit takes on a meaning in the sequence.  In fact, you can represent 255 different combinations with just 8 bits if you use a binary (or rather, base-2) numeral system.
+In software development, data is essentially a value that is stored in the computer's memory as a series of bits.  A **bit** is a simple binary switch represented as a `0` or `1`, or rather, "off" and "on", respectively.  A single bit doesn't seem useful, however when you combine 8 bits together in a sequence, they form a **byte**.  When used in a byte, each bit takes on a meaning in the sequence.  In fact, you can represent 256 different combinations with just 8 bits if you use a binary (or rather, base-2) numeral system.
 
-For example, in a binary numeral system, you can represent the number `195` as `110000011`.  The following table will help you visualize how this works.  The first row has 8 columns that correspond to a position in a byte.  Each position represents a different numeric value.  The second row can store the value of an individual bit, either `0` ot `1`.
+For example, in a binary numeral system, you can represent the number `195` as `11000011`.  The following table will help you visualize how this works.  The first row has 8 columns that correspond to a position in a byte.  Each position represents a different numeric value.  The second row can store the value of an individual bit, either `0` or `1`.
 
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 |-----|-----|-----|-----|-----|-----|-----|-----|
@@ -22,9 +22,9 @@ To work with larger values beyond `255`, the computer would need to store more b
 
 If a computer only understands `0`s and `1`s, then how does it allow us to work with text?  Using a system like ASCII, you can use a single byte to represent upper and lowercase letters, numbers, tab, backspace, newline and many mathematical symbols, blocks, lines, and so on.   
 
-For example, if I wanted to store a capitalized letter `A` as a value in my application, the computer would only understand the binary form of that value.  If I wanted to better understand how it's handled by the computer, I would first need to locate an ASCII table that provides a lookup of ASCII values and their decimal equivalents.  You can search for the terms "ASCII lookup decimal" to locate such a resource online.
+For example, if I wanted to store a lower-case letter `a` as a value in my application, the computer would only understand the binary form of that value.  If I wanted to better understand how it's handled by the computer, I would first need to locate an ASCII table that provides a lookup of ASCII values and their decimal equivalents.  You can search for the terms "ASCII lookup decimal" to locate such a resource online.
 
-In this case, the capitalized letter `A` is equivalent to the decimal value `97`.  Then, I would use the same binary numeral system in reverse to find how an ASCII letter `A` is stored by the computer.
+In this case, the lower-case letter `a` is equivalent to the decimal value `97`.  Then, I would use the same binary numeral system in reverse to find how an ASCII letter `a` is stored by the computer.
 
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 |-----|-----|-----|-----|-----|-----|-----|-----|

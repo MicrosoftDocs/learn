@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.create-users-and-groups-in-azure-active-directory
+metadata:
+  title: Create Azure users and groups in Azure Active Directory
+  description: Learn how to create Azure users and groups in Azure Active Directory.
+  ms.date: 10/25/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create Azure users and groups in Azure Active Directory
+summary: Create users in Azure Active Directory. Understand different types of groups. Create a group and add members. Manage business-to-business guest accounts.
+abstract: | 
+  In this module, you will:
+  - Add users to Azure Active Directory.
+  - Manage app and resource access by using Azure Active Directory groups.
+  - Give guest users access in Azure Active Directory business to business (B2B).
+prerequisites: | 
+  - None
+iconUrl: /learn/achievements/create-users-and-groups-in-azure-active-directory.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+units:
+- learn.azure.create-users-and-groups-in-azure-active-directory.introduction
+- learn.azure.create-users-and-groups-in-azure-active-directory.user-accounts-azure-ad
+- learn.azure.create-users-and-groups-in-azure-active-directory.exercise-add-delete-users-azure-ad
+- learn.azure.create-users-and-groups-in-azure-active-directory.manage-app-resource-access-azure-ad-groups
+- learn.azure.create-users-and-groups-in-azure-active-directory.exercise-assign-users-azure-ad-groups
+- learn.azure.create-users-and-groups-in-azure-active-directory.collaborate-guest-accounts-azure-ad-b2b
+- learn.azure.create-users-and-groups-in-azure-active-directory.exercise-guest-user-access-azure-ad-b2b
+- learn.azure.create-users-and-groups-in-azure-active-directory.summary
+badge:
+  uid: learn.azure.create-users-and-groups-in-azure-active-directory.badge

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azdo.manage-site-reliability
+metadata:
+  title: Manage site reliability - Learn
+  description: Learn how to manage site reliability.
+  ms.date: 12/20/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Manage site reliability
+summary: Learn how to manage site reliability.
+abstract: |
+  In this module, you will:
+
+  - Learn how site reliability engineering (SRE) empowers software developers to own the ongoing daily operation of their applications in production.
+  - Learn how Application Insights analyzes the performance of your web application and can warn you about potential problems.
+  - Learn about processes that you can implement to monitor site reliability.
+  - See how blameless postmortems encourage a "just culture" that balances safety and accountability.
+prerequisites: An Azure DevOps organization
+iconUrl: /learn/achievements/azure-devops/manage-site-reliability.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure-devops
+units:
+- learn.azdo.manage-site-reliability.1-introduction
+- learn.azdo.manage-site-reliability.2-site-reliability-engineering
+- learn.azdo.manage-site-reliability.3-analyze-telemetry-baseline
+- learn.azdo.manage-site-reliability.4-perform-ongoing-tuning
+- learn.azdo.manage-site-reliability.5-analyze-alerts-baseline
+- learn.azdo.manage-site-reliability.6-blameless-postmortem
+- learn.azdo.manage-site-reliability.7-knowledge-check
+- learn.azdo.manage-site-reliability.8-summary
+badge:
+  uid: learn.azdo.manage-site-reliability.badge

@@ -1,6 +1,6 @@
 Now that your build agent is running and ready to receive build jobs, let's see it in action. In this unit, you modify a basic build configuration that we provide to build the _Space Game_ website by using your agent and not the Microsoft-hosted agent.
 
-At the end of this unit, as an optional step, you can remove the agent pool from your Azure DevOps organization.
+At the end of this unit, as an optional step, you can remove the agent pool from your Microsoft Azure DevOps organization.
 
 ## Fetch the branch from GitHub
 

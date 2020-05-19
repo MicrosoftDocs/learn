@@ -14,4 +14,4 @@ Now that you have reviewed this module, you should be able to:
 * [Download PDF](https://aka.ms/AIBSCULTFRAINTDWL) of "Discover the characteristics that foster an AI-Ready culture."
 * [Download PDF](https://aka.ms/AIBSCULTFRAFRADWL) of "Understand how Prosci's ADKAR framework can help you lead organizational change."
 * For more detailed information on these concepts, check out [Prosci’s article on the topic](https://www.prosci.com/resources/articles/seven-change-concepts).
-* For more information about the Five Levers of Change Management, go [here](http://www.prosci.com/resources/articles/five-levers-of-organizational-change-management).
+* For more information about the Five Levers of Change Management, go [here](https://www.prosci.com/resources/articles/five-levers-of-organizational-change-management).

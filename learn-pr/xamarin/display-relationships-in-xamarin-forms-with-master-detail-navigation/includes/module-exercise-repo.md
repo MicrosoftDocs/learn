@@ -1,0 +1,1 @@
+[exercise repo](https://github.com/MicrosoftDocs/mslearn-xamarin-forms-master-detail-navigation)

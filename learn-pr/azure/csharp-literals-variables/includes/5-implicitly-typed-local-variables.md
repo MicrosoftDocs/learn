@@ -24,7 +24,7 @@ If you run this code, you'll see the following error message.
 ```
 
 > [!NOTE]
-> Other programming languages use the `var` keyword differently.  In C#, the variable is statically typed by the compiler regarldess of whether you use the actual data type or allow the compiler to infer the data type.  In other words, the type is locked in at the time of declaration and therefore will never be able to hold values of a different data type.
+> Other programming languages use the `var` keyword differently.  In C#, the variable is statically typed by the compiler regardless of whether you use the actual data type or allow the compiler to infer the data type.  In other words, the type is locked in at the time of declaration and therefore will never be able to hold values of a different data type.
 
 ### You can only use the `var` keyword if the variable is initialized.
 
@@ -51,5 +51,5 @@ As you get started, we recommend you continue to use the actual data type name w
 
 The most important takeaways from this unit about the `var` keyword and implicitly type local variables:
 
-- The `var` keyword tells the compiler to infer the data type of the variable based on the 
+- The `var` keyword tells the compiler to infer the data type of the variable based on the value it is initialized to.
 - You'll likely see the `var` keyword as you read other people's code.  However, you should use the data type when possible.

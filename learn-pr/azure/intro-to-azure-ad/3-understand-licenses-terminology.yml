@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-ad.3-understand-licenses-terminology
+metadata:
+  title: Understand Azure AD licenses and terminology
+  description: Understand Azure AD licenses and terminology
+  ms.date: 02/25/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand Azure AD licenses and terminology
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understand-licenses-terminology.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What does the term *identity* mean?
+    choices:
+    - content: Something that can be authenticated. It can be a user, application, service, or anything that needs to be identified.
+      isCorrect: true
+      explanation: An identity represents a user, or sometimes a service or an application, that needs access to do something.
+    - content: A user that can be authenticated. It has to be a user. Applications or services can't be considered as identities.
+      isCorrect: false
+      explanation: An identity can be a user, application, service, or anything that needs to be identified.
+    - content: The service that does the authentication for users. It can also be an application.
+      isCorrect: false
+      explanation: An identity is something that can be authenticated. For example, it can be a user, application, or service.
+  - content: Which licensing plan supports Identity Protection?
+    choices:
+    - content: Azure Active Directory Free
+      isCorrect: false
+      explanation: You need Azure Active Directory Premium P2 to use Identity Protection.
+    - content: Azure Active Directory Premium P1
+      isCorrect: false
+      explanation: You need Azure Active Directory Premium P2 to use Identity Protection.
+    - content: Azure Active Directory Premium P2
+      isCorrect: true
+      explanation: Identity Protection helps you configure risk-based conditional access for your applications to protect them from identity-based risks.

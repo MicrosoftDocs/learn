@@ -1,6 +1,6 @@
 Companies that use Azure Storage tables for business-critical applications may find that Azure Cosmos DB provides a better service for their needs.
 
-Suppose that your lenses database, which is implemented in Azure Storage tables, has been working well. The company has recently expanded into several new countries, and you have found that the performance of the database is not always as good in those countries as it is in your . Your technical director has asked you to determine if there is a way to eliminate these problems without rewriting the app that uses the database.
+Suppose that your lenses database, which is implemented in Azure Storage tables, has been working well. The company has recently expanded into several new countries, and you have found that the performance of the database is not always as good in those countries as it is in your country. Your technical director has asked you to determine if there is a way to eliminate these problems without rewriting the app that uses the database.
 
 Here, you will learn how Azure Cosmos DB provides a more scalable alternative to Azure Storage tables and does not require developers to rewrite code.
 

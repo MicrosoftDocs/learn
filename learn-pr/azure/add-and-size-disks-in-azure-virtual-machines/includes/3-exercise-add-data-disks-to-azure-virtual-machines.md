@@ -115,7 +115,7 @@ For learning purposes, here you'll also run a few commands on your VM to verify 
       --name support-web-vm01 \
       --show-details \
       --query [publicIps] \
-      --o tsv)
+      --output tsv)
     ```
 
 1. Run the following `ssh` command to run the `lsblk` command on your VM over an SSH connection using the `ipaddress` variable data you just created. Recall that `azureuser` was the admin username we used when we created the VM. If you chose a different name, use that instead. Enter "yes" when prompted.
@@ -182,7 +182,7 @@ For learning purposes, here you'll also run a few commands on your VM to verify 
     ```
 
 > [!TIP]
-> Some Linux kernels support TRIM to discard unused blocks on disks. This feature is available on Azure disks and can save you money if you create large files and then delete them. Learn how to [turn this feature on](https://docs.microsoft.com/azure/virtual-machines/linux/attach-disk-portal#trimunmap-support-for-linux-in-azure?azure-portal=true) in the Azure documentation.
+> Some Linux kernels support TRIM to discard unused blocks on disks. This feature is available on Azure disks and can save you money if you create large files and then delete them. Learn how to [turn this feature on](https://docs.microsoft.com/azure/virtual-machines/linux/attach-disk-portal#trimunmap-support-for-linux-in-azure) in the Azure documentation.
 
 ## Summary
 

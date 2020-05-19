@@ -6,7 +6,7 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
 
-1. On the left, select **Monitor**. Then select **Alerts** in the left panel.
+1. On the Azure portal menu, select **Monitor**. Then select **Alerts** in the left panel.
 
 1. Select **+ New alert rule**.
 
@@ -67,7 +67,7 @@ It can take up to five minutes for an activity log alert rule to become active. 
 
 To trigger the alert, you need to delete the virtual machine that you created earlier.
 
-1. From the Azure portal, select **Virtual machines**. This action will display a list of the virtual machines.
+1. On the Azure portal menu or from the **Home** page, select **Virtual machines**. This action will display a list of the virtual machines.
 
 1. Select the **vm1** virtual machine.
 
@@ -85,7 +85,7 @@ In the example, you set up an Ubuntu VM, and you created an activity log rule to
 
     ![Screenshot of alert email](../media/7-alert-email.png)
 
-1. On the Azure portal, select **Monitor** and then **Alerts**.
+1. On the Azure portal menu, select **Monitor** and then **Alerts**.
 
 1. You should see the Sev4 alerts generated from the deletion of the VM.
 

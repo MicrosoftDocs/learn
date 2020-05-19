@@ -4,12 +4,12 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 10/17/2019
-  author: PeterTurcan
+  author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/9-summary.md)]
 quiz:
@@ -28,44 +28,29 @@ quiz:
       isCorrect: false
       explanation: The Primary Key is unique to each device.
 
-  - content: 'Which statement most accurately describes a Device Set?'
-    choices: 
-    - content: 'All devices of a Device Template, no exceptions.'
-      isCorrect: false
-      explanation: There can be exceptions.
-    - content: 'All devices of a Device Template, with exceptions based on device Properties.'
-      isCorrect: true
-      explanation: Any number of exceptions can be created, based on device Properties.
-    - content: 'All devices of a Device Template, with exceptions based on device Settings, Properties, or Measurements.'
-      isCorrect: false
-      explanation: Settings and Measurements cannot be used to define Device Sets.
-    - content: 'All devices that have a setting that the device belongs to a Device Set.'
-      isCorrect: false
-      explanation: There is no such setting.
-
   - content: 'What is the process of authenticating devices to IoT Central known as?'
     choices: 
     - content: 'Authenticating'
       isCorrect: false
-      explanation: Good try, but no, there is a specific name for authenticating devices.
+      explanation: Good try, but no, there's a specific name for authenticating devices.
     - content: 'Servicing'
       isCorrect: false
       explanation: Servicing is a broader term than authenticating devices.
     - content: 'Provisioning'
       isCorrect: true
-      explanation: This term is what you will see in the IoT Central portal.
+      explanation: This term is what you'll see in the IoT Central portal.
       
-  - content: 'If you add a map to a dashboard, device locations are added by default, what additional information can be added for each device?'
+  - content: 'Internally, what elements make up a Geopoint?'
     choices: 
-    - content: 'One state measurement'
+    - content: 'Latitude, Longitude, Altitude'
       isCorrect: true
-      explanation: In our scenario contents state, cooling system state, or truck state, could be added to the map, in the form of a color code.
-    - content: 'One telemetry measurement'
+      explanation: Altitude isn't needed in our scenario, but some applications will certainly require it.
+    - content: 'Latitude, Longitude'
       isCorrect: false
-      explanation: Telemetry measurements could be a bit complicated to show with just a color.
-    - content: 'One event measurement'
+      explanation: These two values are all we needed in the refrigerated truck scenario, but there's more to a Geopoint.
+    - content: 'X and Y coordinates'
       isCorrect: false
-      explanation: Events are shown elsewhere.
-    - content: 'Nothing'
+      explanation: X and Y coordinates work best on 2D rectangular graphs, rather than a spheroid such as the Earth.
+    - content: 'Latitude, Longitude, Time'
       isCorrect: false
-      explanation: One additional piece of information can be added.
+      explanation: The space-time dimension isn't part of a Geopoint.

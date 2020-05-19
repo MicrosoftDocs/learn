@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-premises-mysql-databases-azure-database-mysql
+metadata:
+  title: Migrate on-premises MySQL databases to Azure Database for MySQL
+  description: "&quot;Migrate on
+-premises MySQL to Azure Database for MySQL&quot;"
+  ms.date: 01/31/2020
+  author: wwlpublish
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate on-premises MySQL databases to Azure Database for MySQL
+summary: In this module, you'll learn about the benefits of migrating MySQL workloads to Azure, you'll see how to create an Azure Database for MySQL instance, and learn how to migrate on-premises MySQL databases to Azure.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the features and limitations of Azure Database for MySQL.
+  - Migrate an on-premises MySQL database to Azure Database for MySQL.
+  - Reconfigure existing applications that use your on-premises MySQL databases to connect to Azure Database for MySQL.
+prerequisites: |
+  - Knowledge of MySQL or PostgreSQL database management systems, including application development for these systems, administration, backup, and recovery techniques, such as import/export and backup/restore.
+  - Knowledge of Azure fundamental concepts, and experience using the Azure portal.
+iconUrl: /learn/achievements/learn-pr/achievements/migrate-on-premises-mysql-databases-to-azure-database-for-mysql.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure
+units:
+- learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.introduction
+- learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.introduction-azure-database-mysql
+- learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.migrate-premises-mysql-database-azure
+- learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.application-migration
+- learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.knowledge-check
+- learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.summary
+badge:
+  uid: learn.wwl.migrate-on-premises-mysql-databases-to-azure-database-for-mysql.badge

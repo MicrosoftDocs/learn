@@ -40,7 +40,7 @@ In the browser-based .NET editor, all the code you write is executed inside of a
 
 The method's name `Main()` is special.  When the program is executed, by default the .NET Runtime will search for a method named `Main()` to use as the starting point, or entry point, for the program.
 
-A **class** is a container for members like methods, properties, events, fields, and so on.  In the module "Call methods from the .NET Class Library using C#", you learned that classes 
+A **class** is a container for members like methods, properties, events, fields, and so on.  In the module "Call methods from the .NET Class Library using C#", you learned that you must create an instance of a class using the `new` keyword if you want to call a method that requires state (or rather, instance methods).  Otherwise, you can call methods that are not stateful without first creating an instance of the class (or rather, static methods).
 
 A **namespace** disambiguates class names.  In the module "Call methods from the .NET Class Library using C#", you learned how there are so many classes in the .NET Class Library that it's possible to have two classes with the same name.  The namespace ensures you can instruct the compiler which class and method you want to work with by also specifying a namespace.
 

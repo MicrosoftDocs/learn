@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-centers.3-data-center-growth
+title: Size, density, and efficiency growth
+metadata:
+  title: Size, density, and efficiency growth of datacenters
+  description: Learn about the size, density, and efficiency growth of datacenters.
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-data-center-growth.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I get this block 1  
+  - content: "Let's consider a datacenter for organization X that spans about 5,000 square feet. Based on the average power density of datacenters in 2010 (see Figure 19), and assuming the entire area is populated with IT equipment, what's the approximate power consumption of the entire datacenter?"
+    choices:
+    - content: "2.5 MW"
+      isCorrect: true
+      explanation: "Correct! The average watts per square foot in 2010 was approximately 500 W. The total power consumption of the datacenter is 500 × 5,000 = 2,500,000 W = 2.5 MW."
+    - content: "250 kW"
+      isCorrect: false
+      explanation: "Incorrect. The average watts per square foot in 2010 was approximately 500 W. One megawatt = 1,000,000 W. Can you do the math? Think about how you can compute total power consumption given area and power density."
+    - content: "1.5 MW"
+      isCorrect: false
+      explanation: "Incorrect. The average watts per square foot in 2010 was approximately 500 W. One megawatt = 1,000,000 W. Can you do the math? Think about how you can compute total power consumption given area and power density."
+    - content: "150 kW"
+      isCorrect: false
+      explanation: "Incorrect. The average watts per square foot in 2010 was approximately 500 W. One megawatt = 1,000,000 W. Can you do the math? Think about how you can compute total power consumption given area and power density."
+
+# Did I get this block 2
+  - content: "Which of the following techniques is **not** effective in improving the power efficiency of datacenters?"
+    choices:
+    - content: "Hot-aisle containment and in-row cooling"
+      isCorrect: false
+      explanation: "Incorrect. The retro encabulator is a fictional machine and isn't effective in improving the power efficiency of datacenters! Consider each of the options individually. You can look up the options on the internet."
+    - content: "Server consolidation"
+      isCorrect: false
+      explanation: "Incorrect. The retro encabulator is a fictional machine and isn't effective in improving the power efficiency of datacenters! Consider each of the options individually. You can look up the options on the internet."
+    - content: "Retro encabulator"
+      isCorrect: true
+      explanation: "Correct! The retro encabulator is a fictional machine."
+    - content: "High-voltage, direct current feeds to servers"
+      isCorrect: false
+      explanation: "Incorrect. The retro encabulator is a fictional machine and isn't effective in improving the power efficiency of datacenters! Consider each of the options individually. You can look up the options on the internet."
+      

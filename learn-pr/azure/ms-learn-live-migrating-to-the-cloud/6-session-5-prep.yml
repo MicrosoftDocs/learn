@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ms-learn-live.6-session-5-prep
+title: Prepare for session 5 - "Monitor and scale your applications in Azure"
+metadata:
+  title: Prepare for session 5 - "Monitor and scale your applications in Azure"
+  description: Prepare for session 5 - "Monitor and scale your applications in Azure"
+  ms.date: 1/20/2020
+  author: krumelur
+  ms.author: renrup
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  azureSandbox: true
+interactive: bash
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-session-5-prep.md)]

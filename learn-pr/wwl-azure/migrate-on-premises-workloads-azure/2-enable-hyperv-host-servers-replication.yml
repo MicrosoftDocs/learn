@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-onpremises-workloads-azure.enable-hyperv-host-servers-replication
+title: Enable Hyper-V host servers for replication
+metadata:
+  title: Register Hyper-V hosts
+  description: "Register Hyper-V hosts"
+  ms.date: 03/02/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-enable-hyperv-host-servers-replication.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In your scenario, what components does the Hyper-V host require to replicate your VMs to Azure?"
+    choices:
+    - content: "Mobility service, Azure Site Recovery provider, Registration key file"
+      isCorrect: false
+      explanation: "The Mobility service is used for agent-based migration and is installed on the machines you want to replicate. Your scenario is for agentless migration, so nothing needs to be installed on the Hyper-V VMs."
+    - content: "Azure Site Recovery provider, Azure Site Recovery agent, Registration key file"
+      isCorrect: true
+      explanation: "Correct. All three components are required by the Hyper-V host for replicating VMs to Azure."
+    - content: "Registration appliance, Registration key file, Azure Site Recovery agent"
+      isCorrect: false
+      explanation: "The registration appliance is used for agent-based migration. However, your scenario is for agentless migration."
+  - content: "During replication, where does the replication provider upload the replicated data from the on-premises Hyper-V VMs?"
+    choices:
+    - content: "Azure Key Vault"
+      isCorrect: false
+      explanation: "Azure Key Vault is used to manage access keys to the replication storage account when doing an agentless migration of VMware VMs."
+    - content: "Hyper-V replica disks"
+      isCorrect: false
+      explanation: "The Server Migration tool the processes the replicated data, and applies it to replica disks in the subscription. However, the replicated data is first uploaded to an Azure storage account."
+    - content: "Azure storage account"
+      isCorrect: true
+      explanation: "Correct. Replicated data is uploaded to an Azure storage account."

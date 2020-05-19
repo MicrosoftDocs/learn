@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-enterprise-security-in-hdinsight.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/28/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What would you need to enable to ensure that traffic leaving an HDInsight subnet securely reaches the Cluster Metastore?"
+    choices:
+    - content: "Network Security Groups."
+      isCorrect: false
+      explanation: "A network security group (NSG) provides a virtual firewall for a set of cloud resources that all have the same security posture."
+    - content: "Virtual Network Service Endpoints."
+      isCorrect: true
+      explanation: "You use Virtual Network Service Endpoints to ensure that traffic leaving an HDInsight subnet securely reaches the Cluster Metastore"
+    - content: "Inbound Access rules."
+      isCorrect: false
+      explanation: "Inbound rules filter traffic passing from the network to a service."
+  - content: "Contoso wants to retain Active directory passwords on-premises so that they are not synchronized to Azure active directory. In such circumstances, what service would you recommend designing for the authentication for users?"
+    choices:
+    - content: "HDInsight Identity Broker."
+      isCorrect: true
+      explanation: "Use HDInsight Identity Broker to include components to support authentication in HDInsight"
+    - content: "Apache Ranger."
+      isCorrect: false
+      explanation: "Apache Ranger enables you to monitor data security"
+    - content: "Azure Active directory domain services."
+      isCorrect: false
+      explanation: "Azure Active directory domain services will be the source of the passwords"
+  - content: "After a suspected unauthorized login, Contoso has asked you to provide them with SSH logs for one of their ESP clusters enabled with Azure Monitoring. Which log file would serve the purpose?"
+    choices:
+    - content: "log_ambari_audit_CL."
+      isCorrect: false
+      explanation: "This method provides audit logs from Ambari"
+    - content: "log_auth_CL."
+      isCorrect: true
+      explanation: "log_auth_CL are the correct logs to identify suspected unauthorized login"
+    - content: "log_gateway_audit_CL."
+      isCorrect: false
+      explanation: "This table provides audit logs from cluster gateway nodes that show successful and failed login attempts"
+  - content: "How would you design to protect against physical attacks / theft of storage equipment in Azure data centers?"
+    choices:
+    - content: "TLS 1.2 encryption"
+      isCorrect: false
+      explanation: "TLS 1.2 encryption manages security of data in transit over the network"
+    - content: "Storage encryption using customer/Microsoft managed keys"
+      isCorrect: true
+      explanation: "Storage encryption is best to use to ensure the data is inaccessible if physically stolen from a data center"
+    - content: "Access control list"
+      isCorrect: false
+      explanation: "Access control lists are used to control authorized access to resources on a cluster"

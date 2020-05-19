@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.data-ai.import-data-into-asdw-with-polybase
 metadata:
-  title: Import data into Azure SQL Data Warehouse by using PolyBase
-  description: Load petabytes of data into an Azure SQL Data Warehouse database in minutes by using PolyBase
+  title: Import data into Azure Synapse Analytics by using PolyBase
+  description: Load petabytes of data into an Azure Synapse Analytics database in minutes by using PolyBase
   ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  author: wwlpublish
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Import data into Azure SQL Data Warehouse by using PolyBase
-summary: Load petabytes of data into an Azure SQL Data Warehouse database in minutes by using PolyBase.
+title: Import data into Azure Synapse Analytics by using PolyBase
+summary: Load petabytes of data into an Azure Synapse Analytics database in minutes by using PolyBase.
 abstract: | 
   In this module, you:
   - Explore how PolyBase works.
@@ -26,7 +26,7 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-sql-data-warehouse
+- azure-synapse-analytics
 units:
 - learn.data-ai.import-data-into-asdw-with-polybase.introduction
 - learn.data-ai.import-data-into-asdw-with-polybase.introduction-to-polybase

@@ -6,7 +6,7 @@ There are some variable naming rules that are enforced by the C# compiler.
 
 **Variable name rules**
 
-- Variable names can contain alphanumeric characters and the understore character.  Special characters like the pound `#`, the dash `-`, and the dollar sign `$` are not allowed.
+- Variable names can contain alphanumeric characters and the underscore character.  Special characters like the pound `#`, the dash `-`, and the dollar sign `$` are not allowed.
 - Variable names must begin with an alphabetical letter or an underscore, not a number.  Developers use the underscore for a special purpose, so try to not use that for now.
 - Variable names must NOT be a C# keyword.  For example, these variable name declarations won't be allowed: `float float;` or `string string;`.
 - Variable names are case-sensitive, meaning that `string Value;` and `string value;` are two different variables.

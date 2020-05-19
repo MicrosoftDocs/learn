@@ -6,10 +6,9 @@ metadata:
   description: Quick overview of the goals of this module.
   ms.date: 09/17/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

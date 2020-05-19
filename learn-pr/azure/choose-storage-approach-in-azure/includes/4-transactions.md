@@ -13,7 +13,7 @@ Here's the question to ask yourself regarding whether you need to use transactio
 Transactions are often defined by a set of four requirements, referred to as ACID guarantees. ACID stands for **A**tomicity, **C**onsistency, **I**solation, and **D**urability:
 
 - **Atomicity** means a transaction must execute exactly once and must be atomic; either all of the work is done, or none of it is. Operations within a transaction usually share a common intent and are interdependent.
-- **Consistency** ensures that the there is consistent data before the transaction, and data is consistent after the transaction. 
+- **Consistency** ensures that the data is consistent both before and after the transaction. 
 - **Isolation** ensures that one transaction is not impacted by another transaction.
 - **Durability** means that the changes made due to the transaction are permanently saved in the system. Committed data is saved by the system so that even in the event of a failure and system restart, the data is available in its correct state.
 

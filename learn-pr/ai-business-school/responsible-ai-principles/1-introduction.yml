@@ -5,11 +5,10 @@ metadata:
   title: Introduction
   description: Introduction to identifying guiding principles for responsible AI 
   ms.date: 10/01/2019
-  author: RWortmanMorris
-  ms.author: rawortma
+  author: Adriamen
+  ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

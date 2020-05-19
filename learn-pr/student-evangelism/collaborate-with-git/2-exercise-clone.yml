@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.collaborate-with-git.2-exercise-clone
+title: Exercise - Clone a repo
+metadata:
+  title: Exercise - Clone a repo
+  description: Collaborate with another developer by cloning their repo
+  ms.date: 06/24/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/2-exercise-clone.md)]

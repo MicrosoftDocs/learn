@@ -48,7 +48,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
     - **api/census/{censusYear}**, which returns a census and associated people for the specified year
     - **api/people/{reference}**, which returns detailed information about a specific person
 
-    ![Swagger view](../media/3-swagger-home.png)
+    :::image type="content" source="../media/3-swagger-home.png" alt-text="Swagger view." loc-scope="third-party"::: <!-- Swagger, no-loc -->
 
 1. Finally, copy the last URL from the Cloud Shell output. This URL is the swagger JSON URL, which you will need later in this exercise.
 
@@ -57,7 +57,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 The next step in this exercise is to create an API gateway in the Azure portal. In the next section, you'll use this gateway to publish your API:
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. In the left menu, click **+ Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 1. Click **Integration**, and then click **API management**.
 1. In the **API Management service** page, enter the following details:
 
@@ -83,7 +83,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 Now import the Census API into the API Management gateway:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu, click **All Resources**, and then select your API gateway.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All Resources**, and then select your API gateway.
 1. Under **API management**, click **APIs**.
 1. On the **Add a new API** page, click **OpenAPI**.
 1. On the **Create from OpenAPI specification** page, in the **OpenAPI specification**, paste the swagger JSON URL that you saved earlier in the exercise.
@@ -99,7 +99,7 @@ Now import the Census API into the API Management gateway:
 
 Let's see what data is returned in from the API by default:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu, click **All Resources**, and then select your API gateway.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All Resources**, and then select your API gateway.
 1. Under **API management**, click **APIs**, and then click **Census Data**.
 1. On the top of the screen, select **Test** tab, and then click the **GetLatestCensus** operation.
 1. Click **Send**.

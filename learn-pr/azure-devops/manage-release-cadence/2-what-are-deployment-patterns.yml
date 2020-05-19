@@ -3,8 +3,8 @@ uid: learn.azdo.manage-release-cadence.2-what-are-deployment-patterns
 title: What are deployment patterns?
 metadata:
   title:  What are deployment patterns?
-  description: Choosing an appropriate deployment pattern that helps you minimize downtime and roll out new features progressively.
-  ms.date: 09/30/2019
+  description: Choose an appropriate deployment pattern that helps you minimize downtime and roll out new features progressively.
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "The marketing team has asked you to add a banner to your company's website. They have two versions of this banner and they want to know which one produces more click-throughs. Which deployment pattern might you use to help marketing achieve their goals?"
+  - content: "The marketing team has asked you to add a banner to your company's website. They have two versions of this banner. They want to know which version produces more clickthroughs. Which deployment pattern might you use to help the marketing team identify the better version?"
     choices:
-    - content: "Blue-green deployment."
+    - content: "Blue-green deployment"
       isCorrect: false
       explanation: "A blue-green deployment is better suited to helping you reduce downtime."
-    - content: "A/B testing."
+    - content: "A/B testing"
       isCorrect: true
-      explanation: "With A/B testing, you could show both variations of the website to users at random. Then the marketing team can use statistical analysis to decide which variation performs better."
-    - content: "Feature toggles."
+      explanation: "With A/B testing, you could randomly show both versions of the website to users. Then the marketing team can use statistical analysis to decide which version performs better."
+    - content: "Feature toggles"
       isCorrect: false
       explanation: "Feature toggles are better suited to exposing new features to a small, select number of users to see how they react."
-  - content: "You have a new feature for your website that you're ready to deploy. However, this feature is risky because it changes the way your users interact with the site. Which deployment patterns might you consider using to release to a small group of early adopters who have signed up to see new features?"
+  - content: "You have a new feature for your website, and you're ready to deploy it. However, this feature is risky because it changes the way your users interact with the site. Which deployment patterns might you use to release to a small group of early adopters who have signed up to see new features?"
     choices:
-    - content: "Canary release or progressive exposure deployment."
+    - content: "Canary release or progressive-exposure deployment"
       isCorrect: true
-      explanation: "Both of these deployment patterns expose a new feature to only a small subset of your users. After you validate the feature with this smaller subset, you can then progressively roll out to a larger set of customers."
-    - content: "A/B testing or a dark launch."
+      explanation: "Both of these deployment patterns expose a new feature to only a small subset of users. After you validate the feature with this smaller subset, you can then progressively roll out to a larger set of users."
+    - content: "A/B testing or a dark launch"
       isCorrect: false
-      explanation: "A/B testing is typically used to sample users at random. With a dark launch, users typically don't know they're being used as test users."
-    - content: "Blue-green deployment or feature toggles."
+      explanation: "A/B testing is typically used to sample users at random. In a dark launch, test users typically don't know that they're testing new features."
+    - content: "Blue-green deployment or feature toggles"
       isCorrect: false
       explanation: "Although you might use a feature toggle to expose your feature to select users, a blue-green deployment is meant to help you reduce downtime."
-  - content: "You're not sure how your users will react to your new feature. You want to release your feature to a small, random sampling of users to see how they react. Which deployment pattern might you use?"
+  - content: "You're not sure how your users will react to your new feature. You want to release your feature to a small, random sample of users to see how they react. Which deployment pattern might you use?"
     choices:
-    - content: "Blue-green deployment."
+    - content: "Blue-green deployment"
       isCorrect: false
       explanation: "A blue-green deployment is better suited to helping you reduce downtime."
-    - content: "Dark launch."
+    - content: "Dark launch"
       isCorrect: true
       explanation: "Because you want a random sample, a dark launch can help you gradually release your feature while you collect feedback and test performance."
-    - content: "A/B testing."
+    - content: "A/B testing"
       isCorrect: false
       explanation: "Although A/B testing is typically used to sample users at random, it's more commonly used to test two or more variations of a feature against each other."

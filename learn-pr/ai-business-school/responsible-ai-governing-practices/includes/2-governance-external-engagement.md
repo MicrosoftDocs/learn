@@ -89,7 +89,9 @@ A recent study by Accenture concluded that “AI could double annual economic gr
 Yet as the pace of technological innovation and disruption is accelerating, we are seeing a widening skills gap in critical areas of foundational knowledge and expertise. The McKinsey Global Institute estimates that, by 2024, there will be 250,000 unfilled U.S. data science job openings.<sup>4</sup> To realize the potential of AI, we must first address the ability of those in the current and future workforce to adapt to, engage with, and fundamentally understand these technological advances and transformations.
 :::column-end:::
 :::column span="2":::
-![2021 - 70% of enterprises will integrate AI to assist employee's productivity. 2024 - there will be 250,000 unfilled U.S. data science job openings. 2035 - AI could double annual economic growth rates by changing the nature of work and creating a new relationship between man and machine.](../media/3-3-1a.jpg)
+:::image type="complex" source="../media/3-3-1a.jpg" alt-text="Diagram shows the expected evolution of AI in business from 2021 to 2035.":::
+A steady ascending curve represents an increasing presence of AI in business. In 2021, 70% of enterprises will integrate AI to assist employee's productivity. In 2024, there will be 250,000 unfilled U.S. data science job openings. In 2035, AI could double annual economic growth rates by changing the nature of work and creating a new relationship between man and machine.
+:::image-end:::
 :::column-end:::
 :::row-end:::
 We believe enterprises have an important role to play in helping people get the training they need to thrive in today’s shifting economy. At Microsoft, we are focusing on three areas: preparing students for tomorrow’s jobs, helping workers prepare for the changing economy, and helping match workers to 21st century job opportunities.

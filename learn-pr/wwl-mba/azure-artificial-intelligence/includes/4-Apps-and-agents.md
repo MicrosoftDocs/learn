@@ -99,4 +99,4 @@ Flow through the above:
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrRTR]
 
-You just saw how Telefonica was able to modernize their business and use AI to transform how they interact their customers.
+You just saw how Telefonica was able to modernize their business and use AI to transform how they interact with their customers.

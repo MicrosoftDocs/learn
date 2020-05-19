@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-compute-contexts-in-aml.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 02/10/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "You're using the Azure Machine Learning Python SDK to run experiments. You need to create an environment from a Conda configuration (.yml) file. Which method of the Environment class should you use?"
+    choices:
+    - content: "create"
+      isCorrect: false
+      explanation: "That is incorrect. Use the create_from_conda_specification method to create an environment from a configuration file. The create method requires you to explicitly specify conda and pip packages, and the create_from_existing_conda_environment requires an existing environment on the computer."
+    - content: "create_from_conda_specification"
+      isCorrect: true
+      explanation: "That is correct. Use the create_from_conda_specification method to create an environment from a configuration file. The create method requires you to explicitly specify conda and pip packages, and the create_from_existing_conda_environment requires an existing environment on the computer."
+    - content: "create_from_existing_conda_environment"
+      isCorrect: false
+      explanation: "That is incorrect. Use the create_from_conda_specification method to create an environment from a configuration file. The create method requires you to explicitly specify conda and pip packages, and the create_from_existing_conda_environment requires an existing environment on the computer."
+  - content: "You must create a compute target for training experiments that require a graphical processing unit (GPU). You want to be able to scale the compute so that multiple nodes are started automatically as required. Which kind of compute target should you create?"
+    choices:
+    - content: "Compute Instance"
+      isCorrect: false
+      explanation: "That is incorrect. Use a training cluster to create multiple nodes of GPU-enabled VMs that are started automatically as needed."
+    - content: "Compute Cluster"
+      isCorrect: true
+      explanation: "That is correct. Use a compute cluster to create multiple nodes of GPU-enabled VMs that are started automatically as needed."
+    - content: "Inference Cluster"
+      isCorrect: false
+      explanation: "That is incorrect. Use a training cluster to create multiple nodes of GPU-enabled VMs that are started automatically as needed."

@@ -13,7 +13,8 @@ In this exercise, you'll import an API into Azure API Management and add a cachi
 
 In this module, we're using the consumption tier for Azure API Management because Azure can set up API Management instances in this tier within a minute or so. Instances in other tiers can take 30 minutes to initiate. The consumption tier in API Management is intended for those organizations who prefer to build APIs on serverless principals. One difference with this tier is that it does not have its own internal cache. Therefore, to use a caching policy, we must create an external Redis cache, and configure the API Management instance to use it. Let's create that cache now, so that the process can complete while we take other steps:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource > Databases > Azure Cache for Redis**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Create a resource**.
+1. Then select **Databases** > **Azure Cache for Redis**.
 1. In the **New Redis Cache** page, enter the following settings, and then click **Create**:
 
     | Setting | Value |
@@ -56,7 +57,7 @@ Now, deploy the sample web API to Azure App Service:
 
 Now the API is completed and deployed, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition. These tests, run against the web API before it is added to API Management, are in the **azurewebsites.net** domain:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the App Service.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources** and then select the App Service.
 1. On the **Overview** page, click **Browse**. The browser will display a blank page. This is expected because the Web API doesn't implement a user interface.
 1. In the **Address** bar, paste the Web API test URL that you copied earlier. The browser displays a result in JSON format. Notice that the result includes the server time.
 1. In the **Address** bar, paste the Swagger URL that you copied earlier. The browser displays the Swagger UI. Keep this browser tab open for later.
@@ -66,7 +67,8 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 
 Now that we have a functional API, let's set up API Management:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource > Web > API Management**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Create a resource**.
+1. Then select **Web** > **API Management**.
 1. In the **API Management service** window, enter the following settings, and then click **Create**:
 
     | Setting | Value |
@@ -84,7 +86,7 @@ Now that we have a functional API, let's set up API Management:
 
 Now, if the Redis cache deployment is complete, you can configure the API Management instance to use it as an external cache:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All Resources**, and then click the new Redis cache.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All Resources**, and then click the new Redis cache.
 1. Check the **Status** value at the top of the window. If the status has not yet reached **Running**, you'll have to wait until the Redis cache deployment has completed. You can refresh this page every couple of minutes to check the status.
 1. Once setup is complete, under **Settings**, click **Access keys**.
 1. To the right of the **Primary connection string** textbox, click the **Copy to clipboard** button.
@@ -105,7 +107,7 @@ Now, if the Redis cache deployment is complete, you can configure the API Manage
 
 Before you can apply a policy, you must add the API to the API Management instance
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All Resources** and then click the API Management service you created above.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All Resources** and then click the API Management service you created above.
 1. Under **API Management**, click **APIs**, and then click **OpenAPI**.
 
     ![Adding an API](../media/5-add-api-to-management.png)

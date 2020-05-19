@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-users-and-groups-in-azure-active-directory.exercise-add-delete-users-azure-ad
+title: Exercise - Add and delete users in Azure Active Directory
+metadata:
+  title: Exercise - Add and delete users in Azure Active Directory
+  description: Exercise - Add and delete users in Azure Active Directory
+  ms.date: 10/25/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-add-delete-users-azure-ad.md)]

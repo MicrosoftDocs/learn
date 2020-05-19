@@ -6,16 +6,16 @@ In this exercise, you'll add the Orders function app to the API and use the `cur
 
 Before we add the Orders function app to the API, let's test the function it hosts, OrderDetails:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the **OrderFunction** App Service.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, and select **All resources** and then select the **OrderFunction** App Service.
 1. Under **Functions** select **OrderDetails**, and then select **Test**.
 
-    ![Browsing to the test tool for the Order Details function](../media/5-test-order-details.png)
+    ![Screenshot of the test tool for the Order Details function.](../media/5-test-order-details.png)
 
 1. In the **HTTP method** drop-down list, select **GET**, and then select **Add parameter**.
 1. In the **name** textbox, type *name* and in the **value** textbox, type *Chiba*. The parameter name and value are both case-sensitive.
 1. Select **Run** and then examine the results in the **Output** box.
 
-    ![Test results from the Order Details function](../media/5-order-test-results.png)
+    ![Screenshot of the test output from the Order Details function with a callout highlighting the Run button.](../media/5-order-test-results.png)
 
     The output pane displays the details of an order in JSON format. You can also test the function with the names "Henri" and "Barriclough" for different orders.
 
@@ -25,26 +25,26 @@ Before we add the Orders function app to the API, let's test the function it hos
 
 In this step, we'll add the Order function to the API Management resource that we created in the preceding exercise. In that exercise, we used the API Management interface from within the function app UI. Here, we'll navigate to our API Management instance through the portal main navigation pane, just to demonstrate that both approaches are available. 
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select your **API Management** service instance.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources** and then select your **API Management** service instance.
 1. Under **API Management**, select **APIs** and then under **Add a new API**, select **Function App**.
 
-    ![Adding an Azure Function App](../media/5-import-azure-function-app.png)
+    ![Screenshot of the Add a New API screen with a callout highlighting the Azure Function App option.](../media/5-import-azure-function-app.png)
 
 1. To select your function, select **Browse** and then select the **Function App** section.
 
-    ![Selecting an existing Function App](../media/5-import-azure-function-app-03.png)
+    ![Screenshot of the Import Azure Functions panel with the Function App Configure Required Settings option selected.](../media/5-import-azure-function-app-03.png)
 
 1. In the list of Function Apps, select the **OrderFunction** and then choose **Select**.
 1. Ensure that **OrderDetails** is checked, and then choose **Select**.
 1. In the **API URL suffix** textbox, type **orders**, and then select **Create**. 
 
-    ![Importing the Orders function](../media/5-complete-function-import.png)
+    ![Screenshot of the Create from Function App dialog populated with details of the Orders function.](../media/5-complete-function-import.png)
 
 ## Test the OnlineStore orders endpoint in the portal
 
 Now that we've added OrderDetails to our API let's test it, by using the API Management tools in the Azure portal:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select your **Azure API Management** service instance.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources** and then select your **Azure API Management** service instance.
 1. Under **API Management**, select **APIs** and then select the **OrderFunction** API.
 1. In the list of operations, select **GET OrderDetails** and then select the **Test** tab.
 

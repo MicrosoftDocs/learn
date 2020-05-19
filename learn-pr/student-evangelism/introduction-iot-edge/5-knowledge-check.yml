@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-to-iot-edge.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/24/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 5 # dummy number at present
+content: |
+quiz:
+  questions:
+  - content: "Suppose, you're tasked with developing an IoT solution that requires near real-time response to local events, you would consider using IoT Edge because:"
+    choices:
+    - content: "IoT Edge can run modules locally on IoT Edge devices."
+      isCorrect: true
+      explanation: "The ability to run modules on edge devices ensures a rapid response time by avoiding a round trip to the cloud."
+    - content: "IoT Edge is secure and can use device security features."
+      isCorrect: false
+      explanation: "Secure devices don't have a direct bearing on the response time of an application."
+    - content: "IoT Edge can communicate with the cloud."
+      isCorrect: false
+      explanation: "The ability to communicate with the cloud doesn't guarantee a rapid response time."
+  - content: "Suppose, you're tasked with monitoring the health of a diverse set of IoT devices in the field. Which component of IoT Edge would you use?"
+    choices:
+    - content: "IoT Edge modules"
+      isCorrect: false
+      explanation: "The module runs on an individual device. It doesn't have visibility of all devices."
+    - content: "IoT Edge runtime"
+      isCorrect: false
+      explanation: "The runtime runs on an individual device. It doesn't have visibility of all devices"
+    - content: "IoT Edge cloud interface"
+      isCorrect: true
+      explanation: "The cloud interface enables you to monitor and manage IoT Edge devices remotely."
+  - content: "Suppose you wanted to run machine learning applications on IoT Edge devices. IoT Edge is suitable because:"
+    choices:
+    - content: "You can train the module on the cloud and deploy to the IoT Edge as a container"
+      isCorrect: true
+      explanation: "You can train the module on the cloud and deploy to the edge as a container"
+    - content: "IoT Edge allows you to run applications on the IoT Edge even when connectivity is intermittent."
+      isCorrect: false
+      explanation: "Intermittent connectivity isn't directly relevant to running machine learning applications."
+    - content: "IoT Edge is always connected to the cloud."
+      isCorrect: false
+      explanation: "IoT isn't always connected to the cloud."
+    
+    

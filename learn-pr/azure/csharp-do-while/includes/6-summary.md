@@ -5,3 +5,8 @@ Using the `do-while` statement, we executed a block of code once before evaluati
 Built a practical example that utilized the `do-while` and `continue` statements to simulate a battle in a role playing game.  Other real-world scenarios involving the `do-while` and `while` iteration statements involve working with streams of data from files, from the internet, or any other scenario where we'll continue to perform an iteration until a condition is met.
 
 If you've been following along in the modules in this learning path, we hope you're gaining confidence in both your knowledge of C# and your ability to apply your new programming language skills to solving problems.
+
+## Learn more with a Channel 9 video series
+
+- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha&azure-portal=true)
+- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner&azure-portal=true)

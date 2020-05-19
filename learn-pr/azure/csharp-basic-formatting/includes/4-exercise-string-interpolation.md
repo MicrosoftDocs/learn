@@ -24,25 +24,25 @@ Use your mouse to highlight all of the text in the code editor, then select the 
 
 ### Step 2: Use string interpolation to combine a literal string and a variable value.
 
-To concatenate two strings together, you prefix the literal string *string concatenation operator*, which is the plus symbol `+`.
+To interpolate two strings together, you create a literal string and prefix the string with the `$` symbol.  The literal string should contain atleast one set of curly braces `{}` and inside of those characters you use the name of a variable.
 
 Add the following code to the code window:
 
 ```csharp-interactive
 string firstName = "Bob";
-string message = $"Hello {firstName}";
+string message = $"Hello {firstName}!";
 Console.WriteLine(message);
 ```
 
 Now, run the code.  You'll see the following result in the output console:
 
 ```output
-Hello Bob
+Hello Bob!
 ```
 
 ### Step 3: Use string interpolation with multiple variables and literal strings.
 
-You can perform several concatenation operations in the same line of code.
+You can perform several interpolation operations in the same line of code.
 
 Modify the code you wrote in Step 2 to the following code:
 

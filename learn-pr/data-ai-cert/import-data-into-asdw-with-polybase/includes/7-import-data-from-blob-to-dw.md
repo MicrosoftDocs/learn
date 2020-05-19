@@ -1,4 +1,4 @@
-You can now import the data from the blob storage to the Azure SQL Data Warehouse database. Let's connect to the database and run the appropriate SQL queries to create a staging table with the data.
+You can now import the data from the blob storage to the Azure Synapse Analytics database. Let's connect to the database and run the appropriate SQL queries to create a staging table with the data.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to run PolyBase T-SQL commands to import data from an Azure Blob storage account into a SQL data warehouse.
@@ -146,4 +146,4 @@ CREATE STATISTICS [Month] on [StageDate] ([Month]);
 
 1. Select **Run** to run the query. It reports `Query succeeded: Affected rows: 0.`.
 
-You've loaded your first staging table in Azure SQL Data Warehouse. From here, you can write further Transact-SQL queries to perform transformations into dimension and fact tables. Try it out by querying the `StageDate` table in the query explorer or in another query tool. Refresh the view on the left to see the new table or tables that you created. Reuse the previous steps in a persistent SQL script to load additional data, as necessary.
+You've loaded your first staging table in Azure Synapse Analytics. From here, you can write further Transact-SQL queries to perform transformations into dimension and fact tables. Try it out by querying the `StageDate` table in the query explorer or in another query tool. Refresh the view on the left to see the new table or tables that you created. Reuse the previous steps in a persistent SQL script to load additional data, as necessary.

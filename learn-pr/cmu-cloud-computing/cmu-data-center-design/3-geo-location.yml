@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design.3-geo-location
+title: Geographic location criteria
+metadata:
+  title: Geographic location criteria
+  description: Geographic location criteria
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-geo-location.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Company X has a datacenter in Houston, Texas, and pays a power bill of $1,700,000 in power costs annually. The company is planning to relocate to an identical facility in Vancouver, Canada. The move allows the company to utilize air-side economization from the beginning of October through the end of March. The company's chiller consumes 25% of the total power drawn by the datacenter and can be turned off during air-side economization. Assuming all other costs are identical, how much money can company X save annually when it relocates to Vancouver?"
+    choices:
+    - content: "$425,000"
+      isCorrect: false
+      explanation: "Incorrect. The company has the potential to save money on 25% of the expenses incurred during 6 months of the year. The key element to factor in is the amount of time in a year that the datacenter chiller can be turned off. The savings amount to ($1,710,000 / 2) x 0.25 = $212,500."
+    - content: "$212,500"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "$265,625"
+      isCorrect: false
+      explanation: "Incorrect. The company has the potential to save money on 25% of the expenses incurred during 6 months of the year. The key element to factor in is the amount of time in a year that the datacenter chiller can be turned off. The savings amount to ($1,710,000 / 2) x 0.25 = $212,500."
+    - content: "$105,250"
+      isCorrect: false
+      explanation: "Incorrect. The company has the potential to save money on 25% of the expenses incurred during 6 months of the year. The key element to factor in is the amount of time in a year that the datacenter chiller can be turned off. The savings amount to ($1,710,000 / 2) x 0.25 = $212,500."

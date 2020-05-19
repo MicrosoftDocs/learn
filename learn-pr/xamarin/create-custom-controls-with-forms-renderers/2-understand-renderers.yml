@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-xamarin.create-custom-controls-with-forms-renderers.2-understand-renderers
+title: Understand renderers
+metadata:
+  title: Understand renderers
+  description: Understand renderers
+  ms.date: 05/01/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+  
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-renderers.md)]

@@ -79,7 +79,7 @@ Account entry, and select it.
 
 1. After a few seconds, click **Refresh** to refresh the view of the queue. Observe that the queue is **empty** once again. Something must have read the message from the queue.
 
-1. Navigate back to our function in the portal, and open the **Monitor** tab. Select the newest message in the list. Observe that our function processed the queue message we had posted to the new-feedback-q. Results may be delayed by in this log, so you might have to wait a few minutes and hit *Refresh*.
+1. Navigate back to our function in the portal, and open the **Monitor** tab. Select the newest message in the list. Observe that our function processed the queue message we had posted to the new-feedback-q. Results may be delayed in this log, so you might have to wait a few minutes and hit *Refresh*.
 
     ![Screenshot of Monitor dashboard showing an entry that tells us that our function processed the queue message that we posted to new-feedback-q.](../media/message-in-monitor.png)
 

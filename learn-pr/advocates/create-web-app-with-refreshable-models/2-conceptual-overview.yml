@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.create-web-app-with-refreshable-models.2-conceptual-overview
+metadata:
+  title: Conceptual overview
+  description: Building a web app to perform inference against a local machine learning model.
+  author: jlooper
+  ms.date: 02/10/2020
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Conceptual overview
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-conceptual-overview.md)]

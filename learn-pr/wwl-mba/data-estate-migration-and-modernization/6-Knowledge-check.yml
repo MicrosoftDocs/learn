@@ -3,16 +3,14 @@ uid: learn-wwl.data-estate-migration-and-modernization.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: .
+  description: "Knowledge check"
   ms.date: 01/31/2019
-  author: Randall-Knapp
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+azureSandbox: false
 durationInMinutes: 3
-content: |
-  [!include[](includes/6-Knowledge-check.md)]
 quiz:
   questions:
   - content: "Which of the following statements best articulates the importance for organizations to modernize their data estate?"
@@ -31,16 +29,16 @@ quiz:
       explanation: "Correct. The scale and economics of the cloud make it possible to capture and harness data, and layering on advances in AI can help unlock the potential to drive transformative insights from all types of data."
   - content: "Azure provides organizations with many options for modernizing data. Which approach offers easy migration with no code changes and near zero downtime?"
     choices:
-    - content: "Azure SQL Database Managed Instance"
+    - content: "Azure SQL Database Managed Instance."
       isCorrect: true
       explanation: "Correct. With Azure SQL Database Managed Instance, databases can be easily migrated with no code changes and near zero downtime."
-    - content: "SQL Server on Infrastructure as a Service (IaaS)"
+    - content: "SQL Server on Infrastructure as a Service (IaaS)."
       isCorrect: false
       explanation: "Incorrect. This option is better suited to organizations who prefer to run SQL Server on Azure Virtual Machines."
-    - content: "Open Source Software (OSS)"
+    - content: "Open Source Software (OSS)."
       isCorrect: false
       explanation: "Incorrect. This option is the correct choice for organizations using OSS databases."
-    - content: "Hybrid"
+    - content: "Hybrid."
       isCorrect: false
       explanation: "Incorrect. This option is best suited to organizations who would like to maintain some server applications running on-premises and some in the cloud."
   - content: "Which Microsoft solution helps customers develop cloud-native, multi-model apps with turnkey global distribution and elastic scale-out?"
@@ -57,7 +55,7 @@ quiz:
     - content: "Azure Cosmos DB"
       isCorrect: true
       explanation: "Correct. Azure Cosmos DB (Microsoft’s NoSQL database) is a database for building fast, scalable applications with native support for NoSQL."
-  - content: "Cloud scale analytics is a comprehensive set of big-data solutions that help organizations gather, store, process, analyze, and visualize data. Which of the following represents an offering of cloud scale analytics that maps to a common business need? "
+  - content: "Cloud scale analytics is a comprehensive set of big-data solutions that help organizations gather, store, process, analyze, and visualize data. Which of the following represents an offering of cloud scale analytics that maps to a common business need?"
     choices:
     - content: "Ingest data whether it is structured or unstructured"
       isCorrect: false

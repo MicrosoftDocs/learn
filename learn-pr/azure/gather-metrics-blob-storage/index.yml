@@ -2,7 +2,7 @@
 uid: learn.azure.gather-metrics-from-blob-storage
 metadata:
   title: Gather metrics from your Azure Blob Storage containers
-  description: In this module, you'll gather information about the performance of your Azure Blob storage containers through Azure Storage Analytics (ASA). ASA enables you to trace requests, analyze usage trends, and diagnose issues with your storage account. You can then add these metrics to custom charts that you display in the Azure dashboard. 
+  description: Find out how to use Azure Storage Analytics to track the performance of your Blob storage containers and to display that Blob performance in your dashboard. 
   ms.date: 03/26/2019
   author: rmcmurray
   ms.author: robmcm

@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure.allow-users-to-reset-their-password
+metadata:
+  title: Allow users to reset their password with Azure Active Directory self-service password reset
+  description: Learn how to allow users to reset their password with Azure Active Directory self-service password reset.
+  ms.date: 11/18/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Allow users to reset their password with Azure Active Directory self-service password reset
+summary: Evaluate self-service password reset to allow users in your organization to reset their passwords or unlock their accounts. Set up, configure, and test self-service password reset.
+abstract: | 
+  In this module, you will:
+  - Decide whether to implement self-service password reset.
+  - Implement self-service password reset to meet your requirements.
+  - Configure self-service password reset to customize the experience.
+prerequisites: | 
+  - Basic understanding of Azure Active Directory
+iconUrl: /learn/achievements/allow-users-reset-their-password.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-active-directory
+units:
+- learn.azure.allow-users-to-reset-their-password.introduction
+- learn.azure.allow-users-to-reset-their-password.what-is-self-service-password-reset
+- learn.azure.allow-users-to-reset-their-password.implement-azure-ad-self-service-password-reset
+- learn.azure.allow-users-to-reset-their-password.exercise-set-up-self-service-password-reset
+- learn.azure.allow-users-to-reset-their-password.exercise-customize-directory-branding
+- learn.azure.allow-users-to-reset-their-password.summary
+badge:
+  uid: learn.azure.allow-users-to-reset-their-password.badge

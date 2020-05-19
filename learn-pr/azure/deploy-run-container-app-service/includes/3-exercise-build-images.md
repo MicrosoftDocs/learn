@@ -12,7 +12,7 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
 
 1. Choose **Create a resource**, select **Containers**, and then select **Container Registry**.
 
-   ![Screenshot that shows the New blade in Azure portal showing the Container options available in Azure Marketplace](../media/3-search-container-registry-annotated.png)
+   ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace](../media/3-search-container-registry-annotated.png)
 
 1. Specify the values in the following table for each of the properties:
 

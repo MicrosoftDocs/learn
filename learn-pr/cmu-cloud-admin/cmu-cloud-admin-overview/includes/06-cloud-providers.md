@@ -73,7 +73,7 @@ _Figure 1.12: Google Cloud Platform regions<sup>[4][^4]</sup>._
 
 2. _Amazon (2019). *AWS Global Infrastructure Map*. <https://aws.amazon.com/about-aws/global-infrastructure/?p=ngi&loc=1>_
 
-3. _Microsoft (2019). *Azure regions*. <https://azure.microsoft.com/en-us/global-infrastructure/regions/>_
+3. _Microsoft (2019). *Azure regions*. <https://azure.microsoft.com/global-infrastructure/regions/>_
 
 4. _Google (2019). *Meet our network*. <https://cloud.google.com/about/locations/>_
 
@@ -81,6 +81,6 @@ _Figure 1.12: Google Cloud Platform regions<sup>[4][^4]</sup>._
 
 [^2]: <https://aws.amazon.com/about-aws/global-infrastructure/?p=ngi&loc=1>  "Amazon (2019). *AWS Global Infrastructure Map*."
 
-[^3]: <https://azure.microsoft.com/en-us/global-infrastructure/regions/>  "Microsoft (2019). *Azure regions*."
+[^3]: <https://azure.microsoft.com/global-infrastructure/regions/>  "Microsoft (2019). *Azure regions*."
 
 [^4]: <https://cloud.google.com/about/locations/>  "Google (2019). *Meet our network*."

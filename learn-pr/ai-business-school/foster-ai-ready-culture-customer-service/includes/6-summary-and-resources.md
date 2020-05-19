@@ -19,4 +19,4 @@ Learn [how AI is helping businesses boost their team collaborations](https://inf
 
 [(1) Gladly, “2018 Customer Service Expectations Report,” 2018.](https://go.gladly.com/2018report)  
 [(2) Gartner Press Release, “Gartner Says 25 Percent of Customer Service Operations Will Use Virtual Customer Assistants by 2020,” 19 February 2018.](https://www.gartner.com/newsroom/id/3858564)  
-[(3) TSIA, “Meeting Customer Demands with Social Support,” TSIA Public Webinar, Tim Lopez, 10 August 2018.](https://www.tsia.com/webinars/meeting-customer-demands-with-social-support)  
+[(3) TSIA, “Meeting Customer Demands with Social Support,” TSIA Public Webinar, Tim Lopez, 10 August 2018.](https://www.tsia.com/webinars)  

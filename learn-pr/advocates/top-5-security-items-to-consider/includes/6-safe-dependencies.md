@@ -18,10 +18,10 @@ Issues are submitted by the security community when a security flaw is found in 
 You could put a daily task into your phone to go and check this list, but luckily for us, many tools exist to allow us to verify if our dependencies are vulnerable. You can run these tools against your codebase, or better yet, add them to your CI/CD pipeline to automatically check for issues as part of the development process.
 
 - [OWASP Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check), which has a [Jenkins plugin](https://wiki.jenkins.io/display/JENKINS/OWASP+Dependency-Check+Plugin)
-- [OWASP SonarQube](https://www.owasp.org/index.php/OWASP_SonarQube_Project)
+- [OWASP SonarQube](https://github.com/OWASP/sonarqube)
 - [Snyk](https://snyk.io), which is free for open source repositories in GitHub
 - [Black Duck](https://www.blackducksoftware.com) which is used by many enterprises
-- [RubySec](https://rubysec.com) an advisory database just for Ruby
+- [RubySec](https://github.com/rubysec/rubysec.com) an advisory database just for Ruby
 - [Retire.js](https://github.com/retirejs/retire.js/) a tool for verifying if your JavaScript libraries are out of date; can be used as a plugin for various tools, including [Burp Suite](https://www.portswigger.net)
 
 Some tools made specifically for static code analysis can be used for this as well.

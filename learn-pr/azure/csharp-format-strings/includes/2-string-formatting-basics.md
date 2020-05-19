@@ -23,11 +23,11 @@ There are a few important things to notice about this code.
 
 - Data types and variables of a given data type have built-in "helper methods" to make certain tasks easy.
 - The literal string `"{0} {1}!"` forms a template, parts of which will be replaced at run time.
-- The token `{0}` is replaced by the first argument after the string templating other words, the value of the variable `first`.
+- The token `{0}` is replaced by the first argument after the string template, in other words, the value of the variable `first`.
 - The token `{1}` is replaced by the second argument after the string template, in other words, the value of the variable `second`.
 
 > [!NOTE]
-> You may think its odd to start with the number 0.  Actually this is very common in softwrare development.  Whenever there's a sequence of items that can be identified using a number, the numbering will usually start at 0.
+> You may think its odd to start with the number 0.  Actually this is very common in software development.  Whenever there's a sequence of items that can be identified using a number, the numbering will usually start at 0.
 
 To exercise this idea a bit more, consider the following code.
 
@@ -128,7 +128,7 @@ Console.WriteLine($"Measurement: {measurement:N} units");
 If you are viewing this from the `en-US` culture, you will see the following output.
 
 ```output
-Measurement: 123,456.79
+Measurement: 123,456.79 units
 ```
 
 By default, the `N` numeric format specifier displays only two digits after the decimal point.  

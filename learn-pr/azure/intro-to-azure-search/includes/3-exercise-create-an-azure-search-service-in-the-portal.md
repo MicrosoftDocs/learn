@@ -8,7 +8,9 @@ In the unit, you'll create the Azure Cognitive Search service.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. From the portal, select **Create a resource** from the upper left-hand corner. Select **Web**, then select **Azure Cognitive Search**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Web**, then select **Azure Cognitive Search**.
 
    ![Screenshot of the Azure portal, New Search Service pane](../media/3-exercise-screenshot-2.png)
 
@@ -27,6 +29,8 @@ In the unit, you'll create the Azure Cognitive Search service.
 
     If you were to continue to interact with the search service programmatically, you will need to obtain the URL and API key.
 
-1. In the **All Resources** view of the portal, select the Azure Cognitive Search resource you created to navigate to its overview page. Note the ability to add indexes, import data, and search created indexes.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
+
+1. Select the Azure Cognitive Search resource you created to navigate to its overview page. Note the ability to add indexes, import data, and search created indexes.
 
     ![Screenshot of the Azure portal, highlighting the URL field on the Overview page](../media/3-exercise-screenshot-4.png)

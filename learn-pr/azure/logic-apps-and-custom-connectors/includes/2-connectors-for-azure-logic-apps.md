@@ -4,6 +4,8 @@ Let's get started by learning about Logic Apps and their ability to monitor even
 
 ## What are Logic Apps?
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qhug]
+
 Azure Logic Apps is a cloud service that you can use to integrate apps, systems, data, and services within your enterprise or across organizations. They help to simplify how you design and build scalable solutions in the cloud, on-premises, or both.
 
 ## What can you do with a Logic App?
@@ -14,7 +16,7 @@ You can use Logic Apps to connect and orchestrate multiple systems into a single
 - Move files to Azure Storage from servers in your organization.
 - Monitor social media activity, perform sentiment analysis, and create alerts when a post is critical to your business.
 - Connect to common business systems by using built-in connectors.
-- Connect to unusual or unique systems by using customer connectors that you create.
+- Connect to unusual or unique systems by using custom connectors that you create.
 
 Logic Apps can do all of these things without the need to rebuild or redeploy code.
 

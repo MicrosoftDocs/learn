@@ -6,10 +6,9 @@ metadata:
   description: Here's a second change to use data type casting and conversion to solve a programming challenge.
   ms.date: 10/03/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 azureSandbox: false
 interactive: csharp

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="148px" viewBox="0 0 148 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>2-bus-network</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M29.0882353,31.8235294 C24.5176215,35.4442628 18.3542338,36.3304274 12.9486813,34.1440553 C7.54312881,31.9576832 3.72887562,27.0358839 2.96061174,21.2557463 C2.19234786,15.4756086 4.58852934,9.72835276 9.23529412,6.20588235 C16.3418994,0.764253565 26.5142529,2.11398349 31.9558819,9.22058856 C37.3975109,16.3271936 36.0477814,26.4995472 28.9411765,31.9411765" id="path-1"></path>
+        <path d="M27.6176471,31.8235294 C23.0470333,35.4442628 16.8836456,36.3304274 11.4780931,34.1440553 C6.07254057,31.9576832 2.25828738,27.0358839 1.4900235,21.2557463 C0.721759626,15.4756086 3.1179411,9.72835276 7.76470588,6.20588235 L7.91176471,6.20588235 C15.01837,0.764253431 25.1907236,2.11398331 30.6323527,9.22058844 C36.0739817,16.3271936 34.7242521,26.4995472 27.6176471,31.9411765" id="path-3"></path>
+        <path d="M29.0882353,31.8235294 C24.5176215,35.4442628 18.3542338,36.3304274 12.9486813,34.1440553 C7.54312881,31.9576832 3.72887562,27.0358839 2.96061174,21.2557463 C2.19234786,15.4756086 4.58852934,9.72835276 9.23529412,6.20588235 C16.3418994,0.7642532 26.5142532,2.113983 31.9558824,9.22058824 C37.3975115,16.3271935 36.0477817,26.4995473 28.9411765,31.9411765" id="path-5"></path>
+        <path d="M8.41176471,3.73529412 C15.5021263,-1.74694421 25.6942323,-0.443302744 31.1764706,6.64705882 C36.6587089,13.7374204 35.3550675,23.9295264 28.2647059,29.4117647 L28.1176471,29.4117647 C21.0110418,34.8533939 10.838688,33.5036641 5.39705882,26.3970588 C-0.0445703292,19.2904536 1.30515947,9.11809974 8.41176471,3.67647059" id="path-7"></path>
+        <path d="M6.94117647,3.73529412 C14.031538,-1.74694421 24.223644,-0.443302744 29.7058824,6.64705882 C35.1881207,13.7374204 33.8844792,23.9295264 26.7941176,29.4117647 C19.6875124,34.8533939 9.51515856,33.5036641 4.07352941,26.3970588 C-1.36809974,19.2904536 -0.0183699427,9.11809974 7.08823529,3.67647059" id="path-9"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-bus-network" transform="translate(-2.000000, 0.000000)">
+            <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="2.94117647" y="0" width="147.058824" height="147.058824"></rect>
+            <path d="M133.823529,117.176471 L133.823529,73.2058824" id="Shape" stroke="#000000"></path>
+            <g id="ee75dd06-1aca-4f76-9d11-d05a284020ad" transform="translate(114.705882, 111.764706)">
+                <g id="Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Shape"></g>
+                    <g id="Group" mask="url(#mask-2)" fill-rule="nonzero">
+                        <rect id="Rectangle-path" fill="#0078D4" x="0.852941176" y="0.735294118" width="36.4705882" height="36.5882353"></rect>
+                        <circle id="Oval" fill="#0078D4" cx="19.1176471" cy="19.0294118" r="16.2058824"></circle>
+                        <circle id="Oval" fill="#0178D4" cx="19.1176471" cy="19.0294118" r="16.0882353"></circle>
+                        <circle id="Oval" fill="#0279D5" cx="19.1176471" cy="19.0294118" r="15.9411765"></circle>
+                        <circle id="Oval" fill="#0379D5" cx="19.1176471" cy="19.0294118" r="15.7941176"></circle>
+                        <circle id="Oval" fill="#047AD5" cx="19.1176471" cy="19.0294118" r="15.6470588"></circle>
+                        <circle id="Oval" fill="#057AD5" cx="19.1176471" cy="19.0294118" r="15.5"></circle>
+                        <circle id="Oval" fill="#067BD6" cx="19.1176471" cy="19.0294118" r="15.3823529"></circle>
+                        <circle id="Oval" fill="#077BD6" cx="19.1176471" cy="19.0294118" r="15.2352941"></circle>
+                        <circle id="Oval" fill="#087BD6" cx="19.1176471" cy="19.0294118" r="15.0882353"></circle>
+                        <circle id="Oval" fill="#097CD7" cx="19.1176471" cy="19.0294118" r="14.9411765"></circle>
+                        <circle id="Oval" fill="#0A7CD7" cx="19.1176471" cy="19.0294118" r="14.7941176"></circle>
+                        <circle id="Oval" fill="#0B7DD7" cx="19.1176471" cy="19.0294118" r="14.6470588"></circle>
+                        <circle id="Oval" fill="#0C7DD7" cx="19.1176471" cy="19.0294118" r="14.5294118"></circle>
+                        <circle id="Oval" fill="#0D7ED8" cx="19.1176471" cy="19.0294118" r="14.3823529"></circle>
+                        <circle id="Oval" fill="#0E7ED8" cx="19.1176471" cy="19.0294118" r="14.2352941"></circle>
+                        <circle id="Oval" fill="#0F7ED8" cx="19.1176471" cy="19.0294118" r="14.0882353"></circle>
+                        <circle id="Oval" fill="#107FD9" cx="19.1176471" cy="19.0294118" r="13.9411765"></circle>
+                        <circle id="Oval" fill="#117FD9" cx="19.1176471" cy="19.0294118" r="13.8235294"></circle>
+                        <circle id="Oval" fill="#1280D9" cx="19.1176471" cy="19.0294118" r="13.6764706"></circle>
+                        <circle id="Oval" fill="#1380DA" cx="19.1176471" cy="19.0294118" r="13.5294118"></circle>
+                        <circle id="Oval" fill="#1481DA" cx="19.1176471" cy="19.0294118" r="13.3823529"></circle>
+                        <circle id="Oval" fill="#1581DA" cx="19.1176471" cy="19.0294118" r="13.2352941"></circle>
+                        <circle id="Oval" fill="#1681DA" cx="19.1176471" cy="19.0294118" r="13.1176471"></circle>
+                        <circle id="Oval" fill="#1782DB" cx="19.1176471" cy="19.0294118" r="12.9705882"></circle>
+                        <circle id="Oval" fill="#1882DB" cx="19.1176471" cy="19.0294118" r="12.8235294"></circle>
+                        <circle id="Oval" fill="#1983DB" cx="19.1176471" cy="19.0294118" r="12.6764706"></circle>
+                        <circle id="Oval" fill="#1A83DC" cx="19.1176471" cy="19.0294118" r="12.5294118"></circle>
+                        <circle id="Oval" fill="#1B84DC" cx="19.1176471" cy="19.0294118" r="12.4117647"></circle>
+                        <circle id="Oval" fill="#1C84DC" cx="19.1176471" cy="19.0294118" r="12.2647059"></circle>
+                        <circle id="Oval" fill="#1D84DC" cx="19.1176471" cy="19.0294118" r="12.1176471"></circle>
+                        <circle id="Oval" fill="#1E85DD" cx="19.1176471" cy="19.0294118" r="11.9705882"></circle>
+                        <circle id="Oval" fill="#1F85DD" cx="19.1176471" cy="19.0294118" r="11.8235294"></circle>
+                        <circle id="Oval" fill="#2086DD" cx="19.1176471" cy="19.0294118" r="11.6764706"></circle>
+                        <circle id="Oval" fill="#2186DE" cx="19.1176471" cy="19.0294118" r="11.5588235"></circle>
+                        <circle id="Oval" fill="#2287DE" cx="19.1176471" cy="19.0294118" r="11.4117647"></circle>
+                        <circle id="Oval" fill="#2387DE" cx="19.1176471" cy="19.0294118" r="11.2647059"></circle>
+                        <circle id="Oval" fill="#2487DE" cx="19.1176471" cy="19.0294118" r="11.1176471"></circle>
+                        <circle id="Oval" fill="#2588DF" cx="19.1176471" cy="19.0294118" r="10.9705882"></circle>
+                        <circle id="Oval" fill="#2688DF" cx="19.1176471" cy="19.0294118" r="10.8529412"></circle>
+                        <circle id="Oval" fill="#2789DF" cx="19.1176471" cy="19.0294118" r="10.7058824"></circle>
+                        <circle id="Oval" fill="#2889E0" cx="19.1176471" cy="19.0294118" r="10.5588235"></circle>
+                        <circle id="Oval" fill="#298AE0" cx="19.1176471" cy="19.0294118" r="10.4117647"></circle>
+                        <circle id="Oval" fill="#2A8AE0" cx="19.1176471" cy="19.0294118" r="10.2647059"></circle>
+                        <circle id="Oval" fill="#2B8AE0" cx="19.1176471" cy="19.0294118" r="10.1470588"></circle>
+                        <circle id="Oval" fill="#2C8BE1" cx="19.1176471" cy="19.0294118" r="10"></circle>
+                        <circle id="Oval" fill="#2D8BE1" cx="19.1176471" cy="19.0294118" r="9.85294118"></circle>
+                        <circle id="Oval" fill="#2E8CE1" cx="19.1176471" cy="19.0294118" r="9.70588235"></circle>
+                        <circle id="Oval" fill="#308CE2" cx="19.1176471" cy="19.0294118" r="9.55882353"></circle>
+                        <circle id="Oval" fill="#318DE2" cx="19.1176471" cy="19.0294118" r="9.44117647"></circle>
+                        <circle id="Oval" fill="#328DE2" cx="19.1176471" cy="19.0294118" r="9.29411765"></circle>
+                        <circle id="Oval" fill="#338EE3" cx="19.1176471" cy="19.0294118" r="9.14705882"></circle>
+                        <circle id="Oval" fill="#348EE3" cx="19.1176471" cy="19.0294118" r="9"></circle>
+                        <circle id="Oval" fill="#358EE3" cx="19.1176471" cy="19.0294118" r="8.85294118"></circle>
+                        <circle id="Oval" fill="#368FE3" cx="19.1176471" cy="19.0294118" r="8.70588235"></circle>
+                        <circle id="Oval" fill="#378FE4" cx="19.1176471" cy="19.0294118" r="8.58823529"></circle>
+                        <circle id="Oval" fill="#3890E4" cx="19.1176471" cy="19.0294118" r="8.44117647"></circle>
+                        <circle id="Oval" fill="#3990E4" cx="19.1176471" cy="19.0294118" r="8.29411765"></circle>
+                        <circle id="Oval" fill="#3A91E5" cx="19.1176471" cy="19.0294118" r="8.14705882"></circle>
+                        <circle id="Oval" fill="#3B91E5" cx="19.1176471" cy="19.0294118" r="8"></circle>
+                        <circle id="Oval" fill="#3C91E5" cx="19.1176471" cy="19.0294118" r="7.88235294"></circle>
+                        <circle id="Oval" fill="#3D92E5" cx="19.1176471" cy="19.0294118" r="7.73529412"></circle>
+                        <circle id="Oval" fill="#3E92E6" cx="19.1176471" cy="19.0294118" r="7.58823529"></circle>
+                        <circle id="Oval" fill="#3F93E6" cx="19.1176471" cy="19.0294118" r="7.44117647"></circle>
+                        <circle id="Oval" fill="#4093E6" cx="19.1176471" cy="19.0294118" r="7.29411765"></circle>
+                        <circle id="Oval" fill="#4194E7" cx="19.1176471" cy="19.0294118" r="7.17647059"></circle>
+                        <circle id="Oval" fill="#4294E7" cx="19.1176471" cy="19.0294118" r="7.02941176"></circle>
+                        <circle id="Oval" fill="#4394E7" cx="19.1176471" cy="19.0294118" r="6.88235294"></circle>
+                        <circle id="Oval" fill="#4495E7" cx="19.1176471" cy="19.0294118" r="6.73529412"></circle>
+                        <circle id="Oval" fill="#4595E8" cx="19.1176471" cy="19.0294118" r="6.58823529"></circle>
+                        <circle id="Oval" fill="#4696E8" cx="19.1176471" cy="19.0294118" r="6.47058824"></circle>
+                        <circle id="Oval" fill="#4796E8" cx="19.1176471" cy="19.0294118" r="6.32352941"></circle>
+                        <circle id="Oval" fill="#4897E9" cx="19.1176471" cy="19.0294118" r="6.17647059"></circle>
+                        <circle id="Oval" fill="#4997E9" cx="19.1176471" cy="19.0294118" r="6.02941176"></circle>
+                        <circle id="Oval" fill="#4A97E9" cx="19.1176471" cy="19.0294118" r="5.88235294"></circle>
+                        <circle id="Oval" fill="#4B98E9" cx="19.1176471" cy="19.0294118" r="5.73529412"></circle>
+                        <circle id="Oval" fill="#4C98EA" cx="19.1176471" cy="19.0294118" r="5.61764706"></circle>
+                        <circle id="Oval" fill="#4D99EA" cx="19.1176471" cy="19.0294118" r="5.47058824"></circle>
+                        <circle id="Oval" fill="#4E99EA" cx="19.1176471" cy="19.0294118" r="5.32352941"></circle>
+                        <circle id="Oval" fill="#4F9AEB" cx="19.1176471" cy="19.0294118" r="5.17647059"></circle>
+                        <circle id="Oval" fill="#509AEB" cx="19.1176471" cy="19.0294118" r="5.02941176"></circle>
+                        <circle id="Oval" fill="#519AEB" cx="19.1176471" cy="19.0294118" r="4.91176471"></circle>
+                        <circle id="Oval" fill="#529BEC" cx="19.1176471" cy="19.0294118" r="4.76470588"></circle>
+                        <circle id="Oval" fill="#539BEC" cx="19.1176471" cy="19.0294118" r="4.61764706"></circle>
+                        <circle id="Oval" fill="#549CEC" cx="19.1176471" cy="19.0294118" r="4.47058824"></circle>
+                        <circle id="Oval" fill="#559CEC" cx="19.1176471" cy="19.0294118" r="4.32352941"></circle>
+                        <circle id="Oval" fill="#569DED" cx="19.1176471" cy="19.0294118" r="4.20588235"></circle>
+                        <circle id="Oval" fill="#579DED" cx="19.1176471" cy="19.0294118" r="4.05882353"></circle>
+                        <circle id="Oval" fill="#589DED" cx="19.1176471" cy="19.0294118" r="3.91176471"></circle>
+                        <circle id="Oval" fill="#599EEE" cx="19.1176471" cy="19.0294118" r="3.76470588"></circle>
+                        <circle id="Oval" fill="#5A9EEE" cx="19.1176471" cy="19.0294118" r="3.61764706"></circle>
+                        <circle id="Oval" fill="#5B9FEE" cx="19.1176471" cy="19.0294118" r="3.47058824"></circle>
+                        <circle id="Oval" fill="#5C9FEE" cx="19.1176471" cy="19.0294118" r="3.35294118"></circle>
+                        <circle id="Oval" fill="#5DA0EF" cx="19.1176471" cy="19.0294118" r="3.20588235"></circle>
+                        <circle id="Oval" fill="#5EA0EF" cx="19.1176471" cy="19.0294118" r="3.05882353"></circle>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(0.000000, 70.588235)">
+                <path d="M76.4705882,46.5882353 L76.4705882,2.61764706" id="Shape" stroke="#000000"></path>
+                <g id="ee75dd06-1aca-4f76-9d11-d05a284020ad-2" transform="translate(58.823529, 41.176471)">
+                    <g id="Clipped">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Shape"></g>
+                        <g id="Group" mask="url(#mask-4)" fill-rule="nonzero">
+                            <g transform="translate(-2.941176, 0.000000)">
+                                <rect id="Rectangle-path" fill="#0078D4" x="2.32352941" y="0.735294118" width="36.4705882" height="36.5882353"></rect>
+                                <circle id="Oval" fill="#0078D4" cx="20.5882353" cy="19.0294118" r="16.2058824"></circle>
+                                <circle id="Oval" fill="#0178D4" cx="20.5882353" cy="19.0294118" r="16.0882353"></circle>
+                                <circle id="Oval" fill="#0279D5" cx="20.5882353" cy="19.0294118" r="15.9411765"></circle>
+                                <circle id="Oval" fill="#0379D5" cx="20.5882353" cy="19.0294118" r="15.7941176"></circle>
+                                <circle id="Oval" fill="#047AD5" cx="20.5882353" cy="19.0294118" r="15.6470588"></circle>
+                                <circle id="Oval" fill="#057AD5" cx="20.5882353" cy="19.0294118" r="15.5"></circle>
+                                <circle id="Oval" fill="#067BD6" cx="20.5882353" cy="19.0294118" r="15.3823529"></circle>
+                                <circle id="Oval" fill="#077BD6" cx="20.5882353" cy="19.0294118" r="15.2352941"></circle>
+                                <circle id="Oval" fill="#087BD6" cx="20.5882353" cy="19.0294118" r="15.0882353"></circle>
+                                <circle id="Oval" fill="#097CD7" cx="20.5882353" cy="19.0294118" r="14.9411765"></circle>
+                                <circle id="Oval" fill="#0A7CD7" cx="20.5882353" cy="19.0294118" r="14.7941176"></circle>
+                                <circle id="Oval" fill="#0B7DD7" cx="20.5882353" cy="19.0294118" r="14.6470588"></circle>
+                                <circle id="Oval" fill="#0C7DD7" cx="20.5882353" cy="19.0294118" r="14.5294118"></circle>
+                                <circle id="Oval" fill="#0D7ED8" cx="20.5882353" cy="19.0294118" r="14.3823529"></circle>
+                                <circle id="Oval" fill="#0E7ED8" cx="20.5882353" cy="19.0294118" r="14.2352941"></circle>
+                                <circle id="Oval" fill="#0F7ED8" cx="20.5882353" cy="19.0294118" r="14.0882353"></circle>
+                                <circle id="Oval" fill="#107FD9" cx="20.5882353" cy="19.0294118" r="13.9411765"></circle>
+                                <circle id="Oval" fill="#117FD9" cx="20.5882353" cy="19.0294118" r="13.8235294"></circle>
+                                <circle id="Oval" fill="#1280D9" cx="20.5882353" cy="19.0294118" r="13.6764706"></circle>
+                                <circle id="Oval" fill="#1380DA" cx="20.5882353" cy="19.0294118" r="13.5294118"></circle>
+                                <circle id="Oval" fill="#1481DA" cx="20.5882353" cy="19.0294118" r="13.3823529"></circle>
+                                <circle id="Oval" fill="#1581DA" cx="20.5882353" cy="19.0294118" r="13.2352941"></circle>
+                                <circle id="Oval" fill="#1681DA" cx="20.5882353" cy="19.0294118" r="13.1176471"></circle>
+                                <circle id="Oval" fill="#1782DB" cx="20.5882353" cy="19.0294118" r="12.9705882"></circle>
+                                <circle id="Oval" fill="#1882DB" cx="20.5882353" cy="19.0294118" r="12.8235294"></circle>
+                                <circle id="Oval" fill="#1983DB" cx="20.5882353" cy="19.0294118" r="12.6764706"></circle>
+                                <circle id="Oval" fill="#1A83DC" cx="20.5882353" cy="19.0294118" r="12.5294118"></circle>
+                                <circle id="Oval" fill="#1B84DC" cx="20.5882353" cy="19.0294118" r="12.4117647"></circle>
+                                <circle id="Oval" fill="#1C84DC" cx="20.5882353" cy="19.0294118" r="12.2647059"></circle>
+                                <circle id="Oval" fill="#1D84DC" cx="20.5882353" cy="19.0294118" r="12.1176471"></circle>
+                                <circle id="Oval" fill="#1E85DD" cx="20.5882353" cy="19.0294118" r="11.9705882"></circle>
+                                <circle id="Oval" fill="#1F85DD" cx="20.5882353" cy="19.0294118" r="11.8235294"></circle>
+                                <circle id="Oval" fill="#2086DD" cx="20.5882353" cy="19.0294118" r="11.6764706"></circle>
+                                <circle id="Oval" fill="#2186DE" cx="20.5882353" cy="19.0294118" r="11.5588235"></circle>
+                                <circle id="Oval" fill="#2287DE" cx="20.5882353" cy="19.0294118" r="11.4117647"></circle>
+                                <circle id="Oval" fill="#2387DE" cx="20.5882353" cy="19.0294118" r="11.2647059"></circle>
+                                <circle id="Oval" fill="#2487DE" cx="20.5882353" cy="19.0294118" r="11.1176471"></circle>
+                                <circle id="Oval" fill="#2588DF" cx="20.5882353" cy="19.0294118" r="10.9705882"></circle>
+                                <circle id="Oval" fill="#2688DF" cx="20.5882353" cy="19.0294118" r="10.8529412"></circle>
+                                <circle id="Oval" fill="#2789DF" cx="20.5882353" cy="19.0294118" r="10.7058824"></circle>
+                                <circle id="Oval" fill="#2889E0" cx="20.5882353" cy="19.0294118" r="10.5588235"></circle>
+                                <circle id="Oval" fill="#298AE0" cx="20.5882353" cy="19.0294118" r="10.4117647"></circle>
+                                <circle id="Oval" fill="#2A8AE0" cx="20.5882353" cy="19.0294118" r="10.2647059"></circle>
+                                <circle id="Oval" fill="#2B8AE0" cx="20.5882353" cy="19.0294118" r="10.1470588"></circle>
+                                <circle id="Oval" fill="#2C8BE1" cx="20.5882353" cy="19.0294118" r="10"></circle>
+                                <circle id="Oval" fill="#2D8BE1" cx="20.5882353" cy="19.0294118" r="9.85294118"></circle>
+                                <circle id="Oval" fill="#2E8CE1" cx="20.5882353" cy="19.0294118" r="9.70588235"></circle>
+                                <circle id="Oval" fill="#308CE2" cx="20.5882353" cy="19.0294118" r="9.55882353"></circle>
+                                <circle id="Oval" fill="#318DE2" cx="20.5882353" cy="19.0294118" r="9.44117647"></circle>
+                                <circle id="Oval" fill="#328DE2" cx="20.5882353" cy="19.0294118" r="9.29411765"></circle>
+                                <circle id="Oval" fill="#338EE3" cx="20.5882353" cy="19.0294118" r="9.14705882"></circle>
+                                <circle id="Oval" fill="#348EE3" cx="20.5882353" cy="19.0294118" r="9"></circle>
+                                <circle id="Oval" fill="#358EE3" cx="20.5882353" cy="19.0294118" r="8.85294118"></circle>
+                                <circle id="Oval" fill="#368FE3" cx="20.5882353" cy="19.0294118" r="8.70588235"></circle>
+                                <circle id="Oval" fill="#378FE4" cx="20.5882353" cy="19.0294118" r="8.58823529"></circle>
+                                <circle id="Oval" fill="#3890E4" cx="20.5882353" cy="19.0294118" r="8.44117647"></circle>
+                                <circle id="Oval" fill="#3990E4" cx="20.5882353" cy="19.0294118" r="8.29411765"></circle>
+                                <circle id="Oval" fill="#3A91E5" cx="20.5882353" cy="19.0294118" r="8.14705882"></circle>
+                                <circle id="Oval" fill="#3B91E5" cx="20.5882353" cy="19.0294118" r="8"></circle>
+                                <circle id="Oval" fill="#3C91E5" cx="20.5882353" cy="19.0294118" r="7.88235294"></circle>
+                                <circle id="Oval" fill="#3D92E5" cx="20.5882353" cy="19.0294118" r="7.73529412"></circle>
+                                <circle id="Oval" fill="#3E92E6" cx="20.5882353" cy="19.0294118" r="7.58823529"></circle>
+                                <circle id="Oval" fill="#3F93E6" cx="20.5882353" cy="19.0294118" r="7.44117647"></circle>
+                                <circle id="Oval" fill="#4093E6" cx="20.5882353" cy="19.0294118" r="7.29411765"></circle>
+                                <circle id="Oval" fill="#4194E7" cx="20.5882353" cy="19.0294118" r="7.17647059"></circle>
+                                <circle id="Oval" fill="#4294E7" cx="20.5882353" cy="19.0294118" r="7.02941176"></circle>
+                                <circle id="Oval" fill="#4394E7" cx="20.5882353" cy="19.0294118" r="6.88235294"></circle>
+                                <circle id="Oval" fill="#4495E7" cx="20.5882353" cy="19.0294118" r="6.73529412"></circle>
+                                <circle id="Oval" fill="#4595E8" cx="20.5882353" cy="19.0294118" r="6.58823529"></circle>
+                                <circle id="Oval" fill="#4696E8" cx="20.5882353" cy="19.0294118" r="6.47058824"></circle>
+                                <circle id="Oval" fill="#4796E8" cx="20.5882353" cy="19.0294118" r="6.32352941"></circle>
+                                <circle id="Oval" fill="#4897E9" cx="20.5882353" cy="19.0294118" r="6.17647059"></circle>
+                                <circle id="Oval" fill="#4997E9" cx="20.5882353" cy="19.0294118" r="6.02941176"></circle>
+                                <circle id="Oval" fill="#4A97E9" cx="20.5882353" cy="19.0294118" r="5.88235294"></circle>
+                                <circle id="Oval" fill="#4B98E9" cx="20.5882353" cy="19.0294118" r="5.73529412"></circle>
+                                <circle id="Oval" fill="#4C98EA" cx="20.5882353" cy="19.0294118" r="5.61764706"></circle>
+                                <circle id="Oval" fill="#4D99EA" cx="20.5882353" cy="19.0294118" r="5.47058824"></circle>
+                                <circle id="Oval" fill="#4E99EA" cx="20.5882353" cy="19.0294118" r="5.32352941"></circle>
+                                <circle id="Oval" fill="#4F9AEB" cx="20.5882353" cy="19.0294118" r="5.17647059"></circle>
+                                <circle id="Oval" fill="#509AEB" cx="20.5882353" cy="19.0294118" r="5.02941176"></circle>
+                                <circle id="Oval" fill="#519AEB" cx="20.5882353" cy="19.0294118" r="4.91176471"></circle>
+                                <circle id="Oval" fill="#529BEC" cx="20.5882353" cy="19.0294118" r="4.76470588"></circle>
+                                <circle id="Oval" fill="#539BEC" cx="20.5882353" cy="19.0294118" r="4.61764706"></circle>
+                                <circle id="Oval" fill="#549CEC" cx="20.5882353" cy="19.0294118" r="4.47058824"></circle>
+                                <circle id="Oval" fill="#559CEC" cx="20.5882353" cy="19.0294118" r="4.32352941"></circle>
+                                <circle id="Oval" fill="#569DED" cx="20.5882353" cy="19.0294118" r="4.20588235"></circle>
+                                <circle id="Oval" fill="#579DED" cx="20.5882353" cy="19.0294118" r="4.05882353"></circle>
+                                <circle id="Oval" fill="#589DED" cx="20.5882353" cy="19.0294118" r="3.91176471"></circle>
+                                <circle id="Oval" fill="#599EEE" cx="20.5882353" cy="19.0294118" r="3.76470588"></circle>
+                                <circle id="Oval" fill="#5A9EEE" cx="20.5882353" cy="19.0294118" r="3.61764706"></circle>
+                                <circle id="Oval" fill="#5B9FEE" cx="20.5882353" cy="19.0294118" r="3.47058824"></circle>
+                                <circle id="Oval" fill="#5C9FEE" cx="20.5882353" cy="19.0294118" r="3.35294118"></circle>
+                                <circle id="Oval" fill="#5DA0EF" cx="20.5882353" cy="19.0294118" r="3.20588235"></circle>
+                                <circle id="Oval" fill="#5EA0EF" cx="20.5882353" cy="19.0294118" r="3.05882353"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <path d="M19.1176471,46.5882353 L19.1176471,2.61764706" id="Shape" stroke="#000000"></path>
+                <g id="ee75dd06-1aca-4f76-9d11-d05a284020ad-3" transform="translate(0.000000, 41.176471)">
+                    <g id="Clipped">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Shape"></g>
+                        <g id="Group" mask="url(#mask-6)" fill-rule="nonzero">
+                            <rect id="Rectangle-path" fill="#0078D4" x="0.852941176" y="0.735294118" width="36.4705882" height="36.5882353"></rect>
+                            <circle id="Oval" fill="#0078D4" cx="19.1176471" cy="19.0294118" r="16.2058824"></circle>
+                            <circle id="Oval" fill="#0178D4" cx="19.1176471" cy="19.0294118" r="16.0882353"></circle>
+                            <circle id="Oval" fill="#0279D5" cx="19.1176471" cy="19.0294118" r="15.9411765"></circle>
+                            <circle id="Oval" fill="#0379D5" cx="19.1176471" cy="19.0294118" r="15.7941176"></circle>
+                            <circle id="Oval" fill="#047AD5" cx="19.1176471" cy="19.0294118" r="15.6470588"></circle>
+                            <circle id="Oval" fill="#057AD5" cx="19.1176471" cy="19.0294118" r="15.5"></circle>
+                            <circle id="Oval" fill="#067BD6" cx="19.1176471" cy="19.0294118" r="15.3823529"></circle>
+                            <circle id="Oval" fill="#077BD6" cx="19.1176471" cy="19.0294118" r="15.2352941"></circle>
+                            <circle id="Oval" fill="#087BD6" cx="19.1176471" cy="19.0294118" r="15.0882353"></circle>
+                            <circle id="Oval" fill="#097CD7" cx="19.1176471" cy="19.0294118" r="14.9411765"></circle>
+                            <circle id="Oval" fill="#0A7CD7" cx="19.1176471" cy="19.0294118" r="14.7941176"></circle>
+                            <circle id="Oval" fill="#0B7DD7" cx="19.1176471" cy="19.0294118" r="14.6470588"></circle>
+                            <circle id="Oval" fill="#0C7DD7" cx="19.1176471" cy="19.0294118" r="14.5294118"></circle>
+                            <circle id="Oval" fill="#0D7ED8" cx="19.1176471" cy="19.0294118" r="14.3823529"></circle>
+                            <circle id="Oval" fill="#0E7ED8" cx="19.1176471" cy="19.0294118" r="14.2352941"></circle>
+                            <circle id="Oval" fill="#0F7ED8" cx="19.1176471" cy="19.0294118" r="14.0882353"></circle>
+                            <circle id="Oval" fill="#107FD9" cx="19.1176471" cy="19.0294118" r="13.9411765"></circle>
+                            <circle id="Oval" fill="#117FD9" cx="19.1176471" cy="19.0294118" r="13.8235294"></circle>
+                            <circle id="Oval" fill="#1280D9" cx="19.1176471" cy="19.0294118" r="13.6764706"></circle>
+                            <circle id="Oval" fill="#1380DA" cx="19.1176471" cy="19.0294118" r="13.5294118"></circle>
+                            <circle id="Oval" fill="#1481DA" cx="19.1176471" cy="19.0294118" r="13.3823529"></circle>
+                            <circle id="Oval" fill="#1581DA" cx="19.1176471" cy="19.0294118" r="13.2352941"></circle>
+                            <circle id="Oval" fill="#1681DA" cx="19.1176471" cy="19.0294118" r="13.1176471"></circle>
+                            <circle id="Oval" fill="#1782DB" cx="19.1176471" cy="19.0294118" r="12.9705882"></circle>
+                            <circle id="Oval" fill="#1882DB" cx="19.1176471" cy="19.0294118" r="12.8235294"></circle>
+                            <circle id="Oval" fill="#1983DB" cx="19.1176471" cy="19.0294118" r="12.6764706"></circle>
+                            <circle id="Oval" fill="#1A83DC" cx="19.1176471" cy="19.0294118" r="12.5294118"></circle>
+                            <circle id="Oval" fill="#1B84DC" cx="19.1176471" cy="19.0294118" r="12.4117647"></circle>
+                            <circle id="Oval" fill="#1C84DC" cx="19.1176471" cy="19.0294118" r="12.2647059"></circle>
+                            <circle id="Oval" fill="#1D84DC" cx="19.1176471" cy="19.0294118" r="12.1176471"></circle>
+                            <circle id="Oval" fill="#1E85DD" cx="19.1176471" cy="19.0294118" r="11.9705882"></circle>
+                            <circle id="Oval" fill="#1F85DD" cx="19.1176471" cy="19.0294118" r="11.8235294"></circle>
+                            <circle id="Oval" fill="#2086DD" cx="19.1176471" cy="19.0294118" r="11.6764706"></circle>
+                            <circle id="Oval" fill="#2186DE" cx="19.1176471" cy="19.0294118" r="11.5588235"></circle>
+                            <circle id="Oval" fill="#2287DE" cx="19.1176471" cy="19.0294118" r="11.4117647"></circle>
+                            <circle id="Oval" fill="#2387DE" cx="19.1176471" cy="19.0294118" r="11.2647059"></circle>
+                            <circle id="Oval" fill="#2487DE" cx="19.1176471" cy="19.0294118" r="11.1176471"></circle>
+                            <circle id="Oval" fill="#2588DF" cx="19.1176471" cy="19.0294118" r="10.9705882"></circle>
+                            <circle id="Oval" fill="#2688DF" cx="19.1176471" cy="19.0294118" r="10.8529412"></circle>
+                            <circle id="Oval" fill="#2789DF" cx="19.1176471" cy="19.0294118" r="10.7058824"></circle>
+                            <circle id="Oval" fill="#2889E0" cx="19.1176471" cy="19.0294118" r="10.5588235"></circle>
+                            <circle id="Oval" fill="#298AE0" cx="19.1176471" cy="19.0294118" r="10.4117647"></circle>
+                            <circle id="Oval" fill="#2A8AE0" cx="19.1176471" cy="19.0294118" r="10.2647059"></circle>
+                            <circle id="Oval" fill="#2B8AE0" cx="19.1176471" cy="19.0294118" r="10.1470588"></circle>
+                            <circle id="Oval" fill="#2C8BE1" cx="19.1176471" cy="19.0294118" r="10"></circle>
+                            <circle id="Oval" fill="#2D8BE1" cx="19.1176471" cy="19.0294118" r="9.85294118"></circle>
+                            <circle id="Oval" fill="#2E8CE1" cx="19.1176471" cy="19.0294118" r="9.70588235"></circle>
+                            <circle id="Oval" fill="#308CE2" cx="19.1176471" cy="19.0294118" r="9.55882353"></circle>
+                            <circle id="Oval" fill="#318DE2" cx="19.1176471" cy="19.0294118" r="9.44117647"></circle>
+                            <circle id="Oval" fill="#328DE2" cx="19.1176471" cy="19.0294118" r="9.29411765"></circle>
+                            <circle id="Oval" fill="#338EE3" cx="19.1176471" cy="19.0294118" r="9.14705882"></circle>
+                            <circle id="Oval" fill="#348EE3" cx="19.1176471" cy="19.0294118" r="9"></circle>
+                            <circle id="Oval" fill="#358EE3" cx="19.1176471" cy="19.0294118" r="8.85294118"></circle>
+                            <circle id="Oval" fill="#368FE3" cx="19.1176471" cy="19.0294118" r="8.70588235"></circle>
+                            <circle id="Oval" fill="#378FE4" cx="19.1176471" cy="19.0294118" r="8.58823529"></circle>
+                            <circle id="Oval" fill="#3890E4" cx="19.1176471" cy="19.0294118" r="8.44117647"></circle>
+                            <circle id="Oval" fill="#3990E4" cx="19.1176471" cy="19.0294118" r="8.29411765"></circle>
+                            <circle id="Oval" fill="#3A91E5" cx="19.1176471" cy="19.0294118" r="8.14705882"></circle>
+                            <circle id="Oval" fill="#3B91E5" cx="19.1176471" cy="19.0294118" r="8"></circle>
+                            <circle id="Oval" fill="#3C91E5" cx="19.1176471" cy="19.0294118" r="7.88235294"></circle>
+                            <circle id="Oval" fill="#3D92E5" cx="19.1176471" cy="19.0294118" r="7.73529412"></circle>
+                            <circle id="Oval" fill="#3E92E6" cx="19.1176471" cy="19.0294118" r="7.58823529"></circle>
+                            <circle id="Oval" fill="#3F93E6" cx="19.1176471" cy="19.0294118" r="7.44117647"></circle>
+                            <circle id="Oval" fill="#4093E6" cx="19.1176471" cy="19.0294118" r="7.29411765"></circle>
+                            <circle id="Oval" fill="#4194E7" cx="19.1176471" cy="19.0294118" r="7.17647059"></circle>
+                            <circle id="Oval" fill="#4294E7" cx="19.1176471" cy="19.0294118" r="7.02941176"></circle>
+                            <circle id="Oval" fill="#4394E7" cx="19.1176471" cy="19.0294118" r="6.88235294"></circle>
+                            <circle id="Oval" fill="#4495E7" cx="19.1176471" cy="19.0294118" r="6.73529412"></circle>
+                            <circle id="Oval" fill="#4595E8" cx="19.1176471" cy="19.0294118" r="6.58823529"></circle>
+                            <circle id="Oval" fill="#4696E8" cx="19.1176471" cy="19.0294118" r="6.47058824"></circle>
+                            <circle id="Oval" fill="#4796E8" cx="19.1176471" cy="19.0294118" r="6.32352941"></circle>
+                            <circle id="Oval" fill="#4897E9" cx="19.1176471" cy="19.0294118" r="6.17647059"></circle>
+                            <circle id="Oval" fill="#4997E9" cx="19.1176471" cy="19.0294118" r="6.02941176"></circle>
+                            <circle id="Oval" fill="#4A97E9" cx="19.1176471" cy="19.0294118" r="5.88235294"></circle>
+                            <circle id="Oval" fill="#4B98E9" cx="19.1176471" cy="19.0294118" r="5.73529412"></circle>
+                            <circle id="Oval" fill="#4C98EA" cx="19.1176471" cy="19.0294118" r="5.61764706"></circle>
+                            <circle id="Oval" fill="#4D99EA" cx="19.1176471" cy="19.0294118" r="5.47058824"></circle>
+                            <circle id="Oval" fill="#4E99EA" cx="19.1176471" cy="19.0294118" r="5.32352941"></circle>
+                            <circle id="Oval" fill="#4F9AEB" cx="19.1176471" cy="19.0294118" r="5.17647059"></circle>
+                            <circle id="Oval" fill="#509AEB" cx="19.1176471" cy="19.0294118" r="5.02941176"></circle>
+                            <circle id="Oval" fill="#519AEB" cx="19.1176471" cy="19.0294118" r="4.91176471"></circle>
+                            <circle id="Oval" fill="#529BEC" cx="19.1176471" cy="19.0294118" r="4.76470588"></circle>
+                            <circle id="Oval" fill="#539BEC" cx="19.1176471" cy="19.0294118" r="4.61764706"></circle>
+                            <circle id="Oval" fill="#549CEC" cx="19.1176471" cy="19.0294118" r="4.47058824"></circle>
+                            <circle id="Oval" fill="#559CEC" cx="19.1176471" cy="19.0294118" r="4.32352941"></circle>
+                            <circle id="Oval" fill="#569DED" cx="19.1176471" cy="19.0294118" r="4.20588235"></circle>
+                            <circle id="Oval" fill="#579DED" cx="19.1176471" cy="19.0294118" r="4.05882353"></circle>
+                            <circle id="Oval" fill="#589DED" cx="19.1176471" cy="19.0294118" r="3.91176471"></circle>
+                            <circle id="Oval" fill="#599EEE" cx="19.1176471" cy="19.0294118" r="3.76470588"></circle>
+                            <circle id="Oval" fill="#5A9EEE" cx="19.1176471" cy="19.0294118" r="3.61764706"></circle>
+                            <circle id="Oval" fill="#5B9FEE" cx="19.1176471" cy="19.0294118" r="3.47058824"></circle>
+                            <circle id="Oval" fill="#5C9FEE" cx="19.1176471" cy="19.0294118" r="3.35294118"></circle>
+                            <circle id="Oval" fill="#5DA0EF" cx="19.1176471" cy="19.0294118" r="3.20588235"></circle>
+                            <circle id="Oval" fill="#5EA0EF" cx="19.1176471" cy="19.0294118" r="3.05882353"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(29.411765, 0.000000)">
+                <path d="M18.3823529,30.1470588 L18.3823529,74.1176471" id="Shape" stroke="#000000"></path>
+                <g id="ee75dd06-1aca-4f76-9d11-d05a284020ad-4">
+                    <g id="Clipped">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="Shape"></g>
+                        <g id="Group" mask="url(#mask-8)" fill-rule="nonzero">
+                            <g transform="translate(0.000000, -2.941176)">
+                                <rect id="Rectangle-path" fill="#0078D4" x="0.176470588" y="1.17647059" width="36.4705882" height="36.5882353"></rect>
+                                <circle id="Oval" fill="#0078D4" cx="18.3823529" cy="19.5" r="16.2058824"></circle>
+                                <circle id="Oval" fill="#0178D4" cx="18.3823529" cy="19.5" r="16.0882353"></circle>
+                                <circle id="Oval" fill="#0279D5" cx="18.3823529" cy="19.5" r="15.9411765"></circle>
+                                <circle id="Oval" fill="#0379D5" cx="18.3823529" cy="19.5" r="15.7941176"></circle>
+                                <circle id="Oval" fill="#047AD5" cx="18.3823529" cy="19.5" r="15.6470588"></circle>
+                                <circle id="Oval" fill="#057AD5" cx="18.3823529" cy="19.5" r="15.5"></circle>
+                                <circle id="Oval" fill="#067BD6" cx="18.3823529" cy="19.5" r="15.3823529"></circle>
+                                <circle id="Oval" fill="#077BD6" cx="18.3823529" cy="19.5" r="15.2352941"></circle>
+                                <circle id="Oval" fill="#087BD6" cx="18.3823529" cy="19.5" r="15.0882353"></circle>
+                                <circle id="Oval" fill="#097CD7" cx="18.3823529" cy="19.5" r="14.9411765"></circle>
+                                <circle id="Oval" fill="#0A7CD7" cx="18.3823529" cy="19.5" r="14.7941176"></circle>
+                                <circle id="Oval" fill="#0B7DD7" cx="18.3823529" cy="19.5" r="14.6470588"></circle>
+                                <circle id="Oval" fill="#0C7DD7" cx="18.3823529" cy="19.5" r="14.5294118"></circle>
+                                <circle id="Oval" fill="#0D7ED8" cx="18.3823529" cy="19.5" r="14.3823529"></circle>
+                                <circle id="Oval" fill="#0E7ED8" cx="18.3823529" cy="19.5" r="14.2352941"></circle>
+                                <circle id="Oval" fill="#0F7ED8" cx="18.3823529" cy="19.5" r="14.0882353"></circle>
+                                <circle id="Oval" fill="#107FD9" cx="18.3823529" cy="19.5" r="13.9411765"></circle>
+                                <circle id="Oval" fill="#117FD9" cx="18.3823529" cy="19.5" r="13.8235294"></circle>
+                                <circle id="Oval" fill="#1280D9" cx="18.3823529" cy="19.5" r="13.6764706"></circle>
+                                <circle id="Oval" fill="#1380DA" cx="18.3823529" cy="19.5" r="13.5294118"></circle>
+                                <circle id="Oval" fill="#1481DA" cx="18.3823529" cy="19.5" r="13.3823529"></circle>
+                                <circle id="Oval" fill="#1581DA" cx="18.3823529" cy="19.5" r="13.2352941"></circle>
+                                <circle id="Oval" fill="#1681DA" cx="18.3823529" cy="19.5" r="13.1176471"></circle>
+                                <circle id="Oval" fill="#1782DB" cx="18.3823529" cy="19.5" r="12.9705882"></circle>
+                                <circle id="Oval" fill="#1882DB" cx="18.3823529" cy="19.5" r="12.8235294"></circle>
+                                <circle id="Oval" fill="#1983DB" cx="18.3823529" cy="19.5" r="12.6764706"></circle>
+                                <circle id="Oval" fill="#1A83DC" cx="18.3823529" cy="19.5" r="12.5294118"></circle>
+                                <circle id="Oval" fill="#1B84DC" cx="18.3823529" cy="19.5" r="12.4117647"></circle>
+                                <circle id="Oval" fill="#1C84DC" cx="18.3823529" cy="19.5" r="12.2647059"></circle>
+                                <circle id="Oval" fill="#1D84DC" cx="18.3823529" cy="19.5" r="12.1176471"></circle>
+                                <circle id="Oval" fill="#1E85DD" cx="18.3823529" cy="19.5" r="11.9705882"></circle>
+                                <circle id="Oval" fill="#1F85DD" cx="18.3823529" cy="19.5" r="11.8235294"></circle>
+                                <circle id="Oval" fill="#2086DD" cx="18.3823529" cy="19.5" r="11.6764706"></circle>
+                                <circle id="Oval" fill="#2186DE" cx="18.3823529" cy="19.5" r="11.5588235"></circle>
+                                <circle id="Oval" fill="#2287DE" cx="18.3823529" cy="19.5" r="11.4117647"></circle>
+                                <circle id="Oval" fill="#2387DE" cx="18.3823529" cy="19.5" r="11.2647059"></circle>
+                                <circle id="Oval" fill="#2487DE" cx="18.3823529" cy="19.5" r="11.1176471"></circle>
+                                <circle id="Oval" fill="#2588DF" cx="18.3823529" cy="19.5" r="10.9705882"></circle>
+                                <circle id="Oval" fill="#2688DF" cx="18.3823529" cy="19.5" r="10.8529412"></circle>
+                                <circle id="Oval" fill="#2789DF" cx="18.3823529" cy="19.5" r="10.7058824"></circle>
+                                <circle id="Oval" fill="#2889E0" cx="18.3823529" cy="19.5" r="10.5588235"></circle>
+                                <circle id="Oval" fill="#298AE0" cx="18.3823529" cy="19.5" r="10.4117647"></circle>
+                                <circle id="Oval" fill="#2A8AE0" cx="18.3823529" cy="19.5" r="10.2647059"></circle>
+                                <circle id="Oval" fill="#2B8AE0" cx="18.3823529" cy="19.5" r="10.1470588"></circle>
+                                <circle id="Oval" fill="#2C8BE1" cx="18.3823529" cy="19.5" r="10"></circle>
+                                <circle id="Oval" fill="#2D8BE1" cx="18.3823529" cy="19.5" r="9.85294118"></circle>
+                                <circle id="Oval" fill="#2E8CE1" cx="18.3823529" cy="19.5" r="9.70588235"></circle>
+                                <circle id="Oval" fill="#308CE2" cx="18.3823529" cy="19.5" r="9.55882353"></circle>
+                                <circle id="Oval" fill="#318DE2" cx="18.3823529" cy="19.5" r="9.44117647"></circle>
+                                <circle id="Oval" fill="#328DE2" cx="18.3823529" cy="19.5" r="9.29411765"></circle>
+                                <circle id="Oval" fill="#338EE3" cx="18.3823529" cy="19.5" r="9.14705882"></circle>
+                                <circle id="Oval" fill="#348EE3" cx="18.3823529" cy="19.5" r="9"></circle>
+                                <circle id="Oval" fill="#358EE3" cx="18.3823529" cy="19.5" r="8.85294118"></circle>
+                                <circle id="Oval" fill="#368FE3" cx="18.3823529" cy="19.5" r="8.70588235"></circle>
+                                <circle id="Oval" fill="#378FE4" cx="18.3823529" cy="19.5" r="8.58823529"></circle>
+                                <circle id="Oval" fill="#3890E4" cx="18.3823529" cy="19.5" r="8.44117647"></circle>
+                                <circle id="Oval" fill="#3990E4" cx="18.3823529" cy="19.5" r="8.29411765"></circle>
+                                <circle id="Oval" fill="#3A91E5" cx="18.3823529" cy="19.5" r="8.14705882"></circle>
+                                <circle id="Oval" fill="#3B91E5" cx="18.3823529" cy="19.5" r="8"></circle>
+                                <circle id="Oval" fill="#3C91E5" cx="18.3823529" cy="19.5" r="7.88235294"></circle>
+                                <circle id="Oval" fill="#3D92E5" cx="18.3823529" cy="19.5" r="7.73529412"></circle>
+                                <circle id="Oval" fill="#3E92E6" cx="18.3823529" cy="19.5" r="7.58823529"></circle>
+                                <circle id="Oval" fill="#3F93E6" cx="18.3823529" cy="19.5" r="7.44117647"></circle>
+                                <circle id="Oval" fill="#4093E6" cx="18.3823529" cy="19.5" r="7.29411765"></circle>
+                                <circle id="Oval" fill="#4194E7" cx="18.3823529" cy="19.5" r="7.17647059"></circle>
+                                <circle id="Oval" fill="#4294E7" cx="18.3823529" cy="19.5" r="7.02941176"></circle>
+                                <circle id="Oval" fill="#4394E7" cx="18.3823529" cy="19.5" r="6.88235294"></circle>
+                                <circle id="Oval" fill="#4495E7" cx="18.3823529" cy="19.5" r="6.73529412"></circle>
+                                <circle id="Oval" fill="#4595E8" cx="18.3823529" cy="19.5" r="6.58823529"></circle>
+                                <circle id="Oval" fill="#4696E8" cx="18.3823529" cy="19.5" r="6.47058824"></circle>
+                                <circle id="Oval" fill="#4796E8" cx="18.3823529" cy="19.5" r="6.32352941"></circle>
+                                <circle id="Oval" fill="#4897E9" cx="18.3823529" cy="19.5" r="6.17647059"></circle>
+                                <circle id="Oval" fill="#4997E9" cx="18.3823529" cy="19.5" r="6.02941176"></circle>
+                                <circle id="Oval" fill="#4A97E9" cx="18.3823529" cy="19.5" r="5.88235294"></circle>
+                                <circle id="Oval" fill="#4B98E9" cx="18.3823529" cy="19.5" r="5.73529412"></circle>
+                                <circle id="Oval" fill="#4C98EA" cx="18.3823529" cy="19.5" r="5.61764706"></circle>
+                                <circle id="Oval" fill="#4D99EA" cx="18.3823529" cy="19.5" r="5.47058824"></circle>
+                                <circle id="Oval" fill="#4E99EA" cx="18.3823529" cy="19.5" r="5.32352941"></circle>
+                                <circle id="Oval" fill="#4F9AEB" cx="18.3823529" cy="19.5" r="5.17647059"></circle>
+                                <circle id="Oval" fill="#509AEB" cx="18.3823529" cy="19.5" r="5.02941176"></circle>
+                                <circle id="Oval" fill="#519AEB" cx="18.3823529" cy="19.5" r="4.91176471"></circle>
+                                <circle id="Oval" fill="#529BEC" cx="18.3823529" cy="19.5" r="4.76470588"></circle>
+                                <circle id="Oval" fill="#539BEC" cx="18.3823529" cy="19.5" r="4.61764706"></circle>
+                                <circle id="Oval" fill="#549CEC" cx="18.3823529" cy="19.5" r="4.47058824"></circle>
+                                <circle id="Oval" fill="#559CEC" cx="18.3823529" cy="19.5" r="4.32352941"></circle>
+                                <circle id="Oval" fill="#569DED" cx="18.3823529" cy="19.5" r="4.20588235"></circle>
+                                <circle id="Oval" fill="#579DED" cx="18.3823529" cy="19.5" r="4.05882353"></circle>
+                                <circle id="Oval" fill="#589DED" cx="18.3823529" cy="19.5" r="3.91176471"></circle>
+                                <circle id="Oval" fill="#599EEE" cx="18.3823529" cy="19.5" r="3.76470588"></circle>
+                                <circle id="Oval" fill="#5A9EEE" cx="18.3823529" cy="19.5" r="3.61764706"></circle>
+                                <circle id="Oval" fill="#5B9FEE" cx="18.3823529" cy="19.5" r="3.47058824"></circle>
+                                <circle id="Oval" fill="#5C9FEE" cx="18.3823529" cy="19.5" r="3.35294118"></circle>
+                                <circle id="Oval" fill="#5DA0EF" cx="18.3823529" cy="19.5" r="3.20588235"></circle>
+                                <circle id="Oval" fill="#5EA0EF" cx="18.3823529" cy="19.5" r="3.05882353"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <path d="M75.7352941,30.1470588 L75.7352941,74.1176471" id="Shape" stroke="#000000"></path>
+                <g id="ee75dd06-1aca-4f76-9d11-d05a284020ad-5" transform="translate(58.823529, 0.000000)">
+                    <g id="Clipped">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <g id="Shape"></g>
+                        <g id="Group" mask="url(#mask-10)" fill-rule="nonzero">
+                            <g transform="translate(-2.941176, -2.941176)">
+                                <rect id="Rectangle-path" fill="#0078D4" x="1.64705882" y="1.17647059" width="36.4705882" height="36.5882353"></rect>
+                                <circle id="Oval" fill="#0078D4" cx="19.8529412" cy="19.5" r="16.2058824"></circle>
+                                <circle id="Oval" fill="#0178D4" cx="19.8529412" cy="19.5" r="16.0882353"></circle>
+                                <circle id="Oval" fill="#0279D5" cx="19.8529412" cy="19.5" r="15.9411765"></circle>
+                                <circle id="Oval" fill="#0379D5" cx="19.8529412" cy="19.5" r="15.7941176"></circle>
+                                <circle id="Oval" fill="#047AD5" cx="19.8529412" cy="19.5" r="15.6470588"></circle>
+                                <circle id="Oval" fill="#057AD5" cx="19.8529412" cy="19.5" r="15.5"></circle>
+                                <circle id="Oval" fill="#067BD6" cx="19.8529412" cy="19.5" r="15.3823529"></circle>
+                                <circle id="Oval" fill="#077BD6" cx="19.8529412" cy="19.5" r="15.2352941"></circle>
+                                <circle id="Oval" fill="#087BD6" cx="19.8529412" cy="19.5" r="15.0882353"></circle>
+                                <circle id="Oval" fill="#097CD7" cx="19.8529412" cy="19.5" r="14.9411765"></circle>
+                                <circle id="Oval" fill="#0A7CD7" cx="19.8529412" cy="19.5" r="14.7941176"></circle>
+                                <circle id="Oval" fill="#0B7DD7" cx="19.8529412" cy="19.5" r="14.6470588"></circle>
+                                <circle id="Oval" fill="#0C7DD7" cx="19.8529412" cy="19.5" r="14.5294118"></circle>
+                                <circle id="Oval" fill="#0D7ED8" cx="19.8529412" cy="19.5" r="14.3823529"></circle>
+                                <circle id="Oval" fill="#0E7ED8" cx="19.8529412" cy="19.5" r="14.2352941"></circle>
+                                <circle id="Oval" fill="#0F7ED8" cx="19.8529412" cy="19.5" r="14.0882353"></circle>
+                                <circle id="Oval" fill="#107FD9" cx="19.8529412" cy="19.5" r="13.9411765"></circle>
+                                <circle id="Oval" fill="#117FD9" cx="19.8529412" cy="19.5" r="13.8235294"></circle>
+                                <circle id="Oval" fill="#1280D9" cx="19.8529412" cy="19.5" r="13.6764706"></circle>
+                                <circle id="Oval" fill="#1380DA" cx="19.8529412" cy="19.5" r="13.5294118"></circle>
+                                <circle id="Oval" fill="#1481DA" cx="19.8529412" cy="19.5" r="13.3823529"></circle>
+                                <circle id="Oval" fill="#1581DA" cx="19.8529412" cy="19.5" r="13.2352941"></circle>
+                                <circle id="Oval" fill="#1681DA" cx="19.8529412" cy="19.5" r="13.1176471"></circle>
+                                <circle id="Oval" fill="#1782DB" cx="19.8529412" cy="19.5" r="12.9705882"></circle>
+                                <circle id="Oval" fill="#1882DB" cx="19.8529412" cy="19.5" r="12.8235294"></circle>
+                                <circle id="Oval" fill="#1983DB" cx="19.8529412" cy="19.5" r="12.6764706"></circle>
+                                <circle id="Oval" fill="#1A83DC" cx="19.8529412" cy="19.5" r="12.5294118"></circle>
+                                <circle id="Oval" fill="#1B84DC" cx="19.8529412" cy="19.5" r="12.4117647"></circle>
+                                <circle id="Oval" fill="#1C84DC" cx="19.8529412" cy="19.5" r="12.2647059"></circle>
+                                <circle id="Oval" fill="#1D84DC" cx="19.8529412" cy="19.5" r="12.1176471"></circle>
+                                <circle id="Oval" fill="#1E85DD" cx="19.8529412" cy="19.5" r="11.9705882"></circle>
+                                <circle id="Oval" fill="#1F85DD" cx="19.8529412" cy="19.5" r="11.8235294"></circle>
+                                <circle id="Oval" fill="#2086DD" cx="19.8529412" cy="19.5" r="11.6764706"></circle>
+                                <circle id="Oval" fill="#2186DE" cx="19.8529412" cy="19.5" r="11.5588235"></circle>
+                                <circle id="Oval" fill="#2287DE" cx="19.8529412" cy="19.5" r="11.4117647"></circle>
+                                <circle id="Oval" fill="#2387DE" cx="19.8529412" cy="19.5" r="11.2647059"></circle>
+                                <circle id="Oval" fill="#2487DE" cx="19.8529412" cy="19.5" r="11.1176471"></circle>
+                                <circle id="Oval" fill="#2588DF" cx="19.8529412" cy="19.5" r="10.9705882"></circle>
+                                <circle id="Oval" fill="#2688DF" cx="19.8529412" cy="19.5" r="10.8529412"></circle>
+                                <circle id="Oval" fill="#2789DF" cx="19.8529412" cy="19.5" r="10.7058824"></circle>
+                                <circle id="Oval" fill="#2889E0" cx="19.8529412" cy="19.5" r="10.5588235"></circle>
+                                <circle id="Oval" fill="#298AE0" cx="19.8529412" cy="19.5" r="10.4117647"></circle>
+                                <circle id="Oval" fill="#2A8AE0" cx="19.8529412" cy="19.5" r="10.2647059"></circle>
+                                <circle id="Oval" fill="#2B8AE0" cx="19.8529412" cy="19.5" r="10.1470588"></circle>
+                                <circle id="Oval" fill="#2C8BE1" cx="19.8529412" cy="19.5" r="10"></circle>
+                                <circle id="Oval" fill="#2D8BE1" cx="19.8529412" cy="19.5" r="9.85294118"></circle>
+                                <circle id="Oval" fill="#2E8CE1" cx="19.8529412" cy="19.5" r="9.70588235"></circle>
+                                <circle id="Oval" fill="#308CE2" cx="19.8529412" cy="19.5" r="9.55882353"></circle>
+                                <circle id="Oval" fill="#318DE2" cx="19.8529412" cy="19.5" r="9.44117647"></circle>
+                                <circle id="Oval" fill="#328DE2" cx="19.8529412" cy="19.5" r="9.29411765"></circle>
+                                <circle id="Oval" fill="#338EE3" cx="19.8529412" cy="19.5" r="9.14705882"></circle>
+                                <circle id="Oval" fill="#348EE3" cx="19.8529412" cy="19.5" r="9"></circle>
+                                <circle id="Oval" fill="#358EE3" cx="19.8529412" cy="19.5" r="8.85294118"></circle>
+                                <circle id="Oval" fill="#368FE3" cx="19.8529412" cy="19.5" r="8.70588235"></circle>
+                                <circle id="Oval" fill="#378FE4" cx="19.8529412" cy="19.5" r="8.58823529"></circle>
+                                <circle id="Oval" fill="#3890E4" cx="19.8529412" cy="19.5" r="8.44117647"></circle>
+                                <circle id="Oval" fill="#3990E4" cx="19.8529412" cy="19.5" r="8.29411765"></circle>
+                                <circle id="Oval" fill="#3A91E5" cx="19.8529412" cy="19.5" r="8.14705882"></circle>
+                                <circle id="Oval" fill="#3B91E5" cx="19.8529412" cy="19.5" r="8"></circle>
+                                <circle id="Oval" fill="#3C91E5" cx="19.8529412" cy="19.5" r="7.88235294"></circle>
+                                <circle id="Oval" fill="#3D92E5" cx="19.8529412" cy="19.5" r="7.73529412"></circle>
+                                <circle id="Oval" fill="#3E92E6" cx="19.8529412" cy="19.5" r="7.58823529"></circle>
+                                <circle id="Oval" fill="#3F93E6" cx="19.8529412" cy="19.5" r="7.44117647"></circle>
+                                <circle id="Oval" fill="#4093E6" cx="19.8529412" cy="19.5" r="7.29411765"></circle>
+                                <circle id="Oval" fill="#4194E7" cx="19.8529412" cy="19.5" r="7.17647059"></circle>
+                                <circle id="Oval" fill="#4294E7" cx="19.8529412" cy="19.5" r="7.02941176"></circle>
+                                <circle id="Oval" fill="#4394E7" cx="19.8529412" cy="19.5" r="6.88235294"></circle>
+                                <circle id="Oval" fill="#4495E7" cx="19.8529412" cy="19.5" r="6.73529412"></circle>
+                                <circle id="Oval" fill="#4595E8" cx="19.8529412" cy="19.5" r="6.58823529"></circle>
+                                <circle id="Oval" fill="#4696E8" cx="19.8529412" cy="19.5" r="6.47058824"></circle>
+                                <circle id="Oval" fill="#4796E8" cx="19.8529412" cy="19.5" r="6.32352941"></circle>
+                                <circle id="Oval" fill="#4897E9" cx="19.8529412" cy="19.5" r="6.17647059"></circle>
+                                <circle id="Oval" fill="#4997E9" cx="19.8529412" cy="19.5" r="6.02941176"></circle>
+                                <circle id="Oval" fill="#4A97E9" cx="19.8529412" cy="19.5" r="5.88235294"></circle>
+                                <circle id="Oval" fill="#4B98E9" cx="19.8529412" cy="19.5" r="5.73529412"></circle>
+                                <circle id="Oval" fill="#4C98EA" cx="19.8529412" cy="19.5" r="5.61764706"></circle>
+                                <circle id="Oval" fill="#4D99EA" cx="19.8529412" cy="19.5" r="5.47058824"></circle>
+                                <circle id="Oval" fill="#4E99EA" cx="19.8529412" cy="19.5" r="5.32352941"></circle>
+                                <circle id="Oval" fill="#4F9AEB" cx="19.8529412" cy="19.5" r="5.17647059"></circle>
+                                <circle id="Oval" fill="#509AEB" cx="19.8529412" cy="19.5" r="5.02941176"></circle>
+                                <circle id="Oval" fill="#519AEB" cx="19.8529412" cy="19.5" r="4.91176471"></circle>
+                                <circle id="Oval" fill="#529BEC" cx="19.8529412" cy="19.5" r="4.76470588"></circle>
+                                <circle id="Oval" fill="#539BEC" cx="19.8529412" cy="19.5" r="4.61764706"></circle>
+                                <circle id="Oval" fill="#549CEC" cx="19.8529412" cy="19.5" r="4.47058824"></circle>
+                                <circle id="Oval" fill="#559CEC" cx="19.8529412" cy="19.5" r="4.32352941"></circle>
+                                <circle id="Oval" fill="#569DED" cx="19.8529412" cy="19.5" r="4.20588235"></circle>
+                                <circle id="Oval" fill="#579DED" cx="19.8529412" cy="19.5" r="4.05882353"></circle>
+                                <circle id="Oval" fill="#589DED" cx="19.8529412" cy="19.5" r="3.91176471"></circle>
+                                <circle id="Oval" fill="#599EEE" cx="19.8529412" cy="19.5" r="3.76470588"></circle>
+                                <circle id="Oval" fill="#5A9EEE" cx="19.8529412" cy="19.5" r="3.61764706"></circle>
+                                <circle id="Oval" fill="#5B9FEE" cx="19.8529412" cy="19.5" r="3.47058824"></circle>
+                                <circle id="Oval" fill="#5C9FEE" cx="19.8529412" cy="19.5" r="3.35294118"></circle>
+                                <circle id="Oval" fill="#5DA0EF" cx="19.8529412" cy="19.5" r="3.20588235"></circle>
+                                <circle id="Oval" fill="#5EA0EF" cx="19.8529412" cy="19.5" r="3.05882353"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <path d="M2.94117647,73.2058824 L150,73.2058824" id="Shape" stroke="#000000"></path>
+        </g>
+    </g>
+</svg>

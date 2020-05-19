@@ -54,7 +54,7 @@ Behind the scenes, the following code is executed.
 
 ```csharp
 System.String fullString = new System.String("Hello World!");
-Console.WriteLine(shortenedString);
+Console.WriteLine(fullString);
 ```
 
 > [!NOTE]

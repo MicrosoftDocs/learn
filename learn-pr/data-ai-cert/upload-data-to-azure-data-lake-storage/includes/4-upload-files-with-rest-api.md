@@ -15,16 +15,16 @@ The first step in using the REST API is to register the application. Azure uses 
     > [!NOTE]
     > If you're using the new UI for this example, you might see slightly different terminology. For example, the **New application registration** button might be called **New registration** instead. 
 
-1. In the **New Application** blade, fill in the following details:
+1. In the **New Application** pane, fill in the following details:
    - **Name**: Enter a name for your application (for example, **data-uploader**).
    - **Application type**: Select **Web app / API**.
-   - **Sign-on URL**: Enter a local sign-on URL using your own domain suffix (e.g. \http://sample.contoso.com). This value identifies the app. You can change it later if you need to.
+   - **Sign-on URL**: Enter a local sign-on URL using your own domain suffix (e.g. `http://sample.contoso.com`). This value identifies the app. You can change it later if you need to.
 1. Select **Create** to create the app registration.
-1. On the **Registered app** blade, next to **Application ID**, copy the key and paste it in Notepad.
-1. Open the **Settings** blade, and go to **Owner**. Make a note of the owner account in Notepad. You can change this owner account to a preferred service account for the registered application.
-1. On the **Settings** blade, go to **Keys**. 
+1. On the **Registered app** pane, next to **Application ID**, copy the key and paste it in Notepad.
+1. Open the **Settings** pane, and go to **Owner**. Make a note of the owner account in Notepad. You can change this owner account to a preferred service account for the registered application.
+1. On the **Settings** pane, go to **Keys**. 
 
-    ![Screenshot showing the app registration and the Settings blade](../media/4-collect-details.png)
+    ![Screenshot showing the app registration and the Settings pane](../media/4-collect-details.png)
 
 1. In the **Key description** field, create a key by typing **DUKey**.
 
@@ -37,9 +37,9 @@ The first step in using the REST API is to register the application. Azure uses 
 1. Copy the key value into Notepad. 
 
     >[!IMPORTANT] 
-    > After you leave this blade, you can't retrieve the key value.**
+    > After you leave this pane, you can't retrieve the key value.**
 
-1. Close the **Application Registration** blade. 
+1. Close the **Application Registration** pane. 
 
 ## Grant permissions in Data Lake Storage
 

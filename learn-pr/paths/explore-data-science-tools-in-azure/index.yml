@@ -1,5 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.explore-data-science-tools-in-azure
+hidden: true
 metadata:
   title: Explore AI solution development with data science services in Azure
   description: Learn the tools available in Azure for data scientists to explore, analyze and process data with machine learning

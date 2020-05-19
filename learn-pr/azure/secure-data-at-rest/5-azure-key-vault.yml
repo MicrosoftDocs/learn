@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-data-at-rest.5-azure-key-vault
-title: Keep your keys and secrets safe using Azure Key Vault
+title: Keep your keys and secrets safe by using Azure Key Vault
 metadata:
-  title: Keep your keys and secrets safe using Azure Key Vault
-  description: Keep your keys and secrets safe using Azure Key Vault
+  title: Keep your keys and secrets safe by using Azure Key Vault
+  description: Keep your keys and secrets safe by using Azure Key Vault
   ms.date: 10/29/2019
   author: jboeshart
   ms.author: jaboes
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Your organization needs to be able to store secrets and also draw insights on how and when these secrets are accessed over time. Which Azure services could you use together to help you achieve this?
+  - content: Your organization needs to store secrets and draw insights on how and when these secrets are accessed over time. Which Azure services can you use together to help you achieve this?
     choices:
       - content: Use Azure Key Vault with Azure Disk Encryption.
         isCorrect: false
-        explanation:  Azure Disk Encryption is used to encrypt OS and data disk of your virtual machines in Azure. It is not used to audit who has accessed secrets over time.
+        explanation:  You use Azure Disk Encryption to encrypt OS and data disks for your virtual machines in Azure. You can't use it to audit who has accessed secrets over time.
       - content: Use Azure Key Vault with Azure Monitor.
         isCorrect: true
-        explanation: You can use Azure Key Vault with Azure Monitor and draw insights from Key Vault AuditEvent logs. 
+        explanation: You can use Azure Key Vault with Azure Monitor and draw insights from AuditEvent logs. 
       - content: Use Azure Key Vault with client-side encryption.
         isCorrect: false
-        explanation: Client-side encryption is not used to audit who has accessed secrets over time. Client-side encryption is used to encrypt data through a client application before it is stored in Azure. 
-  - content: You need to add a password to an Azure Key Vault that holds a few other passwords. What is the command you need to use to add another password?
+        explanation: You can't use client-side encryption to audit who has accessed secrets over time. You use client-side encryption to encrypt data through a client application before it's stored in Azure. 
+  - content: You need to add a password to a key vault that holds a few other passwords. What command should you use?
     choices:
       - content: Use the "az keyvault create" command.
         isCorrect: false
-        explanation: You would use this to create a key vault if one does not exist, not to add a secret to one that already exists.
+        explanation: You use this command to create a key vault if one doesn't exist, not to add a secret to one that already exists.
       - content: Use the "az keyvault password set" command.
         isCorrect: false
         explanation: An "az key vault password set" command does not exist. 
       - content: Use the "az keyvault secret set" command.
         isCorrect: true
-        explanation: This command will let you add a secret or update one. 
+        explanation: This command lets you add a secret or update one. 

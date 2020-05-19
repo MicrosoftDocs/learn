@@ -2,7 +2,7 @@
 uid: learn.azure.organize-blobs-properties-metadata
 metadata:
   title: Organize Azure storage blobs with properties and metadata
-  description: Properties and metadata can be used to organize Azure blob data. You can add code to apps, including ASP.NET Core apps, to retrieve and modify the properties and metadata.
+  description: Find out about Azure storage blob properties and metadata, how to organize blob data, and create an app with ASP.NET to retrieve metadata.
   ms.date: 04/26/2019
   author: rmcmurray
   ms.author: robmcm

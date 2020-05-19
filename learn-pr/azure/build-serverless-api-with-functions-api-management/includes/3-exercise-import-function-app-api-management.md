@@ -23,23 +23,23 @@ In this exercise, you will add an Azure Functions app to Azure API Management. L
 
     The `setup.sh` script creates the two function apps in the sandbox resource group that we've activated for this module. As the following graphic illustrates, each app hosts a single function - `OrderDetails` and `ProductDetails`. the script also sets up a storage account for  the functions. The functions both have URLs in the **azurewebsites.net** domain. The function names include random numbers for uniqueness. The script takes a few minutes to complete.
 
-    ![Results of the setup.sh script](../media/3-script-results.png)
+    ![Diagram illustrating the results of the setup.sh script and how the functions relate to the overall application's design.](../media/3-script-results.png)
 
 ## Test the product details function
 
 Now, let's test the ProductDetails function, to see how it behaves before we add it to API Management:
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
-1. Select **All resources**.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
 1. Choose the App Service whose name begins with **ProductFunction**. The Function Apps UI for this app opens in the portal.
 1. Under **Functions**, select **ProductDetails**, and then select **Test**, as highlighted in the following screenshot: 
 
-    ![Test the ProductDetails function](../media/3-test-product-details-function.png)
+    ![Screenshot of the ProductDetails function with a callout highlighting the ProductDetails function name on the left and the Test option on the right.](../media/3-test-product-details-function.png)
 1. In the **HTTP method** drop-down list, select **GET**, and then select **Add parameter**.
 1. In the **name** textbox, type *id* and in the **value** textbox, type *3*.
 1. Select **Run** and then examine the results in the **Output** box.
 
-    ![Test results from the ProductDetails function](../media/3-test-results.png)
+    ![Screenshot of the output of a panel which displays the result of testing the ProductDetails function.](../media/3-test-results.png)
 
     The output pane displays the details of a product in JSON format. You can also test the function with IDs 1 and 2 for different products.
 
@@ -82,6 +82,6 @@ You now have a functional product details API in the API Management instance tha
 1. In the **name** textbox, enter *id*.
 1. In the **value** textbox, enter *1*, and then select **Send**.
 
-    ![Testing the Product Details API](../media/3-complete-product-details-test.png)
+    ![Screenshot of the API Management tool while user is testing the Product Details API.  A callout highlights the parameter name and value fields.](../media/3-complete-product-details-test.png)
 
 1. In the **HTTP response**, notice that the details of a product have been returned in JSON format. Also notice the **HTTP request** was sent to a destination within the **azure-api.net** domain. This location is different to the **azurewebsites.net** domain where the original function app is hosted.

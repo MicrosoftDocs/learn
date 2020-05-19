@@ -5,8 +5,8 @@ metadata:
   title: Describe the application startup errors and azure app service diagnostics
   description: Describe the application startup errors and azure app service diagnostics
   ms.date: 06/21/2019
-  author: sowmyasubramaniam 
-  ms.author: sosubra 
+  author: patridge
+  ms.author: adpatrid 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -32,7 +32,7 @@ quiz:
     - content: "Alerts"
       isCorrect: false
       explanation: "Kudu console does not automatically generate alerts to monitor issues."
-    - content: "Automatic faliure detection"
+    - content: "Automatic failure detection"
       isCorrect: false
       explanation: "Automatic failure detection in web apps is not supported by Kudu console."
     - content: "Run git commands to diagnose issues."

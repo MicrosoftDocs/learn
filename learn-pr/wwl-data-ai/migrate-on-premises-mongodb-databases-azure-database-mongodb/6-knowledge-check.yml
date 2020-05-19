@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/31/2020
+  author: wwlpublish
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: "How do you share throughput between containers?"
+    choices:
+    - content: "Specify database throughput."
+      isCorrect: true
+      explanation: "By specifying throughput at the database level, the throughput is shared between the containers."
+    - content: "Specify container throughput."
+      isCorrect: false
+      explanation: "By specifying throughput at the database level, the throughput is shared between the containers."
+    - content: "Specify logical partition throughput."
+      isCorrect: false
+      explanation: "By specifying throughput at the database level, the throughput is shared between the containers."
+  - content: "You have decided to distribute your database over multiple regions to decrease latency for users. What is the effect on the availability SLA?"
+    choices:
+    - content: "It decreases to 99.9%."
+      isCorrect: false
+      explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
+    - content: "It remains at 99.99%."
+      isCorrect: false
+      explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
+    - content: "It increases to 99.999%."
+      isCorrect: true
+      explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
+  - content: "Database level throughput is most appropriate for most migrations, but you have identified that collection level throughput is most appropriate long term. How should you configure your throughput?"
+    choices:
+    - content: "Specify database throughput."
+      isCorrect: false
+      explanation: "Database-level throughput often seems more appropriate than collection-level throughput for migration scenarios, but you should consider that this setting cannot be modified after creation and, therefore, you should choose the most appropriate setting for the expected use of the database."
+    - content: "Specify collection throughput, but temporarily change to database throughput for the migration."
+      isCorrect: false
+      explanation: "Database-level throughput often seems more appropriate than collection-level throughput for migration scenarios, but you should consider that this setting cannot be modified after creation and, therefore, you should choose the most appropriate setting for the expected use of the database."
+    - content: "Specify collection throughput."
+      isCorrect: true
+      explanation: "Database-level throughput often seems more appropriate than collection-level throughput for migration scenarios, but you should consider that this setting cannot be modified after creation and, therefore, you should choose the most appropriate setting for the expected use of the database."
+  - content: "You need specific connection strings for your applications, using your security protocols. Where can you find this information?"
+    choices:
+    - content: "In your Cosmos DB account, in **Overview**."
+      isCorrect: false
+      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+    - content: "In your Cosmos DB account, in **Settings**, and then **Network**."
+      isCorrect: false
+      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+    - content: "In your Cosmos DB account, in **Settings**, and the **Connection String**."
+      isCorrect: true
+      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+  - content: "You have all your users in one region and need to maximize availability. How should you achieve this?"
+    choices:
+    - content: "Replicate data to at least two regions."
+      isCorrect: true
+      explanation: "To improve availability, you should consider having data in at least two regions even if all of your users are in one location."
+    - content: "Replicate data within your region."
+      isCorrect: false
+      explanation: "To improve availability, you should consider having data in at least two regions even if all of your users are in one location."
+    - content: "Have a single copy of your data and pay for the 99.999% availability SLA."
+      isCorrect: false
+      explanation: "To improve availability, you should consider having data in at least two regions even if all of your users are in one location."

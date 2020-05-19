@@ -4,7 +4,7 @@ title: Exercise - Run Terraform by using a remote state file and a service princ
 metadata:
   title: Exercise - Run Terraform by using a remote state file and a service principal
   description: Run a Terraform plan that uses a remote state file and a service principal.
-  ms.date: 11/07/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

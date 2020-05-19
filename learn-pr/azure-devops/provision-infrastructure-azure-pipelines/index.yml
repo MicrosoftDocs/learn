@@ -2,14 +2,14 @@
 uid: learn.azdo.provision-infrastructure-azure-pipelines
 metadata:
   title: Provision infrastructure in Azure Pipelines - Learn
-  description: Learn how infrastructure as code enables you to describe and automatically provision the infrastructure you need for your application.
-  ms.date: 11/07/2019
+  description: Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Provision infrastructure in Azure Pipelines
-summary: Learn how infrastructure as code enables you to describe and automatically provision the infrastructure you need for your application.
+summary: Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.
 abstract: |
   In this module, you will:
   - Learn what we mean by _infrastructure as code_ and why it's a best practice in DevOps.
@@ -19,10 +19,10 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 2.1
+  - .NET Core 3.1
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-devops/provision-infrastructure-azure-pipelines.svg
 levels:
 - intermediate
 roles:

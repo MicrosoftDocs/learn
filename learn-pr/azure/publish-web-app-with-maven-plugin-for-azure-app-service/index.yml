@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
+metadata:
+  title: Publish a web app to Azure by using the Maven Plugin for Azure App Service
+  description: Use the Maven plugin for Azure App Service to develop a Java web app and deploy the app to Azure.
+  ms.date: 03/10/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Publish a web app to Azure by using the Maven Plugin for Azure App Service
+summary: Use the Maven plugin for Azure App Service to develop a Java web app and deploy the app to Azure.
+abstract: | 
+  In this module, you will:
+  - Develop a Java web app
+  - Configure the Maven plugin for Azure App Service
+  - Deploy the app to Azure App Service using the Maven Plugin
+prerequisites: | 
+  - Experience writing web apps in Java
+  - Knowledge of building and deploying Java web apps with Maven
+iconUrl: /learn/achievements/publish-app-with-maven-plugin-for-azure-web-apps.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-app-service
+units:
+- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.introduction
+- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.create-java-web-app
+- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.exercise-create-java-web-app
+- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.deploy-web-app-azure
+- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.exercise-deploy-web-app-azure
+- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.exercise-redeploy-web-app-azure
+- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.authenticate-web-app-deployment
+- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.summary
+badge:
+  uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.badge

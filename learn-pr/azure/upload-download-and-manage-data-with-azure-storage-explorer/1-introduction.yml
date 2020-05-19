@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.1-introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 03/05/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

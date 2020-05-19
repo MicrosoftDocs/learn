@@ -2,10 +2,10 @@
 uid: learn-wwl.responsible-ai-governing-practices-government
 metadata:
   title: Identify governing practices for responsible AI in government
-  description: As AI becomes more prevalent, it’s imperative that governments have practices in place to ensure that it’s used responsibly. This starts with governments establishing their own guiding principles, then choosing and operationalizing a system of governance. We recognize that every government will have their own perspective on responsible AI, but we’re hopeful that our perspective will serve as a helpful starting point as they embark on their own AI journey.
+  description: Learn guiding principles for governments, and how to choose and operationalize a governance system to responsibly and successfully use AI in the public sector.
   ms.date: 10/01/2019
-  author: RWortmanMorris
-  ms.author: rawortma
+  author: Adriamen
+  ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: barlan

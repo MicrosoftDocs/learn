@@ -1,0 +1,68 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.3-evolution
+title: The evolution of cloud computing
+metadata:
+  title: Evolution of cloud computing
+  description: An overview of the evolution of cloud computing.
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-evolution.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "When did the general ideas about cloud computing and utility computing emerge?"
+    choices:
+    - content: "Between 1950 and 1966"
+      isCorrect: true
+      explanation: "Correct! The idea of utility computing emerged in the 1950s and 1960s when mainframes were prevalent and expensive, and computer engineers were figuring out ways to share a mainframe among multiple users (such as time sharing). The idea of utility computing is mainly attributed to Professor John McCarthy in the 1960s."
+    - content: "Between 1995 and 2000"
+      isCorrect: false
+      explanation: "That's not quite right. The ideas behind utility computing have been around since much earlier than that."
+    - content: "Between 2006 and the present"
+      isCorrect: false
+      explanation: "That's not quite right. The ideas behind utility computing have been around since much earlier than that."
+
+  - content: "Which technology enables multiple servers to be consolidated into the same physical server?"
+    choices:
+    - content: "Internet technologies"
+      isCorrect: false
+      explanation: "That's not quite right. The internet does enable fast, efficient communication between connected devices, but it's not the primary technology that enables servers to be consolidated. What technology enables an entire server to be encapsulated as an image?"
+    - content: "Virtualization"
+      isCorrect: true
+      explanation: "Correct! Virtualization is the primary enabler for server consolidation."
+    - content: "Grid computing"
+      isCorrect: false
+      explanation: "That's not quite right. Grid computing consolidates a large number of computers as a distributed system to allow the execution of large compute problems. What technology enables an entire server to be encapsulated as an image?"
+
+  - content: "What are the three enabling technologies of cloud computing?"
+    choices:
+    - content: "Networking, web 2.0, and virtualization"
+      isCorrect: true
+      explanation: "Correct! Networking, web 2.0, and virtualization are all enabling technologies for cloud computing."
+    - content: "The internet, large disk sizes, and Java"
+      isCorrect: false
+      explanation: "The internet is crucial for cloud computing, but bigger disk sizes and Java weren't the crucial developments."
+
+  - content: "Advances in which area led to faster communication, enabling the cloud computing model of leasing compute resources from a remote datacenter over the internet?"
+    choices:
+    - content: "Utility computing"
+      isCorrect: false
+      explanation: "Incorrect. The contribution of utility computing is not faster communication."
+    - content: "Networking"
+      isCorrect: true
+      explanation: "Correct! Advances in networking led to faster communication, which made distributed applications practical and an important part of cloud computing today."
+    - content: "Programming models"
+      isCorrect: false
+      explanation: "Incorrect. The contribution of utility computing is not faster communication."
+    - content: "Virtualization"
+      isCorrect: false
+      explanation: "Incorrect. The contribution of virtualization is not faster communication."
+    - content: "Distributed/parallel computing"
+      isCorrect: false
+      explanation: "Incorrect. The contribution of distributed/parallel computing is not faster communication."

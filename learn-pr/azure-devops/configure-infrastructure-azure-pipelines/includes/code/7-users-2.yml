@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Add service accounts
+    user:
+      name: "{{ item }}"
+      comment: service account
+      create_home: no
+      shell: /usr/sbin/nologin
+      state: present
+    loop:
+    - testuser1
+    - testuser2

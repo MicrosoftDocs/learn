@@ -4,12 +4,11 @@ title: Introduction
 metadata:
   title: Create a free Azure account
   description: Create a free Azure account
-  ms.date: 1/1/2019
+  ms.date: 11/26/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

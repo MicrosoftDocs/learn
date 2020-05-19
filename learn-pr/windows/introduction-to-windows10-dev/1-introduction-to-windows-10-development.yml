@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+title: Introduction to Windows 10 development
+uid: learn-windows.introduction-w10-dev.1-introduction-to-windows-10-development
+metadata:
+  title: Introduction to Windows 10 development
+  description: TBD
+  ms.date: 12/10/18
+  author: JohnKennedy 
+  ms.author: jken
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+  
+durationInMinutes: 10
+content: |
+    [!include[](includes/1-introduction-to-windows-10-development.md)]
+ 

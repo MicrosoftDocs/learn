@@ -2,7 +2,7 @@
 uid: learn.manage-secrets-with-azure-key-vault
 metadata:
   title: Manage secrets in your server apps with Azure Key Vault
-  description: In this module, you’ll learn how to create a Key Vault and store a secret in it. You’ll see how to configure a web application to use a managed identity to enable secure access to the vault without any configuration, and finally you’ll implement an ASP.NET Core web application that retrieves secrets from the vault.
+  description: Learn how to create an Azure Key Vault to store secret values and how to enable secure access to the vault.
   ms.date: 09/24/2018
   author: nickwalkmsft
   ms.author: nickwalk

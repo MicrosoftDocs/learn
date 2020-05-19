@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics
+metadata:
+  title: Economics of cloud computing
+  description: Carnegie Mellon University's Cloud Developer course. Learn how developers pay to use the cloud and how cloud providers are able to charge for their services. Get an overview of how the cloud is kept secure.
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Economics of cloud computing
+summary: Learn how developers pay to use the cloud and how cloud providers are able to charge for their services. Get an overview of how the cloud is kept secure.
+abstract: | 
+  In this module, you will:
+  - Discuss some of the advantages and disadvantages of the cloud paradigm
+  - Articulate the economic benefits as well as the issues/risks of the cloud paradigm for users
+  - Articulate the economic benefits as well as the issues/risks of the cloud paradigm for cloud service providers
+  - Define service level agreements (SLAs) and service level objectives (SLOs), and illustrate their importance in cloud computing
+  - Enumerate and explain various threats in cloud security
+  - Enumerate and explain various controls in cloud security
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+iconUrl: /learn/achievements/cmu-cloud-developer/economics-of-the-cloud.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.0-introduction
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.1-pros-cons
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.2-economics-users
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.3-economics-providers
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.4-sla
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.5-security-threats
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.6-security-control-audit
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.7-summary
+badge:
+  uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.badge

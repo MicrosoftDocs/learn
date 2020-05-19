@@ -10,7 +10,10 @@ Resource Manager templates are also _composable_. As you build out your deployme
 
 Think about the analysts you support at your financial services company. As you build your library of Resource Manager templates, you'll be able to assemble deployments for each analyst much more quickly. After each financial model completes, you need to run only a single Azure CLI command to tear down the deployment.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+<!---[!include[](../../../includes/azure-sandbox-cleanup.md)]--->
+
+When you're working in your own subscription, it's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.
 
 ## Learn more
 

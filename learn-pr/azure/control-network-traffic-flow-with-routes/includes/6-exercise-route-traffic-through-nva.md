@@ -6,7 +6,7 @@ Now that you've created the network virtual appliance (NVA) and virtual machines
 
 The next steps deploy a virtual machine into the public and private subnets:
 
-1. Open the Visual Studio Code editor and create a file named cloud-init.txt.
+1. Open the Cloud Shell editor and create a file named cloud-init.txt.
 
     ```bash
     code cloud-init.txt
@@ -130,4 +130,4 @@ The final steps use the Linux `traceroute` utility to show how traffic is routed
 
    ![Route from private to public](../media/6-private-public-route.svg)
 
-You've now configured routing between subnets to direct traffic from the public internet through the **dmzsubnet** subnet before it reaches the private subnet. In the **dmzsubnet** subnet, you added a virtual machine that acts as an NVA. You can implement logic in this NVA to detect potentially malicious requests and block them before they reach their intended targets.
+You've now configured routing between subnets to direct traffic from the public internet through the **dmzsubnet** subnet before it reaches the private subnet. In the **dmzsubnet** subnet, you added a virtual machine that acts as an NVA. You can configure this NVA to detect potentially malicious requests and block them before they reach their intended targets.

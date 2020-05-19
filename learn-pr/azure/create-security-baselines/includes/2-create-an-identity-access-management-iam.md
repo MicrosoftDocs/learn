@@ -27,7 +27,7 @@ Enable it for privileged and non-privileged users.
 1. Select **Multi-Factor Authentication**. This will open a new window.
 1. Ensure that **Multi-Factor Authentication Status** is **Enabled** for all users who are co-Administrators, Owners, or Contributors
 
-    ![Screenshot of the Azure portal showing the Multi-Factor Authentication option in the AAD blade](../media/2-mfa-ad-portal.png)
+    ![Screenshot of the Azure portal showing the Multi-Factor Authentication option in the AAD pane](../media/2-mfa-ad-portal.png)
 
 ### Block remembering MFA on trusted devices - Level 2
 
@@ -37,7 +37,7 @@ Remember Multi-Factor Authentication feature for devices and browsers that are t
 1. On the left, select **Azure Active Directory** > **Users** > **All users**.
 1. Select **Multi-Factor Authentication**.
 1. Select **users**, then click **Manage users settings**.
-1. Ensure that **Restore multi-factoe authentication on all remembered devices** is **Selected**.
+1. Ensure that **Restore multi-factor authentication on all remembered devices** is **Selected**.
 
     ![Screenshot of the Azure portal showing the Multi-Factor Authentication option to Manage user settings](../media/2-block-remembering-mfa-on-trusted-devices.png)
 
@@ -121,7 +121,7 @@ Require administrators to register custom applications.
 1. Sign in to the Azure portal.
 1. On the left, select **Azure Active Directory** > **Users**
 1. Go to **User settings**.
-1. Ensure that **USer can register applications** is set to **No**.
+1. Ensure that **User can register applications** is set to **No**.
 
     ![Screenshot showing the Azure portal in the AAD users section showing app registration turned off](../media/2-app-registrations.png)
 

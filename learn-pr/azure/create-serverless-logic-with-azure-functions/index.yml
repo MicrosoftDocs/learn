@@ -23,6 +23,7 @@ levels:
 roles:
 - developer
 - solution-architect
+- student
 products:
 - azure
 - azure-functions

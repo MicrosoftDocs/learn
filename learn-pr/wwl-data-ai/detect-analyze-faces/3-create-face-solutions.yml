@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-analyze-faces.exercise
+title: Exercise - Detect and analyze faces with the Face service
+metadata:
+  title: Detect and analyze faces with the Face service
+  description: "Get hands-on with the Face service and use it to detect and analyze faces in images."
+  ms.date: 04/24/2020
+  author: benjiang
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-create-face-solutions.md)]

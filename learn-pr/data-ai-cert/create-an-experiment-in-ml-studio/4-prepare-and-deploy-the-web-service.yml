@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.create-an-experiment-in-ml-studio.prepare-and-deploy-the-web-service
-title: Prepare and deploy the experiment
+title: Exercise - Prepare and deploy the experiment
 metadata:
-  title: Prepare and deploy an experiment in Azure Machine Learning Studio
+  title: Exercise - Prepare and deploy an experiment in Azure Machine Learning Studio
   description: Prepare and deploy an experiment as a web service in Azure Machine Learning Studio
   ms.date: 12/12/2018
   author: gerryaobrien

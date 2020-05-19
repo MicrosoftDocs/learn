@@ -43,6 +43,6 @@ Now that our second WebJob is implemented, we'll publish the application one mor
 
 Now that both WebJobs are published, let's confirm that the new WebJob is working properly.
 
-1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), click **All resources**, and then navigate to the storage account.
+1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), search for and select the storage account.
 1. In the navigation menu, select **Queues**, then select the **stockchecks** queue. You'll see that the queue is now empty, or nearly empty. The new WebJob is processing all messages that reach the queue and writing new data out to blob storage.
 1. Navigate back to the storage account, then use the navigation menu to select **Blobs**. Select the **confirmations** container from the list. Each blob shown in the list is output from the WebJob.

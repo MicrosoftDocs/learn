@@ -6,18 +6,18 @@ In this unit, you'll use Visual Studio Code to place the code in a local Git rep
 
 1. Create a folder named **factbot** in the location of your choice on your hard disk to hold the bot's source code.
 
-1. Return to the Azure portal in the browser and find the resource group created using the search box at the top, or the **Resource groups** section in the left-hand sidebar.
+1. In the Azure portal, search for and select the resource group you created.
 
 1. Locate and select the Web App Bot you created earlier.
 
 1. Select **Build** in the menu on the left, then select **Download Bot source code** to prepare a zip file containing the bot's source code.
 
-    ![Screenshot showing the Build > Download Bot source code steps in the Azure portal for the Web app bot](../media/4-download-sourcecode.png)
+    ![Screenshot showing the Build > Download Bot source code steps in the Azure portal for the Web app bot.](../media/4-download-sourcecode.png)
 
 1. The portal will take a few minutes to zip up the code.
 1. When complete, the portal displays a **Download Bot source code** button similar to the following screenshot. 
 
-    ![Download Bot source dialog](../media/4-download-bot-source.png)
+    ![Screenshot of dialog with a button to Download Bot source code.](../media/4-download-bot-source.png)
 
 1. Select **Download Bot source code** to download the source as a zip file to your local machine.
 1. When the download is complete, extract the contents of the **.zip** file to the **factbot** folder that you created on your local hard disk.
@@ -26,10 +26,10 @@ In this unit, you'll use Visual Studio Code to place the code in a local Git rep
 
 1. Return to the Azure portal in the browser.
 
-1. In the Web App Bot's Build blade in the Azure portal, select the **Publish updates automatically to Azure with Continuous Deployment** link under the **Publish** area in the main view. This is shown in the following screenshot. 
+1. In the Web App Bot's Build pane in the Azure portal, select the **Publish updates automatically to Azure with Continuous Deployment** link under the **Publish** area in the main view. This is shown in the following screenshot. 
 
 
-    ![Bot's Build user interface with the Publish link highlighted](../media/4-publish-ui.png)
+    ![Screenshot of bot's Build user interface with the Publish link highlighted.](../media/4-publish-ui.png)
 
 1. In the **Deployment Center** panel, select **Local Git** as the deployment source and click **Continue**.
 
@@ -39,7 +39,7 @@ In this unit, you'll use Visual Studio Code to place the code in a local Git rep
 
 1. Enter a username and password (must be 10+ characters) and click **Save Credentials**. Take note of this username and password.
 
-    ![Screenshot of the Azure portal showing the new bot App Service blade displaying the Deployment credentials screen with the Deployment credentials menu item and Save button highlighted.](../media/4-portal-enter-ci-creds.png)
+    ![Screenshot of the bot App Service pane displaying the Deployment credentials screen.](../media/4-portal-enter-ci-creds.png)
 
 1. Navigate back to the web app bot configuration and select **All App service settings** in the menu on the left. This will display the underlying web app your bot is hosted in.
 
@@ -55,7 +55,7 @@ We are going to use Visual Studio Code for this section which has an integrated 
 
 1. Select the **Initialize Repository** icon at the top (on the right side of the **SOURCE CONTROL** title).
 
-   ![Screenshot of Visual Studio Code with the Initialize Respository icon highlighted.](../media/4-vs-vode-init-repo.png)
+   :::image type="content" source="../media/4-vs-vode-init-repo.png" alt-text="Screenshot of Visual Studio Code with the Initialize Repository icon highlighted." loc-scope="vs-code":::
 
 1. Select the **Initialize Repository** button in the dialog.
 

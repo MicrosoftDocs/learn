@@ -4,13 +4,12 @@ title: Ready
 metadata:
   title: Ready
   description: Ready
-  ms.date: 10/18/2019
+  ms.date: 11/13/2019
   author: wwlpublish
   ms.author: a-drapos
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-
 durationInMinutes: 8
 content: |
   [!include[](includes/5-ready.md)]

@@ -4,12 +4,11 @@ title: Exercise - Predict and optimize with Cost Management and Azure Advisor
 metadata:
   title: Exercise - Predict and optimize with Cost Management and Azure Advisor 
   description: In this unit, we'll discuss how to predict and optimize with Cost Management and Azure Advisor
-  ms.date: 09/24/2018
+  ms.date: 03/31/2020
   author: patridge
   ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
   [!include[](includes/3-predict-and-optimize-with-cost-management-and-advisor.md)]
@@ -20,13 +19,13 @@ quiz:
     - content: "Azure Advisor provides recommendations for _________."
       choices:
       - content: "Costs only"
-        explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
         isCorrect: false
-      - content: "High availability, security, performance, and cost"
-        explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+      - content: "High availability, security, performance, operational excellence, and cost"
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
         isCorrect: true
       - content: "High availability, performance, and cost"
-        explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
         isCorrect: false
     - content: "Azure Cost Management allows you to _________."
       choices:
