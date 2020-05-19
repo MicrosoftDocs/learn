@@ -8,7 +8,7 @@ Go to [**https://shell.azure.com**](https://shell.azure.com)
 You also need to add the Azure IoT extension to the cloud shell instance Azure CLI using the following command.
 
 ```azurecli
-az extension add --name azure-cli-iot-ext
+az extension add --name azure-iot
 ```
 
 ![An illustration is showing that adding azurecli extension.](../media/cli-iot-ext.png)
