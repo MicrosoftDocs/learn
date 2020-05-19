@@ -1,37 +1,3 @@
-``` {.python}
-from datascience import *
-%matplotlib inline
-path_data = '../../../../data/'
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-```
-
-``` {.python}
-
-def standard_units(any_numbers):
-    "Convert any array of numbers to standard units."
-    return (any_numbers - np.mean(any_numbers))/np.std(any_numbers)  
-
-def correlation(t, x, y):
-    return np.mean(standard_units(t.column(x))*standard_units(t.column(y)))
-
-def slope(table, x, y):
-    r = correlation(table, x, y)
-    return r * np.std(table.column(y))/np.std(table.column(x))
-
-def intercept(table, x, y):
-    a = slope(table, x, y)
-    return np.mean(table.column(y)) - a * np.mean(table.column(x))
-
-def fit(table, x, y):
-    """Return the height of the regression line at each x value."""
-    a = slope(table, x, y)
-    b = intercept(table, x, y)
-    return a * table.column(x) + b
-```
-
-
 In an earlier section, we developed formulas for the slope and intercept
 of the regression line through a *football shaped* scatter diagram. It
 turns out that the slope and intercept of the least squares line have
@@ -51,117 +17,36 @@ Strength was measured by the biggest amount (in kilograms) that the
 athlete lifted in the "1RM power clean" in the pre-season. The distance
 (in meters) was the athlete's personal best.
 
-``` {.python}
+``` python
 shotput = Table.read_table(path_data + 'shotput.csv')
 ```
 
-``` {.python}
+``` python
 shotput
 ```
 
-<table border="1" class="dataframe">
-<thead>
-<tr>
-<th>
-Weight Lifted
-</th>
-<th>
-Shot Put Distance
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-37.5
-</td>
-<td>
-6.4
-</td>
-</tr>
-<tr>
-<td>
-51.5
-</td>
-<td>
-10.2
-</td>
-</tr>
-<tr>
-<td>
-61.3
-</td>
-<td>
-12.4
-</td>
-</tr>
-<tr>
-<td>
-61.3
-</td>
-<td>
-13
-</td>
-</tr>
-<tr>
-<td>
-63.6
-</td>
-<td>
-13.2
-</td>
-</tr>
-<tr>
-<td>
-66.1
-</td>
-<td>
-13
-</td>
-</tr>
-<tr>
-<td>
-70
-</td>
-<td>
-12.7
-</td>
-</tr>
-<tr>
-<td>
-92.7
-</td>
-<td>
-13.9
-</td>
-</tr>
-<tr>
-<td>
-90.5
-</td>
-<td>
-15.5
-</td>
-</tr>
-<tr>
-<td>
-90.5
-</td>
-<td>
-15.8
-</td>
-</tr>
-</tbody>
-</table>
-<p>
-... (18 rows omitted)
-</p>
+``` output
+| Weight Lifted | Shot Put Distance |
+|---------------|-------------------|
+| 37.5          | 6.4               |
+| 51.5          | 10.2              |
+| 61.3          | 12.4              |
+| 61.3          | 13                |
+| 63.6          | 13.2              |
+| 66.1          | 13                |
+| 70            | 12.7              |
+| 92.7          | 13.9              |
+| 90.5          | 15.5              |
+| 90.5          | 15.8              |  
 
-``` {.python}
+... (18 rows omitted)
+```
+
+``` python
 shotput.scatter('Weight Lifted')
 ```
 
-![png](../media/79-least-squares-regression-5-0.png)
+![regression example](../media/79-least-squares-regression-5-0.png)
 
 That's not a football shaped scatter plot. In fact, it seems to have a
 slight non-linear component. But if we insist on using a straight line
@@ -171,17 +56,21 @@ straight lines.
 Our formulas for the slope and intercept of the regression line, derived
 for football shaped scatter plots, give the following values.
 
-``` {.python}
+``` python
 slope(shotput, 'Weight Lifted', 'Shot Put Distance')
 ```
 
+``` output
 0.09834382159781997
+```
 
-``` {.python}
+``` python
 intercept(shotput, 'Weight Lifted', 'Shot Put Distance')
 ```
 
+``` output
 5.959629098373952
+```
 
 Does it still make sense to use these formulas even though the scatter
 plot isn't football shaped? We can answer this by finding the slope and
@@ -192,7 +81,7 @@ slope and intercept as arguments and return the corresponding mse. Then
 `minimize` applied to `shotput_linear_mse` will return the best slope
 and intercept.
 
-``` {.python}
+``` python
 def shotput_linear_mse(any_slope, any_intercept):
     x = shotput.column('Weight Lifted')
     y = shotput.column('Shot Put Distance')
@@ -200,11 +89,13 @@ def shotput_linear_mse(any_slope, any_intercept):
     return np.mean((y - fitted) ** 2)
 ```
 
-``` {.python}
+``` python
 minimize(shotput_linear_mse)
 ```
 
+``` output
 array(\[0.09834382, 5.95962911\])
+```
 
 These values are the same as those we got by using our formulas. To
 summarize:
@@ -223,14 +114,14 @@ $$
 \mbox{average of }y ~-~ \mbox{slope} \cdot \mbox{average of }x
 $$
 
-``` {.python}
+``` python
 fitted = fit(shotput, 'Weight Lifted', 'Shot Put Distance')
 shotput.with_column('Best Straight Line', fitted).scatter('Weight Lifted')
 ```
 
-![png](../media/79-least-squares-regression-13-0.png)
+![regression example](../media/79-least-squares-regression-13-0.png)
 
-### Nonlinear Regression
+### Nonlinear regression
 
 The graph above reinforces our earlier observation that the scatter plot
 is a bit curved. So it is better to fit a curve than a straight line.
@@ -264,7 +155,7 @@ The function is called `shotput_quadratic_mse`. Notice that the
 definition is analogous to that of `lw_mse`, except that the fitted
 values are based on a quadratic function instead of linear.
 
-``` {.python}
+``` python
 def shotput_quadratic_mse(a, b, c):
     x = shotput.column('Weight Lifted')
     y = shotput.column('Shot Put Distance')
@@ -275,12 +166,14 @@ def shotput_quadratic_mse(a, b, c):
 We can now use `minimize` just as before to find the constants that
 minimize the mean squared error.
 
-``` {.python}
+``` python
 best = minimize(shotput_quadratic_mse)
 best
 ```
 
+``` output
 array(\[-1.04004838e-03, 2.82708045e-01, -1.53182115e+00\])
+```
 
 Our prediction of the shot put distance for an athlete who lifts $x$
 kilograms is about $$
@@ -289,23 +182,25 @@ $$ meters. For example, if the athlete can lift 100 kilograms, the
 predicted distance is 16.33 meters. On the scatter plot, that's near the
 center of a vertical strip around 100 kilograms.
 
-``` {.python}
+``` python
 (-0.00104)*(100**2) + 0.2827*100 - 1.5318
 ```
 
+``` output
 16.3382
+```
 
 Here are the predictions for all the values of `Weight Lifted`. You can
 see that they go through the center of the scatter plot, to a rough
 approximation.
 
-``` {.python}
+``` python
 x = shotput.column(0)
 shotput_fit = best.item(0)*(x**2) + best.item(1)*x + best.item(2)
 ```
 
-``` {.python}
+``` python
 shotput.with_column('Best Quadratic Curve', shotput_fit).scatter(0)
 ```
 
-![png](../media/79-least-squares-regression-23-0.png)
+![regression example](../media/79-least-squares-regression-23-0.png)

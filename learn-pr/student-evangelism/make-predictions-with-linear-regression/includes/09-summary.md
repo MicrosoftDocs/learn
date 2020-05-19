@@ -1,4 +1,4 @@
-In this module, we studied one of the most commonly used ways of predicting the value of one variable based on the value of another – Linear Regression – and studied the concept of correlation.
+In this module, we studied one of the most commonly used ways of predicting the value of one variable based on the value of another—Linear Regression—and studied the concept of correlation. 
 
 We have covered much ground in this module and here are some of the topics you did in the module.
 
