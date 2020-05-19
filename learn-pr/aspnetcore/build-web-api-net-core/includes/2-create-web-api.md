@@ -60,7 +60,7 @@ The preceding command installs a specific version of the .NET Core SDK in the Az
 1. Run the following .NET Core CLI command in the command shell:
 
     ```dotnetcli
-    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+    dotnet ./bin/Debug/netcoreapp3.1/ContosoPets.Api.dll \
         > ContosoPets.Api.log &
     ```
 
@@ -95,19 +95,19 @@ The preceding command installs a specific version of the .NET Core SDK in the Az
 
     ```json
     [
-        {
-            "date": "2019-10-09T21:27:41.3813473+00:00",
-            "temperatureC": 24,
-            "temperatureF": 75,
-            "summary": "Bracing"
-        },
-        {
-            "date": "2019-10-10T21:27:41.3816138+00:00",
-            "temperatureC": 14,
-            "temperatureF": 57,
-            "summary": "Sweltering"
-        },
-        // ...
+      {
+        "date": "2020-05-19T21:18:21.0596135+00:00",
+        "temperatureC": 18,
+        "temperatureF": 64,
+        "summary": "Bracing"
+      },
+      {
+        "date": "2020-05-20T21:18:21.0599683+00:00",
+        "temperatureC": 27,
+        "temperatureF": 80,
+        "summary": "Hot"
+      },
+      // ...
     ]
     ```
 
