@@ -48,4 +48,4 @@ quiz:
           explanation: 'Incorrect.'
         - content: 'No, since the patients in the study already have malaria'
           isCorrect: true
-          explanation: 'We are able to establish causality because it's a randomized controlled experiment. A much larger proportion recovered from malaria than among those who took the placebo. This statement indicates that there is a significant difference--greater than the difference observed if there was hypothetically no causation, between those who took the drug and those who took the pill. Also, the patients already have malaria, so the mosquito nets do not act as confounding variables.'
+          explanation: 'We are able to establish causality because it’s a randomized controlled experiment. A much larger proportion recovered from malaria than among those who took the placebo. This statement indicates that there is a significant difference--greater than the difference observed if there was hypothetically no causation, between those who took the drug and those who took the pill. Also, the patients already have malaria, so the mosquito nets do not act as confounding variables.'
