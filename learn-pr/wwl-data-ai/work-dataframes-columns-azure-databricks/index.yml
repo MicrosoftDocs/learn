@@ -16,7 +16,8 @@ abstract: |
   - Understand the use of the Column Class
   - Sort and filter a DataFrame based on Column Values
   - Use collect() and take() to return records from a Dataframe to the driver of the cluster
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

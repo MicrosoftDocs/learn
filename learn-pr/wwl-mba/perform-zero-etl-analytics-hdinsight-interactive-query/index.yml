@@ -24,7 +24,7 @@ prerequisites: |
   - Understand the Azure storage options
   - Understand the Azure compute options
   - Installation of Power BI desktop to create a dashboard
-iconUrl: /learn/achievements/learn-pr/achievements/perform-zero-etl-analytics-with-hdinsights-interactive-query.svg
+iconUrl: /learn/achievements/perform-zero-etl-analytics-with-hdinsights-interactive-query.svg
 levels:
 - beginner
 roles:
