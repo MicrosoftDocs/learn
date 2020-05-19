@@ -3,7 +3,7 @@ uid: learn.wwl.create-regression-model-azure-machine-learning-designer
 metadata:
   title: Create a Regression Model with Azure Machine Learning designer
   description: "Regression is a supervised machine learning technique used to predict numeric values. Learn how to create regression models using Azure Machine Learning designer."
-  ms.date: 03/18/2020
+  ms.date: 05/15/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

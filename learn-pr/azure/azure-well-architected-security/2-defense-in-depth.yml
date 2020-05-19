@@ -1,0 +1,34 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-security.2-defense-in-depth
+title: Defense in depth
+metadata:
+  title: Defense in depth
+  description: In this unit we'll discuss how to practice defense in depth
+  ms.date: 05/19/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-defense-in-depth.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'True or false: *defense in depth* is a strategy aimed to protect you against attacks attempting to gain access to your information?'
+    choices:
+    - content: 'True'
+      isCorrect: true
+      explanation: '*Defense in depth* is a layered system that provides protection from unauthorized access. If one layer is breached, there is another layer in place to prevent further exposure.'
+    - content: 'False'
+      isCorrect: false
+      explanation: '*Defense in depth* is a layered system that provides protection from unauthorized access. If one layer is breached, there is another layer in place to prevent further exposure.'
+
+  - content: 'True or false: by moving to the cloud, my architecture is fully secure and I can hand off all security responsibilities to my cloud provider?'
+    choices:
+    - content: 'True'
+      isCorrect: false
+      explanation: 'Moving to the cloud does offload some responsibilities to the cloud provider, but a model of shared responsibility is still in effect.'
+    - content: 'False'
+      isCorrect: true
+      explanation: 'Moving to the cloud does offload some responsibilities to the cloud provider, but a model of shared responsibility is still in effect.'

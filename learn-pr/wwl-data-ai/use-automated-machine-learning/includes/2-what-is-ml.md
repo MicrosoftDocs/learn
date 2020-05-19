@@ -34,3 +34,21 @@ In the Adventure Works bicycle rental example, you're looking for a function tha
 Unsupervised machine learning models also predict a label based on features, but this time there are no known label values in the training dataset - the function just identifies similarities between items based on their features.
 
 The most common kind of unsupervised machine learning model is a **Clustering** model, which attempts to separate items into a specified number of groups, or *clusters*, based on similarity of features.
+
+## Typical machine learning tasks
+
+Machine learning is typically performed within the context of a larger *data science* process. The specific details of this process can vary between organizations and individual data scientists, but the process is usually iterative and involves the following tasks:
+
+- **Data Ingestion** - data is collected from various sources and made available to data scientists to work with.
+- **Data exploration** - data scientists analyze the data, often using statistical metrics and visualizations to understand relationships between features and labels.
+- **Data preprocessing** (sometimes referred to as *featurization*) - data is prepared for modeling using techniques such as:
+    - **Feature selection** - features that are considered most likely to help predict the label (or separate the data well when clustering) are identified for use in model training - others are discarded.
+    - **Feature engineering** - New features are derived from existing features - for example by splitting a date field into separate day, month, and year features.
+    - **Data cleansing** - Missing values, outliers, and errors are mitigated - sometimes by replacing them with default or interpolated values, sometimes by discarding rows from the dataset.
+    - **Data normalization** - Numeric features on different scales are often normalized to the same scale so that features with large values don't dominate model training.
+    - **Categorical encoding** - features that are *categorical* (in  other words, they represent a category rather than a numeric value) are encoded as numeric indicators.
+- **Model training and evaluation** - An appropriate algorithm is applied to a subset of the data to *fit* it to a model (in other words, determine a function that will be applied to the features). Another subset is then used to evaluate the trained model against an appropriate *evaluation metric*, which measures how well the model predicts.
+- **Model Deployment** - The trained model is deployed as a service that applications can use to infer predictions from new feature data.
+- **Model Management** - The model is documented and stored, and iteratively retrained with new data to improve its predictive performance.
+
+As you can see, machine learning involves a lot of work, much of it time-consuming. In the subsequent units in this module, you'll learn how Azure Machine Learning can help simplify some of the tasks and reduce the time it takes to prepare data, train a model, and deploy a predictive service.
