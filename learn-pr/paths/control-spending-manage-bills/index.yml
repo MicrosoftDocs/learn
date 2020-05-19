@@ -27,7 +27,7 @@ products:
 - azure-cost-management
 - azure-advisor
 modules:
-- learn.design-for-efficiency-and-operations
+- learn.azure-well-architected-cost-optimization
 - learn.predict-costs-and-optimize-spending
 - learn.azure.analyze-costs-create-budgets-azure-cost-management
 trophy:

@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.azure.publish-static-web-app-and-api
+metadata:
+  title: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps
+  description: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps
+  ms.date: 05/08/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps
+summary: Automatically deploy and update a static web application and its API from a GitHub repository.
+abstract: |
+  In this module, you will:
+    - Choose an existing web app project with either Angular, React, Svelte or Vue
+    - Create an API for the app with Azure Functions
+    - Run the application locally
+    - Publish the app and its API to Azure Static Web Apps
+prerequisites: |
+  - Familiarity with one of Angular, React, Svelte, or Vue
+  - Beginner-level experience with Azure Functions
+  - A GitHub account
+  - [Visual Studio Code](https://code.visualstudio.com/) installed
+  - The [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
+iconUrl: /learn/achievements/publish-static-web-app-and-api.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure
+  - azure-functions
+  - azure-app-service
+  - azure-app-service-web
+units:
+  - learn.azure.publish-static-web-app-and-api.1-introduction
+  - learn.azure.publish-static-web-app-and-api.2-exercise-get-started
+  - learn.azure.publish-static-web-app-and-api.3-static-web-apps
+  - learn.azure.publish-static-web-app-and-api.4-exercise-static-web-apps
+  - learn.azure.publish-static-web-app-and-api.5-fallback-routes
+  - learn.azure.publish-static-web-app-and-api.6-exercise-fallback-routes
+  - learn.azure.publish-static-web-app-and-api.7-build-api
+  - learn.azure.publish-static-web-app-and-api.8-exercise-func-app
+  - learn.azure.publish-static-web-app-and-api.9-action
+  - learn.azure.publish-static-web-app-and-api.10-exercise-action
+  - learn.azure.publish-static-web-app-and-api.11-knowledge-check
+  - learn.azure.publish-static-web-app-and-api.12-summary
+badge:
+  uid: learn.azure.publish-static-web-app-and-api.badge
