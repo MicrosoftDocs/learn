@@ -5,13 +5,25 @@ Go to [**https://shell.azure.com**](https://shell.azure.com)
 
 ![An illustration is showing how to connect azure cloud shell.](../media/cloud-shell.png)
 
-You also need to add the Azure IoT extension to the cloud shell instance Azure CLI using the following command.
+You also need to add the Azure IoT extension to the cloud shell instance Azure CLI. 
+
+First, check which extensions you already have installed.
+
+```azurecli
+az extension list
+```
+
+If the older version of the Azure IoT extension named `azure-cli-iot-ext` is installed, remove it. This version is incompatible with the current version.
+
+```azurecli
+az extension remove --name azure-cli-iot-ext
+```
+
+Install the current Azure IoT extension.
 
 ```azurecli
 az extension add --name azure-iot
 ```
-
-![An illustration is showing that adding azurecli extension.](../media/cli-iot-ext.png)
 
 ## Creating a resource group
 
