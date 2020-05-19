@@ -103,7 +103,7 @@ quiz:
           explanation: Incorrect.
     - content: 'If you had sampled 1000 dogs instead of 100 dogs, your confidence interval would have been smaller.'
       choices:
-        - content: 'Always True'
+        - content: 'Always true'
           isCorrect: false
           explanation: Incorrect.
         - content: 'Typically true'
