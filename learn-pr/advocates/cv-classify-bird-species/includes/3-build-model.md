@@ -2,7 +2,7 @@ Let's build our model! We'll download the dataset, create our Azure service, upl
 
 ## Download the data
 
-The first thing we need to create our model is data! We'll use a subset of the NABirds dataset from the CLO to train our model. Download the .zip file that contains our [dataset](https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species/raw/master/bird_photos.zip).
+The first thing we need to create our model is data! We'll use a subset of the NABirds dataset from the CLO to train our model. Download the .zip file that contains our [dataset](https://github.com/MicrosoftDocs/mslearn-cv-classify-bird-species/blob/master/bird_photos.zip).
 
 ## Create a Custom Vision API resource
 
