@@ -266,12 +266,13 @@ mean can be. As such, it is taken as a measure of the accuracy of the
 sample mean as an estimate of the population mean. The smaller the SD,
 the more accurate the estimate.
 
-The formula shows that: - The population size doesn't affect the
-accuracy of the sample mean. The population size doesn't appear anywhere
-in the formula. - The population SD is a constant; it's the same for
-every sample drawn from the population. The sample size can be varied.
-Because the sample size appears in the denominator, the variability of
-the sample mean *decreases* as the sample size increases, and hence the
+The formula shows that:
+
+- The population size doesn't affect the accuracy of the sample mean. The population size doesn't appear anywhere in the formula.
+
+- The population SD is a constant; it's the same for every sample drawn from the population.
+
+The sample size can be varied. Because the sample size appears in the denominator, the variability of the sample mean *decreases* as the sample size increases, and hence the
 accuracy increases.
 
 ### The square root law
