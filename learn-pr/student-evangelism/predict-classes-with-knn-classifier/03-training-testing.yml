@@ -15,7 +15,7 @@ content: |
 quiz:
   
   questions:
-    - content: 'which of the following is true?'
+    - content: 'Which of the following is true?'
       choices:
         - content: 'In k-nearest neighbors classification, increasing the value of k will always improve accuracy on the test set.'
           isCorrect: false
