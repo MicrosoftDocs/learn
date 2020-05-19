@@ -8,7 +8,6 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
 title: Exercise - Deploy changes to AKS
 durationInMinutes: 10
 content: |
