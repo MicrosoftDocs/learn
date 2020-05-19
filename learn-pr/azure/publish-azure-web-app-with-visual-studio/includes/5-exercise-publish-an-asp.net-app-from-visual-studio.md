@@ -4,19 +4,22 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
 1. In Solution Explorer, right-click on the **AlpineSkiHouse** project and select **Publish**.
 
-1. In the dialog box that appears, on the left, choose **App Service** as your publish target.
+1. In the dialog box that appears, choose **Azure** as your publish target, and then select the **Next** button to continue.
 
-1. Under **Azure App Service**, select **Create New**.
+1. Select **Azure App Service (Windows)**, and then select the **Next** button to continue.
 
-1. Click the **Create Profile** button to continue.
+    > [!TIP]
+    > ASP.NET Core apps are cross-platform. This means they support running on the Linux version of App Service with no code changes. However, the Linux version doesn't support a shared hosting model, so you'll be using a Windows App Service for this exercise.
+
+1. In the **Subscription** dropdown, select **Concierge Subscription**.
+
+1. Near the bottom edge of the dialog, select the **Create a new Azure App Service** link to open the **App Service (Windows)** dialog.
 
 ### Configure your new Azure App Service
 
 1. If you're not already signed in, sign into Visual Studio with the account you're using with Microsoft Learn.
 
 1. Enter the required information about your App Service plan.
-
-    In the **App Service** dialog box, under **Subscription**, select **Concierge Subscription**.
 
     - **Name**: the name of your application. The name determines the URL of the published application, which will be https://&lt;AppName&gt;.azurewebsites.net. It must be a unique value. You may have to try out some different names to find one that is unique.
 
@@ -28,11 +31,11 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
         Click the **New** button next to the hosting plan. In the Configure Hosting Plan window that appears, change the **Size** to **Shared** and click OK.
 
-    - **Application Insights:** Specifies if you want to use Application Insights for your application. For this exercise, we recommend that you choose **None.**
+1. Click the **Create** button to create your App Service resource in Azure. This action will take several seconds to complete.
 
-1. Click the **Create** button to publish your application. This action will take several seconds to complete.
+1. After several seconds, the **App Service (Windows)** dialog window will disappear. Your new App Service displays in the list of App Service resources on the **Publish** dialog window. Press the **Finish** button to finish the creation of the publishing profile. The **Publish** dialog disappears.
 
-1. After several seconds, the dialog window will disappear. Press the **Publish** button to publish to Azure.
+1. Your new publishing profile appears in the dropdown near the top of the property page. Click **Publish** to publish the web app to App Service.
 
 1. Congratulations! Your ASP.NET Core web application is now published and live. The final URL for your site is in the build output and also on the publishing page in Visual Studio.
 
