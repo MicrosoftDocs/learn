@@ -1,7 +1,7 @@
 > [!NOTE]
 > You can find an interactive version of this unit named **introduction-to-bootstrapping.ipynb** in your virtual environment. If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science" please refer to the first unit **Setup.**
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) 
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments). 
 
 ### A/B testing
 
@@ -497,6 +497,6 @@ smokers were younger on average.
 In the following module, you will learn:
 
 - The fundamentals of A/B tests and how to run an A/B test.
-- How to prove causality with randomized controlled trial (RCTs).
-- The fundamentals of the bootstrap method: The idea behind it, what it is, and why it works.
-- The fundamentals of confidence intervals: Understanding confidence levels, generating confidence intervals, and how to use them to estimate unknown parameters.
+- How to prove causality with randomized controlled trials (RCTs).
+- The fundamentals of the bootstrap method: the idea behind it, what it is, and why it works.
+- The fundamentals of confidence intervals: understanding confidence levels, generating confidence intervals, and how to use them to estimate unknown parameters.
