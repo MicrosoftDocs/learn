@@ -2,13 +2,9 @@ In this exercise, we're going to install of the tools and components needed to b
 
 ## Install tools and templates
 
-We'll start by downloading the .NET Core 3.1 SDK, it includes the .NET Core SDK, the .NET Core Runtime, and the ASP.NET Core runtime. If you install Version 3.1.300, you'll be set. If you run an earlier version, we'll manually install the Blazor WebAssembly template. 
+We'll start by downloading the .NET Core 3.1 SDK, it includes the .NET Core SDK, the .NET Core Runtime, and the ASP.NET Core runtime.
 
 1. Install **.NET Core 3.1** by downloading the latest version from https://dotnet.microsoft.com/download/dotnet-core/3.1 for your operating system
-
-1. Open a terminal or command prompt on your local development machine 
-
-1. If you're running .NET Core 3.1 SDK v3.1.300 you're all set. If you're using an earlier version, execute `dotnet new -i Microsoft.AspNetCore.Components.WebAssembly.Templates::3.2.0-rc1.20223.4` to install the Blazor WebAssembly template.
 
 ## Install Visual Studio Code extensions
 
