@@ -26,7 +26,6 @@ correlation(heights, 'MidParent', 'Residual')
 
 That doesn't look like zero, but it is a tiny number that is 0 apart
 from rounding error due to computation. Here it is again, correct to 10
-
 decimal places. The minus sign is because of the rounding error from above.
 
 ``` python
