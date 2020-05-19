@@ -15,7 +15,6 @@ content: |
 
 
 quiz:
-  title: Check your Knowledge
   questions:
     - content: 'Which statement best describes the treatment and control groups for this study?'
       choices:

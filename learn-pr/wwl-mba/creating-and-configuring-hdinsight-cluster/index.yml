@@ -22,7 +22,7 @@ prerequisites: |
   - Successfully login to the Azure portal
   - Understand the Azure storage options
   - Understand the Azure compute options
-iconUrl: /learn/achievements/learn-pr/achievements/creating-and-configuring-a-hdinsight-cluster.svg
+iconUrl: /learn/achievements/creating-and-configuring-a-hdinsight-cluster.svg
 levels:
 - beginner
 roles:

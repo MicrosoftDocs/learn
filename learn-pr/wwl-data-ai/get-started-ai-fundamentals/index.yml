@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-ai-fundamentals
+metadata:
+  title: Get started with AI fundamentals
+  description: "With AI, we can build solutions that seemed like science fiction a short time ago; enabling incredible advances in health care, financial management, environmental protection, and other areas to make a better world for everyone."
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with AI fundamentals
+summary: With AI, we can build solutions that seemed like science fiction a short time ago; enabling incredible advances in health care, financial management, environmental protection, and other areas to make a better world for everyone.
+abstract: |
+  In this module, you'll learn about the kinds of solution AI can make possible and considerations for responsible AI practices.
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- student
+products:
+- azure-bot-service
+- azure-cognitive-services
+- azure-machine-learning-service
+units:
+- learn.wwl.get-started-ai-fundamentals.introduction-ai
+- learn.wwl.get-started-ai-fundamentals.understand-machine-learn
+- learn.wwl.get-started-ai-fundamentals.understand-anomaly-detection
+- learn.wwl.get-started-ai-fundamentals.understand-computer-vision
+- learn.wwl.get-started-ai-fundamentals.understand-natural-language-process
+- learn.wwl.get-started-ai-fundamentals.understand-conversational-ai
+- learn.wwl.get-started-ai-fundamentals.understand-responsible-ai
+- learn.wwl.get-started-ai-fundamentals.explore-responsible-ai-practice
+- learn.wwl.get-started-ai-fundamentals.summary
+badge:
+  uid: learn.wwl.get-started-ai-fundamentals.badge
