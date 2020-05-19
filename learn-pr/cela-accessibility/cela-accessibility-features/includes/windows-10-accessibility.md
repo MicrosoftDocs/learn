@@ -65,10 +65,10 @@ Every time you turn on Narrator, you'll go to Narrator Home, which gives you on
 For more information, explore the [Complete guide to Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-complete-guide-to-narrator).
 
 Color filters can also be found in the Ease of Access menu. This setting can make photos and colors easier to see by applying a color filter to your screen. Color filters such as Grayscale can make it easier to see
-elements on the screen. There are also specific filters to make colors more distinct for people with colorblindness.
+elements on the screen. There are also specific filters to make colors more distinct for people with color blindness.
 
 To turn on color filters:
-1. Go to **Settings** \> **Ease of Access** \> **Color filters** and toggle **Turn on color filters** to **On**. Or use the keyboard shortcut **Windows logo key** **** + **Ctrl** + **C**.
+1. Go to **Settings** > **Ease of Access** > **Color filters** and toggle **Turn on color filters** to **On**. Or use the keyboard shortcut **Windows logo key** **** + **Ctrl** + **C**.
 2. Select the color filter you prefer.
 
 :::image type="content" source="../media/color-filters.png" alt-text="Screenshot of the Windows 10 Color Filters menu":::
@@ -78,7 +78,7 @@ For more information, learn how to [use color filters in Windows 10](https://sup
 ### Focus assist
 Focus assist allows you to turn off notifications in Windows anytime you need to focus. When enabled, this feature blocks alerts and notifications from any of your installed apps.
 
-People with mental health disabilities such as anxiety may benefit from the enhanced ability to get things done without distractions that Focus assist provides. By eliminating moving objects like pop-up notifications, the setting may also reduce stress and help people focus on the task at hand. 
+People with mental health disabilities such as anxiety may benefit from the enhanced ability to get things done without distractions that Focus assist provides. By eliminating moving objects like pop-up notifications, the setting may also reduce stress and help people focus on the task at hand.
 
 To use Focus assist, select the **Start**  button and type **Focus assist settings** in the search box. You can then choose if you want to receive all notifications, priority notifications only, or just alarms.
 In Windows 10, you can also access Focus assist settings by selecting the **Notifications & actions** button.
