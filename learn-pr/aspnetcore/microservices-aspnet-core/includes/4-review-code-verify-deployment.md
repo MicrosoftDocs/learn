@@ -35,6 +35,12 @@ You can begin exploring these services (when available):
 
     ![eShop SPA](../media/temp/eshop-spa.png)
 
-1. Log in to the app (the credentials are provided on the login page) and then browse the shop. Add some items to the cart, and then complete the purchase.
+1. Complete a purchase as follows:
+    1. Select the **Login** link in the upper right to sign into the app (the credentials are provided on the login page).
+    1. Add the **.NET Blue Hoodie** to the shopping bag by clicking on the image.
+    1. Select the shopping bag icon in the upper right.
+    1. Select **Checkout**, then select **Place Order** to complete the purchase.
+
+    ![eShop shopping bag with .NET Blue Hoodie](../media/temp/eshop-spa-shopping-bag.png)
 
 Now that you've seen the existing eShopOnContainers app, you'll add the coupon microservice in the next unit.

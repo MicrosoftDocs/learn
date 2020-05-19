@@ -51,6 +51,9 @@ An ASP.NET Core project for the coupon service has been provided in *src/Service
     ./deploy/k8s/implementation-script.sh
     ```
 
+    > [!TIP]
+    > This module uses scripts to keep focus on the learning objectives. You may inspect the scripts in the Cloud Shell Editor to better understand how resources are provisioned.
+
     The preceding script:
 
     * Uncomments HTML markup in the *WebSPA* checkout and order details views to support accepting coupon codes and displaying discount amounts, respectively.
