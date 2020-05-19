@@ -8,7 +8,7 @@ Let's take a look at how Azure can provide the tools for a layered approach to s
 
 :::row:::
   :::column:::
-    ![Image representing a secure internet](../media/5-internet-protection.png)
+    :::image type="icon" source="../media/5-internet-protection.png" border="false":::
   :::column-end:::
   :::column span="3"::::
 **Internet protection**
@@ -38,7 +38,7 @@ When you combine **Azure DDoS Protection** with application design best practice
 
 This diagram shows network traffic flowing into Azure from both customers and an attacker. Azure DDoS protection identifies the attacker's attempt to overwhelm the network and blocks further traffic from reaching Azure services. Legitimate traffic from customers still flows into Azure without any interruption of service.
 
-![An illustration showing Azure DDoS protection installed between virtual network and external user requests. The Azure DDoS protection blocks malicious traffic attack but forwards the legitimate traffic to the intended destination.](../media/ddos.png)
+:::image type="content" source="../media/ddos.png" alt-text="Illustration showing Azure DDoS protection installed between virtual network and external user requests. The Azure DDoS protection blocks malicious traffic attack but forwards legitimate traffic to the intended destination.":::
 
 Azure DDoS Protection provides the following service tiers:
 
@@ -52,7 +52,7 @@ Azure DDoS Protection provides the following service tiers:
 
 :::row:::
   :::column:::
-    ![Image representing a secure virtual network](../media/5-vnet-security.png)
+    :::image type="icon" source="../media/5-vnet-security.png" border="false":::
   :::column-end:::
   :::column span="3"::::
 **Virtual network security**
@@ -69,7 +69,7 @@ You can completely remove public internet access to your services by restricting
 
 :::row:::
   :::column:::
-    ![Image representing a secure network](../media/5-network-integration.png)
+    :::image type="icon" source="../media/5-network-integration.png" border="false":::
   :::column-end:::
   :::column span="3"::::
 **Network integration**
