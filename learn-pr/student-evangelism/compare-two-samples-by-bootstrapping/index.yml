@@ -12,10 +12,10 @@ title: Compare Two Samples By Bootstrapping
 summary: Learn how to test hypothesis about samples using bootstrapping
 abstract: |
   In this module, you will:
-  - Study A/B Tests and how to run an A/B Test.
-  - Prove causality with Randomized Controlled Trial (RCTs).
-  - Understand The Bootstrap: The idea behind it, what it is, and why it works.
-  - Learn about Confidence Intervals: Understanding confidence levels, generating confidence intervals, and how to use them to estimate unknown parameters.
+  - Study A/B tests and how to run an A/B test.
+  - Prove causality with randomized controlled trials (RCTs).
+  - Understand the Bootstrap: The idea behind it, what it is, and why it works.
+  - Learn about confidence intervals: understanding confidence levels, generating confidence intervals, and how to use them to estimate unknown parameters.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/compare-two-samples-by-bootstrapping.svg
 levels:
