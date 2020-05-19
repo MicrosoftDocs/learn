@@ -9,7 +9,7 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
 1. Run the following command in the command shell to verify you are still at the *:::no-loc text="ContosoPets.UI":::* directory:
 
     ```bash
-    cd ~/contoso-pets/src/ContosoPets.Ui
+    cd ~/aspnet-learn/src/ContosoPets.Ui
     ```
 
     [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]

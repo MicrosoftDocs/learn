@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "The runtime provided by the browser"
       isCorrect: false
-      explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime using mono"
-    - content: "The .NET mono runtime deployed with your web app"
+      explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime"
+    - content: "The .NET runtime deployed with your web app"
       isCorrect: true
-      explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime using mono"
+      explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime"
     - content: "The JavaScript runtime deployed with your web app"
       isCorrect: false
-      explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime using mono"
+      explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime"
   - content: "How is Blazor WebAssembly UI defined?"
     choices:
     - content: "As Razor pages as a mix of HTML and C#"

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-ai-fundamentals.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "You want to create a model to predict sales of ice cream based on historic data that includes daily ice cream sales totals and weather measurements. Which Azure service should you use?"
+    choices:
+    - content: "Azure Machine Learning"
+      isCorrect: true
+      explanation: "That is correct. Azure Machine Learning enables you to train a predictive model from the existing data."
+    - content: "QnA Maker"
+      isCorrect: false
+      explanation: "That is incorrect. QnA Maker is used to create a knowledge base of questions and answers."
+    - content: "Text Analytics"
+      isCorrect: false
+      explanation: "That is incorrect. Text Analytics is used to extract insights from text data."
+  - content: "You want to train a model that classifies images of dogs and cats based on a collection of your digital own photographs. Which Azure service should you use?"
+    choices:
+    - content: "Azure Bot Service"
+      isCorrect: false
+      explanation: "That is incorrect. Azure Bot Service is used to create conversational AI solutions."
+    - content: "Custom Vision"
+      isCorrect: true
+      explanation: "That is correct. Custom Vision enables you to train an image classification model based on your own images."
+    - content: "Computer Vision"
+      isCorrect: false
+      explanation: "That is incorrect. Computer Vision can help classify images, but you can't use it to train a model from your own images."

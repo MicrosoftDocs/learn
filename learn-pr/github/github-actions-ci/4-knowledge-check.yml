@@ -1,0 +1,67 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-ci.4-knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned.
+  ms.date: 05/19/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Artifacts from a GitHub Actions workflow can be saved with what action?"
+    choices:
+    - content: "The ```actions/upload-artifacts``` action"
+      isCorrect: true
+      explanation: "The ```actions/upload-artifacts``` action allows you yo save an artifact."
+    - content: "The ```actions/checkout@v1``` action"
+      isCorrect: false
+      explanation: "The ```actions/upload-artifacts``` action allows you yo save an artifact. The ```actions/checkout@v1``` action copies the code from your repository into the virtual machine."
+    - content: "The ```actions/download-artifact``` action"
+      isCorrect: false
+      explanation: "The ```actions/upload-artifacts``` action allows you yo save an artifact. The ```actions/download-artifact``` action allows you to download a saved artifact."
+  - content: "What is one way that GitHub Actions workflows can NOT be used?"
+    choices:
+    - content: "To automatically run test suites on each push"
+      isCorrect: false
+      explanation: "You can use GitHUb Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
+    - content: "To kick off a review process"
+      isCorrect: false
+      explanation: "You can use GitHUb Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
+    - content: "To automate common repetitive tasks, such as welcoming new contributors to a repository."
+      isCorrect: false
+      explanation: "You can use GitHUb Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
+    - content: "To upload a new secret to GitHub Secrets."
+      isCorrect: true
+      explanation: "You can use GitHUb Actions workflows to do all of these tasks except upload secrets. You would not want your secret in plain text in a workflow file."
+  - content: "Which action would you use to access a repository's code from the virtual machine provided by GitHub Actions?"
+    choices:
+    - content: "```actions/upload-artifact```"
+      isCorrect: false
+      explanation: "The ```actions/upload-artifact``` action saves an artifact."
+    - content: "```actions/checkout```"
+      isCorrect: true
+      explanation: "The ```actions/checkout``` accesses a repository's code from the virtual machine provided by GitHub Actions"
+    - content: "```npm install```"
+      isCorrect: false
+      explanation: "The ```npm install``` command installs package and the dependencies."
+    - content: "```actions/setup-node```"
+      isCorrect: false
+      explanation: "The ```actions/setup-node``` sets up the correct version of Node."     
+  - content: "How many builds will the following matrix produce? `os: [ubuntu-latest, windows-2016] node-version: [8.x, 10.x, 12.x]`" 
+    choices:
+    - content: "6"
+      isCorrect: true
+      explanation: "Each operating system is paired with each version of Node for a total of 6 builds."
+    - content: "3"
+      isCorrect: false
+      explanation: "Each operating system is paired with each version of Node for a total of 6 builds."
+    - content: "5"
+      isCorrect: false
+      explanation: "Each operating system is paired with each version of Node for a total of 6 builds."

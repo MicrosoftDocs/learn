@@ -16,7 +16,8 @@ abstract: |
   - Execute a Databricks notebook with a parameter.
   - Retrieve and log a parameter passed back from the notebook.
   - Monitor your Data Factory pipeline.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/create-production-workloads-azure-databricks-azure-data-factory.svg
 levels:
 - intermediate

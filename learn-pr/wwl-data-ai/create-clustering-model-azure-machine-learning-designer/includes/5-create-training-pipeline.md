@@ -5,7 +5,11 @@ After you've used data transformations to prepare the data, you can use it to tr
 To train a clustering model, you need to apply a clustering algorithm to the data, using only the features that you want to be used for clustering.
 
 1. Open the **Iris Training** pipeline you created in the previous unit if it's not already open.
-2. Expand the **Model Training** section in the pane on the left, and drag a **Train Clustering Model** module to the canvas, under the **iris** dataset. Then connect the output of the dataset to the *Dataset* (right) input of the **Train Clustering Model** module.
+2. Expand the **Model Training** section in the pane on the left, and drag a **Train Clustering Model** module to the canvas, under the **iris** dataset. Then connect the output at the bottom of the dataset to the *Dataset* (right) input at the top of the **Train Clustering Model** module, like this:
+
+> [!div class="centered"]
+> ![A pipeline with the iris dataset connected to a Train Clustering Model module](../media/dataset-train.png)
+
 3. The clustering model should assign clusters to the data items by using only the four measurements - we're going to ignore the fact that we already know the species. Select the **Train Clustering Model** module and in its settings pane, on the **Parameters** tab, select **Edit Columns** and include only the column names **Column1**, **Column2**, **Column3**, and **Column4**; like this:
 
 > [!div class="centered"]
@@ -31,9 +35,9 @@ To train a clustering model, you need to apply a clustering algorithm to the dat
 
 Now you're ready to run the training pipeline and train the model.
 
-1. Select **Submit**, and run the pipeline using a new experiment named **iris-training**.
+1. Select **Submit**, and run the pipeline using a new experiment named **iris-training** on your compute instance.
 2. Wait for the experiment run to complete. This may take 5 minutes or more.
-3. When the experiment run has completed (indicated by a &#x2705; icon for each module), select the **Train Clustering Model** module and in its settings pane, on the **Outputs + Logs** tab, under **Port outputs** in the **Results dataset** section, use the **Visualize** icon to view the results.
+3. When the experiment run has completed (indicated by a &#x2705; icon for each module), select the **Train Clustering Model** module and in its settings pane, on the **Outputs + Logs** tab, under **Data outputs** in the **Results dataset** section, use the **Visualize** icon to view the results.
 4. Scroll to the right, and note the **Assignments** column, which contains the cluster (0, 1, or 2) to which each row is assigned. There are also new columns indicating the distance from the point representing this row to the centers of each of the clusters - the cluster to which the point is closest is the one to which it is assigned.
 5. Close the **Train Clustering Model** visualization, and then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon.
 
