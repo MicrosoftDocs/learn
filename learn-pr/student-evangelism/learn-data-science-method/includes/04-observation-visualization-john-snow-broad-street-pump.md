@@ -1,4 +1,4 @@
-## Establishing Causality
+## Establishing causality
 
 In the language developed earlier in the section, you can think of the
 people in the S&V houses as the treatment group, and those in the
@@ -48,7 +48,7 @@ An underlying difference between the two groups (other than the
 treatment) is called a *confounding factor*, because it might confound
 you (that is, mess you up) when you try to reach a conclusion.
 
-**Example: Coffee and lung cancer.** Studies in the 1960s showed that
+**Example: coffee and lung cancer.** Studies in the 1960s showed that
 coffee drinkers had higher rates of lung cancer than those who did not
 drink coffee. Because of this, some people identified coffee as a cause
 of lung cancer. But coffee does not cause lung cancer. The analysis
@@ -60,7 +60,7 @@ cause the disease.
 Confounding factors are common in observational studies. Good studies
 take great care to reduce confounding and to account for its effects.
 
-## Observation and Visualization: John Snow and the Broad Street Pump
+## Observation and visualization: John Snow and the Broad Street pump
 
 One of the most powerful examples of astute observation eventually
 leading to the establishment of causality dates back more than 150
@@ -146,7 +146,7 @@ Snow's map is one of the earliest and most powerful uses of data
 visualization. Disease maps of various kinds are now a standard tool for
 tracking epidemics.
 
-**Towards Causality**
+**Towards causality**
 
 Though the map gave Snow a strong indication that the cleanliness of the
 water supply was the key to controlling cholera, he was still a long way
@@ -164,7 +164,7 @@ with the average murder rate in states that don't.
 If the results are different, that is evidence for an association. To
 determine causation, however, even more care is needed.
 
-## Snow's "Grand Experiment"
+## Snow's "grand experiment"
 
 Encouraged by what he had learned in Soho, Snow completed a more
 thorough analysis. For some time, he had been gathering data on cholera

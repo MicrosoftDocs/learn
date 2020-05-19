@@ -6,7 +6,9 @@ larger than `1 + 1`.
 3 > 1 + 1
 ```
 
+``` output
     True
+```
 
 The value `True` indicates that the comparison is valid; Python has
 confirmed this simple fact about the relationship between `3` and `1+1`.
@@ -30,7 +32,9 @@ expression.
 1 < 1 + 1 < 3
 ```
 
+``` output
     True
+```
 
 The average of two numbers is always between the smaller number and the
 larger number. We express this relationship for the numbers `x` and `y`
@@ -43,7 +47,9 @@ y = 5
 min(x, y) <= (x+y)/2 <= max(x, y)
 ```
 
+``` output
     True
+```
 
 Strings can also be compared, and their order is alphabetical. A shorter
 string is less than a longer string that begins with the shorter string.
@@ -52,4 +58,6 @@ string is less than a longer string that begins with the shorter string.
 "Dog" > "Catastrophe" > "Cat"
 ```
 
+``` output
     True
+```
