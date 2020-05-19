@@ -143,7 +143,7 @@ football.show()
 ```
 
 ``` output
-|| Team     | Combined | Pressure Drop |
+| Team     | Combined | Pressure Drop |
 |----------|----------|---------------|
 | Colts    | 12.525   | 0.475         |
 | Colts    | 12.525   | 0.475         |
