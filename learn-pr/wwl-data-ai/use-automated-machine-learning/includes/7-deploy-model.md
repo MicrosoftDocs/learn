@@ -9,13 +9,12 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
     - **Description**: Predict cycle rentals
     - **Compute type**: ACI
     - **Enable authentication**: Selected
-3. Wait for the deployment to start - this may take a few seconds.
-4. In Azure Machine Learning studio, view the **Endpoints** page and find the **predict-rentals** real-time endpoint.
-5. Select the **predict-rentals** endpoint and note the **Deployment state**. If it is *Transitioning*, wait a few minutes and refresh the page until it is *Healthy*.
-6. When the deployment state is healthy, select the **Consume** tab and note the following information there. You need this to connect to your deployed service from a client application.
+3. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Successful**. You may need to select **&#8635; Refresh** periodically.
+4. In Azure Machine Learning studio, view the **Endpoints** page and select the **predict-rentals** real-time endpoint.
+5. When the deployment state is healthy, select the **Consume** tab and note the following information there. You need this information to connect to your deployed service from a client application.
     - The REST endpoint for your service
     - the Primary Key for your service
-7. Note that you can use the &#10697; link next to these values to copy them to the clipboard.
+6. Note that you can use the &#10697; link next to these values to copy them to the clipboard.
 
 ## Test the deployed service
 
@@ -28,7 +27,7 @@ On the **Notebooks** page, create a new file with the following settings:
     - **Overwrite if already exists**: Selected
     - **Select target directory**: *Select the folder with your user name under **User files***
 2. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
-3. If the notebook is not editable, in the **Edit** menu,  select **Edit inline**. Then in the cell that is created in the notebook, paste the following code:
+3. In the cell that has been created in the notebook, paste the following code:
 
     ```Python
     endpoint = 'YOUR_ENDPOINT' #Replace with your endpoint

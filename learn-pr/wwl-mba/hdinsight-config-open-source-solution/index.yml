@@ -22,7 +22,7 @@ prerequisites: |
   - Successfully log in to the Azure portal
   - Understand the Azure storage options
   - Understand the Azure compute options
-iconUrl: /learn/achievements/learn-pr/achievements/hdinsight-config-build-oss-analytical-solutions.svg
+iconUrl: /learn/achievements/hdinsight-config-build-oss-analytical-solutions.svg
 levels:
 - beginner
 roles:

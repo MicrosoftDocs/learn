@@ -10,7 +10,9 @@ b = 20
 a + b
 ```
 
-    30
+``` output
+30
+```
 
 A previously assigned name can be used in the expression to the right of
 `=`.
@@ -21,7 +23,9 @@ half = 2 * quarter
 half
 ```
 
-    0.5
+``` output
+0.5
+```
 
 However, only the current value of an expression is assigned to a name.
 If that value changes later, names that were defined in terms of that
@@ -32,7 +36,9 @@ quarter = 4
 half
 ```
 
-    0.5
+``` output
+0.5
+```
 
 Names must start with a letter, but can contain both letters and
 numbers. A name cannot contain a space; instead, it is common to use an
@@ -53,4 +59,6 @@ sales_tax = purchase_price * sales_tax_rate
 sales_tax
 ```
 
-    0.475
+``` output
+0.475
+```

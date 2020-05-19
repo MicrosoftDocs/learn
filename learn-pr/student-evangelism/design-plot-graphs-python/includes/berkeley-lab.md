@@ -12,17 +12,20 @@ A Visual Studio Codespaces environment based on the MicrosoftDocs/inferentialthi
 
 ## To set up a Visual Studio Codespaces environment:
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking) in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
-If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
+1. Open [Visual Studio Codespaces](https://online.visualstudio.com/environments/new?azure-portal=true&name=MicrosoftDocs&repo=MicrosoftDocs/inferentialthinking) in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
 
-- Environment Name: A name for your environment - for example, inferential thinking.
+1. If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
 
-- Git Repository: MicrosoftDocs/inferentialthinking
+    - Environment Name: A name for your environment - for example, inferential thinking.
 
-- Instance Type: Standard (Linux) 4 cores, 8GB RAM
+    - Git Repository: MicrosoftDocs/inferentialthinking
 
-- Suspend idle environment after: 30 minutes
+    - Instance Type: Standard (Linux) 4 cores, 8GB RAM
 
-- Wait for the environment to be created. This will take around a minute.
+    - Suspend idle environment after: 30 minutes
 
-- Wait for another minute or so while the environment is set up for you. It might look like nothing is happening, but in the background we're installing some components you'll need for the exercise. You'll see a list of notebook (.ipynb) files appear in the pane on the left.
+1. Wait for the environment to be created. This will take around a minute.
+
+1. Wait for another minute or so while the environment is set up for you. It might look like nothing is happening, but in the background we're installing some components you'll need for the exercise. You'll see the following things happen:
+
+1. A list of notebook (.ipynb) files will appear in the pane on the left.

@@ -1,8 +1,3 @@
-``` python
-from datascience import *
-path_data = '../../../data/'
-```
-
 Values can be grouped together into collections, which allows
 programmers to organize those values and refer to all of them with a
 single name. By grouping values together, we can write code that
@@ -25,7 +20,9 @@ highs = make_array(baseline_high - 0.880, baseline_high - 0.093,
 highs
 ```
 
+``` output
     array([ 13.6  ,  14.387,  14.585,  15.164])
+```
 
 Collections allow us to pass multiple values into a function using a
 single name. For instance, the `sum` function computes the sum of all
@@ -37,7 +34,9 @@ compute the average of a collection.
 sum(highs)/len(highs)
 ```
 
+``` output
     14.434000000000001
+```
 
 The complete chart of daily high and low temperatures appears below.
 
@@ -50,11 +49,6 @@ Temperature](http://berkeleyearth.lbl.gov/auto/Regional/TMAX/Figures/global-land
 
 ![Mean of Daily Low
 Temperature](http://berkeleyearth.lbl.gov/auto/Regional/TMIN/Figures/global-land-TMIN-Trend.png)
-
-``` python
-from datascience import *
-path_data = '../../../../data/'
-```
 
 ## Arrays
 
@@ -71,8 +65,10 @@ english_parts_of_speech = make_array("noun", "pronoun", "verb", "adverb", "adjec
 english_parts_of_speech
 ```
 
+``` output
     array(['noun', 'pronoun', 'verb', 'adverb', 'adjective', 'conjunction',
            'preposition', 'interjection'], dtype='<U12')
+```
 
 Returning to the temperature data, we create arrays of average daily
 [high
@@ -88,7 +84,9 @@ highs = make_array(baseline_high - 0.880,
 highs
 ```
 
+``` output
     array([13.6  , 14.387, 14.585, 15.164])
+```
 
 Arrays can be used in arithmetic expressions to compute over their
 contents. When an array is combined with a single number, that number is
@@ -104,7 +102,6 @@ formula.
 
 ![png](../media/array-arithmetic.PNG)
 
-
 Arrays also have *methods*, which are functions that operate on the
 array values. The `mean` of a collection of numbers is its average
 value: the sum divided by the length. Each pair of parentheses in the
@@ -115,7 +112,9 @@ with no arguments to perform a computation on the array called `highs`.
 highs.size
 ```
 
+``` output
     4
+```
 
 ``` python
 highs.sum()
@@ -127,17 +126,15 @@ highs.sum()
 highs.mean()
 ```
 
+``` output
     14.434000000000001
+```
 
 #### Functions on arrays
 
 The `numpy` package, abbreviated `np` in programs, provides Python
 programmers with convenient and powerful functions for creating and
 manipulating arrays.
-
-``` python
-import numpy as np
-```
 
 For example, the `diff` function computes the difference between each
 adjacent pair of elements in an array. The first element of the `diff`
@@ -147,7 +144,9 @@ is the second element minus the first.
 np.diff(highs)
 ```
 
+``` output
     array([0.787, 0.198, 0.579])
+```
 
 The [full Numpy reference](http://docs.scipy.org/doc/numpy/reference/)
 lists these functions exhaustively, but only a small subset are used

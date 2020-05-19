@@ -6,19 +6,25 @@ parentheses.
 abs(-12)
 ```
 
-    12
+``` output
+12
+```
 
 ``` python
 round(5 - 1.3)
 ```
 
-    4
+``` output
+4
+```
 
 ``` python
 max(2, 2 + 3, 4)
 ```
 
-    5
+``` output
+5
+```
 
 In this last example, the `max` function is *called* on three
 *arguments*: 2, 5, and 4. The value of each expression within
@@ -37,7 +43,9 @@ import operator
 math.sqrt(operator.add(4, 5))
 ```
 
-    3.0
+``` output
+3.0
+```
 
 An equivalent expression could be expressed using the `+` and `**`
 operators instead.
@@ -46,7 +54,9 @@ operators instead.
 (4 + 5) ** 0.5
 ```
 
-    3.0
+``` output
+3.0
+```
 
 Operators and call expressions can be used together in an expression.
 The *percent difference* between two values is used to compare values
@@ -64,7 +74,9 @@ iowa = 16.25
 100*abs(florida-iowa)/((florida+iowa)/2)
 ```
 
-    142.6462836056932
+``` output
+142.6462836056932
+```
 
 Learning how different functions behave is an important part of learning
 a programming language. A Jupyter notebook can assist in remembering the
@@ -80,10 +92,12 @@ will bring up a description of the `log` function in the `math` module.
 math.log?
 ```
 
+``` output
     log(x[, base])
 
     Return the logarithm of x to the given base.
     If the base not specified, returns the natural logarithm (base e) of x.
+```
 
 The square brackets in the example call indicate that an argument is
 optional. That is, `log` can be called with either one or two arguments.
@@ -92,13 +106,17 @@ optional. That is, `log` can be called with either one or two arguments.
 math.log(16, 2)
 ```
 
-    4.0
+``` output
+4.0
+```
 
 ``` python
 math.log(16)/math.log(2)
 ```
 
-    4.0
+``` output
+4.0
+```
 
 The list of [Python's built-in
 functions](https://docs.python.org/3/library/functions.html) is quite

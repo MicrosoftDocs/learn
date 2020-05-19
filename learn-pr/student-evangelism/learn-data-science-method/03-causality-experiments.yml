@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.learn-data-science-method.causality-experiments
-title: Causality and Experiments
+title: Causality and experiments
 metadata:
-  title: Causality and Experiments
+  title: Causality and experiments
   description: Understand causal analysis in experiments
   ms.date: 03/12/2020
   author: leestott

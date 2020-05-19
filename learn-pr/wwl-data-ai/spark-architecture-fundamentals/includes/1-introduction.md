@@ -17,6 +17,6 @@ In this module, you will:
 - Understand the architecture of an Azure Databricks Spark Cluster
 - Understand the architecture of a Spark Job
 
-## Prerequesites
+## Prerequisites
 
 None

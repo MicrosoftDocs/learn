@@ -1,15 +1,3 @@
-``` python
-from datascience import *
-import matplotlib
-path_data = '../../../../data/'
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-np.set_printoptions(threshold=50)
-```
-
 Data come in many forms that are not numerical. Data can be pieces of
 music, or places on a map. They can also be categories into which you
 can place individuals. Here are some examples of *categorical*
@@ -35,11 +23,13 @@ icecream = Table().with_columns(
 icecream
 ```
 
-|Flavor|Number of Cartons|
-|--- |--- |
-|Chocolate|16|
-|Strawberry|5|
-|Vanilla|9|
+``` output
+| Flavor     | Number of Cartons |
+|------------|-------------------|
+| Chocolate  | 16                |
+| Strawberry | 5                 |
+| Vanilla    | 9                 |
+```
 
 The *values* of the categorical variable "flavor" are chocolate,
 strawberry, and vanilla. The table shows the number of cartons of each
@@ -137,20 +127,22 @@ top = Table.read_table(path_data + 'top_movies.csv')
 top
 ```
 
-|Title|Studio|Gross|Gross (Adjusted)|Year|
-|--- |--- |--- |--- |--- |
-|Star Wars: The Force Awakens|Buena Vista (Disney)|906723418|906723400|2015|
-|Avatar|Fox|760507625|846120800|2009|
-|Titanic|Paramount|658672302|1178627900|1997|
-|Jurassic World|Universal|652270625|687728000|2015|
-|Marvel's The Avengers|Buena Vista (Disney)|623357910|668866600|2012|
-|The Dark Knight|Warner Bros.|534858444|647761600|2008|
-|Star Wars: Episode I - The Phantom Menace|Fox|474544677|785715000|1999|
-|Star Wars|Fox|460998007|1549640500|1977|
-|Avengers: Age of Ultron|Buena Vista (Disney)|459005868|465684200|2015|
-|The Dark Knight Rises|Warner Bros.|448139099|500961700|2012|
+``` output
+| Title                                     | Studio               | Gross     | Gross (Adjusted) | Year |
+|-------------------------------------------|----------------------|-----------|------------------|------|
+| Star Wars: The Force Awakens              | Buena Vista (Disney) | 906723418 | 906723400        | 2015 |
+| Avatar                                    | Fox                  | 760507625 | 846120800        | 2009 |
+| Titanic                                   | Paramount            | 658672302 | 1178627900       | 1997 |
+| Jurassic World                            | Universal            | 652270625 | 687728000        | 2015 |
+| Marvel's The Avengers                     | Buena Vista (Disney) | 623357910 | 668866600        | 2012 |
+| The Dark Knight                           | Warner Bros.         | 534858444 | 647761600        | 2008 |
+| Star Wars: Episode I - The Phantom Menace | Fox                  | 474544677 | 785715000        | 1999 |
+| Star Wars                                 | Fox                  | 460998007 | 1549640500       | 1977 |
+| Avengers: Age of Ultron                   | Buena Vista (Disney) | 459005868 | 465684200        | 2015 |
+| The Dark Knight Rises                     | Warner Bros.         | 448139099 | 500961700        | 2012 |
 
 ... (190 rows omitted)
+```
 
 The Disney subsidiary Buena Vista shows up frequently in the top ten, as
 do Fox and Warner Brothers. Which studios will appear most frequently if
@@ -174,20 +166,22 @@ counts of rows in each category. The column of counts is always called
 movies_and_studios.group('Studio')
 ```
 
-|Studio|count|
-|--- |--- |
-|AVCO|1|
-|Buena Vista (Disney)|29|
-|Columbia|10|
-|Disney|11|
-|Dreamworks|3|
-|Fox|26|
-|IFC|1|
-|Lionsgate|3|
-|MGM|7|
-|MPC|1|
+``` output
+| Studio               | count |
+|----------------------|-------|
+| AVCO                 | 1     |
+| Buena Vista (Disney) | 29    |
+| Columbia             | 10    |
+| Disney               | 11    |
+| Dreamworks           | 3     |
+| Fox                  | 26    |
+| IFC                  | 1     |
+| Lionsgate            | 3     |
+| MGM                  | 7     |
+| MPC                  | 1     |
 
 ... (14 rows omitted)
+```
 
 Thus `group` creates a distribution table that shows how the movies are
 distributed among the categories (studios).

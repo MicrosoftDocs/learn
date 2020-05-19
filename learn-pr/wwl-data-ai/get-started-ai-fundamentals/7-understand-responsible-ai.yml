@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-ai-fundamentals.understand-responsible-ai
+title: Understand responsible AI
+metadata:
+  title: Understand responsible AI
+  description: "Understand responsible AI"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-understand-responsible-ai.md)]

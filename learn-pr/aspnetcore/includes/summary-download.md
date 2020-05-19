@@ -3,8 +3,8 @@
 Use the following command to package and download your project files:
 
 ```bash
-pushd ~/contoso-pets/src && \
-    zip -r ~/contoso-pets.zip . && \
+pushd ~/aspnet-learn/src && \
+    zip -r ~/aspnet-learn.zip . && \
     popd && \
-    download ~/contoso-pets.zip
+    download ~/aspnet-learn.zip
 ```

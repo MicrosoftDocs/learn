@@ -17,4 +17,4 @@ In this module, you will:
 - Familiarity with web app concepts
 - Basic programming knowledge
 - Basic HTML knowledge
-- A local installation of Visual Studio 2019 on Windows
+- A local installation of [Visual Studio 2019 16.6 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
