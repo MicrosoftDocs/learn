@@ -4,6 +4,8 @@ In this module, you'll gain an understanding of the eShopOnContainers app and th
 
 ![eShop application architecture](../media/temp/eshop-architecture.png)
 
+%TODO% - AKS logo in image.
+
 The *eShopOnContainers* app is an online store that sells various physical products like pins, t-shirts, and coffee mugs. The store includes the following features:
 
 * Catalog management
@@ -13,6 +15,10 @@ The *eShopOnContainers* app is an online store that sells various physical produ
 * Payments
 
 Each of the preceding features is managed with a distinct microservice. Each microservice is autonomous, independently deployable, and responsible for its own data. This architecture enables each microservice to implement the data store that is best optimized for its workload, storage needs, and read/write patterns. Data store options include relational, document, key-value, and graph-based. As shown in the preceding figure, the *catalog* microservice stores its data in a SQL Server on Linux database, the *basket* microservice uses a Redis cache for storage, and so on. There's no single master data store with which all services interact. Instead, inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging. This data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in production.
+
+### Identity
+
+%TODO% - Auth discussion here. E.g., why no API gateway for auth? Define STS because it's in diagram. Why Identity Server instead of AAD?
 
 ### Event bus
 

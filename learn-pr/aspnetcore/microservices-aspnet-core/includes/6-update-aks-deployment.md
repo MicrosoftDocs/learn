@@ -1,5 +1,9 @@
 In this unit, you'll run a script to deploy the *Coupon.API* microservice and other configuration changes to the existing app. You'll then verify the changes were successful. 
 
+## How the coupon service integrates with other services
+
+%TODO% - What's going on with Orders and Basket. And Identity. Also, think of a better H2 above. :)
+
 ## Deploy changes
 
 Run the following script in the command shell to update the existing AKS cluster with the new configuration:

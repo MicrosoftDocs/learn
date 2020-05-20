@@ -1,5 +1,9 @@
 In this unit, you complete the *Coupon.API* project. You will then run a script to generate changes to the *WebSPA* HTML, as well as generate and modify Helm charts to define the kubernetes deployment.
 
+## Coupon service architecture
+
+
+
 ## Add the coupon service
 
 An ASP.NET Core project for the coupon service has been provided in *src/Services/Coupon*.
@@ -39,6 +43,8 @@ An ASP.NET Core project for the coupon service has been provided in *src/Service
 
     The preceding change adds the custom health check service to the app.
 
+    %TODO% - Explain custom HC service, display extension method. De-magic.
+
 1. Also in *Startup.cs*, make the following changes to the `Configure` method:
 
     [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configure&highlight=30-38)]
@@ -65,13 +71,17 @@ An ASP.NET Core project for the coupon service has been provided in *src/Service
 
     | File | Description |
     |------|-------------|
-    | *Chart.yaml* | %TODO% - Nish |
-    | *templates/deployment.yaml* | %TODO% - Nish |
-    | *templates/service.yaml* | %TODO% - Nish |
-    | *templates/configmap.yaml* | %TODO% - Nish |
-    | *templates/ingress.yaml* | %TODO% - Nish |
+    | *Chart.yaml* |  |
+    | *templates/deployment.yaml* |  |
+    | *templates/service.yaml* |  |
+    | *templates/configmap.yaml* |  |
+    | *templates/ingress.yaml* |  |
 
-## Build the coupon service in Azure Container Registy
+    %TODO% - Cam to explain kubernetes.yml file generation above
+
+## Build the coupon service in Azure Container Registry
+
+%TODO% - Why are we using ACR vs. Docker Hub?
 
 Run the following script in the command shell to build the coupon service container and the *WebSPA* container:
 
