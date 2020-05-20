@@ -1,5 +1,7 @@
 Now that you know your server is compatible with Azure File Sync, you're ready to set up your Azure resources. In this exercise, you'll create the four components that you need to connect your company's file server.
 
+The following video shows you how to create the Azure resources you'll need. Use the steps in this exercise to continue following along in your Azure subscription.
+
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit6/player?format=ny]
 
 ## Create the storage account
