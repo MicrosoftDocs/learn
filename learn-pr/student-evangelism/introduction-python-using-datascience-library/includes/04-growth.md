@@ -21,7 +21,9 @@ changed = 2814000
 (changed - initial) / initial
 ```
 
-    0.01735357917570499
+``` output
+0.01735357917570499
+```
 
 It is also typical to subtract one from the ratio of the two
 measurements, which yields the same value.
@@ -30,7 +32,9 @@ measurements, which yields the same value.
 (changed/initial) - 1
 ```
 
-    0.017353579175704903
+``` output
+0.017353579175704903
+```
 
 This value is the growth rate over 10 years. A useful property of growth
 rates is that they don't change even if the values are expressed in
@@ -43,7 +47,9 @@ changed = 2814
 (changed/initial) - 1
 ```
 
-    0.017353579175704903
+``` output
+0.017353579175704903
+```
 
 In 10 years, the number of employees of the US Federal Government has
 increased by only 1.74%. In that time, the total expenditures of the US
@@ -56,7 +62,9 @@ changed = 3.38
 (changed/initial) - 1
 ```
 
-    0.4261603375527425
+``` output
+0.4261603375527425
+```
 
 A 42.6% increase in the federal budget is much larger than the 1.74%
 increase in federal employees. In fact, the number of federal employees
@@ -70,7 +78,9 @@ changed = 314.1
 (changed/initial) - 1
 ```
 
-    0.09214186369958277
+``` output
+0.09214186369958277
+```
 
 A growth rate can be negative, representing a decrease in some value.
 For example, the number of manufacturing jobs in the US decreased from
@@ -82,7 +92,9 @@ changed = 11.9
 (changed/initial) - 1
 ```
 
-    -0.2222222222222222
+``` output
+-0.2222222222222222
+```
 
 An annual growth rate is a growth rate of some quantity over a single
 year. An annual growth rate of 0.035, accumulated each year for 10
@@ -92,7 +104,9 @@ years, gives a much larger ten-year growth rate of 0.41 (or 41%).
 1.035 * 1.035 * 1.035 * 1.035 * 1.035 * 1.035 * 1.035 * 1.035 * 1.035 * 1.035 - 1
 ```
 
-    0.410598760621121
+``` output
+0.410598760621121
+```
 
 This same computation can be expressed using names and exponents.
 
@@ -102,7 +116,9 @@ ten_year_growth_rate = (1 + annual_growth_rate) ** 10 - 1
 ten_year_growth_rate
 ```
 
-    0.410598760621121
+``` output
+0.410598760621121
+```
 
 Likewise, a ten-year growth rate can be used to compute an equivalent
 annual growth rate. Below, `t` is the number of years that have passed
@@ -116,7 +132,9 @@ t = 10
 (changed/initial) ** (1/t) - 1
 ```
 
-    0.03613617208346853
+``` output
+0.03613617208346853
+```
 
 The total growth over 10 years is equivalent to a 3.6% increase each
 year.

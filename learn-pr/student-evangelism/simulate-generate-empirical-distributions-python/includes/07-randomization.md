@@ -56,10 +56,12 @@ experiment. Be alert for confounding factors.
 
 "Here are the data. There were 1641 shifts in total. Each shift was classified according to whether or not there was at least one death and whether or not Gilbert was present.
 
+``` 
 |GILBERT PRESENT?| Yes        | No        | Total      |
 |----------------|------------|-----------|------------|
 |Yes             | 40         | 217       | 257        |
 |No              | 34         | 1350      | 1384       |
 |Total           | 74         | 1567      | 1641       |
+```
 
 In defense of Gilbert, assess whether her shifts are like random draws from all 1641 shifts in the following steps."

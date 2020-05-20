@@ -1,7 +1,5 @@
 Suppose you're working for a data analytics startup that's now expanding along with its increasing customer base. You receive customer data from multiple sources and you process and save this data for reporting to both internal and external users. Due to this growth and level of access to data, security has become top priority. Your team is responsible for analyzing how to best configure security in Azure Databricks and ensure your company is maintaining compliance.
 
-[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
-
 ## Learning objectives
 
 In this module, you'll:

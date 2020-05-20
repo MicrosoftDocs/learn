@@ -21,18 +21,21 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 
     ```text
     HTTP/1.1 400 Bad Request
-    Date: Mon, 08 Apr 2019 20:29:38 GMT
+    Date: Mon, 18 May 2020 21:04:05 GMT
     Content-Type: application/problem+json; charset=utf-8
     Server: Kestrel
     Transfer-Encoding: chunked
 
     {
-      "errors": {
-        "Price": ["The field Price must be between 0.01 and 7.92281625142643E+28."]
-      },
+      "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
       "title": "One or more validation errors occurred.",
       "status": 400,
-      "traceId": "0HLLSC127L2DR:00000001"
+      "traceId": "|34d8eb25-4f589a8a1ec12a3f.",
+      "errors": {
+        "Price": [
+          "The field Price must be between 0.01 and 7.922816251426434E+28."
+        ]
+      }
     }
     ```
 
@@ -49,13 +52,13 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 
     ```text
     HTTP/1.1 201 Created
-    Date: Mon, 08 Apr 2019 20:34:26 GMT
+    Date: Mon, 18 May 2020 21:07:17 GMT
     Content-Type: application/json; charset=utf-8
     Server: Kestrel
     Transfer-Encoding: chunked
-    Location: https://localhost:5001/products/4
+    Location: https://localhost:5001/products/3
 
-    {"id":4,"name":"Plush Squirrel","price":12.99}
+    {"id":3,"name":"Plush Squirrel","price":12.99}
     ```
 
     Successful creation of the product results in:
@@ -96,7 +99,7 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 
     ```text
     HTTP/1.1 204 No Content
-    Date: Mon, 08 Apr 2019 20:35:41 GMT
+    Date: Mon, 18 May 2020 21:08:48 GMT
     Server: Kestrel
     ```
 
@@ -112,7 +115,7 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 
     ```text
     HTTP/1.1 204 No Content
-    Date: Mon, 08 Apr 2019 20:37:09 GMT
+    Date: Mon, 18 May 2020 21:09:29 GMT
     Server: Kestrel
     ```
 

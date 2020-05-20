@@ -4,9 +4,21 @@ In the example scenario, the team has uploaded the image for the web app to Azur
 
 In this unit, you'll create a new web app by using the Docker image stored in Azure Container Registry. You'll use App Service with a predefined App Service plan to host the web app.
 
-## Create a web app
+## Enable Docker access to the Azure Container Registry (ACR)
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+You'll use Docker to login to the registry and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The ACR allows you to enable the registry name as the username and admin access key as the password to allow Docker to login to your container registry.
+
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), navigate to all resources.
+
+1. Select the container registry you created earlier to navigate to the Overview page for the container registry.
+
+1. Under **Settings**, select **Access keys**.
+
+1. Set the **Admin user** option to **Enable**. This change saves automatically.
+
+You're now ready to create your web app.
+
+## Create a web app
 
 1. Select **Create a resource** > **Web** > **Web App**.
 
@@ -19,7 +31,7 @@ In this unit, you'll create a new web app by using the Docker image stored in Az
     | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
     | Resource Group | Reuse the existing resource group **learn-deploy-container-acr-rg**. |
     | Name | Enter a unique name and make a note of it for later. |
-    | Publish | **Docker Image** |
+    | Publish | **Docker Container** |
     | OS | **Linux** |
     | App Service plan | Use the default. |
 
