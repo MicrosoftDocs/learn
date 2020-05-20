@@ -4,7 +4,7 @@ for all products and devices to be designed with accessibility in mind so that p
 :::image type="content" source="../media/LowVisionOnLaptop.png" alt-text="Person with low vision viewing computer screen using Magnifier":::
 
 ## Assistive technology
-Some people with disabilities may use assistive technology (AT) to access technology or perform tasks. AT is any item, piece of equipment, software program, or product that is used to increase, maintain, or improve the functional capabilities of people with disabilities (ATIA). There is a wide variety of AT products and applications that enable people improve their ability to access technology.
+Some people with disabilities may use assistive technology (AT) to access technology or perform tasks. AT is any item, piece of equipment, software program, or product that is used to increase, maintain, or improve the functional capabilities of people with disabilities (ATIA)*. There is a wide variety of AT products and applications that enable people improve their ability to access technology.
 
 For example, someone with low vision may use Magnifier in Windows 10 to navigate a web page or read a document. With the keyboard shortcut, **Windows logo key** :::image type="content" source="../media/windows-logo.png" alt-text=""::: + **Plus sign** (Figure 1), a person can quickly enlarge text and images to view the content. A person with low vision can also use Speech Recognition (Figure 2) to navigate on a computer to complete tasks with voice commands, such as opening and closing apps.
 
