@@ -14,7 +14,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 ### Deploy an Azure Databricks workspace
 
-1. Click the following button to open the Azure Resource Manager template in the Azure Portal.
+1. Click the following button to open the Azure Resource Manager template in the Azure portal.
    [Deploy Databricks from the Azure Resource Manager Template](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-databricks-workspace%2Fazuredeploy.json)
 
 1. Provide the required values to create your Azure Databricks workspace:

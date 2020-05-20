@@ -24,7 +24,7 @@ quiz:
     - content: "Loss function."
       isCorrect: false
       explanation: "The loss function is used by the optimizer at the time of training the neural network to compute the network loss at each iteration."
-  - content: "What is the size, rank, and local rank when using Horovod to train a deep learning model on 2 servers, each with 2 GPUs?"
+  - content: "What is the size, rank, and local rank when using Horovod to train a deep learning model on two servers, each with 2 GPUs?"
     choices:
     - content: "Size = 2, Rank: [0, 1, 2, 3], and Local Rank: [0, 1]"
       isCorrect: false
