@@ -32,7 +32,7 @@ products:
 - azure
 modules:
 - learn.student-evangelism.learn-data-science-method
-- learn.student-evangelism.introduction-python-datascience-library
+- learn.student-evangelism.introduction-python-using-datascience-library
 - learn.student-evangelism.create-manipulate-tables-using-datascience-library
 - learn.student-evangelism.design-plot-graphs-python
 - learn.student-evangelism.introduction-probability
