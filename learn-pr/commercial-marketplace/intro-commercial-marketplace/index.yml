@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.intro-commercial-marketplace
+metadata:
+  title: Introduction to the Microsoft commercial marketplace 
+  description: Overview of the Microsoft commercial marketplace, including Microsoft AppSource, Azure Marketplace, offer types, and Marketplace Rewards
+  ms.date: 4/21/2020
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to the Microsoft commercial marketplace
+summary: Overview of the Microsoft commercial marketplace, including Microsoft AppSource, Azure Marketplace, offer types, and Marketplace Rewards
+abstract: |
+  In this module, you will:
+  - Develop a basic understanding of the Microsoft commercial marketplace
+  - Discover in-product and web experiences in the commercial marketplace
+  - Differentiate between two storefronts, Microsoft AppSource and Azure Marketplace
+  - Learn what kinds of solutions are sold in Microsoft AppSource and Azure Marketplace
+  - Learn how you can go-to-market with Microsoft by selling through the commercial marketplace
+iconUrl: /learn/achievements/ccc-commercial-marketplace/intro-to-commercial-marketplace.svg
+levels:
+- beginner
+prerequisites: |
+  - None
+roles:
+- business-user
+- business-owner
+- technology-manager
+- administrator
+products:
+- azure
+- dynamics
+- m365
+- office-365
+- power-platform
+units:
+- learn.intro-commercial-marketplace.1-introduction
+- learn.intro-commercial-marketplace.2-definitions
+- learn.intro-commercial-marketplace.3-web-storefronts
+- learn.intro-commercial-marketplace.4-engage-customers
+- learn.intro-commercial-marketplace.5-go-market-with-microsoft
+- learn.intro-commercial-marketplace.6-knowledge-check
+- learn.intro-commercial-marketplace.7-summary
+badge:
+  uid: learn.intro-to-commercial-marketplace.badge

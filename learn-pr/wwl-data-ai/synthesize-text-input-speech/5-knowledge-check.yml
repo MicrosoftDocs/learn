@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.synthesize-text-input-speech.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/30/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is an added \"feature\" of neural voices over standard voices?"
+    choices:
+    - content: "Adds female sounding voices."
+      isCorrect: false
+      explanation: "Incorrect. Standard voices support both male and female voices."
+    - content: "Deep neural networks are used to determine the input language."
+      isCorrect: false
+      explanation: "Incorrect. While neural voices support a smaller number of languages, language detection is not an enhanced feature of neural voices."
+    - content: "Can utilize intonation in the spoken output."
+      isCorrect: true
+      explanation: "Correct. The neural voice capabilities are enhanced through deep neural networks and improve on the standard voices by adding the ability to utilize stress and intonation in the spoken language."
+  - content: "What additional parameter is required when synthesizing text input to an audio file?"
+    choices:
+    - content: "Language"
+      isCorrect: false
+      explanation: "Incorrect. Language is not a required parameter."
+    - content: "An audio configuration parameter"
+      isCorrect: true
+      explanation: "Correct. Synthesis to an audio output requires just a speech configuration parameter but when saving to a file, you also must pass in a file name, which is done using the audio configuration parameter."
+    - content: "Service Region"
+      isCorrect: false
+      explanation: "Incorrect. Service region is a required parameter for both audio output and audio file output."
+  - content: "When is it appropriate to use the Long Audio API?"
+    choices:
+    - content: "For supporting long filenames."
+      isCorrect: false
+      explanation: "Incorrect. It is not used for long file name support."
+    - content: "When synthesizing large text files."
+      isCorrect: true
+      explanation: "Correct. To asynchronously synthesize text-to-speech files longer than 10 minutes, you should use the Long Audio API."
+    - content: "For enhanced processing of neural voices"
+      isCorrect: false
+      explanation: "Incorrect. The Long Audio API isn't specific to standard or neural voices."

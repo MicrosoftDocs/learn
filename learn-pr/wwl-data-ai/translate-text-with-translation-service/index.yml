@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you will be able to perform text and speech translation using Azure Cognitive Services.
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/translate-text-with-translation-service.svg
 levels:
 - beginner
 roles:

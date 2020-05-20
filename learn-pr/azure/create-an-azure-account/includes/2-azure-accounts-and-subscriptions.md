@@ -1,4 +1,4 @@
-You can purchase Azure directly from Microsoft by signing up on the Azure website or through a Microsoft representative. You can also purchase Azure through a Microsoft partner. Cloud Solution Provider partners offer a range of complete managed cloud solutions for Azure.
+You can purchase Azure access directly from Microsoft by signing up on the Azure website or through a Microsoft representative. You can also purchase Azure access through a Microsoft partner. Cloud Solution Provider partners offer a range of complete managed cloud solutions for Azure.
 
 If you're new to Azure, you can sign up for a free account on the Azure website to start exploring at no cost to you. Once you're ready, you can choose to upgrade and start paying for the Azure services you use above the free amounts.
 

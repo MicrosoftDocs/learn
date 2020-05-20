@@ -30,7 +30,7 @@ The Open Web Application Security Project ([OWASP](https://www.owasp.org?azure-p
 
 OWASP also provides tools, code, and documentation to help practitioners understand potential threats in their code and to take action.
 
-One notable project is the [OWASP Top Ten](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project?azure-portal=true). The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts. While there are hundreds of potential security risks out there, the Top Ten details some of the most important and most common risks that many organizations can tackle first.
+One notable project is the [OWASP Top Ten](https://owasp.org/www-project-top-ten/). The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts. While there are hundreds of potential security risks out there, the Top Ten details some of the most important and most common risks that many organizations can tackle first.
 
 You see the OWASP Top Ten in action when you scan the _Space Game_ project later in this module.
 

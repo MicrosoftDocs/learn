@@ -14,7 +14,7 @@ abstract: |
   Learn how to read text in images with the Computer Vision service
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/read-text-computer-vision.svg
 levels:
 - beginner
 roles:

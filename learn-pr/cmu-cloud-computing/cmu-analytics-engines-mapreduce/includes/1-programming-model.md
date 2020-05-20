@@ -16,6 +16,6 @@ Map and reduce tasks consume different data, operating independently and in para
 2. _S. Ghemawat, H. Gobioff, and S. T. Leung (Oct. 2003). [The Google File System](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf) SOSP_
 3. _S. Chen and S. W. Schlosser (2008). [MapReduce Meets Wider Varieties of Applications](https://pdfs.semanticscholar.org/b702/96efb830d11ea047484998a8b52c20cf836b.pdf) IRP-TR-08-05, Intel Research_
 
-[^1]: <(http://hadoop.apache.org/docs/r1.0.4/hdfs_design.html> "*HDFS Architecture Guide* Hadoop"
+[^1]: <http://hadoop.apache.org/docs/r1.0.4/hdfs_design.html> "*HDFS Architecture Guide* Hadoop"
 [^2]: <https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf> "S. Ghemawat, H. Gobioff, and S. T. Leung (Oct. 2003). *The Google File System* SOSP"
 [^3]: <https://pdfs.semanticscholar.org/b702/96efb830d11ea047484998a8b52c20cf836b.pdf> "S. Chen and S. W. Schlosser (2008). *MapReduce Meets Wider Varieties of Applications* IRP-TR-08-05, Intel Research"

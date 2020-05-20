@@ -14,7 +14,7 @@ abstract: |
   Learn how to use the built-in receipt processing capabilities of the Form Recognizer service
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/analyze-receipts-form-recognizer.svg
 levels:
 - beginner
 roles:

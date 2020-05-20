@@ -42,7 +42,7 @@ The following six areas enable virtualization on the cloud:
 5. _A. Beloglazov and R. Buyya (2010). [Energy Efficient Allocation of Virtual Machines in Cloud Data Centers](https://ieeexplore.ieee.org/document/5493430) CCGrid_
 6. _A. Beloglazov, J. Abawajy, and R. Buyya (2012). [Energy-Aware Resource Allocation Heuristics for Efficient Management of Data Centers for Cloud Computing](https://www.researchgate.net/publication/235720422_Energy-Aware_Resource_Allocation_Heuristics_for_Efficient_Management_of_Data_Centers_for_Cloud_Computing) Future Generation Computer Systems_
 7. _Y. Jin, Y. Wen, and Q. Chen (2012). [Energy Efficiency and Server Virtualization in Data Centers: An Empirical Investigation](https://ieeexplore.ieee.org/document/6193474) Computer Communications Workshops (INFOCOM WKSHPS)_
-8. _Silicon Valley Leadership Group (2008). [Accenture's Data Center Energy Forecast Report 2008](https://www.greenbiz.com/research/report/2008/12/23/accentures-data-center-energy-forecast-report-2008)_
+8. _Silicon Valley Leadership Group (2008). Accenture's Data Center Energy Forecast Report 2008_
 
 ***
 

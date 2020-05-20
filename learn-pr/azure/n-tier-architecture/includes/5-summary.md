@@ -14,4 +14,4 @@ The source code for the application is available in the [MicrosoftDocs/mslearn-n
 
 One item we didn't cover in much detail was the mechanics of the deployment through the resource manager template. For more information on how these work, take the [Build Azure Resource Manager templates](https://docs.microsoft.com/learn/modules/build-azure-vm-templates/) module. Templates are a fantastic way to automate your infrastructure, and this module can help you get started.
 
-The [Architect great solutions in Azure](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure/) learning path has guidance on how to build a solid foundation for any architecture on Azure.
+The [Build great solutions with the Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/learn/paths/azure-well-architected-framework/) learning path has guidance on how to build a solid foundation for any architecture on Azure.

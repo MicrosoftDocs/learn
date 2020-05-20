@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azdo.deploy-kubernetes
+metadata:
+  title: Automate multi-container Kubernetes deployments with Azure Pipelines - Learn
+  description: Implement a CI/CD pipeline for multiple containers to Kubernetes.
+  ms.date: 04/24/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Automate multi-container Kubernetes deployments with Azure Pipelines
+summary: Implement a CI/CD pipeline for multiple containers to Kubernetes.
+abstract: |
+  In this module, you'll:
+  - Understand the benefits of Kubernetes and when to use it.
+  - Create Azure resources to support a Kubernetes cluster.
+  - Update a basic release pipeline to build, publish, and deploy multiple Docker containers to the Kubernetes cluster.
+  - Monitor the build, release, and deployment of the project.
+prerequisites: |
+  - An Azure subscription
+  - An Azure DevOps organization
+  - A GitHub account
+iconUrl: /learn/achievements/azure-devops/deploy-kubernetes.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+units:
+- learn.azdo.deploy-kubernetes.1-introduction
+- learn.azdo.deploy-kubernetes.2-why-container-orchestration
+- learn.azdo.deploy-kubernetes.3-set-up-environment
+- learn.azdo.deploy-kubernetes.4-deploy-kubernetes
+- learn.azdo.deploy-kubernetes.5-clean-up-environment
+- learn.azdo.deploy-kubernetes.6-summary
+badge:
+  uid: learn.azdo.deploy-kubernetes.badge

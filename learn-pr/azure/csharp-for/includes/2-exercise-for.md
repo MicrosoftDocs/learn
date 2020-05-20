@@ -138,7 +138,7 @@ We first saw the `break` keyword in the module "Branch the flow of code using th
 
 ### Step 5 - Loop through each element of an array
 
-A common usage for the `for` statement is to iterate through an array of elements, especially if you need some control over the manner in which the iteration happens.  While the `foreach` iterates through every element of the array, the `for` statement can be tweaked to provide most customization.
+A common usage for the `for` statement is to iterate through an array of elements, especially if you need some control over the manner in which the iteration happens.  While the `foreach` iterates through every element of the array, the `for` statement can be tweaked to provide more customization.
 
 Update the code in the .NET Editor to match the following code listing.
 

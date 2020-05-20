@@ -48,7 +48,7 @@ The Node.js Express API runs on port **7070**. The Angular application runs on a
 We'll allow the Angular application to proxy requests to the Node.js Express application using Angular's _proxy.conf.json_ file.
 
 1. Open _proxy.conf.json_
-1. Change the port to **7070**
+1. Notice the port is set to **7070**
 
    ```json
    {
@@ -72,7 +72,7 @@ You'll run and debug the applications together. You'll hit pause on the breakpoi
 1. Select **Debug Express and Angular** from the dropdown list
 1. Press **F5** to start the debugger
 
-When the application launches, it gets the list of vacations. The Angular `VacationComponent` sends an HTTP request to get the vacation data. When the browser opens to <http://localhost:7070>, the code execution pauses on your first breakpoint in the _vacations.component.ts_ file for the `getVacations()` function.
+When the application launches, it gets the list of vacations. The Angular `VacationComponent` sends an HTTP request to get the vacation data. When the browser opens to `http://localhost:7070`, the code execution pauses on your first breakpoint in the _vacations.component.ts_ file for the `getVacations()` function.
 
 You can unpause execution and continue by pressing the **F5**.
 
