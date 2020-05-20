@@ -24,7 +24,7 @@ difficulty typing with a regular keyboard to write documents and compose e-mails
 like a broken arm.
 
 To set up Dictation and get started using it:
-1. Select the **Windows Logo Key ** + **H**.
+1. Select the **Windows Logo Key :::image type="content" source="../media/windows-logo.png" alt-text="":::** + **H**.
 2. To stop dictating, simply say "Stop dictation."
 3. If using a tablet or a touchscreen, tap the microphone button on the touch keyboard to start dictating. Tap the button again to stop dictation, or say "Stop dictation."
 
@@ -54,8 +54,8 @@ Dictation is one of many accessibility tools built into Windows 10. These featur
 For example, Narrator is a screen reader built into Windows 10 that describes what's on your screen so you can use that information to navigate your device. Controlling Narrator with keyboard commands lets you use your PC without a mouse. This makes it easier for people who are blind or have low vision to complete common tasks such as navigating apps, reading text, and interacting with user interface elements like buttons. Narrator can also be used with braille displays.
 
 There are three ways to start and stop Narrator:
-1. Press **Windows logo key** **** + **Ctrl** + **Enter** together to start Narrator. Press these keys again to stop Narrator. 
-2. Press **Windows logo key** **** + **Ctrl** + **N** to open Narrator settings, and then turn on the toggle under **Use Narrator**.
+1. Press **Windows logo key** :::image type="content" source="../media/windows-logo.png" alt-text=""::: + **Ctrl** + **Enter** together to start Narrator. Press these keys again to stop Narrator. 
+2. Press **Windows logo key** :::image type="content" source="../media/windows-logo.png" alt-text=""::: + **Ctrl** + **N** to open Narrator settings, and then turn on the toggle under **Use Narrator**.
 3. Press **Ctrl** + **Alt** + **Del** to go to your sign-in screen, select the **Ease of access** button in the lower-right corner, then turn on the toggle under **Narrator**.
 
 Every time you turn on Narrator, you'll go to Narrator Home, which gives you one place where you can open everything you need, whether you want to change your Narrator settings or learn basics with QuickStart.
@@ -68,7 +68,7 @@ Color filters can also be found in the Ease of Access menu. This setting can mak
 elements on the screen. There are also specific filters to make colors more distinct for people with color blindness.
 
 To turn on color filters:
-1. Go to **Settings** > **Ease of Access** > **Color filters** and toggle **Turn on color filters** to **On**. Or use the keyboard shortcut **Windows logo key** **** + **Ctrl** + **C**.
+1. Go to **Settings** > **Ease of Access** > **Color filters** and toggle **Turn on color filters** to **On**. Or use the keyboard shortcut **Windows logo key** :::image type="content" source="../media/windows-logo.png" alt-text=""::: + **Ctrl** + **C**.
 2. Select the color filter you prefer.
 
 :::image type="content" source="../media/color-filters.png" alt-text="Screenshot of the Windows 10 Color Filters menu":::
@@ -80,7 +80,7 @@ Focus assist allows you to turn off notifications in Windows anytime you need to
 
 People with mental health disabilities such as anxiety may benefit from the enhanced ability to get things done without distractions that Focus assist provides. By eliminating moving objects like pop-up notifications, the setting may also reduce stress and help people focus on the task at hand.
 
-To use Focus assist, select the **Start**  button and type **Focus assist settings** in the search box. You can then choose if you want to receive all notifications, priority notifications only, or just alarms.
+To use Focus assist, select the **Start** :::image type="content" source="../media/windows-logo.png" alt-text=""::: button and type **Focus assist settings** in the search box. You can then choose if you want to receive all notifications, priority notifications only, or just alarms.
 In Windows 10, you can also access Focus assist settings by selecting the **Notifications & actions** button.
 
 :::image type="content" source="../media/action-center.png" alt-text="Action center in Windows 10 with Focus assist highlighted":::
