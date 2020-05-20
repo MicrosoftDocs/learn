@@ -2,14 +2,14 @@
 uid: learn.reactors.unsupervised-learning-clustering
 metadata:
   title: 'Unsupervised learning: Clustering'
-  description: Learn how to TBD.
+  description: Learn about *k*-means clustering - how to use it, the kinds of results to expect, and how to interpret the data.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
 title: 'Unsupervised learning: Clustering'
-summary: Learn how to TBD.
+summary: Learn about *k*-means clustering - how to use it, the kinds of results to expect, and how to interpret the data.
 abstract:  | 
   In this module, you will:
   - Learn about the kinds of results obtained with the *k*-means algorithm
