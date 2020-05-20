@@ -1,4 +1,3 @@
-
 Similar to the situation with PCA, we can create visualizations of our clusters, but visualization is crude at best when it has been projected down through so many dimensions. That said, even trying to project from 43 dimensions down to 3 dimensions, noticeable patterns persist. To perform this visualization, we will first need to import the Axes3D module.
 
 ```python
@@ -16,9 +15,11 @@ plt.show()
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="../media/matplotlib-scatter-3.svg" alt-text="Axes3D ax.scatter plot output":::
+***
 
 > [!div class="alert is-tip"]
 >
