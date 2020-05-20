@@ -4,7 +4,7 @@ To complete the end-to-end solution for spotting polar bears in the wild, you wi
 
 You used the Custom Vision Service to train an image-classification model to differentiate between different types of Arctic wildlife, and modified the Azure Function you wrote to output the results to an Azure SQL Database. The first step in using Microsoft Power BI to explore and visualize this data is connecting it to the database. In this exercise, you will connect Power BI Desktop to the Azure SQL Database.
 
-1. If Power BI Desktop isn't already installed on your computer, go to [https://powerbi.microsoft.com/desktop/](https://powerbi.microsoft.comgit/desktop/?azure-portal=true) and install it now.
+1. If Power BI Desktop isn't already installed on your computer, go to [https://powerbi.microsoft.com/desktop/](https://powerbi.microsoft.com/desktop/?azure-portal=true) and install it now.
 
 1. Start Power BI Desktop. If you are asked to sign in, do so using your work/school or organizational account.
 
