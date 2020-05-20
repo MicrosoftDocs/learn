@@ -1,5 +1,7 @@
 Now that we have an idea of some of the individual entries in the dataset, let's get a better sense of the dataset as a whole.
 
+Run:
+
 ```python
 df.info()
 ```
@@ -158,6 +160,8 @@ df.head()
 
 ### Try it yourself
 
+> **Sarah** TBD, provide possible solution and output.
+
 What does the `apply()` method do in the preceding code cell?
 
 <details>
@@ -165,7 +169,7 @@ What does the `apply()` method do in the preceding code cell?
 
 If you are unsure, you can refer to the [pandas reference documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.apply.html?azure-portal=true).
 
-TBD possible solution and output
+TBD, provide possible solution and output.
 
 </details>
 
@@ -208,12 +212,14 @@ Spam messages skew much longer than ham messages.
 
 ### Try it yourself
 
+> **Sarah** TBD, provide answers to the questions.
+
 Why does it appear in the details histograms that there is almost no overlap between the lengths of ham and spam text messages? What do the differences in scale tell us (and what could they inadvertently obscure)?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-TBD answers to the questions.
+TBD provide answers to the questions.
 
 </details>
 

@@ -58,5 +58,5 @@ $P({\rm S}\mid {\rm word_1}, {\rm word_2},\ldots, {\rm word}_n)=P({\rm S})P({\rm
 > [!div class="alert is-tip"]
 > ### Key takeaway
 >
-> We cannot emphasize enough that this chain rule expressed in the preceding equation—that the probability of a message being spam based on the words in it is equal to the product of the likelihoods of those individual words appearing in messages known to be spam—is not true. But it gets good results and, in the world of data science, fast and good enough always trump mathematical fidelity.
+> We cannot emphasize enough that this chain rule expressed in the preceding equation—that the probability of a message being spam based on the words in it is equal to the product of the likelihoods of those individual words appearing in messages known to be spam—is *not* true. But it gets good results and, in the world of data science, fast and good enough always trump mathematical fidelity.
 >
