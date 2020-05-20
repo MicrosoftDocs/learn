@@ -12,11 +12,15 @@ title: 'Unsupervised learning: Clustering'
 summary: Learn how to TBD.
 abstract:  | 
   In this module, you will:
-  - TBD
+  - Learn about the kinds of results obtained with the *k*-means algorithm
+  - Get basic knowledge about how to interpret those results
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - TBD
+  - Basic data science for Python
+  - Understand data preparation for machine learning
+  - Preliminary knowledge of linear regression
+  - Know how to predict numeric values and categories
   
 iconUrl: /learn/achievements/reactors/unsupervised-learning-clustering.svg
 levels:
