@@ -22,6 +22,6 @@ Razor is based on ASP.NET, and designed for creating web applications.
 
 A razor file defines components that make up a portion UI of the app. Components in Blazor are analogous to user controls in ASP.NET Web Forms.
 
-If you explore the project, you'll see that most files .razor files. 
+If you explore the project, you'll see that most files are .razor files. 
 
 At compile time, each Razor component is built into a .NET class. The class includes common UI elements such as state, rendering logic, lifecycle methods, and event handlers. 
