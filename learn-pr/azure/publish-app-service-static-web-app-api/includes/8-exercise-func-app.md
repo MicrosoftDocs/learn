@@ -198,12 +198,6 @@ Now it's time to watch your web app and Azure Functions project work together. S
    cd api
    ```
 
-1. Install the Azure Functions app dependencies
-
-   ```bash
-   npm install
-   ```
-
 1. Run the Azure Functions app locally
 
    ```bash
