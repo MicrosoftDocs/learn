@@ -1,10 +1,10 @@
 In this unit, you'll use a script to deploy the existing *eShopOnContainers* app to AKS.
 
-
+[!INCLUDE[Azure Cloud Shell instructions](../../includes/use-az-cloud-shell.md)]
 
 ## Run deployment script
 
-Run the following command in the command shell. Be patient, as setup can take a few minutes to complete.
+Run the following command in the command shell: 
 
 ```bash
 . <(wget -q -O - https://aka.ms/microservices-aspnet-core-setup)
