@@ -2,7 +2,7 @@ In this module, you learned how to use MLflow to manage your machine learning li
 
 Now that you have concluded this module, you should know:
 
-1. Use MLflow to track experiments, log metrics, and compare runs
+* Use MLflow to track experiments, log metrics, and compare runs
 
 ## Cleanup
 
