@@ -12,3 +12,4 @@ In this module, you'll:
 
 - Familiarity with Azure Files
 - Basic knowledge of Windows Server file shares
+- (Optional) Access to an Azure subscription

@@ -2,6 +2,8 @@ You can run the Azure File Sync evaluation PowerShell cmdlets on any Windows Ser
 
 Before you install and set up Azure File Sync on your company's CAD file server, you're going to assess the server to ensure it's compatible. You'll run the evaluation cmdlets to produce a report.
 
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit4/player?format=ny]
+
 ## Create a Windows file server
 
 You'd normally install Azure File Sync on your on-premises server. For this exercise, you'll create an Azure Virtual Machine (VM) to act as your Windows file server.
