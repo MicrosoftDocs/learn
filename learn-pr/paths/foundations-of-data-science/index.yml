@@ -45,3 +45,4 @@ modules:
 - learn.student-evangelism.predict-classes-with-knn-classifier
 trophy:
   uid: learn.foundations-of-data-science.trophy
+  
