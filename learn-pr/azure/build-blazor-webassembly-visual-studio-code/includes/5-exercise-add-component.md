@@ -38,7 +38,7 @@ Here we'll set up the route for our new page and add a link to our side menu.
 
     ```cshtml
     <li class="nav-item px-3">
-        <NavLink class="nav-link" href="calc">
+        <NavLink class="nav-link" href="compoundinterest">
             <span class="oi oi-plus" aria-hidden="true"></span> Compound Interest
         </NavLink>
     </li>
