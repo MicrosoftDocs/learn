@@ -128,11 +128,11 @@ Having a great web experience is critical in today's business world. Azure inclu
 > | Service Name | Description |
 > |--------------|-------------|
 > | Azure App Service | Quickly create powerful cloud web-based apps |
-> | Azure Notification Hubs |Send push notifications to any platform from any back end |
-> | Azure API Management | Publish APIs to developers, partners, and employees securely and at scale |
-> | Azure Cognitive Search | Fully managed search as a service |
-> | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale |
-> | Azure SignalR Service | Add real-time web functionalities easily |
+> | Azure Notification Hubs |Send push notifications to any platform from any back end. |
+> | Azure API Management | Publish APIs to developers, partners, and employees securely and at scale. |
+> | Azure Cognitive Search | Fully managed search as a service. |
+> | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale. |
+> | Azure SignalR Service | Add real-time web functionalities easily. |
 
 ### Internet of Things
 
@@ -145,7 +145,7 @@ There are a number of services that can assist and drive end-to-end solutions fo
 > |--------------|-------------|
 > | IoT Central | Fully-managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage your IoT assets at scale |
 > | Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices |
-> | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models |
+> | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models.
 
 ### Big Data
 
@@ -158,7 +158,7 @@ Open source cluster technologies have been developed to deal with these large da
 > |--------------|-------------|
 > | Azure Synapse Analytics | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud |
-> | Azure Databricks | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure |
+> | Azure Databricks | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure. |
 
 ### Artificial Intelligence
 
@@ -179,11 +179,11 @@ A closely related set of products are the _cognitive services_. These are pre-bu
 > [!div class="mx-tableFixed"]
 > | Service Name | Description |
 > |--------------|-------------|
-> | Vision | Image-processing algorithms to smartly identify, caption, index, and moderate your pictures and videos |
-> | Speech | Convert spoken audio into text, use voice for verification, or add speaker recognition to your app |
-> | Knowledge mapping | Map complex information and data in order to solve tasks such as intelligent recommendations and semantic search |
-> | Bing Search | Add Bing Search APIs to your apps and harness the ability to comb billions of webpages, images, videos, and news with a single API call |
-> | Natural Language processing | Allow your apps to process natural language with pre-built scripts, evaluate sentiment and learn how to recognize what users want |
+> | Vision | Image-processing algorithms to smartly identify, caption, index, and moderate your pictures and videos. |
+> | Speech | Convert spoken audio into text, use voice for verification, or add speaker recognition to your app. |
+> | Knowledge mapping | Map complex information and data in order to solve tasks such as intelligent recommendations and semantic search. |
+> | Bing Search | Add Bing Search APIs to your apps and harness the ability to comb billions of webpages, images, videos, and news with a single API call. |
+> | Natural Language processing | Allow your apps to process natural language with pre-built scripts, evaluate sentiment and learn how to recognize what users want. |
 
 ### DevOps
 

@@ -15,7 +15,8 @@ abstract: |
   - Manipulate date and time values in Azure Databricks
   - Rename columns in Azure Databricks
   - Aggregate data in Azure Databricks DataFrames
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/work-dataframes-advanced-methods-azure-databricks.svg
 levels:
 - intermediate
