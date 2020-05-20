@@ -22,6 +22,6 @@ In this module, you will:
 
 - Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization
 - Learn about the different products and services that encompass Microsoft Endpoint Manager
-- Determine how to assess your Enterprise Mobility Management (EMM) needs
+- Consider the device types used by your organization and how they fit into your endpoint environment
 - Understand the benefits of Microsoft Endpoint Manager
 

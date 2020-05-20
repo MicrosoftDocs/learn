@@ -2,7 +2,7 @@ Microsoft Endpoint Manager is a single, integrated management platform for manag
 
 Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, and servers that your organization uses. Additionally, endpoints also include the apps used by your organization. 
 
-By protecting and monitoring your organization's endpoints using Microsoft Endpoint Manager, you do the following actions:
+By protecting and monitoring your organization's endpoints using Microsoft Endpoint Manager, you accomplish the following actions:
 - Protect the data that the people at your organization are accessing.
 - Ensure your organization is using proper credentials to access and share company data.
 - Safeguard the devices and apps that access your organization resources.
