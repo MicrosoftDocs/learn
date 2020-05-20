@@ -70,7 +70,7 @@ The output is:
 |  | Cluster | FoodGroup |
 | --- | --- | --- |
 | **NDB_No** |  |  |
-| 1001 | 4 | Dairy and Egg Products |
+| **1001** | 4 | Dairy and Egg Products |
 | **1002** | 4 | Dairy and Egg Products |
 | **1003** | 4 | Dairy and Egg Products |
 | **1004** | 3 | Dairy and Egg Products |
