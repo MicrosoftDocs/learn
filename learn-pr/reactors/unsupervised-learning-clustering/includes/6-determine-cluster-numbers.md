@@ -27,9 +27,11 @@ plt.show()
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="../media/elbow-method-plot.svg" alt-text="Two dimensional graph that shows the elbow method results.":::
+***
 
 > [!div class="alert is-tip"]
 >
