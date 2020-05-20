@@ -1,9 +1,9 @@
 > [!NOTE]
 > You can find an interactive version of this unit named **regression-line.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio codespaces environment for the Learning Path "Foundations of Data Science" refer to the first unit Setting up your virtual environment.
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path [Foundations of Data Science](https://docs.microsoft.com/learn/paths/foundations-of-data-science/) refer to the first unit [Setting up your virtual environment](https://docs.microsoft.com/learn/modules/make-predictions-with-linear-regression/00-setup)
 
-Open your [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Open your [Visual Studio Codespaces](https://online.visualstudio.com/environments).
 
 The correlation coefficient $r$ doesn't just measure how clustered the
 points in a scatter plot are about a straight line. It also helps
@@ -49,7 +49,7 @@ heights_with_predictions.scatter('MidParent')
 
 ![regression example](../media/77-regression-line-5-0.png)
 
-### Measuring in Standard Units
+### Measuring in standard units
 
 Let's see if we can find a way to identify this line. First, notice that
 linear association doesn't depend on the units of measurement--we
@@ -316,7 +316,7 @@ $$
 \frac{\mbox{the given}~x ~-~\mbox{average of}~x}{\mbox{SD of}~x}
 $$
 
-![regline](../media/regline.png)
+![Regression Line](../media/regline.png)
 
 The slope and intercept of the regression line in original units can be
 derived from the diagram above.
@@ -347,7 +347,7 @@ def intercept(t, label_x, label_y):
     return np.mean(t.column(label_y)) - slope(t, label_x, label_y)*np.mean(t.column(label_x))
 ```
 
-### The Regression Line and Galton's Data
+### The regression line and Galton's data
 
 The correlation between midparent height and child's height is 0.32:
 
@@ -451,7 +451,7 @@ line. Notice how the line is close to the gold graph of averages.
 For these data, the regression line does a good job of approximating the
 centers of the vertical strips.
 
-### Fitted Values
+### Fitted values
 
 The predictions all lie on the line and are known as the "fitted
 values". The function `fit` takes the name of the table and the labels
@@ -483,7 +483,7 @@ heights.scatter('MidParent', fit_line=True)
 
 ![regression example](../media/77-regression-line-50-0.png)
 
-### Units of Measurement of the Slope
+### Units of measurement of the slope
 
 The slope is a ratio, and it worth taking a moment to study the units in
 which it is measured. Our example comes from the familiar dataset about
@@ -560,7 +560,7 @@ $$
 \mbox{estimated height} ~=~ 0.2 \cdot \mbox{given weight} ~+~ 4
 $$
 
-The slope of the line is measures the increase in the estimated height
+The slope of the line measures the increase in the estimated height
 per unit increase in weight. The slope is positive, and it is important
 to note that this does not mean that we think basset hounds get taller
 if they put on weight. The slope reflects the difference in the average

@@ -26,7 +26,7 @@ correlation(heights, 'MidParent', 'Residual')
 
 That doesn't look like zero, but it is a tiny number that is 0 apart
 from rounding error due to computation. Here it is again, correct to 10
-decimal places. The minus sign is because of the rounding that above.
+decimal places. The minus sign is because of the rounding error from above.
 
 ``` python
 round(correlation(heights, 'MidParent', 'Residual'), 10)
@@ -48,7 +48,7 @@ round(correlation(dugong, 'Length', 'Residual'), 10)
     0.0
 ```
 
-### Average of Residuals
+### Average of residuals
 
 **No matter what the shape of the scatter diagram, the average of the
 residuals is 0.**
@@ -116,7 +116,7 @@ r = correlation(heights, 'MidParent', 'Child')
 np.sqrt(1 - r**2) * np.std(heights.column('Child'))
 ```
 
-``` outlook
+``` output
     3.388079916395342
 ```
 

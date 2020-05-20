@@ -235,8 +235,8 @@ Here is the root mean squared error corresponding to the regression
 line. By a remarkable fact of mathematics, no other line can beat this
 one.
 
--   **The regression line is the unique straight line that minimizes the
-    mean squared error of estimation among all straight lines.**
+**The regression line is the unique straight line that minimizes the
+mean squared error of estimation among all straight lines.**
 
 ``` python
 lw_rmse(lw_reg_slope, lw_reg_intercept)
@@ -371,12 +371,6 @@ from minimize: 4744.784845352655
 
 ### The least squares line
 
-Therefore, we have found not only that the regression line minimizes
-mean squared error, but also that minimizing mean squared error gives us
-the regression line. The regression line is the only line that minimizes
-mean squared error.
+Therefore, we have found not only that the regression line minimizes mean squared error, but also that minimizing mean squared error gives us the regression line. The regression line is the only line that minimizes mean squared error.
 
-That is why the regression line is sometimes called the "least squares
-line." squared error, but also that minimizing mean squared error gives us
-the regression line. The regression line is the only line that minimizes
-mean squared error.
+That is why the regression line is sometimes called the "least squares line."

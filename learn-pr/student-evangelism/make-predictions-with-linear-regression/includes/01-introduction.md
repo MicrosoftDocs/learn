@@ -693,7 +693,7 @@ Image("../media/choco-nobel.png")
 
 ![correlation example](../media/76-correlation-65-0.png)
 
-## Learning Objectives
+## Learning objectives
 
 - Learn about Correlation as a measure of linear association and the correlation coefficient.
 - Understand the Regression line, Regression Effect, and the equation of the regression line.

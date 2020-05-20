@@ -22,7 +22,7 @@ quiz:
           isCorrect: false
           explanation: Incorrect.
         - content: '0.262079'
-          explanation: Incorrect.
+          explanation: Correct.
           isCorrect: true
         - content: '0.464763'
           isCorrect: false
