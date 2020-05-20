@@ -14,9 +14,9 @@ Run the following script in the command shell to update the existing AKS cluster
 
 The preceding script uses `helm` commands to:
 
-* Uninstall the **WebStatus**, **WebSPA**, and aggregator Helm charts from the AKS deployment.
-* Install the reconfigured **WebStatus** and aggregator Helm charts using a public container registry.
-* Install the new **Coupon.API** chart and the reconfigured **WebSPA** chart using your private ACR.
+* Uninstall the *WebStatus*, *WebSPA*, and aggregator Helm charts from the AKS deployment.
+* Install the reconfigured *WebStatus* and aggregator Helm charts using a public container registry.
+* Install the new *Coupon.API* chart and the reconfigured *WebSPA* chart using your private ACR.
 
 ## Verify changes
 

@@ -1,4 +1,6 @@
-In this unit, you'll use a script to deploy the existing eShopOnContainers app to AKS.
+In this unit, you'll use a script to deploy the existing *eShopOnContainers* app to AKS.
+
+
 
 ## Run deployment script
 
@@ -21,4 +23,4 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 > [!NOTE]
 > Non-blocking warnings are expected in the deployment process.
 
-The app the script deploys is a smaller, modified version of the larger [eShop on Containers reference app](https://github.com/dotnet-architecture/eshoponcontainers). While the script is running, proceed to the next unit to review the eShopOnContainers architecture.
+The app the script deploys is a smaller, modified version of the [eShop on Containers reference app](https://github.com/dotnet-architecture/eshoponcontainers). While the script is running, proceed to the next unit to review the *eShopOnContainers* architecture.
