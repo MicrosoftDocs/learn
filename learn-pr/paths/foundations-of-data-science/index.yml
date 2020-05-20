@@ -32,17 +32,16 @@ products:
 - azure
 modules:
 - learn.student-evangelism.learn-data-science-method
-- learn.student-evangelism.introduction-to-python-datascience-library
+- learn.student-evangelism.introduction-python-datascience-library
 - learn.student-evangelism.create-manipulate-tables-using-datascience-library
 - learn.student-evangelism.design-plot-graphs-python
 - learn.student-evangelism.introduction-probability
-- learn.student-evangelism.simulate-generate-empirical-distirbutions-python
+- learn.student-evangelism.simulate-generate-empirical-distributions-python
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics
 - learn.student-evangelism.compare-two-samples-by-bootstrapping
 - learn.student-evangelism.understand-normal-curve
 - learn.student-evangelism.make-predictions-with-linear-regression
-- learn.student-evangelism.simulate-distribution-of-regression-coefficients
+- learn.student-evangelism.simulate-distribution-regression-coefficients
 - learn.student-evangelism.predict-classes-with-knn-classifier
 trophy:
   uid: learn.foundations-of-data-science.trophy
-  
