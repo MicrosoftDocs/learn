@@ -12,10 +12,10 @@ title: Create and deploy a cloud-native ASP.NET Core microservice
 summary: Create and deploy an ASP.NET Core microservice to AKS. 
 abstract: | 
   In this module, you will:
-  - Examine an existing ASP.NET microservices application running in Azure Kubernetes Service (AKS).
-  - Create an ASP.NET microservice and containerize it.
-  - Publish the container to Azure Container Registry (ACR).
-  - Deploy the container to the existing application in AKS.
+  - Examine existing ASP.NET Core microservices running in Azure Kubernetes Service (AKS).
+  - Implement a new ASP.NET Core microservice and containerize it.
+  - Publish the Docker image to Azure Container Registry (ACR).
+  - Deploy the Docker container to the existing app in AKS.
 prerequisites: |
   - Experience writing C# at the beginner level
   - Conceptual knowledge of containers at the beginner level

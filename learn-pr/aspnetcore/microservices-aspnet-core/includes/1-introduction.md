@@ -9,12 +9,13 @@ This module explores completing the coupon service, adding it to the existing so
 
 In this module, you will:
 
-* Examine an existing ASP.NET Core microservice running in Azure Kubernetes Service (AKS).
-* Create an ASP.NET Core microservice.
-* Deploy the microservice to the existing application in AKS.
+* Examine existing ASP.NET Core microservices running in Azure Kubernetes Service (AKS).
+* Implement a new ASP.NET Core microservice and containerize it.
+* Publish the Docker image to Azure Container Registry (ACR).
+* Deploy the Docker container to the existing app in AKS.
 
 ## Prerequisites
 
 * Experience writing C# at the beginner level
 * Conceptual knowledge of containers at the beginner level
-* Access to an Azure subscription 
+* Access to an Azure subscription

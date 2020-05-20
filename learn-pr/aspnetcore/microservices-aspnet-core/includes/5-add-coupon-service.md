@@ -2,7 +2,7 @@ In this unit, you complete the *Coupon.API* project. You will then run a script 
 
 ## Coupon service architecture
 
-
+%TODO%
 
 ## Add the coupon service
 
@@ -67,17 +67,19 @@ An ASP.NET Core project for the coupon service has been provided in *src/Service
     * Adds the coupon service endpoints to the aggregator Helm chart in *deploy/k8s/helm-simple/webshoppingagg/templates/configmap.yaml*
     * Adds the coupon health check to the *WebStatus* Helm chart in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*.
 
-    The Helm chart for the coupon service is comprised of the following files in *deploy/k8s/helm-simple/coupon/*.
+    When you create an object in a Kubernetes (or AKS) cluster, you must provide the object specification in a YAML file. In the next unit, you'll use the template functionality in the open-source tool Helm to generate and send the YAML files to the AKS cluster.
+    
+    The Helm chart for the coupon service is comprised of the following files in *deploy/k8s/helm-simple/coupon/*:
 
-    | File                        | Description |
-    |-----------------------------|-------------|
-    | *Chart.yaml*                |             |
-    | *templates/configmap.yaml*  |             |
-    | *templates/deployment.yaml* |             |
-    | *templates/ingress.yaml*    |             |
-    | *templates/service.yaml*    |             |
+    * *Chart.yaml*
+    * *templates/configmap.yaml*
+    * *templates/deployment.yaml*
+    * *templates/ingress.yaml*
+    * *templates/service.yaml*
 
-    %TODO% - Cam to explain kubernetes.yml file generation above
+    The *Chart.yaml* file contains a description of the chart. You can access it from within a template. The *templates* directory contains template files. When Helm evaluates a chart, it sends all of the files in the *templates* directory to the template rendering engine. It then collects the rendered YAML created by those templates and sends it to AKS.
+
+    
 
 ## Build the coupon service in Azure Container Registry
 

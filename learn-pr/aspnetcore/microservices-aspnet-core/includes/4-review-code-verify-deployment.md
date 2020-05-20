@@ -8,7 +8,7 @@ The following directories in *src/* contain .NET Core projects, each of which is
 |-------------------|-------------|
 | *Aggregators/* | Services to aggregate across multiple microservices for certain cross-service operations. This is implemented by the *ApiGateways/Aggregators/Web.Shopping.HttpAggregator* project. |
 | *BuildingBlocks/* | Services that provide cross-cutting functionality, such as the app's event bus used for inter-service events. |
-| *Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), **D**omain-**D**riven **D**esign (DDD), and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS). The new **Coupon.API** project has been provided, but it is incomplete. |
+| *Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), DDD, and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS). The new **Coupon.API** project has been provided, but it's incomplete. |
 | *Web/* | ASP.NET Core apps that implement user interfaces:<br>*WebSPA* is a storefront UI built with Angular.<br>*WebStatus* is the health checks dashboard for monitoring the operational status of each service. |
 
 ## Verify deployment to AKS
@@ -24,14 +24,16 @@ You can begin exploring these services (when available):
 - Web SPA application       : http://13.83.97.100/
 ```
 
-1. Select the **General application status** link. The resulting health check page displays the status of each microservice in the deployment.
+Even though the app has been deployed, it may take a few minutes to come online. Verify the app is deployed and online with the following steps:
+
+1. Select the **General application status** link to view the *WebStatus* health checks dashboard. The resulting page displays the status of each microservice in the deployment.
 
     ![Health check page](../media/temp/health-check.png)
 
     > [!NOTE]
     > While the app is warming up, you may receive an HTTP 500 response from the server. You may retry after a few seconds. The Seq logs viewable at the **Centralized logging** URL will be available before the other endpoints. 
 
-1. Once all the services are healthy, select the **Web SPA application** link to test the eShopOnContainers web app.
+1. Once all the services are healthy, select the **Web SPA application** link to test the *eShopOnContainers* web app.
 
     ![eShop SPA](../media/temp/eshop-spa.png)
 
@@ -43,4 +45,4 @@ You can begin exploring these services (when available):
 
     ![eShop shopping bag with .NET Blue Hoodie](../media/temp/eshop-spa-shopping-bag.png)
 
-Now that you've seen the existing eShopOnContainers app, you'll add the coupon microservice in the next unit.
+Now that you've seen the existing *eShopOnContainers* app, you'll add the coupon microservice in the next unit.

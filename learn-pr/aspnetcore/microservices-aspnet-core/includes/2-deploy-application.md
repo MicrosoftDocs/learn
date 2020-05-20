@@ -14,11 +14,11 @@ Run the following command in the command shell:
 
 The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
 
-* Clones the eShop project from a GitHub repository.
+* Clones the *eShopOnContainers* app from a GitHub repository.
 * Provisions an AKS and Azure Container Registry (ACR) resource.
 * Launches the Cloud Shell Editor to view the code.
 * Deploys the containers to AKS.
-* Displays connection information upon completion
+* Displays connection information upon completion.
 
 > [!NOTE]
 > Non-blocking warnings are expected in the deployment process.
