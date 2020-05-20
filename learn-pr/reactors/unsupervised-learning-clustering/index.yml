@@ -17,10 +17,12 @@ abstract:  |
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - Basic data science for Python
-  - Understand data preparation for machine learning
-  - Preliminary knowledge of linear regression
-  - Know how to predict numeric values and categories
+  - Introduction to Python
+  - Beginners Data Science for Python Developers
+  - Join and clean datasets: Deep dive
+  - Supervised learning: Regression
+  - Predict numeric values with regression
+  - Predict categories with machine learning classification
   
 iconUrl: /learn/achievements/reactors/unsupervised-learning-clustering.svg
 levels:
