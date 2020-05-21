@@ -1,7 +1,7 @@
-To complete this exercise, you'll need the following:
+To complete this exercise, you'll need:
 
 - A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).
-- A Visual Studio Codespace based on the **MicrosoftDocs/ai-fundamentals** code repository. This provides a hosted instance of Visual Studio Code, in which you'll be able to run the notebooks for the lab exercises.
+- A Visual Studio Codespace based on the **MicrosoftDocs/ai-fundamentals** code repository. It provides a hosted instance of Visual Studio Code, in which you'll be able to run the notebooks for the lab exercises.
 
 To set up a Visual Studio Codespace:
 
@@ -11,7 +11,7 @@ To set up a Visual Studio Codespace:
     - **Git Repository**: MicrosoftDocs/ai-fundamentals
     - **Instance Type**: Standard (Linux) 4 cores, 8 GB RAM
     - **Suspend idle Codespace after**: 30 minutes
-3. Wait for the codespace to be created. This will take around 3 minutes. You'll see the following things happen:
+3. Wait for the codespace to be created. It will take around 3 minutes. You'll see the following things happen:
     - A script will initialize and configure your codespace.
     - A list of notebook (.ipynb) files will appear in the pane on the left.
     - After a few minutes, a file named **z REFRESH NOW!** will appear at the bottom of the list of files. This is your indication that everything has been installed.
