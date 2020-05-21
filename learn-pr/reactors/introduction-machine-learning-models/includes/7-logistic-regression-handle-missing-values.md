@@ -1,8 +1,3 @@
-> [!Note]
-> **Sarah: Action items**
->
-> - Line 152: Need input code introduction statement. Search on Sarah.
-
 Now we need to address missing values. First, let’s look to see which columns have more than half of their values missing:
 
 ```python
