@@ -15,7 +15,8 @@ abstract: |
   In this module, you will learn how to:
   - Write User-Defined Functions
   - Perform ETL operations using User-Defined Functions
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/work-with-user-defined-functions.svg
 levels:
 - intermediate
