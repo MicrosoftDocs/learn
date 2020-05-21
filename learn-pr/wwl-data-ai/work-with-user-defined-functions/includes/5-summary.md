@@ -2,9 +2,9 @@ UDFs in Azure Databricks help you move beyond built-in functions in sql.function
 
 Now that you have concluded this module, you should know:
 
-1. Write, register, and invoke UDFs
-2. Write, register, and invoke Vectorized UDFs
-3. Articulate performance advantages of Vectorized UDFs
+* Write, register, and invoke UDFs
+* Write, register, and invoke Vectorized UDFs
+* Articulate performance advantages of Vectorized UDFs
 
 ## Cleanup
 

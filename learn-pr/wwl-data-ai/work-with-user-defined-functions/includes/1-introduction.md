@@ -2,12 +2,12 @@ Suppose you're working for a data analytics startup that's now expanding along w
 
 [!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
 
-## Learning objectives
+## Learning objectives 
 
 In this module, you'll:
 
-1. Create UDF
-2. Articulate performance advantages of Vectorized UDF in Python
+* Create UDF
+* Articulate performance advantages of Vectorized UDF in Python
 
 ## Prerequisites
 

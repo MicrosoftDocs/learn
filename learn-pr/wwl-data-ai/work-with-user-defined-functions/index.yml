@@ -16,7 +16,7 @@ abstract: |
   - Write User-Defined Functions
   - Perform ETL operations using User-Defined Functions
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/work-with-user-defined-functions.svg
 levels:
 - intermediate
 roles:

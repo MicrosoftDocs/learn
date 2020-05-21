@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-with-user-defined-functions.exercise-perform-etl-operations-using
-title: 'Exercise: Perform ETL operations using user-defined functions'
+title: 'Exercise: Perform Extract, Transform, Load(ETL) operations using user-defined functions'
 metadata:
   title: 'Exercise: Perform ETL operations using user-defined functions'
   description: "Exercise: Perform ETL operations using user-defined functions"
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-exercise-perform-etl-operations-using.md)]
+  [!include[](includes/3-exercise-perform-extract-transform-load-operations.md)]
