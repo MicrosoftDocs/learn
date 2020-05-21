@@ -135,8 +135,7 @@ Our second group is foods that are high in fiber and folic acid and low in chole
 
 Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
-> [!NOTE]
-> SARAH: Do we need to provide a possible solution and output for this exercise? Thanks.
+> **SARAH** TBD - Do we need to provide a possible solution and output for this exercise? Thanks.
 
 <br />
 

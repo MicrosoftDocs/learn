@@ -95,9 +95,7 @@ Why was it necessary to structure the `iloc` method call the way we did in the p
 
 Now set the index of `nutr_df` to use `NDB_No`.
 
-> [!NOTE]
-> SARAH: Do we need to provide output for this exercise? Thanks.
-
+> **SARAH** TBD - Do we need to provide output for this exercise? Thanks.
 
 <br />
 

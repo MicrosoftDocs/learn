@@ -4,8 +4,7 @@ One way to accomplish this is by reducing the number of features considered in a
 
 ## Learning objectives
 
-> [!NOTE]
-> SARAH: Would you check the learning objectives and prereqs I derived from the module content? Thanks.
+> **Sarah** TBD, check the learning objectives and prereqs I derived from the module content.
 
 In this module, you will:
 
