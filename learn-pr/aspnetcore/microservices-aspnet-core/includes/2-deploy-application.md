@@ -21,6 +21,12 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 * Displays connection information upon completion.
 
 > [!NOTE]
-> Non-blocking warnings are expected in the deployment process.
+> Non-blocking warnings are expected in the deployment process. In the event of an unexpected exception, you may reset any changes made by the script by executing the following command:
+> 
+> ```bash
+> cd ~ && \
+>   rm ~/clouddrive/aspnet-learn && \
+>   az group delete --name eshop-learn-rg --yes
+> ```
 
 The app the script deploys is a smaller, modified version of the [eShop on Containers reference app](https://github.com/dotnet-architecture/eshoponcontainers). While the script is running, proceed to the next unit to review the *eShopOnContainers* architecture.
