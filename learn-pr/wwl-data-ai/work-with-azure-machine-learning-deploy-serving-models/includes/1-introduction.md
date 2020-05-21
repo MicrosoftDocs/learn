@@ -2,7 +2,7 @@ Imagine that you work as a data scientist for a large online retail store. Your 
 
 [!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
 
-## Learning objectives
+## Learning objectives 
 
 In this module, you'll:
 

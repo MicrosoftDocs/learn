@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.work-with-azure-machine-learning-deploy-serving-models
 metadata:
-  title: Work with Azure machine learning to deploy serving models
-  description: "Work with Azure machine learning to deploy serving models"
+  title: Work with Azure Machine Learning to deploy serving models
+  description: "Work with Azure Machine Learning to deploy serving models"
   ms.date: 05/22/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Work with Azure machine learning to deploy serving models
+title: Work with Azure Machine Learning to deploy serving models
 summary: Learn how to use MLflow and Azure Machine Learning service register, package, and deploy a trained model to both Azure Container Instance, and Azure Kubernetes Service as a scoring web service.
 abstract: |
   In this module, you will learn how to:
   - Use Azure Machine Learning to deploy Serving Models
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/work-with-azure-machine-learning-deploy-serving-models.svg
 levels:
 - intermediate
 roles:
