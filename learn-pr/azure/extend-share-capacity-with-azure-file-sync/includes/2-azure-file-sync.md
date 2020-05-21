@@ -12,7 +12,7 @@ The following diagram shows what happens when a user requests two files. File *A
 
 ![Diagram that shows the local share returning file A and the Azure file share returning data for file B.](../media/2-azure-file-sync-extend-file-share.png)
 
-With cloud tiering, you're only storing a small set of data locally for files that aren't used frequently. So you have more local storage space for the files your organization uses more often.
+With cloud tiering, you're storing a smaller set of file data locally. So you have more local storage space for the files your organization uses more often.
 
 By default, cloud tiering is off. You enable it when you create the server endpoint.
 

@@ -35,7 +35,7 @@
 - [ X] *durationInMinutes* is set and IS ACCURATE
 - [ X] *interactive* is set to **bash** or **azure-portal** (if exercise)
 - [ X] *azureSandbox* is set to true if needed
-- [ ]  Knowledge checks reviewed for spelling and accuracy
+- [ X]  Knowledge checks reviewed for spelling and accuracy
 - [ X] *ROBOTS: NOINDEX*
 
 ### Exercises

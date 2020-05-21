@@ -1,6 +1,10 @@
-You can run the Azure File Sync evaluation powershell cmdlets on any Windows Server that you'd like to use file sync on. The cmdlets check the OS, filesystem, file name, and folder name compatibility for you.
+You can run the Azure File Sync evaluation PowerShell cmdlets on any Windows Server that you'd like to use file sync on. The cmdlets check the OS, filesystem, file name, and folder name compatibility for you.
 
-Before you install and set up Azure File Sync on your company's CAD file server, you're going to assess the server to ensure it's compatible. To do this, you'll run the evaluation cmdlets to produce a report.
+Before you install and set up Azure File Sync on your company's CAD file server, you're going to assess the server to ensure it's compatible. You'll run the evaluation cmdlets to produce a report.
+
+The following video shows you how to do the assessment on your on-premises server. Use the steps in this exercise to complete the assessment on a virtual machine that you create in your Azure subscription.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit4/player?format=ny]
 
 ## Create a Windows file server
 
@@ -34,7 +38,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 
     ```
 
-1.  Run the following command to set the username and password for the administrator account on the VM. Enter the username `learnadmin` and a password that's at least 8 characters long that uses a digit, and upper, lower, and special characters. Write down the password as you'll need it later.
+1.  Run the following command to set the username and password for the administrator account on the VM. Enter the username `learnadmin` and a password that's at least eight characters long that uses a digit, and upper, lower, and special characters. Write down the password as you'll need it later.
 
     ```powershell
     $cred = Get-Credential
@@ -86,6 +90,8 @@ Connect to the new server by using Remote Desktop Client. You'll download a samp
     ```
 
 1. In the **File Explorer** window, select **Compressed Folder Tools**, then select **Extract all** and **Extract**.
+
+## Install the Azure PowerShell modules
 
 1. Right-click on Start, then select **Windows PowerShell (Admin)**.
 1. In the console, download the latest Azure PowerShell modules:

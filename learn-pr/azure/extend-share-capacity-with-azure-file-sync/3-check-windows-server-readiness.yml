@@ -3,8 +3,8 @@ uid: learn.azure.extend-share-capacity-with-azure-file-sync.check-windows-server
 title: Check Windows Server readiness
 metadata:
   title: Check Windows Server readiness
-  description: See what the system requirements are for servers that you wish to install Azure File Sync on. You'll see how to run system checks using powershell.
-  ms.date: 10/11/2019
+  description: Learn about the system requirements for Azure File Sync and how to run system checks using Azure PowerShell.
+  ms.date: 05/18/20
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial

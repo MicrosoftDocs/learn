@@ -2,6 +2,10 @@ With all of the Azure resources deployed, you need to register your on-premises 
 
 In this exercise, you'll change the security setting to allow you to download the Azure File Sync Agent. You'll then install and run the agent to register the server with the Azure sync group.
 
+The following video shows you how set up your on-premises server to work with Azure File Sync. Use the steps in this exercise to continue following along in your Azure subscription.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit8/player?format=ny]
+
 ### Disable IE Enhanced security configuration
 
 1. If you closed your Remote Desktop Connection, use the following steps to connect to the virtual machine (VM).
