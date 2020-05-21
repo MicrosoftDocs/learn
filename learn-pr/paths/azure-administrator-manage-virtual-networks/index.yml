@@ -15,7 +15,7 @@ summary: |
 prerequisites: |
   - [Azure fundamentals](../azure-fundamentals/index.yml)
   - [Prerequisites for Azure administrators](../azure-admin-prerequisites/index.yml)
-iconUrl: /learn/achievements/azure-admin-manage-virtual-networks.svg
+iconUrl: /learn/achievements/azure-administrator-manage-virtual-networks.svg
 levels:
 - beginner
 roles:

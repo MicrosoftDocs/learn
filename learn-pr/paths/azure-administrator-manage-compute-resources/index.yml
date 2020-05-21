@@ -15,7 +15,7 @@ summary: |
 prerequisites: |
   - [Azure fundamentals](../azure-fundamentals/index.yml)
   - [Prerequisites for Azure administrators](../azure-admin-prerequisites/index.yml)
-iconUrl: /learn/achievements/azure-admin-manage-compute-resources.svg
+iconUrl: /learn/achievements/azure-administrator-manage-compute-resources.svg
 levels:
 - beginner
 roles:
