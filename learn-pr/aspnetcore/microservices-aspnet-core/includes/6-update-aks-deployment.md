@@ -22,10 +22,17 @@ The preceding script uses `helm` commands to:
 
 1. Navigate to the *WebStatus* page. Observe the services stopping and redeploying.
 
-1. After the app deploys, navigate to the *WebSPA* URL and perform the following steps:
-    1. Add items to the cart.
-    1. Navigate to the cart and select **Check out**.
-    1. Add the coupon code *DISC-15*.
-    1. Select **Apply**. 
+1. Once the app is healthy, navigate to the *WebSPA* URL and perform the following steps:
+    1. Refresh the browser.
+    1. If not signed in, select the **Login** link in the upper right to sign into the app (the credentials are provided on the login page).
+    1. Add your favorite products to the shopping bag by clicking on the images.
+    1. Select the shopping bag icon in the upper right.
+    1. Select **Checkout**. 
+    1. Scroll down to the **Have a discount code?** field. 
+    1. Enter the code *DISC-15* for a 15% discount and select **Apply**.
 
-%TODO% (Cam or Scott) - Screenshot of cart with coupon box
+        ![The shopping basket showing the discount code field](../media/temp/discount-code-field.png)
+
+    1. Select **Place Order** to complete the purchase.
+
+Congratulations! You've successfully added the coupon microservice to the app!

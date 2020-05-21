@@ -1,8 +1,9 @@
 In this module, you: 
 
-* Deployed and examined an existing ASP.NET Core microservice running in AKS.
-* Modified an existing ASP.NET Core microservice.
-* Deployed the microservice to the existing AKS cluster.
+* Examined an existing ASP.NET Core microservices running in Azure Kubernetes Service (AKS).
+* Implemented a new ASP.NET Core microservice and containerized it.
+* Published the Docker image to Azure Container Registry (ACR).
+* Deployed the Docker container to the existing app in AKS.
 
 ## Clean up Azure resources
 
@@ -15,11 +16,29 @@ To de-provision all of the resources created in this module, run the following c
 az group delete --name eshop-learn-rg --yes
 ```
 
-The preceding command deletes the resource group containing the AKS and ACR resources. Additionally, another resource group containing infrastructure resources (such as IP addresses) was previously created on behalf of the AKS resource. This group and all resources contained within are also deleted.
+The preceding command deletes the resource group containing the AKS and ACR resources. Additionally, another resource group containing infrastructure resources (such as IP addresses) was previously created on behalf of the AKS resource. This group and all resources contained within are also deleted when the AKS resource is deleted.
 
-%TODO% -- Cam (Me): Also explain how to remove the service principal. Can that be done easily from a script?
+## Clean up Azure service principal
 
-[!INCLUDE[download files](../../includes/summary-download.md)]
+The initial setup script created an Azure service principal, which is required to allow Azure resources to authenticate to each other. 
+
+To remove the service principal, run the following script:
+
+```bash
+./deploy/k8s/cleanup-service-principal.sh
+```
+
+The preceding script:
+
+* Uses the `az ad sp list` command with the `--show-mine` flag to return a list of service principal IDs that match the following attributes:
+    * Owned by the current user.
+    * Contain the string `eShop-Learn-AKS` in the display name.
+* Uses the `az ad sp delete` command to remove each matching service principal.
+
+> [!NOTE]
+> Only one service principal is expected in the list.
+
+[!INCLUDE[download files](../../includes/summary-download-clouddrive.md)]
 
 ## Learn more with a Channel 9 video series
 

@@ -23,7 +23,7 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 > [!NOTE]
 > Non-blocking warnings are expected in the deployment process. In the event of an unexpected exception, you may reset any changes made by the script by executing the following command:
 > 
-> ```bash
+> ```azurecli
 > cd ~ && \
 >   rm -rf ~/clouddrive/aspnet-learn && \
 >   az group delete --name eshop-learn-rg --yes
