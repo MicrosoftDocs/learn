@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.azure.migrate-app-service-migration-assistant
+metadata:
+  title: Migrate an ASP.NET web application to Azure with the App Service Migration Assistant
+  description: Use the Azure App Service Migration Assistant to assess the readiness of a web app to be deployed on App Services, and perform the migration.
+  ms.date: 05/21/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate an ASP.NET web application to Azure with the App Service Migration Assistant
+summary: Use the Azure App Service Migration Assistant to assess the readiness of a web app to be deployed on App Services, and perform the migration.
+abstract: |
+  In this module, you will:
+  - Discover the kinds of issues that you might face when migrating an application hosted on Internet Information Services to Azure App Services.
+  - Install and run the Azure App Service Migration Assistant.
+  - Use the Azure App Service Migration Assistant to migrate an ASP.NET MVC Core web app to Azure App Services.
+prerequisites: None
+ratingEnabled: true
+iconUrl: /learn/achievements/migrate-app-service-migration-assistant.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.azure.migrate-app-service-migration-assistant.introduction
+- learn.azure.migrate-app-service-migration-assistant.understand-assessment-migration
+- learn.azure.migrate-app-service-migration-assistant.exercise-setup
+- learn.azure.migrate-app-service-migration-assistant.exercise-migration
+- learn.azure.migrate-app-service-migration-assistant.summary
+
+badge:
+  uid: learn.azure.migrate-app-service-migration-assistant.badge

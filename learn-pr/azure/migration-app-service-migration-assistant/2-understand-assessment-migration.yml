@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-app-service-migration-assistant.understand-assessment-migration
+title: Understanding Assessment and Migration
+metadata:
+  title: Understanding Assessment and Migration
+  description: Explore the reasons why you should move your web application to Azure App Services, potential migration hurdles, and the value of an assessment.
+  ms.date: 05/21/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+azureSandbox: false
+content: |
+  [!include[](includes/2-understand-assessment-migration.md)]

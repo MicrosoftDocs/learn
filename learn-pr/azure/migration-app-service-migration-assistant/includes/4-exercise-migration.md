@@ -1,0 +1,1 @@
+Now that you've deployed the Virtual Machines containing your web application to the sandbox environment, you'll use the Azure App Service Migration Assistant to perform an assessment and migration to Azure App Services.
