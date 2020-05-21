@@ -34,6 +34,7 @@ roles:
 - developer
 - solution-architect
 products:
+- github
 - azure
 units:
 - learn.github.github-actions-cd.1-introduction

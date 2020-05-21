@@ -137,9 +137,9 @@ Next, add configuration details specific to your preferred front-end framework.
 
 | Setting                 | Value                |
 | ----------------------- | -------------------- |
-| _App location_          |  *Leave blank*       |
-| _Api location_          |  *Leave blank*       |
-| _App artifact location_ | **build**            |
+| _App location_          |  *Leave default*     |
+| _Api location_          |  *Leave default*     |
+| _App artifact location_ | **public**           |
 
 Click the **Review + create** button
 
