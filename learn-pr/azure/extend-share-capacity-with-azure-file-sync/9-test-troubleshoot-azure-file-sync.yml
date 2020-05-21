@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.extend-share-capacity-with-azure-file-sync.test-troubleshoot-azure-file-sync
-title: Test and Troubleshoot Azure File Sync
+title: Test and troubleshoot Azure File Sync
 metadata:
-  title: Test and Troubleshoot Azure File Sync
+  title: Test and troubleshoot Azure File Sync
   description: Learn how to test Azure File Sync and troubleshoot a sync issue.
   ms.date: 05/18/20
   author: cwatson-cat
