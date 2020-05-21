@@ -35,6 +35,6 @@ modules:
 - learn.capture-page-load-times-application-insights
 - learn.protect-virtual-machines-with-azure-backup
 - learn.protect-infrastructure-with-azure-site-recovery
-- learn.design-for-availability-and-recoverability
+- learn.azure-well-architected-reliability
 trophy:
   uid: learn.azure-admin-monitor-backup-resources.trophy
