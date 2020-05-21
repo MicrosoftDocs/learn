@@ -11,6 +11,15 @@ metadata:
 title: Test hypothesis by simulating  statistics
 summary: Learn how to test hypothesis through simulation of statistics.
 abstract: |
+  The UC Berkeley Foundations of Data Science course combines three perspectives: inferential thinking, computational 
+  thinking, and real-world relevance. Given data arising from some real-world phenomenon, how does one analyze that 
+  data so as to understand that phenomenon? The course teaches critical concepts and skills in computer programming 
+  and statistical inference, in conjunction with hands-on analysis of real-world datasets, including economic data, 
+  document collections, geographical data, and social networks. It delves into social issues surrounding data 
+  analysis such as privacy and design.
+  
+  ***Produced in partnership with the University of California, Berkeley - Ani Adhikari and John Denero with Contributions from David Wagner[Computational and Inferential Thinking](https://www.inferentialthinking.com/chapters/intro.html).*** 
+
   In this module, you will:
   - Motivate the need and use of Hypothesis Testing.
   - Understand how to set up & run hypothesis tests from scratch through multiple in-depth case studies.

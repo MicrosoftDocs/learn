@@ -1,16 +1,25 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.predict-classes-with-knn-classifier
 metadata:
-  title: Predict classes with a Knn classifier
+  title: Predict classes with a knn classifier
   description: Learn
   ms.date: 05/06/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Predict Classes With A Knn Classifier
+title: Predict  classes with a knn classifier
 summary: Learn about the K-nearest neighbors classifier
 abstract: |
+  The UC Berkeley Foundations of Data Science course combines three perspectives: inferential thinking, computational 
+  thinking, and real-world relevance. Given data arising from some real-world phenomenon, how does one analyze that 
+  data so as to understand that phenomenon? The course teaches critical concepts and skills in computer programming 
+  and statistical inference, in conjunction with hands-on analysis of real-world datasets, including economic data, 
+  document collections, geographical data, and social networks. It delves into social issues surrounding data 
+  analysis such as privacy and design.
+  
+  ***Produced in partnership with the University of California, Berkeley - Ani Adhikari and John Denero with Contributions from David Wagner[Computational and Inferential Thinking](https://www.inferentialthinking.com/chapters/intro.html).*** 
+
   In this module, you will:
   - Understand the task of classification and how it's different from regression.
   - Introduce K-Nearest Neighbors as a classifier and developed intuition for it.

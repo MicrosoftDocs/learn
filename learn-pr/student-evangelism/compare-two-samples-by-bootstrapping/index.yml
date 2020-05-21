@@ -8,9 +8,18 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Compare Two Samples By Bootstrapping
+title: Compare two samples by bootstrapping
 summary: Learn how to test hypothesis about samples using bootstrapping
 abstract: |
+  The UC Berkeley Foundations of Data Science course combines three perspectives: inferential thinking, computational 
+  thinking, and real-world relevance. Given data arising from some real-world phenomenon, how does one analyze that 
+  data so as to understand that phenomenon? The course teaches critical concepts and skills in computer programming 
+  and statistical inference, in conjunction with hands-on analysis of real-world datasets, including economic data, 
+  document collections, geographical data, and social networks. It delves into social issues surrounding data 
+  analysis such as privacy and design.
+  
+  ***Produced in partnership with the University of California, Berkeley - Ani Adhikari and John Denero with Contributions from David Wagner[Computational and Inferential Thinking](https://www.inferentialthinking.com/chapters/intro.html).*** 
+
   In this module, you will:
   - Study A/B tests and how to run an A/B test.
   - Prove causality with randomized controlled trials (RCTs).
