@@ -20,7 +20,7 @@ summary: |
   ***Produced in partnership with the University of California, Berkeley - Ani Adhikari and John Denero with Contributions from David Wagner [Computational and Inferential Thinking](https://www.inferentialthinking.com/chapters/intro.html).*** 
 cardDescription: This path is intended for beginners that are looking to learn the basics of Python and Data Science
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/foundations-of-data-science.svg
+iconUrl: /learn/achievements/student-evangelism/foundations-data-science.svg
 levels:
 - beginner
 roles:
@@ -42,4 +42,4 @@ modules:
 - learn.student-evangelism.simulate-distribution-regression-coefficients
 - learn.student-evangelism.predict-classes-with-knn-classifier
 trophy:
-  uid: learn.foundations-of-data-science.trophy
+  uid: learn.foundations-data-science.trophy
