@@ -1,16 +1,20 @@
 Now that you know your server is compatible with Azure File Sync, you're ready to set up your Azure resources. In this exercise, you'll create the four components that you need to connect your company's file server.
 
+The following video shows you how to create the Azure resources you'll need. Use the steps in this exercise to continue following along in your Azure subscription.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit6/player?format=ny]
+
 ## Create the storage account
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
 1. Search for **Storage accounts** by using the Azure portal search box.
 1. In **Storage accounts**, select **+ Add**.
 1. Use the following values for the storage account:
    
    |Field |value  |
    |---------|---------|
-   |Resource group | <rgn>[sandbox resource group name]</rgn>        |
-   |Storage account name   | **extendcadfiles**      |
+   |Resource group | learn-file-sync-rg        |
+   |Storage account name   | extendcadfiles      |
 
    Accept the defaults for the rest of the values.
 1. Select **Review + create** and **Create**.
@@ -40,7 +44,7 @@ Now that you know your server is compatible with Azure File Sync, you're ready t
 
    |Field |value  |
    |---------|---------|
-   |Resource group | <rgn>[sandbox resource group name]</rgn>        |
+   |Resource group | learn-file-sync-rg        |
    |Storage Sync Service name  | CADSyncService |
 
 1. Select **Review + Create** and **Create** to deploy the Storage Sync Service.
@@ -55,7 +59,7 @@ Now that you know your server is compatible with Azure File Sync, you're ready t
    |Field |value  |
    |---------|---------|
    |Sync group name | CADFiles |
-   |Storage account | **extendcadfiles** |
+   |Storage account | extendcadfiles |
    |Azure File Share|cadfileshare|
 
 1. Select **create**.

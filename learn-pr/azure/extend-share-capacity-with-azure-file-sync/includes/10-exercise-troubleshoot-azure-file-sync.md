@@ -2,11 +2,13 @@ Azure File Sync provides multiple ways to monitor and diagnose sync issues. Tool
 
 You've deployed Azure File Sync and configured both the Azure and on-premises environments. Now, you need to troubleshoot a rogue file that's not syncing. You'll use the tools provided by Microsoft.
 
-In this exercise, you'll first check that file sync is working correctly. Then generate a file with invalid characters. You'll see how to diagnose sync issues and resolve them.
+In this exercise, you'll first check that file sync is working correctly. Then generate a file with invalid characters. You'll see how to diagnose sync issues and resolve them. The following video shows walks you through the process. Use the steps in this exercise to continue following along in your Azure subscription.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit10/player?format=ny]
 
 ## Find your connection details
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
 1. Go to the storage account. Select **All resources** > **extendcadfiles**.
 1. Under **Settings**, select **Access keys**.
 
@@ -17,7 +19,7 @@ In this exercise, you'll first check that file sync is working correctly. Then g
 ## Create a mapped drive to Azure File Share
 
 1. If you closed your Remote Desktop Connection, use the following steps to connect to the virtual machine (VM).
-    1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+    1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
     1. Go to **Virtual machines** > **FileServerLocal**.
     1. Select **Connect** > **Download RDP File** > open the RDP file.
     1. In the **Windows Security** window, select **More choices** > **Use a different account**.

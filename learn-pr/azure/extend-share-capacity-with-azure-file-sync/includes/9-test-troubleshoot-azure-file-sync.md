@@ -16,7 +16,7 @@ The most common cause for files not syncing is invalid filenames. Using the asse
 
 ## Check the file share sync
 
-To check that files are replicating, open two File Explorer sessions. In the first window, browse to the folder path that's synced to Azure. For your company, the path is C:\CADFolder.
+To check that files are replicating, open two File Explorer sessions. In the first window, browse to the folder path that's synced to Azure.
 
 In the second File Explorer window, add a network connection mapped to the Azure file share like `\\<your-azure-fileshare>.file.core.windows.net\foldername`.
 
