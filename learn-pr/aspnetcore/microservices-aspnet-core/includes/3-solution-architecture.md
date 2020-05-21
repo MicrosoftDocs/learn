@@ -18,7 +18,7 @@ As shown in the preceding figure, the *catalog* microservice stores its data in 
 
 ### Identity
 
-%TODO% - Auth discussion here. E.g., why no API gateway for auth? Define STS because it's in diagram. Why Identity Server instead of AAD?
+The WebSPA client app performs authentication and authorization with an *identity* microservice that also is a Security Token Service (STS). It is a containerized ASP.NET Core project that uses [IdentityServer 4](https://identityserver.io/) - the popular **OpenID Connect and OAuth Framework for .NET**. Alternatively, you can use [Microsoft Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) that offers identity and access management as a service in the cloud. In the above architecture, *identity* service is deliberately kept out of the API Gateway and is allowed to access directly. It is because the original **eShopOnContainers** app uses multiple API Gateways separated by the business areas, and creating another API Gateway for cross-cutting concerns would be an overkill for a reference application.
 
 ### Event bus
 

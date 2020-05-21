@@ -1,8 +1,30 @@
 In this unit, you complete the *Coupon.API* project. You will then run a script to generate changes to the *WebSPA* HTML, as well as generate and modify Helm charts to define the kubernetes deployment.
 
-## Coupon service architecture
+## Designing coupon microservice
 
-%TODO%
+### Business requirement
+
+There are multiple ways of implementing a coupon feature in an e-commerce app; however, for the sake of simplicity, look at the following business requirement:
+
+* The user shall apply a discount coupon code during the checkout (**DISC-##**, where ## is the discount amount to the order total. For $5, $10, $15, $20, $25, and $30).
+* The coupon microservice must confirm that the coupon is available and return the discount amount during checkout.
+* Once the payment is processed, the ordering microservice will request validation for the coupon during the order process.
+* Upon validation, the coupon will be assigned to the order and won't be available for any other order.
+* If an order is canceled, the assigned coupon should be released for any other order to use.
+
+### Domain Model
+
+Domain-driven design (DDD) advocates modeling based on the reality of business as relevant to a use case. In the context of building applications, DDD talks about problems as domains. It describes independent problem areas as bounded contexts and emphasizes a common language to talk about these problems. Where to draw the boundaries is the crucial task when designing and defining a microservice. For the domain model for each bounded context, you identify and define the entities, value objects, and aggregates that model your domain. Considering that the coupon feature requirement is straightforward, the coupon microservice is implemented more like a CRUD service, and the boundaries are well defined within the `coupon` domain.
+
+### Technology stack
+
+Microservice architectures are technology agnostic and give the development teams the flexibility to select the tech stack of choice. Coupon microservice uses the following:
+
+| Technology | Description |
+|-------------------|-------------|
+| **ASP.NET Core Web API** |  The RESTful services for querying discounts are implemented in ASP .NET Core. A web API uses *Controllers* to handle requests. |
+| **MongoDB** |  The NoSQL database that stores the coupons and their utilization data.  |
+| **Containerization using Docker** | The Web API project and the MongoDB database, along with their dependencies, are packaged into respective container images using **Docker**. In a real-world scenario, it's preferred for microservices to use a managed database like **Azure Cosmos DB** instead of running them in a container |
 
 ## Add the coupon service
 
