@@ -7,8 +7,12 @@ In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics
 
 Let’s import pandas and load the dataset. The path name in the following code is case-sensitive.
 
+> **Sarah** TBD, it occurred to me to add a tip that links to the environment setup instructions. What do you think?
+
 > [!TIP]
-> Review steps TBD-link for setting up the Learn environment.
+> Review steps TBD--add link for setting up the environment.
+>
+
 
 ```python
 import pandas as pd 
@@ -17,23 +21,24 @@ df = pd.read_csv('Data/SMSSpamCollection', sep='\t', names=['Class', 'Message'])
 
 ### Try it yourself
 
+> **Sarah** TBD, please review the solution/answer I wrote for the following exercise. Thanks.
+
 What do the `sep` and `names` parameters do in the preceding code?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-If you are unsure, you can refer to the built-in Help documentation using <code>pd.read_csv?</code> in a new code cell.
+If you are unsure, you can refer to the built-in Help documentation by using <code>pd.read_csv?</code> in a new code cell.
 
-Answer:
+*Answer*:
 
-In the preceding code, `sep='\t'` displays the output elements separated by a tab character. `names` creates column names in the output.
+In the preceding code, `sep='\t'` displays the output elements separated by a tab character and `names` creates column names in the output.
 
 </details>
 
 <br /><br />
 
 ***
-
 
 Let's take an initial look at what's in the dataset. 
 
@@ -86,15 +91,16 @@ df.head()
 ---------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-
 ### Try it yourself
+
+> **Sarah** TBD, provide possible solution and output.
 
 What do you think the purpose of the `-1` parameter passed to `pd.set_option()` is in the code cell above?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-TBD - Provide a possible solution and output
+TBD, provide a possible solution and output
 
 </details>
 

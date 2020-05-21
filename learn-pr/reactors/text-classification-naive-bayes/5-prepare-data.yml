@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.text-classification-naive-bayes.5-prepare-data
-title: Prepare data
+title: Prepare the data for modeling
 metadata:
-  title: Prepare data
-  description: Learn techniques and commands that help you prepare a dataset for machine learning.
+  title: Prepare the data for modeling
+  description: Use the Natural Language Toolkit and scikit-learn to prepare the dataset to use in your machine learning model.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

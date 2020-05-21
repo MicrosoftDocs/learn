@@ -6,12 +6,14 @@ Naive Bayes is a convenient algorithm to use for spam detection because it doesn
 
 ## Learning objectives
 
+> **Sarah** TBD, check the learning objectives and prereqs I wrote.
+
 In this module, you will:
 
 - Learn the strengths and limitations of conditional probability and Naive Bayes machine learning.
 - Use pandas to evaluate a dataset of email messages for spam or ham.
 - Use Matplotlib to generate a word cloud, and then use Natural Language Toolkit and scikit-learn for deeper analysis of the data.
-- Use the Naive Bayes classifier to classify the data in a spam dataset and improve accuracy of a machine learning model.
+- Use the Naive Bayes classifier to classify the data in a spam dataset and improve the accuracy of a machine learning model.
 
 ## Prerequisites
 
