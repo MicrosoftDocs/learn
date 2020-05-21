@@ -1,8 +1,8 @@
-As part of Azure File Sync, Microsoft provides a set of evaluation powershell cmdlets. The cmdlets show you if the server has any incompatibilities with Azure File Sync.
+As part of Azure File Sync, Microsoft provides a set of evaluation PowerShell cmdlets. The cmdlets show you if the server has any incompatibilities with Azure File Sync.
 
 After learning about Azure File Sync, you want to assess your servers to check they can take part in the sync process. You'll investigate the tools offered by Microsoft to help you do this task.
 
-In this unit, you'll see what the system requirements are for servers that you wish to use with Azure File Sync. You'll see how to run system checks using powershell.
+In this unit, you'll see what the system requirements are for servers that you wish to use with Azure File Sync. You'll see how to run system checks using PowerShell.
 
 ## Possible problems
 
@@ -49,7 +49,7 @@ There are many different file types on a Windows Server. Some files are importan
 
 ## Complete an evaluation
 
-Using PowerShell,  download the latest version of `PackageManagement` and `PowerShellGet`. These packages allow the installation of preview modules. You can then install the `Az.StorageSync` powershell module that allows the data set and system requirements to be tested and saved in a comma-separated file.
+Using PowerShell,  download the latest version of `PackageManagement` and `PowerShellGet`. These packages allow the installation of preview modules. You can then install the `Az.StorageSync` PowerShell module that allows the data set and system requirements to be tested and saved in a comma-separated file.
 
 To do an evaluation, run `Invoke-AzStorageSyncCompatibilityCheck` with the correct parameters. For example, on your on-premises file server you can run the following types of checks:
 
