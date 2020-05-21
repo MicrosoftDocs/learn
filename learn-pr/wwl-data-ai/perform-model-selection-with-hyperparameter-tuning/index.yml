@@ -14,8 +14,9 @@ abstract: |
   In this module, you will learn how to:
   - Describe Model selection and Hyperparameter Tuning
   - Select the optimal model by tuning Hyperparameters
-prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+prerequisites: |
+  None
+iconUrl: /learn/achievements/perform-model-selection-with-hyperparameter-tuning.svg
 levels:
 - intermediate
 roles:
