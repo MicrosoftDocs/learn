@@ -148,7 +148,7 @@ Q     77
 Name: Embarked, dtype: int64
 ```
 
-<!-- Sarah: Add introduction statement for input code. -->
+Next, convert the categorical data in the **Gender** and **Embarked** columns into indicator data by using the `get_dummies` method.
 
 ```python
 df = pd.get_dummies(data=df, columns=['Gender', 'Embarked'],drop_first=True)
@@ -249,10 +249,6 @@ Here's the input:
 ```python
 from sklearn.linear_model import LogisticRegression
 lr = LogisticRegression()
-```
-
-```python
-lr.fit(X_train,y_train)
 ```
 
 The output is:
