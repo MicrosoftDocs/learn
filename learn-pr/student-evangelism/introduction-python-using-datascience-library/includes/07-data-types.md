@@ -9,7 +9,8 @@ stage.
 ``` python
 type(abs)
 ```
-
-    builtin_function_or_method
+``` output
+builtin_function_or_method
+```
 
 This chapter will explore many useful types of data.
