@@ -14,7 +14,7 @@ summary: |
   Learn how to deploy and configure virtual machines, containers, and Web Apps in Azure. This learning path helps prepare you for [Exam AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/exams/az-104). 
 prerequisites:  | 
   - [Azure fundamentals](../azure-fundamentals/index.yml)
-  - [AZ-104 Prerequisites for Azure administrators](../az-104-admin-prerequisites/index.yml)
+  - [AZ-104 Prerequisites for Azure administrators](../az-104-administrator-prerequisites/index.yml)
 iconUrl: /learn/achievements/az-104-manage-compute-resources.svg
 levels:
 - beginner

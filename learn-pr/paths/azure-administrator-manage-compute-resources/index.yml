@@ -14,8 +14,8 @@ summary: |
   Learn how to deploy and configure virtual machines, containers, and Web Apps in Azure. 
 prerequisites: |
   - [Azure fundamentals](../azure-fundamentals/index.yml)
-  - [Prerequisites for Azure administrators](../azure-admin-prerequisites/index.yml)
-iconUrl: /learn/achievements/azure-admin-manage-compute-resources.svg
+  - [Prerequisites for Azure administrators](../azure-administrator-prerequisites/index.yml)
+iconUrl: /learn/achievements/azure-administrator-manage-compute-resources.svg
 levels:
 - beginner
 roles:
