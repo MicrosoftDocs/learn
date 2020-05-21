@@ -1,10 +1,3 @@
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Try it yourself block needa Input and Output code, and Hint text. Search on TBD.
-> - Need output cell content. Search on TBD.
->
-
 Now that we know how to use the Text Analytics API to detect the language, let's use it for sentiment analysis. Basically, the computers at the other end of the API connection will judge the sentiments of written phrases (anywhere on the spectrum of positive to negative) based solely on the context clues provided by the text.
 
 ```python
@@ -16,7 +9,7 @@ print(sentiment_api_url)
 The output is:
 
 ```Output
-TBD
+https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/sentiment
 ```
 
 As above, the Sentiment Analysis API requires the language to be passed in as documents with `id` and `text` attributes.
@@ -28,12 +21,6 @@ documents = {'documents' : [
   {'id': '3', 'language': 'es', 'text': 'Los caminos que llevan hasta Monte Rainier son espectaculares y hermosos.'},  
   {'id': '4', 'language': 'es', 'text': 'La carretera estaba atascada. Había mucho tráfico el día de ayer.'}
 ]}
-```
-
-Here's the output:
-
-```Output
-TBD
 ```
 
 Let's analyze the text using the Sentiment Analysis API to output a sentiment analysis score:
@@ -48,7 +35,11 @@ pprint(sentiments)
 The output is:
 
 ```Output
-TBD
+{'documents': [{'id': '1', 'score': 0.9708490371704102},
+               {'id': '2', 'score': 0.0019068121910095215},
+               {'id': '3', 'score': 0.7456425428390503},
+               {'id': '4', 'score': 0.334433376789093}],
+ 'errors': []}
 ```
 
 ### Try it yourself
@@ -64,13 +55,26 @@ Create another document set with varying degree of sentiment and use the Sentime
   Here's the input:
   
   ```python
-  tbd
+  documents = {'documents' : [
+  {'id': '1', 'language': 'en', 'text': 'I think this is amazingly horrible.'},
+  {'id': '2', 'language': 'en', 'text': 'Ihad such an incredibly good day.'},  
+  {'id': '3', 'language': 'es', 'text': 'Creo que voy a vomitar.'},  
+  {'id': '4', 'language': 'es', 'text': 'Me gusto esta experiencia mucho.'}
+  ]}
+  headers   = {"Ocp-Apim-Subscription-Key": subscription_key}
+  response  = requests.post(sentiment_api_url, headers=headers, json=documents)
+  sentiments = response.json()
+  pprint(sentiments)
   ```
 
   The output is:
   
   ```Output
-  tbd
+  {'documents': [{'id': '1', 'score': 0.09269934892654419},
+               {'id': '2', 'score': 0.9604779481887817},
+               {'id': '3', 'score': 0.1336020827293396},
+               {'id': '4', 'score': 0.5463340282440186}],
+  'errors': []}
   ```
   
 </details>

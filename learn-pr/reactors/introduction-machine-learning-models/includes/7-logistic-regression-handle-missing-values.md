@@ -1,19 +1,3 @@
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> - I changed all instances of "Sex" or "sex" to "Gender" or "gender." The former term is considered "racy" and should be avoided.
-> - Line 188, I revised the text to reference content in unit topic 4.
->
-
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Several output code blocks need content. Search on TBD.
-> - Try it yourself block needs Output code. Search on TBD.
-> - Try it yourself sections need introduction statements. Search on Sarah.
-> - Need some introduction content from you. Search on Sarah.
->
-
 Now we need to address missing values. First, let’s look to see which columns have more than half of their values missing:
 
 ```python
@@ -43,12 +27,6 @@ We could try to do something about those missing values. However, if any pattern
 
 ```python
 df.drop('Cabin',axis=1,inplace=True)
-```
-
-The output is: 
-
-```Output
-TBD
 ```
 
 Let's now run `info` to see if there are columns with just a few null values.
@@ -112,12 +90,6 @@ The median ages are different for men and women sailing on the _Titanic_, which 
 df['Age'] = df.groupby('Gender')['Age'].apply(lambda x: x.fillna(x.median()))
 ```
 
-The output is: 
-
-```Output
-TBD
-```
-
 Any other missing values?
 
 ```python
@@ -171,7 +143,7 @@ Q     77
 Name: Embarked, dtype: int64
 ```
 
-<!-- Sarah, Add introduction statement for input code. -->
+Next, convert the categorical data in the **Gender** and **Embarked** columns into indicator data by using the `get_dummies` method.
 
 ```python
 df = pd.get_dummies(data=df, columns=['Gender', 'Embarked'],drop_first=True)
@@ -201,7 +173,6 @@ df.corr()
 ```
 
 The output is: 
-
 
 ```Output
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -236,24 +207,6 @@ X = df.drop(['Survived','Pclass'],axis=1)
 y = df['Survived']
 ```
 
-The output is: 
-
-```Output
-TBD
-```
-
-<!-- Sarah, Add introduction statement for input code. -->
-
-```python
-X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3,random_state=67)
-```
-
-The output is: 
-
-```Output
-TBD
-```
-
 ### Try it yourself
 
 Now we need to split the training and test data, which you'll do as an exercise.
@@ -266,63 +219,45 @@ Review how we used `train_test_split` in the [Linear regression: Fitting the mod
 
 Set `test_size = 0.3` and `random_state = 67` to get the same results as below when you run through the rest of the code example.
 
-Now you will import and fit the logistic regression model.
-
-<br />
-
 <details> 
 
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
   Here's the input:
 
   ```python
   from sklearn.linear_model import LogisticRegression
 
-  lr = LogisticRegression()
+  X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.3,random_state=67)
   ```
-
-  ```python
-  lr.fit(X_train,y_train)
-  ```
-
-  The output is:
-
-  ```Output
-  LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
-                   intercept_scaling=1, l1_ratio=None, max_iter=100,
-                   multi_class='auto', n_jobs=None, penalty='l2',
-                   random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
-                   warm_start=False)
-  ```
-
+ 
 </details>
 
 <br /><br />
 
 ***
 
-<!-- Sarah: Add introduction statement for next exercise block. -->
+Now you will import and fit the logistic regression model.
 
-<br />
+Here's the input:
 
-<details> 
-  <summary>Hint - TBD <i>(expand to reveal)</i></summary>
+```python
+from sklearn.linear_model import LogisticRegression
+lr = LogisticRegression()
+```
 
-  Here's the input:
+The output is:
 
-  ```python
-  predictions = lr.predict(X_test)
-  ```
+```Output
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                 intercept_scaling=1, l1_ratio=None, max_iter=100,
+                 multi_class='auto', n_jobs=None, penalty='l2',
+                 random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
+                 warm_start=False)
+```
 
-  The output is:
+And then you will save the predictions to compare with the y_test values (aka the true output).
 
-  ```Output
-  TBD
-  ```
-  
-</details>
-
-<br /><br />
-
-***
+```python
+predictions = lr.predict(X_test)
+```

@@ -1,16 +1,5 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> Suggest moving the **Learning goal** to the list of Learning objectives in the Introduction unit or to the abstract summary in the module index.yml.
->
-
-> [!div class="alert is-tip"]
-> ### Learning goal
->
-> By the end of this subsection, you should be comfortable fitting linear regression models, and you should have some familiarity with interpreting their output.
-
 Arguably the simplest form of machine learning is to draw a line connecting two points and make predictions about where that trend might lead.
 
 But what if you have more than two points—and those points don't line up neatly? What if you have points in more than two dimensions? This is where linear regression comes in.
