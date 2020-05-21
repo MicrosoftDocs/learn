@@ -1,8 +1,3 @@
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Line 61: Try it yourself block needs Input and Output code, and Hint text.
-
 The final API we will use in the Text Analytics API service is the Entities API. This will retrieve attributes for documents provided to the API service.
 
 ```python
@@ -61,3 +56,6 @@ The output is:
 ### Try it yourself
 
 What other entities can be retrieved with the API? Create a document setup and use the Text Analytics, Sentiment Analysis, Key Phrase, and Entities API services to retrieve the data.
+
+<!-- This try it block is empty by design. No content is missing. -->
+
