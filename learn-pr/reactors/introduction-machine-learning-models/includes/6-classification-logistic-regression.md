@@ -3,15 +3,7 @@
 > [!Note]
 > **Sarah: Conversion feedback**
 > 
-> - All instances of "Sex" or "sex" to "Gender" or "gender."
-> ---- Sarah looking into updating the data set, which has 'sex' as a column.
-> - Suggest moving the **Learning goal** to the list of Learning objectives in the Introduction unit or to the abstract summary in the module index.yml.
->
-
-> [!div class="alert is-tip"]
-> ### Learning goal
->
-> By the end of this unit, you should know how logistic regression differs from linear regression, be comfortable fitting logistic regression models, and have some familiarity with interpreting their output.
+> - Sarah looking into updating the data set, to change 'sex' column header to 'gender'
 
 We'll now pivot to discussing classification. If our simple analogy of predictive analytics was drawing a line through points and extrapolating from that, then classification can be described in its simplest form as drawing lines around groups of points.
 
