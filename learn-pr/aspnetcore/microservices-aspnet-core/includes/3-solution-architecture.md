@@ -1,4 +1,4 @@
-In this module, you'll gain an understanding of the *eShopOnContainers* app and the microservices architecture used.
+In this unit, you'll gain an understanding of the *eShopOnContainers* app and the microservices architecture used.
 
 ## Solution architecture
 
