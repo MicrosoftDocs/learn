@@ -25,7 +25,7 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 > 
 > ```bash
 > cd ~ && \
->   rm ~/clouddrive/aspnet-learn && \
+>   rm -rf ~/clouddrive/aspnet-learn && \
 >   az group delete --name eshop-learn-rg --yes
 > ```
 
