@@ -10,9 +10,9 @@
 
 ### Content/Media/assets
 - [ X] Remove locale from urls
-- [ ] Final images/screenshots are present
+- [ x] Final images/screenshots are present
 - [ X] Badge images are present
-- [ ] Verify Acrolinx score for all content (score > 80)
+- [ x] Verify Acrolinx score for all content (score > 80)
 
 ### Index.yml
 - [ X] *title* is set
@@ -36,7 +36,7 @@
 - [ X] *interactive* is set to **bash** or **azure-portal** (if exercise)
 - [ X] *azureSandbox* is set to true if needed
 - [ X]  Knowledge checks reviewed for spelling and accuracy
-- [ X] *ROBOTS: NOINDEX*
+- [ X] Remove *ROBOTS: NOINDEX*
 
 ### Exercises
 - [ X] All exercise units have *Exercise - * prefix on titles
