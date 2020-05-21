@@ -32,9 +32,9 @@ quiz:
     - content: "Compute Instance"
       isCorrect: false
       explanation: "That is incorrect. Use a training cluster to create multiple nodes of GPU-enabled VMs that are started automatically as needed."
-    - content: "Training Cluster"
+    - content: "Compute Cluster"
       isCorrect: true
-      explanation: "That is correct. Use a training cluster to create multiple nodes of GPU-enabled VMs that are started automatically as needed."
+      explanation: "That is correct. Use a compute cluster to create multiple nodes of GPU-enabled VMs that are started automatically as needed."
     - content: "Inference Cluster"
       isCorrect: false
       explanation: "That is incorrect. Use a training cluster to create multiple nodes of GPU-enabled VMs that are started automatically as needed."

@@ -3,8 +3,8 @@ After you've used automated machine learning to train some models, you can deplo
 ## Deploy a predictive service
 In Azure Machine Learning, you can deploy a service as an Azure Container Instances (ACI) or to an Azure Kubernetes Service (AKS) cluster. For production scenarios, an AKS deployment is recommended, for which you must create an *inference cluster* compute target. In this exercise, you'll use an ACI service, which is a suitable deployment target for testing, and does not require you to create an inference cluster.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com), on the **Automated ML** page, select the run for your automated machine learning experiment and view the **Details** tab.
-2. Select **Deploy best model**. Then deploy the model with the following settings:
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Automated ML** page, select the run for your automated machine learning experiment and view the **Details** tab.
+2. Select the algorithm name for the best model. Then use the **Deploy** button to deploy the model with the following settings:
     - **Name**: predict-rentals
     - **Description**: Predict cycle rentals
     - **Compute type**: ACI
@@ -21,14 +21,14 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
 
 Now that you've deployed a service, you can test it using some simple code.
 
-1. With the **Consume** page for the **predict-rentals** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com). Then in the new tab, view the **Notebooks** page.
+1. With the **Consume** page for the **predict-rentals** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page.
 On the **Notebooks** page, create a new file with the following settings:
     - **File name**: bike_test.ipynb
     - **File type**: Python Notebooks
     - **Overwrite if already exists**: Selected
     - **Select target directory**: *Select the folder with your user name under **User files***
 2. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
-3. If the notebook is not editable, in the **Edit** menu,  select **Edit inline**. Then in the **[ ]** cell that is created in the notebook, paste the following code:
+3. If the notebook is not editable, in the **Edit** menu,  select **Edit inline**. Then in the cell that is created in the notebook, paste the following code:
 
     ```Python
     endpoint = 'YOUR_ENDPOINT' #Replace with your endpoint
@@ -69,5 +69,5 @@ On the **Notebooks** page, create a new file with the following settings:
 
 4. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
 5. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
-6. Save the notebook, Then select **&#9655; Run All** to run the code (depending on the width of your screen, you may need to open the **...** menu to see this).
-7. Verify that predicted rentals for the five day period are returned.
+6. Save the notebook, Then use the **&#9655;** button next to the cell to run the code.
+7. Verify that predicted number of rentals for each day in the five day period are returned.

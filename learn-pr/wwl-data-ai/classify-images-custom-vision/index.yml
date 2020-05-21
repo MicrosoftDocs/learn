@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.classify-images-custom-vision
+metadata:
+  title: Classify images with the Custom Vision service
+  description: "Image classification is a common workload in artificial intelligence (AI) applications. It harnesses the predictive power of machine learning to enable AI systems to identify real
+-world items based on images."
+  ms.date: 04/24/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Classify images with the Custom Vision service
+summary: Image classification is a common workload in artificial intelligence (AI) applications. It harnesses the predictive power of machine learning to enable AI systems to identify real-world items based on images.
+abstract: |
+  Learn how to use the Custom Vision service to create an image classification solution.
+prerequisites: |
+  Ability to navigate the Azure portal
+iconUrl: /learn/achievements/classify-images-custom-vision.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure-cognitive-services
+units:
+- learn.wwl.classify-images-custom-vision.introduction
+- learn.wwl.classify-images-custom-vision.get-started
+- learn.wwl.classify-images-custom-vision.exercise
+- learn.wwl.classify-images-custom-vision.summary
+badge:
+  uid: learn.wwl.classify-images-custom-vision.badge

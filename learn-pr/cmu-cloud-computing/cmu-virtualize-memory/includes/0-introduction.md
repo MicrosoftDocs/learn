@@ -10,7 +10,7 @@ In this module, you will:
 - Discuss multiple-level page mapping as implied by various virtualized environments, such as native and user-mode hosted virtualized systems.
 - Define memory overcommitment, and discuss the benefits it provides to virtualized systems.
 - Describe what reclamation techniques are and why they are needed.
-- Explain memory ballooning in VMware ESX as an example of a reclamation technique.
+- Explain memory ballooning in VMware ESXi as an example of a reclamation technique.
 
 ## Prerequisites
 

@@ -8,7 +8,7 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: markjulmar
+  #ms.learn-contact: adrianstevens
 title: Predict numeric values with regression
 summary: Use machine learning regression models to predict numeric values. Build multiple variations of linear regression models to estimate things like internet traffic.
 abstract: | 

@@ -1,0 +1,126 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.responsible-bots.9-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Let's check what we've learned in the course.
+  ms.date: 05/19/2020
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-advocates
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions: 
+  - content: "Why does a developer need to know the principles of responsible conversational UI?"
+    choices:
+    - content: "Because developers are responsible for the bots, they deploy."
+      isCorrect: true
+      explanation: "Correct. Developers should take the responsibility for the code they writes."
+    - content: "To make more diverse bots."
+      isCorrect: false
+      explanation: "Incorrect. Supporting diversity is only one aspect of responsible UI."
+    - content: "To design better conversation flow."
+      isCorrect: false
+      explanation: "Incorrect. Good conversation flow design is only one aspect of responsible UI."
+ 
+  - content: "Should a bot try to mimic a human as closely as possible?"
+    choices:
+    - content: "Yes, a good bot should speak to you as though it's human."
+      isCorrect: false
+      explanation: "Incorrect. A user who thinks they're talking to a human can be disappointed when they have problems with the bot. It's better to make it clear to the user that they're talking to a bot."
+    - content: "No, a good bot makes it clear that it's a bot."
+      isCorrect: true
+      explanation: "Correct! It's always better to explicitly introduce a bot as a bot at the beginning of a conversation."
+
+  - content: "What should a bot do if it doesn't understand a problem or can't solve an issue?"
+    choices:
+    - content: "Apologize."
+      isCorrect: false
+      explanation: "Incorrect. While giving an apology might be a good idea, the bot should also try to help the user solve their problem."
+    - content: "Try to talk the user away from the problem."
+      isCorrect: false
+      explanation: "Incorrect. This tactic is definitely not a good idea. It can degrade a user's trust in the bot."
+    - content: "Handoff the conversation to a human."
+      isCorrect: true
+      explanation: "Correct. Bots that handle the beginning of a conversation, and then handoff to a human, can reduce the workload of human operators and still offer high-quality support to the user."
+
+  - content: "How can we make sure all visually impaired people can use our bots?"
+    choices:
+    - content: "Use special braille devices for communication."
+      isCorrect: false
+      explanation: "Incorrect. Making use of such devices could help, but many users might not have them. There's a better way to cover more visually impaired users."
+    - content: "Use text-to-speech and speech-to-text to create a voice interface for the bot."
+      isCorrect: true
+      explanation: "Correct. Bot Framework supports passing voice messages over chat channels via SSML markup or attachments."
+    - content: "Visually impaired people cannot use conversational UI."
+      isCorrect: false
+      explanation: "Incorrect. There are methods for making conversational UI inclusive to the visually impaired."
+
+  - content: "What tools can you use to develop bots for the Azure Bot Service?"
+    choices:
+    - content: "Online Code Editor."
+      isCorrect: false
+      explanation: "Not entirely correct. You can use Online Code Editor, but it's not the only choice."
+    - content: "Visual Studio."
+      isCorrect: false
+      explanation: "Not entirely correct. You can use Visual Studio, but it's not the only choice."
+    - content: "Both Visual Studio and Online Code Editor."
+      isCorrect: true
+      explanation: "Correct. You can develop code either with the Visual Studio IDE on your local machine or you can use the online code editor in a browser."
+
+  - content: "How do you make a bot understand natural language?"
+    choices:
+    - content: "Provide a list of all possible phrases and then check if the user's input corresponds to one of them."
+      isCorrect: false
+      explanation: "Incorrect. You can't provide the complete list of all phrases that a user might say. You do need to provide a set of phrases, but they do not have to match the user's input text exactly."
+    - content: "Provide a list of some phrases for each possible intent, and use an AI model to match the user's input to one of the intents."
+      isCorrect: true
+      explanation: "Correct. This process is automatically handled by the LUIS service."
+    - content: "Program different regular expressions to match the phrase to the best intent."
+      isCorrect: false
+      explanation: "Incorrect. An attempt to match all phrases by providing individual regular expressions would be a complex task. Even so, the results would likely be poor."
+
+  - content: "You decide to implement chit-chat functionality in your bot with support for different conversation styles, like formal, and colloquial. You want the bot to switch between them according to the user's age. How do you achieve that?"
+    choices:
+    - content: "QnA Maker supports different communication styles. You can select any one of them at runtime."
+      isCorrect: false
+      explanation: "Incorrect. Unfortunately, you need to choose a communication style when you create the QnA Maker model. You can't change it on the fly."
+    - content: "The best way would be to use Personality Chat."
+      isCorrect: true
+      explanation: "Correct. Personality Chat allows you to switch between different communication styles at runtime."
+    - content: "QnA Maker doesn't support this functionality so you'd need to implement chit-chat yourself."
+      isCorrect: false
+      explanation: "Incorrect. Implementing chit-chat yourself wouldn't the easiest or the best way."
+    - content: "You can create different QnA Maker models for each personality."
+      isCorrect: false
+      explanation: "Incorrect. While you could do create different models, it's not the easiest option. Project Personality Chat offers an easier way to solve this problem."
+
+  - content: "Sometimes a user can get frustrated with a bot, because they're not sure how to formulate a question. How can we make the user more comfortable?"
+    choices:
+    - content: "Make the communication with the bot through menu interface with pre-defined choices."
+      isCorrect: false
+      explanation: "Incorrect. This practice is definitely a good idea, but not the only one."
+    - content: "Provide help command that will list possible phrases that a user can use"
+      isCorrect: false
+      explanation: "Incorrect. This practice is definitely a good idea, but not the only one."
+    - content: "Providing meaningful welcome message that explains to the user what they can say."
+      isCorrect: false
+      explanation: "Incorrect. This practice isn't the easiest or the best way."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct. The best way towards a more responsible UI is to implement a combination of principles that make the user experience better."
+
+  - content: "Suppose you want to create a bot that finds a favorite dish in a restaurant. How would you implement user input?"
+    choices:
+    - content: "User can type in the menu."
+      isCorrect: false
+      explanation: "Incorrect. Not a good idea to make a user type in the whole menu, especially on a phone"
+    - content: "The user can send a picture of a menu to the bot."
+      isCorrect: true
+      explanation: "Correct. Most bot platforms support sending files or pictures as attachments."
+    - content: "The user can upload a picture of the menu to cloud storage, then send the url to the bot."
+      isCorrect: false
+      explanation: "Incorrect. The bot could accept URL as input, but the overall user experience would be frustrating."

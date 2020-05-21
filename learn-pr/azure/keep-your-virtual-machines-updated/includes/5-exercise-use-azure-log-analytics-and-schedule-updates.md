@@ -4,7 +4,7 @@ In the following exercise you will review the agent connectivity to log analytic
 
 ## Review Agent Connectivity to Log Analytics
 
-Perform the following steps in the Azure portal to assess if connectivity between the agent and log analytics has taken place. Start by signing into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account with which you activated the sandbox.
+Perform the following steps in the Azure portal to assess if connectivity between the agent and log analytics has taken place. Start by signing into the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. On the Azure portal menu or from the **Home** page, select **Virtual machines** option in the left pane and select on the newly created virtual machine.
 2. Select the **Overview** menu option.
@@ -32,7 +32,7 @@ Perform the following steps in the Azure portal to assess if connectivity betwee
 ![Event ID 5002](../media/5-event-id-5002.png "Event ID 5002")
 
 17. Close the Event Viewer and all other windows that were opened.
-18. Close the Remote Desktop Connection application.
+18. Sign out of the Remote Desktop Connection application.
 
 ## Schedule Update Deployments
 

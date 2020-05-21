@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  showCreativeCommonsFooter: true
 title: Cloud computing basics for developers
 summary: |
   Learn about the basics of the cloud, including the history, building blocks, and types, in preparation for real-world cloud practice on Azure.
@@ -24,6 +23,7 @@ summary: |
 
   In partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: None.
+showCreativeCommonsFooter: true
 iconUrl: /learn/achievements/cmu-cloud-developer/cloud-computing-basics-for-developers.svg
 levels:
 - beginner

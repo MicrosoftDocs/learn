@@ -22,6 +22,7 @@ levels:
 - intermediate
 roles:
 - developer
+- administrator
 products:
 - azure
 - azure-virtual-machines

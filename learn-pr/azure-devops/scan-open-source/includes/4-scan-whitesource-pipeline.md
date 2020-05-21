@@ -120,7 +120,7 @@ The team gets together to look at the results.
 
 **Tim:** I have some experience working with the CVE recommendations. I can take some more time to analyze the results and summarize what we're using ahead of our meeting with the legal team.
 
-**Andy:** That sounds great. Let us know what you need. We haven't modified any of the open-source components that we use. I think that in our our conversation with the legal team, we should verify that we can use software with those licenses. We can have a follow-up conversation with the security consultant to see which vulnerabilities we might want to address.
+**Andy:** That sounds great. Let us know what you need. We haven't modified any of the open-source components that we use. I think that in our conversation with the legal team, we should verify that we can use software with those licenses. We can have a follow-up conversation with the security consultant to see which vulnerabilities we might want to address.
 
 **Mara:** I thought that all these concerns around licensing only affected big companies. It's good to know this is something we should keep in mind as we evaluate and use open source.
 

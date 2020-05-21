@@ -120,4 +120,4 @@ Your first task is to create a scale set. You'll configure it to run a web serve
 
 1. In your web browser, go to the public IP address of the scale set. Verify that the message ```Hello World from Virtual Machine Scale Set !``` appears.
 
-    ![Screenshot of the web app running in a web browser with the desired message.](../media/3-web-app.png)
+    :::image type="content" source="../media/3-web-app.png" alt-text="Screenshot of the web app running in a web browser with the desired message." loc-scope="other":::

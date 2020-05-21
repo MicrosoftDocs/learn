@@ -8,7 +8,7 @@ Our **non-functional requirements** help us find that point. These particular re
 
 - How fast a transaction must return under a given load.
 - How many simultaneous connections we need to support before we start returning errors.
-- In the event of server failure, what is the maximum amount of time our application is allowed be down before a back-up is online.
+- In the event of server failure, what is the maximum amount of time our application is allowed to be down before a back-up is online.
 
 Defining these requirements in advance of building your solution is critical to ensure that the application meets expectations but doesn't require more effort or expend more money than necessary. We can also plan our monitoring and operations rules around these non-functional requirements. 
 

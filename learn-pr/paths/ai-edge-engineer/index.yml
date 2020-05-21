@@ -4,7 +4,7 @@ metadata:
   title: AI edge engineer
   description: University of Oxford
   brand: azure
-  ms.date: 12/11/20119
+  ms.date: 4/13/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
@@ -51,6 +51,7 @@ roles:
 - data-scientist
 products:
 - azure
+- azure-iot
 - azure-notebooks
 - azure-cloud-shell
 - azure-container-instances

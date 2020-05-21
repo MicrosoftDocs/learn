@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.classify-images-custom-vision.exercise
+title: Exercise - Create an image classification solution
+metadata:
+  title: Exercise - Create an image classification solution
+  description: "Get hands-on with the Custom Vision service and create an image classification solution"
+  ms.date: 04/24/2020
+  author: benjiang
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 25
+content: |
+  [!include[](includes/3-create-image-classifier.md)]

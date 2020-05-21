@@ -68,7 +68,7 @@ Compliance Manager provides the following features:
 - Provides a secure repository in which to upload and manage evidence and other artifacts related to compliance activities.
 - Produces richly detailed reports in Microsoft Excel that document the compliance activities performed by Microsoft and your organization, which can be provided to auditors, regulators, and other compliance stakeholders.
 
-![Screenshot showing Compliance Manager website](../media/6-compliancemanager.png)
+:::image type="content" source="../media/6-compliancemanager.png" alt-text="Screenshot showing Compliance Manager website." loc-scope="other":::
 
 Compliance Manager provides ongoing risk assessments with a reference of risk-based scores for regulations and standards displayed in a dashboard view. Alternatively, you can create assessments for the regulations or standards that matter more to your organization.
 

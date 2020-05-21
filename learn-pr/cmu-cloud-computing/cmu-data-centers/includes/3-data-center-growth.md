@@ -34,12 +34,6 @@ Efforts in improving power efficiency in IT exist across many parts of the datac
 
 Entire servers attempt to reduce power consumption by going into idle states, in which they temporarily power down or reduce the power consumption of components when the system is underutilized. For example, a server that typically consumes 650 W when busy can scale down to about 200 W when idle. In addition, virtualization enables better management of IT resources and allows organizations to consolidate individual servers onto fewer physical servers.
 
-A study by Google quantified the power consumption of each hardware subsystem in its servers.
-
-![Energy pie chart](../media/energy-pie-chart.png)
-
-_Figure 19: Energy pie chart_
-
 ### Server components
 
 Within individual servers, CPUs and other integrated circuits have gained in performance while maintaining or reducing power consumption. Efforts have also been made to reduce idle power consumption (time periods of low CPU utilization). In addition, dynamic clocking techniques for multicore CPUs enable these CPUs to lower the clock rate of individual cores based on usage and can significantly reduce idle power consumption.
@@ -50,7 +44,7 @@ Systems that distribute and manage electrical power, as well as those providing 
 
 The efficiency of a power supply is the ratio of its output power divided by its input power. For instance, a fully loaded, 800-W power supply at 80% efficiency would consume 1000 W of power, with the remaining 200 W lost as heat. These power supplies have gained efficiency recently, with some of them reaching 95%. An alternate design feeds DC to servers directly, instead of converting AC to DC on each rack. Delivering high-voltage, direct current (HVDC) to each server allows using more efficient, DC/DC supplies within the rack.
 
-Large, centralized, uninterruptible power supply (UPS) systems also incur AC/DC conversion losses. To minimize these losses, Google has adopted a decentralized UPS plan, and for several years, its custom-built servers have each had dedicated battery backup. Some manufacturers now offer this server-based UPS configuration for datacenters.
+Large, centralized, uninterruptible power supply (UPS) systems also incur AC/DC conversion losses. To minimize these losses, many public cloud providers have adopted a decentralized UPS plan, including dedicated battery backup for each server. Some manufacturers now offer this server-based UPS configuration for datacenters.
 
 ### Cooling
 

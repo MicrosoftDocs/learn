@@ -6,10 +6,9 @@ metadata:
   description: Work with the `new` operator to learn how reference type data is allocated memory and referenced throughout its life time.
   ms.date: 09/05/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 azureSandbox: false
 interactive: csharp

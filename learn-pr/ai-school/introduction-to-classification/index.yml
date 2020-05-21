@@ -8,7 +8,7 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: markjulmar
+  #ms.learn-contact: adrianstevens
 title: Predict categories with machine learning classification 
 summary: Use machine learning models to categorize data. Build a logistic regression model and support vector machine models to predict categories like win/loss and tree species.
 abstract: | 

@@ -5,7 +5,7 @@ You'll need to invite the clinicians as guest users in Azure Active Directory B2
 
 With Azure AD B2B, external users can use their identities to collaborate with your organization. Their identities are managed by the partner themselves, or by another external identity provider on their behalf. Here's what it looks like for an external user when they access applications by using their identity through Azure AD B2B.
 
-![Screenshot of apps access page for external user](../media/3-user-added-using-their-identity.png)
+:::image type="content" source="../media/3-user-added-using-their-identity.png" alt-text="Screenshot of apps access page for external user." loc-scope="other"::: <!-- APEX10 -->
 
 Your collaborating partners don't have to keep track of new identities, and you don't take on the additional responsibility of managing external user identities.
 
@@ -15,7 +15,7 @@ First, go to the **Manage external collaboration settings** pane in the Azure po
 
 To add guest users, you'll use a new form. This form lets you input the guest user's email address, and any customized message you want to include in the body of the invitation. After you send the invitation, the user is listed in your directory as a guest type user. The user receives an email invitation, like the following.
 
-![Screenshot of invitation email](../media/3-user-accepts-invitation.png)
+:::image type="content" source="../media/3-user-accepts-invitation.png" alt-text="Screenshot of invitation email." loc-scope="other"::: <!-- APEX 10 -->
 
 The user selects the link in the email invitation to access the application.
 

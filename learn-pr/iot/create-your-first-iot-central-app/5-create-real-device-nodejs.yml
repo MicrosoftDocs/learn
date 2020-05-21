@@ -4,7 +4,7 @@ metadata:
   title: Exercise - Create a programming project for a real device
   description: Create an app simulating a real refrigerated truck, communicating with both Azure Maps and Azure IoT Central.
   ms.date: 10/17/2019
-  author: PeterTurcan
+  author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

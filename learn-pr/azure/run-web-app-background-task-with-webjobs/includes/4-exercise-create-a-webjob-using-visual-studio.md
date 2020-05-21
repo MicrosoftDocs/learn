@@ -39,7 +39,7 @@ Next, use Visual Studio 2017 to create and publish a web app. This will represen
 1. Click the **OK** button to create your project.
 1. In the **ASP.NET Web Application** dialog box, you will see a selection of starting templates. For this exercise, select **MVC**, and then click **OK** to create your project.
 
-    ![New Project Dialog](../media/4-new-web-app.PNG)
+    :::image type="content" source="../media/4-new-web-app.PNG" alt-text="New Project Dialog." loc-scope="aspnet"::: <!-- APEX13 -->
 
 ## Publish To Azure
 

@@ -77,7 +77,7 @@ The next step is to populate your knowledge base with questions and answers. You
 
 1. Select the **Test** button to the right of the **Save and train** button. Type "Hi" into the message box and press **Enter**. Confirm that the response is "Welcome to the QnA Factbot," as shown below.
 
-    ![Screenshot of a test interaction with the created chat bot.](../media/3-test-kb.png)
+    :::image type="content" source="../media/3-test-kb.png" alt-text="Screenshot of a test interaction with the created chat bot." loc-scope="azure-cognitive-services"::: <!-- no-loc -->
 
 1. Type "What book has sold the most copies?" into the message box and press **Enter**. What is the response?
 

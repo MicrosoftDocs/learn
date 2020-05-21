@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-access-to-azure-storage-with-sas.5-use-stored-access-policies
 metadata:
-  title: Use stored access policies to delegate access to Azure storage
-  description: Use stored access policies to delegate access to Azure storage
+  title: Use stored access policies to delegate access to Azure Storage
+  description: Use stored access policies to delegate access to Azure Storage
   ms.date: 03/06/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use stored access policies to delegate access to Azure storage
+title: Use stored access policies to delegate access to Azure Storage
 durationInMinutes: 4
 content: |
   [!include[](includes/5-use-stored-access-policies.md)]

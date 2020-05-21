@@ -2,7 +2,7 @@ Azure can help you tackle tough business challenges. You bring your requirements
 
 Let's take a quick tour of the high-level services Azure offers.
 
-#### Azure: the big picture
+#### Azure: overall picture
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuas]
 
@@ -10,24 +10,28 @@ Let's take a quick tour of the high-level services Azure offers.
 
 Here's a big-picture view of the available services and features in Azure.
 
-[ ![Diagram showing the big picture view of Azure services](../media/3-azure-services.png) ](../media/3-azure-services.png#lightbox)
+[![Diagram showing overall view of Azure services with sections for security and management, platform services, hybrid cloud, and infrastructure services.](../media/3-azure-services.png)](../media/3-azure-services.png#lightbox)
 
-Let's take a closer look at the most commonly-used categories:
+Let's take a closer look at the most commonly used categories:
 
 :::row:::
   :::column:::
+
 - Compute
 - Networking
 - Storage
 - Mobile
 - Databases
+
   :::column-end:::
   :::column:::
+
 - Web
 - Internet of Things
 - Big Data
 - Artificial Intelligence
 - DevOps
+
   :::column-end:::
 :::row-end:::
 
@@ -93,6 +97,7 @@ These services all share several common characteristics:
 Azure enables developers to create mobile backend services for iOS, Android, and Windows apps quickly and easily. Features that used to take time and increase project risks, such as adding corporate sign-in and then connecting to on-premises resources such as SAP, Oracle, SQL Server, and SharePoint, are now simple to include.
 
 Other features of this service include:
+
 - Offline data synchronization.
 - Connectivity to on-premises data.
 - Broadcasting push notifications.
@@ -110,7 +115,7 @@ Azure provides multiple database services to store a wide variety of data types 
 >| Azure Database for MySQL   | Fully managed and scalable MySQL relational database with high availability and security        |
 >| Azure Database for PostgreSQL   | Fully managed and scalable PostgreSQL relational database with high availability and security   |
 > | SQL Server on VMs  | Host enterprise SQL Server apps in the cloud     |
-> | Azure SQL Data Warehouse   | Fully managed data warehouse with integral security at every level of scale at no extra cost    |
+> | Azure Synapse Analytics | Fully managed data warehouse with integral security at every level of scale at no extra cost    |
 > | Azure Database Migration Service    | Migrates your databases to the cloud with no application code changes                  |
 > | Azure Cache for Redis      | Caches frequently used and static data to reduce data and application latency                   |
 > | Azure Database for MariaDB | Fully managed and scalable MariaDB relational database with high availability and security        |
@@ -123,11 +128,11 @@ Having a great web experience is critical in today's business world. Azure inclu
 > | Service Name | Description |
 > |--------------|-------------|
 > | Azure App Service | Quickly create powerful cloud web-based apps |
-> | Azure Notification Hubs |Send push notifications to any platform from any back end. |
-> | Azure API Management | Publish APIs to developers, partners, and employees securely and at scale. |
-> | Azure Cognitive Search | Fully managed search as a service. |
-> | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale. |
-> | Azure SignalR Service | Add real-time web functionalities easily. |
+> | Azure Notification Hubs |Send push notifications to any platform from any back end |
+> | Azure API Management | Publish APIs to developers, partners, and employees securely and at scale |
+> | Azure Cognitive Search | Fully managed search as a service |
+> | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale |
+> | Azure SignalR Service | Add real-time web functionalities easily |
 
 ### Internet of Things
 
@@ -140,20 +145,20 @@ There are a number of services that can assist and drive end-to-end solutions fo
 > |--------------|-------------|
 > | IoT Central | Fully-managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage your IoT assets at scale |
 > | Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices |
-> | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models.
+> | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models |
 
 ### Big Data
 
-Data comes in all formats and sizes. When we talk about Big Data, we're referring to _large_ volumes of data. Data from weather systems, communications systems, genomic research, imaging platforms, and many other scenarios generate hundreds of gigabytes of data. This amount of data makes it hard to analyze and make decisions around. It's often so large that traditional forms of processing and analysis are no longer appropriate.
+Data comes in all formats and sizes. When we talk about Big Data, we're referring to _large_ volumes of data. Data from weather systems, communications systems, genomic research, imaging platforms, and many other scenarios generate hundreds of gigabytes of data. This amount of data makes it hard to analyze and make decisions. It's often so large that traditional forms of processing and analysis are no longer appropriate.
 
 Open source cluster technologies have been developed to deal with these large data sets. Microsoft Azure supports a broad range of technologies and services to provide big data and analytic solutions.
 
 > [!div class="mx-tableFixed"]
 > | Service Name | Description |
 > |--------------|-------------|
-> | Azure SQL Data Warehouse | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
+> | Azure Synapse Analytics | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud |
-> | Azure Databricks | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure. |
+> | Azure Databricks | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure |
 
 ### Artificial Intelligence
 
@@ -174,11 +179,11 @@ A closely related set of products are the _cognitive services_. These are pre-bu
 > [!div class="mx-tableFixed"]
 > | Service Name | Description |
 > |--------------|-------------|
-> | Vision | Image-processing algorithms to smartly identify, caption, index, and moderate your pictures and videos. |
-> | Speech | Convert spoken audio into text, use voice for verification, or add speaker recognition to your app. |
-> | Knowledge mapping | Map complex information and data in order to solve tasks such as intelligent recommendations and semantic search. |
-> | Bing Search | Add Bing Search APIs to your apps and harness the ability to comb billions of webpages, images, videos, and news with a single API call. |
-> | Natural Language processing | Allow your apps to process natural language with pre-built scripts, evaluate sentiment and learn how to recognize what users want. |
+> | Vision | Image-processing algorithms to smartly identify, caption, index, and moderate your pictures and videos |
+> | Speech | Convert spoken audio into text, use voice for verification, or add speaker recognition to your app |
+> | Knowledge mapping | Map complex information and data in order to solve tasks such as intelligent recommendations and semantic search |
+> | Bing Search | Add Bing Search APIs to your apps and harness the ability to comb billions of webpages, images, videos, and news with a single API call |
+> | Natural Language processing | Allow your apps to process natural language with pre-built scripts, evaluate sentiment and learn how to recognize what users want |
 
 ### DevOps
 

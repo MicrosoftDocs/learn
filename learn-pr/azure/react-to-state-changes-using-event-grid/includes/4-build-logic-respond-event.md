@@ -87,6 +87,6 @@ The following example demonstrates the JSON configuration for an Event Grid trig
 
 An extension is also available for Visual Studio Code to enable you to edit your logic apps. You can download and install this extension from the Visual Studio Marketplace or directly from inside Visual Studio Code.
 
-![Azure Logic Apps in a list of Visual Studio Code extensions](../media/4-find-install-logic-apps-extension.png)
+:::image type="content" source="../media/4-find-install-logic-apps-extension.png" alt-text="Azure Logic Apps in a list of Visual Studio Code extensions." loc-scope="vs-code":::
 
 Let's use the designer view in the portal to update the logic app to respond to triggers.

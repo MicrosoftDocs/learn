@@ -12,7 +12,7 @@
 - MongoDB stores data internally using the Binary JSON (BSON) format.
 - MongoDB can be scaled to multiple clusters using replication and sharding.
 - MongoDB is popular for applications that require scale-out, have the need for fast, bulk writes, as well as data that needs to have geo-spatial indices.
-- Apache Cassandra is a fully distributed, structured key-value storage system, which uses<!-- takes --> multiple design aspects of BigTable and Dynamo.
+- Apache Cassandra is a fully distributed, structured key-value storage system, which uses<!-- takes --> multiple design aspects of HBase and Dynamo.
 - A table in Cassandra is known as a _column family_, with each record indexed by a key and consisting of columns; multiple columns can be grouped together into a super column.
 - A row in Cassandra is returned as a sequence of nested key-value pairs.
 - Typical operations in Cassandra include Gets, Inserts, and Deletes. They can be performed on individual rows, on groups of rows (a range), and on a group of columns (a slice).
@@ -23,15 +23,7 @@
 - Specialized algorithms in Cassandra are utilized to handle failure detection; Cassandra nodes can temporarily keep track of write requests to offline nodes and forward them when the node comes back online (hinted handoff).
 - Cassandra's ACID properties are configurable on a per-operation basis.
 - Cassandra is popular because of its feature set, and its tunable consistency model provides a great deal of flexibility in designing applications.
-- Amazon DynamoDB is a managed NoSQL service provided by Amazon Web Services.
-- The DynamoDB data model allows for a key to be designated as the primary. No other schema is required.
-- DynamoDB is a good choice for applications that require a low-latency key-value store.
 <!-- Add summary content relocated here from Module 4 -->
-- Amazon Simple Storage Service (S3) is an online file storage Web service offered by Amazon Web Services.
-- S3 structures data into buckets and objects; a bucket is a container for objects in S3, and objects consist of the binary data of the object as well as metadata. Buckets and objects are accessed by a string, called _bucket name_, and object key, respectively. 
-- The data stored in a single object in S3 can be between 1 byte and 5 terabytes in size.
-- S3 supports simple create, read, update, and delete options through a RESTful interface.
-- S3 utilizes eventual consistency, and developers must account for several scenarios where stale data might be accessed. 
 - OpenStack Swift is an open-source object storage system that be deployed in public or private clouds.
 - Swift proves an S3-like REST interface to access objects.
 - Ceph object gateway is a access layer over the RADOS distributed object store. This offers both S3 and SWIFT compatible interfaces into RADOS.

@@ -2,7 +2,7 @@ The code you write should communicate your intent to both the compiler and to ot
 
 But how should you compose your code in an understandable and maintainable way?  Fortunately, many developers have faced these challenges.  They've experimented with what does and doesn't work.  The software development community as a whole has agreed on some best practices when writing code.  You should be familiar with the practices described in this module and follow them.
 
-In this module, you'll choose descriptive names for your variables that describe their purpose and intent.  You'll learn how to add code comments, both to temporarily instruct the compile to ignore lines of code, and to document higher-level requirements and your approach in code.  Finally, you'll learn how whitespace can be used to help convey the relationship of individual lines of code.
+In this module, you'll choose descriptive names for your variables that describe their purpose and intent.  You'll learn how to add code comments, both to temporarily instruct the compiler to ignore lines of code, and to document higher-level requirements and your approach in code.  Finally, you'll learn how whitespace can be used to help convey the relationship of individual lines of code.
 
 By the end of this module, you'll write code more purposefully, focusing on the readability and quality of the code to communicate to both the compiler and other developers.
 

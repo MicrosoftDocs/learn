@@ -28,11 +28,11 @@ As described in an earlier unit, if you're redeploying a web app after making mo
 
 :::image type="content" source="../media/6-deploy-web-app.png" alt-text="The Deploy Web App wizard. The user is deploying the web app to a new deployment slot." loc-scope="third-party":::
 
-After you have deployed your web app to a new deployment slot, the deployment slot name will be appended to the name of the web app. In the example shown above, the new version of the web app would be available through the URL **http://contosocurrencylister-contosocurrencylistenerv2.azurewebsites.net/**, while the original web app would still be available at **http://contosocurrencylister.azurewebsites.net/**.
+After you have deployed your web app to a new deployment slot, the deployment slot name will be appended to the name of the web app. In the example shown above, the new version of the web app would be available through the URL **http:\//contosocurrencylister-contosocurrencylistenerv2.azurewebsites.net/**, while the original web app would still be available at **http:\//contosocurrencylister.azurewebsites.net/**.
 
 ### How to swap deployment slots
 
-You can easily switch the new version of your web app with the original. Once you have made the switch, the new version will be available through the URL **http://contosocurrencylister.azurewebsites.net/**. To make the switch, in the **Azure Explorer** window, expand your web app and then expand **Deployment Slots**. Right-click the new deployment slot, and then click **Swap with production**.
+You can easily switch the new version of your web app with the original. Once you have made the switch, the new version will be available through the URL **http:\//contosocurrencylister.azurewebsites.net/**. To make the switch, in the **Azure Explorer** window, expand your web app and then expand **Deployment Slots**. Right-click the new deployment slot, and then click **Swap with production**.
 
 > [!div class="mx-imgBorder"]
 > ![The **Azure Explorer** window. The user is swapping the web app in the version 2 deployment slot with the production slot](../media/6-swap-slots.png)

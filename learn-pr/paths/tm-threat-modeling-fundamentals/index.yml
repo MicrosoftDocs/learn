@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.security.tm-threat-modeling-fundamentals
 metadata:
-  title: Threat modeling fundamentals
+  title: Threat Modeling Security Fundamentals
   description: This learning path takes you through the four main phases of threat modeling, explains the differences between each data-flow diagram element, walks you through the threat modeling framework, recommends different tools and gives you a step-by-step guide on creating proper data-flow diagrams.
   brand: azure
   ms.date: 2/28/2020
@@ -9,7 +9,7 @@ metadata:
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Threat Modeling Fundamentals
+title: Threat Modeling Security Fundamentals
 summary: This learning path takes you through the four main phases of threat modeling, explains the differences between each data-flow diagram element, walks you through the threat modeling framework, recommends different tools and gives you a step-by-step guide on creating proper data-flow diagrams.
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg

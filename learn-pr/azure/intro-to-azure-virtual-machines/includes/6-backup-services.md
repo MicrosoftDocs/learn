@@ -1,4 +1,4 @@
-Data backup and recovery is a necessary piece of the planning for any good infrastructure. Perhaps it's a bug that erases some data, or maybe you need to retrieve some archived data for auditing purposes. Maintaining a good backup strategy will ensure you aren't scrambling when data or software needs to be restored.
+Data backup and recovery is a necessary piece of the planning for any good infrastructure. Assume a bug erases some company data, or maybe you need to retrieve some archived data for auditing purposes. Maintaining a good backup strategy will ensure you aren't scrambling when data or software needs to be restored.
 
 **Azure Backup** is a _backup as a service_ offering that protects physical or virtual machines no matter where they reside: on-premises or in the cloud.
 

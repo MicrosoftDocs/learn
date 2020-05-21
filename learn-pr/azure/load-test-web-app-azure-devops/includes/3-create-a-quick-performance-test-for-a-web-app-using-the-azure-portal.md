@@ -63,9 +63,10 @@ In this step, you'll finalize the deployment of your web app by editing a config
    > [!NOTE]
    > The website is text-only at this point.
 
-   ![Web app home page](../media/3-webapp-default-page.png)
+   :::image type="content" source="../media/3-webapp-default-page.png" alt-text="Web app home page." loc-scope="other":::
 
 ## Create and run a performance test
+
 In this step, you'll create and run a performance test for your web app. You'll start by creating a new Azure DevOps organization so you can save the results of the test.
 
 1. Go back to the Azure portal. In the **contosorentals\<number\>** App Service pane, in the **Development Tools** section, select **Performance test**.
@@ -93,7 +94,8 @@ In this step, you'll create and run a performance test for your web app. You'll 
    ![Configure web app to display graphics](../media/3-configure-webapp-graphics.png)
 1. Switch to the web app's browser tab and refresh the page. You should now see a box at top of the page that varies by page. You'll also see a box containing text and circles at the bottom of the page that loads a new set of random colors on each page load:
 
-   ![Webpage with graphics](../media/3-webapp-default-page-with-graphics.png)
+   :::image type="content" source="../media/3-webapp-default-page-with-graphics.png" alt-text="Webpage with graphics." loc-scope="other":::
+
 1. You might notice that some of the graphics are slow to load, so you'll now rerun the performance test.
 1. Switch back to the Azure portal. In the **contosorentals\<number\>** App Service pane, in the **Development Tools** section, select **Performance test**, select **SimplePerfTest01**, select **Rerun**, and then, in the **Rerun performance test** pane, select **Run test**.
 1. Close the performance test pane and wait for the test run to finish. You'll look at the details in the next unit.

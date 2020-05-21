@@ -1,4 +1,4 @@
-Machine learning uses mathematics and statistics to predict unknown values. For example, Suppose *Adventure Works Cycles* is a business that rents cycles in a city. The business could use historic data to train a model that predicts daily rental demand in order to make sure sufficient staff and cycles are available.
+Machine learning uses mathematics and statistics to predict unknown values. For example, suppose *Adventure Works Cycles* is a business that rents cycles in a city. The business could use historic data to train a model that predicts daily rental demand in order to make sure sufficient staff and cycles are available.
 
 > [!div class="centered"]
 > ![Adventure Works cycle rental location, on a cloudy day in January](../media/adventureworks.png)

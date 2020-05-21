@@ -14,7 +14,7 @@ There are [example templates available in docs](https://azure.microsoft.com/reso
 
 The actual template source is stored in GitHub. You can browse to a template in GitHub and deploy right to Azure from the page.
 
-![Screenshot showing GitHub template with the Deploy to Azure button highlighted](../media/5-deploy-from-github.png)
+:::image type="content" source="../media/5-deploy-from-github.png" alt-text="Screenshot showing GitHub template with the Deploy to Azure button highlighted." loc-scope="third-party"::: <!-- no-loc -->
 
 When the template is deployed, Azure will display a list of required input fields.
 

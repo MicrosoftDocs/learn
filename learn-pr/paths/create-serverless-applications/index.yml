@@ -5,8 +5,8 @@ metadata:
   description: In this learning path, discover Azure Functions that create event-driven, compute-on-demand systems using server-side logic to build serverless architectures.
   brand: azure
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create serverless applications

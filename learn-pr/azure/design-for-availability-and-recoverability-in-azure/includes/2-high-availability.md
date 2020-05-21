@@ -71,7 +71,7 @@ The Azure cloud platform has been designed to provide high availability througho
 
 Availability sets are a way for you to inform Azure that VMs that belong to the same application workload should be distributed to prevent simultaneous impact from hardware failure and scheduled maintenance. Availability sets are made up of *update domains* and *fault domains*.
 
-![An illustration showing three availability sets. The first set has one update domain, the second has two update domains, and the third is without any update domain.](../media/AzAvailSets.png)
+:::image type="content" source="../media/AzAvailSets.png" alt-text="An illustration showing three availability sets. The first set has one update domain, the second has two update domains, and the third is without any update domain." loc-scope="other"::: <!-- no-loc -->
 
 Update domains ensure that a subset of your application's servers always remain running when the virtual machine hosts in an Azure datacenter require downtime for maintenance. Most updates can be performed with no impact to the VMs running on them, but there are times when this isn't possible. To ensure that updates don't happen to a whole datacenter at once, the Azure datacenter is logically sectioned into update domains (UD). When a maintenance event, such as a performance update and critical security patch that needs to be applied to the host, the update is sequenced through update domains. The use of sequencing updates using update domains ensures that the whole datacenter isn't unavailable during platform updates and patching.
 
