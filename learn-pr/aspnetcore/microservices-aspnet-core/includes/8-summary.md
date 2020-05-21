@@ -36,7 +36,7 @@ The preceding script:
 * Uses the `az ad sp delete` command to remove each matching service principal.
 
 > [!NOTE]
-> Only one service principal is expected in the list.
+> More than one service principal is expected if the setup script has been run more than once. Each time the setup script is run, it creates a new service principal.
 
 [!INCLUDE[download files](../../includes/summary-download-clouddrive.md)]
 
