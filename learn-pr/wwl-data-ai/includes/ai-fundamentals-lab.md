@@ -9,7 +9,7 @@ To set up a Visual Studio Codespace:
 2. If you don't already have a Visual Studio Codespaces billing plan, create one. Then create a codespace with the following settings:
     - **Codespace Name**: *A name for your codespace - for example, **ai-fundamentals**.*
     - **Git Repository**: MicrosoftDocs/ai-fundamentals
-    - **Instance Type**: Standard (Linux) 4 cores, 8GB RAM
+    - **Instance Type**: Standard (Linux) 4 cores, 8 GB RAM
     - **Suspend idle Codespace after**: 30 minutes
 3. Wait for the codespace to be created. This will take around 3 minutes. You'll see the following things happen:
     - A script will initialize and configure your codespace.
