@@ -79,12 +79,12 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
 Container images are hosted in container registries. For many scenarios, a public container registry like Docker Hub might be appropriate. All of the container images used when the solution was initially deployed to AKS were from a public Docker Hub registry.
 
-The coupon service isn't the only container image that needs to be hosted in ACR. The implementation script modified the *WebSPA* web app on your behalf. The modified *WebSPA* isn't available as a container image on the public Docker Hub registry. Accordingly, you must host both the new coupon service container image and the modified *WebSPA* web app container image on your private ACR.
+The coupon service is a new container image you're creating. It needs to be hosted in a container registry, and for that you'll be using ACR. The coupon service isn't the only container image that needs to be hosted in ACR. The implementation script modified the *WebSPA* web app on your behalf. The modified *WebSPA* app isn't available as a container image on the public Docker Hub registry. Accordingly, you must host both the new coupon service container image and the modified *WebSPA* web app container image on your private ACR.
 
 > [!NOTE]
-> The `helm install` command used in the next unit specifies which container registry to use when the charts are installed to Kubernetes/AKS.
+> The `helm install` command used later in the module specifies which container registry to use when the charts are installed to Kubernetes/AKS.
 
-Run the following script in the command shell to build the coupon service and *WebSPA* web app container images:
+Run the following script in the command shell to build the coupon service and *WebSPA* web app container images and host them in ACR:
 
 ```bash
 ./deploy/k8s/build-to-acr.sh
@@ -92,7 +92,7 @@ Run the following script in the command shell to build the coupon service and *W
 
 The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects. 
 
-Note the solution isn't being built in your cloud shell instance at all. The build takes place in the cloud when the container image is sent to ACR, and build output is displayed in the terminal. The `az acr build` commands used by the script are echoed to the console with the correct parameters, and look similar to this:
+Note the solution isn't being built in your cloud shell instance at all. The build takes place in the cloud when the container image is sent to ACR, and build output is displayed in the console. The `az acr build` commands used by the script are echoed to the console with the correct parameters, and look similar to this:
 
 ```azcli
 
@@ -104,7 +104,7 @@ In the preceding example:
 * stuff
 * happens
 
+> [!NOTE]
+> If any of the code changes you made to the Coupon.API project were incorrect, the build in ACR might fail. In the event of build errors, use the build output in the console to troubleshoot the error and re-run `./deploy/k8s/build-to-acr.sh`.
+
 In the next unit, you'll update the AKS deployment with your modifications.
-
-
-
