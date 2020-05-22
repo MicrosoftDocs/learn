@@ -18,7 +18,7 @@ For this exercise, we'll use the Cloud Shell experience as part of our sandbox i
 
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-1. Our first step is to make sure that we work with the correct Azure subscription before we change any settings. We'll use the `az account list` list command. By default, the command returns a *JSON* string. However, we'll format the output as a table to makethe  information easier to work with. Run the following command.
+1. Our first step is to make sure that we work with the correct Azure subscription before we change any settings. We'll use the `az account list` list command. By default, the command returns a *JSON* string. However, we'll format the output as a table to make the information easier to work with. Run the following command.
 
     ```azurecli
     az account list --output table
@@ -42,7 +42,7 @@ For this exercise, we'll use the Cloud Shell experience as part of our sandbox i
 
     Here an example of the command's output:
 
-    ```output
+    ```json
     {
     "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Web/sites/BlogFor",
     "identity": null,
