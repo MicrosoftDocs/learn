@@ -8,7 +8,7 @@ You need to create another HTTP-triggered Azure Function. These instructions are
 
 1. Click on **View** then **Command Palette**, then search for and select **Azure Functions: Create Function...**
 
-    ![Create New Function dialog in the top of the VS Code window](../media/4.create-function.png)
+    ![Create New Function dialog in the top of the Visual Studio Code window](../media/4.create-function.png)
 
 2. Select the folder where you originally created the function project.
 
