@@ -70,7 +70,7 @@ c:\source\repos
 
 ### Step 1 - Format the output of the command-line application using character escape sequences
 
-To create the mockup of our command line too, add the following code in the editor.
+To create the mockup of our command line tool, add the following code in the editor.
 
 ```csharp-interactive
 Console.WriteLine("Generating invoices for customer \"ABC Corp\" ...\n");
