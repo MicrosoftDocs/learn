@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-monitoring.3-expandingreliability
+title: "Expanding Our Understanding of Reliability"
+metadata:
+  title: "Expanding Our Understanding of Reliability"
+  description: "Improve Your Reliability: Monitoring"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+# TODO: set correct duration  
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-expandingreliability.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of the following is one of the eight aspects of reliability discussed in this unit?'
+    choices:
+    - content: 'latency'
+      isCorrect: true
+      explanation: 'Correct, latency can be an important aspect of reliability to monitor.'
+    - content: 'consitency'
+      isCorrect: false
+      explanation: 'Consistency could be an important thing to monitor but it was not one of the items in this unit.'
+    - content: 'repeatability'
+      isCorrect: false
+      explanation: 'Repeatability could be interesting to monitor under some circumstances, but it was not one of the items in this unit.'  

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.improve-reliability-monitoring
+title: "Improve Your Reliability: Monitoring"
+metadata:
+  title: "Improve Your Reliability: Monitoring"
+  description: Learn how to use monitoring to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+summary: Monitoring is the foundational practice you must tackle before you can make any headway with reliability. Learn what (and what not) to monitor to improve it using the tools available on Azure.
+abstract: |
+  In this module you will:
+  - Learn how to increase your operational awareness as a precursor to reliability work
+  - Expand your understanding of reliability itself
+  - Change the way you frame your thinking about monitoring to make it more impactful
+  - Gain a basic understanding of the applicable monitoring platform and tools available on Azure
+  - Learn a practice from site reliability engineering that can immediately start to create an impact on reliability
+  - Learn to craft actionable alerts to make your operational practices sustainable
+iconUrl: /learn/achievements/improving-reliability-monitoring.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+prerequisites: none
+units:
+- learn.improve-reliability-monitoring.1-introduction
+- learn.improve-reliability-monitoring.2-opawareness
+- learn.improve-reliability-monitoring.3-expandingreliability
+- learn.improve-reliability-monitoring.4-changetheframe
+- learn.improve-reliability-monitoring.5-monitoringtools
+- learn.improve-reliability-monitoring.6-loganalytics
+- learn.improve-reliability-monitoring.7-slislo
+- learn.improve-reliability-monitoring.8-actionablealerts
+- learn.improve-reliability-monitoring.9-takeaways
+
+badge:
+  uid: learn.improve-reliability-monitoring.badge
