@@ -33,13 +33,21 @@ These may seem like obvious design choices, but note that the `Coupon` model is 
 
 ### Technology stack
 
-Microservice architectures are technology agnostic and give the development teams the flexibility to select the technology stack of choice. The following table outlines the relevant technologies used by the coupon service.
+Microservice architectures are technology agnostic, thus giving development teams flexibility to select the technology stack for each service independently. The following table outlines the relevant technologies used by the coupon service.
 
 | Technology | Description |
 |-------------------|-------------|
 | ASP.NET Core web API | The RESTful services for querying discounts are implemented in ASP.NET Core. A web API uses *Controllers* to handle HTTP requests. |
 | MongoDB | The NoSQL database that stores the coupons and their utilization data. In a real-world scenario, it's common for services to use a managed database like [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db) instead of running them in a container. |
 | Docker | The web API project and the MongoDB database, along with their dependencies, are packaged into respective container images using Docker. |
+
+### Integration with other services
+
+**%TODO%** - What's going on with Orders and Basket. And Identity.
+
+## **%TODO%** Note
+
+Should we add a unit break here? Make this the end of unit 5 and the next H2 the beginning of unit 6? (Possibly for a total of 9 units as opposed to the current 8)
 
 ## Add the coupon service
 
@@ -95,7 +103,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
     ```
 
     > [!TIP]
-    > This module uses scripts to keep focus on the learning objectives. You may inspect the scripts in the Cloud Shell editor to better understand how resources are provisioned.
+    > This unit uses scripts to keep focus on the learning objectives. You may inspect the scripts in the Cloud Shell editor to better understand the commands used.
 
     The preceding script:
 
@@ -104,7 +112,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
     * Adds the coupon service endpoints to the aggregator Helm chart in *deploy/k8s/helm-simple/webshoppingagg/templates/configmap.yaml*
     * Adds the coupon health check to the *WebStatus* Helm chart in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*.
 
-    When you create an object in a Kubernetes (or AKS) cluster, you must provide the object specification in a YAML file. In the next unit, you'll use the template functionality in the open-source tool Helm to generate and send the YAML files to the AKS cluster.
+    When you create an object in a Kubernetes (or AKS) cluster, you must provide the object specification in a YAML file. You'll use the template functionality in the open-source tool Helm to generate and send the YAML files to the AKS cluster.
     
     The Helm chart for the coupon service is comprised of the following files in *deploy/k8s/helm-simple/coupon/*:
 
@@ -118,17 +126,34 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
 ## Build the coupon service in ACR
 
-Container images are hosted in container registries. For many scenarios, a public container registry like Docker Hub might be appropriate. However, you'll be using your private ACR account for hosting your new coupon service container image and the modified *WebSPA* container image.
+Container images are hosted in container registries. For many scenarios, a public container registry like Docker Hub might be appropriate. All of the container images used when the solution was initially deployed to AKS were from a public Docker Hub registry.
 
-Run the following script in the command shell to build the coupon service container and the *WebSPA* container:
+The coupon service isn't the only container image that needs to be hosted in ACR. The implementation script modified the *WebSPA* web app on your behalf. The modified *WebSPA* isn't available as a container image on the public Docker Hub registry. Accordingly, you must host both the new coupon service container image and the modified *WebSPA* web app container image on your private ACR.
+
+> [!NOTE]
+> The `helm install` command used in the next unit specifies which container registry to use when the charts are installed to Kubernetes/AKS.
+
+Run the following script in the command shell to build the coupon service and *WebSPA* web app container images:
 
 ```bash
 ./deploy/k8s/build-to-acr.sh
 ```
 
-The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects. The build takes place in the cloud, and build output is displayed in the terminal. 
+The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects. 
 
-ACR isn't required to use AKS. AKS supports using other container registries such as Docker Hub.
+Note the solution isn't being built in your cloud shell instance at all. The build takes place in the cloud when the container image is sent to ACR, and build output is displayed in the terminal. The `az acr build` commands used by the script are echoed to the console with the correct parameters, and look similar to this:
 
-> [!TIP]
-> When using Visual Studio, a *Dockerfile* file such as the one used in the coupon service can be generated by right-clicking on the project in **Solution Explorer**, selecting **Add**, and selecting **Docker Support**.
+```azcli
+
+```
+
+In the preceding example:
+
+* Some
+* stuff
+* happens
+
+In the next unit, you'll update the AKS deployment with your modifications.
+
+
+
