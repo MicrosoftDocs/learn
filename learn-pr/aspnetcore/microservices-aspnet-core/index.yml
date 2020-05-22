@@ -36,7 +36,7 @@ units:
 - learn.microservices-aspnet-core.2-deploy-application
 - learn.microservices-aspnet-core.3-solution-architecture
 - learn.microservices-aspnet-core.4-review-code-verify-deployment
-- learn.microservices-aspnet-core.5coupon-service-design
+- learn.microservices-aspnet-core.5-coupon-service-design
 - learn.microservices-aspnet-core.6-add-coupon-service
 - learn.microservices-aspnet-core.7-update-aks-deployment
 - learn.microservices-aspnet-core.8-knowledge-check
