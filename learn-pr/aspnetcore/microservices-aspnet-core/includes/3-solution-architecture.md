@@ -14,15 +14,21 @@ The *eShopOnContainers* app is an online store that sells various products, incl
 
 Each of the preceding features is managed with a distinct microservice. Each microservice is autonomous, independently deployable, and responsible for its own data. This architecture enables each microservice to implement the data store that is best optimized for its workload, storage needs, and read/write patterns. Data store choices include relational, document, key-value, and graph-based.
 
-As shown in the preceding figure, the *catalog* microservice stores its data in a SQL Server on Linux database, the *basket* microservice uses a Redis cache for storage, and so on. There's no single master data store with which all services interact. Instead, inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging. This data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in the production environment.
+As shown in the preceding figure, the *catalog* service stores its data in a SQL Server on Linux database, the *basket* service uses a Redis cache for storage, and so on. There's no single master data store with which all services interact. Instead, inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging. This data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in the production environment.
 
 ### Identity
 
-The WebSPA client app performs authentication and authorization with an *identity* microservice that also is a Security Token Service (STS). It is a containerized ASP.NET Core project that uses [IdentityServer 4](https://identityserver.io/) - the popular **OpenID Connect and OAuth Framework for .NET**. Alternatively, you can use [Microsoft Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) that offers identity and access management as a service in the cloud. In the above architecture, *identity* service is deliberately kept out of the API Gateway and is allowed to access directly. It is because the original **eShopOnContainers** app uses multiple API Gateways separated by the business areas, and creating another API Gateway for cross-cutting concerns would be an overkill for a reference application.
+The *WebSPA* client app performs authentication and authorization with an *identity* service that also serves as a Security Token Service (STS). It's a containerized ASP.NET Core project that uses [IdentityServer 4](https://identityserver4.readthedocs.io), a popular OpenID Connect and OAuth 2.0 framework for ASP.NET Core. An alternative is to use [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD). AAD offers identity and access management as a service.
+
+In the preceding diagram, the identity service is configured to allow direct access. For this reason, the API gateway is bypassed. The full **eShopOnContainers** app, on which this sample is based, uses multiple API gateways separated by business areas. For this smaller implementation, however, another API gateway isn't required.
 
 ### Event bus
 
-The event bus is used for asynchronous messaging and event-driven communication. The above implementation uses RabbitMQ in a container deployed to AKS, but a service such as [Azure Service Bus](https://azure.microsoft.com/services/service-bus) would also be appropriate.
+An event bus is used for asynchronous messaging and event-driven communication. The preceding architecture diagram depicts RabbitMQ in a Docker container deployed to AKS, but a service such as [Azure Service Bus](https://azure.microsoft.com/services/service-bus) would also be appropriate.
+
+![Event bus illustration](../media/temp/eventbus-implementation.png)
+
+The preceding diagram depicts the publish/subscribe (commonly shortened to *pub-sub*) pattern used with the event bus. Any service can publish an event to the event bus. Each service is responsible for subscribing to the messages relevant to its domain. The services each call an `AddEventBus` extension method in the `ConfigureServices` method of *Startup.cs*. This method establishes a connection to the event bus and registers the appropriate event handlers for that service's domain.
 
 ### API gateway
 
@@ -37,7 +43,7 @@ Microservices are small enough for a feature team to independently build, test, 
 * Publishing container images to a container registry.
 * Deploying containers to an existing Kubernetes cluster.
 
-The new coupon microservice is shown in the preceding diagram's blue box.
+The new coupon service is denoted by a blue box in the architecture diagram at the beginning of this unit.
 
 ### Other services
 

@@ -1,37 +1,51 @@
 In this unit, you complete the *Coupon.API* project. You will then run a script to generate changes to the *WebSPA* HTML, as well as generate and modify Helm charts to define the kubernetes deployment.
 
-## Designing coupon microservice
+## Design the coupon service
 
 ### Business requirement
 
-There are multiple ways of implementing a coupon feature in an e-commerce app; however, for the sake of simplicity, look at the following business requirement:
+There are many ways to implement a coupon code feature in an e-commerce app. For simplicity, the following business requirements have been provided:
 
-* The user shall apply a discount coupon code during the checkout (**DISC-##**, where ## is the discount amount to the order total. For $5, $10, $15, $20, $25, and $30).
-* The coupon microservice must confirm that the coupon is available and return the discount amount during checkout.
-* Once the payment is processed, the ordering microservice will request validation for the coupon during the order process.
-* Upon validation, the coupon will be assigned to the order and won't be available for any other order.
+* To obtain a discount, the user can apply a coupon code from the checkout page. All coupon codes are prefixed with *DISC-* and are suffixed with an unsigned integer. The integer indicates the US dollar amount to be deducted from the order total. For example, *DISC-30* deducts 30 US dollars.
+* The coupon service must validate that the coupon code is available before allowing it to be used.
+* Once the payment is processed, the ordering service should request validation for the coupon during the order process.
+* Upon validation, the coupon should be assigned to the order and won't be available for any other order.
 * If an order is canceled, the assigned coupon should be released for any other order to use.
 
-### Domain Model
+### Domain model
 
-Domain-driven design (DDD) advocates modeling based on the reality of business as relevant to a use case. In the context of building applications, DDD talks about problems as domains. It describes independent problem areas as bounded contexts and emphasizes a common language to talk about these problems. Where to draw the boundaries is the crucial task when designing and defining a microservice. For the domain model for each bounded context, you identify and define the entities, value objects, and aggregates that model your domain. Considering that the coupon feature requirement is straightforward, the coupon microservice is implemented more like a CRUD service, and the boundaries are well defined within the `coupon` domain.
+**D**omain-**D**riven **D**esign (DDD) is a design pattern whereby the structure and language of your code (including class names, methods, and variables) should match the business domain. The pattern describes independent problem areas as bounded contexts and emphasizes a common language to describe these problems. Knowing where to draw the boundaries is the most important task when designing and defining a microservices-based solution. For each bounded context, you must identify and define the entities, value objects, and aggregates that model your domain. The coupon feature requirement is straightforward, so the coupon service is implemented like a CRUD service, and the boundaries are well-defined within the coupon domain.
+
+The coupon service represents a coupon as a `Coupon` object, using the class defined at *src/Services/Coupon/Coupon.API/Infrastructure/Models/Coupon.cs*. This class encapsulates the attributes of a coupon.
+
+|Property  |Description |
+|----------|------------|
+|`Id`      |The unique identifier of the coupon.|
+|`Discount`|The discount amount in US dollars.|
+|`Code`    |The coupon code.|
+|`Consumed`|A flag indicating whether the coupon code has been used.|
+|`OrderId` |The unique identifier of the associated order to which the coupon code has been applied.|
+
+These may seem like obvious design choices, but note that the `Coupon` model is key to all of the business logic in `Coupon.API`. The coupon service:
+
+* Only concerns itself with the domain of coupons.
+* Relies on the other services to interact with other domains, such as determining whether an order is valid.
 
 ### Technology stack
 
-Microservice architectures are technology agnostic and give the development teams the flexibility to select the tech stack of choice. Coupon microservice uses the following:
+Microservice architectures are technology agnostic and give the development teams the flexibility to select the technology stack of choice. The following table outlines the relevant technologies used by the coupon service.
 
 | Technology | Description |
 |-------------------|-------------|
-| **ASP.NET Core Web API** |  The RESTful services for querying discounts are implemented in ASP .NET Core. A web API uses *Controllers* to handle requests. |
-| **MongoDB** |  The NoSQL database that stores the coupons and their utilization data.  |
-| **Containerization using Docker** | The Web API project and the MongoDB database, along with their dependencies, are packaged into respective container images using **Docker**. In a real-world scenario, it's preferred for microservices to use a managed database like **Azure Cosmos DB** instead of running them in a container |
+| ASP.NET Core web API | The RESTful services for querying discounts are implemented in ASP.NET Core. A web API uses *Controllers* to handle HTTP requests. |
+| MongoDB | The NoSQL database that stores the coupons and their utilization data. In a real-world scenario, it's common for services to use a managed database like [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db) instead of running them in a container. |
+| Docker | The web API project and the MongoDB database, along with their dependencies, are packaged into respective container images using Docker. |
 
 ## Add the coupon service
 
-An ASP.NET Core project for the coupon service has been provided in *src/Services/Coupon*.
+An ASP.NET Core project for the coupon service has been provided in the *src/Services/Coupon/Coupon.API* directory. Locate that directory in the Cloud Shell editor, and apply the following changes to the service:
 
-1. Open *src/Services/Coupon/Coupon.API/Controllers/CouponController.cs*.
-1. Replace the comment `/* Add the GetCouponByCodeAsync method */` with the following code:
+1. In *Controllers/CouponController.cs*, replace the comment `/* Add the GetCouponByCodeAsync method */` with the following code:
 
     ```csharp
     [HttpGet("{code}")]
@@ -59,19 +73,20 @@ An ASP.NET Core project for the coupon service has been provided in *src/Service
     * If the coupon returned is `null` or has already been used, an HTTP 404 status code is returned.
     * If the coupon returned isn't `null` and hasn't already been used, the `Coupon` object is converted to a `CouponDto` **D**ata **T**ransfer **O**bject (DTO). Finally, an HTTP 200 status code is returned along with the DTO.
 
-1. Make the following changes to the `ConfigureServices` method in *src/Services/Coupon/Coupon.API/Startup.cs*
+1. Make the following changes in *Startup.cs*:
+    1. In the `ConfigureServices` method, invoke the `AddCustomHealthCheck` method after the `AddSwagger` method call:
 
-    [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configureServices&highlight=13)]
+        [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configureServices&highlight=13)]
 
-    The preceding change adds the custom health check service to the app.
+        The preceding change adds the custom health check service to the app.
 
-    %TODO% - Explain custom HC service, display extension method. De-magicfy.
+        %TODO% - Explain custom HC service, display extension method. De-magicfy.
 
-1. Also in *Startup.cs*, make the following changes to the `Configure` method:
+    1. In the `Configure` method, register two health checks endpoints with the ASP.NET Core routing system:
 
-    [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configure&highlight=30-38)]
+        [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configure&highlight=30-38)]
 
-    The preceding change adds the readiness `/hc` and liveness `/liveness` endpoints for the custom health check service.
+        The preceding change adds the readiness `/hc` and liveness `/liveness` endpoints for the custom health check service.
 
 1. Run the following script in the command shell to make additional configuration changes for the coupon service:
 
@@ -80,7 +95,7 @@ An ASP.NET Core project for the coupon service has been provided in *src/Service
     ```
 
     > [!TIP]
-    > This module uses scripts to keep focus on the learning objectives. You may inspect the scripts in the Cloud Shell Editor to better understand how resources are provisioned.
+    > This module uses scripts to keep focus on the learning objectives. You may inspect the scripts in the Cloud Shell editor to better understand how resources are provisioned.
 
     The preceding script:
 
@@ -99,11 +114,11 @@ An ASP.NET Core project for the coupon service has been provided in *src/Service
     * *templates/ingress.yaml*
     * *templates/service.yaml*
 
-    The *Chart.yaml* file contains a description of the chart. The *templates* directory contains template files. When Helm evaluates a chart with the `helm install` command, it sends all of the files in the *templates* directory to the template rendering engine. It then collects the rendered YAML created by those templates and sends it to AKS.
+    The *Chart.yaml* file contains a description of the chart. The *templates* directory contains template files. When Helm evaluates the chart with the `helm install` command, it sends all of the files in the *templates* directory to the template rendering engine. It then collects the rendered YAML created by those templates and sends it to AKS.
 
-## Build the coupon service in Azure Container Registry
+## Build the coupon service in ACR
 
-Container images are hosted in container registries. For many scenarios, a public container registry like Docker Hub might be appropriate. However, you'll be using your private Azure Container Registry (ACR) account for hosting your new coupon service container image and the modified *WebSPA* container image.
+Container images are hosted in container registries. For many scenarios, a public container registry like Docker Hub might be appropriate. However, you'll be using your private ACR account for hosting your new coupon service container image and the modified *WebSPA* container image.
 
 Run the following script in the command shell to build the coupon service container and the *WebSPA* container:
 
@@ -111,7 +126,9 @@ Run the following script in the command shell to build the coupon service contai
 ./deploy/k8s/build-to-acr.sh
 ```
 
-The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects. ACR isn't required to use AKS. AKS supports using other container registries such as Docker Hub. **%TODO%** - Nish, is there more to say here? 
+The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects. The build takes place in the cloud, and build output is displayed in the terminal. 
+
+ACR isn't required to use AKS. AKS supports using other container registries such as Docker Hub.
 
 > [!TIP]
 > When using Visual Studio, a *Dockerfile* file such as the one used in the coupon service can be generated by right-clicking on the project in **Solution Explorer**, selecting **Add**, and selecting **Docker Support**.

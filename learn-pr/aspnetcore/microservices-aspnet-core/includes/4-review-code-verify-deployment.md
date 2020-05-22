@@ -31,18 +31,18 @@ Even though the app has been deployed, it may take a few minutes to come online.
     ![Health check page](../media/temp/health-check.png)
 
     > [!NOTE]
-    > While the app is warming up, you may receive an HTTP 500 response from the server. You may retry after a few seconds. The Seq logs viewable at the **Centralized logging** URL will be available before the other endpoints. 
+    > While the app is warming up, you may receive an HTTP 500 response from the server. You may retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints. 
 
 1. Once all the services are healthy, select the **Web SPA application** link to test the *eShopOnContainers* web app.
 
     ![eShop SPA](../media/temp/eshop-spa.png)
 
 1. Complete a purchase as follows:
-    1. Select the **Login** link in the upper right to sign into the app (the credentials are provided on the login page).
+    1. Select the **LOGIN** link in the upper right to sign into the app (the credentials are provided on the login page).
     1. Add the **.NET Blue Hoodie** to the shopping bag by clicking on the image.
     1. Select the shopping bag icon in the upper right.
-    1. Select **Checkout**, then select **Place Order** to complete the purchase.
+    1. Select **CHECKOUT**, then select **PLACE ORDER** to complete the purchase.
 
     ![eShop shopping bag with .NET Blue Hoodie](../media/temp/eshop-spa-shopping-bag.png)
 
-Now that you've seen the existing *eShopOnContainers* app, you'll add the coupon microservice in the next unit.
+Now that you've seen the existing *eShopOnContainers* app, you'll add the coupon service in the next unit.

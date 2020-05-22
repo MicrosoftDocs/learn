@@ -1,8 +1,8 @@
 In this module, you: 
 
-* Examined an existing ASP.NET Core microservices running in Azure Kubernetes Service (AKS).
+* Examined an existing ASP.NET Core microservices running in AKS.
 * Implemented a new ASP.NET Core microservice and containerized it.
-* Published the Docker image to Azure Container Registry (ACR).
+* Published the Docker image to ACR.
 * Deployed the Docker container to the existing app in AKS.
 
 ## Clean up Azure resources
@@ -20,7 +20,7 @@ The preceding command deletes the resource group containing the AKS and ACR reso
 
 ## Clean up Azure service principal
 
-The initial setup script created an Azure service principal, which is required to allow Azure resources to authenticate to each other. 
+The initial setup script created an Azure service principal, which allows Azure resources to authenticate to each other. 
 
 To remove the service principal, run the following script:
 
@@ -30,10 +30,15 @@ To remove the service principal, run the following script:
 
 The preceding script:
 
-* Uses the `az ad sp list` command with the `--show-mine` flag to return a list of service principal IDs that match the following attributes:
+* Uses the following Azure CLI command to return a list of service principal identifiers from AAD. The identifiers are filtered to those:
     * Owned by the current user.
-    * Contain the string `eShop-Learn-AKS` in the display name.
-* Uses the `az ad sp delete` command to remove each matching service principal.
+    * Containing the string `eShop-Learn-AKS` in the display name.
+
+    ```azurecli
+    az ad sp list --show-mine --query "[?contains(displayName,'eShop-Learn-AKS')].appId" --output tsv
+    ```
+
+* Uses the `az ad sp delete` Azure CLI command to remove each matching service principal.
 
 > [!NOTE]
 > More than one service principal is expected if the setup script has been run more than once. Each time the setup script is run, it creates a new service principal.

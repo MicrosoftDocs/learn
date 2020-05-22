@@ -1,4 +1,4 @@
-In this unit, you'll run a script to deploy the *Coupon.API* microservice and other configuration changes to the existing app. You'll then verify the changes were successful. 
+In this unit, you'll run a script to deploy the coupon service and other configuration changes to the existing app. You'll then verify the changes were successful. 
 
 ## How the coupon service integrates with other services
 
@@ -29,10 +29,10 @@ The preceding script uses `helm` commands to:
     1. Select the shopping bag icon in the upper right.
     1. Select **Checkout**. 
     1. Scroll down to the **Have a discount code?** field. 
-    1. Enter the code *DISC-15* for a 15% discount and select **Apply**.
+    1. Enter the code *DISC-15* for a $15 discount and select **Apply**.
 
         ![The shopping basket showing the discount code field](../media/temp/discount-code-field.png)
 
     1. Select **Place Order** to complete the purchase.
 
-Congratulations! You've successfully added the coupon microservice to the app!
+Congratulations! You've successfully added the coupon service to the app!
