@@ -6,7 +6,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Start by opening a browser tab or window and navigating to [Visual Studio Code Online](https://visualstudio.microsoft.com/services/visual-studio-online/).
 
     > [!NOTE]
-    > At this time, Safari is not a supported browser for the preview of VS Code Online.
+    > At this time, Safari is not a supported browser for the preview of Visual Studio Code Online.
 
     You will require an Azure subscription to create an environment for Visual Studio Code Online.
 1. Select the **Get started** button.
@@ -22,16 +22,16 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Leave the rest of the settings at their default and select **Create**.
 1. It will take a few minutes for the environment to be created so while you wait, go to your **Speech** service in the **Azure portal** and copy one of your keys, and also note the region where the service was created.
 1. Once the environment indicates that it is available, either select the title, or select the three vertical dots in the lower right of the environment box and choose **Connect**.
-1. VS Code Online will now synchronize the GitHub repo and run the scripts that were present in the devcontainer.  This is required to set up the proper Python environment, in this case 3.5.3.
+1. Visual Studio Code Online will now synchronize the GitHub repo and run the scripts that were present in the devcontainer.  This is required to set up the proper Python environment, in this case 3.5.3.
 1. If you get any messages about installing additional extensions or components, choose to do so.  This is only for your local system and is not required to run the code in the online environment.
 1. Select the **speechtotext.py** file in the explorer pane.
 1. Locate the **speech_key**, **service_region** line in the file and paste your key into the proper spot and set the region to where you created your **Speech Service**, such as **westus**.
-1. You will need to add a package for the Cognitive Services speech functions so open a terminal window in VS Code Online and paste the following command in the terminal window, and hit Enter to add the package: `sudo pip install --upgrade azure-cognitiveservices-speech`
+1. You will need to add a package for the Cognitive Services speech functions so open a terminal window in Visual Studio Code Online and paste the following command in the terminal window, and hit Enter to add the package: `sudo pip install --upgrade azure-cognitiveservices-speech`
 >[!NOTE]
 >If you get a message that the Terminal is read-only, click the **Open New Terminal** button to open an interactive terminal and paste the command in again.
-1. Locate the **Run Python File in Terminal** button in the upper right corner of VS Code Online and select it to run the code.
+1. Locate the **Run Python File in Terminal** button in the upper right corner of Visual Studio Code Online and select it to run the code.
 1. The result of the speech to text transcription is displayed in the terminal window.  Feel free to download the **narration.wav** file from the GitHub repo if you want to hear the audio that was used.
-1. You can also upload your own audio file to the repo, sync VS Code Online with the repo, change the **audio_filename** option, and run it again.
+1. You can also upload your own audio file to the repo, sync Visual Studio Code Online with the repo, change the **audio_filename** option, and run it again.
 
 ::: zone-end
 
@@ -40,7 +40,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Start by opening a browser tab or window and navigating to [Visual Studio Code Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
 
     > [!NOTE]
-    > At this time, Safari is not a supported browser for the preview of VS Code Online.
+    > At this time, Safari is not a supported browser for the preview of Visual Studio Code Online.
 
     You will require an Azure subscription to create an environment for Visual Studio Code Online
 1. Select the **Get started** button.
@@ -56,7 +56,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Leave the rest of the settings at their default and select **Create**.
 1. It will take a few minutes for the environment to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
 1. Once the environment indicates that it is available, either select the title or select the three vertical dots in the lower right of the environment box and choose **Connect**.
-1. We will be using C# and .NET Core for this exercise so once the VS Code window opens, start the Terminal by selecting the hamburger menu, **View**, and then **Terminal**.
+1. We will be using C# and .NET Core for this exercise so once the Visual Studio Code window opens, start the Terminal by selecting the hamburger menu, **View**, and then **Terminal**.
 1. Once you start typing a command, you will receive a message that the terminal is read-only.  Select the button to open a new terminal.
 1. Verify that **Bash** is selected in the Select Default Shell drop-down to the right.
 1. Type in the command ```dotnet new console``` and press Enter.

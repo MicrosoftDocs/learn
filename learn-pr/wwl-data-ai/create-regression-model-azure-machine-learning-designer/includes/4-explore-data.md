@@ -6,7 +6,7 @@ To use the Azure Machine Learning designer, you create a *pipeline* that you wil
 
 1. in [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Designer** page (under **Author**), and select **+** to create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Auto Price Training** (if the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top).
-3. Observe that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, use **Select compute target** to select the compute instance you created previously.
+3. Observe that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, use **Select compute target** to select the **aml-cluster** compute cluster you created previously.
 
 ## Add and explore a dataset
 
@@ -79,14 +79,14 @@ Follow the remaining steps, using the image above for reference as you add and c
 
 ## Run the pipeline
 
-To see the effect of your data transformations, you need to run the pipeline as an experiment.
+To apply your data transformations, you need to run the pipeline as an experiment.
 
 1. Ensure your pipeline looks similar to this:
 
 > [!div class="centered"]
 > ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **auto-price-training** on your compute instance.
+2. Select **Submit**, and run the pipeline as a new experiment named **auto-price-training** on the **aml-cluster** compute cluster.
 3. Wait for the run to complete (indicated by a &#x2705; icon for each module). This may take 5 minutes or more.
 
 The dataset is now prepared for model training.

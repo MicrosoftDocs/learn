@@ -29,7 +29,7 @@ WSL Config (`wslconfig.exe`) is a command-line tool for managing Linux distribut
    > [!NOTE]
    > There are launch settings and configuration options that can be applied to WSL every time you launch the subsystem by using `wsl.conf`. To learn more, see the resources at the end of this course.
 
-## VS Code multiple distro support
+## Visual Studio Code multiple distro support
 
 The Visual Studio Code Remote - WSL extension keeps track of the Linux distributions you have installed. When you reopen a folder in WSL (**Remote-WSL:Reopen Folder in WSL**) or open a new Window with the **Remote-WSL: New Window using Distro**, you see a picker with the available distros listed.
 
