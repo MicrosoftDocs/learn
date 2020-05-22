@@ -30,10 +30,10 @@ The `helm uninstall` and `helm install` commands used by the script are echoed t
     1. Select the shopping bag icon in the upper right.
     1. Select **CHECKOUT**. 
     1. Scroll to the **HAVE A DISCOUNT CODE?** field. 
-    1. Enter the code *DISC-15* for a $15 discount and select **APPLY**.
 
         ![The shopping basket showing the discount code field](../media/temp/discount-code-field.png)
 
+    1. Enter the code *DISC-15* for a $15 discount and select **APPLY**.
     1. Select **PLACE ORDER** to complete the purchase.
 
 Congratulations! You've successfully added the coupon service to the app!
