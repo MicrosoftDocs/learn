@@ -11,16 +11,17 @@ The *eShopOnContainers* app is an online store that sells various products, incl
 * User management
 * Order management
 * Payments
+* Coupon management (pictured in the diagram, but doesn't exist yet)
 
 Each of the preceding features is managed with a distinct microservice. Each microservice is autonomous, independently deployable, and responsible for its own data. This architecture enables each microservice to implement the data store that is best optimized for its workload, storage needs, and read/write patterns. Data store choices include relational, document, key-value, and graph-based.
 
-As shown in the preceding figure, the *catalog* service stores its data in a SQL Server on Linux database, the *basket* service uses a Redis cache for storage, and so on. There's no single master data store with which all services interact. Instead, inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging. This data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in the production environment.
+As shown in the preceding diagram, the *catalog* service stores its data in a SQL Server on Linux database, the *basket* service uses a Redis cache for storage, and so on. There's no single master data store with which all services interact. Instead, inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging. This data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in the production environment.
 
 ### Identity
 
 The *WebSPA* client app performs authentication and authorization with an *identity* service that also serves as a Security Token Service (STS). It's a containerized ASP.NET Core project that uses [IdentityServer 4](https://identityserver4.readthedocs.io), a popular OpenID Connect and OAuth 2.0 framework for ASP.NET Core. An alternative is to use [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD). AAD offers identity and access management as a service.
 
-In the preceding diagram, the identity service is configured to allow direct access. For this reason, the API gateway is bypassed. The full **eShopOnContainers** app, on which this sample is based, uses multiple API gateways separated by business areas. For this smaller implementation, however, another API gateway isn't required.
+In the preceding diagram, the identity service is configured to allow direct access. For this reason, the API gateway is bypassed. The full *eShopOnContainers* app, on which this sample is based, uses multiple API gateways separated by business areas. For this smaller implementation, however, another API gateway isn't required.
 
 ### Event bus
 

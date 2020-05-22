@@ -12,10 +12,11 @@ In this module, you will:
 * Examine existing ASP.NET Core microservices running in Azure Kubernetes Service (AKS).
 * Implement a new ASP.NET Core microservice and containerize it.
 * Publish the Docker image to Azure Container Registry (ACR).
-* Deploy the Docker container to the existing app in AKS.
+* Deploy the Docker container to the existing AKS cluster.
 
 ## Prerequisites
 
 * Experience writing C# at the beginner level
+* Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
 * Conceptual knowledge of containers at the beginner level
 * Access to an Azure subscription

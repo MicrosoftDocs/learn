@@ -12,7 +12,7 @@ There are many ways to implement a coupon code feature in an e-commerce app. For
 
 ## Domain model
 
-**D**omain-**D**riven **D**esign (DDD) is a design pattern whereby the structure and language of your code (including class names, methods, and variables) should match the business domain. The pattern describes independent problem areas as bounded contexts and emphasizes a common language to describe these problems. Knowing where to draw the boundaries is the most important task when designing and defining a microservices-based solution. For each bounded context, you must identify and define the entities, value objects, and aggregates that model your domain. The coupon feature requirement is straightforward, so the coupon service is implemented like a CRUD service, and the boundaries are well-defined within the coupon domain.
+DDD is a design pattern whereby the structure and language of your code (including class names, methods, and variables) should match the business domain. The pattern describes independent problem areas as bounded contexts and emphasizes a common language to describe these problems. Knowing where to draw the boundaries is the most important task when designing and defining a microservices-based solution. For each bounded context, you must identify and define the entities, value objects, and aggregates that model your domain. The coupon feature requirement is straightforward, so the coupon service is implemented like a CRUD service, and the boundaries are well-defined within the coupon domain.
 
 The coupon service represents a coupon as a `Coupon` object, using the class defined at *src/Services/Coupon/Coupon.API/Infrastructure/Models/Coupon.cs*. This class encapsulates the attributes of a coupon.
 
@@ -35,7 +35,7 @@ Microservice architectures are technology agnostic, thus giving development team
 
 | Technology | Description |
 |-------------------|-------------|
-| ASP.NET Core web API | The RESTful services for querying discounts are implemented in ASP.NET Core. A web API uses *Controllers* to handle HTTP requests. |
+| ASP.NET Core web API | The RESTful services for managing discounts are implemented in ASP.NET Core. A web API uses controllers to handle HTTP requests. |
 | MongoDB | The NoSQL database that stores the coupons and their utilization data. In a real-world scenario, it's common for services to use a managed database like [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db) instead of running them in a container. |
 | Docker | The web API project and the MongoDB database, along with their dependencies, are packaged into respective container images using Docker. |
 

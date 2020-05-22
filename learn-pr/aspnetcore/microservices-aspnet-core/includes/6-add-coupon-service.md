@@ -48,8 +48,8 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
         The preceding change registers two HTTP health check endpoints with the ASP.NET Core routing system:
         
-        * `/hc`&ndash;A "readiness" endpoint that provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
-        * `/liveness`&ndash;A "liveness" endpoint that tests connectivity to the MongoDB database.
+        * `/hc` &ndash; A "readiness" endpoint that provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
+        * `/liveness` &ndash; A "liveness" endpoint that tests connectivity to the MongoDB database.
 
         Using separate "readiness" and "liveness" checks is useful when using AKS. The coupon service performs time-consuming startup work before accepting HTTP requests, such as testing connectivity to the underlying MongoDB database. Using separate checks allows the orchestrator to determine whether the service is functioning but not yet ready or if the service has failed to start.
 
@@ -65,13 +65,13 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
     The preceding script:
 
     * Uncomments HTML markup in the *WebSPA* checkout and order details views to support accepting coupon codes and displaying discount amounts, respectively.
-    * Creates a Helm chart for the coupon service in *deploy/k8s/helm-simple/*. 
+    * Creates a Helm chart for the coupon service in *deploy/k8s/helm-simple/coupon*. 
     * Adds the coupon service endpoints to the aggregator Helm chart in *deploy/k8s/helm-simple/webshoppingagg/templates/configmap.yaml*
     * Adds the coupon health check to the *WebStatus* Helm chart in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*.
 
     When you create an object in a Kubernetes (or AKS) cluster, you must provide the object specification in a YAML file. You'll use the template functionality in the open-source tool Helm to generate and send the YAML files to the AKS cluster.
     
-    The Helm chart for the coupon service is comprised of the following files in *deploy/k8s/helm-simple/coupon/*:
+    The Helm chart for the coupon service is comprised of the following files in the *deploy/k8s/helm-simple/coupon* directory:
 
     * *Chart.yaml*
     * *templates/configmap.yaml*
@@ -80,6 +80,54 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
     * *templates/service.yaml*
 
     The *Chart.yaml* file contains a description of the chart. The *templates* directory contains template files. When Helm evaluates the chart with the `helm install` command, it sends all of the files in the *templates* directory to the template rendering engine. It then collects the rendered YAML created by those templates and sends it to AKS.
+
+    %TODO% - Add an explanation of the following "livenessProbe" and "readinessProbe" sections in *deployment.yaml* (might go better in the previous step, but I moved it here to see if it fits --cs):
+
+    ```yml
+    kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+    name: coupon
+    labels:
+        app: eshop
+        service: coupon
+    spec:
+    replicas: 1
+    selector:
+        matchLabels:
+        service: coupon
+    template:
+        metadata:
+        labels:
+            app: eshop
+            service: coupon
+        spec:
+        containers:
+            - name: coupon-api
+            image: {{ .Values.registry }}/coupon.api:linux-latest
+            imagePullPolicy: Always
+            ports:
+                - containerPort: 80
+                protocol: TCP
+                - containerPort: 81
+                protocol: TCP
+            livenessProbe:
+                httpGet:
+                port: 80
+                path: /liveness
+                initialDelaySeconds: 10
+                periodSeconds: 15
+            readinessProbe:
+                httpGet:
+                port: 80
+                path: /hc
+                initialDelaySeconds: 90
+                periodSeconds: 60
+                timeoutSeconds: 5
+            envFrom:
+                - configMapRef:
+                    name: coupon-cm
+    ```
 
 ## Build the coupon service in ACR
 
@@ -100,7 +148,7 @@ The coupon service uses a new container image you're creating. The image needs t
 > [!NOTE]
 > The `helm install` command used later in the module specifies which container registry to use when the charts are installed to Kubernetes/AKS.
 
-Run the following script in the command shell to build the coupon service and *WebSPA* web app container images and host them in ACR:
+Run the following script in the command shell to build the coupon service and *WebSPA* app container images and host them in ACR:
 
 ```bash
 ./deploy/k8s/build-to-acr.sh
@@ -108,19 +156,23 @@ Run the following script in the command shell to build the coupon service and *W
 
 The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects. 
 
-Note the solution isn't being built in your Cloud Shell instance at all. The build takes place in the cloud when the container image is sent to ACR. Build output is displayed in the console. The `az acr build` commands used by the script are displayed in the console with the correct parameters. The output resembles this:
+Note the solution isn't being built in your Cloud Shell instance. The build occurs in the cloud when the container image is sent to ACR. Build output is displayed in the console. The `az acr build` commands used by the script are displayed in the console with the correct parameters. The command resembles this:
 
 ```azurecli
-%todo%
+az acr build --registry eshoplearn \
+     --image eshoplearn.azurecr.io/coupon.api:linux-latest \
+     --file src/Services/Coupon/Coupon.API/Dockerfile \
+     .
 ```
 
 In the preceding example:
 
-* Some
-* stuff
-* happens
+* The `--registry` parameter specifies the name of the container registry to use.
+* The `--image` parameter specifies the name and tag of the image in the format `<repo url>/<name>:<tag>`.
+* The `--file` parameter specifies the relative path of the Dockerfile.
+* The final parameter, which is positional and not indicated by a command-line flag, specifies the location of the local source code directory. In this case, the script uses the directory in which it's currently running, indicated by `.`.
 
 > [!NOTE]
-> If any of the code changes you made to the *Coupon.API* project were incorrect, the build in ACR might fail. In the event of build errors, use the build output in the console to troubleshoot the error and re-run `./deploy/k8s/build-to-acr.sh`.
+> If any of the code changes you made to the *Coupon.API* project were incorrect, the build in ACR might fail. In the event of build errors, use the displayed `dotnet build` output to troubleshoot the error and re-run `./deploy/k8s/build-to-acr.sh`.
 
 In the next unit, you'll update the AKS deployment with your modifications.

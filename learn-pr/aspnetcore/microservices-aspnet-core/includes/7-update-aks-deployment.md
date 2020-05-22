@@ -14,7 +14,7 @@ The preceding script uses `helm` commands to:
 * Install the reconfigured *WebStatus* and aggregator Helm charts using a public container registry.
 * Install the new *Coupon.API* chart and the reconfigured *WebSPA* chart using your private ACR.
 
-The `helm uninstall` and `helm install` commands used by the script are echoed to the console with the correct parameters. 
+The `helm uninstall` and `helm install` commands used by the script are displayed in the console with the correct parameters. 
 
 ## Verify changes
 
@@ -26,14 +26,14 @@ The `helm uninstall` and `helm install` commands used by the script are echoed t
 1. Once the services are all healthy, navigate to the *WebSPA* URL and perform the following steps:
     1. Refresh the browser.
     1. If not signed in, select the **LOGIN** link in the upper right to sign into the app (the credentials are provided on the login page).
-    1. Add your favorite products to the shopping bag by clicking on the images.
+    1. Add your favorite products to the shopping bag by selecting the images.
     1. Select the shopping bag icon in the upper right.
     1. Select **CHECKOUT**. 
     1. Scroll to the **HAVE A DISCOUNT CODE?** field. 
 
         ![The shopping basket showing the discount code field](../media/temp/discount-code-field.png)
 
-    1. Enter the code *DISC-15* for a $15 discount and select **APPLY**.
+    1. Enter the code *DISC-15* for a $15 USD discount and select **APPLY**.
     1. Select **PLACE ORDER** to complete the purchase.
 
 Congratulations! You've successfully added the coupon service to the app!

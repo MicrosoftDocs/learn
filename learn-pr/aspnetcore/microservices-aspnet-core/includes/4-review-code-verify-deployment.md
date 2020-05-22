@@ -2,7 +2,7 @@ Soon after launching the setup script, the [Azure Cloud Shell editor](/azure/clo
 
 ## Review code
 
-The following directories in *src/* contain .NET Core projects, each of which is containerized and deployed to AKS:
+The following *src* subdirectories contain .NET Core projects, each of which is containerized and deployed to AKS:
 
 | Project directory | Description |
 |-------------------|-------------|
@@ -26,12 +26,12 @@ You can begin exploring these services (when available):
 
 Even though the app has been deployed, it may take a few minutes to come online. Verify the app is deployed and online with the following steps:
 
-1. Select the **General application status** link to view the *WebStatus* health checks dashboard. The resulting page displays the status of each microservice in the deployment.
+1. Select the **General application status** link to view the *WebStatus* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically every 10 seconds.
 
     ![Health check page](../media/temp/health-check.png)
 
     > [!NOTE]
-    > While the app is warming up, you may receive an HTTP 503 response from the server. You may retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints. 
+    > While the app is starting up, you might initially receive an HTTP 503 response from the server. You may retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints. 
 
 1. Once all the services are healthy, select the **Web SPA application** link to test the *eShopOnContainers* web app.
 
@@ -39,7 +39,7 @@ Even though the app has been deployed, it may take a few minutes to come online.
 
 1. Complete a purchase as follows:
     1. Select the **LOGIN** link in the upper right to sign into the app (the credentials are provided on the login page).
-    1. Add the **.NET Blue Hoodie** to the shopping bag by clicking on the image.
+    1. Add the **.NET BLUE HOODIE** to the shopping bag by clicking on the image.
     1. Select the shopping bag icon in the upper right.
     1. Select **CHECKOUT**, then select **PLACE ORDER** to complete the purchase.
 
