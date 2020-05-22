@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-scaling.3-growth
+title: "TPrepare for growth"
+metadata:
+  title: "Prepare for growth"
+  description: "Improve Your Reliability: Capacity Planning and Scaling"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+# TODO: set correct duration  
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-growth.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'When a business expands its own capacity in a more natural and predictable way, we say this is:'
+    choices:
+    - content: 'organic growth'
+      isCorrect: true
+      explanation: 'Correct, this the definition of organic growth.'
+    - content: 'inorganic growth'
+      isCorrect: false
+      explanation: 'This the definition of organic growth.'
+    - content: 'capacity planning'
+      isCorrect: false
+      explanation: 'This the definition of organic growth.'
+
+  - content: 'With CosmodDB, which of these metrics are incorporated into a request unit?'
+    choices:
+    - content: 'memory'
+      isCorrect: false
+      explanation: 'Request Units (RUs) are a mixture of Memory, CPU and IOPS.'
+    - content: 'CPU'
+      isCorrect: false
+      explanation: 'Request Units (RUs) are a mixture of Memory, CPU and IOPS'
+    - content: 'IOPS'
+      isCorrect: false
+      explanation: 'Request Units (RUs) are a mixture of Memory, CPU and IOPS'
+   - content: 'all of the above'
+      isCorrect: true
+      explanation: 'Correct, Request Units (RUs) are a mixture of memory, CPU and IOPS'
+
+  - content: 'Which of the following is _not_ a business metric you should correlate your resource usage to when planning for capacity?'
+    choices:
+    - content: 'server count'
+      isCorrect: true
+      explanation: 'Correct, this is not a business metric.'
+    - content: 'monthly active users (MAUs)'
+      isCorrect: false
+      explanation: 'This is a business metric you should correlate your resource usage to when planning for capacity.'
+    - content: 'revenue'
+      isCorrect: false
+      explanation: 'This is a business metric you should correlate your resource usage to when planning for capacity.'
