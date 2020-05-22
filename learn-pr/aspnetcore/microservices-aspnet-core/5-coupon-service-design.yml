@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-aspnet-core.5-add-coupon-service
+uid: learn.microservices-aspnet-core.5-coupon-service-design
 metadata:
   title: Coupon service design
   description: Gain an understanding of the design of the new coupon service.
@@ -11,4 +11,4 @@ metadata:
 title: Coupon service design
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-add-coupon-service.md)]
+  [!include[](includes/5-coupon-service-design.md)]

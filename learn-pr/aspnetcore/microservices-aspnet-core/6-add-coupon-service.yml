@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-aspnet-core.5-add-coupon-service
+uid: learn.microservices-aspnet-core.6-add-coupon-service
 metadata:
   title: Exercise - Add the coupon service
   description: Complete the *Coupon.API* project, then generate changes to the Helm charts that define the kubernetes deployment.
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Add the coupon service
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-add-coupon-service.md)]
+  [!include[](includes/6-add-coupon-service.md)]

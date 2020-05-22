@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-aspnet-core.6-update-aks-deployment
+uid: learn.microservices-aspnet-core.7-update-aks-deployment
 metadata:
   title: Exercise - Deploy changes to AKS
   description: Deploy your new and modified services to AKS.
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Deploy changes to AKS
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-update-aks-deployment.md)]
+  [!include[](includes/7-update-aks-deployment.md)]
