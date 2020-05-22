@@ -18,9 +18,12 @@ The `helm uninstall` and `helm install` commands used by the script are echoed t
 
 ## Verify changes
 
-1. Navigate to the *WebStatus* page. Observe the services stopping and redeploying.
+1. Navigate to the *WebStatus* page. Observe the status of the changed services.
 
-1. Once the app is healthy, navigate to the *WebSPA* URL and perform the following steps:
+    > [!NOTE]
+    > Notice the unchanged services remain healthy throughout the redeployment of the services you changed.
+
+1. Once the services are all healthy, navigate to the *WebSPA* URL and perform the following steps:
     1. Refresh the browser.
     1. If not signed in, select the **LOGIN** link in the upper right to sign into the app (the credentials are provided on the login page).
     1. Add your favorite products to the shopping bag by clicking on the images.

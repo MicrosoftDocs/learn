@@ -43,7 +43,7 @@ Microservices are small enough for a feature team to independently build, test, 
 * Publishing container images to a container registry.
 * Deploying containers to an existing Kubernetes cluster.
 
-The new coupon service is denoted by a blue box in the architecture diagram at the beginning of this unit.
+The new coupon service to be added is denoted by a blue box in the architecture diagram at the beginning of this unit.
 
 ### Other services
 
