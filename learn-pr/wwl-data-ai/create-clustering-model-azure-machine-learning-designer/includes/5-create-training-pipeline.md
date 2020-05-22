@@ -35,7 +35,7 @@ To train a clustering model, you need to apply a clustering algorithm to the dat
 
 Now you're ready to run the training pipeline and train the model.
 
-1. Select **Submit**, and run the pipeline using a new experiment named **iris-training** on your compute instance.
+1. Select **Submit**, and run the pipeline using a new experiment named **iris-training** on the **aml-cluster** compute cluster.
 2. Wait for the experiment run to complete. This may take 5 minutes or more.
 3. When the experiment run has completed (indicated by a &#x2705; icon for each module), select the **Train Clustering Model** module and in its settings pane, on the **Outputs + Logs** tab, under **Data outputs** in the **Results dataset** section, use the **Visualize** icon to view the results.
 4. Scroll to the right, and note the **Assignments** column, which contains the cluster (0, 1, or 2) to which each row is assigned. There are also new columns indicating the distance from the point representing this row to the centers of each of the clusters - the cluster to which the point is closest is the one to which it is assigned.
