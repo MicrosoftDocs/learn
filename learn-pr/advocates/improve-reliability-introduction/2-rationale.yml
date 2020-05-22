@@ -1,0 +1,34 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-introduction.2-rationale
+title: "Why reliability matters"
+metadata:
+  title: "Why reliability matters"
+  description: "Improve Your Reliability: An Introduction"
+  ms.date: 05/19/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+# TODO: set correct duration  
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-rationale.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Reliability problems cause organizations to lose which of the following?'
+    choices:
+    - content: 'Security'
+      isCorrect: false
+      explanation: 'While connected (both are customer expecations and emergent behaviors), reliability issues do not usually lead to a loss of security.'
+    - content: 'Reputation'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'Branding'
+      isCorrect: false
+      explanation: 'Having an unreliable system can impact a brand, but it does cause you to lose it.'
+    - content: 'Innovation'
+      isCorrect: true
+      explanation: 'It is hard to innovate if you are experiencing reliability problems but it is not a direct loss.'

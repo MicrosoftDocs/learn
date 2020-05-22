@@ -1,0 +1,34 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-introduction.4-hierarchy
+title: "The Dickerson hierarchy of reliability"
+metadata:
+  title: "The Dickerson hierarchy of reliability"
+  description: "Improve Your Reliability: An Introduction"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+# TODO: set correct duration  
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-hierarchy.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which is the first, foundational level in the Dickerson hierarchy of reliability?'
+    choices:
+    - content: 'incident response'
+      isCorrect: false
+      explanation: 'This is not the first level in the Dickerson hierarchy of reliability.'
+    - content: 'testing/release'
+      isCorrect: false
+      explanation: 'This is not the first level in the Dickerson hierarchy of reliability.'
+    - content: 'capacity/scale'
+      isCorrect: false
+      explanation: 'This is not the first level in the Dickerson hierarchy of reliability.'     
+    - content: 'monitoring'
+      isCorrect: true
+      explanation: 'Correct.'     
