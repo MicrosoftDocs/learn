@@ -23,7 +23,8 @@ Drop rows from the DataFrame that contain `NaN` values.
   
   The output is:
 
-  [ ![A screenshot that shows the table output of running df.dropna()](../media/df-drop-na.png) ](../media/df-drop-na.png#lightbox)
+  
+  :::image type="content" source="../media/df-drop-na.png" alt-text="Screenshot that shows the table output of running df.dropna()." lightbox="../media/df-drop-na.png" loc-scope="Azure":::
 
 </details>
 
@@ -82,8 +83,10 @@ Why was it necessary to structure the `iloc` method call the way we did in the p
   Here's the output:
 
   
-  [ ![A screenshot that shows a table that holds the results of running nutr_df.head](../media/nutr-df-head-49.png) ](../media/nutr-df-head-49.png#lightbox)
-  5 rows × 49 columns
+    
+  :::image type="content" source="../media/nutr-df-head-49.png" alt-text="Screenshot that shows a table that holds the results of running nutr_df.head." lightbox="../media/nutr-df-head-49.png" loc-scope="Azure":::
+
+ 5 rows × 49 columns
 
 </details>
 
@@ -128,7 +131,8 @@ nutr_df.head()
 
 Here's the output:
 
-[ ![A screenshot that shows the results of running nutr_df.head, in table format](../media/nutr-df-head-46.png) ](../media/nutr-df-head-46.png#lightbox)
+:::image type="content" source="../media/nutr-df-head-46.png" alt-text="Screenshot that shows the results of running nutr_df.head, in table format." lightbox="../media/nutr-df-head-46.png" loc-scope="Azure":::
+
 5 rows × 46 columns
 
 ## Check for correlation among features
@@ -167,5 +171,6 @@ nutr_df.head()
 
 This is the output:
 
-:::image type="content" source="../media/correlation-2.png" alt-text="Screenshot that shows the results of running nutr_df.head, in table format." lightbox="media/image-file-expanded.png" loc-scope="Azure":::
+:::image type="content" source="../media/correlation-2.png" alt-text="Screenshot that shows the results of running nutr_df.head, in table format." lightbox="../media/correlation-2.png" loc-scope="Azure":::
+
 5 rows × 43 columns
