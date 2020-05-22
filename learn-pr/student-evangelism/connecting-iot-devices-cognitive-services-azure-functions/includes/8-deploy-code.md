@@ -1,6 +1,6 @@
 So far, you've verified, compiled, and deployed the code of the function in the cloud using the Azure IoT Workbench extension. In this unit, we'll learn how to implement the device code to the IoT Devkit. Before deploying the device code, you'll need to configure the connection string to the IoT Devkit.  
 
-Since you've registered the device in the IoT Hub, the VS code will retrieve the connection string automatically. It will be saved locally in your development environment, and it will be sent back to the device.
+Since you've registered the device in the IoT Hub, the Visual Studio Code will retrieve the connection string automatically. It will be saved locally in your development environment, and it will be sent back to the device.
 
 The components used in this unit are:
 
