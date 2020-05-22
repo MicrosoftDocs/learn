@@ -27,7 +27,7 @@ On the **Notebooks** page, create a new file with the following settings:
     - **Overwrite if already exists**: Selected
     - **Select target directory**: *Select the folder with your user name under **User files***
 2. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
-3. In the cell that has been created in the notebook, paste the following code:
+3. Edit the notebook inline, and in the cell that has been created in the notebook, paste the following code:
 
     ```Python
     endpoint = 'YOUR_ENDPOINT' #Replace with your endpoint
