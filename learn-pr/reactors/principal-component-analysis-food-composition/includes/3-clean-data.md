@@ -137,7 +137,25 @@ One thing that can skew our classification results is correlation among our feat
 
 The code to check for correlations in our data isn't long, but it takes too long (up to 10 to 20 minutes) to run for a course like this. The following table shows the output from that code:
 
-:::image type="content" alt-text="A screenshot that shows the results of running nutr_df.head, in table format." source="../media/correlation.png" loc-scope="Azure":::
+```Output
+------------------------------------------------
+|   | column          | row             | corr |
+------------------------------------------------
+| 0 | Folate_Tot_(µg) | Folate_DFE_(µg) | 0.98 |
+------------------------------------------------
+| 1 | Folic_Acid_(µg) | Folate_DFE_(µg) | 0.95 |
+------------------------------------------------
+| 2 | Folate_DFE_(µg) | Folate_Tot_(µg) | 0.98 |
+------------------------------------------------
+| 3 | Vit_A_RAE       | Retinol_(µg)    | 0.99 |
+------------------------------------------------
+| 4 | Retinol_(µg)    | Vit_A_RAE       | 0.99 |
+------------------------------------------------
+| 5 | Vit_D_µg        | Vit_D_IU        | 1    |
+------------------------------------------------
+| 6 | Vit_D_IU        | Vit_D_µg        | 1    |
+------------------------------------------------
+```
 
 As it turns out, dropping `Folate_DFE_(µg)`, `Vit_A_RAE`, and `Vit_D_IU` eliminates the correlations enumerated in the preceding table:
 
@@ -149,5 +167,5 @@ nutr_df.head()
 
 This is the output:
 
-[ ![A screenshot that shows the results of running nutr_df.head, in table format](../media/correlation-2.png) ](../media/correlation-2.png#lightbox)
+:::image type="content" source="../media/correlation-2.png" alt-text="Screenshot that shows the results of running nutr_df.head, in table format." lightbox="media/image-file-expanded.png" loc-scope="Azure":::
 5 rows × 43 columns
