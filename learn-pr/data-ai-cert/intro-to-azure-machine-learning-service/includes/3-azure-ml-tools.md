@@ -134,12 +134,12 @@ You can store notebooks independently in workspace storage, and open them in any
 
 ## Visual Studio Code
 
-Visual Studio Code (VS Code) is a lightweight code editing environment for Microsoft Windows, Apple macOS, and Linux. It provides a visual interface for many kinds of code, including Microsoft C#, Javascript, Python and others; as well as intellisense and syntax formatting for common data formats such as JSON and XML.
+Visual Studio Code is a lightweight code editing environment for Microsoft Windows, Apple macOS, and Linux. It provides a visual interface for many kinds of code, including Microsoft C#, Javascript, Python and others; as well as intellisense and syntax formatting for common data formats such as JSON and XML.
 
-VS Code's flexibility is based on the ability to install modular *extensions* that add syntax checking, debugging, and visual management interfaces for specific workloads. For example, the Microsoft Python extension for VS Code adds support for writing and running Python code in scripts or notebooks within the VS Code interface.
+Visual Studio Code's flexibility is based on the ability to install modular *extensions* that add syntax checking, debugging, and visual management interfaces for specific workloads. For example, the Microsoft Python extension for Visual Studio Code adds support for writing and running Python code in scripts or notebooks within the Visual Studio Code interface.
 
-![VS Code](../media/01-04-vscode.jpg)
+![Visual Studio Code](../media/01-04-vscode.jpg)
 
-The Azure Machine Learning Extension for VS Code provides a graphical interface for working with assets in an Azure Machine Learning workspace. You can combine the capabilities of the Azure Machine Learning and Python extensions to manage a complete end-to-end machine learning workload in Azure Machine Learning from the VS Code environment.
+The Azure Machine Learning Extension for Visual Studio Code provides a graphical interface for working with assets in an Azure Machine Learning workspace. You can combine the capabilities of the Azure Machine Learning and Python extensions to manage a complete end-to-end machine learning workload in Azure Machine Learning from the Visual Studio Code environment.
 
-> **More Information**: For more information about using the Azure Machine Learning extension for VS Code, see the [documentation](/azure/machine-learning/tutorial-setup-vscode-extension).
+> **More Information**: For more information about using the Azure Machine Learning extension for Visual Studio Code, see the [documentation](/azure/machine-learning/tutorial-setup-vscode-extension).
