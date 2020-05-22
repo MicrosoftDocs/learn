@@ -31,7 +31,7 @@ Even though the app has been deployed, it may take a few minutes to come online.
     ![Health check page](../media/temp/health-check.png)
 
     > [!NOTE]
-    > While the app is warming up, you may receive an HTTP 500 response from the server. You may retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints. 
+    > While the app is warming up, you may receive an HTTP 503 response from the server. You may retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints. 
 
 1. Once all the services are healthy, select the **Web SPA application** link to test the *eShopOnContainers* web app.
 
@@ -45,4 +45,4 @@ Even though the app has been deployed, it may take a few minutes to come online.
 
     ![eShop shopping bag with .NET Blue Hoodie](../media/temp/eshop-spa-shopping-bag.png)
 
-Now that you've seen the existing *eShopOnContainers* app, you'll add the coupon service in the next unit.
+Now that you've seen the existing *eShopOnContainers* app, you'll review the design of the new coupon service in the next unit.

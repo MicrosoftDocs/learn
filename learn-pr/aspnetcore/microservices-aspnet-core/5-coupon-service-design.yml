@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-aspnet-core.5-coupon-service-design
 metadata:
-  title: Coupon service design
+  title: Review the coupon service design
   description: Gain an understanding of the design of the new coupon service.
   ms.date: 05/15/2020
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Coupon service design
+title: Review the coupon service design
 durationInMinutes: 10
 content: |
   [!include[](includes/5-coupon-service-design.md)]

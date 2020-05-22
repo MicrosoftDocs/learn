@@ -32,20 +32,26 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
     * If the coupon returned is `null` or has already been used, an HTTP 404 status code is returned.
     * If the coupon returned isn't `null` and hasn't already been used, the `Coupon` object is converted to a `CouponDto` **D**ata **T**ransfer **O**bject (DTO). Finally, an HTTP 200 status code is returned along with the DTO.
 
-1. Make the following changes in *Startup.cs*:
-    1. In the `ConfigureServices` method, invoke the `AddCustomHealthCheck` method after the `AddSwagger` method call:
+1. Add real-time HTTP health checking to the coupon service by applying the following changes in *Startup.cs*:
+    1. In the `ConfigureServices` method, invoke the custom `AddCustomHealthCheck` extension method immediately after the `AddSwagger` method call:
 
         [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configureServices&highlight=13)]
 
-        The preceding change adds the custom health check service to the app.
+        With the preceding change:
+        
+        * ASP.NET Core's health check service is registered in the coupon service's dependency injection container. ASP.NET Core provides health checks middleware that executes when a health check endpoint is requested.
+        * A health check named `self` is created. Its purpose is to verify connectivity to the supporting MongoDB database. When a connection to the database can be established, the health check returns an HTTP 200 status code.
 
-        %TODO% - Explain custom HC service, display extension method. De-magicfy.
-
-    1. In the `Configure` method, register two health checks endpoints with the ASP.NET Core routing system:
+    1. In the `Configure` method, register the health checks endpoints with the ASP.NET Core routing system:
 
         [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configure&highlight=30-38)]
 
-        The preceding change adds the readiness `/hc` and liveness `/liveness` endpoints for the custom health check service.
+        The preceding change registers two HTTP health check endpoints with the ASP.NET Core routing system:
+        
+        * `/hc`&ndash;A "readiness" endpoint that provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
+        * `/liveness`&ndash;A "liveness" endpoint that tests connectivity to the MongoDB database.
+
+        Using separate "readiness" and "liveness" checks is useful when using AKS. The coupon service performs time-consuming startup work before accepting HTTP requests, such as testing connectivity to the underlying MongoDB database. Using separate checks allows the orchestrator to determine whether the service is functioning but not yet ready or if the service has failed to start.
 
 1. Run the following script in the command shell to make additional configuration changes for the coupon service:
 
@@ -77,9 +83,19 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
 ## Build the coupon service in ACR
 
-Container images are hosted in container registries. For many scenarios, a public container registry like Docker Hub might be appropriate. All of the container images used when the solution was initially deployed to AKS were from a public Docker Hub registry.
+Container images are hosted in container registries. For many scenarios, a public container registry like Docker Hub might be appropriate. Private container registries, such as ACR, are often more appropriate for enterprise scenarios. Only your team and services have access to a private registry. All of the container images used when the solution was initially deployed to AKS were from one of Microsoft's ACR endpoints.
 
-The coupon service is a new container image you're creating. It needs to be hosted in a container registry, and for that you'll be using ACR. The coupon service isn't the only container image that needs to be hosted in ACR. The implementation script modified the *WebSPA* web app on your behalf. The modified *WebSPA* app isn't available as a container image on the public Docker Hub registry. Accordingly, you must host both the new coupon service container image and the modified *WebSPA* web app container image on your private ACR.
+The following diagram depicts the relationships between Docker container images, container registries such as ACR, and Kubernetes/AKS deployments.
+
+![Diagram indicating the flow of a container image in ACR to a container in AKS](../media/temp/image-acr-aks.png)
+
+In the preceding diagram:
+
+1. The developer sends the container image to ACR.
+2. The developer sends Kubernetes YAML configuration files to AKS. The configuration specifies which container images are required.
+3. AKS retrieves the images from ACR and uses the images to build and run the containers.
+
+The coupon service uses a new container image you're creating. The image needs to be hosted in a container registry, and for that you'll use your own ACR instance. The coupon service isn't the only container image that needs to be hosted on your ACR. The *implementation-script.sh* script modified the *WebSPA* app on your behalf. The modified *WebSPA* app isn't available as a container image on Microsoft's ACR. Accordingly, you must host both the new coupon service container image and the modified *WebSPA* app container image on your private ACR.
 
 > [!NOTE]
 > The `helm install` command used later in the module specifies which container registry to use when the charts are installed to Kubernetes/AKS.
@@ -92,10 +108,10 @@ Run the following script in the command shell to build the coupon service and *W
 
 The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects. 
 
-Note the solution isn't being built in your cloud shell instance at all. The build takes place in the cloud when the container image is sent to ACR, and build output is displayed in the console. The `az acr build` commands used by the script are echoed to the console with the correct parameters, and look similar to this:
+Note the solution isn't being built in your Cloud Shell instance at all. The build takes place in the cloud when the container image is sent to ACR. Build output is displayed in the console. The `az acr build` commands used by the script are displayed in the console with the correct parameters. The output resembles this:
 
-```azcli
-
+```azurecli
+%todo%
 ```
 
 In the preceding example:
@@ -105,6 +121,6 @@ In the preceding example:
 * happens
 
 > [!NOTE]
-> If any of the code changes you made to the Coupon.API project were incorrect, the build in ACR might fail. In the event of build errors, use the build output in the console to troubleshoot the error and re-run `./deploy/k8s/build-to-acr.sh`.
+> If any of the code changes you made to the *Coupon.API* project were incorrect, the build in ACR might fail. In the event of build errors, use the build output in the console to troubleshoot the error and re-run `./deploy/k8s/build-to-acr.sh`.
 
 In the next unit, you'll update the AKS deployment with your modifications.
