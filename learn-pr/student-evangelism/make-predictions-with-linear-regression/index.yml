@@ -11,6 +11,15 @@ metadata:
 title: Make predictions with linear regression
 summary: Learn how to make predictions using linear regression
 abstract: |
+  The UC Berkeley Foundations of Data Science course combines three perspectives: inferential thinking, computational 
+  thinking, and real-world relevance. Given data arising from some real-world phenomenon, how does one analyze that 
+  data so as to understand that phenomenon? The course teaches critical concepts and skills in computer programming 
+  and statistical inference, in conjunction with hands-on analysis of real-world datasets, including economic data, 
+  document collections, geographical data, and social networks. It delves into social issues surrounding data 
+  analysis such as privacy and design.
+  
+  ***Produced in partnership with the University of California, Berkeley - Ani Adhikari and John Denero with Contributions from David Wagner [Computational and Inferential Thinking](https://www.inferentialthinking.com/chapters/intro.html).*** 
+
   In this module, you will:
   - Learn about Correlation as a measure of linear association and the correlation coefficient.
   - Understand the Regression line, Regression Effect, and the equation of the regression line.
