@@ -23,7 +23,7 @@ import { CosmosClient } from "@azure/cosmos";
 const client = new CosmosClient(<Connection String>);
 ```
 
-That object needs a connection string as you might have noticed from the snippet above. VS Code can give you the connection string. You can get it by right-clicking the database in the Azure Cosmos DB VS Code extension and choosing "Copy connection string".
+That object needs a connection string as you might have noticed from the snippet above. Visual Studio Code can give you the connection string. You can get it by right-clicking the database in the Azure Cosmos DB Visual Studio Code extension and choosing "Copy connection string".
 
 Once you have that connection string on your clipboard, you can copy it right into your code, right? Well, you could, but you probably shouldn't.
 
