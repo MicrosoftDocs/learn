@@ -94,6 +94,8 @@ Now that we have our function app deployed and tested, we'll expose the function
 
 1. In the **Create from Function App** page, change **API URL suffix** to **products** and select **Create**. The API is now created for the **ProductDetails** function. 
 
+    ![Screenshot showing the Create from Function app dialog box.](../media/3-create-from-function-app.png)
+
 Note that we were able to define our API all from within the function app portal experience. 
 
 ## Test the OnlineStore products endpoint
