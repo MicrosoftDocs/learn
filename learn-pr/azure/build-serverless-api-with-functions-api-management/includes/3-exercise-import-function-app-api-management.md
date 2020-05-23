@@ -88,7 +88,7 @@ Now that we have our function app deployed and tested, we'll expose the function
 
     ![Screenshot showing the Link API button.](../media/3-link-api.png)
 
-1.The **Import Azure Functions** dialog opens with the **ProductDetails** function highlighted. Choose **Select** to continue. 
+1. The **Import Azure Functions** dialog opens with the **ProductDetails** function highlighted. Choose **Select** to continue. 
 
     ![Screenshot showing the Import Azure Functions page.](../media/3-import-azure-functions.png)
 
