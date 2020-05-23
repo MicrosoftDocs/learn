@@ -1,4 +1,12 @@
-Soon after launching the setup script, the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution to the *~/clouddrive/source/eShop-Learn/* directory. You may investigate the solution while the script continues to deploy the Docker containers to AKS, even if the script is still running. 
+Soon after launching the setup script, the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution to the *~/clouddrive/aspnet-learn/src/* directory. You may investigate the solution while the script continues to deploy the Docker containers to AKS, even if the script is still running. 
+
+> [!NOTE]
+> If your Cloud Shell session disconnects due to inactivity, reconnect and execute the following command to return to this directory and open the Cloud Shell editor:
+> 
+> ```bash
+> cd ~/clouddrive/aspnet-learn/src/ && \
+>   code .
+> ```
 
 ## Review code
 
@@ -23,6 +31,13 @@ You can begin exploring these services (when available):
 - General application status: http://13.83.97.100/webstatus/ (See overall service status)
 - Web SPA application       : http://13.83.97.100/
 ```
+
+> [!TIP]
+> To display these URLs again, execute the following command:
+>
+> ```bash
+> cat ~/clouddrive/aspnet-learn/deployment-urls.txt
+> ```
 
 Even though the app has been deployed, it may take a few minutes to come online. Verify the app is deployed and online with the following steps:
 
