@@ -2,7 +2,7 @@ In the previous unit, we used the dice roll code to illustrate the two different
 
 ## Return values
 
-Some methods are designed to complete their function and end "quietly".  In other words, they don't return values when they finish.  The are referred to as **void methods**.
+Some methods are designed to complete their function and end "quietly".  In other words, they don't return values when they finish.  They are referred to as **void methods**.
 
 Other methods are designed to return a value upon completion, typically the result of an operation.  A return value is the primary way a method can communicate back to the code that calls the method.
 
