@@ -28,6 +28,7 @@ roles:
 products:
 - azure
 - azure-storage
+- azure-file-storage
 units:
 - learn.azure.extend-share-capacity-with-azure-file-sync.introduction
 - learn.azure.extend-share-capacity-with-azure-file-sync.what-is-azure-file-sync
