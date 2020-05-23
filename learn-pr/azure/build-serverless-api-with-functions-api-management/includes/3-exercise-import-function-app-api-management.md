@@ -64,7 +64,11 @@ Now, let's test the ProductDetails function, to see how it behaves before we add
 
 Now that we have our function app deployed and tested, we'll expose the functionality as an API using Azure API Management so that the function can be called from other apps and services. 
 
-1. Select our function app, then in **Platform features**, choose **API Management** and select **Create new** under **API Management**.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and select the App Service whose name begins with **ProductFunction**.
+
+1. Select **API Management**, and select **Create new** under **API Management**.
+
+    ![Screenshot illustrating how to create a new API.](../media/3-create-api.png)
 
 1. Use the API Management settings as specified in the following table.
 
@@ -78,9 +82,15 @@ Now that we have our function app deployed and tested, we'll expose the function
     | Administrator email | Use the default value |
     | Pricing tier | Consumption |
 
-1. Choose **Create** to create the API Management instance, which may take several minutes. 
+    ![Screenshot showing the new API settings.](../media/3-api-details.png)
 
-1. Select **Link API**. The **Import Azure Functions** dialog opens with the **ProductDetails** function highlighted. Choose **Select** to continue. 
+1. Choose **Create** to create the API Management instance, which may take several minutes, then select **Link API**.
+
+    ![Screenshot showing the Link API button.](../media/3-link-api.png)
+
+1.The **Import Azure Functions** dialog opens with the **ProductDetails** function highlighted. Choose **Select** to continue. 
+
+    ![Screenshot showing the Import Azure Functions page.](../media/3-import-azure-functions.png)
 
 1. In the **Create from Function App** page, change **API URL suffix** to **products** and select **Create**. The API is now created for the **ProductDetails** function. 
 
