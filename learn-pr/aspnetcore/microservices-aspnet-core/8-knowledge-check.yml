@@ -19,12 +19,12 @@ quiz:
       - content: "Data is stored in a master data store with which all microservices interact."
         isCorrect: false
         explanation: "The shared data store does not provide autonomy. Performing data schema updates can cause runtime conflicts for services accessing the same resources."
-      - content: "Each microservice is responsible for its own data. Each microservice implments it's own data store that is best optimized for its workload, storage needs, and read/write patterns. Inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging."
+      - content: "Each microservice is responsible for its own data. Each microservice implments its own data store that is best optimized for its workload, storage needs, and read/write patterns. Inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging."
         isCorrect: true
         explanation: "The data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in the production environment."
     - content: "Within the ASP.NET Core Health Checks middleware, the code `services.AddHealthChecks().AddCheck("coupon-self", () => HealthCheckResult.Healthy());` in `Startup.ConfigureServices` serves what purpose?"
       choices:
-      - content: "Configures Kubernetes liveness probe using HTTP GET"
+      - content: "Configures Kubernetes liveness probe using HTTP GET."
         isCorrect: false
         explanation: "Kubernetes liveness probe using HTTP GET is configured in Kubernetes configuration yaml file."
       - content: "It registers a health check with a name `coupon-self` and an implementation that returns HTTP success code to the endpoint configured in `Startup.Configure`."
