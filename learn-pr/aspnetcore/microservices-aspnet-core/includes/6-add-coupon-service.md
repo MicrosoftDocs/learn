@@ -37,21 +37,76 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
         [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configureServices&highlight=13)]
 
-        With the preceding change:
-        
-        * ASP.NET Core's health check service is registered in the coupon service's dependency injection container. ASP.NET Core provides health checks middleware that executes when a health check endpoint is requested.
-        * A health check named `self` is created. Its purpose is to verify connectivity to the supporting MongoDB database. When a connection to the database can be established, the health check returns an HTTP 200 status code.
+         With the preceding change:
+
+        * ASP.NET Core's health check service is registered in the coupon service's dependency injection container. ASP.NET Core provides health checks middleware that executes when a health check endpoint is requested. 
+        * `AddCustomHealthCheck` extension method implemented in *Extensions/IServiceCollectionExtensions.cs*, tests external service dependencies, such as the **MongoDB** and **RabbitMQ** endpoints, to confirm availability and normal functioning. E.g., the following code adds a health check named `self`, which returns an HTTP 200 status code for every HTTP request made to the configured health endpoint. It also adds a check for the MongoDB availablilty using the `AddMongoDb` extension method implmented in the [AspNetCore.HealthChecks.MongoDb](https://www.nuget.org/packages/AspNetCore.HealthChecks.MongoDb/) NuGet package.
+
+            ```csharp
+            var hcBuilder = services.AddHealthChecks();
+            hcBuilder.AddCheck("self", () => HealthCheckResult.Healthy())
+                .AddMongoDb(
+                    configuration["ConnectionString"],
+                    name: "CouponCollection-check",
+                    tags: new string[] { "couponcollection" });
+            ```
 
     1. In the `Configure` method, register the health checks endpoints with the ASP.NET Core routing system:
 
         [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configure&highlight=30-38)]
 
         The preceding change registers two HTTP health check endpoints with the ASP.NET Core routing system:
-        
-        * `/hc` &ndash; A "readiness" endpoint that provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
-        * `/liveness` &ndash; A "liveness" endpoint that tests connectivity to the MongoDB database.
 
-        Using separate "readiness" and "liveness" checks is useful when using AKS. The coupon service performs time-consuming startup work before accepting HTTP requests, such as testing connectivity to the underlying MongoDB database. Using separate checks allows the orchestrator to determine whether the service is functioning but not yet ready or if the service has failed to start.
+        * `/liveness` &ndash; A "liveness" endpoint that Kubernetes queries periodically to check for failures. Kubernetes provides liveness probes to detect applications that are failing and restarts them when they do not return success codes. When the coupon microservice starts up for the first time, there could be time-consuming tasks like setting up seed data in the database or awaiting RabbitMQ to boot up. To avoid restarts during this time, the liveness check filters the checks with the `self` tag, which returns HTTP status code 200 for every request.
+        * `/hc` &ndash; A "readiness" endpoint that Kubernetes queries to know when a service is ready to start accepting traffic. It returns HTTP status code 200 when all registered checks are successful. The same endpoint is also queried by an external health monitoring system like the `WebStatus` app. `WebStatus` provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
+
+        In the following Kubernetes configuration file, the liveness and readiness probes uses HTTP GET requests to the above mentioned health endpoints to determine their status codes. Any code greater than or equal to 200 and less than 400 indicates success. Any other code indicates failure.
+
+        ```yml
+        kind: Deployment
+        apiVersion: apps/v1
+        metadata:
+        name: coupon
+        labels:
+            app: eshop
+            service: coupon
+        spec:
+        replicas: 1
+        selector:
+            matchLabels:
+            service: coupon
+        template:
+            metadata:
+            labels:
+                app: eshop
+                service: coupon
+            spec:
+            containers:
+                - name: coupon-api
+                image: {{ .Values.registry }}/coupon.api:linux-latest
+                imagePullPolicy: Always
+                ports:
+                    - containerPort: 80
+                    protocol: TCP
+                    - containerPort: 81
+                    protocol: TCP
+                livenessProbe:
+                    httpGet:
+                    port: 80
+                    path: /liveness
+                    initialDelaySeconds: 10
+                    periodSeconds: 15
+                readinessProbe:
+                    httpGet:
+                    port: 80
+                    path: /hc
+                    initialDelaySeconds: 90
+                    periodSeconds: 60
+                    timeoutSeconds: 5
+                envFrom:
+                    - configMapRef:
+                        name: coupon-cm
+        ```
 
 1. Run the following script in the command shell to make additional configuration changes for the coupon service:
 
@@ -70,7 +125,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
     * Adds the coupon health check to the *WebStatus* Helm chart in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*.
 
     When you create an object in a Kubernetes (or AKS) cluster, you must provide the object specification in a YAML file. You'll use the template functionality in the open-source tool Helm to generate and send the YAML files to the AKS cluster.
-    
+
     The Helm chart for the coupon service is comprised of the following files in the *deploy/k8s/helm-simple/coupon* directory:
 
     * *Chart.yaml*
@@ -80,54 +135,6 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
     * *templates/service.yaml*
 
     The *Chart.yaml* file contains a description of the chart. The *templates* directory contains template files. When Helm evaluates the chart with the `helm install` command, it sends all of the files in the *templates* directory to the template rendering engine. It then collects the rendered YAML created by those templates and sends it to AKS.
-
-    %TODO% - Add an explanation of the following "livenessProbe" and "readinessProbe" sections in *deployment.yaml* (might go better in the previous step, but I moved it here to see if it fits --cs):
-
-    ```yml
-    kind: Deployment
-    apiVersion: apps/v1
-    metadata:
-    name: coupon
-    labels:
-        app: eshop
-        service: coupon
-    spec:
-    replicas: 1
-    selector:
-        matchLabels:
-        service: coupon
-    template:
-        metadata:
-        labels:
-            app: eshop
-            service: coupon
-        spec:
-        containers:
-            - name: coupon-api
-            image: {{ .Values.registry }}/coupon.api:linux-latest
-            imagePullPolicy: Always
-            ports:
-                - containerPort: 80
-                protocol: TCP
-                - containerPort: 81
-                protocol: TCP
-            livenessProbe:
-                httpGet:
-                port: 80
-                path: /liveness
-                initialDelaySeconds: 10
-                periodSeconds: 15
-            readinessProbe:
-                httpGet:
-                port: 80
-                path: /hc
-                initialDelaySeconds: 90
-                periodSeconds: 60
-                timeoutSeconds: 5
-            envFrom:
-                - configMapRef:
-                    name: coupon-cm
-    ```
 
 ## Build the coupon service in ACR
 
