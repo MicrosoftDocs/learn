@@ -40,7 +40,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
          With the preceding change:
 
         * ASP.NET Core's health check service is registered in the coupon service's dependency injection container. ASP.NET Core provides health checks middleware that executes when a health check endpoint is requested. 
-        * `AddCustomHealthCheck` extension method implemented in *Extensions/IServiceCollectionExtensions.cs*, tests external service dependencies, such as the **MongoDB** and **RabbitMQ** endpoints, to confirm availability and normal functioning. E.g., the following code adds a health check named `self`, which returns an HTTP 200 status code for every HTTP request made to the configured health endpoint. It also adds a check for the MongoDB availablilty using the `AddMongoDb` extension method implmented in the [AspNetCore.HealthChecks.MongoDb](https://www.nuget.org/packages/AspNetCore.HealthChecks.MongoDb/) NuGet package.
+        * `AddCustomHealthCheck` extension method implemented in *Extensions/IServiceCollectionExtensions.cs*, tests external service dependencies, such as the **MongoDB** and **RabbitMQ** endpoints, to confirm availability and normal functioning.
 
             ```csharp
             var hcBuilder = services.AddHealthChecks();
@@ -50,6 +50,8 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
                     name: "CouponCollection-check",
                     tags: new string[] { "couponcollection" });
             ```
+
+        The above code adds a health check named `self`, which returns an HTTP success status code for every request to the coupon microservice health endpoint. It also adds a check for its dependencies like the MongoDB using the `AddMongoDb` extension method. `AddMongoDb` method is implmented in the [AspNetCore.HealthChecks.MongoDb](https://www.nuget.org/packages/AspNetCore.HealthChecks.MongoDb/) NuGet package. The open source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) provides various custom health check implementations that can be used in the ASP.NET Core projects.
 
     1. In the `Configure` method, register the health checks endpoints with the ASP.NET Core routing system:
 
