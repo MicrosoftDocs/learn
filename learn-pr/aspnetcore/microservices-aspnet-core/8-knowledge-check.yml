@@ -14,36 +14,30 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "In an entity class, what is the property naming convention for a primary key?"
+    - content: "In a microservices architecture, how do individual microservices access their data?"
       choices:
-      - content: "`Key` or `<entity name>Key`"
+      - content: "Data is stored in a master data store with which all microservices interact."
         isCorrect: false
-        explanation: "`Key` and the `Key` suffix aren't naming conventions recognized by EF Core. To make such a property the primary key, it must be annotated with the `[Key]` attribute."
-      - content: "`Id` or `<entity name>Id`"
+        explanation: "The shared data store does not provide autonomy. Performing data schema updates can cause runtime conflicts for services accessing the same resources."
+      - content: "Each microservice is responsible for its own data. Each microservice implments it's own data store that is best optimized for its workload, storage needs, and read/write patterns. Inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging."
         isCorrect: true
-        explanation: "`Id` or `<entity name>Id` are inferred by EF Core to be the primary key."
-      - content: "`<entity name>`"
-        isCorrect: false
-        explanation: "`<entity name>` is more suitable as a navigation property name. To make such a property the primary key, it must be annotated with the `[Key]` attribute."
-    - content: "Within the underlying EF Core architecture, the Database Provider component serves what purpose?"
+        explanation: "The data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in the production environment."
+    - content: "Within the ASP.NET Core Health Checks middleware, the code `services.AddHealthChecks().AddCheck("coupon-self", () => HealthCheckResult.Healthy());` in `Startup.ConfigureServices` serves what purpose?"
       choices:
-      - content: "Translates object graph changes to SQL."
+      - content: "Configures Kubernetes liveness probe using HTTP GET"
         isCorrect: false
-        explanation: "The EF Core Provider is the component responsible for translating object graph changes to SQL."
-      - content: "Manages the connection to the database engine and executes generated SQL in the database."
+        explanation: "Kubernetes liveness probe using HTTP GET is configured in Kubernetes configuration yaml file."
+      - content: "It registers a health check with a name `coupon-self` and an implementation that returns HTTP success code to the endpoint configured in `Startup.Configure`."
         isCorrect: true
-        explanation: "A Database Provider is the component responsible for managing the connection to the database engine. It also executes the generated SQL in the database."
-      - content: "Represents an active connection to a database."
+        explanation: "For many apps, a basic health probe that reports the app's availability to process requests is sufficient. In the above code, the check always returns a healthy state."
+      - content: "Maps an health endpoint called `<yourservice>/liveness`"
         isCorrect: false
-        explanation: "A class deriving from `DbContext` represents an active connection to a database."
-    - content: "Suppose you want to write a read-only query. How do you indicate to EF Core that object graph change tracking is unnecessary?"
+        explanation: "To map health check endpoints in ASP .NET Core call `endpoints.MapHealthChecks("/liveness");` in the  `Startup.Configure` class."
+    - content: "What is the benefit of using Azure Container Registry(ACR)?"
       choices:
-      - content: "Set the entity's state to `EntityState.Unchanged`."
+      - content: "ACR allows public access to container images hence developers can access them easily without authentication."
         isCorrect: false
-        explanation: "The entity is being tracked automatically by the `DbContext`. Manually setting the `Unchanged` state fools the `DbContext` into thinking there were no object graph changes."
-      - content: "Chain the `ToListAsync()` method call to the LINQ query or fluent method chain."
-        isCorrect: false
-        explanation: "The `ToListAsync` method returns the result set as a `List<T>` collection."
-      - content: "Chain the `AsNoTracking()` method call to the entity object."
+        explanation: "Azure Container Registry is a private registry. Images cannot be accessed without authentication."
+      - content: "ACR is a private container registry and provides a granular access control for development teams."
         isCorrect: true
-        explanation: "By default, change tracking is enabled for queries that return entity types."
+        explanation: "ACR provides Azure service principals as an authentication method. They provide granular access to container images in Azure Container Registry; for example, you can specify read-only access or full access to the container registry."
