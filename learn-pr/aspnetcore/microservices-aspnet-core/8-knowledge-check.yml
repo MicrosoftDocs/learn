@@ -22,7 +22,7 @@ quiz:
       - content: "Each microservice is responsible for its own data. Each microservice implments its own data store that is best optimized for its workload, storage needs, and read/write patterns. Inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging."
         isCorrect: true
         explanation: "The data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in the production environment."
-    - content: "Within the ASP.NET Core Health Checks middleware, the code `services.AddHealthChecks().AddCheck('coupon-self', () => HealthCheckResult.Healthy());` in `Startup.ConfigureServices` serves what purpose?"
+    - content: "Within the ASP.NET Core Health Checks middleware, the code `services.AddHealthChecks().AddCheck(\"coupon-self\", () => HealthCheckResult.Healthy());` in `Startup.ConfigureServices` serves what purpose?"
       choices:
       - content: "Configures Kubernetes liveness probe using HTTP GET."
         isCorrect: false
@@ -32,7 +32,7 @@ quiz:
         explanation: "For many apps, a basic health probe that reports the app's availability to process requests is sufficient. In the above code, the check always returns a healthy state."
       - content: "Maps an health endpoint called `<yourservice>/liveness`"
         isCorrect: false
-        explanation: "To map health check endpoints in ASP .NET Core call `endpoints.MapHealthChecks('/liveness');` in the  `Startup.Configure` class."
+        explanation: "To map health check endpoints in ASP .NET Core call `endpoints.MapHealthChecks(\"/liveness\");` in the  `Startup.Configure` class."
     - content: "What is the benefit of using Azure Container Registry(ACR)?"
       choices:
       - content: "ACR allows public access to container images hence developers can access them easily without authentication."
