@@ -41,7 +41,7 @@ quiz:
     - content: 'IOPS'
       isCorrect: false
       explanation: 'Request Units (RUs) are a mixture of Memory, CPU and IOPS'
-   - content: 'all of the above'
+    - content: 'all of the above'
       isCorrect: true
       explanation: 'Correct, Request Units (RUs) are a mixture of memory, CPU and IOPS'
 

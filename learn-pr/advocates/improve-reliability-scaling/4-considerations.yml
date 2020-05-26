@@ -39,5 +39,5 @@ quiz:
       isCorrect: false
       explanation: 'It is better to first determine if there are issues in your application and service because you may find you do not need to scale.'
     - content: 'increase soft service limits'
-      isCorrect: true
+      isCorrect: false
       explanation: 'It is better to first determine if issued in your application or service are causing you to consume more resources than you need.'
