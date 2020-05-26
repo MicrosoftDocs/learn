@@ -36,7 +36,7 @@ quiz:
       isCorrect: false
       explanation: 'It is not possible, it will only lead to an empty team.'
     - content: 'no'
-      isCorrect: yes
+      isCorrect: true
       explanation: 'Correct.'
 
   - content: 'What should a post-incident review focus on?'
