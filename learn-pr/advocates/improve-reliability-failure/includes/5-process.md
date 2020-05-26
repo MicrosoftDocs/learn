@@ -39,7 +39,7 @@ We can look at this as three separate parts:
 
 -   Determine the context. The people in an incident are receiving signals
     from various places. One primary place is your monitoring system. We've
-    discussed the importance of having a solid monitoring systems in a
+    discussed the importance of having a solid monitoring system in a
     previous module in this learning path. Ideally we should be able to
     look at the monitoring system to build a point-in-time snapshot for the
     time period around or related to the incident.
@@ -54,7 +54,7 @@ Azure offers a number of tools that can assist with this process:
 
 In a previous module in this learning module we discussed using Azure
 Boards in the Azure DevOps suite as one place to collect all of the
-information about an incident starting from the initial response. It help
+information about an incident starting from the initial response. It helps
 us with questions about when an incident was first declared, who was on
 call, who was assigned to the incident, and so forth. You can also use the
 Azure DevOps Wiki as a centralized way to pull in some of the pieces of
@@ -75,20 +75,20 @@ to pick the API calls by choosing pre-populated options. In our case, we
 will want to use the "Microsoft Teams" and "Microsoft Teams (beta)" API
 calls like this:
 
-PLACEHOLDER Graph explorer screen shot
+PLACEHOLDER Graph explorer screenshot
 
 We will step through a set of API calls to retrieve the conversation. Each
 step of the way, we will choose a query, run the query, and then select the
 info from the response that helps us with the next step. We then use this
 info to construct the next request. For example, first we query a list of
-team ids to show the teams we are a part of. We choose the one we need from
-the response and insert this id into the next query URL to get a list of
+team IDs to show the teams we are a part of. We choose the one we need from
+the response and insert this ID into the next query URL to get a list of
 channels in that team.
 
 Here are our steps:
 
-    1. GET "my joined teams" (to find the team id of the team we use)
-    2. GET "channels of a team which I am member of" (to find the channel id of the channel we used for that incident)
+    1. GET "my joined teams" (to find the team ID of the team we use)
+    2. GET "channels of a team which I am member of" (to find the channel ID of the channel we used for that incident)
     3. GET "messages in a channel" (to retrieve the conversation)
 
 If later we wanted to construct a program to perform each of those steps
@@ -153,7 +153,7 @@ hone in on the time shortly before the incident if we desire.
 
 One quick note: when you set the Azure activity log as a data source, the
 information starts to flow into the log analytics workspace from that point
-in time forward. You will not be able too query that workspace for data
+in time forward. You will not be able to query that workspace for data
 retroactively for events that took place before you made the connection.
 
 These tools should be able to give you a good start on collecting

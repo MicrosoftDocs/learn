@@ -36,7 +36,7 @@ quiz:
       isCorrect: true
       explanation: 'Correct, there is no one correct name, it is the process that matters.'
 
-  - content: 'A post-incident review takes place during which phase of the incident lifecyle?'
+  - content: 'A post-incident review takes place during which phase of the incident lifecycle?'
     choices:
     - content: 'Detection'
       isCorrect: false

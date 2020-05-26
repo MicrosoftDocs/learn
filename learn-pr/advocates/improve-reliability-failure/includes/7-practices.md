@@ -1,5 +1,5 @@
 Now you’re aware of some of the common pitfalls that can sabotage or at
-least limit the value you can get from your post-incident reviews,the next
+least limit the value you can get from your post-incident reviews, the next
 logical question is “what should you do instead?”
 
 In this unit, you’ll learn about four helpful practices that can improve
@@ -59,7 +59,7 @@ _In particular, it’s better to ask people “how” or “what” instead of
 
 When people are asked to explain “why” they did something or “why”
 something happened, it tends to put them on the defensive. Beginning a
-question with “why” often comes across as a judgement, criticism, or
+question with “why” often comes across as a judgment, criticism, or
 accusation. It forces people to justify their actions, and people don’t
 always know why they did something, or why something happened as a result
 of their actions. It can also lead people to jump directly to a problem
@@ -123,7 +123,7 @@ puzzle of what was happening? How did they know to do that? Where did the
 information come from?
 
 Look for themes and patterns. Finally, as part of recognizing what went
-right, ask _What do you know now that you didn’t know previously?_ If
+right, ask "What do you know now that you didn’t know previously?". If
 learning resulted from the incident and from the incident response and
 review processes, that’s another thing that went right.
 

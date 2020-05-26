@@ -34,7 +34,7 @@ stopped happening.
 
 He's now known as one of the founders of the field of ergonomics -- the
 study of design factors in human performance -- and he had a simple
-observation -- that the design of the cockpit could affect the likelihood
+observation -- that the design of the cockpit could effect the likelihood
 of human error. This has gone on to inform the design of all modern
 aircraft. The two switches in current airplanes are now very distinct as
 mandated by federal law in the US.
@@ -116,7 +116,7 @@ often this judgment is made with the benefit of information the people in
 question did not have.
 
 The problem with normative language is similar to the problem with
-counterfactual reasoning: if we make judgements after the fact using
+counterfactual reasoning: if we make judgments after the fact using
 information that was unavailable to the humans involved during the
 incident, we will neglect to understand how the actions of the operators
 made sense to them at the time.

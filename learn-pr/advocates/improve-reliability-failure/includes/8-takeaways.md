@@ -10,7 +10,7 @@ gives us an incentive to find and use tools that can help improve that
 response as part of the analysis phase in the incident lifecycle.
 
 This is where the post-incident review comes into play. After getting a
-good sense of what a post-incident review is (and is not) plus it's
+good sense of what a post-incident review is (and is not) plus its
 purpose, we made sure to explore the characteristics and components that
 are needed to make it effective.
 
