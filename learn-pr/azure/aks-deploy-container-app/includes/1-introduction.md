@@ -1,4 +1,4 @@
-Let's suppose you work for a growing company that, because of the increased demand, needed to scale the product so it can provide a better experience to all customers. For that they asked you to assess which tool would be the best for the job.
+Let's suppose you work for a growing video editing company that, because of the increased demand because of international expansion, needs to scale the product so it can provide a better experience to all customers. For that they asked you to assess which tool would be the best for the job.
 
 After experimenting with Kubernetes you got to Azure Kubernetes Service, which fits all the prerequisites to be the perfect tool for the company's increased growth. So, after clearance from the leadership, you have to create the future structure that will support the company in the future!
 
