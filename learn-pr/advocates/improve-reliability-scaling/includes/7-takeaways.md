@@ -3,8 +3,8 @@ exceed, your current capacity – that’s a “good” problem to have. However
 this can be just as much of a threat to your system’s reliability as any
 other factor.
 
-In this session, we've looked at looked at how to handle growth through
-scaling and a number of the considerations that come as a result. We've
-looked at two types of growth and different ways we may address them via
-capacity planning and cost estimation. We've explored ways to scale our
-applications and take them global using Azure tools.
+In this session, we've looked at how to handle growth through scaling and a
+number of the considerations that come as a result. We've looked at two
+types of growth and different ways we may address them via capacity
+planning and cost estimation. We've explored ways to scale our applications
+and take them global using Azure tools.

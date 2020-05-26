@@ -50,7 +50,7 @@ If you find that you really do need to scale your application globally,
 there are some Azure services that can help you achieve that. Take a look
 at Azure Front Door and Azure Traffic Manager:
 
--   Azure Traffic Manager is a global DNS based load balancing service.
+-   Azure Traffic Manager is a global DNS-based load-balancing service.
     This means that it uses DNS and health probes to route your users to
     the best healthy backend based on the routing policies you’ve defined.
     This could be based on performance, location, round robin etc. Once a
@@ -79,6 +79,6 @@ The illustration shows how you can use both together.
 
 PLACEHOLDER slide 63
 
-This setup uses Traffic Manager for simple DNS based load balancing to your
+This setup uses Traffic Manager for simple DNS-based load balancing to your
 static assets in storage accounts and Front Door for path-based routing on
 your web application across App Service and VMs.

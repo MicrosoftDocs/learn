@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'If, after scaling up or implementing read replicas, your database resources still don’t meet the needs of your system, what is the next option?'
+  - content: 'If after scaling up or implementing read replicas, your database resources still don’t meet the needs of your system, what is the next option?'
     choices:
     - content: 'in-memory caching'
       isCorrect: false

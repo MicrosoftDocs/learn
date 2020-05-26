@@ -27,8 +27,8 @@ the limits for the cloud services you are using. For example, by default
 you can have a maximum of 200 virtual machines per VM availability set in
 Azure. This may seem like more than enough VMs if you’re just getting
 started. However, you need to be aware that when you hit that limit, you
-won’t be able to provision any more, and this could potentially result in
-an outage.
+won’t be able to provision any more VMs, and this could potentially result
+in an outage.
 
 Likewise, by default you can have 250 storage accounts per subscription,
 per region. These are both examples of soft limits that can be increased.
@@ -45,8 +45,8 @@ that.
 You can see the service quotas and where you are in relation to those
 limits in the Usage and quotas section under Subscriptions \| Settings in
 the navigation pane. You can filter on service category such as network /
-compute, as well as Azure region. It’ll show you where you are against the
-limits.
+compute, as well as Azure region. It will show you where you are against
+the limits.
 
 PLACEHOLDER slide 38
 
@@ -84,7 +84,7 @@ You can:
 
 -   Set up budgets in Azure Cost Management. This tool can allow you to
     examine your costs at different scopes including management group,
-    resource group and subscription. etc)
+    resource group and subscription. etc.)
 
 ## Code and configuration inefficiencies
 

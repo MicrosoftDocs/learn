@@ -62,7 +62,7 @@ to measure this. Request Units (RUs) are a mixture of memory, CPU and IOPS.
 This gives you a single metric by which you can plan capacity. You
 provision request units in increments of 100 request units per second.
 
-Every DB operation is measured in RU/s. Reads are simple: 1KB read is a
+Every DB operation is measured in RU/s. Reads are simple: 1 KB read is a
 single Request unit. Other operations are calculated based on a number of
 factors, such as item size, data consistency, query patterns, and so forth.
 
@@ -91,8 +91,8 @@ If we look at storage:
 
 PLACEHOLDER slide 29
 
-We can see their database is using 300GB of 5TB available (6%) It is
-growing at 1% or 50GB/Month.
+We can see their database is using 300 GB of 5 TB available (6%) It is
+growing at 1% or 50 GB/Month.
 
 From a throughput perspective, it is sitting at 300/1000 and growing at
 10%/month:
@@ -140,17 +140,17 @@ you can be will give you a head start.
 Let’s look at another hypothetical situation as an example of planning for
 inorganic growth: There is an upcoming marketing event for the launch of a
 high-profile innovative new product at Tailwind Traders. They are expecting
-that to drive five thousand more users to their sales site.
+that to drive 5000 more users to their sales site.
 
 If you use the data from the previous example of organic growth, and
 correlate that (hopefully with causation) to a business metric you have
 obtained from your product/marketing teams – number of users – you can
 start to plan for inorganic growth.
 
-You know from the previous scenario that per twenty-five hundred users,
-that’s approx. 50GB of storage and 100 Request Units. You can now use that
-data and determine whether you’re ready for this event. If we can expect
-5000 users, that's going to require 100GB storage and 200RU/s.
+You know from the previous scenario that per 2500 users, that’s approx. 50
+GB of storage and 100 Request Units. You can now use that data and
+determine whether you’re ready for this event. If we can expect 5000 users,
+that's going to require 100 GB storage and 200 RU/s.
 
 PLACEHOLDER slide 34
 

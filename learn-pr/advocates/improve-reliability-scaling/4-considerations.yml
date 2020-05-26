@@ -28,7 +28,7 @@ quiz:
       explanation: 'Correct.'
     - content: 'CosmosDB'
       isCorrect: false
-      explanation: 'CosmosDB is a storage system. It doed not help you retrieve limits for compute resources.'
+      explanation: 'CosmosDB is a storage system. It does not help you retrieve limits for compute resources.'
       
   - content: 'Before scaling out resources, you should:'
     choices:

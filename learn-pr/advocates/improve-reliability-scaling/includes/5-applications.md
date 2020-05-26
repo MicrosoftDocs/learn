@@ -55,8 +55,8 @@ across the VMs.
 
 ### Virtual machine scale sets
 
-By leveraging VM scale sets over single virtual machines you get a few
-benefits:
+By leveraging virtual machine scale sets over single virtual machines you
+get a few benefits:
 
 -   You can autoscale based on host metrics, in-guest metrics, application
     insights or by a schedule.
@@ -68,10 +68,10 @@ benefits:
     instances within a scale set will be automatically evenly distributed
     across AZs.
 
--   Adding a load balancer becomes easier. VM scale sets support the use of
-    Azure Load Balancer for basic Layer 4 traffic distribution and Azure
-    Application Gateway for more advanced L7 traffic distribution and SSL
-    termination.
+-   Adding a load balancer becomes easier. Virtual machine scale sets
+    support the use of Azure Load Balancer for basic Layer 4 traffic
+    distribution and Azure Application Gateway for more advanced L7 traffic
+    distribution and SSL termination.
 
 There are some important factors you need to consider before implementing
 scale sets. Specifically:
@@ -111,12 +111,12 @@ process the images.
 
 Azure has two types of queue offerings:
 
-- Azure Service Bus queues is a more advanced queueing offering, which is
-part of the broader Azure Service Bus product, offering pub/sub and more
-advanced integration patterns.
+-   Azure Service Bus queues is a more advanced queueing offering, which is
+    part of the broader Azure Service Bus product, offering pub/sub and
+    more advanced integration patterns.
 
-- Azure Storage Queues is a simple REST-based queue interface built on
-top of Azure Storage. It offers reliable, persistent messaging.
+-   Azure Storage Queues is a simple REST-based queue interface built on
+    top of Azure Storage. It offers reliable, persistent messaging.
 
 Your requirements in this scenario are simple, so you can use Azure Storage
 Queues. Your product tier doesn’t have to scale at all because you’ve
@@ -178,7 +178,7 @@ In that case, you can look at scaling out SQL DB via sharding.
 
 ### Database sharding
 
-If, after scaling up or implementing Read Replicas, your database resources
+If after scaling up or implementing Read Replicas, your database resources
 still don’t meet the needs of your system, the next option is _sharding_.
 
 Sharding is a technique to distribute large amounts of identically

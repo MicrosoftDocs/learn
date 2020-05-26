@@ -3,7 +3,7 @@ fast, and when you haven’t adequately prepared for it, growth can bring
 problems. One of those is the impact on the reliability of applications and
 services that weren’t designed to handle a large increase in traffic.
 
-To your customers and end-users, an outage is an outage. They don’t know or
+To your customers and end users, an outage is an outage. They don’t know or
 care whether they’re unable to access your site because of buggy code or
 because too many other people are trying to use your perfectly coded site
 at the same time.
@@ -25,7 +25,7 @@ reliable. For example, if your system auto scales, then given a component
 failure on a single virtual machine, the autoscaling service will provision
 another instance to meet your minimum VM count requirements. This means
 your system is more reliable. In another example, if you’re leveraging
-higher level services such as Azure Storage that are inherently scalable,
+higher-level services such as Azure Storage that are inherently scalable,
 these have been built to be reliable, so your data will be replicated.
 
 Here's an analogy: Think of the accessibility ramps that you often see
@@ -123,9 +123,9 @@ Now that you have seen the whole architecture, let's take a moment to
 examine the single points of failure and the places we might put our
 attention when thinking about scaling.
 
-PLACEHOLDER spof
+PLACEHOLDER SPOF
 
-All of these services are a single point of failure, they’re not build for
+All of these services are a single point of failure, they’re not built for
 resiliency, or for scale. If one of them gets overloaded, it’s likely to
 crash, and there is no easy way to resolve that in the moment.
 
@@ -137,7 +137,7 @@ be more scalable and reliable.
 Lets take a look at another issue that could come and bite us. Here are the
 services/components that require us to pre-provisioned capacity:
 
-PLACEHOLDER ppcapacity
+PLACEHOLDER CAPACITY
 
 For example, with CosmosDB we pre-provision the throughput. If we exceed
 those limits, we’re going to start returning error messages to our
@@ -154,7 +154,7 @@ discuss later in this module.
 Even when we do things right, we still need to plan for growth. Here are
 the pay-per-use services:
 
-PLACEHLOLDER ppuse
+PLACEHLOLDER PAY PER USE
 
 Here we’re using logic apps and Functions, which are both examples of
 serverless technology. This means these services scale automatically and we

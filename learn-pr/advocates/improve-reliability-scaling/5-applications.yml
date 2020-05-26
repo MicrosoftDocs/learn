@@ -25,7 +25,7 @@ quiz:
       explanation: 'A load balancer can sit in front of those VMs, but it will not manage them.'
     - content: 'virtual hard disks (VHDs)'
       isCorrect: false
-      explanation: 'VHDs are attached to those VMs, but they do not manasger them.'
+      explanation: 'VHDs are attached to those VMs, but they do not manage them.'
     - content: 'virtual machine scale sets'
       isCorrect: true
       explanation: 'Correct.'

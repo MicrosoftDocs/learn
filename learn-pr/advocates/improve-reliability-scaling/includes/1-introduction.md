@@ -1,5 +1,5 @@
 The Dickerson hierarchy of reliability has served as the roadmap for this
-learning path. Over the course of previous five modules, you we have come
+learning path. Over the course of previous five modules, we have come
 up through the levels from the foundational step of monitoring to incident
 response, post-incident review, and testing/release.
 
