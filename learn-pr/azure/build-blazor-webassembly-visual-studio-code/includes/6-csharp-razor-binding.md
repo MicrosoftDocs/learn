@@ -2,7 +2,7 @@ Now that we have the UI for our application defined, let's explore how we add lo
 
 ## C# code-behind in separate files 
 
-In Blazor, we can add C# files directly to our app project like other .NET projects, we call this *code-behind*. Code-behind is a common term for the technique of using separate code files to store application logic. Separate code files are a great strategy when your business logic is complex, long or requires multiple classes and is best stored in more or code files.
+In Blazor, we can add C# files directly to our app project like other .NET projects, we call this *code-behind*. Code-behind is a common term for the technique of using separate code files to store application logic. Separate code files are a great strategy when your business logic is complex, long, or requires multiple classes and is best stored in more or code files.
 
 For simple logic, we don't always need to create new .cs files.
 
@@ -16,11 +16,11 @@ Razor directives are markup added to a component used to add C# inline with HTML
 
 ### Code directives
 
-You can use `@expression()` to add a simple C# statement inline with the html. Or, if more code is required, the `@code` markup allows a developer to add multiple statements enclosed by parenthesis. Code directives be familiar to developers who have used Razor in MVC or Pages. You can also add an `@functions` section to the template to add methods and properties that are added at the top of the generated class, which can then be referenced in the document.
+You can use `@expression()` to add a simple C# statement inline with the html. Or, if more code is required, the `@code` markup allows a developer to add multiple statements enclosed by parentheses. Code directives should be familiar to developers who have used Razor in MVC or Pages. You can also add an `@functions` section to the template to add methods and properties that are added at the top of the generated class, which can then be referenced in the document.
 
 ### Page directive
 
-The `@Page` directive is a special markup added to components used to identify the component a as a page. This allows you to specify a route on this directive, which then maps to an Attribute route that’s recognized by the Blazor engine to register and access the page.
+The `@Page` directive is a special markup added to components used to identify the component as a page. This allows you to specify a route on this directive, which then maps to an Attribute route that’s recognized by the Blazor engine to register and access the page.
 
 ## Razor data binding 
 
