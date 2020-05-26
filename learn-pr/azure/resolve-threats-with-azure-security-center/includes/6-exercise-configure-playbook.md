@@ -7,31 +7,43 @@ Workflow Automations are created directly in the Security Center portal.
 
 1. Navigate to **Security Center** using the search box, through the tile on the main dashboard, or through the left-hand sidebar.
 
-1. In the first section in the Azure Security Center left panel, select **Workflow automation (Preview).**
+1. In the first section in the Azure Security Center left panel, select **Workflow automation.**
 
     ![Screenshot showing the playbook creation screen](../media/7-playbooks.png)
 
 1. Select the **Add workflow automation** button to create a new automation.
 
 1. In the **Logic App** panel, enter the following information:
-    - **Name**: _RespondToMalwareAlert_
-    - **Subscription**: _Concierge Subscription_
-    - **Resource group**: select <rgn>[Learn resource group]</rgn> from the drop-down list
-    - **Select Security Center data types**: select _Threat detection alerts_
-    - **Alert name contains**: type _Malware_
-    - **Alert severity**: select _All severities selected_
+
+   |   Field  |Value  |
+   |---------|---------|
+   |Name     | _RespondToMalwareAlert_      |
+   |Subscription     |_Concierge Subscription_     |
+   |Resource group     | <rgn>[Learn resource group]</rgn>        |
+   |Select Security Center data types     |  _Threat detection alerts_   |
+   |Alert name contains    | _Malware_      |
+   |Alert severity    |  _All severities selected_      |
 
 1. Under **Actions** you can select an existing Azure Logic App, or create a new one. Since we don't have any yet, select the **Create a new one** link to build a new Logic App.
 
     A new window will open in the Azure portal with the Logic Apps view. Make sure you're still in the Microsoft Learn Sandbox directory before continuing.
 
-1. Select **Create logic app** to start building a new logic app.
+1. Select **Add**.
 
-1. In the new window, use the following settings as shown in the following screenshot, make sure to select the proper resource group from the Concierge Subscription.
+1. In the new window, use the following settings.
+
+
+   |   Field  |Value  |
+   |---------|---------|
+   |Subscription     |_Concierge Subscription_     |
+   |Resource group     | <rgn>[Learn resource group]</rgn>        |
+   |Logic App name     | _RespondToMalwareAlert_      |
+
+    Accept the default values for the rest of the fields.
 
     ![Screenshot showing the Logic Apps creation screen in the Azure portal](../media/6-create-new-logic-app.png)
 
-    It will take a minute or two to create the app, you can monitor the creation through the alerts icon, or use the **Refresh** button to refresh the screen.
+1. Select **Review + create** and **Create**. It takes a minute or two to create the app. You can monitor the creation through the alerts icon, or use the **Refresh** button to refresh the screen.
 
 1. Once the Logic App has been created, select it in your Logic Apps list to open the designer.
 

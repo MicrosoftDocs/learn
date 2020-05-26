@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-production-workloads-azure-databricks-azure-data-factory.schedule-databricks-jobs-pipeline
+title: Schedule Databricks jobs in a data factory pipeline
+metadata:
+  title: Schedule Databricks jobs in a data factory pipeline
+  description: "Schedule Databricks jobs in a data factory pipeline"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-schedule-databricks-jobs-pipeline.md)]

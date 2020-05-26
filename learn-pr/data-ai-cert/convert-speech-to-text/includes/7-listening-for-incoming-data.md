@@ -7,7 +7,7 @@ In order to test this scenario, the online environment will create issues with a
 
 1. Create a local folder where you will store the project for this exercise
 1. Start Visual Studio Code and open the folder you created in step 1
-1. Open a terminal window in VS Code by pressing CTRL+`, the Control key plus the back tick.   Optionally, you can choose the View menu and then Terminal
+1. Open a terminal window in Visual Studio Code by pressing CTRL+`, the Control key plus the back tick.   Optionally, you can choose the View menu and then Terminal
 1. type the command ```dotnet new console``` and press Enter
 1. Dotnet Core creates a project structure for you in your folder and adds a Program.cs file
 1. In the terminal window, enter the following command, ```dotnet add package Microsoft.CognitiveServices.Speech``` and press Enter
