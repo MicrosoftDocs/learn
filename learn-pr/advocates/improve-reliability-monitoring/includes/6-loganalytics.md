@@ -139,7 +139,7 @@ requests
 This query is written to maximize efficiency. By first selecting only the
 records from the last 30 minutes, you drastically reduce the number of
 records that the second clause has to scan through. If you wrote this query
-in the opposite order, first it would find all of the 404’s from the
+in the opposite order, first it would find all of the 404s from the
 beginning of time in the data and then discard the vast majority to give us
 only the last half an hour’s worth. Always consider the order of processing
 when you write queries with multiple conditions.

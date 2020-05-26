@@ -47,7 +47,7 @@ Actionable alerts are _not_:
 -   **Heartbeats.** Alerts shouldn’t be used as a reminder that your system
     is still running. We have seen situations where people say "Oh, if I
     don't get at least one page from that system every hour, I know
-    something is wrong and I have go deal with it." This is a terrible
+    something is wrong and I have to go deal with it." This is a terrible
     idea.
 
 Actionable alerts are used for situations in which you need a human to
@@ -65,19 +65,19 @@ successfully handled.
 
 In order for an alert to be actionable, it has to have:
 
--   Simplicity -- you don't want to make an alert that requires the
+-   Simplicity - you don't want to make an alert that requires the
     recipient to have to puzzle over it before they know what to do. If the
     alert is too complex, the poor person who has just been woken yo up in
     the middle of the night is going to lose valuable time just trying to
     figure out what it means.
 
--   Scope -- one of the first things a person receiving the message will
+-   Scope - one of the first things a person receiving the message will
     have to do in order to be able to triage it effectively is determine
     the scope of the problem. Is the issue with a single server? one
     service? a whole region? world wide? Make it easier for the recipient,
     put this information in the alert.
 
--   Context -- what does the person who is going to receive that alert need
+-   Context - what does the person who is going to receive that alert need
     to know to get started dealing with it? Let's dive further into this
     part.
 
@@ -99,9 +99,9 @@ so the recipients have the context they need:
     should be running at 60% load or lower."
 
 -   **Why is this an issue (for the customer)?** information about the
-    effect or impact the situation has had or potentially will have gives
-    us a way to determine importance and to appropriately gauge our
-    reaction.
+    effect or impact the situation has had or potentially will have on the
+    customer gives us a way to determine importance and to appropriately
+    gauge our reaction.
 
 -   **What are the next steps to take?** if possible, the alert should
     include what the person responding should do next, even if that is a
@@ -109,5 +109,5 @@ so the recipients have the context they need:
     help in diagnosing and remediating this problem.
 
 Including such helpful context and working to make your alerts actionable
-can make operations practices more sustainable and make responding to
-those alerts easier.
+can make operations practices more sustainable and make responding to those
+alerts easier.

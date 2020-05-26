@@ -81,7 +81,7 @@ improvement.
 
 ## Reframing #2: Appropriate levels of reliability
 
-To set this idea up correctly, we should take a quick look at it's origin.
+To set this idea up correctly, we should take a quick look at its origin.
 This idea comes from site reliability engineering (SRE). We can extract
 several really useful ideas (including the one for this section) just by
 closely examining the definition of SRE:

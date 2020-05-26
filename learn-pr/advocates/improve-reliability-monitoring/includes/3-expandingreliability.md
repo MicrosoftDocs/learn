@@ -85,7 +85,7 @@ PLACEHOLDER FOR DIAGRAM
 
 ## Freshness
 
-Freshness refers to how up-to-date the information is in situations where
+Freshness refers to how up to date the information is in situations where
 timeliness matters to the customer. For example, services that provide
 sports scores or election results. Those services are considered reliable
 if the data they provide is kept current.

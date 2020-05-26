@@ -20,13 +20,13 @@ quiz:
 
   - content: 'What language do you write log analytics queries in?'
     choices:
-    - content: 'Javascript'
+    - content: 'JavaScript'
       isCorrect: false
-      explanation: 'Queries are written in Kusto Query Languge (KQL).'
+      explanation: 'Queries are written in Kusto Query Language (KQL).'
     - content: 'Python'
       isCorrect: false
-      explanation: 'Queries are written in Kusto Query Languge (KQL).'
-    - content: 'Kusto Query Languge (KQL)'
+      explanation: 'Queries are written in Kusto Query Language (KQL).'
+    - content: 'Kusto Query Language (KQL)'
       isCorrect: true
       explanation: 'Correct, queries are written in KQL.'
 

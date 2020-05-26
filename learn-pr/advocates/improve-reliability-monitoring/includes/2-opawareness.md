@@ -27,10 +27,11 @@ is a good thing or a bad thing.
 
 As part of obtaining that baseline, we'll want to dive into looking at past
 performance. While it is true "Past performance is no guarantee of future
-results" it can sometimes help us calibrate our expectations. Similarly, if
-we have access to information about past outages or hiccups with a service,
-those may give us at least some sense of potential failure modes that we're
-going to need to incorporate into our thinking around reliability.
+results", it can sometimes help us calibrate our expectations. Similarly,
+if we have access to information about past outages or hiccups with a
+service, those may give us at least some sense of potential failure modes
+that we're going to need to incorporate into our thinking around
+reliability.
 
 ## Collect information about the context
 
@@ -50,7 +51,7 @@ for reasons that will become clear later when we discuss SLIs and SLOs.
 
 On the technical side of the context question, it will be really helpful
 for us to pay attention to technical questions like "just how did this
-application get in production?. Was it deployed manually during an "epic"
+application get in production?". Was it deployed manually during an "epic"
 deployment or was it deployed via an automated CI/CD pipeline with a great
 set of unit tests? We will talk a lot more about these deployment choices
 in XX OPS40 reference XXX.
@@ -77,7 +78,7 @@ ideally we'd be part of the entire lifecycle of the software, starting at
 the design phase, that is not always (or perhaps often) the case. When this
 happens, especially with more complex multi-tiered or microservice based
 applications, just being able to understand what all of the moving parts
-are can take effort.
+can take effort.
 
 One tool that can reduce that effort plus give us information about the
 application's behavior in production is Application Insights. With minimal
@@ -138,7 +139,7 @@ venerable dashboard. Often when we think of people doing operations, we
 imagine them sitting in front of large monitors intensely peering into
 dashboards full of graphs, charts and counters. In this module, we're not
 going to explore how you construct, edit and use dashboards. That is
-largely done by by pinning content from other places in the portal and then
+largely done by pinning content from other places in the portal and then
 moving them around as you see fit.
 
 Instead let's look at two dashboard features less commonly used that could
@@ -151,10 +152,10 @@ The two highlighted arrows allow you to upload and download JSON
 representations of dashboards.
 
 First let's start with the download functionality. If we click the down
-arrow, a JSON file which represents the current dashboard will be
-downloaded to your computer. If you'd like, try this now by logging into
-the portal, choosing "Dashboard" from the XXX menu, and then click the
-download arrow.
+arrow, a JSON file that represents the current dashboard will be downloaded
+to your computer. If you'd like, try this now by logging into the portal,
+choosing "Dashboard" from the product menu, and then click the download
+arrow.
 
 There are at least two things we can do with this file that you may find
 handy:

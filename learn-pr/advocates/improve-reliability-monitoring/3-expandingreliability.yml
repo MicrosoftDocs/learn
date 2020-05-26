@@ -23,7 +23,7 @@ quiz:
     - content: 'latency'
       isCorrect: true
       explanation: 'Correct, latency can be an important aspect of reliability to monitor.'
-    - content: 'consitency'
+    - content: 'consistency'
       isCorrect: false
       explanation: 'Consistency could be an important thing to monitor but it was not one of the items in this unit.'
     - content: 'repeatability'

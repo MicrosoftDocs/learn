@@ -15,10 +15,10 @@ Here's the big idea that can unlock the problem for us:
 
 Improving reliability in your organization is going to be an iterative
 process. In this unit we are going to look at a highly effective practice
-from the site reliability engineering world that help create and nurture
-the kind of feedback loop in an organization that helps it improve
-reliability. At the very least, it will spark concrete conversations in
-your organization about reliability based on objective data.
+from the site reliability engineering world to create and nurture the kind
+of feedback loop in an organization that helps it improve reliability. At
+the very least, it will spark concrete conversations in your organization
+about reliability based on objective data.
 
 Earlier in this module, we mentioned this as a definition for site
 reliability engineering:
@@ -126,7 +126,7 @@ The basic recipe for creating an SLO consists of these ingredients:
 
 -   **The time horizon–-** what's the time period we are going to consider
     for the objective: the last 10 minutes, during the last quarter, over a
-    rolling 30 day window, etc.? SLOs are more often than not specified
+    rolling 30-day window, etc.? SLOs are more often than not specified
     using a rolling window vs. a calendar unit like "a month" to allow us
     to compare data from different periods.
 
@@ -134,12 +134,12 @@ Putting these components together and including the important “where”
 information, a sample SLO might look like this:
 
 > “90% of HTTP requests as reported by the load balancer succeeded in the
-> last 30 day window.”
+> last 30-day window.”
 
 Similarly, a basic SLO measuring latency might look like this:
 
 > 90% of HTTP requests as reported by the client  returned in <20ms in the
-> last 30 day window.
+> last 30-day window.
 
 Start with simple, basic SLOs such as these when you introduce the practice
 into your organization. You can create more complex SLOs later if needed.

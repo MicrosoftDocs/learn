@@ -49,7 +49,7 @@ quiz:
       explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
     - content: 'all of the above'
       isCorrect: true
-      explanation: 'Correct, operational awareness requires and understanding of all of the socio-technical aspects.'
+      explanation: 'Correct, operational awareness requires an understanding of all of the socio-technical aspects.'
 
   - content: 'Which of these Azure offerings will **not** directly help us with our operational awareness?'
     choices:
@@ -58,7 +58,7 @@ quiz:
       explanation: 'Azure Monitor is a monitoring platform that has many tools to assist with operational awareness.'
     - content: 'Dashboards'
       isCorrect: false
-      explanation: 'Dashboards can help display information that assist with gaining operational awareness.'
+      explanation: 'Dashboards can help display information that assists with gaining operational awareness.'
     - content: 'Azure CosmosDB'
       isCorrect: true
       explanation: 'Correct, CosmosDB is an excellent place to store data, but it is not directly useful for operational awareness.'
