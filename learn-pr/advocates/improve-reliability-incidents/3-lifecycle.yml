@@ -48,5 +48,5 @@ quiz:
       isCorrect: false
       explanation: 'Analysis is the fourth phase of an incident.'
     - content: 'Readiness'
-      isCorrect: true
+      isCorrect: false
       explanation: 'Readiness is the fifth and final phase of an incident.'
