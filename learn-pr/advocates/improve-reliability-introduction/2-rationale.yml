@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: 'Security'
       isCorrect: false
-      explanation: 'While connected (both are customer expecations and emergent behaviors), reliability issues do not usually lead to a loss of security.'
+      explanation: 'While connected (both are customer expectations and emergent behaviors), reliability issues do not usually lead to a loss of security.'
     - content: 'Reputation'
       isCorrect: true
       explanation: 'Correct.'
