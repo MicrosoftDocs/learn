@@ -1,6 +1,6 @@
 DevOps practices involve frequent release cycles that benefit organizations
-and their end-users in many ways. Because individual deployments are
-smaller, they’re faster and less stressful, but things can still go wrong.
+and their end users in many ways. Because individual deployments are
+smaller, they are faster and less stressful, but things can still go wrong.
 To reduce the possibility of problems, you need to adopt a deployment
 strategy that best suits your organization’s needs.
 
@@ -69,7 +69,7 @@ separate versions of the same software, an old one and a new one
 that contains both the old software plus the new changes (features, etc.).
 The new changes are by default dormant and not visible until the "feature
 flag" for that change is activated by flipping the flag. That flag can take
-many forms including a line in a configuration file, a command line
+many forms including a line in a configuration file, a command-line
 argument, a special response from an online server the software consults
 upon start up, and so on.
 

@@ -25,7 +25,7 @@ quiz:
       explanation: 'Epic deployments usually take a considerable amount of time due to their size.'
     - content: 'it is repeatable'
       isCorrect: false
-      explanation: 'Because they are done so infrequently, there is usually only small amounts of effor put into repeatability.'
+      explanation: 'Because they are done so infrequently, there is usually only small amounts of effort put into repeatability.'
     - content: 'it is complex'
       isCorrect: true
       explanation: 'Because of the size and infrequency, they are often quite complex.'

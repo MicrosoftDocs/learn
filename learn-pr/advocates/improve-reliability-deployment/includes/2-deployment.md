@@ -39,7 +39,7 @@ through Build, Test, and Deployment Automation_ because it represents a
 massive (and massively disruptive) undertaking. Here’s an example of how it
 typically happens:
 
--   An organization develops a sales related application. This application
+-   An organization develops a sales-related application. This application
     is updated exactly two times per year.
 
 -   During these updates all the new features, bug fixes (large and small),

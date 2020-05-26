@@ -27,7 +27,7 @@ representation of sample steps in a simplified delivery pipeline.
 
 PLACEHOLDER slide 16: Continuous delivery pipeline
 
-Let's walk through this pipelines step-by-step.
+Let's walk through this pipeline step by step.
 
 -   An instance of the pipeline starts as code or infrastructure changes
     are committed to a code repository, perhaps using a pull request.
@@ -56,7 +56,7 @@ even human intervention.
 ## Tools for continuous integration and delivery: Azure Pipelines
 
 To use continuous integration and continuous delivery, you need the right
-tools. Azure Pipelines is part of Azure DevOps services that you can use to
+tools. Azure Pipelines is part of Azure DevOps Services that you can use to
 automate building and consistently testing your code. You can also use
 Azure Pipelines to deploy the code to Azure services, virtual machines, and
 other targets both in the cloud and on premises.
@@ -72,7 +72,7 @@ Azure Pipelines.
 
 Pipelines are defined using YAML syntax or via the Classic user interface
 in the Azure portal. When you use a YAML file, you can store that file
-alongside your code. Pipelines also provides templates that you can use to
+alongside your code. Pipelines also provide templates that you can use to
 easily create pipelines, for example, a pipeline that builds a Docker image
 or a Node.js project. You can also reuse an existing YAML file.
 
@@ -105,7 +105,7 @@ Pipelines are structured into:
 
 Every pipeline has at least one stage. Use multiple stages to organize the
 pipeline into major divisions and mark the points in your pipeline where
-you can pause and perform checks. 
+you can pause and perform checks.
 
 Pipelines can be as simple or as complex as desired. There are some
 excellent tutorials on pipeline construction and use on Microsoft Learn as
@@ -121,5 +121,5 @@ specific PR or code change. This can be tremendously useful either during
 an incident or afterwards during the post-incident review when you are
 trying to identify which change contributed to an issue. Some CI/CD systems
 (like Azure Pipelines) make it easy to do this, others require you manually
-construct a pipeline that propagates some sort of "build id" through all of
+construct a pipeline that propagates some sort of "build ID" through all of
 the stages.

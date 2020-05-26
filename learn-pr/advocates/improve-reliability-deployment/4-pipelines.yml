@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Commit, test, scan, and build are typical steps in a/an:?'
+  - content: 'Commit, test, scan, and build are typical steps in which of these things?'
     choices:
     - content: 'unit test'
       isCorrect: false
@@ -40,10 +40,10 @@ quiz:
       explanation: 'Correct.'
     - content: 'see which environment variables were active during a build'
       isCorrect: false
-      explanation: 'Environment traceability allows us to orrelate what is running in production with a specific build instance.'
+      explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
     - content: 'determine the origin of code in a source control system'
       isCorrect: false
-      explanation: 'Environment traceability allows us to orrelate what is running in production with a specific build instance.'
+      explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
     - content: 'find the staging environment used for testing the code'
       isCorrect: false
-      explanation: 'Environment traceability allows us to orrelate what is running in production with a specific build instance.'
+      explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'

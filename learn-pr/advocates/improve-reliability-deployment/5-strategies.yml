@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'A deployment strategy that involves making a duplicate of of the production environment, upgrading that environment, and then cutting completely over to the duplicate is:'
+  - content: 'A deployment strategy that involves making a duplicate of the production environment, upgrading that environment, and then cutting completely over to the duplicate is:'
     choices:
     - content: 'blue-green deployment'
       isCorrect: true
