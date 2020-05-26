@@ -27,7 +27,7 @@ The preceding command deletes the resource group containing the AKS and ACR reso
 
 ## Clean up Azure service principal
 
-The initial setup script created an Azure service principal, which allows Azure resources to authenticate to each other. 
+The initial setup script created an Azure service principal, which allows Azure resources to authenticate to each other.
 
 To remove the service principal, run the following script:
 
@@ -50,9 +50,23 @@ The preceding script:
 > [!NOTE]
 > More than one service principal is expected if the setup script has been run more than once. Each time the setup script is run, it creates a new service principal.
 
+## Revert .NET Core SDK changes
+
+The setup script installs a newer version of the .NET Core SDK alongside the Cloud Shell's default SDK version. You may choose to keep this configuration. To revert to your prior configuration, execute the following commands:
+
+```bash
+cp ~/.bashrc.bak.microservices-aspnet-core ~/.bashrc
+```
+
+The preceding command restores your prior *.bashrc* profile startup file from a backup saved by the setup script.
+
 [!INCLUDE[download files](../../includes/summary-download-clouddrive.md)]
+
+## Reset the Cloud Shell
+
+The scripts used in this module attempt to make temporary changes to your Cloud Shell preferences. To reset your Cloud Shell preferences to the default configuration, see the [Cloud Shell documentation on deleting personal data](https://docs.microsoft.com/azure/cloud-shell/troubleshooting#delete).
 
 ## Learn more with a Channel 9 video series
 
-- [.NET Core 101](https://channel9.msdn.com/Series/NET-Core-101/?WT.mc_id=Educationaldotnet-c9-scottha&azure-portal=true)
-- [ASP.NET Core 101](https://channel9.msdn.com/Series/ASPNET-Core-101/?WT.mc_id=Educationaspnet-c9-niner&azure-portal=true)
+* [.NET Core 101](https://channel9.msdn.com/Series/NET-Core-101/?WT.mc_id=Educationaldotnet-c9-scottha&azure-portal=true)
+* [ASP.NET Core 101](https://channel9.msdn.com/Series/ASPNET-Core-101/?WT.mc_id=Educationaspnet-c9-niner&azure-portal=true)

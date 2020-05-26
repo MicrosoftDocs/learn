@@ -14,11 +14,17 @@ Run the following command in the command shell:
 
 The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
 
+* Installs the required version of the .NET Core SDK.
 * Clones the *eShopOnContainers* app from a GitHub repository.
 * Provisions an AKS and Azure Container Registry (ACR) resource.
 * Launches the Cloud Shell editor to view the code.
-* Deploys the containers to AKS.
+* Deploys the containers to a fully managed Kubernetes service in Azure, known as AKS.
 * Displays connection information upon completion.
+
+> [!IMPORTANT]
+> The script installs the required version of the .NET Core SDK on top of the version pre-installed in the Azure Cloud Shell. To revert to the default configuration in Azure Cloud Shell, see the instructions in the Summary unit.
+
+The app the script deploys is a smaller, modified version of the [eShop on Containers reference app](https://github.com/dotnet-architecture/eshoponcontainers). While the script is running, proceed to the next unit to review the *eShopOnContainers* architecture.
 
 > [!NOTE]
 > Non-blocking warnings are expected in the deployment process. In the event of an unexpected exception, you may reset any changes made by the script by executing the following command:
@@ -28,5 +34,3 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 >   rm -rf ~/clouddrive/aspnet-learn && \
 >   az group delete --name eshop-learn-rg --yes
 > ```
-
-The app the script deploys is a smaller, modified version of the [eShop on Containers reference app](https://github.com/dotnet-architecture/eshoponcontainers). While the script is running, proceed to the next unit to review the *eShopOnContainers* architecture.

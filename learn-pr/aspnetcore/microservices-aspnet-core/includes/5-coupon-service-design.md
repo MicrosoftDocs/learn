@@ -1,4 +1,4 @@
-In this unit, you complete the *Coupon.API* project. You will then run a script to generate changes to the *WebSPA* HTML, as well as generate and modify Helm charts to define the kubernetes deployment.
+In this unit, you complete the *Coupon.API* project. You will then run a script to generate changes to the *WebSPA* HTML, as well as generate and modify Helm charts to define the Kubernetes deployment.
 
 ## Business requirements
 
@@ -39,8 +39,12 @@ Microservice architectures are technology agnostic, thus giving development team
 | MongoDB | The NoSQL database that stores the coupons and their utilization data. In a real-world scenario, it's common for services to use a managed database like [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db) instead of running them in a container. |
 | Docker | The web API project and the MongoDB database, along with their dependencies, are packaged into respective container images using Docker. |
 
-## Integration with other services
+## Integration with Order
 
-**%TODO%** - What's going on with Orders and Basket. And Identity.
+%TODO% - Flesh out the following, maybe a diagram. 😊
+
+1. Coupon service checks to see if coupon is valid
+1. When order is processed, raises event 
+1. Coupon service catches event, marks coupon redeemed
 
 In the next unit, you'll complete the coupon service code. You'll also make adjustments to the files that define the AKS deployment.
