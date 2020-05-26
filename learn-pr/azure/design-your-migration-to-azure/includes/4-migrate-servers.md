@@ -20,11 +20,11 @@ Once you’re ready for the production migration, select **Migrate** from the re
 
 Now it will run through the production migration process and you can check the status as it validates the pre-requisites, prepares for migration, creates the Azure VM and starts the Azure VM.
 
-**Post-migration steps**
+## Post-migration steps
 After the migration has taken place, review the security settings of the virtual machine after the migration. Restrict network access for unused services by using network security groups. Deploy Azure Disk Encryption to secure the disks from data theft and unauthorized access.
 
 Consider improving the resilience of the migrated machines by:
-•	Adding a backup schedule that uses Azure Backup.
-•	Replicating the machines to a secondary region using Azure Site Recovery.
+- Adding a backup schedule that uses Azure Backup.
+- Replicating the machines to a secondary region using Azure Site Recovery.
 
 Complete clean-up tasks for the remaining on-premises servers. Such tasks may include removing the servers from local backups and removing their raw disk files from storage-area network (SAN) storage to free up space. Update documentation related to the migrated servers to reflect their new IP addresses and locations in Azure.
