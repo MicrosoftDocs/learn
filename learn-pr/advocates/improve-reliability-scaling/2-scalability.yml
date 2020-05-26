@@ -27,7 +27,7 @@ quiz:
       isCorrect: true
       explanation: 'Correct.'
     - content: 'easier to troubleshoot'
-      isCorrect: true
+      isCorrect: false
       explanation: 'Because (especially when scaling out) there are more moving parts, it may not be easier to troubleshoot.'
 
   - content: 'Making your application or service more scalable can also make it:'
@@ -39,7 +39,7 @@ quiz:
       isCorrect: true
       explanation: 'Correct.'
     - content: 'easier to troubleshoot'
-      isCorrect: true
+      isCorrect: false
       explanation: 'Because (especially when scaling out) there are more moving parts, it may not be easier to troubleshoot.'
 
   - content: 'Adding more components or resources to spread the load over a distributed architecture is referred to as:'
