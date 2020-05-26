@@ -9,7 +9,7 @@ reaction? We know from good research in the field that recovery time is one
 of the indicators of a high performing organization. Having a good process
 for incident response is crucial for reducing this recovery period.
 
-In this module we've looked at the stages of an incident and explored some
+In this module, we've looked at the stages of an incident and explored some
 of the key components of a plan for incident response for each of those
 stages. We've discussed the importance of being able to track incidents
 well and ways to automate that process using tools provided by Azure. We

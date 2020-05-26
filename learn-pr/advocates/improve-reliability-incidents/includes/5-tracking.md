@@ -123,7 +123,7 @@ PLACEHOLDER logic app overview
 The first step is the handling of a trigger, that HTTP request we
 mentioned. An HTTP POST request is made to our logic app that contains a
 JSON payload with information about the incident we wish to declare. We
-parse that payload and send back an acknowledgement we received it:
+parse that payload and send back an acknowledgment we received it:
 
 PLACEHOLDER for http section
 

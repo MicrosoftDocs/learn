@@ -35,9 +35,9 @@ quiz:
 
   - content: 'When creating a conversation bridge to communicate about an incident, why is it important to carve out a unique channel for it?'
     choices:
-    - content: 'this will make sure we are HIPAA compliant'
+    - content: 'this will make sure we are HIPAA-compliant'
       isCorrect: false
-      explanation: 'This is not a HIPAA requirement (and it does not related to keeping irrelvant dicussion out of the channel)'
+      explanation: 'This is not a HIPAA requirement (and it does not relate to keeping irrelvant dicussion out of the channel)'
     - content: 'it will keep irrelevant discussion out of the channel making it easier to later use the data for post-incident review'
       isCorrect: true
       explanation: 'Correct.'

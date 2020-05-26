@@ -1,7 +1,7 @@
 Dividing the incident response lifecycle into five phases as you’ve seen in
 this module helps you to understand the process, but the phases aren’t
 always as distinct as they appear in the diagram. In particular, the line
-between the response and remediation phases often begin to blur. This is
+between the response and remediation phases often begins to blur. This is
 especially true when actions intended to mitigate or improve the situation
 have the opposite effect. In this case, response and remediation tend to
 overlap or go back and forth between the two.
@@ -68,7 +68,7 @@ them with consistent updates, they are likely to come around, asking for a
 status update. They have every right to this information, but you need a
 better way to make them aware of the issue and what is being done about it.
 
-You need to be clear about acknowledgement to your internal teams. Be clear
+You need to be clear about acknowledgment to your internal teams. Be clear
 in presenting what you know and what is being done and set expectations in
 terms of when they will hear back from you.
 

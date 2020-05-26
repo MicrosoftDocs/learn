@@ -44,7 +44,7 @@ logically follow one after the other in a cycle that returns back to the
 beginning. Each time your go around this cycle (and you will do so numerous
 times), if handled correctly it is possible to return to the beginning with
 greater insight into your systems. With some intentional work, you can also
-can be better prepared to respond quickly and effectively the next time an
+be better prepared to respond quickly and effectively the next time an
 incident occurs.
 
 ## Phases of an incident

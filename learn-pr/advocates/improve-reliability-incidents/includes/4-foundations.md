@@ -26,7 +26,7 @@ that’s built on a solid foundation.
 
 The purpose of a foundation is to hold up and hold together the structure
 above it. In a separate intro module to this learning path, we discussed
-the idea that reliability work is is built on the foundational level of
+the idea that reliability work is built on the foundational level of
 monitoring and that incident response rests just above that in the
 hierarchy.
 

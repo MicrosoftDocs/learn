@@ -43,4 +43,4 @@ quiz:
       explanation: 'This is the definition of a "medium" performer according to the _State of DevOps_ report.'
     - content: 'in less than 1 week or a month'
       isCorrect: false
-      explanation: 'his is the definition of a "low" performer according to the _State of DevOps_ report.'
+      explanation: 'This is the definition of a "low" performer according to the _State of DevOps_ report.'

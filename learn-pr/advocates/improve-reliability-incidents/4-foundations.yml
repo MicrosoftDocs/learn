@@ -42,14 +42,14 @@ quiz:
     - content: 'creates a verbatim transcript for a call bridge'
       isCorrect: false
       explanation: 'The scribe captures all the data possible – not just what team members are doing but also what they’re saying and even what they’re feeling or experiencing.'
-    - content: 'keps track of the metrics in the monitoring system that are important'
+    - content: 'keeps track of the metrics in the monitoring system that are important'
       isCorrect: false
       explanation: 'This is not the role of the scribe during incident response.'
     - content: 'documents the conversation around incident in as much detail as possible'
       isCorrect: true
       explanation: 'Correct.'
 
-  - content: 'Do you need all of the roles mentioned in this unit to do successfil incident response?'
+  - content: 'Do you need all of the roles mentioned in this unit to do successful incident response?'
     choices:
     - content: 'Yes'
       isCorrect: false
