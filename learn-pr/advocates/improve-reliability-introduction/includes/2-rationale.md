@@ -13,13 +13,13 @@ issues can cause you and your organization to lose:
 
 -   Money: lost business revenues, lost worker productivity, overtime pay
 
--   Time: outages are unplanned work that take up time you had planned for
+-   Time: outages are unplanned work that takes up time you had planned for
     other things
 
 -   Reputation: customers are quick to lose patience and switch to a
     competitor when a service is seen to be flaky or slow
 
--   Health: interrupted sleep, family and vacation time is disturbed, no
+-   Health: interrupted sleep, family and vacation time are disturbed, no
     time for self-care, the stress of an unpleasant job and the inability
     to ever get caught up take a physical and psychological toll
 
