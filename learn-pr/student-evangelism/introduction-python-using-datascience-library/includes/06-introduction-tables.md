@@ -1,17 +1,3 @@
-``` python
-
-from datascience import *
-path_data = '../../../../data/'
-import numpy as np
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-
-cones = Table.read_table(path_data + 'cones.csv')
-nba = Table.read_table(path_data + 'nba_salaries.csv').relabeled(3, 'Salary')
-movies = Table.read_table(path_data + 'movies_by_year.csv')
-```
-
 We can now apply Python to analyze data. We will work with data stored
 in Table structures.
 
@@ -32,6 +18,7 @@ here we will just work with it. First, let's take a look at it.
 cones
 ```
 
+``` output
 | Flavor     | Color       | Price |
 |------------|-------------|-------|
 | strawberry | pink        | 3.55  |
@@ -40,6 +27,7 @@ cones
 | strawberry | pink        | 5.25  |
 | chocolate  | dark brown  | 5.25  |
 | bubblegum  | pink        | 4.75  |
+```
 
 The table has six rows. Each row corresponds to one ice cream cone. The
 ice cream cones are the *individuals*.
@@ -61,12 +49,14 @@ can use the table method `show`.
 cones.show(2)
 ```
 
+``` output
 | Flavor     | Color       | Price |
 |------------|-------------|-------|
 | strawberry | pink        | 3.55  |
 | chocolate  | light brown | 4.75  |
 
 ... (4 rows omitted)
+```
 
 You can replace 2 by any number of rows. If you ask for more than six,
 you will only get six, because `cones` only has six rows.
@@ -80,6 +70,7 @@ columns.
 cones.select('Flavor')
 ```
 
+``` output
 | Flavor     |
 |------------|
 | strawberry |
@@ -88,6 +79,7 @@ cones.select('Flavor')
 | strawberry |
 | chocolate  |
 | bubblegum  |
+```
 
 This leaves the original table unchanged.
 
@@ -95,14 +87,16 @@ This leaves the original table unchanged.
 cones
 ```
 
-|Flavor|Color|Price|
-|--- |--- |--- |
-|strawberry|pink|3.55|
-|chocolate|light brown|4.75|
-|chocolate|dark brown|5.25|
-|strawberry|pink|5.25|
-|chocolate|dark brown|5.25|
-|bubblegum|pink|4.75|
+``` output
+| Flavor     | Color       | Price |
+|------------|-------------|-------|
+| strawberry | pink        | 3.55  |
+| chocolate  | light brown | 4.75  |
+| chocolate  | dark brown  | 5.25  |
+| strawberry | pink        | 5.25  |
+| chocolate  | dark brown  | 5.25  |
+| bubblegum  | pink        | 4.75  |
+```
 
 
 You can select more than one column, by separating the column labels by
@@ -112,6 +106,7 @@ commas.
 cones.select('Flavor', 'Price')
 ```
 
+``` output
 | Flavor     | Color       | Price |
 |------------|-------------|-------|
 | strawberry | pink        | 3.55  |
@@ -120,6 +115,7 @@ cones.select('Flavor', 'Price')
 | strawberry | pink        | 5.25  |
 | chocolate  | dark brown  | 5.25  |
 | bubblegum  | pink        | 4.75  |
+```
 
 You can also *drop* columns you don't want. The table above can be
 created by dropping the `Color` column.
@@ -128,6 +124,7 @@ created by dropping the `Color` column.
 cones.drop('Color')
 ```
 
+``` output
 | Flavor     | Price |
 |------------|-------|
 | strawberry | 3.55  |
@@ -136,6 +133,7 @@ cones.drop('Color')
 | strawberry | 5.25  |
 | chocolate  | 5.25  |
 | bubblegum  | 4.75  |
+```
 
 You can name this new table and look at it again by just typing its
 name.
@@ -146,6 +144,7 @@ no_colors = cones.drop('Color')
 no_colors
 ```
 
+``` output
 | Flavor     | Price |
 |------------|-------|
 | strawberry | 3.55  |
@@ -154,13 +153,14 @@ no_colors
 | strawberry | 5.25  |
 | chocolate  | 5.25  |
 | bubblegum  | 4.75  |
+```
 
 Like `select`, the `drop` method creates a smaller table and leaves the
 original table unchanged. In order to explore your data, you can create
 any number of smaller tables by using choosing or dropping columns. It
 will do no harm to your original data table.
 
-### Sorting Rows
+### Sorting rows
 
 The `sort` method creates a new table by arranging the rows of the
 original table in ascending order of the values in the specified column.
@@ -171,6 +171,7 @@ of the cones.
 cones.sort('Price')
 ```
 
+``` output
 | Flavor     | Color       | Price |
 |------------|-------------|-------|
 | strawberry | pink        | 3.55  |
@@ -179,7 +180,7 @@ cones.sort('Price')
 | chocolate  | dark brown  | 5.25  |
 | strawberry | pink        | 5.25  |
 | chocolate  | dark brown  | 5.25  |
-
+```
 
 To sort in descending order, you can use an *optional* argument to
 `sort`. As the name implies, optional arguments don't have to be used,
@@ -194,6 +195,7 @@ specified column. To sort in decreasing order, use the optional argument
 cones.sort('Price', descending=True)
 ```
 
+``` output
 | Flavor     | Color       | Price |
 |------------|-------------|-------|
 | chocolate  | dark brown  | 5.25  |
@@ -202,6 +204,7 @@ cones.sort('Price', descending=True)
 | bubblegum  | pink        | 4.75  |
 | chocolate  | light brown | 4.75  |
 | strawberry | pink        | 3.55  |
+```
 
 Like `select` and `drop`, the `sort` method leaves the original table
 unchanged.
@@ -221,11 +224,13 @@ corresponding to chocolate cones.
 cones.where('Flavor', 'chocolate')
 ```
 
+``` output
 |Flavor   |Color      |Price|
 |---      |---        |---  |
 |chocolate|light brown|4.75 |
 |chocolate|dark brown |5.25 |
 |chocolate|dark brown |5.25 |
+```
 
 The arguments, separated by a comma, are the label of the column and the
 value we are looking for in that column. The `where` method can also be
@@ -240,14 +245,16 @@ where the flavor is `Chocolate`.
 cones.where('Flavor', 'Chocolate')
 ```
 
+``` output
 | Flavor | Color | Price |
 |--------|-------|-------|
 |        |       |       |
+```
 
 Like all the other table methods in this section, `where` leaves the
 original table unchanged.
 
-### Example: Salaries in the NBA
+### Example: salaries in the NBA
 
 "The NBA is the highest paying professional sports league in the world,"
 [reported
@@ -277,6 +284,7 @@ Hawks, had a salary of almost $\$18.7$ million in 2015-2016.
 nba
 ```
 
+``` output
 | Player           | Position | Team          | Salary  |
 |------------------|----------|---------------|---------|
 | Paul Millsap     | PF       | Atlanta Hawks | 18.6717 |
@@ -291,6 +299,7 @@ nba
 | Tim Hardaway Jr. | SG       | Atlanta Hawks | 1.30452 |
 
 ... (407 rows omitted)
+```
 
 Fans of Stephen Curry can find his row by using `where`.
 
@@ -298,9 +307,11 @@ Fans of Stephen Curry can find his row by using `where`.
 nba.where('Player', 'Stephen Curry')
 ```
 
+``` output
 | Player        | Position | Team                  | Salary  |
 |---------------|----------|-----------------------|---------|
 | Stephen Curry | PG       | Golden State Warriors | 11.3708 |
+```
 
 We can also create a new table called `warriors` consisting of just the
 data for the Golden State Warriors.
@@ -310,6 +321,7 @@ warriors = nba.where('Team', 'Golden State Warriors')
 warriors
 ```
 
+``` output
 | Player            | Position | Team                  | Salary  |
 |-------------------|----------|-----------------------|---------|
 | Klay Thompson     | SG       | Golden State Warriors | 15.501  |
@@ -324,6 +336,7 @@ warriors
 | Leandro Barbosa   | SG       | Golden State Warriors | 2.5     |
 
 ... (4 rows omitted)
+```
 
 By default, the first 10 lines of a table are displayed. You can use
 `show` to display more or fewer. To display the entire table, use `show`
@@ -333,6 +346,7 @@ with no argument in the parentheses.
 warriors.show()
 ```
 
+``` output
 | Player            | Position | Team                  | Salary   |
 |-------------------|----------|-----------------------|----------|
 | Klay Thompson     | SG       | Golden State Warriors | 15.501   |
@@ -349,6 +363,7 @@ warriors.show()
 | Brandon Rush      | SF       | Golden State Warriors | 1.27096  |
 | Kevon Looney      | SF       | Golden State Warriors | 1.13196  |
 | Anderson Varejao  | PF       | Golden State Warriors | 0.289755 |
+```
 
 The `nba` table is sorted in alphabetical order of the team names. To
 see how the players were paid in 2015-2016, it is useful to sort the
@@ -358,7 +373,9 @@ order.
 ``` python
 nba.sort('Salary')
 
-```
+``` 
+
+``` output
 | Player                 | Position | Team                 | Salary   |
 |------------------------|----------|----------------------|----------|
 | Thanasis Antetokounmpo | SF       | New York Knicks      | 0.030888 |
@@ -373,6 +390,7 @@ nba.sort('Salary')
 | Jeff Ayres             | PF       | Los Angeles Clippers | 0.111444 |
 
 ... (407 rows omitted)
+```
 
 These figures are somewhat difficult to compare as some of these players
 changed teams during the season and received salaries from more than one
@@ -386,6 +404,7 @@ we can sort in descending order of salary and look at the top few rows.
 nba.sort('Salary', descending=True)
 ```
 
+``` output
 | Player          | Position | Team                  | Salary  |
 |-----------------|----------|-----------------------|---------|
 | Kobe Bryant     | SF       | Los Angeles Lakers    | 25      |
@@ -400,6 +419,8 @@ nba.sort('Salary', descending=True)
 | Dwyane Wade     | SG       | Miami Heat            | 20      |
 
 ... (407 rows omitted)
+```
+
 Kobe Bryant, since retired, was the highest earning NBA player in
 2015-2016.
 

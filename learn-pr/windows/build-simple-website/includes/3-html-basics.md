@@ -2,11 +2,11 @@ At the moment we have an empty HTML file. Let's add some code! The goal is to us
 
 ## Using autocomplete
 
-Visual Studio Code (VS Code) provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting. VS Code also includes great Emmet support (from the documentation on Emmet in Visual Studio Code).
+Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting. Visual Studio Code also includes great Emmet support (from the documentation on Emmet in Visual Studio Code).
 
 In **Visual Studio Code**, open `index.html` by selecting the `index.html` file. Select the `index.html` page and type `html:5`, then hit Enter (Return).
 
-![Screenshot of VS Code HTML5 Emmet entry](../media/vs-code-html-emmet.png)
+![Screenshot of Visual Studio Code HTML5 Emmet entry](../media/vs-code-html-emmet.png)
 
 Edit your code so that it resembles the following, then save the file with Control+S (Windows) or Command+S (macOS).
 
@@ -24,7 +24,7 @@ Edit your code so that it resembles the following, then save the file with Contr
 ```
 
 > [!TIP]
-> You can click and drag to select a line, then use Command + Tab or Shift + Command + Tab to adjust the line indentation. In VS Code, the **Selection** menu has a list of helpful commands for navigating your code. For quick navigation, the left and right arrow keys are your friend.
+> You can click and drag to select a line, then use Command + Tab or Shift + Command + Tab to adjust the line indentation. In Visual Studio Code, the **Selection** menu has a list of helpful commands for navigating your code. For quick navigation, the left and right arrow keys are your friend.
 
 There have been different versions of HTML. The document type `<!DOCTYPE html>` indicates this is HTML5 code.
 
@@ -90,9 +90,9 @@ Each list item `<li>` element is grouped into an unordered list `<ul>`.
 
 Like CSS, we could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a popup alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
 
-In **VS Code**, type `script:src` and press Enter (Return).
+In **Visual Studio Code**, type `script:src` and press Enter (Return).
 
-![Screenshot of VS Code script:src Emmet entry](../media/vs-code-script-src-emmet.png)
+![Screenshot of Visual Studio Code script:src Emmet entry](../media/vs-code-script-src-emmet.png)
 
 Adjust your code to look like the following.
 
@@ -139,9 +139,9 @@ Remember to save your changes with the keyboard shortcut Control+S (Windows) or 
 
 You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path. For example, the path might look similar to the following: *file:///Users/username/Desktop/public/index.html*.
 
-To preview using **VS Code**, select `index.html` and select **Open In Default Browser** or use the keyboard shortcut Alt+B.
+To preview using **Visual Studio Code**, select `index.html` and select **Open In Default Browser** or use the keyboard shortcut Alt+B.
 
-![Screenshot of Open in Browser in VS Code](../media/vs-code-open-in-browser.png)
+![Screenshot of Open in Browser in Visual Studio Code](../media/vs-code-open-in-browser.png)
 
 > [!IMPORTANT]
 > If you're having trouble, make sure you're directly selecting on the filename icon or text.

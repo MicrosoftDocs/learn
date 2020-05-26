@@ -10,9 +10,9 @@ In this unit, you'll modify the code and redeploy the website.
 
 Let's start by modifying the code, so that it calculates a whole number of days:
 
-1. Start VS Code if it is not already running. 
+1. Start Visual Studio Code if it is not already running. 
 1. If the **countdownExpressApp** folder is not already open, then on the **File** menu, select **Open Folder...** and then browse to the folder. 
-1. In the VS Code Explorer window, expand **routes**, and then select **index.js**. 
+1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. 
 1. Locate this line of code:
 
     ```JavaScript
@@ -63,7 +63,7 @@ You must also alter the view slightly:
 
 Your changes are complete. Let's deploy the finished website to Azure:
 
-1. In VS Code, in the **Azure** Explorer, right-click the webapp you created, and then select **Deploy to Web App**.
+1. In Visual Studio Code, in the **Azure** Explorer, right-click the webapp you created, and then select **Deploy to Web App**.
 1. Select the **countdownExpressApp** folder, and then select **Deploy**.
 1. When the deployment is complete, select **Browse Website**, and then select **Open Link**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
 
@@ -83,9 +83,9 @@ In this unit, you'll modify the code and redeploy the website.
 
 Let's start by modifying the code, so that it calculates a whole number of days:
 
-1. Start VS Code if it is not already running. 
+1. Start Visual Studio Code if it is not already running. 
 1. If the **countdownExpressApp** folder is not already open, then in Windows on the **File** menu, select **Open Folder...** and then browse to the folder and select **Select Folder**.  Or in macOS, on the **File** menu, select **Open...** and browse to the folder, then select **Open**.
-1. In the VS Code Explorer window, select **app.py**. 
+1. In the Visual Studio Code Explorer window, select **app.py**. 
 1. Locate this line of code:
 
     ```python
@@ -150,13 +150,13 @@ python3 -m flask run
 ```
 
 1. Open a web browser to http://127.0.0.1:5000 and confirm that the changes function correctly.
-1. In the VS Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
+1. In the Visual Studio Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
 
 ## Publish the new version
 
 Your changes are complete. Let's deploy the finished website to Azure:
 
-1. In VS Code, in the **Azure** Explorer, right-click the webapp you created, and then select **Deploy to Web App**.
+1. In Visual Studio Code, in the **Azure** Explorer, right-click the webapp you created, and then select **Deploy to Web App**.
 1. Select the **countdownFlaskApp** folder, and then select **Deploy**.
 1. When the deployment is complete, select **Browse Website**, and then select **Open Link**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
 

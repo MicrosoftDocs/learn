@@ -45,24 +45,24 @@ Razor is an ASP.NET syntax used to create dynamic web pages with C#. When a serv
 
 Razor uses `@` directives to tell ASP.NET how to process a page.
 
-For example, take a look at the code in the `Contact.cshtml` page:
+For example, take a look at the code in the `Privacy.cshtml` page:
 
 ```aspx-csharp
 @page
-@model ContactModel
+@model PrivacyModel
 @{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Privacy Policy";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
-...
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
 ```
 
 - The `@page` directive is telling ASP.NET to process this file as a Razor page.
-- The `@model` directive is telling ASP.NET to tie this Razor page with a C# class called `ContactModel`.
+- The `@model` directive is telling ASP.NET to tie this Razor page with a C# class called `PrivacyModel`.
 
-Razor also uses the `@` symbol to transition between code and HTML. If you look at the snippet above, you'll notice `@{ ... }`. This is a **Razor code block**. It's code, which is _executed but not rendered_.
+Razor also uses the `@` symbol to transition between code and HTML. If you look at the preceding snippet, you'll notice `@{ ... }`. This is a **Razor code block**. It's code that is _executed but not rendered_.
 
-To render the output of a code statement, we use the `@` in front of a C# expression. We have two examples in the code block above in the `<h2>` and `<h3>` tags.
+To render the output of a code statement, use the `@` in front of a C# expression. There's one example in the preceding code block in the `<h1>` tag.
 
 Creating and publishing a website are just the first steps in creating a good website. Once you start to add content, you'll need to update your site. Once you've initially published your site to Azure, you can update at any time.

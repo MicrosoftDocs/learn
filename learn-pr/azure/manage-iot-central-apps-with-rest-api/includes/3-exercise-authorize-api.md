@@ -30,7 +30,7 @@ The following steps create an IoT Central application and generate an API token 
 1. Run the following command in the Cloud Shell to create an IoT Central application in the sandbox:
 
     ```azurecli
-    az iotcentral app create \
+    az iot central app create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --name $APP_NAME --sku S1 --location centralus \
     --subdomain $APP_NAME --template iotc-pnp-preview@1.0.0 \

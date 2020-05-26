@@ -45,7 +45,7 @@ When you want to create a skeleton webapp in Express.js, as a starting point for
 
 Visual Studio Code is a free code editor for Windows, macOS, and Linux. It has support for JavaScript, TypeScript, and Node.js out-of-the-box, and you can install many extensions for other languages and runtimes. 
 
-You can use VS Code as your editor regardless of the languages, frameworks, operating systems, and deployment mechanisms you use. There is also an extension for Azure App Service, which you will use later in this module to create webapps and deploy code.
+You can use Visual Studio Code as your editor regardless of the languages, frameworks, operating systems, and deployment mechanisms you use. There is also an extension for Azure App Service, which you will use later in this module to create webapps and deploy code.
 
 ## Use Express Generator to create a webapp scaffold
 
@@ -77,7 +77,7 @@ Flask is a "micro" framework that allows Python developers to quickly build web 
 
 Visual Studio Code is a free code editor for Windows, macOS, and Linux. It has support for JavaScript, TypeScript, and Node.js out-of-the-box, and you can install many extensions for other languages and runtimes. When you create your first Python code file with a .py file extension, Visual Studio Code will ask if you want to install the Python extension which provides many integrated features for managing project features via the command pallete, debugging, and help from directly within the code editor.
 
-You can use VS Code as your editor regardless of the languages, frameworks, operating systems, and deployment mechanisms you use. There is also an extension for Azure App Service, which you will use later in this module to create webapps and deploy code.
+You can use Visual Studio Code as your editor regardless of the languages, frameworks, operating systems, and deployment mechanisms you use. There is also an extension for Azure App Service, which you will use later in this module to create webapps and deploy code.
 
 
 ::: zone-end
