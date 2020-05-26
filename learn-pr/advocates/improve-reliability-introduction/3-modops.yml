@@ -60,7 +60,7 @@ quiz:
       isCorrect: true
       explanation: 'Correct.'
 
- - content: 'Which of these modern operations practices focuses primarily on reliability?'
+  - content: 'Which of these modern operations practices focuses primarily on reliability?'
     choices:
     - content: 'DevOps'
       isCorrect: false

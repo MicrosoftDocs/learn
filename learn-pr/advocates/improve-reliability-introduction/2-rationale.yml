@@ -30,5 +30,5 @@ quiz:
       isCorrect: false
       explanation: 'Having an unreliable system can impact a brand, but it does cause you to lose it.'
     - content: 'Innovation'
-      isCorrect: true
+      isCorrect: false
       explanation: 'It is hard to innovate if you are experiencing reliability problems but it is not a direct loss.'
