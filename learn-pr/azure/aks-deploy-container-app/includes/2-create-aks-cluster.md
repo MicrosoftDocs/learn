@@ -23,9 +23,9 @@ This is the most common architectural pattern. While this is the easiest archite
 
 That's because, if the master node goes unavailable for any reason, no other interaction can happen with the cluster. Even by you as operator, or by any workloads that use Kubernetes' APIs to communicate until, at least, the API server is back online.
 
-Despite being less available than others, this architecture should be enough for most situations. Since the odds of the core management services become unavailable are several times less than a Worker Node going offline.
+Despite being less available than others, this architecture should be enough for most situations. Since the odds of the core management services become unavailable are several times less than a Worker Node going offline, because the control plane nodes are subject to fewer alterations than worker nodes.
 
-Because the control plane nodes are subject to fewer alterations than worker nodes. However, if you are dealing with a production like scenario, then this architecture might not be the best solution.
+However, if you are dealing with a production like scenario, then this architecture might not be the best solution.
 
 ### Single master, single worker
 
@@ -33,9 +33,11 @@ A variant of the previous architecture, mostly used as developer environment on 
 
 ### Multiple master, several workers
 
-This is the most used architecture for production clusters. Deploying multiple master nodes and multiple worker nodes allows for a high availability even when a master node is down. For this purpose, master nodes should be deployed in odd numbers, so quorum can be maintained in case one or more masters fail, because Kubernetes holds elections for the master manager node in order to avoid conflicts.
+This is the most used architecture for production clusters. Deploying multiple master nodes and multiple worker nodes allows for a high availability even when a master node is down.
 
-Despite this difference, all other worker nodes are going to be able to communicate with any master using the API server through a Load Balancer. This architecture is more complex to be deployed, but is the recommended configuration for most production clusters.
+For this purpose, master nodes should be deployed in odd numbers, so quorum can be maintained in case one or more masters fail.
+
+Despite this difference, all other worker nodes can communicate with any master using the API server through a Load Balancer. This architecture is more complex to be deployed, but is the recommended configuration for most production clusters.
 
 ## AKS Concepts
 
@@ -43,33 +45,29 @@ When you create a new AKS cluster, you'll be presented with several different op
 
 ### Kubernetes version
 
-Since Kubernetes is an Open-Source Project, it's constantly evolving. Therefore, it's versions bear differences between each other, the best practice is to use the __default__ version for most of the common scenarios.
+Since Kubernetes is an Open-Source Project, it's constantly evolving. So, its versions bear differences between each other, the best practice is to use the __default__ version for most of the common scenarios.
 
 ### Node Count
 
-Kubernetes is a cluster composed of a __master__ node and several __worker__ nodes. The __Node Count__ is the amount of worker nodes your cluster will have.
+Kubernetes is a cluster composed of a __master__ node and several __worker__ nodes. The __Node Count__ is the number of worker nodes your cluster will have.
 
 You can change this later in the cluster's configuration panel. It's also a best practice to keep this number as low as possible to avoid unnecessary costs and unused compute power.
 
 ### Node Pools
 
-_Node Pools_ is the name given to the configuration needed to create multiple node types within the same cluster. This configuration is provided through the __VM Scale Sets__ setting – which you'll see later in the next exercise.
+_Node Pools_ is the name given to the configuration needed to create multiple node types within the same cluster. This configuration is provided through the __virtual machine scale sets__ configuration – which you'll see later in the next exercise.
 
-Each node is put into a "Node Pool", this means you can have several nodes with different sizes in different Node Pools across your cluster. You can even tell applications and pods to spin up in nodes according to their characteristics. We call this _Node Affinity_. <!-- Think about how this can relate to our scenario, example: Video editing company that uses CPU mostly but when rendering uses GPU -->
+Each node is put into a "Node Pool", this means you can have several nodes with different sizes in different Node Pools across your cluster. You can even tell applications and pods to spin up in nodes according to their characteristics. We call this _Node Affinity_.
 
-A common usage of this feature is, for instance, to have CPU-intensive nodes and GPU-intensive nodes in separate node pools so future applications which use more CPU – like processing spreadsheets – and applications which use intense GPU power – like Machine Learning models – can be deployed to separate nodes based on the _affinity_ they have with the desired resource.
+A common usage of this feature is, for instance, to have CPU-intensive nodes and GPU-intensive nodes in separate node pools so future applications that use more CPU – like processing spreadsheets – and applications that use intense GPU power – like rendering – can be deployed to separate nodes based on the _affinity_ they have with the desired resource.
 
 ### Automatic Routing
 
-AKS allows you to enable what is called HTTP Application Routing. This add-on makes it easy to access applications deployed to the cluster through the automatic creation of an Ingress Controller.
+AKS allows you to enable what is called HTTP Application Routing. This add-on makes it easy to access applications deployed to the cluster through the automatic creation of an Ingress Controller. What it does is to provide an easy and simple way for you to deploy and expose your applications to the world without the need to configure network-related services.
 
-In short, it creates a reverse-proxy NGINX server that allows for all the requests to be served from a single DNS output automatically. This means that you don't have to create an ingress every time a new service is deployed, the ingress controller will take care of it.
-
-As soon as a new ingress is deployed to the cluster, the Ingress Controller will create a new record on an Azure-managed DNS Zone and will link it to an existing Load Balancer. This allows for easy access to the resource through the Internet without the need of additional configuration.
+In short, it creates a reverse-proxy NGINX server that allows for all the requests to be served from a single DNS output automatically. This means you don't have to create an ingress every time a new service is deployed, the ingress controller will take care of it. As soon as a new ingress is deployed to the cluster, the Ingress Controller will create a new record on an Azure-managed DNS Zone and will link it to an existing Load Balancer. This allows for easy access to the resource through the Internet without the need of additional configuration.
 
 Despite the advantages, the __HTTP Application Routing__ is better suited to more basic clusters because it doesn't provide the amount of customization needed for a more complex configuration. If you are planning to deal with more complex clusters, there are more suited options like the official Kubernetes NGINX Ingress Controller.
-
-<!-- Explain this a little better. How the learner will understand how pods work, why we need it (pods are private, local only, etc) -->
 
 ### Private clusters
 
@@ -77,6 +75,6 @@ __Private clusters__ allow you to keep your Kubernetes API internal only. This m
 
 ### Network policies
 
-__Network Policies__ allow you to customize how your cluster's data will flow between all the workloads. By default, all internal communications are allowed. However, it's possible to define the cluster to use other resource policies you're able to customize better. In this module we'll use the default network policy.
+__Network Policies__ allow you to customize how your cluster's data will flow between all the workloads. By default, all internal communications are allowed. But it's possible to define the cluster to use other resource policies you can customize better. In this module, we'll use the default network policy.
 
-Now that you have seem all the configurations you're going to need to spin up the cluster for your company
+Now that you've seem all the configurations you're going to need to spin up the cluster for your company
