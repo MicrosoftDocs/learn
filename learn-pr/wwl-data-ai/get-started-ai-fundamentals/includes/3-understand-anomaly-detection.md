@@ -4,7 +4,7 @@ These kinds of scenario can be addressed by using *anomaly detection* - a machin
 
 Let's explore how anomaly detection might help in the racing car scenario.
 
-![Machine Learning](../media/anomaly-detection.gif)
+![A race car drives past and an instrument panel shows telemetry values, which vary over time. When an anomaly occurs, a warning is displayed and the car stops.](../media/anomaly-detection.gif)
 
 1. Sensors in the car collect telemetry, such as engine revolutions, brake temperature, and so on.
 2. An anomaly detection model is trained to understand expected fluctuations in the telemetry measurements over time.
@@ -12,6 +12,6 @@ Let's explore how anomaly detection might help in the racing car scenario.
 
 ## Anomaly detection in Microsoft Azure
 
-In Microsoft Azure, the **Anomaly Detector** service provides an application programming interface (API) that developers can use to create anomaly detection services.
+In Microsoft Azure, the **Anomaly Detector** service provides an application programming interface (API) that developers can use to create anomaly detection solutions.
 
 To learn more, view the [Anomaly Detector service web site](https://azure.microsoft.com/services/cognitive-services/anomaly-detector/).
