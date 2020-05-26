@@ -23,7 +23,7 @@ prerequisites: |
   - [Node.js and Git](https://nodejs.org/)
   - [Visual Studio Code](https://code.visualstudio.com/) installed
   - The [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
-  - [The Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local) installed
+  - [The Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) installed
 iconUrl: /learn/achievements/publish-static-web-app-and-api.svg
 levels:
   - beginner
