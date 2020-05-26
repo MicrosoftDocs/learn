@@ -2,7 +2,7 @@ In this unit, you'll gain an understanding of the *eShopOnContainers* app and th
 
 ## Solution architecture
 
-![eShop application architecture](../media/temp/eshop-architecture.png)
+:::image type="content" source="../media/temp/eshop-architecture.png" alt-text="eShop application architecture" border="true" lightbox="../media/temp/eshop-architecture.png":::
 
 The *eShopOnContainers* app is an online store that sells various products, including pins, T-shirts, and coffee mugs. The store includes the following features:
 
