@@ -35,7 +35,7 @@ az group create --name IoTEdgeResources --location eastus2
 
 ![An illustration is showing that creating resource group](../media/resource-group.png)
 
-## Creating a virtual machine to act as your device.  
+## Creating a virtual machine to act as your device
 
 Accept the terms of use and create the Microsoft-provided Azure IoT Edge on Ubuntu virtual machine. This virtual machine preinstalls everything you need to run IoT Edge on a device.
 
