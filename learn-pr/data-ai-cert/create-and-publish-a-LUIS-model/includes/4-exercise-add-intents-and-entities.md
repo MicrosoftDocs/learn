@@ -52,7 +52,7 @@ Next, let's create the entities we need to capture specific requests from users.
 
 1. Select **Machine learned** for **Entity type**. Then select **Create**.
 
-    ![Adding an entity named facet, of type Simple](../media/select_facet.png)
+    ![Adding an entity named facet, of type Simple](../media/select-facet.png)
 
 ## Map search subjects to the facet entity
 
@@ -62,7 +62,7 @@ Next, we have to teach LUIS how to pick out the search subject as the **facet** 
 
 1. Hover over the utterance and click the keyword that specifies the _search subject_, and then select the **facet** entity. For example, if the utterance is "show me baby pics", the subject would be "baby".
 
-    ![Screenshot showing utterance selection to tie it to an entity](../media/select_facet_keyword.png)
+    ![Screenshot showing utterance selection to tie it to an entity](../media/select-facet-keyword.png)
 
    > [!TIP]
    > Using multi-word keywords is a simple as clicking the first word and then dragging across the other consecutive word(s)/
