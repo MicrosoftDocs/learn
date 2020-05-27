@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-introduction.5-takeaways
-title: "Summary: key takeaways"
+uid: learn.improve-reliability-introduction.5-summary
+title: "Summary"
 metadata:
-  title: "Summary: key takeaways"
+  title: "Summary"
   description: "Module summary"
   ms.date: 05/19/2020
   author: dnblankedelman
@@ -12,4 +12,4 @@ metadata:
 # TODO: set correct duration  
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-takeaways.md)]
+  [!include[](includes/5-summary.md)]
