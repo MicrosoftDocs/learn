@@ -16,7 +16,7 @@ To complete the work item:
 1. In Azure DevOps, go to **Boards** and then, in the left pane, select **Boards**.
 1. Move the **Create unit tests** work item from the **Doing** column to the **Done** column.
 
-    Screenshot of Azure Boards showing the Create unit tests card in the Done column.](../media/8-azure-boards-wi3-done.png)
+    ![Screenshot of Azure Boards showing the Create unit tests card in the Done column.](../media/8-azure-boards-wi3-done.png)
 
 ## Disable the pipeline or delete your project
 
