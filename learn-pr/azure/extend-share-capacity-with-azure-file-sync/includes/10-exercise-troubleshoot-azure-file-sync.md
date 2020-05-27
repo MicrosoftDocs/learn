@@ -2,7 +2,7 @@ Azure File Sync provides multiple ways to monitor and diagnose sync problems. To
 
 You've deployed Azure File Sync and configured both the Azure and on-premises environments. Now, you need to troubleshoot a rogue file that's not syncing. You'll use the tools provided by Microsoft.
 
-In this exercise, you'll first check that file sync is working correctly. Then you'll generate a file with invalid characters. You'll see how to diagnose sync problems and resolve them. The following video shows walks you through the process. Complete the steps in this exercise to continue following along in your Azure subscription.
+In this exercise, you'll first check that file sync is working correctly. Then you'll generate a file with invalid characters. You'll see how to diagnose sync problems and resolve them. The following video walks you through the process. Complete the steps in this exercise to continue following along in your Azure subscription.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit10/player?format=ny]
 
