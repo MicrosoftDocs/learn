@@ -21,7 +21,7 @@ The following *src* subdirectories contain .NET Core projects, each of which is 
 
 ## Verify deployment to AKS
 
-Once the app has deployed to AKS, you'll see a variation of the following message in the Azure Cloud Shell:
+Once the app has deployed to AKS, you'll see a variation of the following message in the Cloud Shell:
 
 ```
 The eShop-Learn application has been deployed.
@@ -41,14 +41,14 @@ You can begin exploring these services (when available):
 
 Even though the app has been deployed, it may take a few minutes to come online. Verify the app is deployed and online with the following steps:
 
-1. Select the **General application status** link to view the *WebStatus* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically every 10 seconds.
+1. Select the **General application status** link in the Cloud Shell to view the *WebStatus* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically every 10 seconds.
 
     ![Health check page](../media/temp/health-check.png)
 
     > [!NOTE]
-    > While the app is starting up, you might initially receive an HTTP 503 response from the server. You may retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints. 
+    > While the app is starting up, you might initially receive an HTTP 503 response from the server. You may retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
 
-1. Once all the services are healthy, select the **Web SPA application** link to test the *eShopOnContainers* web app.
+1. Once all the services are healthy, select the **Web SPA application** link in the Cloud Shell to test the *eShopOnContainers* web app. The following page appears:
 
     ![eShop SPA](../media/temp/eshop-spa.png)
 
@@ -60,4 +60,4 @@ Even though the app has been deployed, it may take a few minutes to come online.
 
     ![eShop shopping bag with .NET Blue Hoodie](../media/temp/eshop-spa-shopping-bag.png)
 
-Now that you've seen the existing *eShopOnContainers* app, you'll review the design of the new coupon service in the next unit.
+In this unit, you've seen the existing *eShopOnContainers* app's checkout process without support for coupon codes. You'll review the design of the new coupon service in the next unit.
