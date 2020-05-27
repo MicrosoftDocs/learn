@@ -8,7 +8,7 @@ In this module, you:
 ## Remove Azure resources
 
 > [!IMPORTANT]
-> It's important that you deallocate the Azure resources used in this module to avoid accruing unwanted charges.
+> It's important that you de-provision the Azure resources used in this module to avoid accruing unwanted charges.
 
 To de-provision all of the resources created in this module, run the following command:
 
