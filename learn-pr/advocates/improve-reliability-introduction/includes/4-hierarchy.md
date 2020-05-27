@@ -58,10 +58,10 @@ addressing that threat.
 ## Dev process and user experience
 
 There are two additional levels in the Dickerson hierarchy that are not
-addressed in this learning path: the development process and the work that
-goes into making a good user experience (UX). We won't be discussing these
-two subjects in the _Improve your Reliability_ learning path, Microsoft
-Learn offers other good modules on these topics.
+addressed in the _Improve your Reliability_ learning path: the development
+process and the work that goes into making a good user experience (UX). We
+won't be discussing these two subjects in the _Improve your Reliability_
+learning path, Microsoft Learn offers other good modules on these topics.
 
 We have created a separate Learn module for each level in this hierarchy
 described above. We hope you will join us for all five modules in this

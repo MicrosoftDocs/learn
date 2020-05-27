@@ -46,8 +46,8 @@ view:
 If a key word in the DevOps realm is "delivery", the key word for site
 reliability engineering would be "reliability". While there are a few
 definitions for SRE that have been discussed in the field, there appears to
-be more consensus on the topic. Here's our definition that captures
-the key aspects of that consensus:
+be more consensus on the topic. Here's our definition that captures the key
+aspects of that consensus:
 
 > Site reliability engineering is an engineering discipline devoted to
 > helping an organization sustainably achieve the appropriate level of
@@ -70,7 +70,8 @@ example, "delivery" vs. "reliability" as mentioned before), both DevOps and
 SRE have both developed principles and practices that are core to
 reliability work. These include monitoring/observability, proper incident
 response, automation and collaboration. All of these things play a
-prominent role in the material we will be discussing in this learning path.
+prominent role in the material we will be discussing in the _Improve your
+Reliability_ learning path.
 
 So let's get into that work. We are going to start with a model that can
 help us structure and plan our reliability efforts.
