@@ -13,8 +13,8 @@ The following video shows how to create the Azure resources you'll need. Use the
    
    |Box |Value  |
    |---------|---------|
-   |Resource group | learn-file-sync-rg        |
-   |Storage account name   | extendcadfiles      |
+   |Resource group | **learn-file-sync-rg**        |
+   |Storage account name   | **extendcadfiles**      |
 
    Accept the defaults for the rest of the values.
 1. Select **Review + create** and then select **Create**.
@@ -29,8 +29,8 @@ The following video shows how to create the Azure resources you'll need. Use the
 
    |Box  |Value  |
    |---------|---------|
-   |Name    |cadfileshare    |
-   |Quota    |      1   |
+   |Name    |**cadfileshare**    |
+   |Quota    |      **1**   |
 
  
 1. Select **Create**.
@@ -44,8 +44,8 @@ The following video shows how to create the Azure resources you'll need. Use the
 
    |Box |Value  |
    |---------|---------|
-   |Resource group | learn-file-sync-rg        |
-   |Storage Sync Service name  | CADSyncService |
+   |Resource group | **learn-file-sync-rg**        |
+   |Storage Sync Service name  | **CADSyncService** |
 
 1. Select **Review + Create** and then select **Create** to deploy the Storage Sync Service.
 
@@ -58,8 +58,8 @@ The following video shows how to create the Azure resources you'll need. Use the
 
    |Box |Value  |
    |---------|---------|
-   |Sync group name | CADFiles |
-   |Storage account | extendcadfiles |
-   |Azure File Share|cadfileshare|
+   |Sync group name | **CADFiles** |
+   |Storage account | **extendcadfiles** |
+   |Azure File Share|**cadfileshare**|
 
 1. Select **create**.

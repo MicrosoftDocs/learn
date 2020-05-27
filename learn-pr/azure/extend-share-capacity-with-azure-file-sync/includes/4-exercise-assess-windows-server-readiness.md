@@ -2,7 +2,7 @@ You can run the Azure File Sync evaluation PowerShell cmdlets on any Windows Ser
 
 Before you install and set up Azure File Sync on your company's CAD file server, you're going to assess the server to ensure it's compatible. You'll run the evaluation cmdlets to produce a report.
 
-The following video shows how to do the assessment on your on-premises server. Use the steps in this exercise to complete the assessment on a virtual machine that you create in your Azure subscription.
+The following video shows how to do the assessment on your on-premises server. Follow the steps in this exercise to complete the assessment on a virtual machine that you create in your Azure subscription.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit4/player?format=ny]
 
@@ -66,7 +66,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 
 Connect to the new server by using Remote Desktop client. You'll download a sample CAD file and install the Azure PowerShell module that you'll use later.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the same account you used when you activated the sandbox.
 1. In the portal, in the left pane, select **Virtual machines**.
 1. Select the **FileServerLocal** VM.
 1. In the top menu, select **Connect**.
