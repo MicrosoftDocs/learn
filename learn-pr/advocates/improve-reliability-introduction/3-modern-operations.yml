@@ -1,24 +1,23 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-introduction.3-modops
-title: "Modern Operations"
+uid: learn.improve-reliability-introduction.3-modern-operations
+title: "Modern operations"
 metadata:
-  title: "Modern Operations"
+  title: "Modern operations"
   description: "What are the modern operations practices of site reliability engineering (SRE) and DevOps and why they can help us with reliability challenges."
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 # TODO: set correct duration  
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-modops.md)]
+  [!include[](includes/3-modern-operations.md)]
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'WWhich of these modern operations practices has a specific focus on the continuous delivery of value to end users?'
+  - content: 'Which of these modern operations practices has a specific focus on the continuous delivery of value to end users?'
     choices:
     - content: 'DevOps'
       isCorrect: true

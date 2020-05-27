@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-introduction.4-hierarchy
+uid: learn.improve-reliability-introduction.4-dickerson-hierarchy
 title: "The Dickerson hierarchy of reliability"
 metadata:
   title: "The Dickerson hierarchy of reliability"
@@ -9,7 +9,6 @@ metadata:
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 # TODO: set correct duration  
 durationInMinutes: 3
 content: |

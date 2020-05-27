@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.improve-reliability-introduction
-title: "Improve Your Reliability: An Introduction"
+title: "Improve your reliability with modern operations practices: An introduction"
 metadata:
-  title: "Improve Your Reliability: An Introduction"
+  title: "Improve your reliability with modern operations practices: An introduction"
   description: Discover a map for navigating reliability challenges and sustainably achieving the appropriate level of reliability in your systems, services, and products.
   ms.date: 05/21/2020
   author: dnblankedelman
@@ -15,7 +15,6 @@ abstract: |
   - Express why reliability is crucial to your success
   - Describe modern operations practices that offer tools you can use to work on your reliability challenges
   - Explain the Dickerson hierarchy of reliability and the map it provides for approaching reliability challenges
-
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -26,13 +25,13 @@ roles:
 - technology-manager
 products:
 - azure
-prerequisites: none
+prerequisites: None
 units:
 - learn.improve-reliability-introduction.1-introduction
 - learn.improve-reliability-introduction.2-rationale
-- learn.improve-reliability-introduction.3-modops
-- learn.improve-reliability-introduction.4-hierarchy
-- learn.improve-reliability-introduction.5-takeaways
+- learn.improve-reliability-introduction.3-modern-operations
+- learn.improve-reliability-introduction.4-dickerson-hierarchy
+- learn.improve-reliability-introduction.5-summary
 
 badge:
   uid: learn.improve-reliability-introduction.badge
