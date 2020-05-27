@@ -15,8 +15,11 @@ In fact, we can construct a whole new feature space around this cluster, defined
 
 You will need to clean and prepare the data in order to conduct PCA on it, so pandas will be essential. You will also need NumPy, a bit of scikit-learn, and pyplot.
 
+> **Sarah** TBD, it occurred to me to add a tip that links to the environment setup instructions. What do you think?
+
 > [!TIP]
-> Review steps TBD link for setting up the learn environment.
+> Review steps TBD--add link for setting up the environment.
+>
 
 To add these libraries, run this code:
 

@@ -25,7 +25,7 @@ The output is:
 [<matplotlib.lines.Line2D at 0x7f28e0c9f588>]
 ```
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/plt-plot.png" loc-scope="Azure":::
+:::image type="content" alt-text="Scree graph of the variance for the PCA components." source="../media/plt-plot.png" loc-scope="Azure":::
 
 This is where data science can become an art. As a rule of thumb, we want to look for "elbow" in the graph, which is the point at which the few components have captured the majority of the variance in the data (after that point, we are only adding complexity to the analysis for increasingly diminishing returns). In this particular case, that appears to be at about five components.
 
@@ -68,7 +68,7 @@ Here's the output:
 ```Output
 Text(0.5,1,'Cumulative Explained Variance Graph')
 ```
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/variance-graph.png" loc-scope="Azure":::
+:::image type="content" alt-text="Cumulative explained variance graph." source="../media/variance-graph.png" loc-scope="Azure":::
 
 Ultimately, the number of components to use is a matter of judgment, but five vectors (and 70% of the variance) will suffice for our purposes in this section.
 
@@ -81,7 +81,23 @@ pca_df.head()
 
 Here's the output:
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/variance-2.png" loc-scope="Azure":::
+```Output
+--------------------------------------------------------------------
+|        | 0         | 1         | 2        | 3        | 4         |
+--------------------------------------------------------------------
+| NDB_No |           |           |          |          |           |
+--------------------------------------------------------------------
+| 1001   | -0.555546 | -1.505790 | 6.702793 | 2.342886 | 1.220440  |
+--------------------------------------------------------------------
+| 1002   | -1.546083 | -0.449361 | 6.714724 | 3.818746 | 1.871954  |
+--------------------------------------------------------------------
+| 1003   | -2.153483 | -3.386737 | 7.661698 | 1.456534 | 3.746811  |
+--------------------------------------------------------------------
+| 1004   | 3.478079  | 0.171293  | 1.768920 | 2.996483 | -1.874145 |
+--------------------------------------------------------------------
+| 1005   | 2.557895  | -0.278522 | 2.670310 | 2.878214 | -1.738544 |
+--------------------------------------------------------------------
+```
 
 Each column represents one of the eigenvectors, and each row is one of the coordinates that defines that vector in five-dimensional space.
 
@@ -98,7 +114,24 @@ pca_df.head()
 
 Here's the output:
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/variance-3.png" loc-scope="Azure":::
+```Output
+
+---------------------------------------------------------------------------------------------
+|        | c1        | c2        | c3       | c4       | c5        | FoodGroup              |
+---------------------------------------------------------------------------------------------
+| NDB_No |           |           |          |          |           | Dairy and Egg Products |
+---------------------------------------------------------------------------------------------
+| 1001   | -0.555546 | -1.505790 | 6.702793 | 2.342886 | 1.220440  | Dairy and Egg Products |
+---------------------------------------------------------------------------------------------
+| 1002   | -1.546083 | -0.449361 | 6.714724 | 3.818746 | 1.871954  | Dairy and Egg Products |
+---------------------------------------------------------------------------------------------
+| 1003   | -2.153483 | -3.386737 | 7.661698 | 1.456534 | 3.746811  | Dairy and Egg Products |
+---------------------------------------------------------------------------------------------
+| 1004   | 3.478079  | 0.171293  | 1.768920 | 2.996483 | -1.874145 | Dairy and Egg Products |
+---------------------------------------------------------------------------------------------
+| 1005   | 2.557895  | -0.278522 | 2.670310 | 2.878214 | -1.738544 | Dairy and Egg Products |
+---------------------------------------------------------------------------------------------
+```
 
 Don't worry that the `FoodGroup` column has all `NaN` values: it's not a vector, so it has no vector coordinates.
 
@@ -110,5 +143,19 @@ np.round(pca_df.corr(), 5)
 
 Here's the output:
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/correlation-3.png" loc-scope="Azure":::
+```Output
+-----------------------------------------
+|    | c1   | c2   | c3   | c4   | c5   | 
+-----------------------------------------
+| c1 |  1.0 | -0.0 |  0.0 | -0.0 |  0.0 |
+-----------------------------------------
+| c2 | -0.0 |  1.0 | -0.0 |  0.0 | -0.0 |
+-----------------------------------------
+| c3 |  0.0 | -0.0 |  1.0 | -0.0 | -0.0 |
+-----------------------------------------
+| c4 | -0.0 |  0.0 | -0.0 |  1.0 |  0.0 |
+-----------------------------------------
+| c5 |  0.0 | -0.0 | -0.0 |  0.0 |  1.0 |
+-----------------------------------------
+```
 

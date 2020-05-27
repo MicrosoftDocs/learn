@@ -63,16 +63,13 @@ mean:  -0.0
 
 Find the standard deviation for the <code>nutr_df_TF</code>. (If you need a hint as to which method to use, see the [pandas documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.std.html?azure-portal=true).)
 
-> [!NOTE]
-> SARAH: Do we need to provide a solution for this exercise? Thanks.
-
 <br />
 
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  TBD solution
+  The correct code to use here is `print("s.d.: ", np.round(nutr_df_TF.std(), 2))`.
 
   The output is:
 
