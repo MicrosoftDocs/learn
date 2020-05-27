@@ -3,7 +3,7 @@ uid: learn.microservices-aspnet-core.8-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge Check - Create and deploy a cloud-native ASP.NET Core microservice
-  ms.date: 05/26/2020
+  ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial

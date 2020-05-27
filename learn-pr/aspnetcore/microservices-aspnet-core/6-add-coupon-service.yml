@@ -2,13 +2,13 @@
 uid: learn.microservices-aspnet-core.6-add-coupon-service
 metadata:
   title: Exercise - Add the coupon service
-  description: Complete the *Coupon.API* project, then generate changes to the Helm charts that define the kubernetes deployment.
-  ms.date: 05/15/2020
+  description: Complete the coupon service project and generate Helm charts that define the Kubernetes deployment.
+  ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Exercise - Add the coupon service
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/6-add-coupon-service.md)]

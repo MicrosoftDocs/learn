@@ -2,13 +2,13 @@
 uid: learn.microservices-aspnet-core.2-deploy-application
 metadata:
   title: Exercise - Set up the environment
-  description: Provision Azure resources, download the ASP.NET Core starter project, and tour the starter project.
-  ms.date: 04/20/2020
+  description: Provision Azure resources, download the eShopOnContainers starter solution, and configure the learning environment.
+  ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Exercise - Set up the environment
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/2-deploy-application.md)]

@@ -2,8 +2,8 @@
 uid: learn.microservices-aspnet-core
 metadata:
   title: Create and deploy a cloud-native ASP.NET Core microservice
-  description: This module guides you through creating an ASP.NET Core microservice and deploying it to Azure Kubernetes Service.
-  ms.date: 04/24/2020
+  description: This module guides you through containerizing an ASP.NET Core microservice and deploying it to Azure Kubernetes Service.
+  ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial

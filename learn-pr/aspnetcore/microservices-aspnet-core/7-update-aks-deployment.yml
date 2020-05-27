@@ -2,13 +2,13 @@
 uid: learn.microservices-aspnet-core.7-update-aks-deployment
 metadata:
   title: Exercise - Deploy changes to AKS
-  description: Deploy your new and modified services to AKS.
-  ms.date: 05/15/2020
+  description: Deploy the coupon service and modified WebSPA app to AKS.
+  ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Exercise - Deploy changes to AKS
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/7-update-aks-deployment.md)]
