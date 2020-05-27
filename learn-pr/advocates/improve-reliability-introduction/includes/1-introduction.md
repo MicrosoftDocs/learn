@@ -24,14 +24,14 @@ module will provide a map that can help you decide what to work on and in
 what order. The other modules in this learning path expand on each of the
 topics in this map.
 
-When you have completed this introduction module, you will:
+## Learning objectives
 
--   Be able to express why reliability is crucial to your success
+By the end of this module, you will be able to:
 
--   Learn about the modern operations practices that offer tools we can use
-    to work on our reliability challenges
+- Express why reliability is crucial to your success
+- Describe modern operations practices that offer tools you can use to work on your reliability challenges
+- Explain the Dickerson hierarchy of reliability and the map it provides for approaching reliability challenges
 
--   Be familiar with the Dickerson hierarchy of reliability and the map it
-    provides for approaching reliability challenges
+## Prerequisites
 
--   Be prepared for the individual modules that make up this learning path
+TODO
