@@ -1,4 +1,4 @@
-We'll start by using keras to build and train a neural network containing one working layer with 128 neurons. We'll use categorical_crossentropy as the loss function and a softmax output layer, both of which are appropriate for muticlass classification problems. We will also use adam as the optimization algorithm. Rather than use a fixed learning rate, adam varies the learning rate as training proceeds so the network learns faster in the early stages of training and (hopefully) converges more accurately toward a solution in later stages.
+We'll start by using Keras to build and train a neural network containing one working layer with 128 neurons. We'll use `categorical_crossentropy` as the loss function and a softmax output layer, both of which are appropriate for muticlass classification problems. We will also use adam as the optimization algorithm. Rather than use a fixed learning rate, adam varies the learning rate as training proceeds so the network learns faster in the early stages of training and (hopefully) converges more accurately toward a solution in later stages.
 
 ```python
 from keras.layers import Dense
@@ -9,8 +9,10 @@ model.add(Dense(128, activation='relu', input_shape=(image_width * image_height,
 model.add(Dense(class_count, activation='softmax'))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.summary()
-Model: "sequential_1"
 ```
+
+```Output
+Model: "sequential_1"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -22,12 +24,15 @@ Total params: 373,765
 Trainable params: 373,765
 Non-trainable params: 0
 _________________________________________________________________
+```
+
 Now let's train the neural network. We'll let it run for 100 epochs and then check the result to see if it required more (or less) training.
 
 ```python
 hist = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=100, batch_size=25)
 ```
 
+```Output
 Train on 912 samples, validate on 228 samples
 Epoch 1/100
 912/912 [==============================] - 1s 630us/step - loss: 1.5704 - accuracy: 0.4463 - val_loss: 1.3317 - val_accuracy: 0.6272
@@ -229,8 +234,9 @@ Epoch 99/100
 912/912 [==============================] - 1s 641us/step - loss: 0.0959 - accuracy: 0.9803 - val_loss: 0.3762 - val_accuracy: 0.8991
 Epoch 100/100
 912/912 [==============================] - 0s 426us/step - loss: 0.1022 - accuracy: 0.9704 - val_loss: 0.4051 - val_accuracy: 0.8816
+```
 
-keras's fit function returns a history object containing information about the training and validation accuracies measured following each epoch of the training. Let's use that information to plot the training and validation accuracy over time.
+Keras's `fit` function returns a `history` object containing information about the training and validation accuracies measured following each epoch of the training. Let's use that information to plot the training and validation accuracy over time.
 
 ```python
 def show_history(hist):
@@ -249,6 +255,8 @@ def show_history(hist):
 show_history(hist)
 ```
 
+:::image type="content" source="../media/accuracy-1.png" alt-text="First training and accuracy chart." loc-scope="Azure":::
+
 In all likelihood, the training accuracy approached 100% (1.0) in later epochs, while the validation accuracy peaked out between 80% and 90%. Let's try widening the working layer to 512 neurons and comparing the results.
 
 ```python
@@ -259,6 +267,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 hist = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=100, batch_size=25)
 ```
 
+```Output
 Train on 912 samples, validate on 228 samples
 Epoch 1/100
 912/912 [==============================] - 2s 2ms/step - loss: 2.6869 - accuracy: 0.3147 - val_loss: 1.3441 - val_accuracy: 0.4649
@@ -460,14 +469,19 @@ Epoch 99/100
 912/912 [==============================] - 1s 845us/step - loss: 0.0555 - accuracy: 0.9890 - val_loss: 0.4216 - val_accuracy: 0.8553
 Epoch 100/100
 912/912 [==============================] - 1s 1ms/step - loss: 0.0817 - accuracy: 0.9770 - val_loss: 0.8871 - val_accuracy: 0.7500
+```
+
 Once more, we will plot the accuracy over time to assess how well the network learned from the training data.
 
-In [9]:
+```python
 show_history(hist)
+```
+
+:::image type="content" source="../media/accuracy-2.png" alt-text="Second training and accuracy chart." loc-scope="Azure":::
 
 Were the results significantly different than before? Probably not. But now let's modify the network so that it contains four hidden layers of 128 neurons each. It's the same number of neurons as the previous model, but the network itself is narrower and deeper. You should find that this model trains somewhat faster.
 
-In [10]:
+```python
 model = Sequential()
 model.add(Dense(128, activation='relu', input_shape=(image_width * image_height,)))
 model.add(Dense(128, activation='relu'))
@@ -476,6 +490,9 @@ model.add(Dense(128, activation='relu'))
 model.add(Dense(class_count, activation='softmax'))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 hist = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=100, batch_size=25)
+```
+
+```Output
 Train on 912 samples, validate on 228 samples
 Epoch 1/100
 912/912 [==============================] - 1s 1ms/step - loss: 1.4706 - accuracy: 0.4408 - val_loss: 1.3985 - val_accuracy: 0.4649
@@ -677,20 +694,28 @@ Epoch 99/100
 912/912 [==============================] - 0s 300us/step - loss: 0.1222 - accuracy: 0.9561 - val_loss: 0.4443 - val_accuracy: 0.8772
 Epoch 100/100
 912/912 [==============================] - 0s 340us/step - loss: 0.1235 - accuracy: 0.9627 - val_loss: 0.6925 - val_accuracy: 0.8333
+```
+
 Now let's see what happened during training.
 
-In [11]:
+```python
 show_history(hist)
+```
+
+:::image type="content" source="../media/accuracy-3.png" alt-text="Third training and accuracy chart." loc-scope="Azure":::
 
 Expanding to four hidden layers doesn't seem to help much in terms of accuracy, so let's back off to two layers. You never want more layers (or more neurons) than necessary, and too many can prevent the model from generalizing well.
 
-In [12]:
+```python
 model = Sequential()
 model.add(Dense(128, activation='relu', input_shape=(image_width * image_height,)))
 model.add(Dense(128, activation='relu'))
 model.add(Dense(class_count, activation='softmax'))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 hist = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=100, batch_size=25)
+```
+
+```Output
 Train on 912 samples, validate on 228 samples
 Epoch 1/100
 912/912 [==============================] - 1s 608us/step - loss: 1.5148 - accuracy: 0.4167 - val_loss: 1.4200 - val_accuracy: 0.4649
@@ -892,13 +917,19 @@ Epoch 99/100
 912/912 [==============================] - 0s 271us/step - loss: 0.1110 - accuracy: 0.9649 - val_loss: 0.5530 - val_accuracy: 0.8640
 Epoch 100/100
 912/912 [==============================] - 0s 317us/step - loss: 0.1846 - accuracy: 0.9298 - val_loss: 0.5241 - val_accuracy: 0.8596
+```
+
 Time to check the results.
 
 ```python
 show_history(hist)
 ```
 
-At this point, it might be helpful to run some test data through the network and generate a confusion matrix showing how it performed. We can use scikit-learn's confusion_matrix function to generate the confusion matrix and seaborn to plot it.
+:::image type="content" source="../media/label-actual-predicted.png" alt-text="Chart that demonstrates actual labels and predicted labels for the dataset." loc-scope="Azure":::
+
+Did you notice that the chart above isn't a perfect match for the one you generated for the same network earlier? Keras and TensorFlow use random numbers to initialize neural networks, to shuffle training data between training epochs, to help optimization algorithms converge on the best solution as training takes place, and more. This means that you can train the same model 10 times using the same data and get 10 different results. This is a feature, not a bug. Once they arrive at the right network architecture, data scientists will often train a neural network 20 or more times and average the results to get the best measure of the network's accuracy.
+
+At this point, it might be helpful to run some test data through the network and generate a confusion matrix showing how it performed. We can use scikit-learn's `confusion_matrix` function to generate the confusion matrix and seaborn to plot it.
 
 ```python
 from sklearn.metrics import confusion_matrix
@@ -913,9 +944,12 @@ sns.heatmap(mat.T, square=True, annot=True, fmt='d', cbar=False, cmap='Blues',
 
 plt.xlabel('Actual label')
 plt.ylabel('Predicted label')
-Out[14]:
+```
+
+```Output
 Text(89.18, 0.5, 'Predicted label')
 ```
 
+Exercise
 How many times did the model correctly identify George W. Bush, who had the most samples in the training set? How many times did it identify him as someone else?
 
