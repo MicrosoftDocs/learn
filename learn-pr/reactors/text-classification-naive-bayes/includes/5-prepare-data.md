@@ -19,7 +19,7 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 ```
 
-The output:
+The output is:
 
 ```Output
 [nltk_data] Downloading package stopwords to /home/nbuser/nltk_data...

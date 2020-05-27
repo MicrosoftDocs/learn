@@ -196,8 +196,9 @@ Text(89.18, 0.5, 'Predicted label')
 
 In all likelihood, the CNN exhibited about the same accuracy as a traditional neural network. This isn't surprising given that the dataset we trained it with is relatively small. State-of-the-art CNNs can sometimes exceed a human's ability to classify images. They also require vast amounts of compute power to train and are sometimes 100 or more layers deep.
 
+Exercise/Try it yourself 
 
-Exercise - TBD
+**Sarah** TBD - add a possible solution and output for this exercise/Try it yourself
 
 TODO: Experiment by adding dropout to the network
 

@@ -6,6 +6,8 @@ In this exercise, you will use keras to build a series of neural networks that r
 
 ## Learning objectives
 
+> **Sarah** TBD, please check the learning objectives and prereqs I derived from the module content.
+
 In this module, you will:
 
 - Use NumPy to analyze and visualize the contents of a dataset.

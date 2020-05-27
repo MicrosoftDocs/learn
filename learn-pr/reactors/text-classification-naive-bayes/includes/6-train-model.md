@@ -47,18 +47,18 @@ Review the ham word cloud, construct a ham message, and then run it against the 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Possible exercise solution:
+  A possible exercise solution:
 
-```Python
-pred2 = naivebayes_model.predict(CountVect.transform(['Let me know what time we should go.']))
-pred2
-```
+  ```Python
+  pred2 = naivebayes_model.predict(CountVect.transform(['Let me know what time we should go.']))
+  pred2
+  ```
 
-The output is:
+  The output is:
 
-```Output
-array(['ham'], dtype='<U4')
-```
+  ```Output
+  array(['ham'], dtype='<U4')
+  ```
 
 </details>
 
@@ -86,18 +86,18 @@ Run the predictions for the test data.
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-A possible solution:
+  A possible solution:
 
-```python
-predictions = naivebayes_model.predict(X_test_data)
-predictions
-```
+  ```python
+  predictions = naivebayes_model.predict(X_test_data)
+  predictions
+  ```
 
-The output is:
+  The output is:
 
-```Output
-array(['spam', 'ham', 'ham', ..., 'spam', 'ham', 'spam'], dtype='<U4')
-```
+  ```Output
+  array(['spam', 'ham', 'ham', ..., 'spam', 'ham', 'spam'], dtype='<U4')
+  ```
 
 </details>
 
@@ -130,20 +130,20 @@ Overall, our model is good for spam detection, but our recall score (the proport
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Use the scikit-learn `confusion_matrix()` function to better understand the specific performance of the model. Get help [interpreting the confusion matrix](https://wikipedia.org/wiki/Confusion_matrix).
+  Use the scikit-learn `confusion_matrix()` function to better understand the specific performance of the model. Get help [interpreting the confusion matrix](https://wikipedia.org/wiki/Confusion_matrix?azure-portal=true).
 
-A possible solution:
+  A possible solution:
 
-```python
-print(confusion_matrix(y_test, predictions))
-```
+  ```python
+  print(confusion_matrix(y_test, predictions))
+  ```
 
-The output is:
+  The output is:
 
-```Output
-[[1419   50]
- [  11  192]]
- ```
+  ```Output
+  [[1419   50]
+  [  11  192]]
+  ```
 
 </details>
 

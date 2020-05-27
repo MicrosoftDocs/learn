@@ -6,8 +6,7 @@ That's a simple way to visualize how SVMs work. Let's learn about SVMs by using 
 
 ## Learning objectives
 
-> [!NOTE]
-> SARAH: Would you check the learning objectives and prereqs I derived from the module content? Thanks.
+> **Sarah** TBD, please check the learning objectives and prereqs I derived from the module content.
 
 In this module, you will:
 
@@ -17,5 +16,6 @@ In this module, you will:
 - Learn how to cross-validate a model and quantify the accuracy of the hyperparameters.
 
 ## Prerequisites
+
 - Text classifications with Naive Bayes
 - Principal component analysis (PCA)
