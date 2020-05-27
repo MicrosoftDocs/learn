@@ -298,3 +298,13 @@ groups:
       title: Svelte
     - id: vue
       title: Vue
+- id: data-azure-database
+  title: Azure database environment
+  prompt: Choose your relational database management system
+  pivots:
+    - id: azuresql
+      title: Azure SQL Database
+    - id: postgresql
+      title: Azure Database for PostgreSQL
+    - id: mysql
+      title: Azure Database for MySQL   
