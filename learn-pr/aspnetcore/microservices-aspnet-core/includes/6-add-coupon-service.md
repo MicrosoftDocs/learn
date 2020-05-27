@@ -35,7 +35,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 1. Add real-time HTTP health checking to the coupon service by applying the following changes in *Startup.cs*:
     1. In the `ConfigureServices` method, invoke the custom `AddCustomHealthCheck` extension method immediately after the `AddSwagger` method call:
 
-        :::code language="csharp" source="../code/src/services/coupon/coupon.api/temp-startup.cs" id="snippet_ConfigureServicesMethod" highlight="13":::
+        :::code language="csharp" source="../code/src/services/coupon/coupon.api/Startup.cs" id="snippet_ConfigureServicesMethod" highlight="13":::
 
         With the preceding change:
 
@@ -67,7 +67,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
     1. In the `Configure` method, replace the `// Add the endpoints.MapHealthChecks code` comment with the highlighted code:
 
-        :::code language="csharp" source="../code/src/services/coupon/coupon.api/temp-startup.cs" id="snippet_ConfigureMethod" highlight="29-37":::
+        :::code language="csharp" source="../code/src/services/coupon/coupon.api/Startup.cs" id="snippet_ConfigureMethod" highlight="29-37":::
 
         The preceding change registers two HTTP health check endpoints with the ASP.NET Core routing system:
 
