@@ -9,7 +9,7 @@ namespace Coupon.API
 
         public IConfiguration Configuration { get; }
 
-        #region snippet_configureServices
+        #region snippet_ConfigureServicesMethod
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers(options => options.Filters.Add<ValidateModelAttribute>());
@@ -29,7 +29,7 @@ namespace Coupon.API
         }
         #endregion
         
-        #region snippet_configure
+        #region snippet_ConfigureMethod
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
