@@ -1,6 +1,6 @@
-The fact that training accuracy approaches 100% (1.0) tells us that the network is deep enough and wide enough to learn from the facial data we train it with. But the validation accuracy peaks out much lower. This means that the model isn't generalizing well — that is, it isn't responding as well as we would like to facial images it hasn't seen. One way to mitigate that is to introduce dropout during training.
+The fact that training accuracy approaches 100% (1.0) tells us that the network is deep enough and wide enough to learn from the facial data we train it with. But the validation accuracy peaks out much lower. This means that the model isn't generalizing well—that is, it isn't responding as well as we would like to facial images it hasn't seen. One way to mitigate that is to introduce dropout during training.
 
-Dropout is a commonly used technique to help neural networks generalize better. In keras, you can introduce dropout by following a Dense layer with a Dropout layer, specifying the fraction of connections that should be randomly dropped between layers in each training epoch. Let's introduce dropout to the network and see if it has an effect on the network's validation accuracy. Because dropout causes the model to train more slowly, we'll increase the number of epochs to 200.
+Dropout is a commonly used technique to help neural networks generalize better. In Keras, you can introduce dropout by following a Dense layer with a Dropout layer, specifying the fraction of connections that should be randomly dropped between layers in each training epoch. Let's introduce dropout to the network and see if it has an effect on the network's validation accuracy. Because dropout causes the model to train more slowly, we'll increase the number of epochs to 200.
 
 ```python
 from keras.layers import Dropout
@@ -425,10 +425,10 @@ show_history(hist)
 
 :::image type="content" source="../media/accuracy-final.png" alt-text="Final training and accuracy chart." loc-scope="Azure":::
 
-While the gap between training accuracy and validation accuracy probably narrowed, validation accuracy probably didn't improve much. That might be an indication that more training data is needed to make the network "smarter." In the confusion matrix above, George W. Bush probably scored the highest for accuracy, and if so, it's no coincidence that the dataset contains almost as many samples of George W. Bush as it does of the other candidates combined.
+Although the gap between training accuracy and validation accuracy probably narrowed, validation accuracy probably didn't improve much. This might be an indication that more training data is needed to make the network "smarter." In the confusion matrix above, George W. Bush probably scored the highest for accuracy, and if so, it's no coincidence that the dataset contains almost as many samples of George W. Bush as it does of the other candidates combined.
 
 Exercise TBD
 
-# TODO: Experiment with higher dropout values
+TODO: Experiment with higher dropout values
 
-# Hint: Copy-and-paste the code in the previous two code cells and change the number passed to Dropout().
+Hint: Copy-and-paste the code in the previous two code cells and change the number passed to Dropout().

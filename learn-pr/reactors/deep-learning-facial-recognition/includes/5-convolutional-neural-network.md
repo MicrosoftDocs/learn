@@ -1,4 +1,4 @@
-State-of-the-art image classification typically isn't done with traditional neural networks, but with deep CNNs that use [convolution kernels](https://machinelearningmastery.com/convolutional-layers-for-deep-learning-neural-networks/?azure-portal=azure) to extract features from images and [pooling layers](https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/?azure-portal=azure) to subsample images so features can be detected at various resolutions. Let's use keras to build a CNN and train it with the Labeled Faces in the Wild dataset and see how its performance compares to the other networks. Note that training will take longer, and generally speaking, a CNN performs best when trained with tens (or hundreds) of thousands of images rather than just a few hundred.
+State-of-the-art image classification typically isn't done with traditional neural networks, but with deep CNNs that use [convolution kernels](https://machinelearningmastery.com/convolutional-layers-for-deep-learning-neural-networks/?azure-portal=true) to extract features from images and [pooling layers](https://machinelearningmastery.com/pooling-layers-for-convolutional-neural-networks/?azure-portal=true) to subsample images so features can be detected at various resolutions. Let's use Keras to build a CNN and train it with the Labeled Faces in the Wild dataset and see how its performance compares to the other networks. Training will take longer, and generally speaking, a CNN performs best when trained with tens (or hundreds) of thousands of images rather than just a few hundred.
 
 :::image type="content" source="../media/cnn-model.png" alt-text="Diagram that demonstrates how CNN works." loc-scope="Azure":::
 
@@ -172,7 +172,7 @@ With training complete, let's plot the training and validation accuracy to see h
 show_history(hist)
 ```
 
-:::image type="content" source="../media/cnn-accuracy.png" alt-text="Chart that shows accuracy for cnn model." loc-scope="Azure":::
+:::image type="content" source="../media/cnn-accuracy.png" alt-text="Chart that shows accuracy for CNN model." loc-scope="Azure":::
 
 As before, we'll run some test data through the network and use a confusion matrix to see how it fared.
 
@@ -192,14 +192,14 @@ plt.ylabel('Predicted label')
 Text(89.18, 0.5, 'Predicted label')
 ```
 
-:::image type="content" source="../media/cnn-label.png" alt-text="Final actual label and predicted label chart." loc-scope="Azure":::
+:::image type="content" source="../media/cnn-labels.png" alt-text="Final actual label and predicted label chart." loc-scope="Azure":::
 
-In all likelihood, the CNN exhibited about the same accuracy as a traditional neural network. This isn't surprising given that the dataset we trained it with is relatively small. State-of-the-art CNNs can sometimes execeed a human's ability to classify images. They also require vast amounts of compute power to train and are sometimes 100 or more layers deep.
+In all likelihood, the CNN exhibited about the same accuracy as a traditional neural network. This isn't surprising given that the dataset we trained it with is relatively small. State-of-the-art CNNs can sometimes exceed a human's ability to classify images. They also require vast amounts of compute power to train and are sometimes 100 or more layers deep.
 
 
 Exercise - TBD
 
-# TODO: Experiment by adding dropout to the network
+TODO: Experiment by adding dropout to the network
 
-# Hint: Copy-and-paste the code that defines the model and insert calls to model.add(Dropout()) between layers where you wan dropout to occur.
-# Don't forget to pass a nu,ber from 0.0 to 1.0 to Dropout() specifying the fraction of connections that you wish to drop.
+Hint: Copy-and-paste the code that defines the model and insert calls to model.add(Dropout()) between layers where you want dropout to occur.
+Don't forget to pass a number from 0.0 to 1.0 to Dropout() specifying the fraction of connections that you want to drop.

@@ -57,7 +57,7 @@ The output is:
 
 :::image type="content" source="../media/subplot-1.png" alt-text="Subplot that demonstrates the occurrence of different images in the dataset." loc-scope="Azure":::
 
-The dataset is not very well balanced, but that's not terribly concerning because the net effect will probably be that the model is better at recognizing certain people than others. Let's plot some of the facial images so we can see what they look like
+The dataset is not well-balanced, but that's not terribly concerning because the net effect will probably be that the model is better at recognizing certain people than others. Let's plot some of the facial images so we can see what they look like
 
 ```python
 fig, ax = plt.subplots(3, 8, figsize=(18, 10))
@@ -68,7 +68,7 @@ for i, axi in enumerate(ax.flat):
 
 :::image type="content" source="../media/subplot-1.png" alt-text="Panel of 24 photos of political figures, with names." loc-scope="Azure":::
 
-The next step is to convert the 42x67 images into a flat NumPy array of floats, and to convert the target values (the 0-based indices identifying the person that belongs to a face) into categorical values by [one-hot-encoding](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f?azure-portal=true) them. After that, we'll split the data for training and testing. Rather than allow keras to do the splitting, we'll use scikit-learn's train_test_split function because it gives us more control over how the split is performed. And it will allow us to consistently test the network with data it hasn't seen before.
+The next step is to convert the 42x67 images into a flat NumPy array of floats, and to convert the target values (the zero-based indices identifying the person that belongs to a face) into categorical values by [one-hot-encoding](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f?azure-portal=true) them. After that, we'll split the data for training and testing. Rather than allow Keras to do the splitting, we'll use scikit-learn's train_test_split function because it gives us more control over how the split is performed. And it will allow us to consistently test the network with data it hasn't seen before.
 
 ```python
 from keras.utils import to_categorical
