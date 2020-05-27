@@ -1,4 +1,4 @@
-In this unit, you complete the *Coupon.API* project. You will then run a script to generate changes to the *WebSPA* HTML, as well as generate and modify Helm charts to define the Kubernetes deployment.
+In this unit, you learn about the business requirements for the requested coupon code feature. Additionally, you'll learn about DDD and the selected technology stack for the solution.
 
 ## Business requirements
 
@@ -12,9 +12,9 @@ There are many ways to implement a coupon code feature in an e-commerce app. For
 
 ## Domain model
 
-DDD is a design pattern whereby the structure and language of your code (including class names, methods, and variables) should match the business domain. The pattern describes independent problem areas as bounded contexts and emphasizes a common language to describe these problems. Knowing where to draw the boundaries is the most important task when designing and defining a microservices-based solution. For each bounded context, you must identify and define the entities, value objects, and aggregates that model your domain. The coupon feature requirement is straightforward, so the coupon service is implemented like a CRUD service, and the boundaries are well-defined within the coupon domain.
+DDD is a design pattern whereby the structure and language of your code&mdash;including class names, methods, and variables&mdash;matches the business domain. The pattern describes independent problem areas as bounded contexts and emphasizes a common language to describe these problems. Determining where to draw the boundaries is an essential task when designing and defining a microservices-based solution. For each bounded context, you must identify and define the entities, value objects, and aggregates that model your domain.
 
-The coupon service represents a coupon as a `Coupon` object, using the class defined at *src/Services/Coupon/Coupon.API/Infrastructure/Models/Coupon.cs*. This class encapsulates the attributes of a coupon.
+The coupon service is implemented like a CRUD service, and the boundaries are clearly defined within the coupon domain. The service represents a coupon as a `Coupon` object, using the class defined at *src/Services/Coupon/Coupon.API/Infrastructure/Models/Coupon.cs*. This class encapsulates the attributes of a coupon.
 
 |Property  |Description |
 |----------|------------|
@@ -24,19 +24,19 @@ The coupon service represents a coupon as a `Coupon` object, using the class def
 |`Consumed`|A flag indicating whether the coupon code has been used.|
 |`OrderId` |The unique identifier of the associated order to which the coupon code has been applied.|
 
-These may seem like obvious design choices, but note that the `Coupon` model is key to all of the business logic in `Coupon.API`. The coupon service:
+These design choices may seem obvious, but note that the `Coupon` model is key to all of the business logic in `Coupon.API`. The coupon service:
 
 * Only concerns itself with the domain of coupons.
 * Relies on the other services to interact with other domains, such as determining whether an order is valid.
 
 ## Technology stack
 
-Microservice architectures are technology agnostic, thus giving development teams flexibility to select the technology stack for each service independently. The following table outlines the relevant technologies used by the coupon service.
+Microservice architectures are technology agnostic. This characteristic gives development teams flexibility to select the technology stack for each service independently. The following table outlines the relevant technologies used by the coupon service.
 
 | Technology | Description |
 |-------------------|-------------|
 | ASP.NET Core web API | The RESTful services for managing discounts are implemented in ASP.NET Core. A web API uses controllers to handle HTTP requests. |
-| MongoDB | The NoSQL database that stores the coupons and their utilization data. In a real-world scenario, it's common for services to use a managed database like [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db) instead of running them in a container. |
+| MongoDB | The NoSQL database that stores the coupons and their usage data. In a real-world scenario, it's common for services to use a managed database like [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db) instead of running them in a container. |
 | Docker | The web API project and the MongoDB database, along with their dependencies, are packaged into respective container images using Docker. |
 
 ## Integration with Order
@@ -47,4 +47,4 @@ Microservice architectures are technology agnostic, thus giving development team
 1. When order is processed, Order raises event 
 1. Coupon service catches event, marks coupon redeemed
 
-In the next unit, you'll complete the coupon service code. You'll also make adjustments to the files that define the AKS deployment.
+In the next unit, you'll complete the coupon service code. You'll also modify the files that define the AKS deployment.

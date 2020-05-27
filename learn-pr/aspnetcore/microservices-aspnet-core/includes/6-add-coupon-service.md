@@ -1,4 +1,4 @@
-In this unit, you complete the *Coupon.API* project. You will then run a script to generate changes to the *WebSPA* HTML, as well as generate and modify Helm charts to define the kubernetes deployment.
+In this unit, you complete the *Coupon.API* project. You'll then run a script to generate changes to the *WebSPA* HTML, as well as generate and modify Helm charts to define the Kubernetes deployment.
 
 ## Add the coupon service
 
@@ -65,12 +65,56 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
         The preceding change registers two HTTP health check endpoints with the ASP.NET Core routing system:
 
-        * `/liveness` &ndash; A "liveness" endpoint that Kubernetes queries periodically to check for failures. Kubernetes provides liveness probes to detect applications that are failing and restarts them when they do not return success codes. When the coupon microservice starts up for the first time, there could be time-consuming tasks like setting up seed data in the database or awaiting RabbitMQ to boot up. To avoid restarts during this time, the liveness check filters the checks with the `self` tag, which returns HTTP status code 200 for every request.
-        * `/hc` &ndash; A "readiness" endpoint that Kubernetes queries to know when a service is ready to start accepting traffic. It returns HTTP status code 200 when all registered checks are successful. The same endpoint is also queried by an external health monitoring system like the `WebStatus` app. `WebStatus` provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
+        * `/liveness` &ndash; A *liveness* endpoint that Kubernetes queries periodically to check for failures. Kubernetes provides liveness probes to detect applications that are failing and restarts them when they don't return success codes. When the coupon microservice starts up for the first time, there could be time-consuming tasks like setting up seed data in the database or awaiting RabbitMQ to boot up. To avoid restarts during this time, the liveness check filters the checks with the `self` tag, which returns HTTP status code 200 for every request.
+        * `/hc` &ndash; A *readiness* endpoint that Kubernetes queries to know when a service is ready to start accepting traffic. It returns HTTP status code 200 when all registered checks are successful. The same endpoint is also queried by an external health monitoring system like the `WebStatus` app. `WebStatus` provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
 
-        In the following Kubernetes deployment configuration file, the "liveness" and "readiness" probes use HTTP GET requests to the above mentioned health endpoints to determine their status codes. Any HTTP status code greater than or equal to 200 and less than 400 indicates success. Any other code indicates failure.
+        In the following Kubernetes deployment configuration file, the liveness and readiness probes use HTTP GET requests to the above mentioned health endpoints to determine their status codes. Any HTTP status code greater than or equal to 200 and less than 400 indicates success. Any other code indicates failure.
 
-        [!code-yaml[](../code/src/services/coupon/coupon.api/deployment.yml?highlight=28,34)]
+        ```yml
+        kind: Deployment
+        apiVersion: apps/v1
+        metadata:
+          name: coupon
+          labels:
+            app: eshop
+            service: coupon
+        spec:
+          replicas: 1
+          selector:
+            matchLabels:
+              service: coupon
+          template:
+            metadata:
+              labels:
+                app: eshop
+                service: coupon
+            spec:
+              containers:
+                - name: coupon-api
+                  image: {{ .Values.registry }}/coupon.api:linux-latest
+                  imagePullPolicy: Always
+                  ports:
+                    - containerPort: 80
+                      protocol: TCP
+                    - containerPort: 81
+                      protocol: TCP
+                  livenessProbe:
+                    httpGet:
+                      port: 80
+                      path: /liveness
+                    initialDelaySeconds: 10
+                    periodSeconds: 15
+                  readinessProbe:
+                    httpGet:
+                      port: 80
+                      path: /hc
+                    initialDelaySeconds: 90
+                    periodSeconds: 60
+                    timeoutSeconds: 5
+                  envFrom:
+                    - configMapRef:
+                        name: coupon-cm
+        ```
 
 1. Set your current location to the coupon service project directory using the following command:
 
@@ -123,9 +167,9 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
     * Adds the coupon service endpoints to the aggregator Helm chart in *deploy/k8s/helm-simple/webshoppingagg/templates/configmap.yaml*
     * Adds the coupon health check to the *WebStatus* Helm chart in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*.
 
-    When you create an object in a Kubernetes (or AKS) cluster, you must provide the object specification in a YAML file. You'll use the template functionality in the open-source tool Helm to generate and send the YAML files to the AKS cluster.
+    To create an object in a Kubernetes cluster, the object specification must be provided in a YAML file. You'll use Helm's template functionality to generate and send the YAML to the cluster.
 
-    The Helm chart for the coupon service is comprised of the following files in the *deploy/k8s/helm-simple/coupon* directory:
+    The Helm chart for the coupon service is composed of the following files in the *deploy/k8s/helm-simple/coupon* directory:
 
     * *Chart.yaml*
     * *templates/configmap.yaml*
@@ -146,10 +190,10 @@ The following diagram depicts the relationships between Docker container images,
 In the preceding diagram:
 
 1. The developer sends the container image to ACR.
-2. The developer sends Kubernetes YAML configuration files to AKS. The configuration specifies which container images are required.
-3. AKS retrieves the images from ACR and uses the images to build and run the containers.
+1. The developer sends Kubernetes YAML configuration files to AKS. The configuration specifies which container images are required.
+1. AKS retrieves the images from ACR and uses the images to build and run the containers.
 
-The coupon service uses a new container image you're creating. The image needs to be hosted in a container registry, and for that you'll use your own ACR instance. The coupon service isn't the only container image that needs to be hosted on your ACR. The *implementation-script.sh* script modified the *WebSPA* app on your behalf. The modified *WebSPA* app isn't available as a container image on Microsoft's ACR. Accordingly, you must host both the new coupon service container image and the modified *WebSPA* app container image on your private ACR.
+The coupon service uses a new container image you're creating. The image must be hosted in a container registry, and for that you'll use your own ACR instance. The coupon service isn't the only container image that needs to be hosted on your ACR. The *implementation-script.sh* script modified the *WebSPA* app on your behalf. The modified *WebSPA* app isn't available as a container image on Microsoft's ACR. Consequently, you must host both the new coupon service container image and the modified *WebSPA* app container image on your private ACR.
 
 > [!NOTE]
 > The `helm install` command used later in the module specifies which container registry to use when the charts are installed to Kubernetes/AKS.
@@ -160,9 +204,9 @@ Run the following script in the command shell to build the coupon service and *W
 ./deploy/k8s/build-to-acr.sh
 ```
 
-The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects. 
+The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects.
 
-Note the solution isn't being built in your Cloud Shell instance. The build occurs in the cloud when the container image is sent to ACR. Build output is displayed in the console. The `az acr build` commands used by the script are displayed in the console with the correct parameters. The command resembles this:
+Note the solution isn't being built in your Cloud Shell instance. The build occurs in the cloud when the container image is sent to ACR. Build output is displayed in the console. The `az acr build` command used by the script is displayed in the console with the correct parameters. The command resembles the following example:
 
 ```azurecli
 az acr build --registry eshoplearn \
