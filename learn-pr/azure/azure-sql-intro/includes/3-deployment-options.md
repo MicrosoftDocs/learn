@@ -1,8 +1,8 @@
-In this unit you'll dive deeper into what Azure SQL is and what the deployment options are.  
+In this unit, you'll dive deeper into what Azure SQL is and what the deployment options are.  
 
 ## What is Azure SQL  
 
-Within the umbrella of the "Azure SQL" term, there are many deployment options and choices to be made in order to tailor to various customers' needs. While there are a lot of options, this is not meant to confuse or complicate things, but rather to give customers the flexibility to get and pay for exactly what they need. This topic will cover some of the challenges and scenarios that lead to choosing various Azure SQL deployment options, as well as some of the technical specifications for each of those options. The deployment options discussed in this topic include SQL Server on Azure virtual machines, Azure SQL managed instances, Azure SQL Databases, and Azure SQL "pools" (Azure SQL Instance Pools and Azure SQL Elastic Pools).  
+Within the umbrella of the "Azure SQL" term, there are many deployment options and choices to be made in order to tailor to various customers' needs. While there are many options, it is not meant to confuse or complicate things, but rather to give customers the flexibility to get and pay for exactly what they need. This topic will cover some of the challenges and scenarios that lead to choosing various Azure SQL deployment options, as well as some of the technical specifications for each of those options. The deployment options discussed in this topic include SQL Server on Azure virtual machines, Azure SQL managed instances, Azure SQL Databases, and Azure SQL "pools" (Azure SQL Instance Pools and Azure SQL Elastic Pools).  
 
 ![Azure SQL umbrella of offerings](../media/azuresql.png)  
 
@@ -15,11 +15,11 @@ At the highest level, when you're considering your options, the first question y
 *[Extended Security Updates](https://www.microsoft.com/cloud-platform/extended-security-updates) worth 75% of license every year for the next three years after End of Service (July 9, 2019). Applicable to Azure Marketplace images, customers using customer SQL Server 2008/R2 custom images can download the Extended Security Updates for free and manually apply.  
 **[GigaOm Performance Study](https://gigaom.com/report/sql-transaction-processing-price-performance-testing/)
 
-SQL Server on Azure Virtual Machines is simply a version of SQL Server that you specify running in an Azure VM. It's just SQL Server, so all of your SQL Server skills should directly transfer, though Azure can help automate backups and security patches. SQL Server on Azure virtual machines are referred to as Infrastructure as a Service (IaaS). You are responsible for updating and patching the OS and SQL Server (apart from critical SQL security patches), but you have access to the full capabilities of SQL Server.
+SQL Server on Azure Virtual Machines is simply a version of SQL Server that you specify running in an Azure VM. It is just SQL Server, so all of your SQL Server skills should directly transfer, though Azure can help automate backups and security patches. SQL Server on an Azure virtual machine is referred to as Infrastructure as a Service (IaaS). You are responsible for updating and patching the OS and SQL Server (apart from critical SQL security patches), but you have access to the full capabilities of SQL Server.
 
 There are some considerations for optimally deploying and managing SQL Server on Azure Virtual Machines, and several resources are provided at the end of this module. While the focus of this module and learning path is not SQL Server on Azure virtual machines, a few key things to consider include:  
 
-- Deploy specific SQL Server/OS versions from preinstalled Azure gallery images. If you self-install SQL Server on an Azure VM, you can take advantage of Resource Provider for licensing flexibility and to enable automoatic backups and updates.
+- Deploy specific SQL Server/OS versions from preinstalled Azure gallery images. If you self-install SQL Server on an Azure VM, you can take advantage of Resource Provider for licensing flexibility and to enable automatic backups and updates.
 - Consider the Memory or Storage optimized Virtual Machine sizes for maximum performance requirements.
 - Use the right storage configuration including taking advantage of Azure Blob Storage Read Caching.
 - Integrate your Azure Virtual Machines to on-premises networks using Azure Virtual Networks.
@@ -38,11 +38,11 @@ SQL Server on Azure virtual machines are considered IaaS. The other deployment o
 - *Business continuity* enables your business to continue operating in the face of disruption, particularly to its computing infrastructure.
 - *High availability* guarantees your databases are up and running 99.99% of the time, no need to worry about maintenance/downtimes.
 - *Automated backups* are created and use Azure read-access geo-redundant storage (RA-GRS) to provide geo-redundancy.
-- *Long term backup retention* enables you to store specific full databases for up to 10 years.
+- *Long-term backup retention* enables you to store specific full databases for up to 10 years.
 - *Geo-replication* by creating readable replicas of your database in the same or different data center (region).
 - *Scale* by easily adding more resources (CPU, memory, storage) without long provisioning.
 - *Network Security*
-  - Azure SQL Database (single database and elastic pool)provides firewalls to prevent network access to the database server until access is explicitly granted based on IP address or Azure Virtual Network traffic origin. Recently, general availability was announced for Private Link, which also enables a completely private connection to Azure SQL Database.  
+  - Azure SQL Database (single database and elastic pool) provides firewalls to prevent network access to the database server until access is explicitly granted based on IP address or Azure Virtual Network traffic origin. Recently, general availability was announced for Private Link, which also enables a completely private connection to Azure SQL Database.  
   - Azure SQL Managed Instance has an extra layer of security in providing native virtual network implementation and connectivity to your on-premises environment using Azure ExpressRoute or VPN Gateways.
 - *Advanced security* detects threats and vulnerabilities in your databases and enables you to secure your data.
 - *Automatic tuning* analyzes your workload and provides you the recommendations that can optimize performance of your applications by adding indexes, removing unused indexes, and automatically fixing the query plan issues.
@@ -51,7 +51,7 @@ SQL Server on Azure virtual machines are considered IaaS. The other deployment o
 
 ### Versionless  
 
-One additional difference that is significant between IaaS and PaaS is the idea of *versionless* SQL. Unlike IaaS, which is tied to a specific SQL Server version (e.g. 2019), Azure SQL Database and Managed Instance (all PaaS SQL services) are versionless. The main "branch" of the SQL Server engine code base powers SQL Server 2019, Azure SQL Database, and Azure SQL Managed Instance.  
+One additional difference that is significant between IaaS and PaaS is the idea of *versionless* SQL. Unlike IaaS, which is tied to a specific SQL Server version (for example, 2019), Azure SQL Database and Managed Instance (all PaaS SQL services) are versionless. The main "branch" of the SQL Server engine code base powers SQL Server 2019, Azure SQL Database, and Azure SQL Managed Instance.  
 
 While SQL Server versions come out every few years, PaaS services allow Microsoft to constantly update the SQL databases/instances. Microsoft rolls out fixes and features as appropriate on what they call "trains". As a consumer of the service, you don't have control over this, and the result of `@@VERSION` will not line up to a specific SQL Server version. However, this allows for *worry-free patching for both the underlying OS and SQL Server* and for Microsoft to give you the latest bits, taking the responsibility to also not break you.  
 
@@ -82,7 +82,7 @@ AccuWeather is a great example of using Azure SQL Database. AccuWeather has been
 
 You've now learned about the three main deployment options within Azure SQL: virtual machines, managed instances, and databases. For the PaaS deployment options (Azure SQL MI and Azure SQL DB), there are additional options for if you have multiple instances or databases, and these options are referred to as "pools". Using pools can help at a high level because they allow you to share resources between multiple instances/databases and cost optimize.  
 
-**Azure SQL Instance Pools** (currently in public preview) allow you to host multiple Azure SQL MIs and share resources. You can pre-provision the compute resources which can reduce the overall deployment time and thus make migrations easier. You can also host smaller Azure SQL MIs in an Instance Pool than in just a single Azure SQL MI (more on this in future sections).
+**Azure SQL Instance Pools** (currently in public preview) allow you to host multiple Azure SQL MIs and share resources. You can pre-provision the compute resources, which can reduce the overall deployment time and thus make migrations easier. You can also host smaller Azure SQL MIs in an Instance Pool than in just a single Azure SQL MI (more on this in future sections).
 
 **Azure SQL Database Elastic Pools** (Generally Available) allow you to host many databases that may be multi-tenanted. This is ideal for a Software as a Service (SaaS) application or provider, because you can manage and monitor performance in a simplified way for many databases.  
 
@@ -90,6 +90,6 @@ A good example for where a customer leveraged Azure SQL Database Elastic Pools i
 
 ## Azure SQL Deployment Options
 
-A brief visual that summarizes all the the deployment options for Azure SQL is below. Next, you'll go through deploying and configuring Azure SQL and how it compares to deploying and configuring the box SQL Server.  
+A brief visual that summarizes all the deployment options for Azure SQL is below. Next, you'll go through deploying and configuring Azure SQL and how it compares to deploying and configuring the box SQL Server.  
 
 ![Azure SQL deployment options including pools](../media/azuresql2.png)
