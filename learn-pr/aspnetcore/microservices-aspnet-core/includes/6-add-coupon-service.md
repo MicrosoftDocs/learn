@@ -35,7 +35,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 1. Add real-time HTTP health checking to the coupon service by applying the following changes in *Startup.cs*:
     1. In the `ConfigureServices` method, invoke the custom `AddCustomHealthCheck` extension method immediately after the `AddSwagger` method call:
 
-        [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configureServices&highlight=13)]
+        :::code language="csharp" source="../code/src/services/coupon/coupon.api/temp-startup.cs" id="snippet_configureServices" highlight="13":::
 
         With the preceding change:
 
@@ -67,7 +67,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
     1. In the `Configure` method, replace the `// Add the endpoints.MapHealthChecks code` comment with the highlighted code:
 
-        [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configure&highlight=29-37)]
+        :::code language="csharp" source="../code/src/services/coupon/coupon.api/temp-startup.cs" id="snippet_configure" highlight="29-37":::
 
         The preceding change registers two HTTP health check endpoints with the ASP.NET Core routing system:
 
@@ -163,11 +163,11 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
         *orders-detail/orders-detail.component.html*:
 
-        [!code-html[](../code/src/Web/WebSPA/Client/src/modules/orders/orders-detail/orders-detail.component.html)]
+        :::code language="html" source="../code/src/Web/WebSPA/Client/src/modules/orders/orders-detail/orders-detail.component.html":::
 
         *orders-new/orders-new.component.html*:
 
-        [!code-html[](../code/src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.component.html)]
+        :::code language="html" source="../code/src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.component.html":::
 
     * Creates a Helm chart for the coupon service in *deploy/k8s/helm-simple/coupon*.
     * Adds the coupon service endpoints to the aggregator Helm chart in *deploy/k8s/helm-simple/webshoppingagg/templates/configmap.yaml*

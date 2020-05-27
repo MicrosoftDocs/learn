@@ -4,7 +4,7 @@ In this unit, you learn about the business requirements for the requested coupon
 
 There are many ways to implement a coupon code feature in an e-commerce app. For simplicity, the following business requirements have been provided:
 
-* To obtain a discount, the user can apply a coupon code from the checkout page. All coupon codes are prefixed with *DISC-* and are suffixed with an unsigned integer. The integer indicates the US dollar amount to be deducted from the order total. For example, *DISC-30* deducts 30 US dollars.
+* To obtain a discount, the user can apply a coupon code from the checkout page. All coupon codes are prefixed with *DISC-* and are suffixed with an unsigned integer. The integer indicates the US dollar amount to be deducted from the order total. For example, *DISC-30* deducts $30 USD.
 * The coupon service must validate that the coupon code is available before allowing it to be used.
 * Once the payment is processed, the ordering service should request validation for the coupon during the order process.
 * Upon validation, the coupon should be assigned to the order and won't be available for any other order.
@@ -19,7 +19,7 @@ The coupon service is implemented like a CRUD service, and the boundaries are cl
 |Property  |Description |
 |----------|------------|
 |`Id`      |The unique identifier of the coupon.|
-|`Discount`|The discount amount in US dollars.|
+|`Discount`|The discount amount represented in USD currency.|
 |`Code`    |The coupon code.|
 |`Consumed`|A flag indicating whether the coupon code has been used.|
 |`OrderId` |The unique identifier of the associated order to which the coupon code has been applied.|
