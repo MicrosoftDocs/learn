@@ -199,7 +199,7 @@ In the preceding diagram:
 1. The developer sends Kubernetes YAML configuration files to AKS. The configuration specifies which container images are required.
 1. AKS retrieves the images from ACR and uses the images to build and run the containers.
 
-The coupon service uses a new container image you're creating. The image must be hosted in a container registry, and for that you'll use your own ACR instance. The coupon service isn't the only container image that needs to be hosted on your ACR. The *implementation-script.sh* script modified the *WebSPA* app on your behalf. The modified *WebSPA* app isn't available as a container image on Microsoft's ACR. Consequently, you must host both the new coupon service container image and the modified *WebSPA* app container image on your private ACR.
+You don't have permissions to make changes to Microsoft's ACR. Consequently, you must host the coupon service container image and the modified *WebSPA* app container image on your private ACR.
 
 > [!NOTE]
 > The `helm install` command used later in the module specifies which container registry to use when the charts are installed to Kubernetes/AKS.
