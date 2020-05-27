@@ -55,9 +55,10 @@ aspects of that consensus:
 
 ## Why these practices? Why now?
 
-DevOps and SRE were both created in response to a specific set of
-challenges in the operations space. They recognized that a number of
-factors were going to require a new approach, including:
+DevOps and SRE were both created by operations professionals in the last 15
+years or so in response to a specific set of challenges in the operations
+space. They recognized that a number of factors were going to require a new
+approach, including:
 
 -   the growing complexity of production environments
 -   increasing business dependency on the continuous functioning of those

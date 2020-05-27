@@ -19,7 +19,7 @@ your Reliability_ learning path can help you get started with your
 reliability challenges.
 
 One of the things that makes working on reliability in an organization
-difficult is there are so many different ways to approach the subject, it
+difficult is there are so many different ways to approach the subject. It
 can be hard to know where to begin and in what order to proceed. This
 module will provide a map that can help you decide what to work on and in
 what order. The other modules in the _Improve your Reliability_ learning
