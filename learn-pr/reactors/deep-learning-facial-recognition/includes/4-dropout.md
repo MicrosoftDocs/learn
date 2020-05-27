@@ -13,6 +13,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 hist = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=200, batch_size=25)
 ```
 
+```Output
 Train on 912 samples, validate on 228 samples
 Epoch 1/200
 912/912 [==============================] - 1s 988us/step - loss: 1.6210 - accuracy: 0.4112 - val_loss: 1.3309 - val_accuracy: 0.5482
@@ -414,6 +415,7 @@ Epoch 199/200
 912/912 [==============================] - 0s 251us/step - loss: 0.0980 - accuracy: 0.9660 - val_loss: 0.4890 - val_accuracy: 0.8947
 Epoch 200/200
 912/912 [==============================] - 0s 278us/step - loss: 0.1405 - accuracy: 0.9430 - val_loss: 0.4912 - val_accuracy: 0.8640
+```
 
 Now let's plot the training history. Does the model seem to generalize better?
 
@@ -421,5 +423,12 @@ Now let's plot the training history. Does the model seem to generalize better?
 show_history(hist)
 ```
 
+:::image type="content" source="../media/accuracy-final.png" alt-text="Final training and accuracy chart." loc-scope="Azure":::
+
 While the gap between training accuracy and validation accuracy probably narrowed, validation accuracy probably didn't improve much. That might be an indication that more training data is needed to make the network "smarter." In the confusion matrix above, George W. Bush probably scored the highest for accuracy, and if so, it's no coincidence that the dataset contains almost as many samples of George W. Bush as it does of the other candidates combined.
 
+Exercise TBD
+
+# TODO: Experiment with higher dropout values
+
+# Hint: Copy-and-paste the code in the previous two code cells and change the number passed to Dropout().
