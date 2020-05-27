@@ -3,7 +3,7 @@ uid: learn.improve-reliability-introduction.3-modops
 title: "Modern Operations"
 metadata:
   title: "Modern Operations"
-  description: "Improve Your Reliability: An Introduction"
+  description: "What are the modern operations practices of site reliability engineering (SRE) and DevOps and why they can help us with reliability challenges."
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
