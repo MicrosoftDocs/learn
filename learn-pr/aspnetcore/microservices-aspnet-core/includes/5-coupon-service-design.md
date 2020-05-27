@@ -43,7 +43,7 @@ Microservice architectures are technology agnostic. This characteristic gives de
 
 Orders submitted through the UI are routed to the ordering service via the API gateway. The ordering service then validates the coupon with the coupon service.
 
-:::image type="content" source="../media/temp/coupon-ordering-event-bus.png" alt-text="event messaging flow between the ordering and coupon services" border="true":::
+:::image type="content" source="../media/temp/coupon-ordering-event-bus.png" alt-text="event messaging flow between the ordering and coupon services" border="true" lightbox="../media/temp/coupon-ordering-event-bus.png":::
 
 1. The ordering service raises an event of type `OrderStatusChangedToAwaitingCouponValidationIntegrationEvent`. The event:
     * Indicates that there's an order awaiting coupon validation.

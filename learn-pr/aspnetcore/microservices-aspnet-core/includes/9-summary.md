@@ -5,7 +5,7 @@ In this module, you:
 * Published the Docker image to ACR.
 * Deployed the Docker container to the existing app in AKS.
 
-## Clean up Azure resources
+## Remove Azure resources
 
 > [!IMPORTANT]
 > It's important that you deallocate the Azure resources used in this module to avoid accruing unwanted charges.
@@ -18,7 +18,7 @@ az group delete --name eshop-learn-rg --yes
 
 The preceding command deletes the resource group containing the AKS and ACR resources. Another resource group containing infrastructure resources (such as IP addresses) was previously created on behalf of the AKS resource. This group and all resources contained within are also deleted when the AKS resource is deleted.
 
-## Clean up Azure service principal
+## Remove Azure service principal
 
 The initial setup script created an Azure service principal, which allows Azure resources to authenticate to each other.
 
@@ -57,7 +57,7 @@ The preceding command restores your prior *.bashrc* profile startup file from a 
 
 ## Reset the Cloud Shell
 
-The scripts used in this module attempt to make temporary changes to your Cloud Shell preferences. To revert the Cloud Shell configuration changes, see the [Cloud Shell documentation on deleting personal data](https://docs.microsoft.com/azure/cloud-shell/troubleshooting#delete).
+The scripts used in this module attempt to make temporary changes to your Cloud Shell preferences without the need to reset your Cloud Shell configuration. If you want to reset your Cloud Shell to its default configuration, see the [Cloud Shell documentation on deleting personal data](https://docs.microsoft.com/azure/cloud-shell/troubleshooting#delete).
 
 ## Learn more about microservices
 

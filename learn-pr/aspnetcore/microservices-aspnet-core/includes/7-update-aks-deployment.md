@@ -31,7 +31,7 @@ The `helm uninstall` and `helm install` commands used by the script are displaye
     1. Select **CHECKOUT**.
     1. Scroll to the **HAVE A DISCOUNT CODE?** field.
 
-        :::image type="content" source="../media/temp/discount-code-field.png" alt-text="Shopping basket with the coupon code textbox" border="true":::
+        :::image type="content" source="../media/temp/discount-code-field.png" alt-text="Shopping basket with the coupon code textbox" border="true" lightbox="../media/temp/discount-code-field.png":::
 
     1. Enter the code *DISC-15* for a $15 USD discount and select **APPLY**.
     1. Select **PLACE ORDER** to complete the purchase.
