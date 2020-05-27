@@ -8,9 +8,11 @@ In this exercise, you will use keras to build a series of neural networks that r
 
 In this module, you will:
 
-- TBD
-- TBD
-- TBD
+- Use NumPy to analyze and visualize the contents of a dataset.
+- Use Keras to train a neural network.
+- Use Keras to check for training accuracy and validity accuracy in a neural network model.
+- Add dropout during model training to help neural networks generalize better and increase validation accuracy.
+- Use a neural network for classification of a dataset.
 
 ## Prerequisites
 

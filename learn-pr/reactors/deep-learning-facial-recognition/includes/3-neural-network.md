@@ -1,4 +1,4 @@
-We'll start by using keras to build and train a neural network containing one working layer with 128 neurons. We'll use categorical_crossentropy as the loss function and a softmax output layer, both of which are appropriate for muticlass classification problems. We will also use adam as the optimization algorithm. Rather than use a fixed learning rate, adam varies the learning rate as training proceeds so the network learns faster in the early stages of training and (hopefully) converges more accurately toward a solution in later stages.
+We'll start by using Keras to build and train a neural network containing one working layer with 128 neurons. We'll use `categorical_crossentropy` as the loss function and a softmax output layer, both of which are appropriate for muticlass classification problems. We will also use adam as the optimization algorithm. Rather than use a fixed learning rate, adam varies the learning rate as training proceeds so the network learns faster in the early stages of training and (hopefully) converges more accurately toward a solution in later stages.
 
 ```python
 from keras.layers import Dense

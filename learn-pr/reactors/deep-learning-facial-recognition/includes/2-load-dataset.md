@@ -1,4 +1,4 @@
-The first step is to import facial images from the dataset. LFW contains more than 13,000 facial images collected from the Web. Of the more than 5,000 people represented in the dataset, 1,680 have two or more facial images, while only five have 100 or more. We'll set the minimum number of faces per person to 100, which means that five sets of faces corresponding to five famous people will be imported. Each facial image is labeled with the name of the person that the face belongs to.
+The first step is to import facial images from the dataset. LFW contains more than 13,000 facial images collected from the web. Of the more than 5,000 people represented in the dataset, 1,680 have two or more facial images, while only five have 100 or more. We'll set the minimum number of faces per person to 100, which means that five sets of faces corresponding to five famous people will be imported. Each facial image is labeled with the name of the person that the face belongs to.
 
 > **Sarah** TBD, it occurred to me to add a tip that links to the environment setup instructions. What do you think?
 
@@ -66,9 +66,9 @@ for i, axi in enumerate(ax.flat):
     axi.set(xticks=[], yticks=[], xlabel=faces.target_names[faces.target[i]])
 ```
 
-:::image type="content" source="../media/subplot-1.png" alt-text="Panel of 24 photos of political figures, with names." loc-scope="Azure":::
+:::image type="content" source="../media/subplot-2.png" alt-text="Panel of 24 photos of political figures, with names." loc-scope="Azure":::
 
-The next step is to convert the 42x67 images into a flat NumPy array of floats, and to convert the target values (the zero-based indices identifying the person that belongs to a face) into categorical values by [one-hot-encoding](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f?azure-portal=true) them. After that, we'll split the data for training and testing. Rather than allow Keras to do the splitting, we'll use scikit-learn's train_test_split function because it gives us more control over how the split is performed. And it will allow us to consistently test the network with data it hasn't seen before.
+The next step is to convert the 42x67 images into a flat NumPy array of floats, and to convert the target values (the zero-based indices identifying the person that belongs to a face) into categorical values by [one-hot-encoding](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f?azure-portal=true) them. After that, we'll split the data for training and testing. Rather than allow Keras to do the splitting, we'll use scikit-learn's `train_test_split` function because it gives us more control over how the split is performed. And it will allow us to consistently test the network with data it hasn't seen before.
 
 ```python
 from keras.utils import to_categorical
