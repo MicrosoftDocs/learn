@@ -44,7 +44,7 @@ Microservice architectures are technology agnostic, thus giving development team
 %TODO% - Flesh out the following, maybe a diagram. 😊
 
 1. Coupon service checks to see if coupon is valid
-1. When order is processed, raises event 
+1. When order is processed, Order raises event 
 1. Coupon service catches event, marks coupon redeemed
 
 In the next unit, you'll complete the coupon service code. You'll also make adjustments to the files that define the AKS deployment.
