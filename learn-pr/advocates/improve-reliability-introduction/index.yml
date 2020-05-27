@@ -21,6 +21,9 @@ levels:
 - beginner
 roles:
 - administrator
+- devops-engineer
+- solution-architect
+- technology-manager
 products:
 - azure
 prerequisites: none
