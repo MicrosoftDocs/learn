@@ -19,18 +19,18 @@ quiz:
       - content: "Data is stored in a master data store with which all microservices interact."
         isCorrect: false
         explanation: "The shared data store doesn't provide autonomy. Performing data schema updates can cause runtime conflicts for services accessing the same resources."
-      - content: "Each microservice is responsible for its own data. Each microservice implements its own data store that's best optimized for its workload, storage needs, and read/write patterns. Inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging."
+      - content: "Each microservice implements its own data store that's best optimized for its workload, storage needs, and read/write patterns."
         isCorrect: true
         explanation: "The data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in the production environment."
-      - content: "Data models are created based on the business domain and mapped to tables in a relational database. For example, coupons are stored in a coupon table, and orders are stored in an orders table."
+      - content: "Services don't directly store data. They send data to an event bus and it's processed by a data repository service."
         isCorrect: false
-        explanation: "Relational databases might be used, but each microservice would have its own complete data store."
+        explanation: "The event bus is used for inter-service communication, not data persistence."
     - content: "With regards to the ASP.NET Core Health Checks middleware, the code `services.AddHealthChecks().AddCheck(\"coupon-self\", () => HealthCheckResult.Healthy());` in `Startup.ConfigureServices` serves what purpose?"
       choices:
       - content: "Configures a Kubernetes liveness probe using HTTP GET."
         isCorrect: false
         explanation: "A Kubernetes liveness probe using HTTP GET is configured in the Kubernetes configuration YAML file."
-      - content: "It registers a health check named `coupon-self` and an implementation that returns the HTTP success code to the endpoint configured in the `Startup.Configure` method."
+      - content: "Registers a health check, named `coupon-self`, that returns the HTTP success code to the endpoint configured in the `Startup.Configure` method."
         isCorrect: true
         explanation: "For many apps, a basic health probe that reports the app's availability to process requests is sufficient. In the code example, the health check always returns a healthy state."
       - content: "Maps a health endpoint that is accessible at `<your-service>/liveness`."
