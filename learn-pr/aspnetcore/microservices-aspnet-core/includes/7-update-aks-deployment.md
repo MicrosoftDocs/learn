@@ -28,8 +28,8 @@ The `helm uninstall` and `helm install` commands used by the script are displaye
     1. If not signed in, select the **LOGIN** link in the upper right to sign into the app (the credentials are provided on the login page).
     1. Add your favorite products to the shopping bag by selecting the images.
     1. Select the shopping bag icon in the upper right.
-    1. Select **CHECKOUT**. 
-    1. Scroll to the **HAVE A DISCOUNT CODE?** field. 
+    1. Select **CHECKOUT**.
+    1. Scroll to the **HAVE A DISCOUNT CODE?** field.
 
         ![The shopping basket showing the discount code field](../media/temp/discount-code-field.png)
 

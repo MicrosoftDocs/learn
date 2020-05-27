@@ -22,7 +22,7 @@ quiz:
       - content: "Each microservice is responsible for its own data. Each microservice implements its own data store that's best optimized for its workload, storage needs, and read/write patterns. Inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging."
         isCorrect: true
         explanation: "The data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in the production environment."
-      - content: "Data models are created based on the business domain and mapped to tables in a relational database. For example, coupons are stored in a coupon table, orders are stored in an orders table, and so on."
+      - content: "Data models are created based on the business domain and mapped to tables in a relational database. For example, coupons are stored in a coupon table, and orders are stored in an orders table."
         isCorrect: false
         explanation: "Relational databases might be used, but each microservice would have its own complete data store."
     - content: "With regards to the ASP.NET Core Health Checks middleware, the code `services.AddHealthChecks().AddCheck(\"coupon-self\", () => HealthCheckResult.Healthy());` in `Startup.ConfigureServices` serves what purpose?"
@@ -33,12 +33,12 @@ quiz:
       - content: "It registers a health check named `coupon-self` and an implementation that returns the HTTP success code to the endpoint configured in the `Startup.Configure` method."
         isCorrect: true
         explanation: "For many apps, a basic health probe that reports the app's availability to process requests is sufficient. In the code example, the health check always returns a healthy state."
-      - content: "Maps a health endpoint that is accessible at `<yourservice>/liveness`."
+      - content: "Maps a health endpoint that is accessible at `<your-service>/liveness`."
         isCorrect: false
         explanation: "To map health check endpoints in ASP.NET Core, call `endpoints.MapHealthChecks(\"/liveness\");` in the `Startup.Configure` method."
     - content: "What is the benefit of using ACR?"
       choices:
-      - content: "ACR allows public access to container images, hence developers can access them without authenticating."
+      - content: "ACR allows public access to container images. Therefore, developers can access the images without authenticating."
         isCorrect: false
         explanation: "ACR is a private registry. Images can't be accessed without authentication."
       - content: "ACR is a private container registry and provides granular access control for development teams."

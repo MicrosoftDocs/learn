@@ -10,7 +10,7 @@ In this module, you:
 * Free e-book: [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/architecture/microservices/)
 * [Full eShopOnContainers reference app on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
 * Video: [Implement microservices patterns with .NET Core and Docker containers](https://aka.ms/microservices-video)
-    * Note: The above video is dated 2017 and does not reflect current .NET Core tooling. However, the architectural concepts and design patterns remain valid.
+  * Note: The above video is dated 2017 and doesn't reflect current .NET Core tooling. However, the architectural concepts and design patterns remain valid.
 
 ## Clean up Azure resources
 
@@ -38,8 +38,8 @@ To remove the service principal, run the following script:
 The preceding script:
 
 * Uses the following Azure CLI command to return a list of service principal identifiers from AAD. The identifiers are filtered to those:
-    * Owned by the current user.
-    * Containing the string `eShop-Learn-AKS` in the display name.
+  * Owned by the current user.
+  * Containing the string `eShop-Learn-AKS` in the display name.
 
     ```azurecli
     az ad sp list --show-mine --query "[?contains(displayName,'eShop-Learn-AKS')].appId" --output tsv
