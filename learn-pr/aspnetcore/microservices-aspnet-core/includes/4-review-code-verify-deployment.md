@@ -43,14 +43,14 @@ Even though the app has been deployed, it may take a few minutes to come online.
 
 1. Select the **General application status** link in the Cloud Shell to view the *WebStatus* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically every 10 seconds.
 
-    ![Health check page](../media/temp/health-check.png)
+    :::image type="content" source="../media/temp/health-check.png" alt-text="Health check page" border="true":::
 
     > [!NOTE]
     > While the app is starting up, you might initially receive an HTTP 503 response from the server. You may retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
 
 1. Once all the services are healthy, select the **Web SPA application** link in the Cloud Shell to test the *eShopOnContainers* web app. The following page appears:
 
-    ![eShop SPA](../media/temp/eshop-spa.png)
+    :::image type="content" source="../media/temp/eshop-spa.png" alt-text="eShop SPA" border="true":::
 
 1. Complete a purchase as follows:
     1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page.
@@ -58,6 +58,6 @@ Even though the app has been deployed, it may take a few minutes to come online.
     1. Select the shopping bag icon in the upper right.
     1. Select **CHECKOUT**, then select **PLACE ORDER** to complete the purchase.
 
-    ![eShop shopping bag with .NET Blue Hoodie](../media/temp/eshop-spa-shopping-bag.png)
+    :::image type="content" source="../media/temp/eshop-spa-shopping-bag.png" alt-text="eShop shopping cart with .NET Blue Hoodie" border="true":::
 
 In this unit, you've seen the existing *eShopOnContainers* app's checkout process without support for coupon codes. You'll review the design of the new coupon service in the next unit.

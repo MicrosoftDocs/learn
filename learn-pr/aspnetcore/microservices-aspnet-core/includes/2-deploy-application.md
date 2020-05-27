@@ -28,7 +28,7 @@ The script deploys a smaller, modified version of the [eShop on Containers refer
 
 > [!NOTE]
 > Non-blocking warnings are expected in the deployment process. In the event of an unexpected exception, you may reset any changes made by the script by executing the following command:
-> 
+>
 > ```azurecli
 > cd ~ && \
 >   rm -rf ~/clouddrive/aspnet-learn && \

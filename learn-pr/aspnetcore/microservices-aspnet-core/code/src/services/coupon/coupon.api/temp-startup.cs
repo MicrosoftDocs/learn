@@ -51,7 +51,6 @@ namespace Coupon.API
                     options.OAuthClientId("couponswaggerui");
                     options.OAuthAppName("eShop-Learn.Coupon.API Swagger UI");
                 })
-                //.UseSerilogRequestLogging()
                 .UseCors("CorsPolicy")
                 .UseRouting()
                 .UseAuthentication()

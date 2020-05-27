@@ -4,7 +4,7 @@ In this unit, you complete the *Coupon.API* project. You'll then run a script to
 
 An ASP.NET Core project for the coupon service has been provided in the *src/Services/Coupon/Coupon.API* directory. Locate that directory in the Cloud Shell editor, and apply the following changes to the service:
 
-1. In *Controllers/CouponController.cs*, replace the comment `/* Add the GetCouponByCodeAsync method */` with the following code:
+1. In *Controllers/CouponController.cs*, replace the comment `// Add the GetCouponByCodeAsync method` with the following code:
 
     ```csharp
     [HttpGet("{code}")]
@@ -40,15 +40,21 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
         With the preceding change:
 
         * ASP.NET Core's health check service is registered in the coupon service's dependency injection container. ASP.NET Core provides health checks middleware that executes when a health check endpoint is requested.
-        * The `AddCustomHealthCheck` extension method (implemented in *Extensions/IServiceCollectionExtensions.cs*), tests external service dependencies to confirm availability and normal operation. Examples of such external dependencies include MongoDB and RabbitMQ.
+        * The `AddCustomHealthCheck` extension method (implemented in *Extensions/IServiceCollectionExtensions.cs*), tests external service dependencies to confirm availability and normal operation. An example of such an external dependency is MongoDB.
 
             ```csharp
-            var hcBuilder = services.AddHealthChecks();
-            hcBuilder.AddCheck("self", () => HealthCheckResult.Healthy())
-                .AddMongoDb(
-                    configuration["ConnectionString"],
-                    name: "CouponCollection-check",
-                    tags: new string[] { "couponcollection" });
+            public static IServiceCollection AddCustomHealthCheck(
+              this IServiceCollection services,
+              IConfiguration configuration)
+            {
+                // code omitted for brevity
+
+                var hcBuilder = services.AddHealthChecks();
+                hcBuilder.AddCheck("self", () => HealthCheckResult.Healthy())
+                    .AddMongoDb(
+                        configuration["ConnectionString"],
+                        name: "CouponCollection-check",
+                        tags: new string[] { "couponcollection" });
             ```
 
         The preceding code adds:
@@ -59,9 +65,9 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
         > [!TIP]
         > The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) provides various custom health check implementations for ASP.NET Core projects. The MongoDB implementation used in this step is just one example.
 
-    1. In the `Configure` method, register the health checks endpoints with the ASP.NET Core routing system:
+    1. In the `Configure` method, replace the `// Add the endpoints.MapHealthChecks code` comment with the highlighted code:
 
-        [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configure&highlight=30-38)]
+        [!code-csharp[](../code/src/services/coupon/coupon.api/temp-startup.cs?name=snippet_configure&highlight=29-37)]
 
         The preceding change registers two HTTP health check endpoints with the ASP.NET Core routing system:
 
@@ -179,13 +185,13 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
     The *Chart.yaml* file contains a description of the chart. The *templates* directory contains template files. When Helm evaluates the chart with the `helm install` command, it sends all of the files in the *templates* directory to the template rendering engine. It then collects the rendered YAML created by those templates and sends it to AKS.
 
-## Build the coupon service in ACR
+## Container images in ACR
 
 Container images are hosted in container registries. For many scenarios, a public container registry like Docker Hub might be appropriate. Private container registries, such as ACR, are often more appropriate for enterprise scenarios. Only your team and services have access to a private registry. All of the container images used when the solution was initially deployed to AKS were from one of Microsoft's ACR endpoints.
 
 The following diagram depicts the relationships between Docker container images, container registries such as ACR, and Kubernetes/AKS deployments.
 
-![Diagram indicating the flow of a container image in ACR to a container in AKS](../media/temp/image-acr-aks.png)
+:::image type="content" source="../media/temp/image-acr-aks.png" alt-text="Diagram indicating the flow of a container image in ACR to a container in AKS" border="true" lightbox="../media/temp/image-acr-aks.png":::
 
 In the preceding diagram:
 
@@ -197,6 +203,8 @@ The coupon service uses a new container image you're creating. The image must be
 
 > [!NOTE]
 > The `helm install` command used later in the module specifies which container registry to use when the charts are installed to Kubernetes/AKS.
+
+## Build the coupon service in ACR
 
 Run the following script in the command shell to build the coupon service and *WebSPA* app container images and host them in ACR:
 

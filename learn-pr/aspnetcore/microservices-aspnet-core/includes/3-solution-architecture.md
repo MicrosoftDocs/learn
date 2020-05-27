@@ -27,7 +27,7 @@ The identity service in the diagram is configured to allow direct access. Conseq
 
 An event bus is used for asynchronous messaging and event-driven communication. The preceding architecture diagram depicts RabbitMQ in a Docker container deployed to AKS, but a service such as [Azure Service Bus](https://azure.microsoft.com/services/service-bus) would also be appropriate.
 
-![Event bus illustration](../media/temp/eventbus-implementation.png)
+:::image type="content" source="../media/temp/eventbus-implementation.png" alt-text="Event bus illustration" border="true" lightbox="../media/temp/eventbus-implementation.png":::
 
 The preceding diagram depicts the publish/subscribe (commonly shortened to *pub-sub*) pattern used with the event bus. Any service can publish an event to the event bus. Each service is responsible for subscribing to the messages relevant to its domain. The services each call an `AddEventBus` extension method in the `ConfigureServices` method of *Startup.cs*. This method establishes a connection to the event bus and registers the appropriate event handlers for that service's domain.
 
