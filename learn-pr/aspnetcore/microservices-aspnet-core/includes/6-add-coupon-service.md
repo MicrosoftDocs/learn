@@ -70,7 +70,51 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
         In the following Kubernetes deployment configuration file, the liveness and readiness probes use HTTP GET requests to the above mentioned health endpoints to determine their status codes. Any HTTP status code greater than or equal to 200 and less than 400 indicates success. Any other code indicates failure.
 
-        :::code language="yml" source="../code/src/services/coupon/coupon.api/deployment.yml" highlight="28,34":::
+        ```yml
+        kind: Deployment
+        apiVersion: apps/v1
+        metadata:
+          name: coupon
+          labels:
+            app: eshop
+            service: coupon
+        spec:
+          replicas: 1
+          selector:
+            matchLabels:
+              service: coupon
+          template:
+            metadata:
+              labels:
+                app: eshop
+                service: coupon
+            spec:
+              containers:
+                - name: coupon-api
+                  image: {{ .Values.registry }}/coupon.api:linux-latest
+                  imagePullPolicy: Always
+                  ports:
+                    - containerPort: 80
+                      protocol: TCP
+                    - containerPort: 81
+                      protocol: TCP
+                  livenessProbe:
+                    httpGet:
+                      port: 80
+                      path: /liveness
+                    initialDelaySeconds: 10
+                    periodSeconds: 15
+                  readinessProbe:
+                    httpGet:
+                      port: 80
+                      path: /hc
+                    initialDelaySeconds: 90
+                    periodSeconds: 60
+                    timeoutSeconds: 5
+                  envFrom:
+                    - configMapRef:
+                        name: coupon-cm
+        ```
 
 1. Set your current location to the coupon service project directory using the following command:
 
