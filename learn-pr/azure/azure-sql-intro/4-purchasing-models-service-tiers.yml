@@ -12,3 +12,28 @@ title: Purchasing models, service tiers, and hardware choices
 durationInMinutes: 10
 content: |
   [!include[](includes/4-purchasing-models-service-tiers.md)]
+quiz:
+    title: Selecting a service tier
+    questions:
+    - content: "Consider the following scenario: You're moving an application and database to Azure, but your database is currently 62 TB, with plans to continue to grow. You don't currently leverage any instance-scoped features. Which Azure SQL deployment option will be the easiest to move to?"
+      choices:
+      - content: "SQL Server in an Azure virtual machine"
+        isCorrect: false
+        explanation: "62TB is bigger than the max size allowed for this deployment option"
+      - content: "Azure SQL Managed Instance"
+        isCorrect: false
+        explanation: "62TB is bigger than the max size allowed for this deployment option"
+      - content: "Azure SQL Database - single database"
+        isCorrect: true
+        explanation: "Azure SQL Database - single database is currently the only deployment option that supports databases of that size, specifically with the Hyperscale service tier. If and when Azure SQL Managed Instance supports Hyperscale, since the application doesn't currently need any instance-scoped features, Azure SQL Database may still be the right option."
+      - content: "Azure SQL Database - elastic pool"
+        isCorrect: false
+        explanation: "62TB is bigger than the max size allowed for this deployment option"
+    - content: "True or False? Imagine you have an Azure SQL Database with the Serverless compute tier database deployed, with an auto-pause delay of two hours. After two hours of no activity, Azure will essentially turn off your compute and only charge you for storage."
+      choices:
+      - content: "True"
+        isCorrect: true
+        explanation: "Correct! Continue to the next unit."
+      - content: "False"
+        isCorrect: false
+        explanation: "Review the bottom of the Service Tier section of this unit."
