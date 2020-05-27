@@ -16,7 +16,7 @@ The following *src* subdirectories contain .NET Core projects, each of which is 
 |-------------------|-------------|
 | *Aggregators/* | Services to aggregate across multiple microservices for certain cross-service operations. An HTTP aggregator is implemented in the *ApiGateways/Aggregators/Web.Shopping.HttpAggregator* project. |
 | *BuildingBlocks/* | Services that provide cross-cutting functionality, such as the app's event bus used for inter-service events. |
-| *Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), DDD, and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS). The new **Coupon.API** project has been provided, but it's incomplete. |
+| *Services/* | These projects implement the business logic of the app. Each microservice is autonomous with its own data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), DDD, and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS). The new *Coupon.API* project has been provided, but it's incomplete. |
 | *Web/* | ASP.NET Core apps that implement user interfaces:<br>*WebSPA* is a storefront UI built with Angular.<br>*WebStatus* is the health checks dashboard for monitoring the operational status of each service. |
 
 ## Verify deployment to AKS

@@ -2,7 +2,7 @@ In this unit, you'll gain an understanding of the *eShopOnContainers* app and th
 
 ## Solution architecture
 
-:::image type="content" source="../media/temp/eshop-architecture.png" alt-text="eShop application architecture" border="true" lightbox="../media/temp/eshop-architecture.png":::
+:::image type="content" source="../media/temp/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../media/temp/eshop-architecture.png":::
 
 The *eShopOnContainers* app is an online store that sells various products, including pins, T-shirts, and coffee mugs. The store includes the following features:
 
@@ -27,7 +27,7 @@ The identity service in the diagram is configured to allow direct access. Conseq
 
 An event bus is used for asynchronous messaging and event-driven communication. The preceding architecture diagram depicts RabbitMQ in a Docker container deployed to AKS, but a service such as [Azure Service Bus](https://azure.microsoft.com/services/service-bus) would also be appropriate.
 
-:::image type="content" source="../media/temp/eventbus-implementation.png" alt-text="Event bus illustration" border="true" lightbox="../media/temp/eventbus-implementation.png":::
+:::image type="content" source="../media/temp/eventbus-implementation.png" alt-text="event bus illustration" border="true" lightbox="../media/temp/eventbus-implementation.png":::
 
 The preceding diagram depicts the publish/subscribe (commonly shortened to *pub-sub*) pattern used with the event bus. Any service can publish an event to the event bus. Each service is responsible for subscribing to the messages relevant to its domain. The services each call an `AddEventBus` extension method in the `ConfigureServices` method of *Startup.cs*. This method establishes a connection to the event bus and registers the appropriate event handlers for that service's domain.
 

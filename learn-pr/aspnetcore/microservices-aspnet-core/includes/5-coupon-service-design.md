@@ -24,7 +24,7 @@ The coupon service is implemented like a CRUD service, and the boundaries are cl
 |`Consumed`|A flag indicating whether the coupon code has been used.|
 |`OrderId` |The unique identifier of the associated order to which the coupon code has been applied.|
 
-These design choices may seem obvious, but note that the `Coupon` model is key to all of the business logic in `Coupon.API`. The coupon service:
+These design choices may seem obvious, but note that the `Coupon` model is a centerpiece of all business logic in the *Coupon.API* project. The coupon service:
 
 * Only concerns itself with the domain of coupons.
 * Relies on the other services to interact with other domains, such as determining whether an order is valid.
@@ -39,12 +39,21 @@ Microservice architectures are technology agnostic. This characteristic gives de
 | MongoDB | The NoSQL database that stores the coupons and their usage data. In a real-world scenario, it's common for services to use a managed database like [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db) instead of running them in a container. |
 | Docker | The web API project and the MongoDB database, along with their dependencies, are packaged into respective container images using Docker. |
 
-## Integration with Order
+## Integration events in the ordering service
 
-%TODO% - Flesh out the following, maybe a diagram. 😊
+Orders submitted through the UI are routed to the ordering service via the API gateway. The ordering service then validates the coupon with the coupon service.
 
-1. Coupon service checks to see if coupon is valid
-1. When order is processed, Order raises event 
-1. Coupon service catches event, marks coupon redeemed
+:::image type="content" source="../media/temp/coupon-ordering-event-bus.png" alt-text="event messaging flow between the ordering and coupon services" border="true" lightbox="../media/temp/coupon-ordering-event-bus.png":::
+
+1. The ordering service raises an event of type `OrderStatusChangedToAwaitingCouponValidationIntegrationEvent`. The event:
+    * Indicates that there's an order awaiting coupon validation.
+    * Is serialized as a message on the event bus.
+1. The coupon service receives the event from the event bus and invokes the appropriate event handler to determine the status of the coupon.
+1. The coupon service raises an event to indicate the status of the coupon.
+    * If the coupon is valid, the coupon service:
+        * Marks the coupon as "consumed" in the database.
+        * Raises an event of type `OrderCouponConfirmedIntegrationEvent`. This event sends a message to the event bus to inform the ordering service that the order may be processed.
+    * If the coupon is invalid, an event of type `OrderCouponRejectedIntegrationEvent` is raised.
+1. The ordering service handles the event that was raised by the coupon service.
 
 In the next unit, you'll complete the coupon service code. You'll also modify the files that define the AKS deployment.
