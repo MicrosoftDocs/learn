@@ -6,7 +6,7 @@ The following video shows how to create the Azure resources you'll need. Use the
 
 ## Create the storage account
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the account you used when you activated the sandbox.
 1. Search for **Storage accounts** by using the Azure portal search box.
 1. In **Storage accounts**, select **Add**.
 1. Use the following values for the storage account:
@@ -53,7 +53,7 @@ The following video shows how to create the Azure resources you'll need. Use the
 
 1. Wait for the Storage Sync Service to be created.
 1. When you get the notification, select **Go to resource**.
-1. In the Storage Sync Service Overview pane, select **Sync group**.
+1. In the **Storage Sync Service Overview** pane, select **Sync group**.
 1. Enter these values:
 
    |Box |Value  |

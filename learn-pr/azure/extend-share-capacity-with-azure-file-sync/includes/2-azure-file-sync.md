@@ -8,7 +8,7 @@ In this unit, you'll explore what Azure File Sync is, how it works, and what you
 
 Azure File Sync uses your on-premises file server as a local cache for your Azure file share. With cloud tiering, you can cache locally on your file server the files your organization uses the most. The files that are used less frequently are accessible from the same local share, but only a pointer to the data is stored there. When a user goes to open the file, the rest of the file data is pulled from Azure Files.
 
-The following diagram shows what happens when a user requests two files. File *A* is used frequently, so the entire file is available on the local file share. File *B* isn't used often, so the rest of the file is retrieved from the Azure file share.
+The following diagram shows what happens when a user requests two files. File A is used frequently, so the entire file is available on the local file share. File B isn't used often, so the rest of the file is retrieved from the Azure file share.
 
 ![Diagram that shows the local share returning file A and the Azure file share returning data for file B.](../media/2-azure-file-sync-extend-file-share.png)
 
@@ -29,7 +29,7 @@ There are some terms you need to understand to use Azure File Sync.
 - *Azure File Sync agent* is a downloadable package that enables Windows Server to be synced with an Azure file share. The agent has three components: 
 
    - *FileSyncSvc.exe*. Service that monitors changes on endpoints.
-   - *StorageSync.sys*. Azure File system filter driver.
+   - *StorageSync.sys*. Azure file system filter driver.
    - PowerShell management cmdlets.
 
 - A *server endpoint* represents a specific location on a registered server, like a folder on a local disk. Multiple server endpoints can exist on the same volume if their paths don't overlap.

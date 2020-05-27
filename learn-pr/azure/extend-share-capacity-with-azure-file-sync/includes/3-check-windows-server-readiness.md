@@ -9,7 +9,7 @@ In this unit, you'll see what the system requirements are for servers that you w
 Before you consider using Azure File Sync with your on-premises servers, be aware of the following possible problems:
 
 - *Antivirus*: Antivirus programs work by scanning files known for malicious code. This feature might cause an undesired recall of tiered files. Most recent antivirus products, including Microsoft products like Windows Defender and System Center Endpoint Protection, recognize and support dealing with these files. But if you're using a third-party program, check compatibility with the software vendor.
-- *Backup*: Like antivirus solutions, backup solutions can cause the recall and processing of tiered files. We highly recommended you use Azure Backup because it backs up the data on the Azure file share itself. If you're restoring files from Azure Backup, it's important to use volume-level or file-level restore operations when you're using Azure File Sync. The files restored by this method will automatically be synced to all endpoints in the sync group. Existing files will be replaced with the newly restored versions.
+- *Backup*: Like antivirus solutions, backup solutions can cause the recall and processing of tiered files. We highly recommended you use Azure Backup because it backs up the data on the Azure file share itself. If you're restoring files from Azure Backup, it's important to use volume-level or file-level restore operations when you're using Azure File Sync. Files restored by these methods will automatically be synced to all endpoints in the sync group. Existing files will be replaced with the newly restored versions.
 - *Encryption*: Azure File Sync works with common encryption methods from Microsoft, including BitLocker, Azure Information Protection, Azure Rights Management, and Active Directory RMS. Azure File Sync doesn't work with the NTFS file system encryption method, Encrypted File System (EFS).
 
 ## Evaluate the OS and files for compatibility
@@ -23,7 +23,7 @@ Azure File Sync has these system requirements for your local file server:
 - *Operating system*: Windows Server 2012 R2, Windows Server 2016, or Windows Server 2019, in either Datacenter or Standard edition in full or core deployments.
 - *Memory*: 2 GB of RAM or more.
 - *Patches*: Latest Windows patches applied.
-- *Storage*: Locally attached volume formatted in the NTFS file format. It can't be remote storage connected by USB.
+- *Storage*: Locally attached volume formatted in the NTFS file format. Remote storage connected by USB isn't supported.
 
 **Supported file system features**
 
@@ -42,7 +42,7 @@ There are many different file types on a Windows Server computer. Some files are
 - *-$.*: Temporary Office file
 - *.tmp*: Temporary file
 - *.laccdb*: Access DB locking file
-- *6878HDHJKDHHJ7878.*: Internal sync file
+- *6878HDHJKDHHJ7878*: Internal sync file
 - *\System Volume Information*:  Volume-specific folder
 - *$RECYCLE.BIN*: Folder for deleted items
 - *\SyncShareState*: Folder for sync

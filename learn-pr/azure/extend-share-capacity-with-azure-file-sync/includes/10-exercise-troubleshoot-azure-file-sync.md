@@ -1,6 +1,6 @@
 Azure File Sync provides multiple ways to monitor and diagnose sync problems. Tools are provided in the sync group and are on the Windows Server computer. You can also set up alerts in Azure Monitor. 
 
-You've deployed Azure File Sync and configured both the Azure and on-premises environments. Now, you need to troubleshoot a rogue file that's not syncing. You'll use the tools provided by Microsoft.
+You've deployed Azure File Sync and configured both the Azure and on-premises environments. Now you need to troubleshoot a rogue file that's not syncing. You'll use the tools provided by Microsoft.
 
 In this exercise, you'll first check that file sync is working correctly. Then you'll generate a file with invalid characters. You'll see how to diagnose sync problems and resolve them. The following video walks you through the process. Complete the steps in this exercise to continue following along in your Azure subscription.
 
@@ -8,7 +8,7 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
 ## Find your connection details
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the same account you used when you activated the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the account you used when you activated the sandbox.
 1. Go to the storage account. Select **All resources** > **extendcadfiles**.
 1. Under **Settings**, select **Access keys**.
 
@@ -19,7 +19,7 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 ## Create a mapped drive to the Azure file share
 
 1. If you closed your Remote Desktop connection, use these steps to connect to the VM:
-    1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the same account you used when you activated the sandbox.
+    1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the account you used when you activated the sandbox.
     1. Go to **Virtual machines** > **FileServerLocal**.
     1. Select **Connect** > **Download RDP File**, and then open the RDP file.
     1. In the **Windows Security** window, select **More choices** > **Use a different account**.
@@ -29,14 +29,14 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 1. In the **Folder** box, enter **\\\extendcadfiles.file.core.windows.net\cadfileshare**.
 1. Select **Connect using different credentials**.
 1. Select **Finish**.
-1. For the user name, type **AZURE\extendcadfiles**.
+1. For the user name, enter **AZURE\extendcadfiles**.
 1. For the password, paste in the key you copied in the previous section.
 1. Select **OK**.
 
 ## Check the file sync
 
 1. Open a new File Explorer window.
-1. Put the two File Explorer windows side by side, with D:\CADFolder on the left and the mapped cadfileshare on the right.
+1. Put the two File Explorer windows side by side, with D:\CADFolder on the left and the mapped cadfileshare on the right:
 
     ![Screenshot of two File Explorer windows side by side.](../media/10-side-by-side.png)
 
@@ -55,7 +55,7 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
 ## Troubleshoot file synchronization
 
-You can troubleshoot on your on-premises server or on the Azure portal. Syncing to the portal can take some time, so start troubleshooting locally.
+You can troubleshoot on your on-premises server or in the Azure portal. Syncing to the portal can take some time, so start troubleshooting locally.
 
 ### View the file sync issue on Windows Server
 

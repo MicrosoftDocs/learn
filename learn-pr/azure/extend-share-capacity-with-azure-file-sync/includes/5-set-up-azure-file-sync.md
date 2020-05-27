@@ -10,7 +10,7 @@ The storage account is used to store the file share. In Azure, a storage account
 
 ## 2. File share
 
-The file share is the cloud version of a normal on-premises file share. It will store all files and folders. You control the size of the file share by specifying a quota size. You can increase the quota in the future if you need to.
+The file share is the cloud version of a normal on-premises file share. It will store all files and folders. You control the size of the file share by specifying a quota size. You can increase the quota later if you need to.
 
 ## 3. Storage Sync Service
 
@@ -18,4 +18,4 @@ The Storage Sync Service is responsible for establishing trust between your comp
 
 ## 4. Sync group
 
-The sync group must contain one cloud endpoint that represents an Azure file share, and one or more server endpoints that map to a path on a registered Windows file server. The sync group manages the process by using metadata stored in a hidden folder: .SystemShareInformation. Don't delete this folder.
+The sync group must contain one cloud endpoint that represents an Azure file share and one or more server endpoints that map to a path on a registered Windows file server. The sync group manages the process by using metadata stored in a hidden folder: .SystemShareInformation. Don't delete this folder.

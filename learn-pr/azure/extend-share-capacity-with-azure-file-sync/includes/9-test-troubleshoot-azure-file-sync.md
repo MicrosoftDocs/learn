@@ -2,13 +2,13 @@ There are several ways to monitor Azure File Sync. You could use the Azure porta
 
 You've set up the Azure File Sync components in your Azure environment and on the target server. Now you want to ensure the environment functions correctly and monitor replication and file copy jobs.
 
-## Common issues
+## Common problems
 
-Later in this unit, you'll see how you can monitor Azure File Sync and check for syncing issues. But first let's look at some common issues and how they could be resolved.
+Later in this unit, you'll see how you can monitor Azure File Sync and check for syncing problems. But first let's look at some common problems and how they could be resolved.
 
 ### Can't mount the Azure file share
 
-If you're unable to mount your Azure file share on Windows Server, it could be that your company's firewall rules are blocking network traffic. Azure needs to have port 445 open to connect to Azure datacenters. Azure also denies connections that aren't secure. So your on-premises Windows Server computer has to support SMB encryption. If that isn't possible, you can disable secure transfers on the Azure storage account, but your company has to accept the associated lack of security with this approach.
+If you're unable to mount your Azure file share on Windows Server, it could be that your company's firewall rules are blocking network traffic. Azure needs to have port 445 open to connect to Azure datacenters. Azure also denies connections that aren't secure. So your on-premises Windows Server computer has to support SMB encryption. If that isn't possible, you can disable secure transfers on the Azure storage account, but your company has to accept the associated lack of security if you use this approach.
 
 ### Files or directory won't sync
 
@@ -26,7 +26,7 @@ In the first window, add a new text document in the CADFolder. Then add some tex
 
 You can view server health, server endpoint health, and metrics in the Storage Sync Service properties in the Azure portal.
 
-- **Registered server health**: If the server state is **Online**, it's communicating successfully with the service. If the server state is **Appears Offline**, you should check the Storage Sync Monitor process service to ensure it's running on the server.
+- **Registered server health**: If the server state is **Online**, it's communicating successfully with the service. If the server state is **Appears Offline**, check the Storage Sync Monitor process service to ensure it's running on the server.
 - **Server endpoint health**: Server endpoint health is calculated based on events logged in **Telemetry**. If there are any errors, the sync health state will be registered as **unhealthy**.
 - **Metrics**: You can view various metrics from within the Storage Sync Service. The metrics are:
     - **Bytes synced**: Size of data transferred
@@ -48,7 +48,7 @@ Azure Monitor allows you to view, analyze, and act on data in a central location
 
 ## View Windows Event logs
 
-The Telemetry Event Log is used to identify the registered server, sync, and cloud tiering health. Go to the Event Viewer, under the path Applications and Services\Microsoft\FileSync\Agent.
+The Telemetry Event Log is used to identify the registered server, sync, and cloud tiering health. Go to the Event Viewer, under the path **Applications and Services\Microsoft\FileSync\Agent**.
 
 Each event log entry contains various event IDs that identify sync health, registered server health, and cloud tiering health problems.
 

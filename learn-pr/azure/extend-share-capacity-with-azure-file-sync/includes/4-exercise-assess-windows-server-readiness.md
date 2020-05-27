@@ -72,7 +72,7 @@ Connect to the new server by using Remote Desktop client. You'll download a samp
 1. In the top menu, select **Connect**.
 1. Select **Download RDP File**.
 1. Open the RDP file from your browser and select **Connect**.
-1. In the **Windows Security** window, select **More choices**, and then **Use a different account**.
+1. In the **Windows Security** window, select **More choices**, and then select **Use a different account**.
 1. Enter the user name **learnadmin** and the password you used earlier, and then select **OK**.
 1. If you're asked to connect despite certificate errors, select **Yes**.
 1. After you've logged in, select **Start**, type **cmd**, and then select **Command Prompt**.
@@ -107,7 +107,7 @@ Connect to the new server by using Remote Desktop client. You'll download a samp
 
 ## Complete an assessment
 
-With the evaluation cmdlets installed, check that your file server and folders are compatible with Azure File Sync.
+With the evaluation cmdlets installed, check whether your file server and folders are compatible with Azure File Sync.
 
 1. Do a system and data file check:
 
