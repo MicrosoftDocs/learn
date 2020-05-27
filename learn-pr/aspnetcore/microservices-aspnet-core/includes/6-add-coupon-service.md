@@ -60,7 +60,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
         The preceding code adds:
 
         * A health check named `self`, which returns an HTTP success status code for each request to the coupon microservice health endpoint.
-        * A check for its MongoDB dependency using the `AddMongoDb` extension method. The `AddMongoDb` method is implemented in the [AspNetCore.HealthChecks.MongoDb](https://www.nuget.org/packages/AspNetCore.HealthChecks.MongoDb/) NuGet package.
+        * A check for its MongoDB dependency using the `AddMongoDb` extension method. The `AddMongoDb` method is implemented in the [AspNetCore.HealthChecks.MongoDb](https://www.nuget.org/packages/AspNetCore.HealthChecks.MongoDb) NuGet package.
 
         > [!TIP]
         > The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) provides various custom health check implementations for ASP.NET Core projects. The MongoDB implementation used in this step is just one example.
@@ -142,9 +142,9 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
     * The ASP.NET Core runtime image is used as the base image of the multistage build.
     * The .NET Core SDK image is acquired to support the running of the following .NET Core CLI commands against the *Coupon.API* project:
-        * `dotnet restore`&ndash;Restores the project's NuGet packages.
-        * `dotnet build`&ndash;Builds the project in release mode. The build artifacts are written to the *app/build/* directory of an intermediate image.
-        * `dotnet publish`&ndash;Publishes the project in release mode. The published bundle is written to the *app/publish/* directory of the final image.
+        * `dotnet restore`: Restores the project's NuGet packages.
+        * `dotnet build`: Builds the project in release mode. The build artifacts are written to the *app/build/* directory of an intermediate image.
+        * `dotnet publish`: Publishes the project in release mode. The published bundle is written to the *app/publish/* directory of the final image.
     * The final image contains the ASP.NET Core runtime and the published coupon service artifacts.
     * When a container is started from the final image, the coupon service is started by running `dotnet Coupon.API.dll`.
 

@@ -17,9 +17,9 @@ Each of the preceding features is managed with a distinct microservice. Each mic
 
 The *catalog* service stores its data in a SQL Server on Linux database. The *basket* service uses a Redis cache for storage, and so on. There's no single master data store with which all services interact. Instead, inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging. This data isolation gives every microservice the autonomy to independently perform data schema updates without breaking other services in the production environment.
 
-### Identity
+### Authentication and authorization
 
-The *WebSPA* client app delegates authentication and authorization concerns to an *identity* service that also serves as a Security Token Service (STS). It's a containerized ASP.NET Core project that uses [IdentityServer 4](https://identityserver4.readthedocs.io), a popular OpenID Connect and OAuth 2.0 framework for ASP.NET Core. An alternative is to use [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD). AAD offers identity and access management as a service.
+The *WebSPA* client app delegates authentication and authorization concerns to an *identity* service that also serves as a Security Token Service (STS). The identity service is a containerized ASP.NET Core project that uses [IdentityServer 4](https://identityserver4.readthedocs.io), a popular OpenID Connect and OAuth 2.0 framework for ASP.NET Core. An alternative to hosting an STS is to use [Azure Active Directory](https://azure.microsoft.com/services/active-directory) (AAD). AAD offers identity and access management as a service.
 
 The identity service in the diagram is configured to allow direct access. Consequently, the API gateway is bypassed. The full *eShopOnContainers* app, on which this sample is based, uses multiple API gateways separated by business areas. For this smaller implementation, however, another API gateway isn't required.
 
