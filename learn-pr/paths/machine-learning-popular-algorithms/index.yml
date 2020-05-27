@@ -11,13 +11,14 @@ metadata:
   show_latex: true
 title: 'Popular machine learning algorithms: PCA, SVM, and deep learning'
 summary: |
-  Welcome to the Popular Machine Learning Algorithms: PCA, SVM, and Deep Learning Learning Path! The content in this learning path pairs with in person workshops that run in Microsoft Reactors and are standalone learning resources (you don't have to come to a workshop to benefit from these modules).
-  Throughout this Learning Path you will be encouraged to test out Python code in Visual Studio Code (VS Code) using the Python extension and Jupyter Notebooks.
+  Welcome to the learning path for Popular Machine Learning Algorithms: PCA, SVM, and Deep Learning! The content in this learning path pairs with in-person workshops that run in Microsoft Reactor and are standalone learning resources (you don't have to come to a workshop to benefit from these modules).
+  Throughout this learning path, you will be encouraged to test out Python code in Visual Studio Code (VS Code) by using the Python extension and Jupyter Notebooks.
 
   In this learning path, you'll:
-    - Learn the strengths and limitations of conditional probability and Naive Bayes machine learning. 
-    - 
-    -
+  - Learn the strengths and limitations of conditional probability and Naive Bayes machine learning. 
+  - Learn how to use principal component analysis to learn about the contents of a food nutrition dataset.
+  - Learn how to use support vector machine models to better support complex data and questions.
+  - Learn how to prepare and train a neural network model to use for classification of a dataset.
 
   Complementary content for Microsoft Reactor Workshops.
   
