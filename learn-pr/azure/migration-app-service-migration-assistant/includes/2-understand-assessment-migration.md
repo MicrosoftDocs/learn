@@ -21,25 +21,25 @@ However, one of the benefits of using a Platform as a Service (PaaS) offering li
 
 ### What types of issues does the assessment check for?
 
-TODO: I'll write a sentence or two about each of these based on the link, below.
+The Migration Assistant looks for specific features of a web application to ensure that Azure App Service can accommodate that feature, or that the Migration Assistant is capable of automatically migrating that feature.  The following table provides some insight into the checks that the Migration Assistant does.
 
-"Readiness checks"
+| Readiness check | Explanation |
+|---|---|
+| Port bindings | Since Azure App Service only allows for standard web traffic, this readiness check ensures that the web app only listens on ports 80 (for http traffic) and 443 (for https traffic). |
+| Protocols | Since Azure App Service only works with http and https protocols, this readiness check ensures that the web app only handles http-based protocols.  For example, if your web app depends on Windows Communication Foundation, it would not pass this readiness check. |
+| Certificates | Azure App Service can handle security certificates, but this readiness check will warn you that the Migration Assistant will not migrate the certificate automatically for you. |
+| Location tags | Location tags allow you to keep configuration for all web apps hosted on a server in a single file rather than hosted in individual web.config files for each web app. Azure App Service apps use a preconfigured IIS applicationhost.config file and do not support the location tags feature.  The settings for each web app you'll migrate should be moved into individual web.config files.  This readiness check identifies the use of location tags.  |
+| ISAPI Filters | Azure App Service provides some support for ISAPI Filters, however it depends on the way the ISAPI Filter was implemented and the Migration Assistant will not migrate an application that depends on an ISAPI filter.  You first must remove the ISAPI Filter from your application, migrate, then add the ISAPI filter manually in Azure App Service. |
+| Application Pools | Since Azure App Service support one application pool per app, this readiness check ensures that your web app only relies on a single application pool. |
+| Application Pool Identity | Azure App Service apps are hosted in an IIS worker process that runs in a system managed account associated with the application pool.  This is also the default identity used by on-premises installations of IIS.  This readiness check ensures that the web app is configured to run in the default identity. |
+| Authentication Type | Azure App Service apps support a different set of authentication types than apps hosted on IIS running on premises. This readiness check ensures that the web app is configured to use Anonymous Authentication.  After migration, you can manually configure the authentication type on Azure App Service. |
+| Application Settings | This readiness check warns you of custom application settings in the web.config file that should be moved to the Azure App Service > Configuration > Application settings instead. |
+| Connection Strings | This readiness check determines if database connection strings stored in the web.config are pointing to on-premises databases.  If so, the Migration Assistant will give you the option to setup hybrid connections. |
+| Frameworks | The Migration Assistant supports only ASP.NET and PHP. If your app uses a different framework, you will be unable to perform the automatic migration. |
+| Configuration Error | The Migration Assistant ensures that your on-premises IIS is configured correctly and does not return an error when scanned. This readiness check ensures that there's no underlying issues with the web app prior to migration. |
+| Virtual Directories | Azure App Service stores all files in a fixed directory structure.  The Migration Assistant will move files into the appropriate sub directories, but is unable to migrate applications with virtual directories that are backed by UNC shares. |
 
-- Port bindings
-- Protocols
-- Certificates
-- Location tags
-- ISAPI Filters
-- Application Pools
-- Application Pool Identity
-- Authentication Type
-- Application Settings
-- Connection Strings
-- Frameworks
-- Configuration Error
-- Virtual Directories
-
-For more information:
+This information from this table was summarized from a the App Service Migration Assistant wiki.  For more information on each of these readiness checks, please refer to:
 
 https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks
 
@@ -49,10 +49,12 @@ https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks
 If the Azure App Service Migration Assistant finds issues when assessing your web application, this doesn't mean you have no options. You can:
 
 - Update the application to replace features that are dependent on lower-level extensibility features of Internet Information Services.  This could be relatively simple depending on the functionality in question.  For example, you could replace the custom logging features that were dependent on an ISAPI filter with Azure Application Insights. Application Insights requires only a few lines of code be added to an application and provides a wealth actionable reports.
+- Update the application by temporarily disabling the feature that is blocking the migration.  The Migration Assistant can guide you to do this.
 - Deploy the application "as is" to an Azure Virtual Machine. While you would not gain the benefits of using Azure App Services and would be required to maintain the operating system, you would no longer need to maintain the hardware, and you would have a single point of management for all your web services.
 
 ## Recap
 
 Here's the most important take aways from this unit:
 
-TODO
+- The Azure App Service Migration Assistant will look for incompatibilities between your on-premises web apps and what is supported on Azure App Service.  If there's an issue, there's usually a way to fix (or disable the feature causing) the issue on-premises, then retrying the Migration Assistant.  Alternatively, 
+- If there are no blocking issues, the Migration Assistant will migrate your web app to Azure App Service for you.
