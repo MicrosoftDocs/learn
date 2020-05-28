@@ -8,7 +8,7 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  no-loc: ["Docker", "Kubernetes" eShopOnContainers]
+  no-loc: ["Docker", "Kubernetes", eShopOnContainers]
 title: Introduction
 durationInMinutes: 1
 content: |

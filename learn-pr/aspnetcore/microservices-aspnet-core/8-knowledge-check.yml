@@ -19,10 +19,10 @@ quiz:
       choices:
       - content: "Data is stored in a master data store with which all microservices interact."
         isCorrect: false
-        explanation: "The shared data store doesn't provide autonomy. Performing data schema updates can cause runtime conflicts for services accessing the same resources."
+        explanation: "The shared data store doesn't provide autonomy. Applying data schema updates can cause runtime conflicts for services accessing the same resources."
       - content: "Each microservice implements its own data store that's best optimized for its workload, storage needs, and read/write patterns."
         isCorrect: true
-        explanation: "The data isolation gives every microservice the autonomy to independently perform data schema updates without breaking any other service in the production environment."
+        explanation: "The data isolation gives every microservice the autonomy to independently apply data schema updates without breaking any other service in the production environment."
       - content: "Services don't directly store data. They send data to an event bus and it's processed by a data repository service."
         isCorrect: false
         explanation: "The event bus is used for inter-service communication, not data persistence."
@@ -39,7 +39,7 @@ quiz:
         explanation: "To map health check endpoints in ASP.NET Core, call `endpoints.MapHealthChecks(\"/liveness\");` in the `Startup.Configure` method."
     - content: "What is the benefit of using ACR?"
       choices:
-      - content: "ACR allows public access to container images. Therefore, developers can access the images without authenticating."
+      - content: "ACR allows public access to container images. Consequently, developers can access the images without authenticating."
         isCorrect: false
         explanation: "ACR is a private registry. Images can't be accessed without authentication."
       - content: "ACR is a private container registry and provides granular access control for development teams."

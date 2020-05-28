@@ -15,7 +15,7 @@ The *eShopOnContainers* app is an online store that sells various products, incl
 
 Each of the preceding features is managed with a distinct microservice. Each microservice is autonomous, independently deployable, and responsible for its own data. This architecture enables each microservice to implement the data store that is best optimized for its workload, storage needs, and read/write patterns. Data store choices include relational, document, key-value, and graph-based.
 
-The *catalog* service stores its data in a SQL Server on Linux database. The *basket* service uses a Redis cache for storage, and so on. There's no single master data store with which all services interact. Instead, inter-service communication is performed on an as-needed basis, either via synchronous API calls or asynchronously through messaging. This data isolation gives every microservice the autonomy to independently perform data schema updates without breaking other services in the production environment.
+The *catalog* service stores its data in a SQL Server on Linux database. The *basket* service uses a Redis cache for storage, and so on. There's no single master data store with which all services interact. Instead, inter-service communication occurs on an as-needed basis, either via synchronous API calls or asynchronously through messaging. This data isolation gives every service the autonomy to independently apply data schema updates without breaking other services in the production environment.
 
 ### Authentication and authorization
 
@@ -33,13 +33,13 @@ The preceding diagram depicts the publish/subscribe (commonly shortened to *pub-
 
 ### API gateway
 
-The microservices are accessible to clients via the API gateway. Among other advantages, API gateways enhance security and decouple back-end services from individual clients. The *WebSPA* storefront is an ASP.NET Core MVC and Angular app that is accessible via a public IP address. The HTTP requests from the *WebSPA* app to the microservices are routed through the API gateway, which is an implementation of the **B**ackends-**F**or-**F**rontends (BFF) pattern. Basic routing configurations are implemented using the NGINX reverse proxy. The ASP.NET Core web API named *Web.Shopping.HttpAggregator* combines multiple requests into a single request. This is an example of the *Gateway Aggregation* pattern.
+The microservices are accessible to clients via the API gateway. Among other advantages, API gateways enhance security and decouple back-end services from individual clients. The *WebSPA* storefront is an ASP.NET Core MVC and Angular app that is accessible via a public IP address. The HTTP requests from the *WebSPA* app to the microservices are routed through the API gateway, which is an implementation of the **B**ackends-**F**or-**F**rontends (BFF) pattern. Basic routing configurations are implemented using the NGINX reverse proxy. The ASP.NET Core web API named *Web.Shopping.HttpAggregator* combines multiple requests into a single request&mdash;a pattern known as *Gateway Aggregation*.
 
 For real-world scenarios, use of managed API gateway services like [Azure API Management](https://azure.microsoft.com/services/api-management) is recommended.
 
 ### Coupon service
 
-Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day without affecting other systems. In this module, you'll create a new microservice named *Coupon.API* and deploy it to the existing *eShopOnContainers* app in production. While doing so, you'll also learn about:
+Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day without affecting other systems. In this module, you'll complete and deploy an ASP.NET Core microservice project named *Coupon.API* to the existing *eShopOnContainers* app in production. While doing so, you'll also learn about:
 
 * Designing microservices using **D**omain-**D**riven **D**esign (DDD).
 * Containerizing services using Docker.

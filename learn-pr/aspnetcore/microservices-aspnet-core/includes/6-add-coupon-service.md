@@ -1,8 +1,8 @@
-In this unit, you complete the *Coupon.API* project. You'll then run a script to generate changes to the *WebSPA* HTML, as well as generate and modify Helm charts to define the Kubernetes deployment.
+In this unit, you complete the *Coupon.API* project. You'll then run a script to generate changes to the *WebSPA* HTML, and generate and modify Helm charts to define the Kubernetes deployment.
 
 ## Add the coupon service
 
-An ASP.NET Core project for the coupon service has been provided in the *:::no-loc text="src/Services/Coupon/Coupon.API":::* directory. Locate that directory in the Cloud Shell editor, and apply the following changes to the service:
+An ASP.NET Core project for the coupon service has been provided in the *:::no-loc text="src/Services/Coupon/Coupon.API":::* directory. Locate that directory in the Cloud Shell editor. Apply the following changes to the service:
 
 1. In *:::no-loc text="Controllers/CouponController.cs":::*, replace the comment `// Add the GetCouponByCodeAsync method` with the following code:
 
@@ -173,7 +173,7 @@ An ASP.NET Core project for the coupon service has been provided in the *:::no-l
     * Adds the coupon service endpoints to the aggregator Helm chart in *:::no-loc text="deploy/k8s/helm-simple/webshoppingagg/templates/configmap.yaml":::*
     * Adds the coupon health check to the *WebStatus* Helm chart in *:::no-loc text="deploy/k8s/helm-simple/webstatus/templates/configmap.yaml":::*.
 
-    To create an object in a Kubernetes cluster, the object specification must be provided in a YAML file. You'll use Helm's template functionality to generate and send the YAML to the cluster.
+    To create an object in a Kubernetes cluster, the object specification must be provided in a YAML file. Helm's template functionality will generate and send the YAML to the cluster.
 
     The Helm chart for the coupon service is composed of the following files in the *:::no-loc text="deploy/k8s/helm-simple/coupon":::* directory:
 
@@ -191,7 +191,7 @@ Container images are hosted in container registries. For many scenarios, a publi
 
 The following diagram depicts the relationships between Docker container images, container registries such as ACR, and Kubernetes/AKS deployments.
 
-:::image type="content" source="../media/temp/image-acr-aks.png" alt-text="Diagram indicating the flow of a container image in ACR to a container in AKS" border="true" lightbox="../media/temp/image-acr-aks.png":::
+:::image type="content" source="../media/temp/image-acr-aks.png" alt-text="A container image is created by a developer, sent to ACR, and retrieved by AKS" border="true" lightbox="../media/temp/image-acr-aks.png":::
 
 In the preceding diagram:
 

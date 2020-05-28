@@ -23,7 +23,7 @@ The `helm uninstall` and `helm install` commands used by the script are displaye
     > [!NOTE]
     > Notice the unchanged services remain healthy throughout the redeployment of the services you changed.
 
-1. Once the services are all healthy, navigate to the *WebSPA* URL and perform the following steps:
+1. Once the services are all healthy, navigate to the *WebSPA* URL and do the following steps:
     1. Refresh the browser.
     1. If not signed in, select the **LOGIN** link in the upper right to sign into the app (the credentials are provided on the login page).
     1. Add your favorite products to the shopping bag by selecting the images.

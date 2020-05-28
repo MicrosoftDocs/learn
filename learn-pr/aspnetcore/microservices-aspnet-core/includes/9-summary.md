@@ -57,7 +57,7 @@ The preceding command restores your prior *:::no-loc text=".bashrc":::* profile 
 
 ## Reset Azure Cloud Shell
 
-The scripts used in this module attempt to make temporary changes to your Cloud Shell preferences without the need to reset your configuration. If you want to reset your Cloud Shell to its default configuration, see the [Cloud Shell documentation on deleting personal data](/azure/cloud-shell/troubleshooting#delete).
+The scripts used in this module make temporary changes to your Cloud Shell preferences. You don't need to reset your configuration if the scripts ran as intended. If you want to reset your Cloud Shell to its default configuration, see the [documentation on deleting personal data](/azure/cloud-shell/troubleshooting#delete).
 
 ## Learn more about microservices
 

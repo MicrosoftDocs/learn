@@ -1,4 +1,4 @@
-Soon after launching the setup script, the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution to the *:::no-loc text="~/clouddrive/aspnet-learn/src/":::* directory. You may investigate the solution while the script continues to deploy the Docker containers to AKS. While doing so, the script will continue to run.
+Soon after launching the setup script, the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution. The editor opens to the *:::no-loc text="~/clouddrive/aspnet-learn/src/":::* directory. You may investigate the solution while the script continues to deploy the Docker containers to AKS. While doing so, the script will continue to run.
 
 > [!NOTE]
 > If your Cloud Shell session disconnects due to inactivity, reconnect and execute the following command to return to this directory and open the Cloud Shell editor:
@@ -60,4 +60,4 @@ Even though the app has been deployed, it may take a few minutes to come online.
 
     :::image type="content" source="../media/temp/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/temp/eshop-spa-shopping-bag.png":::
 
-In this unit, you've seen the existing *eShopOnContainers* app's checkout process without support for coupon codes. You'll review the design of the new coupon service in the next unit.
+In this unit, you've seen the *eShopOnContainers* app's existing checkout process. You'll review the design of the new coupon service in the next unit.
