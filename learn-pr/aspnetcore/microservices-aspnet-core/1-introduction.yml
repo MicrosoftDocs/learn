@@ -8,6 +8,7 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
+  no-loc: [eShopOnContainers]
 title: Introduction
 durationInMinutes: 1
 content: |
