@@ -10,7 +10,7 @@ Here you load the _Space Game_ project in Visual Studio Code, configure Git, clo
 Visual Studio Code comes with an integrated terminal. Here you can both edit files and work from the command line.
 
 1. Start Visual Studio Code.
-1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
+1. On the **View** menu, select **Terminal**.
 1. In the drop-down list, select **bash**:
 
     ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
@@ -18,6 +18,8 @@ Visual Studio Code comes with an integrated terminal. Here you can both edit fil
     In the terminal window, you can choose any shell that's installed on your system. For example, you can choose Bash, Zsh, or PowerShell.
 
     Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
+
+    [!include[](../../shared/includes/troubleshoot-code-terminal.md)]
 
 1. Run the `cd` command to navigate to the directory where you want to work. Choose your home directory (`~`) or a different directory if you want.
 

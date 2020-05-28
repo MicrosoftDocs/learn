@@ -91,7 +91,7 @@ Set up Visual Studio Code so you can build the website locally and work with sou
 Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all from one place.
 
 1. Start Visual Studio Code.
-1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
+1. On the **View** menu, select **Terminal**.
 1. In the drop-down list, select **bash**:
 
     ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
@@ -99,6 +99,8 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
     Here you'll use Bash. Git for Windows provides Git Bash, which makes running Git commands easy.
+
+    [!include[](../../shared/includes/troubleshoot-code-terminal.md)]
 
 1. Run the `cd` command to go to the directory that you want to work from. You can choose your home directory (`~`) or a different one.
 
