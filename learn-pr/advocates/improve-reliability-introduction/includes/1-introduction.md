@@ -34,7 +34,3 @@ By the end of this module, you will be able to:
     work on your reliability challenges
 -   Explain the Dickerson hierarchy of reliability and the map it provides
     for approaching reliability challenges
-
-## Prerequisites
-
-TODO
