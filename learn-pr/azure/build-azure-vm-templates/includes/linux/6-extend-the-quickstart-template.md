@@ -83,10 +83,10 @@ Here you'll validate the template from the CLI.
 
 In practice, you might run lint tests or run your template through the Azure Resource Manager Visualizer before you run a test deployment.
 
-Similar to what you did previously, run `az group deployment validate` to validate your template.
+Similar to what you did previously, run `az deployment group validate` to validate your template.
 
 ```azurecli
-az group deployment validate \
+az deployment group validate \
   --resource-group $RESOURCEGROUP \
   --template-file azuredeploy.json \
   --parameters adminUsername=$USERNAME \
@@ -103,10 +103,10 @@ If you see errors, refer back to the previous part or compare your code to the [
 
 Here you'll run a command that's similar to the one you ran earlier to deploy the template. Because you haven't modified any existing resources &ndash; the VM, its network settings, or the storage account &ndash; Resource Manager won't take any action on those resources. It will only apply the resource you just added that runs the Custom Script Extension that installs Nginx on your VM.
 
-Run `az group deployment create` to update your deployment.
+Run `az deployment group create` to update your deployment.
 
 ```azurecli
-az group deployment create \
+az deployment group create \
   --name MyDeployment \
   --resource-group $RESOURCEGROUP \
   --template-file azuredeploy.json \

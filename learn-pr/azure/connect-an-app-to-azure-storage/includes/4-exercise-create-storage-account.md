@@ -43,4 +43,4 @@ az storage account create \
 > [!TIP]
 > If you are interested in exploring the options for the storage account, make sure to go through the **Create an Azure storage account** module where we go through them in depth.
 
-It will take a few minutes to deploy the account. While Azure is working on that, let's explore the APIs we'll use with this account.
+It will take a few minutes to deploy the account. While Azure is working on that, let's look at how we interact with the Azure Storage APIs.

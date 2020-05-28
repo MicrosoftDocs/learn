@@ -1,6 +1,6 @@
 Tab navigation is a navigation pattern where a tab strip (a row of touchable controls) is permanently displayed at the top or bottom of the screen. Each tab represents a specific section or page of the app. Users select tabs within the tab strip to move between content in the application. The following illustration shows the use of tab navigation in the iOS Clock app.
 
-![Screenshot of the iOS Clock app showing the bottom tab bar, containing various time-related tabs](../media/7-tab-navigation-example-world-clock.png)
+![Screenshot of the iOS Clock app showing the bottom tab bar containing various time-related tabs: World Clock, Alarm, Bedtime, Stopwatch, and Timer.](../media/7-tab-navigation-example-world-clock.png)
 
 Because the tab strip is always visible, tab navigation allows users to quickly switch between content in an application. Tab navigation is ideal when an application has several sections that a user is likely to use frequently. Clock applications are an excellent example. The clock, alarm, and stopwatch sections are likely to be frequently used.
 
@@ -12,7 +12,7 @@ If you need more than four tabs, consider using another navigation pattern, like
 
 `TabbedPage` implements tab navigation in Xamarin.Forms. This class displays a set of tabs and automatically switches the displayed content when the user selects a tab. The following illustration shows the UI areas provided by `TabbedPage`.
 
-![Diagram showing an example TabbedPage nested in an app, and containing three example children pages](../media/8-tabbed-page-diagram.png)
+![Illustration showing an example TabbedPage with a content area and a bottom tab bar containing three children pages: Globe, Compass, and Map.](../media/8-tabbed-page-diagram.png)
 
 To use it, you first create an instance of `TabbedPage`, and then assign it to the App class' `MainPage` property. The `TabbedPage` instance holds child pages in its `Children` property. A tab is automatically displayed for each child page.
 

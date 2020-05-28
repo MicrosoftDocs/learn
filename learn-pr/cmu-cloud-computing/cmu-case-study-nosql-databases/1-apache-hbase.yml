@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.1-apache-hbase
+title: Apache HBase
+metadata:
+  title: Apache HBase
+  description: Apache HBase
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 18
+content: |
+  [!include[](includes/1-apache-hbase.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block 1 has only intro statement and no visible graphic      
+# content: "Arrange the various entities of an HBase table in *decreasing* order of size in the HBase hierarchy:"
+
+# Did I Get This block 2 question 1
+  - content: "How does Apache HBase tolerate region server failures?"
+    choices:
+    - content: "HBase always replicates each row when inserted to multiple region servers to provide redundancy."
+      isCorrect: false
+      explanation: "Incorrect. HBase doesn't replicate data by itself, but relies on the underlying file system to provide replication. Think about the underlying filesystem in HBase. Does it offer any fault-tolerance mechanisms?" 
+    - content: "HBase commit logs are written to HDFS, which replicates it across multiple machines."
+      isCorrect: true
+      explanation: "Correct!"       
+    - content: "The master always stores a copy of the data."
+      isCorrect: false
+      explanation: "Incorrect. HBase would not be very scalable if the master node stored a copy of the data. Think about the underlying filesystem in HBase. Does it offer any fault-tolerance mechanisms?"  
+    - content: "HBase always replicates each row when inserted to multiple region servers to provide redundancy. HBase commit logs are written to HDFS, which replicates it across multiple machines."
+      isCorrect: false
+      explanation: "That's not quite right. HBase doesn't replicate data by itself, but relies on the underlying file system to provide replication. Think about the underlying filesystem in HBase. Does it offer any fault-tolerance mechanisms?"
+    - content: "All of the above"
+      isCorrect: false
+      explanation: "That's not quite right. HBase doesn't replicate data by itself, but relies on the underlying file system to provide replication. Think about the underlying filesystem in HBase. Does it offer any fault-tolerance mechanisms?"
+
+# Did I Get This block 2 question 2
+  - content: "An operation on an HBase table modifies 10 rows in sequence to zero out one of the columns. The column previously held the value of 1. Simultaneously, another HBase query retrieves the sum of that column over the same 10 rows through a Scan operation. What will be the result of the scan?"
+    choices:
+    - content: "5"
+      isCorrect: false
+      explanation: "That's not quite right. Because the modification is atomic, each row would be modified correctly. However, the Scan operation is not atomic and could be affected by the row modifications. Therefore some rows can be zeroed out and others could left intact. We cannot be certain that the scan result is 5. What are the consistency guarantees offered by HBase? Do they differ for different types of operations?"  
+    - content: "10"
+      isCorrect: false
+      explanation: "That's not quite right. Because the modification is atomic, each row would be modified correctly. However, the Scan operation is not atomic and could be affected by the row modifications. Therefore some rows can be zeroed out and others could left intact. We cannot be certain that the scan result is 10. What are the consistency guarantees offered by HBase? Do they differ for different types of operations?"
+    - content: "Anywhere between 0 and 10"
+      isCorrect: true
+      explanation: "Correct! Because the modification is atomic, each row would be modified correctly. However, the Scan operation is not atomic and could be affected by the row modifications. We cannot be certain of the scan result, and hence it could be any value between 0 and 10."        
+    - content: "0"
+      isCorrect: false
+      explanation: "That's not quite right. Because the modification is atomic, each row would be modified correctly. However, the Scan operation is not atomic and could be affected by the row modifications. Therefore some rows can be zeroed out and others could left intact. We cannot be certain that the scan result is 0. What are the consistency guarantees offered by HBase? Do they differ for different types of operations?"
+    

@@ -30,7 +30,7 @@ The Open Web Application Security Project ([OWASP](https://www.owasp.org?azure-p
 
 OWASP also provides tools, code, and documentation to help practitioners understand potential threats in their code and to take action.
 
-One notable project is the [OWASP Top Ten](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project?azure-portal=true). The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts. While there are hundreds of potential security risks out there, the Top Ten details some of the most important and most common risks that many organizations can tackle first.
+One notable project is the [OWASP Top Ten](https://owasp.org/www-project-top-ten/). The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts. While there are hundreds of potential security risks out there, the Top Ten details some of the most important and most common risks that many organizations can tackle first.
 
 You see the OWASP Top Ten in action when you scan the _Space Game_ project later in this module.
 
@@ -40,7 +40,7 @@ Roslyn refers to the .NET Compiler Platform. [Roslyn analyzers](https://docs.mic
 
 You can run Roslyn analyzers from Visual Studio or from the command line. The following image shows an example of running the Roslyn analyzers on the _Space Game_ web project from Visual Studio.
 
-![Visual Studio showing a run of Roslyn analyzers](../media/2-roslyn-results.png)
+![Screenshot of Visual Studio showing a run of Roslyn analyzers with two unused variable declaration warnings.](../media/2-roslyn-results.png)
 
 ### SonarCloud
 
@@ -54,7 +54,7 @@ SonarCloud works with programming languages like Java, C++, C#, and Python. Sona
 
 When the analysis completes, SonarCloud can upload the results so that they're available from its web interface. Here's an example that shows the summary for an analysis run on the _Space Game_ web project.
 
-![The summary for the analysis on SonarCloud](../media/3-sonar-scan-summary.png)
+![Screenshot of SonarCloud analysis summary showing 1 bug (B rating), 4 vulnerabilities (B rating), 4 code smells (A rating), and 11.5 percent coverage.](../media/3-sonar-scan-summary.png)
 
 You can select a category to learn more about the potential bugs or vulnerabilities the scan discovered.
 

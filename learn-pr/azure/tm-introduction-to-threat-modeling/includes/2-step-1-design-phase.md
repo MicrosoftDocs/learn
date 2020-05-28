@@ -93,4 +93,3 @@ Microsoft engineers recommend using one of three tools available today:
 
 - Threat Modeling Tool
 - Visio
-- Microsoft Threats Manager Platform

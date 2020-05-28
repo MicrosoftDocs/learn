@@ -41,7 +41,7 @@ Let's create our function!
 
 1. When prompted, select the **HTTP trigger** template option.
 1. When prompted, enter **simple-interest** as the function name.
-1. Open the Cloud Shell code editor:
+1. Open the Cloud Shell editor:
 
     ```bash
     code .

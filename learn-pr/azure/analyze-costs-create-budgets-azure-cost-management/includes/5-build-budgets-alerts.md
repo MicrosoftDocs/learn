@@ -8,7 +8,7 @@ After you create budgets, they show a simple view of your current spending again
 
 Let's create a budget. Select **Add**.
 
-![Example showing a list of budgets already created](../media/5-budgets01.png)
+![Screenshot listing Cost Management budgets already created.](../media/5-budgets01.png)
 
 In the **Create budget** window, make sure that the scope shown is correct. Choose any filters that you want to add. Filters allow you to create budgets on specific costs, such as resource groups in a subscription or a service like virtual machines. Any filter you can use in cost analysis can also be applied to a budget.
 
@@ -20,7 +20,7 @@ Next, identify the expiration date when the budget becomes invalid and stops eva
 
 Based on the fields chosen in the budget so far, a graph is shown to help you select a threshold to use for your budget. The suggested budget is based on the highest forecasted cost that you might incur in future periods. You can change the budget amount.
 
-![Example showing budget creation with monthly cost data](../media/5-monthly-budget01.png)
+![Screenshot of budget creation with monthly cost data.](../media/5-monthly-budget01.png)
 
 ## Email and alert configuration
 
@@ -30,7 +30,7 @@ Set an alert condition when 90% of the budget is reached.
 
 After you create a budget, it is shown in cost analysis. Viewing your budget in relation to your spending trend is one of the first steps when you start to analyze your costs and spending, as discussed in **Unit 4 – Evaluate your costs using Cost Analysis**.
 
-![Example budget and spending shown in cost analysis](../media/5-cost-analysis.png)
+![Screenshot of budget and spending shown in cost analysis with several charts and graphs.](../media/5-cost-analysis.png)
 
 In the preceding example, you created a budget for a subscription. However, you can also create a budget for a resource group. If you want to create a budget for a resource group, navigate to  **Cost Management + Billing** > **Subscriptions** > select a subscription > **Resource groups** > select a resource group > **Budgets** > and then **Add** a budget.
 
@@ -70,7 +70,7 @@ Support for alert types depends on the type of Azure account that you have (Micr
 
 To view cost alerts, open the desired scope in the Azure portal and select **Budgets** in the menu. Use the **Scope** pill to switch to a different scope. Select **Cost alerts** in the menu.
 
-![Example image of alerts shown in Cost Management](../media/5-budget-alerts-fullscreen.png)
+![Screenshot listing cost alerts shown in Cost Management.](../media/5-budget-alerts-fullscreen.png)
 
 The total number of active and dismissed alerts appears on the cost alerts page.
 

@@ -12,7 +12,7 @@ Structured data, sometimes referred to as _relational data_, is data that adhere
 
 Structured data is often stored in database tables with rows and columns with key columns to indicate how one row in a table relates to data in another row of another table. The below image shows data about students and classes with a relationship to grades that ties them together.
 
-![Conceptual art showing two structured data tables and a relationship table containing data that ties them together](../media/2-relational-db.png)
+![Diagram showing two structured data tables and a relationship table containing data that ties them together.](../media/2-relational-db.png)
 
 Structured data is straightforward in that it's easy to enter, query, and analyze. All of the data follows the same format. However, forcing a consistent structure also means evolution of the data is more difficult as each record has to be updated to conform to the new structure.
 

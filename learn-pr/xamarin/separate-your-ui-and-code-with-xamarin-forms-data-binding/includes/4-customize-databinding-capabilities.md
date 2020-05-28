@@ -11,7 +11,7 @@ A _two-way binding_ sends data in both directions between the source and target.
 
 The following illustration shows the two types of bindings you can create. Notice that "one way" means "copy only to the UI."
 
-![An illustration showing the data flow in one-way and two-way bindings.](../media/OneWayVsTwoWayBinding.png)
+![Illustration showing the data flow from a source object property and a target bindable object property with one-way or two-way bindings.](../media/OneWayVsTwoWayBinding.png)
 
 ## What is binding mode?
 
@@ -95,4 +95,6 @@ The recommended style shown in the previous code has a few subtleties worth ment
 
 The binding's event handler checks to see if the property name you passed matches the binding's `Path`. In other words, is this event a notification for the property that this binding is responsible for? If so, the binding reads the new value of the property and updates the UI. The following illustration shows an overview of the process.
 
-![An illustration of a binding handling a property-changed event](../media/PropertyChangedEventHandling.png)
+:::image type="complex" source="../media/PropertyChangedEventHandling.png" alt-text="Illustration of a binding handling a property-changed event.":::
+    Shows a progression of the binding process from a task's Notes property to an entry in the UI. First, a PropertyChange notification is raised. Then, the binding reads the new property value. Last, the binding updates the target property.
+:::image-end:::

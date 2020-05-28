@@ -4,7 +4,7 @@ Earlier, we used a `BindableProperty` to allow data changes to flow from the ele
 
 Notifications can be required in both directions. Each direction needs to be handled differently.
 
-![Image that shows notifications flowing both ways](../media/NotificationsInBothDirections.png)
+![Diagram showing notifications flowing from the TouchUpInside event of a UIButton to the iOS ButtonRenderer, then to the Xamarin.Forms Button and your app's Clicked event handling.](../media/NotificationsInBothDirections.png)
 
 ## Renderer notifies element
 

@@ -36,7 +36,7 @@ Now, you can use the **Deploy to Azure** wizard to create a new app in Azure App
 
 1. In the **Deploy to Azure** dialog, select **No available webapp, click to create a new one**.
 
-    ![Create WebApp dialog](../media/5-deploy-to-azure-dialog.png)
+    :::image type="content" source="../media/5-deploy-to-azure-dialog.png" alt-text="Create WebApp dialog." loc-scope="other":::
 
 1. In the **Create WebApp** dialog, fill in this information, and then select **OK**:
 
@@ -53,4 +53,4 @@ Now, you can use the **Deploy to Azure** wizard to create a new app in Azure App
 
 1. When the web app has been created, in the **Deploy to Azure** dialog, select **Run**. The Azure Toolkit for IntelliJ deploys the web app to Azure and displays the site in your default web browser.
 
-    ![The deployed web app running in Azure App Service](../media/5-deployed-webapp.png)
+    :::image type="content" source="../media/5-deployed-webapp.png" alt-text="The deployed web app running in Azure App Service." loc-scope="other":::

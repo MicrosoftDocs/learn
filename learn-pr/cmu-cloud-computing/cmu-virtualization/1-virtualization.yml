@@ -1,0 +1,35 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization.1-virtualization
+title: Formally define virtualization
+metadata:
+  title: Formally define virtualization
+  description: Formally define virtualization
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/1-virtualization.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "In Figure 3, does the guest OS that's running on VM 20 have to be identical to the guest OS running on VM 1?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. One of the benefits of virtualization is that the guest OSs running on VMs do not have to be identical. Think about all the ways that two VMs running on a hypervisor are related to each other."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "True or false? When a VM is rebooted, the host also has to be rebooted."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. Is a VM running on a host any different to a process running on the same host? A VM can be rebooted as a regular host; however, when a VM is rebooted, the host system continues to run normally."
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct!"

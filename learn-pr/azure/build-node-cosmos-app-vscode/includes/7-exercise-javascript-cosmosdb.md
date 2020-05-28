@@ -10,7 +10,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 The first task is to enable your application to connect to the Cosmos DB account you created in the first exercise.
 
-1. Start VS Code if it isn't already running, and open the **grades** folder, holding the **studentgrades.js** file.
+1. Start Visual Studio Code if it isn't already running, and open the **grades** folder, holding the **studentgrades.js** file.
 
 2. On the **Terminal** menu, click **New Terminal** if you don't currently have a terminal window open.
 
@@ -30,15 +30,15 @@ The first task is to enable your application to connect to the Cosmos DB account
     }
     ```
 
-5. In the toolbar on the left side of VS Code, select the **Azure** icon.
+5. In the toolbar on the left side of Visual Studio Code, select the **Azure** icon.
 
 6. In the **Cosmos DB** pane, if you aren't already connected, click **Sign in to Azure**. Sign in with the same credentials you used to set up the sandbox.
 
-    ![Screenshot of Cosmos DB pane in VS Code. The user is about to sign in to Azure](../media/7-azure-sign-in.png)
+    ![Screenshot of Cosmos DB pane in Visual Studio Code. The user is about to sign in to Azure.](../media/7-azure-sign-in.png)
 
 7. Expand your Azure account, right-click your Cosmos DB account, and then click **Copy Connection String**.
 
-    ![Screenshot of Cosmos DB pane in VS Code. The user is copying the connection string for the Cosmos DB account to the clipboard](../media/7-connection.png)
+    ![Screenshot of Cosmos DB pane in Visual Studio Code. The user is copying the connection string for the Cosmos DB account to the clipboard.](../media/7-connection.png)
 
 8. Paste the connection string for your Cosmos DB account where indicated in the **connectionString** property of the **config** object in your code.
 
@@ -352,15 +352,15 @@ You can now create and run a test harness that verifies that your code creates s
 
 ## Verify the documents in the Cosmos DB database
 
-You'll now query the documents in the database directly, using the Azure Cosmos DB extension for VS Code. You'll verify that the documents created by the app have been stored in the database.
+You'll now query the documents in the database directly, using the Azure Cosmos DB extension for Visual Studio Code. You'll verify that the documents created by the app have been stored in the database.
 
 1. In the **Cosmos DB** pane, expand your Azure account, expand the **\<your name or initials\>school** Cosmos DB account, expand the **SchoolDB** database, expand the **StudentCourseGrades** container, right-click **Documents**, and then click **Refresh**.
 
-    ![Screenshot of Cosmos DB pane in VS Code. The user has selected the **Refresh** command](../media/7-cosmosdb-refresh.png)
+    :::image type="content" source="../media/7-cosmosdb-refresh.png" alt-text="Screenshot of Cosmos DB pane in Visual Studio Code. The user has selected the Refresh command." loc-scope="vs-code":::
 
 2. Expand the **Documents** folder. You should see only the documents **S901** and **S902**. The documents that you created in the first exercise (**S101**, and **S102**) should have been deleted:
 
-    ![Screenshot of Cosmos DB pane in VS Code showing the documents in the **StudentCourseGrades** container](../media/7-cosmosdb-documents.png)
+    :::image type="content" source="../media/7-cosmosdb-documents.png" alt-text="Screenshot of Cosmos DB pane in Visual Studio Code showing the documents in the StudentCourseGrades container." loc-scope="vs-code":::
 
 3. Click the **S901** document. It should look similar to this:
 
@@ -392,4 +392,4 @@ You'll now query the documents in the database directly, using the Azure Cosmos 
 
     If time allows, also examine the **S902** document.
 
-You've now used VS Code to create a Node.js application that can query, insert, update, and delete documents in a Cosmos DB database.
+You've now used Visual Studio Code to create a Node.js application that can query, insert, update, and delete documents in a Cosmos DB database.

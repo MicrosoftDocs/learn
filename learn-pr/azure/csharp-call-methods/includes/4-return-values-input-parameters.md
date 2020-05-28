@@ -2,7 +2,7 @@ In the previous unit, we used the dice roll code to illustrate the two different
 
 ## Return values
 
-Some methods are designed to complete their function and end "quietly".  In other words, they don't return values when they finish.  The are referred to as **void methods**.
+Some methods are designed to complete their function and end "quietly".  In other words, they don't return values when they finish.  They are referred to as **void methods**.
 
 Other methods are designed to return a value upon completion, typically the result of an operation.  A return value is the primary way a method can communicate back to the code that calls the method.
 
@@ -88,7 +88,7 @@ For example, as you type the word `dice` slowly, Intellisense will show you all 
 To experiment with Intellisense, type the letters `d`, `i` then `c`.  When Intellisense pops up, the identifier `dice` should appear.  Select the `tab` key on your keyboard and the entire word will be completed for you.  Or, use the up and down arrow keys to change the selection.
 
 > [!Note]
-> If the Intellisense window disappears, you can select the `backspace` key on your keyboard, then re-type the the last symbol to re-open Intellisense.
+> If the Intellisense window disappears, you can select the `backspace` key on your keyboard, then re-type the last symbol to re-open Intellisense.
 
 Next, type the member access operator.  The Intellisense popup reappears and shows you all of the methods (and other members of the class) that are available.  If you type the letter `N`, the list will be filtered and the word `Next` should be the top selection.  Again, select the `tab` key on the keyboard to autocomplete the entire word.
 

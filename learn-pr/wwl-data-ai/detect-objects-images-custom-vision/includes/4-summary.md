@@ -1,0 +1,3 @@
+Detecting objects in images has proven a key element in many applications that help improve safety, provide better medical imaging diagnostics, manage stock levels for inventory management, and even help preserve wildlife. The object detection capabilities in the Custom Vision service make is easy to develop models to support these kinds of scenario.
+
+You can find out more about the Custom Vision service in the [service documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service?azure-portal=true).

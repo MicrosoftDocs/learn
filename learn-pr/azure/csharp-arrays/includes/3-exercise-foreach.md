@@ -1,4 +1,4 @@
-Suppose we work for a manufacturer and need to take an inventory of our warehouse to determine the current number of finished products we have that are ready to ship.  In addition to the total number of finished products, we may also want to print out a count and running tally of each individual bin in our warehouse where our finished products are stored.  This running tally printout would create an audit trail so we can double-check our work and identify shrinkage.
+Suppose we work for a manufacturer and need to take an inventory of our warehouse to determine the current number of finished products we have that are ready to ship.  In addition to the total number of finished products, we may also want to print out a count and running total of each individual bin in our warehouse where our finished products are stored.  This running total printout would create an audit trail so we can double-check our work and identify shrinkage.
 
 ## Looping through an array using foreach
 
@@ -95,9 +95,9 @@ When you run the code, you should see the following output.
 We have 1775 items in inventory.
 ```
 
-### Step 5 - Create a variable to hold the current bin number and display the running tally
+### Step 5 - Create a variable to hold the current bin number and display the running total
 
-To fulfill the final requirement, we'll need to create a variable that will hold the current iteration of the `foreach` statement so we can display the bin and the count of finished items in that bin, along with the running tally of all items of bins accounted for so far.
+To fulfill the final requirement, we'll need to create a variable that will hold the current iteration of the `foreach` statement so we can display the bin and the count of finished items in that bin, along with the running total of all items of bins accounted for so far.
 
 Above the `foreach` statement, declare and initialize a new variable of type `int` to store the current number of the bin whose inventory is being processed.
 
@@ -112,10 +112,10 @@ bin++;
 ```
 The `++` operator increments the value of the variable by 1.  Its shortcut to writing `bin = bin + 1`.
 
-Finally, inside of the foreach, display the bin, its count of finished products, and the running tally of finished products in a nicely formatted message.
+Finally, inside of the foreach, display the bin, its count of finished products, and the running total of finished products in a nicely formatted message.
 
 ```csharp
-Console.WriteLine($"Bin {bin} = {items} items (Running tally: {sum})");
+Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
 ```
 Make sure your code matches the following passage of code.
 
@@ -127,7 +127,7 @@ foreach (int items in inventory)
 {
     sum += items;
     bin++;
-    Console.WriteLine($"Bin {bin} = {items} items (Running tally: {sum})");
+    Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
 }
 Console.WriteLine($"We have {sum} items in inventory.");
 ```
@@ -135,11 +135,11 @@ Console.WriteLine($"We have {sum} items in inventory.");
 When you run the code, you should see the following output.
 
 ```output
-Bin 1 = 200 items (Running tally: 200)
-Bin 2 = 450 items (Running tally: 650)
-Bin 3 = 700 items (Running tally: 1350)
-Bin 4 = 175 items (Running tally: 1525)
-Bin 5 = 250 items (Running tally: 1775)
+Bin 1 = 200 items (Running total: 200)
+Bin 2 = 450 items (Running total: 650)
+Bin 3 = 700 items (Running total: 1350)
+Bin 4 = 175 items (Running total: 1525)
+Bin 5 = 250 items (Running total: 1775)
 We have 1775 items in inventory.
 ```
 

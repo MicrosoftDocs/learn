@@ -5,7 +5,7 @@ metadata:
   description: This learning path is a high-level overview of artificial intelligence (AI) and machine learning. Modules are aimed at people with little or no knowledge of computer science and statistics. You will cover the essential concepts of AI and show you how to apply custom machine learning solutions with free, easy to use tools, all in your browser. You will learn simple but powerful ways that data scientists make predictions about objects, people, and the future. Later, we’ll cover exciting, complex topics you may have heard of, such as neural networks, computer vision, deep learning, and unsupervised learning.
   brand: azure
   ms.date: 06/30/2019
-  author: markjulmar
+  author: adrianstevens
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

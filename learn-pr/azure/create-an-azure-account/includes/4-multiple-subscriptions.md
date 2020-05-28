@@ -1,4 +1,4 @@
-With Azure, you only pay for what you use. You’ll receive a monthly invoice with payment instructions provided. You may organize your invoice into line items that make sense to you and meet your budget and cost tracking needs. You also can get set up for multiple invoices. Let’s take a look at how this works.
+With Azure, you only pay for what you use. You'll receive a monthly invoice with payment instructions provided. You may organize your invoice into line items that make sense to you and meet your budget and cost tracking needs. You also can get set up for multiple invoices. Let's take a look at how this works.
 
 ## Azure subscription
 
@@ -13,6 +13,7 @@ You might want to create additional subscriptions for resource or billing manage
 - **Billing**: You might want to also create additional subscriptions for billing purposes. Because costs are first aggregated at the subscription level, you might want to create subscriptions to manage and track costs based on your needs. For instance, you might want to create a subscription for your production workloads and another subscription for your development and testing workloads.
 
 You might also need additional subscriptions due to:
+
 - **Subscription limits**: Subscriptions are bound to some hard limitations. For example, the maximum number of Express Route circuits per subscription is 10. Those limits should be considered as you create subscriptions on your account. If there is a need to go over those limits in particular scenarios, then you might need additional subscriptions.
 
 ## Customize billing to meet your needs
@@ -23,5 +24,6 @@ Depending on your needs, you can set up multiple invoices within the same billin
 
 The following diagram shows an overview of how billing is structured. If you've previously signed up for Azure or if your organization has an Enterprise Agreement, your billing might be set up differently.
 
-![Diagram that shows an overview of how billing is structured with the billing account at the top](../media/4-billing-structure-overview.png)
-
+:::image type="complex" source="../media/4-billing-structure-overview.png" alt-text="Diagram showing overview of billing structure, with billing account at the top, down to several Azure subscriptions.":::
+    Top tier is a single billing account, then split to two billing profiles which have invoices and payment methods, then each profile splits to two invoice sections (four total), which then each split to two Azure subscriptions (eight total).
+:::image-end:::

@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Microsoft has created special guidelines for the development of responsible conversational AI. In this unit, you will get an introduction to the context of conversational AI.
   ms.date: 02/20/2020
-  author: RWortmanMorris
-  ms.author: rawortma
+  author: Adriamen
+  ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

@@ -140,7 +140,7 @@ In the next few steps, you'll use Designer to build the lower part of the UI sho
 - Four `TextView` controls.
 - Two `LinearLayout` objects that manage the text.
 
-    ![Screenshot of completed TipCalculator UI highlighting four TextView elements split equally into two horizontal LinearLayout elements](../media/5-ex2-completed-ui.png "The layout design")
+    ![Screenshot of completed TipCalculator UI highlighting four TextView elements split equally into two horizontal LinearLayout elements.](../media/5-ex2-completed-ui.png)
 
 Open Designer:
 
@@ -163,7 +163,7 @@ Here you add the two `LinearLayout` objects that will manage the four `TextView`
 
 1. Repeat the previous step to add a second **LinearLayout (Horizontal)** object below the first one.
 
-    ![Screenshot showing Visual Studio Android Designer](../media/5-ex2-LinearLayoutHorizontal-vs.png)
+    ![Screenshot showing Visual Studio Toolbox pane showing the Layouts node with LinearLayout (Horizontal) highlighted.](../media/5-ex2-LinearLayoutHorizontal-vs.png)
 
 ## Add TextView controls
 
@@ -173,7 +173,7 @@ Now you'll add four `TextView` controls to display the tip and total amounts. Tw
 
     In the following **Toolbox**, the correct view is highlighted.
 
-    ![Screenshot showing the TextView control in the Toolbox](../media/5-ex2-textView.png)
+    ![Screenshot of Visual Studio showing the TextView control highlighted in the Toolbox.](../media/5-ex2-textView.png)
 
 1. Repeat the previous step to add a second **TextView** to the first **LinearLayout**.
 
@@ -185,7 +185,7 @@ Now you'll add four `TextView` controls to display the tip and total amounts. Tw
 
 Next you'll use the Designer **Properties** window to set the text in two of the **Tip** and **Total** `TextView` controls.
 
-![Screenshot showing how to set the text](../media/5-ex2-settext.png)
+![Screenshot showing the TipCalculator app with the TextView labels highlighted.](../media/5-ex2-settext.png)
 
 1. Select the leftmost **TextView** in the top horizontal **LinearLayout**.
 
@@ -195,7 +195,7 @@ Next you'll use the Designer **Properties** window to set the text in two of the
 
     Here's an example of the **Properties** window where the correct property is highlighted and the value is filled in.
 
-    ![Screenshot showing Android view properties](../media/5-ex2-tip.png)
+    ![Screenshot of Visual Studio Properties pane with the Text TextView property highlighted and set to a value of "Tip".](../media/5-ex2-tip.png)
 
 ## Check your AXML UI
 
@@ -252,4 +252,4 @@ When you run the TipCalculator app, you should see the UI you defined. Your app 
 
 You can view the completed solution in the folder **exercise2** > **final** in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].
 
-![Screenshot showing the completed TipCalculator app](../media/5-ex2-completed-app.png)
+![Screenshot showing the completed TipCalculator app UI on an Android emulator.](../media/5-ex2-completed-app.png)

@@ -11,7 +11,7 @@ You'll continue with the Phoneword solution you created in the previous exercise
 1. Right-click on the shared project named **Phoneword**, and select **Add** > **Class...**. (This will preselect the **Visual C#** > **Class** item template.)
 1. Name the file **PhonewordTranslator.cs**.
 
-![A screenshot showing Visual Studio's Add New Item menu with class selected.](../media/5-add-new-class-phonewordtranslator.png)
+![Screenshot showing Visual Studio Add New Item window with the Class template selected.](../media/5-add-new-class-phonewordtranslator.png)
 
 ## Add the translation logic
 
@@ -270,7 +270,7 @@ async void OnCall(object sender, System.EventArgs e)
 
 Build and run on any platform. It should display the alert, and allow you to dismiss it with either a **Yes** or **No** response.
 
-![Screenshot of the app running in an Android emulator, with the dial alert message showing](../media/5-android-alert-dialog.png)
+![Screenshot of an app running in an Android emulator showing the dial alert message.](../media/5-android-alert-dialog.png)
 
 ## Use the Xamarin.Essentials library to dial the phone
 
@@ -284,7 +284,7 @@ In order to make calls on Android an additional step is required. We must explic
 1. Select **Android Manifest**.
 1. In the **Required permissions** section, select the box next to the `CALL_PHONE` permission (see below).
 
-    ![Screenshot of Android project, with Android Manifest and CALL_PHONE highlighted](../media/5-project-properties-android-manifest-call-phone-permission.png)
+    ![Screenshot of Android project properties, with Android Manifest and CALL_PHONE permission highlighted.](../media/5-project-properties-android-manifest-call-phone-permission.png)
 
 ### Call the Xamarin.Essentials dialer abstraction
 
@@ -332,7 +332,7 @@ async void OnCall(object sender, System.EventArgs e)
 
 Many emulators and simulators will not properly simulate dialing the phone. However, the Android SDK Virtual Devices are an exception. On other simulated platforms, your code might throw an exception when it tries to dial the phone. If this happens, you can comment out the code to dial the phone, or wrap it in a `try` / `catch` statement.
 
-![Screenshot of the completed Phoneword app, running in an Android emulator](../media/5-final-phoneword-app.png)
+![Screenshot of the completed Phoneword app running in an Android emulator.](../media/5-final-phoneword-app.png)
 
 ## Summary
 

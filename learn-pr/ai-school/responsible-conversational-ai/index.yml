@@ -4,8 +4,8 @@ metadata:
   title: Discover Microsoft guidelines for responsible conversational AI development
   description: Learn Microsoft guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
   ms.date: 02/20/2020
-  author: RWortmanMorris
-  ms.author: rawortma
+  author: Adriamen
+  ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: barlan

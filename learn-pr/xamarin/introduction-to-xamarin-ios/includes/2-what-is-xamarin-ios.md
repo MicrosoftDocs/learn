@@ -1,6 +1,6 @@
 Visual Studio Tools for Xamarin is an open-source app development platform. It lets you build apps for many operating systems from a single, shared .NET code base. Xamarin allows you to write apps that can take full advantage of the power, features, and performance of each platform. Xamarin.iOS is one of the Xamarin frameworks that you use to create fully native iOS apps using C# in Visual Studio.
 
-![An illustration showing Xamarin targets all platforms](../media/2-target-all-platforms.png)
+![Illustration showing Xamarin targeting iOS, Android, and Windows platforms using native apps with shared C# UI code and shared C# app logic.](../media/2-target-all-platforms.png)
 
 ## What is a Xamarin.iOS app?
 

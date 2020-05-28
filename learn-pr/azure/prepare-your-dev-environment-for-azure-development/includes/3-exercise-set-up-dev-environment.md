@@ -106,7 +106,7 @@ To install Visual Studio, use the appropriate steps for your operating system.
 
    The following screenshot shows the Visual Studio Installer workload selected to allow Azure development within Visual Studio.
 
-   ![Screenshot of the Visual Studio Installer with the Azure development workload highlighted.](../media/5-select-azure-workload.png)
+   :::image type="content" source="../media/5-select-azure-workload.png" alt-text="Screenshot of the Visual Studio Installer with the Azure development workload highlighted." loc-scope="vs":::
 
 1. (Optional) Install the ASP.NET and web development workload to be ready to create web applications for Azure.
 
@@ -118,7 +118,7 @@ To install Visual Studio, use the appropriate steps for your operating system.
 
    The following screenshot shows the Cloud Explorer menu option that will be present if you have the Azure development workload installed.
 
-   ![Screenshot of the Visual Studio View menu with the Cloud Explorer menu option highlighted.](../media/5-verify-cloud-explorer.png)
+   :::image type="content" source="../media/5-verify-cloud-explorer.png" alt-text="Screenshot of the Visual Studio View menu with the Cloud Explorer menu option highlighted." loc-scope="vs":::
 
 ### macOS
 
@@ -132,7 +132,7 @@ To install Visual Studio, use the appropriate steps for your operating system.
 
    The following screenshot shows the .NET Core platform required to add Azure development capabilities to Visual Studio for Mac.
 
-   ![Screenshot of the Visual Studio for Mac installer with the selected .NET Core platform option highlighted.](../media/5-vsmac-install-net-core.png)
+   :::image type="content" source="../media/5-vsmac-install-net-core.png" alt-text="Screenshot of the Visual Studio for Mac installer with the selected .NET Core platform option highlighted." loc-scope="vs":::
 
 1. Click **Install and Update** once you are happy with the selections, and wait for the installer to complete.
 
@@ -177,7 +177,7 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
 1. The feature confirm dialog will open. Currently we have no optional feature, click **Confirm** to continue.
 
-   ![Screenshot of the feature confirmation dialog in Eclipse.](../media/7-eclipse-confirm-feature.png)
+   :::image type="content" source="../media/7-eclipse-confirm-feature.png" alt-text="Screenshot of the feature confirmation dialog in Eclipse." loc-scope="third-party":::
 
 1. Review and accept the license agreements, and click **Finish**.
 
@@ -220,13 +220,13 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
    The following screenshot shows the menu location of the **Settings** item.
 
-   ![Screenshot of Settings within the File menu of IntelliJ IDEA.](../media/9-intellij-open-settings.png)
+   :::image type="content" source="../media/9-intellij-open-settings.png" alt-text="Screenshot of Settings within the File menu of IntelliJ IDEA." loc-scope="third-party":::
 
 1. The **Settings** dialog will open. Select **Plugins** on the left, search `Azure Toolkit for IntelliJ` in plugin marketplace.
 
    The following screenshot shows the **Plugins** dialog as described above.
 
-   ![Screenshot of the Plugin window in IntelliJ IDEA.](../media/9-intellij-marketplace.png)
+   :::image type="content" source="../media/9-intellij-marketplace.png" alt-text="Screenshot of the Plugin window in IntelliJ IDEA." loc-scope="third-party":::
 
 1. Click **Install**.
 

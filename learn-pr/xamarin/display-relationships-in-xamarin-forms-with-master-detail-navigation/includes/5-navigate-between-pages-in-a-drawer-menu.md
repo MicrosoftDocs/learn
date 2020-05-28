@@ -8,7 +8,7 @@ Your master-detail page will coordinate between master and detail. It's common t
 1. The `Master` page notifies `MasterDetailPage`.
 1. `MasterDetailPage` updates the `Detail` content based on the user's selection.
 
-![An illustration that shows a conference app's MasterDetailPage instance, with arrows indicating its coordination between drawer menu item selection and detail pages](../media/3-coordinate-detail-page-changes.png)
+![Illustration showing a conference app's MasterDetailPage instance, with arrows indicating its coordination between drawer menu item selection and detail pages.](../media/3-coordinate-detail-page-changes.png)
 
 It's common to define `enum` to indicate which page the user selects from the master view.
 

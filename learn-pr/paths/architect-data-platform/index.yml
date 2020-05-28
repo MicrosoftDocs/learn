@@ -22,7 +22,7 @@ roles:
 products:
 - azure
 - azure-sql-database
-- azure-sql-data-warehouse
+- azure-synapse-analytics
 - azure-cosmos-db
 modules:
 - learn.intro-to-data-in-azure

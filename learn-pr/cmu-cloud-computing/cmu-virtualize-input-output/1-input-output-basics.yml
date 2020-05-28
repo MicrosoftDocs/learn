@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.1-input-output-basics
+title: I/O basics
+metadata:
+  title: I/O basics
+  description: I/O basics
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-input-output-basics.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "The CPU and I/O devices can communicate via:"
+    choices:
+    - content: "User I/O instructions documented in APIs."
+      isCorrect: false
+      explanation: "Incorrect. I/O instructions are system instructions. Also, they are not documented in APIs. Hint: There are two ways!"
+    - content: "System I/O instructions documented in ABIs."
+      isCorrect: false
+      explanation: "Incorrect. I/O instructions are not documented in ABIs. Hint: There are two ways!"
+    - content: "User I/O instructions documented in ISAs."
+      isCorrect: false
+      explanation: "Incorrect. I/O instructions are system instructions. Hint: There are two ways!"
+    - content: "System I/O instructions documented in ISAs."
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only way the CPU and I/O devices can communicate? Hint: There are two ways!"
+    - content: "Memory-mapped I/O."
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only way the CPU and I/O devices can communicate? Hint: There are two ways!"
+    - content: "System I/O instructions documented in ABIs; memory-mapped I/O."
+      isCorrect: false
+      explanation: "That's not quite right. I/O instructions are not documented in ABIs. Hint: There are two ways!"
+    - content: "System I/O instructions documented in ISAs; memory-mapped I/O."
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "Which of the following sequences of calls would a traditional system use to carry out an I/O operation?"
+    choices:
+    - content: "Call the operation-level interface, then the system call interface, then the device driver interface."
+      isCorrect: false
+      explanation: "Incorrect. In traditional systems, the operation-level interface is the bottom-layer interface. An I/O request would trigger two previous interfaces before being able to call the operation-level interface. Review Figure 2."
+    - content: "Call the operation-level interface, then the device driver interface, then the system call interface."
+      isCorrect: false
+      explanation: "Incorrect. In traditional systems, the operation-level interface is the bottom-layer interface. An I/O request would trigger two previous interfaces before being able to call the operation-level interface. Review Figure 2."
+    - content: "Call the system call interface, then the operation-level interface, then the device driver interface."
+      isCorrect: false
+      explanation: "Incorrect. On an I/O request, the device driver interface is called before the operation-level interface. Review Figure 2."
+    - content: "Call the system call interface, then the device driver interface, then the operation-level interface."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Call the device driver interface, then the operation-level interface, then the system call interface."
+      isCorrect: false
+      explanation: "Incorrect. On an I/O request, the system call interface is called before the device driver interface. Review Figure 2."
+    - content: "Call the device driver interface, then the system call interface, then the operation-level interface."
+      isCorrect: false
+      explanation: "Incorrect. On an I/O request, the system call interface is called before the device driver interface. Review Figure 2."
+
+  - content: "Memory-mapped I/O:"
+    choices:
+    - content: "Uses a specific physical memory address space for accessing I/O devices. The memory addresses that belong to this space are recognized by the memory controller as commands to I/O devices."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Uses a specific physical memory address space for accessing I/O devices. The memory addresses that belong to this space are recognized and dealt with by the ISA."
+      isCorrect: false
+      explanation: "Incorrect. The memory addresses that are used in memory-mapped I/O are not dealt with by the ISA."
+    - content: "Uses a privileged I/O instruction provided in the ISA."
+      isCorrect: false
+      explanation: "Incorrect. A memory-mapped I/O and a privileged I/O instruction are two different techniques that can achieve the same goal."
+    - content: "Uses memory addresses that correspond to physical memory locations."
+      isCorrect: false
+      explanation: "Incorrect. The memory addresses that are used in memory-mapped I/O do not correspond to physical memory locations."

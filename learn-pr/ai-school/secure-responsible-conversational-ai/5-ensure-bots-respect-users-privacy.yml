@@ -5,8 +5,8 @@ metadata:
   title: Make sure your bot respects users' privacy
   description: When building your bot, you need to consider the privacy of your users. In this unit, you will learn about how to build privacy into your bot and other considerations to ensure your bot is handling your user’s data responsibly.
   ms.date: 02/20/2020
-  author: RWortmanMorris
-  ms.author: rawortma
+  author: Adriamen
+  ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

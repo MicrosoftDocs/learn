@@ -21,13 +21,13 @@ It's time to deliver on those lofty buzzwords. Now you need to create a new proj
    | Name          | GetProducts  |
    | Authorization | Function     |
 
-The "api" folder in VS Code will now contain a new Azure Functions project along with a new function called "GetProducts".
+The "api" folder in Visual Studio Code will now contain a new Azure Functions project along with a new function called "GetProducts".
 
 ## Create the Create, Update, and Delete functions
 
 ### Create the CreateProduct function
 
-1. Open the Command Palette in VS Code.
+1. Open the Command Palette in Visual Studio Code.
 
 1. Type "create function".
 
@@ -45,7 +45,7 @@ The "api" folder in VS Code will now contain a new Azure Functions project along
 
 ### Create the UpdateProduct function
 
-1. Open the Command Palette in VS Code.
+1. Open the Command Palette in Visual Studio Code.
 
 1. Type "create function".
 
@@ -63,7 +63,7 @@ The "api" folder in VS Code will now contain a new Azure Functions project along
 
 ### Create the DeleteProduct function
 
-1. Open the Command Palette in VS Code.
+1. Open the Command Palette in Visual Studio Code.
 
 1. Type "create function".
 
@@ -81,7 +81,7 @@ The "api" folder in VS Code will now contain a new Azure Functions project along
 
 ## Run the project
 
-Azure Functions projects can be run and debugged locally from within VS Code.
+Azure Functions projects can be run and debugged locally from within Visual Studio Code.
 
 1. Open the Command Palette.
 
@@ -93,11 +93,11 @@ Azure Functions projects can be run and debugged locally from within VS Code.
 
    The Azure Functions project will launch. Notice that the terminal shows you what URL the function is running on.
 
-   ![VS Code integrated terminal showing functions URLs](../media/functions-in-terminal.png)
+   :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the Visual Studio Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
 
 1. Press <kbd>Cmd/Ctrl</kbd> and click on the "GetProducts" link to open it in a browser.
 
-   ![A web browser showing the execution result of the new HTTP function](../media/get-products-page.png)
+   :::image type="content" source="../media/get-products-page.png" alt-text="Screenshot of a web browser showing the execution result of the new HTTP function." loc-scope="other"::: <!-- no-loc -->
 
 1. The default function template takes in a name parameter and returns a greeting. To pass in the name parameter, modify the url to pass in a query string parameter called "name"
 
@@ -108,6 +108,6 @@ Azure Functions projects can be run and debugged locally from within VS Code.
    > [!NOTE]
    > Note that your name may not _actually_ be "John Jacob Jingleheimer Schmidt. Feel free to use your own name if it's different than that.
 
-   ![The browser displaying the text "Hello John Jacob Jingleheimer Schmidt"](../media/hello-message.png)
+    :::image type="content" source="../media/hello-message.png" alt-text="Screenshot of a web browser displaying the text Hello John Jacob Jingleheimer Schmidt." loc-scope="other"::: <!-- no-loc -->
 
 What a productive 8 minutes! You've got all of the endpoints created and running in Azure Functions. Now, you can sit back and REST - Representational State Transfer Protocol. What is that? I'm glad you asked, because it's going to make your API the envy of applications everywhere. In the next section, we'll talk about why.

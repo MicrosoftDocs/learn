@@ -17,23 +17,23 @@ quiz:
   questions:
   - content: What does Azure AD B2B provide?
     choices:
-    - content: Azure AD B2B makes it possible for you to manage your customers' identities and access to applications and resources.
+    - content: Azure AD B2B allows you to manage your customers' identities. It provides access to applications and resources.
       isCorrect: false
-      explanation: You use Azure B2C to manage customer identities. You use Azure AD B2B to invite external users to your tenant to collaborate with external staff members.
-    - content: Azure AD B2B makes it possible for you to let your users access virtual machines using their company Azure Active Directory credentials.
+      explanation: You use Azure B2C to manage customer identities. You use Azure AD B2B to invite external users to your tenant so that your staff can collaborate with them.
+    - content: Azure AD B2B allows you to let your users access virtual machines by using their company Azure AD credentials.
       isCorrect: false
-      explanation: You use Azure AD B2B invite external users to your tenant to collaborate with external staff members.
-    - content: Azure AD B2B makes it possible for you to invite external users to your tenant to collaborate with external staff members.
+      explanation: You use Azure AD B2B to invite external users to your tenant so that your staff can collaborate with them.
+    - content: Azure AD B2B allows you to invite external users to your tenant so that your staff can collaborate with them.
       isCorrect: true
-      explanation: Your company could be working with external contractors, and they would be invited as guest users. Once the work is done, access for those contractors can be revoked.
-  - content: What does the Azure AD Application Proxy do?
+      explanation: If your company works with external contractors, those contractors can be invited as guest users. When the work is done, access for those contractors can be revoked.
+  - content: What does Azure AD Application Proxy do?
     choices:
-    - content: You use it to identify applications in your Azure AD.
+    - content: You use it to identify applications in your instance of Azure AD.
       isCorrect: false
-      explanation: You use Application Proxy to add on-premises applications to your Azure AD
-    - content:  You use it to add on-premises applications to your Azure AD.
+      explanation: You use Application Proxy to add on-premises applications to your instance of Azure AD.
+    - content:  You use it to add on-premises applications to your instance of Azure AD.
       isCorrect: true
-      explanation: This will create secure remote access for applications you have on-premises
-    - content: You use it to add Azure AD Gallery applications to your Azure AD.
+      explanation: By using Application Proxy in this way, you create secure remote access for your on-premises applications.
+    - content: You use it to add Azure AD Gallery applications to your instance of Azure AD.
       isCorrect: false
-      explanation: You use Application Proxy to add on-premises applications to your Azure AD.
+      explanation: You use Application Proxy to add on-premises applications to your instance of Azure AD.

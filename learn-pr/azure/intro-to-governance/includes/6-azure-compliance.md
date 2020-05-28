@@ -29,7 +29,7 @@ There is a link to the privacy statement in the summary of this module.
 
 ## What is the Service Trust Portal?
 
-The **Service Trust Portal** (STP) hosts the Compliance Manager service, and is the Microsoft public site for publishing audit reports and other compliance-related information relevant to Microsoft’s cloud services. STP users can download audit reports produced by external auditors and gain insight from Microsoft-authored reports that provide details on how Microsoft builds and operates its cloud services.
+The **Service Trust Portal** (STP) hosts the Compliance Manager service, and is the Microsoft public site for publishing audit reports and other compliance-related information relevant to Microsoft's cloud services. STP users can download audit reports produced by external auditors and gain insight from Microsoft-authored reports that provide details on how Microsoft builds and operates its cloud services.
 
 STP also includes information about how Microsoft online services can help your organization maintain and track compliance with standards, laws, and regulations, such as:
 
@@ -45,7 +45,7 @@ STP also includes information about how Microsoft online services can help your 
   :::column-end:::
 :::row-end:::
 
-![Screenshot of the Service Trust Portal website](../media/6-servicetrustportal.png)
+:::image type="content" source="../media/6-servicetrustportal.png" alt-text="Screenshot of the Service Trust Portal website."  loc-scope="other"::: <!-- this is Service Trust Portal, APEX10 -->
 
 Service Trust Portal is a companion feature to the Trust Center, and allows you to:
 
@@ -68,7 +68,7 @@ Compliance Manager provides the following features:
 - Provides a secure repository in which to upload and manage evidence and other artifacts related to compliance activities.
 - Produces richly detailed reports in Microsoft Excel that document the compliance activities performed by Microsoft and your organization, which can be provided to auditors, regulators, and other compliance stakeholders.
 
-![Screenshot showing Compliance Manager website](../media/6-compliancemanager.png)
+:::image type="content" source="../media/6-compliancemanager.png" alt-text="Screenshot showing Compliance Manager website." loc-scope="other":::
 
 Compliance Manager provides ongoing risk assessments with a reference of risk-based scores for regulations and standards displayed in a dashboard view. Alternatively, you can create assessments for the regulations or standards that matter more to your organization.
 

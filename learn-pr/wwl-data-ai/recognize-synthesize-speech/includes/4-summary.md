@@ -1,0 +1,3 @@
+Speech recognition is concerned with taking the spoken word and converting it into a text representation, while speech synthesis is the process of converting text data to audible speech. Both of these tasks are supported by the Speech cognitive service.
+
+You can find out more about the Speech service in the [service documentation](https://docs.microsoft.com/azure/cognitive-services/speech-service/).

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.azure-spring-cloud-workshop
+metadata:
+  title: Azure Spring Cloud workshop
+  description: In this workshop, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Cloud (ASC).
+  author: judubois
+  ms.author: judubois
+  ms.date: 03/03/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Spring Cloud workshop
+summary: In this workshop, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Cloud (ASC).
+abstract: | 
+ In this module, you will:
+  - Create a new Azure Spring Cloud cluster
+  - Configure a Spring Cloud Config Server
+  - Build and deploy a Spring Boot microservice
+  - Create a Spring Cloud Gateway to access your microservice
+  - Use Spring Cloud Service Registry to discover your microservice
+  - Configure distributed tracing to debug a microservices architecture
+  - Deploy a Spring Boot microservice using GitHub Actions
+prerequisites:  |
+ - Azure CLI.
+ - Java 8 and an IDE.
+ - cURL or a similar HTTP utility.
+iconUrl: /learn/achievements/azure-spring-cloud-workshop.svg
+levels:
+- intermediate
+roles:
+- developer
+- administrator
+products:
+- azure
+- azure-spring-cloud
+units:
+- learn.azure-spring-cloud-workshop.1-introduction
+- learn.azure-spring-cloud-workshop.2-create-instance
+- learn.azure-spring-cloud-workshop.3-configure-server
+- learn.azure-spring-cloud-workshop.4-build-spring-boot-microservice
+- learn.azure-spring-cloud-workshop.5-build-gateway
+- learn.azure-spring-cloud-workshop.6-configure-distributed-tracing
+- learn.azure-spring-cloud-workshop.7-scale-spring-boot-microservices
+- learn.azure-spring-cloud-workshop.8-configure-ci-cd
+- learn.azure-spring-cloud-workshop.9-conclusion
+badge:
+  uid: learn.azure-spring-cloud-workshop.badge

@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.11-challenges-synchronization
+title: 'Cloud challenges: Synchronization'
+metadata:
+  title: 'Cloud challenges: Synchronization'
+  description: Learn about synchronization challenges in building cloud programs.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/11-challenges-synchronization.md)]
+quiz:
+  title: Check your knowledge
+  questions:  
+
+# Did I Get This block uses two code blocks saved as images "quiz-code-1.png" and "quiz-code-2.png".
+# Code for the images is in the MD file for this unit "11-challenges-synchronization.md".
+  - content: "Assume the following function: <br>
+             <img src=./media/quiz-code-1.png></img> <br>
+             Assume that initially accounts A and B both have 100 dollars and the following operations are executed simultaneously, such that both operations acquire a lock on the source account (as indicated in line number 3 in the transaction function) at the same time: <br>
+             <img src=./media/quiz-code-2.png></img> <br>
+             What will be the result?"
+    choices:
+    - content: "A will have 140 dollars and B will have 60 dollars."
+      isCorrect: false
+      explanation: "Incorrect. The presence of locks guarantees that the result will never be inconsistent. Pay close attention to the order in which the locks on the accounts are acquired."
+    - content: "A will have 60 dollars and B will have 90 dollars."
+      isCorrect: false
+      explanation: "Incorrect. The presence of locks guarantees that the result will never be inconsistent. Pay close attention to the order in which the locks on the accounts are acquired."
+    - content: "A will have 110 dollars and B will have 90 dollars."
+      isCorrect: false
+      explanation: "Incorrect. The presence of locks guarantees that the result will never be inconsistent. Pay close attention to the order in which the locks on the accounts are acquired."
+    - content: "The transactions will never finish due to a deadlock."
+      isCorrect: true
+      explanation: "Correct! The simultaneous acquisition of locks on both A and B by two separate transactions will lead to a deadlock because transaction 1 will fail to acquire the second lock on account B, and transaction 2 will fail to acquire the second lock on account A. At least one of them has to release the lock and start over for the transactions to proceed."

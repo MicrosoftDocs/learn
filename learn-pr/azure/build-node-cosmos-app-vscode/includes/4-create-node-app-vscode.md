@@ -1,10 +1,10 @@
-VS Code makes it easy to write JavaScript code and run it using Node.js. The VS Code editor has built-in support for JavaScript and JSON. You utilize the IntelliSense features of the editor to help you check syntax. IntelliSense also offers code-completion, helping to minimize any syntactic and semantic errors in your applications. You can use the integrated debugging tools to help test and verify your code.
+Visual Studio Code makes it easy to write JavaScript code and run it using Node.js. The Visual Studio Code editor has built-in support for JavaScript and JSON. You utilize the IntelliSense features of the editor to help you check syntax. IntelliSense also offers code-completion, helping to minimize any syntactic and semantic errors in your applications. You can use the integrated debugging tools to help test and verify your code.
 
-In this unit, you'll learn how to create a JavaScript application using VS Code. You'll see how to run the application using Node.js from within VS Code. Finally, you'll learn how to use the debugger to step through your code and examine variables as your code runs.
+In this unit, you'll learn how to create a JavaScript application using Visual Studio Code. You'll see how to run the application using Node.js from within Visual Studio Code. Finally, you'll learn how to use the debugger to step through your code and examine variables as your code runs.
 
 ## Create a JavaScript application for Node.js
 
-You can create a new JavaScript application for Node.js from within VS Code using a terminal window. The `npm init -y` command creates a new file, named **package.json** in the application folder. This file contains metadata that you use to describe your application to the Node.js runtime.
+You can create a new JavaScript application for Node.js from within Visual Studio Code using a terminal window. The `npm init -y` command creates a new file, named **package.json** in the application folder. This file contains metadata that you use to describe your application to the Node.js runtime.
 
 Edit the **package.json** file and add a description to the **description** property. Also replace the text **main.js** in the **main** property with the name of the JavaScript file that will hold your application code.
 
@@ -18,13 +18,13 @@ As you write your code, IntelliSense can perform type checking and code completi
 
 As you type, IntelliSense will use a combination of type checking and type inference to show suggestions appropriate to the current context. Type inference enables IntelliSense to present valid code completion suggestions as you write your code:
 
-![Screenshot of the editor VS Code, showing an Intellisense prompt](../media/4-intellisense.png)
+:::image type="content" source="../media/4-intellisense.png" alt-text="Screenshot of the editor Visual Studio Code, showing an Intellisense prompt." loc-scope="vs-code":::
 
 Type checking enables IntelliSense to show the parameters that a function call can take, and will type-check the expressions you provide for each function:
 
-![Screenshot of the editor VS Code, showing the parameters for a function call](../media/4-function-params.png)
+:::image type="content" source="../media/4-function-params.png" alt-text="Screenshot of the editor Visual Studio Code, showing the parameters for a function call." loc-scope="vs-code":::
 
-Other IntelliSense features available in VS Code include:
+Other IntelliSense features available in Visual Studio Code include:
 
 - Detecting unreachable code and unused variables. Statements that can never be run, and variables that are never used, are shown faded out in the editor.
 - Organizing imports. IntelliSense can quickly sort the imports that occur in a code file, and remove imports that aren't used.
@@ -34,11 +34,11 @@ Other IntelliSense features available in VS Code include:
   
 ## Run and debug a Node.js application
 
-The simplest way to run a Node.js application from VS Code is to use the `node` command from a terminal window. For example, to run the code in a file named **myapp.js**, run `node myapp.js`.
+The simplest way to run a Node.js application from Visual Studio Code is to use the `node` command from a terminal window. For example, to run the code in a file named **myapp.js**, run `node myapp.js`.
 
-You can use the native Node.js debugger (for example, `node inspect myapp`) from a terminal window, but VS Code provides an enhanced environment for stepping through and debugging Node.js applications.
+You can use the native Node.js debugger (for example, `node inspect myapp`) from a terminal window, but Visual Studio Code provides an enhanced environment for stepping through and debugging Node.js applications.
 
-Before you use the VS Code debugger, you should configure it. For example, the VS Code debugger displays output in its own **Output** window in the IDE. However, this window can't handle terminal input. If your app expects to receive keyboard input, you must configure the debugger to use an external terminal.
+Before you use the Visual Studio Code debugger, you should configure it. For example, the Visual Studio Code debugger displays output in its own **Output** window in the IDE. However, this window can't handle terminal input. If your app expects to receive keyboard input, you must configure the debugger to use an external terminal.
 
 To edit the debugger configuration settings, on the **Debug** menu, click **Open Configurations**. The configuration file contains a JSON object named **configurations**. To debug the application using an external terminal, add the **console** property and set it to **externalTerminal**.
 
@@ -64,12 +64,12 @@ To begin a debug session, first set one or more breakpoints in your application 
 
 Next, select **Start Debugging** on the **Debug** menu. If you're using an external terminal, a new terminal window will appear. If your application expects any input, enter it into this window. Any messages output by your application will appear in this window:
 
-![Screenshot of the debugger external terminal window](../media/4-debugger-terminal.png)
+:::image type="content" source="../media/4-debugger-terminal.png" alt-text="Screenshot of the debugger external terminal window." loc-scope="vs-code":::
 
-If you aren't using an external terminal, debugger output will appear in the **Output** window in VS Code.
+If you aren't using an external terminal, debugger output will appear in the **Output** window in Visual Studio Code.
 
 When the debugger reaches a breakpoint in your application, execution will pause, and the breakpoint statement is highlighted. On the left, you'll see windows where you can examine and set the values of local and global variables, and the call stack. You can also add **Watch** expressions, which are evaluated and displayed as execution proceeds:
 
-![Screenshot of the VS Code debugger](../media/4-debugger-at-breakpoint.png)
+:::image type="content" source="../media/4-debugger-at-breakpoint.png" alt-text="Screenshot of the Visual Studio Code debugger in action pausing at a breakpoint on some sample JavaScript code." loc-scope="vs-code":::
 
 The **Debug** toolbar appears above the editor window. This toolbar contains commands that enable you to single step through your code. If a statement contains a function call, you can step into that function, or step over it. The step out command continues execution until the function finishes. You can also continue running the application, either until the debugger reaches another breakpoint, or the application finishes.

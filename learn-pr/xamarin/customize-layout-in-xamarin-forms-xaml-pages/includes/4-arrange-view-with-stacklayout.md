@@ -4,7 +4,7 @@ Stacking views in a vertical or horizontal list is a common design for user inte
 
 `StackLayout` is a layout container that organizes its children left-to-right or top-to-bottom. The direction is based on its `Orientation` property, and the default value is top-to-bottom. The following illustration shows a conceptual view of a vertical `StackLayout`.
 
-![An illustration showing a list of blocks that are stacked vertically to show how StackLayout arranges its children.](../media/4-stack-layout.png)
+![Illustration showing four blocks stacked vertically from top to bottom of the screen.](../media/4-stack-layout.png)
 
 `StackLayout` has a list of `Children` that it inherits from its base class `Layout<T>`. The list stores views, which is good because most UI elements you'll work with in Xamarin.Forms derive from `View`. Layout panels are also derived from `View`, which means you can nest panels if you need to.
 
@@ -24,7 +24,7 @@ stack.Children.Add(c);
 
 We add the views to the `Children` collection and `StackLayout` automatically sizes and positions the views in a vertical list. Here's what it will look like on an iOS device:
 
-![A screenshot showing three boxes stacked vertically on an iOS device.](../media/4-stack-layout-rendered.png)
+![Screenshot showing three boxes stacked vertically at the top of the screen on an iOS device.](../media/4-stack-layout-rendered.png)
 
 Now let's look at how we would do the same thing in XAML. Here's an example of the same three views being added to a `StackLayout` in XAML:
 
@@ -56,7 +56,7 @@ It's common to want some space between the children of a `StackLayout`. `StackLa
 
 The following screenshot shows how the UI would render on iOS:
 
-![A screenshot showing three boxes stacked vertically on an iOS device with spacing set to 30.](../media/4-stack-layout-rendered-spacing.png)
+![Sreenshot showing three boxes stacked vertically on an iOS device with 30 spacing between each.](../media/4-stack-layout-rendered-spacing.png)
 
 ### How to set the orientation of a StackLayout
 
@@ -76,7 +76,7 @@ Here's an example of setting the `Orientation` to `Horizontal` in XAML:
 
 The following screenshot shows how the UI would render on iOS:
 
-![A screenshot showing three boxes stacked horizontally on an iOS device.](../media/4-stack-layout-rendered-horizontal.png)
+![Screenshot showing three boxes stretching the full screen vertically, each stacked horizontally from left to right.](../media/4-stack-layout-rendered-horizontal.png)
 
 ## Set a view's LayoutOptions in a StackLayout
 
@@ -97,7 +97,7 @@ Let's look at two examples to illustrate this point. In this first example, we h
 
 Here's how the rendered iOS screen would look:
 
-![A screenshot showing an iOS device displaying a StackLayout with four labels on it](../media/4-stacklayout-vertical-orientation.png)
+![Screenshot showing four labels being rendered on iOS with different HorizontalOptions: Start to the left, Center centered, End to the right, and Fill spanning the full screen.](../media/4-stacklayout-vertical-orientation.png)
 
 For the second example, look at this code:
 
@@ -116,7 +116,7 @@ Notice that the `StackLayout`'s `Orientation` property is set to vertical and it
 
 Recall from an earlier unit that the `LayoutOptions` struct contains a `bool` property called `Expands`. This property is designed specifically for `StackLayout` and allows a child view to request extra space if there's any available. Here's an example of how the `Expands` property works:
 
-![An illustration showing a StackLayout with three boxes, two of them requesting additional space](../media/4-expands-property.png)
+![Illustration showing a StackLayout expation with three boxes: the top and bottom boxes request additional space and are given a split of the remaining vertical whitespace.](../media/4-expands-property.png)
 
 Notice that there's extra space available in the `StackLayout`. The extra space will be divided evenly among all views that request additional space.
 
@@ -126,6 +126,6 @@ Remember that every view has two `LayoutOptions` properties called `VerticalOpti
 
 Here's how each of these values works:
 
-![An illustration showing a StackLayout with three boxes and two of the boxes are requesting additional space](../media/4-layout-options-expands.png)
+![Illustration showing a box in StackLayout using four expansion settings: StartAndExpand, CenterAndExpand, EndAndExpand, and FillAndExpand.](../media/4-layout-options-expands.png)
 
 The orange box is the view and the gray rectangle represents the extra space given to it by the `Expands` property. The view fills the extra space only when you use the `FillAndExpand` value. When you use the other values, the extra space remains empty, but it can't be used by other views in the `StackLayout`.

@@ -10,17 +10,17 @@ The first step is to create a project that contains your unit tests, and add it 
 
 1. In Visual Studio, in the **Solution Explorer** window, right-click the **WatchPortalFunction** solution, click **Add**, and then click **New Project**.
 
-    ![ Screenshot of Solution Explorer, showing the Add new project to solution command](../media/6-add-new-project-to-solution.png)
+    :::image type="content" source="../media/6-add-new-project-to-solution.png" alt-text="Screenshot of Solution Explorer, showing the Add new project to solution command." loc-scope="vs":::
 
 1. In the **Add New Project** dialog box, under **Visual C#**, click **Test**. Select the **xUnit Test Project (.NET Core)** template. Specify the name **WatchFunctionsTests**, and then click **OK**.
 
-    ![ Screenshot of Add New Project dialog box. The user has selected the xUnit Test Project template](../media/6-create-xunit-project.png)
+    :::image type="content" source="../media/6-create-xunit-project.png" alt-text="Screenshot of Add New Project dialog box. The user has selected the xUnit Test Project template." loc-scope="vs":::
 
 1. When the project has been added, right-click the **WatchFunctionTests** project in the **Solution Explorer** window, and then click **Manage NuGet Packages**.
 
 1. In the **NuGet: WatchFunctionTests** window, click the **Browse** tab. In the **Search** box, type **Microsoft.AspNetCore.Mvc**. Click the **Microsoft.AspNetCore.Mvc** package, and then click **Install**.
 
-    ![ Screenshot of the NuGet Package Manager window. The user is installing the Microsoft.AspNetCore.Mvc package ](../media/6-nuget-install-aspnet-mvc.png)
+    :::image type="content" source="../media/6-nuget-install-aspnet-mvc.png" alt-text="Screenshot of the NuGet Package Manager window. The user is installing the Microsoft.AspNetCore.Mvc package." loc-scope="vs":::
 
     > [!NOTE]
     > The test project will create a mock HTTP environment. The classes required for doing this are in the **Microsoft.AspNetCore.Mvc** package.
@@ -186,11 +186,11 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
 
 1. On the **Test** menu, click **Run**, and then click **All Tests**.
 
-    ![ Screenshot of the Test menu in Visual Studio. The user has selected Run -> All Tests ](../media/6-start-tests.png)
+    :::image type="content" source="../media/6-start-tests.png" alt-text="Screenshot of the Test menu in Visual Studio. The user has selected Run -> All Tests." loc-scope="vs":::
 
 1. In the **Test Explorer** window, all three tests should complete successfully.
 
-    ![ Screenshot of the Team Explorer window. All three tests ran successfully ](../media/6-test-success.png)
+    :::image type="content" source="../media/6-test-success.png" alt-text="Screenshot of the Team Explorer window. All three tests ran successfully." loc-scope="vs":::
 
 1. In the **Solution Explorer** window, under the **WatchPortalFunction** project, double-click **WatchInfo.cs** to display the file in the code editor.
 
@@ -209,6 +209,6 @@ You'll add a pair of *Fact* tests to the **WatchFunctionsTests** to verify this 
 
 1. On the **Test** menu, click **Run**, and then click **All Tests** to repeat the tests. This time, the **TestWatchFunctionSuccess** test should fail. This failure occurs because the **WatchInfo** function hasn't found the parameter named `modelll` in the query string, and so the function has returned a *Bad* response.
 
-    ![ Screenshot of the Team Explorer window. The TestWatchFunctionSuccess test failed ](../media/6-test-failure.png)
+    :::image type="content" source="../media/6-test-failure.png" alt-text="Screenshot of the Team Explorer window. The TestWatchFunctionSuccess test failed." loc-scope="vs":::
 
 You've now seen how to create a unit test project, and implement unit tests for an Azure Function.

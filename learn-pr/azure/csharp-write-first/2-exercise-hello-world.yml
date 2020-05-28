@@ -6,10 +6,9 @@ metadata:
   description: Write your first line of code to output a message to a console window.
   ms.date: 08/30/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 azureSandbox: false
 interactive: csharp

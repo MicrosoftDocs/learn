@@ -197,4 +197,4 @@ In your web browser, go to `http://[public-ip]`. Here, `[public-ip]` is the publ
 
 You should see the default IIS webpage. IIS has been deployed. Azure Automation used the PowerShell DSC script you uploaded to your Azure Automation account.
 
-![Screenshot of the web browser, showing the default IIS page](../media/4-iis.png)
+:::image type="content" source="../media/4-iis.png" alt-text="Screenshot of the web browser, showing the default IIS page." loc-scope="other"::: <!-- no-loc -->

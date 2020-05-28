@@ -105,7 +105,7 @@ Let's say that Andy was in a hurry and pushed up his work without running the te
 
     You see that the `ReturnRequestedCount` test method fails.
 
-    ![The dashboard showing a failure on the Test Results Trend widget](../media/7-pipeline-test-failure.png)
+    ![Screenshot of Azure Pipelines dashboard showing output log of an assertion failure on the unit test, expecting 10 but was 9.](../media/7-pipeline-test-failure.png)
 
     The test passes when the input value is 0, but it fails when the input value is 1 or 10.
 
@@ -117,22 +117,22 @@ In practice, you won't always manually trace the build as it runs. Here are a fe
 
     Azure DevOps sends you an email notification when the build is complete. The subject line starts with "[Build failed]" when the build fails.
 
-    ![A portion of a build failed email notification](../media/7-email-notification.png)
+    ![Screenshot of a portion of a build failed email notification.](../media/7-email-notification.png)
 * **Azure Test Plans**
 
     In Azure DevOps, select **Test Plans**, and then select **Runs**. You see the recent test runs, including the one that just ran. Select the latest completed test. You see that two of the eight tests failed.
 
-    ![Test run outcome showing two failed tests](../media/7-test-run-outcome.png)
+    ![Screenshot of Azure DevOps test run outcome showing two of eight failed tests in a ring chart.](../media/7-test-run-outcome.png)
 * **The dashboard**
 
     In Azure DevOps, select **Overview**, and then select **Dashboards**. You see the failure appear in the **Test Results Trend** widget. The **Code Coverage** widget is blank, which indicates that code coverage was not run.
 
-    ![The dashboard widget showing a failed test](../media/7-dashboard-failed-test.png)
+    ![Screenshot of Azure DevOps dashboard trend chart widget showing two failed test in the last test run.](../media/7-dashboard-failed-test.png)
 * **The build badge**
 
     Although the `failed-test` branch doesn't include the build badge in the *README.md* file, here's what you would see on GitHub when the build fails:
 
-    ![The build badge on GitHub indicating a failure](../media/7-badge-failed.png)
+    ![Screenshot of Azure Pipelines build badge on GitHub indicating a failure.](../media/7-badge-failed.png)
 
 ## Analyze the test failure
 
@@ -217,7 +217,7 @@ public Task<IEnumerable<T>> GetItemsAsync(
 
 They examine the file on GitHub and notice that it was recently changed.
 
-![GitHub showing a file diff](../media/7-github-diff.png)
+![Screenshot of GitHub showing a file diff where a minus one operation was added.](../media/7-github-diff.png)
 
 Mara suspects that `pageSize - 1` is returning one fewer results and that this should be just `pageSize`.
 
@@ -304,11 +304,11 @@ In this section, you fix the error by changing the code back to its original sta
 
     You can also check out the dashboard to view the updated results trend.
 
-    ![The dashboard showing a passing tests on the Test Results Trend widget](../media/7-dashboard-passing-test.png)
+    ![Screenshot of Azure DevOps dashboard trend chart widget showing a return to all tests passing.](../media/7-dashboard-passing-test.png)
 
     As a bonus, the added unit test increases the percentage of code covered from around 14 percent to 17 percent.
 
-    ![The Code Coverage widget showing an increased amount of coverage](../media/7-dashboard-widget.png)
+    ![Screenshot of the Azure DevOps Code Coverage widget showing coverage of 17 percent.](../media/7-dashboard-widget.png)
 
 **Andy:** Great! We fixed the build! I'm sorry for breaking it. I was in a hurry and I forgot to run the tests one final time.
 

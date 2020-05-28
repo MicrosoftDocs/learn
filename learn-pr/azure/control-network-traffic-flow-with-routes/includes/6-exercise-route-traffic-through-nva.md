@@ -6,7 +6,7 @@ Now that you've created the network virtual appliance (NVA) and virtual machines
 
 The next steps deploy a virtual machine into the public and private subnets:
 
-1. Open the Visual Studio Code editor and create a file named cloud-init.txt.
+1. Open the Cloud Shell editor and create a file named cloud-init.txt.
 
     ```bash
     code cloud-init.txt

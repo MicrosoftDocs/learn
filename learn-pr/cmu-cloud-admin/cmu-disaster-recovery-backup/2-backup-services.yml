@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup.2-backup-services
+title: Backup services
+metadata:
+  title: Backup services
+  description: Backup services
+  ms.date: 03/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/2-backup-services.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "The primary goal of cloud-based backup services is to:"
+    choices:
+    - content: "Prevent disruptions in service by failing over to a secondary virtual machine when a primary virtual machine fails"
+      isCorrect: false
+      explanation: "Incorrect. This description more accurately applies to disaster recovery."
+    - content: "Prevent disruptions in service by failing over to a secondary database when a primary database fails"
+      isCorrect: false
+      explanation: "Incorrect. This description more accurately applies to disaster recovery."
+    - content: "Prevent data loss by backing up virtual machines and other resources that store data"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Prevent data loss by backing up cloud resources to on-premises resources"
+      isCorrect: false
+      explanation: "Incorrect. Cloud-based backup services store backups in the cloud, not on-premises."

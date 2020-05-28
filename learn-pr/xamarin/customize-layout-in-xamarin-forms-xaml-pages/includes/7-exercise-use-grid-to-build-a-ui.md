@@ -1,6 +1,6 @@
 In this exercise, you'll use a `Grid` to arrange the views in your UI. The first screenshot shows the starter project, and the second one shows the completed project. Your job is to use a `Grid` to turn the starter project into the completed version.
 
-![A screenshot showing the starter solution and the completed solution.](../media/7-ex-grid-start-complete.png)
+![Screenshot showing the starter solution, with all controls close together, and the completed solution, with the calculation labels spread in a grid.](../media/7-ex-grid-start-complete.png)
 
 ## Open the starter solution
 
@@ -47,7 +47,7 @@ We've defined the `Grid` structure. Now we need to add our views to the `Grid`. 
 
 1. Add settings for `Grid.Row` and `Grid.Column` to each of the views to assign them to the appropriate cell in the `Grid`. Use the following screenshot to help you determine where each view should be placed:
 
-    ![A screenshot showing the starter solution and completed solution side by side.](../media/7-grid-placement.png)
+    ![Screenshot showing the completed solution with a dashed line grid overlay showing where controls are located.](../media/7-grid-placement.png)
 
 1. Align the **Bill** `Label` and `Entry` by setting `VerticalOptions` to `Center` on the **Label**.
 

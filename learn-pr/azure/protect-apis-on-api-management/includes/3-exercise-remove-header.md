@@ -48,7 +48,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
     - **api/census/{censusYear}**, which returns a census and associated people for the specified year
     - **api/people/{reference}**, which returns detailed information about a specific person
 
-    ![Swagger view](../media/3-swagger-home.png)
+    :::image type="content" source="../media/3-swagger-home.png" alt-text="Swagger view." loc-scope="third-party"::: <!-- Swagger, no-loc -->
 
 1. Finally, copy the last URL from the Cloud Shell output. This URL is the swagger JSON URL, which you will need later in this exercise.
 

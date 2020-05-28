@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.3-examples
+title: Example MapReduce programs
+metadata:
+  title: Example MapReduce programs
+  description: Review examples of MapReduce programs, including WordCount, Sort, and Sobel.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-examples.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block question 1
+  - content: "For the WordCount example, which combiner can be used to get the correct output?"
+    choices:
+    - content: "We can define a combiner function to return the MAX of the key-value pairs to get the same output."
+      isCorrect: false
+      explanation: "Incorrect. The WordCount reducer aggregates all the values of a key and sums them up. Using a combiner function to return the MAX value of the key is not an equivalent operation. Think about the reduce operation being performed here."
+    - content: "We can't use a combiner function in the WordCount example."
+      isCorrect: false
+      explanation: "Incorrect. The WordCount reducer aggregates all the values of a key and sums them up. This is an associative, commutative, and distributive operation. Hence a combiner can be used. Think about the reduce operation being performed here."
+    - content: "We can define a combiner function to return the MIN of the key-value pairs to get the same output."
+      isCorrect: false
+      explanation: "Incorrect. The WordCount reducer aggregates all the values of a key and sums them up. Using a combiner function to return the MIN value of the key is not an equivalent operation. Think about the reduce operation being performed here."
+    - content: "We can use a reduce function as a combiner to get the same output"
+      isCorrect: true
+      explanation: "Correct! The WordCount reducer simply aggregates all of the values for a key and sums them up. We can simply use the same reducer as a combiner function."
+
+# Did I Get This block question 2
+# Choices use images that are missing in original course. Added image placeholders.
+#  - content: "You are given a set of tuples of integer items. The set is contained in a file with each line representing a tuple. The items in a tuple are separated by commas in each line, as shown below:<ul>
+#     <li>1, 2, 3, 4</li>
+#     <li>1, 3, 5, 5</li>
+#     <li>3, 4, 6, 7</li></ul>
+#     The problem at hand is to compute the number of times a particular pair of items appear across the tuples in the set. For example, the pair (1,3) appears twice, in the first and the second tuple in our example. Which of the following MapReduce pseudocode is a solution to this problem?"
+#    choices:
+#    - content: "<img src=./media/quiz-placeholder.png></img>(incorrect)"
+#      isCorrect: false
+#      explanation: "Incorrect. The mapper in this code segment simply outputs each item from each tuple. Step through each of the programs to see if they produce the required output."
+#    - content: "<img src=./media/quiz-placeholder.png></img>(correct)"
+#      isCorrect: true
+#      explanation: "Correct! The mapper in this code segment correctly generates pairs of items from each tuple. The reducer aggregates the counts."      
+#    - content: "<img src=./media/quiz-placeholder.png></img>(incorrect)"
+#      isCorrect: false
+#      explanation: "Incorrect. The mapper and reducer in this code segment simply outputs each item from each tuple. Step through each of the programs to see if they produce the required output."
+
+# Did I Get This block question 3
+# Question uses image that's missing in original course. Added image placeholder.
+#  - content: "Consider the following reduce function that returns (key, maximum of all the values for a key):<br> 
+#      Image TBD -- <img src=./media/quiz-placeholder.png></img> <br>
+#      Which of the following statements should be placed at line 7 to complete the function?"
+#    choices:
+#    - content: "`context.write(key, max);`"
+#      isCorrect: false
+#      explanation: "That's not quite right. The key is correct, but the value is an `int`, which is not serializable."
+#    - content: "`write(key, new IntWritable(max));`"
+#      isCorrect: false
+#      explanation: "Incorrect. The correct function call is `context.write()`."
+#    - content: "`context.write(key, new IntWritable(max));`"
+#      isCorrect: true
+#      explanation: "Correct! The output returns the key and the maximum value for each key."
+#    - content: "`context.write(max, key);`"
+#      isCorrect: false
+#      explanation: "Incorrect. The key and value are interchanged, and the key is not a serializable type."

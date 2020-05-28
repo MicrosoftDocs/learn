@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.10-relational-databases
+title: Relational databases
+metadata:
+  title: Relational databases
+  description: Relational databases
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-relational-databases.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A monolithic (single node) RDBMS server is used to deploy a database. Assuming that the database is always reachable and is ACID compliant, which of the CAP theorem constraints is satisfied by this server?"
+    choices:
+    - content: "CA"
+      isCorrect: true
+      explanation: "Correct! A monolithic server can be consistent and available but is not partition-tolerant, since there is only a single node."
+    - content: "AP"
+      isCorrect: false
+      explanation: "That's not quite right. Since the RDMS is ACID compliant, it must also satisfy C. A monolithic server is not partition-tolerant, since there is only a single node. If you read carefully, the answer lies in the question itself."
+    - content: "CP"
+      isCorrect: false
+      explanation: "That's not quite right. Since the RDMS is always reachable, it must also satisfy A. A monolithic server is not partition-tolerant, since there is only a single node. If you read carefully, the answer lies in the question itself."
+
+  - content: "Given a system that uses sharding to distribute data among multiple nodes in an RDBMS cluster, which of the following queries will require distributed concurrency control (using 2PC or similar mechanisms) to execute safely?"
+    choices:
+    - content: "A query that calculates an aggregate value across all rows of a table and writes that value across all the rows of a table"
+      isCorrect: true
+      explanation: "Correct! When a transaction affects multiple rows of a given table, it is likely that it will operate over multiple shards. In this case, distributed concurrency control is required to ensure that the transaction executes safely."
+    - content: "A query that involves a single-row transaction"
+      isCorrect: false
+      explanation: "That's not quite right. Does this query really require a distributed lock? Which of the two queries spans multiple shards?"
+      

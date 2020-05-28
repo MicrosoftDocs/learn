@@ -4,8 +4,8 @@ metadata:
   title: Administer containers in Azure learning path
   description: With this learning path, you'll create and manage your Azure Container Instances, and see how they can be used to provide elastic scale for Kubernetes.
   brand: azure
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.date: 9/24/2018
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -27,6 +27,7 @@ modules:
 - learn.azure-container-registry
 - learn.run-docker-containers-aci
 - learn.azure.deploy-run-container-app-service
+- learn.intro-to-kubernetes
 - learn.intro-to-azure-kubernetes-service
 #TODO: Add - Orchestrate containerized application (POST-IGNITE)
 trophy:

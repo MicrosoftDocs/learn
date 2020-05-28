@@ -9,7 +9,7 @@ In this unit, we'll create a Xamarin.Forms `ListView` control and populate it wi
 
 The following screenshots show a Xamarin.Forms `ListView` that's rendered by using native controls on iOS and Android:
 
-![A screenshot showing an example of UITableView on iOS and ListView on Android](../media/2-listview-android-ios.png)
+![Screenshot showing a Contoso Cookbook recipe list example of UITableView on iOS and ListView on Android.](../media/2-listview-android-ios.png)
 
 ## Provide data to a ListView control
 

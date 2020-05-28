@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-workshop.04-deploy-mongodb
 metadata:
-  title: Deploy MongoDB
+  title: Exercise - Deploy MongoDB
   description: Deploy MongoDB
-  ms.date: 01/30/2020
+  ms.date: 03/31/2020
   author: sabbour
-  ms.author: asabbour
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy MongoDB
+title: Exercise - Deploy MongoDB
 durationInMinutes: 15
 content: |
   [!include[](includes/04-deploy-mongodb.md)]

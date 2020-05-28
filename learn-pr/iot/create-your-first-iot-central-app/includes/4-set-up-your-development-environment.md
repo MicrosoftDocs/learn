@@ -1,9 +1,9 @@
 
-In this unit, Node.js developers go through the process of creating a _connection string_. C# developers do not use this process, though the device app code is slightly more involved as a result. In the unit that follows this one, we dive into the coding sections of the module.
-
-To complete the unit, all developers need an Azure Maps account.
+In this unit, you set up an Azure Maps account. This account is used to calculate the best route from A to B. Route finding takes into account the vehicle, traffic, road regulations, and many other factors.
 
 ::: zone pivot="vs-node,vscode-node"
+
+Before we set up the Azure Maps account, we need to extract some connections strings for our device.
 
 The essential component for communication between a Node.js device app, and IoT Central, is the connection string. There are some tools that make generating these strings easy. In this unit, you'll access these tools in such as way that you can reuse them later on. To start with, you need some information on our real device.
 
@@ -11,7 +11,7 @@ The essential component for communication between a Node.js device app, and IoT 
 
 All of the work to generate connection strings is handled through Azure Cloud Shell.
 
-1. Navigate to the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
+1. Right click on [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true), and select **Open in new window**.
 
 1. In the Azure Cloud Shell, create a refrigerated-truck folder, and navigate to it:
 
@@ -59,7 +59,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 1. The connection string you'll use in the Node.js app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text document, so you've one line containing a string that looks similar to the following:
 
     ```js
-    HostName=iotc-<your Scope ID>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>
+    HostName=iotc-<guid>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>
     ```
 
 1. Save off your text file.
@@ -79,7 +79,7 @@ You now have the all important connection string. The **Scope ID** identifies th
 
 If you do not already have an Azure Maps account, you'll need to create one.
 
-1. Navigate to [Azure Maps](https://azure.microsoft.com/services/azure-maps/?azure-portal=true).
+1. Right click on [Azure Maps](https://azure.microsoft.com/services/azure-maps/?azure-portal=true), and select **Open in new window**.
 
 1. Follow the prompts to create a free account. When your account is set up, you'll need the **Primary Key** for the account. You will find this key by selecting **Authentication** in the left-hand menu for your Azure Maps resource. Copy and paste this key into your text document, with a note that it applies to Azure Maps.
 

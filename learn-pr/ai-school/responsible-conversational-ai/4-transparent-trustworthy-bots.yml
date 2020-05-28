@@ -5,8 +5,8 @@ metadata:
   title: Build trust through transparency
   description: Gaining and maintaining your users' trust is important to building a successful and responsible conversational AI solution.
   ms.date: 02/20/2020
-  author: RWortmanMorris
-  ms.author: rawortma
+  author: Adriamen
+  ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

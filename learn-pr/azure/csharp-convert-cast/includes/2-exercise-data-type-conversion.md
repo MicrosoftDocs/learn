@@ -191,7 +191,7 @@ If you run the command, you'll see the following output -- a concatenation of th
 
 Most of the numeric data types have a `Parse()` method, which will convert a string into the given data type.  In this case, we'll use the `Parse()` method to convert two strings into `int` values, then add them together.
 
-### Step 5 - Modify the code in the .NET Editor to convert a number to a string using the Parse() helper method
+### Step 5 - Modify the code in the .NET Editor to convert a string to an int using the Parse() helper method
 
 Delete or comment out the code from the previous exercise step and add the following code in the .NET Editor:
 

@@ -23,7 +23,7 @@ roles:
 - data-engineer
 products:
 - azure
-- azure-sql-data-warehouse
+- azure-synapse-analytics
 units:
 - learn.data-ai.query-azure-sql-data-warehouse.introduction
 - learn.data-ai.query-azure-sql-data-warehouse.create-azure-dw-server

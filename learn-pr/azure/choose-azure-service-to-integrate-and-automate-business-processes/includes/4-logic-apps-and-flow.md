@@ -20,7 +20,7 @@ Your managing director wants to be able to understand clearly the workflow that 
 
 You want to update the bike reservation and rental process on both campuses to the following workflow:
 
-![Bike booking and rental workflow](../media/4-bike-hire-workflow.png)
+![Decision flow diagram detailing the logic for the bike booking and rental process.](../media/4-bike-hire-workflow.png)
 
 The details are as follows:
 
@@ -50,7 +50,7 @@ You could use any of these technologies and others to build a workflow for this 
 
 ### Design-first or code-first?
 
-We know that your Managing Director and her staff want to understand the workflow and a higher level than examining the code and implementation. She also doesn't like separate documents describing a process, because it so easily becomes out-of-date when the process changes.
+We know that your Managing Director and her staff want to understand the workflow at a higher level than examining the code and implementation. She also doesn't like separate documents describing a process, because it so easily becomes out-of-date when the process changes.
 
 If you choose a design-first approach, the workflow is visualized in an easy-to-understand design surface. In addition, that diagram is not a separate document, but a picture of the process as it is implemented. The benefit is that there's no possibility that the diagram is not updated when the process is changed.
 

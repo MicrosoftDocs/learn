@@ -4,7 +4,7 @@ metadata:
   title: AI edge engineer
   description: University of Oxford
   brand: azure
-  ms.date: 12/11/20119
+  ms.date: 4/13/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
@@ -51,6 +51,7 @@ roles:
 - data-scientist
 products:
 - azure
+- azure-iot
 - azure-notebooks
 - azure-cloud-shell
 - azure-container-instances
@@ -66,5 +67,9 @@ modules:
 - learn.oxford.intro-to-iot-edge
 - learn.oxford.deploy-prebuilt-module-edge-device
 - learn.oxford.train-package-azure-ml-module-iot-edge
+- learn.oxford.intro-iot-funtions-iot
+- learn.oxford.deploy-cognitive-service-iot-edge-azure-func
+- learn.oxford.intro-mlops-iot-edge
+- learn.oxford.intro-azure-sphere
 trophy:
   uid: learn.oxford.ai-edge-engineer.trophy

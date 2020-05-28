@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.synthesize-text-input-speech.introduce-text
+title: Introducing Text-to-Speech
+metadata:
+  title: Introducing Text-to-Speech
+  description: "Introducing Text-to-Speech"
+  ms.date: 06/30/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduce-text.md)]

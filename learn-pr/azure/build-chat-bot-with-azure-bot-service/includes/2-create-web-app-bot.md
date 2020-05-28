@@ -23,7 +23,7 @@ The first step in creating a bot is to provide a location for the bot to be host
 
 1. Then, select **Bot template**. Select **SDK v3** as the version, **Node.js** as the SDK language, and **Question and Answer** as the template type. Then, click **OK** at the bottom of the view.
 
-    ![Screenshot of the Azure portal showing the Bot template pane of the bot creation process with the Node.js SDK language and Question and Answer template options highlighted.](../media/2-portal-select-template.png)
+    ![Screenshot of the Bot template pane of the bot creation process with the Node.js SDK language and Question and Answer template options highlighted.](../media/2-portal-select-template.png)
 
 1. Now, select **App service plan/Location**, followed by **Create New**, then create an App Service plan named "qa-factbot-service-plan" or something similar in the same region that you selected in the prior step. Click **OK** to close the view.
 
@@ -42,7 +42,7 @@ The first step in creating a bot is to provide a location for the bot to be host
 
 You should now see several resources created for your Azure web app bot.
 
-![Screenshot of resources created for the web app bot](../media/2-created-resources.png)
+![Screenshot of resources created for the web app bot.](../media/2-created-resources.png)
 
 Behind the scenes, a lot happened when the Azure Web App Bot was deployed.
 

@@ -21,7 +21,7 @@ You'd like to integrate this system with the bike booking and rental process fro
 
 You want to ensure that bike technicians on both campuses stick to the following workflow when they maintain a bike following a rental:
 
-![Bike maintenance workflow](../media/5-bike-maintenance-workflow.png)
+![Decision flow diagram detailing the logic for the Bike maintenance workflow.](../media/5-bike-maintenance-workflow.png)
 
 The details are as follows:
 

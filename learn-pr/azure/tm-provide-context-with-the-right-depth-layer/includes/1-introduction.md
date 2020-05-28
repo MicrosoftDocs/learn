@@ -9,7 +9,7 @@ Threat models can either get too complex or too high level depending on the syst
 Data-flow diagram depth layers help you understand how much context to include and when to use them.
 
 > [!TIP]
-> Talk to your colleagues and security team to select the right depth layer. Use can also use this module as reference.
+> Talk to your colleagues and security team to select the right depth layer. You can also use this module as reference.
 
 ## Learning objectives
 

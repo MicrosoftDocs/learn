@@ -54,7 +54,7 @@ Remember, your styles are currently defined in the **StandardTipPage.xaml** file
 
 1. Move your two styles from **StandardTipPage.xaml** to **App.xaml**.
 
-    ![An animation that shows moving the style elements from StandardTipPage.xaml to App.xaml by using Visual Studio](../media/9-movestyles.gif)
+    ![Screen recording of Visual Studio showing moving the style XAML element from StandardTipPage.xaml to App.xaml.](../media/9-movestyles.gif)
 
 1. Run the app on a platform of your choice.
 

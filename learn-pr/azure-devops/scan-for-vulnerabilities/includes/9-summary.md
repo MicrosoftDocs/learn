@@ -20,7 +20,7 @@ If you build .NET applications, as an optional exercise you can practice fixing 
 
 A relatively easy bug to fix relates to replacing the bold `<b>` tag with the `<strong>` tag, as you saw earlier.
 
-![Bug details on SonarCloud](../media/3-sonar-scan-bug.png)
+![Screenshot of SonarCloud bug details for "Replace this <b> tag by <strong>".](../media/3-sonar-scan-bug.png)
 
 See if you can locate this issue in the source code based on the report. After you fix the issue and commit the change to the `master` branch on GitHub, you see the issue disappear the next time the scanner runs.
 

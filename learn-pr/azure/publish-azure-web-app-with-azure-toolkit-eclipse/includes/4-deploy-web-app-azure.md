@@ -6,20 +6,17 @@ In this unit, you'll learn the basics of how to use the Azure Toolkit for Azure 
 
 Before you deploy a web app to Azure, you must first sign in to your Azure account from Eclipse. You can do this using **Azure Explorer**. To open the **Azure Explorer** window, click **Show Azure Explorer** in the Eclipse toolbar. The **Azure Explorer** window appears at the bottom of the IDE:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the **Azure toolbar** in Eclipse. The user has selected the **Azure Explorer** command. The Azure Explorer window is displayed](../media/4-azure-explorer.png)
+    :::image type="content" source="../media/4-azure-explorer.png" alt-text="Screenshot of the Azure toolbar in Eclipse. The user has selected the Azure Explorer command. The Azure Explorer window is displayed." loc-scope="third-party":::
 
 If the **Azure Explorer** window indicates that you have not signed in, follow these steps:
 
 1. Right-click **Azure (Not Signed In)**, and then click **Sign In**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Azure Explorer** in Eclipse. The user is about to sign in](../media/4-not-signed-in.png)
+    :::image type="content" source="../media/4-not-signed-in.png" alt-text="Screenshot of the Azure Explorer in Eclipse. The user is about to sign in." loc-scope="third-party":::
 
 2. You'll be prompted to connect. You can either use a device login, in which case you'll be given a code and directed to a login page using the web browser, or you can specify an authentication file containing credentials for an Azure Active Directory service principal.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Azure Sign In** dialog box.](../media/4-azure-sign-in.png)
+    :::image type="content" source="../media/4-azure-sign-in.png" alt-text="Screenshot of the Azure Sign In dialog box." loc-scope="third-party":::
 
 3. Finally, in the **Your Subscriptions** page, select the subscription you want to use for hosting your web app.
 
@@ -29,13 +26,11 @@ The Azure Toolkit for Eclipse provides a couple of ways to start web app deploym
 
 - You can use the **Publish** button in the toolbar and select the **Publish as Azure Web App** command.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Azure toolbar** in Eclipse. The user has selected the **Publish as Azure Web App** command.](../media/4-azure-toolbar.png)
+    :::image type="content" source="../media/4-azure-toolbar.png" alt-text="Screenshot of the Azure toolbar in Eclipse. The user has selected the Publish as Azure Web App command." loc-scope="third-party":::
 
 - You can right-click the project in the **Project Explorer** window, then click the **Azure** menu, and then select the **Publish as Azure Web App** command.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Azure** menu in **Project Explorer**. The user has selected the **Publish as Azure Web App** command.](../media/4-azure-menu.png)
+    :::image type="content" source="../media/4-azure-menu.png" alt-text="Screenshot of the Azure menu in Project Explorer. The user has selected the **Publish as Azure Web App** command." loc-scope="third-party":::
 
 The **Deploy Web App** wizard will start running. You're asked for the Azure App Service to use to deploy your project. You can specify an existing App Service (if one is available), or you can create a new one.
 
@@ -43,13 +38,11 @@ To create a new Azure App Service, follow these steps:
 
 1. Click **Create** to set up a new App Service.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Deploy Web App** wizard. The **Create** button is highlighted](../media/4-deploy-web-app.png)
+    :::image type="content" source="../media/4-deploy-web-app.png" alt-text="Screenshot of the Deploy Web App wizard. The Create button is highlighted." loc-scope="third-party":::
 
 1. In the **Create App Service** wizard, specify the hosting environment and choose or create the App Service Plan for your App Service.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Create App Service** wizard.](../media/4-create-app-service.png)
+    :::image type="content" source="../media/4-create-app-service.png" alt-text="Screenshot of the Create App Service wizard." loc-scope="third-party":::
 
     If you create a new Web App service, note the following points:
 
@@ -78,13 +71,11 @@ To create a new Azure App Service, follow these steps:
 
 1. When you have finished configuring your App Service, click **Deploy** to upload the web app in your project to the Web App service.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Deploy Web App** wizard. The **Deploy** button is highlighted](../media/4-deploy-web-app-2.png)
+    :::image type="content" source="../media/4-deploy-web-app.png" alt-text="Screenshot of the Deploy Web App wizard. The Deploy button is highlighted." loc-scope="third-party":::
 
     While your web app is being deployed, the **Azure Activity Log** will display the progress, and report any errors that occur.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Azure Activity Log** window while the web app is being deployed](../media/4-azure-activity-log.png)
+    :::image type="content" source="../media/4-azure-activity-log.png" alt-text="Screenshot of the Azure Activity Log window while the web app is being deployed." loc-scope="third-party":::
 
     When the **Progress** changes to **Published**, your web app has been successfully deployed.
 
@@ -94,19 +85,16 @@ To test your web app on Azure from Eclipse, you can use one of the following met
 
 - Click the **Published** link in the **Azure Activity Log** window.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of **Azure Activity Log** window.](../media/4-azure-publish-status.png)
+    :::image type="content" source="../media/4-azure-publish-status.png" alt-text="Screenshot of Azure Activity Log window." loc-scope="azure-app-service":::
 
 - Use the following steps in **Azure Explorer**:
 
     1. Expand the **Web Apps** folder, right-click your newly deployed web app, and then click **Open In Browser**.
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot of **Azure Explorer**. The user has selected the **Open In Browser** command for the web app](../media/4-open-in-browser.png)
+        :::image type="content" source="../media/4-open-in-browser.png" alt-text="Screenshot of Azure Explorer. The user has selected the Open In Browser command for the web app." loc-scope="third-party":::
 
     1. Your web browser will open and connect to your web app running in Azure. For example, the following illustration shows what the Currency Lister web app from an earlier unit might look like when running in Azure.
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot of web app running using the Web Apps service in Azure.](../media/4-web-app-azure.png)
+        :::image type="content" source="../media/4-web-app-azure.png" alt-text="Screenshot of web app running using the Web Apps service in Azure." loc-scope="third-party":::
 
 In the next unit, you will complete an exercise where you will create an Azure App Service and App Service Plan, then you will deploy the web app that you created in the previous exercise to your Azure App Service.

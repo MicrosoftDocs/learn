@@ -1,6 +1,6 @@
 ## Overview
 
-In this module, your objective is to train a machine learning model and deploy the trained model into an Azure Machine Learning container. The components required for training the model and deploying the container are in the [AI Toolkit for Azure IoT Edge Git repo](https://github.com/Azure/ai-toolkit-iot-edge/tree/master/IoT Edge anomaly detection tutorial). You'll run the notebook in the exercise below.  
+In this module, your objective is to train a machine learning model and deploy the trained model into an Azure Machine Learning container. The components required for training the model and deploying the container are in the [AI Toolkit for Azure IoT Edge Git repo](https://github.com/Azure/ai-toolkit-iot-edge/tree/master/IoT%20Edge%20anomaly%20detection%20tutorial). You'll run the notebook in the exercise below.  
 
 Firstly, you **set up the parameters** for the IoT Hub and Azure ML workspace. These include the resource group, the Azure region, your Azure IoT Hub name, IoT Edge device ID, Azure subscription ID, your Azure ML service workspace name. You should also specify the module name that is "machinelearningmodule". In this case, **we're using the decision tree classifier as an anomaly detector**. You'll **build, evaluate, and test** the model. You'll also **store the model to disk** and then **register the model**.
 

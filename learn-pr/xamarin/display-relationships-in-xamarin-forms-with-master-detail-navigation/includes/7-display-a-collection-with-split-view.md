@@ -4,7 +4,7 @@ Apps often need to display a collection of homogenous data and let the user exam
 
 *Master-detail* (also known as *split*) UI is a presentation pattern optimized for browsing through a collection of data. We typically use a list for the master, because we're browsing through a collection where the number of items in the collection is unknown until runtime.
 
-![An illustration that shows a split master-detail presentation with a list of planets in the master section, left with Venus selected, and the Venus details shown in the right detail section.](../media/2-master-detail-illustration.png)
+![Illustration showing a split master-detail presentation with a list of planets in the master section, left with Venus selected, and the Venus details shown in the right detail section.](../media/2-master-detail-illustration.png)
 
 Because we're browsing through a collection of items of the same type, we need to define only a single detail page. The same page can be used to represent any item in the collection.
 
@@ -12,7 +12,7 @@ Because we're browsing through a collection of items of the same type, we need t
 
 We derive from `MasterDetailPage` to implement master-detail navigation. The master page hosts a list of items and notifies `MasterDetailPage` when the user selects one. `MasterDetailPage` shows the selected item in the detail area.
 
-![An illustration that shows a conference app's MasterDetailPage instance, with arrows indicating its coordination between drawer menu item selection and detail pages.](../media/3-coordinate-detail-page-changes.png)
+![Illustration that shows a conference app's MasterDetailPage instance, with arrows indicating its coordination between drawer menu item selection and detail pages.](../media/3-coordinate-detail-page-changes.png)
 
 ## Build master-detail navigation
 

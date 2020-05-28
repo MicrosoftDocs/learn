@@ -12,7 +12,7 @@ An entity that sends data to the Event Hubs is called a *publisher*, and an enti
 
 ### Events
 
-An **event** is a small packet of information (a *datagram*) that contains a notification. Events can be published individually, or in batches, but a single publication (individual or batch) can't exceed 256 KB.
+An **event** is a small packet of information (a *datagram*) that contains a notification. Events can be published individually, or in batches, but a single publication (individual or batch) can't exceed 1 MB.
 
 ### Publishers and subscribers
 

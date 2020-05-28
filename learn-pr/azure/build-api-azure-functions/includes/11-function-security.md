@@ -8,11 +8,11 @@ The CORS settings that you configured for development won't be pushed to product
 
 The CORS settings are located in the "Platform Features" section of your Azure Functions project.
 
-![Platform features screen of Azure Functions project](../media/platform-features.png)
+![Screenshot of an Azure Function project Overview panel with a callout highlighting the Platform features hyperlink.](../media/platform-features.png)
 
 Once there, you can define which URLs can and cannot access your Functions project in Azure.
 
-![The Allowed Origins configuration screen under the CORS option in the Azure portal](../media/allowed-origins.png)
+![Screenshot of the Platform features panel overlayed with a dialog displaying the Allowed Origins configuration screen.](../media/allowed-origins.png)
 
 > [!TIP]
 > Using "http://localhost:PORT" is a valid entry in the CORS settings for a Function project in Azure. Just remember that everyone has a "localhost", so you'll want to make sure you don't leave that setting in after you are finished testing.
@@ -23,9 +23,9 @@ When you created the functions in the first part of the module, you selected "Fu
 
 ## Getting your function key
 
-You can find the keys for your Functions in the "Function Settings"
+You can find the keys for your Functions in the "Function Settings".
 
-![The Function Keys section from the Azure portal](../media/function-keys.png)
+![Screenshot of the Function Keys section from the Azure portal.](../media/function-keys.png)
 
 There are two keys: a "\_master" and a "default". The "default" key is the one that you want to pass to your function.
 
