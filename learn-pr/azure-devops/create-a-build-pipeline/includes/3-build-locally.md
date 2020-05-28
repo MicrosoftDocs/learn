@@ -58,7 +58,7 @@ Although you can propose changes to the original project, here you'll work with 
 To fork the *Space Game* web project into your GitHub account:
 
 1. In a web browser, go to [GitHub](https://github.com?azure-portal=true) and sign in.
-1. Go to the [*Space Game*](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
+1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
 1. Select **Fork**:
 
     ![The Fork button on GitHub](../media/3-github-fork-button.png)
