@@ -300,7 +300,7 @@ groups:
       title: Vue
 - id: data-azure-database
   title: Azure database environment
-  prompt: Choose your relational database management system
+  prompt: Choose your database
   pivots:
     - id: azuresql
       title: Azure SQL Database
