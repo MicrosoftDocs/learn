@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-ai-fundamentals.understand-anomaly-detection
+title: Understand anomaly detection
+metadata:
+  title: Understand anomaly detection
+  description: "Understand anomaly detection"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understand-anomaly-detection.md)]

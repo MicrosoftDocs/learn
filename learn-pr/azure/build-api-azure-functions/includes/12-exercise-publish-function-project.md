@@ -27,7 +27,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. When prompted, select "Upload Settings".
 
-    :::image type="content" source="../media/upload-settings.png" alt-text="Screenshot of a VS Code notification asking if you want to upload settings. A callout highlights the Upload settings button." loc-scope="vs-code":::
+    :::image type="content" source="../media/upload-settings.png" alt-text="Screenshot of a Visual Studio Code notification asking if you want to upload settings. A callout highlights the Upload settings button." loc-scope="vs-code":::
 
 ## Set the API URL for the frontend application
 

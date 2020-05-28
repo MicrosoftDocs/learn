@@ -6,7 +6,7 @@ metadata:
   description: Extend the CI/CD pipeline to build and deploy a Node.js app.
   ms.date: 04/24/2020
   author: tpetchel
-  ms.author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
