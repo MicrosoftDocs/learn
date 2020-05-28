@@ -1,10 +1,10 @@
-Now that we have the UI for our application defined, let's explore how we add logic to our web app. In a Blazor WebAssembly app, you can add C# code in separate .cs files or inline in your Razor components.
+Now that you have defined the UI for your web app, explore how to add logic to the app. In a Blazor WebAssembly app, you can add C# code in separate .cs files or inline in your Razor components.
 
-## C# code-behind in separate files 
+## C# code-behind in separate files
 
-In Blazor, we can add C# files directly to our app project like other .NET projects, we call this *code-behind*. Code-behind is a common term for the technique of using separate code files to store application logic. Separate code files are a great strategy when your business logic is complex, long, or requires multiple classes and is best stored in more or code files.
+In Blazor, you can add C# files directly to your app project as with other .NET projects. Commonly called *code-behind*, this technique uses separate code files to store application logic. Separate code files are a great strategy when your business logic is complex, long, or requires multiple classes and is best stored in one or more code files.
 
-For simple logic, we don't always need to create new .cs files.
+For simple logic, you don't always need to create new .cs files.
 
 ## C# inline in components
 
@@ -12,15 +12,19 @@ It's common practice to mix HTML and C# in a single razor component file. For si
 
 ## What are Razor directives?
 
-Razor directives are markup added to a component used to add C# inline with HTML. Directives allow a developer to define single statements, methods, or larger code blocks.
+Razor directives are component markup used to add C# inline with HTML. Directives let you define single statements, methods, or larger code blocks.
 
 ### Code directives
 
-You can use `@expression()` to add a simple C# statement inline with the html. Or, if more code is required, the `@code` markup allows a developer to add multiple statements enclosed by parentheses. Code directives should be familiar to developers who have used Razor in MVC or Pages. You can also add an `@functions` section to the template to add methods and properties that are added at the top of the generated class, which can then be referenced in the document.
+Code directives should be familiar to developers who have used Razor in MVC or Pages.
+
+You can use **@expression()** to add a simple C# statement inline with the HTML. Or, if you require more code, use the **@code** directive to add multiple statements enclosed by parentheses.
+
+You can also add an **@functions** section to the template. There you define methods and properties that are added to the top of the generated class, which can then be referenced in the document.
 
 ### Page directive
 
-The `@Page` directive is a special markup added to components used to identify the component as a page. This allows you to specify a route on this directive, which then maps to an Attribute route that’s recognized by the Blazor engine to register and access the page.
+The **@Page** directive is a special directive that identifies a component as a page. Use this directive to specify a route, which maps to an attribute route that the Blazor engine recognizes for registering and accessing the page.
 
 ## Razor data binding 
 
