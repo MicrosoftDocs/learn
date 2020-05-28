@@ -3,11 +3,11 @@ of a larger framework for improving reliability. You now have:
 
 :::image type="content" source="../media/dickerson-hierarchy.png" alt-text="Pyramid diagram of Dickerson's hierarchy of reliability":::
 
-    - the concepts
+- the concepts
 
 :::image type="content" source="../media/diagram-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, each circle contains a word relating to reliability from a previous unit":::
 
-    - the tools
+- the tools
 
 :::image type="content" source="../media/azure-monitor-overview-full.png" alt-text="Complete overview diagram of the data sources, data types and offerings in Azure monitor":::
 
