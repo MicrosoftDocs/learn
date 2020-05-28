@@ -1,11 +1,9 @@
-## 💻 Exercise - Use an input binding to read from CosmosDB
-
 Our API functions are using hardcoded mock data at the moment. 
 You are now going to access the database to read actual product data.
 
 ## Objective
 
-- Use an input binding to read product data from CosmosDB
+- Use an input binding to read product data from Cosmos DB
 
 ## Instructions
 
@@ -26,7 +24,7 @@ You are now going to access the database to read actual product data.
 Explore function.json and check what has been generated. Notice how "{productId}" is the placeholder we used for the HTTP trigger. It will contain the product ID passed in via the URL route and forward it to the binding.
 
 - Switch to index.ts of the function
-- Locate the line where you declared the `loadedProduct` variable and assign data coming from CosmosDB instead of the hardcoded JSON.
+- Locate the line where you declared the `loadedProduct` variable and assign data coming from Cosmos DB instead of the hardcoded JSON.
 - The `Context` object has a `bindings` property that contains the binding you configured earlier.
 
 ```typescript

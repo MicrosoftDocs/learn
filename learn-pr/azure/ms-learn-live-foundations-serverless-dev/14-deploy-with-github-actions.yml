@@ -1,22 +1,15 @@
-### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.14-deploy-with-github-actions
 
-# Use the format "Prepare for session x - [Title of the session]" (do not use a colon in the title, it will make VScode show YAML errors).
-title: Configure continuous deployment using GitHub actions
+title: Configure Continuous Deployment using GitHub Actions
 
 metadata:
-  # Use the same as the "title".
-  title: Configure continuous deployment using GitHub actions
-  # Same as "title".
-  description: Configure continuous deployment using GitHub actions
+  title: Configure Continuous Deployment using GitHub Actions
+  description: Configure Continuous Deployment using GitHub Actions
   
-  # Update this after changing the file.
-  ms.date: 4/29/2020
+  ms.date: 04/29/2020
   
-  # Your Github alias
   author: krumelur
 
-  # Your Microsoft alias
   ms.author: renrup
 
   ms.topic: interactive-tutorial
@@ -24,8 +17,6 @@ metadata:
 
 azureSandbox: true
 
-# Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
-# It's best to follow the instructions and take the time.
 durationInMinutes: 5
 
 content: |

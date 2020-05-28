@@ -1,5 +1,3 @@
-## 💻 Exercise - Configure the HTTP action a function reacts to
-
 By default, any HTTP trigger function responds to GET and POST requests. Depending on the use case, we want it to react to a single specific HTTP verb only.
 
 ## Objective

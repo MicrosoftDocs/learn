@@ -1,20 +1,7 @@
-### YamlMime:Module
-
-# Note for reviews:
-#
-# Learn Live uses the modules format to provide instructions to the audience
-# who is following the live sessions.
-# The content structure and the requirements are different from Learn modules.
-# We are in the process of defining a separate content model for Learn Live to standardize our modules.
-# 
-# All Learn Live "modules" are hidden and are not meant to be found when searching
-# for Learn content.
-#
-
 uid: learn.azure.ms-learn-live-foundations-serverless-dev
 hidden: true
 metadata:
-  title: Foundations of serverless computing for developers
+  title: Foundations of Serverless Computing for Developers
   
   description: Microsoft Learn Live is a series of guided, live courses, presented on Twitch, and designed to increase your existing knowledge of Azure technologies.
   
@@ -26,7 +13,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 
-title: Foundations of serverless computing for developers
+title: Foundations of Serverless Computing for Developers
 
 summary: | 
   It's time to go back to school and you're working on a solution for a school supplies retailer.
@@ -76,7 +63,7 @@ products:
 - azure-functions
 
 units:
-- learn.azure.ms-learn-live-foundations-serverless-dev.1-execute-first-function-in-portal
+- learn.azure.ms-learn-live-foundations-serverless-dev.1-execute-first-function-portal
 - learn.azure.ms-learn-live-foundations-serverless-dev.2-setup-local-development
 - learn.azure.ms-learn-live-foundations-serverless-dev.3-create-function-endpoint
 - learn.azure.ms-learn-live-foundations-serverless-dev.4-configure-http-action
@@ -85,9 +72,9 @@ units:
 - learn.azure.ms-learn-live-foundations-serverless-dev.7-return-data-to-caller
 - learn.azure.ms-learn-live-foundations-serverless-dev.8-post-complex-data
 - learn.azure.ms-learn-live-foundations-serverless-dev.9-add-remaining-endpoints
-- learn.azure.ms-learn-live-foundations-serverless-dev.10-setup-cosmosdb
-- learn.azure.ms-learn-live-foundations-serverless-dev.11-configure-cosmosdb-bindings
-- learn.azure.ms-learn-live-foundations-serverless-dev.12-configure-cosmosdb-output-bindings
+- learn.azure.ms-learn-live-foundations-serverless-dev.10-setup-cosmos-db
+- learn.azure.ms-learn-live-foundations-serverless-dev.11-configure-cosmos-db-bindings
+- learn.azure.ms-learn-live-foundations-serverless-dev.12-configure-cosmos-db-output-bindings
 - learn.azure.ms-learn-live-foundations-serverless-dev.13-secure-during-development
 - learn.azure.ms-learn-live-foundations-serverless-dev.14-deploy-with-github-actions
 - learn.azure.ms-learn-live-foundations-serverless-dev.15-configure-cors

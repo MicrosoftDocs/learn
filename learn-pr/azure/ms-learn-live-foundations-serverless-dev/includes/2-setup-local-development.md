@@ -1,4 +1,4 @@
-## Setup a local development environment
+## Setup a Local Development Environment
 
 When we choose to develop our function project locally, we're not running an emulator: the tools made available by Microsoft include the same components that also power the Functions infrastructure on Azure.
 
@@ -10,11 +10,9 @@ By installing the needed extensions and services, you can get a fully-fledged Fu
 
 Install and configure the tooling required to develop and execute Functions locally without cloud dependencies.
 
-## Required Components for the Functions project
+## Required Components for the Functions Project
 
 Unfortunately, there is no single-package download that would install all the required components on your system.
-
-### Install Visual Studio Code
 
 Download Visual Studio Code | [https://code.visualstudio.com/download](https://code.visualstudio.com/download) for your operating system and follow the installation instructions.
 
@@ -38,20 +36,20 @@ The installation instructions are platform-specific. Follow the instructions for
 
 ### Install "Cosmos DB client SDK"
 
-Our functions interact with a CosmosDB database. Node.js supports CosmosDB through an additional package.
+Our functions interact with a Cosmos DB database. Node.js supports Cosmos DB through an additional package.
 
 In your terminal, execute the following command:
 
 `npm install @azure/cosmos`
 
-### Access configuration files
+### Access Configuration Files
 
 With the help of a separate Node.js package, our functions app can read configuration parameters from either a local configuration file or from Azure's application settings.
 In your terminal, execute the following command:
 
 `npm install @types/node`
 
-### Components required to run the client app
+### Components Required to Run the Client App
 
 Our project contains server-related components and a client app built with Angular. You're not making any changes to this client, but additional components are required to build and run it successfully.
 
@@ -80,7 +78,7 @@ If you are planning to dive a bit deeper and explore Angular, debugging support 
 
 [Chrome debugger for Angular](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
-### Optional: Angular language services extension
+### Optional: Angular Language Services Extension
 
 There are many extensions for Visual Studio Code that make Angular development easier. We found this one particularly useful:
 

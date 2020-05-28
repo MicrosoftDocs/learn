@@ -1,5 +1,3 @@
-## 💻 Exercise - Change the URL route of a function
-
 To change the route of a function, we can add the “route” attribute to the configuration. It supports placeholders that allow us to make a portion of the URL dynamic.
 
 In the context of Azure functions, these placeholders are called “binding expressions” and can be identified by the curly braces.

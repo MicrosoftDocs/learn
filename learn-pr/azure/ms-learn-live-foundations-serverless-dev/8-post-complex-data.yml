@@ -1,22 +1,15 @@
-### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.8-post-complex-data
 
-# Use the format "Prepare for session x - [Title of the session]" (do not use a colon in the title, it will make VScode show YAML errors).
-title: Extract complex data from the request body
+title: Extract Complex Data from the Request Body
 
 metadata:
-  # Use the same as the "title".
-  title: Extract complex data from the request body
-  # Same as "title".
-  description: Extract complex data from the request body
+  title: Extract Complex Data from the Request Body
+  description: Extract Complex Data from the Request Body
   
-  # Update this after changing the file.
-  ms.date: 4/29/2020
+  ms.date: 04/29/2020
   
-  # Your Github alias
   author: krumelur
 
-  # Your Microsoft alias
   ms.author: renrup
 
   ms.topic: interactive-tutorial
@@ -24,8 +17,6 @@ metadata:
 
 azureSandbox: false
 
-# Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
-# It's best to follow the instructions and take the time.
 durationInMinutes: 5
 
 content: |

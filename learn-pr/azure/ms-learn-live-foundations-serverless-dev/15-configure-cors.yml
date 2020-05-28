@@ -1,22 +1,15 @@
-### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.15-configure-cors
 
-# Use the format "Prepare for session x - [Title of the session]" (do not use a colon in the title, it will make VScode show YAML errors).
-title: Configure CORS to grant client application access to the API
+title: Configure CORS to grant Client Application Access to the API
 
 metadata:
-  # Use the same as the "title".
-  title: Configure CORS to grant client application access to the API
-  # Same as "title".
-  description: Configure CORS to grant client application access to the API
+  title: Configure CORS to grant Client Application Access to the API
+  description: Configure CORS to grant Client Application Access to the API
   
-  # Update this after changing the file.
-  ms.date: 4/29/2020
+  ms.date: 04/29/2020
   
-  # Your Github alias
   author: krumelur
 
-  # Your Microsoft alias
   ms.author: renrup
 
   ms.topic: interactive-tutorial
@@ -24,8 +17,6 @@ metadata:
 
 azureSandbox: true
 
-# Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
-# It's best to follow the instructions and take the time.
 durationInMinutes: 5
 
 content: |

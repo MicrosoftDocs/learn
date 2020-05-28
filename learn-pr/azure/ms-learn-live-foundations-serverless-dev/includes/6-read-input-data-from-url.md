@@ -1,5 +1,3 @@
-## 💻 Exercise - Use the context object to read input data from the URL route
-
 The context object can be used for writing logs, reading data, and setting outputs.
 
 ## Objective

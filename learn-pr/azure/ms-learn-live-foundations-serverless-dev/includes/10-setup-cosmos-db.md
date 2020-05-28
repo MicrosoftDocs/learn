@@ -1,5 +1,3 @@
-# Setup CosmosDB
-
 Our API reads data from a CosmosDB instance. You must create a database instance to complete all the exercises.
 
 ## Objectives
@@ -11,7 +9,7 @@ Our API reads data from a CosmosDB instance. You must create a database instance
 > [!NOTE]
 > In this series, we don't cover CosmosDB in-depth and only use it as our data store. If you would like to learn more about CosmosDB, check out the links at the end of this document.
 
-## Create a CosmosDB instance
+## Create a Cosmos DB Instance
 
 The scripts and instructions below create a CosmosDB instance with the following parameters:
 
@@ -35,17 +33,17 @@ The test data is using this format:
   }
 ```
 
-### If you're using your Azure subscription
+### If you're using Your Azure Subscription
 
 - Open [Azure portal](https://portal.azure.com) in your browser and select your subscription
 - Open the Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_). Select to use a "bash" shell.
 
-### If you're using the Learn Live Sandbox
+### If You're using the Learn Live Sandbox
 
 > [!IMPORTANT]
 > Activate the Azure Sandbox to execute the lab instructions in a free subscription and locate Azure Cloud Shell on the right-hand side.
 
-### Use a bash script to create the database
+### Use a Bash script to Create the Database
 
 Copy the following command and paste it into Cloud Shell:
 
@@ -65,7 +63,7 @@ When finished, the script outputs three essential bits of data:
 
 Copy the name, the master key, and the connection string into a temporary text document. You'll need them later.
 
-### Populate the database with test data
+### Populate the Database with Test Data
 
 Right now, the database you created is empty. To get some sample data, we've prepared another script.
 Run the following command and make sure to replace the placeholders with the database name and the master key you got earlier:

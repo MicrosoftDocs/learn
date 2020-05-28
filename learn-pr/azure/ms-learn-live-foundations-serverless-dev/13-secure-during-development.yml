@@ -1,22 +1,15 @@
-### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.13-secure-during-development
 
-# Use the format "Prepare for session x - [Title of the session]" (do not use a colon in the title, it will make VScode show YAML errors).
-title: Use an input binding to read from CosmosDB
+title: Prevent Unauthorized Access During Development
 
 metadata:
-  # Use the same as the "title".
-  title: Use an input binding to read from CosmosDB
-  # Same as "title".
-  description: Use an input binding to read from CosmosDB
+  title: Prevent Unauthorized Access During Development
+  description: Prevent Unauthorized Access During Development
   
-  # Update this after changing the file.
-  ms.date: 4/29/2020
+  ms.date: 04/29/2020
   
-  # Your Github alias
   author: krumelur
 
-  # Your Microsoft alias
   ms.author: renrup
 
   ms.topic: interactive-tutorial
@@ -24,8 +17,6 @@ metadata:
 
 azureSandbox: false
 
-# Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
-# It's best to follow the instructions and take the time.
 durationInMinutes: 5
 
 content: |

@@ -1,5 +1,3 @@
-## 💻 Exercise - Use the context object to return data to the caller
-
 The default return value for an HTTP-triggered function is: `HTTP 204 No Content` with an empty body.
 The context object has a property called `res`, which is an object that describes the HTTP response. It contains a `status` and a `body`.
 

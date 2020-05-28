@@ -1,5 +1,3 @@
-## 💻 Exercise - Configure continuous deployment using GitHub actions
-
 Your code is on GitHub - to get a deployed version of the API functions project to Azure, you can use GitHub actions.
 
 ## Objective
@@ -8,12 +6,12 @@ Your code is on GitHub - to get a deployed version of the API functions project 
 
 ## Instructions
 
-### If you're using your Azure subscription
+### If You're using your Azure Subscription
 
 - Open [Azure portal](https://portal.azure.com) in your browser and select your subscription
 - Open the Cloud Shell (the button is located at the top, next to the notifications bell, and looks like this: >_) and select to use a "bash" shell.
 
-### If you're using the Learn Live Sandbox
+### If You're using the Learn Live Sandbox
 
 Activate the Azure Sandbox to execute the lab instructions in a free subscription and open [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
 
@@ -43,10 +41,10 @@ Activate the Azure Sandbox to execute the lab instructions in a free subscriptio
 - Wait for the run to complete and switch back to Azure portal where you should find the deployed functions.
 
 > [!NOTE]
-> If you try to execute the deployed functions, they will fail because the connection to the CosmosDB instance is missing.
+> If you try to execute the deployed functions, they will fail because the connection to the Cosmos DB instance is missing.
 > You can fix this by adding an application setting to the function app. Follow the steps below.
 
 - In the function app's side menu, select "Configuration"
 - Add a new application setting named "CONNECTION_STRING"
-- The value of the setting is the connection string of the CosmosDB instance you're using. You can find this in the portal or in your local `local.settings.json` file.
+- The value of the setting is the connection string of the Cosmos DB instance you're using. You can find this in the portal or in your local `local.settings.json` file.
 - Don't forget to save!

@@ -1,5 +1,3 @@
-## 💻 Exercise - Prevent unauthorized access during development
-
 The requirements for production environments are beyond the scope of this course. But what about the development environment?
 
 While you're working on your project, you might want to push preview versions up into the cloud. Other members of your team will want to begin integrating the APIs you made.

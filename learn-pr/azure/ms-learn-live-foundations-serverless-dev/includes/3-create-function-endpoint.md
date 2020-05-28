@@ -1,5 +1,3 @@
-## 💻 Exercise - Create a function endpoint that reacts to an HTTP request using an HTTP trigger
-
 With our freshly gained knowledge, we can now create a function that returns product data in response to an HTTP request.
 
 ## Objective

@@ -1,12 +1,10 @@
-## 💻 Exercise - Use an output binding to write to CosmosDB
-
 Output bindings are declared similarly to input bindings.
 Depending on the type of binding, different parameters are required.
 The main difference, however, is the declaration of the setting "direction" to "out".
 
 ## Objective
 
-- Use an output binding to write product data into CosmosDB
+- Use an output binding to write product data into Cosmos DB
 
 ## Instructions
 
@@ -29,7 +27,7 @@ Explore function.json and check what has been generated.
 - Switch to index.ts of the function
 - Unlike input bindings, where we can read our data from using the Context object, output bindings use a different approach and are assigned as part of the return statement of a function. 
 - Change the function's return type from `Promise<void>` to `Promise<any>`
-- Add a return statement that includes both, the HTTP response **and** the product data that's supposed to go back to CosmosDB using the binding name `outputProduct`.
+- Add a return statement that includes both, the HTTP response **and** the product data that's supposed to go back to Cosmos DB using the binding name `outputProduct`.
 
 ```typescript
 return {
@@ -39,7 +37,7 @@ return {
         headers: { "Content-Type": "application/json" },
         body: { product: productToCreate }
     },
-    // "outputProduct" is the name of the binding we created to return data to CosmosDB
+    // "outputProduct" is the name of the binding we created to return data to Cosmos DB
     outputProduct: productToCreate
 }
 ```
@@ -59,4 +57,4 @@ return {
 }
 ```
 
-Test the function endpoints and use the CosmosDB Data Explorer in the Azure portal to verify products are getting updated.
+Test the function endpoints and use the Cosmos DB Data Explorer in the Azure portal to verify products are getting updated.

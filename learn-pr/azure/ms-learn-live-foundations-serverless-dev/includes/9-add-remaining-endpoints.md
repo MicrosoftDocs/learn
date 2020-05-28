@@ -1,5 +1,3 @@
-## 💻 Exercise - Add the remaining endpoints for all of our API functions
-
 You can now add the remaining required API endpoints and implement them as far as possible.
 By the end of this exercise, you'll have a completed API surface that can be tested in the browser or with PostMan.
 

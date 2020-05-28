@@ -1,5 +1,3 @@
-# 💻 Exercise - Create your first function
-
 It's always refreshing to see something in action, and with functions, we can do this very quickly. Let's do a little exercise together: using only 10 clicks, you'll be able to execute your very first function in the Azure portal!
 
 ## Objective

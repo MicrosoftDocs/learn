@@ -1,5 +1,3 @@
-## 💻 Exercise - Extract complex data from the request body
-
 For more complex data, the URL is not suitable. In such cases, restful APIs use the request's body to transfer data from the caller.
 This data can be accessed using the `HttpRequest` object.
 
@@ -29,7 +27,7 @@ if (productToCreate == null || productToCreate["id"] == null) {
     return;
 }
 
-// Return the product back to the caller and also send to CosmosDB via the out binding.
+// Return the product back to the caller and also send to Cosmos DB via the out binding.
 context.res = {
     status: 200,
     headers: { "Content-Type": "application/json" },

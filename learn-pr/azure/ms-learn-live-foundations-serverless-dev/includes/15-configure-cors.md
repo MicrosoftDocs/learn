@@ -1,5 +1,3 @@
-## 💻 Exercise - Configure CORS
-
 CORS is short for "Cross Origin Resource Sharing". It's a SECURITY mechanism employed by browsers to prevent them making calls to another website. CORS is implemented via an HTTP response header to specify which domains, ports, and protocols can access its resources. 
 
 ## Objective
