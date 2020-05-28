@@ -205,7 +205,7 @@ upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-
 
 In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. You'll now open the project from the file explorer so you can view its structure and work with files.
 
-1. On the **File** menu, select **Open** or **Open Folder**.
+1. On the **File** menu, select **Open**.
 1. Go to the root directory of the *Space Game* web project.
 
     (You can run the `pwd` command in the terminal window to see the full path if you need a reminder.)
