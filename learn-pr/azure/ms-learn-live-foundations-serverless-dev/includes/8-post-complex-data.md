@@ -1,20 +1,20 @@
 ## 💻 Exercise - Extract complex data from the request body
 
-For more complex data, the URL is not suitable. In such cases restful APIs use the request’s body to transfer data from the caller.
+For more complex data, the URL is not suitable. In such cases, restful APIs use the request's body to transfer data from the caller.
 This data can be accessed using the `HttpRequest` object.
 
 ## Objective
 
 - Add a function that reacts to HTTP POST
-- Use the context object to extract data from the request’s body
+- Use the context object to extract data from the request's body
 
 ## Instructions
 
-1. Using the instructions [you followed earlier when you created your first local function](3-create-function-endpoint.md), add another HTTP triggered function named `CreateProduct`.
+1. Using the instructions you followed earlier when you created your first local function, add another HTTP triggered function named `CreateProduct`.
 1. Change the route of `CreateProduct` to "product"
 1. Change the `methods` property in function.json to only accept `post`
 1. Create a variable called `productToCreate` and assign it the HTTP request object's `body` property
-1. For the `GetProduct` function you returned hardcoded JSON data. For the `CreateProduct` function, use similar code but return `productToCreate` back to the caller or an error if the request's body didn't contain valid data
+1. For the `GetProduct` function you returned hardcoded JSON data. For the `CreateProduct` function, use similar code but return `productToCreate` to the caller or an error if the request's body didn't contain valid data
 
 ```typescript
 const productToCreate = req.body;
@@ -37,4 +37,4 @@ context.res = {
 };
 ```
 
-To test the function, you will need to use a [cURL](https://superuser.com/questions/149329/what-is-the-curl-command-line-syntax-to-do-a-post-request) command or a tool like [PostMan](https://www.postman.com) which allows you to construct a POST request.
+To test the function, you can use a [cURL](https://superuser.com/questions/149329/what-is-the-curl-command-line-syntax-to-do-a-post-request) command, or a tool like [PostMan](https://www.postman.com) which allow you to construct a POST request.

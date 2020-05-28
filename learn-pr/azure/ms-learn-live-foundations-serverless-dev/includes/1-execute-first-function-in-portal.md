@@ -1,11 +1,11 @@
-# 💻 Exercise - Create your first Function
+# 💻 Exercise - Create your first function
 
-It's always cool to see something in action and with Functions, we can do this very easily. Let's do a little exercise together: using only 10 clicks, you'll be able to execute your very first function in Azure portal!
+It's always refreshing to see something in action, and with functions, we can do this very quickly. Let's do a little exercise together: using only 10 clicks, you'll be able to execute your very first function in the Azure portal!
 
 ## Objective
 
-Use the Learn Live Sandbox to create a Function App that says "hello"
-ponse to an HTTP GET
+Use the Learn Live Sandbox to create a function that says "hello" in
+response to an HTTP GET request.
 
 ## Instructions
 
@@ -14,7 +14,7 @@ ponse to an HTTP GET
 
 ### 1. Create a Function App
 
-Create a new Function app in the sandbox environment - the quickest way to do so is to click on "Create a resource" and search for "Function app".
+Create a new function app in the sandbox environment - the quickest way to do so is to click on "Create a resource" and search for "Function app".
 
 > [!TIP]
 > For this demonstration, make sure you don't create a Linux server. Linux servers do not allow for the function editing within the portal.
@@ -32,18 +32,18 @@ Think of the Function app as a workspace that contains our functions.
 
 ### 2. Add a Function
 
-Let's add a function that can be called via a URL
+Let's add a function you can call via a URL
 
 - Click "+New function"
 - Select "In-portal" and click "Continue"
 - Select "Webhook + API" for the trigger
 - Click "Create"
 
-The editor shows the source code of the function, in our case this is JavaScript but we could have picked other languages, like C#. We can modify the source code directly in the browser, but for now let's execute the function.
+The editor shows the source code of the function. In our case, this is JavaScript, but we could have picked other languages, like C#. We can modify the source code directly in the browser, but for now, let's execute the function.
 
 ### 3. Execute the Function
 
-We can run the function in the editor or get its URL, because we chose to create something that is callable over HTTP.
+We can run the function in the editor or get its URL because we chose to create something that is callable over HTTP.
 
 - Click "</> Get function URL"
 - Click "Copy" to get the URL into the clipboard.
@@ -58,4 +58,4 @@ We can run the function in the editor or get its URL, because we chose to create
 - Change the line that contains "Hello " to "Welcome to Learn Live, dear "
 - Click "Save"
 - Switch back to the tab with the function URL and refresh
-- Output will be "Welcome to Learn Live, dear YOUR_NAME"
+- The output will be "Welcome to Learn Live, dear YOUR_NAME"

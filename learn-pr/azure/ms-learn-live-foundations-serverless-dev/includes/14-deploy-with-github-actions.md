@@ -1,6 +1,6 @@
 ## 💻 Exercise - Configure continuous deployment using GitHub actions
 
-Your code is already hosted on GitHub. In order to get a deployed version of the API functions project to Azure, you can use GitHub actions.
+Your code is on GitHub - to get a deployed version of the API functions project to Azure, you can use GitHub actions.
 
 ## Objective
 
@@ -8,20 +8,20 @@ Your code is already hosted on GitHub. In order to get a deployed version of the
 
 ## Instructions
 
-### If you're using your own Azure subscription
+### If you're using your Azure subscription
 
 - Open [Azure portal](https://portal.azure.com) in your browser and select your subscription
-- Open the Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_) and select to use a "Bash" shell.
+- Open the Cloud Shell (the button is located at the top, next to the notifications bell, and looks like this: >_) and select to use a "bash" shell.
 
 ### If you're using the Learn Live Sandbox
 
 Activate the Azure Sandbox to execute the lab instructions in a free subscription and open [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
 
 - Make sure to push your locally working API function project into your GitHub account.
-- Open the Azure portal and create a new functions project using the steps discussed in the earlier exercise "[Create your first Function](1-execute-first-function-in-portal.md)"
+- Open the Azure portal and create a new functions project using the steps discussed in the earlier exercise "Create your first function"
 - Wait for the resource to be created and navigate to it
 - Find the button "Get publish profile" in the overview screen of the function app; it's located in the top menu.
-- Click it to download the publishing profile. GitHub needs this to know where to deploy the code to.
+- Click it to download the publishing profile. GitHub needs this to know where to deploy the code.
 - Open the GitHub actions workflow samples page at [https://github.com/marketplace/actions/azure-functions-action](https://github.com/marketplace/actions/azure-functions-action) in a new browser tab.
 - Find the workflow template for "Node" and "Windows" and open it.
 - View its "raw" data and copy the workflow template's YML code into the clipboard.

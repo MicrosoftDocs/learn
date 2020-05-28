@@ -1,6 +1,6 @@
 ## 💻 Exercise - Configure the HTTP action a function reacts to
 
-By default, any HTTP trigger function will respond to GET and POST requests. Depending on the functions use case we will want it to react to a single specific HTTP verb only.
+By default, any HTTP trigger function responds to GET and POST requests. Depending on the use case, we want it to react to a single specific HTTP verb only.
 
 ## Objective
 
@@ -37,4 +37,4 @@ The file's content should look like this:
 }
 ```
 
-Build and run the project and navigate to the URL shown in the output panel. You will be able to access it with your browser. You can use cURL or PostMan to try and access the same URL using a `post` action and it will fail.
+Build and run the project and navigate to the URL shown in the output panel. You'll be able to access it with your browser. You can use cURL or PostMan to try and access the same URL using a `post` action, and it'll fail.

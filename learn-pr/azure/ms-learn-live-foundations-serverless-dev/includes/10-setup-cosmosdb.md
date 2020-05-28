@@ -1,6 +1,6 @@
 # Setup CosmosDB
 
-Our API reads data from a CosmosDB instance. You must create a database instance in order to complete all the exercises.
+Our API reads data from a CosmosDB instance. You must create a database instance to complete all the exercises.
 
 ## Objectives
 
@@ -9,11 +9,11 @@ Our API reads data from a CosmosDB instance. You must create a database instance
 - Configure the Functions API project to connect to the database
 
 > [!NOTE]
-> In this series we don't cover CosmosDB in depth and only use it as our data store. If you would like to learn more about CosmosDB, check out the links at the end of this document.
+> In this series, we don't cover CosmosDB in-depth and only use it as our data store. If you would like to learn more about CosmosDB, check out the links at the end of this document.
 
 ## Create a CosmosDB instance
 
-The scripts and instructions below will create a CosmosDB instance with the following parameters:
+The scripts and instructions below create a CosmosDB instance with the following parameters:
 
 - Name: `dbbacktoschool`
 - Database name: `maindb`
@@ -35,10 +35,10 @@ The test data is using this format:
   }
 ```
 
-### If you're using your own Azure subscription
+### If you're using your Azure subscription
 
 - Open [Azure portal](https://portal.azure.com) in your browser and select your subscription
-- Open the Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_) and select to use a "Bash" shell.
+- Open the Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_). Select to use a "bash" shell.
 
 ### If you're using the Learn Live Sandbox
 
@@ -57,13 +57,13 @@ chmod +x ./create-cosmosdb.sh &&
 
  It's probably a good idea to go and grab a cup of coffee or tea - creating a CosmosDB instance can take a while. It's not uncommon to wait for about ten minutes. Don't cancel the script execution.
 
-When finished, the script will output three important bits of data:
+When finished, the script outputs three essential bits of data:
 
 1. The name of the database
 1. The (secret!) master key to get read and write access
 1. A connection string you can use to connect to the database. You will add this to the configuration of the Azure functions project.
 
-Copy the name, the master key and the connection string into a temporary text document. You'll need them later.
+Copy the name, the master key, and the connection string into a temporary text document. You'll need them later.
 
 ### Populate the database with test data
 
@@ -85,10 +85,10 @@ chmod +x ./populate-cosmosdb.sh &&
 
 ## Configure the Azure functions API project
 
-Configuration data for locally running projects is stored in a file called `local.settings.json` that is located in the root folder of the Functions app. This file is never under source control - for a very good reason: it may contain sensitive data, like the connection string you should have in the clipboard.
+Configuration data for locally running projects are stored in a file called `local.settings.json`. You find it in the root folder of the functions app. This file is **never** under source control: it may contain sensitive data, like the connection string you should have in the clipboard.
 
 1. Clone our GitHub repository from [https://aka.ms/learn-live-foundations-serverless-dev-repo](https://aka.ms/learn-live-foundations-serverless-dev-repo)
-1. Add a new file named `local.settings.json` to the root folder of the Functions project which you find in the folder `api-functions`
+1. Add a new file named `local.settings.json` to the root folder of the functions project you find in the folder `api-functions`
 1. Copy the configuration settings shown below into the new file
 1. Replace the value of the setting `CONNECTION_STRING` with the connection string returned by the script
 

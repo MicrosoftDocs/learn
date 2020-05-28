@@ -1,6 +1,6 @@
 ## 💻 Exercise - Use the context object to read input data from the URL route
 
-The context object can be used for writing logs, reading data and setting outputs.
+The context object can be used for writing logs, reading data, and setting outputs.
 
 ## Objective
 
@@ -13,7 +13,7 @@ It contains a property called `bindingData` where we can access our route inform
 
 1. Using Visual Studio Code, navigate to the folder `GetProduct`
 1. Open the file `index.ts`
-1. The ID of the product to be read is part of the URL and can be accessed as `productId` - this matches the placeholder you added to function.json.
+1. The ID of the product to retrieve is part of the URL, and you can access it as `productId` - this matches the placeholder you added to function.json.
 
 Add the following code:
 

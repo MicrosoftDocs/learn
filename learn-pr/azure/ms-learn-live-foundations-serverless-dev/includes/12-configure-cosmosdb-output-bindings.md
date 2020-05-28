@@ -1,8 +1,8 @@
 ## 💻 Exercise - Use an output binding to write to CosmosDB
 
 Output bindings are declared similarly to input bindings.
-Depending on the type of binding, different parameters can and must be set.
-The main difference however is the declaration of the setting “direction” to “out”.
+Depending on the type of binding, different parameters are required.
+The main difference, however, is the declaration of the setting "direction" to "out".
 
 ## Objective
 
@@ -11,15 +11,15 @@ The main difference however is the declaration of the setting “direction” to
 ## Instructions
 
 - In Visual Studio Code, switch to the Azure tab in the sidebar
-- Expand the “Functions” pane and find `CreateProduct` function
-- Right click the function and select “Add binding”
+- Expand the "Functions" pane and find `CreateProduct` function
+- Right-click the function and select "Add binding"
 - Select "out" for the direction
 - Select "Azure Cosmos DB"
 - Enter "outputProduct" as the name for the binding
-- Use "maindb" for the database name (this is if the instructions in our workshop module have been followed)
+- Use "maindb" for the database name
 - Use "data" for the collection name
 - Use "CONNECTION_STRING" for the connection string setting 
-- If Visual Studio Code is logged in to the Azure user account it can retrieve the connection string directly, otherwise use the portal and get it there.
+- If Visual Studio Code is logged in to the Azure user account, it can retrieve the connection string directly, otherwise use the portal and get it there.
 - Leave the Document ID empty
 - Use "product" for the partition key value
 - Leave SQL query empty
@@ -45,7 +45,7 @@ return {
 ```
 
 - Switch to the `UpdateProduct` function
-- Copy the binding information from `CreateProduct`'s function.json over - they are identical
+- Copy the binding information from `CreateProduct` 's function.json over - they are identical
 - Switch to index.ts and adjust the return type of the function and the return statement.
 
 ```typescript
@@ -59,4 +59,4 @@ return {
 }
 ```
 
-Test the function endpoints and use the CosmosDB Data Explorer in Azure portal to verify products are getting updated.
+Test the function endpoints and use the CosmosDB Data Explorer in the Azure portal to verify products are getting updated.
