@@ -1,4 +1,4 @@
-Companies that use an on-premise Windows Server Active Directory solution can integrate their existing users and groups with Azure Active Directory with **Azure AD Connect**. This is a free tool you can download and install to synchronize your local AD with your Azure directory.
+Companies that use an on-premises Windows Server Active Directory solution can integrate their existing users and groups with Azure Active Directory with **Azure AD Connect**. This is a free tool you can download and install to synchronize your local AD with your Azure directory.
 
 With Azure AD Connect, you can provide your
 users with a common identity for Office 365, Azure, and SaaS applications integrated with Azure AD in a hybrid identity environment.
