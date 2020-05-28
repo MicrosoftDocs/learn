@@ -118,7 +118,7 @@ queries that return real-time answers based on the resources currently in
 use. For example, if we wanted to see all of the VMs we are currently
 running, we could run the following query:
 
-:::image type="content" source="../media/resource-graph-explorer.png" alt-text="Resource graph panel in Azure portal with the query of where type == "microsoft.compute/virtualmachines":::
+:::image type="content" source="../media/resource-graph-explorer.png" alt-text="Resource graph panel in Azure portal with the query of where type == microsoft.compute/virtualmachines":::
 
 and we get back a complete detailed list of the VMs being used in our
 subscription:
@@ -179,6 +179,7 @@ make use of other people's careful work when constructing dashboards.
 
 Let's look at final example for this section that nicely ties together two
 of the ideas from this unit. If you download this JSON file:
+
 [AzureInventoryDashboard.json](../code/AzureInventoryDashboard.json) to
 your computer and then upload it to a dashboard, you should see something
 like this:

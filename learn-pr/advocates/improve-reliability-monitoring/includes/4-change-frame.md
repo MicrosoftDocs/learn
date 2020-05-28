@@ -4,7 +4,7 @@ change the way we frame our understanding for what is important to monitor
 and why. For some people, this can radically change everything about how
 they think about monitoring to improve their reliability.
 
-:::image type="content" source="../media/reliability-diagram-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, each circle contains a word relating to reliability from a previous unit":::
+:::image type="content" source="../media/diagram-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, each circle contains a word relating to reliability from a previous unit":::
 
 ## Reframing #1: Reliability from the customer’s perspective
 

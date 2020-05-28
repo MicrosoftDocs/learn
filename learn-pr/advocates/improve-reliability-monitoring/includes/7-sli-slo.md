@@ -35,7 +35,7 @@ play.
 Service level indicators are connected to our previous discussion about the
 expansive understanding of reliability. Remember this diagram?
 
-:::image type="content" source="../media/reliability-diagram-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, each circle contains a word relating to reliability from a previous unit":::
+:::image type="content" source="../media/diagram-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, each circle contains a word relating to reliability from a previous unit":::
 
 SLIs are our attempt to specify just how we are going to measure the
 reliability of our system. What is the indicator that our service is

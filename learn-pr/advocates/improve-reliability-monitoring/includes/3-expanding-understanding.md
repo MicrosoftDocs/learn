@@ -5,11 +5,11 @@ possibilities that may expand your understanding of reliability.
 
 Let's look at some aspects of reliability now:
 
-:::image type="content" source="../media/reliability-diagram-empty.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to empty circles at the end of each spoke":::
+:::image type="content" source="../media/diagram-empty.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to empty circles at the end of each spoke":::
 
 ## Availability
 
-:::image type="content" source="../media/reliability-diagram-availability.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word availability added to one circle":::
+:::image type="content" source="../media/diagram-availability.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word availability added to one circle":::
 
 When people talk about reliability, they tend to start with availability.
 Is the system "up" or is it "down"? Can others reach your website or your
@@ -21,7 +21,7 @@ discussing reliability, but it’s only one aspect.
 
 ## Latency
 
-:::image type="content" source="../media/reliability-diagram-latency.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word latency added to previous diagram in a different circle":::
+:::image type="content" source="../media/diagram-latency.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word latency added to previous diagram in a different circle":::
 
 Latency refers to the amount of delay between a request and a response. You
 may have heard the catchphrase “slow is the new down.” People demand fast
@@ -32,7 +32,7 @@ competitor.
 
 ## Throughput
 
-:::image type="content" source="../media/reliability-diagram-throughput.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word throughput added to previous diagram in a different circle":::
+:::image type="content" source="../media/diagram-throughput.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word throughput added to previous diagram in a different circle":::
 
 Throughput is a measure of the rate at which something is processed, or the
 number of transactions that a website, application, or service successfully
@@ -43,7 +43,7 @@ meeting our expectations, it isn't considered reliable.
 
 ## Coverage
 
-:::image type="content" source="../media/reliability-diagram-coverage.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word latency added to previous diagram in a different circle":::
+:::image type="content" source="../media/diagram-coverage.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word latency added to previous diagram in a different circle":::
 
 Coverage refers to how much of the data that you expected to process was
 actually processed. Again, we come back to the idea of measuring how well
@@ -52,7 +52,7 @@ reliable.
 
 ## Correctness
 
-:::image type="content" source="../media/reliability-diagram-correctness.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word correctness added to previous diagram in a different circle":::
+:::image type="content" source="../media/diagram-correctness.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word correctness added to previous diagram in a different circle":::
 
 An aspect of reliability that is often overlooked is “correctness”. Did the
 process that you ran on the data yield the correct or expected result? This
@@ -64,7 +64,7 @@ for reliability.
 
 ## Fidelity
 
-:::image type="content" source="../media/reliability-diagram-fidelity.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word fidelity added to previous diagram in a different circle":::
+:::image type="content" source="../media/diagram-fidelity.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word fidelity added to previous diagram in a different circle":::
 
 Fidelity in this context is best understood through an example. Let's say
 you visit the home page of a video streaming site. That page would be made
@@ -85,7 +85,7 @@ wrong.
 
 ## Freshness
 
-:::image type="content" source="../media/reliability-diagram-freshness.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word freshness added to previous diagram in a different circle":::
+:::image type="content" source="../media/diagram-freshness.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word freshness added to previous diagram in a different circle":::
 
 Freshness refers to how up to date the information is in situations where
 timeliness matters to the customer. For example, services that provide
@@ -94,7 +94,7 @@ if the data they provide is kept current.
 
 ## Durability
 
-:::image type="content" source="../media/reliability-diagram-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word durability added to previous diagram in a different circle filling in the entire diagram":::
+:::image type="content" source="../media/diagram-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word durability added to previous diagram in a different circle filling in the entire diagram":::
 
 Durability is another slightly more niche aspect of reliability. If you are
 running a service that provides storage, you know just how important it is
