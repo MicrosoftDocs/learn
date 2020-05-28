@@ -5,7 +5,7 @@ metadata:
   title: Knowledge check
   description: Check your knowledge
   ms.date: 02/24/2020
-  author: tinaes
+  author: PhilStollery
   ms.author: tinaes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -19,9 +19,9 @@ quiz:
     - content: Providing education to others on D&I, understanding barriers to help avoid them, caring about the workplace environment, and telling people how to engage successfully.
       isCorrect: False
       explanation: This isn't the right approach.
-    - content: Good ideas, beliefs and technologies create the core of implementing a diverse and inclusive environment.
+    - content: Good ideas, beliefs, and technologies create the core of implementing a diverse and inclusive environment.
       isCorrect: False
-      explanation: There is more involved.
+      explanation: There's more involved.
     - content: Listening more versus having the answers, diving deeper to understand barriers, caring about every person as an individual, and focusing on empowering others to be great.
       isCorrect: True
       explanation: We should listen more and empower others.
