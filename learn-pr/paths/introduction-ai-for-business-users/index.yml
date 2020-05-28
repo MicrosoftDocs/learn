@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
-uid: learn.wwl.introduction-to-ai-to-business-users
+uid: learn.wwl.introduction-ai-for-business-users
 metadata:
-  title: introduction-ai-business-users
+  title: Introduction to AI for business users 
   description: Learn how to use machine learning in your organization with this online free course in Microsoft Business School
   ms.date: 06/02/2020
   author: wwlpublish
   ms.author: v-admene
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to AI to business users
+title: Introduction to AI for business users 
 prerequisites: |
   None
 summary: |
@@ -30,4 +30,4 @@ modules:
 - learn-wwl.responsible-ai-guiding-principles
 - learn-wwl.intro-to-ai-technology
 trophy:
-  uid: learn.wwl.introduction-to-ai-to-business-users.trophy
+  uid: learn.wwl.introduction-ai-for-business-users.trophy
