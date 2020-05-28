@@ -33,7 +33,9 @@ The preceding diagram depicts the publish/subscribe (commonly shortened to *pub-
 
 ### API gateway
 
-The microservices are accessible to clients via the API gateway. Among other advantages, API gateways enhance security and decouple back-end services from individual clients. The *WebSPA* storefront is an ASP.NET Core MVC and Angular app that is accessible via a public IP address. The HTTP requests from the *WebSPA* app to the microservices are routed through the API gateway, which is an implementation of the **B**ackends-**F**or-**F**rontends (BFF) pattern. Basic routing configurations are implemented using the NGINX reverse proxy. The Gateway Aggregation pattern is implemented using the ASP.NET Core web API named *Web.Shopping.HttpAggregator*. For real-world scenarios, use of managed API gateway services like [Azure API Management](https://azure.microsoft.com/services/api-management) is recommended.
+The microservices are accessible to clients via the API gateway. Among other advantages, API gateways enhance security and decouple back-end services from individual clients. The *WebSPA* storefront is an ASP.NET Core MVC and Angular app that is accessible via a public IP address. The HTTP requests from the *WebSPA* app to the microservices are routed through the API gateway, which is an implementation of the **B**ackends-**F**or-**F**rontends (BFF) pattern. Basic routing configurations are implemented using the NGINX reverse proxy. The ASP.NET Core web API named *Web.Shopping.HttpAggregator* combines multiple requests into a single request. This is an example of the *Gateway Aggregation* pattern.
+
+For real-world scenarios, use of managed API gateway services like [Azure API Management](https://azure.microsoft.com/services/api-management) is recommended.
 
 ### Coupon service
 

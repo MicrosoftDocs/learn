@@ -8,6 +8,7 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
+  no-loc: [Angular, "Coupon.API", eShopOnContainers, Seq, WebSPA, WebStatus]
 title: Exercise - Review the code and verify deployment
 durationInMinutes: 12
 content: |

@@ -45,23 +45,23 @@ The preceding script:
 
 ## Revert .NET Core SDK changes
 
-The setup script installs a newer version of the .NET Core SDK alongside the Cloud Shell's default SDK version. You may choose to keep this configuration. To revert to your prior configuration, execute the following commands:
+The setup script installs a newer version of the .NET Core SDK alongside Cloud Shell's default SDK version. You may choose to keep this configuration. To revert to your prior configuration, execute the following commands:
 
 ```bash
 cp ~/.bashrc.bak.microservices-aspnet-core ~/.bashrc
 ```
 
-The preceding command restores your prior *.bashrc* profile startup file from a backup saved by the setup script.
+The preceding command restores your prior *:::no-loc text=".bashrc":::* profile startup file from a backup saved by the setup script.
 
 [!INCLUDE[download files](../../includes/summary-download-clouddrive.md)]
 
-## Reset the Cloud Shell
+## Reset Azure Cloud Shell
 
-The scripts used in this module attempt to make temporary changes to your Cloud Shell preferences without the need to reset your Cloud Shell configuration. If you want to reset your Cloud Shell to its default configuration, see the [Cloud Shell documentation on deleting personal data](https://docs.microsoft.com/azure/cloud-shell/troubleshooting#delete).
+The scripts used in this module attempt to make temporary changes to your Cloud Shell preferences without the need to reset your configuration. If you want to reset your Cloud Shell to its default configuration, see the [Cloud Shell documentation on deleting personal data](/azure/cloud-shell/troubleshooting#delete).
 
 ## Learn more about microservices
 
-* Free e-book: [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/architecture/microservices/)
+* Free e-book: [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices/)
 * [Full eShopOnContainers reference app on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
 * Video: [Implement microservices patterns with .NET Core and Docker containers](https://aka.ms/microservices-video)
   * Note: The above video doesn't reflect current .NET Core tooling. However, the architectural concepts and design patterns remain valid.

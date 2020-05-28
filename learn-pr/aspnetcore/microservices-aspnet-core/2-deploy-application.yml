@@ -8,6 +8,7 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
+  no-loc: [eShopOnContainers, Kubernetes]
 title: Exercise - Set up the environment
 durationInMinutes: 5
 content: |

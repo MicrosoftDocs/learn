@@ -14,7 +14,7 @@ The preceding script uses `helm` commands to:
 * Install the reconfigured *WebStatus* and aggregator Helm charts using a public container registry.
 * Install the new *Coupon.API* chart and the reconfigured *WebSPA* chart using your private ACR.
 
-The `helm uninstall` and `helm install` commands used by the script are displayed in the console with the correct parameters.
+The `helm uninstall` and `helm install` commands used by the script are displayed in the command shell with the correct parameters.
 
 ## Verify changes
 

@@ -14,7 +14,7 @@ There are many ways to implement a coupon code feature in an e-commerce app. For
 
 DDD is a design pattern whereby the structure and language of your code&mdash;including class names, methods, and variables&mdash;matches the business domain. The pattern describes independent problem areas as bounded contexts and emphasizes a common language to describe these problems. Determining where to draw the boundaries is an essential task when designing and defining a microservices-based solution. For each bounded context, you must identify and define the entities, value objects, and aggregates that model your domain.
 
-The coupon service is implemented like a CRUD service, and the boundaries are clearly defined within the coupon domain. The service represents a coupon as a `Coupon` object, using the class defined at *src/Services/Coupon/Coupon.API/Infrastructure/Models/Coupon.cs*. This class encapsulates the attributes of a coupon.
+The coupon service is implemented like a CRUD service, and the boundaries are clearly defined within the coupon domain. The service represents a coupon as a `Coupon` object, using the class defined at *:::no-loc text="src/Services/Coupon/Coupon.API/Infrastructure/Models/Coupon.cs":::*. This class encapsulates the attributes of a coupon.
 
 |Property  |Description |
 |----------|------------|

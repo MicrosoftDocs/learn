@@ -2,9 +2,9 @@ In this unit, you complete the *Coupon.API* project. You'll then run a script to
 
 ## Add the coupon service
 
-An ASP.NET Core project for the coupon service has been provided in the *src/Services/Coupon/Coupon.API* directory. Locate that directory in the Cloud Shell editor, and apply the following changes to the service:
+An ASP.NET Core project for the coupon service has been provided in the *:::no-loc text="src/Services/Coupon/Coupon.API":::* directory. Locate that directory in the Cloud Shell editor, and apply the following changes to the service:
 
-1. In *Controllers/CouponController.cs*, replace the comment `// Add the GetCouponByCodeAsync method` with the following code:
+1. In *:::no-loc text="Controllers/CouponController.cs":::*, replace the comment `// Add the GetCouponByCodeAsync method` with the following code:
 
     ```csharp
     [HttpGet("{code}")]
@@ -40,7 +40,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
         With the preceding change:
 
         * ASP.NET Core's health check service is registered in the coupon service's dependency injection container. ASP.NET Core provides health checks middleware that executes when a health check endpoint is requested.
-        * The `AddCustomHealthCheck` extension method (implemented in *Extensions/IServiceCollectionExtensions.cs*), tests external service dependencies to confirm availability and normal operation. An example of such an external dependency is MongoDB.
+        * The `AddCustomHealthCheck` extension method (implemented in *:::no-loc text="Extensions/IServiceCollectionExtensions.cs":::*), tests external service dependencies to confirm availability and normal operation. An example of such an external dependency is MongoDB.
 
             ```csharp
             public static IServiceCollection AddCustomHealthCheck(
@@ -59,7 +59,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
         The preceding code adds:
 
-        * A health check named `self`, which returns an HTTP success status code for each request to the coupon microservice health endpoint.
+        * A health check named `self`, which returns an HTTP success status code for each request to the coupon service's health endpoint.
         * A check for its MongoDB dependency using the `AddMongoDb` extension method. The `AddMongoDb` method is implemented in the [AspNetCore.HealthChecks.MongoDb](https://www.nuget.org/packages/AspNetCore.HealthChecks.MongoDb) NuGet package.
 
         > [!TIP]
@@ -71,8 +71,8 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
         The preceding change registers two HTTP health check endpoints with the ASP.NET Core routing system:
 
-        * `/liveness` &ndash; A *liveness* endpoint that Kubernetes queries periodically to check for failures. Kubernetes provides liveness probes to detect applications that are failing and restarts them when they don't return success codes. When the coupon microservice starts up for the first time, there could be time-consuming tasks like setting up seed data in the database or awaiting RabbitMQ to boot up. To avoid restarts during this time, the liveness check filters the checks with the `self` tag, which returns HTTP status code 200 for every request.
-        * `/hc` &ndash; A *readiness* endpoint that Kubernetes queries to know when a service is ready to start accepting traffic. It returns HTTP status code 200 when all registered checks are successful. The same endpoint is also queried by an external health monitoring system like the `WebStatus` app. `WebStatus` provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
+        * `/liveness` &ndash; A *liveness* endpoint that Kubernetes queries periodically to check for failures. Kubernetes provides liveness probes to detect applications that are failing and restarts them when they don't return success codes. When the coupon service starts up for the first time, there could be time-consuming tasks like setting up seed data in the database or awaiting RabbitMQ to boot up. To avoid restarts during this time, the liveness check filters the checks with the `self` tag, which returns HTTP status code 200 for every request.
+        * `/hc` &ndash; A *readiness* endpoint that Kubernetes queries to know when a service is ready to start accepting traffic. It returns HTTP status code 200 when all registered checks are successful. The same endpoint is also queried by an external health monitoring system like the *WebStatus* app. *WebStatus* provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
 
         In the following Kubernetes deployment configuration file, the liveness and readiness probes use HTTP GET requests to the above mentioned health endpoints to determine their status codes. Any HTTP status code greater than or equal to 200 and less than 400 indicates success. Any other code indicates failure.
 
@@ -128,7 +128,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
     pushd src/Services/Coupon/Coupon.API/
     ```
 
-    Your current location is *~/clouddrive/aspnet-learn/src/src/Services/Coupon/Coupon.API*.
+    Your current location is *:::no-loc text="~/clouddrive/aspnet-learn/src/src/Services/Coupon/Coupon.API":::*.
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
@@ -138,13 +138,13 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
     popd
     ```
 
-1. Open *src/Services/Coupon/Coupon.API/Dockerfile* in the Cloud Shell Editor. Notice the following things in this *Dockerfile*:
+1. Open *:::no-loc text="src/Services/Coupon/Coupon.API/Dockerfile":::* in the Cloud Shell editor. Notice the following things in this *Dockerfile*:
 
     * The ASP.NET Core runtime image is used as the base image of the multistage build.
     * The .NET Core SDK image is acquired to support the running of the following .NET Core CLI commands against the *Coupon.API* project:
         * `dotnet restore`: Restores the project's NuGet packages.
-        * `dotnet build`: Builds the project in release mode. The build artifacts are written to the *app/build/* directory of an intermediate image.
-        * `dotnet publish`: Publishes the project in release mode. The published bundle is written to the *app/publish/* directory of the final image.
+        * `dotnet build`: Builds the project in release mode. The build artifacts are written to the *:::no-loc text="app/build/":::* directory of an intermediate image.
+        * `dotnet publish`: Publishes the project in release mode. The published bundle is written to the *:::no-loc text="app/publish/":::* directory of the final image.
     * The final image contains the ASP.NET Core runtime and the published coupon service artifacts.
     * When a container is started from the final image, the coupon service is started by running `dotnet Coupon.API.dll`.
 
@@ -159,7 +159,7 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
     The preceding script:
 
-    * Uncomments HTML markup in the *WebSPA* checkout and order details Angular components to support accepting coupon codes and displaying discount amounts, respectively. The following HTML markup in the *Web/WebSPA/Client/src/modules/orders* directory is uncommented:
+    * Uncomments HTML markup in the *WebSPA* checkout and order details Angular components to support accepting coupon codes and displaying discount amounts, respectively. The following HTML markup in the *:::no-loc text="Web/WebSPA/Client/src/modules/orders":::* directory is uncommented:
 
         *orders-detail/orders-detail.component.html*:
 
@@ -169,21 +169,21 @@ An ASP.NET Core project for the coupon service has been provided in the *src/Ser
 
         :::code language="html" source="../code/src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.component.html":::
 
-    * Creates a Helm chart for the coupon service in *deploy/k8s/helm-simple/coupon*.
-    * Adds the coupon service endpoints to the aggregator Helm chart in *deploy/k8s/helm-simple/webshoppingagg/templates/configmap.yaml*
-    * Adds the coupon health check to the *WebStatus* Helm chart in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*.
+    * Creates a Helm chart for the coupon service in *:::no-loc text="deploy/k8s/helm-simple/coupon":::*.
+    * Adds the coupon service endpoints to the aggregator Helm chart in *:::no-loc text="deploy/k8s/helm-simple/webshoppingagg/templates/configmap.yaml":::*
+    * Adds the coupon health check to the *WebStatus* Helm chart in *:::no-loc text="deploy/k8s/helm-simple/webstatus/templates/configmap.yaml":::*.
 
     To create an object in a Kubernetes cluster, the object specification must be provided in a YAML file. You'll use Helm's template functionality to generate and send the YAML to the cluster.
 
-    The Helm chart for the coupon service is composed of the following files in the *deploy/k8s/helm-simple/coupon* directory:
+    The Helm chart for the coupon service is composed of the following files in the *:::no-loc text="deploy/k8s/helm-simple/coupon":::* directory:
 
-    * *Chart.yaml*
-    * *templates/configmap.yaml*
-    * *templates/deployment.yaml*
-    * *templates/ingress.yaml*
-    * *templates/service.yaml*
+    * *:::no-loc text="Chart.yaml":::*
+    * *:::no-loc text="templates/configmap.yaml":::*
+    * *:::no-loc text="templates/deployment.yaml":::*
+    * *:::no-loc text="templates/ingress.yaml":::*
+    * *:::no-loc text="templates/service.yaml":::*
 
-    The *Chart.yaml* file contains a description of the chart. The *templates* directory contains template files. When Helm evaluates the chart with the `helm install` command, it sends all of the files in the *templates* directory to the template rendering engine. It then collects the rendered YAML created by those templates and sends it to AKS.
+    The *:::no-loc text="Chart.yaml":::* file contains a description of the chart. The *:::no-loc text="templates":::* directory contains template files. When Helm evaluates the chart with the `helm install` command, it sends all of the files in the *:::no-loc text="templates":::* directory to the template rendering engine. It then collects the rendered YAML created by those templates and sends it to AKS.
 
 ## Container images in ACR
 
@@ -214,7 +214,7 @@ Run the following script in the command shell to build the coupon service and *W
 
 The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects.
 
-Note the solution isn't being built in your Cloud Shell instance. The build occurs in the cloud when the container image is sent to ACR. Build output is displayed in the console. The `az acr build` command used by the script is displayed in the console with the correct parameters. The command resembles the following example:
+Note the solution isn't being built in your Cloud Shell instance. The build occurs in the cloud when the container image is sent to ACR. Build output is displayed in the command shell. The `az acr build` command used by the script is displayed in the command shell with the correct parameters. The command resembles the following example:
 
 ```azurecli
 az acr build --registry eshoplearn \
@@ -227,7 +227,7 @@ In the preceding example:
 
 * The `--registry` parameter specifies the name of the container registry to use.
 * The `--image` parameter specifies the name and tag of the image in the format `<repo url>/<name>:<tag>`.
-* The `--file` parameter specifies the relative path of the Dockerfile.
+* The `--file` parameter specifies the relative path of *Dockerfile*.
 * The final parameter, which is positional and not indicated by a command-line flag, specifies the location of the local source code directory. In this case, the script uses the directory in which it's currently running, indicated by `.`.
 
 In the next unit, you'll update the AKS deployment with your modifications.

@@ -8,6 +8,7 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
+  no-loc: ["Coupon.API", "Docker Hub", Dockerfile, Helm, Kubernetes, liveness, MongoDB, NuGet, readiness, "Startup.cs", WebSPA, WebStatus]
 title: Exercise - Add the coupon service
 durationInMinutes: 7
 content: |

@@ -8,13 +8,14 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
+  no-loc: [Kubernetes, liveness]
 title: Knowledge check
 durationInMinutes: 5
 content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "In a microservices architecture, how do individual microservices access their data?"
+    - content: "In a microservices architecture, how do individual services access their data?"
       choices:
       - content: "Data is stored in a master data store with which all microservices interact."
         isCorrect: false

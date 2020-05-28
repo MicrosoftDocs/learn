@@ -16,13 +16,13 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 
 * Installs the required version of the .NET Core SDK.
 * Clones the *eShopOnContainers* app from a GitHub repository.
-* Provisions an AKS and Azure Container Registry (ACR) resource.
+* Provisions AKS and ACR resources.
 * Launches the Cloud Shell editor to view the code.
 * Deploys the containers to a fully managed Kubernetes service in Azure, known as AKS.
 * Displays connection information upon completion.
 
 > [!IMPORTANT]
-> The script installs the required version of the .NET Core SDK alongside the version pre-installed in the Azure Cloud Shell. To revert to the default configuration in Azure Cloud Shell, see the instructions in the Summary unit.
+> The script installs the required version of the .NET Core SDK alongside the version pre-installed in Azure Cloud Shell. To revert to the default configuration in Cloud Shell, see [the instructions in the Summary unit](9-summary.md#reset-azure-cloud-shell).
 
 The script deploys a smaller, modified version of the *eShopOnContainers* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). While the script is running, continue to the next unit to review the *eShopOnContainers* architecture.
 
