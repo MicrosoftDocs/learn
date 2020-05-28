@@ -19,4 +19,4 @@ azureSandbox: true
 durationInMinutes: 10
 
 content: |
-  [!include[](includes/1-execute-first-function-in-portal.md)]
+  [!include[](includes/1-execute-first-function-portal.md)]
