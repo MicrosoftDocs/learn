@@ -22,8 +22,8 @@ Once we get that information, we can then attempt to get a baseline around
 performance and "normal" behavior for the system. There's lots of reasons
 we may need this information, the least of which is to help us when we have
 to triage a problem with the application. The middle of an outage is a bad
-time to try and figure out whether the database servers running at 80% cpu
-is a good thing or a bad thing.
+time to be figuring out whether the database servers running at 80% cpu is
+a good thing or a bad thing.
 
 As part of obtaining that baseline, we'll want to dive into looking at past
 performance. While it is true "Past performance is no guarantee of future
@@ -67,11 +67,11 @@ Gaining operational awareness is often not easy, but we are going to look
 at a few tools provided by Azure that can assist with the process. This
 will be a very shallow exploration--at the end of this module we will
 include pointers to other Microsoft Learn modules and documentation if
-you'd like explore any of these in more depth.
+you'd like to explore any of these in more depth.
 
 ### Application Insights
 
-The first tools we will look at will help us with the "what is actually
+The first tools we will look at can help us with the "what is actually
 running?" question. As operations people, it is not unusual to be asked to
 work with an application that is already running in production. While
 ideally we'd be part of the entire lifecycle of the software, starting at
@@ -90,7 +90,9 @@ components.
 
 Here's an example:
 
-PLACEHOLDER FOR SCREENSHOT
+:::image type="content" source="../media/application-map.png"
+alt-text="Application map panel in Azure portal displaying several
+components and the stats for traffic between them":::
 
 In this picture, you can see not only the components of the application,
 but also the communication between those components. If we zoom into one of
@@ -119,18 +121,21 @@ queries that return real-time answers based on the resources currently in
 use. For example, if we wanted to see all of the VMs we are currently
 running, we could run the following query:
 
-PLACEHOLDER FOR SCREEN SHOT
+:::image type="content" source="../media/resource-graph-explorer.png"
+alt-text="Resource graph panel in Azure portal with the query of where type
+== "microsoft.compute/virtualmachines":::
 
 and we get back a complete detailed list of the VMs being used in our
 subscription:
 
-PLACEHOLDER FOR SCREEN SHOT
+:::image type="content"
+source="../media/resource-graph-explorer-results.png" alt-text="Resource
+graph panel in the Azure portal with results of query showing table of
+results":::
 
 The query language used in this environment is Kusto Query Language (KQL).
 We'll be discussing it in more depth later in this module when we talk
 about Azure Monitor Log Analytics.
-
-PLACEHOLDER FOR SOMETHING INTERACTIVE WITH RESOURCE GRAPH EXPLORER HERE?
 
 ### Dashboards
 
@@ -146,7 +151,9 @@ Instead let's look at two dashboard features less commonly used that could
 be of real benefit to you. These features can be found at the top of every
 dashboard.
 
-PLACEHOLDER FOR SCREEN SHOT
+:::image type="content" source="../media/dashboard.png" alt-text="Dashboard
+panel in the Azure portal with the Upload and Download arrows
+highlighted":::
 
 The two highlighted arrows allow you to upload and download JSON
 representations of dashboards.
@@ -182,12 +189,13 @@ make use of other people's careful work when constructing dashboards.
 
 Let's look at final example for this section that nicely ties together two
 of the ideas from this unit. If you download this JSON file:
+[AzureInventoryDashboard.json](../code/AzureInventoryDashboard.json) to
+your computer and then upload it to a dashboard, you should see something
+like this:
 
-JSON FILE HERE
-
-and then upload it to a dashboard, you should see something like this:
-
-PLACEHOLDER FOR SCREEN SHOT HERE
+:::image type="content" source="../media/azure-inventory-dashboard.png"
+alt-text="Dashboard displaying inventory of Azure resources, one resource
+per tile":::
 
 You now have a live dashboard that shows you a fairly comprehensible
 inventory of your resources in use in a subscription. The data from this

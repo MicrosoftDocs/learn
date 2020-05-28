@@ -17,21 +17,16 @@ pretty easy to you.
 So let's see how this is all going to work. Here's a diagram of how Log
 Analytics works:
 
-PLACEHOLDER LOG ANALYTICS DIAGRAM
+:::image type="content" source="../media/log-analytics-overview.png" alt-text="Overview diagram of Log Analytics showing data inputs, tables, and sample queries":::
 
 Data for log analytics comes in from a number of sources including:
 
--   windows event logs
-
--   syslog on Linux machines
-
--   agents running on VMs
-
--   custom logs people choose to send in
-
--   metrics from Azure resources
-
--   telemetry info coming in from Application Insights
+- windows event logs
+- syslog on Linux machines
+- agents running on VMs
+- custom logs people choose to send in
+- metrics from Azure resources
+- telemetry info coming in from Application Insights
 
 All of this information comes into what Log Analytics calls "tables". You
 can think of each table as a separate database. You will be writing queries
@@ -39,13 +34,14 @@ to pull the information from the tables. For the examples we will be
 showing later in this module, we'll be working primarily with a table
 called "requests".
 
-PLACEHOLDER LOG ANALYTICS DIAGRAM
+:::image type="content" source="../media/log-analytics-requests-table.png" alt-text="Overview diagram of Log Analytics with requests table highlighted":::
 
 ## Log analytics interface
 
 The graphic below shows the different parts of the Log Analytics interface.
 
-PLACEHOLDER LOG ANALYTICS UI
+:::image type="content" source="../media/log-analytics-user-interface.png" alt-text="Screenshot of the Log Analytics workspace in the Azure Portal":::
+
 
 On the left is a section of the screen that makes sure you never get lost
 when using log analytics. It shows the tables you are potentially working
@@ -61,9 +57,7 @@ additional tabs if you want to work on several queries at a time.
 At the bottom of the page is more useful information. Here Log Analytics
 will show you previous queries you ran, which can be helpful if you need to
 return to something you’ve already specified previously – for example, if
-you were working on a query, tried something, and had to backtrack. If Log
-Analytics has a sense of the task you are attempting it will offer sets of
-recommended sample queries to help you get started.
+you were working on a query, tried something, and had to backtrack. 
 
 ## Writing KQL queries
 

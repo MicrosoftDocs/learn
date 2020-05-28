@@ -8,10 +8,8 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: set correct duration  
-durationInMinutes: 3
+  ms.prod: learning-azure 
+durationInMinutes: 6
 content: |
   [!include[](includes/4-changetheframe.md)]
 quiz:

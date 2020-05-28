@@ -17,16 +17,13 @@ Azure Monitor takes in data from a number of different sources. These
 include:
 
 -   Data from applications
-
 -   Data from the various operating systems running in Azure
-
 -   Information fed from Azure resources, subscriptions, and tenants
-
 -   Custom data. If you’d like to send in monitoring-related data from your
     systems or applications, basically of any sort and from any source,
     Azure monitor can take it that custom data.
 
-PLACEHOLDER AZURE MONITOR DIAGRAM
+:::image type="content" source="../media/azure-monitor-overview-sources.png" alt-text="Partial overview diagram of Azure monitor showing data sources":::
 
 ### Data types
 
@@ -41,13 +38,15 @@ The data that comes into Azure Monitor can be divided into two types:
 
 In this module, we will be focusing primarily on log data.
 
-PLACEHOLDER AZURE MONITOR DIAGRAM
+:::image type="content" source="../media/azure-monitor-overview-datatypes.png" alt-text="Partial overview diagram of Azure monitor showing data types":::
 
 ### Do something with the data
 
 Once the data is in Azure Monitor, there are a whole suite of tools that
 will let us analyze, visualize, respond to specific contents and integrate
 that data with other tools.
+
+:::image type="content" source="../media/azure-monitor-overview-full.png" alt-text="Complete overview diagram of the data sources, data types and offerings in Azure monitor":::
 
 In our next unit, we're going to explore in more detail one of the most
 useful tools for working with reliability, log analytics.

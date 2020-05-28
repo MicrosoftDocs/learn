@@ -1,17 +1,15 @@
 In this module, we've explored the subject of monitoring as the foundation
 of a larger framework for improving reliability. You now have:
 
-    - the map
-
-PLACEHOLDER FOR DICKERSON HIERARCHY DIAGRAM
+:::image type="content" source="../media/dickerson-hierarchy.png" alt-text="Pyramid diagram of Dickerson's hierarchy of reliability":::
 
     - the concepts
 
-PLACEHOLDER FOR RELIABILITY BUBBLES DIAGRAM
+:::image type="content" source="../media/reliability-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, each circle contains a word relating to reliability from a previous unit":::
 
     - the tools
 
-PLACEHOLDER FOR AZURE MONITOR PICTURE
+:::image type="content" source="../media/azure-monitor-overview-full.png" alt-text="Complete overview diagram of the data sources, data types and offerings in Azure monitor":::
 
 The expanded understanding of reliability we've discussed and the framing
 provided for it will allow us to use the tools provided by Azure to:

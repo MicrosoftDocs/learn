@@ -35,7 +35,7 @@ play.
 Service level indicators are connected to our previous discussion about the
 expansive understanding of reliability. Remember this diagram?
 
-PLACEHOLDER FOR BUBBLE DIAGRAM
+:::image type="content" source="../media/reliability-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, each circle contains a word relating to reliability from a previous unit":::
 
 SLIs are our attempt to specify just how we are going to measure the
 reliability of our system. What is the indicator that our service is
@@ -160,7 +160,7 @@ requests
 | summarize succeed = count (success == true), failed = count (success == false), total = count() by bin(timestamp, 5m)
 | extend SLI = succeed * 100.00 / total
 | project SLI, timestamp
-| render timechart 
+| render timechart
 ```
 
 As before, we start with specifying the source of the data, the `requests`
@@ -171,7 +171,7 @@ total number of requests. The SLI gets created using the easy arithmetic we
 saw before. We tell KQL we'd like to plot that SLI along with timestamps
 and then create a chart that will look something like this:
 
-PLACEHOLDER FOR LOG ANALYTICS CHART
+:::image type="content" source="../media/sli-example.png" alt-text="Line graph showing an SLI, graph shows SLI at 100% reliability followed by several dips":::
 
 Now, let's layer on a simple representation of an SLO:
 
@@ -189,7 +189,7 @@ There are two lines changed in this example from the previous one. The
 first defines the number we will use for the SLO, the second tells KQL that
 the SLO should be included in the chart. The result looks like this:
 
-PLACEHOLDER FOR LOG ANALYTICS CHART
+:::image type="content" source="../media/sli-example.png" alt-text="Line graph showing an SLI and an SLO, graph shows SLI at 100% reliability followed by several dips, SLO is a solid line at the 80% mark.":::
 
 In this chart, it becomes easy to see the time where we dipped below our
 availability objective.
