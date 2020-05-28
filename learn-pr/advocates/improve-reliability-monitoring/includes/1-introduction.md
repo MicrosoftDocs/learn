@@ -15,7 +15,7 @@ When you have completed this module, you will:
     Azure
 -   Learn the basics of Log Analytics and its query language
 -   Define and measure reliability with service level indicators (SLIs) and
-    service level objectives (SLIOs)
+    service level objectives (SLOs)
 -   Be able to use Log Analytics to implement a basic SLI and SLO on Azure
 -   Be able to craft actionable alerts to support a sustainable operations
     practice

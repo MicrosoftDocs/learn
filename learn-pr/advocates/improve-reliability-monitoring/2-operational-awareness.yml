@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-monitoring.2-opawareness
+uid: learn.improve-reliability-monitoring.2-operational-awareness
 title: "Operational Awareness"
 metadata:
-  title: "Operational Awareness"
-  description: "Improve Your Reliability: Monitoring"
+  title: "Operational awareness"
+  description: "Operational awareness"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 9
 content: |
-  [!include[](includes/2-opawareness.md)]
+  [!include[](includes/2-operational-awareness.md)]
 quiz:
   title: Check your knowledge
   questions:

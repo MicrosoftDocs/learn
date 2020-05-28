@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-monitoring.4-changetheframe
-title: "Changing the Frame"
+uid: learn.improve-reliability-monitoring.4-change-frame
+title: "Changing the frame"
 metadata:
-  title: "Changing the Frame"
-  description: "Improve Your Reliability: Monitoring"
+  title: "Changing the frame"
+  description: "Changing the frame"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure 
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-changetheframe.md)]
+  [!include[](includes/4-change-frame.md)]
 quiz:
   title: Check your knowledge
   questions:

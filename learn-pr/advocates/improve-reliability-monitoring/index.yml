@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.improve-reliability-monitoring
-title: "Improve Your Reliability: Monitoring"
+title: "Improve your reliability with modern operations practices: Monitoring"
 metadata:
-  title: "Improve Your Reliability: Monitoring"
+  title: "Improve your reliability with modern operations practices: Monitoring"
   description: Learn how to use monitoring to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 05/07/2020
   author: dnblankedelman
@@ -18,24 +18,27 @@ abstract: |
   - Gain a basic understanding of the applicable monitoring platform and tools available on Azure
   - Learn a practice from site reliability engineering that can immediately start to create an impact on reliability
   - Learn to craft actionable alerts to make your operational practices sustainable
-iconUrl: /learn/achievements/improving-reliability-monitoring.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - administrator
+- devops-engineer
+- solution-architect
+- technology-manager
 products:
 - azure
-prerequisites: none
+prerequisites: None
 units:
 - learn.improve-reliability-monitoring.1-introduction
-- learn.improve-reliability-monitoring.2-opawareness
-- learn.improve-reliability-monitoring.3-expandingreliability
-- learn.improve-reliability-monitoring.4-changetheframe
-- learn.improve-reliability-monitoring.5-monitoringtools
-- learn.improve-reliability-monitoring.6-loganalytics
-- learn.improve-reliability-monitoring.7-slislo
-- learn.improve-reliability-monitoring.8-actionablealerts
-- learn.improve-reliability-monitoring.9-takeaways
+- learn.improve-reliability-monitoring.2-operational-awareness
+- learn.improve-reliability-monitoring.3-expanding-understanding
+- learn.improve-reliability-monitoring.4-change-frame
+- learn.improve-reliability-monitoring.5-monitoring-tools
+- learn.improve-reliability-monitoring.6-log-analytics
+- learn.improve-reliability-monitoring.7-sli-slo
+- learn.improve-reliability-monitoring.8-actionable-alerts
+- learn.improve-reliability-monitoring.9-summary
 
 badge:
   uid: learn.improve-reliability-monitoring.badge

@@ -53,8 +53,7 @@ On the technical side of the context question, it will be really helpful
 for us to pay attention to technical questions like "just how did this
 application get in production?". Was it deployed manually during an "epic"
 deployment or was it deployed via an automated CI/CD pipeline with a great
-set of unit tests? We will talk a lot more about these deployment choices
-in XX OPS40 reference XXX.
+set of unit tests?
 
 This information can have many ramifications including how easy it will be
 to iterate if and when we have reliability improving updates to make. It
@@ -90,9 +89,7 @@ components.
 
 Here's an example:
 
-:::image type="content" source="../media/application-map.png"
-alt-text="Application map panel in Azure portal displaying several
-components and the stats for traffic between them":::
+:::image type="content" source="../media/application-map.png" alt-text="Application map panel in Azure portal displaying several components and the stats for traffic between them":::
 
 In this picture, you can see not only the components of the application,
 but also the communication between those components. If we zoom into one of
@@ -121,17 +118,12 @@ queries that return real-time answers based on the resources currently in
 use. For example, if we wanted to see all of the VMs we are currently
 running, we could run the following query:
 
-:::image type="content" source="../media/resource-graph-explorer.png"
-alt-text="Resource graph panel in Azure portal with the query of where type
-== "microsoft.compute/virtualmachines":::
+:::image type="content" source="../media/resource-graph-explorer.png" alt-text="Resource graph panel in Azure portal with the query of where type == "microsoft.compute/virtualmachines":::
 
 and we get back a complete detailed list of the VMs being used in our
 subscription:
 
-:::image type="content"
-source="../media/resource-graph-explorer-results.png" alt-text="Resource
-graph panel in the Azure portal with results of query showing table of
-results":::
+:::image type="content" source="../media/resource-graph-explorer-results.png" alt-text="Resource graph panel in the Azure portal with results of query showing table of results":::
 
 The query language used in this environment is Kusto Query Language (KQL).
 We'll be discussing it in more depth later in this module when we talk
@@ -151,9 +143,7 @@ Instead let's look at two dashboard features less commonly used that could
 be of real benefit to you. These features can be found at the top of every
 dashboard.
 
-:::image type="content" source="../media/dashboard.png" alt-text="Dashboard
-panel in the Azure portal with the Upload and Download arrows
-highlighted":::
+:::image type="content" source="../media/dashboard.png" alt-text="Dashboard panel in the Azure portal with the Upload and Download arrows highlighted":::
 
 The two highlighted arrows allow you to upload and download JSON
 representations of dashboards.
@@ -193,9 +183,7 @@ of the ideas from this unit. If you download this JSON file:
 your computer and then upload it to a dashboard, you should see something
 like this:
 
-:::image type="content" source="../media/azure-inventory-dashboard.png"
-alt-text="Dashboard displaying inventory of Azure resources, one resource
-per tile":::
+:::image type="content" source="../media/azure-inventory-dashboard.png" alt-text="Dashboard displaying inventory of Azure resources, one resource per tile":::
 
 You now have a live dashboard that shows you a fairly comprehensible
 inventory of your resources in use in a subscription. The data from this

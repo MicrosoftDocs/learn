@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-monitoring.6-loganalytics
+uid: learn.improve-reliability-monitoring.6-log-analytics
 title: "Log analytics and KQL queries"
 metadata:
   title: "Log analytics and KQL queries"
-  description: "Improve Your Reliability: Monitoring"
+  description: "Log analytics and KQL queries"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure 
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-loganalytics.md)]
+  [!include[](includes/6-log-analytics.md)]
 quiz:
   title: Check your knowledge
   questions:

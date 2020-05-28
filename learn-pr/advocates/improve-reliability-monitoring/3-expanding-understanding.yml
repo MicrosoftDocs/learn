@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-monitoring.3-expandingreliability
-title: "Expanding Our Understanding of Reliability"
+uid: learn.improve-reliability-monitoring.3-expanding-understanding
+title: "Expanding our understanding of reliability"
 metadata:
-  title: "Expanding Our Understanding of Reliability"
-  description: "Improve Your Reliability: Monitoring"
+  title: "Expanding our understanding of reliability"
+  description: "Expanding our understanding of reliability"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-expandingreliability.md)]
+  [!include[](includes/3-expanding-understanding.md)]
 quiz:
   title: Check your knowledge
   questions:

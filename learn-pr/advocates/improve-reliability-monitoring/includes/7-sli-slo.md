@@ -35,7 +35,7 @@ play.
 Service level indicators are connected to our previous discussion about the
 expansive understanding of reliability. Remember this diagram?
 
-:::image type="content" source="../media/reliability-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, each circle contains a word relating to reliability from a previous unit":::
+:::image type="content" source="../media/reliability-diagram-whole.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, each circle contains a word relating to reliability from a previous unit":::
 
 SLIs are our attempt to specify just how we are going to measure the
 reliability of our system. What is the indicator that our service is
@@ -138,7 +138,7 @@ information, a sample SLO might look like this:
 
 Similarly, a basic SLO measuring latency might look like this:
 
-> 90% of HTTP requests as reported by the client  returned in <20ms in the
+> 90% of HTTP requests as reported by the client returned in <20ms in the
 > last 30-day window.
 
 Start with simple, basic SLOs such as these when you introduce the practice
@@ -189,7 +189,7 @@ There are two lines changed in this example from the previous one. The
 first defines the number we will use for the SLO, the second tells KQL that
 the SLO should be included in the chart. The result looks like this:
 
-:::image type="content" source="../media/sli-example.png" alt-text="Line graph showing an SLI and an SLO, graph shows SLI at 100% reliability followed by several dips, SLO is a solid line at the 80% mark.":::
+:::image type="content" source="../media/slo-example.png" alt-text="Line graph showing an SLI and an SLO, graph shows SLI at 100% reliability followed by several dips, SLO is a solid line at the 80% mark.":::
 
 In this chart, it becomes easy to see the time where we dipped below our
 availability objective.
