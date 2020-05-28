@@ -65,7 +65,7 @@ Next, we have to teach LUIS how to pick out the search subject as the **facet** 
     ![Screenshot showing utterance selection to tie it to an entity](../media/select-facet-keyword.png)
 
    > [!TIP]
-   > Using multi-word keywords is a simple as clicking the first word and then dragging across the other consecutive word(s)/
+   > Using multi-word keywords is a simple as clicking the first word and then dragging across the other consecutive word(s).
 
 1. Add two more intents with related utterances, as shown in the following table:
 
