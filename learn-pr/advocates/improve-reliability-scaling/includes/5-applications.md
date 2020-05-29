@@ -31,14 +31,16 @@ strengths. What’s good about it?
 Take another look at the scenario you saw in the previous unit. Here’s a
 diagram of the organization’s architecture again.
 
-:::image type="content" source="../media/application-diagram-frontend.png" alt-text="Full architecture diagram of application with products backend service highlighted":::
+:::image type="content" source="../media/application-diagram-frontend.png"
+alt-text="Full architecture diagram of application with products backend
+service highlighted":::
 
 They've decomposed the application into smaller microservices and some of
-these are sitting as containers on Azure Kubernetes Service or they could
-be running on virtual machines or App Service. You’re using some
+these services are sitting as containers on Azure Kubernetes Service or
+they could be running on virtual machines or App Service. You’re using some
 “inherently scalable” services such as Functions and Logic Apps.
 
-This is good, but there are some improvements that would make the
+This change is good, but there are some improvements that would make the
 application more scalable. As an example, focus now on the Products
 service. In the diagram, the product service is running in Kubernetes, but
 we will assume for this explanation that it is running on a virtual machine
@@ -55,7 +57,7 @@ across the VMs.
 
 ### Virtual machine scale sets
 
-By leveraging virtual machine scale sets over single virtual machines you
+By leveraging virtual machine scale sets over single virtual machines, you
 get a few benefits:
 
 -   You can autoscale based on host metrics, in-guest metrics, application
@@ -78,30 +80,31 @@ scale sets. Specifically:
     backend.
 -   Remove persistent data from the VM and store it somewhere else, such as
     in Azure Storage or in a database.
--   Design for scale-in. It’s also important that your application be able
-    to easily handle scaling back down. It has to gracefully handle not
-    only having more instances added to the pool of servers handling the
-    traffic but also the abrupt termination of instances as the load drops.
-    This is often overlooked.
+-   Design for scale-in. It’s also important that your application easily
+    handle scaling back down. It has to gracefully handle not only having
+    more instances added to the pool of servers handling the traffic but
+    also the abrupt termination of instances as the load drops. The scale
+    down aspect of scaling is often overlooked.
 
 ## Decoupling
 
 You have added more VMs with scale sets. Scaling out is the typical answer
 to “we need to scale” but you can only scale on a single metric, and this
-might not be relevant to all tasks being performed by your product service.
+answer might not be relevant to all tasks being performed by your product
+service.
 
 In our scenario, the products service has a job. It takes a product image
 and once that image is uploaded, it transcodes that image and stores it in
 a number of different sizes for thumbnails, pictures in the catalog, and so
-forth. The image processing is CPU intensive, but the general usage is
+forth. The image-processing is CPU intensive, but the general usage is
 memory intensive.
 
-This is an asynchronous task that can be broken into a background job. You
-can do that by decoupling your image processing service via a queue. This
-means you can scale both services independently – one on memory (the
-product service) and the other (the image processing service) on CPU or
-even queue length and have another scale set consume those messages and
-process the images.
+Image-processing is an asynchronous task that can be broken into a
+background job. You can do that by decoupling your image-processing service
+via a queue. This means you can scale both services independently – one on
+memory (the product service) and the other (the image-processing service)
+on CPU or even queue length and have another scale set consume those
+messages and process the images.
 
 ### Scale with queues
 
@@ -124,7 +127,7 @@ an in-memory cache.
 
 Now you know that performance does not equal scalability exactly, but by
 improving the performance of your application, you can reduce the load on
-other resources. This means you may not have to scale as soon.
+other resources. This improvement means you may not have to scale as soon.
 
 Azure Cache for Redis is a managed Redis offering. Redis can be used for a
 number of patterns and use cases. For your product service in this
@@ -145,11 +148,11 @@ a managed SQL server offering from Azure.
 
 Relational databases are much harder to scale out than non-relational
 databases. The first thing you might do in order to scale your database is
-to scale up the size of the database. This can be done very easily with
-Azure SQL, via a simple API call or using a slider in the portal, with an
-average downtime of under four seconds.
+to scale up the size of the database. This resizing can be done very easily
+with Azure SQL, via a simple API call or using a slider in the portal, with
+an average downtime of under four seconds.
 
-If this doesn’t meet your requirements, depending on traffic
+If this sizing up doesn’t meet your requirements, depending on traffic
 characteristics, it may be suitable to scale out the reads to the database.
 Doing this will enable you to route read traffic to your Read Replica.
 
@@ -157,7 +160,7 @@ _Note that with Azure SQL, if you’re using the Premium or Business Critical
 tiers, Read Scale Out is enabled by default. It cannot be enabled on basic
 or standard tiers._
 
-This must be implemented in code. Here’s how to do that:
+This change must be implemented in code. Here’s how to do that:
 
 ```
 #Azure SQL Connection String
@@ -196,13 +199,13 @@ required for a number of reasons. For example:
 -   The transaction throughput of the overall workload exceeds the
     capabilities of an individual database.
 -   Separate tenants need to reside on different physical databases for
-    compliance reasons (this is less of a scaling reason, but is another
-    situation in which sharding is used).
+    compliance reasons (this requirement is less about scaling, but is
+    another situation in which sharding is used).
 
 Your application will add the relevant data to the relevant shard, and thus
 make your system scalable beyond the constraints of the individual
 database.
 
 Azure SQL offers the Azure Elastic Database tools. This provides a number
-of tools to help you create, maintain and query sharded SQL databases in
+of tools to help you create, maintain, and query sharded SQL databases in
 Azure from your application logic.
