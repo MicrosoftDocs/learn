@@ -23,7 +23,6 @@ products:
 - azure-portal
 - azure-cognitive-services
 modules:
-- learn.data-ai.convert-speech-to-text
 - learn.data-ai.recognize-voices-with-speaker-recognition
 trophy:
   uid: learn.data-ai.translate-speech-with-speech-services.trophy
