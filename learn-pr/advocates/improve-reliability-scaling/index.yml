@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.improve-reliability-scaling
-title: "Improve Your Reliability: Capacity Planning and Scaling"
+title: "Improve your reliability with modern operations practices: Capacity planning and scaling"
 metadata:
-  title: "Improve Your Reliability: Capacity Planning and Scaling"
+  title: "Improve your reliability with modern operations practices: Capacity planning and scaling"
   description: Learn about capacity planning and scaling practices that can help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 05/07/2020
   author: dnblankedelman
@@ -24,22 +24,25 @@ abstract: |
       decoupling, queues, in-memory caching and database sharding
   -   Learn about the Azure tools that make it possible to take your
       application or service global
-iconUrl: /learn/achievements/improve-reliability-scaling.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - administrator
+- devops-engineer
+- solution-architect
+- technology-manager
 products:
 - azure
-prerequisites: none
+prerequisites: None
 units:
 - learn.improve-reliability-scaling.1-introduction
-- learn.improve-reliability-scaling.2-scalability
+- learn.improve-reliability-scaling.2-definition
 - learn.improve-reliability-scaling.3-growth
 - learn.improve-reliability-scaling.4-considerations
 - learn.improve-reliability-scaling.5-applications
 - learn.improve-reliability-scaling.6-global
-- learn.improve-reliability-scaling.7-takeaways
+- learn.improve-reliability-scaling.7-summary
 
 badge:
   uid: learn.improve-reliability-scaling.badge

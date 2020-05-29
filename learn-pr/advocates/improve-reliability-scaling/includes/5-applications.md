@@ -60,14 +60,12 @@ get a few benefits:
 
 -   You can autoscale based on host metrics, in-guest metrics, application
     insights or by a schedule.
-
 -   You can leverage Availability Zones, which are independent standalone
     data centers within an Azure region. With Availability Zones support,
     you can spread your VMs across multiple AZs, which will make your
     application more reliable and protect it from data center failures. New
     instances within a scale set will be automatically evenly distributed
     across AZs.
-
 -   Adding a load balancer becomes easier. Virtual machine scale sets
     support the use of Azure Load Balancer for basic Layer 4 traffic
     distribution and Azure Application Gateway for more advanced L7 traffic
@@ -78,10 +76,8 @@ scale sets. Specifically:
 
 -   Avoid instance “stickiness,” so that no client is “stuck” to a specific
     backend.
-
 -   Remove persistent data from the VM and store it somewhere else, such as
     in Azure Storage or in a database.
-
 -   Design for scale-in. It’s also important that your application be able
     to easily handle scaling back down. It has to gracefully handle not
     only having more instances added to the pool of servers handling the
@@ -114,7 +110,6 @@ Azure has two types of queue offerings:
 -   Azure Service Bus queues is a more advanced queueing offering, which is
     part of the broader Azure Service Bus product, offering pub/sub and
     more advanced integration patterns.
-
 -   Azure Storage Queues is a simple REST-based queue interface built on
     top of Azure Storage. It offers reliable, persistent messaging.
 
@@ -187,10 +182,8 @@ required for a number of reasons. For example:
 
 -   The total amount of data is too large to fit within the constraints of
     an individual database.
-
 -   The transaction throughput of the overall workload exceeds the
     capabilities of an individual database.
-
 -   Separate tenants need to reside on different physical databases for
     compliance reasons (this is less of a scaling reason, but is another
     situation in which sharding is used).

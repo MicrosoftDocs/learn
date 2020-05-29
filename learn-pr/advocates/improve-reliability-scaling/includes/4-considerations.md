@@ -3,11 +3,8 @@ there are factors that can complicate the process. In addition to simple
 current and predicted usage numbers, you must also factor in the following:
 
 -   Service limits and quotas
-
 -   Cost limitations
-
 -   Code and configuration inefficiencies
-
 -   Dependencies
 
 In this unit, you’ll look at how these considerations can impact your
@@ -79,9 +76,7 @@ You can:
 
 -   Plan for the cost of an environment using the
     [Azure calculator](https://azure.microsoft.com/pricing/calculator/)
-
 -   Review current and projected monthly spend in the Azure portal.
-
 -   Set up budgets in Azure Cost Management. This tool can allow you to
     examine your costs at different scopes including management group,
     resource group and subscription. etc.)
@@ -99,23 +94,20 @@ scaling out resources. Some examples of this include:
 -   If you have a badly designed database with hot partitions – such as
     using only one partition on a huge noSQL database – it will be slow no
     matter how much you scale.
-
 -   If you have inefficient database queries, make them more performant
     before you throw more resources at the database. Sometimes just adding
     the right index to a database based on common queries can drop your
     costs 100x.
-
 -   If your timeouts are set incorrectly and your database connections are
     getting saturated due to retries from inconsistent timeouts between
     server and database, you need to fix the settings before scaling the
     database.
-
 -   If the developer’s code is inefficient, can you write more efficient
     code to address the problem? Perhaps the code does not free memory when
     it could and so you have been using larger memory VMs when that isn't
     necessary. Fixes like that can provide significant cost savings.
 
-# Dependencies
+## Dependencies
 
 The changes that are needed to address some of the issues discussed in this
 module often have dependencies on the developers of your application. That

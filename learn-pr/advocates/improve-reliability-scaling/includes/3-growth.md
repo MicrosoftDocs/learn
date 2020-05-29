@@ -14,7 +14,6 @@ for this:
     your needs, not all of the services you consume scale automatically or
     are inherently scalable. Thus, you will need to be aware of service
     limits and know when you’re going to need to scale things up.
-
 -   Whereas cloud resources might be unlimited, your budget probably isn’t.
     You have to consider cost, and your friends in the Finance department
     will want to know your forecasted cloud spend.
@@ -29,7 +28,7 @@ The first thing you should do when looking to plan for capacity in the
 cloud as your business grows organically is to map out the current resource
 requirements for the larger components in your application.
 
-## SCENARIO: Organic Growth
+## Scenario: Organic growth
 
 Let’s return to the architecture we saw early in this module. Tailwind
 Traders is about to launch an innovative new product and is anticipating
@@ -42,9 +41,7 @@ To begin capacity planning, you need to identify the larger components. In
 this example, that would include:
 
 -   The Azure Kubernetes Service cluster
-
 -   The Rewards app running in Azure App Service
-
 -   Various databases, such as Cosmos DB, Azure SQL and the like.
 
 For each of these large components, you need to understand what the current
@@ -135,7 +132,7 @@ Getting this right will likely be specific to your organization and the
 particular event. You may not always get it right but being as prepared as
 you can be will give you a head start.
 
-### SCENARIO: Inorganic Growth
+### Scenario: Inorganic growth
 
 Let’s look at another hypothetical situation as an example of planning for
 inorganic growth: There is an upcoming marketing event for the launch of a

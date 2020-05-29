@@ -3,13 +3,12 @@ uid: learn.improve-reliability-scaling.4-considerations
 title: "Capacity planning considerations"
 metadata:
   title: "Capacity planning considerations"
-  description: "Improve Your Reliability: Capacity Planning and Scaling"
+  description: "Capacity planning considerations"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 # TODO: set correct duration  
 durationInMinutes: 3
 content: |

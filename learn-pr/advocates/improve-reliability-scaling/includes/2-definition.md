@@ -47,11 +47,8 @@ To estimate capacity needs in the future, you should consider such factors
 as:
 
 -   Expected business growth
-
 -   Periodic fluctuations (seasonal, etc.)
-
 -   Application constraints
-
 -   Identification of bottlenecks and limiting factors
 
 You’ll also need to set service level objectives so you can create a
@@ -70,24 +67,19 @@ basic concepts and fundamental terms related to scaling.
 
 -   Scaling up: making a component bigger so as to handle an increased
     workload. This is also referred to as vertical scaling.
-
 -   Scaling out: adding more components or resources to spread out the load
     over a distributed architecture. For example, using a simple
     architecture that has multiple backends behind a set of frontends. As
     load increases, we add more backend (and frontend) servers to handle
     it. This is also referred to as horizontal scaling.
-
 -   Manually scaling: human action is necessary to increase the amount of
     resources.
-
 -   Auto scaling: the amount of resources is automatically adjusted by the
     system based on the load. And just to be clear, because this is often
     left out of our thinking, the amount is adjusted both up and down based
     on either an increased or decreased load.
-
 -   DIY scale: do-it-yourself scaling whereby you have to configure the
     autoscaling.
-
 -   Inherent scale: services that were built to be scalable and handle this
     scaling for you behind the scenes without any intervention on your
     part. From your perspective, they look almost infinitely scalable
@@ -117,7 +109,7 @@ on Kubernetes.
 
 PLACEHOLDER backend
 
-### single points of failure
+### Single points of failure
 
 Now that you have seen the whole architecture, let's take a moment to
 examine the single points of failure and the places we might put our
@@ -132,7 +124,7 @@ crash, and there is no easy way to resolve that in the moment.
 Later in this module we will look at other ways to design theses service to
 be more scalable and reliable.
 
-### pre-provisioned capacity
+### Pre-provisioned capacity
 
 Lets take a look at another issue that could come and bite us. Here are the
 services/components that require us to pre-provisioned capacity:
@@ -149,7 +141,7 @@ Will a big spike in traffic, perhaps due to a product launch, make us hit
 these limits? Right now we don’t know. This is another matter we will
 discuss later in this module.
 
-### costs
+### Costs
 
 Even when we do things right, we still need to plan for growth. Here are
 the pay-per-use services:

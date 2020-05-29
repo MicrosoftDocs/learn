@@ -1,19 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-scaling.2-scalability
+uid: learn.improve-reliability-scaling.2-definition
 title: "What is scalability?"
 metadata:
   title: "What is scalability?"
-  description: "Improve Your Reliability: Capacity Planning and Scaling"
+  description: "What is scalability?"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 # TODO: set correct duration  
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-scalability.md)]
+  [!include[](includes/2-definition.md)]
 quiz:
   title: Check your knowledge
   questions:

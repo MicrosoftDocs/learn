@@ -16,12 +16,10 @@ such a task, so ask yourself a few more questions:
 
 -   Can you get content closer to your end users via a content delivery
     network?
-
 -   Do you really need to scale this particular system across two (or more)
     geographies? For example, does a user in the United States need to have
     the exact same account in the United Kingdom? Would independent systems
     be more suitable? This pattern is very common in e-commerce.
-
 -   If you really do need a globally distributed system, what consistency
     do you need for the database? Strong consistency across the globe is
     very difficult to get right, and is not permitted in services such as
@@ -56,7 +54,6 @@ at Azure Front Door and Azure Traffic Manager:
     This could be based on performance, location, round robin etc. Once a
     healthy backend is identified, clients always connect directly to the
     backend.
-
 -   Azure Front Door Service is an Application Delivery Network (ADN) as a
     service, offering various layer 7 load-balancing capabilities for your
     applications. It provides dynamic site acceleration (DSA) along with
