@@ -30,7 +30,7 @@ Suppose there is a large population and a disease that strikes a tiny
 proportion of the population. The tree diagram below summarizes
 information about such a disease and about a medical test for it.
 
-![Tree Rare Disease](../media/tree-disease-rare.png)
+![Tree rare disease.](../media/tree-disease-rare.png)
 
 Overall, only 4 in 1000 of the population has the disease. The test is
 quite accurate: it has a very small false positive rate of 5 in 1000,
@@ -112,7 +112,7 @@ disease in the first place. The tiny fraction of those that falsely test
 Positive are still greater in number than the people who correctly test
 Positive. This is easier to visualize in the tree diagram:
 
-![Tree Rare Disease](../media/tree-disease-rare.png)
+![Tree rare disease.](../media/tree-disease-rare.png)
 
 -   The proportion of true Positives is a large fraction (0.99) of a
     tiny fraction (0.004) of the population.
@@ -166,7 +166,7 @@ Suppose the doctor's subjective opinion is that there is a 5% chance
 that the patient has the disease. Then just the prior probabilities in
 the tree diagram will change:
 
-![Tree: Subjective Prior](../media/tree-disease-subj.png)
+![Tree, subjective prior.](../media/tree-disease-subj.png)
 
 Given that the patient tests Positive, the chance that he or she has the
 disease is given by Bayes' Rule.
