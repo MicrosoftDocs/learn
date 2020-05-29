@@ -53,7 +53,7 @@ cp ~/.bashrc.bak.microservices-aspnet-core ~/.bashrc
 
 The preceding command restores your prior *:::no-loc text=".bashrc":::* profile startup file from a backup saved by the setup script.
 
-[!INCLUDE[download files](../../includes/summary-download-clouddrive.md)]
+[!INCLUDE[download files](../../includes/summary-download-cloud-drive.md)]
 
 ## Reset Azure Cloud Shell
 
