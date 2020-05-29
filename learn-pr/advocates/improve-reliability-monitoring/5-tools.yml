@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-monitoring.5-monitoring-tools
+uid: learn.improve-reliability-monitoring.5-tools
 title: "Azure monitoring tools"
 metadata:
   title: "Azure monitoring tools"
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-monitoring-tools.md)]
+  [!include[](includes/5-tools.md)]
 quiz:
   title: Check your knowledge
   questions:
