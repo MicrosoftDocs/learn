@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-deployment.2-definition
+title: "What is software deployment?"
+metadata:
+  title: "What is software deployment?"
+  description: "What is software deployment?"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-definition.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What is one of the characteristics of the “epic deployment?”'
+    choices:
+    - content: "it's fast"
+      isCorrect: false
+      explanation: 'Epic deployments usually take a considerable amount of time because of their size.'
+    - content: "it's repeatable"
+      isCorrect: false
+      explanation: "Because they're done so infrequently, there's usually only small amounts of effort put into repeatability."
+    - content: "it's complex"
+      isCorrect: true
+      explanation: 'Because of the size and infrequency, they are often quite complex.'
