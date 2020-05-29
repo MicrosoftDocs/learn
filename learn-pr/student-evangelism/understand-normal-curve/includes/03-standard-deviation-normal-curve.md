@@ -44,7 +44,7 @@ positions = np.arange(-3, 3.1, 1)*sd_height + mean_height
 plots.xticks(positions);
 ```
 
-![Standard deviation example](../media/71-standard-deviation-normal-curve-6-1.png)
+![Standard deviation example.](../media/71-standard-deviation-normal-curve-6-1.png)
 
 The last two lines of code in the cell above change the labeling of the
 horizontal axis. Now, the labels correspond to "average $\pm$ $z$ SDs"
@@ -93,7 +93,7 @@ $$
 plot_normal_cdf()
 ```
 
-![Standard deviation example](../media/71-standard-deviation-normal-curve-11-0.png)
+![Standard deviation example.](../media/71-standard-deviation-normal-curve-11-0.png)
 
 As always when you examine a new histogram, start by looking at the
 horizontal axis. On the horizontal axis of the standard normal curve,
@@ -150,7 +150,7 @@ standard normal curve.
 plot_normal_cdf(1)
 ```
 
-![Standard deviation example](../media/71-standard-deviation-normal-curve-16-0.png)
+![Standard deviation example.](../media/71-standard-deviation-normal-curve-16-0.png)
 
 The numerical value of the shaded area can be found by calling
 `stats.norm.cdf`.
@@ -174,7 +174,7 @@ The area to the right of $z=1$ is about 100% - 84% = 16%.
 plot_normal_cdf(lbound=1)
 ```
 
-![Standard deviation example](../media/71-standard-deviation-normal-curve-20-0.png)
+![Standard deviation example.](../media/71-standard-deviation-normal-curve-20-0.png)
 
 ``` python
 1 - stats.norm.cdf(1)
@@ -193,7 +193,7 @@ ways. It is the gold area under the curve below.
 plot_normal_cdf(1, lbound=-1)
 ```
 
-![Standard deviation example](../media/71-standard-deviation-normal-curve-23-0.png)
+![Standard deviation example.](../media/71-standard-deviation-normal-curve-23-0.png)
 
 For example, we could calculate the area as "100% - two equal tails",
 which works out to roughly 100% - 2x16% = 68%.
@@ -218,7 +218,7 @@ about 95%.
 plot_normal_cdf(2, lbound=-2)
 ```
 
-![Standard deviation example](../media/71-standard-deviation-normal-curve-27-0.png)
+![Standard deviation example.](../media/71-standard-deviation-normal-curve-27-0.png)
 
 ``` python
 stats.norm.cdf(2) - stats.norm.cdf(-2)

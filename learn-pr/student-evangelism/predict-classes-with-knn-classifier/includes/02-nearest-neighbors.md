@@ -102,7 +102,7 @@ ckd = ckd.join('Class', color_table)
 ckd.scatter('Hemoglobin', 'Glucose', group='Color')
 ```
 
-![88 nearest neighbors](../media/88-nearest-neighbors-11-0.png)
+![Scatterplot of hemoglobin and glucose.](../media/88-nearest-neighbors-11-0.png)
 
 Suppose Alice is a new patient who is not in the data set. If I tell you
 Alice's hemoglobin level and blood glucose level, could you predict
@@ -164,7 +164,7 @@ alice = make_array(0, 1.5)
 show_closest(alice)
 ```
 
-![88 nearest neighbors](../media/88-nearest-neighbors-16-0.png)
+![Alice nearest neighbor example.](../media/88-nearest-neighbors-16-0.png)
 
 Thus our *nearest neighbor classifier* works like this:
 
@@ -200,7 +200,7 @@ alice = make_array(0, 0.97)
 show_closest(alice)
 ```
 
-![88 nearest neighbor](../media/88-nearest-neighbors-19-0.png)
+![Nearest neighbor.](../media/88-nearest-neighbors-19-0.png)
 
 Here are hundreds of new unclassified points, all in red.
 
@@ -229,7 +229,7 @@ plt.xlim(-2, 2)
 plt.ylim(-2, 2);
 ```
 
-![88 nearest neighbors](../media/88-nearest-neighbors-22-0.png)
+![scatterplot of hemoglobin and glucose.](../media/88-nearest-neighbors-22-0.png)
 
 Each of the red points has a nearest neighbor in the training set (the
 same blue and gold points as before). For some red points, you can easily
@@ -274,7 +274,7 @@ plt.xlim(-2, 2)
 plt.ylim(-2, 2);
 ```
 
-![88 nearest neighbors](../media/88-nearest-neighbors-26-0.png)
+![Scatterplot of hemoglobin and glucose.](../media/88-nearest-neighbors-26-0.png)
 
 The decision boundary is where the classifier switches from turning the
 red points blue to turning them gold.
@@ -289,7 +289,7 @@ to look at white blood cell count. Look at what happens:
 ckd.scatter('White Blood Cell Count', 'Glucose', group='Color')
 ```
 
-![88 nearest neighbors](../media/88-nearest-neighbors-29-0.png)
+![Scatterplot of white blood cell count and glucose.](../media/88-nearest-neighbors-29-0.png)
 
 As you can see, non-CKD individuals are all clustered in the lower left.
 Most of the patients with CKD are above or to the right of that
