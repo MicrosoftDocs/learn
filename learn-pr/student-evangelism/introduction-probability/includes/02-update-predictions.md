@@ -163,7 +163,7 @@ students.pivot('Major', 'Year')
 | Third  | 32       | 8          |
 ```
 
-![Students Tree Diagram](../media/tree-students.png)
+![Students tree diagram.](../media/tree-students.png)
 
 Like the pivot table, this diagram *partitions* the students into four
 distinct groups known as "branches". Notice that the "Third Year,
