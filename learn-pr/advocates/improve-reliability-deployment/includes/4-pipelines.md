@@ -25,7 +25,7 @@ of steps code goes through as changes are made during the development
 process prior to deploying it to production. Here is a graphic
 representation of sample steps in a simplified delivery pipeline.
 
-PLACEHOLDER slide 16: Continuous delivery pipeline
+:::image type="content" source="../media/pipeline-stages.png" alt-text="Diagram with eight stages of a pipeline, four marked as Integration, four marked as Deployment, red indicator arrows pointing at Test and Review stages":::
 
 Let's walk through this pipeline step by step.
 
@@ -80,10 +80,8 @@ Whether you use a YAML file or the Classic interface, here are the basic
 steps you will follow:
 
 1.  Configure Azure Pipelines to use your Git repository.
-
 2.  Define your build, either by editing the azure-pipelines.yml file or by
     using the Classic editor.
-
 3.  Push your code to your version control repository. This action triggers
     the pipeline to build and test your code.
 

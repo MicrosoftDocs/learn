@@ -16,13 +16,8 @@ When you have completed this module, you will:
 
 -   Be able to define deployment and recognize the difference between
     traditional and modern deployment practices
-
 -   Describe the continuous delivery/deployment model
-
 -   List goals you can achieve by using DevOps practices to deploy software
-
 -   Recognize three deployment strategies
-
 -   Identify tools you can use for test automation
-
 -   Explain environment traceability

@@ -3,15 +3,13 @@ uid: learn.improve-reliability-deployment.3-continuous
 title: "The continuous delivery deployment model"
 metadata:
   title: "The continuous delivery deployment model"
-  description: "Improve Your Reliability: Deployment Practices"
+  description: "The continuous delivery deployment model"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: set correct duration  
-durationInMinutes: 3
+  ms.prod: learning-azure 
+durationInMinutes: 4
 content: |
   [!include[](includes/3-continuous.md)]
 quiz:

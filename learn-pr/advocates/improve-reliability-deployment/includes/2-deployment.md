@@ -10,11 +10,8 @@ installation of the software is only a part of the process of deploying it.
 Deployment involves much more. Deployment activities can include:
 
 -   “Racking and stacking” a server
-
 -   Deploying an updated piece of software onto that server
-
 -   Using things such as scripts and infrastructure as code
-
 -   Or even walking around an office with a USB drive, manually installing
     software on computers.
 
@@ -41,23 +38,17 @@ typically happens:
 
 -   An organization develops a sales-related application. This application
     is updated exactly two times per year.
-
 -   During these updates all the new features, bug fixes (large and small),
     and dependency updates are deployed.
-
 -   The first deployment of the year is scheduled to happen over Labor Day
     weekend, and the second takes place the weekend after Thanksgiving.
-
 -   Each update is an "all hands-on deck" situation. The application team,
     support team, infrastructure team, management – everyone is involved in
     the deployment.
-
 -   Services temporarily go offline while the deployment is in progress.
-
 -   History has shown that the deployment is always fraught with issues,
     on-demand engineering, troubleshooting, and configuration management
     changes.
-
 -   It seldom goes well, and when it’s complete, it generally feels patched
     together in an unreproducible way.
 
@@ -65,15 +56,10 @@ This is not a good deployment situation. The epic deployment method is an
 intense manual task that presents a number of problems:
 
 -   It’s complex.
-
 -   It’s stressful.
-
 -   It’s risky.
-
 -   It’s slow.
-
 -   It’s not reproducible because of all the complex steps.
-
 -   It often requires several individual experts to complete the
     deployment.
 

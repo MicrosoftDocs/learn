@@ -3,15 +3,13 @@ uid: learn.improve-reliability-deployment.4-pipelines
 title: "Test automation and the delivery pipeline"
 metadata:
   title: "Test automation and the delivery pipeline"
-  description: "Improve Your Reliability: Incident Response"
+  description: "Test automation and the delivery pipeline"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: set correct duration  
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/4-pipelines.md)]
 quiz:
