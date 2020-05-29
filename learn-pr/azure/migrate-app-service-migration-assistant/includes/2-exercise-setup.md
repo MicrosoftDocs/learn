@@ -1,1 +1,3 @@
-In this unit, you'll launch our sandbox environment.  The sandbox environment takes a few moments to prepare for your exercise, so execute following script and then continue to the next unit where you'll read about assessment while your environment is setting up.
+In this unit, you'll launch our sandbox environment.  The exercises in this module will use a Virtual Machine to simulate an on premises Windows server running Internet Information Services and an ASP.NET web app.  The Virtual Machine has the Azure App Service Migration Assistant pre-installed.
+
+It will take a few minutes to launch the sandbox environment and setup the Virtual Machine.  Execute following script and then continue to the next unit where you'll read about assessment while your environment is setting up.

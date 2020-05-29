@@ -39,9 +39,9 @@ The Migration Assistant looks for specific features of a web application to ensu
 | Configuration Error | The Migration Assistant ensures that your on-premises IIS is configured correctly and does not return an error when scanned. This readiness check ensures that there's no underlying issues with the web app prior to migration. |
 | Virtual Directories | Azure App Service stores all files in a fixed directory structure.  The Migration Assistant will move files into the appropriate sub directories, but is unable to migrate applications with virtual directories that are backed by UNC shares. |
 
-This information from this table was summarized from a the App Service Migration Assistant wiki.  For more information on each of these readiness checks, please refer to:
+This information from this table was summarized from a the Azure App Service Migration Assistant wiki.  For more information on each of these readiness checks, please refer to:
 
-https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks
+[Azure App Service Migration Assistant wiki](https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks?azure-portal=true)
 
 
 ### What if the assessment finds a problem?
@@ -51,6 +51,11 @@ If the Azure App Service Migration Assistant finds issues when assessing your we
 - Update the application to replace features that are dependent on lower-level extensibility features of Internet Information Services.  This could be relatively simple depending on the functionality in question.  For example, you could replace the custom logging features that were dependent on an ISAPI filter with Azure Application Insights. Application Insights requires only a few lines of code be added to an application and provides a wealth actionable reports.
 - Update the application by temporarily disabling the feature that is blocking the migration.  The Migration Assistant can guide you to do this.
 - Deploy the application "as is" to an Azure Virtual Machine. While you would not gain the benefits of using Azure App Services and would be required to maintain the operating system, you would no longer need to maintain the hardware, and you would have a single point of management for all your web services.
+
+The Azure App Service Migration Assistant wiki contains suggested remedies for many of the issues found during an assessment.  For more information, see:
+
+[Azure App Service Migration Assistant wiki](https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks?azure-portal=true)
+
 
 ## Recap
 
