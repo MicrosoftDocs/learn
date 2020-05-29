@@ -104,7 +104,7 @@ those deaths are stacked on top of each other. The black discs mark the
 locations of water pumps. The map displays a striking revelation---the
 deaths are roughly clustered around the Broad Street pump.
 
-![snow's cholera map](../media/snow-map.jpg)
+![snow's cholera map.](../media/snow-map.jpg)
 
 Snow studied his map carefully and investigated the apparent anomalies.
 All of them implicated the Broad Street pump. For example: - There were

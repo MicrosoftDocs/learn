@@ -92,7 +92,7 @@ cum_counts.plot(column_for_xticks=3)
 plots.title('Cumulative Number of Times Each Name Appears', y=1.08);
 ```
 
-![png](../media/5-literary-characters-3-0.png)
+![Huckleberry finn cumulative number of times each name appears.](../media/5-literary-characters-3-0.png)
 
 In the plot above, the horizontal axis shows chapter numbers and the
 vertical axis shows how many times each character has been mentioned up
@@ -156,7 +156,7 @@ cum_counts.plot(column_for_xticks=5)
 plots.title('Cumulative Number of Times Each Name Appears', y=1.08);
 ```
 
-![png](../media/5-literary-characters-8-0.png)
+![Little women cumulative number of times each name appears.](../media/5-literary-characters-8-0.png)
 
 Laurie is a young man who marries one of the girls in the end. See if
 you can use the plots to guess which one.
@@ -268,7 +268,7 @@ plots.xlabel('Number of periods in chapter')
 plots.ylabel('Number of characters in chapter');
 ```
 
-![png](../media/6-another-kind-character-9-0.png)
+![Number of periods in each chapter.](../media/6-another-kind-character-9-0.png)
 
 The plot shows us that many but not all of the chapters of *Little
 Women* are longer than those of *Huckleberry Finn*, as we had observed
