@@ -6,7 +6,7 @@ Naive Bayes is a convenient algorithm to use for spam detection because it doesn
 
 ## Learning objectives
 
-> **Sarah** TBD, check the learning objectives and prereqs I derived from the module content.
+> **Sarah** TBD, please check the learning objectives and prereqs I derived from the module content.
 
 In this module, you will:
 

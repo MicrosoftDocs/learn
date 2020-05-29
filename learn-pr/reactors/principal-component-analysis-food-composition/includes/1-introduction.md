@@ -4,7 +4,7 @@ One way to accomplish this is by reducing the number of features considered in a
 
 ## Learning objectives
 
-> **Sarah** TBD, check the learning objectives and prereqs I derived from the module content.
+> **Sarah** TBD, please check the learning objectives and prereqs I derived from the module content.
 
 In this module, you will:
 

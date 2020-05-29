@@ -28,11 +28,11 @@ What do the `sep` and `names` parameters do in the preceding code?
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-If you are unsure, you can refer to the built-in Help documentation by using <code>pd.read_csv?</code> in a new code cell.
+  If you are unsure, you can refer to the built-in Help documentation by using <code>pd.read_csv?</code> in a new code cell.
 
-*Answer*:
+  *Answer*:
 
-In the preceding code, `sep='\t'` displays the output elements separated by a tab character and `names` creates column names in the output.
+  In the preceding code, `sep='\t'` displays the output elements separated by a tab character and `names` creates column names in the output.
 
 </details>
 
@@ -100,7 +100,7 @@ What do you think the purpose of the `-1` parameter passed to `pd.set_option()` 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-TBD, provide a possible solution and output
+  TBD, provide a possible solution and output
 
 </details>
 
