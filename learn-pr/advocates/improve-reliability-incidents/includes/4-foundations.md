@@ -1,4 +1,4 @@
-Organizations today benefit from the accessibility, efficiency and
+Organizations today benefit from the accessibility, efficiency, and
 convenience of the cloud, but they face many challenges as they undergo a
 digital transformation that involves moving parts of their business onto
 cloud services.
@@ -32,8 +32,8 @@ plan is supported by three pillars:
 -   Roles
 -   Rotations
 
-In this unit, you’ll find out what each of these is and what parts they
-play in designing an incident response strategy that moves you further
+In this unit, you’ll find out what each of these pillars is and what parts
+they play in designing an incident response strategy that moves you further
 along the path toward your reliability goals.
 
 ## Rosters
@@ -43,11 +43,11 @@ execute it. Thus, the best place to start is by determining who is expected
 to respond to problems and how to let them know when their response is
 required.
 
-The best way to address this is to design a roster. A roster is a list of
-people who are assigned to the on-call team. This team should be made up of
-multiple engineers. These team members should have the knowledge and skills
-to address the type of problems that can occur in your environment and
-training in incident response.
+The best way to address this challenge is to design a roster. A roster is a
+list of people who are assigned to the on-call team. This team should be
+made up of multiple engineers. These team members should have the knowledge
+and skills to address the type of problems that can occur in your
+environment and training in incident response.
 
 A list of names, however, is not enough. You need to build a framework
 around who is on call at any given point and what each person is to do.
@@ -63,7 +63,7 @@ following roles should generally be part of an organized incident response
 team:
 
 -   Primary responder. This is the “point person” who is usually the first
-    person on the scene, i.e. the first on-call engineer who is called when
+    person on the scene, that is, the first on-call engineer who is called when
     an incident occurs.
 
 -   Secondary responder. This is someone who acts as a backup and can step

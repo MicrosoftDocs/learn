@@ -20,28 +20,28 @@ quiz:
     choices:
     - content: 'How did we find out about the problem?'
       isCorrect: false
-      explanation: 'This is a good question to ask.'
+      explanation: 'This example is a good question to ask.'
     - content: 'How bad is it?'
       isCorrect: false
-      explanation: 'This is a good question to ask.'
+      explanation: 'This example is a good question to ask.'
     - content: 'Who else is aware of the issue?'
       isCorrect: false
-      explanation: 'This is a good question to ask.'
+      explanation: 'This example is a good question to ask.'
     - content: 'How quickly can we reach a C-level executive about the problem?'
       isCorrect: true
       explanation: 'Correct, though C-level executives are important, this does not help you evaluate your process.'
 
   - content: 'When creating a conversation bridge to communicate about an incident, why is it important to carve out a unique channel for it?'
     choices:
-    - content: 'this will make sure we are HIPAA-compliant'
+    - content: 'this process will make sure we are HIPAA-compliant'
       isCorrect: false
-      explanation: 'This is not a HIPAA requirement (and it does not relate to keeping irrelvant dicussion out of the channel)'
+      explanation: 'This is not a HIPAA requirement (and it does not relate to keeping irrelevant discussion out of the channel)'
     - content: 'it will keep irrelevant discussion out of the channel making it easier to later use the data for post-incident review'
       isCorrect: true
       explanation: 'Correct.'
     - content: 'it lets us keep channels for engineers and management separate'
       isCorrect: false
-      explanation: 'This is not necessary when communicating about an incident (under normal circumstances).'
+      explanation: 'This process is not necessary when communicating about an incident (under normal circumstances).'
 
   - content: 'Which of the following is true?'
     choices:

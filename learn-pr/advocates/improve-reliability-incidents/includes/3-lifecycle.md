@@ -53,24 +53,24 @@ The individual phases of the incident response process look a little
 different depending on the model you use. For purposes of this module,
 there are five phases that you go through in responding to an incident:
 
--   Detection. This is where the monitoring knowledge from a previous
+-   Detection. This phase is where the monitoring knowledge from a previous
     module in this learning path comes into play. Your monitoring tools
     collect the information from logs, analyze that information according
     to the customer-centric objectives you’ve configured, and send you
     actionable alerts to let you know that human intervention is needed.
 
--   Response. This is what happens after you and your team receive that
+-   Response. This phase is what happens after you and your team receive that
     alert. We'll be diving into this phase in detail in this module so
-    there will be plenty more to say about this in just a moment.
+    there will be plenty more to say about this idea in just a moment.
 
--   Remediation. This is where you restore the systems to normal
+-   Remediation. This phase is where you restore the systems to normal
     functionality. How you do that depends on the cause of the service
     disruption. Getting the service back up and running and available to
     your customers is your top priority. However, your job doesn’t stop
     once that’s done.
 
 -   Analysis. To obtain lasting value from incidents, you need to learn
-    from them. This is the process of gathering the information on just
+    from them. This phase is the process of gathering the information on just
     what happened and when during the incident and seeing what can be
     learned from it by asking the right questions. There is an entire
     module on Learning from Failure that addresses this phase.
@@ -78,7 +78,7 @@ there are five phases that you go through in responding to an incident:
 -   Readiness. The lessons learned in the analysis phase should be
     incorporated into your operations practice. If there are action items
     that would help prevent a similar outage in the future, they would also
-    be part of this stage.
+    be part of this phase.
 
 :::image type="content" source="../media/incident-lifecycle.png" alt-text="Cycle diagram of circles labeled with phases from above, circles are connected to next circle with arrow from phase to phase":::
 
