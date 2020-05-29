@@ -24,7 +24,9 @@ Let's create intents for each of these items.
 
 1. Your utterances for the **Greeting** intent should look similar to the following image:
 
+
     ![Utterances for the Greeting intent](../media/utterances.png)
+
 
 1. Create another intent named **SearchPics**.
 1. Add the following values as utterances for the **SearchPics** intent:
@@ -53,7 +55,7 @@ Next, let's create the entities we need to capture specific requests from users.
 1. Select **Machine learned** for **Entity type**. Then select **Create**.
 
     ![Adding an entity named facet, of type Machine learned](../media/select-facet.png)
-
+   
 ## Map search subjects to the facet entity
 
 Next, we have to teach LUIS how to pick out the search subject as the **facet** entity. Whatever the **facet** entity picks up is what the app will search for.
