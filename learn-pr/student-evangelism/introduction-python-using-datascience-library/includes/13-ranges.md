@@ -206,7 +206,7 @@ highs - lows
 
     array([ 11.472,  12.016,  11.711,  11.436])
 
-![png](../media/array-subtraction.PNG)
+![Array subtraction.](../media/array-subtraction.png)
 
 What we've seen in these examples are special cases of a general feature
 of arrays.

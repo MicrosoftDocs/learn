@@ -1,7 +1,7 @@
 > [!NOTE]
 > You can find an interactive version of this unit named **regression-line.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path [Foundations of Data Science](https://docs.microsoft.com/learn/paths/foundations-of-data-science/) refer to the first unit [Setting up your virtual environment](https://docs.microsoft.com/learn/modules/make-predictions-with-linear-regression/00-setup)
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path [Foundations of Data Science](/learn/paths/foundations-data-science/) refer to the first unit [Setting up your virtual environment](https://docs.microsoft.com/learn/modules/make-predictions-with-linear-regression/00-setup)
 
 Open your [Visual Studio Codespaces](https://online.visualstudio.com/environments).
 
@@ -47,7 +47,7 @@ heights_with_predictions = heights.with_column(
 heights_with_predictions.scatter('MidParent')
 ```
 
-![regression example](../media/77-regression-line-5-0.png)
+![Scatterplot of midparent heights.](../media/77-regression-line-5-0.png)
 
 ### Measuring in standard units
 
@@ -137,7 +137,7 @@ heights_with_su_predictions = heights_SU.with_column(
 heights_with_su_predictions.scatter('MidParent SU')
 ```
 
-![regression example](../media/77-regression-line-15-0.png)
+![Scatterplot of midparent heights in standard units.](../media/77-regression-line-15-0.png)
 
 This plot looks exactly like the plot drawn on the original scale. Only
 the numbers on the axes have changed. This confirms that we can
@@ -171,7 +171,7 @@ plots.xlabel('x in standard units')
 plots.ylabel('y in standard units');
 ```
 
-![regression example](../media/77-regression-line-18-0.png)
+![football shape scatter plot.](../media/77-regression-line-18-0.png)
 
 But the 45-degree line is not the line that picks off the centers of the
 vertical strips. You can see that in the figure below, where the
@@ -195,7 +195,7 @@ plots.xlabel('x in standard units')
 plots.ylabel('y in standard units');
 ```
 
-![regression example](../media/77-regression-line-20-0.png)
+![Standard units.](../media/77-regression-line-20-0.png)
 
 So the 45-degree line is not the "graph of averages." That line is the
 green one shown below.
@@ -216,7 +216,7 @@ plots.xlabel('x in standard units')
 plots.ylabel('y in standard units');
 ```
 
-![regression example](../media/77-regression-line-22-0.png)
+![Slope example.](../media/77-regression-line-22-0.png)
 
 Both lines go through the origin (0, 0). The green line goes through the
 centers of the vertical strips (at least roughly), and is *flatter* than
@@ -259,13 +259,13 @@ def regression_line(r):
 regression_line(0.95)
 ```
 
-![regression example](../media/77-regression-line-26-0.png)
+![Regression line when r is 0.95](../media/77-regression-line-26-0.png)
 
 ``` python
 regression_line(0.6)
 ```
 
-![regression example](../media/77-regression-line-27-0.png)
+![Regression line when r is 0.6.](../media/77-regression-line-27-0.png)
 
 When $r$ is close to 1, the scatter plot, the 45-degree line, and the
 regression line are all close to each other. But for more moderate
@@ -316,7 +316,7 @@ $$
 \frac{\mbox{the given}~x ~-~\mbox{average of}~x}{\mbox{SD of}~x}
 $$
 
-![Regression Line](../media/regline.png)
+![Regression line.](../media/regline.png)
 
 The slope and intercept of the regression line in original units can be
 derived from the diagram above.
@@ -444,7 +444,7 @@ heights_with_predictions
 heights_with_predictions.scatter('MidParent')
 ```
 
-![regression example](../media/77-regression-line-43-0.png)
+![Scatterplot of midparent height.](../media/77-regression-line-43-0.png)
 
 The grey dots show the regression predictions, all on the regression
 line. Notice how the line is close to the gold graph of averages.
@@ -472,7 +472,7 @@ It is easier to see the line in the graph below than in the one above.
 heights.with_column('Fitted', fit(heights, 'MidParent', 'Child')).scatter('MidParent')
 ```
 
-![regression example](../media/77-regression-line-48-0.png)
+![Scatterplot of fitted midparent heights.](../media/77-regression-line-48-0.png)
 
 Another way to draw the line is to use the option `fit_line=True` with
 the Table method `scatter`.
@@ -481,7 +481,7 @@ the Table method `scatter`.
 heights.scatter('MidParent', fit_line=True)
 ```
 
-![regression example](../media/77-regression-line-50-0.png)
+![Scatterplot of midparent heights.](../media/77-regression-line-50-0.png)
 
 ### Units of measurement of the slope
 
@@ -501,7 +501,7 @@ baby = Table.read_table(path_data + 'baby.csv')
 baby.scatter('Maternal Height', 'Maternal Pregnancy Weight', fit_line=True)
 ```
 
-![regression example](../media/77-regression-line-53-0.png)
+![Scatterplot of maternal height and maternal pregnancy weight.](../media/77-regression-line-53-0.png)
 
 ``` python
 slope(baby, 'Maternal Height', 'Maternal Pregnancy Weight')

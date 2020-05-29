@@ -199,7 +199,7 @@ simulation_results
 simulation_results.hist('Number of Heads', bins = np.arange(30.5, 69.6, 1))
 ```
 
-![png](../media/48-simulation-17-1.png)
+![Number of heads.](../media/48-simulation-17-1.png)
 
 Each bins has width 1 and is centered at each value of the number of
 heads.
@@ -294,7 +294,7 @@ results = Table().with_column(
 results.hist('Sum of Two Rolls', bins = np.arange(1.5, 12.6, 1))
 ```
 
-![png](../media/48-simulation-27-1.png)
+![Sum of two rolls.](../media/48-simulation-27-1.png)
 
 Seven is the most common value, with the frequencies falling off
 symmetrically on either side.
