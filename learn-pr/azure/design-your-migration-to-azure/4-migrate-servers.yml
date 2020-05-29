@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Migrate servers with Azure Site Recovery
+title: Migrate servers with Azure Migrate
 durationInMinutes: 10
 content: |
   [!include[](includes/4-migrate-servers.md)]
