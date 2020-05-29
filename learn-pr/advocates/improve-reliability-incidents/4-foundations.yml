@@ -3,15 +3,13 @@ uid: learn.improve-reliability-incidents.4-foundations
 title: "Foundations of incident response"
 metadata:
   title: "Foundations of incident response"
-  description: "Improve Your Reliability: Incident Response"
+  description: "Foundations of incident response"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: set correct duration  
-durationInMinutes: 3
+  ms.prod: learning-azure 
+durationInMinutes: 6
 content: |
   [!include[](includes/4-foundations.md)]
 quiz:

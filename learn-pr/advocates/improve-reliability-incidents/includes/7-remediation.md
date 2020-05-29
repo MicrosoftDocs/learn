@@ -6,7 +6,7 @@ especially true when actions intended to mitigate or improve the situation
 have the opposite effect. In this case, response and remediation tend to
 overlap or go back and forth between the two.
 
-PLACEHOLDER cycle #31
+:::image type="content" source="../media/incident-lifecycle-remediation.png" alt-text="Cycle diagram of circles labeled with incident responses phases, circles are connected to next circle with arrow from phase to phase, Detections, Response, and Remediation are highlighted":::
 
 In this unit, you’ll learn more about remediation and the steps that make
 up this phase, as well as some helpful tips and tools. One important thing
@@ -75,9 +75,7 @@ terms of when they will hear back from you.
 The formula for your communications to stakeholders is simple:
 
 -   This is what we know.
-
 -   This is what we’re doing.
-
 -   We’ll get back to you in X amount of time.
 
 This will help prevent stakeholders from coming to you and interrupting you
@@ -126,7 +124,7 @@ Azure also provides some existing templates to help you get started
 authoring your own documents. Here's a screenshot of some of the pre-made
 templates you may be offered:
 
-PLACEHOLDER workbook/tg templates.
+:::image type="content" source="../media/troubleshooting-guide-samples.png" alt-text="Screenshot of default example troubleshooting guides as found in the Azure Portal":::
 
 There is an "advanced editor" feature for Workbooks and troubleshooting
 guides that allow you to access and insert either a JSON or an Azure

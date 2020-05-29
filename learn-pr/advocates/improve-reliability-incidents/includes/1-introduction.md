@@ -6,17 +6,11 @@ If you have not seen those modules, you may want to check them out first.
 When you have completed this module, you will:
 
 -   Understand the role of incident response in the reliability hierarchy
-
 -   Be able to recognize the characteristics of an incident and its
     lifecycle
-
 -   Articulate the importance of an incident response strategy
-
 -   Explain the foundations of incident response
-
 -   Know how to track incidents
-
 -   Recognize the role of communications and collaboration in responding to
     incidents
-
 -   List the key elements of remediation

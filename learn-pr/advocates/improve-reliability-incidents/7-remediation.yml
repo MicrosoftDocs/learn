@@ -3,15 +3,13 @@ uid: learn.improve-reliability-incidents.7-remediation
 title: "Remediation"
 metadata:
   title: "Remediation"
-  description: "Improve Your Reliability: Incident Response"
+  description: "Remediation"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: set correct duration  
-durationInMinutes: 3
+  ms.prod: learning-azure 
+durationInMinutes: 7
 content: |
   [!include[](includes/7-remediation.md)]
 quiz:

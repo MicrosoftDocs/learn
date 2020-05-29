@@ -3,15 +3,13 @@ uid: learn.improve-reliability-incidents.3-lifecycle
 title: "Characteristics and lifecycle of an incident"
 metadata:
   title: "Characteristics and lifecycle of an incident"
-  description: "Improve Your Reliability: Incident Response"
+  description: "Characteristics and lifecycle of an incident"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: set correct duration  
-durationInMinutes: 3
+  ms.prod: learning-azure 
+durationInMinutes: 4
 content: |
   [!include[](includes/3-lifecycle.md)]
 quiz:

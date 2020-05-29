@@ -80,7 +80,7 @@ there are five phases that you go through in responding to an incident:
     that would help prevent a similar outage in the future, they would also
     be part of this stage.
 
-PLACEHOLDER: Lifecycle diagram from Slide 15
+:::image type="content" source="../media/incident-lifecycle.png" alt-text="Cycle diagram of circles labeled with phases from above, circles are connected to next circle with arrow from phase to phase":::
 
 Before you create an incident response plan, you need to understand the
 characteristics and value of incidents and be familiar with the phases of

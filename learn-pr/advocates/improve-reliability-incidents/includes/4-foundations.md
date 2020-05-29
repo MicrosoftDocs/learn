@@ -7,16 +7,11 @@ Some of the common challenges that you may be facing in your organization
 include:
 
 -   Increased number of service disruptions
-
 -   No effective method of tracking and responding to incidents (everything
     is ad hoc and reactionary)
-
 -   Unacceptable time to resolution
-
 -   Time to resolution is not improving or is getting worse
-
 -   Information and status are difficult to find
-
 -   Recurrence of the same problems and mistakes
 
 To meet these challenges, you need a well-defined incident response plan
@@ -34,9 +29,7 @@ Incident response also has a foundation itself. A good incident response
 plan is supported by three pillars:
 
 -   Rosters
-
 -   Roles
-
 -   Rotations
 
 In this unit, you’ll find out what each of these is and what parts they

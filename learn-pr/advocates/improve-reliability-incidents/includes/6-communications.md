@@ -73,8 +73,6 @@ leadership are doing and thinking – including how they make decisions –
 you’re able to be more empathetic about what’s taking place. All of this
 happens more naturally when you start moving your work into chat.
 
-(Placeholder: graphic from slide \#36)
-
 ### Use Microsoft Teams in your ChatOps solution
 
 You already learned how Microsoft Teams can be an important part of your

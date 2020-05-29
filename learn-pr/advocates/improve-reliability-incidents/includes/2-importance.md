@@ -33,11 +33,8 @@ information based.
 Your incident response approach determines your effectiveness at:
 
 -   Understanding what’s going on (diagnosing the problem)
-
 -   Triaging (determining the urgency) and prioritizing the problem
-
 -   Engaging the right resources to mitigate the issue(s), and
-
 -   Communicating with stakeholders about the problem
 
 After the problem has been remediated, you can then learn from the incident
