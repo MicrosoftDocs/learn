@@ -99,11 +99,12 @@ course of action that operators should have taken and judges the actions of
 those operators with the benefit of hindsight.
 
 Normative language can usually be identified by adverbs such as
-“inadequately,” “carelessly,” “hastily,” and so forth.
+“inadequately,” “carelessly,” “hastily”, and so forth.
 
 Normative thinking leads you to judge decisions based on their outcomes.
-This isn’t logical because the outcome is the _only piece of information
-that was not available_ to those who made the decisions and judgments.
+This way of speaking isn’t logical because the outcome is the _only piece
+of information that was not available_ to those who made the decisions and
+judgments.
 
 Normative language can also be used in the opposite sense. People can
 praise operators for having acted "appropriately," for example. But again,
@@ -144,7 +145,7 @@ After a week? After a month? After a year? How long could you realistically
 expect your service to keep running without human intervention? In the vast
 majority of cases, it wouldn't.
 
-This leads us to an important conclusion:
+This thought exercise leads us to an important conclusion:
 
 _Human adaptive capacity is necessary to keep our systems up and running_.
 
