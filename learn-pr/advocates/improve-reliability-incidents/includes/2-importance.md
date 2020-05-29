@@ -68,8 +68,6 @@ focused on incident response performance.
 -   “Low performers” are those who take between one week and a month to
     recover from service disruptions.
 
-PLACEHOLDER FOR 2019 State of DevOps performance chart in Slide 8
-
 The difference between these levels is significant. The study found that
 elite/high performing teams recover from incidents 2,604 times more quickly
 than their “low performing” peers. Elite/high performers also are deploying
