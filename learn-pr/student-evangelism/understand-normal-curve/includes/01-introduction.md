@@ -179,7 +179,7 @@ t1 = Table().with_columns('not symmetric', not_symmetric)
 t1.hist(bins=np.arange(1.5, 9.6, 1))
 ```
 
-![property mean](../media/69-properties-mean-17-0.png)
+![Histogram of distribution of not symmetric.](../media/69-properties-mean-17-0.png)
 
 Imagine the histogram as a figure made out of cardboard attached to a
 wire that runs along the horizontal axis, and imagine the bars as
@@ -206,7 +206,7 @@ plots.plot([1.5, 9.5], [0, 0], color='grey')
 plots.ylim(-0.05, 0.5);
 ```
 
-![property mean](../media/69-properties-mean-19-0.png)
+![Histogram of mean.](../media/69-properties-mean-19-0.png)
 
 ### The mean and the median
 
@@ -237,7 +237,7 @@ plots.xlim(1, 10)
 plots.ylim(-0.05, 0.5);
 ```
 
-![properties mean](../media/69-properties-mean-22-0.png)
+![Histogram of a symmetric distribution.](../media/69-properties-mean-22-0.png)
 
 ``` python
 np.mean(symmetric)
@@ -272,7 +272,7 @@ plots.scatter(mean_ns, -0.009, marker='^', color='gold', s=60)
 plots.ylim(-0.05, 0.5);
 ```
 
-![properties mean](../media/69-properties-mean-26-0.png)
+![Histogram of non-symmetric distribution.](../media/69-properties-mean-26-0.png)
 
 The blue histogram represents the original `symmetric` distribution. The
 gold histogram of `not_symmetric` starts out the same as the blue at the
@@ -311,7 +311,7 @@ As we saw earlier, the highest compensation was above 600,000 dollars but the va
 sf2015.select('Total Compensation').hist(bins = np.arange(10000, 700000, 25000))
 ```
 
-![properties mean](../media/69-properties-mean-33-0.png)
+![Total compensation.](../media/69-properties-mean-33-0.png)
 
 This histogram is skewed to the right; it has a right-hand tail.
 
