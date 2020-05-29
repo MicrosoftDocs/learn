@@ -29,7 +29,7 @@ not only to determine where its weaknesses lie, but also to recognize its
 strengths. What’s good about it?
 
 Take another look at the scenario you saw in the previous unit. Here’s a
-diagram of the organization’s architecture again.
+diagram of the organization’s architecture again:
 
 :::image type="content" source="../media/application-diagram-frontend.png" alt-text="Full architecture diagram of application with products backend highlighted":::
 
