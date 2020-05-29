@@ -72,10 +72,10 @@ method.
 
 So, let's review the pieces we've put together so far. We have a:
 
-    -   roster of the people on call (and a rotation defined for them)
-    -   role we can assign to the people working on an incident
-    -   specific place we are going to declare the incident and track it
-    -   unique channel for the people working on that incident to communicate about it
+-   roster of the people on call (and a rotation defined for them)
+-   role we can assign to the people working on an incident
+-   specific place we are going to declare the incident and track it
+-   unique channel for the people working on that incident to communicate about it
 
 The creation and management of all of these things can and should be
 automated to the fullest extent possible. When an urgent problem arises,
@@ -101,13 +101,11 @@ tracking:
 
 -   Azure Boards (a part of Azure DevOps), which you can use to create and
     track issues/incidents.
-
 -   Azure Storage, where you can store and retrieve information about who
     is on call so you can assign the proper people to respond to the
     incident. In our example, we will be using Azure tables because it
     offers a very simple "key-value" store that makes it easy to store a
     list of engineers and their on-call status.
-
 -   Microsoft Teams, which you can use to create a new, unique incident
     channel to track the conversations of your engineering teams in real
     time as they communicate about specific incidents. This will allow you

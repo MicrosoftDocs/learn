@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-incidents.8-takeaways
+uid: learn.improve-reliability-incidents.8-summary
 title: "Summary"
 metadata:
   title: "Summary"
@@ -9,7 +9,6 @@ metadata:
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-takeaways.md)]
+  [!include[](includes/8-summary.md)]

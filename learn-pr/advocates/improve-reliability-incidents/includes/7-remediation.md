@@ -6,7 +6,7 @@ especially true when actions intended to mitigate or improve the situation
 have the opposite effect. In this case, response and remediation tend to
 overlap or go back and forth between the two.
 
-:::image type="content" source="../media/incident-lifecycle-remediation.png" alt-text="Cycle diagram of circles labeled with incident responses phases, circles are connected to next circle with arrow from phase to phase, Detections, Response, and Remediation are highlighted":::
+:::image type="content" source="../media/lifecycle-remediation.png" alt-text="Cycle diagram of circles labeled with incident responses phases, circles are connected to next circle with arrow from phase to phase, Detections, Response, and Remediation are highlighted":::
 
 In this unit, you’ll learn more about remediation and the steps that make
 up this phase, as well as some helpful tips and tools. One important thing

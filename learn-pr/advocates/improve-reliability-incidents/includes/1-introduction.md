@@ -3,7 +3,7 @@ introduced in the introduction to this learning path. Incident Response is
 the second level of the pyramid, building on the foundation of Monitoring.
 If you have not seen those modules, you may want to check them out first.
 
-When you have completed this module, you will:
+When you have completed this module, you will be able to:
 
 -   Understand the role of incident response in the reliability hierarchy
 -   Be able to recognize the characteristics of an incident and its

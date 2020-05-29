@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.improve-reliability-incidents
-title: "Improve Your Reliability: Incident Response"
+title: "Improve your reliability with modern operations practices: Incident response"
 metadata:
-  title: "Improve Your Reliability: Incident Response"
+  title: "Improve your reliability with modern operations practices: Incident response"
   description: Learn the incident response fundamentals necessary to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 05/07/2020
   author: dnblankedelman
@@ -19,14 +19,17 @@ abstract: |
   - Explore ways to automate your incident tracking for a speedy and consistent response
   - Understand the guidelines around communication that allow incident response to be more efficient
   - Visit some Azure tools that can significantly speed up your remediation times during an incident
-iconUrl: /learn/achievements/improving-reliability-incidents.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - administrator
+- devops-engineer
+- solution-architect
+- technology-manager
 products:
 - azure
-prerequisites: none
+prerequisites: None
 units:
 - learn.improve-reliability-incidents.1-introduction
 - learn.improve-reliability-incidents.2-importance
@@ -35,7 +38,7 @@ units:
 - learn.improve-reliability-incidents.5-tracking
 - learn.improve-reliability-incidents.6-communications
 - learn.improve-reliability-incidents.7-remediation
-- learn.improve-reliability-incidents.8-takeaways
+- learn.improve-reliability-incidents.8-summary
 
 badge:
   uid: learn.improve-reliability-incidents.badge
