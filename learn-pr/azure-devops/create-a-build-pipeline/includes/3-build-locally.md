@@ -155,8 +155,7 @@ Now that you have the web application, you can build and run it locally.
     > If the `dotnet` command is not found, review the prerequisites at the start of this module. You may need to install .NET Core.
 
     .NET Core projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here we choose the Release configuration just to see the web app in action.
-
-    You'll likely see a few build warnings in the output. These warnings are included intentionally. You can ignore them for now.
+ 
 1. From the terminal window, run this `dotnet run` command to run the application:
 
     ```bash
@@ -176,7 +175,8 @@ You see this:
 ![The Space Game web site](../media/3-space-game-top.png)
 
 > [!TIP]
-> If you see an error in your browser that's related to a certificate error, select Ctrl+C from your terminal to stop the running application.
+> If you see an error in your browser that's related to a privacy or certificate error, select <kbd>Ctrl+C</kbd> from your terminal to stop the running application.
+> 
 > Then run `dotnet dev-certs https --trust` and select **Yes** when prompted. Or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
 >
 > After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to `http://localhost:5000` from a new browser tab to see the running application.
@@ -185,4 +185,4 @@ You can interact with the page, including the leaderboard. When you select a pla
 
 ![The Space Game leaderboard](../media/3-space-game-leaderboard-profile.png)
 
-When you're finished, return to the terminal window and select Ctrl+C to stop the running application.
+When you're finished, return to the terminal window and select <kbd>Ctrl+C</kbd> to stop the running application.
