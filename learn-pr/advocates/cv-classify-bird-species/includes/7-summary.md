@@ -22,4 +22,4 @@ Here are some helpful articles that go into more detail about some of the concep
 
 [Custom Vision Node.js tutorial](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/node-tutorial?WT.mc_id=birds-learn-cassieb)
 
-[Python SDK documentation](https://docs.microsoft.com/python/api/azure-cognitiveservices-vision-customvision/azure.cognitiveservices.vision.customvision.training.custom_vision_training_client.customvisiontrainingclient?view=azure-python?WT.mc_id=birds-learn-cassieb)
+[Python SDK documentation](/python/api/azure-cognitiveservices-vision-customvision/azure.cognitiveservices.vision.customvision.training.customvisiontrainingclient?view=azure-python)

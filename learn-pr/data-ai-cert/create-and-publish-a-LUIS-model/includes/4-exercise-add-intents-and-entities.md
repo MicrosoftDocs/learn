@@ -24,7 +24,9 @@ Let's create intents for each of these items.
 
 1. Your utterances for the **Greeting** intent should look similar to the following image:
 
+
     ![Utterances for the Greeting intent](../media/utterances.png)
+
 
 1. Create another intent named **SearchPics**.
 1. Add the following values as utterances for the **SearchPics** intent:
@@ -52,8 +54,8 @@ Next, let's create the entities we need to capture specific requests from users.
 
 1. Select **Machine learned** for **Entity type**. Then select **Create**.
 
-    ![Adding an entity named facet, of type Simple](../media/select-facet.png)
-
+    ![Adding an entity named facet, of type Machine learned](../media/select-facet.png)
+   
 ## Map search subjects to the facet entity
 
 Next, we have to teach LUIS how to pick out the search subject as the **facet** entity. Whatever the **facet** entity picks up is what the app will search for.
@@ -62,10 +64,7 @@ Next, we have to teach LUIS how to pick out the search subject as the **facet** 
 
 1. Hover over the utterance and click the keyword that specifies the _search subject_, and then select the **facet** entity. For example, if the utterance is "show me baby pics", the subject would be "baby".
 
-    ![Screenshot showing utterance selection to tie it to an entity](../media/select-facet-keyword.png)
-
-   > [!TIP]
-   > Using multi-word keywords is a simple as clicking the first word and then dragging across the other consecutive word(s)/
+    ![Keywords selected as facet entities, shown by the term "facet" selected in the image](../media/select-facet-keyword.png)
 
 1. Add two more intents with related utterances, as shown in the following table:
 

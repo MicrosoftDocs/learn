@@ -27,7 +27,7 @@ quiz:
     - content: "Text Analytics"
       isCorrect: false
       explanation: "That is incorrect. Text Analytics is used to extract insights from text data."
-  - content: "You want to train a model that classifies images of dogs and cats based on a collection of your digital own photographs. Which Azure service should you use?"
+  - content: "You want to train a model that classifies images of dogs and cats based on a collection of your own digital photographs. Which Azure service should you use?"
     choices:
     - content: "Azure Bot Service"
       isCorrect: false
@@ -38,3 +38,14 @@ quiz:
     - content: "Computer Vision"
       isCorrect: false
       explanation: "That is incorrect. Computer Vision can help classify images, but you can't use it to train a model from your own images."
+  - content: "You are designing an AI application that uses computer vision to detect cracks in car windshields, and warns drivers when a windshield should be repaired or replaced. When tested in good lighting conditions, the application successfully detects 99% of dangerously damaged glass. Which of the following statements should you include in the application's user interface?"
+    choices:
+    - content: "When used in good lighting conditions, this application can be used to identify potentially dangerous cracks and defects in windshields. If you suspect your windshield is damaged, even if the application does not detect any defects, you should have it inspected by a professional."
+      isCorrect: true
+      explanation: "That is correct. You should be transparent about the limitations of the application."
+    - content: "This application detects damage in your windshield. If the application detects a defect, have the windshield replaced or repaired. If no defect is detected, you're good to go!"
+      isCorrect: false
+      explanation: "That is incorrect. You should be transparent about the limitations of the application."
+    - content: "This application detects damage in any glass surface, but you must accept responsibility for using it only in appropriate lighting conditions."
+      isCorrect: false
+      explanation: "That is incorrect. You should be transparent about the limitations of the application."
