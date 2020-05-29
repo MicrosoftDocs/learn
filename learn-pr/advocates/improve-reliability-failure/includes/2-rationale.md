@@ -53,13 +53,11 @@ and post-incident review process:
     being present. The failures change constantly because of changing
     technology, work organization, and efforts to eradicate failure. Your
     system is never functioning perfectly.
-
 -   Complex systems run in degraded mode. Complex systems are always
     running as “broken” systems. They keep “working” in that state because
     they contain many redundancies, and people can keep them functioning
     despite the presence of many flaws. System operations are dynamic, with
     components continually failing and being replaced.
-
 -   Catastrophe is always just around the corner. The complexity of these
     systems means major system failures are – in the long term –
     unavoidable. Complex systems always possess the potential for

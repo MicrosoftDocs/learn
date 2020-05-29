@@ -11,7 +11,7 @@ it is a bit more complicated.
 To create a timeline like this, even a complex one, there's always an
 important first step: gather the data.
 
-# Gather the data
+## Gather the data
 
 Before you can conduct a post-incident review, you first need to gather
 data. Specifically, you need to collect as much of the conversation and
@@ -36,14 +36,12 @@ We can look at this process as three separate parts:
     are sharing what worked and what failed, what they’re hesitant to try,
     what they’ve tried in the past. This conversation between the people as
     they work through and solve the issue is your best source of learning.
-
 -   Determine the context. The people in an incident are receiving signals
     from various places. One primary place is your monitoring system. We've
     discussed the importance of having a solid monitoring system in a
     previous module in this learning path. Ideally we should be able to
     look at the monitoring system to build a point-in-time snapshot for the
     time period around or related to the incident.
-
 -   Find the changes. You can do this through activity and audit logs.
 
 ## Azure tools to help gather the data
@@ -120,32 +118,32 @@ downloaded JSON dashboard file, you will come upon a section that looks
 like this:
 
 ```json
-    "metadata": {
-      "model": {
-        "timeRange": {
-          "value": {
-            "relative": {
-              "duration": 24,
-              "timeUnit": 1
-            }
+"metadata": {
+  "model": {
+    "timeRange": {
+      "value": {
+        "relative": {
+          "duration": 24,
+          "timeUnit": 1
+        }
+      },
+      "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+    },
+    "filterLocale": {
+      "value": "en-us"
+    },
+    "filters": {
+      "value": {
+        "MsPortalFx_TimeRange": {
+          "model": {
+            "format": "utc",
+            "granularity": "auto",
+            "relative": "24h"
           },
-          "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
-        },
-        "filterLocale": {
-          "value": "en-us"
-        },
-        "filters": {
-          "value": {
-            "MsPortalFx_TimeRange": {
-              "model": {
-                "format": "utc",
-                "granularity": "auto",
-                "relative": "24h"
-              },
-              "displayCache": {
-                "name": "UTC Time",
-                "value": "Past 24 hours"
-              },
+          "displayCache": {
+            "name": "UTC Time",
+            "value": "Past 24 hours"
+          },
 ```
 
 Modify this section to your specification and reupload. If you are not

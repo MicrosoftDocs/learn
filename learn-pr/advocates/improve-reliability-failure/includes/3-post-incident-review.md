@@ -58,13 +58,11 @@ points:
     involved_ in the incident response. Including all of these voices is
     important because different people will have different perspectives and
     recollections of the same event.
-
 -   You should perform the post-incident review _within twenty-four to
     thirty-six hours_ after the event if at all possible. Neuroscience has
     confirmed that human memory is notoriously unreliable; people forget
     things. The more time that passes after an event, the less detailed and
     specific memories tend to be.
-
 -   An incident review must be blameless. We talk more about this in the
     next unit.
 

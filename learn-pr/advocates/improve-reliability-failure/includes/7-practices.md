@@ -29,7 +29,6 @@ the nature of the incident, but here are some basic guidelines:
     60 to 90 minutes is the maximum length of time most people can fully
     concentrate and participate effectively, so limit the meeting to not
     more than an hour and a half.
-
 -   Pre-meeting prep: to make better use of the meeting time, it can be
     helpful for the facilitator to prepare by conducting one-to-one
     interviews with some of the members of the responding team to get an
@@ -38,7 +37,6 @@ the nature of the incident, but here are some basic guidelines:
     is concern about inter-personal issues or personalities making the
     meeting difficult (or if individuals are uncomfortable presenting in
     front of the room for any reason).
-
 -   Not required for every incident: this is a learning process, and you’re
     “learning to learn,” so start small. You don’t have to do this for
     every incident. You can pick and choose. You might want to start with
@@ -147,7 +145,6 @@ This will help in two ways:
 
 -   it will help you in the post-incident review. It's easier to avoid
     jumping to conclusions if you're not focused on how to fix it.
-
 -   allowing a day or two of soak time will help you to identify the most
     "energy-efficient" repair items -- minimum energy for maximum impact.
     Your subconscious can help you... you just need to give it time.

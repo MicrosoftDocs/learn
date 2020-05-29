@@ -8,7 +8,7 @@ different, too. But there are some common characteristics and components of
 a good review that can provide you with a solid foundation for carrying out
 the process.
 
-# What it’s not
+## What it’s not
 
 Before you can understand the characteristics that make for a good
 post-incident review, you should consider what it’s _not._
@@ -17,14 +17,12 @@ post-incident review, you should consider what it’s _not._
     written summary, and indeed, a summary report often follows a
     post-incident review. However, these are two different and distinct
     parts of the analysis phase of the incident response lifecycle.
-
 -   It’s not a determination of causality. Your review will look at the
     factors that contributed to the failure, but the purpose isn’t to
     pinpoint a culprit (especially not a single root cause, complex systems
     almost always fail due to a whole set of contributing factors). It’s to
     think about and share information about all aspects of the incident so
     as learn and improve.
-
 -   It’s not a list of action items. You may end up with such a list as a
     result of what you learn in the review, but this isn’t the focus. If
     you don’t come away with a list of items in a ticket queue or bug
@@ -37,7 +35,7 @@ and what they know now, and explore and better understand how the parts of
 the system – including the human parts – do or don’t work together in
 response to problems.
 
-# Characteristics and components
+## Characteristics and components
 
 As we mentioned in the last unit, an incident review has to be _blameless._
 Although you need to examine how the human parts of the system interacted
@@ -49,9 +47,7 @@ Frame your questions to reflect this, for example:
 
 -   “What was the deficit in our monitoring that failed to give the person
     at the keyboard the necessary context to make the right decision?”
-
 -   “Why was there a 'nuke the entire database' option in the tool at all?"
-
 -   or better yet: "Why didn’t the tool ask for confirmation before
     performing this function?”
 

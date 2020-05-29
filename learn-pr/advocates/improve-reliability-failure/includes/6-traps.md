@@ -117,7 +117,7 @@ information that was unavailable to the humans involved during the
 incident, we will neglect to understand how the actions of the operators
 made sense to them at the time.
 
-# Trap 4: Mechanistic reasoning
+## Trap 4: Mechanistic reasoning
 
 _Mechanistic reasoning_ refers to the concept that a particular outcome can
 be inferred from intervention. It’s sometimes called the _meddling kids
