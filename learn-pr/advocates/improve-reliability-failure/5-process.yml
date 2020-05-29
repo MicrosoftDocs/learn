@@ -3,15 +3,13 @@ uid: learn.improve-reliability-failure.5-process
 title: "The post-incident review process"
 metadata:
   title: "The post-incident review process"
-  description: "Improve Your Reliability: Learning from Failure"
+  description: "The post-incident review process"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: set correct duration  
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/5-process.md)]
 quiz:

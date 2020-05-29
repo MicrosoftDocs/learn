@@ -9,24 +9,18 @@ help of other Learn modules in this learning path), you now have the
 opportunity to focus on principles and practices that can help you level up
 your operations practice.
 
-In this module, we'll be focusing on post-incident reviews which can help
+In this module, we'll be focusing on post-incident reviews that can help
 you learn from failure, resulting in improved reliability.
 
 When you have completed this module, you will:
 
 -   Discover the importance of learning from incidents
-
 -   Understand the aspects of complex systems that make learning from
     failure important
-
 -   Learn when and how to conduct a post-incident review
-
 -   Understand the purpose and goals of a post-incident review
-
 -   Know the components that go into a good post-incident review
-
 -   Be aware of common traps to avoid
-
 -   Identify helpful practices to conduct a better review
 
 ## An introductory story
@@ -39,8 +33,8 @@ series of accidents. We don't know all of the details of these accidents,
 and we don't know exactly how many there were. It was war time, and many of
 the details were secret and remain secret. What we know is that there were
 a significant number of similar incidents, involving many individual
-aircraft and -- if it helps when talking about such a serious topic -- we
-can be almost certain that nobody was gravely injured in any of them.
+aircraft and--if it helps when talking about such a serious topic--we can
+be almost certain that nobody was gravely injured in any of them.
 
 In each case what would happen is this: A B-17 would come in to land, would
 land successfully, and then either on the runway, or taxiing back to the
@@ -57,7 +51,8 @@ Here's two additional pieces of information: The investigators were
 correct: no mechanical or electrical failures had occurred. The accidents
 kept happening.
 
-This may lead you to be dissatisfied with the initial conclusion reached
-about these accidents, perhaps leave you wondering if this is the whole
-story. In this module we are going to propose that something is missing in
-this conclusion, and in the investigations that led to it.
+This information may lead you to be dissatisfied with the initial
+conclusion reached about these accidents, perhaps leave you wondering if
+this is the whole story. In this module, we are going to propose that
+something is missing in this conclusion and in the investigations that led
+to it.

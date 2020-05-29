@@ -15,7 +15,7 @@ In that intro we suggested that the conclusions reached might be
 dissatisfying to you. They were definitely dissatisfying to Alphonse
 Chapanis, a military psychologist who was asked by the US Air Force to
 investigate these incidents. He noticed, among other things, that these
-accidents were unique to the B- 17 and a small number of other aircraft.
+accidents were unique to the B- 17 and a small amount of other aircraft.
 There were thousands of C-47 transport aircraft in use in Western Europe at
 the same time, yet no C-47 had ever experienced a similar incident.
 
@@ -32,12 +32,12 @@ He glued a little rubber wheel to the switch for the gear, and a hard
 angular "flap" to the switch for the flaps, and sure enough the accidents
 stopped happening.
 
-He's now known as one of the founders of the field of ergonomics -- the
-study of design factors in human performance -- and he had a simple
-observation -- that the design of the cockpit could effect the likelihood
-of human error. This has gone on to inform the design of all modern
-aircraft. The two switches in current airplanes are now very distinct as
-mandated by federal law in the US.
+He's now known as one of the founders of the field of ergonomics--the study
+of design factors in human performance -- and he had a simple
+observation--that the design of the cockpit could affect the likelihood of
+human error. This has gone on to inform the design of all modern aircraft.
+The two switches in current airplanes are now very distinct as mandated by
+federal law in the US.
 
 So why do we tell you this story?˝
 
@@ -45,7 +45,7 @@ Humans make mistakes. However, _human error_ is not a cause; it’s a
 symptom. When human error is deemed to be the reason for a failure, people
 stop there instead of further analyzing the incident.
 
-System design, organizational context, and personal context all affect
+System design, organizational context, and personal context all effect
 when, how and with what impact people make mistakes. "Human error" is a
 label that causes you to quit investigating at precisely the moment when
 you’re about to discover something interesting about your system.
@@ -71,15 +71,10 @@ people have a tendency to do it all the time.
 You can identify counterfactual statements by key phrases:
 
 -   Could have
-
 -   Should have
-
 -   Would have
-
 -   Failed to
-
 -   Did not
-
 -   If only
 
 Some examples of counterfactual statements related to post-incident

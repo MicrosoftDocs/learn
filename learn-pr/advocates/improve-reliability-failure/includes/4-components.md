@@ -79,11 +79,8 @@ A post-incident review is an honest inquiry. As such, it embraces these key
 components:
 
 -   Discussion
-
 -   Discourse
-
 -   Dissent
-
 -   Discovery
 
 These “4 Ds” create a framework on which you can build a post-incident

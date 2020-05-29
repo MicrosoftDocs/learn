@@ -1,12 +1,12 @@
 A key part of a post-incident review is the construction of a shared,
 accurate chronology that reflects the non-linear nature of an incident.
 
-By non-linear, we mean that incidents are almost never just “this happens,
-and then that happened, then we noticed, then we did something, and then we
-are done”. People come in and out, different people notice and try
-different things, some work, some don’t. And if multiple people are working
-at the same time, these things can happen at the same time too. So it is a
-bit more complicated.
+By non-linear, we mean that incidents are almost never just “this thing
+happens, and then that happened, then we noticed, then we did something,
+and then we are done”. People come in and out, different people notice and
+try different things, some work, some don’t. And if multiple people are
+working at the same time, these things can happen at the same time too. So
+it is a bit more complicated.
 
 To create a timeline like this, even a complex one, there's always an
 important first step: gather the data.
@@ -28,9 +28,9 @@ And finally, if possible, it would be helpful for you to get a better
 picture of what changed just prior to and during the incident because
 changes are often contributing factors when an incident occurs.
 
-We can look at this as three separate parts:
+We can look at this process as three separate parts:
 
--   Collect the conversation. In other modules in this learning path we've
+-   Collect the conversation. In other modules in this learning path, we've
     mentioned that it is important to carve out a specific place for people
     to communicate during an incident. During the incident, ideally people
     are sharing what worked and what failed, what they’re hesitant to try,
@@ -52,12 +52,12 @@ Azure offers a number of tools that can assist with this process:
 
 ### Azure DevOps for holding metadata about the incident
 
-In a previous module in this learning module we discussed using Azure
-Boards in the Azure DevOps suite as one place to collect all of the
-information about an incident starting from the initial response. It helps
-us with questions about when an incident was first declared, who was on
-call, who was assigned to the incident, and so forth. You can also use the
-Azure DevOps Wiki as a centralized way to pull in some of the pieces of
+In a previous module in this learning path we discussed using Azure Boards
+in the Azure DevOps suite as one place to collect all of the information
+about an incident starting from the initial response. It helps us with
+questions about when an incident was first declared, who was on call, who
+was assigned to the incident, and so forth. You can also use the Azure
+DevOps Wiki as a centralized way to pull in some of the pieces of
 information about both the incident itself and the conversation that
 happened during the incident.
 
@@ -70,19 +70,20 @@ will be useful when constructing a chronology including who joined the
 channel (and when) and timestamps for individual parts of the conversation.
 
 One easy way to get started with Microsoft Graph API is to use the
-Microsoft Graph Explorer. This is a web-based API browser which allows you
-to pick the API calls by choosing pre-populated options. In our case, we
-will want to use the "Microsoft Teams" and "Microsoft Teams (beta)" API
-calls like this:
+Microsoft Graph Explorer. Microsoft Graph Explorer is a web-based API
+browser which allows you to pick the API calls by choosing pre-populated
+options. Here's what it looks like:
 
-PLACEHOLDER Graph explorer screenshot
+:::image type="content" source="../media/microsoft-graph-explorer.png"
+alt-text="Screenshot of the Microsoft Graph Explorer web page":::
 
-We will step through a set of API calls to retrieve the conversation. Each
-step of the way, we will choose a query, run the query, and then select the
-info from the response that helps us with the next step. We then use this
-info to construct the next request. For example, first we query a list of
-team IDs to show the teams we are a part of. We choose the one we need from
-the response and insert this ID into the next query URL to get a list of
+We will step through a set of "Microsoft Teams" and "Microsoft Teams
+(beta)" API calls to retrieve the conversation. Each step of the way, we
+will choose a query, run the query, and then select the info from the
+response that helps us with the next step. We then use this info to
+construct the next request. For example, first we query a list of team IDs
+to show the teams we are a part of. We choose the one we need from the
+response and insert this ID into the next query URL to get a list of
 channels in that team.
 
 Here are our steps:
@@ -93,7 +94,7 @@ Here are our steps:
 
 If later we wanted to construct a program to perform each of those steps
 (and indeed we do) there is a "code snippets" option in the request window
-which presents sample code for that query in a number of different
+that presents sample code for that query in a number of different
 programming languages.
 
 ### Targeted dashboards for context display
@@ -104,9 +105,10 @@ awareness. The user interface allows us to choose the time period being
 displayed so it is possible to "rewind time" and show the dashboard
 information for the time period associated with an incident if we so choose
 (providing the information is not too old to no longer be retained in Azure
-Monitor). This can be helpful when trying to determine what the people in
-an incident saw during that incident, but it requires the person doing the
-incident review to manually seek to the right time period.
+Monitor). This reconstructed user interface can be helpful when trying to
+determine what the people in an incident saw during that incident, but it
+requires the person doing the incident review to manually seek to the right
+time period.
 
 One feature of dashboards on Azure that often gets overlooked is its
 ability to dump a template of any dashboard being displayed into a JSON
@@ -118,9 +120,36 @@ JSON to our specification. If you search for the string "time" in a
 downloaded JSON dashboard file, you will come upon a section that looks
 like this:
 
-PLACEHOLDER JSON sample
+```json
+    "metadata": {
+      "model": {
+        "timeRange": {
+          "value": {
+            "relative": {
+              "duration": 24,
+              "timeUnit": 1
+            }
+          },
+          "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+        },
+        "filterLocale": {
+          "value": "en-us"
+        },
+        "filters": {
+          "value": {
+            "MsPortalFx_TimeRange": {
+              "model": {
+                "format": "utc",
+                "granularity": "auto",
+                "relative": "24h"
+              },
+              "displayCache": {
+                "name": "UTC Time",
+                "value": "Past 24 hours"
+              },
+```
 
-Modify this section to your specification and re-upload. If you are not
+Modify this section to your specification and reupload. If you are not
 familiar with the format in use, you can change the dashboard manually,
 download it, and see the required format.
 

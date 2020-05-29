@@ -1,7 +1,7 @@
 We've mentioned this in a previous module in this learning path, but as a
 quick review: incidents have a lifecycle that looks like this:
 
-PLACEHOLDER FOR LIFECYCLE (slide 28)
+:::image type="content" source="../media/incident-lifecycle.png" alt-text="Cycle diagram of circles labeled with phases from above, circles are connected to next circle with arrow from phase to phase":::
 
 An incident moves through these phases:
 
@@ -33,11 +33,8 @@ Not everyone uses exactly the same language to refer to this process. Some
 people call it:
 
 -   Post-incident review
-
 -   Post-incident learning review
-
 -   Postmortem
-
 -   Retrospective
 
 In this module we will use the term "post-incident review".

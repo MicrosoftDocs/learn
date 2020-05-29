@@ -3,15 +3,13 @@ uid: learn.improve-reliability-failure.6-traps
 title: "Common traps to avoid"
 metadata:
   title: "Common traps to avoid"
-  description: "Improve Your Reliability: Learning from Failure"
+  description: "ommon traps to avoid"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: set correct duration  
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/6-traps.md)]
 quiz:

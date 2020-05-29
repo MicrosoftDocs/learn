@@ -3,15 +3,13 @@ uid: learn.improve-reliability-failure.2-rationale
 title: "Why learn from incidents?"
 metadata:
   title: "Why learn from incidents?"
-  description: "Improve Your Reliability: Learning from Failure"
+  description: "Why learn from incidents?"
   ms.date: 05/19/2020
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: set correct duration  
-durationInMinutes: 3
+  ms.prod: learning-azure 
+durationInMinutes: 5
 content: |
   [!include[](includes/2-rationale.md)]
 quiz:
