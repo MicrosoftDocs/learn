@@ -2,7 +2,7 @@ Companies building web applications commonly hire developers for a variety of ro
 
 C# and .NET are popular choices for building server-side logic. But client-side apps are often built with web UI frameworks, which commonly use JavaScript. Using multiple languages and tool sets requires multiple skill sets and often requires hiring two separate teams. Also, code to transfer and represent data needs to be built in both languages and kept in sync.
 
-In this unit, you'll start with an introduction to Blazor and then explore Blazor WebAssembly.
+You'll start with an introduction to Blazor and then explore Blazor WebAssembly.
 
 ## What is Blazor?
 
@@ -16,7 +16,7 @@ You can use Blazor to generate server-side code that handles UI interactions ove
 
 WebAssembly (WASM) is an open binary standard that defines a portable code format for executable programs designed to run in web browsers. It is a textual assembly language with a compact binary format built for fast downloads and near-native performance.
 
-WebAssembly provides a compilation target for languages such as C, C++, and Rust. It's designed to run alongside JavaScript so that both work together. You can also use it to generate Progressive Web Applications that can be downloaded and run offline.
+WebAssembly provides a compilation target for languages such as C, C++, and Rust. It's designed to run alongside JavaScript so that both work together. You can also use it to generate progressive web applications that can be downloaded and run offline.
 
 ## What is Blazor WebAssembly?
 

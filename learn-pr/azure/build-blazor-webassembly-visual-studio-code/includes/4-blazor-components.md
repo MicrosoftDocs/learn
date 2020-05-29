@@ -20,7 +20,7 @@ Razor is based on ASP.NET and designed for creating web apps.
 
 ## What are Razor components?
 
-A razor file defines components that make up a portion of the app UI. Components in Blazor are analogous to user controls in ASP.NET Web Forms.
+A Razor file defines components that make up a portion of the app UI. Components in Blazor are analogous to user controls in ASP.NET Web Forms.
 
 If you explore the project, you'll see that most files are .razor files.
 

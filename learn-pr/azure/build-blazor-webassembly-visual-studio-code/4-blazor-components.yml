@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Blazor WebAssembly apps are powered by which runtime?"
+  - content: "Blazor WebAssembly apps use which runtime?"
     choices:
     - content: "The runtime provided by the browser"
       isCorrect: false
@@ -28,12 +28,12 @@ quiz:
       explanation: "Blazor WebAssembly Apps run directly in the browser on a WebAssembly-based .NET runtime"
   - content: "How is Blazor WebAssembly UI defined?"
     choices:
-    - content: "As Razor pages as a mix of HTML and C#"
+    - content: "As Razor pages with a mix of HTML and C#"
       isCorrect: true
-      explanation: "A razor file defines components that make up portions of UI for the app" 
+      explanation: "A Razor file defines components that make up portions of UI for the app" 
     - content: "As XAML pages using XML"
       isCorrect: false
-      explanation: "A razor file defines components that make up portions of UI for the app"
+      explanation: "A Razor file defines components that make up portions of UI for the app"
     - content: "In C# defined in .NET Standard libraries"
       isCorrect: false
-      explanation: "A razor file defines components that make up portions of UI for the app"
+      explanation: "A Razor file defines components that make up portions of UI for the app"

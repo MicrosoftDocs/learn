@@ -8,7 +8,7 @@ For simple logic, you don't always need to create new .cs files.
 
 ## C# inline in components
 
-It's common practice to mix HTML and C# in a single razor component file. For simple components with lighter code requirements, this approach works well. To add code into a razor file, we use directives.
+It's common practice to mix HTML and C# in a single Razor component file. For simple components with lighter code requirements, this approach works well. To add code into a Razor file, we use directives.
 
 ## What are Razor directives?
 
@@ -26,10 +26,10 @@ You can also add an **@functions** section to the template. There you define met
 
 The **@Page** directive is a special directive that identifies a component as a page. Use this directive to specify a route, which maps to an attribute route that the Blazor engine recognizes for registering and accessing the page.
 
-## Razor data binding 
+## Razor data binding
 
 Within Razor components, you can data bind HTML elements to C# fields, properties, or Razor expression values. Data binding enables two-way synchronization between the HTML and .NET.
 
-Data is pushed from the HTML to .NET when the component is rendered. Since components render themselves after event handler code executes, property updates are reflected in the UI immediately after an event handler is triggered.
+Data is pushed from the HTML to .NET when the component is rendered. Since components render themselves after event-handler code executes, property updates are reflected in the UI immediately after an event handler is triggered.
 
-The `@bind` markup is used to bind a C# variable to an HTML object. You define the C# variable by name as a string in the html. You'll see an example of data binding in the following exercise.
+Use the **@bind** directive to bind a C# variable to an HTML object. You define the C# variable by name as a string in the HTML. You'll see an example of data binding in the following exercise.
