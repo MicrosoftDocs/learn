@@ -4,17 +4,13 @@ Communication matters during every phase:
 
 -   Detection: communicate to the proper people that an incident has
     occurred and the broad nature/severity of the incident and impact.
-
 -   Response: communicate the details about the incident as the diagnostic
     process proceeds, what the steps are needed to fix the problem and who
     is to do what.
-
 -   Remediation: communicate how and when service has been restored to
     normal operation and necessary follow-up actions.
-
 -   Analysis: communicate the lessons learned from the incident and what
     can be done to prevent it from happening again.
-
 -   Readiness: communicate changes (or required changes) to the incident
     response plan, our procedures and our systems that resulted from the
     lessons learned from this incident.
@@ -31,13 +27,10 @@ Keys to prioritizing for clear communication include:
 
 -   Make sure you are sharing information about what is going on at each
     step of the way.
-
 -   Document the information – put it in writing so that it’s less likely
     to be misunderstood or forgotten.
-
 -   Place the information in a centralized location where it will be
     accessible to everyone who needs it.
-
 -   Use tools to increase the effectiveness of communications.
 
 Even though we didn't call it out at the time, these are all behaviors we

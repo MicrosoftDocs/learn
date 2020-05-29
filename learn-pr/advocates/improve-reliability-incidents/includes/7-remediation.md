@@ -150,12 +150,10 @@ problems within your systems.
     Service Health. You should pin this to your dashboard so you can check
     on whether the problem is with your systems or with the cloud service
     itself.
-
 -   The Application Map in Application Insights can be used to drill into
     exactly what’s going on to cause the issues. You can follow the
     breadcrumbs to find the cause of the error (for example, a malformed
     URL).
-
 -   Log Analytics can be used to query any part of the system.
 
 All of the above are invaluable tools in remediating problems.

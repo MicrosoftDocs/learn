@@ -65,11 +65,9 @@ team:
 -   Primary responder. This is the “point person” who is usually the first
     person on the scene, that is, the first on-call engineer who is called when
     an incident occurs.
-
 -   Secondary responder. This is someone who acts as a backup and can step
     in if the primary responder isn’t available or if a second pair of eyes
     is needed.
-
 -   Subject matter experts. These are people who have in-depth knowledge
     about a particular facet of your operations. They are there if the
     primary and secondary responders need to escalate the problem to
@@ -77,7 +75,6 @@ team:
     available when their specialized skills are needed. You should maintain
     a list of SMEs in various subjects (for example, database, front-end,
     network infrastructure, web apps, cybersecurity, etc.).
-
 -   Incident commander. This is an important role in a large-scale incident
     or outage that impacts many different components and/or requires
     coordination across many different teams and systems. An incident
@@ -88,7 +85,6 @@ team:
     great for making sure that engineers stay focused and they're working
     on their own remediation efforts without stepping on or undoing each
     other's work.
-
 -   Scribe. The scribe’s role is to document the conversation around the
     incident in as much detail as possible. Teams commonly use phone
     bridges, conference calls, or video chat to get everyone together and
@@ -100,7 +96,6 @@ team:
     scribe captures all the data possible – not just what team members are
     doing but also what they’re saying and even what they’re feeling or
     experiencing.
-
 -   Communication coordinator. Think of this person as the “public
     relations manager” for the incident. The communication coordinator
     works in conjunction with the incident commander to share information
@@ -130,7 +125,6 @@ Some methods for scheduling shifts include:
     than three to four days can be detrimental to the overall health of the
     engineering staff – and thus reduces the reliability of the entire
     system.
-
 -   Follow the sun shifts. This is a shift model in which the engineers
     schedule their on-call shifts only during their normal working hours
     and then hand off their on-call responsibility at the end of their

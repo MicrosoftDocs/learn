@@ -61,10 +61,8 @@ focused on incident response performance.
 -   The report classified engineering teams that can detect, respond, and
     remediate service disruptions in less than an hour as “elite or high
     performers.”
-
 -   Those who were able to recover from incidents in under 24 hours were
     classified as “medium performers.”
-
 -   “Low performers” are those who take between one week and a month to
     recover from service disruptions.
 

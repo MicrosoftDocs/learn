@@ -10,19 +10,15 @@ incident is to ask yourself a series of questions:
 -   When did you first know about the problem? If your goal is to reduce
     the time it takes to recover from incidents, you need to begin
     capturing information from the moment you become aware of the issues.
-
 -   How did you find out about the problem? Did your monitoring system
     alert you about the incident? Did you first hear about it from your
     customers complaining, either directly or on social media?
-
 -   If you are just finding out about the problem, are you the first one to
     know? If so, who do you need to notify? If not, who else is aware of
     the issue?
-
 -   If others are aware, what (if anything) is being done about it? Is
     everyone assuming that someone else is looking into it, or has someone
     started taking action to address it?
-
 -   How bad is it? We may not have any notion of severity or impact and
     there’s no place for us to find out how bad the problem really is, and
     who is affected.
