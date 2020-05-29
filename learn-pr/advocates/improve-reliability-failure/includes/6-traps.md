@@ -33,11 +33,11 @@ angular "flap" to the switch for the flaps, and sure enough the accidents
 stopped happening.
 
 He's now known as one of the founders of the field of ergonomics--the study
-of design factors in human performance -- and he had a simple
+of design factors in human performance--and he had a simple
 observation--that the design of the cockpit could affect the likelihood of
-human error. This has gone on to inform the design of all modern aircraft.
-The two switches in current airplanes are now very distinct as mandated by
-federal law in the US.
+human error. This approach has gone on to inform the design of all modern
+aircraft. The two switches in current airplanes are now very distinct as
+mandated by federal law in the US.
 
 So why do we tell you this story?˝
 
@@ -94,7 +94,7 @@ this speculation.
 
 ## Trap 3: Normative language
 
-_Normative language_ often implies that there was an "obviously-correct"
+_Normative language_ often implies that there was an "obviously correct"
 course of action that operators should have taken and judges the actions of
 those operators with the benefit of hindsight.
 
