@@ -53,7 +53,7 @@ Running multiple templates gives you multiple Azure Pipelines projects, each poi
 
 Choose one of the following options.
 
-### Option 1 - Disable the pipeline
+### Option 1: Disable the pipeline
 
 This option disables the pipeline so that it doesn't process further build requests. You can reenable the build pipeline later if you want to. Choose this option if you want to keep your DevOps project and your build pipeline for future reference.
 
@@ -67,7 +67,7 @@ To disable the pipeline:
 
     Your pipeline will no longer process build requests.
 
-### Option 2 - Delete the Azure DevOps project
+### Option 2: Delete the Azure DevOps project
 
 This option deletes your Azure DevOps project, including the content on Azure Boards and in your build pipeline. In future modules, you can run another template that brings up a new project in a state where this template leaves off. Choose this option if you don't need your DevOps project for future reference.
 
