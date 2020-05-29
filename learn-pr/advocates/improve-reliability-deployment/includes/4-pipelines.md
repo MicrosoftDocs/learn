@@ -96,10 +96,10 @@ only available using the Classic interface.
 
 Pipelines are structured into:
 
-    -   Jobs: a job is a grouping of tasks or steps that run on a single build
-    agent. A job is the smallest component of work that you can schedule to run. All of the steps in a job run sequentially. Those steps can be any sort of action you desire including building/compiling software, preparing sample data for testing, running specific tests, and so on.
+-   Jobs: a job is a grouping of tasks or steps that run on a single build
+agent. A job is the smallest component of work that you can schedule to run. All of the steps in a job run sequentially. Those steps can be any sort of action you desire including building/compiling software, preparing sample data for testing, running specific tests, and so on.
 
-    -   Stages: a stage is a logical grouping of related jobs
+-   Stages: a stage is a logical grouping of related jobs
 
 Every pipeline has at least one stage. Use multiple stages to organize the
 pipeline into major divisions and mark the points in your pipeline where
@@ -109,7 +109,7 @@ Pipelines can be as simple or as complex as desired. There are some
 excellent tutorials on pipeline construction and use on Microsoft Learn as
 part of the Build applications with Azure DevOps learning path.
 
-## Environment Traceability
+## Environment traceability
 
 There's one other aspect of pipelines that relates to reliability worth
 mentioning. It is possible to construct your pipelined in such a way that

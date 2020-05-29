@@ -60,7 +60,7 @@ and use monitoring and analytics to get an early warning of any problems
 with the new version within the subset of instances or users so the entire
 production environment isn’t affected.
 
-## Feature Flags
+## Feature flags
 
 The feature flag idea is another strategy that requires slightly more
 sophistication on the part of the developers. Instead of having two

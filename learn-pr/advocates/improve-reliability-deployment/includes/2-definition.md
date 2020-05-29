@@ -27,7 +27,7 @@ service or a solution can mean deploying software, cloud infrastructure,
 configuration, and all of the things that are needed to reliably make a
 software system available to use.
 
-## Scenario: the epic deployment
+## Scenario: The epic deployment
 
 The word _epic_ means “grand, monumental, or vast.” But in the context of
 this discussion, it’s not a good thing. The term was "epic" was coined by

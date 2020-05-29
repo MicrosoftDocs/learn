@@ -78,10 +78,10 @@ DevOps Report_ by DevOps Research and Assessment (DORA) and Google Cloud
 DevOps & SRE. In it, they have found that "high performing" DevOps
 companies:
 
-    -   have 208x the number of deployments
-    -   are 106x faster from commit to deploy
-    -   have a 7x lower change failure rate
-    -   2,604x faster incident recovery time
+-   have 208x the number of deployments
+-   are 106x faster from commit to deploy
+-   have a 7x lower change failure rate
+-   2,604x faster incident recovery time
 
 which all leads to increased revenue and faster time-to-market.
 
