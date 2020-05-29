@@ -85,9 +85,9 @@ channels in that team.
 
 Here are our steps:
 
-    1. GET "my joined teams" (to find the team ID of the team we use)
-    2. GET "channels of a team which I am member of" (to find the channel ID of the channel we used for that incident)
-    3. GET "messages in a channel" (to retrieve the conversation)
+1. GET "my joined teams" (to find the team ID of the team we use)
+2. GET "channels of a team which I am member of" (to find the channel ID of the channel we used for that incident)
+3. GET "messages in a channel" (to retrieve the conversation)
 
 If later we wanted to construct a program to perform each of those steps
 (and indeed we do) there is a "code snippets" option in the request window
