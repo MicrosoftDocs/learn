@@ -10,11 +10,11 @@ By the end of this module, you will understand the potential hurdles to migratin
 
 ## Learning objectives
 
-In this module, you will:
+By the end of this module, you will be able to:
 
-- Discover the kinds of issues that you might face when migrating an application hosted on Internet Information Services to Azure App Services.
+- Describe the kinds of issues that you might face when migrating an application hosted on Internet Information Services to Azure App Services.
 - Install and run the Azure App Service Migration Assistant.
-- Use the Azure App Service Migration Assistant to migrate an ASP.NET MVC Core web app to Azure App Services.
+- Migrate an ASP.NET MVC Core web app to Azure App Services using the Azure App Service Migration Assistant.
 
 ## Prerequisites
 

@@ -1,0 +1,1 @@
+In this unit, you'll launch our sandbox environment.  The sandbox environment takes a few moments to prepare for your exercise, so execute following script and then continue to the next unit where you'll read about assessment while your environment is setting up.
