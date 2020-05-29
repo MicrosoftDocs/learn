@@ -27,7 +27,7 @@ quiz:
         - content: students.select(name, email)
           isCorrect: false
           explanation: Incorrect. Column names should be in quotation marks to signify they should be searched for in the table.
-        - content: students.select('name', 'email') correct
+        - content: students.select('name', 'email') 
           isCorrect: true
           explanation: Correct.
     - content: 'A table ordered by age from oldest to youngest.'

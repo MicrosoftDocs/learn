@@ -1,7 +1,7 @@
 > [!NOTE]
 > You can find an interactive version of this unit named **regression-line.ipynb** in your virtual environment.
 
-If you haven't set up your online Visual Studio Codespaces environment for the Learning Path [Foundations of Data Science](https://docs.microsoft.com/learn/paths/foundations-of-data-science/) refer to the first unit [Setting up your virtual environment](https://docs.microsoft.com/learn/modules/make-predictions-with-linear-regression/00-setup)
+If you haven't set up your online Visual Studio Codespaces environment for the Learning Path [Foundations of Data Science](/learn/paths/foundations-data-science/) refer to the first unit [Setting up your virtual environment](https://docs.microsoft.com/learn/modules/make-predictions-with-linear-regression/00-setup)
 
 Open your [Visual Studio Codespaces](https://online.visualstudio.com/environments).
 
