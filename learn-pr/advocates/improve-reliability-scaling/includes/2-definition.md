@@ -67,19 +67,24 @@ basic concepts and fundamental terms related to scaling.
 
 -   Scaling up: making a component bigger so as to handle an increased
     workload. This is also referred to as vertical scaling.
+
 -   Scaling out: adding more components or resources to spread out the load
     over a distributed architecture. For example, using a simple
     architecture that has multiple backends behind a set of frontends. As
     load increases, we add more backend (and frontend) servers to handle
     it. This is also referred to as horizontal scaling.
+
 -   Manually scaling: human action is necessary to increase the amount of
     resources.
+
 -   Auto scaling: the amount of resources is automatically adjusted by the
     system based on the load. And just to be clear, because this is often
     left out of our thinking, the amount is adjusted both up and down based
     on either an increased or decreased load.
+
 -   DIY scale: do-it-yourself scaling whereby you have to configure the
     autoscaling.
+
 -   Inherent scale: services that were built to be scalable and handle this
     scaling for you behind the scenes without any intervention on your
     part. From your perspective, they look almost infinitely scalable
@@ -92,13 +97,13 @@ In this module we are going to use an example architecture from a fictional
 hardware company called Tailwind Traders. Their e-commerce platform looks
 like this:
 
-PLACEHOLDER SLIDE 11
+:::image type="content" source="../media/application-diagram.png" alt-text="Full architecture diagram of applications with frontend, backend and other components.":::
 
 This is pretty complex on first glance, so let's walk our way through it.
 The website has a frontend, that’s what you’ll be talking to if you go to
 tailwindtraders.com.
 
-PLACEHOLDER frontend
+:::image type="content" source="../media/application-diagram-frontend.png" alt-text="Full architecture diagram of application with frontend component highlighted":::
 
 The frontend talks to a set of backend services. These backend services
 include a coupon service, a shopping cart service, and inventory service,
@@ -107,7 +112,7 @@ are other parts and technologies at play with this application. But really,
 all you need to focus on is the frontend and the backend services running
 on Kubernetes.
 
-PLACEHOLDER backend
+:::image type="content" source="../media/application-diagram-backend.png" alt-text="Full architecture diagram of application with backend component highlighted":::
 
 ### Single points of failure
 
@@ -115,7 +120,7 @@ Now that you have seen the whole architecture, let's take a moment to
 examine the single points of failure and the places we might put our
 attention when thinking about scaling.
 
-PLACEHOLDER SPOF
+:::image type="content" source="../media/application-diagram-failure-points.png" alt-text="Full architecture diagram of application with backend components and SQL DB highlighted":::
 
 All of these services are a single point of failure, they’re not built for
 resiliency, or for scale. If one of them gets overloaded, it’s likely to
@@ -129,7 +134,7 @@ be more scalable and reliable.
 Lets take a look at another issue that could come and bite us. Here are the
 services/components that require us to pre-provisioned capacity:
 
-PLACEHOLDER CAPACITY
+:::image type="content" source="../media/application-diagram-provisioned.png" alt-text="Full architecture diagram of application with Azure cognitive services, Cosmos DB, and SQL DB highlighted":::
 
 For example, with CosmosDB we pre-provision the throughput. If we exceed
 those limits, we’re going to start returning error messages to our
@@ -146,11 +151,11 @@ discuss later in this module.
 Even when we do things right, we still need to plan for growth. Here are
 the pay-per-use services:
 
-PLACEHLOLDER PAY PER USE
+:::image type="content" source="../media/application-diagram-provisioned.png" alt-text="Full architecture diagram of application with Azure Logic Apps and Azure Functions highlighted":::
 
-Here we’re using logic apps and Functions, which are both examples of
-serverless technology. This means these services scale automatically and we
-pay per request. Your bill grows as your customer base does. We should at
-least be aware of the impact upcoming events like a product launch may have
-on our cloud spend. We will work on understanding and predicting our cloud
-spend later in this module as well.
+Here we’re using Azure Logic Apps and Azure Functions, which are both
+examples of serverless technology. This means these services scale
+automatically and we pay per request. Your bill grows as your customer base
+does. We should at least be aware of the impact upcoming events like a
+product launch may have on our cloud spend. We will work on understanding
+and predicting our cloud spend later in this module as well.

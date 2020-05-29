@@ -8,8 +8,7 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-# TODO: set correct duration  
-durationInMinutes: 3
+  ms.prod: learning-azure 
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -31,7 +31,7 @@ strengths. What’s good about it?
 Take another look at the scenario you saw in the previous unit. Here’s a
 diagram of the organization’s architecture again.
 
-PLACEHOLDER slide 47
+:::image type="content" source="../media/application-diagram-frontend.png" alt-text="Full architecture diagram of application with products backend service highlighted":::
 
 They've decomposed the application into smaller microservices and some of
 these are sitting as containers on Azure Kubernetes Service or they could
@@ -159,7 +159,18 @@ or standard tiers._
 
 This must be implemented in code. Here’s how to do that:
 
-PLACEHOLDER slide 57
+```
+#Azure SQL Connection String
+
+#Master Connection String
+ApplicationIntent=ReadWrite
+
+#Read Replica Connection String
+ApplicationIntent=ReadOnly
+
+#Full Example
+Server=tcp:<server>.database.windows.net;Database=<mydatabase>;ApplicationIntent=ReadOnly;User ID=<myLogin>;Password=<myPassword>;Trusted_Connection=False; Encrypt=True;
+```
 
 Update the ApplicationIntent attribute in your database connection string
 to specify to which server you wish to connect. Use ReadOnly if you want to

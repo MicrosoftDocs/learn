@@ -14,6 +14,7 @@ for this:
     your needs, not all of the services you consume scale automatically or
     are inherently scalable. Thus, you will need to be aware of service
     limits and know when you’re going to need to scale things up.
+
 -   Whereas cloud resources might be unlimited, your budget probably isn’t.
     You have to consider cost, and your friends in the Finance department
     will want to know your forecasted cloud spend.
@@ -35,7 +36,7 @@ Traders is about to launch an innovative new product and is anticipating
 dramatic growth as a result. Just to remind you, here's what their
 architecture diagram looks like:
 
-PLACEHOLDER slide 22
+:::image type="content" source="../media/application-diagram.png" alt-text="Full architecture diagram of applications with frontend, backend and other components.":::
 
 To begin capacity planning, you need to identify the larger components. In
 this example, that would include:
@@ -79,14 +80,14 @@ over time.
 So let's get concrete and look at the data from Tailwind Traders use of
 CosmosDB. Here is a graph of their usage:
 
-PLACEHOLDER slide 28
+:::image type="content" source="../media/application-usage.png" alt-text="Graph of usage over time with users on the Y axis and months on the X axis, graph shows 2530 users in July and rises until 10081 users in October":::
 
 In this example, Tailwind traders are growing at an average of 2,500
 monthly active users (MAUs) with a current user base of 10,000.
 
 If we look at storage:
 
-PLACEHOLDER slide 29
+:::image type="content" source="../media/application-storage.png" alt-text="Graph of storage over time with storage amounts on the Y axis and months on the X axis, graph shows two lines, one for storage at 151 in July and ending at 300 for October, the other for capacity which is flat at 5000 for all months":::
 
 We can see their database is using 300 GB of 5 TB available (6%) It is
 growing at 1% or 50 GB/Month.
@@ -94,7 +95,7 @@ growing at 1% or 50 GB/Month.
 From a throughput perspective, it is sitting at 300/1000 and growing at
 10%/month:
 
-PLACEHOLDER slide 30
+:::image type="content" source="../media/application-throughput.png" alt-text="Graph of throughput over time with RUs on the Y axis and months on the X axis, graph shows two lines, one for storage at 0 in July and ending at 300 for October, the other for provisioned RUs which is flat at 1000 for all months":::
 
 Understanding our systems resource metrics, means we know when we're likely
 going to have to scale our throughput. And also what our costs will be over
@@ -102,7 +103,7 @@ time.
 
 So this allows us to produce a graph that helps us with capacity planning:
 
-PLACEHOLDER slide 31
+:::image type="content" source="../media/application-planning.png" alt-text="Graph of RUs over time with RUs on the Y axis and months on the X axis, graph shows two lines, one for storage at 0 in July and ending at 1000 next may, the other for capacity which is flat at 1000 for all months. The two lines intersect at 1000 and there is an arrow emphasizing their intersection point":::
 
 So now we know that in June we're going to reach capacity of RUs on our
 database. so we'll need to scale before then. One other interesting insight
@@ -149,7 +150,7 @@ GB of storage and 100 Request Units. You can now use that data and
 determine whether you’re ready for this event. If we can expect 5000 users,
 that's going to require 100 GB storage and 200 RU/s.
 
-PLACEHOLDER slide 34
+:::image type="content" source="../media/application-storage-prediction.png" alt-text="Graph of storage usage over time with storage units on the Y axis and months on the X axis, graph shows two lines, one for storage at 151 in July and ending at 400 in november, the other for capacity which is flat at 5000 for all months. There is an arrow labeled with 'After marketing event' pointing at the November data point":::
 
 We can see that their storage capacities are more than sufficient for the
 growth expected in the event. These scale automatically for you, so there's
@@ -162,7 +163,7 @@ for this event.
 
 There will, however, be an impact on cost.
 
-PLACEHOLDER slide 36
+:::image type="content" source="../media/application-planning-cost.png" alt-text="Bar Graph with three sets of bars: Storage, Throughput and Total. The Y axis shows dollar amounts. For each set, there is a bar for before event (USD) and a bar for after event (USD). The values are 75 and 100 for Storage, 59.52 and 59.52 for Throughput, and 134.52 and 159.52 for total":::
 
 You can see that the 100GB of extra storage is going to cost an additional
 $25/month. The throughput price stays the same as customers pay for provisioned

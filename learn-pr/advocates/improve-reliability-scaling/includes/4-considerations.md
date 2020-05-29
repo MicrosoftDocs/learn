@@ -2,10 +2,10 @@ Basic capacity planning starts with some straightforward calculations, but
 there are factors that can complicate the process. In addition to simple
 current and predicted usage numbers, you must also factor in the following:
 
--   Service limits and quotas
--   Cost limitations
--   Code and configuration inefficiencies
--   Dependencies
+- Service limits and quotas
+- Cost limitations
+- Code and configuration inefficiencies
+- Dependencies
 
 In this unit, you’ll look at how these considerations can impact your
 capacity planning and how to address each of them.
@@ -45,7 +45,7 @@ the navigation pane. You can filter on service category such as network /
 compute, as well as Azure region. It will show you where you are against
 the limits.
 
-PLACEHOLDER slide 38
+:::image type="content" source="../media/service-limits.png" alt-text="Screenshot of Service Limits info found in the Azure portal showing a table of different resources and their quotas.":::
 
 ### Via code
 
@@ -53,7 +53,20 @@ You can use the List usages endpoint for any Azure service to get the
 current resource usage information as well as the limits for compute
 resources under the subscription, as shown in this truncated example.
 
-PLACEHOLDER slide 39
+```html
+GET https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Network/locations/{location}/usages?api-version=2019-06-01200 OK
+{ 
+	"currentValue": 124,
+	"id": 			"/subscriptions/{subscriptionId}/providers/Microsoft.Network/locations/westeurope/usages/VirtualNetworks",
+	"limit": 1000, 
+	"name": { 
+		"localizedValue": "Virtual Networks",
+		"value": "VirtualNetworks" 
+	}, 
+	"unit": "Count" 
+},
+
+```
 
 You can see that the current number of Azure Virtual Networks (VNets) being
 used is 124 against a limit of 1000. Limit Increases require a support

@@ -9,9 +9,7 @@ metadata:
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: set correct duration  
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/5-applications.md)]
 quiz:
@@ -22,15 +20,15 @@ quiz:
     choices:
     - content: 'a load balancer'
       isCorrect: false
-      explanation: 'A load balancer can sit in front of those VMs, but it will not manage them.'
+      explanation: "A load balancer can sit in front of those VMs, but it won't manage them."
     - content: 'virtual hard disks (VHDs)'
       isCorrect: false
-      explanation: 'VHDs are attached to those VMs, but they do not manage them.'
+      explanation: "VHDs are attached to those VMs, but they don't manage them."
     - content: 'virtual machine scale sets'
       isCorrect: true
       explanation: 'Correct.'
 
-  - content: 'Which of the following is a simple REST-based queue interface built on top of Azure Storage?'
+  - content: 'Which of the following product offerings is a simple REST-based queue interface built on top of Azure Storage?'
     choices:
     - content: 'Azure Service Bus Queues'
       isCorrect: false
