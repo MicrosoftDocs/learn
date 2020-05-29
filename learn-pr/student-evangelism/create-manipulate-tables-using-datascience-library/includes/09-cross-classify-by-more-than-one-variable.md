@@ -393,4 +393,4 @@ attainment and personal income.
 distributions.select(0, 1, 4).barh(0)
 ```
 
-![Variable](../media/34-cross-classify-by-more-than-one-variable-37-0.png)
+![Cross classifying by multiple variables.](../media/34-cross-classify-by-more-than-one-variable-37-0.png)

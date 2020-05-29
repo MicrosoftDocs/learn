@@ -56,7 +56,7 @@ banknotes = banknotes.join('Class', color_table)
 banknotes.scatter('WaveletVar', 'WaveletCurt', group='Color')
 ```
 
-![Classifier](../media/91-implementing-classifier-7-0.png)
+![Scatterplot of waveletvar and waveletcurt.](../media/91-implementing-classifier-7-0.png)
 
 Interesting! Those two measurements do seem helpful for
 predicting whether the banknote is counterfeit or not. However, in this
@@ -120,7 +120,7 @@ ax.scatter(banknotes.column('WaveletSkew'),
            c=banknotes.column('Color'));
 ```
 
-![Classifier](../media/91-implementing-classifier-12-0.png)
+![Scatterplot of waveletskew, waveletvar, waveletcurt.](../media/91-implementing-classifier-12-0.png)
 
 Awesome! With just two attributes, there was some overlap between the two
 clusters (which means that the classifier was bound to make some
@@ -263,7 +263,7 @@ wine_with_colors = wine.join('Class', color_table)
 wine_with_colors.scatter('Flavanoids', 'Alcohol', group='Color')
 ```
 
-![png](../media/91-implementing-classifier-27-0.png)
+![Scatterplot of flavanoids and alcohol.](../media/91-implementing-classifier-27-0.png)
 
 The blue points (Class 1) are almost entirely separate from the gold
 ones. That is one indication of why the distance between two Class 1
@@ -275,7 +275,7 @@ attributes too:
 wine_with_colors.scatter('Alcalinity of Ash', 'Ash', group='Color')
 ```
 
-![png](../media/91-implementing-classifier-29-0.png)
+![Scatterplot of Alcalinity of Ash and Ash.](../media/91-implementing-classifier-29-0.png)
 
 But for some pairs the picture is more murky.
 
@@ -283,7 +283,7 @@ But for some pairs the picture is more murky.
 wine_with_colors.scatter('Magnesium', 'Total Phenols', group='Color')
 ```
 
-![png](../media/91-implementing-classifier-31-0.png)
+![Scatterplot of magnesium and total phenols.](../media/91-implementing-classifier-31-0.png)
 
 Let's see if we can implement a classifier based on all of the
 attributes. After that, we'll see how accurate it is.
