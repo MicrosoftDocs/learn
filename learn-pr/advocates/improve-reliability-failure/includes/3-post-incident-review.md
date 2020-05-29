@@ -1,7 +1,7 @@
 We've mentioned this in a previous module in this learning path, but as a
 quick review: incidents have a lifecycle that looks like this:
 
-:::image type="content" source="../media/incident-lifecycle.png" alt-text="Cycle diagram of circles labeled with phases from above, circles are connected to next circle with arrow from phase to phase":::
+:::image type="content" source="../media/lifecycle.png" alt-text="Cycle diagram of circles labeled with phases from above, circles are connected to next circle with arrow from phase to phase":::
 
 An incident moves through these phases:
 
