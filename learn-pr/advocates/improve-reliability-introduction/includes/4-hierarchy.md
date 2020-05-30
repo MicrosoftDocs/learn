@@ -3,20 +3,20 @@ model from the site reliability engineering world called the Dickerson
 Hierarchy of Reliability. Mikey Dickerson was an SRE who became the
 founding administrator of the United States Digital Services. He created
 this hierarchy while facing one the largest reliability crises he had ever
-encountered.
+met.
 
 :::image type="content" source="../media/dickerson-hierarchy.png" alt-text="a diagram of a pyramid showing the seven levels of the hierarchy of reliability":::
 
 The model is patterned after Abraham Maslow's hierarchy of needs addressing
-human motivation. As with Maslow's hierarchy, in order to progress up the
-hierarchy (represented here as a pyramid), you need to make sure that each
-of the lower levels has been addressed first. The levels on which we'll
-focus in this learning path, from bottom to top, are:
+human motivation. As with Maslow's hierarchy, to progress up the hierarchy
+you need to make sure that each of the lower levels has been addressed
+first. The levels on which we'll focus in this learning path, from bottom
+to top, are:
 
 ## Monitoring
 
-This level is the important foundation on which the other levels rest. It
-is the source of information that allows you to have concrete conversations
+This level is the important foundation on which the other levels rest. It's
+the source of information that allows you to have concrete conversations
 about reliability in your organization around objective data. When you make
 changes, this practice is you will know the effect. In even starker terms,
 this practice is how you will know whether things are getting better or
@@ -28,10 +28,10 @@ work done.
 Every production environment will have an outage of some sort. There's no
 disputing this fact. The questions then become "what do you do when an
 incident occurs? What happens when systems are down and customers are
-impacted?" You need to create and implement a standard process that is
-effective at triaging the problem, getting the right resources engaged, and
-then mitigating the issue. At the same time, you also want to make sure you
-are communicating with stakeholders about the problem.
+impacted?" You need a standard process that is effective at triaging the
+problem, getting the right resources engaged, and then mitigating the
+issue. At the same time, you also want to make sure you are communicating
+with stakeholders about the problem.
 
 ## Post-incident review (learning from failure)
 
