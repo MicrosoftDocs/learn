@@ -25,7 +25,10 @@ of steps code goes through as changes are made during the development
 process prior to deploying it to production. Here is a graphic
 representation of sample steps in a simplified delivery pipeline.
 
-:::image type="content" source="../media/pipeline-stages.png" alt-text="Diagram with eight stages of a pipeline, four marked as Integration, four marked as Deployment, red indicator arrows pointing at Test and Review stages":::
+:::image type="content" source="../media/pipeline-stages.png"
+alt-text="Diagram with eight stages of a pipeline, four marked as
+Integration, four marked as Deployment, red indicator arrows pointing at
+Test and Review stages":::
 
 Let's walk through this pipeline step by step.
 
@@ -88,16 +91,19 @@ steps you will follow:
 Once the code has been updated, built, and tested, you can deploy it to
 whatever target you want.
 
-Note that there are some features, such as running container jobs, that are
-only available when using YAML and others, such as task groups, that are
-only available using the Classic interface.
+There are some features, such as running container jobs, that are only
+available when using YAML and others, such as task groups, that are only
+available using the Classic interface.
 
 ## Azure Pipeline construction
 
 Pipelines are structured into:
 
 -   Jobs: a job is a grouping of tasks or steps that run on a single build
-agent. A job is the smallest component of work that you can schedule to run. All of the steps in a job run sequentially. Those steps can be any sort of action you desire including building/compiling software, preparing sample data for testing, running specific tests, and so on.
+    agent. A job is the smallest component of work that you can schedule to
+    run. All of the steps in a job run sequentially. Those steps can be any
+    sort of action you desire including building/compiling software,
+    preparing sample data for testing, running specific tests, and so on.
 
 -   Stages: a stage is a logical grouping of related jobs
 

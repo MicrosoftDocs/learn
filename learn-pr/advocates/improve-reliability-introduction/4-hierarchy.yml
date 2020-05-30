@@ -3,7 +3,7 @@ uid: learn.improve-reliability-introduction.4-dickerson-hierarchy
 title: "The Dickerson hierarchy of reliability"
 metadata:
   title: "The Dickerson hierarchy of reliability"
-  description: "An introduction to the Dickerson hierarchy of reliability, a tool that can offer a map for how to approach reliability challenges."
+  description: "The Dickerson hierarchy of reliability."
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb
@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: 'incident response'
       isCorrect: false
-      explanation: 'This is not the first level in the Dickerson hierarchy of reliability.'
+      explanation: 'This answer is not the first level in the hierarchy of reliability.'
     - content: 'testing/release'
       isCorrect: false
-      explanation: 'This is not the first level in the Dickerson hierarchy of reliability.'
+      explanation: 'This answer is not the first level in the hierarchy of reliability.'
     - content: 'capacity/scale'
       isCorrect: false
-      explanation: 'This is not the first level in the Dickerson hierarchy of reliability.'     
+      explanation: 'This answer is not the first level in the hierarchy of reliability.'     
     - content: 'monitoring'
       isCorrect: true
       explanation: 'Correct.'     

@@ -21,7 +21,7 @@ Analytics works:
 
 Data for log analytics comes in from a number of sources including:
 
-- windows event logs
+- Windows event logs
 - syslog on Linux machines
 - agents running on VMs
 - custom logs people choose to send in
@@ -40,7 +40,7 @@ called "requests".
 
 The graphic below shows the different parts of the Log Analytics interface.
 
-:::image type="content" source="../media/log-analytics-user-interface.png" alt-text="Screenshot of the Log Analytics workspace in the Azure Portal":::
+:::image type="content" source="../media/log-analytics-user-interface.png" alt-text="Screenshot of the Log Analytics workspace in the Azure portal":::
 
 
 On the left is a section of the screen that makes sure you never get lost
@@ -91,11 +91,9 @@ Here are some examples of other common commands you might use instead of
 -   If you want to see any random 10 records instead of the top 10 (for
     example, to see the table structure), you can use the command
 
-    ````kusto
+    ```kusto
     requests
     |take 10```
-
-    ````
 
 -   To see records that have come in during the last half hour, you can use
     the following query:

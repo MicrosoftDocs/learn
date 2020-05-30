@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-reliability-monitoring.7-sli-slo
-title: "Service Level Indicators (SLIs) and Service Level Objectives (SLOs)"
+title: "Service level indicators (SLIs) and service level objectives (SLOs)"
 metadata:
-  title: "Service Level Indicators (SLIs) and Service Level Objectives (SLOs)"
-  description: "Service Level Indicators (SLIs) and Service Level Objectives (SLOs)"
+  title: "Service level indicators (SLIs) and service level objectives (SLOs)"
+  description: "Service level indicators (SLIs) and service level objectives (SLOs)"
   ms.date: 05/07/2020
   author: dnblankedelman
   ms.author: dnb

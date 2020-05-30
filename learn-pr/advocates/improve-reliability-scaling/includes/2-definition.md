@@ -134,9 +134,9 @@ be more scalable and reliable.
 Lets take a look at another issue that could come and bite us. Here are the
 services/components that require us to pre-provisioned capacity:
 
-:::image type="content" source="../media/application-diagram-provisioned.png" alt-text="Full architecture diagram of application with Azure cognitive services, Cosmos DB, and SQL DB highlighted":::
+:::image type="content" source="../media/application-diagram-provisioned.png" alt-text="Full architecture diagram of application with Azure Cognitive Services, Cosmos DB, and SQL DB highlighted":::
 
-For example, with CosmosDB we pre-provision the throughput. If we exceed
+For example, with Cosmos DB we pre-provision the throughput. If we exceed
 those limits, we’re going to start returning error messages to our
 customers. With Cognitive services, we select the tier and that tier has a
 maximum number of requests per second. Once we hit either of these, clients
@@ -151,7 +151,7 @@ discuss later in this module.
 Even when we do things right, we still need to plan for growth. Here are
 the pay-per-use services:
 
-:::image type="content" source="../media/application-diagram-provisioned.png" alt-text="Full architecture diagram of application with Azure Logic Apps and Azure Functions highlighted":::
+:::image type="content" source="../media/application-diagram-costs.png" alt-text="Full architecture diagram of application with Azure Logic Apps and Azure Functions highlighted":::
 
 Here we’re using Azure Logic Apps and Azure Functions, which are both
 examples of serverless technology. This means these services scale
