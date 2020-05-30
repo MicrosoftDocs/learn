@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: 'incident response'
       isCorrect: false
-      explanation: 'This answer is not the first level in the hierarchy of reliability.'
+      explanation: "This answer isn't the first level in the hierarchy of reliability."
     - content: 'testing/release'
       isCorrect: false
-      explanation: 'This answer is not the first level in the hierarchy of reliability.'
+      explanation: "This answer isn't the first level in the hierarchy of reliability."
     - content: 'capacity/scale'
       isCorrect: false
-      explanation: 'This answer is not the first level in the hierarchy of reliability.'     
+      explanation: "This answer isn't the first level in the hierarchy of reliability."     
     - content: 'monitoring'
       isCorrect: true
       explanation: 'Correct.'     
