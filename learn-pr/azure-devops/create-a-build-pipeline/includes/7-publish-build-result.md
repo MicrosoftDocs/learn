@@ -36,7 +36,7 @@ In .NET Core, you can package your application as a .zip file. You can then use 
 
 1. When the pipeline completes, go back to the summary for the build.
 
-1. Under **Artifacts:** there is **1 published**.
+1. Under **Related** there is **1 published**.
 
     ![The summary of the build with times changes and artifacts](../media/7-artifacts.png)
 
@@ -44,11 +44,11 @@ In .NET Core, you can package your application as a .zip file. You can then use 
 
 1. Expand the drop folder.
 
-    You see a .zip file that contains your built application and its dependencies:
+    You see a *.zip* file that contains your built application and its dependencies:
 
     ![The packaged application in the Artifacts explorer](../media/7-artifacts-explorer.png)
 
-    If you want to try an optional exercise, you can download this .zip file to your computer and explore its contents. To do so, select the .zip file, select the download arrow that appears when you mouse over the zip file name.
+    If you want to try an optional exercise, you can download this *.zip* file to your computer and explore its contents. To do so, select the *.zip* file, select the download arrow that appears when you mouse over the *.zip* file name.
 
 ## Define variables to enhance readability
 
@@ -78,7 +78,7 @@ Take a moment to examine *azure-pipelines.yml*. Notice that these values are rep
 
 * The build configuration: `Release`
 * The location of the **wwwroot** directory: `Tailspin.SpaceGame.Web/wwwroot`
-* The .NET Core SDK version: `3.1.100`
+* The .NET Core SDK version: `3.1.300`
 
 You now use variables to define these values one time. You then reference the variables throughout the pipeline.
 
@@ -115,6 +115,6 @@ You now use variables to define these values one time. You then reference the va
 
     ![Azure Pipelines showing the .NET Core SDK task running in the pipeline](../media/7-dotnet-core-sdk-task.png)
 
-    As before, you can navigate to the build summary to see the **Artifacts** when the build completes.
+    As before, you can navigate to the build summary to see the artifact when the build completes.
 
 Congratulations! You've successfully used Azure Pipelines and created your first build artifact.
