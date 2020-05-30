@@ -154,7 +154,7 @@ If this sizing up doesn’t meet your requirements, depending on traffic
 characteristics, it may be suitable to scale out the reads to the database.
 Doing this will enable you to route read traffic to your Read Replica.
 
-_Note that with Azure SQL, if you’re using the Premium or Business Critical
+_With Azure SQL, if you’re using the Premium or Business Critical
 tiers, Read Scale Out is enabled by default. It cannot be enabled on basic
 or standard tiers._
 

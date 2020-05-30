@@ -42,7 +42,6 @@ The graphic below shows the different parts of the Log Analytics interface.
 
 :::image type="content" source="../media/log-analytics-user-interface.png" alt-text="Screenshot of the Log Analytics workspace in the Azure portal":::
 
-
 On the left is a section of the screen that makes sure you never get lost
 when using log analytics. It shows the tables you are potentially working
 with, and if you expand a section, you’ll see a listing of the fields in
@@ -93,7 +92,8 @@ Here are some examples of other common commands you might use instead of
 
     ```kusto
     requests
-    |take 10```
+    |take 10
+    ```
 
 -   To see records that have come in during the last half hour, you can use
     the following query:

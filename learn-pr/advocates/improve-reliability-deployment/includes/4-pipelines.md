@@ -25,10 +25,7 @@ of steps code goes through as changes are made during the development
 process prior to deploying it to production. Here is a graphic
 representation of sample steps in a simplified delivery pipeline.
 
-:::image type="content" source="../media/pipeline-stages.png"
-alt-text="Diagram with eight stages of a pipeline, four marked as
-Integration, four marked as Deployment, red indicator arrows pointing at
-Test and Review stages":::
+:::image type="content" source="../media/pipeline-stages.png" alt-text="Diagram with eight stages of a pipeline, four marked as Integration, four marked as Deployment, red indicator arrows pointing at Test and Review stages":::
 
 Let's walk through this pipeline step by step.
 
