@@ -394,18 +394,9 @@ This section adds code to send telemetry from a simulated sensor device.
           private static string s_certificateFileName = "C:\\Users\\<your user name>\\Documents\\cheese cave certs\\new-device.cert1.pfx";
     ```
 
-::: zone pivot="vscode"
+1. Set the app running. In Visual Studio Code, enter `dotnet run` in the terminal. In Visual Studio, select **Debug/Start without Debugging**.
 
-1. Set the app running. Enter `dotnet run` in the terminal.
-
-::: zone-end
-::: zone pivot="vstudio"
-
-1. Set the app running. Select **Debug/Start without Debugging**.
-
-::: zone-end
-
-[![Console output showing the first device running correctly](../media/iot-hub-provisioning-device1.png)](../media/iot-hub-provisioning-device1.png#lightbox)
+    [![Console output showing the first device running correctly](../media/iot-hub-provisioning-device1.png)](../media/iot-hub-provisioning-device1.png#lightbox)
 
 ### Create an app for a second device
 
@@ -413,7 +404,7 @@ This section adds code to send telemetry from a simulated sensor device.
 1. Change the leaf name from `new-device.cert1.pfx` to `new-device.cert2.pfx`.
 1. Set the app running.
 
-[![Console output showing the second device running correctly](../media/iot-hub-provisioning-device2.png)](../media/iot-hub-provisioning-device2.png#lightbox)
+    [![Console output showing the second device running correctly](../media/iot-hub-provisioning-device2.png)](../media/iot-hub-provisioning-device2.png#lightbox)
 
 ### Create an app for a third device
 
@@ -421,6 +412,6 @@ This section adds code to send telemetry from a simulated sensor device.
 1. Change the leaf path from `new-device.cert1.pfx` to `new-device.cert3.pfx`.
 1. Set the app running.
 
-[![Console output showing the third device running correctly](../media/iot-hub-provisioning-device3.png)](../media/iot-hub-provisioning-device3.png#lightbox)
+    [![Console output showing the third device running correctly](../media/iot-hub-provisioning-device3.png)](../media/iot-hub-provisioning-device3.png#lightbox)
 
 Great, a bit of repetitive work, but we now have our crowd of devices. The next, and final, step is to test our DPS resource and IoT Hub handle the assignments and telemetry correctly.
