@@ -42,10 +42,12 @@ Before we can go any further with the DPS resource, by adding enrollments, we mu
 
 The first time we create any X.509 certificates, we need to download some tools.
 
-1. Open a [Microsoft Azure Cloud Shell](https://shell.azure.com/?prompt=True), and select the **Bash** shell option. We need the Bash option, as the helper tools that you'll download next are written for Bash.
+1. Right click [Microsoft Azure Cloud Shell](https://shell.azure.com/?prompt=True), and select **Open link in new window**.
 
     > [!NOTE]
     > If you are given a choice, there is no need to choose the sandbox cloud shell, as we are not creating any resources.
+
+1. Ensure the **Bash** shell option is selected. We need the Bash option, as the helper tools that you'll download next are written for Bash.
 
 1. Run the following script. It creates a certificate directory in the shell storage, and downloads some helper scripts to it.
 
@@ -83,6 +85,9 @@ The first time we create any X.509 certificates, we need to download some tools.
      download ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem
 
     ```
+    >[!NOTE]
+    >Downloaded files will be saved to your `Downloads` folder.
+
 1. Create a new folder in your **Documents** folder, called "cheese cave certs", or something similar.
 
 1. Copy the certificate file you downloaded into the **cheese cave certs** folder.
