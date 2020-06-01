@@ -122,3 +122,8 @@ achievements:
   title: Transcribe speech in real time with Azure Cognitive Services
   summary: Transcribe speech in real time with Azure Cognitive Services
   iconUrl: /learn/achievements/data-ai/convert-speech-to-text.svg
+- uid: learn.data-ai.translate-speech-with-speech-services.trophy
+  type: trophy
+  title: Process and translate speech with Azure Cognitive Speech Services
+  summary: Process and translate speech with Azure Cognitive Speech Services
+  iconUrl: /learn/achievements/data-ai/translate-speech-with-speech-services.svg
