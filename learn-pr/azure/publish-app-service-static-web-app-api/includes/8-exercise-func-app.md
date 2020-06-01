@@ -204,7 +204,7 @@ Now it's time to watch your web app and Azure Functions project work together. S
 1. Run the Azure Functions app locally
 
    ```bash
-   npm start
+   func start
    ```
 
 ## Run the web app
