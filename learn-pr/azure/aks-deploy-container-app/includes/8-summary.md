@@ -18,3 +18,4 @@ Imagine how would it be to deploy this application on a VM or another environmen
 - [Trident's documentation on cluster architectures](https://netapp-trident.readthedocs.io/en/stable-v19.01/dag/kubernetes/kubernetes_cluster_architecture_considerations.html#cluster-architectures)
 - [Azure Service Principals](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?WT.mc_id=learndeploycontainerappsaks-learn-ludossan#create-a-service-principal)
 - [Kubernetes' Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
+- [AZ CLI command docs](https://docs.microsoft.com/cli/azure/aks?view=azure-cli-latest&WT.mc_id=learndeploycontainerappsaks-learn-ludossan#az-aks-create)
