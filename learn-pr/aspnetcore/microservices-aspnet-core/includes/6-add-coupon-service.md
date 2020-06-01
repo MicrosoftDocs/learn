@@ -72,7 +72,7 @@ An ASP.NET Core project for the coupon service has been provided in the *:::no-l
         The preceding change registers two HTTP health check endpoints with the ASP.NET Core routing system:
 
         * `/liveness` &ndash; A *liveness* endpoint that Kubernetes queries periodically to check for failures. Kubernetes provides liveness probes to detect applications that are failing and restarts them when they don't return success codes. When the coupon service starts up for the first time, there could be time-consuming tasks like setting up seed data in the database or awaiting RabbitMQ to boot up. To avoid restarts during this time, the liveness check filters the checks with the `self` tag, which returns HTTP status code 200 for every request.
-        * `/hc` &ndash; A *readiness* endpoint that Kubernetes queries to know when a service is ready to start accepting traffic. It returns HTTP status code 200 when all registered checks are successful. The same endpoint is also queried by an external health monitoring system like the *WebStatus* app. *WebStatus* provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
+        * `/hc` &ndash; A *readiness* endpoint that Kubernetes queries to know when a service is ready to start accepting traffic. It returns HTTP status code 200 when all registered checks are successful. The same endpoint is also queried by an external health monitoring system like the *:::no-loc text="WebStatus":::* app. *:::no-loc text="WebStatus":::* provides a dashboard to visualize configured health checks and the status of each. The [AspNetCore.HealthChecks.UI.Client](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI) NuGet package is used to generate the dashboard.
 
         In the following Kubernetes deployment configuration file, the liveness and readiness probes use HTTP GET requests to the above mentioned health endpoints to determine their status codes. Any HTTP status code greater than or equal to 200 and less than 400 indicates success. Any other code indicates failure.
 
@@ -138,10 +138,10 @@ An ASP.NET Core project for the coupon service has been provided in the *:::no-l
     popd
     ```
 
-1. Open *:::no-loc text="src/Services/Coupon/Coupon.API/Dockerfile":::* in the Cloud Shell editor. Notice the following things in this *Dockerfile*:
+1. Open *:::no-loc text="src/Services/Coupon/Coupon.API/Dockerfile":::* in the Cloud Shell editor. Notice the following things in this *:::no-loc text="Dockerfile":::*:
 
     * The ASP.NET Core runtime image is used as the base image of the multistage build.
-    * The .NET Core SDK image is acquired to support the running of the following .NET Core CLI commands against the *Coupon.API* project:
+    * The .NET Core SDK image is acquired to support the running of the following .NET Core CLI commands against the *:::no-loc text="Coupon.API":::* project:
         * `dotnet restore`: Restores the project's NuGet packages.
         * `dotnet build`: Builds the project in release mode. The build artifacts are written to the *:::no-loc text="app/build/":::* directory of an intermediate image.
         * `dotnet publish`: Publishes the project in release mode. The published bundle is written to the *:::no-loc text="app/publish/":::* directory of the final image.
@@ -159,13 +159,13 @@ An ASP.NET Core project for the coupon service has been provided in the *:::no-l
 
     The preceding script:
 
-    * Uncomments HTML markup in the *WebSPA* checkout and order details Angular components to support accepting coupon codes and displaying discount amounts, respectively. The following HTML markup in the *:::no-loc text="Web/WebSPA/Client/src/modules/orders":::* directory is uncommented:
+    * Uncomments HTML markup in the *:::no-loc text="WebSPA":::* checkout and order details Angular components to support accepting coupon codes and displaying discount amounts, respectively. The following HTML markup in the *:::no-loc text="Web/WebSPA/Client/src/modules/orders":::* directory is uncommented:
 
-        *orders-detail/orders-detail.component.html*:
+        *:::no-loc text="orders-detail/orders-detail.component.html":::*:
 
         :::code language="html" source="../code/src/Web/WebSPA/Client/src/modules/orders/orders-detail/orders-detail.component.html":::
 
-        *orders-new/orders-new.component.html*:
+        *:::no-loc text="orders-new/orders-new.component.html":::*:
 
         :::code language="html" source="../code/src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.component.html":::
 
@@ -191,7 +191,7 @@ Container images are hosted in container registries. For many scenarios, a publi
 
 The following diagram depicts the relationships between Docker container images, container registries such as ACR, and Kubernetes/AKS deployments.
 
-:::image type="content" source="../media/temp/image-acr-aks.png" alt-text="A container image is created by a developer, sent to ACR, and retrieved by AKS" border="true" lightbox="../media/temp/image-acr-aks.png":::
+:::image type="content" source="../media/6-add-coupon-service/acr-aks.png" alt-text="A container image is created by a developer, sent to ACR, and retrieved by AKS" border="true" lightbox="../media/6-add-coupon-service/acr-aks.png":::
 
 In the preceding diagram:
 
@@ -199,20 +199,20 @@ In the preceding diagram:
 1. The developer sends Kubernetes YAML configuration files to AKS. The configuration specifies which container images are required.
 1. AKS retrieves the images from ACR and uses the images to build and run the containers.
 
-You don't have permissions to make changes to Microsoft's ACR. Consequently, you must host the coupon service container image and the modified *WebSPA* app container image on your private ACR.
+You don't have permissions to make changes to Microsoft's ACR. Consequently, you must host the coupon service container image and the modified *:::no-loc text="WebSPA":::* app container image on your private ACR.
 
 > [!NOTE]
 > The `helm install` command used later in the module specifies which container registry to use when the charts are installed to Kubernetes/AKS.
 
 ## Build the coupon service in ACR
 
-Run the following script in the command shell to build the coupon service and *WebSPA* app container images and host them in ACR:
+Run the following script in the command shell to build the coupon service and *:::no-loc text="WebSPA":::* app container images and host them in ACR:
 
 ```bash
 ./deploy/k8s/build-to-acr.sh
 ```
 
-The preceding script builds the container images in ACR using the `az acr build` command with the provided *Dockerfile* files for the *Coupon.API* and *WebSPA* projects.
+The preceding script builds the container images in ACR using the `az acr build` command with the provided *:::no-loc text="Dockerfile":::* files for the *:::no-loc text="Coupon.API":::* and *:::no-loc text="WebSPA":::* projects.
 
 Note the solution isn't being built in your Cloud Shell instance. The build occurs in the cloud when the container image is sent to ACR. Build output is displayed in the command shell. The `az acr build` command used by the script is displayed in the command shell with the correct parameters. The command resembles the following example:
 
@@ -227,7 +227,7 @@ In the preceding example:
 
 * The `--registry` parameter specifies the name of the container registry to use.
 * The `--image` parameter specifies the name and tag of the image in the format `<repo url>/<name>:<tag>`.
-* The `--file` parameter specifies the relative path of *Dockerfile*.
+* The `--file` parameter specifies the relative path of *:::no-loc text="Dockerfile":::*.
 * The final parameter, which is positional and not indicated by a command-line flag, specifies the location of the local source code directory. In this case, the script uses the directory in which it's currently running, indicated by `.`.
 
 In the next unit, you'll update the AKS deployment with your modifications.
