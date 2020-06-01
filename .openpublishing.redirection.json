@@ -1869,6 +1869,11 @@
       "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/4-viewing-access-keys-and-endpoints.md",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/translate-speech-with-speech-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/paths/process-translate-speech-azure-cognitive-speech-services/",
+      "redirect_document_id": true
     }
   ]
 }

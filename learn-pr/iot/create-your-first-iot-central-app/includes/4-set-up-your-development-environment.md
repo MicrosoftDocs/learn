@@ -56,11 +56,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     > [!IMPORTANT]
     > The last element of the connection string is the Primary Key. Verify that the connection string in your text file ends with an exact copy of the Primary Key, and if not, correct the copy you've made of the correction string in your text document.
 
-1. The connection string you'll use in the Node.js app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text document, so you've one line containing a string that looks similar to the following:
-
-    ```js
-    HostName=iotc-<guid>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>
-    ```
+1. The connection string you'll use in the Node.js app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text document, so you've one line containing a string that looks _similar_ to the following: `HostName=iotc-<guid>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>`.
 
 1. Save off your text file.
 
