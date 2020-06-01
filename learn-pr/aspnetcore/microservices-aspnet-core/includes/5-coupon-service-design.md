@@ -4,7 +4,7 @@ In this unit, you learn about the business requirements for the requested coupon
 
 There are many ways to implement a coupon code feature in an e-commerce app. For simplicity, the following business requirements have been provided:
 
-* To obtain a discount, the user can apply a coupon code from the checkout page. All coupon codes are prefixed with *DISC-* and are suffixed with an unsigned integer. The integer indicates the US dollar amount to be deducted from the order total. For example, *DISC-30* deducts $30 USD.
+* To obtain a discount, the user can apply a coupon code from the checkout page. All coupon codes are prefixed with *:::no-loc text="DISC-":::* and are suffixed with an unsigned integer. The integer indicates the US dollar (USD) amount to be deducted from the order total. For example, *:::no-loc text="DISC-30":::* deducts 30 USD.
 * The coupon service must validate that the coupon code is available before allowing it to be used.
 * Once the payment is processed, the ordering service should request validation for the coupon during the order process.
 * Upon validation, the coupon should be assigned to the order and won't be available for any other order.
@@ -24,7 +24,7 @@ The coupon service is implemented like a CRUD service, and the boundaries are cl
 |`Consumed`|A flag indicating whether the coupon code has been used.|
 |`OrderId` |The unique identifier of the associated order to which the coupon code has been applied.|
 
-These design choices may seem obvious, but note that the `Coupon` model is a centerpiece of all business logic in the *Coupon.API* project. The coupon service:
+These design choices may seem obvious, but note that the `Coupon` model is a centerpiece of all business logic in the *:::no-loc text="Coupon.API":::* project. The coupon service:
 
 * Only concerns itself with the domain of coupons.
 * Relies on the other services to interact with other domains, such as determining whether an order is valid.
@@ -43,7 +43,7 @@ Microservice architectures are technology agnostic. This characteristic gives de
 
 Orders submitted through the UI are routed to the ordering service via the API gateway. The ordering service then validates the coupon with the coupon service.
 
-:::image type="content" source="../media/temp/coupon-ordering-event-bus.png" alt-text="event messaging flow between the ordering and coupon services" border="true" lightbox="../media/temp/coupon-ordering-event-bus.png":::
+:::image type="content" source="../media/5-coupon-service-design/coupon-ordering-event-bus.png" alt-text="event messaging flow between the ordering and coupon services" border="true" lightbox="../media/5-coupon-service-design/coupon-ordering-event-bus.png":::
 
 1. The ordering service raises an event of type `OrderStatusChangedToAwaitingCouponValidationIntegrationEvent`. The event:
     * Indicates that there's an order awaiting coupon validation.
