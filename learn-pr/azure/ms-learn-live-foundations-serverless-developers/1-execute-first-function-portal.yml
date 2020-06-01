@@ -1,0 +1,23 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ms-learn-live-foundations-serverless-dev.1-execute-first-function-portal
+
+title: Create Your First Function in Azure Portal
+
+metadata:
+  title: Create Your First Function in Azure Portal
+  description: Create Your First Function in Azure Portal
+  
+  ms.date: 05/4/2020
+  
+  author: krumelur
+
+  ms.author: renrup
+
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+
+durationInMinutes: 10
+
+content: |
+  [!include[](includes/1-execute-first-function-portal.md)]
