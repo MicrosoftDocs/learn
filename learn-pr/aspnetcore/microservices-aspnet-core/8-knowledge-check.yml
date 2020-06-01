@@ -8,7 +8,6 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  no-loc: [Kubernetes, liveness]
 title: Knowledge check
 durationInMinutes: 5
 content: |

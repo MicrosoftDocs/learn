@@ -8,7 +8,6 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  no-loc: ["Coupon.API", DISC, WebSPA, WebStatus]
 title: Exercise - Deploy changes to AKS
 durationInMinutes: 7
 content: |
