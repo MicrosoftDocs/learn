@@ -73,7 +73,7 @@ The __Networking__ tab is the place where you'll configure how your cluster will
 
     :::image type="content" source="../media/3-network-settings.png" alt-text="Network tab":::
 
-### Finish
+## Finish
 
 Once all is done, click the __Review + Create__ button and wait a few seconds while Azure validates your deployment, once the __Create__ blue button appears, click it, then wait a few minutes for the deployment to finish.
 
@@ -84,13 +84,99 @@ When it finishes, you should see a notification with a button named __Go to Reso
 :::zone-end
 
 :::zone pivot="bash"
-    shell content
+
+1. Before creating an AKS cluster, it's necessary to create an Azure Resource Group, this group will hold all of the created resources:
+
+    ```bash
+    az group create --name contoso-aks --location eastus
+    ```
+
+    If the group has been created successfully, you will receive the following response:
+
+    ```json
+    {
+      "id": "/subscriptions/<guid>/resourceGroups/contoso-aks",
+      "location": "eastus",
+      "managedBy": null,
+      "name": "contoso-aks",
+      "properties": {
+        "provisioningState": "Succeeded"
+      },
+      "tags": null
+    }
+    ```
+
+    Then it's time to create the cluster.
+
+2. Creating an AKS using bash resumes in issuing a single command using Azure CLI. Open your preferred terminal (or use CloudShell) and issue the following command:
+
+    ```bash
+    az aks create --resource-group contoso-aks --name contoso-kubernetes-cluster --node-count 3 --enable-addons http_application_routing --generate-ssh-keys --dns-name-prefix contoso-kubernetes --node-vm-size Standard_B2s
+    ```
+
 :::zone-end
 
 :::zone pivot="powershell"
-    powershell content
+
+1. Before creating an AKS cluster, it's necessary to create an Azure Resource Group, this group will hold all of the created resources:
+
+    ```powershell
+    az group create --name contoso-aks --location eastus
+    ```
+
+    If the group has been created successfully, you will receive the following response:
+
+    ```json
+    {
+      "id": "/subscriptions/<guid>/resourceGroups/contoso-aks",
+      "location": "eastus",
+      "managedBy": null,
+      "name": "contoso-aks",
+      "properties": {
+        "provisioningState": "Succeeded"
+      },
+      "tags": null
+    }
+    ```
+
+    Then it's time to create the cluster.
+
+2. Creating an AKS using powershell resumes in issuing a single command using Azure CLI. Open your preferred terminal (or use CloudShell) and issue the following command:
+
+    ```powershell
+    az aks create --resource-group contoso-aks --name contoso-kubernetes-cluster --node-count 3 --enable-addons http_application_routing --generate-ssh-keys --dns-name-prefix contoso-kubernetes --node-vm-size Standard_B2s
+    ```
+
 :::zone-end
 
-Linking with powershell/bash/zsh through AZCLI
+## Linking with Kubectl
 
-Make learners execute `kubectl get nodes` to see the cluster working
+1. To access the cluster it's necessary to have `kubectl` installed. Kubectl is the default CLI tool to access Kubernetes' API and issue commands to it. To do it, we need Azure CLI, and it already has built-in commands for it!
+
+    ```bash
+    az aks install-cli
+    ```
+
+    Issuing this command, Azure CLI will install `kubectl` in your OS.
+
+2. Run the following command to check if it has been installed successfully:
+
+    ```bash
+    kubectl version
+    ```
+
+3. Link your kubernetes cluster with `kubectl` with the following command
+
+    ```bash
+    az aks get-credentials --name contoso-kubernetes-cluster --resource-group contoso-aks
+    ```
+
+## Testing the installation
+
+1. Let's check if the cluster has been installed correctly by issuing the command:
+
+    ```bash
+    kubectl get nodes
+    ```
+
+    If the cluster is correct you should receive a list of three available nodes.
