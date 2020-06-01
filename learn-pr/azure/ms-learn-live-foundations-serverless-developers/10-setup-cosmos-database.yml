@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.ms-learn-live-foundations-serverless-dev.10-setup-cosmos-db
+uid: learn.azure.ms-learn-live-foundations-serverless-dev.10-setup-cosmos-database
 
 title: Setup a Cosmos DB Instance
 
@@ -22,4 +22,4 @@ interactive: bash
 durationInMinutes: 10
 
 content: |
-  [!include[](includes/10-setup-cosmos-db.md)]
+  [!include[](includes/10-setup-cosmos-database.md)]

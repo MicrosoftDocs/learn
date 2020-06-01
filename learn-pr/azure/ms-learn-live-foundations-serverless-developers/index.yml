@@ -73,9 +73,9 @@ units:
 - learn.azure.ms-learn-live-foundations-serverless-dev.7-return-data-to-caller
 - learn.azure.ms-learn-live-foundations-serverless-dev.8-post-complex-data
 - learn.azure.ms-learn-live-foundations-serverless-dev.9-add-remaining-endpoints
-- learn.azure.ms-learn-live-foundations-serverless-dev.10-setup-cosmos-db
-- learn.azure.ms-learn-live-foundations-serverless-dev.11-configure-cosmos-db-bindings
-- learn.azure.ms-learn-live-foundations-serverless-dev.12-configure-cosmos-db-output-bindings
+- learn.azure.ms-learn-live-foundations-serverless-dev.10-setup-cosmos-database
+- learn.azure.ms-learn-live-foundations-serverless-dev.11-configure-cosmos-database-bindings
+- learn.azure.ms-learn-live-foundations-serverless-dev.12-configure-cosmos-database-output-bindings
 - learn.azure.ms-learn-live-foundations-serverless-dev.13-secure-during-development
 - learn.azure.ms-learn-live-foundations-serverless-dev.14-deploy-with-github-actions
-- learn.azure.ms-learn-live-foundations-serverless-dev.15-configure-cors
+- learn.azure.ms-learn-live-foundations-serverless-dev.15-configure-cross-origin-resource-sharing
