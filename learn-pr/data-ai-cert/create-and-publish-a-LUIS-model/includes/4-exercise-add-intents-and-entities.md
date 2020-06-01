@@ -52,7 +52,7 @@ Next, let's create the entities we need to capture specific requests from users.
 
 1. Select **Machine learned** for **Entity type**. Then select **Create**.
 
-:::image type="content" source="../media/select-facet.png: alt-text="Adding an entity named facet, of type Machine learned.":::
+:::image type="content" source="../media/select-facet.png" alt-text="Adding an entity named facet, of type Machine learned.":::
    
 ## Map search subjects to the facet entity
 
