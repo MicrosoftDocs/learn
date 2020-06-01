@@ -32,16 +32,13 @@ This option disables the pipeline so that it does not process further build requ
 
 To disable the pipeline:
 
-1. From Azure Pipelines, navigate to your pipeline.
-1. Select **Edit**.
+1. In Azure Pipelines, navigate to your pipeline.
+1. From the drop-down menu, select **Settings**:
 
-    ![Screenshot of Azure DevOps Pipelines with a highlighted Edit button next to the default Run pipeline button.](../../shared/media/azure-pipelines-edit-button.png)
-1. Select **Edit**. From the menu in the upper corner, select **Settings**.
-
-    ![Screenshot of Azure DevOps Pipelines with a highlighted Settings menu option under the Run button.](../../shared/media/azure-pipelines-settings-button.png)
+    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
-    Your pipeline no longer processes build requests.
+    Your pipeline will no longer process build requests.
 
 ### Option 2: Delete the Azure DevOps project
 
