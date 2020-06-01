@@ -52,7 +52,7 @@ If the Azure App Service Migration Assistant finds issues when assessing your we
 - Update the application by temporarily disabling the feature that is blocking the migration.  The Migration Assistant can guide you to do this.
 - Deploy the application "as is" to an Azure Virtual Machine. While you would not gain the benefits of using Azure App Services and would be required to maintain the operating system, you would no longer need to maintain the hardware, and you would have a single point of management for all your web services.
 
-The Azure App Service Migration Assistant wiki contains suggested remedies for many of the issues found during an assessment.  For more information, see:
+The Azure App Service Migration Assistant wiki contains "potential remediation steps" for many of the issues found during an assessment.  For more information, see:
 
 [Azure App Service Migration Assistant wiki](https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks?azure-portal=true)
 
