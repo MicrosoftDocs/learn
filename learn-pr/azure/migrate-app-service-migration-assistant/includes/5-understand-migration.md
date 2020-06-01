@@ -28,7 +28,7 @@ After a successful migration, you'll need to perform any post-migration tasks.  
 
 You may also decide to change the App Service hosting plan and other settings like auto-scaling and deployment slots.  
 
-## What is the difference between an App Service Plan and an App Service instance?
+## What is the difference between an App Service plan and an App Service instance?
 
 During migration, the Migration Assistant will:
 
@@ -61,11 +61,11 @@ You can think of the App Service plan as the scale unit of the App Service apps.
 
 The Azure App Service Migration Assistant does not migrate your database to Azure SQL.  In fact, you're not required to migrate your database to Azure at all.  In that case, the Migration Assistant can help you set up a Hybrid connection to your on premises database as an optional step.  If you select the "setup a hybrid connection" option, the Migration Assistant will prompt you to download and run the Hybrid Connection Manager (HCM) on your server.  The HCM connects your web app running in Azure App Service to the Service Bus Relay to facilitate a connection with your on premises database end point.  For more information, see:
 
-[Azure App Service Hybrid Connections](https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections?azure-portal=true)
+[Azure App Service Hybrid Connections](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections?azure-portal=true)
 
 To perform a migration, you can use the Data Migration Assistant.  For more information, see:
 
-[Overview of Data Migration Assistant](https://docs.microsoft.com/en-us/sql/dma/dma-overview?view=sql-server-2017)
+[Overview of Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=sql-server-2017)
 
 ## What is an Azure Migrate Project?
 
