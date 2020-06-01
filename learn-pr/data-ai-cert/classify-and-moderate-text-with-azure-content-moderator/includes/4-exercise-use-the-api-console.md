@@ -5,7 +5,7 @@ Now that you have a resource available in Azure for content moderation, and you 
 1. Note the query parameters that you can select for your test. For the first test run, ensure that the classify, PII, and autocorrect options are set to false.
 1. Paste your subscription key into the **Ocp-Apim-Subscription-Key** box.
 
-    ![Paste subscription key into Ocp-Apim-Subscription-Key box](../media/4-exercise-paste-key.png)
+    ![Paste subscription key into Ocp-Apim-Subscription-Key box](../media/4-exercise-paste-key.PNG)
 
 1. Leave the sample text in place, and then click **Send**.
 
