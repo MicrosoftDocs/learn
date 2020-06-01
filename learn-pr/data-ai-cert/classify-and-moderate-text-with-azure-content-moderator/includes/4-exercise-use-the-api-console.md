@@ -2,7 +2,7 @@ Now that you have a resource available in Azure for content moderation, and you 
 
 1. Go to the [Content Moderator API Reference page](https://westus.dev.cognitive.microsoft.com/docs/services/57cf753a3f9b070c105bd2c1/operations/57cf753a3f9b070868a1f66f). This page is available in a number of regions for testing in the API console.
 1. For the geographic region closest to you, select the appropriate location button to open the console.
-1. Note the query parameters that you can select for your test. For the first test run, ensure that the classify, PII, and autocorrect options are set to false.
+1. Note the query parameters that you can select for your test. For the first test run, ensure that the classify option is set to false. Leave the remaining values at their default.
 1. Paste your subscription key into the **Ocp-Apim-Subscription-Key** box.
 
     ![Paste subscription key into Ocp-Apim-Subscription-Key box](../media/4-exercise-paste-key.PNG)
