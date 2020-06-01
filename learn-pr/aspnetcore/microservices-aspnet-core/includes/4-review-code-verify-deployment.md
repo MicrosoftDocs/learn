@@ -16,8 +16,8 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 |-------------------|-------------|
 | *:::no-loc text="Aggregators/":::* | Services to aggregate across multiple microservices for certain cross-service operations. An HTTP aggregator is implemented in the *:::no-loc text="ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::* project. |
 | *:::no-loc text="BuildingBlocks/":::* | Services that provide cross-cutting functionality, such as the app's event bus used for inter-service events. |
-| *:::no-loc text="Services/":::* | These projects implement the business logic of the app. Each microservice is autonomous with its own data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), DDD, and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS). The new *Coupon.API* project has been provided, but it's incomplete. |
-| *:::no-loc text="Web/":::* | ASP.NET Core apps that implement user interfaces:<br>*WebSPA* is a storefront UI built with Angular.<br>*WebStatus* is the health checks dashboard for monitoring the operational status of each service. |
+| *:::no-loc text="Services/":::* | These projects implement the business logic of the app. Each microservice is autonomous with its own data store. They showcase different software patterns, including **C**reate-**R**ead-**U**pdate-**D**elete (CRUD), DDD, and **C**ommand and **Q**uery **R**esponsibility **S**egregation (CQRS). The new *:::no-loc text="Coupon.API":::* project has been provided, but it's incomplete. |
+| *:::no-loc text="Web/":::* | ASP.NET Core apps that implement user interfaces:<br>*:::no-loc text="WebSPA":::* is a storefront UI built with Angular.<br>*:::no-loc text="WebStatus":::* is the health checks dashboard for monitoring the operational status of each service. |
 
 ## Verify deployment to AKS
 
@@ -41,16 +41,16 @@ You can begin exploring these services (when available):
 
 Even though the app has been deployed, it may take a few minutes to come online. Verify the app is deployed and online with the following steps:
 
-1. Select the **General application status** link in the command shell to view the *WebStatus* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically every 10 seconds.
+1. Select the **General application status** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically every 10 seconds.
 
-    :::image type="content" source="../media/temp/health-check.png" alt-text="Health check page" border="true" lightbox="../media/temp/health-check.png":::
+    :::image type="content" source="../media/4-review-code-verify-deployment/health-check.png" alt-text="Health check page" border="true" lightbox="../media/4-review-code-verify-deployment/health-check.png":::
 
     > [!NOTE]
     > While the app is starting up, you might initially receive an HTTP 503 response from the server. You may retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
 
-1. Once all the services are healthy, select the **Web SPA application** link in the command shell to test the *eShopOnContainers* web app. The following page appears:
+1. Once all the services are healthy, select the **Web SPA application** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../media/temp/eshop-spa.png" alt-text="eShop SPA" border="true" lightbox="../media/temp/eshop-spa.png":::
+    :::image type="content" source="../media/4-review-code-verify-deployment/eshop-spa.png" alt-text="eShop SPA" border="true" lightbox="../media/4-review-code-verify-deployment/eshop-spa.png":::
 
 1. Complete a purchase as follows:
     1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page.
@@ -58,6 +58,6 @@ Even though the app has been deployed, it may take a few minutes to come online.
     1. Select the shopping bag icon in the upper right.
     1. Select **CHECKOUT**, then select **PLACE ORDER** to complete the purchase.
 
-    :::image type="content" source="../media/temp/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/temp/eshop-spa-shopping-bag.png":::
+    :::image type="content" source="../media/4-review-code-verify-deployment/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/4-review-code-verify-deployment/eshop-spa-shopping-bag.png":::
 
-In this unit, you've seen the *eShopOnContainers* app's existing checkout process. You'll review the design of the new coupon service in the next unit.
+In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll review the design of the new coupon service in the next unit.

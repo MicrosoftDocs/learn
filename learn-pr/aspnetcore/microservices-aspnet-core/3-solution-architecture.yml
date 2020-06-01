@@ -8,7 +8,6 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  no-loc: ["Coupon.API", Docker, eShopOnContainers, "Gateway Aggregation", "IdentityServer 4", Kubernetes, NGINX, Seq, "Startup.cs", "Web.Shopping.HttpAggregator", WebSPA, WebStatus]
 title: Review the solution architecture
 durationInMinutes: 8
 content: |

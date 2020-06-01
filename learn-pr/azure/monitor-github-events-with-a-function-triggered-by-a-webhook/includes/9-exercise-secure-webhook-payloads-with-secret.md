@@ -33,7 +33,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 1. Add `sha1=` to the start of the key, so that it matches the format of `x-hub-signature` in the request header. Add the following code to your function.
 
     ```JavaScript
-    var shaSignature =  'sha1=${signature}';
+    var shaSignature = `sha1=${signature}`;
     ```
 
 1. Add the following code to retrieve the GitHub signature from the request header: 
