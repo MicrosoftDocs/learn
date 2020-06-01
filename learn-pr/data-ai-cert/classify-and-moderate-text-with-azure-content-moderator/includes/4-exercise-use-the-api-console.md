@@ -23,7 +23,7 @@ You will see the that the email, IP address, phone, and address values are under
 
    Note that there is now a new JSON array section title **Classification**.  It indicates that a review is recommended and displays three categories with score values.  The categories are pertaining to the text content that may be undesirable. 
    - Category 1 - content could be sexually explicit or adult related
-   - Category 2 - language may be considered secually suggestive or mature in certain situations
+   - Category 2 - language may be considered sexually suggestive or mature in certain situations
    - Category 3 - potentially offensive language
 
 1. To run additional tests, enter some of your own text values from an existing document and run the tests again to see the results returned.
