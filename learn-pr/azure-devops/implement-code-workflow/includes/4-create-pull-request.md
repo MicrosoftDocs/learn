@@ -123,9 +123,11 @@ Here, you create a pull request for your branch.
     ![The compare to base dropdowns](../media/4-github-set-base.png)
 
     > [!IMPORTANT]
-    > This step is important because you can't merge your changes into the Microsoft repository. Make sure that the base repository points to your repository and not MicrosoftDocs.
+    > This step is important because you can't merge your changes into the Microsoft repository. Make sure that the base repository points to your GitHub account and not MicrosoftDocs.
     >
-    > When you work directly with your own repository, and not a fork, your `master` branch is selected by default.
+    > If you end up with a pull request against MicrosoftDocs, simply close the pull request and repeat these steps.
+
+    This process involves an extra step because you're working from a forked repository. When you work directly with your own repository, and not a fork, your `master` branch is selected by default.
 
 1. Enter a title and description for your pull request.
 
@@ -147,6 +149,9 @@ Here, you create a pull request for your branch.
     ![GitHub showing a pending build](../media/4-github-build-pending.png)
 
     Just like when you push a branch to GitHub, a pull request, by default, triggers Microsoft Azure Pipelines to build your application.
+
+    > [!TIP]
+    > If you don't see the build status appear right away, wait a few moments or refresh the page.
 
 1. Optionally, select the **Details** link, and then trace the build as it moves through the pipeline.
 

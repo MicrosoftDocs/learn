@@ -150,8 +150,8 @@ Here you build and run the web application locally to verify that the applicatio
     ![The Space Game website](../media/5-space-game-top.png)
 
     > [!TIP]
-    > In your browser, if you see an error that's related to a certificate error:
-    > 1. In your terminal, use Ctrl+C to stop the application.
+    > In your browser, if you see an error that's related to a privacy or certificate error:
+    > 1. In your terminal, use <kbd>Ctrl+C</kbd> to stop the application.
     > 1. Run `dotnet dev-certs https --trust`. 
     > 1. When prompted, select **Yes**. For more information, see the blog post [Developing locally with ASP.NET Core under HTTPS, SSL, and self-signed certificates](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true).
     > 1. After your computer trusts your local SSL certificate, run the `dotnet run` command again.
