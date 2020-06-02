@@ -40,6 +40,6 @@ Blazor WebAssembly requires a modern desktop or mobile browser. The following br
 
 ## Blazor WebAssembly development requirements
 
-You can build Blazor WebAssembly applications by using the latest version of Visual Studio 2019, Visual Studio for Mac, or Visual Studio Code. In this module, you'll use Visual Studio Code.
+You can build Blazor WebAssembly apps by using the latest version of Visual Studio 2019, Visual Studio for Mac, or Visual Studio Code. In this module, you'll use Visual Studio Code.
 
 Whatever your development environment, you need to install the .NET Core 3.1 SDK. After installation, you'll have everything you need to start building Blazor apps. You'll install all of the requirements to build a Blazor WebAssembly app with Visual Studio Code in the next exercise.

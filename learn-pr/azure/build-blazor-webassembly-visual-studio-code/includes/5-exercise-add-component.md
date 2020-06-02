@@ -87,7 +87,7 @@ Add an HTML table to your calculator UI.
     <button class="btn btn-primary">Calculate</button>
     ```
 
-### Run the application (optional)
+### Run the app (optional)
 
 1. In the Visual Studio Code terminal, enter **dotnet run** to run the app.
 

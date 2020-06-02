@@ -10,7 +10,7 @@ Install .NET Core 3.1 by downloading the latest version for your operating syste
 
 ## Install Visual Studio Code extensions
 
-To develop Blazor WebAssembly applications, install two Visual Studio Code extensions: the Microsoft C# extension and the JavaScript debugger extension.
+To develop Blazor WebAssembly apps, install two Visual Studio Code extensions: the Microsoft C# extension and the JavaScript debugger extension.
 
 ### Install the C# for Visual Studio Code extension
 
