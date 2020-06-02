@@ -26,7 +26,7 @@ Here you'll set up the route for your new page and add a link to your side menu.
 
 1. Open CompoundInterest.razor.
 
-1. Add the **@page** directive **@page "/compoundinterest"**.
+1. Add the directive **@page "/compoundinterest"**.
 
 1. Add the H1 header **\<h1\>Compound Interest\</h1\>**.
 
