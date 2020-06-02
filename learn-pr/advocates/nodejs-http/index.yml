@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.node-http
+metadata:
+  title: Introduction to 
+  description: Learn how to 
+  ms.date: 02/06/2020
+  author: "softchris"
+  ms.author: "chnoring"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to 
+summary: Learn how to 
+abstract: |
+  In this module you will:
+  - Learn about X
+iconUrl: /learn/achievements/undefined.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- vs
+prerequisites: None
+units:
+- learn.node-http.1-introduction
+- learn.node-http.2-express
+- learn.node-http.3-exercise-express
+- learn.node-http.4-knowledge-check
+- learn.node-http.5-summary
+
+badge:
+  uid: learn.node-http.badge
