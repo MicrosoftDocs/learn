@@ -4,7 +4,7 @@ In this exercise, you'll add your C# logic to your compound interest Razor compo
 
 1. Open CompoundInterest.razor.
 
-1. Below the table definition, add a `@code` directive with braces.
+1. Below the table definition, add `@code` markup with braces.
 
     ```cshtml
     @code
@@ -15,9 +15,9 @@ In this exercise, you'll add your C# logic to your compound interest Razor compo
 
 ## Add member variables for compound interest calculation
 
-Add several C# variables to store input values from the user.
+Add several C# variables to store input values from a user.
 
-1. Add the following within the `@code` markup.
+1. Add the following code within the `@code` markup.
 
     ```cshtml
     @code
@@ -46,7 +46,7 @@ Add several C# variables to store input values from the user.
 
 You're now ready to bind the variables you defined in the `@code` markup to your HTML input fields.
 
-1. Use the `@bind` markup on each input field to bind the appropriate variable.
+1. Use `@bind` markup on each input field to bind the appropriate variable.
 
     ```cshtml
     <tr>
@@ -75,12 +75,12 @@ You're now ready to bind the variables you defined in the `@code` markup to your
 
 ## Run the app
 
-1. In the Visual Studio Code terminal, enter **dotnet run** to launch the app.
+1. In the Visual Studio Code terminal, enter **dotnet run** to run the app.
 
 1. In a web browser, go to https://localhost:5001.
 
-1. Use the calculator by changing the input parameters and selecting the **Calculate** button.
+1. Use the calculator by changing the input parameters and selecting **Calculate**.
 
-Congratulations, you successfully created a Razor component with HTML, C# logic, binding and an event.
+Congratulations on successfully creating a Razor component with HTML, C# logic, binding, and an event.
 
 ![Screenshot showing the Blazor app running in a browser](../media/calculator-app.png)

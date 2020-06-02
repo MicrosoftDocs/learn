@@ -1,4 +1,4 @@
-In this exercise, you'll add a new Razor page and create the UI for the compound interest calculator. Open the folder for the compound interest project you created in the previous exercise.
+In this exercise, you'll add a new Razor page and create the UI for the compound interest calculator.
 
 ## Open the compound interest project in Visual Studio Code
 
@@ -8,7 +8,7 @@ In this exercise, you'll add a new Razor page and create the UI for the compound
 
 1. If Visual Studio Code prompts you to install required assets, select **Yes**.
 
-    ![Screenshot showing Visual Studio Code prompting to install required assets to build and debug](../media/missing-assets-visual-studio-code.png)
+    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug](../media/missing-assets-visual-studio-code.png)
 
 ## Create a new Razor page for your calculator
 
@@ -16,25 +16,25 @@ In this exercise, you'll add a new Razor page and create the UI for the compound
 
 1. Select **Pages** to view the existing Razor pages.
 
-1. Right-click **Pages** and select **New File**.
+1. Select and hold (or right-click) **Pages** and select **New File**.
 
-1. Name the new page **CompoundInterest.razor**.
+1. Name the new page CompoundInterest.razor.
 
 ## Add the CompoundInterest page to the app navigation
 
 Here you'll set up the route for your new page and add a link to your side menu.
 
-1. Open **CompoundInterest.razor**.
+1. Open CompoundInterest.razor.
 
 1. Add the **@page** directive **@page "/compoundinterest"**.
 
 1. Add the H1 header **\<h1\>Compound Interest\</h1\>**.
 
-1. Open the **Shared** folder in the project explorer.
+1. Open the Shared folder in the project explorer.
 
 1. Open NavMenu.razor.
 
-1. Add a fourth list item with the **href** attribute set to **compoundinterest** and the title set to **Compound Interest**.
+1. Add a fourth list item with the `href` attribute set to `compoundinterest` and the title set to `Compound Interest`.
 
     ```cshtml
     <li class="nav-item px-3">
@@ -44,21 +44,21 @@ Here you'll set up the route for your new page and add a link to your side menu.
     </li>
     ```
 
-### Run the app (optional) 
+### Run the app (optional)
 
 1. In the Visual Studio Code terminal, enter **dotnet run** to run the app.
 
-1. Open a web browser to **https://localhost:5001**.
+1. In a web browser, go to https://localhost:5001.
 
-    ![Screenshot showing the Blazor app running in the browser](../media/create-new-component.png)
+    ![Screenshot showing the Blazor app running in a browser](../media/create-new-component.png)
 
 ## Add HTML UI
 
 Add an HTML table to your calculator UI.
 
-1. Add a 2&times;4 HTML table.
+1. Add a 2 &times; 4 HTML table.
 
-1. Add text in the left column for **Initial Principal**, **Years**, **Annual Interest Rate**, and **Total**.
+1. Add text in the leftmost column for `Initial Principal`, `Years`, `Annual Interest Rate`, and `Total`.
 
     ```cshtml
     <table class="table">

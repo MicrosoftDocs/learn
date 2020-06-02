@@ -1,8 +1,10 @@
-Blazor lets C# developers use their existing skills to build client web applications with C# and Microsoft .NET.
+Blazor lets C# developers use their skills to build client web apps with C# and Microsoft .NET.
 
-Imagine you're building a client-side web application and already have a talented team of .NET developers. Also imagine you want the option of deploying your web app as a progressive web application so your users can download the app and use it offline.
+Imagine you're building a client-side web app and already have a team of .NET developers. Also imagine you want to deploy your app as a progressive web application. Users could then download the app and use it offline.
 
-Blazor lets developers build front-end and back-end logic for web apps with a common development language along with common frameworks and tools. Using the same language for front-end and back-end code can:
+With Blazor, developers can build front-end and back-end logic for web apps with common languages, frameworks, and tools.
+
+Using the same language for front-end and back-end code can:
 
 - Accelerate app development.
 - Reduce the complexity of the build pipeline.
