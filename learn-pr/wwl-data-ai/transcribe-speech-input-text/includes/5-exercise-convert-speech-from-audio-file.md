@@ -1,8 +1,8 @@
-In this exercise, you will make use of the Speech Service you created earlier.  This exercise does not require any configuration on your local computer for a development environment as we will use Visual Studio Code Online.  The steps will detail what is required to get the online environment configured correctly, tasks that will be required for each exercise to work correctly.   All resources are stored in a GitHub repo that you will link to during the exercise steps.
+In this exercise, you will make use of the Speech Service you created earlier.  This exercise does not require any configuration on your local computer for a development environment as we will use Visual Studio Codespaces.  The steps will detail what is required to get the online environment configured correctly, tasks that will be required for each exercise to work correctly.   All resources are stored in a GitHub repo that you will link to during the exercise steps.
 
 ::: zone pivot="python"
 
-1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-online/).
+1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/).
 
     > [!NOTE]
     > At this time, Safari is not a supported browser for the preview of Visual Studio Codespaces.
@@ -10,14 +10,14 @@ In this exercise, you will make use of the Speech Service you created earlier.  
     You will require an Azure subscription to create an environment for Visual Studio Codespaces.
 1. Select the **Get started** button.
 1. Sign in using your Microsoft Account that is linked to your Azure subscription.
-1. If this is the first time you have used Visual Studio Code online, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
-1. Select **Create Environment**.
+1. If this is the first time you have used Visual Studio Codespaces, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
+1. Select **Create Codespace**.
 1. Select your **Subscription** in the **Select Billing** pane and choose a location for the service.
 1. Select **Create**.
-1. Once your plan is created, you can then create you first environment.  
-1. If the **Create Environment** panel does not open automatically, select **Create environment**.
-1. Enter an environment name of your choosing, example **SpeechToTextPython**.
-1. Copy the following URL and paste it into the Git Repository area on the **Create Environment** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
+1. Once your plan is created, you can then create you first codespace.  
+1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
+1. Enter a name of your choosing, example **SpeechToTextPython**.
+1. Copy the following URL and paste it into the Git Repository area on the **Create Codespace** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
 1. Leave the rest of the settings at their default and select **Create**.
 1. It will take a few minutes for the environment to be created so while you wait, go to your **Speech** service in the **Azure portal** and copy one of your keys, and also note the region where the service was created.
 1. Once the environment indicates that it is available, either select the title, or select the three vertical dots in the lower right of the environment box and choose **Connect**.
@@ -37,7 +37,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 
 ::: zone pivot="csharp"
 
-1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-online/)
+1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/)
 
     > [!NOTE]
     > At this time, Safari is not a supported browser for the preview of Visual Studio Codespaces.
@@ -45,18 +45,18 @@ In this exercise, you will make use of the Speech Service you created earlier.  
     You will require an Azure subscription to create an environment for Visual Studio Codespaces
 1. Select the **Get started** button.
 1. Sign in using your Microsoft Account that is linked to your Azure subscription.
-1. If this is the first time you have used Visual Studio Code online, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
-1. Select **Create Environment**.
+1. If this is the first time you have used Visual Studio Codespaces, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
+1. Select **Create Codespace**.
 1. Select your Subscription in the **Select Billing** pane and choose a location for the service.
 1. Select **Create**.
-1. Once your plan is created, you can then create your first environment.  
-1. If the **Create Environment** panel does not open automatically, select **Create environment**.
-1. Enter an environment name of your choosing, example **SpeechToTextCS**.
-1. Copy the following URL and paste it into the Git Repository area on the **Create Environment** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
+1. Once your plan is created, you can then create your first codespace.  
+1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
+1. Enter a name of your choosing, example **SpeechToTextCS**.
+1. Copy the following URL and paste it into the Git Repository area on the **Create Codespace** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
 1. Leave the rest of the settings at their default and select **Create**.
 1. It will take a few minutes for the environment to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
 1. Once the environment indicates that it is available, either select the title or select the three vertical dots in the lower right of the environment box and choose **Connect**.
-1. Once the VS Code window opens, expand the **transcribe_speech_to_text** folder.
+1. Once the code window opens, expand the **transcribe_speech_to_text** folder.
 1. Right-click the **csharp** folder and choose **Open in Terminal**
 1. We will be using C# and .NET Core for this exercise so type in the command ```dotnet new console``` and press Enter.
 1. A new C# dotnet core project structure is set up for you complete with a Program.cs file, a workspace.csproj file, and the obj folder.
