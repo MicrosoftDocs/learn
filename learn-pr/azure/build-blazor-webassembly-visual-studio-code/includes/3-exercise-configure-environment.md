@@ -44,7 +44,7 @@ The JavaScript debugger extension is currently in preview. Here you'll install t
 
 1. Scroll to the **Debug > JavaScript Use Preview** setting.
 
-1. Select **Use the new in-preview JavaScript debugger for Node.js and Chrome.**.
+1. Select **Use the new in-preview JavaScript debugger for Node.js and Chrome**.
 
     ![Screenshot showing the Use the new in-preview JavaScript debugger for Node.js and Chrome setting selected](../media/enable-js-debugging.png)
 
