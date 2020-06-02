@@ -5,7 +5,8 @@ It's always a good idea to run your tests locally before you submit changes to t
 In this unit, you help the team fix a broken build that's caused by a failing unit test. Here, you will:
 
 > [!div class="checklist"]
-> * Get starter code from the Microsoft GitHub repository.
+> * Get starter code from GitHub.
+> * Add code coverage tools to your project.
 > * Push the code up to your repository.
 > * Watch the pipeline automatically run and the unit tests fail.
 > * Reproduce the failure locally.
@@ -80,8 +81,38 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
 1. Run the following `git commit` command to add an empty entry to your commit history:
 
+    TODO: Here you repeat to ... ensure you have the latest versions
+
+1. In Visual Studio Code, open the integrated terminal.
+1. Run the following `dotnet new` command to create a local tool manifest file.
+
     ```bash
-    git commit --allow-empty -m "Trigger Azure Pipelines"
+    dotnet new tool-manifest
+    dotnet tool install dotnet-reportgenerator-globaltool
+    dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
+    ```
+
+    The command creates a file named *.config/dotnet-tools.json*.
+
+1. Run the following `dotnet tool install` command to install ReportGenerator:
+
+    ```bash
+    dotnet tool install dotnet-reportgenerator-globaltool
+    ```
+
+    This command installs the latest version of `ReportGenerator` and adds an entry to the tool manifest file.
+
+1. Run the following `dotnet add package` command to add the `coverlet.msbuild` package to the *Tailspin.SpaceGame.Web.Tests* project:
+
+    ```bash
+    dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
+    ```
+
+    
+
+    ```bash
+    git add .
+    git commit -m "See failed unit test"
     ```
 
     This step is for learning purposes and is not typical.
@@ -305,10 +336,6 @@ In this section, you fix the error by changing the code back to its original sta
     You can also check out the dashboard to view the updated results trend.
 
     ![Screenshot of Azure DevOps dashboard trend chart widget showing a return to all tests passing.](../media/7-dashboard-passing-test.png)
-
-    As a bonus, the added unit test increases the percentage of code covered from around 14 percent to 17 percent.
-
-    ![Screenshot of the Azure DevOps Code Coverage widget showing coverage of 17 percent.](../media/7-dashboard-widget.png)
 
 **Andy:** Great! We fixed the build! I'm sorry for breaking it. I was in a hurry and I forgot to run the tests one final time.
 
