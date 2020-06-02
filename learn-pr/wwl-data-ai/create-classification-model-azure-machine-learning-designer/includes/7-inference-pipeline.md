@@ -11,7 +11,7 @@ You are going to make the following changes to the inference pipeline:
 > [!div class="centered"]
 > ![An inference pipeline with changes indicated](../media/inference-changes.png)
 
-- Replace the **diabetes-data** dataset with an **Enter Data Manually** module that does not include the label column (**Diabetic**)
+- Replace the **diabetes-data** dataset with an **Enter Data Manually** module that does not include the label column (**Diabetic**).
 - Remove the **Evaluate Model** module.
 - Insert an **Execute Python Script** module before the web service output to return only the patient ID, predicted label value, and probability.
 

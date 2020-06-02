@@ -196,7 +196,7 @@ quite free from impurity."
 Confident that he would be able to arrive at a clear conclusion, Snow
 summarized his data in the table below.
 
-| Supply Area    | Number of Hours | Cholera Deaths | Deaths per 10,000 Houses |
+| Supply Area    | Number of Houses | Cholera Deaths | Deaths per 10,000 Houses |
 |----------------|-----------------|----------------|--------------------------|
 | S&V            | 40,046          | 1,263          | 315                      |
 | Lambeth        | 26,107          | 98             | 37                       |
