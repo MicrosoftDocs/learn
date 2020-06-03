@@ -21,7 +21,7 @@ quiz:
       isCorrect: false
       explanation: "."
     - content: "B"
-      isCorrect: false
+      isCorrect: true
       explanation: "."
     - content: "C"
       isCorrect: false
