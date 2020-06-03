@@ -128,6 +128,6 @@ aims to make them accessible to everyone.
 
 In this module, you will:
 
-- Learned the definition of Data Science and what the field entails.
-- Understood the motivation behind Data Science.
-- Familiarized yourself with concepts of randomization, experiments and causation.
+- Learn the definition of Data Science and what the field entails.
+- Understand the motivation behind Data Science.
+- Familiarize yourself with concepts of randomization, experiments and causation.

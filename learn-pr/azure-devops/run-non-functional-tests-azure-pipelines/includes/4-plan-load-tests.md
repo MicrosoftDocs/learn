@@ -42,7 +42,7 @@ Next, Tim adds **Http Request Defaults** and an **Http Request** sampler to the 
 ![Specifying the HTTP request in Apache JMeter](../media/4-apache-jmeter-http-request.png)
 
 > [!TIP]
-> For reference, Microsoft hosts a version of the [*Space Game* website](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true). Go there if you want to follow along with Tim's load tests.
+> For reference, Microsoft hosts a version of the [Space Game website](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true). Go there if you want to follow along with Tim's load tests.
 
 **Tim:** This is a pretty basic test plan. We can explore many other options later. I think 100 requests is a good start to get meaningful results.
 
