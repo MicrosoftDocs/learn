@@ -79,12 +79,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
     We named the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.
 
-1. Run the following `git commit` command to add an empty entry to your commit history:
-
-    TODO: Here you repeat to ... ensure you have the latest versions
-
-1. In Visual Studio Code, open the integrated terminal.
-1. Run the following `dotnet new` command to create a local tool manifest file.
+1. Run these commands to create a local tool manifest file, install the `ReportGenerator` tool, and add the `coverlet.msbuild` package to your tests project:
 
     ```bash
     dotnet new tool-manifest
@@ -92,36 +87,17 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
     dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
     ```
 
-    The command creates a file named *.config/dotnet-tools.json*.
+    You need this step because the `failed-test` branch does not contain the work you added to the `unit-tests` branch.
 
-1. Run the following `dotnet tool install` command to install ReportGenerator:
-
-    ```bash
-    dotnet tool install dotnet-reportgenerator-globaltool
-    ```
-
-    This command installs the latest version of `ReportGenerator` and adds an entry to the tool manifest file.
-
-1. Run the following `dotnet add package` command to add the `coverlet.msbuild` package to the *Tailspin.SpaceGame.Web.Tests* project:
+1. Add your test project file and your tool manifest file to the staging index and commit your changes. 
 
     ```bash
-    dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
+    git add Tailspin.SpaceGame.Web.Tests/Tailspin.SpaceGame.Web.Tests.csproj
+    git add .config/dotnet-tools.json
+    git commit -m "Configure code coverage tests"
     ```
 
-    
-
-    ```bash
-    git add .
-    git commit -m "See failed unit test"
-    ```
-
-    This step is for learning purposes and is not typical.
-
-    When you forked the repository from the Microsoft account into yours, your fork already came with the `failed-test` branch. Here you run the `git commit` command by using the `--allow-empty` flag to create an additional entry in your commit history. This command helps the next step successfully push a change to GitHub.
-
-    If you were to omit this step, the `git push` command that you run in the next step wouldn't take any action and, therefore, wouldn't cause the build to run in Azure Pipelines.
-
-1. Run the following `git push` command to upload the branch to your GitHub repository:
+1. Run the following `git push` command to upload the `failed-test` branch to your GitHub repository:
 
     ```bash
     git push origin failed-test
@@ -146,7 +122,7 @@ In practice, you won't always manually trace the build as it runs. Here are a fe
 
 * **An email notification from Azure DevOps**
 
-    Azure DevOps sends you an email notification when the build is complete. The subject line starts with "[Build failed]" when the build fails.
+    You can configure Azure DevOps to send you an email notification when the build is complete. The subject line starts with "[Build failed]" when the build fails.
 
     ![Screenshot of a portion of a build failed email notification.](../media/7-email-notification.png)
 * **Azure Test Plans**
