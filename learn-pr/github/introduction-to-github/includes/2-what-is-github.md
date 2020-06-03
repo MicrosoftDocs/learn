@@ -6,7 +6,7 @@ In addition to providing a platform for collaborative software development, GitH
 
 ## Issues
 
-**Issues** are where most of the communication between a project's consumers and development team occurs. An *issue* can be created to discuss a very broad set of topics, including bug reports, feature requests, documentation clarifications, and more. Once an issue has been created, it can be assigned to owners, labels, projects, and milestones. You can also associate issues with pull requests and other GitHub items to provide future traceability.
+**Issues** are where most of the communication between a project's consumers and development team occurs. An *issue* can be created to discuss a broad set of topics, including bug reports, feature requests, documentation clarifications, and more. Once an issue has been created, it can be assigned to owners, labels, projects, and milestones. You can also associate issues with pull requests and other GitHub items to provide future traceability.
 
 ![A GitHub issue](../media/2-issue.png)
 
@@ -14,9 +14,9 @@ To learn more about GitHub Issues, see [Mastering Issues](https://guides.github.
 
 ## Notifications
 
-As a collaborative platform, GitHub offers notifications for virtually every event that takes place within a given workflow. And, of course, these notifications can be finely-tuned to meet your expectations. For example, you can subscribe to all issue creations and edits on a project, or you can just receive those in which you are mentioned. You can also decide whether you receive notifications via email, web & mobile, or both. To keep track of all of your notifications across different projects, use the [GitHub Notifications dashboard](https://github.com/notifications?azure-portal=true).
+As a collaborative platform, GitHub offers notifications for virtually every event that takes place within a given workflow. These notifications can be finely tuned to meet your preferences. For example, you can subscribe to all issue creations and edits on a project, or you can just receive notifications for issues in which you are mentioned. You can also decide whether you receive notifications via email, web & mobile, or both. To keep track of all of your notifications across different projects, use the [GitHub Notifications dashboard](https://github.com/notifications?azure-portal=true).
 
-![GitHub Notifications dashboard](../media/2-issue.png)
+![GitHub Notifications dashboard](../media/2-notifications.png)
 
 To learn more about GitHub notifications, see [Configuring notifications](https://help.github.com/github/managing-subscriptions-and-notifications-on-github/configuring-notifications?azure-portal=true).
 
@@ -30,7 +30,7 @@ To learn more about GitHub branches, see [About branches](https://help.github.co
 
 ## Commits
 
-A **commit** is a change to one or more files that has been persisted to a branch. Every time a commit is created, it is assigned a unique ID and tracked, along with the time and contributor. This provides a very clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request. 
+A **commit** is a change to one or more files that has been persisted to a branch. Every time a commit is created, it is assigned a unique ID and tracked, along with the time and contributor. This provides a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request. 
 
 ![GitHub commits to a master branch](../media/2-commits.png)
 
@@ -46,7 +46,7 @@ To learn more about GitHub pull requests, see [About pull requests](https://help
 
 ## GitHub Pages
 
-**GitHub Pages** is a hosting engine that's built right into your GitHub account. By simply following a few conventions, and enabling the feature, you can build your own static site generated from HTML and markdown code pulled directly from your repo. 
+**GitHub Pages** is a hosting engine that's built right into your GitHub account. By following a few conventions, and enabling the feature, you can build your own static site generated from HTML and markdown code pulled directly from your repo. 
 
 ![GitHub Pages](../media/2-github-pages.png)
 
