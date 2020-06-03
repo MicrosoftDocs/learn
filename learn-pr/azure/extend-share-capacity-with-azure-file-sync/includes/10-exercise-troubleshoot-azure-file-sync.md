@@ -8,7 +8,7 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
 ## Find your connection details
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the account you used when you activated the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). 
 1. Go to the storage account. Select **All resources** > **extendcadfiles**.
 1. Under **Settings**, select **Access keys**.
 
