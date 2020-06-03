@@ -24,17 +24,17 @@ quiz:
     - content: "Loss function."
       isCorrect: false
       explanation: "The loss function is used by the optimizer at the time of training the neural network to compute the network loss at each iteration."
-  - content: "What is the size, rank, and local rank when using Horovod to train a deep learning model on two servers, each with 2 GPUs?"
+  - content: "What is the size, rank, and local rank when using Horovod to train a deep learning model on two servers, each with two GPUs?"
     choices:
     - content: "Size = 2, Rank: [0, 1, 2, 3], and Local Rank: [0, 1]"
       isCorrect: false
-      explanation: "Size is total number of GPUs, i.e. 4. Rank is 0 to Size-1, i.e. [0, 1, 2, 3]. Local Rank is 0 to number of local GPUs - 1, i.e. [0, 1]."
+      explanation: "Size is total number of GPUs, that is 4. Rank is 0 to Size-1, that is [0, 1, 2, 3]. Local Rank is 0 to number of local GPUs - 1, that is [0, 1]."
     - content: "Size = 4, Rank: [0, 1, 2, 3], and Local Rank: [0, 1]"
       isCorrect: true
-      explanation: "Size is total number of GPUs, i.e. 4. Rank is 0 to Size-1, i.e. [0, 1, 2, 3]. Local Rank is 0 to number of local GPUs - 1, i.e. [0, 1]."
+      explanation: "Size is total number of GPUs, that is 4. Rank is 0 to Size-1, that is [0, 1, 2, 3]. Local Rank is 0 to number of local GPUs - 1, that is [0, 1]."
     - content: "Size = 2, Rank: [1, 2, 3, 4], and Local Rank: [1, 2]"
       isCorrect: false
-      explanation: "Size is total number of GPUs, i.e. 4. Rank is 0 to Size-1, i.e. [0, 1, 2, 3]. Local Rank is 0 to number of local GPUs - 1, i.e. [0, 1]."
+      explanation: "Size is total number of GPUs, that is 4. Rank is 0 to Size-1, that is [0, 1, 2, 3]. Local Rank is 0 to number of local GPUs - 1, that is [0, 1]."
   - content: "In the Horovod training script, what is the primary purpose of hvd.callbacks.BroadcastGlobalVariablesCallback(0) callback?"
     choices:
     - content: "To ensure consistent initialization of all workers when training is started with random weights or restored from a checkpoint."
