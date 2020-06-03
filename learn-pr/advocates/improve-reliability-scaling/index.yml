@@ -24,7 +24,7 @@ abstract: |
       decoupling, queues, in-memory caching and database sharding
   -   Learn about the Azure tools that make it possible to take your
       application or service global
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/improve-reliability-scaling.svg
 levels:
 - beginner
 roles:
