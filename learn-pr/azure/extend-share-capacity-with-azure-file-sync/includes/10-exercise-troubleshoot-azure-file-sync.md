@@ -19,7 +19,7 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 ## Create a mapped drive to the Azure file share
 
 1. If you closed your Remote Desktop connection, use these steps to connect to the VM:
-    1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the account you used when you activated the sandbox.
+    1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). 
     1. Go to **Virtual machines** > **FileServerLocal**.
     1. Select **Connect** > **Download RDP File**, and then open the RDP file.
     1. In the **Windows Security** window, select **More choices** > **Use a different account**.
