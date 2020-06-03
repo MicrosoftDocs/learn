@@ -36,7 +36,7 @@ quiz:
       explanation: "Pull requests are the correct way to communicate that commits are ready for review and ultimate inclusion on the `master` branch."
     - content: "On second thought, maybe I won't share this fix. I'll just put it in my own private version of the source code."
       isCorrect: false
-      explanation: "You should reconsider offering your contribution to the original project. By fixing that bug in the `master` branch, you will benefit from it being automatically included in future builds."
+      explanation: "You should reconsider offering your contribution to the original project. By getting your bug fix merged into the `master` branch, you will benefit from it being automatically included in future builds."
   - content: "It is recommended that you create commits on a branch separate from `master`, and there are plenty of good reasons why. What is **not** a good reason?"
     choices:
     - content: "GitHub doesn't allow you to commit directly to the `master` branch."
