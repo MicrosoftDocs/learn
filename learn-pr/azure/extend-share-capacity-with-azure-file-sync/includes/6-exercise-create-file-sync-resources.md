@@ -6,7 +6,7 @@ The following video shows how to create the Azure resources you'll need. Use the
 
 ## Create the storage account
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the account you used when you activated the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). 
 1. Search for **Storage accounts** by using the Azure portal search box.
 1. In **Storage accounts**, select **Add**.
 1. Use the following values for the storage account:
