@@ -32,7 +32,7 @@ The following video shows you how set up your on-premises server to work with Az
 ### Register Windows Server
 
 1. On **Azure File Sync - Server Registration**, select **Sign in**. If the server registration process doesn't start automatically, open the app from C:\Program Files\Azure\StorageSyncAgent\ServerRegistration.exe.
-1. To sign in, use the account you used when you activated the sandbox.
+1. Sign in by using your Azure credentials.
 1. Use these values:
 
    |Box |Value  |
