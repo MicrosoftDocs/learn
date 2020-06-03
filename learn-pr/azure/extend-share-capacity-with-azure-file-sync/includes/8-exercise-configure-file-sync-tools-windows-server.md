@@ -48,7 +48,7 @@ The following video shows you how set up your on-premises server to work with Az
 
 ### Add the server endpoint
 
-1. On your local computer, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the account you used when you activated the sandbox.
+1. On your local computer, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). 
 1. Go to the sync group CADFiles. Select **All resources** > **CADSyncService** > **CADFiles**.
 1. Select **Add server endpoint**.
 1. Use these values:
