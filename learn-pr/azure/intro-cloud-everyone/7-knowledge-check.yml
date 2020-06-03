@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-cloud-everyone.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  ms.date: 02/24/2020
+  author: PhilStollery
+  ms.author: tinaes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following statements accurately describes actions that embody Microsoft’s approach to driving inclusivity in our marketing, products and services?
+    choices:
+    - content: Providing education to others on D&I, understanding barriers to help avoid them, caring about the workplace environment, and telling people how to engage successfully.
+      isCorrect: False
+      explanation: This isn't the right approach.
+    - content: Good ideas, beliefs, and technologies create the core of implementing a diverse and inclusive environment.
+      isCorrect: False
+      explanation: There's more involved.
+    - content: Listening more versus having the answers, diving deeper to understand barriers, caring about every person as an individual, and focusing on empowering others to be great.
+      isCorrect: True
+      explanation: We should listen more and empower others.
+  - content: What does the Inclusive Marketing operating model encourage you to consider?
+    choices:
+    - content: Consider what you market, who you market to, and how you market.
+      isCorrect: True
+      explanation: Inclusive Marketing is an operating model consisting of three concepts that focus on the basics of what, who and how.
+    - content: Consider how to include other departments in your marketing.
+      isCorrect: False
+      explanation: Inclusive Marketing is an operating model consisting of three concepts that focus on the basics of what you market, who you market to, and how you market.
+    - content: Consider what to include in your marketing materials.
+      isCorrect: False
+      explanation: Inclusive Marketing is an operating model consisting of three concepts that focus on the basics of what you market, who you market to, and how you market.
+  - content: Which of the following statements outlines examples of behaviors like inclusive culture, inclusive design, or Inclusive Marketing? 
+    choices:
+    - content: Acting from individual knowledge, making assumptions, strategizing within a team to create an execution plan, and designing from knowledge and experience.
+      isCorrect: False
+      explanation: This is the opposite of inclusive.
+    - content: Understanding unconscious bias, creating a diverse team to execute on a project, recognizing exclusion, and highlighting diversity with common shared human values.
+      isCorrect: True
+      explanation: This is a good and inclusive approach.
+    - content: Creating a marketing team that’s focused on delivering inclusivity messaging as the company’s entire D&I execution plan.
+      isCorrect: False
+      explanation: D&I is more than just messaging.
