@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github.3-introduction-to-github
+title:  Exercise - A guided tour of GitHub
+metadata:
+  title:  Exercise - A guided tour of GitHub
+  description: Get started with GitHub in about an hour.
+  ms.date: 06/03/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 58
+content: |
+  [!include[](includes/3-introduction-to-github.md)]
