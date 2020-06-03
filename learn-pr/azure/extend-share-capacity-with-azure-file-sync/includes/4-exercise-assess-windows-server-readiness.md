@@ -66,7 +66,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 
 Connect to the new server by using Remote Desktop client. You'll download a sample CAD file and install the Azure PowerShell module that you'll use later.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). Use the same account you used when you activated the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). 
 1. In the portal, in the left pane, select **Virtual machines**.
 1. Select the **FileServerLocal** VM.
 1. In the top menu, select **Connect**.
