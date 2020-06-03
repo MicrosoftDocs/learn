@@ -2,31 +2,24 @@
 uid: learn.azure.nodejs
 metadata:
   title: Node.js 101
-  description: Explore the essentials APIs of Node.js that allow you to build performant and maintainable JavaScript applications.
+  description: Learn what Node.js is, how does it work and when to use it.
   ms.date: 02/25/2020
   author: manekinekko
   ms.author: wachegha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Node.js 101
-summary: Explore the essentials APIs of Node.js that allow you to build performant and maintainable JavaScript applications.
+summary: Learn what Node.js is, how does it work and when to use it.
 abstract: |
-  In this module, you'll learn how to:
-  - Install and configure Node.js.
-  - Create and import Node.js modules.
-  - Manipulate binary data using Buffers.
-  - Use Node.js events and timers.
-  - Work with Streams, filesystem, and processes.
-  - Create an HTTP server and client using the built-in modules.
-  - Connect to a database.
-  - Debug and test a Node.js application.
-  - Secure a Node.js application.
-  - Configure an application and deploy it to production.
+  In this module, you'll learn:
+  - What is Node.js
+  - How Node.js works under the hood
+  - When to use Node.js
 prerequisites: |
-  - JavaScript.
+  - Beginner-level experience writing JavaScript code.
 iconUrl: /learn/achievements/advocates/node-js-badge.svg
 levels:
-  - intermediate
+  - beginner
 roles:
   - developer
 products:

@@ -2,7 +2,7 @@
 
 Node.js has become one of the most used technologies by many giant companies and startups ( [Netflix](https://www.youtube.com/watch?v=p74282nDMX8&feature=emb_title), [Trello](https://tech.trello.com/the-trello-tech-stack/), [Walmart](https://medium.com/walmartlabs/migrating-large-enterprise-to-nodejs-6c38523d2b33), [Uber](https://eng.uber.com/uber-tech-stack-part-two/), [Ebay](https://tech.ebayinc.com/engineering/how-we-built-ebays-first-node-js-application/), and [NASA](https://openjsf.org/wp-content/uploads/sites/84/2020/02/Case_Study-Node.js-NASA.pdf)).
 
-Node.js is a single-threaded non-blocking runtime; it's based on the event-driven I/O paradigm and is capable of executing JavaScript outside the browser. The Non-blocking aspect means that, for instance, when a remote client makes a request, a server written in JavaScript and running on Node.js would handle that request and would construct and send back a response; then move on the next request, without blocking and waiting for other tasks to finish.
+Node.js is a single-threaded non-blocking runtime; it's based on the event-driven I/O paradigm and is capable of executing JavaScript outside the browser. The Non-blocking aspect means that, for instance, when a remote client makes a request, a server written in JavaScript and running on Node.js would handle that request and would construct and send back a response; then move on to the next request, without blocking and waiting for other tasks to finish.
 
 Some of the advantages of using Node.js are:
 
@@ -14,9 +14,9 @@ Node.js is a JavaScript runtime, it can run and execute your JavaScript applicat
 
 Nowadays, many applications, outside the browser, are written in JavaScript or support JavaScript as a first class-citizen language:
 
-- Code editors such as [Visual Studio Code](https://code.visualstudio.com/) and [Atom](https://atom.io/) are written in JavaScript or TypeScrpit (a superset of JavaScript with static typings). They run an embedded version of the Node.js runtime.
-- Many IoT (Internet Of Things) and real-time applications are written in JavaScript and rely Node.js to run, either on the server or on microcontrollers and SoC (System on a Chip) platforms such as the [Puck-js](https://www.puck-js.com/) or the [Tessel](https://tessel.io/).
-- Technologies such as [NativeScript](https://www.nativescript.org/) allow us to use JavaScript (or TypeScript) to build performant native mobile applications.
+- Code editors such as [Visual Studio Code](https://code.visualstudio.com/) and [Atom](https://atom.io/) are written in JavaScript or TypeScript (a superset of JavaScript with static typings). They run an embedded version of the Node.js runtime.
+- Many IoT (Internet Of Things) and real-time applications are written in JavaScript and rely on Node.js to run, either on the server or microcontrollers and SoC (System on a Chip) platforms such as the [Puck-js](https://www.puck-js.com/) or the [Tessel](https://tessel.io/).
+- Technologies such as [NativeScript](https://www.nativescript.org/) allow us to use JavaScript (or TypeScript) to build high-performing native mobile applications.
 - Many applications use JavaScript for their plugin-system, for example [Sketch](https://developer.sketch.com/plugins/), [Adobe XD](https://adobexdplatform.com/plugin-docs/tutorials/quick-start/), and [Google App Script](https://developers.google.com/apps-script).
 
 ## Community
