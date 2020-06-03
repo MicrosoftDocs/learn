@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.nodejs
 metadata:
-  title: Node.js 101
+  title: Introduction to Node.js
   description: Learn what Node.js is, how does it work and when to use it.
   ms.date: 02/25/2020
   author: manekinekko
   ms.author: wachegha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Node.js 101
+title: Introduction to Node.js
 summary: Learn what Node.js is, how does it work and when to use it.
 abstract: |
   In this module, you'll learn:
