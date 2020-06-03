@@ -32,7 +32,7 @@ quiz:
       isCorrect: false
       explanation: "If you have your commits already in place on a new branch, as recommended, than you should create a pull request to merge them in to the `master` branch."
     - content: "Create a pull request to merge your new branch into the `master` branch."
-      isCorrect: false
+      isCorrect: true
       explanation: "Pull requests are the correct way to communicate that commits are ready for review and ultimate inclusion on the `master` branch."
     - content: "On second thought, maybe I won't share this fix. I'll just put it in my own private version of the source code."
       isCorrect: false
