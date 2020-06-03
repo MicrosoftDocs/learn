@@ -187,7 +187,7 @@ Here you push your changes to GitHub and see the pipeline run. Recall that you'r
 Although not required, here you add and commit each file separately so that each change is associated with a descriptive commit message.
 
 1. In Visual Studio Code, go to the terminal.
-1. Add and commit the *Tailspin.SpaceGame.Web.Tests.csproj* file, which now contains a reference top the `coverlet.msbuild` package:
+1. Add and commit the *Tailspin.SpaceGame.Web.Tests.csproj* file, which now contains a reference to the `coverlet.msbuild` package:
 
     ```bash
     git add Tailspin.SpaceGame.Web.Tests/Tailspin.SpaceGame.Web.Tests.csproj
@@ -264,7 +264,7 @@ Later, you can configure coverlet to check to see whether your tests provide a m
 
 ## Remove code coverage files
 
-Recall that when you ran **reportgenerator** earlier, a number of HTML files appeared in the *CodeCoverage* folder at the root of the project.
+Recall that when you ran `Reportgenerator` earlier, a number of HTML files appeared in the *CodeCoverage* folder at the root of the project.
 
 These HTML files are not intended to be included in source control, and you no longer need them. Although the project's *.gitignore* file is already set up to ignore anything in the *CodeCoverage* directory, it's a good idea to delete these files so that they're not added to your Git repository in future modules.
 
