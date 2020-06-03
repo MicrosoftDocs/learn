@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.nodejs
 metadata:
-  title: Node.js Essentials
+  title: Node.js 101
   description: Explore the essentials APIs of Node.js that allow you to build performant and maintainable JavaScript applications.
   ms.date: 02/25/2020
   author: manekinekko
   ms.author: wachegha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Node.js Essentials
+title: Node.js 101
 summary: Explore the essentials APIs of Node.js that allow you to build performant and maintainable JavaScript applications.
 abstract: |
   In this module, you'll learn how to:
@@ -23,8 +23,8 @@ abstract: |
   - Secure a Node.js application.
   - Configure an application and deploy it to production.
 prerequisites: |
-  - JavaScript and basic notions of UNIX, TCP, and HTTP.
-iconUrl: /learn/achievements/advocates/node-js-essentials-badge.svg
+  - JavaScript.
+iconUrl: /learn/achievements/advocates/node-js-badge.svg
 levels:
   - intermediate
 roles:
@@ -33,8 +33,9 @@ products:
   - azure
 units:
   - learn.azure.nodejs.01-what-is-nodejs
-  - learn.azure.nodejs.02-why-nodejs
-  - learn.azure.nodejs.03-knowledge-check
+  - learn.azure.nodejs.02-how-nodejs-works
+  - learn.azure.nodejs.03-when-to-use-nodejs
+  - learn.azure.nodejs.08-knowledge-check
   - learn.azure.nodejs.09-summary
 badge:
   uid: learn.azure.nodejs.badge

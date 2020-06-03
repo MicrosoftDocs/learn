@@ -1,6 +1,8 @@
+# What is Node.js
+
 Node.js allows JavaScript to be used in so many places outside of the browser, like on the server-side for instance. There are several notable features offered by Node.js, which makes it of great interest.
 
-Node.js (also known as Node for short) is a wrapper around the infamous JavaScript runtime V8 created by Google. V8 powers many browsers including Google Chrome, Opera, and Microsoft Edge. Node brought many optimizations to V8 allowing it to work outside of the browser. For instance, when using Node to run a Web server, manipulating binary files and content is often mandatory; Node has enriched V8 with a Buffer API for these use cases.
+Node.js (also known as Node for short) is a wrapper around the infamous JavaScript runtime V8. V8 powers many browsers including Google Chrome, Opera, and Microsoft Edge. Node brought many optimizations to V8 allowing it to work outside of the browser. For instance, when using Node to run a Web server, manipulating binary files and content is often mandatory; Node has enriched V8 with a Buffer API for these use cases.
 
 Thanks to V8 and the modern techniques in the Compiler Optimizations space such as [JIT](http://en.wikipedia.org/wiki/Just-in-time_compilation), [Concurrent Speculative Optimization](https://ponyfoo.com/articles/an-introduction-to-speculative-optimization-in-v8), etc. JavaScript, which is considered to be a high-level programming language is now capable of producing the same performance results as the low-level languages such as C. In addition to this performance boost introduced by V8, Node takes advantage of the JavaScript language capabilities: The Event-Driven model. Implementing server-side async tasks has become an easy task thanks to Node and JavaScript.
 
