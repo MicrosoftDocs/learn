@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: modify-azure-resource-manager-template-reuse
+metadata:
+  title: "TBD - Learn"
+  description: TBD
+  ms.date: 10/15/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "TBD"
+summary: TBD.
+abstract: |
+  In this module, you will:
+  - A
+  - B
+  - C
+prerequisites: |
+  - A [GitHub](https://github.com?azure-portal=true) account
+  - The ability to navigate and edit files in GitHub
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- vs-code
+units:
+- learn.modify-azure-resource-manager-template-reuse.1-introduction
+- learn.modify-azure-resource-manager-template-reuse.2-TBD
+- learn.modify-azure-resource-manager-template-reuse.3-exercise-TBD
+- learn.modify-azure-resource-manager-template-reuse.4-knowledge-check
+- learn.modify-azure-resource-manager-template-reuse.5-summary
+badge:
+  uid: modify-azure-resource-manager-template-reuse.badge
