@@ -1,5 +1,3 @@
-# How Node.js works
-
 As you might know, Node.js is a JavaScript runtime. It can interpret and run JavaScript code outside the browser, on the host machine.
 This means that Node.js has direct access to the operating system I/O, filesystem, network, etc. But how does Node.js handle incoming tasks? Let's find out.
 
@@ -27,3 +25,14 @@ Main phases overview:
 Node.js uses the Worker Pool to handle blocking tasks. This includes blocking I/O operation, as well as CPU-intensive tasks.
 
 In summary, the event loop executes the JavaScript callbacks registered for events, and is also responsible for fulfilling non-blocking asynchronous requests like network I/O.
+
+
+## Performance
+
+Thanks to V8 and the modern techniques in the Compiler Optimizations space such as [JIT](http://en.wikipedia.org/wiki/Just-in-time_compilation), [Concurrent Speculative Optimization](https://ponyfoo.com/articles/an-introduction-to-speculative-optimization-in-v8), etc. JavaScript, which is considered to be a high-level programming language is now capable of producing the same performance results as the low-level languages such as C. In addition to this performance boost introduced by V8, Node takes advantage of the JavaScript language capabilities: The Event-Driven model. Implementing server-side async tasks has become an easy task thanks to Node and JavaScript.
+
+## Asynchronous programming
+
+In order to support the powerful event-based programming model, Node has a built-in set of non-blocking I/O APIs (provided by the [libuv](https://github.com/libuv/libuv) library) to deal with common tasks such as filesystem or database manipulation: When you request Node to read some file content from disk, Node doesn't block waiting for the disk and the file descriptors to be ready; instead, the non-blocking I/O interface notifies Node when the file is ready. This non-blocking I/O works the same way when the browser notifies your code when a mouse or keyboard event has been triggered or when an XHR response has been received from a remote endpoint.
+
+:::image type="content" source="../media/node-js-architecture.png" alt-text="Node.js high level architecture":::

@@ -1,5 +1,3 @@
-# When to use Node.js?
-
 Node.js has become one of the most used technologies by many giant companies and startups ( [Netflix](https://www.youtube.com/watch?v=p74282nDMX8&feature=emb_title), [Trello](https://tech.trello.com/the-trello-tech-stack/), [Walmart](https://medium.com/walmartlabs/migrating-large-enterprise-to-nodejs-6c38523d2b33), [Uber](https://eng.uber.com/uber-tech-stack-part-two/), [Ebay](https://tech.ebayinc.com/engineering/how-we-built-ebays-first-node-js-application/), and [NASA](https://openjsf.org/wp-content/uploads/sites/84/2020/02/Case_Study-Node.js-NASA.pdf)).
 
 Node.js is a single-threaded non-blocking runtime; it's based on the event-driven I/O paradigm and is capable of executing JavaScript outside the browser. The Non-blocking aspect means that, for instance, when a remote client makes a request, a server written in JavaScript and running on Node.js would handle that request and would construct and send back a response; then move on to the next request, without blocking and waiting for other tasks to finish.
@@ -25,4 +23,4 @@ The community has already built over a million modules and libraries for Node.js
 
 ## Open Source
 
-Node.js is open source and supported by the [The OpenJS Foundation](https://openjsf.org/). It has a massive active open-source community and contributors working hard to improve and optimize the technology. There is even a Community top-level committee who has authority over outward-facing community outreach efforts ([learn mode](https://nodejs.org/en/about/community/)).
+Node.js is open source and supported by the [The OpenJS Foundation](https://openjsf.org/). It has a massive active open-source community and contributors working hard to improve and optimize the technology. There is even a Community top-level committee that has authority over outward-facing community outreach efforts ([learn more](https://nodejs.org/en/about/community/)).

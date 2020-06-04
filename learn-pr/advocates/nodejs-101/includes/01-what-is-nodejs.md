@@ -1,19 +1,28 @@
-# What is Node.js
+Node.js, or Node for short, is an open source server-side JavaScript runtime environment. Node.js allows JavaScript to be used in so many places outside of the browser, like on the server-side for instance. There are several notable features offered by Node.js, which makes it of great interest.
 
-Node.js allows JavaScript to be used in so many places outside of the browser, like on the server-side for instance. There are several notable features offered by Node.js, which makes it of great interest.
+Node.js is a wrapper around the infamous JavaScript runtime V8. V8 powers many browsers including Google Chrome, Opera, and Microsoft Edge. Node.js brought many optimizations to V8 allowing it to work outside of the browser. For instance, when using Node.js to run a Web server, manipulating binary files and content is often mandatory; Node.js has enriched V8 with a Buffer API for these use cases.
 
-Node.js (also known as Node for short) is a wrapper around the infamous JavaScript runtime V8. V8 powers many browsers including Google Chrome, Opera, and Microsoft Edge. Node brought many optimizations to V8 allowing it to work outside of the browser. For instance, when using Node to run a Web server, manipulating binary files and content is often mandatory; Node has enriched V8 with a Buffer API for these use cases.
+Even if it's not related to Node.js (see: [Server-Side JavaScript technologies](https://en.wikipedia.org/wiki/List_of_server-side_JavaScript_implementations)), the fact that JavaScript was chosen as the main programming language for the Node.js runtime was a great choice! Whether we like it or not, browsers support only a restricted set of technologies to build front-end Web application. If we want to share some code, for example, forms validations rules, between the browsers and the server, JavaScript is the only choice. This is more relevant nowadays due to the rise of Single Page Applications, where JavaScript is the Lingua Franca in front-end development. In addition, JSON (JavaScript Object Notation) is a widely used data exchange format and JavaScript happens to have native support for it. Many NoSQL database technologies such as CouchDB and MongoDB use JavaScript and JSON as a query and schemas format.
 
-:::image type="content" source="../media/node-js-architecture.png" alt-text="Node.js high level architecture":::
+Applications you can build with Node.js:
 
-## Performance
+- HTTP Web Servers.
+- Microservices or Serverless API backends.
+- Drivers for database access and querying.
+- Interactive command line interfaces, such as [hexa.run](https://hexa.run).
+- Desktop applications, such as [VS Code](https://code.visualstudio.com/) or [Slack](https://slack.com/) (using [Electron](https://www.electronjs.org/)).
+- Real-time IoT client and server libraries, such as [Johnny-Five](http://johnny-five.io/).
+- Plugins for Desktop applications, such as [SketchApp](https://www.sketch.com/) and [Adobe XD](https://www.adobe.com/products/xd.html).
+- Shell scripts for file manipulations or network access, etc.
 
-Thanks to V8 and the modern techniques in the Compiler Optimizations space such as [JIT](http://en.wikipedia.org/wiki/Just-in-time_compilation), [Concurrent Speculative Optimization](https://ponyfoo.com/articles/an-introduction-to-speculative-optimization-in-v8), etc. JavaScript, which is considered to be a high-level programming language is now capable of producing the same performance results as the low-level languages such as C. In addition to this performance boost introduced by V8, Node takes advantage of the JavaScript language capabilities: The Event-Driven model. Implementing server-side async tasks has become an easy task thanks to Node and JavaScript.
+:::image type="content" source="../media/node-js-npm.png" alt-text="Node.js and NPM registry":::
 
-## Asynchronous programming
+The Node.js ecosystem is also very rich thanks to NPM, a package manager for Node.js where everyone can share their own Node.js libraries.
 
-In order to support the powerful event-based programming model, Node has a built-in set of non-blocking I/O APIs (provided by the [libuv](https://github.com/libuv/libuv) library) to deal with common tasks such as filesystem or database manipulation: When you request Node to read some file content from disk, Node doesn't block waiting for the disk and the file descriptors to be ready; instead, the non-blocking I/O interface notifies Node when the file is ready. This non-blocking I/O works the same way when the browser notifies your code when a mouse or keyboard event has been triggered or when an XHR response has been received from a remote endpoint.
+Let's imagine you have a lot of data you need to expose to users or to third-party services. You would start off by using Node.js to create the REST API backend, and implement CRUD (Create, Read, Update, Delete) operations. Then, you would model your data and store it in a NoSQL database.
 
-## Fullstack development
+:::image type="content" source="../media/node-js-iot-example.jpeg" alt-text="Node.js IoT example":::
 
-Even if it's not related to Node (see: [Server-Side JavaScript technologies](https://en.wikipedia.org/wiki/List_of_server-side_JavaScript_implementations)), the fact that JavaScript was chosen as the main programming language for the Node runtime was a great choice! Whether we like it or not, browsers support only a restricted set of technologies to build front-end Web application. If we want to share some code, for example, forms validations rules, between the browsers and the server, JavaScript is the only choice. This is more relevant nowadays due to the rise of Single Page Applications, where JavaScript is the Lingua Franca in front-end development. In addition, JSON (JavaScript Object Notation) is a widely used data exchange format and JavaScript happens to have native support for it. Many NoSQL database technologies such as CouchDB and MongoDB use JavaScript and JSON as a query and schemas format.
+Also, imagine that you want to build a device to be able to send control commands to your standing desk; isn't that cool? Node.js would be a perfect fit for this use case as well. Node.js is fast and performant and can handle real-time applications and heavy data flows. You would install Node.js on your IoT board, or use a device that comes with Node.js preinstalled. Then write your application logic in JavaScript and deploy it on the device, that's it.
+
+The use cases are endless.
