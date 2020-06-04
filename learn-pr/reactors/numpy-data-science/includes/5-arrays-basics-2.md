@@ -2,7 +2,7 @@ Let's continue with the basics of array manipulation in NumPy. You'll learn more
 
 ### Slices are no-copy views
 
-It's important to know that slicing produces *views* of array data, not *copies*. This is a **huge** difference between NumPy array slicing and Python list slicing. With Python lists, slices are only shallow copies of lists. If you modify a copy, it doesn't affect the parent list. When you modify a NumPy subarray, you modify the original list. Be careful: this can have ramifications when you're just trying to work with a small part of a large dataset and you don't want to change the whole thing. Let's look more closely.
+It's important to know that slicing produces *views* of array data, not *copies*. This is a huge difference between NumPy array slicing and Python list slicing. With Python lists, slices are only shallow copies of lists. If you modify a copy, it doesn't affect the parent list. When you modify a NumPy subarray, you modify the original list. Be careful: this can have ramifications when you're just trying to work with a small part of a large dataset and you don't want to change the whole thing. Let's look more closely.
 
 ```python
 print(a2)
