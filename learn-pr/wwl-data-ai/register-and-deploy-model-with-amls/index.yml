@@ -2,21 +2,23 @@
 uid: learn.data-ai.register-and-deploy-model-with-amls
 metadata:
   title: Deploying machine learning models with Azure Machine Learning
-  description: Learn how to register and deploy ML models with the Azure Machine Learning service.
+  description: "Learn how to register and deploy ML models with the Azure Machine Learning service."
   ms.date: 01/13/2020
-  author: GraemeMalcolm
+  author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploying machine learning models with Azure Machine Learning
 summary: Learn how to register and deploy ML models with the Azure Machine Learning service.
-abstract: | 
+abstract: |
   In this module, you will learn how to:
   - Deploy a model as a real-time inferencing service.
   - Consume a real-time inferencing service.
   - Troubleshoot service deployment
-prerequisites: None
-iconUrl: /learn/achievements/data-ai/register-and-deploy-model-with-amls-badge.svg
+prerequisites: |
+  - Knowledge of Python
+  - Experience of training models using the Azure Machine Learning SDK
+iconUrl: /learn/achievements/register-and-deploy-model-with-amls-badge.svg
 levels:
 - beginner
 roles:
@@ -31,6 +33,7 @@ units:
 - learn.data-ai.register-and-deploy-model-with-amls.consume-model
 - learn.data-ai.register-and-deploy-model-with-amls.troubleshoot-deployment
 - learn.data-ai.register-and-deploy-model-with-amls.deploying-a-model
+- learn.data-ai.register-and-deploy-model-with-amls.knowledge-check
 - learn.data-ai.register-and-deploy-model-with-amls.summary
 badge:
   uid: learn.data-ai.register-and-deploy-model-with-amls.badge
