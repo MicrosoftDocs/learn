@@ -6,16 +6,16 @@ To support Azure File Sync, there are a number of resources that you need to cre
 
 ## 1. Storage account
 
-The storage account is used to store the file share. In Azure, a storage account is where all Azure storage data objects are stored like blobs, files, queues, and disks. There are some limitations to the kind of storage account that can be used. Select StorageV2, with a Hot access tier.
+The storage account is used to store the file share. In Azure, a storage account is where all Azure Storage data objects, like blobs, files, queues, and disks, are stored. There are some limitations on the kind of storage account that can be used. Select StorageV2 with a hot access tier.
 
 ## 2. File share
 
-The file share is the cloud version of a normal on-premises file share and will store all files and folders. You control the size of the file share by specifying a quota size. The quota can be increased if needed in the future.
+The file share is the cloud version of a normal on-premises file share. It will store all files and folders. You control the size of the file share by specifying a quota size. You can increase the quota later if you need to.
 
 ## 3. Storage Sync Service
 
-The Storage Sync Service is responsible for establishing trust between your companies server and Azure. The service is where you connect together the file share in Azure and your file directory on your server.
+The Storage Sync Service is responsible for establishing trust between your company's server and Azure. This service is where you connect the file share in Azure with the file directory on your server.
 
 ## 4. Sync group
 
-The Sync group must contain one cloud endpoint that represents an Azure file share, and one or more server endpoints that map to a path on a registered Windows file server. The sync group manages the process with metadata stored in a hidden folder: **.SystemShareInformation**. Don't delete this folder.
+The sync group must contain one cloud endpoint that represents an Azure file share and one or more server endpoints that map to a path on a registered Windows file server. The sync group manages the process by using metadata stored in a hidden folder: .SystemShareInformation. Don't delete this folder.
