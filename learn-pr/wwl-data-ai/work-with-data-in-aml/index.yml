@@ -14,9 +14,9 @@ abstract: |
   - Create and use datastores in an Azure Machine Learning workspace.
   - Create and use datasets in an Azure Machine Learning workspace.
 prerequisites: |
-  - Experience training machine learning models with Python
-  - Experience running experiments in Azure Machine Learning
-iconUrl: /learn/achievements/data-ai/work-with-data-in-aml-badge.svg
+  - Knowledge of Python
+  - Experience of training models using the Azure Machine Learning SDK
+iconUrl: /learn/achievements/work-with-data-in-aml-badge.svg
 levels:
 - beginner
 roles:
@@ -32,6 +32,7 @@ units:
 - learn.wwl.work-with-data-in-aml.datasets
 - learn.wwl.work-with-data-in-aml.using-datasets
 - learn.wwl.work-with-data-in-aml.working-with-data
+- learn.wwl.work-with-data-in-aml.knowledge-check
 - learn.wwl.work-with-data-in-aml.summary
 badge:
   uid: learn.wwl.work-with-data-in-aml.badge
