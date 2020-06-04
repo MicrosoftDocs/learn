@@ -446,7 +446,7 @@ array([1, 3, 5, 7, 9])
 
 ### Try it yourself
 
-How would you access the *last* five elements of array `a`? How about every other element of the last five elements of a? Think back to list indexing in Python.
+How would you access the *last* five elements of array `a`? How about every other element of the last five elements of `a`? Think back to list indexing in Python.
 
 <br />
 
