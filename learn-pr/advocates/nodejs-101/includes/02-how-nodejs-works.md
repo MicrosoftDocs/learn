@@ -26,7 +26,6 @@ Node.js uses the Worker Pool to handle blocking tasks. This includes blocking I/
 
 In summary, the event loop executes the JavaScript callbacks registered for events, and is also responsible for fulfilling non-blocking asynchronous requests like network I/O.
 
-
 ## Performance
 
 Thanks to V8 and the modern techniques in the Compiler Optimizations space such as [JIT](http://en.wikipedia.org/wiki/Just-in-time_compilation), [Concurrent Speculative Optimization](https://ponyfoo.com/articles/an-introduction-to-speculative-optimization-in-v8), etc. JavaScript, which is considered to be a high-level programming language is now capable of producing the same performance results as the low-level languages such as C. In addition to this performance boost introduced by V8, Node takes advantage of the JavaScript language capabilities: The Event-Driven model. Implementing server-side async tasks has become an easy task thanks to Node and JavaScript.
