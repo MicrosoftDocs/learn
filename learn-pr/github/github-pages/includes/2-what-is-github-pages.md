@@ -1,4 +1,6 @@
-Here, we discuss the process of creating and maintaining a GitHub Pages web site. 
+Here, we discuss the process of creating and maintaining a GitHub Pages web site.
+
+GitHub Pages are static sites hosted directly from your repository. But they're more than just a collection of static files. By making use of site generation technologies like Jekyll and Liquid, developers define dynamic templates that are processed into complete static web sites. Every time a change is committed to the source branch associated with the site, it is re-generated using the latest updates and automatically published to the target URL.
 
 ## Enabling GitHub Pages
 
@@ -8,11 +10,11 @@ The first step in using GitHub Pages is to enable it from your repository's **Se
 
 ## Choosing a theme with Jekyll
 
-**Jekyll** is the static site generator used by GitHub to build your web site from the contents of your repository. In addition to providing great content convenience, it also conforms to a standard design convention. This allows for swappable themes, which you can select from the **GitHub Pages** configuration.
+**Jekyll** is the static site generator used by GitHub to build your web site from the contents of your repository. In addition to providing great content convenience, it also conforms to a standard design convention. This style standardization allows for swappable themes, which you can select from the **GitHub Pages** configuration.
 
 ![Choosing a Jekyll theme](../media/2-choosing-jekyll-theme.png)
 
-There are a variety of themes provided by GitHub. In addition, there is an array of commercial and open source themes available throughout the Jekyll ecosystem.
+There are a variety of themes provided by GitHub. There is also an array of commercial and open source themes available from the Jekyll community.
 
 ![Built-in Jekyll themes](../media/2-jekyll-themes.png)
 
@@ -20,9 +22,9 @@ To learn more about theming, see the Jekyll documentation for [Themes](https://j
 
 ## Using YAML front matter
 
-The term *front matter* refers to YAML metadata that prepends the content of a file. In the case of Jekyll, this is usually used as generator instructions to indicate the layout style of a Markdown page (`post`, `page`, and so on).
+The term *front matter* refers to YAML metadata that prepends the content of a file. For Jekyll, this includes generator instructions to indicate the layout style of a Markdown page (`post`, `page`, and so on). It may also include page metadata, such as the document title, or page content variables, such as a blog post's author.
 
-Below is a simple example that would use the `post` layout. Note that this assumes there is a `_layouts/post.html` file that defines the container HTML.
+Below is a simple example that would use the `post` layout. This assumes there is a `_layouts/post.html` file that defines the container HTML. Other layout options may be offered by adding their respective HTML files in the `_layouts` folder.
 
 ```yml
 ---
@@ -66,7 +68,7 @@ To learn more about the Liquid template language, see [the official Liquid docum
 
 Despite not having a database to work with, Jekyll still supports the concept of blogging using a specific convention: `_posts/2020-06-25-blog-post-name.md`. As you can likely infer, all blog posts are stored in the `_posts` folder and use the date and name convention as shown. During compilation, Jekyll processes the files in this folder to produce a list of HTML blog posts.
 
-The example below illustrates the structure of a simple blog post. Note that it includes metadata for `subtitle`, `tags`, and `comments`, which may or may not be supported by the theme you choose.
+The example below illustrates the structure of a simple blog post. It includes metadata for `subtitle`, `tags`, and `comments`, which may or may not be supported by the theme you choose.
 
 ```markdown
 ---
