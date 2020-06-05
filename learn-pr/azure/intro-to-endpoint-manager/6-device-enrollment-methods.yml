@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-endpoint-manager.6-device-enrollment-methods
+title: Device enrollment methods
+metadata:
+  title: Device enrollment methods
+  description: Understand the enrollment methods available for each platform.
+  ms.date: 05/18/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-device-enrollment-methods.md)]

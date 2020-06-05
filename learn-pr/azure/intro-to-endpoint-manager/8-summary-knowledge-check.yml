@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-endpoint-manager.7-summary-knowledge-check
+uid: learn.intro-to-endpoint-manager.8-summary-knowledge-check
 title: Summary and knowledge check
 metadata:
   title: Summary and knowledge check
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-summary-knowledge-check.md)]
+  [!include[](includes/8-summary-knowledge-check.md)]

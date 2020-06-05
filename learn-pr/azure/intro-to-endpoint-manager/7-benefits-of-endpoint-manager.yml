@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-endpoint-manager.6-benefits-of-endpoint-manager
+uid: learn.intro-to-endpoint-manager.7-benefits-of-endpoint-manager
 title: Benefits of Microsoft Endpoint Manager
 metadata:
   title: Benefits of Microsoft Endpoint Manager
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-benefits-of-endpoint-manager.md)]
+  [!include[](includes/7-benefits-of-endpoint-manager.md)]
