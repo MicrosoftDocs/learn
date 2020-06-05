@@ -32,6 +32,6 @@ units:
 - learn.intro-to-endpoint-manager.4-understand-endpoint-environment
 - learn.intro-to-endpoint-manager.5-platform-considerations
 - learn.intro-to-endpoint-manager.6-benefits-of-endpoint-manager
-- learn.intro-to-endpoint-manager.7-summary-and-knowledge-check
+- learn.intro-to-endpoint-manager.7-summary-knowledge-check
 badge:
   uid: learn.intro-to-endpoint-manager.badge
