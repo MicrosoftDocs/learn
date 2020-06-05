@@ -14,6 +14,7 @@ Applications you can build with Node.js:
 - Real-time IoT client and server libraries, such as [Johnny-Five](http://johnny-five.io/).
 - Plugins for Desktop applications, such as [SketchApp](https://www.sketch.com/) and [Adobe XD](https://www.adobe.com/products/xd.html).
 - Shell scripts for file manipulations or network access, etc.
+- Machine learning libraries and models.
 
 :::image type="content" source="../media/nodejs-npm.png" alt-text="Node.js and NPM registry":::
 
