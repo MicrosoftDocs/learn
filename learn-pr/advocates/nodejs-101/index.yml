@@ -15,9 +15,10 @@ abstract: |
   - What is Node.js
   - How Node.js works under the hood
   - When to use Node.js
+  - How to create and run a hello world Node.js script
 prerequisites: |
   - Beginner-level experience writing JavaScript code.
-iconUrl: /learn/achievements/advocates/node-js-badge.svg
+iconUrl: /learn/achievements/advocates/nodejs-badge.svg
 levels:
   - beginner
 roles:
@@ -28,6 +29,7 @@ units:
   - learn.azure.nodejs.01-what-is-nodejs
   - learn.azure.nodejs.02-how-nodejs-works
   - learn.azure.nodejs.03-when-to-use-nodejs
+  - learn.azure.nodejs.04-try-nodejs
   - learn.azure.nodejs.08-knowledge-check
   - learn.azure.nodejs.09-summary
 badge:
