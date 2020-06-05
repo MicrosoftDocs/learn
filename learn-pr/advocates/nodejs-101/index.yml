@@ -2,14 +2,14 @@
 uid: learn.azure.nodejs
 metadata:
   title: Introduction to Node.js
-  description: Learn what Node.js is, how does it work and when to use it.
+  description: "Learn everything about Node.js: what it is, how does it work and when to use it."
   ms.date: 02/25/2020
   author: manekinekko
   ms.author: wachegha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Node.js
-summary: Learn what Node.js is, how does it work and when to use it.
+summary: "Learn everything about Node.js: what it is, how does it work and when to use it."
 abstract: |
   In this module, you'll learn:
   - What is Node.js
