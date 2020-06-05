@@ -3,7 +3,7 @@ uid: learn.azure.nodejs.08-knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge Check
-  description: Check your knowledge of Node.js and its ecosystem
+  description: Check your knowledge about Node.js and its ecosystem
   ms.date: 03/23/2020
   author: manekinekko
   ms.author: wachegha
@@ -26,6 +26,17 @@ quiz:
         - content: "A JavaScript server."
           isCorrect: false
           explanation: "Although Node.js can be used to implement a server, it's not a server."
+    - content: "What does Node.js use to handle concurrent tasks?"
+      choices:
+        - content: "Node.js use multiple threads for concurrent tasks."
+          isCorrect: false
+          explanation: "Node.js does not use multiple threads."
+        - content: "Node.js use an single event-loop for concurrent tasks."
+          isCorrect: true
+          explanation: "Correct. Node.js use a single thread and an event loop to handle concurrent non-blocking I/O tasks."
+        - content: "Node.js multiple event-loops for concurrent tasks."
+          isCorrect: false
+          explanation: "Node.js use only one single event loop."
     - content: "Why should you use Node.js?"
       choices:
         - content: "Because it has a large community supporting the project."
@@ -37,3 +48,14 @@ quiz:
         - content: "Because I can use it to build mobile applications."
           isCorrect: false
           explanation: "Mobile applications can be built with many languages including JavaScript. Node.js is a runtime not a language."
+    - content: "What does REPL stand for?"
+      choices:
+        - content: "Read Execute Print Loop"
+          isCorrect: false
+          explanation: "E does not stand for Execute."
+        - content: "Read Eval Print Last"
+          isCorrect: false
+          explanation: "L does not stand for Last."
+        - content: "Read Eval Read Loop"
+          isCorrect: true
+          explanation: "Correct."
