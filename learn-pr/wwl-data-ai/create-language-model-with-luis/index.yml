@@ -3,7 +3,7 @@ uid: learn.wwl.create-language-model-with-luis
 metadata:
   title: Create a language model with LUIS
   description: "In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to build and publish a LUIS model."
-  ms.date: 04/24/2020
+  ms.date: 06/07/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -35,6 +35,7 @@ units:
 - learn.wwl.create-language-model-with-luis.introduction
 - learn.wwl.create-language-model-with-luis.get-started
 - learn.wwl.create-language-model-with-luis.exercise-create-luis-application
+- learn.wwl.create-language-model-with-luis.knowledge-check
 - learn.wwl.create-language-model-with-luis.summary
 badge:
   uid: learn.wwl.create-language-model-with-luis.badge
