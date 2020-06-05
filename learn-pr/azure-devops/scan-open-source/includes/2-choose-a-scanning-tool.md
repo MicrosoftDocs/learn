@@ -1,7 +1,5 @@
 In this section, you'll examine a few tools that scan for known vulnerabilities and for license ratings in the open-source components that your application uses.
 
-Recall that in [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-for-vulnerabilities?azure-portal=true), Tim from the Tailspin web team needed to provide a report to the security consultant that showed which security vulnerabilities were in the code and the potential impact of those vulnerabilities. The team used SonarCloud to do the scan, which provided Tim with the report he needed.
-
 Let's check in with the team at their weekly meeting and see how things are progressing.
 
 ## Weekly meeting
