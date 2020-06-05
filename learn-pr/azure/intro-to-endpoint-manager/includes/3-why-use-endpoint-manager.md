@@ -2,7 +2,7 @@ Microsoft Endpoint Manager allows you to manage and secure your organization's c
 
 ## Manage and secure devices
 
-Before you can safeguard the devices that access your organization's resources, you must enroll them. Enrolling means that the device is connected and recognized by Intune or Configuration Manager baseed on a Mobile Device Management (MDM) certificate. There are several methods to enroll your workforce's devices. Each method depends on **device ownership** (personal or corporate), **device type** (iOS/iPadOS, Windows, Android, macOS), and **device management requirements** (resets, affinity, locking). These methods are explained below.
+Before you can safeguard the devices that access your organization's resources, you must enroll them. Enrolling means that the device is connected and recognized by Intune or Configuration Manager based on a Mobile Device Management (MDM) certificate. There are several methods to enroll your workforce's devices. Each method depends on **device ownership** (personal or corporate), **device type** (iOS/iPadOS, Windows, Android, macOS), and **device management requirements** (resets, affinity, locking). These methods are explained below.
 
 > [!NOTE]
 > Before a device is enrolled with Intune or Configuration Manager, you may need to provision the device. Provisioning is a process when your organization issues new or repurposed devices to individuals in your organization. As part of the process, the indivdual user signs in to the device and steps through the process of connecting to your organization. You can either enroll the devices with Intune or Configuration Manager during the provisioning process or after depending on your needs.
@@ -19,7 +19,7 @@ The available device types that can be managed by Endpoint Manager include iOS/i
 
 ### Device management requirements
 
-As part of the enrollment process, your organization may require specific initial actions before a devices can connect to your organization to ensure protection and safe access. You can choose reset required, user affinity, and locked. **Reset required** will wipe the devices during enrollment. **User affinity** will associate each device with a user. **Locked** will provent users from unenrolling their device. Based on these requirements and the device type, you can choose which enrollment methods are best for your organization. 
+As part of the enrollment process, your organization may require specific initial actions before a devices can connect to your organization to ensure protection and safe access. You can choose reset required, user affinity, and locked. **Reset required** will wipe the devices during enrollment. **User affinity** will associate each device with a user. **Locked** will prevent users from unenrolling their device. Based on these requirements and the device type, you can choose which enrollment methods are best for your organization. 
 
 ### Enrollment methods
 

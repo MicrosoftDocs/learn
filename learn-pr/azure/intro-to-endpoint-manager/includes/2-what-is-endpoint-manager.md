@@ -16,7 +16,7 @@ Microsoft Intune, which is available within Microsoft Endpoint Manager, is a clo
 
 In the following diagram, you can see how Intune interacts with other components in both your on-premises and cloud infrastructure:
 
-![Diagram of cloud and on-premises infractructure](./media/intro-to-endpoint-manager-01.png)
+![Diagram of cloud and on-premises infrastructure](../media/intro-to-endpoint-manager-01.png)
 
 ## Microsoft Endpoint Configuration Manager
 
@@ -48,7 +48,7 @@ When you enroll existing Configuration Manager clients in co-management, you gai
 
 In the following diagram, you can see how Windows 10 devices can be manged with both Configuration Manager and Microsoft Intune:
 
-![Diagram of cloud and on-premises infractructure](./media/intro-to-endpoint-manager-03.svg)
+![Diagram of cloud and on-premises infrastructure](../media/intro-to-endpoint-manager-03.svg)
 
 
 

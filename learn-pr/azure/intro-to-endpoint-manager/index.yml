@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Endpoint management concepts 
-summary: Microsoft Endpoint Manager helps protect the devices, apps, and data that the people of your organization use to be productive. In this module, you will learn about the endpoints that you need to protect and the products and services that encompass Microsoft Endpoint Manager. You will determine how to access your device and app management needs. Also, you will learn about the benefits of using Microsoft Endpoint Manager.
+summary: Microsoft Endpoint Manager helps you protect the devices, apps, and data that the people of your organization use to be productive. In this module, you will learn about the endpoints that you need to protect and the products and services that encompass Microsoft Endpoint Manager. You will determine how to assess your device and app management needs. Also, you will learn about the benefits of using Microsoft Endpoint Manager.
 abstract: | 
   In this module, you will:
   - Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization
