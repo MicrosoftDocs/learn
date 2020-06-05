@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
 title: Introduction to Python
-summary: Learn how to use Python for data-science operations.
+summary: This module introduces you to Python as applied to data science. You'll also learn to use libraries and packages that help you analyze large, incomplete data.
 abstract: |
   In this module, you will:
   - Explore the basic syntax and features of Python
