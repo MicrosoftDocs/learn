@@ -40,7 +40,7 @@ Here you'll install the **WhiteSource Bolt** extension for Microsoft Azure Pipel
     ![Screenshot of Azure DevOps Marketplace showing results for a search of "WhiteSource Bolt".](../media/4-marketplace-whitesource-bolt.png)
 1. Select **Get it free**.
 1. Select your Microsoft Azure DevOps organization from the drop-down box.
-1. Select **Install**. Note the WhiteSource Bolt version number.
+1. Select **Install**.
 1. From Azure DevOps, go to your project. Then go to **Pipelines**.
 1. Go to the **WhiteSource Bolt** tab.
 
