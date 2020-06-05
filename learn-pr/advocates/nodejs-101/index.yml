@@ -18,7 +18,7 @@ abstract: |
   - How to create and run a hello world Node.js program
 prerequisites: |
   - Beginner-level experience writing JavaScript code.
-iconUrl: /learn/achievements/advocates/nodejs-badge.svg
+iconUrl: /learn/advocates/nodejs-101/media/nodejs-badge.svg
 levels:
   - beginner
 roles:
