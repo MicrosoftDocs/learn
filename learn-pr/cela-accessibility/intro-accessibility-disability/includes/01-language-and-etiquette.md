@@ -22,6 +22,13 @@ They can be briefly summarized as:
 3. Announce yourself
 4. Make documents accessible
 
+### Nothing about us without us
+Include people with disabilities from the beginning of every planning process. 
+
+This mantra “reinforces the role of people without disabilities as strong allies and partners who share the role towards inclusivity and accessibility”*
+
+*\*[Huffington Post: "Nothing About Us Without Us"](https://www.huffpost.com/entry/nothing-about-us-without-us-mantra-for-a-movement_b_59aea450e4b0c50640cd61cf) 
+
 ### Make eye contact
 
 A person who is deaf may have a sign language interpreter. Ensure that you speak directly to the person when you are talking, not the interpreter.

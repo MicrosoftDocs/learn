@@ -1,8 +1,8 @@
-VS Code provides a customizable IDE that enables you to build, test, and run Node.js applications.
+Visual Studio Code provides a customizable IDE that enables you to build, test, and run Node.js applications.
 
-In the sample scenario, you want to use VS Code as the development environment for creating and testing your Node.js applications.
+In the sample scenario, you want to use Visual Studio Code as the development environment for creating and testing your Node.js applications.
 
-In this exercise, you'll install node packages that enable you to configure Node.js for use in VS Code. You'll use this environment to write an application that prompts the user for details of students. The application then creates JavaScript objects that capture this information.
+In this exercise, you'll install node packages that enable you to configure Node.js for use in Visual Studio Code. You'll use this environment to write an application that prompts the user for details of students. The application then creates JavaScript objects that capture this information.
 
 In the next exercise, you'll see how to save these objects to a container in Cosmos DB.
 
@@ -13,7 +13,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 ## Configure Node.js
 
-1. Start VS Code if it isn't already running.
+1. Start Visual Studio Code if it isn't already running.
 
 2. On the **Terminal** menu, click **New Terminal**.
 
@@ -32,11 +32,11 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
     The **npm init** command creates a **package.json** file and displays its contents. This file contains the initial metadata for the application, containing a default name, description, and entry point.
 
-5. On the **File** menu in VS Code, select **Open Folder**, and open the **grades** folder.
+5. On the **File** menu in Visual Studio Code, select **Open Folder**, and open the **grades** folder.
 
 6. In the **Explorer** window, click the **package.json** file.
 
-    :::image type="content" source="../media/5-edit-package.png" alt-text="Screenshot of VS Code. The user is editing the package.json file." loc-scope="vs-code":::
+    :::image type="content" source="../media/5-edit-package.png" alt-text="Screenshot of Visual Studio Code. The user is editing the package.json file." loc-scope="vs-code":::
 
 7. In the editor pane, change the **description** property to **Student and course grades maintenance**, and change the **main** property to **studentgrades.js**. The file should look like this:
 
@@ -71,7 +71,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 ## Create the studentgrades app
 
-1. In VS Code, on the **File** menu, click **New File**.
+1. In Visual Studio Code, on the **File** menu, click **New File**.
 
 2. On the **File** menu, click **Save As**. Save the new file with the name **studentgrades.js**.
 
@@ -207,4 +207,4 @@ The application doesn't store student information in the Cosmos DB database. You
 
     These are the details of the second student, and the grade for the only course that the student took.
 
-You've now seen how to use VS Code to create, edit, and run a Node.js application.
+You've now seen how to use Visual Studio Code to create, edit, and run a Node.js application.

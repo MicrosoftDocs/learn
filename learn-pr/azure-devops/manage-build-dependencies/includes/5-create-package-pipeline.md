@@ -52,7 +52,7 @@ To clone the **mslearn-tailspin-spacegame-web-models** projects to your computer
 
 In Visual Studio Code, your terminal window points to the root directory of the **mslearn-tailspin-spacegame-web-models** project. Open the project from the file explorer so that you can view its structure and work with files.
 
-1. From the **File** menu, select **Open** or **Open Folder**.
+1. From the **File** menu, select **Open**.
 1. Go to the root directory of the **mslearn-tailspin-spacegame-web-models** project.
 
     You see the directory and file tree in the file explorer.

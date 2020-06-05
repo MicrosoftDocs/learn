@@ -77,7 +77,7 @@ def scatter_fit(table, x, y):
 scatter_fit(heights, 'MidParent', 'Child')
 ```
 
-![Diagnostic example](../media/80-visual-diagnostics-9-0.png)
+![scatter fit of midparent and child heights.](../media/80-visual-diagnostics-9-0.png)
 
 A *residual plot* can be drawn by plotting the residuals against the
 predictor variable. The function `residual_plot` does just that.
@@ -99,7 +99,7 @@ def residual_plot(table, x, y):
 residual_plot(heights, 'MidParent', 'Child')
 ```
 
-![diagnostic example](../media/80-visual-diagnostics-12-0.png)
+![residual plot.](../media/80-visual-diagnostics-12-0.png)
 
 The midparent heights are on the horizontal axis, as in the original
 scatter plot. But now the vertical axis shows the residuals. Notice that
@@ -125,9 +125,9 @@ def regression_diagnostic_plots(table, x, y):
 regression_diagnostic_plots(heights, 'MidParent', 'Child')
 ```
 
-![diagnostic example](../media/80-visual-diagnostics-16-0.png)
+![diagnostic plot.](../media/80-visual-diagnostics-16-0.png)
 
-![diagnostics example](../media/80-visual-diagnostics-16-1.png)
+![diagnostic plot.](../media/80-visual-diagnostics-16-1.png)
 
 This residual plot indicates that linear regression was a reasonable
 method of estimation. Notice how the residuals are distributed fairly
@@ -208,9 +208,9 @@ is much more visible in the residual plot.
 regression_diagnostic_plots(dugong, 'Length', 'Age')
 ```
 
-![diagnostic example](../media/80-visual-diagnostics-24-0.png)
+![dugong regression diagnostic.](../media/80-visual-diagnostics-24-0.png)
 
-![diagnostic example](../media/80-visual-diagnostics-24-1.png)
+![dugong regression diagnostic.](../media/80-visual-diagnostics-24-1.png)
 
 While you can spot the non-linearity in the original scatter, it is more
 clearly evident in the residual plot.
@@ -240,9 +240,9 @@ efficient.
 regression_diagnostic_plots(hybrid, 'acceleration', 'mpg')
 ```
 
-![diagnostic example](../media/80-visual-diagnostics-27-0.png)
+![hybrid diagnostic plot.](../media/80-visual-diagnostics-27-0.png)
 
-![diagnostic example](../media/80-visual-diagnostics-27-1.png)
+![hybrid diagnostic plot.](../media/80-visual-diagnostics-27-1.png)
 
 Notice how the residual plot flares out towards the low end of the
 accelerations. In other words, the variability in the size of the errors

@@ -190,6 +190,9 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
 
 Now it's time to watch your web app and Azure Functions project work together. Start by running your Azure Functions project locally by following these steps:
 
+> [!NOTE]
+> Please be sure to install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
+
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
 1. Type and select **Terminal: Create New Integrated Terminal**
 1. Go to the _api_ folder
@@ -201,7 +204,7 @@ Now it's time to watch your web app and Azure Functions project work together. S
 1. Run the Azure Functions app locally
 
    ```bash
-   npm start
+   func start
    ```
 
 ## Run the web app
@@ -324,25 +327,25 @@ It's time to see your application running locally against the Azure Functions AP
 
 ::: zone pivot="angular"
 
-Browse to [http://localhost:4200](http://localhost:4200?azure-portal=true)
+Browse to `http://localhost:4200`.
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-Browse to [http://localhost:3000](http://localhost:3000?azure-portal=true)
+Browse to `http://localhost:3000`.
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-Browse to [http://localhost:5000](http://localhost:5000?azure-portal=true)
+Browse to `http://localhost:5000`.
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-Browse to [http://localhost:8080](http://localhost:8080?azure-portal=true)
+Browse to `http://localhost:8080`.
 
 ::: zone-end
 

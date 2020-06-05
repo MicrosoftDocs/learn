@@ -1,4 +1,4 @@
-Azure Migrate helps you assess your current on-premises workloads. After the assessment, Azure Migrate makes recommendations for the size of VM you'll need to provision.
+You can perform an agentless environment discovery, or use agents to perform a dependency analysis. The Azure portal helps you assess your current on-premises workloads. After the assessment, Azure Migrate makes recommendations for the size of VM you'll need to provision.
 
 In your role, you've been asked to plan the migration of the business's on-premises environment to Azure. Because the server workloads are based primarily on VMware, you want to begin with those machines. You want to assess readiness for the move to Azure. You also want to identify estimated costs for the resources that those machines will consume, so the management team can set the budgets.
 
@@ -19,7 +19,7 @@ After you create a project, Azure Migrate requires you to complete two steps to 
 
 ### Discover machines
 
-The Azure portal guides you through downloading a collector appliance, which carries out the discovery of systems in your environment. The collector appliance is available to download to VMware or Hyper-V environment. Import and spin up the collector appliance, and then complete its configuration to connect it to the Azure Migrate project.
+To perform an agentless discovery, the Azure Migrate: Server Assessment tool guides you through downloading a lightweight collector appliance, which carries out the discovery of systems in your environment. The collector appliance is available to download to VMware or Hyper-V environment. Import and spin up the collector appliance, and then complete its configuration to connect it to the Azure Migrate project.
 
 The collector gathers data about VM cores, memory, disk sizes, and network adapters. Where applicable, the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
 

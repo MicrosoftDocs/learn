@@ -28,6 +28,7 @@ roles:
 - developer
 - solution-architect
 products:
+- github
 - azure
 units:
 - learn.github.github-actions-automate-tasks.1-introduction

@@ -11,7 +11,7 @@ You are going to make the following changes to the inference pipeline:
 > [!div class="centered"]
 > ![An inference pipeline with changes indicated](../media/inference-changes.png)
 
-- Replace the **diabetes-data** dataset with an **Enter Data Manually** module that does not include the label column (**Diabetic**)
+- Replace the **diabetes-data** dataset with an **Enter Data Manually** module that does not include the label column (**Diabetic**).
 - Remove the **Evaluate Model** module.
 - Insert an **Execute Python Script** module before the web service output to return only the patient ID, predicted label value, and probability.
 
@@ -50,7 +50,7 @@ Follow the remaining steps below, using the image and information above for refe
 > [!div class="centered"]
 > ![A visual inference pipeline](../media/visual-inference.png)
 
-9. Run the pipeline as a new experiment named **predict-diabetes** on your compute instance. This may take a while!
+9. Run the pipeline as a new experiment named **predict-diabetes** on the **aml-cluster** compute cluster. This may take a while!
 10. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
 
 Your inference pipeline predicts whether or not patients are at risk for diabetes based on their features. Now you're ready to publish the pipeline so that client applications can use it.
