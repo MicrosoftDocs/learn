@@ -26,6 +26,7 @@ roles:
 products:
   - azure
 units:
+  - learn.azure.nodejs.00-introduction
   - learn.azure.nodejs.01-what-is-nodejs
   - learn.azure.nodejs.02-how-nodejs-works
   - learn.azure.nodejs.03-when-to-use-nodejs
