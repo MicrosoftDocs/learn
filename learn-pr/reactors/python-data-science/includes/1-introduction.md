@@ -24,8 +24,6 @@ You've successfully set up your environment with Visual Studio Code, Python, Ana
 1. Clone the [Reactor repository](https://github.com/microsoft/Reactors?azure-portal=true) and open the [Learn/Intro-Python-Data-Science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md?azure-portal=true) in Visual Studio Code.
 2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/Test-Setup-Config.ipynb?azure-portal=true) file to ensure that you're ready to continue through the learning path.
 
-<!--*Embedded Video Goes Here*-->
-
 ## About this learning path
 
 As you work through this learning path, you're encouraged to try out code. Use the files you cloned for this purpose.
