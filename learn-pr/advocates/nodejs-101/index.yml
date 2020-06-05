@@ -15,7 +15,7 @@ abstract: |
   - What is Node.js
   - How Node.js works under the hood
   - When to use Node.js
-  - How to create and run a hello world Node.js script
+  - How to create and run a hello world Node.js program
 prerequisites: |
   - Beginner-level experience writing JavaScript code.
 iconUrl: /learn/achievements/advocates/nodejs-badge.svg
