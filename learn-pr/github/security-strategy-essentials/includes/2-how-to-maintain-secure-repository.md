@@ -51,8 +51,8 @@ x86/
 # Removing the slash would ignore "config" directories at all depths 
 /config
 
-# Ignore intermediate JS build files produced during TypeScript build at any folder depth under /Web/TypeScript
-# This wouldn't ignore JS files elsewhere 
+# Ignore intermediate JS build files produced during TypeScript build at any 
+# folder depth under /Web/TypeScript. This won't ignore JS files elsewhere. 
 /Web/TypeScript/**/*.js
 ```
 
@@ -64,11 +64,12 @@ To learn more about `.gitignore`, see [Ignoring files](https://help.github.com/g
 
 While `.gitignore` can be useful in helping contributors avoid committing sensitive data, it's just a strong suggestion. Developers can still work around it to add files if they are motivated enough, and sometimes files may slip through becuase they don't meet the `.gitignore` configuration. Project participants should always be on the lookout for commits containing data that should not be included in the repository or its history.
 
-For the complete guide to removing sensitive data from GitHub, see [Removing sensitive data from a repository](https://help.github.com/github/authenticating-to-github/removing-sensitive-data-from-a-repository?azure-portal=true).
+> [!IMPORTANT]
+> It should be assumed that any data committed to GitHub at any point has been compromised. Simply overwriting a commit isn't enough to ensure the data will not be accessible in the future. For the complete guide to removing sensitive data from GitHub, see [Removing sensitive data from a repository](https://help.github.com/github/authenticating-to-github/removing-sensitive-data-from-a-repository?azure-portal=true).
 
 ## Detecting and fixing outdated dependencies with security vulnerabilities
 
-Virtually every project these days takes dependencies on external packages. While these components can offer substantial benefits in productivity, they introduce additional security risk. Staying on top of these packages and their vulnerability status can be time-consuming, so GitHub provides features that reduce this workload.
+Virtually every project these days takes dependencies on external packages. While these components can offer substantial benefits in productivity, they introduce additional security risk. Staying on top of these packages and their vulnerability status can be time-consuming, especially given how each dependency may have its own dependencies that can exponentially grow the number of packages to track. Fortunately, GitHub provides features that reduce this workload.
 
 ### Repository dependency graphs
 

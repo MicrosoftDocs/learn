@@ -25,7 +25,7 @@ quiz:
       explanation: "Even if this helps you start off with a secure version of a given dependency, it will not ensure that you are safe from future vulnerabilities. You would need to constantly monitor every package to ensure compliance, which may be infeasible."
     - content: "Enable **Dependabot** for your repository."
       isCorrect: true
-      explanation: "Dependabot will scan your repository and notify you via pull request whenever a version you rely is marked as insecure."
+      explanation: "Dependabot will scan your repository's dependency manifests and notify you via pull request whenever a version you rely is marked as insecure."
   - content: "Suppose one of your source projects relies on secrets kept in a folder called `.secrets`. You would like to make sure that the files kept in this folder on development machines are not inadvertently committed to the repository. Which of these files will best help enforce this policy?"
     choices:
     - content: "`SECURITY.md`"
@@ -37,7 +37,7 @@ quiz:
     - content: "`CONTRIBUTING.md`"
       isCorrect: false
       explanation: "`CONTRIBUTING.md` is used to explain the contribution policy of your project, but it does not automate anything."
-  - content: "Suppose someone has inadvertently committed a sensitive API key stored in the .secrets folder. What is the correct way to scrub that information from GitHub?"
+  - content: "Suppose someone has inadvertently committed a sensitive API key stored in the `.secrets` folder. What is the correct way to scrub that information from GitHub?"
     choices:
     - content: "Use `git` to remove the unwanted commit and update historical references. Then contact GitHub support to run garbage collection and invalidate the Git cache."
       isCorrect: true
@@ -47,4 +47,4 @@ quiz:
       explanation: "This will not remove the sensitive data from your commit history."
     - content: "This is a trick question. Once you commit something to GitHub, it lives forever. That's why globally unique hashes are used to identify everything."
       isCorrect: false
-      explanation: "Fortunately, this is not exactly the case. It is possible to remove commits containing sensitive data."
+      explanation: "Fortunately, this is not exactly the case. It is possible to remove commits containing sensitive data from GitHub so that they may not be accessed in the future."
