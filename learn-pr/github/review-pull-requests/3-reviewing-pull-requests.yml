@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.review-pull-requests.3-reviewing-pull-requests
+title:  Exercise - A guided tour of GitHub
+metadata:
+  title:  Exercise - A guided tour of GitHub
+  description: Get started with GitHub in about an hour.
+  ms.date: 06/03/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 35
+content: |
+  [!include[](includes/3-reviewing-pull-requests.md)]

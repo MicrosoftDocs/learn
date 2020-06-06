@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.github.review-pull-requests
+metadata:
+  title: "Introduction to GitHub - Learn"
+  description: Get started with GitHub in about an hour.
+  ms.date: 06/03/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to GitHub"
+summary: Get started with GitHub in about an hour.
+abstract: |
+  In this module, you will:
+  - Communicate with the project community in issues
+  - Manage notifications for project events
+  - Create branches to manage work in parallel
+  - Make commits to update project source
+  - Introduce changes with pull requests
+  - Deploy a web page to GitHub Pages
+prerequisites: |
+  - A GitHub account
+  - The ability to navigate and edit files in GitHub
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+- azure
+units:
+- learn.github.review-pull-requests.1-introduction
+- learn.github.review-pull-requests.2-what-are-pull-requests
+- learn.github.review-pull-requests.3-reviewing-pull-requests
+- learn.github.review-pull-requests.4-knowledge-check
+- learn.github.review-pull-requests.5-summary
+badge:
+  uid: learn.github.review-pull-requests.badge
