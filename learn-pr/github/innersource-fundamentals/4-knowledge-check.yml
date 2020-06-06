@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.innersource-fundamentals.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/03/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "?"
+    choices:
+    - content: "."
+      isCorrect: false
+      explanation: "."
+    - content: "."
+      isCorrect: false
+      explanation: "."
+    - content: "."
+      isCorrect: true
+      explanation: "."
+  - content: "?"
+    choices:
+    - content: "."
+      isCorrect: false
+      explanation: "."
+    - content: "."
+      isCorrect: true
+      explanation: "."
+    - content: "."
+      isCorrect: false
+      explanation: "."
+  - content: "?"
+    choices:
+    - content: "."
+      isCorrect: true
+      explanation: "."
+    - content: "."
+      isCorrect: false
+      explanation: "."
+    - content: "."
+      isCorrect: false
+      explanation: "."
