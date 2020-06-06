@@ -30,7 +30,7 @@ To learn more about `SECURITY.md`, see [Adding a security policy to your reposit
 
 ## Keeping sensitive files out of your repository with `.gitignore`
 
-It's really easy for developers to overlook files included in a commit. Sometimes these overlooked files are benign, such as intermediate build files. However, there is always the risk that someone may inadvertently commit sensitive data, such as an API key or private configuration data, that could be used by a malicious actor. One technique to help avoid the majority of this risk is to build and maintain `.gitignore` files. These files instruct client tools, such as the `git` command line utility, to ignore paths and patterns when aggregating files for a commit.
+It's easy for developers to overlook files included in a commit. Sometimes these overlooked files are benign, such as intermediate build files. However, there is always the risk that someone may inadvertently commit sensitive data, such as an API key or private configuration data, that could be used by a malicious actor. One technique to help avoid the majority of this risk is to build and maintain `.gitignore` files. These files instruct client tools, such as the `git` command line utility, to ignore paths and patterns when aggregating files for a commit.
 
 The sample below illustrates some of the common use cases for ignoring files.
 
@@ -62,7 +62,7 @@ To learn more about `.gitignore`, see [Ignoring files](https://help.github.com/g
 
 ## Removing sensitive data from a repository
 
-While `.gitignore` can be very useful in helping contributors avoid committing sensitive data, it's really just a strong suggestion. Developers can still work around it to add files if they are motivated enough, and sometimes files may slip through becuase they don't meet the `.gitignore` configuration. Project participants should always be on the lookout for commits containing data that should not be included in the repository or its history.
+While `.gitignore` can be useful in helping contributors avoid committing sensitive data, it's just a strong suggestion. Developers can still work around it to add files if they are motivated enough, and sometimes files may slip through becuase they don't meet the `.gitignore` configuration. Project participants should always be on the lookout for commits containing data that should not be included in the repository or its history.
 
 For the complete guide to removing sensitive data from GitHub, see [Removing sensitive data from a repository](https://help.github.com/github/authenticating-to-github/removing-sensitive-data-from-a-repository?azure-portal=true).
 
@@ -72,7 +72,7 @@ Virtually every project these days takes dependencies on external packages. Whil
 
 ### Repository dependency graphs
 
-One default feature every repository enjoys are dependency graphs. GitHub scans common package manifests, such as `package.json`, `requirements.txt`, and others. This enables project owners to recursively track all of the dependencies their project relies on.
+One default feature every repository enjoys are dependency graphs. GitHub scans common package manifests, such as `package.json`, `requirements.txt`, and others. These graphs enables project owners to recursively track all of the dependencies their project relies on.
 
 ![GitHub dependency graph](../media/2-dependency-graph.png)
 
@@ -80,12 +80,12 @@ For the list of supported dependency manifests, see [Listing the packages that a
 
 ### Automated dependency alerts
 
-Even with a visual dependency graph, it can still be overwhelming to stay on top of the latest security considerations for every dependency a project has. To simplify this, GitHub provides automated dependency alerts that watch your dependency graphs for you. It then cross-references target versions with those on known vulnerability lists. When a risk is discovered, the project is alerted.
+Even with a visual dependency graph, it can still be overwhelming to stay on top of the latest security considerations for every dependency a project has. To reduce this overhead, GitHub provides automated dependency alerts that watch your dependency graphs for you. It then cross-references target versions with versions on known vulnerability lists. When a risk is discovered, the project is alerted.
 
 ![A GitHub alert for a vulnerable dependency](../media/2-dependency-alert.png)
 
 ### Automated dependency updates with Dependabot
 
-Most of the time, a dependency alert leads to a project contributor bumping the offending package reference to the recommendeded version and creating a pull request for validation. Wouldn't it be great if there was a way to automate this? Well, good news! That's exactly what **Dependabot** does. It scans for dependency alerts and creates pull requests so that a contributor can validate the update and merge the request.
+Most of the time, a dependency alert leads to a project contributor bumping the offending package reference to the recommendeded version and creating a pull request for validation. Wouldn't it be great if there was a way to automate this effort? Well, good news! That's exactly what **Dependabot** does. It scans for dependency alerts and creates pull requests so that a contributor can validate the update and merge the request.
 
 To learn more about Dependabot's flexibility, see [Configuring GitHub Dependabot security updates](https://help.github.com/github/managing-security-vulnerabilities/configuring-github-dependabot-security-updates?azure-portal=true).
