@@ -9,9 +9,9 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
     - **Select dataset**:
         - **Dataset**: bike-rentals
     - **Configure run**:
-        - **Experiment name**: auto-train-bike-rental
+        - **New experiment name**: auto-train-bike-rental
         - **Target column**: rentals (*this is the label the model will be trained to predict)*
-        - **Training compute target**: aml-cluster
+        - **Training compute target**: *the compute cluster you created previously*
     - **Task type and settings**:
         - **Task type**: Regression *(the model will predict a numeric value)*
         - **Additional configuration settings:**
@@ -34,14 +34,15 @@ Although you canceled the automated machine learning run, some models were train
 
     The best model is identified based on the evaluation metric you specified (*Normalized root mean square error*). To calculate this metric, the training process used some of the data to train the model, and applied a technique called *cross-validation* to iteratively test the trained model with data it wasn't trained with and compare the predicted value with the actual known value. The difference between the predicted and actual value (known as the *residuals*) indicates the amount of *error* in the model, and this particular performance metric is calculated by squaring the errors across all of the test cases, finding the mean of these squares, and then taking the square root. What all of this means is that smaller this value is, the more accurately the model is predicting.
 3. Next to the *Normalized root mean square error* value, select **View all other metrics** to see values of other possible evaluation metrics for a regression model.
-4. Select the **Visualizations** tab and review the charts that show the performance of the model by comparing the predicted values against the true values, and showing the *residuals* (differences between predicted and actual values) as a histogram.
+4. Select the **Metrics** tab and select the **residuals** and **predicted_true** charts. Then review the charts that show the performance of the model by comparing the predicted values against the true values, and showing the *residuals* (differences between predicted and actual values) as a histogram.
+
+The **Residual Histogram** shows the frequency of residual value ranges. Residuals represent variance between predicted and true values that can't be explained by the model - in other words, errors; so what you should hope to see is that the most frequently occurring residual values are clustered around 0 (in other words, most of the errors are small), with fewer errors at the extreme ends of the scale.
+
+> [!div class="centered"]
+> ![Residuals histogram](../media/residual-histogram.png)
 
 The **Predicted vs. True** chart should show a diagonal trend in which the predicted value correlates closely to the true value. A dotted line shows how a perfect model should perform, and the closer the line for your model's average predicted value is to this, the better its performance. A histogram below the line chart shows the distribution of true values.
 
 > [!div class="centered"]
 > ![Predicted vs True chart](../media/predicted-vs-true.png)
 
-The **Residual Histogram** shows the frequency of residual value ranges. Residuals represent variance between predicted and true values that can't be explained by the model - in other words, errors; so what you should hope to see is that the most frequently occurring residual values are clustered around 0 (in other words, most of the errors are small), with fewer errors at the extreme ends of the scale.
-
-> [!div class="centered"]
-> ![Residuals histogram](../media/residual-histogram.png)
