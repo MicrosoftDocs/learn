@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Do you want to keep all of the version control history?"
       isCorrect: false
-      explanation: "Version control history is an important consideraton for GitHub migrations. If you want to keep the history, it is recommended that you use the **GitHub Importer**. Otherwise, a clean cutover to *restart* version control may be a better option."
+      explanation: "Version control history is an important consideration for GitHub migrations. If you want to keep the history, it is recommended that you use the **GitHub Importer**. Otherwise, a clean cutover to *restart* version control may be a better option."
     - content: "Is there project data that lives outside of the history you need to preserve, such as issues, discussions, or pull requests?"
       isCorrect: false
       explanation: "This information may be important context for understanding why past decisions were made. If you decide to preserve it, see the GitHub documentation for guidance on migrating this data from various systems."

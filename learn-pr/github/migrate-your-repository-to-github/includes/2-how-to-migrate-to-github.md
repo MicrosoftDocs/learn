@@ -10,7 +10,7 @@ GitHub exclusively uses **Git**, arguably the best version control system around
 
 ### Keep your code in the cloud
 
-Much project code is still stored in version control systems behind corporate firewalls. When you migrate to GitHub, you're moving your code to GitHub's cloud platform where team members can easily access it from anywhere. This migration offers a good opportunity to review your team's policy for the kinds of files and data you keep in version control. As a best practice, you should assume that anything you commit to GitHub has been compromised, so be sure not to include sensitive data, such as API keys, passwords, or other files containing comparable information. See **Security strategy essentials** for best practices on managing a secure repository.
+Much project code is still stored in legacy version control systems behind corporate firewalls. When you migrate to GitHub, you're moving your code to GitHub's cloud platform where team members can easily access it from anywhere. This migration offers a good opportunity to review your team's policy for the kinds of files and data you keep in version control. As a best practice, you should assume that anything you commit to GitHub has been compromised, so be sure not to include sensitive data, such as API keys, passwords, or other files containing comparable information. See **Security strategy essentials** for best practices on managing a secure repository.
 
 > [!NOTE]
 > GitHub offers both public and private repositories, as well as granular access controls for different parts of a repository. This enables you to control who your projects are visible to, as well as what actions a given user can perform.
