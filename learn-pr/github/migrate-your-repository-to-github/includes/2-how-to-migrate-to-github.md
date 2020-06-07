@@ -6,25 +6,30 @@ There are volumes of literature extolling the virtues of GitHub. It's beyond the
 
 ### Version control
 
-GitHub exclusively uses **git**, arguably the best version control system around. However, Git is incredibly sophisticated and can enable some complex scenarios for working with code that your team may not be experienced with. Branches and pull requests are a fundamental part of day-to-day life for developers using git, so understanding when and how to use them effectively is necessary to be successful on GitHub. It is worthwhile for your team to be familiar with [the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true) in order to hit the ground running.
+GitHub exclusively uses **Git**, arguably the best version control system around. However, Git is incredibly sophisticated and can enable some complex scenarios for working with code that your team may not be experienced with. *Branches* and *pull requests* are a fundamental part of day-to-day life for developers using Git, so understanding when and how to use them effectively is necessary to be successful on GitHub. It is worthwhile for your team to first be familiar with [the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true) so you can hit the ground running.
 
 ### Keep your code in the cloud
 
-A lot of project code is still stored in version control systems behind corporate firewalls. When you migrate to GitHub, you're moving your code to GitHub's cloud platform where team members can access it from anywhere. This offers a good opportunity to review your team's policy for the kinds of files and data you keep in version control. As a best practice, you should assume that anything you commit to GitHub has been compromised, so be sure not to include sensitive data, such as API keys, passwords, or other files containing comparable information. See the Learn module on **Security strategy essentials** for best practices on managing a secure repository.
+Much project code is still stored in version control systems behind corporate firewalls. When you migrate to GitHub, you're moving your code to GitHub's cloud platform where team members can easily access it from anywhere. This migration offers a good opportunity to review your team's policy for the kinds of files and data you keep in version control. As a best practice, you should assume that anything you commit to GitHub has been compromised, so be sure not to include sensitive data, such as API keys, passwords, or other files containing comparable information. See **Security strategy essentials** for best practices on managing a secure repository.
+
+> [!NOTE]
+> GitHub offers both public and private repositories, as well as granular access controls for different parts of a repository. This enables you to control who your projects are visible to, as well as what actions a given user can perform.
 
 ### Collaboration
 
-GitHub offers excellent support for team collaboration through features like issues, pull requests, and code reviews. If your project is an open source project that allows outside contributors, there's no better option than GitHub for maximizing the benefits. If your repository is an open source project, see the Learn module **Create an open source program** for best practices on managing an open source program on GitHub.
+GitHub offers excellent support for team collaboration through features like issues, pull requests, and code reviews. However, the GitHub flow may differ from the practices your team is currently accustomed to. It's a good idea to consider whether the team will adapt to GitHub, retain its given process, or meet somewhere in the middle before completing the migration.
+
+If your project is an open source project that allows outside contributors, there's no better option than GitHub for maximizing the benefits. See **Create an open source program** for tips on making the most of your open source program on GitHub.
 
 ## Migrating to GitHub
 
 ### Planning considerations
 
-The most important thing to consider before executing your migration to GitHub is whether you need to retain anything beyond the current state of your source. If you are satisfied with starting a new project with just your current source as-is, then your best option is to upload the source to a new repository.
+The most important thing to consider before executing your migration to GitHub is whether you need to retain anything beyond the current state of your source. If you are satisfied with starting a new project with just your current source as-is, then your best option is to treat it like a new project and upload the source to your repository.
 
-However, if you want to retain version control history, then you will need to import using the **GitHub Migrator tool**. For more details about the import support for different version control platforms, see [Importing data from third-party version control systems](https://help.github.com/enterprise/2.20/admin/migrations/importing-data-from-third-party-version-control-systems?azure-portal=true).
+However, if you want to retain version control history, then you will need to import using the **GitHub Migrator tool**. For more information about the import support for different version control platforms, see [Importing data from third-party version control systems](https://help.github.com/enterprise/2.20/admin/migrations/importing-data-from-third-party-version-control-systems?azure-portal=true).
 
-Beyond Git data, you may also have a desire to retain issues, pull requests, or other data. Support for these items will vary by platform and is generally available from community projects. This module does not cover non-Git data.
+Beyond Git data, you may also have a desire to retain issues, pull requests, or other data. Support for these items will vary by platform and is generally available from community projects. This module does not cover migrating non-Git data.
 
 ### Handling binary files currently stored in your project
 
@@ -59,4 +64,4 @@ Once you have prepared your repository for migration, navigate to the **Code** t
 
 The **GitHub Migrator tool** will take care of the rest.
 
-![GitHub Migrator tool](../media/2-import-code.png)
+![GitHub Migrator tool](../media/2-github-migrator.png)
