@@ -1,21 +1,21 @@
-GitHub is a development platform that enables you to host and review code, manage projects, and build software alongside 50 million developers.
+GitHub is home to millions of software projects with tons more joining every day. There are so many great reasons to host your project GitHub, but getting there from a legacy version control system may seem daunting.
 
-Why is everyone building on GitHub? Because it provide the important DevOps features companies and organizations of all sizes need for their public and private projects. Whether it's planning features, fixing bugs, or collaborating on changes, GitHub is the place where the world's software developers gather to make things. And then make them better.
+Suppose you are managing the version control for a project and want to move to GitHub. You probably have a lot of questions, like "How do I get started?" and "Does GitHub even support my project type?". These are valid concerns, and the good news is that virtually any project can be hosted on GitHub.
 
-In this module, you learn how to use the key GitHub features that are fundamental to day-to-day operations.
+In this module, you learn how to prepare and migrate a project to GitHub from a legacy version control system.
+
+> ![NOTE]
+> If you are uploading a project that is not already hosted in a version control system, consider completing the Learn module **Uploading your project to GitHub** instead.
 
 ## Learning objectives
 
 In this module, you will:
 
-- Communicate with the project community in issues
-- Manage notifications for project events
-- Create branches to manage work in parallel
-- Make commits to update project source
-- Introduce changes with pull requests
-- Deploy a web page to GitHub Pages
+- Prepare your project for a successful migration
+- Handle any binary files currently stored in your project
+- Create important Git files like a `.gitignore`
+- Import your project to GitHub
 
 ## Prerequisites
 
 - A GitHub account
-- The ability to navigate and edit files in GitHub

@@ -1,26 +1,23 @@
 ### YamlMime:Module
 uid: learn.github.migrate-your-repository-to-github
 metadata:
-  title: "Introduction to GitHub - Learn"
-  description: Get started with GitHub in about an hour.
-  ms.date: 06/03/2020
+  title: "Migrating your repository to GitHub - Learn"
+  description: Learn to move your existing project to GitHub from a legacy version control system.
+  ms.date: 06/07/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Introduction to GitHub"
-summary: Get started with GitHub in about an hour.
+title: "Migrating your repository to GitHub"
+summary: Learn to move your existing project to GitHub from a legacy version control system.
 abstract: |
   In this module, you will:
-  - Communicate with the project community in issues
-  - Manage notifications for project events
-  - Create branches to manage work in parallel
-  - Make commits to update project source
-  - Introduce changes with pull requests
-  - Deploy a web page to GitHub Pages
+  - Prepare your project for a successful migration
+  - Handle any binary files currently stored in your project
+  - Create important Git files like a `.gitignore`
+  - Import your project to GitHub
 prerequisites: |
   - A GitHub account
-  - The ability to navigate and edit files in GitHub
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:

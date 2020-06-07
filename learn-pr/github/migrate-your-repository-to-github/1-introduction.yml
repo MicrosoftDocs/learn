@@ -3,8 +3,8 @@ uid: learn.github.migrate-your-repository-to-github.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Learn how to use GitHub to start building and contributing to projects in about an hour.
-  ms.date: 06/03/2020
+  description: Learn to move your existing project to GitHub from a legacy version control system.
+  ms.date: 06/07/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
