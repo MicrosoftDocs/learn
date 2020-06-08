@@ -4,17 +4,16 @@ After you've used automated machine learning to train some models, you can deplo
 In Azure Machine Learning, you can deploy a service as an Azure Container Instances (ACI) or to an Azure Kubernetes Service (AKS) cluster. For production scenarios, an AKS deployment is recommended, for which you must create an *inference cluster* compute target. In this exercise, you'll use an ACI service, which is a suitable deployment target for testing, and does not require you to create an inference cluster.
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Automated ML** page, select the run for your automated machine learning experiment and view the **Details** tab.
-2. Select the algorithm name for the best model. Then use the **Deploy** button to deploy the model with the following settings:
+2. Select the algorithm name for the best model. Then, on the **Model** tab, use the **Deploy** button to deploy the model with the following settings:
     - **Name**: predict-rentals
     - **Description**: Predict cycle rentals
     - **Compute type**: ACI
     - **Enable authentication**: Selected
 3. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Successful**. You may need to select **&#8635; Refresh** periodically.
-4. In Azure Machine Learning studio, view the **Endpoints** page and select the **predict-rentals** real-time endpoint.
-5. When the deployment state is healthy, select the **Consume** tab and note the following information there. You need this information to connect to your deployed service from a client application.
+4. In Azure Machine Learning studio, view the **Endpoints** page and select the **predict-rentals** real-time endpoint. Then select the **Consume** tab and note the following information there. You need this information to connect to your deployed service from a client application.
     - The REST endpoint for your service
     - the Primary Key for your service
-6. Note that you can use the &#10697; link next to these values to copy them to the clipboard.
+5. Note that you can use the &#10697; link next to these values to copy them to the clipboard.
 
 ## Test the deployed service
 
@@ -23,7 +22,7 @@ Now that you've deployed a service, you can test it using some simple code.
 1. With the **Consume** page for the **predict-rentals** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page.
 On the **Notebooks** page, create a new file with the following settings:
     - **File name**: bike_test.ipynb
-    - **File type**: Python Notebooks
+    - **File type**: Notebook
     - **Overwrite if already exists**: Selected
     - **Select target directory**: *Select the folder with your user name under **User files***
 2. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
