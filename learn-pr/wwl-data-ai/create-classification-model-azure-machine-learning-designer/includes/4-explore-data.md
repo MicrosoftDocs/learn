@@ -76,7 +76,7 @@ To apply your data transformations, you need to run the pipeline as an experimen
 > [!div class="centered"]
 > ![diabetes-data dataset with Normalize Data module](../media/data-prep-pipeline.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **diabetes-training** on the **aml-cluster** compute cluster.
-3. Wait for the run to complete - this may take a few minutes and will be indicated by a &#x2705; icon on the **Normalize Data** module.
+2. Select **Submit**, and run the pipeline as a new experiment named **diabetes-training** on your compute cluster.
+3. Wait for the run to finish - this may take a few minutes.
 
 The dataset is now prepared for model training.
