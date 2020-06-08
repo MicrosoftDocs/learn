@@ -12,7 +12,7 @@ A non-blocking model would mean that we can execute multiple I/O operations at t
 
 Node.js uses the event-driven architecture: it has an event loop for orchestration and a worker pool for blocking tasks. The event loop is what enables Node.js to handle concurrent operations. Here is a high-level diagram illustrating how an event loop works under the hood:
 
-:::image type="content" source="../media/nodejs-event-loop.png" alt-text="Node.js event loop diagram":::
+:::image type="content" source="../media/nodejs-event-loop.svg" alt-text="Node.js event loop diagram":::
 
 Main phases overview:
 
@@ -34,4 +34,4 @@ Thanks to V8 and the modern techniques in the Compiler Optimizations space such 
 
 In order to support the powerful event-based programming model, Node has a built-in set of non-blocking I/O APIs (provided by the [libuv](https://github.com/libuv/libuv) library) to deal with common tasks such as filesystem or database manipulation: When you request Node to read some file content from disk, Node doesn't block waiting for the disk and the file descriptors to be ready; instead, the non-blocking I/O interface notifies Node when the file is ready. This non-blocking I/O works the same way when the browser notifies your code when a mouse or keyboard event has been triggered or when an XHR response has been received from a remote endpoint.
 
-:::image type="content" source="../media/nodejs-architecture.png" alt-text="Node.js high-level architecture":::
+:::image type="content" source="../media/nodejs-architecture.svg" alt-text="Node.js high-level architecture":::
