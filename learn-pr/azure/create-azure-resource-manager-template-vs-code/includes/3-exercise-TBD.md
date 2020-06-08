@@ -6,7 +6,7 @@ In this exercise, you create a Microsoft Azure Resource Manager Template and dep
 ## Create an Azure Resource Manager template
 
 1. Open Visual Studio Code and create a new file called *azuredeploy.json*.
-1. On the first line of the file, type *arm*.
+1. On the first line of the file, type **arm**.
 1. You will see an intellisense choice **!arm**. Choose that snippet by clicking on the box next to it. Your file will now look like this:
 
     ```json
@@ -67,7 +67,7 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
      --template-file $templateFile
     ```
 
-  Here, you set Azure CLI variables for the path to the template file to deploy and the name of this deployment. Then use the ```az deployment group create``` command to deploy the template to Azure.
+  Here, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then use the ```az deployment group create``` command to deploy the template to Azure.
 
 1. You see ```Running...``` in the terminal. When that finishes, navigate to the [Azure portal](portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, click on your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
@@ -83,7 +83,7 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
 
 1. Select *blanktemplate* to see what resources were deployed. In this case it will be empty since you didn't specify any resources in the template yet.
 
-    ![Portal interface for the the specific deployment with no resources listed](../media/3-dno-results.png)
+    ![Portal interface for the the specific deployment with no resources listed](../media/3-no-results.png)
 
 1. Leave the portal open in your browser. You will check on deployments again.
 
@@ -137,7 +137,7 @@ Here, you change the name of the deployment to better reflect what this deployme
 Here, you make your template more flexible by adding parameters that can be set at runtime. You create a parameter for the ```storageName``` value.
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the curly braces in the parameters attribute. ```"parameters":{},```
-1. Press <kbd>Enter<kbd> and then type **par**. You see a list of related snippets. Choose **arm-param**. This adds a generic parameter to the template. It will look like this:
+1. Press <kbd>Enter</kbd> and then type **par**. You see a list of related snippets. Choose **arm-param**. This adds a generic parameter to the template. It will look like this:
 
     ```json
      "parameters": {
@@ -150,7 +150,7 @@ Here, you make your template more flexible by adding parameters that can be set 
     },
     ```
 
-1. Change the parameter to be called **storageName**, leave the type as a string, and add a **minLength** value of **3**, a **maxLength** value of **24**, and add a description value of **The name of the Azure storage resource"**.
+1. Change the parameter to be called **storageName**, leave the type as a string, add a **minLength** value of **3**, a **maxLength** value of **24**, and add a description value of **The name of the Azure storage resource"**.
 1. The parameter block should look like this:
 
     ```json
@@ -236,7 +236,7 @@ Here you use parameters to limit the values allowed for a parameter.
 
 ### Deploy the template
 
-Here you deploy a successful deployment using a ```storageSKU``` that is in the allowed list, then try to deploy the template using a SKU that is not in the allowed list. The second deployment will fail as expected.
+Here you deploy successfully using a ```storageSKU``` parameter that is in the allowed list, then try to deploy the template using a ```storageSKU``` parameter that is not in the allowed list. The second deployment will fail as expected.
 
 1. Run the following commands to deploy the template.
 
@@ -253,7 +253,7 @@ Here you deploy a successful deployment using a ```storageSKU``` that is in the 
 
   Allow this deployment to finish. This deployment succeeds as expected.
 
-1. Run the following commands to deploy the template with a parameter that is not allowed.
+1. Run the following commands to deploy the template with a parameter that is not allowed. Here. you changed the ```storageSKU``` parameter to *Basic*.
 
     ```azurecli
     templateFile="azuredeploy.json"
@@ -272,10 +272,10 @@ Here you deploy a successful deployment using a ```storageSKU``` that is in the 
 
 ## Add output to the template
 
-Here you addd to the ```outputs``` section of the template to output the endpoint for the storage account resource.
+Here you add to the ```outputs``` section of the template to output the endpoints for the storage account resource.
 
 1. 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the curly braces in the outputs attribute. ```"outputs":{},```
-1. Press <kbd>Enter<kbd> and then type **out**. You see a list of related snippets. Choose **arm-output**. This adds a generic output to the template. It will look like this:
+1. Press <kbd>Enter</kbd> and then type **out**. You see a list of related snippets. Choose **arm-output**. This adds a generic output to the template. It will look like this:
 
     ```json
     "outputs": {
@@ -285,7 +285,7 @@ Here you addd to the ```outputs``` section of the template to output the endpoin
       }
     ```
 
-1. Change ```output1``` to **"storageEndpoint"**, the value of ```type``` to **"object"**, and the value of ```value``` to **"[[parameters('storageName')].primaryEndpoints]"**. This is the expression we discussed in the previous unit that gets the endpoint data, and because we specified *object as the type, it will return the object in JSON format.
+1. Change ```output1``` to **"storageEndpoint"**, the value of ```type``` to **"object"**, and the value of ```value``` to **"[reference(parameters('storageName')).primaryEndpoints]"**. This is the expression we discussed in the previous unit that gets the endpoint data, and because we specified *object* as the type, it will return the object in JSON format.
 
     ```json
     "outputs": {
@@ -297,9 +297,9 @@ Here you addd to the ```outputs``` section of the template to output the endpoin
 
 1. Save the file.
 
-### deploy the template
+### Deploy the template
 
-Here, you deploy the template and see the endpoint output as JSON.
+Here, you deploy the template and see the endpoints output as JSON.
 
 1. Run the following commands to deploy the template.
 
@@ -316,10 +316,10 @@ Here, you deploy the template and see the endpoint output as JSON.
 
 1. Notice the output.
 
-    ![Terminal window showing the primary endpoints output as JSON](../media/3-add-outputs-result.png)
+    ![Terminal window showing the primary endpoints output as JSON](../media/3-add-output-result.png)
 
 1. In the portal, navigate to your *addOutputs* deployment. You can find your output there as well.
 
-    [Azure portal showing the output selection in the left menu](../media/3-portal-outputs.png)
+    ![Azure portal showing the output selection in the left menu](../media/3-portal-outputs.png)
 
 
