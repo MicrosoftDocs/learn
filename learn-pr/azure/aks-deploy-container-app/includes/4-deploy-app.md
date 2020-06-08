@@ -2,25 +2,25 @@
 
 For this module, we'll use a static web application built using Hugo, a static website generator written in Golang. This application is available [in this repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app).
 
-In this section we'll run through all the engineering aspects of a containerized application and understand how are they made and what makes them different from other applications.
+In this section, we'll run through all the engineering aspects of a containerized application and understand how you can create one, and what makes them different from other applications.
 
 ## Images
 
-The first thing you'll notice is that there's a Dockerfile in the root of the repository. That's because you'll be using an Docker image to spin up your application.
+The first thing you'll notice is that there's a Dockerfile in the root of the repository. That's because you'll be using a Docker image to spin up your application.
 
-Kubernetes is a __container__ orchestrator, which means that we'll be using Docker containers to build and run the application within an image and deploy this image to the AKS cluster.
+Kubernetes is a __container__ orchestrator. Which means that we'll be using Docker containers to build and run the application within an image and deploy this image to the AKS cluster.
 
 ### Build your image
 
 First of all, it's required for you to have Docker [installed](https://docs.docker.com/get-docker/) in your computer.
 
-1. The first thing you need to do is clone the repository by clicking the green **"Clone"** button on the top of the page or by issuing the following command in your terminal
+1. The first thing you need to do is clone the repository by clicking the green **"Clone"** button on the top of the page, or by issuing the following command in your terminal
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app.git
     ```
 
-    This will clone the entire repository to a directory called `mslearn-aks-deploy-container-app` where you will be able to start building the image.
+    This command will clone the entire repository to a directory called `mslearn-aks-deploy-container-app` where you can start building the image.
 
 1. In the terminal, step into the directory you just created
 
@@ -47,19 +47,19 @@ First of all, it's required for you to have Docker [installed](https://docs.dock
 
 ### Create a container registry
 
-Kubernetes is only able to spin up an image if that image is hosted in what is called a :::no-loc text="Container Registry":::, also called CR. :::no-loc text="Registries"::: are places where you can store your images safely in the cloud and download them later on.
+Kubernetes can only spin up an image if that image is hosted in a :::no-loc text="Container Registry":::, also called CR. :::no-loc text="Registries"::: are places where you can store your images safely in the cloud and download them later on.
 
 There are a few free-to-use CRs, but the company required that you use Azure Container Registry, or ACR. So, let's create an ACR to put our image and spin that up in our recently created Kubernetes cluster.
 
-1. Access the [Azure Portal](https://portal.azure.com) and search for `Container Registries` in the search bar.
+1. Access the [Azure portal](https://portal.azure.com) and search for `Container Registries` in the search bar.
 
     :::image type="content" source="../media/4-acr-search.png" alt-text="Search for Container Registries":::
 
     Click on the :::no-loc text="Container Registries"::: search result
 
-1. There should not be any CRs created, so click the __"Create Container Registry"__ blue button
+1. There shouldn't be any CRs created, so click the __"Create Container Registry"__ blue button
 
-1. In the following screen choose the same subscription you're using to host your AKS cluster, and also the same Resource Group. Give your CR a name and set the region to the same region as the AKS cluster. Also, choose the __basic__ SKU option
+1. In the following screen, choose the same subscription you're using to host your AKS cluster, and also the same Resource Group. Give your CR a name and set the region to the same region as the AKS cluster. Also, choose the __basic__ SKU option
 
     :::image type="content" source="../media/4-create-acr.png" alt-text="Create the ACR":::
 
@@ -67,7 +67,7 @@ There are a few free-to-use CRs, but the company required that you use Azure Con
 
 1. Wait for the creation to finish and click the "Go to Resource" button when it appears
 
-### Login to your container registry
+### Log in to your container registry
 
 Once the CR is created, you need to connect your local Docker runtime to the :::no-loc text="registry"::: so it can push your image to the remote destination. To do so, follow these steps:
 
@@ -79,15 +79,15 @@ Once the CR is created, you need to connect your local Docker runtime to the :::
 
     There's no need to include the `.azurecr.io` in the name of the CR when logging in.
 
-    If you ever need to see your login credentials, just access the ACR resource in the [Azure Portal](https://portal.azurel.com) and go to the "Access keys" tab on the left-hand side:
+    If you ever need to see your sign-in credentials, just access the ACR resource in the [Azure portal](https://portal.azurel.com) and go to the "Access keys" tab on the left-hand side:
 
     :::image type="content" source="../media/4-acr-login.png" alt-text="Check your credentials on the 'Access Keys' tab":::
 
-1. After the login, your local Docker runtime should be already connected to the ACR resource.
+1. After the sign-in, your local Docker runtime should be already connected to the ACR resource.
 
 ### Push an image to the ACR
 
-Now it's time to put everything together and push the image to the ACR you just created.
+Now it's time to put everything together and push the image to the ACR you created.
 
 1. Build the image again using the following command
 
