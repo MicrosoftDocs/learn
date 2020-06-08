@@ -70,7 +70,7 @@ To set up the work item:
     ![Screenshot of Azure DevOps State field with the down chevron button highlighted.](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Screenshot of Azure DevOps Boards showing the vulnerabilities check card now in the Doing column.](../media/3-azure-boards-wi5-doing.png)
+    ![Screenshot of Azure Boards showing the vulnerabilities check card now in the Doing column.](../media/3-azure-boards-wi5-doing.png)
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.
 
