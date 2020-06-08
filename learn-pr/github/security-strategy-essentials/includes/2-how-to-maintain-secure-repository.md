@@ -22,13 +22,13 @@ With the introduction of DevOps practices however, security testing is much easi
 
 Overall, when the time for rework is taken into account, adding security to your DevOps practices can actually reduce the overall time it takes to develop quality software.
 
-## Communicating security policy with `SECURITY.md`
+## Communicating security policy with SECURITY.md
 
 The community benefits of GitHub are substantial, but they also carry potential risks. The fact that anyone can propose bug fixes publicly comes with certain responsibilities. The most important is the responsible disclosure of information that could lead to security exploits before their underlying bugs can be fixed. Developers looking to report or address security issues look for a `SECURITY.md` file in the root of a repository in order to responsibly disclose their concerns. Providing guidance in this file will ultimately speed up the resolution of these critical issues. 
 
 To learn more about `SECURITY.md`, see [Adding a security policy to your repository](https://help.github.com/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository?azure-portal=true).
 
-## Keeping sensitive files out of your repository with `.gitignore`
+## Keeping sensitive files out of your repository with .gitignore
 
 It's easy for developers to overlook files included in a commit. Sometimes these overlooked files are benign, such as intermediate build files. However, there is always the risk that someone may inadvertently commit sensitive data, such as an API key or private configuration data, that could be used by a malicious actor. One technique to help avoid the majority of this risk is to build and maintain `.gitignore` files. These files instruct client tools, such as the `git` command line utility, to ignore paths and patterns when aggregating files for a commit.
 
