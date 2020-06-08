@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.github.security-strategy-essentials
+uid: learn.github.maintain-secure-repository-github
 metadata:
   title: "Maintain a secure repository by using GitHub best practices - Learn"
   description: Learn best practices for building, hosting, and maintaining a secure repository on GitHub.
@@ -35,10 +35,10 @@ products:
 - github
 - azure
 units:
-- learn.github.security-strategy-essentials.1-introduction
-- learn.github.security-strategy-essentials.2-how-to-maintain-secure-repository
-- learn.github.security-strategy-essentials.3-security-strategy-essentials
-- learn.github.security-strategy-essentials.4-knowledge-check
-- learn.github.security-strategy-essentials.5-summary
+- learn.github.maintain-secure-repository-github.1-introduction
+- learn.github.maintain-secure-repository-github.2-how-to-maintain-secure-repository
+- learn.github.maintain-secure-repository-github.3-maintain-secure-repository-github
+- learn.github.maintain-secure-repository-github.4-knowledge-check
+- learn.github.maintain-secure-repository-github.5-summary
 badge:
-  uid: learn.github.security-strategy-essentials.badge
+  uid: learn.github.maintain-secure-repository-github.badge
