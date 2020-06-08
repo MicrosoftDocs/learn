@@ -35,7 +35,7 @@ Beyond Git data, you may also have a desire to retain issues, pull requests, or 
 
 As a best practice, GitHub repositories should be limited to the files necessary for building projects. Avoid committing large binary files, such as build artifacts. Binary files like spreadsheets and presentations are better suited to be tracked on portals that understand how to serve and version them properly. If you have a need to version large binary files, consider another tool, like [git-lfs](https://git-lfs.github.com/?azure-portal=true).
 
-### Creating important Git files like `.gitignore`
+### Creating important Git files like .gitignore
 
 Git supports `.gitignore` files to help enforce version control file policies. These files define the search patterns used to exclude files and folders from source control tracking. The simple example below recursively excludes **any** folders called *Bin* or *bin*, as well as their contents, from source control tracking.
 
