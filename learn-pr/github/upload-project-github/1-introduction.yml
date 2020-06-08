@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.upload-your-project-to-github.1-introduction
+uid: learn.github.upload-project-github.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Learn how to use GitHub to start building and contributing to projects in about an hour.
-  ms.date: 06/03/2020
+  description: Learn to upload your existing project to GitHub.
+  ms.date: 06/08/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

@@ -1,4 +1,4 @@
-In this exercise you use GitHub Learning Lab to tour GitHub's key features, including issues, commits, and pull requests.
+In this exercise you use GitHub Learning Lab to plan and execute the successful upload of a project to GitHub.
 
 The GitHub Learning Lab is an integrated experience that's easy to use. You get feedback and instructions throughout the lab as you work in your GitHub repository.
 
@@ -18,6 +18,5 @@ When you've finished the exercise in GitHub, return here for:
 > * A summary of what you've learned
 > * To earn a badge for completing this module
 
-
 > [!div class="nextstepaction"]
-> [Start the learning lab on GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true)
+> [Start the learning lab on GitHub](https://lab.github.com/githubtraining/uploading-your-project-to-github?azure-portal=true)
