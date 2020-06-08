@@ -1,6 +1,6 @@
 Each device type (iOS/iPadOS, Windows, Android, macOS) provides a different set of enrollment methods. These methods range from users adding their own device, to using a special user account that's used to enroll and manage multiple corporate-owned devices. When a user adds their own device to Intune or Configuration Manager it is called bring your own device (BYOD). When you a special user account to enroll and manage multiple corporate-owned devices, you use the Device enrollment manager (DEM).
 
-#### iOS/iPadOS and macOS enrollment methods
+## iOS/iPadOS and macOS enrollment methods
 
 The following list provides the available enrollment methods:
 - **BYOD** - *(iOS/iPadOS and macOS)* The Bring Your Own Device method allows your end-users to enroll their device using Intune. An Apple MDM Push certificate is required for Intune to manage iOS/iPadOS and macOS devices. 
@@ -9,7 +9,7 @@ The following list provides the available enrollment methods:
 - **USB-SA** - *(iOS/iPadOS)* IT admins use Apple Configurator, through USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they're then prompted to run Setup Assistant to enroll their device. 
 - **USB-Direct** - *(iOS/iPadOS)* For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a wipe. Devices are managed as user-less devices. They're not locked or supervised and can't support Conditional Access, jailbreak detection, or mobile application management.
 
-#### Windows enrollment methods
+## Windows enrollment methods
 
 The following list provides the available enrollment methods:
 - **BYOD** - The Bring Your Own Device method allows your end-users to enroll their device using Intune. Bring your own devices (BYOD) include personally-owned phones, tablets, and PCs. Users install and run the Company Portal app to enroll BYODs. This program lets users access company resources like email.
@@ -20,7 +20,7 @@ The following list provides the available enrollment methods:
 - **Co-management** - Co-management is where you concurrently manage Windows 10 devices with both Configuration Manager and Microsoft Intune. It combines your existing on-premises Configuration Manager investment with the cloud using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority. You keep some tasks on-premises, while running other tasks in the cloud with Intune.
 - **GPO** - You can use a Group Policy (GPO) to trigger auto-enrollment to MDM for Active Directory (AD) domain-joined devices. The enrollment into Intune is triggered by a group policy created on your local AD and happens without any user interaction. This means you can automatically mass-enroll a large number of domain-joined corporate devices into Microsoft Intune. The enrollment process starts in the background once you sign in to the device with your Azure AD account.
 
-#### Android enrollment methods
+## Android enrollment methods
 
 The following list provides the available **personal** enrollment methods:
 - **BYOD** or **Corporate Owned** - End-users enroll their personal or corporate-owned Android device using the Company Portal app to get secure access to company email, apps, and data. 
@@ -33,7 +33,7 @@ The following list provides the available **corporate** enrollment methods:
 - **NFC, Token, QR code, Zero Touch on Android Enterprise Dedicated** - Android Enterprise supports corporate-owned, single-use, kiosk-style devices with its dedicated devices solution set. Devices that you manage in this way are enrolled in Intune without a user account and aren't associated with any end user. They're not intended for personal use applications or apps that have a strong requirement for user-specific account data such as Outlook or Gmail. Intune enrollment for dedicated devices starts with a factory reset. How you enroll your Android Enterprise devices depends on the operating system.
 - **NFC, Token, QR code, Zero Touch on Android Enterprise Fully Managed** - Android Enterprise fully managed devices are corporate-owned devices associated with a single user and used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles. Intune enrollment for fully managed devices starts with a factory reset. How you enroll your Android Enterprise devices depends on the operating system.
 
-### Enrollment options
+## Enrollment options
 
 Intune admins can configure device enrollment to help users and enable Intune capabilities. Intune includes the following enrollment options:
 - Terms and conditions - Optionally require that users accept your company's terms and conditions before they can enroll their devices and access resources like company apps and email. 
