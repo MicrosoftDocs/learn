@@ -40,7 +40,7 @@ Andy and Mara review the slides and investigate further. They find a few options
 
 ### GitLab
 
-[GitLab](https://about.gitlab.com?azure-portal=true) is a CI/CD pipeline tool that enables you to scan the dependencies in code that comes from GitLab repositories. It supports Javascript, Ruby, Python, PHP, and Java. 
+[GitLab](https://about.gitlab.com?azure-portal=true) is a CI/CD pipeline tool that enables you to scan the dependencies in code that comes from GitLab repositories. It supports JavaScript, Ruby, Python, PHP, and Java. 
 
 Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=onlyutkarsh.gitlab-integration&azure-portal=true) enables you to add a GitLab repository as a source.
 
