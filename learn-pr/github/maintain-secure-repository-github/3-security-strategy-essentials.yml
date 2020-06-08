@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.maintain-secure-repository-github.3-maintain-secure-repository-github
+uid: learn.github.maintain-secure-repository-github.3-security-strategy-essentials
 title:  Exercise - Secure strategy essentials
 metadata:
   title:  Exercise - Secure strategy essentials
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 55
 content: |
-  [!include[](includes/3-maintain-secure-repository-github.md)]
+  [!include[](includes/3-security-strategy-essentials.md)]
