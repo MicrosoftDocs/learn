@@ -1,4 +1,4 @@
-Now that you've deployed the Virtual Machines containing your web application to the sandbox environment, you'll use the Azure App Service Migration Assistant to perform an assessment and migration to Azure App Services.
+Now that you've deployed the Virtual Machines containing your web application to the sandbox environment, you'll use the Azure App Service Migration Assistant to perform an assessment and migration to Azure App Service.
 
 > [!Important]
 > This module assumes you've successfully completed the steps in a previous unit and you're using Remote Desktop to view the Virtual Machine running in our sandboxed Azure Virtual Machine environment.  If not, please make sure you complete those steps before continuing on to this unit.

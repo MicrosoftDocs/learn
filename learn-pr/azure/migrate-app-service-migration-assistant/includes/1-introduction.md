@@ -4,20 +4,19 @@ Suppose your company has legacy ASP.NET web applications that you want to move t
 
 A better option would be to use the Azure App Service Migration Assistant.  You install and run the Azure App Service Migration Assistant on your server to assess each web application it hosts.  If the web application can be migrated, you merely provide a few additional details about your Azure account, target resource group, and so on to complete the migration.  If it cannot be migrated, it provides useful information that could help you re-architect the application to remove the dependencies that hinder the app's move to the cloud.
 
-In this module, you will create an application that accepts user input from the keyboard, combine that input with hard-coded text, and present the final result back to the user. You’ll learn some initial concepts like basic C# syntax including several common operators, the string data type and how to create literal strings, how to initialize variables then set and retrieve values from a variable, why you would want to comment out a line of code, how your code is structured into classes and methods and how to call methods.
+In this module, you will use the Azure App Service Migration in a simulated sandbox environment to see it at work.  You'll perform an assessment, then a migration of a legacy ASP.NET application to Azure App Service.
 
-By the end of this module, you will understand the potential hurdles to migrating a legacy ASP.NET application currently running on Internet Information Services to Azure App Service.  You'll install and run the Azure App Service Migration Assistant in a VM that simulates a typical migration scenario.  You'll use the Azure App Service Migration Assistant to migrate the web application to Azure App Services and see it working.
+By the end of this module, you will understand the potential hurdles to migrating a web application currently running on Internet Information Services to Azure App Service.
 
 ## Learning objectives
 
 By the end of this module, you will be able to:
 
-- Describe the kinds of issues that you might face when migrating an application hosted on Internet Information Services to Azure App Services.
-- Install and run the Azure App Service Migration Assistant.
-- Migrate an ASP.NET MVC Core web app to Azure App Services using the Azure App Service Migration Assistant.
+- Identify the kinds of issues that you might face when migrating an application hosted on Internet Information Services (IIS) to Azure App Service.
+- Assess the migration readiness of an on-premises web application with the Azure App Service Migration Assistant.
+- Use the Migration Assistant to migrate an on-premises web application to Azure App Service.
 
 ## Prerequisites
 
 - You should have some familiarity in working with Virtual Machines, Windows Server and Internet Information Services
 - You should have some basic understanding of how Internet Information Services works, and its extensibility points, and how it hosts ASP.NET applications
-- You should understand the benefits of Azure App Service, and understand why this is desireable to organizations
