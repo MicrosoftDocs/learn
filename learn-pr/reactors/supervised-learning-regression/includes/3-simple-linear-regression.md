@@ -37,9 +37,12 @@ plt.plot(x_plot, y_plot, c='orange');
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-fit.svg" alt-text="Scatter plot model fit output":::
+
+***
 
 > [!NOTE]
 > Notice in the code cell above that we did not fit the model using `model.fit(df['ppgdp'], df['lifeExpF'])`. Instead, we had to use `df['ppgdp'][:, np.newaxis]` for our predictors rather than just `df['ppgdp']`. The addition of `[:, np.newaxis]` changes `df['ppgdp']` from a pandas `Series` to an array in matrix format. (If you're unsure what that looks like, create a new code cell below this cell using **Insert > Insert Cell Below** and then run `df['ppgdp']` and then `df['ppgdp'][:, np.newaxis]` in order to see the difference.
@@ -60,7 +63,7 @@ r2_score(df['lifeExpF'], predictions)
 The output is:
 
 ```Output
-TBD
+0.30135661006266223
 ```
 
 This first model accounts for only 30 percent of the variability in `lifeExpF` and is really not a very good representation of the relationship between economic activity and female life expectancy.
@@ -76,9 +79,16 @@ df.head()
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+> |  | region | group | fertility | ppgdp | lifeExpF | pctUrban | log_ppgdp |
+> | --- | --- | --- | --- | --- | --- | --- | --- |
+> | 0 | Asia | other | 5.968 | 499.0 | 49.49 | 23 | 2.698101 |
+> | 1 | Europe | other | 1.525 | 3677.2 | 80.40 | 53 | 3.565517 |
+> | 2 | Africa | africa | 2.142 | 4473.0 | 75.00 | 67 | 3.650599 |
+> | 3 | Africa | africa | 5.135 | 4321.9 | 53.17 | 59 | 3.635675 |
+> | 4 | Caribbean | other | 2.000 | 13750.1 | 81.10 | 100 | 4.138306 |
 
 Let's now plot our new `log_ppgdp` column against `lifeExpF` to see if there is a more linear relationship.
 
@@ -101,9 +111,12 @@ plt.plot(x_plot, y_plot, c='orange');
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-linear-regression.svg" alt-text="Scatter plot model linear regression output":::
+
+***
 
 This is much better, but it is still far from perfect. The shape of the data seems to have a curve to it and we will examine how to deal with that shortly. However, let's first interpret the model have right here to see what it tells us. How much better is it than the first model? Let's look at the $R^2$ score.
 
@@ -117,7 +130,7 @@ r2_score(df['lifeExpF'], predictions)
 The output is:
 
 ```Output
-TBD
+0.5963834900027573
 ```
 
 Using `log_ppgdp` rather than `ppgdp` in the model roughly doubles the amount of variance in `lifeExpF` that we can account for with this model (to 60 percent). But what does our model actually mean?
@@ -130,7 +143,8 @@ print("Model intercept:", model.intercept_)
 The output is:
 
 ```Output
-TBD
+Model slope:     11.556295659454959
+Model intercept: 29.814802497051275
 ```
 
 Remember that in high school algebra lines were generally defined by an equation of the form
@@ -140,7 +154,7 @@ $$
 
 where $a$ is the *slope* and $b$ is the *intercept*. That samer terminology applies in linear regression. The slope refers to our model's predicted change in units of female life expectancy (years) for each unit of the base-10 logarithm of per-capita GDP. In other words, our model predicts that, on average, women's life expectancies increase by 11.6 years every time per-capita GDP increases 10 fold.
 
-The intercept is a little more abstract because it is not directly tied to any data point. It shows the value of the $y$ - axis at the point where our line crossed that axis (where $x=0$). If we were still modeling `ppgdp` versus `lifeExpF`, we might interpret the intercept as representing women's baseline life expectancy in a hypothetical country with a per-capita GDP of USD 0: 29.8 years. However, we are modeling `log_ppgdp` versus `lifeExpF`, and the logarithm of 0 is undefined. Therefore, it can be easiest to accept the intercept in our model as a mathematical abstraction necessary to making other parts of our model work. Our model can be stated as:
+The intercept is a little more abstract because it is not directly tied to any data point. It shows the value of the $y$ - axis at the point where our line crossed that axis (where $x=0$). If we were still modeling `ppgdp` versus `lifeExpF`, we might interpret the intercept as representing women's baseline life expectancy in a hypothetical country with a per-capita GDP of USD 0: 29.8 years. However, we are modeling `log_ppgdp` versus `lifeExpF`, and the logarithm of 0 is undefined. Therefore, it can be easiest to accept the intercept in our model as a mathematical abstraction necessary to making other parts of our model work. Our model can be stated as:
 
 $$
 {\rm lifeExpF} = 11.6 \times {\rm log\_ppgdp} + 29.8
