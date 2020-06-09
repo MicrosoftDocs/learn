@@ -374,7 +374,7 @@ print('Empirical P-value:', empirical_P)
 Observed Difference: 0.733522727272728 Empirical P-value: 0.0043
 ```
 
-![Deflategate example](../media/61-deflategate-31-1.png)
+![Deflategate example.](../media/61-deflategate-31-1.png)
 
 As in previous examples of this test, the bulk of the distribution is
 centered around 0. Under the null hypothesis, the Patriots' drops are a

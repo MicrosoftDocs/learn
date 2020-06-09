@@ -2,9 +2,12 @@ After creating and running a pipeline to train the model, you need a second pipe
 
 ## Create and run an inference pipeline
 
-1. View the **Auto Price Training** pipeline you created in the previous unit.
+1. In Azure Machine Learning Studio, click the **Designer** page to view all of the pipelines you have created. Then open the **Auto Price Training** pipeline you created previously.
 2. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Auto Price Training-real time inference** will be opened.
-3. Rename the new pipeline to **Predict Auto Price**, and then review the new pipeline. Note that some of the transformations and training steps have been encapsulated in this pipeline so that the statistics from your training data will be used to normalize any new data values, and the trained model will be used to score the new data.
+3. Rename the new pipeline to **Predict Auto Price**, and then review the new pipeline. It contains a web service input for new data to be submitted, and a web service output to return results. Some of the transformations and training steps have been encapsulated in this pipeline so that the statistics from your training data will be used to normalize any new data values, and the trained model will be used to score the new data.
+
+> [!NOTE]
+> If your new pipeline doesn't contains web service input and web service output modules, go back to the **Designer** page and then re-open the new inference pipeline.
 
 You are going to make the following changes to the inference pipeline:
 
@@ -51,7 +54,7 @@ Follow the remaining steps below, using the image and information above for refe
 > [!div class="centered"]
 > ![A visual inference pipeline](../media/inference-pipeline.png)
 
-10. Submit the pipeline as a new experiment named **predict-auto-price** on your compute instance. This may take a while!
+10. Submit the pipeline as a new experiment named **predict-auto-price** on your compute cluster. This may take a while!
 11. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted prices for the three cars in the input data.
 12. Close the visualization window.
 

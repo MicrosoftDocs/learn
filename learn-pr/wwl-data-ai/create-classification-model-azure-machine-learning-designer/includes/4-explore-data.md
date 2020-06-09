@@ -30,7 +30,7 @@ To get started with Azure Machine Learning designer, first you must create a pip
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, view the **Designer** page and select **+** to create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Diabetes Training** (if the **Settings** pane is not visible, click the **&#9881;** icon next to the pipeline name at the top).
-3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the compute instance you created previously.
+3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the **aml-cluster** compute cluster you created previously.
 4. On the left side of the designer, expand the **Datasets** section, and drag the **diabetes-data** dataset you created in the previous exercise onto the canvas.
 5. Select the **diabetes-data** dataset on the canvas, and view its settings (the settings pane for the dataset may open automatically and cover the canvas). On the **outputs** tab, select the **Visualize** icon (which looks like a column chart).
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms.
@@ -69,14 +69,14 @@ The data transformation is normalizing the numeric columns to put them on the sa
 
 ## Run the pipeline
 
-To see the effect of your data transformations, you need to run the pipeline as an experiment.
+To apply your data transformations, you need to run the pipeline as an experiment.
 
 1. Ensure your pipeline looks similar to this:
 
 > [!div class="centered"]
 > ![diabetes-data dataset with Normalize Data module](../media/data-prep-pipeline.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **diabetes-training**.
-3. Wait for the run to complete - this may take a few minutes and will be indicated by a &#x2705; icon on the **Normalize Data** module.
+2. Select **Submit**, and run the pipeline as a new experiment named **diabetes-training** on your compute cluster.
+3. Wait for the run to finish - this may take a few minutes.
 
 The dataset is now prepared for model training.

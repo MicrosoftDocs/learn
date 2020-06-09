@@ -97,9 +97,9 @@ mass, puts it under a microscope, takes a picture, and a trained lab
 tech analyzes the picture to determine whether it is cancer or not. We
 get a picture like one of the following:
 
-![benign](../media/benign.png)
+![Benign.](../media/benign.png)
 
-![cancer](../media/malignant.png)
+![Cancer.](../media/malignant.png)
 
 Unfortunately, distinguishing between benign vs malignant can be tricky.
 So, researchers have studied the use of machine learning to help with
@@ -153,7 +153,7 @@ patients_with_colors = patients.join('Class', color_table)
 patients_with_colors.scatter('Bland Chromatin', 'Single Epithelial Cell Size', group='Color')
 ```
 
-![Accuracy of Classifier](../media/92-accuracy-classifier-15-0.png)
+![Scatterplot of bland chromatin and single epithelial cell size.](../media/92-accuracy-classifier-15-0.png)
 
 Oops. That plot is utterly misleading, because there are a bunch of
 points that have identical values for both the x- and y-coordinates. To
@@ -173,7 +173,7 @@ Table().with_columns(
     ).join('Class', color_table).scatter(1, 2, group='Color')
 ```
 
-![Accuracy of Classifier](../media/92-accuracy-classifier-17-0.png)
+![Classifier example.](../media/92-accuracy-classifier-17-0.png)
 
 For instance, you can see there are lots of samples with chromatin = 2
 and epithelial cell size = 2; all non-cancerous.

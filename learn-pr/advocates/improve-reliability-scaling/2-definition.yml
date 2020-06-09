@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-scaling.2-definition
+title: "What is scalability?"
+metadata:
+  title: "What is scalability?"
+  description: "What is scalability?"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-definition.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Making your application or service more scalable can also make it:'
+    choices:
+    - content: 'less complex'
+      isCorrect: false
+      explanation: 'With scaling, especially when scaling out, there is often an increase in complexity.'
+    - content: 'more reliable'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'easier to troubleshoot'
+      isCorrect: false
+      explanation: 'Because (especially when scaling out) there are more moving parts, it may not be easier to troubleshoot.'
+
+  - content: 'Making your application or service more scalable can also make it:'
+    choices:
+    - content: 'less complex'
+      isCorrect: false
+      explanation: 'With scaling, especially when scaling out, there is often an increase in complexity.'
+    - content: 'more reliable'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'easier to troubleshoot'
+      isCorrect: false
+      explanation: 'Because (especially when scaling out) there are more moving parts, it may not be easier to troubleshoot.'
+
+  - content: 'Adding more components or resources to spread the load over a distributed architecture is referred to as:'
+    choices:
+    - content: 'scaling up'
+      isCorrect: false
+      explanation: 'Scaling up is scaling a single resource to be bigger.'
+    - content: 'scaling out'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'inherently scalable'
+      isCorrect: false
+      explanation: 'This is the definition for scaling out, inherently scalable means you do not have explicitly configure scaling.'
+    - content: 'auto scaling'
+      isCorrect: false
+      explanation: 'This is the definition for scaling out, auto scaling is an offering that allows you to configure specific scaling behavior.'
+      

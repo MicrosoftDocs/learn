@@ -65,7 +65,7 @@ quiz:
     choices:
     - content: "SaaS is a software model in which updates and patches are not required to be installed manually by every end user."
       isCorrect: false
-      explanation: "That's not quite right. SaaS is a software model in which updates and patches are not required to be installed manually by every end user, but is this the only valid response? Picture yourself using Out or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Office online versus buying and installing an application on your own computer?"
+      explanation: "That's not quite right. SaaS is a software model in which updates and patches are not required to be installed manually by every end user, but is this the only valid response? Picture yourself using Outlook or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Office online versus buying and installing an application on your own computer?"
     - content: "SaaS is a software model in which a cloud vendor hosts services. Those services are made available to end users over a network, typically the internet."
       isCorrect: false
       explanation: "That's not quite right. Cloud vendors do host services with SaaS, but is this the only valid response? Picture yourself using Office online or any other SaaS application. What benefits does SaaS give you? What's unique about using a service like Office online versus buying and installing an application on your own computer?"
