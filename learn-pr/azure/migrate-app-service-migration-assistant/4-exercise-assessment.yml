@@ -11,5 +11,6 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/4-exercise-assessment.md)]
