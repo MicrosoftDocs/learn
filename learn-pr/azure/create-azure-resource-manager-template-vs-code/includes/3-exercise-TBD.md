@@ -7,7 +7,7 @@ In this exercise, you create a Microsoft Azure Resource Manager Template and dep
 
 1. Open Visual Studio Code and create a new file called *azuredeploy.json*.
 1. On the first line of the file, type **arm**.
-1. You will see an intellisense choice **!arm**. Choose that snippet by clicking on the box next to it. Your file will now look like this:
+1. You see an intellisense choice **!arm**. Choose that snippet by clicking on the box next to it. Your file will now look like this:
 
     ```json
     {
@@ -22,13 +22,13 @@ In this exercise, you create a Microsoft Azure Resource Manager Template and dep
     }
     ```
 
-  Notice that his file has all of the sections of an Azure Resource Manager template that we discussed in the last unit.
+  Notice that this file has all of the sections of an Azure Resource Manager template that we discussed in the last unit.
 
 1. Save the changes to the file.
 
 ## Deploy the Azure Resource Manager template to Azure
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI tools](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) installed and that you are signing in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed and that you are signing in to the same account that activated the sandbox.
 
 ### Sign in to Azure
 
@@ -39,7 +39,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     ```
 
 1. Once you are logged in, you see a list of the subscriptions associated with this account. If you activated the sandbox, you see one called *Concierge Subscription*. You use this one for the rest of the exercise.
-1. Set the default subscription for all of the Azure CLI commands you run in this session.
+1. Set the default subscription for all of the Azure CLI commands you run in this session. If you have used more than one sandbox recently, there may be more than one *Concierge Subscription* listed. In this case, use the subscription ID without quotes instead of the subscription name.
 
     ```azurecli
     az account set --subscription "Concierge Subscription"
@@ -67,9 +67,9 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
      --template-file $templateFile
     ```
 
-  Here, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then use the ```az deployment group create``` command to deploy the template to Azure.
+  In the top section of this code, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```az deployment group create``` command to deploy the template to Azure.
 
-1. You see ```Running...``` in the terminal. When that finishes, navigate to the [Azure portal](portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, click on your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+1. You see ```Running...``` in the terminal. When that finishes, navigate to the [Azure portal](portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
 1. On the left side panel, choose *Resource groups*.
 1. Select <rgn>[sandbox resource group name]</rgn>.
@@ -96,12 +96,12 @@ Here, you add an Azure storage account resource to the template using a snippet 
 
 1. Your file will look like this:
 
-    [!code-json[](../code/parameter1?highlight=3-4)]
+    [!code-json[](../code/parameter1)]
 
   Values that you should edit are highlighted in new section of your file and can be navigated using the <kbd>tab</kbd> key.
 
 1. Change the values of the resource *name:* and *displayName:* to something unique. For example *learnexercise12321*. This name must be unique across all of Azure, so choose something unique to you.
-1. Change the value of the sku name from *Premium_LRS* to **Standard**. Do the same for the value of *tier*.
+1. Change the value of the sku *name* from *Premium_LRS* to **Standard**. Do the same for the value of *tier*.
 1. Note that the location of the resource is set to the location of the resource group where it will be deployed. Leave the default here.
 1. Save the file.
 
@@ -168,13 +168,13 @@ Here, you make your template more flexible by adding parameters that can be set 
 
 1. Use the new parameter in the ```resources``` block in both the ```name``` and ```displayName``` values. The entire file will look like this:
 
-   [!code-json[](../code/parameter2?highlight=3-4)]
+   [!code-json[](../code/parameter2?highlight=5-12,17,21)]
 
 1. Save the file.
 
-### Deploy the updated template
+### Deploy the parameterized template
 
-Here, you change the name of the deployment to better reflect what this deployment does.
+Here, you change the name of the deployment to better reflect what this deployment does and fill in a value for the new parameter.
 
 1. Run the following Azure CLI commands in the terminal. This is the same code you used previously, however the name of the deployment is changed and you need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
 
@@ -230,7 +230,7 @@ Here you use parameters to limit the values allowed for a parameter.
 
 1. The entire file will look like this:
 
-    [!code-json[](../code/parameter3?highlight=3-4)]
+    [!code-json[](../code/parameter3?highlight=13-26,40)]
 
 1. Save the file.
 
@@ -297,7 +297,7 @@ Here you add to the ```outputs``` section of the template to output the endpoint
 
 1. Save the file.
 
-### Deploy the template
+### Deploy the template with an output
 
 Here, you deploy the template and see the endpoints output as JSON.
 
@@ -322,4 +322,6 @@ Here, you deploy the template and see the endpoints output as JSON.
 
     ![Azure portal showing the output selection in the left menu](../media/3-portal-outputs.png)
 
+## Optional What-if exercise
 
+TODO: What-if is in preview. Suggest pointing to the docs instead. [What-if](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell&azure-portal=true)
