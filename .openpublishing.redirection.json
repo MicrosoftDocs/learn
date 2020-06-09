@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.md",
+      "redirect_url": "https://docs.microsoft.comlearn/modules/run-sql-server-2017-linux-containers/3-exercise-run-sql-server-2017-linux-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/4-use-docker-compose-deploy-multiple-containers.md",
+      "redirect_url": "https://docs.microsoft.comlearn/modules/run-sql-server-2017-linux-containers/4-create-custom-images",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-sqlserver.automatically-tune-sql-server-linux.3-choose-use-query-store-automatic-tuning.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/automatically-tune-sql-server-linux/3-exercise-monitor-sql-performance-linux",
       "redirect_document_id": false
@@ -1603,6 +1613,266 @@
     {
       "source_path": "learn-pr/languages/python-while/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-while/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/architect-great-solutions-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-availability-and-recoverability-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-availability-and-recoverability-in-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-availability-and-recoverability-in-azure/2-high-availability.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-availability-and-recoverability-in-azure/3-disaster-recovery.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-availability-and-recoverability-in-azure/4-backup-and-restore.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-availability-and-recoverability-in-azure/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-efficiency-and-operations-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-efficiency-and-operations-in-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-efficiency-and-operations-in-azure/2-maximize-efficiency-of-cloud-spend.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-efficiency-and-operations-in-azure/3-use-monitoring-and-analytics-to-gain-operational-insights.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-efficiency-and-operations-in-azure/4-use-automation-to-reduce-effort-and-error.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-efficiency-and-operations-in-azure/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-performance-and-scalability-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-performance-and-scalability-in-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-performance-and-scalability-in-azure/2-scaling-up-and-scaling-out.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-performance-and-scalability-in-azure/3-optimize-network-performance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-performance-and-scalability-in-azure/4-optimize-storage-performance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-performance-and-scalability-in-azure/5-identify-performance-bottlenecks-in-your-application.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-performance-and-scalability-in-azure/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-security-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-security-in-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-security-in-azure/2-defense-in-depth.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-security-in-azure/3-identity-management.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-security-in-azure/4-infrastructure-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-security-in-azure/5-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-security-in-azure/6-network-security.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-security-in-azure/7-application-security.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-for-security-in-azure/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/pillars-of-a-great-azure-architecture/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/pillars-of-a-great-azure-architecture/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/pillars-of-a-great-azure-architecture/2-pillars-of-a-great-azure-architecture.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/pillars-of-a-great-azure-architecture/3-design-for-security.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/pillars-of-a-great-azure-architecture/4-design-for-performance-and-scalability.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/pillars-of-a-great-azure-architecture/5-design-for-availability-and-recoverability.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/pillars-of-a-great-azure-architecture/6-design-for-efficiency-and-operations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/pillars-of-a-great-azure-architecture/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-well-architected-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/02-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/digital-accessibility/03-summary-and-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/04-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-accessibility-disability/03-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/digital-accessibility/03-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/digital-accessibility/02-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/cela-accessibility/intro-accessibility-disability/03-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-accessibility-disability/04-summary-and-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/index.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/7-listening-for-incoming-data.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/2-overview-of-speech-translation.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/3-subscribe-to-speech-translation-api.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/5-using-speech-translation-api.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/6-using-the-api-to-request-supported-language.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/convert-speech-to-text/4-viewing-access-keys-and-endpoints.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/translate-speech-with-speech-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/paths/process-translate-speech-azure-cognitive-speech-services/",
       "redirect_document_id": true
     }
   ]

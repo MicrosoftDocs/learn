@@ -427,7 +427,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
     ```
         dotnet add package Microsoft.Azure.EventHubs
-        dotnet add package Microsoft.Azure.Device
+        dotnet add package Microsoft.Azure.Devices
         dotnet add package Newtonsoft.Json
     ```
 

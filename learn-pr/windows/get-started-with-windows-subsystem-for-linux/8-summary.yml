@@ -101,14 +101,14 @@ quiz:
       isCorrect: false
       explanation: "This command won't work."
 
-  - content: "To configure your app/project for debugging with VS Code and Windows Subsystem for Linux, you need:"
+  - content: "To configure your app/project for debugging with Visual Studio Code and Windows Subsystem for Linux, you need:"
     choices:
     - content: "A `config.js` file with `runWSL` set to `true`."
       isCorrect: false
-      explanation: "No. JSON and JS file types are different. JSON is a language-agnostic data-interchange format. JS is the JavaScript language format. For debugging with VS Code, you need to set the configuration with a JSON-formatted launch file."
+      explanation: "No. JSON and JS file types are different. JSON is a language-agnostic data-interchange format. JS is the JavaScript language format. For debugging with Visual Studio Code, you need to set the configuration with a JSON-formatted launch file."
     - content: "A `launch.json` file." 
       isCorrect: true
-      explanation: "VS Code looks for a number of files when you open a directory. These files are used to customize the way VS Code behaves. The 'launch.json` file is one of the files used to customize starting the debugger."
+      explanation: "Visual Studio Code looks for a number of files when you open a directory. These files are used to customize the way Visual Studio Code behaves. The 'launch.json` file is one of the files used to customize starting the debugger."
     - content: "An `app.config` file with `openWSL` set to `VS Code`."
       isCorrect: false
       explanation: "Nope, `app.config` is an XML file schema."

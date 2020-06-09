@@ -15,6 +15,10 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 1. On the **Select** tab, select your **mslearn-tailspin-spacegame-web** repository.
 1. You might be redirected to GitHub to install the Azure Pipelines app. If so, scroll to the bottom and select **Approve and install**.
 1. On the **Configure** tab, select **ASP.NET Core**.
+
+    > [!NOTE]
+    > If you don't see this option, select **Show more**. Don't select **ASP.NET Core (.NET Framework)**.
+
 1. On the **Review** tab, note the initial build configuration.
 
     ![Azure Pipelines showing the initial build configuration](../media/6-initial-pipeline-yml.png)
@@ -25,15 +29,13 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 ## Watch the pipeline run
 
-Under **Jobs** select **Job**, trace the build process through each of the steps. When the build completes, optionally select **View raw log**.
+Under **Jobs**, select **Job**. Then trace the build process through each of the steps. Optionally, when the build completes, select **View raw log** to see the job output as a text file.
 
-Remember that at this point, you have a very basic build definition for a .NET Core Application. It is a shell and doesn't yet specify all of the tasks that are needed to build your app. As well, it doesn't meet the requirements that Andy and Mara have discussed.
-
-Here you see the steps that the build definition created. It prepares the VM, although it is using a Windows VM and Andy and Mara need Ubuntu. It fetches the latest source code from GitHub, runs `dotnet build`, and a few other things:
+Here you see the steps that the build definition created. It prepares the VM, fetches the latest source code from GitHub, and then builds the application.
 
 ![Initial build configuration](../media/6-initial-build.png)
 
-This configuration is a great start because now you have a starting point for adding build tasks. However, it needs editing to meet the requirements for the Tailspin build.
+This configuration is a great start because now you have a place to add build tasks. However, it needs to be updated to meet the needs of the Tailspin team, such as to minify JavaScript and CSS files.
 
 > [!TIP]
 > Check your email. You might have already received a build notification with the results of your run. You can use these notifications to let your team members know when builds complete and whether each build passed or failed.

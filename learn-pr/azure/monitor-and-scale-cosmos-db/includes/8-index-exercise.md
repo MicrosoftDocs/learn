@@ -24,24 +24,34 @@ Update the **Orders** collection to index none of the properties.
     You can reset your `ENDPOINT` and `KEY` variables by running the following commands.
 
     ```bash
-    export ENDPOINT=$(az cosmosdb list --resource-group <rgn>Sandbox Resource Group</rgn> \
-            --output tsv --query [0].documentEndpoint)
+    export ENDPOINT=$(az cosmosdb list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --output tsv \
+        --query [0].documentEndpoint)
     ```
 
     ```bash
-    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
-            --name $COSMOS_NAME --output tsv --query primaryMasterKey)
+    export KEY=$(az cosmosdb keys list \
+        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --name $COSMOS_NAME \
+        --output tsv \
+        --query primaryMasterKey)
     ```
 
 1. Make sure you're in the `ExerciseCosmosDB` directory.
     ```bash
-    cd mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB
+    cd ~/mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB
     ```
 
 1. Run the following command to update the collection index to `none`.
 
-    ```bash
-    az cosmosdb collection update -g <rgn>Sandbox Resource Group</rgn> -n $COSMOS_NAME -d mslearn -c Orders --indexing-policy @IndexConfig/index-none.json
+    ```azurecli
+    az cosmosdb sql container update \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --account-name $COSMOS_NAME \
+        --database-name mslearn \
+        --name Orders \
+        --idx @IndexConfig/index-none.json
     ```
 
     This command reads the index configuration from the file `IndexConfig/index-none.json`. You can view this and other index configurations in the `IndexConfig` directory.
@@ -68,8 +78,13 @@ Update the **Orders** collection to index none of the properties.
 
 1. Update the Orders collection to index on only some of the order properties.
 
-    ```bash
-    az cosmosdb collection update -g <rgn>Sandbox Resource Group</rgn> -n $COSMOS_NAME -d mslearn -c Orders --indexing-policy @IndexConfig/index-partial.json
+    ```azurecli
+    az cosmosdb sql container update \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --account-name $COSMOS_NAME \
+        --database-name mslearn \
+        --name Orders \
+        --idx @IndexConfig/index-partial.json
     ```
 
 1. Measure the consumption of adding a document with partial indexing.
@@ -94,7 +109,7 @@ Update the **Orders** collection to index none of the properties.
     dotnet run -- -c Orders -o QueryCollection -q "SELECT TOP 1 * FROM c WHERE c.Customer.State = 'WA'"
     ```
 
-    You see that the consumption of this query without an index is about 10 to 11 RUs. The consumption depends on which property is in the query and how long it takes to find it in the collection. For example, if we run a query for a customer `id` instead of `State`, the search consumes more RUs.
+    You see that the consumption of this query without an index is about 10 to 11 RUs. The consumption depends on which property is in the query and how long it takes to find it in the collection. For example, if we run a query for a customer `State` instead of `OrderStatus`, the search consumes more RUs.
 
 ## Measure RUs for lazy indexing
 
@@ -102,8 +117,13 @@ In the previous exercises, the index is set to **consistent** so it's updated sy
 
 1. Update the Orders collection to lazy index on all properties.
 
-    ```bash
-    az cosmosdb collection update -g <rgn>Sandbox Resource Group</rgn> -n $COSMOS_NAME -d mslearn -c Orders --indexing-policy @IndexConfig/index-lazy-all.json
+    ```azurecli
+    az cosmosdb sql container update \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --account-name $COSMOS_NAME \
+        --database-name mslearn \
+        --name Orders \
+        --idx @IndexConfig/index-lazy-all.json
     ```
 
 1. Measure the consumption of adding a document with lazy indexing.
@@ -132,10 +152,10 @@ In the previous exercises, the index is set to **consistent** so it's updated sy
 
 The following table summarizes the results you've gotten in previous exercises. These results apply to read, query, and insert operations for 1 KB of data that's within a single partition.
 
-| Operation  | Indexing strategy | Approximate consumption (RUs)  |
-|------------|------------------|------------------------|
+| Operation | Indexing strategy | Approximate consumption (RUs) |
+|---|---|---|
 | Read document directly| N/A | 1 |
-| Query document | All properties indexed |  3 |
+| Query document | All properties indexed | 3 |
 | Query document by indexed property | Partial | 3+ |
 | Query document by non-indexed property | Partial | 10+ |
 | Query document | No properties indexed | 20+ |

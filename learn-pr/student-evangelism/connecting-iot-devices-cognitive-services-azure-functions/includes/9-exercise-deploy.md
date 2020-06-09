@@ -24,20 +24,20 @@ Go to the Speech service you just created, click Keys section to copy and note d
 ![An illustration is showing speech API-keys.](../media/speech-api-key.png)
 
 
-##  Installing extensions for VS Code
+##  Installing extensions for Visual Studio Code
 
 You need to install some extensions for the Visual Studio Code.
 
-- Launch VS Code, search for Arduino in the extension marketplace, and install it. This extension provides enhanced experiences for developing on the Arduino platform.
+- Launch Visual Studio Code, search for Arduino in the extension marketplace, and install it. This extension provides enhanced experiences for developing on the Arduino platform.
 
-- Search for [Azure IoT Tools](about:blank) in the extension marketplace and install it.
+- Search for [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools) in the extension marketplace and install it.
 
   >[!NOTE]
   >The Azure IoT Tools extension pack contains the [Azure IoT Device Workbench](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-iot-workbench), which is used to develop and debug on various IoT devkit devices. The [Azure IoT Hub extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit), also included with the Azure IoT Tools extension pack, is used to manage and interact with Azure IoT Hubs.
 
 - Search for C# in the extension marketplace and install it.
 
-## Configure VS Code with Arduino settings
+## Configure Visual Studio Code with Arduino settings
 
 In Visual Studio Code, click File > Preference > Settings. Then click the ... and Open settings.json.
 
@@ -78,7 +78,7 @@ Click F1 to open the command palette, type, and select Azure IoT Device Workbenc
 
 In the IoT Workbench Examples page, find DevKit Translator and click Open Sample. Then select the default path to download the sample code.
 
- ![An illustration is showing how to open sample project in VS Code.](../media/open-sample-project.png)
+ ![An illustration is showing how to open sample project in Visual Studio Code.](../media/open-sample-project.png)
 
 ## Select the board
 
@@ -109,7 +109,7 @@ Click F1 to open the command palette, type, and select Arduino: Board Manager. S
 
 ##  Create Azure Function/Provision Azure Services
 
-In VS Code, click F1, type, and select Azure IoT Device Workbench: Provision Azure Services....
+In Visual Studio Code, click F1, type, and select Azure IoT Device Workbench: Provision Azure Services....
 
 ![An illustration is showing how to provision Azure services.](../media/provision-azure-services.png)
 
@@ -119,7 +119,7 @@ Follow the steps to finish the provisioning of Azure IoT Hub and Azure Functions
 
 Take a note of the Azure IoT Hub device name you created.
 
-Now you have Azure IoT Hub provisioned and device created in it. Also, the device connection string will be saved in VS Code for configuring the IoT DevKit later.
+Now you have Azure IoT Hub provisioned and device created in it. Also, the device connection string will be saved in Visual Studio Code for configuring the IoT DevKit later.
 
 ![An illustration is showing the confirmation of provisioning Azure services.](../media/provision-azure-services-3.png)
 
@@ -141,7 +141,7 @@ const string deviceName = "";
 
 ##  Deploying Azure Function
 
-Click F1, type, and select Azure IoT Device Workbench: Deploy to Azure.... If VS Code asks for confirmation for redeployment, click Yes.
+Click F1, type, and select Azure IoT Device Workbench: Deploy to Azure.... If Visual Studio Code asks for confirmation for redeployment, click Yes.
 
 ![An illustration is showing how to deploy Azure function to the cloud.](../media/deploy-azure-function.png)
 

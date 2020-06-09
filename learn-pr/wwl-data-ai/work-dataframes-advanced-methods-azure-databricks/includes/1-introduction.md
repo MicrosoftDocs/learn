@@ -1,7 +1,5 @@
 Suppose you're working for a data analytics company that has expanded to the point of transitioning from a small startup to an established business with a great track record. You have been using `DataFrames` extensively in Azure Databricks to apply transformations, read and write data, and perform advanced data analysis. You have recently added a new data source, which requires you to rename columns to conform to your existing data warehouse. Plus, you need to perform date/time conversions for compatibility reasons. On top of these changes, you apply a series of aggregates over your data to build new reports.
 
-[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
-
 ## Learning objectives 
 
 In this module, you'll:

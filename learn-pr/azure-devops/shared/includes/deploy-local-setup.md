@@ -10,7 +10,7 @@ Here you load the _Space Game_ project in Visual Studio Code, configure Git, clo
 Visual Studio Code comes with an integrated terminal. Here you can both edit files and work from the command line.
 
 1. Start Visual Studio Code.
-1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
+1. On the **View** menu, select **Terminal**.
 1. In the drop-down list, select **bash**:
 
     ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
@@ -18,6 +18,8 @@ Visual Studio Code comes with an integrated terminal. Here you can both edit fil
     In the terminal window, you can choose any shell that's installed on your system. For example, you can choose Bash, Zsh, or PowerShell.
 
     Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
+
+    [!include[](../../shared/includes/troubleshoot-code-terminal.md)]
 
 1. Run the `cd` command to navigate to the directory where you want to work. Choose your home directory (`~`) or a different directory if you want.
 
@@ -122,7 +124,7 @@ upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-
 
 In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. You'll now open the project to view its structure and work with files.
 
-1. On the **File** menu, select **Open** or **Open Folder**.
+1. On the **File** menu, select **Open**.
 1. Navigate to the root directory of the *Space Game* web project. If you need a reminder of the full path, you can run the `pwd` command in the terminal window to see the path.
 
 You see the directory and file tree.
