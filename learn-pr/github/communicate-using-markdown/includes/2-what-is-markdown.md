@@ -61,7 +61,7 @@ Image and site links use a very similar syntax.
 ![Link an image](https://docs.microsoft.com/learn/azure-devops/shared/media/mara.png)
 ```
 
-> ![Link an image](https://docs.microsoft.com/en-us/learn/azure-devops/shared/media/mara.png)
+> ![Link an image](https://docs.microsoft.com/learn/azure-devops/shared/media/mara.png)
 
 ```markdown
 [Link to Microsoft Learn](https://docs.microsoft.com/learn)
