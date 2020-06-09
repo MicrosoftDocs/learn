@@ -28,6 +28,7 @@ levels:
 roles:
 - developer
 products:
+- azure-iot
 - azure-iot-hub
 units:
 - learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.introduction

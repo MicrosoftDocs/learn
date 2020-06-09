@@ -6,4 +6,4 @@ Microsoft has launched a management capability called Azure Lighthouse that intr
 
 Without Azure Lighthouse, your customers would have to grant direct access to their Azure instance, and you would need to work on each customer individually.
 
-In this module, you've gained an awareness of Azure Lighthouse and its capabilities. You've learned how to prepare your Azure tenant for Azure delegated resource management, and seen how to create automated onboarding using Azure Resource Management templates. You’ve also seen how to use Azure Lighthouse features to manage your customers, and how to publish a managed service offer via the Azure Marketplace.
+In this module, you've gained an awareness of Azure Lighthouse and its capabilities. You've learned how to prepare your Azure tenant for Azure delegated resource management, and seen how to create automated onboarding using Azure Resource Management templates. You've also seen how to use Azure Lighthouse features to manage your customers, and how to publish a managed service offer via the Azure Marketplace.

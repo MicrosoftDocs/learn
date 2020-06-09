@@ -30,7 +30,7 @@ In the preceding exercise, we deployed an app using a basic ARM template. The te
 
 ## Deploy our logic app using the parameterized template
 
-There are two ways to supply parameters to our template during deployment using the`--parameters` flag in the `az group deployment create` command. We can pass in a URI of a remote parameters file, or the name of a local file. Let's use a local file.
+There are two ways to supply parameters to our template during deployment using the`--parameters` flag in the `az deployment group create` command. We can pass in a URI of a remote parameters file, or the name of a local file. Let's use a local file.
 
 ### Create a parameters JSON file
 
@@ -64,7 +64,7 @@ There are two ways to supply parameters to our template during deployment using 
 1. Run the following command in the Cloud Shell to deploy the logic app with the name of the app taken from the **params.json** file. The `location` parameter is not set in the params.json file, so the default is used. 
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --template-file template-with-params.json \
     --parameters @params.json
@@ -78,7 +78,7 @@ Instead of editing a parameters file every time we want to deploy from the comma
 1. Run the following command in the Cloud Shell to deploy the logic app with the name of the app and its location fed in as a JSON string on the command line. 
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --template-file template-with-params.json \
     --parameters '{ "logicAppName": {"value":"MyLogicApp2"}, "location": {"value":"East US"}}'
@@ -133,7 +133,7 @@ Let's now turn our attention to making our app do a little more than just sendin
 1. Run the following  command to deploy our changes to a logic app named **CalculateArea**. We will omit a value for the `location` parameter and just use the default. 
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --template-file template-with-params.json \
     --parameters '{ "logicAppName": {"value":"CalculateArea"}}'

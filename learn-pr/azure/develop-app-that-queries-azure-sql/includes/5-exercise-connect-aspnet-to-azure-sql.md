@@ -32,7 +32,7 @@ You'll do the following things:
 
 1. When the web application has been deployed, the output will show an *App_url* with the URL of the web site. Open this site in a new tab.
 
-    ![The education web app running. Currently, no data is displayed.](../media/5-web-app-no-data.png)
+    :::image type="content" source="../media/5-web-app-no-data.png" alt-text="The education web app running. Currently, no data is displayed." loc-scope="other"::: <!-- no-loc -->
 
     You want the web app to display a list of courses and the modules that make up each course. Currently, the app doesn't retrieve or display this data. So, you need to update the code to get the data from the database and display it.
 
@@ -503,4 +503,4 @@ With the application fully configured to retrieve and display the course data to
 
 3. After the new web app is deployed, select the link for the app. It should now display a list of courses and modules with the data that's stored in the database.
 
-    ![Screenshot of the education web app running, showing the data](../media/5-web-app-with-data.png)
+    :::image type="content" source="../media/5-web-app-with-data.png" alt-text="Screenshot of the education web app running, showing the data." loc-scope="other":::

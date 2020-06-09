@@ -4,7 +4,7 @@ metadata:
   title: Exercise - Set up your development environment
   description: Download and install the tools needed for IoT Central code development.
   ms.date: 10/17/2019
-  author: PeterTurcan
+  author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

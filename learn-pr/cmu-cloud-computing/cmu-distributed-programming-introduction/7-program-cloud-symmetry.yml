@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.7-program-cloud-symmetry
+title: Symmetrical vs. asymmetrical architecture
+metadata:
+  title: Symmetrical vs. asymmetrical architecture
+  description: Symmetrical vs. asymmetrical architecture
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-program-cloud-symmetry.md)]
+#quiz:
+#  title: Check your knowledge
+#  questions:
+#  
+# Did I Get This block has only intro statement and no visible graphic      
+# content: "Compare and contrast master-subordinate with peer-to-peer models by arranging the properties of each in the following table:"

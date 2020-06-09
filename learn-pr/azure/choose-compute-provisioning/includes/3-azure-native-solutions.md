@@ -13,7 +13,7 @@ Let's consider each of the tools' advantages or disadvantages by using these met
 ## Custom script
 
 - **Ease of setup.** The custom script extension is built into the Azure portal, so setup is easy.
-- **Management.** The management of custom scripts can get tricky as your infrastructure grows and you accumulate different customer scripts for different resources.
+- **Management.** The management of custom scripts can get tricky as your infrastructure grows and you accumulate different custom scripts for different resources.
 - **Interoperability.** The custom script extension can be added into an Azure Resource Manager template. You can also deploy it through Azure PowerShell or the Azure CLI.
 - **Configuration language.** You can write scripts by using many types of commands. You can use PowerShell and Bash.
 - **Limitations and drawbacks.** Custom scripts aren't suitable if your script needs more than one and a half hours to apply your configuration. Avoid using custom scripts for any configuration that needs reboots.

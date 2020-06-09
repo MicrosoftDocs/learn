@@ -71,7 +71,7 @@ To set up the work item:
     ![Screenshot of Azure DevOps State field with the down chevron button highlighted.](../../shared/media/azure-boards-down-chevron.png)
 1. Drag the work item from the **To Do** column to the **Doing** column.
 
-    ![Screenshot of Azure DevOps Boards showing the unit test card now in the Doing column.](../media/3-azure-boards-wi3-doing.png)
+    ![Screenshot of Azure Boards showing the unit test card now in the Doing column.](../media/3-azure-boards-wi3-doing.png)
 
 At the end of this module, after you've completed the task, you'll move the card to the **Done** column. 
 

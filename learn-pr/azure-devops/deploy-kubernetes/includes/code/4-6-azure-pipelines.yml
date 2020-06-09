@@ -1,0 +1,17 @@
+- stage: 'Deploy'
+  displayName: 'Deploy the containers'
+  dependsOn: Build
+  jobs:
+  - deployment: Deploy
+    displayName: Deploy
+    pool:
+      vmImage: 'ubuntu-16.04'
+    environment: 'spike.default'
+    variables:
+    - group: Release
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+            artifact: manifests

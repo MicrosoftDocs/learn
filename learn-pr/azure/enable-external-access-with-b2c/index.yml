@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.enable-external-access-with-b2c
 metadata:
-  title: Enable secure external user access for your applications with Azure AD B2C
-  description: TODO
+  title: Enable secure access to apps for external users with Azure AD B2C
+  description: Use Azure AD B2C as the full-featured identity system for your application, and ensure that users are required to sign in securely by using multi-factor authentication.
   ms.date: 03/20/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enable secure external user access for your applications with Azure AD B2C
-summary: Use Azure AD B2C as the full-featured identity system for your application, and ensure users are required to sign in securely through multi-factor authentication.
+title: Enable secure access to apps for external users with Azure AD B2C
+summary: Use Azure AD B2C as the full-featured identity system for your application, and ensure that users are required to sign in securely by using multi-factor authentication.
 abstract: | 
   In this module, you will:
   - Learn how to secure access to an application with Azure AD B2C

@@ -37,4 +37,3 @@ quiz:
     - content: Implement multi-factor authentication for all users who will manage your onboarded customers.
       isCorrect: true
       explanation: That's correct. MFA ensures that only dedicated user can access your customers Azure estate. It's also a good practice to ask the customer to implement MFA on their Azure tenant.
-

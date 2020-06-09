@@ -10,6 +10,7 @@ In this module, you will:
 - Implement a function in Azure Functions that runs only when data changes in an Azure Cosmos DB.
 - Implement a function in Azure Functions to broadcast changes to connected clients using SignalR Service.
 - Update the client web application to respond to SignalR messages.
+- Modify a Vue.js and JavaScript web application to use SignalR
 
 ## Prerequisites
 

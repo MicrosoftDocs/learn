@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: What happens if a health probe isn't configured and a VM fails?
     choices:
-    - content: Load Balancer won't notice the failure and continues to route traffic to the failed VM. This issue causes requests to time out.
+    - content: Azure Load Balancer won't notice the failure and continues to route traffic to the failed VM. This issue causes requests to time out.
       isCorrect: true
       explanation: This answer is correct.
-    - content: Load Balancer removes the VM from the backend pool.
+    - content: Load Balancer removes the VM from the back-end pool.
       isCorrect: false
-      explanation: Load Balancer doesn't remove the VM from the backend pool.
-    - content: Load Balancer doesn't know which VM has failed, and so stops sending requests to all VMs in the backend pool.
+      explanation: Load Balancer doesn't remove the VM from the back-end pool.
+    - content: Load Balancer doesn't know which VM has failed and so stops sending requests to all VMs in the back-end pool.
       isCorrect: false
       explanation: Load Balancer won't notice the failure and continues to route traffic to the failed VM.
   - content: You closed a port in a network security group used by a virtual network that hosts the VMs in the Load Balancer pool. How might this affect load balancing?

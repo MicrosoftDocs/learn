@@ -5,8 +5,8 @@
 - I/O instructions and memory-mapped addresses are handled in system mode to protect the called I/O devices.
 - I/O instructions and memory-mapped addresses are not _critical_, and thus can be easily handled by the hypervisor after naturally trapping to it. (Because they are privileged and not critical, they will naturally trap to the hypervisor when run in user mode.)
 - General-purpose OSs abstract most of the details of I/O devices and make them accessible only through well-defined interfaces, such as the _system call interface_, the _device driver interface_, and the _operation-level interface._
-- In the presence of a hypervisor, two different device drivers must be supported per I/O device, versus only one in traditional nonvirtualized systems. 
-- The redundancy of device drivers in the presence of a hypervisor is usually circumvented by collocating the hypervisor with a major OS (e.g., Linux) on the same machine. Subsequently, the hypervisor leverages the device drivers of the major OS without requiring special device drivers. (Xen Project applies this approach.)
+- In the presence of a hypervisor, two different device drivers must be supported per I/O device, versus only one in traditional nonvirtualized systems.
+- The redundancy of device drivers in the presence of a hypervisor is usually circumvented by collocating the hypervisor with a major OS on the same machine. Subsequently, the hypervisor leverages the device drivers of the major OS without requiring special device drivers. (Xen Project applies this approach.)
 - Because all I/O instructions are privileged, they need to be intercepted by the hypervisor.
 - In principle, the hypervisor can intercept I/O requests at any of the three interfaces: the system call interface, the device driver interface, and the operation-level interface.
 - Intercepting I/O requests at the operation-level interface might lead to the loss of some essential information about I/O actions.

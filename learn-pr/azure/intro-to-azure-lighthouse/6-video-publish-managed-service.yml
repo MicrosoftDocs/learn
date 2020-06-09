@@ -37,4 +37,3 @@ quiz:
     - content: Bring your own license.
       isCorrect: true
       explanation: That's correct. The Bring your own license model is the only applicable one for a managed service offer.
-

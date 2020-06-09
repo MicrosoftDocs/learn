@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.create-web-app-with-refreshable-models.6-train-model-build-inference-interface
+metadata:
+  title: Exercise - Train your machine learning model and build the web interface to use it
+  description: Exercise - Train your machine learning model and build the web interface to use it
+  author: jlooper
+  ms.date: 02/10/2020
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  azureSandbox: true
+title: Exercise -  Train your machine learning model and build the web interface to use it
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-train-model-build-inference-interface.md)]

@@ -4,8 +4,8 @@ metadata:
   title: Resolve security threats with Azure Security Center
   description: In this module, you’ll use the alert capabilities of Azure Security Center to watch for and respond to threats.
   ms.date: 09/30/2019
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Resolve security threats with Azure Security Center
