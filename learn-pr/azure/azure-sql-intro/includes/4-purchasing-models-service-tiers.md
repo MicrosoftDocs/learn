@@ -4,7 +4,7 @@ Once you have an idea of what deployment option is best for your requirements, d
 
 You have two options for the purchasing model, virtual core (vCore)-based (recommended) or Database transaction unit (DTU)-based. The DTU model is not available in Azure SQL MI.  
 
-The vCore-based model is recommended because it allows you to independently choose compute and storage resources, while the DTU-based model is a bundled measure of compute, storage and I/O resources, which means you have less control over paying only for what you need. This model also allows you to use Azure Hybrid Benefit for SQL Server and/or Reserved capacity to gain cost savings (neither are available in the DTU model). In the vCore model, you pay for:  
+The vCore-based model is recommended because it allows you to independently choose compute and storage resources, while the DTU-based model is a bundled measure of compute, storage, and I/O resources, which means you have less control over paying only for what you need. This model also allows you to use Azure Hybrid Benefit for SQL Server and/or reserved capacity to gain cost savings (neither are available in the DTU model). In the vCore model, you pay for:  
 
 - Compute resources (the service tier + the number of vCores and the amount of memory + the generation of hardware).
 - The type and amount of data and log storage.
@@ -18,7 +18,7 @@ The next decision is choosing the service tier for performance and availability.
 
 - **General purpose**: Most business workloads. Offers budget-oriented, balanced, and scalable compute and storage options.  
 - **Business critical**: Business applications with low-latency response requirements. Offers highest resilience to failures by using several isolated replicas. This is the only tier that can leverage in-memory OLTP to improve performance.
-- **Hyperscale**: Most business workloads with highly scalable storage (100TB+) and read-scale requirements. From a performance and cost perspective, it falls between General purpose and Business critical. *Currently only available for single databases, not managed instances or pools*.  
+- **Hyperscale**: Most business workloads with highly scalable storage (100 TB+) and read-scale requirements. From a performance and cost perspective, it falls between General purpose and Business critical. *Currently only available for single databases, not managed instances or pools*.  
 
 If you choose **General Purpose within Azure SQL DB** and the **vCore-based model**, you have an additional decision to make regarding the compute that you pay for:
 

@@ -1,6 +1,6 @@
 As you deploy, use, and manage Azure SQL resources you will use a variety of interfaces and tools. In this unit, you'll get a survey of what's available, with links to learn more.  
 
-### Azure Portal  
+### Azure portal  
 
 The Azure portal is well integrated for Azure SQL resources including virtual machines, managed instances, and databases.  
 
@@ -16,7 +16,7 @@ SQL Server Management Studio (SSMS) is the most famous and popular tool for SQL 
 
 ### Azure Data Studio (ADS)  
 
-Azure Data Studio (ADS) is a fairly new open-source, cross-platform tool to query and work with various Azure Data sources including SQL Server and Azure SQL. ADS supports a powerful concept called notebooks which you will use in some of the exercises throughout the learning path. Notebooks allow you to mix runnable code cells and formatted text in one place, which you can optionally save the results for future reference or analysis.
+Azure Data Studio (ADS) is a fairly new open-source, cross-platform tool to query and work with various Azure Data sources including SQL Server and Azure SQL. ADS supports a powerful concept called notebooks that you will use in some of the exercises throughout the learning path. Notebooks allow you to mix runnable code cells and formatted text in one place, which you can optionally save the results for future reference or analysis.
 
 ![Azure Data Studio](../media/ads.png)
 

@@ -4,7 +4,7 @@ In this module, you learned about Azure SQL, including the deployment options, p
 
 ### History of Azure SQL  
 
-You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg) keynote, where Microsoft's Chief Software Architect (at the time) Ray Ozzie announced Azure for the first time. If you want to read the original "What to use when" you can find that [here](https://social.technet.microsoft.com/wiki/contents/articles/1308.select-an-edition-of-sql-server-for-application-development/revision/7.aspx).  
+You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg) keynote, where Microsoft's Chief Software Architect (at the time) Ray Ozzie announced Azure for the first time. If you want to read the original "What to use when", you can find that [here](https://social.technet.microsoft.com/wiki/contents/articles/1308.select-an-edition-of-sql-server-for-application-development/revision/7.aspx).  
 
 ### SQL Server on Azure virtual machines
 
@@ -56,7 +56,7 @@ There are also options for pools in Azure SQL: [Azure SQL Instance Pools](https:
 
 If you want to dive deeper into the deployment options and how to choose, check out the following resources:  
 
-- [Blog announcement for Azure SQL](https://techcommunity.microsoft.com/t5/Azure-SQL-Database/Unified-Azure-SQL-experience/ba-p/815368) which explains and walks through Azure SQL and some of the resulting views and experiences available in the Azure portal.
+- [Blog announcement for Azure SQL](https://techcommunity.microsoft.com/t5/Azure-SQL-Database/Unified-Azure-SQL-experience/ba-p/815368), which explains and walks through Azure SQL and some of the resulting views and experiences available in the Azure portal.
 - [Microsoft Customer Stories](https://customers.microsoft.com/home?sq=&ff=&p=0) for many more stories similar to the ones above. You can use this to explore various use cases, industries, and solutions.  
 - [Choose the right deployment option in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) is a page in the documentation regularly updated to help provide insight into making the decisions between the Azure SQL options.
 - [Choosing your database migration path to Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/choosing-your-database-migration-path-to-azure/Choosing_your_database_migration_path_to_Azure.pdf) is a white paper that talks about tools for discovering, assessing, planning, and migrating SQL databases to Azure. This workshop will refer to it several times, and it's a highly recommended read. Chapter 5 deeply discusses choosing the right deployment option.  

@@ -42,7 +42,7 @@ SQL Server on Azure virtual machines are considered IaaS. The other deployment o
 - *Geo-replication* by creating readable replicas of your database in the same or different data center (region).
 - *Scale* by easily adding more resources (CPU, memory, storage) without long provisioning.
 - *Network Security*
-  - Azure SQL Database (single database and elastic pool) provides firewalls to prevent network access to the database server until access is explicitly granted based on IP address or Azure Virtual Network traffic origin. Recently, general availability was announced for Private Link, which also enables a completely private connection to Azure SQL Database.  
+  - Azure SQL Database (single database and elastic pool) provides firewalls to prevent network access to the database server until access is explicitly granted based on IP address or Azure Virtual Network traffic origin. Recently, general availability was announced for Private Link, which also enables a private connection to Azure SQL Database.  
   - Azure SQL Managed Instance has an extra layer of security in providing native virtual network implementation and connectivity to your on-premises environment using Azure ExpressRoute or VPN Gateways.
 - *Advanced security* detects threats and vulnerabilities in your databases and enables you to secure your data.
 - *Automatic tuning* analyzes your workload and provides you the recommendations that can optimize performance of your applications by adding indexes, removing unused indexes, and automatically fixing the query plan issues.
