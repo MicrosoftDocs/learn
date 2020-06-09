@@ -8,9 +8,12 @@ plt.scatter(df['ppgdp'], df['lifeExpF'], alpha=0.3);
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="..\media\ppgdp-lifeexpf-scatter.svg" alt-text="Scatter plot output":::
+
+***
 
 > [!NOTE]
 > The `alpha` parameter we supplied in the matplotlib `scatter` function; it makes the points semi-transparent so that we can where data points bunch up. Also note the semicolon at the end of the code snippet above; it silences the matplotlib memory-path output for cleaner inline graphing (without additional output above the graph, such as `<matplotlib.collections.PathCollection at 0x7f2c54737f28>`).
