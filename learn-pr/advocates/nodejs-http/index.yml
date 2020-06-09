@@ -23,9 +23,11 @@ products:
 prerequisites: None
 units:
 - learn.node-http.1-introduction
-- learn.node-http.2-express
-- learn.node-http.3-exercise-express
-- learn.node-http.4-knowledge-check
+- learn.node-http.2-http
+- learn.node-http.3-exercise-http
+- learn.node-http.4-express
+- learn.node-http.5-exercise-express
+- learn.node-http.6-knowledge-check
 - learn.node-http.5-summary
 
 badge:

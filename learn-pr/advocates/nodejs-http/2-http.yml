@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-http.2-express
-title: Unit
+uid: learn.node-http.2-http
+title: HTTP
 metadata:
-  title: Unit
-  description: Describe unit
+  title: HTTP
+  description: HTTP
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
-  [!include[](includes/2-express.md)]
+  [!include[](includes/2-http.md)]

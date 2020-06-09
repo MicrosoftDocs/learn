@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.node-http.9-exercise-express-middleware
+title: Exercise express middleware
+metadata:
+  title: Exercise express middleware
+  description: Exercise express middleware
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-exercise-express-middleware.md)]

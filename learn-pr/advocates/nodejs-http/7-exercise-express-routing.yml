@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.node-http.7-exercise-express-routing
+title: Exercise - Express routing
+metadata:
+  title: Exercise - Express routing
+  description: Exercise - Express routing
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-exercise-express-routing.md)]

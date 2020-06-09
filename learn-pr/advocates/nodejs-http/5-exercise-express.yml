@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.node-http.5-exercise-express
+title: Execise - Unit
+metadata:
+  title: Exercise - Express
+  description: Describe Exercise
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-express.md)]
