@@ -25,9 +25,12 @@ plt.show();
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d.svg" alt-text="Scatter plot output":::
+
+***
 
 Go ahead and move this figure around! It's interactive.
 
@@ -60,9 +63,12 @@ plt.show();
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-model-linear-regression.svg" alt-text="Scatter plot output":::
+
+***
 
 How accurate is our multiple-regression model?
 
@@ -81,7 +87,7 @@ r2_score(df['lifeExpF'], predictions)
 The output is:
 
 ```Output
-TBD
+0.5976310585601522
 ```
 
 This model explains 59.8 percent of the variance in `lifeExpF`: better than our initial simple linear model ($R^2=$ 0.596), but not spectacularly so.
@@ -96,7 +102,8 @@ print("Model intercept:", model.intercept_)
 The output is:
 
 ```Output
-TBD
+Model slopes:     [10.96001505  0.02300815]
+Model intercept: 30.67374430006005
 ```
 
 Our model now has two predictors in it, so it takes the generalized form:
@@ -141,9 +148,9 @@ plt.show();
 
 The output is:
 
-```Output
-TBD
-```
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-model-polynomial.svg" alt-text="Scatter plot output":::
+
+***
 
 Let's take a look at the $R^2$ for this model.
 
@@ -163,7 +170,7 @@ r2_score(df['lifeExpF'], predictions)
 The output is:
 
 ```Output
-TBD
+0.6171027296858922
 ```
 
 In the polynomial regression, adding `pctUrban` to our model provides a decent improvement to our model's predictive power (for example, this model's $R^2$ score is higher than those that we got with our two-degree, three-degree, or four-degree models using just `log_ppgdp`).

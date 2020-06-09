@@ -26,9 +26,12 @@ plt.show();
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups.svg" alt-text="Scatter plot output":::
+
+***
 
 Unsurprisingly, OECD-member countries cluster at the high end of the income scale and, sadly, African countries lag at the poorer end. Countries from the `other` group include countries ranging from poor ones in Southeast Asia to oil-rich Middle Eastern countries, and thus countries from that group are scattered across the income spectrum.
 
@@ -69,9 +72,12 @@ plt.show();
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups-countries.svg" alt-text="Scatter plot output":::
+
+***
 
 > [!NOTE]
 > The blue plane models the `africa` group, the orange one `oecd`, and `other` is green.
@@ -123,9 +129,7 @@ Changing color map for 3D plots like these can sometime help make different deta
 
   The output is:
 
-  ```Output
-  TBD
-  ```
+  :::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups-countries-viridis.svg" alt-text="Scatter plot output":::
 
 </details>
 
@@ -154,7 +158,9 @@ for name, group in groups:
 The output is:
 
 ```Output
-TBD
+africa r-squared score: 0.2536511261888206
+oecd r-squared score: 0.4692983761591224
+other r-squared score: 0.4732136593010081
 ```
 
 These models are not great. But we will see if they are improved by using polynomial regression later on.
@@ -178,7 +184,12 @@ for name, group in groups:
 The output is:
 
 ```Output
-TBD
+africa slopes:   [5.19791503 0.11838104]
+africa intercept: 38.80226271517247
+oecd slopes:   [ 5.30911202 -0.00875818]
+oecd intercept: 59.22301183635976
+other slopes:   [6.8727781 0.0135027]
+other intercept: 48.83819321831638
 ```
 
 What do these plots based on group tell us? The slopes for `log_ppgdp` are similar between the `africa` and `oecd` groups, but the slope is different for the `other` group. This suggests that there might be some interaction between `group` and `log_ppgdp` in explaining `lifeExpF`. The `pctUrban` slope for the `oecd` group has a different sign than for `africa` or `other`, which might indicate another interaction, but we are on shaky statistical ground here because we have done no testing to see if these differences in slope are statistically significant (for `pctUrban`, the differences---and the numbers---are small).
@@ -207,7 +218,6 @@ Think of this as another aspect of the curse of dimensionality: as we add featur
 > Statisticians often use the variable u for categorical features, a convention that we have used here. Also note that we only included $u_2$ and $u_3$ in the generalized equation for the model, even though we have three groups in the categorical feature group. This is not a mistake; it is because one group from the categorical feature gets included in the intercept.
 
 > [!div class="alert is-tip"]
->
 > ### Question
 >
 > Do you see where these numbers come from? What do you think the intercepts indicate for each of these groups?
@@ -250,9 +260,12 @@ plt.show();
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial.svg" alt-text="Scatter plot output":::
+
+***
 
 The differences in shapes for these surfaces suggest interaction between `log_ppgdp`, `pctUrban`, and `group`. However, insightful as these plots can be, the nature of 3D visualization can make them hard to see. Another way to present the data is by breaking each model into its own subplot.
 
@@ -296,9 +309,12 @@ plt.show();
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial-subplots.svg" alt-text="Scatter plot output":::
+
+***
 
 How useful are these models for prediction? Let's look at the $R^2$ scores.
 
@@ -323,7 +339,9 @@ for name, group in groups:
 The output is:
 
 ```Output
-TBD
+africa r-squared score: 0.2895032771510876
+oecd r-squared score: 0.7168351852552235
+other r-squared score: 0.5062427591759765
 ```
 
 Not uniformly good. Adding polynomial regression improved the model for the `oecd` group, but worsened it for `africa` and `other`. Let's see if increasing the degrees of the polynomials helps.
@@ -361,7 +379,9 @@ Try re-running the $R^2$ scoring code cell above using different polynomial de
   The output is:
 
   ```Output
-  TBD
+  africa r-squared score: 0.628701057999079
+  oecd r-squared score: 0.870960361112914
+  other r-squared score: 0.6948518942709203
   ```
 
 </details>
@@ -379,6 +399,8 @@ Now that you have a better polynomial degree to use in the models, re-run the co
 <details>
 
   <summary>Hint <i>(expand to reveal)</i></summary>
+
+  Exercise solution:
 
   ```python
   poly_model = make_pipeline(PolynomialFeatures(5),
@@ -420,9 +442,7 @@ Now that you have a better polynomial degree to use in the models, re-run the co
 
   The output is:
 
-  ```Output
-  TBD
-  ```
+  :::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial-subplots-degree.svg" alt-text="Scatter plot output":::
 
 </details>
 

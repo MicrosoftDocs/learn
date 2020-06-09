@@ -45,9 +45,12 @@ plt.plot(x_fit[:,1], y_fit, c='orange');
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-polynomial.svg" alt-text="Scatter plot output":::
+
+***
 
 Adding the polynomial term provides us with a much more intuitive fit of the data! The `degree=2` parameter that we supply to the `PolynomialFeatures` function dictates that our model takes the form of
 
@@ -78,7 +81,8 @@ print("Model intercept:", poly_model.intercept_)
 The output is:
 
 ```Output
-TBD
+Model slope:     [ 0.         32.14216588 -2.82047664]
+Model intercept: -6.46143145541599
 ```
 
 > [!NOTE]
@@ -115,14 +119,16 @@ plt.plot(x_plot, y_plot, c='orange');
 
 The output is:
 
-```Output
-TBD
-```
+> [!div class="alert is-tip"]
+> Output
+
+:::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-polynomial-pipeline.svg" alt-text="Scatter plot output":::
+
+***
 
 That was much simpler to code! But how much did going through the work doing the polynomial regression help our model?
 
 ```python
-
 poly_model = make_pipeline(PolynomialFeatures(2),
                            LinearRegression())
 poly_model.fit(df['log_ppgdp'][:, np.newaxis], df['lifeExpF'])
@@ -134,7 +140,7 @@ r2_score(df['lifeExpF'], predictions)
 The output is:
 
 ```Output
-TBD
+0.6140796187140456
 ```
 
 Our improved, polynomial model now accounts for 61.4 percent of the variance in `lifeExpF`. Clearly an improvement, but a modest one.
@@ -151,35 +157,33 @@ Go to the code cell in which we fitted the polynomial model using `make_pipelin
 
   Here is a comparison of the outputs for models using three-degree, four-degree, and five-degree polynomials.
 
-```python
-colors = ['teal', 'yellowgreen', 'gold']
+  ```python
+  colors = ['teal', 'yellowgreen', 'gold']
+  
+  x_min = df['log_ppgdp'].min()
+  x_max = df['log_ppgdp'].max()
+  x_plot = np.linspace(x_min, x_max, 1000)
+  
+  plt.scatter(df['log_ppgdp'], df['lifeExpF'], alpha=0.3, c='gray')
+  
+  for count, degree in enumerate([3, 4, 5]):
+      model = make_pipeline(PolynomialFeatures(degree),
+                           LinearRegression())
+      X = df['log_ppgdp'][:, np.newaxis]
+      y = df['lifeExpF']
+      model.fit(X, y)
+      y_plot = model.predict(x_plot[:, np.newaxis])
+      plt.plot(x_plot, y_plot, color=colors[count],
+               linewidth=2, label="Degree %d" % degree)
+  
+  plt.legend(loc='lower right')
+  
+  plt.show();
+  ```
 
-x_min = df['log_ppgdp'].min()
-x_max = df['log_ppgdp'].max()
-x_plot = np.linspace(x_min, x_max, 1000)
-
-plt.scatter(df['log_ppgdp'], df['lifeExpF'], alpha=0.3, c='gray')
-
-for count, degree in enumerate([3, 4, 5]):
-    model = make_pipeline(PolynomialFeatures(degree),
-                         LinearRegression())
-    X = df['log_ppgdp'][:, np.newaxis]
-    y = df['lifeExpF']
-    model.fit(X, y)
-    y_plot = model.predict(x_plot[:, np.newaxis])
-    plt.plot(x_plot, y_plot, color=colors[count],
-             linewidth=2, label="Degree %d" % degree)
-
-plt.legend(loc='lower right')
-
-plt.show();
-```
-
-The output is:
-
-```Output
-TBD
-```
+  The output is:
+  
+  :::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-polynomial-multiple-degrees.svg" alt-text="Scatter plot output":::
 
 </details>
 
@@ -204,7 +208,9 @@ for count, degree in enumerate([3, 4, 5]):
 The output is:
 
 ```Output
-TBD
+Degree 3 r-squared score: 0.6141421612388429
+Degree 4 r-squared score: 0.6160520910424707
+Degree 5 r-squared score: 0.6208416438555966
 ```
 
 Each additional polynomial degree improves the fit of our model (as demonstrated by the incremental improvements to the r-squared scores). However, adding more degrees to the polynomial regressions opens us to the risk of [overfitting](https://en.wikipedia.org/wiki/Overfitting?azure-portal=true), a process by which our models come to fit the training data too closely and are thus less useful in predicting more generalized data.
