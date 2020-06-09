@@ -61,7 +61,6 @@ Learn more about managing the security risks of using third-party components at:
 
 [//]: # (NOTE: Locale required in the following SDL links, or the user will be redirected to a non-relevant resource.)
 
-* [Open source](https://www.microsoft.com/en-us/securityengineering/opensource/)
 * [Managing Security Risks Inherent in the Use of Third-Party Components](https://safecode.org/wp-content/uploads/2017/05/SAFECode_TPC_Whitepaper.pdf)
 * [Managing Security Risks Inherent in the Use of Open-Source Software](https://www.microsoft.com/en-us/securityengineering/opensource/)
 

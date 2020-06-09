@@ -5,7 +5,7 @@ To start replicating Azure VMs to the Azure region serving as the disaster recov
 
 * For guidance on protecting Active Directory and DNS, refer to Protect Active Directory and DNS document at [https://docs.microsoft.com/azure/site-recovery/site-recovery-active-directory](https://docs.microsoft.com/azure/site-recovery/site-recovery-active-directory) 
 
-* For guidance on protecting database tier running on SQL server, refer to Protect SQL Server document at [https://docs.microsoft.com/azure/site-recovery/site-recovery-active-directory](https://docs.microsoft.com/azure/site-recovery/site-recovery-active-directory) 
+* For guidance on protecting database tier running on SQL server, refer to Protect SQL Server document at [https://docs.microsoft.com/sql/relational-databases/security/securing-sql-server?view=sql-server-ver15](https://docs.microsoft.com/sql/relational-databases/security/securing-sql-server?view=sql-server-ver15) 
 
 ## Configure networking
 

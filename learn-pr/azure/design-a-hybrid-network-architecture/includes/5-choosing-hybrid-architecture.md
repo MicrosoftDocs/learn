@@ -37,7 +37,7 @@ To show what you've learned in this unit and to help you choose between the two 
 | Capability | VPN Gateway | ExpressRoute |
 | ---- |---|---|---|
 | **Azure services support** | Azure Cloud Services and Azure Virtual Machines | Microsoft Cloud Platform |
-| **Bandwidth** | < 1.25 Gbps | < 10 Gbps or 100 Gbps (direct) |
+| **Bandwidth** | Up to 10 Gbps | Up to 10 Gbps or 100 Gbps (direct) |
 | **Protocol** | SSTP or IPsec | Direct over VLAN or MPLS |
 | **Routing** | Static or dynamic | Border Gateway Protocol (BGP) |
 | **Connection resiliency** | Active-passive or active-active | Active-passive or active-active |

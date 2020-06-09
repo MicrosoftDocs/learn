@@ -99,7 +99,7 @@ quiz:
       explanation: No, it isn't.
     - content: 'Both password and certificate could be held in a Hardware Security Module (HSM).'
       isCorrect: false
-      explanation: A Hardware Security Module isn't the best location for a password.
+      explanation: A Hardware Security Module might not be the best location for a password.
     - content: 'Passwords and certificates are secure, and can be stored in the clear.'
       isCorrect: false
       explanation: No!

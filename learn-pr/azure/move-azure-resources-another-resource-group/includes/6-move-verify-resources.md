@@ -37,7 +37,7 @@ The following commands show you how to move a resource by using the Azure CLI.
 1. Get the resource.
 
    ```azurecli
-    yourResource=$(az resource show --resource-group <resource group name> --name <resource name> --query id --output tsv)
+    yourResource=$(az resource show --resource-group <resource group name> --name <resource name> --resource-type <resource type> --query id --output tsv)
    ```
 
 1. Move the resource to another resource group by using the resource ID.
@@ -77,7 +77,7 @@ The following commands show you how to move a resource by using Azure PowerShell
 1. Return all the resources in your resource group to verify your resource moved.
 
    ```powerShell
-   Get-AzureRmResource -ResourceGroupName <destination resource group name> | ft
+   Get-AzResource -ResourceGroupName <destination resource group name> | ft
    ```
 
 1. Update the resource IDs in any tools and scripts that reference your resources.

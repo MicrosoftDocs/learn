@@ -3,21 +3,21 @@ uid: learn.aks-workshop
 metadata:
   title: Azure Kubernetes Service Workshop
   description: In this workshop, you'll go through tasks to deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
-  ms.date: 01/30/2020
+  ms.date: 03/31/2020
   author: sabbour
-  ms.author: asabbour
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure Kubernetes Service Workshop
 summary: In this workshop, you'll go through tasks to deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
 abstract: | 
   In this module, you will:
-    - Create an Azure Kubernetes Service cluster.
-    - Build and push a container-based application to Azure Container Registry.
-    - Deploy MongoDB by using Helm 3.
-    - Use Kubernetes concepts such as deployment, service, and ingress to deploy an application to the Azure Kubernetes Service cluster.
-    - Set up SSL/TLS.
-    - Configure monitoring, the horizontal pod autoscaler, and the cluster autoscaler.
+    - Create an Azure Kubernetes Service cluster
+    - Choose the best deployment options for you Pods
+    - Expose Pods to internal and external network users
+    - Configure SSL/TLS for Azure Kubernetes Service ingress
+    - Monitor the health of an Azure Kubernetes Service cluster
+    - Scale your application in an Azure Kubernetes Service cluster
 prerequisites: | 
   - Knowledge of Kubernetes and its concepts
   - Access to an Azure subscription
@@ -45,4 +45,3 @@ units:
 - learn.aks-workshop.11-summary
 badge:
   uid: learn.aks-workshop.badge
-hidden: true

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Administrator: Manage Azure identities and governance/administrator-manage-azure-identities-and-governance</title>
+    <defs>
+        <path d="M20,0 L120,0 C131.045695,-2.02906125e-15 140,8.954305 140,20 L140,120 C140,131.045695 131.045695,140 120,140 L20,140 C8.954305,140 1.3527075e-15,131.045695 0,120 L0,20 C-1.3527075e-15,8.954305 8.954305,2.02906125e-15 20,0 Z" id="path-1"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#153A66" stop-opacity="0.996585446" offset="0%"></stop>
+            <stop stop-color="#051D32" offset="100%"></stop>
+        </linearGradient>
+        <path d="M120,0 C131.045695,0 140,8.954305 140,20 L140,120 C140,131.045695 131.045695,140 120,140 L20,140 C8.954305,140 0,131.045695 0,120 L0,20 C0,8.954305 8.954305,0 20,0 L120,0 Z M120,5 L20,5 C11.8205929,5 5.17026978,11.5467864 5.00321776,19.6861718 L5,20 L5,120 C5,128.179407 11.5467864,134.82973 19.6861718,134.996782 L20,135 L120,135 C128.179407,135 134.82973,128.453214 134.996782,120.313828 L135,120 L135,20 C135,11.8205929 128.453214,5.17026978 120.313828,5.00321776 L120,5 Z" id="path-4"></path>
+        <filter x="-13.3%" y="-21.1%" width="126.7%" height="142.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50.0001648%" y1="5.51438126e-05%" x2="50.0001648%" y2="100.00009%" id="linearGradient-7">
+            <stop stop-color="#00ABDE" offset="0%"></stop>
+            <stop stop-color="#007ED8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#E8F6FE" offset="0%"></stop>
+            <stop stop-color="#B6E5F9" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-9" cx="18.5" cy="18.5" r="18.5"></circle>
+        <linearGradient x1="49.9774416%" y1="17.9912184%" x2="49.9774416%" y2="124.588364%" id="linearGradient-11">
+            <stop stop-color="#32D4F5" offset="0%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.6629548%" y1="-4.39429929%" x2="56.3297416%" y2="129.928741%" id="linearGradient-12">
+            <stop stop-color="#32D4F5" offset="22%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-80.0%" y="-80.0%" width="260.0%" height="260.0%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-14">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <path d="M8.52272727,0 L9.29752066,1.94444444 L10.4752066,2.28395062 L12.2107438,1.35802469 L12.4586777,1.35802469 L13.1095041,2.09876543 L13.6673554,2.65432099 L13.6673554,2.83950617 L12.7995868,4.66049383 L13.2334711,5.83333333 L15,6.45061728 L15,8.17901235 L12.9855372,8.98148148 L12.6446281,10.1851852 L13.5123967,11.9135802 L13.5123967,12.1604938 L12.303719,13.3641975 L10.2582645,12.4074074 L9.08057851,12.9012346 L8.49173554,14.7530864 L8.49173554,15 L6.75619835,15 L6.01239669,12.9320988 L4.80371901,12.4382716 L3.09917355,13.3024691 L2.85123967,13.3024691 L1.64256198,12.0679012 L2.57231405,10.0617284 L2.07644628,8.88888889 L0.247933884,8.27160494 L0,8.27160494 L0,6.54320988 L2.07644628,5.77160494 L2.60330579,4.47530864 L1.70454545,2.74691358 L1.70454545,2.5308642 L2.91322314,1.32716049 L4.92768595,2.28395062 L6.22933884,1.75925926 L6.81818182,0 L8.52272727,0 Z M7.60869565,3.91304348 C5.68770522,3.91304348 4.13043478,5.47031391 4.13043478,7.39130435 C4.13043478,9.31229478 5.68770522,10.8695652 7.60869565,10.8695652 C9.52968609,10.8695652 11.0869565,9.31229478 11.0869565,7.39130435 C11.0869565,5.47031391 9.52968609,3.91304348 7.60869565,3.91304348 Z" id="path-15"></path>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-16">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Administrator:-Manage-Azure-identities-and-governance" transform="translate(-135.000000, -55.000000)">
+            <g id="Administrator:-Manage-Azure-identities-and-governance/administrator-manage-azure-identities-and-governance" transform="translate(160.000000, 80.000000)">
+                <g id="Trophy-Plates/Square">
+                    <g id="BG" transform="translate(-20.000000, -20.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <path stroke="#FFFFFF" stroke-width="5" d="M120,-2.5 L20,-2.5 C13.7867966,-2.5 8.16179656,0.0183982822 4.09009742,4.09009742 C0.0183982822,8.16179656 -2.5,13.7867966 -2.5,20 L-2.5,120 C-2.5,126.213203 0.0183982822,131.838203 4.09009742,135.909903 C8.16179656,139.981602 13.7867966,142.5 20,142.5 L120,142.5 C126.213203,142.5 131.838203,139.981602 135.909903,135.909903 C139.981602,131.838203 142.5,126.213203 142.5,120 L142.5,20 C142.5,13.7867966 139.981602,8.16179656 135.909903,4.09009742 C131.838203,0.0183982822 126.213203,-2.5 120,-2.5 Z"></path>
+                        <g id="Colors/Microsoft-365/BG-Gradient-5" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                            <rect id="Rectangle" x="0" y="0" width="140" height="140"></rect>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(-20.000000, -20.000000)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use fill="#000000" fill-rule="nonzero" xlink:href="#path-4"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-5)" fill="#0076D7">
+                            <rect id="Microsoft-365/Border" x="0" y="0" width="140" height="140"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Id-Card" filter="url(#filter-6)" transform="translate(1.000000, 19.000000)">
+                    <rect id="Combined-Shape" fill="url(#linearGradient-7)" x="0" y="0" width="90" height="57" rx="4"></rect>
+                    <g id="Group-12" transform="translate(10.000000, 10.000000)">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-8)" xlink:href="#path-9"></use>
+                        <g mask="url(#mask-10)" fill="#FFFFFF" id="Oval">
+                            <g transform="translate(1.275862, 7.655172)">
+                                <circle cx="17.2241379" cy="32.5344828" r="17.2241379"></circle>
+                                <circle cx="17.2241379" cy="7.01724138" r="7.01724138"></circle>
+                            </g>
+                        </g>
+                    </g>
+                    <line x1="56" y1="13.5" x2="78" y2="13.5" id="Path-10" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></line>
+                    <line x1="56" y1="23.5" x2="78" y2="23.5" id="Path-10" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></line>
+                    <line x1="56" y1="33.5" x2="74" y2="33.5" id="Path-10" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></line>
+                    <line x1="56" y1="44.5" x2="67" y2="44.5" id="Path-10" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></line>
+                </g>
+                <g id="Group" transform="translate(58.000000, 33.000000)" fill-rule="nonzero">
+                    <g id="Person">
+                        <path d="M42.8904046,51 C45.2023581,51 47.0814204,49.133615 47.0986738,46.819978 C47.1152569,46.6527689 47.1152569,46.4843274 47.0986738,46.3171183 C45.4342091,33.1170489 37.9284155,22.3684211 23.576333,22.3684211 C9.22425064,22.3684211 1.46721704,31.4827546 0.0225873019,46.348547 C-0.215479734,48.6556978 1.45533309,50.7212034 3.75978163,50.9685713 L42.8904046,50.9685713 L42.8904046,51 Z" id="Path" fill="url(#linearGradient-11)"></path>
+                        <path d="M24.9680772,26.193459 C22.4145328,26.2094614 19.9130065,25.5012826 17.7777778,24.1578947 L24.9047266,42.0526316 L32,24.279421 C29.8904138,25.5391986 27.4531015,26.2026172 24.9680772,26.193459 Z" id="Path" fill="#FFFFFF" opacity="0.8"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-12)" cx="24.8888889" cy="13.4210526" rx="13.3333333" ry="13.4210526"></ellipse>
+                    </g>
+                    <g id="Group-4" filter="url(#filter-13)" transform="translate(17.000000, 6.000000)">
+                        <g id="Combined-Shape">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"></use>
+                            <use fill="url(#linearGradient-14)" xlink:href="#path-15"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

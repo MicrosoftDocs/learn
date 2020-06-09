@@ -4,8 +4,8 @@ metadata:
   title: Secure Azure Active Directory users with Multi-Factor Authentication
   description: Learn how to use multi-factor authentication with Azure AD to harden your user accounts.
   ms.date: 10/02/2019
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure Azure Active Directory users with Multi-Factor Authentication

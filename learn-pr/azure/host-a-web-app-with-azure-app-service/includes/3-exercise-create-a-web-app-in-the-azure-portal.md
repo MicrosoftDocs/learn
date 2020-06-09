@@ -129,7 +129,7 @@ The portal will display the deployment page, where you can view the status of yo
 
 ::: zone pivot="csharp"
 
-![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-generic.png)
+:::image type="content" source="../media/3-web-app-online-generic.png" alt-text="Screenshot showing the newly created App Service in a browser." loc-scope="other":::
 
 Leave the browser tab with the new app's placeholder page open. You'll come back to it after you've deployed your app.
 
@@ -137,18 +137,18 @@ Leave the browser tab with the new app's placeholder page open. You'll come back
 
 ::: zone pivot="java"
 
-![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-java.png)
+:::image type="content" source="../media/3-web-app-online-java.png" alt-text="Screenshot showing the newly created App Service in a browser." loc-scope="other":::
 
 ::: zone-end
 
 ::: zone pivot="node"
 
-![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-node.png)
+:::image type="content" source="../media/3-web-app-online-node.png" alt-text="Screenshot showing the newly created App Service in a browser." loc-scope="other":::
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-python.png)
+:::image type="content" source="../media/3-web-app-online-python.png" alt-text="Screenshot showing the newly created App Service in a browser." loc-scope="other":::
 
 ::: zone-end

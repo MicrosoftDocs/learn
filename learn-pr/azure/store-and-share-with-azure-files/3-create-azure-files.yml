@@ -2,7 +2,7 @@
 uid: learn.store-and-share-with-azure-files.3-create-azure-files
 metadata:
   title: Create and connect to an Azure Files share
-  description: Create and connect to an Azure Files share
+  description: Create and connect to an Azure Files share.
   ms.date: 03/17/2020
   author: jboeshart
   ms.author: jaboes

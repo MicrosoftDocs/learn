@@ -41,7 +41,7 @@ Here are some of the most common policy definitions you can apply.
 
 The policy definition itself is represented as a JSON file - you can use one of the pre-defined definitions in the portal or create your own (either modifying an existing one or starting from scratch). There are [hundreds of samples available on GitHub](https://github.com/Azure/azure-policy).
 
-Here is an example of a Compute policy that only allows specific virtual machine sizes:
+Here is an example of a Compute policy that only allows specific virtual machine SKUs:
 
 ```json
 {

@@ -46,13 +46,11 @@ The way you collect code coverage depends on what programming language and frame
 
 Mara and Andy do some investigation around code coverage for .NET Core applications. Here's what they find:
 
-* The unit test project requires the [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild?azure-portal=true) NuGet package.
-
-    A reference to this package is already included in *Tailspin.SpaceGame.Web.Tests.csproj*.
-
 * Visual Studio on Windows provides a way to perform code coverage.
 * However, because the team is building on Linux, they can use [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true), a cross-platform code coverage library for .NET Core.
-* Code coverage results are written to an XML file so that they can be processed by another tool. Azure Pipelines supports [Cobertura](https://cobertura.github.io/cobertura?azure-portal=true) and [JaCoCo](https://www.eclemma.org/jacoco?azure-portal=true) coverage result formats. 
+
+    The unit test project requires the [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild?azure-portal=true) NuGet package.
+* Code coverage results are written to an XML file so that they can be processed by another tool. Azure Pipelines supports [Cobertura](https://cobertura.github.io/cobertura?azure-portal=true) and [JaCoCo](https://www.eclemma.org/jacoco?azure-portal=true) coverage result formats.
 
     Mara and Andy decide to try Cobertura.
 * To convert Cobertura coverage results to a format that's human-readable, they can use a tool called [ReportGenerator](https://github.com/danielpalme/ReportGenerator?azure-portal=true).
@@ -60,15 +58,45 @@ Mara and Andy do some investigation around code coverage for .NET Core applicati
 
     Specifically, there's an HTML format called **HtmlInline_AzurePipelines**, which provides a visual appearance that matches Azure Pipelines.
 
+### How can I manage .NET Core tools?
+
+A .NET Core tool such as `ReportGenerator` is a special NuGet package that contains a console application. You can manage a .NET Core tool as a global tool or as a local tool.
+
+A global tool is installed in a centralized location and can be called from any directory. One version of a global tool is used for all directories on the machine.
+
+A local tool is a more isolated copy of a .NET Core tool that's scoped to a specific directory. Scope enables different directories to contain different versions of the same tool.
+
+You use a _manifest file_ to manage local tools for a given directory. This file is in JSON format and is typically named *dotnet-tools.json*. A manifest file enables you to describe the specific tool versions that you need to build or run your application.
+
+When you include the manifest file in source control along with your application sources, developers and build systems can run the `dotnet tool restore` command to install all of the tools listed in the manifest file. When you need a newer version of a local tool, you simply update the version in the manifest file.
+
+To keep things more isolated, in this module you work with local tools. You create a tool manifest that includes the `ReportGenerator` tool. You also modify your build pipeline to install the `ReportGenerator` tool to convert code coverage results to a human-readable format.
+
 ## Run code coverage locally
 
 Before Mara and Andy write any pipeline code, they decide to try things manually to verify the process. Follow along with their process:
 
 1. In Visual Studio Code, open the integrated terminal.
+1. Run the following `dotnet new` command to create a local tool manifest file.
+
+    ```bash
+    dotnet new tool-manifest
+    ```
+
+    The command creates a file named *.config/dotnet-tools.json*.
+
 1. Run the following `dotnet tool install` command to install ReportGenerator:
 
     ```bash
-    dotnet tool install --global dotnet-reportgenerator-globaltool --version 4.1.1
+    dotnet tool install dotnet-reportgenerator-globaltool
+    ```
+
+    This command installs the latest version of `ReportGenerator` and adds an entry to the tool manifest file.
+
+1. Run the following `dotnet add package` command to add the `coverlet.msbuild` package to the *Tailspin.SpaceGame.Web.Tests* project:
+
+    ```bash
+    dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
     ```
 
 1. Run the following `dotnet test` command to run your unit tests and collect code coverage:
@@ -93,18 +121,18 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
     This command resembles the one you ran previously. The `/p:` flags tell coverlet which code coverage format to use and where to place the results.
 
-1. Run the following `reportgenerator` command to convert the Cobertura file to HTML:
+1. Run the following `dotnet tool run` command to use `ReportGenerator` to convert the Cobertura file to HTML:
 
     ```bash
-    $HOME/.dotnet/tools/reportgenerator \
+    dotnet tool run reportgenerator \
       -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml \
       -targetdir:./CodeCoverage \
       -reporttypes:HtmlInline_AzurePipelines
     ```
 
-    A number of HTML files appear in the **CodeCoverage** folder at the root of the project.
-1. In Visual Studio Code, expand the **CodeCoverage** folder, right-click **index.htm**, and then select **Reveal in Explorer** (**Reveal in Finder** on macOS or **Open Containing Folder** on Linux).
-1. In Windows Explorer (Finder on macOS), double-click **index.htm** to open it in a web browser.
+    A number of HTML files appear in the *CodeCoverage* folder at the root of the project.
+1. In Visual Studio Code, expand the *CodeCoverage* folder, right-click *index.htm*, and then select **Reveal in Explorer** (**Reveal in Finder** on macOS or **Open Containing Folder** on Linux).
+1. In Windows Explorer (Finder on macOS), double-click *index.htm* to open it in a web browser.
 
     You see the coverage report summary.
 
@@ -141,39 +169,61 @@ In this section, you add tasks that measure code coverage to your build pipeline
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
 
-    [!code-yml[](code/6-azure-pipelines.yml?highlight=48-71)]
+    [!code-yml[](code/6-azure-pipelines.yml?highlight=48-74)]
 
     This version builds upon your existing configuration. Here's a summary of what's new:
 
     | Azure Pipelines task           | Display name                           | Description                                                         |
     |--------------------------------|----------------------------------------|---------------------------------------------------------------------|
-    | `DotNetCoreCLI@2`              | Install ReportGenerator                |  Installs the ReportGenerator tool                                  |
+    | `DotNetCoreCLI@2`              | Install .NET Core tools from local manifest                |  Installs tools listed in the manifest file, *dotnet-tools.json*              |
     | `DotNetCoreCLI@2`              | Run unit tests - $(buildConfiguration) | Runs unit tests and also collects code coverage in Cobertura format |
-    | `script`                       | Create code coverage report            |  Converts Cobertura output to HTML                                  |
+    | `DotNetCoreCLI@2`              | Create code coverage report            |  Converts Cobertura output to HTML                                  |
     | `PublishCodeCoverageResults@1` | Publish code coverage report           | Publishes the report to the pipeline                                |
 
-## Push the branch to GitHub
+## Commit your changes and push the branch to GitHub
 
 Here you push your changes to GitHub and see the pipeline run. Recall that you're currently in the `code-coverage` branch.
 
-In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
+Although not required, here you add and commit each file separately so that each change is associated with a descriptive commit message.
 
-```bash
-git add azure-pipelines.yml
-git commit -m "Add code coverage"
-git push origin code-coverage
-```
+1. In Visual Studio Code, go to the terminal.
+1. Add and commit the *Tailspin.SpaceGame.Web.Tests.csproj* file, which now contains a reference to the `coverlet.msbuild` package:
+
+    ```bash
+    git add Tailspin.SpaceGame.Web.Tests/Tailspin.SpaceGame.Web.Tests.csproj
+    git commit -m "Add coverlet.msbuild package"
+    ```
+
+1. Add and commit the tool manifest file, *dotnet-tools.json*:
+
+    ```bash
+    git add .config/dotnet-tools.json
+    git commit -m "Add code coverage"
+    ```
+
+1. Add and commit *azure-pipelines.yml*, which contains your updated build configuration:
+
+    ```bash
+    git add azure-pipelines.yml
+    git commit -m "Add code coverage"
+    ```
+
+1. Push the `code-coverage` branch to GitHub.
+
+    ```bash
+    git push origin code-coverage
+    ```
 
 ## Watch Azure Pipelines run the tests
 
 Here you see the tests run in the pipeline and then visualize the results from Azure Test Plans.
 
 1. In Azure Pipelines, trace the build through each of the steps.
-1. When the build finishes, Navigate back to the summary page and select the **Code Coverage** tab.
+1. When the build finishes, navigate back to the summary page and select the **Code Coverage** tab.
 
     You view the same results that you did when you ran the tests locally.
 
-    ![Screenshot of Azure Pipelines showing the Code Coverage tab, with code coverage report summary showing 14.2 percent line coverage.](../media/6-coverage-report-pipeline.png)
+    ![Screenshot of Azure Pipelines showing the Code Coverage tab, with code coverage report summary showing 5.5 percent line coverage.](../media/6-coverage-report-pipeline.png)
 
     As an optional step, you can explore the results from Azure Pipelines.
 
@@ -181,11 +231,11 @@ Here you see the tests run in the pipeline and then visualize the results from A
 
 In the previous part, you added the **Test Results Trend** widget to your dashboard, which lets others quickly review test result trends over time.
 
-Here you'll add a second widget that summarizes code coverage.
+Here you add a second widget that summarizes code coverage.
 
 1. In a new browser tab, go to [marketplace.visualstudio.com](https://marketplace.visualstudio.com?azure-portal=true).
 1. On the **Azure DevOps** tab, search for **code coverage**.
-1. Select **Code Coverage Widgets**.
+1. Select **Code Coverage Widgets** (published by Shane Davis).
 1. Select **Get it free**.
 1. In the drop-down list, select your Azure DevOps organization.
 1. Select **Install**.
@@ -206,7 +256,7 @@ Here you'll add a second widget that summarizes code coverage.
 
     The widget shows the percentage of code your unit tests cover.
 
-    ![Screenshot of Azure DevOps Code Coverage widget showing 14 percent coverage of the sample project.](../media/6-dashboard-widget.png)
+    ![Screenshot of Azure DevOps Code Coverage widget showing 6 percent coverage of the sample project.](../media/6-dashboard-widget.png)
 
 You now have code coverage set up in your pipeline. Although your existing code coverage is low, you have a baseline that you can improve over time.
 
@@ -214,7 +264,7 @@ Later, you can configure coverlet to check to see whether your tests provide a m
 
 ## Remove code coverage files
 
-Recall that when you ran **reportgenerator** earlier, a number of HTML files appeared in the *CodeCoverage* folder at the root of the project.
+Recall that when you ran `Reportgenerator` earlier, a number of HTML files appeared in the *CodeCoverage* folder at the root of the project.
 
 These HTML files are not intended to be included in source control, and you no longer need them. Although the project's *.gitignore* file is already set up to ignore anything in the *CodeCoverage* directory, it's a good idea to delete these files so that they're not added to your Git repository in future modules.
 

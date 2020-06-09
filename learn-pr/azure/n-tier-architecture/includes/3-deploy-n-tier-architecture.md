@@ -10,12 +10,12 @@ Here's a high-level visualization of what is deployed with this template.
 
 ## Deploy an N-tier architecture
 
-1. Run the following command to start the deployment. The `az group deployment create` command starts a deployment into our sandbox resource group using the template file and parameters we specify. We also specify a random 32 character string generated from the `head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32` command as the password parameter.
+1. Run the following command to start the deployment. The `az deployment group create` command starts a deployment into our sandbox resource group using the template file and parameters we specify. We also specify a random 32 character string generated from the `head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32` command as the password parameter.
 
     The deployment takes approximately 5 minutes to complete.
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --template-uri  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-n-tier-architecture/master/Deployment/azuredeploy.json \
       --parameters password="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32)"

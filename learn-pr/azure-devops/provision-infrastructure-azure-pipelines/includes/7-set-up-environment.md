@@ -91,7 +91,7 @@ Set up Visual Studio Code so you can build the website locally and work with sou
 Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all from one place.
 
 1. Start Visual Studio Code.
-1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
+1. On the **View** menu, select **Terminal**.
 1. In the drop-down list, select **bash**:
 
     ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
@@ -99,6 +99,8 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
     Here you'll use Bash. Git for Windows provides Git Bash, which makes running Git commands easy.
+
+    [!include[](../../shared/includes/troubleshoot-code-terminal.md)]
 
 1. Run the `cd` command to go to the directory that you want to work from. You can choose your home directory (`~`) or a different one.
 
@@ -133,7 +135,7 @@ In this part, you clone your fork locally so that you can make changes and build
 
 You now have a copy of the *Space Game* web project in your GitHub account. Now you'll download, or *clone*, a copy to your computer so you can work with it.
 
-A clone, just a like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify that your changes work as you expect, and then upload the changes back to GitHub. You can also synchronize your local copy with changes that other authenticated users have made to GitHub's copy of your repository.
+A clone, just like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify that your changes work as you expect, and then upload the changes back to GitHub. You can also synchronize your local copy with changes that other authenticated users have made to GitHub's copy of your repository.
 
 To clone the *Space Game* web project to your computer:
 
@@ -203,7 +205,7 @@ upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-
 
 In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. You'll now open the project from the file explorer so you can view its structure and work with files.
 
-1. On the **File** menu, select **Open** or **Open Folder**.
+1. On the **File** menu, select **Open**.
 1. Go to the root directory of the *Space Game* web project.
 
     (You can run the `pwd` command in the terminal window to see the full path if you need a reminder.)

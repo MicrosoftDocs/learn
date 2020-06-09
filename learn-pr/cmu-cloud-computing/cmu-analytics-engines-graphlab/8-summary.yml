@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab.8-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-summary.md)]

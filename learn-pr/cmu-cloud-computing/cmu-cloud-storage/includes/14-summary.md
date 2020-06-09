@@ -24,4 +24,4 @@
 - NewSQL databases attempt to combine the relational data model and SQL interface of RDBMSs with the scalability and performance of NoSQL systems. This is done by reengineering the database engines to perform well at scale through in-memory storage and a shared-nothing architecture.
 - Object stores provide an abstraction of an object (which is a generic container to store any arbitrary type of information) and a set of very basic operations—create, read, update, and delete (CRUD)—to enable online storage. They can be considered to be a service-oriented version of key-value stores.
 - Object stores are typically accessed using an API that is accessed over the network using REST/SOAP-style calls.
-- Amazon S3 is an example of an object store, and CDMI is an upcoming open standard that defines a cloud storage environment.
+- Azure Blob Storage is an example of an object store, and CDMI is an upcoming open standard that defines a cloud storage environment.

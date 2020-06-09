@@ -43,6 +43,19 @@ az vm deallocate \
     --name <virtual machine name>
 ```
 
+You can then use the following command for PowerShell or the Azure CLI to generalize the VM.
+
+```powershell
+Set-AzVM -ResourceGroupName <resource group> `
+    -Name <virtual machine name> `
+    -Generalize
+```
+
+```azurecli
+az vm generalize \
+    --name <virtual machine name>
+```
+
 ## Generalize a Linux virtual machine
 
 If you're building a Linux image, you use the **waagent** tool to prepare a virtual machine for generalization. The waagent tool performs tasks like deleting the most recently created user account, removing public SSH keys, resetting the host name and other machine-specific details, and cleaning log files.

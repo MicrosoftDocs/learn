@@ -81,7 +81,7 @@ az webapp deployment source config-zip --src ../site.zip --name <your-unique-app
 
 Open `https://<your-unique-app-name>.azurewebsites.net` in a browser to see the running app. It should look like the image below.
 
-![Screenshot of the FileUploader web app](../media/7-fileuploader-empty.PNG)
+:::image type="content" source="../media/7-fileuploader-empty.PNG" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
 
 Try uploading and downloading some files to test the app. After you've uploaded a few files, run the following in the shell to see the blobs that have been uploaded to the container:
 

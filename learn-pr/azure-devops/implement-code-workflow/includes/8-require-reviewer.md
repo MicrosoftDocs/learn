@@ -30,7 +30,7 @@ In this section, you set up a rule on GitHub that requires at least one reviewer
 1. Under **Branch name pattern**, enter **master**.
 1. Select the **Require pull request reviews before merging** check box.
 1. Keep the **Required approving reviews** value at **1**.
-1. To create the rule in the `master` branch, select **Create**.
+1. Select **Create**.
 1. Select **Save changes**.
 
 > [!NOTE]

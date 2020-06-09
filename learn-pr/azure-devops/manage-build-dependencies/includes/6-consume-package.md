@@ -22,7 +22,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
     cd ~/mslearn-tailspin-spacegame-web
     ```
 
-1. From the **File** menu, select **Open** or **Open Folder**.
+1. From the **File** menu, select **Open**.
 1. Go to the root directory of the _Space Game_ web project.
 
     (If you need a refresher, run the `pwd` command in the terminal window to see the full path.)

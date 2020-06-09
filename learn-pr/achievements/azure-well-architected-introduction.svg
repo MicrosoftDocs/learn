@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Microsoft Azure Well Architected Framework/introduction-to-the-azure-well-architected-framework</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#B6E5F9" offset="0%"></stop>
+            <stop stop-color="#81D3ED" offset="100%"></stop>
+        </linearGradient>
+        <path d="M47.1698113,0 C73.2209788,0 94.3396226,21.1186439 94.3396226,47.1698113 C94.3396226,73.2209788 73.2209788,94.3396226 47.1698113,94.3396226 C21.1186439,94.3396226 0,73.2209788 0,47.1698113 C0,21.1186439 21.1186439,0 47.1698113,0 Z M47.1698113,3.77358491 C23.2027373,3.77358491 3.77358491,23.2027373 3.77358491,47.1698113 C3.77358491,71.1368854 23.2027373,90.5660377 47.1698113,90.5660377 C71.1368854,90.5660377 90.5660377,71.1368854 90.5660377,47.1698113 C90.5660377,23.2027373 71.1368854,3.77358491 47.1698113,3.77358491 Z" id="path-5"></path>
+        <filter x="-20.3%" y="-23.3%" width="140.7%" height="146.7%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0.179476351%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#0099BE" offset="0%"></stop>
+            <stop stop-color="#006E97" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-10">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.179476351%" x2="50%" y2="100%" id="linearGradient-11">
+            <stop stop-color="#0099BE" offset="0%"></stop>
+            <stop stop-color="#006E97" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.179476351%" x2="50%" y2="100%" id="linearGradient-12">
+            <stop stop-color="#0099BE" offset="0%"></stop>
+            <stop stop-color="#006E97" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.179476351%" x2="50%" y2="100%" id="linearGradient-13">
+            <stop stop-color="#0099BE" offset="0%"></stop>
+            <stop stop-color="#006E97" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-109.1%" y="-92.3%" width="318.2%" height="284.6%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-15">
+            <stop stop-color="#5CBADA" offset="0%"></stop>
+            <stop stop-color="#0099BE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-16">
+            <stop stop-color="#5CBADA" offset="0%"></stop>
+            <stop stop-color="#0099BE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-17">
+            <stop stop-color="#5CBADA" offset="0%"></stop>
+            <stop stop-color="#0099BE" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-109.1%" y="-92.3%" width="318.2%" height="284.6%" filterUnits="objectBoundingBox" id="filter-18">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-109.1%" y="-92.3%" width="318.2%" height="284.6%" filterUnits="objectBoundingBox" id="filter-19">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Microsoft-Azure-Well-Architected-Framework" transform="translate(-159.000000, -319.000000)">
+            <g id="Microsoft-Azure-Well-Architected-Framework/introduction-to-the-azure-well-architected-framework" transform="translate(160.000000, 320.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Gradient-2" mask="url(#mask-2)" fill="url(#linearGradient-4)">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-5"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-6)" fill="#27C0F5">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Presentation-" filter="url(#filter-7)" transform="translate(20.000000, 21.000000)">
+                    <g id="Group-15" transform="translate(0.846154, 0.000000)">
+                        <ellipse id="Oval" stroke="url(#linearGradient-8)" stroke-width="3" cx="28.6847826" cy="3.86968085" rx="3.90869565" ry="3.86968085"></ellipse>
+                        <path d="M12.6086957,59.8537234 L21.0775362,44.375 M45.1811594,59.8537234 L36.7123188,44.375 M17.1688406,53.4042553 L41.2724638,53.4042553" id="Combined-Shape" stroke="url(#linearGradient-9)" stroke-width="4" stroke-linecap="round"></path>
+                        <rect id="Rectangle" fill="url(#linearGradient-10)" x="2.62681159" y="9.02925532" width="52.7673913" height="34.8271277"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-11)" x="0" y="3.86968085" width="58" height="5.80452128" rx="2"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-12)" x="0" y="43.125" width="58" height="3.22473404" rx="1.61236702"></rect>
+                    </g>
+                </g>
+                <polygon id="Polygon" stroke="url(#linearGradient-13)" stroke-width="2" points="49.8518519 38.6538462 58.0790932 43.3269231 58.0790932 52.6730769 49.8518519 57.3461538 41.6246105 52.6730769 41.6246105 43.3269231"></polygon>
+                <g id="Group" filter="url(#filter-14)" transform="translate(44.346950, 32.000000)">
+                    <polygon id="Path-91" fill="url(#linearGradient-15)" points="5.65845817 7.63290216 5.65304975 13 0.653049749 10.478688 0.653049749 5"></polygon>
+                    <polygon id="Path-91" fill="url(#linearGradient-16)" transform="translate(5.698928, 5.045553) rotate(-240.000000) translate(-5.698928, -5.045553) " points="8.01296941 3.75101577 8.18924842 9.33955523 3.24068186 6.5606181 3.2086073 0.751550304"></polygon>
+                    <polygon id="Path-91" fill="url(#linearGradient-17)" transform="translate(8.101632, 9.000000) scale(-1, 1) translate(-8.101632, -9.000000) " points="10.6530497 7.69357405 10.550214 13 5.55021401 10.478688 5.55021401 5"></polygon>
+                </g>
+                <g id="Group" filter="url(#filter-18)" transform="translate(52.000000, 45.000000)">
+                    <polygon id="Path-91" fill="url(#linearGradient-15)" points="5.65845817 7.63290216 5.65304975 13 0.653049749 10.478688 0.653049749 5"></polygon>
+                    <polygon id="Path-91" fill="url(#linearGradient-16)" transform="translate(5.698928, 5.045553) rotate(-240.000000) translate(-5.698928, -5.045553) " points="8.01296941 3.75101577 8.18924842 9.33955523 3.24068186 6.5606181 3.2086073 0.751550304"></polygon>
+                    <polygon id="Path-91" fill="url(#linearGradient-17)" transform="translate(8.101632, 9.000000) scale(-1, 1) translate(-8.101632, -9.000000) " points="10.6530497 7.69357405 10.550214 13 5.55021401 10.478688 5.55021401 5"></polygon>
+                </g>
+                <g id="Group" filter="url(#filter-19)" transform="translate(36.000000, 45.000000)">
+                    <polygon id="Path-91" fill="url(#linearGradient-15)" points="5.65845817 7.63290216 5.65304975 13 0.653049749 10.478688 0.653049749 5"></polygon>
+                    <polygon id="Path-91" fill="url(#linearGradient-16)" transform="translate(5.698928, 5.045553) rotate(-240.000000) translate(-5.698928, -5.045553) " points="8.01296941 3.75101577 8.18924842 9.33955523 3.24068186 6.5606181 3.2086073 0.751550304"></polygon>
+                    <polygon id="Path-91" fill="url(#linearGradient-17)" transform="translate(8.101632, 9.000000) scale(-1, 1) translate(-8.101632, -9.000000) " points="10.6530497 7.69357405 10.550214 13 5.55021401 10.478688 5.55021401 5"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
