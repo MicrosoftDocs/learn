@@ -18,6 +18,7 @@ For more information, learn how to use [Copilot on Xbox One](https://beta.suppor
 
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Gamer-Choice/player?format=ny] 
 
+
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Narrated-Menus-on-the-Xbox-Console/player?format=ny]
 
 ## Xbox Adaptive Controller
