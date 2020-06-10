@@ -29,11 +29,11 @@ quiz:
       - content: "Azure SQL Database - elastic pool"
         isCorrect: false
         explanation: "62TB is bigger than the max size allowed for this deployment option"
-    - content: "True or False? Imagine you have an Azure SQL Database with the Serverless compute tier database deployed, with an auto-pause delay of two hours. After two hours of no activity, Azure will essentially turn off your compute and only charge you for storage."
+    - content: "Imagine you have an Azure SQL Database with the Serverless compute tier database deployed, with an auto-pause delay of two hours. After two hours of no activity, what happens to your database and incurred charges?"
       choices:
-      - content: "True"
+      - content: "Azure will pause your database to stop compute costs and only charge you for storage"
         isCorrect: true
-        explanation: "Correct! Continue to the next unit."
-      - content: "False"
+        explanation: "To reduce your costs during times of inactivity, Azure will pause the compute resources and will only charge for storage during this time."
+      - content: "The database resources are reduced to a lower service tier to reduce costs."
         isCorrect: false
-        explanation: "Review the bottom of the Service Tier section of this unit."
+        explanation: "The service tier of the database does not change when using serverless compute."
