@@ -40,7 +40,7 @@ Here you'll install the **WhiteSource Bolt** extension for Microsoft Azure Pipel
     ![Screenshot of Azure DevOps Marketplace showing results for a search of "WhiteSource Bolt".](../media/4-marketplace-whitesource-bolt.png)
 1. Select **Get it free**.
 1. Select your Microsoft Azure DevOps organization from the drop-down box.
-1. Select **Install**. Note the WhiteSource Bolt version number.
+1. Select **Install**.
 1. From Azure DevOps, go to your project. Then go to **Pipelines**.
 1. Go to the **WhiteSource Bolt** tab.
 
@@ -120,7 +120,7 @@ The team gets together to look at the results.
 
 **Tim:** I have some experience working with the CVE recommendations. I can take some more time to analyze the results and summarize what we're using ahead of our meeting with the legal team.
 
-**Andy:** That sounds great. Let us know what you need. We haven't modified any of the open-source components that we use. I think that in our our conversation with the legal team, we should verify that we can use software with those licenses. We can have a follow-up conversation with the security consultant to see which vulnerabilities we might want to address.
+**Andy:** That sounds great. Let us know what you need. We haven't modified any of the open-source components that we use. I think that in our conversation with the legal team, we should verify that we can use software with those licenses. We can have a follow-up conversation with the security consultant to see which vulnerabilities we might want to address.
 
 **Mara:** I thought that all these concerns around licensing only affected big companies. It's good to know this is something we should keep in mind as we evaluate and use open source.
 
@@ -128,4 +128,18 @@ The team gets together to look at the results.
 
 In this example, the scan took about 30 seconds to run. Although this doesn't add much time to the overall build, the time might increase as you use additional open-source libraries.
 
-As an optional exercise, you can limit the scans to run only during pull request builds to the `master` branch, just as you did in the [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-for-vulnerabilities/6-scan-pull-request?azure-portal=true) module. Doing so helps standard CI builds to finish more quickly while still helping you discover potential vulnerabilities and understand how you're licensing open-source components before you merge code into the `master` branch.
+As an optional exercise, you can limit the scans to run only during pull request builds to the `master` branch. To do so, you can specify a _condition_ similar to this one:
+
+```yml
+condition: |
+  and
+  (
+    succeeded(),
+    eq(variables['Build.Reason'], 'PullRequest'),
+    eq(variables['System.PullRequest.TargetBranch'], 'master')
+  )
+```
+
+To learn more, see [Specify conditions](https://docs.microsoft.com/azure/devops/pipelines/process/conditions?view=azure-devops&tabs=yaml&azure-portal=true).
+
+Doing so helps standard CI builds to finish more quickly while still helping you discover potential vulnerabilities and understand how you're licensing open-source components before you merge code into the `master` branch.

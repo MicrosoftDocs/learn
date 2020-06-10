@@ -33,7 +33,7 @@ Mara creates the development database and populates it with test data. She expor
 > [!NOTE]
 > If you haven't worked with Azure Blob storage, just follow along. We'll point you to more resources at the end of this module.
 
-1. Download the [*bacpac* file](https://sqldbtutorial.blob.core.windows.net/bacpacs/tailspindatabase.bacpac?azure-portal=true) to your computer.
+1. Download the [bacpac file](https://sqldbtutorial.blob.core.windows.net/bacpacs/tailspindatabase.bacpac?azure-portal=true) to your computer.
 
     You'll upload this file to your storage account later.
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true). On the left, select **Storage accounts**.

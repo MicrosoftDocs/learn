@@ -2,8 +2,7 @@
 uid: learn-pr.wwl.preparing-migrate-sap-workloads-azure
 metadata:
   title: Prepare to migrate SAP Workloads to Azure
-  description: "This module provides details on the important steps prior to deploying SAP workloads to Azure: project preparation and planning, pilot, non
--production, production preparation, go live, and post production."
+  description: "This module provides details on the important steps prior to deploying SAP workloads to Azure: project preparation and planning, pilot, non-production, production preparation, go live, and post production."
   ms.date: 01/02/2020
   author: wwlpublish
   ms.author: bradj

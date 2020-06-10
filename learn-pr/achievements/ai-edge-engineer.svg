@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="194px" height="194px" viewBox="0 0 194 194" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AI Edge Engineer/ai-edge-engineer</title>
+    <defs>
+        <path d="M15.0821581,82.4166667 L82.4166667,15.0821581 C90.4708193,7.02800546 103.529181,7.02800546 111.583333,15.0821581 L178.917842,82.4166667 C186.971995,90.4708193 186.971995,103.529181 178.917842,111.583333 L111.583333,178.917842 C103.529181,186.971995 90.4708193,186.971995 82.4166667,178.917842 L15.0821581,111.583333 C7.02800546,103.529181 7.02800546,90.4708193 15.0821581,82.4166667 Z" id="path-1"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#99D3FF" offset="0%"></stop>
+            <stop stop-color="#0FA6FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M104.257194,6.61331853 L172.389032,74.7451561 C180.538556,82.8946805 180.538556,96.1076701 172.389032,104.257194 L104.257194,172.389032 C96.1076701,180.538556 82.8946805,180.538556 74.7451561,172.389032 L6.61331853,104.257194 C-1.53620581,96.1076701 -1.53620581,82.8946805 6.61331853,74.7451561 L74.7451561,6.61331853 C82.8946805,-1.53620581 96.1076701,-1.53620581 104.257194,6.61331853 Z M100.679795,10.1907178 C94.5942107,4.10513339 84.7815446,4.01819647 78.5894722,9.92990704 L78.3225554,10.1907178 L10.1907178,78.3225554 C4.10513339,84.4081398 4.01819647,94.2208059 9.92990704,100.412878 L10.1907178,100.679795 L78.3225554,168.811633 C84.4081398,174.897217 94.2208059,174.984154 100.412878,169.072444 L100.679795,168.811633 L168.811633,100.679795 C174.897217,94.5942107 174.984154,84.7815446 169.072444,78.5894722 L168.811633,78.3225554 L100.679795,10.1907178 Z" id="path-4"></path>
+        <filter x="-12.0%" y="-13.1%" width="124.0%" height="126.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-7">
+            <stop stop-color="#CCCCCC" offset="15%"></stop>
+            <stop stop-color="#707070" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-8" points="0 0.0725964029 99.8412536 0.0725964029 99.8412536 65.9537599 0 65.9537599"></polygon>
+        <linearGradient x1="50%" y1="0.670396959%" x2="50%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#6A6A6A" offset="0%"></stop>
+            <stop stop-color="#343333" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="99.9389564%" x2="50%" y2="0.0184322539%" id="linearGradient-11">
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#28B7DB" offset="44%"></stop>
+            <stop stop-color="#32D4F5" offset="78%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-12">
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#28B7DB" offset="44%"></stop>
+            <stop stop-color="#32D4F5" offset="78%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AI-Edge-Engineer" transform="translate(-113.000000, -33.000000)">
+            <g id="AI-Edge-Engineer/ai-edge-engineer" transform="translate(160.000000, 80.000000)">
+                <g id="Trophy-Plates/Diamond">
+                    <g id="BG" transform="translate(-47.000000, -47.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <path stroke="#FFFFFF" stroke-width="5" d="M113.3511,13.3143911 C108.835869,8.79915944 102.917934,6.54154361 97,6.54154361 C91.0820657,6.54154361 85.1641314,8.79915944 80.6488997,13.3143911 L13.3143911,80.6488997 C8.79915944,85.1641314 6.54154361,91.0820657 6.54154361,97 C6.54154361,102.917934 8.79915944,108.835869 13.3143911,113.3511 L80.6488997,180.685609 C85.1641314,185.200841 91.0820657,187.458456 97,187.458456 C102.917934,187.458456 108.835869,185.200841 113.3511,180.685609 L180.685609,113.3511 C185.200841,108.835869 187.458456,102.917934 187.458456,97 C187.458456,91.0820657 185.200841,85.1641314 180.685609,80.6488997 L113.3511,13.3143911 Z"></path>
+                        <g id="Colors/Microsoft-365/BG-Gradient-1" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                            <g transform="translate(0.498825, 0.498825)" id="Rectangle">
+                                <rect x="0" y="0" width="193.002351" height="193.002351"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(-39.501175, -39.501175)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use fill="#000000" fill-rule="nonzero" xlink:href="#path-4"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-5)" fill="#0076D7">
+                            <g transform="translate(-7.000000, -7.000000)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="193.002351" height="193.002351"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(0.000000, 15.000000)">
+                    <g id="Computer" filter="url(#filter-6)" transform="translate(0.000000, -0.000000)">
+                        <g id="Group-17">
+                            <path d="M70.7470402,85.6682652 C60.5171977,84.0282608 60.1149005,76.5310979 60.1149005,64.4067797 L39.8276285,64.4067797 C39.8276285,76.5310979 39.4828023,84.0282608 29.2529598,85.6682652 C26.3280585,85.9981117 24.1201867,88.5263726 24.137931,91.5254237 L75.862069,91.5254237 C75.8798133,88.5263726 73.6719415,85.9981117 70.7470402,85.6682652 Z" id="Path" fill="url(#linearGradient-7)" fill-rule="nonzero"></path>
+                            <g id="Group-7">
+                                <g id="Group-3">
+                                    <mask id="mask-9" fill="white">
+                                        <use xlink:href="#path-8"></use>
+                                    </mask>
+                                    <g id="Clip-2"></g>
+                                    <path d="M96.5348397,0.0725964029 C98.3610787,0.0725964029 99.8412536,1.53809118 99.8412536,3.3462179 L99.8412536,62.6801384 C99.8412536,64.4882651 98.3610787,65.9537599 96.5348397,65.9537599 L3.30626822,65.9537599 C1.4803207,65.9537599 -0.000145772595,64.4882651 -0.000145772595,62.6801384 L-0.000145772595,3.3462179 C-0.000145772595,1.53809118 1.4803207,0.0725964029 3.30626822,0.0725964029 L96.5348397,0.0725964029 Z" id="Fill-1" fill="url(#linearGradient-10)" mask="url(#mask-9)"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Icon-iot-186-IoT-Edge" transform="translate(16.666667, 12.222222)" fill-rule="nonzero">
+                        <path d="M66.6666667,32.7777778 C66.356326,25.5044843 60.8803715,19.4980955 53.6666667,18.5185185 C53.2845674,8.14301846 44.6000547,0.0209312885 34.2222222,0.333333333 C25.99308,0.181378355 18.5664676,5.24632797 15.7037037,12.962963 C6.94033168,14.0211279 0.265985218,21.3251297 0,30.1481481 C0.381617586,40.1444831 8.78043898,47.9469385 18.7777778,47.5925926 L20.4074074,47.5925926 L50.8148148,47.5925926 C51.0850557,47.6310882 51.3593887,47.6310882 51.6296296,47.5925926 C59.8240288,47.5344651 66.4865514,40.9704034 66.6666667,32.7777778 Z" id="Path" fill="url(#linearGradient-11)"></path>
+                        <rect id="Rectangle" fill="#B3B3B3" x="31.7777778" y="31.3333333" width="2.88888889" height="22.9259259"></rect>
+                        <circle id="Oval" fill="#F2F2F2" cx="33.2222222" cy="24.4074074" r="7.7037037"></circle>
+                        <rect id="Rectangle" fill="url(#linearGradient-12)" x="26.2222222" y="52.3333333" width="14" height="14" rx="0.73"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

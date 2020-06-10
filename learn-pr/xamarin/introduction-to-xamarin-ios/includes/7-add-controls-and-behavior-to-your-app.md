@@ -142,7 +142,7 @@ Many controls in Xamarin.iOS expose .NET events to provide interactivity notific
 Here are a few examples:
 
 - `TouchUpInside` on the `UIButton` indicates that the user tapped within the button boundaries.
-- `UITextFiled` includes several events. For example:
+- `UITextField` includes several events. For example:
   - `EditingDidBegin` shows that the user started editing and the text field has input focus.
   - `ValueChanged` indicates that the text field's value changed.
   - `EditingDidEnd` shows that the user stopped editing and the text field has lost input focus.
