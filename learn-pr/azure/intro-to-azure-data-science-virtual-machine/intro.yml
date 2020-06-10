@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn-pr.intro-to-azure-data-science-virtual-machine.intro
 metadata:
-  title: Intro
-  description: ...
-  ms.date: ...
-  author: ...
-  ms.author: ...
+  title: Introduction to the Data Science Virtual Machine
+  description: You'll learn the features of the Data Science Virtual Machine and the options available for creating them. 
+  ms.date: 2020-07-01
+  author: lobrien
+  ms.author: laobri
   ms.topic: interactive-tutorial
-  ms.prod: ...
+  ms.service: machine-learning
   ROBOTS: NOINDEX
-title: Intro
-durationInMinutes: 1
+title: Introduction to the Data Science Virtual Machine
+durationInMinutes: 1 #TODO: Revisit (Word_Count / 200?)
 content: |
   [!include[](includes/intro.md)]
