@@ -32,7 +32,7 @@ The App Service hosting plans are divided into tiers based on the intended workl
 - The speed of hardware that hosts the VMs
 - The Service Level Agreement (SLA)
 
-For example, the Free and Shared tier is intended for small proof of concepts and testing, so there's no SLA and the VMs run on less expensive hardware.  On the other end of the spectrum, the Isolated Service Plan is intended for mission critical workloads that run in a private, dedicated virtual networked environment with state of the art hardware, more RAM, and faster processors and SSD storage.
+For example, the Free and Shared tiers are intended for small proof of concepts and testing, so there's no SLA and multiple apps share virtual machines.  On the other end of the spectrum, the Isolated Service Plan is intended for mission critical workloads that run in a private, dedicated virtual networked environment with state of the art hardware, more RAM, and faster processors and SSD storage.
 
 Within each hosting plan you can select the instance size.  Instance size affects:
 
