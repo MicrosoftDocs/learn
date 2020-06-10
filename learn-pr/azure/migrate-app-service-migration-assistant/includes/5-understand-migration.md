@@ -27,9 +27,8 @@ If you're new to Azure App Service, it's important to understand key distinction
 
 The App Service hosting plans are divided into tiers based on the intended workloads they were designed to support.  Hosting plans affect:
 
-- Maximum number of instances and whether the auto-scale feature is supported
-- Whether features like VPN hybrid connectivity and network isolation are available
-- The speed of hardware that hosts the VMs
+- The maximum number of virtual machine instances available to run your app, and the performance characteristics of those virtual machines
+- Whether features like VPN hybrid connectivity, network isolation and autoscale are available
 - The Service Level Agreement (SLA)
 
 For example, the Free and Shared tiers are intended for small proof of concepts and testing, so there's no SLA and multiple apps share virtual machines.  On the other end of the spectrum, the Isolated Service Plan is intended for mission critical workloads that run in a private, dedicated virtual networked environment with state of the art hardware, more RAM, and faster processors and SSD storage.
