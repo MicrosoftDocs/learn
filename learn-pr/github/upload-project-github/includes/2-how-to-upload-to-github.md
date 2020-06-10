@@ -10,7 +10,7 @@ GitHub exclusively uses **Git**, arguably the best version control system around
 
 ### Keep your code in the cloud
 
-Much project code is still stored exclusively on developer machines. When you upload to GitHub, you're moving your code to GitHub's cloud platform where team members can easily access it from anywhere. This change offers a good opportunity to review your team's policy for the kinds of files and data you keep in version control. As a best practice, you should assume that anything you commit to GitHub has been compromised, so be sure not to include sensitive data, such as API keys, passwords, or other files containing comparable information. See **Security strategy essentials** for best practices on managing a secure repository.
+Much project code is still stored exclusively on developer machines. When you upload to GitHub, you're moving your code to GitHub's cloud platform where team members can easily access it from anywhere. This change offers a good opportunity to review your team's policy for the kinds of files and data you keep in version control. As a best practice, you should assume that anything you commit to GitHub has been compromised, so be sure not to include sensitive data, such as API keys, passwords, or other files containing comparable information.
 
 > [!NOTE]
 > GitHub offers both public and private repositories, as well as granular access controls for different parts of a repository. This enables you to control who your projects are visible to, as well as what actions a given user can perform.
@@ -19,7 +19,7 @@ Much project code is still stored exclusively on developer machines. When you up
 
 GitHub offers excellent support for team collaboration through features like issues, pull requests, and code reviews. However, the GitHub flow may differ from the practices your team is currently accustomed to. It's a good idea to consider how your team will adapt to GitHub and whether or not you will retain any existing processes.
 
-If your project is an open source project that allows outside contributors, there's no better option than GitHub for maximizing the benefits. See **Create an open source program** for tips on making the most of your open source program on GitHub.
+If your project is an open source project that allows outside contributors, there's no better option than GitHub for maximizing the benefits.
 
 ## Uploading to GitHub
 
@@ -29,7 +29,7 @@ The most important thing to consider before executing your upload to GitHub is w
 
 ### Handling binary files currently stored in your project
 
-As a best practice, GitHub repositories should be limited to the files necessary for building projects. Avoid committing large binary files, such as build artifacts. Binary files like spreadsheets and presentations are better suited to be tracked on portals that understand how to serve and version them properly. If you have a need to version large binary files, consider another tool, like [git-lfs](https://git-lfs.github.com/?azure-portal=true).
+As a best practice, GitHub repositories should be limited to the files necessary for building projects. Avoid committing large binary files, such as build artifacts. Binary files like spreadsheets and presentations are better suited to be tracked on portals that understand how to serve and version them properly. If you have a need to version large binary files, consider using the Git extension [Git LFS](https://git-lfs.github.com/?azure-portal=true) (Large File Storage).
 
 ### Creating important Git files like .gitignore
 
@@ -39,7 +39,7 @@ Git supports `.gitignore` files to help enforce version control file policies. T
 [Bb]in/
 ```
 
-To learn more about `.gitignore`, see [Ignoring files](https://help.github.com/github/using-git/ignoring-files?azure-portal=true). Also check out the collection of starter `.gitignore` files offered for various platforms in the [gitignore repository](https://github.com/github/gitignore?azure-portal=true).
+Learn more about [Ignoring files](https://help.github.com/github/using-git/ignoring-files?azure-portal=true). Also check out the collection of starter `.gitignore` files offered for various platforms in the [gitignore repository](https://github.com/github/gitignore?azure-portal=true).
 
 There are several other files commonly used in GitHub projects to explain different policies to repository consumers and contributors. Even if your project is private and restricted to a limited audience, it can still be useful to explicitly articulate these policies. While none of these files are required, a few of the common ones are listed below.
 
@@ -50,7 +50,7 @@ There are several other files commonly used in GitHub projects to explain differ
 |`CONTRIBUTING.md`|Explains how users should contribute to the project, such as pull request expectations.|
 |`SECURITY.md`|Explains the security policy for the project and provides guidance to users wanting to submit sensitive security-related code or feedback that should not be publicly disclosed before it is addressed.|
 
-For more information on other important files, see [Setting up your project for healthy contributions](https://help.github.com/github/building-a-strong-community/setting-up-your-project-for-healthy-contributions?azure-portal=true).
+Learn more about [Setting up your project for healthy contributions](https://help.github.com/github/building-a-strong-community/setting-up-your-project-for-healthy-contributions?azure-portal=true).
 
 ### Uploading your project to GitHub
 
