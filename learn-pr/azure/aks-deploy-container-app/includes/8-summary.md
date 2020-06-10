@@ -19,3 +19,4 @@ Imagine how would it be to deploy this application on a VM or another environmen
 - [Azure Service Principals](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?WT.mc_id=learndeploycontainerappsaks-learn-ludossan#create-a-service-principal)
 - [Kubernetes' Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 - [AZ CLI command docs](https://docs.microsoft.com/cli/azure/aks?view=azure-cli-latest&WT.mc_id=learndeploycontainerappsaks-learn-ludossan#az-aks-create)
+- [Kubernetes documentation](https://kubernetes.io/docs/home/)
