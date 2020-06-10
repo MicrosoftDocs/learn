@@ -69,7 +69,7 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
 
   In the top section of this code, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```az deployment group create``` command to deploy the template to Azure.
 
-1. You see ```Running...``` in the terminal. When that finishes, navigate to the [Azure portal](portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+1. You see ```Running...``` in the terminal. When that finishes, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
 1. On the left side panel, choose *Resource groups*.
 1. Select <rgn>[sandbox resource group name]</rgn>.
@@ -96,7 +96,7 @@ Here, you add an Azure storage account resource to the template using a snippet 
 
 1. Your file will look like this:
 
-    [!code-json[](../code/parameter1)]
+    [!code-json[](/code/parameter1)]
 
   Values that you should edit are highlighted in new section of your file and can be navigated using the <kbd>tab</kbd> key.
 
@@ -168,7 +168,7 @@ Here, you make your template more flexible by adding parameters that can be set 
 
 1. Use the new parameter in the ```resources``` block in both the ```name``` and ```displayName``` values. The entire file will look like this:
 
-   [!code-json[](../code/parameter2?highlight=5-12,17,21)]
+   [!code-json[](/code/parameter2?highlight=5-12,17,21)]
 
 1. Save the file.
 
@@ -230,7 +230,7 @@ Here you use parameters to limit the values allowed for a parameter.
 
 1. The entire file will look like this:
 
-    [!code-json[](../code/parameter3?highlight=13-26,40)]
+    [!code-json[](/code/parameter3?highlight=13-26,40)]
 
 1. Save the file.
 
