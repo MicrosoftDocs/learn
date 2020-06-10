@@ -293,35 +293,35 @@ The what-if commands are added as a parameter to the deployment command and the 
 
 To preview changes before deploying a template, add the -Whatif switch parameter to the deployment command.
 
-- New-AzResourceGroupDeployment -Whatif for resource group deployments
-- New-AzSubscriptionDeployment -Whatif and New-AzDeployment -Whatif for subscription level deployments
+- ```New-AzResourceGroupDeployment -Whatif``` for resource group deployments
+- ```New-AzSubscriptionDeployment -Whatif``` and ```New-AzDeployment -Whatif``` for subscription level deployments
 
 You can use the -Confirm switch parameter to preview the changes and get prompted to continue with the deployment.
 
-- New-AzResourceGroupDeployment -Confirm for resource group deployments
-- New-AzSubscriptionDeployment -Confirm and New-AzDeployment -Confirm for subscription level deployments
+- ```New-AzResourceGroupDeployment -Confirm``` for resource group deployments
+- ```New-AzSubscriptionDeployment -Confirm``` and ```New-AzDeployment -Confirm``` for subscription level deployments
 
 The preceding commands return a text summary that you can manually inspect. To get an object that you can programmatically inspect for changes, use:
 
-- $results = Get-AzResourceGroupDeploymentWhatIfResult for resource group deployments
-- $results = Get-AzSubscriptionDeploymentWhatIfResult or $results = Get-AzDeploymentWhatIfResult for subscription level deployments
+- ```$results = Get-AzResourceGroupDeploymentWhatIfResult``` for resource group deployments
+- ```$results = Get-AzSubscriptionDeploymentWhatIfResult``` or ```$results = Get-AzDeploymentWhatIfResult``` for subscription level deployments
 
 #### Azure CLI
 
 To preview changes before deploying a template, use what-if with the deployment command.
 
-- az deployment group what-if for resource group deployments
-- az deployment sub what-if for subscription level deployments
+- ```az deployment group what-if``` for resource group deployments
+- ```az deployment sub what-if``` for subscription level deployments
 
 You can use the --confirm-with-what-if switch (or its short form -c) to preview the changes and get prompted to continue with the deployment.
 
-- az deployment group create --confirm-with-what-if or -c for resource group deployments
-- az deployment sub create --confirm-with-what-if or -c for subscription level deployments
+- ```az deployment group create --confirm-with-what-if``` or -c for resource group deployments
+- ```az deployment sub create --confirm-with-what-if``` or -c for subscription level deployments
 
 The preceding commands return a text summary that you can manually inspect. To get a JSON object that you can programmatically inspect for changes, use:
 
-- az deployment group what-if --no-pretty-print for resource group deployments
-- az deployment sub what-if --no-pretty-print for subscription level deployments
+- ```az deployment group what-if --no-pretty-print``` for resource group deployments
+- ```az deployment sub what-if --no-pretty-print``` for subscription level deployments
 
 For example, in our storage account deployment scenario the command will look like this:
 

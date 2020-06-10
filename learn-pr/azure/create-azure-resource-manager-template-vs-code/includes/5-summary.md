@@ -18,7 +18,7 @@ Here are some links to learn more:
 
 - [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
 
-- [Understand the structure and syntax of ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax) documentation.
+- [Understand the structure and syntax of ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax)
 
 - [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview?azure-portal=true)
 
