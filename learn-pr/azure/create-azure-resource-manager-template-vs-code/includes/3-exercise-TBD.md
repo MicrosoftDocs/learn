@@ -322,6 +322,25 @@ Here, you deploy the template and see the endpoints output as JSON.
 
     ![Azure portal showing the output selection in the left menu](../media/3-portal-outputs.png)
 
-## Optional What-if exercise
+## Test the template with what-if
 
-TODO: What-if is in preview. Suggest pointing to the docs instead. [What-if](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell&azure-portal=true)
+It is always good practice to see what changes to the infrastructure the template will make before it is deployed. To do this you use the *what-if* switch.
+
+1. Add a [what-if](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest#az-deployment-group-what-if&azure-portal=true) switch to the deployment command and change the *storageSKU* parameter value to **Standard_GRS**. Be sure to use the same unique name for the *storageName* parameter that you used in the previous deployment.
+
+    ```azurecli
+    templateFile="azuredeploy.json"
+    today=$(date +"%d-%b-%Y")
+    DeploymentName="addoutputswhatif-"$today
+
+    az deployment group what-if \
+      --name $DeploymentName \
+      --template-file $templateFile \
+      --parameters storageSKU=Standard_GRS storageName={your-unique-name}
+    ```
+
+1. Your *what-if* output will look like this:
+
+    ![Visual Studio Code terminal with the color coded modifications](../media/3-what-if-modify.png)
+
+Try using the ```az deployment group create --confirm-with-what-if``` command on your own.

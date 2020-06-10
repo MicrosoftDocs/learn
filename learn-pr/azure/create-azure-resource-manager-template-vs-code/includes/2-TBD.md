@@ -9,12 +9,9 @@ With infrastructure as code, you can maintain both your application code and eve
 - Consistent configurations
 - Improved scalability
 - Faster deployments
-- Less documentation because the scripts replace it
 - Better traceability
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Infrastructure-as-Code--One-Dev-Question/player?format=ny]
-
-In this module, we describe using an Azure Resource Manager template to define and deploy your infrastructure to Azure.
 
 ## What is an Azure Resource Manager template
 
@@ -69,7 +66,7 @@ The **variables** section is an optional section where you define values that ar
 
 The **functions** section is an optional section, where you can define [User-defined functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-user-defined-functions?azure-portal=true) that are available within the template. You can create your own functions when you have complicated expressions that are used repeatedly in your template.
 
-The **Resources** section is a required section that defines the actual items you want to deploy, or that you want to update, in a resource group or a subscription.
+The **resources** section is a required section that defines the actual items you want to deploy, or that you want to update, in a resource group or a subscription.
 
 The **output** section is another optional section where you specify the values that will be returned at the end of the deployment.
 
@@ -103,8 +100,8 @@ Then, you create a resource group or use an already defined resource group to de
 
 ```azurecli
 az group create \
-  --name myResourceGroup \
-  --location "Central US"
+  --name {name of your resource group} \
+  --location "{location}"
 ```
 
 ---
@@ -112,13 +109,13 @@ az group create \
 
 ```azurepowershell
 New-AzResourceGroup `
-  -Name myResourceGroup `
-  -Location "Central US"
+  -Name {name of your resource group} `
+  -Location "{location}"
 ```
 
 ---
 
-To deploy the template, use either Azure CLI [az deployment group create](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create?azure-portal=true) or Azure PowerShell [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true). Specify the resource group and give a name to the deployment so you can easily identify it in the deployment history. For convenience, create a variable that stores the path to the template file. This variable makes it easier for you to run the deployment commands because you don't have to retype the path every time you deploy. Here is an example:
+To deploy the template, use either Azure CLI's [az deployment group create](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create?azure-portal=true) or Azure Powershell's [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true). Specify the resource group and give a name to the deployment so you can easily identify it in the deployment history. For convenience, create a variable that stores the path to the template file. This variable makes it easier for you to run the deployment commands because you don't have to retype the path every time you deploy. Here is an example:
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -149,6 +146,8 @@ In the exercise unit, you create an Azure Resource Manager template and deploy i
 Linked templates are used to deploy complex solutions. You can break a template into many templates, and deploy these templates through a main template. When the main template gets deployed, it triggers the deployment of the linked template. You can store and secure the linked template by using a SAS token.
 
 A continuous integration/continuous deployment (CI/CD) pipeline automates building and deploying development project including Azure Resource Manager template projects. The two most common pipelines used for template deployment are [Azure Pipelines](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](https://docs.microsoft.com/en-us/learn/paths/automate-workflow-github-actions/?azure-portal=true).
+
+More information on these two types of deployment are covered in other modules.
 
 ## How do I add resources to the template
 
@@ -243,7 +242,7 @@ az deployment group create \
 
 ## What are template Outputs
 
-In the Outputs section of your template, you can specify values that will be returned after a successful deployment. Here are the elements that make up the outputs section.
+In the *outputs* section of your template, you can specify values that will be returned after a successful deployment. Here are the elements that make up the outputs section.
 
 ```json
 "outputs": {
@@ -279,3 +278,74 @@ As an example, to output the Azure storage account's endpoints, your output sect
 ```
 
 Notice the ```reference``` part of the expression. This function gets the runtime state of the storage account.
+
+## How can I test my template
+
+Before deploying a template and making changes to your infrastructure, it is recommended that you preview the changes that executing the template will make. Azure Resource Manager provides the *what-if* operation to let you see how resources will change if you deploy the template. More information on what-if can be found in the [documentation](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-cli&azure-portal=true).
+
+The what-if commands are added as a parameter to the deployment command and the output is color-coded to help you see the different types of changes.
+
+![What-if output in Visual Studio Code terminal](../media/2-what-if-output.png)
+
+### How do I use what-if commands
+
+#### Azure PowerShell
+
+To preview changes before deploying a template, add the -Whatif switch parameter to the deployment command.
+
+- New-AzResourceGroupDeployment -Whatif for resource group deployments
+- New-AzSubscriptionDeployment -Whatif and New-AzDeployment -Whatif for subscription level deployments
+
+You can use the -Confirm switch parameter to preview the changes and get prompted to continue with the deployment.
+
+- New-AzResourceGroupDeployment -Confirm for resource group deployments
+- New-AzSubscriptionDeployment -Confirm and New-AzDeployment -Confirm for subscription level deployments
+
+The preceding commands return a text summary that you can manually inspect. To get an object that you can programmatically inspect for changes, use:
+
+- $results = Get-AzResourceGroupDeploymentWhatIfResult for resource group deployments
+- $results = Get-AzSubscriptionDeploymentWhatIfResult or $results = Get-AzDeploymentWhatIfResult for subscription level deployments
+
+#### Azure CLI
+
+To preview changes before deploying a template, use what-if with the deployment command.
+
+- az deployment group what-if for resource group deployments
+- az deployment sub what-if for subscription level deployments
+
+You can use the --confirm-with-what-if switch (or its short form -c) to preview the changes and get prompted to continue with the deployment.
+
+- az deployment group create --confirm-with-what-if or -c for resource group deployments
+- az deployment sub create --confirm-with-what-if or -c for subscription level deployments
+
+The preceding commands return a text summary that you can manually inspect. To get a JSON object that you can programmatically inspect for changes, use:
+
+- az deployment group what-if --no-pretty-print for resource group deployments
+- az deployment sub what-if --no-pretty-print for subscription level deployments
+
+For example, in our storage account deployment scenario the command will look like this:
+
+# [Azure CLI](#tab/azure-cli)
+
+To run this deployment command, you must have the [latest version](/cli/azure/install-azure-cli) of Azure CLI.
+
+```azurecli
+templateFile="{provide-the-path-to-the-template-file}"
+az deployment group what-if \
+  --name blanktemplate \
+  --resource-group myResourceGroup \
+  --template-file $templateFile
+```
+
+# [PowerShell](#tab/azure-powershell)
+
+```azurepowershell
+$templateFile = "{provide-the-path-to-the-template-file}"
+New-AzResourceGroupDeployment `
+  -Whatif `
+  -Name blanktemplate `
+  -ResourceGroupName myResourceGroup `
+  -TemplateFile $templateFile
+```
+
+---
