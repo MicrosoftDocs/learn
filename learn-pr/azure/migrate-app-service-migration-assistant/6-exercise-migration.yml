@@ -9,7 +9,7 @@ metadata:
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 10
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-migration.md)]

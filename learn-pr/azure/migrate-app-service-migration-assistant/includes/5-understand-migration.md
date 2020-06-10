@@ -2,41 +2,43 @@ Now that the assessment has determined that you can migrate your web app to Azur
 
 ## How the Migration Assistant migrates your web app
 
-The Migration Assistant begins the migration process by collecting key details from you about your Azure account and then performs the migration.  First, you'll log in to your Azure account and associate your Migration Assistant session with your account using a unique code. Next, you'll choose the subscription, resource group, and the website's domain name. You can choose to create a new App Service Plan to host the app, or select an existing plan, which affects the geographical region from which your app is hosted. You'll also have a chance to associate this migration effort with an existing Azure Migration Project (we'll talk about this in a moment).  Finally, you can choose to either skip database setup or choose to setup a hybrid connection to enable database connection.
+The Migration Assistant begins the migration process by collecting key details from you about your Azure account and then performs the migration.  First, you'll log in to your Azure account and associate your Migration Assistant session with your account using a unique code. Next, you'll choose the subscription, resource group, and the website's domain name. You can choose to create a new App Service Plan to host the app, or select an existing plan, which affects the geographical region from which your app is hosted. You'll also have a chance to associate this migration effort with an existing Azure Migration Project (we'll talk about this in a moment).  Finally, you can choose to either skip database setup or choose to set up a hybrid connection to enable database connection.
 
-Once the Migration Assistant collects and verifies your selections, it goes to work.  It creates the needed App Service resources in the selected region and resource group. It zips up the web app's source files and uses the App Service deployment API to deploy them. Finally, it performs optional migration steps, like helping you setup a Hybrid connection.
+Once the Migration Assistant collects and verifies your selections, it goes to work.  It creates the needed App Service resources in the selected region and resource group. It zips up the web app's source files and uses the App Service deployment API to deploy them. Finally, it performs optional migration steps, like helping you set up a Hybrid connection.
 
 After a successful migration, you'll need to perform any post-migration tasks.  This might include:
 
-- manually moving application settings and connection strings in your web.config file to the Azure App Service
-- migrating data from an on-premises SQL server to an Azure SQL database
-- setting up an SSL certificate
-- setting up custom domain names
-- setting up permissions in Azure Active Directory
+- manually moving application settings and connection strings in your web.config file to the Azure App Service.
+- migrating data from an on-premises SQL server to an Azure SQL database.
+- setting up an SSL certificate.
+- setting up custom domain names.
+- setting up permissions in Azure Active Directory.
 
-You may also decide to change the App Service hosting plan and other settings like auto-scaling and deployment slots.  
+You may also decide to change the App Service hosting plan and other settings like autoscaling and deployment slots.  
 
 ## App Service plans
 
 During migration, the Migration Assistant will:
 
-- Create an App Service hosting plan
-- Deploy your web app to a single Premium P1v2 VM instance
+- create an App Service hosting plan.
+- deploy your web app to a single Premium P1v2 VM instance.
 
-If you're new to Azure App Service, it's important to understand key distinctions between your web app, the hosting plan, and VM instances which will host your web app.
+If you're new to Azure App Service, it's important to understand key distinctions between your web app, the hosting plan, and VM instances that will host your web app.
 
 The App Service hosting plans are divided into tiers based on the intended workloads they were designed to support.  Hosting plans affect:
 
-- The maximum number of virtual machine instances available to run your app, and the performance characteristics of those virtual machines
-- Whether features like VPN hybrid connectivity, network isolation and autoscale are available
-- The Service Level Agreement (SLA)
+- The maximum number of virtual machine instances available to run your app, and the performance characteristics of those virtual machines.
+- Whether features like VPN hybrid connectivity, network isolation and autoscale are available.
+- The Service Level Agreement (SLA).
 
-For example, the Free and Shared tiers are intended for small proof of concepts and testing, so there's no SLA and multiple apps share virtual machines.  On the other end of the spectrum, the Isolated Service Plan is intended for mission critical workloads that run in a private, dedicated virtual networked environment with state of the art hardware, more RAM, and faster processors and SSD storage.
+For example, the Free and Shared tiers are intended for small proof of concepts and testing, so there's no SLA and multiple apps share virtual machines.  On the other end of the spectrum, the Isolated Service Plan is intended for mission critical workloads that run in a private, dedicated virtual networked environment with state-of-the-art hardware, more RAM, and faster processors and SSD storage.
 
-Within each hosting plan you can select the instance size.  Instance size affects:
+Within each hosting plan, you can select the instance size.  Instance size affects:
 
-- Instance size, including number of cores, RAM, disk storage
-- Pricing
+- Instance size, including number of cores, RAM, and disk storage.
+- Pricing.
+
+You can deploy multiple web apps to a single hosting plan (similar to running multiple web apps on a single instance of IIS).  All will share the same VM instances.
 
 For more information, see "App Service overview".  (A link provided in the Additional Reading section at the end of this module).
 
@@ -58,16 +60,16 @@ Earlier we said that you could associate your migration with an Azure Migration 
 
 Azure Migrate supports key migration scenarios like:
 
-- Migrating Windows and Linux servers (whether those servers are VMs hosted in VMWare or Hyper-V, physical servers, even of other clouds)
-- Migrating SQL Server and other databases, including the data
-- Migrating Virtual Desktops
-- Migrating web apps (using the Azure App Service Migration Assistant)
+- Migrating Windows and Linux servers (whether those servers are VMs hosted in VMWare or Hyper-V, physical servers, even of other clouds).
+- Migrating SQL Server and other databases, including the data.
+- Migrating Virtual Desktops.
+- Migrating web apps (using the Azure App Service Migration Assistant).
 
-So, if you already have a Azure Migrate project set up, you can specify the name of the project during Migration and it will save the migration details and status in your Azure Migrate hub.
+So, if you already have an Azure Migrate project set up, you can specify the name of the project during Migration and it will save the migration details and status in your Azure Migrate hub.
 
 ## Recap
 
-In this unit we covered several important concepts:
+In this unit, we covered several important concepts:
 
 - If the Azure App Service Migration Assistant assessment determines it can migrate your web app, it will collect information about your Azure account, create new App Service resources in Azure, and deploy your app to them.
 - After the migration, there may still be steps you need to take to get your web app into working order.
