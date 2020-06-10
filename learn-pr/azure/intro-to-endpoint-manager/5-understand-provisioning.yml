@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-endpoint-manager.5-understand-provisioning
+title: Understand provisioning
+metadata:
+  title: Understand provisioning
+  description: Understand provisioning.
+  ms.date: 05/18/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-understand-provisioning.md)]

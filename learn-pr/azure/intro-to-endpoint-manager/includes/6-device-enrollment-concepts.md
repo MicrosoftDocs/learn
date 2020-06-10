@@ -2,9 +2,6 @@ Microsoft Endpoint Manager allows you to manage and secure your organization's c
 
 Before you can safeguard the devices that access your organization's resources, you must enroll them. Enrolling means that the device is connected and recognized by Intune or Configuration Manager based on a Mobile Device Management (MDM) certificate. There are several methods to enroll your workforce's devices. Each method depends on **device ownership** (personal or corporate), **device type** (iOS/iPadOS, Windows, Android, macOS), and **device management requirements** (resets, affinity, locking). These methods are explained below.
 
-> [!NOTE]
-> Before a device is enrolled with Intune or Configuration Manager, you may need to provision the device. Provisioning is a process when your organization issues new or repurposed devices to individuals in your organization. As part of the process, the indivdual user signs in to the device and steps through the process of connecting to your organization. You can either enroll the devices with Intune or Configuration Manager during the provisioning process or after depending on your needs.
-
 ## Device ownership
 
 You can allow device ownership to be corporate or personal. Corporate-owned devices (COD) include phones, tablets, and PCs owned by the organization and distributed to the workforce. COD enrollment supports scenarios like automatic enrollment, shared devices, or pre-authorized enrollment requirements. A common way to enroll CODs is for an administrator or manager to use the device enrollment manager (DEM). iOS/iPadOS devices can be enrolled directly through Apple's Automated Device Enrollment (ADE) tools. Devices with an international mobile equipment identifier (IMEI) number can also be identified and tagged as corporate-owned.

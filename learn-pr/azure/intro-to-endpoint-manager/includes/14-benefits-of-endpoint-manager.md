@@ -1,3 +1,6 @@
+Endpoint Manager capabilities
+Slides 12-24
+
 Effectively managing endpoints presents a number of challenges. For instance, how do you manage existing investments? How do you provide proper security in the form of access control and encryption? What do you determine which user, device, or app is in compliance based on your corporate requirements? 
 
 Microsoft Endpoint Manager provides the services and tools you need in one location to manage your organization's endpoint. 
@@ -19,6 +22,4 @@ MEM provides a means to modern management. Modern management is the following:
 - Enable strong partner ecosystem
 
  It provides an improved end user experience in a single console for simplified IT administration and operations management. MEM helps administrators protect corporate resources. 
-
-
 

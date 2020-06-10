@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-endpoint-manager.12-implement-security-rules
+title: Implement security rules
+metadata:
+  title: Implement security rules
+  description: Implement security rules.
+  ms.date: 05/04/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-implement-security-rules.md)]

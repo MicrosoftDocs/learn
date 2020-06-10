@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-endpoint-manager.11-policy-management-based-on-groups
+title: Policy management based on groups
+metadata:
+  title: Policy management based on groups
+  description: Policy management based on groups.
+  ms.date: 05/04/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-policy-management-based-on-groups.md)]

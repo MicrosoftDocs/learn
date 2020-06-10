@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-endpoint-manager.10-protect-your-organizations-data
+title: Protect your organization's data
+metadata:
+  title: Protect your organization's data
+  description: Protect your organization's data.
+  ms.date: 05/18/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-protect-your-organizations-data.md)]
