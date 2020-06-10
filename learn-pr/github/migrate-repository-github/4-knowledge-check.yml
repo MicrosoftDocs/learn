@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is *not* an important consideration for migrating a source repository to GitHub?"
+  - content: "Which of the following is **not** an important consideration for migrating a source repository to GitHub?"
     choices:
     - content: "Do you want to keep all of the version control history?"
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
     - content: "It's just a token file required by GitHub to make sure you're following the migration instructions closely. If you ignore it, your repository migration will fail."
       isCorrect: false
       explanation: "`.gitignore` is an optional file that helps you manage which files are ignored by version control."
-  - content: "Which of the following is *not* a valid way to migrate a project to GitHub?"
+  - content: "Which of the following is **not** a valid way to migrate a project to GitHub?"
     choices:
     - content: "Email a password protected zip of your project to GitHub support along with instructions for the repository's creation. Be sure to include the zip password in the same email."
       isCorrect: true

@@ -4,9 +4,6 @@ Suppose you are managing the version control for a project and want to move to G
 
 In this module, you learn how to prepare and migrate a project to GitHub from a legacy version control system.
 
-> [!NOTE]
-> If you are uploading a project that is not already hosted in a version control system, consider completing **Uploading your project to GitHub** instead.
-
 ## Learning objectives
 
 In this module, you will:
