@@ -72,7 +72,7 @@ Resources that are used in this exercise are located in a [Git repository for co
     flask run
     ```
 
-1. Open a browser and go to <http://localhost:5000/>. Confirm that the website appears in the browser as shown in this screenshot:
+1. Open a browser and go to `http://localhost:5000/`. Confirm that the website appears in the browser as shown in this screenshot:
 
     ![Contoso Travel](../media/initial-run.png)
 
@@ -159,7 +159,7 @@ Finish up by saving your changes to **index.html** and **app.py**. It's time to 
 
 Let's make sure your changes have the desired effect by uploading a photo to the site.
 
-1. Make sure that Flask is still running in the **starter** directory. If it's not, you can start it again by using a `flask run` command. Then either refresh the page in your browser or open a new browser instance and go to <http://localhost:5000/>.
+1. Make sure that Flask is still running in the **starter** directory. If it's not, you can start it again by using a `flask run` command. Then either refresh the page in your browser or open a new browser instance and go to `http://localhost:5000/`.
 
 1. Select the **Upload Photo** button and select a photo from your local file system.
 

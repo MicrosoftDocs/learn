@@ -3,7 +3,7 @@ In this unit, we verify all the pieces you've put in place work as expected. You
 ## Test the multiple devices are automatically assigned to your IoT Hub
 
 > [!TIP]
-> With three console screens running, a Visual Studio instance to initiate the devices, and a browser view of the Azure portal, it can help to have multiple monitors. The more screen real estate you've available for testing, the easier you'll find testing is!
+> With three console screens running, a Visual Studio, or Visual Studio Code, instance to initiate the devices, and a browser view of the Azure portal, it can help to have multiple monitors. The more screen real estate you've available for testing, the easier you'll find testing is!
 
 1. Verify all three device apps are still sending telemetry.
 

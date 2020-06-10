@@ -21,13 +21,13 @@ It's time to deliver on those lofty buzzwords. Now you need to create a new proj
    | Name          | GetProducts  |
    | Authorization | Function     |
 
-The "api" folder in VS Code will now contain a new Azure Functions project along with a new function called "GetProducts".
+The "api" folder in Visual Studio Code will now contain a new Azure Functions project along with a new function called "GetProducts".
 
 ## Create the Create, Update, and Delete functions
 
 ### Create the CreateProduct function
 
-1. Open the Command Palette in VS Code.
+1. Open the Command Palette in Visual Studio Code.
 
 1. Type "create function".
 
@@ -45,7 +45,7 @@ The "api" folder in VS Code will now contain a new Azure Functions project along
 
 ### Create the UpdateProduct function
 
-1. Open the Command Palette in VS Code.
+1. Open the Command Palette in Visual Studio Code.
 
 1. Type "create function".
 
@@ -63,7 +63,7 @@ The "api" folder in VS Code will now contain a new Azure Functions project along
 
 ### Create the DeleteProduct function
 
-1. Open the Command Palette in VS Code.
+1. Open the Command Palette in Visual Studio Code.
 
 1. Type "create function".
 
@@ -81,7 +81,7 @@ The "api" folder in VS Code will now contain a new Azure Functions project along
 
 ## Run the project
 
-Azure Functions projects can be run and debugged locally from within VS Code.
+Azure Functions projects can be run and debugged locally from within Visual Studio Code.
 
 1. Open the Command Palette.
 
@@ -93,7 +93,7 @@ Azure Functions projects can be run and debugged locally from within VS Code.
 
    The Azure Functions project will launch. Notice that the terminal shows you what URL the function is running on.
 
-   :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the VS Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
+   :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the Visual Studio Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
 
 1. Press <kbd>Cmd/Ctrl</kbd> and click on the "GetProducts" link to open it in a browser.
 

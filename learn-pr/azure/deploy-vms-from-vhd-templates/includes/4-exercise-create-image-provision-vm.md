@@ -2,11 +2,19 @@ In this sample scenario, your organization is rolling out a new environment in A
 
 In this exercise, you'll create a virtual machine and generalize it. You'll then create an image from the generalized virtual machine, and then use this image to create another virtual machine. You can try this out with either Windows or Linux (or both) by selecting the platform type above.
 
+## Set your default resource group
+
+1. Activate the Cloud Shell window on the right by signing into the Azure Sandbox.
+
+1. Set the default resource group to work with by typing the following command into the Cloud Shell on the right. This allows you to omit the resource group name from all the commands.
+
+    ```azurecli
+    az configure --defaults group=<rgn>[Sandbox resource group name]</rgn>
+    ```
+
 ## Create a virtual machine
 
 In this task, you'll quickly create a virtual machine that runs a simple web app. The web app displays the name of the host machine. You'll use this virtual machine as the basis for the rest of the exercise.
-
-[!include[](../../../includes/subscription-cloudshell-azurecli-create-rg.md)]
 
 ::: zone pivot="windows-cloud"
 
@@ -94,21 +102,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-::: zone-end
-
-::: zone pivot="windows-cloud, hosted-subscription"
-
 1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the **<rgn>[Sandbox resource group name]</rgn>** resource group.
-
-::: zone-end
-
-::: zone pivot="windows-cloud, personal-subscription"
-
-1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the **learn-resources** resource group.
-
-::: zone-end
-
-::: zone pivot="windows-cloud"
 
 1. Select the **MyWindowsVM** virtual machine.
 
@@ -331,4 +325,8 @@ az image create \
 
 ::: zone-end
 
-[!include[](../../../includes/subscription-cloudshell-azurecli-cleanup.md)]
+## Clean up your resources
+
+The sandbox automatically cleans up your resources when you're finished with this module.
+
+When you're working in your own subscription, it's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.

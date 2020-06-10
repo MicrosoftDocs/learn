@@ -1,8 +1,8 @@
 Cosmos DB is a multi-model, globally distributed, NoSQL based database service. It stores data as containers of schemaless documents. Cosmos DB enables you to distribute data globally, scale performance horizontally, and apply varying levels of consistency according to your organization's requirements. 
 
-You create and manage Cosmos DB databases using the Azure portal from a web browser, by writing your own applications, and from within tools like VS Code.
+You create and manage Cosmos DB databases using the Azure portal from a web browser, by writing your own applications, and from within tools like Visual Studio Code.
 
-In this unit, you'll learn more about how Cosmos DB organizes data. You'll see how to use VS Code to create and maintain Cosmos DB databases and containers.
+In this unit, you'll learn more about how Cosmos DB organizes data. You'll see how to use Visual Studio Code to create and maintain Cosmos DB databases and containers.
 
 ## What is Cosmos DB?
 
@@ -55,10 +55,10 @@ The SQL API is a variant of the SQL language used by most relational database ma
 
 ## Use Visual Studio Code to manage Cosmos DB
 
-If you're using VS Code as your development environment for building Cosmos DB databases and applications, you can install the Azure Cosmos DB extension.
+If you're using Visual Studio Code as your development environment for building Cosmos DB databases and applications, you can install the Azure Cosmos DB extension.
 
-You install the extension from the Extensions Marketplace for VS Code.
+You install the extension from the Extensions Marketplace for Visual Studio Code.
 
-The Cosmos DB extension provides a graphical user interface that is integrated with VS Code. Using the extension, you can create, delete, and manage Cosmos DB accounts, databases, containers, and documents.
+The Cosmos DB extension provides a graphical user interface that is integrated with Visual Studio Code. Using the extension, you can create, delete, and manage Cosmos DB accounts, databases, containers, and documents.
 
-:::image type="content" source="../media/2-cosmosdb-extension.png" alt-text="Screenshot of the Cosmos DB extension in VS Code as user right-clicks on the Documents node for a contextual menu to create a new document." loc-scope="vs-code":::
+:::image type="content" source="../media/2-cosmosdb-extension.png" alt-text="Screenshot of the Cosmos DB extension in Visual Studio Code as user right-clicks on the Documents node for a contextual menu to create a new document." loc-scope="vs-code":::
