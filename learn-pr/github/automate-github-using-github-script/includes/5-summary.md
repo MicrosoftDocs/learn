@@ -1,13 +1,11 @@
-In this module, you learned about the key features of GitHub, including issues, commits, and pull requests. You also used GitHub Pages to publish a public site based on the contents of your project.
+In this module, you learned to interact with the GitHub API from GitHub Actions by using GitHub Script.
 
 You learned about:
 
-- Communicating with the project community in issues
-- Managing notifications for project events
-- Creating branches to manage work in parallel
-- Making commits to update project source
-- Introducing changes with pull requests
-- Deploying a web page to GitHub Pages
+- Using GitHub Script in your workflow
+- Commenting on issues using octokit
+- Adding issues to a project board using octokit
+- Using the workflow expression syntax to filter when jobs run in a workflow
 
 ## Learn more
 
