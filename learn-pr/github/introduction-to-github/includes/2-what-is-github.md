@@ -14,7 +14,7 @@ To learn more about GitHub Issues, see [Mastering Issues](https://guides.github.
 
 ## Notifications
 
-As a collaborative platform, GitHub offers notifications for virtually every event that takes place within a given workflow. These notifications can be finely tuned to meet your preferences. For example, you can subscribe to all issue creations and edits on a project, or you can just receive notifications for issues in which you are mentioned. You can also decide whether you receive notifications via email, web & mobile, or both. To keep track of all of your notifications across different projects, use the [GitHub Notifications dashboard](https://github.com/notifications?azure-portal=true).
+As a collaborative platform, GitHub offers **notifications** for virtually every event that takes place within a given workflow. These notifications can be finely tuned to meet your preferences. For example, you can subscribe to all issue creations and edits on a project, or you can just receive notifications for issues in which you are mentioned. You can also decide whether you receive notifications via email, web & mobile, or both. To keep track of all of your notifications across different projects, use the [GitHub Notifications dashboard](https://github.com/notifications?azure-portal=true).
 
 ![GitHub Notifications dashboard](../media/2-notifications.png)
 
@@ -30,7 +30,7 @@ To learn more about GitHub branches, see [About branches](https://help.github.co
 
 ## Commits
 
-A **commit** is a change to one or more files that has been persisted to a branch. Every time a commit is created, it is assigned a unique ID and tracked, along with the time and contributor. This provides a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request. 
+A **commit** is a change to one or more files on a branch. Every time a commit is created, it is assigned a unique ID and tracked, along with the time and contributor. This provides a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request. 
 
 ![GitHub commits to a master branch](../media/2-commits.png)
 
@@ -38,7 +38,7 @@ To learn more about GitHub commits, see [Committing and reviewing changes to you
 
 ## Pull Requests
 
-A **pull request** is the mechanism used to signal that the commits from one branch are ready to be merged into another branch. During creation, the developer will often request one or more reviewers who are in a position to verify the code and approve the merge. These reviewers have the opportunity to comment on changes, add their own, or use the pull request itself for further discussion. Once the changes have been approved (if approval is required in the project), then the pull request's source branch may be merged in to the target branch. 
+A **pull request** is the mechanism used to signal that the commits from one branch are ready to be merged into another branch. During creation, the developer will often request one or more reviewers who are in a position to verify the code and approve the merge. These reviewers have the opportunity to comment on changes, add their own, or use the pull request itself for further discussion. Once the changes have been approved (if approval is required in the project), then the pull request's source branch (the compare branch) may be merged in to the base branch. 
 
 ![GitHub pull request](../media/2-pull-request.png)
 
@@ -46,7 +46,7 @@ To learn more about GitHub pull requests, see [About pull requests](https://help
 
 ## GitHub Pages
 
-**GitHub Pages** is a hosting engine that's built right into your GitHub account. By following a few conventions, and enabling the feature, you can build your own static site generated from HTML and markdown code pulled directly from your repo. 
+**GitHub Pages** is a hosting engine that's built right into your GitHub account. By following a few conventions, and enabling the feature, you can build your own static site generated from HTML and markdown code pulled directly from your repository. 
 
 ![GitHub Pages](../media/2-github-pages.png)
 
