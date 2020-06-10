@@ -82,13 +82,13 @@ To set up the work item:
 
 At the end of this module, you'll move the card to the **Done** column after you complete the task.
 
-## Create the Azure App Service environment
+## Create the Azure Kubernetes Service environment
 
-Here you create the App Service required to deploy the new container version of the site.
+Here you create the Azure Kubernetes Service resources that are required to deploy the new container version of the site.
 
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up Azure resources through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as Azure Kubernetes Service can be tedious.
 
-In this module, you use the Azure CLI to bring up the resources need to deploy and run an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you use the Azure CLI to bring up the resources need to deploy and run your app on Azure Kubernetes Service. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
 > [!IMPORTANT]
 > You need your own Azure subscription to complete the exercises in this module.
@@ -162,9 +162,9 @@ Create Bash variables to make the setup process more convenient and less error-p
       --output tsv)
     ```
 
-### Create the Azure resources required
+### Create the Azure resources
 
-This solution requires several Azure resources for deployment, which will be created now.
+This solution requires several Azure resources for deployment, which you create now.
 
    > [!NOTE]
    > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.

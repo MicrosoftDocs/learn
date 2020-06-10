@@ -6,13 +6,13 @@ In this unit, you'll first create a dashboard showing all the capabilities of th
 
     [![Screenshot showing how to create a new view](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
 
-1. You should now see a list of all the **Telemetry**, **Properties**, and **Commands** you created, each with a check box.
+1. You should now see a list of all the **Telemetry**, **Property**, and **Commands** you created, each with a check box. There is also a list of **Cloud properties**, and **Custom tiles**, which you can ignore for now.
 
 1. Click the **Location** check box, then **Add tile**. Dashboards are made up of tiles. The reason we choose the location tile first, is that we want to expand it from its default size. Drag the lower right-hard corner of the tile, so that the tile is at least twice the default size. This tile is the most fun, it will show the location of the truck on a map of the world.
 
 1. Before adding more tiles, change the **View name** to something more specific, "Truck view", or something similar.
 
-1. Now, click each of the rest of the telemetry and properties capabilities in turn, starting at the top, and **Add tile**. We are going for function over form here, we can prettify the dashboard later. For now, we just want a dashboard that will confirm all the telemetry being sent from our remote device. There's no need to add the commands to the dashboard, though that option does exist.
+1. Now, click each of the rest of the telemetry and property capabilities in turn, starting at the top, and **Add tile** for each one. We are going for function over form here, we can prettify the dashboard later. For now, we just want a dashboard that will confirm all the telemetry being sent from our remote device. There's no need to add the commands to the dashboard, though that option does exist.
 
 1. When you've added all the tiles, scroll around a bit on your dashboard, and check out the wording in the tiles.
 

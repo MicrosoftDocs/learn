@@ -13,11 +13,11 @@ Build a Node.js app for Azure Cosmos DB in Visual Studio Code
 ## Product(s)
 
 - Cosmos DB
-- VS Code
+- Visual Studio Code
 
 ## Prerequisites
 
-- VS Code with Azure extensions installed
+- Visual Studio Code with Azure extensions installed
 - Node.js installed
 
 ## Summary
@@ -27,7 +27,7 @@ Build a database app to store and query data in Azure Cosmos DB by using Visual 
 ## Learning objectives
 
 1. Create a Cosmos DB instance for a Node.js app
-2. Set up a new Node.js app in VS Code
+2. Set up a new Node.js app in Visual Studio Code
 3. Add JavaScript code to work with Cosmos DB
 4. Create and run Cosmos DB stored procedures from your app
 
@@ -38,7 +38,7 @@ Identify the subtasks of *module title*
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
 | Create a Cosmos DB instance | Create a Cosmos DB instance for a Node.js app | Exercise | Create a Cosmos DB instance for a Node.js app | Yes |
-| Create a Node.js app in VS Code | Set up a new Node.js app in VS Code | Exercise | Set up a new Node.js app in VS Code | Yes |
+| Create a Node.js app in Visual Studio Code | Set up a new Node.js app in Visual Studio Code | Exercise | Set up a new Node.js app in Visual Studio Code | Yes |
 | Add JavaScript code to work with Cosmos DB | Add JavaScript code to work with Cosmos DB | Exercise | Add JavaScript code to work with Cosmos DB | Yes |
 | Create and run Cosmos DB stored procedures | Create and run Cosmos DB stored procedures from your app | Exercise | Create and run Cosmos DB stored procedures from your app | Yes |
 

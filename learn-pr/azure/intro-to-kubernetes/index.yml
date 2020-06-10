@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Kubernetes
-summary: Determine the types of business problems that can be solved using Kubernetes. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing.
+summary: Determine the types of business problems that you can solve by using Kubernetes. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing.
 abstract: |
   In this module, you will:
   - Evaluate whether Kubernetes is an appropriate orchestration platform for your workload
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of microservices
   - Basic understanding of how Docker containers work
-  - Basic knowledge of installing software using a command-line interface
+  - Basic knowledge of how to install software by using a command-line interface
 iconUrl: /learn/achievements/introduction-to-kubernetes.svg
 badge:
   uid: learn.intro-to-kubernetes.badge

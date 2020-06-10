@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>NA/introduction-to-artificial-intelligence-and-machine-learning</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-3.9%" y="-4.0%" width="108.0%" height="109.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.102043705 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-27.8%" y="-13.9%" width="160.1%" height="128.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M10.6231024,7.08206828 C10.6231024,8.0593937 9.83522232,8.85258535 8.85258535,8.85258535 C7.86994838,8.85258535 7.08206828,8.0593937 7.08206828,7.08206828 C7.08206828,6.1038576 7.86994838,5.31155121 8.85258535,5.31155121 C9.83522232,5.31155121 10.6231024,6.1038576 10.6231024,7.08206828" id="path-5"></path>
+        <filter x="-42.4%" y="-42.4%" width="184.7%" height="241.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M4.86892194,2.6557756 C4.13194421,2.6557756 3.54103414,2.06088187 3.54103414,1.3278878 C3.54103414,0.594229792 4.13194421,0 4.86892194,0 C5.60589967,0 6.19680974,0.594229792 6.19680974,1.3278878 C6.19680974,2.06088187 5.60589967,2.6557756 4.86892194,2.6557756 Z" id="path-7"></path>
+        <filter x="-56.5%" y="-56.5%" width="213.0%" height="288.3%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M14.1641366,13.278878 C14.1641366,14.7448662 12.9823164,15.9346536 11.508361,15.9346536 C10.0344055,15.9346536 8.85258535,14.7448662 8.85258535,13.278878 C8.85258535,11.811562 10.0344055,10.6231024 11.508361,10.6231024 C12.9823164,10.6231024 14.1641366,11.811562 14.1641366,13.278878" id="path-9"></path>
+        <filter x="-28.2%" y="-28.2%" width="156.5%" height="194.1%" filterUnits="objectBoundingBox" id="filter-10">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M10.6231024,19.4756878 C10.6231024,20.4530132 9.83522232,21.2462048 8.85258535,21.2462048 C7.86994838,21.2462048 7.08206828,20.4530132 7.08206828,19.4756878 C7.08206828,18.4974771 7.86994838,17.7051707 8.85258535,17.7051707 C9.83522232,17.7051707 10.6231024,18.4974771 10.6231024,19.4756878" id="path-11"></path>
+        <filter x="-42.4%" y="-98.8%" width="184.7%" height="241.2%" filterUnits="objectBoundingBox" id="filter-12">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="-2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="-2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M1.3278878,13.0575634 L8.82395203,13.0575634" id="path-13"></path>
+        <filter x="-19.9%" y="-288.9%" width="139.5%" height="1129.6%" filterUnits="objectBoundingBox" id="filter-14">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polyline id="path-15" points="3.6379272e-12 9.37397669 1.00497999 9.37397669 5.53286584 9.37397669 7.43728627 7.96732681"></polyline>
+        <filter x="-20.2%" y="-99.7%" width="143.0%" height="448.5%" filterUnits="objectBoundingBox" id="filter-16">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polyline id="path-17" points="1.03213081e-16 18.6691913 5.53286584 18.6691913 7.43728627 17.2625414"></polyline>
+        <filter x="-20.2%" y="-263.0%" width="143.0%" height="469.6%" filterUnits="objectBoundingBox" id="filter-18">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="-2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="-2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polyline id="path-19" points="0.442629267 5.74636268 4.00098524 5.74636268 4.94875054 5.00463973 4.94875054 2.6557756"></polyline>
+        <filter x="-33.3%" y="-48.5%" width="166.6%" height="261.8%" filterUnits="objectBoundingBox" id="filter-20">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <polyline id="path-21" points="0.395299409 2.8260924 3.96204756 2.8260924 4.90981286 2.08436945 4.90981286 0.34802001"></polyline>
+        <filter x="-33.2%" y="-141.2%" width="166.5%" height="301.8%" filterUnits="objectBoundingBox" id="filter-22">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="-2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="-2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M4.86892194,26.557756 C4.13194421,26.557756 3.54103414,25.9628623 3.54103414,25.2298682 C3.54103414,24.4962102 4.13194421,23.9019804 4.86892194,23.9019804 C5.60589967,23.9019804 6.19680974,24.4962102 6.19680974,25.2298682 C6.19680974,25.9628623 5.60589967,26.557756 4.86892194,26.557756 Z" id="path-23"></path>
+        <filter x="-56.5%" y="-56.5%" width="213.0%" height="288.3%" filterUnits="objectBoundingBox" id="filter-24">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-51" transform="translate(-50.000000, -260.000000)">
+            <g id="NA/introduction-to-artificial-intelligence-and-machine-learning" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="White-Screen" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(16.000000, 17.000000)">
+                            <path d="M42.0025201,58.943325 L34.440051,51.43665 L34.440051,48.225 C34.440051,47.1061875 33.5261082,46.2 32.4,46.2 C31.2738918,46.2 30.359949,47.1061875 30.359949,48.225 L30.359949,51.43665 L22.7974799,58.943325 C22.00084,59.7340875 22.00084,61.0159125 22.7974799,61.806675 C23.1963099,62.2025625 23.7175429,62.4 24.239796,62.4 C24.7620491,62.4 25.2832821,62.2025625 25.6821121,61.806675 L30.359949,57.16335 L30.359949,59.3625 C30.359949,60.4803 31.2738918,61.3875 32.4,61.3875 C33.5261082,61.3875 34.440051,60.4803 34.440051,59.3625 L34.440051,57.16335 L39.1178879,61.806675 C39.5167179,62.2025625 40.0379509,62.4 40.560204,62.4 C41.0824571,62.4 41.6036901,62.2025625 42.0025201,61.806675 C42.79916,61.0159125 42.79916,59.7340875 42.0025201,58.943325" id="Fill-1016" fill="#546670"></path>
+                            <path d="M62.4,10.2 L62.4,46.5789474 C62.4,47.6905263 61.491,48.6 60.38,48.6 L3.82,48.6 C2.709,48.6 1.8,47.6905263 1.8,46.5789474 L1.8,10.2 L62.4,10.2" id="Fill-1017" fill="#E1E4E1"></path>
+                            <path d="M32.7,6 C31.5408,6 30.6,5.104 30.6,4 L30.6,2 C30.6,0.895 31.5408,0 32.7,0 C33.8592,0 34.8,0.895 34.8,2 L34.8,4 C34.8,5.104 33.8592,6 32.7,6" id="Fill-1018" fill="#546670"></path>
+                            <path d="M64.8,9.2 C64.8,9.75 64.344375,10.2 63.7875,10.2 L1.0125,10.2 C0.455625,10.2 0,9.75 0,9.2 L0,5.2 C0,4.65 0.455625,4.2 1.0125,4.2 L63.7875,4.2 C64.344375,4.2 64.8,4.65 64.8,5.2 L64.8,9.2" id="Fill-1019" fill="#30404D"></path>
+                            <polygon id="Fill-1020" fill="#C5CCCD" points="1.8 12 62.4 12 62.4 10.2 1.8 10.2"></polygon>
+                            <path d="M24.3550879,60.24066 C23.865229,60.72924 23.0263456,60.60378 22.7171221,59.98362 C22.6120066,59.7735 22.5293429,59.56134 22.4711721,59.35122 C22.0251964,60.1305 22.1272504,61.13724 22.7926421,61.80228 C23.191673,62.2011 23.7131686,62.4 24.2356848,62.4 C24.7582009,62.4 25.2796966,62.2011 25.6787275,61.80228 L32.4,55.26 L32.4,52.2 L24.3550879,60.24066" id="Fill-1022" fill="#30404D"></path>
+                            <path d="M40.4449121,60.24066 C40.9337505,60.72924 41.7736544,60.60378 42.0828779,59.98362 C42.1879934,59.7735 42.2706571,59.56134 42.3288279,59.35122 C42.7748036,60.1305 42.6727496,61.13724 42.0073579,61.80228 C41.608327,62.2011 41.0868314,62.4 40.5643152,62.4 C40.0417991,62.4 39.5203034,62.2011 39.1212725,61.80228 L32.4,55.26 L32.4,52.2 L40.4449121,60.24066" id="Fill-1023" fill="#30404D"></path>
+                            <path d="M32.6582356,54.6 L32.6582356,59.5761464 C32.6582356,60.2909917 31.9193269,60.7785265 31.2157573,60.5450447 C30.9951555,60.4720173 30.7884753,60.3835616 30.6,60.2817347 C30.8645079,61.211548 31.7801122,61.883194 32.8531362,61.7916527 C33.9797042,61.6959971 34.8,60.7075563 34.8,59.6214028 L34.8,54.6 L32.6582356,54.6" id="Fill-1024" fill="#30404D"></path>
+                            <path d="M30.6,48.6 L30.6,49.5457755 L31.5597,49.5457755 C32.1897,49.5457755 32.7,50.0054224 32.7,50.5728878 C32.7,51.1403531 33.2103,51.6 33.8403,51.6 L34.8,51.6 L34.8,48.6 L30.6,48.6" id="Fill-1025" fill="#30404D"></path>
+                            <path d="M1.0125,10.2 L63.7875,10.2 C64.344375,10.2 64.8,9.75 64.8,9.2 L64.8,5.2 C64.8,4.65 64.344375,4.2 63.7875,4.2 L32.4,4.2 L32.4,6.2 C32.4,6.752 31.9464,7.2 31.3875,7.2 L0,7.2 L0,9.2 C0,9.75 0.455625,10.2 1.0125,10.2" id="Fill-1026" fill="#182A37"></path>
+                            <path d="M32.4,2.17373616 L32.4,4.2 L34.2,4.2 L34.2,2.26746414 C34.2,2.15634333 34.191,2.04812132 34.1748,1.94279812 C33.9975,0.817095985 32.4,1.03257373 32.4,2.17373616" id="Fill-1027" fill="#30404D"></path>
+                        </g>
+                    </g>
+                    <g id="Group-2" mask="url(#mask-2)">
+                        <g transform="translate(34.000000, 33.000000)">
+                            <g id="Gear" filter="url(#filter-4)">
+                                <path d="M14.164058,0.00288288265 L14.1644385,9.74439851 C13.0687768,9.7720841 11.9815383,10.2030566 11.147385,11.0372099 C9.4215793,12.7630156 9.4215793,15.5711274 11.147385,17.2969331 C11.9816896,18.1312377 13.0689332,18.5622152 14.1645596,18.5898656 L14.164058,28.3308829 L13.8343711,28.33126 C12.9924752,28.33126 12.1871759,27.7251975 11.9338269,26.9256164 L11.892918,26.7735279 L11.4353322,24.715331 C11.3980869,24.5472574 11.1602174,24.2874789 10.9965256,24.2358362 C10.9711738,24.2280115 10.9467608,24.2192479 10.9229739,24.2092323 L10.9229739,24.2092323 L9.54552181,23.6349027 L9.54552181,23.6349027 L9.48135965,23.6051691 C9.32768345,23.5259836 8.97338312,23.5422588 8.82753157,23.6349027 L8.82753157,23.6349027 L7.04851826,24.7672867 C6.29422162,25.2474074 5.2072207,25.1281597 4.57467568,24.4956147 L4.57467568,24.4956147 L3.94870336,23.8696424 C3.31584535,23.2367843 3.19691061,22.1500964 3.67703138,21.3951738 L3.67703138,21.3951738 L4.80910231,19.6170994 C4.9020592,19.4709349 4.91833448,19.1166346 4.83914898,18.9629584 C4.82819446,18.9419883 4.81849189,18.9203923 4.80941529,18.8987962 L4.80941529,18.8987962 L4.2350857,17.5213441 C4.22507014,17.4975572 4.21630653,17.4725183 4.20816889,17.4474794 C4.15621318,17.2834747 3.89706065,17.0462312 3.72930007,17.0086728 L3.72930007,17.0086728 L1.67079012,16.5514 C0.797558739,16.3573486 0.113371,15.5047743 0.113058014,14.6099469 L0.113058014,14.6099469 L0.113371,13.7245091 C0.113058014,12.8515907 0.816024922,11.9733515 1.67079012,11.7833689 L1.67079012,11.7833689 L3.72867409,11.3254702 C3.79784404,11.3101339 3.92648135,11.240338 4.04416414,11.1226552 C4.14087686,11.0259424 4.19314555,10.9348635 4.20816889,10.8866636 C4.21568055,10.8616247 4.22507014,10.8372118 4.23539868,10.8131118 L4.23539868,10.8131118 L4.80910231,9.43565977 C4.81849189,9.41375074 4.82819446,9.3921547 4.83946196,9.37149761 C4.91833448,9.2181344 4.90174621,8.86352108 4.80941529,8.71798252 L4.80941529,8.71798252 L3.67703138,6.93834323 C3.19691061,6.18404659 3.31584535,5.09735866 3.94870336,4.46450065 L3.94870336,4.46450065 L4.57467568,3.83852834 C5.2072207,3.20598331 6.29422162,3.08673559 7.04914423,3.56685635 L7.04914423,3.56685635 L8.82753157,4.69861429 C8.97338312,4.79188417 9.32830942,4.80815945 9.48167264,4.72928694 C9.50232973,4.71801944 9.52392577,4.70831687 9.54552181,4.69924027 L9.54552181,4.69924027 L10.9229739,4.12553664 C10.9470738,4.1152081 10.9717997,4.10550553 10.9965256,4.09830685 C11.0450385,4.08297052 11.1361175,4.03070184 11.2325172,3.9343021 C11.3502,3.8166193 11.4203089,3.68829498 11.4350192,3.61912504 L11.4350192,3.61912504 L11.893231,1.5603021 C12.0832136,0.705536909 12.9608268,0.00257000096 13.8343711,0.00288298712 L13.8343711,0.00288298712 L14.164058,0.00288288265 Z" id="Combined-Shape" fill="#546670"></path>
+                                <path d="M14.1643061,7.97128146 L14.1636287,9.74219247 C13.0690196,9.77012567 11.9827967,10.2017982 11.147385,11.0372099 C9.41876242,12.7658325 9.41876242,15.5683105 11.147385,17.2969331 C11.9827967,18.1323448 13.0690196,18.5640173 14.1636287,18.5919505 L14.1643061,20.3628615 C12.6162605,20.3348186 11.0767199,19.7301573 9.89544034,18.5488777 C7.47543138,16.1288687 7.47543138,12.2052743 9.89544034,9.78526531 C11.0767199,8.60398573 12.6162605,7.99932444 14.1643061,7.97128146 Z" id="Combined-Shape" fill="#30404D"></path>
+                            </g>
+                            <g id="Circut-Board" transform="translate(15.492024, 0.905353)">
+                                <g id="Fill-1164">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                    <use stroke="#182A37" stroke-width="1" xlink:href="#path-5"></use>
+                                </g>
+                                <g id="Fill-1164">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                    <use stroke="#182A37" stroke-width="1" xlink:href="#path-7"></use>
+                                </g>
+                                <g id="Fill-1164">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                    <use stroke="#182A37" stroke-width="1" xlink:href="#path-9"></use>
+                                </g>
+                                <path d="M12.3936195,13.278878 C12.3936195,13.7675407 11.9996794,14.1641366 11.508361,14.1641366 C11.0170425,14.1641366 10.6231024,13.7675407 10.6231024,13.278878 C10.6231024,12.7897727 11.0170425,12.3936195 11.508361,12.3936195 C11.9996794,12.3936195 12.3936195,12.7897727 12.3936195,13.278878" id="Fill-1164" stroke="#182A37"></path>
+                                <g id="Fill-1164" transform="translate(8.852585, 19.475688) scale(1, -1) translate(-8.852585, -19.475688) ">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                    <use stroke="#182A37" stroke-width="1" xlink:href="#path-11"></use>
+                                </g>
+                                <g id="Path-2" fill-rule="nonzero">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                                    <use stroke="#182A37" stroke-width="1" xlink:href="#path-13"></use>
+                                </g>
+                                <g id="Path-2" fill-rule="nonzero">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"></use>
+                                    <use stroke="#182A37" stroke-width="1" xlink:href="#path-15"></use>
+                                </g>
+                                <g id="Path-2" fill-rule="nonzero" transform="translate(3.718643, 17.965866) scale(1, -1) translate(-3.718643, -17.965866) ">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-18)" xlink:href="#path-17"></use>
+                                    <use stroke="#182A37" stroke-width="1" xlink:href="#path-17"></use>
+                                </g>
+                                <path d="" id="Path-3" stroke="#979797" fill-rule="nonzero"></path>
+                                <g id="Path-4" stroke-linecap="round" fill-rule="nonzero">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-20)" xlink:href="#path-19"></use>
+                                    <use stroke="#182A37" stroke-width="1" xlink:href="#path-19"></use>
+                                </g>
+                                <g id="Group" transform="translate(2.655776, 22.352778) scale(1, -1) translate(-2.655776, -22.352778) translate(0.000000, 20.803576)" fill-rule="nonzero" stroke-linecap="round">
+                                    <g id="Path-4">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-22)" xlink:href="#path-21"></use>
+                                        <use stroke="#182A37" stroke-width="1" xlink:href="#path-21"></use>
+                                    </g>
+                                </g>
+                                <g id="Fill-1164">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-24)" xlink:href="#path-23"></use>
+                                    <use stroke="#182A37" stroke-width="1" xlink:href="#path-23"></use>
+                                </g>
+                                <path d="M3.97122688,11.0733892 C3.97122688,11.3177206 3.77425686,11.5160185 3.52859761,11.5160185 C3.28293837,11.5160185 3.08596835,11.3177206 3.08596835,11.0733892 C3.08596835,10.8288365 3.28293837,10.63076 3.52859761,10.63076 C3.77425686,10.63076 3.97122688,10.8288365 3.97122688,11.0733892" id="Fill-1164" fill="#FFFFFF" transform="translate(3.528598, 11.073389) rotate(1.000000) translate(-3.528598, -11.073389) "></path>
+                                <path d="M5.74174395,11.0733892 C5.74174395,11.3177206 5.54477393,11.5160185 5.29911468,11.5160185 C5.05345544,11.5160185 4.85648542,11.3177206 4.85648542,11.0733892 C4.85648542,10.8288365 5.05345544,10.63076 5.29911468,10.63076 C5.54477393,10.63076 5.74174395,10.8288365 5.74174395,11.0733892" id="Fill-1164" fill="#FFFFFF" transform="translate(5.299115, 11.073389) rotate(1.000000) translate(-5.299115, -11.073389) "></path>
+                                <path d="M1.7781746,7.53235508 C1.7781746,7.77668643 1.58120458,7.97498435 1.33554533,7.97498435 C1.08988609,7.97498435 0.892916066,7.77668643 0.892916066,7.53235508 C0.892916066,7.28780241 1.08988609,7.08972581 1.33554533,7.08972581 C1.58120458,7.08972581 1.7781746,7.28780241 1.7781746,7.53235508" id="Fill-1164" fill="#FFFFFF" transform="translate(1.335545, 7.532355) rotate(1.000000) translate(-1.335545, -7.532355) "></path>
+                                <path d="M3.97122688,7.53235508 C3.97122688,7.77668643 3.77425686,7.97498435 3.52859761,7.97498435 C3.28293837,7.97498435 3.08596835,7.77668643 3.08596835,7.53235508 C3.08596835,7.28780241 3.28293837,7.08972581 3.52859761,7.08972581 C3.77425686,7.08972581 3.97122688,7.28780241 3.97122688,7.53235508" id="Fill-1164" fill="#FFFFFF" transform="translate(3.528598, 7.532355) rotate(1.000000) translate(-3.528598, -7.532355) "></path>
+                                <path d="M1.7781746,19.040716 C1.7781746,19.2850474 1.58120458,19.4833453 1.33554533,19.4833453 C1.08988609,19.4833453 0.892916066,19.2850474 0.892916066,19.040716 C0.892916066,18.7961634 1.08988609,18.5980868 1.33554533,18.5980868 C1.58120458,18.5980868 1.7781746,18.7961634 1.7781746,19.040716" id="Fill-1164" fill="#FFFFFF" transform="translate(1.335545, 19.040716) rotate(1.000000) translate(-1.335545, -19.040716) "></path>
+                                <path d="M3.97122688,19.040716 C3.97122688,19.2850474 3.77425686,19.4833453 3.52859761,19.4833453 C3.28293837,19.4833453 3.08596835,19.2850474 3.08596835,19.040716 C3.08596835,18.7961634 3.28293837,18.5980868 3.52859761,18.5980868 C3.77425686,18.5980868 3.97122688,18.7961634 3.97122688,19.040716" id="Fill-1164" fill="#FFFFFF" transform="translate(3.528598, 19.040716) rotate(1.000000) translate(-3.528598, -19.040716) "></path>
+                                <path d="M3.97122688,15.0570526 C3.97122688,15.301384 3.77425686,15.4996819 3.52859761,15.4996819 C3.28293837,15.4996819 3.08596835,15.301384 3.08596835,15.0570526 C3.08596835,14.8125 3.28293837,14.6144234 3.52859761,14.6144234 C3.77425686,14.6144234 3.97122688,14.8125 3.97122688,15.0570526" id="Fill-1164" fill="#FFFFFF" transform="translate(3.528598, 15.057053) rotate(1.000000) translate(-3.528598, -15.057053) "></path>
+                                <path d="M1.77051707,23.4593512 C1.77051707,23.7036825 1.57354705,23.9019804 1.3278878,23.9019804 C1.08222856,23.9019804 0.885258535,23.7036825 0.885258535,23.4593512 C0.885258535,23.2147985 1.08222856,23.0167219 1.3278878,23.0167219 C1.57354705,23.0167219 1.77051707,23.2147985 1.77051707,23.4593512" id="Fill-1164" fill="#FFFFFF" transform="translate(1.327888, 23.459351) rotate(-270.000000) translate(-1.327888, -23.459351) "></path>
+                                <path d="M1.77051707,3.54103414 C1.77051707,3.7853655 1.57354705,3.98366341 1.3278878,3.98366341 C1.08222856,3.98366341 0.885258535,3.7853655 0.885258535,3.54103414 C0.885258535,3.29648147 1.08222856,3.09840487 1.3278878,3.09840487 C1.57354705,3.09840487 1.77051707,3.29648147 1.77051707,3.54103414" id="Fill-1164" fill="#FFFFFF" transform="translate(1.327888, 3.541034) rotate(-270.000000) translate(-1.327888, -3.541034) "></path>
+                                <path d="M5.74174395,15.0570526 C5.74174395,15.301384 5.54477393,15.4996819 5.29911468,15.4996819 C5.05345544,15.4996819 4.85648542,15.301384 4.85648542,15.0570526 C4.85648542,14.8125 5.05345544,14.6144234 5.29911468,14.6144234 C5.54477393,14.6144234 5.74174395,14.8125 5.74174395,15.0570526" id="Fill-1164" fill="#FFFFFF" transform="translate(5.299115, 15.057053) rotate(1.000000) translate(-5.299115, -15.057053) "></path>
+                                <path d="M7.51226102,11.0733892 C7.51226102,11.3177206 7.315291,11.5160185 7.06963175,11.5160185 C6.82397251,11.5160185 6.62700249,11.3177206 6.62700249,11.0733892 C6.62700249,10.8288365 6.82397251,10.63076 7.06963175,10.63076 C7.315291,10.63076 7.51226102,10.8288365 7.51226102,11.0733892" id="Fill-1164" fill="#FFFFFF" transform="translate(7.069632, 11.073389) rotate(1.000000) translate(-7.069632, -11.073389) "></path>
+                                <path d="M7.51226102,15.0570526 C7.51226102,15.301384 7.315291,15.4996819 7.06963175,15.4996819 C6.82397251,15.4996819 6.62700249,15.301384 6.62700249,15.0570526 C6.62700249,14.8125 6.82397251,14.6144234 7.06963175,14.6144234 C7.315291,14.6144234 7.51226102,14.8125 7.51226102,15.0570526" id="Fill-1164" fill="#FFFFFF" transform="translate(7.069632, 15.057053) rotate(1.000000) translate(-7.069632, -15.057053) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

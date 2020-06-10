@@ -4,7 +4,7 @@ A Device Provisioning Service (DPS) can be linked to one or more hubs. So, it's 
 
 1. In your [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource**.
 
-1. Type "provisioning" in the search box, and select **IoT Hub Device Provisioning Service**.
+1. Type "provisioning" in the search box, and select **IoT Hub Device Provisioning Service**. Click **Create**.
 
     [![Screenshot showing the selection of the IoT Hub Device Provisioning Service](../media/iot-hub-provisioning-resource-create.png)](../media/iot-hub-provisioning-resource-create.png#lightbox)
 
@@ -13,6 +13,8 @@ A Device Provisioning Service (DPS) can be linked to one or more hubs. So, it's 
     [![Screenshot showing the completed fields for a new DPS](../media/iot-hub-provisioning-resource-name.png)](../media/iot-hub-provisioning-resource-name.png#lightbox)
 
 1. Create the resource, and wait for it to deploy. It can take a minute or two for the deployment message to appear.
+
+1. Click **Go to resource**.
 
 ### Link the DPS resource to your IoT Hub
 
@@ -40,7 +42,12 @@ Before we can go any further with the DPS resource, by adding enrollments, we mu
 
 The first time we create any X.509 certificates, we need to download some tools.
 
-1. Open a Microsoft Azure Cloud Shell, and select the **Bash** shell option. We need the Bash option, as the helper tools that you'll download next are written for Bash. If you are given a choice, there is no need to choose the sandbox cloud shell, as we are not creating any resources.
+1. Right click [Microsoft Azure Cloud Shell](https://shell.azure.com/?prompt=True), and select **Open link in new window**.
+
+    > [!NOTE]
+    > If you are given a choice, there is no need to choose the sandbox cloud shell, as we are not creating any resources.
+
+1. Ensure the **Bash** shell option is selected. We need the Bash option, as the helper tools that you'll download next are written for Bash.
 
 1. Run the following script. It creates a certificate directory in the shell storage, and downloads some helper scripts to it.
 
@@ -57,6 +64,7 @@ The first time we create any X.509 certificates, we need to download some tools.
     
      # update script permissions so user can read, write, and execute it
      chmod 700 certGen.sh
+
     ```
 
     These helper scripts are downloaded from the _Azure/azure-iot-sdk-c_ open-source project hosted on GitHub. This project is a part of the Azure IoT SDK. The _certGen.sh_ helper script will help demonstrate the purpose of CA Certificates without diving into the specifics of OpenSSL configuration. If you need additional instructions on using these helper scripts, or for instructions on how to use PowerShell instead of Bash, refer to [CACertificateOverview](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md).
@@ -68,13 +76,18 @@ The first time we create any X.509 certificates, we need to download some tools.
     
     ```azurecli
      ./certGen.sh create_root_and_intermediate
+
     ```
 
 1. We need to download the root certificate to your local machine, to then upload it to Azure DPS. Enter:
 
     ```azurecli
      download ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem
+
     ```
+    >[!NOTE]
+    >Downloaded files will be saved to your `Downloads` folder.
+
 1. Create a new folder in your **Documents** folder, called "cheese cave certs", or something similar.
 
 1. Copy the certificate file you downloaded into the **cheese cave certs** folder.
@@ -117,6 +130,7 @@ After the root certificate has been uploaded, the **Certificates** pane will dis
 
     ```azurecli
     download ~/certificates/certs/verification-code.cert.pem
+    
     ```
 
 1. Copy the downloaded file to your **cheese cave certs** folder.
