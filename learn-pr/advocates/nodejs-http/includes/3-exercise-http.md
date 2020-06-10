@@ -1,8 +1,8 @@
-In this unit you will create a Web application using the Node.js http module. You will also consume the application using a browser and a through code.
+In this unit, you will create a Web application using the Node.js http module. You will also consume the application using a browser and through code.
 
 ## Create a Web app and consume it with a Web Browser
 
-You will create a Web application that will serve requests at address `http://localhost:3000`. As part of of handling the request you will set a content header called `Content-Type` and return a static text string.
+You will create a Web application that will serve requests at address `http://localhost:3000`. As part of handling the request, you will set a content header called `Content-Type` and return a static text string.
 
 1. Create the file `app.js`.
 1. Give the file the following content:
@@ -45,7 +45,7 @@ You will create a Web application that will serve requests at address `http://lo
 
 ## Consume a Web App with code
 
-There is more ways to consume a web application than using a browser. You could use a client like cURL or code. You will for this exercise use the latter - through code. For this exercise you will use the http module to make requests towards an endpoint and listen for the results. As part of handling the request you will need to listen to different events of the incoming stream `res`.
+There are more ways to consume a web application than using a browser. You could use a client like cURL or code. You will for this exercise use the latter - through code. For this exercise, you will use the http module to make requests towards an endpoint and listen for the results. As part of handling the request you will need to listen to different events of the incoming stream `res`.
 
 1. Create a file `client.js`.
 1. Give the file the following content:
@@ -89,7 +89,7 @@ There is more ways to consume a web application than using a browser. You could 
 It's clear from the above output that event happens in the following order:
 
 1. `data`, every time there is some new data to receive from the stream this event is raised.
-1. `end`, this event is raised when the server have signalled that there is no more data
+1. `end`, this event is raised when the server has signaled that there is no more data
 1. `close`, this event was raised finally when server and client closed their connection
 
 ## Summary

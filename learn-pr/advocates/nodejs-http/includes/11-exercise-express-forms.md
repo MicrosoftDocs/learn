@@ -1,4 +1,4 @@
-Tailwind Traders is very pleased with the routing app and wants to leverage Node.js for other parts of the business as well. The invoicing department wants to *digitize* invoice management and go from paper to using the Web. Your job is therefore to create a Web application capable of providing a form a user can enter data into and also have the entered data to be managed on the server side. This will be great proof of concept that you can later improve.
+Tailwind Traders is pleased with the routing app and wants to leverage Node.js for other parts of the business as well. The invoicing department wants to *digitize* invoice management and go from paper to using the Web. Your job is therefore to create a Web application capable of providing a form a user can enter data into and also have the entered data to be managed on the server side. This will be great proof of concept that you can later improve.
 
 ## Create and process forms
 
@@ -17,7 +17,7 @@ Now, let's build the application.
 
    Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. Let's inspect the repo you just cloned. Type the following:
+1. Let's inspect the repo you cloned. Type the following:
 
    ```bash
    cd <repo dir>
@@ -56,7 +56,7 @@ Now, let's build the application.
    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
    ```
 
-1. You need to implement the `app.get('/form')`. This should render back a HTML form the user can fill data into. Locate that part of the code and replace:
+1. You need to implement the `app.get('/form')`. This should render back an HTML form the user can fill data into. Locate that part of the code and replace:
 
    ```javascript
    app.get('/form', (req, res) => {
@@ -92,7 +92,7 @@ Now, let's build the application.
 
    :::image type="content" source="../media/node-http-form.png" alt-text=" A Form":::
 
-1. You need to setup and configure the library `body-parser`. This library will help you parse the incoming data from the form. Add the following code right after `const app = express()`:
+1. You need to set up and configure the library `body-parser`. This library will help you parse the incoming data from the form. Add the following code right after `const app = express()`:
 
    ```javascript
    var bodyParser = require('body-parser');

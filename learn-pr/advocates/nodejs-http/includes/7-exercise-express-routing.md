@@ -1,4 +1,4 @@
-Tailwind Traders are impressed with your first Web Application and wants you to improve it. So far you've been serving up all the data without thinking about the size of the data you serve. Imagine this static data instead is served up from a Database. A database could contain millions of records and you need to take into account. The below teaches you some techniques on limiting the size of your response.
+Tailwind Traders are impressed with your first Web Application and want you to improve it. So far you've been serving up all the data without thinking about the size of the data you serve. Imagine this static data instead is served up from a Database. A database could contain millions of records and you need to take into account. The below teaches you some techniques on limiting the size of your response.
 
 ## Leverage route parameters and query parameters to limit response size
 
@@ -12,7 +12,7 @@ Data usually resides in a database or an endpoint. The size of that data can pot
 
    Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. Let's inspect the repo you just cloned. Type the following:
+1. Let's inspect the repo you cloned. Type the following:
 
    ```bash
    cd <repo dir>

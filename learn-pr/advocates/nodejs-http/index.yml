@@ -27,8 +27,16 @@ units:
 - learn.node-http.3-exercise-http
 - learn.node-http.4-express
 - learn.node-http.5-exercise-express
-- learn.node-http.6-knowledge-check
-- learn.node-http.5-summary
+- learn.node-http.6-express-routing
+- learn.node-http.7-exercise-express-routing
+- learn.node-http.8-express-middleware
+- learn.node-http.9-exercise-express-middleware
+- learn.node-http.10-express-forms
+- learn.node-http.11-exercise-express-forms
+- learn.node-http.12-express-file
+- learn.node-http.13-exercise-express-file
+- learn.node-http.14-knowledge-check
+- learn.node-http.15-summary
 
 badge:
   uid: learn.node-http.badge

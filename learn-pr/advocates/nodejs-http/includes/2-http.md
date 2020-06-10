@@ -17,15 +17,15 @@ A Web server is a software or hardware with the capability of handling Web reque
 
 ## Headers
 
-Requests and responses can have headers. The headers are used to communicate information on the incoming request but also to communicate information on the outgoing response. For example a header can specify the desired content type or the size of the incoming data payload so the server knows how much data is being sent across. A response header on the other hand can communicate what type of data is sent back so the client knows how to render it. It can also signal through a status code how the incoming request was received. Through the status code it can state that a new resource was created on the server side or that the resource was moved for example. Additionally it can also signal a variety of things such as that an error occurred when making the request.
+Requests and responses can have headers. The headers are used to communicate information on the incoming request but also to communicate information on the outgoing response. For example, a header can specify the desired content type or the size of the incoming data payload so the server knows how much data is being sent across. A response header on the other hand can communicate what type of data is sent back so the client knows how to render it. It can also signal through a status code how the incoming request was received. Through the status code, it can state that a new resource was created on the server side or that the resource was moved for example. Additionally it can also signal a variety of things such as that an error occurred when making the request.
 
 ## Content types
 
-The Web isn't just documents. In fact there are many other types of web resources that can be sent as well as received. There are different content types like text, JSON, images and much more. All these content types means your app can constitute a very rich experience. It's good if the web server can communicate back to the client what type of resource it's sending back from a request so that the client can interpret and render it correctly. Modern web browser are quite good at figuring out what content is sent from a browser though through a process called *content sniffing*. Even though browsers have this capability it's good if a web application can be as specific as possible in specifying the content type. It's not always that the client is a modern browser.
+The Web isn't just documents. In fact, there are many other types of web resources that can be sent as well as received. There are different content types like text, JSON, images and much more. All these content types mean your app can constitute a rich experience. It's good if the web server can communicate back to the client what type of resource it's sending back from a request so that the client can interpret and render it correctly. A modern web browser is good at figuring out what content is sent from a browser though through a process called *content sniffing*. Even though browsers have this capability it's good if a web application can be as specific as possible in specifying the content type. It's not always that the client is a modern browser.
 
 ## Node.js http module
 
-Node.js comes with a built-in http module. It's a fairly small module that is competent in handling most types of requests. It's able to work with important topics such as headers, the URL and payloads being sent across.
+Node.js comes with a built-in http module. It's a fairly small module that is competent in handling most types of requests. It's able to work with important topics such as headers, the URL, and payloads being sent across.
 
 An incoming request usually goes through the following phases:
 
@@ -36,25 +36,25 @@ An incoming request usually goes through the following phases:
 1. A message is sent that there is no more data and connection closes.
 1. A response is constructed and transmitted.
 
-The below classes helps with managing a request from start to finish:
+The below classes help with managing a request from start to finish:
 
-- **http.Server**, this represents an instance of a HTTP Server. This is what we will work with most to start listening to different events on a specific port and address.
-- **http.IncomingMessage**, this is a readable stream created either by `http.Server` or `http.ClientRequest`. You can use it to access things such as status, headers and data.
+- **http.Server**, this represents an instance of an HTTP Server. This is what we will work with most to start listening to different events on a specific port and address.
+- **http.IncomingMessage**, this is a readable stream created either by `http.Server` or `http.ClientRequest`. You can use it to access things such as status, headers, and data.
 - **http.ServerResponse**, this is a stream created internally by the HTTP Server. This class enables you to define what the response should look like in terms of what headers it should have, what the response should be and so on.
 
 ### http.Server
 
-The server is an instance that while it's running is capable of handling incoming requests. While it's running it listens to a specific address and port.
+The server is an instance that while it's running is capable of handling incoming requests. While it's running, it listens to a specific address and port.
 
 ### http.IncomingMessage
 
-This is a stream that you can listen to for information on headers, status and incoming data. A stream is a construct that represents data that continuously flows through it. It is possible to *listen* to different events that happens to a stream. These events represent state changes. Example of such events are:
+This is a stream that you can listen to for information on headers, status, and incoming data. A stream is a construct that represents data that continuously flows through it. It is possible to *listen* to different events that happen to a stream. These events represent state changes. Examples of such events are:
 
 - `data`, this is an event that signals that there is data ready to be processed.
 - `error`, this event signals that an error occurred, it usually comes with an error message describing what happened
 - `close`, this event signals that there is no more data to be sent in the stream and that is now closing. No more events will be raised after this.
 
-As part of handling a request from start to finish these events can be subscribed to. To subscribe to an event you would write a piece of code looking roughly like so:
+As part of handling a request from start to finish these events can be subscribed to. To subscribe to an event, you would write a piece of code looking roughly like so:
 
 ```javascript
 stream.on('<name of event>', () => {

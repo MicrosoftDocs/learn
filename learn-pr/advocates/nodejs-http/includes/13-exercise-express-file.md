@@ -2,7 +2,7 @@ Tailwind Traders loved your app on supporting the invoice department and digitiz
 
 ## Add file uploading capability to an Express app
 
-In this exercise you will add code that supports uploading a file. You will download and configure the library `multer` to accomplish this goal.
+In this exercise, you will add code that supports uploading a file. You will download and configure the library `multer` to accomplish this goal.
 
 1. Clone the repo at URL with the following command:
 
@@ -12,7 +12,7 @@ In this exercise you will add code that supports uploading a file. You will down
 
    Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. Let's inspect the repo you just cloned. Type the following:
+1. Let's inspect the repo you cloned. Type the following:
 
    ```bash
    cd <repo dir>
@@ -115,17 +115,17 @@ In this exercise you will add code that supports uploading a file. You will down
    node app.js
    ```
 
-1. In your browser navigate to `http://localhost:3000/submit`. Now fill in some random value as text input and select the file `test.txt` from the app root. Your Web page should now look like this:
+1. In your browser, navigate to `http://localhost:3000/submit`. Now fill in some random value as text input and select the file `test.txt` from the app root. Your Web page should now look like this:
 
    :::image type="content" source="../media/node-http-form-file-filled-in.png" alt-text="Form file upload filled in":::
 
    Now click the `Submit` button.
 
-1. In the app directory note how the `uploads` directory have been created and you have something like this showing:
+1. In the app directory note how the `uploads` directory has been created and you have something like this showing:
 
    :::image type="content" source="../media/node-http-uploads.png" alt-text="Uploads directory in app with file":::
 
-   This shows the upload worked and it also show the standard behavior of `multer` which is to upload files to a specified directory and give the file a unique name.
+   This shows the upload worked and it also shows the standard behavior of  , which is to upload files to a specified directory and give the file a unique name.
 
 1. You've managed to get file upload to work. That's great. However, you might want to configure things like what the uploaded file should be named. `multer` is a highly configurable library and let's you do that. To change how you name the uploaded file, locate the following part of your code:
 
@@ -167,4 +167,4 @@ In this exercise you will add code that supports uploading a file. You will down
 
    :::image type="content" source="../media/node-http-uploads-config.png" alt-text="multer configure file name when uploading":::
 
-   Note how the second file in the upload directory is the file we just uploaded and how it's uploaded file name differs from the first uploaded file.
+   Note how the second file in the upload directory is the file we uploaded and how it's uploaded file name differs from the first uploaded file.
