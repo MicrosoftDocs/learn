@@ -5,7 +5,7 @@ Here, we discuss the structure and syntax used by Markdown. We also cover featur
 
 ## What is Markdown?
 
-Markdown exists to shield content creators from the overhead of HTML. While HTML is great for rendering content exactly how it was intended, it takes up a lot of space and can be unwieldy to work with, even in small doses. The invention of Markdown offered a great compromise between the power of HTML for content description and the ease of plaintext for editing.
+Markdown exists to shield content creators from the overhead of HTML. While HTML is great for rendering content exactly how it was intended, it takes up a lot of space and can be unwieldy to work with, even in small doses. The invention of Markdown offered a great compromise between the power of HTML for content description and the ease of plain text for editing.
 
 ### Emphasizing text
 
@@ -30,18 +30,18 @@ This is **bold** text.
 You can also mix different emphases.
 
 ```markdown
-*This is **bold and italic** text*.
+_This is **bold and italic** text_.
 ```
 
-> *This is **bold and italic** text*.
+> _This is **bold and italic** text_.
 
 To use a literal asterisk, escape it with a backslash (`\`). 
 
 ```markdown
-\*This is all \*\*plain\*\* text\*.
+\_This is all \*\*plain\*\* text\_.
 ```
 
-> \*This is all \*\*plain\*\* text\*.
+> \_This is all \*\*plain\*\* text\_.
 
 ### Declaring headings
 
@@ -69,7 +69,7 @@ Image and site links use a very similar syntax.
 
 > [Link to Microsoft Learn](https://docs.microsoft.com/learn)
 
-### Lists
+### Making lists
 
 You can define ordered or unordered lists. Ordered lists start with numbers and unordered lists can use asterisks or dashes (`-`).
 
@@ -97,7 +97,7 @@ You can also define nested items through indentation.
 > - Second
 > - Third
 
-### Tables
+### Building tables
 
 Tables can be constructed using a combination of pipes (`|`) and dashes (`-`).
 
@@ -113,7 +113,7 @@ First|Second
 > 1|2
 > 3|4
 
-### Blockquotes
+### Quoting text
 
 Blockquotes can be created using the greater than (`>`) character.
 
@@ -124,7 +124,7 @@ Blockquotes can be created using the greater than (`>`) character.
 > > This is quoted text.
 
 
-### Inline HTML
+### Filling the gaps with inline HTML
 
 If you come across an HTML scenario not supported by Markdown, you can simply use that HTML inline.
 
@@ -146,12 +146,11 @@ This is `code`.
 
 If you have a code segment spanning multiple lines, you can use three backticks (\`\`\`) before and after to create a fenced code block.
 
-```
-```
-var first = 1;
-var second = 2;
-var sum = first + second;
-``````
+    ```
+    var first = 1;
+    var second = 2;
+    var sum = first + second;
+    ```
 
 > ```
 > var first = 1;
@@ -161,12 +160,11 @@ var sum = first + second;
 
 GFM extends this support with syntax highlighting for popular languages. Just specify the language as part of the first tick sequence. 
 
-```
-```javascript
-var first = 1;
-var second = 2;
-var sum = first + second;
-``````
+    ```javascript
+    var first = 1;
+    var second = 2;
+    var sum = first + second;
+    ```
 
 > ```javascript
 > var first = 1;
@@ -210,7 +208,7 @@ Typing an `@` symbol, followed by a GitHub username, will send a notification to
 
 For more information, see [Receiving notifications about activity on GitHub](https://help.github.com/categories/receiving-notifications-about-activity-on-github/).
 
-### Task lists
+### Tracking task lists
 
 You can create task lists within issues or pull requests using the syntax illustrated below. These can be helpful to track progress when used in the body of an issue or pull request. 
 
@@ -220,6 +218,4 @@ You can create task lists within issues or pull requests using the syntax illust
 - [ ] Third task
 ```
 
-> - [x] First task
-> - [x] Second task
-> - [ ] Third task
+![A GitHub task list](../media/2-task-list.png)
