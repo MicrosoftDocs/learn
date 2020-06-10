@@ -70,7 +70,7 @@ So, if you already have a Azure Migrate project set up, you can specify the name
 
 In this unit we covered several important concepts:
 
-- If the Azure App Service Migration Assistant assessment determines it can migrate your web app, it will collect information about your Azure account, then create a new Azure App Service, setup the VMs, and copy your files over.
+- If the Azure App Service Migration Assistant assessment determines it can migrate your web app, it will collect information about your Azure account, create new App Service resources in Azure, and deploy your app to them.
 - After the migration, there may still be steps you need to take to get your web app into working order.
 - An Azure Web App hosting plan determines the features, type of hardware and SLA available to your web app.  The Instance size determines the number of cores, amount of RAM and storage available.
 - A single instance can host multiple web apps.  All apps are scaled on all instances.
