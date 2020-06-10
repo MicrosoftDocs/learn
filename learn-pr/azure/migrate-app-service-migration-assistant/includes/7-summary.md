@@ -10,7 +10,7 @@ The Azure App Service Migration Wizard provides dramatic business impact, speedi
 
 If you are using this as a guide to perform your own web application migration, you will definitely want to think about those steps we did not perform in the exercise, namely:
 
-- manually moving application settings and connection strings in your web.config file to the Azure App Service
+- manually moving application settings and connection strings in your web.config file to App Service Application Settings
 - migrating data from an on-premises SQL server to an Azure SQL database
 - setting up an SSL certificate
 - setting up custom domain names
