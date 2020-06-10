@@ -63,6 +63,8 @@ Once the migration is complete, you'll continue to the "Migration Results" step.
 > [!Note]
 > When running this in your own environment, depending on your selections the Migration Assistant would include optional steps.  For instance, if you chose to set up a hybrid connection to an on-premises database, you would continue to download and install the Setup Hybrid Connection Manager.
 
-10. On your local computer, navigate to the Azure Portal and select "App Service" from the home page.  From the list of deployed App Service, select "mymigrationapp".  This will display the settings for your new Azure App Service.
+10. On your local computer, navigate to the Azure Portal and select "App Service" from the home page.  From the list of deployed services, select the one that matches the name you created in step 8.  This will display the settings for your new Azure App Service.
+
+From here you can explore the different features of your new App Service and expierment by changing settings and viewing the logs and other diagnostic information.
 
 Congratulations, you have successfully migrated a web app running on Internet Information Services to Azure App Service using the Azure App Service Migration Assistant. 
