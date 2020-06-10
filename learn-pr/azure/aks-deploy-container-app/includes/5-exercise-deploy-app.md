@@ -2,26 +2,26 @@ Kubernetes differs itself from other tool mostly because of its ease to create w
 
 ## Understand manifest files
 
-Instead of telling exactly what to do and how to create the resources, as in a _imperative creation_, Kubernetes have manifest files that allow you to describe your workloads in the YAML format. These manifest files contain everything that is needed to create and manage the workload it's refereeing to.
+Instead of telling exactly what to do and how to create the resources, Kubernetes have manifest files that allow you to describe your workloads in the YAML format. These manifest files contain everything that is needed to create and manage the workload it describes.
 
-There are several types of workloads Kubernetes supports, each one has its own uses and purposes, for this website we'll be using the __Deployment__, __Service__, and __Ingress__ types.
+There are several types of workloads Kubernetes supports. Each one has its own uses and purposes, for this website we'll be using the __Deployment__, __Service__, and __Ingress__ types.
 
 All the example files can be found in the [official demo repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app/tree/master/kubernetes) under the `Kubernetes` directory.
 
 ### Creating a deployment file
 
-Kubernetes groups containers and applications into logical structures called __Pods__, these pods have no intelligence and are composed of one or more application containers (Docker containers) and each one has its own IP address and network rules, as well as exposed ports.
+Kubernetes groups containers and applications into logical structures called __Pods__. These pods have no intelligence and are composed of one or more application containers (Docker containers). Each one has its own IP address and network rules, as well as exposed ports.
 
-Deployments are an evolution of pods, they wrap the Pods into a intelligent structure that allows them to _scale out_, which means you can easily duplicate and scale your application to support more load without the need to configure complex network rules.
+Deployments are an evolution of pods. They wrap the Pods into an intelligent structure that allows them to _scale out_, which means you can easily duplicate and scale your application to support more load without the need to configure complex networking rules.
 
-Also, deployments allow for applications to be easily updated just by changing the image tag without any sort of downtime. This means that any deployment will be able to update the pods inside it with no visible effect in availability, this is called __rolling update__.
+Also, deployments allow users to update applications just by changing the image tag without downtime. Which means that any deployment will be able to update the pods inside it with no visible effect in availability, this action is called __rolling update__.
 
 Let's begin creating a deployment file:
 
 1. Create a file called `deployment.yaml` in any directory of your choosing
 1. Open it in your favorite text editor and start the following changes:
 
-    First, we need to tell Kubernetes what kind of workload this file refers and what endpoint of the Kubernetes api it's related to. To do this, we need the `apiVersion` and `kind` YAML keys, like so:
+    First, we need to tell Kubernetes what kind of workload this file refers and what endpoint of the Kubernetes api it's related to. To do that, we need the `apiVersion` and `kind` YAML keys, like so:
 
     ```yml
     # deployment.yaml
@@ -54,7 +54,7 @@ Let's begin creating a deployment file:
       template: # This is the template of the pod inside the deployment
     ```
 
-    Let's pause the creation of the `deployment.yaml` file for a bit. If we wanted to create a pod outside of a deployment, we would need to create a structure very similar to the one we just created for the deployment itself. It needs a metadata:
+    Let's pause the creation of the `deployment.yaml` file for a bit. If we wanted to create a pod outside of a deployment, we'd need to create a structure similar to the one we created for the deployment itself. It needs a metadata:
 
     ```yml
     # pod-part.yaml
