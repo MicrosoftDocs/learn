@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.15-exercise-package-json-package
-title: Exercise - Create a package
+title: Exercise - Authoring a package
 metadata:
-  title: Exercise - Create a package
-  description: Exercise - Create a package
+  title: Exercise - Authoring a package
+  description: Exercise - Authoring a package
   author: 
   ms.author: chnoring
   ms.date: 04/14/2020

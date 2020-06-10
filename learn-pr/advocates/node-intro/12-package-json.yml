@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.12-package-json
-title: Introduction
+title: Package.json
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Package.json
+  description: Package.json
   author: 
   ms.author: chnoring
   ms.date: 04/14/2020

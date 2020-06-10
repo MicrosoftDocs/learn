@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.3-exercise-install-node
-title: Introduction
+title: Exercise - Install Node.js
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Exercise - Install Node.js
+  description: Exercise - Install Node.js
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020

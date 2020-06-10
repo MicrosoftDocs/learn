@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.6-dependencies
-title: Introduction
+title: Dependencies
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Dependencies
+  description: Dependencies
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020

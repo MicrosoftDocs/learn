@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.5-exercise-repl
-title: Introduction
+title: Exercise - REPL
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Exercise - REPL
+  description: Exercise - REPL
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020

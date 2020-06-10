@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.4-repl
-title: Introduction
+title: REPL
 metadata:
-  title: Introduction
-  description: Introduction
+  title: REPLL
+  description: REPL
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020
