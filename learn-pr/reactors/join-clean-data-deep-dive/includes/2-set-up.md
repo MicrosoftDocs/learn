@@ -12,7 +12,7 @@ Because this is such a common convention, it's the way we'll use and refer to pa
 
 ## Built-in help
 
-Pandas is a big package, and there can be a lot to keep track of. IPython is the underlying program that powers this notebook and others like it. Fortunately, you an use the tab-completion feature in IPython to quickly explore the contents of a package like pandas. If you want to see all of the functions available with pandas, enter this:
+Pandas is a big package, and there can be a lot to keep track of. IPython is the underlying program that powers this notebook and others like it. Fortunately, you can use the tab-completion feature in IPython to quickly explore the contents of a package like pandas. If you want to see all of the functions available with pandas, enter this:
 
 ```python
 ipython
