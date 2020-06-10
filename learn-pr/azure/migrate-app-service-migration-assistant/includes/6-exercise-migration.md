@@ -37,7 +37,7 @@ Once you log in successfully, you should see a confirmation message that you hav
 | Databases | Choose "Skip database setup" |
 
 > [!Note]
-> In this exercise, you'll deploy to a free-tier App Service plan that was created for you as partt of the exercise.  However, when you use the Azure App Service Migration Assistant in your own environment, your web app will be deployed to a single Premium P1v2 instance.  After the Migration Assistant migrates your web app, you may want to change the service tier to adjust the pricing as desired.
+> In this exercise, you'll deploy to a free-tier App Service plan that was created for you as part of the exercise.  However, when you use the Azure App Service Migration Assistant in your own environment, you can choose to deploy to an existing App Service Plan or create a new one. After the Migration Assistant migrates your web app, you may want to change the service tier to adjust the pricing as desired.
 
 8. Select "Migrate".  The "Migration in Progress" step will display the current status of the migration.  You might see a message like the following image.
 
