@@ -18,7 +18,7 @@ df2.shape
 (2000, 19)
 ```
 
-The type of dataset join that's most widely used by practicing data scientists is the left join. If you already have some experience with SQL, you know what this refers to. Basically, a left join is a join that takes all of the data from one DataFrame and merges it with everything that it has in common with another DataFrame. 
+The type of dataset join that's most widely used by practicing data scientists is the left join. If you already have some experience with SQL, you know what this refers to. Basically, a left join takes all of the data from one DataFrame and merges it with everything that it has in common with another DataFrame. 
 
 You can think of the data from the first DataFrame as the left set in a Venn diagram. The merged data is then the intersection with the right set in the same Venn diagram.
 
@@ -149,7 +149,7 @@ The output is:
 5 rows × 53 columns
 ***
 
-There are differences here in the last five rows. Notice that the rightmost columns of `left_df` contain have Not a Number (`NaN`) values. This is because the left DataFrame was larger than the right DataFrame. If you recall, we only took the first 2,000 rows from `df2`.
+There are differences here in the last five rows. Notice that the rightmost columns of `left_df` contain have Not a Number (`NaN`) values. This is because the left DataFrame was larger than the right DataFrame. If you recall, we took only the first 2,000 rows from `df2`.
 
 ### Try it yourself
 
@@ -246,7 +246,7 @@ The resulting DataFrame is essentially the first 2,000 rows of the original `
 
 ### Try it yourself
 
-An outer join is the union of two DataFrames. Anything that's in either DataFrame with be in the resultant one. Perform an outer join of `df1` and `df2`.
+An outer join is the union of two DataFrames. Anything that's in either DataFrame will be in the resultant one. Perform an outer join of `df1` and `df2`.
 
 - What shape do you expect the resulting DataFrame to have?
 - How does it differ from the right join of `df1` and `df2`?

@@ -26,7 +26,7 @@ When you do so, a drop-down menu will appear next to `pd`.
 
 ### Try it yourself
 
-Place your cursor after the period and press <TAB>:
+Place your cursor after the period and select the Tab key:
 
 ```python
 pd.compat?
@@ -38,7 +38,7 @@ The flyout looks like:
 
 Now select an item by using tab completion, and then add a period and use tab completion to explore *that*.
 
-For example, you can try pressing <TAB> after `pd.DataFrame`.
+For example, you can try selecting the Tab key after `pd.DataFrame`.
 
 ```python
 pd.DataFrame.
