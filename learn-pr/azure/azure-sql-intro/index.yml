@@ -12,9 +12,9 @@ title: Introduction to Azure SQL
 summary: TODO
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - Articulate the evolution of SQL Server in Azure.
+  - Determine which deployment option is best for workloads in your organization.
+  - Select the purchasing models, service tiers, and hardware that best fits a workload.
 prerequisites: | 
   - TODO
 iconUrl: http://via.placeholder.com/120x120

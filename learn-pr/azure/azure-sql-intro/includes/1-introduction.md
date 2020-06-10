@@ -4,9 +4,9 @@ In this module, you'll start with a brief history of why and how we built Azure 
 
 By the end of this module, you'll be able to:  
 
-- Articulate the why behind the evolution of SQL Server in Azure  
-- Determine which deployment option is best for workloads in your organization  
-- Understand what scenarios are best for various workloads when it comes to selecting purchasing models, service tiers, and hardware  
+- Articulate the evolution of SQL Server in Azure.
+- Determine which deployment option is best for workloads in your organization.
+- Select the purchasing models, service tiers, and hardware that best fits a workload.
 
 ## Prerequisites
 
