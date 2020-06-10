@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.9-local-global
+uid: learn.node-intro.9-exercise-install-uninstall
 title: Exercise- Install/Uninstall
 metadata:
   title: Exercise - Install/Uninstall
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-local-global.md)]
+  [!include[](includes/9-exercise-install-uninstall.md)]
