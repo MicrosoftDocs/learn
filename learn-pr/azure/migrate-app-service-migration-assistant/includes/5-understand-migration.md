@@ -16,7 +16,7 @@ After a successful migration, you'll need to perform any post-migration tasks.  
 
 You may also decide to change the App Service hosting plan and other settings like auto-scaling and deployment slots.  
 
-## What is the difference between an App Service plan and an App Service instance?
+## App Service plans
 
 During migration, the Migration Assistant will:
 
