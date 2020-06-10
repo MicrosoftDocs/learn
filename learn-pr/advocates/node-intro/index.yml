@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.node-intro
 metadata:
-  title: Introduction to 
-  description: Learn how to 
+  title: Install Node.js and Manage Dependencies 
+  description: Install Node.js and Manage Dependencies  
   ms.date: 06/04/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to 
+title: Install Node.js and Manage Dependencies  
 summary: Learn how to 
 abstract: |
   In this module you will:
