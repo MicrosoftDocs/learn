@@ -1,6 +1,8 @@
 Here, we discuss the process of creating and maintaining a GitHub Pages web site.
 
-GitHub Pages are static sites hosted directly from your repository. But they're more than just a collection of static files. By making use of site generation technologies like Jekyll and Liquid, developers define dynamic templates that are processed into complete static web sites. Every time a change is committed to the source branch associated with the site, it is re-generated using the latest updates and automatically published to the target URL.
+GitHub Pages are static sites hosted directly from your GitHub repository. But they're more than just a collection of static files. By making use of site generation technologies like Jekyll and Liquid, developers define dynamic templates that are processed into complete static web sites. Every time a change is committed to the source branch associated with the site, it is re-generated using the latest updates and automatically published to the target URL.
+
+Learn more about [Publishing sources for GitHub Pages sites](https://help.github.com/en/github/working-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites?azure-portal=true).
 
 ## Enabling GitHub Pages
 
@@ -18,7 +20,7 @@ There are a variety of themes provided by GitHub. There is also an array of comm
 
 ![Built-in Jekyll themes](../media/2-jekyll-themes.png)
 
-To learn more about theming, see the Jekyll documentation for [Themes](https://jekyllrb.com/docs/themes/?azure-portal=true).
+Learn more about [Jekyll Themes](https://jekyllrb.com/docs/themes/?azure-portal=true).
 
 ## Using YAML front matter
 
@@ -35,13 +37,13 @@ title: This is set as the document title.
 This is visible body content, which may use Markdown, HTML, and Liquid templating.
 ```
 
-To learn more about front matter, see the Jekyll documentation for [Front Matter](https://jekyllrb.com/docs/front-matter/?azure-portal=true).
+Learn more about [Front Matter](https://jekyllrb.com/docs/front-matter/?azure-portal=true).
 
 ## Customizing your site
 
-Once your site is up and running, you can customize details about your site via *_config.yml*. This file includes virtually all site-wide configuration options, including site metadata, navigation menus, theme colors, compiler options, and more.
+Once your site is up and running, you can customize details about your site via `_config.yml`. This file includes virtually all site-wide configuration options, including site metadata, navigation menus, theme colors, compiler options, and more.
 
-To learn more about *_config.yml*, see the Jekyll documentation for [Configuration](https://jekyllrb.com/docs/configuration/?azure-portal=true).
+Learn more about [_config.yml Configuration](https://jekyllrb.com/docs/configuration/?azure-portal=true).
 
 ## Creating and editing content
 
@@ -62,7 +64,7 @@ The example below shows a combination of `for` looping and variable insertion.
 </ul>
 ```
 
-To learn more about the Liquid template language, see [the official Liquid documentation](https://shopify.github.io/liquid/?azure-portal=true).
+Learn more about [Liquid template language](https://shopify.github.io/liquid/?azure-portal=true).
 
 ## Working with blog posts
 
@@ -82,4 +84,4 @@ comments: true
 This is the first line of rendered content in the post.
 ```
 
-To learn more about content development, see [Adding content to your GitHub Pages site using Jekyll](https://help.github.com/en/github/working-with-github-pages/adding-content-to-your-github-pages-site-using-jekyll?azure-portal=true).
+Learn more about [Adding content to your GitHub Pages site using Jekyll](https://help.github.com/en/github/working-with-github-pages/adding-content-to-your-github-pages-site-using-jekyll?azure-portal=true).
