@@ -11,7 +11,5 @@ You learned about:
 
 Here are some links to more information on the topics we discussed in this module.
 
-- [Setting up and managing organizations and teams](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams?azure-portal=true)
-- [Committing changes to your project](https://help.github.com/en/github/committing-changes-to-your-project?azure-portal=true)
-- [Collaborating with issues and pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests?azure-portal=true)
-- [Working with GitHub Pages](https://help.github.com/en/github/working-with-github-pages?azure-portal=true)
+- [GitHub Script](https://github.com/actions/github-script?azure-portal=true)
+- [octokit](https://octokit.github.io/rest.js/v17?azure-portal=true)

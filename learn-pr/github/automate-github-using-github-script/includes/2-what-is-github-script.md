@@ -28,6 +28,11 @@ You would use:
 
 `github.issues.createComment({`
 
+In addition to the `github` variable, the following variables are also provided:
+
+- `context` is an object containing the [context of the workflow run](https://github.com/actions/toolkit/blob/master/packages/github/src/context.ts?azure-portal=true)
+- `core` is a reference to the [@actions/core](https://github.com/actions/toolkit/tree/master/packages/core?azure-portal=true) package
+- `io` is a reference to the [@actions/io](https://github.com/actions/toolkit/tree/master/packages/io?azure-portal=true) package
 
 ## Building a workflow that uses GitHub Script
 
@@ -81,7 +86,7 @@ After the workflow is run, GitHub Script will log the code it executed for revie
 
 ### Running from a separate file
 
-Sometimes you may have a lot of code to write in your GitHub Script action. When that scenario comes up, you can keep that script in a separate file and reference it from the workflow instead of putting all the script inline. 
+Sometimes you may need to use a lot of code to fulfill your GitHub Script scenario. When that happens, you can keep the script in a separate file and reference it from the workflow instead of putting all the script inline. 
 
 Here is an example of a simple workflow that does this:
 
@@ -100,3 +105,5 @@ jobs:
             const scriptPath = path.resolve('./path/to/script.js')
             console.log(require(scriptPath)({context}))
 ```
+
+Check out [more GitHub Script examples](https://octokit.github.io/rest.js/v17?azure-portal=true).
