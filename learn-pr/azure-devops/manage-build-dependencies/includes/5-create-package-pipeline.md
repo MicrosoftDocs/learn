@@ -145,7 +145,7 @@ Next, you'll set up a second pipeline to build the package and upload that packa
 
     ![Screenshot of Azure Artifacts, showing version 1.0 of the package](../media/5-artifacts-package.png)
 
-1. Select the package to go to the details page. Then copy the version number where you can easily access it later.
+1. Select the package to go to the details page. Then copy the version number to a location where you can easily access it later.
 
     ![Screenshot of Azure Artifacts dropdown selection](../media/5-package-details.png)
 
