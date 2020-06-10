@@ -32,9 +32,9 @@ In this section, you modify the build configuration to switch from using a Micro
 
     ```yml
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-18.04'
       demands:
-        - npm
+      - npm
     ```
 
 1. Modify the `pool` section, as shown here:
@@ -43,7 +43,7 @@ In this section, you modify the build configuration to switch from using a Micro
     pool:
       name: 'MyAgentPool'
       demands:
-        - npm
+      - npm
     ```
 
     This version uses `name` to specify your agent pool, *MyAgentPool*. It maintains the `demands` section to specify that the build agent must have npm, the Node.js package manager, installed.
