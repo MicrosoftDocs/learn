@@ -1,10 +1,17 @@
-In this module, you learned about Azure SQL, including the deployment options, purchasing models, service tiers, and hardware choices. Hopefully, you also have a better understanding of what to choose when. In the next module in the learning path, you'll learn more about deploying and configuring Azure SQL.  
+In this module, you learned about Azure SQL, including the deployment options, purchasing models, service tiers, and hardware choices. You now have a better understanding of what options you can and should choose for your applications and data.
 
 ## Learn more
+
+To learn more about the history, options, models, and management tools for Azure SQL, visit the references below.
 
 ### History of Azure SQL  
 
 You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg) keynote, where Microsoft's Chief Software Architect (at the time) Ray Ozzie announced Azure for the first time. If you want to read the original "What to use when", you can find that [here](https://social.technet.microsoft.com/wiki/contents/articles/1308.select-an-edition-of-sql-server-for-application-development/revision/7.aspx).  
+
+You can also read the original blog posts from the launch of Windows Azure:
+
+- [Introducing Windows Azure](https://azure.microsoft.com/blog/introducing-windows-azure/)
+- [Microsoft Announces Windows Azure and Azure Services Platform](https://azure.microsoft.com/blog/microsoft-announces-windows-azure-and-azure-services-platform/)
 
 ### SQL Server on Azure virtual machines
 
@@ -17,19 +24,19 @@ Learn more about what you can get from [Infrastructure as a Service (IaaS)](http
 - Always On Failover Cluster Instance is supported with [Azure Premium File Share](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-create-failover-cluster-premium-file-share).
 - [Always On Availability Groups](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-overview) are supported including a Cloud Witness.  
 
-SQL Server on Azure Virtual Machines isn't the focus of this module, but if you're considering SQL Server on Azure Virtual Machine, you'll want to review the [guidance on images to choose from](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview), the [quick checklist](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance) to obtain optimal performance of SQL Server on Azure VMs, and the guidance for [storage configuration](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-storage-configuration).  
+If you're considering SQL Server on Azure Virtual Machines, you'll want to review the [guidance on images to choose from](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview), the [quick checklist](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance) to obtain optimal performance of SQL Server on Azure VMs, and the guidance for [storage configuration](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-storage-configuration).  
 
 If you're specifically looking at SQL Server on RHEL Azure VMs, there's a full operations guide available [here](https://azure.microsoft.com/resources/sql-server-on-rhel-azure-vms-operations-guide/
 ).  
 
 ### Customers using Azure SQL  
 
-There are many customers that have moved to Azure SQL. You can access them all at https://customers.microsoft.com/. You can dive deeper into the customers mentioned in this module:  
+There are many customers that have moved to Azure SQL. You can dive deeper into the customers mentioned in this module:  
 
-- [Allscripts](https://customers.microsoft.com/story/allscripts-partner-professional-services-azure): SQL Server on Azure virtual machines  
-- [Komatsu](https://customers.microsoft.com/story/komatsu-australia-manufacturing-azure): Azure SQL Managed Instance
-- [AccuWeather](https://customers.microsoft.com/story/accuweather-partner-professional-services-azure): Azure SQL Database
-- [Paychex](https://customers.microsoft.com/story/paychex-azure-sql-database-us): Azure SQL Database Elastic Pools
+- [Allscripts - SQL Server on Azure virtual machines](https://customers.microsoft.com/story/allscripts-partner-professional-services-azure)
+- [Komatsu - Azure SQL Managed Instance](https://customers.microsoft.com/story/komatsu-australia-manufacturing-azure)
+- [AccuWeather - Azure SQL Database](https://customers.microsoft.com/story/accuweather-partner-professional-services-azure)
+- [Paychex - Azure SQL Database Elastic Pools](https://customers.microsoft.com/story/paychex-azure-sql-database-us)
 
 ### Platform as a Service (PaaS) capabilities
 
@@ -50,14 +57,16 @@ You can read more about PaaS [here](https://azure.microsoft.com/overview/what-is
 - [Built-in intelligence](https://docs.microsoft.com/azure/sql-database/sql-database-intelligent-insights)
 - [SLA](https://azure.microsoft.com/support/legal/sla/sql-database/v1_4/) for Azure SQL PaaS
 
-You also learned how Azure SQL Database and Managed Instance are versionless, meaning you get updates as they become available and never have to migrate. To see a feed from Microsoft regarding those updates, [refer here](https://azure.microsoft.com/updates/?category=databases). Another helpful resources are the [Release Notes](https://docs.microsoft.com/azure/sql-database/sql-database-release-notes?tabs=single-database) for Azure SQL Database.  
+Azure SQL Database and Managed Instance are versionless, meaning you get updates as they become available and never have to migrate. To see a feed from Microsoft regarding those updates, [refer here](https://azure.microsoft.com/updates/?category=databases). Another helpful resources are the [Release Notes](https://docs.microsoft.com/azure/sql-database/sql-database-release-notes?tabs=single-database) for Azure SQL Database.  
 
-There are also options for pools in Azure SQL: [Azure SQL Instance Pools](https://docs.microsoft.com/azure/sql-database/sql-database-instance-pools) and [Azure SQL Database Elastic Pools](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool). Pools can be ideal for large migrations and/or [Software as a Service (SaaS)](https://azure.microsoft.com/overview/what-is-saas/) applications.  
+Learn more about pools in Azure SQL:
+
+- [Azure SQL Managed Instance Pools](https://docs.microsoft.com/azure/sql-database/sql-database-instance-pools)
+- [Azure SQL Database Elastic Pools](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool)  
 
 If you want to dive deeper into the deployment options and how to choose, check out the following resources:  
 
 - [Blog announcement for Azure SQL](https://techcommunity.microsoft.com/t5/Azure-SQL-Database/Unified-Azure-SQL-experience/ba-p/815368), which explains and walks through Azure SQL and some of the resulting views and experiences available in the Azure portal.
-- [Microsoft Customer Stories](https://customers.microsoft.com/home?sq=&ff=&p=0) for many more stories similar to the ones above. You can use this to explore various use cases, industries, and solutions.  
 - [Choose the right deployment option in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) is a page in the documentation regularly updated to help provide insight into making the decisions between the Azure SQL options.
 - [Choosing your database migration path to Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/choosing-your-database-migration-path-to-azure/Choosing_your_database_migration_path_to_Azure.pdf) is a white paper that talks about tools for discovering, assessing, planning, and migrating SQL databases to Azure. This workshop will refer to it several times, and it's a highly recommended read. Chapter 5 deeply discusses choosing the right deployment option.  
 - [Feature comparison between SQL database, SQL managed instance, and SQL Server](https://docs.microsoft.com/azure/sql-database/sql-database-features)
@@ -80,7 +89,7 @@ Finally, you can review the latest hardware generations and availability [here](
 
 ### Management interfaces
 
-To learn more (and to get started) with some of the tools, use the following references as a starting point:  
+To learn more about some of the tools, use the following references as a starting point:  
 
 - [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) (SSMS)  
 - [Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/what-is?view=sql-server-ver15) (ADS) and the [notebook](https://docs.microsoft.com/sql/azure-data-studio/notebooks-guidance?view=sql-server-ver15) capability
@@ -90,6 +99,6 @@ To learn more (and to get started) with some of the tools, use the following ref
 - [Azure SQL REST APIs](https://docs.microsoft.com/rest/api/sql/)
 - [sqlcmd](https://docs.microsoft.com/sql/tools/sqlcmd-utility?view=sql-server-ver15)
 - [bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15)
-- [az CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest)
+- [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest)
 - [Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azure/?view=azps-3.7.0)
 - [Azure Cloud Shell](https://azure.microsoft.com/features/cloud-shell/)
