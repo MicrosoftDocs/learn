@@ -23,7 +23,7 @@ ARM templates allow you declare what you intend to deploy without having to writ
 
 Using ARM templates allows you to automate deployments and use the practice of infrastructure as code (IaC). The ARM code becomes part of your infrastructure and development projects. Just like application code, you can store the IaC files in a source repository such as [Azure Repos](https://azure.microsoft.com/services/devops/repos?azure-portal=true) and version it.
 
-Any one on your team can leverage the templates you build in order to deploy similar environments for development, testing, staging and deployment in exactly the same way, ensuring consistency.
+Any one on your team can leverage the templates you build in order to deploy similar environments for development, testing, staging, and deployment in exactly the same way, ensuring consistency.
 
 Some other benefits are:
 
@@ -78,7 +78,7 @@ There are three ways to deploy an ARM template to Azure.
 - Deploy a linked template
 - Deploy in a continuous deployment pipeline
 
-Deploying a local template requires you to have either [Azure Powershell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true) or [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) installed locally. You first sign in to Azure using Azure CLI or Azure Powershell.
+Deploying a local template requires you to have either [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true) or [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) installed locally. You first sign in to Azure using Azure CLI or Azure PowerShell.
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -115,7 +115,7 @@ New-AzResourceGroup `
 
 ---
 
-To deploy the template, use either Azure CLI's [az deployment group create](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create?azure-portal=true) or Azure Powershell's [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true). Specify the resource group and give a name to the deployment so you can easily identify it in the deployment history. For convenience, create a variable that stores the path to the template file. This variable makes it easier for you to run the deployment commands because you don't have to retype the path every time you deploy. Here is an example:
+To deploy the template, use either Azure CLI's [az deployment group create](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create?azure-portal=true) or Azure PowerShell's [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true). Specify the resource group and give a name to the deployment so you can easily identify it in the deployment history. For convenience, create a variable that stores the path to the template file. This variable makes it easier for you to run the deployment commands because you don't have to retype the path every time you deploy. Here is an example:
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -145,13 +145,13 @@ In the exercise unit, you create an Azure Resource Manager template and deploy i
 
 Linked templates are used to deploy complex solutions. You can break a template into many templates, and deploy these templates through a main template. When the main template gets deployed, it triggers the deployment of the linked template. You can store and secure the linked template by using a SAS token.
 
-A continuous integration/continuous deployment (CI/CD) pipeline automates building and deploying development project including Azure Resource Manager template projects. The two most common pipelines used for template deployment are [Azure Pipelines](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](https://docs.microsoft.com/en-us/learn/paths/automate-workflow-github-actions/?azure-portal=true).
+A continuous integration/continuous deployment (CI/CD) pipeline automates building and deploying development project including Azure Resource Manager template projects. The two most common pipelines used for template deployment are [Azure Pipelines](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](https://docs.microsoft.com/learn/paths/automate-workflow-github-actions/?azure-portal=true).
 
 More information on these two types of deployment are covered in other modules.
 
 ## How do I add resources to the template
 
-To add a resource to your template you will need to know the resource provider and its types of resources. The syntax for this combination is in the form of *{resource-provider}/{resource-type}*. For example, to add a storage account resource to your template, you will need the *Microsoft.Storage* resource provider. One of the types for this provider is *storageAccount*. So your resource type will be displayed as *Microsoft.Storage/storageAccounts*. You can use a list of [Resource providers for Azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true) to find the providers you need.
+To add a resource to your template, you will need to know the resource provider and its types of resources. The syntax for this combination is in the form of *{resource-provider}/{resource-type}*. For example, to add a storage account resource to your template, you will need the *Microsoft.Storage* resource provider. One of the types for this provider is *storageAccount*. So your resource type will be displayed as *Microsoft.Storage/storageAccounts*. You can use a list of [Resource providers for Azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true) to find the providers you need.
 
 Once you have the provider and resource type, you need to know the properties to use for that resource type. For that, you can go to the [Define resources in Azure Resource Manager template](https://docs.microsoft.com/azure/templates?azure-portal=true) page. There you will see a left side menu to find the resource you are looking for. Notice that the properties are sorted by API version.
 
@@ -196,7 +196,7 @@ Parameters enable you to customize the deployment by providing values that are t
 
 ### How do I use parameters in my template
 
-As an example, here is a template file with a parameter for the storageSKU defined int he *parameters* section of the template. Notice that we can provide a default for the parameter to be used if no value is specified at execution.
+As an example, here is a template file with a parameter for the storageSKU defined in the *parameters* section of the template. Notice that we can provide a default for the parameter to be used if no value is specified at execution.
 
 ```json
 "parameters": {

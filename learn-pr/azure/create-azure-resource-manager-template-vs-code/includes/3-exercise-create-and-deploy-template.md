@@ -81,9 +81,9 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
 
     ![Portal interface for the deployments with the one deployment listed and a succeeded status](../media/3-blanktemplate.png)
 
-1. Select *blanktemplate* to see what resources were deployed. In this case it will be empty since you didn't specify any resources in the template yet.
+1. Select *blanktemplate* to see what resources were deployed. In this case, it will be empty since you didn't specify any resources in the template yet.
 
-    ![Portal interface for the the specific deployment with no resources listed](../media/3-no-results.png)
+    ![Portal interface for the specific deployment with no resources listed](../media/3-no-results.png)
 
 1. Leave the portal open in your browser. You will check on deployments again.
 
@@ -96,13 +96,13 @@ Here, you add an Azure storage account resource to the template using a snippet 
 
 1. Your file will look like this:
 
-    [!code-json[](/code/parameter1)]
+    [!code-json[](/code/parameter1.json)]
 
   Values that you should edit are highlighted in new section of your file and can be navigated using the <kbd>tab</kbd> key.
 
-1. Change the values of the resource *name:* and *displayName:* to something unique. For example *learnexercise12321*. This name must be unique across all of Azure, so choose something unique to you.
+1. Change the values of the resource *name:* and *displayName:* to something unique. For example, *learnexercise12321*. This name must be unique across all of Azure, so choose something unique to you.
 1. Change the value of the sku *name* from *Premium_LRS* to **Standard**. Do the same for the value of *tier*.
-1. Note that the location of the resource is set to the location of the resource group where it will be deployed. Leave the default here.
+1. Note the location of the resource is set to the location of the resource group where it will be deployed. Leave the default here.
 1. Save the file.
 
 ### Deploy the updated template
@@ -124,11 +124,11 @@ Here, you change the name of the deployment to better reflect what this deployme
 1. Navigate back to the portal. Go to your resource group and see that there are now *2 Succeeded* deployments. Select this link.
 1. Notice that both deployments are in the list.
 
-    ![Portal interface for the deployments with the two deployment listed and succeeded statuses](../media/3-addstorage-deployment.png)
+    ![Portal interface for the deployments with the two deployments listed and succeeded statuses](../media/3-addstorage-deployment.png)
 
 1. Select *addstorage**.
 
-    ![Portal interface for the the specific deployment with one resources listed](../media/3-show-resource-deployed.png)
+    ![Portal interface for the specific deployment with one resource listed](../media/3-show-resource-deployed.png)
 
   Notice that the storage account has been deployed.
 
@@ -168,7 +168,7 @@ Here, you make your template more flexible by adding parameters that can be set 
 
 1. Use the new parameter in the ```resources``` block in both the ```name``` and ```displayName``` values. The entire file will look like this:
 
-   [!code-json[](/code/parameter2?highlight=5-12,17,21)]
+   [!code-json[](/code/parameter2.json?highlight=5-12,17,21)]
 
 1. Save the file.
 
@@ -230,7 +230,7 @@ Here you use parameters to limit the values allowed for a parameter.
 
 1. The entire file will look like this:
 
-    [!code-json[](/code/parameter3?highlight=13-26,40)]
+    [!code-json[](/code/parameter3.json?highlight=13-26,40)]
 
 1. Save the file.
 
@@ -324,7 +324,7 @@ Here, you deploy the template and see the endpoints output as JSON.
 
 ## Test the template with what-if
 
-It is always good practice to see what changes to the infrastructure the template will make before it is deployed. To do this you use the *what-if* switch.
+It is always good practice to see what changes to the infrastructure the template will make before it is deployed. To do this, you use the *what-if* switch.
 
 1. Add a [what-if](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest#az-deployment-group-what-if&azure-portal=true) switch to the deployment command and change the *storageSKU* parameter value to **Standard_GRS**. Be sure to use the same unique name for the *storageName* parameter that you used in the previous deployment.
 

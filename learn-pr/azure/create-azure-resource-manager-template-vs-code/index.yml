@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Write Azure Resource Manager templates"
-summary: Write Azure Resource Manager templates to deploy your infrastructure to Azure consistently and reliably..
+summary: Write Azure Resource Manager templates to deploy your infrastructure to Azure consistently and reliably.
 abstract: |
   In this module, you will:
   - Explore Azure Resource Manager templates to implement infrastructure as code

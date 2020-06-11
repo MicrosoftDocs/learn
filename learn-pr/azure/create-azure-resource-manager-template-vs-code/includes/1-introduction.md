@@ -1,4 +1,4 @@
-Microsoft Azure Resource Manager templates allow you to specify your project's infrastructure in a declaritive and reusable way. The templates can be versioned and saved in the same source control as your development project.
+Microsoft Azure Resource Manager templates allow you to specify your project's infrastructure in a declarative and reusable way. The templates can be versioned and saved in the same source control as your development project.
 
 Suppose you are managing a software team that is developing an inventory system for your partner companies. This product is going to be deployed to Azure and each partner company will have their own solution. During development, the team will need to quickly deploy consistent infrastructure in Azure for their development, test, and staging environments. Once the project is ready to deploy to the partner companies, the infrastructure will need to be reliably duplicated in each of their environments. You decide to use the practice of *Infrastructure as Code* using Azure Resource Manager templates to ensure that your infrastructure deployments will be consistent, flexible, and that the versions can be tracked.
 

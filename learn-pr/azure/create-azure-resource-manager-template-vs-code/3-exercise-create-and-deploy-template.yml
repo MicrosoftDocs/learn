@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-azure-resource-manager-template-vs-code.3-exercise-create-and-deploy-template
-title: Exercise - TBD
+title: Exercise - Create and deploy an Azure Resource Manager template by using Visual Studio Code and Azure CLI
 metadata:
   title: Exercise - Create and deploy an Azure Resource Manager template by using Visual Studio Code and Azure CLI
   description: Create a Microsoft Azure Resource Manager template and deploy it to Azure. Then update that template to add parameters and outputs.
