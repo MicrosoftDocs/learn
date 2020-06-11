@@ -4,10 +4,6 @@ Software and services for relational databases have been a large part of Microso
 
 In 2008 at the Microsoft Professional Developers Conference, Microsoft's Chief Software Architect at the time, Ray Ozzie, announced the new cloud computing operating system called Windows Azure.  One of the five key components of the Azure Services Platform launch was *Microsoft SQL Services*. From the beginning, SQL has been a large part of Azure. SQL Azure was created to provide a cloud-hosted version of SQL Server. Windows Azure was later renamed to Microsoft Azure, SQL Azure was renamed to Azure SQL, and both have since dramatically expanded services.
 
-<!-- We should pull from some of the history at the following launch blog posts:
-https://azure.microsoft.com/blog/introducing-windows-azure/
-https://azure.microsoft.com/blog/microsoft-announces-windows-azure-and-azure-services-platform/ -->
-
 ## Evolution of database services on Azure
 
 Let's look at an early explanation Azure SQL from 2010:
