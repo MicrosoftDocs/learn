@@ -13,7 +13,8 @@ summary: Create, connect to, and share data among users on a Data Science Virtua
 abstract: Azure virtual machines are a fast way to use familiar operating systems and tools on powerful hardware. The Data Science Virtual Machine is configured with applications, frameworks, and libraries for data science and machine learning. You'll learn how to create and connect to a DSVM, how to access it with your choice of command-line or graphical interfaces, and how to share data and projects between users. 
 prerequisites: An Azure subscription. If you don’t have an Azure subscription, create a free account before you begin. Try the [free or paid version of Azure Machine Learning](https://aka.ms/AMLFree) today. 
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-levels: beginner # The learner is a beginner to DSVM but must be comfortable admin'ing a Linux machine. 
+levels: 
+  - beginner # The learner is a beginner to DSVM but must be comfortable admin'ing a Linux machine. 
 roles: 
   - data-engineer
   - data-scientist

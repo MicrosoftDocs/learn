@@ -9,9 +9,9 @@ You want to work:
 * On a powerful machine
 * Easily share your work with your colleagues
 
-You may, of course, buy or build your own machine and configure it just as you choose. This may be the right choice for you if you are willing to bear the upfront costs and know that you will heavily utilize the machine. Even so, safe remote access to the machine either for yourself or your colleagues may be a challenge and will, at the least, be an ongoing administrative task. 
+You may, of course, buy or build your own machine and configure it just as you choose. This may be the right choice for you if you're willing to bear the upfront costs and know that you'll stress the machine frequently. Even so, safe remote access to the machine either for yourself or your colleagues may be a challenge and will, at the least, be an ongoing administrative task. 
 
-With a Data Science Virtual Machine you only pay for when the machine is running. If you're worried about forgetting to shut down the machine, you can schedule a daily shutdown at the time of your choosing. The DSVM has dozens of applications and programming tools and libraries preinstalled and preconfigured. These tools are configured to take advantage of the GPU(s) if you choose to run the DSVM on hardware with GPU compute resources. For Python, R, Julia, Node, and .NET developers, not only are the base languages installed, but popular packages, development environments, and Jupyter kernels.
+With a Data Science Virtual Machine, you only pay for when the machine is running. If you're worried about forgetting to shut down the machine, you can schedule a daily shutdown at the time of your choosing. The DSVM has dozens of applications and programming tools and libraries preinstalled and preconfigured. These tools are configured to take advantage of the GPU(s) if you choose to run the DSVM on hardware with GPU compute resources. For Python, R, Julia, Node, and .NET developers, not only are the base languages installed, but popular packages, development environments, and Jupyter kernels.
 
 ## Learning objectives
 
