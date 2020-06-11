@@ -6,9 +6,9 @@ It's essential to create the resources in the correct order: storage first, then
 
 We're going to create blob storage outside of our IoT Central app, and then connect to it using a connection string.
 
-1. Right-click [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and select **Open in new window**.
+1. Right-click [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and select **Open link in new window**.
 
-1. Select **+ New resource**, and type "Blob storage" into the search bar.
+1. Select **+ Create a resource**, and type "Blob storage" into the search bar.
 
 1. There are quite a few storage options, make sure to select **Storage account - blob, file, table, queue**.
 
@@ -28,11 +28,13 @@ We're going to create blob storage outside of our IoT Central app, and then conn
 
     [![Screenshot showing how to create a blob storage resource](../media/continuous-data-blob.png)](../media/continuous-data-blob.png#lightbox)
 
+1. When the option is available, click **Go to resource**.
+
 ## Create a storage container
 
 It's important to have a container within your blob storage account.
 
-1. Locate **Containers** in the left menu for your blob storage, then select **+ New**.
+1. Locate **Containers** in the left menu for your blob storage, then select **+ Container**.
 
 1. Create a new container, with a name such as "continuouscontainer".
 
@@ -62,7 +64,7 @@ We're going to connect the data export feature to the storage account using a co
 
 1. In the **Create data export** dialog that follows, enter the connection string you saved off in the previous section.
 
-1. If everything is correct, you should be given the option of selecting **continuouscontainer**, in the list of available containers.
+1. For **Container**, enter **continuouscontainer**.
 
 1. Verify that **Enabled**, **Telemetry**, **Devices**, and **Device templates** are all **On**. Then click **Save**.
 

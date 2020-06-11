@@ -148,7 +148,10 @@ If all goes well, go straight into the second test.
 
 1. To verify the data is being received at IoT Central, make sure your IoT Central app is open, and the device selected. If not, select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), in the list of devices.
 
-1. Locate the **Contents temperature** tile, and verify approximately that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app. There may be a short latency before the dashboard shows the incoming data.
+1. Locate the **Contents temperature** tile, and verify approximately that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
+
+    > [!NOTE]
+    > It may be a few minutes before the dashboard shows the incoming data.
 
     | IoT Central | Device app |
     | --- | --- |

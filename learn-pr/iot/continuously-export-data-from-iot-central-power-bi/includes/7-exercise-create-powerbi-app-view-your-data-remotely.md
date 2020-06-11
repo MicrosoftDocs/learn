@@ -3,9 +3,11 @@ In this exercise, we're going to create a Stream Analytics job, and then use Pow
 
 ## Create an Event Hubs namespace
 
-1. In the Azure portal, create a new resource. Search for "Event Hubs", and select it.
+1. In the Azure portal containing your storage account, and container, create a new resource. Search for "Event Hubs", and select it.
 
-1. For **Name**, enter "continuousnamespace". Pricing tier can be the recommended selection, as notice the **Subscription** entries are from the free sandbox resources.  **Throughput Units** can be set to **1**.
+1. Verify the subscription is **Concierge Subscription**, and select the sandbox **learn-** resource group.
+
+1. For **Name**, enter "continuousnamespace". Pricing tier can be the recommended selection, as sandbox resources are free.  **Throughput Units** can be set to **1**.
 
 1. Click **Create**, and wait for the resource to be deployed. This process can take a few minutes.
 
@@ -13,7 +15,7 @@ In this exercise, we're going to create a Stream Analytics job, and then use Pow
 
 ### Create an Event Hubs instance
 
-1. Locate your Event Hub namespace resource. If you do not already have it open, navigate to your Azure home page, search recent resources, or **All resources**, for the namespace.
+1. Locate the **Overview** page for your Event Hub namespace resource. If you do not already have it open, navigate to your Azure home page, search recent resources, or **All resources**, for the namespace.
 
 1. Select the namespace, and click **+ Event Hub**. We need to create an instance of this namespace.
 
@@ -37,19 +39,21 @@ In this exercise, we're going to create a Stream Analytics job, and then use Pow
 
      [![Screenshot showing the creation of a data export to an event hub](../media/continuous-data-create-data-export-event-hub.png)](../media/continuous-data-create-data-export-event-hub.png#lightbox)
 
+1. For **Event Hub**, enter **continuouseventhub**.
+
 1. Leave the other entries at their default values, and click **Save**.
 
 1. Wait for the **Status** of the data export to change to **Running**.
 
 ## Create an Azure Stream Analytics job
 
-Navigate to the home page for Azure.
+1. Navigate to the home page for your Azure storage and event hub resources.
 
-1. In the Azure portal **Home** page, select **Create a resource**. Search for and select **Stream Analytics job**. Click **Create**.
+1. Select **Create a resource**. Search for, and select **Stream Analytics job**. Click **Create**.
 
     [![Screenshot showing the new job creation button](../media/continuous-data-new-job-create.png)](../media/continuous-data-new-job-create.png#lightbox)
 
-1. Enter "continuousJob" for the name. Select the sandbox **Concierge subscription**, and **learn-** resource group.
+1. Enter "continuousjob" for the name. Select the sandbox **Concierge Subscription**, and **learn-** resource group.
 
 1. Select the location nearest to you.
 
@@ -66,9 +70,9 @@ Navigate to the home page for Azure.
 
 1. On the right-hand side of the window, enter "continuousInput" for the **Input alias**.
 
-1. Ensure **Select Event Hub from your subscriptions** is selected.
+1. Ensure **Select Event Hub from your subscriptions** is selected. 
 
-1. For **Event Hub namespace**, select **continuousnamespace**. Ensure **Use existing** is selected for **Event Hub name**. Select **continuouseventhub**. No need to change the other fields from their defaults.
+1. For **Event Hub namespace**, select **continuousnamespace**. Ensure **Use existing** is selected for **Event Hub name**. Select **continuouseventhub**. Also, ensure the two other check box selections are set to **Use existing**. No need to change the other fields from their defaults.
 
 1. Click **Save**.
 
@@ -82,9 +86,9 @@ Navigate to the home page for Azure.
 
 1. For **Group workspace**, select **My workspace** if it is available, otherwise, select one of the listed workspaces, and record the workspace name in your text file.
 
-1. For **Dataset name**, enter **continuousDataset**.
+1. For **Dataset name**, enter "continuousDataset".
 
-1. For **Table name**, enter **continuousTable**.
+1. For **Table name**, enter "continuousTable".
 
 1. Change **Authentication mode** to **User token**.
 
@@ -106,6 +110,8 @@ Navigate to the home page for Azure.
 1. Click **Save query**, and return to your job.
 
     [![Screenshot showing the completed SQL logging query](../media/continuous-data-job-overview.png)](../media/continuous-data-job-overview.png#lightbox)
+
+1. Click **Start**, and set your job running.
 
 ## Create a dashboard to visualize the query, using Power BI
 

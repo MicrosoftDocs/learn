@@ -41,9 +41,10 @@ You'll construct the app displayed in the above image, from supplied components.
 
 ## Create a custom IoT Central app
 
-1. Navigate to [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true). It's a good idea to bookmark this URL, as it's the home for all your IoT Central apps.
+1. Right-click on [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true), and select **Open link in new window**. It's a good idea to bookmark this URL, as it's the home for all your IoT Central apps.
 
-1. Click on **New Application**. Select the free **Trial** payment plan.
+1. Click on **My apps**, then **+ New application**. 
+1. Click **Custom apps**. 
 
 1. Select **Custom application**, and configure the app as shown in the following image:
 
@@ -52,6 +53,7 @@ You'll construct the app displayed in the above image, from supplied components.
     > [!IMPORTANT]
     > Your **Application Name** can be any friendly name, such as "Refrigerated Trucks". However, the **URL** _must_ be unique, which is why you'll add a unique ID to the end of the URL for the app. For example, `refrigerated-trucks-<your id>`, replacing `<your id>` with some unique ID.
 
+1. Select the **Free** payment plan.
 1. Enter the rest of the required fields (your contact information) appropriately.
 
 1. Click **Create**, and wait a few seconds while the app resource is built.
