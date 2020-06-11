@@ -37,7 +37,7 @@ When you create an Azure API management gateway, you must select from one of sev
 ## API management setup
 
 To set up API management, you:
-1. Create an API Management gateway. The name you use for the gateway  must be globally unique within the ***.azure-api.net** namespace.
+1. Create an API Management gateway. The name you use for the gateway  must be globally unique within the **.azure-api.net** namespace.
 1. Register an existing Web API with the gateway. Registering the API makes the API available to consumers at the **\<gateway\>.azure-api.net** endpoint.
 1. Call the existing API through the gateway. Consumers can now use the API at the endpoint URL, or through the developer portal.
 
