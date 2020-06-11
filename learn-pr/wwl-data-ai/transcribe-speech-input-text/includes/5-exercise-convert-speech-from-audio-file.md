@@ -1,8 +1,8 @@
-In this exercise, you will make use of the Speech Service you created earlier.  This exercise does not require any configuration on your local computer for a development environment as we will use Visual Studio Codespaces.  The steps will detail what is required to get the online environment configured correctly, tasks that will be required for each exercise to work correctly.   All resources are stored in a GitHub repo that you will link to during the exercise steps.
+In this exercise, you will make use of the Speech Service you created earlier.  This exercise does not require any configuration on your local computer for a development environment as we will use Visual Studio Code Codespaces.  The steps will detail what is required to get the online environment configured correctly, tasks that will be required for each exercise to work correctly.   All resources are stored in a GitHub repo that you will link to during the exercise steps.
 
 ::: zone pivot="python"
 
-1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/).
+1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces//).
 
     > [!NOTE]
     > At this time, Safari is not a supported browser for the preview of Visual Studio Codespaces.
@@ -14,13 +14,13 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Select **Create Codespace**.
 1. Select your **Subscription** in the **Select Billing** pane and choose a location for the service.
 1. Select **Create**.
-1. Once your plan is created, you can then create you first codespace.  
+1. Once your plan is created, you can then create you first environment.  
 1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
 1. Enter a name of your choosing, example **SpeechToTextPython**.
 1. Copy the following URL and paste it into the Git Repository area on the **Create Codespace** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
 1. Leave the rest of the settings at their default and select **Create**.
 1. It will take a few minutes for the environment to be created so while you wait, go to your **Speech** service in the **Azure portal** and copy one of your keys, and also note the region where the service was created.
-1. Once the environment indicates that it is available, either select the title, or select the three vertical dots in the lower right of the environment box and choose **Connect**.
+1. Once the environment indicates that it is available, either select the title, or select the three vertical dots in the lower right of the Codespace box and choose **Connect**.
 1. Visual Studio Codespaces will now synchronize the GitHub repo and run the scripts that were present in the devcontainer.  This is required to set up the proper Python environment, in this case 3.5.3.
 1. If you get any messages about installing additional extensions or components, choose to do so.
 1. Refresh the browser window to ensure that all script changes are applied to the environment.
@@ -28,10 +28,10 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Expand the **python** folder.
 1. Select the **speechtotext.py** file in the explorer pane.
 1. Locate the **YourSubscriptionKey**, **YourServiceRegion** line in the file and paste your key into the proper spot and set the region to where you created your **Speech Service**, such as **westus**.
-1. You will need to add a package for the Cognitive Services speech functions so open a terminal window in VS Code Online and paste the following command in the terminal window, and hit Enter to add the package: `sudo pip install --upgrade azure-cognitiveservices-speech`
-1. Locate the **Run Python File in Terminal** button in the upper right corner of VS Code Online and select it to run the code.
+1. You will need to add a package for the Cognitive Services speech functions so open a terminal window in Visual Studio Codespaces and paste the following command in the terminal window, and hit Enter to add the package: `sudo pip install --upgrade azure-cognitiveservices-speech`
+1. Locate the **Run Python File in Terminal** button in the upper right corner of VS Code Codespaces and select it to run the code.
 1. The result of the speech to text transcription is displayed in the terminal window.  Feel free to download the **narration.wav** file from the GitHub repo if you want to hear the audio that was used.
-1. You can also upload your own audio file to the repo, sync VS Code Online with the repo, change the **audio_filename** option, and run it again.
+1. You can also upload your own audio file to the repo, sync VS Code Codespaces with the repo, change the **audio_filename** option, and run it again.
 
 ::: zone-end
 
@@ -54,9 +54,9 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Enter a name of your choosing, example **SpeechToTextCS**.
 1. Copy the following URL and paste it into the Git Repository area on the **Create Codespace** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
 1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
-1. Once the environment indicates that it is available, either select the title or select the three vertical dots in the lower right of the environment box and choose **Connect**.
-1. Once the code window opens, expand the **transcribe_speech_to_text** folder.
+1. It will take a few minutes for the codespace to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
+1. Once the environment indicates that it is available, either select the title or select the three vertical dots in the lower right of the Codespace box and choose **Connect**.
+1. Once the VS Code window opens, expand the **transcribe_speech_to_text** folder.
 1. Right-click the **csharp** folder and choose **Open in Terminal**
 1. We will be using C# and .NET Core for this exercise so type in the command ```dotnet new console``` and press Enter.
 1. A new C# dotnet core project structure is set up for you complete with a Program.cs file, a workspace.csproj file, and the obj folder.
