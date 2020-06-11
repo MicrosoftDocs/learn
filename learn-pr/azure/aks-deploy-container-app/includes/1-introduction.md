@@ -1,6 +1,6 @@
-Let's suppose you work for a growing video editing company that, because of the increased demand because of international expansion, needs to scale the product so it can provide a better experience to all customers. For that they asked you to assess which tool would be the best for the job.
+Imagine you work for a growing video editing company that, because of the increased demand because of international expansion, needs to scale the product so it can provide a better experience to all customers. They've asked you to assess which Azure service would improve their ability to scale to meet demand.
 
-After experimenting with Kubernetes you got to Azure Kubernetes Service, which fits all the prerequisites to be the perfect tool for the company's increased growth. So, after clearance from the leadership, you have to create the future structure that will support the company in the future!
+You've identified Azure Kubernetes Service (AKS) as a potential solution, as it meets the requirements to enable your application to handle the company's increased growth. You need to better understand how to deploy applications to AKS, and how to expose your applications to users.
 
 ## Learning objectives
 
