@@ -6,7 +6,7 @@ The essence of linear regression is a simple form of machine learning: drawing a
 
 We'll build on that conceptual foundation to address more complex situations. Those situations include having points in more than two dimensions or even points whose relationship seems nonlinear.
 
-Formally, linear regression is used to predict a quantitative *response* (the values on a Y axis). The response is dependent on one or more *predictors* (values on one or more axes that are orthogonal to $Y$, commonly thought of collectively as $X$). 
+Formally, linear regression is used to predict a quantitative *response* (the values on a Y-axis). The response is dependent on one or more *predictors* (values on one or more axes that are orthogonal to $Y$, commonly thought of collectively as $X$). 
 
 The working assumption is that the relationship between the predictors and the response is more or less linear. The goal of linear regression is to fit a straight line in the best possible way to minimize the deviation between our observed responses in the dataset and the responses predicted by our line, the linear approximation.
 

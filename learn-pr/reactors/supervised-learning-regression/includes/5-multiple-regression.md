@@ -179,4 +179,4 @@ In the polynomial regression, adding `pctUrban` to our model provides a decent
 
 Beyond boosting the $R^2$ score, fitting the multiple polynomial regression provides insights from the visualization. Now rotate the visualization above 180 degrees about the $z$-axis. You'll notice that although our model predicts increased female life expectancy at high incomes, in poor countries, our model shows a *decrease* in female life expectancy correlated with increased urbanization.
 
-All of these conclusions come from a model that treats all of the data as coming from a rather monolithic whole. We have other types of data that we can also use in our modeling to try to get different insights.
+All of these conclusions come from a model that treats all of the data as coming from a rather monolithic whole. We can use other types of data in our modeling to try to get different insights.
