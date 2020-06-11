@@ -96,7 +96,7 @@ Here, you add an Azure storage account resource to the template using a snippet 
 
 1. Your file will look like this:
 
-    [!code-json[](/code/parameter1.json)]
+    [!code-json[](code/parameter1.json)]
 
   Values that you should edit are highlighted in new section of your file and can be navigated using the <kbd>tab</kbd> key.
 
@@ -168,7 +168,7 @@ Here, you make your template more flexible by adding parameters that can be set 
 
 1. Use the new parameter in the ```resources``` block in both the ```name``` and ```displayName``` values. The entire file will look like this:
 
-   [!code-json[](/code/parameter2.json?highlight=5-12,17,21)]
+   [!code-json[](code/parameter2.json?highlight=5-12,17,21)]
 
 1. Save the file.
 
@@ -230,7 +230,7 @@ Here you use parameters to limit the values allowed for a parameter.
 
 1. The entire file will look like this:
 
-    [!code-json[](/code/parameter3.json?highlight=13-26,40)]
+    [!code-json[](code/parameter3.json?highlight=13-26,40)]
 
 1. Save the file.
 
