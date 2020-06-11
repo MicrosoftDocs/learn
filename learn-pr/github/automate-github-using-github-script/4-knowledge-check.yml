@@ -37,7 +37,7 @@ quiz:
     - content: "GitHub Actions automates workflows that run inside GitHub. GitHub Script automates workflows that run outside of GitHub."
       isCorrect: false
       explanation: "GitHub Script is a workflow action that runs inside GitHub."
-  - content: "Why would someone use the following YAML in a GitHub Script action: `if: contains(github.event.issue.labels.\\*.name, 'bug')`?"
+  - content: 'Why would someone use the following YAML in a GitHub Script action: `if: contains(github.event.issue.labels.\\*.name, ''bug'')`?'
     choices:
     - content: "To ensure that the script only runs when the target issue has been labeled as a bug."
       isCorrect: true
@@ -45,6 +45,6 @@ quiz:
     - content: "To make sure that new issue names do not violate the bug reporting policy when created."
       isCorrect: false
       explanation: "This snippet will not help you enforce issue creation policy."
-    - content: "To automatically flag any commits containing code matching the `github.event.issue.labels.\\*.name` namespace pattern as a bug."
+    - content: 'To automatically flag any commits containing code matching the `github.event.issue.labels.\*.name` namespace pattern as a bug.'
       isCorrect: false
       explanation: "This snippet will not help you enforce code commit policy."
