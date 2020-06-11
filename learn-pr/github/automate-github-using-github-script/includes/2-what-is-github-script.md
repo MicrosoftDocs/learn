@@ -78,7 +78,7 @@ The `actions/github-script@0.8.0` action, also known as GitHub Script, does all 
 
 This action requires a `github-token` that will be provided at runtime so that requests are authenticated. This is automatically done for you, so you can use that code as-is.
 
-The `script` parameter can be virtually any JavaScript that will use the octokit/rest/js client stored in `github`. In this case, it's just one line (split acrross multiple lines for readability) that creates a hardcoded comment.
+The `script` parameter can be virtually any JavaScript that will use the octokit/rest/js client stored in `github`. In this case, it's just one line (split across multiple lines for readability) that creates a hardcoded comment.
 
 After the workflow is run, GitHub Script will log the code it executed for review on the **Actions** tab.
 
