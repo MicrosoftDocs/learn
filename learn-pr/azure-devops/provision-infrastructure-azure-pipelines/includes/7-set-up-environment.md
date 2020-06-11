@@ -127,7 +127,8 @@ At a minimum, complete the following steps. Run these commands from the Visual S
 
 In the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path, you forked and then cloned a Git repository that contains the source code for the _Space Game_ website. Your fork was connected to your projects in Azure DevOps so that the build runs when you push changes to GitHub.
 
-In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-automate](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
+> [!IMPORTANT]
+> In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-automate](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
 
 In this part, you clone your fork locally so that you can make changes and build out your pipeline configuration.
 
