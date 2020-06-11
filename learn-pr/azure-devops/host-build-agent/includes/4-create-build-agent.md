@@ -58,7 +58,11 @@ Recall that an agent pool organizes build agents. In this section, you create th
 
     ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
 1. Select **Add pool**.
-1. In the **Add pool** window, select **New** and then, in the text box, enter *MyAgentPool*.
+1. In the **Add pool** window:
+
+    1. Under **Pool to link**, select **New**.
+    1. Under **Pool type**, select **Self-hosted**.
+    1. Under **Name**, enter *MyAgentPool*.
 
     In practice, you would choose a more descriptive name for the purpose of your pool.
 1. Select **Create**.
@@ -176,6 +180,8 @@ Let's start by updating the Ubuntu package manager, named *apt*. This action fet
     sudo ./build-tools.sh
     ```
 
+    The script takes a few minutes to run.
+
     In practice, you could now run commands to verify that each software component was successfully installed.
 
 ## Install agent software on your VM
@@ -264,11 +270,13 @@ The documentation explains how to manually set up [self-hosted Linux agents](htt
     export AZP_POOL=MyAgentPool
     ```
 
-1. Set the `AZP_AGENT_VERSION` environment variable to specify the latest version of the agent. A YAML pipeline on a Linux machine must be using the latest version of the agent, even if it is pre-release. The agent software is constantly updating, so you curl the version information from [the GitHub repo](https://api.github.com/repos/microsoft/azure-pipelines-agent/releases?azure-portal=true) and use jq to get the latest version.
+1. Set the `AZP_AGENT_VERSION` environment variable to specify the latest version of the agent.
 
     ```bash
     export AZP_AGENT_VERSION=$(curl -s https://api.github.com/repos/microsoft/azure-pipelines-agent/releases | jq -r '.[0].tag_name' | cut -d "v" -f 2)
     ```
+
+    A YAML pipeline on a Linux machine must be using the latest version of the agent, even if it is pre-release. The agent software is constantly updating, so you `curl` the version information from [the GitHub repo](https://api.github.com/repos/microsoft/azure-pipelines-agent/releases?azure-portal=true). The command uses `jq` to read the latest version from the JSON string that's returned.
 
 1. Print the agent version to the console. Optionally, [check](https://github.com/microsoft/azure-pipelines-agent/releases?azure-portal=true) to make sure this is the latest version.
 
