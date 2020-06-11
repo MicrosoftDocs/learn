@@ -104,7 +104,6 @@ az group create \
   --location "{location}"
 ```
 
----
 # [PowerShell](#tab/azure-powershell)
 
 ```azurepowershell
