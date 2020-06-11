@@ -27,7 +27,7 @@ This exercise will use the default audio format for output but you can investiga
 
 ::: zone pivot="csharp"
 
-## Using visual studio codespaces
+## Using Visual Ctudio codespaces
 
 > [!NOTE]
 > At this time, Safari is not a supported browser for the preview of Visual Studio Codespaces.
@@ -39,17 +39,17 @@ This exercise will use the default audio format for output but you can investiga
 
 1. Select the **Get started** button.
 1. Sign in using your Microsoft Account that is linked to your Azure subscription.
-1. If this is the first time you have used Visual Studio Code online, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
-1. Select **Create Environment**.
+1. If this is the first time you have used Visual Studio Codespaces, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
+1. Select **Create Codespace**.
 1. Select your Subscription in the **Select Billing** pane and choose a location for the service.
 1. Select **Create**.
-1. Once your plan is created, you can then create your first environment.  
-1. If the **Create Environment** panel does not open automatically, select **Create environment**.
-1. Enter an environment name of your choosing, example **TextToSpeechCS**.
-1. Copy the following URL and paste it into the Git Repository area on the **Create Environment** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
+1. Once your plan is created, you can then create your first codespace.  
+1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
+1. Enter a name of your choosing, example **TextToSpeechCS**.
+1. Copy the following URL and paste it into the Git Repository area on the **Create Codespace** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
 1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
-1. Once the environment indicates that it is available, either select the title or select the three vertical dots in the lower right of the environment box and choose **Connect**.
+1. It will take a few minutes for the codespace to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
+1. Once the codespace is available, either select the title or select the three vertical dots in the lower right of the codespace box and choose **Connect**.
 1. We will be using C# and .NET Core for this exercise so wait for the Visual Studio Codespaces window to open.
 1. Expand the **synthesize_text_to_speech** folder.
 1. You will create a .NET Core application so right-click the **csharp** folder and choose **Open in Terminal**
@@ -69,6 +69,7 @@ This exercise will use the default audio format for output but you can investiga
     using System;
     using System.Threading.Tasks;
     using Microsoft.CognitiveServices.Speech;
+    using Microsoft.CognitiveServices.Speech.Audio;
 
     namespace texttospeech
     {
@@ -178,17 +179,17 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
     You will require an Azure subscription to create an environment for Visual Studio Codespaces.
 1. Select the **Get started** button.
 1. Sign in using your Microsoft Account that is linked to your Azure subscription.
-1. If this is the first time you have used Visual Studio Code online, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
-1. Select **Create Environment**.
+1. If this is the first time you have used Visual Studio Codespaces, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
+1. Select **Create Codespace**.
 1. Select your **Subscription** in the **Select Billing** pane and choose a location for the service.
 1. Select **Create**.
-1. Once your plan is created, you can then create you first environment.  
-1. If the **Create Environment** panel does not open automatically, select **Create environment**.
-1. Enter an environment name of your choosing, example **TextToSpeechPython**.
-1. Copy the following URL and paste it into the Git Repository area on the **Create Environment** panel: `https://github.com/MicrosoftLearning/AI-SpeechToText`
+1. Once your plan is created, you can then create you first codespace.  
+1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
+1. Enter a name of your choosing, example **TextToSpeechPython**.
+1. Copy the following URL and paste it into the Git Repository area on the **Create Codespace** panel: `https://github.com/MicrosoftLearning/AI-SpeechToText`
 1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created so while you wait, go to your **Speech** service in the **Azure portal** and copy one of your keys, and also note the region where the service was created.
-1. Once the environment indicates that it is available, either select the title, or select the three vertical dots in the lower right of the environment box and choose **Connect**.
+1. It will take a few minutes for the codespace to be created so while you wait, go to your **Speech** service in the **Azure portal** and copy one of your keys, and also note the region where the service was created.
+1. Once the codespace is available, either select the title, or select the three vertical dots in the lower right of the codespace box and choose **Connect**.
 1. Visual Studio Codespaces will now synchronize the GitHub repo and run the scripts that were present in the devcontainer.  This is required to set up the proper Python environment, in this case 3.5.3.
 1. If you get any messages about installing additional extensions or components, choose to do so.
 1. Refresh teh browser window to ensure all settings are applied.
