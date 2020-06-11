@@ -1,23 +1,26 @@
 ### YamlMime:Module
 uid: create-azure-resource-manager-template-vs-code
 metadata:
-  title: "TBD - Learn"
-  description: TBD
-  ms.date: 10/15/2020
+  title: "Write Azure Resource Manager templates - Learn"
+  description: Write Azure Resource Manager templates to deploy your infrastructure to Azure consistently and reliably.
+  ms.date: 06/19/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "TBD"
-summary: TBD.
+title: "Write Azure Resource Manager templates"
+summary: Write Azure Resource Manager templates to deploy your infrastructure to Azure consistently and reliably..
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+  - Explore Azure Resource Manager templates to implement infrastructure as code
+  - Create and deploy an Azure Resource Manager template to Azure by using Visual Studio Code and Azure CLI
+  - Declare resources and add flexibility to your template by adding resources, parameters, and outputs
+  - Predict what changes would be made to your infrastructure by using the *what-if* switch
 prerequisites: |
-  - A [GitHub](https://github.com?azure-portal=true) account
-  - The ability to navigate and edit files in GitHub
+  - Familiar with [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - Familiar with [Azure fundamentals](https://docs.microsoft.com/learn/paths/azure-fundamentals?azure-portal=true)
+  - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally
+  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
@@ -31,8 +34,8 @@ products:
 - vs-code
 units:
 - learn.create-azure-resource-manager-template-vs-code.1-introduction
-- learn.create-azure-resource-manager-template-vs-code.2-TBD
-- learn.create-azure-resource-manager-template-vs-code.3-exercise-TBD
+- learn.create-azure-resource-manager-template-vs-code.2-explore-template-structure
+- learn.create-azure-resource-manager-template-vs-code.3-exercise-create-and-deploy-template
 - learn.create-azure-resource-manager-template-vs-code.4-knowledge-check
 - learn.create-azure-resource-manager-template-vs-code.5-summary
 badge:

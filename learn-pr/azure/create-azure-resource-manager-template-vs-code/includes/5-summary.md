@@ -5,6 +5,7 @@ In summary, you:
 - Explored Azure Resource Manager templates
 - Created and deployed an Azure Resource Manager template by using Visual Studio Code and Azure CLI
 - Declared resources and added flexibility to your template by adding resources, parameters, and outputs.
+- Predicted what changes would be made to your infrastructure by using the *what-if* switch
 
 <!-- ## Next steps
 

@@ -1,4 +1,4 @@
-In this exercise, you create a Microsoft Azure Resource Manager Template and deploy it to Azure. Then you update that template to add parameters and outputs.
+In this exercise, you create a Microsoft Azure Resource Manager template and deploy it to Azure. Then you update that template to add parameters and outputs.
 
 > [!NOTE]
 > This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
