@@ -38,7 +38,7 @@ For each driver, you see the environment variable that maps to the location of t
 
 The unit tests code is already set up to read these environment variables. These variables tell Selenium where to find the driver executable files. To run the unit tests locally, you need to export these same environment variables.
 
-From Visual Studio Code, go to the terminal. Then run these commands:
+From Visual Studio Code, go to the terminal. Then run these commands. Replace the path shown with the full path to your **mslearn-tailspin-spacegame-web-deploy** project:
 
 # [Windows](#tab/export-windows)
 
@@ -115,7 +115,7 @@ To run the tests locally:
     Total tests: 9
          Passed: 6
         Skipped: 3
-     Total time: 12.5375 Seconds
+     Total time: 1.8257 Seconds
     ```
 
 ## Add the SITE_URL variable to Azure Pipelines

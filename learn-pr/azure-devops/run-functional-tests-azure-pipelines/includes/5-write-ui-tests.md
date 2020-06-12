@@ -152,6 +152,10 @@ switch(browser)
 }
 ```
 
+The constructor for each driver class takes an optional path to the driver software Selenium needs to control the web browser. Later, we'll discuss the role of the environment variables shown here.
+
+In this example, the `EdgeDriver` constructor also requires additional options to specify that we want to use the Chromium version of Edge.
+
 ### Define the helper methods
 
 **Andy:** I know we'll need to repeat two actions throughout the tests:
