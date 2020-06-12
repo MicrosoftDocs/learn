@@ -1,4 +1,4 @@
-While the Python standard library has extensive support for a wide array of features, it can't possibly address every possible solution.  Fortunately, a rich third-party, open-source software community has create thousands of packages that fill in the gaps.
+While the Python standard library has extensive support for a wide array of features, it can't possibly address every possible solution.  Fortunately, an open-source software community has created thousands of packages that fill in the gaps.
 
 In this exercise, you'll use `pip`, a utility that accesses a popular Python package index named Python Package Index (PyPI).  Combining the two, you can find packages you need for just about any purpose imaginable.
 
@@ -34,7 +34,7 @@ We're interested in the installation instructions and example code.
 
 ### Step 3 - Use `pip` to install the `emoji` package
 
-Back in Visual Studio Code's terminal, enter the following command on Linux and macOS.
+Back in the Visual Studio Code terminal, enter the following command on Linux and macOS.
 
 ```bash
 pip install emoji
