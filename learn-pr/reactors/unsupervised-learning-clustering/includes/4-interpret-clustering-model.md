@@ -20,7 +20,7 @@ The output is:
 3 rows × 43 columns
 ***
 
-We can quickly see that cluster 2 encompasses fatty foods (high `Lipid_Tot_(g)` values). Clusters 0 and 1 have similar mean protein and lipid amounts. An easy-to-see differentiation between those clusters is their relative carbohydrate and sugar levels. The relative carbohydrate and sugar levels in cluster 1 are significantly higher than those in cluster 0.
+We can quickly see that cluster 2 encompasses fatty foods (high `Lipid_Tot_(g)` values). Clusters 0 and 1 have similar mean protein and lipid amounts. An easy-to-see differentiation between those clusters is their relative carbohydrate and sugar levels. The relative carbohydrate and sugar levels in cluster 1 are higher than those in cluster 0.
 
 We can look at these high-level differences in a little more detail by using the `describe()` method. Honestly, this is a little cumbersome because of the size of the DataFrame.
 
@@ -320,7 +320,7 @@ Find the `FoodGroup` value counts for clusters 1 and 2.
 
 ***
 
-Some of the entries in our clusters makes sense, and others look kind of like the contents of a grab bag. Part of the reason is that the k-means algorithm has to draw arbitrary boundaries between clusters. There will be a lot of entries in all clusters that are right on the edge and could belong to two (or more) clusters. To reduce some of this noise, we can sort these by distance from centroid of the respective clusters and look at the entries closest to the centroids.
+Some of the entries in our clusters make sense, and others look like the contents of a grab bag. Part of the reason is that the k-means algorithm has to draw arbitrary boundaries between clusters. There will be a lot of entries in all clusters that are right on the edge and could belong to two (or more) clusters. To reduce some of this noise, we can sort these by distance from centroid of the respective clusters and look at the entries closest to the centroids.
 
 ```python
 import numpy as np
