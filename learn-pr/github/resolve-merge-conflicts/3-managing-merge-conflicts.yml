@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.manage-merge-conflicts.3-managing-merge-conflicts
+uid: learn.github.merge-conflict-resolution.3-managing-merge-conflicts
 title:  Exercise - A guided tour of GitHub
 metadata:
   title:  Exercise - A guided tour of GitHub
-  description: Get started with GitHub in about an hour.
-  ms.date: 06/03/2020
+  description: Learn to settle overlapping commits across branches by using merge conflict resolution.
+  ms.date: 06/12/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
