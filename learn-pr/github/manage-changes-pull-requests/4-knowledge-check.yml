@@ -25,13 +25,13 @@ quiz:
       explanation: "Many projects protect important branches and require changes to be reviewed via pull request before approving."
     - content: "Your branch cannot be merged into `master` due to upstream changes made since you created it. Creating a pull request will let the other contributor know they need to pull their changes out so you can put yours in."
       isCorrect: true
-      explanation: "The etiquette for pull requests is for you to be sure your branch can be cleanly merged into the base before creating a pull request."
-  - content: "How can you ensure that pull requests for a given area of the repsoritory are not merged unless certain users or teams have approved?"
+      explanation: "This is not how pull requests work. Also, the etiquette is for you to be sure your branch can be cleanly merged into the base before creating a pull request."
+  - content: "How can you ensure that pull requests for a given area of the repository are not merged unless certain users or teams have approved?"
     choices:
     - content: "Clearly explain the pull request policy in `CONTRIBUTING.md`."
       isCorrect: false
       explanation: "While this file is a great way to explain your contribution policy, it does not automatically enforce anything."
-    - content: "Use a `CODEOWNERS` file."
+    - content: "Use a `CODEOWNERS` file and enable required reviews."
       isCorrect: true
       explanation: "A `CODEOWNERS` file enables you to assign users or teams as required reviewers using the same syntax as `.gitingore` files."
     - content: "Add a table mapping directory paths to required users in `SECURITY.md`."
@@ -44,7 +44,7 @@ quiz:
       explanation: "Contributors always appreciate when reviewers show an interest in getting their code merged."
     - content: "Leave single comments for each issue you come across, but do not change the code. For typos, include the correct spelling of the word as a reference. Approve the pull request if you trust the author to implement your suggestions."
       isCorrect: false
-      explanation: "If you feel the need to leave multiple comments, consider using a review. This will batch changes and commit everything at once. You should also only approve a pull request when it's ready to merge."
+      explanation: "You should only approve a pull request when it's ready to merge."
     - content: "Reject the pull request. We can't risk any bugs accidentally being merged into an important branch."
       isCorrect: false
       explanation: "If the problems in a pull request are minor, it is often worth working with the contributor to fix them so the other changes may be merged."

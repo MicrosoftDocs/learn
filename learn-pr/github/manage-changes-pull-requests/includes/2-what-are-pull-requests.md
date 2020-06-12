@@ -14,7 +14,7 @@ While working on a branch is great for individual developer productivity, it ope
 
 ## What is a pull request?
 
-A pull request is a mechanism used to communicate that changes from one branch are ready to be merged into another. They offer an opportunity for stakeholders to review and discuss the proposed changes in order to ensure that the code quality in the base branch is kept as high as possible.
+A pull request is a mechanism used to communicate that changes from one branch are ready to be merged into another. They offer an opportunity for stakeholders to review and discuss the proposed changes to ensure that the code quality in the base branch is kept as high as possible.
 
 ![A pull request](../media/2-pull-request.png)
 
@@ -23,9 +23,9 @@ A pull request is a mechanism used to communicate that changes from one branch a
 
 ### Author responsibilities
 
-The author of a pull request is the person who created the pull request. They are hoping to ultimately have the changes from the **compare** branch into the **base** branch. They are generally responsible for answering questions about the changes and applying feedback.
+The author of a pull request is the person who created the pull request. They're hoping to ultimately have the changes from the **compare** branch into the **base** branch. They're generally responsible for answering questions about the changes and applying feedback.
 
-Before creating a pull request, the author is responsible for ensuring the merge can succeed. This usually means that they have rebased their branch recently in order to confirm that the code builds with the latest base changes.
+Before creating a pull request, the author is responsible for ensuring the merge can succeed. This usually means that they've rebased their branch recently to confirm that the code builds with the latest base changes.
 
 ![Creating a pull request](../media/2-creating-pull-request.png)
 
@@ -33,15 +33,15 @@ Learn more about [Proposing changes to your work with pull requests](https://hel
 
 ### Reviewer responsibilities
 
-Reviewers may be assigned to review the pull request due to their expertise with or responsibility for the code in question. For example, there may be a database guru who reviews any database code. Or there might be a lead developer who reviews any code before it gets merged into `master`, regardless of where it's implemented.
+Reviewers may be assigned to review the pull request based on their expertise with or responsibility for the code in question. For example, there may be a database guru who reviews any database code. Or there might be a lead developer who reviews any code before it gets merged into `master` anywhere in the project.
 
 GitHub offers a visual experience for reviewing code that allows reviewers to see code changes in a *diff* view where changes are highlighted. They can then leave comments inline, suggest changes, or approve. Reviewer feedback is kept as part of the repository history so that changes and decisions can be easily traced within their original context.
 
 ![Reviewing a pull request](../media/2-reviewing-pull-request.png)
 
-As the name implies, reviewers are responsible for reviewing the changes. When feedback is minor, such as typos, reviewers may leave comments or edit the files directly to incorporate fixes. To recommend more substantial changes, a pull request should be opened against the author's branch.
+As the name implies, reviewers are responsible for reviewing changes. When feedback is minor, such as typos, reviewers may leave comments or edit the files directly to incorporate fixes. To recommend more substantive changes, a pull request should be opened against the author's branch.
 
-Reviewers may be automatically assigned to a pull request by using a [CODEOWNERS file](https://help.github.com/github/creating-cloning-and-archiving-repositories/about-code-owners?azure-portal=true). This file uses the same path syntax as a `.gitignore` file to map parts of the codebase to users or teams responsible for reviewing their changes.
+Reviewers may be automatically assigned to a pull request by using a [CODEOWNERS file](https://help.github.com/github/creating-cloning-and-archiving-repositories/about-code-owners?azure-portal=true). This file uses the same path syntax as `.gitignore` to map parts of the codebase to users or teams responsible for reviewing their changes. Learn how to [make these reviews mandatory](https://help.github.com/github/administering-a-repository/enabling-required-reviews-for-pull-requests?azure-portal=true).
 
 Learn more about [Reviewing changes in pull requests](https://help.github.com/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests?azure-portal=true).
 
@@ -49,6 +49,6 @@ Learn more about [Reviewing changes in pull requests](https://help.github.com/gi
 
 While not mandatory, pull requests may be assigned to a specific user. That person takes responsibility for determining if and when the pull request is merged. This may require them to corral stakeholders into agreeing whether the merge should be approved.
 
-Once a pull request has been merged, it is recommended that you delete the branch it was based on. Allowing the branch to linger can result in headaches down the road. Remember that all branch history will have been merged into the base branch, so its commits can always be accessed later on.
+Once a pull request has been merged, it's recommended that you delete the branch it was based on. Allowing the branch to linger can result in headaches down the road. Remember that all branch history will have been merged into the base branch, so its commits can always be accessed later on.
 
 Learn more about [Incorporating changes from a pull request](https://help.github.com/github/collaborating-with-issues-and-pull-requests/incorporating-changes-from-a-pull-request?azure-portal=true).
