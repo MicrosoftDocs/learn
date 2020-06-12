@@ -24,7 +24,3 @@ To provision Apple devices (iOS and macOS devices), you can use Apple Business M
 ## Provisioning Android devices
 
 To provision corporate-owned Android devices, you can use Android Enterprise **zero-touch** program. When the device is started, it checks whether it has been assigned an enterprise configuration. If it has, then it starts the fully managed device provisioning process. By using zero-touch, you can have large number of decvices provisioned and enrolled without ever touching them. 
-
-![Diagram of ](../media/intro-to-endpoint-manager-02.png)
-
-
