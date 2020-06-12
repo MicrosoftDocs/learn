@@ -27,7 +27,7 @@ This exercise will use the default audio format for output but you can investiga
 
 ::: zone pivot="csharp"
 
-## Using Visual Ctudio codespaces
+## Using Visual Studio codespaces
 
 > [!NOTE]
 > At this time, Safari is not a supported browser for the preview of Visual Studio Codespaces.
@@ -145,7 +145,7 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
 1. You will be prompted to enter some text.  Enter a phrase of your choosing and press Enter.
 1. The computer will read back the text to you in the default voice.
 
-## Using visual studio code locally
+## Using Visual Studio Code locally
 
 If you want to run the code on your local computer and not use VS Code online, ensure you have the latest version of [Visual Studio Code](https://code.visualstudio.com/) installed.
 
@@ -169,7 +169,7 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
 
 ::: zone pivot="python"
 
-## Using visual studio codespaces
+## Using Visual Studio Codespaces
 
 1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/).
 
@@ -236,7 +236,7 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
 1. Select the Run Python File in Terminal (green arrow) or right-click in the Python file editor and select Run Python File in Terminal.
 1. Type some text when you're prompted. The synthesized audio is played using the default voice.
 
-## Using python or visual studio code locally
+## Using Python or Visual Studio Code locally
 
 If you do not already have Python and Visual Studio Code installed on your local computer. Follow these instructions to get your environment ready for the exercise.
 
