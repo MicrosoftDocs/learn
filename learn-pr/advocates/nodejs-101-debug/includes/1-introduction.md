@@ -6,7 +6,7 @@ As a developer at the enormous online retailer called, “Tailwind Traders”, y
 
 In this module, you’ll learn how to effectively debug Node.js programs. The faster you can find and identify bugs, the faster you can get your code to a working state and the less time you’ll spend scratching your head wondering why your code worked 5 seconds ago, but doesn’t work now.
 
-By the end of this module, you’ll be able to:
+In this module, you will:
 
 * Use VS Code debugger with a Node.js program.
 * Create breakpoints and run your code step by step to find issues.
@@ -14,7 +14,6 @@ By the end of this module, you’ll be able to:
 * Rewind the call stack to find the source of an exception.
 
 By the end of this module, you’ll be able to find bugs effectively in your Node.js programs. And you won't need to rely only on `console.log` anymore.
-
 
 <!-- 
 OUTLINE
