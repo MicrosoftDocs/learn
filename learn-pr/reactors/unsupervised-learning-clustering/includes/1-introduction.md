@@ -1,6 +1,6 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-Until now, we have only examined *supervised* machine learning, in which we provide labeled training data for the algorithm. The first *unsupervised* machine learning algorithm that we'll deal with is k-means clustering. We provide the algorithm with a set of $n$ data points and tell the algorithm that we want that data partitioned into $k$ clusters that provide the best separation between clusters.
+Until now, we've examined only *supervised* machine learning, in which we provide labeled training data for the algorithm. The first *unsupervised* machine learning algorithm that we'll deal with is k-means clustering. We provide the algorithm with a set of $n$ data points and tell the algorithm that we want that data partitioned into $k$ clusters that provide the best separation between clusters.
 
 The k-means algorithm randomly assigns $k$ *centroids* (or geometric centers of subsets of the dataset as measured through [Euclidean distance](http://mathworld.wolfram.com/Distance.html?azure-portal=true)) to the data. The algorithm then iteratively moves those centroids around the feature space until it converges on an arrangement of the centroids that minimizes the variance within the clusters.
 

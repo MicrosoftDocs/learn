@@ -7,7 +7,7 @@ To see this in action, open the program Sec2-1-k-Means.py in the GitHub reposito
 
 ### Try it yourself
 
-Run Sec2-1-k-Means.py by using several different numbers for *k* (including those indicated by the WCSS graph). Do they provide intuitive groupings of food groups?
+Run Sec2-1-k-Means.py by using several different numbers for $k$ (including those indicated by the WCSS graph). Do they provide intuitive groupings of food groups?
 
 **SARAH** TBD - add hint?
 
