@@ -6,7 +6,7 @@ Using the techniques you learned in previous modules, create a new folder for yo
 
 Inside that folder, create a file for this exercise.  For example, you might create a file named `exercise1.py`.
 
-When you're instructed to execute your code, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow, or you can use a command in the integrated terminal using techniques we learned about in previous modules.
+When you're instructed to run your code, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow. Or you can use a command in the integrated terminal by using techniques we learned about in previous modules.
 
 ### Step 2 - Import the `random` module from the Python standard library
 
@@ -18,30 +18,30 @@ Add the following `import` statement to your code file.
 import random
 ```
 
-### Step 3 - Type the word `random` and the member access operator to view Intellisense
+### Step 3 - Type the word `random` and the member access operator to view IntelliSense
 
-Even without reading the documentation for the `random` module closely, you can explore its functions, constants, and service by using Intellisense in Visual Studio Code.  Intellisense will pop up as you type in the code editor providing contextual prompts that display your best options.  You can navigate by typing the first letters of the option you want to use, or you can navigate by selecting the <kbd>up arrow</kbd> and <kbd>down arrow</kbd>.  The highlighted option will display documentation to the right side in a separate pop-up window.  Once you find the option you want to use, you can select the <kbd>enter</kbd> or <kbd>tab</kbd> keys to automatically type the remainder of the word for you.
+Even without reading the documentation for the `random` module closely, you can explore its functions, constants, and service by using IntelliSense in Visual Studio Code.  IntelliSense will pop up as you type in the code editor providing contextual prompts that display your best options.  You can navigate by typing the first letters of the option you want to use, or you can navigate by selecting the <kbd>up arrow</kbd> and <kbd>down arrow</kbd>.  The highlighted option will display documentation to the right side in a separate pop-up window.  After you find the option you want to use, you can select the <kbd>enter</kbd> or <kbd>tab</kbd> keys to automatically type the remainder of the word for you.
 
-To invoke Intellisense for the `random` module, type the next line of code in the code listing below.  Pause after you type the member access operator `.` after the identifier `random`.
+To invoke IntelliSense for the `random` module, type the next line of code in the code listing below.  Pause after you type the member access operator `.` after the identifier `random`.
 
 ```python
 import random
 roll = random.
 ```
 
-If you stopped typing at the `.` symbol, you should see the Intellisense window display all of the functions available from the `random` module.
+If you stopped typing at the `.` symbol, you should see the IntelliSense window display all of the functions available from the `random` module.
 
-You can learn a lot about the functionality of a module by merely perusing its functions.  Locate the `randint` function by selecting the <kbd>up arrow</kbd> and <kbd>down arrow</kbd> keys.  Once you find it, what you see in your copy of Visual Studio Code should match the following.
+You can learn a lot about the functionality of a module by merely perusing its functions.  Locate the `randint` function by selecting the <kbd>up arrow</kbd> and <kbd>down arrow</kbd> keys.  After you find it, what you see in your copy of Visual Studio Code should match the following.
 
-![Screenshot of Visual Studio Code Intellisense locating the random module's ran dint function.](../media/3-exercise-include-1.png)
+![Screenshot of Visual Studio Code IntelliSense locating the random module's ran dint function.](../media/3-exercise-include-1.png)
 
 Now select the <kbd>enter</kbd> or <kbd>tab</kbd> keys to automatically type the remainder of the function name `randint` for you.
 
-Next, type the opening parenthesis symbol `(` to display Intellisense again.  This time, it displays the fact that the `randint` function takes two input arguments that define the range, "including both endpoints."  
+Next, type the opening parenthesis symbol `(` to display IntelliSense again.  This time, it displays the fact that the `randint` function takes two input arguments that define the range, "including both endpoints."  
 
-![Screenshot of Visual Studio Code Intellisense displaying input argument help for ran dint function.](../media/3-exercise-include-2.png)
+![Screenshot of Visual Studio Code IntelliSense displaying input argument help for ran dint function.](../media/3-exercise-include-2.png)
 
-When defining a range of values in programming, "inclusive" usually means that the value you supply is in bounds.  "Exclusive" means the value you supply is out of bounds.  So, if we want a random value between 1 and 10, short form Intellisense documentation says we can define those by passing in the values `1` and `10` as arguments.
+When you're defining a range of values in programming, "inclusive" usually means that the value you supply is in bounds.  "Exclusive" means the value you supply is out of bounds.  So, if we want a random value between 1 and 10, short form IntelliSense documentation says we can define those by passing in the values `1` and `10` as arguments.
 
 So, the entire line of code should match the following code listing.
 
@@ -59,12 +59,12 @@ roll = random.randint(1, 10)
 print(f'You rolled {roll}.')
 ```
 
-When you execute the code, you should see the following output (the number will be random).
+When you run the code, you should see the following output (the number will be random).
 
 ```output
 You rolled 3.
 ```
-The number will likely change each time you execute the program.  
+The number will likely change each time you run the program.  
 
 
 ### Step 5 - Modify your code to create an alias for the name of the module
@@ -97,11 +97,11 @@ roll = dice.randint(1, 10)
 print(f'You rolled {roll}')
 ```
 
-When you execute the program, it should still work.
+When you run the program, it should still work.
 
 ## Recap
 
 - Use the `import` statement to include a package from the Python standard library in your program.  All of the module's functionality is available through the use of the member access operator `.`.
-- In Visual Studio Code, the Intellisense feature can show you the members (functions, constants, and services) that are available after typing the member access operator.
+- In Visual Studio Code, the IntelliSense feature can show you the members (functions, constants, and services) that are available after typing the member access operator.
 - Use the `import ... as` statement to create an alias for the module if it will help describe its role in your software system.
 - The `random` package provides a way to generate a random value.  This will come in handy as we build more interesting code examples in upcoming Microsoft Learn modules.
