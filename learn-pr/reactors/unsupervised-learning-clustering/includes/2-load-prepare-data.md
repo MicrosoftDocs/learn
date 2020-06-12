@@ -1,4 +1,4 @@
-To illustrate *k*-means clustering in action, we'll use the familiar [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/?azure-portal=true) dataset that you used in Sections 1.1 through 1.3. (Note that the path name is case sensitive.)
+To illustrate k-means clustering in action, we'll use the familiar [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/?azure-portal=true) dataset that you used in sections 1.1 through 1.3. Note that the path name is case sensitive.
 
 ```python
 import pandas as pd
@@ -25,7 +25,7 @@ The output is:
 5 rows × 54 columns
 ***
 
-Because the *k*-means algorithm works with the Euclidean distance between data points, we need to once again separate out our descriptive from our numeric features (while saving the descriptive features for later use).
+The k-means algorithm works with the Euclidean distance between data points. So, we need to once again separate descriptive features from numeric features (while saving the descriptive features for later use).
 
 ```python
 desc_df = df.iloc[:, [0, 1, 2]+[i for i in range(50,54)]]
@@ -75,7 +75,7 @@ The output is:
 5 rows × 46 columns
 ***
 
-The correlations that we have seen before in this dataset are still an issue here.
+The correlations that we've seen before in this dataset are still a problem here.
 
 |  | column | row | corr |
 | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ The correlations that we have seen before in this dataset are still an issue her
 | 5 | Vit_D_µg | Vit_D_IU | 1 |
 | 6 | Vit_D_IU | Vit_D_µg | 1 |
 
-Before dropping anything from the `df` `DataFrame`, however, let's take a quick look at these correlations visually. Let's start with `Folate_Tot_(µg)` and `Folate_DFE_(µg)`.
+Before we drop anything from the `df` DataFrame, let's take a quick look at these correlations visually. Let's start with `Folate_Tot_(µg)` and `Folate_DFE_(µg)`.
 
 ```python
 from matplotlib import pyplot as plt
@@ -107,11 +107,11 @@ The output is:
 This is a dramatic correlation!
 
 > [!NOTE]
-> Despite specifying Latin_1 encoding when we read in the dataset from the CSV file, character corruption can still occur. If the plt.scatter call above fails, try this code instead: `plt.scatter(df['Folate\_Tot\_(Âµg)'], df['Folate\_DFE\_(Âµg)'])`
+> Despite specifying Latin_1 encoding when we read in the dataset from the CSV file, character corruption can still happen. If the preceding `plt.scatter` call fails, try this code instead: `plt.scatter(df['Folate\_Tot\_(Âµg)'], df['Folate\_DFE\_(Âµg)'])`
 
 ### Try it yourself
 
-In the code cell below, run a scatterplot of another correlative pair of features from this dataset. 
+In the following code cell, run a scatterplot of another correlative pair of features from this dataset. 
 
 <br />
 
@@ -119,7 +119,7 @@ In the code cell below, run a scatterplot of another correlative pair of feature
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  You only need to run the `plt.scatter` function with new parameters.)
+  You only need to run the `plt.scatter` function with new parameters.
   
   For example:
   
@@ -141,7 +141,7 @@ In the code cell below, run a scatterplot of another correlative pair of feature
 
 ***
 
-Let's drop `Folate_DFE_(µg)`, `Vit_A_RAE`, and `Vit_D_IU` from `df` in order to eliminate these problematic correlations. The *k*-means algorithm also doesn't work with `NaN` values, so we will also have to drop those.
+Let's drop `Folate_DFE_(µg)`, `Vit_A_RAE`, and `Vit_D_IU` from `df` to eliminate these problematic correlations. The k-means algorithm also doesn't work with `NaN` values, so we'll also have to drop those.
 
 ```python
 nutr_df.drop(['Folate_DFE_(µg)', 'Vit_A_RAE', 'Vit_D_IU'],
@@ -168,9 +168,11 @@ The output is:
 ***
 
 > [!NOTE]
-> Again, if the read_csv() function did not read in the µ (mu) symbol correctly and the drop() method call above fails, try this code instead: `nutr_df.drop(['Folate\_DFE\_(Âµg)', 'Vit\_A\_RAE', 'Vit\_D\_IU'], inplace=True, axis=1)`
+> If the `read_csv()` function didn't read in the µ (mu) symbol correctly and the preceding `drop()` method call fails, try this code instead: `nutr_df.drop(['Folate\_DFE\_(Âµg)', 'Vit\_A\_RAE', 'Vit\_D\_IU'], inplace=True, axis=1)`
 
-Because the *k*-means algorithm will be calculating the Euclidean distances between data points and centroids, we need to ensure that all of the numeric features in our dataset use compatible units; we don't want to try and calculate distances between units of mass like grams and units of energy like kilocalories. Just as we did with principal component analysis (PCA) in Section 1.2, we will use scikit-learn's [`StandardScaler()` function](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html?azure-portal=true) to center the data around each feature's mean and transform each feature to have a standard deviation of 1.
+Because the k-means algorithm will calculate the Euclidean distances between data points and centroids, we need to ensure that all of the numeric features in our dataset use compatible units. We don't want to try to calculate distances between units of mass like grams and units of energy like kilocalories. 
+
+Just as we did with principal component analysis (PCA) in section 1.2, we'll use scikit-learn's [`StandardScaler()` function](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html?azure-portal=true). That function will center the data around each feature's mean and transform each feature to have a standard deviation of 1.
 
 ```python
 from sklearn.preprocessing import StandardScaler
