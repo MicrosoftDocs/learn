@@ -4,9 +4,9 @@ Before we begin to work with the Python standard library, let's get a clear unde
 
 The Python standard library is a vast collection of functions, types, and services that address a wide array of programming needs.  These are not part of the Python language, but the functions are distributed with the Python interpreter, and are available to every Python program.
 
-The Library is split up into modules.  Some modules are *built-in*, meaning you can start using them without notifying the Python compiler ahead of time.  Other modules must be imported first.
+The library is split up into modules.  Some modules are *built-in*, meaning you can start using them without notifying the Python compiler ahead of time.  Other modules must be imported first.
 
-Some of the code in those modules is written in the C programming language, which can address a lower-level set of operating system and hardware functionality than Python.  The developers of Python use this low-level access to the computer's memory, processor, file system, operating system, and so on, to implement efficient features.  Since C is a lower-level programming language, it is powerful, but also more complicated than Python, often requiring a significant amount of code to accomplish tasks that are trivial in Python.  By packaging up C code and making it available to Python, you get the best of both worlds.
+Some of the code in those modules is written in the C programming language, which can address a lower-level set of operating system and hardware functionality than Python.  The developers of Python use this low-level access to the computer's memory, processor, file system, operating system, and so on, to implement efficient features.  Because C is a lower-level programming language, it is powerful, but also more complicated than Python. It often requires a significant amount of code to accomplish tasks that are trivial in Python.  By packaging up C code and making it available to Python, you get the best of both worlds.
 
 ## What is a module?
 
@@ -32,7 +32,7 @@ For a complete listing of modules in the Python standard library, see [The Pytho
 
 ### Built-in functions versus importing modules
 
-There's some debate as to the exact meaning of a built-in function, but generally speaking, it's a function that has been built into the Python interpreter.  They are usually functions that are used so often that it would be laborious to import them each time you need them.  For example, given that almost every Python program needs to `print()` something, it makes sense to include that as a built-in function.
+There's some debate as to the exact meaning of a built-in function. Generally speaking, it's a function that has been built into the Python interpreter. They are usually functions that are used so often that it would be laborious to import them each time you need them.  For example, given that almost every Python program needs to `print()` something, it makes sense to include that as a built-in function.
 
 Other features and functions are useful, but are only needed occasionally.  In these cases, you can tell the Python compiler that you expect to use them in your program by using the `import` statement in an exercise in this module.
 
@@ -47,11 +47,11 @@ First, you do not need to learn it all.  There's no way you can read all the sta
 
 Second, you should start by searching for a solution to the specific problem you're trying to solve. While you may not have all the details worked out in your mind, you should be able to formulate a good set of keywords to describe the problem.
 
-Once you can clearly state your problem, the next step is to become a detective.  You'll turn to search engines to look for candidate solutions.  It's likely that there are a dozen different ways to solve your problem.  You may spend a few minutes, hours, or even a day reviewing the approaches to solving the problem.  And it's likely that some of those approaches will require modules from the Python standard library, third-party packages, or both.
+After you can clearly state your problem, the next step is to become a detective.  You'll turn to search engines to look for candidate solutions.  It's likely that there are a dozen different ways to solve your problem.  You may spend a few minutes, hours, or even a day reviewing the approaches to solving the problem.  And it's likely that some of those approaches will require modules from the Python standard library, third-party packages, or both.
 
 You might wonder if it's *cheating* to search for the solution.  Are you somehow less of a programmer for not knowing everything?  Not at all.  Everyone does it; especially experienced professional developers.  There's both a rich community and a proud tradition of developers helping other developers online.  No one can know everything.  
 
-Admittedly, you should understand the Python language well, and if you copy code from blogs, articles, or videos, then you should spend time understanding what it does and figure out how to incorporate it into your work as if it were your own.  But you should never feel guilty about *stealing* someone's approach to solving a given problem.  That's why they posted it on the internet!
+Admittedly, you should understand the Python language well. If you copy code from blogs, articles, or videos, then you should spend time understanding what it does and figure out how to incorporate it into your work as if it were your own. But you should never feel guilty about *stealing* someone's approach to solving a given problem.  That's why they posted it on the internet!
 
 ## Recap
 
