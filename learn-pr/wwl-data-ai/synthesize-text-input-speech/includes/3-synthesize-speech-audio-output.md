@@ -192,7 +192,7 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
 1. Once the codespace is available, either select the title, or select the three vertical dots in the lower right of the codespace box and choose **Connect**.
 1. Visual Studio Codespaces will now synchronize the GitHub repo and run the scripts that were present in the devcontainer.  This is required to set up the proper Python environment, in this case 3.5.3.
 1. If you get any messages about installing additional extensions or components, choose to do so.
-1. Refresh teh browser window to ensure all settings are applied.
+1. Refresh the browser window to ensure all settings are applied.
 1. Expand the synthesize_text_to_speech folder
 1. Expand the python folder
 1. Right-click the python folder and choose **New File** and name it texttospeech.py
