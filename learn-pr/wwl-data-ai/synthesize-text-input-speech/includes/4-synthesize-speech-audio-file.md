@@ -4,7 +4,7 @@ The file output will be in .wav format so you can play the audio on any device t
 
 ::: zone pivot="csharp"
 
-## Using visual studio codespaces
+## Using Visual Studio Codespaces
 
 1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/)
 
@@ -184,7 +184,7 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
 1. Type some text when you're prompted.
 1. A new file will be created at the root of your application folder. You can open the file with an audio player to hear the contents that were generated from the text you entered.
 
-## Using python or visual studio code locally
+## Using Python or Visual Studio Code locally
 
 If you do not already have Python and Visual Studio Code installed on your local computer. Follow these instructions to get your environment ready for the exercise.
 
