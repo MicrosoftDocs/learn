@@ -3,7 +3,7 @@ uid: learn.languages.python-standard-library.exercise-pip
 title: Exercise - Install a third-party package using pip
 metadata:
   title: Exercise - Install a third-party package using pip
-  description: Use the pip utility to install a package for use in your program.
+  description: Use the pip utility to install a third-party package for use in your program.
   ms.date: 02/19/2020
   author: bobtabor-msft
   ms.author: rotabor
