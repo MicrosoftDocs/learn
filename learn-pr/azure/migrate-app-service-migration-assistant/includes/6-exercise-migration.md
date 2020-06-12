@@ -40,7 +40,7 @@ First, click the link at the end of the first sentence "Switch user directory". 
 | --- | ----------- |
 | Subscription | Select "Concierge Subscription" |
 | Resource Group | Select the "Use Existing" option.  This should automatically select an existing Resource Group prefixed with the word "learn" |
-| Destination Site Name | Choose a valid destination site name. |
+| Destination Site Name | Enter a valid destination site name. |
 | App Service Plan | Select the "Use exiting" option. This will automatically select "Learn-Exercise-Plan", which was created for you at the beginning of the exercise |
 | Azure Migrate Project | Leave this field empty |
 
