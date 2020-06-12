@@ -13,5 +13,5 @@ durationInMinutes: 2
 interactive: "bash"
 azureSandbox: true
 content: |
-  [!include[](includes/4-use-built-in-debugger)]
+  [!include[](includes/4-use-built-in-debugger.md)]
   

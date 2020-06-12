@@ -2,7 +2,7 @@
 uid: learn.azure.nodejs.debug.3-run-your-code-step-by-step
 title: Run your Node.js code step by step
 metadata:
-  title: Run your Nodej.js code step by step
+  title: Run your Node.js code step by step
   description: Learn what is a breakpoint and how to run your code step by step using Node.js built-in debugger.
   author: sinedied
   ms.author: yolasors
@@ -10,5 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
+interactive: "bash"
+azureSandbox: true
 content: |
   [!include[](includes/3-run-your-code-step-by-step.md)]
