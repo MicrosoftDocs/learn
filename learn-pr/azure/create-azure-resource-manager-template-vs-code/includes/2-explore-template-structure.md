@@ -45,15 +45,6 @@ Some other benefits are:
 
 When writing an ARM template, you need to understand all the parts that make up the template and what they do. The template files are made up of the following elements:
 
-- Schema
-- ContentVersion
-- apiProfile
-- Parameters
-- Variables
-- Functions
-- Resources
-- Outputs
-
 The **schema** section is a required section that defines the location of the JSON schema file that describes the structure of JSON data. The version number you use depends on the scope of the deployment and your JSON editor.
 
 The **contentVersion** section is a required section that defines the version of your template (such as 1.0.0.0). You can use this value to document significant changes in your template to ensure you're deploying the right template.
@@ -231,7 +222,7 @@ And then use the parameter in the resource definition. Notice the syntax is ```[
 
 When you execute the template, you can give a value for the parameter. Notice the last line in the command below.
 
-```json
+```azurecli
 templateFile="azuredeploy.json"
 az deployment group create \
   --name testdeployment1 \
@@ -239,7 +230,7 @@ az deployment group create \
   --parameters storageAccountType=Standard_LRS
 ```
 
-## What are template Outputs
+## What are template outputs
 
 In the *outputs* section of your template, you can specify values that will be returned after a successful deployment. Here are the elements that make up the outputs section.
 
@@ -278,7 +269,7 @@ As an example, to output the Azure storage account's endpoints, your output sect
 
 Notice the ```reference``` part of the expression. This function gets the runtime state of the storage account.
 
-## How can I test my template
+## How can I plan my template
 
 Before deploying a template and making changes to your infrastructure, it is recommended that you preview the changes that executing the template will make. Azure Resource Manager provides the *what-if* operation to let you see how resources will change if you deploy the template. More information on what-if can be found in the [documentation](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-cli&azure-portal=true).
 
