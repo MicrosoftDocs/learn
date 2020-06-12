@@ -1,6 +1,6 @@
 ## Create a new resource
 
-The first action you need to take in order to create your cluster is to povision it within Azure. Provisioning an AKS cluster in Azure can be done in the Azure portal or through the Azure CLI.
+The first action you need to take in order to create your cluster is to provision it within Azure. Provisioning an AKS cluster in Azure can be done in the Azure portal or through the Azure CLI.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -25,7 +25,7 @@ In this screen, you'll notice there are several tabs at the top. Each one of the
 | **Node size** | Select **Change size**, then select **B2s** |
 | **Node count** | 3 |
 
-    :::image type="content" source="../media/3-node-size.png" alt-text="Change node size via Portal":::
+:::image type="content" source="../media/3-node-size.png" alt-text="Change node size via Portal":::
 
 The final configuration will be similar to this:
 
