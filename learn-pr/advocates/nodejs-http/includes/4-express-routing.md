@@ -29,6 +29,7 @@ Now that we know about more about what makes out a URL, how does Express help yo
 - **routing parameters**, a routing parameter in a URL expresses that you have a wish to access a specific resource. Looking at the route `/orders/1/items/2`, the routing parameters are `1` and `2`. The `1` signals we want a specific order with the unique key `1`. The `2` asks for a specific order item with the unique key `2`. By expressing yourself this way, you are able to return a specific resource rather than all resources of a specific type.
 - **query parameters**, the query part of the URL is set of key-value pairs that happens after the `?` character. Looking at the following route `/products?page=1&pageSize=20` you have the query parameters `page` and `pageSize`. These two parameters work in tandem to help you filter down the size of returned response. Imagine if the route `/products` read up 2 million records from a database. That answer would be huge and it would also take a long time for the user to see the rendered response. This is a poor user experience not to mention a strain on the app itself. A better approach is to utilize query parameters to limit the size of response.
 - **general pattern management**, so far you've seen simpler routes like `/products` and `/orders/1/items/2`. There could be also be other patterns like `**`, which could mean *catch all*. You would normally define such a route to ensure that unexpected requests are handled in graceful way and thereby ensure the user has a great experience even if they mistype routes for example.
+- **read and write**, HTTP has different verbs like, GET and POST for example. These verbs represent different intentions like that you want to read or write data. Express has specific methods that let's associate a piece of code to a specific URL fragment and HTTP Verb. You've seen so far how Express is able to respond with data when a request asks for it. Express can also handle when the client is trying to write data. It's relatively straight forward to instruct Express to handle incoming data.
 
 ### Routing parameters
 
@@ -69,3 +70,36 @@ Imagine you would create a request with the route `/products?page=1&pageSize=20`
   pageSize: 20
 }
 ```
+
+### Read and write
+
+So far you've seen example of requests being made towards a web application when the client wants to read data. It roughly looks like this using the `get()` method:
+
+```javascript
+app.get('/<path>', (req, res) => {
+  // handling the request
+})
+```
+
+To handle a client sending data to the web application you need to configure Express. You configure Express differently depending on the format of the incoming data. If you for example expect the incoming data to come from an HTML form you would configure it one way. If the data is of type JSON you would configure it in another way. Regardless of the data format there are some common steps namely the following:
+
+1. Import the library `body-parser` (it's installed with Express)
+
+   ```javascript
+   let bodyParser = require('body-parser');
+   ```
+
+1. Configure Express to parse the incoming data:
+
+   ```javascript
+   app.use(bodyParser.json({ extended: false }));
+   ```
+
+   Above the `bodyParser()` function is passed to the Express instance by calling `app.use()`. Note also how the `bodyParser` calls `.json()`, this determines how the incoming data will be parsed. In this case it's being parsed as JSON but can be parsed to some other format. What the body parser function will do is to listen to all the incoming data is it's being streamed a few bytes at a time. Once data is done being transmitted it's placed on the `body` property of the request object.
+1. Handle the request, to handle an incoming request there are two different methods on the Express instance you could be using namely `post()` or `put()`. Both of these methods are capable of handling a request but `post()` is usually used to express that you want to create a resource. `put()` on the other hand is used to convey that a resource should be updated using the incoming data. Here's an example:
+
+   ```javascript
+   app.post('/<path>', (req, res) => {
+     console.log('req.body', req.body) // contains incoming data
+   })
+   ```

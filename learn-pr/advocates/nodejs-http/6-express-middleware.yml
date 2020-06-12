@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-http.8-express-middleware
+uid: learn.node-http.6-express-middleware
 title: Express middleware
 metadata:
   title: Express middleware
@@ -9,6 +9,6 @@ metadata:
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
-  [!include[](includes/8-express-middleware.md)]
+  [!include[](includes/6-express-middleware.md)]
