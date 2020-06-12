@@ -220,7 +220,7 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
    The following screenshot shows the menu location of the **Settings** item.
 
-   :::image type="content" source="../media/9-intellij-open-settings.png" alt-text="Screenshot of IntelliJ IDEA File menue with the Settings item highlighted." loc-scope="third-party":::
+   :::image type="content" source="../media/9-intellij-open-settings.png" alt-text="Screenshot of IntelliJ IDEA File menu with the Settings item highlighted." loc-scope="third-party":::
 
 1. The **Settings** dialog will open. Select **Plugins** on the left, search `Azure Toolkit for IntelliJ` in plugin marketplace.
 
