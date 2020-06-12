@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-app-service-migration-assistant.exercise-assessment
-title: Exercise - Assess an on premises ASP.NET web application
+title: Exercise - Assess an on-premises ASP.NET web application
 metadata:
-  title: Exercise - Assess an on premises ASP.NET web application
+  title: Exercise - Assess an on-premises ASP.NET web application
   description: Use the Azure App Service Migration Assistant to perform an assessment.
   ms.date: 05/21/2020
   author: bobtabor-msft
