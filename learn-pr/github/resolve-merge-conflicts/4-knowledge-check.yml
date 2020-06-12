@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following statements about automatic merges is **false**?"
+  - content: "Which of the following statements about merges is **false**?"
     choices:
-    - content: "They happen when the base branch file being changed has not been added or changed since the compare branch was last rebased."
+    - content: "Files added on the compare branch can be merged into the base branch if they do not yet exist there."
       isCorrect: false
-      explanation: "These edits can be automatically merged."
-    - content: "They happen when the changed lines in a file have not been changed since the compare branch was last rebased, even if other lines were changed."
+      explanation: "These adds can be merged."
+    - content: "Changes to lines of code on the compare branch can be merged if those same lines have not changed on the base branch since the compare branch was last rebased."
       isCorrect: false
-      explanation: "These edits can be automatically merged."
-    - content: "When they happen, it ensures that your changes did not break the build."
+      explanation: "These edits can be merged."
+    - content: "When a merges completes successfully, it ensures that your changes did not break the build."
       isCorrect: true
       explanation: "This statement is incorrect. It's possible that the combination of your automatically merged changes, when combined with recent base branch changes, could produce a codebase that does not build. It's a best practice to rebase and test immediately before merging."
   - content: "Why are merge conflicts bad?"
     choices:
     - content: "The base branch becomes unstable until the conflicts are resolved. This means any builds probably won't succeed."
       isCorrect: false
-      explanation: "When a merge conflict happens, the merge is rejected and the base branch is unchanged. The branch developer will then merge the differences in their branch before retrying the upstream merge."
+      explanation: "When a merge conflict happens, the merge is rejected and the base branch is unchanged. The branch developer will then merge the differences into their branch before retrying the upstream merge."
     - content: "This is a trick question. Merge conflicts are not bad; they're an inevitable part of distributed version control."
       isCorrect: true
-      explanation: "As projects scale, the probablity of multiple people changing the same files grows. Merge conflicts are raised to avoid code being unintentionally overwritten."
+      explanation: "As projects scale, the probability of multiple people changing the same files grows. Merge conflicts are raised to avoid code being unintentionally overwritten."
     - content: "Merge conflicts are embarrassing for the offending developer because everyone will think they were careless."
       isCorrect: false
       explanation: "Every developer has encountered merge conflicts at some point because there are many ways they can happen. For example, the base branch may change after you create your pull request."
   - content: "What is the best way to avoid most complex merge conflicts?"
     choices:
-    - content: "Regularly rebase the base branch onto your branch."
+    - content: "Regularly rebase your branch."
       isCorrect: true
       explanation: "You may need to resolve conflicts each time, but they should be smaller and more straightforward."
     - content: "Only rebase the base branch onto your branch immediately before creating a pull request."
