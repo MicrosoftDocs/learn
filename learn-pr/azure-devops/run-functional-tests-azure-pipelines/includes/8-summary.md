@@ -31,6 +31,7 @@ If you're interested in testing UI by using Selenium, check out these resources 
 * [Selenium IDE](https://www.seleniumhq.org/selenium-ide?azure-portal=true)
 * [UI testing by using Selenium](https://docs.microsoft.com/azure/devops/pipelines/test/continuous-test-selenium?view=azure-devops&azure-portal=true)
 * [UI testing considerations](https://docs.microsoft.com/azure/devops/pipelines/test/ui-testing-considerations?view=azure-devops&tabs=mstest&azure-portal=true)
+* [Use WebDriver (Chromium) for test automation](https://docs.microsoft.com/microsoft-edge/webdriver-chromium?azure-portal=true)
 
 ## Improve code quality by using Azure Test Plans
 
