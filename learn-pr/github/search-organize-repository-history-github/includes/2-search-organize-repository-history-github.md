@@ -23,9 +23,9 @@ The search results are comprehensive, and include everything from code to issues
 > [!NOTE]
 > The filter clause `is:pr` filters out issues returned from the issues/pull requests store. Some filter clauses, such as `is:pr`, are only supported by certain search providers and ignored by others. For example, the code search provider doesn't support that clause, so it will ignore it and return the same code results either way.
 
-To craft a sophisticated global search, try the [advanced search](https://github.com/search/advanced?azure-portal=true).
+In our scenario, using the global search scoped to the current repository is a good way to find code and commits that mention the term "sidebar". You will also likely get hits for issues and pull requests, although they're not as easy to filter further in the global search results view.
 
-In our scenario, using the global search scoped to the current repository is a good way to find code and commits that mention the term "sidebar". You will also likely get hits for issues and pull requests, although they're not a easy to work with in the global search results.
+To craft a complex global search, try the [advanced search](https://github.com/search/advanced?azure-portal=true).
 
 ### Context search
 
@@ -52,7 +52,7 @@ Learn more about [Understanding the search syntax](https://help.github.com/en/gi
 
 ## What is git blame?
 
-Despite its ominous name, `git blame` is a command that displays the commit history for a file. It makes it easy for you to see who made what changes and when. This makes it a lot easier to track down others who have worked on a file in order to seek out their input or participation. 
+Despite its ominous name, `git blame` is a command that displays the commit history for a file. It makes it easy for you to see who made what changes and when. This makes it a lot easier to track down other people who have worked on a file in order to seek out their input or participation. 
 
 > [!NOTE]
 > Some Git systems alias `git praise` onto `git blame` to avoid the implication of judgment.
@@ -61,13 +61,13 @@ Despite its ominous name, `git blame` is a command that displays the commit hist
 
 GitHub extends the basic `git blame` functionality with a more robust user interface.
 
-![GitHub blame](../media/2-context-search.png)
+![GitHub blame](../media/2-github-blame.png)
 
 In our scenario, there are a few ways you might get to this view. You might have found some sidebar code from the global search and selected the **Blame** option to see who had worked on it last. Or maybe you found a pull request and tracked that back to the last commit that seems related to the bug description. However you got here, the blame view is an effective way to locate a subject matter expert for the task at hand. 
 
 ## Cross-linking issues, commits, and more
 
-Part of what makes GitHub great for collaborative software projects is its support for linking disparate pieces of information together. some of this happens automatically, such as when you create a pull request from a series of commits on a branch. Other times, you can use the interface to manually link pull requests or projects to issues using the dropdown options.
+Part of what makes GitHub great for collaborative software projects is its support for linking disparate pieces of information together. Some of this happens automatically, such as when you create a pull request from a series of commits on a branch. Other times, you can use the interface to manually link pull requests or projects to issues using the dropdown options.
 
 ### Autolinked references
 
@@ -75,16 +75,16 @@ To make it even easier to cross-link different items throughout your project, Gi
 
 ![An autolinked issue](../media/2-autolinked-issue.png)
 
-GitHub also links commits for you if you paste in the first seven characters of its ID.
+GitHub also links commits for you if you paste in the first seven or more characters of its ID.
 
 ![An autolinked commit](../media/2-autolinked-commit.png)
 
-In our scenario, these links could prove very valuable for ramping up if someone thought ahead to leave the context. For example, the current state of the sidebar may have had some known issues related to a JavaScript dependency. If the issue with that dependency was discussed in another issue that didn't mention "sidebar", then it would be virtually impossible to find. However, if someone had thought ahead to link the issue in the discussion, then it could save you a lot of time now.
+In our scenario, these links could prove very valuable for ramping up if someone thought ahead to leave the context. For example, the current state of the sidebar may have had some known issues related to a JavaScript dependency. If the issue with that dependency was discussed in another issue that didn't explicitly mention "sidebar", then it would be difficult to find. However, if someone had thought ahead to link the issue in the discussion, then it could save you a lot of time now. Keep that in mind the next time you're documenting issues and pull requests.
 
 Learn more about [Autolinked references and URLs](https://help.github.com/en/github/writing-on-github/autolinked-references-and-urls?azure-portal=true).
 
 ### Looping in users with @mention
 
-Besides linking issues and commits, it's often helpful to associate other people with discussions. The easiest way to do this is by using an **@mention**. This kind of mention notifies the mentioned user so that they can participate in the discussion. It's also a good way to track people associated with issues long after they have been closed.
+Besides linking issues and commits, it's often helpful to associate other people with discussions. The easiest way to do this is by using an `@mention`. This kind of mention notifies the mentioned user so that they can participate in the discussion. It's also a good way to identify people associated with issues long after they have been closed.
 
 ![An @mention](../media/2-user-mention.png)
