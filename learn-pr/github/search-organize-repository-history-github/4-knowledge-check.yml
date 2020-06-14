@@ -28,7 +28,7 @@ quiz:
       explanation: "The top-level search allows the most flexibility, whereas the scoped tab searches provide popular filter dropdowns for easier refinement."
   - content: "What does `git blame` do?"
     choices:
-    - content: "It creates a bug assigned to the last person who commited changes to the specified file."
+    - content: "It creates a bug assigned to the last person who committed changes to the specified file."
       isCorrect: false
       explanation: "`git blame` is used to display file commit history."
     - content: "It displays the commit history of the file."
@@ -37,14 +37,14 @@ quiz:
     - content: "It reverts the effects of a `git praise` command."
       isCorrect: false
       explanation: "In some systems, `git praise` is a friendlier alias for the `git blame` command."
-  - content: "Suppose a bug issue is reported on your project, and you know which pull request introduced the problem. Which of the following is **not** a cross-linking best practice?"
+  - content: "Suppose a bug issue is reported on your project, and you know which pull request introduced the problem. Which of the following options is **not** a cross-linking best practice?"
     choices:
     - content: "Do not create cross-links when the root cause of the issue is already known."
       isCorrect: true
       explanation: "It's a good practice to always add cross-links in case you or someone else needs the context later on."
     - content: "Add a comment to the bug report that includes the pull request's author by using an @mention."
       isCorrect: false
-      explanation: "This is a good practice, assuming the author is available to support the issue."
+      explanation: "This linking is a good practice, assuming the author is available to support the issue."
     - content: "Add a comment to the bug report that links the pull request to it using the #ID syntax."
       isCorrect: false
-      explanation: "This is a good practice as it provides transparency to the issue author and anyone who might end up working on it."
+      explanation: "This linking is a good practice as it provides transparency to the issue author and anyone who might end up working on it."
