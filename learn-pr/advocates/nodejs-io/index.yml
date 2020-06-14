@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.nodejs-io
+uid: learn.working-with-file-using-node
 metadata:
   title: Read and write data in a Node.js application with files, streams and processes
   description: Learn about I/O in Node.js, working with files, Streams and Processes 
@@ -13,11 +13,11 @@ Read and write data in a Node.js application with files, streams and processes
 Write a JavaScript application that uses the Node.js I/O APIs. Your app will interact with the file system, streams, and processes.
 abstract: |
   In this module you will:
-  - Gain a basic understanding of the different I/O concepts that exist in Node.js
   - Read and write files, directories and file system attributes
+  - Gain a basic understanding of the different I/O concepts that exist in Node.js
   - Leverage Streams to make your apps more performant
   - Create and control processes
-iconUrl: /learn/achievements/nodejs-io.svg
+iconUrl: /learn/achievements/working-with-file-using-node.svg
 levels:
 - beginner
 roles:
@@ -26,15 +26,15 @@ products:
 - vs
 prerequisites: None
 units:
-- learn.nodejs-io.1-introduction
-- learn.nodejs-io.2-paths
-- learn.nodejs-io.3-exercise-paths
-- learn.nodejs-io.4-file-system
-- learn.nodejs-io.5-exercise-file-system
-- learn.nodejs-io.6-streams
-- learn.nodejs-io.7-exercise-streams
-- learn.nodejs-io.8-processes
-- learn.nodejs-io.9-exercise-processes
-- learn.nodejs-io.10-summary
+- learn.working-with-file-using-node.1-introduction
+- learn.working-with-file-using-node.2-paths
+- learn.working-with-file-using-node.3-exercise-paths
+- learn.working-with-file-using-node.4-file-system
+- learn.working-with-file-using-node.5-exercise-file-system
+- learn.working-with-file-using-node.6-streams
+- learn.working-with-file-using-node.7-exercise-streams
+- learn.working-with-file-using-node.8-processes
+- learn.working-with-file-using-node.9-exercise-processes
+- learn.working-with-file-using-node.10-summary
 badge:
-  uid: learn.nodejs-io.badge
+  uid: learn.working-with-file-using-node.badge

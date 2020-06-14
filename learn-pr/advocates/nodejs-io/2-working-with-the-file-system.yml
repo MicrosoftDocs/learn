@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.nodejs-io.2-working-with-the-file-system
+title: Working with the file system
+metadata:
+  title: Working with the file system
+  description: Using the "fs" module to work with the file system
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/20/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-working-with-the-file-system.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "You can do the following with the fs module..."
+      choices:
+        - content: "List the contents of a folder."
+          isCorrect: true
+          explanation: "Correct: The `readdir` and `readdirasync` methods list items in a directory"
+        - content: "Composes file and folder paths."
+          isCorrect: false
+          explanation: "Incorrect: The fs module is for reading files and folders, not for maniuplating paths"
+        - content: "Perform both asynchrnous and synchronous operations"
+          isCorrect: true
+          explanation: "Correct: The default behaviour for methods in the `fs` module is asynchronous. If you want to perform a synchronous operation, you'll need to explicityly call `sync` methods."

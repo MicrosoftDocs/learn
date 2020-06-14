@@ -1,16 +1,13 @@
-The file system is an important part of many applications. Working with the file system means working with files and directories but also dealing with different access levels and things like streams and processes.
+Tailwind Traders is the second largest online retailer in the world. They deal with mountains of data and files. They have hired you (yes you) to help them manage their data and files using Node.js.
 
-Working with files is in Node.js is either a synchronous or an asynchronous process. Node.js is single threaded, which means if we need to carry out things in parallel we need an approach that supports it. This approach is the callback pattern.
+Tailwind Traders collects sales information at the end of each night from each of their brick and mortar locations. Each location reports their sales by sending a file with their sales totals to a central location. Tailwind Traders needs to read through each of these files and combine all of the data into a single file that will be loaded into their sales system.
 
-Streams is a topic that is not unique to Node.js but is core concept that is almost everywhere. With Streams, we are able to work with data that flows from one point to another. That could be opening up a file or transferring data from one network point to another. Learning to leverage streams can make your app more responsive. Additionally it will ensure that consumption of resources like CPU and memory stays at a minimum.
-
-Processes is an interesting topic in Node.js. Working with processes means we spawn up new shells, run a command and listen to the output. We can also create processes capable of communicating with one another.
+In this module, you'll use Node.js to build a system that Tailwind Traders can use to read all of the files each night and calculate a grand total from all of the stores sales.
 
 ## Learning Objectives
 
-In this module, you will:
-
-- Work with file paths
-- Learn how to work with files in an asynchronous and synchronous way
-- Understand Streams and learn to leverage them to make your apps more performant
-- Explore processes and learn the different ways we can work with them.
+- Work with directories
+- Create and delete files
+- Read from files
+- Write to files
+- Parse data in files

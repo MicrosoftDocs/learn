@@ -1,0 +1,118 @@
+Tailwind Traiders has a lot of brick and morter locations. Each night, these locations write a file called `sales.json` to a folder that has an id that corresponds to their store id. This file contains their sales totals for the whole day. In this exercise, you're going to write a Node.js function which can take a central location and then find all of the `sales.json` files inside it, no matter where they are.
+
+## Sign into the sandbox
+
+Make sure you activate the Microsoft Learn sandbox by clicking the "Activate Sandbox" at the top of this page.
+
+## Clone exercise
+
+1. Copy the following command into the Sandbox and press "enter".
+
+   ```bash
+   git clone https://github.com/burkeholland/node-files && cd node-files
+   ```
+
+1. Open the Cloud Shell editor by typing the following command in the Cloud Shell and pressing "enter".
+
+   ```bash
+   code .
+   ```
+
+1. Expand the "stores" folder and each of the numbered folders inside.
+
+   :::image type="content" source="../media/folder-structure.png" alt-text="project folder structure":::
+
+## Find the sales.json files
+
+You're going to need to find all of those files given only the top-most location - the stores folder.
+
+### Including the "fs" module
+
+1. Click on the "index.js" file to open it in the editor.
+
+1. Include the "fs" module at the top of the file.
+
+   ```javascript
+   const fs = require("fs");
+   ```
+
+1. Create a `main` method. This method will be the entry point for your code. The last line of code in this file will invoke the `main` method.
+
+   ```javascript
+   const fs = require("fs");
+
+   function main() {}
+
+   main();
+   ```
+
+### Write a method to find the `sales.json` files
+
+1. Copy the following method and paste it above the "main" function.
+
+   ```javascript
+   function findSales(folderName) {
+     const items = fs.readdirSync(folder, { withFileTypes: true });
+     items.forEach((item) => {
+       if (item.isDirectory()) {
+         // this is a folder, so read it by calling this method and
+         // passing in the path to this folder
+         findSales(`${folderName}/${item.name}`);
+       } else {
+         if (item.name === "sales.json") {
+           console.log(`Found sales.json in folder ${folderName}`);
+         }
+       }
+     });
+   }
+   ```
+
+2. Call this new function from the "main" method, passing in the "stores" folder name as the location to search for files. Here is the completed code for the exercise.
+
+   ```javascript
+   const fs = require("fs");
+
+   function findSales(folder) {
+     const items = fs.readdirSync(folder, { withFileTypes: true });
+     items.forEach((item) => {
+       if (item.isDirectory()) {
+         // this is a folder, so read it by calling this method and
+         // passing in the path to this folder
+         findSales(`${folder}/${item.name}`);
+       } else {
+         if (item.name === "sales.json") {
+           console.log(`Found sales.json in folder ${folder}`);
+         }
+       }
+     });
+   }
+
+   function main() {
+     findSales("stores");
+   }
+
+   main();
+   ```
+
+## Execute the program
+
+1. Press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>S</kbd> to save the `index.js` file.
+
+1. Close the Cloud Shell editor by pressing <kbd>Ctrl</kbd> + <kbd>Q</kbd>.
+
+1. Enter the following command into the Cloud Shell to run the program...
+
+   ```bash
+   node index.js
+   ```
+
+1. The program should show the following output...
+
+   ```bash
+   Found sales.json in folder stores/201
+   Found sales.json in folder stores/202
+   Found sales.json in folder stores/203
+   Found sales.json in folder stores/204
+   ```
+
+Excellent! You have successfully written a command line program that will traverse any directory that it is given and find the "sales.json" files inside. Next you'll learn how to open the sales files and read them so that you can parse the data inside.
