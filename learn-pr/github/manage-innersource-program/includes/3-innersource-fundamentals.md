@@ -1,6 +1,6 @@
-In this exercise you use GitHub Learning Lab to tour GitHub's key features, including issues, commits, and pull requests.
+In this exercise you use GitHub Learning Lab to learn how to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
 
-The GitHub Learning Lab is an integrated experience that's easy to use. You get feedback and instructions throughout the lab as you work in your GitHub repository.
+GitHub Learning Lab is an integrated experience that's easy to use. You get feedback and instructions throughout the lab as you work in your GitHub repository.
 
 Here are a few suggestions to make the Learning Lab exercise more enjoyable.
 
@@ -20,4 +20,4 @@ When you've finished the exercise in GitHub, return here for:
 
 
 > [!div class="nextstepaction"]
-> [Start the learning lab on GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true)
+> [Start the learning lab on GitHub](https://lab.github.com/githubtraining/innersource-fundamentals?azure-portal=true)
