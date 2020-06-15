@@ -25,6 +25,6 @@ products:
   # - azure-virtual-machines, azure-linux-virtual-machines, azure-virtual-windows-machines TODO: ? 
 units:
 - learn-pr.intro-to-azure-data-science-virtual-machine.introduction
-- learn-pr.intro-to-azure-data-science-virtual-machine.what-is
+- learn-pr.intro-to-azure-data-science-virtual-machine.what-is-the-data-science-virtual-machine
 badge:
   uid: learn-pr.intro-to-azure-data-science-virtual-machine.badge
