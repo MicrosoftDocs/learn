@@ -1,4 +1,4 @@
-Here, you learn about infrastructure as code and using Microsoft Azure Resource Manager templates to implement your infrastructure as code. You survey the sections of an Azure Resource Manager template, discover how to deploy your template to Azure, and delve into detail on the *resources*, *parameters*, and *outputs* sections of the template.
+Here, you learn about using Microsoft Azure Resource Manager templates to implement infrastructure as code. You survey the sections of an Azure Resource Manager template, discover how to deploy your template to Azure, and delve into detail on the *resources*, *parameters*, and *outputs* sections of the template.
 
 ## What is infrastructure as code
 
@@ -21,45 +21,41 @@ ARM templates allow you declare what you intend to deploy without having to writ
 
 ### Benefits of using Azure Resource Manager templates
 
-Using ARM templates allows you to automate deployments and use the practice of infrastructure as code (IaC). The ARM code becomes part of your infrastructure and development projects. Just like application code, you can store the IaC files in a source repository such as [Azure Repos](https://azure.microsoft.com/services/devops/repos?azure-portal=true) and version it.
+Using ARM templates allows you to automate deployments and use the practice of infrastructure as code (IaC). The template code becomes part of your infrastructure and development projects. Just like application code, you can store the IaC files in a source repository and version it.
 
-Any one on your team can leverage the templates you build in order to deploy similar environments for development, testing, staging, and deployment in exactly the same way, ensuring consistency.
+Templates are *idempotent*, which means you can deploy the same template many times and get the same resource types in the same state.
 
-Some other benefits are:
+The Azure Resource Manager orchestrates the deployment of the resources so they're created in the correct order, and when possible, in parallel, so your deployments finish faster than scripted deployments.
 
-- **Idempotent**: Templates are idempotent, which means you can deploy the same template many times and get the same resource types in the same state.
+  ![A mapping of the template processing procedure showing that there is only once call to process a template as opposed to several calls to process scripts.](../media/2-template-processing.png)
 
-- **Orchestration**: The Azure Resource Manager orchestrates the deployment of the resources so they're created in the correct order, and when possible, in parallel, so your deployments finish faster than scripted deployments.
+Azure Resource Manager also has built in validation and checks the template before starting the deployment to make sure the deployment will succeed.
 
-    ![Template Processing](../media/2-template-processing.png)
+If your deployments become more complex, you can break your templates into smaller, reusable components and link them together at deployment time. You can also nest one or multiple templates inside other templates.
 
-- **Built-in validation**: Azure Resource Manager checks the template before starting the deployment to make sure the deployment will succeed.
+In the Azure portal, you can review your deployment history and get information about the state of the deployment. You can see all the parameter values passed in, and any output values.
 
-- **Modular**: You can break your templates into smaller, reusable components and link them together at deployment time. You can also nest one or multiple templates inside other templates.
-
-- **Tracked deployments**: In the Azure portal, you can review your deployment history and get information about the state of the deployment. You can see all the parameter values passed in, and any output values.
-
-- **CI/CD integration**: You can integrate templates into continuous integration and continuous deployment (CI/CD) tools like [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines?azure-portal=true), which can automate your release pipelines for fast and reliable application and infrastructure updates. By using Azure DevOps and ARM template tasks, you can continuously build and deploy your projects.
+You can also integrate your templates into continuous integration and continuous deployment (CI/CD) tools like [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines?azure-portal=true), which can automate your release pipelines for fast and reliable application and infrastructure updates. By using Azure DevOps and ARM template tasks, you can continuously build and deploy your projects.
 
 ### Template file structure
 
-When writing an ARM template, you need to understand all the parts that make up the template and what they do. The template files are made up of the following elements:
+When writing an ARM template, you need to understand all the parts that make up the template and what they do. The template files are made up of the following elements.
 
-The **schema** section is a required section that defines the location of the JSON schema file that describes the structure of JSON data. The version number you use depends on the scope of the deployment and your JSON editor.
+- *schema* - a required section that defines the location of the JSON schema file that describes the structure of JSON data. The version number you use depends on the scope of the deployment and your JSON editor.
 
-The **contentVersion** section is a required section that defines the version of your template (such as 1.0.0.0). You can use this value to document significant changes in your template to ensure you're deploying the right template.
+- *contentVersion* - a required section that defines the version of your template (such as 1.0.0.0). You can use this value to document significant changes in your template to ensure you're deploying the right template.
 
-The **apiProfile** section is an optional section that defines a collection of API versions for resource types.  You can use this value to avoid having to specify API versions for each resource in the template.
+- *apiProfile* - an optional section that defines a collection of API versions for resource types.  You can use this value to avoid having to specify API versions for each resource in the template.
 
-The **parameters** section is an optional section where you define values that will be provided when the deployment is executed. These values can be provided by a parameter file, by command-line parameters or in the portal.
+- *parameters* -  an optional section where you define values that will be provided when the deployment is executed. These values can be provided by a parameter file, by command-line parameters or in the portal.
 
-The **variables** section is an optional section where you define values that are used to simplify template language expressions.
+- *variables* - an optional section where you define values that are used to simplify template language expressions.
 
-The **functions** section is an optional section, where you can define [User-defined functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-user-defined-functions?azure-portal=true) that are available within the template. You can create your own functions when you have complicated expressions that are used repeatedly in your template.
+- *functions* - an optional section where you can define [User-defined functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-user-defined-functions?azure-portal=true) that are available within the template. You can create your own functions when you have complicated expressions that are used repeatedly in your template.
 
-The **resources** section is a required section that defines the actual items you want to deploy, or that you want to update, in a resource group or a subscription.
+- *resources* - a required section that defines the actual items you want to deploy, or that you want to update, in a resource group or a subscription.
 
-The **output** section is another optional section where you specify the values that will be returned at the end of the deployment.
+- *output* section - an optional section where you specify the values that will be returned at the end of the deployment.
 
 ## How do I deploy a template to Azure
 
@@ -105,7 +101,7 @@ New-AzResourceGroup `
 
 ---
 
-To deploy the template, use either Azure CLI's [az deployment group create](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create?azure-portal=true) or Azure PowerShell's [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true). Specify the resource group and give a name to the deployment so you can easily identify it in the deployment history. For convenience, create a variable that stores the path to the template file. This variable makes it easier for you to run the deployment commands because you don't have to retype the path every time you deploy. Here is an example:
+To deploy the template, use either the Azure CLI command [az deployment group create](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create?azure-portal=true) or the Azure PowerShell command [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true). Specify the resource group and give a name to the deployment so you can easily identify it in the deployment history. For convenience, create a variable that stores the path to the template file. This variable makes it easier for you to run the deployment commands because you don't have to retype the path every time you deploy. Here is an example:
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -131,8 +127,6 @@ New-AzResourceGroupDeployment `
 
 ---
 
-In the exercise unit, you create an Azure Resource Manager template and deploy it from your local machine into a sandbox subscription on Azure.
-
 Linked templates are used to deploy complex solutions. You can break a template into many templates, and deploy these templates through a main template. When the main template gets deployed, it triggers the deployment of the linked template. You can store and secure the linked template by using a SAS token.
 
 A continuous integration/continuous deployment (CI/CD) pipeline automates building and deploying development project including Azure Resource Manager template projects. The two most common pipelines used for template deployment are [Azure Pipelines](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](https://docs.microsoft.com/learn/paths/automate-workflow-github-actions/?azure-portal=true).
@@ -145,11 +139,11 @@ To add a resource to your template, you will need to know the resource provider 
 
 Once you have the provider and resource type, you need to know the properties to use for that resource type. For that, you can go to the [Define resources in Azure Resource Manager template](https://docs.microsoft.com/azure/templates?azure-portal=true) page. There you will see a left side menu to find the resource you are looking for. Notice that the properties are sorted by API version.
 
-![Microsoft documentation page showing the storage account documentation selected](../media/2-resource-type-properties.png)
+![Microsoft documentation page showing the storage account documentation selected.](../media/2-resource-type-properties.png)
 
 Here is an example of some of the listed properties from the Storage Accounts page:
 
-![Microsoft documentation page showing some of the storage account properties](../media/2-storage-account-properties.png)
+![Microsoft documentation page showing some of the storage account properties.](../media/2-storage-account-properties.png)
 
 For our storage example, your template might look like this:
 
@@ -182,11 +176,11 @@ For our storage example, your template might look like this:
 
 ## What are template parameters
 
-Parameters enable you to customize the deployment by providing values that are tailored for a particular environment. For example, you can pass different values based on whether you're deploying to an environment for development, test, and production or others. For example, the template above uses the *Standard_LRS* SKU. We can reuse this template for other deployments that create a storage account by making the name of the SKU a parameter. Then, we can pass in the name of the SKU we would like for this particular deployment when the template is executed. We can do this either at the command line, or using a parameter file.
+Parameters enable you to customize the deployment by providing values that are tailored for a particular environment. For example, you can pass different values based on whether you're deploying to an environment for development, test, production or others. For example, the template above uses the *Standard_LRS* SKU. You can reuse this template for other deployments that create a storage account by making the name of the SKU a parameter. Then, you can pass in the name of the SKU you would like for this particular deployment when the template is executed. You can do this either at the command line, or using a parameter file.
 
 ### How do I use parameters in my template
 
-As an example, here is a template file with a parameter for the storageSKU defined in the *parameters* section of the template. Notice that we can provide a default for the parameter to be used if no value is specified at execution.
+Here is an example of a template file with a parameter for the storageSKU defined in the *parameters* section of the template. Notice that you can provide a default for the parameter to be used if no value is specified at execution.
 
 ```json
 "parameters": {
@@ -199,7 +193,7 @@ As an example, here is a template file with a parameter for the storageSKU defin
    }
 ```
 
-And then use the parameter in the resource definition. Notice the syntax is ```[parameters('name of the parameter')]```
+Then, use the parameter in the resource definition. Notice the syntax is ```[parameters('name of the parameter')]```
 
 ```json
 "resources": [
@@ -248,15 +242,15 @@ In the *outputs* section of your template, you can specify values that will be r
 }
 ```
 
-- output-name: Must be a valid JavaScript identifier.
-- condition: (Optional) A boolean value that indicates whether this output value is returned. When true, the value is included in the output for the deployment. When false, the output value is skipped for this deployment. When not specified, the default value is true.
-- type: The types of the output value supported are the same as the types of template input parameters.
-- value: (Optional) A template language expression that is evaluated and returned as output value.
-- copy: (Optional) Copy is used to return more than one value for an output.
+- *output-name*: Must be a valid JavaScript identifier.
+- *condition*: (Optional) A boolean value that indicates whether this output value is returned. When true, the value is included in the output for the deployment. When false, the output value is skipped for this deployment. When not specified, the default value is true.
+- *type*: The type of the output value.
+- *value*: (Optional) A template language expression that is evaluated and returned as output value.
+- *copy*: (Optional) Copy is used to return more than one value for an output.
 
 ### How do I use outputs in my template
 
-As an example, to output the Azure storage account's endpoints, your output section of the template would look like this:
+Here is an example to output the Azure storage account's endpoints.
 
 ```json
  "outputs": {
@@ -271,11 +265,11 @@ Notice the ```reference``` part of the expression. This function gets the runtim
 
 ## How can I plan my template
 
-Before deploying a template and making changes to your infrastructure, it is recommended that you preview the changes that executing the template will make. Azure Resource Manager provides the *what-if* operation to let you see how resources will change if you deploy the template. More information on what-if can be found in the [documentation](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-cli&azure-portal=true).
+Before deploying a template, it is recommended that you preview the changes that executing the template will make to your infrastructure. Azure Resource Manager provides the *what-if* operation to let you see how resources will change if you deploy the template.
 
-The what-if commands are added as a parameter to the deployment command and the output is color-coded to help you see the different types of changes.
+The what-if commands are added to the deployment command and the output is color-coded to help you see the different types of changes.
 
-![What-if output in Visual Studio Code terminal](../media/2-what-if-output.png)
+![What-if output in the Visual Studio Code terminal showing resources that would be deleted, created, and modified.](../media/2-what-if-output.png)
 
 ### How do I use what-if commands
 
@@ -322,7 +316,7 @@ To run this deployment command, you must have the [latest version](/cli/azure/in
 ```azurecli
 templateFile="{provide-the-path-to-the-template-file}"
 az deployment group what-if \
-  --name blanktemplate \
+  --name testtemplate \
   --resource-group myResourceGroup \
   --template-file $templateFile
 ```
@@ -333,7 +327,7 @@ az deployment group what-if \
 $templateFile = "{provide-the-path-to-the-template-file}"
 New-AzResourceGroupDeployment `
   -Whatif `
-  -Name blanktemplate `
+  -Name testtemplate `
   -ResourceGroupName myResourceGroup `
   -TemplateFile $templateFile
 ```
