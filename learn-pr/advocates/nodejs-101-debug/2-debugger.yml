@@ -10,7 +10,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
-interactive: "bash"
-azureSandbox: true
 content: |
   [!include[](includes/2-what-is-a-debugger.md)]
