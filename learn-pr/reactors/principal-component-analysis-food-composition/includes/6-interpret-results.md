@@ -2,7 +2,7 @@
 
 What do our vectors mean? Put another way, what kinds of foods populate the different clusters we have discovered among the data?
 
-To see these results, we will create a pandas Series for each component, index them by feature, and then sort them in decreasing order (so that a higher number represents a feature that is positively correlated with that vector and negative numbers represent low correlation).
+To see the results, we will create a pandas Series for each component, index the components by feature, and then sort them in decreasing order. A higher number represents a feature that is positively correlated with that vector and negative numbers represent low correlation.
 
 First, run this code:
 
@@ -17,7 +17,7 @@ c1 = pd.Series(vects[0], index=nutr_df.columns)
 c1.sort_values(ascending=False)
 ```
 
-This is the output:
+The output is:
 
 ```Output
 Protein_(g)          0.253011
@@ -66,7 +66,7 @@ Vit_C_(mg)          -0.160070
 dtype: float64
 ```
 
-Our first cluster is defined by foods that are high in protein and minerals like selenium and zinc while also being low in sugars and vitamin C. Even to a non-specialist, these sound like foods such as meat, poultry, or legumes.
+Our first cluster is defined by foods that are high in protein and minerals, like selenium and zinc, while also being low in sugars and vitamin C. Even to a nonspecialist, these sound like meat, poultry, or legumes.
 
 > [!div class="alert is-tip"]
 > ### Takeaway
@@ -80,7 +80,7 @@ c2 = pd.Series(vects[1], index=nutr_df.columns)
 c2.sort_values(ascending=False)
 ```
 
-Here's the output:
+The output is:
 
 ```Output
 Manganese_(mg)       0.298009
@@ -135,7 +135,7 @@ Our second group is foods that are high in fiber and folic acid and low in chole
 
 Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
-> **SARAH** TBD - Do we need to provide a possible solution and output for this exercise? Thanks.
+> **SARAH** TBD. Do we need to provide a possible solution and output for this try-it-yourself? Thanks.
 
 <br />
 
@@ -237,7 +237,8 @@ Repeat this process for $c_{3}$, $c_{4}$, and $c_{5}$.
 ***
 
 
-**A parting note**: Baby Foods and some other categories might seem to dominate several of the categories. This is a product of all of the rows we had to drop that had NaN values. If we look at all of the value counts for FoodGroup, we will see that they are not evenly distributed, with some categories far more represented than others.
+> [!NOTE]
+> The category **Baby Foods** and some other categories might seem to dominate the output. This is a result of all the rows we had to drop because they had `NaN` values. If we look at all of the value counts for the category **FoodGroup**, we will see that they aren't evenly distributed; some categories are far more represented than others.
 
 ```python
 df['FoodGroup'].value_counts()

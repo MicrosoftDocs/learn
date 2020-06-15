@@ -1,9 +1,9 @@
-The first step is to import facial images from the dataset. LFW contains more than 13,000 facial images collected from the web. Of the more than 5,000 people represented in the dataset, 1,680 have two or more facial images, while only five have 100 or more. We'll set the minimum number of faces per person to 100, which means that five sets of faces corresponding to five famous people will be imported. Each facial image is labeled with the name of the person that the face belongs to.
+The first step is to import facial images from the dataset. LFW contains more than 13,000 facial images that were collected from the web. Of the more than 5,000 people represented in the dataset, 1,680 have two or more facial images; five of them have 100 or more. We'll set the minimum number of faces per person to 100, which means that five sets of faces that correspond to five famous people will be imported. Each facial image is labeled with the name of the person that the face belongs to.
 
-> **Sarah** TBD, it occurred to me to add a tip that links to the environment setup instructions. What do you think?
+> **Sarah** TBD. It occurred to me to add a tip that links to the environment setup instructions. What do you think?
 
 > [!TIP]
-> Review steps TBD--add link for setting up the environment.
+> Review steps to set up the learning environment, TBD--add link.
 >
 
 ```python
@@ -28,7 +28,7 @@ The output is:
 (1140, 62, 47)
 ```
 
-In total, 1,140 facial images were loaded. Each image measures 47 by 62 pixels for a total of 2,914 pixels per image. That basically means we're working with a model with 2,914 feature columns. Let's check the balance in our dataset by generating a histogram showing how many facial images were imported for each of the five persons, or classes that our neural network will try to predict.
+In total, 1,140 facial images were loaded. Each image measures 47 &times; 62 pixels for a total of 2,914 pixels per image. For another way of looking at it, we are working with a model with 2,914 feature columns. Let's check the balance in our dataset by generating a histogram that shows how many facial images were imported for each of the five persons or classes that our neural network will try to predict:
 
 ```python
 %matplotlib inline
@@ -57,7 +57,7 @@ The output is:
 
 :::image type="content" source="../media/subplot-1.png" alt-text="Subplot that demonstrates the occurrence of different images in the dataset." loc-scope="Azure":::
 
-The dataset is not well-balanced, but that's not terribly concerning because the net effect will probably be that the model is better at recognizing certain people than others. Let's plot some of the facial images so we can see what they look like
+The dataset is not well-balanced, but that's not terribly concerning because the net effect will probably be that the model is better at recognizing certain people than others. Let's plot some of the facial images so we can see what they look like:
 
 ```python
 fig, ax = plt.subplots(3, 8, figsize=(18, 10))
@@ -68,7 +68,7 @@ for i, axi in enumerate(ax.flat):
 
 :::image type="content" source="../media/subplot-2.png" alt-text="Panel of 24 photos of political figures, with names." loc-scope="Azure":::
 
-The next step is to convert the 42x67 images into a flat NumPy array of floats, and to convert the target values (the zero-based indices identifying the person that belongs to a face) into categorical values by [one-hot-encoding](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f?azure-portal=true) them. After that, we'll split the data for training and testing. Rather than allow Keras to do the splitting, we'll use scikit-learn's `train_test_split` function because it gives us more control over how the split is performed. And it will allow us to consistently test the network with data it hasn't seen before.
+The next step is to convert the 42 &times; 67 images into a flat NumPy array of floats, and then convert the target values (the zero-based indices that identify the person the belongs to a face) into categorical values by [one-hot-encoding](https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f?azure-portal=true) them. After that, we'll split the data for training and testing. Instead of using keras to do the splitting, we'll use scikit-learn's `train_test_split` function because it gives us more control over how the split is performed. Also, with scikit-learn, we can consistently test the network with data it hasn't seen before.
 
 ```python
 from keras.utils import to_categorical

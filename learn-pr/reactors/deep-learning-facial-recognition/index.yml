@@ -3,7 +3,7 @@ uid: learn.reactors.deep-learning-facial-recognition
 metadata:
   title: Deep learning with facial recognition
   description: Learn how to prepare and train a neural network model to use for classification of a dataset.
-  ms.date: 05/15/2020
+  ms.date: 06/30/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -13,16 +13,16 @@ summary: Learn how to prepare and train a neural network model to use for classi
 abstract: |
   In this module, you will:
   - Use NumPy to analyze and visualize the contents of a dataset.
-  - Use Keras to train a neural network.
-  - Use Keras to check for training accuracy and validity accuracy in a neural network model.
+  - Use keras to train a neural network.
+  - Use keras to check for training and validity accuracy in a neural network model.
   - Add dropout during model training to help neural networks generalize better and increase validation accuracy.
-  - Use a neural network for classification of a dataset.
+  - Use a convolution neural network (CNN) for classification of a dataset.
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
   - Text classifications with Naive Bayes
   - Principal component analysis (PCA)
-  - Support vector machines with facial recognition
+  - Support vector machines (SVMs) with facial recognition
 # placeholder icon
 iconUrl: /learn/achievements/reactors/deep-learning-facial-recognition.svg
 levels:

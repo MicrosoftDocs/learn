@@ -1,4 +1,4 @@
-We'll start by using Keras to build and train a neural network containing one working layer with 128 neurons. We'll use `categorical_crossentropy` as the loss function and a softmax output layer, both of which are appropriate for muticlass classification problems. We will also use adam as the optimization algorithm. Rather than use a fixed learning rate, adam varies the learning rate as training proceeds so the network learns faster in the early stages of training and (hopefully) converges more accurately toward a solution in later stages.
+We'll start by using keras to build and train a neural network that contains one working layer with 128 neurons. We'll use `categorical_crossentropy` as the loss function and a softmax output layer, both of which are appropriate for muticlass classification problems. We also will use adam as the optimization algorithm. Rather than using a fixed learning rate, adam varies the learning rate as training proceeds so that the network learns faster in the early stages of training and (hopefully) converges more accurately toward a solution in later stages.
 
 ```python
 from keras.layers import Dense
@@ -26,7 +26,7 @@ Non-trainable params: 0
 _________________________________________________________________
 ```
 
-Now let's train the neural network. We'll let it run for 100 epochs and then check the result to see if it required more (or less) training.
+Now, let's train the neural network. We'll let it run for 100 epochs and then check the result to see if it requires more (or less) training.
 
 ```python
 hist = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=100, batch_size=25)
@@ -236,7 +236,7 @@ Epoch 100/100
 912/912 [==============================] - 0s 426us/step - loss: 0.1022 - accuracy: 0.9704 - val_loss: 0.4051 - val_accuracy: 0.8816
 ```
 
-Keras's `fit` function returns a `history` object containing information about the training and validation accuracies measured following each epoch of the training. Let's use that information to plot the training and validation accuracy over time.
+The keras `fit` function returns a `history` object that contains information about the training and validation accuracies that are measured after each epoch of the training. Let's use that information to plot the training and validation accuracy over time.
 
 ```python
 def show_history(hist):
@@ -255,9 +255,9 @@ def show_history(hist):
 show_history(hist)
 ```
 
-:::image type="content" source="../media/accuracy-1.png" alt-text="First training and accuracy chart." loc-scope="Azure":::
+:::image type="content" source="../media/accuracy-1.png" alt-text="Initial training and accuracy chart." loc-scope="Azure":::
 
-In all likelihood, the training accuracy approached 100% (1.0) in later epochs, while the validation accuracy peaked out between 80% and 90%. Let's try widening the working layer to 512 neurons and comparing the results.
+In all likelihood, the training accuracy approached 100% (1.0) in later epochs, although the validation accuracy peaked out between 80% and 90%. Let's try widening the working layer to 512 neurons and then compare the results.
 
 ```python
 model = Sequential()
@@ -471,7 +471,7 @@ Epoch 100/100
 912/912 [==============================] - 1s 1ms/step - loss: 0.0817 - accuracy: 0.9770 - val_loss: 0.8871 - val_accuracy: 0.7500
 ```
 
-Once more, we will plot the accuracy over time to assess how well the network learned from the training data.
+We again plot the accuracy over time to assess how well the network learned from the training data:
 
 ```python
 show_history(hist)
@@ -479,7 +479,7 @@ show_history(hist)
 
 :::image type="content" source="../media/accuracy-2.png" alt-text="Second training and accuracy chart." loc-scope="Azure":::
 
-Were the results significantly different than before? Probably not. But now let's modify the network so that it contains four hidden layers of 128 neurons each. It's the same number of neurons as the previous model, but the network itself is narrower and deeper. You should find that this model trains somewhat faster.
+Were the results significantly different than before? Probably not. But now, let's modify the network so that it contains four hidden layers of 128 neurons each. It's the same number of neurons as in the previous model, but the network itself is narrower and deeper. You should find that this model trains somewhat faster.
 
 ```python
 model = Sequential()
@@ -696,7 +696,7 @@ Epoch 100/100
 912/912 [==============================] - 0s 340us/step - loss: 0.1235 - accuracy: 0.9627 - val_loss: 0.6925 - val_accuracy: 0.8333
 ```
 
-Now let's see what happened during training.
+Now, let's see what happened during training:
 
 ```python
 show_history(hist)
@@ -919,7 +919,7 @@ Epoch 100/100
 912/912 [==============================] - 0s 317us/step - loss: 0.1846 - accuracy: 0.9298 - val_loss: 0.5241 - val_accuracy: 0.8596
 ```
 
-Time to check the results.
+Time to check the results:
 
 ```python
 show_history(hist)
@@ -927,9 +927,9 @@ show_history(hist)
 
 :::image type="content" source="../media/label-actual-predicted.png" alt-text="Chart that demonstrates actual labels and predicted labels for the dataset." loc-scope="Azure":::
 
-Did you notice that the chart above isn't a perfect match for the one you generated for the same network earlier? Keras and TensorFlow use random numbers to initialize neural networks, to shuffle training data between training epochs, to help optimization algorithms converge on the best solution as training takes place, and more. This means that you can train the same model 10 times using the same data and get 10 different results. This is a feature, not a bug. Once they arrive at the right network architecture, data scientists will often train a neural network 20 or more times and average the results to get the best measure of the network's accuracy.
+Did you notice that the latest chart isn't a perfect match for the one you generated earlier for the same network? keras and TensorFlow use random numbers to initialize neural networks, shuffle training data between training epochs, help optimization algorithms converge on the best solution as training takes place, and more. You can train the same model 10 times by using the same data and get 10 different results. This is a feature, not a bug. When data scientists arrive at the right network architecture, they often train a neural network 20 or more times and average the results to get the best measure of the network's accuracy.
 
-At this point, it might be helpful to run some test data through the network and generate a confusion matrix showing how it performed. We can use scikit-learn's `confusion_matrix` function to generate the confusion matrix and seaborn to plot it.
+At this point, it might be helpful to run some test data through the network and generate a confusion matrix that shows how it performed. We can use the scikit-learn `confusion_matrix` function to generate the confusion matrix. We'll use seaborn to plot the confusion matrix.
 
 ```python
 from sklearn.metrics import confusion_matrix
@@ -950,6 +950,23 @@ plt.ylabel('Predicted label')
 Text(89.18, 0.5, 'Predicted label')
 ```
 
-Exercise
+> **Sarah**, TBD. Do we need code or output for this try-it-yourself?
+
+### Try it yourself
+
 How many times did the model correctly identify George W. Bush, who had the most samples in the training set? How many times did it identify him as someone else?
+
+<br />
+
+<details>
+
+  <summary>TBD</i></summary>
+
+</details>
+
+<br /><br />
+
+***
+Exercise
+
 

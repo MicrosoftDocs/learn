@@ -427,10 +427,23 @@ show_history(hist)
 
 Although the gap between training accuracy and validation accuracy probably narrowed, validation accuracy probably didn't improve much. This might be an indication that more training data is needed to make the network "smarter." In the confusion matrix above, George W. Bush probably scored the highest for accuracy, and if so, it's no coincidence that the dataset contains almost as many samples of George W. Bush as it does of the other candidates combined.
 
-Exercise/Try it yourself 
+> **Sarah** TBD. Do we need code or output for this try-it-yourself?
 
-**Sarah** TBD - add a possible solution and output for this exercise/Try it yourself
+### Try it yourself
 
 TODO: Experiment with higher dropout values
 
-Hint: Copy-and-paste the code in the previous two code cells and change the number passed to Dropout().
+Hint: Copy and paste the code in the previous two code cells and change the number passed to <code>Dropout()</code>.
+
+<br />
+
+<details>
+
+  <summary>TBD</i></summary>
+
+</details>
+
+<br /><br />
+
+***
+

@@ -7,12 +7,11 @@ In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics
 
 Let’s import pandas and load the dataset. The path name in the following code is case-sensitive.
 
-> **Sarah** TBD, it occurred to me to add a tip that links to the environment setup instructions. What do you think?
+> **Sarah** TBD. It occurred to me to add a tip that links to the environment setup instructions. What do you think?
 
 > [!TIP]
-> Review steps TBD--add link for setting up the environment.
+> Review steps to set up the learning environment, TBD--add link.
 >
-
 
 ```python
 import pandas as pd 

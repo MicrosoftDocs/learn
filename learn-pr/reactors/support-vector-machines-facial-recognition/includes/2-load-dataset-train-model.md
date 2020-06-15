@@ -1,7 +1,10 @@
 To get started, we'll load the dataset, which includes importing the NumPy and pandas Python libraries. Then, we'll train the SVM model for image classification by using the faces in the dataset.
 
+> **Sarah** TBD. It occurred to me to add a tip that links to the environment setup instructions. What do you think?
+
 > [!TIP]
-> Review steps TBD link for setting up the learn environment.
+> Review steps to set up the learning environment, TBD--add link.
+>
 
 ## Load the dataset
 
