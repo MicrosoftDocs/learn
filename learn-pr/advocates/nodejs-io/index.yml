@@ -1,40 +1,34 @@
 ### YamlMime:Module
-uid: learn.working-with-file-using-node
+uid: learn.azure.nodejs.files
 metadata:
-  title: Read and write data in a Node.js application with files, streams and processes
-  description: Learn about I/O in Node.js, working with files, Streams and Processes 
+  title: Working with files and directories with Node.js
+  description: Learn about how to manipulate files and directories with Node.js
   ms.date: 04/20/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: luken
-Read and write data in a Node.js application with files, streams and processes
-Write a JavaScript application that uses the Node.js I/O APIs. Your app will interact with the file system, streams, and processes.
+title: Working with files and directories with Node.js
+summary: Learn about how to manipulate files and directories with Node.js
 abstract: |
   In this module you will:
-  - Read and write files, directories and file system attributes
-  - Gain a basic understanding of the different I/O concepts that exist in Node.js
-  - Leverage Streams to make your apps more performant
-  - Create and control processes
-iconUrl: /learn/achievements/working-with-file-using-node.svg
+  - Work with directories
+  - Create and delete files
+  - Read from files
+  - Write to files
+  - Parse data in files
+iconUrl: /learn/achievements/learn.azure.nodejs.files.svg
 levels:
-- beginner
+  - beginner
 roles:
-- developer
+  - developer
 products:
-- vs
+  - vs
 prerequisites: None
 units:
-- learn.working-with-file-using-node.1-introduction
-- learn.working-with-file-using-node.2-paths
-- learn.working-with-file-using-node.3-exercise-paths
-- learn.working-with-file-using-node.4-file-system
-- learn.working-with-file-using-node.5-exercise-file-system
-- learn.working-with-file-using-node.6-streams
-- learn.working-with-file-using-node.7-exercise-streams
-- learn.working-with-file-using-node.8-processes
-- learn.working-with-file-using-node.9-exercise-processes
-- learn.working-with-file-using-node.10-summary
+  - learn.learn.azure.nodejs.files.1-introduction
+  - learn.learn.azure.nodejs.files.2-paths
+  - learn.learn.azure.nodejs.files.3-exercise-paths
 badge:
-  uid: learn.working-with-file-using-node.badge
+  uid: learn.learn.azure.nodejs.files.badge

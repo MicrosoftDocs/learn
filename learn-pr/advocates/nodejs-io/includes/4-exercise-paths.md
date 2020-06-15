@@ -2,10 +2,18 @@ In this exercise, you'll see how to use the "path" module in Node.js to get info
 
 Before you proceed, sign into the sandbox above. You'll use this interactive in-browser command prompt to work with Node.js
 
-1. Create a directory for your app
-2. Navigate to your directory `cd <name of dir>`
-3. Now create a JavaScript file that will contain your code and name it `app.js`
-4. In the same directory, create a file `info.txt` and give it some sample data
+## Clone the sample project
+
+1. From the sandbox, clone the sample project repo...
+
+   `git clone ... && cd ...`
+
+1.
+
+1) Create a directory for your app
+2) Navigate to your directory `cd <name of dir>`
+3) Now create a JavaScript file that will contain your code and name it `app.js`
+4) In the same directory, create a file `info.txt` and give it some sample data
 
 ## Information
 
