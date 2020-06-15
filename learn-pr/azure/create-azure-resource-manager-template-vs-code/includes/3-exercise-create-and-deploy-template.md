@@ -62,6 +62,8 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     az account set --subscription {your subscription ID}
     ```
 
+### Set the default resource group
+
 1. Set the default resource group to the resource group created for you in the sandbox environment. This allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
     ```azurecli
@@ -86,7 +88,7 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
 
   In the top section of this code, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```az deployment group create``` command to deploy the template to Azure.
 
-1. You see ```Running...``` in the terminal. When that finishes, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+1. You see ```Running...``` in the terminal. When that finishes, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
 1. On the left side panel, choose *Resource groups*.
 1. Select <rgn>[sandbox resource group name]</rgn>.
@@ -102,7 +104,7 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
 
     ![Azure portal interface for the specific deployment with no resources listed.](../media/3-no-results.png)
 
-1. Leave the portal open in your browser. You will check on deployments again.
+1. Leave the page open in your browser. You will check on deployments again.
 
 ## Add a resource to the template
 
@@ -138,7 +140,7 @@ Here, you change the name of the deployment to better reflect what this deployme
       --template-file $templateFile
     ```
 
-1. Navigate back to the Azure portal. Go to your resource group and see that there are now *2 Succeeded* deployments. Select this link.
+1. In your browser, navigate back to Azure. Go to your resource group and see that there are now *2 Succeeded* deployments. Select this link.
 1. Notice that both deployments are in the list.
 
     ![Azure portal interface for the deployments with the two deployments listed and succeeded statuses.](../media/3-addstorage-deployment.png)
@@ -206,7 +208,7 @@ Here, you change the name of the deployment to better reflect what this deployme
       --parameters storageName={your-unique-name}
     ```
 
-1. Navigate back to the portal. Go to your resource group and see that there are now *3 Succeeded* deployments. Select this link.
+1. In your browser, navigate back to Azure. Go to your resource group and see that there are now *3 Succeeded* deployments. Select this link.
 1. Notice that all three deployments are in the list.
 1. Explore the  *addnameparameter* deployment as you did previously.
 
