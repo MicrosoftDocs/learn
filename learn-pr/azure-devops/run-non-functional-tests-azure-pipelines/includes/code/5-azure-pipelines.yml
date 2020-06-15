@@ -139,7 +139,7 @@ stages:
     pool:
       vmImage: 'ubuntu-18.04'
     variables:
-      jmeterVersion: '5.3'
+    - group: Release
     steps: 
     - script: |
         wget -c ftp.ps.pl/pub/apache/jmeter/binaries/apache-jmeter-$(jmeterVersion).tgz
