@@ -69,7 +69,7 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 1. Under **Pipelines**, select **Library**.
 1. Select the **Release** variable group.
 1. Under **Variables**, select **+ Add**.
-1. For the name of your variable, enter *STAGING_HOSTNAME*. For its value, enter the URL of the App Service instance that corresponds to your **staging** environment, such as *tailspin-space-game-web-dev-1234.azurewebsites.net*.
+1. For the name of your variable, enter *STAGING_HOSTNAME*. For its value, enter the URL of the App Service instance that corresponds to your **staging** environment, such as *tailspin-space-game-web-staging-1234.azurewebsites.net*.
 
     > [!IMPORTANT]
     > Don't include the `http://` or `https://` protocol prefix in your value. JMeter provides the protocol when the tests run.
