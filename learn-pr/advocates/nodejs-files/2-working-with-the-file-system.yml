@@ -23,6 +23,3 @@ quiz:
         - content: "Composes file and folder paths."
           isCorrect: false
           explanation: "Incorrect: The fs module is for reading files and folders, not for maniuplating paths"
-        - content: "Perform both asynchrnous and synchronous operations"
-          isCorrect: true
-          explanation: "Correct: The default behaviour for methods in the `fs` module is asynchronous. If you want to perform a synchronous operation, you'll need to explicityly call `sync` methods."
