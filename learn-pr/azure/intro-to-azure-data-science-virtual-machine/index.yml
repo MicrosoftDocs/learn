@@ -26,5 +26,10 @@ products:
 units:
 - learn-pr.intro-to-azure-data-science-virtual-machine.introduction
 - learn-pr.intro-to-azure-data-science-virtual-machine.what-is-the-data-science-virtual-machine
+- learn-pr.intro-to-azure-data-science-virtual-machine.create-a-data-science-virtual-machine
+- learn-pr.intro-to-azure-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
+- learn-pr.intro-to-azure-data-science-virtual-machine.connect-with-ssh-and-jupyter
+- learn-pr.intro-to-azure-data-science-virtual-machine.using-remote-desktop-to-connect
+- learn-pr.intro-to-azure-data-science-virtual-machine.connection-knowledge-review
 badge:
   uid: learn-pr.intro-to-azure-data-science-virtual-machine.badge
