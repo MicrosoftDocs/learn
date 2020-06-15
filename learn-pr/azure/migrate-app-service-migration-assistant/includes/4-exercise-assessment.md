@@ -1,13 +1,13 @@
-Now that you've deployed the Virtual Machines containing your web application to the sandbox environment, you'll use the Azure App Service Migration Assistant to perform an assessment and migration to Azure App Service.
+Now that you've deployed the virtual machine containing your web application to the sandbox environment, you'll use the Azure App Service Migration Assistant to perform an assessment and migration to Azure App Service.
 
 > [!Important]
-> This module assumes you've successfully completed the steps in a previous unit and have activated the sandbox and run the first setup script.  If you haven't, go back to the previous unit and complete the unit titled "Exercise - Setup the environment" before continuing on.
+> This module assumes you've successfully completed the steps in unit 2 and have activated the sandbox and run the first setup script.  If you haven't, go back and complete the unit titled "Exercise - Setup the environment" before continuing on.
 
 ## Exercise steps
 
-In this exercise, you'll complete the setup steps, log into your Azure account and work in a sandbox environment provisioned for you.  You'll remotely connect to the Virtual Machine (VM) that was set up for this exercise, and perform an assessment using the Azure App Service Migration Assistant already installed on the VM.
+In this exercise, you'll complete the setup steps, log into your Azure account and work in a sandbox environment provisioned for you.  You'll remotely connect to the VM that was set up for this exercise, and perform an assessment using the Azure App Service Migration Assistant already installed on the VM.
 
-1. Copy and paste the following script into the Azure Cloud Shell on the right, then execute the script by selecting <key>enter</key>.
+1. Copy and paste the following script into the Azure Cloud Shell on the right, then execute the script by selecting <kbd>Enter</kbd>.
 
 ```bash
 ./finish.sh
@@ -18,7 +18,7 @@ This script will wait for the previous script to complete (from the second unit)
 
 Once it is complete, you should see the credentials for the VM that was provisioned in the sandbox.
 
-2. In a separate tab in your web browser, navigate and log into to The Azure Portal using the same account you're logged into while taking this module.  Navigate to: [https://portal.azure.com](https://portal.azure.com?azure-portal=true).
+2. Click [here](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to navigate to the Azure portal in a new browser tab.
 
 In the upper-right hand corner, under your account user name, you should see that you're logged in to the directory "Microsoft Learn Sandbox".
 
@@ -40,7 +40,7 @@ The file webvm.rdp is downloaded to your local computer.
 
 6. Open the webvm.rdp file.  You'll be prompted for the VM's security credentials on the Windows Security dialog.  Select "Use a different account", then copy and paste the username and password from step 1 into the dialog and select OK.  When the Remote Desktop Connection dialog appears warning you about the remote computer's security certificate, select Yes.  The remote desktop will open for the VM.
 
-7. On the remote desktop, open Internet Explorer and navigate to: `http://localhost`.  Confirm that the "Parts Unlimited" web site is successfully running.
+7. On the remote desktop, open Internet Explorer and navigate to: `http://localhost`.  Confirm that the "Parts Unlimited" web site is successfully running. This site is hosted in IIS in the virtual machine and connects to an Azure SQL database. Over the course of this exercise, you will perform a migration assessment on this site and then migrate it to App Service.
 
 ![Screenshot of Parts Unlimited website running on the remote VM at localhost.](../media/4-exercise-assessment-04.png)
 

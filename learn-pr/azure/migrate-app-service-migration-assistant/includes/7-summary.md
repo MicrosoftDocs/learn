@@ -6,6 +6,8 @@ Without the Azure App Service Migration Assistant, you may have needed to manual
 
 The Azure App Service Migration Wizard provides dramatic business impact, speeding your efforts in moving to the cloud.
 
+[!INCLUDE[](../../../includes/azure-sandbox-cleanup.md)]
+
 ## Next steps
 
 If you are using this as a guide to perform your own web application migration, you will definitely want to think about those steps we did not perform in the exercise, namely:
@@ -22,12 +24,8 @@ If your next step is to migrate your data from an on-premises SQL Server to an A
 
 ## Additional reading
 
-[Azure App Service Migration Assistant wiki](https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks?azure-portal=true)
-
-[Azure App Service Hybrid Connections](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections?azure-portal=true)
-
-[Overview of Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=sql-server-2017)
-
-[App Service overview](https://docs.microsoft.com/azure/app-service/overview?azure-portal=true)
-
-[Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](https://docs.microsoft.com/learn/modules/assess-convert-sql-server-databases-using-dma/)
+- [Azure App Service Migration Assistant wiki](https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks)
+- [Azure App Service Hybrid Connections](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections)
+- [Overview of Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=sql-server-2017)
+- [App Service overview](https://docs.microsoft.com/azure/app-service/overview)
+- [Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](https://docs.microsoft.com/learn/modules/assess-convert-sql-server-databases-using-dma/)
