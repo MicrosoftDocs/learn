@@ -3,7 +3,7 @@ uid: learn.reactors.pandas-data-science.3-data-structures-dataframes
 title: 'Data structures: DataFrames object'
 metadata:
   title: 'Data structures: DataFrames object'
-  description: Learn about one of the primary Pandas data structures, the DataFrames object.
+  description: Learn about one of the primary pandas data structures, the DataFrames object.
   ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
