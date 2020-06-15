@@ -1,4 +1,4 @@
-A *hyperparameter* is a machine learning paramater you set to help you get the most accurate results when you start machine learning. Tuning hyperparameters means finding the optimum combination of parameters to optimize the accuracy of your results or the answer to the question you have about your dataset. Then, you cross-validate to verify the accuracy of your hyperparameters. We'll cross-validate the model by training it several times, each time using different subsets of the original dataset for training and testing, and then average the scores from each run. 
+A *hyperparameter* is a machine learning paramater you set to help you get the most accurate results when you begin machine learning. Tuning hyperparameters means finding the optimum combination of parameters to optimize the accuracy of your results or the answer to the question you have about your dataset. Then, you cross-validate to verify the accuracy of your hyperparameters. We'll cross-validate the model by training it several times, each time using different subsets of the original dataset for training and testing, and then average the scores from each run. 
 
 ## Tune the hyperparameters
 
@@ -122,7 +122,7 @@ Is the cross-validated score higher or lower than the score returned by the mode
 Data scientists typically use either 5 or 10 folds for cross-validation, depending on the size of the dataset. Use the next cell to cross-validate the model using 10 folds rather than 5, and then print the mean of all the scores. Does the resulting score differ dramatically from the preceding output?
 
 > [!NOTE]
-> SARAH: Should we add a solution and output for this exercise? Thanks.
+> **Sarah** TBD. Should we add a solution and output for this exercise? Thanks.
 
 <br />
 
