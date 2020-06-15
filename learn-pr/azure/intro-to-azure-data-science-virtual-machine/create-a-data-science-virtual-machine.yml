@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.intro-to-azure-data-science-virtual-machine.create-a-data-science-virtual-machine
+metadata:
+  title: Create a Data Science Virtual Machine
+  description: tk
+  ms.date: 2020-07-01
+  author: lobrien
+  ms.author: laobri
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+  ROBOTS: NOINDEX
+title: Create a Data Science Virtual Machine
+durationInMinutes: 1
+content: |
+  [!include[](includes/create-a-data-science-virtual-machine.md)]
