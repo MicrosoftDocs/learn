@@ -52,7 +52,7 @@ The corresponding test plan file, *LoadTest.jmx*, specifies this variable and us
 When you run JMeter from the command line, you use the `-J` argument to set the `hostname` property. Here's an example:
 
 ```bash
-apache-jmeter-5.2/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
+apache-jmeter-5.3/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
 ```
 
 Here you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable points to your site's host name that runs on App Service in your **staging** environment.
@@ -60,7 +60,7 @@ Here you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable p
 When the agent runs, this variable is automatically exported to the agent as an environment variable. So your pipeline configuration can run JMeter this way:
 
 ```bash
-apache-jmeter-5.2/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
+apache-jmeter-5.3/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
 ```
 
 Let's add the pipeline variable now, before you update your pipeline configuration. To do so:
