@@ -28,7 +28,7 @@ An MDM or MAM solution must accomplish the following tasks:
 
 Microsoft Endpoint Manager combines these services and tools in one location. You may know and already be using these services and tools, including Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, co-management, and Windows Autopilot. These services are part of the Microsoft 365 stack of services to help protect your organization's endpoints, by securing access, protecting data, and responding to and managing risk.
 
-https://docs.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune#try-the-interactive-guide
+<!-- https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune#try-the-interactive-guide -->
 
 ## Learning objectives
 

@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/9-device-enrollment-methods.md)]
+  [!include[](includes/8-device-enrollment-methods.md)]
