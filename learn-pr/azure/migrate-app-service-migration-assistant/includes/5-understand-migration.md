@@ -16,6 +16,18 @@ After a successful migration, you'll need to perform any post-migration tasks.  
 
 You may also decide to change the App Service hosting plan and other settings like autoscaling and deployment slots.  
 
+### Migration scenario
+
+The following diagram describes a typical web application hosting architecture where the web server is deployed in a DMZ and an application server (a web api accessible via HTTP) and database server are hosted behind a firewall in an intranet zone.
+
+![Diagram of a typical web app deployment scenario with app services and data deployed in an Intranet zone and a DMZ.](../media/5-understand-migration-01.png)
+
+After migration, the web site and the web api would be hosted on a single App Service web app.  The database would be moved to an Azure SQL Database instance.  Both would be deployed to a single Resource group.
+
+![Diagram of a web app migration to Azure App Service and Azure SQL Database.](../media/5-understand-migration-02.png)
+
+As a result of the migration to Azure Database, the customer would experience increased resiliency and redundancy.
+
 ## App Service plans
 
 During migration, the Migration Assistant will:
@@ -48,7 +60,11 @@ The Azure App Service Migration Assistant does not migrate your database to Azur
 
 While you can use a hybrid connection in a production environment, you may want to consider the impact on performance. Given that, you may think about a hybrid connection as a temporary, interim solution before you move your data to Azure SQL. Hybrid connections to your data may also be useful in a development or testing scenario.
 
-If you select the "setup a hybrid connection" option, the Migration Assistant will prompt you to download and run the Hybrid Connection Manager (HCM) on your server.  The HCM connects your web app running in Azure App Service to the Service Bus Relay to facilitate a connection with your on premises database end point.  For more information, see "Azure App Service Hybrid Connections". (A link provided in the Additional Reading section at the end of this module).
+If you select the "setup a hybrid connection" option, the Migration Assistant will prompt you to download and run the Hybrid Connection Manager (HCM) on your server.  The HCM connects your web app running in Azure App Service to the Service Bus Relay to facilitate a connection with your on premises database end point.  The following diagram provides a high level overview of the relationship between your migrated web app, your on-premises database, the Hybrid Connection Manager, and the relay hybrid connection.
+
+![Diagram of a web app connected to a database endpoint via the Hybrid Connection Manager on-premises and the Relay hybrid connection in Azure.](../media/5-understand-migration-03.png)
+
+For more information, see "Azure App Service Hybrid Connections". (A link provided in the Additional Reading section at the end of this module).
 
 To perform a migration, you can use the Data Migration Assistant.  For more information, see "Overview of Data Migration Assistant". (A link provided in the Additional Reading section at the end of this module).
 
