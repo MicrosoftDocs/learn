@@ -28,7 +28,7 @@ products:
 prerequisites: None
 units:
   - learn.learn.azure.nodejs.files.1-introduction
-  - learn.learn.azure.nodejs.files.2-paths
-  - learn.learn.azure.nodejs.files.3-exercise-paths
+  - learn.learn.azure.nodejs.files.2-working-with-the-file-system
+  - learn.learn.azure.nodejs.files.3-exercise-working-with-the-file-system
 badge:
   uid: learn.learn.azure.nodejs.files.badge
