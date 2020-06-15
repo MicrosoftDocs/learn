@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-endpoint-manager.10-protect-your-organizations-data
+uid: learn.intro-to-endpoint-manager.3-endpoint-protection-concepts
 title: Protect your organization's data
 metadata:
   title: Protect your organization's data
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/10-protect-your-organizations-data.md)]
+  [!include[](includes/3-endpoint-protection-concepts.md)]

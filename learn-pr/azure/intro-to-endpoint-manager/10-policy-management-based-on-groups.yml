@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-endpoint-manager.11-policy-management-based-on-groups
+uid: learn.intro-to-endpoint-manager.10-policy-management-based-on-groups
 title: Policy management based on groups
 metadata:
   title: Policy management based on groups
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
-  [!include[](includes/11-policy-management-based-on-groups.md)]
+  [!include[](includes/10-policy-management-based-on-groups.md)]
