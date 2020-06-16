@@ -69,7 +69,7 @@ There are a few free-to-use CRs, but the company required that you use Azure Con
 
 ### Connect the AKS cluster to the ACR
 
-Since we are working with a private container registry, we'll need to tell our AKS cluster to authenticate with that registry so it can download the stored images. Luckily, using both ACR and AKS this can be easily done.
+Since we are working with a private container registry, we'll need to tell our AKS cluster to authenticate with that registry so it can download the stored images. Luckily, using both ACR and AKS this integration can be easily done.
 
 1. Check if you have the `aks-preview` extension enabled in your CLI
 
@@ -77,7 +77,7 @@ Since we are working with a private container registry, we'll need to tell our A
     az extension list
     ```
 
-1. If the list is empty. Run the following command on your terminal to update your AKS cluster
+1. If the list is empty, Run the following command on your terminal to update your AKS cluster
 
     ```bash
     az aks update -n contoso-kubernetes-cluster -g contoso-aks --attach-acr <your-registry-name>
