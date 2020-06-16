@@ -3,7 +3,7 @@ uid: learn.reactors.text-classification-naive-bayes
 metadata:
   title: Text classification for Naive Bayes
   description: Use conditional probability and Bayes classification to analyze an email dataset for spam and ham.
-  ms.date: 05/15/2020
+  ms.date: 06/30/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

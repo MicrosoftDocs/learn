@@ -1,8 +1,8 @@
-A *hyperparameter* is a machine learning paramater you set to help you get the most accurate results when you start machine learning. Tuning hyperparameters means finding the optimum combination of parameters to optimize the accuracy of your results or the answer to the question you have about your dataset. Then, you cross-validate to verify the accuracy of your hyperparameters. We'll cross-validate the model by training it several times, each time using different subsets of the original dataset for training and testing, and then average the scores from each run. 
+A *hyperparameter* is a machine learning paramater you set to help you get the most accurate results when you begin machine learning. Tuning hyperparameters means finding the optimum combination of parameters to optimize the accuracy of your results or the answer to the question you have about your dataset. Then, you cross-validate to verify the accuracy of your hyperparameters. We'll cross-validate the model by training it several times, each time using different subsets of the original dataset for training and testing, and then average the scores from each run. 
 
 ## Tune the hyperparameters
 
-One way to find the optimum combination of parameters provided to a learning algorithm in scikit-learn is to use `GridSearchCV`, which trains the model multiple times with all the different combinations of parameters that you specify. Let's use `GridSearchCV` to find the optimum values for the SVM's `C` and `gamma` parameters, which have an important effect on SVM models that use an RBF kernel. `C` determines how tolerant the model is of misclassified data points during training. The higher the value of `C`, the more aggressive the model is at finding a classification boundary that minimizes the number of misclassified points. The `gamma` parameter controls the tightness of the fit to the training data. Generally speaking, lower values for `C` and `gamma` are preferred because higher values can lead to overfitting. Lower values typically produce a model that generalizes better.
+One way to find the optimum combination of parameters provided to a learning algorithm in scikit-learn is to use `GridSearchCV`, which trains the model multiple times with all the different combinations of parameters that you specify. Let's use `GridSearchCV` to find the optimum values for the SVM `C` and `gamma` parameters, which have an important effect on SVM models that use an RBF kernel. `C` determines how tolerant the model is of misclassified data points during training. The higher the value of `C`, the more aggressive the model is at finding a classification boundary that minimizes the number of misclassified points. The `gamma` parameter controls the tightness of the fit to the training data. Generally speaking, lower values for `C` and `gamma` are preferred because higher values can lead to overfitting. Lower values typically produce a model that generalizes better.
 
 We'll use `GridSearchCV` to find the `C` and `gamma` that work best together. Note that training will take longer now. Because we're testing five different `C` values and seven different `gamma` values, the model will be trained 35 times. (Good thing we reduced the number of dimensions by first using PCA!)
 
@@ -16,7 +16,7 @@ grid = GridSearchCV(model, params, cv=5)
 grid.fit(x_train, y_train)
 ```
 
-Here's the output:
+The output is:
 
 ```Output
 GridSearchCV(cv='warn', error_score='raise-deprecating',
@@ -32,7 +32,7 @@ GridSearchCV(cv='warn', error_score='raise-deprecating',
        scoring=None, verbose=0)
 ```
 
-Now let's find out what the optimum values for `C` and `gamma` are, and then replace the model with the optimized model:
+Now, let's find out what the optimum values for `C` and `gamma` are, and then replace the model with the optimized model:
 
 ```python
 print(grid.best_params_)
@@ -98,13 +98,13 @@ The output is:
 Text(89.18, 0.5, 'Predicted label')
 ```
 
-:::image type="content" alt-text="A table that shows a predicted label axis and an actual label axis" source="../media/predicted-label.png" loc-scope="Azure":::
+:::image type="content" alt-text="Table that shows a predicted label axis and an actual label axis." source="../media/predicted-label.png" loc-scope="Azure":::
 
 The model correctly identified Colin Powell 49 times out of 50, Donald Rumsfeld 23 times out of 25, and so on. That's not bad. And it's a great example of SVMs at work. It would be challenging, perhaps impossible, to do this well by using more conventional learning algorithms such as logistic regression.
 
 ## Cross-validate the model
 
-Currently, we are using a randomly selected 20% of the faces in the dataset to test the model and quantify its accuracy. Unfortunately, you can (and almost always will) get different results depending on which 20% of the dataset you select. For a more reliable measure of accuracy, you can cross-validate the model by training it several times, each time using different subsets of the original dataset for training and testing, and averaging the scores from each run. (This is precisely what `GridSearchCV` does when it evaluates the effect of different parameter combinations.) scikit's `cross_validate` function makes this easy. Let's finish up by using `GridSearchCV` to measure the accuracy of our model. We'll divide the original dataset into five folds and train the model five times, each time using a different fold for testing and the remaining folds for training.
+Currently, we are using a randomly selected 20% of the faces in the dataset to test the model and quantify its accuracy. Unfortunately, you can (and almost always will) get different results depending on which 20% of the dataset you select. For a more reliable measure of accuracy, you can cross-validate the model by training it several times, each time using different subsets of the original dataset for training and testing, and then averaging the scores from each run. (This is precisely what `GridSearchCV` does when it evaluates the effect of different parameter combinations.) The scikit `cross_validate` function makes this easy. Let's finish up by using `GridSearchCV` to measure the accuracy of our model. We'll divide the original dataset into five folds and train the model five times, each time using a different fold for testing and the remaining folds for training.
 
 ```python
 from sklearn.model_selection import cross_validate
@@ -121,28 +121,28 @@ Is the cross-validated score higher or lower than the score returned by the mode
 
 Data scientists typically use either 5 or 10 folds for cross-validation, depending on the size of the dataset. Use the next cell to cross-validate the model using 10 folds rather than 5, and then print the mean of all the scores. Does the resulting score differ dramatically from the preceding output?
 
-> [!NOTE]
-> SARAH: Should we add a solution and output for this exercise? Thanks.
+
+> **Sarah** TBD. Should we add a solution and output for this exercise? Thanks.
 
 <br />
 
 <details>
 
-<summary>Hint <i>(expand to reveal)</i></summary>
+   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Copy and paste the final two lines in the preceding code cell and change `cv` to 10.
-   
-In a possible solution, the input is: 
+   Copy and paste the final two lines in the preceding code cell and change `cv` to <bold>10</bold>.
+      
+   In a possible solution, the input is: 
 
-```python
-TBD
-```
+   ```python
+   TBD
+   ```
 
-The output is:
+   The output is:
 
-```Output
-TBD
-```
+   ```Output
+   TBD
+   ```
 
 </details>
 

@@ -1,4 +1,4 @@
-In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection?azure-portal=true). The dataset contains 5,574 messages collected for SMS spam research and tagged as either "spam" or "ham." The dataset files contain one message per line. Each line is composed of the tag and the raw text of the SMS message. For example:
+In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection?azure-portal=true). The dataset contains 5,574 messages collected for SMS spam research and tagged as either _spam_ or _ham_. The dataset files contain one message per line. Each line is composed of the tag and the raw text of the SMS message. For example:
 
 | Class	| Message | 
 | :----- | :--------- |
@@ -7,12 +7,11 @@ In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics
 
 Let’s import pandas and load the dataset. The path name in the following code is case-sensitive.
 
-> **Sarah** TBD, it occurred to me to add a tip that links to the environment setup instructions. What do you think?
+> **Sarah** TBD. It occurred to me to add a tip that links to the environment setup instructions. What do you think?
 
 > [!TIP]
-> Review steps TBD--add link for setting up the environment.
+> Review steps to set up the learning environment, TBD--add link.
 >
-
 
 ```python
 import pandas as pd 
@@ -21,7 +20,7 @@ df = pd.read_csv('Data/SMSSpamCollection', sep='\t', names=['Class', 'Message'])
 
 ### Try it yourself
 
-> **Sarah** TBD, please review the solution/answer I wrote for the following exercise. Thanks.
+> **Sarah** TBD. Pease review the solution/answer I wrote for the following exercise. Thanks.
 
 What do the `sep` and `names` parameters do in the preceding code?
 

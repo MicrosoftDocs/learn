@@ -17,7 +17,7 @@ Learn more about [pricing for Cognitive Services](https://azure.microsoft.com/pr
 1. In the **Microsoft Cognitive Services Terms** window, accept the terms of the free trial, and then select **Next**.
 1. In the **Sign-in to Continue** window, select your preferred way to sign in to your Azure account.
 
-When you have your API keys in hand, you're ready to start. Substitute the API key that you get for the 7-day trial below where it reads ACCOUNT_KEY.
+When you have your API keys in hand, you're ready to start. Substitute the API key that you get for the 7-day trial below where it reads ACCOUNT_KEY:
 
 ```python
 # subscription_key = 'ACCOUNT_KEY'
@@ -30,14 +30,14 @@ assert subscription_key
 text_analytics_base_url = "https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/"
 ```
 
-We also need to import the NumPy and requests modules.
+We also need to import the NumPy and requests modules:
 
 ```python
 import numpy as np
 import requests
 ```
 
-The Azure Text Analytics API has a hard limit of 1,000 calls at a time, so we will need to split our 5,572 SMS messages into at least six chunks to run them through Azure.
+The Azure Text Analytics API has a hard limit of 1,000 calls at a time, so we need to split our 5,572 SMS messages into at least six chunks to run them through Azure:
 
 ```python
 chunks = np.array_split(df, 6)
@@ -45,6 +45,8 @@ chunks = np.array_split(df, 6)
 for chunk in chunks:
     print(len(chunk))
 ```
+
+The output is:
 
 ```Output
 929
@@ -55,7 +57,7 @@ for chunk in chunks:
 928
 ```
 
-Two things that cognitive services like those provided by Azure offer are language identification and sentiment analysis. Both are relevant for our dataset, so we will prepare our data for both by submitting them as JavaScript Object Notation (JSON) documents. We'll prepare the data for language identification first.
+Two things that cognitive services like those provided by Azure offer are language identification and sentiment analysis. Both are relevant for our dataset, so we'll prepare our data for both by submitting them as JavaScript Object Notation (JSON) documents. We'll prepare the data for language identification first:
 
 ```python
 # Prepare the header for the JSON document including your subscription key
@@ -88,7 +90,7 @@ for i in range(len(chunks)):
     chunks[i]['Language'] = np.array(lang_list)
 ```
 
-Now, we need perform similar preparation of the data for sentiment analysis.
+Now, we need perform similar preparation of the data for sentiment analysis:
 
 ```python
 # Supply the URL for the sentiment-analysis API.
@@ -116,7 +118,7 @@ for i in range(len(chunks)):
     chunks[i]['Sentiment'] = np.array(sent_list)
 ```
 
-We now need to reassemble our chunked DataFrame.
+Now, we need to reassemble our chunked DataFrame:
 
 ```python
 azure_df = pd.DataFrame(columns=['Index', 'Class', 'Message', 'Language', 'Sentiment'])
@@ -131,7 +133,7 @@ azure_df.drop(['Index'], axis=1, inplace=True)
 azure_df.head()
 ```
 
-Here's the output:
+The output is:
 
 ```Output
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -151,13 +153,13 @@ Here's the output:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-We can also look at the tail of the DataFrame to check that our indexing worked as expected.
+We can also look at the tail of the DataFrame to check that our indexing worked as expected:
 
 ```python
 azure_df.tail()
 ```
 
-Here's the output:
+The output is:
 
 ```Output
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -177,7 +179,7 @@ Here's the output:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-Let's see if all of the SMS messages were in English (and, if not, how many messages of which languages we are looking at).
+Let's see if all of the SMS messages were in English (and, if not, how many messages of which languages we are looking at):
 
 ```python
 azure_df.groupby('Language')['Message'].count().plot(kind='bar')
@@ -191,7 +193,7 @@ The output is:
 
 :::image type="content" alt-text="Histogram chart that demonstrates the results of language analysis." source="../media/language-analysis.png" loc-scope="Azure":::
 
-So the overwhelming majority of the messages are in English, although we have several additional languages in our dataset. Let's look at the actual numbers.
+The overwhelming majority of the messages are in English, although we have several additional languages in our dataset. Let's look at the actual numbers.
 
 ### Try it yourself
 
@@ -204,7 +206,7 @@ Now use the `groupby` method to display actual counts of the languages detected 
     azure_df.groupby('Language')['Message'].count()
     ```
 
-    The output it:
+    The output is:
 
     ```Output
     Language
@@ -231,11 +233,13 @@ Now use the `groupby` method to display actual counts of the languages detected 
 
 We have a surprising array of languages, perhaps, but the non-English messages are really just outliers and should have no real impact on the spam detection.
 
-Now let's look at the sentiment analysis for our messages.
+Now, let's look at the sentiment analysis for our messages:
 
 ```python
 azure_df.groupby('Class')['Sentiment'].plot(kind='hist', bins=50)
 ```
+
+The output is:
 
 ```Output
 Class
@@ -246,7 +250,7 @@ Name: Sentiment, dtype: object
 
 :::image type="content" alt-text="Histogram chart that demonstrates the results of sentiment analysis." source="../media/sentiment-analysis.png" loc-scope="Azure":::
 
-It is perhaps not too surprising that the sentiments represented in the dataset should be bifurcated: SMS is a medium that captures extremes better than nuanced middle ground. That said, the number of dead-center messages is interesting. The proportion of spam messages right in the middle is also interesting. Let's break the two classes (ham and spam) into separate histograms to get a better look.
+It's perhaps not too surprising that the sentiments represented in the dataset should be bifurcated: SMS is a medium that captures extremes better than nuanced middle ground. That said, the number of dead-center messages is interesting. The proportion of spam messages right in the middle is also interesting. Let's break the two classes (ham and spam) into separate histograms to get a better look.
 
 ### Try it yourself
 

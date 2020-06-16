@@ -1,11 +1,14 @@
 To get started, we'll load the dataset, which includes importing the NumPy and pandas Python libraries. Then, we'll train the SVM model for image classification by using the faces in the dataset.
 
+> **Sarah** TBD. It occurred to me to add a tip that links to the environment setup instructions. What do you think?
+
 > [!TIP]
-> Review steps TBD link for setting up the learn environment.
+> Review steps to set up the learning environment, TBD--add link.
+>
 
 ## Load the dataset
 
-The first step is to import facial images from the dataset. LFW contains more than 13,000 facial images collected from the web. Of the more than 5,000 people represented in the dataset, 1,680 have two or more facial images, while only five have 100 or more. We'll set the minimum number of faces per person to 100, which means that five sets of faces corresponding to five famous people will be imported. Each facial image is labeled with the name of the person that the face belongs to.
+The first step is to import facial images from the dataset. LFW contains more than 13,000 facial images collected from the web. Of the more than 5,000 people represented in the dataset, 1,680 have two or more facial images, and only five have 100 or more. We'll set the minimum number of faces per person to 100, which means that five sets of faces that correspond to five famous people will be imported. Each facial image is labeled with the name of the person the face belongs to.
 
 ```python
 import numpy as np
@@ -50,10 +53,10 @@ The output is:
 <matplotlib.axes._subplots.AxesSubplot at 0x7f0ed8e65f60>
 ```
 
-:::image type="content" alt-text="Two diagrams that show 2-D and 3-D data planes" source="../media/lfw.png" loc-scope="Azure":::
+:::image type="content" alt-text="Bar chart that show the number of images each for George W. Bush, Gerhard Schroeder, Donald Rumsfeld, Tony Blair, and Colin Powell." source="../media/lfw.png" loc-scope="Azure":::
 
 
-The dataset is not very well balanced, but that's not terribly concerning because the net effect will probably be that the model is better at recognizing certain people than others. Let's plot some of the facial images so we can see what they look like:
+The dataset is not very well balanced, but that's not too concerning because the net effect will probably be that the model is better at recognizing certain people than others. Let's plot some of the facial images so we can see what they look like:
 
 ```python
 fig, ax = plt.subplots(3, 8, figsize=(18, 10))
@@ -64,7 +67,7 @@ for i, axi in enumerate(ax.flat):
 
 Here's the output:
 
-:::image type="content" alt-text="A panel of 24 greyscale photos of five famous political leaders" source="../media/faces.png" loc-scope="Azure":::
+:::image type="content" alt-text="A panel of 24 grayscale photos of five famous political leaders" source="../media/faces.png" loc-scope="Azure":::
 
 ## Train an SVM model
 
@@ -76,7 +79,7 @@ from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(faces.data, faces.target, train_size=0.8, random_state=42)
 ```
 
-Now let's create an SVM classifier and train it using the 80% of the dataset reserved for training.
+Now, let's create an SVM classifier and train it by using the 80% of the dataset reserved for training:
 
 ```python
 from sklearn.svm import SVC
@@ -92,7 +95,7 @@ SVC(C=1.0, cache_size=200, class_weight='balanced', coef0=0.0,
   tol=0.001, verbose=False)
 ```
 
-Next, let's use the 20% of the dataset set aside for testing to assess the accuracy of the model.
+Next, let's use the 20% of the dataset set aside for testing to assess the accuracy of the model:
 
 ```python
 model.score(x_test, y_test)
@@ -102,5 +105,8 @@ The output is `0.4649122807017544`.
 
 That's not very encouraging, but we're far from done.
 
-SVM can use several types of kernels to fit a mathematical model to a dataset. The default kernel type is one called the [radial-basis function (RBF)](https://wikipedia.org/wiki/Radial_basis_function?azure-portal=true), which scikit-learn abbreviates _rbf_. You can specify the kernel type with the SVC function's `kernel` parameter. Other common values include _linear_, _poly_, and _sigmoid_. It could be that another kernel type would fit the data better. But there's something else that might help, too. That "something else" is [principal component analysis (PCA)](https://wikipedia.org/wiki/Principal_component_analysis?azure-portal=true).
+SVM can use several types of kernels to fit a mathematical model to a dataset. The default kernel type is one called the [radial-basis function (RBF)](https://wikipedia.org/wiki/Radial_basis_function?azure-portal=true), which scikit-learn abbreviates as `rbf`. You can specify the kernel type by using the SVC function's `kernel` parameter. Other common values include `linear`, `poly`, and `sigmoid`. It could be that another kernel type would fit the data better. But there's something else that might help, too. That "something else" is [principal component analysis (PCA)](https://wikipedia.org/wiki/Principal_component_analysis?azure-portal=true).
+
+
+
 

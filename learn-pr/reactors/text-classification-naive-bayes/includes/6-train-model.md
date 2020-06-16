@@ -25,7 +25,7 @@ The output is:
 MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
 ```
 
-Our model is now fitted. However, before we run our predictions on all of our test data, let's see what our model says about some artificial data in order to get a better sense of what our model will do with all of the messages in our test dat. From the word clouds we constructed earlier, we can see that "call" and "free" are both prominent words among our spam messages, so let's create our own spam message and see how our model classifies it.
+Our model is now fitted. However, before we run our predictions on all of our test data, let's see what our model says about some artificial data in order to get a better sense of what our model will do with all of the messages in our test dat. From the word clouds we constructed earlier, we can see that _call_ and _free_ are both prominent words among our spam messages, so let's create our own spam message and see how our model classifies it:
 
 ```python
 pred = naivebayes_model.predict(CountVect.transform(['Get 50% off your next purchase. Call now']))
@@ -73,7 +73,7 @@ X_test_data = CountVect.transform(X_test)
 X_test_data.shape
 ```
 
-Here's the output:
+The output is:
 
 ```Output
 (1672, 11425)
@@ -105,7 +105,7 @@ Run the predictions for the test data.
 
 ***
 
-Now it's time to evaluate our model's performance.
+Now, it's time to evaluate our model's performance.
 
 ```python
 from sklearn.metrics import classification_report, confusion_matrix
@@ -113,7 +113,8 @@ from sklearn.metrics import classification_report, confusion_matrix
 print(classification_report(predictions, y_test))
 ```
 
-Here's the output:
+The output is:
+
 ```Output
              precision    recall  f1-score   support
 

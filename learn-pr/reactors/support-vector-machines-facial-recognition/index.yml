@@ -3,7 +3,7 @@ uid: learn.reactors.support-vector-machines-facial-recognition
 metadata:
   title: Support vector machines and facial recognition
   description: Learn how to use SVM models to better support complex data and questions in a facial recognition example.
-  ms.date: 05/15/2020
+  ms.date: 06/30/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

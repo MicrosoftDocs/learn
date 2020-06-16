@@ -1,24 +1,25 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
-Principal component analysis (PCA) is an algorithm that helps us get a dataset into a working condition by removing dimensions that must be calculated in an analysis of the dataset. 
+
+Principal component analysis (PCA) is an algorithm that helps us get a dataset into working condition by removing dimensions that must be calculated in an analysis of the dataset. 
 
 ## PCA in theory
 
-One way we reduce the number of dimensions we have to work with is by reducing the number of features considered in an analysis. PCA provides another way: reducing the number of dimensions that we have to work with by projecting our feature space into a lower-dimensional space. The reason why we can do this is that in most real-world problems, data points are not spread uniformly across all dimensions. Some features might be near constant, while others are highly correlated, which means that those data points lie close to a lower-dimensional subspace.
+One way we reduce the number of dimensions we have to work with is by reducing the number of features considered in an analysis. PCA provides another way: reducing the number of dimensions that we have to work with by projecting our feature space into a lower-dimensional space. We can do this because in most real-world problems, data points aren't spread uniformly across all dimensions. Although some features might be near constant, others are highly correlated and those data points lie close to a lower-dimensional subspace.
 
-In the following image, the data points are not spread across the entire plane, but are nicely clumped, roughly in an oval. Because the cluster (or, indeed, any cluster) is roughly elliptical, it can be mathematically described by two values: its major (long) axis and its minor (short) axis. These axes form the *principal components* of the cluster.
+In the following image, the data points aren't spread across the entire plane, but are clumped roughly in an oval. Because the cluster (or, indeed, any cluster) is roughly elliptical, it can be mathematically described by two values: its major (long) axis and its minor (short) axis. These axes form the *principal components* of the cluster.
 
-:::image type="content" alt-text="A screenshot of two columns of data plots. The second column shows three dimensions of data that appear overlapping in the data plot in the first column." source="../media/pca.png" loc-scope="Azure":::
+:::image type="content" alt-text="Screenshot of two columns of data plots. The second column shows three dimensions of data that appear overlapping in the data plot in the first column." source="../media/pca.png" loc-scope="Azure":::
 
-In fact, we can construct a whole new feature space around this cluster, defined by two eigenvectors (the vectors that define the linear transformation to this new feature space), $c_{1}$ and $c_{2}$. Better still, we don't have to consider all of the dimensions of this new space. Intuitively, we can see that most of the points lie on or close to the line that runs through $c_{1}$. So, if we project the cluster down from two dimensions to that single dimension, we capture most of the information about this data sense while simplifying our analysis. This ability to extract most of the information from a dataset by considering only a fraction of its definitive eigenvectors forms the heart of principal component analysis (PCA).
+In fact, we can construct a whole new feature space around this cluster that's defined by two *eigenvectors* (the vectors that define the linear transformation to this new feature space): $c_{1}$ and $c_{2}$. Better still, we don't have to consider all of the dimensions of this new space. Intuitively, we can see that most of the points lie on or close to the line that runs through $c_{1}$. If we project the cluster down from two dimensions to that single dimension, we capture most of the information about this data sense while simplifying our analysis. This ability to extract most of the information from a dataset by considering only a fraction of its definitive eigenvectors forms the heart of PCA.
 
 ## Import modules and dataset
 
-You will need to clean and prepare the data in order to conduct PCA on it, so pandas will be essential. You will also need NumPy, a bit of scikit-learn, and pyplot.
+You must first clean and prepare the data to conduct PCA on it, so pandas will be essential. You also need NumPy, a bit of scikit-learn, and pyplot.
 
-> **Sarah** TBD, it occurred to me to add a tip that links to the environment setup instructions. What do you think?
+> **Sarah** TBD. It occurred to me to add a tip that links to the environment setup instructions. What do you think?
 
 > [!TIP]
-> Review steps TBD--add link for setting up the environment.
+> Review steps to set up the learning environment, TBD--add link.
 >
 
 To add these libraries, run this code:
@@ -34,13 +35,13 @@ import matplotlib.pyplot as plt
 
 The dataset we’ll use here is the same one that's drawn from the [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/?azure-portal=true) that you prepared in the preceding module. 
 
-Remember to set the encoding to `latin_1` (for those darn µg):
+Remember to set the encoding to `latin_1` (for µg):
 
 ```python
 df = pd.read_csv('Data/USDA-nndb-combined.csv', encoding='latin_1')
 ```
 
-We can check the number of columns and rows by using the `info()` method for the `DataFrame`:
+We can check the number of columns and rows by using the `info()` method for the DataFrame:
 
 ```python
 df.info()
@@ -113,7 +114,7 @@ memory usage: 3.7+ MB
 
 ### Try it yourself
 
-Can you think of a more concise way to check the number of rows and columns in a `DataFrame`?
+Can you think of a more concise way to check the number of rows and columns in a DataFrame?
 
 <br />
 
@@ -121,7 +122,7 @@ Can you think of a more concise way to check the number of rows and columns in a
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Use one of the [attributes](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html?azure-portal=true) of the <code>DataFrame</code>.
+  Use one of the [attributes](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html?azure-portal=true) of the DataFrame.
 
   Here's a possible solution:
 

@@ -1,24 +1,24 @@
-[Deep learning](https://wikipedia.org/wiki/Deep_learning?azure-portal=true) is a branch of machine learning that relies on [neural networks](https://wikipedia.org/wiki/Neural_network?azure-portal=true) to perform predictive analytics. Neural networks are built with libraries such as [TensorFlow](https://www.tensorflow.org/?azure-portal=true) and [keras](https://keras.io/?azure-portal=true). The latter is an open-source Python library that dramatically simplifies the building of neural networks. Under the hood, it uses TensorFlow and other frameworks to do the heavy lifting. With keras, you can build sophisticated neural networks with just a few lines of code and train them to classify images, analyze text for sentiment, do natural-language processing, and perform other tasks at which deep learning excels.
+[Deep learning](https://wikipedia.org/wiki/Deep_learning?azure-portal=true) is a branch of machine learning that relies on [neural networks](https://wikipedia.org/wiki/Neural_network?azure-portal=true) to perform predictive analytics. Neural networks are built by using libraries like [TensorFlow](https://www.tensorflow.org/?azure-portal=true) and [keras](https://keras.io/?azure-portal=true), an open-source Python library that dramatically simplifies the building of neural networks. Under the hood, keras uses TensorFlow and other frameworks to do the heavy lifting. With keras, you can build sophisticated neural networks with just a few lines of code, and then train the networks to classify images, analyze text for sentiment, do natural-language processing, and perform other tasks at which deep learning excels.
 
-In this exercise, you will use keras to build a series of neural networks that recognize faces. You will train them with images from the famous [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/?azure-portal=true) (LFW) dataset. Along the way, you will learn the basics of building, training, and evaluating neural networks. You will also learn about [convolutional neural networks](https://wikipedia.org/wiki/Convolutional_neural_network?azure-portal=true) (CNNs), which excel at tasks involving computer vision.
+In this exercise, you will use keras to build a series of neural networks that recognize faces. You will train the networks by using images from the famous [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/?azure-portal=true) (LFW) dataset. Along the way, you will learn the basics of building, training, and evaluating neural networks. You also will learn about [convolutional neural networks](https://wikipedia.org/wiki/Convolutional_neural_network?azure-portal=true) (CNNs), which excel at tasks that involve computer vision.
 
 :::image type="content" source="../media/lfw.png" alt-text="Panel of eight photos of political figures." loc-scope="Azure":::
 
 ## Learning objectives
 
-> **Sarah** TBD, please check the learning objectives and prereqs I derived from the module content.
+> **Sarah** TBD. Please check the learning objectives and prereqs that I derived from the module content.
 
 In this module, you will:
 
 - Use NumPy to analyze and visualize the contents of a dataset.
-- Use Keras to train a neural network.
-- Use Keras to check for training accuracy and validity accuracy in a neural network model.
+- Use keras to train a neural network.
+- Use keras to check for training and validity accuracy in a neural network model.
 - Add dropout during model training to help neural networks generalize better and increase validation accuracy.
-- Use a neural network for classification of a dataset.
+- Use a convolution neural network (CNN) for classification of a dataset.
 
 ## Prerequisites
 
 - Text classifications with Naive Bayes
 - Principal component analysis (PCA)
-- Support vector machines with facial recognition
+- Support vector machines (SVMs) with facial recognition
 
