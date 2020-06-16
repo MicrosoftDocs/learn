@@ -1,0 +1,35 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.aspnet-logging.4-asp-net-logging-exercise
+title: Exercise - Implement logging in an ASP.NET web app
+metadata:
+  title: Exercise - 
+  description: Configure Log4Net in an ASP.NET web app, and send log data to an Azure storage account, and Application Insights.
+  ms.date: 06/15/2020
+  author: coderandhiker
+  ms.author: coderandhiker
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+interactive: powershell
+azureSandbox: true
+content: |
+  [!include[](includes/4-aspnet-logging-exercise.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource: 
+      type: Microsoft.Insights/components
+      tags:
+        -name: Name
+        -value: AppInsightsLog
+    hint: "Make sure you create the Azure AppInsights account"
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: Microsoft.Storage/storageAccounts
+      tags: 
+        -name: Name
+        -value: BlobStorageAccount
+    hint: "Make sure you create the Azure Storage account"
