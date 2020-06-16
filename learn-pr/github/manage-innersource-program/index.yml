@@ -38,8 +38,8 @@ products:
 - azure
 units:
 - learn.github.manage-innersource-program.1-introduction
-- learn.github.manage-innersource-program.2-what-is-innersource
-- learn.github.manage-innersource-program.3-manage-innersource-program
+- learn.github.manage-innersource-program.2-manage-innersource-program
+- learn.github.manage-innersource-program.3-innersource-fundamentals
 - learn.github.manage-innersource-program.4-knowledge-check
 - learn.github.manage-innersource-program.5-summary
 badge:

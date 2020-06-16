@@ -2,7 +2,7 @@ Here, we discuss how you can design an InnerSource program to enjoy the best of 
 
 ## What is InnerSource?
 
-**InnerSource** is the practice of applying open source patterns to projects with a limited audience. For example, a company may establish an InnerSource program may that mirrors the structure of a typical open source project, except that it is only accessible to the employees of that company. In effect, it's an open source program behind your company's firewall. 
+**InnerSource** is the practice of applying open source patterns to projects with a limited audience. For example, a company may establish an InnerSource program that mirrors the structure of a typical open source project, except that it is only accessible to the employees of that company. In effect, it's an open source program behind your company's firewall. 
 
 ### InnerSource benefits
 
@@ -10,11 +10,11 @@ An InnerSource program can offer numerous benefits beyond what traditional close
 
 First, they *encourage transparency*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solved problems similar to the ones they're facing, and often find code and other assets that can reuse. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project. 
 
-Next, they *reduce friction*. If a consumer team is dependent on a big fix or new feature for a project owned by a different team, they have a channel through which they can propose the changes they need. And if those changes cannot be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
+Next, they *reduce friction*. If a consumer team is dependent on a bug fix or new feature for a project owned by a different team, they have a channel through which they can propose the changes they need. And if those changes cannot be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
 
 Finally, they *standardize practices*. A common challenge development organizations face is that different teams often diverge in the ways they operate. Building an InnerSource program is a great opportunity to adopt standard conventions that can be leveraged across every development team, even if they don't follow identical practices. For example, two teams may prefer different processes for accepting contributions. Having them standardize on the way they communicate their different processes makes it much easier for anyone to contribute to either. 
 
-These are just a few of the benefits enjoyed by InnerSource programs. To learn more, see [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource/?azure-portal=true).
+These examples are just a few of the benefits enjoyed by InnerSource programs. To learn more, see [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource/?azure-portal=true).
 
 ## Setting up an InnerSource program on GitHub
 
@@ -44,7 +44,7 @@ A few best practices include:
 
 - Use a descriptive repository name, such as `warehouse-api` or `supply-chain-web`.
 - Include a concise description. A sentence or two should be enough for potential users to know if the project might fit their needs.
-- Include a `README.md` file in the root of the repository. This is used by GitHub as the landing page when people visit the repository.
+- Include a `README.md` file in the root of the repository. This file is used by GitHub as the landing page when people visit the repository.
 	- Articulate the purpose and vision of the project so potential consumers understand whether it fits their needs.
 	- Offer visual aids, such as screenshots or code samples, to illustrate the project in action.
 	- Include a link to a production or demo version of the app for review.
@@ -72,7 +72,7 @@ Check out some [Awesome CONTRIBUTING.md examples](https://github.com/mntnr/aweso
 
 GitHub supports starter templates for new issues and pull requests. Use these to provide the initial description text for a newly created issue or pull request.
 
-For example, if your project has `.github/ISSUE_TEMPLATE.md`, any time a user starts the process of creating an issue, they will see this content. Rather than having to constantly reference the required details from `CONTRIBUTING.md`, they'll be able to just fill out the issue like a form using the template text.
+For example, if your project has `.github/ISSUE_TEMPLATE.md`, anytime a user starts the process of creating an issue, they will see this content. Rather than having to constantly reference the required details from `CONTRIBUTING.md`, they'll be able to just fill out the issue like a form using the template text.
 
 ![A new issue using the template](../media/2-new-issue-template.png)
 
@@ -84,7 +84,7 @@ Check out some [Awesome GitHub issue & pull request templates](https://github.co
 
 For projects that encourage external contributions, be sure to specify what workflow the project follows. The workflow should include details about where and how branches should be used for bugs and features, how pull requests should be opened, and any other details people outside the repository team should know before they push code. If you don't yet have a workflow in mind, you should consider [the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true).
 
-You should also communicate a strategy for managing releases and deployments. These parts of the workflow will impact day-to-day branching and merging, so it's important to communicate them to contributors. Learn more about how this relates to your [Git branching strategy](/azure/devops/repos/git/git-branching-guidance?azure-portal=true).
+You should communicate a strategy for managing releases and deployments. These parts of the workflow will impact day-to-day branching and merging, so it's important to communicate them to contributors. Learn more about how thiey relate to your [Git branching strategy](/azure/devops/repos/git/git-branching-guidance?azure-portal=true).
 
 ### Measuring program success
 

@@ -22,7 +22,7 @@ quiz:
       explanation: "Both InnerSource and open source programs are designed to accept contributions from those outside the team that owns the repository."
     - content: "InnerSource programs are forked from open source programs by organizations that only use and maintain them privately moving forward."
       isCorrect: false
-      explanation: "While an InnerSource program may be occassionally forked from an open source program, this isn't really what defines their relationship."
+      explanation: "While an InnerSource program may be occasionally forked from an open source program, this isn't really what defines their relationship."
     - content: "InnerSource programs are fundamentally the same as open source programs, except that their access is limited to people within their organization."
       isCorrect: true
       explanation: "InnerSource offers all of the benefits of traditional open source patterns, but to a limited audience in order to protect intellectual property."
