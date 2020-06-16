@@ -67,6 +67,30 @@ There are a few free-to-use CRs, but the company required that you use Azure Con
 
 1. Wait for the creation to finish and click the "Go to Resource" button when it appears
 
+### Connect the AKS cluster to the ACR
+
+Since we are working with a private container registry, we'll need to tell our AKS cluster to authenticate with that registry so it can download the stored images. Luckily, using both ACR and AKS this can be easily done.
+
+1. Check if you have the `aks-preview` extension enabled in your CLI
+
+    ```bash
+    az extension list
+    ```
+
+1. If the list is empty. Run the following command on your terminal to update your AKS cluster
+
+    ```bash
+    az aks update -n contoso-kubernetes-cluster -g contoso-aks --attach-acr <your-registry-name>
+    ```
+
+1. If not, run the preview command:
+
+    ```bash
+    az aks update -n contoso-kubernetes-cluster -g contoso-aks --acr <your registry name> --enable-acr
+    ```
+
+The result will be the attachment of your ACR to your AKS cluster.
+
 ### Log in to your container registry
 
 Once the CR is created, you need to connect your local Docker runtime to the :::no-loc text="registry"::: so it can push your image to the remote destination. To do so, follow these steps:

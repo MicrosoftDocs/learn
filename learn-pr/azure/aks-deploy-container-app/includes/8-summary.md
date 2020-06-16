@@ -16,6 +16,7 @@ Imagine how would it be to deploy this application on a VM or another environmen
 - [AKS Network Policies [video]](https://azure.microsoft.com/resources/videos/azure-friday-secure-traffic-between-pods-using-network-policies-in-azure-kubernetes-service-aks/?WT.mc_id=learndeploycontainerappsaks-learn-ludossan)
 - [HTTP Application Routing](https://docs.microsoft.com/azure/aks/http-application-routing?WT.mc_id=learndeploycontainerappsaks-learn-ludossan)
 - [Trident's documentation on cluster architectures](https://netapp-trident.readthedocs.io/en/stable-v19.01/dag/kubernetes/kubernetes_cluster_architecture_considerations.html#cluster-architectures)
+- [Integrating ACR with AKS](https://docs.microsoft.com/azure/aks/cluster-container-registry-integration?WT.mc_id=learndeploycontainerappsaks-learn-ludossan)
 - [Azure Service Principals](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?WT.mc_id=learndeploycontainerappsaks-learn-ludossan#create-a-service-principal)
 - [Kubernetes' Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 - [AZ CLI command docs](https://docs.microsoft.com/cli/azure/aks?view=azure-cli-latest&WT.mc_id=learndeploycontainerappsaks-learn-ludossan#az-aks-create)
