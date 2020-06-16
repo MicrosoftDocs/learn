@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Configure auditing
 durationInMinutes: 10
-interactive: bash
+interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-configure-auditing.md)]
