@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Configure Azure SQL Database
 durationInMinutes: 10
-interactive: bash
+interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-configure-database.md)]
