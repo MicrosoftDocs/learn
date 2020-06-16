@@ -8,7 +8,7 @@ Here, we discuss how you can design an InnerSource program to enjoy the best of 
 
 An InnerSource program can offer numerous benefits beyond what traditional closed source models provide.
 
-First, they *encourage transparency*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solved problems similar to the ones they're facing, and often find code and other assets that can reuse. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project. 
+First, they *encourage transparency*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solved problems similar to the ones they're facing, and often find code and other assets that can be reused. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project. 
 
 Next, they *reduce friction*. If a consumer team is dependent on a bug fix or new feature for a project owned by a different team, they have a channel through which they can propose the changes they need. And if those changes cannot be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
 
@@ -60,9 +60,9 @@ Once the project has launched, use email and other networking channels to promot
 
 As projects gain traction, the influx of users and contributions can require a lot of work to manage. Depending on the project, a significant amount of work may be required just to manage the expectations of project participants.
 
-To proactively address this, GitHub looks for `CONTRIBUTING.md` in the root (or `/docs` or `/.github`) of a repository. Use this file to explain the contribution policy for the project. The exact details may vary, but it's a good idea to let potential contributors know what conventions the project follows, where the team is looking for pull requests, what details are requested for bug reports, and so on.
+To proactively address this, GitHub looks for a `CONTRIBUTING.md` file in the root (or `/docs` or `/.github`) of a repository. Use this file to explain the contribution policy for the project. The exact details may vary, but it's a good idea to let potential contributors know what conventions the project follows, where the team is looking for pull requests, what details are requested for bug reports, and so on.
 
-If `CONTRIBUTING.md` exists, GitHub will present a link to it when users create issues or pull requests to encourage them to follow it.
+If a `CONTRIBUTING.md` exists, GitHub will present a link to it when users create issues or pull requests to encourage them to follow it.
 
 ![Contributing guidelines links](../media/2-contributing-guidelines.png)
 
@@ -72,7 +72,7 @@ Check out some [Awesome CONTRIBUTING.md examples](https://github.com/mntnr/aweso
 
 GitHub supports starter templates for new issues and pull requests. Use these to provide the initial description text for a newly created issue or pull request.
 
-For example, if your project has `.github/ISSUE_TEMPLATE.md`, anytime a user starts the process of creating an issue, they will see this content. Rather than having to constantly reference the required details from `CONTRIBUTING.md`, they'll be able to just fill out the issue like a form using the template text.
+For example, if your project has `.github/ISSUE_TEMPLATE.md`, anytime a user starts the process of creating an issue, they will see this content. Rather than having to constantly reference the required details from a `CONTRIBUTING.md`, they'll be able to just fill out the issue like a form using the template text.
 
 ![A new issue using the template](../media/2-new-issue-template.png)
 
