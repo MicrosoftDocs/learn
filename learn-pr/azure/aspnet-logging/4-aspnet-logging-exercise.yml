@@ -16,7 +16,6 @@ content: |
   [!include[](includes/4-aspnet-logging-exercise.md)]
 tasks:
 - action: exists
-  optional: false
   environment: azure
   azure:
     resource: 
@@ -24,9 +23,8 @@ tasks:
       tags:
         -name: Name
         -value: AppInsightsLog
-    hint: "Make sure you create the Azure AppInsights account"
+  hint: "Make sure you create the Azure AppInsights account"
 - action: exists
-  optional: false
   environment: azure
   azure:
     resource:
@@ -34,4 +32,4 @@ tasks:
       tags: 
         -name: Name
         -value: BlobStorageAccount
-    hint: "Make sure you create the Azure Storage account"
+  hint: "Make sure you create the Azure Storage account"
