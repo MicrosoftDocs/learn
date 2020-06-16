@@ -8,11 +8,13 @@ So, what are the issues to think about when planning a secure development strate
 
 We need to make sure we properly authenticate who is accessing the data and that they have the correct permissions to do so. Through historical or archival data or logs, we need to be able to find evidence when something has gone wrong.
 
-There are many aspects to building and deploying secure applications. First, there is a general knowledge problem. Many developers and other staff members assume they understand security, but they don't. Cybersecurity is a constantly evolving discipline. A program of ongoing education and training is essential.
+There are many aspects to building and deploying secure applications. Here are three things to consider:
 
-Second, we need to ensure that the code is created correctly, and securely implements the required features. We also need to make sure that the features were designed with security in mind in the first place.
+- **There is a general knowledge problem.** Many developers and other staff members assume they understand security, but they don't. Cybersecurity is a constantly evolving discipline. A program of ongoing education and training is essential.
 
-Third, we need to ensure that the application complies with the rules and regulations that it's required to meet. We have to test for compliance while building the code and retest periodically, even after deployment.
+- **Code must be created correctly and securely.** We need to ensure that the code is created correctly, and securely implements the required features. We also need to make sure that the features were designed with security in mind in the first place.
+
+- **Applications must comply with rules and regulations.** We need to ensure that the code complies with rules and regulations that it's required to meet. We have to test for compliance while building the code and retest periodically, even after deployment.
 
 Security isn't something you can just add to an application or a system later. Secure development must be part of every stage of the software development life cycle. This is even more important for critical applications and those that process sensitive or highly confidential information.
 
