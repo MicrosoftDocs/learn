@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-hub
 durationInMinutes: 4 # dummy number at present
 content: |
-  [!include[](includes/2-what-is-prebuilt-module.md)]
+  [!include[](includes/2-design.md)]

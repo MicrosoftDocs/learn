@@ -19,9 +19,9 @@ abstract: |
 prerequisites: |
     - Basic knowledge of IoT Edge
     - Basic knowledge of IoT Hub
-iconUrl: 
+iconUrl: http://via.placeholder.com/120x120
 badge:
-  uid: http://via.placeholder.com/120x120
+  uid: learn.oxford.run-cognitive-services-iot-edge.badge
 levels:
 - intermediate
 roles:
