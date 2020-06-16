@@ -187,7 +187,7 @@ Here you watch the pipeline run. The pipeline runs the Selenium UI tests during 
 
     You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests and coverage** section, which shows that the Selenium tests have passed.
 
-    ![Azure Pipelines, showing the test summary](../media/6-build-summary-tests.png)
+    ![Azure Pipelines, showing the test summary](../../shared/media/azure-pipelines-build-summary-tests.png)
 
 1. Select the test summary to see the full report.
 
