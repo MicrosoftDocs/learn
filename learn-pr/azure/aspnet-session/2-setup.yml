@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.aspnet-session.2.setup
+title: Set up the environment and tools
+metadata:
+  title: Set up the environment and tools
+  description: Install and configure the tools required to perform the exercise in this module.
+  ms.date: 06/16/2020
+  author: coderandhiker
+  ms.author: coderandhiker
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+interactive: powershell
+azureSandbox: true
+content: |
+  [!include[](includes/2-setup.md)]
