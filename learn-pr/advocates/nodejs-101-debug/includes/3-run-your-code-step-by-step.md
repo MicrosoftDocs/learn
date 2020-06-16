@@ -48,16 +48,40 @@ After Node.js is started with inspect mode enabled, you can use any compatible d
 For example, you can use [node-inspect](https://github.com/nodejs/node-inspect), a command-line debugger that comes bundled with Node.js. You can use it by running your program like this:
 
 ```sh
-node inspect <YOUR_SCRIPT>.js
+$ node inspect <YOUR_SCRIPT>.js
 ```
 
-It will run Node.js with inspect mode enabled and at the same time launch the integrated interactive debugger, and pause execution just before your code starts.
+It will run Node.js with inspect mode enabled and at the same time launch the integrated interactive debugger, and pause execution just before your code starts. You should see the debugger prompt indicating it has successfully launched:
 
-TODO: commands
+```sh
+$ node inspect myscript.js
+< Debugger listening on ws://127.0.0.1:9229/ce3689fa-4433-41ee-9d5d-98b5bc5dfa27
+< For help, see: https://nodejs.org/en/docs/inspector
+< Debugger attached.
+Break on start in myscript.js:1
+> 1 const express = require('express');
+  2 
+  3 const app = express();
+debug> 
+```
 
-cont
-step,
-out
-sb()
-cb()
-repl
+You can now use one of the multiple commands to control the execution of your program:
+
+- `cont` or `c`: Continue execution, until the next breakpoint or the end of your program.
+- `next` or `n`: Step next. Executes the next line of code in the current context.
+- `step` or `s`: Step in. Same as `next`, except that if the next line of code is a function call, go to the first line of this function's code.
+- `out` or `o`: Step out. If the current execution context is inside the code of a function, execute the remaining code of this function and jump back to the line of code where this function was initially called.
+- `restart` or `r`: Restart the program and pause the execution before the start of your code.
+
+To set or clear breakpoints in your code you can use the following commands:
+
+- `setBreakpoint()` or `sb()`: Add a breakpoint on the current line.
+- `setBreakpoint(<N>)` or `sb(<N>)`: Add a breakpoint on line number *N*.
+- `clearBreakpoint('myscript.js', <N>)` or `cb('myscript.js', <N>)`: Clear breakpoint in file `myscript.js` on line number *N*.
+
+To get information about the current execution point you can use these commands:
+
+- `list(<N>)`: List your source code with *N* lines before and after the current execution point.
+- `exec <EXPR>`: Evaluate an expression within current execution context. This is useful to get information about the current state, for example you can get the value of a variable named `i` using `exec i`.
+
+That's quite a few commands to remember, thankfully you can also use the `help` command to show the complete list of available commands. To exit the debugger at any time, press `CTRL + D` or type the command `.exit`.
