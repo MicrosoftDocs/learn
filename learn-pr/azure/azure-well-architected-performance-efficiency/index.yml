@@ -34,7 +34,7 @@ products:
 - azure-container-instances
 - azure-kubernetes-service
 - azure-traffic-manager
-- azure-redis-cache
+- azure-cache-redis
 - azure-monitor
 - azure-expressroute
 - azure-virtual-network
