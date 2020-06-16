@@ -1,12 +1,10 @@
-Now that we have an idea of some of the individual entries in the dataset, let's get a better sense of the dataset as a whole.
-
-Run:
+Now that we have an idea of some of the individual entries in the dataset, let's get a better sense of the dataset as a whole:
 
 ```python
 df.info()
 ```
 
-Here's the output:
+The output is:
 
 ```Output
 <class 'pandas.core.frame.DataFrame'>
@@ -20,30 +18,31 @@ memory usage: 87.1+ KB
 
 ### Try it yourself
 
-Now run the `describe()` method on `df`. Does it provide much useful information about this dataset? If not, why not?
+Run the `describe()` method on `df`. Does it provide much useful information about this dataset? If not, why not?
 
 <details>
+  
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-Possible exercise solution:
+  Possible exercise solution:
 
-```python
-df.describe()
-```
+  ```python
+  df.describe()
+  ```
 
-```Output
--------------------------------------------
-|        | Class | Message                |
--------------------------------------------
-| count  | 5572  | 5572                   |
--------------------------------------------
-| unique | 2     | 5169                   |
--------------------------------------------
-| top    | ham   | Sorry, I'll call later |
--------------------------------------------
-| freq   | 4825  | 30                     |
--------------------------------------------
-```
+  ```Output
+  -------------------------------------------
+  |        | Class | Message                |
+  -------------------------------------------
+  | count  | 5572  | 5572                   |
+  -------------------------------------------
+  | unique | 2     | 5169                   |
+  -------------------------------------------
+  | top    | ham   | Sorry, I'll call later |
+  -------------------------------------------
+  | freq   | 4825  | 30                     |
+  -------------------------------------------
+  ```
 
 </details>
 
@@ -51,18 +50,20 @@ df.describe()
 
 ***
 
-We can also visualize the dataset to graphically see the mix of spam to ham. (Note that we need to include the `%matplotlib inline` magic command in order to actually see the bar chart here in the notebook.)
+We can also visualize the dataset to graphically see the mix of spam to ham. (Note that we need to include the `%matplotlib inline` magic command to actually see the bar chart here in the notebook.)
 
 ```python
 %matplotlib inline
 df.groupby('Class').count().plot(kind='bar')
 ```
 
+The output is:
+
 ```Output
 <matplotlib.axes._subplots.AxesSubplot at 0x7fd962b5f9e8>
 ```
 
-:::image type="content" alt-text="Bar chart that demonstrates the mix of pam and ham in columns" source="../media/ham-spam-df-groupby.png" loc-scope="Azure":::
+:::image type="content" alt-text="Bar chart that demonstrates the mix of spam and ham in columns." source="../media/ham-spam-df-groupby.png" loc-scope="Azure":::
 
 
 > [!div class="alert is-tip"]
@@ -71,14 +72,14 @@ df.groupby('Class').count().plot(kind='bar')
 > Notice that here, as in previous units, we have stuck together several methods to run on a DataFrame. This kind of additive method-stacking is part of what makes Python and pandas such a power combination for the rough-and-ready data exploration that is a crucial part of data science.
 >
 
-## Explore the data using word clouds
+## Explore the data by using word clouds
 
-Because our data is largely not numeric, you might have noticed that some of our go-to data exploration tools (such as bar charts and the `describe()` method) have been of limited use in exploring this data. Instead, word clouds can be a powerful way of getting a quick glance at what's represented in text data as a whole.
+Because our data is largely not numeric, you might have noticed that some of our go-to data exploration tools (such as bar charts and the `describe()` method) have been of limited use in exploring this data. Instead, word clouds can be a powerful way of getting a quick glance at what's represented in text data as a whole:
 
 ```python
 !pip install wordcloud
 ```
-Here's the output:
+The output is:
 
 ```Output
 Collecting wordcloud
@@ -97,7 +98,7 @@ Installing collected packages: wordcloud
 Successfully installed wordcloud-1.6.0
 ```
 
-We will have to supply a number of parameters to the `WordCloud()` function and to matplotlib in order to render the word clouds, so we will save ourselves some redundant work by writing a short function to handle it. Parameters for `WordCloud()` will include the stop words we want to ignore and font size for the words in the cloud. For matplotlib, these parameters will include instructions for rendering the word cloud.
+We have to supply a number of parameters to the `WordCloud()` function and to Matplotlib to render the word clouds, so we will save ourselves some redundant work by writing a short function to handle it. Parameters for `WordCloud()` will include the stop words we want to ignore and font size for the words in the cloud. For Matplotlib, these parameters will include instructions for rendering the word cloud.
 
 ```python
 from wordcloud import WordCloud, STOPWORDS
@@ -127,18 +128,22 @@ ham_msg = df.loc[df['Class']=='ham']['Message']
 get_wordcloud(ham_msg,'Ham Cloud')
 ```
 
-:::image type="content" alt-text="Two word clouds, labeled Spam Cloud and Ham Cloud" source="../media/word-clouds.png" loc-scope="Azure":::
+:::image type="content" alt-text="Two word clouds, labeled Spam Cloud and Ham Cloud." source="../media/word-clouds.png" loc-scope="Azure":::
 
 Looking at the two word clouds, it's immediately apparent that the frequency of the most common words is different between our spam and our ham messages, which will form the primary basis of our spam detection.
 
 ## Explore the data numerically
 
-Just because the data does not naturally lend itself to numerical analysis "out of the box" does not mean that we can't do so. We can also analyze the average length of spam and ham messages to see if there are differences. First, we need to create a new column.
+Just because the data doesn't naturally lend itself to numerical analysis "out of the box" does not mean that we can't do numerical analysis. We also can analyze the average length of spam and ham messages to see if there are differences. 
+
+First, we need to create a new column:
 
 ```python
 df['Length_of_msg'] = df['Message'].apply(len)
 df.head()
 ```
+
+The output is:
 
 ```Output
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -160,9 +165,9 @@ df.head()
 
 ### Try it yourself
 
-> **Sarah** TBD, provide possible solution and output.
+> **Sarah** TBD. Provide possible solution and output.
 
-What does the `apply()` method do in the preceding code cell?
+What does the `apply()` method do in the preceding code?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -177,13 +182,13 @@ TBD, provide possible solution and output.
 
 ***
 
-Now that we have the length of each message, we can visualize those message lengths using a histogram.
+Now that we have the length of each message, we can visualize those message lengths by using a histogram:
 
 ```python
 df.groupby('Class')['Length_of_msg'].plot(kind='hist', bins=50)
 ```
 
-Here's the output:
+The output is:
 
 ```Output
 Class
@@ -192,13 +197,15 @@ spam    AxesSubplot(0.125,0.125;0.775x0.755)
 Name: Length_of_msg, dtype: object
 ```
 
-:::image type="content" alt-text="A histogram that demonstrates message length and message frequency." source="../media/df-groupby-length-of-message.png" loc-scope="Azure":::
+:::image type="content" alt-text="Histogram that demonstrates message length and message frequency." source="../media/df-groupby-length-of-message.png" loc-scope="Azure":::
 
-The orange histogram is the spam messages. Because there are so many more ham messages than spam, let's break these out separately to see the details more clearly.
+The orange histogram is the spam messages. There are many more ham messages than spam, so let's break these out separately to see the details more clearly:
 
 ```python
 df.hist(bins=50,by='Class', column='Length_of_msg')
 ```
+
+The output is:
 
 ```Output
 array([<matplotlib.axes._subplots.AxesSubplot object at 0x7fd96270b198>,
@@ -212,14 +219,16 @@ Spam messages skew much longer than ham messages.
 
 ### Try it yourself
 
-> **Sarah** TBD, provide answers to the questions.
+> **Sarah** TBD. Provide answers to the questions?
 
 Why does it appear in the details histograms that there is almost no overlap between the lengths of ham and spam text messages? What do the differences in scale tell us (and what could they inadvertently obscure)?
+
+<br />
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-TBD provide answers to the questions.
+  TBD provide answers to the questions.
 
 </details>
 
