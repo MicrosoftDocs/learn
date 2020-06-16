@@ -12,4 +12,6 @@ The scenario used by this module revolves around an existing .NET Framework web 
 - An Azure subscription. If you don't have an Azure account, you can [create a free trial subscription here](https://azure.microsoft.com/free/)
 - Some C# programming experience
 - Familiarity with ASP.NET development
+- A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
+- Git for Windows installed on your desktop 
 
