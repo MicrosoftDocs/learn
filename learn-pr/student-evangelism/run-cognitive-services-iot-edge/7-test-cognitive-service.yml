@@ -11,5 +11,5 @@ metadata:
   ms.prod: learning-azure-iot-hub
 durationInMinutes: 5 # dummy number at present
 content: |
-  [!include[](includes/8-test-cognitive-service.md)]
+  [!include[](includes/7-test-cognitive-service.md)]
     
