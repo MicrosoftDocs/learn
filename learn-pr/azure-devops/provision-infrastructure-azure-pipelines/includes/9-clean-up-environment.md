@@ -18,13 +18,13 @@ To clean up your resource groups:
 
 1. Run the following `az group delete` command to delete the resource group for your App Service deployment, **tailspin-space-game-rg**.
 
-    ```bash
+    ```azurecli
     az group delete --name tailspin-space-game-rg --yes
     ```
 
 1. Run the following `az group delete` command to delete the resource group for your storage account, **tf-storage-rg**.
 
-    ```bash
+    ```azurecli
     az group delete --name tf-storage-rg --yes
     ```
 
