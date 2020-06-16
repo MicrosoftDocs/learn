@@ -33,7 +33,6 @@ units:
 - learn.azure.aspnet-configurationbuilder.2.setup
 - learn.azure.aspnet-configurationbuilder.3-aspnet-configurationbuilder-overview
 - learn.azure.aspnet-configurationbuilder.4-asp-net-configurationbuilder-exercise
-- learn.azure.aspnet-configurationbuilder.5-knowledge-check
-- learn.azure.aspnet-configurationbuilder.6-summary
+- learn.azure.aspnet-configurationbuilder.5-summary
 badge:
   uid: learn.azure.aspnet-configurationbuilder.badge
