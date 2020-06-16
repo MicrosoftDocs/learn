@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
     - Basic knowledge of IoT Edge
     - Basic knowledge of IoT Hub
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: run-cognitive-services-on-iot-edge.svg
 badge:
   uid: learn.oxford.run-cognitive-services-iot-edge.badge
 levels:
@@ -34,5 +34,6 @@ units:
 - learn.oxford.run-cognitive-services-iot-edge.how-configure-iot-edge
 - learn.oxford.run-cognitive-services-iot-edge.exercise-configure-iot-edge
 - learn.oxford.run-cognitive-services-iot-edge.how-deploy-cognitive-service-iot-edge
+- learn.oxford.run-cognitive-services-iot-edge.exercise-deploy-cognitive-service-iot-edge
 - learn.oxford.run-cognitive-services-iot-edge.test-cognitive-service
 - learn.oxford.run-cognitive-services-iot-edge.summary
