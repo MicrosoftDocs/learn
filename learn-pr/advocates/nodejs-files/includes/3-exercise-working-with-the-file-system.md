@@ -115,4 +115,4 @@ You're going to need to find all of those files given only the top-most location
    Found sales.json in folder stores/204
    ```
 
-Excellent! You have successfully written a command line program that will traverse any directory that it is given and find the "sales.json" files inside. Next you'll learn how to open the sales files and read them so that you can parse the data inside.
+Excellent! You have successfully written a command line program that will traverse any directory that it is given and find the "sales.json" files inside. However, the way that the path to the right folder was constructed in this example is a little clumsy - it requires appending a lot of strings together. There is a preferred way to work with paths in Node.js. In the next section you'll learn how to do just that using the "path" module.
