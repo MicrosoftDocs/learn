@@ -3,7 +3,7 @@ Microsoft Endpoint Mananger helps you protect the digital resources that your or
 ## Protect devices
 
 <!--
-https://docs.microsoft.com/en-us/mem/intune/protect/device-protect
+https://docs.microsoft.com/mem/intune/protect/device-protect
 -->
 Types of device policies
 Benefits of device policies
@@ -11,13 +11,13 @@ Benefits of device policies
 
 ## Protect apps
 <!--
-https://docs.microsoft.com/en-us/mem/intune/protect/device-protect#protect-apps-and-the-data-they-use
+https://docs.microsoft.com/mem/intune/protect/device-protect#protect-apps-and-the-data-they-use
 -->
 ## Protect your organization’s data
 <!--
-https://docs.microsoft.com/en-us/mem/intune/protect/data-leak-prevention
+https://docs.microsoft.com/mem/intune/protect/data-leak-prevention
 -->
 Protect access
 <!--
-https://docs.microsoft.com/en-us/mem/intune/protect/data-outside-protect
+https://docs.microsoft.com/mem/intune/protect/data-outside-protect
 -->

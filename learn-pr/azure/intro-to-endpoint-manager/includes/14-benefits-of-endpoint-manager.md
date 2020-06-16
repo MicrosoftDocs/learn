@@ -25,5 +25,5 @@ MEM provides a means to modern management. Modern management is the following:
 
 Also, see:
 <!--
-https://docs.microsoft.com/en-us/learn/modules/introduction-to-modern-management-in-microsoft-365/2-benefits-modern-management
+https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/2-benefits-modern-management
 -->

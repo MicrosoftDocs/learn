@@ -13,18 +13,18 @@ As an IT admin, you can use Microsoft Intune to manage the client apps that your
 Additionally, you might want to assign and manage apps on devices that are not enrolled with Intune.
 
 <!--
-https://docs.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune#manage-apps
+https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune#manage-apps
 -->
 ### Mobile Application Management (MAM) basics
 <!--
-https://review.docs.microsoft.com/en-us/mem/intune/apps/app-management?branch=pr-en-us-260#mobile-application-management-mam-basics
-https://review.docs.microsoft.com/en-us/mem/intune/apps/mam-faq?branch=pr-en-us-260
+https://docs.microsoft.com/mem/intune/apps/app-management#mobile-application-management-mam-basics
+https://docs.microsoft.com/mem/intune/apps/mam-faq
 -->
 ### App lifecycle
 
 ## App management capabilities
 <!--
-https://review.docs.microsoft.com/en-us/mem/intune/apps/app-management?branch=pr-en-us-260#app-management-capabilities-by-platform
+https://docs.microsoft.com/mem/intune/apps/app-management#app-management-capabilities-by-platform
 -->
 ## App configuration policies
 
@@ -32,18 +32,18 @@ https://review.docs.microsoft.com/en-us/mem/intune/apps/app-management?branch=pr
 
 ### Data protection 
 <!--
-https://docs.microsoft.com/en-us/mem/intune/apps/app-protection-framework
-https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip
+https://docs.microsoft.com/mem/intune/apps/app-protection-framework
+https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip
 -->
 
 ### Interactive guide - MEM applications
 <!--
-https://mslearn.cloudguides.com/en-us/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager
+https://mslearn.cloudguides.com/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager
 -->
 
 
 
 See:
 <!--
-https://docs.microsoft.com/en-us/learn/modules/manage-applications-by-using-microsoft-intune/
+https://docs.microsoft.com/learn/modules/manage-applications-by-using-microsoft-intune/
 -->

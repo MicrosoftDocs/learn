@@ -27,7 +27,7 @@ Configuration Manager is an on-premises management solution to manage desktops, 
 Co-management is where you concurrently manage Windows 10 devices with both Configuration Manager and Microsoft Intune. It combines your existing on-premises Configuration Manager and Active Directory investment with the cloud by using Intune, Azure AD, and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority. You keep some tasks on-premises, while running other tasks in the cloud with Intune.
 
 <!--
-https://docs.microsoft.com/en-us/mem/intune/fundamentals/what-is-device-management#co-management
+https://docs.microsoft.com/mem/intune/fundamentals/what-is-device-management#co-management
 -->
 
 There are two main paths to reach co-management:  
