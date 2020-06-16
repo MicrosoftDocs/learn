@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Configure authentication
 durationInMinutes: 10
-interactive: bash
+
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-configure-authentication.md)]
