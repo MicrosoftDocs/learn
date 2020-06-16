@@ -31,11 +31,11 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
 3. Select or create the Server  
 
-    When you create an Azure SQL Managed Instance, supplying the server name is the same as in SQL Server. However, for databases and elastic pools, an Azure SQL Database server is required. This is a *logical* server that acts as a central administrative point for single or pooled database and includes logins, firewall rules, auditing rules, threat detection policies, and failover groups (more on these topics later). This logical server does not expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure. You can read more on SQL Database servers [here](https://docs.microsoft.com/azure/sql-database/sql-database-servers).  
+    When you create an Azure SQL Managed Instance, supplying the server name is the same as in SQL Server. However, for databases and elastic pools, an Azure SQL Database server is required. This is a *logical* server that acts as a central administrative point for single or pooled database and includes logins, firewall rules, auditing rules, threat detection policies, and failover groups (more on these topics later). This logical server does not expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure.  
 
     Select **Create new** next to **Server** and provide the following information:  
     * *Server name*: **aw-serverID** where ID is the same identifier you used for the database (e.g. **0406**).  
-    * *Server admin login*: **cloudadmin**. This is the equivalent to a member of the sysadmin role in SQL Server. This account connects using SQL authentication (username and password) and only one of these accounts can exist. You can read more about Administrator accounts for Azure SQL Database [here](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins#unrestricted-administrative-accounts).
+    * *Server admin login*: **cloudadmin**. This is the equivalent to a member of the sysadmin role in SQL Server. This account connects using SQL authentication (username and password) and only one of these accounts can exist.
     * *Password*: A complex password that meets [strong password requirements](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords).  
     > **TIP**: As you type in your password you are given hints as to the requirements. You are also asked to confirm your password. Make a note or be sure to remember this password.  
     * *Location*: Use the same location as your resource group or the region that is close to where you are located.  
@@ -48,14 +48,13 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
 4. Choose not to opt-in for elastic pools
 
-    In Azure SQL DB, you then decide if you want this database to be a part of an Elastic Pool (new or existing). In Azure SQL Managed Instance, [creating an instance pool (public preview) currently requires a different flow](https://docs.microsoft.com/azure/sql-database/sql-database-instance-pools-how-to#create-an-instance-pool) than the Azure SQL create experience in the Azure portal. For this activity, select **No**.  
+    In Azure SQL DB, you then decide if you want this database to be a part of an Elastic Pool (new or existing). In Azure SQL Managed Instance, creating an instance pool (public preview) currently requires a different flow than the Azure SQL create experience in the Azure portal. For this activity, select **No**.  
 
 5. Select a purchasing model  
 
     Next to **Compute + storage** select **Configure Database**.  The top bar, by default shows the different service tiers available in the vCore purchasing model.
 
-    For the purposes of this exercise, we'll focus on the vCore purchasing model (recommended), so there is no action in this step. You can optionally review the DTU model by selecting **Looking for basic, standard, premium?** and by [comparing vCores and DTUs in-depth here](https://docs.microsoft.com/azure/sql-database/sql-database-purchase-models
-    ).  
+    For the purposes of this exercise, we'll focus on the vCore purchasing model (recommended), so there is no action in this step. You can optionally review the DTU model by selecting **Looking for basic, standard, premium?**.  
 
 6. Select a service tier  
 
@@ -69,9 +68,9 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
     One of the final steps is to determine how many vCores and the Data max size. For the exercise, select **2 vCores** and **32 GB Data max size**.  
 
-    Generally, if you're migrating, you should use a similar size as to what you use on-premises. You can also leverage tools, like the [Data Migration Assistant SKU Recommender](https://docs.microsoft.com/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15) to estimate the vCore and Data max size based on your current workload.  
+    Generally, if you're migrating, you should use a similar size as to what you use on-premises. You can also leverage tools, like the Data Migration Assistant SKU Recommender to estimate the vCore and Data max size based on your current workload.  
 
-    The Data max size is not necessarily the database size of your data today. It is the maximum amount of data space that can be allocated for your database. For more information about the difference between data space used, data space allocated, and data max size, refer to this [explanation in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-file-space-management#understanding-types-of-storage-space-for-a-database). This will also help you understand the log space allocated, which scales with your data max size.  
+    The Data max size is not necessarily the database size of your data today. It is the maximum amount of data space that can be allocated for your database. This will also help you understand the log space allocated, which scales with your data max size.  
 
     Before you select **Apply**, confirm your selections look similar to those below (your resource group, Database name, and Server will be specific to your choices):  
 
@@ -93,17 +92,13 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
     With Azure SQL Managed Instance, you deploy it inside an Azure virtual network and a subnet that is dedicated to managed instances. This enables you to have a completely secure, private IP address. Azure SQL Managed Instance provides the ability to connect an on-prem network to a managed instance, connect a managed instance to a linked server or other on-prem data store, and connect a managed instance to other resources. You can additionally enable a public endpoint so you can connect to managed instance from the Internet without a Virtual Private Network (VPN). This access is disabled by default.  
 
-    The principle of private endpoints through virtual network isolation is available for Azure SQL Database through a  **private link**, and you can learn more [here](https://docs.microsoft.com/azure/private-link/private-link-overview).
-
-    More information on connectivity for Azure SQL Database can be found [here](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture) and for Azure SQL Managed Instance [here](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-connectivity-architecture). There will also be more on this topic in upcoming sections/modules.  
-
     For now, select **Next : Additional settings**.
 
 10. Select a data source
 
-    In Azure SQL Database, upon deployment you have the option to select the AdventureWorksLT database as the sample in the Azure portal. In Azure SQL Managed Instance, however, you deploy the instance first, and then databases inside of it, so there is not an option to have the sample database upon deployment (similar to SQL Server). You can learn more about the AdventureWorks sample databases on [GitHub](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).
+    In Azure SQL Database, upon deployment you have the option to select the AdventureWorksLT database as the sample in the Azure portal. In Azure SQL Managed Instance, however, you deploy the instance first, and then databases inside of it, so there is not an option to have the sample database upon deployment (similar to SQL Server). You can learn more about the AdventureWorks sample databases on GitHub.
 
-    You can also deploy a blank database or create a database based the restore of a backup from a geo-replicated backup. You can learn more on this option from the [documentation](https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups#geo-restore).
+    You can also deploy a blank database or create a database based the restore of a backup from a geo-replicated backup.
 
     For this exercise, select **Sample**.  
 
@@ -119,11 +114,11 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
     * `CI` means it will be case insensitive, where `CS` is case-sensitive
     * `AS` means it will be accent sensitive, where `AI` is accent-insensitive
 
-    There are other options available related to character widths, UTF-8, etc., and more details about what you can and can't do with Azure SQL [here](https://docs.microsoft.com/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver15).
+    There are other options available related to character widths, UTF-8, etc., and more details about what you can and can't do with Azure SQL in the documentation (search for "collation and unicode support").
 
 12. Opt-in for Advanced Data Security
 
-    When you deploy Azure SQL Database in the portal, you are prompted if you'd like to enable [Advanced Data Security (ADS)](https://docs.microsoft.com/azure/sql-database/sql-database-advanced-data-security) on a free trial. Select **Start free trial**. After the free trial, it is billed according to the [Azure Security Center Standard Tier pricing](https://azure.microsoft.com/pricing/details/security-center/). If you choose to enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection. You'll learn more about these capabilities in the next security module of this learning path. In Azure SQL Managed Instance, you can enable it on the instance after deployment.  
+    When you deploy Azure SQL Database in the portal, you are prompted if you'd like to enable Advanced Data Security (ADS) on a free trial. Select **Start free trial**. After the free trial, it is billed according to the Azure Security Center Standard Tier pricing. If you choose to enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection. You'll learn more about these capabilities in the next security module of this learning path. In Azure SQL Managed Instance, you can enable it on the instance after deployment.  
 
     Your **Additional settings** pane should now look similar to the image below.
 
@@ -133,15 +128,15 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
     Select **Next : Tags**.  
 
-    Tags can be used to logically organize Azure resources across a subscription. For example, you can apply the name "Environment" and the value "Development" to this SQL database and Database server, but you might use the value "Production" for production resources. This can be helpful for organizing resources for billing or management. You can read more [here](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
+    Tags can be used to logically organize Azure resources across a subscription. For example, you can apply the name "Environment" and the value "Development" to this SQL database and Database server, but you might use the value "Production" for production resources. This can be helpful for organizing resources for billing or management.
 
     ![Adding tags](../media/tags.png)  
 
 14. Review and create
 
-    Finally, select **Next : Review + create**. Here you can review your deployment selections and the [Azure Marketplace terms](https://go.microsoft.com/fwlink/?linkid=2045624).  
+    Finally, select **Next : Review + create**. Here you can review your deployment selections and the Azure Marketplace terms.  
 
-    > You also have the option to **Download a template for automation**. This exercise will not cover that method, but if you're interested, you can [learn more](https://docs.microsoft.com/azure/azure-resource-manager/).
+    > You also have the option to **Download a template for automation**. This exercise will not cover that method, but if you're interested, there are other modules available on Microsoft Learn related to Azure Resource Manager (ARM) templates.
 
     Take time here to ensure all of your selections match the exercise instructions.
 

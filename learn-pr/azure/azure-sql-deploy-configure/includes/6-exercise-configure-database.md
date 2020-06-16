@@ -1,4 +1,4 @@
-You've now seen the Azure portal, SSMS, and SQL Notebooks in ADS, but there are other tools available to you to use to manage Azure SQL. Two of the most popular are the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) and [Azure PowerShell](https://docs.microsoft.com/powershell/azure). They are similar in their functionality, but for this activity we will focus on the Azure CLI.  
+You've now seen the Azure portal, SSMS, and SQL Notebooks in ADS, but there are other tools available to you to use to manage Azure SQL. Two of the most popular are the Azure CLI and Azure PowerShell. They are similar in their functionality, but for this activity we will focus on the Azure CLI.  
 
 To complete this activity, you could use a PowerShell notebook, which is the same concept as a SQL notebook, but the coding language is PowerShell. You can use PowerShell notebooks to leverage Azure CLI or Azure PowerShell, but we will focus on Azure CLI commands. For both of these tools, you can also use the Azure Cloud Shell, which is an interactive shell environment that you can use through your browser in the Azure portal. In this exercise, you'll use the Azure Cloud Shell. Since it displays on the right-hand side of this browser, meaning you don't have to install the Azure CLI or Azure PowerShell modules!  
 
@@ -6,7 +6,7 @@ To complete this activity, you could use a PowerShell notebook, which is the sam
 
 In the example that follows, you'll explore the latency effects of using different connection policies in Azure SQL.  
 
-> Note: in PowerShell in the Azure Cloud Shell, you can use the PowerShell Az module or the Azure CLI. In this activity, you'll explore the Azure CLI, but you should know there are similar commands available for the [PowerShell Az module](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-3.5.0).  
+> Note: in PowerShell in the Azure Cloud Shell, you can use the PowerShell Az module or the Azure CLI. In this activity, you'll explore the Azure CLI, but you should know there are similar commands available for the PowerShell Az module.  
 
 1. Setup  
 
@@ -54,17 +54,11 @@ In the example that follows, you'll explore the latency effects of using differe
 
     There are also similar commands for `az sql mi` and `az sql midb` (commands for databases within a Managed Instance, sometimes referred to as "Managed Databases").  
 
-    For detailed explanations of all the commands available, refer to the [Azure CLI documentation](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest).  
+    For detailed explanations of all the commands available, refer to the Azure CLI documentation.  
 
 ### Example: Managing connection policies with the Azure CLI 
 
-One thing that you might use the Azure CLI or Azure PowerShell commands for is updating the connection policy. We'll use this as an example for how you can manage Azure SQL using a tool like the Azure CLI. In this example, you'll look at Azure SQL Database and its commands, but the implementation is very similar in Azure SQL Managed Instance.  
-
-#### Background: Connection policies  
-
-During deployment, in Azure SQL MI you're able to choose the connection type or policy. In Azure SQL DB, you can choose the connection type, but only via PowerShell or Azure CLI after deployment. You can keep the default (Proxy for connections from outside and Redirect for connections within Azure) or something else. At the highest level, in Proxy mode, all connections are proxied through the Azure SQL Database gateways, but in Redirect mode, after the connection is established leveraging the gateway, the connection is directly to the database or managed instance. The direct connection (redirect) allows for reduced latency and improved throughput, but also requires opening up additional ports (allowing inbound and outbound communication in the range of 11000 - 11999).  
-
-> More information on connectivity for Azure SQL DB can be found [here](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture) and for Azure SQL MI [here](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-connectivity-architecture).  
+One thing that you might use the Azure CLI or Azure PowerShell commands for is updating the connection policy. We'll use this as an example for how you can manage Azure SQL using a tool like the Azure CLI. In this example, you'll look at Azure SQL Database and its commands for managing the connection policies, but the implementation is very similar in Azure SQL Managed Instance.  
 
 1. Check current connection policy
 
