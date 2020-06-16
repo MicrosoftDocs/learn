@@ -1,4 +1,4 @@
-When a client wants to access a specific resource on your app, it does so by specifying a URL. As part of architecting your application you try divide up your application into different sections to make it easy to maintain and extend. This division is usually made based on different looking URLs. This means two different looking URLs would trigger two different sections of code in your web application. Let's have a closer look at the URL to see what it consists of and how you can organize your app around it. 
+When a client wants to access a specific resource on your app, it does so by specifying a URL. As part of architecting your application you try divide up your application into different sections to make it easy to maintain and extend. This division is made based on different looking URLs. This means two different looking URLs would trigger two different sections of code in your web application. Let's have a closer look at the URL to see what it consists of and how you can organize your app around it. 
 
 A URL has many parts to it. Let's break down what those parts and what it's used for. Here's a typical URL:
 
@@ -14,12 +14,12 @@ scheme:[//authority]path[?query][#fragment]
 
 Let's explain the parts:
 
-- `scheme`, this is the protocol used, in this case the scheme is `http`. Other example of a scheme is `ftp`, `irc` and `file` among others.
+- `scheme`, this part indicates the protocol used, in this case the scheme is `http`. Other example of a scheme is `ftp`, `irc` and `file` among others.
 - `authority`, the authority consists of two parts.
   - **User info**, It consists of an optional `username@password` part and also a `host` part. In the example above you have `localhost` be the host part. `localhost` points to your own machine as the web server. On the Web this is usually domain names like `google`, `microsoft` or similar. 
   - **Host**,  The `host` is friendly name and something you specify instead of an IP address. An IP address is The Web actual addresses and looks like a series of numbers like so `127.0.0.1`. This makes it easy for so called routers to *route* requests from one part of The Web to the other. However it's not human friendly, which is why `host` or `domain names` exist to create a name that why humans can remember like `microsoft.com`.
 - `path`, this portion of the URL consists of 0 to many segments. Each segment is separated by a `/`. In our URL example, our only segment iss `/products`. A segment has the role of filtering down exactly what resource you are interested in.
-- `query`, this is an optional piece of the URL that is defined after the `?` character. It consists of a number of query parameter-value pairs delimited by either `&` or `;`. It can play the role of filtering down data further by asking for a number of records from a specific page. It does just this in the above example, `?page=1&pageSize=20`. Imagine you have two million records on this resource, it would take a long time to return all those. By specifying you want 20 records the data coming back will return back quickly and will be small in size.
+- `query`, this is an optional piece of the URL that is defined after the `?` character. It consists of a number of query parameter-value pairs delimited by either `&` or `;`. It can play the role of filtering down data further by asking for a number of records from a specific page. It does just this in the above example, `?page=1&pageSize=20`. Imagine you have 2 million records on this resource, it would take a long time to return all those. By specifying you want 20 records the data coming back will return back quickly and will be small in size.
 - `fragment`, this is part of the URL that helps us be even more specific. A typical fragment can represent, for example,  how to sort the data you ask for with a certain sort order.
 
 ## Routes
@@ -81,7 +81,7 @@ app.get('/<path>', (req, res) => {
 })
 ```
 
-To handle a client sending data to the web application you need to configure Express. You configure Express differently depending on the format of the incoming data. If you for example expect the incoming data to come from an HTML form you would configure it one way. If the data is of type JSON you would configure it in another way. Regardless of the data format there are some common steps namely the following:
+To handle a client sending data to the web application, you need to configure Express. You configure Express differently depending on the format of the incoming data. If you for example expect the incoming data to come from an HTML form, you would configure it one way. If the data is of type JSON, you would configure it in another way. Regardless of the data format there are some common steps namely the following:
 
 1. Import the library `body-parser` (it's installed with Express)
 
@@ -95,8 +95,8 @@ To handle a client sending data to the web application you need to configure Exp
    app.use(bodyParser.json({ extended: false }));
    ```
 
-   Above the `bodyParser()` function is passed to the Express instance by calling `app.use()`. Note also how the `bodyParser` calls `.json()`, this determines how the incoming data will be parsed. In this case it's being parsed as JSON but can be parsed to some other format. What the body parser function will do is to listen to all the incoming data is it's being streamed a few bytes at a time. Once data is done being transmitted it's placed on the `body` property of the request object.
-1. Handle the request, to handle an incoming request there are two different methods on the Express instance you could be using namely `post()` or `put()`. Both of these methods are capable of handling a request but `post()` is usually used to express that you want to create a resource. `put()` on the other hand is used to convey that a resource should be updated using the incoming data. Here's an example:
+   Above the `bodyParser()` function is passed to the Express instance by calling `app.use()`. Note also how the `bodyParser` calls `.json()`, this determines how the incoming data will be parsed. In this case, it's being parsed as JSON but can be parsed to some other format. What the body parser function will do is to listen to all the incoming data is it's being streamed a few bytes at a time. Once data is done being transmitted, it's placed on the `body` property of the request object.
+1. Handle the request, to handle an incoming request there are two different methods on the Express instance you could be using namely `post()` or `put()`. Both of these methods are capable of handling a request but `post()` is used to express that you want to create a resource. `put()` on the other hand is used to convey that a resource should be updated using the incoming data. Here's an example:
 
    ```javascript
    app.post('/<path>', (req, res) => {

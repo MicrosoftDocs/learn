@@ -2,7 +2,7 @@ Tailwind Traders are impressed with your first Web Application and want you to i
 
 ## Implement support for reading and writing data
 
-When building an API it's very common to construct so that you have a number of resources. Each may have a number of operations available on them for reading and writing. This is usually referred to as CRUD or **C**reate, **R**ead, **U**pdate, **D**elete. You will implement such an API on the resouce `products`. 
+When building an API, it's common to construct it so that you have a number of resources. Each resource may have a number of operations available on them for reading and writing. Organizing by resource and by operations like read/write is referred to as CRUD or **C**reate, **R**ead, **U**pdate, **D**elete. You will implement such an API on the resource `products`.
 
 1. Clone the repo at URL with the following command:
 
@@ -12,7 +12,7 @@ When building an API it's very common to construct so that you have a number of 
 
    Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. Let's inspect the repo you cloned. Type the following:
+1. Let's inspect the repo you cloned. Type the following command:
 
    ```bash
    cd <repo dir>
@@ -81,7 +81,7 @@ When building an API it's very common to construct so that you have a number of 
    })
    ```
 
-   Let's verify that this works by starting up the API with this command:
+   Let's verify that this code works by starting up the API with this command:
 
    ```bash
    node app.js
@@ -100,7 +100,7 @@ When building an API it's very common to construct so that you have a number of 
    Connection closed
    ```
 
-    The API responds with an empty array has you haven't written any data to it yet. Let's change that up next.
+    The API responds with an empty array because you haven't written any data to it yet. Lets change that up next.
 
 1. Let' implement writing. Locate the part in the code looking like this:
 
@@ -110,7 +110,7 @@ When building an API it's very common to construct so that you have a number of 
    });
    ```
 
-   Replace it with this:
+   Replace it with this code:
 
    ```javascript
    app.post('/products', function(req, res) {
@@ -120,9 +120,9 @@ When building an API it's very common to construct so that you have a number of 
    });
    ```
 
-   Note how the above reads incoming data from `req.body` and constructs a JavaScript object from it. Next it's added to the array `products`. Finally the new product is returned back to the user.
+   Note how the above reads incoming data from `req.body` and constructs a JavaScript object from it. Next, it's added to the array `products`. Finally the new product is returned back to the user.
 
-   Let's test this out by first running the server program with the following command:
+   Let's test out this code by first running the server program with the following command:
 
    ```bash
    node app.js
@@ -178,7 +178,7 @@ When building an API it's very common to construct so that you have a number of 
    });
    ```
 
-   What the above does is to locate the record in the `products` array that matches on the `id` property and update that record. Let's test this out by starting the server application:
+   What the above does is to locate the record in the `products` array that matches on the `id` property and update that record. Let's test out this code by starting the server application:
 
    ```bash
    node app.js
@@ -190,7 +190,7 @@ When building an API it's very common to construct so that you have a number of 
    node client-post.js
    ```
  
-   This will create a record. Next run this command to update the newly created record:
+   This command will create a record. Next run this command to update the newly created record:
 
    ```bash
    node client-put.js
@@ -222,7 +222,7 @@ When building an API it's very common to construct so that you have a number of 
    app.delete('/products/:id', function(req, res) {});
    ```
 
-   Now replace it with this:
+   Now replace it with this code:
 
    ```javascript
    app.delete('/products/:id', function(req, res) {
@@ -232,15 +232,15 @@ When building an API it's very common to construct so that you have a number of 
    });
    ```
 
-   The above code finds the product item to be deleted. Then it filters out that item from the `products` array and responds a filtered version of `products`.
+   The above code finds the product item to be deleted. Then it filters out that item from the `products` array and responds with a filtered version of `products`.
 
-   Let's try this out by starting the server application with this command:
+   Let's try out this code by starting the server application with this command:
 
    ```bash
    node app.js
    ```
 
-   In a separate terminal run this command to create a record:
+   In a separate terminal, run this command to create a record:
 
    ```bash
    node client-post.js
@@ -272,9 +272,9 @@ When building an API it's very common to construct so that you have a number of 
    Connection closed
    ```
 
-Congratulations, you've managed to implement a resource `products` where you are able to do a full CRUD, that is **C**reate, **R**ead, **U**pdate and **D**elete data.
+Congratulations, you've managed to implement a resource `products` where you are able to do a full CRUD, that is **C**reate, **R**ead, **Update, and **D**elete data.
 
-1. Implementing *CRUD* for a resource is quite common thing to do. Express has a method `route()` meant just for this. By using `route()` your code will be grouped so it's easier to read. So let's replace all the code you have in `app.js` with this:
+1. Implementing *CRUD* for a resource is common thing to do. Express has a method `route()` meant just for this purpose. By using `route()` method, your code will be grouped so that it's easier to read. So let's replace all the code you have in `app.js` with this code:
 
    ```javascript
    const express = require('express')
@@ -346,11 +346,11 @@ Congratulations, you've managed to implement a resource `products` where you are
    Connection closed
    ```
 
-   Note how you are using `client-delete-route.js` instead of `client-delete.js`. What's the difference? The difference lies in how the route is implemented. The first version of `app.js` relied on deletions being done towards a route like this `/products/<id>`, with the unique identifier being sent as a route parameter. When you use the `route()` it implements the deletion route differently and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to this - you do you.
+   Note how you are using `client-delete-route.js` instead of `client-delete.js`. What's the difference? The difference lies in how the route is implemented. The first version of `app.js` relied on deletions being done towards a route like this `/products/<id>`, with the unique identifier being sent as a route parameter. When you use the `route()` method it implements the deletion route differently and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route - you do you.
 
 ## Leverage route parameters and query parameters to limit response size
 
-Data usually resides in a database or an endpoint. The size of that data can potentially be enormous. When a user then asks for all the data for a specific resource that could be a huge response like thousands or even millions of records. This can cause a massive strain on a database but it would also take a long time to serve that response. To avoid that scenario, it's considered good practice to *limit* the size of the response. A way to do that is by using route parameters so you can ask for specific records. Another way is to use query parameters to specify a subset of records. You will be taught both these techniques in this exercise.  
+Data usually resides in a database or an endpoint. The size of that data can potentially be enormous. When a user then asks for all the data for a specific resource, that could be a huge response like thousands or even millions of records. A request like this can cause a massive strain on a database but it would also take a long time to serve that response. To avoid that scenario, it's considered good practice to *limit* the size of the response. A way to do that is by using route parameters so you can ask for specific records. Another way is to use query parameters to specify a subset of records. You will be taught both these techniques in this exercise.  
 
 1. Clone the repo at URL with the following command:
 
@@ -360,7 +360,7 @@ Data usually resides in a database or an endpoint. The size of that data can pot
 
    Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. Let's inspect the repo you cloned. Type the following:
+1. Let's inspect the repo you cloned. Type the following command:
 
    ```bash
    cd <repo dir>
@@ -381,7 +381,7 @@ Data usually resides in a database or an endpoint. The size of that data can pot
 
    `npm` reads from the `dependencies` section in our `package.json` and you should be ready to continue.
 
-1. Time to inspect `app.js`. Open up said file. You should be seeing the following:
+1. Time to inspect `app.js`. Open up said file. You should be seeing the following code:
 
    ```javascript
    const express = require('express')
@@ -474,7 +474,7 @@ Data usually resides in a database or an endpoint. The size of that data can pot
    })
    ```
 
-1. Let's test this out by first starting our app by typing the following command in the terminal:
+1. Lets test out this code by first starting our app by typing the following command in the terminal:
 
    ```bash
    node app.js
@@ -495,7 +495,7 @@ Data usually resides in a database or an endpoint. The size of that data can pot
    }]
    ```
 
-   What you see is the first two records out of the total three. This means the query parameters `page` and `pageSize` is working to filter down the response size. Change the URL to `http://localhost:3000/products?page=2&pageSize=2`. Now you've changed page from one to two. The response should now look like this:
+   What you see is the first two records out of the total three. This response means the query parameters `page` and `pageSize` is working to filter down the response size. Change the URL to `http://localhost:3000/products?page=2&pageSize=2`. Now you've changed page from one to two. The response should now look like this:
 
    ```output
    [{

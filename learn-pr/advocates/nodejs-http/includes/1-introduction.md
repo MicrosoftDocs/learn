@@ -16,7 +16,7 @@ In this module, you’ll learn about how to handle HTTP requests with Node.js. Y
 
 By the end of this module, you’ll be able to:
 
-- Understand the core concepts of the Web framework Express
-- How to return different types of content like HTML and JSON
-- Send data to an Express endpoint
-- Upload a file
+- Understand the core concepts of the Web framework Express.
+- Configure middleware to control how a request is handled.
+- How to return different types of content like text and JSON.
+- Send data to an Express endpoint.

@@ -1,12 +1,12 @@
-You've been tasked with creating a simple API using the framework Express. Tailwind Traders woulld like to evaluate Express and see if it's easy to work with. As part of that evaluation they would like you to build a simple web application that server different routes. 
+You've been tasked with creating a simple API using the framework Express. Tailwind Traders would like to evaluate Express and see if it's easy to work with. As part of that evaluation, they would like you to build a web application that serves different routes. 
 
 ## Create a basic Web app with Express
 
 You will create a basic application that will be able to handle requests.
 
 1. Create a file `app.js`.
-1. Go to the terminal and enter `npm init -y`. This will initialize a Node.js project.
-1. In the terminal type `npm install express`. This will install the Express framework.
+1. Go to the terminal and enter `npm init -y`. This command will initialize a Node.js project.
+1. In the terminal type `npm install express`. This command installs the Express framework.
 1. Open up the file `package.json` and note how the `dependencies` section now has an `express` entry. That means Express has been correctly installed.
 1. Add the following code to `app.js`:
 
@@ -43,12 +43,12 @@ You will create a basic application that will be able to handle requests.
    Example app listening on port 3000!
    ```
 
-   This means your app is up and running and ready to receive requests.
+   This output means your app is up and running and ready to receive requests.
 
-1. Open a up a browser and navigate to `http://localhost:3000`. In the browser window you should now see the following text displayed `Hello World!`.
+1. Open up a browser and navigate to `http://localhost:3000`. In the browser window, you should now see the following text displayed `Hello World!`.
 1. Type `Ctrl-C` in the terminal to stop the program.
 
-## Create a Web App that returns a product list 
+## Create a Web App that returns JSON data
 
 You will continue to work with the same `app.js` and add a new route.
 
@@ -107,7 +107,7 @@ You will continue to work with the same `app.js` and add a new route.
 
    ```
 
-1. Save your changes and type the following in the terminal:
+1. Save your changes and type the following command in the terminal:
 
    ```javascript
    node app.js

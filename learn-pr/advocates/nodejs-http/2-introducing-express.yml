@@ -3,10 +3,10 @@ uid: learn.node-http.2-introducing-express
 title: Introducing Express
 metadata:
   title: Introducing Express
-  description: Introducing Express
+  description: This unit will explain what the Express framework is and what steps are needed to create a Web Application with it.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/16/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

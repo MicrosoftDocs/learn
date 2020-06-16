@@ -201,9 +201,9 @@ Most applications have parts that it's ok for anyone to access but there are als
    Closing connection
    ```
 
-   The user data is now returned because you passed an `authorization` header with an accepted value. 
+   The user data is now returned because you passed an `authorization` header with an accepted value.
 
 Congrats you learned how to use the middleware construct in Express to add some rudimentary authorization to your Express app.
 
 > [!CAUTION]
-> Be mindful though that an authentication/authorization meant for real world uage needs to be a bit more robust than the above. It's worth looking up concepts such as OAuth, JSON Web Tokens, JWT and the library `bcrypt` to ensure your app has a decent level of protection.
+> Be mindful though that an authentication/authorization meant for real world usage needs to be a bit more robust than the above. It's worth looking up concepts such as OAuth, JSON Web Tokens, JWT and the library `bcrypt` to ensure your app has a decent level of protection.
