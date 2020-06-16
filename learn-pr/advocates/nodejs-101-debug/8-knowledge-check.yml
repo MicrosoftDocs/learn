@@ -14,25 +14,31 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What is Node.js?"
+    - content: "How do you run Node.js with inspect mode enabled?"
       choices:
-        - content: "A JavaScript framework."
+        - content: "With the command `node inspect myscript.js`"
           isCorrect: false
-          explanation: "Node.js is usually wrongly presented as a framework but it's not."
-        - content: "A JavaScript runtime."
+          explanation: "This command is starts your program with the built-in debugger."
+        - content: "With the command `node --inspect myscript.js`"
           isCorrect: true
-          explanation: "Correct. Node.js is a runtime that can execute JavaScript applications."
-        - content: "A JavaScript server."
+          explanation: "Use the `--inspect` option to allow debugger clients to connect to the Node.js process."
+        - content: "With the command `node myscript.js"
           isCorrect: false
-          explanation: "Although Node.js can be used to implement a server, it's not a server."
-    - content: "Why should you use Node.js?"
+          explanation: "For security reasons, the use of debugger must be enabled explicitly when running Node.js."
+        - content: "By typing `debug` in the Node.js REPL"
+          isCorrect: false
+          explanation: "A debugger can only be used on an existing program and does not work in the REPL environment."
+    - content: "How can you make a debugger pause the execution of your program on a specific line of code?"
       choices:
-        - content: "Because it has a large community supporting the project."
+        - content: "With the command `node --inspect-brk myscript.js`"
+          isCorrect: false
+          explanation: "This command runs Node.js in inspect and pause execution before your program code."
+        - content: "By stepping through your code until you reach the desired line."
+          isCorrect: false
+          explanation: "While this technique may work for small programs, it's not practical if you have thousands of lines of code."
+        - content: "By commenting out unwanted code."
+          isCorrect: false
+          explanation: "Commenting out code can alter your program behavior and does not help you to pause the execution."
+        - content: "By setting a breakpoint in your code."
           isCorrect: true
-          explanation: "Correct. Node.js is supported by the OpenJS foundation and counts more than 3k active contributors."
-        - content: "Because it can run Java."
-          isCorrect: false
-          explanation: "Node.js can run JavaScript, not Java."
-        - content: "Because I can use it to build mobile applications."
-          isCorrect: false
-          explanation: "Mobile applications can be built with many languages including JavaScript. Node.js is a runtime not a language."
+          explanation: "When using a debugger, you can using breakpoints to pause execution at specific points in your code."
