@@ -1,24 +1,23 @@
 ### YamlMime:Module
 uid: create-azure-resource-manager-template-vs-code
 metadata:
-  title: "Write Azure Resource Manager templates by using Visual Studio Code - Learn"
-  description: Write Azure Resource Manager templates to deploy your infrastructure to Azure consistently and reliably.
+  title: "Deploy consistent infrastructure in Azure by using Azure Resource Manager templates - Learn"
+  description: Write Azure Resource Manager templates using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
   ms.date: 06/19/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Write Azure Resource Manager templates by using Visual Studio Code"
-summary: Write Azure Resource Manager templates to deploy your infrastructure to Azure consistently and reliably.
+title: "Deploy consistent infrastructure in Azure by using Azure Resource Manager templates"
+summary: Write Azure Resource Manager templates using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
 abstract: |
   In this module, you will:
-  - Explore Azure Resource Manager templates to implement infrastructure as code
-  - Create and deploy an Azure Resource Manager template to Azure by using Visual Studio Code and Azure CLI
+  - Implement an Azure Resource Manager template by using Visual Studio Code and Azure CLI
   - Declare resources and add flexibility to your template by adding resources, parameters, and outputs
   - Predict what changes would be made to your infrastructure by using the *what-if* switch
 prerequisites: |
-  - Familiar with [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-  - Familiar with [Azure fundamentals](https://docs.microsoft.com/learn/paths/azure-fundamentals?azure-portal=true)
+  - Familiar with Azure including the Azure portal, subscriptions, resource groups, and resource definitions
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally
   - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally
 iconUrl: /learn/achievements/generic-badge.svg

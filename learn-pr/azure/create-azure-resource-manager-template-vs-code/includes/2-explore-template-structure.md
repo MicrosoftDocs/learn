@@ -180,7 +180,7 @@ Parameters enable you to customize the deployment by providing values that are t
 
 ### How do I use parameters in my template
 
-Here is an example of a template file with a parameter for the storageSKU defined in the *parameters* section of the template. Notice that you can provide a default for the parameter to be used if no value is specified at execution.
+Here is an example of a template file with a parameter for the storage SKU defined in the *parameters* section of the template. Notice that you can provide a default for the parameter to be used if no value is specified at execution.
 
 ```json
 "parameters": {
