@@ -90,6 +90,6 @@ You should communicate a strategy for managing releases and deployments. These p
 
 Any team venturing into InnerSource should think about the kinds of metrics they want to track to gauge the success of their program. While traditional metrics like "time to market" and "bugs reported" are still applicable, they aren't necessarily going to illustrate the benefits achieved through InnerSource.
 
-Instead, consider adding metrics that show how external participation has improved project quality. Is the repository receiving pull requests from external sources that fix bugs and add features? Are there active participants in discussions around the project and its future? Is the program inspiring an InnerSource expansion that drives benefits elsewhere the whole organization?
+Instead, consider adding metrics that show how external participation has improved project quality. Is the repository receiving pull requests from external sources that fix bugs and add features? Are there active participants in discussions around the project and its future? Is the program inspiring an InnerSource expansion that drives benefits elsewhere in the organization?
 
-Check out some [InnerSource case studies](https://gist.github.com/githubteacher/9fe53687a5f173d1d64c24c68625349e?azure-portal=true).
+Learn about the successes others have enjoyed in these [InnerSource case studies](https://gist.github.com/githubteacher/9fe53687a5f173d1d64c24c68625349e?azure-portal=true).

@@ -26,18 +26,18 @@ quiz:
     - content: "InnerSource programs are fundamentally the same as open source programs, except that their access is limited to people within their organization."
       isCorrect: true
       explanation: "InnerSource offers all of the benefits of traditional open source patterns, but to a limited audience in order to protect intellectual property."
-  - content: "Suppose your team has been receiving some low-quality bug reports without enough information to properly diagnose. Which of the following choice is the **best** way to address the issue?"
+  - content: "Suppose your team has been receiving some low-quality bug reports without enough information to properly diagnose. Which of the following choices is the **best** way to address the issue?"
     choices:
-    - content: "Use GitHub Script to add a workflow action that automatically rejects any issues with a description less than 200 characters long."
+    - content: "Use GitHub Script to add a workflow action that automatically rejects any issues with a description fewer than 200 characters long."
       isCorrect: false
-      explanation: "While this action may add length to the reports, it doesn't necessarily mean that your team will receive all the information they need to find and fix the bugs."
+      explanation: "While this action may add length to the reports, it doesn't necessarily mean that your team will receive all the information they need to find and fix bugs."
     - content: "Add an `ISSUE_TEMPLATE.md` file that includes fields for reproduction steps, system properties, and instructions for generating and including important logs."
       isCorrect: true
       explanation: "This file will ensure that anyone filing a bug knows what's expected of them at the moment they're writing the report."
     - content: "Add a `CONTRIBUTING.md` file that clearly explains what's expected in bug reports, such as reproduction steps, system properties, and instructions for generating and including important logs."
       isCorrect: false
-      explanation: "While this file is nice to have, it assumes that everyone will read and conform to it. Consider an option that is more integrated with the issue creation experience."
-  - content: "Suppose your team has been tracking data of all kinds since your InnerSource program went live three months ago. Which of the following choice indicates your program is a great success?"
+      explanation: "While this file is valuable, it assumes that everyone will read and conform to it. Consider a better option that is more integrated with the issue creation experience."
+  - content: "Suppose your team has been tracking data of all kinds since your InnerSource program went live three months ago. Which of the following metrics indicates your program is a great success?"
     choices:
     - content: "A dramatic rise in pull requests that address bugs in your software."
       isCorrect: true
