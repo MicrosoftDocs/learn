@@ -15,6 +15,7 @@ You learned about:
 
 Here are some links to more information on the topics we discussed in this module.
 
+- [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource/?azure-portal=true)
 - [Types of GitHub accounts](https://help.github.com/github/getting-started-with-github/types-of-github-accounts?azure-portal=true)
 - [Repository permission levels for an organization](https://help.github.com/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization?azure-portal=true)
 - [Managing access to your organization's repositories](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/managing-access-to-your-organizations-repositories?azure-portal=true)
@@ -24,4 +25,4 @@ Here are some links to more information on the topics we discussed in this modul
 - [GitHub Collaboration Best Practices](https://github.com/ideaconsult/etc/wiki/GitHub-Collaboration-Best-Practices?azure-portal=true)
 - [Awesome README examples](https://github.com/matiassingers/awesome-readme?azure-portal=true)
 - [Awesome CONTRIBUTING.md examples](https://github.com/mntnr/awesome-contributing?azure-portal=true)
-- [Awesome GitHub Issues & PRs Templates](https://github.com/devspace/awesome-github-templates?azure-portal=true)
+- [Awesome GitHub issue & pull request templates](https://github.com/devspace/awesome-github-templates?azure-portal=true)
