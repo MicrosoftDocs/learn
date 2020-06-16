@@ -1,26 +1,29 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-> [!Note]
+> [!NOTE]
 > **Sarah: Conversion feedback**
 > 
-> - Sarah looking into updating the data set, to change 'sex' column header to 'gender'
+> - Sarah looks into updating the dataset to change the **Sex** column header to **Gender**.
 
-We'll now pivot to discussing classification. If our simple analogy of predictive analytics was drawing a line through points and extrapolating from that, then classification can be described in its simplest form as drawing lines around groups of points.
+We'll now pivot to discuss classification. If our simple analogy of predictive analytics was to draw a line through points and extrapolate from that, then classification can be described in its simplest form as drawing lines around groups of points.
 
-While linear regression is used to predict quantitative responses, _logistic_ regression is used for classification problems. Formally, logistic regression predicts the categorical response ($Y$) based on predictors ($X_s$). Logistic regression goes by several names, and it is also known in the scholarly literature as logit regression, maximum-entropy classification (MaxEnt), and the log-linear classifier. In this algorithm, the probabilities describing the possible outcomes of a single trial are modeled using a sigmoid (S-curve) function. Sigmoid functions take any value and transform it to be between 0 and 1, which can be used as a probability for a class to be predicted, with the goal of predictors mapping to 1 when something belongs in the class and 0 when they do not.
+While linear regression is used to predict quantitative responses, _logistic_ regression is used for classification problems. Formally, logistic regression predicts the categorical response ($Y$) based on predictors ($X_s$). Logistic regression goes by several names. It's also known in the scholarly literature as logit regression, maximum-entropy classification (MaxEnt), and the log-linear classifier.
+
+In this algorithm, the probabilities that describe the possible outcomes of a single trial are modeled by using a sigmoid (S-curve) function. Sigmoid functions take any value and transform it to be between 0 and 1, which can be used as a probability for a class to be predicted. The goal of predictors is to map to 1 when something belongs in the class and 0 when they don't.
 
 :::image type="content" alt-text="A graph showing logistic regression." source="../media/logistic-regression.png" loc-scope="azure":::
 
-To show this in action, let's do something a little different and try a historical dataset: the fates of the passengers of the _RMS Titanic_, which is a popular dataset for classification problems in machine learning. In this case, the class we want to predict is whether a passenger survived the doomed liner's sinking.
+To show this model in action, let's do something a little different and use a historical dataset. Let's use the fates of the passengers of the _RMS Titanic_, which is a popular dataset for classification problems in machine learning. In this case, the class we want to predict is whether a passenger survived the doomed ocean liner's sinking.
 
 The dataset has 12 variables:
 
 - **PassengerId**
 - **Survived**: 0 = No, 1 = Yes
 - **Pclass**: Ticket class 1 = 1st, 2 = 2nd, 3 = 3rd
+- **Name**
 - **Gender**
 - **Age**
-- **Sibsp**: Number of siblings or spouses aboard the _Titanic_
+- **SibSp**: Number of siblings or spouses aboard the _Titanic_
 - **Parch**: Number of parents or children aboard the _Titanic_
 - **Ticket**: Passenger ticket number
 - **Fare**: Passenger fare
@@ -85,27 +88,27 @@ dtypes: float64(2), int64(5), object(5)
 memory usage: 83.6+ KB
 ```
 
-One reason that the _Titanic_ data set is a popular classification set is that it provides opportunities to prepare data for analysis. To prepare this dataset for analysis, we need to perform a number of tasks:
+One reason that the _Titanic_ dataset is a popular classification set is that it provides opportunities to prepare data for analysis. To prepare this dataset for analysis, we need to perform a number of tasks:
 
-- Remove extraneous variables
-- Check for multicollinearity
-- Handle missing values
+- Remove extraneous variables.
+- Check for multicollinearity.
+- Handle missing values.
 
-We will touch on each of these steps in turn.
+We'll touch on each of these steps in turn.
 
 ## Remove extraneous variables
 
-The name of individual passengers and their ticket numbers will clearly do nothing to help our model, so we can drop those columns to simplify matters.
+The names of individual passengers and their ticket numbers do nothing to help our model, so we can drop those columns to simplify matters.
 
 ```python
 df.drop(['Name','Ticket'],axis=1,inplace=True)
 ```
 
-There are additional variables that will not add classifying power to our model, but to find them we will need to look for correlation between variables.
+There are additional variables that won't add classifying power to our model. To find them, we'll need to look for correlation between variables.
 
 ## Check for multicollinearity
 
-If one or more of our predictors can themselves be predicted from other predictors, it can produce a state of _multicollinearity_ in our model. Multicollinearity is a challenge because it can skew the results of regression models (both linear and logistic) and reduce the predictive or classifying power of a model.
+If one or more of our predictors can be predicted from other predictors, it can produce a state of _multicollinearity_ in our model. Multicollinearity is a challenge because it can skew the results of regression models (both linear and logistic) and reduce the predictive or classifying power of a model.
 
 To help combat this problem, we can start to look for some initial patterns. For example, do any correlations between **Survived** and **Fare** jump out?
 
@@ -261,7 +264,7 @@ Here's the `groupby` output for the **Age** data:
 88 rows x 6 columns
 ```
 
-Survivors appear to be slightly younger on average with higher-cost fare.
+Survivors appear to be slightly younger on average with higher-cost fares.
 
 Value counts can also help us get a sense of the data before us, such as numbers for siblings and spouses on the _Titanic_, in addition to the gender split of passengers:
 
