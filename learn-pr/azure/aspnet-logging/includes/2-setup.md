@@ -86,12 +86,12 @@ In this unit, you'll download and test the application locally, and then create 
 2. Run the commands shown below to define the following PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password of your choosing. This password will be used by the instance of Azure SQL Database that the application connects to.  
 
     > [!NOTE]
-    > The resource group <rng>[sandbox resource group]</rng> has been created automatically, as part of the sandbox configuration.
+    > The resource group <rgn>[sandbox resource group name]</rgn> has been created automatically, as part of the sandbox configuration.
 
     ```PowerShell
     $useralias = "<your-initals-with-suffix>"
     $serveradminpassword = "<your-password>"
-    $resourcegroupname = "<rng>[sandbox resource group]</rng>"
+    $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
 3. Move to the **~/eShopModernizing/Setup** folder.
