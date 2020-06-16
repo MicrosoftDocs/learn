@@ -84,7 +84,7 @@ Check out some [Awesome GitHub issue & pull request templates](https://github.co
 
 For projects that encourage external contributions, be sure to specify what workflow the project follows. The workflow should include details about where and how branches should be used for bugs and features, how pull requests should be opened, and any other details people outside the repository team should know before they push code. If you don't yet have a workflow in mind, you should consider [the GitHub flow](https://guides.github.com/introduction/flow/?azure-portal=true).
 
-You should communicate a strategy for managing releases and deployments. These parts of the workflow will impact day-to-day branching and merging, so it's important to communicate them to contributors. Learn more about how thiey relate to your [Git branching strategy](/azure/devops/repos/git/git-branching-guidance?azure-portal=true).
+You should communicate a strategy for managing releases and deployments. These parts of the workflow will impact day-to-day branching and merging, so it's important to communicate them to contributors. Learn more about how they relate to your [Git branching strategy](/azure/devops/repos/git/git-branching-guidance?azure-portal=true).
 
 ### Measuring program success
 
