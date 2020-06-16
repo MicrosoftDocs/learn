@@ -42,7 +42,7 @@ Do you remember the `DataFrames` method for looking at overall information about
 
 <details> 
 
-  <summary>Hint<i>(expand to reveal)</i></summary>
+  <summary>Hint<i> (expand to reveal)</i></summary>
 
   Here's the input:
 
