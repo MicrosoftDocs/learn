@@ -208,6 +208,7 @@ This solution requires several Azure resources for deployment, which will be cre
       --name $leaderboardName \
       --resource-group $rgName \
       --storage-account $storageName \
+      --functions-version 3 \
       --consumption-plan-location <region>
     ```
 
@@ -220,7 +221,7 @@ This solution requires several Azure resources for deployment, which will be cre
       --output table
     ```
 
-    Note the host name for each running service. You'll need the web host name later when you verify your work. Here's an example:
+    Note the host name for the running service. You'll need the web host name later when you verify your work. Here's an example:
 
     ```output
     HostName                                        State
@@ -237,7 +238,7 @@ This solution requires several Azure resources for deployment, which will be cre
       --output table
     ```
 
-    Note the host name for each running service. You'll need the leaderboard host name later when you verify your work. Here's an example:
+    Note the host name for the running service. You'll need the leaderboard host name later when you verify your work. Here's an example:
 
     ```output
     HostName                                                State
@@ -248,10 +249,6 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Copy these two host names to a location you can easily access later.
 
 1. As an optional step, go to one or more of the host names. Verify that they're running and that the default home page appears.
-
-    Here's what you see:
-
-    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/deploy-azure-functions/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -272,7 +269,7 @@ To add the variables:
 
 1. Select **+ Variable group**.
 
-1. Under **Properties**, enter **Release** for the variable group name.
+1. Under **Properties**, enter *Release* for the variable group name.
 
 1. Under **Variables**, select **+ Add**.
 
