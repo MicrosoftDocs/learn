@@ -12,7 +12,7 @@ Additionally, while the hands-on exercises focused on Azure SQL Database, here i
 
 ### Deploy, Verify, and Configure
 
-Two common command-line tools for deploying, verifying, and configuring Azure SQL include the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) and the [Azure PowerShell](https://docs.microsoft.com/powershell/azure) modules. The links included will provide references and explanations around the capabilities. You can also access both of these tools through the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview), which is an integrated terminal that supports bash and PowerShell in the Azure portal.
+Two common command-line tools for deploying, verifying, and configuring Azure SQL include the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) and the [Azure PowerShell](https://docs.microsoft.com/powershell/azure) modules. The links included will provide references and explanations around the capabilities. You can also access both of these tools through the [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview), which is an integrated terminal that supports bash and PowerShell in the Azure portal.
 
 #### Data max size
 
