@@ -9,6 +9,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  show_latex: true
 durationInMinutes: 12
 content: |
   [!include[](includes/2-data-structure-flow.md)]

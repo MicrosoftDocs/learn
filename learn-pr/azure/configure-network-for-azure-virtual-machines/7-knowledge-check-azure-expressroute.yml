@@ -14,29 +14,47 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following protocols provides dynamic routing for Azure ExpressRoute?'
+  - content: 'You need to connect Azure resources like Azure virtual machines across geographical regions. Which Azure networking option should you use?'
+    choices:
+    - content: "Azure ExpressRoute"
+      isCorrect: false
+      explanation: "ExpressRoute allows you to extend your on-premises networks into the Microsoft Cloud over a private connection implemented by a connectivity provider."
+    - content: "VPN Gateway"
+      isCorrect: false
+      explanation: "An Azure virtual network gateway provides an endpoint for incoming connections from on-premises locations to Azure over the Internet."
+    - content: "Virtual network peering"
+      isCorrect: true
+      explanation: "Use virtual network peering to connect virtual networks to each other so resources in either virtual network can communicate with each other. The virtual networks you connect can be in different Azure regions."
+  - content: 'For a point-to-site Azure VPN gateway, what are the key parameters that you must specify when you create it?'
+    choices:
+    - content: "Gateway type is **Vpn** and vpn type is **RouteBased**."
+      isCorrect: false
+      explanation: "Those are key parameters but you also need to specify a gateway sku. The default is VpnGw1. If that SKU doesn't meet your organization's needs, you'd have to recreate the VPN gateway with the SKU that meets your organization's network requirements."
+    - content: "Gateway type is **Vpn**, vpn type is **RouteBased**, and you need to specify a gateway sku."
+      isCorrect: true
+      explanation: "Use the PowerShell cmdlet 'New-AzVirtualNetworkGateway' where you use parameters '-GatewayType Vpn' and '-VpnType RouteBased'. Also set the '-GatewaySku' to the SKU that meets your organization's network requirements."
+    - content: "Subnet is **GatewaySubnet** and gateway type is **Vpn**"
+      isCorrect: false
+      explanation: "You must create a gateway subnet with the name **GatewaySubnet** in order for the VPN gateway to function properly. But when you create the VPN gateway with the cmdlet 'New-AzVirtualNetworkGateway', you specify the '-IpConfigurations' for that subnet."
+  - content: 'Which peering configuration would you use for your Express route circuit where you need to allow direct connections to Azure compute resources?'
+    choices:
+    - content: "Azure Virtual Network peering"
+      isCorrect: false
+      explanation: "Virtual network peering allows you to connect networks in Azure Virtual Network."
+    - content: "Azure private peering"
+      isCorrect: true
+      explanation: "Azure private peering lets you directly connect to virtual machines and cloud services on their private IP addresses."
+    - content: "Microsoft peering"
+      isCorrect: false
+      explanation: "Microsoft peering supports connections to cloud-based SaaS offerings, such as Office 365 and Dynamics 365."
+  - content: 'Which protocol provides dynamic routing for Azure ExpressRoute?'
     choices:
     - content: "IPVPN"
       isCorrect: false
-      explanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
-    - content: "PPTP"
-      isCorrect: false
-      explanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
-    - content: "IPsec"
-      isCorrect: false
-      explanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
+      explanation: "An Any-to-any (IPVPN) network is a connectivity model that ExpressRoute supports."
     - content: "Border Gateway Protocol (BGP)"
       isCorrect: true
       explanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
     - content: "S-key"
       isCorrect: false
-      explanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
-
-  - content: 'True or false: Azure public peering allows you to connect to services with public IP addresses without your traffic being routed over the internet'
-    choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "Azure public peering enables private connections to services that are available on public IP addresses. Some examples of services that support this are: Azure Storage, and Azure SQL databases."
-    - content: "False"
-      isCorrect: false
-      explanation: "Azure public peering enables private connections to services that are available on public IP addresses. Some examples of services that support this are: Azure Storage, and Azure SQL databases."
+      explanation: "An s-key is a GUID that defines an ExpressRoute circuit and provides the connectivity link between Microsoft, your connectivity provider, and your organization."

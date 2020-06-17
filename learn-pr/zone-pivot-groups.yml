@@ -12,6 +12,8 @@ groups:
     title: Sandbox
   - id: support
     title: Support
+  - id: educators
+    title: Educators
 - id: os
   title: Operating system
   prompt: Choose your operating system
@@ -104,6 +106,14 @@ groups:
       title: C#
     - id: python
       title: Python
+- id: dev-lang-nodeexpress-pythonflask
+  title: Development platform
+  prompt: Choose your platform
+  pivots:
+    - id: nodeexpress
+      title: Express and Node.js (JavaScript)
+    - id: pythonflask
+      title: Flask (Python)
 - id: dev-lang-csharp-node
   title: Development language
   prompt: Choose your development language
@@ -188,7 +198,7 @@ groups:
       title: People Strategy
     - id: technology-strategy
       title: Technology Strategy
-- id: migration-strategy  
+- id: migration-strategy 
   title: Migration-Strategy
   prompt: Click on each of the buttons to learn more about each migration strategy.
   pivots:
@@ -276,3 +286,25 @@ groups:
       title: Java
     - id: cli
       title: Azure CLI
+- id: dev-javascript-framework
+  title: JavaScript framework
+  prompt: Choose your JavaScript framework or library
+  pivots:
+    - id: angular
+      title: Angular
+    - id: react
+      title: React
+    - id: svelte
+      title: Svelte
+    - id: vue
+      title: Vue
+- id: data-azure-database
+  title: Azure database environment
+  prompt: Choose your database
+  pivots:
+    - id: azuresql
+      title: Azure SQL Database
+    - id: postgresql
+      title: Azure Database for PostgreSQL
+    - id: mysql
+      title: Azure Database for MySQL   

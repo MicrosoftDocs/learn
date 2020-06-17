@@ -16,8 +16,8 @@ Our application might have several intents: finding pictures, sharing pictures, 
 1. Create a new resource group named **LearnRG**.
 1. For **Authoring Location**, choose the one nearest you.
 1. For **Authoring pricing tier**, select **F0**
-1. Set your **Runtime location** to the same region you chose for **Authoring location**
-1. For **Runtime pricing tier**, select **F0**.
+1. Set your **Prediction location** to the same region you chose for **Authoring location**
+1. For **Prediction pricing tier**, select **F0**.
 1. Select **Create**.
 
 After the deployment has finished, go the resource page for the service. You'll need one of the displayed subscription keys for later exercises. You can either use the "Grab your keys" option in the **Quick start** section, or switch to the **Keys** section to see the two created keys.
@@ -44,4 +44,4 @@ Azure requires you to create the LUIS app in the same geographic location where 
 1. Give your LUIS app a description so it's clear what the app's purpose is.
 1. Select **Done**. 
 
-The newly created app will show the **Intents** page with a single intent named **None**. 
+The newly created app will open to the Dashboard. Select Build on the top nav bar to switch to the Build view for editing your app.

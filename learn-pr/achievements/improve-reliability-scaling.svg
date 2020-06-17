@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Modern Operations for reliability/modern-operations-for-reliability-capacity-planning</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-6"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-8">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-80.0%" y="-66.7%" width="260.0%" height="233.3%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-11">
+            <stop stop-color="#0062B3" offset="0%"></stop>
+            <stop stop-color="#00549B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-12">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Modern-Operations-for-reliability" transform="translate(-159.000000, -699.000000)">
+            <g id="Modern-Operations-for-reliability/modern-operations-for-reliability-capacity-planning" transform="translate(160.000000, 700.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(-1.886792, -1.886792)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle" fill="url(#linearGradient-8)" x="25" y="50.6662234" width="25" height="25"></rect>
+                <path d="M25.5782342,27 L73,27 L73,75 L25.5782342,75 L25.5782342,27 Z" id="Rectangle" stroke="url(#linearGradient-9)" stroke-dasharray="3"></path>
+                <g id="Shield" filter="url(#filter-10)" transform="translate(30.000000, 55.000000)" fill-rule="nonzero">
+                    <path d="M15,8.40375567 C15,13.240678 9.04661017,17.1356177 7.74364407,17.9294233 C7.59486761,18.0235256 7.40513239,18.0235256 7.25635593,17.9294233 C5.95338983,17.1462018 0,13.2512621 0,8.40375567 L0,2.58251434 C0,2.32939299 0.20223386,2.12256778 0.455508489,2.11681503 C5.09533899,2.0003902 4.02542374,0 7.5,0 C10.9745763,0 9.90466101,2.0003902 14.5444915,2.11681503 C14.7977661,2.12256778 15,2.32939299 15,2.58251434 L15,8.40375567 Z" id="Path" fill="url(#linearGradient-11)"></path>
+                    <path d="M13.5,8.53291915 C13.5,12.3070953 8.73913002,15.3354223 7.6965364,15.9464794 C7.57775567,16.0178402 7.42780445,16.0178402 7.30902372,15.9464794 C6.2664301,15.3354223 1.50556012,12.3070953 1.50556012,8.53291915 L1.50556012,4.03985233 C1.48660629,3.93334684 1.51663088,3.82410767 1.58768156,3.74106798 C1.65873224,3.65802829 1.76364032,3.60956639 1.87461981,3.60851792 C5.58366968,3.54561498 4.7348324,2 7.50278006,2 C10.2707277,2 9.42189044,3.54561498 13.1309403,3.60851792 C13.3327172,3.6132554 13.4951358,3.77144285 13.5,3.96796326 L13.5,8.53291915 Z" id="Path" fill="url(#linearGradient-12)"></path>
+                </g>
+                <g id="Group-8" transform="translate(33.768032, 58.419802)">
+                    <polygon id="Fill-1" fill="#293E9C" points="0.9675 6.00023 0.5565 6.71423 6.8925 6.71423 6.4865 6.00023"></polygon>
+                    <polygon id="Fill-2" fill="#0FA6FF" points="2.6343 3.00023 2.2233 3.71423 5.2483 3.71423 4.8423 3.00023"></polygon>
+                    <polygon id="Fill-3" fill="#00549B" points="1.5228 5.00073 1.1118 5.71373 6.3438 5.71373 5.9378 5.00073"></polygon>
+                    <polygon id="Fill-4" fill="#398CF0" points="2.079 4.00023 1.668 4.71423 5.796 4.71423 5.39 4.00023"></polygon>
+                    <polygon id="Fill-5" fill="#051D32" points="0.4113 7.00023 0.000300000001 7.71423 7.4403 7.71423 7.0343 7.00023"></polygon>
+                    <polygon id="Fill-6" fill="#63C4FE" points="3.1905 2.00023 2.7785 2.71423 4.6995 2.71423 4.2935 2.00023"></polygon>
+                    <polygon id="Fill-7" fill="#63C4FE" points="3.7458 1.00023 3.3348 1.71423 4.1518 1.71423"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
