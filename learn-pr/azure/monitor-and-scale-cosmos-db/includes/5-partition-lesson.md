@@ -65,7 +65,7 @@ By using the information from the previous sections, let's propose some differen
 
     - The Orders database has these categories:
 
-        [!code-charp[](../code/OrderItem.cs?range=19-28)]
+        [!code-csharp[](../code/OrderItem.cs?range=19-28)]
 
         If you use the `Item/Category` property as a partition key, then it has a small cardinality. Even if the documents are evenly distributed across the collection, for large collections, any category might outgrow a single partition.
 

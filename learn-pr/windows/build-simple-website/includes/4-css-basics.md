@@ -84,7 +84,7 @@ One benefits of external CSS is that multiple HTML pages can link to the same CS
 
 ## Open in browser
 
-To preview using **VS Code**, select on `index.html` and select **Open In Default Browser**.
+To preview using **Visual Studio Code**, select on `index.html` and select **Open In Default Browser**.
 
 > [!IMPORTANT]
 > Even though you were just editing the `main.css` file, to preview the changes, you should select the `index.html` file.

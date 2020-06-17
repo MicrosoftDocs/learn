@@ -72,7 +72,7 @@ A Kubernetes deployment gives you a way to provide declarative updates for Pods.
 
 1. Review the file, and note the following points:
 
-    - `image`: You'll create a deployment with two replicas running the image you pushed to the Azure Container Registry instance you created previously, for example, `acr4229.azurecr.io/ratings-api:v1`. The container listens to port `3000`. The deployment and the pods are labeled with `app=ratings-api`.
+    - `image`: You'll create a deployment with a replica running the image you pushed to the Azure Container Registry instance you created previously, for example, `acr4229.azurecr.io/ratings-api:v1`. The container listens to port `3000`. The deployment and the pod is labeled with `app=ratings-api`.
 
     - `secretKeyRef`: The ratings API expects to find the connection details to the MongoDB database in an environment variable named `MONGODB_URI`. By using `valueFrom` and `secretKeyRef`, you can reference values stored in `mongosecret`, the Kubernetes secret that was created when you deployed MongoDB.
 
@@ -104,7 +104,7 @@ A Kubernetes deployment gives you a way to provide declarative updates for Pods.
         -l app=ratings-api -w
     ```
 
-    In a few seconds, you'll see the pods transition to the `Running` state. Select <kbd>Ctrl+C</kbd> to stop watching.
+    In a few seconds, you'll see the pod transition to the `Running` state. Select <kbd>Ctrl+C</kbd> to stop watching.
 
     ```output
     NAME                           READY   STATUS    RESTARTS   AGE

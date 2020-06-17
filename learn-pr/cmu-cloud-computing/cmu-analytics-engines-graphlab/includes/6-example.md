@@ -1,4 +1,4 @@
-In this unit, we explore the abstraction of GraphLab by walking through the PageRank example. The PageRank algorithm is a well-known technique proposed by Google. It is used by Google to rank the importance of website pages returned by the search engine. Using the assumption that more important websites are likely to receive more links from other important websites, it determines the importance of a page by counting the number and quality of links pointed to that page. 
+In this unit, we explore the abstraction of GraphLab by walking through the PageRank example. The PageRank algorithm is a well-known technique invented by Google to rank the importance of website pages returned by the search engine. Using the assumption that more important websites are likely to receive more links from other important websites, it determines the importance of a page by counting the number and quality of links pointed to that page. 
 
 PageRank has various implementations, but its idea can be demonstrated with the following equation: 
 

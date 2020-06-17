@@ -24,7 +24,7 @@ console.log('Here\'s a hidden message');
 
 In **Visual Studio Code**, when in JavaScript file, you can use autocomplete by typing `log` then hitting enter (return).
 
-![Screenshot of VS Code log Emmet entry](../media/vs-code-js-log-emmet.png)
+![Screenshot of Visual Studio Code log Emmet entry](../media/vs-code-js-log-emmet.png)
 
 You can define a text *string* with single or double quotes around the text.
 
@@ -74,7 +74,7 @@ When you declare a variable, it holds a reference to the value you assign. Varia
 
 The main idea to remember here is that you can use JavaScript to select an ID (or class attribute) and then do something—like change HTML (or CSS styles) on the page.
 
-![Screenshot of VS Code app JavaScript file](../media/vs-code-js-add-the-date.png)
+![Screenshot of Visual Studio Code app JavaScript file](../media/vs-code-js-add-the-date.png)
 
 ## Open in browser
 
@@ -103,4 +103,4 @@ In **Chrome**, the keyboard shortcut for **Console** in the Developer Tools is O
 
 ![Screenshot of console message in Chrome](../media/3-html-basics/chrome-console-message.png)
 
-![Screenshot of VS Code no escape error](../media/vs-code-js-no-escape.png)
+![Screenshot of Visual Studio Code no escape error](../media/vs-code-js-no-escape.png)
