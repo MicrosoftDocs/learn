@@ -30,7 +30,7 @@ By taking advantage of modern development practices, such as DevOps, you can ena
 
 ### Performance efficiency
 
-For an architecture to perform well and be scalable, it should properly match resource capacity to demand. Traditionally, cloud architectures accomplish this balance by scaling applications dynamically based on activity in the application. Demand for services changes, so it's important for your architecture to have the ability to adjust to demand. By designing your architecture with performance and scalability in mind, you'll provide a great experience for your customers while being cost-effective.
+For an architecture to perform well and be scalable, it should properly match resource capacity to demand. Traditionally, cloud architectures accomplish this balance by scaling applications dynamically based on activity in the application. Demand for services changes, so it's important for your architecture to be able to adjust to demand. By designing your architecture with performance and scalability in mind, you'll provide a great experience for your customers while being cost-effective.
 
 ![An illustration that shows how resources in the cloud scale dynamically based on demand, resulting in highly efficient usage. When resources are implemented at a fixed level, it results in inefficient usage during low demand and shortage during high demand.](../media/performance-demand.png)
 

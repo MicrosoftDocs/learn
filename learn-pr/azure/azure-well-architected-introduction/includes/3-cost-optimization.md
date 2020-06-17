@@ -47,6 +47,6 @@ Waste can show up in several ways. Let's look at a few examples:
 
 In each of these cases, more money is being spent than it should. Each case presents an opportunity for cost reduction.
 
-As you evaluate your cost, take the opportunity to optimize environments. Capacity demands can and will change over time, and many cloud services have the ability to manually or dynamically adjust the provisioned resources to meet the demands. These adjustments can drive the balance between a well-running application at the most cost-effective size. 
+As you evaluate your cost, take the opportunity to optimize environments. Capacity demands can and will change over time, and many cloud services can manually or dynamically adjust the provisioned resources to meet the demands. These adjustments can drive the balance between a well-running application at the most cost-effective size. 
 
 Optimize your systems at every level. At the network level, ensure that data transfer is efficient and meets the expectations of your customers. Use services to cache data to increase application performance and reduce the transaction load on your data storage services. Identify and decommission unused resources. Take advantage of lower-cost data storage tiers to archive infrequently accessed data.
