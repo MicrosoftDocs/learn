@@ -8,9 +8,8 @@ In this module, you are introduced to Azure Resource Manager template structure 
 
 In this module, you:
 
-- Implement an Azure Resource Manager template by using Visual Studio Code and Azure CLI
+- Implement an Azure Resource Manager template by using Visual Studio Code
 - Declare resources and add flexibility to your template by adding resources, parameters, and outputs
-- Predict what changes would be made to your infrastructure by using the *what-if* switch
 
 ## Prerequisites
 

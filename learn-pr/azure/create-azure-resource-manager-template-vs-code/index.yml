@@ -12,9 +12,8 @@ title: "Deploy consistent infrastructure in Azure by using Azure Resource Manage
 summary: Write Azure Resource Manager templates using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
 abstract: |
   In this module, you will:
-  - Implement an Azure Resource Manager template by using Visual Studio Code and Azure CLI
+  - Implement an Azure Resource Manager template by using Visual Studio Code
   - Declare resources and add flexibility to your template by adding resources, parameters, and outputs
-  - Predict what changes would be made to your infrastructure by using the *what-if* switch
 prerequisites: |
   - Familiar with Azure including the Azure portal, subscriptions, resource groups, and resource definitions
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally
@@ -35,7 +34,9 @@ units:
 - learn.create-azure-resource-manager-template-vs-code.1-introduction
 - learn.create-azure-resource-manager-template-vs-code.2-explore-template-structure
 - learn.create-azure-resource-manager-template-vs-code.3-exercise-create-and-deploy-template
-- learn.create-azure-resource-manager-template-vs-code.4-knowledge-check
-- learn.create-azure-resource-manager-template-vs-code.5-summary
+- learn.create-azure-resource-manager-template-vs-code.4-add-flexibility-arm-template
+- learn.create-azure-resource-manager-template-vs-code.5-exercise-parameters-output
+- learn.create-azure-resource-manager-template-vs-code.6-knowledge-check
+- learn.create-azure-resource-manager-template-vs-code.7-summary
 badge:
   uid: create-azure-resource-manager-template-vs-code.badge

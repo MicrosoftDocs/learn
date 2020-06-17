@@ -1,11 +1,9 @@
-In this module, you were introduced to Microsoft Azure Resource Manager templates and used them to deploy a storage account to Azure. You made the template more flexible by adding parameters, and got output from the execution of the template. You also explored the *what-if* feature od Azure Resource Manager to predict what changes will be made if the template executes against your current infrastructure.
+In this module, you were introduced to Microsoft Azure Resource Manager templates and used them to deploy a storage account to Azure. You made the template more flexible by adding parameters, and got output from the execution of the template. 
 
 In summary, you:
 
-- Explored Azure Resource Manager templates
-- Created and deployed an Azure Resource Manager template by using Visual Studio Code and Azure CLI
+- Implemented an Azure Resource Manager template by using Visual Studio Code.
 - Declared resources and added flexibility to your template by adding resources, parameters, and outputs.
-- Predicted what changes would be made to your infrastructure by using the *what-if* switch
 
 <!-- ## Next steps
 
@@ -30,5 +28,3 @@ Here are some links to learn more:
 - [Resource providers for Azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true)
 
 - [Define resources in Azure Resource Manager template](https://docs.microsoft.com/azure/templates?azure-portal=true)
-
-- [What-if](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell&azure-portal=true)

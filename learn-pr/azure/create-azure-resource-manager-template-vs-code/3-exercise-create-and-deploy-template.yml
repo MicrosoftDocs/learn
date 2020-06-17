@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true
-durationInMinutes: 20
+durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-and-deploy-template.md)]
