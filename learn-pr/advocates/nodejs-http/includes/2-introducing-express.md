@@ -1,3 +1,15 @@
+Companies often have much data stored in many places like file systems or databases for example. A way to access that data is by serving it through web applications and APIs using HTTP. 
+
+So what things are important things to consider when building web applications and APIs?
+
+- **Routing**, routing is a concept in which your application is divided into different sections based on parts of the URL address.
+- **Supporting different content types**, the data to serve up might exist in different formats such as plain text, JSON, HTML, CSV and more.
+- **Authentication/Authorization**, some data might be sensitive and might need the user to be logged in or even have a specific role or permission level to be able to access it.
+- **Reading/Writing data**, users will most likely need to both display data as well as be able to add data to the system by, for example,  enter data in a form or by uploading files.
+- **Time to market**, the chosen tools, and libraries to create web applications and APIs should include solutions to common problems to ensure the developer can spend as much time as possible on implementing business requirements.  
+
+## http module in Node.js
+
 Node.js comes with a built-in http module. It's a fairly small module that is competent in handling most types of requests. It's able to work with important topics such as headers, the URL, and payloads being sent across.
 
 The below classes help with managing a request from start to finish:
@@ -68,6 +80,16 @@ Why should you go with Express as framework for your next app?
 
 ### Route management in Express
 
+When a client makes a request towards a web application they do so using a URL, an address that points to a specific server. A URL might look like this:
+
+```bash
+http://localhost:3000/products
+```
+
+The term `localhost` refers to your own machine but a more production looking URL might have switched out the term `localhost` for a domain name like `microsoft.com`. Then end part of the URL is the route. It decides a specific place to go on the server, to `/products` in this case. Together with HTTP Verbs like POST, PUT, GET, and so on, the routes and the verbs constitute a way to understand, not only where to go, but what the client wants done. The verb GET means that the request just wants data back whereas the verb POST means that the request will contain data that it means for the server to persist.
+
+Express helps with registering routes and pairing these to appropriate HTTP verbs to make it simpler to organize the web application.
+
 How does Express help us with route management and HTTP verbs? The Express framework has dedicated methods for handling both different HTTP Verbs but also a smart system for associating different routes with different pieces of your code. Consider the below code example:
 
 ```javascript
@@ -89,6 +111,29 @@ app.post('/products', (req, res) => {
 ```
 
 GET means that a user wants to read data and POST that they want to write data. Dividing your app up so different route, verb pairings executes different pieces of code therefore makes sense.
+
+## Serving different content types
+
+Express comes with *batteries included* in the sense that it supports many different content formats to be returned back to a calling client. The Response object comes with a set of helper functions able to return different types of data. To return plain text, you would use the `send()` method like so:
+
+```javascript
+res.send('plain text')
+```
+
+For other types of data like JSON, there are dedicated methods that ensure the correct content type as well as data conversions are made. To return JSON, you would use the method `json()` like so:
+
+```javascript
+res.json({ id: 1, name: "Catcher in the Rye" })
+```
+
+This is equivalent to the following code, if we were using the http module over the Express module:
+
+```javascript
+res.writeHead(200, { 'Content-Type': 'application/json' });
+res.end(JSON.stringify({ id: 1, name: "Catcher in the Rye" }))
+```
+
+Above the `Content-Type` header is set and the response is also converted from a JavaScript object to a *stringified* version before being returned back to the calling client. In conclusion, Express saves us a few lines of typing by creating this kind of helper methods for common types like JSON, HTML and more.
 
 ## Create an Express application
 
