@@ -4,7 +4,7 @@ The idea of using software containerization technology as a time-saving and cost
 
 Suppose you work for an online clothing retailer that is planning the development of several internal apps. Your team develops and tests all applications on-premises and then deploys them to Azure for pre-production testing and final production hosting.  You're looking for maximum compatibility in each environment with little or no configuration changes. Using Docker as a containerization solution seems an ideal choice.
 
-Here, you'll learn how the Docker is used to create your own containers. You'll also learn a bit about how  Docker infrastructure works behind the scenes. The goal is to help you decide if Docker containers are the right choice for your business.
+Here, you'll learn how Docker is used to create your own containers. You'll also learn a bit about how  Docker infrastructure works behind the scenes. The goal is to help you decide if Docker containers are the right choice for your business.
 
 ## Learning objectives
 

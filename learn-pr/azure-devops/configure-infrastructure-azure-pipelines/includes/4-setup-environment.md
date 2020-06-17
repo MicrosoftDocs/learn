@@ -25,7 +25,7 @@ Before you set up Git, add Visual Studio Code to your system PATH. This step mak
 
 Here, you create a directory to hold your Git repository.
 
-1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
+1. On the **View** menu, select **Terminal**.
 1. In the drop-down list, select **bash**:
 
     ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
@@ -33,6 +33,8 @@ Here, you create a directory to hold your Git repository.
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
     Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
+
+    [!include[](../../shared/includes/troubleshoot-code-terminal.md)]
 
 1. Run the `cd` command to go to the directory you want to work from, like your home directory (`~`). You can choose a different directory if you want.
 
