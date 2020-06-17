@@ -4,13 +4,13 @@ Now that you've created a Data Science Virtual Machine, you need to connect to i
 
 When you created the DSVM in the previous step, you downloaded a **.PEM** file containing a private key associated with the account `AzureUser` on the DSVM. Authenticating this way depends on the operating system you're running locally. 
 
-::: zone pivot="Windows"
+::: zone pivot="windows"
 
 On windows you tk
 
 ::: zone-end
 
-::: zone pivot="Mac or Linux"
+::: zone pivot="mac,linux"
 
 On a Mac or Linux tk
 
