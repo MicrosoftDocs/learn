@@ -6,7 +6,7 @@ In this unit, you'll store the SQL Server connection string in Azure Key Vault. 
 
 1. In the Cloud Shell window on the right, run the commands shown below to ensure that your environment is still set up correctly. If necessary, recreate any missing environment variables with the values you used earler in the Setup unit.
 
-    ````PowerShell
+    ```PowerShell
     cd ~/eShopModernizing/Setup
     . ./environment.ps1
     ```
