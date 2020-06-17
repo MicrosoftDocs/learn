@@ -10,7 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Data classification, dynamic data masking, and SQL audit
 durationInMinutes: 10
-
 azureSandbox: true
 content: |
   [!include[](includes/9-exercise-data-classification-masking-audit.md)]
