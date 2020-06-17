@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-resource-manager-template-vs-code.4-knowledge-check
+uid: learn.create-azure-resource-manager-template-vs-code.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "A series of Azure CLI commands to deploy infrastructure to Azure."
       isCorrect: false
-      explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you declare what you intend to deploy without having to write the sequence of programming commands to create it."
+      explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it."
     - content: "A JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your deployment."
       isCorrect: true
-      explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you declare what you intend to deploy without having to write the sequence of programming commands to create it."
+      explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it."
     - content: "A script held in Azure Resource Manager to manage your Azure storage account."
       isCorrect: false
-      explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you declare what you intend to deploy without having to write the sequence of programming commands to create it."
+      explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it."
   - content: "Which one of these is NOT an element of an Azure Resource Manager template?"
     choices:
     - content: "idempotent"
@@ -37,19 +37,14 @@ quiz:
     - content: "parameters"
       isCorrect: false
       explanation: "The elements of an Azure Resource Manager template are *schema*, *contentVersion*, *apiProfile*, *parameters*, *variables*, *functions*, *resources*, and *output*."
-  - content: "What infrastructure will be changed when the following command is executed? 
-    ``` az deployment group what-if \
-    --name testtemplate \
-    --resource-group myResourceGroup \
-    --template-file templatedeploy.json
-    ```" 
+  - content: "TBD" 
     choices:
-    - content: "The infrastructure in the templatedeploy.json file will be deployed to Azure."
+    - content: "A."
       isCorrect: false
-      explanation: "Azure Resource Manager provides the what-if operation to let you see how resources will change if you deploy the template."
-    - content: "Azure Resource Manager will evaluate and report out what changes would be made to the infrastructure if the templatedeploy.json template is executed."
+      explanation: "."
+    - content: "B."
       isCorrect: true
-      explanation: "Azure Resource Manager provides the what-if operation to let you see how resources will change if you deploy the template."
-    - content: "myResourceGroup will be created with a storage account that will hold the templatedeploy.json file."
+      explanation: "."
+    - content: "C."
       isCorrect: false
-      explanation: "Azure Resource Manager provides the what-if operation to let you see how resources will change if you deploy the template."
+      explanation: "."
