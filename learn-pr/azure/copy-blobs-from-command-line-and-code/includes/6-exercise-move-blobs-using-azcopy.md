@@ -44,7 +44,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
     cd azcopy_linux_amd64_<version>
     ```
 
-2. Create a new container named *azcopy-archive* in the cool storage destination:
+2. Create a new container named *azcopy-archive* in the cool storage destination for the archived content from this AzCopy command line process:
 
     ```bash
     ./azcopy make https://$COOL_STORAGE_NAME.blob.core.windows.net/azcopy-archive$COOL_SAS_TOKEN
@@ -64,13 +64,13 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
       --query '[].{name:name, properties:properties.lastModified}'
     ```
 
-1. Now that you have a list of blobs and their last modified times, you can use this information to create a script that uses AzCopy to transfer each blob that has a last modified time of more than 6 months ago to *Cool* storage. As an example, run the following command to copy the *wheel_small.gif* file.
+1. Now that you have a list of blobs and their last modified times, you can use this information to create a script that uses AzCopy to transfer each blob that has a last modified time of more than six months ago to *Cool* storage. Since these files were just added, none of them will be old enough to filter by six months. Instead, run this example command to copy the *specification01.md* file to this new cool storage container.
 
     ```bash
     ./azcopy copy https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications/specification01.md$HOT_SAS_TOKEN https://$COOL_STORAGE_NAME.blob.core.windows.net/azcopy-archive$COOL_SAS_TOKEN
     ```
 
-1. The blob being copied is small and the transfer will complete quickly, but imagine that the blob is several gigabytes in size. The transfer will take much longer. Run the following command to view azcopy jobs that have run recently, or are still running.
+1. The blob being copied is small and the transfer will complete quickly, but imagine that the blob is several gigabytes in size. The transfer will take much longer. Run the following command to view AzCopy jobs that have run recently, or are still running.
 
     ```bash
     ./azcopy jobs list
@@ -92,8 +92,8 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
 ## Remove blobs from *Hot* storage
 
-1. Copying a blob to *Cool* storage doesn't remove the blob from *Hot* storage. You must delete these blobs manually. Run the following command to delete the "specification01.md" blob from the source (hot) storage account.
+1. Copying a blob to *Cool* storage doesn't remove the blob from *Hot* storage. You must delete these blobs manually. As an example, run the following command to delete the "specification01.md" blob from the source (hot) storage account.
 
     ```bash
-    ./azcopy remove https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications/$HOT_SAS_TOKEN
+    ./azcopy remove https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications/specifications01.md$HOT_SAS_TOKEN
     ```

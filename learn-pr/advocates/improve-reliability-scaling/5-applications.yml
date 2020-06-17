@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-scaling.5-applications
+title: "Make applications scalable"
+metadata:
+  title: "Make applications scalable"
+  description: "Make applications scalable"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-applications.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which can you use to manage a group of identical, load balanced VMs?'
+    choices:
+    - content: 'a load balancer'
+      isCorrect: false
+      explanation: "A load balancer can sit in front of those VMs, but it won't manage them."
+    - content: 'virtual hard disks (VHDs)'
+      isCorrect: false
+      explanation: "VHDs are attached to those VMs, but they don't manage them."
+    - content: 'virtual machine scale sets'
+      isCorrect: true
+      explanation: 'Correct.'
+
+  - content: 'Which of the following product offerings is a simple REST-based queue interface built on top of Azure Storage?'
+    choices:
+    - content: 'Azure Service Bus Queues'
+      isCorrect: false
+      explanation: 'Azure Service Bus queues is a more advanced queueing offering.'
+    - content: 'Azure Storage Queues'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'SignalR'
+      isCorrect: false
+      explanation: 'SignalR is an open-source library that simplifies adding real-time web functionality to apps.'
+  

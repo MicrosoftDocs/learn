@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which one of these actions best describes a data store?"
+  - content: "Which one of these actions best describes an external entity?"
     choices:
     - content: "Web portal asks a user for their credentials"
       isCorrect: false

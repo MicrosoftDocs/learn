@@ -1,4 +1,4 @@
-To begin, let's download and install VS Code locally, then take a short tour of the user interface (UI) and features. We recommend you perform these steps on your own installation, but you can read through the **Tour** section without following along if you prefer.
+To begin, let's download and install Visual Studio Code locally, then take a short tour of the user interface (UI) and features. We recommend you perform these steps on your own installation, but you can read through the **Tour** section without following along if you prefer.
 
 ## Download
 
@@ -14,7 +14,7 @@ Take a moment on first run to check for available updates. On Windows, this can 
 
 ## Tour
 
-Let's take a look at a few key features of the user interface, and a short tour of VS Code's core functionality. When you first run VS Code, you should see a "Welcome" page similar to the screenshot below. If you don't see the Welcome page, you can access it using the **Help > Welcome** dropdown menu item.
+Let's take a look at a few key features of the user interface, and a short tour of Visual Studio Code's core functionality. When you first run Visual Studio Code, you should see a "Welcome" page similar to the screenshot below. If you don't see the Welcome page, you can access it using the **Help > Welcome** dropdown menu item.
 
 ![First run after installation.](../media/welcome.PNG)
 
@@ -24,15 +24,15 @@ The first thing you'll probably notice is how simple the interface seems to be. 
 
 ![User interface components.](../media/interface.PNG)
 
-One UI function you are likely to find quite valuable is the Command Palette (F1 on any platform, Ctrl + Shift + P on Windows, and listed under the **View** dropdown menu). It's a great starting place if you have an idea what you'd like to do in VS Code, but can't recall exactly how to do it.
+One UI function you are likely to find quite valuable is the Command Palette (F1 on any platform, Ctrl + Shift + P on Windows, and listed under the **View** dropdown menu). It's a great starting place if you have an idea what you'd like to do in Visual Studio Code, but can't recall exactly how to do it.
 
 ![Command palette.](../media/F1.PNG)
 
-By default, the Command Palette comes up in Command mode, signified by the `>` prompt. This mode includes most VS Code functionality, including finding keyboard shortcuts. But there's far more available here. For a list, press F1 + backspace to remove the command prompt (`>`) and type a question mark (`?`). Take a moment to explore these modes if you'd like.
+By default, the Command Palette comes up in Command mode, signified by the `>` prompt. This mode includes most Visual Studio Code functionality, including finding keyboard shortcuts. But there's far more available here. For a list, press F1 + backspace to remove the command prompt (`>`) and type a question mark (`?`). Take a moment to explore these modes if you'd like.
 
 ### Color themes
 
-Changing the look of your editor is a big deal to most of us. VS Code makes it easy with Themes. On the Welcome page, select **Color theme** under **Customize** and you'll see something like the following.
+Changing the look of your editor is a big deal to most of us. Visual Studio Code makes it easy with Themes. On the Welcome page, select **Color theme** under **Customize** and you'll see something like the following.
 
 ![Color themes list.](../media/color-themes.PNG)
 

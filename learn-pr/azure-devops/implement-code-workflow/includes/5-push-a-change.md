@@ -53,7 +53,8 @@ To ensure that you have a working copy to start your changes, build and run the 
     ```
 
     > [!TIP]
-    > If you see an error in your browser that's related to a certificate error, select <kbd>Ctrl+C</kbd> from your terminal to stop the running application.
+    > If you see an error in your browser that's related to a privacy or certificate error, select <kbd>Ctrl+C</kbd> from your terminal to stop the running application.
+    > 
     > Then run `dotnet dev-certs https --trust` and select **Yes** when prompted. Or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
     >
     > After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to `http://localhost:5000` from a new browser tab to see the running application.

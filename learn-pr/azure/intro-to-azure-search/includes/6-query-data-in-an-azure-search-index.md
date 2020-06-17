@@ -18,7 +18,7 @@ Which ever way you choose to search your content, you need to know the following
 
 A query request is a list or words (search terms) and query operators (simple or full) of what you would like to see returned in a result set. If you're using the REST API, you'll need the following information.
 
-- **The service endpoint and index collection:** Usually the URL such as <https://(your-service-name).search.windows.net/indexes/(your-index-name)/docs>.
+- **The service endpoint and index collection:** Usually the URL such as `https://(your-service-name).search.windows.net/indexes/(your-index-name)/docs`.
 - **The API version:** Enables you to choose which version to send the request to.
 - **An API Key:** Used to authenticate the request.
 - **A query type:** - One of two choices either simple or full, simple syntax is the default option.

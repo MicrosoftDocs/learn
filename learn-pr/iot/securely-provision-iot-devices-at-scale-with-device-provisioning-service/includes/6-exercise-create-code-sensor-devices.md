@@ -32,7 +32,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 
 1. Give the project a friendly name, such as "CaveDevice1".
 
-1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
+1. Under **Tools**, then **NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Click **Browse**, and search for, and install, the following libraries:
     - **Microsoft.Azure.Devices.Client**
     - **Microsoft.Azure.Devices.Provisioning.Client**
     - **Microsoft.Azure.Devices.Provisioning.Transport.Amqp**
@@ -388,13 +388,13 @@ This section adds code to send telemetry from a simulated sensor device.
     > [!NOTE]
     > The `dpsIdScope` string is identical for all devices connected to this DPS resource.
 
-1. Change the `<your leaf path>` to the actual path to your leaf certificate.
+1. Change the `<your leaf path>` to the actual path to your leaf certificate. You can do this by replacing the line of code containing this string, with the following statement. You will have to replace `<your user name>` with your actual user name.
 
     ```csharp
           private static string s_certificateFileName = "C:\\Users\\<your user name>\\Documents\\cheese cave certs\\new-device.cert1.pfx";
     ```
 
-1. Set the app running. In Visual Studio, select **Debug/Start without Debugging**. In Visual Studio Code, enter `dotnet run` in the terminal.
+1. Set the app running. In Visual Studio Code, enter `dotnet run` in the terminal. In Visual Studio, select **Debug/Start without Debugging**.
 
     [![Console output showing the first device running correctly](../media/iot-hub-provisioning-device1.png)](../media/iot-hub-provisioning-device1.png#lightbox)
 

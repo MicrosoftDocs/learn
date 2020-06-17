@@ -2,7 +2,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Get the database connection string
 
-1. Open the command palette in VS Code by pressing <kbd>F1</kbd>.
+1. Open the command palette in Visual Studio Code by pressing <kbd>F1</kbd>.
 
 1. Type "connection string"
 
@@ -10,7 +10,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 1. Select the "tailwind-xxxxx" account. Your five-digit number will be different than the ones shown in this screenshot as each database account is unique and special. Like a snowflake.
 
-   :::image type="content" source="../media/cosmos-select-account.png" alt-text="Screenshot listing all available Azure Cosmos DB accounts in the VS Code Command Palette." loc-scope="vs-code":::
+   :::image type="content" source="../media/cosmos-select-account.png" alt-text="Screenshot listing all available Azure Cosmos DB accounts in the Visual Studio Code Command Palette." loc-scope="vs-code":::
 
 1. Press <kbd>Enter</kbd>
 
@@ -202,7 +202,7 @@ Install the Azure Cosmos DB package from npm.
    export default httpTrigger;
    ```
 
-## Test out the GetProducts endpoint from VS Code
+## Test out the GetProducts endpoint from Visual Studio Code
 
 1. Press F5 to start the project
 
