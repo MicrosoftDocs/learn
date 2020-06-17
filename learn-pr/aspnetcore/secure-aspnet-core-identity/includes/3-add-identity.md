@@ -18,7 +18,7 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
     ```console
     You can invoke the tool from this directory using the following commands: 'dotnet tool run dotnet-aspnet-codegenerator' or 'dotnet dotnet-aspnet-codegenerator'.
-    Tool 'dotnet-aspnet-codegenerator' (version '3.1.2') was successfully installed. Entry is added to the manifest file /home/<USER>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
+    Tool 'dotnet-aspnet-codegenerator' (version '3.1.2') was successfully installed. Entry is added to the manifest file /home/<USER>/aspnet-learn/src/ContosoPets.Ui/.config/dotnet-tools.json.
     ```
 
     The scaffolder is a .NET Core tool that will:
@@ -242,7 +242,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
     ```console
     You can invoke the tool from this directory using the following commands: 'dotnet tool run dotnet-ef' or 'dotnet dotnet-ef'.
-    Tool 'dotnet-ef' (version '3.1.3') was successfully installed. Entry is added to the manifest file /home/<USER>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
+    Tool 'dotnet-ef' (version '3.1.3') was successfully installed. Entry is added to the manifest file /home/<USER>/aspnet-learn/src/ContosoPets.Ui/.config/dotnet-tools.json.
     ```
 
     The migration tool is a .NET Core tool that will:

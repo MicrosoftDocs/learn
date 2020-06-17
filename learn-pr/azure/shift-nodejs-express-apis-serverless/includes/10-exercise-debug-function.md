@@ -62,12 +62,12 @@ When the application launches, Angular requests the vacations data from the Node
 
 You'll run and debug the applications together. You'll hit pause on the breakpoints, giving you the opportunity to explore how these applications work together.
 
-1. Open the VS Code Command Palette **F1**
+1. Open the Visual Studio Code Command Palette **F1**
 1. Type **View: Show Run and Debug** and press **ENTER**
 1. Select **Debug Functions and Angular** from the dropdown list
 1. Press **F5** to start the debugger
 
-When the application launches, it will get the list of vacations. The Angular `VacationComponent` will start the HTTP request to get the vacations. When the browser opens to <http://localhost:7071>, the code execution will pause on your first breakpoint in the _vacations.component.ts_ file in the `getVacations()` function.
+When the application launches, it will get the list of vacations. The Angular `VacationComponent` will start the HTTP request to get the vacations. When the browser opens to `http://localhost:7071`, the code execution will pause on your first breakpoint in the _vacations.component.ts_ file in the `getVacations()` function.
 
 You can unpause execution and continue by pressing the **F5**.
 

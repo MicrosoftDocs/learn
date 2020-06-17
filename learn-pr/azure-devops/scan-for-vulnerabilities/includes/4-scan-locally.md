@@ -1,3 +1,5 @@
+[!include[](../../shared/includes/note-maintenance.md)]
+
 Here you create a project on SonarCloud so you can analyze the _Space Game_ website code. You also get starter code from GitHub to scan. You upload the results to SonarCloud and analyze them.
 
 ## Create the project on SonarCloud

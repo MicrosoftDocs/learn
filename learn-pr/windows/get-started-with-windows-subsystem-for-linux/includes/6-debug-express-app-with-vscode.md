@@ -1,12 +1,12 @@
-VS Code has built-in debugging support for the Node.js runtime and can debug JavaScript, TypeScript, and many other languages that are transpiled into JavaScript.
+Visual Studio Code has built-in debugging support for the Node.js runtime and can debug JavaScript, TypeScript, and many other languages that are transpiled into JavaScript.
 
 ## IntelliSense
 
 The built-in IntelliSense feature provides code completion, parameter info, member lists, and more. For example, you can require HTTP in your Node `app.js` file and get full IntelliSense against the http class as you type.
 
-1) In Visual Studio Code, open the HelloWorld Express project from the last unit if you've closed it. Be sure that VS Code is connected to WSL by checking the Status Bar for "WSL: Ubuntu". If VS Code is running on Windows, you can run **Remote-WSL: Reopen Folder in WSL** to switch to WSL.
+1) In Visual Studio Code, open the HelloWorld Express project from the last unit if you've closed it. Be sure that Visual Studio Code is connected to WSL by checking the Status Bar for "WSL: Ubuntu". If Visual Studio Code is running on Windows, you can run **Remote-WSL: Reopen Folder in WSL** to switch to WSL.
 
-   VS Code remembers the state of your last session and will reopen your last folder in WSL, if that is where you were previously working. To start a new instance in Windows, you can either close the remote connection **File** > **Close Remote Connection** for an empty editor or run **Remote-WSL: Reopen Folder in Windows** to open the current project in Windows.
+   Visual Studio Code remembers the state of your last session and will reopen your last folder in WSL, if that is where you were previously working. To start a new instance in Windows, you can either close the remote connection **File** > **Close Remote Connection** for an empty editor or run **Remote-WSL: Reopen Folder in Windows** to open the current project in Windows.
 
 2) Open the `app.js` file from your Express project and hover over the word `express` on the line `var app = express();`. An IntelliSense pop-up window will point out that this function creates an Express application.
 
@@ -14,11 +14,11 @@ The built-in IntelliSense feature provides code completion, parameter info, memb
 
 ## Configure your project for debugging with a launch.json file
 
-To begin debugging your Express app, you first need to create a debugger configuration file named `launch.json`. VS Code looks for a number of files when you open a directory. These files are used to customize the way VS Code behaves. `Launch.json` is one of the files used to customize the way the debugger is opened.
+To begin debugging your Express app, you first need to create a debugger configuration file named `launch.json`. Visual Studio Code looks for a number of files when you open a directory. These files are used to customize the way Visual Studio Code behaves. `Launch.json` is one of the files used to customize the way the debugger is opened.
 
-1) Select the **Debug** icon in the VS Code Activity Bar (on the left side) and then select the **Configure** icon (the gear) at the top of the Debug view. (Next to **No Configurations**, there should be a red dot indicating there is no configuration set up yet.) This will create a `launch.json` file inside a `.vscode` folder in the root directory of your project. (This file will probably be located at `./HelloWorld/.vscode/launch.json`.)
+1) Select the **Debug** icon in the Visual Studio Code Activity Bar (on the left side) and then select the **Configure** icon (the gear) at the top of the Debug view. (Next to **No Configurations**, there should be a red dot indicating there is no configuration set up yet.) This will create a `launch.json` file inside a `.vscode` folder in the root directory of your project. (This file will probably be located at `./HelloWorld/.vscode/launch.json`.)
 
-    ![Debug and Configure icons in VS Code](../media/vscode-debug-window1.png)
+    ![Debug and Configure icons in Visual Studio Code](../media/vscode-debug-window1.png)
 
 2) To start debugging, select **Start Debugging** or F5. Open the Debug Console window (Ctrl+Shift+Y) to view debug information. This window should now report that a debugger is attached.
 
@@ -87,4 +87,4 @@ To begin debugging your Express app, you first need to create a debugger configu
 
     ![Express app with bug fixed](../media/debug-mistake-fixed.png)
 
-You've successfully debugged a Node.js Express app running in a Linux Ubuntu distribution with VS Code on your Windows computer!
+You've successfully debugged a Node.js Express app running in a Linux Ubuntu distribution with Visual Studio Code on your Windows computer!

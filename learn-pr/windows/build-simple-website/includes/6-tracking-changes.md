@@ -77,7 +77,7 @@ Changes to be committed:
 
 For now, the two main things to remember are `git add .` and `git commit -m "Message"`. With these two commands, you can track changes to your work. As a bonus, you'll be set up to collaborate with other people when the time comes.
 
-Now that you have the hang of adding and committing with Git Bash or Terminal, you can accomplish the same steps in an editor like VS Code.
+Now that you have the hang of adding and committing with Git Bash or Terminal, you can accomplish the same steps in an editor like Visual Studio Code.
 
 ## Using git with VS-Code
 
@@ -117,7 +117,7 @@ You can also see the **Source Control** section (in the activity bar) has recogn
 
 You can *stage* file changes with the **plus icon** next to a file or use the **minus icon** to *unstage*. The **minus icon** only shows up if you've staged a file.
 
-![Screenshot of Git comparison in VS Code](../media/vs-code-git-code-comparison.png)
+![Screenshot of Git comparison in Visual Studio Code](../media/vs-code-git-code-comparison.png)
 
 Let's stage all of our changes by selecting the **icon**  and selecting **Stage All Changes**. This is equivalent to `git add .` in Git Bash or Terminal. Select the **checkmark icon** to *commit*.
 

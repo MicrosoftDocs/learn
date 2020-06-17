@@ -1,5 +1,5 @@
 In this module, you learned how to:
 
-- Deploy a model as a real-time inferencing service.
-- Consume a real-time inferencing service.
-- Troubleshoot service deployment
+- Create an Azure Machine Learning pipeline.
+- Publish an Azure Machine Learning pipeline.
+- Schedule an Azure Machine Learning pipeline.

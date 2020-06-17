@@ -11,7 +11,7 @@ Let's start by creating a new Key Vault in the Azure portal
 1. On the **Basics** tab:
     - Make sure the _Concierge Subscription_ is selected in the **Subscription** drop-down.
     - Select <rgn>[The Sandbox resource group]</rgn> from the **Resource group** drop-down.
-    - Enter a globally unique name for the new vault. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes.
+    - Enter a globally unique name for the new vault. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. The exercise uses the example name of **VaultamortDiary** for the new vault.
     - Leave the default selected values for **Location** and **Pricing tier**.
 
 1. Select **Review + create** to go to the validation screen.

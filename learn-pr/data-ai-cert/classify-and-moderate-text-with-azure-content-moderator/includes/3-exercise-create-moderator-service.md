@@ -14,13 +14,11 @@ In this exercise, you'll create a new Content Moderator resource in the Azure po
 1. Create a new resource group named **LearnRG**.
 1. Select **Create**.
 
-    ![Specify the settings for the Content Moderator resource](../media/3-create-content-moderator-service-create.png)
-
 The resource will take a few minutes to deploy. After it does, go to the new resource.
 
 ## Copy the subscription key
 
 To access your Content Moderator resource, you'll need a subscription key:
 
-1. In the left pane, under **RESOURCE MANAGEMENT**, select **Keys**.
+1. In the left pane, under **RESOURCE MANAGEMENT**, select **Keys and Endpoints**.
 1. Copy one of the subscription key values for later use.

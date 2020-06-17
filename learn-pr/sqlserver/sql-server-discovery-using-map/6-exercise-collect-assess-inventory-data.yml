@@ -9,8 +9,8 @@ metadata:
   ms.author: v-gea
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
-labId: 46781
-durationInMinutes: 20
+azureSandbox: true
+interactive: bash
+durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-collect-assess-inventory-data.md)]
