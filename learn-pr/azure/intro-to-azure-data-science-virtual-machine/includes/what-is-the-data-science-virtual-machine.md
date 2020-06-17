@@ -34,7 +34,7 @@ Data science hackathons/competitions or large-scale data modeling and exploratio
 
 [Azure Notebooks](https://docs.microsoft.com/azure/notebooks/azure-notebooks-overview) is a free hosted service to develop, run, and share Jupyter notebooks in the cloud with no installation. The free service  tier is limited to 4 GB of memory and 1 GB of data. 
 
-To release all limits, you can attach a Notebooks project to a DSVM or any other VM running on a Jupyter server. If you sign in to Azure Notebooks with an account by using Azure Active Directory (such as a corporate account), Notebooks automatically shows DSVMs in any subscriptions associated with that account. You can [attach a DSVM to Azure Notebooks](https://docs.microsoft.com/en-us/azure/notebooks/configure-manage-azure-notebooks-projects.md#compute-tier) to expand the available compute power.
+To release all limits, you can attach a Notebooks project to a DSVM or any other VM running on a Jupyter server. If you sign in to Azure Notebooks with an account by using Azure Active Directory (such as a corporate account), Notebooks automatically shows DSVMs in any subscriptions associated with that account. You can [attach a DSVM to Azure Notebooks](https://docs.microsoft.com/azure/notebooks/configure-manage-azure-notebooks-projects.md#compute-tier) to expand the available compute power.
 
 ### Short-term experimentation and evaluation
 
