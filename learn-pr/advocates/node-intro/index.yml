@@ -23,22 +23,16 @@ products:
 prerequisites: None
 units:
 - learn.node-intro.1-introduction
-- learn.node-intro.2-install-node
-- learn.node-intro.3-exercise-install-node
-- learn.node-intro.4-repl
-- learn.node-intro.5-exercise-repl
-- learn.node-intro.6-dependencies
-- learn.node-intro.7-exercise-dependencies
-- learn.node-intro.8-install-uninstall
-- learn.node-intro.9-exercise-install-uninstall
-- learn.node-intro.10-updating
-- learn.node-intro.11-exercise-updating
-- learn.node-intro.12-package-json
-- learn.node-intro.13-exercise-package-json
-- learn.node-intro.14-package-json-package
-- learn.node-intro.15-exercise-package-json-package
-- learn.node-intro.16-knowledge-check
-- learn.node-intro.17-summary
+- learn.node-intro.2-dependencies
+- learn.node-intro.3-exercise-dependencies
+- learn.node-intro.4-install-uninstall
+- learn.node-intro.5-exercise-install-uninstall
+- learn.node-intro.6-updating
+- learn.node-intro.7-exercise-updating
+- learn.node-intro.8-package-json
+- learn.node-intro.9-exercise-package-json
+- learn.node-intro.10-knowledge-check
+- learn.node-intro.11-summary
 
 badge:
   uid: learn.node-intro.badge

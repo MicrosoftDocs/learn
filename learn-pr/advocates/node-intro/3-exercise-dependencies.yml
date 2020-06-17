@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.7-exercise-dependencies
+uid: learn.node-intro.3-exercise-dependencies
 title: Exercise - Dependencies
 metadata:
   title: Exercise - Dependencies
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-exercise-dependencies.md)]
+  [!include[](includes/3-exercise-dependencies.md)]

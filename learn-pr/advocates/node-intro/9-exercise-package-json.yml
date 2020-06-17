@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.13-exercise-package-json
+uid: learn.node-intro.9-exercise-package-json
 title: Exercise - Package.json
 metadata:
   title: Exercise - Package.json
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 3
 content: |
-  [!include[](includes/13-exercise-package-json.md)]
+  [!include[](includes/9-exercise-package-json.md)]

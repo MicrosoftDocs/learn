@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.11-exercise-updating
+uid: learn.node-intro.7-exercise-updating
 title: Exercise Updating
 metadata:
   title: Exercise Updating
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 4
 content: |
-  [!include[](includes/11-exercise-updating.md)]
+  [!include[](includes/7-exercise-updating.md)]

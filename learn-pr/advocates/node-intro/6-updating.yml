@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.12-package-json
-title: Package.json
+uid: learn.node-intro.6-updating
+title: Updating
 metadata:
-  title: Package.json
-  description: Package.json
+  title: Updating
+  description: Updating
   author: 
   ms.author: chnoring
   ms.date: 04/14/2020
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 4
 content: |
-  [!include[](includes/12-package-json.md)]
+  [!include[](includes/6-updating.md)]
