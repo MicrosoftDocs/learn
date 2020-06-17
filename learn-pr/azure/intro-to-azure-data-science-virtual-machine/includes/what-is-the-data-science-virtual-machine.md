@@ -4,7 +4,7 @@
 The Data Science Virtual Machine (DSVM) is a VM that runs in the Azure cloud platform. There are DSVM images for:
 
 - Windows Server 2019
-- Ubuntu 18.04 LTS
+- Ubuntu Server 18.04 LTS LTS
 
 You can choose to run the DSVM on a variety of Azure virtual machine sizes. General purpose sizes offer balanced CPU-memory ratios, while in-memory data analytics can benefit from the memory-optimized E-series, and ML experiments are likely to run significantly faster on the N-series GPU sizes. N-series virtual machines feature the NVIDIA Tesla accelerated platform and NVIDIA GRID 2.0 technology. The DSVM tools and libraries that can exploit GPU acceleration are pre-configured with the appropriate drivers and library versions. 
 
