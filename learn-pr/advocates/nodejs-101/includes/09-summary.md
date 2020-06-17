@@ -2,12 +2,12 @@ In this module, you learned that Node.js is a runtime that can run JavaScript ou
 
 ## Additional resources
 
-Here is a list of application built with Node.js:.
+Here is a list of application built with Node.js:
 
 - CLI tool such as: [hexa.run](https://hexa.run) and [Azure Functions CLI](https://github.com/Azure/azure-functions-core-tools).
 - Backend servers and API services such as [Express.js](https://expressjs.com/) and [Nest.js](https://nestjs.com/)
 - Desktop apps such as: [Slack](https://slack.com/) (using [Electron](https://www.electronjs.org/)).
-- IoT libraries such as [Johnny-Five](http://johnny-five.io/), [Puck-js](https://www.puck-js.com/) and the [Tessel](https://tessel.io/)
+- IoT libraries such as [Johnny-Five](http://johnny-five.io/), [Puck-js, and the [Tessel](https://tessel.io/)
 - Plugins for [SketchApp](https://www.sketch.com/) and [Adobe XD](https://www.adobe.com/products/xd.html).
 - Code editor such as [Visual Studio Code](https://code.visualstudio.com/) and [Atom](https://atom.io/).
 - Native mobile development with [NativeScript](https://www.nativescript.org/).
