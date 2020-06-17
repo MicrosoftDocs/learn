@@ -10,7 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Load data into Azure SQL Database
 durationInMinutes: 10
-
 azureSandbox: true
 content: |
   [!include[](includes/8-exercise-load-data.md)]
