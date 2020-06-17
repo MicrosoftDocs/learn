@@ -13,13 +13,13 @@ summary: Learn how to
 abstract: |
   In this module you will:
   - Learn about X
-iconUrl: /learn/achievements/undefined.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - developer
 products:
-- vs
+- azure
 prerequisites: None
 units:
 - learn.node-http.1-introduction

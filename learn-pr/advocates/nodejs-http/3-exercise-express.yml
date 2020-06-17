@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-http.3-exercise-express
-title: Exercise - Create Web apps with Express
+title: Exercise - Create a new Express web application
 metadata:
-  title: Exercise - Create Web apps with Express
+  title: Exercise - Create a new Express web application
   description: Exercise in how to use Express to return different types of content like text and JSON.
   author: softchris
   ms.author: chnoring
