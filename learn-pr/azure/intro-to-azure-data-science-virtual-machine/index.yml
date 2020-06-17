@@ -33,5 +33,3 @@ units:
   - learn-pr.intro-to-azure-data-science-virtual-machine.connection-knowledge-review
 badge:
   uid: learn-pr.intro-to-azure-data-science-virtual-machine.badge
-zone_pivot_groups:
-  - os
