@@ -9,7 +9,7 @@ The Fibonacci sequence is a suite of numbers starting with the number 0 and 1, w
 Let's create a new Node.js program to illustrate that.
 In the terminal on the right, type:
 
-```sh
+```bash
 code fibonacci.js
 ```
 
@@ -36,7 +36,7 @@ console.log(result);
 
 Save the file, then run the program using the terminal:
 
-```sh
+```bash
 node fibonacci.js
 ```
 
@@ -44,13 +44,13 @@ The program should display the result `3` in the console. Oops, it seems there's
 
 Start again the program, this time with the built-in debugger enabled:
 
-```sh
+```bash
 node inspect fibonacci.js
 ```
 
 You should see the debugger prompt displayed. Now step in using the `s` command until the execution point is located at the beginning of the `fibonacci` function, like this:
 
-```sh
+```bash
 break in fibonacci.js:2
   1 function fibonacci(n) {
 > 2   let n1 = 0;
@@ -61,13 +61,13 @@ debug>
 
 We can check at this point the value of the **n** parameter passed in the function using the command:
 
-```sh
+```bash
 exec n
 ```
 
 You should see `5` displayed in the console. Step in again using the `s` command until the execution point is at the beginning of the loop, like this:
 
-```sh
+```bash
 break in fibonacci.js:7
   5
   6   for (let i = 2; i <= n; i++) {
@@ -82,7 +82,7 @@ debug>
 
 Now let's add a breakpoint here so we can quickly move through the loop iterations:
 
-```sh
+```bash
 sb()
 ```
 
@@ -90,7 +90,7 @@ You should see the same lines displayed again in the console, indicating that a 
 
 We can check the current iteration state with the `exec` command:
 
-```sh
+```bash
 exec [i, sum]
 ```
 
@@ -107,7 +107,7 @@ fibonacci(2) = fibonacci(0) + fibonacci(1)
 
 It seems that our program runs correctly up to this point. Continue to the next loop iteration using the `c` command, and check the state again:
 
-```sh
+```bash
 exec [i, sum]
 ```
 
@@ -117,7 +117,7 @@ What happened?
 
 After checking the loop condition `i < n`, the execution suddenly jumped to the return line:
 
-```sh
+```bash
 break in fibonacci.js:12
  10   }
  11
@@ -130,7 +130,7 @@ That's it, we just found our bug! Instead of updating the sum for the iteration 
 
 Fix the loop condition by changing `i < n` to `i <= n` in the code editor. Now you can exit the debugger with `CTRL + D`, and run your program again:
 
-```sh
+```bash
 node fibonacci.js
 ```
 
@@ -138,4 +138,4 @@ You should see the expected result displayed in the console now: `5`.
 
 While you can use the built-in debugger in Node.js to learn the basic debugging principles and for quick debugging sessions, it can be bothersome to type in the commands and may be too limited and difficult to use with complex programs.
 
-We'll see in the next sections how to use Visual Studio Code debugger instead.
+We'll see in the next sections how to use VS Code debugger instead.

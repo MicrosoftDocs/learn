@@ -15,7 +15,7 @@ While you might have various degrees of success with these methods, there's one 
 
 A debugger is a software tool used to observe and control the execution flow of your program with an analytical approach. Its design goal is to help find the root cause of bug and help you resolve it. It works by either hosting your program in its own execution process, or by running as a separate process that is attached to your running program, like in the Node.js case.
 
-Debuggers comes in different flavors, some working directly from the command line while others comes with a graphical user interface. In this module we'll use both the built-in command line debugger that comes with Node.js, and the integrated graphical debugger of Visual Studio Code.
+Debuggers comes in different flavors, some working directly from the command line while others comes with a graphical user interface. In this module we'll use both the built-in command line debugger that comes with Node.js, and the integrated graphical debugger of Visual Studio Code (VS Code).
 
 ## Why use a debugger
 

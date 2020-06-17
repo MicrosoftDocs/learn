@@ -47,13 +47,13 @@ After Node.js is started with inspect mode enabled, you can use any compatible d
 
 For example, you can use [node-inspect](https://github.com/nodejs/node-inspect), a command-line debugger that comes bundled with Node.js. You can use it by running your program like this:
 
-```sh
+```bash
 $ node inspect <YOUR_SCRIPT>.js
 ```
 
 It will run Node.js with inspect mode enabled and launch at the same time the integrated interactive debugger, and pause execution just before your code starts. You should see the debugger prompt indicating it has successfully launched:
 
-```sh
+```bash
 $ node inspect myscript.js
 < Debugger listening on ws://127.0.0.1:9229/ce3689fa-4433-41ee-9d5d-98b5bc5dfa27
 < For help, see: https://nodejs.org/en/docs/inspector
