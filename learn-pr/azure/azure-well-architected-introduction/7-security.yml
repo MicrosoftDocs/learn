@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: 'Customer data that contains personal information'
       isCorrect: false
-      explanation: 'It's important to provide proper security protections for this data, but this is not the only correct choice.'
+      explanation: 'It is important to provide proper security protections for this data, but this is not the only correct choice.'
     - content: 'Financial data that supports business operations'
       isCorrect: false
-      explanation: 'It's important to provide proper security protections for this data, but this is not the only correct choice.'
+      explanation: 'It is important to provide proper security protections for this data, but this is not the only correct choice.'
     - content: 'Intellectual property'
       isCorrect: false
-      explanation: 'It's important to provide proper security protections for this data, but this is not the only correct choice.'
+      explanation: 'It is important to provide proper security protections for this data, but this is not the only correct choice.'
     - content: 'All of the above may need security protections'
       isCorrect: true
       explanation: 'All of the above may merit additional security protections.'

@@ -27,9 +27,9 @@ quiz:
     - content: 'Pooling databases to share provisioned capacity.'
       isCorrect: false
       explanation: 'You can reduce your overall costs by sharing resources across multiple databases.'
-    - content: 'Running a development environment overnight that's used only during business hours.'
+    - content: 'Running a development environment overnight that is used only during business hours.'
       isCorrect: true
-      explanation: 'A non-production environment that's unused outside business hours can be shut down to reduce costs.'
+      explanation: 'A non-production environment that is unused outside business hours can be shut down to reduce costs.'
 
   - content: 'Which of the following is a good practice to reduce costs?'
     choices:
