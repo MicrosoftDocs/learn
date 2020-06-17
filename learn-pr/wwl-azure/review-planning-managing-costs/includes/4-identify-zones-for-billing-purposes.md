@@ -1,4 +1,4 @@
-Billing zones help determine what the cost of services you are using.
+Billing zones help determine the cost of services you are using.
 
 [Bandwidth](https://azure.microsoft.com/pricing/details/bandwidth?azure-portal=true) refers to data moving in and out of Azure datacenters. Some inbound data transfers, such as data going into Azure datacenters, are free. For outbound data transfers, such as data going out of Azure datacenters, data transfer pricing is based on **Zones**.
 
