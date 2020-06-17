@@ -22,16 +22,12 @@ node
 You will then see the REPL environment up and running. You should have the following output:
 
 ```text
-Welcome to Node.js v14.1.0.
-Type ".help" for more information.
 > 
 ```
 
 Try typing the following code `console.log('Hello World, from the REPL.')` inside the REPL and see the output. This code will print a "Hello World, from the REPL." message in the REPL's output:
 
 ```text
-Welcome to Node.js v14.1.0.
-Type ".help" for more information.
 > console.log('Hello World, from the REPL.')
 Hello World, from the REPL.
 ```
@@ -39,16 +35,20 @@ Hello World, from the REPL.
 To exit the REPL, hit **ctrl-c** twice:
 
 ```text
-Welcome to Node.js v14.1.0.
-Type ".help" for more information.
-> 
-(To exit, press ^C again or ^D or type .exit)
-> 
+>
+(To exit, press ^C again or type .exit)
+>
 ```
 
 ## Creating a Node.js script
 
-Node.js does also support running code from files. Create a `index.js` JavaScript file with the following code:
+Node.js does also support running code from files. Using Azure Cloud Shell, open a new editor by entering the `code` command:
+
+```bash
+code
+```
+
+Inside the shell code editor, create a file with the following code, and save the file under `index.js`:
 
 ```javascript
 console.log('Hello World, from a script file.');
