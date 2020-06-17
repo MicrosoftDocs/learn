@@ -105,34 +105,48 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
 You learned how to set up Azure Pipelines in an earlier module. If you need a refresher, head over to [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true).
 
-Since your solution has just the one project in it, the scope of the job agent is limited and cannot access the package. To make sure the agent has the permissions it needs to publish the artifact, you need to un-check **Limit job authorization scope to current project** in the pipeline settings.
+Since your solution has just the one project in it, the scope of the job agent is limited and cannot access the package. To make sure the agent has the permissions it needs to publish the artifact, you need to turn off **Limit job authorization scope to current project** in the pipeline settings.
+
+To turn off this setting:
+
+1. In Azure DevOps, navigate to your organization.
+1. Select **Organization settings** from the bottom corner.
+1. Under **Pipelines**, select **Settings**.
+1. Turn off **Limit job authorization scope to current project**.
+
+    ![Azure DevOps showing how to set the job authorization scope setting](../media/5-devops-disable-job-authorization-scope.png)
+
+You need to make a similar change to your project:
 
 1. From Azure DevOps, go to the **Space Game - web - Dependencies** project.
-1. Select **Settings** at the bottom left of the screen.
-1. Under **Pipelines** select **Settings**
-1. Un-check **Limit job authorization scope to current project**.
+1. Select **Project settings** at the bottom left.
+1. Under **Pipelines**, select **Settings**
+1. Turn off **Limit job authorization scope to current project**.
 
-Here, you'll set up a second pipeline to build the package and upload that package to Azure Artifacts.
+Next, you'll set up a second pipeline to build the package and upload that package to Azure Artifacts.
 
 1. From Azure DevOps, go to the **Space Game - web - Dependencies** project.
-1. Select **Pipelines**, either from the project page or from the menu on the left and the **All** tab.
+1. Select **Pipelines**, from the menu on the left.
 1. Select **+ New Pipeline**.
 1. From the **Connect** tab, select **GitHub**.
 1. From the **Select** tab, select **mslearn-tailspin-spacegame-web-models**.
 
-    a. When prompted, enter your GitHub credentials.
+    If prompted, enter your GitHub credentials. From the page that appears, scroll to the bottom and select **Approve and install**.
 
-    b. From the page that appears, scroll to the bottom and select **Approve and install**.
-
-    c. From the **Review** tab, you see the new pipeline's *azure-pipelines.yml* file.
-
-    d. Select **Run**.
+1. From the **Review** tab, you see the new pipeline's *azure-pipelines.yml* file.
+1. Select **Run**.
 1. Watch the pipeline run.
 1. Go to the **Artifacts** tab.
 1. From the dropdown at the top, select **Tailspin.SpaceGame.Web.Models**.
 
     ![Screenshot of Azure Artifacts dropdown selection](../media/5-feed-dropdown.png)
 
-    You see the resulting package, **Tailspin.SpaceGame.Web.Models**, in Azure Artifacts. Copy the version number where you can easily access it later. You'll use this version number in the next part.
+    You see the resulting package, **Tailspin.SpaceGame.Web.Models**, in Azure Artifacts. 
 
     ![Screenshot of Azure Artifacts, showing version 1.0 of the package](../media/5-artifacts-package.png)
+
+1. Select the package to go to the details page. Then copy the version number to a location where you can easily access it later.
+
+    ![Screenshot of Azure Artifacts dropdown selection](../media/5-package-details.png)
+
+    You'll use this version number in the next part.

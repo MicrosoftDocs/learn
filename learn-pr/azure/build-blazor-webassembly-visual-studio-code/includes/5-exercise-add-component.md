@@ -1,40 +1,40 @@
-In this exercise, we'll add a new Razor page and create the compound interest calculator UI. Open the folder for the compound interest project you created in the previous exercise.
+In this exercise, you'll add a new Razor page and create the UI for the compound interest calculator.
 
-## Open the Compound Interest project in Visual Studio Code
+## Open the compound interest project in Visual Studio Code
 
-1. Open Visual Studio Code
+1. Open Visual Studio Code.
 
-1. Open the folder containing your compound interest project within Visual Studio Code
+1. Within Visual Studio Code, open the folder that contains your compound interest project.
 
-1. Visual Studio Code may prompt you to install required assets, if so, select **Yes**
+1. If Visual Studio Code prompts you to install required assets, select **Yes**.
 
-    ![Image showing Visual Studio Code prompting to install required assets to build and debug](../media/missing-assets-visual-studio-code.png)
+    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug](../media/missing-assets-visual-studio-code.png)
 
 ## Create a new Razor page for your calculator
 
-1. Expand the folders in the Visual Studio Code project explorer
+1. Expand the folders in the Visual Studio Code project explorer.
 
-1. Click on **> Pages** to view the existing razor pages 
+1. Select **Pages** to view the existing Razor pages.
 
-1. Right-click on **Pages** and select **New File**
+1. Select and hold (or right-click) **Pages** and select **New File**.
 
-1. Name the new page **CompoundInterest.razor**
+1. Name the new page CompoundInterest.razor.
 
 ## Add the CompoundInterest page to the app navigation
 
-Here we'll set up the route for our new page and add a link to our side menu.
+Here you'll set up the route for your new page and add a link to your side menu.
 
-1. Open **CompoundInterest.razor**
+1. Open CompoundInterest.razor.
 
-1. Add the `@page` directive `@page "/compoundinterest"`
+1. Add the **\@page** directive **\@page "/compoundinterest"**.
 
-1. Add an H1 header `<h1>Compound Interest</h1>`
+1. Add the H1 header **\<h1\>Compound Interest\</h1\>**.
 
-1. Open the **Shared** folder in the project explorer
+1. Open the Shared folder in the project explorer.
 
-1. Open **NavMenu.razor**
+1. Open NavMenu.razor.
 
-1. Add a fourth list item with the href set to **compoundinterest** and a title off **Compound Interest**
+1. Add a fourth list item with the `href` attribute set to `compoundinterest` and the title set to `Compound Interest`.
 
     ```cshtml
     <li class="nav-item px-3">
@@ -44,20 +44,21 @@ Here we'll set up the route for our new page and add a link to our side menu.
     </li>
     ```
 
-### Optional - run the application 
+### Run the app (optional)
 
-1. In the Visual Studio Code terminal `dotnet run` to launch the app
+1. In the Visual Studio Code terminal, enter **dotnet run** to run the app.
 
-1. Open a web browser to **https://localhost:5001**   
+1. In a web browser, go to https://localhost:5001.
 
-    ![Image showing Blazor application running the browser](../media/create-new-component.png)
+    ![Screenshot showing the Blazor app running in a browser](../media/create-new-component.png)
 
-## Add HTML UI 
-We'll add html UI for our calculator, specifically a table.  
+## Add HTML UI
 
-1. Add a 2x4 html table
+Add an HTML table to your calculator UI.
 
-1. Add text in the left column for: **Initial Principal**, **Years**, **Annual Interest Rate** and **Total:**
+1. Add a 2 &times; 4 HTML table.
+
+1. Add text in the leftmost column for `Initial Principal`, `Years`, `Annual Interest Rate`, and `Total`.
 
     ```cshtml
     <table class="table">
@@ -79,14 +80,15 @@ We'll add html UI for our calculator, specifically a table.
         </tr>
     </table>
     ```
-1. Below the table, add a button, which we'll use to trigger the calculation.
+
+1. Below the table, add a button, which you'll use to trigger the calculation.
 
     ```cshtml
     <button class="btn btn-primary">Calculate</button>
     ```
 
-### Optional - run the application 
+### Run the app (optional)
 
-1. In the Visual Studio Code terminal, execute `dotnet run` to launch the app
+1. In the Visual Studio Code terminal, enter **dotnet run** to run the app.
 
-1. Open a web browser to **https://localhost:5001** 
+1. In a web browser, go to **https://localhost:5001**.
