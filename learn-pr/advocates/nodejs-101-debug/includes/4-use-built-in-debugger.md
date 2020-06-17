@@ -1,6 +1,6 @@
-To put in practice the debugging concepts you just saw, you will create a short Node.js program to compute the *N*<sup>th</sup> number of the Fibonacci sequence.
+To put in practice the debugging concepts you just saw, you'll create a short Node.js program to compute the *N*<sup>th</sup> number of the Fibonacci sequence.
 
-The Fibonacci sequence is a suite of numbers starting with the number 0 and 1, with every other following numbers being the sum of the two previous ones, going on like that:
+The Fibonacci sequence is a suite of numbers starting with the number 0 and 1, with every other following number being the sum of the two previous ones, going on like that:
 
 ```text
 0, 1, 1, 2, 3, 5, 8, 13, 21...
@@ -40,7 +40,7 @@ Save the file, then run the program using the terminal:
 node fibonacci.js
 ```
 
-The program should display the result `3` in the console. Oops, it seems there is a bug in there, as we expected `5`! Let's understand what's going wrong using the Node.js built-in debugger.
+The program should display the result `3` in the console. Oops, it seems there's a bug in there, as we expected `5`! Let's understand what's going wrong using the Node.js built-in debugger.
 
 Start again the program, this time with the built-in debugger enabled:
 
@@ -97,7 +97,7 @@ exec [i, sum]
 > [!NOTE]
 > You can see the value of multiple variable by using an array, like with `[i, sum]`.
 
-You should see in the console `[ 3, 1 ]`. As the code has not updated the value of `sum` for the current iteration (`3`), it currently represents the fibonacci number for the previous iteration:
+You should see in the console `[ 3, 1 ]`. As the code hasn't updated the value of `sum` for the current iteration (`3`), it currently represents the fibonacci number for the previous iteration:
 
 ```text
 fibonacci(2) = fibonacci(0) + fibonacci(1)
@@ -111,7 +111,7 @@ It seems that our program runs correctly up to this point. Continue to the next 
 exec [i, sum]
 ```
 
-You should see in the console `[ 4, 2 ]`, which is correct again. Now we are at the point just before the number we are interested in (5), so it may be cautious to advance step by step through this iteration, using the `s` command. Try to reach our previous breakpoint, but one step at a time.
+You should see in the console `[ 4, 2 ]`, which is correct again. Now we're at the point just before the number we're interested in (5), so it may be cautious to advance step by step through this iteration, using the `s` command. Try to reach our previous breakpoint, but one step at a time.
 
 What happened?
 
@@ -136,6 +136,6 @@ node fibonacci.js
 
 You should see the expected result displayed in the console now: `5`.
 
-While the built-in debugger in Node.js can be used to learn the basic debugging principles and for quick debugging sessions, it can be bothersome to type in the commands and may be too limited and difficult to use with complex programs.
+While you can use the built-in debugger in Node.js to learn the basic debugging principles and for quick debugging sessions, it can be bothersome to type in the commands and may be too limited and difficult to use with complex programs.
 
-We will see in the next sections how to leverage Visual Studio Code debugger instead.
+We'll see in the next sections how to use Visual Studio Code debugger instead.
