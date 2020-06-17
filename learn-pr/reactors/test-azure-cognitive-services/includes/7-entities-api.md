@@ -1,4 +1,4 @@
-The final API we will use in the Text Analytics API service is the Entities API. This will retrieve attributes for documents provided to the API service.
+The final API we'll use in the Azure Cognitive Services Text Analytics API service is the Entities API. This API will retrieve attributes for documents provided to the API service.
 
 ```python
 # Configure the Entities URI
@@ -12,7 +12,7 @@ The output is:
 https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/entities
 ```
 
-The next step is creating a document with id and text attributes to pass on to the Entities API.
+The next step is to create a document with id and text attributes to pass on to the Entities API.
 
 ```python
 documents = {'documents' : [
@@ -20,7 +20,7 @@ documents = {'documents' : [
 ]}
 ```
 
-Finally, call the service using the rest call below to retrieve the data listed in the text attribute.
+Finally, call the service by using the following rest call to retrieve the data listed in the text attribute.
 
 ```python
 headers = {"Ocp-Apim-Subscription-Key": subscription_key}
@@ -55,7 +55,7 @@ The output is:
 
 ### Try it yourself
 
-What other entities can be retrieved with the API? Create a document setup and use the Text Analytics, Sentiment Analysis, Key Phrase, and Entities API services to retrieve the data.
+What other entities can be retrieved with the API? Create a document setup and use the Text Analytics, Sentiment Analysis, Key Phrases, and Entities APIs to retrieve the data.
 
 <!-- This try it block is empty by design. No content is missing. -->
 

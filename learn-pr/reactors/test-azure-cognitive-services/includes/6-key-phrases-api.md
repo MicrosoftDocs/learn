@@ -1,7 +1,7 @@
-We've detected the language type using the Text Analytics API and the sentiment using the Sentiment Analysis API. What if we want to detect key phrases in the text? We can use the Key Phrase API.
+We've detected the language type by using the Azure Cognitive Services Text Analytics API and the sentiment by using the Sentiment Analysis API. What if we want to detect key phrases in the text? We can use the Key Phrases API.
 
 ```python
-# As with the other services, setup the Key Phrases API with the following parameters
+# As with the other services, set up the Key Phrases API with the following parameters
 key_phrase_api_url = text_analytics_base_url + "keyPhrases"
 print(key_phrase_api_url)
 ```
@@ -44,7 +44,7 @@ The output is:
  'errors': []}
 ```
 
-We can make this easier to read by outputing the documents in an HTML table format.
+We can make this output easier to read by outputting the documents in an HTML table format.
 
 ```python
 table = []
@@ -65,7 +65,7 @@ Here's the output:
 | La carretera estaba atascada. Había mucho tráfico el día de ayer.                 | carretera,tráfico,día            |
 ```
 
-Now call the Key Phrases API with the formatted documents to retrive the key phrases.
+Now call the Key Phrases API with the formatted documents to retrieve the key phrases.
 
 ### Try it yourself
 

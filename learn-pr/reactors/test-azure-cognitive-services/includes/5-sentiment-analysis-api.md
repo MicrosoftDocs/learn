@@ -1,7 +1,7 @@
-Now that we know how to use the Text Analytics API to detect the language, let's use it for sentiment analysis. Basically, the computers at the other end of the API connection will judge the sentiments of written phrases (anywhere on the spectrum of positive to negative) based solely on the context clues provided by the text.
+You just learned how to use the Azure Cognitive Services Text Analytics API to detect language. Now let's use it for sentiment analysis. The computers at the other end of the API connection will judge the sentiments of written phrases based solely on the context clues provided by the text. Sentiments will be ranked on the spectrum of positive to negative.
 
 ```python
-# Verify the API URl source for the Sentiment Analysis API
+# Verify the API URL source for the Sentiment Analysis API
 sentiment_api_url = text_analytics_base_url + "sentiment"
 print(sentiment_api_url)
 ```
@@ -12,7 +12,7 @@ The output is:
 https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/sentiment
 ```
 
-As above, the Sentiment Analysis API requires the language to be passed in as documents with `id` and `text` attributes.
+As shown, the Azure Cognitive Services Sentiment Analysis API requires the language to be passed in as documents with `id` and `text` attributes.
 
 ```python
 documents = {'documents' : [
@@ -23,7 +23,7 @@ documents = {'documents' : [
 ]}
 ```
 
-Let's analyze the text using the Sentiment Analysis API to output a sentiment analysis score:
+Let's analyze the text by using the Sentiment Analysis API to output a sentiment analysis score:
 
 ```python
 headers   = {"Ocp-Apim-Subscription-Key": subscription_key}
@@ -44,7 +44,7 @@ The output is:
 
 ### Try it yourself
 
-Create another document set with varying degree of sentiment and use the Sentiment Analysis API to detect what the sentiment is.
+Create another document set with varying degrees of sentiment. Use the Sentiment Analysis API to detect what the sentiment is.
 
 <br />
 
