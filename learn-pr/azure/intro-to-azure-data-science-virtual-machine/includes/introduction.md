@@ -22,7 +22,7 @@ The DSVM has dozens of applications and programming tools and libraries preinsta
 In this module, you will:
 
 * Match operating systems and hardware resources available for the DSVM
-* Create a Data Science Virtual Machine running Ubuntu 18.04
+* Create a Data Science Virtual Machine running Ubuntu Server 18.04 LTS
 * Connect to the command-line of the DSVM via ssh 
 * Add a non-administrative user to the DSVM
 * Connect to the graphical Desktop of the DSVM via X2Go Client 
