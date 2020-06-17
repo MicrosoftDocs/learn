@@ -39,14 +39,17 @@ $server = New-AzSqlServer -ResourceGroupName $resourceGroupName `
     -Location $location `
     -SqlAdministratorCredentials $(New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $adminSqlLogin, $(ConvertTo-SecureString -String $password -AsPlainText -Force))
 # Create a server firewall rule that allows access from the specified IP range
-$serverFirewallRule = New-AzSqlServerFirewallRule -ResourceGroupName $resourceGroupName `
+$serverFirewallRule = New-AzSqlServerFirewallRule `
+    -ResourceGroupName $resourceGroupName `
     -ServerName $serverName `
-    -FirewallRuleName "AllowedIPs" -StartIpAddress $ipAddress -EndIpAddress $ipAddress
+    -FirewallRuleName "AllowedIPs" `
+    -StartIpAddress $ipAddress -EndIpAddress $ipAddress
 # Create a database 
 $database = New-AzSqlDatabase  -ResourceGroupName $resourceGroupName `
     -ServerName $serverName `
-    -DatabaseName $databaseName 
-    -SampleName "AdventureWorksLT" -Edition "GeneralPurpose" -Vcore 2 -ComputeGeneration "Gen5"
+    -DatabaseName $databaseName `
+    -SampleName "AdventureWorksLT" `
+    -Edition "GeneralPurpose" -Vcore 2 -ComputeGeneration "Gen5"
 # Enable Advanced data security
 $advancedDataSecurity = Enable-AzSqlServerAdvancedDataSecurity `
     -ResourceGroupName $resourceGroupName `
@@ -68,8 +71,7 @@ Write-Host $serverName
 
 Open SSMS and create a new connection to your logical server.  
 
-TODO ADD LINK TO PORTAL
-For server name, input the name of your Azure SQL Database logical server. You may need to refer to the Azure portal to get this, e.g. *aw-server`<unique ID>`.database.windows.net*.  
+For server name, input the name of your Azure SQL Database logical server. You may need to refer to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) to get this, e.g. *aw-server`<unique ID>`.database.windows.net*.  
 
 Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
 
@@ -98,8 +100,7 @@ The main differences between auditing in Azure SQL and auditing in SQL Server ar
 
 ### Step 1 - Enable auditing on the Azure SQL Database logical server  
 
-TODO ADD LINK FOR AZURE PORTAL
-Open the Azure portal and navigate to your Azure SQL Database. In the left-hand task menu, under Security, select **Auditing**. Review the options and then select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply at the database level (you won't do that today), that would mean the two audits would happen in parallel (one does not override the other). You could alternatively only audit at the database level.  
+Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) and navigate to your Azure SQL Database. In the left-hand task menu, under Security, select **Auditing**. Review the options and then select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply at the database level (you won't do that today), that would mean the two audits would happen in parallel (one does not override the other). You could alternatively only audit at the database level.  
 
 ![Database-level auditing blade](../media/dbaudit.png)  
 
@@ -129,7 +130,7 @@ Next, select **Storage**. This option allows you to collect XEvent log files in 
 
 ![Configure storage](../media/configstorage.png)  
 
-Next, select the subscription you're using for this module as well as the storage account in the resource group with your ID that was created for you (should be *sql* + *a random string of letters and numbers*). In this storage account, auditing logs will be saved as a collection of blob files within a container named **sqldbauditlogs**.  
+Next, select the subscription you're using for this module as well as the storage account in the resource group with your ID that was created for you (should be *sqlva* + *a random string of letters and numbers*). In this storage account, auditing logs will be saved as a collection of blob files within a container named **sqldbauditlogs**.  
 
 > Note: depending on your organization, in production you may consider having a separate storage account for the audit logs.
 
