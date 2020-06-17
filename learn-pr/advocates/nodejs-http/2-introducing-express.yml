@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-http.2-introducing-express
-title: Introducing Express
+title: Create a new Express web application
 metadata:
-  title: Introducing Express
+  title: Create a new Express web application
   description: This unit will explain what the Express framework is and what steps are needed to create a Web Application with it.
   author: softchris
   ms.author: chnoring
