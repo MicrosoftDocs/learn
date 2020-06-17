@@ -17,7 +17,9 @@ abstract: |
   - Identify when to use Node.js
   - Create and run a Node.js script from the command line
 prerequisites: |
-  - Beginner-level experience writing JavaScript code.
+  - Familiarity with editing text and code files in any text editor
+  - Beginner-level experience writing JavaScript code
+  - Experience using the command line
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
