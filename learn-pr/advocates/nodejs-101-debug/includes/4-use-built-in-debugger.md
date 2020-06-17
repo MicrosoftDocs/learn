@@ -138,4 +138,4 @@ You should see the expected result displayed in the console now: `5`.
 
 While the built-in debugger in Node.js can be used to learn the basic debugging principles and for quick debugging sessions, it can be bothersome to type in the commands and may be too limited and difficult to use with complex programs.
 
-We will see in the next section how to leverage Visual Studio Code debugger instead.
+We will see in the next sections how to leverage Visual Studio Code debugger instead.

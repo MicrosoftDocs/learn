@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs.debug.6-analyze-your-program-state
+uid: learn.azure.nodejs.debug.5-analyze-your-program-state
 title: Analyze your program state
 metadata:
   title: Analyze your program state
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-analyze-your-program-state.md)]
+  [!include[](includes/5-analyze-your-program-state.md)]

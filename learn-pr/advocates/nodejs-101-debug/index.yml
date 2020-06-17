@@ -29,8 +29,8 @@ units:
 - learn.azure.nodejs.debug.2-what-is-a-debugger
 - learn.azure.nodejs.debug.3-run-your-code-step-by-step
 - learn.azure.nodejs.debug.4-use-built-in-debugger
-- learn.azure.nodejs.debug.5-use-vs-code-debugger
-- learn.azure.nodejs.debug.6-analyze-your-program-state
+- learn.azure.nodejs.debug.5-analyze-your-program-state
+- learn.azure.nodejs.debug.6-use-vs-code-debugger
 - learn.azure.nodejs.debug.7-rewind-the-call-stack
 - learn.azure.nodejs.debug.8-knowledge-check
 
