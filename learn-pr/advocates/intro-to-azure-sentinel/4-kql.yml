@@ -17,19 +17,15 @@ quiz:
   title: Check your knowledge
   questions:
 
-  #TODO : ADD A RELEVANT QUESTION OR TWO HERE
-  - content: 'What does SLI stand for (in an SRE context)?'
+  
+  - content: 'What is Kusto Query Language (KQL)?'
     choices:
-    - content: 'Standard Level Indicator '
+    - content: 'A query language for SQL Databases'
       isCorrect: false
-      explanation: 'SLI stands for Service Level Indicator.'
-    - content: 'Service Level Indicator'
+    - content: 'A query language for querying logs in Log Analytics'
       isCorrect: true
-    - content: 'Safe Load Indicator'
+    - content: 'A Schema definition for security databases'
       isCorrect: false
-      explanation: 'SLO stands for Service Level Indicator.'
-    - content: 'System Level Interface'
-      isCorrect: false
-      explanation: 'SLO stands for Service Level Indicator.'
+  #TODO : ADD ANOTHER KQL Question here 
 
   
