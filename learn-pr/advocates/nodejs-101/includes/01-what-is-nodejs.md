@@ -2,17 +2,17 @@ Node.js, or Node for short, is an open source server-side JavaScript runtime env
 
 Node.js is a wrapper around the infamous JavaScript runtime V8. V8 powers many browsers including Google Chrome, Opera, and Microsoft Edge. Node.js brought many optimizations to V8 allowing it to work outside of the browser. For instance, when using Node.js to run a Web server, manipulating binary files and content is often mandatory; Node.js has enriched V8 with a Buffer API for these use cases.
 
-Even if it's not related to Node.js (see: [Server-Side JavaScript technologies](https://en.wikipedia.org/wiki/List_of_server-side_JavaScript_implementations)), the fact that JavaScript was chosen as the main programming language for the Node.js runtime was a great choice! Whether we like it or not, browsers support only a restricted set of technologies to build front-end Web application. If we want to share some code, for example, forms validations rules, between the browsers and the server, JavaScript is the only choice. This is more relevant nowadays due to the rise of Single Page Applications, where JavaScript is the Lingua Franca in front-end development. In addition, JSON (JavaScript Object Notation) is a widely used data exchange format and JavaScript happens to have native support for it. Many NoSQL database technologies such as CouchDB and MongoDB use JavaScript and JSON as a query and schemas format.
+Even if it's not related to Node.js, the fact that JavaScript was chosen as the main programming language for the Node.js runtime was a great choice! Whether we like it or not, browsers support only a restricted set of technologies to build front-end Web application. If we want to share some code, for example, forms validations rules, between the browsers and the server, JavaScript is the only choice. This is more relevant nowadays due to the rise of Single Page Applications, where JavaScript is the Lingua Franca in front-end development. In addition, JSON (JavaScript Object Notation) is a widely used data exchange format and JavaScript happens to have native support for it. Many NoSQL database technologies such as CouchDB and MongoDB use JavaScript and JSON as a query and schemas format.
 
 Applications you can build with Node.js:
 
 - HTTP Web Servers.
 - Microservices or Serverless API backends.
 - Drivers for database access and querying.
-- Interactive command line interfaces, such as [hexa.run](https://hexa.run).
-- Desktop applications, such as [VS Code](https://code.visualstudio.com/) or [Slack](https://slack.com/) (using [Electron](https://www.electronjs.org/)).
-- Real-time IoT client and server libraries, such as [Johnny-Five](http://johnny-five.io/).
-- Plugins for Desktop applications, such as [SketchApp](https://www.sketch.com/) and [Adobe XD](https://www.adobe.com/products/xd.html).
+- Interactive command line interfaces, such as hexa.run.
+- Desktop applications, such as VS Code or Slack (using Electron).
+- Real-time IoT client and server libraries, such as Johnny-Five.
+- Plugins for Desktop applications, such as SketchApp and Adobe XD.
 - Shell scripts for file manipulations or network access, etc.
 - Machine learning libraries and models.
 

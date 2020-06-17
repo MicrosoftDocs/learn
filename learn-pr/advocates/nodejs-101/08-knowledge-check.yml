@@ -9,53 +9,49 @@ metadata:
   ms.author: wachegha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-azureSandbox: false
 durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
     - content: "What is Node.js?"
       choices:
+        - content: "A Java framework."
+          isCorrect: false
+          explanation: "Node.js is not a Java framework."
         - content: "A JavaScript framework."
           isCorrect: false
           explanation: "Node.js is usually wrongly presented as a framework but it's not."
         - content: "A JavaScript runtime."
           isCorrect: true
-          explanation: "Correct. Node.js is a runtime that can execute JavaScript applications."
+          explanation: "Node.js is a runtime that can execute JavaScript applications."
         - content: "A JavaScript server."
           isCorrect: false
           explanation: "Although Node.js can be used to implement a server, it's not a server."
     - content: "What does Node.js use to handle concurrent tasks?"
       choices:
+        - content: "Node.js can not handle concurrent tasks."
+          isCorrect: false
+          explanation: "Node.js was designed from the ground up to handle concurrent operations."
         - content: "Node.js use multiple threads for concurrent tasks."
           isCorrect: false
           explanation: "Node.js does not use multiple threads."
         - content: "Node.js use an single event-loop for concurrent tasks."
           isCorrect: true
-          explanation: "Correct. Node.js use a single thread and an event loop to handle concurrent non-blocking I/O tasks."
-        - content: "Node.js multiple event-loops for concurrent tasks."
+          explanation: "Node.js use a single thread and an event loop to handle concurrent non-blocking I/O tasks."
+        - content: "Node.js use multiple event-loops for concurrent tasks."
           isCorrect: false
           explanation: "Node.js use only one single event loop."
-    - content: "Why should you use Node.js?"
+    - content: "For which of these scenarios would a Node.js app be a good fit?"
       choices:
-        - content: "Because it has a large community supporting the project."
+        - content: "If my app requires a non-blocking, event-driven server."
           isCorrect: true
-          explanation: "Correct. Node.js is supported by the OpenJS foundation and counts more than 3k active contributors."
-        - content: "Because it can run Java."
+          explanation: "Node.js is perfect for implementing back-end API services and real-time applications."
+        - content: "If my app needs a Java runtime."
           isCorrect: false
-          explanation: "Node.js can run JavaScript, not Java."
-        - content: "Because I can use it to build mobile applications."
+          explanation: "Node.js applications are usually written in JavaScript, not Java."
+        - content: "If I need to build a mobile application."
           isCorrect: false
           explanation: "Mobile applications can be built with many languages including JavaScript. Node.js is a runtime not a language."
-    - content: "What does REPL stand for?"
-      choices:
-        - content: "Read Execute Print Loop"
+        - content: "If my app requires Quantum computing capabilities."
           isCorrect: false
-          explanation: "E does not stand for Execute."
-        - content: "Read Eval Print Last"
-          isCorrect: false
-          explanation: "L does not stand for Last."
-        - content: "Read Eval Read Loop"
-          isCorrect: true
-          explanation: "Correct."
+          explanation: "Node.js is not used for Quantum computing development."
