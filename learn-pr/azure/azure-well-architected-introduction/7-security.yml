@@ -27,9 +27,9 @@ quiz:
     - content: 'Intellectual property'
       isCorrect: false
       explanation: 'It is important to provide proper security protections for this data, but this is not the only correct choice.'
-    - content: 'All of the above may need security protections'
+    - content: 'All of the above might need security protections'
       isCorrect: true
-      explanation: 'All of the above may merit additional security protections.'
+      explanation: 'All of the above might merit additional security protections.'
 
   - content: 'Which of the following is an example of an attack you might see at the policies and access layer?'
     choices:

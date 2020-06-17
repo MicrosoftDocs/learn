@@ -2,11 +2,11 @@ Architecture is the foundation of your application's design. Using the Azure Wel
 
 The architectural priorities and needs of every app are different. But the five pillars in the Azure Well-Architected Framework are an excellent guidepost that you can use to make sure that you've given enough attention to every aspect of your application:
 
-- **Cost optimization**
-- **Operational excellence**
-- **Performance efficiency**
-- **Reliability**
-- **Security**
+- Cost optimization
+- Operational excellence
+- Performance efficiency
+- Reliability
+- Security
 
 Focusing on these pillars when designing your architecture will ensure that you're laying a solid foundation for your applications in the cloud. With a solid foundation, you'll be able to drive innovation through your environment, build solutions that your users will love, and foster the trust of your customers.
 

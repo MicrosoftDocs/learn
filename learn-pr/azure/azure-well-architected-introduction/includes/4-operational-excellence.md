@@ -14,7 +14,7 @@ Modern architectures should be designed with DevOps and continuous integration i
 
 Regardless of whether your project is a greenfield application that uses full continuous integration and continuous deployment (CI/CD) and containers, or if it's a legacy application that you're continuing to service, there are DevOps practices you can bring into your organization. 
 
-Breaking down silos within an organization, and working collaboratively across every stage in a project including change management, is a common thread throughout DevOps. Creating a culture of sharing, collaboration, and transparency will bring operational excellence to your organization.
+Breaking down silos within an organization is a common thread throughout DevOps. So is working collaboratively across every stage in a project, including change management. Creating a culture of sharing, collaboration, and transparency will bring operational excellence to your organization.
 
 ### Use monitoring and analytics to gain operational insights
 
