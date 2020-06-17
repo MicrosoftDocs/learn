@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-incidents.6-communications
+title: "Communication and collaboration"
+metadata:
+  title: "Communication and collaboration"
+  description: "Communication and collaboration"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-communications.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What is ChatOps?'
+    choices:
+    - content: 'a conversation-driven collaboration model'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'a kind of bot that can help you with incident response'
+      isCorrect: false
+      explanation: 'ChatOps is a conversation-driven collaboration model.'
+    - content: 'an informal get-together for operations professionals held in Boston each year'
+      isCorrect: false
+      explanation: 'ChatOps is a conversation-driven collaboration model.'

@@ -7,7 +7,7 @@ As you've used your Azure subscription or a free account, you'll need to delete 
 As part of the exercise steps, we created two regions and we'll need to delete both:
 
 1. Delete the **east-coast-rg**, and **west-coast-rg** resource groups.
-1. Another resource group was created automatically by Azure Site Recover, so we also need to delete the **west-coast-rg-asr** resource group.
+1. Another resource group was created automatically by Azure Site Recovery, so we also need to delete the **west-coast-rg-asr** resource group.
 
 ## Resources
 

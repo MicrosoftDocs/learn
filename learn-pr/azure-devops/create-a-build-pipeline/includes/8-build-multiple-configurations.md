@@ -1,6 +1,6 @@
-In the previous exercises, you implemented a pipeline that builds the *Space Game* web site. You started with a script that performs each build action and mapped each action to its corresponding pipeline task. The output of the pipeline is a .zip file that contains the compiled web application.
+In the previous exercises, you implemented a pipeline that builds the *Space Game* web site. You started with a script that performs each build action and mapped each action to its corresponding pipeline task. The output of the pipeline is a *.zip* file that contains the compiled web application.
 
-In this exercise, you'll use a template to define build tasks that can build any configuration defined in the project file. Templates enable you to define your logic one time and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline.
+In this exercise, you use a template to define build tasks that can build any configuration defined in the project file. Templates enable you to define your logic one time and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline.
 
 Let's begin by checking in with Mara and Amita.
 

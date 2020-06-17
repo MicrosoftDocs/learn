@@ -1,10 +1,10 @@
-Machine learning models must be trained with existing data. In this case, you'll use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on temporal and meteorological features.
+Machine learning models must be trained with existing data. In this case, you'll use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
 
 ## Create a dataset
 
 In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a *dataset*.
 
-1. in [Azure Machine Learning studio](https://ml.azure.com), view the **Datasets** page (under **Assets**), and create a new dataset ***from web files*** with the following settings:
+1. in [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Datasets** page (under **Assets**), and create a new dataset ***from web files*** with the following settings:
     - **Basic Info**:
         - **Web URL**: https://aka.ms/bike-rentals
         - **Name**: bike-rentals

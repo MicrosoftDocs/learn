@@ -2,7 +2,7 @@
 uid: learn-windows.get-started-with-windows-subsystem-linux
 metadata:
   title: Get started with the Windows Subsystem for Linux
-  description: Learn how to enable WSL, install your favorite Linux distribution, set up an integrated dev environment with VS Code, and more.
+  description: Learn how to enable WSL, install your favorite Linux distribution, set up an integrated dev environment with Visual Studio Code, and more.
   ms.date: 03/01/2019
   author: mattwojo
   ms.author: mattwoj
