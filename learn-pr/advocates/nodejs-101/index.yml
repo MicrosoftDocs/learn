@@ -11,14 +11,14 @@ metadata:
 title: Introduction to Node.js
 summary: "Learn everything about Node.js: what it is, how does it work and when to use it."
 abstract: |
-  In this module, you'll learn:
-  - What is Node.js
-  - How Node.js works under the hood
-  - When to use Node.js
-  - How to create and run a hello world Node.js program
+  By the end of this module, you will be able to:
+  - Explain what Node.js is
+  - Describe how Node.js works
+  - Identify when to use Node.js
+  - Create and run a Node.js script from the command line
 prerequisites: |
   - Beginner-level experience writing JavaScript code.
-iconUrl: /learn/advocates/nodejs-101/media/nodejs-badge.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
