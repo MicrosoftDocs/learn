@@ -13,7 +13,7 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Explain what Node.js is"
+    - content: "What is Node.js?"
       choices:
         - content: "Node.js is a Java framework."
           isCorrect: false
@@ -27,7 +27,7 @@ quiz:
         - content: "A JavaScript server."
           isCorrect: false
           explanation: "Although Node.js can be used to implement a server, it's not a server."
-    - content: "Describe how Node.js handles concurrent tasks"
+    - content: "How does Node.js handle concurrent tasks?"
       choices:
         - content: "Node.js can not handle concurrent tasks."
           isCorrect: false
@@ -52,6 +52,6 @@ quiz:
         - content: "If I need to build a mobile application."
           isCorrect: false
           explanation: "Mobile applications can be built with many languages including JavaScript. Node.js is a runtime not a language."
-        - content: "If my app requires Quantum computing capabilities."
+        - content: "If my app requires CPU intensive computations."
           isCorrect: false
-          explanation: "Node.js is not used for Quantum computing development."
+          explanation: "Node.js is great for I/O. However, it is not well optimized for CPU intensive computations."

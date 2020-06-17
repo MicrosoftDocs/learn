@@ -9,7 +9,7 @@ Applications you can build with Node.js:
 - HTTP Web Servers.
 - Microservices or Serverless API backends.
 - Drivers for database access and querying.
-- Interactive command line interfaces, such as hexa.run.
+- Interactive command-line interfaces, such as hexa.run.
 - Desktop applications, such as VS Code or Slack (using Electron).
 - Real-time IoT client and server libraries, such as Johnny-Five.
 - Plugins for Desktop applications, such as SketchApp and Adobe XD.
@@ -18,9 +18,9 @@ Applications you can build with Node.js:
 
 :::image type="content" source="../media/nodejs-npm.png" alt-text="Node.js and NPM registry":::
 
-The Node.js ecosystem is also very rich thanks to NPM, a package manager for Node.js where everyone can share their own Node.js libraries.
+The Node.js ecosystem is also rich thanks to NPM, a package manager for Node.js where everyone can share their own Node.js libraries.
 
-Let's imagine you have a lot of data you need to expose to users or to third-party services. You would start off by using Node.js to create the REST API backend, and implement CRUD (Create, Read, Update, Delete) operations. Then, you would model your data and store it in a NoSQL database.
+Let's imagine you have many data you need to expose to users or to third-party services. You would start off by using Node.js to create the REST API backend, and implement CRUD (Create, Read, Update, Delete) operations. Then, you would model your data and store it in a NoSQL database.
 
 :::image type="content" source="../media/nodejs-iot-example.jpeg" alt-text="Node.js IoT example":::
 

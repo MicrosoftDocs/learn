@@ -6,7 +6,7 @@ Node.js has a built-in REPL mode (Read Eval Print Loop). This is an interactive 
 
 Node.js will:
 
-- **Read**: reads and parses the user's input JavaScript code (or show a error if the code is invalid).
+- **Read**: reads and parses the user's input JavaScript code (or show an error if the code is invalid).
 - **Eval**: evaluates the entered JavaScript code.
 - **Print**: prints the computed results.
 - **Loop**: loop and wait for the user to enter a new command (or exit if the user hits **ctrl-c** twice)
@@ -54,7 +54,7 @@ Inside the shell code editor, create a file with the following code, and save th
 console.log('Hello World, from a script file.');
 ```
 
-Then, from the command line shell, enter `node` followed by the name of the file, in this case, `index.js`:
+Then, from the command-line shell, enter `node` followed by the name of the file, in this case, `index.js`:
 
 ```bash
 node index.js

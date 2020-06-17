@@ -4,12 +4,12 @@ In this module, you’ll begin at the beginning, learning what Node.js actually 
 
 ## Learning Objectives
 
-In this module, you will:
+By the end of this module, you will be able to:
 
-- Learn what Node.js is
-- Have a general explanation about the architecture of Node.js
-- Have an overview about the benefits of Node.js and when to use it
-- Create and run a simple hello world app in Node.js
+- Explain what Node.js is
+- Describe how Node.js works
+- Identify when to use Node.js
+- Create and run a Node.js script from the command line
 
 ## Prerequisites
 

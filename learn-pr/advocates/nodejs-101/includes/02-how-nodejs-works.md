@@ -58,11 +58,11 @@ As you can see above there are various installers available to cater to differen
 
 - `LTS`, LTS stands for **L**ong-**T**erm **S**upport. Worth noting is how it comes with the description text `Recommended for most users`. LTS is meant for enterprise usage where frequent updates might not be possible or for various reasons are undesired.
 
-- Current, this means it's under active development. Feature additions as well as breaking changes might happen. It should adhere to semantic versioning though [Semantic versioning](https://semver.org/)
+- Current, this means it's under active development. Feature additions as well as breaking changes might happen. It should adhere to semantic versioning.
 
 So which one to go with? Well you know your company best. Can you update often and is there a desired feature in the Current version you need - then Current version might be for you.
 
-To learn more about the different release types have a read here [Release types](https://github.com/nodejs/node#release-types).
+To learn more about the different release types read the *Release types* section in the Summary page.
 
 ### Install via package manager Brew
 

@@ -6,7 +6,7 @@ The main benefits of using Node.js are:
 
 ## Multi-purpose technology
 
-Node.js can be used to build a wide variety of production ready applications. From the traditional lightweight and high traffic chat applications, that run across distributed devices; to command line tools and web servers. Node.js was designed from the ground up to handle a high number of concurrent requests and requests.
+Node.js can be used to build a wide variety of production ready applications. From the traditional lightweight and high traffic chat applications, that run across distributed devices; to command-line tools and web servers. Node.js was designed from the ground up to handle a high number of concurrent requests and requests.
 
 ## JavaScript
 
@@ -27,4 +27,4 @@ The community has already built over a million modules and libraries for Node.js
 
 ## Open Source
 
-Node.js is open source and supported by the The OpenJS Foundation. It has a massive active open-source community and contributors working hard to improve and optimize the technology. There is even a Community top-level committee that has authority over outward-facing community outreach efforts.
+Node.js is open source and supported by the OpenJS Foundation. It has a massive active open-source community and contributors working hard to improve and optimize the technology. There is even a Community top-level committee that has authority over outward-facing community outreach efforts.
