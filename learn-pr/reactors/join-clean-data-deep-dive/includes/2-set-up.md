@@ -35,7 +35,7 @@ The flyout looks like:
 
 :::image type="content" source="../media/pd-compat-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.'":::
 
-Now select an item by using tab completion, and then add a period and use tab completion to explore *that*.
+Now select an item by using intellisense, and then add a period and use intellisense to explore *that*.
 
 For example, you can try selecting the Tab key after `pd.DataFrame`.
 
