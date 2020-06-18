@@ -7,7 +7,7 @@
 
 ## Lab - Implement an Azure IoT Hub
 
-In this walkthrough, we will configure a new Azure IoT Hub in the Azure portal, and then authenticate a connection to an IoT device using the online Raspberry Pi device simulator. Sensor data and messages are passed from the Raspberry Pi simulator to your Azure IoT Hub, and you view metrics for the messaging activity in the Azure portal.
+In this walkthrough, we will configure a new Azure IoT Hub in Azure Portal, and then authenticate a connection to an IoT device using the online Raspberry Pi device simulator. Sensor data and messages are passed from the Raspberry Pi simulator to your Azure IoT Hub, and you view metrics for the messaging activity in Azure Portal.
 
 ### Task 1: Create an IoT Hub 
 
@@ -45,7 +45,7 @@ In this task, we will add an IoT device to the IoT Hub.
 
 2. To add a new IoT device, scroll down to the **Explorers** section and click **IoT Devices**. Then, click **+ New**.
 
-	:::image type="content" source="../media/0602.png" alt-text="Screenshot of the IoT devices pane, highlighted within the IoT Hub navigation blade, in the Azure portal. The New button is highlighted to illustrate how to add a new IoT device identity to IoT Hub.":::
+	:::image type="content" source="../media/0602.png" alt-text="Screenshot of the IoT devices pane, highlighted within the IoT Hub navigation blade, in Azure portal. The New button is highlighted to illustrate how to add a new IoT device identity to IoT Hub.":::
 
 
 3. Provide a name for your new IoT device, **myRaspberryPi**, and click the **Save** button. This will create a new IoT device identity in your Azure IoT Hub.
