@@ -3,7 +3,7 @@ We'll be using the USDA NNDB dataset in sections 1.2 and 1.3. Particularly in se
 First, let's reload our original NNDB dataset so that we have a clean copy.
 
 ```python
-df = pd.read_csv('Data/USDA-nndb.csv', encoding='latin_1')
+df = pd.read_csv('Data/USDA-nndb.csv', encoding='latin1')
 ```
 
 Now let's load in the columns that we want from the older NNDB dataset that includes food groups.
@@ -108,7 +108,7 @@ Now save the merged DataFrame by using the `to_csv()` method.
 ```python
 combined_df.to_csv('Data/USDA-nndb-merged.csv',
                    sep=',',
-                   encoding='latin_1',
+                   encoding='latin1',
                    index=False)
 ```
 
