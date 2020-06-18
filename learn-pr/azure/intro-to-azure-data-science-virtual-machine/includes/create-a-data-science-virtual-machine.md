@@ -169,7 +169,7 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
     - Leave the **UserName** value as _AzureUser_
     
     - Leave the **SSH public key source** as _Generate new key pair_
-    - Set the **Key pair name** to _AzureUserKeyPair_.  
+    - Set the **Key pair name** to _AzureUserPrivateKey_.  
 
     ![Screenshot showing the Create a VM screen with details filled out](../media/create-new-resource.png)
 
@@ -180,6 +180,9 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
 1. Because you left the **Authentication type** as "SSH public key" and the **SSH public key souce** as "Generate new key pair", you will be presented with a dialog giving you the one-time ability to download the private key. Choose _Download private key and create resource_ to begin deploying the DSVM. You'll use this private key to authenticate in a later step. 
     
     ![Screenshot showing the Generate new key pair download dialog](../media/new-key-pair.png)
+
+>[!Important]
+>Treat the private key file as sensitive data. It can be used to access the DSVM by anyone who can guess your username and with the IP address of the DSVM. 
 
 1. You can monitor the deployment through the **Notifications** panel. Click the icon in the top toolbar to show or hide the panel.
 
