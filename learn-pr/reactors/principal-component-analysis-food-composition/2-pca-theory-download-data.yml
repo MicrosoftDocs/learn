@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.principal-component-analysis-food-composition.2-understand-pca-download-data
+uid: learn.reactors.principal-component-analysis-food-composition.2-pca-theory-download-data
 title: Understand PCA and import the dataset
 metadata:
   title: Understand PCA and import the dataset
@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-understand-pca-download-data.md)]
+  [!include[](includes/2-pca-theory-download-data.md)]
