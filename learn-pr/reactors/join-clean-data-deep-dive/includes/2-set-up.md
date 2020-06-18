@@ -16,7 +16,7 @@ Pandas is a big package, and there can be a lot to keep track of. IPython is the
 
 ```python
 ipython
-pd.<TAB>
+pd.
 ```
 
 > [!div class="alert is-tip"]
