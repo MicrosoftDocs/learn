@@ -165,6 +165,9 @@ Create the control machine by using the Red Hat Ansible instance on Linux image 
 
     ![Screenshot of monitoring deployment progress in the Azure portal](../media/8-notifications-deployment.png)
 
+    > [!NOTE]
+    > If you receive a "Deployment failed" message from the **Notifications** tab, you can likely ignore the error.
+
 ## Get your control machine's hostname
 
 Run this command to get your control machine's hostname, so that you can connect to it from Visual Studio Code and then later from Azure Pipelines.
@@ -194,7 +197,7 @@ Copy the following information from your Cloud Shell session to your control mac
 
 1. In Cloud Shell, get your control machine's IP address:
 
-    ```bash
+    ```azurecli
     IPADDRESS=$(az vm list-ip-addresses \
       --resource-group learn-ansible-control-machine-rg \
       --name ansiblehost \
@@ -264,21 +267,20 @@ Before you run the extension, there are a few additional options that you need t
 
     A tab appears that displays your current settings.
 
-1. In the **User Settings** pane, add this line:
+1. Under the **User** tab, enter *Ansible: Custom Options* in the search box.
+1. Under **Ansible: Custom Options**, enter the following option:
 
-    ```json
-    "ansible.customOptions": "--private-key ~/.ssh/ansible_rsa -i /home/azureuser/azure_rm.yml"
+    ```bash
+    --private-key ~/.ssh/ansible_rsa -i /home/azureuser/azure_rm.yml
     ```
+
     Both path names refer to locations on your control machine.
-
-    > [!TIP]
-    > User setting are in JSON format. Be sure to add a comma (**,**) to the end of the last setting listed before you add yours.
-
-1. Select **File** > **Save** to save your settings.
 
     Your settings resemble this:
 
     ![Screenshot of Visual Studio Code showing user settings for Ansible](../media/8-vs-code-user-settings.png)
+
+    Visual Studio Code automatically saves your settings.
 
 ### Run Ansible
 
@@ -296,6 +298,7 @@ You're now ready to run Ansible from your control machine. To do that:
       }
     ]
     ```
+
 1. Replace `your host` with your Ansible control machine's hostname, such as *test1234.northeurope.cloudapp.azure.com*.
 1. Replace `your private key` with the full path to your SSH private key file, *ansible_rsa*, on your local computer.
 
