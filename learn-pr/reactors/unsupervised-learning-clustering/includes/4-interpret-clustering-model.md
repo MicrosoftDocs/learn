@@ -1,5 +1,5 @@
 
-What sorts of foods populate the different clusters? We'll examine that question in greater depth later on, but we can get some sense of our clusters just by looking at the mean values for each of them.
+What sorts of foods populate the clusters? We'll examine that question in greater depth later on. But we can get some sense of our clusters just by looking at the mean values for each of them.
 
 ```python
 nutr_df.groupby('Cluster').mean()
@@ -20,9 +20,9 @@ The output is:
 3 rows × 43 columns
 ***
 
-We can quickly see that cluster 2 encompasses fatty foods (high `Lipid_Tot_(g)` values). Clusters 0 and 1 have similar mean protein and lipid amounts; an easy-to-see differentiation between those clusters is their relative carbohydrate and sugar levels, with those in cluster 1 being significantly higher than those in cluster 0.
+We can quickly see that cluster 2 encompasses fatty foods (high `Lipid_Tot_(g)` values). Clusters 0 and 1 have similar mean protein and lipid amounts. An easy-to-see differentiation between those clusters is their relative carbohydrate and sugar levels. The relative carbohydrate and sugar levels in cluster 1 are higher than those in cluster 0.
 
-We can look at these high-level differences in a little more detail using the `describe()` method, though, honestly, given the size of the `DataFrame`, this is a little cumbersome.
+We can look at these high-level differences in a little more detail by using the `describe()` method. Honestly, this is a little cumbersome because of the size of the DataFrame.
 
 ```python
 nutr_df.groupby('Cluster').describe()
@@ -44,7 +44,7 @@ The output is:
 3 rows × 344 columns
 ***
 
-We can also predict the label for new or hypothetical observations. Let's provide the nutritional details for Gjetost cheese and see which cluster our model places it in. (Gjetost cheese is one of our discarded entries from the original `DataFrame` with `NaN` values imputed below.)
+We can also predict the label for new or hypothetical observations. Let's provide the nutritional details for Gjetost cheese and see which cluster our model places it in. (Gjetost cheese is one of our discarded entries from the original DataFrame, with `NaN` values entered as follows.)
 
 ```python
 newcase = [[1021,
@@ -108,7 +108,7 @@ The output indicates that Gjetost cheese falls under cluster 1.
 
 ### Try it yourself
 
-Now go back up and alter the values for Gjetost cheese in the `newcase` array above to see what it takes to get that array classified into cluster 0 or cluster 2.
+Alter the values for Gjetost cheese in the `newcase` array to see what it takes to get that array classified into cluster 0 or cluster 2.
 
 **SARAH TBD** - add hint content?
 
@@ -189,7 +189,7 @@ array([[ 5.19147344e-01, -4.74611100e-01,  2.97580905e-02,
         -1.86768424e-01]])
 ```
 
-Remember that there is a method to this wall of numbers. Each coordinate is a point in 43-dimensional space, so each centroid is represented by an array of 43 values.
+Remember that there is a method to this wall of numbers. Each coordinate is a point in 43-dimensional space, so an array of 43 values represents each centroid.
 
 Let's now add back in our descriptive features so that we can see which food groups are in our clusters.
 
@@ -215,7 +215,7 @@ The output is:
 5 rows × 50 columns
 ***
 
-Now we can look at the value counts for the different food groups in our clusters.
+Now we can look at the value counts for the food groups in our clusters.
 
 ```python
 merged_df.loc[nutr_df['Cluster'] == 0]['FoodGroup'].value_counts()
@@ -255,11 +255,11 @@ Name: FoodGroup, dtype: int64
 >
 > ### Question
 >
-> Look back over the Python in the code cell above. Does the syntax make sense? If not, review the documentation for [`pandas.DataFrame.loc`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?azure-portal=true) and [`pandas.Series.value_counts`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html?azure-portal=true).
+> Look over the Python in the preceding code cell. Does the syntax make sense? If not, review the documentation for [`pandas.DataFrame.loc`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?azure-portal=true) and [`pandas.Series.value_counts`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html?azure-portal=true).
 
 ### Try it yourself
 
-Now find the `FoodGroup` value counts for clusters 1 and 2.
+Find the `FoodGroup` value counts for clusters 1 and 2.
 
 <br />
 
@@ -320,7 +320,7 @@ Now find the `FoodGroup` value counts for clusters 1 and 2.
 
 ***
 
-Some of the entries in our clusters makes sense and others look kind of like the contents of a grab bag. Part of the reason for this is that the *k*-means algorithm has to draw rather arbitrary boundaries between clusters; there will be a lot of entries in all clusters that are right on the edge and could reasonably belong to two (or more) clusters. To reduce some of this noise, we can sort these by distance from centroid of the respective clusters and look at the entries closest to the centroids.
+Some of the entries in our clusters make sense, and others look like the contents of a grab bag. Part of the reason is that the k-means algorithm has to draw arbitrary boundaries between clusters. There will be a lot of entries in all clusters that are right on the edge and could belong to two (or more) clusters. To reduce some of this noise, we can sort these by distance from centroid of the respective clusters and look at the entries closest to the centroids.
 
 ```python
 import numpy as np
@@ -350,10 +350,10 @@ The output is:
 > [!div class="alert is-tip"]
 > ### Questions
 >
-> 1. Why is it only necessary to find the minimum distance to the three centroids for a given data point (`np.min`)?
-> 1. What role does the `axis=1` parameter play in the `np.min()` function?
+> - Why is it necessary to find only the minimum distance to the three centroids for a data point (`np.min`)?
+> - What role does the `axis=1` parameter play in the `np.min()` function?
 
-We can now sort `FoodGroup` value counts by distance to the cluster's centroid, which can make the lists of principal food types in each cluster more intuitive.
+We can now sort `FoodGroup` value counts by distance to the cluster's centroid. That task can make the lists of principal food types in each cluster more intuitive.
 
 ```python
 merged_df.loc[nutr_df['Cluster'] == 0].sort_values(by='Distance')['FoodGroup'][:500].value_counts()
@@ -379,14 +379,14 @@ Name: FoodGroup, dtype: int64
 >
 > ### Question
 >
-> Look back over the Python in the code cell above. Does the syntax make sense? If not, review the documentation for [`pandas.DataFrame.sort_values`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html?azure-portal=true) and [slicing ranges in pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#slicing-ranges?azure-portal=true).
+> Look over the Python in the preceding code cell. Does the syntax make sense? If not, review the documentation for [`pandas.DataFrame.sort_values`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html?azure-portal=true) and [slicing ranges in pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#slicing-ranges?azure-portal=true).
 
 ### Try it yourself
 
-Now find the sorted `FoodGroup` value counts for clusters 1 and 2.
+Find the sorted `FoodGroup` value counts for clusters 1 and 2.
   
 > [!NOTE]
-> Due to the differing sizes of the clusters, try a variety of ranges for your slices.
+> Because the sizes of the clusters differ, try a variety of ranges for your slices.
 
 <br />
 

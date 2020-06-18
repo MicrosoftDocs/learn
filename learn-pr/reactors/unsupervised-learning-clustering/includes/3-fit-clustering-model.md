@@ -1,11 +1,11 @@
 
-We are now ready to import *k*-means clustering algorithm.
+We're now ready to import the k-means clustering algorithm.
 
 ```python
 from sklearn.cluster import KMeans
 ```
 
-While we can use any number of clusters that we wish, we will initially use three clusters as a convenient number for an initial exploration of k-means clustering.
+We can use any number of clusters that we want. We'll use three clusters as a convenient number for an initial exploration of k-means clustering.
 
 ```python
 kmeansmodel = KMeans(n_clusters=3, random_state=13)
@@ -24,7 +24,7 @@ KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
 >
 > ### Question
 >
-> Given what you have learned in this course thus far, what role does our declaration of the `random_state` above play in the `KMeans()` function?
+> Based on what you've learned in this course so far, what role does our declaration of `random_state` play in the `KMeans()` function?
 
 Let's take a look at the labels for our clusters.
 
@@ -32,7 +32,7 @@ Let's take a look at the labels for our clusters.
 >
 > ### Question
 >
-> Given what you know about Python zero-indexing and the number of clusters we selected, what labels do you expect to see?
+> Given what you know about Python zero-based indexing and the number of clusters we selected, what labels do you expect to see?
 
 ```python
 kmeansmodel.labels_
@@ -44,7 +44,7 @@ The output is:
 array([2, 2, 2, ..., 2, 0, 0])
 ```
 
-As expected, our labels for the different clusters are `0`, `1`, and `2`.
+As expected, our labels for the clusters are `0`, `1`, and `2`.
 
 Let's examine the distribution of data points among the clusters.
 
@@ -61,9 +61,9 @@ The output is:
 dtype: int64
 ```
 
-You might also check various cluster stats for comparison of the clusters.
+You might also check various cluster statistics for comparison of the clusters.
 
-We will want to access these labels later on, so let's add them to our `DataFrame`.
+We'll want to access these labels later on, so let's add them to our DataFrame.
 
 ```python
 nutr_df['Cluster'] = kmeansmodel.labels_
