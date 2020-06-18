@@ -37,7 +37,7 @@ quiz:
     - content: "`git rebase`"
       isCorrect: false
       explanation: "This command doesn't allow you to control which commits are applied in the way you need to here. It's also not recommended for public branches because it can cause issues for others working on branches based on them."
-  - content: "Your project team has just reached a major milestone and wants everyone to install the latest version of your app. Which option is the **best** way to let interested users know?"
+  - content: "Your project team has reached a major milestone and wants everyone to install the latest version of your app. Which option is the **best** way to let interested users know?"
     choices:
     - content: "Create a release on GitHub."
       isCorrect: true

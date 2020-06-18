@@ -2,7 +2,7 @@ Here, we discuss how you can create a release based workflow using GitHub.
 
 ## What is a release based workflow?
 
-A **release based workflow** is a set of patterns and policies that focus on *releasing software*. While this may seem like an obvious goal for a development team, the value of this perspective is somewhat nuanced. This unit will discuss how it drives three different parts of the release cycle: managing the project, selecting a branching strategy, and releasing to customers. 
+A **release based workflow** is a set of patterns and policies that focus on *releasing software*. While this notion may seem like an obvious goal for a development team, the value of this perspective is somewhat nuanced. This unit will discuss how it drives three different parts of the release cycle: managing the project, selecting a branching strategy, and releasing to customers. 
 
 ## Planning work with GitHub project boards
 
@@ -16,7 +16,7 @@ By default, each card starts in the **To do** column and moves to **In progress*
 
 Learn more about [managing project boards](https://help.github.com/github/managing-your-work-on-github/managing-project-boards?azure-portal=true).
 
-The card's project status is integrated across the repository. For example, dragging an card from **To do** to **In progress** changes its status, as well as updates the visual indicator next to the project's title. The green section indicates the portion of cards marked as **Done**, whereas purple is used for cards **In progress**. The remaining space represents the quantity of cards that have yet to begin. In addition to dragging cards around the board, you may update them from their main view.
+The card's project status is integrated across the repository. For example, dragging a card from **To do** to **In progress** changes its status, as well as updates the visual indicator next to the project's title. The green section indicates the portion of cards marked as **Done**, whereas purple is used for cards **In progress**. The remaining space represents the quantity of cards that have yet to begin. In addition to dragging cards around the board, you may update them from their main view.
 
 ![Moving a project card](../media/2-move-project-card.png)
 
@@ -48,9 +48,9 @@ In addition to providing a platform for collaborative software development, GitH
 
 ### Working with long-lived branches
 
-A **long-lived branch** is a Git branch that is never deleted. Some teams prefer to avoid them altogether in favor of short-lived feature and bug fix branches. For those teams, the goal of any effort is to produce a pull request that merges their work back into `master`. This can be effective for projects that never have the need to look back, such as first-party web applications that will never support a previous version. 
+A **long-lived branch** is a Git branch that is never deleted. Some teams prefer to avoid them altogether in favor of short-lived feature and bug fix branches. For those teams, the goal of any effort is to produce a pull request that merges their work back into `master`. This approach can be effective for projects that never have the need to look back, such as first-party web applications that will never support a previous version. 
 
-However, there are certain scenarios where a long-lived branch serves the best interests of a team. The most common case for a long-lived branch is when a product has multiple versions that must be supported for an extended period of time. When a team needs to plan for this, the repository should follow a standard convention, such as `release-v1.0`, `release-v2.0`, and so on. Those branches should also be marked as protected in GitHub so that write access is controlled and they cannot be accidentally deleted.
+However, there are certain scenarios where a long-lived branch serves the best interests of a team. The most common case for a long-lived branch is when a product has multiple versions that must be supported for an extended period of time. When a team needs to plan for this commitment, the repository should follow a standard convention, such as `release-v1.0`, `release-v2.0`, and so on. Those branches should also be marked as protected in GitHub so that write access is controlled and they cannot be accidentally deleted.
 
 Teams should still maintain `master` as the root branch and merge their release branch changes upstream as long as they fit into the future of the project. When the time comes, `release-v3.0` should base off of `master` so that servicing work for `release-v2.0` doesn't complicate the repository.
 
@@ -60,7 +60,7 @@ Suppose a bug fix were merged into the `release-v2.0` branch, and then merged ag
 
 Merging `master` down into `release-v1.0` would not be a feasible option since it would contain a significant number of commits that were not intended to be part of that version. For the same reason, rebasing `release-v1.0` onto the current `master` commit would not be an option.
 
-An alternative option would be to manually reimplement the fix on the `release-v1.0` branch, but that approach would require a lot of rework and not scale well across multiple versions. However, Git does offer an automated solution to this in the form of its `cherry-pick` command.
+An alternative option would be to manually reimplement the fix on the `release-v1.0` branch, but that approach would require much rework and not scale well across multiple versions. However, Git does offer an automated solution to this problem in the form of its `cherry-pick` command.
 
 ### What is Git's cherry-pick command?
 
@@ -81,7 +81,7 @@ Creating a version is as straightforward as filling out the form:
 	- Use a descriptive name.
 	- Use the Git version.
 	- Use a concise summary of how this release has changed since the previous one.
-	- Use a codename or random phrase.
+	- Use a code name or random phrase.
 - Provide release notes. This can be automated with the [Release Drafter app](https://github.com/apps/release-drafter?azure-portal=true), which analyzes the changes since the previous version and includes the associated pull request titles.
 - If you would like to provide files as part of the release, such as pre-built installers, you can drag and drop them onto the form. You don't need to package the source as GitHub handles that for you automatically.
 - Indicate whether this is a pre-release version by checking that box. This will help customers avoid pre-release versions if they want to.
