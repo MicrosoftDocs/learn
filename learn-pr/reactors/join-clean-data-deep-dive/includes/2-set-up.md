@@ -53,7 +53,6 @@ As we progress through section 1.1, don't forget that IPython also provides a ta
 As a reminder, use this code to display the built-in pandas documentation:
 
 ```python
-ipython
 pd
 ```
 
