@@ -1,8 +1,10 @@
-Here, we discuss what GitHub Apps are, how they work, and how you can use them to improve your workflows. 
+Here, we discuss what GitHub Apps are, how they work, and how you can use them to improve your workflows. Whether you're adopting a solution built by someone else or developing one to meet your exact needs, there's always room to improve your processes.
 
 ## Extending the platform through the GitHub API
 
-GitHub provides a [robust API](https://developer.github.com/v3/?azure-portal=true) that enables developers to do just about anything on the platform. It's exposed via REST endpoints, so it's easy to integrate with from any platform or programming language.
+GitHub provides a [robust API](https://developer.github.com/v3/?azure-portal=true) that enables developers to do just about anything on the platform. It's exposed via REST endpoints, so it's easy to integrate with from any platform or programming language. But the API access doesn't stand on its own. Developers wanting to share their features with others still need to package it up as an app and publish it before anyone can use it.
+
+### Granting access and permissions
 
 One of the most important considerations for allowing an app to access a GitHub repository is the permissions it requires to operate. Some apps are easy to trust, but others may be suspect. Always be sure that you're comfortable with the permissions you grant an app.
 
@@ -13,17 +15,17 @@ One of the most important considerations for allowing an app to access a GitHub 
 
 ## What are GitHub Apps?
 
-With the universe of applications that use the GitHub API there is a special subset known as **GitHub Apps**. These are apps that distinguish themselves from other apps in that they operate under their own identity. In other words, the app doesn't act *on behalf* of a GitHub user; it *is* a GitHub user. All other apps are **OAuth Apps**, whether authorized using the OAuth browser flow or a personal access token.
+With the universe of apps that use the GitHub API there is a special subset known as **GitHub Apps**. These app distinguish themselves from other apps in that they operate under their own identity. In other words, the app doesn't act *on behalf* of a GitHub user; it *is* a GitHub user. All other apps are **OAuth Apps**, whether authorized using the OAuth browser flow or a personal access token.
 
 ### GitHub Apps vs. OAuth Apps
 
-There are many subtle [differences between GitHub Apps and OAuth Apps](https://developer.github.com/apps/differences-between-apps/?azure-portal=true). However, for the purposes of this unit, we will discuss their  primary difference at an app consumer level.
+There are many subtle [differences between GitHub Apps and OAuth Apps](https://developer.github.com/apps/differences-between-apps/?azure-portal=true). However, for the purposes of this unit, we'll discuss their  primary difference at an app consumer level.
 
 The main difference you'll notice is that GitHub Apps are *installed*, whereas OAuth apps are *authorized*. Installing a GitHub App grants it the requested permissions so that it can interact with GitHub and create or modify content like any other user. For example, it can post comments like this one:
 
 ![GitHub App comment](../media/2-github-app-comment.png)
 
-If this app were instead an OAuth App, then it would need to first be authorized to post by a GitHub user. The comment would also appear as though the authorizing user had posted it because the OAuth App was posting on its behalf.
+If this app was instead an OAuth App, then it would need to first be authorized to post by a GitHub user. The comment would also appear as though the authorizing user themselves had posted it.
 
 ## Reacting to events
 
@@ -40,7 +42,7 @@ Learn more about [GitHub webhooks](https://developer.github.com/webhooks?azure-p
 
 ### Polling
 
-Sometimes webhooks aren't an option. For example, your app might need to live behind a corporate firewall where it can't be directly reached by GitHub. In that case, the alternative is to poll for the data you're tracking using the GitHub API. 
+Sometimes webhooks aren't an option. Your app might need to live behind a corporate firewall where it can't be directly reached by GitHub. In that case, an alternative is to poll for the data you're tracking by using the GitHub API. 
 
 Still, you should make every effort to use webhooks if possible. Learn more about the benefits of [webhooks over polling](https://github.community/t/scalable-continuous-integration-ci-patterns/13501?azure-portal=true).
 
@@ -50,7 +52,7 @@ An alternative to polling for apps behind a firewall is to use a webhook forward
 
 ## Building GitHub Apps with Probot
 
-Probot is an application framework for building GitHub Apps. It abstracts out all of the overhead associated with configuring webhooks and a GitHub client so that you can focus purely on app logic. There are [many apps](https://probot.github.io/apps/?azure-portal=true) already built on Probot, including:
+Probot is an app framework for building GitHub Apps. It abstracts out all of the overhead associated with configuring webhooks and a GitHub client so that you can focus purely on app logic. There are [many apps](https://probot.github.io/apps/?azure-portal=true) already built on Probot, including:
 
 - [Pull](https://probot.github.io/apps/pull/?azure-portal=true), which helps keep your forks up to date.
 - [Delete merged branch](https://probot.github.io/apps/delete-merged-branch/?azure-portal=true), which automatically deletes branches after merging.
