@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.create-a-release-based-workflow.5-summary
+uid: learn.github.release-based-workflow-github.5-summary
 title: Summary
 metadata:
   title: Summary
   description: Review what you've learned.
-  ms.date: 06/03/2020
+  ms.date: 06/17/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
