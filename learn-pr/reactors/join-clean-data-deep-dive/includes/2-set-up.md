@@ -70,7 +70,7 @@ Here's the flyout:
 
 ## A brief reminder about Jupyter notebooks
 
-This course makes extensive use of Jupyter notebooks hosted running within Visual Studio Code. Visual Studio Code embessed Jupyter notebooks are an easy way for you to experiment with programming concepts in an interactive way. Visual Studio Code can be installed on most operating systems.
+This course makes extensive use of Jupyter notebooks hosted running within Visual Studio Code. Visual Studio Code embedded Jupyter notebooks are an easy way for you to experiment with programming concepts in an interactive way. Visual Studio Code can be installed on most operating systems.
 
 Jupyter notebooks are divided into cells. Each cell contains either text written in the Markdown language or a space in which to write and run computer code. Because all the code resides inside code cells, you can run each code cell inline rather than using a separate Python interactive window.
 
