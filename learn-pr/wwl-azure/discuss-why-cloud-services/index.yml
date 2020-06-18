@@ -18,6 +18,7 @@ abstract: |
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
 iconUrl: /learn/achievements/discuss-why-cloud-services.svg
+hidden: true
 levels:
 - beginner
 roles:
