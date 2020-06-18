@@ -14,7 +14,7 @@ The dominant feature of a project is its **board**. The board is the central pla
 
 By default, each card starts in the **To do** column and moves to **In progress** after work begins before ending in **Done**. You may customize these columns, add additional columns, or apply automation to the movement of these cards and their properties to fit your team's process.
 
-Learn more about [Managing project boards](https://help.github.com/github/managing-your-work-on-github/managing-project-boards?azure-portal=true).
+Learn more about [managing project boards](https://help.github.com/github/managing-your-work-on-github/managing-project-boards?azure-portal=true).
 
 The card's project status is integrated across the repository. For example, dragging an card from **To do** to **In progress** changes its status, as well as updates the visual indicator next to the project's title. The green section indicates the portion of cards marked as **Done**, whereas purple is used for cards **In progress**. The remaining space represents the quantity of cards that have yet to begin. In addition to dragging cards around the board, you may update them from their main view.
 
@@ -22,7 +22,7 @@ The card's project status is integrated across the repository. For example, drag
 
 By using a project board, all stakeholders have an easy way to understand the status and velocity of a project. You can also create boards that are scoped to individual users or a collection of repositories owned by an organization.
 
-Learn more about [Tracking the progress of your work with project boards](https://help.github.com/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-project-boards?azure-portal=true).
+Learn more about [tracking the progress of your work with project boards](https://help.github.com/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-project-boards?azure-portal=true).
 
 ### Tracking specific milestones
 
@@ -34,13 +34,13 @@ Milestones are similar to project tracking in that there is an emphasis on the p
 
 ![A GitHub project board](../media/2-milestone-progress.png)
 
-Learn more about [Tracking the progress of your work with milestones](https://help.github.com/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-milestones?azure-portal=true).
+Learn more about [tracking the progress of your work with milestones](https://help.github.com/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-milestones?azure-portal=true).
 
 ## Selecting a branching strategy
 
 Repositories that have multiple developers working in parallel need a well-defined branching strategy. Settling on a unified approach early in the project will save confusion and frustration as the team and codebase scale.
 
-Learn about [How We Use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft?azure-portal=true).
+Learn about [how we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft?azure-portal=true).
 
 ### The GitHub flow
 
@@ -48,7 +48,7 @@ In addition to providing a platform for collaborative software development, GitH
 
 ### Working with long-lived branches
 
-A **long-lived branch** is a Git branch that is never deleted. Some teams prefer to avoid them altogether in favor of short-lived feature and bug fix branches. For those teams, the goal of any effort is to produce a pull request that merges their work back into `master`. This can be effective for projects that never have the need to look back, such as first-party web applications that will never revert to a version beyond the most recent deployment. 
+A **long-lived branch** is a Git branch that is never deleted. Some teams prefer to avoid them altogether in favor of short-lived feature and bug fix branches. For those teams, the goal of any effort is to produce a pull request that merges their work back into `master`. This can be effective for projects that never have the need to look back, such as first-party web applications that will never support a previous version. 
 
 However, there are certain scenarios where a long-lived branch serves the best interests of a team. The most common case for a long-lived branch is when a product has multiple versions that must be supported for an extended period of time. When a team needs to plan for this, the repository should follow a standard convention, such as `release-v1.0`, `release-v2.0`, and so on. Those branches should also be marked as protected in GitHub so that write access is controlled and they cannot be accidentally deleted.
 
@@ -77,15 +77,17 @@ When a product version is ready to be released, GitHub simplifies the process of
 Creating a version is as straightforward as filling out the form:
 
 - Enter a Git tag to apply, which should follow [semantic versioning](https://semver.org/?azure-portal=true), such as `v1.0.2`. GitHub manages the process of creating the Git tag you specify.
-- Enter a name for your release. Some common practices are:
+- Enter a name for your release. Some common practices are to:
 	- Use a descriptive name.
 	- Use the Git version.
 	- Use a concise summary of how this release has changed since the previous one.
 	- Use a codename or random phrase.
 - Provide release notes. This can be automated with the [Release Drafter app](https://github.com/apps/release-drafter?azure-portal=true), which analyzes the changes since the previous version and includes the associated pull request titles.
-- If you would like to provide files as part of the release, such as pre-built installers, you can drag and drop them onto the form.
+- If you would like to provide files as part of the release, such as pre-built installers, you can drag and drop them onto the form. You don't need to package the source as GitHub handles that for you automatically.
 - Indicate whether this is a pre-release version by checking that box. This will help customers avoid pre-release versions if they want to.
 
 ![Viewing a GitHub release](../media/2-view-release.png)
 
-Learn more [About GitHub releases](https://help.github.com/github/administering-a-repository/about-releases?azure-portal=true).
+Once a release has been published, everyone watching the repository will receive a notification.
+
+Learn more about [GitHub releases](https://help.github.com/github/administering-a-repository/about-releases?azure-portal=true).
