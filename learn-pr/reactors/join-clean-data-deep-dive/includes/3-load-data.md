@@ -14,7 +14,7 @@ It's time to use the pd.read_csv documentation to look for ideas on what to try 
 
 ### Try it yourself
 
-Use Visual Studio Code intellisense to on pd.read_csv.
+Use Visual Studio Code IntelliSense for information on how to use pd.read_csv.
 
 <br />
 
