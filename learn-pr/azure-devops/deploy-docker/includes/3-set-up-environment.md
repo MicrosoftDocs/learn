@@ -254,7 +254,7 @@ To add the variables:
 
 1. Select **+ Variable group**.
 
-1. Under **Properties**, enter **Release** for the variable group name.
+1. Under **Properties**, enter *Release* for the variable group name.
 
 1. Under **Variables**, select **+ Add**.
 
