@@ -36,7 +36,7 @@ The flyout looks like:
 
 Now select an item by using intellisense, and then add a period and use intellisense to explore *that*.
 
-For example, you can try selecting the Tab key after `pd.DataFrame`.
+For example, you can try adding a period after `pd.DataFrame` and waiting for Visual Studio intellisense.
 
 ```python
 pd.DataFrame.
