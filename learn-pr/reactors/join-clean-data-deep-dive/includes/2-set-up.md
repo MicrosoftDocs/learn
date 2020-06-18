@@ -12,7 +12,7 @@ Because this is such a common convention, it's the way we'll use and refer to pa
 
 ## Built-in help
 
-Pandas is a big package, and there can be a lot to keep track of. Fortunately, you can use intellisense in Visual Studio Code to quickly explore the contents of a package like pandas. If you want to see all of the functions available with pandas, enter this and leave your cursor after the `.`:
+Pandas is a big package, and there can be a lot to keep track of. Fortunately, you can use IntelliSense in Visual Studio Code to quickly explore the contents of a package like pandas. If you want to see all of the functions available with pandas, enter this and leave your cursor after the `.`:
 
 ```python
 pd.
@@ -34,9 +34,9 @@ The flyout looks like:
 
 :::image type="content" source="../media/pd-compat-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.'":::
 
-Now select an item by using intellisense, and then add a period and use intellisense to explore *that*.
+Now select an item by using IntelliSense, and then add a period and use IntelliSense to explore *that*.
 
-For example, you can try adding a period after `pd.DataFrame` and waiting for Visual Studio intellisense.
+For example, you can try adding a period after `pd.DataFrame` and waiting for Visual Studio IntelliSense.
 
 ```python
 pd.DataFrame.
@@ -48,9 +48,9 @@ You should see:
 
 ## Documentation
 
-As we progress through section 1.1, don't forget that Visual Studio Code offers intellisense and function documentation with the `?` (question mark) character. If you don't understand something about a function that you see in this section, taking a moment to consult the documentation can help. You'll find this documentation to be a valuable reference source for your own data science work, both now and in the future. 
+As we progress through section 1.1, don't forget that Visual Studio Code offers IntelliSense and function documentation with the `?` (question mark) character. If you don't understand something about a function that you see in this section, taking a moment to consult the documentation can help. You'll find this documentation to be a valuable reference source for your own data science work, both now and in the future. 
 
-As a reminder, use Visual Studio Code intellisense and the `?` (question mark) character to discover functions and display the built-in pandas documentation:
+As a reminder, use Visual Studio Code IntelliSense and the `?` (question mark) character to discover functions and display the built-in pandas documentation:
 
 ```python
 pd
