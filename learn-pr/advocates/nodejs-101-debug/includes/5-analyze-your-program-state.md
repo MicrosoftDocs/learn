@@ -51,9 +51,14 @@ You can edit the path and name of your application entry point if needed. You ca
 
 Once you have finished preparing your configurations, you can select one using the dropdown at the top of the side bar then click on the run button to start debugging.
 
+Note that you can also have buttons to edit the launch configurations and start the Node.js debug terminal if needed.
+
 :::image source="../media/vscode-debug-sidebar-controls.png" alt-text="VS Code debug side bar controls":::
 
-Note that you can also have buttons to edit the launch configurations and start the Node.js debug terminal if needed.
+1. Start debugging.
+1. Select configuration.
+1. Edit `launch.json` file.
+1. Open debug terminal.
 
 ## Analyze your program state
 
