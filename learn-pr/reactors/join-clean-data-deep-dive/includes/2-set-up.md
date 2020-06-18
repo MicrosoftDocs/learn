@@ -50,7 +50,7 @@ You should see:
 
 As we progress through section 1.1, don't forget that IPython also provides a tab-completion feature and function documentation with the `?` (question mark) character. If you don't understand something about a function that you see in this section, taking a moment to consult the documentation can help. You'll find this documentation to be a valuable reference source for your own data science work, both now and in the future. 
 
-As a reminder, use this code to display the built-in pandas documentation:
+As a reminder, use Visual Studio Code intellisense and the `?` (question mark) character to discover functions and display the built-in pandas documentation:
 
 ```python
 pd
