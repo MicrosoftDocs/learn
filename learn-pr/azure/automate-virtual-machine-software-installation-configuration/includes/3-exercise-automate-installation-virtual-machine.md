@@ -241,13 +241,13 @@ Not that you have created all of the necessary networking infrastructure, your n
 
 1. On your local Windows machine, open the **Remote Desktop Connection** application.
 
-    ![Screenshot showing the Remote Desktop Connection window.](../media/3-remote-dektop.png)
+    ![Screenshot showing the Remote Desktop Connection window.](../media/3-remote-desktop.png)
 
     1. Enter the public IP address you copied above in the **Computer** field.
     
     1. Click **Show Options** at the bottom of the window.
 
-        ![Screenshot showing the Remote Desktop Connection with the options expanded.](../media/3-remote-dektop-expanded.png)
+        ![Screenshot showing the Remote Desktop Connection with the options expanded.](../media/3-remote-desktop-expanded.png)
 
     1. Enter **azureuser** in the **User name** field.
     

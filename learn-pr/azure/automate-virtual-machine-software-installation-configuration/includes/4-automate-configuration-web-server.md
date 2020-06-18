@@ -151,7 +151,7 @@ The relevant PowerShell commands that you can use when setting up your virtual m
 
 | Command | Description |
 | --- | --- |
-| `Add-WindowsFeature` | Allows you to install Windows features, such as IIS. |
+| `Install-WindowsFeature` | Allows you to install Windows features, such as IIS. |
 | `Invoke-WebRequest` | Allows you to download additional software via the web. |
 | `Add-WebConfiguration` | Allows you to configure IIS. |
 | `Remove-Item` and `New-Item` | Allows you to delete and create files. |

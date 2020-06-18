@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: platform-cloud
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-automate-configuration-web-server.md)]

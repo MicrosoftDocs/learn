@@ -1,0 +1,56 @@
+#cloud-config
+package_upgrade: true
+packages:
+    - nginx
+    - php7.2  
+    - php7.2-fpm
+write_files:
+  - owner: www-data:www-data
+    path: /etc/nginx/sites-available/default
+    content: |
+      server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+        root /home/azureuser/serverInfo;
+        index index.php index.html index.htm;
+        location / {
+          try_files $uri $uri/ =404;
+        }
+        location ~* \.php$ {
+            fastcgi_index   index.php;
+            fastcgi_pass    unix:/run/php/php7.2-fpm.sock;
+            include         fastcgi_params;
+            fastcgi_param   SCRIPT_FILENAME    $document_root$fastcgi_script_name;
+            fastcgi_param   SCRIPT_NAME        $fastcgi_script_name;
+        }
+      }
+  - owner: azureuser:azureuser
+    path: /home/azureuser/serverInfo/index.php
+    content: |
+      <!DOCTYPE html>
+      <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <title>PHP Status Page</title>
+              <meta name="description" contents="Default home page for deployed virtual machines">
+          </head>
+          <body>
+            <div>
+              <h2>Client information</h2>
+              <p><strong>Browser client:</strong><?php echo $_SERVER['HTTP_USER_AGENT']; ?></p>
+            </div>
+            <div>
+              <h2>Server information</h2>
+              <p><strong>PHP info:</strong></p>
+              <div>
+                <?php phpinfo(); ?>
+              </div>
+            </div>
+            <footer>
+                Server name: <?php echo php_uname("n"); ?>
+            </footer>
+          </body>
+      </html>    
+runcmd:
+  - service nginx restart
+  - service php7.2-fpm restart

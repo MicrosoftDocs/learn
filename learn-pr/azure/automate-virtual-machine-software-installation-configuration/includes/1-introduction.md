@@ -14,7 +14,7 @@ In this module, you'll learn how to:
 
 ## Prerequisites
 
-- A basic understanding of virtual machines
+- Basic understanding of Azure Virtual Machines
 - Experience using command line tools to automate tasks
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]

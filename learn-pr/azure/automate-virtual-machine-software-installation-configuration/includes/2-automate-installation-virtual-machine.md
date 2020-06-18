@@ -41,6 +41,13 @@ When you use the Azure CLI to create a virtual network, Azure will return a JSON
 }
 ```
 
+Where:
+
+| Value | Description |
+| --- | --- |
+| `ssssssss-ssss-ssss-ssss-ssssssssssss` | This is the GUID for your Azure subscription. |
+| `[resource group name]` | This is the name of the resource group that you specified in your `az network vnet create` command. |
+
 There are several additional options that are available when you create a virtual network, and you can retrieve a list of these options with the following command:
 
 ```azurecli
