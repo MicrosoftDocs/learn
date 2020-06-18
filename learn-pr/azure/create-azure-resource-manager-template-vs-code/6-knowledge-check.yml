@@ -37,14 +37,14 @@ quiz:
     - content: "parameters"
       isCorrect: false
       explanation: "The elements of an Azure Resource Manager template are *schema*, *contentVersion*, *apiProfile*, *parameters*, *variables*, *functions*, *resources*, and *output*."
-  - content: "TBD" 
+  - content: "Azure Resource Manager templates are idempotent. This means that if you run a template with no changes a second time:" 
     choices:
-    - content: "A."
+    - content: "Azure Resource Manager will deploy new resources as copies of the previously deployed resources."
       isCorrect: false
-      explanation: "."
-    - content: "B."
+      explanation: "If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."
+    - content: "Azure Resource Manager will not make any changes to the deployed resources."
       isCorrect: true
-      explanation: "."
-    - content: "C."
+      explanation: "If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."
+    - content: "Azure Resource Manager will delete the previously deployed resources and redeploy them."
       isCorrect: false
-      explanation: "."
+      explanation: "If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created."

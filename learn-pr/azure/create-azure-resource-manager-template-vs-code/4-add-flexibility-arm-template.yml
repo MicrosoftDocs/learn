@@ -9,6 +9,6 @@ metadata:
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
   [!include[](includes/4-add-flexibility-arm-template.md)]

@@ -28,3 +28,7 @@ Here are some links to learn more:
 - [Resource providers for Azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true)
 
 - [Define resources in Azure Resource Manager template](https://docs.microsoft.com/azure/templates?azure-portal=true)
+
+- [Outputs in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-outputs?tabs=azure-powershell)
+
+- [Parameters in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-parameters)

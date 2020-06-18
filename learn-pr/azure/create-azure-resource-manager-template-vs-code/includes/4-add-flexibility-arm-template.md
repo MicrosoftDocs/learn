@@ -1,4 +1,4 @@
-In the last exercise, you created an Azure Resource Manager template and added an Azure storage account to the template. Recall that in our scenario each deployment may have a different type of Azure storage account. You can make your template more flexible and reusable by adding a parameter for the Azure storage accoung SKU.
+In the last unit, you created an Azure Resource Manager template and added an Azure storage account to the template. Recall that in our scenario each deployment may have a different type of Azure storage account. You can make your template more reusable by adding a parameter for the Azure storage account SKU.
 
 Here, you delve into detail on the *parameters* and *outputs* sections of the template.
 
@@ -6,7 +6,46 @@ Here, you delve into detail on the *parameters* and *outputs* sections of the te
 
 Parameters enable you to customize the deployment by providing values that are tailored for a particular environment. For example, you pass in different values based on whether you're deploying to an environment for development, test, production or others. For example, the template above uses the *Standard_LRS* SKU. You can reuse this template for other deployments that create a storage account by making the name of the SKU a parameter. Then, you pass in the name of the SKU you would like for this particular deployment when the template is executed. You can do this either at the command line, or using a parameter file.
 
+In the parameters section of the template, you specify which values you can input when deploying the resources. You're limited to 256 parameters in a template and parameter definitions can use most template functions.
+
+The available properties for a parameter are:
+
+```json
+"parameters": {
+  "<parameter-name>" : {
+    "type" : "<type-of-parameter-value>",
+    "defaultValue": "<default-value-of-parameter>",
+    "allowedValues": [ "<array-of-allowed-values>" ],
+    "minValue": <minimum-value-for-int>,
+    "maxValue": <maximum-value-for-int>,
+    "minLength": <minimum-length-for-string-or-array>,
+    "maxLength": <maximum-length-for-string-or-array-parameters>,
+    "metadata": {
+      "description": "<description-of-the parameter>"
+    }
+  }
+}
+```
+
+The allowed types of parameters are:
+
+- string
+- secureString
+- integers
+- boolean
+- object
+- secureObject
+- array
+
+### Recommendations for using parameters
+
+It is recommended that you use parameters for settings that vary according to the environment, like SKU, size, or capacity, and for resource names that you want to specify yourself for easy identification or to comply with internal naming conventions. You'll also want to be sure to provide a description for each parameter and use default values whenever possible.
+
+For security reasons, it is important to never hard code or provide default values for usernames and/or passwords in templates. Always use parameters for usernames and passwords (or secrets). Use *secureString* for all passwords and secrets. If you pass sensitive data in a JSON object, use the secureObject type. Template parameters with *secureString* or *secureObject* types can't be read or harvested after the deployment of the resource.
+
 ### How do I use parameters in my template
+
+In the parameters section of the template, you specify the parameters that can be input when deploying the resources. You're limited to 256 parameters in a template.
 
 Here is an example of a template file with a parameter for the storage SKU defined in the *parameters* section of the template. Notice that you can provide a default for the parameter to be used if no value is specified at execution.
 
@@ -91,3 +130,6 @@ Here is an example to output the Azure storage account's endpoints.
 
 Notice the ```reference``` part of the expression. This function gets the runtime state of the storage account.
 
+## What happens if I deploy a template again
+
+Recall that Azure Resource Manager templates are idempotent, meaning you can deploy the template to the same environment again and if nothing was changed in the template, nothing will change in the environment. However, if there was a change made to the template, for example, you changed a parameter value, only that change will be deployed. Your template can contain all of the resources you need for your Azure solution and you can safely execute a template again. Resources will only be created if they didn't already exist, and updated only if there is a change.
