@@ -3,7 +3,7 @@ uid: learn.wwl.discuss-core-azure-architectural-components
 metadata:
   title: Discuss core Azure architectural components
   description: "Azure provides a global network of secure datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what service guarantees Microsoft provides. AZ-900"
-  ms.date: 06/19/2020
+  ms.date: 06/20/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -18,6 +18,7 @@ abstract: |
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - beginner
 roles:
