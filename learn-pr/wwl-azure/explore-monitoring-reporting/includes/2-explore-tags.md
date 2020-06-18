@@ -21,5 +21,4 @@ There are some limitations with using **tags**, such as:
 
 + Tags applied to the resource group are not inherited by the resources in that resource group.
 
-> [!div class="checklist"]
-> * You can use Azure Policy to enforce tagging values and rules on resources.
+You can use Azure Policy to enforce tagging values and rules on resources.
