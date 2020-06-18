@@ -383,7 +383,7 @@ Now that you've created a PowerShell script that contains the configuration step
 
     1. Select your Cloud Shell account, then select **Storage Explorer (preview)**.
 
-    1. Expand **FILE SHARES**, and then select your cloud shell entry.
+    1. Expand **FILE SHARES**, and then select your Cloud Shell entry.
 
     1. Right-click **setup.ps1**, then select **Get Shared Access Signature...**.
 

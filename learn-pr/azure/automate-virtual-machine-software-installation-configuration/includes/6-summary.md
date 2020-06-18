@@ -1,12 +1,12 @@
 In the past, your company's operations team was faced with the tasks of creating virtual machines for your public-facing web servers, and then manually installing and configuring the software that is necessary to create your company's web server infrastructure. In order to reduce the time that it takes to bring new virtual machines online and to reduce setup costs, your team wanted you to research how Azure could help you to improve your methodology for the installation and configuration of web server software.
 
-In this module, you've seen some of the tools that are available on Azure to automate the creation of Linux and Windows virtual machines, with all of the the required infrastructure that's necessary to host dynamic content on your web servers. Azure has helped you to simply your team's processes, and your team is more productive and efficient. Your team can deliver a great experience to your customers by guaranteeing their servers are and and running running and configured correctly.
+In this module, you've seen some of the tools that are available on Azure to automate the creation of Linux and Windows virtual machines, with all of the required infrastructure that's necessary to host dynamic content on your web servers. Azure has helped you to simply your team's processes, and your team is more productive and efficient. Your team can deliver a great experience to your customers by guaranteeing their servers are UP and running, and configured correctly.
 
 ## Clean up resources
 
 [!include[](../../../includes/azure-subscription-cleanup.md)]
 
-To delete the resource group and all the resources that you created in this module, run the following command in the cloud shell.
+To delete the resource group and all the resources that you created in this module, run the following command in the Cloud shell.
 
 ```azurecli
 az group delete --name my-resource-group-name

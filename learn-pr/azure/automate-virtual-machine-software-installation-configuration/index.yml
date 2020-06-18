@@ -14,10 +14,10 @@ abstract: |
   In this module, you'll learn how to:
   - Automate the creation of a Windows or Linux virtual machine
   - Automate the installation and configuration of web server software on your virtual machine
-  - Connect to a your virtual machine using a web browser to verify your installation
+  - Connect to your virtual machine using a web browser to verify your installation
 prerequisites: | 
   - Basic understanding of Azure Virtual Machines
-  - Experience using command line tools to automate tasks
+  - Experience using command-line tools to automate tasks
 iconUrl: /learn/achievements/build-azure-vm-templates.svg
 levels:
 - beginner

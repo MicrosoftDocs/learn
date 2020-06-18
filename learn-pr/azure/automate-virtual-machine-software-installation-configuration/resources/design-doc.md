@@ -33,7 +33,7 @@ NOTE: This module should use pivots to allow learners to choose whether to creat
 
   - Automate the creation of a Windows or Linux virtual machine
   - Automate the installation and configuration of web server software on your virtual machine
-  - Connect to a your virtual machine using a web browser to verify your installation
+  - Connect to your virtual machine using a web browser to verify your installation
 
 ## Chunk your content into subtasks
 
@@ -51,7 +51,7 @@ Identify the subtasks of *Automate the installation and configuration of softwar
 
 1. **Introduction**
 
-    You work in the Operations team of an Internet Service Provider. You are responsible for managing the Windows and Linux virtual machines. Your current process for provisioning virtual machines is to create them. Once created you remotely install the missing software, and configure it manually. You'd like to be more productive and automate how your company builds web servers so that can run dynamic PHP websites as soon as they have been provisioned.
+    You work in the Operations team of an Internet Service Provider. You are responsible for managing the Windows and Linux virtual machines. Your current process for provisioning virtual machines is to create them. Once created you remotely install the missing software, and configure it manually. You'd like to be more productive and automate how your company builds web servers, so they can run dynamic PHP websites as soon as they have been provisioned.
 
 1. **Automate the installation of a virtual machine**
 
@@ -67,7 +67,7 @@ Identify the subtasks of *Automate the installation and configuration of softwar
         - Show the different Windows distros that can be used
         - Discuss the Azure Hybrid Benefit license
 
-    - Explain that all the above the created of the whole machine and components with Azure templates and redeployed using a single command `az group deployment create`
+    - Explain that all the above steps created the whole machine and components with Azure templates and redeployed using a single command `az group deployment create`
 
 1. **Exercise - Automate the installation of a virtual machine**
 
@@ -222,7 +222,7 @@ az vm create \
     --admin-password $SECUREPASSWORD \
     --resource-group vmsVM
 
-... will setup the rest with a PowerShell setup.ps1 script run with CustomscriptExtension
+... will set up the rest with a PowerShell setup.ps1 script run with CustomscriptExtension
 
 az vm extension set \
    --name CustomscriptExtension \

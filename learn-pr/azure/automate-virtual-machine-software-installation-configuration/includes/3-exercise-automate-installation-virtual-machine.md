@@ -1,4 +1,4 @@
-In the previous unit, you learned how you can use the Azure CLI to create all of the necessary compoments to create a virtual machine running in Azure. Your company uses a mixture of Linux and Windows virtual machines, and by using the Azure CLI commands, you can build your virtuam machine infrastructure in Azure in an automated and easily repeatable way.
+In the previous unit, you learned how you can use the Azure CLI to create all of the necessary components to create a virtual machine running in Azure. Your company uses a mixture of Linux and Windows virtual machines, and by using the Azure CLI commands, you can build your virtual machine infrastructure in Azure in an automated and easily repeatable way.
 
 After you have created your virtual machines, you'll need to log into those machines in order to check what's installed on the virtual machine image by default. On your Linux machines, you'll use SSH to connect to the machine. On your Windows machines, you'll use a Remote Desktop connection to connect to the machine.
 
@@ -39,7 +39,7 @@ In this section of the exercise, you'll use the Azure CLI in the sandbox Cloud S
         --resource-group my-resource-group-name
     ```
 
-    In the exercises for this module, you'll use the your public IP address to connection to your virtual machine. However, for normal operations you might want to add the optional `--dns-name` parameter to specify the unique DNS name for your virtual machine.
+    In the exercises for this module, you'll use your public IP address to connection to your virtual machine. However, for normal operations you might want to add the optional `--dns-name` parameter to specify the unique DNS name for your virtual machine.
 
 1. Enter the following command to create a Network Security Group (NSG).
 

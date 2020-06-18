@@ -8,7 +8,7 @@ Azure provides several options for Linux and Windows virtual machines to help yo
 
 Your operations team manages dynamic websites on both Windows and Linux virtual machines, and your team doesn't consider that a virtual machine is deployed and ready to use until they can view a PHP page that uses the `phpinfo()` function to demonstrate that a web server and PHP have been installed and configured correctly.
 
-In this unit, you'll learn about the steps you'll to automate the installation of a web server that runs PHP on a virtual machine.
+In this unit, you'll learn about the steps to automate the installation of a web server that runs PHP on a virtual machine.
 
 ::: zone pivot="linux-cloud"
 
@@ -28,7 +28,7 @@ Cloud-init uses a simple configuration file in YAML format. To customize the ins
 
 ### Use cloud-init to install and configure Nginx
 
-On Linux, you use the Advanced Package Tool (`apt`) management system on the command line to manage and install additional software. To customize your Linux virtual machine creation, you add the names of the packages that you would add with the `apt` command to your cloud-init configuration file, and cloud-init will take care of the rest. There's also a useful configuration setting that updates the packages that are installed on your virtual machine, and retrieves the latest list of available packages.
+On Linux, you use the Advanced Package Tool (`apt`) management system on the command-line to manage and install additional software. To customize your Linux virtual machine creation, you add the names of the packages that you would add with the `apt` command to your cloud-init configuration file, and cloud-init will take care of the rest. There's also a useful configuration setting that updates the packages that are installed on your virtual machine, and retrieves the latest list of available packages.
 
 For example, following excerpt from a cloud-init configuration file updates the software packages that have already been installed, and installs the Nginx package for the Linux distribution that you're using:
 
@@ -129,7 +129,7 @@ Thus far you have created a cloud-init file that has the necessary settings for 
         </html>
 ```
 
-As a final step, you should restart Nginx and the FastCGI Process Manager to ensure that the configuration is loaded correctly by Nginx, and that the PHP service is ready to process requests. For example: the following configuration excerpt instructs cloud-init to restart the reqsuite services.
+As a final step, you should restart Nginx and the FastCGI Process Manager to ensure that the configuration is loaded correctly by Nginx, and that the PHP service is ready to process requests. For example: the following configuration excerpt instructs cloud-init to restart the requisite services.
 
 ```yaml
 runcmd:
@@ -145,7 +145,7 @@ In the next exercise, you'll use the knowledge from this unit to install Nginx a
 
 ## Using PowerShell to install IIS on a Windows virtual machine
 
-Azure makes it easy for you to automate the configuration of your Windows virtual machine by calling a Azure CLI command that runs a custom PowerShell script. This Azure CLI functionality enables you to take advantage of PowerShell's features to install and configure the software you need.
+Azure makes it easy for you to automate the configuration of your Windows virtual machine by calling an Azure CLI command that runs a custom PowerShell script. This Azure CLI functionality enables you to take advantage of PowerShell's features to install and configure the software you need.
 
 The relevant PowerShell commands that you can use when setting up your virtual machine are:
 
@@ -180,7 +180,7 @@ Add-WebConfiguration -Filter /system.webServer/defaultDocument/files -AtIndex 0 
 
 ### Using PowerShell to install and configure PHP
 
-There are several options for installing and configuring PHP with IIS. For example, you *could* log into your virtual machine after it has been created and run the installation process manually, but that would not fullfill your team's desire to automate the installation and configuration of your virtual machines.
+There are several options for installing and configuring PHP with IIS. For example, you *could* log into your virtual machine after it has been created and run the installation process manually, but that would not fulfill your team's desire to automate the installation and configuration of your virtual machines.
 
 One of the easiest ways to install extra features on IIS is to use the Web Platform Installer (WPI), which you can use to install PHP. The WPI will install PHP, as well as any necessary dependencies. While the WPI can be run interactively, you can also automate the WPI with PowerShell.
 

@@ -10,7 +10,7 @@ To build a virtual machine that's publicly accessible via an external IP address
 
 ### Creating a virtual network
 
-Your first step is to create a virtual network; you you must create your virtual network before you create your virtual machine. The following example shows the basic syntax for creating a virtual network using the Azure CLI:
+Your first step is to create a virtual network; you must create your virtual network before you create your virtual machine. The following example shows the basic syntax for creating a virtual network using the Azure CLI:
 
 ```azurecli
 az network vnet create \
@@ -105,7 +105,7 @@ A few of the additional options that you might want to consider when creating yo
 
 ### Creating a Network Security Group and rules
 
-You can filter the traffic on your network by adding a Network Security Group (NSG), and Azure automatically creates a number of default rules for you when you create the NSG. After you have created your NSG, you can add more dules to allow or deny other kinds of traffic, like HTTP or SSH.
+You can filter the traffic on your network by adding a Network Security Group (NSG), and Azure automatically creates a number of default rules for you when you create the NSG. After you have created your NSG, you can add more rules to allow or deny other kinds of traffic, like HTTP or SSH.
 
 ```azurecli
 az network nsg create \
@@ -165,7 +165,7 @@ When you use the Azure CLI to create a rule like the preceding Azure CLI example
 }
 ```
 
-In this example, the priority value is used to tell Azure the order in which rules are applied. By default, this rule will apply to all protocols, but you can specify the protocol; e.g. `Tcp`, `Udp`, `Esp`, or use `*` to have the rule applied to all kinds of traffic.
+In this example, the priority value is used to tell Azure the order in which rules are applied. By default, this rule will apply to all protocols, but you can specify the protocol; for example `Tcp`, `Udp`, `Esp`, or use `*` to have the rule applied to all kinds of traffic.
 
 #### Example: creating an NSG rule for HTTP access
 
@@ -199,7 +199,7 @@ When you use the Azure CLI to create a rule like the preceding example, Azure wi
 }
 ```
 
-As you saw with the preceding SSH example, the priority value is used to tell Azure the order in which rules are applied. By default, this rule will apply to all protocols, but you can specify the protocol; e.g. `Tcp`, `Udp`, `Esp`, or use `*` to have the rule applied to all kinds of traffic.
+As you saw with the preceding SSH example, the priority value is used to tell Azure the order in which rules are applied. By default, this rule will apply to all protocols, but you can specify the protocol; for example `Tcp`, `Udp`, `Esp`, or use `*` to have the rule applied to all kinds of traffic.
 
 ### Creating a network interface
 
@@ -335,7 +335,7 @@ Azure will return a JSON response that resembles the following excerpt:
 ]
 ```
 
-The various fields in the JSON response will describe the manufacturer and version for the available virtual machine operating systems; for example: the Linux variants that are listed are in the above exerpt are:
+The various fields in the JSON response will describe the manufacturer and version for the available virtual machine operating systems; for example: the Linux variants that are listed are in the above excerpt are:
 
 | Description | URN Alias |
 | --- | --- |
@@ -468,7 +468,7 @@ Azure will return a JSON response that resembles the following example:
 ]
 ```
 
-The various fields in the JSON response will describe the version information for each of the available virtual machine operating systems; for example: the Windows variants that are listed are in the above exerpt are:
+The various fields in the JSON response will describe the version information for each of the available virtual machine operating systems; for example: the Windows variants that are listed are in the above excerpt are:
 
 | Description | URN Alias |
 | --- | --- |
