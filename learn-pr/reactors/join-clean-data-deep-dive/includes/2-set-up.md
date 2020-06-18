@@ -25,7 +25,7 @@ When you do so, a drop-down menu will appear next to `pd`.
 
 ### Try it yourself
 
-Place your cursor after the period and select the Tab key:
+Alternatively, if you have a function you know you want to use but don't know how, you can add a question mark `?` to the end of a function and run the cell to get the documentation for a particular function:
 
 ```python
 pd.compat?
