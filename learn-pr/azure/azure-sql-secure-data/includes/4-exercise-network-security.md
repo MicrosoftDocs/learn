@@ -2,7 +2,7 @@ In this exercise, you'll see how to review and manage your firewall rules using 
 
 ### Description
 
-During deployment of Azure SQL Database, you selected **Allow Azure services and resources access to this server** to **Yes**. By leaving this **Yes**, you're allowing any resource from any region or subscription the possibility to access your resource. If you can, switching it to **No** is the most secure configuration of the public endpoint, because it will block all connections/networks apart from ones you've added. In this exercise, you'll see how to view and edit your firewall rules. Setting this up can be complicated, since it means you'll have to specify a range of IP addresses for all your connections (which can sometimes have dynamic IP addresses). Some alternative methods for securing your network are provided in a demonstration video that follows the exercise.  
+During deployment of Azure SQL Database, the script run selected **Allow Azure services and resources access to this server** to **Yes**. By leaving this **Yes**, you're allowing any resource from any region or subscription the possibility to access your resource. If you can, switching it to **No** is the most secure configuration of the public endpoint, because it will block all connections/networks apart from ones you've added. In this exercise, you'll see how to view and edit your firewall rules. Setting this up can be complicated, since it means you'll have to specify a range of IP addresses for all your connections (which can sometimes have dynamic IP addresses). Some alternative methods for securing your network are provided in a demonstration video that follows the exercise.  
 
 #### Part 1: Managing firewall rules in the Azure portal
 

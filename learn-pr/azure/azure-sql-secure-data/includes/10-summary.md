@@ -12,6 +12,13 @@ In this module and throughout the activities, you got to get hands-on with many 
 * [Configure security for Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-aad-security-tutorial)
 * [Configure security for Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial)
 
+
+#### Network security
+
+You can learn more about Private Link [in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-private-endpoint-overview).
+
+Microsoft is actively investing heavily in Private Link for SQL and other services, to learn more refer to the [documentation](https://docs.microsoft.com/azure/private-link/index).
+
 #### Authentication
 
 To learn more about authentication, here are a few resources from the documentation:  
