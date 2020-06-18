@@ -12,3 +12,29 @@ title: Enable network access to an application
 durationInMinutes: 10
 content: |
   [!include[](includes/6-expose-app.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What are the four types of services?"
+      choices:
+        - content: "ClusterPort, NodeIP, LoadController, and ExternalBalancer"
+          isCorrect: false
+          explanation: "These types do not exist within Kubernetes"
+        - content: "InternalIP, ExternalIP, ExternalName, and LoadBalancer"
+          isCorrect: false
+          explanation: "Some of these types do not exist in Kubernetes"
+        - content: "ClusterIP, NodePort, LoadBalancer, and ExternalName"
+          isCorrect: true
+          explanation: "Those are the four types of services in Kubernetes"
+
+    - content: "What is an Ingress?"
+      choices:
+        - content: "A workload to create DNS zone records in Azure via API access to the cloud"
+          isCorrect: false
+          explanation: "Despite triggering the event that causes the creation of new DNS Zones, an Ingress is not meant for that"
+        - content: "A workload to define the set of rules that allow external applications into the cluster"
+          isCorrect: true
+          explanation: "That's it!"
+        - content: "Groups pods into one single IP address so they don't lose their IPs when destroyed"
+          isCorrect: false
+          explanation: "That's what a service does!"
