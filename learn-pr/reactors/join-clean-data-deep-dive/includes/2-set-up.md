@@ -20,7 +20,6 @@ pd.
 ```
 
 > [!div class="alert is-tip"]
-> **SARAH TBD** - In Visual Studio Code, the completion feature doesn't require <TAB>, and using <TAB> inserts an actual tab into the code.
 
 When you do so, a drop-down menu will appear next to `pd`.
 
