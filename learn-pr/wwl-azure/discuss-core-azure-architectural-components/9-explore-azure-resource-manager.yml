@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.discuss-core-azure-architectural-components.explore-azure-resource-manager
-title: Explore Azure Resource Manager
+title: Explore Azure resource manager
 metadata:
-  title: Explore Azure Resource Manager
-  description: "Explore Azure Resource Manager"
-  ms.date: 06/19/2020
+  title: Explore Azure resource manager
+  description: "Explore Azure resource manager"
+  ms.date: 06/20/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

@@ -10,7 +10,7 @@ You can manage and apply the following resources at resource group level:
 
 Remember that when you delete a resource group you delete all resources contained within it.
 
-![Conceptual image of a box containing a database, disk, virtual machine, network, and application, representing Azure resources inside a resource group.](../media/resourcegroup2.png)
+![Conceptual image of a box containing a database, disk, virtual machine, network, and application, representing Azure resources inside a resource group.](../media/resource-group-2.png)
 
 ## Considerations
 
