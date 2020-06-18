@@ -1,56 +1,16 @@
-In this exercise, you'll learn how to configure an Azure AD administrator on a server level for Azure SQL Database. Next, you'll change your connection in SSMS from SQL authentication to Azure AD authentication, and you'll see how to grant other Azure AD users access to the database like normal users in SQL Server. 
+In this exercise, you'll see how to create logins, users, and admins, as well as how to grant Azure AD users access to the database like normal users in SQL Server.
 
-1. Create an Azure AD admin  
+1. Connect to your Azure SQL Database server
 
-    In the Azure portal, navigate to your Azure SQL Database logical server. In the left-hand task menu, select **Active Directory Admin** and **Set Admin**.  
+    Open SSMS and connect to your Azure SQL Database server, if you are not already.
 
-    ![Set the AD admin](../media/aadadmin.png)  
+1. Grant other users access (SQL)  
 
-    Search for you account. The easiest way is to enter in your full account that's associated with your subscription (e.g. `anna@....com`). Click your user and then choose **Select**.  
-
-    ![Select the user to be the admin](../media/aadselect.png)  
-
-    You might think that's it, but you still have to select **Save** to confirm your actions.  
-
-    ![Select save](../media/aadsave.png)  
-
-2. Authenticate using Azure AD  
-
-    Now that you've configured access for yourself to your Azure SQL Database logical server, let's update the connection in SSMS and ADS.  
-
-    First, in SSMS, right-click on your Azure SQL Database logical server and select **Connect**.  
-
-    ![Connect to the database in SSMS](../media/dbconnect.png)  
-
-    Notice that under *Authentication*, there are several different Azure Active Directory authentication methods, which will depend on how your organization is set up. There are three methods available. An overview of each is provided below, but the links in the titles will point you to additional details.  
-
-    * *Azure Active Directory - Integrated*: A non-interactive method, which you can use if you are logged in to Windows using your Azure AD credentials from a federated domain.  
-    * *Azure Active Directory - Password*: A non-interactive method that allows you to connect with an Azure AD principal name using the Azure AD managed domain. From the documentation: *This can apply to native or federated Azure AD users. A native user is one explicitly created in Azure AD and being authenticated using user name and password, while a federated user is a Windows user whose domain is federated with Azure AD. The latter method (using user & password) can be used when a user wants to use their windows credential, but their local machine is not joined with the domain (for example, using a remote access). In this case, a Windows user can indicate their domain account and password and can authenticate to SQL DB/DW using federated credentials.*  
-    * *Azure Active Directory - Universal with MFA*: An interactive method that will safeguard access to data while meeting demand for a single sign-in process with Multi-factor Authentication (MFA).
-
-    For this exercise, select **Azure Active Directory - Password**.  
-
-    ![Connect using Azure Active Directory - Password](../media/connecttoserver.png)  
-
-    Next, you'll need to select your AdventureWorks database, which you can do by selecting **Options** > **Connect Properties** > **Connect to database** > **Browse server**.  
-
-    Finally, select **Connect**.  
-
-    > Note: If you get the following error, this indicates your organization requires you to select **Azure Active Directory - Universal with MFA**. Connect accordingly.  
-    >
-    > ![Cannot connect with password alternative](../media/cannotconnect.png)
-
-    Next to the server name, you should now be able to see that you are authenticated using your Azure AD account and not the `cloudadmin` SQL user as before.  
-
-    ![Confirm connection in SSMS](../media/aadc.png)  
-
-3. Grant other users access (SQL)  
-
-    Now that you're authenticated using Azure AD, your next step might be to add other users. Just as in SQL Server, you can add new logins and users.
+    Once you've configured your databases and gotten connected, your next step might be to add other users. Just as in SQL Server, you can add new logins and users.
 
     For most queries in Azure SQL Database, you must right-click on the **database** within your Azure SQL Database logical server. In SQL Server and Azure SQL managed instance, you can query at the server level and use `USE DatabaseName`, but in Azure SQL Database, you must query the database directly, the `USE` statement is not supported. There are a few exceptions to querying Azure SQL Database, and one is logins. You must connect to the **master** database to create and alter logins.  
 
-    In SSMS, using your Azure AD connection, right-click on your database **server** and create a new query. Run the following.
+    In SSMS, right-click on your database **server** and create a new query. Run the following.
 
     ```sql
     -- Create a new SQL login and give them a password
@@ -72,13 +32,13 @@ In this exercise, you'll learn how to configure an Azure AD administrator on a s
 
     The best practice is to create non-admin accounts at the database level, unless they need to be able to execute administrator tasks.  
 
-4. Contained database users  
+1. Contained database users  
 
     In SQL Server, you may be familiar with the concept of a contained database user. This means that a user has access to only specific database(s), but does not have a login to the server. In Azure SQL Database, you can create contained database users with SQL authentication or Azure AD authentication. You must be in the context of the user database you want to create user access in (as opposed to being in master). In Azure SQL Managed Instance, the T-SQL and behavior are the same as in SQL Server, and you can use the `USE DatabaseName` to switch contexts (which is not supported in Azure SQL Database).  
 
     In this step, you'll create a contained database user using SQL authentication, and then attempt to authenticate to that database as the user.  
 
-    In SSMS, using your Azure AD connection, right-click on your **database** and create a new query. Run the following.
+    In SSMS, right-click on your **database** and create a new query. Run the following.
 
     ```sql
     CREATE USER BobLovesTN WITH PASSWORD = 'Tanehill1!'
@@ -86,7 +46,7 @@ In this exercise, you'll learn how to configure an Azure AD administrator on a s
 
     Now, select **Connect** > **Database Engine** and configure the main page so you are connecting to your Azure SQL Database logical server with Login `BobLovesTN` and Password `Tanehill1!`.  
 
-    **You must also set the database name**. You can do this by going to **Options** > **Connection Properties** and selecting **Reset All**. Then, in **Additional Connection Parameters**, enter `Initial Catalog=AdventureWorks`. You have to do this manually, because BobLovesTN doesn't have access to scan the server to select a database.  
+    **You must also set the database name**. You can do this by going to **Options** > **Connection Properties** and selecting **Reset All**. Then, one way to set it is in **Additional Connection Parameters**, where you can enter `Initial Catalog=AdventureWorks`. You have to do this manually, because BobLovesTN doesn't have access to scan the server to select a database.  
 
     Select **Connect** and confirm you're able to access the database.  
 

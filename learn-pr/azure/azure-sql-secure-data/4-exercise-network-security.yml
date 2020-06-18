@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-sql-secure-data.5-exercise-network-security
+uid: learn.azure-sql-secure-data.4-exercise-network-security
 metadata:
   title: Exercise - Network security
   description: Exercise - Network security
@@ -13,4 +13,4 @@ durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/5-exercise-network-security.md)]
+  [!include[](includes/4-exercise-network-security.md)]

@@ -19,6 +19,8 @@ You can learn more about Private Link [in the documentation](https://docs.micros
 
 Microsoft is actively investing heavily in Private Link for SQL and other services, to learn more refer to the [documentation](https://docs.microsoft.com/azure/private-link/index).
 
+Create a subnet for Azure SQL Managed Instance with details [here](https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/virtual-network-subnet-create-arm-template).  
+
 #### Authentication
 
 To learn more about authentication, here are a few resources from the documentation:  

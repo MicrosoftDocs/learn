@@ -136,13 +136,52 @@ Additionally, the service will block you from directly connecting using anything
 
 ### Azure SQL Managed Instance
 
-TODO
+While Azure SQL Managed Instance's deployment is quite different from Azure SQL Database, understanding the networking functionality at a high level is easy to translate from Azure SQL Database to Azure SQL Managed Instance. In Azure SQL Managed Instance, either before or during deployment, you must create a specific subnet (logical grouping within a VNet) with several requirements to host the Azure SQL Managed Instance(s). Once deployed, it is already configured like a private endpoint in Azure SQL Database. Using standard networking practices, you must enable access to the VNet that the managed instance lives. By default, you have a private endpoint and relatively private DNS hierarchy.  
 
 ![SQL Managed Instance Network](../media/sqlminetwork.png)
 
+There are references in the summary on how exactly your subnet must be deployed.
+
 ## Identity and access
 
-TODO
+Once you've worked out the networking access, the next layer to consider is identity and access.
+
+### Azure Role-Based Access Control (RBAC)
+
+All Azure type of operations for Azure SQL are controlled through RBAC. This is currently decoupled from SQL Security today, but you can think of it as security rights outside of the SQL Database or SQL Managed Instance with a scope including subscription, resource group, and resource. This will apply to operations in the Azure portal, Azure CLI, and Azure PowerShell. Azure RBAC allows for separation of duties between deployment, management and usage.
+
+There are built-in roles available to reduce need for higher level Azure RBAC roles like Owner or Contributor. Effectively, you can use these roles to have certain individuals deploy Azure SQL resources (or manage security polices) but grant other users actual access to user or manage the instance or database.  For example, a SQL Server contributor could deploy a server but assign an Azure SQL Database user to be the admin of the server and databases. The built-in roles include:  
+
+* SQL DB Contributor: Can create and manage databases but not access the database (for example, cannot connect and read data)
+* SQL Managed Instance Contributor: Can create and manage managed instances but not access them
+* SQL Security Manager:  Can manage security policies for databases and instances (like auditing) but not access them
+* SQL Server Contributor: Can manage servers and databases but not access them.
+
+### Authentication
+
+For both Azure SQL Database and Azure SQL Managed Instance, SQL authentication is used for deployment, and this is referred to as the **server admin**. In Azure SQL Database, the server admin is a server-level principal for the Azure SQL Database logical server, but for Azure SQL Managed Instance it is a member of the sysadmin server role. In addition, "Mixed Mode" authentication is force for both deployment options.
+
+If you are migrating a workload that needs Windows Authentication or your organization leverages Azure Active Directory (Azure AD), you can use Azure AD. For both Azure SQL Managed Instance and Azure SQL Database, you can assign an Azure AD server admin using the portal or command-line tools.
+
+![Set the AD admin](../media/aadadmin.png)  
+
+Depending on how your organization has configured Azure AD, there are three methods of connecting (for example, in SSMS) with Azure AD: 
+
+* *Azure Active Directory - Integrated*: A non-interactive method, which you can use if you are logged in to Windows using your Azure AD credentials from a federated domain.  
+* *Azure Active Directory - Password*: A non-interactive method that allows you to connect with an Azure AD principal name using the Azure AD managed domain. From the documentation: *This can apply to native or federated Azure AD users. A native user is one explicitly created in Azure AD and being authenticated using user name and password, while a federated user is a Windows user whose domain is federated with Azure AD. The latter method (using user & password) can be used when a user wants to use their windows credential, but their local machine is not joined with the domain (for example, using a remote access). In this case, a Windows user can indicate their domain account and password and can authenticate to SQL DB/DW using federated credentials.*  
+* *Azure Active Directory - Universal with MFA*: An interactive method that will safeguard access to data while meeting demand for a single sign-in process with Multi-factor Authentication (MFA).
+
+For Azure SQL Managed Instance, it is very similar to SQL Server in that you can have SQL or Azure AD logins, database users, and contained database users. In Azure SQL Database, their are a few nuances. You can have SQL logins, database users, and even contained database users for Azure AD (recommended). While the server admin for Azure SQL Database essentially has sysadmin rights, you can create more limited admins using database level roles in the master of the Azure SQL Database logical server. There are two roles available:
+
+* **loginmanager** is a database-level role that allows members to create logins for the database server
+* **dbmanager** is a database-level role that allows members to create and delete databases for the database server.
+
+At the end of the day, when you set up and configure authentication and authorization, there are four guidelines you can follow:  
+
+1. Deploy with a server admin
+1. Create other admins as necessary
+1. Admins can create users
+1. Grant access just like you would in SQL Server
 
 ## Other capabilities
 
