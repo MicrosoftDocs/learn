@@ -1,4 +1,4 @@
-<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
+<!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. --->
 
 Principal component analysis (PCA) is an algorithm that helps us get a dataset into working condition by removing dimensions that must be calculated in an analysis of the dataset. 
 
