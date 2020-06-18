@@ -47,13 +47,15 @@ This will create the file `.vscode/launch.json` in your project. You can then ed
 
 :::image source="../media/vscode-launch-configuration.png" alt-text="VS Code debugger execution controls":::
 
-You can edit the path and name of your application entry point if needed. You can also click on **Add Configuration** to create different launch configurations for your project.
+You can edit the path and name of your application entry point if needed. You can also click on **Add Configuration** if you want to create different launch configurations for your project.
 
-Once you have finished preparing your configurations, you can select one using the dropdown at the top then click on the run button to start debugging.
+Once you have finished preparing your configurations, you can select one using the dropdown at the top of the side bar then click on the run button to start debugging.
 
-note always edit and use debug terminal
+:::image source="../media/vscode-debug-sidebar-controls.png" alt-text="VS Code debug side bar controls":::
 
-## Analyze your program with Visual Studio Code
+Note that you can also have buttons to edit the launch configurations and start the Node.js debug terminal if needed.
+
+## Analyze your program state
 
 ### View your variables state
 
