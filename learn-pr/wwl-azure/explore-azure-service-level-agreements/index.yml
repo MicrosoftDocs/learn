@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-service-level-agreements
 metadata:
-  title: Explore Azure Service Level Agreements (SLAs)
+  title: Explore Azure service level agreements (SLAs)
   description: "You are placing an application into a cloud-providers hardware versus on-premises. How reliable will your solution be? AZ-900"
   ms.date: 06/20/2020
   author: wwlpublish
@@ -19,6 +19,7 @@ abstract: |
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - beginner
 roles:
