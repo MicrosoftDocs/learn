@@ -32,28 +32,18 @@ In this unit, you'll download and test the application locally, and then create 
     >
     > If this occurs, click **Install** to install the required items, and follow the instructions.
 
-7. On the **Tools** menu, select **NuGet Package Manager**, and then select **Package Manager Console**.
+> [!IMPORTANT]
+> This project currently uses v2.0.1 of the **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Perform the following steps:
+> 
+> 1. Close Visual Studio, and start it again. 
+> 2. Open the **eShopLegacyWebFormsSolution** solution, and on the **Build** menu, select **Rebuild Solution**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Image of Tools menu. The user has selected the **Package Manager Console** command](..\media\2-select-package-manager.png)
-
-8. In the **Package Manager Console** window, run the following command to install the dependencies required by the solution:
-
-    ```PowerShell
-    Update-Package -reinstall
-    ```
-
-    When the prompt **File 'App_Start\RouteConfig.cs' already exists in project 'eShopLegacyWebForms'. Do you want to overwrite it?** appears, type **N**.
-
-    > [!NOTE]
-    > If you type **Y** at this prompt, you'll change the routing used by the application, and it will no longer work correctly.
-
-9. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
+7. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Solution Explorer window. The user has selected the **Web.config** file](..\media\2-open-web-config.png).
 
-10. In the **Web.config** file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting will cause the application to use data stored in a local SQL Server database:
+8. In the **Web.config** file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting will cause the application to use data stored in a local SQL Server database:
 
     ```xml
     ...
@@ -64,14 +54,14 @@ In this unit, you'll download and test the application locally, and then create 
     ...
     ```
 
-11. Press **F5** to build and run the application. The application will open a web browser and display the **Catalog Manager** page for the web application.
+9. Press **F5** to build and run the application. The application will open a web browser and display the **Catalog Manager** page for the web application.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **Catalog Manager** page for the sample application in a web browser window](..\media\2-catalog-manager.png)
 
     The Catalog Manager enables you to view the products sold by the organization, add new products, modify the details of existing products, and delete products.
 
-12. Experiment with the application; try adding, editing, and removing products. Close the web browser when you've finished. This action will stop the application and return you to Visual Studio.
+10. Experiment with the application; try adding, editing, and removing products. Close the web browser when you've finished. This action will stop the application and return you to Visual Studio.
 
 ## Create Azure resources for running the application as an Azure web app
 
