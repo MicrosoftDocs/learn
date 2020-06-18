@@ -1,18 +1,12 @@
-# Set-up: Use scripts to deploy Azure SQL Database
+### Set up: Use scripts to deploy Azure SQL Database
 
-In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you should copy and paste the following script into the terminal. There will be some prompts, for a password and your local IP address. Make sure to note your password and unique ID as it will not be shown again.  
+In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script, there will be some prompts, for a password and your local IP address.  
 
-First, run this command to switch from bash to PowerShell.  
+In order to get the IP address required, you must disconnect from any VPN service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` in a local PowerShell window (not in this browser).  
 
-```bash
-pwsh
-```
+This script should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
 
-Then, copy and paste the following script, responding to prompts for password and local IP address appropriately. In order to get the IP address required, you must turn disconnect from any VPN service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` on your local PowerShell (not in this browser).  
-
-This module will not cover what is being deployed (you should review TODO DEPLOY MODULE REFERENCE for more information). This script should take 3-5 minutes to complete.  
-
-**Don't forget to note your password and unique ID. You will need these throughout the module.**  
+**Don't forget to note your password, unique ID, and region. You will need these throughout the module.**  
 
 ```powershell
 # Prompt for username and password
@@ -38,12 +32,16 @@ $server = New-AzSqlServer -ResourceGroupName $resourceGroupName `
     -ServerName $serverName `
     -Location $location `
     -SqlAdministratorCredentials $(New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $adminSqlLogin, $(ConvertTo-SecureString -String $password -AsPlainText -Force))
-# Create a server firewall rule that allows access from the specified IP range
+# Create a server firewall rule that allows access from the specified IP range and all Azure services
 $serverFirewallRule = New-AzSqlServerFirewallRule `
     -ResourceGroupName $resourceGroupName `
     -ServerName $serverName `
     -FirewallRuleName "AllowedIPs" `
-    -StartIpAddress $ipAddress -EndIpAddress $ipAddress
+    -StartIpAddress $ipAddress -EndIpAddress $ipAddress 
+$allowAzureIpsRule = New-AzSqlServerFirewallRule `
+    -ResourceGroupName $resourceGroupName `
+    -ServerName $serverName `
+    -AllowAllAzureIPs
 # Create a database 
 $database = New-AzSqlDatabase  -ResourceGroupName $resourceGroupName `
     -ServerName $serverName `
@@ -83,7 +81,7 @@ Check the **Remember password** box and select **Connect**.
 
 ## Auditing overview
 
->Note: This activity may appear slightly out of place. However, we want to enable auditing as soon as possible, so you have more to "audit" in later activities.  
+The following exercise may appear slightly out of place. However, we want to enable auditing as soon as possible, so you have more to "audit" in a later exercise.  
 
 The auditing feature tracks database and server events and writes events to an audit log in either Azure storage, Azure Monitor logs (also called Log Analytics), or to an Event hub. Auditing helps maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate potential security violations. In this activity, you'll set up Auditing at the server level (also available at the database level).  
 
@@ -96,60 +94,60 @@ The main differences between auditing in Azure SQL and auditing in SQL Server ar
   * For a complete list of differences, refer to the [documentation](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transact-sql-information#auditing).  
 * As an alternative to SQL Server Audit, there is *SQL Database Audit*  (available for SQL Managed Instance and SQL Database). Over the course of the module, you'll learn more about its capabilities. For more information, refer to the [SQL Database Audit documentation](https://docs.microsoft.com/azure/sql-database/sql-database-auditing).  
 
-## Configure auditing
+### Configure auditing
 
-### Step 1 - Enable auditing on the Azure SQL Database logical server  
+1. Enable auditing on the Azure SQL Database logical server  
 
-Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) and navigate to your Azure SQL Database. In the left-hand task menu, under Security, select **Auditing**. Review the options and then select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply at the database level (you won't do that today), that would mean the two audits would happen in parallel (one does not override the other). You could alternatively only audit at the database level.  
+    Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) and navigate to your Azure SQL Database. In the left-hand task menu, under Security, select **Auditing**. Review the options and then select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply at the database level (you won't do that today), that would mean the two audits would happen in parallel (one does not override the other). You could alternatively only audit at the database level.  
 
-![Database-level auditing blade](../media/dbaudit.png)  
+    ![Database-level auditing blade](../media/dbaudit.png)  
 
-Next, set **Auditing** to **ON**.  
+    Next, set **Auditing** to **ON**.  
 
-### Step 2 - Configure auditing with Log Analytics  
+2. Configure auditing with Log Analytics  
 
-Notice you have different options for your log destination, depending how you want to audit your data. In this lab, you'll configure Storage and Log Analytics. In a later activity in this module, you'll get to look at the logs in both. You can also explore the implementations by reviewing [the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-auditing).  
+    Notice you have different options for your log destination, depending how you want to audit your data. In this lab, you'll configure Storage and Log Analytics. In a later activity in this module, you'll get to look at the logs in both. You can also explore the implementations by reviewing [the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-auditing).  
 
-Select **Log Analytics (Preview)** and the **Configure** button.  
+    Select **Log Analytics (Preview)** and the **Configure** button.  
 
-![Server-level auditing blade](../media/serveraudit.png)  
+    ![Server-level auditing blade](../media/serveraudit.png)  
 
-Next, select **+ Create New Workspace**.  
+    Next, select **+ Create New Workspace**.  
 
-![Create a new workspace](../media/newws.png)  
+    ![Create a new workspace](../media/newws.png)  
 
-Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace **azuresql`<unique ID>`-la**, using your unique ID for your resources. Select **OK**.  
+    Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace **azuresql`<unique ID>`-la**, using your unique ID for your resources. Select **OK**.  
 
-![Details for new workspace](../media/laws.png)  
+    ![Details for new workspace](../media/laws.png)  
 
-This may take a few moments to validate and create. You should now see your Log Analytics account.  
+    This may take a few moments to validate and create. You should now see your Log Analytics account.  
 
-### Step 3 - Configure auditing with Azure Storage  
+3. Configure auditing with Azure Storage  
 
-Next, select **Storage**. This option allows you to collect XEvent log files in an Azure Blob storage account. In a later activity, you'll see more on how this differs from Log Analytics. Select **Configure**.  
+    Next, select **Storage**. This option allows you to collect XEvent log files in an Azure Blob storage account. In a later activity, you'll see more on how this differs from Log Analytics. Select **Configure**.  
 
-![Configure storage](../media/configstorage.png)  
+    ![Configure storage](../media/configstorage.png)  
 
-Next, select the subscription you're using for this module as well as the storage account in the resource group with your ID that was created for you (should be *sqlva* + *a random string of letters and numbers*). In this storage account, auditing logs will be saved as a collection of blob files within a container named **sqldbauditlogs**.  
+    Next, select the subscription you're using for this module as well as the storage account in the resource group with your ID that was created for you (should be *sqlva* + *a random string of letters and numbers*). In this storage account, auditing logs will be saved as a collection of blob files within a container named **sqldbauditlogs**.  
 
-> Note: depending on your organization, in production you may consider having a separate storage account for the audit logs.
+    Depending on your organization, in production you may consider having a separate storage account for the audit logs.
 
-You also have options for the number of days you want to retain data. The default, **0**, means to retain data forever. You can change this to something else, if you want to cut back on the storage that may be generated and charged here. For this exercise, input **7**.  
+    You also have options for the number of days you want to retain data. The default, **0**, means to retain data forever. You can change this to something else, if you want to cut back on the storage that may be generated and charged here. For this exercise, input **7**.  
 
-Finally, you can make a decision of which storage access key to use. Note you can use this to switch between keys when it's time to rotate them. Select **Primary**.  
+    Finally, you can make a decision of which storage access key to use. Note you can use this to switch between keys when it's time to rotate them. Select **Primary**.  
 
-After you've configured your options, select **OK**.  
+    After you've configured your options, select **OK**.  
 
-![Confirm options and select OK](../media/sasql.png)  
+    ![Confirm options and select OK](../media/sasql.png)  
 
-Select **Save**.  
+    Select **Save**.  
 
-![Save Log Analytics details](../media/savela.png)  
+    ![Save Log Analytics details](../media/savela.png)  
 
-Once it saves, you can select the **X** button to close the server level Auditing pane.  
+    Once it saves, you can select the **X** button to close the server level Auditing pane.  
 
-Navigate back to your Azure SQL Database (not logical server) and under Security, select **Auditing**. In the Azure SQL Database Auditing overview, you may notice that the **Auditing** option says **OFF**. It's important to note that if auditing is enabled on the server, it will always apply to the database.  
+    Navigate back to your Azure SQL Database (not logical server) and under Security, select **Auditing**. In the Azure SQL Database Auditing overview, you may notice that the **Auditing** option says **OFF**. It's important to note that if auditing is enabled on the server, it will always apply to the database.  
 
-![Auditing is OFF](../media/dbauditoff.png)  
+    ![Auditing is OFF](../media/dbauditoff.png)  
 
-This is the end of this activity. You can select **Overview** in the left hand menu to navigate back to the overview of your database. In a later activity in this module, you'll see how to analyze the audit logs to view all of the changes you've made throughout the module, as well as some other interesting use cases.  
+This is the end of this exercise. You can select **Overview** in the left hand menu to navigate back to the overview of your database. In a later exercise in this module, you'll see how to analyze the audit logs to view all of the changes you've made throughout the module, as well as some other interesting use cases.  
