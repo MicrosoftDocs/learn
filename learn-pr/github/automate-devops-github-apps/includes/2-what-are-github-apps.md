@@ -17,9 +17,9 @@ With the universe of applications that use the GitHub API there is a special sub
 
 ### GitHub Apps vs. OAuth Apps
 
-There are a lot of subtle [differences between GitHub Apps and OAuth Apps](https://developer.github.com/apps/differences-between-apps/?azure-portal=true). However, for the purposes of this unit, we will discuss their differences at an app consumer level.
+There are many subtle [differences between GitHub Apps and OAuth Apps](https://developer.github.com/apps/differences-between-apps/?azure-portal=true). However, for the purposes of this unit, we will discuss their  primary difference at an app consumer level.
 
-The primary difference you'll notice is that GitHub Apps are *installed*, whereas OAuth apps are *authorized*. Installing a GitHub App grants it the requested permissions so that it can interact with GitHub and create or modify content like any other user. For example, it can post comments like this one:
+The main difference you'll notice is that GitHub Apps are *installed*, whereas OAuth apps are *authorized*. Installing a GitHub App grants it the requested permissions so that it can interact with GitHub and create or modify content like any other user. For example, it can post comments like this one:
 
 ![GitHub App comment](../media/2-github-app-comment.png)
 

@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "An app that checks the spelling of pull request titles after they are created."
       isCorrect: false
-      explanation: "This is a good candidate for a GitHub app."
+      explanation: "This scenario is a good candidate for a GitHub app."
     - content: "An app that requests a user to update the name of a pushed branch if they don't follow your team's `user/feature` branch naming convention."
       isCorrect: false
-      explanation: "This is a good candidate for a GitHub app."
+      explanation: "This scenario is a good candidate for a GitHub app."
     - content: "An app that allows a user to approve a pull request from a custom tool."
       isCorrect: true
-      explanation: "This would not be a good candidate for a GitHub app because it would need to operate on behalf of a specific user."
+      explanation: "This scenario wouldn't be a good candidate for a GitHub app because it would need to operate on behalf of a specific user."
   - content: "When should you build an OAuth App instead of a GitHub App?"
     choices:
     - content: "When your app needs to be able to access the GitHub API."
