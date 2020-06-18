@@ -56,7 +56,7 @@ The example below adds the builders for using environment variables and user sec
 <configuration>
 ```
 
-In this example, when an application retrieves the value of the **MySecretData** key or the **MyEnvironmentData** key, the Environment configuration builder will be used first to try to resolve the setting. If a variable with a name that matches the key is found, its value will be returned. When no matching environment variable is found, the Secrets configuration builder will be used. If the corresponding secrets.xml file contains a value that matches the key, then this value will be returned. When no match is found by either configuration builder, the value specified in the *\<appSettings\>* section of the configuration file will be read. You can change the search order by switching the sequence in the *configBuilders* attribute.
+In this example, when an application retrieves the value of the **MySecretData** key or the **MyEnvironmentData** key, the configuration entry will be composed of values from the given sources. This is done in the order in which they are stated. In this example, first entries from **Environment** will be added, then those from **Secret**. This means that the last source that has a specified value will be surfaced to the user. You can change the search order by switching the sequence in the **configBuilders** attribute.
 
 > [!NOTE]
 > The syntax of key/value pairs in the *\<appSettings\>* section requires you to specify a value in the configuration file, even if it isn't used. In this case, it's common to provide an empty string, as shown in the example above.
