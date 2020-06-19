@@ -66,7 +66,7 @@ Vit_C_(mg)          -0.160070
 dtype: float64
 ```
 
-Our first cluster is defined by foods that are high in protein and minerals, like selenium and zinc, while also being low in sugars and vitamin C. Even to a nonspecialist, these sound like meat, poultry, or legumes.
+Our first cluster is defined by foods that are high in protein and minerals, like selenium and zinc, while also being low in sugars and vitamin C. Even to a nonspecialist, these foods appear to be meat, poultry, or legumes.
 
 > [!div class="alert is-tip"]
 > ### Takeaway
@@ -165,7 +165,7 @@ Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
 ***
 
-Even without subject matter expertise, it is possible to get a more accurate sense of the kinds of foods are defined by each component? Yes! This is the reason we merged the `FoodGroup` column back into `pca_df`. We will sort that DataFrame by the components and count the values from `FoodGroup` for the top items:
+Even without subject matter expertise, it is possible to get a more accurate sense of the kinds of foods are defined by each component? Yes! For this reason, we merged the `FoodGroup` column back into `pca_df`. We will sort that DataFrame by the components and count the values from `FoodGroup` for the top items:
 
 ```python
 pca_df.sort_values(by='c1')['FoodGroup'][:500].value_counts()
