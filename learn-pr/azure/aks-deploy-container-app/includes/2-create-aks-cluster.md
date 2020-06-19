@@ -17,7 +17,7 @@ Clusters are based on nodes. There are two types of nodes in a Kubernetes cluste
 
 ## Cluster architectures
 
-There are several architectural considerations you have to keep in mind when deploying a Kubernetes cluster. For example, the number of nodes in a cluster should always be more than two. When a worker node becomes unavailable, the Kubernetes schedular will try to reschedule all the workloads that were running on this node onto the remaining nodes in the cluster.
+There are several architectural considerations you have to keep in mind when deploying a Kubernetes cluster. For example, the number of nodes in a cluster should always be more than two. When a node becomes unavailable, the Kubernetes schedular will try to reschedule all the workloads that were running on this node onto the remaining nodes in the cluster.
 
 There are a few main cluster architectures for Kubernetes-based deployments.
 
