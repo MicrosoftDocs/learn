@@ -134,26 +134,9 @@ When deployment completes, select the **Go to Resource** notification button to 
     az aks create --resource-group contoso-aks --name contoso-kubernetes-cluster --node-count 3 --enable-addons http_application_routing --generate-ssh-keys --dns-name-prefix contoso-kubernetes --node-vm-size Standard_B2s
     ```
 
-:::zone-end
-
 ## Linking with Kubectl
 
-1. To access the cluster it's necessary to have `kubectl` installed. Kubectl is the default CLI tool to access Kubernetes' API and issue commands to it. To do it, we need Azure CLI, and it already has built-in commands for it!
-
-
-    ```bash
-    az aks install-cli
-    ```
-
-    Issuing this command, Azure CLI will install `kubectl` in your OS.
-
-2. Run the following command to check if it has been installed successfully:
-
-    ```bash
-    kubectl version
-    ```
-
-3. Link your Kubernetes cluster with `kubectl` with the following command
+1. Link your Kubernetes cluster with `kubectl` with the following command
 
     ```azcli
     az aks get-credentials --name contoso-kubernetes-cluster --resource-group contoso-aks
