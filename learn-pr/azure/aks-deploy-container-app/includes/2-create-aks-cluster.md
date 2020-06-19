@@ -43,20 +43,15 @@ The single control plane and a single worker is a variant of the previous archit
 
 When you create a new AKS cluster, you have several different items of information that you need to configure.  Each item impacts the final configuration of your cluster.
 
+### Node Pools
+
+AKS requires you to create *node pools* to group nodes in your cluster. When you create a node pool, you have to specify the VM size to use for each node in the node pool.  Node pools use VM scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool when needed.  New nodes created in the node pool, will always be the same size as you specified when creating the node pool.
+
 ### Node Count
 
 The node count is the number of nodes your cluster will have in a node pool. Nodes are Azure virtual machines (VMs), and you can change their size and count to match your usage pattern. 
 
 You can change this later in the cluster's configuration panel. It's also a best practice to keep this number as low as possible to avoid unnecessary costs and unused compute power.
-
-[//]: # (Maybe you want to talk about node pools 1st? Your opening sentence can then read: "The node count is the number of worker nodes your cluster will have in a node pool".)
-
-### Node Pools
-
-AKS requires you to create *node pools* to group nodes in your cluster. When you create a node pool, you have to specify the VM size to use for each node in the node pool.  Node pools use VM scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool when needed.  New nodes created in the node pool, will always be the same size as you specified when creating the node pool.
-
-[//]: # (Do we need to talk about node affinity? If so, then we'll need to define it with more detail. For example, you'll need to mention multiple node pools and highlight this in the exercises.)
-
 
 ### Automatic Routing
 
@@ -67,17 +62,3 @@ AKS allows you to enable what is called HTTP Application Routing. This add-on ma
 Ingress Controllers create a reverse-proxy NGINX server that allows for all the requests to be served from a single DNS output automatically. You don't have to create an ingress every time a new service is deployed, the ingress controller will take care of it. As soon as a new ingress is deployed to the cluster, the Ingress Controller will create a new record on an Azure-managed DNS zone and will link it to an existing load balancer. This allows for easy access to the resource through the Internet without the need of additional configuration.
 
 Despite the advantages, HTTP Application Routing is better suited to more basic clusters because it doesn't provide the amount of customization needed for a more complex configuration. If you are planning to deal with more complex clusters, there are better-suited options like the official Kubernetes NGINX Ingress Controller.
-
-### Private clusters
-
-*Private clusters* allow you to keep your Kubernetes API internal only. This means no one outside your cluster will be able to access it.
-
-[//]: # (You may want to expand on this section. Is the concept of "no access" only applicable to the control plane or also workloads? Maybe add an example where a private cluster makes sense to use?)
-
-### Network policies
-
-*Network policies* allow you to customize how your cluster's data flow between all the workloads. By default, all internal communications are allowed. But it's possible to define the cluster to use other resource policies you can customize better. In this module, we'll use the default network policy.
-
-[//]: # (I'm not completely clear what you want to say with this sentence: "But it's possible to define the cluster to use other resource policies you can customize better.")
-
-In the next unit, you'll see how to apply these configuration options to create an AKS cluster for your company.
