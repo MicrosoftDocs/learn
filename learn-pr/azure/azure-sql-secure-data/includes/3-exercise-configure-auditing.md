@@ -2,15 +2,6 @@ The following exercise may appear slightly out of place. However, we want to ena
 
 The auditing feature tracks database and server events and writes events to an audit log in either Azure storage, Azure Monitor logs (also called Log Analytics), or to an Event hub. Auditing helps maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate potential security violations. In this activity, you'll set up Auditing at the server level (also available at the database level).  
 
-The main differences between auditing in Azure SQL and auditing in SQL Server are:  
-
-* Auditing for Azure SQL (using XEvents) supports Azure Blog Storage only for file targets  
-* Traditional [SQL Server Auditing](https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-database-engine?view=sql-server-ver15) using T-SQL is only available (with some differences) in Azure SQL Managed Instance. The primary differences are:  
-  * With `CREATE AUDIT`, you have new syntax `TO URL` and `TO EXTERNAL MONITOR` allow you to specify an Azure Blob storage container and enable Event Hub and Azure Monitor logs target, respectively.  
-  * `TO FILE`, shutdown option, and `queue_delay`=0 are not supported in Azure SQL.  
-  * For a complete list of differences, refer to the [documentation](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transact-sql-information#auditing).  
-* As an alternative to SQL Server Audit, there is *SQL Database Audit*  (available for SQL Managed Instance and SQL Database). Over the course of the module, you'll learn more about its capabilities. For more information, refer to the [SQL Database Audit documentation](https://docs.microsoft.com/azure/sql-database/sql-database-auditing).  
-
 ### Set up: Use scripts to deploy Azure SQL Database
 
 In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script, there will be some prompts, for a password and your local IP address.  
@@ -148,4 +139,4 @@ Check the **Remember password** box and select **Connect**.
 
     ![Auditing is OFF](../media/dbauditoff.png)  
 
-This is the end of this exercise. You can select **Overview** in the left hand menu to navigate back to the overview of your database. In a later exercise in this module, you'll see how to analyze the audit logs to view all of the changes you've made throughout the module, as well as some other interesting use cases.  
+This is the end of this exercise. You can select **Overview** in the left hand menu to navigate back to the overview of your database. In a later exercise in this module, you'll dive deeper into auditing capabilities in Azure SQL and see how to analyze the audit logs to view all of the changes you've made throughout the module, as well as some other interesting use cases.  

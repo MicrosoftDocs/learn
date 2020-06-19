@@ -1,23 +1,59 @@
-# Data protection: Information protection and encryption
+Once your network and identity access are configured and secure, the next topic to consider is how to protect your data, whether it is at rest, in motion, or being viewed by users and admins.
 
-markdown content TODO
+## Data encryption
 
+Encrypted connections are forced by Azure SQL Database, with the option to additionally specify the TLS minimum version (>1.0, >1.1, or >1.2). For Azure SQL Managed Instance, a TLS version of >1.2 is forced for outbound connection. The recommended task is to force encryption on the client to avoid server negotiation, as well as to not trust server certificate as a best practice.
 
-include this exercise but not necessarily as an exercise:
-### (Bonus) Activity 5: Confirm TDE is enabled
-
-This is a quick activity to show you how easily you can confirm that TDE is enabled, or you can enable it if it is not.  
-
-### Steps
-
-In the Azure portal, navigate to your Azure SQL Database, and in the left-hand menu, under Security, select **Transparent data encryption**. Confirm your database is set to **ON**.  
+Transparent Data Encryption (TDE) provides encryption for data at rest and is on by default for all new Azure SQL Databases, and can be configured for all deployment options via a switch in the Azure portal:  
 
 ![Confirm TDE is on](../media/tdeon.png)  
 
-Next, navigate to your Azure SQL Database logical server, and in the left-hand menu, under Security, select **Transparent data encryption**. Notice that you have a different view:  
+At the server or instance level, you can also choose to use a Service-managed key or you can bring your own key (BYOK). The default is to let the Azure service manage your key. Azure will automatically generate a key to encrypt your databases, and manage the key rotations. You've seen how to do this with the Azure portal, but you can also use PowerShell, Azure CLI, T-SQL, or REST APIs.
 
 ![Server view of TDE options](../media/tdeoption.png)  
 
-The default is to let the Azure service manage your key. As it says, Azure will automatically generate a key to encrypt your databases, and manage the key rotations. You've seen how to do this with the Azure portal, but you can also use PowerShell, Azure CLI, T-SQL, or REST APIs. For more details, [refer here](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?tabs=azure-portal).  
+You can, alternatively, bring your own key (BYOK) leveraging Azure key vault. In this scenario, you (not Azure) are responsible for and in full control of a key lifecycle management (key creation, rotation, deletion), key usage permissions, and auditing of operations on keys.
 
-You can, alternatively, bring your own key (BYOK) leveraging Azure key vault. In this scenario, you (not Azure) are responsible for and in full control of a key lifecycle management (key creation, rotation, deletion), key usage permissions, and auditing of operations on keys. For more information regarding Azure SQL TDE with BYOK, [refer here](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql?view=sql-server-ver15).  
+You also have the ability to leverage column-level encryption, which is supported in Azure SQL just as it is in SQL Server. Similarly, always encrypted is supported just like in SQL Server. This involves client-side encryption of sensitive data using keys that are never given to the database system. Additionally, the client driver transparently encrypts query parameters and decrypts the encrypted results. There is currently support on encrypted data for equality comparison, including `JOIN`, `GROUP BY`, and `DISTINCT` operators by deterministic encryption.
+
+One important note is Always Encrypted with secure enclaves is not yet available in Azure SQL Database or Azure SQL Managed Instance.
+
+## Dynamic Data Masking
+
+On certain occasions, there is data that you will want to be masked or modified so unprivileged users cannot see the data, but can still perform queries including that data. This is supported just like in SQL Server, however there are additional capabilities and views in the Azure portal that allow you to see recommendations of fields to mask.
+
+![DDM recommendations in Azure portal](../media/maskrec.png)
+
+Let's take a look at example where the data includes sensitive information such as social security numbers, email addresses, and salary values. You can apply a mask to those columns with the Azure portal or the following T-SQL:
+
+```sql
+ALTER TABLE [Employee] ALTER COLUMN [SocialSecurityNumber]
+ADD MASKED WITH (FUNCTION = 'Partial(0,"XXX-XX-",2)')
+
+ALTER TABLE [Employee] ALTER COLUMN [Email]
+ADD MASKED WITH (FUNCTION = 'EMAIL()')
+
+ALTER TABLE [Employee] ALTER COLUMN [Salary]
+ADD MASKED WITH (FUNCTION = 'RANDOM(1,20000)')
+```
+
+From above, you see that there are multiple ways you can apply a mask via functions.
+
+Some users, for example the `DataOfficers` in this example, may need to be able to view the masked data. They can be given `UNMASK` privileges with the following T-SQL:
+
+```sql
+GRANT UNMASK TO DataOfficers
+```
+
+Depending on who is querying, the results would be as follows.
+
+![Example of users with Unmask access](../media/egddm.png)
+
+## Tasks for data protection
+
+In order to set up and configure data protection, you should:
+
+1. Ensure your applications force connection encryption
+1. Evaluate and enable TDE
+1. Take advantage of Dynamic Data Masking
+1. For advanced protection, you can configure Always Encrypted

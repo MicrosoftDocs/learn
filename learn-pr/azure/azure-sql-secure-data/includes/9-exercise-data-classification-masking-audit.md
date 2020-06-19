@@ -2,7 +2,7 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
 1. Add new data classification manually  
 
-    In the Azure portal, navigate to your Azure SQL Database (not logical server!). In the left-hand menu, under Security, select **Advanced data security** and then select the **Data Discovery & Classification** box.  
+    In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com), navigate to your Azure SQL Database (not logical server). In the left-hand menu, under Security, select **Advanced data security** and then select the **Data Discovery & Classification** box.  
 
     ![ADS Dashboard](../media/adsdashboard4.png)  
 
@@ -156,7 +156,7 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     ![Select OK](../media/mergeaudit.png)  
 
-    You should now be able to see all the audit logs. Look for where you were testing with masking with Bob (should be near the bottom). You can select the statement, and then use the detail pane below to review the information. For example, for one of the queries where Bob tries to view classified data, under the `data_sensitivity_information` field, you can see the data that is classified. For more information on the naming conventions in audit logs, [see here](https://docs.microsoft.com/azure/sql-database/sql-database-audit-log-format).
+    You should now be able to see all the audit logs. Look for where you were testing with masking with Bob (should be near the bottom). You can select the statement, and then use the detail pane below to review the information. For example, for one of the queries where Bob tries to view classified data, under the `data_sensitivity_information` field, you can see the data that is classified.
 
     You can double-click on the value of the data_sensitivity_information in the Details tab. It will display a pop-up where you can more easily read the data.
 
@@ -166,7 +166,7 @@ In this exercise, you will learn how to audit users trying to view columns that 
     <sensitivity_attributes max_rank="20" max_rank_desc="Medium"><sensitivity_attribute label="Confidential - GDPR" label_id="bf91e08c-f4f0-478a-b016-23422b2a65ff" information_type="Name" information_type_id="57845286-7598-22f5-3422-15b24aeb125e" rank="20" rank_desc="Medium"/></sensitivity_attributes>
     ```
 
-    This merged file can then be exported to an XEL or CSV file (or to a table) for additional analysis. You can also query the [Extended Events files using PowerShell](https://sqlscope.wordpress.com/reading-extended-event-files-using-client-side-tools-only/).  
+    This merged file can then be exported to an XEL or CSV file (or to a table) for additional analysis. You can also query the Extended Events files using PowerShell.  
 
 7. Analyze audit logs with Log Analytics  
 
@@ -182,9 +182,9 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     Feel free to click around and understand what some of the options are.  
 
-    Then, click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use and understand by SQL professionals. For the KQL documentation, [refer here](https://docs.microsoft.com/azure/kusto/query/).  
+    Then, click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use and understand by SQL professionals.   
 
-    The default query is querying the category `SQLSecurityAuditEvents`, so while you might use this category now to view security related incidents, this tool can also be used for querying other Azure logs and categories in [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview). For this step, you can look for the statements where Bob tried to access sensitive information, and expand the details (click the **`>`**) to get the same information that you saw in SSMS.  
+    The default query is querying the category `SQLSecurityAuditEvents`, so while you might use this category now to view security related incidents, this tool can also be used for querying other Azure logs and categories in Azure Monitor. For this step, you can look for the statements where Bob tried to access sensitive information, and expand the details (click the **`>`**) to get the same information that you saw in SSMS.  
 
     ![Log Analytics security query](../media/laview.png)  
 
@@ -223,6 +223,6 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     This dashboard gives more auditing information to help you understand database activity, and gain insight into anomalies. Spend a few minutes reviewing and drilling into the options here.  
 
-    In addition to these insights for Azure SQL services, by being in Azure you can leverage the Azure Security Center to monitor, manage, and respond to issues that arise across your entire Azure estate. If you want to look around (may be limited depending on your subscription level), you can search for **Security Center** and select under *Services*. To learn more about Azure Security Center, refer to the [documentation](https://docs.microsoft.com/azure/security-center/security-center-intro).
+    In addition to these insights for Azure SQL services, by being in Azure you can leverage the Azure Security Center to monitor, manage, and respond to issues that arise across your entire Azure estate. If you want to look around (may be limited depending on your subscription level), you can search for **Security Center** and select under *Services*.
 
     ![Azure security center](../media/securitycenter.png)

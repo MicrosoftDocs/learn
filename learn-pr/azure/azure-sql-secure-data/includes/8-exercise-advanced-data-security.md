@@ -1,18 +1,12 @@
 #### Activity 6: Advanced Data Security
 
-Advanced data security (ADS) is a unified package for advanced SQL security capabilities, providing a single go-to location for enabling and managing three main capabilities:  
-
-* Data discovery & classification
-* Vulnerability assessment
-* Advanced Threat Protection
-
-In this exercise, you'll confirm ADS is enabled, and you'll explore some of the features within each of the capabilities mentioned above.  
+In this exercise, you'll confirm Advanced data security (ADS) is enabled, and you'll explore some of the features within each of the capabilities mentioned in the previous unit.  
 
 ### Steps
 
 1. Enable ADS  
 
-    In the Azure portal, navigate to your Azure SQL Database logical server. Then, in the left-hand menu, under Security, select **Advanced data security**. ADS should already be enabled, however if it is not, select **ON** and select **Save**.
+    In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com), navigate to your Azure SQL Database logical server. Then, in the left-hand menu, under Security, select **Advanced data security**. ADS should already be enabled, however if it is not, select **ON** and select **Save**.
 
     ![Confirm Advanced data security is turned ON](../media/adson.png)  
 
@@ -44,11 +38,11 @@ In this exercise, you'll confirm ADS is enabled, and you'll explore some of the 
 
     ![Navigate to ADS dashboard](../media/adsdashboard.png)  
 
-    First, you'll review Data Discovery & Classification (DD&C) which provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your database. For more information, refer to the [documentation](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification?tabs=azure-t-sql).
+    First, you'll review Data Discovery & Classification (DD&C) which provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your database.
 
     For this step, select the **Data Discovery & Classification** box. This wizard type of view is similar (but not exactly matching) to the Data Discovery & Classification tool that exists in SQL Server today through SSMS. Using the SSMS wizard is **supported** for Azure SQL Managed Instance but **not supported** for Azure SQL Database, but you can achieve similar functionality using the Azure portal (supported for both Azure SQL Database and Managed Instance).  
 
-    Note that T-SQL can be used across all deployment options to add/drop column classifications and to retrieve classifications. Refer to the [documentation](https://docs.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification?tabs=azure-t-sql#subheading-5) for details.  
+    Note that T-SQL can be used across all deployment options to add/drop column classifications and to retrieve classifications.
 
     Select the information bar that says **We have found XX columns with classification recommendations**.  
 
@@ -162,8 +156,6 @@ In this exercise, you'll confirm ADS is enabled, and you'll explore some of the 
 
     ![Potential SQL injection](../media/potentialsqlinj.png)
 
-    You can learn more about SQL Injection attacks in the [documentation](https://docs.microsoft.com/sql/relational-databases/security/sql-injection?view=sql-server-ver15). You can read more about Advanced Threat Protection [here](https://docs.microsoft.com/azure/sql-database/sql-database-advanced-data-security).
-
 In this exercise, you learned how to configure and leverage some of the features in Advanced data security. In the following bonus activity, you'll expand on what you've learned throughout the security module by using various security features together.  
 
-**Important! Clean up note:** You might consider closing all your query editors in SSMS and removing all connections except the one Azure AD connection. The **Azure AD connection** will be used in the next Activity.
+**Important! Clean up note:** You might consider closing all your query editors in SSMS and removing all connections except the one SQL server admin connection.
