@@ -39,7 +39,7 @@ However, if you are dealing with a production scenario, this architecture might 
 
 The single control plane and a single worker is a variant of the previous architecture and normally used as a development environment. This architecture provides only one node, hosting both the control plane and a worker node and is useful when testing or experimenting with different Kubernetes concepts. The single control plane and a single worker limit cluster scaling and makes this architecture not suitable for production and staging use.
 
-### Multiple master and multiple workers
+### Multiple control planes and multiple workers
 
 [//]: # (I suggest putting a diagram that shows this configuration)
 
