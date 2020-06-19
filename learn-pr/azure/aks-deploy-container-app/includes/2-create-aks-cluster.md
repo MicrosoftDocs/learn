@@ -63,7 +63,7 @@ Kubernetes is an open-source project and is continuously evolving. Its versions 
 
 ### Node Count
 
-The node count is the number of worker nodes your cluster will have. Nodes are Azure virtual machines (VMs), and you can change their size and count to match your usage pattern. 
+The node count is the number of nodes your cluster will have in a node pool. Nodes are Azure virtual machines (VMs), and you can change their size and count to match your usage pattern. 
 
 You can change this later in the cluster's configuration panel. It's also a best practice to keep this number as low as possible to avoid unnecessary costs and unused compute power.
 
