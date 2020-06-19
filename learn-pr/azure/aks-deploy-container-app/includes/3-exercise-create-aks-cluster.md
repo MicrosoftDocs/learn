@@ -31,11 +31,17 @@ The first action you need to take in order to create your cluster is to provisio
 
     Then it's time to create the cluster.
 
-2. Creating an AKS using bash resumes in issuing a single command using Azure CLI. Open your preferred terminal (or use CloudShell) and issue the following command:
+2. Creating an AKS using bash resumes in issuing a single command using Azure CLI. Open CloudShell and issue the following command:
 
     ```azurecli
     az aks create --resource-group contoso-aks --name contoso-kubernetes-cluster --node-count 3 --enable-addons http_application_routing --generate-ssh-keys --dns-name-prefix contoso-kubernetes --node-vm-size Standard_B2s
     ```
+
+    In this command, we're telling Azure that we want to create a new AKS cluster names `contoso-kubernetes-cluster` within the `contoso-aks` resource group. This cluster will have 3 nodes defined in the `--node-count` parameter and we'll enable the HTTP Application Routing Addon we talked about in the previous unit via the `--enable-addons` flag.
+
+    We'll also tell it to generate local public and private SSH files to allow our access to the cluster if they're missing via the `--generate-ssh-keys` and we'll set the DNS name for our cluster using the `--dns-name-prefix` to `contoso-kubernetes`.
+
+    To finish the creation, we don't want big VMs in our cluster, let's remember what we talked about in the previous unit, a cluster is composed of several less powerful machines to work as one big machine. So let's define the size of our VMs using the `--node-vm-size`.
 
 ## Link with Kubectl
 
