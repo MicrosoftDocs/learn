@@ -1,0 +1,24 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ms-learn-live-foundations-serverless-dev.9-add-remaining-endpoints
+
+title: Add the Remaining Endpoints for all of our API Functions
+
+metadata:
+  title: Add the Remaining Endpoints for all of our API Functions
+  description: Add the Remaining Endpoints for all of our API Functions
+  
+  ms.date: 04/29/2020
+  
+  author: krumelur
+
+  ms.author: renrup
+
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+azureSandbox: false
+
+durationInMinutes: 5
+
+content: |
+  [!include[](includes/9-add-remaining-endpoints.md)]

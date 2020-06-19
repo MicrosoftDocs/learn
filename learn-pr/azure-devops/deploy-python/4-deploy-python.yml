@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.deploy-python.4-deploy-python
+title: Exercise - Deploy a Python app to Azure
+metadata:
+  title: Exercise - Deploy a Python app to Azure
+  description: Create a CI/CD pipeline to build, test, and deploy a Python app.
+  ms.date: 04/27/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-deploy-python.md)]

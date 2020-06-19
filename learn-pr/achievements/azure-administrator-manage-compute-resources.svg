@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Administrator: Deploy and manage Azure compute resources/administrator-deploy-and-manage-azure-compute-resources</title>
+    <defs>
+        <path d="M20,0 L120,0 C131.045695,-2.02906125e-15 140,8.954305 140,20 L140,120 C140,131.045695 131.045695,140 120,140 L20,140 C8.954305,140 1.3527075e-15,131.045695 0,120 L0,20 C-1.3527075e-15,8.954305 8.954305,2.02906125e-15 20,0 Z" id="path-1"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#153A66" stop-opacity="0.996585446" offset="0%"></stop>
+            <stop stop-color="#051D32" offset="100%"></stop>
+        </linearGradient>
+        <path d="M120,0 C131.045695,0 140,8.954305 140,20 L140,120 C140,131.045695 131.045695,140 120,140 L20,140 C8.954305,140 0,131.045695 0,120 L0,20 C0,8.954305 8.954305,0 20,0 L120,0 Z M120,5 L20,5 C11.8205929,5 5.17026978,11.5467864 5.00321776,19.6861718 L5,20 L5,120 C5,128.179407 11.5467864,134.82973 19.6861718,134.996782 L20,135 L120,135 C128.179407,135 134.82973,128.453214 134.996782,120.313828 L135,120 L135,20 C135,11.8205929 128.453214,5.17026978 120.313828,5.00321776 L120,5 Z" id="path-4"></path>
+        <linearGradient x1="27%" y1="28.5997955%" x2="76.5333333%" y2="63.9609154%" id="linearGradient-6">
+            <stop stop-color="#0078D4" offset="0%"></stop>
+            <stop stop-color="#0D7ED8" offset="2%"></stop>
+            <stop stop-color="#2B8AE0" offset="8%"></stop>
+            <stop stop-color="#4194E7" offset="15%"></stop>
+            <stop stop-color="#519BEB" offset="22%"></stop>
+            <stop stop-color="#5B9FEE" offset="29%"></stop>
+            <stop stop-color="#5EA0EF" offset="40%"></stop>
+            <stop stop-color="#5B9FEE" offset="55%"></stop>
+            <stop stop-color="#509AEB" offset="68%"></stop>
+            <stop stop-color="#3F92E6" offset="80%"></stop>
+            <stop stop-color="#2688DF" offset="91%"></stop>
+            <stop stop-color="#127FD9" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9774416%" y1="17.9912184%" x2="49.9774416%" y2="124.588364%" id="linearGradient-7">
+            <stop stop-color="#32D4F5" offset="0%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.6057007%" y1="-4.39429929%" x2="56.4133017%" y2="129.928741%" id="linearGradient-8">
+            <stop stop-color="#32D4F5" offset="22%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-70.6%" y="-70.6%" width="241.2%" height="241.2%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-10">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <path d="M9.65909091,0 L10.5371901,2.2037037 L11.8719008,2.58847737 L13.838843,1.53909465 L14.1198347,1.53909465 L14.857438,2.37860082 L15.4896694,3.00823045 L15.4896694,3.218107 L14.5061983,5.281893 L14.9979339,6.61111111 L17,7.31069959 L17,9.26954733 L14.7169421,10.1790123 L14.3305785,11.5432099 L15.3140496,13.5020576 L15.3140496,13.781893 L13.9442149,15.1460905 L11.6260331,14.0617284 L10.2913223,14.6213992 L9.62396694,16.7201646 L9.62396694,17 L7.65702479,17 L6.81404959,14.6563786 L5.44421488,14.0967078 L3.51239669,15.0761317 L3.23140496,15.0761317 L1.86157025,13.6769547 L2.91528926,11.4032922 L2.35330579,10.0740741 L0.280991736,9.3744856 L0,9.3744856 L0,7.41563786 L2.35330579,6.54115226 L2.95041322,5.07201646 L1.93181818,3.11316872 L1.93181818,2.86831276 L3.30165289,1.50411523 L5.58471074,2.58847737 L7.05991736,1.99382716 L7.72727273,0 L9.65909091,0 Z M8.62318841,4.43478261 C6.44606591,4.43478261 4.68115942,6.1996891 4.68115942,8.37681159 C4.68115942,10.5539341 6.44606591,12.3188406 8.62318841,12.3188406 C10.8003109,12.3188406 12.5652174,10.5539341 12.5652174,8.37681159 C12.5652174,6.1996891 10.8003109,4.43478261 8.62318841,4.43478261 Z" id="path-11"></path>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Administrator:-Deploy-and-manage-Azure-compute-resources" transform="translate(-135.000000, -55.000000)">
+            <g id="Administrator:-Deploy-and-manage-Azure-compute-resources/administrator-deploy-and-manage-azure-compute-resources" transform="translate(160.000000, 80.000000)">
+                <g id="Trophy-Plates/Square">
+                    <g id="BG" transform="translate(-20.000000, -20.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <path stroke="#FFFFFF" stroke-width="5" d="M120,-2.5 L20,-2.5 C13.7867966,-2.5 8.16179656,0.0183982822 4.09009742,4.09009742 C0.0183982822,8.16179656 -2.5,13.7867966 -2.5,20 L-2.5,120 C-2.5,126.213203 0.0183982822,131.838203 4.09009742,135.909903 C8.16179656,139.981602 13.7867966,142.5 20,142.5 L120,142.5 C126.213203,142.5 131.838203,139.981602 135.909903,135.909903 C139.981602,131.838203 142.5,126.213203 142.5,120 L142.5,20 C142.5,13.7867966 139.981602,8.16179656 135.909903,4.09009742 C131.838203,0.0183982822 126.213203,-2.5 120,-2.5 Z"></path>
+                        <g id="Colors/Microsoft-365/BG-Gradient-5" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                            <rect id="Rectangle" x="0" y="0" width="140" height="140"></rect>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(-20.000000, -20.000000)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use fill="#000000" fill-rule="nonzero" xlink:href="#path-4"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-5)" fill="#0076D7">
+                            <rect id="Microsoft-365/Border" x="0" y="0" width="140" height="140"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icon-compute-41-Disks-(Classic)" transform="translate(2.000000, 4.000000)" fill-rule="nonzero">
+                    <ellipse id="Oval" fill="#76BC2D" cx="42.5" cy="57.5" rx="42.5" ry="17.5"></ellipse>
+                    <ellipse id="Oval" fill="#5E9624" cx="44.5" cy="56" rx="13.5" ry="4"></ellipse>
+                    <ellipse id="Oval" fill="url(#linearGradient-6)" cx="42.5" cy="17.5" rx="42.5" ry="17.5"></ellipse>
+                    <ellipse id="Oval" fill="#005BA1" cx="44.5" cy="19" rx="13.5" ry="4"></ellipse>
+                    <path d="M42.5010015,74.253112 C66.017114,74.253112 85,66.5228216 85,57 L85,57 L85,67.1950207 L85,67.1950207 C84.2066854,76.4377593 65.507126,84 42.5010015,84 C19.4948769,84 0.00200293859,76.2697095 0.00200293859,66.746888 L0.00200293859,57 C-0.224658387,66.5228216 18.814893,74.253112 42.5010015,74.253112 Z" id="Path" fill="#5E9624"></path>
+                    <path d="M42.5010015,34.253112 C66.017114,34.253112 85,26.5228216 85,17 L85,17 L85,27.1950207 L85,27.1950207 C84.2066854,36.4377593 65.507126,44 42.5010015,44 C19.4948769,44 0.00200293859,36.2697095 0.00200293859,26.746888 L0.00200293859,17 C-0.224658387,26.5228216 18.814893,34.253112 42.5010015,34.253112 Z" id="Path" fill="#0078D4"></path>
+                </g>
+                <g id="Person" transform="translate(50.000000, 37.000000)" fill-rule="nonzero">
+                    <path d="M48.2517051,57 C50.8526529,57 52.966598,54.9140403 52.986008,52.3282108 C53.004664,52.1413299 53.004664,51.9530718 52.986008,51.766191 C51.1134852,37.0131723 42.6694674,25 26.5233747,25 C10.377282,25 1.65061917,35.1866081 0.0254107146,51.8013172 C-0.2424147,54.3798975 1.63724973,56.6884038 4.22975433,56.9648738 L48.2517051,56.9648738 L48.2517051,57 Z" id="Path" fill="url(#linearGradient-7)"></path>
+                    <path d="M28.0890869,29.2750424 C25.2163494,29.2929274 22.4021323,28.5014335 20,27 L28.0178174,47 L36,27.1358234 C33.6267155,28.5438102 30.8847392,29.2852781 28.0890869,29.2750424 Z" id="Path" fill="#FFFFFF" opacity="0.8"></path>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="28" cy="15" r="15"></circle>
+                </g>
+                <g id="Group-4" filter="url(#filter-9)" transform="translate(69.000000, 44.000000)" fill-rule="nonzero">
+                    <g id="Combined-Shape">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                        <use fill="url(#linearGradient-10)" xlink:href="#path-11"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

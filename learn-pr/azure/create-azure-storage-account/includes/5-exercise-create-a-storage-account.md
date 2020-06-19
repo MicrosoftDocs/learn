@@ -84,7 +84,7 @@ The following screenshot shows the completed settings for the **Advanced** tab.
 
 1. Click **Review + create** to review the settings. This will do a quick validation of your options to make sure all the required fields are selected. If there are issues, they'll be reported here. Once you've reviewed the settings, click **Create** to provision the storage account.
 
-It will take a few minutes to deploy the account. While Azure is working on that, let's explore the APIs we'll use with this account.
+It will take a few minutes to deploy the account.
 
 ### Verify
 

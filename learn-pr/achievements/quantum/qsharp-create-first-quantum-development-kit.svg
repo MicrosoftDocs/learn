@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="106px" viewBox="0 0 106 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>NA/get-started -with-quantum-computing-with-the-quantum-development-kit</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <filter x="-2.8%" y="-2.8%" width="106.0%" height="106.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="100" height="100"></rect>
+        <rect id="path-6" x="0" y="0" width="100" height="100"></rect>
+        <path d="M50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 Z M50,4 C24.5949015,4 4,24.5949015 4,50 C4,75.4050985 24.5949015,96 50,96 C75.4050985,96 96,75.4050985 96,50 C96,24.5949015 75.4050985,4 50,4 Z" id="path-7"></path>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-14" transform="translate(-160.000000, -1080.000000)">
+            <g id="NA/get-started--with-quantum-computing-with-the-quantum-development-kit" transform="translate(160.000000, 1080.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(3.000000, 3.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="102.5" height="102.5" rx="50"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="Rectangle-Copy">
+                                <use fill="#0078D4" xlink:href="#path-6"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-6"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(3.000000, 3.000000)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-7"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-8)" fill="#0076D7">
+                            <rect id="Microsoft-365/Border" x="0" y="0" width="100" height="100"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Structure" transform="translate(21.000000, 13.000000)">
+                    <g id="grey" transform="translate(0.000000, 0.915823)" stroke="#EBEBEB">
+                        <polyline id="Path-87" points="27.1067369 4.61852778e-14 27.1067369 20.7509349 18.138786 25.8557194 1.13686838e-13 15.6716603"></polyline>
+                        <line x1="18.1128948" y1="5.21739891" x2="18.1128948" y2="67.9027841" id="Path-88"></line>
+                        <line x1="36.3768619" y1="5.21739891" x2="-1.13686838e-13" y2="25.8557194" id="Path-89"></line>
+                        <line x1="9.17804041" y1="10.2424612" x2="63.6238801" y2="41.7134416" id="Path-90"></line>
+                        <line x1="45.4679389" y1="10.2424612" x2="45.4679389" y2="73.1141624" id="Path-91"></line>
+                        <line x1="54.3915983" y1="15.5365592" x2="0" y2="46.9401311" id="Path-92"></line>
+                        <line x1="6.39488462e-14" y1="36.5600915" x2="54.3915983" y2="68.1094882" id="Path-93"></line>
+                        <polyline id="Path-118" points="63.6238801 62.5382807 45.4679389 52.3347899 36.3768619 57.4365353 36.4009602 78.3719548"></polyline>
+                        <line x1="63.6238801" y1="52.3347899" x2="27.1957991" y2="73.1141624" id="Path-119"></line>
+                        <line x1="63.6238801" y1="31.2383451" x2="9.17804041" y2="62.7244761" id="Path-120"></line>
+                        <line x1="54.3915983" y1="25.9779514" x2="9.17804041" y2="52.3347899" id="Path-121"></line>
+                    </g>
+                    <g id="black" transform="translate(0.096275, 0.000000)" stroke="#000000">
+                        <polyline id="Path-83" points="22.8303927 2.99404042 3.55271368e-15 16.0036378 3.55271368e-15 27.1049318 8.97396378 32.0810416 18.0022965 27.1049318 63.3248045 52.8862317 63.3248045 63.8363724 36.6045796 79.6334483 27.1555622 73.7214983 27.1555622 21.8469518 45.6383107 11.2939745 54.495439 16.0036378 54.495439 68.9872799"></polyline>
+                        <path d="" id="Path-84"></path>
+                        <polygon id="Path-85" points="22.6897323 3.07892422 26.9569088 0.5 36.1710916 5.92167309 36.1710916 58.622927 17.9400932 68.9942479 8.78546679 63.4614411 8.78546679 11.0873633"></polygon>
+                        <polyline id="Path-86" points="18.01662 5.72093555 63.6256898 32.0778365 63.6256898 42.55884 45.494607 53.2253326 8.78546679 32.0778365 1.13686838e-13 37.5431198 1.13686838e-13 48.3577857 45.4095141 74.3622256"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

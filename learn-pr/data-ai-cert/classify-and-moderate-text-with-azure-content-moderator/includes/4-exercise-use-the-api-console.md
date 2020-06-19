@@ -2,10 +2,10 @@ Now that you have a resource available in Azure for content moderation, and you 
 
 1. Go to the [Content Moderator API Reference page](https://westus.dev.cognitive.microsoft.com/docs/services/57cf753a3f9b070c105bd2c1/operations/57cf753a3f9b070868a1f66f). This page is available in a number of regions for testing in the API console.
 1. For the geographic region closest to you, select the appropriate location button to open the console.
-1. Note the query parameters that you can select for your test. For the first test run, keep the default options.
+1. Note the query parameters that you can select for your test. For the first test run, ensure that the classify option is set to false. Leave the remaining values at their default.
 1. Paste your subscription key into the **Ocp-Apim-Subscription-Key** box.
 
-    ![Paste subscription key into Ocp-Apim-Subscription-Key box](../media/4-exercise-paste-key.png)
+    ![Paste subscription key into Ocp-Apim-Subscription-Key box](../media/4-exercise-paste-key.PNG)
 
 1. Leave the sample text in place, and then click **Send**.
 
@@ -13,21 +13,18 @@ Now that you have a resource available in Azure for content moderation, and you 
 
 - Scroll down the page and evaluate the response from the testing console.
 
-  This first test used _classification_ because the `classify` parameter was set to `true` at the top of the page. The response contains the following information:
-
-  - A review is recommended.
-  - The text is classified as category 3 (potential presence of language that might be considered offensive in certain situations).
-  - The potentially offensive term is "crap."
+You will see the that the email, IP address, phone, and address values are under a JSON array value of PII.  You did not have to set the PII value to true for this result.
 
 ## Run additional tests
 
-1. To run the second test, scroll to the top of the page and set the `PII` parameter to `true`.
-
-   ![Set PII parameter to true](../media/4-exercise-set-pii.png)
+1. To run the second test, scroll to the top of the page and set the `classify` parameter to `true`.
 
 1. Select **Send**.
 
-   Note that PII content is now displayed, showing that the email address, IP address, phone number, mailing address, and Social Security number are all considered potential PII.
+   Note that there is now a new JSON array section title **Classification**.  It indicates that a review is recommended and displays three categories with score values.  The categories are pertaining to the text content that may be undesirable. 
+   - Category 1 - content could be sexually explicit or adult related
+   - Category 2 - language may be considered sexually suggestive or mature in certain situations
+   - Category 3 - potentially offensive language
 
 1. To run additional tests, enter some of your own text values from an existing document and run the tests again to see the results returned.
 
