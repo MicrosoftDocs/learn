@@ -75,7 +75,6 @@ AKS requires you to create *node pools* to group nodes in your cluster. When you
 
 [//]: # (Do we need to talk about node affinity? If so, then we'll need to define it with more detail. For example, you'll need to mention multiple node pools and highlight this in the exercises.)
 
-You can even tell applications and pods to spin up in nodes according to their characteristics. This is called *node affinity*.
 
 ### Automatic Routing
 
