@@ -56,7 +56,7 @@ Mara creates the development database and populates it with test data. She expor
    ![Screenshot of the services section of the Containers page](../media/3-select-containers.png)
 
 1. On the **Containers** page, select **+ Container**.
-1. In the **Name** field, enter *bacpac* and select **OK**.
+1. In the **Name** field, enter *bacpac* and select **Create**.
 1. Select the **bacpac** container.
 1. On the **bacpac** page, select **Upload**.
 1. Upload the *tailspindatabase.bacpac* file that you downloaded earlier.

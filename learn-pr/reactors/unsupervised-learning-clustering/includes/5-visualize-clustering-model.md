@@ -1,4 +1,4 @@
-Similar to the situation with PCA, we can create visualizations of our clusters, but visualization is crude at best when it has been projected down through so many dimensions. That said, even trying to project from 43 dimensions down to 3 dimensions, noticeable patterns persist. To perform this visualization, we will first need to import the Axes3D module.
+Similar to the situation with PCA, we can create visualizations of our clusters. But visualization is crude at best when it has been projected down through so many dimensions. Even when we're trying to project from 43 dimensions down to 3 dimensions, noticeable patterns persist. To perform this visualization, we'll first need to import the Axes3D module.
 
 ```python
 import matplotlib as mpl
@@ -27,5 +27,5 @@ The output is:
 >
 > Two observations:
 >
-> 1. Notice that there is no hard boundary visible between the purple and yellow clusters. The boundary is there, but, because it's a higher-dimensional hyperplane, it gets smeared across three dimensional space.
-> 1. Note also that points from the light blue cluster are scattered across the plot. This is also an artifact of the clusters projection down from 43 dimensions to 3.
+> - No hard boundary is visible between the purple and yellow clusters. The boundary is there, but because it's a higher-dimensional hyperplane, it gets smeared across three-dimensional space.
+> - Points from the light blue cluster are scattered across the plot. This is also an artifact of the cluster's projection down from 43 dimensions to 3.

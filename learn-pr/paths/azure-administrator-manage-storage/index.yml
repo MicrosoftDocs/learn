@@ -26,7 +26,7 @@ products:
 - azure-storage-accounts
 - azure-storage-explorer
 - azure-blob-storage
-- azure-file-storage
+- azure-files
 - azure-data-box-family
 - azure-virtual-machines
 modules:
