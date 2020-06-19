@@ -29,7 +29,7 @@ The single control plane and multiple worker architecture is the most common arc
 
 If the master node becomes unavailable for any reason, no other interaction can happen with the cluster. Even by you as an operator, or by any workloads that use Kubernetes' APIs to communicate until, at least, the API server is back online.
 
-Despite being less available than others, this architecture should be enough for most situations. It is less likely that the core management services become unavailable compared to a worker node going offline. The control plane nodes are subject to fewer modifications than worker nodes and, therefore, more resilient.
+Despite being less available than others, this architecture should be enough for most situations. It is less likely that the core management services become unavailable compared to a node going offline. The control plane nodes are subject to fewer modifications than nodes and, therefore, more resilient.
 
 However, if you are dealing with a production scenario, this architecture might not be the best solution.
 
