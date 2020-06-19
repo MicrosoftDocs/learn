@@ -39,18 +39,6 @@ However, if you are dealing with a production scenario, this architecture might 
 
 The single control plane and a single worker is a variant of the previous architecture and normally used as a development environment. This architecture provides only one node, hosting both the control plane and a worker node and is useful when testing or experimenting with different Kubernetes concepts. The single control plane and a single worker limit cluster scaling and makes this architecture not suitable for production and staging use.
 
-### Multiple control planes and multiple workers
-
-[//]: # (I suggest putting a diagram that shows this configuration)
-
-The multiple control planes and multiple worker architecture is the most used architecture for production clusters. Deploying multiple control planes nodes and multiple nodes allows for high availability even when a control plane node is down.
-
-For this purpose, control plane nodes are deployed in odd numbers, so quorum can be maintained if one or more control planes fail.
-
-[//]: # (You'll need to discuss the concept of quorum a bit more. Otherwise, mentioning high availability in the previous paragraph may be enough information. Keep in mind that you're referring "Despite this difference" in the next paragraph, and it's not clear to me what the difference is that you're referring to.)
-
-Despite this difference, all other nodes can communicate with any control planes using the API server through a load balancer. This architecture is more involved in terms of deployment but is the recommended configuration for most production clusters.
-
 ## AKS Concepts
 
 When you create a new AKS cluster, you have several different items of information that you need to configure.  Each item impacts the final configuration of your cluster.
