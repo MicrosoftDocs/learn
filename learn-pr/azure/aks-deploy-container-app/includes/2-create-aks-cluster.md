@@ -27,7 +27,7 @@ There are a few main cluster architectures for Kubernetes-based deployments.
 
 The single control plane and multiple worker architecture is the most common architectural pattern. While this is the easiest architecture to deploy, it doesn't provide high availability to your cluster's core management services.
 
-If the master node becomes unavailable for any reason, no other interaction can happen with the cluster. Even by you as an operator, or by any workloads that use Kubernetes' APIs to communicate until, at least, the API server is back online.
+If the control plane node becomes unavailable for any reason, no other interaction can happen with the cluster. Even by you as an operator, or by any workloads that use Kubernetes' APIs to communicate until, at least, the API server is back online.
 
 Despite being less available than others, this architecture should be enough for most situations. It is less likely that the core management services become unavailable compared to a node going offline. The control plane nodes are subject to fewer modifications than nodes and, therefore, more resilient.
 
