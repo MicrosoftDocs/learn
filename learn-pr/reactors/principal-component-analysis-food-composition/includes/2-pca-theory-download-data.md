@@ -16,10 +16,8 @@ In fact, we can construct a whole new feature space around this cluster that's d
 
 You must first clean and prepare the data to conduct PCA on it, so pandas will be essential. You also need NumPy, a bit of scikit-learn, and pyplot.
 
-> **Sarah** TBD. It occurred to me to add a tip that links to the environment setup instructions. What do you think?
-
 > [!TIP]
-> Review steps to set up the learning environment, TBD--add link.
+> If you haven't set up a Visual Studio Code environment with Jupyter Notebooks using Python and libraries like pandas, the [Introduction to Python](https://review.docs.microsoft.com/learn/reactors/python-data-science/1-introduction?branch=new-data-science-1) module might be a useful first step.
 >
 
 To add these libraries, run this code:
@@ -35,10 +33,10 @@ import matplotlib.pyplot as plt
 
 The dataset we’ll use here is the same one that's drawn from the [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/?azure-portal=true) that you prepared in the preceding module. 
 
-Remember to set the encoding to `latin_1` (for µg):
+Remember to set the encoding to `latin1` (for µg):
 
 ```python
-df = pd.read_csv('Data/USDA-nndb-combined.csv', encoding='latin_1')
+df = pd.read_csv('Data/USDA-nndb-combined.csv', encoding='latin1')
 ```
 
 We can check the number of columns and rows by using the `info()` method for the DataFrame:
@@ -46,6 +44,7 @@ We can check the number of columns and rows by using the `info()` method for the
 ```python
 df.info()
 ```
+
 The output is:
 
 ```Output
@@ -129,7 +128,7 @@ Can you think of a more concise way to check the number of rows and columns in a
   ```python
   df.count(axis='columns')
   ```
-    
+
   The output is:
 
   ```Output
@@ -152,4 +151,3 @@ Can you think of a more concise way to check the number of rows and columns in a
 <br /><br />
 
 ***
-

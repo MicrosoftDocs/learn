@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   show_latex: true
+  hidden: true
 title: Text classification for Naive Bayes
 summary: Learn how to use conditional probability and Bayes classification to analyze an actual dataset of email messages. You'll learn how to use and apply these machine learning principles as you analyze an email dataset for spam and ham.
 abstract:  | 
@@ -17,7 +18,6 @@ abstract:  |
   - Use pandas to evaluate a dataset of email messages for spam or ham.
   - Use Matplotlib to generate a word cloud, and then use Natural Language Toolkit and scikit-learn for deeper analysis of the data.
   - Use the Naive Bayes classifier to classify the data in a spam dataset and improve the accuracy of a machine learning model.
-
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
   - Introduction to Python for data science

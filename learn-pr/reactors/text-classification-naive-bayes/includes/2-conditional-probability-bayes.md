@@ -46,7 +46,6 @@ $P({\rm S} \mid {\rm debt, bills}) \propto P({\rm debt, bills} \mid {\rm S})P({\
 
 > [!NOTE]
 > The symbol ∝ represents proportionality rather than equality.
-
 Now, if we assume that the occurrences of the words _debt_ and _bills_ are independent events, we can extend this proportionality:
 
 $P({\rm S} \mid {\rm debt, bills}) \propto P({\rm debt} \mid {\rm S})P({\rm bills} \mid {\rm S})P({\rm S})$

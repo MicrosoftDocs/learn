@@ -46,16 +46,13 @@ scikit-learn provides a `count-vectorizer` function. We'll import it now, and th
 
 ```python
 from sklearn.feature_extraction.text import CountVectorizer
-
 X = df['Message']
 y = df['Class']
-
 CountVect = CountVectorizer(analyzer=txt_preprocess).fit(X)
 ```
 
 > [!NOTE]
 > The convention of using an uppercase `X` to represent the independent variables (the predictors) and a lowercase `y` to represent the dependent variable (the response) comes from statistics and is commonly used by data scientists.
-
 To see how the vectorizer transformed the words, let's check it against a common English word like _go_:
 
 ```python
@@ -68,7 +65,6 @@ Before we transform the entire dataset and train the model, we take the final pr
 
 ```python
 from sklearn.model_selection import train_test_split
-
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=50)
 ```
 

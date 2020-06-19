@@ -4,8 +4,6 @@ One way to reduce the number of dimensions is to reduce the number of features c
 
 ## Learning objectives
 
-> **Sarah** TBD. Please check the learning objectives and prereqs that I derived from the module content.
-
 In this module, you will:
 
 - Learn the terms *principal component analysis (PCA)* and *eigenvector* and understand their functions in machine learning.
