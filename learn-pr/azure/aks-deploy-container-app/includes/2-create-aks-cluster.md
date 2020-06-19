@@ -43,12 +43,6 @@ The single control plane and a single worker is a variant of the previous archit
 
 When you create a new AKS cluster, you have several different items of information that you need to configure.  Each item impacts the final configuration of your cluster.
 
-### Kubernetes version
-
-Kubernetes is an open-source project and is continuously evolving. Its versions bear differences between each other, the best practice is to use the default version for most of the common scenarios.
-
-[//]: # (I'm not sure what you're trying to say here with the second sentence above? Think about some of the questions your reader may have after reading this part. Why would I need to use a different version? What happens when I need to upgrade?)
-
 ### Node Count
 
 The node count is the number of nodes your cluster will have in a node pool. Nodes are Azure virtual machines (VMs), and you can change their size and count to match your usage pattern. 
