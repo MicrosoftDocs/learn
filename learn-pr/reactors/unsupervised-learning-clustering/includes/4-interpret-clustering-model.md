@@ -106,33 +106,6 @@ array([1])
 
 The output indicates that Gjetost cheese falls under cluster 1.
 
-### Try it yourself
-
-Alter the values for Gjetost cheese in the `newcase` array to see what it takes to get that array classified into cluster 0 or cluster 2.
-
-**SARAH TBD** - add hint content?
-
-<br />
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-
-  ```python
-
-  ```
-
-  The output is:
-
-  ```Output
-
-  ```
-
-</details>
-
-<br /><br />
-
-***
-
 We can also see the actual coordinate values for cluster centroids.
 
 ```python

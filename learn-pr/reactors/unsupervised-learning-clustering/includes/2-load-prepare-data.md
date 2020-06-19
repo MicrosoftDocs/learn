@@ -2,7 +2,7 @@ To illustrate k-means clustering in action, we'll use the familiar [U.S. Depar
 
 ```python
 import pandas as pd
-df = pd.read_csv('Data/USDA-nndb-combined.csv', encoding='latin_1')
+df = pd.read_csv('Data/USDA-nndb-combined.csv', encoding='latin1')
 ```
 
 ```python
@@ -92,7 +92,7 @@ Before we drop anything from the `df` DataFrame, let's take a quick look at th
 ```python
 from matplotlib import pyplot as plt
 %matplotlib inline
-plt.scatter(df['Folate_Tot_(µg)'], df['Folate_DFE_(µg)'])
+plt.scatter(df['Folate_Tot_(Âµg)'], df['Folate_DFE_(µg)'])
 ```
 
 The output is:
@@ -107,7 +107,8 @@ The output is:
 This is a dramatic correlation!
 
 > [!NOTE]
-> Despite specifying Latin_1 encoding when we read in the dataset from the CSV file, character corruption can still happen. If the preceding `plt.scatter` call fails, try this code instead: `plt.scatter(df['Folate\_Tot\_(Âµg)'], df['Folate\_DFE\_(Âµg)'])`
+> Despite specifying latin1 encoding when we read in the dataset from the CSV file, character corruption can still happen. If the preceding `plt.scatter` call fails, try this code instead: `plt.scatter(df['Folate_Tot_(Âµg)'], df['Folate_DFE_(Âµg)'])`
+
 
 ### Try it yourself
 
@@ -168,7 +169,7 @@ The output is:
 ***
 
 > [!NOTE]
-> If the `read_csv()` function didn't read in the µ (mu) symbol correctly and the preceding `drop()` method call fails, try this code instead: `nutr_df.drop(['Folate\_DFE\_(Âµg)', 'Vit\_A\_RAE', 'Vit\_D\_IU'], inplace=True, axis=1)`
+> If the `read_csv()` function didn't read in the µ (mu) symbol correctly and the preceding `drop()` method call fails, try this code instead: `nutr_df.drop(['Folate_DFE_(Âµg)', 'Vit_A_RAE', 'Vit_D_IU'], inplace=True, axis=1)`
 
 Because the k-means algorithm will calculate the Euclidean distances between data points and centroids, we need to ensure that all of the numeric features in our dataset use compatible units. We don't want to try to calculate distances between units of mass like grams and units of energy like kilocalories. 
 
