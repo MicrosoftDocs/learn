@@ -33,7 +33,7 @@ Despite being less available than others, this architecture should be enough for
 
 However, if you are dealing with a production scenario, this architecture might not be the best solution.
 
-### Single master and a single worker
+### Single control plane and a single worker
 
 [//]: # (I suggest putting a diagram that shows this configuration)
 
