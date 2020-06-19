@@ -38,16 +38,16 @@ Use Visual Studio Code IntelliSense for information on how to use pd.read_csv.
 
 ***
 
-There are quite a few parameters for this function. The intuitively named `encoding` parameter accepts `str` input from the list of Python [standard encodings](https://docs.python.org/3.6/library/codecs.html#standard-encodings?azure-portal=true). We'll go with `'latin_1'` here.
+There are quite a few parameters for this function. The intuitively named `encoding` parameter accepts `str` input from the list of Python [standard encodings](https://docs.python.org/3.6/library/codecs.html#standard-encodings?azure-portal=true). We'll go with `'latin1'` here.
 
 > [!NOTE]
 > Although data science practitioners develop a familiarity with encodings they've encountered, selecting the correct encoding can sometimes come down to trial and error. That's true even for professionals!
 
 ```python
-df = pd.read_csv('Data/USDA-nndb.csv', encoding='latin_1')
+df = pd.read_csv('Data/USDA-nndb.csv', encoding='latin1')
 ```
 
-There was no error message this time, so `'latin_1'` worked and we successfully read in the CSV file to the `df` DataFrame.
+There was no error message this time, so `'latin1'` worked and we successfully read in the CSV file to the `df` DataFrame.
 
 > [!div class="alert is-tip"]
 >
