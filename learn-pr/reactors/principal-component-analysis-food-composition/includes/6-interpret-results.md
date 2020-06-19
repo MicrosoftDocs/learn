@@ -72,7 +72,6 @@ Our first cluster is defined by foods that are high in protein and minerals, lik
 > ### Takeaway
 >
 > Particularly when it comes to interpretation, subject matter expertise can prove essential to producing high-quality analysis. For this reason, you should also try to include SMEs in your data science projects.
-
 Then, run this code:
 
 ```python
@@ -135,8 +134,6 @@ Our second group is foods that are high in fiber and folic acid and low in chole
 
 Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
-> **SARAH** TBD. Do we need to provide a possible solution and output for this try-it-yourself? Thanks.
-
 <br />
 
 <details>
@@ -144,17 +141,22 @@ Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   <italic>Hint</italic>: To find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$, remember that Python uses zero-indexing.
- 
+
   Here's a possible solution:
 
   ```python
-  TBD
+  c3 = pd.Series(vects[2], index=nutr_df.columns)
+  c3.sort_values(ascending=False)
   ```
-    
-  The output is:
 
-  ```Output
-  TBD
+  ```python
+  c4 = pd.Series(vects[3], index=nutr_df.columns)
+  c4.sort_values(ascending=False)
+  ```
+
+  ```python
+  c5 = pd.Series(vects[4], index=nutr_df.columns)
+  c5.sort_values(ascending=False)
   ```
 
 </details>
@@ -169,7 +171,7 @@ Even without subject matter expertise, it is possible to get a more accurate sen
 pca_df.sort_values(by='c1')['FoodGroup'][:500].value_counts()
 ```
 
-Here's the output:
+The output is:
 
 ```Output
 Vegetables and Vegetable Products    189
@@ -210,8 +212,6 @@ Name: FoodGroup, dtype: int64
 
 Repeat this process for $c_{3}$, $c_{4}$, and $c_{5}$.
 
-> **SARAH** TBD: Do we need to provide a possible solution and output for this exercise? Thanks.
-
 <br />
 
 <details>
@@ -221,13 +221,13 @@ Repeat this process for $c_{3}$, $c_{4}$, and $c_{5}$.
   Here are the solutions:
 
   ```python
-  TBD
+  pca_df.sort_values(by='c3')['FoodGroup'][:500].value_counts()
   ```
-    
-  The output is:
-
-  ```Output
-  TBD
+  ```python
+  pca_df.sort_values(by='c4')['FoodGroup'][:500].value_counts()
+  ```
+  ```python
+  pca_df.sort_values(by='c5')['FoodGroup'][:500].value_counts()
   ```
 
 </details>

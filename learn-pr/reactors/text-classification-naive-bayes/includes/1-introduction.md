@@ -6,8 +6,6 @@ Naive Bayes is a convenient algorithm to use for spam detection because it doesn
 
 ## Learning objectives
 
-> **Sarah** TBD. Please check the learning objectives and prereqs that I derived from the module content.
-
 In this module, you will:
 
 - Learn the strengths and limitations of conditional probability and Naive Bayes machine learning.
@@ -18,5 +16,4 @@ In this module, you will:
 ## Prerequisites
 
 - Introduction to Python for data science
-
 

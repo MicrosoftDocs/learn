@@ -7,10 +7,8 @@ In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics
 
 Let’s import pandas and load the dataset. The path name in the following code is case-sensitive.
 
-> **Sarah** TBD. It occurred to me to add a tip that links to the environment setup instructions. What do you think?
-
 > [!TIP]
-> Review steps to set up the learning environment, TBD--add link.
+> If you haven't set up a Visual Studio Code environment with Jupyter Notebooks using Python and libraries like pandas, the [Introduction to Python](https://review.docs.microsoft.com/learn/reactors/python-data-science/1-introduction?branch=new-data-science-1) module might be a useful first step.
 >
 
 ```python
@@ -20,13 +18,12 @@ df = pd.read_csv('Data/SMSSpamCollection', sep='\t', names=['Class', 'Message'])
 
 ### Try it yourself
 
-> **Sarah** TBD. Pease review the solution/answer I wrote for the following exercise. Thanks.
 
 What do the `sep` and `names` parameters do in the preceding code?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
+
   If you are unsure, you can refer to the built-in Help documentation by using <code>pd.read_csv?</code> in a new code cell.
 
   *Answer*:
@@ -92,14 +89,12 @@ df.head()
 
 ### Try it yourself
 
-> **Sarah** TBD, provide possible solution and output.
-
 What do you think the purpose of the `-1` parameter passed to `pd.set_option()` is in the code cell above?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
-  TBD, provide a possible solution and output
+
+  The `-1` parameter chooses the last column in the dataframe to  make sure that the message column has the most accommodating width.
 
 </details>
 

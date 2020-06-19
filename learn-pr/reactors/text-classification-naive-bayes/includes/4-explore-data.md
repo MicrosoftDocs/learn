@@ -21,7 +21,7 @@ memory usage: 87.1+ KB
 Run the `describe()` method on `df`. Does it provide much useful information about this dataset? If not, why not?
 
 <details>
-  
+
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   Possible exercise solution:
@@ -71,7 +71,6 @@ The output is:
 >
 > Notice that here, as in previous units, we have stuck together several methods to run on a DataFrame. This kind of additive method-stacking is part of what makes Python and pandas such a power combination for the rough-and-ready data exploration that is a crucial part of data science.
 >
-
 ## Explore the data by using word clouds
 
 Because our data is largely not numeric, you might have noticed that some of our go-to data exploration tools (such as bar charts and the `describe()` method) have been of limited use in exploring this data. Instead, word clouds can be a powerful way of getting a quick glance at what's represented in text data as a whole:
@@ -103,7 +102,6 @@ We have to supply a number of parameters to the `WordCloud()` function and to Ma
 ```python
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
-
 def get_wordcloud(text_data,title):
   wordcloud = WordCloud(background_color='black',
                         stopwords=set(STOPWORDS),
@@ -111,7 +109,6 @@ def get_wordcloud(text_data,title):
                         relative_scaling=1.0,
                         random_state=1
   ).generate(str(text_data))
-
   fig = plt.figure(1, figsize=(12, 12))
   plt.axis('off')
   plt.title(title)
@@ -165,16 +162,14 @@ The output is:
 
 ### Try it yourself
 
-> **Sarah** TBD. Provide possible solution and output.
+What does the `apply()` method do in the preceding code cell?
 
-What does the `apply()` method do in the preceding code?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
+The `apply()` method calls the `len` function on every row's `message` column to find the length for each message.
 
-If you are unsure, you can refer to the [pandas reference documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.apply.html?azure-portal=true).
-
-TBD, provide possible solution and output.
+If you want to learn more, you can refer to the [pandas reference documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.apply.html?azure-portal=true).
 
 </details>
 
@@ -219,7 +214,6 @@ Spam messages skew much longer than ham messages.
 
 ### Try it yourself
 
-> **Sarah** TBD. Provide answers to the questions?
 
 Why does it appear in the details histograms that there is almost no overlap between the lengths of ham and spam text messages? What do the differences in scale tell us (and what could they inadvertently obscure)?
 
@@ -228,7 +222,7 @@ Why does it appear in the details histograms that there is almost no overlap bet
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  TBD provide answers to the questions.
+These vastly different lengths between ham and spam messages show us that spam messages tend to be much longer compared to real messages. This will inadvertently obscure longer, real messages.
 
 </details>
 

@@ -109,7 +109,6 @@ Now, it's time to evaluate our model's performance.
 
 ```python
 from sklearn.metrics import classification_report, confusion_matrix
-
 print(classification_report(predictions, y_test))
 ```
 
@@ -117,10 +116,8 @@ The output is:
 
 ```Output
              precision    recall  f1-score   support
-
         ham       0.97      0.99      0.98      1430
        spam       0.95      0.79      0.86       242
-
 avg / total       0.96      0.96      0.96      1672
 ```
 
@@ -157,4 +154,3 @@ Overall, our model is good for spam detection, but our recall score (the proport
 >
 >The performance of our Naive Bayes model helps underscore the algorithm's popularity, particularly for spam detection. Even untuned, we got good performance, performance that would only continue to improve in production as users submitted more examples of spam messages.
 >
-

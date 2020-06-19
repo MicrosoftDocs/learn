@@ -23,7 +23,6 @@ When you have your API keys in hand, you're ready to start. Substitute the API k
 # subscription_key = 'ACCOUNT_KEY'
 subscription_key = '8efb79ce8fd84c95bd1aa2f9d68ae734'
 assert subscription_key
-
 # If using a Free Trial account, this URL does not need to be updated.
 # If using a paid account, verify that it matches the region where the 
 # Text Analytics Service was set up.
@@ -41,7 +40,6 @@ The Azure Text Analytics API has a hard limit of 1,000 calls at a time, so we ne
 
 ```python
 chunks = np.array_split(df, 6)
-
 for chunk in chunks:
     print(len(chunk))
 ```
@@ -62,10 +60,8 @@ Two things that cognitive services like those provided by Azure offer are langua
 ```python
 # Prepare the header for the JSON document including your subscription key
 headers   = {"Ocp-Apim-Subscription-Key": subscription_key}
-
 # Supply the URL for the language-identification API.
 language_api_url = text_analytics_base_url + "languages"
-
 # Iterate over the chunked DataFrame.
 for i in range(len(chunks)):
     
@@ -95,7 +91,6 @@ Now, we need perform similar preparation of the data for sentiment analysis:
 ```python
 # Supply the URL for the sentiment-analysis API.
 sentiment_api_url = text_analytics_base_url + "sentiment"
-
 # Iterate over the chunked DataFrame.
 for i in range(len(chunks)):
     
@@ -113,7 +108,6 @@ for i in range(len(chunks)):
     sent_list = []
     for document in sentiments['documents']:
         sent_list.append(document['score'])
-
     # Put the list of identified sentiments in a new column of the chunked DataFrame.
     chunks[i]['Sentiment'] = np.array(sent_list)
 ```
@@ -122,12 +116,10 @@ Now, we need to reassemble our chunked DataFrame:
 
 ```python
 azure_df = pd.DataFrame(columns=['Index', 'Class', 'Message', 'Language', 'Sentiment'])
-
 for i in range(len(chunks)):
     azure_df = pd.concat([azure_df, chunks[i]])
     if i == 0:
         azure_df['index'] = chunks[i].index
-
 azure_df.set_index('index', inplace=True)
 azure_df.drop(['Index'], axis=1, inplace=True)
 azure_df.head()

@@ -20,9 +20,9 @@ Drop rows from the DataFrame that contain `NaN` values.
   ```python
   df.dropna()
   ```
-  
+
   The output is:
-  
+
   :::image type="content" source="../media/df-drop-na.png" alt-text="Screenshot that shows the table output of running df.dropna()." lightbox="../media/df-drop-na.png" loc-scope="Azure":::
 
 </details>
@@ -49,7 +49,6 @@ Dropping those rows eliminated 76% of our data (from 8989 entries to 2190 entrie
 > ### Key takeaway
 >
 > Another solution to removing `null` values is to impute values for them, but this can be tricky. Should we handle missing values as equal to 0? What about a fatty food with `NaN` for `Lipid_Tot_(g)`? We could try taking the averages of values surrounding a `NaN`, but what about foods that are right next to rows that contain foods from radically different food groups? It's possible to make justifiable imputations for missing values, but it can be important to involve subject matter experts (SMEs) in that process.
-
 ## Split off descriptive columns
 
 Our descriptive columns (such as `FoodGroup` and `Shrt_Desc`) pose challenges for us when it comes time to perform PCA because they are categorical rather than numerical features. So, we will split our DataFrame into two: one that contains the descriptive information and one that contains the nutritional information:
@@ -103,7 +102,7 @@ Why was it necessary to structure the `iloc` method call the way we did in the p
   ```
 
   The output is: 
-    
+
   :::image type="content" source="../media/nutr-df-head-49.png" alt-text="Screenshot that shows a table that holds the results of running nutr_df.head." lightbox="../media/nutr-df-head-49.png" loc-scope="Azure":::
 
  5 rows × 49 columns
@@ -116,7 +115,11 @@ Why was it necessary to structure the `iloc` method call the way we did in the p
 
 ### Try it yourself
 
+> **SARAH** TBD - Do we need to provide output for this exercise? Thanks.
+No, because the output is below in the `nutr_df.head()`
+
 Now, set the index of `nutr_df` to use `NDB_No`.
+
 
 <br />
 
@@ -127,7 +130,7 @@ Now, set the index of `nutr_df` to use `NDB_No`.
   ```python
   nutr_df.set_index('NDB_No', inplace=True)
   ```
-
+64325ab491d4e3f74988dda20972166c820afd
 </details>
 
 <br /><br />
