@@ -17,15 +17,15 @@ quiz:
   questions:
     - content: "Which are examples of kubernetes cluster architectures?"
       choices:
-        - content: "Single master, several workers"
+        - content: "Single control plane, several nodes"
           isCorrect: true
-          explanation: "This is the most common case of Kubernetes architecture, where you have one master and several nodes to support the workloads"
-        - content: "Several masters, single node"
+          explanation: "This is the most common case of Kubernetes architecture, where you have one control plane and several nodes to support the workloads"
+        - content: "Several control planes, single node"
           isCorrect: false
           explanation: "While it is possible to do so, it isn't recommended and it doesn't make sense to have one single node in a cluster."
-        - content: "No nodes, only master"
+        - content: "No nodes, only control plane"
           isCorrect: false
-          explanation: "The master node cannot receive workloads. Therefore, there can't be a single master node."
+          explanation: "The control plane node cannot receive workloads. Therefore, there can't be a single control plane."
 
     - content: "What are node pools?"
       choices:
