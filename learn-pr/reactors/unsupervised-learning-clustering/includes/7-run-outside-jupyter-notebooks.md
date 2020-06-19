@@ -1,7 +1,3 @@
-> [!div class="alert is-tip"]
-> **SARAH** - TBD - This unit asks students to run python in VS Code, but now that the entire learn path is in VS Code, perhaps this is redundant.
-I'm OK with this redundancy because it's the first time they are doing a .py file.
-
 Python code doesn't have to reside in notebooks. Simple programs can provide a useful tool for investigating your data. 
 
 To see this in action, open the program k-Means.py in the GitHub repository in Microsoft Visual Studio Code. The program is largely the code from earlier in this notebook. Now run k-Means.py from the command-line interface on your local computer. It will ask for the number of clusters and the file path for the USDA dataset that you have been using in this section.

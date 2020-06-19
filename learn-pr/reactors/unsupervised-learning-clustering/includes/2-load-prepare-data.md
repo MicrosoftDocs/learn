@@ -109,6 +109,7 @@ This is a dramatic correlation!
 > [!NOTE]
 > Despite specifying latin1 encoding when we read in the dataset from the CSV file, character corruption can still happen. If the preceding `plt.scatter` call fails, try this code instead: `plt.scatter(df['Folate_Tot_(Âµg)'], df['Folate_DFE_(Âµg)'])`
 
+
 ### Try it yourself
 
 In the following code cell, run a scatterplot of another correlative pair of features from this dataset. 

@@ -106,10 +106,6 @@ array([1])
 
 The output indicates that Gjetost cheese falls under cluster 1.
 
-<br /><br />
-
-***
-
 We can also see the actual coordinate values for cluster centroids.
 
 ```python
