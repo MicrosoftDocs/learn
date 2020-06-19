@@ -59,7 +59,7 @@ A score of 0.5 might indicate that the sentiment of the text is indeterminate, a
 
 ## Key phrase extraction
 
-Key phrase extraction is the concept of evaluating the text of a document, or documents, and then identifying the main points around the context or context of the document(s). Consider the restaurant scenario discussed previously. Depending on the volume of surveys that you have collected, it can take a long time to read through the reviews. Instead, you can use the key phrase extraction capabilities of the Text Analytics service and let the AI algorithms do the work for you.
+Key phrase extraction is the concept of evaluating the text of a document, or documents, and then identifying the main talking points of the document(s). Consider the restaurant scenario discussed previously. Depending on the volume of surveys that you have collected, it can take a long time to read through the reviews. Instead, you can use the key phrase extraction capabilities of the Text Analytics service to summarize the main points.
 
 You might receive a review such as:
 

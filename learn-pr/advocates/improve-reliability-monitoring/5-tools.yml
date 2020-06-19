@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-monitoring.5-tools
+title: "Azure monitoring tools"
+metadata:
+  title: "Azure monitoring tools"
+  description: "Azure monitoring tools"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-tools.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of the following are the two major data types used in Azure Monitor?'
+    choices:
+    - content: 'charts and tables'
+      isCorrect: false
+      explanation: 'Azure monitor can display both charts and tables, but these are not data types.'
+    - content: 'metrics and logs'
+      isCorrect: true 
+      explanation: 'Correct, Azure Monitor works with metrics and logs.'
+    - content: 'counters and gauges'
+      isCorrect: false
+      explanation: 'Azure monitor can ingest metrics from counters and gauges, but these are not the two major data types.'

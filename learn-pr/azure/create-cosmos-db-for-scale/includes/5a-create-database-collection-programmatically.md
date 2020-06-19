@@ -764,7 +764,7 @@ Container Id:   Clothing
 1. Paste the following command into the Cloud Shell on the right to create to store the name of the Azure Cosmos DB account name in an environment variable to use later. Make sure to replace **COSMOS_NAME** with the name of your account:
 
     ```bash
-    export NAME= COSMOS_NAME
+    export NAME=COSMOS_NAME
     ```
 
     > [!NOTE]

@@ -2,7 +2,7 @@
 uid: learn.azure.manage-device-identity-ad-join
 metadata:
   title: Manage device identity with Azure AD join and Enterprise State Roaming
-  description: Learn how to manage device identity with Azure AD join and Enterprise State Roaming.
+  description: Learn how to manage device identity by using Azure AD join and Enterprise State Roaming.
   ms.date: 04/16/2020
   author: cwatson-cat
   ms.author: cwatson
@@ -13,10 +13,10 @@ summary: Evaluate options to manage device identities in Azure AD. Allow users t
 abstract: | 
   In this module, you will:
   - Describe options to manage device identities in Azure AD
-  - Configure Azure AD Join to manage device identities
-  - Configure Enterprise State Roaming to reduce the time users need to configure a new device
+  - Configure Azure AD join to manage device identities
+  - Configure Enterprise State Roaming to reduce the time that users need to configure a new device
 prerequisites: | 
-  - Basic knowledge of Azure Active Directory features such as Azure AD Connect, Azure Active Directory Seamless Single Sign-On, and Multi-Factor Authentication
+  - Basic knowledge of Azure Active Directory features such as Azure AD Connect, Azure AD Seamless Single Sign-On, and Azure Multi-Factor Authentication
   - Basic understanding of mobile device management software like Microsoft Intune 
 iconUrl: /learn/achievements/manage-device-identity-ad-join.svg
 levels:
