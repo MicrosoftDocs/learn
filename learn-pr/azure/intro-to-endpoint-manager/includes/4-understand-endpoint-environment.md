@@ -1,6 +1,8 @@
 
 Microsoft Endpoint Manager is used to manage your organization's endpoints. As we've mentioned, Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, and servers that your organization uses. Additionally, endpoints also include the apps used by your organization. These endpoints are managed in different environments based on where these endpoints are located. Microsoft Endpoint Manager manages multiple endpoint environments, including cloud endpoints, on-premises endpoints, and co-managed endpoints.
 
+![Diagram of cloud and on-premises endpoints](../media/endpoints.png)
+
 ## Cloud endpoint management
 
 You can manage devices, apps, and data by using a cloud-based mobile device management (MDM) and mobile application management (MAM) service, such as Microsoft Intune. Intune integrates with other services, including Microsoft 365 and Azure Active Directory (Azure AD) to control who has access and what they have access to. Intune also integrates with Azure Information Protection to protect your organization's data. When you use Intune with Microsoft 365, you can enable your workforce to be productive on all their devices, while keeping your organi

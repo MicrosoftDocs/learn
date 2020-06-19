@@ -16,19 +16,17 @@ Microsoft Intune, which is available within Microsoft Endpoint Manager, is a clo
 
 In the following diagram, you can see how Intune interacts with other components in both your on-premises and cloud infrastructure:
 
-![Diagram of cloud and on-premises infrastructure](../media/intro-to-endpoint-manager-01.png)
+![Diagram of Intune infrastructure](../media/intune.png)
 
 ## Microsoft Endpoint Configuration Manager
 
 Configuration Manager is an on-premises management solution to manage desktops, servers, and laptops that are on your network or are internet-based. You can cloud-enable Configuration Manager to integrate with Intune, Azure AD, Microsoft Defender ATP, and other cloud services. Use Configuration Manager to deploy apps, software updates, and operating systems, as well as configure sites and clients, and run and monitor management tasks.
 
+![Diagram of Configuration Manager infrastructure](../media/configmanager.png)
+
 ### Co-management
 
 Co-management is where you concurrently manage Windows 10 devices with both Configuration Manager and Microsoft Intune. It combines your existing on-premises Configuration Manager and Active Directory investment with the cloud by using Intune, Azure AD, and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority. You keep some tasks on-premises, while running other tasks in the cloud with Intune.
-
-<!--
-https://docs.microsoft.com/mem/intune/fundamentals/what-is-device-management#co-management
--->
 
 There are two main paths to reach co-management:  
 - **Existing Configuration Manager clients**: You have Windows 10 devices that are already Configuration Manager clients. You set up hybrid Azure AD, and enroll them into Intune.  
