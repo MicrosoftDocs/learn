@@ -14,13 +14,13 @@ In order to complete this activity, you will complete the following steps:
 
 This lab will guide you through getting ostress configured, and then you'll see how to use both ostress and PowerShell together to initiate and analyze a failover of Azure SQL Database.  
 
->Note: Learn more about the PowerShell commands used and available [in the documentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-powershell-samples?tabs=single-database).  
+>Note: Learn more about the PowerShell commands used and available [in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-powershell-samples?tabs=single-database).  
 
 **Step 0 - Confirm environment is properly configured** 
 
 Open the Command Prompt (it is pinned to the bottom taskbar).  
 
-Confirm [RMUtils tool (which contains ostress)](https://www.microsoft.com/en-us/download/details.aspx?id=4511) is installed and has been added to the Path. 
+Confirm [RMUtils tool (which contains ostress)](https://www.microsoft.com/download/details.aspx?id=4511) is installed and has been added to the Path. 
 ```cmd
 ostress
 ```

@@ -158,7 +158,7 @@ You may know ways to determine this time, but a new way may be to use the Audit 
 
 ![](../media/viewauditlogs.png)  
 
-Then, click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use and understand by SQL professionals. For the KQL documentation, [refer here](https://docs.microsoft.com/en-us/azure/kusto/query/).  
+Then, click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use and understand by SQL professionals. For the KQL documentation, [refer here](https://docs.microsoft.com/azure/kusto/query/).  
 
 ![](../media/loganalytics.png)  
 
@@ -205,7 +205,7 @@ You can check the status by refreshing your view of databases in **SSMS** by rig
 
 Once you see this, it should only be 1-2 minutes more. You will know it is done, because the command will complete. Also, you will no longer see "(Restoring...)" next to the copy database when you initiate a refresh.  
 
-If you notice it is taking longer than above stated times, it could be due to your environment. There are a limited number of restore requests that can be processed/submitted at once for a single subscription. If you want to learn more about the limits and related details for PITR while you wait, you can [read more to learn the details related to recovering an Azure SQL database by using automated database backups](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-recovery-using-backups).  
+If you notice it is taking longer than above stated times, it could be due to your environment. There are a limited number of restore requests that can be processed/submitted at once for a single subscription. If you want to learn more about the limits and related details for PITR while you wait, you can [read more to learn the details related to recovering an Azure SQL database by using automated database backups](https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups).  
 
 **Step 3 - Confirm the new database is in the correct state (before the accident occurred)**
 
@@ -257,4 +257,4 @@ And you can confirm it no longer exists with the following command.
 az sql db list -o table
 ```
 
-You've now seen how you can leverage point in time restore (PITR) in Azure SQL Database. PITR is also available in Azure SQL Managed Instance, **for databases not the whole instance**. You can use almost the same commands except with `az sql midb` as opposed to `az sql db`. For more information, see the [documentation](https://docs.microsoft.com/en-us/cli/azure/sql/midb?view=azure-cli-latest#az-sql-midb-restore).  
+You've now seen how you can leverage point in time restore (PITR) in Azure SQL Database. PITR is also available in Azure SQL Managed Instance, **for databases not the whole instance**. You can use almost the same commands except with `az sql midb` as opposed to `az sql db`. For more information, see the [documentation](https://docs.microsoft.com/cli/azure/sql/midb?view=azure-cli-latest#az-sql-midb-restore).  
