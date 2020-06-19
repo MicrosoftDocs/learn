@@ -43,7 +43,7 @@ The single control plane and a single worker is a variant of the previous archit
 
 [//]: # (I suggest putting a diagram that shows this configuration)
 
-The multiple masters and multiple worker architecture is the most used architecture for production clusters. Deploying multiple master nodes and multiple worker nodes allows for high availability even when a master node is down.
+The multiple control planes and multiple worker architecture is the most used architecture for production clusters. Deploying multiple control planes nodes and multiple nodes allows for high availability even when a control plane node is down.
 
 For this purpose, master nodes are deployed in odd numbers, so quorum can be maintained if one or more masters fail.
 
