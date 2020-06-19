@@ -1,6 +1,3 @@
-
-[//]: # (1. There are some things to consider with the structure of the exercise. It would help if you started with how what the learner is going to do here applies to the overall scenario instead of starting with the first H2 step. In this case, we want to deploy workloads, which means the creation of the cluster is one of those subtasks we need to complete to complete the main task. "How to deploy workloads declaratively?" Explore one of the architectural decisions you discussed in the previous unit.)
-
 [//]: # (2. Create the cluster using the portal and drop the Azure CLI steps and the Powershell steps [You're repeating the Azure CLI info in the Powershell scripts instead of using New-AzAks]. In hindsight, we do not need the pivot.)
 
 [//]: # (3. Keep the Linking with kubectl section as is, however, explain why we're doing this. Mention how this step configures the user's Kubernetes context. Make sure to call out the environment in which these steps execute. Avoid an instruction like this  one, "Open your preferred terminal [or use CloudShell]." Not all terminals are configured the same. Focus on cloud shell usage since all executables are already configured. Some students may prefer the macOS terminal, but may not have azure CLI install.)
@@ -12,6 +9,8 @@
 [//]: # (5. Do not use the "Finish" heading.)
 
 [//]:# (Make sure the red box has the proper size border, i.e., brush width 3px. https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-create-screenshot?branch=master)
+
+Now we need to create our cluster so we can deploy Contoso's website. To do that, let's recall what we learned from the previous unit about cluster architectures. To make this deployment work we're going to need several nodes, because we need to meet the demand of customers, so let's use the "Single Control Plane and Multiple Nodes" architecture, since it provides the best way to create and manage the resources and meet the scaling demand
 
 ## Create a new resource
 
