@@ -165,7 +165,7 @@ Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
 ***
 
-Even without subject matter expertise, is it possible to get a more accurate sense of the kinds of foods that each component defines? Yes! For this reason, we merged the `FoodGroup` column back into `pca_df`. We will sort that DataFrame by the components and count the values from `FoodGroup` for the top items:
+Even without subject matter expertise, is it possible to get a more accurate sense of the kinds of foods that each component defines? Yes! For this reason, we merged the `FoodGroup` column back into `pca_df`. We'll sort that DataFrame by the components and count the values from `FoodGroup` for the top items:
 
 ```python
 pca_df.sort_values(by='c1')['FoodGroup'][:500].value_counts()

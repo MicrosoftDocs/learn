@@ -86,7 +86,7 @@ for i in range(len(chunks)):
     chunks[i]['Language'] = np.array(lang_list)
 ```
 
-Now, we need perform similar preparation of the data for sentiment analysis:
+We need perform similar preparation of the data for sentiment analysis:
 
 ```python
 # Supply the URL for the sentiment-analysis API.
@@ -189,7 +189,7 @@ The overwhelming majority of the messages are in English, although we have sever
 
 ### Try it yourself
 
-Now use the `groupby` method to display actual counts of the languages detected in the dataset rather than a bar chart of them.
+Use the `groupby` method to display actual counts of the languages detected in the dataset rather than a bar chart of them.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>

@@ -116,7 +116,7 @@ def get_wordcloud(text_data,title):
   plt.show()
 ```
 
-Now, it's time to plot the word clouds.
+It's time to plot the word clouds.
 
 ```python
 spam_msg = df.loc[df['Class']=='spam']['Message']

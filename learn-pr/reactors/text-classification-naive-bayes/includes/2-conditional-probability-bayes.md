@@ -1,6 +1,6 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-Naive Bayes is a convenient algorithm for spam detection because it doesn't require encoding complex rules. All it needs is training examples, of which there are plenty when it comes to email spam. Naive Bayes does this work by using [conditional probability](https://wikipedia.org/wiki/Conditional_probability?azure-portal=true).
+Naive Bayes is a convenient algorithm for spam detection because it doesn't require encoding complex rules. All it needs is training examples. There are plenty of examples for email spam. Naive Bayes does this work by using [conditional probability](https://wikipedia.org/wiki/Conditional_probability?azure-portal=true).
 
 ## Conditional probability
 
