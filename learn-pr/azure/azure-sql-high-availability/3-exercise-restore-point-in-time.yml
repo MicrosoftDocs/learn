@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-sql-high-availability.4-exercise-restore-point-in-time
+uid: learn.azure-sql-high-availability.3-exercise-restore-point-in-time
 metadata:
   title: Exercise - Restore to a point in time
-  description: Exercise - Restore to a point in time
+  description: Restore to a point in time
   ms.date: 07/31/2020
   author: amthomas46
   ms.author: antho
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Restore to a point in time
 durationInMinutes: 10
-interactive: bash
+interactive: powershell
 azureSandbox: true
 content: |
-  [!include[](includes/4-exercise-restore-point-in-time.md)]
+  [!include[](includes/3-exercise-restore-point-in-time.md)]

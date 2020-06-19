@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-sql-high-availability.5-high-availability
+uid: learn.azure-sql-high-availability.4-high-availability-arch
 metadata:
   title: High availability by service tier
   description: High availability by service tier
@@ -11,4 +11,4 @@ metadata:
 title: High availability by service tier
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-high-availability.md)]
+  [!include[](includes/4-high-availability-arch.md)]

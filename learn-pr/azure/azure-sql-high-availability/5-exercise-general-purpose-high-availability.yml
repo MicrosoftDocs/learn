@@ -13,4 +13,5 @@ durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/6-exercise-general-purpose-high-availability.md)]
+  [!include[](includes/6
+  -exercise-general-purpose-high-availability.md)]
