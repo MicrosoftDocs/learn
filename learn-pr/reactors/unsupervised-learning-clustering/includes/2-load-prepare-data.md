@@ -2,7 +2,7 @@ To illustrate *k*-means clustering in action, we'll use the familiar [U.S. Dep
 
 ```python
 import pandas as pd
-df = pd.read_csv('Data/USDA-nndb-combined.csv', encoding='latin_1')
+df = pd.read_csv('Data/USDA-nndb-combined.csv', encoding='latin1')
 ```
 
 ```python
@@ -92,7 +92,7 @@ Before dropping anything from the `df` `DataFrame`, however, let's take a quic
 ```python
 from matplotlib import pyplot as plt
 %matplotlib inline
-plt.scatter(df['Folate_Tot_(µg)'], df['Folate_DFE_(µg)'])
+plt.scatter(df['Folate_Tot_(Âµg)'], df['Folate_DFE_(µg)'])
 ```
 
 The output is:
@@ -107,7 +107,7 @@ The output is:
 This is a dramatic correlation!
 
 > [!NOTE]
-> Despite specifying Latin_1 encoding when we read in the dataset from the CSV file, character corruption can still occur. If the plt.scatter call above fails, try this code instead: `plt.scatter(df['Folate\_Tot\_(Âµg)'], df['Folate\_DFE\_(Âµg)'])`
+> Despite specifying Latin_1 encoding when we read in the dataset from the CSV file, character corruption can still occur. If the plt.scatter call above fails, try this code instead: `plt.scatter(df['Folate_Tot_(Âµg)'], df['Folate_DFE_(Âµg)'])`
 
 ### Try it yourself
 
@@ -168,7 +168,7 @@ The output is:
 ***
 
 > [!NOTE]
-> Again, if the read_csv() function did not read in the µ (mu) symbol correctly and the drop() method call above fails, try this code instead: `nutr_df.drop(['Folate\_DFE\_(Âµg)', 'Vit\_A\_RAE', 'Vit\_D\_IU'], inplace=True, axis=1)`
+> Again, if the read_csv() function did not read in the µ (mu) symbol correctly and the drop() method call above fails, try this code instead: `nutr_df.drop(['Folate_DFE_(Âµg)', 'Vit_A_RAE', 'Vit_D_IU'], inplace=True, axis=1)`
 
 Because the *k*-means algorithm will be calculating the Euclidean distances between data points and centroids, we need to ensure that all of the numeric features in our dataset use compatible units; we don't want to try and calculate distances between units of mass like grams and units of energy like kilocalories. Just as we did with principal component analysis (PCA) in Section 1.2, we will use scikit-learn's [`StandardScaler()` function](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html?azure-portal=true) to center the data around each feature's mean and transform each feature to have a standard deviation of 1.
 

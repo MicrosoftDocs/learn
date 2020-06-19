@@ -157,14 +157,16 @@ A right join is simply the mirror image of a left join. Entries from the left D
 
 Perform a right join of `df1` and `df2` in the following code cell. But before you do that, ask yourself what shape you expect the resulting DataFrame to have. Do you expect it to have any `NaN` values?
 
-> **SARAH TBD** - Hint looks incomplete. Do you want to add code and output?
-
 <br/>
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
   The parameter for the right join is `how='right'`.
+
+  ```python
+  right_df = pd.merge(df1, df2, how='right', on='NDB_No')
+  ```
 
 </details>
 
@@ -249,8 +251,24 @@ The resulting DataFrame is essentially the first 2,000 rows of the original `
 An outer join is the union of two DataFrames. Anything that's in either DataFrame will be in the resultant one. Perform an outer join of `df1` and `df2`.
 
 - What shape do you expect the resulting DataFrame to have?
-- How does it differ from the right join of `df1` and `df2`?
-- What differences would there have to be in the shape or content of either DataFrame for the outer join of the two to be different from their right join?
+- How does it differ from the left join of `df1` and `df2`?
+- What differences would there have to be in the shape or content of either DataFrame for the outer join of the two to be different from their left join?
 
-> [!div class="alert is-tip"]
-> **SARAH TBD** - Add Hint here?
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```python
+  outer_df = pd.merge(df1, df2, how='outer', on='NDB_No')
+  outer_df.shape
+  ```
+
+  ```output
+  (8790, 53)
+  ```
+
+  Left join of `df1` and `df2` is:
+  ```output
+  (8790, 53)
+  ```
+
+</details>

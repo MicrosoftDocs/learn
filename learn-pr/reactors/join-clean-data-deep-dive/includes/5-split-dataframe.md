@@ -261,8 +261,16 @@ df1.to_csv('Data/NNDB1.csv', sep=',', encoding='utf-8',index=False)
 
 How would you export df2 to a CSV file?
 
-> [!div class="alert is-tip"]
-> **SARAH - TBD** - ADD HINT?
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  Try:
+
+  ```python
+  df2.to_csv('Data/NNDB1_wNBDno.csv', sep=',', encoding='utf-8',index=False)
+  ```
+
+</details>
 
 > [!div class="alert is-tip"]
 >

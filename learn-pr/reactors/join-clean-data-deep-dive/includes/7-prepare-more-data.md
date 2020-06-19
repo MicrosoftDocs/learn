@@ -55,8 +55,6 @@ We need to combine `df` and `fg_df` by using the pandas `merge()` function
 
 Perform the command to join `df` and `fg_df` in a code cell.
 
-> **SARAH TBD** - Not sure if the code and output below is supposed to be in a Hint or not. 
-
 ```python
 combined_df = pd.concat([df, fg_df])
 ```
