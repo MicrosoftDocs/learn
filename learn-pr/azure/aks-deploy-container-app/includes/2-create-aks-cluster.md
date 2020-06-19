@@ -21,7 +21,7 @@ There are several architectural considerations you have to keep in mind when dep
 
 There are a few main cluster architectures for Kubernetes-based deployments.
 
-### Single master and multiple workers
+### Single control plane and multiple workers
 
 [//]: # (I suggest putting a diagram that shows this configuration)
 
