@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.undefined.1-introduction
+uid: learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.1-introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  author: undefined
-  ms.author: undefined
+  author: aprilspeight
+  ms.author: apspeigh
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
