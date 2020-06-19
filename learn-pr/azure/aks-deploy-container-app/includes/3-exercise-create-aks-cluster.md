@@ -1,5 +1,3 @@
-[//]: # (4. Use the "azurecli" script tag when using CLI commands.)
-
 [//]: # (5. General thoughts about using headers. In this unit, the user has two tasks. One, create a new AKS cluster and two, configure the user environment Kubernetes context. Create a header for these two main tasks you want the user to perform. Underneath each add H3 headers to describe the subtasks the user will perform. For example, create a resource group. Avoid titles with "-ing" words. Rewrite the titles that start with an -ing word. For example,  "Creating a network" -> "Create a network" )
 
 [//]: # (5. Do not use the "Finish" heading.)
@@ -18,7 +16,7 @@ The first action you need to take in order to create your cluster is to provisio
 
 1. Before creating an AKS cluster, it's necessary to create an Azure Resource Group, this group will hold all of the created resources:
 
-    ```azcli
+    ```azurecli
     az group create --name contoso-aks --location eastus
     ```
 
@@ -41,7 +39,7 @@ The first action you need to take in order to create your cluster is to provisio
 
 2. Creating an AKS using bash resumes in issuing a single command using Azure CLI. Open your preferred terminal (or use CloudShell) and issue the following command:
 
-    ```azcli
+    ```azurecli
     az aks create --resource-group contoso-aks --name contoso-kubernetes-cluster --node-count 3 --enable-addons http_application_routing --generate-ssh-keys --dns-name-prefix contoso-kubernetes --node-vm-size Standard_B2s
     ```
 
@@ -49,7 +47,7 @@ The first action you need to take in order to create your cluster is to provisio
 
 1. Link your Kubernetes cluster with `kubectl` with the following command in the CloudShell
 
-    ```azcli
+    ```azurecli
     az aks get-credentials --name contoso-kubernetes-cluster --resource-group contoso-aks
     ```
 
