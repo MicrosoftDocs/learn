@@ -107,7 +107,7 @@ When deployment completes, select the **Go to Resource** notification button to 
 
 1. Before creating an AKS cluster, it's necessary to create an Azure Resource Group, this group will hold all of the created resources:
 
-    ```bash
+    ```azcli
     az group create --name contoso-aks --location eastus
     ```
 
@@ -130,40 +130,7 @@ When deployment completes, select the **Go to Resource** notification button to 
 
 2. Creating an AKS using bash resumes in issuing a single command using Azure CLI. Open your preferred terminal (or use CloudShell) and issue the following command:
 
-    ```bash
-    az aks create --resource-group contoso-aks --name contoso-kubernetes-cluster --node-count 3 --enable-addons http_application_routing --generate-ssh-keys --dns-name-prefix contoso-kubernetes --node-vm-size Standard_B2s
-    ```
-
-:::zone-end
-
-:::zone pivot="powershell"
-
-1. Before creating an AKS cluster, it's necessary to create an Azure Resource Group, this group will hold all of the created resources:
-
-    ```powershell
-    az group create --name contoso-aks --location eastus
-    ```
-
-    If the group has been created successfully, you will receive the following response:
-
-    ```json
-    {
-      "id": "/subscriptions/<guid>/resourceGroups/contoso-aks",
-      "location": "eastus",
-      "managedBy": null,
-      "name": "contoso-aks",
-      "properties": {
-        "provisioningState": "Succeeded"
-      },
-      "tags": null
-    }
-    ```
-
-    Then it's time to create the cluster.
-
-2. Creating an AKS using powershell resumes in issuing a single command using Azure CLI. Open your preferred terminal (or use CloudShell) and issue the following command:
-
-    ```powershell
+    ```azcli
     az aks create --resource-group contoso-aks --name contoso-kubernetes-cluster --node-count 3 --enable-addons http_application_routing --generate-ssh-keys --dns-name-prefix contoso-kubernetes --node-vm-size Standard_B2s
     ```
 
@@ -188,7 +155,7 @@ When deployment completes, select the **Go to Resource** notification button to 
 
 3. Link your Kubernetes cluster with `kubectl` with the following command
 
-    ```bash
+    ```azcli
     az aks get-credentials --name contoso-kubernetes-cluster --resource-group contoso-aks
     ```
 
