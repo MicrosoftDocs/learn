@@ -13,7 +13,7 @@ Kubernetes is based on clusters. Instead of having a single and powerful VM, it 
 Clusters are based on nodes. There are two types of nodes in a Kubernetes cluster:
 
 - **Control Plane nodes**: Hosts the control plane aspects of the cluster. They're responsible for providing the API you and all the other nodes will use to communicate. No workloads are deployed or scheduled in these nodes. These nodes are reserved for services controlling the cluster, also known as the control plane.
-- **Worker nodes**: These nodes are responsible for executing workloads and applications.
+- **Nodes**: These nodes are responsible for executing workloads and applications.
 
 ## Cluster architectures
 
