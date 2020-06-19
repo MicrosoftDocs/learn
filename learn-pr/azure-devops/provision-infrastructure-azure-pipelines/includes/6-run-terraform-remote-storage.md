@@ -192,7 +192,7 @@ terraform {
 }
 ```
 
-To specify your Blob storage account in this `backend` block, you can modify your plan like this:
+To specify your Blob storage account in this `backend` block, you can modify your plan like this (don't make this change just yet):
 
 ```terraform
 terraform {

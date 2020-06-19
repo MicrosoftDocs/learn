@@ -9,7 +9,7 @@ The data graph is something you can interact with. Once you start up the develop
 GraphiQL allows you to do the following:
 
 - **Navigate**: Drill down into the data graph and its content by expanding nodes to find just the data you need.
-- **Construct queries**: As you down into the graph, the tool will craft a query for you. You can also edit the query text as you see fit to see the results.
+- **Construct queries**: As you drill down into the graph, the tool will craft a query for you. You can also edit the query text as you see fit to see the results.
 - **Browse results**: Run the query you construct to see it rendered in the tool. You will know exactly what response a query renders before venturing on to include it in a component.
 
 ## Use data in a page component
