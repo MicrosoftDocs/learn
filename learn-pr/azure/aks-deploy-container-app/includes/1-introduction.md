@@ -10,7 +10,7 @@ In this module, you will:
 
 - Create and set up an Azure Kubernetes Cluster
 - Deploy Kubernetes workloads using deployment YAML files
-- Expose Kubernetes workloads using service YAML files
+- Expose Kubernetes workloads using services and ingresses
 - Integrate Azure Container Registry to deploy container images
 
 ## Prerequisites
