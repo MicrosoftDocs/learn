@@ -44,7 +44,7 @@ In this module, you saw a few tools that you can use to automate your deployment
 * [Terraform](https://www.terraform.io/?azure-portal=true)
 * [Terraform on Azure documentation](https://docs.microsoft.com/azure/terraform/?azure-portal=true)
 
-## Inspecting and validating infrastructure for compliance
+## Appendix: Inspecting and validating infrastructure for compliance
 
 We've seen the team take its first steps toward treating their infrastructure as code. Just as application code needs to be secure and comply with regulations, so does your infrastructure code. What are some concepts and tools to consider for inspecting and validating infrastructure for compliance?
 

@@ -51,7 +51,7 @@ Replace the `// POST action` comment in *:::no-loc text="Controllers/ProductsCon
 
 ```csharp
 [HttpPost]
-public async Task<ActionResult<Product>> Create(Product product)
+public async Task<IActionResult> Create(Product product)
 {
     _context.Products.Add(product);
     await _context.SaveChangesAsync();
@@ -168,7 +168,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 1. Start the web API by running the following command:
 
     ```dotnetcli
-    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+    dotnet ./bin/Debug/netcoreapp3.1/ContosoPets.Api.dll \
         > ContosoPets.Api.log &
     ```
 

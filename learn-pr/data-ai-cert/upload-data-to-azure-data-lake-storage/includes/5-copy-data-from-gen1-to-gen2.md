@@ -71,7 +71,7 @@ You'll upload this data file in various ways. Keep in mind that this is a _simpl
 1. In the Azure portal, search for the Data Lake Storage Gen1 service you created (**dlsgen1XXX**).
 1. On the **Overview** pane, select **Data Explorer**.
 1. On the **Data Explorer** pane, select the **Upload** button.
-1. On the **Upload file** pane, select the browse icon, go to the folder, and select **salesUK.txt**. Then select **Add selected files**. You'll know the file is uploaded when the **States** column displays **Completed**.
+1. On the **Upload file** pane, select the browse icon, go to the folder, and select **salesUK.txt**. Then select **Add selected files**. You'll know the file is uploaded when the **Status** column displays **Completed**.
 1. Close the **Upload files** pane.
 
 ## Set permissions for the Data Lake Storage Gen1 account

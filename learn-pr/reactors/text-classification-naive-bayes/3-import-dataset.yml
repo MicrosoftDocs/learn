@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.text-classification-naive-bayes.3-import-dataset
+title: Import the dataset
+metadata:
+  title: Import the dataset
+  description: Import the dataset and the pandas Python library.
+  ms.date: 06/30/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 30
+content: |
+  [!include[](includes/3-import-dataset.md)]

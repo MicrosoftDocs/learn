@@ -122,7 +122,7 @@ Why would a customer use the technology; that is, what type of problem does it s
 
 - Meet Java customers where they are at their favorite IDEs: Eclipse (around 40% Java IDE market share).
 - Use familiar IDE environment engage with Azure will help them get started with and developing Azure App Service without a steep learning curve.
-- Deploy web app to Azure App Service without efforts to learn Azure specific technologies like Azure CLI or adopting Visual Studio and VS Code.
+- Deploy web app to Azure App Service without efforts to learn Azure specific technologies like Azure CLI or adopting Visual Studio and Visual Studio Code.
 
 **Useful links**
 

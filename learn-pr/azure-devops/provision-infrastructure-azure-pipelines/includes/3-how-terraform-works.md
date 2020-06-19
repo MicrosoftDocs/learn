@@ -55,11 +55,12 @@ Provider software versions are maintained separately from the `terraform` progra
 
 ```terraform
 provider "azurerm" {
-  version = "~> 1.35"
+  version = ">=2.0.0"
+  features {}
 }
 ```
 
-When you're getting started, you don't need to include the `provider` block in your plan. In practice, you might include the provider version to help ensure that your plan is run with a version of the provider that you understand and have tested.
+When working with Azure resources, the `provider` block is required in your plan. When you're getting started, you can use the most basic settings as shown here. In practice, you might specify additional features to customize the behavior of certain resources. For example, you can specify whether the OS disk should also be destroyed when a virtual machine is destroyed.
 
 ### Variables
 

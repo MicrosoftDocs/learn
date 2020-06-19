@@ -4,7 +4,7 @@ This problem is where an off-the-shelf road map tool starts to come in handy. Th
 
 There are a wide selection of potential tools available to you. These tools range from add-ons or extensions to common ticketing frameworks like [Jira](https://www.atlassian.com/software/jira), GTD planning tools like [Trello](https://trello.com/) and [Asana](https://asana.com/), or product-centric road map tools like [Clubhouse](https://clubhouse.io/). These tools allow you to have a single source of truth and output the data in different forms, suitable for varying audiences.
 
-You can do similar tracking with documents and [a spreadsheet](https://github.com/msft4startups/learn-modules/raw/master/product_module/ProductRoadmapTemplate.xlsx) but neither of these tools is designed for this purpose and lack tracking and reporting capabilities. They're not the optimal tools for managing a road map. These tools are, however, cheap or free.
+You can do similar tracking with documents and a spreadsheet but neither of these tools is designed for this purpose and lack tracking and reporting capabilities. They're not the optimal tools for managing a road map. These tools are, however, cheap or free.
 
 If you don’t already have a tool, then we recommend you try a few to find one that suits your team. Here are some useful selection factors to consider:
 

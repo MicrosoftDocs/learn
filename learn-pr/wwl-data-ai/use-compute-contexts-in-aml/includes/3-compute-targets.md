@@ -20,9 +20,9 @@ You can specify a *local* compute target for most processing tasks in Azure Mach
 
 Local compute is generally a great choice during development and testing with low to moderate volumes of data.
 
-### Training clusters
+### Compute clusters
 
-For training workloads with high scalability requirements, you can use Azure Machine Learning training clusters; which are multi-node clusters of Virtual Machines that automatically scale up or down to meet demand. This is a cost-effective way to run experiments that need to handle large volumes of data or use parallel processing to distribute the workload and reduce the time it takes to run.
+For experiment workloads with high scalability requirements, you can use Azure Machine Learning compute clusters; which are multi-node clusters of Virtual Machines that automatically scale up or down to meet demand. This is a cost-effective way to run experiments that need to handle large volumes of data or use parallel processing to distribute the workload and reduce the time it takes to run.
 
 ### Inference clusters
 
