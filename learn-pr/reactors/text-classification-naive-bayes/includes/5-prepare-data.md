@@ -77,7 +77,7 @@ Finally, we transform our training messages into a [document-term matrix](https:
 X_train_data = CountVect.transform(X_train)
 ```
 
-It can a tricky concept, so let's look at the training text matrix directly:
+It can be a tricky concept, so let's look at the training text matrix directly:
 
 ```python
 print(X_train_data)
