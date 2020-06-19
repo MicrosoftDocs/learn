@@ -1,5 +1,3 @@
-# Exercise - Import and configure resources
-
 In this unit, you will import and configure resources to add the Mixed Reality Tookit to your project.
 
 ## Import TextMesh Pro Essential Resources

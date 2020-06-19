@@ -1,5 +1,3 @@
-# Exercise - Configure Unity for Windows Mixed Reality
-
 In this unit, you will create a new Unity project and configure for Windows Mixed Reality.
 
 ## Create a new Unity project
