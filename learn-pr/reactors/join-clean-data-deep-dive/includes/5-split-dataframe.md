@@ -1,11 +1,11 @@
 By the end of this unit, you should be comfortable selecting and dropping specific columns from a DataFrame.
 
-It might seem strange to discuss splitting a `DataFrame` in a course section on joining them, but we'll do so here to create the `DataFrame`s that we'll join later on. We take this approach for two reasons:
+It might seem strange to discuss splitting a DataFrame in a course section on joining them, but we'll do so here to create the DataFrames that we'll join later on. We take this approach for two reasons:
 
-1. Creating our own `DataFrame`s gives us easy control over the content of the child `DataFrame`s to best demonstrate aspects of joining datasets.
-1. Because we have a baseline, joined `DataFrame` (`df`), it's easy to see how different methods of joining the child `DataFrame`s produce different results.
+- Creating our own DataFrames gives us easy control over the content of the child DataFrames to best demonstrate aspects of joining datasets.
+- Because we have a baseline, a joined DataFrame (`df`), it's easy to see how different methods of joining the child DataFrames produce different results.
 
-We're going to create two child `DataFrame`s, `df1` and `df2`. `df1` will contain the first 35 columns of our data, while `df2` will contain the rest. This will allow us to explore how we can manipulate and manage columns in a dataset, and to simulate a common scenario where some of the data you need is in one location, while the rest is in a different location.
+We're going to create two child DataFrames, `df1` and `df2`. `df1` will contain the first 35 columns of our data, and `df2` will contain the rest. This structure will allow us to explore how we can manipulate and manage columns in a dataset. It will also allow us to simulate a common scenario where some of the data that you need is in one location, while the rest is in a different location.
 
 ```python
 df1 = df.iloc[:,:35]
@@ -16,7 +16,7 @@ df1 = df.iloc[:,:35]
 - Why did we use syntax `df1 = df.iloc[:,:35]` to capture the first 35 columns of `df`?
 - What does the first `:` (colon) in the square brackets do?
 
-Experiment with `df3 = df.iloc[:35]` in a code cell and compare `df3.info()` with `df1.info()` to satisfy yourself as to why we need to use this syntax.
+Experiment with `df3 = df.iloc[:35]` in a code cell and compare `df3.info()` with `df1.info()` to see why we need to use this syntax.
 
 <br />
 
@@ -94,9 +94,9 @@ Experiment with `df3 = df.iloc[:35]` in a code cell and compare `df3.info()`�
 
 ## Let's create df2
 
-We'll create `df2` in a similar manner to `df1`, but we need to do things a little differently here to ensure that the first column (`NDB_No`) makes it into `df2`. This is going to serve as the column that's common to both child `DataFrame`s when we join them later in this section.
+We'll create `df2` in a similar manner to `df1`. But we need to do things a little differently here to ensure that the first column (`NDB_No`) makes it into `df2`. This is going to serve as the column that's common to both child DataFrames when we join them later in this section.
 
-We also want to populate `df2` with a different number of rows than `df1`, again simulating real world scenarios. Doing so will make is easier to demonstrate what goes on with some of the join techniques shown below.
+We also want to populate `df2` with a different number of rows than `df1`, again simulating real-world scenarios. Doing so will make it easier to demonstrate what goes on with some of the join techniques shown later.
 
 ```python
 df2 = df.iloc[0:2000, [0]+[i for i in range(35,53)]]
@@ -106,7 +106,7 @@ df2 = df.iloc[0:2000, [0]+[i for i in range(35,53)]]
 >
 > ### Question
 >
-> If you're unsure about why we use `[0] + [i for i in range(35,53)]` in the list comprehension above, review the documentation for the `range()` function using `range?` in a code cell. You may want to run `[0] + [i for i in range(35,53)]` in the cell as part of your exploration, and play around with adding (or concatenating) arrays. And remember Python uses zero-based indexing.
+> If you're unsure about why we use `[0] + [i for i in range(35,53)]` in the preceding list comprehension, review the documentation for the `range()` function by using `range?` in a code cell. You might want to run `[0] + [i for i in range(35,53)]` in the cell as part of your exploration, and experiment with adding (or concatenating) arrays. And remember that Python uses zero-based indexing.
 
 We can examine `df2` by using the `head()` and `info()` methods.
 
@@ -127,7 +127,7 @@ The output is:
 > | 8793 | 1004 | 0.0 | 74.0 | 0.0 | 0.0 | 0.0 | 0.25 | 0.5 | 21.0 | 2.4 | 18.669 | 7.778 | 0.800 | 75.0 | 28.35 | 1 oz | 17.0 | 1 cubic inch | 0.0 |
 > | 8794 | 1005 | 0.0 | 76.0 | 0.0 | 0.0 | 0.0 | 0.26 | 0.5 | 22.0 | 2.5 | 18.764 | 8.598 | 0.784 | 94.0 | 132.00 | 1 cup, diced | 113.0 | 1 cup, shredded | 0.0 |
 
-Now use `info()`
+Now use `info()`.
 
 ```python
 df2.info()
@@ -184,7 +184,7 @@ The output is:
 5 rows × 35 columns
 ***
 
-You'll notice on that both `DataFrame`s have their old indices indexes that they inherited from `df`. We can fix that by using the `reset_index()` method, but then we run into a problem.
+You'll notice on that both DataFrames have their old indexes that they inherited from `df`. We can fix that by using the `reset_index()` method, but then we run into a problem.
 
 ```python
 df1 = df1.reset_index()
@@ -207,7 +207,7 @@ The output is:
 5 rows × 36 columns
 ***
 
-Our old indexes are still there for `df1`, but now they're in a new column titled `index`. pandas doesn't want to delete data we might need. We can instruct pandas to remove the column, which we know is unnecessary, by using the `drop=True` parameter for the method. (We also need to drop the `index` column we just created in the prior step.)
+Our old indexes are still there for `df1`, but now they're in a new column titled `index`. Pandas doesn't want to delete data that we might need. We can instruct pandas to remove the column, which we know is unnecessary, by using the `drop=True` parameter for the method. (We also need to drop the `index` column that we created in the prior step.)
 
 ```python
 df1 = df1.drop(['index'], axis=1) #remove the index we created previously
@@ -251,7 +251,7 @@ The output is:
 > | 3 | 1004 | 0.0 | 74.0 | 0.0 | 0.0 | 0.0 | 0.25 | 0.5 | 21.0 | 2.4 | 18.669 | 7.778 | 0.800 | 75.0 | 28.35 | 1 oz | 17.0 | 1 cubic inch | 0.0 |
 > | 4 | 1005 | 0.0 | 76.0 | 0.0 | 0.0 | 0.0 | 0.26 | 0.5 | 22.0 | 2.5 | 18.764 | 8.598 | 0.784 | 94.0 | 132.00 | 1 cup, diced | 113.0 | 1 cup, shredded | 0.0 |
 
-For practice, let's export these `DataFrame`s to CSV files by using the `to_csv()` method. Note that unless we explicitly tell pandas not to, it will also export the index as a column in the CSV file. We will also need to be careful to explicitly encode our CSV to UTF-8.
+For practice, let's export these DataFrames to CSV files by using the `to_csv()` method. Note that unless we explicitly tell pandas not to, it will also export the index as a column in the CSV file. We'll also need to be careful to explicitly encode our CSV to UTF-8.
 
 ```python
 df1.to_csv('Data/NNDB1.csv', sep=',', encoding='utf-8',index=False)
@@ -268,4 +268,4 @@ How would you export df2 to a CSV file?
 >
 > ### Takeaway
 >
-> Although it's not common in the real world to split `DataFrame`s only to re-merge them later, you'll need to drop columns or create new `DataFrame`s that contain only the information you need. With truly large datasets, this is not just a convenience for you analysis, but a necessity for memory and performance!
+> Although it's not common in the real world to split DataFrames only to merge them again later, you'll need to drop columns or create new DataFrames that contain only the information you need. With truly large datasets, this is not just a convenience for your analysis. It's a necessity for memory and performance!

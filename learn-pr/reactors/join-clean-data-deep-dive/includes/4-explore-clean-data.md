@@ -1,6 +1,6 @@
-By the end of this unit, you should be comfortable performing simple exploration of your data and performing simple cleaning steps on it to prepare it for later analysis.
+By the end of this unit, you should be comfortable performing a simple exploration of your data and performing simple cleaning steps on it to prepare it for later analysis.
 
-Data you'll be working with is typically in formats not necessarily designed for human consumption. Fortunately, `DataFrame` offers several tools for exploring the data. Let's explore the data we imported.
+Data you'll be working with is typically in formats not necessarily designed for human consumption. Fortunately, pandas DataFrame offers several tools for exploring the data. Let's explore the data that we imported.
 
 ```python
 df.head()
@@ -22,7 +22,7 @@ The output is:
 5 rows × 53 columns
 ***
 
-We can get some aggregated information about the `DataFrame` by using its `info()` method:
+We can get some aggregated information about the DataFrame by using its `info()` method:
 
 ```python
 df.info()
@@ -91,9 +91,9 @@ dtypes: float64(48), int64(2), object(3)
 memory usage: 3.6+ MB
 ```
 
-Just quickly inspecting the columns from `df` we can see that almost all of the columns have a number of null values. Those missing values are not an issue for us right now, but they will pose a challenge in future sections (but we will deal with them in those sections).
+Quickly inspecting the columns from `df`, we can see that almost all of the columns have null values. Those missing values are not an issue for us right now, but they will pose a challenge in future sections. We'll deal with them in those sections.
 
-Let's also check to see if this `DataFrame` has any duplicate values in it. Let's start by exploring the `duplicated` method.
+Let's also check to see if this DataFrame has any duplicate values in it. Let's start by exploring the `duplicated` method.
 
 ```python
 df.duplicated?
@@ -170,7 +170,7 @@ The output is:
 Length: 8790, dtype: bool
 ```
 
-You'll notice the results from `duplicated` shows the result on a row by row basis. Not exactly the most efficient way of determining if there's duplicated rows. One quick trick we can use is to call `sum`, which will add the values of the results, where `False` will be **0** and `True` will be **1**. The end result will be we will get a rough sense if there's any duplicated rows.
+You'll notice that `duplicated` shows the results on a row-by-row basis. This is not the most efficient way of determining if there are duplicated rows. One quick trick we can use is to call `sum`, which will add the values of the results, where `False` will be **0** and `True` will be **1**. The result will be a rough sense of whether there are any duplicated rows.
 
 ```python
 df.duplicated().sum()
@@ -182,13 +182,13 @@ The output is:
 0
 ```
 
-Given the nature of the data source (a government reference database) it makes sense that there are no duplicate entries. For purposes of learning more about cleaning data, let's make a mess so we can see how we can clean it up! Let's start by duplicating data by using the `append()` method.
+Given the nature of the data source (a government reference database), it makes sense that there are no duplicate entries. For purposes of learning more about cleaning data, let's make a mess so we can see how to clean it up. Let's start by using the `append()` method to duplicate data.
 
 ```python
 df = df.append(df, ignore_index=True)
 ```
 
-The `append()` method has basically stacked the `DataFrame` by appending a copy of `df` to the end of the `DataFrame`. (In SQL terms, we performed a [UNION](https://www.w3schools.com/sql/sql_union.asp?azure-portal=true)). The `ignore_index=True` parameter means that the internal index numbering for the newly doubled `DataFrame` continues seamlessly.
+The `append()` method has basically stacked the DataFrame by appending a copy of `df` to the end of the DataFrame. (In SQL terms, we performed a [UNION](https://www.w3schools.com/sql/sql_union.asp?azure-portal=true).) The `ignore_index=True` parameter means that the internal index numbering for the newly doubled DataFrame continues seamlessly.
 
 Now let's look directly at how many times individual values in a column (such as `NDB_No`, which is a key) are duplicated. We'll use the `groupby` function to create a "group" for each instance of `NDB_No`, and then we'll count each instance.
 
@@ -264,7 +264,7 @@ NDB_No
 Name: NDB_No, Length: 8790, dtype: int64
 ```
 
-Given that we duplicated the original dataset, two duplicates of everything is not unexpected. However, these duplicate values will pose a problem for us later in the section if not dealt with, so let's take care of them now:
+Because we duplicated the original dataset, finding duplicates of everything is not unexpected. However, these duplicate values will pose a problem for us later in the section if they're not dealt with, so let's remove them now:
 
 ```python
 df = df.drop_duplicates('NDB_No', keep="last")
@@ -334,11 +334,11 @@ dtypes: float64(48), int64(2), object(3)
 memory usage: 3.6+ MB
 ```
 
-The `DataFrame` is now half of its previous size, which is what we would expect. However, look at this line in the `df.info()` output:
+The DataFrame is now half of its previous size, which is what we would expect. But look at this line in the `df.info()` output:
 
 `Int64Index: 8790 entries, 8790 to 17579`
 
-Remember, counting starts with zero. But while there are only now 8790 entries per column, the indexing for the DataFrame does not run 0 through 8789, as we might have expected. We can see this more directly by looking at the `head` of the redacted `DataFrame`:
+Remember, counting starts with zero. Although there are now only 8790 entries per column, the indexing for the DataFrame does not run 0 through 8789, as we might have expected. We can see this more directly by looking at the `head` part of the redacted DataFrame:
 
 ```python
 df.head()
@@ -364,4 +364,4 @@ The output is:
 >
 > ### Question
 >
-> Is this behavior of the `drop_duplicates()` method not updating the index values of the `DataFrame` surprising or unexpected for you? Can you explain why this method behaves as it does in this case? If not, study the documentation for this method by using `df.drop_duplicates?` in the code cell below until you're satisfied with your understanding of this behavior.
+> Is this behavior of the `drop_duplicates()` method not updating the index values of the DataFrame surprising or unexpected for you? Can you explain why this method behaves as it does in this case? If not, study the documentation for this method by using `df.drop_duplicates` in the code cell below until you're satisfied with your understanding of this behavior.

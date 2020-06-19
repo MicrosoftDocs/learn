@@ -1,9 +1,9 @@
-We will be using the USDA NNDB dataset in Sections 1.2 and 1.3. However, particularly in Section 1.2, we want to include food group information to go with the food entries to aid with interpreting the result of our data analysis in that section. You will add food group information to this USDA dataset in preparation for these coming sections.
+We'll be using the USDA NNDB dataset in sections 1.2 and 1.3. Particularly in section 1.2, we want to include food group information to go with the food entries, to aid with interpreting the result of our data analysis in that section. You'll add food group information to this USDA dataset in preparation for these coming sections.
 
 First, let's reload our original NNDB dataset so that we have a clean copy.
 
 ```python
-df = pd.read_csv('Data/USDA-nndb.csv', encoding='latin_1')
+df = pd.read_csv('Data/USDA-nndb.csv', encoding='latin1')
 ```
 
 Now let's load in the columns that we want from the older NNDB dataset that includes food groups.
@@ -40,20 +40,20 @@ The output is:
 
 ### Try it yourself
 
-We need to combine `df` and `fg_df` using the pandas `merge()` function. As you prepare to do so, keep the following considerations front of mind:
+We need to combine `df` and `fg_df` by using the pandas `merge()` function. As you prepare to do so, keep the following considerations in mind:
 
 - Which type of join should you use to capture all of the information in both datasets?
 
   <details>
     <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Look at the `head` and `tail` of the resulting `DataFrame` for clues.
+  Look at the `head` and `tail` of the resulting DataFrame for clues.
 
   </details>
 
-- In order to put the `FoodGroup` column immediately after the `NDB_No` column, in what order should you enter the two `DataFrame`s into the `merge()` function? (You might need to experiment a couple of times to get the desired order.)
+- To put the `FoodGroup` column immediately after the `NDB_No` column, in what order should you enter the two DataFrames into the `merge()` function? (You might need to experiment a couple of times to get the desired order.)
 
-Perform the command to join the `df` and `fg_df` in a code cell.
+Perform the command to join `df` and `fg_df` in a code cell.
 
 > **SARAH TBD** - Not sure if the code and output below is supposed to be in a Hint or not. 
 
@@ -103,12 +103,12 @@ The output is:
 5 rows × 54 columns
 ***
 
-Now save the merged `DataFrame` using the `to_csv()` method.
+Now save the merged DataFrame by using the `to_csv()` method.
 
 ```python
 combined_df.to_csv('Data/USDA-nndb-merged.csv',
                    sep=',',
-                   encoding='latin_1',
+                   encoding='latin1',
                    index=False)
 ```
 
