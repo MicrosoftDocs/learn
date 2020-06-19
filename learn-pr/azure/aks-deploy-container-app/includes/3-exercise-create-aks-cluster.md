@@ -1,7 +1,3 @@
-[//]: # (2. Create the cluster using the portal and drop the Azure CLI steps and the Powershell steps [You're repeating the Azure CLI info in the Powershell scripts instead of using New-AzAks]. In hindsight, we do not need the pivot.)
-
-[//]: # (3. Keep the Linking with kubectl section as is, however, explain why we're doing this. Mention how this step configures the user's Kubernetes context. Make sure to call out the environment in which these steps execute. Avoid an instruction like this  one, "Open your preferred terminal [or use CloudShell]." Not all terminals are configured the same. Focus on cloud shell usage since all executables are already configured. Some students may prefer the macOS terminal, but may not have azure CLI install.)
-
 [//]: # (4. Use the "azurecli" script tag when using CLI commands.)
 
 [//]: # (5. General thoughts about using headers. In this unit, the user has two tasks. One, create a new AKS cluster and two, configure the user environment Kubernetes context. Create a header for these two main tasks you want the user to perform. Underneath each add H3 headers to describe the subtasks the user will perform. For example, create a resource group. Avoid titles with "-ing" words. Rewrite the titles that start with an -ing word. For example,  "Creating a network" -> "Create a network" )
@@ -51,11 +47,13 @@ The first action you need to take in order to create your cluster is to provisio
 
 ## Linking with Kubectl
 
-1. Link your Kubernetes cluster with `kubectl` with the following command
+1. Link your Kubernetes cluster with `kubectl` with the following command in the CloudShell
 
     ```azcli
     az aks get-credentials --name contoso-kubernetes-cluster --resource-group contoso-aks
     ```
+
+    This command will add an entry to your `~/.kube/config` file, which holds all the information to access the clusters you've registered. This way you can manage multiple clusters in multiple places with one single command line interface.
 
 ## Testing the installation
 
