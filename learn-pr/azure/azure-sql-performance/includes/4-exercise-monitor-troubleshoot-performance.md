@@ -1,0 +1,1 @@
+TODO: Talk to Anna. I'd like to insert a section to talk about monitoring performance before the exercise.
