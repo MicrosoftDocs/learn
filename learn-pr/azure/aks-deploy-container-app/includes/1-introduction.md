@@ -10,7 +10,7 @@ In this module, you will:
 
 - Create and set up an Azure Kubernetes Cluster
 - Deploy Kubernetes workloads using deployment YAML files
-- Expose Kubernetes workloads using services and ingresses
+- Expose Kubernetes workloads using services and ingress
 - Integrate Azure Container Registry to deploy container images
 
 ## Prerequisites
@@ -21,4 +21,6 @@ In this module, you will:
 - An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=deploycontainerapps_intro-learn-ludossan).
 - Ability to use the [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan)
 - Ability to create a Docker container. If you're new to Docker, start with the [intro to containers](https://docs.microsoft.com/learn/modules/intro-to-containers/?WT.mc_id=deploycontainerapps_intro-learn-ludossan)
-- Ability to navigate the [Azure portal](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal?WT.mc_id=deploycontainerapps_intro-learn-ludossan)
+- All the code examples will be ran using [Azure CloudShell](https://docs.microsoft.com/azure/cloud-shell/overview?WT.mc_id=deploycontainerapps_intro-learn-ludossan), which already have all needed tooling installed. However, if you prefer to run the examples in your own terminal, you'll need to have the following tooling installed first:
+    - [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan)
+    - [Kubectl](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan#connect-to-the-cluster)
