@@ -2,7 +2,7 @@ Before deploying Language Detection module to your edge device, you need to conf
 
 ## Create a Cognitive Services Text Analytics resource
 
-First, you will create a Cognitive Service Text Analytics that matches the container.
+First, you'll create a Cognitive Service Text Analytics that matches the container.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
@@ -26,7 +26,7 @@ First, you will create a Cognitive Service Text Analytics that matches the conta
 
 ## Deploy Language Detection module to the edge
 
-To deploy the Language Detection container image as IoT edge modules from the Azure Marketplace, follow the steps:
+To deploy the Language Detection container image as IoT Edge modules from the Azure Marketplace, follow the steps:
 
 1. In the Azure portal, enter **Language Detection Container – Azure Cognitive Services** into the search and open the Marketplace result.
 
@@ -40,7 +40,7 @@ To deploy the Language Detection container image as IoT edge modules from the Az
 
    ​	c. Select "Find device" and find your IoT Edge device created earlier step.
 
-4. Click Create button to submit. It will take you "Set modules" page. Keep the page open, you will configure Cognitive Service in the next step.
+4. Click Create button to submit. It will take you "Set modules" page. Keep the page open, you'll configure Cognitive Service in the next step.
 
 5. Click on "LanguageDetectionContainerAzureCognitiveServices" IoT Edge module.
 
@@ -55,5 +55,5 @@ To deploy the Language Detection container image as IoT edge modules from the Az
 7. Click **Update**.
 8. Select **Next: Routes** to  define your route. You define all messages from all modules to go to IoT Hub 
 9. Select **Next: Review + create**. You can preview the JSON file that defines all the modules that get deployed to your IoT Edge device.
-10. After you complete module deployment, you will go back to the **IoT Edge** page of your IoT hub. Select your device from the list of IoT Edge devices to see its details.
+10. After you complete module deployment, you'll go back to the **IoT Edge** page of your IoT hub. Select your device from the list of IoT Edge devices to see its details.
 11. Scroll down and see the modules listed. Check runtime status is running for modules.

@@ -1,8 +1,8 @@
 ## Query the container's prediction endpoint
 
-You will make an HTTP call to the IoT Edge device that has the Cognitive Service container running. The container provides REST-based query prediction endpoint APIs. Use the host, `http://<<your-ipaddress>>:5000`, for container APIs.
+You'll make an HTTP call to the IoT Edge device that has the Cognitive Service container running. The container provides REST-based query prediction endpoint APIs. Use the host, `http://<<your-ipaddress>>:5000`, for container APIs.
 
-First you will open port 5000 of the edge device.
+First you'll open port 5000 of the edge device.
 
 1. Go to edge device you created.
 

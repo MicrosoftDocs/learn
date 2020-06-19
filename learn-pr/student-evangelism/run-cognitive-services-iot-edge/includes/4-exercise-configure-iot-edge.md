@@ -64,11 +64,11 @@ az iot hub create --resource-group <resource-group> --name {hub_name} --sku F1 -
 
 Create a device identity for your IoT Edge device.
 
-In the Azure cloud shell, enter the following command to create a device named myEdgeDevice in your hub.
+In the Azure Cloud Shell, enter the following command to create a device named myEdgeDevice in your hub.
 
 Since IoT Edge devices behave and can be managed differently than typical IoT devices, declare this identity to be for an IoT Edge device with the --edge-enabled flag.
 
-If you get an error about iothubowner policy keys, make sure that your cloud shell is running the latest version of the azure-cli-iot-ext extension.
+If you get an error about iothubowner policy keys, make sure that your Cloud Shell is running the latest version of the azure-cli-iot-ext extension.
 
 ```azurecli
 az iot hub device-identity create --hub-name {hub_name} --device-id myEdgeDevice --edge-enabled

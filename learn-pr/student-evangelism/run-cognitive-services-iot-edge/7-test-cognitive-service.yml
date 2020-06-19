@@ -3,7 +3,7 @@ uid: learn.oxford.run-cognitive-services-iot-edge.test-cognitive-service
 title: Test Cognitive Service on the Edge device
 metadata:
   title: Test Cognitive Service on the Edge device
-  description: In this section, we will test cognitive services on the edge device
+  description: In this section, we'll test cognitive services on the edge device
   ms.date: 6/12/2020
   author: leestott
   ms.author: leestott
