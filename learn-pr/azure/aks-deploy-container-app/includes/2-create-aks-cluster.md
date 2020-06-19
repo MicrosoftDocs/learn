@@ -49,7 +49,7 @@ For this purpose, control plane nodes are deployed in odd numbers, so quorum can
 
 [//]: # (You'll need to discuss the concept of quorum a bit more. Otherwise, mentioning high availability in the previous paragraph may be enough information. Keep in mind that you're referring "Despite this difference" in the next paragraph, and it's not clear to me what the difference is that you're referring to.)
 
-Despite this difference, all other worker nodes can communicate with any master using the API server through a load balancer. This architecture is more involved in terms of deployment but is the recommended configuration for most production clusters.
+Despite this difference, all other nodes can communicate with any control planes using the API server through a load balancer. This architecture is more involved in terms of deployment but is the recommended configuration for most production clusters.
 
 ## AKS Concepts
 
