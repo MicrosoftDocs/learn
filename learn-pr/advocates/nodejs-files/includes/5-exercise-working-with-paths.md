@@ -6,11 +6,14 @@ In the current `index.js` code, you are passing the static location of the "stor
 
 1. Click on the `index.js` file to open it.
 
-1. On line 4, use the `__dirname` constant instead of the static "stores" value.
+1. On line 4, create a variable to store a path to the "stores" directory, using the `__dirname` constant.
 
    ```javascript
    function main() {
-     findSales(__dirname);
+     const salesDir = path.join(__dirname, "stores");
+
+     const salesFiles = findSalesFiles(salesDir);
+     console.log(salesFiles);
    }
    ```
 
@@ -24,15 +27,24 @@ In the current `index.js` code, you are passing the static location of the "stor
 
    Notice that the path that is now listed for the files is the full system path. This is because the `__dirname` constant returns the full path to the current location.
 
+   ```bash
+   [
+     '/home/username/node-files/stores/201/sales.json',
+     '/home/username/node-files/stores/202/sales.json',
+     '/home/username/node-files/stores/203/sales.json',
+     '/home/username/node-files/stores/204/sales.json',
+   ]
+   ```
+
 ## Joining paths
 
 Instead of concatenating folder names to make a new path to search, you'll change the code to use the `path.join` method so that this code will work across operating systems.
 
-1. On line 12 of the `index.js` file, change the `findSales` method to use `path.join`.
+1. On line 27 of the `index.js` file, change the `findFiles` method to use `path.join`.
 
    ```javascript
-   // call this method again, appending the folder name to make a new path
-   findSales(path.join(folderName, item.name));
+   // search this directory for files (this is recursion!)
+   findFiles(path.join(folderName, item.name));
    ```
 
 1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
@@ -55,11 +67,12 @@ Instead of looking for just `sales.json` files, this program needs to search for
    mv stores/201/sales.json stores/201/totals.json
    ```
 
-1. On line 15 of the `index.js` file, change the `if` statement to check just the file extension.
+1. On line 30 of the `index.js` file, change the `if` statement to check just the file extension. Use the `path.join` method to compose the full path to the file.
 
    ```javascript
    if (path.extname(item.name) === ".json") {
-     console.log(`Found ${item.name} in folder ${folderName}`);
+     // store the file path in the salesFiles array
+     salesFiles.push(path.join(folderName, item.name));
    }
    ```
 
@@ -74,39 +87,65 @@ Instead of looking for just `sales.json` files, this program needs to search for
    The output now shows all of .json files that are in any of the store id directories.
 
    ```bash
-   Found totals.json in folder /Users/burkeholland/Dev/burkeholland/node-files/stores/201
-   Found sales.json in folder /Users/burkeholland/Dev/burkeholland/node-files/stores/202
-   Found sales.json in folder /Users/burkeholland/Dev/burkeholland/node-files/stores/203
-   Found sales.json in folder /Users/burkeholland/Dev/burkeholland/node-files/stores/204
+   [
+      '/home/username/node-files/stores/201/totals.json',
+      '/home/username/node-files/stores/202/sales.json',
+      '/home/username/node-files/stores/203/sales.json',
+      '/home/username/node-files/stores/204/sales.json'
+   ]
    ```
 
-## Complete code for this exercise
+Great job! You've used the "path" and `__dirname` constant to make the program much more robust. Next, you'll need to follow Tailwind Traders "best practices" for working with sales files which dictates that you move all of the files to a working directory before you do anything with them. In the next section, you'll learn how to create directories and move files between locations.
 
-If you got stuck anywhere in this exercise, you can copy and paste in this code which contains all of the changes.
+### Got Stuck?
+
+If you got stuck at any point in this exercise, here is the completed code. Remove everything in `index.js` and replace it with this solution.
 
 ```javascript
 const fs = require("fs");
 const path = require("path");
 
-function main() {
-  findSales(__dirname);
+function findSalesFiles(folderName) {
+  // this array will hold sales files as they are found
+  let salesFiles = [];
+
+  function findFiles(folderName) {
+    // read all the items in the current folder
+    const items = fs.readdirSync(folderName, { withFileTypes: true });
+
+    // iterate over each found item
+    items.forEach((item) => {
+      // if the item is a directory, it will need to be searched
+      if (item.isDirectory()) {
+        // call this method recursively, appending the folder name to make a new path
+        findFiles(path.join(folderName, item.name));
+      } else {
+        // Make sure the discovered file is a .json file
+        if (path.extname(item.name) === ".json") {
+          // store the file path in the salesFiles array
+          salesFiles.push(path.join(folderName, item.name));
+        }
+      }
+    });
+  }
+
+  findFiles(folderName);
+
+  return salesFiles;
 }
 
-function findSales(folderName) {
-  const items = fs.readdirSync(folderName, { withFileTypes: true });
-  items.forEach((item) => {
-    if (item.isDirectory()) {
-      // call this method again, appending the folder name to make a new path
-      findSales(path.join(folderName, item.name));
-    } else {
-      if (path.extname(item.name) === ".json") {
-        console.log(`Found ${item.name} in folder ${folderName}`);
-      }
-    }
-  });
+function main() {
+  const salesDir = path.join(__dirname, "stores");
+
+  // create the salesTotal directory if it doesn't exist
+  if (fs.existsSync(salesTotalsDir) === false) {
+    fs.mkdirSync(salesTotalsDir);
+  }
+
+  // find paths to all the sales files
+  const salesFiles = findSalesFiles(salesDir);
+  console.log(salesFiles);
 }
 
 main();
 ```
-
-Great job! You've used the "path" and `__dirname` constant to make the program much more robust. Next, you'll need to follow Tailwind Traders "best practices" for working with sales files which dictates that you move all of the files to a working directory before you do anything with them. In the next section, you'll learn how to create directories and move files between locations.

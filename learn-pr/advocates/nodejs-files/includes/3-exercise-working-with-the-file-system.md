@@ -69,7 +69,7 @@ You're going to need to find all of those files given only the top-most location
            // Make sure the discovered file is a sales.json file
            if (item.name === "sales.json") {
              // store the file path in the salesFiles array
-             salesFiles.push(path.join(folderName, item.name));
+             salesFiles.push(`${folderName}/${item.name}));
            }
          }
        });
@@ -108,10 +108,10 @@ You're going to need to find all of those files given only the top-most location
 
    ```bash
    [
-    '/home/username/node-files/stores/201/sales.json',
-    '/home/username/node-files/stores/202/sales.json',
-    '/home/username/node-files/stores/203/sales.json',
-    '/home/username/node-files/stores/204/sales.json',
+    'stores/201/sales.json',
+    'stores/202/sales.json',
+    'stores/203/sales.json',
+    'stores/204/sales.json',
    ]
    ```
 
