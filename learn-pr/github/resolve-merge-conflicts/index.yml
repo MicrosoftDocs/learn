@@ -1,14 +1,14 @@
 ### YamlMime:Module
-uid: learn.github.merge-conflict-resolution
+uid: learn.github.merge-conflict-resolution-github
 metadata:
-  title: "Settle competing commits by using merge conflict resolution - Learn"
+  title: "Settle competing commits by using merge conflict resolution on GitHub - Learn"
   description: Learn to settle overlapping commits across branches by using merge conflict resolution.
   ms.date: 06/12/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Settle competing commits by using merge conflict resolution"
+title: "Settle competing commits by using merge conflict resolution on GitHub"
 summary: Learn to settle overlapping commits across branches by using merge conflict resolution.
 abstract: |
   In this module, you will:
@@ -32,10 +32,10 @@ products:
 - github
 - azure
 units:
-- learn.github.merge-conflict-resolution.1-introduction
-- learn.github.merge-conflict-resolution.2-what-are-merge-conflicts
-- learn.github.merge-conflict-resolution.3-managing-merge-conflicts
-- learn.github.merge-conflict-resolution.4-knowledge-check
-- learn.github.merge-conflict-resolution.5-summary
+- learn.github.merge-conflict-resolution-github.1-introduction
+- learn.github.merge-conflict-resolution-github.2-what-are-merge-conflicts
+- learn.github.merge-conflict-resolution-github.3-managing-merge-conflicts
+- learn.github.merge-conflict-resolution-github.4-knowledge-check
+- learn.github.merge-conflict-resolution-github.5-summary
 badge:
-  uid: learn.github.merge-conflict-resolution.badge
+  uid: learn.github.merge-conflict-resolution-github.badge

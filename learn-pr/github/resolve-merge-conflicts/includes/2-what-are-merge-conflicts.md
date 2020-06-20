@@ -32,7 +32,7 @@ To help you resolve merge conflicts, GitHub generates a temporary hybrid file th
 
 ![Resolving a merge conflict](../media/2-resolving-merge-conflict.png)
 
-You can use this view to directly edit the file if the changes are minor. If you decide to keep the final result, it will be committed to the compare branch. Alternatively, if the merge is more involved, you may prefer to work on it using other development tools. Either way, don't forget to remove any branch markers from your code before committing.
+You can use this view to directly edit the file if the changes are minor. If you decide to keep the final result, it will be committed to the compare branch. Alternatively, if the merge is more involved, you may prefer to work on it using other development tools. **Either way, don't forget to remove any branch markers from your code before committing**. If you forget to remove these markers when you commit your conflict resolution, they will remain in the file and will not be commented out.
 
 > [!NOTE]
 > This unit discusses resolving merge conflicts within the context of a browser. There are also many development platforms, like [Visual Studio](https://visualstudio.microsoft.com/?azure-portal=true), that offer integrated merge conflict resolution experiences.
@@ -41,14 +41,18 @@ Once all of the merge conflicts have been resolved on your branch, you can retry
 
 ## Avoiding merge conflicts
 
-Certain merge conflicts are unavoidable. Any merge could potentially produce merge conflicts for other pull requests waiting to be approved. However, one effective way to reduce the complexity of merge conflicts is to **rebase** your branch often.
+Certain merge conflicts are unavoidable. Any merge could potentially produce merge conflicts for other pull requests waiting to be approved. However, one effective way to reduce the complexity of merge conflicts is to **pull** your branch often.
 
-### What is git rebase?
+### Pull early and often
 
-The `git rebase` command enables you to update your branch so that it uses the current HEAD commit of the base branch as its base. It's conceptually similar to the **Get Latest** command that many version control systems use to allow you to update your local code to the latest version. When you rebase your branch, you're effectively merging down all of the changes that have happened since the branch was created (or last rebased).
+The `git pull` command pulls down any base branch commits that have not yet been applied to your current branch. It's conceptually similar to the **Get Latest** command that many version control systems use to allow you to update your local code to the latest version. When you pull updates for your branch, you're merging down all of the changes that have happened since the branch was created (or last pulled).
 
-Rebasing your branch may result in merge conflicts, but that's okay. You would have gotten them later on anyway, and by getting them earlier, they're usually easier to address. Learn more about [resolving merge conflicts after a Git rebase](https://help.github.com/github/using-git/resolving-merge-conflicts-after-a-git-rebase?azure-portal=true).
+Pulling updates to your branch may result in merge conflicts, but that's okay. You would have gotten them later on anyway, and by getting them earlier, they're usually easier to address.
 
-In addition to mitigating the impact of merge conflicts, rebasing also allows you to integrate committed changes into your branch as you work. Doing so allows you to head off potential problems earlier. For example, there may be class definition changes in other files that will cause your code to no longer compile. This wouldn't have caused a merge conflict when you merged later on, but it would have broken the build if you didn't test first. It's a best practice to rebase often to keep your branch as close to its base as possible.
+In addition to mitigating the impact of merge conflicts, pulling updates also allows you to integrate committed changes into your branch as you work. Doing so allows you to head off potential problems earlier. For example, there may be class definition changes in other files that will cause your code to no longer compile. This wouldn't have caused a merge conflict when you merged later on, but it would have broken the build if you didn't test first. It's a best practice to pull updates often to keep your branch as close to its base as possible.
 
-Learn more [about Git rebase](https://help.github.com/github/using-git/about-git-rebase?azure-portal=true).
+### Tidying history with git rebase
+
+The `git rebase` (or `git pull --rebase`) command rewrites your branch history to use the current HEAD commit of the base branch as its base. In other words, it updates your branch to behave as though it were only branched from the current state of the base branch. This means that all of your changes will be compared to the latest state of the base branch, and not the original commit you had originally branched from. This can make history much easier to track after your eventual merge because your commits will follow the previous parallel commits in a linear fashion. It's a good practice to rebase your branch immediately prior to merging upstream.
+
+Learn more [about Git rebase](https://help.github.com/github/using-git/about-git-rebase?azure-portal=true) and [resolving merge conflicts after a Git rebase](https://help.github.com/github/using-git/resolving-merge-conflicts-after-a-git-rebase?azure-portal=true).
