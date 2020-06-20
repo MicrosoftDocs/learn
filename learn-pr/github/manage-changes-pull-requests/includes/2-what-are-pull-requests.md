@@ -25,7 +25,7 @@ A pull request is a mechanism used to communicate that changes from one branch a
 
 The author of a pull request is the person who created the pull request. They're hoping to ultimately have the changes from the **compare** branch merged into the **base** branch. They're generally responsible for answering questions about the changes and applying feedback.
 
-Before creating a pull request, the author is responsible for ensuring the merge can succeed. This usually means that they've rebased their branch recently to confirm that the code builds with the latest base changes.
+Before creating a pull request, the author is responsible for ensuring the merge can succeed. It's best practice to often pull down changes from the remote to your local copy to confirm that the code builds with the latest base changes.
 
 ![Creating a pull request](../media/2-creating-pull-request.png)
 
