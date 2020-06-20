@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.github.manage-innersource-program
+uid: learn.github.manage-innersource-program-github
 metadata:
   title: "Manage an InnerSource program by using GitHub - Learn"
   description: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
@@ -37,10 +37,10 @@ products:
 - github
 - azure
 units:
-- learn.github.manage-innersource-program.1-introduction
-- learn.github.manage-innersource-program.2-manage-innersource-program
-- learn.github.manage-innersource-program.3-innersource-fundamentals
-- learn.github.manage-innersource-program.4-knowledge-check
-- learn.github.manage-innersource-program.5-summary
+- learn.github.manage-innersource-program-github.1-introduction
+- learn.github.manage-innersource-program-github.2-manage-innersource-program
+- learn.github.manage-innersource-program-github.3-innersource-fundamentals
+- learn.github.manage-innersource-program-github.4-knowledge-check
+- learn.github.manage-innersource-program-github.5-summary
 badge:
-  uid: learn.github.manage-innersource-program.badge
+  uid: learn.github.manage-innersource-program-github.badge

@@ -92,4 +92,17 @@ Any team venturing into InnerSource should think about the kinds of metrics they
 
 Instead, consider adding metrics that show how external participation has improved project quality. Is the repository receiving pull requests from external sources that fix bugs and add features? Are there active participants in discussions around the project and its future? Is the program inspiring an InnerSource expansion that drives benefits elsewhere in the organization?
 
+In short, metrics are hard, especially when it comes to measuring the value and impact of individual and team contributions. If misused, metrics can harm the culture, existing processes, and diminish the collective sentiment towards the organization or leadership team. When thinking about measuring InnerSource adoption, consider the following:
+
+- Measure process, not output
+  - Code review turnaround time
+  - Pull request size
+  - Work in progress
+  - Time to open
+- Measure against targets and not absolutes
+- Measure teams and not individuals
+  - Number of unique contributors to a project
+  - Number of projects reusing code
+  - Number of cross-team @mentions
+
 Learn about the successes others have enjoyed in these [InnerSource case studies](https://gist.github.com/githubteacher/9fe53687a5f173d1d64c24c68625349e?azure-portal=true).
