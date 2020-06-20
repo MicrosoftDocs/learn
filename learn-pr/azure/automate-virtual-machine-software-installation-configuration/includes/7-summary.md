@@ -6,7 +6,7 @@ In this module, you've seen some of the tools that are available on Azure to aut
 
 [!include[](../../../includes/azure-subscription-cleanup.md)]
 
-To delete the resource group and all the resources that you created in this module, run the following command in the Cloud shell.
+To delete the resource group and all the resources that you created in this module, run the following command in the Cloud Shell.
 
 ```azurecli
 az group delete --name my-resource-group-name

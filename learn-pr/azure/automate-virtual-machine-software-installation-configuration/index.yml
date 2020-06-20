@@ -34,6 +34,7 @@ units:
 - learn.azure.automate-virtual-machine-software-installation-configuration.exercise-automate-installation-virtual-machine
 - learn.azure.automate-virtual-machine-software-installation-configuration.automate-configuration-web-server
 - learn.azure.automate-virtual-machine-software-installation-configuration.exercise-automate-configuration-web-server
+- learn.azure.automate-virtual-machine-software-installation-configuration.knowledge-check
 - learn.azure.automate-virtual-machine-software-installation-configuration.summary
 badge:
   uid: learn.azure.automate-virtual-machine-software-installation-configuration.badge
