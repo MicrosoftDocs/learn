@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-files.6-moving-and-copying-files
-title: Moving and copying files
+uid: learn.azure.nodejs-files.6-creating-files-and-directories
+title: Creating files and directories
 metadata:
-  title: Moving and copying files
-  description: Moving and copying files
+  title: Creating files and directories
+  description: Creating files and directories
   ms.date: 06/18/2020
   author: burkeholland
   ms.author: buhollan
@@ -15,4 +15,4 @@ azureSandbox: true
 # -- End sandbox --
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-moving-and-copying.md)]
+  [!include[](includes/6-creating-files-and-directories.md)]

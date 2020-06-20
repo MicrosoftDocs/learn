@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.nodejs-files.7-exercise-creating-files-and-directories
+title: Exercise - Creating files and directories
+metadata:
+  title: Exercise - Creating files and directories
+  description: Exercise - Creating files and directories
+  ms.date: 06/20/2020
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+# If you don't the sandbox, remove these two lines...
+interactive: bash
+azureSandbox: true
+# -- End sandbox --
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-creating-files-and-directories.md)]
