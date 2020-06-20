@@ -9,9 +9,6 @@ So far you've created a robust command line application in Node.js that can read
      const salesDir = path.join(__dirname, "stores");
      const salesTotalsDir = path.join(__dirname, "salesTotals");
 
-     // path to the "salesTotals" directory
-     const salesTotalsDir = path.join(__dirname, "salesTotals");
-
      // find paths to all the sales files
      const salesFiles = findSalesFiles(salesDir);
    }
@@ -66,11 +63,55 @@ So far you've created a robust command line application in Node.js that can read
 
    There will be no output, but a new folder called "salesTotals" will be created. Inside, you should see a new file called "totals.json". That file will be empty.
 
-## Complete code
+This looks awesome! Great job! You're almost finished. The last step is to read the sales files, add up the totals inside and write that total to the new "totals.json" file. That sounds like a lot, but reading files in Node.js is pretty easy. Next you'll learn how to read and parse data inside of files.
+
+## Got stuck?
 
 If you got stuck during this exercise, here is the full code up to this point.
 
 ```javascript
+const fs = require("fs");
+const path = require("path");
+
+function calculateSalesTotal(salesFiles) {
+  let salesTotal = 0;
+  salesFiles.forEach((file) => {
+    const data = JSON.parse(fs.readFileSync(file));
+    salesTotal += data.total;
+  });
+
+  return salesTotal;
+}
+
+function findSalesFiles(folderName) {
+  // this array will hold sales files as they are found
+  let salesFiles = [];
+
+  function findFiles(folderName) {
+    // read all the items in the current folder
+    const items = fs.readdirSync(folderName, { withFileTypes: true });
+
+    // iterate over each found item
+    items.forEach((item) => {
+      // if the item is a directory, it will need to be searched
+      if (item.isDirectory()) {
+        // call this method recursively, appending the folder name to make a new path
+        findFiles(path.join(folderName, item.name));
+      } else {
+        // Make sure the discovered file is a .json file
+        if (path.extname(item.name) === ".json") {
+          // store the file path in the salesFiles array
+          salesFiles.push(path.join(folderName, item.name));
+        }
+      }
+    });
+  }
+
+  findFiles(folderName);
+
+  return salesFiles;
+}
+
 function main() {
   const salesDir = path.join(__dirname, "stores");
   const salesTotalsDir = path.join(__dirname, "salesTotals");
@@ -89,6 +130,6 @@ function main() {
     JSON.stringify(salesTotal)
   );
 }
-```
 
-This looks awesome! Great job! You're almost finished. The last step is to read the sales files, add up the totals inside and write that total to the new "totals.json" file. That sounds like a lot, but reading files in Node.js is pretty easy. Next you'll learn how to read and parse data inside of files.
+main();
+```
