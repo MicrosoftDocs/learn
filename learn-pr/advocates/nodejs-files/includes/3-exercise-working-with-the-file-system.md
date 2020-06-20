@@ -51,47 +51,45 @@ You're going to need to find all of those files given only the top-most location
 1. Copy the following method and paste it above the "main" function.
 
    ```javascript
-   function findSales(folderName) {
-     const items = fs.readdirSync(folder, { withFileTypes: true });
-     items.forEach((item) => {
-       if (item.isDirectory()) {
-         // this is a folder, so read it by calling this method and
-         // passing in the path to this folder
-         findSales(`${folderName}/${item.name}`);
-       } else {
-         if (item.name === "sales.json") {
-           console.log(`Found sales.json in folder ${folderName}`);
+   function findSalesFiles(folderName) {
+     // this array will hold sales files as they are found
+     let salesFiles = [];
+
+     function findFiles(folderName) {
+       // read all the items in the current folder
+       const items = fs.readdirSync(folderName, { withFileTypes: true });
+
+       // iterate over each found item
+       items.forEach((item) => {
+         // if the item is a directory, it will need to be searched for files
+         if (item.isDirectory()) {
+           // search this directory for files (this is recursion!)
+           findFiles(`${folderName}/${item.name}`);
+         } else {
+           // Make sure the discovered file is a sales.json file
+           if (item.name === "sales.json") {
+             // store the file path in the salesFiles array
+             salesFiles.push(path.join(folderName, item.name));
+           }
          }
-       }
-     });
+       });
+     }
+
+     // find the sales files
+     findFiles(folderName);
+
+     // return the array of found file paths
+     return salesFiles;
    }
    ```
 
 2. Call this new function from the "main" method, passing in the "stores" folder name as the location to search for files. Here is the completed code for the exercise.
 
    ```javascript
-   const fs = require("fs");
-
-   function findSales(folder) {
-     const items = fs.readdirSync(folder, { withFileTypes: true });
-     items.forEach((item) => {
-       if (item.isDirectory()) {
-         // this is a folder, so read it by calling this method and
-         // passing in the path to this folder
-         findSales(`${folder}/${item.name}`);
-       } else {
-         if (item.name === "sales.json") {
-           console.log(`Found sales.json in folder ${folder}`);
-         }
-       }
-     });
-   }
-
    function main() {
-     findSales("stores");
+     const salesFiles = findSalesFiles("stores");
+     console.log(salesFiles);
    }
-
-   main();
    ```
 
 ## Execute the program
@@ -109,10 +107,58 @@ You're going to need to find all of those files given only the top-most location
 1. The program should show the following output...
 
    ```bash
-   Found sales.json in folder stores/201
-   Found sales.json in folder stores/202
-   Found sales.json in folder stores/203
-   Found sales.json in folder stores/204
+   [
+    '/home/username/node-files/stores/201/sales.json',
+    '/home/username/node-files/stores/202/sales.json',
+    '/home/username/node-files/stores/203/sales.json',
+    '/home/username/node-files/stores/204/sales.json',
+   ]
    ```
 
 Excellent! You have successfully written a command line program that will traverse any directory that it is given and find the "sales.json" files inside. However, the way that the path to the right folder was constructed in this example is a little clumsy - it requires appending a lot of strings together. There is a preferred way to work with paths in Node.js. In the next section you'll learn how to do just that using the "path" module.
+
+### Got Stuck?
+
+If you got stuck at any point in this exercise, here is the completed code. Remove everything in `index.js` and replace it with this solution.
+
+```javascript
+const fs = require("fs");
+
+function findSalesFiles(folderName) {
+  // this array will hold sales files as they are found
+  let salesFiles = [];
+
+  function findFiles(folderName) {
+    // read all the items in the current folder
+    const items = fs.readdirSync(folderName, { withFileTypes: true });
+
+    // iterate over each found item
+    items.forEach((item) => {
+      // if the item is a directory, it will need to be searched for files
+      if (item.isDirectory()) {
+        // search this directory for files (this is recursion!)
+        findFiles(`${folderName}/${item.name}`);
+      } else {
+        // Make sure the discovered file is a sales.json file
+        if (item.name === "sales.json") {
+          // store the file path in the salesFiles array
+          salesFiles.push(path.join(folderName, item.name));
+        }
+      }
+    });
+  }
+
+  // find the sales files
+  findFiles(folderName);
+
+  // return the array of found file paths
+  return salesFiles;
+}
+
+function main() {
+  const salesFiles = findSalesFiles("stores");
+  console.log(salesFiles);
+}
+
+main();
+```
