@@ -32,5 +32,6 @@ units:
   - learn.azure.nodejs-files.3-exercise-working-with-the-file-system
   - learn.azure.nodejs-files.4-working-with-paths
   - learn.azure.nodejs-files.5-exercise-working-with-paths
+  - learn.azure.nodejs-files.6-moving-and-copying-files
 badge:
   uid: learn.learn.azure.nodejs.files.badge
