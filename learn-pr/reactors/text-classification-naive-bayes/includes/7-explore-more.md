@@ -194,28 +194,28 @@ Use the `groupby` method to display actual counts of the languages detected in t
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-    ```python
-    azure_df.groupby('Language')['Message'].count()
-    ```
+  ```python
+  azure_df.groupby('Language')['Message'].count()
+  ```
 
-    The output is:
+  The output is:
 
-    ```Output
-    Language
-    (Unknown)     3   
-    Catalan       1   
-    English       5557
-    Filipino      1   
-    German        2   
-    Indonesian    1   
-    Malay         1   
-    Romanian      1   
-    Spanish       2   
-    Swahili       1   
-    Swedish       1   
-    Turkish       1   
-    Name: Message, dtype: int64
-    ```
+  ```Output
+  Language
+  (Unknown)     3   
+  Catalan       1   
+  English       5557
+  Filipino      1   
+  German        2   
+  Indonesian    1   
+  Malay         1   
+  Romanian      1   
+  Spanish       2   
+  Swahili       1   
+  Swedish       1   
+  Turkish       1   
+  Name: Message, dtype: int64
+  ```
 
 </details>
 
@@ -251,21 +251,21 @@ Break out the preceding single histogram into two histograms (one for each class
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-    Refer to the code we used earlier in the section.
+  Refer to the code we used earlier in the section.
 
-    ```python
-    azure_df.hist(bins=50,by='Class', column='Sentiment')
-    ```
+  ```python
+  azure_df.hist(bins=50,by='Class', column='Sentiment')
+  ```
 
-    The output is:
+  The output is:
 
-    ```Output
-    array([<matplotlib.axes._subplots.AxesSubplot object at 0x7fd95ed57c18>,
-        <matplotlib.axes._subplots.AxesSubplot object at 0x7fd95ed2f7b8>],
-        dtype=object)
-    ```
+  ```Output
+  array([<matplotlib.axes._subplots.AxesSubplot object at 0x7fd95ed57c18>,
+      <matplotlib.axes._subplots.AxesSubplot object at 0x7fd95ed2f7b8>],
+      dtype=object)
+  ```
 
-    :::image type="content" alt-text="Side-by-side histograms that analyze sentiments in ham and spam." source="../media/sentiment-analysis-ham-spam.png" loc-scope="Azure":::
+  :::image type="content" alt-text="Side-by-side histograms that analyze sentiments in ham and spam." source="../media/sentiment-analysis-ham-spam.png" loc-scope="Azure":::
 
 </details>
 
