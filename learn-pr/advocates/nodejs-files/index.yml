@@ -36,5 +36,6 @@ units:
   - learn.azure.nodejs-files.7-exercise-creating-files-and-directories
   - learn.azure.nodejs-files.8-reading-and-writing-to-files
   - learn.azure.nodejs-files.9-exercise-reading-and-writing-to-files
+  - learn.azure.nodejs-files.10-summary
 badge:
   uid: learn.learn.azure.nodejs.files.badge
