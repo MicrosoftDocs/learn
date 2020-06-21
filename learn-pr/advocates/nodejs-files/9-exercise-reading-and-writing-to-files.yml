@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.nodejs-files.9-exercise-reading-and-writing-to-files
+title: Exercise - reading and writing to files
+metadata:
+  title: Exercise - reading and writing to files
+  description: Exercise - reading and writing to files
+  ms.date: 06/21/2020
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+# If you don't the sandbox, remove these two lines...
+interactive: bash
+azureSandbox: true
+# -- End sandbox --
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-exercise-reading-and-writing-to-files.md)]

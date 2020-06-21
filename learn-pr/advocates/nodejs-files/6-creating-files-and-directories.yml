@@ -9,10 +9,6 @@ metadata:
   ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-# If you don't the sandbox, remove these two lines...
-interactive: bash
-azureSandbox: true
-# -- End sandbox --
 durationInMinutes: 10
 content: |
   [!include[](includes/6-creating-files-and-directories.md)]

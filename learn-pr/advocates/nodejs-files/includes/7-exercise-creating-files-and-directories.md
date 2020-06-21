@@ -1,4 +1,4 @@
-So far you've created a robust command line application in Node.js that can read any folder structure that it's given to find any files with a `.json` extension. You'll need to read those files summarize the data in them and then write the totals to a new file in a new directory called "salesTotals". In this exercise, you'll create the "salesTotals" directory and "sales.json" file where the sales totals will eventually go.
+So far you've created a robust command line application in Node.js that can read any folder structure that it's given to find any files with a `.json` extension. You'll need to read those files summarize the data in them and then write the totals to a new file in a new directory called "salesTotals". In this exercise, you'll create the "salesTotals" directory and "totals.txt" file where the sales totals will eventually go.
 
 ## Create the "salesTotals" directory
 
@@ -31,9 +31,9 @@ So far you've created a robust command line application in Node.js that can read
    }
    ```
 
-## Write the "totals.json" file
+## Write the "totals.txt" file
 
-1. In the `main` function, add the code to create an empty file called "totals.json" inside the newly created "salesTotals" directory.
+1. In the `main` function, add the code to create an empty file called "totals.txt" inside the newly created "salesTotals" directory.
 
    ```javascript
    function main() {
@@ -48,9 +48,9 @@ So far you've created a robust command line application in Node.js that can read
       // find paths to all the sales files
       const salesFiles = findSalesFiles(salesDir);
 
-     // write an empty file called "totals.json"
+     // write an empty file called "totals.txt"
      fs.writeFileSync(
-       path.join(salesTotalsDir, "totals.json"), String());
+       path.join(salesTotalsDir, "totals.txt"), String());
      );
    }
    ```
@@ -61,9 +61,9 @@ So far you've created a robust command line application in Node.js that can read
    node index.js
    ```
 
-   There will be no output, but a new folder called "salesTotals" will be created. Inside, you should see a new file called "totals.json". That file will be empty.
+   There will be no output, but a new folder called "salesTotals" will be created. Inside, you should see a new file called "totals.txt". That file will be empty.
 
-This looks awesome! Great job! You're almost finished. The last step is to read the sales files, add up the totals inside and write that total to the new "totals.json" file. That sounds like a lot, but reading files in Node.js is pretty easy. Next you'll learn how to read and parse data inside of files.
+This looks awesome! Great job! You're almost finished. The last step is to read the sales files, add up the totals inside and write that total to the new "totals.txt" file. That sounds like a lot, but reading files in Node.js is pretty easy. Next you'll learn how to read and parse data inside of files.
 
 ## Got stuck?
 
@@ -124,10 +124,9 @@ function main() {
   // find paths to all the sales files
   const salesFiles = findSalesFiles(salesDir);
 
-  // write the total to the "totals.json" file
+  // write the total to the "totals.txt" file
   fs.writeFileSync(
-    path.join(salesTotalsDir, "totals.json"),
-    JSON.stringify(salesTotal)
+    path.join(salesTotalsDir, "totals.txt"), String());
   );
 }
 
