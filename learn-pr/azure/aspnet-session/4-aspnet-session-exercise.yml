@@ -23,5 +23,5 @@ tasks:
       tags:
         -name: Name
         -value: SessionCache
-    hint: "Make sure you create the Redis Cache"
+  hint: "Make sure you create the Redis Cache"
     
