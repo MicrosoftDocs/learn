@@ -23,27 +23,24 @@ Here, you'll download and test the application locally, and then create the reso
     > [!div class="mx-imgBorder"]
     > ![Image of the Open Project/Solution dialog box in Visual Studio 2019. The user has selected the **eShopLegacyWebForms** solution](..\media\2-open-solution.png)
 
+    You might be prompted to install additional components in the Solution Explorer window:
+    
+    > [!div class="mx-imgBorder"]
+    > ![Image of the Solution Explorer window in Visual Studio. The user is being prompted to install additional components to support Visual Studio.**](..\media\2-install-components.png)
+    
+    If this occurs, click **Install** to install the required items, and follow the instructions.
 
-    > [!NOTE]
-    > You might be prompted to install additional components in the Solution Explorer window:
-    >
-    > > [!div class="mx-imgBorder"]
-    > >  ![Image of the Solution Explorer window in Visual Studio. The user is being prompted to install additional components to support Visual Studio.**](..\media\2-install-components.png)
-    >
-    > If this occurs, click **Install** to install the required items, and follow the instructions.
+7. This project currently uses v2.0.1 of the **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Perform the following steps to:
 
-> [!IMPORTANT]
-> This project currently uses v2.0.1 of the **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Perform the following steps:
-> 
-> 1. Close Visual Studio, and start it again. 
-> 2. Open the **eShopLegacyWebFormsSolution** solution, and on the **Build** menu, select **Rebuild Solution**.
+    1. Close Visual Studio, and start it again. 
+    2. Open the **eShopLegacyWebFormsSolution** solution, and on the **Build** menu, select **Rebuild Solution**.
 
-7. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
+8. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Solution Explorer window. The user has selected the **Web.config** file](..\media\2-open-web-config.png).
 
-8. In the **Web.config** file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting will cause the application to use data stored in a local SQL Server database:
+9. In the **Web.config** file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting will cause the application to use data stored in a local SQL Server database:
 
     ```xml
     ...
@@ -54,18 +51,16 @@ Here, you'll download and test the application locally, and then create the reso
     ...
     ```
 
-9. Press **F5** to build and run the application. The application will open a web browser and display the **Catalog Manager** page for the web application.
+10. Press **F5** to build and run the application. The application will open a web browser and display the **Catalog Manager** page for the web application.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **Catalog Manager** page for the sample application in a web browser window](..\media\2-catalog-manager.png)
 
     The Catalog Manager enables you to view the products sold by the organization, add new products, modify the details of existing products, and delete products.
 
-10. Experiment with the application; try adding, editing, and removing products. Close the web browser when you've finished. This action will stop the application and return you to Visual Studio.
+11. Experiment with the application; try adding, editing, and removing products. Close the web browser when you've finished. This action will stop the application and return you to Visual Studio.
 
 ## Create Azure resources for running the application as an Azure web app
-
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. In the Cloud Shell window on the right, run the following command to download the sample application from the Microsoft repository on GitHub:
 
