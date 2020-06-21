@@ -9,6 +9,8 @@ In this module, you learned:
 
 ## Learn more
 
+To learn more about using logging and tracing in an ASP.NET web app, visit the following articles.
+
 - [Tracing and Instrumenting Applications](https://docs.microsoft.com/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
 - [Logging in .NET Core and ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/logging/)
 - [Apache Log4Net](https://logging.apache.org/log4net/)

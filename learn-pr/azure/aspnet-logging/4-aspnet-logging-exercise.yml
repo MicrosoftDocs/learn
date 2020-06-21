@@ -6,7 +6,7 @@ metadata:
   description: Configure Log4Net in an ASP.NET web app, and send log data to an Azure storage account, and Application Insights.
   ms.date: 06/15/2020
   author: coderandhiker
-  ms.author: coderandhiker
+  ms.author: chrisrt@microsoft.com
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
@@ -33,3 +33,4 @@ tasks:
         -name: Name
         -value: BlobStorageAccount
   hint: "Make sure you create the Azure Storage account"
+  

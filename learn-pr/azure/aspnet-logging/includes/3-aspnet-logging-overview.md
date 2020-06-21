@@ -4,7 +4,7 @@ Logging is an essential element of any commercial application. Logging gives you
 
 You use logging to maintain a history of the work done by an application. This information is useful to assist in debugging and analyzing performance problems. The data can provide an insight into the way in which users are interacting with the system. It might help to identify weaknesses, or users attempting to attack the system. Logging can also be used as the basis for an audit trail of activity.
 
-Logging should be unobtrusive, and shouldn't cause you to modify the logical flow of a web application. In its simplest form, you implement logging by printing messages at strategic points in an application. In a web app, you might consider tracking each time a webpage is displayed. If the webpage completes a series of operations, you might also output a message before and after each operation runs. More sophisticated approaches to logging, described later in this unit, enable you to customize the way when, how, and where log records are written.
+Logging should be unobtrusive, and shouldn't cause you to modify the logical flow of a web application. In its simplest form, you implement logging by printing messages at strategic points in an application. In a web app, you might consider tracking each time a webpage is displayed. If the webpage completes a series of operations, you might also output a message before and after each operation runs. More sophisticated approaches to logging, described later Here, enable you to customize the way when, how, and where log records are written.
 
 When you add logging to an application, there are several points to consider:
 
