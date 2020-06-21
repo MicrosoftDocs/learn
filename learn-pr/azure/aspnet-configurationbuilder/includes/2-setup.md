@@ -1,6 +1,6 @@
 The example web application used by this module is based on part of an e-commerce system. The sample web application enables a warehouse employee to update the details of products sold by the system, and maintain the current stock levels.
 
-In this unit, you'll download and test the application locally, and then create the resources needed to deploy the application to Azure and configure it. You'll do the deployment and configuration in a later unit in this module.
+Here, you'll download and test the application locally, and then create the resources needed to deploy the application to Azure and configure it. You'll do the deployment and configuration in a later unit in this module.
  
 ## Download and test the sample web application locally
 
@@ -76,12 +76,12 @@ In this unit, you'll download and test the application locally, and then create 
 2. Run the commands shown below to define the following PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password of your choosing. This password will be used by the instance of Azure SQL Database that the application connects to.  
 
     > [!NOTE]
-    > The resource group <rng>[sandbox resource group name]</rng> has been created automatically, as part of the sandbox configuration.
+    > The resource group <rgn>[sandbox resource group name]</rgn> has been created automatically, as part of the sandbox configuration.
 
     ```PowerShell
     $useralias = "<your-initals-with-suffix>"
     $serveradminpassword = "<your-password>"
-    $resourcegroupname = "<rng>[sandbox resource group name]</rng>"
+    $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
 3. Move to the **~/eShopModernizing/Setup** folder.
@@ -109,7 +109,7 @@ In this unit, you'll download and test the application locally, and then create 
     > [!div class="mx-imgBorder"]
     > ![Image of home page in the Azure portal. The user has selected **Resource groups**](..\media\2-resource-groups.png)
 
-7. On the **Resource groups** page, select the **<rng>[sandbox resource group]</rng>** resource group.
+7. On the **Resource groups** page, select the **<rgn>[sandbox resource group]</rgn>** resource group.
 
 8. Verify that the resource group contains the following resources:
 

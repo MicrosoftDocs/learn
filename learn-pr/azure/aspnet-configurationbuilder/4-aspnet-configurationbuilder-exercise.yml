@@ -6,7 +6,7 @@ metadata:
   description: Use ConfigurationBuilder to configure an Azure Web app and protect sensitive configuration data.
   ms.date: 06/16/2020
   author: coderandhiker
-  ms.author: coderandhiker
+  ms.author: chrisrt@microsoft.com
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
@@ -24,3 +24,4 @@ tasks:
         -name: Name
         -value: WebAppKeyVault
     hint: "Make sure you create the Azure Key Vault"
+    

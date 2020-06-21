@@ -1,9 +1,9 @@
 
 Configuration is central to building an app in a way that allows its dependencies to vary, based on the environment in which it's deployed. In .NET Framework applications, the most common mechanism to customize app configuration is through the *ConfigurationManager* type. You can use a configuration manager to read settings that are often stored in the app.config file for desktop apps, or in the web.config file for ASP.NET web apps.
 
-One of the challenges with storing configuration settings in this manner is that values to be kept secret often end up being stored as plain text somewhere. This practice creates a security vulnerability. You use the *ConfigurationBuilder* type to remove this vulnerability.
+One of the challenges with storing configuration settings in this manner is that values to be kept secret often end up being stored as plain text somewhere. This practice creates a security vulnerability. You use the *ConfigurationBuilder* class to remove this vulnerability.
 
-## What is the ConfigurationBuilder type?
+## What is the ConfigurationBuilder class?
 
 The *ConfigurationManager* approach used by many traditional .NET Framework and ASP.NET web applications allows an administrator to store configuration information as a series of keys and values in a configuration file. *ConfigurationManager* has been the primary mechanism to avoid hard-wiring information into an application, and is well understood by most ASP.NET developers. 
 

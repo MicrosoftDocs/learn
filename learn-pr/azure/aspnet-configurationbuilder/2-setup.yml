@@ -6,7 +6,7 @@ metadata:
   description: Install and configure the tools required to perform the exercise in this module.
   ms.date: 06/16/2020
   author: coderandhiker
-  ms.author: coderandhiker
+  ms.author: chrisrt@microsoft.com
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -14,3 +14,4 @@ interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/2-setup.md)]
+  

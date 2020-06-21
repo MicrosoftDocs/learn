@@ -4,12 +4,14 @@ The scenario used by this module revolves around an existing .NET Framework web 
 
 ## Learning objectives
 
-- Explain the purpose of the ConfigurationBuilder mechanism to avoid storing sensitive configuration information in easily accessible locations
-- How to use ConfigurationBuilder to retrieve access keys from Azure Key Vault at runtime
+By the end of this module, you will be able to use ConfigurationBuilder to retrieve access keys from Azure Key Vault at runtime.
 
 ## Prerequisites
 
 - An Azure subscription. If you don't have an Azure account, you can [create a free trial subscription here](https://azure.microsoft.com/free/)
 - Some C# programming experience
 - Familiarity with ASP.NET development
+- A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
+- Git for Windows installed on your desktop 
+
 

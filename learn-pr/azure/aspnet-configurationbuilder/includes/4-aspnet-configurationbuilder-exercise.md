@@ -1,6 +1,6 @@
 In the e-commerce system, it's important not to expose the keys used by the warehouse web app to connect to the SQL Server database. Failure to do so, could lead to the database being compromised, and the valuable information it contains being corrupted or amended in an authorized manner.
 
-In this unit, you'll store the SQL Server connection string in Azure Key Vault. Key Vault is a secure repository that uses Azure Active Directory to authenticate and authorize users. You'll make the connection string available only to the web app, by specifying that a client attempting to retrieve the string must be running with the service principal of the web app. You'll then deploy the warehouse web app to the Azure App Service you created earlier, and verify that it still functions correctly.
+Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vault is a secure repository that uses Azure Active Directory to authenticate and authorize users. You'll make the connection string available only to the web app, by specifying that a client attempting to retrieve the string must be running with the service principal of the web app. You'll then deploy the warehouse web app to the Azure App Service you created earlier, and verify that it still functions correctly.
 
 ## Create an Azure Key Vault and store the connection string
 
