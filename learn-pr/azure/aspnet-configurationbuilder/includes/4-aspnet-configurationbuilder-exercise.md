@@ -23,12 +23,11 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
     New-AzKeyVault -Name $vaultname -ResourceGroupName $resourcegroupname -location $location -Tag @{Name="WebAppKeyVault"}
     ```
 
-    > [!NOTE]
-    > You'll receive the following warning when the key vault is created:
-    >
-    > ```text
-    > WARNING: Access policy is not set. No user or application have access permission to use this vault. This can happen if the vault was created by a service principal. Please use Set-AzKeyVaultAccessPolicy to set access policies.
-    > ```
+    You'll receive the following warning when the key vault is created:
+    
+    ```output
+    WARNING: Access policy is not set. No user or application have access permission to use this vault. This can happen if the vault was created by a service principal. Please use Set-AzKeyVaultAccessPolicy to set access policies.
+    ```
 
 4. Retrieve the service principal ID of the web app.
 
@@ -197,7 +196,7 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
     > [!div class="mx-imgBorder"]
     > ![Image of the **Publish** page. The user has clicked **Publish**.](..\media\4-webapp-publish.png)
 
-9. Wait while the web app is built and deployed to the App Service. When deployment is complete, the web app starts and Visual Studio opens a web browser. Verify that the web app operates in the same manner as it did before, when running locally.
+9. Wait while the web app is built and deployed to the App Service. When deployment is complete, the web app starts and Visual Studio opens a web browser. Verify that the web app operates in the same manner as it did before, when running locally. In order for the web app to connect to the database, it must have retrieved the connection string from the key vault.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the web app running using Azure App Service.](..\media\4-web-app.png)
