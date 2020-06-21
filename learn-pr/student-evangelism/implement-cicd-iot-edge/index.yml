@@ -30,3 +30,5 @@ products:
 - azure-iot-edge
 units:
 - learn.oxford.implement-cicd-iot-edge.introduction
+- learn.oxford.implement-cicd-iot-edge.design-cicd-pipeline-iot-edge
+- learn.oxford.implement-cicd-iot-edge.summary
