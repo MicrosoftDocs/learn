@@ -23,5 +23,5 @@ tasks:
       tags:
         -name: Name
         -value: WebAppKeyVault
-    hint: "Make sure you create the Azure Key Vault"
+  hint: "Make sure you create the Azure Key Vault"
     
