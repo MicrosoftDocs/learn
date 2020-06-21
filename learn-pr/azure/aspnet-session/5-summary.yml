@@ -6,9 +6,10 @@ metadata:
   description: Summary
   ms.date: 06/16/2020
   author: coderandhiker
-  ms.author: coderandhiker
+  ms.author: chrisrt@microsoft.com
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/5-summary.md)]
+  

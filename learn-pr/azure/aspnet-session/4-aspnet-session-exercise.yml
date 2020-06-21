@@ -6,7 +6,7 @@ metadata:
   description: Configure Azure Cache for Redis, and configure the cache as the session state provider for the web app.
   ms.date: 06/16/2020
   author: coderandhiker
-  ms.author: coderandhiker
+  ms.author: chrisrt@microsoft.com
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
@@ -24,3 +24,4 @@ tasks:
         -name: Name
         -value: SessionCache
     hint: "Make sure you create the Redis Cache"
+    

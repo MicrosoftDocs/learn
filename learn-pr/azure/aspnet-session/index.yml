@@ -5,7 +5,7 @@ metadata:
   description: Learn how to use Azure Cache for Redis to store session data and improve the scalability of web applications 
   ms.date: 04/20/2020
   author: coderandhiker
-  ms.author: coderandhiker
+  ms.author: chrisrt@microsoft.com
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Improve session scalability in a .NET Framework ASP.NET web application using Azure Cache for Redis
@@ -15,8 +15,9 @@ abstract: |
   - Understand why some approaches to implementing sessions are more scalable than others.
   - Configure ASP.NET to store session data using Azure Cache for Redis
 prerequisites: |
+  - An Azure subscription. If you don't have an Azure account, you can [create a free trial subscription here](https://azure.microsoft.com/free/)
+  - Some C# programming experience
   - Familiarity with ASP.NET development
-  - C# programming
   - A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
   - Git for Windows installed on your desktop 
 iconUrl: /learn/achievements/generic-badge.svg

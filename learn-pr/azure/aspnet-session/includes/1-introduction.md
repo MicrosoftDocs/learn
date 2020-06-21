@@ -10,12 +10,14 @@ The scenario used by this module revolves around an existing .NET Framework web 
 
 ## Learning objectives
 
-- See why some approaches to implementing sessions are more scalable than others in an ASP.NET web application
-- See how to configure ASP.NET to store session data using Azure Cache for Redis
+By the end of this module, you will be able to configure ASP.NET to store session data using Azure Cache for Redis
 
 ## Prerequisites
 
-- An Azure subscription. If you don't have an Azure account, you can [create a free trial subscription here](https://azure.microsoft.com/free/)
-- Some C# programming experience
-- Familiarity with ASP.NET development
+  - An Azure subscription. If you don't have an Azure account, you can [create a free trial subscription here](https://azure.microsoft.com/free/)
+  - Some C# programming experience
+  - Familiarity with ASP.NET development
+  - A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
+  - Git for Windows installed on your desktop 
+
 
