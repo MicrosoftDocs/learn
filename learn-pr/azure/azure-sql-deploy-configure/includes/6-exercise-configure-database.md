@@ -6,7 +6,8 @@ To complete this activity, you could use a PowerShell notebook, which is the sam
 
 In the example that follows, you'll explore the latency effects of using different connection policies in Azure SQL.  
 
-> Note: in PowerShell in the Azure Cloud Shell, you can use the PowerShell Az module or the Azure CLI. In this activity, you'll explore the Azure CLI, but you should know there are similar commands available for the PowerShell Az module.  
+> [!NOTE] 
+> In PowerShell in the Azure Cloud Shell, you can use the PowerShell Az module or the Azure CLI. In this activity, you'll explore the Azure CLI, but you should know there are similar commands available for the PowerShell Az module.  
 
 1. Setup  
 
