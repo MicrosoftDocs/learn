@@ -1,92 +1,156 @@
 In this exercise, you'll upgrade your database to the Business critical tier and explore the offering, including read-replicas and increased performance.
 
-The exercise will use the ostress tool you used in Module 4 to create a workload. You'll then initiate a failover using the Azure PowerShell module in the Azure Cloud Shell, and observe the effect it has on the ostress workload.  
+The exercise will use the ostress tool you used in the previous exercise create a workload. You'll then initiate a failover using the Azure PowerShell module in the Azure Cloud Shell, and observe the effect it has on the ostress workload.  
 
 ## Basic high availability (with no configuration!) in Azure SQL - Business critical service tier
 
-In order to complete this activity, you will complete the following steps:
+In order to complete this exercise, you will complete the following steps:
 
-0. Confirm environment is properly configured  
+1. Configure cloud shell environment
+1. Deploy an identical database with Business critical
 1. Run the ostress workload  
 1. Use PowerShell to initiate a failover  
 1. Observe the results in ostress  
-1. (Bonus) Look for signs in the portal that a failover occurred  
+1. Connect to a readable secondary
 
-This lab will guide you through getting ostress configured, and then you'll see how to use both ostress and PowerShell together to initiate and analyze a failover of Azure SQL Database.  
+This exercise will guide you through getting ostress configured, and then you'll see how to use both ostress and PowerShell together to initiate and analyze a failover of Azure SQL Database.  
 
->Note: Learn more about the PowerShell commands used and available [in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-powershell-samples?tabs=single-database).  
+Learn more about the PowerShell commands used and available [in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-powershell-samples?tabs=single-database).  
 
-**Step 0 - Confirm environment is properly configured** 
+1. Configure cloud shell environment
 
-Open the Command Prompt (it is pinned to the bottom taskbar).  
+    In the Azure Cloud Shell terminal (to your right on this page), run the following PowerShell to configure your environment.  
 
-Confirm [RMUtils tool (which contains ostress)](https://www.microsoft.com/download/details.aspx?id=4511) is installed and has been added to the Path. 
-```cmd
-ostress
-```
+    ```powershell
+    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like learn*
+    $resourceGroup = $resourceGroup.ResourceGroupName
+    $database = "AdventureWorks-bc"
+    $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup
+    $server = $server.ServerName
 
-Next, in the Azure Cloud Shell terminal (to your right), run the following PowerShell to configure your environment.  
+    # Specify your default resource group and Azure SQL Database logical server
+    az configure --defaults group=$resourceGroup sql-server=$server
 
-```powershell
-$resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like learn*
-$resourceGroup = $resourceGroup.ResourceGroupName
-$database = "AdventureWorks0406"
-$server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup
-$server = $server.ServerName
+    # Confirm the defaults have been set
+    az configure --list-defaults
+    ```
 
-# Specify your default resource group and Azure SQL Database logical server
-az configure --defaults group=$resourceGroup sql-server=$server
+2. Deploy an identical database with Business critical
 
-# Confirm the defaults have been set
-az configure --list-defaults
-```
+    In a previous module of the learning path, you learned how to scale a database using T-SQL. For this exercise, the goal is to upgrade the same database from General purpose to Business critical using the Azure CLI commands in the Azure Cloud Shell. However, since there is a limit between the frequency of failovers, you will deploy the same sample database as Business critical with the name `AdventureWorks-bc`  
 
-**Step 1 - Run the ostress workload**  
+    Since in the previous step you configured your default resource group and server name, the command to create the database is simple, you just have to specify what you want deployed. Run the following in the Azure Cloud Shell.  
 
-The next step is to create a long-running workload so you can see how a failover affects the ability to read/write data, and how long a failover takes in the General purpose service tier for Azure SQL Database.  
+    ```powershell
+    az sql db create --name $database `
+    --edition BusinessCritical `
+    --family Gen5 `
+    --capacity 2 `
+    --sample-name AdventureWorksLT `
+    --read-scale Enabled `
+    --zone-redundant false
+    ```
 
-The ostress workload below essentially connects and runs a simple query 50,000 times. You will use the Command Prompt (which you should already have open on your virtual machine) to run the workload.  
+    This will take a few moments to complete, but while it's running to can review some of the parameters used:
 
-If, at any time, you want to stop running the ostress workload before it is complete, you can go into the terminal and press `CTRL` + `c`.  
+    * `family`: This term specifies the hardware generation. To be consistent with the previous exercise, `Gen5` is used.
+    * `capacity`: This term is used to specify the number of DTUs or vCores. To be consistent with the previous exercise, `2` vCores are used.
+    * `sample-name`: To be consistent with the previous exercise, the `AdventureWorksLT` database sample used.
+    * `edition`: This term is a bit misleading, because it is really referring to the service tier, which is not the same as what edition means in the SQL Server box product.  
+    * `read-scale`: This is not enabled by default, but there is no additional cost associated with it. By enabling it, you're enabling one of your secondary replicas to be used as a readable secondary.  
+    * `zone-redundant`: By default, this is set to false, but you can set it to true if you want a multi-az deployment, with no additional cost. You'll learn more about availability zones in the next unit. 
 
-If, at any time, you want to run the workload again in the terminal, you can run the command again from the Command Prompt in your virtual machine.  
+    Note that this is only available in [certain regions](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region) and not (yet) in Azure SQL managed instance.  
 
-Before running the workload using the command below, you need to update it by providing your server name (e.g. `aw-server394059299`) in place of `serverName` and your password in place of `password`.  
+    After the service tier change completes, you should see detailed information about the updates in the Azure Cloud Shell output under two main categories (though you'll also see indicators under several other properties):  
+    * `currentServiceObjectiveName`: should be `BC_Gen5_2` where `BC` stands for Business critical  
+    * `currentSku`:  
+        * `name`: should be `BC_Gen5`
+        * `tier`: should be `BusinessCritical`  
 
-```cmd
-ostress.exe -S"serverName.database.windows.net" -Q"SELECT COUNT(*) FROM SalesLT.Customer" -U"cloudadmin" -d"AdventureWorks0406" -P"password" -n1 -r50000
-```
+    Another way to confirm this is to navigate to your database in the Azure portal and review the **Overview** tab, locating the **Pricing tier**.  
 
-**Step 2 - Use PowerShell to initiate a failover**  
+    ![Overview tab](../media/overviewtab.png)
 
-Run the following code in the Azure Cloud Shell terminal.
+    > Note: There are many other ways to check this, but another way is through SSMS. If you right-click on your database and select **Properties** > **Configure SLO**, you can also view the changes.  
 
-```powershell
-# create a failover
-Invoke-AzSqlDatabaseFailover -ResourceGroupName $resourceGroup `
-    -ServerName $server `
-    -DatabaseName $database
-```
+3. Run the ostress workload
 
-**Step 3 - Observe the results in ostress**  
+    Just like in the previous exercise, you will leverage `ostress` to repeatedly query your Azure SQL Database. Open a new Command Prompt window on your local machine. Use `cd` to change directories to where the availability module is in the repository you cloned or downloaded earlier. For example, you might use
 
-While this cell is running, you should observe any changes that appear in the terminal. You'll notice that while the failover occurs, for some time you cannot access the database. Once the failover completes, you can see the workload runs successfully again. The importance of retry logic in your application is very important, because if Azure decides to fail you over (for a number of reasons), you don't want your application to crash or become down for any longer than it takes for the failover to occur.  
+    ```cmd
+    cd C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability
+    ```
 
-This tool to create a failover on command can be useful in certain scenarios. It's important to note that the service does throttle you from doing this too often. Press "Play" in the cell below to try to run the failover again.  
+    If `C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability` was the filepath to the folder.
 
-```powershell
-# create a failover again
-Invoke-AzSqlDatabaseFailover -ResourceGroupName $resourceGroup `
-    -ServerName $server `
-    -DatabaseName $database
-```
+    The ostress workload will essentially connect and runs a simple query 50,000 times.
 
-You can now stop the workload in Command Prompt by clicking on the window and selecting `CTRL` + `c`. You can leave this window open, as you will use this same workload in a future activity.      
+    Before running the workload, you will need to update the below ostress script by replacing `serverName` with the name of your Azure SQL Database logical server, and `password` with your password. Note that this command is slightly different because the database name is now `AdventureWorks-bc`.
 
-**(Bonus) Step 4 - Look for signs in the portal that a failover occurred**   
+    ```cmd
+    .\ostress.exe -S"serverName.database.windows.net" -Q"SELECT COUNT(*) FROM SalesLT.Customer" -U"cloudadmin" -d"AdventureWorks-bc" -P"password" -n1 -r50000
+    ```
 
-You might be wondering, if there's a way to check if potentially a failover occurred. There is no clear "Failover occurred" message that exists today, however, checking the Resource Health can be a good indicator.  
+    If your workload is running properly, you should be seeing the result of the query `847` repeatedly appearing in the Command Prompt.
 
-In the Azure portal, navigate to your Azure SQL Database, and in the left-hand menu, under "Support + troubleshooting", select **Resource Health**. Some time after a failover (can be 5-15 minutes), you may see a health event similar to below. This can indicate several things, but one is that something has happened and Azure has decided to failover. 
+    If, at any time, you want to stop running the ostress workload before it is complete, you can go into the terminal and press `CTRL` + `c`.  
 
-![](../media/healthhistory.png)  
+    If, at any time, you want to run the workload again, you can run the command again.  
+
+4. Use PowerShell in Azure Cloud Shell to initiate a failover
+
+    Configure your windows so that you can see this browser and the Command Prompt in one view.  
+
+    Next, run the following code in the Azure Cloud Shell terminal. Note this is the same command you used in the previous exercise.
+
+    ```powershell
+    # create a failover
+    Invoke-AzSqlDatabaseFailover -ResourceGroupName $resourceGroup `
+        -ServerName $server `
+        -DatabaseName $database
+    ```
+
+5. Observe the results in ostress from Command Prompt  
+
+    While this cell is running, you should observe any changes that appear in the terminal. You'll notice that while the failover occurs, for some time you cannot access the database. However, the time where you're unavailable is very short. Once you become disconnected, you should be reconnected after approximately 5 seconds! This failover is 6+ times faster that in the General purpose tier.  
+
+    Recall that databases or managed instances in the Business critical service tier essentially have an Always On Availability Group deployed behind the scenes. This means that when you failover, all that happens is a change in pointers in the backend as we redirect you to one of the secondaries. Because of this, it can be very fast, much faster than General purpose.
+
+6. Connect to a readable secondary
+
+    Since you enabled the `read-scale` parameter, you have the ability to use one of the secondary replicas for read-only workloads. In order to access the read-only replica in applications, you just have to add the following parameter to your connection string for a database:  
+
+    ```sql
+    ApplicationIntent=ReadOnly;
+    ```
+
+    In SSMS, create a new query connection (select **File** > **New** > **Database Engine Query**).  
+
+    ![New database engine query](../media/newdbenginequery.png)  
+
+    Using the same way you've been connecting to your Azure SQL Database logical server (either with SQL Auth or Azure AD Auth), select **Options**.  
+
+    ![Options in SSMS](../media/connectazsql.png)  
+
+    Select **Connection Properties**, and select **Reset All**. Then, under "Connect to database" select **Browse server** and select your **AdventureWorks-bc** database.  
+
+    Then select **Additional Connection Parameters** and copy and paste the following into the text box. Finally, select **Connect**.  
+
+    ```sql
+    ApplicationIntent=ReadOnly;
+    ```  
+
+    With SSMS, you have to specify the server and database to which you want to connect read-only, because there may be multiple databases in a server with different capabilities as far as readable secondaries goes.
+
+    To test, try the following query on your new database engine query, and observe the results. Is it what you would expect?  
+
+    ```sql
+    SELECT DATABASEPROPERTYEX(DB_NAME(), 'Updateability')
+    ```
+
+    ![Read only response](../media/readonly.png)
+
+    You can optionally re-connect and update the Additional Connection Parameters (replace `ReadOnly` with `ReadWrite`), and confirm you are accessing the read-write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in.
+
+    ![Read write response](../media/readwrite.png)

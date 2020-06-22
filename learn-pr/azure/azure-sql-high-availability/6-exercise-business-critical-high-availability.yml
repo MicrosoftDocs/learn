@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Business critical high availability
 durationInMinutes: 10
-interactive: bash
+interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-business-critical-high-availability.md)]
