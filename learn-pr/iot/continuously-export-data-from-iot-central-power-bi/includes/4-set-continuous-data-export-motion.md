@@ -6,7 +6,7 @@ Data that's exported from IoT Central can be sent to any of three services. Let'
 
 Azure Blob storage is the go-to storage for Azure services. It isn't as sophisticated, or costly, as the Azure Cosmos DB service. Blob storage is ideal for logging, archiving, and general purpose storage.
 
-There's a key difference between sending data to Blob storage and sending continuous data to the other two services discussed here. Data for Blob storage is batched, and sent once every minute. Data that's sent to Azure Service Bus or Azure Event Hubs is continuous, and sent in near real time. If response within a minute is important to you, this latency makes Blob storage a less suitable route for warm path data analysis.
+There's a key difference between sending data to Blob storage and sending continuous data to the other two services discussed here. Data for Blob storage is batched, and sent once every minute. Data that's sent to Azure Service Bus or Azure Event Hubs is continuous, and it's sent in near real time. If response within a minute is important to you, this latency makes Blob storage a less suitable route for warm path data analysis.
 
 ## Azure Service Bus
 
@@ -34,8 +34,8 @@ You'll implement an event hub in this module. The event hub is used as input to 
 
 ## Practical tips for implementing data export
 
-When you create the data export service from IoT Central, you can define one of the three services described earlier. You'll be given the option of selecting any of them from within your subscription. However, you can send data to any of these services outside of your subscription by using a connection string.
+When you create the data export service from IoT Central, you can define one of the three services described here. You'll be given the option of selecting any of them from within your subscription. However, you can send data to any of these services outside of your subscription by using a connection string.
 
-Another tip: if your IoT devices are sending telemetry data, and your data export is _not_ running, the telemetry data is lost. Only when the data export service is started will data be exported. To ensure that you're capturing the data, we recommend that you set it to run early.
+An important tip: if your IoT devices are sending telemetry data, and your data export is _not_ running, the telemetry data is lost. Only when the data export service is started will data be exported. To ensure that you're capturing the data, we recommend that you set it to run early.
 
 Let's now put some of this theory to practice, and set data export in motion.
