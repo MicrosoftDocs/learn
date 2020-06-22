@@ -16,13 +16,13 @@ Let's drill down a little further into the three types of Power Apps: _canvas ap
 
 The name should give away the idea. You drag and drop components onto a _canvas_. An easy way to start might be to select **All templates** after you sign in to [Power Apps](https://make.preview.powerapps.com/environments/). But it might be more fun to select **Canvas app from blank**, and educate yourself by dragging in a mix of components.
 
-Power Apps gives you the option of specifying **Tablet** or **Phone** for your canvas app. Then you get a powerful, but slightly intimidating, user interface. You get lots of options, as shown here:
+Power Apps gives you the option of specifying **Tablet** or **Phone** for your canvas app. You then get a powerful, but slightly intimidating, user interface. You have lots of options, as shown here:
 
 [![Screenshot showing the Power Apps user interface for creating a canvas app](../media/continuous-data-power-apps-canvas.png)](../media/continuous-data-power-apps-canvas.png#lightbox)
 
 The key to canvas apps is they are user-interface driven. Canvas apps start with your user experience, letting you select a target of phone, tablet, or web. You can then select and connect to data from over 200 different sources.
 
-### Power Apps portals
+### Portals
 
 Power Apps portals are external-facing. You can build a web portal that allows users outside of your organization to sign in, view, and create data by using Common Data Service.
 
@@ -46,10 +46,10 @@ A fifth type of tile, to accommodate custom streaming data, is the one we're mos
 
 It takes only minutes to build a functioning Power BI dashboard, as you'll see in the next unit.
 
-To accept Azure IoT Central data as a source, you'll need to create an Azure event hub and a Stream Analytics job.
+To accept Azure IoT Central data as a source, you need to create an Azure event hub and a Stream Analytics job.
 
 ## Next steps
 
 Power Apps is the more powerful of the two technologies. You can build more sophisticated apps with Power Apps than with Power BI. Currently, however, the Power Apps service requires a paid subscription to enable Azure data as a source.
 
-In this module, then, you'll build a Power BI dashboard to display continuous IoT Central data on a mobile phone. When you've completed this module, we encourage you to investigate Power Apps, for a developer-level solution.
+In this module, you build a Power BI dashboard to display continuous IoT Central data on a mobile phone. When you've completed this module, we encourage you to investigate Power Apps for a developer-level solution.
