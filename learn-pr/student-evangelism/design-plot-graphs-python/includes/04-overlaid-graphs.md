@@ -66,7 +66,7 @@ heights will form the common horizontal axis.
 heights.scatter('son')
 ```
 
-![png](../media/43-overlaid-graphs-5-0.png)
+![Scatter plot of son heights.](../media/43-overlaid-graphs-5-0.png)
 
 Notice how we only specified the variable (sons' heights) on the common
 horizontal axis. Python drew two scatter plots: one each for the
@@ -130,7 +130,7 @@ method call is analogous to the `scatter` call in the previous example.
 children.plot('AGE')
 ```
 
-![png](../media/43-overlaid-graphs-10-0.png)
+![Scatter plot of age.](../media/43-overlaid-graphs-10-0.png)
 
 On this scale, it's important to remember that we only have data at ages
 0, 1, 2, and so on; the graphs "join the dots" in between.
@@ -167,8 +167,7 @@ California. The columns represent everyone in the U.S.A., everyone in
 California, children in the U.S.A., and children in California. The body
 of the table contains proportions in the different categories. Each
 column shows the distribution of ethnicities in the group of people
-corresponding to that column. So in each column, the entries add up to
-1.
+corresponding to that column. So in each column, the entries add up to 1.
 
 ``` python
 usa_ca = Table.read_table(path_data + 'usa_ca_2014.csv')
@@ -196,7 +195,7 @@ multiple bar charts on the same axes. The call is analogous to those for
 usa_ca.barh('Ethnicity')
 ```
 
-![png](../media/43-overlaid-graphs-15-0.png)
+![Distribution of ethnicity in california.]](../media/43-overlaid-graphs-15-0.png)
 
 While drawing the overlaid bar charts is straightforward, there is a bit
 too much information on this graph for us to be able to sort out
@@ -212,7 +211,7 @@ California.
 usa_ca.select('Ethnicity', 'USA All', 'CA All').barh('Ethnicity')
 ```
 
-![png](../media/43-overlaid-graphs-17-0.png)
+![Distribution of ethnicity in California against all of the United States.](../media/43-overlaid-graphs-17-0.png)
 
 The two distributions are quite different. California has higher
 proportions in the `Hispanic` and `Other` categories, and
@@ -232,7 +231,7 @@ greater in future years. Among Californian children, 50% are in the
 usa_ca.select('Ethnicity', 'CA All', 'CA Children').barh('Ethnicity')
 ```
 
-![png](../media/43-overlaid-graphs-19-0.png)
+![Distribution of ethnicity of children in California against all of the United States.](../media/43-overlaid-graphs-19-0.png)
 
 More complex datasets naturally give rise to varied and interesting
 visualizations, including overlaid graphs of different kinds. To analyze

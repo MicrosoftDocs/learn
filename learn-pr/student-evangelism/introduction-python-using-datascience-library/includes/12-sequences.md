@@ -42,13 +42,13 @@ The complete chart of daily high and low temperatures appears below.
 
 ### Mean of daily high temperature
 
-![Mean of Daily High
-Temperature](http://berkeleyearth.lbl.gov/auto/Regional/TMAX/Figures/global-land-TMAX-Trend.png)
+![Mean of daily high
+temperature.](http://berkeleyearth.lbl.gov/auto/Regional/TMAX/Figures/global-land-TMAX-Trend.png)
 
 ### Mean of daily low temperature
 
-![Mean of Daily Low
-Temperature](http://berkeleyearth.lbl.gov/auto/Regional/TMIN/Figures/global-land-TMIN-Trend.png)
+![Mean of daily low
+temperature.](http://berkeleyearth.lbl.gov/auto/Regional/TMIN/Figures/global-land-TMIN-Trend.png)
 
 ## Arrays
 
@@ -100,7 +100,7 @@ formula.
 
     array([56.48  , 57.8966, 58.253 , 59.2952])
 
-![png](../media/array-arithmetic.PNG)
+![Array arithmetic.](../media/array-arithmetic.PNG)
 
 Arrays also have *methods*, which are functions that operate on the
 array values. The `mean` of a collection of numbers is its average

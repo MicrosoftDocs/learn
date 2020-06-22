@@ -39,7 +39,7 @@ die_bins = np.arange(0.5, 6.6, 1)
 die.hist(bins = die_bins)
 ```
 
-![png](../media/51-empirical-distributions-4-0.png)
+![Distribution of dice rolls.](../media/51-empirical-distributions-4-0.png)
 
 Variables whose successive values are separated by the same fixed
 amount, such as the values on rolls of a die (successive values
@@ -124,7 +124,7 @@ how it varies.
 empirical_hist_die(10)
 ```
 
-![png](../media/51-empirical-distributions-11-0.png)
+![Empirical distribution of 10 dice rolls.](../media/51-empirical-distributions-11-0.png)
 
 When the sample size increases, the empirical histogram begins to look
 more like the histogram of theoretical probabilities.
@@ -133,13 +133,13 @@ more like the histogram of theoretical probabilities.
 empirical_hist_die(100)
 ```
 
-![png](../media/51-empirical-distributions-13-0.png)
+![Empirical distribution of 100 dice rolls.](../media/51-empirical-distributions-13-0.png)
 
 ``` python
 empirical_hist_die(1000)
 ```
 
-![png](../media/51-empirical-distributions-14-0.png)
+![Empirical distribution of 1000 dice rolls.](../media/51-empirical-distributions-14-0.png)
 
 As we increase the number of rolls in the simulation, the area of each
 bar gets closer to 16.67%, which is the area of each bar in the
