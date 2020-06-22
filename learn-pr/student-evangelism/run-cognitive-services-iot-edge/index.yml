@@ -29,11 +29,9 @@ roles:
 products:
 - azure-iot-hub
 units:
-- learn.oxford.run-cognitive-services-iot-edge.introduction
 - learn.oxford.run-cognitive-services-iot-edge.design
 - learn.oxford.run-cognitive-services-iot-edge.how-configure-iot-edge
 - learn.oxford.run-cognitive-services-iot-edge.exercise-configure-iot-edge
 - learn.oxford.run-cognitive-services-iot-edge.how-deploy-cognitive-service-iot-edge
 - learn.oxford.run-cognitive-services-iot-edge.exercise-deploy-cognitive-service-iot-edge
 - learn.oxford.run-cognitive-services-iot-edge.test-cognitive-service
-- learn.oxford.run-cognitive-services-iot-edge.summary
