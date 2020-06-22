@@ -1,11 +1,11 @@
 
-In this unit, you first download the required files and then import the capability model. Then you create a dashboard that displays all the capabilities of the device template. Next, you create a real device, and then record the connection settings needed for the remote device app. Finally, you create an Azure Maps account, if it's needed.
+In this unit, you first download the required files and then import the capability model. Next, you create a dashboard that displays all the capabilities of the device template. Then, you create a real device and record the connection settings needed for the remote device app. Finally, you create an Azure Maps account, if it's needed.
 
 ## Download the source code and import the capability model
 
 In the preceding unit, you created the IoT Central app. The next step is to download the required files for the device app. You can choose to build your project by using C# or Node.js.
 
-1. Go to the GitHub site that contains the project files: [Your First IoT Central App Learn module](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app).
+1. Go to the GitHub site that contains the project files for [Build your first IoT Central app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app).
 
 1. Download two files to your local machine.
 
@@ -13,7 +13,7 @@ In the preceding unit, you created the IoT Central app. The next step is to down
      * For C# developers: Select the *Program.cs* file.
      * For Node.js developers: Select the *app.js* file.
    
-   * For all developers: Select the *Refrigerated Truck Capability Model.JSON* file.
+   * For all developers: Download the *Refrigerated Truck Capability Model.JSON* file.
 
 ## Import the capability model to the IoT Central app
 
@@ -51,17 +51,17 @@ To visualize the movements and state of the refrigerated truck, you need to crea
 
     [![Screenshot showing the new view options](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
 
-    The pane displays a list that includes **Telemetry**, **Property**, and other tiles of the capability model, each with a check box.
+    The pane displays a list that includes **Telemetry**, **Property**, and other tiles of the capability model, each with a check box next to it.
 
 1. Select the **Location** check box, and then select **Add tile**. 
 
    Dashboards are made up of tiles. The reason for choosing the **Location** tile first is that you want to expand it from its default size. Drag the lower right corner of the tile, so that it is at least twice the default size. This tile is the most fun, because it shows the location of the truck on a map of the world.
 
-1. Before you add more tiles, change the **View name** to something more specific, such as "Truck view."
+1. Before you add more tiles, change the **View name** to something more specific, such as *Truck view*.
 
-1. Now, select each of the rest of the telemetry and properties capabilities in turn, starting at the top, and then select **Add tile**. 
+1. Select each of the rest of the telemetry and properties capabilities in turn, starting at the top, and then select **Add tile**. 
 
-   We're going for function over form here, and we can make dashboard more elegant later. For now, we only want a dashboard that will confirm all the telemetry that's being sent from our remote device. There's no need to add the commands to the dashboard, though that option does exist.
+   The idea is to go for function over form here, and you can make dashboard more elegant later. For now, you only want a dashboard that confirms all the telemetry that's being sent from your remote device. There's no need to add the commands to the dashboard, though that option does exist.
 
 1. When you've added all the tiles, check out the tile labels. You can drag tiles around, and the portal will try to rearrange them neatly.
 
@@ -73,7 +73,7 @@ To visualize the movements and state of the refrigerated truck, you need to crea
     
 1. Select **Publish**.
 
-You can create as many views as you'd like, and give each a friendly name. For this module though, one dashboard will work well.
+You can create as many views as you'd like, and give each a friendly name. For this module, though, one dashboard will work well.
 
 The next step is to create a device.
 
@@ -83,7 +83,7 @@ By "real" device, we mean that IoT Central understands that there's a remote app
 
 1. On the left pane, select **Devices**.
 
-1. On the **Devices** menu, select **RefrigeratedTruck**. This ensures that the device you create is using this device template.
+1. On the **Devices** menu, select **RefrigeratedTruck**. This selection ensures that the device you create is using this device template.
 
 1. Select **New**. 
 
@@ -97,7 +97,7 @@ By "real" device, we mean that IoT Central understands that there's a remote app
 
 1. Leave the **Simulate this device?** setting at **No**. 
 
-   You're going to build a real truck here. Well, a simulated _real_ truck. Setting this value to **Yes** instructs IoT Central to pump out random values for our telemetry. These random values can be useful in validating a device template.
+   You're going to build a real truck here. Well, a _simulated_ real truck. Setting this value to **Yes** instructs IoT Central to pump out random values for your telemetry. These random values can be useful in validating a device template.
 
 1. Select **Create**. 
 
@@ -106,7 +106,7 @@ By "real" device, we mean that IoT Central understands that there's a remote app
     > [!NOTE]
     > The **Device status** is *Registered*. Not until the device status is *Provisioned* will the IoT Central app accept a connection to the device. The coding unit that follows shows how to provision a device.
 
-1. On the device list, select **RefrigeratedTruck - 1**.
+1. In the device list, select **RefrigeratedTruck - 1**.
 
    The live dashboard is displayed, with lots of "Waiting for data" messages.
 
@@ -126,7 +126,7 @@ The next step is to create the keys that will allow a remote device to communica
 
 1. Select **Close**.
 
-Leave the IoT portal open in your browser, as it is "waiting for data."
+Leave the IoT Central portal open in your browser, because it's "waiting for data."
 
 ::: zone pivot="vs-node,vscode-node"
 
@@ -158,7 +158,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     ```
 
     > [!NOTE]
-    > You may have noticed in the above URL that you're downloading the Linux version of dps-cstr. This is needed to run in Azure Cloud Shell.
+    > You might have noticed in the preceding URL that you're downloading the Linux version of dps-cstr. This version is needed for the command to run in Azure Cloud Shell.
 
 1. To give dps-cstr the correct permissions, run the following command:
 
@@ -166,7 +166,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     chmod +x dps_cstr
     ```
 
-1. Remember that in the preceding section you stored a **Scope ID**, **Device ID**, and **Primary Key** for your device. It's a good idea to keep a text document open, and create in it the following string, replacing *{scope-id}*, *{device-id}*, and *{primary-key}* with your own values. With this text document, you can create and validate the string before you commit to running it.
+1. Remember that in the preceding section you stored a **Scope ID**, **Device ID**, and **Primary Key** for your device. It's a good idea to keep a text document open and create in it the following string, replacing *{scope-id}*, *{device-id}*, and *{primary-key}* with your own values. With this text document, you can create and validate the string before you commit to running it.
 
     ```bash
     ./dps_cstr {scope_id} {device_id} {primary_key} > connection1.txt
@@ -176,20 +176,20 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 
 1. In Cloud Shell, go to the *connection1.txt* file by selecting the braces ({&nbsp;}) button. 
 
-   To locate the file, you'll probably have to expand the *refrigerated-truck* node. 
+   To locate the file, you might have to expand the *refrigerated-truck* node. 
    
 1. Double-click the *connection1.txt* file to open it, and then copy the file contents to your text tool.
 
     [![Screenshot showing how to locate the connection1.txt file in Azure Cloud Shell](../media/refrigerated-trucks-connection1.png)](../media/refrigerated-trucks-connection1.png#lightbox)
 
     > [!IMPORTANT]
-    > The last element of the connection string is the Primary Key. Verify that the connection string in your text file ends with an exact copy of the Primary Key. If it doesn't, correct the copy you've made of the correction string in your text document.
+    > The last element of the connection string is the primary key. Verify that the connection string in your text file ends with an exact copy of the primary key. If it doesn't, correct the copy you've made of the correction string in your text document.
 
-1. The connection string you'll use in the Node.js app in the next unit starts with *HostName=*. Separate this part of the string from the rest in your text document, so that one line contains a string that looks _similar_ to `HostName=iotc-<guid>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>`.
+1. The connection string you'll use in the Node.js app in the next unit starts with *HostName=*. Separate this part of the string from the rest in your text document, so that one line contains a string that looks _similar_ to `HostName=iotc-<guid>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your primary key>`.
 
 1. Save the file.
 
-You now have the all-important connection string. The Scope ID identifies the app, the Device ID identifies the real device, and the Primary Key gives you permission for the connection.
+You now have the all-important connection string. The Scope ID identifies the app, the Device ID identifies the real device, and the primary key gives you permission for the connection.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
@@ -210,7 +210,7 @@ All developers also need an Azure Maps account. If you don't already have an Azu
 
 1. Follow the prompts to create a free account. 
 
-1. When your account is set up, you'll need the **Primary Key** for the account. To find this key, select **Authentication** on the left pane for your Azure Maps resource. 
+1. When your account is set up, you'll need the primary key for the account. To find this key, select **Authentication** on the left pane for your Azure Maps resource. 
 
 1. Copy this key to the *Truck keys.txt* file, and add a note that it applies to Azure Maps.
 
