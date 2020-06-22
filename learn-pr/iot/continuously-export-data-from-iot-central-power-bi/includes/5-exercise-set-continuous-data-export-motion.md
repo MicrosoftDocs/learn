@@ -1,4 +1,4 @@
-In this unit, you first create Blob storage, including one container, and then you create a new data export from your IoT Central app. Finally, you test that the telemetry data is reaching the storage container.
+In this unit, you first create a Azure Blob storage resource, including one container, and then you create a new data export from your IoT Central app. Finally, you test that the telemetry data is reaching the storage container.
 
 It's essential to create the resources in the correct order: storage first, and then data export.
 
@@ -8,7 +8,7 @@ In this section, you create a Blob storage resource outside of your IoT Central 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource** and then, in the search box, enter **Blob storage**.
 
-1. Among the many storage options, select **Storage account - blob, file, table, queue**.
+1. From among the many storage options, select **Storage account - blob, file, table, queue**.
 
     [![Screenshot showing the Create button for new storage](../media/continuous-data-new-storage.png)](../media/continuous-data-new-storage.png#lightbox)
 
