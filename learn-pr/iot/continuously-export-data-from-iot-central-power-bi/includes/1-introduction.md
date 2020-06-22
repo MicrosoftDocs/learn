@@ -1,14 +1,14 @@
 In this module, we look at the ability of an Azure IoT Central app to continuously export data.
 
-The data in this case is telemetry data from one or more Internet of Things (IoT) devices. The continuous data stream can be along a warm path for data analysis, or visualization, or along a cold path into storage. Or both.
+The data in this scenario is telemetry data from one or more Internet of Things (IoT) devices. The continuous data stream can be along a warm path for data analysis, or visualization, or along a cold path into storage. Or both.
 
-This module builds on the app that you developed in the [Your first Azure IoT Central app](https://docs.microsoft.com/learn/modules/create-your-first-iot-central-app/) module by adding data export and a data viewing app. It's not a _requirement_ that you've completed the earlier module, but it might help your understanding of Azure IoT Central if you do complete it.
+This module builds on the app that you developed in the [Create your first Azure IoT Central app](https://docs.microsoft.com/learn/modules/create-your-first-iot-central-app/) module by adding data export and a data viewing app. It's not a _requirement_ that you've completed the earlier module, but it might help your understanding of Azure IoT Central if you do complete it.
 
 The earlier module explains how to monitor and command the movements of a refrigerated truck. This module adds to the realism of the scenario by archiving all the incoming data. Also, an external app is added to the mix. This app enables a remote viewer to easily use a mobile phone to check on the temperature of the contents of the refrigerated truck.
 
-We build the Azure IoT Central app from a pre-prepared JSON file that defines all the device capabilities. We load and run the device app code. A more detailed explanation of the sections of code is available in the earlier module.
+You build the Azure IoT Central app from a pre-prepared JSON file that defines all the device capabilities. You load and run the device app code. A more detailed explanation of the sections of code is available in the earlier module.
 
-You might notice that the next two units are identical to those in the [Set up rules and take action on telemetry data in Azure IoT Central](https://docs.microsoft.com/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/) module, which also builds on the refrigerated trucks scenario, in this case to add rules and actions. If it hasn't been deleted, you can reuse the app you built for the rules and actions module, and go straight to Unit 4. Otherwise, start here.
+You might notice that the next two units are identical to those in the [Set up rules and take action on telemetry data in Azure IoT Central](https://docs.microsoft.com/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/) module, which also builds on the refrigerated trucks scenario, where you added rules and actions. If you haven't deleted the app you built for the rules and actions module, you can reuse it and go straight to unit 4. If you don't still have it, start here.
 
 ## Learning objectives
 
@@ -27,15 +27,15 @@ In this module you will:
 - Ability to navigate the Azure IoT portal.
 - Ability to use Node.js, or C#, at the beginner level.
 - Experience using Visual Studio or Visual Studio Code at the beginner level.
-- Must have or be able to open an Azure Maps account.
+- You must have or be able to open an Azure Maps account.
 
 ## The scenario
 
-You've already built an Azure IoT Central app to monitor and control a simulated refrigerated truck. You now need to make the process more realistic, which you can do by archiving the telemetry data and enabling remote viewing of the data.
+You've already built an Azure IoT Central app to monitor and control a simulated refrigerated truck. In this module, you make the process more realistic by archiving the telemetry data and enabling remote viewing of the data.
 
 [![Image of the finished app, showing a truck en route in the Azure IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)](../media/refrigerated-trucks-intro-map.png#lightbox)
 
-In this module, you'll use supplied components to construct the app that's displayed in the preceding image. You'll then add data export, so that the temperature of the truck contents is archived and viewable on your mobile device, as shown here:
+In this module, you use supplied components to construct the app that displays the data in the preceding image. You then add data export, so that the temperature of the truck contents is archived and viewable on your mobile device, as shown here:
 
 [![Image of a Power BI dashboard on a mobile phone](../media/continuous-data-phone-view-1.png)](../media/continuous-data-phone-view-1.png#lightbox)
 
@@ -50,19 +50,17 @@ In this module, you'll use supplied components to construct the app that's displ
 
     [![Screenshot showing how to configure the new Azure IoT Central app](../media/refrigerated-trucks-new-app.png)](../media/refrigerated-trucks-new-app.png#lightbox)
  
-    a. In the **Application name** box, enter a friendly name for the app.
-
+    a. In the **Application name** box, enter a friendly name for the app.  
     b. In the **URL** box, enter a few words to include in the URL that describe the app.
 
     > [!IMPORTANT]
-    > Your application name can be any friendly name, such as "Refrigerated Trucks." However, the **URL** _must_ be unique, which is why you'll append a unique ID to it. For example, if your URL includes *refrigerated-trucks-\<your id>*, replace *\<your id>* with a unique ID.
+    > Your application name can be any friendly name, such as *Refrigerated Trucks*, but the URL _must_ be unique. This is why you append a unique ID to it. For example, if your URL includes *refrigerated-trucks-\<your id>*, replace *\<your id>* with a unique ID.
 
-    c. Under **Pricing plan**, select **Free**.
-
+    c. Under **Pricing plan**, select **Free**.  
     d. Fill in the rest of the required fields (your contact information).
 
 1. Select **Create**, and wait a few seconds while the app resource is built.
 
    You should now see a dashboard with a few default links.
 
-The next time you visit your Azure IoT Central home page, select **My apps** on the left pane, and an icon for your  **Refrigerated Trucks** app should appear.
+The next time you visit your Azure IoT Central home page, select **My apps** on the left pane, and an icon for your Refrigerated Trucks app should appear.
