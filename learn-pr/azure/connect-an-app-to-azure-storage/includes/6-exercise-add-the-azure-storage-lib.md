@@ -5,7 +5,7 @@ The Azure storage client library for .NET is distributed with NuGet. You will wa
 
 ## Add the Azure Storage NuGet package
 
-1. In the terminal, `cd` to the PhotoSharingApp directory if you aren't already there.
+1. Recall, in unit 3 you created a a new .NET Core Console application called *PhotoSharingApp*. In the terminal, `cd` to the **PhotoSharingApp** directory if you aren't already there.
 
 1. Add the **WindowsAzure.Storage** package to the application.
 

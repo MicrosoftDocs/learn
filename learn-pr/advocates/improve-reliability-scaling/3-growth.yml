@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-scaling.3-growth
+title: "Prepare for growth"
+metadata:
+  title: "Prepare for growth"
+  description: "Prepare for growth"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-growth.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'When a business expands its own capacity in a more natural and predictable way, we say this is:'
+    choices:
+    - content: 'organic growth'
+      isCorrect: true
+      explanation: 'Correct, this description is the definition of organic growth.'
+    - content: 'inorganic growth'
+      isCorrect: false
+      explanation: 'This description is the definition of organic growth.'
+    - content: 'capacity planning'
+      isCorrect: false
+      explanation: 'This description is the definition of organic growth.'
+
+  - content: 'With CosmodDB, which of these metrics are incorporated into a request unit?'
+    choices:
+    - content: 'memory'
+      isCorrect: false
+      explanation: 'Request Units (RUs) are a mixture of Memory, CPU, and IOPS.'
+    - content: 'CPU'
+      isCorrect: false
+      explanation: 'Request Units (RUs) are a mixture of Memory, CPU, and IOPS'
+    - content: 'IOPS'
+      isCorrect: false
+      explanation: 'Request Units (RUs) are a mixture of Memory, CPU, and IOPS'
+    - content: 'all of the above'
+      isCorrect: true
+      explanation: 'Correct, Request Units (RUs) are a mixture of memory, CPU, and IOPS'
+
+  - content: 'Which of the following options is _not_ a business metric you should correlate your resource usage to when planning for capacity?'
+    choices:
+    - content: 'server count'
+      isCorrect: true
+      explanation: 'Correct, this answer is not a business metric.'
+    - content: 'monthly active users (MAUs)'
+      isCorrect: false
+      explanation: 'This answer is a business metric you should correlate your resource usage to when planning for capacity.'
+    - content: 'revenue'
+      isCorrect: false
+      explanation: 'This answer is a business metric you should correlate your resource usage to when planning for capacity.'

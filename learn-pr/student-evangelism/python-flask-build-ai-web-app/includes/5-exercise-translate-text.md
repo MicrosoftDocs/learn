@@ -212,7 +212,7 @@ The final step is to test the changes that you made by uploading photos to the s
     export TRANSLATE_KEY=translator_text_api_key
     ```
 
-1. Go to <http://localhost:5000/> in your browser. Confirm that the page now contains a drop-down list for selecting a language, as pictured in this screenshot:
+1. Go to `http://localhost:5000/` in your browser. Confirm that the page now contains a drop-down list for selecting a language, as pictured in this screenshot:
 
     ![Selecting a language](../media/select-language.png)
 
