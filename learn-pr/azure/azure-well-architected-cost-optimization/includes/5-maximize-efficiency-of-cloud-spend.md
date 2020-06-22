@@ -58,7 +58,7 @@ Note that you should always use the Azure controls to stop your VMs. Shutting do
 
 #### Apply compute cost discounts
 
-Azure Hybrid Benefit offers an additional way to optimize the costs of your Windows Server and SQL Server instances. It allows you to use your licenses for your on-premises computers running Windows Server or SQL Server with Software Assurance as a discount toward the compute cost of these VMs. You can then then reduce or eliminate the costs for Windows Server and SQL Server on enabled instances.
+Azure Hybrid Benefit offers an additional way to optimize the costs of your Windows Server and SQL Server instances. It allows you to use your licenses for your on-premises computers running Windows Server or SQL Server with Software Assurance as a discount toward the compute cost of these VMs. You can then reduce or eliminate the costs for Windows Server and SQL Server on enabled instances.
 
 Some virtual machines need to be up and running all the time. Perhaps you have a web application server farm for a production workload. Or maybe you have a domain controller that supports various servers on a virtual network. If you know with certainty that these virtual machines will run continuously throughout the coming year or longer, you can reduce your costs even more by purchasing a reserved instance. 
 
