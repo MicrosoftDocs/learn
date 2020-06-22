@@ -8,12 +8,12 @@ You might see the term *NoSQL* when reading about non-relational databases. NoSQ
 
 NoSQL (non-relational) databases generally fall into four categories: key-value stores, document databases, column family databases, and graph databases. The following sections discuss these types of NoSQL databases.
 
-## What is a Key-Value store?
+## What is a key-value store?
 
 A key-value store is the simplest (and often quickest) type of NoSQL database for inserting and querying data. Each data item in a key-value store has two elements, a key and a value. The key uniquely identifies the item, and the value holds the data for the item. The value is *opaque* to the database management system. Items are stored in key order. 
 
 > [!NOTE]
-> The terme *opaque* means that the database management system just sees the value as an unstructured block. Only the application understands how the data in the value is structured and what fields it contains. The opposite of *opaque* is *transparent*. If the data is transparent, the database management system understands how the fields in the data are organized. A relational table is an example of a transparent structure.
+> The term *opaque* means that the database management system just sees the value as an unstructured block. Only the application understands how the data in the value is structured and what fields it contains. The opposite of *opaque* is *transparent*. If the data is transparent, the database management system understands how the fields in the data are organized. A relational table is an example of a transparent structure.
 
 > [!div class="mx-imgBorder"]
 > ![Example of a key-value store](../media/4-key-value.png)
@@ -61,18 +61,18 @@ The relational model supports a very generalized approach to implementing this t
 The purpose of a column family database is to efficiently handle situations such as this. You can think of a column family database as holding tabular data comprising rows and columns, but you can divide the columns into groups known as column-families. Each column family holds a set of columns that are logically related together. THe image below shows one way of structuring the same information as the previous image, by using a column family database to group the data into two column-families holding the customer name and address information. Other ways of organizing the columns are possible, but you should implement your column-families to optimize the most common queries that your application performs. In this case, queries that retrieve the addresses of customers can fetch the data with fewer reads than would be required in the corresponding relational database; these queries can fetch the data directly from the **AddressInfo** column family.
 
 > [!div class="mx-imgBorder"]
-> ![Example of a column family database](../media/4-column family.png)
+> ![Example of a column family database](../media/4-column-family.png)
 
 The illustration above is conceptual rather than physical, and is intended to show the logical structure of the data rather than how it might be physically organized. Each row in a column family database contains a key, and you can fetch the data for a row by using this key. 
 
 In most column family databases, the column-families are stored separately. In the previous example, the CustomerInfo column family might be held in one area of physical storage and the AddressInfo column family in another, in a simple form of vertical partitioning. You should really think of the structure in terms of column-families rather than rows. The data for a single entity that spans multiple column-families will have the same row key in each column family. As an alternative to the conceptual layout shown previously, you can visualize the data shown as the following pair of physical structures.
 
 > [!div class="mx-imgBorder"]
-> ![The physical structure of a column family database](../media/4-column family-physical.png)
+> ![The physical structure of a column family database](../media/4-column-family-physical.png)
 
 The most widely used column family database management system is Apache Cassandra. Azure Cosmos DB supports the column-familiy approach through the Cassandra API.
 
-## What is a Graph database?
+## What is a graph database?
 
 Graph databases enable you to store entities, but the main focus is on the relationships that these entities have with each other. A graph database stores two types of information: nodes that you can think of as instances of entities, and edges, which specify the relationships between nodes. Nodes and edges can both have properties that provide information about that node or edge (like columns in a table). Additionally, edges can have a direction indicating the nature of the relationship.
 
