@@ -98,7 +98,8 @@ At a minimum, you'll need to complete the following steps. Run these commands fr
 
 In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you forked and then cloned a Git repository that contains the source code for the _Space Game_ website. Your fork was connected to your projects in Azure DevOps so that the build runs when you push changes to GitHub.
 
-In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
+> [!IMPORTANT]
+> In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
 
 In this part, you clone your fork locally so that you can make changes and build out your pipeline configuration.
 
@@ -184,27 +185,7 @@ You see the directory and file tree in the browsing window.
 > [!NOTE]
 > You might need to open the integrated terminal a second time after you open the folder.
 
-## Create the initial build pipeline
-
-Turn on multistage pipelines and create an initial pipeline configuration that builds the application and produces a build artifact.
-
-### Turn on multistage pipelines in Azure DevOps
-
-Multistage pipelines are a preview feature of Azure Pipelines. Preview features provide early access to features that will soon become part of Azure DevOps. For now, you need to turn on this feature.
-
-From Azure DevOps:
-
-1. Select your profile from the upper-right corner, then select **Preview features**.
-
-    ![Accessing preview features from Azure DevOps](../../shared/media/azure-devops-profile-preview-features.png)
-
-1. Turn on **Multi-stage pipelines**.
-
-    ![Enabling multistage pipelines from Azure DevOps](../../shared/media/enable-preview-features.png)
-
-1. Notice that separate entries for **Release** and **Build** no longer appear on the **Pipelines** menu. You'll now build and release from the same pipeline.
-
-### Create the initial pipeline configuration
+## Create the initial pipeline configuration
 
 Create an initial pipeline configuration that builds the web application. This step ensures that your project is set up to build from your GitHub repository. The build configuration resembles the one you set up in previous modules.
 

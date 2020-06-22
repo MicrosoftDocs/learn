@@ -3,7 +3,7 @@ uid: learn.wwl.process-translate-speech-azure-cognitive-speech-services
 metadata:
   title: Process and Translate Speech with Azure Cognitive Speech Services
   description: Learn how to implement the Speech services found in Azure Cognitive Services by performing speech-to-text transcription, synthesize text input to speech, perform speech translation, and implement speaker recognition in your AI infused applications
-  ms.date: 06/30/2020
+  ms.date: 06/14/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial

@@ -19,7 +19,7 @@ To add the variables:
 
     ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
 1. Select **+ Variable group**.
-1. Under **Properties**, enter **Release** for the variable group name.
+1. Under **Properties**, enter *Release* for the variable group name.
 1. Under **Variables**, select **+ Add**.
 1. Add the following variables:
 
@@ -139,7 +139,7 @@ To see this repair process in action, here you delete your App Service instance 
 
 **Tim:** I think we've got this! Let's show the team.
 
-## Provision and configure different target environments
+## Appendix: Provision and configure different target environments
 
 Now that you've learned how to set up a specific set of target environments, let's consider some of the options that are available to you.
 
