@@ -25,4 +25,4 @@ content: |
 #  azure:
 #    resource:
 #      type: "Microsoft.Network/virtualNetworks"
-#  hint: "Run the `az group deployment create` command as shown to create your VM deployment."
+#  hint: "Run the `az deployment group create` command as shown to create your VM deployment."

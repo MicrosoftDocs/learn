@@ -38,19 +38,19 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. From the top of the Azure portal navigation list, select **Create a resource**.
 
-    :::image source="../media/4-create-resource.png" alt-text="Screenshot showing the Create a resource option":::
+    :::image source="../media/4-create-resource.png" alt-text="Screenshot of Azure portal showing left-hand navigation with Create a resource option option highlighted.":::
 
     This option takes you to the **Azure Marketplace**.
 
-    :::image source="../media/4-azure-marketplace.png" alt-text="Screenshot of Azure marketplace showing categories column on the left and popular options column on the right.":::
+    :::image source="../media/4-azure-marketplace.png" alt-text="Screenshot of Azure portal showing Azure marketplace categories in a left column and popular options in a right column.":::
 
 1. The Azure Marketplace has many services, solutions, and resources available for you to use. Since we know that we want to install WordPress, we can do a quick search for it. In the **Search the Marketplace** box above the listed application options, type in **WordPress**. Select the default *WordPress* option from the list of options available.
 
-    :::image source="../media/4-search-select-wordpress.png" alt-text="Screenshot of Azure portal showing search results for the term WordPress.":::
+    :::image source="../media/4-search-select-wordpress.png" alt-text="Screenshot of Azure portal showing search results for the term WordPress with the WordPress option highlighted.":::
 
 1. In the newly presented panel, you'll typically find additional information about the item you're about to install, including the publisher, a brief description of the resource, and links to more information. Make sure to review this information. Select **Create** to begin the process to create a WordPress app.
 
-    :::image source="../media/4-create-site.png" alt-text="Screenshot of Azure portal showing WordPress resource information.":::
+    :::image source="../media/4-create-site.png" alt-text="Screenshot of Azure portal showing WordPress resource type summary.":::
 
 1. Next, you're presented several options to configure your deployment. Enter the following information:
 
@@ -64,6 +64,9 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
     Your configuration should look like this:
 
     [![Screenshot of Azure portal showing the new WordPress app service configured as instructed.](../media/4-config-info-create.png)](../media/4-config-info-create-expanded.png#lightbox)
+    
+    > [!NOTE]
+    > If you still see a section called **Database**, make sure you selected the correct **Database Provider** described in the configuration above.
 
 1. Now let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/location**.
 

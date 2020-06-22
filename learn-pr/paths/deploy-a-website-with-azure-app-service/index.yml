@@ -19,6 +19,7 @@ roles:
 - developer
 products: 
 - azure
+- azure-app-service
 - azure-portal
 modules:
 - learn.prepare-azure-dev-environment

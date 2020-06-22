@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.9-challenges-communication
+title: 'Cloud challenges: Communication'
+metadata:
+  title: 'Cloud challenges: Communication'
+  description: Learn about communication challenges in building cloud programs.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-challenges-communication.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why does it make sense to colocate highly communicating entities?"
+    choices:
+    - content: "Improvement in performance"
+      isCorrect: false
+      explanation: "That's not quite right. Colocating highly communicating entities does improve performance, but is that the only correct answer? Think about the benefits of bringing highly communicating entities together."
+    - content: "Reduction of network traffic"
+      isCorrect: false
+      explanation: "That's not quite right. Colocating highly communicating entities does reduce network traffic, but is that the only correct answer? Think about the benefits of bringing highly communicating entities together."
+    - content: "Improvement in performance and reduction of network traffic"
+      isCorrect: true
+      explanation: "Correct! Highly communicating entities should ideally be colocating as closely as possible for both reasons."
+

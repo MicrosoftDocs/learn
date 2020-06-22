@@ -10,7 +10,7 @@ Let's take a quick tour of the high-level services Azure offers.
 
 Here's a big-picture view of the available services and features in Azure.
 
-[![Diagram showing overall view of Azure services with sections for security and management, platform services, hybrid cloud, and infrastructure services.](../media/3-azure-services.png)](../media/3-azure-services.png#lightbox)
+[![Diagram showing overall view of popular Azure services with sections for security and management, platform services, hybrid cloud, and infrastructure services.](../media/3-azure-services.png)](../media/3-azure-services.png#lightbox)
 
 Let's take a closer look at the most commonly used categories:
 
@@ -115,7 +115,7 @@ Azure provides multiple database services to store a wide variety of data types 
 >| Azure Database for MySQL   | Fully managed and scalable MySQL relational database with high availability and security        |
 >| Azure Database for PostgreSQL   | Fully managed and scalable PostgreSQL relational database with high availability and security   |
 > | SQL Server on VMs  | Host enterprise SQL Server apps in the cloud     |
-> | Azure SQL Data Warehouse   | Fully managed data warehouse with integral security at every level of scale at no extra cost    |
+> | Azure Synapse Analytics | Fully managed data warehouse with integral security at every level of scale at no extra cost    |
 > | Azure Database Migration Service    | Migrates your databases to the cloud with no application code changes                  |
 > | Azure Cache for Redis      | Caches frequently used and static data to reduce data and application latency                   |
 > | Azure Database for MariaDB | Fully managed and scalable MariaDB relational database with high availability and security        |
@@ -156,7 +156,7 @@ Open source cluster technologies have been developed to deal with these large da
 > [!div class="mx-tableFixed"]
 > | Service Name | Description |
 > |--------------|-------------|
-> | Azure SQL Data Warehouse | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
+> | Azure Synapse Analytics | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud |
 > | Azure Databricks | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure. |
 

@@ -37,7 +37,7 @@ Our first step is to create our exercise environment. We'll run a script that cr
     az group create --name west-coast-rg --location westus2
     az group create --name east-coast-rg --location eastus2
 
-    az group deployment create \
+    az deployment group create \
         --name asrDeployment \
         --template-file deploy.json \
         --parameters storageAccounts_asrcache_name=asrcache$RANDOM \

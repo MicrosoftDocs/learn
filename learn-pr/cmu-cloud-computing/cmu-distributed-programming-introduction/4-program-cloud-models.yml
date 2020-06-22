@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.4-program-cloud-models
+title: Programming models for clouds
+metadata:
+  title: Programming models for clouds
+  description: Programming models for clouds
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/4-program-cloud-models.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block question 1
+  - content: "A password-recovery program for ZIP archives works by brute-force trial of the entire password keyspace. The program has a parallel mode, which is used on a single computer but requires a multicore processor. What kind of parallelization technique is this program most likely to utilize?"
+    choices:
+    - content: "Shared memory"
+      isCorrect: true
+      explanation: "Correct! As a parallel program running on a single machine with a multicore processor, it is most likely to be using a shared-memory model."
+    - content: "Message passing"
+      isCorrect: false
+      explanation: "Incorrect. What is common among all the processors in a single computer?"
+
+# Did I Get This block question 2
+  - content: "A more advanced password-recovery program allows the user to set up a computational cluster using multiple machines to further speed up the brute-force search. The machines in the cluster should be connected using some kind of network but do not implement any kind of distributed shared memory (DSM). What kind of parallelization technique is this program most likely to utilize?"
+    choices:
+    - content: "Message passing"
+      isCorrect: true
+      explanation: "Correct! Because the computational cluster does not implement DSM, the only other likely option is message passing."
+    - content: "Shared memory"
+      isCorrect: false
+      explanation: "Incorrect. Without DSM, how would the processes across machines communicate?"      
+
+# Did I Get This block question 3
+  - content: "What is the main difference between message-passing and shared-memory models?"
+    choices:
+    - content: "Message passing requires explicit messages to be sent between nodes, while the shared-memory model assumes the existence of a shared address space through which all parallel processes of the application can access data."
+      isCorrect: false
+      explanation: "That's not quite right. Message passing does require explicit messages to be sent between nodes, while the shared-memory model assumes the existence of a shared address space through which all parallel processes of the application can access data, but is that the only correct option among the ones listed?"
+    - content: "Shared memory requires explicit messages to be sent through a shared address space, while processes in message passing use a network to synchronize execution."
+      isCorrect: false
+      explanation: "Incorrect. Shared memory does not have explicit communication, while message passing does not have explicit synchronization."
+    - content: "Shared-memory models require explicit synchronization, while message-passing models do not."
+      isCorrect: false
+      explanation: "That's not quite right. Shared-memory models do require explicit synchronization, while message-passing models do not, but is that the only correct option among the ones listed?"
+    - content: "Message passing requires explicit messages to be sent between nodes, while the shared-memory model assumes the existence of a shared address space through which all parallel processes of the application can access data. Shared-memory models require explicit synchronization, while message-passing models do not."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Shared memory requires explicit messages to be sent through a shared address space, while processes in message passing use a network to synchronize execution. Shared-memory models require explicit synchronization, while message-passing models do not."
+      isCorrect: false
+      explanation: "Incorrect. Shared memory does not have explicit communication, while message passing does not have explicit synchronization."

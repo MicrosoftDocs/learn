@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.azure-admin-manage-storage
+metadata:
+  title: Implement and manage storage for Azure administrators
+  description: Learn how to manage storage as an Azure administrators. 
+  brand: azure
+  ms.date: 05/15/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement and manage storage for Azure administrators
+summary: |
+  Learn how to manage storage accounts, data in Azure Storage, and Azure File and Blob storage. 
+prerequisites: |
+  - [Azure fundamentals](../azure-fundamentals/index.yml)
+  - [Prerequisites for Azure administrators](../azure-administrator-prerequisites/index.yml)
+iconUrl: /learn/achievements/azure-administrator-manage-storage.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-storage
+- azure-storage-accounts
+- azure-storage-explorer
+- azure-blob-storage
+- azure-files
+- azure-data-box-family
+- azure-virtual-machines
+modules:
+- learn.create-azure-storage-account
+- learn.choose-the-right-disk-storage-for-vm-workload
+- learn.azure.secure-azure-storage-account
+- learn.store-and-share-with-azure-files
+- learn.upload-download-and-manage-data-with-azure-storage-explorer
+- learn.azure.export-data-with-azure-import-export
+- learn.azure.move-data-with-azure-data-box
+- learn.azure.extend-share-capacity-with-azure-file-sync
+- learn.caching-and-performance-azure-storage-and-disks
+trophy:
+  uid: learn.azure-admin-manage-storage.trophy

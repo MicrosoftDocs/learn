@@ -172,7 +172,7 @@ We'll start by downloading and building an existing .NET Core application. You m
 
 1. Click the **specifications** container.
 
-In order to have some blobs with a different modified date from the batch upload time, you will modified a few of them.
+In order to have some blobs with a different modified date from the batch upload time, you will modify a few of them.
 
 1. From the **specifications** container, click one of the specification files (for example, _specifications04.md_).
 

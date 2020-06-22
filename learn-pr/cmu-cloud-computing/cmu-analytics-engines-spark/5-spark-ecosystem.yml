@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.5-spark-ecosystem
+title: The Spark ecosystem
+metadata:
+  title: The Spark ecosystem
+  description: The Spark ecosystem
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 16
+content: |
+  [!include[](includes/5-spark-ecosystem.md)]

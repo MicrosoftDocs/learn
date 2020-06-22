@@ -99,8 +99,6 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
 1. Select **Logout**, and then log in again with the same user.
 
-1. Select the **Hello, [First name] [Last name]!** link again.
-
 1. Enter the verification code from the TOTP authenticator app in the **Authenticator code** text box. Select the **Log in** button.
 
 1. Select **Hello, [First name] [Last name]!**. Then, select the **Two-factor authentication** tab.

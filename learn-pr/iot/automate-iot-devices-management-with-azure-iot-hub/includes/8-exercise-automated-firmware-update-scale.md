@@ -1,7 +1,7 @@
 In this unit, we will apply what we learned in previously to configure a firmware update on several groups of devices, illustrating a real life scenario.
 
 To create, manage and monitor Automatic Device Management configurations with Azure IoT Hub, you can use the portal like you did in previous exercises, but in order to integrate the device management operations into your IoT application and process, dealing with multiple configurations in parallel and automate part of the process, you will want to use a more programmatic method. The IoT extension for the Azure CLI allows you to easily create, update, monitor, and delete configurations as you can see in the [documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management-cli).
-We want to prepare a firmware update campaign to update all devices installed at 2 of our customers: Lewis and Smith. But as explained in the previous unit, we don't want to not take the risk of disrupting cheese aging processes for too long and we can't afford a failure of all devices at the same time.
+We want to prepare a firmware update campaign to update all devices installed at 2 of our customers: Lewis and Smith. But as explained in the previous unit, we don't want to take the risk of disrupting cheese aging processes for too long and we can't afford a failure of all devices at the same time.
 We will go through the following steps:
 
 1. Create new device identities, set up their device twin tag, and start simulators

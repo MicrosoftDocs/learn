@@ -46,7 +46,7 @@ This search defaults to checking every Azure service category to get its results
 
 1. Select any of the results that interest you to learn more about that service, including how to get started. Select the **X** in the corner to explore a different service. When you're done, move to the next step.
 
-1. Select the **X** in the right-hand end of the search box. The **X** button will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those filters manually, or close the **Compute** pane with the **X** icon in the upper right corner and reopen it. When you are finished trying out the search and filtering options, move on to the next step.
+1. Select the **X** in the right-hand end of the search box. The **X** button will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those filters manually, or close the **Marketplace** pane with the **X** icon in the upper right corner and reopen it. When you are finished trying out the search and filtering options, move on to the next step.
 
 1. Select the **X** at the top right-hand corner to close the **Marketplace** pane. Now you will see the **New** pane once again.
 

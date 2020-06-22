@@ -15,9 +15,7 @@ Azure Monitor for containers is a comprehensive monitoring solution for Azure Ku
 
 You use Log Analytics in Azure Monitor to store monitoring data, events, and metrics from your AKS cluster and the applications. First, you'll pre-create the Log Analytics workspace in your assigned environment resource group.
 
-1. Sign in to [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with an Azure account.
-
-1. You need a unique name for the workspace. Run the command below to generate a name similar to **aksworkshop-workspace-12345**.
+1. You need a unique name for the workspace. Run the command below in Cloud Shell to generate a name similar to **aksworkshop-workspace-12345**.
 
     ```bash
     WORKSPACE=aksworkshop-workspace-$RANDOM
@@ -65,7 +63,10 @@ We view utilization reports and charts for your cluster in the Azure portal by u
 
 Let's look at the steps you need to take to get a detailed view of the health of nodes and pods in a cluster.
 
-1. Switch to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Sign in to the Azure portal.
+
+    > [!div class="nextstepaction"]
+    > [Azure portal](https://portal.azure.com?azure-portal=true)
 
 1. Select **Azure Monitor** from the left pane in the Azure portal.
 
@@ -106,9 +107,9 @@ The RBAC Role and ClusterRole objects allow you to set up rules that represent a
 
 We use a role binding to grant the permissions defined in a role to a user or set of users. A role binding contains the list of users, groups, or service accounts, and a reference to the role being granted. Like the Role and ClusterRole, a RoleBinding grants permission within a specific namespace and the ClusterRoleBinding grants access to the cluster. You'll use a ClusterRoleBinding bind your ClusterRole to all the namespaces in your cluster.
 
-In this exercise, you'll set up *Roles* and *RoleBindings* that aren't limited to a specific namespace. You can configure *Roles* and *RoleBindings* to grant permissions and bind roles to users across the entire cluster or to cluster resources outside a given namespace.
+In this exercise, you'll set up *ClusterRoles* and *ClusterRoleBindings* that aren't limited to a specific namespace. You configure *CusterRoles* to define permissions on namespaced resources given within individual namespaces or across all namespaces. *CusterRoles* are also used to describe permissions on cluster-scoped resources. You then use the *ClusterRoleBindings* to grant permissions across a whole cluster.
 
-1. Create a file called `logreader-rbac.yaml` by using the integrated editor.
+1. Create a file called `logreader-rbac.yaml` by using the integrated editor in Cloud Shell.
 
     ```bash
     code logreader-rbac.yaml

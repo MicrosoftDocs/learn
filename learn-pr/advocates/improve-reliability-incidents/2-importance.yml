@@ -1,0 +1,44 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-incidents.2-importance
+title: "Importance of incident response"
+metadata:
+  title: "Importance of incident response"
+  description: "Importance of incident response"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-importance.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of the following is a goal for effective incident response?'
+    choices:
+    - content: 'Be able to react with caution'
+      isCorrect: false
+      explanation: "While caution is important (so we don't break more things), it is not a goal for effective incident response."
+    - content: 'Be able to respond with urgency'
+      isCorrect: true
+      explanation: 'Correct, we want to respond, not just react, with urgency.'
+    - content: 'Be able to act with deliberation'
+      isCorrect: false
+      explanation: 'While caution is important (so we try the right things), it is not a goal for effective incident response.'
+
+  - content: 'How quickly can engineering teams that are classified as “elite or high performers” generally detect, respond, and remediate service disruptions?'
+    choices:
+    - content: 'in less than 1 hour'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'in less than 4 hours'
+      isCorrect: false
+      explanation: 'High performers can handle an incident in less than an hour according to the _State of DevOps_ report.'
+    - content: 'in less than 24 hours'
+      isCorrect: false
+      explanation: 'This is the definition of a "medium" performer according to the _State of DevOps_ report.'
+    - content: 'in less than 1 week or a month'
+      isCorrect: false
+      explanation: 'This is the definition of a "low" performer according to the _State of DevOps_ report.'

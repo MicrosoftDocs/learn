@@ -20,7 +20,7 @@ Datacenters can be classified based on reliability. In order to understand the f
 
 Tier 1 has non-redundant components, such as power, cooling, and network connections, which can lead to downtime for maintenance in addition to single points of failure (SPOFs). (Service is disrupted if a single part of the overall system has a problem.) Tier 2 still has a single path for power and cooling but adds redundancy, such as a UPS and a generator. Tier 3 adds multiple paths for power (multiple UPSs and PDUs from the source to the rack) and cooling (for example, several CRACs feeding raised floors). Tier 3 allows for no interruptions from planned maintenance. Tier 4 is similar to tier 3, but all paths must be redundant and can continue operations at full capacity with at least one unplanned outage (for example, losing main power or network provider, UPS failure, AC outage).
 
-Even a tier-4 datacenter could incur downtime due to multiple simultaneous outages, as occurred for Amazon during a large thunderstorm in Virginia.<sup>[1][^1]</sup>
+Even a tier-4 datacenter could incur downtime due to multiple simultaneous outages.
 
 $$ Percentage\ of\ availability\ in\ year = \frac{total\ time\ service\ is\ available}{total\ time\ in\ a\ year} $$
 
@@ -32,12 +32,4 @@ For example, the calculation for the downtime that a tier-4 datacenter should ac
 
 $$ 1 - 0.99995 \times 60\ min \times 24\ hr \times 365\ days = 26.28\ min $$
 <br>
-***
-
-### References
-
-1. _Malik, Om.  (2012). [Severe Storms Cause Amazon Web Services Outage](http://gigaom.com/2012/06/29/some-of-amazon-web-services-are-down-again/)_
-
-[^1]: <http://gigaom.com/2012/06/29/some-of-amazon-web-services-are-down-again/> "Malik, Om. (2012). *Severe Storms Cause Amazon Web Services Outage*"
-
 ***
