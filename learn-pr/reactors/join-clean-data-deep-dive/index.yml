@@ -12,13 +12,15 @@ title: 'Join and clean datasets: Deep dive'
 summary: Learn how to TBD.
 abstract:  | 
   In this module, you will:
-  - TBD
-
+  - Learn ways to prepare data for analysis
+  - Dive deeper into cleaning and joining datasets
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - TBD
-  
+  - Introduction to Python
+  - Beginners Data Science for Python Developers
+
 iconUrl: /learn/achievements/reactors/join-clean-data-deep-dive.svg
+hidden: true
 levels:
 - beginner
 roles:
