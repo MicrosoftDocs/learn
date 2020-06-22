@@ -13,7 +13,7 @@ This script should take 3-5 minutes to complete. Make sure to note your password
 **Don't forget to note your password, unique ID, and region. You will need these throughout the module.**  
 
 ```powershell
-# Prompt for username and password
+# Prompt for password
 $adminSqlLogin = "cloudadmin"
 $password = Read-Host "Your username is 'cloudadmin'. Please enter a password for your Azure SQL Database server that meets the password requirements"
 # Prompt for local ip address
