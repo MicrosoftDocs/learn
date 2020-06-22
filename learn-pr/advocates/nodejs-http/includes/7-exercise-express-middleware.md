@@ -1,4 +1,4 @@
-Tailwind Traders have realized they need an application that have some basic level of security. It doesn't need to be anything fancy just a way to differentiate between users that have access and don't have access. This security can be improved later to be more efficient and things like role management. For now, make it simple, make it work.
+Tailwind Traders have realized they need an application that have some basic level of security. It doesn't need to be anything fancy at this point just a way to differentiate between users that have access and don't have access. This security can be improved later to be more efficient and you could at later stage add more features likerole management etc. For now, make it simple, make it work.
 
 ## Add basic authorization to an Express
 

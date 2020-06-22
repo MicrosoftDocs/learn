@@ -1,4 +1,4 @@
-Tailwind Traders are impressed with your first Web Application and want you to improve it. So far you've been serving up all the data without thinking about the size of the data you serve. Imagine this static data instead is served up from a Database. A database could contain millions of records and you need to take into account. The below teaches you some techniques on limiting the size of your response.
+Tailwind Traders are impressed with your first Web Application and want you to improve it. Tailwind Traders are interested in building Web Applications in the form of APIs. Therefore they would like you to build an API that you can write to and read from. Additionally they would like you to consider that data at Tailwind Traders might be stored in a database and may contain millions of records. For that reason they would like to see an app using different techniques to limit how much data is asked for.
 
 ## Implement support for reading and writing data
 

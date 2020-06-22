@@ -1,4 +1,6 @@
-When a request reaches a web application, there might be a few things you need to do with it. Things like verifying that the user is logged in or that they are permitted to see this particular resource for example. A way to handle that is to think of handling a request as a series of steps. Let's say you have a request where the user needs to be logged in to handle a resource. The steps might then need to look like in the following way:
+When a request reaches a web application, there might be a few things you need to do with it. Things like verifying that the user is logged in or that they are permitted to see this particular resource for example. 
+
+Think of handling a request as a series of steps. Let's say you have a request where the user needs to be logged in to handle a resource. The steps might then need to look like in the following way:
 
 1. **Pre request**, here you could investigate whether the user sent the proper credentials through a request header. If the credentials checks out send the request to the next step.
 1. **Construct the response**, this step would involve talking to some kind of data source that could be a database or an endpoint for example. This step ends with the asked for resource being returned providing the request asks for the resource in a correct way.

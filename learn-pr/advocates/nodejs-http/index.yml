@@ -1,18 +1,21 @@
 ### YamlMime:Module
 uid: learn.node-http
 metadata:
-  title: Introduction to 
-  description: Learn how to 
+  title: Build a web API with Node.js and Express 
+  description: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging and authentication/authorization.
   ms.date: 02/06/2020
   author: "softchris"
   ms.author: "chnoring"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to 
+title: Build a web API with Node.js and Express 
 summary: Learn how to 
 abstract: |
-  In this module you will:
-  - Learn about X
+  By the end of this module, you’ll be able to:
+  - Describe the core concepts of the Web framework Express
+  - Configure middleware to control how a request is handled
+  - Respond to HTTP requests with different types of content like text and JSON
+  - Send data to an Express endpoint
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -20,7 +23,11 @@ roles:
 - developer
 products:
 - azure
-prerequisites: None
+prerequisites: |
+  - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
+  - Familiarity with editing text and code files in any text editor
+  - Know the basic about the HTTP protocol
+  - Experience using the command line, including Git operations
 units:
 - learn.node-http.1-introduction
 - learn.node-http.2-introducing-express

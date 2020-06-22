@@ -20,3 +20,10 @@ By the end of this module, you’ll be able to:
 - Configure middleware to control how a request is handled
 - Respond to HTTP requests with different types of content like text and JSON
 - Send data to an Express endpoint
+
+## Prerequisites
+
+- [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
+- Familiarity with editing text and code files in any text editor
+- Know the basic about the HTTP protocol
+- Experience using the command line, including Git operations
