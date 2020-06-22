@@ -33,7 +33,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
 1. Optionally, in Visual Studio Code, you can check out the JMeter test plan file, *LoadTest.jmx*, and the XLST transform, *JMeter2JUnit.xsl*. The XLST file transforms the JMeter output to JUnit so that Azure Pipelines can visualize the results.
 
-## Add the STAGING_URL variable to Azure Pipelines
+## Add variables to Azure Pipelines
 
 Tim's original test plan provides a hard-coded value for the host name of the _Space Game_ website that runs in the **staging** environment.
 
@@ -52,27 +52,32 @@ The corresponding test plan file, *LoadTest.jmx*, specifies this variable and us
 When you run JMeter from the command line, you use the `-J` argument to set the `hostname` property. Here's an example:
 
 ```bash
-apache-jmeter-5.2/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
+apache-jmeter-5.3/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
 ```
 
-Here you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable points to your site's host name that runs on App Service in your **staging** environment.
+Here you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable points to your site's host name that runs on App Service in your **staging** environment. You also set the `jmeterVersion` to specify the version of JMeter to install.
 
-When the agent runs, this variable is automatically exported to the agent as an environment variable. So your pipeline configuration can run JMeter this way:
+When the agent runs, these variables are automatically exported to the agent as environment variables. So your pipeline configuration can run JMeter this way:
 
 ```bash
-apache-jmeter-5.2/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
+apache-jmeter-5.3/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
 ```
 
-Let's add the pipeline variable now, before you update your pipeline configuration. To do so:
+Let's add the pipeline variables now, before you update your pipeline configuration. To do so:
 
 1. In Azure DevOps, go to your **Space Game - web - Nonfunctional tests** project.
 1. Under **Pipelines**, select **Library**.
 1. Select the **Release** variable group.
 1. Under **Variables**, select **+ Add**.
-1. For the name of your variable, enter *STAGING_HOSTNAME*. For its value, enter the URL of the App Service instance that corresponds to your **staging** environment, such as *tailspin-space-game-web-dev-1234.azurewebsites.net*.
+1. For the name of your variable, enter *STAGING_HOSTNAME*. For its value, enter the URL of the App Service instance that corresponds to your **staging** environment, such as *tailspin-space-game-web-staging-1234.azurewebsites.net*.
 
     > [!IMPORTANT]
     > Don't include the `http://` or `https://` protocol prefix in your value. JMeter provides the protocol when the tests run.
+
+1. Add a second variable named *jmeterVersion*. For its value, specify *5.3*.
+
+    > [!NOTE]
+    > This is the version of JMeter that we last used to test this module. To get the latest version, see [Download Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi?azure-portal=true).
 
 1. To save your variable to the pipeline, near the top of the page, select **Save**.
 
@@ -95,8 +100,7 @@ In this section, you modify the pipeline to run your load tests during the _Stag
 
     * The `RunLoadTests` job does load testing from a Linux agent.
     * The `RunLoadTests` job depends on the `Deploy` job to ensure that the jobs are run in the correct order. You need to deploy the website to App Service before you can run the load tests. If you don't specify this dependency, jobs within the stage can run in any order or run in parallel.
-    * The `jmeterVersion` variable specifies the version of JMeter to install. Using a variable helps make it easier to upgrade to newer versions.
-    * The first `script` task downloads and installs JMeter.
+    * The first `script` task downloads and installs JMeter. The `jmeterVersion` pipeline variable specifies the version of JMeter to install.
     * The second `script` task runs JMeter. The `-J` argument sets the `hostname` property in JMeter by reading the `STAGING_HOSTNAME` variable from the pipeline.
     * The third `script` task installs **xsltproc**, an XSLT processor, and transforms the JMeter output to JUnit.
     * The `PublishTestResults@2` task publishes the resulting JUnit report, *JUnit.xml*, to the pipeline. Azure Pipelines can help you visualize the test results.
@@ -123,9 +127,9 @@ Here you watch the pipeline run. You see the load tests run during _Staging_.
     You see that the deployment and the load tests finished successfully.
 1. Near the top of the page, note the summary.
 
-    You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests** section, which shows that the load tests have passed.
+    You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests and coverage** section, which shows that the load tests have passed.
 
-    ![Azure Pipelines, showing the test summary](../media/5-build-summary-tests.png)
+    ![Azure Pipelines, showing the test summary](../../shared/media/azure-pipelines-build-summary-tests.png)
 
 1. Select the test summary to see the full report.
 

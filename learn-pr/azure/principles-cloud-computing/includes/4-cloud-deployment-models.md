@@ -16,7 +16,7 @@ This is the most common deployment model. In this case, you have no local hardwa
 Businesses can use multiple public cloud providers of varying scale. Microsoft Azure is an example of a public cloud provider.
   :::column-end:::
   :::column:::
-![Public cloud icon](../media/4-public-cloud.png)
+:::image type="icon" border="false" source="../media/4-public-cloud.png":::
   :::column-end:::
 :::row-end:::
 
@@ -46,7 +46,7 @@ Not all scenarios fit the public cloud. Here are some disadvantages to think abo
 In a private cloud, you create a cloud environment in your own datacenter and provide self-service access to compute resources to users in your organization. This offers a simulation of a public cloud to your users, but you remain completely responsible for the purchase and maintenance of the hardware and software services you provide.
   :::column-end:::
   :::column:::
-![Private cloud icon](../media/4-private-cloud.png)
+:::image type="icon" border="false" source="../media/4-private-cloud.png":::
   :::column-end:::
 :::row-end:::
 
@@ -78,7 +78,7 @@ A private cloud can provide cloud functionality to external customers as well, o
 A hybrid cloud combines public and private clouds, allowing you to run your applications in the most appropriate location. For example, you could host a website in the public cloud and link it to a highly secure database hosted in your private cloud (or on-premises datacenter).
   :::column-end:::
   :::column:::
-![Hybrid cloud icon](../media/4-hybrid-cloud.png)
+:::image type="icon" border="false" source="../media/4-hybrid-cloud.png":::
   :::column-end:::
 :::row-end:::
 
