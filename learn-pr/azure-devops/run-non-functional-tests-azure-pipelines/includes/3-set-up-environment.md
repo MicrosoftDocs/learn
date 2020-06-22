@@ -81,8 +81,6 @@ To set up the work item:
 
 At the end of this module, you move the card to the **Done** column after you complete the task.
 
-[!include[](../../shared/includes/enable-multi-stage-pipelines.md)]
-
 [!include[](../../shared/includes/deploy-local-setup.md)]
 
 ## Create the Azure App Service environments

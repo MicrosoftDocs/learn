@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.text-classification-naive-bayes.4-explore-data
+title: Explore the data
+metadata:
+  title: Explore the data
+  description: Explore the data by histograms and word clouds in pandas and Matplotlib.
+  ms.date: 06/30/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-explore-data.md)]
