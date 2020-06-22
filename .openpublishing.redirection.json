@@ -1874,6 +1874,51 @@
       "source_path": "learn-pr/paths/translate-speech-with-speech-services/index.md",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/paths/process-translate-speech-azure-cognitive-speech-services/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/2-feature-importance.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/2-feature-importance",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/3-explainers.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/3-explainers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/4-create-explanations.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/4-create-explanations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/5-visualize-explanation.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/5-visualize-explanation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/6-interpret-models.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/6-interpret-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/6a-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/6a-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/7-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/index.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/",
+      "redirect_document_id": true
     }
   ]
 }

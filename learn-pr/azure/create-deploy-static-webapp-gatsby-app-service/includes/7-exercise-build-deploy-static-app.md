@@ -74,9 +74,11 @@ git commit -m "adding Gatsby project"
 1. Go to GitHub and log on. You should now be on a URL like so `https://github.com/<your username>?tab=repositories`
 
 2. Now click the `new` button as indicated below:
+
    :::image type="content" source="../media/create-github-repo.png" alt-text="Create new GitHub repo":::
 
 3. Name your repository `gatsby-app` and click `Create repository` as indicated below:
+
    :::image type="content" source="../media/github-naming.png" alt-text="GitHub naming":::
 
 4. Finally, add your GitHub repository as a remote and push. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
@@ -150,9 +152,11 @@ Click the **Review + create** button
 Continue to create the application.
 
 1. Click the **Create** button
+
    :::image type="content" source="../media/create-button.png" alt-text="Click create button":::
 
 1. Once the deployment is complete, click the **Go to resource** button
+
    :::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource":::
 
 ### Review the GitHub Action
