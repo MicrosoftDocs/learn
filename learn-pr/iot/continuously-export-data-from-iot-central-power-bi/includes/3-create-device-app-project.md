@@ -10,11 +10,11 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. In Visual Studio Code, on the **Terminal** menu, select **New Terminal**.
 
-1. In the opened **Terminal** window, create an empty folder, *RefrigeratedTruck*, where you'll develop your code, by running the following command:
+1. In the **Terminal** window, create an empty folder, *RefrigeratedTruck*, where you'll develop your code, by running the following command:
 
    `mkdir RefrigeratedTruck`
    
-1. Go to the folder by entering the following command:
+1. Go to the folder by running the following command:
 
    `cd RefrigeratedTruck`
 
@@ -45,7 +45,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. In Visual Studio Code, on the **Terminal** menu, select **New Terminal**.
 
-1. In the opened **Terminal** window, create an empty folder, *RefrigeratedTruck*, where you'll develop your code, by running the following command:
+1. In the **Terminal** window, create an empty folder, *RefrigeratedTruck*, where you'll develop your code, by running the following command:
 
    `mkdir RefrigeratedTruck`
    
@@ -150,14 +150,14 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Copy the previously downloaded app.js code to the *app.js* file of the project.
 1. Copy the connection string and the Azure Maps key to the locations marked in the code.
-1. In the Visual Studio Code **Terminal**, enter `node app.js`.
+1. In the Visual Studio Code **Terminal**, enter **node app.js**.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
 1. Copy the previously downloaded Program.cs code to the *Program.cs* file of the project.
 1. Replace the strings in the code (`ScopeID`, `DeviceID`, `PrimaryKey`, and `AzureMapsKey`) with the ID and key strings you stored in your "Truck keys.txt" file.
-1. In the Visual Studio Code **Terminal**, enter `dotnet run`.
+1. In the Visual Studio Code **Terminal**, enter **dotnet run**.
 
 ::: zone-end
 
