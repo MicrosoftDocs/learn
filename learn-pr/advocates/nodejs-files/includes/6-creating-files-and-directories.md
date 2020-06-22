@@ -41,13 +41,13 @@ Files can be created with the `fs.writeFile` and `fs.writeFileSync` methods. Thi
 For instance, this code creates a file called "greeting.txt" with the text "Hello World!" inside.
 
 ```javascript
-fs.writeFileSync(path.join(__dirname, "totals.json", "Hello World!"));
+fs.writeFileSync(path.join(__dirname, "greeting.txt", "Hello World!"));
 ```
 
 If you omit the third parameter, which is the data to be written to the file, Node.js will write "undefined" to the file. That's probably _not_ what you would ever want. To write an empty file, pass an empty string. An even better option would be to pass the `String` function, which effectively does the same thing, but without empty quotes hanging out awkwardly in your code.
 
 ```javascript
-fs.writeFileSync(path.join(__dirname, "totals.json", String()));
+fs.writeFileSync(path.join(__dirname, "greeting.txt", String()));
 ```
 
 In the next exercise, you'll use your new found knowledge of how to create files and directories to extend the program to create a directory where the total of all sales files will be stored.

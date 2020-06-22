@@ -71,7 +71,7 @@ You're going to need to find all of those files given only the top-most location
            // Make sure the discovered file is a sales.json file
            if (item.name === "sales.json") {
              // store the file path in the salesFiles array
-             salesFiles.push(`${folderName}/${item.name}));
+             salesFiles.push(`${folderName}/${item.name}`);
            }
          }
        });
@@ -85,7 +85,7 @@ You're going to need to find all of those files given only the top-most location
    }
    ```
 
-2. Call this new function from the "main" method, passing in the "stores" folder name as the location to search for files. Here is the completed code for the exercise.
+2. Call this new function from the "main" method, passing in the "stores" folder name as the location to search for files.
 
    ```javascript
    function main() {
@@ -97,8 +97,6 @@ You're going to need to find all of those files given only the top-most location
 ## Execute the program
 
 1. Press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>S</kbd> to save the `index.js` file.
-
-1. Close the Cloud Shell editor by pressing <kbd>Ctrl</kbd> + <kbd>Q</kbd>.
 
 1. Enter the following command into the Cloud Shell to run the program...
 

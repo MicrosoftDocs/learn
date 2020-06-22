@@ -1,12 +1,18 @@
-In the previous exercise, you wrote a _stunning_ program that iterates through any folder that it's given to find any of the "sales.json" files inside. In this exercise, you'll use the "path" module to improve that program, ensure that it will run in any folder and will find any file with a ".json" extension.
+In the previous exercise, you wrote a _stunning_ program that iterates through a folder to find any of the "sales.json" files inside. In this exercise, you'll use the "path" module to improve that program, ensure that it will run in any folder and will find any file with a ".json" extension.
+
+## Include the "path" module
+
+1. At the very top of the `index.js` file, include the "path" module.
+
+   ```javascript
+   const path = require("path");
+   ```
 
 ## Using the current directory
 
 In the current "index.js" code, you're passing the static location of the "stores" folder. We'll change that code to use the `__dirname` value instead of passing a static folder name.
 
-1. Click on the `index.js` file to open it.
-
-1. On line 4, create a variable to store a path to the "stores" directory, using the `__dirname` constant.
+1. In the `main` method, create a variable to store a path to the "stores" directory, using the `__dirname` constant.
 
    ```javascript
    function main() {
@@ -40,7 +46,7 @@ In the current "index.js" code, you're passing the static location of the "store
 
 Instead of concatenating folder names to make a new path to search, you'll change the code to use the `path.join` method so that this code will work across operating systems.
 
-1. On line 27 of the `index.js` file, change the `findFiles` method to use `path.join`.
+1. In the "findSalesFiles" method, change the `findFiles` method to use `path.join`.
 
    ```javascript
    // search this directory for files (this is recursion!)
@@ -95,7 +101,7 @@ Instead of looking for just `sales.json` files, this program needs to search for
    ]
    ```
 
-Great job! You've used the "path" and `__dirname` constant to make the program much more robust. Next, you'll need to follow Tailwind Traders "best practices" for working with sales files, which dictate that you move all of the files to a working directory before you do anything with them. In the next section, you'll learn how to create directories and move files between locations.
+Great job! You've used the "path" and `__dirname` constant to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
 
 ### Got Stuck?
 

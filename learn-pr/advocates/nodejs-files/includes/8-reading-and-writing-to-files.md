@@ -54,7 +54,7 @@ If you remember from the previous exercise, you've already learned how to write 
 const data = JSON.parse(fs.readFileSync("stores/201/sales.json"));
 
 // write the total to the "totals.json" file
-fs.writeFileSync(path.join(salesTotalsDir, "stores/totals.txt"), data.total);
+fs.writeFileSync("salesTotals/totals.txt"), data.total);
 
 // totals.txt
 // 22385.32
@@ -68,13 +68,9 @@ In the example above, the file is overwritten every time you write to it. Someti
 const data = JSON.parse(fs.readFileSync("stores/201/sales.json"));
 
 // write the total to the "totals.json" file
-fs.writeFileSync(
-  path.join(salesTotalsDir, "stores/totals.txt"),
-  `${data.total}\r\n`,
-  {
-    flag: "a"
-  }
-);
+fs.writeFileSync(path.join("salesTotals/totals.txt"), `${data.total}\r\n`, {
+  flag: "a"
+});
 
 // totals.json
 // 22385.32

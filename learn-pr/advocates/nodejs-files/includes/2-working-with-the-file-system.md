@@ -67,7 +67,7 @@ const items = fs.readdirSync("stores", { withFileTypes: true });
 items.forEach((item) => {
   const type = item.isDirectory() ? "folder" : "file";
   console.log(`${item.name}: ${type}`);
-  // 201: folder, 202: folder, sales.json: file, totals.txt: file ]
+  // 201: folder, 202: folder, sales.json: file, totals.txt: file
 });
 ```
 
@@ -75,7 +75,7 @@ items.forEach((item) => {
 
 A common requirement is to have folder with subfolders, which also have subfolders. Somewhere in this tree of nested folders are files that you need. You need a program that can walk that folder tree to find the files. To do that, you'll have to determine if an item is a folder, and then search that folder for files. You'll have to repeat this for every folder that you find.
 
-You can do search nested directory structures by having a method that finds folders and then calls itself to find folders inside those folders. In this way, the program will "walk" the directory tree until it reads every folder inside. When a method calls itself, that's called "recursion".
+You can search nested directory structures by having a method that finds folders and then calls itself to find folders inside those folders. In this way, the program will "walk" the directory tree until it reads every folder inside. When a method calls itself, that's called "recursion".
 
 ```javascript
 function findFiles(folderName) {
@@ -84,7 +84,7 @@ function findFiles(folderName) {
     if (item.isDirectory()) {
       // this is a folder, so call this method again and pass in
       // the path to the folder
-      findFiles(`${folderName}/{item.name}`);
+      findFiles(`${folderName}/${item.name}`);
     } else {
       console.log(`Found file: ${item.name} in folder: ${folderName}`);
     }

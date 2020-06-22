@@ -9,7 +9,7 @@ metadata:
   ms.date: 04/20/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
-durationInMinutes: 2
+durationInMinutes: 6
 content: |
   [!include[](includes/2-working-with-the-file-system.md)]
 quiz:

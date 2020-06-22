@@ -40,18 +40,16 @@ So far you've created a robust command-line application in Node.js that can read
      const salesDir = path.join(__dirname, "stores");
      const salesTotalsDir = path.join(__dirname, "salesTotals");
 
-      // create the salesTotal directory if it doesn't exist
-      if (fs.existsSync(salesTotalsDir) === false) {
-        fs.mkdirSync(salesTotalsDir);
-      }
+     // create the salesTotal directory if it doesn't exist
+     if (fs.existsSync(salesTotalsDir) === false) {
+       fs.mkdirSync(salesTotalsDir);
+     }
 
-      // find paths to all the sales files
-      const salesFiles = findSalesFiles(salesDir);
+     // find paths to all the sales files
+     const salesFiles = findSalesFiles(salesDir);
 
      // write an empty file called "totals.txt"
-     fs.writeFileSync(
-       path.join(salesTotalsDir, "totals.txt"), String());
-     );
+     fs.writeFileSync(path.join(salesTotalsDir, "totals.txt"), String());
    }
    ```
 
@@ -61,7 +59,9 @@ So far you've created a robust command-line application in Node.js that can read
    node index.js
    ```
 
-   There will be no output, but a new folder called "salesTotals" will be created. Inside, you should see a new file called "totals.txt". That file will be empty.
+1. Press the "refresh" icon in the "Files" explorer.
+
+:::image type="content" source="../media/refresh-file-explorer.png" alt-text="Refresh icon in Files explorer of Cloud Shell editor":::
 
 Your code looks awesome! Great job!
 
@@ -74,16 +74,6 @@ If you got stuck during this exercise, here is the full code up to this point.
 ```javascript
 const fs = require("fs");
 const path = require("path");
-
-function calculateSalesTotal(salesFiles) {
-  let salesTotal = 0;
-  salesFiles.forEach((file) => {
-    const data = JSON.parse(fs.readFileSync(file));
-    salesTotal += data.total;
-  });
-
-  return salesTotal;
-}
 
 function findSalesFiles(folderName) {
   // this array will hold sales files as they are found
@@ -127,9 +117,7 @@ function main() {
   const salesFiles = findSalesFiles(salesDir);
 
   // write the total to the "totals.txt" file
-  fs.writeFileSync(
-    path.join(salesTotalsDir, "totals.txt"), String());
-  );
+  fs.writeFileSync(path.join(salesTotalsDir, "totals.txt"), String());
 }
 
 main();

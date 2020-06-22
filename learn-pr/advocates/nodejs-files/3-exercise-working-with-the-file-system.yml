@@ -4,8 +4,8 @@ title: Exercise - Working with the file system
 metadata:
   title: Exercise - Working with the file system
   description: Use the "fs" module to read files and folders on the file system.
-  author: softchris
-  ms.author: chnoring
+  author: burkeholland
+  ms.author: buhollan
   ms.date: 04/20/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
@@ -13,6 +13,6 @@ metadata:
 interactive: bash
 azureSandbox: true
 # -- End sandbox --
-durationInMinutes: 2
+durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-working-with-the-file-system.md)]

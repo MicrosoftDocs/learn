@@ -32,7 +32,7 @@ You're almost finished creating a Node.js masterpiece for Tailwind Traders. So f
 
 ## Call the calculateSalesTotals Method
 
-1. In the `main` function, add a call to the `calculateSalesTotals` function to the end of the method.
+1. In the `main` function, add a call to the `calculateSalesTotals` function just above the `fs.writeFileSync` call.
 
    ```javascript
    function main() {
@@ -46,16 +46,18 @@ You're almost finished creating a Node.js masterpiece for Tailwind Traders. So f
 
      // find paths to all the sales files
      const salesFiles = findSalesFiles(salesDir);
-     console.log(salesFiles);
 
      // read through each sales file to cacluate the sales total
-     const salesTotal calculateSalesTotal(salesFiles)
+     const salesTotal = calculateSalesTotal(salesFiles);
+
+     // write the total to the "totals.txt" file
+     fs.writeFileSync(path.join(salesTotalsDir, "totals.txt"), String());
    }
    ```
 
 ## Write the total to the "totals.txt" file
 
-1. In the `main` function, add a block to write `salesTotal` to the "totals.txt" file.
+1. In the `main` function, modify the `fs.writeFileSync` a block to write the value of the `salesTotal` variable to the "totals.txt" file.
 
    ```javascript
    function main() {
@@ -93,7 +95,7 @@ You're almost finished creating a Node.js masterpiece for Tailwind Traders. So f
    node index.js
    ```
 
-   There is no output from the program. If you look in the "stores/salesTotals/totals.txt", you will see the total of all the sales from the "sales.json" files.
+   There is no output from the program. If you look in the "salesTotals/totals.txt", you will see the total of all the sales from the "sales.json" files.
 
 1. Execute the program from the terminal again.
 
@@ -101,11 +103,15 @@ You're almost finished creating a Node.js masterpiece for Tailwind Traders. So f
    node.index.js
    ```
 
+1. Select the "index.js" file.
+
+1. Select the "salesTotals/totals.txt" file.
+
    There is now a second line in the "totals.txt" file. Every time you run the program, the totals are added up again and a new line is written to the file.
 
 Outstanding work! You've written a smart, robust, and handy tool that Tailwind Traders can use to process all of its stores sales every night. You make this stuff look easy. In the next section, we'll review what you learned, and a few tips to remember as you head on your merry way.
 
-### Got stuck?
+## Got stuck?
 
 If you got stuck during this exercise, here is the full code for this project.
 
@@ -165,7 +171,6 @@ function main() {
 
   // find paths to all the sales files
   const salesFiles = findSalesFiles(salesDir);
-  console.log(salesFiles);
 
   // read through each sales file to cacluate the sales total
   const salesTotal = calculateSalesTotal(salesFiles);

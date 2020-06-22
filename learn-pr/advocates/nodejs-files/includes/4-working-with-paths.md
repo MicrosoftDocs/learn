@@ -42,7 +42,7 @@ The reason why you would use the "path" module instead of concatenating strings,
 
 ### Determining file extensions
 
-The path module can also tell you what the extension of a given file is. If you had a file and you wanted to identify if it was a JSON file or not, you can use the `path.ext` method.
+The path module can also tell you what the extension of a given file is. If you had a file and you wanted to identify if it was a JSON file or not, you can use the `path.extname` method.
 
 ```javascript
 console.log(path.extname("sales.json"));
