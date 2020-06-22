@@ -1,8 +1,8 @@
-In the previous exercise, you wrote a stunning program that iterates through any folder that it's given to find any of the `sales.json` files inside. In this exercise, you'll use the "path" module to improve that program, ensure that it will run in any folder and will find any file with a `.json` extension.
+In the previous exercise, you wrote a _stunning_ program that iterates through any folder that it's given to find any of the "sales.json" files inside. In this exercise, you'll use the "path" module to improve that program, ensure that it will run in any folder and will find any file with a ".json" extension.
 
 ## Using the current directory
 
-In the current `index.js` code, you are passing the static location of the "stores" folder. We'll change that code to use the `__dirname` value instead of passing a static folder name.
+In the current "index.js" code, you're passing the static location of the "stores" folder. We'll change that code to use the `__dirname` value instead of passing a static folder name.
 
 1. Click on the `index.js` file to open it.
 
@@ -19,7 +19,7 @@ In the current `index.js` code, you are passing the static location of the "stor
 
 1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
 
-1. Execute the program from the command line
+1. Execute the program from the command-line
 
    ```bash
    node index.js
@@ -49,7 +49,7 @@ Instead of concatenating folder names to make a new path to search, you'll chang
 
 1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
 
-1. Execute the program from the command line
+1. Execute the program from the command-line
 
    ```bash
    node index.js
@@ -78,13 +78,13 @@ Instead of looking for just `sales.json` files, this program needs to search for
 
 1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
 
-1. Execute the program from the command line
+1. Execute the program from the command-line
 
    ```bash
    node index.js
    ```
 
-   The output now shows all of .json files that are in any of the store id directories.
+   The output now shows all of .json files that are in any of the store ID directories.
 
    ```bash
    [
@@ -95,7 +95,7 @@ Instead of looking for just `sales.json` files, this program needs to search for
    ]
    ```
 
-Great job! You've used the "path" and `__dirname` constant to make the program much more robust. Next, you'll need to follow Tailwind Traders "best practices" for working with sales files which dictates that you move all of the files to a working directory before you do anything with them. In the next section, you'll learn how to create directories and move files between locations.
+Great job! You've used the "path" and `__dirname` constant to make the program much more robust. Next, you'll need to follow Tailwind Traders "best practices" for working with sales files, which dictate that you move all of the files to a working directory before you do anything with them. In the next section, you'll learn how to create directories and move files between locations.
 
 ### Got Stuck?
 

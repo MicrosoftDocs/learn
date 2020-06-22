@@ -1,8 +1,8 @@
-You're almost finished creating a Node.js masterpiece for Tailwind Traders. So far, your code reads any given directory, finds all ".json" files, and creates a "totals.txt" file. In this exercise, you'll complete the project reading the ".json" files, adding up all the store totals, and writing the grand total to the "totals.txt" file.
+You're almost finished creating a Node.js masterpiece for Tailwind Traders. So far, your code reads any given directory, finds all ".json" files, and creates a "totals.txt" file. In this exercise, you'll complete the project by reading the ".json" files, adding up the store totals, and writing the grand total to the "totals.txt" file.
 
 ## Create method to calculate sales totals
 
-1. At the top of the file, just below the `require("path")` statement, create a function which will calculate the sales total. This method should take in the array of file paths that it can iterate over.
+1. At the top of the file, just below the `require("path")` statement, create a function that will calculate the sales total. This method should take in the array of file paths that it can iterate over.
 
    ```javascript
    function calculateSalesTotal(salesFiles) {
@@ -103,7 +103,7 @@ You're almost finished creating a Node.js masterpiece for Tailwind Traders. So f
 
    There is now a second line in the "totals.txt" file. Every time you run the program, the totals are added up again and a new line is written to the file.
 
-Outstanding work! You've written a smart, robust and handy tool that Tailwind Traders can use to process all of it's stores sales every night. You make this stuff look easy. In the next section, we'll review what you learned, and a few tips to remember as you head on your merry way.
+Outstanding work! You've written a smart, robust, and handy tool that Tailwind Traders can use to process all of its stores sales every night. You make this stuff look easy. In the next section, we'll review what you learned, and a few tips to remember as you head on your merry way.
 
 ### Got stuck?
 

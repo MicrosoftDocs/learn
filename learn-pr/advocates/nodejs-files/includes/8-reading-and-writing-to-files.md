@@ -35,7 +35,7 @@ console.log(String(bufferData));
 
 ## Parsing data in files
 
-This data in it's string format doesn't do you much good. It's still just characters, but now in a format you can read. What you are after is the ability to "parse" this data into a format that you can use programatically. JavaScript includes a built-in parser for JSON files. You don't need to include anything to use it. Just use the `JSON` object. As a bonus, you don't need to convert a Buffer to a string before you parse it. The `JSON.parse` method can do that!
+This data in its string format doesn't do you much good. It's still just characters, but now in a format you can read. What you are after is the ability to "parse" this data into a format that you can use programatically. JavaScript includes a built-in parser for JSON files. You don't need to include anything to use it. Just use the `JSON` object. As a bonus, you don't need to convert a Buffer to a string before you parse it. The `JSON.parse` method can do that!
 
 ```javascript
 const data = JSON.parse(fs.readFileSync("stores/201/sales.json"));
@@ -48,7 +48,7 @@ console.log(data.total);
 
 ## Writing data to files
 
-If you remember from the previous ecercise, you've already learned how to write files. It's just that you wrote an empty one. To write data to a file, use the same `writeFile` or `writeFileSync` method, but pass in the data that you want to write as the 3rd parameter.
+If you remember from the previous exercise, you've already learned how to write files. It's just that you wrote an empty one. To write data to a file, use the same `writeFile` or `writeFileSync` method, but pass in the data that you want to write as the third parameter.
 
 ```javascript
 const data = JSON.parse(fs.readFileSync("stores/201/sales.json"));
@@ -62,7 +62,7 @@ fs.writeFileSync(path.join(salesTotalsDir, "stores/totals.txt"), data.total);
 
 ### Appending data to files
 
-In the example above, the file is overwritten everytime you write to it. Sometimes you don't want that. Sometimes you want to append data to the file, not replace it entirely. You can do this by passing a "flag" to the `writeFile` or `writeFileSync` methods. By default, the flag is set to "w", which means, "replace the file". To append to the file instead, pass the "a" flag, which means "append".
+In the example above, the file is overwritten every time you write to it. Sometimes you don't want that. Sometimes you want to append data to the file; not replace it entirely. You can do this by passing a "flag" to the `writeFile` or `writeFileSync` methods. By default, the flag is set to "w", which means, "replace the file". To append to the file instead, pass the "a" flag, which means "append".
 
 ```javascript
 const data = JSON.parse(fs.readFileSync("stores/201/sales.json"));
@@ -84,4 +84,4 @@ fs.writeFileSync(
 > [!TIP]
 > In the above code example, the "\r\n" tells JavaScript to put the value on it's own line. If you didn't pass this value (known as a "carriage return line feed"), you would get all of the numbers on the same line all squished together.
 
-In the next exercise, you'll finish up the sales totals project for Tailwind Traders by reading all the sales files and writing the grand total to a txt file which can be processed by their commerce system.
+In the next exercise, you'll finish up the sales totals project for Tailwind Traders by reading all the sales files and writing the grand total to a txt file, which can be processed by their commerce system.

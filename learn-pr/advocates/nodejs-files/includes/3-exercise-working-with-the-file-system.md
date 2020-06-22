@@ -1,4 +1,6 @@
-Tailwind Traiders has a lot of brick and morter locations. Each night, these locations write a file called `sales.json` to a folder that has an id that corresponds to their store id. This file contains their sales totals for the whole day. In this exercise, you're going to write a Node.js function which can take a central location and then find all of the `sales.json` files inside it, no matter where they are.
+Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called `sales.json` that contains the total for all their sales for the previous day. These files are organized in folders by store ID.
+
+In this exercise, you're going to write a Node.js program that can search for files called "sales.json" in a given folder.
 
 ## Sign into the sandbox
 
@@ -115,7 +117,9 @@ You're going to need to find all of those files given only the top-most location
    ]
    ```
 
-Excellent! You have successfully written a command line program that will traverse any directory that it is given and find the "sales.json" files inside. However, the way that the path to the right folder was constructed in this example is a little clumsy - it requires appending a lot of strings together. There is a preferred way to work with paths in Node.js. In the next section you'll learn how to do just that using the "path" module.
+Excellent! You've successfully written a command-line program that will traverse any directory and find all the "sales.json" files inside.
+
+However, the way that the path to subfolders was constructed in this example is a little clumsy because it requires concatenating strings together. That's not bad, it's just that there's a better way to work with paths in Node.js. In the next section, you'll learn how to do just that using the "path" module.
 
 ### Got Stuck?
 
