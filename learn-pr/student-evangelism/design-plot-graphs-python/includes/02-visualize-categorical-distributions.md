@@ -251,7 +251,4 @@ Bar charts are intended as visualizations of categorical variables. When
 the variable is numerical, the numerical relations between its values
 have to be taken into account when we create visualizations. That is the
 topic of the next section.
-intended as visualizations of categorical variables. When
-the variable is numerical, the numerical relations between its values
-have to be taken into account when we create visualizations. That is the
-topic of the next section.
+
