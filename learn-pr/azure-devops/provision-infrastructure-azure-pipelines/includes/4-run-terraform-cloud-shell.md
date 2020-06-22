@@ -68,6 +68,12 @@ The plan starts with a `terraform` block that specifies the version of Terraform
 
 The `required_version` attribute specifies version 0.12.0 or later. In practice, you might use the `=` syntax to pin a specific version.
 
+### Azure provider settings
+
+The plan doesn't need to control specific Azure resource features, so it uses a basic `provider` block. The `version` attribute specifies version 2.0.0 or later of the Azure provider. In practice, you might use the `=` syntax to pin a specific version.
+
+[!code-terraform[](code/main.tf?range=5-8)]
+
 ### Terraform variables
 
 The plan includes these four variables:
@@ -77,7 +83,7 @@ The plan includes these four variables:
 * The name of the App Service plan
 * A prefix that's later added to the name of the App Service instance
 
-[!code-terraform[](code/main.tf?range=5-23)]
+[!code-terraform[](code/main.tf?range=10-28)]
 
 Each variable provides a default value. Shortly, you'll create a *.tfvars* file that specifies the value for the resource group's location.
 
@@ -85,7 +91,7 @@ Each variable provides a default value. Shortly, you'll create a *.tfvars* file 
 
 We haven't yet introduced the `random_integer` resource. It's a resource that generates a random whole number that's between the specified minimum and maximum values.
 
-[!code-terraform[](code/main.tf?range=25-28)]
+[!code-terraform[](code/main.tf?range=30-33)]
 
 The plan uses this value to add a unique number to the name of your App Service instance. Azure uses the name of your App Service instance to form its host name. The name must be unique. In practice, you would specify a name for your App Service instance that describes your application.
 
@@ -95,7 +101,7 @@ When Terraform first runs this plan, it writes the generated value to the state 
 
 The `azurerm_resource_group` resource creates the resource group that holds your App Service plan and App Service instance.
 
-[!code-terraform[](code/main.tf?range=30-33)]
+[!code-terraform[](code/main.tf?range=35-38)]
 
 To specify the resource group's name and location, the plan uses the `var.variable` syntax to read the variables defined earlier in the plan.
 
@@ -105,7 +111,7 @@ The name "my" enables you to refer to this resource in other parts of your plan.
 
 The `azurerm_app_service_plan` resource defines the App Service plan. The App Service plan is set to run on Linux and uses the **Basic** pricing tier, which is intended for apps that have lower traffic requirements.
 
-[!code-terraform[](code/main.tf?range=35-46)]
+[!code-terraform[](code/main.tf?range=40-51)]
 
 As with the resource group, this resource uses the `var.variable` syntax to specify the name of the App Service plan.
 
@@ -115,7 +121,7 @@ To specify the App Service plan's location and parent resource group name, this 
 
 The `azurerm_app_service` resource defines the App Service instance.
 
-[!code-terraform[](code/main.tf?range=48-53)]
+[!code-terraform[](code/main.tf?range=53-58)]
 
 Like the `azurerm_app_service_plan` resource, this resource reads the location and parent resource group name from the `azurerm_resource_group` resource named "my." It reads the App Service plan ID from the `azurerm_app_service_plan` resource.
 
@@ -127,7 +133,7 @@ In this example, you don't know the name or host name of the App Service instanc
 
 The `output` block prints the host name of the App Service instance after the plan runs. Doing so gives you a URL that you can test to verify that App Service is running.
 
-[!code-terraform[](code/main.tf?range=55-58)]
+[!code-terraform[](code/main.tf?range=60-63)]
 
 > [!TIP]
 > In Cloud Shell, you can close the editor now if you want. But leave the command window open for the next part.

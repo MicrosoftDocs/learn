@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of web app concepts
   - C# .NET experience at a beginner level
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/build-a-web-app-with-blazor-webassembly-and-vs-code.svg
 levels:
 - beginner
 roles:

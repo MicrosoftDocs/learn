@@ -62,7 +62,9 @@ With capital expenditures, you plan your expenses at the start of a project or b
 
 Demand and growth can be unpredictable and can outpace expectation, which is a challenge for the CapEx model as shown in the following graph.
 
-![A graph showing how expected demand can be different from real demand and how CapEx infrastructure can be exceeded by demand.](../media/3c-capexvsopex.png)
+:::image type="complex" source="../media/3c-capexvsopex.png" alt-text="A graph showing how expected demand can be different from real demand and how CapEx infrastructure can be exceeded by demand.":::
+    Graph shows costs versus time, with time on the horizontal axis. Lines are plotted for demand prediction, actual demand costs, capital expenditure costs, and auto scaled costs. The demand prediction goes up linearly over time. Actual costs form an increasing sine wave style plotting. Capital expenditure costs go up in a stairstep shape as infrustructure is added to meet exceeded actual demand. Auto scaled costs nearly align to the sine wave style curve of the actual demand.
+:::image-end:::
 
 With the OpEx model, companies wanting to try a new product or service don't need to invest in equipment. Instead, they pay as much or as little for the infrastructure as required. 
 
