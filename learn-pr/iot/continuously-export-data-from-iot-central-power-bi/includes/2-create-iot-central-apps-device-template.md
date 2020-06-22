@@ -1,5 +1,5 @@
 
-In this unit, you first download the required files and then import the capability model. Next, you create a dashboard that displays all the capabilities of the device template. Then, you create a real device and record the connection settings needed for the remote device app. Finally, you create an Azure Maps account, if it's needed.
+In this unit, you first download the required files and then import the capability model. Next, you create a dashboard that displays all the capabilities of the device template. You then create a real device and record the connection settings needed for the remote device app. Finally, you create an Azure Maps account, if you need to.
 
 ## Download the source code and import the capability model
 
@@ -17,7 +17,7 @@ In the preceding unit, you created the IoT Central app. The next step is to down
 
 ## Import the capability model to the IoT Central app
 
-A _capability model_ contains a definition of a device template. A device template can be created from scratch, but for this module we'll import a pre-built capability model. The model defines the capabilities of a refrigerated truck.
+A _capability model_ contains a definition of a device template. A device template can be created from scratch but, for this module, we'll import a pre-built capability model. The model defines the capabilities of a refrigerated truck.
 
 1. In the IoT Central portal, on the left pane, select **Device templates**.
 
@@ -37,7 +37,7 @@ A _capability model_ contains a definition of a device template. A device templa
 
     [![Screenshot showing the tile for importing a capability model](../media/rules-actions-import-model.png)](../media/rules-actions-import-model.png#lightbox)
 
-1. Open the downloaded JSON file that contains the capability model. A **Summary** page displays all the elements of the capability model.
+1. Open the downloaded JSON file, which contains the capability model. A **Summary** page displays all the elements of the capability model.
 
     [![Screenshot showing the Summary pane of the capability model](../media/rules-actions-model-summary.png)](../media/rules-actions-model-summary.png#lightbox)
 
@@ -61,7 +61,7 @@ To visualize the movements and state of the refrigerated truck, you need to crea
 
 1. Select each of the rest of the telemetry and properties capabilities in turn, starting at the top, and then select **Add tile**. 
 
-   The idea is to go for function over form here, and you can make dashboard more elegant later. For now, you only want a dashboard that confirms all the telemetry that's being sent from your remote device. There's no need to add the commands to the dashboard, though that option does exist.
+   The idea is to go for function over form here. You can make the dashboard more elegant later. For now, you want only a dashboard that confirms all the telemetry that's being sent from your remote device. There's no need to add the commands to the dashboard, though that option does exist.
 
 1. When you've added all the tiles, check out the tile labels. You can drag tiles around, and the portal will try to rearrange them neatly.
 
@@ -69,17 +69,17 @@ To visualize the movements and state of the refrigerated truck, you need to crea
 
 1. When you're satisfied with your dashboard, select **Save**, and then select **Publish**. 
 
-    You'll now notice, in the pane that's displayed, that the **Views** entry is **Yes**. 
+    In the pane that opens, you'll now notice that the **Views** entry is **Yes**. 
     
 1. Select **Publish**.
 
-You can create as many views as you'd like, and give each a friendly name. For this module, though, one dashboard will work well.
+You can create as many views as you'd like and give each a friendly name. For this module, though, one dashboard works well.
 
 The next step is to create a device.
 
 ## Create a real device
 
-By "real" device, we mean that IoT Central understands that there's a remote app running. The app can be in a real device, either taking input from real sensors or running a simulation. Both options are treated as a connection to a _real_ device.
+By *real* device, we mean that IoT Central understands that there's a remote app running. The app can be in a real device, either taking input from real sensors or running a simulation. Both options are treated as a connection to a real device.
 
 1. On the left pane, select **Devices**.
 
@@ -114,13 +114,13 @@ By "real" device, we mean that IoT Central understands that there's a remote app
 
     The commands that were in the capability model are ready to be run.
 
-The next step is to create the keys that will allow a remote device to communicate with this app.
+The next step is to create the keys that allow a remote device to communicate with this app.
 
 ### Record the connection keys
 
 1. For the device, select **Connect** on the menu at the upper right. Do _not_ select **Connect to gateway**.
 
-1. On the **Device connection** pane, copy the **ID scope**, **Device ID**, and **Primary key** to a text file. Save the file with a meaningful name (for example, *Truck keys.txt*).
+1. On the **Device connection** pane, copy the **ID scope**, **Device ID**, and **Primary key** values to a text file. Save the file with a meaningful name (for example, *Truck keys.txt*).
 
 1. Leave the **Connect method** value as **Shared access signature (SAS)**.
 
@@ -166,13 +166,11 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     chmod +x dps_cstr
     ```
 
-1. Remember that in the preceding section you stored a **Scope ID**, **Device ID**, and **Primary Key** for your device. It's a good idea to keep a text document open and create in it the following string, replacing *{scope-id}*, *{device-id}*, and *{primary-key}* with your own values. With this text document, you can create and validate the string before you commit to running it.
+1. Remember that in the preceding section you stored the scope ID, device ID, and primary key for your device. It's a good idea to keep a text document open and create in it the following string, replacing *{scope-id}*, *{device-id}*, and *{primary-key}* with your own values. With this text document, you can create and validate the string before you commit to running it. Copy this command from your text document to the *refrigerated-truck* folder of Azure Cloud Shell, and run it.
 
     ```bash
     ./dps_cstr {scope_id} {device_id} {primary_key} > connection1.txt
     ```
-
-1. Copy this command from your text document to the *refrigerated-truck* folder of Azure Cloud Shell, and run it.
 
 1. In Cloud Shell, go to the *connection1.txt* file by selecting the braces ({&nbsp;}) button. 
 
@@ -189,7 +187,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 
 1. Save the file.
 
-You now have the all-important connection string. The Scope ID identifies the app, the Device ID identifies the real device, and the primary key gives you permission for the connection.
+You now have the all-important connection string. The scope ID identifies the app, the device ID identifies the real device, and the primary key gives you permissions for the connection.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
@@ -204,7 +202,7 @@ You now have the all-important connection string. The Scope ID identifies the ap
 
 ## Create a free Azure Maps account
 
-All developers also need an Azure Maps account. If you don't already have an Azure Maps account, you need to create one. 
+All developers also need an Azure Maps account. If you don't already have an Azure Maps account, you can create one by doing the following: 
 
 1. Go to [Azure Maps](https://azure.microsoft.com/services/azure-maps/?azure-portal=true).
 
@@ -214,7 +212,7 @@ All developers also need an Azure Maps account. If you don't already have an Azu
 
 1. Copy this key to the *Truck keys.txt* file, and add a note that it applies to Azure Maps.
 
-You don't need an Azure Maps account to _render_ a map, because the rendering is done by an IoT Central dashboard. You need the Azure Maps account to use its API calls to calculate the best route to any given destination.
+You don't need an Azure Maps account to _render_ a map, because the rendering is done by an IoT Central dashboard. You need the Azure Maps account to use its API calls to calculate the best route to any specified destination.
 
 ## Next steps
 
