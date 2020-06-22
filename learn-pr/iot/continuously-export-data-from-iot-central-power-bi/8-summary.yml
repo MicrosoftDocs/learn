@@ -1,0 +1,154 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.continuous-data-export-from-iot-central.summary
+metadata:
+  description: Summary
+  ms.date: 6/1/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Why do we need an Azure Maps account for this module?'
+    choices: 
+    - content: 'To enter the location of the truck on a map.'
+      isCorrect: false
+      explanation: The location of the truck is handled by the IoT Central dashboard.
+    - content: 'To calculate the best route from one location to another.'
+      isCorrect: true
+      explanation: Azure Maps enables many route finding options.
+    - content: 'To display a map background.'
+      isCorrect: false
+      explanation: We don't render any particular background in this module.
+
+  - content: 'What three Azure resources can IoT Central continuous data be exported to?'
+    choices: 
+    - content: 'Blob storage, IoT Hub, and Service Queue'
+      isCorrect: false
+      explanation: Only one of these three resources is correct.
+    - content: 'Blob storage, Service Bus, and Iot Hub'
+      isCorrect: false
+      explanation: Two of these resources are correct.
+    - content: 'Cosmos DB storage, Service Queue, and Iot Hub'
+      isCorrect: false
+      explanation: None of these resources are correct.
+    - content: 'Blob storage, Service Bus, and Event Hubs'
+      isCorrect: true
+      explanation: Blob storage for a cold path, Service Bus, or Event Hubs, for a warm path.
+      
+  - content: 'What is one of the key differences between sending data to Blob storage, and sending it to either Service Bus or Event Hubs?'
+    choices: 
+    - content: 'When it comes to sending data, there is no real difference.'
+      isCorrect: false
+      explanation: There's a difference, blob storage doesn't make the best warm path.
+    - content: 'When sending to Blob storage, all changes are submitted once per minute. Service Bus, and Event Hubs, receive data in near real time.'
+      isCorrect: true
+      explanation: Blob storage for a cold path. Service Bus, or Event Hubs, for a warm path.
+    - content: 'For Blob storage, all the telemetry and device data is sent. For the other two services, only a subset of telemetry data is sent.'
+      isCorrect: false
+      explanation: All three services receive comprehensive and complete data.
+    - content: "Blob storage receives data in the JSON format, the other services don't."
+      isCorrect: false
+      explanation: All of the services receive data in the JSON format.
+
+  - content: 'Which of the following statements is false?'
+    choices: 
+    - content: 'You can only export data to Blob storage, Service Bus, or Event Hubs, that are in the same Azure subscription as the IoT Central app.'
+      isCorrect: true
+      explanation: This statement is false, you can send data to other subscriptions, by entering a connection string.
+    - content: 'For warm path analysis, data can be sent to trigger custom rules in Azure Stream Analytics, trigger custom flows in Azure Logic Apps, or pass through Azure Functions for transformation.'
+      isCorrect: false
+      explanation: This statement is true, and describes good uses of the warm continuous data paths.
+    - content: 'Good uses of sending data to Blob storage include cold-path analytics such as Azure Machine Learning models, long-term trend analysis, or for archiving.'
+      isCorrect: false
+      explanation: This statement is true, and describes good uses of the cold continuous data paths.
+    - content: 'Blob storage, Service Bus, and Event Hubs, all receive data in the JSON format.'
+      isCorrect: false
+      explanation: This statement is true, the JSON format is extensively used within Azure IoT.
+
+  - content: 'Which of the following statements is false?'
+    choices: 
+    - content: 'Data sent to Azure Blob storage can be routed to Azure Machine Learning, to train the learning models.'
+      isCorrect: false
+      explanation: This statement is true.
+    - content: 'Azure Service Bus is a good service for enterprise-level message routing.'
+      isCorrect: false
+      explanation: This statement is true.
+    - content: 'When an IoT Central data export service is created, data is automatically routed to it. '
+      isCorrect: false
+      explanation: The statement is true, as long as the Enabled setting is On, which it is by default.
+    - content: 'Event Hubs are a good gateway for an event pipeline.'
+      isCorrect: false
+      explanation: This statement is true.  
+    - content: 'The option to create a container within a Blob storage resource is optional, for data export purposes.'
+      isCorrect: true
+      explanation: This statement is false, a container is required.
+
+  - content: 'What are the different types of Microsoft PowerApps?'
+    choices: 
+    - content: 'Canvas apps, and Model-driven apps'
+      isCorrect: false
+      explanation: There are three types of PowerApp.
+    - content: 'Canvas apps, Model-driven apps, and Mobile apps.'
+      isCorrect: false
+      explanation: Mobile app isn't the name of a supported type.
+    - content: 'Canvas apps, Model-driven apps, and Portal apps. '
+      isCorrect: true
+      explanation: Canvas apps are typically where users start.
+    - content: 'Phone apps, Tablet apps, and Web portal apps.'
+      isCorrect: false
+      explanation: There's a Portal app type, but not the other two.
+
+  - content: 'In IoT Central data export, you get to choose which data runs continuously, what are the options?'
+    choices: 
+    - content: 'telemetry, events, and commands'
+      isCorrect: false
+      explanation: Only one of these elements is correct.
+    - content: 'devices, telemetry, and containers.'
+      isCorrect: false
+      explanation: A container is the resource that stores the data.
+    - content: 'devices, device templates, and telemetry'
+      isCorrect: true
+      explanation: These options are selected using the Create data export dialog.
+    - content: 'telemetry, and devices'
+      isCorrect: false
+      explanation: One more element can be selected.
+
+  - content: 'Which Power BI tab do you go to, to search for the connection with Azure?'
+    choices:  
+    - content: 'Dashboards'
+      isCorrect: false
+      explanation: This entry is used to create a tiled dashboard.
+    - content: 'Workbooks'  
+      isCorrect: false
+      explanation: You did not create any workbooks in this module.
+    - content: 'Reports'
+      isCorrect: false
+      explanation: Reports are useful, but they are just that, and don't handle data sourcing.
+    - content: 'Datasets'
+      isCorrect: true
+      explanation: The data connection is through Workspace, then Datasets.
+
+  - content: 'Which source do you select, to add a Power BI dashboard tile, to display your continuous data?'
+    choices:  
+    - content: 'Custom Streaming Data'
+      isCorrect: true
+      explanation: The next step is to select the dataset.
+    - content: 'Image'
+      isCorrect: false
+      explanation: This entry adds a picture to your dashboard.
+    - content: 'Web content'
+      isCorrect: false
+      explanation: This option enables you to embed web-content code into your dashboard.
+    - content: 'Text box'
+      isCorrect: false
+      explanation: This entry, literally, just adds a text box to your dashboard.
+    - content: 'Video'
+      isCorrect: false
+      explanation: This tile is looking for a URL, possibly to a YouTube location.

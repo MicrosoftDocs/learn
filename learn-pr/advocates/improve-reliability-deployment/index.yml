@@ -18,7 +18,7 @@ abstract: |
   - Looked deep into pipelines and how they are implemented in Azure Pipelines
   - Learn a number of different strategies for deployment to production that can help us avoid incidents
   - Examine some important best practices that can minimize the risk when rolling out new software or a new version of existing software
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/improve-reliability-deployment.svg
 levels:
 - beginner
 roles:

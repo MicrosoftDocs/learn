@@ -18,7 +18,7 @@ Simulated annealing isn't a QIO method, since it uses only thermal effects. Howe
 
 Quantum annealing is a quantum algorithm that is similar in spirit to simulated annealing but differs in a few ways. In simulated annealing, we explored the solution space by making thermal jumps, from one solution to the next. In quantum annealing, we instead make use of a quantum effect called _quantum tunneling_, which allows us to travel through these energy barriers.
 
-![Tunneling](../media/tunneling.png)
+![A graph that compares a thermal jump over an energy barrier to quantum tunneling through an energy barrier](../media/tunneling.png)
 
 In this graph, you can see the difference between a thermal jump (where thermal fluctuations help a walker overcome an energy barrier) and quantum tunneling (where quantum effects allow a walker to pass through the energy barrier).
 
