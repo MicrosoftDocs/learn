@@ -1,4 +1,4 @@
-It's important to include storage performance considerations in your architecture. Just like network latency, poor performance at the storage layer can affect your end-user experience. How would you optimize your data storage? What things do you need to consider to make sure that you're not introducing storage bottlenecks into your architecture?
+It's important to include storage performance considerations in your architecture. Just like network latency, poor performance at the storage layer can affect your user experience. How would you optimize your data storage? What things do you need to consider to make sure that you're not introducing storage bottlenecks into your architecture?
 
 In this unit, you'll learn about optimizing your storage performance in your architecture.
 

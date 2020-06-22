@@ -50,17 +50,17 @@ Traffic Manager profiles can also be nested. For example, you could initially ro
 
 Recall that the organization in our example scenario deployed a web front end in West Europe and another front end in Australia. Let's assume that they deployed Azure SQL Database with their primary deployment in West Europe and a read replica in Australia East. Let's also assume the application can connect to the local SQL instance for read queries.
 
-Your team deploys a Traffic Manager instance in performance mode and adds the two front-end instances as Traffic Manager profiles. As an end user, you navigate to a custom domain name (for example, consoto.com) which routes to Traffic Manager. Traffic Manager then returns the DNS name of the West Europe or Australia East front end based on the best network latency performance.
+Your team deploys a Traffic Manager instance in performance mode and adds the two front-end instances as Traffic Manager profiles. As a user, you navigate to a custom domain name (for example, consoto.com) which routes to Traffic Manager. Traffic Manager then returns the DNS name of the West Europe or Australia East front end based on the best network latency performance.
 
 It's important to note that this load balancing is only handled via DNS. No inline load balancing or caching is happening here. Traffic Manager simply returns the DNS name of the closest front end to the user.
 
 ### Use a CDN to cache content close to users
 
-Your website likely uses some form of static content, either whole pages or assets such as images and videos. This static content can be delivered to users faster by using a content delivery network (CDN), such as Azure CDN.
+Your website likely uses some form of static content, either whole pages or assets such as images and videos. This static content can be delivered to users faster by using a content delivery network (CDN), such as Azure Content Delivery Network.
 
-With content deployed to Azure CDN, those items are copied to multiple servers around the globe. Let's say one of those items is a video served from blob storage: `HowToCompleteYourBillingForms.MP4`. The team then configures the website so that each user's link to the video references the CDN edge server nearest them, rather than referencing blob storage. This approach puts content closer to the destination, which reduces latency and improves the user experience. The following illustration shows how using Azure CDN puts content closer to the destination, which reduces latency and improves the user experience.
+With content deployed to Azure Content Delivery Network, those items are copied to multiple servers around the globe. Let's say one of those items is a video served from blob storage: `HowToCompleteYourBillingForms.MP4`. The team then configures the website so that each user's link to the video references the CDN edge server nearest them, rather than referencing blob storage. This approach puts content closer to the destination, which reduces latency and improves the user experience. The following illustration shows how using Azure Content Delivery Network puts content closer to the destination, which reduces latency and improves the user experience.
 
-![An illustration showing usage of Azure content delivery network to reduce latency.](../media/3-cdn.png)
+![An illustration showing usage of Azure Content Delivery Network to reduce latency.](../media/3-cdn.png)
 
 Content delivery networks _can_ also be used to host cached dynamic content. Extra consideration is required though, because cached content might be out of date compared with the source. Context expiration can be controlled by setting a time to live (TTL). If the TTL is too high, out-of-date content might be displayed and the cache would need to be purged.
 

@@ -66,7 +66,7 @@ Here are some examples of what scaling out or in means in the context of Azure r
 - In an Azure SQL Database implementation, you could share the load across database instances by *sharding*. Sharding is a technique to distribute large amounts of identically structured data across a number of independent databases.
 - In Azure App Service, the App Service plan is the virtual web server farm that hosts your application. Scaling out in this way means that you're increasing the number of virtual machines in the farm. As with virtual machine scale sets, the number of instances can be automatically raised or lowered in response to certain metrics or a schedule.
 
-Scaling out is easily performed via the Azure portal, command-line tools, or Azure Resource Manager templates. In most cases, it's seamless to the end user.
+Scaling out is easily performed via the Azure portal, command-line tools, or Azure Resource Manager templates. In most cases, it's seamless to the user.
 
 ### Autoscale
 
