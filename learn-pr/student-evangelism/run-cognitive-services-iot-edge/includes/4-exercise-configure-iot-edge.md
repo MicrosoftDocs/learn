@@ -1,5 +1,3 @@
-# Exercise - Configuring IoT device to the IoT Hub
-
 ## Using the Azure Cloud Shell
 
 To start Azure Cloud Shell, launch Cloud Shell from the top navigation of the Azure portal.
