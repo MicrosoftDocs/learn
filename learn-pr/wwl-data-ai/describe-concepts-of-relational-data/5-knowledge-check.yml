@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which one of the following is a characteristic of a relational database?"
+  - content: "Which one of the following statements is a characteristic of a relational database?"
     choices:
     - content: "All data must be stored as character strings"
       isCorrect: false
@@ -34,10 +34,10 @@ quiz:
       explanation: "That's correct. You create indexes to help speed up queries."
     - content: "A virtual table based on the result set of a query"
       isCorrect: false
-      explanation: "That's incorrect. This is the description of a view."
+      explanation: "That's incorrect. This statement is the description of a view."
     - content: "A structure comprising rows and columns that you use for storing data."
       isCorrect: false
-      explanation: "That's incorrect. This is the description of a relational table."
+      explanation: "That's incorrect. This statement is the description of a relational table."
   - content: "Which one of the following statements is a benefit of using a PaaS service, instead of an on-premises system, to run your database management systems?"
     choices:
     - content: "Increased day-to-day management costs"
