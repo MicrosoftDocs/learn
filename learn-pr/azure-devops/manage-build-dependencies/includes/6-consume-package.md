@@ -45,20 +45,18 @@ You see the directory and file tree in the file explorer.
 
 1. Open the **Tailspin.SpaceGame.Web.csproj** file, add the following `PackageReference`, and save the file.
 
-    ```xml
-    <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.0.0" />
-    ```
+    [!code-xml[](code/6-tailspin.spacegame.web.csproj?highlight=3)]
 
 1. Modify the version number to include the pre-release prefix that was generated during the build process. Here's an example.
 
     ```xml
-    <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.0.0-CI-20190621-042647" />
+    <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.0.0-CI-20200610-165738" />
     ```
 
     This references the **Tailspin.SpaceGame.Web.Models** package that you created in Azure Artifacts. Notice the version number, 1.0.0, plus the pre-release suffix. This matches the initial version that you published to Azure Artifacts in the previous part.
 
 > [!NOTE]
-> When you save the file, Visual Studio Code may ask you to restore dependencies. We're not going to run this locally, so there is no need to restore the dependencies. 
+> When you save the file, Visual Studio Code might ask you to restore dependencies. We're not going to run this locally, so there is no need to restore the dependencies.
 
 ## Add the pipeline configuration
 
