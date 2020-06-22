@@ -4,7 +4,7 @@ Here, we look at how to use Visual Studio to publish your ASP.NET Core web appli
 
 ## What is the Azure App Service?
 
-Azure App Service is a service for hosting web applications, REST APIs, and backend services. App Service supports code written in .NET, .NET Core, Java, Ruby, Node.js, PHP, and Python. App Service is ideal for most websites, particularly if you don't need tight control over the hosting infrastructure.
+Azure App Service is a service for hosting web applications, REST APIs, and backend services. App Service supports code written in .NET Core, .NET Framework, Java, Ruby, Node.js, PHP, and Python. App Service is ideal for most websites, particularly if you don't need tight control over the hosting infrastructure.
 
 ## What is the App Service plan?
 

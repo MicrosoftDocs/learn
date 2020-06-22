@@ -1,12 +1,3 @@
-``` python
-from datascience import *
-import numpy as np
-path_data = '../../../../data/'
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-```
-
 Many of the variables that data scientists study are *quantitative* or
 *numerical*. Their values are numbers on which you can perform
 arithmetic. Examples that we have seen include the number of periods in
@@ -43,20 +34,22 @@ top = Table.read_table(path_data + 'top_movies.csv')
 top.set_format([2, 3], NumberFormatter)
 ```
 
-|Title|Studio|Gross|Gross (Adjusted)|Year|
-|--- |--- |--- |--- |--- |
-|Star Wars: The Force Awakens|Buena Vista (Disney)|906,723,418|906,723,400|2015|
-|Avatar|Fox|760,507,625|846,120,800|2009|
-|Titanic|Paramount|658,672,302|1,178,627,900|1997|
-|Jurassic World|Universal|652,270,625|687,728,000|2015|
-|Marvel's The Avengers|Buena Vista (Disney)|623,357,910|668,866,600|2012|
-|The Dark Knight|Warner Bros.|534,858,444|647,761,600|2008|
-|Star Wars: Episode I - The Phantom Menace|Fox|474,544,677|785,715,000|1999|
-|Star Wars|Fox|460,998,007|1,549,640,500|1977|
-|Avengers: Age of Ultron|Buena Vista (Disney)|459,005,868|465,684,200|2015|
-|The Dark Knight Rises|Warner Bros.|448,139,099|500,961,700|2012|
+``` output
+| Title                                     | Studio               | Gross       | Gross (Adjusted) | Year |
+|-------------------------------------------|----------------------|-------------|------------------|------|
+| Star Wars: The Force Awakens              | Buena Vista (Disney) | 906,723,418 | 906,723,400      | 2015 |
+| Avatar                                    | Fox                  | 760,507,625 | 846,120,800      | 2009 |
+| Titanic                                   | Paramount            | 658,672,302 | 1,178,627,900    | 1997 |
+| Jurassic World                            | Universal            | 652,270,625 | 687,728,000      | 2015 |
+| Marvel's The Avengers                     | Buena Vista (Disney) | 623,357,910 | 668,866,600      | 2012 |
+| The Dark Knight                           | Warner Bros.         | 534,858,444 | 647,761,600      | 2008 |
+| Star Wars: Episode I - The Phantom Menace | Fox                  | 474,544,677 | 785,715,000      | 1999 |
+| Star Wars                                 | Fox                  | 460,998,007 | 1,549,640,500    | 1977 |
+| Avengers: Age of Ultron                   | Buena Vista (Disney) | 459,005,868 | 465,684,200      | 2015 |
+| The Dark Knight Rises                     | Warner Bros.         | 448,139,099 | 500,961,700      | 2012 |
 
 ... (190 rows omitted)
+```
 
 ### Visualizing the distribution of the adjusted receipts
 
@@ -69,24 +62,26 @@ how `round` is used to retain only two decimal places.
 
 ``` python
 millions = top.select(0).with_column('Adjusted Gross', 
-                                     np.round(top.column(3)/1e6, 2))
+                                     np.round(top.column(3)/1000000, 2))
 millions
 ```
 
-|Title|Adjusted Gross|
-|--- |--- |
-|Star Wars: The Force Awakens|906.72|
-|Avatar|846.12|
-|Titanic|1178.63|
-|Jurassic World|687.73|
-|Marvel's The Avengers|668.87|
-|The Dark Knight|647.76|
-|Star Wars: Episode I - The Phantom Menace|785.72|
-|Star Wars|1549.64|
-|Avengers: Age of Ultron|465.68|
-|The Dark Knight Rises|500.96|
+``` output
+| Title                                     | Adjusted Gross |
+|-------------------------------------------|----------------|
+| Star Wars: The Force Awakens              | 906.72         |
+| Avatar                                    | 846.12         |
+| Titanic                                   | 1178.63        |
+| Jurassic World                            | 687.73         |
+| Marvel's The Avengers                     | 668.87         |
+| The Dark Knight                           | 647.76         |
+| Star Wars: Episode I - The Phantom Menace | 785.72         |
+| Star Wars                                 | 1549.64        |
+| Avengers: Age of Ultron                   | 465.68         |
+| The Dark Knight Rises                     | 500.96         |
 
 ... (190 rows omitted)
+```
 
 ### A histogram
 
@@ -103,7 +98,7 @@ millions of 2016 dollars.
 millions.hist('Adjusted Gross', unit="Million Dollars")
 ```
 
-![png](../media/42-visualize-numerical-distributions-7-0.png)
+![Distribution of adjusted gross amounts in millions of 2016 dollars.](../media/42-visualize-numerical-distributions-7-0.png)
 
 ### The horizontal axis
 
@@ -143,7 +138,7 @@ the last bin. We will start by setting the numbers in `bins` to be 300,
 millions.hist('Adjusted Gross', bins=np.arange(300,2001,100), unit="Million Dollars")
 ```
 
-![png](../media/42-visualize-numerical-distributions-9-0.png)
+![Histogram of adjusted gross.](../media/42-visualize-numerical-distributions-9-0.png)
 
 The horizontal axis of this figure is easier to read. The labels 200,
 400, 600, and so on are centered at the corresponding values. The
@@ -172,26 +167,28 @@ bin_counts = millions.bin('Adjusted Gross', bins=np.arange(300,2001,100))
 bin_counts.show()
 ```
 
-|bin|Adjusted Gross count|
-|--- |--- |
-|300|81|
-|400|52|
-|500|28|
-|600|16|
-|700|7|
-|800|5|
-|900|3|
-|1000|1|
-|1100|3|
-|1200|2|
-|1300|0|
-|1400|0|
-|1500|1|
-|1600|0|
-|1700|1|
-|1800|0|
-|1900|0|
-|2000|0|
+``` output
+| bin  | Adjusted Gross count |
+|------|----------------------|
+| 300  | 81                   |
+| 400  | 52                   |
+| 500  | 28                   |
+| 600  | 16                   |
+| 700  | 7                    |
+| 800  | 5                    |
+| 900  | 3                    |
+| 1000 | 1                    |
+| 1100 | 3                    |
+| 1200 | 2                    |
+| 1300 | 0                    |
+| 1400 | 0                    |
+| 1500 | 1                    |
+| 1600 | 0                    |
+| 1700 | 1                    |
+| 1800 | 0                    |
+| 1900 | 0                    |
+| 2000 | 0                    |
+```
 
 Notice the `bin` value 2000 in the last row. That's not the left
 end-point of any bar -- it's the right end point of the last bar. By the
@@ -209,7 +206,7 @@ which column contains the bin lower bounds.
 bin_counts.hist('Adjusted Gross count', bin_column='bin', unit='Million Dollars')
 ```
 
-![png](../media/42-visualize-numerical-distributions-14-0.png)
+![Histogram of adjusted gross count.](../media/42-visualize-numerical-distributions-14-0.png)
 
 ### The vertical axis: density scale
 
@@ -236,20 +233,22 @@ heights = percents.with_column(
 heights
 ```
 
-|bin|Count|Percent|Height|
-|--- |--- |--- |--- |
-|300|81|40.5|0.405|
-|400|52|26|0.26|
-|500|28|14|0.14|
-|600|16|8|0.08|
-|700|7|3.5|0.035|
-|800|5|2.5|0.025|
-|900|3|1.5|0.015|
-|1000|1|0.5|0.005|
-|1100|3|1.5|0.015|
-|1200|2|1|0.01|
+``` output
+| bin  | Count | Percent | Height |
+|------|-------|---------|--------|
+| 300  | 81    | 40.5    | 0.405  |
+| 400  | 52    | 26      | 0.26   |
+| 500  | 28    | 14      | 0.14   |
+| 600  | 16    | 8       | 0.08   |
+| 700  | 7     | 3.5     | 0.035  |
+| 800  | 5     | 2.5     | 0.025  |
+| 900  | 3     | 1.5     | 0.015  |
+| 1000 | 1     | 0.5     | 0.005  |
+| 1100 | 3     | 1.5     | 0.015  |
+| 1200 | 2     | 1       | 0.01   |
 
 ... (8 rows omitted)
+```
 
 Go over the numbers on the vertical axis of the histogram above to check
 that the column `Heights` looks correct.
@@ -261,13 +260,13 @@ Remember that there are 200 movies in the dataset. The \[300, 400) bin
 contains 81 movies. That's 40.5% of all the movies:
 
 $$
-\mbox{Percent} = \frac{81}{200} \cdot 100 = 40.5
+\text{Percent} = \frac{81}{200} \cdot 100 = 40.5
 $$
 
 The width of the \[300, 400) bin is \$ 400 - 300 = 100\$. So
 
 $$
-\mbox{Height} = \frac{40.5}{100} = 0.405
+\text{Height} = \frac{40.5}{100} = 0.405
 $$
 
 The code for calculating the heights used the facts that there are 200
@@ -295,7 +294,7 @@ uneven = make_array(300, 400, 600, 1500)
 millions.hist('Adjusted Gross', bins=uneven, unit="Million Dollars")
 ```
 
-![png](../media/42-visualize-numerical-distributions-21-0.png)
+![Distribution of adjusted gross in three uneven categories.](../media/42-visualize-numerical-distributions-21-0.png)
 
 Here are the counts in the three bins.
 
@@ -303,12 +302,14 @@ Here are the counts in the three bins.
 millions.bin('Adjusted Gross', bins=uneven)
 ```
 
-|bin|Adjusted Gross count|
-|--- |--- |
-|300|81|
-|400|80|
-|600|37|
-|1500|0|
+``` output
+| bin  | Adjusted Gross count |
+|------|----------------------|
+| 300  | 81                   |
+| 400  | 80                   |
+| 600  | 37                   |
+| 1500 | 0                    |
+```
 
 Although the ranges \[300, 400) and \[400, 600) have nearly identical
 counts, the bar over the former is twice as tall as the latter because
@@ -329,7 +330,7 @@ the numbers on the vertical axis are different.
 millions.hist('Adjusted Gross', bins=np.arange(300,2001,100), normed=False)
 ```
 
-![png](../media/42-visualize-numerical-distributions-26-0.png)
+![Count distribution of adjusted gross bins.](../media/42-visualize-numerical-distributions-26-0.png)
 
 While the count scale is perhaps more natural to interpret than the
 density scale, the chart becomes highly misleading when bins have
@@ -341,7 +342,7 @@ they are relatively rare.
 millions.hist('Adjusted Gross', bins=uneven, normed=False)
 ```
 
-![png](../media/42-visualize-numerical-distributions-28-0.png)
+![Count distribution of uneven adjusted gross bins.](../media/42-visualize-numerical-distributions-28-0.png)
 
 Even though the method used is called `hist`, **the figure above is NOT
 A HISTOGRAM.** It misleadingly exaggerates the proportion of movies
@@ -356,7 +357,7 @@ very_uneven = make_array(300, 400, 1500)
 millions.hist('Adjusted Gross', bins=very_uneven, normed=False)
 ```
 
-![png](../media/42-visualize-numerical-distributions-30-0.png)
+![Count distribution of very uneven adjusted gross bins.](../media/42-visualize-numerical-distributions-30-0.png)
 
 In this count-based figure, the shape of the distribution of movies is
 lost entirely.
@@ -369,31 +370,31 @@ bins have different widths.
 
 That is why a histogram has two defining properties:
 
-1.  The bins are drawn to scale and are contiguous (though some might be
+- The bins are drawn to scale and are contiguous (though some might be
     empty), because the values on the horizontal axis are numerical.
-2.  The **area** of each bar is proportional to the number of entries in
+- The **area** of each bar is proportional to the number of entries in
     the bin.
 
 Property 2 is the key to drawing a histogram, and is usually achieved as
 follows:
 
 $$
-\mbox{area of bar} ~=~ \mbox{percent of entries in bin}
+\text{area of bar} ~=~ \text{percent of entries in bin}
 $$
 
 The calculation of the heights just uses the fact that the bar is a
 rectangle:
 
 $$
-\mbox{area of bar} = \mbox{height of bar} \times \mbox{width of bin}
+\text{area of bar} = \text{height of bar} \times \text{width of bin}
 $$
 
 and so
 
 $$
-\mbox{height of bar} ~=~ 
-\frac{\mbox{area of bar}}{\mbox{width of bin}} ~=~
-\frac{\mbox{percent of entries in bin}}{\mbox{width of bin}}
+\text{height of bar} ~=~ 
+\frac{\text{area of bar}}{\text{width of bin}} ~=~
+\frac{\text{percent of entries in bin}}{\text{width of bin}}
 $$
 
 The units of height are "percent per unit on the horizontal axis."
@@ -418,7 +419,7 @@ that the movies are somewhat unevenly distributed across that bin.
 millions.hist('Adjusted Gross', bins=uneven, unit="Million Dollars")
 ```
 
-![png](../media/42-visualize-numerical-distributions-34-0.png)
+![Distribution of adjusted gross with uneven bins.](../media/42-visualize-numerical-distributions-34-0.png)
 
 To see this, let us split the \[300, 400) bin into 10 narrower bins,
 each of width 10 million dollars.
@@ -428,7 +429,7 @@ some_tiny_bins = make_array(300, 310, 320, 330, 340, 350, 360, 370, 380, 390, 40
 millions.hist('Adjusted Gross', bins=some_tiny_bins, unit='Million Dollars')
 ```
 
-![png](../media/42-visualize-numerical-distributions-36-0.png)
+![Distribution of adjusted gross with tiny bins.](../media/42-visualize-numerical-distributions-36-0.png)
 
 Some of the skinny bars are taller than 0.405 and others are shorter;
 the first two have heights of 0 because there are no data between 300
@@ -466,19 +467,21 @@ uneven_again = make_array(300, 350, 400, 450, 1500)
 millions.hist('Adjusted Gross', bins=uneven_again, unit='Million Dollars')
 ```
 
-![png](../media/42-visualize-numerical-distributions-41-0.png)
+![Distribution of adjusted gross with four uneven bins.](../media/42-visualize-numerical-distributions-41-0.png)
 
 ``` python
 millions.bin('Adjusted Gross', bins=uneven_again)
 ```
 
-|bin|Adjusted Gross count|
-|--- |--- |
-|300|32|
-|350|49|
-|400|25|
-|450|92|
-|1500|0|
+``` output
+| bin  | Adjusted Gross count |
+|------|----------------------|
+| 300  | 32                   |
+| 350  | 49                   |
+| 400  | 25                   |
+| 450  | 92                   |
+| 1500 | 0                    |
+```
 
 Look again at the histogram, and compare the \[400, 450) bin with the
 \[450, 1500) bin.
@@ -509,15 +512,6 @@ is less crowded. The density of movies in it is much lower.
     The heights of bars in a histogram measure densities; the *areas* of
     bars in a histogram are proportional to the numbers of entries in
     the bins.
-
-``` python
-from datascience import *
-import numpy as np
-path_data = '../../../../data/'
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-```
 
 Many of the variables that data scientists study are *quantitative* or
 *numerical*. Their values are numbers on which you can perform
@@ -555,25 +549,27 @@ top = Table.read_table(path_data + 'top_movies.csv')
 top.set_format([2, 3], NumberFormatter)
 ```
 
-|Title|Studio|Gross|Gross (Adjusted)|Year|
-|--- |--- |--- |--- |--- |
-|Star Wars: The Force Awakens|Buena Vista (Disney)|906,723,418|906,723,400|2015|
-|Avatar|Fox|760,507,625|846,120,800|2009|
-|Titanic|Paramount|658,672,302|1,178,627,900|1997|
-|Jurassic World|Universal|652,270,625|687,728,000|2015|
-|Marvel's The Avengers|Buena Vista (Disney)|623,357,910|668,866,600|2012|
-|The Dark Knight|Warner Bros.|534,858,444|647,761,600|2008|
-|Star Wars: Episode I - The Phantom Menace|Fox|474,544,677|785,715,000|1999|
-|Star Wars|Fox|460,998,007|1,549,640,500|1977|
-|Avengers: Age of Ultron|Buena Vista (Disney)|459,005,868|465,684,200|2015|
-|The Dark Knight Rises|Warner Bros.|448,139,099|500,961,700|2012|
+``` output
+| Title                                     | Studio               | Gross       | Gross (Adjusted) | Year |
+|-------------------------------------------|----------------------|-------------|------------------|------|
+| Star Wars: The Force Awakens              | Buena Vista (Disney) | 906,723,418 | 906,723,400      | 2015 |
+| Avatar                                    | Fox                  | 760,507,625 | 846,120,800      | 2009 |
+| Titanic                                   | Paramount            | 658,672,302 | 1,178,627,900    | 1997 |
+| Jurassic World                            | Universal            | 652,270,625 | 687,728,000      | 2015 |
+| Marvel's The Avengers                     | Buena Vista (Disney) | 623,357,910 | 668,866,600      | 2012 |
+| The Dark Knight                           | Warner Bros.         | 534,858,444 | 647,761,600      | 2008 |
+| Star Wars: Episode I - The Phantom Menace | Fox                  | 474,544,677 | 785,715,000      | 1999 |
+| Star Wars                                 | Fox                  | 460,998,007 | 1,549,640,500    | 1977 |
+| Avengers: Age of Ultron                   | Buena Vista (Disney) | 459,005,868 | 465,684,200      | 2015 |
+| The Dark Knight Rises                     | Warner Bros.         | 448,139,099 | 500,961,700      | 2012 |
 
 ... (190 rows omitted)
+```
 
 ## Check your knowledge
 
  The table nba has a column labeled salary containing the 2015-2016 salaries of NBA players. A histogram was generated by calling nba.hist(...). Included below is a table with the bins of that histogram and their corresponding heights.
 
 |bin(million dollars)               | [0, 2) | [2, 4) | [4, 12) |[12, 18) | [18, 26)|
-|-----------------------------------|--------|--------|---------|---------|----------
+|---|---|---|---|---|---|
 |height(percent per million dollars)| 17.64  | 11.39  | 3.60    | 1.60    | 0.45    |

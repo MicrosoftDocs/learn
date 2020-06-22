@@ -1,15 +1,3 @@
-``` python
-from datascience import *
-import matplotlib
-path_data = '../../../../data/'
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-np.set_printoptions(threshold=50)
-```
-
 Data come in many forms that are not numerical. Data can be pieces of
 music, or places on a map. They can also be categories into which you
 can place individuals. Here are some examples of *categorical*
@@ -35,11 +23,13 @@ icecream = Table().with_columns(
 icecream
 ```
 
-|Flavor|Number of Cartons|
-|--- |--- |
-|Chocolate|16|
-|Strawberry|5|
-|Vanilla|9|
+``` output
+| Flavor     | Number of Cartons |
+|------------|-------------------|
+| Chocolate  | 16                |
+| Strawberry | 5                 |
+| Vanilla    | 9                 |
+```
 
 The *values* of the categorical variable "flavor" are chocolate,
 strawberry, and vanilla. The table shows the number of cartons of each
@@ -62,7 +52,7 @@ and the second is the column label of the frequencies.
 icecream.barh('Flavor', 'Number of Cartons')
 ```
 
-![png](../media/41-visualize-categorical-distributions-6-0.png)
+![Distribution of ice cream flavors](../media/41-visualize-categorical-distributions-6-0.png)
 
 If the table consists just of a column of categories and a column of
 frequencies, as in `icecream`, the method call is even simpler. You can
@@ -73,7 +63,7 @@ the values in the other column as frequencies.
 icecream.barh('Flavor')
 ```
 
-![png](../media/41-visualize-categorical-distributions-8-0.png)
+![Frequency of ice cream flavors](../media/41-visualize-categorical-distributions-8-0.png)
 
 ### Features of categorical distributions
 
@@ -105,7 +95,7 @@ then draw the bar chart.
 icecream.sort('Number of Cartons', descending=True).barh('Flavor')
 ```
 
-![png](../media/41-visualize-categorical-distributions-10-0.png)
+![Sorted distribution of ice cream flavors](../media/41-visualize-categorical-distributions-10-0.png)
 
 This bar chart contains exactly the same information as the previous
 ones, but it is a little easier to read. While this is not a huge gain
@@ -137,20 +127,22 @@ top = Table.read_table(path_data + 'top_movies.csv')
 top
 ```
 
-|Title|Studio|Gross|Gross (Adjusted)|Year|
-|--- |--- |--- |--- |--- |
-|Star Wars: The Force Awakens|Buena Vista (Disney)|906723418|906723400|2015|
-|Avatar|Fox|760507625|846120800|2009|
-|Titanic|Paramount|658672302|1178627900|1997|
-|Jurassic World|Universal|652270625|687728000|2015|
-|Marvel's The Avengers|Buena Vista (Disney)|623357910|668866600|2012|
-|The Dark Knight|Warner Bros.|534858444|647761600|2008|
-|Star Wars: Episode I - The Phantom Menace|Fox|474544677|785715000|1999|
-|Star Wars|Fox|460998007|1549640500|1977|
-|Avengers: Age of Ultron|Buena Vista (Disney)|459005868|465684200|2015|
-|The Dark Knight Rises|Warner Bros.|448139099|500961700|2012|
+``` output
+| Title                                     | Studio               | Gross     | Gross (Adjusted) | Year |
+|-------------------------------------------|----------------------|-----------|------------------|------|
+| Star Wars: The Force Awakens              | Buena Vista (Disney) | 906723418 | 906723400        | 2015 |
+| Avatar                                    | Fox                  | 760507625 | 846120800        | 2009 |
+| Titanic                                   | Paramount            | 658672302 | 1178627900       | 1997 |
+| Jurassic World                            | Universal            | 652270625 | 687728000        | 2015 |
+| Marvel's The Avengers                     | Buena Vista (Disney) | 623357910 | 668866600        | 2012 |
+| The Dark Knight                           | Warner Bros.         | 534858444 | 647761600        | 2008 |
+| Star Wars: Episode I - The Phantom Menace | Fox                  | 474544677 | 785715000        | 1999 |
+| Star Wars                                 | Fox                  | 460998007 | 1549640500       | 1977 |
+| Avengers: Age of Ultron                   | Buena Vista (Disney) | 459005868 | 465684200        | 2015 |
+| The Dark Knight Rises                     | Warner Bros.         | 448139099 | 500961700        | 2012 |
 
 ... (190 rows omitted)
+```
 
 The Disney subsidiary Buena Vista shows up frequently in the top ten, as
 do Fox and Warner Brothers. Which studios will appear most frequently if
@@ -174,20 +166,22 @@ counts of rows in each category. The column of counts is always called
 movies_and_studios.group('Studio')
 ```
 
-|Studio|count|
-|--- |--- |
-|AVCO|1|
-|Buena Vista (Disney)|29|
-|Columbia|10|
-|Disney|11|
-|Dreamworks|3|
-|Fox|26|
-|IFC|1|
-|Lionsgate|3|
-|MGM|7|
-|MPC|1|
+``` output
+| Studio               | count |
+|----------------------|-------|
+| AVCO                 | 1     |
+| Buena Vista (Disney) | 29    |
+| Columbia             | 10    |
+| Disney               | 11    |
+| Dreamworks           | 3     |
+| Fox                  | 26    |
+| IFC                  | 1     |
+| Lionsgate            | 3     |
+| MGM                  | 7     |
+| MPC                  | 1     |
 
 ... (14 rows omitted)
+```
 
 Thus `group` creates a distribution table that shows how the movies are
 distributed among the categories (studios).
@@ -201,7 +195,7 @@ studio_distribution = movies_and_studios.group('Studio')
 studio_distribution.sort('count', descending=True).barh('Studio')
 ```
 
-![png](../media/41-visualize-categorical-distributions-19-0.png)
+![Number of movies per studio.](../media/41-visualize-categorical-distributions-19-0.png)
 
 Warner Brothers and Buena Vista are the most common studios among the
 top 200 movies. Warner Brothers produces the Harry Potter movies and
@@ -219,7 +213,7 @@ movies_and_years = top.select('Title', 'Year')
 movies_and_years.group('Year').sort('count', descending=True).barh('Year')
 ```
 
-![png](../media/41-visualize-categorical-distributions-22-0.png)
+![Distribution of top 200 movies by year of release.](../media/41-visualize-categorical-distributions-22-0.png)
 
 All of the longest bars correspond to years after 2000. This is
 consistent with our observation that recent years should be among the
@@ -243,7 +237,7 @@ So we will run the code without sorting by count.
 movies_and_years.group('Year').barh('Year')
 ```
 
-![png](../media/41-visualize-categorical-distributions-25-0.png)
+![Horizontal bar chart of movie counts per year.](../media/41-visualize-categorical-distributions-25-0.png)
 
 Now the years are in increasing order. But there is still something
 disquieting about this bar chart. The bars at 1921 and 1937 are just as
@@ -257,7 +251,4 @@ Bar charts are intended as visualizations of categorical variables. When
 the variable is numerical, the numerical relations between its values
 have to be taken into account when we create visualizations. That is the
 topic of the next section.
-intended as visualizations of categorical variables. When
-the variable is numerical, the numerical relations between its values
-have to be taken into account when we create visualizations. That is the
-topic of the next section.
+

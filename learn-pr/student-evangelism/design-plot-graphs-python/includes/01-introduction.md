@@ -3,17 +3,7 @@
 
 If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", please refer to the first unit **Setup**.
 
-``` python
-from datascience import *
-import matplotlib
-path_data = '../../../data/'
-matplotlib.use('Agg', warn=False)
-%matplotlib inline
-import matplotlib.pyplot as plots
-plots.style.use('fivethirtyeight')
-import numpy as np
-np.set_printoptions(threshold=50)
-```
+Open [Visual Studio Codespaces](https://online.visualstudio.com/environments).
 
 ### Visualization
 
@@ -60,20 +50,22 @@ actors = Table.read_table(path_data + 'actors.csv')
 actors
 ```
 
-|Actor|Total Gross|Number of Movies|Average per Movie|\#1 Movie|Gross|
-|--- |--- |--- |--- |--- |--- |
-|Harrison Ford|4871.7|41|118.8|Star Wars: The Force Awakens|936.7|
-|Samuel L. Jackson|4772.8|69|69.2|The Avengers|623.4|
-|Morgan Freeman|4468.3|61|73.3|The Dark Knight|534.9|
-|Tom Hanks|4340.8|44|98.7|Toy Story 3|415|
-|Robert Downey, Jr.|3947.3|53|74.5|The Avengers|623.4|
-|Eddie Murphy|3810.4|38|100.3|Shrek 2|441.2|
-|Tom Cruise|3587.2|36|99.6|War of the Worlds|234.3|
-|Johnny Depp|3368.6|45|74.9|Dead Man's Chest|423.3|
-|Michael Caine|3351.5|58|57.8|The Dark Knight|534.9|
-|Scarlett Johansson|3341.2|37|90.3|The Avengers|623.4|
+``` output
+| Actor              | Total Gross | Number of Movies | Average per Movie | #1 Movie                     | Gross |
+|--------------------|-------------|------------------|-------------------|------------------------------|-------|
+| Harrison Ford      | 4871.7      | 41               | 118.8             | Star Wars: The Force Awakens | 936.7 |
+| Samuel L. Jackson  | 4772.8      | 69               | 69.2              | The Avengers                 | 623.4 |
+| Morgan Freeman     | 4468.3      | 61               | 73.3              | The Dark Knight              | 534.9 |
+| Tom Hanks          | 4340.8      | 44               | 98.7              | Toy Story 3                  | 415   |
+| Robert Downey, Jr. | 3947.3      | 53               | 74.5              | The Avengers                 | 623.4 |
+| Eddie Murphy       | 3810.4      | 38               | 100.3             | Shrek 2                      | 441.2 |
+| Tom Cruise         | 3587.2      | 36               | 99.6              | War of the Worlds            | 234.3 |
+| Johnny Depp        | 3368.6      | 45               | 74.9              | Dead Man's Chest             | 423.3 |
+| Michael Caine      | 3351.5      | 58               | 57.8              | The Dark Knight              | 534.9 |
+| Scarlett Johansson | 3341.2      | 37               | 90.3              | The Avengers                 | 623.4 |
 
 ... (40 rows omitted)
+```
 
 **Terminology.** A *variable* is a formal name for what we have been
 calling a "feature", such as 'number of movies.' The term *variable*
@@ -100,7 +92,7 @@ label of the column on the vertical.
 actors.scatter('Number of Movies', 'Total Gross')
 ```
 
-![png](../media/40-visualization-8-0.png)
+![Scatter plot of number of movies and total gross.](../media/40-visualization-8-0.png)
 
 The plot contains 50 points, one point for each actor in the table. You
 can see that it slopes upwards, in general. The more movies an actor has
@@ -127,7 +119,7 @@ the *average* gross receipt per movie.
 actors.scatter('Number of Movies', 'Average per Movie')
 ```
 
-![png](../media/40-visualization-11-0.png)
+![Scatter plot of number of movies against the average gross receipt per movie.](../media/40-visualization-11-0.png)
 
 This is a markedly different picture and shows a *negative* association.
 In general, the more movies an actor has been in, the *less* the average
@@ -150,7 +142,7 @@ no_outlier = actors.where('Number of Movies', are.above(10))
 no_outlier.scatter('Number of Movies', 'Average per Movie')
 ```
 
-![png](../media/40-visualization-14-0.png)
+![Average gross per movie for actors that have appeared in more than 10 movies.](../media/40-visualization-14-0.png)
 
 The negative association is still clearly visible. Let's identify the
 actors corresponding to the points that lie on the right-hand side of
@@ -160,12 +152,14 @@ the plot where the number of movies is large:
 actors.where('Number of Movies', are.above(60))
 ```
 
-|Actor|Total Gross|Number of Movies|Average per Movie|\#1 Movie|Gross|
-|--- |--- |--- |--- |--- |--- |
-|Samuel L. Jackson|4772.8|69|69.2|The Avengers|623.4|
-|Morgan Freeman|4468.3|61|73.3|The Dark Knight|534.9|
-|Robert DeNiro|3081.3|79|39|Meet the Fockers|279.3|
-|Liam Neeson|2942.7|63|46.7|The Phantom Menace|474.5|
+``` output
+| Actor             | Total Gross | Number of Movies | Average per Movie | #1 Movie           | Gross |
+|-------------------|-------------|------------------|-------------------|--------------------|-------|
+| Samuel L. Jackson | 4772.8      | 69               | 69.2              | The Avengers       | 623.4 |
+| Morgan Freeman    | 4468.3      | 61               | 73.3              | The Dark Knight    | 534.9 |
+| Robert DeNiro     | 3081.3      | 79               | 39                | Meet the Fockers   | 279.3 |
+| Liam Neeson       | 2942.7      | 63               | 46.7              | The Phantom Menace | 474.5 |
+```
 
 The great actor Robert DeNiro has the highest number of movies and the
 lowest average receipt per movie. Other fine actors are at points that
@@ -186,9 +180,11 @@ look at the outlier.
 actors.where('Number of Movies', are.below(10))
 ```
 
-|Actor|Total Gross|Number of Movies|Average per Movie|\#1 Movie|Gross|
-|--- |--- |--- |--- |--- |--- |
-|Anthony Daniels|3162.9|7|451.8|Star Wars: The Force Awakens|936.7|
+``` output
+| Actor           | Total Gross | Number of Movies | Average per Movie | #1 Movie                     | Gross |
+|-----------------|-------------|------------------|-------------------|------------------------------|-------|
+| Anthony Daniels | 3162.9      | 7                | 451.8             | Star Wars: The Force Awakens | 936.7 |
+```
 
 As an actor, Anthony Daniels might not have the stature of Robert
 DeNiro. But his seven movies had an astonishingly high average receipt of
@@ -230,20 +226,22 @@ movies_by_year = Table.read_table(path_data + 'movies_by_year.csv')
 movies_by_year
 ```
 
-|Year|Total Gross|Number of Movies|\#1 Movie|
-|--- |--- |--- |--- |
-|2015|11128.5|702|Star Wars: The Force Awakens|
-|2014|10360.8|702|American Sniper|
-|2013|10923.6|688|Catching Fire|
-|2012|10837.4|667|The Avengers|
-|2011|10174.3|602|Harry Potter / Deathly Hallows (P2)|
-|2010|10565.6|536|Toy Story 3|
-|2009|10595.5|521|Avatar|
-|2008|9630.7|608|The Dark Knight|
-|2007|9663.8|631|Spider-Man 3|
-|2006|9209.5|608|Dead Man's Chest|
+``` output
+| Year | Total Gross | Number of Movies | #1 Movie                            |   |   |
+|------|-------------|------------------|-------------------------------------|---|---|
+| 2015 | 11128.5     | 702              | Star Wars: The Force Awakens        |   |   |
+| 2014 | 10360.8     | 702              | American Sniper                     |   |   |
+| 2013 | 10923.6     | 688              | Catching Fire                       |   |   |
+| 2012 | 10837.4     | 667              | The Avengers                        |   |   |
+| 2011 | 10174.3     | 602              | Harry Potter / Deathly Hallows (P2) |   |   |
+| 2010 | 10565.6     | 536              | Toy Story 3                         |   |   |
+| 2009 | 10595.5     | 521              | Avatar                              |   |   |
+| 2008 | 9630.7      | 608              | The Dark Knight                     |   |   |
+| 2007 | 9663.8      | 631              | Spider-Man 3                        |   |   |
+| 2006 | 9209.5      | 608              | Dead Man's Chest                    |   |   |
 
 ... (26 rows omitted)
+```
 
 The Table method `plot` produces a line graph. Its two arguments are the
 same as those for `scatter`: first the column on the horizontal axis,
@@ -254,7 +252,7 @@ movies released each year over the years 1980 through 2015.
 movies_by_year.plot('Year', 'Number of Movies')
 ```
 
-![png](../media/40-visualization-23-0.png)
+![Number of movies released per year from 1980 to 2015.](../media/40-visualization-23-0.png)
 
 The graph rises sharply and then has a gentle upwards trend though the
 numbers vary noticeably from year to year. The sharp rise in the early
@@ -273,7 +271,7 @@ century_21 = movies_by_year.where('Year', are.above(1999))
 century_21.plot('Year', 'Number of Movies')
 ```
 
-![png](../media/40-visualization-26-0.png)
+![Number of movies released per year from 2000 to 2015.](../media/40-visualization-26-0.png)
 
 The global financial crisis of 2008 has a visible effect--in 2009
 there is a sharp drop in the number of movies released.
@@ -284,7 +282,7 @@ The dollar figures, however, didn't suffer much.
 century_21.plot('Year', 'Total Gross')
 ```
 
-![png](../media/40-visualization-28-0.png)
+![Total movie gross per year from 2000 to 2015.](../media/40-visualization-28-0.png)
 
 The total domestic gross receipt was higher in 2009 than in 2008, even
 though there was a financial crisis and a much smaller number of movies
@@ -309,9 +307,11 @@ time, as we will see later.
 century_21.where('Year', are.equal_to(2009))
 ```
 
-|Year|Total Gross|Number of Movies|\#1 Movie|
-|--- |--- |--- |--- |
-|2009|10595.5|521|Avatar|
+``` output
+| Year | Total Gross | Number of Movies | #1 Movie |
+|------|-------------|------------------|----------|
+| 2009 | 10595.5     | 521              | Avatar   |
+```
 
 ## Learning objectives
 

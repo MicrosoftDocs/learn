@@ -25,7 +25,7 @@ Having set up your database, you have to consider how important it is that every
 
 ## Set the data consistency
 
-In our scenario, there are three company data locations: US West, Australia East, and Australia Central. Only US West writes to the data, but all three locations can read it. Data consistency answers the following question: After US West writes an update to the data, what should all read locations get when they read the data? If there's zero latency, then this question would be mute. However, latency is a real issue in the cloud, and it needs to be addressed.
+In our scenario, there are three company data locations: US West, Australia East, and Australia Central. Only US West writes to the data, but all three locations can read it. Data consistency answers the following question: After US West writes an update to the data, what should all read locations get when they read the data? If there's zero latency, then this question would be moot. However, latency is a real issue in the cloud, and it needs to be addressed.
 
 When a write is made to update data in US West, that change will be propagated automatically to the other locations. However, the update will exist in an inaccessible state, until the go-ahead is received that the update can now be read. This inaccessible state exists in all three locations, even the write location.
 

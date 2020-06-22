@@ -2,7 +2,7 @@ After you have published a pipeline, you can initiate it on demand through its R
 
 ## Scheduling a pipeline for periodic intervals
 
-To schedule a pipeline to run at periodic intervals, you must define a **ScheduleRecurrance** that determines the run frequency, and use it to create a **Schedule**.
+To schedule a pipeline to run at periodic intervals, you must define a **ScheduleRecurrence** that determines the run frequency, and use it to create a **Schedule**.
 
 For example, the following code schedules a daily run of a published pipeline.
 

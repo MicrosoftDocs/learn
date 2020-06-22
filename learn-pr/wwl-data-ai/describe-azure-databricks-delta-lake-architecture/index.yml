@@ -14,7 +14,8 @@ abstract: |
   In this module, you will:
   - Process batch and streaming data with Delta Lake.
   - Learn how Delta Lake architecture enables unified streaming and batch analytics with transactional guarantees within a data lake.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture.svg
 levels:
 - intermediate
