@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "Data from Twitter feeds"
       isCorrect: true
-      explanation: "That's correct. Twitter feeds are an example of a streaming datatset as the tweets are published continuously."
+      explanation: "That's correct. Twitter feeds are an example of a streaming dataset as the tweets are published continuously."
     - content: "Sales data for the past month"
       isCorrect: false
       explanation: "That's incorrect. Sales data for the past month is not an example of a streaming dataset as this data is a point in time dataset."
