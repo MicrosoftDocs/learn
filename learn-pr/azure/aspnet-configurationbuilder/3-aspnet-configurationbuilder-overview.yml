@@ -6,7 +6,7 @@ metadata:
   description: Explain the purpose of the ConfigurationBuilder type, and how to use it in an ASP.NET web app.
   ms.date: 06/16/2020
   author: coderandhiker
-  ms.author: chrisrt@microsoft.com
+  ms.author: chrisrt
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
