@@ -26,7 +26,7 @@ With your list of services captured, you can use the [Azure Pricing Calculator](
 
 :::image type="content" source="../media/2-azure-pricing-calculator.png" alt-text="Screenshot of the Azure Pricing Calculator site" border="true":::
 
-As part of your cost estimation, it's also important to understand the different subscription and billing models that are available on Azure. Two of the most common models are *pay-as-you-go* and *enterprise agreement*:
+As part of your cost estimation, it's also important to understand the subscription and billing models that are available on Azure. Two of the most common models are *pay-as-you-go* and *enterprise agreement*:
 
 - Pay-as-you-go subscriptions give you the flexibility to purchase and use the services you need, with the advantage of having no up-front commitments.
 
@@ -38,7 +38,7 @@ No architecture is static, so you'll want your estimates to include any investme
 
 Evolving your architecture can reduce resources costs, such as moving from virtual machines to app services. It can also reduce operational costs by requiring less downtime for maintenance.
 
-## Organize resources for cost-awareness
+## Organize resources for cost awareness
 
 It's also important to set up an organizational framework to enable the control, reporting, and attribution of costs throughout your environment.
 

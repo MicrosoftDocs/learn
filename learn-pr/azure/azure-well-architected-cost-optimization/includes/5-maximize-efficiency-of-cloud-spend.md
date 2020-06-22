@@ -62,7 +62,7 @@ Azure Hybrid Benefit offers an additional way to optimize the costs of your Wind
 
 Some virtual machines need to be up and running all the time. Perhaps you have a web application server farm for a production workload. Or maybe you have a domain controller that supports various servers on a virtual network. If you know with certainty that these virtual machines will run continuously throughout the coming year or longer, you can reduce your costs even more by purchasing a reserved instance. 
 
-Azure Reserved Virtual Machine Instances allows you to purchase compute capacity for a one-year or three-year commitment. It offers you significant savings - up to 72 percent - when compared to pay-as-you-go compute resources. 
+Azure Reserved Virtual Machine Instances (Azure RI) allows you to purchase compute capacity for a one-year or three-year commitment. It offers you significant savings - up to 72 percent - when compared to pay-as-you-go compute resources. 
 
 The following illustration shows savings achieved when you combine your on-premises licenses with Azure Hybrid Benefit. It also shows savings achieved when you combine your on-premises licenses with both Azure Reserved Virtual Machine Instances and Azure Hybrid Benefit.
 
