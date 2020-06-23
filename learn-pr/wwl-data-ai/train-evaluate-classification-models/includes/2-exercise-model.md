@@ -27,4 +27,4 @@ After you've created the environment, open the **Classification.ipynb** notebook
 > [!NOTE]
 > We highly recommend using a Visual Studio Codespace hosted in Azure for this exercise - this setup ensures the correct version of Python and the various packages you will need are installed. If you prefer to complete the exercise using your own computer, and you have experience configuring Python development environments, you can find details for configuring a local development environment at [Running the labs on your own computer](https://github.com/MicrosoftDocs/ml-basics/blob/master/local-setup.md?azure-portal=true).
 
-When you've finished working through the notebook, return to this module and more to the next unit to check your knowledge.
+When you've finished working through the notebook, return to this module and move on to the next unit to check your knowledge.
