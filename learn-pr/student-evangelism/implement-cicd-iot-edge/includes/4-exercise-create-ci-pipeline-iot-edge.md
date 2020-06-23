@@ -49,13 +49,19 @@ This repository contains an Azure DevOps build definition which is preconfigured
 
 2. Once this task is successfully installed, return to the Azure DevOps project and select **Repos** > Files then edit the `.azure-pipelines.yml` file.
 
+3. Add the following comment to the top of the file as shown below.
+
+   ```
+   # This repository is built using Azure DevOps.
+   ```
+
    ![This illustration shows how to edit Azure pipeline.](../media/edit-pipeline.png)
 
-3. Commit your change and go back to **Files**.
+4. Commit your change and go back to **Files**.
 
-4. Set up Build. You should see that a build has kicked off upon editing the Build Definition.
+5. Set up Build. You should see that a build has kicked off upon editing the Build Definition.
 
-5. Go to **Pipelines**. You will see the build will fail. This is to be expected as Azure DevOps will create the build definition with a name that contains spaces which cause a conflict in the "Azure IoT Edge - Build module images" task. To fix this, select **Pipelines** > Builds then "Rename" the newly created build definition so that it does not contain spaces.
+6. Go to **Pipelines**. You will see the build will fail. This is to be expected as Azure DevOps will create the build definition with a name that contains spaces which cause a conflict in the "Azure IoT Edge - Build module images" task. To fix this, select **Pipelines** > Builds then "Rename" the newly created build definition so that it does not contain spaces.
 
    ![The illustration shows how to fix build fail.](../media/rename-pipeline.png)
 

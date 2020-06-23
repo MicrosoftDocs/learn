@@ -10,29 +10,29 @@ Deployments to devices need to be done under tight control in production environ
 
 3. You'll need to fix a few things before you can successfully run the Release Pipeline, specifically Azure Subscription endpoints, Agent Pools, and variable settings, and artifact source.
 
-   To fix the Azure Subscription Endpoints, select **Tasks** > **Create Deployment** and provide the appropriate Azure subscription and Azure Container Registry for the "Azure IoT Edge - Push module images".
+4. Select **Tasks** > **Create Deployment** and provide the appropriate Azure subscription and Azure Container Registry for the "Azure IoT Edge - Push module images".
 
    ![The illustration shows issues in the deployment task.](../media/task-settings.png)
 
-   Provide the appropriate Azure subscription and Azure Container Registry for Azure IoT Edge - Deploy to IoT Edge devices" task.
+5. Provide the appropriate Azure subscription and Azure Container Registry for "Azure IoT Edge - Deploy to IoT Edge devices" task.
 
-4. Next select **Tasks** > Smoke Test and provide the appropriate Azure subscription and Azure Container Registry for the "Remove all registered QA devices" and "Smoke Test" tasks.
+6. Navigate to **Tasks** > **Smoke Test** and provide the appropriate Azure subscription and Azure Container Registry for the "Remove all registered QA devices" and "Smoke Test" tasks.
 
    ![The illustration shows issues in smoke test task.](../media/task-settings-smoke-test.png)
 
-5. To fix the Agent Pools, select **Tasks** > Create Deployment > Agent Job and change the Agent Pool. Repeat the same step by selecting  **Tasks** > Smoke Test > Agent Job and change Agent Pool.
+7. To fix the Agent Pools, select **Tasks** > **Create Deployment** > Agent Job and change the Agent Pool. Repeat the same step by selecting  **Tasks** > **Smoke Test** > Agent Job and change Agent Pool to "Hosted Ubuntu 1604".
 
-6. Now you should be able to save the Release pipeline. It's highly recommended to save at this point if Azure DevOps allows.
+8. Now you should be able to save the Release pipeline. It's highly recommended to save at this point if Azure DevOps allows.
 
-7. Navigate to **Variables** tab. You'll need to modify all variables in brackets (<>).
+9. Navigate to **Variables** tab. You'll need to modify all variables in brackets (<>).
 
    ![The illustration shows variables to be modified in the pipeline.](../media/release-pipeline-variables.png)
 
-8. You can use the same values for `acr.host`, `acr.user`, `acr.password`, and `appinsights.instrumentationkey` that were used in the CI build definition earlier.
+10. You can use the same values for `acr.host`, `acr.user`, `acr.password`, and `appinsights.instrumentationkey` that were used in the CI build definition earlier.
 
-9. `iothub_name` is the name of the IoT Hub you created. Navigate to Azure portal, go to resource group you created and make a copy of the IoT hub name.
+11. `iothub_name` is the name of the IoT Hub you created. Navigate to Azure portal, go to resource group you created and make a copy of the IoT hub name.
 
-10. For the additional variables, you need to create a service principal by performing the following the steps.
+12. For the additional variables, you need to create a service principal by performing the following the steps.
 
     1. Go to Azure portal
 
