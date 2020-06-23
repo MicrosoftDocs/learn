@@ -18,7 +18,8 @@ DevOps Projects creates a CI/CD pipeline in Azure DevOps. You firstly will need 
 
 4. Review and deploy your resources to Azure
 
-    > Note: If you encounter any issues in the deployment, it is advised to delete the created Resource Group (if any) and retry with a new value for the `Resource Name Suffix` parameter.
+   > [!NOTE]
+   > If you encounter any issues in the deployment, it is advised to delete the created Resource Group (if any) and retry with a new value for the `Resource Name Suffix` parameter.
 
 5. Go to Azure portal to review your resources.
 

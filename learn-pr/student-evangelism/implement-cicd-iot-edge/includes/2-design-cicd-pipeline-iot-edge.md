@@ -19,18 +19,18 @@ You'll use the following components in the overall design:
 
 **Azure IoT Hubs:** Service enables us to connect, monitor, and manage IoT devices securely.
 
-**Azure Pipelines:** A service that automates your builds and deployments. 
+**Azure Pipelines:** A service that automates your builds and deployments.
 
-To implement this solution, you'll create a release pipeline that deploys to QA devices, and smoke tests the edge runtime in a containerized device. The design will run an instance of the [azure-iot-edge-device-container](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Ftoolboc%2Fazure-iot-edge-device-container&data=02|01|xshi%40microsoft.com|0102337c9ada4f3ef10d08d812fcc9c1|72f988bf86f141af91ab2d7cd011db47|1|0|637280224216554921&sdata=dpn9cmudy%2FqQT6ifznms7KplLrUDrwIYbulqrTB7IdE%3D&reserved=0), which is configured as a QA device. The tests will probe the IoT Hub to ensure that the QA device receives the desired deployment configuration and can run all configured modules successfully. 
+To implement this solution, you'll create a release pipeline that deploys to QA devices, and smoke tests the edge runtime in a containerized device. The design will run an instance of the [azure-iot-edge-device-container](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Ftoolboc%2Fazure-iot-edge-device-container&data=02|01|xshi%40microsoft.com|0102337c9ada4f3ef10d08d812fcc9c1|72f988bf86f141af91ab2d7cd011db47|1|0|637280224216554921&sdata=dpn9cmudy%2FqQT6ifznms7KplLrUDrwIYbulqrTB7IdE%3D&reserved=0), which is configured as a QA device. The tests will probe the IoT Hub to ensure that the QA device receives the desired deployment configuration and can run all configured modules successfully.
 
 The script for the smoke test implements the following:
 
-- Test for the existence of the device(s) 
+- Test for the existence of the device(s)
 - Test if the device connected to IoT hub
 - Test if the device applied new deployment manifest
 - The modules that specified in the deployment manifest are running successfully
 
-The steps involved are: 
+The steps involved are:
 
 1. Creating Azure Resources
 
