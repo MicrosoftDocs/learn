@@ -20,7 +20,7 @@ Deployments to devices need to be done under tight control in production environ
 
    ![The illustration shows issues in smoke test task.](../media/task-settings-smoke-test.png)
 
-5. To fix the Agent Pools, select **Tasks** > Create Deployment > Agent Job and change the Agent Pool to "Hosted Ubuntu 1604". Repeat the same step by selecting  **Tasks** > Smoke Test > Agent Job and change Agent Pool.
+5. To fix the Agent Pools, select **Tasks** > Create Deployment > Agent Job and change the Agent Pool. Repeat the same step by selecting  **Tasks** > Smoke Test > Agent Job and change Agent Pool.
 
 6. Now you should be able to save the Release pipeline. It's highly recommended to save at this point if Azure DevOps allows.
 
