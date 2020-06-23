@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.quantum.tbd-grover
 metadata:
-  title: TBD entanglement
+  title: TBD Grover's search
   description: TBD.
   ms.date: 09/19/2020
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: tutorial
   ms.prod: learning-quantum
-title: TBD entanglement
+title: TBD Grover's search
 summary: TBD.
 abstract: |
   In this module you will:
