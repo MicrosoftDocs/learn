@@ -24,4 +24,4 @@ Now you can query the Cognitive Service running on your IoT Edge device from any
 3. Select API Description or go to `http://<<your-ipaddress>>:5000/swagger` to get a detailed description of the API.
 4. Select **Try it out** and then **Execute**, you can change the input value as you like. The result will show up further down on the page.
 
-![The illustration shows execute cognitive services on the browser.](../media/execute-cognitive-serivce.png)
+![The illustration shows execute cognitive services on the browser.](../media/execute-cognitive-service.png)
