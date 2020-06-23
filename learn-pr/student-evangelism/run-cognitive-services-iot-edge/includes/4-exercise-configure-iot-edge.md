@@ -110,7 +110,7 @@ To find your IP address:
 
 ## Checking if the IoT Edge device is configured
 
-You'll check to see that the IoT Edge security daemon is running as a system service by using iotedge commands. You need elevated privileges to run iotedge commands.
+You'll check to see that the IoT Edge security daemon is running as a system service by using **iotedge** commands. You need elevated privileges to run **iotedge** commands.
 
 You run the following commands to test the status of the IoT Edge device.
 

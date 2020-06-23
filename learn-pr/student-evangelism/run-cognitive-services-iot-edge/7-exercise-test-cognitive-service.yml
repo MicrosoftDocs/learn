@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.run-cognitive-services-iot-edge.exercise-test-cognitive-service
-title: Exercise - Test Cognitive Service on the Edge device
+title: Exercise - Test Cognitive Services on the Edge device
 metadata:
-  title: Exercise - Test Cognitive Service on the Edge device
+  title: Exercise - Test Cognitive Services on the Edge device
   description: In this section, we'll test cognitive services on the edge device
   ms.date: 6/12/2020
   author: leestott
