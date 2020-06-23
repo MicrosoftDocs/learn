@@ -36,7 +36,7 @@ The first action you need to take in order to create your cluster is to provisio
 
     We'll also tell it to generate local public and private SSH files to allow our access to the cluster if they're missing via the `--generate-ssh-keys` and we'll set the DNS name for our cluster to `contoso-kubernetes` using the `--dns-name-prefix` parameter.
 
-    We're also specifying a small VM size of `Standard_B2s` using hte `--node-vm-size` parameter.
+    We're also specifying a small VM size of `Standard_B2s` using the `--node-vm-size` parameter.
 
 ## Link with kubectl
 
