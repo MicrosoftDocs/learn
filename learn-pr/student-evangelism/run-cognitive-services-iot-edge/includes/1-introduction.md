@@ -4,9 +4,7 @@ Suppose you're assigned to an earthquake affected area, and you're tasked with c
 
 Previously, the doctors had to wait until the appropriate person who spoke the language became available. It wasn't always easy to find the appropriate person in a disaster situation. So, you would like to use an app/service that could run offline if needed. The app would identify the language of medicine. If such a device were available, you could create a safer solution, which also optimizes precious time. The solution needs to employ cognitive services (language detection) on edge devices as a part of the broader ‘AI for Good’ effort in the disaster zone.
 
-![The illustration shows how to run cognitive services on the edge device based on the scenario.](../media/scenario-image.jpg)
-
-
+![The illustration shows how to run cognitive services on the edge device based on the scenario.](../media/scenario-image.png)
 
 By the end of this module, you'll be able to implement a cognitive service (language detection) on an IoT Edge device.
 
