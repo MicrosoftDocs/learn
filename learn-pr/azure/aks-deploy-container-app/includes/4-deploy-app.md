@@ -134,7 +134,3 @@ Now it's time to put everything together and push the image to the ACR you creat
     After the download, open your browser at `http://localhost:9096` to see the results.
 
 1. Press `CTRL + C` to stop and remove the running container
-
-## Finish
-
-Now you have all that is needed to deploy the application to your AKS cluster. Next up, you'll be guided on how to put that image to work on the AKS cluster you created.

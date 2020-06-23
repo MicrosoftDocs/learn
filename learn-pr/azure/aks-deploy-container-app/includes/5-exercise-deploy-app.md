@@ -251,7 +251,3 @@ Now that we have our file saved, we need to deploy it.
     |NAME  |READY  |UP-TO-DATE  |AVAILABLE  |
     |---------|---------|---------|---------|
     |contoso-website     |1/1         |1         |1         |
-
-## Finish
-
-The website is deployed, but it isn't accessible through the Internet. Let's expose the website so people can access it

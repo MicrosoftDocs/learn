@@ -32,7 +32,3 @@ Using managed services like AKS makes it a lot easier, because with the :::no-lo
 Ingress controllers are reverse proxies that listen when you create an Ingress workload in the cluster. When you create a new Ingress, the add-on gets its name and figures where the DNS is pointing to by reading the manifest file. Then it automatically adds a new entry in the internal webserver's configuration that allows this DNS to pass through the cluster's "wall".
 
 In AKS, the Ingress Controller is linked to a _DNS Zone_ resource in your Azure subscription – which was automatically created when we created our cluster. This link makes possible for the cluster to automatically create a zone record pointing the DNS name to the IP address and port of the exposed application.
-
-## Finish
-
-Understanding network will allow us to expose our website to the Web and understand the process behind it.
