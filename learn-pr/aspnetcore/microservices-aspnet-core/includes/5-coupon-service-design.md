@@ -1,4 +1,4 @@
-In this unit, you learn about the business requirements for the requested coupon code feature. Additionally, you'll learn about the DDD design pattern, and the selected technology stack for the solution.
+In this unit, you learn about the business requirements for the requested coupon code feature. Additionally, you'll learn about the Domain-Driven Design (DDD) design pattern, and the selected technology stack for the solution.
 
 ## Business requirements
 

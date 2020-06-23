@@ -14,7 +14,7 @@ The preceding script uses `helm` commands to:
 * Install the reconfigured *:::no-loc text="WebStatus":::* and aggregator Helm charts by using a public container registry.
 * Install the new *:::no-loc text="Coupon.API":::* chart and the reconfigured *:::no-loc text="WebSPA":::* chart by using your private Azure Container Registry.
 
-The `helm uninstall` and `helm install` commands used by the script are displayed in the command shell with the correct parameters.
+The `helm uninstall` and `helm install` commands used by the script are shown in the command shell with the correct parameters.
 
 ## Verify changes
 

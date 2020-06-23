@@ -214,7 +214,7 @@ Run the following script in the command shell. This builds the coupon service an
 
 The preceding script builds the container images in Container Registry by using the `az acr build` command, with the provided *:::no-loc text="Dockerfile":::* files for the *:::no-loc text="Coupon.API":::* and *:::no-loc text="WebSPA":::* projects.
 
-Note that the solution isn't being built in your Cloud Shell instance. The build occurs in the cloud when the container image is sent to Container Registry. You can see build output displayed in the command shell. The `az acr build` command used by the script is displayed in the command shell, with the correct parameters. The command resembles the following example:
+Note that the solution isn't being built in your Cloud Shell instance. The build occurs in the cloud when the container image is sent to Container Registry. You can see build output shown in the command shell. The `az acr build` command used by the script is shown in the command shell, with the correct parameters. The command resembles the following example:
 
 ```azurecli
 az acr build --registry eshoplearn \
