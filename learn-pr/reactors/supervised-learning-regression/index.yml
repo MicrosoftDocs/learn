@@ -12,13 +12,17 @@ title: 'Supervised learning: Regression'
 summary: Learn how to TBD.
 abstract:  | 
   In this module, you will:
-  - TBD
+  - Learn to fit linear-regression models
+  - Become familiar with interpreting the output of linear-regression models
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - TBD
+  - Introduction to Python
+  - Beginners Data Science for Python Developers
+  - 'Join and clean datasets: Deep dive'
   
 iconUrl: /learn/achievements/reactors/supervised-learning-regression.svg
+hidden: true
 levels:
 - beginner
 roles:
