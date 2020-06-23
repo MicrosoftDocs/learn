@@ -1,34 +1,96 @@
 In addition to being able to run your code step by step, you saw in the previous exercise that knowing about your program state is also essential. With the built-in debugger, you have some options for that end like the `exec` command, but it's still rather limited. Using a debugger with a more complete visual interface is useful for that purpose. So let's discover how you can configure Visual Studio Code debugger to use it with Node.js.
 
-## Visual Studio Code debugger for Node.js
+## Debug Node.js programs with Visual Studio Code
 
 In VS Code, if you click on the **Run** tab you can access the debugger tool.
 
-:::image source="../media/vscode-run-tab.png" alt-text="Screenshot of VS Code debug tab":::
+:::image source="../media/run-tab.png" alt-text="Screenshot of VS Code debug tab":::
 
 If you have a Node.js project open, you have three different ways to activate the debugger:
 
 - If you have a `.js` file open in the editor window, you can click on the **Run and debug**, then select **Node.js** to directly debug this JavaScript file.
 
-    :::image source="../media/vscode-debug-select-environment.png" alt-text="Select Node.js in environment selection dropdown in VS Code":::
+    :::image source="../media/debug-select-environment.png" alt-text="Select Node.js in environment selection dropdown in VS Code":::
 
 - You can also choose to open a **Node.js debug terminal**. Clicking on this button opens a special terminal window, that you can use to run your program from the command line. For example, you can type in `node myscript.js` and your app will start with the debugger enabled automatically, without having to use the `--inspect` option.
 
-    :::image source="../media/vscode-debug-terminal.png" alt-text="Debug terminal window in VS Code":::
+    :::image source="../media/debug-terminal.png" alt-text="Debug terminal window in VS Code":::
 
 - You can click on **create a launch.json file** to customize further your run configuration and share it with your coworkers. We'll see more about that later.
+
+### Add breakpoints
 
 As opposed to the built-in Node.js command line debugger, the VS Code debugger will immediately start executing your code. If your program ends quickly, you may not even have the chance to interact with the debugger. That's why you may want to add some breakpoints before starting it.
 
 To add a breakpoint in your code, open your `.js` program then click on the left side of the line number, on the line you want to break. You should see a red circle once the breakpoint is enabled. To remove it, just click on the red circle again.
 
-:::image source="../media/vscode-breakpoint.png" alt-text="Breakpoint added in VS Code editor window":::
+:::image source="../media/breakpoint.png" alt-text="Breakpoint added in VS Code editor window":::
 
-### Execution controls
+## Visual Studio Code debugger overview
 
-After you've set up your breakpoints and started your app, you'll see the execution controls appear at the top:
+After you've set up your breakpoints and started your app, you'll see new information panels and controls appear on the screen.
 
-:::image source="../media/vscode-debugger-controls.png" alt-text="VS Code debugger execution controls":::
+:::image source="../media/debugger-overview.png" alt-text="VS Code debugger overview":::
+
+1. Debugger configuration controls.
+1. Variables state.
+1. Watched variables state.
+1. Current call stack.
+1. Loaded script files.
+1. Call stack.
+1. Execution controls.
+1. Current execution step.
+1. Debug console.
+
+### View and edit your variables state
+
+When analyzing the cause of a program defect, one of the most important things is to keep an eye on your variables state to look for unexpected changes. You can use the **Variables** panel to do that.
+
+Your variables are show organized by scope:
+
+- *Local variables* are the ones accessible in the current scope, usually the current function.
+- *Global variables* are the ones accessible from everywhere in your program. It also includes the system objects from the JavaScript runtime, so don't get surprised if you see a lot of stuff in there.
+- *Closure variables* are the ones accessible from the current closure, if any. A closure combines the local scope of a function with the scope from of the outer function it belongs to.
+
+You can unfold scopes and variables by clicking the arrow. When unfolding objects, you can see all the properties defined in this object.
+
+It is possible to change the value of a variable on the fly by double-clicking on the variable.
+
+By hovering a function parameter or a variable directly in the editor window, you can also peek at its value:
+
+:::image source="../media/variable-hover.png" alt-text="Hover variable during debugging to peek at its value":::
+
+### Watch variables
+
+If you want to track a variable state across time or different functions, it can become tedious to search for it every time. That's where the **Watch** panel becomes handy.
+
+You can click on the **plus** button to enter a variable name or an expression to watch. As an alternative, you can right-click on a variable in the **Variables** panel and select **Add to watch**.
+
+All expressions inside the watch panel will be updated automatically as your code runs.
+
+### Call stack
+
+Every time your program enters a function, an entry is added to the call stack. When your application becomes complex and you have functions called within functions many times, it represents the trail of functions calls.
+
+It's useful to find the source of an exception. If you have an unexpected crash in your program, you can unwind this call stack to find out where the exception originated from.
+
+To help you even more, you can click on the **Restart frame** button that appears when hovering a function name in the stack. It will "rewind" execution back to the beginning of that function, by actually restarting your program up to that point.
+
+:::image source="../media/restart-frame.png" alt-text="Hover variable during debugging to peek at its value":::
+
+### View loaded script files
+
+This panel will present you all the JavaScript files that have been loaded so far. In large projects, it can be sometimes useful to check from which file is the current code is executing.
+
+### Breakpoints
+
+In the Breakpoints panel, you see and toggle all the breakpoints you placed in your code. In addition, you can toggle options to break on caught or uncaught exceptions. It allows you to examine your program state and trace back the source of an exception using the **Call stack** when one occurs.
+
+### Control execution
+
+You can control the execution flow of your program using these controls.
+
+:::image source="../media/debugger-controls.png" alt-text="VS Code debugger execution controls":::
 
 From left to right, the controls go like that:
 
@@ -39,34 +101,22 @@ From left to right, the controls go like that:
 - **Restart**. Restart your program from the beginning.
 - **Stop**. End execution and leave the debugger.
 
-## Create a launch configuration
-
-Once you're more familiar with the debugger controls, you may want to create a launch configuration for your app. Click on **create a launch.json file** in the debugger tab while the debugger is inactive, then select **Node.js**.
-
-This will create the file `.vscode/launch.json` in your project. You can then edit this file to further customize how your program should be started for debugging. By default, it creates a launch configuration to execute an `index.js` file in your project's root.
-
-:::image source="../media/vscode-launch-configuration.png" alt-text="VS Code debugger execution controls":::
-
-You can edit the path and name of your application entry point if needed. You can also click on **Add Configuration** if you want to create different launch configurations for your project.
-
-Once you have finished preparing your configurations, you can select one using the dropdown at the top of the side bar then click on the run button to start debugging.
-
-Note that you can also have buttons to edit the launch configurations and start the Node.js debug terminal if needed.
-
-:::image source="../media/vscode-debug-sidebar-controls.png" alt-text="VS Code debug side bar controls":::
-
-1. Start debugging.
-1. Select configuration.
-1. Edit `launch.json` file.
-1. Open debug terminal.
-
-## Analyze your program state
-
-### View your variables state
-
-### Watch variables
-
 ### Use debug console
 
-### Add logpoints
+The debug console can be shown or hidden using `Ctrl+Shift+Y` (Windows, Linux) or `Cmd+Shift+Y` (Mac). It can be used to visualize your application console logs, and to evaluate expressions or execute code in the current execution content, like the `exec` command in built-in Node.js debugger.
 
+You can enter a JavaScript expression in the input field at the bottom of the debug console, then press `Enter` to evaluate it. The result will be displayed directly in the console.
+
+This way, you can quickly check a variable value, test a function with different values, or alter the current state.
+
+#### Add logpoints
+
+In case you want to follow the execution of your program using logs, there is actually an alternative to using `console.log` to do just that: **logpoints**.
+
+By right-clicking in the same area used to add breakpoint, you can select **Add logpoint**:
+
+:::image source="../media/logpoint.png" alt-text="VS Code debugger execution controls":::
+
+You can enter a message to display at that point in your code. It's even possible to print expressions by enclosing them in brackets, using `{<EXPRESSION>}`.
+
+Like breakpoints, logpoints do not alter your code in any way, and will only be used during debugging. So you don't have an excuse anymore to let that forgotten `console.log('here')` slip to production.
