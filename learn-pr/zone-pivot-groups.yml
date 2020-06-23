@@ -308,11 +308,11 @@ groups:
       title: Azure Database for PostgreSQL
     - id: mysql
       title: Azure Database for MySQL   
-- id: os-linux-windows
-  title: Operating system
-  prompt: Choose your operating system
+- id: platform-windows-linux
+  title: Platform
+  prompt: Choose your platform 
   pivots:
-    - id: linux
-      title: Linux
     - id: windows
       title: Windows
+    - id: linux
+      title: Linux
