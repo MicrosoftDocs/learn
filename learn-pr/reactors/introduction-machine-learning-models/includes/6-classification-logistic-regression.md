@@ -1,10 +1,5 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-> [!NOTE]
-> **Sarah: Conversion feedback**
-> 
-> - Sarah looks into updating the dataset to change the **Sex** column header to **Gender**.
-
 We'll now pivot to discuss classification. If our simple analogy of predictive analytics was to draw a line through points and extrapolate from that, then classification can be described in its simplest form as drawing lines around groups of points.
 
 While linear regression is used to predict quantitative responses, _logistic_ regression is used for classification problems. Formally, logistic regression predicts the categorical response ($Y$) based on predictors ($X_s$). Logistic regression goes by several names. It's also known in the scholarly literature as logit regression, maximum-entropy classification (MaxEnt), and the log-linear classifier.
