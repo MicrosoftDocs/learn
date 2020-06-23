@@ -32,8 +32,9 @@ In this exercise, you'll create a real-time application to classify images on th
 9. Select the project you renamed newly.
 
    ![The illustration shows how to open the sample project.](../media/open-project.png)
-
-  > Note: If Visual Studio Code displays a dialog box indicating that no CMake kits are available, select `Do not use a kit`. You should see messages from CMake.
+  
+   > [NOTE:]
+   > If Visual Studio Code displays a dialog box indicating that no CMake kits are available, select `Do not  use a kit`. You should see messages from CMake.
 
 10. Open the CMakeList.txt in Visual Studio Code.
 

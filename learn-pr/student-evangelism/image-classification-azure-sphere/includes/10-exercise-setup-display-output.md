@@ -15,7 +15,8 @@ After installation, configure Visual Studio Code with the path to the GNU Arm Em
 
 To set up the hardware to display output from an RTApp, follow these steps. You'll need to refer to the documentation from your hardware manufacturer to determine the pin locations. If you're using hardware that follows the MT3620 reference board design (RDB) hardware, like the MT3620 Dev Kit from Seeed Studios, then looking at [the RDB interface headers](https://docs.microsoft.com/azure-sphere/hardware/mt3620-user-guide#interface-headers) may help you to determine the pin locations.
 
-  > Note: If you're not using MT3620 RDB hardware, update the [app_manifest.json file](https://docs.microsoft.com/azure-sphere/app-development/app-manifest) and the sample code to specify the correct UART, for example ISU1.
+  > [NOTE:]
+  > If you're not using MT3620 RDB hardware, update the [app_manifest.json file](https://docs.microsoft.com/azure-sphere/app-development/app-manifest) and the sample code to specify the correct UART, for example ISU1.
 
 1. Install a terminal emulator like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 2. Connect GND on the USB-to-serial adapter to GND on your dev kit. On MT3620 RDB hardware, GND is Header 3, pin 2.
