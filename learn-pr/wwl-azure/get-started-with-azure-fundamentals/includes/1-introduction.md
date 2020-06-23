@@ -2,9 +2,10 @@ Welcome to Azure and cloud computing. As a technology professional, it would be 
 
 Azure is a cloud computing platform with an ever expanding set of services to help you build solutions to meet your business goals.  Azure services range from computers running in the cloud for you to run your software, to storage, to many other capabilities like Artificial Intelligence and IoT.  Join us on this journey as we take an entry level end-to-end look at Azure and it capabilities.  Additionally, as you learn about Azure you will also be preparing yourself for the Azure Fundamentals (AZ-900) certification.
 
-This set of learning paths will take you step by step through the fundamentals of the Azure platform, and prepare you to make start building solutions.
+This set of learning paths will take you step by step through the fundamentals of the Azure platform, and prepare you to start building solutions.
 
 ## Learning objectives
+
 In this module, you will:
 
  - Explore the Azure Fundamental exam study areas.
@@ -30,4 +31,4 @@ There are no prerequisites for this set of learning paths, however students with
  - [Explore Microsoft Azure cloud concepts](https://docs.microsoft.com/learn/paths/explore-microsoft-azure-cloud-concepts?azure-portal=true).
  - [Distinguish Microsoft Azure core services](https://docs.microsoft.com/learn/paths/distinguish-microsoft-azure-core-services?azure-portal=true).
  - [Examine Microsoft Azure security, privacy, compliance, and trust](https://docs.microsoft.com/learn/paths/examine-microsoft-azure-security-privacy-compliance-trust?azure-portal=true).
- - [Review Microsoft Azure pricing and support](https://docs.microsoft.com/learn/paths/review-microsoft-azure-pricing-support?azure-portal=true).
+ - [Review Microsoft Azure pricing, service level agreements, and lifecycles](https://docs.microsoft.com/learn/paths/review-microsoft-azure-pricing-slas-lifecycles?azure-portal=true).
