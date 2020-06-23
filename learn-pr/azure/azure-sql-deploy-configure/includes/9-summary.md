@@ -20,8 +20,6 @@ For more information about the difference between data space used, data space al
 
 #### Connectivity to Azure SQL
 
-The principle of private endpoints through virtual network isolation is available for Azure SQL Database through a  **private link**, and you can learn more [here](https://docs.microsoft.com/azure/private-link/private-link-overview).
-
 More information on connectivity for Azure SQL Database can be found [here](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture) and for Azure SQL Managed Instance [here](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-connectivity-architecture). There will also be more on this topic in upcoming sections/modules.  
 
 #### Azure marketplace terms

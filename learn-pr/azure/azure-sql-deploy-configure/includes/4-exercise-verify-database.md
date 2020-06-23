@@ -32,7 +32,7 @@ Now that you've seen how Azure SQL appears in SSMS, let's explore a tool that ma
 
     ![Opening a folder in ADS](../media/openfolder.png)  
 
-    Next, navigate to where you extracted the zip file of the resources for this exercise. If you followed the prerequisites, the path should be similar to `TODOC:\Users\<machine-username>\mslearn-azuresqlfundamentals`. Once you're there, select **Select Folder**.  
+    Next, navigate to where you extracted the zip file of the resources for this exercise. If you followed the prerequisites, the path should be similar to `C:\Users\<machine-username>\mslearn-azuresqlfundamentals`. Once you're there, select **Select Folder**.  
 
     Next, select the **Explorer** icon from the left taskbar to navigate through the files in the module. Note that this zip file contains all of the resources needed for the Azure SQL Fundamentals learning path, so you only need to download and configure this once!  
 
@@ -44,4 +44,4 @@ Now that you've seen how Azure SQL appears in SSMS, let's explore a tool that ma
 
     Once you've deployed an instance of SQL (Azure SQL or SQL Server), there are typically some queries you would run to verify your deployment. In Azure SQL, some of these queries vary from SQL Server. In this step, you'll see what and how things change from SQL Server, and what is new.  
 
-    For this step, you'll use the notebook **VerifyDeployment.ipynb** which is under `TODO azuresqlworkshop\02-DeployAndConfigure\verifydeployment\VerifyDeployment.ipynb`. Navigate to that file in ADS to complete this activity, and then return here.  
+    For this step, you'll use the notebook **VerifyDeployment.ipynb** which is under `02-DeployAndConfigure\verifydeployment\VerifyDeployment.ipynb` in the GitHub repository or zip file you downloaded earlier. Navigate to that file in ADS to complete this activity, and then return here.  

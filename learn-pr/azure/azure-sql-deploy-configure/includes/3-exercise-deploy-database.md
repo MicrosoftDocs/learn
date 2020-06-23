@@ -23,8 +23,6 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
     Next, select **Single database** and click **Create**.
 
-    >**NOTE**: There are various methods to deploy a single Azure SQL Database. Our [Quickstart](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-get-started) shows options for the portal, Powershell, and Azure CLI.
-
 2. Select the Subscription, Resource group, and Database name  
 
     Select the **Subscription** and **Resource group** the sandbox provisioned (there should only be one), then enter a database name **AdventureWorksID** where ID is a unique identifier that you will use for all of your resources in this module (e.g. if you pick a unique identifier or ID `0406`, your database name would be **AdventureWorks0406**).  
@@ -178,6 +176,7 @@ You would then see a view that looks similar to the following.
 Keep that in mind as a reference for comparison as you complete the following steps.
 
 1. Locate the resource in the Azure portal to obtain the logical server name  
+
     For SSMS you'll need the server name in order to connect. You may need to refer to your Azure SQL Database server in the Azure portal to get this, e.g. *aw-server0406.database.windows.net*.  
 
     If you're new to the portal, there are a few ways you can locate resources, and depending on who you talk to, they may use a different method. Here are a few options to get you started:  

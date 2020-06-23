@@ -6,7 +6,7 @@ To complete this activity, you could use a PowerShell notebook, which is the sam
 
 In the example that follows, you'll explore the latency effects of using different connection policies in Azure SQL.  
 
-> [!NOTE] 
+> [!NOTE]
 > In PowerShell in the Azure Cloud Shell, you can use the PowerShell Az module or the Azure CLI. In this activity, you'll explore the Azure CLI, but you should know there are similar commands available for the PowerShell Az module.  
 
 1. Setup  
@@ -20,6 +20,8 @@ In the example that follows, you'll explore the latency effects of using differe
     $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup.ResourceGroupName
     $logical_server = $server.ServerName
     $resource_group = $resourceGroup.ResourceGroupName
+    $databaseName = Get-AzureRmSqlDatabase -ResourceGroupName $resourceGroup.ResourceGroupName -ServerName $logical_server | Where DatabaseName -like Adventure*
+    $databaseName = $databaseName.DatabaseName
 
     # Specify your default resource group and Azure SQL Database logical server
     az configure --defaults group=$resource_group sql-server=$logical_server
@@ -40,8 +42,6 @@ In the example that follows, you'll explore the latency effects of using differe
     There's a lot of information above. What if we just want to see specifics for the AdventureWorks database?  
 
     ```powershell
-    $databaseName = Get-AzureRmSqlDatabase -ResourceGroupName $resourceGroup.ResourceGroupName -ServerName $logical_server | Where DatabaseName -like Adventure*
-    $databaseName = $databaseName.DatabaseName
     az sql db show --name $databaseName
     ```
 
@@ -69,7 +69,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
     az sql server conn-policy show
     ```
 
-    So the results above tell us the connection type is "Default". 
+    So the results above tell you the connection type is "Default".
 
 2. Change connection policy to Proxy
 
@@ -89,7 +89,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
     ```sql
     -- Proxy
     SELECT * FROM SalesLT.Product
-    GO 20
+    GO 10
     ```
 
     After 10 trials, I had an average wait time on server replies of `46.6000`, depending on your internet connection, your results will vary. Make a note of the time you observe.  
@@ -120,7 +120,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
     ```sql
     -- Redirect
     SELECT * FROM SalesLT.Product
-    GO 20
+    GO 10
     ```
 
     After 10 trials, I have an average wait time on server replies of `25.8000`, which is almost half that of the Proxy connection policy. Remember, exact timings will vary depending on your connection, but compared to your Proxy test earlier, this time should be significantly reduced.  
