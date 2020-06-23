@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.run-cognitive-services-iot-edge.design
-title: What is a prebuilt module?
+title: Design a language detection module on IoT Edge
 metadata:
-  title: What is a prebuilt module?
-  description: In this section, we provide a definition of the prebuilt module
-  ms.date: 9/29/2019
+  title: Design a language detection module on IoT Edge
+  description: In this section, we provide the structure of detecting languages on the Edge 
+  ms.date: 6/22/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
-durationInMinutes: 4 # dummy number at present
+durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/2-design.md)]

@@ -102,9 +102,15 @@ Use the following command to connect to your virtual machine. Replace {azureuser
 ssh azureuser@{publicIpAddress}
 ```
 
+To find your IP address:
+
+1. Go to the resource group you created
+2. Click on virtual machine resource
+3. In the Overview page, you'll find your public IP address
+
 ## Checking if the IoT Edge device is configured
 
-You'll check to see that the IoT Edge security daemon is running as a system service by using iotedge commands. You need elevated privileges to run iotedge commands.
+You'll check to see that the IoT Edge security daemon is running as a system service by using **iotedge** commands. You need elevated privileges to run **iotedge** commands.
 
 You run the following commands to test the status of the IoT Edge device.
 
@@ -116,7 +122,7 @@ Your output will be:
 
  "Azure IoT Edge daemon is active (running)"
 
-Run this command to list iot edge modules
+Run this command to list IoT Edge modules
 
 ```bash
 sudo iotedge list

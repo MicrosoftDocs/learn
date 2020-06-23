@@ -24,6 +24,8 @@ First, you'll create a Cognitive Service Text Analytics that matches the contain
 
 6. In Keys and Endpoint page under Resource Management, copy the API Key 1 and endpoint.
 
+   ![The illustration shows access keys of cognitive service.](../media/keys-endpoint.png)
+
 ## Deploy Language Detection module to the edge
 
 To deploy the Language Detection container image as IoT Edge modules from the Azure Marketplace, follow the steps:
@@ -44,6 +46,8 @@ To deploy the Language Detection container image as IoT Edge modules from the Az
 
 5. Click on "LanguageDetectionContainerAzureCognitiveServices" IoT Edge module.
 
+   ![The illustration shows the container image in your device.](../media/edge-module.png)
+
 6. Navigate the **Environment Variables** and provide the following information.
 
    ​	a. Keep the value- accept for "Eula".
@@ -52,8 +56,14 @@ To deploy the Language Detection container image as IoT Edge modules from the Az
 
    ​	c. Fill out Apikey with your Cognitive Service API key.
 
+   ![The illustration shows environment variables.](../media/provide-info.png)
+
 7. Click **Update**.
+
 8. Select **Next: Routes** to  define your route. You define all messages from all modules to go to IoT Hub 
+
 9. Select **Next: Review + create**. You can preview the JSON file that defines all the modules that get deployed to your IoT Edge device.
+
 10. After you complete module deployment, you'll go back to the **IoT Edge** page of your IoT hub. Select your device from the list of IoT Edge devices to see its details.
+
 11. Scroll down and see the modules listed. Check runtime status is running for modules.
