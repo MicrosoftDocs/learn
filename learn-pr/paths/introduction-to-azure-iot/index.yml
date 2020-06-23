@@ -26,7 +26,6 @@ summary: |
     - Learn how to Configure an IoT solution for Time Series Insight
   
   Once you complete this learning path, you will have the fundamental understanding on how to build IoT solutions with Azure IoT.
-cardDescription: Interested in building end to end IoT solutions or about Azure IoT, but aren't quite sure what it can do for you? This path is the place to start.
 prerequisites: None
 iconUrl: /learn/achievements/introduction-to-azure-iot.svg
 levels:
