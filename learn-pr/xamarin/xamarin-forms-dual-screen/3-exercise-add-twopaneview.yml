@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-xamarin.dual-screen-xamarin.3-exercise-add-twopaneview
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 06/22/2020
+  author: conceptdev
+  ms.author: crdun
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+  
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-add-twopaneview.md)]
