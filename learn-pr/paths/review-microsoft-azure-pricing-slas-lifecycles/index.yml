@@ -27,6 +27,7 @@ products:
 - azure
 modules:
 - learn.wwl.get-started-with-azure-fundamentals
+- learn.wwl.examine-azure-subscriptions
 - learn.wwl.review-planning-managing-costs
 - learn.wwl.explore-azure-service-level-agreements
 - learn.wwl.examine-service-lifecycle-azure
