@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which one of the following is a role of a database administrator?"
+  - content: "Which one of the following tasks is a role of a database administrator?"
     choices:
     - content: "Backing up and restoring databases"
       isCorrect: true
@@ -27,18 +27,18 @@ quiz:
     - content: "Identifying data quality issues"
       isCorrect: false
       explanation: "That's incorrect. Data Analysts identify data quality issues."
-  - content: "Which of the following is a visualization and reporting tool?"
+  - content: "Which of the following tools is a visualization and reporting tool?"
     choices:
     - content: "SQL Server Management Studio"
       isCorrect: false
       explanation: "That's incorrect. SQL Server Management Studio (SSMS) is a graphical interface to query data, manage databases such as creation or deletion or update database and able to script automation tasks for database maintenance and support."
     - content: "Power BI"
       isCorrect: true
-      explanation: "That's correct. Power BI is a standard tool for creating very rich graphical dashboards and reports."
+      explanation: "That's correct. Power BI is a standard tool for creating rich graphical dashboards and reports."
     - content: "SQL"
       isCorrect: false
       explanation: "That's incorrect. SQL *Structured Query Language* is used to query databases and it is not a visualization and reporting tool"
-  - content: "Which one of the following is not a data job role?"
+  - content: "Which one of the following roles is not a data job role?"
     choices:
     - content: "Systems Administrator"
       isCorrect: true
