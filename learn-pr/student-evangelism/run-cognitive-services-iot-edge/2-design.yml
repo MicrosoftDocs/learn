@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.run-cognitive-services-iot-edge.design
-title: Design a Language detection module on IoT Edge
+title: Design a language detection module on IoT Edge
 metadata:
-  title: Design a Language detection module on IoT Edge
+  title: Design a language detection module on IoT Edge
   description: In this section, we provide the structure of detecting languages on the Edge 
   ms.date: 6/22/2020
   author: leestott

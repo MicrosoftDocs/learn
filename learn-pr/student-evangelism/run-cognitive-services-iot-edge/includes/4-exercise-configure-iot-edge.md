@@ -122,7 +122,7 @@ Your output will be:
 
  "Azure IoT Edge daemon is active (running)"
 
-Run this command to list iot edge modules
+Run this command to list IoT Edge modules
 
 ```bash
 sudo iotedge list
