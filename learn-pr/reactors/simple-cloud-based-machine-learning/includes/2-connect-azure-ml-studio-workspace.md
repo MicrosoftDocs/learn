@@ -16,13 +16,14 @@ To be able to use Azure Machine Learning you will need active Azure subscription
 
 ## Explore bank-marketing data
 
-Let's take a look at the data we uploaded to Azure Machine Learning. The data is essentially a set of calls made to customers of a particular bank.<sup>[1][^1]</sup> The goal of the calls was to upsell customers on a product or service. This data set contains a row for each call with the demographic infromation of the customer in all columns, except for the final column **y**. The final column indicates whether a customer ended up upgrading to the additional services or products.
+Let's take a look at the data we uploaded to Azure Machine Learning. The data is essentially a set of calls made to customers of a particular bank.<sup>[1][^1]</sup> The goal of the calls was to upsell customers on a product or service. This data set contains a row for each call with the demographic information of the customer in all columns, except for the final column **y**. The final column indicates whether a customer ended up upgrading to the additional services or products.
+
+<br>
 
 ***
 References
 
 1. _Moro, S., Cortez, P., and Rita, P. (June 2014) [A Data-Driven Approach to Predict the Success of Bank Telemarketing](http://media.salford-systems.com/video/tutorial/2015/targeted_marketing.pdf). Decision Support Systems, Elsevier, 62:22-31_
 
-***
 
 [^1]: <http://media.salford-systems.com/video/tutorial/2015/targeted_marketing.pdf> "Moro, S., Cortez, P., and Rita, P. (June 2014), *A Data-Driven Approach to Predict the Success of Bank Telemarketing*. Decision Support Systems, Elsevier, 62:22-31"
