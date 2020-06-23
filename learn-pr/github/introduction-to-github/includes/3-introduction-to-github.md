@@ -1,4 +1,4 @@
-In this exercise you use GitHub Learning Lab to tour GitHub's key features, including issues, commits, and pull requests.
+In this exercise you use GitHub Learning Lab to learn about key GitHub features, including issues, notifications, branches, commits, and pull requests.
 
 GitHub Learning Lab is an integrated experience that's easy to use. You get feedback and instructions throughout the lab as you work in your GitHub repository.
 

@@ -2,14 +2,14 @@
 uid: learn.github.introduction-to-github
 metadata:
   title: "Introduction to GitHub - Learn"
-  description: Get started with GitHub in about an hour.
+  description: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
   ms.date: 06/03/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Introduction to GitHub"
-summary: Get started with GitHub in about an hour.
+summary: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
 abstract: |
   In this module, you will:
   - Communicate with the project community in issues

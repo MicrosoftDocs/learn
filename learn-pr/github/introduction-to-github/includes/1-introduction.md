@@ -2,7 +2,7 @@ GitHub is a development platform that enables you to host and review code, manag
 
 Why is everyone building on GitHub? Because it provides the important DevOps features companies and organizations of all sizes need for their public and private projects. Whether it's planning features, fixing bugs, or collaborating on changes, GitHub is the place where the world's software developers gather to make things. And then make them better.
 
-In this module, you learn how to use the key GitHub features that are fundamental to day-to-day operations.
+In this module, you learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
 
 ## Learning objectives
 
