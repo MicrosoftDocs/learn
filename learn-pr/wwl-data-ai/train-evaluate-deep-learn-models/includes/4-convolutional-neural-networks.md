@@ -34,7 +34,7 @@ One of the most common kinds of pooling is *max pooling* in which a filter is ap
 
 ### Dropping layers
 
-One of the most difficult challenges in a CNNs the avoidance of *overfitting*, where the resulting model performs well with the training data but doesn't generalize well to new data on which it wasn't trained. One technique you can use to mitigate overfitting is to include layers in which the training process randomly eliminates (or "drops") feature maps. This may seem counterintuitive, but it's an effective way to ensure that the model doesn't learn to be over-dependent on the training images.
+One of the most difficult challenges in a CNN is the avoidance of *overfitting*, where the resulting model performs well with the training data but doesn't generalize well to new data on which it wasn't trained. One technique you can use to mitigate overfitting is to include layers in which the training process randomly eliminates (or "drops") feature maps. This may seem counterintuitive, but it's an effective way to ensure that the model doesn't learn to be over-dependent on the training images.
 
 Other techniques you can use to mitigate overfitting include randomly flipping, mirroring, or skewing the training images to generate data that varies between training epochs.
 
@@ -48,10 +48,14 @@ Usually, a CNN ends with a fully connected network in which the feature values a
 
 A basic CNN architecture might look similar to this:
 
-![A filter kernel is convolved across an image of a triangle, extracting features that emphasize the three edges and corners](../media/convolutional-neural-network.png)
+![A CNN consisting of a convolutional layer, a pooling layer, a dropping layer, a flattening layer, and a fully connected layer](../media/convolutional-neural-network.png)
 
 1. Images are fed into a convolutional layer. In this case, there are two filters, so each image produces two feature maps.
 2. The feature maps are passed to a pooling layer, where a 2x2 pooling kernel reduces the size of the feature maps.
 3. A dropping layer randomly drops some of the feature maps to help prevent overfitting.
 4. A flattening layer takes the remaining feature map arrays and flattens them into a vector.
 5. The vector elements are fed into a fully connected network, which generates the predictions. In this case, the network is a classification model that predicts probabilities for three possible image classes (triangle, square, and circle).
+
+## Training a CNN model
+
+As with any deep neural network, a CNN is trained by passing batches of training data through it over multiple epochs, adjusting the weights and bias values based on the loss calculated for each epoch. In the case of a CNN, backpropagation of adjusted weights includes filter kernel weights used in convolutional layers as well as the weights used in fully connected layers.
