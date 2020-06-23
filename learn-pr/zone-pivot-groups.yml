@@ -308,9 +308,9 @@ groups:
       title: Azure Database for PostgreSQL
     - id: mysql
       title: Azure Database for MySQL   
-- id: development-environment
-  title: Choose your development environment
-  prompt: Choose your development environment
+- id: os-linux-windows
+  title: Operating system
+  prompt: Choose your operating system
   pivots:
     - id: linux
       title: Linux
