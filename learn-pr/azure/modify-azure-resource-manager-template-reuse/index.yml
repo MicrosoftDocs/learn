@@ -33,7 +33,11 @@ units:
 - learn.modify-azure-resource-manager-template-reuse.1-introduction
 - learn.modify-azure-resource-manager-template-reuse.2-TBD
 - learn.modify-azure-resource-manager-template-reuse.3-exercise-TBD
-- learn.modify-azure-resource-manager-template-reuse.4-knowledge-check
-- learn.modify-azure-resource-manager-template-reuse.5-summary
+- learn.modify-azure-resource-manager-template-reuse.4-TBD
+- learn.modify-azure-resource-manager-template-reuse.5-exercise-TBD
+- learn.modify-azure-resource-manager-template-reuse.6-TBD
+- learn.modify-azure-resource-manager-template-reuse.7-exercise-TBD
+- learn.modify-azure-resource-manager-template-reuse.8-knowledge-check
+- learn.modify-azure-resource-manager-template-reuse.9-summary
 badge:
   uid: modify-azure-resource-manager-template-reuse.badge
