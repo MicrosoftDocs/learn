@@ -5,12 +5,11 @@ You'll make an HTTP call to the IoT Edge device that has the Cognitive Service c
 First you'll open port 5000 of the edge device.
 
 1. Go to edge device you created.
-
 2. Go to VM details then **Settings > Networking**.
-
 3. Navigate **Inbound port rule** to add an inbound security rule to open port 5000. 
-
 4. Copy the publicIPaddress of your edge device.
+
+![The illustration shows how to add inbound rule.](../media/inbound.png)
 
 Now you can query the Cognitive Service running on your IoT Edge device from any machine with a browser.
 

@@ -102,6 +102,12 @@ Use the following command to connect to your virtual machine. Replace {azureuser
 ssh azureuser@{publicIpAddress}
 ```
 
+To find your IP address:
+
+1. Go to the resource group you created
+2. Click on virtual machine resource
+3. In the Overview page, you'll find your public IP address
+
 ## Checking if the IoT Edge device is configured
 
 You'll check to see that the IoT Edge security daemon is running as a system service by using iotedge commands. You need elevated privileges to run iotedge commands.
