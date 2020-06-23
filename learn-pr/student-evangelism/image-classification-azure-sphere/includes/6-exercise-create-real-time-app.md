@@ -33,7 +33,7 @@ In this exercise, you'll create a real-time application to classify images on th
 
    ![The illustration shows how to open the sample project.](../media/open-project.png)
 
-   > Note: If Visual Studio Code displays a dialog box indicating that no CMake kits are available, select `Do not use a kit`. You should see messages from CMake.
+  > Note: If Visual Studio Code displays a dialog box indicating that no CMake kits are available, select `Do not use a kit`. You should see messages from CMake.
 
 10. Open the CMakeList.txt in Visual Studio Code.
 
@@ -44,6 +44,6 @@ In this exercise, you'll create a real-time application to classify images on th
 12. Open the app_manifest.json file and save the changes.
 
     - Set `Name` to your project name,
-    - Set `ApplicationType` to `"RealTimeCapable" `and save the changes.
+    - Set `ApplicationType` to `RealTimeCapable`and save the changes.
 
-    ![The illustration shows how to configure properties in app manifest.](../media/project-name-appmanifest-config.png)
+    ![The illustration shows how to configure properties in app manifest.](../media/project-name-app-manifest-config.png)

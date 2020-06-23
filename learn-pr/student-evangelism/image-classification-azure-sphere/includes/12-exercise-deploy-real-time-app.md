@@ -10,7 +10,7 @@ In this module, you are not using a camera to capture images. You will generate 
 
 ## Generate your image data
 
-In this exercise, you will test input image of deer. 
+In this exercise, you will test input image of deer.
 
 ![The illustration shows the input image.](../media/deer.jpg)
 
@@ -18,11 +18,11 @@ The pixel values of the image is converted by python script defined in [scripts 
 
 ![The illustration shows the python script of converting the image to pixel values.](../media/input-data.png)
 
-1. Open the deer.jpg.h file and copy the pixel values. 
+1. Open the deer.jpg.h file and copy the pixel values.
 
    ![The illustration shows pixel values converted from the image.](../media/pixel-values.png)
 
-2. Add evaluation image data in include\arm_nnexamples_cifar10_inputs.h to test. The image data is defined in the arm_nnexamples_cifar10_inputs.h. 
+2. Add evaluation image data in include\arm_nnexamples_cifar10_inputs.h to test. The image data is defined in the arm_nnexamples_cifar10_inputs.h.
 
    ![input-image-vscode](../media/input-image-vscode.png)
 
@@ -51,30 +51,29 @@ To recap label data in CIFAR10:
 
 3. The connected terminal emulator should display the following output from the ImageClassification_RTApp_MT3620_Baremetal program. You'll see the output of the CIFAR10 model.
 
-   ```
-start execution
-   input pre-processing
-conv1 img_buffer2 -> img_buffer1
-   pool1 img_buffer1 -> img_buffer2
-   conv2 img_buffer2 -> img_buffer1
-   pool2 img_buffer1 -> img_buffer2
-   conv3 img_buffer2 -> img_buffer1
-   pool3 img_buffer-> img_buffer2
-   0: 0
-   1: 0
-   2: 0
-   3: 0
-   4: 127
-   5: 0
-   6: 0
-   7: 0
-   8: 0
-   9: 0
-   Complete.
-   ```
-   
+    ```
+    start execution
+    input pre-processing
+    conv1 img_buffer2 -> img_buffer1
+    pool1 img_buffer1 -> img_buffer2
+    conv2 img_buffer2 -> img_buffer1
+    pool2 img_buffer1 -> img_buffer2
+    conv3 img_buffer2 -> img_buffer1
+    pool3 img_buffer-> img_buffer2
+    0: 0
+    1: 0
+    2: 0
+    3: 0
+    4: 127
+    5: 0
+    6: 0
+    7: 0
+    8: 0
+    9: 0
+    Complete.
+    ``` 
    With a 32x32 pixel color image as the input, which then been classified into one of the 10 output classes by the model.
    
-   As the value is the output of the softmax layer, each number denotes the probability for one of the 10 image classes. In the following case, label 4 corresponds to the "deer" label has the highest number which means the model found a deer in the input image. 
+   As the value is the output of the softmax layer, each number denotes the probability for one of the 10 image classes. In the following case, label 4 corresponds to the "deer" label has the highest number which means the model found a deer in the input image.
 
 4. Set a breakpoint somewhere in main.c and step through the application, so that you can explore the Visual Studio Code debugging features for Azure Sphere.

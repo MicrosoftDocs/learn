@@ -18,7 +18,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 2. Select and start the **Azure Sphere Developer Command Prompt**.
 
-   ![azuresphere_command](../media/azuresphere_command.png)
+   ![The illustration shows Azure Sphere Command Prompt.](../media/azuresphere-command.jpg)
 
 3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace <email@address.com> with your account and run the command.
 
@@ -34,7 +34,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 ## Create a new tenant
 
-> Note: If you have access to single tenant or multiple tenants, you can proceed to the next step.
+  > Note: If you have access to single tenant or multiple tenants, you can proceed to the next step.
 
 1. Now that you have successfully logged in, you'll create a new tenant. Type the following command. Replace <tenant_name> with name that other users can recognize. You can create only one Azure Sphere tenant with each device.
 
@@ -44,7 +44,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 2. After that, you'll be prompted to log in again for the Azure Sphere Tenant credentials.
 
-## Select the default Azure Sphere Tenant
+## Select the default Azure Sphere tenant
 
 1. If you have access to a single tenant, it will be selected by default.
 
@@ -62,9 +62,9 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 ## Claim your device
 
-> Note: If you have already claimed your Azure Sphere, you can proceed to the next step.
+  > Note: If you have already claimed your Azure Sphere, you can proceed to the next step.
 
-> Note: Claiming an Azure Sphere device is a one-time operation. You can't move the device to another Azure Tenant once it has been claimed. However, you can add additional users and roles to the Azure Sphere tenant, including users with Admin rights.
+  > Note: Claiming an Azure Sphere device is a one-time operation. You can't move the device to another Azure Tenant once it has been claimed. However, you can add additional users and roles to the Azure Sphere tenant, including users with Admin rights.
 
 1. Run the following command to claim the device.
 
@@ -72,7 +72,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
    azsphere device claim
    ```
 
-## Configure the Azure Sphere WiFi Network
+## Configure the Azure Sphere WiFi network
 
 You'll configure the Azure Sphere for networking. Hence, you can receive cloud updates from the Azure Sphere Security Service and communicate with services such as an Azure IoT Hub.
 
@@ -134,7 +134,7 @@ You'll configure the Azure Sphere for networking. Hence, you can receive cloud u
    azsphere device restart
    ```
 
-## Enable High-Level Core Device Debugging
+## Enable High-Level core device debugging
 
 1. Run the following command to enable app development on device.
 

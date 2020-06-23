@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.oxford.image-classification-azure-sphere
 metadata:
-  title: "Image Classification using Azure Sphere"
+  title: "Image classification using Azure Sphere"
   description: "University of Oxford"
   ms.date: 06/19/2020
   author: leestott
