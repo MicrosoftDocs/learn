@@ -13,8 +13,8 @@ First you'll open port 5000 of the edge device.
 
 Now you can query the Cognitive Service running on your IoT Edge device from any machine with a browser.
 
-1. Open the browser and go to **https://<your-iot-edge-device-ip-address>:5000**.
-2. Select API Description or go to **https://<your-iot-edge-device-ip-address>:5000/swagger** to get a detailed description of the API.
+1. Open the browser and go to **https://<<your-iot-edge-device-ip-address>>:5000**.
+2. Select API Description or go to **https://<<your-iot-edge-device-ip-address>>:5000/swagger** to get a detailed description of the API.
 3. **TRY OUT**
 
 | Request URL                              | Purpose                                                      |
