@@ -1,6 +1,6 @@
 Now it's time to start processing some text languages.
 
-To verify the URL endpoint for `text_analytics_base_url`, run the following:
+To verify the URL endpoint for `text_analytics_base_url`, run the following code:
 
 ```python
 language_api_url = text_analytics_base_url + "languages"
@@ -13,7 +13,7 @@ The output is:
 https://westcentralus.api.cognitive.microsoft.com/text/analytics/v2.1/languages
 ```
 
-The API requires that the payload be formatted in the form of documents containing `id` and `text` attributes:
+The API requires that the payload be formatted in the form of documents that contain `id` and `text` attributes:
 
 ```python
     { 'id': '1', 'text': 'This is a document written in English.' },
@@ -25,7 +25,7 @@ The API requires that the payload be formatted in the form of documents containi
 ]}
 ```
 
-The next lines of code call the API service using the requests library to determine the languages that were passed in from the documents:
+The next lines of code call the API service by using the requests library to determine the languages that were passed in from the documents:
 
 ```python
 headers   = {"Ocp-Apim-Subscription-Key": subscription_key}
@@ -88,11 +88,11 @@ Here's the output:
 | これは日本語で書かれた文書です。            | Japanese(1.0)              |
 ```
 
-The service did a pretty good job of identifying the languages. It did confidently identify the Danish phrase as being Norwegian, but in fairness, even linguists argue as to whether Danish and Norwegian constitute distinct languages or are dialects of the same language. (Note that Danes and Norwegians have no doubts on the subject.)
+The service did a pretty good job of identifying the languages. It did confidently identify the Danish phrase as being Norwegian. In fairness, even linguists argue whether Danish and Norwegian are distinct languages or are dialects of the same language. (Danes and Norwegians have no doubts on the subject.)
 
 ### Try it yourself
 
-Create another document set of text and use the Text Analytics API to detect the language for the text.
+Create another document set of text. Use the Azure Cognitive Services Text Analytics API to detect the language for the text.
 
 <br />
 

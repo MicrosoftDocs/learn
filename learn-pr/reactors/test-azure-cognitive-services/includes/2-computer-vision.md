@@ -1,8 +1,8 @@
-Computer vision is a hot topic in academic AI research and in business, medical, government, and environmental applications. We will explore it here by seeing firsthand how computers can tag and identify images.
+Computer vision is a hot topic in academic AI research and in business, medical, government, and environmental applications. We'll explore it here by seeing firsthand how computers can tag and identify images.
 
-Make sure you've run a `pip install` for the `azure-cognitiveservices-vision-computervision` package within your environment first. 
+Make sure you've run `pip install` for the `azure-cognitiveservices-vision-computervision` package within your environment first.
 
-The first step in using the Cognitive Services Computer Vision API is to create a client object using the` ComputerVisionClient` class.
+The first step in using the Azure Cognitive Services Computer Vision API is to create a client object by using the `ComputerVisionClient` class.
 
 Replace `ACCOUNT_ENDPOINT` with the account endpoint provided from the free trial. Replace `ACCOUNT_KEY` with the account key provided from the free trial.
 
@@ -53,7 +53,7 @@ Here's the output:
 
 ### Try it yourself
 
-How can you use the code above to also see the description by using the `VisualFeatureTypes` property?
+How can you use the previous code to also see the description by using the `VisualFeatureTypes` property?
 
 <br />
 
@@ -124,7 +124,7 @@ Space Needle
 
 ### Try it yourself
 
-How can you use the code above to predict an image of a celebrity, by using [this image](https://images.pexels.com/photos/270968/pexels-photo-270968.jpeg?azure-portal=true)? Remember that the domains were printed out earlier.
+How can you use the previous code to predict an image of a celebrity by using [this image](https://images.pexels.com/photos/270968/pexels-photo-270968.jpeg?azure-portal=true)? Remember that the domains were printed out earlier.
 
 <br />
 
@@ -160,7 +160,7 @@ How can you use the code above to predict an image of a celebrity, by using [thi
 
 ***
 
-Let's see how we can get a text description of an image using the `describe_image` method. Use `max_description`s to retrieve how many descriptions of the image the API service can find.
+Let's see how we can get a text description of an image by using the `describe_image` method. Use `max_descriptions` to retrieve how many descriptions of the image the API service can find.
 
 ```python
 domain = "landmarks"
@@ -339,14 +339,14 @@ You can find more Cognitive Services demonstrations at the following URLs:
 - [Student demos on GitHub](https://github.com/microsoft/AcademicContent/tree/master/Events%20and%20Hacks/Student%20Hacks?azure-portal=true)
 - [Cognitive Services site](https://azure.microsoft.com/services/cognitive-services/directory/?azure-portal=true)
 
-Images come in varying sizes, and there might be cases where you want to create a thumbnail of the image. For this, we need to install the Pillow library, which you can learn about at https://python-pillow.org/. Pillow is the PIL fork, or Python Imaging Library, which allows for image processing.
+Images come in varying sizes. Sometimes you might want to create a thumbnail of an image. For these cases, we need to install the Pillow library. To learn about the Pillow library, see the [Pillow website](https://python-pillow.org/). Pillow is the Python Imaging Library (PIL) fork, which allows for image processing.
 
 ```python
 # Install Pillow
 !pip install Pillow
 ```
 
-Now that the Pillow library is installed, we will import the Image module and create a thumbnail from a provided image. (Once generated, you can find the thumbnail image in your project folder.)
+Now that the Pillow library is installed, we'll import the Image module and create a thumbnail from a provided image. After it's generated, you can find the thumbnail image in your project folder.
 
 ```python
 # Pillow package
