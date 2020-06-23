@@ -8,57 +8,54 @@ The first action you need to take in order to create your cluster is to provisio
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-1. Before creating an AKS cluster, it's necessary to create an Azure Resource Group, this group will hold all of the created resources:
+1. Log in to the Azure Cloud Shell with the account you wish to deploy resources into.
+
+    > [!div class="nextstepaction"]
+    > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
+
+1. Run the following command to create a resource group that you'll use to deploy your resources into.
 
     ```azurecli
-    az group create --name contoso-aks --location eastus
+    az group create \
+        --name contoso-aks \
+        --location eastus
     ```
 
-    If the group has been created successfully, you will receive the following response:
-
-    ```json
-    {
-      "id": "/subscriptions/<guid>/resourceGroups/contoso-aks",
-      "location": "eastus",
-      "managedBy": null,
-      "name": "contoso-aks",
-      "properties": {
-        "provisioningState": "Succeeded"
-      },
-      "tags": null
-    }
-    ```
-
-    Then it's time to create the cluster.
-
-2. Creating an AKS using bash resumes in issuing a single command using Azure CLI. Open CloudShell and issue the following command:
+1. Run the following command to create an AKS cluster.
 
     ```azurecli
-    az aks create --resource-group contoso-aks --name contoso-kubernetes-cluster --node-count 3 --enable-addons http_application_routing --generate-ssh-keys --dns-name-prefix contoso-kubernetes --node-vm-size Standard_B2s
+    az aks create \
+        --resource-group contoso-aks \
+        --name contoso-kubernetes-cluster \
+        --node-count 3 \
+        --enable-addons http_application_routing \
+        --generate-ssh-keys \
+        --dns-name-prefix contoso-kubernetes \
+        --node-vm-size Standard_B2s
     ```
 
-    In this command, we're telling Azure that we want to create a new AKS cluster names `contoso-kubernetes-cluster` within the `contoso-aks` resource group. This cluster will have 3 nodes defined in the `--node-count` parameter and we'll enable the HTTP Application Routing Addon we talked about in the previous unit via the `--enable-addons` flag.
+    In this command, we're telling Azure that we want to create a new AKS cluster named `contoso-kubernetes-cluster` within the `contoso-aks` resource group. This cluster will have 3 nodes defined in the `--node-count` parameter and we'll enable the HTTP application routing addon via the `--enable-addons` flag.
 
-    We'll also tell it to generate local public and private SSH files to allow our access to the cluster if they're missing via the `--generate-ssh-keys` and we'll set the DNS name for our cluster using the `--dns-name-prefix` to `contoso-kubernetes`.
+    We'll also tell it to generate local public and private SSH files to allow our access to the cluster if they're missing via the `--generate-ssh-keys` and we'll set the DNS name for our cluster to `contoso-kubernetes` using the `--dns-name-prefix` parameter.
 
-    To finish the creation, we don't want big VMs in our cluster, let's remember what we talked about in the previous unit, a cluster is composed of several less powerful machines to work as one big machine. So let's define the size of our VMs using the `--node-vm-size`.
+    We're also specifying a small VM size of `Standard_B2s` using hte `--node-vm-size` parameter.
 
-## Link with Kubectl
+## Link with kubectl
 
-1. Link your Kubernetes cluster with `kubectl` with the following command in the CloudShell
+1. Link your Kubernetes cluster with `kubectl` by using the following command in Cloud Shell.
 
     ```azurecli
-    az aks get-credentials --name contoso-kubernetes-cluster --resource-group contoso-aks
+    az aks get-credentials \
+        --name contoso-kubernetes-cluster \
+        --resource-group contoso-aks
     ```
 
-    This command will add an entry to your `~/.kube/config` file, which holds all the information to access the clusters you've registered. This way you can manage multiple clusters in multiple places with one single command line interface.
+    This command will add an entry to your `~/.kube/config` file, which holds all the information to access the clusters you've registered. This allows you to manage multiple clusters from a single command line interface.
 
-## Test the installation
-
-1. Let's check if the cluster has been installed correctly by issuing the command:
+1. Run the following command to confirm your cluster was created successfully and that kubectl can connect to it.
 
     ```bash
     kubectl get nodes
     ```
 
-    If the cluster is correct you should receive a list of three available nodes.
+    You should receive a list of three available nodes.

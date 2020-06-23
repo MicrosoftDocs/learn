@@ -2,9 +2,9 @@ To deploy your application, you need to create and deploy an AKS cluster.
 
 [//]: # (This first paragraph will pull your reader into the unit. Try and relate the intro to the scenario from the introduction unit.)
 
-Now let's see some of the concepts behind Kubernetes and how we can better understand them.
+Let's see some of the concepts behind Kubernetes and how we can better understand them.
 
-## Kubernetes Clusters
+## Kubernetes clusters
 
 [//]: # (You're mentioning - clusters, nodes, orchestration, and benefits. However, you only mention one benefit. What is the core take away from this section that is important to the reader? To me, it seems the core concept is that a cluster is made up of nodes, and, therefore, I need to know about the correct configuration. Orchestration and benefits are covered in prerequisite material.)
 
@@ -12,12 +12,12 @@ Kubernetes is based on clusters. Instead of having a single and powerful VM, it 
 
 Clusters are based on nodes. There are two types of nodes in a Kubernetes cluster:
 
-- **Control Plane nodes**: Hosts the control plane aspects of the cluster. They're responsible for providing the API you and all the other nodes will use to communicate. No workloads are deployed or scheduled in these nodes. These nodes are reserved for services controlling the cluster, also known as the control plane.
+- **Control plane nodes**: Hosts the control plane aspects of the cluster. They're responsible for providing the API you and all the other nodes will use to communicate. No workloads are deployed or scheduled in these nodes. These nodes are reserved for services controlling the cluster, also known as the control plane.
 - **Nodes**: These nodes are responsible for executing workloads and applications.
 
 ## Cluster architectures
 
-There are several architectural considerations you have to keep in mind when deploying a Kubernetes cluster. For example, the number of nodes in a cluster should always be more than two. When a node becomes unavailable, the Kubernetes schedular will try to reschedule all the workloads that were running on this node onto the remaining nodes in the cluster.
+There are several architectural considerations you have to keep in mind when deploying a Kubernetes cluster. For example, the number of nodes in a cluster should always be more than two. When a node becomes unavailable, the Kubernetes scheduler will try to reschedule all the workloads that were running on this node onto the remaining nodes in the cluster.
 
 There are a few main cluster architectures for Kubernetes-based deployments.
 
@@ -39,26 +39,26 @@ However, if you are dealing with a production scenario, this architecture might 
 
 The single control plane and a single worker is a variant of the previous architecture and normally used as a development environment. This architecture provides only one node, hosting both the control plane and a worker node and is useful when testing or experimenting with different Kubernetes concepts. The single control plane and a single worker limit cluster scaling and makes this architecture not suitable for production and staging use.
 
-## AKS Concepts
+## AKS concepts
 
 When you create a new AKS cluster, you have several different items of information that you need to configure.  Each item impacts the final configuration of your cluster.
 
-### Node Pools
+### Node pools
 
 AKS requires you to create *node pools* to group nodes in your cluster. When you create a node pool, you have to specify the VM size to use for each node in the node pool.  Node pools use VM scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool when needed.  New nodes created in the node pool, will always be the same size as you specified when creating the node pool.
 
-### Node Count
+### Node count
 
 The node count is the number of nodes your cluster will have in a node pool. Nodes are Azure virtual machines (VMs), and you can change their size and count to match your usage pattern. 
 
 You can change this later in the cluster's configuration panel. It's also a best practice to keep this number as low as possible to avoid unnecessary costs and unused compute power.
 
-### Automatic Routing
+### Automatic routing
 
 By default, all external communications are blocked by a Kubernetes cluster. So, when deploying applications that are going to be open to the world – like the website for Contoso – we need to manually create an __Ingress__ to make an exception and allow the incoming connections to that particular service. This requires some network-related changes to forward that request to an internal IP and then to your application, which is complicated.
 
-AKS allows you to enable what is called HTTP Application Routing. This add-on makes it easy to access applications deployed to the cluster through the automatic creation of an Ingress Controller. Ingress Controllers provide the capability to deploy and expose your applications to the world without the need to configure network-related services.
+AKS allows you to enable what is called HTTP application routing. This add-on makes it easy to access applications deployed to the cluster through the automatic creation of an Ingress Controller. Ingress Controllers provide the capability to deploy and expose your applications to the world without the need to configure network-related services.
 
 Ingress Controllers create a reverse-proxy server that allows for all the requests to be served from a single DNS output automatically. You don't have to create a DNS record every time a new service is deployed, the ingress controller will take care of it. As soon as a new ingress is deployed to the cluster, the Ingress Controller will create a new record on an Azure-managed DNS zone and will link it to an existing load balancer. This allows for easy access to the resource through the Internet without the need of additional configuration.
 
-Despite the advantages, HTTP Application Routing is better suited to more basic clusters because it doesn't provide the amount of customization needed for a more complex configuration. If you are planning to deal with more complex clusters, there are better-suited options like the official Kubernetes Ingress Controller.
+Despite the advantages, HTTP application routing is better suited to more basic clusters because it doesn't provide the amount of customization needed for a more complex configuration. If you are planning to deal with more complex clusters, there are better-suited options like the official Kubernetes Ingress Controller.

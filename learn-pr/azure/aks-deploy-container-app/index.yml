@@ -11,10 +11,11 @@ metadata:
 title: Deploy a containerized application on Azure Kubernetes Service
 summary: Rapidly deploy a containerized application hosted on Azure Container Services or any other registrar to the Azure Kubernetes Services.
 abstract: |
-  In this module, you will:
+  By the end of this module, you will be able to:
   - Create and set up an Azure Kubernetes Cluster
-  - Create Kubernetes deployment and service YAML files
-  - Deploy and expose Kubernetes workloads using public images
+  - Deploy Kubernetes workloads using deployment YAML files
+  - Expose Kubernetes workloads using services and ingress
+  - Integrate Azure Container Registry to deploy container images
 prerequisites: |
   - An Azure subscription
   - Ability to use the Azure CLI
@@ -31,6 +32,7 @@ roles:
 products:
   - azure
   - azure-kubernetes-service
+  - azure-container-registry
 units:
   - learn.aks-deploy-container-app.1-introduction
   - learn.aks-deploy-container-app.2-create-aks-cluster
