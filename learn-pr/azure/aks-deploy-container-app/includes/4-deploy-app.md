@@ -49,7 +49,7 @@ First of all, it's required for you to have Docker [installed](https://docs.dock
 
 Kubernetes can only spin up an image if that image is hosted in a :::no-loc text="Container Registry":::, also called CR. :::no-loc text="Registries"::: are places where you can store your images safely in the cloud and download them later on.
 
-There are a few free-to-use CRs, but the company required that you use Azure Container Registry, or ACR. So, let's create an ACR to put our image and spin that up in our recently created Kubernetes cluster.
+There are a few free-to-use CRs, but the company required that you use Azure Container Registry, or ACR. So, let's create an Azure Container Registry to put our image and spin that up in our recently created Kubernetes cluster.
 
 1. Access the [Azure portal](https://portal.azure.com) and search for `Container Registries` in the search bar.
 
@@ -57,9 +57,9 @@ There are a few free-to-use CRs, but the company required that you use Azure Con
 
     Click on the :::no-loc text="Container Registries"::: search result
 
-1. There shouldn't be any CRs created, so click the __"Create Container Registry"__ blue button
+1. There shouldn't be any Container Registries created, so click the __"Create Container Registry"__ blue button
 
-1. In the following screen, choose the same subscription you're using to host your AKS cluster, and also the same Resource Group. Give your CR a name and set the region to the same region as the AKS cluster. Also, choose the __basic__ SKU option
+1. In the following screen, choose the same subscription you're using to host your AKS cluster, and also the same Resource Group. Give your Container Registry a name and set the region to the same region as the AKS cluster. Also, choose the __basic__ SKU option
 
     :::image type="content" source="../media/4-create-acr.png" alt-text="Create the ACR":::
 
@@ -67,7 +67,7 @@ There are a few free-to-use CRs, but the company required that you use Azure Con
 
 1. Wait for the creation to finish and click the "Go to Resource" button when it appears
 
-### Connect the AKS cluster to the ACR
+### Connect the AKS cluster to the Azure Container Registry
 
 Since we are working with a private container registry, we'll need to tell our AKS cluster to authenticate with that registry so it can download the stored images. Luckily, using both ACR and AKS this integration can be easily done.
 
@@ -89,11 +89,11 @@ Since we are working with a private container registry, we'll need to tell our A
     az aks update -n contoso-kubernetes-cluster -g contoso-aks --acr <your registry name> --enable-acr
     ```
 
-The result will be the attachment of your ACR to your AKS cluster.
+The result will be the attachment of your Azure Container Registry to your AKS cluster.
 
 ### Log in to your container registry
 
-Once the CR is created, you need to connect your local Docker runtime to the :::no-loc text="registry"::: so it can push your image to the remote destination. To do so, follow these steps:
+Once the Container Registry is created, you need to connect your local Docker runtime to the :::no-loc text="registry"::: so it can push your image to the remote destination. To do so, follow these steps:
 
 1. Open your terminal and type the following Azure CLI command:
 
@@ -101,17 +101,17 @@ Once the CR is created, you need to connect your local Docker runtime to the :::
     az acr login -n <your-registry-name>
     ```
 
-    There's no need to include the `.azurecr.io` in the name of the CR when logging in.
+    There's no need to include the `.azurecr.io` in the name of the Container Registry when logging in.
 
-    If you ever need to see your sign-in credentials, just access the ACR resource in the [Azure portal](https://portal.azurel.com) and go to the "Access keys" tab on the left-hand side:
+    If you ever need to see your sign-in credentials, just access the Azure Container Registry resource in the [Azure portal](https://portal.azurel.com) and go to the "Access keys" tab on the left-hand side:
 
     :::image type="content" source="../media/4-acr-login.png" alt-text="Check your credentials on the 'Access Keys' tab":::
 
-1. After the sign-in, your local Docker runtime should be already connected to the ACR resource.
+1. After the sign-in, your local Docker runtime should be already connected to the Azure Container Registry resource.
 
-### Push an image to the ACR
+### Push an image to the Azure Container Registry
 
-Now it's time to put everything together and push the image to the ACR you created.
+Now it's time to put everything together and push the image to the Azure Container Registry you created.
 
 1. Build the image again using the following command
 
