@@ -15,7 +15,6 @@ abstract: |
   - Build and publish a natural-language machine-learning model.
 title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
 summary: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to create a LUIS application.
-cardDescription: Introduction to adding conversational intelligence to your apps by using language understanding (LUIS)
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/create-and-publish-a-luis-model.svg
 levels: 
