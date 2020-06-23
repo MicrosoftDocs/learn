@@ -3,7 +3,7 @@ uid: learn.reactors.unsupervised-learning-clustering.3-fit-clustering-model
 title: Fit the clustering model
 metadata:
   title: Fit the clustering model
-  description: Fit the clustering model TBD.
+  description: Import and fit the k-means clustering model.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals

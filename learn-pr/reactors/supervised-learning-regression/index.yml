@@ -2,14 +2,14 @@
 uid: learn.reactors.supervised-learning-regression
 metadata:
   title: 'Supervised learning: Regression'
-  description: Learn how to TBD.
+  description: Learn about linear regression models, and how to interpret their results.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
 title: 'Supervised learning: Regression'
-summary: Learn how to TBD.
+summary: Learn about linear regression models, and how to interpret their results.
 abstract:  | 
   In this module, you will:
   - Learn to fit linear-regression models

@@ -16,8 +16,10 @@ summary: |
 
   In this learning path, you'll:
     - Learn ways to prepare data for analysis 
-    - Learn to fit linear-regression models
-    - Learn about the kinds of results obtained with the k-means algorithm
+    - Make predictive models with variations of linear regression
+    - Make predictions on non-linear data with regression
+    - Build logistic regression and support vector machine models
+    - Learn about results obtained with the k-means algorithm
 
   Complementary content for Microsoft Reactor Workshops.
   

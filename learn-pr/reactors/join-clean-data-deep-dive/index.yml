@@ -2,14 +2,14 @@
 uid: learn.reactors.join-clean-data-deep-dive
 metadata:
   title: 'Join and clean datasets: Deep dive'
-  description: Learn how to TBD.
+  description: Learn how to join and clean datasets and prepare your data for analysis.
   ms.date: 05/15/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
 title: 'Join and clean datasets: Deep dive'
-summary: Learn how to TBD.
+summary: Learn how to join and clean datasets and prepare your data for analysis.
 abstract:  | 
   In this module, you will:
   - Learn ways to prepare data for analysis

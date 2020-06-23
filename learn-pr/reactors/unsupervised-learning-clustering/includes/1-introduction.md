@@ -8,6 +8,8 @@ The k-means algorithm randomly assigns $k$ *centroids* (or geometric centers
 
 (Image courtesy of [Wikimedia Commons](https://en.wikipedia.org/wiki/File:K-means_convergence.gif?azure-portal=true) and is distributed under the terms of the [GNU Free Documentation License](https://en.wikipedia.org/wiki/GNU_Free_Documentation_License?azure-porta=true).)
 
+[!INCLUDE [Set up your environment](../includes/set-up-environment.md)]
+
 ## Learning objectives
 
 In this module, you will:
@@ -17,9 +19,9 @@ In this module, you will:
 
 ## Prerequisites
 
-- Introduction to Python **(LINK TBA)**
-- Beginners Data Science for Python Developers **(LINK TBA)**
-- Join and clean datasets: Deep dive **LINK TBA**
+- Introduction to Python
+- Beginners Data Science for Python Developers
+- Join and clean datasets: Deep dive
 - Supervised learning: Regression
 - Predict numeric values with regression
 - Predict categories with machine learning classification

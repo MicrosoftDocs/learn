@@ -12,6 +12,8 @@ The working assumption is that the relationship between the predictors and the r
 
 How do we tell that we have the best fit possible for our line? The most common means of assessing the error between the fit of our line - our model - and the data is called the [least squares method](https://en.wikipedia.org/wiki/Least_squares?azure-portal=true). This method consists of minimizing the number you get when you square the differences between your predicted values (the line) and the actual values (the data), and you add up all of those squared differences for your entire dataset.
 
+[!INCLUDE [Set up your environment](../includes/set-up-environment.md)]
+
 ## Learning objectives
 
 In this module, you will:
