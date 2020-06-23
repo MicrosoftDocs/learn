@@ -1,6 +1,6 @@
 ## Create Azure resources
 
-DevOps Projects creates a CI/CD pipeline in Azure DevOps. You firstly will need to create cloud services that will be used for the module. 
+DevOps Projects creates a CI/CD pipeline in Azure DevOps. You firstly will need to create cloud services that will be used for the module.
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 
@@ -18,16 +18,16 @@ DevOps Projects creates a CI/CD pipeline in Azure DevOps. You firstly will need 
 
 4. Review and deploy your resources to Azure
 
-> Note: If you encounter any issues in the deployment, it is advised to delete the created Resource Group (if any) and retry with a new value for the `Resource Name Suffix` parameter.
+    > Note: If you encounter any issues in the deployment, it is advised to delete the created Resource Group (if any) and retry with a new value for the `Resource Name Suffix` parameter.
 
 5. Go to Azure portal to review your resources.
 
-## Create Azure Devops project
+## Create Azure DevOps project
 
 1. If you don't have an Azure DevOps organization, you should follow the steps to create one for free.
 
    1. Open [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines) and choose **Start free**.
-   2. Sign in/up Microsoft 
+   2. Sign in/up Microsoft
    3. Give a name to your organization and create it.
 
 2. Create a new project in your organization. Give it a descriptive name and you can choose private or public. Then it will take you **Overview page** of your project.
@@ -38,7 +38,7 @@ DevOps Projects creates a CI/CD pipeline in Azure DevOps. You firstly will need 
    https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge.git
    ```
 
-4. Begin import process of the repository into your Azure DevOps project. 
+4. Begin import process of the repository into your Azure DevOps project.
 
 ## Create a CI pipeline
 
@@ -60,37 +60,37 @@ This repository contains an Azure DevOps build definition which is preconfigured
 
 ### Create build definition variables
 
-2. Now you need to add build variables in order to run the build successfully. You'll need to obtain:
+1. Now you need to add build variables in order to run the build successfully. You'll need to obtain:
 
    - Azure Container Registry host name as `acr.host`
    - Azure Container Registry username as `acr.user`
-   - Azure Container Registry password as `acr.password`. 
+   - Azure Container Registry password as `acr.password`.
 
-3. Go to Azure portal and navigate to resource group you created for this module.
+2. Go to Azure portal and navigate to resource group you created for this module.
 
-4. Select Container Registry resource and go to **Access keys** under **Settings**. 
+3. Select Container Registry resource and go to **Access keys** under **Settings**.
 
-5. Copy the name of Login server, username and password.
+4. Copy the name of Login server, username and password.
 
    ![The illustration shows the access keys of Container Registry](../media/access-keys.png)
 
-6. Also you need to obtain the Application Insights instrumentation key which will be represented by `appinsights.instrumentationkey`. 
+5. Also you need to obtain the Application Insights instrumentation key which will be represented by `appinsights.instrumentationkey`.
 
-7. Go to Azure portal and navigate to resource group you created for this module.
+6. Go to Azure portal and navigate to resource group you created for this module.
 
-8. Select the Application Insights and copy the `Instrumentation key` in the Overview page.
+7. Select the Application Insights and copy the `Instrumentation key` in the Overview page.
 
    ![The illustration shows the instrumentation key of Application Insight.](../media/instrumentation-key.png)
 
-9. Go back to Azure DevOps project and navigate to **Pipelines**.
+8. Go back to Azure DevOps project and navigate to **Pipelines**.
 
-10. Select the pipeline you run earlier and edit pipeline. Click Variables and start adding new variables.
+9. Select the pipeline you run earlier and edit pipeline. Click Variables and start adding new variables.
 
     ![The illustration shows adding new variables to the pipeline.](../media/add-variables.png)
 
-11. When you add four variables above with values, save and run the pipeline.
+10. When you add four variables above with values, save and run the pipeline.
 
-12. You review the status of pipeline by going back **Pipelines**. The build should complete successfully as shown below.
+11. You review the status of pipeline by going back **Pipelines**. The build should complete successfully as shown below.
 
     ![The illustration shows successful build.](../media/successful-build.png)
 
@@ -98,7 +98,7 @@ This repository contains an Azure DevOps build definition which is preconfigured
 
 1. With a successful build definition in place, we can now enforce continuous integration by applying a branch policy to the master branch. Start with selecting **Repos** > **Branches** then click the "..." on the row for the master branch and select "Branch policies".
 
-2. Navigate to Build validation, click "Add build policy" and select the newly created Build pipeline. Keep everything as default then click the "Save" button. 
+2. Navigate to Build validation, click "Add build policy" and select the newly created Build pipeline. Keep everything as default then click the "Save" button.
 
    ![The illustration shows the branch policy added for the pipeline.](../media/branch-policy.png)
 

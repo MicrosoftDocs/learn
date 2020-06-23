@@ -1,4 +1,6 @@
-Deployments to devices need to be done under tight control in production environments. To achieve this, you'll create a release pipeline which deploys to QA devices and smoke tests the edge runtime in a containerized device. This is accomplished by running an instance of the [azure-iot-edge-device-container](https://github.com/toolboc/azure-iot-edge-device-container) which is configured as a QA device then probing the IoT Hub to ensure that QA device receives the desired deployment configuration and is able to successfully run all configured modules. This test is contained in [edgeSmokeTest.sh](https://github.com/aysemutlu/mslearn-oxford-implement-cicd-iot-edge/blob/master/scripts/edgeSmokeTest.sh)
+# Create a new release pipeline
+
+Deployments to devices need to be done under tight control in production environments. To achieve this, you'll create a release pipeline which deploys to QA devices and smoke tests the edge runtime in a containerized device. This is accomplished by running an instance of the [azure-iot-edge-device-container](https://github.com/toolboc/azure-iot-edge-device-container) which is configured as a QA device then probing the IoT Hub to ensure that QA device receives the desired deployment configuration and is able to successfully run all configured modules. This test is contained in [edgeSmokeTest.sh](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/scripts/edgeSmokeTest.sh)
 
 1. To begin creating a release pipeline, navigate to **Pipelines** > **Releases** then create a new pipeline with an **empty job** and save it.
 
@@ -11,8 +13,6 @@ Deployments to devices need to be done under tight control in production environ
    To fix the Azure Subscription Endpoints, select **Tasks** > **Create Deployment** and provide the appropriate Azure subscription and Azure Container Registry for the "Azure IoT Edge - Push module images".
 
    ![The illustration shows issues in the deployment task.](../media/task-settings.png)
-
-   
 
    Provide the appropriate Azure subscription and Azure Container Registry for Azure IoT Edge - Deploy to IoT Edge devices" task.
 
@@ -76,6 +76,6 @@ Deployments to devices need to be done under tight control in production environ
 
 14. Navigate to **Pipelines** > Releases then select the newly created Release pipeline and Select **Create a release**.
 
-    ![create-new-release](/home/aysmtl/Desktop/create-new-release.png)
+    ![The illustration show how to create a new release pipeline.](../media/create-new-release.png)
 
 15. The new release pipeline should begin running.
