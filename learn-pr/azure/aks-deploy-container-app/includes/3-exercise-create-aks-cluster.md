@@ -2,8 +2,6 @@ Now we need to create our cluster so we can deploy Contoso's website. To do that
 
 ## Create a new cluster
 
-[//]:# (Consider the create a resource steps as used in this module - https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-virtual-machines/3-create-a-vm)
-
 The first action you need to take in order to create your cluster is to provision it within Azure. Provisioning an AKS cluster in Azure can be done in the Azure portal or through the Azure CLI.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
@@ -58,4 +56,8 @@ The first action you need to take in order to create your cluster is to provisio
     kubectl get nodes
     ```
 
+<<<<<<< HEAD
     You should receive a list of three available nodes.
+=======
+    If the cluster is correct, you should receive a list of three available nodes.
+>>>>>>> 5beb3070b... Acrolynx corrections
