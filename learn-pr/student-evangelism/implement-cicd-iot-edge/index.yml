@@ -17,8 +17,11 @@ abstract: |
 
     "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
 prerequisites: |
-    - Basic knowledge of DevOps
+    - Basic knowledge of Azure DevOps
+    - Basic knowledge of CI/CD
     - Basic knowledge of IoT Edge
+    - An active Azure subscription
+    - An active GitHub account
 iconUrl: /learn/achievements/student-evangelism/implement-cicd-for-iot-edge.svg
 badge:
   uid: learn.oxford.implement-cicd-iot-edge.badge
@@ -31,4 +34,7 @@ products:
 units:
 - learn.oxford.implement-cicd-iot-edge.introduction
 - learn.oxford.implement-cicd-iot-edge.design-cicd-pipeline-iot-edge
+- learn.oxford.implement-cicd-iot-edge.exercise-create-ci-pipeline-iot-edge
+- learn.oxford.implement-cicd-iot-edge.exercise-create-cd-pipeline-iot-edge
+- learn.oxford.implement-cicd-iot-edge.exercise-monitor-devices-app-insights
 - learn.oxford.implement-cicd-iot-edge.summary
