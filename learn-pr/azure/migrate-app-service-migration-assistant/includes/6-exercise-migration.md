@@ -53,12 +53,10 @@ First, click the link at the end of the first sentence "Switch user directory". 
 
 Once the migration is complete, you'll continue to the "Migration Results" step.  
 
-9. Minimize Remote Desktop and open the web browser on your local computer.  Navigate to the URL of your web app to validate that the migration was successful.
+11. Click [here](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to open the Azure portal in a new tab on your local computer. Select "App Service" from the home page.  From the list of deployed services, select the one that matches the name you created in step 8.  This will display the settings for your new Azure App Service.
 
-10. On your local computer, navigate to the Azure Portal and select "App Service" from the home page.  From the list of deployed services, select the one that matches the name you created in step 8.  This will display the settings for your new Azure App Service.
-
-    From here you can explore the different features of your new App Service and expierment by changing settings and viewing the logs and other diagnostic information.
+    From here you can explore the different features of your new App Service and experiment by changing settings and viewing the logs and other diagnostic information.
     
-11. Click the *Browse* button at the top of the overview page to browse to your migrated site running in Azure.
+12. Click the *Browse* button at the top of the overview page to browse to your migrated site running in Azure.
 
 Congratulations, you have successfully migrated a web app running on IIS to Azure App Service using the Azure App Service Migration Assistant. 

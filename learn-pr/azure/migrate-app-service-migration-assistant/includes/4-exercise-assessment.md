@@ -18,7 +18,7 @@ This script will wait for the previous script to complete (from the second unit)
 
 Once it is complete, you should see the credentials for the VM that was provisioned in the sandbox.
 
-2. Click [here](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to navigate to the Azure portal in a new browser tab.
+2. Click [here](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to navigate to the Azure portal in a new browser tab. Sign in with the same username and password you used to sign in to Learn to activate the sandbox.
 
 In the upper-right hand corner, under your account user name, you should see that you're logged in to the directory "Microsoft Learn Sandbox".
 
