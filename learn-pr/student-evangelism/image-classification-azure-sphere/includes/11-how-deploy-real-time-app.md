@@ -1,10 +1,10 @@
 So far, you've updated your project with required data, libraries and adjusted settings, you can start deploying your real-time image classification application to Azure Sphere.
 
-In this module, you don't use a camera to capture images, process and classify them on Azure Sphere. You'll taking any custom image and converting the image to the pixel values and you'll be feeding the pixel values as an input image into your network model. You'll evaluate the model based on the pre-defined input data. 
+In this module, you don't use a camera to capture images, process, and classify them on Azure Sphere. You'll take any custom image and converting the image to the pixel values and you'll be feeding the pixel values as an input image into your network model. You'll evaluate the model based on the pre-defined input data.
 
 The component in this unit is:
 
-**cifar-10-IMG_DATA.ipynb:** It is a Jupyter notebook available in [GitHub repository](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere/tree/master/scripts). It generates pixel values of custom image. 
+**cifar-10-IMG_DATA.ipynb:** It's a Jupyter notebook available in [GitHub repository](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere/tree/master/scripts). It generates pixel values of custom image.
 
 Steps you follow are:
 

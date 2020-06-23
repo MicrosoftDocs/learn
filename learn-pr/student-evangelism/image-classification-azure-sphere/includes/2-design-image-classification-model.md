@@ -8,7 +8,7 @@ In this module, we use the Azure Sphere MT3620 board. Note that here, you aren't
 
 You use the CIFAR-10 dataset, which has been trained with Caffe. In this unit, we explain how to fit the model to run on a resource-constrained device like a microcontroller. You need the additional step of quantization because the model needs to be small to deploy on a constrained device. The model needs to be trained and quantized from 32-bit to 8-bit. Quantization is a crucial step for being able to deploy a model on Azure Sphere. The purpose of quantization is not to improve the accuracy of the model. Quantization mainly reduces the size of the model by converting a 32-bit floating-point model to an 8-bit fixed-point model. This step has a minimal impact on the accuracy but allows the model to fit into the microcontroller. As the weights are fixed after the training, you know their min/max range. They are quantized or discretized to 256 levels using their ranges. Also, quantization improves overall compute performance. When the quantization is completed, you need to transform the model format to a C format. Hence your model will be able to deploy on Azure Sphere.
 
-Description above explains overall structure, in this module you'll use data which they've been already quantized and transformed. You'll add these data to your project sample and deploy a real-time application on Azure.
+Description above explains overall structure, in this module you'll use data that they've been already quantized and transformed. You'll add these data to your project sample and deploy a real-time application on Azure.
 
 The components you'll use are:
 
@@ -20,6 +20,6 @@ The components you'll use are:
 
 **CMSIS-NN Library:** a collection of efficient neural network kernels developed to maximize the performance and minimize the memory footprint of neural networks on Cortex-M processor cores. Reference is [ARM](https://www.keil.com/pack/doc/CMSIS_Dev/NN/html/index.html).
 
-**Hello World Real-Time Application:** This is the sample application which you'll adapt. It shows how to build a sample application for the real-time capable cores on an Azure Sphere device using Visual Studio Code.  
+**Hello World Real-Time Application:** This is the sample application that you'll adapt. It shows how to build a sample application for the real-time capable cores on an Azure Sphere device using Visual Studio Code.  
 
 To summarize, you'll modify the existing Hello World Real-Time Application project. In this module, you'll clone the sample repository, adjust configuration and update the source code. You'll also add the CMSIS-NN library into the sample project and call the library functions to be used in your project. When you run the project, the code will be deployed by taking the input image and will show the output on the terminal emulator.
