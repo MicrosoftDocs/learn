@@ -12,13 +12,13 @@ title: Introduction to machine learning models
 summary: Learn how to use machine learning models for data science operations.
 abstract: |
   In this module, you will:
-  - Learn how to make predictions by using linear regression
-  - Understand classifications with logistic regression
-  - Review classifications with decision trees
+  - Learn how to make predictions by using linear regression.
+  - Understand classifications with logistic regression.
+  - Review classifications with decision trees.
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - Review the steps to manipulate and clean data
+  - Review the steps to manipulate and clean data.
 # placeholder icon
 iconUrl: /learn/achievements/reactors/introduction-machine-learning-models.svg
 levels:

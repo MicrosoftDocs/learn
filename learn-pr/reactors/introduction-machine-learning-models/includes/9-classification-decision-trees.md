@@ -2,7 +2,7 @@ If logistic regression uses observations about variables to swing a metaphorical
 
 :::image type="content" alt-text="A decision tree graph." source="../media/decision-tree.png" loc-scope="azure":::
 
-Let's look at this in practice with the same _Titanic_ dataset we used with logistic regression.
+Let's look at decision tree classification in practice with the same _Titanic_ dataset we used with logistic regression.
 
 ```python
 from sklearn import tree
@@ -45,7 +45,7 @@ Using the same split data as with the logistic regression, can you fit the decis
 
 ***
 
-After it's fitted, we get our predicitions just like we did in the logistic regression example above:
+After the decision tree model is fitted, we get our predictions like we did in the previous logistic regression example:
 
 ```python
 tr_predictions = tr.predict(X_test)
@@ -79,7 +79,7 @@ The output is:
 0.7425373134328358
 ```
 
-One of the great attractions of decision trees is that the models are readable by humans. Let's visualize to see it in action. (Note that the generated graphic can be quite large, so scroll to the right if the generated graphic just looks blank at first.)
+One of the great attractions of decision trees is that people can read the models. Let's visualize to see it in action. The generated graphic can be large, so scroll to the right if the generated graphic looks blank at first.
 
 ```python
 import graphviz 
@@ -96,4 +96,4 @@ The output is:
 
 :::image type="content" alt-text="A decision tree graph." source="../media/output-graphviz-tree.png" loc-scope="azure":::
 
-There are, of course, myriad other ML models that we could explore. However, you now know some of the most commonly encountered ones, which is great preparation to understand what automated, cloud-based ML and AI services are doing and how to intelligently apply them to data-science problems, the subject of the next section.
+There are many other machine learning (ML) models that we could explore. You learned about some of the most common models. Now you're ready to learn what automated, cloud-based ML and AI services are doing and how to intelligently apply them to data-science problems. This subject is discussed in the next section.

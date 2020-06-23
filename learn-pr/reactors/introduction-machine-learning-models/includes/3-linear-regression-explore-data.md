@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
-And now for our data. In this case, we’ll use a newer housing dataset than the Boston Housing Dataset we used in the last section (with this one storing data on individual houses across the United States).
+And now for our data. In this case, we'll use a newer housing dataset than the Boston Housing Dataset we used in the last section. This dataset stores data on individual houses across the United States.
 
 ```python
 df = pd.read_csv('./Data/Housing_Dataset_Sample.csv')
@@ -42,7 +42,7 @@ Do you remember the `DataFrames` method for looking at overall information about
 
 <details> 
 
-  <summary>Hint<i>(expand to reveal)</i></summary>
+  <summary>Hint<i> (expand to reveal)</i></summary>
 
   Here's the input:
 
@@ -75,7 +75,7 @@ Do you remember the `DataFrames` method for looking at overall information about
 
 ***
 
-Let's also use the `describe` method to look at some of the vital statistics about the columns. Note that in cases like this, in which some of the column names are long, it can be helpful to view the transposition of the summary, like so:
+Let's also use the `describe` method to look at some of the vital statistics about the columns. When column names are long, it helps to view the transposition of the summary, like so:
 
 ```python
 df.describe().T
@@ -113,7 +113,7 @@ Let's look at the data in the **Price** column:
 sns.distplot(df['Price'])
 ```
 
-If the `distplot` command produces a deprecation warning, you can disregard the message:
+If the `distplot` command produces a deprecation warning, disregard the message:
 
 ```Output
 /home/nbuser/anaconda3_420/lib/python3.5/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
@@ -134,14 +134,14 @@ Now, let's look at a simple relationship like that between house prices and the 
 sns.jointplot(df['Avg. Area Income'],df['Price'])
 ```
 
-If the `jointplot` command produces a deprecation warning, you can disregard the message:
+If the `jointplot` command produces a deprecation warning, disregard the message:
 
 ```Output
 /home/nbuser/anaconda3_420/lib/python3.5/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
   return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
 ```
 
-As we would expect, there is an intuitive, linear relationship between them:
+As we would expect, there's an intuitive, linear relationship between them:
 
 ```Output
 <seaborn.axisgrid.JointGrid at 0x7f58fcf839e8>
@@ -149,7 +149,7 @@ As we would expect, there is an intuitive, linear relationship between them:
 
 :::image type="content" alt-text="A distribution graph showing the joint plot output for data in the Average area income column and the Price column." source="../media/output-joint-plot-1.png" loc-scope="azure":::
 
-Also good: the pairplot shows that the data in both columns is normally distributed, so we don't have to worry about somehow transforming the data for meaningful analysis.
+Because the pair plot shows that the data in both columns is normally distributed, we don't have to worry about somehow transforming the data for meaningful analysis.
 
 Let's take a quick look at all of the columns:
 
@@ -165,7 +165,7 @@ sns.pairplot(df)
 
 Some observations:
 
-- Not all of the combinations of columns provide strong linear relationships; some just look like blobs. That's nothing to worry about for our analysis.
-- See the visualizations that look like lanes rather than organic groups? That is the result of the average number of bedrooms in houses being measured in discrete values rather than continuous ones (as no one has 0.3 bedrooms in their house). The number of bathrooms is also the one column whose data is not really normally distributed, though some of this might be distortion caused by the default bin size of the pairplot histogram functionality.
+- Not all of the combinations of columns provide strong linear relationships. Some just look like blobs. That's nothing to worry about for our analysis.
+- Do you see the visualizations that look like lanes rather than organic groups? That's the result of the average number of bedrooms in houses being measured in discrete values rather than continuous ones (because no one has 0.3 bedrooms in their house). The number of bathrooms is also the one column whose data isn't normally distributed. This distortion might be caused by the default bin size of the pair plot histogram functionality.
 
 Now it's time to make a prediction.

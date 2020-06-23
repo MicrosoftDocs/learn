@@ -1,11 +1,11 @@
-Now we need to address missing values. First, let’s look to see which columns have more than half of their values missing:
+Now we need to address missing values. First, let's look to see which columns have more than half of their values missing:
 
 ```python
 # Missing values
 df.isnull().sum()>(len(df)/2)
 ```
 
-The output is: 
+The output is:
 
 ```Output
 PassengerId    False
@@ -21,15 +21,15 @@ Embarked       False
 dtype: bool
 ```
 
-Let's break down the code in the call above just a bit. `df.isnull().sum()` tells pandas to take the sum of all of the missing values for each column. `len(df)/2` is just another way of expressing half the number of rows in the `DataFrame`. Taken together with the angle bracket symbol `>`, this line of code is looking for any columns with more than half of its entries missing, and there is one: **Cabin**.
+Let's break down the code in the call just a bit. The `df.isnull().sum()` portion tells pandas to take the sum of all of the missing values for each column. And `len(df)/2` is another way of expressing half the number of rows in `DataFrame`. Taken together with the angle bracket symbol `>`, this line of code looks for any columns with more than half of their entries missing. One column meets this criteria, and it's **Cabin**.
 
-We could try to do something about those missing values. However, if any pattern does emerge in the data that involves **Cabin**, it will be highly cross-correlated with both **Pclass** and **Fare** (as higher-fare, better-class accommodations were grouped together on the _Titanic_). Given that too much cross-correlation can be detrimental to a model, it is probably just better for us to drop **Cabin** from our `DataFrame`:
+We could try to do something about those missing values. But if any pattern emerges in the data that involves **Cabin**, it will be highly cross-correlated with both **Pclass** and **Fare**. This situation occurs because higher-fare, better-class accommodations were grouped together on the _Titanic_. Given that too much cross-correlation can be detrimental to a model, it's probably better for us to drop **Cabin** from `DataFrame`:
 
 ```python
 df.drop('Cabin',axis=1,inplace=True)
 ```
 
-Let's now run `info` to see if there are columns with just a few null values.
+Now let's run `info` to see if there are columns with only a few null values.
 
 ```python
 df.info()
@@ -54,15 +54,15 @@ dtypes: float64(2), int64(5), object(2)
 memory usage: 62.8+ KB
 ```
 
-One note on the data: given that 1,503 died in the _Titanic_ tragedy (and that we know that some survived), this data set clearly does not include every passenger on the ship (and none of the crew). Also remember that **Survived** is a variable that includes both those who survived and those who perished.
+Note this point about the data. Given that 1,503 people died in the _Titanic_ tragedy, and that we know that some people survived, this dataset clearly doesn't include every passenger on the ship. Also, the dataset includes none of the crew. Remember that **Survived** is a variable that includes both the people who survived and the people who perished.
 
-Back to missing values. **Age** is missing several values, as is **Embarked**. Let's see how many values are missing from **Age**:
+Let's return to missing values. The **Age** column is missing several values, and so is **Embarked**. Let's see how many values are missing from **Age**:
 
 ```python
 df['Age'].isnull().value_counts()
 ```
 
-The output is: 
+The output is:
 
 ```Output
 False    714
@@ -70,13 +70,13 @@ True     177
 Name: Age, dtype: int64
 ```
 
-As we saw above, **Age** isn't really correlated with **Fare**, so it is a variable that we want to eventually use in our model. That means that we need to do something with those missing values. But we before we decide on a strategy, we should check to see if our median age is the same for both genders.
+As we saw, **Age** doesn't correlate with **Fare**, so it's a variable that we want to eventually use in our model. That means that we need to do something with those missing values. Before we decide on a strategy, we should check to see if our median age is the same for both genders.
 
 ```python
 df.groupby('Gender')['Age'].median().plot(kind='bar')
 ```
 
-The output is: 
+The output is:
 
 ```Output
 <matplotlib.axes._subplots.AxesSubplot at 0x1aeb58d0ec8>
@@ -90,13 +90,13 @@ The median ages are different for men and women sailing on the _Titanic_, which 
 df['Age'] = df.groupby('Gender')['Age'].apply(lambda x: x.fillna(x.median()))
 ```
 
-Any other missing values?
+Are there any other missing values?
 
 ```python
 df.isnull().sum()
 ```
 
-The output is: 
+The output is:
 
 ```Output
 PassengerId      0
@@ -112,13 +112,13 @@ Embarked         2
 dtype: int64
 ```
 
-We are missing two values for **Embarked**. Check to see how that variable breaks down:
+We're missing two values for **Embarked**. Check to see how that variable breaks down:
 
 ```python
 df['Embarked'].value_counts()
 ```
 
-The output is: 
+The output is:
 
 ```Output
 S    644
@@ -127,14 +127,14 @@ Q     77
 Name: Embarked, dtype: int64
 ```
 
-The vast majority of passengers embarked on the _Titanic_ from Southampton, so we will just fill in those two missing values with the most statistically likely value (the median result): Southampton.
+The vast majority of passengers embarked on the _Titanic_ from Southampton. We'll fill in the two missing values with the most statistically likely value (the median result), which is Southampton.
 
 ```python
 df['Embarked'].fillna(df['Embarked'].value_counts().idxmax(), inplace=True)
 df['Embarked'].value_counts()
 ```
 
-The output is: 
+The output is:
 
 ```Output
 S    646
@@ -166,13 +166,13 @@ df.head()
 -------------------------------------------------------------------------------------------------------------------
 ```
 
-Let's do a final look at the correlation matrix to see if there is anything else we should remove.
+Let's take a final look at the correlation matrix to see if there's anything else we should remove.
 
 ```python
 df.corr()
 ```
 
-The output is: 
+The output is:
 
 ```Output
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -200,7 +200,7 @@ The output is:
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
-**Pclass** and **Fare** have some amount of correlation, we can probably get rid of one of them. In addition, we need to remove **Survived** from our **X** `DataFrame` because it will be our response `DataFrame`, **Y**:
+**Pclass** and **Fare** have some amount of correlation, so we can probably get rid of one of them. In addition, we need to remove **Survived** from our **X** `DataFrame` because it will be our response `DataFrame`, **Y**:
 
 ```python
 X = df.drop(['Survived','Pclass'],axis=1)
@@ -217,7 +217,7 @@ from sklearn.model_selection import train_test_split
 
 Review how we used `train_test_split` in the [Linear regression: Fitting the model](../4-linear-regression-fit-model.yml?azure-portal=true) unit.
 
-Set `test_size = 0.3` and `random_state = 67` to get the same results as below when you run through the rest of the code example.
+Set `test_size = 0.3` and `random_state = 67` to get the same results as here when you run through the rest of the code example.
 
 <details> 
 
@@ -237,7 +237,7 @@ Set `test_size = 0.3` and `random_state = 67` to get the same results as below w
 
 ***
 
-Now you will import and fit the logistic regression model.
+Now you'll import and fit the logistic regression model.
 
 Here's the input:
 
@@ -256,7 +256,7 @@ LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                  warm_start=False)
 ```
 
-And then you will save the predictions to compare with the y_test values (aka the true output).
+And then you'll save the predictions to compare with the y_test values (also known as the true output).
 
 ```python
 predictions = lr.predict(X_test)
