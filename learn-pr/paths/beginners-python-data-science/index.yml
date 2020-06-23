@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-reactors
 title: Beginners data science for Python developers
 summary: |
-  Welcome to the Beginners data science for Python developers learning path. The content in this learning path pairs with in-person workshops that run in Microsoft Reactors and are stand-alone learning resources. You don't have to come to a workshop to benefit from these modules.
+  Welcome to the *Beginners data science for Python developers* learning path. The content in this learning path pairs with in-person workshops that run in Microsoft Reactors and are stand-alone learning resources. You don't have to come to a workshop to benefit from these modules.
   Throughout this learning path, we encourage you to test out Python code in Visual Studio Code by using the Python extension and Jupyter Notebooks.
   
   In this learning path, you'll:
