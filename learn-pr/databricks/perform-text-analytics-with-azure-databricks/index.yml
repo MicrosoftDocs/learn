@@ -11,7 +11,6 @@ metadata:
   ms.prod: learning-azure
 title: Perform text analytics with Azure Databricks
 summary: In this module, you will investigate techniques for developing machine learning models used in text analytics. You will do this by applying two different text analytics scenarios demonstrating some of its most important aspects - movie classification and claim classification.
-cardDescription: Investigate techniques for developing machine learning models used in text analytics
 abstract: | 
   In this module, you will:
   - Identify the different techniques for performing text analytics using Azure Databricks.
