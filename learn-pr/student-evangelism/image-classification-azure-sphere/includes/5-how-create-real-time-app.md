@@ -2,11 +2,11 @@ To create a new real-time application, you'll simply start with the [HelloWorld_
 
 You use the following components:
 
-**Azure Sphere samples repository:** This repository contains samples for the Azure Sphere platform. 
+- **Azure Sphere samples repository:** This repository contains samples for the Azure Sphere platform. 
 
-**HelloWorld_RTApp_MT3620_BareMetal:** This sample demonstrates how to create, deploy, and run MT3620 real-time capable applications. In this unit, you'll make a copy of this project and modify it as required.
+- **HelloWorld_RTApp_MT3620_BareMetal:** This sample demonstrates how to create, deploy, and run MT3620 real-time capable applications. In this unit, you'll make a copy of this project and modify it as required.
 
-**Visual Studio Code**: is a source-code editor. You use Visual Studio Code as a development tool for the IoT device.
+- **Visual Studio Code**: is a source-code editor. You use Visual Studio Code as a development tool for the IoT device.
 
 The steps you'll follow:
 

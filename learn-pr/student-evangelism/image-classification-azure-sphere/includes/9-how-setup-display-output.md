@@ -21,6 +21,7 @@ The steps you will follow:
 3. Connect USB-to-serial adapter to your computer
 4. Start your terminal emulator
 
-When you deploy your image classification app to Azure Sphere, the app transmits the output message over a UART. These messages can be read in terminal application on a computer using a USB-to-serial adapter. 
-Note: By default, it uses the real-time core's dedicated UART, but if your hardware doesn't expose this UART's TX pin, then the sample can be altered to use a different UART.
+When you deploy your image classification app to Azure Sphere, the app transmits the output message over a UART. These messages can be read in terminal application on a computer using a USB-to-serial adapter.
 
+> [!NOTE]
+> By default, it uses the real-time core's dedicated UART, but if your hardware doesn't expose this UART's TX pin, then the sample can be altered to use a different UART.

@@ -1,3 +1,4 @@
+
 Connect your Azure Sphere dev kit to your PC through USB. When plugged in, the device exposes three COM ports. Open Device Manager on PC and make sure that three COM ports are installed. COM ports may be different from those in the figure.
 
 ![This illustration shows com ports in device manager.](../media/comports.png)
@@ -18,7 +19,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 2. Select and start the **Azure Sphere Developer Command Prompt**.
 
-   ![The illustration shows Azure Sphere Command Prompt.](../media/azuresphere-command.jpg)
+   ![The illustration shows Azure Sphere Command Prompt.](../media/azure-sphere-command.jpg)
 
 3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace <email@address.com> with your account and run the command.
 

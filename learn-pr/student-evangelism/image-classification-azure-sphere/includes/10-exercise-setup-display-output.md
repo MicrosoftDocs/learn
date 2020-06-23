@@ -1,6 +1,6 @@
 You'll use a USB-to-serial adapter to connect the UART on the real-time core to a USB port on your machine and set up your hardware to display output.
 
-### RT core toolchain
+## RT core toolchain
 
 The Visual Studio extension for Azure Sphere includes the compiler that is required for the ARM Cortex-M4 processors on the real-time capable cores. 
 

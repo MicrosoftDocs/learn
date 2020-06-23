@@ -6,15 +6,15 @@ In this module, you work with CIFAR10 image classification model. Your model is 
 
 The components for this unit:
 
-**Microsoft sample image classification repository:** It contains real-time sample image classification application running on Azure Sphere.
+- **Microsoft sample image classification repository:** It contains real-time sample image classification application running on Azure Sphere.
 
-**CMSIS-NN:** is a software library, a collection of optimized neural network functions for Cortex-M core microcontrollers. It's developed to maximize the performance and minimize the memory footprint of neural networks on Cortex-M processor cores. It enables neural networks and machine learning being pushed into the end node of IoT applications. It's available in [project folder](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere/tree/master/CMSISNN-Cifar10).
+- **CMSIS-NN:** is a software library, a collection of optimized neural network functions for Cortex-M core microcontrollers. It's developed to maximize the performance and minimize the memory footprint of neural networks on Cortex-M processor cores. It enables neural networks and machine learning being pushed into the end node of IoT applications. It's available in [project folder](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere/tree/master/CMSISNN-Cifar10).
 
 It has implemented popular neural network layer types, such as convolution, depth separable convolution, fully connected, polling, and activation. With its utility functions, it's also possible to construct more complex NN modules, such as LSTM and GRU.
 
-**arm_nn_examplescifar10_weights.h:** Quantized weights and bias. It's available in [project folder](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere/tree/master/CMSISNN-Cifar10).
+- **arm_nn_examplescifar10_weights.h:** Quantized weights and bias. It's available in [project folder](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere/tree/master/CMSISNN-Cifar10).
 
-**arm_nn_examplescifar10_parameter.h:** Quantized bias, out shift values. It's available in [project folder](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere/tree/master/CMSISNN-Cifar10).
+- **arm_nn_examplescifar10_parameter.h:** Quantized bias, out shift values. It's available in [project folder](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere/tree/master/CMSISNN-Cifar10).
 
 The steps you'll follow for this unit:
 

@@ -12,14 +12,14 @@ Description above explains overall structure, in this module you'll use data tha
 
 The components you'll use are:
 
-**Azure Sphere MT3620 Board:** MT3620 is the first Azure Sphere certified MCU. Azure Sphere certified MCUs are a new class of secured, connected crossover microcontrollers.
+- **Azure Sphere MT3620 Board:** MT3620 is the first Azure Sphere certified MCU. Azure Sphere certified MCUs are a new class of secured, connected crossover microcontrollers.
 
-**CIFAR-10 dataset:** consists of 60,000, 32x32 color images in the 10 classes. Reference documentation is [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html).
+- **CIFAR-10 dataset:** consists of 60,000, 32x32 color images in the 10 classes. Reference documentation is [CIFAR](https://www.cs.toronto.edu/~kriz/cifar.html).
 
-**Neural network:** We use a 3-layer trained convolutional neural network.
+- **Neural network:** We use a 3-layer trained convolutional neural network.
 
-**CMSIS-NN Library:** a collection of efficient neural network kernels developed to maximize the performance and minimize the memory footprint of neural networks on Cortex-M processor cores. Reference is [ARM](https://www.keil.com/pack/doc/CMSIS_Dev/NN/html/index.html).
+- **CMSIS-NN Library:** a collection of efficient neural network kernels developed to maximize the performance and minimize the memory footprint of neural networks on Cortex-M processor cores. Reference is [ARM](https://www.keil.com/pack/doc/CMSIS_Dev/NN/html/index.html).
 
-**Hello World Real-Time Application:** This is the sample application that you'll adapt. It shows how to build a sample application for the real-time capable cores on an Azure Sphere device using Visual Studio Code.  
+- **Hello World Real-Time Application:** This is the sample application that you'll adapt. It shows how to build a sample application for the real-time capable cores on an Azure Sphere device using Visual Studio Code.  
 
 To summarize, you'll modify the existing Hello World Real-Time Application project. In this module, you'll clone the sample repository, adjust configuration and update the source code. You'll also add the CMSIS-NN library into the sample project and call the library functions to be used in your project. When you run the project, the code will be deployed by taking the input image and will show the output on the terminal emulator.
