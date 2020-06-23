@@ -1,6 +1,6 @@
 This unit explains the creation of a Text Analytics resource, the creation, and deployment of an associated Language Detection module.
 
-Before you start deploying the Language Detection module, you firstly need to create a Cognitive Service in the cloud; then, you'll configure the Cognitive Service API to the Language Detection containerised module and deploy it to the edge device. To configure Text Analytics API to the containerised module, you'll need an API key, Endpoint.
+Before you start deploying the Language Detection module, you firstly need to create a Cognitive Service in the cloud; then, you'll configure the Cognitive Service API to the Language Detection containerized module and deploy it to the edge device. To configure Text Analytics API to the containerized module, you'll need an API key, Endpoint.
 
 The component you'll use:
 
