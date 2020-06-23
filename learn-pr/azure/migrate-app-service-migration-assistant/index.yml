@@ -34,6 +34,7 @@ units:
 - learn.azure.migrate-app-service-migration-assistant.exercise-assessment
 - learn.azure.migrate-app-service-migration-assistant.understand-migration
 - learn.azure.migrate-app-service-migration-assistant.exercise-migration
+- learn.azure.migrate-app-service-migration-assistant.knowledge-check
 - learn.azure.migrate-app-service-migration-assistant.summary
 
 badge:
