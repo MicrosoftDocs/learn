@@ -17,9 +17,11 @@ In this module, you will:
 
 ## Prerequisites
 
-- Introduction to Python **(LINK TBA)**
-- Beginners Data Science for Python Developers **(LINK TBA)**
-- Join and clean datasets: Deep dive **LINK TBA**
+- Introduction to Python
+- Beginners Data Science for Python Developers
+- Join and clean datasets: Deep dive
 - Supervised learning: Regression
 - Predict numeric values with regression
 - Predict categories with machine learning classification
+
+[!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]

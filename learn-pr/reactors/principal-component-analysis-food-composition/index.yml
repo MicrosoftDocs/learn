@@ -9,7 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   show_latex: true
-  hidden: true
 title: Principal component analysis with food composition
 summary: Learn how to use principal component analysis (PCA) to learn about the contents of a food nutrition dataset.
 abstract:  | 
@@ -23,6 +22,7 @@ prerequisites: |
   - Text classification with Naive Bayes
   
 iconUrl: /learn/achievements/reactors/principal-component-analysis-food-composition.svg
+hidden: true
 levels:
 - beginner
 roles:

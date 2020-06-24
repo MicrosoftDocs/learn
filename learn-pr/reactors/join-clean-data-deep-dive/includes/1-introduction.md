@@ -14,5 +14,7 @@ In this module, you will:
 
 ## Prerequisites
 
-- Introduction to Python **(LINK TBA)**
-- Beginners Data Science for Python Developers **(LINK TBA)**
+- Introduction to Python
+- Beginners Data Science for Python Developers
+
+[!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]

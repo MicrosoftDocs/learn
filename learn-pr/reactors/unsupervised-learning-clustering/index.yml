@@ -25,6 +25,7 @@ prerequisites: |
   - Predict categories with machine learning classification
   
 iconUrl: /learn/achievements/reactors/unsupervised-learning-clustering.svg
+hidden: true
 levels:
 - beginner
 roles:
