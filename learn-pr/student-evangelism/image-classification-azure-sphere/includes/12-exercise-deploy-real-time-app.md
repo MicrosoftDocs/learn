@@ -6,11 +6,11 @@ Make sure that:
 - Your Azure Sphere device is connected to the internet.
 - You have set up your development environment.
 
-In this module, you are not using a camera to capture images. You will generate your input image by converting the images to pixel values using python script.
+In this module, you aren't using a camera to capture images. You'll generate your input image by converting the images to pixel values using python script.
 
 ## Generate your image data
 
-In this exercise, you will test input image of deer.
+In this exercise, you'll test input image of deer.
 
 ![The illustration shows the input image.](../media/deer.jpg)
 
@@ -32,18 +32,18 @@ The pixel values of the image are converted by python script defined in [scripts
 
 To recap label data in CIFAR10:
 
-- airplane : 0
-- automobile : 1
-- bird : 2
-- cat : 3
-- deer : 4
-- dog : 5
-- frog : 6
-- horse : 7
-- ship : 8
-- truck : 9
+- airplane: 0
+- automobile: 1
+- bird: 2
+- cat: 3
+- deer: 4
+- dog: 5
+- frog: 6
+- horse: 7
+- ship: 8
+- truck: 9
 
-1. Press **F5** to debug the project. If the project has not previously been built, or if files have changed and rebuild is required, Visual Studio Code will build the project before debugging starts.
+1. Press **F5** to debug the project. If the project hasn't previously been built, or if files have changed and rebuild is required, Visual Studio Code will build the project before debugging starts.
 
 2. The Azure Sphere output window should show "Deploying image..." followed by the paths to the SDK and compiler.
 
@@ -72,6 +72,6 @@ To recap label data in CIFAR10:
     ``` 
    With a 32x32 pixel color image as the input, which then been classified into one of the 10 output classes by the model.
    
-   As the value is the output of the softmax layer, each number denotes the probability for one of the 10 image classes. In the following case, label 4 corresponds to the "deer" label has the highest number which means the model found a deer in the input image.
+   As the value is the output of the softmax layer, each number denotes the probability for one of the 10 image classes. In the following case, label 4 corresponds to the "deer" label has the highest number that means the model found a deer in the input image.
 
 4. Set a breakpoint somewhere in main.c and step through the application, so that you can explore the Visual Studio Code debugging features for Azure Sphere.
