@@ -23,7 +23,7 @@ In this task, we will configure Cloud Shell.
 
 5. When prompted, click **Create storage**, and wait for the Azure Cloud Shell to initialize. 
 
-### Task 2: Verify the [sandbox resource group name] resource group exists, and Create virtual machine
+### Task 2: Verify the <rgn>[sandbox resource group name]</rgn> resource group exists, and Create virtual machine
 
 In this task, we will use PowerShell to create a resource group and a virtual machine.  
 
@@ -39,7 +39,7 @@ In this task, we will use PowerShell to create a resource group and a virtual ma
 
     ```PowerShell
     New-AzVm `
-    -ResourceGroupName "[sandbox resource group name]" `
+    -ResourceGroupName "<rgn>[sandbox resource group name]</rgn>" `
     -Name "myVMPS" `
     -Location "West US" `
     -VirtualNetworkName "myVnetPS" `
@@ -73,7 +73,7 @@ In this task, we will practice executing PowerShell commands from the Cloud Shel
 4. Stop the virtual machine. When prompted confirm (Yes) to the action. 
 
     ```PowerShell
-    Stop-AzVM -ResourceGroupName [sandbox resource group name] -Name myVMPS
+    Stop-AzVM -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name myVMPS
     ```
 
 5. Verify your virtual machine state. The PowerState should now be **deallocated**. You can also verify the virtual machine status in the portal. 
