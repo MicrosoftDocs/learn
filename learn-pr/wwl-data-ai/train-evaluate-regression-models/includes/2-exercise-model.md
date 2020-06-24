@@ -1,4 +1,4 @@
-Calculating a regression line for a simple binomial (two-variable) function from first principles is possible, but involves some mathematical effort. When you consider a real-world dataset in which ***x*** is not a single feature value such as temperature, but a vector of multiple variables such as temperature, day of week, month, rainfall, and so on; and the calculations become more complex.
+Calculating a regression line for a simple binomial (two-variable) function from first principles is possible, but involves some mathematical effort. When you consider a real-world dataset in which ***x*** is not a single feature value such as temperature, but a vector of multiple variables such as temperature, day of week, month, rainfall, and so on; the calculations become more complex.
 
 For this reason, data scientists generally use specialized machine learning frameworks to perform model training and evaluation. Such frameworks encapsulate common algorithms and provide useful functions for preparing data, fitting data to a model, and calculating model evaluation metrics.
 
