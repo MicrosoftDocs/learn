@@ -25,7 +25,7 @@ If you're familiar with SQL Server, there are a few configurations that are rest
 * Stopping or restarting servers
 * Instant file initialization
 * Locked pages in memory
-* FILESTREAM and Availability Groups
+* FILESTREAM and Availability Groups (we use Availability Groups internally)
 * Server collation (in MI you can select during deployment but not change)
 * Startup parameters
 * Error reporting and customer feedback
@@ -34,15 +34,17 @@ If you're familiar with SQL Server, there are a few configurations that are rest
 * Logon audit is done through SQL Audit
 * Server Proxy account is N/A
 
+Azure SQL Managed Instance and Database are PaaS offerings so restricting these choices should not inhibit your ability to fully use a SQL Server managed service.
+
 ## Space management
 
-For Azure SQL Managed Instance, there is a maximum storage allowed for the instance and the number of vCores is going to affect the maximum storage (for example, the Business critical tier has a lower maximum storage). If you reach the maximum, you may get Message 1105 for a managed database or Message 1133 for the instance. Upon creation of a database, they are created as the model default size which is 100Mb/8Mb and is configurable. You have the ability to alter the size as well as the number of files, but you do not have control over the physical location of them. Additionally, since in the General Purpose service tier remote storage is used, performance can be afected by the data/log file size.
+For Azure SQL Managed Instance, there is a maximum storage allowed for the instance and the number of vCores is going to affect the maximum storage (for example, the Business critical tier has a lower maximum storage). If you reach the maximum, you may get Message 1105 for a managed database or Message 1133 for the instance. Upon creation of a database, they are created as the model default size which is 100Mb/8Mb and is configurable. You have the ability to alter the size as well as the number of files, but you do not have control over the physical location of them (we have commitments per your deployment choice on I/O performance). Additionally, since in the General Purpose service tier remote storage is used, performance can be afected by the data/log file size.
 
 For Azure SQL Database, the "Data max size" or "Maxsize" is the maximum possible size of a single database file (one one is allowed). The database file "Maxsize" can grow to the "Data max size". The transaction log maximum size is always 30% above the "Data max size". The log is also truncated regularly due to automatic backups (Accelerated Database Recovery is on by default).
 
 To understand this idea of Data max size versus Maxsize, let's consider an example where a 1TB (Data max size) General purpose database is deployed. When you do this, however, your database is only ~500GB (not 1 TB). As your database grows and approaches the Data max size, the database file Maxsize will also grow up to the 1TB level.
 
-The Azure SQL Database Hyperscale tier is different from the other service tiers in that it creates a database of 40GB and grows automatically in size.  
+The Azure SQL Database Hyperscale tier is different from the other service tiers in that it creates a database initially 40GB and grows automatically in size to the limit of 100TB. The transaction log has a fixed size restriction of 1TB.  
 
 ## Connectivity architecture and policy
 
