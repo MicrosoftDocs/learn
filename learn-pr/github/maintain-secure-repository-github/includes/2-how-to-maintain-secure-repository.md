@@ -64,7 +64,7 @@ To learn more about `.gitignore`, see [Ignoring files](https://help.github.com/g
 
 ## Removing sensitive data from a repository
 
-While `.gitignore` can be useful in helping contributors avoid committing sensitive data, it's just a strong suggestion. Developers can still work around it to add files if they are motivated enough, and sometimes files may slip through becuase they don't meet the `.gitignore` configuration. Project participants should always be on the lookout for commits containing data that should not be included in the repository or its history.
+While `.gitignore` can be useful in helping contributors avoid committing sensitive data, it's just a strong suggestion. Developers can still work around it to add files if they are motivated enough, and sometimes files may slip through because they don't meet the `.gitignore` configuration. Project participants should always be on the lookout for commits containing data that should not be included in the repository or its history.
 
 > [!IMPORTANT]
 > It should be assumed that any data committed to GitHub at any point has been compromised. Simply overwriting a commit isn't enough to ensure the data will not be accessible in the future. For the complete guide to removing sensitive data from GitHub, see [Removing sensitive data from a repository](https://help.github.com/github/authenticating-to-github/removing-sensitive-data-from-a-repository?azure-portal=true).
@@ -75,7 +75,7 @@ Virtually every project these days takes dependencies on external packages. Whil
 
 ### Repository dependency graphs
 
-One default feature every repository enjoys are dependency graphs. GitHub scans common package manifests, such as `package.json`, `requirements.txt`, and others. These graphs enables project owners to recursively track all of the dependencies their project relies on.
+One default feature every repository enjoys are dependency graphs. GitHub scans common package manifests, such as `package.json`, `requirements.txt`, and others. These graphs enable project owners to recursively track all of the dependencies their project relies on.
 
 ![GitHub dependency graph](../media/2-dependency-graph.png)
 
@@ -89,6 +89,6 @@ Even with a visual dependency graph, it can still be overwhelming to stay on top
 
 ### Automated dependency updates with Dependabot
 
-Most of the time, a dependency alert leads to a project contributor bumping the offending package reference to the recommendeded version and creating a pull request for validation. Wouldn't it be great if there was a way to automate this effort? Well, good news! That's exactly what **Dependabot** does. It scans for dependency alerts and creates pull requests so that a contributor can validate the update and merge the request.
+Most of the time, a dependency alert leads to a project contributor bumping the offending package reference to the recommended version and creating a pull request for validation. Wouldn't it be great if there was a way to automate this effort? Well, good news! That's exactly what **Dependabot** does. It scans for dependency alerts and creates pull requests so that a contributor can validate the update and merge the request.
 
 To learn more about Dependabot's flexibility, see [Configuring GitHub Dependabot security updates](https://help.github.com/github/managing-security-vulnerabilities/configuring-github-dependabot-security-updates?azure-portal=true).
