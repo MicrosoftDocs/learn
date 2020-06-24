@@ -4,45 +4,32 @@ In this exercise, you use a variable for your storage account name function.
 
 Here, you add a variable to store your storage account name function in one place in the template.
 
-1.  
-     image 5-arm-variable
+1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the curly braces in the variables block. ```"variables":{},``` Press <kbd>Enter</kbd>.
+1. Type **var**** in the square brackets. You see a list of related snippets. Choose arm-variable.
 
-looks like this
+  :::image type="content" source="../media/5-arm-variable.png" alt-text="Visual Studio Code showing the snippets for Azure Resource Manager template variables." border="true":::
+
+1. Your variables section will look like this.
 
     ```json
     "variables": {"variable1": "value"},
     ```
 
-change to look like
+1. Change the name of the variable to **uniqueResourceName** nad the value to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**
 
-```json
-"variables": {
-    "uniqueStorageName": "[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"
-  },
-```
+    ```json
+    "variables": {
+        "uniqueStorageName": "[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"
+      },
+    ```
 
-use in resources section 
+1. Use the variable in the resources section. Change the value of the ```name:``` and ```displayName``` attributes to **"[variables('uniqueStorageName')]"**
 
-```json
-"name": "[variables('uniqueStorageName')]",
-```
+1. Change value of the ```maxLength:``` attribute for the *storagePrefix* variable  to 11. The maximum length for a storage account name is 24, and you want to be sure the added hash from the function you created doesn't cause the name to be more than 24 characters.
 
-same with displayName
+## Optionally, deploy the template
 
-change maxLength to 11
-
-
-
-The parameter "storageName" was changed to "storagePrefix" and its "maxLength" value was changed to 11 from 24. This is to ensure the prefix + the generated unique string would not exceed the maximum storage account name length limit of 24
-The code now includes a variable named uniqueStorageName. This variable uses five functions to construct a string value.
-toLower()
-concat()
-parameters()
-uniqueString()
-resourceGroup()
-The resource name was changed from "name": "[parameters('storageName')]", to "name": "[variables(uniqueStorageName)]", to leverage the newly created variable.
-
-## deploy (optionally) - won't change anything
+The updates template does not have any changes to the resource you deployed, so deploying this template will not make any changes to your Azure environment. However, if you would like to deploy this template to see it succeed, use the Azure CLI below. Be sure to use the same *storagePrifix* parameter value you used in the last deployment.
 
 ```azurecli
 templateFile="azuredeploy.json"
