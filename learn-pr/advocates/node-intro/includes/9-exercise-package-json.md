@@ -2,67 +2,85 @@ As a Node.js developer on Tailwind Traders, learning how to set up a new Node.js
 
 ## Setup a new Node.js project
 
-Open up a terminal window. Create a directory `app` and subdirectory `src` and a file `index.js` in the subdirectory. Your project should now look like this:
+Open up a terminal window.
 
-```bash
---| app/
-----| src/
-------| index.js
-```
+1. Create a directory `app` and subdirectory `src` and a file `index.js` in the subdirectory. 
 
-Type the following command while placed in the `app` directory:
+   Your project should now look like this:
 
-```bash
-node init -y
-```
+    ```bash
+    --| app/
+    ----| src/
+    ------| index.js
+    ```
 
-This will generate a `package.json` file. It should look something like this:
+1. Type the following command while placed in the `app` directory:
 
-```json
-{
-  "name": "",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
-}
-```
+    ```bash
+    node init -y
+    ```
 
-Ensure to fill out the following values like so:
+   This will generate a `package.json` file. It should look something like this:
 
-- `name`, give it the value `Tailwind trader API`
-- `description`, fill in the following description `An HTTP API that will items from Tailwind Traders database`
-- `main`, fill in `index.js`.
-- `keywords`, fill in the following `api`, `database`
-- `author`, fill in `Sam`
+    ```json
+    {
+      "name": "",
+      "version": "1.0.0",
+      "description": "",
+      "main": "script.js",
+      "dependencies": {},
+      "devDependencies": {},
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    }
+    ```
 
-Your `package.json` should now look like this:
+1. Fill out the following values like so:
 
-```json
-{
-  "name": "Tailwind trader API",
-  "version": "1.0.0",
-  "description": "An HTTP API that will items from Tailwind Traders database",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": ["api", "database"],
-  "author": "Sam",
-  "license": "ISC"
-}
-```
+    - `name`, give it the value `Tailwind trader API`
+    - `description`, fill in the following description `An HTTP API that will items from Tailwind Traders database`
+    - `main`, fill in `index.js`.
+    - `keywords`, fill in the following `api`, `database`
+    - `author`, fill in `Sam`
 
-### Setup and run scripts
+   Your `package.json` should now look like this:
+
+    ```json
+    {
+      "name": "Tailwind trader API",
+      "version": "1.0.0",
+      "description": "An HTTP API that will items from Tailwind Traders database",
+      "main": "index.js",
+      "dependencies": {},
+      "devDependencies": {},
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "keywords": ["api", "database"],
+      "author": "Sam",
+      "license": "ISC"
+    }
+    ```
+
+1. Add the folllowing entry to the `scripts` section:
+
+   ```json
+   "start": "node ./src/index.js",
+   ```
+
+   The above entry will define how the project is started up. You can now start it up by typing the following command:
+
+   ```bash
+   npm start
+   ```
+
+   There isn't much happening in `index.js` yet but it's good to have a command setup to easily start up the project.
+
+## Add testing to yor project
 
 Now that you have a manifest file you can move on to set up some scripts that you will use throughout the lifetime of the project.
 
@@ -92,13 +110,12 @@ Before you go on to setup the scripts you need a test library.
 
     ```json
     "scripts": {
-      "start": "node ./src/index.js",
       "test": "jest",
       "test:watch": "jest --watchAll"
     }
     ```
 
-    You've now setup the our Node.js project with the actions `start`, `test` and `test:watch`.
+    You've now setup the our Node.js project with the actions `test` and `test:watch`.
 
 1. Add the following code to `example.js`:
 

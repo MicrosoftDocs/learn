@@ -1,87 +1,108 @@
+Tailwind Traders wants you to find out how updating packages works. There will be Node.js apps running in production and it's important to learn how to update in a predictable way. Find out how to to update to specific versions. Additionally find out how to configure the `package.json` file so that it updates to patch, minor and major versions, so there's no surprises when updating.
 
-## Install and Upgrade - TODO
+## Upgrade to patch version only
 
-you start with installing
+For this exercise you will install a package from NPM and configure `package.json` in way that it only fetches a new versions if there are patches released. It should ignore all other types of updates. Ensure you have opened the terminal in an empty directory of your choice.
 
-### Scenario 0
+1. Run the following command to create a Node.js project
 
-```bash
-npm install lodash@1.0.0
-```
+   ```bash
+   node init -y
+   ```
 
-Now we get `^1.0.0`. Running npm install on that installs `1.3.1` and updates to `^1.3.1` 
+   This should create a `package.json` file with some defaults.
 
-```bash
-{
-  "name":          "my-project",
-  "version":       "1.0",                             // install   update
-  "dependencies":  {                                  // ------------------
-    "already-installed-versionless-module":  "*",     // ignores   "1.0" -> "1.1"
-    "already-installed-semver-module":       "^1.4.3" // ignores   "1.4.3" -> "1.5.2"
-    "already-installed-versioned-module":    "3.4.1"  // ignores   ignores
-    "not-yet-installed-versionless-module":  "*",     // installs  installs
-    "not-yet-installed-semver-module":       "^4.2.1" // installs  installs
-    "not-yet-installed-versioned-module":    "2.7.8"  // installs  installs
-  }
-}
-```
+1. Install the `lodash` package with the following command:
 
-Summary: The only big difference is that an already installed module with fuzzy versioning ...
+   ```bash
+   npm install lodash@1.0.0
+   ```
 
-gets ignored by npm install
-gets updated by npm update
-Additionally: install and update by default handle devDependencies differently
+1. Open up `package.json` and locate the `dependencies` section. It should say the the following:
 
-npm install will install/update devDependencies unless --production flag is added
-npm update will ignore devDependencies unless --dev flag is added
+   ```json
+   "lodash": "^1.3.1"
+   ```
 
-### Scenario 1
+   You need to change this instruction as it's currently set to upgrading to highest possible minor release. Change the above instruction to:
 
-```bash
-npm install lodash@1.0.0
-```
+   ```json
+   "lodash": "1.0.x"
+   ```
 
-then change `package.json` to `1.0.x`. This installs `1.0.2` but it also changes the pattern to 
+   Now run the command `npm upgrade lodash` and afterwards go to `node_module/lodash/package.json`. Locate the following field at the top:
 
-```json
-"dependencies": {
-  "lodash": "^1.0.2"
-}
-```
+   ```json
+   "_id": "lodash@1.0.2"
+   ```
 
-which means if I now do `npm install lodash` or `npm upgrade lodash` this installs `1.3.1` an it changes the `package.json` entry to: 
+    As you can see your instruction to only update if there are patch versions - works perfectly.
 
-```json
-"dependencies": {
-  "lodash": "^1.3.1"
-}
-```
+## Upgrade to minor version
 
+Only updating to the latest patch version is considered a very careful approach. In fact, if the library author follows semantic versioning you should be safe to update to the latest minor version. New minor versions should signal that there is just new functionality. Only major versions potentially breaks the code, in theory. So how can you instruct your `package.json` to upgrade to latest minor version?
 
-### Scenario 2
+1. Open up `package.json` and locate the following instruction in the `dependencies` section:
 
-```bash
-npm install lodash@1.0.0
-```
+   ```json
+   "lodash": "^1.0.2"
+   ```
 
-then `package.json` adds the following entry:
+   Note how the instruction has changed from `1.0.x` to `^1.0.2`. This is NPM changing the configuration to set you up so that it will in fact update your library to the latest minor release where you to try to upgrade it.
 
-```json
-"dependencies": {
-  "lodash": "^1.0.0"
-}
-```
+1. You are all set up so type the following command:
 
-doing
+  ```bash
+  npm upgrade lodash
+  ```
 
-```bash
-npm install lodash
-```
+  Note how the output from the above command says something like this:
 
-this installs `1.3.1`. That's the latest minor version and latest patch version. It also updated our `package.json` to:
+  ```output
+  + lodash@1.3.1
+  updated 1 package and audited 1 package in 0.362s
+  found 3 vulnerabilities (1 low, 2 high)
+  ```
 
-```json
-"dependencies": {
-  "lodash": "^1.3.1"
-}
-```
+  It has updated your package to the latest minor release `1.3.1` and the latest patch version even. You can verify that this is the case by running the following command:
+
+  ```bash
+  npm show lodash versions
+  ```
+
+  The above command will list all the versions. By inspecting the output you should find `1.3.1` to be the last minor version. Next version after that is `2.0.0`, a new major version. You specified to only update to the latest minor version.
+
+## Upgrade to the latest version
+
+It's definitely possible to update to the latest version available. This is an ok approach if you are working on a small project and is just starting out.
+
+1. Open up `package.json` and locate the `dependencies` section and the entry that looks like this:
+
+   ```json
+   "lodash": "^1.3.1"
+   ```
+
+   Change it to the following:
+
+   ```json
+   "lodash": "^1.3.1"
+   ```
+
+   Now type the following command in the terminal:
+
+   ```bash
+   npm upgrade lodash
+   ```
+
+   You should see an output like this:
+
+   ```output
+   npm WARN updating@1.0.0 No description
+   npm WARN updating@1.0.0 No repository field.
+
+   + lodash@4.17.15
+   updated 1 package and audited 1 package in 0.598s
+   found 0 vulnerabilities
+   ```
+
+   From the above output you can see how your library `lodash` updated itself `4.17.15` and thereby updated several major versions.

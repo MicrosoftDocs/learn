@@ -1,31 +1,36 @@
+Sooner or later you will want to update to a new version of a library. The reason can be that some function is marked as deprecated or that there's a new feature in a later version of a package you are using. 
 
-Sooner or later you will want to update to a new version of a library. The reason can be that some function is marked as deprecated or that there's a new feature in a later version of a package you are using. Regardless of which, there are things that's helpful to know when wanting to update. Things that might have consequences to whether your source code still works or not after an update of a package. 
+There are considerations that should be taken into account prior to attempt to update a library, namely:
+
+- **The type of update**, what type of update is available, is it a small bug fix? Is it adding a new feature I need or will it break my code? A way to communicate what type of update that takes place is by adhering to a system called Semantic versioning. Based on how the version number of the library is expressed this communicates to a developer what type of update they are dealing with.
+- **Is my project configured correctly**, you can configure your Node.js project in a way so that you only get the types of updates you want. That means you will only perform an update if a specific type of update is available. This is recommended approach as you don't risk running into surprises.
+- **Mitigate issues**, part of manage your project dependencies over time means keeping a look out for issues. Issues that might arise are that vulnerabilities might be detected. Hopefully patches will be released that you can download. The NPM executable helps you run an *audit* on your libraries to find out if you have packages that should be updated and the executable also helps you with the appropriate action to fix the issue.
 
 ## Semantic versioning
 
 Your package has a version. It should follow something called semantic versioning. Semantic versioning means a version number can be divided up into the following sections:
 
-1. major version, the left most number e.g `1` in `1.0.0`, changing major version means that we can expect breaking changes in the code. A lot of things have changed.
-2. minor version, the middle number e.g `2` in `1.2.0`, this usually means features have been added. Your code should still be working. It's generally safe to update minor version.
-3. patch version, the right most number e.g `3` in `1.2.3`, this means a fix has been applied that fixes something in the code that should have worked. It should be safe to update patch version.
+- **major version**, the left most number e.g `1` in `1.0.0`, changing major version means that we can expect breaking changes in the code. A lot of things have changed.
+- **minor version**, the middle number e.g `2` in `1.2.0`, this usually means features have been added. Your code should still be working. It's generally safe to update minor version.
+- **patch version**, the right most number e.g `3` in `1.2.3`, this means a fix has been applied that fixes something in the code that should have worked. It should be safe to update patch version.
 
 Below is a table showing different types and what number changes in what position.
 
-|Type              |What happens          |
+|Type              | What happens          |
 |------------------|----------------------|
 |Major version     | 1.0.0 going to 2.0.0 |
 |Minor version     | 1.1.1 going to 1.2.0 |
 |Patch version     | 1.0.1 going to 1.0.2 |
 
-### Approach
+## Update approach
 
 How do we approach this as Node.js developers? We can communicate to Node.js what behavior we want. We want to think about this in terms of risk. You could reason like this:
 
-- Upgrade major version, I'm ok to update to the latest major version as soon as it's out then I accept the fact that I might need to change code on my end.
-- Minor version, I'm ok with a new feature being added. I'm not ok with code that breaks.
-- Patch version, the only thing I'm ok with are bug fixes
+- **Upgrade major version**, I'm ok to update to the latest major version as soon as it's out then I accept the fact that I might need to change code on my end.
+- **Minor version**, I'm ok with a new feature being added. I'm not ok with code that breaks.
+- **Patch version**, the only thing I'm ok with are bug fixes
 
-### Set up approach
+### Configure an update pattern in `package.json`
 
 We can communicate what approach we want to take for a package. Node.js has a set of symbols that allows us to define how we want our packages to update.
 
@@ -39,7 +44,7 @@ What we do is add different prefixes to our package entry in the `package.json` 
 - `1.0.0-rc.1`, include pre-release versions like `1.0.0-alpha` and `1.0.0-alpha`.
 - `^1 <1.4 || > 1.5`, will install the highest minor version in the range `1 - 1.3` or anything larger than `1.5`.
 
-### When to update and how to fix issues
+## Managing issues
 
 Every time you update or install a package you will get a log response just after install. It will tell you what version it installed and also if there are any vulnerabilities. An example log can look like this:
 
@@ -55,12 +60,12 @@ Above it's listing vulnerabilities in different severity levels, high and low. I
 ```bash
 # Run  npm install lodash@4.17.15  to resolve 3 vulnerabilities
 
-| Low           | Prototype Pollution              |
-|---------------|----------------------------------|
-|Package        |lodash                            |
-|Dependency of  |lodash                            |
-|Path           |lodash                            |
-|More info      |https://npmjs.com/advisories/577 |  
+| Low            | Prototype Pollution               |
+|----------------|-----------------------------------|
+| Package        | lodash                            |
+| Dependency of  | lodash                            |
+| Path           | lodash                            |
+| More info      | https://npmjs.com/advisories/577  |  
 
 and so on..
 ```

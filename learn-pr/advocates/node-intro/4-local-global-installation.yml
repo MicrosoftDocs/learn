@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.4-install-uninstall
+uid: learn.node-intro.4-local-global-installation
 title: Install/Uninstall
 metadata:
   title: Install/Uninstall
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-install-uninstall.md)]
+  [!include[](includes/4-local-global-installation.md)]
