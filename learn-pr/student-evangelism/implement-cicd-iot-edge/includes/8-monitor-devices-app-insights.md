@@ -18,13 +18,25 @@ To create an AKS cluster, complete the following steps:
    - Create a new service principal by leaving the **Service Principal** field with **(new) default service principal**. Or you can choose *Configure service principal* to use an existing one. If you use an existing one, you'll need to provide the SPN client ID and secret.
    - Enable the option for Kubernetes role-based access controls (RBAC). This will provide more fine-grained control over access to the Kubernetes resources deployed in your AKS cluster.
 
-6. Click **Review + create** and then **Create** when validation completes.
+6. Click **Review + create** and then **Create** when validation completes. It takes a few minutes to create the AKS cluster. When your deployment is complete, click **Go to resource**
 
-It takes a few minutes to create the AKS cluster. When your deployment is complete, click **Go to resource**.
+7. Open Azure Cloud Shell.
+
+8. Run the following command to download credentials and configures the Kubernetes CLI to use them.
+
+   ```
+   az aks get-credentials --resource-group <your-resource-group> --name <your-cluster-name>
+   ```
+
+9. Verify the connection to your cluster. Run the following command to return a list of the cluster nodes.
+
+   ```
+   kubectl get nodes
+   ```
 
 ## Adding a scalable integration test to a release pipeline
 
-1. Navigate to Release pipeline.
+1. Go back to Azure DevOps web portal and navigate to Release pipeline.
 
 2. Add a new stage after the **Smoke Test**.
 
@@ -36,17 +48,19 @@ It takes a few minutes to create the AKS cluster. When your deployment is comple
 
 5. Navigate to **Tasks** > Integration.
 
-6. You'll notice that the "Helm init" and "Helm upgrade" tasks require some additional configuration.
+6. Open the **Install Helm** task and specify Helm version to 2.9.1 instead of latest.
 
-7. Provide Azure subscription, resource group and kubernetes cluster which you created in the previous step for **helm init** and helm **upgrade**.
+7. You'll notice that the "Helm init" and "Helm upgrade" tasks require some additional configuration.
 
-8. Next, you'll configure the Agent job to run on the "Hosted Ubuntu 1604" agent pool.
+8. Provide Azure subscription, resource group and kubernetes cluster which you created in the previous step for **helm init** and helm **upgrade**.
 
-9. Next, you'll configure the "Helm init" task to upgrade / install tiller.
+9. Next, you'll configure the Agent job to run on the "Hosted Ubuntu 1604" agent pool.
 
-   ![The illustration shows how to update/install tiller.](../media/upgrade-tiller.png)
+10. Next, you'll configure the "Helm init" task to upgrade / install tiller.
 
-10. Next, you'll configure the "Helm upgrade" task to deploy the helm chart for the "azure-iot-edge-device-container". Begin by adding a new "Bash" task right before the "Helm upgrade" task. Configure the type to "inline" and add the following:
+    ![The illustration shows how to update/install tiller.](../media/upgrade-tiller.png)
+
+11. Next, you'll configure the "Helm upgrade" task to deploy the helm chart for the "azure-iot-edge-device-container". Begin by adding a new "Bash" task right before the "Helm upgrade" task. Configure the type to "inline" and add the following:
 
     ```
     helm repo add azure-iot-edge-device-container https://toolboc.github.io/azure-iot-edge-device-container
@@ -54,8 +68,7 @@ It takes a few minutes to create the AKS cluster. When your deployment is comple
     helm repo update
     ```
 
-
-10. Next, you'll configure the Helm Upgrade task. 
+12. Next, you'll configure the Helm Upgrade task.
 
     - Set the Namespace value to **iot-edge-qa**
 
@@ -67,25 +80,24 @@ It takes a few minutes to create the AKS cluster. When your deployment is comple
 
     - Set the Release Name to **iot-edge-qa**
 
-    - Set Values to: 
+    - Set Values to:
 
       ```
       spAppUrl=$(spAppUrl),spPassword=$(spPassword),tenantId=$(tenantId),subscriptionId=$(subscriptionId),iothub_name=$(iothub_name),environment=$(environment),replicaCount=2 
       ```
-    
     - Ensure that "Install if release not present", "Recreate Pods", "Force", and "Wait" checkboxes are checked.
     
-11. Start a new release and when complete, view your AKS cluster Dashboard.
+13. Start a new release and when complete, view your AKS cluster Dashboard.
 
-12. Go to the Azure portal and open Azure Cloud Shell.
+14. Go to the Azure portal and open Azure Cloud Shell.
 
-13. Run the following command.
+15. Run the following command.
 
     ```
     az aks browse --resource-group <kube-cluster-resource-group> --name <kube-cluster-name>
     ```
 
-14. You'll notice that QA devices have been deployed to the cluster.
+16. You'll notice that QA devices have been deployed to the cluster.
 
 ### Monitoring devices with App Insights
 
@@ -97,7 +109,3 @@ Make sure that the device has been deployed and is running, you can monitor the 
 2. Open Application Insight resource.
 3. Navigate to **Metrics Explorer** under Investigate.
 4. To configure a chart, select **Add Chart** > Edit Chart and add the following to monitor Block IO for all Edge modules.
-
-
-
-
