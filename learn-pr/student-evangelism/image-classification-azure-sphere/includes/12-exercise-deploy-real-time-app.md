@@ -32,7 +32,6 @@ The pixel values of the image is converted by python script defined in [scripts 
 
 To recap label data in CIFAR10:
 
-```
 - airplane : 0
 - automobile : 1
 - bird : 2
@@ -43,7 +42,6 @@ To recap label data in CIFAR10:
 - horse : 7
 - ship : 8
 - truck : 9
-```
 
 1. Press **F5** to debug the project. If the project has not previously been built, or if files have changed and rebuild is required, Visual Studio Code will build the project before debugging starts.
 
