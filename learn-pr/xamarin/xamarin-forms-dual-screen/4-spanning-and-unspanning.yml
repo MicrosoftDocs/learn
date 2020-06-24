@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-xamarin.xamarin-forms-dual-screen.4-spanning-and-unspanning
-title: Exercise - Detecting and responding to spanning/unspanning the app
+title: Detecting and responding to spanning/unspanning the app
 metadata:
-  title: Exercise - Detecting and responding to spanning/unspanning the app
-  description: Exercise - Detecting and responding to spanning/unspanning the app
+  title: Detecting and responding to spanning/unspanning the app
+  description: Detecting and responding to spanning/unspanning the app
   ms.date: 06/22/2020
   author: conceptdev
   ms.author: crdun

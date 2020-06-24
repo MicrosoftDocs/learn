@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   
-durationInMinutes: 3
+durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-use-dualscreeninfo.md)]

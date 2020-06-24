@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/2-display-two-screens.md)]
 quiz:
@@ -24,7 +24,7 @@ quiz:
     - content: "Add a NuGet."
       isCorrect: false
       explanation: "Once you've added Xamarin.Forms.DualScreen, you need to initialize it in the Android project."
-    - content: "Add a NuGet and initialize ."
+    - content: "Add a NuGet and initialize in the Android application's MainActivity class."
       isCorrect: true
       explanation: "`ContentPage` offers no methods to modify the dataset of a `ListView` control."
   - content: "For apps to run on Surface Duo they..."
