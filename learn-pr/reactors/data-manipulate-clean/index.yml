@@ -24,6 +24,7 @@ prerequisites: |
   - Introduction to NumPy for data science
   - Introduction to pandas for data science
 iconUrl: /learn/achievements/reactors/data-manipulate-clean.svg
+hidden: true
 levels:
 - beginner
 roles:

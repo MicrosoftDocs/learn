@@ -36,3 +36,5 @@ In this module, you will:
 
 - [Visual Studio Code environment set up to run Python and Jupyter Notebooks](../../python-data-science/1-introduction.yml)
 - [Introduction to Python for data science](../../python-data-science/index.yml)
+
+[!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]

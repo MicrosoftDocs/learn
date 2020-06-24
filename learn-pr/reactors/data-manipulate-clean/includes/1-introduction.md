@@ -19,4 +19,6 @@ In this module, you will:
 - [Introduction to NumPy for data science](../../numpy-data-science/index.yml)
 - [Introduction to pandas for data science](../../pandas-data-science/index.yml)
 
+[!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]
+
 Working with data begins with a knowledge of data structures. Let's see what Python has to offer.

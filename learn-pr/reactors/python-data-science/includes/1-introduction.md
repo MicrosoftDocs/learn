@@ -1,14 +1,14 @@
-Since its release in 1991, Python has risen to become not just a popular general-purpose programming language, but a preeminent computer language for data science. This learning path will use Python and the Python extension for Visual Studio Code as the primary means of illustrating data science tools and resources.
+Since its release in 1991, Python has risen to become not just a popular general-purpose programming language, but a preeminent computer language for data science. This learn module will use Python and the Python extension for Visual Studio Code as the primary means of illustrating data science tools and resources.
 
-Several examples in this learning path draw from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html?azure-portal=true) and examples given in the [Python 3 documentation](https://docs.python.org/3/?azure-portal=true) (with edits and amendments). This introduction to Python is written for Python 3.6.7 but is generally applicable to other Python 3.x versions.
+Several examples in this learn module draw from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html?azure-portal=true) and examples given in the [Python 3 documentation](https://docs.python.org/3/?azure-portal=true) (with edits and amendments). This introduction to Python is written for Python 3.6.7 but is generally applicable to other Python 3.x versions.
 
 Original material from python.org is Copyright (c) 2001-2019 Python Software Foundation.
 
-This learning path makes extensive use of Jupyter Notebooks that run in Visual Studio Code. Visual Studio Code runs on macOS, Linux, and Windows. Throughout this learning path, you will be encouraged to test out Python code in Visual Studio Code (VS Code) by using the Python extension and integrated Jupyter Notebooks.
+This learn module makes extensive use of Jupyter Notebooks that run in Visual Studio Code. Visual Studio Code runs on macOS, Linux, and Windows. Throughout this learn module, you will be encouraged to test out Python code in Visual Studio Code (VS Code) by using the Python extension and integrated Jupyter Notebooks.
 
 ## Set up your environment
 
-To learn most effectively throughout this learning path, we recommend that you set up your environment so you can follow along.
+To learn most effectively throughout this learn module, we recommend that you set up your environment so you can follow along.
 
 Complete these steps to set up your environment:
 
@@ -22,18 +22,18 @@ Complete these steps to set up your environment:
 If you have successfully set up your environment with VS Code, Python, Anaconda, and the NumPy and Pandas libraries, you should be able to run a Jupyter notebook inside of VS Code.
 
 1. Clone the [Reactor repository](https://github.com/microsoft/Reactors?azure-portal=true) and open the [Learn/Intro-Python-Data-Science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md?azure-portal=true) in VS Code.
-2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/Test-Setup-Config.ipynb?azure-portal=true) file to ensure you're ready to continue through the Learning Path.
+2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/Test-Setup-Config.ipynb?azure-portal=true) file to ensure you're ready to continue through the learn module.
 
 <!--*Embedded Video Goes Here*-->
 
-## Working through this learning path
+## Working through this learn module
 
-As you're working through this learning path, you will be encouraged to try out code. Use the files you cloned to do this.
+As you're working through this learn module, you will be encouraged to try out code. Use the files you cloned to do this.
 
 Jupyter Notebooks are divided into cells. Each cell contains either text written in the Markdown markup language or a space in which to write and execute computer code. Because all the code resides inside code cells, you can run each code cell inline rather than using a separate Python interactive window.
 
 > [!Note]
-> This learning path is designed to have you run code cells one by one. As you complete these modules, you are encouraged to copy the code snippets into your VS Code Jupyter Notebook and run each cell one at a time.
+> This learn module is designed to have you run code cells one by one. As you complete these modules, you are encouraged to copy the code snippets into your VS Code Jupyter Notebook and run each cell one at a time.
 
 ## Comments
 
@@ -87,3 +87,6 @@ In this module, you will:
 ## Prerequisites
 
 - None
+
+> [!TIP]
+> Several units in this module include a Hint feature that you can select to reveal the answer to a practice question. This feature works best in Google Chrome and the lastet Chromium-based Microsoft Edge browsers. In other browsers, the answer might be not be hidden.
