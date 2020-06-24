@@ -4,7 +4,7 @@
 
   <summary>Show details <i>(select to expand)</i></summary>
 
-To learn most effectively throughout this learning path, we recommend that you set up your environment so you can follow along.
+To learn most effectively throughout this learn module, we recommend that you set up your environment so you can follow along.
 
 Complete these steps to set up your environment:
 
@@ -29,7 +29,7 @@ As you're working through this module, you will be encouraged to try out code. U
 Jupyter Notebooks are divided into cells. Each cell contains either text written in the Markdown markup language or a space in which to write and execute computer code. Because all the code resides inside code cells, you can run each code cell inline rather than using a separate Python interactive window.
 
 > [!Note]
-> This learning path is designed to have you run code cells one by one. As you complete these modules, you are encouraged to copy the code snippets into your VS Code Jupyter Notebook and run each cell one at a time.
+> This learn module is designed to have you run code cells one by one. As you complete these modules, you are encouraged to copy the code snippets into your VS Code Jupyter Notebook and run each cell one at a time.
 
 <br />
 
