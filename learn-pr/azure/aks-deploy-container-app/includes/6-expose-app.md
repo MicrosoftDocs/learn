@@ -1,12 +1,12 @@
 To expose our application to the world, it's necessary we have a basic knowledge of two workloads we'll be creating: services and ingresses. Both are responsible to redirect the traffic inside the cluster to the correct apps.
 
-## Understand networks in Kubernetes
+## Networks in Kubernetes
 
 Pods are containers, as we saw in the previous exercise. Deployments are wraps around pods to provide intelligence for them to scale out. By definition, containers are ephemeral, which means the data inside them isn't persistent between executions. Once you delete a container, all data inside it's gone (unless it's hooked onto a volume).
 
 The same happens with the network. Deployments aren't considered a physical workload since they're only logical groups of pods, so we don't have to worry about their networking rules or IP addresses. Their pods, however, have an internal IP assigned to each of them when created. Like all the data, this IP is lost when the pod is destroyed. Internet is based on persistent IP addresses, so how can we expose an ever-changing pod IP to the network? The answer is __services__.
 
-### Services
+### Kubernetes services
 
 Services are workloads that abstract the IP address for networked workloads, like pods. Essentially, a service uses the same `selector` key as deployments to select and group resources with the required labels into one single IP, acting somewhat as a load balancer and redirecting the traffic to the specific ports.
 

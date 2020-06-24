@@ -1,4 +1,4 @@
-Now that we understand how networking is done in a cluster, let's expose Contoso's website to the world.
+Next, let's expose Contoso's website to the world.
 
 ## Create the service manifest
 

@@ -6,6 +6,8 @@ Imagine how would it be to deploy this application on a VM or another environmen
 
 ## Learn more
 
+To learn more about Azure Kubernetes Service, visit the following articles:
+
 - [AKS Documentation on Microsoft Docs](https://docs.microsoft.com/azure/aks/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Introduction to AKS](https://docs.microsoft.com/learn/modules/intro-to-azure-kubernetes-service/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Trident's documentation on cluster architectures](https://netapp-trident.readthedocs.io/en/stable-v19.01/dag/kubernetes/kubernetes_cluster_architecture_considerations.html#cluster-architectures)
