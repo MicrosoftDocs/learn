@@ -128,7 +128,7 @@ Within a type, machines are typically associated with a letter-based series. For
 
 Before you create a DSVM, you should decide on a storage strategy. You can choose to install the OS on a Premium SSD, a Standard SSD, or a Standard HDD. In addition, you will be able to choose to create or attach to one or more data disks. Again, you can choose the hard-drive technology, trading off the higher speed of SSDs versus their cost per gigabyte. 
 
-You may resize your DSVM as your requirements change. For instance, you might choose a General Purpose or Memory Optimized size during initial development and data ingestion, but resize to a GPU offering when your training starts to become a bottleneck. 
+You may resize your DSVM as your requirements change. For instance, you might choose a General Purpose or Memory Optimized size when Data Acquisition & Understanding are your primary focus, but resize to a GPU offering when Modeling becomes the bottleneck. 
 
 ## Create a Data Science VM with the Azure portal
 
@@ -148,7 +148,7 @@ You may resize your DSVM as your requirements change. For instance, you might ch
 
 ### Configure the VM
 
-We need to configure the basic parameters of our Ubuntu virtual machine. If some of the options at this point are unfamiliar to you, that's OK. We're going to discuss all of these options in a future module. You're welcome to copy the values used here.
+We need to configure the basic parameters of our Ubuntu virtual machine. 
 
 1. Use the following values on the **Basics** tab.
     - The **Subscription** should be set to _Concierge Subscription_ tk check 
@@ -165,28 +165,18 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
     - The **Image** should be the _Data Science Virtual Machine - Ubuntu 18.04_ option we selected from the Marketplace
 
     - Check to make sure the **Size** of the VM set as _Standard\_DS3\_v2_
+    - Change the **Authentication Type** to _Password_
+    - Choose and record a **Username** and strong **Password** 
     
-    - Leave the **UserName** value as _AzureUser_
-    
-    - Leave the **SSH public key source** as _Generate new key pair_
-    - Set the **Key pair name** to _AzureUserPrivateKey_.  
-
     ![Screenshot showing the Create a VM screen with details filled out](../media/create-new-resource.png)
 
 2. There are several other tabs you can explore to see the settings you can influence during the VM creation, particularly the **Disks** tab, where you can specify your data disk(s). Once you're finished exploring, click **Review + create** to review and validate the settings.
 
 3. On the review screen, Azure will validate your settings. Verify all the settings are set the way you want, and then click **Create**.
 
-1. Because you left the **Authentication type** as "SSH public key" and the **SSH public key souce** as "Generate new key pair", you will be presented with a dialog giving you the one-time ability to download the private key. Choose _Download private key and create resource_ to begin deploying the DSVM. You'll use this private key to authenticate in a later step. 
-    
-    ![Screenshot showing the Generate new key pair download dialog](../media/new-key-pair.png)
-
->[!Important]
->Treat the private key file as sensitive data. It can be used to access the DSVM by anyone who can guess your username and with the IP address of the DSVM. 
-
 1. You can monitor the deployment through the **Notifications** panel. Click the icon in the top toolbar to show or hide the panel.
 
-    ![A screenshot showing th Monitor the deployment progress](../media/3-deploying.png)
+    ![A screenshot showing the Monitor the deployment progress](../media/3-deploying.png)
 
 5. The VM deployment process takes a few minutes to complete. You'll receive a notification informing you that the deployment succeeded. Click on the **Go to resource** button to go to the VM overview page.
 
@@ -196,6 +186,6 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
 
     ![Screenshot showing the VM overview page with the public IP address to the VM highlighted.](../media/3-public-ip-address.png)
 
-7. tk tk By default, Ubuntu Server 18.04 LTS image doesn't install any reachable public services on the public IP address. However, recall that when you enabled password authentication in an earlier step, the UI also gave an option to enable SSH. SSH allows you to connect to your VM via the public IP using any SSH client.
+1. Securing access 
 
 Congratulations! With a few steps, you deployed a DSVM running on Linux. Let's connect to it. 
