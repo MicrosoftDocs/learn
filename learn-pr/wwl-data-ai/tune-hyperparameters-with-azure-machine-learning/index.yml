@@ -3,7 +3,7 @@ uid: learn.wwl.tune-hyperparameters-with-azure-machine-learning
 metadata:
   title: Tune hyperparameters with Azure Machine Learning
   description: "Choosing optimal hyperparameter values for model training can be difficult, and usually involved a great deal of trial and error. With Azure Machine Learning, you can leverage cloud-scale experiments to tune hyperparameters."
-  ms.date: 06/11/2020
+  ms.date: 06/26/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
