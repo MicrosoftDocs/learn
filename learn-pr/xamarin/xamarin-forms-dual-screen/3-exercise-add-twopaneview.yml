@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-xamarin.xamarin-forms-dual-screen.3-exercise-add-twopaneview
-title: Introduction
+title: Exercise - Add TwoPaneView to a Xamarin.Forms app
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Exercise - Add TwoPaneView to a Xamarin.Forms app
+  description: Exercise - Add TwoPaneView to a Xamarin.Forms app
   ms.date: 06/22/2020
   author: conceptdev
   ms.author: crdun

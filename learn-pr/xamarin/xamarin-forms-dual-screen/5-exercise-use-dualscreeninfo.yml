@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-xamarin.xamarin-forms-dual-screen.5-exercise-use-dualscreeninfo
-title: Introduction
+title: Exercise - Use DualScreenInfo to update layouts after spanning
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Exercise - Use DualScreenInfo to update layouts after spanning
+  description: Exercise - Use DualScreenInfo to update layouts after spanning
   ms.date: 06/22/2020
   author: conceptdev
   ms.author: crdun
