@@ -29,7 +29,7 @@ You create and manage device templates using the IoT Central web UI or the REST 
 - Browse the Azure IoT device catalog, and import device templates for certified devices.
 - Import a JSON file that contains a device capability model and interface definitions.
 
-To author a JSON device capability model file, use the [Azure IoT Tools for VS Code extension pack](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools).
+To author a JSON device capability model file, use the [Azure IoT Tools for Visual Studio Code extension pack](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools).
 
 ## Publish a device template
 
