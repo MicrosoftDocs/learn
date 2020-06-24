@@ -1,39 +1,29 @@
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Code block says "See Prerequisites." These will need to be defined and maybe add a link.
-> - Need output cell content. Search on TBD.
->
+To be able to use Azure Machine Learning you will need active Azure subscription and a Machine Learning Resource. These steps will walk you through that.
 
-The `azureml` package is installed by default with Azure Notebooks, so we don't have to worry about that. It uses an Azure ML Studio workspace ID and authorization token to connect your notebook to the workspace. You will obtain the ID and token by following these steps:
+1. Open [Azure](https://portal.azure.com?azure-portal=true) in a new browser tab and sign in with a Microsoft account. Search for the Machine Learning resource and create a new one. We recommend using Enterprise workspace edition.
 
-1. Open [Azure ML Studio](https://studio.azureml.net/?azure-portal=true) in a new browser tab and sign in with a Microsoft account. Azure ML Studio is free and does not require an Azure subscription. After you sign in with your Microsoft account (the same credentials that you used for Azure Notebooks), you're in your "workspace."
+1. After the Machine Learning Resource is created, go to the Resource and select **Launch Now** on the Azure Machine Learning Studio.
 
-1. On the left, select **Settings**.
+   :::image type="content" alt-text="Launch Azure Machine Learning Studio" source="../media/launch-azure-ml-studio.png" loc-scope="azure":::
 
-   :::image type="content" alt-text="In Azure ML Studio, select Settings." source="../media/azure-ml-studio-select-settings.png" loc-scope="azure":::
+1. From the homepage, navigate to the **Datasets**. Locate the bank-full.csv file on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Bank%2BMarketing?azure-portal=true). Select **From local files** and upload the file to Azure Machine Learning Studio.
 
-1. Open the **Name** tab. The **Workspace ID** field contains your workspace ID. Copy the ID value into the `workspace_id` value in the code cell shown in the last step.
+   :::image type="content" alt-text="Select the CSV file to upload to Azure Machine Learning Studio" source="../media/upload-data-set.png" loc-scope="azure":::
 
-   :::image type="content" alt-text="In Azure ML Studio, under Settings, on the Name tab, select the value in the Workspace ID field." source="../media/azure-ml-studio-workspace-identifier.png" loc-scope="azure":::
+1. Name the dataset **bank-marketing**. Choose **tabular** as the form. Choose the previously created datastore (one was created when you created the Machine Learning Service in Azure). Upload the CSV file. Make sure you use the header from the file.
 
-1. Open the **Authorization Tokens** tab. The tab shows two authentication tokens. Copy either token value into the `authorization_token` value in the code cell shown in the last step.
+   :::image type="content" alt-text="Specify the settings for the uploaded CVS file" source="../media/configure-data-store.png" loc-scope="azure":::
 
-   :::image type="content" alt-text="In Azure ML Studio, under Settings, on the Authorization Tokens tab, select one of the token values." source="../media/azure-ml-studio-authorization-tokens.png" loc-scope="azure":::
+## Explore bank-marketing data
 
-1. Run the following code cell. If it runs without error, you're ready to continue.
+Let's take a look at the data we uploaded to Azure Machine Learning. The data is essentially a set of calls made to customers of a particular bank.<sup>[1][^1]</sup> The goal of the calls was to upsell customers on a product or service. This data set contains a row for each call with the demographic information of the customer in all columns, except for the final column **y**. The final column indicates whether a customer ended up upgrading to the additional services or products.
 
-   ```python
-   from azureml import Workspace
+<br>
 
-   # Replace the values with those from your own Azure ML Studio instance. See the Prerequisites.
-   # The workspace_id is a string of hexadecimal characters. The token is a long string of random characters.
-   workspace_id = 'your_workspace_id'
-   authorization_token = 'your_auth_token'
+***
+References
 
-   ws = Workspace(workspace_id, authorization_token)
-   ```
+1. _Moro, S., Cortez, P., and Rita, P. (June 2014) [A Data-Driven Approach to Predict the Success of Bank Telemarketing](http://media.salford-systems.com/video/tutorial/2015/targeted_marketing.pdf). Decision Support Systems, Elsevier, 62:22-31_
 
-   ```Output
-   TBD
-   ```
+
+[^1]: <http://media.salford-systems.com/video/tutorial/2015/targeted_marketing.pdf> "Moro, S., Cortez, P., and Rita, P. (June 2014), *A Data-Driven Approach to Predict the Success of Bank Telemarketing*. Decision Support Systems, Elsevier, 62:22-31"
