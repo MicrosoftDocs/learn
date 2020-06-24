@@ -28,7 +28,7 @@ The first action you need to take in order to create your cluster is to provisio
         --node-count 3 \
         --enable-addons http_application_routing \
         --generate-ssh-keys \
-        --dns-name-prefix contoso-kubernetes \
+        --dns-name-prefix contoso-kubernetes-$RANDOM \
         --node-vm-size Standard_B2s
     ```
 
