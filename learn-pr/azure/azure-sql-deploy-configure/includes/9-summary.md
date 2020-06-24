@@ -10,7 +10,7 @@ One specific call out related to pre-deployment planning is around determining w
 
 Additionally, while the hands-on exercises focused on Azure SQL Database, here is guidance on [how to migrate to Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-migrate) specifically, and [here is a Quickstart](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started) if you'd like to try out your new deploy and configure toolbox in Azure SQL Managed Instance. There is also additional guidance on [Azure SQL Instance pools](https://docs.microsoft.com/azure/sql-database/sql-database-instance-pools-how-to#create-an-instance-pool).
 
-You may also want to dive deeper into the resource limits based on service tier and configuration for [SQL Managed Instance](https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/resource-limits) and [SQL Database](https://docs.microsoft.com/en-us/azure/azure-sql/database/resource-limits-vcore-single-databases).
+You may also want to dive deeper into the resource limits based on service tier and configuration for [SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/resource-limits) and [SQL Database](https://docs.microsoft.com/azure/azure-sql/database/resource-limits-vcore-single-databases).
 
 ### Deploy, Verify, and Configure
 
@@ -30,4 +30,4 @@ Similar to the EULA for SQL Server, there exists [Azure Marketplace terms](https
 
 #### Resource governance
 
-Resource governance from the Azure side is something new to consider in Azure SQL. You can [review how it works here](https://azure.microsoft.com/en-us/blog/resource-governance-in-azure-sql-database/) and a useful [blog post with more details](https://azure.microsoft.com/en-us/blog/resource-governance-in-azure-sql-database/).
+Resource governance from the Azure side is something new to consider in Azure SQL. You can [review how it works here](https://azure.microsoft.com/blog/resource-governance-in-azure-sql-database/) and a useful [blog post with more details](https://azure.microsoft.com/blog/resource-governance-in-azure-sql-database/).
