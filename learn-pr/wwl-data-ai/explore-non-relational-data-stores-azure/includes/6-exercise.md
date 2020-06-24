@@ -232,7 +232,7 @@ You'll perform this exercise using the Azure portal and the command line.
 
     Make a note of the values in the **SAS token**, **Blob service SAS URL**, and **File service SAS URL** fields.
 
-    > [!HINT]
+    > [!TIP]
     > Copy these values to the clipboard, and paste them into a text file, using Notepad.
 
     > [!div class="mx-imgBorder"]
