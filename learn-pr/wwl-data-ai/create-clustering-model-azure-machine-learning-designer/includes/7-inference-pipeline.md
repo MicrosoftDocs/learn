@@ -21,7 +21,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 
     Follow the remaining steps below, using the image and information above for reference as you modify the pipeline.
 
-4. The inference pipeline assumes that new data will match the schema of the original training data, so the **iris** dataset from the training pipeline is included. However, this input data includes a column for the iris species, which the model does not use. Delete both the **iris** dataset and the **Select Columns in Dataset** modules, and replace them with an **Enter Data Manually** module from the **Data Input and Output** section. Then modify the settings of the **Enter Data Manually** module to use the following CSV input, which includes feature values for three new iris observations:
+4. The inference pipeline assumes that new data will match the schema of the original training data, so the **iris** dataset from the training pipeline is included. However, this input data includes a column for the iris species, which the model does not use. Delete both the **iris** dataset and the **Select Columns in Dataset** modules, and replace them with an **Enter Data Manually** module from the **Data Input and Output** section of the **Modules** tab. Then modify the settings of the **Enter Data Manually** module to use the following CSV input, which includes feature values for three new iris observations:
 
     ```CSV
     Column1,Column2,Column3,Column4
