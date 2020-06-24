@@ -1,5 +1,9 @@
 Now that you've created a Data Science Virtual Machine, you need to connect to it. The DSVM is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH , you can connect to the command-line of the DSVM. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
 
+## If necessary, start the DSVM and activate just-in-time access
+
+A newly-created DSVM 
+
 ## Connect to the command line using SSH
 
 To access the command line of your DSVM, you'll use:
@@ -81,4 +85,5 @@ The Linux VM is already provisioned with X2Go Server and ready to accept client 
 1. Enter the password for your VM.
 1. Select **OK**.
 1. You may have to give X2Go permission to bypass your firewall in order to finish connecting.
-1. You should now see the graphical interface for your Ubuntu DSVM. 
+1. You should now see the graphical interface for your Ubuntu DSVM.
+
