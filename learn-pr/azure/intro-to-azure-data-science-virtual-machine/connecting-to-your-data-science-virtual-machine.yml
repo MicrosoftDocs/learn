@@ -41,6 +41,7 @@ quiz:
           isCorrect: false
           explanation: "On Ubuntu, one must use an XCFE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
     - content: "On a DSVM that has been idle for days, what steps, if any, need to be taken in the Azure Portal before connecting?"
+      choices:
         - content: "DSVM must be started. If JITA, requested"
           isCorrect: true
           explanation: "tk"
