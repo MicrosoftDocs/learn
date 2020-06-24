@@ -1,10 +1,3 @@
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Add Learning objectives
-> - Add Prerequisites
->
-
 Thus far, we have looked at building and fitting machine learning (ML) models "locally." True, the notebooks have been located in the cloud themselves, but the models with all of their predictive and classification power are stuck in those notebooks. To use these models, you would have to load data into your notebooks and get the results there.
 
 In practice, we want those models accessible from a number of locations. And while the management of production ML models has a lifecycle all its own, one part of that is making models accessible from the web. One way to do so is to develop them using third-party cloud tools, such as [Microsoft Azure Machine Learning Service](https://ml.azure.com/?azure-portal=true).
@@ -15,8 +8,10 @@ Additionally, we've so far only run one machine learning algorithm on each datas
 
 In this module, you will:
 
-- TBD
-- TBD
+- Create an Azure Machine Learning Resource
+- Upload data into a dataset into Azure Machine Learning Studio
+- Use Azure AutoML (Automated Machine Learning) to find the best model for your data
+- Deploy the best model as a web service
 
 ## Prerequisites
 
