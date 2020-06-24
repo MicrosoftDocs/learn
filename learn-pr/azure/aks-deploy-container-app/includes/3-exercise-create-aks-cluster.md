@@ -56,8 +56,4 @@ The first action you need to take in order to create your cluster is to provisio
     kubectl get nodes
     ```
 
-<<<<<<< HEAD
     You should receive a list of three available nodes.
-=======
-    If the cluster is correct, you should receive a list of three available nodes.
->>>>>>> 5beb3070b... Acrolynx corrections
