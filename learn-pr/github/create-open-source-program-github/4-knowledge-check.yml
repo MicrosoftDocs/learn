@@ -25,7 +25,7 @@ quiz:
       explanation: "The intellectual property of this service is extremely valuable and almost surely should not be opened to the general public."
     - content: "A client library used by customers to consume your company's services."
       isCorrect: true
-      explanation: "As this software is designed to be used by customers, open sourcing it could provide a great way to attract community participation."
+      explanation: "As this software is designed to be used by customers, open-sourcing it could provide a great way to attract community participation."
   - content: "Suppose your organization has decided to open-source a project. What is a good reason for your team to decide **not** to go through with it?"
     choices:
     - content: "You don't want outsiders judging the code your team has written."

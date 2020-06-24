@@ -30,7 +30,7 @@ To get a better understanding of where your organization stands, check out the [
 
 ### What should you open-source?
 
-Many projects are not destined for open-source greatness. While your criteria may vary based on your company's goals and process level, here are some recommended criteria to consider before open sourcing a project:
+Many projects are not destined for open-source greatness. While your criteria may vary based on your company's goals and process level, here are some recommended criteria to consider before open-sourcing a project:
 
 - Does your project contain intellectual property that you want to protect? If so, then opening its source would give away its value. Do not open-source those kinds of projects unless you feel the benefits outweigh the risks.
 
@@ -52,7 +52,7 @@ Running an open-source program is similar to running an InnerSource program, but
 
 Files like `README.md` and `CONTRIBUTING.md` are even more important because they are being exposed to people who don't have your organizational context. They will need to be evaluated from the perspective of someone outside the company to ensure clarity.
 
-In addition, your **code of conduct** is an important policy to express. The standard is to add a `CODE_OF_CONDUCT.md` file to the root of your repository and use it to explain the behavior expected from participants in your community. This is a document that should be reviewed by multiple groups in your organization, including your legal team. Fortunately, there are many standard codes of conduct available to start from. Many projects use these as-is without modification. Learn more in the [Guide to open-source codes of conduct](https://opensource.guide/code-of-conduct/?azure-portal=true).
+In addition, your **code of conduct** is an important policy to express. The standard is to add a `CODE_OF_CONDUCT.md` file to the root of your repository and use it to explain the behavior expected from participants in your community. This document should be reviewed by multiple groups in your organization, including your legal team. Fortunately, there are many standard codes of conduct available to start from. Many projects use these codes as-is without modification. Learn more in the [Guide to open-source codes of conduct](https://opensource.guide/code-of-conduct/?azure-portal=true).
 
 ### Preparing employees to maintain a repository
 
