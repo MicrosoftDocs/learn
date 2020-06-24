@@ -6,13 +6,13 @@ To use the Azure Machine Learning designer, you create a *pipeline* that you wil
 
 1. in [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Designer** page (under **Author**), and select **+** to create a new pipeline.
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Auto Price Training** (if the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top).
-3. Observe that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, use **Select compute target** to select the **aml-cluster** compute cluster you created previously.
+3. Observe that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, use **Select compute target** to select the compute cluster you created previously.
 
 ## Add and explore a dataset
 
 In this module, you'll train a regression model that predicts the price of an automobile based on its characteristics. Azure Machine Learning includes a sample dataset that you can use for this model.
 
-1. On the left side of the designer, expand the **Datasets** section, and drag the **Automobile price data (Raw)** dataset from the **Samples** section onto the canvas.
+1. On the left side of the designer, select the **Datasets** (&#8981;) tab, and drag the **Automobile price data (Raw)** dataset from the **Samples** section onto the canvas.
 2. Select the **Automobile price data (Raw)** dataset on the canvas, and view its settings (the settings pane for the dataset may open automatically and cover the canvas). On the **outputs** tab, select the **Visualize** icon (which looks like a column chart).
 3. Review the schema of the data, noting that you can see the distributions of the various columns as histograms.
 4. Scroll to the right of the dataset until you see the **Price** column. This is the label your model will predict.
@@ -29,7 +29,7 @@ In this module, you'll train a regression model that predicts the price of an au
 
 You typically apply data transformations to prepare the data for modeling. In the case of the automobile price data, you'll add transformations to address the issues you identified when exploring the data.
 
-1. In the pane on the left, collapse the **Datasets** section if it is still expanded, and expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
+1. In the pane on the left, view the **Modules** (&#8862;) tab and expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
 2. Drag a **Select Columns in Dataset** module to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module, like this:
 
 > [!div class="centered"]
@@ -86,7 +86,16 @@ To apply your data transformations, you need to run the pipeline as an experimen
 > [!div class="centered"]
 > ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
 
-2. Select **Submit**, and run the pipeline as a new experiment named **auto-price-training** on the **aml-cluster** compute cluster.
-3. Wait for the run to complete (indicated by a &#x2705; icon for each module). This may take 5 minutes or more.
+2. Select **Submit**, and run the pipeline as a new experiment named **auto-price-training** on your compute cluster.
+3. Wait for the run to finish. This may take 5 minutes or more. When the run has completed, the modules should look like this:
+
+> [!div class="centered"]
+> ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules in completed state](../media/normalize-complete.png)
+
+## View the transformed data
 
 The dataset is now prepared for model training.
+
+1. Select the completed **Normalize Data** module, and in its **Settings** pane on the right, on the **Outputs + logs** tab, select the **Visualize** icon for the **Transformed dataset**.
+2. View the data, noting that the **normalized-losses** column has been removed, all rows contain data for **bore**, **stroke**, and **horsepower**, and the numeric columns you selected have been normalized to a common scale.
+3. Close the normalized data result visualization.

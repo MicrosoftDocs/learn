@@ -94,7 +94,7 @@ plots.scatter(0.9, -0.02, marker='^', color='gold', s=60)
 plots.ylim(-0.05, 1);
 ```
 
-![Sample size example](../media/74-choose-sample-size-4-1.png)
+![Sample size example.](../media/74-choose-sample-size-4-1.png)
 
 Remember that the possible values in the population are only 0 and 1.
 
@@ -156,7 +156,7 @@ decrease symmetrically.
 zero_one_sds.scatter("Population Proportion of 1's")
 ```
 
-![Sample size example](../media/74-choose-sample-size-8-0.png)
+![Sample size example.](../media/74-choose-sample-size-8-0.png)
 
 **Summary:** The SD of a population of 1's and 0's is at most 0.5.
 That's the value of the SD when 50% of the population is coded 1 and the

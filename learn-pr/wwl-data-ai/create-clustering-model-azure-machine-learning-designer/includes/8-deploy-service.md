@@ -5,7 +5,7 @@ To publish a real-time inference pipeline as a service, you must deploy it to an
 ## Deploy a service
 
 1. View the **Predict Iris Cluster** inference pipeline you created in the previous unit.
-2. At the top right, select **Deploy**, and set up a new real-time endpoint named **predict-iris-cluster** on the **aks-cluster** compute target you created.
+2. At the top right, select **Deploy**, and set up a new real-time endpoint named **predict-iris-cluster** on the inference cluster you created previously.
 3. Wait for the web service to be deployed - this can take several minutes. The deployment status is shown at the top left of the designer interface.
 
 ## Test the service
@@ -20,7 +20,7 @@ Now you can test your deployed service from a client application - in this case,
 4. With the **Consume** page for the **predict-iris-cluster** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page.
 5. On the **Notebooks** page, create a new file with the following settings:
     - **File name**: iris_test.ipynb
-    - **File type**: Python Notebooks
+    - **File type**: Notebook
     - **Overwrite if already exists**: Selected
     - **Select target directory**: *Select the folder with your user name under **User files***
 6. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.

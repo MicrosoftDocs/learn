@@ -40,7 +40,7 @@ Clicking on any recommendation will take you to the details for that specific re
 
 ![Screenshot of Azure portal Advisor showing several virtual machines to resize or shut down for potential savings.](../media/3-advisor-resize-vm.png)
 
-These recommendations are all places where you might be inefficiently spending money. They're a great place to start and continue to revisit when looking for places to reduce costs. In our example, there's an opportunity for us to save around $700 per month if we take these recommendations. This savings adds up, so be sure to review these recommendations periodically across all four areas.
+These recommendations are all places where you might be inefficiently spending money. They're a great place to start and continue to revisit when looking for places to reduce costs. In our example, there's an opportunity for us to save around $700 per month if we take these recommendations. This savings adds up, so be sure to review these recommendations periodically across all areas.
 
 ## Azure Cost Management
 
