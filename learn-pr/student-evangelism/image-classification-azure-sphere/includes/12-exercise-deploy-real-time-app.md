@@ -1,4 +1,4 @@
-In this exercise, you'll deploy your real time application to Azure Sphere. You'll test your input image and display the output result on the terminal emulator.
+In this exercise, you'll deploy your real-time application to Azure Sphere. You'll test your input image and display the output result on the terminal emulator.
 
 Make sure that:
 
@@ -14,7 +14,7 @@ In this exercise, you will test input image of deer.
 
 ![The illustration shows the input image.](../media/deer.jpg)
 
-The pixel values of the image is converted by python script defined in [scripts folder](add link!) in the repository you cloned.
+The pixel values of the image are converted by python script defined in [scripts folder](add link!) in the repository you cloned.
 
 ![The illustration shows the python script of converting the image to pixel values.](../media/input-data.png)
 
@@ -28,7 +28,7 @@ The pixel values of the image is converted by python script defined in [scripts 
 
 3. By default, the values are added in arm_nnexamples_cifar10_inputs.h to test. You can comment and test different images.
 
-## Deploy a real time application
+## Deploy a real-time application
 
 To recap label data in CIFAR10:
 
