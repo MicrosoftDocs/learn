@@ -68,6 +68,7 @@ modules:
 - learn.oxford.train-package-azure-ml-module-iot-edge
 - learn.oxford.intro-iot-funtions-iot
 - learn.oxford.deploy-cognitive-service-iot-edge-azure-func
+- learn.oxford.run-cognitive-services-iot-edge
 - learn.oxford.intro-mlops-iot-edge
 - learn.oxford.intro-azure-sphere
 trophy:
