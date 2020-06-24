@@ -70,5 +70,6 @@ modules:
 - learn.oxford.deploy-cognitive-service-iot-edge-azure-func
 - learn.oxford.intro-mlops-iot-edge
 - learn.oxford.intro-azure-sphere
+- learn.oxford.image-classification-azure-sphere
 trophy:
   uid: learn.oxford.ai-edge-engineer.trophy
