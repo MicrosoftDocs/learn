@@ -32,7 +32,7 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
 4. Retrieve the service principal ID of the web app.
 
     ```PowerShell
-    $appId = (Get-AzADServicePrincipal -DisplayName $webappname).Id
+    $appId=(Get-AzWebApp -ResourceGroupName $resourcegroupname -Name $webappname).Identity.PrincipalId
     ```
 
 5. Set the access policy of the key vault to allow the web app (identified using the service principal), to access the key vault.
