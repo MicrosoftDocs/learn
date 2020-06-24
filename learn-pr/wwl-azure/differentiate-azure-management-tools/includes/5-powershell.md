@@ -13,9 +13,9 @@ In this task, we will configure Cloud Shell.
 
 1. If using the MS Learn sandbox, you can to Task2.  Else, Sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
 
-2. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure Portal.
+2. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure portal.
 
-    ![Screenshot of Azure Portal Azure Cloud Shell icon.](../media/1002.png)
+    ![Screenshot of Azure portal Azure Cloud Shell icon.](../media/1002.png)
 
 3. If you have previously used the Cloud Shell, proceed to the next task. 
 
@@ -60,7 +60,7 @@ In this task, we will use PowerShell to create a resource group and a virtual ma
 
 In this task, we will practice executing PowerShell commands from the Cloud Shell. 
 
-1. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure Portal.
+1. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure portal.
 
 2. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane.
 
