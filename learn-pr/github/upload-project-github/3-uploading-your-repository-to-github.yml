@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.upload-project-github.3-uploading-your-repository-to-github
+title:  Exercise - Uploading your project to GitHub
+metadata:
+  title:  Exercise - Uploading your project to GitHub
+  description: Prepare and execute a successful upload to GitHub.
+  ms.date: 06/08/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 29
+content: |
+  [!include[](includes/3-uploading-your-repository-to-github.md)]
