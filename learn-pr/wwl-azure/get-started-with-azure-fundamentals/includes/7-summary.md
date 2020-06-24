@@ -2,7 +2,7 @@ Welcome to the wide world of Azure, where you can invent with purpose. This intr
 
 ![Cloud with a graduation cap on top of it representing the start on your journey to learn about the cloud.](../media/graduation-cap-cloud.png)
 
-Join us as we travel through the capabilities of Azure, explore why you should use cloud computing, and finally look at why Azure is a the best choice for your cloud platform.
+Join us as we travel through the capabilities of Azure, explore why you should use cloud computing, and decide why Azure is the best choice for your cloud platform.
 
 ## Learn more 
 
