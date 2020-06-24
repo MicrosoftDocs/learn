@@ -13,7 +13,7 @@ Install and configure the tooling required to develop and execute Functions loca
 ## Required Components for the Functions Project
 
 > [!TIP]
-> If you want to verify your installation, you're invited to clone our [repository located on GitHub at http://aka.ms/learn-live-foundations-serverless-dev-repo](http://aka.ms/learn-live-foundations-serverless-dev-repo) and build both, the included (completed) functions project and the Angular based client.
+> If you want to verify your installation, you're invited to clone our [repository located on GitHub at https://aka.ms/learn-live-foundations-serverless-dev-repo](https://aka.ms/learn-live-foundations-serverless-dev-repo) and build both, the included (completed) functions project and the Angular based client.
 >
 > Note that we will be building the functions project from scratch during this course but we'll be using the completed Angular client to execute calls against the functions.
 
@@ -52,16 +52,6 @@ You can find detailed installation instructions at [angular.io/guide/setup-local
 The short version of the instructions is straightforward: execute the following command in your terminal:
 
 `npm install -g @angular/cli`
-
-### Angular DevKit
-
-> [!IMPORTANT]
-> The following installation is only necessary if you're getting a build error like the following one, while running the client app:
-> `Could not find module "@angular-devkit/build-angular..."`
-
-Install the Angular dev kit dependency by running the following command in your terminal while being in the folder containing the Angular client project:
-
-`npm install --save-dev @angular-devkit/build-angular`
 
 ### Optional: Debugger support
 
