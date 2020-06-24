@@ -24,4 +24,5 @@ In this module, you will:
 - Introduction to Python
 - Beginners Data Science for Python Developers
 - Join and clean datasets: Deep dive
-- Set up your environment [!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]
+
+[!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]

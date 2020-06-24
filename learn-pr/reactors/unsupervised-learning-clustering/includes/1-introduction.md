@@ -23,4 +23,5 @@ In this module, you will:
 - Supervised learning: Regression
 - Predict numeric values with regression
 - Predict categories with machine learning classification
-- Set up your environment [!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]
+
+[!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]
