@@ -2,7 +2,7 @@ You're almost finished creating a Node.js masterpiece for Tailwind Traders. So f
 
 ## Create method to calculate sales totals
 
-1. At the top of the file, just below the `require("path")` statement, create a function that will calculate the sales total. This method should take in the array of file paths that it can iterate over.
+1. At the top of `index.js`, just below the `require("path")` statement, create a function that will calculate the sales total. This method should take in the array of file paths that it can iterate over.
 
    ```javascript
    function calculateSalesTotal(salesFiles) {

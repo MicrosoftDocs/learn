@@ -21,7 +21,7 @@ fs.mkdirsync(path.join(__dirname, "newDir", "stores", "201", "newDir"), {
 });
 ```
 
-## Making sure directories exists
+## Make sure directories exist
 
 If the directory that you're trying to create already exists, the `mkdirsync` method will throw an error. That's not good because you'll need to handle the error, or your program will terminate. To avoid that messy situation, you'll want to use the `existsSync` to ensure that the directory doesn't already exist.
 

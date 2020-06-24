@@ -4,12 +4,16 @@ Tailwind Traders collects sales information at the end of each night from each o
 
 Tailwind Traders wants you to write a program that will read the totals in these files and calculate a grand total. In this module, you'll use Node.js to build that program for Tailwind Traders and cement your place in computer science history.
 
-## Learning Objectives
+## Learning objectives
 
-In this module, you'll learn how to...
+By the end of this module, you'll be able to:
 
 - Work with directories
 - Create and delete files
 - Read from files
 - Write to files
 - Parse data in files
+
+## Prerequisites
+
+TODO

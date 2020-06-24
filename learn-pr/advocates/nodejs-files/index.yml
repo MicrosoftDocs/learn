@@ -2,23 +2,22 @@
 uid: learn.azure.nodejs.files
 metadata:
   title: Working with files and directories with Node.js
-  description: Learn about how to manipulate files and directories with Node.js
+  description: Build an app that manipulates files and directories with Node.js.
   ms.date: 04/20/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: luken
-title: Working with files and directories with Node.js
-summary: Learn about how to manipulate files and directories with Node.js
+title: Work with files and directories with Node.js
+summary: Build an app that manipulates files and directories with Node.js.
 abstract: |
-  In this module you will:
+  By the end of this module, you will be able to:
   - Work with directories
   - Create and delete files
   - Read from files
   - Write to files
   - Parse data in files
-iconUrl: /learn/achievements/learn.azure.nodejs.files.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

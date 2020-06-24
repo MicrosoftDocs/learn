@@ -8,7 +8,7 @@ Make sure you activate the Microsoft Learn sandbox by clicking the "Activate San
 
 ## Clone exercise
 
-1. Copy the following command into the Sandbox and press "enter".
+1. Run the following command in the Cloud Shell pane on the right:
 
    ```bash
    git clone https://github.com/burkeholland/node-files && cd node-files
