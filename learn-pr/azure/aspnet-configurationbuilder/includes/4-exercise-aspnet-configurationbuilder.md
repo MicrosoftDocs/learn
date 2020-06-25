@@ -56,10 +56,10 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
     > [!NOTE]
     > A secure string is a string object that can only be held once in memory. It can't be copied elsewhere in memory. This feature helps to reduce the vulnerability of the information in the string to attacks that attempt to examine and copy blocks of memory, looking for passwords and other sensitive information.
 
-8. Find the user principal name (UPN) of your account in Azure AD.
+8. Find the Object ID of your account in Azure AD.
 
     ```PowerShell
-    $objectId=az ad signed-in-user show --query objectId -o tsv
+    $objectId = az ad signed-in-user show --query objectId -o tsv
     ```
 
 9. Grant your account privileges to create and retrieve secrets and keys from the key vault.

@@ -75,7 +75,13 @@ Here, you'll download and test the application locally, and then create the reso
 
     ```PowerShell
     $useralias = "<your-initals-with-suffix>"
+    ```
+
+    ```PowerShell
     $serveradminpassword = "<your-password>"
+    ```
+
+    ```PowerShell
     $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
