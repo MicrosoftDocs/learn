@@ -67,7 +67,7 @@ Here you use parameters to limit the values allowed for a parameter.
 
 1. Place your cursor after the closing curly brace for the ```storageName```parameter. Add a comma and press the <kbd>Enter</kbd> key.
 1. Again, type **par** and choose **arm-param**.
-1. Change this new generic parameter to this:
+1. Change the new generic parameter to this:
 
     ```json
     "storageSKU": {
@@ -86,7 +86,13 @@ Here you use parameters to limit the values allowed for a parameter.
      }
     ```
 
-  Here you are listing the values that this parameter will allow. If the template is run with a value that is not allowed, the deployment will fail.
+      Here you are listing the values that this parameter will allow. If the template is run with a value that is not allowed, the deployment will fail.
+
+1. Add a comment to this parameter.
+
+    :::image type="content" source="../media/5-add-comments.png" alt-text="The azuredeploy.json file with the comment This is the allowed values for an Azure storage account above the storageSKU parameter" border="true":::
+
+    Azure Resource Manager templates support ```//``` and ```/* */``` comments.
 
 1. Update *resources* to use the ```storageSKU``` parameter. Take advantage of the intellisense in Visual Studio Code to make this easier.
 
@@ -119,7 +125,7 @@ Here you deploy successfully using a ```storageSKU``` parameter that is in the a
       --parameters storageSKU=Standard_GRS storageName={your-unique-name}
     ```
 
-  Allow this deployment to finish. This deployment succeeds as expected.
+      Allow this deployment to finish. This deployment succeeds as expected.
 
 1. Run the following commands to deploy the template with a parameter that is not allowed. Here. you changed the ```storageSKU``` parameter to *Basic*.
 
@@ -136,7 +142,7 @@ Here you deploy successfully using a ```storageSKU``` parameter that is in the a
 
     This deployment fails. Notice the error.
 
-    ![Terminal window showing the deployment validation error.](../media/3-deploy-validation-failed.png)
+    :::image type="content" source="../media/3-deploy-validation-failed.png" alt-text="Terminal window showing the deployment validation error." border="true":::
 
 ## Add output to the template
 
@@ -184,8 +190,8 @@ Here, you deploy the template and see the endpoints output as JSON.
 
 1. Notice the output.
 
-    ![Terminal window showing the primary endpoints output as JSON.](../media/3-add-output-result.png)
+    :::image type="content" source="../media/3-add-output-result.png" alt-text="Terminal window showing the primary endpoints output as JSON." border="true":::
 
 1. In the portal, navigate to your *addOutputs* deployment. You can find your output there as well.
 
-    ![Azure portal showing the output selection in the left menu.](../media/3-portal-outputs.png)
+    :::image type="content" source="../media/3-portal-outputs.png" alt-text="Azure portal showing the output selection in the left menu." border="true":::

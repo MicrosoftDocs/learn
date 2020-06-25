@@ -15,13 +15,13 @@ Check out more modules in this learning path to get more advanced practice with 
 
 Here are some links to learn more:
 
-- [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
+- [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true)
 
-- [Understand the structure and syntax of ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax)
+- [Understand the structure and syntax of ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax?azure-portal=true)
 
 - [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview?azure-portal=true)
 
-- [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
+- [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest?azure-portal=true)
 
 - [Azure Powershell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true)
 
@@ -31,4 +31,4 @@ Here are some links to learn more:
 
 - [Outputs in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-outputs?tabs=azure-powershell)
 
-- [Parameters in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-parameters)
+- [Parameters in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-parameters?azure-portal=true)

@@ -6,7 +6,11 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 1. Open Visual Studio Code and create a new file called *azuredeploy.json*.
 1. On the first line of the file, type **arm**.
-1. You see an intellisense choice **!arm**. Choose that snippet by clicking on the box next to it. Your file will now look like this:
+1. You see an intellisense choice **!arm**. Choose that snippet by clicking on the box next to it.
+
+    :::image type="content" source="../media/3-arm-snippet.png" alt-text="Visual Studio Code azuredeploy.json file showing the snippet choices for Azure Resource Manager templates." border="true":::
+
+1. Your file will now look like this:
 
     ```json
     {
@@ -21,7 +25,7 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
     }
     ```
 
-  Notice that this file has all of the sections of an Azure Resource Manager template that we discussed in the last unit.
+      Notice that this file has all of the sections of an Azure Resource Manager template that we discussed in the last unit.
 
 1. Save the changes to the file.
 
@@ -94,15 +98,15 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
 1. Select <rgn>[sandbox resource group name]</rgn>.
 1. In the *Overview*, you see one deployment succeeded.
 
-    ![Azure portal interface for the resource group overview with the deployments section showing one succeeded.](../media/3-deployment-succeeded.png)
+    :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Azure portal interface for the resource group overview with the deployments section showing one succeeded." border="true":::
 
 1. Select *1 Succeeded* to see the details of the deployment.
 
-    ![Azure portal interface for the deployments with the one deployment listed and a succeeded status.](../media/3-blanktemplate.png)
+    :::image type="content" source="../media/3-blanktemplate.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
 1. Select *blanktemplate* to see what resources were deployed. In this case, it will be empty since you didn't specify any resources in the template yet.
 
-    ![Azure portal interface for the specific deployment with no resources listed.](../media/3-no-results.png)
+    :::image type="content" source="../media/3-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 
 1. Leave the page open in your browser. You will check on deployments again.
 
@@ -113,18 +117,20 @@ Here, you add an Azure storage account resource to the template using a snippet 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the square brackets in the resources block. ```"resources":[],```
 1. Type **storage** in the square brackets. You see a list of related snippets. Choose **arm-storage**.
 
-    ![Visual Studio Code arm-storage snippet shown below the types word storage.](../media/3-arm-storage.png)
+    :::image type="content" source="../media/3-arm-storage.png" alt-text="Visual Studio Code arm-storage snippet shown below the types word storage." border="true":::
 
 1. Your file will look like this:
 
     [!code-json[](code/parameter1.json)]
 
-  Values that you should edit are highlighted in new section of your file and can be navigated using the <kbd>tab</kbd> key.
+      Values that you should edit are highlighted in new section of your file and can be navigated using the <kbd>tab</kbd> key.
+
+    Notice the ```tags:``` and ```location:``` attributes are filled in. The ```location:``` attribute is using a function to set the location of the resource to the location of the resource group. You learn about tags and functions in the next module.
 
 1. Change the values of the resource *name:* and *displayName:* to something unique. For example, **learnexercise12321**. This name must be unique across all of Azure, so choose something unique to you.
 1. Change the value of the sku *name* from **Premium_LRS** to **Standard**. Do the same for the value of *tier*. Notice that Visual Studio Code gives you the proper choices for your attribute values in intellisense.
 
-    ![Visual Studio Code showing the intellisense choices for the name attribute of the storage SKU.](../media/3-vs-code-intellisense.png)
+    :::image type="content" source="../media/3-vs-code-intellisense.png" alt-text="Visual Studio Code showing the intellisense choices for the name attribute of the storage SKU." border="true":::
 
 1. Note the location of the resource is set to the location of the resource group where it will be deployed. Leave the default here.
 1. Save the file.
@@ -148,10 +154,10 @@ Here, you change the name of the deployment to better reflect what this deployme
 1. In your browser, navigate back to Azure. Go to your resource group and see that there are now *2 Succeeded* deployments. Select this link.
 1. Notice that both deployments are in the list.
 
-    ![Azure portal interface for the deployments with the two deployments listed and succeeded statuses.](../media/3-addstorage-deployment.png)
+    :::image type="content" source="../media/3-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true":::
 
 1. Select *addstorage*.
 
-    ![Azure portal interface for the specific deployment with one resource listed.](../media/3-show-resource-deployed.png)
+    :::image type="content" source="../media/3-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
 
 1. Notice that the storage account has been deployed.

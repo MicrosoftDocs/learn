@@ -27,7 +27,7 @@ Templates are *idempotent*, which means you can deploy the same template many ti
 
 The Azure Resource Manager orchestrates the deployment of the resources so they're created in the correct order, and when possible, in parallel, so your deployments finish faster than scripted deployments.
 
-  ![A mapping of the template processing procedure showing that there is only once call to process a template as opposed to several calls to process scripts.](../media/2-template-processing.png)
+  :::image type="content" source="../media/2-template-processing.png" alt-text="A mapping of the template processing procedure showing that there is only once call to process a template as opposed to several calls to process scripts." border="true":::
 
 Azure Resource Manager also has built in validation and checks the template before starting the deployment to make sure the deployment will succeed.
 
@@ -173,4 +173,3 @@ For our storage example, your template might look like this:
    "outputs": {}
 }
 ```
-

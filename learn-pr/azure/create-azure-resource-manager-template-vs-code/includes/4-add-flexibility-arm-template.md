@@ -1,6 +1,6 @@
 In the last unit, you created an Azure Resource Manager template and added an Azure storage account to the template. Recall that in our scenario each deployment may have a different type of Azure storage account. You can make your template more reusable by adding a parameter for the Azure storage account SKU.
 
-Here, you delve into detail on the *parameters* and *outputs* sections of the template.
+Here, you learn about the *parameters* and *outputs* sections of the template.
 
 ## What are template parameters
 
@@ -60,7 +60,7 @@ Here is an example of a template file with a parameter for the storage SKU defin
    }
 ```
 
-Then, use the parameter in the resource definition. Notice the syntax is ```[parameters('name of the parameter')]```
+Then, use the parameter in the resource definition. Notice the syntax is ```[parameters('name of the parameter')]```. You use the ```parameters``` function. You learn more about functions in the next module.
 
 ```json
 "resources": [
