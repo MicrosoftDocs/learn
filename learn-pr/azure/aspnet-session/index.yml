@@ -29,7 +29,6 @@ roles:
 products:
 - azure
 - aspnet
-- azure-redis-cache
 - azure-web-apps
 units:
 - learn.azure.aspnet-session.1-introduction
