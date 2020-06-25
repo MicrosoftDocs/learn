@@ -6,7 +6,7 @@ metadata:
   description: Summarize the purpose of session state, and describe how to store session state information in an ASP.NET web app.
   ms.date: 06/16/2020
   author: coderandhiker
-  ms.author: chrisrt@microsoft.com
+  ms.author: chrisrt
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
