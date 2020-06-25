@@ -129,7 +129,12 @@ Changing the color map for 3D plots like these can sometimes make details cleare
 
   The output is:
 
+  > [!div class="alert is-tip"]
+  > Output
+
   :::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups-countries-viridis.svg" alt-text="Scatter plot output":::
+
+  ***
 
 </details>
 
