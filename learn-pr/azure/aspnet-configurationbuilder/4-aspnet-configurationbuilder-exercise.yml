@@ -20,8 +20,5 @@ tasks:
   azure:
     resource: 
       type: Microsoft.KeyVault/vaults
-      tags:
-        -name: Name
-        -value: WebAppKeyVault
   hint: "Make sure you create the Azure Key Vault"
     
