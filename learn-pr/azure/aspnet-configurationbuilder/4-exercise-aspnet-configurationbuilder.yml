@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.aspnet-configurationbuilder.4-asp-net-configurationbuilder-exercise
+uid: learn.azure.aspnet-configurationbuilder.4-exercise-aspnet-configurationbuilder
 title: Exercise - Configure an Azure Web app with ConfigurationBuilder
 metadata:
   title: Exercise - Configuring an Azure Web app with ConfigurationBuilder
@@ -13,5 +13,5 @@ durationInMinutes: 10
 interactive: powershell
 azureSandbox: true
 content: |
-  [!include[](includes/4-aspnet-configurationbuilder-exercise.md)]
+  [!include[](includes/4-exercise-aspnet-configurationbuilder.md)]
     
