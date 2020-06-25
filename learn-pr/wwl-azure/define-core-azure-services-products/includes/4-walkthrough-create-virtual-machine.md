@@ -23,7 +23,7 @@ In this task, we will create a Windows Server 2019 Datacenter virtual machine.
     | Settings | Values |
     |  -- | -- |
     | Subscription | Ensure **Concierge Subscription** is selected |
-    | Resource group | **[sandbox resource group name]** |
+    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
     | Virtual machine name | **myVm** |
     | Location | **(US) East US**|
     | Image | **Windows Server 2019 Datacenter**|

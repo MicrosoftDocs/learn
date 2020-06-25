@@ -20,7 +20,7 @@ In this task, we will create a SQL database based on the AdventureWorksLT sample
     | Setting | Value | 
     | --- | --- |
     | Subscription | **Choose Concierge Subscription** |
-    | Resource group | **[sandbox resource group name]** |
+    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
     | Database name| **db1** | 
     | | |
 
