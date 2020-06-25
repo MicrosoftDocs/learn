@@ -9,7 +9,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
-durationInMinutes: 5 # dummy number at present
+durationInMinutes: 4
 content: |
 quiz:
   questions:
