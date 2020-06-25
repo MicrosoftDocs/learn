@@ -4,8 +4,8 @@ metadata:
   title: Azure SQL - Deliver consistent performance
   description: TODO
   ms.date: 07/31/2020
-  author: amthomas46
-  ms.author: antho
+  author: rgward
+  ms.author: bobward
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure SQL - Deliver consistent performance
@@ -28,11 +28,13 @@ units:
 - learn.learn.azure-sql-performance.1-introduction
 - learn.learn.azure-sql-performance.2-performance-capabilities
 - learn.learn.azure-sql-performance.3-configure-maintain-performance
-- learn.learn.azure-sql-performance.4-exercise-monitor-troubleshoot-performance
-- learn.learn.azure-sql-performance.5-common-performance-scenarios
-- learn.learn.azure-sql-performance.6-exercise-scale-performance
-- learn.learn.azure-sql-performance.7-exercise-optimize-app-performance
-- learn.learn.azure-sql-performance.8-intelligent-performance
-- learn.learn.azure-sql-performance.9-summary
+- learn.learn.azure-sql-performance.4-monitor-troubleshooting-performance
+- learn.learn.azure-sql-performance.5-performance-scenarios
+- learn.learn.azure-sql-performance.6-exercise-monitor-troubleshoot-performance
+- learn.learn.azure-sql-performance.7-accelerate-tune-performance
+- learn.learn.azure-sql-performance.8-exercise-scale-performance
+- learn.learn.azure-sql-performance.9-exercise-optimize-app-performance
+- learn.learn.azure-sql-performance.10-intelligent-performance
+- learn.learn.azure-sql-performance.11-summary
 badge:
   uid: learn.learn.azure-sql-performance.badge
