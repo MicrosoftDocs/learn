@@ -1,4 +1,8 @@
-You're almost finished creating a Node.js masterpiece for Tailwind Traders. So far, your code reads any given directory, finds all ".json" files, and creates a "totals.txt" file. In this exercise, you'll complete the project by reading the ".json" files, adding up the store totals, and writing the grand total to the "totals.txt" file.
+The "fs" module in Node.js can also be used to write data to files and read data from files.
+
+You're almost finished creating a Node.js masterpiece for Tailwind Traders. So far, your code reads any given directory, finds all ".json" files, and creates a "totals.txt" file.
+
+In this exercise, you'll complete the project by reading the ".json" files, adding up the store totals, and writing the grand total to the "totals.txt" file.
 
 ## Create method to calculate sales totals
 
@@ -71,7 +75,6 @@ You're almost finished creating a Node.js masterpiece for Tailwind Traders. So f
 
      // find paths to all the sales files
      const salesFiles = findSalesFiles(salesDir);
-     console.log(salesFiles);
 
      // read through each sales file to cacluate the sales total
      const salesTotal = calculateSalesTotal(salesFiles);

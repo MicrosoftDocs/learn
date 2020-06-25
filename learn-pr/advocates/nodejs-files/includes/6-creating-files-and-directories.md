@@ -1,4 +1,8 @@
+Creating and deleting new files and directories programatically is a common requirement for line of business applications.
+
 So far, you've learned how to work with files, directories using the "fs" module. The "fs" module can also be used to create, delete, copy, move and otherwise manipulate files and directories on a system programatically.
+
+Here you will learn how to use the "fs" module to create directories and files.
 
 ## Creating directories
 

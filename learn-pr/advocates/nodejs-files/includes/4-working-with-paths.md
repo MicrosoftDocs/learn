@@ -1,4 +1,8 @@
-File system paths can get long and messy. In the previous exercise, it wasn't too bad because we didn't have many folders to find and look through. But if you had lots of files or folders, manually building paths can get tedious. Node.js provides some built-in constants and utilities to make files paths easier.
+Node.js has a built-in mechanism for working with file system paths.
+
+In the previous exercise, it wasn't too bad because we didn't have many folders to find and look through. But if you had lots of files or folders, manually building paths can get tedious. Node.js provides some built-in constants and utilities to make files paths easier.
+
+Here, you will learn about the Node.js "path" module and the `__dirname` constant so that you can make the program smarter and more reslient.
 
 ## Determining the current directory
 
@@ -21,8 +25,6 @@ If you executed that code from the "sales" folder in the following folder struct
 ## Working with paths
 
 Paths are a subject that comes up so frequently, Node.js includes a module called "path" specifically for working with paths.
-
-:::image type="content" source="../media/node-modules-path.png" alt-text="Node modules diagram with path highlighted":::
 
 Just like the "fs" module, the "path" module ships with Node.js and doesn't need to be installed. You just need to reference it at the top of your file...
 

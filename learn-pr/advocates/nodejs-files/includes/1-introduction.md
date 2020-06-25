@@ -1,8 +1,8 @@
-Tailwind Traders is the second largest online retailer in the world. They deal with mountains of data and files. They've hired you (yes you) to help them manage their data and files using Node.js. Congratulations on the new job!
+Node.js has powerful built-in mechanisms for working with the file system.
 
-Tailwind Traders collects sales information at the end of each night from each of their brick and mortar locations. Each store reports their sales by sending a file with their sales totals to a central file store.
+Assume for a moment that you work for a company called, "Tailwind Traders". Tailwind Traders is the second largest online retailer in the world. They deal with mountains of data and files. They've hired you (yes you) to help them manage their data and files using Node.js. Congratulations on the new job!
 
-Tailwind Traders wants you to write a program that will read the totals in these files and calculate a grand total. In this module, you'll use Node.js to build that program for Tailwind Traders and cement your place in computer science history.
+In this module, you will write a program that searches through folders for sales files. When those files are found, you'll use Node.js to read and parse the sales total data inside. Finally, you'll summarize those sales totals into one grand total and write that value to a new file.
 
 ## Learning objectives
 
@@ -16,4 +16,5 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
-TODO
+- Knowledge of the JavaScript programming language
+- Familiarity with basic programming constructs, such as loops and "if" statements

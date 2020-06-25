@@ -1,10 +1,14 @@
-Node.js provides a built-in module for working with the file system. It's called the "fs" module. This is short for, you guessed it, "File System".
+Large retailers will often write data to files so that it can be processed later in batch.
+
+At Tailwind Traders, they have each of their stores write their sales totals to a file and send that file to a central location. In order to work with those files, a batch process needs to be created that knows how to work with the file system.
+
+Here you will learn how to use Node.js to read the file system to discover files and directories.
 
 ## Including the fs module
 
-The "fs" module is included by default in Node.js, which means you don't need to install it from npm.
+Node.js provides a built-in module for working with the file system. It's called the "fs" module. This is short for, you guessed it, "File System".
 
-:::image type="content" source="../media/node-modules-fs.png" alt-text="Node modules diagram":::
+The "fs" module is included by default in Node.js, which means you don't need to install it from npm.
 
 This can be a bit confusing because you can't actually see the "fs" module in your file system or in your "node_modules" folder. So how do you include the "fs" module in a project? You reference it just like you would any other dependency.
 

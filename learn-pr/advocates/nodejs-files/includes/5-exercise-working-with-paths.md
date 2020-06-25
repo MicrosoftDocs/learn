@@ -1,4 +1,8 @@
-In the previous exercise, you wrote a _stunning_ program that iterates through a folder to find any of the "sales.json" files inside. In this exercise, you'll use the "path" module to improve that program, ensure that it will run in any folder and will find any file with a ".json" extension.
+The Node.js "path" module and `__dirname` global variable are two ways to define and compose file system paths.
+
+In the previous exercise, you wrote a _stunning_ program that iterates through a folder to find any of the "sales.json" files inside.
+
+In this exercise, you'll use the "path" module and `__dirname` global variable to improve that program so that it will find any file with a ".json" extension.
 
 ## Include the "path" module
 
@@ -46,7 +50,7 @@ In the current "index.js" code, you're passing the static location of the "store
 
 Instead of concatenating folder names to make a new path to search, you'll change the code to use the `path.join` method so that this code will work across operating systems.
 
-1. In the "findSalesFiles" method, change the `findFiles` method to use `path.join`.
+1. In the "findFiles" method, change the `findFiles` method to use `path.join`.
 
    ```javascript
    // search this directory for files (this is recursion!)
@@ -65,7 +69,7 @@ Instead of concatenating folder names to make a new path to search, you'll chang
 
 ## Finding all .json files
 
-Instead of looking for just `sales.json` files, this program needs to search for any JSON file that might be present. To do that, use the `path.extname` method to check the file extension.
+Instead of looking for just `sales.json` files, this program needs to search for any file with an extension of ".json". To do that, use the `path.extname` method to check the file extension.
 
 1. Execute the following command in the terminal to rename the "stores/201/sales.json" file to "stores/sales/totals.json".
 
@@ -142,11 +146,6 @@ function findSalesFiles(folderName) {
 
 function main() {
   const salesDir = path.join(__dirname, "stores");
-
-  // create the salesTotal directory if it doesn't exist
-  if (fs.existsSync(salesTotalsDir) === false) {
-    fs.mkdirSync(salesTotalsDir);
-  }
 
   // find paths to all the sales files
   const salesFiles = findSalesFiles(salesDir);

@@ -1,4 +1,8 @@
-The "fs" module is used to write data to files and read data from files.
+Reading data from files and writing data to files is a core concept in Node.js.
+
+Tailwind Traders needs to write the sum total of all their individual store sales files to a new file that contains just that grand total. This file will then be loaded into their sales system.
+
+Here, you'll learn how to use the "fs" module to read and write to files.
 
 ## Reading data from files
 
