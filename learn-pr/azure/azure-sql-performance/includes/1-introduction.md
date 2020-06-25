@@ -6,11 +6,11 @@ Throughout the exercises, it's important to also read the accompanying text to t
 
 In this module, the following topics will be discussed:
 
-Azure SQL performance capabilities<br>
-Configuring and Maintaining for Performance<br>
-Monitoring and troubleshooting performance in Azure SQL<br>
-Accelerating and Tuning Performance in Azure SQL<br>
-Intelligent Performance in Azure SQL<br>
+- Azure SQL performance capabilities<br>
+- Configuring and Maintaining for Performance<br>
+- Monitoring and troubleshooting performance in Azure SQL<br>
+- Accelerating and Tuning Performance in Azure SQL<br>
+- Intelligent Performance in Azure SQL<br>
 
 Prerequisites for exercises
 
