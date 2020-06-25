@@ -13,5 +13,5 @@ durationInMinutes: 5
 interactive: powershell
 azureSandbox: true
 content: |
-  [!include[](includes/2-setup.md)]
+  [!include[](includes/2-exercise-setup-app-deploy-resources.md]
   
