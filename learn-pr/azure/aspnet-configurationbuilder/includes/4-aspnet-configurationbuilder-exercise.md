@@ -59,13 +59,13 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
 8. Find the user principal name (UPN) of your account in Azure AD.
 
     ```PowerShell
-    $upn = (Get-AzADUser).UserPrincipalName
+    $objectId=az ad signed-in-user show --query objectId -o tsv
     ```
 
 9. Grant your account privileges to create and retrieve secrets and keys from the key vault.
 
     ```PowerShell
-    Set-AzKeyVaultAccessPolicy –VaultName $vaultName -PermissionsToKeys create,decrypt,delete,encrypt,get,list,unwrapKey,wrapKey -PermissionsToSecrets get,list,set,delete -UserPrincipalName $upn
+    Set-AzKeyVaultAccessPolicy --VaultName $vaultName -PermissionsToKeys create,decrypt,delete,encrypt,get,list,unwrapKey,wrapKey -PermissionsToSecrets get,list,set,delete -ObjectId $objectId
     ```
 
 10. Store the secure string in the key vault, with the key **CatalogDBContext**.
