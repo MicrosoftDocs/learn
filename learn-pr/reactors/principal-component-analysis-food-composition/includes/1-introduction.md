@@ -13,3 +13,5 @@ In this module, you will:
 ## Prerequisites
 
 - Text classifications with Naive Bayes
+
+[!INCLUDE Set up your environment]

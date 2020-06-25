@@ -17,3 +17,4 @@ In this module, you will:
 
 - Introduction to Python for data science
 
+[!INCLUDE Set up your environment]

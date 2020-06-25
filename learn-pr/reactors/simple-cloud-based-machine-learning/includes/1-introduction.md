@@ -18,3 +18,5 @@ In this module, you will:
 - Review the steps to manipulate and clean data.
 - Understand machine learning models for data science.
 - Have an active Azure Subscription
+
+[!INCLUDE Set up your environment]
