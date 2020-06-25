@@ -5,20 +5,20 @@ Here, you'll download and test the application locally, and then create the reso
 ## Download and test the sample web application locally
 
 1. Using Windows Explorer, create a folder named **MigrationWorkshop** in a convenient place on your computer.
-2. Open a command prompt window, and move to the **MigrationWorkshop** folder.
-3. Run the following command to download the sample application from the Microsoft repository on GitHub:
+1. Open a command prompt window, and move to the **MigrationWorkshop** folder.
+1. Run the following command to download the sample application from the Microsoft repository on GitHub:
 
     ```bash
     git clone https://github.com/dotnet-architecture/eShopModernizing.git
     ```
 
-4. Start Visual Studio 2019.
-5. Click **Open a project or solution**.
+1. Start Visual Studio 2019.
+1. Click **Open a project or solution**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Visual Studio 2019 start screen. The user has selected **Open a project or solution**](..\media\2-open-project-or-solution.png)
 
-6. Browse to the **MigrationWorkshop** folder, move to the **eShopModernizing** folder, move to the **eShopLegacyWebFormsSolution** folder, select the **eShopLegacyWebFormsSolution**, and then click **Open**.
+1. Browse to the **MigrationWorkshop** folder, move to the **eShopModernizing** folder, move to the **eShopLegacyWebFormsSolution** folder, select the **eShopLegacyWebFormsSolution**, and then click **Open**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the Open Project/Solution dialog box in Visual Studio 2019. The user has selected the **eShopLegacyWebForms** solution](..\media\2-open-solution.png)
@@ -30,17 +30,17 @@ Here, you'll download and test the application locally, and then create the reso
     
     If this occurs, click **Install** to install the required items, and follow the instructions.
 
-7. This project currently uses v2.0.1 of the **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Perform the following steps to:
+1. This project currently uses v2.0.1 of the **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Perform the following steps to:
 
     1. Close Visual Studio, and start it again. 
     2. Open the **eShopLegacyWebFormsSolution** solution, and on the **Build** menu, select **Rebuild Solution**.
 
-8. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
+1. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Solution Explorer window. The user has selected the **Web.config** file](..\media\2-open-web-config.png).
 
-9. In the **Web.config** file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting will cause the application to use data stored in a local SQL Server database:
+1. In the **Web.config** file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting will cause the application to use data stored in a local SQL Server database:
 
     ```xml
     ...
@@ -51,14 +51,14 @@ Here, you'll download and test the application locally, and then create the reso
     ...
     ```
 
-10. Press **F5** to build and run the application. The application will open a web browser and display the **Catalog Manager** page for the web application.
+1. Press **F5** to build and run the application. The application will open a web browser and display the **Catalog Manager** page for the web application.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **Catalog Manager** page for the sample application in a web browser window](..\media\2-catalog-manager.png)
 
     The Catalog Manager enables you to view the products sold by the organization, add new products, modify the details of existing products, and delete products.
 
-11. Experiment with the application; try adding, editing, and removing products. Close the web browser when you've finished. This action will stop the application and return you to Visual Studio.
+1. Experiment with the application; try adding, editing, and removing products. Close the web browser when you've finished. This action will stop the application and return you to Visual Studio.
 
 ## Create Azure resources for running the application as an Azure web app
 
