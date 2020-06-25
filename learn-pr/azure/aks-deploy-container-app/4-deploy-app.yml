@@ -27,14 +27,14 @@ quiz:
           isCorrect: false
           explanation: "It's possible to store several image versions using image tags, but this is not the main purpose of this resource."
 
-    - content: "How to log in to an ACR resource through Azure CLI?"
+    - content: "What is a manifest file"
       choices:
-        - content: "az aks acr-login -n <your-registry-name>"
+        - content: "Files that manifest Kubernetes' intentions in your computer"
           isCorrect: false
-          explanation: "ACR and AKS are not the same resource, so they'll not be on the same command"
-        - content: "az acr login -n <your-registry-name>"
+          explanation: "Manifest files are no related to Kubernetes' intentions"
+        - content: "Describe exactly how the cluster can be accessed through contexts"
+          isCorrect: false
+          explanation: "This is the .kube/config file"
+        - content: "Describe everything needed to create and manage a workload"
           isCorrect: true
-          explanation: "That's the right command!"
-        - content: "az container login -n <your-registry-name>"
-          isCorrect: false
-          explanation: "This command is related to Azure Container Instances, which is not the same resource"
+          explanation: "Manifests describe what kind of workloads you want to create"
