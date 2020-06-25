@@ -36,4 +36,4 @@ Jupyter Notebooks are divided into cells. Each cell contains either text written
 </details>
 
 > [!TIP]
-> Several units in this module include a Hint feature that you can select to reveal the answer to a practice question. This feature works best in Google Chrome and the lastet Chromium-based Microsoft Edge browsers. In other browsers, the answer might be not be hidden.
+> Several units in this module include a Hint feature that you can select to reveal the answer to a practice question. This feature works best in Google Chrome and the latest Chromium-based Microsoft Edge browsers. In other browsers, the answer might be not be hidden.
