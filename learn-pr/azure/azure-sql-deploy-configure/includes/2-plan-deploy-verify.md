@@ -58,10 +58,10 @@ The Hyperscale tier within Azure SQL Database (not yet in Azure SQL Managed Inst
 As you increase or decrease the resources in a service tier, the limits for dimensions such as CPU, storage, memory, and more may change up to a certain threshold. While there's a multi-faceted approach to governance in Azure SQL, primarily the following three technologies are leveraged to govern your usage of resources in Azure SQL:  
 
 * Windows Job Objects allow a group of processes to be managed and governed as a unit. Job objects are used to govern the file virtual memory commit, working set caps, CPU affinity, and rate caps. You can leverage the DMV `sys.dm_os_job_object` to see the limits in place.
-* Resource Governor is a SQL Server feature that helps users (and in this case Azure) govern resources including CPU, physical IO, memory, and more.
-* File Server Resource Manager (FSRM) is available in Windows Server and is used to govern file directory quotas.
+* Resource Governor is a SQL Server feature that helps users (and in this case Azure) govern resources including CPU, physical IO, memory, and more. Azure SQL Managed Instance also allows user defined Resource Governor workload groups and pools.
+* File Server Resource Manager (FSRM) is available in Windows Server and is used to govern file directory quotas which is used to manage max data sizes.
 
-Finally, there have been additional implementations to govern transaction log rate, through *transaction log rate governance*. This process limits high ingestion rates for workloads such as `BULK INSERT`, `SELECT INTO`, and index builds, and they are tracked and enforced as the subsecond level. They currently scale within a service tier linearly with the maximum log rate allowed being 96 MB/s in the vCore model.
+Finally, there have been additional implementations to govern transaction log rate built into the database engine for Azure, through *transaction log rate governance*. This process limits high ingestion rates for workloads such as `BULK INSERT`, `SELECT INTO`, and index builds, and they are tracked and enforced as the subsecond level. They currently scale within a service tier linearly.
 
 ## Verify
 
