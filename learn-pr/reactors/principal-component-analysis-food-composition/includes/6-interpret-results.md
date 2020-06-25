@@ -1,8 +1,8 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-What do our vectors mean? Put another way, what kinds of foods populate the different clusters we have discovered among the data?
+What do our vectors mean? Put another way, what kinds of foods populate the different clusters we've discovered among the data?
 
-To see the results, we will create a pandas Series for each component, index the components by feature, and then sort them in decreasing order. A higher number represents a feature that is positively correlated with that vector and negative numbers represent low correlation.
+To see the results, we'll create a pandas series for each component, index the components by feature, and then sort them in decreasing order. A higher number represents a feature that is positively correlated with that vector. Negative numbers represent low correlation.
 
 First, run this code:
 
@@ -71,7 +71,8 @@ Our first cluster is defined by foods that are high in protein and minerals, lik
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Particularly when it comes to interpretation, subject matter expertise can prove essential to producing high-quality analysis. For this reason, you should also try to include SMEs in your data science projects.
+> Particularly with interpretation, subject matter expertise can prove essential to producing high-quality analysis. For this reason, you should also try to include SMEs in your data science projects.
+
 Then, run this code:
 
 ```python
@@ -165,7 +166,7 @@ Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
 ***
 
-Even without subject matter expertise, it is possible to get a more accurate sense of the kinds of foods are defined by each component? Yes! For this reason, we merged the `FoodGroup` column back into `pca_df`. We will sort that DataFrame by the components and count the values from `FoodGroup` for the top items:
+Even without subject matter expertise, is it possible to get a more accurate sense of the kinds of foods that each component defines? Yes! For this reason, we merged the `FoodGroup` column back into `pca_df`. We'll sort that DataFrame by the components and count the values from `FoodGroup` for the top items:
 
 ```python
 pca_df.sort_values(by='c1')['FoodGroup'][:500].value_counts()
@@ -238,7 +239,7 @@ Repeat this process for $c_{3}$, $c_{4}$, and $c_{5}$.
 
 
 > [!NOTE]
-> The category **Baby Foods** and some other categories might seem to dominate the output. This is a result of all the rows we had to drop because they had `NaN` values. If we look at all of the value counts for the category **FoodGroup**, we will see that they aren't evenly distributed; some categories are far more represented than others.
+> The category **Baby Foods** and some other categories might seem to dominate the output. This is a result of all the rows we had to drop because they had `NaN` values. If we look at all of the value counts for the category **FoodGroup**, we'll see that they aren't evenly distributed. Some categories are far more represented than others.
 
 ```python
 df['FoodGroup'].value_counts()
