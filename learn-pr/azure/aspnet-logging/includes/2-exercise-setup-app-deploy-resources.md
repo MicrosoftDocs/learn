@@ -71,11 +71,17 @@ Here, you'll download and test the application locally, and then create the reso
 1. Run the commands shown below to define the following PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password of your choosing. This password will be used by the instance of Azure SQL Database that the application connects to.  
 
     > [!NOTE]
-    > The resource group <rgn>[sandbox resource group name]</rgn> has been created automatically, as part of the sandbox configuration.
+    > The resource group <rgn>[sandbox resource group name]</rgn> has been created automatically. Use this as your resource group name, you will not have permission to create additional resource groups in the sandbox.
 
     ```PowerShell
     $useralias = "<your-initals-with-suffix>"
+    ```
+
+    ```PowerShell
     $serveradminpassword = "<your-password>"
+    ```
+
+    ```PowerShell
     $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
@@ -97,21 +103,17 @@ Here, you'll download and test the application locally, and then create the reso
 
     Wait for the script to create the resources used by the lab before continuing.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your Azure account.
+1. Run the following PowerShell script tp verify that the resources have been cteated successfully:
 
-1. On the home page of the portal, click **Resource groups**.
+    ```PowerShell
+    ./verify.ps1
+    ```
 
-    > [!div class="mx-imgBorder"]
-    > ![Image of home page in the Azure portal. The user has selected **Resource groups**](..\media\2-resource-groups.png)
+    You should see the following messages:
 
-1. On the **Resource groups** page, select the **<rgn>[sandbox resource group]</rgn>** resource group.
-
-1. Verify that the resource group contains the following resources:
-
-    - A SQL database, named **eShop**
-    - An App Service, with the suffix **webapp**
-    - An App Service plan, with the suffix **webappplan**
-    - A SQL Server, with the suffix **workshop-server**
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of the resource group in the Azure portal, showing the resources created by the setup instructions just performed](..\media\2-azure-resources.png)
+    ```output
+    The app service plan was created
+    The web app was created
+    The database server was created
+    The database was created
+    ```
