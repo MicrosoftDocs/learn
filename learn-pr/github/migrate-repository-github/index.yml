@@ -33,7 +33,7 @@ products:
 units:
 - learn.github.migrate-repository-github.1-introduction
 - learn.github.migrate-repository-github.2-how-to-migrate-to-github
-- learn.github.migrate-repository-github.3-migrating-your-repository-to-github
+- learn.github.migrate-repository-github.3-migrate-your-repository-to-github
 - learn.github.migrate-repository-github.4-knowledge-check
 - learn.github.migrate-repository-github.5-summary
 badge:
