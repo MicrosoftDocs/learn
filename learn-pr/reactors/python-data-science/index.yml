@@ -22,6 +22,7 @@ prerequisites: |
   - None
 # placeholder icon
 iconUrl: /learn/achievements/reactors/python-data-science.svg
+hidden: true
 levels:
 - beginner
 roles:

@@ -74,6 +74,4 @@ To set up the work item:
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
 
-[!include[](../../shared/includes/enable-multi-stage-pipelines.md)]
-
 [!include[](../../shared/includes/automate-local-setup.md)]

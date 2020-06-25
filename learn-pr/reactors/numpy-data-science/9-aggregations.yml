@@ -3,7 +3,7 @@ uid: learn.reactors.numpy-data-science.9-aggregations
 title: Aggregations
 metadata:
   title: Aggregations
-  description: Learn ways to aggregate data in NumPy.
+  description: Learn how to aggregate data in NumPy.
   ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
