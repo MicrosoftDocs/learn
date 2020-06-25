@@ -106,7 +106,7 @@ The output is:
 "\nEverything between the sets of three quotation marks, including new lines,\nis part of the multiline comment. Technically, the Python interpreter\nsees the comment as simply a string. And, because the string is not otherwise\nused in code, it's ignored.\n"
 ```
 
-For this reason, it's best in notebooks to use the hash ("#") comment character at the beginning of each line. Better still, just use a Markdown cell outside of a code cell in a Jupyter notebook!
+For this reason, it's best in notebooks to use the hash ("#") comment character at the beginning of each line. Better still, just use a Markdown cell outside a code cell in a Jupyter notebook!
 
 Strings can be _concatenated_ (glued together) by using the plus ("+") operator, and repeated by using the multiply ("*") operator:
 

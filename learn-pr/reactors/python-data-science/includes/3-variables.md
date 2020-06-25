@@ -1,4 +1,4 @@
-As in other programming languages, it's often essential in Python to save values for later by using variables. Python assigns values to variables by using the equals sign ("="):
+As in other programming languages, it's often essential in Python to save values for later by using variables. Python assigns values to variables by using the equal sign ("="):
 
 ```python
 length = 15
