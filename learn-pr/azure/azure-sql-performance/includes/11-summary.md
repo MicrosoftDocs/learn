@@ -4,7 +4,7 @@ Monitoring and troubleshooting are important so in this module you learned the v
 
 Finally you learned the unique capabilities of Intelligent Performance in Azure SQL including a bonus hands-on activity to see how Automatic Tuning for indexes work in Azure SQL.
 
-Keep in mind the following key points about Azure SQL Performance:
+Keep in mind the following key points about Azure SQL Performance and learn more with these resources:
 
 - Fixed capacities to choose from for CPU, memory, and I/O. Study the resource limits for Azure SQL [Managed Instances](https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/resource-limits) and [Databases](https://docs.microsoft.com/en-us/azure/azure-sql/database/resource-limits-vcore-single-databases).
 - [I/O configuration](https://techcommunity.microsoft.com/t5/datacat/storage-performance-best-practices-and-considerations-for-azure/ba-p/305525) for Managed Instance may improve performance.
