@@ -25,6 +25,7 @@ summary: |
 prerequisites: |
     - Introduction to Python for data science
 iconUrl: /learn/achievements/reactors/beginners-python-data-science.svg
+hidden: true
 levels:
 - beginner
 roles:

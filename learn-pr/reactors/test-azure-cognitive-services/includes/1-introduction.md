@@ -42,3 +42,5 @@ In this module, you will:
 ## Prerequisites
 
 - Basic understanding of Python
+
+[!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]

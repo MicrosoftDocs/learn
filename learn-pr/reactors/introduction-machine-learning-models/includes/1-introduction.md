@@ -23,3 +23,5 @@ In this module, you will:
 ## Prerequisites
 
 None.
+
+[!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]
