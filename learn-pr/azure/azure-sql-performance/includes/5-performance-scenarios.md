@@ -78,3 +78,5 @@ Even though these waits may not slow down your application you may not be expect
 The Hyperscale unique architecture can result in some unique performance wait types that start with RBIO*
 
 In addition, DMVs, catalog views, and Extended Events have been enhanced to show metrics for Page Server reads.
+
+You will now learn in an exercise how to monitor and solve a performance problem for Azure SQL using the tools and knowledge you have gained to this point.
