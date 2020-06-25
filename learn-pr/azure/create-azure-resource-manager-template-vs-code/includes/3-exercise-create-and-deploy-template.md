@@ -128,7 +128,7 @@ Here, you add an Azure storage account resource to the template using a snippet 
     Notice the ```tags:``` and ```location:``` attributes are filled in. The ```location:``` attribute is using a function to set the location of the resource to the location of the resource group. You learn about tags and functions in the next module.
 
 1. Change the values of the resource *name:* and *displayName:* to something unique. For example, **learnexercise12321**. This name must be unique across all of Azure, so choose something unique to you.
-1. Change the value of the sku *name* from **Premium_LRS** to **Standard**. Do the same for the value of *tier*. Notice that Visual Studio Code gives you the proper choices for your attribute values in intellisense.
+1. Change the value of the sku *name* from **Premium_LRS** to **Standard_LRS**. Change the value of *tier* to **Standard**. Notice that Visual Studio Code gives you the proper choices for your attribute values in intellisense. Delete the default value including the quotes and type quotes to see this work.
 
     :::image type="content" source="../media/3-vs-code-intellisense.png" alt-text="Visual Studio Code showing the intellisense choices for the name attribute of the storage SKU." border="true":::
 
