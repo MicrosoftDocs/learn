@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   show_latex: true
-durationInMinutes: 10
+durationInMinutes: 25
 content: |
   [!include[](includes/6-categorical-data.md)]

@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   show_latex: true
-durationInMinutes: 10
+durationInMinutes: 12
 content: |
   [!include[](includes/3-simple-linear-regression.md)]
