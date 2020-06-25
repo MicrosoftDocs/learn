@@ -10,7 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Accelerate and Tune Performance
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/7-accelerate-tune-performance.md)]

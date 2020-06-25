@@ -34,7 +34,9 @@ The process of recompiling execution plans uses database resources, increases th
 
 Automatic tuning can analyze a query performance workload against a database over time and recommend forced parameterization for the database. If over time, performance degradation has been observed, the option will be disabled.
 
-The following is an example from the Azure Portal where indexes are recommended for a database based on workload analysis over time
+The following is an example from the Azure Portal where indexes are recommended for a database based on workload analysis over time.
+
+You can yourself try out the following example as a separate exercise on your own Azure subscription by following the steps in Module 4.5 at https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/04-Performance.md. (The scripts used in this example are also in the 04-Performance/tuning_recommendations folder).
 
 ![Index_Recommendation_Notification](../media/Index_Recommendation_Notification.png)
 

@@ -1,6 +1,89 @@
 In this exercise you will learn how to monitor and troubleshoot a performance problem with Azure SQL using familiar and new tools and capabilities.
 
+### Set up: Use scripts to deploy Azure SQL Database
+
+In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script, there will be some prompts, for a password and your local IP address.  
+
+In order to get the IP address required, you must disconnect from any VPN service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` in a local PowerShell window (not in this browser).  
+
+This script should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
+
+**Don't forget to note your password, unique ID, and region. You will need these throughout the module.**  
+
+```powershell
+# Prompt for password
+$adminSqlLogin = "cloudadmin"
+$password = Read-Host "Your username is 'cloudadmin'. Please enter a password for your Azure SQL Database server that meets the password requirements"
+# Prompt for local ip address
+$ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Please enter the value (include periods) next to 'Address': "
+# Get resource group and location and random string
+$resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like learn* | Select-Object -Property ResourceGroupName | Select-Object -Index 0
+$resourceGroupName = $resourceGroup.ResourceGroupName
+$randomString = Get-Random -Minimum 100000 -Maximum 1000000
+$storageAccountName = "mslearnsa"+$randomString
+$rg = Get-AzResourceGroup | Where ResourceGroupName -like learn*
+$location = $rg.Location
+# The logical server name has to be unique in the system
+$serverName = "aw-server$($randomString)"
+# The sample database name
+$databaseName = "AdventureWorks"
+# The storage account name has to be unique in the system
+$storageAccountName = $("sql$($randomString)")
+# Create a new server with a system wide unique server name
+$server = New-AzSqlServer -ResourceGroupName $resourceGroupName `
+    -ServerName $serverName `
+    -Location $location `
+    -SqlAdministratorCredentials $(New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $adminSqlLogin, $(ConvertTo-SecureString -String $password -AsPlainText -Force))
+# Create a server firewall rule that allows access from the specified IP range and all Azure services
+$serverFirewallRule = New-AzSqlServerFirewallRule `
+    -ResourceGroupName $resourceGroupName `
+    -ServerName $serverName `
+    -FirewallRuleName "AllowedIPs" `
+    -StartIpAddress $ipAddress -EndIpAddress $ipAddress 
+$allowAzureIpsRule = New-AzSqlServerFirewallRule `
+    -ResourceGroupName $resourceGroupName `
+    -ServerName $serverName `
+    -AllowAllAzureIPs
+# Create a database 
+$database = New-AzSqlDatabase  -ResourceGroupName $resourceGroupName `
+    -ServerName $serverName `
+    -DatabaseName $databaseName `
+    -SampleName "AdventureWorksLT" `
+    -Edition "GeneralPurpose" -Vcore 2 -ComputeGeneration "Gen5"
+# Enable Advanced data security
+$advancedDataSecurity = Enable-AzSqlServerAdvancedDataSecurity `
+    -ResourceGroupName $resourceGroupName `
+    -ServerName $serverName
+# Create a Storage Account 
+$storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName `
+    -AccountName $storageAccountName `
+    -Location $location `
+    -Type "Standard_LRS"
+Write-Host "Please note your unique ID for future exercises in this module:"  
+Write-Host $randomString
+Write-Host "Your resource group name is:"
+Write-Host $resourceGroupName
+Write-Host "Your resources were deployed in the following region:"
+Write-Host $location
+Write-Host "Your server name is:"
+Write-Host $serverName
+```
+
+Open SSMS and create a new connection to your logical server.  
+
+For server name, input the name of your Azure SQL Database logical server. You may need to refer to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) to get this, e.g. *aw-server`<unique ID>`.database.windows.net*.  
+
+Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
+
+Check the **Remember password** box and select **Connect**.  
+
+> **Note**: Depending on your local configuration (e.g. VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
+
+![Connect to SQL Database in SSMS](../media/connectazsql.png)  
+
 ### Prepare the exercise
+
+All scripts for this exercise can be found at *04-Performance\monitor_and_scale*in the GitHub repository or zip file you downloaded.
 
 1. Setup to Monitor Azure SQL Database
 

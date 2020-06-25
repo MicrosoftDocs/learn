@@ -8,6 +8,8 @@ Assume that to support a new extension to a website for AdventureWorks orders to
 
 When you move your test to Azure SQL Database using the General Purpose tier (8 vCores), the INSERT workload is slower. You need to discover whether you need to change the service objective or tier to support the new workload.
 
+All scripts for this exercise can be found at *04-Performance\tuning_applications* in the GitHub repository or zip file you downloaded.
+
 1. Create a new table
 
 Run the following T-SQL statement (or use the script **order_rating_ddl.sql**) to create a table in the AdventureWorks database you have used in the first two activities:

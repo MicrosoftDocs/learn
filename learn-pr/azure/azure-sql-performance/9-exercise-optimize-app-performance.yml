@@ -10,7 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Optimize application performance
 durationInMinutes: 10
-interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/9-exercise-optimize-app-performance.md)]

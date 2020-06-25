@@ -2,6 +2,8 @@
 
 In this exercise you will take the problem you encountered in the first exercise and improve performance by scaling more CPUs for Azure SQL Database
 
+All scripts for this exercise can be found at *04-Performance\monitor_and_scale*in the GitHub repository or zip file you downloaded.
+
 1. Decide options on how to scale performance
 
 Since workload is CPU bound, one way to improve performance is to increase CPU capacity or speed. A SQL Server user would have to move to a different machine or reconfigure a VM to get more CPU capacity. In some cases, even a SQL Server administrator may not have permission to make these scaling changes or the process could take time.
