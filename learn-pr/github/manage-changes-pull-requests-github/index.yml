@@ -36,7 +36,7 @@ products:
 units:
 - learn.github.manage-changes-pull-requests-github.1-introduction
 - learn.github.manage-changes-pull-requests-github.2-what-are-pull-requests
-- learn.github.manage-changes-pull-requests-github.3-reviewing-pull-requests
+- learn.github.manage-changes-pull-requests-github.3-review-pull-requests
 - learn.github.manage-changes-pull-requests-github.4-knowledge-check
 - learn.github.manage-changes-pull-requests-github.5-summary
 badge:

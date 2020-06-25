@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.manage-changes-pull-requests-github.3-reviewing-pull-requests
+uid: learn.github.manage-changes-pull-requests-github.3-review-pull-requests
 title:  Exercise - Reviewing pull requests
 metadata:
   title:  Exercise - Reviewing pull requests
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 35
 content: |
-  [!include[](includes/3-reviewing-pull-requests.md)]
+  [!include[](includes/3-review-pull-requests.md)]
