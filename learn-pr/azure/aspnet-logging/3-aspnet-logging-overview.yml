@@ -6,7 +6,7 @@ metadata:
   description: Summarize the purpose of logging, and describe how to implement logging in an ASP.NET web app.
   ms.date: 06/15/2020
   author: coderandhiker
-  ms.author: chrisrt@microsoft.com
+  ms.author: chrisrt
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
