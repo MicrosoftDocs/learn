@@ -19,4 +19,4 @@ In this module, you will:
 - Understand machine learning models for data science.
 - Have an active Azure Subscription
 
-[!INCLUDE Set up your environment]
+[!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]

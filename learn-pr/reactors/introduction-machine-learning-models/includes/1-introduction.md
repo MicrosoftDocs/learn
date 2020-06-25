@@ -24,4 +24,4 @@ In this module, you will:
 
 None.
 
-[!INCLUDE Set up your environment]
+[!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]
