@@ -20,8 +20,5 @@ tasks:
   azure:
     resource: 
       type: Microsoft.Cache/Redis
-      tags:
-        -name: Name
-        -value: SessionCache
   hint: "Make sure you create the Redis Cache"
     
