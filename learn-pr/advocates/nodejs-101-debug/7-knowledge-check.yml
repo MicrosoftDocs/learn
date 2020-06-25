@@ -42,3 +42,17 @@ quiz:
         - content: "By setting a breakpoint in your code."
           isCorrect: true
           explanation: "When using a debugger, you can using breakpoints to pause execution at specific points in your code."
+    - content: "What is the best way to print information in the console during debugging?"
+      choices:
+        - content: "With a breakpoint"
+          isCorrect: false
+          explanation: "A breakpoint allows you to pause execution but not print information in the console."
+        - content: "By adding a `console.log()` call in my code"
+          isCorrect: false
+          explanation: "While this will work, it's not the best way as you alter your program by doing this and may forgot to remove it before shipping to production."
+        - content: "With a logpoint"
+          isCorrect: true
+          explanation: "A logpoint allows you to display information in the console while debugging, without altering your code."
+        - content: "By watching a variable"
+          isCorrect: false
+          explanation: "When watching a variable you see its value at all times during debugging in the watch panel, not in the debug console."
