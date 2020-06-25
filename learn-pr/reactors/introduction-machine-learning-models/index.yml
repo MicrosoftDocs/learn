@@ -21,6 +21,7 @@ prerequisites: |
   - Review the steps to manipulate and clean data.
 # placeholder icon
 iconUrl: /learn/achievements/reactors/introduction-machine-learning-models.svg
+hidden: true
 levels:
 - beginner
 roles:
