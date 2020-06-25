@@ -26,6 +26,7 @@ summary: |
 prerequisites: |
   None.
 iconUrl: /learn/achievements/reactors/introduction-python-data-science.svg
+hidden: true
 levels:
 - beginner
 roles:
