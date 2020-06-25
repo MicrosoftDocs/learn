@@ -6,8 +6,13 @@ The Fibonacci sequence is a suite of numbers starting with the number 0 and 1, w
 0, 1, 1, 2, 3, 5, 8, 13, 21...
 ```
 
-Let's create a new Node.js program to illustrate that.
-In the terminal on the right, type:
+Let's create a new Node.js program to illustrate that. Before diving into the exercise, copy and paste the command below in the terminal on the right to prepare the Node.js environment:
+
+```bash
+source <(curl -s https://aka.ms/install-node-lts)
+```
+
+Once everything has finished installing, create a new JavaScript file with:
 
 ```bash
 code fibonacci.js
