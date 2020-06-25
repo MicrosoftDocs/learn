@@ -33,7 +33,7 @@ Degree of parallelism works exactly the same in the engine for Azure SQL as SQL 
 - sp_configure for 'max degree of parallelism' is supported for Managed Instance.
 - MAXDOP Query hints are fully supported
 - Configuring MAXDOP with Resource Governor is supported only for Managed Instance
--
+
 ## Resource Governor
 
 Resource Governor is supported for Azure SQL Managed Instance for user defined workload groups and pools.

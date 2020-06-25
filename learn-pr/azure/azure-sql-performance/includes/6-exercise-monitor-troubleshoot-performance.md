@@ -98,6 +98,7 @@ INNER JOIN sys.dm_exec_sessions es
 ON er.session_id = es.session_id
 AND es.is_user_process = 1;
 ```
+
 Unlike SQL Server, the familiar DMV dm_exec_requests shows active requests for a specific Azure SQL Database vs an entire server. Azure SQL Database Managed instance will behave just like SQL Server.
 
 In another session for SSMS *in the context of the database* load a query to monitor a Dynamic Management View (DMV) unique to Azure SQL Database called **sys.dm_db_resource_stats** from a script called **dmdbresourcestats.sql**
@@ -110,17 +111,18 @@ This DMV will track overall resource usage of your workload against Azure SQL Da
 
 2. Prepare the workload script
 
-Edit the script that runs ostress **sqlworkload.cmd**:<br>
-- Substitute your Azure Database Server created in Module 2 for the **-S parameter**<br>
-- Substitute the login name created for the Azure SQL Database Server created in Module 2 for the **-U parameter**<br>
-- Substitute the database you deployed in Module 2 for the **-d parameter**<br>
+Edit the script that runs ostress **sqlworkload.cmd**:
+
+- Substitute your Azure Database Server created in Module 2 for the **-S parameter**
+- Substitute the login name created for the Azure SQL Database Server created in Module 2 for the **-U parameter**
+- Substitute the database you deployed in Module 2 for the **-d parameter**
 - Substitute the password for the login for the Azure SQL Database Server created in Module 2 for the **-P parameter**.
 
 ### Run workload and observe performance
 
 3. Run the workload
 
-- Examine the workload query from the script **topcustomersales.sql**. 
+- Examine the workload query from the script **topcustomersales.sql**.
 
 This database is not large so the query to retrieve customer and their associated sales information ordered by customers with the most sales shouldn't generate a large result set. It is possible to tune this query by reducing the number of columns from the result set but these are needed for demonstration purposes of this activity.
 
@@ -144,13 +146,14 @@ SET @x = @x + 1;
 END
 GO
 ```
+
 - Run the workload from the command line using ostress.
 
 This script will use 10 concurrent users running the workload query 2 times (Notice the script itself runs a single batch but loops 10,000 times. It also assigned the result to a variable therefore eliminating almost all result set traffic to the client. This is not necessary but helps show a "pure" CPU workload run all on the server.)
 
 >**TIP:** If you are not seeing CPU usage behavior with this workload for your environment you can adjust the **-n parameter** for number of users and **-r parameter** for iterations.
 
-From a powershell command prompt, change to the directory for this module activity: 
+From a powershell command prompt, change to the directory for this module activity:
 
 [vmusername] is the name of the user in your Windows Virtual Machine. Substitute in the path for c:\users\\[vmusername] where you have cloned the GitHub repo.
 
@@ -240,29 +243,29 @@ Query Store comes with a series of system catalog views to view performance data
 
 5. Look at queries consuming the most resources in SSMS
 
-Using the Object Explorer in SSMS, open the Query Store Folder to find the report for **Top Resource Consuming Queries**<br>
+Using the Object Explorer in SSMS, open the Query Store Folder to find the report for **Top Resource Consuming Queries**
 
 ![SSMS_QDS_Find_Top_Queries](../media/SSMS_QDS_Find_Top_Queries.png)
 
-Select the report to find out what queries have consumed the most avg resources and execution details of those queries. Based on the workload run to this point, your report should look something like the following:<br>
+Select the report to find out what queries have consumed the most avg resources and execution details of those queries. Based on the workload run to this point, your report should look something like the following:
 
 ![SSMS_QDS_Top_Query_Report](../media/SSMS_QDS_Top_Query_Report.png)
 
 The query shown is the SQL query from the workload for customer sales. This report has 3 components: Queries with the high total duration (you can change the metric), the associated query plan and runtime statistics, and the associated query plan in a visual map.
 
-If you click on the bar chart for the query (the query_id may be different for your system), your results should look like the following:<br>
+If you click on the bar chart for the query (the query_id may be different for your system), your results should look like the following:
 
 ![SSMS_QDS_Query_ID](../media/SSMS_QDS_Query_ID.png)
 
 You can see the total duration of the query and query text.
 
-Right of this bar chart is a chart for statistics for the query plan associated with the query. Hover over the dot associated with the plan. Your results should look like the following:<br>
+Right of this bar chart is a chart for statistics for the query plan associated with the query. Hover over the dot associated with the plan. Your results should look like the following:
 
 ![SSMS_Slow_Query_Stats](../media/SSMS_Slow_Query_Stats.png)
 
 Note the average duration of the query. Your times may vary but the key will be to compare this average duration to the average wait time for this query and eventually the average duration when we introduce a performance improvement.
 
-The final component is the visual query plan. The query plan for this query looks like the following:<br>
+The final component is the visual query plan. The query plan for this query looks like the following:
 
 ![SSMS_Workload_Query_Plan](../media/SSMS_Workload_Query_Plan.png)
 
@@ -272,7 +275,7 @@ Given the small nature of rows in the tables in this database, this query plan i
 
 We know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status along with almost 100% CPU. Query Store comes with reports to look at possible performance bottlenecks to due waits on resources.
 
-Below the Top Resource Consuming Queries report in SSMS is a report called Query Wait Statistics. Click on this report and hover over the bar chart. Your results should look like the following:<br>
+Below the Top Resource Consuming Queries report in SSMS is a report called Query Wait Statistics. Click on this report and hover over the bar chart. Your results should look like the following:
 
 ![SSMS_Top_Wait_Stats](../media/SSMS_Top_Wait_Stats.png)
 
@@ -284,13 +287,13 @@ Notice that the average wait time for CPU for this query is a high % of the over
 
 Given the evidence to this point, without any query tuning, our workload requires more CPU capacity than we have deployed for our Azure SQL Database.
 
-###  Observing performance with Azure Monitor
+### Observing performance with Azure Monitor
 
 Let's use one other method to view the performance of our workload. Azure Monitor provides performance metrics which you can view in various methods including Azure Portal.
 
 7. Use Azure Metrics to observe performance
 
-In the Overview page for an Azure SQL database, the standard default view is called **Compute Utilization** which you can see on the Overview blade for your database:<br>
+In the Overview page for an Azure SQL database, the standard default view is called **Compute Utilization** which you can see on the Overview blade for your database:
 
 ![Azure_Portal_Compute_Slow_Query](../media/Azure_Portal_Compute_Slow_Query.png)
 
@@ -317,6 +320,7 @@ AzureMetrics
 | project TimeGenerated, Average
 | render columnchart
 ```
+
 Your results would look like the following:
 
 ![kusto_query_metric_cpu_percent](../media/kusto_query_metric_cpu_percent.png)

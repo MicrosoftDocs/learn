@@ -61,7 +61,7 @@ Azure SQL can put limits on transaction log usage called *log rate governance*. 
 SQL Server uses a worker pool of threads but has limits on the maximum number of workers:
 
 - Azure SQL Database has limits based on service tier and size. If you exceed this limit, a new query would receive an error.
-- Azure SQL Managed Instance uses 'max worker threads' so workers past this limit may see THREADPOOL waits. 
+- Azure SQL Managed Instance uses 'max worker threads' so workers past this limit may see THREADPOOL waits.
 
 **Note**: Managed Instance in the future may enforce worker limits similar to Azure SQL Database.
 

@@ -14,7 +14,7 @@ Using the Azure Portal we can see options for how you can scale for more CPU res
 
 ![Azure_Portal_Change_Tier](../media/Azure_Portal_Change_Tier.png)
 
-Here you can see options for changing or scaling compute resources. For General Purpose, you can easily scale up to something like 8 vCores.<br>
+Here you can see options for changing or scaling compute resources. For General Purpose, you can easily scale up to something like 8 vCores.
 
 ![Azure_Portal_Compute_Options](../media/Azure_Portal_Compute_Options.png)
 
@@ -40,7 +40,7 @@ SELECT DATABASEPROPERTYEX('<database name>', 'ServiceObjective');
 GO
 ```
 
-For the current Azure SQL Database deployment, your results should look like the following:<br><br>
+For the current Azure SQL Database deployment, your results should look like the following:
 
 ![service_objective_results](../media/service_objective_results.png)
 
@@ -58,7 +58,7 @@ Using SSMS, run the script modify_service_objective.sql or T-SQL command:
 ALTER DATABASE AdventureWorks<ID> MODIFY (SERVICE_OBJECTIVE = 'GP_Gen5_8');
 ```
 
-This statement comes back immediately but the scaling of the compute resources take place in the background. A scale this small should take less than a minute and for a short period of time the database will be offline to make the change effective. You can monitor the progress of this scaling activity using the Azure Portal.<br>
+This statement comes back immediately but the scaling of the compute resources take place in the background. A scale this small should take less than a minute and for a short period of time the database will be offline to make the change effective. You can monitor the progress of this scaling activity using the Azure Portal.
 
 ![Azure_Portal_Update_In_Progress](../media/Azure_Portal_Update_In_Progress.png)
 
@@ -69,6 +69,7 @@ Run this query to see the output of this DMV at any point in time (You must be i
 ```sql
 SELECT * FROM sys.dm_operation_status;
 ```
+
 Here is an example of the output of this DMV after executing the above ALTER DATABASE statement:
 
 <table>
@@ -144,19 +145,19 @@ The workload duration from **sqlworkload.cmd** should now be much less and somew
 
 - Observe Query Store reports
 
-Using the same techniques as the first exercise in this module, look at the **Top Resource Consuming Queries** report from SSMS:<br>
+Using the same techniques as the first exercise in this module, look at the **Top Resource Consuming Queries** report from SSMS:
 
 ![SSMS_QDS_Top_Query_Faster](../media/SSMS_QDS_Top_Query_Faster.png)
 
 You will now see two queries (query_id). These are the same query but show up as different query_id values in Query Store because the scale operation required a restart so the query had to be recompiled. You can see in the report the overall and average duration was significantly less.
 
-Look also at the Query Wait Statistics report as you did in Section 4.3 Activity 1. You can see the overall average wait time for the query is less and a lower % of the overall duration. This is good indication that CPU is not as much of a resource bottleneck when the database had a lower number of vCores:<br>
+Look also at the Query Wait Statistics report as you did in Section 4.3 Activity 1. You can see the overall average wait time for the query is less and a lower % of the overall duration. This is good indication that CPU is not as much of a resource bottleneck when the database had a lower number of vCores:
 
 ![SSMS_Top_Wait_Stats_Query_Faster](../media/SSMS_Top_Wait_Stats_Query_Faster.png)
 
 - Observe Azure Portal Compute Utilization
 
-Look at the Overview blade again for the Compute Utilization. Notice the significant drop in overall CPU resource usage compared to the previous workload execution:<br>
+Look at the Overview blade again for the Compute Utilization. Notice the significant drop in overall CPU resource usage compared to the previous workload execution:
 
 ![Azure_Portal_Compute_Query_Comparison.png](../media/Azure_Portal_Compute_Query_Comparison.png)
 

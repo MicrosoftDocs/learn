@@ -37,12 +37,14 @@ INNER JOIN sys.dm_exec_sessions es
 ON er.session_id = es.session_id
 AND es.is_user_process = 1;
 ```
+
 - Use the following query or script **top_waits.sql** to look at top wait types by count *in the context of the AdventureWorks database*:
 
 ```sql
 SELECT * FROM sys.dm_os_wait_stats
 ORDER BY waiting_tasks_count DESC;
 ```
+
 - Use the following query or script **tlog_io.sql** to observe latency for transaction log writes:
 
 ```sql
@@ -55,9 +57,9 @@ FROM sys.dm_io_virtual_file_stats
 
 Edit the workload script **order_rating_insert_single.cmd**.
 
-Substitute your Azure Database Server created in Module 2 for the **-S parameter**<br>
+Substitute your Azure Database Server created in Module 2 for the **-S parameter**
 Substitute the login name created for the Azure SQL Database Server created in Module 2 for the **-U parameter**
-Substitute the database you deployed in Module 2 for the **-d parameter**<br>
+Substitute the database you deployed in Module 2 for the **-d parameter**
 Substitute the password for the login for the Azure SQL Database Server created in Module 2 for the **-P parameter**.
 
 4. Run the workload
@@ -75,9 +77,10 @@ INSERT INTO SalesLT.OrderRating
 VALUES (@x, getdate(), 5, 'This was a great order');
 END
 ```
+
 You can see from this script that it is not exactly a real depiction of data coming from the website but it does simulate many order ratings being ingested into the database.
 
-From a powershell command prompt, change to the directory for this module activity: 
+From a powershell command prompt, change to the directory for this module activity:
 
 [vmusername] is the name of the user in your Windows Virtual Machine. Substitute in the path for c:\users\\[vmusername] where you have cloned the GitHub repo.
 
@@ -99,7 +102,7 @@ Using the queries in Step 2 you should observe the following:
 - The WRITELOG wait type is one of the highest count for wait types.
 - The avg time to write to the transaction log is somewhere around 2ms.
 
-The duration of this workload on a SQL Server 2019 instance with a SSD drive is somewhere around 15 seconds. The total duration using this on Azure SQL Database using a Gen5 v8core ~20 seconds. 
+The duration of this workload on a SQL Server 2019 instance with a SSD drive is somewhere around 15 seconds. The total duration using this on Azure SQL Database using a Gen5 v8core ~20 seconds.
 
 WRITELOG wait types are indicative of latency flushing to the transaction log. 2ms per write doesn't seem like much but on a local SSD drive these waits may < 1ms.
 

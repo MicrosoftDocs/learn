@@ -34,7 +34,7 @@ The Azure Portal can be used to view common metrics data for Azure SQL through A
 
 Azure SQL Database uses the Query Store to provide performance visualization for query performance analysis including **Query Performance Insight**.
 
-## Dynamic Management Views (DMV)
+## Dynamic Management Views (DMV) Details
 
 Dynamic Management Views (DMV) have been a driving force to monitor and troubleshoot performance for many years with SQL Server. Common DMVs for SQL Server are available with Azure SQL and some additional ones specific to Azure
 
@@ -64,17 +64,17 @@ These DMVs provide deeper insight into resource limits and resource governance f
 - **sys.dm_resource_governor_resource_pools_history_ex**
 - **sys.dm_resource_governor_workload_groups_history_ex**
 
-## Extended Events
+## Extended Events Details
 
 Extended events is the de factor tracing mechanism for SQL Server. Extended events for Azure SQL is based on the SQL Server engine and therefore is the same with a few notable differences:
 
-### Azure SQL Database
+### Extended Events for Azure SQL Database
 
 - Most commonly used Events and Actions are supported
 - File, ring_buffer, and counter targets are supported. File
 - File targets are supported with Azure Blob Storage
 
-### Azure SQL Managed Instance
+### Extended Events for Azure SQL Managed Instance
 
 - All events, targets, and actions are supported
 - File targets are supported with Azure Blog Storage
