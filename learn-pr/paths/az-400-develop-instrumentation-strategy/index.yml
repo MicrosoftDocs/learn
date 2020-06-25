@@ -23,25 +23,21 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-app-service
-- azure-application-insights
-- azure-cdn
-- azure-container-instances
-- azure-event-grid
-- azure-functions
-- azure-kubernetes-service
-- azure-logic-apps
-- azure-monitor
 - azure-portal
 - azure-resource-manager
+- azure-application-insights
+- azure-monitor
+- azure-event-grid
 - azure-sentinel
 - azure-security-center
 - azure-service-health
-- azure-spring-cloud
-- azure-sql-database
-- azure-traffic-manager
-- azure-virtual-machines
 - vs-app-center
+- azure-virtual-machines
+- azure-app-service
+- azure-container-instances
+- azure-functions
+- azure-kubernetes-service
+- azure-logic-apps
 modules:
 - learn.azure.capture-application-logs-app-service
 - learn.control-and-organize-with-resource-manager
