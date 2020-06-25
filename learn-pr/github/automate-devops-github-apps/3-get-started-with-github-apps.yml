@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.automate-devops-github-apps.3-getting-started-with-github-apps
+uid: learn.github.automate-devops-github-apps.3-get-started-with-github-apps
 title:  Exercise - Getting started with GitHub Apps
 metadata:
   title:  Exercise - Getting started with GitHub Apps
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 54
 content: |
-  [!include[](includes/3-getting-started-with-github-apps.md)]
+  [!include[](includes/3-get-started-with-github-apps.md)]
