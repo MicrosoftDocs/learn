@@ -47,7 +47,7 @@ The logger currently writes to a local file. While this approach is fine for a w
 1. Create an AppInsights instance. 
 
     > [!NOTE]
-    > Neither the Azure PowerShell nor the Azure CLI have a direct command for creating this resource type at this time. You must use the general purpose Azure Resource creation command shown below. When prompted, select **Y** and press Eenter to create the AppInsights instance.
+    > Neither the Azure PowerShell nor the Azure CLI have a direct command for creating this resource type at this time. You must use the general purpose Azure Resource creation command shown below. When prompted, select **Y** and press Enter to create the AppInsights instance.
 
     ```PowerShell
     $appinsights = New-AzResource -ResourceName $appinsightsname -ResourceGroupName $resourcegroupname -Location $location -ResourceType "Microsoft.Insights/components" -Properties (-join('{"ApplicationId":"', $appinsightsname, '","Application_Type":"other"}')) -Tag @{Name="AppInsightsLog"}
