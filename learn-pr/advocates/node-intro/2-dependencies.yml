@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.2-dependencies
-title: Dependencies
+title: Add Dependencies to your Node.js project
 metadata:
-  title: Dependencies
-  description: Dependencies
+  title: Add Dependencies to your Node.js project
+  description: This unit will explain how to add and remove dependencies to your Node.js application.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/25/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
 durationInMinutes: 3

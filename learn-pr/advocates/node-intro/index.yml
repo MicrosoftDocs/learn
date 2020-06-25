@@ -2,8 +2,8 @@
 uid: learn.node-intro
 metadata:
   title: Install Node.js and Manage Dependencies 
-  description: Install Node.js and Manage Dependencies  
-  ms.date: 06/04/2020
+  description: Install and manage Dependencies for your Node.js application. 
+  ms.date: 06/25/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -12,7 +12,10 @@ title: Install Node.js and Manage Dependencies
 summary: Learn how to 
 abstract: |
   In this module you will:
-  - Learn about X
+  - Install and Uninstall dependencies
+  - Know the difference between global and local installs
+  - Manage your dependencies and update them in a predictable way
+  - Leverage a package.json file to describe your projects, manage dependencies run scripts and more
 iconUrl: /learn/achievements/node-intro.svg
 levels:
 - beginner
@@ -25,8 +28,8 @@ units:
 - learn.node-intro.1-introduction
 - learn.node-intro.2-dependencies
 - learn.node-intro.3-exercise-dependencies
-- learn.node-intro.4-install-uninstall
-- learn.node-intro.5-exercise-install-uninstall
+- learn.node-intro.4-local-global-installation
+- learn.node-intro.5-exercise-local-global-installation
 - learn.node-intro.6-updating
 - learn.node-intro.7-exercise-updating
 - learn.node-intro.8-package-json

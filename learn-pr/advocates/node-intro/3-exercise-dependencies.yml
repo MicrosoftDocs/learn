@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.3-exercise-dependencies
-title: Exercise - Dependencies
+title: Exercise - Install Dependencies
 metadata:
-  title: Exercise - Dependencies
-  description: Exercise - Dependencies
+  title: Exercise - Install Dependencies
+  description: Exercise in how to add and remove dependencies to your Node.js project.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/25/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
 durationInMinutes: 4

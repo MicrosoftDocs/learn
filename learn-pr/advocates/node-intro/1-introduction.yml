@@ -3,10 +3,10 @@ uid: learn.node-intro.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
+  description: Build your app faster by using dependencies on NPM. Manage dependencies and your Node.js project by configuring the package.json file.  
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/25/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
 durationInMinutes: 1

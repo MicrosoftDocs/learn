@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.9-exercise-package-json
-title: Exercise - Package.json
+title: Exercise - Configure package.json
 metadata:
-  title: Exercise - Package.json
-  description: Exercise - Package.json
+  title: Exercise - Configure package.json
+  description: Exercise in how to configure package.json to add metadata but also create and run scripts to manage your Node.js throughout its lifetime.
   author: 
   ms.author: chnoring
   ms.date: 04/14/2020

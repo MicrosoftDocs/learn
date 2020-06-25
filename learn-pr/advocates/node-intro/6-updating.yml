@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.6-updating
-title: Updating
+title: Manage dependency updates in your Node.js project
 metadata:
-  title: Updating
-  description: Updating
+  title: Manage dependency updates in your Node.js project
+  description: This unit will explain how to update the dependencies in your app and how to do so in a predictable way.
   author: 
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/25/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
 durationInMinutes: 4

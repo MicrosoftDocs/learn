@@ -1,6 +1,6 @@
 As a Node.js developer on Tailwind Traders, learning how to set up a new Node.js project becomes an important skill to have. Setup includes generating a manifest file but also be able to create some common scripts that you are likely to use throughout the project lifecycle to manage it.
 
-## Setup a new Node.js project
+## Set up a new Node.js project
 
 Open up a terminal window.
 
@@ -20,7 +20,7 @@ Open up a terminal window.
     node init -y
     ```
 
-   This will generate a `package.json` file. It should look something like this:
+   This command will generate a `package.json` file. It should look something like this:
 
     ```json
     {
@@ -66,7 +66,7 @@ Open up a terminal window.
     }
     ```
 
-1. Add the folllowing entry to the `scripts` section:
+1. Add the following entry to the `scripts` section:
 
    ```json
    "start": "node ./src/index.js",
@@ -80,11 +80,11 @@ Open up a terminal window.
 
    There isn't much happening in `index.js` yet but it's good to have a command setup to easily start up the project.
 
-## Add testing to yor project
+## Add testing to your project
 
 Now that you have a manifest file you can move on to set up some scripts that you will use throughout the lifetime of the project.
 
-Before you go on to setup the scripts you need a test library.
+Before you go on to set up the scripts, you need a test library.
 
 1. Type the following command:
 
@@ -92,9 +92,9 @@ Before you go on to setup the scripts you need a test library.
     npm install jest --save-dev
     ```
 
-    This will install the test library Jest and an entry will be added in the `devDependencies` section of the `package.json` file.
+    This command will install the test library Jest and an entry will be added in the `devDependencies` section of the `package.json` file.
 
-1. Create the directory `lib` and under it the sub directory `__tests__`. In the directory `lib/` create a file `example.js`. Finally in the `__tests__` directory create a file `example.js`. Your directory structure should now look like so:
+1. Create the directory `lib` and under it the sub directory `__tests__`. In the directory `lib/`, create a file `example.js`. Finally in the `__tests__` directory creates a file `example.js`. Your directory structure should now look like so:
 
     ```bash
     --| app/
@@ -115,7 +115,7 @@ Before you go on to setup the scripts you need a test library.
     }
     ```
 
-    You've now setup the our Node.js project with the actions `test` and `test:watch`.
+    You've now setup your Node.js project with the actions `test` and `test:watch`.
 
 1. Add the following code to `example.js`:
 
@@ -155,7 +155,7 @@ Before you go on to setup the scripts you need a test library.
     Ran all test suites.
     ```
 
-    This executed all tests successfully.
+    This command executed all tests successfully.
 
 1. Type the following command to invoke the `test:watch` task:
 

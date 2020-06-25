@@ -1,8 +1,8 @@
-As a Node.js developer at Tailwind Traders you will most likely install packages at the start of but also during the development of an app. Knowing how to install packages is a great skill to have as it enables you to build your application faster. You can incorporate the functioanlity of a dependency in your program instead of writing that piece of code yourself.
+As a Node.js developer at Tailwind Traders you will most likely install packages at the start of but also during the development of an app. Knowing how to install packages is a great skill to have as it enables you to build your application faster. You can incorporate the functionality of a dependency in your program instead of writing that piece of code yourself.
 
 ## Install/Uninstall packages with npm
 
-You install package by using the NPM command line tool. Ensure you are standing in an empty directory and have a terminal window open.
+You install package by using the NPM command-line tool. Ensure you are standing in an empty directory and have a terminal window open.
 
 1. Type the following command in the terminal to install the package `jest`:
 
@@ -10,7 +10,7 @@ You install package by using the NPM command line tool. Ensure you are standing 
    npm install jest
    ```
 
-   Inspect the folder. You should now see the following structure, a file `package-lock.json` and the directory `node_modules` have been created:
+   Inspect the folder. You should now see the following structure, a file `package-lock.json`, and the directory `node_modules` have been created:
 
    ```bash
    -| package-lock.json
@@ -19,25 +19,25 @@ You install package by using the NPM command line tool. Ensure you are standing 
 
    Four things have happened when you typed the install command:
 
-   1. A `package-lock.json` file has been created, this is a file that contains information exactly on what packages are installed.
+   1. A `package-lock.json` file has been created, this file contains information exactly on what packages are installed.
    1. A directory `node_modules` has been created, this directory is where all your locally installed packages will end up.
-   1. An executable `jest` has been added to `node_modules/.bin`. This means you can invoke your package like a command line tool by typing `jest` in the terminal
-   1. The NPM tool has installed your package and its dependencies, it will have installed the package `jest` that we asked for. As part of how Node.js works it will have installed all dependencies that `jest` is dependant on. If you expand the `node_modules` directory you will see a lot more packages than just `jest`, that's all the dependencies.
+   1. An executable `jest` has been added to `node_modules/.bin` and means you can invoke your package like a command-line tool by typing `jest` in the terminal.
+   1. The NPM tool has installed your package and its dependencies, it will have installed the package `jest` that we asked for. As part of how Node.js works, it will have installed all dependencies that `jest` is dependent on. If you expand the `node_modules` directory you will see a lot more packages than just `jest`, that's all the dependencies.
 
-1. Uninstall the dependency we just installed by typing the following command:
+1. Uninstall the dependency we installed by typing the following command:
 
    ```bash
    npm uninstall jest
    ```
 
-   You should get an output similar to this:
+   You should get an output similar to the below:
 
    ```output
    removed 502 packages in 5.239s
    found 0 vulnerabilities
    ```
 
-   As you can see `jest`, and its dependencies, was a fairly big thing to install but thanks to our `npm uninstall` command we managed to free up some space.
+   As you can see `jest`, and its dependencies, was a fairly large thing to install but thanks to our `npm uninstall` command we managed to free up some space.
 
 ## Install a dev dependency
 
@@ -83,7 +83,7 @@ You are about to install the `jest` package once again but this time you will in
     }
     ```
 
-   Above we have an entry `jest` that is specified as a key-value entry with its name and a pattern for which versions it will adhere to according to semantic versioning. How you author this pattern will be covered more in-depth in the next section in this module. To see the exact version that was installed we can open up the file `package-lock.json` and locate a section ` "jest": {`. This will tell you it installed the version `25.4.0`.
+   Above we have an entry `jest` that is specified as a key-value entry with its name and a pattern for which versions it will adhere to, according to semantic versioning. How you author this pattern will be covered more in-depth in the next section in this module. To see the exact version that was installed, you can open up the file `package-lock.json` and locate an entry ` "jest": {`. This entry will tell you it installed version `25.4.0`.
 
 ### Clean up
 
@@ -100,7 +100,7 @@ Let's try the latter.
     "devDependencies": {}
     ```
 
-    The above will tell the `package.json` file you no longer want this dependency. It still exist within the `node_modules` directory though.
+    The above will tell the `package.json` file you no longer want this dependency. It still exists within the `node_modules` directory though.
 
 1. To remove unused dependencies from the `node_modules` folder, type the following command:
 
@@ -108,7 +108,7 @@ Let's try the latter.
     npm prune
     ```
 
-   This command will remove all orphaned packages. An orphaned package is a package that exist in the `node_modules/` directory but is not listed in the `dependencies` or `devDependencies` section of the `package.json` file.
+   This command will remove all orphaned packages. An orphaned package is a package that exists in the `node_modules/` directory but is not listed in the `dependencies` or `devDependencies` section of the `package.json` file.
 
    You should see the following output:
 

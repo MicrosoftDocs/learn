@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.8-package-json
-title: Package.json
+title: Configure Package.json
 metadata:
-  title: Package.json
-  description: Package.json
+  title: Configure Package.json
+  description: This unit will explain how you can configure the `package.json` file to describe the project better. It will also cover how to create and run various scripts that can help you manage the project throughout its lifetime.
   author: 
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/25/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
 durationInMinutes: 4

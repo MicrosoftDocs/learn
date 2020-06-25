@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.node-intro.4-local-global-installation
-title: Install/Uninstall
+title: Install dependencies locally and globally
 metadata:
-  title: Install/Uninstall
-  description: Install/Uninstall
+  title: Install dependencies locally and globally
+  description: This unit will explain how to install dependencies locally and globally and what the difference is.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/25/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
 durationInMinutes: 3

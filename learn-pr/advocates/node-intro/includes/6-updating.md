@@ -2,17 +2,17 @@ Sooner or later you will want to update to a new version of a library. The reaso
 
 There are considerations that should be taken into account prior to attempt to update a library, namely:
 
-- **The type of update**, what type of update is available, is it a small bug fix? Is it adding a new feature I need or will it break my code? A way to communicate what type of update that takes place is by adhering to a system called Semantic versioning. Based on how the version number of the library is expressed this communicates to a developer what type of update they are dealing with.
-- **Is my project configured correctly**, you can configure your Node.js project in a way so that you only get the types of updates you want. That means you will only perform an update if a specific type of update is available. This is recommended approach as you don't risk running into surprises.
-- **Mitigate issues**, part of manage your project dependencies over time means keeping a look out for issues. Issues that might arise are that vulnerabilities might be detected. Hopefully patches will be released that you can download. The NPM executable helps you run an *audit* on your libraries to find out if you have packages that should be updated and the executable also helps you with the appropriate action to fix the issue.
+- **The type of update**, what type of update is available, is it a small bug fix? Is it adding a new feature I need or will it break my code? A way to communicate what type of update that takes place is by adhering to a system called Semantic versioning. Based on how the version number of the library is expressed it communicates to a developer what type of update they are dealing with.
+- **Is my project configured correctly**, you can configure your Node.js project in a way so that you only get the types of updates you want. That means you will only perform an update if a specific type of update is available. It's a recommended approach as you don't risk running into surprises.
+- **Mitigate issues**, part of managing your project dependencies over time means being aware of that issues might occur. Issues arise as vulnerabilities are detected for example. Hopefully patches will be released that you can download. The NPM executable helps you run an *audit* on your libraries to find out if you have packages that should be updated and the executable also helps you with the appropriate action to fix the issue.
 
 ## Semantic versioning
 
 Your package has a version. It should follow something called semantic versioning. Semantic versioning means a version number can be divided up into the following sections:
 
-- **major version**, the left most number e.g `1` in `1.0.0`, changing major version means that we can expect breaking changes in the code. A lot of things have changed.
-- **minor version**, the middle number e.g `2` in `1.2.0`, this usually means features have been added. Your code should still be working. It's generally safe to update minor version.
-- **patch version**, the right most number e.g `3` in `1.2.3`, this means a fix has been applied that fixes something in the code that should have worked. It should be safe to update patch version.
+- **major version**, the leftmost number e.g `1` in `1.0.0`, changing major version means that we can expect breaking changes in the code. Many things have changed.
+- **minor version**, the middle number e.g `2` in `1.2.0`, means features have been added. Your code should still be working. It's generally safe to update minor version.
+- **patch version**, the rightmost number e.g `3` in `1.2.3`, means a fix has been applied that fixes something in the code that should have worked. It should be safe to update patch version.
 
 Below is a table showing different types and what number changes in what position.
 
@@ -24,7 +24,7 @@ Below is a table showing different types and what number changes in what positio
 
 ## Update approach
 
-How do we approach this as Node.js developers? We can communicate to Node.js what behavior we want. We want to think about this in terms of risk. You could reason like this:
+How do we approach updating as Node.js developers? We can communicate to Node.js what behavior we want. We want to think about updating in terms of risk. You could reason like this:
 
 - **Upgrade major version**, I'm ok to update to the latest major version as soon as it's out then I accept the fact that I might need to change code on my end.
 - **Minor version**, I'm ok with a new feature being added. I'm not ok with code that breaks.
@@ -36,9 +36,9 @@ We can communicate what approach we want to take for a package. Node.js has a se
 
 What we do is add different prefixes to our package entry in the `package.json` file. The prefixes you can add are:
 
-- `~` or `1.1.x`, this will update patch version. If you only want the patch version to update you would specify like this `~1.0.0`. What this says is equal or great to in the same range.
-- `^` or `1.x.1`, this will update only the minor version. This says equal to or greater in the same range.
-- `*` or `x.0.0`, this will update to the highest major version.
+- `~` or `1.1.x`, this instruction will update to the latest patch version. If you only want the patch version to update, you would specify like this `~1.0.0`. What this instruction says is equal or great to in the same range.
+- `^` or `1.x.1`, this instruction will update only the minor version.
+- `*` or `x.0.0`, this instruction will update to the highest major version.
 - `>` or `<`, larger/less than, `< 3`. Will install the latest major version available e.g `2.1.1`.
 - `-`, range `1.0.0 - 1.5.0`, will only install a version in this range, e.g `1.3.1` if that's the highest version on that range.
 - `1.0.0-rc.1`, include pre-release versions like `1.0.0-alpha` and `1.0.0-alpha`.
@@ -55,7 +55,7 @@ found 3 vulnerabilities (1 low, 2 high)
   run `npm audit fix` to fix them, or `npm audit` for details
 ```
 
-Above it's listing vulnerabilities in different severity levels, high and low. If you have any high level vulnerability you should update. To fix this we can run `npm audit` as indicated by above log response. Doing so lists each vulnerability. A response from `npm audit` can look like this:
+Above its listing vulnerabilities in different severity levels, high, and low. If you have any high-level vulnerability, you should update. To fix an issue and apply an update, you can run `npm audit` as indicated by above log response. Doing so lists each vulnerability. A response from `npm audit` can look like this:
 
 ```bash
 # Run  npm install lodash@4.17.15  to resolve 3 vulnerabilities
@@ -70,4 +70,4 @@ Above it's listing vulnerabilities in different severity levels, high and low. I
 and so on..
 ```
 
-The command `npm audit fix` attempts to fix the problem to a point. It tries to upgrade to a minor version where the problem no longer exist. That may not be enough, it may tell you that you need to run `npm audit fix --force` to fix the problem. Such an action involves a breaking change i.e the major version of your package will be updated.
+The command `npm audit fix` attempts to fix the problem to a point. It tries to upgrade to a minor version where the problem no longer exists. That action may not be enough, it may tell you that you need to run `npm audit fix --force` to fix the problem. Such an action involves a breaking change i.e the major version of your package will be updated.
