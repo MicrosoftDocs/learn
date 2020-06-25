@@ -5,17 +5,15 @@ metadata:
   description: Learn how to implement logging in an ASP.NET web application, to store log data in Azure blob storage, and incorporate log information in Application Insights performance data.
   ms.date: 06/15/2020
   author: coderandhiker
-  ms.author: chrisrt@microsoft.com
+  ms.author: chrisrt
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement logging in a .NET Framework ASP.NET web application
 summary: Learn how to implement logging in an ASP.NET web application, to store log data in Azure blob storage, and incorporate log information in Application Insights performance data.
 abstract: |
   In this module, you will:
-  - Understand the role of logging frameworks for recording application activity.
   - Implement logging in an ASP.NET web application.
 prerequisites: |
-  - An Azure subscription. If you don't have an Azure account, you can [create a free trial subscription here](https://azure.microsoft.com/free/)
   - Some C# programming experience
   - Familiarity with ASP.NET development
   - A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
@@ -32,9 +30,9 @@ products:
 - azure-web-apps
 units:
 - learn.azure.aspnet-logging.1-introduction
-- learn.azure.aspnet-logging.2.setup
+- learn.azure.aspnet-logging.2-exercise-setup-app-deploy-resources
 - learn.azure.aspnet-logging.3-aspnet-logging-overview
-- learn.azure.aspnet-logging.4-asp-net-logging-exercise
+- learn.azure.aspnet-logging.4-exercise-aspnet-logging
 - learn.azure.aspnet-logging.5-summary
 badge:
   uid: learn.azure.aspnet-logging.badge

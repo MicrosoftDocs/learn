@@ -5,20 +5,20 @@ Here, you'll download and test the application locally, and then create the reso
 ## Download and test the sample web application locally
 
 1. Using Windows Explorer, create a folder named **MigrationWorkshop** in a convenient place on your computer.
-2. Open a command prompt window, and move to the **MigrationWorkshop** folder.
-3. Run the following command to download the sample application from the Microsoft repository on GitHub:
+1. Open a command prompt window, and move to the **MigrationWorkshop** folder.
+1. Run the following command to download the sample application from the Microsoft repository on GitHub:
 
     ```bash
     git clone https://github.com/dotnet-architecture/eShopModernizing.git
     ```
 
-4. Start Visual Studio 2019.
-5. Click **Open a project or solution**.
+1. Start Visual Studio 2019.
+1. Click **Open a project or solution**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Visual Studio 2019 start screen. The user has selected **Open a project or solution**](..\media\2-open-project-or-solution.png)
 
-6. Browse to the **MigrationWorkshop** folder, move to the **eShopModernizing** folder, move to the **eShopLegacyWebFormsSolution** folder, select the **eShopLegacyWebFormsSolution**, and then click **Open**.
+1. Browse to the **MigrationWorkshop** folder, move to the **eShopModernizing** folder, move to the **eShopLegacyWebFormsSolution** folder, select the **eShopLegacyWebFormsSolution**, and then click **Open**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the Open Project/Solution dialog box in Visual Studio 2019. The user has selected the **eShopLegacyWebForms** solution](..\media\2-open-solution.png)
@@ -30,17 +30,17 @@ Here, you'll download and test the application locally, and then create the reso
     
     If this occurs, click **Install** to install the required items, and follow the instructions.
 
-7. This project currently uses v2.0.1 of the **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Perform the following steps:
+1. This project currently uses v2.0.1 of the **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Perform the following steps:
 
     1. Close Visual Studio, and start it again. 
     2. Open the **eShopLegacyWebFormsSolution** solution, and on the **Build** menu, select **Rebuild Solution**.
 
-8. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
+1. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Solution Explorer window. The user has selected the **Web.config** file](..\media\2-open-web-config.png).
 
-9. In the **Web.config** file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting will cause the application to use data stored in a local SQL Server database:
+1. In the **Web.config** file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting will cause the application to use data stored in a local SQL Server database:
 
     ```xml
     ...
@@ -51,14 +51,14 @@ Here, you'll download and test the application locally, and then create the reso
     ...
     ```
 
-10. Press **F5** to build and run the application. The application will open a web browser and display the **Catalog Manager** page for the web application.
+1. Press **F5** to build and run the application. The application will open a web browser and display the **Catalog Manager** page for the web application.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **Catalog Manager** page for the sample application in a web browser window](..\media\2-catalog-manager.png)
 
     The Catalog Manager enables you to view the products sold by the organization, add new products, modify the details of existing products, and delete products.
 
-11. Experiment with the application; try adding, editing, and removing products. Close the web browser when you've finished. This action will stop the application and return you to Visual Studio.
+1. Experiment with the application; try adding, editing, and removing products. Close the web browser when you've finished. This action will stop the application and return you to Visual Studio.
 
 ## Create Azure resources for running the application as an Azure web app
 
@@ -68,7 +68,7 @@ Here, you'll download and test the application locally, and then create the reso
     git clone https://github.com/dotnet-architecture/eShopModernizing.git
     ```
 
-2. Run the commands shown below to define the following PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password of your choosing. This password will be used by the instance of Azure SQL Database that the application connects to.  
+1. Run the commands shown below to define the following PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password of your choosing. This password will be used by the instance of Azure SQL Database that the application connects to.  
 
     > [!NOTE]
     > The resource group <rgn>[sandbox resource group name]</rgn> has been created automatically, as part of the sandbox configuration.
@@ -79,13 +79,13 @@ Here, you'll download and test the application locally, and then create the reso
     $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
-3. Move to the **~/eShopModernizing/Setup** folder.
+1. Move to the **~/eShopModernizing/Setup** folder.
 
     ```PowerShell
     cd ~/eShopModernizing/Setup
     ```
 
-4. Run the following PowerShell scripts:
+1. Run the following PowerShell scripts:
 
     ```PowerShell
     . ./environment.ps1
@@ -97,16 +97,16 @@ Here, you'll download and test the application locally, and then create the reso
 
     Wait for the script to create the resources used by the lab before continuing.
 
-5. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your Azure account.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your Azure account.
 
-6. On the home page of the portal, click **Resource groups**.
+1. On the home page of the portal, click **Resource groups**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of home page in the Azure portal. The user has selected **Resource groups**](..\media\2-resource-groups.png)
 
-7. On the **Resource groups** page, select the **<rgn>[sandbox resource group]</rgn>** resource group.
+1. On the **Resource groups** page, select the **<rgn>[sandbox resource group]</rgn>** resource group.
 
-8. Verify that the resource group contains the following resources:
+1. Verify that the resource group contains the following resources:
 
     - A SQL database, named **eShop**
     - An App Service, with the suffix **webapp**

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.aspnet-logging.4-asp-net-logging-exercise
+uid: learn.azure.aspnet-logging.4-exercise-aspnet-logging
 title: Exercise - Implement logging in an ASP.NET web app
 metadata:
   title: Exercise - 
@@ -13,7 +13,7 @@ durationInMinutes: 10
 interactive: powershell
 azureSandbox: true
 content: |
-  [!include[](includes/4-aspnet-logging-exercise.md)]
+  [!include[](includes/4-exercise-aspnet-logging.md)]
 tasks:
 - action: exists
   environment: azure
