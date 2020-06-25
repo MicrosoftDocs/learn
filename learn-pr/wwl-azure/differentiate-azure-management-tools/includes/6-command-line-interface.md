@@ -29,7 +29,7 @@ In this task, we will configure Cloud Shell.
 
 In this task, we will use Azure CLI to create a resource group and a virtual machine.  
 
-1. Ensure you have a resource group [sandbox resource group name] and create a VM.
+1. Ensure you have a resource group <rgn>[sandbox resource group name]</rgn> and create a VM.
 
     ```cli
     az group list --output table
@@ -40,7 +40,7 @@ In this task, we will use Azure CLI to create a resource group and a virtual mac
     ```cli
     az vm create \
     --name myVMCLI \
-    --resource-group [sandbox resource group name] \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --image UbuntuLTS \
     --location EastUS \
     --admin-username azureuser \
@@ -61,19 +61,19 @@ In this task, we will practice executing CLI commands from the Cloud Shell.
 3. Retrieve information about the virtual machine you provisioned, including name, resource group, location, and status. Notice the PowerState is **running**.
 
     ```cli
-    az vm show --resource-group [sandbox resource group name] --name myVMCLI --show-details --output table 
+    az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVMCLI --show-details --output table 
     ```
 
 4. Stop the virtual machine. Notice the message that billing continues until the virtual machine is deallocated. 
 
     ```cli
-    az vm stop --resource-group [sandbox resource group name] --name myVMCLI
+    az vm stop --resource-group <rgn>[sandbox resource group name]</rgn> --name myVMCLI
     ```
 
 5. Verify your virtual machine status. The PowerState should now be **stopped**.
 
     ```cli
-    az vm show --resource-group [sandbox resource group name] --name myVMCLI --show-details --output table 
+    az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVMCLI --show-details --output table 
     ```
 
 ### Task 4: Review Azure Advisor Recommendations
