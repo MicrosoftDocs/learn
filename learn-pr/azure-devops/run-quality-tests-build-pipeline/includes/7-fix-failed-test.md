@@ -5,7 +5,8 @@ It's always a good idea to run your tests locally before you submit changes to t
 In this unit, you help the team fix a broken build that's caused by a failing unit test. Here, you will:
 
 > [!div class="checklist"]
-> * Get starter code from the Microsoft GitHub repository.
+> * Get starter code from GitHub.
+> * Add code coverage tools to your project.
 > * Push the code up to your repository.
 > * Watch the pipeline automatically run and the unit tests fail.
 > * Reproduce the failure locally.
@@ -78,19 +79,25 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
     We named the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.
 
-1. Run the following `git commit` command to add an empty entry to your commit history:
+1. Run these commands to create a local tool manifest file, install the `ReportGenerator` tool, and add the `coverlet.msbuild` package to your tests project:
 
     ```bash
-    git commit --allow-empty -m "Trigger Azure Pipelines"
+    dotnet new tool-manifest
+    dotnet tool install dotnet-reportgenerator-globaltool
+    dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
     ```
 
-    This step is for learning purposes and is not typical.
+    You need this step because the `failed-test` branch does not contain the work you added to the `unit-tests` branch.
 
-    When you forked the repository from the Microsoft account into yours, your fork already came with the `failed-test` branch. Here you run the `git commit` command by using the `--allow-empty` flag to create an additional entry in your commit history. This command helps the next step successfully push a change to GitHub.
+1. Add your test project file and your tool manifest file to the staging index and commit your changes. 
 
-    If you were to omit this step, the `git push` command that you run in the next step wouldn't take any action and, therefore, wouldn't cause the build to run in Azure Pipelines.
+    ```bash
+    git add Tailspin.SpaceGame.Web.Tests/Tailspin.SpaceGame.Web.Tests.csproj
+    git add .config/dotnet-tools.json
+    git commit -m "Configure code coverage tests"
+    ```
 
-1. Run the following `git push` command to upload the branch to your GitHub repository:
+1. Run the following `git push` command to upload the `failed-test` branch to your GitHub repository:
 
     ```bash
     git push origin failed-test
@@ -115,7 +122,7 @@ In practice, you won't always manually trace the build as it runs. Here are a fe
 
 * **An email notification from Azure DevOps**
 
-    Azure DevOps sends you an email notification when the build is complete. The subject line starts with "[Build failed]" when the build fails.
+    You can configure Azure DevOps to send you an email notification when the build is complete. The subject line starts with "[Build failed]" when the build fails.
 
     ![Screenshot of a portion of a build failed email notification.](../media/7-email-notification.png)
 * **Azure Test Plans**
@@ -305,10 +312,6 @@ In this section, you fix the error by changing the code back to its original sta
     You can also check out the dashboard to view the updated results trend.
 
     ![Screenshot of Azure DevOps dashboard trend chart widget showing a return to all tests passing.](../media/7-dashboard-passing-test.png)
-
-    As a bonus, the added unit test increases the percentage of code covered from around 14 percent to 17 percent.
-
-    ![Screenshot of the Azure DevOps Code Coverage widget showing coverage of 17 percent.](../media/7-dashboard-widget.png)
 
 **Andy:** Great! We fixed the build! I'm sorry for breaking it. I was in a hurry and I forgot to run the tests one final time.
 

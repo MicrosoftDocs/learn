@@ -18,7 +18,7 @@ Irwin looks around. Andy clears his throat.
 
 **Irwin:** What's a CD pipeline?
 
-Mara beings to explain but is interrupted when Irwin's cell phone beeps. Irwin reads a text message and mutters under his breath.
+Mara begins to explain but is interrupted when Irwin's cell phone beeps. Irwin reads a text message and mutters under his breath.
 
 **Irwin:** I'm sorry, but this is urgent. I have to go. Why don't you all figure out this CD business and get back to me soon?
 

@@ -4,16 +4,16 @@ With Node.js and Express.js, you can create a webapp very quickly.
 
 Suppose you've been asked to start building the website to promote the new video game launch. You've decided to use Node.js to run server-side code and, to make the development as quick as possible, you're going to use the Express.js framework for webapps. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
 
-Here, you'll install the necessary software and then use VS Code to create and test a website.
+Here, you'll install the necessary software and then use Visual Studio Code to create and test a website.
 
 > [!NOTE]
 > You must have [Visual Studio Code](https://code.visualstudio.com) and [Node.js](https://nodejs.org) installed on your computer before you begin this exercise.
 
 ## Create an app folder
 
-You can use VS Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder with Express.js installed:
+You can use Visual Studio Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder with Express.js installed:
 
-1. Start VS Code. 
+1. Start Visual Studio Code. 
 1. On the **View** menu, click **Terminal**.
 1. To create a new folder, type the following commands:
 
@@ -29,7 +29,7 @@ You can use VS Code to run all the commands and edit all the code for your webap
 
 You can use the Express Generator tool to create all the components of an Express.js boiler-plate webapp:
 
-1. In the VS Code Explorer window, notice that the **countdownExpressApp** folder is empty.
+1. In the Visual Studio Code Explorer window, notice that the **countdownExpressApp** folder is empty.
 1. If the integrated terminal is not visible, on the **View** menu, click **Terminal**.
 1. To run the Express Generator, execute this command in the terminal:
 
@@ -45,7 +45,7 @@ You can use the Express Generator tool to create all the components of an Expres
 
 You now have a functional webapp that Node.js can run. Let's modify its code to display the countdown:
 
-1. In the VS Code Explorer window, expand **routes**, and then select **index.js**. This JavaScript file defines routes for the app's homepage. We can add our code to calculate the countdown here.
+1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. This JavaScript file defines routes for the app's homepage. We can add our code to calculate the countdown here.
 1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `12/29/2019 10:00`):
 
     ```JavaScript
@@ -75,7 +75,7 @@ You now have a functional webapp that Node.js can run. Let's modify its code to 
 
 Now, modify the default homepage for the webapp to display the countdown:
 
-1. In the VS Code Explorer window, expand **views**, and then select **index.jade**. This file defines a view for the app's homepage. We can add code to display the countdown here.
+1. In the Visual Studio Code Explorer window, expand **views**, and then select **index.jade**. This file defines a view for the app's homepage. We can add code to display the countdown here.
 1. Locate the following line of code:
 
     ```jade
@@ -131,16 +131,16 @@ As you'll see, using Python and the py utility to install Flask, you can create 
 
 Suppose you've been asked to start building the website to promote the new video game launch. You've decided to use Flask to run server-side code and, to make the development as quick as possible, you're going to use the default Jinja templating engine. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
 
-Here, you'll install the necessary software and then use VS Code to create and test a website.
+Here, you'll install the necessary software and then use Visual Studio Code to create and test a website.
 
 > [!NOTE]
 > You must have [Visual Studio Code](https://code.visualstudio.com) and [Python](https://www.python.org) installed on your computer before you begin this exercise.
 
 ## Create an app folder
 
-You can use VS Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder for your project:
+You can use Visual Studio Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder for your project:
 
-1. Start VS Code. 
+1. Start Visual Studio Code. 
 1. On the **View** menu, click **Terminal**.
 1. To create a new folder, type the following commands:
 
@@ -181,7 +181,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     You should now see the command line prompt prefixed with `(env)`.
 
-    ![Screenshot of VS Code's Terminal displaying command prompt with (env) prefix.](../media/3-python-terminal-env.png)
+    ![Screenshot of Visual Studio Code's Terminal displaying command prompt with (env) prefix.](../media/3-python-terminal-env.png)
 
     > [!IMPORTANT]
     > If you do not see the prefix `(env)` on your command prompt you are not working in the virtual environment.
@@ -208,7 +208,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
 ## Add code files
 
-1. In the VS Code Explorer view, use the **New file** icon to create a new file named `app.py`.  This will be where we write our Python code to create a Flask app, create a function to handle incoming requests, and perform the logic for our app.
+1. In the Visual Studio Code Explorer view, use the **New file** icon to create a new file named `app.py`.  This will be where we write our Python code to create a Flask app, create a function to handle incoming requests, and perform the logic for our app.
 
 1. Use the **New folder** icon to a new folder called `templates`.
 
@@ -224,7 +224,7 @@ Our aim here is to:
 - Create an instance of the Flask object that essentially starts the web app.
 - Define a function that will handle the default route.  Since this is a simple app, we'll do all our business logic (i.e., our date time math) and send the number of milliseconds to our Jinja template.
 
-1. In the VS Code Explorer window, select **app.py** and add the following code:
+1. In the Visual Studio Code Explorer window, select **app.py** and add the following code:
 
     ```python
     from flask import Flask
@@ -299,7 +299,7 @@ Our aim here is to:
 
 Now, we'll build the template to display the countdown:
 
-1. In the VS Code Explorer window, expand **templates**, and then select **countdown.html**. This file defines a Jinja template for the app's homepage. We can add code to display the countdown here.
+1. In the Visual Studio Code Explorer window, expand **templates**, and then select **countdown.html**. This file defines a Jinja template for the app's homepage. We can add code to display the countdown here.
 
 1. Add the following HTML code:
 
@@ -345,7 +345,7 @@ Now, we'll build the template to display the countdown:
 
 Now the app is complete, let's run it on your local computer and see if it shows the countdown:
 
-1. In the VS Code Terminal on Windows, run the following command: 
+1. In the Visual Studio Code Terminal on Windows, run the following command: 
 
     ```command
     py -m flask run
@@ -371,6 +371,6 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 ![Screenshot of completed project in web browser.](../media/3-flask-complete.png)
 
-1. Close the web browser. In the VS Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
+1. Close the web browser. In the Visual Studio Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
 
 ::: zone-end

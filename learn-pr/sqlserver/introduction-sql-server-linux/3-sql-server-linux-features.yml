@@ -9,7 +9,6 @@ metadata:
   ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/3-sql-server-linux-features.md)]

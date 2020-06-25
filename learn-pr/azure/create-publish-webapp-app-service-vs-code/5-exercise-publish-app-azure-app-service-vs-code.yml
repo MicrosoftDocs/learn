@@ -17,7 +17,7 @@ content: |
 tasks:
 - action: exists
   environment: azure
-  hint: "Use VS Code to create an App Service plan and web app."
+  hint: "Use Visual Studio Code to create an App Service plan and web app."
   azure:
     resource:
       type: "Microsoft.Web/sites"
