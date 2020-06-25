@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.learn.azure-sql-performance.9-exercise-optimize-app-performance
+metadata:
+  title: Exercise - Optimize application performance
+  description: Exercise - Optimize application performance
+  ms.date: 07/31/2020
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Optimize application performance
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/9-exercise-optimize-app-performance.md)]

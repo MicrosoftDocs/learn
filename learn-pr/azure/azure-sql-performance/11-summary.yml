@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.learn.azure-sql-performance.11-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/31/2020
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/11-summary.md)]

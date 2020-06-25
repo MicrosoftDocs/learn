@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.learn.azure-sql-performance.4-monitor-troubleshooting-performance
+metadata:
+  title: Monitor and Troubleshooting Performance
+  description: Monitor and Troubleshooting Performance
+  ms.date: 07/31/2020
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor and Troubleshooting Performance
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-monitor-troubleshooting-performance.md)]
