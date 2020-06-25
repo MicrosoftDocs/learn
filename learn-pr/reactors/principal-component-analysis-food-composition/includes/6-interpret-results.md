@@ -72,6 +72,7 @@ Our first cluster is defined by foods that are high in protein and minerals, lik
 > ### Takeaway
 >
 > Particularly with interpretation, subject matter expertise can prove essential to producing high-quality analysis. For this reason, you should also try to include SMEs in your data science projects.
+
 Then, run this code:
 
 ```python
