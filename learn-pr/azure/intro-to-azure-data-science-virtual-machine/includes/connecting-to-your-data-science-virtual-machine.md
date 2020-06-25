@@ -1,8 +1,24 @@
 Now that you've created a Data Science Virtual Machine, you need to connect to it. The DSVM is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH , you can connect to the command-line of the DSVM. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
 
-## If necessary, start the DSVM and activate just-in-time access
+## If necessary, start the DSVM and request just-in-time access
 
-A newly-created DSVM 
+A newly-created DSVM will already be running, but generally you'll need to start the virtual machine from the Azure Portal.
+
+1. Navigate to your resource group in the Azure Portal
+1. From your resource list, choose your DSVM, which is of type "Virtual machine"
+1. From the DSVM's resource page, choose "Start" if necessary
+1. Wait until the DSVM's Status is "Running"
+1. Record the IP address 
+
+If you have configured just-in-time access, as recommended:
+
+1. Wait until the DSVM's is "Running"
+1. Select the "Configuration" button from the left-hand "Settings" panel
+1. Follow the "Open Azure Security Center" link
+1. Choose your DSVM from the list of configured VMs
+1. Choose "Request access"
+1. Toggle port 22 to "On" (both direct ssh and XCFE connections use this port)
+1. Choose "Open ports"
 
 ## Connect to the command line using SSH
 

@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.intro-to-azure-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
+uid: learn-pr.intro-to-azure-data-science-virtual-machine.use-preinstalled-tools-to-do-data-science
 metadata:
-  title: Connecting to your Data Science Virtual Machine
-  description: Connect to your DSVM using both command line and graphical clients
+  title: Using Jupyter and other preinstalled tools
+  description: Use the preinstalled tools in the DSVM to perform data dscience
   ms.date: 2020-07-01
   author: lobrien
   ms.author: laobri
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ROBOTS: NOINDEX
-title: Connecting to your Data Science Virtual Machine
+title: Use preinstalled tools to do data science
 durationInMinutes: 1
 content: |
-  [!include[](includes/connecting-to-your-data-science-virtual-machine.md)]
+  [!include[](includes/use-preinstalled-tools-to-do-data-science.md)]
 quiz:
   title: Connecting to your Data Science Virtual Machine
   questions:

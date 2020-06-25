@@ -28,5 +28,6 @@ units:
   - learn-pr.intro-to-azure-data-science-virtual-machine.what-is-the-data-science-virtual-machine
   - learn-pr.intro-to-azure-data-science-virtual-machine.create-a-data-science-virtual-machine
   - learn-pr.intro-to-azure-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
+  - learn-pr.intro-to-azure-data-science-virtual-machine.use-preinstalled-tools-to-do-data-science
 badge:
   uid: learn-pr.intro-to-azure-data-science-virtual-machine.badge
