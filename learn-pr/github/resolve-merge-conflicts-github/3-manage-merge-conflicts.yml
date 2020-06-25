@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.merge-conflict-resolution-github.3-managing-merge-conflicts
-title:  Exercise - Managing merge conflicts
+uid: learn.github.merge-conflict-resolution-github.3-manage-merge-conflicts
+title: Exercise - Manage merge conflicts
 metadata:
-  title:  Exercise - Managing merge conflicts
+  title: Exercise - Manage merge conflicts
   description: Learn to settle overlapping commits across branches by using merge conflict resolution.
   ms.date: 06/12/2020
   author: tpetchel
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 38
 content: |
-  [!include[](includes/3-managing-merge-conflicts.md)]
+  [!include[](includes/3-manage-merge-conflicts.md)]
