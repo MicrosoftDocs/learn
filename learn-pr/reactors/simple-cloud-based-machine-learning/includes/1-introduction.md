@@ -1,22 +1,22 @@
-Thus far, we have looked at building and fitting machine learning (ML) models "locally." True, the notebooks have been located in the cloud themselves, but the models with all of their predictive and classification power are stuck in those notebooks. To use these models, you would have to load data into your notebooks and get the results there.
+So far, we've looked at how to build and fit machine learning models "locally." The notebooks were located in the cloud, but the models with all of their predictive and classification power were stuck in those notebooks. To use these models, you would have to load data into your notebooks and get the results there.
 
-In practice, we want those models accessible from a number of locations. And while the management of production ML models has a lifecycle all its own, one part of that is making models accessible from the web. One way to do so is to develop them using third-party cloud tools, such as [Microsoft Azure Machine Learning Service](https://ml.azure.com/?azure-portal=true).
+In practice, we want those models accessible from a number of locations. While the management of production machine learning models has a lifecycle all its own, one part is to make models accessible from the web. One way to do so is to develop them by using third-party cloud tools, such as [Microsoft Azure Machine Learning](https://ml.azure.com/?azure-portal=true).
 
-Additionally, we've so far only run one machine learning algorithm on each dataset at a time. In addition to the Cloud, Azure Machine Learning also offers AutoML: Automated Machine Learning. AutoML is a service where Azure will run the data through many machine learning algorithms and determine which algorithm more accurately classifies customers.
+At this point, we've run only one machine learning algorithm on each dataset at a time. In addition to the cloud, Azure Machine Learning offers automated machine learning. Automated machine learning is a service where Azure runs the data through many machine learning algorithms and determines which algorithm more accurately classifies customers.
 
 ## Learning objectives
 
 In this module, you will:
 
-- Create an Azure Machine Learning Resource
-- Upload data into a dataset into Azure Machine Learning Studio
-- Use Azure AutoML (Automated Machine Learning) to find the best model for your data
-- Deploy the best model as a web service
+- Create an Azure Machine Learning resource.
+- Upload data into a dataset in Azure Machine Learning Studio.
+- Use Azure automated machine learning to find the best model for your data.
+- Deploy the best model as a web service.
 
 ## Prerequisites
 
 - Review the steps to manipulate and clean data.
 - Understand machine learning models for data science.
-- Have an active Azure Subscription
+- Have an active Azure subscription.
 
 [!INCLUDE [Set up your environment](../../includes/set-up-environment.md)]
