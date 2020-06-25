@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Azure Data Fundamentals: Explore core data concepts/explore-core-data-concepts</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <rect id="path-6" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-7"></path>
+        <rect id="path-9" x="0" y="0" width="84" height="84" rx="42"></rect>
+        <rect id="path-11" x="0" y="0" width="84" height="84" rx="42"></rect>
+        <rect id="path-13" x="0" y="0" width="84" height="84" rx="42"></rect>
+        <rect id="path-15" x="0" y="0" width="84" height="84" rx="42"></rect>
+        <filter x="-66.7%" y="-51.0%" width="233.3%" height="204.2%" filterUnits="objectBoundingBox" id="filter-17">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="-1.00359143e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-18">
+            <stop stop-color="#32BEDD" offset="0%"></stop>
+            <stop stop-color="#37C5E3" offset="6%"></stop>
+            <stop stop-color="#49DDF7" offset="30%"></stop>
+            <stop stop-color="#50E6FF" offset="45%"></stop>
+            <stop stop-color="#50E6FF" offset="55%"></stop>
+            <stop stop-color="#49DDF7" offset="70%"></stop>
+            <stop stop-color="#37C5E3" offset="94%"></stop>
+            <stop stop-color="#32BEDD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azure-Data-Fundamentals:-Explore-core-data-concepts" transform="translate(-159.000000, -1079.000000)">
+            <g id="Azure-Data-Fundamentals:-Explore-core-data-concepts/explore-core-data-concepts" transform="translate(160.000000, 1080.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="Rectangle-Copy">
+                                <use fill="#0078D4" xlink:href="#path-6"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-6"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-7"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-8)" fill="#27C0F5">
+                            <g transform="translate(-1.886792, -1.886792)" id="Rectangle">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(8.000000, 8.000000)">
+                    <g id="Rectangle-Clipped">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <polygon id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-10)" points="41.125 16.625 42.875 16.625 42.875 64.75 41.125 64.75"></polygon>
+                    </g>
+                    <g id="Rectangle-Clipped">
+                        <mask id="mask-12" fill="white">
+                            <use xlink:href="#path-11"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <polygon id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-12)" transform="translate(42.000000, 41.562500) rotate(122.000000) translate(-42.000000, -41.562500) " points="41.125 17.5 42.875 17.5 42.875 65.625 41.125 65.625"></polygon>
+                    </g>
+                    <g id="Rectangle-Clipped">
+                        <mask id="mask-14" fill="white">
+                            <use xlink:href="#path-13"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <polygon id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-14)" transform="translate(41.999783, 41.562380) scale(-1, 1) rotate(-58.000000) translate(-41.999783, -41.562380) " points="41.1247831 17.4998798 42.8747831 17.4998798 42.8747831 65.6248798 41.1247831 65.6248798"></polygon>
+                    </g>
+                    <g id="Networking" transform="translate(8.625000, 4.375000)" stroke="#FFFFFF" stroke-width="2.5">
+                        <g id="Oval" transform="translate(33.132212, 37.544121) rotate(1.000000) translate(-33.132212, -37.544121) translate(1.632212, 0.544121)">
+                            <ellipse id="path-3" fill="#529DD7" cx="6.4505" cy="22.13575" rx="6.4505" ry="6.38575"></ellipse>
+                            <ellipse id="path-5" fill="#5AA3DC" cx="56.3255" cy="22.13575" rx="6.4505" ry="6.38575"></ellipse>
+                            <ellipse id="path-7" fill="#5DA6DE" cx="30.9505" cy="6.38575" rx="6.4505" ry="6.38575"></ellipse>
+                            <path d="M56.3255,44.625 C59.8885,44.625 62.776,47.483625 62.776,51.01075 C62.776,54.537 59.8885,57.3965 56.3255,57.3965 C52.763375,57.3965 49.875,54.537 49.875,51.01075 C49.875,47.4845 52.7625,44.625 56.3255,44.625 Z" id="path-9" fill="#4C98D2"></path>
+                            <path d="M6.4505,44.625 C10.0135,44.625 12.901,47.483625 12.901,51.01075 C12.901,54.537 10.0135,57.3965 6.4505,57.3965 C2.888375,57.3965 0,54.537 0,51.01075 C0,47.4845 2.8875,44.625 6.4505,44.625 Z" id="path-11" fill="#3F8DC9"></path>
+                            <path d="M31.8255,60.375 C35.3885,60.375 38.276,63.233625 38.276,66.76075 C38.276,70.287 35.3885,73.1465 31.8255,73.1465 C28.263375,73.1465 25.375,70.287 25.375,66.76075 C25.375,63.2345 28.2625,60.375 31.8255,60.375 Z" id="path-13" fill="#408ECA"></path>
+                        </g>
+                    </g>
+                    <g id="Oval-Clipped">
+                        <mask id="mask-16" fill="white">
+                            <use xlink:href="#path-15"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <g id="Oval" mask="url(#mask-16)">
+                            <g transform="translate(27.125000, 26.250000)" id="path-15-link">
+                                <g>
+                                    <path d="M15.3125,0 C23.769375,0 30.625,6.855625 30.625,15.3125 C30.625,23.769375 23.769375,30.625 15.3125,30.625 C6.855625,30.625 0,23.769375 0,15.3125 C0,6.855625 6.855625,0 15.3125,0 Z" id="path-15" fill="#000000" fill-rule="nonzero"></path>
+                                </g>
+                                <g>
+                                    <path d="M15.3125,0 C23.769375,0 30.625,6.855625 30.625,15.3125 C30.625,23.769375 23.769375,30.625 15.3125,30.625 C6.855625,30.625 0,23.769375 0,15.3125 C0,6.855625 6.855625,0 15.3125,0 Z" id="path-15" fill="#FFFFFF"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Database" filter="url(#filter-17)" transform="translate(41.000000, 38.244898)" fill-rule="nonzero">
+                    <path d="M9.01016949,5.57197767 C4.02711864,5.57197767 0,4.06717306 0,2.20408163 L0,20.142308 C0,21.9815137 4.06779661,23.4863183 8.88813559,23.5102041 L9.01016949,23.5102041 C13.9728814,23.5102041 18,22.0053995 18,20.142308 L18,2.20408163 C18,4.06717306 13.9728814,5.57197767 9.01016949,5.57197767 Z" id="Path" fill="url(#linearGradient-18)"></path>
+                    <path d="M18,3.12244898 C18,4.84976118 13.9322034,6.24489796 9.01016949,6.24489796 C4.08813559,6.24489796 0,4.84976118 0,3.12244898 C0,1.39513678 4.06779661,0 9.01016949,0 C13.9525424,0 18,1.39513678 18,3.12244898" id="Path" fill="#E8E8E8"></path>
+                    <path d="M9.19341168,4.7755102 C5.55132097,4.7755102 2.57142857,4.10612245 2.57142857,3.30612245 C2.57142857,2.50612245 5.53184455,1.83673469 9.19341168,1.83673469 C12.8549788,1.83673469 15.7959184,2.48979592 15.7959184,3.30612245 C15.7959184,4.10612245 12.8355024,4.7755102 9.19341168,4.7755102 Z" id="Path" fill="#50E6FF"></path>
+                    <path d="M2.57142857,3.58770064 C3.23098676,4.10559893 4.03131396,4.77338276 9.0180028,4.77146817 C11.7577929,4.81358929 13.9426603,4.53159661 15.4285714,3.68602883 C13.539062,3.14432164 10.9797946,2.90354771 9.0180028,2.94709222 C7.05604591,2.90027647 4.46030259,3.04278303 2.57142857,3.58770064 Z" id="Path" fill="#32BEDD"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

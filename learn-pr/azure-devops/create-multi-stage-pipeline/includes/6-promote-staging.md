@@ -65,6 +65,10 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
 
     ![Azure Pipelines, showing the Staging stage, which requires manual approval](../media/7-pipeline-review.png)
 
+    You can configure Azure DevOps to send you an email notification when the build requires approval. Here's an example:
+
+    ![Screenshot of a portion of a build approval email notification.](../media/6-email-notification.png)
+
 1. Select **Review** > **Approve**.
 
     In practice, you would inspect the changes to verify that they meet your requirements.

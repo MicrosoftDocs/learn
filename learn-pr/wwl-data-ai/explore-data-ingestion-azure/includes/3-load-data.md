@@ -1,0 +1,1 @@
+Imagine that you're part of an analytics team that is analyzing house price data. The dataset that you receive contains data for several major cities. Your team needs to report on the house prices and sales in each city.

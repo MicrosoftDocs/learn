@@ -23,7 +23,7 @@ Run a template that sets up everything for you in your Azure DevOps organization
 From the Azure DevOps Demo Generator site, take these steps to run the template.
 
 1. Select **Sign In**, and then accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization.  Then enter a project name, such as **Space Game - web - WhiteSource**.
+1. From the **Create New Project** page, select your Azure DevOps organization.  Then enter a project name, such as *Space Game - web - WhiteSource*.
 1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
@@ -70,7 +70,7 @@ To set up the work item:
     ![Screenshot of Azure DevOps State field with the down chevron button highlighted.](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Screenshot of Azure DevOps Boards showing the vulnerabilities check card now in the Doing column.](../media/3-azure-boards-wi5-doing.png)
+    ![Screenshot of Azure Boards showing the vulnerabilities check card now in the Doing column.](../media/3-azure-boards-wi5-doing.png)
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.
 

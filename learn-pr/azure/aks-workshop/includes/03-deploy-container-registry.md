@@ -109,6 +109,7 @@ Here, you'll clone the repository and then build the Docker image using the incl
 
     ```azurecli
     az acr build \
+        --resource-group $RESOURCE_GROUP \
         --registry $ACR_NAME \
         --image ratings-api:v1 .
     ```
@@ -171,6 +172,7 @@ The steps you follow are the same as before. Clone the repository and then build
 
     ```azurecli
     az acr build \
+        --resource-group $RESOURCE_GROUP \
         --registry $ACR_NAME \
         --image ratings-web:v1 .
     ```

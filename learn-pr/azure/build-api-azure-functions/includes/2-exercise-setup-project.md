@@ -12,9 +12,9 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Highlight the ID in the sandbox and copy it to your clipboard.
 
-## Setup VS Code
+## Setup Visual Studio Code
 
-1. Open VS Code.
+1. Open Visual Studio Code.
 
 1. Open settings in Visual Studio Code by pressing <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>,</kbd>.
 
@@ -22,7 +22,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Enter the tenant from your clipboard into the **Azure: Tenant** textbox.
 
-    :::image type="content" source="../media/azure-tenant.png" alt-text="Screenshot of VS Code settings with a red box outlining the Azure Tenant setting." loc-scope="vs-code":::
+    :::image type="content" source="../media/azure-tenant.png" alt-text="Screenshot of Visual Studio Code settings with a red box outlining the Azure Tenant setting." loc-scope="vs-code":::
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
 
@@ -32,7 +32,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Select "Concierge Subscription" by checking the box next to it.
 
-   :::image type="content" source="../media/select-subscription.png" alt-text="Screenshot of VS Code Command Palette displaying available Azure Subscriptions to connect to." loc-scope="vs-code":::
+   :::image type="content" source="../media/select-subscription.png" alt-text="Screenshot of Visual Studio Code Command Palette displaying available Azure Subscriptions to connect to." loc-scope="vs-code":::
 
 ## Create the database
 
@@ -40,9 +40,9 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Type "Cloud Shell" and select "Azure: Open Bash in Cloud Shell"
 
-    :::image type="content" source="../media/vs-code-cloud-shell.png" alt-text="Screenshot of the cloud shell inside of a VS Code terminal instance." loc-scope="vs-code":::
+    :::image type="content" source="../media/vs-code-cloud-shell.png" alt-text="Screenshot of the cloud shell inside of a Visual Studio Code terminal instance." loc-scope="vs-code":::
 
-1. Copy the following line and paste it into the Cloud Shell terminal instance in VS Code
+1. Copy the following line and paste it into the Cloud Shell terminal instance in Visual Studio Code
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions && cd mslearn-build-api-azure-functions/DB_SETUP && ./CREATE_DATABASE.sh
@@ -54,7 +54,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 Fortunately, someone has already written the frontend part of the application. They have creatively named it, "Products Manager". All you need to do is create an API for it. First, though, you need to pull down and set up the Products Manager project.
 
-1. Open the Command Palette in VS Code by pressing <kbd>F1</kbd>.
+1. Open the Command Palette in Visual Studio Code by pressing <kbd>F1</kbd>.
 
 1. Type "clone" in the prompt.
 
@@ -70,15 +70,15 @@ Fortunately, someone has already written the frontend part of the application. T
 
 1. When prompted to open the cloned repository, click the "Open" button.
 
-1. VS Code will detect a workspace file in this project and ask if you want to open it. Select "Open Workspace".
+1. Visual Studio Code will detect a workspace file in this project and ask if you want to open it. Select "Open Workspace".
 
-   :::image type="content" source="../media/open-workspace.png" alt-text="Screenshot of VS Code notification prompt to open workspace." loc-scope="vs-code":::
+   :::image type="content" source="../media/open-workspace.png" alt-text="Screenshot of Visual Studio Code notification prompt to open workspace." loc-scope="vs-code":::
 
-There will be two projects in VS Code: "frontend" and "api". The "frontend" project contains the web application. The "api" project is where you will be building the serverless API with Azure Functions.
+There will be two projects in Visual Studio Code: "frontend" and "api". The "frontend" project contains the web application. The "api" project is where you will be building the serverless API with Azure Functions.
 
 ## Run the frontend project
 
-1. Open the integrated terminal in VS Code by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
+1. Open the integrated terminal in Visual Studio Code by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
 
 1. Select "frontend".
 
@@ -90,7 +90,7 @@ There will be two projects in VS Code: "frontend" and "api". The "frontend" proj
 
    A small webserver called "serve" should be running in your terminal. It will output the URL where the frontend application is running.
 
-   :::image type="content" source="../media/npm-start.png" alt-text="Screenshot of VS Code terminal with a callout highlighting the url and port of running application." loc-scope="vs-code":::
+   :::image type="content" source="../media/npm-start.png" alt-text="Screenshot of Visual Studio Code terminal with a callout highlighting the url and port of running application." loc-scope="vs-code":::
 
 1. Click on that URL in the terminal to open the application in the browser.
 
@@ -98,4 +98,4 @@ There will be two projects in VS Code: "frontend" and "api". The "frontend" proj
 
     :::image type="content" source="../media/products-manager-start.png" alt-text="Screenshot of the application running in a browser. No data is displayed and an error message explaining that the get operation failed." loc-scope="other"::: <!-- no-loc -->
 
-Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. You've got VS Code connected to Azure and the frontend project is running locally on your machine. That means that it's time to create the Azure Functions project that will serve as the API for the Products Manager application.
+Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. You've got Visual Studio Code connected to Azure and the frontend project is running locally on your machine. That means that it's time to create the Azure Functions project that will serve as the API for the Products Manager application.
