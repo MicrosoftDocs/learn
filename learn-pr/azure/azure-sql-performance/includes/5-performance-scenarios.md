@@ -4,6 +4,8 @@ In this section, you will learn about some of the common performance scenarios a
 
 A common technique for SQL Server performance troubleshooting is to examine where the problem is Running (high CPU) or Waiting (Waiting on a Resource)
 
+![runningvswaiting](../media/runningvswaiting.png)
+
 ### Running vs Waiting
 
 Running or waiting scenarios can often be determined by looking at overall resource usage. For Azure SQL this will involve viewing:

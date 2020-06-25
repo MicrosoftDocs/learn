@@ -60,9 +60,9 @@ Dynamic Management Views (DMV) have been a driving force to monitor and troubles
 
 These DMVs provide deeper insight into resource limits and resource governance for Azure SQL. They are not mean to be used for common scenarios but might be helpful when looking deep into a complex performance problem:
 
-**sys.dm_user_db_resource_governance_internal
-sys.dm_resource_governor_resource_pools_history_ex
-sys.dm_resource_governor_workload_groups_history_ex**
+- **sys.dm_user_db_resource_governance_internal**
+- **sys.dm_resource_governor_resource_pools_history_ex**
+- **sys.dm_resource_governor_workload_groups_history_ex**
 
 ## Extended Events
 
