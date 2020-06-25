@@ -35,5 +35,6 @@ modules:
 - learn.develop-test-deploy-azure-functions-with-visual-studio
 - learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook
 - learn.advocates.azure-functions-and-signalr
+- learn.build-serverless-api-with-functions-api-management
 trophy:
   uid: learn.create-serverless-applications.trophy

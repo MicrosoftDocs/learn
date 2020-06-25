@@ -38,17 +38,17 @@ Use pricing tiers to control costs and match the scalability of your app to the 
 - **Dedicated compute tiers.** Webapps in a dedicated compute App Service plan run on virtual machines that are dedicated to that plan and do not run apps for other customers. The **Basic**, **Standard**, **Premium**, and **PremiumV2** tiers are all dedicated. Each of these tiers includes more virtual machine instances for scaling out. 
 - **Isolated.** Webapps in the **Isolated** tier run on dedicated virtual machines in dedicated virtual networks. This tier provides network isolation and the maximum ability to scale out. Use this tier for the largest and most critical webapps. 
 
-## What is the VS Code Azure App Service extension?
+## What is the Visual Studio Code Azure App Service extension?
 
-If you are working with Azure App Service and VS Code, you can consider installing the [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extension. With this extension, you get an extra explorer window that displays all the webapps in your subscription. You can use this explorer to connect your app to a backend database or configure GitHub deployment. You can also create deployment slots or define new application settings. You can also create new webapps and deploy source code straight from your local hard drive to Azure.
+If you are working with Azure App Service and Visual Studio Code, you can consider installing the [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extension. With this extension, you get an extra explorer window that displays all the webapps in your subscription. You can use this explorer to connect your app to a backend database or configure GitHub deployment. You can also create deployment slots or define new application settings. You can also create new webapps and deploy source code straight from your local hard drive to Azure.
 
-:::image type="content" source="../media/4-azure-explorer.png" alt-text="The Azure explorer in VS Code." loc-scope="vs-code":::
+:::image type="content" source="../media/4-azure-explorer.png" alt-text="The Azure explorer in Visual Studio Code." loc-scope="vs-code":::
 
 ## Deploy a website to Azure
 
 You have many options when you want to deploy a website to Azure App service. For example, you could use git to upload the source code to a GitHub repository, then have App Service automatically detect and deploy the changes. Alternatively, you could implement a complete DevOps continuous deployment pipeline by using Azure DevOps.
 
-However, if you want to complete the deployment fast, entirely within VS Code, you can use the Azure App Service extension:
+However, if you want to complete the deployment fast, entirely within Visual Studio Code, you can use the Azure App Service extension:
 
 1. In the Azure explorer, connect to your Azure subscription and sign in.
 1. Create a new app in Azure App Service with a globally unique name.
@@ -59,10 +59,10 @@ However, if you want to complete the deployment fast, entirely within VS Code, y
 
 ## Debug a website in Azure
 
-Once you've installed the Azure App Service extension, you can also use VS Code to debug a webapp running in Azure. This technique is often helpful when you're developing and testing the app. 
+Once you've installed the Azure App Service extension, you can also use Visual Studio Code to debug a webapp running in Azure. This technique is often helpful when you're developing and testing the app. 
 
 To start a debugging session, right-click the app in the Azure explorer and then select **Start Remote Debugging**:
 
 :::image type="content" source="../media/4-debug-web-app.png" alt-text="Debug a webapp running in Azure." loc-scope="vs-code":::
 
-VS Code connects to the app's debugging port through a Secure Shell (SSH) connection. It may take longer to make this connection than it does to start the local debugger. Once the connection is made, you can use tools such as the debugging console and break points in exactly the same way as you do when debugging locally. 
+Visual Studio Code connects to the app's debugging port through a Secure Shell (SSH) connection. It may take longer to make this connection than it does to start the local debugger. Once the connection is made, you can use tools such as the debugging console and break points in exactly the same way as you do when debugging locally. 

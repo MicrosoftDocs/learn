@@ -66,7 +66,7 @@ Each line and word includes bounding box coordinates indicating its position on 
 Like the OCR option, there are specific requirements around the images that the service can work with.  The Read API formats are expanded over OCR as listed here:
 
 - image format - supported formats are JPEG, PNG, BMP, PDF, TIFF
-- image size - for images, 50 x 50 and 10000 x 10000 pixels.  PDF pages must be 17 x 17 or smaller
+- image size - for images, 50 x 50 and 10000 x 10000 pixels.  PDF pages must be 17 inches x 17 inches or smaller
 - file size - less than 20 MB
 
 > [!NOTE]

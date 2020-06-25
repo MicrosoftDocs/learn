@@ -1,30 +1,32 @@
-In this unit, you will create an event subscription within Azure IoT Hub to set up Event Grid integration that will trigger a Logic App to send an alert email.
+In this unit, you'll create an event subscription within Azure IoT Hub to set up Azure Event Grid integration. This integration will trigger a logic app to send an alert email.
 
 ## Create the event subscription for IoT Hub
 
-1. Return to the Azure portal and navigate to the Azure IoT Hub created earlier.
+1. Return to the Azure portal and go to the IoT hub that you created earlier.
 
-1. On the IoT Hub summary page, click the **Events** link on the left-side.
+1. On the summary page for the hub, select the **Events** link on the left side.
 
-1. On the **Events** pane, click the **+Event Subscription** button at the top.
+1. On the **Events** pane, select the **+Event Subscription** button at the top.
 
-1. Click **+ Event Subscription** and create the event subscription with the following values:
+1. Select **+ Event Subscription** and create the event subscription with the following values:
 
    * **Event Subscription Details**: Provide a descriptive name (for example: *MyDeviceCreatedEvent*) and select **Event Grid Schema**.
 
-   * **Event Types**: In the **Filter to Event Types**, uncheck all of the choices except **Device Created**.
+   * **Event Types**: In **Filter to Event Types**, clear all of the choices except **Device Created**.
 
-    [![Subscription event types](../media/subscription-event-types.png)](../media/subscription-event-types.png#lightbox)
+     [![Subscription event types](../media/subscription-event-types.png)](../media/subscription-event-types.png#lightbox)
 
-   * **Endpoint Details**: Select Endpoint Type as **Web Hook** and select *Select an endpoint* and paste the URL that you copied from your logic app and confirm selection.
+   * **Endpoint Details**: Select **Endpoint Type** as **Web Hook**, choose **Select an endpoint**, and paste the URL that you copied from your logic app. Confirm the selection.
 
-    When you're done, the pane should look like the following example:
+   When you're done, the pane should look like the following example:
 
-    [![Sample event subscription form](../media/subscription-form.png)](../media/subscription-form.png#lightbox)
+   [![Sample event subscription form](../media/subscription-form.png)](../media/subscription-form.png#lightbox)
 
-## Configure the events filter
+## Configure the event filter
 
-You could save the event subscription here, and receive notifications for every device that is created in your IoT hub. For this tutorial, though, let's use the optional fields to filter for specific devices. Select **Filters** at the top of the pane.
+You could save the event subscription here, and then receive notifications for every device that's created in your IoT hub. For this tutorial, though, let's use the optional fields to filter for specific devices. 
+
+1. Select **Filters** at the top of the pane.
 
 1. Select **Add new filter**. Fill in the fields with these values:
 

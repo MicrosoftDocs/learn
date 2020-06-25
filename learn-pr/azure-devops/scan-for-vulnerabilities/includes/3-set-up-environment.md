@@ -1,3 +1,5 @@
+[!include[](../../shared/includes/note-maintenance.md)]
+
 In this part, you make sure that your Microsoft Azure DevOps organization is set up to complete the rest of this module.
 
 To do this, you:

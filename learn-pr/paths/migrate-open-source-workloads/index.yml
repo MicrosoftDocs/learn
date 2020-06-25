@@ -14,7 +14,7 @@ prerequisites: |
   - Knowledge of fundamental Azure concepts, and experience using the Azure portal.
 summary: |
   Learn how to migrate open-source workloads from PostgreSQL and MySQL databases to the equivalent services in Azure. Explore the processes and tools, and learn how to validate application dependencies to support a successful migration.
-iconUrl: /learn/achievements/learn-pr/achievements/migrating-open-source-workloads-to-azure-dp0-70.svg
+iconUrl: /learn/achievements/migrating-open-source-workloads-to-azure-dp0-70.svg
 levels:
 - intermediate
 roles:

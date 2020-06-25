@@ -236,17 +236,17 @@ Ansible is idempotent. That means you can run it as many times as you'd like. An
 
 Run the following `ansible-playbook` command to apply your playbook a second time:
 
-    ```bash
-    ansible-playbook \
-      --inventory azure_rm.yml \
-      --user azureuser \
-      --private-key ~/.ssh/ansible_rsa \
-      users.yml
-    ```
+```bash
+ansible-playbook \
+  --inventory azure_rm.yml \
+  --user azureuser \
+  --private-key ~/.ssh/ansible_rsa \
+  users.yml
+```
 
-    You this this:
+You will see this output:
 
-    ```output
+```output
     PLAY [all] **********************************************************************************************************************************************************************
 
     TASK [Gathering Facts] **********************************************************************************************************************************************************
@@ -262,7 +262,7 @@ Run the following `ansible-playbook` command to apply your playbook a second tim
     PLAY RECAP **********************************************************************************************************************************************************************
     vm1_1bbf                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
     vm2_867a                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
-    ```
+```
 
 As you might expect, Ansible doesn't apply any changes. The `changed=0` part of the output tells you this.
 
