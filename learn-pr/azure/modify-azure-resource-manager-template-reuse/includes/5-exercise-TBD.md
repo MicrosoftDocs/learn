@@ -15,7 +15,7 @@ Here, you add a variable to store your storage account name function in one plac
     "variables": {"variable1": "value"},
     ```
 
-1. Change the name of the variable to **uniqueResourceName** nad the value to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**
+1. Change the name of the variable to **uniqueResourceName**, and change the value to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**
 
     ```json
     "variables": {
@@ -23,7 +23,7 @@ Here, you add a variable to store your storage account name function in one plac
       },
     ```
 
-1. Use the variable in the resources section. Change the value of the ```name:``` and ```displayName``` attributes to **"[variables('uniqueStorageName')]"**
+1. Use the variable in the resources section. Change the values of the ```name:``` and ```displayName``` attributes to **"[variables('uniqueStorageName')]"**
 
 1. Change value of the ```maxLength:``` attribute for the *storagePrefix* variable  to 11. The maximum length for a storage account name is 24, and you want to be sure the added hash from the function you created doesn't cause the name to be more than 24 characters.
 

@@ -1,4 +1,4 @@
-Here, you add tags to help organize and track your resources and use a parameter file to allow for different parameter configurations.
+Here, you add tags to help organize and track your resources, and use a parameter file to allow for different parameter configurations per deployment.
 
 ## Create a tag to track the resource deployment environment and project
 
@@ -16,7 +16,7 @@ Here, you create a parameter to use as a resource tag in your template.
     }
 ```
 
-1. Change *parameter1 to **resourceTags** and the type to be object. 
+1. Change *parameter1* to **resourceTags** and change the value of ```"type";``` to be **object**.
 1. Add an attribute called **defaultValue:** and set the value to be **{"Environment": "Dev", "Project": "Tutorial"}**.
 1. The parameter block should look like this:
 
@@ -46,8 +46,8 @@ Here, you create a parameter to use as a resource tag in your template.
             "defaultValue": {
                 "Environment": "Dev",
                 "Project": "Tutorial"
+                }
             }
-        }
        },
     ```
 
@@ -74,7 +74,7 @@ Here, you create a parameter to use as a resource tag in your template.
         --parameters storagePrefix={your-Prefix} storageSKU=Standard_LRS
     ```
 
-1. Verify that the new tags are in the deployment. In Azure, select your resource group and then select the storage account you deployed.
+1. Verify that the new tags are in the deployment. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group and then select the storage account you deployed.
 1. You see the *Environment:Dev* and *Project:Tutorial* tags.
 
     :::image type="content" source="../media/7-tags.png" alt-text="Azure portal interface for the storage account showing tags of Environment:Dev and Project:Tutorial." border="true":::

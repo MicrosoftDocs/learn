@@ -1,4 +1,6 @@
-In this exercise, you 
+Here, you create an expression using template functions that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in storage account names similar to *dev2hu6sbtr5* or *staging5his8hgr67*.
+
+This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 ## Create the Azure Resource Manager template file
 
@@ -12,13 +14,13 @@ In the previous module, you created an Azure Resource Manager template that depl
 
 1. If you didn't complete the previous module, take a moment to review this file. Note the ```storageName``` parameter. This was used to pass in a unique name for the Azure storage account.
 
-## Create a user defined function to set a unique storage account name
+## Create an expression to set a unique storage account name
 
-Instead of passing in the name of the storage account, you change the parameter to take a prefix for the storage account name. This parameter will be used in the function you create.
+Instead of passing in the name of the storage account, you change the parameter to take a prefix for the storage account name. This parameter will passed to the ```concat``` function in your expression.
 
 1. In the parameters section, change ```storageName``` to **storagePrefix**.
 
-1. Create the function to set the unique storage account name. In the resources section, change the value of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. This is the same function you learned about in the previous unit. The file should now look like this.
+1. Create the expression to set the unique storage account name. In the resources section, change the value of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. This is the same expression you learned about in the previous unit. The file should now look like this.
 
     [!code-json[](code/function.json)]
 
