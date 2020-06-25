@@ -35,7 +35,7 @@ products:
 units:
 - learn.github.automate-github-using-github-script.1-introduction
 - learn.github.automate-github-using-github-script.2-what-is-github-script
-- learn.github.automate-github-using-github-script.3-using-github-script
+- learn.github.automate-github-using-github-script.3-use-github-script
 - learn.github.automate-github-using-github-script.4-knowledge-check
 - learn.github.automate-github-using-github-script.5-summary
 badge:
