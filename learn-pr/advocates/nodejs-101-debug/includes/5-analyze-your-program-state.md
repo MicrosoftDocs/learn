@@ -32,7 +32,7 @@ After you've set up your breakpoints and started your app, you'll see new inform
 
 :::image source="../media/debugger-overview.png" alt-text="VS Code debugger overview":::
 
-1. Debugger configuration controls.
+1. Debugger launch controls.
 1. Variables state.
 1. Watched variables state.
 1. Current call stack.
@@ -41,6 +41,17 @@ After you've set up your breakpoints and started your app, you'll see new inform
 1. Execution controls.
 1. Current execution step.
 1. Debug console.
+
+### Debugger launch controls
+
+At the top of the side bar you can find the launch controls:
+
+:::image source="../media/debug-sidebar-controls.png" alt-text="VS Code debug side bar controls":::
+
+1. Start debugging.
+1. Select active launch configuration.
+1. Edit `launch.json` file, creating it if needed.
+1. Open debug terminal.
 
 ### View and edit your variables state
 
