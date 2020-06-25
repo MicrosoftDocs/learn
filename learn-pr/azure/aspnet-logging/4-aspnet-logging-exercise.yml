@@ -20,17 +20,11 @@ tasks:
   azure:
     resource: 
       type: Microsoft.Insights/components
-      tags:
-        -name: Name
-        -value: AppInsightsLog
   hint: "Make sure you create the Azure AppInsights account"
 - action: exists
   environment: azure
   azure:
     resource:
       type: Microsoft.Storage/storageAccounts
-      tags: 
-        -name: Name
-        -value: BlobStorageAccount
   hint: "Make sure you create the Azure Storage account"
   
