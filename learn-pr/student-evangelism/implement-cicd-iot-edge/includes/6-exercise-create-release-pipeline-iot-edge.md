@@ -1,4 +1,4 @@
-# Create a new release pipeline
+## Create a new release pipeline
 
 Deployments to devices need to be done under tight control in production environments. To achieve this, you'll create a release pipeline which deploys to QA devices and smoke tests the edge runtime in a containerized device. This is accomplished by running an instance of the [azure-iot-edge-device-container](https://github.com/toolboc/azure-iot-edge-device-container) which is configured as a QA device then probing the IoT Hub to ensure that QA device receives the desired deployment configuration and is able to successfully run all configured modules. This test is contained in [edgeSmokeTest.sh](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/scripts/edgeSmokeTest.sh)
 
@@ -66,16 +66,16 @@ Deployments to devices need to be done under tight control in production environ
 
     7. Provide all parameters as required in Variables.
 
-11. Now go back to **Pipeline** and add an artifact.
+13. Now go back to **Pipeline** and add an artifact.
 
     ![The illustration shows how to add an artifact.](../media/add-artifact.png)
 
-12. Next, select your CI build pipeline as source type and configure to obtain the latest version.
+14. Next, select your CI build pipeline as source type and configure to obtain the latest version.
 
-13. Once you have configured everything appropriately, select **Save**.
+15. Once you have configured everything appropriately, select **Save**.
 
-14. Navigate to **Pipelines** > Releases then select the newly created Release pipeline and Select **Create a release**.
+16. Navigate to **Pipelines** > Releases then select the newly created Release pipeline and Select **Create a release**.
 
     ![The illustration show how to create a new release pipeline.](../media/create-new-release.png)
 
-15. The new release pipeline should begin running.
+17. The new release pipeline should begin running.

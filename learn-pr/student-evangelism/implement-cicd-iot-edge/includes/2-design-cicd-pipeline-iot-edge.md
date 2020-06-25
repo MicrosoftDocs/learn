@@ -4,8 +4,8 @@ Firstly, you wanted to create a smoke testing strategy for IoT Edge devices. Sec
 
 The design for the solution should provide two main benefits:
 
-1. Because it's expensive to deploy to different physical IoT devices, the use of a smoke test for virtual IoT device saves costs. A successful smoke test ensures that the program is ready for further testing. 
-2. Automated smoke testing avoids expensive rework for more sophisticated tests, optimizing the time for your developer and the test teams.
+- Because it's expensive to deploy to different physical IoT devices, the use of a smoke test for virtual IoT device saves costs. A successful smoke test ensures that the program is ready for further testing. 
+- Automated smoke testing avoids expensive rework for more sophisticated tests, optimizing the time for your developer and the test teams.
 
 To implement this solution, you'll create a smoke test as a subset of your main functionality. The test should be self-scoring and automated. It should be capable of running on virtual IoT devices. Also, the test should incorporate the principles of DevOps (Continuous Integration and Continuous Delivery) for IoT Edge devices. 
 
