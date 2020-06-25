@@ -14,11 +14,15 @@ Kubernetes can only spin up an image if that image is hosted in a container regi
 
 Think of registries as archives to your images. It stores all the images described by their tags, so an image `contoso-website:latest` has a different tag than `contoso-website:v1.0.0`. These tags describe the versions of your image, and you can have multiple of them in your registry.
 
+[//]: # (DIAGRAM HERE)
+
 Container registries may be public, which means anyone has access to it and download images without the need of a credential. They can also be private, which is the opposite, to download any image you'll need to run a sign-in step.
 
 ## Kubernetes manifest files
 
 Instead of telling exactly what to do and how to create the resources, Kubernetes have manifest files. They allow you to describe your workloads in the YAML format. These manifest files contain everything that is needed to create and manage the workload it describes.
+
+[//]: # (DIAGRAM HERE)
 
 There are several types of workloads Kubernetes supports. Each one has its own uses and purposes, for this website we'll be using the __Deployment__, __Service__, and __Ingress__ types.
 
@@ -79,6 +83,8 @@ From this point on, all files have different structures based on what kind of re
 Kubernetes groups containers and applications into logical structures called __Pods__. These pods have no intelligence and are composed of one or more application containers (Docker containers). Each one has its own IP address and network rules, and exposed ports.
 
 Deployments are an evolution of pods. They wrap the Pods into an intelligent structure that allows them to _scale out_. That means you can easily duplicate and scale your application to support more load without the need to configure complex networking rules. To create this wrapping, deployments need a `label`. Labels are the way deployments find and group pods within their bounds.
+
+[//]: # (DIAGRAM HERE)
 
 Kubernetes can tag workloads with labels. These labels allow for the system to query the cluster for workloads that have one or more labels, for example, if we wanted to search all workloads related to the `contoso-website` we could query the cluster for everything with the label `app` and the value of that label being `contoso-website`. This can be seen in the `selector` key of our previous example:
 

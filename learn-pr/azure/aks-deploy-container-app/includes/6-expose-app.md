@@ -8,9 +8,9 @@ The same happens with the network. Deployments aren't considered a physical work
 
 ### Kubernetes services
 
-Services are workloads that abstract the IP address for networked workloads, like pods. Essentially, a service uses the same `selector` key as deployments to select and group resources with the required labels into one single IP, acting somewhat as a load balancer and redirecting the traffic to the specific ports.
+Services are workloads that abstract the IP address for networked workloads, like pods. Essentially, a service uses the same `selector` key as deployments to select and group resources with the required labels into one single IP, acting somewhat as a load balancer and redirecting the traffic to the specific ports. Basically, services handle the port-forwarding rules to their selected pods. receiving incoming packages in one port and forward them to another internal one.
 
-Basically, services handle the port-forwarding rules to their selected pods. receiving incoming packages in one port and forward them to another internal one.
+[//]: # (DIAGRAM HERE)
 
 Services can be of several types, each type changes the behavior of the applications selected by the service:
 
@@ -27,8 +27,12 @@ By default, all incoming traffic to a Kubernetes cluster is rejected. To allow t
 
 Ingresses are like doors in a huge wall. They allow some traffic in based on a set of rules. Think of it as a firewall solution. An Ingress resource is required when exposing an application externally using a DNS name – like we want to do by allowing people to access Contoso's website through `http://contoso.com`.
 
+[//]: # (DIAGRAM HERE)
+
 Using managed services like AKS makes it a lot easier, because with the :::no-loc text="HTTP Application Routing"::: add on we create a resource called __Ingress Controller__.
 
 Ingress controllers are reverse proxies that listen when you create an Ingress workload in the cluster. When you create a new Ingress, the add-on gets its name and figures where the DNS is pointing to by reading the manifest file. Then it automatically adds a new entry in the internal webserver's configuration that allows this DNS to pass through the cluster's "wall".
+
+[//]: # (DIAGRAM HERE)
 
 In AKS, the Ingress Controller is linked to a _DNS Zone_ resource in your Azure subscription – which was automatically created when we created our cluster. This link makes possible for the cluster to automatically create a zone record pointing the DNS name to the IP address and port of the exposed application.
