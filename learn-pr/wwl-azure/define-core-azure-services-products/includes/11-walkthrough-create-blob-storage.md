@@ -20,7 +20,7 @@ In this task, we will create a new storage account.
     | Setting | Value | 
     | --- | --- |
     | Subscription | **Choose Concierge Subscription** |
-    | Resource group | **[sandbox resource group name]** |
+    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
     | Storage account name | **storageaccountxxxx** |
     | Location | **(US) East US**  |
     | Performance | **Standard** |
