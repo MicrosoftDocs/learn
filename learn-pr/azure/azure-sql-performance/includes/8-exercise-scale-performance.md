@@ -1,3 +1,5 @@
+### Scaling Azure SQL Performance
+
 In this exercise you will take the problem you encountered in the first exercise and improve performance by scaling more CPUs for Azure SQL Database
 
 1. Decide options on how to scale performance
@@ -161,3 +163,5 @@ Look at the Overview blade again for the Compute Utilization. Notice the signifi
 If you used Azure Log Analytics, you would see performance differences like the following (image has been annotated)
 
 ![kusto_query_metric_cpu_percent_faster](../media/kusto_query_metric_cpu_percent_faster.png)
+
+You will now go through another exercise where you observe a performance problem and resolve it by improving application performance.

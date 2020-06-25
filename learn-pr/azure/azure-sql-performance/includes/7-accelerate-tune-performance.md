@@ -45,3 +45,5 @@ Azure SQL is still SQL Server. There is almost never a substitute for ensuring y
 - Using stored procedures
 - Parameterize queries to avoid too many cached ad-hoc queries
 - Process results in your application quickly and correctly
+
+You will now go through an exercise to take the performance problem from the first exercise and improve it by scaling CPUs for Azure SQL.
