@@ -1,4 +1,4 @@
-In the last unit, you created an Azure Resource Manager template and added an Azure storage account to the template. Recall that in our scenario each deployment may have a different type of Azure storage account. You can make your template more reusable by adding a parameter for the Azure storage account SKU.
+In the last unit, you created an Azure Resource Manager template and added an Azure Storage Account to the template. Recall that in our scenario each deployment may have a different type of Storage Account. You can make your template more reusable by adding a parameter for the Storage Account SKU.
 
 Here, you learn about the *parameters* and *outputs* sections of the template.
 
@@ -117,7 +117,7 @@ In the *outputs* section of your template, you can specify values that will be r
 
 ### How do I use outputs in my template
 
-Here is an example to output the Azure storage account's endpoints.
+Here is an example to output the Storage Account's endpoints.
 
 ```json
  "outputs": {
@@ -132,4 +132,4 @@ Notice the ```reference``` part of the expression. This function gets the runtim
 
 ## What happens if I deploy a template again
 
-Recall that Azure Resource Manager templates are idempotent, meaning you can deploy the template to the same environment again and if nothing was changed in the template, nothing will change in the environment. However, if there was a change made to the template, for example, you changed a parameter value, only that change will be deployed. Your template can contain all of the resources you need for your Azure solution and you can safely execute a template again. Resources will only be created if they didn't already exist, and updated only if there is a change.
+Recall that Resource Manager templates are idempotent, meaning you can deploy the template to the same environment again and if nothing was changed in the template, nothing will change in the environment. However, if there was a change made to the template, for example, you changed a parameter value, only that change will be deployed. Your template can contain all of the resources you need for your Azure solution and you can safely execute a template again. Resources will only be created if they didn't already exist, and updated only if there is a change.

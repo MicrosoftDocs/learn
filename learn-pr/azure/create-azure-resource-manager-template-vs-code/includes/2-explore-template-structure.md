@@ -1,4 +1,4 @@
-Here, you learn about using Microsoft Azure Resource Manager templates to implement infrastructure as code. You survey the sections of an Azure Resource Manager template, discover how to deploy your template to Azure, and delve into detail on the *resources* section of the template.
+Here, you learn about using Microsoft Azure Resource Manager templates to implement infrastructure as code. You survey the sections of a Resource Manager template, discover how to deploy your template to Azure, and delve into detail on the *resources* section of the template.
 
 ## What is infrastructure as code
 
@@ -15,21 +15,21 @@ With infrastructure as code, you can maintain both your application code and eve
 
 ## What is an Azure Resource Manager template
 
-Azure Resource Manager (ARM) templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your deployment. The template uses a *declarative syntax*. The declarative syntax is a way of building the structure and elements that outline what resources will look like without describing its control flow. Declarative syntax is different than *imperative syntax*, which uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
+Azure Resource Manager templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your deployment. The template uses a *declarative syntax*. The declarative syntax is a way of building the structure and elements that outline what resources will look like without describing its control flow. Declarative syntax is different than *imperative syntax*, which uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
 
 ARM templates allow you declare what you intend to deploy without having to write the sequence of programming commands to create it.  In a template, you specify the resources and the properties for those resources, then the [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview?azure-portal=true) uses that information to deploy the resources in an organized and consistent manner.
 
-### Benefits of using Azure Resource Manager templates
+### Benefits of using Resource Manager templates
 
 Using ARM templates allows you to automate deployments and use the practice of infrastructure as code (IaC). The template code becomes part of your infrastructure and development projects. Just like application code, you can store the IaC files in a source repository and version it.
 
 Templates are *idempotent*, which means you can deploy the same template many times and get the same resource types in the same state.
 
-The Azure Resource Manager orchestrates the deployment of the resources so they're created in the correct order, and when possible, in parallel, so your deployments finish faster than scripted deployments.
+The Resource Manager orchestrates the deployment of the resources so they're created in the correct order, and when possible, in parallel, so your deployments finish faster than scripted deployments.
 
   :::image type="content" source="../media/2-template-processing.png" alt-text="A mapping of the template processing procedure showing that there is only once call to process a template as opposed to several calls to process scripts." border="true":::
 
-Azure Resource Manager also has built in validation and checks the template before starting the deployment to make sure the deployment will succeed.
+Resource Manager also has built in validation and checks the template before starting the deployment to make sure the deployment will succeed.
 
 If your deployments become more complex, you can break your templates into smaller, reusable components and link them together at deployment time. You can also nest one or multiple templates inside other templates.
 

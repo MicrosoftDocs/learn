@@ -1,8 +1,8 @@
-In this exercise, you create a Microsoft Azure Resource Manager template and deploy it to Azure. Then you update that template to add parameters and outputs.
+In this exercise, you create an Azure Resource Manager template and deploy it to Azure. Then you update that template to add parameters and outputs.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
-## Create an Azure Resource Manager template
+## Create a Resource Manager template
 
 1. Open Visual Studio Code and create a new file called *azuredeploy.json*.
 1. On the first line of the file, type **arm**.
@@ -25,11 +25,11 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
     }
     ```
 
-      Notice that this file has all of the sections of an Azure Resource Manager template that we discussed in the last unit.
+      Notice that this file has all of the sections of a Resource Manager template that we discussed in the last unit.
 
 1. Save the changes to the file.
 
-## Deploy the Azure Resource Manager template to Azure
+## Deploy the Resource Manager template to Azure
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed and that you are signing in to the same account that activated the sandbox.
 
@@ -112,7 +112,7 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
 
 ## Add a resource to the template
 
-Here, you add an Azure storage account resource to the template using a snippet from the Azure Resource Manager Tools for Visual Studio Code extension.
+Here, you add an Azure Storage Account resource to the template using a snippet from the Azure Resource Manager Tools for Visual Studio Code extension.
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the square brackets in the resources block. ```"resources":[],```
 1. Type **storage** in the square brackets. You see a list of related snippets. Choose **arm-storage**.

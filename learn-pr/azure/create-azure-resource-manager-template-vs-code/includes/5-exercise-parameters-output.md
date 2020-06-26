@@ -1,4 +1,4 @@
-In this exercise, you add a parameter to define the Azure storage account name at execute time. You then add a parameter to define what Azure storage account SKU is allowed and define which one to use for this deployment. You also add usefulness to the template by adding an output that can be used later in the deployment process.
+In this exercise, you add a parameter to define the Azure Storage Account name at execute time. You then add a parameter to define what Storage Account SKU is allowed and define which one to use for this deployment. You also add usefulness to the template by adding an output that can be used later in the deployment process.
 
 ## Create parameters for the template
 
@@ -90,7 +90,7 @@ Here you use parameters to limit the values allowed for a parameter.
 
 1. Add a comment to this parameter.
 
-    :::image type="content" source="../media/5-add-comments.png" alt-text="The azuredeploy.json file with the comment This is the allowed values for an Azure storage account above the storageSKU parameter" border="true":::
+    :::image type="content" source="../media/5-add-comments.png" alt-text="The azuredeploy.json file with the comment This is the allowed values for an Storage Account above the storageSKU parameter" border="true":::
 
     Azure Resource Manager templates support ```//``` and ```/* */``` comments.
 
