@@ -36,7 +36,7 @@ The [Azure Fundamentals learning path](https://docs.microsoft.com/learn/paths/az
 
 - [Linux Migration – Azure Migration Center](https://azure.microsoft.com/migration/linux/)
 - [Azure Migrate documentation](https://docs.microsoft.com/azure/migrate/)
-- Sample total cost of ownership (TCO) summary reports (on-premises vs. Azure) for migration scenarios: [datacenter migration](https://azure.microsoft.com/resources/sample-report-for-datacenter-migration-windows-and-linux-servers/), [rehosting open source](https://azure.microsoft.com/resources/sample-migration-tco-rehost-oss/); [rebuilding open source](https://azure.microsoft.com/resources/sample-migration-tco-rebuild-oss/) (MICHAEL TODO - Are these from the [TCO calculator](https://azure.microsoft.com/pricing/tco/calculator/)? I'd rather just link to that, and maybe *one* of these as an example.)
+- Sample total cost of ownership (TCO) summary reports (on-premises vs. Azure) for migration scenarios: [datacenter migration](https://azure.microsoft.com/resources/sample-report-for-datacenter-migration-windows-and-linux-servers/), [rehosting open source](https://azure.microsoft.com/resources/sample-migration-tco-rehost-oss/); [rebuilding open source](https://azure.microsoft.com/resources/sample-migration-tco-rebuild-oss/)
 
 ### E-Books
 
