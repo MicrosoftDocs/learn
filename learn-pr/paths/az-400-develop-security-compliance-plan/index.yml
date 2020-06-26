@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.az-400-develop-security-compliance-plan
 metadata:
-  title: "AZ-400: Develop a Security and Compliance Plan"
+  title: "AZ-400: Develop a security and compliance plan"
   description: "Build strategies around security and compliance and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure
   ms.date: 06/25/2020
@@ -9,7 +9,7 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "AZ-400: Develop a Security and Compliance Plan"
+title: "AZ-400: Develop a security and compliance plan"
 summary: |
   Build strategies around security and compliance that enable you to authenticate and authorize your users, handle sensitive information, and enforce proper governance.
 
