@@ -59,6 +59,11 @@ $storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName `
     -AccountName $storageAccountName `
     -Location $location `
     -Type "Standard_LRS"
+# Set up Log Analytics
+$WorkspaceName = $serverName + "-la"
+$workspace = New-AzOperationalInsightsWorkspace -Location $location -Name $WorkspaceName -Sku Standard -ResourceGroupName $resourceGroupName
+Set-AzSqlServerAudit -ResourceGroupName $resourceGroupName -ServerName $serverName -LogAnalyticsTargetState Enabled -WorkspaceResourceId $workspace.ResourceId
+Set-AzSqlDatabaseAudit -ResourceGroupName $resourceGroupName -ServerName $serverName -LogAnalyticsTargetState Enabled -WorkspaceResourceId $workspace.ResourceId -DatabaseName $databaseName
 Write-Host "Please note your unique ID for future exercises in this module:"  
 Write-Host $randomString
 Write-Host "Your resource group name is:"
@@ -80,6 +85,42 @@ Check the **Remember password** box and select **Connect**.
 > **Note**: Depending on your local configuration (e.g. VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
 
 ![Connect to SQL Database in SSMS](../media/connectazsql.png)  
+
+### Set up: Configure Auditing with Log Analytics
+
+In this exercise, you'll learn how to use auditing through Log Analytics to determine when `DROP` statements have occurred. In order to do this, you must first configure auditing.
+
+1. Enable auditing on the Azure SQL Database logical server  
+
+    Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) and navigate to your Azure SQL Database. In the left-hand task menu, under Security, select **Auditing**. Select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server.  
+
+    ![Database-level auditing blade](../media/dbaudit.png)  
+
+    Next, set **Auditing** to **ON**.  
+
+2. Configure auditing with Log Analytics  
+
+    In this step, you'll configure Log Analytics. 
+
+    Select **Log Analytics (Preview)** and the **Configure** button.  
+
+    ![Server-level auditing blade](../media/serveraudit.png)  
+
+    Next, select **+ Create New Workspace**.  
+
+    ![Create a new workspace](../media/newws.png)  
+
+    Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace **azuresql`<unique ID>`-la**, using your unique ID for your resources. Select **OK**.  
+
+    ![Details for new workspace](../media/laws.png)  
+
+    This may take a few moments to validate and create. You should now see your Log Analytics account.  
+
+3. Select save
+
+    Select **Save**.  
+
+    ![Save Log Analytics details](../media/save.png)  
 
 ### Process for PITR
 
@@ -149,7 +190,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     One way to determine the drop time, is if you have access to the `Completion time` of the `DROP` statement, which you noted in the previous step.  
 
-    A new way may be to use the Audit logs in the Azure portal. Navigate to your Azure SQL Database in the Azure portal, e.g. **AdventureWorks**. In the left-hand menu, under Security, select **Auditing** and then select **View audit logs**.  
+    A new way may be to use the Audit logs in the Azure portal. Navigate to your Azure SQL Database in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com), e.g. **AdventureWorks**. In the left-hand menu, under Security, select **Auditing** and then select **View audit logs**.  
 
     ![Select view audit logs](../media/viewauditlogs.png)
 
