@@ -19,6 +19,6 @@ If you intend to complete the exercises (recommended), a sandbox environment is 
 * Use a Windows machine or VM (SSMS is only available on Windows)  
 * Download and install [the latest version of SSMS](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 * Download and install [the latest version on Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
-* Download the zip file which includes some of the lab files. Extract the contents of the zip file to something similar to `C:\users\[YourUsername]\` so you can access it easily in the exercises.  
+* Download the [zip file](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/archive/master.zip) or clone the repository from [GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals) to access lab files. Extract the contents of the zip file to something similar to `C:\Users\[YourUsername]\` so you can access it easily in the exercises.  
 
 If you cannot complete the prerequisites, you can still go through the module and see demos of the exercises.  
