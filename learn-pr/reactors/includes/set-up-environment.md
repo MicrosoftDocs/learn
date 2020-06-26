@@ -4,7 +4,7 @@
 
   <summary>Show details <i>(select to expand)</i></summary>
 
-To learn most effectively throughout this learn module, set up your environment so that you can follow along.
+To learn most effectively throughout this module, set up your environment so that you can follow along.
 
 Finish these steps to set up your environment:
 
@@ -22,14 +22,14 @@ If you've successfully set up your environment with Visual Studio Code, Python, 
 
 <!--*Embedded Video Goes Here*-->
 
-### Work through this learn module
+### Work through this module
 
 As you work through this module, you'll be encouraged to try out code. Use the files you cloned to do this.
 
 Jupyter notebooks are divided into cells. Each cell contains either text written in the Markdown markup language or a space in which to write and execute computer code. Because all the code resides inside code cells, you can run each code cell inline instead of using a separate Python interactive window.
 
 > [!NOTE]
-> This learn module is designed to have you run code cells one by one. As you complete these modules, you're encouraged to copy the code snippets into your Visual Studio Code Jupyter Notebook instance and run each cell one at a time.
+> This module is designed to have you run code cells one by one. As you complete these modules, you're encouraged to copy the code snippets into your Visual Studio Code Jupyter Notebook instance and run each cell one at a time.
 
 <br />
 
