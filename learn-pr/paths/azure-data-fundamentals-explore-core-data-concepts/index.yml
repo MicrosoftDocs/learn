@@ -14,7 +14,7 @@ prerequisites: |
 summary: |
   Learn the fundamentals of database concepts in a cloud environment, get basic skilling in cloud data services, and build your foundational knowledge of cloud data services within Microsoft Azure.
   You will identify and describe core data concepts such as relational, non-relational, big data, and analytics, and explore how this technology is implemented with Microsoft Azure. You will explore the roles, tasks, and responsibilities in the world of data.
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/azure-data-fundamentals-explore-core-data-concepts.svg
 levels:
 - beginner
 roles:
