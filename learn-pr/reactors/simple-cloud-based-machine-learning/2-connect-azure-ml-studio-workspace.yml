@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.simple-cloud-based-machine-learning.2-connect-azure-ml-studio-workspace
-title: Create and connect to an Azure ML Studio workspace
+title: Create and connect to an Azure Machine Learning Studio workspace
 metadata:
-  title: Create and connect to an Azure ML Studio workspace
-  description: Create and connect to an Azure ML Studio workspace for data science operations.
+  title: Create and connect to an Azure Machine Learning Studio workspace
+  description: Create and connect to an Azure Machine Learning Studio workspace for data science operations.
   ms.date: 06/30/2020
   author: sguthals
   ms.author: sguthals

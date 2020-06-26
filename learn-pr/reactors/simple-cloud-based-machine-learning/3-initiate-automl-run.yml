@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.reactors.simple-cloud-based-machine-learning.3-initiate-automl-run
-title: Initiate the AutoML run on Azure
+title: Initiate the automated machine learning run on Azure
 metadata:
-  title: Initiate the AutoML run on Azure
-  description: Initiate the AutoML run on Azure for data science operations.
+  title: Initiate the automated machine learning run on Azure
+  description: Initiate the automated machine learning run on Azure for data science operations.
   ms.date: 06/30/2020
   author: sguthals
   ms.author: sguthals

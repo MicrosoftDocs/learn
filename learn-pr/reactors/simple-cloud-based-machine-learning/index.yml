@@ -12,17 +12,17 @@ title: Simple cloud-based machine learning
 summary: Learn about simple cloud-based machine learning for data science operations.
 abstract: |
   In this module, you will:
-  - Create and connect to an Azure ML Studio workspace
-  - Explore bank-marketing data
-  - Transfer data to Azure ML Studio
-  - Create a machine learning model
-  - Deploy a machine learning model as a web service
-  - Learn how to consume a web service
+  - Create and connect to an Azure Machine Learning Studio workspace.
+  - Explore bank-marketing data.
+  - Transfer data to Azure Machine Learning Studio.
+  - Create a machine learning model.
+  - Deploy a machine learning model as a web service.
+  - Learn how to consume a web service.
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - Review the steps to manipulate and clean data
-  - Understand machine learning models for data science
+  - Review the steps to manipulate and clean data.
+  - Understand machine learning models for data science.
 iconUrl: /learn/achievements/reactors/simple-cloud-based-machine-learning.svg
 hidden: true
 levels:
