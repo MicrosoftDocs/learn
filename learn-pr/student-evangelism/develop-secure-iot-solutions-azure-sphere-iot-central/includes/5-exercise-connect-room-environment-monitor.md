@@ -142,7 +142,8 @@ Follow these steps:
 
 4. Run the **ShowIoTCentralConfig** tool. Now follow the prompts that the tool provides, and copy the information from the output into the app_manifest.json file in Visual Studio.
 
-   > [!Note]: Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent. In some organizations, [enterprise application permissions](https://docs.microsoft.com/azure-sphere/install/admin-consent) must be granted by an IT administrator.
+   > [!Note]
+   > Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent. In some organizations, [enterprise application permissions](https://docs.microsoft.com/azure-sphere/install/admin-consent) must be granted by an IT administrator.
 
 5. Review the output from the **ShowIoTCentralConfig** tool. It will look similar to the following text.
 
@@ -333,7 +334,8 @@ static void SendMsgLedOn(char* message)
 
 2. You'll see the device negotiating security, and then it will start sending telemetry to Azure IoT Central.
 
-> [!NOTE] You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to IoT Central is being negotiated.
+> [!NOTE]
+> You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to IoT Central is being negotiated.
 
 ## Step 10: Expected Device Behavior
 
