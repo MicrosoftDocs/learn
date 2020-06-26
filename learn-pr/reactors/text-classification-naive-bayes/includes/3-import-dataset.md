@@ -7,10 +7,6 @@ In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics
 
 Let's import pandas and load the dataset. The path name in the following code is case-sensitive.
 
-> [!TIP]
-> If you haven't set up a Visual Studio Code environment with Jupyter Notebooks by using Python and libraries like pandas, the [Introduction to Python](https://review.docs.microsoft.com/learn/reactors/python-data-science/1-introduction?branch=new-data-science-1) module might be a useful first step.
->
-
 ```python
 import pandas as pd 
 df = pd.read_csv('Data/SMSSpamCollection', sep='\t', names=['Class', 'Message'])
