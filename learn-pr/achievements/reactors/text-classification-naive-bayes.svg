@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Machine Learning: PCA, SVM, and Deep Learning/text-classification-with-naïve-bayes</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M47.1698113,0 C73.2209788,0 94.3396226,21.1186439 94.3396226,47.1698113 C94.3396226,73.2209788 73.2209788,94.3396226 47.1698113,94.3396226 C21.1186439,94.3396226 0,73.2209788 0,47.1698113 C0,21.1186439 21.1186439,0 47.1698113,0 Z M47.1698113,3.77358491 C23.2027373,3.77358491 3.77358491,23.2027373 3.77358491,47.1698113 C3.77358491,71.1368854 23.2027373,90.5660377 47.1698113,90.5660377 C71.1368854,90.5660377 90.5660377,71.1368854 90.5660377,47.1698113 C90.5660377,23.2027373 71.1368854,3.77358491 47.1698113,3.77358491 Z" id="path-6"></path>
+        <filter x="-12.5%" y="-12.5%" width="130.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.19 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#F36524" offset="0%"></stop>
+            <stop stop-color="#FFA20A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0140555%" y1="2.51545844e-15%" x2="50.0140555%" y2="100.054352%" id="linearGradient-10">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#8C4FE4" offset="62%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9774416%" y1="17.9912184%" x2="49.9774416%" y2="124.588364%" id="linearGradient-11">
+            <stop stop-color="#32D4F5" offset="0%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Machine-Learning:-PCA,-SVM,-and-Deep-Learning" transform="translate(-159.000000, -889.000000)">
+            <g id="Machine-Learning:-PCA,-SVM,-and-Deep-Learning/text-classification-with-naïve-bayes" transform="translate(160.000000, 890.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-7)" fill="#27C0F5">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Chat-bubble" transform="translate(40.000000, 29.000000)">
+                    <g id="Icon-iot-204-Notification-Hub-Namespaces" filter="url(#filter-8)">
+                        <g id="Group" transform="translate(0.302712, 2.724406)" fill="url(#linearGradient-9)" fill-rule="nonzero">
+                            <path d="M19.2478628,0.66127581 L19.2478628,12.8884268 C19.2478628,13.064071 19.1772061,13.2323622 19.0516926,13.3554954 C18.926179,13.4786285 18.7563584,13.5462795 18.5803794,13.5432512 L13.4667772,13.5432512 C13.379303,13.5432512 13.3083913,13.6140175 13.3083913,13.7013122 L13.3083913,15.6770753 C13.3073295,15.7968179 13.2385614,15.905683 13.1307612,15.9582772 C13.022961,16.0108715 12.894636,15.9981654 12.7992937,15.9254569 L9.72208176,13.5771214 L9.62026224,13.5771214 L0.682771687,13.5771214 C0.506792688,13.5801497 0.336972043,13.5124987 0.211458471,13.3893656 C0.0859448987,13.2662324 0.0152882079,13.0979412 0.0152882079,12.9222971 L0.0152882079,0.66127581 C0.0152882079,0.48563165 0.0859448987,0.317340422 0.211458471,0.194207273 C0.336972043,0.0710741236 0.506792688,0.00342312176 0.682771687,0.00635400617 L18.5803794,0.00635400617 C18.7563584,0.00342312176 18.926179,0.0710741236 19.0516926,0.194207273 C19.1772061,0.317340422 19.2478628,0.48563165 19.2478628,0.66127581 Z" id="Path"></path>
+                        </g>
+                        <rect id="Rectangle" x="0" y="0" width="19.9789783" height="19.9789783"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="#FFFFFF" x="3.33333333" y="5.15151515" width="13.3333333" height="1.81818182" rx="0.909090909"></rect>
+                    <rect id="Rectangle-Copy" fill="#FFFFFF" x="3.33333333" y="8.48484848" width="13.3333333" height="1.81818182" rx="0.909090909"></rect>
+                    <rect id="Rectangle-Copy" fill="#FFFFFF" x="3.33333333" y="11.8181818" width="7.27272727" height="1.81818182" rx="0.909090909"></rect>
+                </g>
+                <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="50" cy="50" r="24"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="82" cy="59" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="58" cy="62" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="36" cy="39" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="42" cy="59" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="64" cy="41" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="50" cy="53" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="42" cy="50" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="34" cy="47" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="74" cy="77" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="85" cy="35" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="53" cy="15" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="61" cy="21" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="31" cy="83" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="29" cy="71" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="14" cy="56" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="26" cy="32" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="50" cy="65" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="67" cy="55" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="18" cy="44" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="42" cy="18" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="45" cy="86" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="23" cy="68" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="82" cy="68" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="80" cy="49" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="75" cy="24" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="35" cy="57" r="3"></circle>
+                <circle id="Oval" fill="url(#linearGradient-11)" cx="59" cy="51" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
