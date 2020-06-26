@@ -4,10 +4,10 @@ A way to easily extend a web application is to ensure that different resources a
 
 It's important to understand what a URL is but also what other important concept comes into play when building an API such as:
 
-- **URL**, a URL is an address that a user would type into client like a browser to locate your specific server and a specific resource.
+- **URL**, a URL is an address that a user would type into a client like a browser to locate your specific server and a specific resource.
 - **Routes**, a route is a subsection of a URL and points to a specific resource usually. There are more concepts tied to a route that helps the user be more intentional like:
-  - **route parameters**,  a route parameter is a part of the route and is used to identify a specific resource item from a collection.
-  - **query parameters**, these are parameters located at the very end of the URL and help with filtering down the size of the response.
+  - **route parameters**, a route parameter is a part of the route and is used to identify a specific resource item from a collection, for instance, `/products/123`
+  - **query parameters**, these are parameters located at the very end of the URL and help with filtering down the size of the response, for instance `/products?sort=desc`
   - **HTTP Verbs**, HTTP Verbs express the *what*. By using the verb GET the user states, they want to read data from the resource whereas POST means that they mean to write data towards the resource.
 
 ## URL
@@ -28,7 +28,7 @@ scheme:[//authority]path[?query][#fragment]
 
 Let's explain the parts:
 
-- `scheme`, this part indicates the protocol used, in this case the scheme is `http`. Other example of a scheme is `ftp`, `irc`, and `file` among others.
+- `scheme`, this part indicates the protocol used, in this case the scheme is `http`. Other example of a scheme is `https`, `ftp`, `irc`, and `file` among others.
 - `authority`, the authority consists of two parts.
   - **User info**, It consists of an optional `username@password` part and also a `host` part. In the example above you have `localhost` be the host part. `localhost` points to your own machine as the web server. On the Web this is usually domain names like `google`, `microsoft` or similar. 
   - **Host**,  The `host` is friendly name and something you specify instead of an IP address. An IP address is The Web actual addresses and looks like a series of numbers like so `127.0.0.1`. This makes it easy for so called routers to *route* requests from one part of The Web to the other. However it's not human friendly, which is why `host` or `domain names` exist to create a name that why humans can remember like `microsoft.com`.

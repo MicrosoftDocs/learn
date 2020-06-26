@@ -3,7 +3,7 @@ uid: learn.node-http.4-express-routing
 title: Route management
 metadata:
   title: Route management
-  description: This unit will explain how to set up different types of routes based on HTTP verbs and route parameters. I will also explain how leverage query parameters to filter the response.
+  description: This unit will explain how to set up different types of routes based on HTTP verbs and route parameters. I will also explain how to leverage query parameters to filter the response.
   author: softchris
   ms.author: chnoring
   ms.date: 06/16/2020
