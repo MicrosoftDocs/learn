@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.aspnet-session.2-exercise-setup-app-deploy-resources
+uid: learn.azure.aspnet-session.2-exercise-deploy-resources
 title: Exercise - Set up application and deploy Azure resources
 metadata:
   title: Exercise - Set up application and deploy Azure resources
@@ -13,5 +13,5 @@ durationInMinutes: 5
 interactive: powershell
 azureSandbox: true
 content: |
-  [!include[](includes/2-exercise-setup-app-deploy-resources.md]
+  [!include[](includes/2-exercise-deploy-resources.md]
   
