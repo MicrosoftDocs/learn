@@ -142,8 +142,8 @@ Follow these steps:
 
 4. Run the **ShowIoTCentralConfig** tool. Now follow the prompts that the tool provides, and copy the information from the output into the app_manifest.json file in Visual Studio.
 
-   > [!Note]
-   > Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent. In some organizations, [enterprise application permissions](https://docs.microsoft.com/azure-sphere/install/admin-consent) must be granted by an IT administrator.
+   > [!NOTE]
+   > Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent.
 
 5. Review the output from the **ShowIoTCentralConfig** tool. It will look similar to the following text.
 
@@ -157,7 +157,7 @@ Follow these steps:
    }
    ```
 
-6. **Copy** the output from the ShowIoTCentralConfig tool to ***Notepad\*** as you'll need this information soon.
+6. **Copy** the output from the ShowIoTCentralConfig tool to **Notepad** as you'll need this information soon.
 
 ------
 
@@ -268,7 +268,7 @@ These labs support developer boards from AVNET and Seeed Studio. You need to set
 
 Open **main.c**, and scroll down to the **MeasureSensorHandler** function.
 
-> [!Note]
+> [!NOTE]
 > Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *measure*. You'll often see a function name listed twice in the dropdown. The first is the function prototype declaration, and the second is the implementation of the function.
 
 In the **MeasureSensorHandler** function there is a call to **SendMsgLedOn(msgBuffer);**.
