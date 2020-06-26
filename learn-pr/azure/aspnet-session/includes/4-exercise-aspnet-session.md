@@ -19,20 +19,33 @@ In this exercise, you'll create an instance of the Azure Cache for Redis service
 
 1. Create an Azure Cache for Redis instance.
 
-    ```PowerShell
-    New-AzRedisCache -ResourceGroupName $resourcegroupname -Name $rediscachename -Location $location -Sku Basic -Size c1 -Tag @{Name="SessionCache"}
+    ```azure-cli
+    az redis create `
+        --location $location `
+        --name $rediscachename `
+        --resource-group $resourcegroupname `
+        --sku Basic `
+        --vm-size c1
     ```
+
+    <!--```PowerShell
+    New-AzRedisCache -ResourceGroupName $resourcegroupname -Name $rediscachename -Location $location -Sku Basic -Size c1 -Tag @{Name="SessionCache"}
+    ```-->
 
 1. Run the following command to check the provisioning state of the cache. Repeat this command every 30 seconds until it displays the message ***Succeeded***.
 
     ```PowerShell
-    (Get-AzRedisCache -ResourceGroupName $resourcegroupname -Name $rediscachename).ProvisioningState
+    (Get-AzRedisCache `
+        -ResourceGroupName $resourcegroupname `
+        -Name $rediscachename).ProvisioningState
     ```
 
 1. Retrieve the primary access key for the cache, and record it to use later.
 
     ```PowerShell
-    $rediskey = (Get-AzRedisCacheKey -Name $rediscachename -ResourceGroup $resourcegroupname).PrimaryKey
+    $rediskey = (Get-AzRedisCacheKey `
+        -Name $rediscachename `
+        -ResourceGroup $resourcegroupname).PrimaryKey
     ```
 
 ## Configure the session provider in the web app
