@@ -18,7 +18,6 @@ summary: |
     - Use GitHub Actions to automatically build your application
     - Deploy to Microsoft Azure with GitHub Actions
 
-cardDescription: Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
  - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
