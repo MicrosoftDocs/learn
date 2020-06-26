@@ -1,10 +1,10 @@
 Connect your Azure Sphere dev kit to your PC through USB. When plugged in, the device exposes three COM ports. Open Device Manager on PC and make sure that three COM ports are installed. COM ports may be different from those in the figure.
 
-Alternatively, you can download the drivers from Future Technology Devices International. Choose the driver that matches your Windows installation (32-bit or 64-bit).
+Alternatively, you can download the drivers from [Future Technology Devices International](https://www.ftdichip.com/Drivers/VCP.htm) ([FTDI](https://www.ftdichip.com/Drivers/VCP.htm)). Choose the driver that matches your Windows installation (32-bit or 64-bit).
 
 ## Install Azure Sphere SDK
 
-1. Download the SDK. Save the downloaded file on your PC.
+1. [Download the SDK](https://aka.ms/AzureSphereSDKDownload). Save the downloaded file on your PC.
 2. Run the downloaded .exe to install the SDK. Agree to the license terms, and then select **Next**.
 3. Select **Install** to begin installation.
 4. Accept the elevation prompt if one appears.
@@ -16,7 +16,7 @@ Alternatively, you can download the drivers from Future Technology Devices Inter
 
 2. Select and start the **Azure Sphere Developer Command Prompt**.
 
-3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace "email@address.com" with your account and run the command.
+3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace <email@address.com> with your account and run the command.
 
    ```
    azsphere login --newuser <email@address.com>
@@ -30,7 +30,8 @@ Alternatively, you can download the drivers from Future Technology Devices Inter
 
 ## Create a new tenant
 
-> [!NOTE] If you have access to single tenant or multiple tenants, you can proceed to the next step.
+  > [!NOTE]
+  > If you have access to single tenant or multiple tenants, you can proceed to the next step.
 
 1. Now that you have successfully logged in, you'll create a new tenant. Type the following command. Replace <tenant_name> with name that other users can recognize. You can create only one Azure Sphere tenant with each device.
 
@@ -58,9 +59,11 @@ Alternatively, you can download the drivers from Future Technology Devices Inter
 
 ## Claim your device
 
-> [!NOTE] If you have already claimed your Azure Sphere, you can proceed to the next step.
+  > [!NOTE]
+  > If you have already claimed your Azure Sphere, you can proceed to the next step.
 
-> [!NOTE] Claiming an Azure Sphere device is a one-time operation. You can't move the device to another Azure Tenant once it has been claimed. However, you can add additional users and roles to the Azure Sphere tenant, including users with Admin rights.
+  > [!NOTE]
+  > Claiming an Azure Sphere device is a one-time operation. You can't move the device to another Azure Tenant once it has been claimed. However, you can add additional users and roles to the Azure Sphere tenant, including users with Admin rights.
 
 1. Run the following command to claim the device.
 
@@ -78,7 +81,7 @@ You'll configure the Azure Sphere for networking. Hence, you can receive cloud u
    azsphere device wifi scan
    ```
 
-2. Run the following command to add your Wi-Fi network to the device. Replace with the name of your network and replace with your network password.
+2. Run the following command to add your Wi-Fi network to the device. Replace <yourwifissid> with the name of your network and replace <yourwifipassword> with your network password.
 
    ```
    azsphere device wifi add -s <yourwifissid> -p <yourwifipassword>
