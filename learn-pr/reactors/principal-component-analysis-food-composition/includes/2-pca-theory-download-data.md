@@ -18,10 +18,6 @@ Better still, we don't have to consider all of the dimensions of this new space.
 
 You must first clean and prepare the data to conduct PCA on it, so pandas will be essential. You also need NumPy, a bit of scikit-learn, and pyplot.
 
-> [!TIP]
-> If you haven't set up a Visual Studio Code environment with Jupyter Notebooks by using Python and libraries like pandas, the [Introduction to Python](https://review.docs.microsoft.com/learn/reactors/python-data-science/1-introduction?branch=new-data-science-1) module might be a useful first step.
->
-
 To add these libraries, run this code:
 
 ```python
