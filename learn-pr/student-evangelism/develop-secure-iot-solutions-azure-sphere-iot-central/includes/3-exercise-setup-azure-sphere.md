@@ -4,7 +4,7 @@ Alternatively, you can download the drivers from Future Technology Devices Inter
 
 ## Install Azure Sphere SDK
 
-1. [Download the SDK](https://aka.ms/AzureSphereSDKDownload). Save the downloaded file on your PC.
+1. Download the SDK. Save the downloaded file on your PC.
 2. Run the downloaded .exe to install the SDK. Agree to the license terms, and then select **Next**.
 3. Select **Install** to begin installation.
 4. Accept the elevation prompt if one appears.

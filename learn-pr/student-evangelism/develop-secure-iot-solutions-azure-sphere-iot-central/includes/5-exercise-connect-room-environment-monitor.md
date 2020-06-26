@@ -65,10 +65,6 @@ A device template is a blueprint that defines the characteristics and behaviors 
 1. Click **Publish** to publish the template. Publishing the template makes it available for devices. 
 2. Next, confirm and click **Publish**
 
-> [!Note] See [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/azure/iot-central/core/howto-set-up-template?WT.mc_id=github-blog-dglover) for information on creating your own device templates.
-
-------
-
 ## Step 2: Link your Azure Sphere Tenant to IoT Central
 
 You need to set up a trust relationship between your Azure Sphere tenant and your IoT Central application.
@@ -146,7 +142,7 @@ Follow these steps:
 
 4. Run the **ShowIoTCentralConfig** tool. Now follow the prompts that the tool provides, and copy the information from the output into the app_manifest.json file in Visual Studio.
 
-   > **Note**: Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent. In some organizations, [enterprise application permissions](https://docs.microsoft.com/azure-sphere/install/admin-consent) must be granted by an IT administrator.
+   > [!Note]: Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent. In some organizations, [enterprise application permissions](https://docs.microsoft.com/azure-sphere/install/admin-consent) must be granted by an IT administrator.
 
 5. Review the output from the **ShowIoTCentralConfig** tool. It will look similar to the following text.
 
@@ -196,14 +192,14 @@ We can split the module here and do the rest in the next step.
 
 These labs support developer boards from AVNET and Seeed Studio. You need to set the configuration that matches your developer board. The default developer board configuration is for the AVNET Azure Sphere Starter Kit. If you have this board, there is no additional configuration required.
 
-1. Open CMakeList.txt 
+1. Open CMakeList.txt
 
 2. Add a # at the beginning of the set AVNET line to disable it.
 
 3. Uncomment the **set** command that corresponds to your Azure Sphere developer board.
 
    ```
-   set(AVNET TRUE "AVNET Azure Sphere Starter Kit")                
+   set(AVNET TRUE "AVNET Azure Sphere Starter Kit")
    # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
    # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
    ```
@@ -271,7 +267,8 @@ These labs support developer boards from AVNET and Seeed Studio. You need to set
 
 Open **main.c**, and scroll down to the **MeasureSensorHandler** function.
 
-> Pro Tip. Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *measure*. You'll often see a function name listed twice in the dropdown. The first is the [function prototype declaration](https://en.wikipedia.org/wiki/Function_prototype#:~:text=In computer programming%2C a function,but omits the function body.), and the second is the implementation of the function.
+> [!Note]
+> Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *measure*. You'll often see a function name listed twice in the dropdown. The first is the function prototype declaration, and the second is the implementation of the function.
 
 In the **MeasureSensorHandler** function there is a call to **SendMsgLedOn(msgBuffer);**.
 
