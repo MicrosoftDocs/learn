@@ -11,24 +11,24 @@ You will create a basic application that will be able to handle requests.
 1. Add the following code to `app.js`:
 
    ```javascript
-   const express = require('express')
-   const app = express()
-   const port = 3000
+   const express = require('express');
+   const app = express();
+   const port = 3000;
 
-   app.get('/', (req, res) => res.send('Hello World!'))
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+   app.get('/', (req, res) => res.send('Hello World!'));
+   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
    The above creates an instance of an Express app by invoking `express()`. It also sets up a route to `/` with:
 
    ```javascript
-   app.get('/', (req, res) => res.send('Hello World!'))
+   app.get('/', (req, res) => res.send('Hello World!'));
    ```
 
    Finally it starts up the web application by invoking the `listen()` method:
 
    ```javascript
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
 1. Start up the web application by typing the following command in the terminal:
@@ -73,7 +73,7 @@ You will continue to work with the same `app.js` and add a new route.
     ];
 
     res.json(products);
-   })
+   });
    ```
 
    Ensure the `app.js` looks like this:

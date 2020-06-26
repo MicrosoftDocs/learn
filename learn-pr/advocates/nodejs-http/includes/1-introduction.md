@@ -8,7 +8,7 @@ Being a programmer is not only about solving problems but also being as fast and
 
 So for you to be fast and efficient and handle more complex topics like authentication/authorization - life will be a lot easier if you use a framework.
 
-There are many web frameworks created for Node.js that you could use. The framework Express is used by many developers. It is also the framework you will use throughout this module. It has been around for a long time and had some time to mature. This means the APIs are well thought out, security issues have been patched and so on and so forth.
+There are many web frameworks created for Node.js that you could use like Hapi, Fastify, Koa and Express for example. The framework Express is used by many developers. It is also the framework you will use throughout this module. It has been around for a long time and had some time to mature. This means the APIs are well thought out, security issues have been patched and so on and so forth.
 
 In this module, you’ll learn about how to handle HTTP requests with Node.js. You’ll also learn about the Express framework, which enables the building of websites and HTTP APIs.
 

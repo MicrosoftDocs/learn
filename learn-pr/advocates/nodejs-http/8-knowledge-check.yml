@@ -22,25 +22,27 @@ quiz:
           explanation: "Incorrect. These are definitely steps you could take in setting up your app. However, only instantiation and listen to server are steps you must do, everything else is optional"
         - content: "Instantiate an app, listen to the server"
           isCorrect: true
-          explanation: "This is all you need to get an app up and running. You ar strongly recommended to configure some routes however"
+          explanation: "This is all you need to get an app up and running. You are strongly recommended to configure some routes however"
         - content: "Instantiate an app, configure routes, listen to the server"
           isCorrect: false
           explanation: "You don't actually need to configure routes although it's highly recommended"
         - content: "Instantiate an app, configure routes, set up middleware, listen to the server"
           isCorrect: false
           explanation: "Neither configuring routes or set up middleware are things you must do, even though it's highly recommended"
-    - content: "What are the ways you can ensure the response is sent as JSON from an Express app?"
+    - content: "What is the preferred way to send a JSON response from an Express app?"
       choices:
         - content: "Call the json() helper method on the response object like so: res.json({ content: '' })"
-          isCorrect: false
-          explanation: "The json() method is a valid way, but there are more ways"
-        - content: "Call res.json() and res.contentType('application/json')"
-          isCorrect: false
-        - content: "Call res.json(), res.contentType('application/json') or res.type('json')"
-          isCorrect: false
-        - content: "Use any of these ways: res.type('json'), res.type('application/json'), res.contentType('application/json'), res.format({ 'application/json': function() { res.send({}) } })"
           isCorrect: true
-          explanation: "These are all the available ways that a response can be sent as JSON"
+          explanation: "There are many ways to send a response as JSON but this is the most common and simplest to use"
+        - content: "Call res.send({ content: '' })"
+          isCorrect: false
+          explanation: "This will send the response as text"
+        - content: "Call res.send(JSON.stringify({ content: '' }))"
+          isCorrect: false
+          explanation: "This will technically send it as JSON but it's simpler and easier to use res.json() helper method."
+        - content: "Use any of these ways: res.type('json'), res.type('application/json'), res.contentType('application/json'), res.format({ 'application/json': function() { res.send({}) } })"
+          isCorrect: false
+          explanation: "These are valid ways of sending something as JSON but is considered more advanced. The res.json() helper method is by far the easiest way."
     - content: "How would set up Express to handle a POST request with JSON data?"
       choices:
         - content: "Call app.use(bodyParser.json()) at the top, register a route using the post method, like so app.post(<route>, () =>{}), read from req.body"

@@ -86,7 +86,7 @@ When a client makes a request towards a web application they do so using a URL, 
 http://localhost:3000/products
 ```
 
-The term `localhost` refers to your own machine but a more production looking URL might have switched out the term `localhost` for a domain name like `microsoft.com`. Then end part of the URL is the route. It decides a specific place to go on the server, to `/products` in this case. Together with HTTP Verbs like POST, PUT, GET, and so on, the routes and the verbs constitute a way to understand, not only where to go, but what the client wants done. The verb GET means that the request just wants data back whereas the verb POST means that the request will contain data that it means for the server to persist.
+The term `localhost` refers to your own machine but a more production looking URL might have switched out the term `localhost` for a domain name like `microsoft.com`. The end part of the URL is the route. It decides a specific place to go on the server, to `/products` in this case. Together with HTTP Verbs like POST, PUT, GET, and so on, the routes and the verbs constitute a way to understand, not only where to go, but what the client wants done. Each HTTP verb has a semantic meaning, an intention of what should happen to the data, should it be read or changed in some way. This will be covered more in detail later on in the module.
 
 Express helps with registering routes and pairing these to appropriate HTTP verbs to make it simpler to organize the web application.
 
