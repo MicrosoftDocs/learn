@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere
+metadata:
+  title: "Develop secure IoT Solutions for Azure Sphere with IoT Central"
+  description: "University of Oxford"
+  ms.date: 06/26/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+title: "Develop secure IoT Solutions for Azure Sphere with IoT Central"
+summary: "TBD"
+
+abstract: | 
+  In this module, you will:
+  -  TBD
+     
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+
+prerequisites: |
+    TBD
+iconUrl: /learn/achievements/student-evangelism/develop-secure-iot-solutions-with-azure-sphere.svg
+badge:
+  uid: learn.develop-secure-iot-solutions-with-azure-sphere.badge
+levels:
+- intermediate
+roles:
+- ai-edge-engineer
+products:
+- azure-iot-central
+units:
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.introduction
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-setup-azure-sphere
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-connect-room-environment-monitor
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-set-room-virtual-thermostat-azure-iot-device-twins
+
