@@ -10,10 +10,10 @@ Node.js provides a built-in module for working with the file system. It's called
 
 The "fs" module is included by default in Node.js, which means you don't need to install it from npm.
 
-This can be a bit confusing because you can't actually see the "fs" module in your file system or in your "node_modules" folder. So how do you include the "fs" module in a project? You reference it just like you would any other dependency.
+This can be a bit confusing because you can't actually see the "fs" module in your file system or in your "node_modules" folder. So how do you include the "fs" module in a project? You reference it just like you would any other dependency. The "fs" module has a "promises" namespace that has promise versions of all methods. This is the preferred way to work with the "fs" module as it allows you to use `async`, and avoids the messiness of callbacks or the blocking of synchronous methods.
 
 ```javascript
-const fs = require("fs");
+const fs = require("fs").promises;
 ```
 
 The "fs" module allows you to do various operations on files and directories. It has quite a few methods to pick from. For right now, we're just going to focus on what you need to know to work with directories using the "fs" module.
@@ -24,39 +24,20 @@ One of the things that you'll do with the "fs" module quite a bit is list out or
 
 ```
 📂 stores
-    📂 201
-    📂 202
     📄 sales.json
     📄 totals.txt
+    📂 201
+    📂 202
 ```
 
-To read through the contents of the folder, you can use the `readdir` method. Like most operations on the "fs" module, you use "readdir" both synchronously and asynchronously.
+### Listing contents
 
-### Listing contents asynchronously
-
-When you call an asynchronous method, it means Node.js isn't going to wait for the operation to complete before it moves to the next line of code. You'll need to provide a "callback", which will execute when the asynchronous process is finished.
+To read through the contents of the folder, you can use the `readdir` method. Most operations on the "fs" module have both synchronous and asynchronous options.
 
 The "readdir" returns a list of items
 
 ```javascript
-fs.readdir("stores", (err, items) => {
-  if (err) {
-    console.log(err);
-  }
-  console.log(items); // [ 201, 202, sales.json, totals.txt ]
-});
-```
-
-Unless you specifically choose a sync operation on the "fs" module, the operation will be asynchronous.
-
-### List contents synchronously
-
-Synchronous methods cause Node.js to wait until the operation is finished before it moves to the next line.
-
-**It is recommended that you use the synchronous methods when working with Node.js unless you specifically have a need for the operation to be asynchronous. Asynchronous operations increase code complexity.**
-
-```javascript
-const items = fs.readdirSync("stores");
+const items = await fs.readdir("stores", (err, items));
 console.log(items); // [ 201, 202, sales.json, totals.txt ]
 ```
 
@@ -67,12 +48,12 @@ Notice the order of the results returned by `readdir` and `readdirsync` methods:
 When you read the contents of a directory, you get back both folders and files as an array of strings. You can determine which ones are files vs which ones are directories by passing in the `withFileTypes` option. This will return an array of `Dirent` objects instead of an array of strings. The `Dirent` object has `isFile` and `isDirectory` methods that you can use to determine what type of object you are dealing with.
 
 ```javascript
-const items = fs.readdirSync("stores", { withFileTypes: true });
-items.forEach((item) => {
+const items = await fs.readdir("stores", { withFileTypes: true }));
+for each (item of items) {
   const type = item.isDirectory() ? "folder" : "file";
   console.log(`${item.name}: ${type}`);
   // 201: folder, 202: folder, sales.json: file, totals.txt: file
-});
+}
 ```
 
 ## A note about recursion
@@ -83,7 +64,7 @@ You can search nested directory structures by having a method that finds folders
 
 ```javascript
 function findFiles(folderName) {
-  const items = fs.readdirSync(folderName, { withFileTypes: true });
+  const items = await fs.readdir(folderName, { withFileTypes: true });
   items.forEach((item) => {
     if (item.isDirectory()) {
       // this is a folder, so call this method again and pass in

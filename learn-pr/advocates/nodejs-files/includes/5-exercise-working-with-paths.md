@@ -19,10 +19,10 @@ In the current "index.js" code, you're passing the static location of the "store
 1. In the `main` method, create a variable to store a path to the "stores" directory, using the `__dirname` constant.
 
    ```javascript
-   function main() {
+   async function main() {
      const salesDir = path.join(__dirname, "stores");
 
-     const salesFiles = findSalesFiles(salesDir);
+     const salesFiles = async findSalesFiles(salesDir);
      console.log(salesFiles);
    }
    ```
@@ -54,7 +54,7 @@ Instead of concatenating folder names to make a new path to search, you'll chang
 
    ```javascript
    // search this directory for files (this is recursion!)
-   findFiles(path.join(folderName, item.name));
+   await findFiles(path.join(folderName, item.name));
    ```
 
 1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
@@ -82,7 +82,7 @@ Instead of looking for just `sales.json` files, this program needs to search for
    ```javascript
    if (path.extname(item.name) === ".json") {
      // store the file path in the salesFiles array
-     salesFiles.push(path.join(folderName, item.name));
+     await salesFiles.push(path.join(folderName, item.name));
    }
    ```
 
@@ -112,23 +112,23 @@ Great job! You've used the "path" and `__dirname` constant to make the program m
 If you got stuck at any point in this exercise, here is the completed code. Remove everything in `index.js` and replace it with this solution.
 
 ```javascript
-const fs = require("fs");
+const fs = require("fs").promises;
 const path = require("path");
 
-function findSalesFiles(folderName) {
+async function findSalesFiles(folderName) {
   // this array will hold sales files as they are found
   let salesFiles = [];
 
-  function findFiles(folderName) {
+  async function findFiles(folderName) {
     // read all the items in the current folder
-    const items = fs.readdirSync(folderName, { withFileTypes: true });
+    const items = await fs.readdir(folderName, { withFileTypes: true });
 
     // iterate over each found item
-    items.forEach((item) => {
+    for (item of items) {
       // if the item is a directory, it will need to be searched
       if (item.isDirectory()) {
         // call this method recursively, appending the folder name to make a new path
-        findFiles(path.join(folderName, item.name));
+        await findFiles(path.join(folderName, item.name));
       } else {
         // Make sure the discovered file is a .json file
         if (path.extname(item.name) === ".json") {
@@ -136,19 +136,19 @@ function findSalesFiles(folderName) {
           salesFiles.push(path.join(folderName, item.name));
         }
       }
-    });
+    }
   }
 
-  findFiles(folderName);
+  await findFiles(folderName);
 
   return salesFiles;
 }
 
-function main() {
+async function main() {
   const salesDir = path.join(__dirname, "stores");
 
   // find paths to all the sales files
-  const salesFiles = findSalesFiles(salesDir);
+  const salesFiles = await findSalesFiles(salesDir);
   console.log(salesFiles);
 }
 

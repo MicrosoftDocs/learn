@@ -37,15 +37,15 @@ You're going to need to find all of those files given only the top-most location
 1. Include the "fs" module at the top of the file.
 
    ```javascript
-   const fs = require("fs");
+   const fs = require("fs").promises;
    ```
 
 1. Create a `main` method. This method will be the entry point for your code. The last line of code in this file will invoke the `main` method.
 
    ```javascript
-   const fs = require("fs");
+   const fs = require("fs").promises;
 
-   function main() {}
+   async function main() {}
 
    main();
    ```
@@ -55,7 +55,7 @@ You're going to need to find all of those files given only the top-most location
 1. Create a new method called "findSalesFiles" that takes a "folderName" parameter
 
    ```javascript
-   function findSalesFiles(folderName) {
+   async function findSalesFiles(folderName) {
      // FIND SALES FILES
    }
    ```
@@ -63,7 +63,7 @@ You're going to need to find all of those files given only the top-most location
 1. Add an array at the top which will hold the paths to all the sales files the program finds.
 
    ```javascript
-   function findSalesFiles(folderName) {
+   async function findSalesFiles(folderName) {
      // this array will hold sales files as they are found
      let salesFiles = [];
 
@@ -74,11 +74,11 @@ You're going to need to find all of those files given only the top-most location
 1. Create a method within this function called "findFiles" that also takes a "folderName" parameter.
 
    ```javascript
-   function findSalesFiles(folderName) {
+   async function findSalesFiles(folderName) {
      // this array will hold sales files as they are found
      let salesFiles = [];
 
-     function findFiles(folderName) {
+     async function findFiles(folderName) {
        // FIND SALES FILES
      }
    }
@@ -89,13 +89,13 @@ You're going to need to find all of those files given only the top-most location
 1. Inside of the "findFiles" method, read the "currentFolder" path with the `readdirsync` method.
 
    ```javascript
-   function findSalesFiles(folderName) {
+   async function findSalesFiles(folderName) {
      // this array will hold sales files as they are found
      let salesFiles = [];
 
-     function findFiles(folderName) {
+     async function findFiles(folderName) {
        // read all the items in the current folder
-       const items = fs.readdirSync(folderName, { withFileTypes: true });
+       const items = await fs.readdir(folderName, { withFileTypes: true });
 
        // FIND SALES FILES
      }
@@ -105,18 +105,18 @@ You're going to need to find all of those files given only the top-most location
 1. Add a block to loop over each item returned from the `readdirsync` method.
 
    ```javascript
-   function findSalesFiles(folderName) {
+   async function findSalesFiles(folderName) {
      // this array will hold sales files as they are found
      let salesFiles = [];
 
-     function findFiles(folderName) {
+     async function findFiles(folderName) {
        // read all the items in the current folder
-       const items = fs.readdirSync(folderName, { withFileTypes: true });
+       const items = await fs.readdir(folderName, { withFileTypes: true });
 
        // iterate over each found item
-       items.forEach((item) => {
+       for (item of items) {
          // FIND SALES FILES
-       });
+       }
      }
    }
    ```
@@ -124,22 +124,22 @@ You're going to need to find all of those files given only the top-most location
 1. Add an "if" statement to determine if the item is a file or a directory.
 
    ```javascript
-   function findSalesFiles(folderName) {
+   async function findSalesFiles(folderName) {
      // this array will hold sales files as they are found
      let salesFiles = [];
 
-     function findFiles(folderName) {
+     async function findFiles(folderName) {
        // read all the items in the current folder
-       const items = fs.readdirSync(folderName, { withFileTypes: true });
+       const items = await fs.readdir(folderName, { withFileTypes: true });
 
        // iterate over each found item
-       items.forEach((item) => {
+       for (item of items) {
          if (item.isDirectory()) {
            // FIND SALES FILES IN THIS FOLDER
          } else {
            // FIND SALES FILES
          }
-       });
+       }
      }
    }
    ```
@@ -147,19 +147,19 @@ You're going to need to find all of those files given only the top-most location
 1. If the item _is_ a directory, call the "findFiles" method again, passing in the path to the item. If it's not, add a check to make sure the item name matches "sales.json".
 
    ```javascript
-   function findSalesFiles(folderName) {
+   async function findSalesFiles(folderName) {
      // this array will hold sales files as they are found
      let salesFiles = [];
 
-     function findFiles(folderName) {
+     async function findFiles(folderName) {
        // read all the items in the current folder
-       const items = fs.readdirSync(folderName, { withFileTypes: true });
+       const items = await fs.readdir(folderName, { withFileTypes: true });
 
        // iterate over each found item
-       items.forEach((item) => {
+       for (item of items) {
          if (item.isDirectory()) {
            // search this directory for files (this is recursion!)
-           findFiles(`${folderName}/${item.name}`);
+           await findFiles(`${folderName}/${item.name}`);
          } else {
            // Make sure the discovered file is a sales.json file
            if (item.name === "sales.json") {
@@ -167,7 +167,7 @@ You're going to need to find all of those files given only the top-most location
              salesFiles.push(`${folderName}/${item.name}`);
            }
          }
-       });
+       }
      }
    }
    ```
@@ -175,8 +175,8 @@ You're going to need to find all of those files given only the top-most location
 1. Call this new "findSaleFiles" function from the "main" method, passing in the "stores" folder name as the location to search for files.
 
    ```javascript
-   function main() {
-     const salesFiles = findSalesFiles("stores");
+   async function main() {
+     const salesFiles = await findSalesFiles("stores");
      console.log(salesFiles);
    }
    ```
@@ -211,20 +211,20 @@ If you got stuck at any point in this exercise, here is the completed code. Remo
 ```javascript
 const fs = require("fs");
 
-function findSalesFiles(folderName) {
+async function findSalesFiles(folderName) {
   // this array will hold sales files as they are found
   let salesFiles = [];
 
-  function findFiles(folderName) {
+  async function findFiles(folderName) {
     // read all the items in the current folder
-    const items = fs.readdirSync(folderName, { withFileTypes: true });
+    const items = await fs.readdirSync(folderName, { withFileTypes: true });
 
     // iterate over each found item
-    items.forEach((item) => {
+    for (item of items) {
       // if the item is a directory, it will need to be searched for files
       if (item.isDirectory()) {
         // search this directory for files (this is recursion!)
-        findFiles(`${folderName}/${item.name}`);
+        await findFiles(`${folderName}/${item.name}`);
       } else {
         // Make sure the discovered file is a sales.json file
         if (item.name === "sales.json") {
@@ -232,18 +232,18 @@ function findSalesFiles(folderName) {
           salesFiles.push(`${folderName}/${item.name}`);
         }
       }
-    });
+    }
   }
 
   // find the sales files
-  findFiles(folderName);
+  await findFiles(folderName);
 
   // return the array of found file paths
   return salesFiles;
 }
 
-function main() {
-  const salesFiles = findSalesFiles("stores");
+async function main() {
+  const salesFiles = await findSalesFiles("stores");
   console.log(salesFiles);
 }
 

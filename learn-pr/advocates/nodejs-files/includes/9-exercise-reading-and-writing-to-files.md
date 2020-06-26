@@ -9,7 +9,7 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
 1. At the top of `index.js`, just below the `require("path")` statement, create a function that will calculate the sales total. This method should take in the array of file paths that it can iterate over.
 
    ```javascript
-   function calculateSalesTotal(salesFiles) {
+   async function calculateSalesTotal(salesFiles) {
      let salesTotal = 0;
 
      // READ FILES LOOP
@@ -21,15 +21,15 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
 1. Within that method, replace the "// READ FILES LOOP" with a loop that iterates over the "salesFiles" array, reads the file, parses the content as JSON, and then increments the "salesTotal" variable with the "total" value from the file.
 
    ```javascript
-   function calculateSalesTotal(salesFiles) {
+   async function calculateSalesTotal(salesFiles) {
      let salesTotal = 0;
      // loop over each file path in the salesFiles array
-     salesFiles.forEach((file) => {
+     for (file of files) {
        // read the file and parse the contents as JSON
-       const data = JSON.parse(fs.readFileSync(file));
+       const data = JSON.parse(await fs.readFile(file));
        // Add the amount in the data.total field to the salesTotal variable
        salesTotal += data.total;
-     });
+     }
      return salesTotal;
    }
    ```
@@ -39,20 +39,22 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
 1. In the `main` function, add a call to the `calculateSalesTotals` function just above the `fs.writeFileSync` call.
 
    ```javascript
-   function main() {
+   async function main() {
      const salesDir = path.join(__dirname, "stores");
      const salesTotalsDir = path.join(__dirname, "salesTotals");
 
      // create the salesTotal directory if it doesn't exist
-     if (fs.existsSync(salesTotalsDir) === false) {
-       fs.mkdirSync(salesTotalsDir);
+     try {
+       await fs.mkdir(salesTotalsDir);
+     } catch {
+       console.log(`${salesTotalsDir} already exists.`);
      }
 
      // find paths to all the sales files
-     const salesFiles = findSalesFiles(salesDir);
+     const salesFiles = await findSalesFiles(salesDir);
 
      // read through each sales file to cacluate the sales total
-     const salesTotal = calculateSalesTotal(salesFiles);
+     const salesTotal = await calculateSalesTotal(salesFiles);
 
      // write the total to the "totals.txt" file
      fs.writeFileSync(path.join(salesTotalsDir, "totals.txt"), String());
@@ -64,23 +66,25 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
 1. In the `main` function, modify the `fs.writeFileSync` a block to write the value of the `salesTotal` variable to the "totals.txt" file.
 
    ```javascript
-   function main() {
+   async function main() {
      const salesDir = path.join(__dirname, "stores");
      const salesTotalsDir = path.join(__dirname, "salesTotals");
 
      // create the salesTotal directory if it doesn't exist
-     if (fs.existsSync(salesTotalsDir) === false) {
-       fs.mkdirSync(salesTotalsDir);
+     try {
+       await fs.mkdir(salesTotalsDir);
+     } catch {
+       console.log(`${salesTotalsDir} already exists.`);
      }
 
      // find paths to all the sales files
-     const salesFiles = findSalesFiles(salesDir);
+     const salesFiles = await findSalesFiles(salesDir);
 
      // read through each sales file to cacluate the sales total
-     const salesTotal = calculateSalesTotal(salesFiles);
+     const salesTotal = await calculateSalesTotal(salesFiles);
 
      // write the total to the "totals.json" file
-     fs.writeFileSync(
+     await fs.writeFile(
        path.join(salesTotalsDir, "totals.txt"),
        `${salesTotal}\r\n`,
        { flag: "a" }
@@ -119,35 +123,35 @@ Outstanding work! You've written a smart, robust, and handy tool that Tailwind T
 If you got stuck during this exercise, here is the full code for this project.
 
 ```javascript
-const fs = require("fs");
+const fs = require("fs").promises;
 const path = require("path");
 
-function calculateSalesTotal(salesFiles) {
+async function calculateSalesTotal(salesFiles) {
   let salesTotal = 0;
   // loop over each file path in the salesFiles array
-  salesFiles.forEach((file) => {
+  for (file of salesFiles) {
     // read the file and parse the contents as JSON
-    const data = JSON.parse(fs.readFileSync(file));
+    const data = JSON.parse(await fs.readFile(file));
     // Add the amount in the data.total field to the salesTotal variable
     salesTotal += data.total;
-  });
+  }
   return salesTotal;
 }
 
-function findSalesFiles(folderName) {
+async function findSalesFiles(folderName) {
   // this array will hold sales files as they are found
   let salesFiles = [];
 
-  function findFiles(folderName) {
+  async function findFiles(folderName) {
     // read all the items in the current folder
-    const items = fs.readdirSync(folderName, { withFileTypes: true });
+    const items = await fs.readdir(folderName, { withFileTypes: true });
 
     // iterate over each found item
-    items.forEach((item) => {
+    for (item of items) {
       // if the item is a directory, it will need to be searched
       if (item.isDirectory()) {
         // call this method recursively, appending the folder name to make a new path
-        findFiles(path.join(folderName, item.name));
+        await findFiles(path.join(folderName, item.name));
       } else {
         // Make sure the discovered file is a .json file
         if (path.extname(item.name) === ".json") {
@@ -155,35 +159,38 @@ function findSalesFiles(folderName) {
           salesFiles.push(path.join(folderName, item.name));
         }
       }
-    });
+    }
   }
 
-  findFiles(folderName);
+  await findFiles(folderName);
 
   return salesFiles;
 }
 
-function main() {
+async function main() {
   const salesDir = path.join(__dirname, "stores");
   const salesTotalsDir = path.join(__dirname, "salesTotals");
 
   // create the salesTotal directory if it doesn't exist
-  if (fs.existsSync(salesTotalsDir) === false) {
-    fs.mkdirSync(salesTotalsDir);
+  try {
+    await fs.mkdir(salesTotalsDir);
+  } catch {
+    console.log(`${salesTotalsDir} already exists.`);
   }
 
   // find paths to all the sales files
-  const salesFiles = findSalesFiles(salesDir);
+  const salesFiles = await findSalesFiles(salesDir);
 
   // read through each sales file to cacluate the sales total
-  const salesTotal = calculateSalesTotal(salesFiles);
+  const salesTotal = await calculateSalesTotal(salesFiles);
 
   // write the total to the "totals.json" file
-  fs.writeFileSync(
+  await fs.writeFile(
     path.join(salesTotalsDir, "totals.txt"),
     `${salesTotal}\r\n`,
     { flag: "a" }
   );
+  console.log(`Wrote sales totals to ${salesTotalsDir}`);
 }
 
 main();
