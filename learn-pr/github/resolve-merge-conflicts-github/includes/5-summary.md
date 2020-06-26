@@ -6,6 +6,8 @@ You learned about:
 - Resolving simple and complex merge conflicts with ease
 - Sharing best practices to reduce merge conflicts with your team
 
+Now that you have learned to settle merge conflicts, learn to [Automate DevOps processes by using GitHub Apps](/learn/modules/automate-devops-github-apps/).
+
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.

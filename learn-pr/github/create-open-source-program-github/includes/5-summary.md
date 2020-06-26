@@ -8,6 +8,8 @@ You learned about:
 - Abiding by existing open-source licenses
 - Choosing a license for releasing an open-source project
 
+Now that you have an open-source program together, learn to [Maintain a secure repository by using GitHub best practices](/learn/modules/maintain-secure-repository-github/).
+
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.
