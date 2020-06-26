@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a web API with Node.js and Express 
-summary: Learn how to 
+summary: Use the library Express to build a web API for Node.js 
 abstract: |
   By the end of this module, you’ll be able to:
   - Describe the core concepts of the Web framework Express
