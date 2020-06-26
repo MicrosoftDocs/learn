@@ -1,12 +1,13 @@
-### Deploy Azure SQL Database using the Azure portal
+In this activity, you'll deploy Azure SQL Database deployment using the Azure portal. Throughout this exercise, you'll also get to explore the various options that are available to you.  
 
-In this activity, you'll deploy Azure SQL Database deployment using the Azure portal. Throughout this exercise, you'll also get to explore the various options that are available to you.
+## Deploy Azure SQL Database using the Azure portal
 
-> **Important Note!** In order to simplify the network configuration of these exercises, it is recommended to **disable** VPN connectivity while you complete the exercises.  
+1. Sign into the Azure portal using the same account you activated the sandbox with.
 
-1. Select the Azure SQL deployment option  
+    > [!div class="nextstepaction"]
+    > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-    Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) using the same account you activated the sandbox with. In the top search bar, type **Azure SQL** and review what appears:  
+<!-- 1. In the top search bar, type **Azure SQL** and review what appears:  
 
     ![Search for Azure SQL](../media/search2.png)  
 
@@ -15,156 +16,66 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
     * **Resources**: this searches based on existing resource names. For example, if you searched for "adventureworks" any resources with "adventureworks" in the name would return here.
     * **Marketplace**: this allows you to deploy new resources from the marketplace.
     * **Documentation**: this searches docs.microsoft.com for relevant documentation
-    * **Resource groups**: this allows you to search based on resource group name.
+    * **Resource groups**: this allows you to search based on resource group name. -->
 
-    Next, select **Azure SQL** under **Marketplace**. This will bring you to the Azure SQL create experience. Take a few moments to click around and explore.
+1. Select **+ Create a resource** in the left menu. Enter **Azure SQL** in **Search the Marketplace**. Select **Create**. This will bring you to the Azure SQL create experience.
 
     ![Azure SQL Deployment options in portal](../media/AzureSQLDeploymentOptions.gif)
 
-    Next, select **Single database** and click **Create**.
+1. Next, in **SQL databases** select **Single database** and select **Create**.
 
-2. Select the Subscription, Resource group, and Database name  
+1. On the **Basics** tab, enter the following information:  
 
-    Select the **Subscription** and **Resource group** the sandbox provisioned (there should only be one), then enter a database name **AdventureWorksID** where ID is a unique identifier that you will use for all of your resources in this module (e.g. if you pick a unique identifier or ID `0406`, your database name would be **AdventureWorks0406**).  
-
-3. Select or create the Server  
-
-    When you create an Azure SQL Managed Instance, supplying the server name is the same as in SQL Server. However, for databases and elastic pools, an Azure SQL Database server is required. This is a *logical* server that acts as a central administrative point for single or pooled database and includes logins, firewall rules, auditing rules, threat detection policies, and failover groups (more on these topics later). This logical server does not expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure.  
-
-    Select **Create new** next to **Server** and provide the following information:  
-    * *Server name*: **aw-serverID** where ID is the same identifier you used for the database (e.g. **0406**).  
-    * *Server admin login*: **cloudadmin**. This is the equivalent to a member of the sysadmin role in SQL Server. This account connects using SQL authentication (username and password) and only one of these accounts can exist.
-    * *Password*: A complex password that meets [strong password requirements](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords).  
-    > **TIP**: As you type in your password you are given hints as to the requirements. You are also asked to confirm your password. Make a note or be sure to remember this password.  
-    * *Location*: Use the same location as your resource group or the region that is close to where you are located.  
-
-    ![Creating a new logical server](../media/newserver.png)  
-
-    If there are other checkboxes here, accept the defaults.
-
-    Then, select **OK**.
-
-4. Choose not to opt-in for elastic pools
-
-    In Azure SQL DB, you then decide if you want this database to be a part of an Elastic Pool (new or existing). In Azure SQL Managed Instance, creating an instance pool (public preview) currently requires a different flow than the Azure SQL create experience in the Azure portal. For this activity, select **No**.  
-
-5. Select a purchasing model  
-
-    Next to **Compute + storage** select **Configure Database**.  The top bar, by default shows the different service tiers available in the vCore purchasing model.
-
-    For the purposes of this exercise, we'll focus on the vCore purchasing model (recommended), so there is no action in this step. You can optionally review the DTU model by selecting **Looking for basic, standard, premium?**.  
-
-6. Select a service tier  
-
-    The next decision is choosing the service tier for performance and availability. Generally, we recommend you start with the General Purpose and adjust as needed. For the purposes of this exercise, be sure to select **General Purpose** here (should be the default).  
-
-7. Select the hardware generation
-
-    For the exercise, you can leave the default hardware selection of **Gen5**, but you can select **Change configuration** to view the other options available (may vary by region).  
-
-8. Select the compute and storage
-
-    One of the final steps is to determine how many vCores and the Data max size. For the exercise, select **2 vCores** and **32 GB Data max size**.  
-
-    Generally, if you're migrating, you should use a similar size as to what you use on-premises. You can also leverage tools, like the Data Migration Assistant SKU Recommender to estimate the vCore and Data max size based on your current workload.  
-
-    The Data max size is not necessarily the database size of your data today. It is the maximum amount of data space that can be allocated for your database. This will also help you understand the log space allocated, which scales with your data max size.  
-
-    Before you select **Apply**, confirm your selections look similar to those below (your resource group, Database name, and Server will be specific to your choices):  
-
-    ![Select pricing options](../media/configuredb.png)
+    |Parameter  |Value  |
+    |---------|---------|
+    |**Subscription**     |         |
+    |**Resource group**     | <rgn>Sandbox resource group name</rgn>        |
+    |**Database name**     |         |
+    |**Server**     |  Select **Create new**, then fill out the  **New server** pane as follows and select **OK**:      |
+    |         |**Server name**:  Enter a unique name for the server  |
+    | | **Server admin login**: cloudadmin |
+    | | **Password/Confirm Password**:  A complex password that meets [strong password requirements](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
+    || **Location**: Use the same location as your resource group or the region that is close to where you are located |
+    |**Want to use SQL elastic pool?**     |   No      |
+    |**Compute + storage**     |  Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**       |
 
     The **Basics** pane should now look similar to the image below:  
 
     ![Review basics selections](../media/basicspane.png)
 
-9. Select the networking configuration
+1. Select **Next : Networking**.  
 
-    Select **Next : Networking**.  
+1. For **Connectivity method**, select **Public endpoint**. Select **Yes** for both **Allow Azure services and resources to access this server** and **Add current client IP address**.
 
-    Choices for networking for Azure SQL Database and Azure SQL Managed Instance are different. When you deploy an Azure SQL Database, currently the default is **No access**.  
+1. Select **Next: Additional settings**.
 
-    You can then choose to select Public endpoint or Private endpoint (preview). In this exercise, we'll use the public endpoint and set the **Allow Azure services and resources to access this server** option to yes, meaning that other Azure services (e.g. Azure Data Factory or an Azure Virtual Machine) can access the database if you configure it. You can also select **Add current client IP address** if you want to be able to connect from the IP address from the client computer you used to deploy Azure SQL Database, which you do. Make sure your settings match below:
+1. On the **Additional settings** tab, for Azure SQL Database you have the option to select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, select **Sample**.  
 
-    ![Network and firewall rule options](../media/networkconnect2.png)
+1. When you deploy Azure SQL Database in the portal, you are prompted if you'd like to enable Advanced Data Security (ADS) on a free trial. Select **Start free trial**. 
 
-    With Azure SQL Managed Instance, you deploy it inside an Azure virtual network and a subnet that is dedicated to managed instances. This enables you to have a completely secure, private IP address. Azure SQL Managed Instance provides the ability to connect an on-prem network to a managed instance, connect a managed instance to a linked server or other on-prem data store, and connect a managed instance to other resources. You can additionally enable a public endpoint so you can connect to managed instance from the Internet without a Virtual Private Network (VPN). This access is disabled by default.  
-
-    For now, select **Next : Additional settings**.
-
-10. Select a data source
-
-    In Azure SQL Database, upon deployment you have the option to select the AdventureWorksLT database as the sample in the Azure portal. In Azure SQL Managed Instance, however, you deploy the instance first, and then databases inside of it, so there is not an option to have the sample database upon deployment (similar to SQL Server). You can learn more about the AdventureWorks sample databases on GitHub.
-
-    You can also deploy a blank database or create a database based the restore of a backup from a geo-replicated backup.
-
-    For this exercise, select **Sample**.  
-
-11. Database collations
-
-    Since we're using the AdventureWorksLT sample, the **database collation is already set**. For a review of collations and how they apply in Azure SQL, continue reading, otherwise **you can skip to Step 12**.
-
-    Collations in SQL Server and Azure SQL tell the Database Engine how to treat certain characters and languages. A collation provides the sorting rules, case, and accent sensitivity properties for your data. When you're creating a new Azure SQL Database or Managed Instance, it's important to first take into account the locale requirements of the data you're working with, because the collation set will affect the characteristics of many operations in the database. In the SQL Server box product, the default collation is typically determined by the OS locale. In Azure SQL Managed Instance, you can set the server collation upon creation of the instance, and it cannot be changed later. The server collation sets the default for all of the databases in that instance of Azure SQL Managed Instance, but you can modify the collations on a database and column level. In Azure SQL Database, you cannot set the server collation, it is set at the default (and most common) collation of `SQL_Latin1_General_CP1_CI_AS`, but you can set the database collation. If we break that into chunks:  
-
-    * `SQL` means it is a SQL Server collation (as opposed to a Windows or Binary collation)  
-    * `Latin1_General` specifies the alphabet/language to use when sorting
-    * `CP1` references the code page used by the collation
-    * `CI` means it will be case insensitive, where `CS` is case-sensitive
-    * `AS` means it will be accent sensitive, where `AI` is accent-insensitive
-
-    There are other options available related to character widths, UTF-8, etc., and more details about what you can and can't do with Azure SQL in the documentation (search for "collation and unicode support").
-
-12. Opt-in for Advanced Data Security
-
-    When you deploy Azure SQL Database in the portal, you are prompted if you'd like to enable Advanced Data Security (ADS) on a free trial. Select **Start free trial**. After the free trial, it is billed according to the Azure Security Center Standard Tier pricing. If you choose to enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection. You'll learn more about these capabilities in the next security module of this learning path. In Azure SQL Managed Instance, you can enable it on the instance after deployment.  
+    After the free trial, it is billed according to the Azure Security Center Standard Tier pricing. If you choose to enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection. 
 
     Your **Additional settings** pane should now look similar to the image below.
 
     ![Additional settings options](../media/additionalsettings.png)
 
-13. Tags
+1. Select **Next : Review + create**. Here you can review your deployment selections and the Azure Marketplace terms. Review all the options here to ensure all of your selections match the exercise instructions and select **Create** to deploy the service.  
 
-    Select **Next : Tags**.  
-
-    Tags can be used to logically organize Azure resources across a subscription. For example, you can apply the name "Environment" and the value "Development" to this SQL database and Database server, but you might use the value "Production" for production resources. This can be helpful for organizing resources for billing or management.
-
-    ![Adding tags](../media/tags.png)  
-
-14. Review and create
-
-    Finally, select **Next : Review + create**. Here you can review your deployment selections and the Azure Marketplace terms.  
-
-    > You also have the option to **Download a template for automation**. This exercise will not cover that method, but if you're interested, there are other modules available on Microsoft Learn related to Azure Resource Manager (ARM) templates.
-
-    Take time here to ensure all of your selections match the exercise instructions.
-
-    Finally, select **Create** to deploy the service.  
-
-    Soon after selecting Create, you will be redirected to a page that looks like this (below), and where you can monitor the status of your deployment. This deployment option and configuration typically takes less than five minutes to deploy. Some images of what you might see are below.  
-
-    While you're waiting, you can open SSMS. It takes a while to open if you are opening it for the first time. 
-
-    ![Your deployment is underway notice](../media/deploymentunderway.png)
-
-    And some time later ...
+1. Soon after selecting Create, you will be redirected to a page that looks like the following where you can monitor the status of your deployment. You can also navigate to your resource group, and select **Deployments** to get to this same pane. This will give you the various deployments, their status, and more information. This deployment option and configuration typically takes less than five minutes to deploy.  
 
     ![Resources being deployed view](../media/deploymentunderway2.png)
 
-    And finally...
+1. Once complete, select **Go to resource**.
 
     ![Deployment is complete view](../media/deploymentunderway3.png)
 
-    If for whatever reason, you get lost from this page and the deployment has not completed, you can navigate to your resource group, and select **Deployments**. This will give you the various deployments, their status, and more information.  
+1. Review the **Overview** pane for the SQL database in the Azure portal and confirm that the Status is **Online**.  
 
-    ![Locating deployments](../media/deploymentstatus.png)
+## Connecting to Azure SQL Database
 
-    Once your resource has deployment, review the **Overview** pane for the SQL database in the Azure portal and confirm that the Status is **Online**.  
+Next, let's look at the basics of connecting to your deployed Azure SQL Database and compare that experience to connecting to SQL Server.
 
-### Connecting to Azure SQL Database
-
-In this portion of the exercise you will learn the basics of connecting to your deployed Azure SQL Database and compare that experience to connecting to SQL Server.
-
-**What would connecting to SQL Server 2019 look like?**  
+### What does connecting to SQL Server 2019 look like?
 
 Before you look at the Azure SQL Database you just deployed, let's review what connecting to an instance of SQL Server 2019 may look like. Typically, you'd open SSMS and connect, using Windows Authentication perhaps, to the local instance of SQL Server 2019, similar to the image below.  
 
@@ -175,37 +86,26 @@ You would then see a view that looks similar to the following.
 
 Keep that in mind as a reference for comparison as you complete the following steps.
 
-1. Locate the resource in the Azure portal to obtain the logical server name  
+### Connect to your SQL Database with SSMS
 
-    For SSMS you'll need the server name in order to connect. You may need to refer to your Azure SQL Database server in the Azure portal to get this, e.g. *aw-server0406.database.windows.net*.  
+1. First, we need the logical server name. On the **Overview** pane for your database, locate the **Server name**. This will be the fully qualified domain name (FQDN) of your logical server, for example, *aw-server0406.database.windows.net*. Hover your mouse at the end of the name and select **Copy to clipboard**.
 
-    If you're new to the portal, there are a few ways you can locate resources, and depending on who you talk to, they may use a different method. Here are a few options to get you started:  
-
-    1. In the search bar type the **resource name** and select it under "Resources". For example, in the below image a search for a SQL Database "adventureworks" was made, and the desired resource can be selected.  
-        ![Search for resources in portal](../media/awdb.png)  
-    2. Additionally, if you select the **Microsoft Azure** text in the top left corner of the Azure portal, it will take you to "Home". From here, you can select **Resource groups** and then select your resource group.  
-        This will bring you to a view of all the resources that you deploy in the resource group.  
-        ![Viewing resources in a resource group](../media/rg.png)
-        You could alternatively select SQL Databases or Virtual machines, depending what you are looking for.  
-
- 
-1. Connect to Azure SQL Database  
-
-    Next, let's connect to your Azure SQL Database logical server and compare. Open SSMS (if it is not open already), and create a new connection. One way to do this is to select **Connect > Database Engine**.  
+1. Next, let's connect to your Azure SQL Database logical server. On your local device, open SSMS if it is not open already, and create a new connection. Select **Connect > Database Engine**.  
 
     ![How to connect to Azure SQL Database in SSMS](../media/dbengine.png)  
 
-    For server name, input the name of your Azure SQL Database logical server.
+1. For **Server name**, paste the name of your Azure SQL Database logical server.
 
     Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
 
-    Check the **Remember password** box and select **Connect**.  
+    Select the **Remember password**, then select **Connect**.  
 
-    > **TIP**: Depending on your local configuration (e.g. VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
+    > [!NOTE]
+    > Depending on your local configuration (e.g. VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
 
     ![Connect to SQL Database in SSMS](../media/connectazsql.png)  
 
-    Expanding the databases and system databases should result in a view similar to the following.  
+1. Expanding the databases and system databases should result in a view similar to the following.  
 
     ![View of SQL Database folders in SSMS](../media/azureserver.png)  
 
