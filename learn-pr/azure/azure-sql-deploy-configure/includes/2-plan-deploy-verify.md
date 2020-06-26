@@ -78,17 +78,15 @@ SELECT @@VERSION
 SELECT * FROM sys.databases
 SELECT * FROM sys.objects
 SELECT * FROM sys.dm_os_schedulers
-SELECT * FROM sys.dm_os_sys_info*
-SELECT * FROM sys.dm_os_process_memory*
+SELECT * FROM sys.dm_os_sys_info --Not available in Azure SQL Database
+SELECT * FROM sys.dm_os_process_memory --Not available in Azure SQL Database
 SELECT * FROM sys.dm_exec_requests
 SELECT SERVERPROPERTY('EngineEdition')
-SELECT * FROM sys.dm_user_db_resource_governance
-SELECT * FROM sys.dm_os_job_object
+SELECT * FROM sys.dm_user_db_resource_governance -- Only available in Azure SQL Database
+SELECT * FROM sys.dm_os_job_object -- Only available in Azure SQL Database
 ```
 
-*Not available in Azure SQL Database
-
-What you may notice is there are two queries that are not available in Azure SQL Database related to OS system information and OS process memory. These queries are not available because with Azure SQL Database, some things related to the OS are abstracted away from you, since you're just getting a database.  
+There are two queries that are not available in Azure SQL Database related to OS system information and OS process memory. These queries are not available because with Azure SQL Database, some things related to the OS are abstracted away from you, since you're just getting a database.  
 
 Additionally, the last two queries are only available in Azure SQL. The first, `sys.dm_user_db_resource_governance`, will return the actual configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. The second, `sys.dm_os_job_object` will return a single row describing the configuration of the job object that managers the SQL Server process, as well as resource consumption statistics.
 
