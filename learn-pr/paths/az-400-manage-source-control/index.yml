@@ -2,7 +2,7 @@
 uid: learn.az-400-manage-source-control
 metadata:
   title: "AZ-400: Manage Source Control"
-  description: "Develop an effective instrumentation strategy through logging, telemetry, and monitoring and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
+  description: "Use GitHub to build a modern source control strategy and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure
   ms.date: 06/25/2020
   author: tpetchel
