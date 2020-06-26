@@ -75,7 +75,7 @@ You'll perform this exercise using the Azure portal.
     | Partition key | **/productid** (Each product will have a new level recorded each day. Partitioning by product ID enables you to quickly report how the levels for a product vary over time.) |
     | My partition key is larger than 100 bytes| Leave unchecked |
 
-*Prices shown in the image below are for example purposes only.*
+
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **Add Container** dialog box. The user has provided the parameters for a new database and container.](../media/7-container.png)
