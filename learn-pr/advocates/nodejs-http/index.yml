@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.node-http
+uid: learn.azure.nodejs-http
 metadata:
   title: Build a web API with Node.js and Express 
   description: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging and authentication/authorization.
@@ -29,15 +29,15 @@ prerequisites: |
   - Know the basic about the HTTP protocol
   - Experience using the command line, including Git operations
 units:
-- learn.node-http.1-introduction
-- learn.node-http.2-introducing-express
-- learn.node-http.3-exercise-express
-- learn.node-http.4-express-routing
-- learn.node-http.5-exercise-express-routing
-- learn.node-http.6-express-middleware
-- learn.node-http.7-exercise-express-middleware
-- learn.node-http.8-knowledge-check
-- learn.node-http.9-summary
+- learn.azure.nodejs-http.1-introduction
+- learn.azure.nodejs-http.2-introducing-express
+- learn.azure.nodejs-http.3-exercise-express
+- learn.azure.nodejs-http.4-express-routing
+- learn.azure.nodejs-http.5-exercise-express-routing
+- learn.azure.nodejs-http.6-express-middleware
+- learn.azure.nodejs-http.7-exercise-express-middleware
+- learn.azure.nodejs-http.8-knowledge-check
+- learn.azure.nodejs-http.9-summary
 
 badge:
-  uid: learn.node-http.badge
+  uid: learn.azure.nodejs-http.badge
