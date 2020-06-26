@@ -7,7 +7,11 @@ In this module, you:
 - Organized and tracked your deployed Azure resources using resource tags
 - Managed multiple deployment parameters using Azure Resource Manager template parameter files
 
-## Next steps
+<!-- ## Next steps
+
+Check out more modules in this learning path to get more advanced practice with Azure Resource Manager templates. -->
+
+<!-- Add links to other modules or the learning path when they are published. -->
 
 ## Learn more
 
