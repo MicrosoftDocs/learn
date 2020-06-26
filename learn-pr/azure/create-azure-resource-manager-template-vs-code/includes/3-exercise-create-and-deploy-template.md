@@ -90,7 +90,7 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
      --template-file $templateFile
     ```
 
-  In the top section of this code, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```az deployment group create``` command to deploy the template to Azure.
+  In the top section of this code, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```az deployment group create``` command to deploy the template to Azure. Notice the deployment name is *blanktemplate* with the date as a suffix.
 
 1. You see ```Running...``` in the terminal. When that finishes, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 

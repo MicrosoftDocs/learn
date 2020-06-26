@@ -112,7 +112,7 @@ Here you use parameters to limit the values allowed for a parameter.
 
 Here you deploy successfully using a ```storageSKU``` parameter that is in the allowed list, then you try to deploy the template using a ```storageSKU``` parameter that is not in the allowed list. The second deployment will fail as expected.
 
-1. Run the following commands to deploy the template.
+1. Run the following commands to deploy the template. You need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
 
     ```azurecli
     templateFile="azuredeploy.json"
@@ -127,7 +127,7 @@ Here you deploy successfully using a ```storageSKU``` parameter that is in the a
 
       Allow this deployment to finish. This deployment succeeds as expected.
 
-1. Run the following commands to deploy the template with a parameter that is not allowed. Here. you changed the ```storageSKU``` parameter to *Basic*.
+1. Run the following commands to deploy the template with a parameter that is not allowed. Here. you changed the ```storageSKU``` parameter to **Basic**. You need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
 
     ```azurecli
     templateFile="azuredeploy.json"
@@ -173,9 +173,9 @@ Here you add to the ```outputs``` section of the template to output the endpoint
 
 ### Deploy the template with an output
 
-Here, you deploy the template and see the endpoints output as JSON.
+Here, you deploy the template and see the endpoints output as JSON. You need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
 
-1. Run the following commands to deploy the template.
+1. Run the following commands to deploy the template. Be sure to replace the *{your-unique-name} with a string unique to you.
 
     ```azurecli
     templateFile="azuredeploy.json"

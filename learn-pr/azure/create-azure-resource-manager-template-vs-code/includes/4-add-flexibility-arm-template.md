@@ -91,6 +91,16 @@ az deployment group create \
   --parameters storageAccountType=Standard_LRS
 ```
 
+If you have multiple parameters, put a space between them. For example:
+
+```azurecli
+templateFile="azuredeploy.json"
+az deployment group create \
+  --name testdeployment1 \
+  --template-file $templateFile \
+  --parameters storageAccountType=Standard_LRS parameter2=anotherValue
+```
+
 ## What are template outputs
 
 In the *outputs* section of your template, you can specify values that will be returned after a successful deployment. Here are the elements that make up the outputs section.

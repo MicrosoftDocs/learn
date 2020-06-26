@@ -9,11 +9,11 @@ In this module, you are introduced to Azure Resource Manager template structure 
 In this module, you:
 
 - Implement an Azure Resource Manager template by using Visual Studio Code
-- Declare resources and add flexibility to your template by adding resources, parameters, and outputs
+- Declare resources and add flexibility to your template by adding parameters, and outputs
 
 ## Prerequisites
 
 - Familiar with Azure including the Azure portal, subscriptions, resource groups, and resource definitions
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally
-- The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally
 - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally
+- The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally
