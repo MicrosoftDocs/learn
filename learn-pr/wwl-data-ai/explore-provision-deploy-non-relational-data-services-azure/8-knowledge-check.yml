@@ -18,12 +18,12 @@ quiz:
   questions:
   - content: "What is provisioning?"
     choices:
-    - content: "Provisioning is the act of running series of tasks that a service provider performs to create and configure a service."
+    - content: "The act of running series of tasks that a service provider performs to create and configure a service."
       isCorrect: true
-      explanation: "That's correct.  In Azure, you must provision a service before you can use it."
-    - content: "Providing access to an existing service to other users."
+      explanation: "That's correct. In Azure, you must provision a service before you can use it."
+    - content: "Providing other users access to an existing service."
       isCorrect: false
-      explanation: "That's incorrect. This is the description of security configuration."
+      explanation: "That's incorrect. Providing other users access to an existing service is the description of security configuration."
     - content: "Tuning a service to improve performance."
       isCorrect: false
       explanation: "That's incorrect. This is tuning and optmization."
@@ -48,4 +48,4 @@ quiz:
       explanation: "That's correct. Replication improves availability. If one region becomes inaccessible, the data is still available in other regions."
     - content: "Increased security for your data."
       isCorrect: false
-      explanation: "That's incorrect. Replication doesn't increase the security of your data"
+      explanation: "That's incorrect. Replication doesn't increase the security of your data."
