@@ -7,17 +7,6 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
     > [!div class="nextstepaction"]
     > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-<!-- 1. In the top search bar, type **Azure SQL** and review what appears:  
-
-    ![Search for Azure SQL](../media/search2.png)  
-
-    There are a lot of different items and categories here, but basically this menu gives you filters for what you can search on. Let's break them down:
-    * **Services**: if you select Services, then you're able to see the existing resources (i.e. already deployed) that you have all together. For example, if you clicked Azure SQL, you would see all of your SQL VMs, Databases, Logical servers, Managed Instances, and pools.
-    * **Resources**: this searches based on existing resource names. For example, if you searched for "adventureworks" any resources with "adventureworks" in the name would return here.
-    * **Marketplace**: this allows you to deploy new resources from the marketplace.
-    * **Documentation**: this searches docs.microsoft.com for relevant documentation
-    * **Resource groups**: this allows you to search based on resource group name. -->
-
 1. Select **+ Create a resource** in the left menu. Enter **Azure SQL** in **Search the Marketplace**. Select **Create**. This will bring you to the Azure SQL create experience.
 
     ![Azure SQL Deployment options in portal](../media/AzureSQLDeploymentOptions.gif)
