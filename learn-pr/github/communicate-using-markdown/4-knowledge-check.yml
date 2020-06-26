@@ -31,7 +31,7 @@ quiz:
     - content: "Use three in a row, like `***` or `___`."
       isCorrect: false
       explanation: "This won't get you the results you're looking for."
-    - content: "Escape them with a backslash, like `\*` or `\_`."
+    - content: "Escape them with a backslash, like `\\*` or `\\_`."
       isCorrect: true
       explanation: "You can also escape other reserved characters, including `{` and `#`, using backslashes."
     - content: "Unfortunately, this is not supported at this time."
