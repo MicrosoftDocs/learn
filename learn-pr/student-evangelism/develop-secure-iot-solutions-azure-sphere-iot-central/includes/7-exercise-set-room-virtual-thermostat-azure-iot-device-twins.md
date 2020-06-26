@@ -23,12 +23,12 @@ Azure IoT Central device properties are defined in Device templates.
 
    1. Open CMakeList.txt
    2. Uncomment the **set** command that corresponds to your Azure Sphere developer board.
-   3. Save the file. This will auto-generate the CMake cache.
+   3. Save the file. This will autogenerate the CMake cache.
 
 7. Configure the Azure IoT Central connection information
 
    1. Open the **app_manifest.json** file.
-   2. You will need to redo the settings for the **app_manifest.json** file. Either copy from **Notepad** if you still have it open or copy from the **app_manifest.json** file you created in the previous exercise.
+   2. You'll need to redo the settings for the **app_manifest.json** file. Either copy from **Notepad** if you still have it open or copy from the **app_manifest.json** file you created in the previous exercise.
    3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
 
 8. Ensure main.c is open.
@@ -37,18 +37,18 @@ Azure IoT Central device properties are defined in Device templates.
 
 10. From Visual Studio Code, press F5 to build, deploy, start, and attached the remote debugger to the application now running the Azure Sphere device.
 
-## Step 3: Expected Device Behaviour
+## Step 3: Expected Device Behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
-1. The RGB LED5 will start to blink. In the next section, you will be setting the desired temperature which will determine the RGB LED colour.
+1. The RGB LED5 will start to blink. In the next section, you'll be setting the desired temperature which will determine the RGB LED color.
 2. LED4 will turn yellow when connected to Azure.
 3. LED3 will blink when telemetry is sent to IoT Central
 4. Press **Button A** or **Button B** on the device to change the blink rate of LED5 and to update the **Actual Temperature** Device twin property in IoT Central.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
-1. The RGB LED 1 will start to blink. In the next section, you will be setting the desired temperature which will determine the RGB LED colour.
+1. The RGB LED 1 will start to blink. In the next section, you'll be setting the desired temperature which will determine the RGB LED color.
 2. The network LED will turn red when connected to Azure.
 3. LED 4 will blink blue when telemetry is sent to IoT Central
 4. Press **Button A** or **Button B** on the device to change the blink rate of RGB LED 1 and to update the **Actual Temperature** Device twin property in IoT Central.
@@ -89,5 +89,4 @@ When the temperature sensor is read on the Azure Sphere it is compared to the de
 To set the desired temperature:
 
 1. Update the **Desired Temperature** value.
-2. Save the Property. This will send the desired temperature property to the Azure Sphere. The blinking LED colour may change depending on the desired temperature chosen.
-
+2. Save the Property. This will send the desired temperature property to the Azure Sphere. The blinking LED color may change depending on the desired temperature chosen.

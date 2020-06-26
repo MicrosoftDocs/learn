@@ -2,18 +2,17 @@ In this exercise, you'll build a High-Level Azure Sphere application that connec
 
 ## Step 1: Create a new IoT Central Application
 
-1. Click and open this link "[Azure IoT Central](https://azure.microsoft.com/en-au/services/iot-central/?WT.mc_id=pycon-blog-dglover)" in a new window.
+1. Click and open this link "[Azure IoT Central](https://azure.microsoft.com/services/iot-central)" in a new window.
 
 2. Click **Build a solution**.
 
-3. You will need to sign with your Microsoft Personal, or Work, or School account. If you do not have a Microsoft account, then you can create one for free using the **Create one!** link.
+3. You'll need to sign with your Microsoft Personal, or Work, or School account. If you do not have a Microsoft account, then you can create one for free using the **Create one!** link.
 
 4. Expand the sidebar menu by clicking on the **Burger menu** icon.
 
 5. Navigate to Build and click **+ New application** to create a new Azure IoT Central application.
 
 6. Select **Custom app**
-
 
 ### Create a new application
 
@@ -32,7 +31,7 @@ A device template is a blueprint that defines the characteristics and behaviors 
 3. Create an **IoT Device** Template.
 
    1. Select **IoT device**,
-   2. Click **Next:Customise**,
+   2. Click **Next:Customize**,
    3. Name your template **Azure Sphere**,
    4. Click **Next: Review**,
    5. Click **Create**.
@@ -78,9 +77,9 @@ Devices claimed by your Azure Sphere tenant will be automatically enrolled when 
 
 ### Download the tenant authentication CA certificate
 
-1. If you are using Windows, open an **Azure Sphere Developer Command Prompt **. If you are using Linux, open your terminal.
+1. If you're using Windows, open an **Azure Sphere Developer Command Prompt **. If you're using Linux, open your terminal.
 
-2. Make a note of the current directory, or change to the Azure Sphere Learning path directory. You will need the name of this directory in the next step.
+2. Make a note of the current directory, or change to the Azure Sphere Learning path directory. You'll need the name of this directory in the next step.
 
 3. Download the Certificate Authority (CA) certificate for your Azure Sphere tenant:
 
@@ -99,8 +98,6 @@ Devices claimed by your Azure Sphere tenant will be automatically enrolled when 
 3. The Primary Certificate dialog box appears. The Subject and Thumbprint fields contain information about the current Azure Sphere tenant and primary root certificate.
 
 4. Click the Refresh icon to the right of the Verification Code box to generate a verification code. Copy the verification code to the clipboard.
-
-   
 
 ### Verify the tenant CA certificate
 
@@ -138,7 +135,7 @@ Follow these steps:
    - On Windows, navigate to the Samples\AzureIoT\Tools\win-x64 directory.
    - On Linux, navigate to the Samples\AzureIoT\Tools\linux-x64 directory. On Linux, you may need to explicitly set execution permissions for the ShowIoTCentralConfig tool. From a terminal, run `chmod +x ShowIoTCentralConfig` to add execution permissions for the tool.
 
-3. When you run the **ShowIoTCentralConfig** tool, you will be prompted for input data. The following table outlines what information you will be prompted for and where to obtain the required data.
+3. When you run the **ShowIoTCentralConfig** tool, you'll be prompted for input data. The following table outlines what information you'll be prompted for and where to obtain the required data.
 
    | Input data                                                   | From                                                         |
    | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -163,7 +160,7 @@ Follow these steps:
    }
    ```
 
-6. **Copy** the output from the ShowIoTCentralConfig tool to ***Notepad\*** as you will need this information soon.
+6. **Copy** the output from the ShowIoTCentralConfig tool to ***Notepad\*** as you'll need this information soon.
 
 ------
 
@@ -171,7 +168,7 @@ Follow these steps:
 
 We need the ID of the Azure Sphere Tenant that is now trusted by Azure IoT Central.
 
-1. From the command Prompt, run the following command. 
+1. From the command Prompt, run the following command.
 
    `azsphere tenant show-selected`
 
@@ -183,7 +180,7 @@ We need the ID of the Azure Sphere Tenant that is now trusted by Azure IoT Centr
 
    - The **Tenant ID** is the numeric value inside the parentheses.
 
-2. **Copy the Tenant ID** to Notepad as you will need it soon.
+2. **Copy the Tenant ID** to Notepad as you'll need it soon.
 
 We can split the module here and do the rest in the next step.
 
@@ -211,13 +208,11 @@ These labs support developer boards from AVNET and Seeed Studio. You need to set
    # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
    ```
 
-4. Save the file. This will auto-generate the CMake cache.
+4. Save the file. This will autogenerate the CMake cache.
 
 ## Step 7: Configure the Azure Sphere Application
 
 1. Open the **app_manifest.json** file
-
-   
 
 2. Update the Azure IoT Central Application connection properties.
 
@@ -266,7 +261,7 @@ These labs support developer boards from AVNET and Seeed Studio. You need to set
    }
    ```
 
-5. **IMPORTANT**. Copy the contents of your **app_manifest.json** file to **notepad** as you will need this configuration information for the next labs.
+5. **IMPORTANT**. Copy the contents of your **app_manifest.json** file to **notepad** as you'll need this configuration information for the next labs.
 
 ------
 
@@ -276,9 +271,7 @@ These labs support developer boards from AVNET and Seeed Studio. You need to set
 
 Open **main.c**, and scroll down to the **MeasureSensorHandler** function.
 
-> Pro Tip. Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *measure*. You will often see a function name listed twice in the dropdown. The first is the [function prototype declaration](https://en.wikipedia.org/wiki/Function_prototype#:~:text=In computer programming%2C a function,but omits the function body.), and the second is the implementation of the function.
-
-
+> Pro Tip. Use **Go to Symbol in Editor** in Visual Studio Code. Use the keyboard shortcut Ctrl+Shift+O and start typing *measure*. You'll often see a function name listed twice in the dropdown. The first is the [function prototype declaration](https://en.wikipedia.org/wiki/Function_prototype#:~:text=In computer programming%2C a function,but omits the function body.), and the second is the implementation of the function.
 
 In the **MeasureSensorHandler** function there is a call to **SendMsgLedOn(msgBuffer);**.
 
@@ -327,7 +320,7 @@ static void SendMsgLedOn(char* message)
 
 ## Step 9: Deploying the Application to Azure Sphere
 
-### Start the app build deploy process
+### Start the app build and deploy process
 
 1. Ensure main.c is open.
 
@@ -341,13 +334,11 @@ static void SendMsgLedOn(char* message)
 
    > Pro Tip. You can open the output window by using the Visual Studio Code Ctrl+K Ctrl+H shortcut or click the **Output** tab.
 
-2. You will see the device negotiating security, and then it will start sending telemetry to Azure IoT Central.
+2. You'll see the device negotiating security, and then it will start sending telemetry to Azure IoT Central.
 
 > [!NOTE] You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to IoT Central is being negotiated.
 
-------
-
-## Step 10: Expected Device Behaviour
+## Step 10: Expected Device Behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
@@ -389,15 +380,9 @@ You need to **Migrate** the newly enrolled device to the **Azure Sphere** templa
 
 1. Select the newly enrolled device from the **All devices** template.
 
-2. Click **Migrate**
-
-   
+2. Click **Migrate**.
 
 3. Select the Azure Sphere Template, and then click migrate.
-
-   [![img](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/raw/master/zdocs_vs_code_iot_central/Lab_2_Send_Telemetry_to_Azure_IoT_Central/resources/iot-central-migrate-select-template.png)](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/blob/master/zdocs_vs_code_iot_central/Lab_2_Send_Telemetry_to_Azure_IoT_Central/resources/iot-central-migrate-select-template.png)
-
-------
 
 ## Step 13: Display the Azure Sphere device telemetry
 
